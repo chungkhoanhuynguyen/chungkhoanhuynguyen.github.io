@@ -5,7 +5,7 @@
 <title>Huy Nguyễn Chứng Khoán</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;800;900&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;800;900&family=Playfair+Display:wght@600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap">
 <style>
 /* Bố cục: bảng điện tối · một dải hero, rồi bảng theo dõi, tiêu điểm, công cụ, seri — gold chỉ dùng cho thương hiệu */
 :root{--bg:#0d1017;--panel:#141a25;--line:#263043;--fg:#ece6d8;--mute:#8a93a6;--gold:#d6aa58;--up:#38be7a;--dn:#e5534f;
@@ -88,13 +88,34 @@ footer{padding-block:36px;border-top:1px solid var(--line);font-size:13px;color:
 .copy{font:600 13px var(--body);background:transparent;border:1px solid var(--line);color:var(--fg);border-radius:6px;padding:4px 10px;cursor:pointer;margin-left:8px}
 @media (max-width:760px){.hero,.focus{grid-template-columns:1fr}.hero{padding-block:36px 28px} select{margin-left:0}}
 @media (prefers-reduced-motion:no-preference){.bt i{transition:width .6s ease}}
+/* Phong cách phố Wall: nền đêm Manhattan, chữ serif vàng, dải bảng điện chạy, lãi cao màu tím (màu trần) */
+:root{--bg:#070b14;--panel:#0e1526;--line:#1f2b45;--fg:#f1ead9;--mute:#8f9ab3;--gold:#d9b26a;--up:#2fd38a;--dn:#ff5b5b;--pur:#c77dff;--disp:"Playfair Display",Georgia,serif}
+body{background:radial-gradient(1200px 600px at 80% -10%,#16244a 0%,transparent 60%),radial-gradient(900px 500px at -10% 10%,#1a1633 0%,transparent 55%),linear-gradient(180deg,#070b14 0%,#05070d 100%) fixed;background-color:var(--bg)}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background-image:linear-gradient(rgba(217,178,106,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(217,178,106,.035) 1px,transparent 1px);background-size:48px 48px}
+h1,h2,.hero h1,.svc h3{font-family:var(--disp);letter-spacing:.005em}
+h1{font-weight:800} h2{font-weight:700}
+.pur,.pos.pur,.n.pur,dd.pur{color:var(--pur)!important;text-shadow:0 0 14px color-mix(in srgb,var(--pur) 45%,transparent)}
+.rsv.pur{background:color-mix(in srgb,var(--pur) 22%,transparent)}
+.tag.win.pur{color:var(--pur);border-color:color-mix(in srgb,var(--pur) 55%,transparent)}
+.k,.box,.tk,.tw,.tblw,.chart,.why,.tvb{background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(255,255,255,0)) ,var(--panel);box-shadow:0 1px 0 rgba(217,178,106,.08) inset,0 10px 30px -18px rgba(0,0,0,.8)}
+.k b{font-family:var(--mono)}
+.tape{overflow:hidden;border-bottom:1px solid var(--line);background:#04070d;font:600 13px var(--mono);white-space:nowrap}
+.tape-in{display:inline-flex;gap:28px;padding:7px 0;animation:tape 60s linear infinite}
+.tape-in span b{color:var(--fg);margin-right:6px}
+@keyframes tape{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.tape-in{animation:none}}
+.sky{position:absolute;left:0;right:0;bottom:0;height:180px;pointer-events:none;opacity:.22;z-index:-1}
+.herobox{position:relative;isolation:isolate}
+.leg2{font-size:12px;color:var(--mute);margin:8px 0 0}.leg2 i{color:var(--pur);font-style:normal;font-weight:700}
 </style>
 </head><body>
 
 <header class="top"><div class="wrap bar-in"><a class="brand" href="#top"><b>HUY NGUYỄN</b><span>CHỨNG KHOÁN</span></a>
 <nav><a href="bao-cao-2026.html">Báo cáo lệnh & Tích sản</a><a href="#rs">Top 10 khỏe</a><a href="#tuvan">Tư vấn 1:1</a><a href="#congdong">Cộng đồng</a><a href="#bang">Bảng theo dõi</a><a href="#tieudiem">Tiêu điểm MSR</a><a href="#congcu">Công cụ</a><a href="#seri">Seri F0</a><a href="#nhom">Nhóm Zalo</a></nav></div></header>
+<div class="tape" aria-label="Bảng điện Top 10"><div class="tape-in" id="tape"><span>Đang tải bảng điện…</span></div></div>
+
 <main id="top">
-<div class="wrap hero">
+<div class="herobox"><svg class="sky" viewBox="0 0 1200 180" preserveAspectRatio="none" aria-hidden="true"><path fill="none" stroke="#d9b26a" stroke-width="1.5" d="M0 180V130h40v-30h30v40h25V90h20V60h12V40h6v20h12v30h20v50h30V110h35V70h18V30l10-20 10 20v40h18v60h30V95h40v45h22V80h28V55h10V20h4V8h4v12h4v35h10v25h28v60h35V100h25V60h20v80h30V120h40V85h30V50h6V30h6v20h6v35h30v55h35V105h28V75h22V45h10v30h22v65h30V115h45V90h25v50h30V100h20V65h14V35l8-12 8 12v30h14v75h40V110h30V80h25v60h40V125h50V100h30v80"/></svg><div class="wrap hero">
 <div><p class="eyebrow">Tư vấn đầu tư chứng khoán 1:1</p><h1>Mỗi nhà đầu tư một <em>kế hoạch riêng</em>.</h1>
 <p>Chứng khoán Huy Nguyễn đồng hành 1:1 với từng nhà đầu tư: đọc báo cáo tài chính mã bạn đang cầm, dựng danh mục theo số vốn và mức chịu rủi ro, đặt sẵn điểm mua và điểm cắt lỗ trước mỗi lệnh.</p>
 <div class="hero-act"><a class="btn main" href="https://zalo.me/0365188286" target="_blank" rel="noopener">Đặt lịch tư vấn 1:1 qua Zalo <small>0365.188.286</small></a></div>
@@ -103,12 +124,12 @@ footer{padding-block:36px;border-top:1px solid var(--line);font-size:13px;color:
 <a class="btn" href="https://zalo.me/g/rkmzuy362" target="_blank" rel="noopener">Vào nhóm Zalo VIP1 <small>zalo.me/g/rkmzuy362</small></a>
 <a class="btn" href="https://zalo.me/g/jbnbiq994" target="_blank" rel="noopener">Vào nhóm Zalo VIP4 <small>zalo.me/g/jbnbiq994</small></a>
 <p class="note">Không mở được link? Nhắn Zalo <span id="zl">0365.188.286</span><button class="copy" id="cp" type="button">Sao chép</button></p>
-</div></div>
+</div></div></div>
 
 <section id="rs"><div class="wrap">
 <h2>Top 10 cổ phiếu khỏe nhất thị trường</h2><p class="sub">Bộ lọc độc quyền của Chứng khoán Huy Nguyễn, tự cập nhật 15 phút một lần trong phiên. Giá là giá thị trường tại lúc cập nhật (nghìn đồng), không phải giá khuyến nghị mua. <span id="rsu"></span></p>
 <div class="tblw"><table class="rs"><thead><tr><th>#</th><th>Mã</th><th>Giá hiện tại</th><th>Hôm nay</th><th>3 tháng</th><th>6 tháng</th><th>12 tháng</th><th>Cách đỉnh</th><th>Tính Điểm</th><th>60 phiên</th></tr></thead><tbody id="rsb"><tr><td colspan="10" class="note">Đang tải dữ liệu…</td></tr></tbody></table></div>
-<p class="note"><a href="bao-cao-2026.html" style="color:var(--gold);font-weight:700">Xem báo cáo lệnh lướt sóng 2026 →</a></p>
+<p class="note"><a href="bao-cao-2026.html" style="color:var(--gold);font-weight:700">Xem báo cáo lướt sóng &amp; tích sản →</a></p>
 <p class="note">Danh sách để theo dõi, không phải khuyến nghị mua. Mua vùng nào, cắt lỗ ở đâu, mã nào hợp danh mục của bạn: <a href="https://zalo.me/0365188286" target="_blank" rel="noopener">nhắn tư vấn 1:1 qua Zalo 0365.188.286</a>.</p>
 </div></section>
 <section id="tuvan"><div class="wrap">
@@ -284,11 +305,17 @@ document.getElementById('cp').addEventListener('click',e=>{const t='0365188286';
 
 (function(){const b=document.getElementById('rsb');if(!b)return;
 const f=(x,d=1)=>x==null?'–':(x>0?'+':'')+x.toLocaleString('vi-VN',{minimumFractionDigits:d,maximumFractionDigits:d})+'%';
-const cl=x=>x==null?'':(x>=0?'pos':'neg');
+const cl=(x,t=50)=>x==null?'':(x>=t?'pos pur':x>=0?'pos':'neg');
 fetch('data/rs.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(j=>{
  document.getElementById('rsu').textContent='Lần cập nhật gần nhất: '+j.updated+'.';
+ const tp=document.getElementById('tape');if(tp){const it=j.top.map(r=>'<span><b>'+r.s+'</b>'+r.close.toLocaleString('vi-VN')+' <i class="'+cl(r.d1,6.5)+'" style="font-style:normal">'+f(r.d1,2)+'</i> · 3T <i class="'+cl(r.r3)+'" style="font-style:normal">'+f(r.r3)+'</i></span>').join('');tp.innerHTML=it+it;}
  b.innerHTML=j.top.map((r,i)=>{const sp=r.spark,lo=Math.min(...sp),hi=Math.max(...sp),pts=sp.map((v,k)=>(k*100/(sp.length-1)).toFixed(1)+','+(28-(v-lo)/((hi-lo)||1)*26).toFixed(1)).join(' ');
- return '<tr><td>'+(i+1)+'</td><td class="sym2">'+r.s+'</td><td>'+r.close.toLocaleString('vi-VN')+'</td><td class="'+cl(r.d1)+'">'+f(r.d1,2)+'</td><td class="'+cl(r.r3)+'">'+f(r.r3)+'</td><td class="'+cl(r.r6)+'">'+f(r.r6)+'</td><td class="'+cl(r.r12)+'">'+f(r.r12)+'</td><td class="neg">'+f(r.fromhi)+'</td><td><span class="rsv">'+Math.max(1,Math.min(9,r.rs-90))+'</span></td><td><svg width="100" height="30" viewBox="0 0 100 30"><polyline points="'+pts+'" fill="none" stroke="var(--up)" stroke-width="1.6"/></svg></td></tr>'}).join('');
+ return '<tr><td>'+(i+1)+'</td><td class="sym2">'+r.s+'</td><td>'+r.close.toLocaleString('vi-VN')+'</td><td class="'+cl(r.d1)+'">'+f(r.d1,2)+'</td><td class="'+cl(r.r3)+'">'+f(r.r3)+'</td><td class="'+cl(r.r6)+'">'+f(r.r6)+'</td><td class="'+cl(r.r12)+'">'+f(r.r12)+'</td><td class="neg">'+f(r.fromhi)+'</td><td><span class="rsv'+(r.rs>=98?' pur':'')+'">'+Math.max(1,Math.min(9,r.rs-90))+'</span></td><td><svg width="100" height="30" viewBox="0 0 100 30"><polyline points="'+pts+'" fill="none" stroke="var(--up)" stroke-width="1.6"/></svg></td></tr>'}).join('');
 }).catch(()=>{b.innerHTML='<tr><td colspan="10" class="note">Bảng đang được cập nhật, quay lại sau ít phút.</td></tr>'});})();
+</script>
+<script>
+// Tô tím các mức lãi cao (≥ +50%)
+(function(){function run(){document.querySelectorAll('.pos').forEach(e=>{if(e.classList.contains('pur'))return;const m=(e.textContent||'').replace(/\./g,'').replace(',','.').match(/\+\s*([\d.]+)%/);if(m&&parseFloat(m[1])>=50){e.classList.add('pur');const t=e.closest('tr');if(t){const g=t.querySelector('.tag.win');if(g)g.classList.add('pur')}}})}
+run();new MutationObserver(run).observe(document.body,{childList:true,subtree:true});})();
 </script>
 </body></html>
