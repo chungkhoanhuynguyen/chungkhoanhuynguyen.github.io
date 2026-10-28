@@ -55,16 +55,23 @@ h1{font-weight:800} h2{font-weight:700}
 .tape-in span b{color:var(--fg);margin-right:6px}
 @keyframes tape{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media (prefers-reduced-motion:reduce){.tape-in{animation:none}}
-.sky{position:absolute;left:0;right:0;bottom:0;height:180px;pointer-events:none;opacity:.22;z-index:-1}
-.herobox{position:relative;isolation:isolate}
 .leg2{font-size:12px;color:var(--mute);margin:8px 0 0}.leg2 i{color:var(--pur);font-style:normal;font-weight:700}
+html,body{overflow-x:hidden;max-width:100%}
+.tape{max-width:100vw}
+.herobox,.rhero{position:relative;isolation:isolate;background:linear-gradient(180deg,rgba(5,8,15,.30) 0%,rgba(5,8,15,.55) 60%,var(--bg) 100%),linear-gradient(90deg,rgba(5,8,15,.80) 0%,rgba(5,8,15,.15) 75%),url(img/wallstreet.jpg) center 62%/cover no-repeat}
+.rhero{margin:-36px calc(50% - 50vw) 0;padding:36px calc(50vw - 50%) 30px}
+.photo-credit{position:absolute;right:10px;bottom:6px;font-size:10px;color:rgba(241,234,217,.45)}
+.photo-credit a{color:inherit}
+@media (max-width:760px){nav{flex-wrap:nowrap;overflow-x:auto;width:100%;margin-left:0;gap:14px;padding-bottom:4px;scrollbar-width:none}nav::-webkit-scrollbar{display:none}nav a{white-space:nowrap}.bar-in{gap:8px}.herobox{background-position:58% 40%}.hero h1{font-size:clamp(32px,9vw,44px)}.kpis{grid-template-columns:1fr 1fr!important}.k b{font-size:24px!important}}
 .tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 22px}.tabs a{font:700 14px var(--body);padding:8px 14px;border-radius:999px;border:1px solid var(--line);color:var(--fg);text-decoration:none}.tabs a:hover{border-color:var(--gold);color:var(--gold)}.sec{border-top:1px solid var(--line);margin-top:44px;padding-top:8px}.st{font-size:12px;padding:2px 8px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}.st.h{color:var(--up);border-color:color-mix(in srgb,var(--up) 45%,transparent)}.st.w{color:var(--gold);border-color:color-mix(in srgb,var(--gold) 45%,transparent)}.st.n{color:var(--mute)}.tvg{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}.tvb{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:12px;padding:16px}.tvb b{font-size:16px}.tvb p{margin:6px 0 0;color:var(--mute);font-size:14px}.vid{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#000}.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 </style>
 </head><body>
 <div class="wrap">
+<div class="rhero"><div class="photo-credit">Ảnh: Ken Lund · <a href="https://commons.wikimedia.org/wiki/File:New_and_Wall_Street,_Manhattan,_New_York_(7236992182).jpg" target="_blank" rel="noopener">CC BY-SA 2.0</a></div>
 <div class="brand"><a href="./" style="color:inherit;text-decoration:none">HUY NGUYỄN · CHỨNG KHOÁN</a></div>
 <h1>Báo cáo lệnh lướt sóng 2016–2026</h1>
 <p class="lede">Toàn bộ lệnh mua, chốt lời và cắt lỗ từ 01/01/2016 đến 28/10/2026 theo phương pháp phân tích kỹ thuật của room, trên tài khoản V306TMVN chia 4 phần: mỗi lệnh 25% tài sản, không dùng margin.</p>
+</div>
 <nav class="tabs"><a href="#luotsong">Lướt sóng V306TMVN</a><a href="#tichsan">Tích sản ngân hàng</a><a href="#tuvan">Tư vấn 1:1</a></nav>
 <div id="luotsong"></div>
 <div class="kpis">
