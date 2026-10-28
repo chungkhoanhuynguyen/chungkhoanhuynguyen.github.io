@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<html lang="vi"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests"><meta name="referrer" content="strict-origin-when-cross-origin"><meta http-equiv="X-Content-Type-Options" content="nosniff"><script>if(window.top!==window.self){try{window.top.location=window.self.location}catch(e){document.documentElement.style.display="none"}}</script><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Báo cáo lệnh 2016–2026</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -125,58 +125,75 @@ header.top nav a{padding:5px 11px;border:1px solid var(--line);border-radius:999
 .kpis>.k:last-child:nth-child(odd){grid-column:1/-1}
 .k span{display:block;line-height:1.35!important;margin-top:4px}
 }
-/* Theme v4: nền kem sáng – tím thương hiệu – chữ đen đậm (theo nhận diện kênh) */
-:root{--bg:#fbf6ea;--panel:#ffffff;--line:#e8dcc8;--fg:#16111c;--mute:#5e5668;--gold:#8e1592;--up:#0f9d58;--dn:#d92d20;--pur:#a21caf;--vn:#8a8494;color-scheme:light}
+
+/* Theme v5: nền xám tím dịu mắt – tím mận trầm – chữ than đậm */
+:root{--bg:#f2f1f5;--panel:#ffffff;--line:#e1dde8;--fg:#1f1b26;--mute:#5f5a69;--gold:#6a2d86;--up:#1f8a57;--dn:#c43c32;--pur:#8a3aa6;--vn:#8d8899;color-scheme:light}
 html,body{background:var(--bg)!important;color:var(--fg)}
 body::after{display:none!important}
 h1,h2,h3{color:var(--fg)}
-a{color:inherit}
-header.top{background:linear-gradient(90deg,#3f1170 0%,#7b148f 50%,#b0168f 100%)!important;border-bottom:0!important;backdrop-filter:none!important}
-header.top .brand b{color:#fff!important}header.top .brand span{color:#f1d4ff!important}
-header.top nav{color:#f3e2ff!important}header.top nav a{color:#f7ecff}header.top nav a:hover,header.top nav a:focus-visible{color:#fff}
-body::before{background:#3f1170!important}
-.tape{background:#24092f!important;border-color:#24092f!important}
-.tape .tlab{background:#24092f!important;color:#f0b4ff!important}
-.tape .tlab::after{background:linear-gradient(90deg,#24092f,rgba(36,9,47,0))!important}
-.tape-in b{color:#fff!important}.tape-in>a,.tape-in>span{color:#d8c3e6}.tape-in em{color:#b9a3c9!important}
-.tape-in .pos{color:#4ade80!important}.tape-in .neg{color:#ff8a80!important}.tape-in .pur{color:#f0abfc!important;text-shadow:none!important}
-.herobox,.rhero{background:linear-gradient(90deg,rgba(52,10,84,.94) 0%,rgba(110,18,128,.80) 50%,rgba(176,22,143,.40) 100%),url(img/wallstreet.jpg) center 62%/cover no-repeat!important;color:#fff}
-.herobox h1,.rhero h1{color:#fff!important}.herobox h1 em,.rhero h1 em{color:#fde68a!important}
-.herobox p,.rhero p,.herobox .lede,.rhero .lede{color:#f3e6fb!important}
-.herobox .eyebrow,.rhero .brand,.rhero .brand a,.herobox .brand{color:#f5c6ff!important}
-.herobox .note,.herobox a:not(.btn){color:#f7ecff!important}
-.herobox .copy{color:#fff;border-color:rgba(255,255,255,.5);background:transparent}
-.photo-credit,.photo-credit a{color:rgba(255,255,255,.55)!important}
-.k,.box,.tk,.tw,.tblw,.chart,.why,.tvb,.kq,.rc,.btn{background:#fff!important;box-shadow:0 1px 2px rgba(63,17,112,.06),0 10px 26px -18px rgba(63,17,112,.35)!important}
-.k,.box,.tk,.tw,.tblw,.chart,.kq,.rc{border-color:var(--line)!important}
+header.top{background:linear-gradient(90deg,#221535 0%,#382052 55%,#4c2766 100%)!important;border-bottom:0!important;backdrop-filter:none!important}
+header.top .brand b{color:#fff!important}header.top .brand span{color:#cdbfe0!important}
+header.top nav{color:#dcd2ea!important}header.top nav a{color:#e6def2}header.top nav a:hover,header.top nav a:focus-visible{color:#fff}
+body::before{background:#221535!important}
+.tape{background:#1a1128!important;border-color:#1a1128!important}
+.tape .tlab{background:#1a1128!important;color:#d9b8ec!important}
+.tape .tlab::after{background:linear-gradient(90deg,#1a1128,rgba(26,17,40,0))!important}
+.tape-in b{color:#fff!important}.tape-in>a,.tape-in>span{color:#c9bdd6}.tape-in em{color:#a89cb8!important}
+.tape-in .pos{color:#5fd39a!important}.tape-in .neg{color:#ff8f86!important}.tape-in .pur{color:#e3b6f5!important;text-shadow:none!important}
+.herobox,.rhero{background:linear-gradient(90deg,rgba(28,17,45,.94) 0%,rgba(52,30,76,.84) 55%,rgba(76,39,102,.55) 100%),url(img/wallstreet.jpg) center 62%/cover no-repeat!important;color:#fff}
+.rhero{margin-bottom:22px!important}
+.herobox h1,.rhero h1{color:#fff!important}.herobox h1 em,.rhero h1 em{color:#e7c27d!important}
+.herobox p,.rhero p,.herobox .lede,.rhero .lede{color:#e4dcef!important}
+.herobox .eyebrow,.rhero .brand,.rhero .brand a,.herobox .brand{color:#d7bfeb!important}
+.herobox .note,.herobox a:not(.btn){color:#ece5f5!important}
+.herobox .copy{color:#fff;border-color:rgba(255,255,255,.45);background:transparent}
+.photo-credit,.photo-credit a{font-size:7px!important;color:rgba(255,255,255,.25)!important;text-decoration:none!important}
+.k,.box,.tk,.tw,.tblw,.chart,.why,.tvb,.kq,.rc,.btn,.vm,.vm-tone{background:#fff!important;box-shadow:0 1px 2px rgba(31,27,38,.05),0 6px 18px -12px rgba(31,27,38,.18)!important}
+.k,.box,.tk,.tw,.tblw,.chart,.kq,.rc,.vm,.vm-tone{border-color:var(--line)!important}
 .btn{color:var(--fg)}
-.btn.main{background:linear-gradient(90deg,#7b1fa2,#b5179e)!important;color:#fff!important;border:0!important}
-.btn.main small{color:#fbe7ff!important;opacity:1}
-.btn.vps{background:linear-gradient(90deg,#16a34a,#15803d)!important;color:#fff!important}
+.btn.main{background:#6a2d86!important;color:#fff!important;border:0!important}.btn.main:hover{background:#5a2473!important}
+.btn.main small{color:#eadcf3!important;opacity:1}
+.btn.vps{background:#1f8a57!important;color:#fff!important;border:0!important}.btn.vps small{color:#dff5e9!important}
 .pur,.pos.pur,.n.pur,dd.pur{text-shadow:none!important;color:var(--pur)!important}
-.rsv{background:#dcfce7!important;color:#15803d!important}.rsv.pur{background:#f5d0fe!important;color:#86198f!important}
-.chip{color:var(--mute);background:#fff}.chip[aria-pressed="true"]{background:var(--gold)!important;color:#fff!important;border-color:var(--gold)!important}
-.tabs a{background:#fff;color:var(--fg)}.tabs a:hover{color:var(--gold);border-color:var(--gold)}
+.rsv{background:#e4f3ea!important;color:#1f7a4d!important}.rsv.pur{background:#efe2f6!important;color:#6a2d86!important}
+.chip,.chip-b{color:var(--mute);background:#fff}
+.chip[aria-pressed="true"],.chip-b[aria-pressed="true"]{background:var(--gold)!important;color:#fff!important;border-color:var(--gold)!important}
+.tabs{margin-top:4px!important}.tabs a{background:#fff;color:var(--fg)}.tabs a:hover{color:var(--gold);border-color:var(--gold)}
 .why{border-left-color:var(--gold)!important}.tvb{border-top-color:var(--gold)!important}
-.kq-n{background:#faf0fc!important}.kq-cta,.cta{border-color:var(--gold)}
-.off{fill:rgba(142,21,146,.07)!important}.g{stroke:#ece3d3}
-tr:hover td{background:#fbf3fd}
-.yt{color:#c4161c!important;border-color:rgba(196,22,28,.35)!important}
-.sec{border-top-color:var(--line)}
-footer{background:linear-gradient(90deg,#3f1170,#8e1592);color:#f1e2fa!important;border-top:0!important}
-footer a{color:#fff}
+.kq-n{background:#f6f0f9!important;border-left-color:var(--gold)!important}.kq-n i{color:var(--gold)!important}
+.kq-cta,.cta{border-color:#cdb8da}.kq-a{color:var(--gold)!important}
+.kq.kv-mid{border-top-color:#b8892c!important}
+.off{fill:rgba(106,45,134,.06)!important}
+tr:hover td{background:#f7f4fa}
+.yt{color:#b4232a!important;border-color:rgba(180,35,42,.3)!important}
+footer{background:#221535!important;color:#d6cce3!important;border-top:0!important}footer a{color:#fff}
 input,select{background:#fff!important;color:var(--fg)!important;border-color:var(--line)!important}
+.vm-lv.Cao{background:#6a2d86;border-color:#6a2d86}.vm-lv.Trung{background:#efe2f6;color:#6a2d86;border-color:#dcc6ea}
+.vm-c{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px}
+/* chữ, ô ngay ngắn */
+.kq-h,.vm-h{align-items:center}
+.kq ul.g li,.kq ul.b li{padding-left:22px}
 @media (max-width:760px){
-header.top nav a{background:rgba(255,255,255,.12)!important;border-color:rgba(255,255,255,.25)!important;color:#fff!important}
-.tape-in>a,.tape-in>span{background:#35103f!important;border-color:#4f1a5e!important}
+header.top nav a{background:rgba(255,255,255,.08)!important;border-color:rgba(255,255,255,.18)!important;color:#fff!important}
+.tape-in>a,.tape-in>span{background:#2a1c3d!important;border-color:#3b2952!important}
+.kq-bar{gap:8px!important}
+.kq-bar .chips{display:grid!important;grid-template-columns:repeat(4,1fr);gap:6px;width:100%;overflow:visible!important}
+.kq-bar .chip{width:100%;padding:7px 4px!important;font-size:12px!important;text-align:center}
+.tools{display:grid!important;grid-template-columns:repeat(4,1fr);gap:6px}
+.tools .chip-b{width:100%;padding:7px 4px!important;font-size:12px!important;text-align:center;white-space:nowrap}
+.tools select{grid-column:1/-1;width:100%}
+.ychips,.chips[data-t]{display:grid!important;grid-template-columns:repeat(auto-fill,minmax(62px,1fr));gap:6px}
+.ychips .chip,.chips[data-t] .chip{text-align:center;padding:6px 4px!important}
+.tabs{display:grid!important;grid-template-columns:repeat(3,1fr);gap:6px}.tabs a{text-align:center;padding:8px 4px!important;font-size:12.5px!important}
+.vm-tone{flex-direction:column;align-items:flex-start}
 }
-.photo-credit,.photo-credit a{font-size:7px!important;color:rgba(255,255,255,.28)!important;text-decoration:none!important}</style>
+</style>
 </head><body>
 <div class="tape" aria-label="Bảng điện Top 10"><span class="tlab">TOP 10</span><div class="tape-in" id="tape"><span>Đang tải bảng điện…</span></div></div>
 <script>(function(){const tp=document.getElementById('tape');const f=(x,d=1)=>x==null?'–':(x>0?'+':'')+x.toLocaleString('vi-VN',{minimumFractionDigits:d,maximumFractionDigits:d})+'%';const c=(x,t)=>x==null?'':(x>=t?'pos pur':x>=0?'pos':'neg');
 fetch('data/rs.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(j=>{const it=j.top.map(r=>'<a href="index.html#rs"><b>'+r.s+'</b>'+r.close.toLocaleString('vi-VN')+' <i class="'+c(r.d1,6.5)+'">'+f(r.d1,2)+'</i><em>3T <i class="'+c(r.r3,50)+'">'+f(r.r3)+'</i></em></a>').join('');tp.innerHTML=it+it;}).catch(()=>{tp.parentNode.hidden=true});})();</script>
 <div class="wrap">
-<div class="rhero"><div class="photo-credit">Ảnh: Ken Lund · <a href="https://commons.wikimedia.org/wiki/File:New_and_Wall_Street,_Manhattan,_New_York_(7236992182).jpg" target="_blank" rel="noopener">CC BY-SA 2.0</a></div>
+<div class="rhero"><div class="photo-credit">Ảnh: Ken Lund, CC BY-SA 2.0</div>
 <div class="brand"><a href="./" style="color:inherit;text-decoration:none">HUY NGUYỄN · CHỨNG KHOÁN</a></div>
 <h1>Báo cáo lệnh lướt sóng 2016–2026</h1>
 <p class="lede">Toàn bộ lệnh mua, chốt lời và cắt lỗ từ 01/01/2016 đến 28/10/2026 theo phương pháp phân tích kỹ thuật của room, trên tài khoản V306TMVN chia 4 phần: mỗi lệnh 25% tài sản, không dùng margin.</p>
