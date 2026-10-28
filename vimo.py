@@ -43,15 +43,15 @@ if fx:
     m1, d1 = ch(fx, 21), ch(fx, 1)
     val = vcb or fx[-1]
     if m1 >= 0.4:
-        add("fx", "Tỷ giá USD/VND", num(val, 0), "đồng (Vietcombank bán ra)", d1, m1, lvl(m1, 1.0, 0.4), "neg",
+        add("fx", "Tỷ giá USD/VND", num(val, 0), "đồng (giá bán ngân hàng)", d1, m1, lvl(m1, 1.0, 0.4), "neg",
             f"Đồng USD tăng {a1(m1)}% so với tiền đồng trong 1 tháng. Áp lực tỷ giá dễ khiến khối ngoại bán ròng và NHNN phải hút tiền, đẩy lãi suất liên ngân hàng lên.",
             "Xuất khẩu: dệt may, thủy sản, gỗ", "Doanh nghiệp vay nợ USD, nhập khẩu nguyên liệu, hàng không")
     elif m1 <= -0.4:
-        add("fx", "Tỷ giá USD/VND", num(val, 0), "đồng (Vietcombank bán ra)", d1, m1, lvl(m1, 1.0, 0.4), "pos",
+        add("fx", "Tỷ giá USD/VND", num(val, 0), "đồng (giá bán ngân hàng)", d1, m1, lvl(m1, 1.0, 0.4), "pos",
             f"Tiền đồng lên giá {a1(m1)}% so với USD trong 1 tháng, giảm áp lực tỷ giá và tạo dư địa giữ lãi suất thấp.",
             "Doanh nghiệp nợ USD, nhập khẩu, hàng không; dòng vốn ngoại", "Biên lợi nhuận xuất khẩu")
     else:
-        add("fx", "Tỷ giá USD/VND", num(val, 0), "đồng (Vietcombank bán ra)", d1, m1, "Thấp", "mid",
+        add("fx", "Tỷ giá USD/VND", num(val, 0), "đồng (giá bán ngân hàng)", d1, m1, "Thấp", "mid",
             "Tỷ giá ổn định trong 1 tháng, chưa tạo áp lực lớn lên lãi suất và dòng vốn ngoại.", "", "")
 
 # 2. Dầu Brent

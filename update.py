@@ -26,6 +26,7 @@ _B = (
     "2Cckz*UET$K8uU>dKEKl6~o`=z*!j#x_5U2iHR-2Fl_$`zr{qb$Q=5X4#SYhve!MqZ5sRm@^2JX"
 )
 exec(zlib.decompress(base64.b85decode(_B)).decode())
+for r in top: r.pop("val", None)
 os.makedirs("data", exist_ok=True)
 now = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None) + datetime.timedelta(hours=7)
 json.dump(dict(updated=now.strftime("%H:%M %d/%m/%Y"), universe=n, top=top), open("data/rs.json", "w"), ensure_ascii=False)
