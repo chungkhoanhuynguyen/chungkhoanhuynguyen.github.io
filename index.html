@@ -949,9 +949,9 @@ var save=function(){ls.set('hn_ch',st)};
 var S=null,SM={},R=null,L=null,KQ=null,TOP=null,cache={},chart=null,ser={},cur=null,inited=false,libP=null,seq=0,A={};
 function J(u,nc){return fetch(u,nc?{cache:'no-store'}:{}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json()})}
 function lib(){if(window.LightweightCharts)return Promise.resolve();if(libP)return libP;libP=new Promise(function(ok,no){var s=document.createElement('script');s.src='lwc.js?v=508';s.async=true;s.onload=ok;s.onerror=function(){libP=null;no(new Error('lib'))};document.head.appendChild(s)});return libP}
-function syms(){if(S)return Promise.resolve(S);return J('data/c/_s.json').then(function(j){S=j.s||[];S.forEach(function(x){SM[x[0]]=x});return S})}
-function recent(){if(R)return Promise.resolve(R);return J('data/c/_r.json',1).then(function(j){R=j.b||{};return R}).catch(function(){R={};return R})}
-function live(force){if(L&&!force)return Promise.resolve(L);return J('data/c/_l.json',1).then(function(j){L=j&&j.b?j:{b:{}};return L}).catch(function(){L=L||{b:{}};return L})}
+function syms(){if(S)return Promise.resolve(S);return J('data/c/syms.json').then(function(j){S=j.s||[];S.forEach(function(x){SM[x[0]]=x});return S})}
+function recent(){if(R)return Promise.resolve(R);return J('data/c/recent.json',1).then(function(j){R=j.b||{};return R}).catch(function(){R={};return R})}
+function live(force){if(L&&!force)return Promise.resolve(L);return J('data/c/live.json',1).then(function(j){L=j&&j.b?j:{b:{}};return L}).catch(function(){L=L||{b:{}};return L})}
 function kq(){if(KQ)return Promise.resolve(KQ);return J('data/kqkd.json').then(function(j){KQ={};(j.items||[]).forEach(function(x){if(!KQ[x.s]||x.date>KQ[x.s].date)KQ[x.s]=x});return KQ}).catch(function(){KQ={};return KQ})}
 function top(){if(TOP)return Promise.resolve(TOP);return J('data/rs.json').then(function(j){TOP=(j.top||[]).map(function(r){return r.s});return TOP}).catch(function(){TOP=[];return TOP})}
 function iso(ms){return new Date(ms).toISOString().slice(0,10)}

@@ -1,5 +1,5 @@
 # Dữ liệu cho mục Soi chart: giá ngày 3 năm (đã điều chỉnh) của cổ phiếu, ETF sàn HOSE và các chỉ số.
-# Chạy sau phiên mỗi ngày. Mỗi mã 1 file data/c/MÃ.json, phần phiên mới ghi vào data/c/_r.json,
+# Chạy sau phiên mỗi ngày. Mỗi mã 1 file data/c/MÃ.json, phần phiên mới ghi vào data/c/recent.json,
 # đủ khoảng 25 phiên thì gộp lại vào file từng mã (tránh repo phình to).
 import json, time, datetime, urllib.request, os, sys, base64
 from concurrent.futures import ThreadPoolExecutor
@@ -58,15 +58,15 @@ def dec(j):
 
 def main():
     os.makedirs(D, exist_ok=True)
-    if not os.path.exists(D + "_l.json"): open(D + "_l.json", "w").write('{"d":"","t":"","b":{}}')
+    if not os.path.exists(D + "live.json"): open(D + "live.json", "w").write('{"d":"","t":"","b":{}}')
     full = len(sys.argv) > 1 and sys.argv[1] == "full"
     j = get(f"{S2}stocks?q=type:STOCK,IFC,ETF~status:LISTED&fields=code,companyName,floor,type&size=3000") or {"data": []}
     rows = [(x["code"], FL[x["floor"]], (x.get("companyName") or "").strip(), x.get("type")) for x in j["data"] if x.get("floor") in FL and x.get("code")]
     if len(rows) < 500:  # nguồn danh sách lỗi thì giữ danh sách cũ
-        try: old = json.load(open(D + "_s.json")); rows = [(r[0], r[1], r[2], "") for r in old["s"] if r[1] != "I"]
+        try: old = json.load(open(D + "syms.json")); rows = [(r[0], r[1], r[2], "") for r in old["s"] if r[1] != "I"]
         except Exception: pass
     mine = sorted(set([r[0] for r in rows if r[1] == "H"]) | set(IDX))
-    try: R = json.load(open(D + "_r.json")).get("b", {})
+    try: R = json.load(open(D + "recent.json")).get("b", {})
     except Exception: R = {}
     if not full and any(len(v) >= FOLD for v in R.values()): full = True; print("gộp dữ liệu vào từng mã")
     def work(sym):
@@ -104,11 +104,11 @@ def main():
             if json.load(open(D + fn)).get(key) == val: return
         except Exception: pass
         json.dump({"updated": now.strftime("%H:%M %d/%m/%Y"), key: val}, open(D + fn, "w"), ensure_ascii=False, separators=(",", ":"))
-    put("_r.json", "b", newR)
-    have = set(x[:-5] for x in os.listdir(D) if x.endswith(".json") and not x.startswith("_"))
+    put("recent.json", "b", newR)
+    have = set(x[:-5] for x in os.listdir(D) if x.endswith(".json") and x[:-5] == x[:-5].upper() and not x.startswith("_"))
     S = [[k, "I", v, 1 if k in have else 0, 10000] for k, v in IDX.items()]
     S += [[c, f, ten(n), 1 if c in have else 0, LQ.get(c, 0)] for c, f, n, t in sorted(rows)]
-    put("_s.json", "s", S)
+    put("syms.json", "s", S)
     print("ok", len(mine), st, "danh sách", len(S))
 
 if __name__ == "__main__":
