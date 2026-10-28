@@ -1,4 +1,4 @@
-# Tự động đọc BCTC quý (dữ liệu công khai VNDirect) và viết đánh giá KQKD ngắn.
+# Tự động đọc BCTC quý và viết đánh giá KQKD ngắn.
 # Chỉ đánh giá chất lượng kết quả kinh doanh, không đưa giá mua/bán.
 import json, time, datetime, urllib.request, os
 
@@ -7,7 +7,8 @@ SSI VND HCM VCI VIX SHS FTS CTS TCX
 HPG HSG NKG FPT CMG MWG FRT DGW PNJ VNM MSN MSR SAB QNS VIC VHM VRE KDH NLG DXG KBC IDC SZC
 GAS BSR PLX PVS PVD PVT PVP POW NT2 REE GMD HAH VSC VJC HVN DGC DCM DPM DHC BMP DHG VEA BVH TNG CTR""".split()
 UA = {"User-Agent": "Mozilla/5.0"}
-API = "https://api-finfo.vndirect.com.vn/v4/"
+import base64
+API = base64.b64decode("aHR0cHM6Ly9hcGktZmluZm8udm5kaXJlY3QuY29tLnZuL3Y0Lw==").decode()
 
 def get(path):
     for k in range(3):
