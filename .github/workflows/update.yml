@@ -6,8 +6,10 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+concurrency:
+  group: data-push
 jobs:
-  rs:
+  bang:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -16,8 +18,9 @@ jobs:
           python-version: "3.12"
       - run: python update.py
       - run: |
-          git config user.name "rs-bot"
-          git config user.email "rs-bot@users.noreply.github.com"
+          git config user.name "hn-bot"
+          git config user.email "hn-bot@users.noreply.github.com"
           git add data/rs.json
-          git diff --cached --quiet || git commit -m "Cap nhat RS $(date -u +%F)"
+          git diff --cached --quiet || git commit -m "Cap nhat bang $(date -u +%F)"
+          git pull --rebase -q || true
           git push
