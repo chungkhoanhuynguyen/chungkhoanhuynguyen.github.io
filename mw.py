@@ -21,7 +21,7 @@ def nganh(s, sec):
 
 def scan():
     body = {"filter": [{"left": "exchange", "operation": "equal", "right": "HOSE"}, {"left": "type", "operation": "equal", "right": "stock"}],
-            "columns": ["name", "close", "change", "market_cap_basic", "SMA50", "SMA200", "sector", "Value.Traded"],
+            "columns": ["name", "close", "change", "market_cap_basic", "SMA50", "SMA200", "sector", "Value.Traded", "open", "high", "low", "volume"],
             "sort": {"sortBy": "market_cap_basic", "sortOrder": "desc"}, "range": [0, 600]}
     for k in range(3):
         try:
@@ -31,9 +31,10 @@ def scan():
             err = e; time.sleep(3)
     raise SystemExit("scan lỗi %s" % err)
 
-rows = []
+rows = []; LIVE = {}
 for x in scan():
-    s, c, ch, mc, m50, m200, sec, val = x["d"]
+    s, c, ch, mc, m50, m200, sec, val, o, hi, lo, vol = x["d"]
+    if c: LIVE[s] = [o or c, hi or c, lo or c, c, vol or 0, 1000]
     if not c or mc is None or ch is None: continue
     rows.append(dict(s=s, c=c, ch=ch, mc=mc, m50=m50, m200=m200, n=nganh(s, sec), v=val or 0))
 now = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None) + datetime.timedelta(hours=7)
@@ -46,8 +47,12 @@ try: old = json.load(open("data/mw.json"))
 except Exception: pass
 vn = old.get("vn_prev")
 try:
-    req = urllib.request.Request(SRC, data=json.dumps({"symbols": {"tickers": ["HOSE:VNINDEX"]}, "columns": ["close", "change"]}).encode(), headers=UA)
-    with urllib.request.urlopen(req, timeout=30) as r: d = json.load(r)["data"][0]["d"]
+    IX = {"HOSE:VNINDEX": "VNINDEX", "HOSE:VN30": "VN30", "HOSE:VN100": "VN100", "HNX:HNXINDEX": "HNX"}
+    req = urllib.request.Request(SRC, data=json.dumps({"symbols": {"tickers": list(IX)}, "columns": ["close", "change", "open", "high", "low", "volume"]}).encode(), headers=UA)
+    with urllib.request.urlopen(req, timeout=30) as r: dd = {x["s"]: x["d"] for x in json.load(r)["data"]}
+    for k, d in dd.items():
+        if d[0]: LIVE[IX[k]] = [d[2] or d[0], d[3] or d[0], d[4] or d[0], d[0], d[5] or 0, 1]
+    d = dd["HOSE:VNINDEX"]
     vn_close, vn_ch = d[0], d[1]; vn = vn_close / (1 + vn_ch/100)
 except Exception: vn_close = vn_ch = None
 prev_tot = sum(r["mc"]/(1 + r["ch"]/100) for r in rows)
@@ -71,4 +76,18 @@ json.dump(dict(updated=now.strftime("%H:%M %d/%m/%Y"), date=today, n=len(rows), 
                up=up, dn=dn, heat=heat, topv=topv, a50=a50, a200=a200, sec=sec,
                vn=[round(vn_close, 2) if vn_close else None, round(vn_ch, 2) if vn_ch is not None else None], vn_prev=vn),
           open("data/mw.json", "w"), ensure_ascii=False)
-print("ok", len(rows), adv, unc, dec, len(intr))
+# nến trong phiên cho mục Soi chart (giá x100, khối lượng /100), bỏ qua ngày nghỉ
+def last_bar(sym):
+    try:
+        r = json.load(open("data/c/_r.json")).get("b", {}).get(sym)
+        if r: return r[-1]
+        j = json.load(open("data/c/%s.json" % sym)); return [None, j["o"][-1], j["h"][-1], j["l"][-1], j["c"][-1]]
+    except Exception: return None
+lb = last_bar("VNINDEX"); P = lambda x, k: int(round(x / k * 100))
+lv = {s: [P(b[0], b[5]), P(b[1], b[5]), P(b[2], b[5]), P(b[3], b[5]), int(round(b[4] / 100))] for s, b in LIVE.items()}
+stale = bool(lb and "VNINDEX" in lv and all(abs(a - b) <= 1 for a, b in zip(lv["VNINDEX"][1:4], lb[2:5])))  # cao, thấp, đóng cửa trùng phiên trước = ngày nghỉ
+write = now.weekday() < 5 and hm >= "09:00" and bool(lv) and not stale
+if write:
+    os.makedirs("data/c", exist_ok=True)
+    json.dump({"d": today, "t": hm, "b": lv}, open("data/c/_l.json", "w"), separators=(",", ":"))
+print("ok", len(rows), adv, unc, dec, len(intr), "ghi nến" if write else ("ngày nghỉ, không ghi nến" if stale else "ngoài giờ, không ghi nến"))
