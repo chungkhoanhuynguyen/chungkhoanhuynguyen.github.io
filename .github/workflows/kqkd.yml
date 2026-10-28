@@ -19,10 +19,11 @@ jobs:
           python-version: "3.12"
       - run: python vimo.py || true
       - run: python kqkd.py
+      - run: python mwh.py || true
       - run: |
           git config user.name "hn-bot"
           git config user.email "hn-bot@users.noreply.github.com"
-          git add data/kqkd.json data/vimo.json
+          git add data/kqkd.json data/vimo.json data/mwh.json
           git diff --cached --quiet || git commit -m "Cap nhat danh gia BCTC $(date -u +%F)"
           git pull --rebase -q || true
           git push
