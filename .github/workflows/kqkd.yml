@@ -12,6 +12,7 @@ concurrency:
 jobs:
   kqkd:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -20,6 +21,8 @@ jobs:
       - run: python vimo.py || true
       - run: python kqkd.py
       - run: python mwh.py || true
+        timeout-minutes: 12
+        continue-on-error: true
       - run: |
           git config user.name "hn-bot"
           git config user.email "hn-bot@users.noreply.github.com"
