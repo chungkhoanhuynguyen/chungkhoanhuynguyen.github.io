@@ -1,6 +1,7 @@
 # Tự động đọc BCTC quý và viết đánh giá KQKD ngắn.
 # Chỉ đánh giá chất lượng kết quả kinh doanh, không đưa giá mua/bán.
 import json, time, datetime, urllib.request, os
+import hncodec
 
 W = """TCB VPB MBB ACB CTG BID VCB HDB STB SHB TPB MSB VIB LPB NAB OCB EIB SSB VAB KLB
 SSI VND HCM VCI VIX SHS FTS CTS TCX
@@ -160,5 +161,13 @@ for s in W:
 out.sort(key=lambda r: (r["date"], r["s"]), reverse=True)
 os.makedirs("data", exist_ok=True)
 now = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None) + datetime.timedelta(hours=7)
-json.dump(dict(updated=now.strftime("%H:%M %d/%m/%Y"), items=out), open("data/kqkd.json", "w"), ensure_ascii=False)
+hncodec.dump(dict(updated=now.strftime("%H:%M %d/%m/%Y"), items=out), "data/kqkd.bin"); hncodec.drop("data/kqkd.json")
+# Nhận xét tay: bản gốc để ở _nhanxet.json (GitHub Pages không phục vụ file bắt đầu bằng "_"), web đọc bản .bin
+NX = None
+for p in ("_nhanxet.json", "data/nhanxet.json"):
+    try: NX = json.load(open(p, encoding="utf-8")); break
+    except Exception: pass
+if NX is not None:
+    if not os.path.exists("_nhanxet.json"): json.dump(NX, open("_nhanxet.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    hncodec.dump(NX, "data/nx.bin"); hncodec.drop("data/nhanxet.json")
 print("ok", len(out), sum(1 for r in out if r["date"] == out[0]["date"]))
