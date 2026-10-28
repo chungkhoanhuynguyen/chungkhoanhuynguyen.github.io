@@ -1,4 +1,5 @@
 import json, time, datetime, urllib.request, os, zlib, base64
+import hncodec
 import base64
 _h = lambda s: base64.b64decode(s).decode()
 _S1 = _h("aHR0cHM6Ly9kY2hhcnQtYXBpLnZuZGlyZWN0LmNvbS52bi9kY2hhcnQvaGlzdG9yeQ==")
@@ -34,5 +35,5 @@ exec(zlib.decompress(base64.b85decode(_B)).decode())
 for r in top: r.pop("val", None)
 os.makedirs("data", exist_ok=True)
 now = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None) + datetime.timedelta(hours=7)
-json.dump(dict(updated=now.strftime("%H:%M %d/%m/%Y"), universe=n, top=top), open("data/rs.json", "w"), ensure_ascii=False)
+hncodec.dump(dict(updated=now.strftime("%H:%M %d/%m/%Y"), universe=n, top=top), "data/rs.bin"); hncodec.drop("data/rs.json")
 print("ok", n)

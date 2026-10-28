@@ -1,5 +1,6 @@
 # Tự động: chỉ báo vĩ mô thế giới/trong nước và mức độ ảnh hưởng tới kinh tế, chứng khoán Việt Nam.
 import json, time, datetime, urllib.request, os, re
+import hncodec
 import base64
 _h = lambda s: base64.b64decode(s).decode()
 _S1 = _h("aHR0cHM6Ly9xdWVyeTEuZmluYW5jZS55YWhvby5jb20vdjgvZmluYW5jZS9jaGFydC8=")
@@ -119,5 +120,5 @@ score = sum({"pos": 1, "neg": -1}.get(i["eff"], 0) * {"Cao": 2, "Trung bình": 1
 tone = "pos" if score >= 2 else "neg" if score <= -2 else "mid"
 os.makedirs("data", exist_ok=True)
 now = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None) + datetime.timedelta(hours=7)
-json.dump(dict(updated=now.strftime("%H:%M %d/%m/%Y"), tone=tone, score=score, vn=vn, items=items), open("data/vimo.json", "w"), ensure_ascii=False)
+hncodec.dump(dict(updated=now.strftime("%H:%M %d/%m/%Y"), tone=tone, score=score, vn=vn, items=items), "data/vimo.bin"); hncodec.drop("data/vimo.json")
 print("ok", len(items), tone, score)

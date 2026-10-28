@@ -1,5 +1,6 @@
 # Lịch sử 1 năm: VN-Index, P/E, P/B thị trường, tỷ lệ mã trên MA50/MA200 (chạy 1 lần/ngày sau phiên).
 import json, time, datetime, urllib.request, os, base64
+import hncodec
 _h = lambda s: base64.b64decode(s).decode()
 S1 = _h("aHR0cHM6Ly9zY2FubmVyLnRyYWRpbmd2aWV3LmNvbS92aWV0bmFtL3NjYW4=")
 S2 = _h("aHR0cHM6Ly9kY2hhcnQtYXBpLnZuZGlyZWN0LmNvbS52bi9kY2hhcnQvaGlzdG9yeQ==")
@@ -50,6 +51,6 @@ a50 = [round(100*c/n, 1) if n else None for c, n in zip(c50, n50)]
 a200 = [round(100*c/n, 1) if n else None for c, n in zip(c200, n200)]
 now = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None) + datetime.timedelta(hours=7)
 os.makedirs("data", exist_ok=True)
-json.dump(dict(updated=now.strftime("%H:%M %d/%m/%Y"), n=len(U), dates=dates, vn=[round(vn[d], 2) for d in dates], pe=ff(pe, dates), pb=ff(pb, dates), a50=a50, a200=a200),
-          open("data/mwh.json", "w"), ensure_ascii=False)
+hncodec.dump(dict(updated=now.strftime("%H:%M %d/%m/%Y"), n=len(U), dates=dates, vn=[round(vn[d], 2) for d in dates], pe=ff(pe, dates), pb=ff(pb, dates), a50=a50, a200=a200),
+             "data/mwh.bin"); hncodec.drop("data/mwh.json")
 print("ok", len(U), len(dates), a50[-1], a200[-1])

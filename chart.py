@@ -1,7 +1,8 @@
 # Dữ liệu cho mục Soi chart: giá ngày 3 năm (đã điều chỉnh) của cổ phiếu, ETF sàn HOSE và các chỉ số.
-# Chạy sau phiên mỗi ngày. Mỗi mã 1 file data/c/MÃ.json, phần phiên mới ghi vào data/c/recent.json,
-# đủ khoảng 25 phiên thì gộp lại vào file từng mã (tránh repo phình to).
+# Chạy sau phiên mỗi ngày. Mỗi mã 1 file data/c/MÃ.bin, phần phiên mới ghi vào data/c/recent.bin,
+# đủ khoảng 25 phiên thì gộp lại vào file từng mã (tránh repo phình to). File .bin đã nén, xáo trộn (hncodec).
 import json, time, datetime, urllib.request, os, sys, base64
+import hncodec
 from concurrent.futures import ThreadPoolExecutor
 _h = lambda s: base64.b64decode(s).decode()
 S1 = _h("aHR0cHM6Ly9kY2hhcnQtYXBpLnZuZGlyZWN0LmNvbS52bi9kY2hhcnQvaGlzdG9yeQ==")
@@ -58,37 +59,39 @@ def dec(j):
 
 def main():
     os.makedirs(D, exist_ok=True)
-    if not os.path.exists(D + "live.json"): open(D + "live.json", "w").write('{"d":"","t":"","b":{}}')
     full = len(sys.argv) > 1 and sys.argv[1] == "full"
     j = get(f"{S2}stocks?q=type:STOCK,IFC,ETF~status:LISTED&fields=code,companyName,floor,type&size=3000") or {"data": []}
     rows = [(x["code"], FL[x["floor"]], (x.get("companyName") or "").strip(), x.get("type")) for x in j["data"] if x.get("floor") in FL and x.get("code")]
     if len(rows) < 500:  # nguồn danh sách lỗi thì giữ danh sách cũ
-        try: old = json.load(open(D + "syms.json")); rows = [(r[0], r[1], r[2], "") for r in old["s"] if r[1] != "I"]
-        except Exception: pass
+        old = hncodec.load(D + "syms.bin", {}) or {}
+        rows = [(r[0], r[1], r[2], "") for r in old.get("s", []) if r[1] != "I"] or rows
+    v30 = get(f"{S2}stocks?q=indexCode:VN30&fields=code&size=50") or {"data": []}
+    VN30 = set(x["code"] for x in v30.get("data", []))
+    if len(VN30) < 25: VN30 = set(r[0] for r in (hncodec.load(D + "syms.bin", {}) or {}).get("s", []) if len(r) > 5 and r[5])
     mine = sorted(set([r[0] for r in rows if r[1] == "H"]) | set(IDX))
-    try: R = json.load(open(D + "recent.json")).get("b", {})
-    except Exception: R = {}
+    R = (hncodec.load(D + "recent.bin", None) or {}).get("b")
+    if R is None:
+        try: R = json.load(open(D + "recent.json")).get("b", {})
+        except Exception: R = {}
     if not full and any(len(v) >= FOLD for v in R.values()): full = True; print("gộp dữ liệu vào từng mã")
     def work(sym):
         b = bars(sym)
         if len(b) < 2: return sym, None, "trống", 0
         t = b[-20:]; lq = round(sum(x[4] * x[5] for x in t) / 1e6 / len(t), 1)  # GTGD bình quân 20 phiên, tỷ đồng
-        fn = D + sym + ".json"; H = None
-        try: H = dec(json.load(open(fn)))
+        fn = D + sym + ".bin"; H = None
+        try: H = dec(hncodec.load(fn) or json.load(open(D + sym + ".json")))
         except Exception: pass
         same = False
         if H and not full:
             m = {x[0]: x for x in b}
             tail = [x for x in H[-4:] if x[0] in m]
             same = len(tail) >= 2 and all(abs(m[x[0]][4] - x[4]) <= max(1, abs(x[4]) * 0.002) for x in tail)
-        if same:
+        if same and os.path.exists(fn):
             last = H[-1][0]
+            hncodec.drop(D + sym + ".json")
             return sym, [x for x in b if x[0] > last], "nối", lq
-        s = json.dumps(enc(sym, b), separators=(",", ":"))
-        try: changed = open(fn).read() != s
-        except Exception: changed = True
-        if changed: open(fn, "w").write(s)
-        return sym, [], "ghi mới" if not H else "điều chỉnh", lq
+        hncodec.dump(enc(sym, b), fn); hncodec.drop(D + sym + ".json")
+        return sym, [], "ghi mới" if not H else ("chuyển định dạng" if same else "điều chỉnh"), lq
     st = {}
     newR = {}; LQ = {}
     with ThreadPoolExecutor(6) as ex:
@@ -99,16 +102,15 @@ def main():
                 continue
             if rec: newR[sym] = rec
     now = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None) + datetime.timedelta(hours=7)
-    def put(fn, key, val):  # chỉ ghi khi nội dung đổi, tránh commit thừa
-        try:
-            if json.load(open(D + fn)).get(key) == val: return
-        except Exception: pass
-        json.dump({"updated": now.strftime("%H:%M %d/%m/%Y"), key: val}, open(D + fn, "w"), ensure_ascii=False, separators=(",", ":"))
-    put("recent.json", "b", newR)
-    have = set(x[:-5] for x in os.listdir(D) if x.endswith(".json") and x[:-5] == x[:-5].upper() and not x.startswith("_"))
-    S = [[k, "I", v, 1 if k in have else 0, 10000] for k, v in IDX.items()]
-    S += [[c, f, ten(n), 1 if c in have else 0, LQ.get(c, 0)] for c, f, n, t in sorted(rows)]
-    put("syms.json", "s", S)
+    def put(fn, key, val):  # chỉ ghi khi nội dung đổi (bỏ qua giờ cập nhật), tránh commit thừa
+        if (hncodec.load(D + fn, {}) or {}).get(key) == val: return
+        hncodec.dump({"updated": now.strftime("%H:%M %d/%m/%Y"), key: val}, D + fn)
+    put("recent.bin", "b", newR)
+    have = set(x[:-4] for x in os.listdir(D) if x.endswith(".bin") and x[:-4] == x[:-4].upper())
+    S = [[k, "I", v, 1 if k in have else 0, 10000, 0] for k, v in IDX.items()]
+    S += [[c, f, ten(n), 1 if c in have else 0, LQ.get(c, 0), 1 if c in VN30 else 0] for c, f, n, t in sorted(rows)]
+    put("syms.bin", "s", S)
+    for x in ("syms.json", "recent.json", "_s.json", "_r.json", "_l.json"): hncodec.drop(D + x)
     print("ok", len(mine), st, "danh sách", len(S))
 
 if __name__ == "__main__":
