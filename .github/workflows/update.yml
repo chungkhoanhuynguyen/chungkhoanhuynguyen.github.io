@@ -22,7 +22,7 @@ jobs:
           git config user.name "hn-bot"
           git config user.email "hn-bot@users.noreply.github.com"
           git add data/rs.json data/mw.json
-          git add data/c/_l.json 2>/dev/null || true
+          git add data/c/live.json 2>/dev/null || true
           git diff --cached --quiet || git commit -m "Cap nhat bang $(date -u +%F)"
           git pull --rebase -q || true
           git push
