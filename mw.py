@@ -79,7 +79,7 @@ json.dump(dict(updated=now.strftime("%H:%M %d/%m/%Y"), date=today, n=len(rows), 
 # nến trong phiên cho mục Soi chart (giá x100, khối lượng /100), bỏ qua ngày nghỉ
 def last_bar(sym):
     try:
-        r = json.load(open("data/c/_r.json")).get("b", {}).get(sym)
+        r = json.load(open("data/c/recent.json")).get("b", {}).get(sym)
         if r: return r[-1]
         j = json.load(open("data/c/%s.json" % sym)); return [None, j["o"][-1], j["h"][-1], j["l"][-1], j["c"][-1]]
     except Exception: return None
@@ -89,5 +89,5 @@ stale = bool(lb and "VNINDEX" in lv and all(abs(a - b) <= 1 for a, b in zip(lv["
 write = now.weekday() < 5 and hm >= "09:00" and bool(lv) and not stale
 if write:
     os.makedirs("data/c", exist_ok=True)
-    json.dump({"d": today, "t": hm, "b": lv}, open("data/c/_l.json", "w"), separators=(",", ":"))
+    json.dump({"d": today, "t": hm, "b": lv}, open("data/c/live.json", "w"), separators=(",", ":"))
 print("ok", len(rows), adv, unc, dec, len(intr), "ghi nến" if write else ("ngày nghỉ, không ghi nến" if stale else "ngoài giờ, không ghi nến"))
