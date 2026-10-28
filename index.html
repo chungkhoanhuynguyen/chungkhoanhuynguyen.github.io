@@ -106,8 +106,8 @@ footer{padding-block:36px;border-top:1px solid var(--line);font-size:13px;color:
 </div></div>
 
 <section id="rs"><div class="wrap">
-<h2>Top 10 cổ phiếu khỏe nhất thị trường</h2><p class="sub">Bộ lọc độc quyền của Chứng khoán Huy Nguyễn, tự cập nhật mỗi giờ trong phiên. Giá là giá thị trường tại lúc cập nhật (nghìn đồng), không phải giá khuyến nghị mua. <span id="rsu"></span></p>
-<div class="tblw"><table class="rs"><thead><tr><th>#</th><th>Mã</th><th>Giá hiện tại</th><th>Hôm nay</th><th>3 tháng</th><th>6 tháng</th><th>12 tháng</th><th>Cách đỉnh</th><th>Điểm HN</th><th>60 phiên</th></tr></thead><tbody id="rsb"><tr><td colspan="10" class="note">Đang tải dữ liệu…</td></tr></tbody></table></div>
+<h2>Top 10 cổ phiếu khỏe nhất thị trường</h2><p class="sub">Bộ lọc độc quyền của Chứng khoán Huy Nguyễn, tự cập nhật 15 phút một lần trong phiên. Giá là giá thị trường tại lúc cập nhật (nghìn đồng), không phải giá khuyến nghị mua. <span id="rsu"></span></p>
+<div class="tblw"><table class="rs"><thead><tr><th>#</th><th>Mã</th><th>Giá hiện tại</th><th>Hôm nay</th><th>3 tháng</th><th>6 tháng</th><th>12 tháng</th><th>Cách đỉnh</th><th>Tính Điểm</th><th>60 phiên</th></tr></thead><tbody id="rsb"><tr><td colspan="10" class="note">Đang tải dữ liệu…</td></tr></tbody></table></div>
 <p class="note"><a href="bao-cao-2026.html" style="color:var(--gold);font-weight:700">Xem báo cáo lệnh lướt sóng 2026 →</a></p>
 <p class="note">Danh sách để theo dõi, không phải khuyến nghị mua. Mua vùng nào, cắt lỗ ở đâu, mã nào hợp danh mục của bạn: <a href="https://zalo.me/0365188286" target="_blank" rel="noopener">nhắn tư vấn 1:1 qua Zalo 0365.188.286</a>.</p>
 </div></section>
@@ -287,7 +287,7 @@ const cl=x=>x==null?'':(x>=0?'pos':'neg');
 fetch('data/rs.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(j=>{
  document.getElementById('rsu').textContent='Lần cập nhật gần nhất: '+j.updated+'.';
  b.innerHTML=j.top.map((r,i)=>{const sp=r.spark,lo=Math.min(...sp),hi=Math.max(...sp),pts=sp.map((v,k)=>(k*100/(sp.length-1)).toFixed(1)+','+(28-(v-lo)/((hi-lo)||1)*26).toFixed(1)).join(' ');
- return '<tr><td>'+(i+1)+'</td><td class="sym2">'+r.s+'</td><td>'+r.close.toLocaleString('vi-VN')+'</td><td class="'+cl(r.d1)+'">'+f(r.d1,2)+'</td><td class="'+cl(r.r3)+'">'+f(r.r3)+'</td><td class="'+cl(r.r6)+'">'+f(r.r6)+'</td><td class="'+cl(r.r12)+'">'+f(r.r12)+'</td><td class="neg">'+f(r.fromhi)+'</td><td><span class="rsv">'+r.rs+'</span></td><td><svg width="100" height="30" viewBox="0 0 100 30"><polyline points="'+pts+'" fill="none" stroke="var(--up)" stroke-width="1.6"/></svg></td></tr>'}).join('');
+ return '<tr><td>'+(i+1)+'</td><td class="sym2">'+r.s+'</td><td>'+r.close.toLocaleString('vi-VN')+'</td><td class="'+cl(r.d1)+'">'+f(r.d1,2)+'</td><td class="'+cl(r.r3)+'">'+f(r.r3)+'</td><td class="'+cl(r.r6)+'">'+f(r.r6)+'</td><td class="'+cl(r.r12)+'">'+f(r.r12)+'</td><td class="neg">'+f(r.fromhi)+'</td><td><span class="rsv">'+Math.max(1,Math.min(9,r.rs-90))+'</span></td><td><svg width="100" height="30" viewBox="0 0 100 30"><polyline points="'+pts+'" fill="none" stroke="var(--up)" stroke-width="1.6"/></svg></td></tr>'}).join('');
 }).catch(()=>{b.innerHTML='<tr><td colspan="10" class="note">Bảng đang được cập nhật, quay lại sau ít phút.</td></tr>'});})();
 </script>
 </body></html>
