@@ -239,11 +239,27 @@ input,select{background:#fff!important;color:var(--fg)!important;border-color:va
 header.top nav a{background:rgba(255,255,255,.12)!important;border-color:rgba(255,255,255,.25)!important;color:#fff!important}
 .tape-in>a,.tape-in>span{background:#35103f!important;border-color:#4f1a5e!important}
 }
+.vm-tone{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;padding:14px 16px;margin:0 0 14px;border-radius:14px;background:#fff;border:1px solid var(--line);box-shadow:0 10px 26px -18px rgba(63,17,112,.35)}
+.vm-tone b{font:800 16px var(--body)}.vm-tone .vn{margin-left:auto;font:700 14px var(--mono)}
+.vm-pill{font:800 12px var(--body);padding:4px 12px;border-radius:999px;white-space:nowrap}
+.vm-pill.pos{background:#e3f7ea;color:#0f7a43}.vm-pill.mid{background:#fbf1d9;color:#8a6410}.vm-pill.neg{background:#fde7e5;color:#b42318}
+.vm-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.vm{padding:16px;border-radius:14px;background:#fff;border:1px solid var(--line);box-shadow:0 10px 26px -18px rgba(63,17,112,.35);display:flex;flex-direction:column;gap:8px}
+.vm-h{display:flex;align-items:baseline;justify-content:space-between;gap:8px}.vm-h b{font:800 15px var(--body)}
+.vm-lv{font:700 11px var(--body);padding:2px 9px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+.vm-lv.Cao{background:#8e1592;color:#fff;border-color:#8e1592}.vm-lv.Trung{background:#f5d0fe;color:#86198f;border-color:#f0abfc}.vm-lv.Thấp{color:var(--mute)}
+.vm-v{font:800 24px var(--mono);color:var(--fg)}.vm-v small{font:500 12px var(--body);color:var(--mute);margin-left:6px}
+.vm-c{font:600 12.5px var(--mono);color:var(--mute)}
+.vm p{margin:0;font-size:14px;color:var(--fg)}
+.vm-e{font-size:13px;color:var(--mute)}.vm-e b{color:var(--up)}.vm-e b.l{color:var(--dn)}
+.vm-links{margin:14px 0 6px;font-size:14px;color:var(--mute)}.vm-links a{color:var(--gold);font-weight:700}
+@media (max-width:760px){.vm-grid{grid-template-columns:1fr}.vm-v{font-size:21px}.vm-tone .vn{margin-left:0}}
+.photo-credit,.photo-credit a{font-size:7px!important;color:rgba(255,255,255,.28)!important;text-decoration:none!important}
 </style>
 </head><body>
 
 <header class="top"><div class="wrap bar-in"><a class="brand" href="#top"><b>HUY NGUYỄN</b><span>CHỨNG KHOÁN</span></a>
-<nav><a href="bao-cao-2026.html">Báo cáo lệnh & Tích sản</a><a href="#rs">Top 10 khỏe</a><a href="#bctc">Đánh giá BCTC</a><a href="#tuvan">Tư vấn 1:1</a><a href="#congdong">Cộng đồng</a><a href="#bang">Bảng theo dõi</a><a href="#tieudiem">Tiêu điểm MSR</a><a href="#congcu">Công cụ</a><a href="#seri">Seri F0</a><a href="#nhom">Nhóm Zalo</a></nav></div></header>
+<nav><a href="bao-cao-2026.html">Báo cáo lệnh & Tích sản</a><a href="#rs">Top 10 khỏe</a><a href="#vimo">Vĩ mô</a><a href="#bctc">Đánh giá BCTC</a><a href="#tuvan">Tư vấn 1:1</a><a href="#congdong">Cộng đồng</a><a href="#bang">Bảng theo dõi</a><a href="#tieudiem">Tiêu điểm MSR</a><a href="#congcu">Công cụ</a><a href="#seri">Seri F0</a><a href="#nhom">Nhóm Zalo</a></nav></div></header>
 <div class="tape" aria-label="Bảng điện Top 10"><span class="tlab">TOP 10</span><div class="tape-in" id="tape"><span>Đang tải bảng điện…</span></div></div>
 
 <main id="top">
@@ -264,6 +280,16 @@ header.top nav a{background:rgba(255,255,255,.12)!important;border-color:rgba(25
 <p class="note"><a href="bao-cao-2026.html" style="color:var(--gold);font-weight:700">Xem báo cáo lướt sóng &amp; tích sản →</a></p>
 <p class="note">Danh sách để theo dõi, không phải khuyến nghị mua. Mua vùng nào, cắt lỗ ở đâu, mã nào hợp danh mục của bạn: <a href="https://zalo.me/0365188286" target="_blank" rel="noopener">nhắn tư vấn 1:1 qua Zalo 0365.188.286</a>.</p>
 </div></section>
+<section id="vimo"><div class="wrap">
+<h2>Vĩ mô · Mức độ ảnh hưởng tới kinh tế Việt Nam</h2>
+<p class="sub">Tỷ giá, giá dầu, vàng, đồng USD và lợi suất Mỹ tác động thế nào tới lãi suất, dòng vốn và từng nhóm ngành ở Việt Nam. Số liệu tự cập nhật mỗi ngày. <span id="vmu"></span></p>
+<div class="vm-tone" id="vmt"></div>
+<div class="vm-grid" id="vmg"><p class="note">Đang tải số liệu vĩ mô…</p></div>
+<p class="vm-links">Theo dõi thêm tín hiệu vĩ mô trong ngày (lãi suất liên ngân hàng, OMO, tỷ giá trung tâm):
+<a href="https://widata.vn" target="_blank" rel="noopener">WiData</a> · <a href="https://vietstock.vn" target="_blank" rel="noopener">Vietstock</a> · <a href="https://cafef.vn/vi-mo-dau-tu.chn" target="_blank" rel="noopener">CafeF Vĩ mô</a> · <a href="https://fireant.vn" target="_blank" rel="noopener">FireAnt</a></p>
+<p class="note">Nguồn số liệu: Yahoo Finance (dầu Brent, vàng, DXY, lợi suất Mỹ), Vietcombank (tỷ giá), VNDirect (VN-Index). Đánh giá mức độ ảnh hưởng là tự động theo biến động 1 tháng, mang tính tham khảo.</p>
+</div></section>
+
 <section id="bctc"><div class="wrap">
 <h2>BCTC · Đánh giá kết quả kinh doanh</h2>
 <p class="sub">Mỗi quý, khi doanh nghiệp công bố báo cáo tài chính, trang tự đọc số liệu và chỉ ra điểm tốt, điểm cần lưu ý trong kết quả kinh doanh. Một số mã có thêm nhận xét của Huy Nguyễn. Đây là đánh giá chất lượng KQKD, <b>không phải khuyến nghị mua bán</b>. <span id="kqu"></span></p>
@@ -448,5 +474,17 @@ document.getElementById('kqm').addEventListener('click',()=>{lim+=12;render();})
 Promise.all([fetch('data/kqkd.json',{cache:'no-store'}).then(r=>r.json()),fetch('data/nhanxet.json',{cache:'no-store'}).then(r=>r.ok?r.json():{}).catch(()=>({}))]).then(([j,n])=>{nx=n||{};
 const latest=j.items.length?j.items[0].date:'';items=j.items.slice().sort((a,b)=>(b.date>a.date)-(b.date<a.date)||(!!nx[b.s])-(!!nx[a.s])||({pos:0,mid:1,neg:2}[a.v]-{pos:0,mid:1,neg:2}[b.v]));
 document.getElementById('kqu').textContent='Cập nhật '+j.updated+'.';render();}).catch(()=>{G.innerHTML='<p class="note">Đang cập nhật dữ liệu, quay lại sau ít phút.</p>'});})();
+</script>
+<script>
+(function(){const G=document.getElementById('vmg');if(!G)return;const E={pos:'Tích cực',mid:'Trung tính',neg:'Tiêu cực'};
+const f=(x,d=1)=>x==null?'–':(x>=0?'+':'−')+Math.abs(x).toFixed(d).replace('.',',')+'%';const cl=x=>x==null?'':x>=0?'pos':'neg';
+fetch('data/vimo.json',{cache:'no-store'}).then(r=>r.json()).then(j=>{document.getElementById('vmu').textContent='Cập nhật '+j.updated+'.';
+const T={pos:'Bức tranh vĩ mô đang nghiêng tích cực cho thị trường Việt Nam',mid:'Bức tranh vĩ mô trung tính, chưa có biến số nào gây áp lực lớn',neg:'Vĩ mô đang tạo áp lực lên thị trường Việt Nam'};
+document.getElementById('vmt').innerHTML='<span class="vm-pill '+j.tone+'">'+E[j.tone]+'</span><b>'+T[j.tone]+'</b>'+(j.vn?'<span class="vn">VN-Index '+j.vn.val+' <span class="'+cl(j.vn.d1)+'">'+f(j.vn.d1,2)+'</span> · 1 tháng <span class="'+cl(j.vn.m1)+'">'+f(j.vn.m1)+'</span></span>':'');
+G.innerHTML=j.items.map(i=>'<article class="vm"><div class="vm-h"><b>'+i.name+'</b><span class="vm-lv '+i.level.split(' ')[0]+'">Ảnh hưởng: '+i.level+'</span></div>'+
+'<div class="vm-v">'+i.val+'<small>'+i.unit+'</small></div>'+
+'<div class="vm-c">'+(i.bp!=null?'1 tháng: '+(i.bp>=0?'+':'−')+Math.abs(i.bp)+' điểm cơ bản':'Hôm nay '+f(i.d1,2)+' · 1 tháng '+f(i.m1))+' · <span class="vm-pill '+i.eff+'" style="padding:1px 8px">'+E[i.eff]+' với VN</span></div>'+
+'<p>'+i.msg+'</p>'+(i.win?'<div class="vm-e"><b>Hưởng lợi:</b> '+i.win+'</div>':'')+(i.lose?'<div class="vm-e"><b class="l">Bất lợi:</b> '+i.lose+'</div>':'')+'</article>').join('');
+}).catch(()=>{G.innerHTML='<p class="note">Số liệu vĩ mô đang cập nhật.</p>'});})();
 </script>
 </body></html>
