@@ -304,10 +304,95 @@ html{scroll-behavior:auto}
 ::view-transition-old(root),::view-transition-new(root){animation:none}
 }
 </style>
+<style id="mwcss">
+.mw-tabs{display:flex;gap:6px;flex-wrap:wrap;margin:4px 0 16px}
+.mt{font:600 13px var(--body,system-ui);color:var(--mute);background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:7px 14px;cursor:pointer;transition:background-color .25s,color .25s,border-color .25s}
+.mt[aria-pressed=true]{background:#6a2d86;color:#fff;border-color:#6a2d86}
+.mw-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;animation:cardIn .45s cubic-bezier(.2,.7,.2,1) both}
+.mw{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px 12px;box-shadow:0 1px 2px rgba(31,27,38,.05);min-width:0;position:relative;overflow:hidden}
+.mw>header{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px}
+.mw>header b{font-size:15px;color:var(--fg)}
+.mw-tag{font-size:11px;color:var(--mute);background:#f4f1f8;border-radius:6px;padding:2px 8px;white-space:nowrap}
+.mw-rg{display:flex;gap:2px;background:#f4f1f8;border-radius:8px;padding:2px}
+.mw-rg button{font:600 11px var(--body,system-ui);border:0;background:transparent;color:var(--mute);padding:3px 8px;border-radius:6px;cursor:pointer}
+.mw-rg button[aria-pressed=true]{background:#fff;color:#6a2d86;box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.mw-c svg{display:block;width:100%;height:auto;overflow:visible}
+.mw-c text{font:11px var(--body,system-ui);fill:var(--mute)}
+.mw-c .tk{font-weight:700;fill:var(--fg)}
+.mw-f{font-size:11.5px;color:var(--mute);margin:6px 0 0;display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center}
+.lg{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:4px;vertical-align:-1px}
+.lg.up{background:#1f8a57}.lg.dn{background:#c43c32}.lg.mid{background:#d8b24a}.lg.vn{background:#8d8899}.lg.a50{background:#6a2d86}.lg.a200{background:#d08a1e}.lg.pe{background:#6a2d86}
+.mw-big{display:flex;gap:8px;margin-bottom:6px}
+.mw-big div{flex:1;border-radius:10px;padding:6px 10px;background:#f7f5fa}
+.mw-big b{display:block;font-size:22px;line-height:1.1}
+.mw-big small{font-size:11px;color:var(--mute)}
+.mw-big .u b{color:#1f8a57}.mw-big .m b{color:#b08a1e}.mw-big .d b{color:#c43c32}
+.mw-bar{display:flex;height:12px;border-radius:6px;overflow:hidden;margin:4px 0 2px}
+.mw-bar i{display:block;transition:flex-grow .8s cubic-bezier(.2,.7,.2,1)}
+.mw-wide{grid-column:1/-1}
+#mw-sec{max-width:680px}
+.mw-heat{display:grid;grid-template-columns:repeat(auto-fill,minmax(78px,1fr));grid-auto-rows:54px;gap:3px;grid-auto-flow:dense}
+.mw-heat div{border-radius:6px;padding:5px 6px;color:#fff;display:flex;flex-direction:column;justify-content:center;min-width:0;cursor:default;transition:transform .2s}
+.mw-heat div:hover{transform:scale(1.04);z-index:1}
+.mw-heat .h2{grid-column:span 2;grid-row:span 2}.mw-heat .h1{grid-column:span 2}
+.mw-heat b{font-size:13px;line-height:1.1}.mw-heat .h2 b{font-size:18px}
+.mw-heat small{font-size:11px;opacity:.92}
+.mw-note p{font-size:14px;line-height:1.6;color:var(--fg);margin:8px 0 0}
+.mw-note .pill{display:inline-block;border-radius:999px;padding:1px 10px;font-size:12px;font-weight:700;margin-right:6px}
+.mw-lock{min-height:230px}
+.mw-blur{filter:blur(5px);opacity:.55;pointer-events:none;user-select:none}
+.mw-blur svg{width:100%;height:auto;display:block}
+.mw-lk{position:absolute;inset:44px 0 0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:4px;padding:10px 18px;background:linear-gradient(180deg,rgba(255,255,255,.35),rgba(255,255,255,.8))}
+.lk-ic{width:42px;height:42px;border-radius:50%;background:#6a2d86 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='2.2' stroke-linecap='round'%3E%3Crect x='5' y='11' width='14' height='10' rx='2'/%3E%3Cpath d='M8 11V8a4 4 0 0 1 8 0v3'/%3E%3C/svg%3E") center/22px no-repeat;box-shadow:0 6px 16px -6px rgba(106,45,134,.6);margin-bottom:4px}
+.mw-lk b{font-size:15px;color:#4c2766}
+.mw-lk small{font-size:12.5px;color:var(--mute);max-width:260px}
+.lk-btn{margin-top:6px;font:700 12.5px var(--body,system-ui);color:#6a2d86;border:1.5px solid #6a2d86;border-radius:999px;padding:5px 14px;text-decoration:none;transition:background-color .25s,color .25s}
+.lk-btn:hover{background:#6a2d86;color:#fff}
+#tichluy{background:linear-gradient(180deg,#f2f1f5,#ece7f3)}
+.tl-box{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;background:linear-gradient(135deg,#221535 0%,#3a1f52 55%,#4c2766 100%);color:#f3eef8;border-radius:22px;padding:34px 34px 30px;position:relative;overflow:hidden;box-shadow:0 30px 60px -34px rgba(34,21,53,.7)}
+.tl-box:before{content:"";position:absolute;right:-120px;top:-140px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(226,184,92,.28),transparent 65%)}
+.tl-box:after{content:"10%";position:absolute;left:-14px;bottom:-60px;font:900 190px/1 var(--disp,Georgia,serif);color:rgba(255,255,255,.04);pointer-events:none}
+.tl-l,.tl-r{position:relative;z-index:1}
+.tl-box .eyebrow{color:#e2b85c;margin:0 0 10px}
+.tl-box h2{color:#fff;font-size:clamp(26px,3.4vw,38px);line-height:1.15;margin:0 0 12px}
+.tl-box h2 em{font-style:normal;background:linear-gradient(90deg,#f3d27a,#e2a73c);-webkit-background-clip:text;background-clip:text;color:transparent}
+.tl-lede{color:#d9cfe6;font-size:15.5px;line-height:1.6;margin:0 0 18px}
+.tl-pts{list-style:none;padding:0;margin:0 0 22px;display:grid;gap:10px}
+.tl-pts li{display:flex;flex-direction:column;padding-left:30px;position:relative}
+.tl-pts li:before{content:"";position:absolute;left:0;top:2px;width:20px;height:20px;border-radius:50%;background:#e2b85c url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23221535' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='M5 12l5 5 9-10'/%3E%3C/svg%3E") center/12px no-repeat}
+.tl-pts b{color:#fff;font-size:15px}.tl-pts span{color:#bfb3cf;font-size:13px}
+.tl-box .btn.main.tl-cta{background:linear-gradient(90deg,#f3d27a,#e2a73c)!important;color:#221535!important;font-family:inherit}
+.tl-box .btn.main.tl-cta small{font-family:inherit!important;color:#4a2f12!important;opacity:.85}
+.mw-f span{white-space:nowrap}
+.tl-cta{display:inline-flex!important;flex-direction:column;align-items:flex-start;gap:2px;background:linear-gradient(90deg,#f3d27a,#e2a73c)!important;color:#221535!important;font-weight:800;padding:12px 22px!important;border-radius:14px!important;text-decoration:none;box-shadow:0 12px 26px -12px rgba(226,167,60,.8)}
+.tl-cta small{font-weight:600;font-size:12px;opacity:.8}
+.tl-calc{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:20px;backdrop-filter:blur(6px)}
+.tl-calc>b{display:block;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#e2b85c;margin-bottom:12px}
+.tl-calc label{display:grid;grid-template-columns:1fr auto;align-items:center;gap:6px 10px;font-size:13px;color:#d9cfe6;margin-bottom:14px}
+.tl-calc input{grid-column:1/-1;width:100%;accent-color:#e2b85c;height:22px}
+.tl-calc output{grid-row:1;grid-column:2;font-weight:800;color:#fff;font-size:14px}
+.tl-res{border-radius:14px;background:#fff;color:#221535;padding:14px 16px}
+.tl-res span{font-size:12px;color:#6b6477;display:block}
+.tl-res strong{display:block;font:900 32px/1.15 var(--body,system-ui);color:#6a2d86;font-variant-numeric:tabular-nums}
+.tl-res small{font-size:12.5px;color:#4b4557}
+.tl-dis{font-size:11.5px;line-height:1.55;color:#a99cbc;margin:12px 2px 0}
+@media (max-width:760px){
+.mw-grid{grid-template-columns:1fr;gap:10px}
+.mw{padding:12px}
+.mt{padding:6px 11px;font-size:12px}
+.mw-tabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-2px;padding:2px}
+.mw-tabs::-webkit-scrollbar{display:none}
+.mw-heat{grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:46px}
+.mw-heat .h2{grid-column:span 2;grid-row:span 2}.mw-heat .h1{grid-column:span 2;grid-row:span 1}
+.tl-box{grid-template-columns:1fr;padding:24px 18px;gap:18px;border-radius:18px}
+.tl-box:after{font-size:130px}
+}
+@media (prefers-reduced-motion:reduce){.mw-grid{animation:none}.mw-bar i{transition:none}}
+</style>
 </head><body>
 
 <header class="top"><div class="wrap bar-in"><a class="brand" href="#top"><b>HUY NGUYỄN</b><span>CHỨNG KHOÁN</span></a>
-<nav><a href="bao-cao-2026.html">Báo cáo lệnh & Tích sản</a><a href="#rs">Top 10 khỏe</a><a href="#vimo">Vĩ mô</a><a href="#bctc">Đánh giá BCTC</a><a href="#tuvan">Tư vấn 1:1</a><a href="#congdong">Cộng đồng</a><a href="#bang">Bảng theo dõi</a><a href="#tieudiem">Tiêu điểm MSR</a><a href="#congcu">Công cụ</a><a href="#seri">Seri F0</a><a href="#nhom">Nhóm Zalo</a></nav></div></header>
+<nav><a href="bao-cao-2026.html">Báo cáo lệnh & Tích sản</a><a href="#rs">Top 10 khỏe</a><a href="#thitruong">Thị trường</a><a href="#vimo">Vĩ mô</a><a href="#bctc">Đánh giá BCTC</a><a href="#tuvan">Tư vấn 1:1</a><a href="#tichluy">Tích lũy 10%</a><a href="#congdong">Cộng đồng</a><a href="#bang">Bảng theo dõi</a><a href="#tieudiem">Tiêu điểm MSR</a><a href="#congcu">Công cụ</a><a href="#seri">Seri F0</a><a href="#nhom">Nhóm Zalo</a></nav></div></header>
 <div class="tape" aria-label="Bảng điện Top 10"><span class="tlab">TOP 10</span><div class="tape-in" id="tape"><span>Đang tải bảng điện…</span></div></div>
 
 <main id="top">
@@ -327,6 +412,35 @@ html{scroll-behavior:auto}
 <div class="tblw"><table class="rs"><thead><tr><th>#</th><th>Mã</th><th>Giá hiện tại</th><th>Hôm nay</th><th>3 tháng</th><th>6 tháng</th><th>12 tháng</th><th>Cách đỉnh</th><th>Tính Điểm</th><th>60 phiên</th></tr></thead><tbody id="rsb"><tr><td colspan="10" class="note">Đang tải dữ liệu…</td></tr></tbody></table></div><div class="rsm" id="rsm"></div>
 <p class="note"><a href="bao-cao-2026.html" style="color:var(--gold);font-weight:700">Xem báo cáo lướt sóng &amp; tích sản →</a></p>
 <p class="note">Danh sách để theo dõi, không phải khuyến nghị mua. Mua vùng nào, cắt lỗ ở đâu, mã nào hợp danh mục của bạn: <a href="https://zalo.me/0365188286" target="_blank" rel="noopener">nhắn tư vấn 1:1 qua Zalo 0365.188.286</a>.</p>
+</div></section>
+<section id="thitruong"><div class="wrap">
+<h2>Thị trường hôm nay</h2>
+<p class="sub">Toàn cảnh sàn HOSE: nhóm cổ phiếu dẫn dắt, độ rộng, định giá, phân bổ dòng tiền và bản đồ nhiệt. Tự cập nhật trong phiên. <span id="mwu"></span></p>
+<div class="mw-tabs" role="tablist" aria-label="Chọn nhóm thông tin">
+<button class="mt" type="button" data-t="tq" aria-pressed="true">Tổng quan</button><button class="mt" type="button" data-t="dg" aria-pressed="false">Định giá</button><button class="mt" type="button" data-t="nh" aria-pressed="false">Ngành &amp; bản đồ nhiệt</button><button class="mt" type="button" data-t="kh" aria-pressed="false">Dành cho khách hàng</button>
+</div>
+<div class="mw-grid" data-p="tq">
+ <article class="mw"><header><b>Nhóm dẫn dắt thị trường</b><span class="mw-tag">HOSE</span></header><div class="mw-c" id="mw-lead"></div><p class="mw-f" id="mw-lead-f"></p></article>
+ <article class="mw"><header><b>Độ rộng thị trường</b><span class="mw-tag" id="mw-br-n"></span></header><div class="mw-big" id="mw-br-big"></div><div class="mw-c" id="mw-br"></div><p class="mw-f"><i class="lg up"></i>Tăng giá <i class="lg mid"></i>Đứng giá <i class="lg dn"></i>Giảm giá</p></article>
+ <article class="mw"><header><b>Phân bổ thị trường</b><span class="mw-rg" data-c="ma"></span></header><div class="mw-c" id="mw-ma"></div><p class="mw-f"><i class="lg vn"></i>VN-Index (trái) <i class="lg a50"></i>Tỷ lệ mã trên MA50 <i class="lg a200"></i>Trên MA200 (% phải)</p></article>
+ <article class="mw"><header><b>Thanh khoản cao nhất</b><span class="mw-tag">tỷ đồng</span></header><div class="mw-c" id="mw-tv"></div></article>
+</div>
+<div class="mw-grid" data-p="dg" hidden>
+ <article class="mw"><header><b>Định giá theo P/E</b><span class="mw-rg" data-c="pe"></span></header><div class="mw-c" id="mw-pe"></div><p class="mw-f"><i class="lg vn"></i>VN-Index (điểm, trái) <i class="lg pe"></i>P/E (lần, phải)</p></article>
+ <article class="mw"><header><b>Định giá theo P/B</b><span class="mw-rg" data-c="pb"></span></header><div class="mw-c" id="mw-pb"></div><p class="mw-f"><i class="lg vn"></i>VN-Index (điểm, trái) <i class="lg pe"></i>P/B (lần, phải)</p></article>
+ <article class="mw mw-note"><b>Cách đọc nhanh</b><p id="mw-dg-note">Đang tính…</p></article>
+</div>
+<div class="mw-grid" data-p="nh" hidden>
+ <article class="mw mw-wide"><header><b>Bản đồ nhiệt 60 cổ phiếu vốn hóa lớn nhất</b><span class="mw-tag">% hôm nay</span></header><div class="mw-heat" id="mw-heat"></div></article>
+ <article class="mw mw-wide"><header><b>Diễn biến theo ngành</b><span class="mw-tag">% bình quân theo vốn hóa</span></header><div class="mw-c" id="mw-sec"></div></article>
+</div>
+<div class="mw-grid" data-p="kh" hidden>
+ <article class="mw mw-lock"><header><b>Khối ngoại mua/bán ròng</b></header><div class="mw-blur"><svg viewBox="0 0 320 150" aria-hidden="true"><g fill="#1f8a57"><rect x="12" y="40" width="22" height="70"/><rect x="44" y="60" width="22" height="50"/><rect x="76" y="75" width="22" height="35"/><rect x="108" y="85" width="22" height="25"/></g><g fill="#c43c32"><rect x="190" y="110" width="22" height="20"/><rect x="222" y="110" width="22" height="30"/><rect x="254" y="110" width="22" height="38"/><rect x="286" y="110" width="22" height="26"/></g><line x1="0" y1="110" x2="320" y2="110" stroke="#ccc"/></svg></div><div class="mw-lk"><span class="lk-ic" aria-hidden="true"></span><b>Chưa đăng ký khách hàng</b><small>Dòng tiền khối ngoại theo từng mã, cập nhật mỗi phiên</small><a class="lk-btn" href="#tuvan">Đăng ký tư vấn</a></div></article>
+ <article class="mw mw-lock"><header><b>Bộ lọc cổ phiếu</b></header><div class="mw-blur"><svg viewBox="0 0 320 150" aria-hidden="true"><g fill="#d9d3e3"><rect x="10" y="14" width="300" height="16" rx="4"/><rect x="10" y="40" width="250" height="16" rx="4"/><rect x="10" y="66" width="280" height="16" rx="4"/><rect x="10" y="92" width="210" height="16" rx="4"/><rect x="10" y="118" width="260" height="16" rx="4"/></g></svg></div><div class="mw-lk"><span class="lk-ic" aria-hidden="true"></span><b>Chưa đăng ký khách hàng</b><small>Lọc theo định giá, tăng trưởng lợi nhuận, xu hướng và thanh khoản</small><a class="lk-btn" href="#tuvan">Đăng ký tư vấn</a></div></article>
+ <article class="mw mw-lock"><header><b>Biểu đồ kỹ thuật &amp; vùng mua</b></header><div class="mw-blur"><svg viewBox="0 0 320 150" aria-hidden="true"><polyline fill="none" stroke="#6a2d86" stroke-width="3" points="0,120 30,110 60,115 90,90 120,95 150,70 180,78 210,50 240,58 270,35 300,40 320,25"/><rect x="0" y="95" width="320" height="22" fill="rgba(31,138,87,.18)"/></svg></div><div class="mw-lk"><span class="lk-ic" aria-hidden="true"></span><b>Chưa đăng ký khách hàng</b><small>Vùng mua, điểm cắt lỗ và kế hoạch cho từng mã đang theo dõi</small><a class="lk-btn" href="#tuvan">Đăng ký tư vấn</a></div></article>
+ <article class="mw mw-lock"><header><b>Báo cáo định giá doanh nghiệp</b></header><div class="mw-blur"><svg viewBox="0 0 320 150" aria-hidden="true"><g fill="#d9d3e3"><rect x="10" y="12" width="140" height="60" rx="6"/><rect x="170" y="12" width="140" height="60" rx="6"/><rect x="10" y="84" width="300" height="12" rx="4"/><rect x="10" y="104" width="260" height="12" rx="4"/><rect x="10" y="124" width="280" height="12" rx="4"/></g></svg></div><div class="mw-lk"><span class="lk-ic" aria-hidden="true"></span><b>Chưa đăng ký khách hàng</b><small>Định giá chi tiết, kịch bản lợi nhuận và giá trị hợp lý từng mã</small><a class="lk-btn" href="#tuvan">Đăng ký tư vấn</a></div></article>
+</div>
+<p class="note" style="margin-top:10px">Số liệu thị trường có thể chậm so với bảng điện. Đóng góp điểm là ước tính theo vốn hóa. Thông tin tham khảo, không phải khuyến nghị mua bán.</p>
 </div></section>
 <section id="vimo"><div class="wrap">
 <h2>Vĩ mô · Mức độ ảnh hưởng tới kinh tế Việt Nam</h2>
@@ -359,6 +473,31 @@ html{scroll-behavior:auto}
 <div class="box"><h3>Cập nhật theo mùa KQKD</h3><p>Nhắc lịch công bố kết quả kinh doanh của các mã trong danh mục và đánh giá lại ngay khi số liệu ra.</p></div>
 </div>
 <ol class="steps"><li><b>Nhắn Zalo 0365.188.286</b><span>Gửi số vốn, các mã đang cầm và mục tiêu.</span></li><li><b>Trao đổi 1:1</b><span>Anh Huy phân tích tình huống và đề xuất hướng đi.</span></li><li><b>Theo sát kế hoạch</b><span>Cập nhật khi thị trường hoặc kết quả kinh doanh thay đổi.</span></li></ol>
+</div></section>
+
+<section id="tichluy"><div class="wrap">
+<div class="tl-box">
+ <div class="tl-l">
+  <p class="eyebrow">Tích lũy sinh lời</p>
+  <h2>Gửi tích lũy, lợi suất <em>đến 10%/năm</em></h2>
+  <p class="tl-lede">Dành cho anh chị muốn tiền nhàn rỗi sinh lời đều đặn trong lúc chờ cơ hội đầu tư, không phải canh bảng điện mỗi ngày.</p>
+  <ul class="tl-pts">
+   <li><b>Lợi suất đến 10%/năm</b><span>Tùy kỳ hạn và số tiền tham gia</span></li>
+   <li><b>Kỳ hạn linh hoạt</b><span>Chọn theo kế hoạch dòng tiền của anh chị</span></li>
+   <li><b>Tư vấn 1:1</b><span>Giải thích rõ điều khoản, rủi ro trước khi tham gia</span></li>
+  </ul>
+  <a class="btn main tl-cta" href="https://zalo.me/0365188286" target="_blank" rel="noopener">Liên hệ nhận thông tin <small>Zalo 0365.188.286</small></a>
+ </div>
+ <div class="tl-r">
+  <div class="tl-calc">
+   <b>Ước tính tiền lãi</b>
+   <label>Số tiền gửi<input id="tlA" type="range" min="10" max="5000" step="10" value="500"><output id="tlAo">500 triệu</output></label>
+   <label>Thời gian<input id="tlM" type="range" min="1" max="36" step="1" value="12"><output id="tlMo">12 tháng</output></label>
+   <div class="tl-res"><span>Tiền lãi ước tính ở mức 10%/năm</span><strong id="tlR">50 triệu</strong><small id="tlT">Tổng nhận về khoảng 550 triệu</small></div>
+  </div>
+  <p class="tl-dis">Con số chỉ để minh họa, chưa trừ thuế, phí. Lợi suất, kỳ hạn và điều kiện cụ thể theo chính sách sản phẩm tại thời điểm đăng ký, sẽ được tư vấn rõ khi anh chị liên hệ.</p>
+ </div>
+</div>
 </div></section>
 
 <section id="congdong"><div class="wrap">
@@ -537,7 +676,7 @@ G.innerHTML=j.items.map(i=>'<article class="vm"><div class="vm-h"><b>'+i.name+'<
 (function(){
 var R=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
 document.documentElement.classList.add('js');
-var SEL='section h2,section .sub,section h1,.lede,.kpis>.k,.tw,.tblw,.chart,.why,.tvg>.tvb,.box,.tk,.cta,.kq-cta,.vm-tone,ol.eps>li,.focus>*,.vid,.tabs,.ychips,.chips,.notes,.kq-bar,.tools';
+var SEL='section h2,section .sub,section h1,.lede,.kpis>.k,.tw,.tblw,.chart,.why,.tvg>.tvb,.box,.tk,.cta,.kq-cta,.vm-tone,ol.eps>li,.focus>*,.vid,.tabs,.ychips,.chips,.notes,.kq-bar,.tools,.mw,.tl-box';
 function mark(root){
   var els=(root||document).querySelectorAll(SEL);
   els.forEach(function(e){
@@ -573,6 +712,97 @@ function go(){
   setTimeout(function(){document.querySelectorAll('.rv:not(.in)').forEach(function(e){var r=e.getBoundingClientRect();if(r.top<innerHeight&&r.bottom>0)e.classList.add('in');});},1200);
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();
+})();
+</script>
+<script id="mwjs">
+(function(){
+var $=function(i){return document.getElementById(i)};if(!$('mw-lead'))return;
+var NS='http://www.w3.org/2000/svg',UP='#1f8a57',DN='#c43c32',MID='#d8b24a';
+var esc=function(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+var nf=function(x,d){return x==null?'–':Number(x).toLocaleString('vi-VN',{minimumFractionDigits:d||0,maximumFractionDigits:d||0})};
+var pc=function(x){return x==null?'–':(x>0?'+':x<0?'−':'')+Math.abs(x).toFixed(2).replace('.',',')+'%'};
+function svg(w,h,inner){return '<svg viewBox="0 0 '+w+' '+h+'" role="img" preserveAspectRatio="xMidYMid meet">'+inner+'</svg>'}
+// tabs
+var tabs=document.querySelectorAll('.mw-tabs .mt');
+tabs.forEach(function(b){b.addEventListener('click',function(){tabs.forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+ document.querySelectorAll('#thitruong .mw-grid').forEach(function(g){var on=g.dataset.p===b.dataset.t;g.hidden=!on;if(on){g.style.animation='none';g.offsetHeight;g.style.animation='';}});});});
+// biểu đồ đường 2 trục
+function line(el,D,S,opt){
+ var W=360,H=190,L=38,R=34,T=10,B=22,n=D.length;if(n<2){el.innerHTML='<p class="note">Chưa đủ dữ liệu.</p>';return}
+ var x=function(i){return L+(W-L-R)*i/(n-1)};
+ function rng(arr){var v=arr.filter(function(a){return a!=null}),mn=Math.min.apply(0,v),mx=Math.max.apply(0,v),p=(mx-mn)*.08||1;return[mn-p,mx+p]}
+ var lv=[],rv=[];S.forEach(function(s){(s.ax==='r'?rv:lv).push.apply(s.ax==='r'?rv:lv,s.v)});
+ var lr=rng(lv),rr=opt&&opt.rr?opt.rr:rng(rv);
+ var y=function(v,r){return T+(H-T-B)*(1-(v-r[0])/(r[1]-r[0]))};
+ var g='';for(var k=0;k<=4;k++){var yy=T+(H-T-B)*k/4,vl=lr[1]-(lr[1]-lr[0])*k/4,vr=rr[1]-(rr[1]-rr[0])*k/4;
+  g+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+yy+'" y2="'+yy+'" stroke="#ebe7f0"/><text x="'+(L-5)+'" y="'+(yy+4)+'" text-anchor="end">'+nf(vl)+'</text><text x="'+(W-R+5)+'" y="'+(yy+4)+'">'+nf(vr,opt&&opt.rd!=null?opt.rd:0)+'</text>';}
+ var st=Math.max(1,Math.round(n/4));for(var i=0;i<n;i+=st){var d=D[i];g+='<text x="'+x(i)+'" y="'+(H-5)+'" text-anchor="middle">'+d.slice(8,10)+'/'+d.slice(5,7)+'</text>';}
+ if(opt&&opt.avg!=null){var ya=y(opt.avg,rr);g+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+ya+'" y2="'+ya+'" stroke="#6a2d86" stroke-dasharray="4 4" opacity=".55"/><text x="'+(W-R-2)+'" y="'+(ya-4)+'" text-anchor="end" style="fill:#6a2d86">TB '+nf(opt.avg,2)+'</text>';}
+ S.forEach(function(s){var r=s.ax==='r'?rr:lr,p=[];s.v.forEach(function(v,i){if(v!=null)p.push(x(i).toFixed(1)+','+y(v,r).toFixed(1))});
+  if(s.fill){g+='<polygon points="'+x(0)+','+(H-B)+' '+p.join(' ')+' '+x(n-1)+','+(H-B)+'" fill="'+s.c+'" opacity=".09"/>'}
+  g+='<polyline class="lr" pathLength="1" points="'+p.join(' ')+'" fill="none" stroke="'+s.c+'" stroke-width="'+(s.w||1.8)+'" stroke-linejoin="round"/>';});
+ el.innerHTML=svg(W,H,g);
+}
+function ranges(key,draw){var box=document.querySelector('.mw-rg[data-c="'+key+'"]');var R=[['3T',63],['6T',126],['1N',250]];
+ box.innerHTML=R.map(function(r,i){return '<button type="button" data-n="'+r[1]+'" aria-pressed="'+(i===2)+'">'+r[0]+'</button>'}).join('');
+ box.querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){box.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});draw(+b.dataset.n)})});draw(250);}
+function hist(h){
+ var sl=function(a,n){return a.slice(-n)};
+ ranges('ma',function(n){line($('mw-ma'),sl(h.dates,n),[{v:sl(h.vn,n),c:'#8d8899',fill:1,w:1.6},{v:sl(h.a50,n),c:'#6a2d86',ax:'r'},{v:sl(h.a200,n),c:'#d08a1e',ax:'r'}],{rr:[0,100]})});
+ function val(k,lab){var all=h[k].filter(function(v){return v!=null}),avg=all.reduce(function(a,b){return a+b},0)/all.length;
+  ranges(k,function(n){line($('mw-'+k),sl(h.dates,n),[{v:sl(h.vn,n),c:'#8d8899',fill:1,w:1.6},{v:sl(h[k],n),c:'#6a2d86',ax:'r',w:2}],{rd:k==='pb'?2:1,avg:avg})});
+  var cur=all[all.length-1],mn=Math.min.apply(0,all),mx=Math.max.apply(0,all),pct=Math.round(100*all.filter(function(v){return v<=cur}).length/all.length);
+  return {lab:lab,cur:cur,avg:avg,mn:mn,mx:mx,pct:pct};}
+ var a=val('pe','P/E'),b=val('pb','P/B');
+ function lv(p){return p<=30?['#e6f3ec','#1f8a57','Thấp trong 1 năm']:p>=70?['#fbeceb','#c43c32','Cao trong 1 năm']:['#f6f0dc','#8a6a12','Quanh mức trung bình']}
+ $('mw-dg-note').innerHTML=[a,b].map(function(o){var l=lv(o.pct);return '<span class="pill" style="background:'+l[0]+';color:'+l[1]+'">'+o.lab+' '+nf(o.cur,2)+' lần</span>'+l[2]+': trung bình 1 năm '+nf(o.avg,2)+', thấp nhất '+nf(o.mn,2)+', cao nhất '+nf(o.mx,2)+'. Hiện cao hơn '+o.pct+'% số phiên trong năm.'}).join('<br>')+
+ '<br><span style="color:var(--mute);font-size:13px">Định giá thấp chưa chắc là tín hiệu mua, cần đọc cùng xu hướng lợi nhuận và dòng tiền. Tỷ lệ mã trên MA50 dưới 20% thường là vùng thị trường quá bán, trên 80% là vùng hưng phấn.</span>';
+}
+function meters(m){return [['Mã trên MA50 (xu hướng ngắn)',m.a50],['Mã trên MA200 (xu hướng dài)',m.a200]].map(function(r){var c=r[1]<20?DN:r[1]>80?UP:'#6a2d86';return '<div style="margin:8px 0 0"><div style="display:flex;justify-content:space-between;font-size:12.5px"><span>'+r[0]+'</span><b style="color:'+c+'">'+nf(r[1],1)+'%</b></div><div class="mw-bar" style="height:8px;background:#efebf4"><i style="width:'+r[1]+'%;background:'+c+'"></i></div></div>'}).join('')}
+function live(m){
+ $('mwu').textContent='Cập nhật '+m.updated+'.';
+ // nhóm dẫn dắt
+ var L=m.up.slice(0,10).concat(m.dn.slice(0,10).reverse()),W=360,H=170,T=14,B=30,mu=Math.max.apply(0,m.up.map(function(r){return r[1]}).concat([.01])),md=Math.max.apply(0,m.dn.map(function(r){return -r[1]}).concat([.01])),sc=(H-T-B)/(mu+md),z=T+mu*sc,bw=(W-6)/L.length,g='';
+ g+='<line x1="0" x2="'+W+'" y1="'+z.toFixed(1)+'" y2="'+z.toFixed(1)+'" stroke="#d9d3e3"/>';
+ L.forEach(function(r,i){var hh=Math.abs(r[1])*sc,xx=3+i*bw+bw*.14,w=bw*.72,up=r[1]>0,cx=(xx+w/2).toFixed(1);
+  g+='<rect x="'+xx.toFixed(1)+'" y="'+(up?z-hh:z).toFixed(1)+'" width="'+w.toFixed(1)+'" height="'+Math.max(1,hh).toFixed(1)+'" rx="2" fill="'+(up?UP:DN)+'"><title>'+esc(r[0])+': '+(up?'+':'')+nf(r[1],2)+' điểm</title></rect>';
+  g+='<text x="'+cx+'" y="'+(up?z-hh-3:z+hh+9).toFixed(1)+'" text-anchor="middle" style="font-size:7.5px">'+nf(Math.abs(r[1]),Math.abs(r[1])<1?2:1)+'</text>';
+  g+='<text class="tk" x="'+cx+'" y="'+(H-4-(i%2)*11)+'" text-anchor="middle" style="font-size:8.5px">'+esc(r[0])+'</text>';});
+ $('mw-lead').innerHTML=svg(W,H,g);
+ var su=m.up.reduce(function(a,r){return a+r[1]},0),sd=m.dn.reduce(function(a,r){return a+r[1]},0);
+ $('mw-lead-f').innerHTML='<span><i class="lg up"></i>10 mã kéo +'+nf(su,2)+' điểm</span><span><i class="lg dn"></i>10 mã giữ chân '+nf(sd,2)+' điểm</span>'+(m.vn&&m.vn[0]?'<span>VN-Index '+nf(m.vn[0],2)+' <b style="color:'+(m.vn[1]>=0?UP:DN)+'">'+pc(m.vn[1])+'</b></span>':'');
+ // độ rộng
+ var b=m.breadth,tot=b[0]+b[1]+b[2]||1;$('mw-br-n').textContent=tot+' mã';
+ $('mw-br-big').innerHTML='<div class="u"><b>'+b[0]+'</b><small>Tăng '+Math.round(100*b[0]/tot)+'%</small></div><div class="m"><b>'+b[1]+'</b><small>Đứng '+Math.round(100*b[1]/tot)+'%</small></div><div class="d"><b>'+b[2]+'</b><small>Giảm '+Math.round(100*b[2]/tot)+'%</small></div>';
+ var I=m.intraday||[];
+ if(I.length>2){var w2=360,h2=120,n=I.length,X=function(i){return 30+(w2-36)*i/(n-1)},Y=function(v){return 6+(h2-26)*(1-v/tot)};
+  var a1=[],a2=[];I.forEach(function(r,i){a1.push(X(i).toFixed(1)+','+Y(r[1]).toFixed(1));a2.push(X(i).toFixed(1)+','+Y(r[1]+r[2]).toFixed(1))});
+  var gg='<polygon points="'+X(0)+','+Y(tot)+' '+a2.join(' ')+' '+X(n-1)+','+Y(tot)+'" fill="'+DN+'" opacity=".85"/>'+
+   '<polygon points="'+X(0)+','+Y(0)+' '+a2.join(' ')+' '+X(n-1)+','+Y(0)+'" fill="'+MID+'" opacity=".9"/>'+
+   '<polygon points="'+X(0)+','+Y(0)+' '+a1.join(' ')+' '+X(n-1)+','+Y(0)+'" fill="'+UP+'" opacity=".9"/>';
+  [0,.5,1].forEach(function(k){gg+='<text x="26" y="'+(Y(tot*k)+4)+'" text-anchor="end">'+Math.round(100*k)+'%</text>'});
+  var st=Math.max(1,Math.round(n/4));for(var i=0;i<n;i+=st)gg+='<text x="'+X(i)+'" y="'+(h2-4)+'" text-anchor="middle">'+I[i][0]+'</text>';
+  $('mw-br').innerHTML=svg(w2,h2,gg)+meters(m);}
+ else $('mw-br').innerHTML='<div class="mw-bar"><i style="flex-grow:'+b[0]+';background:'+UP+'"></i><i style="flex-grow:'+b[1]+';background:'+MID+'"></i><i style="flex-grow:'+b[2]+';background:'+DN+'"></i></div><p class="note" style="margin:6px 0 10px">Diễn biến theo giờ hiển thị khi thị trường mở cửa.</p>'+meters(m);
+ // thanh khoản
+ var V=m.topv,vm=V[0]?V[0][1]:1,h3=V.length*22+6,g3='';
+ V.forEach(function(r,i){var y=i*22+4,w=Math.max(2,(360-120)*r[1]/vm);g3+='<text class="tk" x="0" y="'+(y+13)+'">'+esc(r[0])+'</text><rect x="44" y="'+y+'" width="'+w.toFixed(1)+'" height="16" rx="3" fill="'+(r[2]>0?UP:r[2]<0?DN:MID)+'" opacity=".85"/><text x="'+(48+w).toFixed(1)+'" y="'+(y+12)+'">'+nf(r[1],0)+' · '+pc(r[2])+'</text>'});
+ $('mw-tv').innerHTML=svg(360,h3,g3);
+ // bản đồ nhiệt
+ function hc(c){var k=Math.min(1,Math.abs(c)/4);if(Math.abs(c)<0.005)return '#b8962e';return c>0?'rgb('+Math.round(120-90*k)+','+Math.round(170-50*k)+','+Math.round(130-60*k)+')':'rgb('+Math.round(214-30*k)+','+Math.round(110-70*k)+','+Math.round(100-60*k)+')'}
+ $('mw-heat').innerHTML=m.heat.map(function(r,i){return '<div class="'+(i<4?'h2':i<12?'h1':'')+'" style="background:'+hc(r[2])+'" title="'+esc(r[0])+' · '+esc(r[3])+' · vốn hóa '+nf(r[1])+' tỷ"><b>'+esc(r[0])+'</b><small>'+pc(r[2])+'</small></div>'}).join('');
+ // ngành
+ var Sx=m.sec.filter(function(r){return r[0]!=='Khác'}),sm=Math.max.apply(0,Sx.map(function(r){return Math.abs(r[1])}))||1,h4=Sx.length*21+6,g4='<line x1="230" x2="230" y1="0" y2="'+h4+'" stroke="#d9d3e3"/>';
+ Sx.forEach(function(r,i){var y=i*21+3,w=Math.max(1.5,110*Math.abs(r[1])/sm),p=r[1]>=0;g4+='<text x="0" y="'+(y+12)+'" style="fill:var(--fg)">'+esc(r[0])+'</text><rect x="'+(p?230:230-w).toFixed(1)+'" y="'+y+'" width="'+w.toFixed(1)+'" height="15" rx="3" fill="'+(p?UP:DN)+'" opacity=".85"/><text x="'+(p?234+w:226-w).toFixed(1)+'" y="'+(y+12)+'" text-anchor="'+(p?'start':'end')+'">'+pc(r[1])+'</text>'});
+ $('mw-sec').innerHTML=svg(360,h4,g4).replace('viewBox="0 0 360','viewBox="-4 0 368');
+}
+function load(){fetch('data/mw.json',{cache:'no-store'}).then(function(r){return r.json()}).then(live).catch(function(){$('mw-lead').innerHTML='<p class="note">Đang cập nhật số liệu thị trường.</p>'})}
+load();fetch('data/mwh.json',{cache:'no-store'}).then(function(r){return r.json()}).then(hist).catch(function(){});
+setInterval(function(){var t=new Date(),hm=t.getUTCHours()+7;if(!document.hidden&&hm>=9&&hm<15)load()},300000);
+// máy tính tích lũy
+var A=$('tlA'),M=$('tlM');if(A&&M){var tr=function(v){return v>=1000?nf(v/1000,v%1000?2:0)+' tỷ':nf(v)+' triệu'};
+ var upd=function(){var a=+A.value,mo=+M.value,i=a*0.10*mo/12;$('tlAo').textContent=tr(a);$('tlMo').textContent=mo+' tháng';$('tlR').textContent=tr(Math.round(i*10)/10);$('tlT').textContent='Tổng nhận về khoảng '+tr(Math.round((a+i)*10)/10);};
+ A.addEventListener('input',upd);M.addEventListener('input',upd);upd();}
 })();
 </script>
 </body></html>

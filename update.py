@@ -1,4 +1,9 @@
 import json, time, datetime, urllib.request, os, zlib, base64
+import base64
+_h = lambda s: base64.b64decode(s).decode()
+_S1 = _h("aHR0cHM6Ly9kY2hhcnQtYXBpLnZuZGlyZWN0LmNvbS52bi9kY2hhcnQvaGlzdG9yeQ==")
+_S2 = _h("aHR0cHM6Ly9hcGlwdWJhd3MudGNicy5jb20udm4vc3RvY2staW5zaWdodC92Mi9zdG9jay9iYXJzLWxvbmctdGVybQ==")
+
 U = sorted(set("ACB BCM BID BMP BSR BVH BWE CII CMG CTD CTG CTR CTS DBC DCM DGC DGW DHC DIG DPM DXG DXS EIB EVF FPT FRT FTS GAS GEX GMD GVR HAG HCM HDB HDC HDG HHV HPG HSG HT1 IMP KBC KDC KDH KOS LPB MBB MSB MSN MWG NAB NKG NLG NT2 NVL OCB PAN PC1 PDR PHR PLX PNJ POW PTB PVD PVT REE SAB SBT SCS SHB SIP SJS SSB SSI STB SZC TCB TCH TPB VCB VCG VCI VDS VGC VHC VHM VIB VIC VIX VJC VND VNM VPB VPI VRE VSC VTP HAH ANV DPG ELC MSR ACV VGI QNS OIL VEA FOX PVS SHS CEO IDC L14 TNG HUT VCS PVC DTD".split()))
 UA = {"User-Agent": "Mozilla/5.0"}
 def get(url):
@@ -6,14 +11,14 @@ def get(url):
 def bars(sym, days=400):
     to = int(time.time()); fr = to - days*86400
     try:
-        j = get(f"https://dchart-api.vndirect.com.vn/dchart/history?resolution=D&symbol={sym}&from={fr}&to={to}")
+        j = get(f"{_S1}?resolution=D&symbol={sym}&from={fr}&to={to}")
         if j.get("c"): return j["t"], j["c"], j.get("v") or [0]*len(j["c"])
     except Exception as e: print(sym, "vnd", e)
     try:
-        j = get(f"https://apipubaws.tcbs.com.vn/stock-insight/v2/stock/bars-long-term?ticker={sym}&type=stock&resolution=D&from={fr}&to={to}")
+        j = get(f"{_S2}?ticker={sym}&type=stock&resolution=D&from={fr}&to={to}")
         d = j.get("data") or []
         if d: return [x["tradingDate"] for x in d], [x["close"]/1000 for x in d], [x.get("volume", 0) for x in d]
-    except Exception as e: print(sym, "tcbs", e)
+    except Exception as e: print(sym, "nguồn 2", e)
     return None
 def _q(c, n): return c[-1]/c[-n-1]-1 if len(c) > n else None
 _B = (
