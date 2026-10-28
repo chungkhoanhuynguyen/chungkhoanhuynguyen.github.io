@@ -1,7 +1,40 @@
 <!doctype html>
 <html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="Chứng khoán Huy Nguyễn – tư vấn đầu tư chứng khoán 1:1, phân tích BCTC, cộng đồng Zalo VIP miễn phí.">
-<style>html{color-scheme:dark}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>html{color-scheme:dark}body{margin:0}img{max-width:100%}[hidden]{display:none!important}/* Mobile v3: bảng điện dính đầu trang, thẻ Top 10 */
+html,body{overflow-x:clip!important}
+.tape{position:relative}
+.tape .tlab{position:absolute;left:0;top:0;bottom:0;z-index:2;display:flex;align-items:center;gap:6px;padding:0 18px 0 max(12px,env(safe-area-inset-left,0px));background:#04070d;color:var(--gold);font:800 10.5px var(--mono);letter-spacing:.14em}
+.tape .tlab::after{content:"";position:absolute;left:100%;top:0;bottom:0;width:22px;background:linear-gradient(90deg,#04070d,rgba(4,7,13,0))}
+.tape .tlab::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--up);box-shadow:0 0 8px var(--up);animation:blink 1.6s ease-in-out infinite}
+@keyframes blink{50%{opacity:.25}}
+.tape-in>a,.tape-in>span{display:inline-flex;align-items:baseline;gap:6px;text-decoration:none;color:var(--mute)}
+.tape-in b{color:var(--fg)}.tape-in i{font-style:normal}.tape-in em{font-style:normal;color:var(--mute);font-size:.88em}
+.tape-in .pos{color:var(--up)}.tape-in .neg{color:var(--dn)}.tape-in .pur{color:var(--pur)}
+.rsm{display:none}
+@media (max-width:760px){
+header.top{position:relative!important;top:auto!important}
+header.top .bar-in{padding-block:10px 8px!important;row-gap:8px!important}
+header.top .brand b{font-size:14px}header.top .brand span{font-size:10px!important}
+header.top nav{font-size:12.5px!important;gap:8px!important;padding-bottom:2px!important;-webkit-mask-image:linear-gradient(90deg,#000 86%,transparent);mask-image:linear-gradient(90deg,#000 86%,transparent)}
+header.top nav a{padding:5px 11px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.03);color:var(--fg)}
+.tape{position:sticky!important;top:0;z-index:20;font-size:12px!important;box-shadow:0 8px 18px -10px rgba(0,0,0,.9);border-top:1px solid var(--line)}
+.tape-in{gap:8px!important;padding-block:7px!important;animation-duration:42s!important}
+.tape-in>a,.tape-in>span{padding:4px 10px;border:1px solid var(--line);border-radius:999px;background:#0b1222}
+.tape .tlab{font-size:9.5px;letter-spacing:.1em;padding-right:10px}
+#rs .tblw{display:none}
+.rsm{display:grid;gap:8px}
+.rc{display:grid;grid-template-columns:1fr;gap:6px 10px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(255,255,255,0)),var(--panel)}
+.rc-h{grid-column:1/-1;display:flex;align-items:baseline;gap:8px;font-family:var(--mono)}
+.rc-i{color:var(--mute);font-size:11px;width:16px}.rc-s{font-size:16px;color:var(--fg);letter-spacing:.04em}
+.rc-p{font-size:14px;color:var(--fg)}.rc-d{font-size:13px}.rc-h .rsv{margin-left:auto;font-size:12px;min-width:0;padding:2px 8px}
+.rc-g{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;font-family:var(--mono)}
+.rc-g small{display:block;font:600 9.5px var(--body);color:var(--mute);text-transform:uppercase;letter-spacing:.06em}.rc-g b{font-size:12.5px;font-weight:700}
+.rc svg{width:100%;height:30px;margin-top:2px}.rc-g small{white-space:nowrap}
+.kpis>.k:last-child:nth-child(odd){grid-column:1/-1}
+.k span{display:block;line-height:1.35!important;margin-top:4px}
+}
+</style>
 <title>Huy Nguyễn Chứng Khoán</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -145,7 +178,7 @@ nav{font-size:13px!important}
 
 <header class="top"><div class="wrap bar-in"><a class="brand" href="#top"><b>HUY NGUYỄN</b><span>CHỨNG KHOÁN</span></a>
 <nav><a href="bao-cao-2026.html">Báo cáo lệnh & Tích sản</a><a href="#rs">Top 10 khỏe</a><a href="#tuvan">Tư vấn 1:1</a><a href="#congdong">Cộng đồng</a><a href="#bang">Bảng theo dõi</a><a href="#tieudiem">Tiêu điểm MSR</a><a href="#congcu">Công cụ</a><a href="#seri">Seri F0</a><a href="#nhom">Nhóm Zalo</a></nav></div></header>
-<div class="tape" aria-label="Bảng điện Top 10"><div class="tape-in" id="tape"><span>Đang tải bảng điện…</span></div></div>
+<div class="tape" aria-label="Bảng điện Top 10"><span class="tlab">TOP 10</span><div class="tape-in" id="tape"><span>Đang tải bảng điện…</span></div></div>
 
 <main id="top">
 <div class="herobox"><div class="photo-credit">Ảnh: Ken Lund · <a href="https://commons.wikimedia.org/wiki/File:New_and_Wall_Street,_Manhattan,_New_York_(7236992182).jpg" target="_blank" rel="noopener">CC BY-SA 2.0</a></div><div class="wrap hero">
@@ -161,7 +194,7 @@ nav{font-size:13px!important}
 
 <section id="rs"><div class="wrap">
 <h2>Top 10 cổ phiếu khỏe nhất thị trường</h2><p class="sub">Bộ lọc độc quyền của Chứng khoán Huy Nguyễn, tự cập nhật 15 phút một lần trong phiên. Giá là giá thị trường tại lúc cập nhật (nghìn đồng), không phải giá khuyến nghị mua. <span id="rsu"></span></p>
-<div class="tblw"><table class="rs"><thead><tr><th>#</th><th>Mã</th><th>Giá hiện tại</th><th>Hôm nay</th><th>3 tháng</th><th>6 tháng</th><th>12 tháng</th><th>Cách đỉnh</th><th>Tính Điểm</th><th>60 phiên</th></tr></thead><tbody id="rsb"><tr><td colspan="10" class="note">Đang tải dữ liệu…</td></tr></tbody></table></div>
+<div class="tblw"><table class="rs"><thead><tr><th>#</th><th>Mã</th><th>Giá hiện tại</th><th>Hôm nay</th><th>3 tháng</th><th>6 tháng</th><th>12 tháng</th><th>Cách đỉnh</th><th>Tính Điểm</th><th>60 phiên</th></tr></thead><tbody id="rsb"><tr><td colspan="10" class="note">Đang tải dữ liệu…</td></tr></tbody></table></div><div class="rsm" id="rsm"></div>
 <p class="note"><a href="bao-cao-2026.html" style="color:var(--gold);font-weight:700">Xem báo cáo lướt sóng &amp; tích sản →</a></p>
 <p class="note">Danh sách để theo dõi, không phải khuyến nghị mua. Mua vùng nào, cắt lỗ ở đâu, mã nào hợp danh mục của bạn: <a href="https://zalo.me/0365188286" target="_blank" rel="noopener">nhắn tư vấn 1:1 qua Zalo 0365.188.286</a>.</p>
 </div></section>
@@ -301,9 +334,10 @@ const f=(x,d=1)=>x==null?'–':(x>0?'+':'')+x.toLocaleString('vi-VN',{minimumFra
 const cl=(x,t=50)=>x==null?'':(x>=t?'pos pur':x>=0?'pos':'neg');
 fetch('data/rs.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(j=>{
  document.getElementById('rsu').textContent='Lần cập nhật gần nhất: '+j.updated+'.';
- const tp=document.getElementById('tape');if(tp){const it=j.top.map(r=>'<span><b>'+r.s+'</b>'+r.close.toLocaleString('vi-VN')+' <i class="'+cl(r.d1,6.5)+'" style="font-style:normal">'+f(r.d1,2)+'</i> · 3T <i class="'+cl(r.r3)+'" style="font-style:normal">'+f(r.r3)+'</i></span>').join('');tp.innerHTML=it+it;}
+ const tp=document.getElementById('tape');if(tp){const it=j.top.map(r=>'<a href="#rs"><b>'+r.s+'</b>'+r.close.toLocaleString('vi-VN')+' <i class="'+cl(r.d1,6.5)+'">'+f(r.d1,2)+'</i><em>3T <i class="'+cl(r.r3)+'">'+f(r.r3)+'</i></em></a>').join('');tp.innerHTML=it+it;}
+ const m=document.getElementById('rsm');if(m)m.innerHTML=j.top.map((r,i)=>{const sp=r.spark,lo=Math.min(...sp),hi=Math.max(...sp),pts=sp.map((v,k)=>(k*100/(sp.length-1)).toFixed(1)+','+(30-(v-lo)/((hi-lo)||1)*27).toFixed(1)).join(' ');return '<div class="rc"><div class="rc-h"><span class="rc-i">'+(i+1)+'</span><b class="rc-s">'+r.s+'</b><span class="rc-p">'+r.close.toLocaleString('vi-VN')+'</span><span class="rc-d '+cl(r.d1,6.5)+'">'+f(r.d1,2)+'</span><span class="rsv'+(r.rs>=98?' pur':'')+'">Điểm '+Math.max(1,Math.min(9,r.rs-90))+'</span></div><div class="rc-g"><div><small>3 tháng</small><b class="'+cl(r.r3)+'">'+f(r.r3)+'</b></div><div><small>6 tháng</small><b class="'+cl(r.r6)+'">'+f(r.r6)+'</b></div><div><small>12 tháng</small><b class="'+cl(r.r12)+'">'+f(r.r12)+'</b></div><div><small>Cách đỉnh</small><b class="neg">'+f(r.fromhi)+'</b></div></div><svg viewBox="0 0 100 32" preserveAspectRatio="none"><polyline points="'+pts+'" fill="none" stroke="var(--up)" stroke-width="1.8" vector-effect="non-scaling-stroke"/></svg></div>'}).join('');
  b.innerHTML=j.top.map((r,i)=>{const sp=r.spark,lo=Math.min(...sp),hi=Math.max(...sp),pts=sp.map((v,k)=>(k*100/(sp.length-1)).toFixed(1)+','+(28-(v-lo)/((hi-lo)||1)*26).toFixed(1)).join(' ');
- return '<tr><td>'+(i+1)+'</td><td class="sym2">'+r.s+'</td><td>'+r.close.toLocaleString('vi-VN')+'</td><td class="'+cl(r.d1)+'">'+f(r.d1,2)+'</td><td class="'+cl(r.r3)+'">'+f(r.r3)+'</td><td class="'+cl(r.r6)+'">'+f(r.r6)+'</td><td class="'+cl(r.r12)+'">'+f(r.r12)+'</td><td class="neg">'+f(r.fromhi)+'</td><td><span class="rsv'+(r.rs>=98?' pur':'')+'">'+Math.max(1,Math.min(9,r.rs-90))+'</span></td><td><svg width="100" height="30" viewBox="0 0 100 30"><polyline points="'+pts+'" fill="none" stroke="var(--up)" stroke-width="1.6"/></svg></td></tr>'}).join('');
+ return '<tr><td>'+(i+1)+'</td><td class="sym2">'+r.s+'</td><td>'+r.close.toLocaleString('vi-VN')+'</td><td class="'+cl(r.d1,6.5)+'">'+f(r.d1,2)+'</td><td class="'+cl(r.r3)+'">'+f(r.r3)+'</td><td class="'+cl(r.r6)+'">'+f(r.r6)+'</td><td class="'+cl(r.r12)+'">'+f(r.r12)+'</td><td class="neg">'+f(r.fromhi)+'</td><td><span class="rsv'+(r.rs>=98?' pur':'')+'">'+Math.max(1,Math.min(9,r.rs-90))+'</span></td><td><svg width="100" height="30" viewBox="0 0 100 30"><polyline points="'+pts+'" fill="none" stroke="var(--up)" stroke-width="1.6"/></svg></td></tr>'}).join('');
 }).catch(()=>{b.innerHTML='<tr><td colspan="10" class="note">Bảng đang được cập nhật, quay lại sau ít phút.</td></tr>'});})();
 </script>
 <script>
