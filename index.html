@@ -76,6 +76,14 @@ ol.eps b{font-weight:700} ol.eps p{margin:2px 0 0;font-size:13px;color:var(--mut
 .steps li{counter-increment:s;display:grid;gap:4px;padding:14px 0 0;border-top:2px solid var(--gold)}
 .steps li b::before{content:"Bước " counter(s) " · ";color:var(--gold)} .steps span{color:var(--mute);font-size:14px}
 .links{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px}
+.tblw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+table.rs{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;min-width:760px}
+table.rs th{font:600 11px var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--mute);text-align:right;padding:12px 14px;border-bottom:1px solid var(--line)}
+table.rs td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:right;font:600 14px var(--mono)}
+table.rs th:nth-child(-n+2),table.rs td:nth-child(-n+2){text-align:left}
+table.rs tr:last-child td{border-bottom:0}
+.rsv{display:inline-block;min-width:34px;text-align:center;padding:2px 6px;border-radius:6px;background:color-mix(in srgb,var(--up) 22%,transparent);color:var(--up)}
+.sym2{font:700 16px var(--mono)}
 footer{padding-block:36px;border-top:1px solid var(--line);font-size:13px;color:var(--mute)}
 .copy{font:600 13px var(--body);background:transparent;border:1px solid var(--line);color:var(--fg);border-radius:6px;padding:4px 10px;cursor:pointer;margin-left:8px}
 @media (max-width:760px){.hero,.focus{grid-template-columns:1fr}.hero{padding-block:36px 28px} select{margin-left:0}}
@@ -84,7 +92,7 @@ footer{padding-block:36px;border-top:1px solid var(--line);font-size:13px;color:
 </head><body>
 
 <header class="top"><div class="wrap bar-in"><a class="brand" href="#top"><b>HUY NGUYỄN</b><span>CHỨNG KHOÁN</span></a>
-<nav><a href="#tuvan">Tư vấn 1:1</a><a href="#congdong">Cộng đồng</a><a href="#bang">Bảng theo dõi</a><a href="#tieudiem">Tiêu điểm MSR</a><a href="#congcu">Công cụ</a><a href="#seri">Seri F0</a><a href="#nhom">Nhóm Zalo</a></nav></div></header>
+<nav><a href="#rs">Top RS</a><a href="#tuvan">Tư vấn 1:1</a><a href="#congdong">Cộng đồng</a><a href="#bang">Bảng theo dõi</a><a href="#tieudiem">Tiêu điểm MSR</a><a href="#congcu">Công cụ</a><a href="#seri">Seri F0</a><a href="#nhom">Nhóm Zalo</a></nav></div></header>
 <main id="top">
 <div class="wrap hero">
 <div><p class="eyebrow">Tư vấn đầu tư chứng khoán 1:1</p><h1>Mỗi nhà đầu tư một <em>kế hoạch riêng</em>.</h1>
@@ -97,6 +105,11 @@ footer{padding-block:36px;border-top:1px solid var(--line);font-size:13px;color:
 <p class="note">Không mở được link? Nhắn Zalo <span id="zl">0365.188.286</span><button class="copy" id="cp" type="button">Sao chép</button></p>
 </div></div>
 
+<section id="rs"><div class="wrap">
+<h2>Top 10 cổ phiếu khỏe nhất thị trường</h2><p class="sub">Xếp theo sức mạnh giá tương đối (RS) trong 12 tháng, trọng số 40% cho 3 tháng gần nhất. Chỉ tính mã có thanh khoản từ 10 tỷ/phiên. Tự cập nhật mỗi ngày giao dịch lúc 11:07 và 15:37. <span id="rsu"></span></p>
+<div class="tblw"><table class="rs"><thead><tr><th>#</th><th>Mã</th><th>Giá</th><th>Hôm nay</th><th>3 tháng</th><th>6 tháng</th><th>12 tháng</th><th>Cách đỉnh</th><th>RS</th><th>60 phiên</th></tr></thead><tbody id="rsb"><tr><td colspan="10" class="note">Đang tải dữ liệu…</td></tr></tbody></table></div>
+<p class="note">Danh sách dùng để theo dõi, không phải khuyến nghị mua. Muốn biết mã nào hợp danh mục của bạn, nhắn tư vấn 1:1.</p>
+</div></section>
 <section id="tuvan"><div class="wrap">
 <h2>Tư vấn 1:1 gồm những gì</h2><p class="sub">Làm việc trực tiếp với anh Huy qua Zalo hoặc gọi điện, theo đúng tình huống của bạn.</p>
 <div class="svc">
@@ -266,5 +279,14 @@ q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();li.forEach(
 document.getElementById('cp').addEventListener('click',e=>{const t='0365188286';
  (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>{e.target.textContent='Đã chép'}).catch(()=>{const r=document.createRange();r.selectNodeContents(document.getElementById('zl'));const s=getSelection();s.removeAllRanges();s.addRange(r)})});
 })();
+
+(function(){const b=document.getElementById('rsb');if(!b)return;
+const f=(x,d=1)=>x==null?'–':(x>0?'+':'')+x.toLocaleString('vi-VN',{minimumFractionDigits:d,maximumFractionDigits:d})+'%';
+const cl=x=>x==null?'':(x>=0?'pos':'neg');
+fetch('data/rs.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(j=>{
+ document.getElementById('rsu').textContent='Lần cập nhật gần nhất: '+j.updated+'.';
+ b.innerHTML=j.top.map((r,i)=>{const sp=r.spark,lo=Math.min(...sp),hi=Math.max(...sp),pts=sp.map((v,k)=>(k*100/(sp.length-1)).toFixed(1)+','+(28-(v-lo)/((hi-lo)||1)*26).toFixed(1)).join(' ');
+ return '<tr><td>'+(i+1)+'</td><td class="sym2">'+r.s+'</td><td>'+r.close.toLocaleString('vi-VN')+'</td><td class="'+cl(r.d1)+'">'+f(r.d1,2)+'</td><td class="'+cl(r.r3)+'">'+f(r.r3)+'</td><td class="'+cl(r.r6)+'">'+f(r.r6)+'</td><td class="'+cl(r.r12)+'">'+f(r.r12)+'</td><td class="neg">'+f(r.fromhi)+'</td><td><span class="rsv">'+r.rs+'</span></td><td><svg width="100" height="30" viewBox="0 0 100 30"><polyline points="'+pts+'" fill="none" stroke="var(--up)" stroke-width="1.6"/></svg></td></tr>'}).join('');
+}).catch(()=>{b.innerHTML='<tr><td colspan="10" class="note">Bảng đang được cập nhật, quay lại sau ít phút.</td></tr>'});})();
 </script>
 </body></html>
