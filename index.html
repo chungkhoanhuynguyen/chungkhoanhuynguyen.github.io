@@ -56,7 +56,7 @@ header.top nav a{padding:5px 11px;border:1px solid var(--line);border-radius:999
 .kq-cta{margin-top:18px;padding:18px;border:1px solid var(--gold);border-radius:14px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}.kq-cta p{margin:4px 0 0;color:var(--mute);font-size:14px}.kq-cta .btn{flex:0 0 auto}
 @media (max-width:760px){.kq-grid{grid-template-columns:1fr}.kq{padding:14px}.kq-h b{font-size:18px}#kqs{max-width:none}.kq-bar .chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;max-width:100%}.kq-bar .chips::-webkit-scrollbar{display:none}.kq-bar .chip{white-space:nowrap}}
 </style>
-<title>Chứng Khoán Huy Nguyễn – Định giá cổ phiếu, phân tích BCTC, bảng giá chứng khoán</title>
+<link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="img/fav-32.png"><link rel="apple-touch-icon" href="img/apple-touch-icon.png"><meta name="theme-color" content="#221535"><title>Chứng Khoán Huy Nguyễn – Định giá cổ phiếu, phân tích BCTC, bảng giá chứng khoán</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@600&display=swap">
@@ -675,6 +675,103 @@ table.ss-t tr:hover td,table.ss-t tr:hover th{background:#faf8fc!important}
 @media (max-width:760px){.tl-calc{backdrop-filter:none!important}.mw,.ch-card,.ci,.kq,.vm,.box,.tk{box-shadow:none!important}}
 @media (prefers-reduced-motion:reduce){header.top,.tape,.gnav .gd,#totop{transition:none}.toc-in{animation:none}}
 
+/* ===== 29/10 (2): thanh trên điện thoại, mục lục, báo cáo dễ tìm, thế giới & Fed ===== */
+.tl-m{display:none}
+header.top .gnav .gi>a.g-rep{color:#f3d27a!important;border:1px solid rgba(243,210,122,.45)!important;margin-left:4px}
+header.top .gnav .gi>a.g-rep:hover{background:rgba(243,210,122,.14)!important;color:#fff!important}
+@media (max-width:1280px) and (min-width:1101px){.cd-pill span{display:none}header.top .gnav .gi>a{padding:8px 9px!important;font-size:13px}}
+@media (max-width:760px){
+ header.top .bar-in{gap:8px!important}
+ header.top .brand{display:flex!important;flex-direction:column;justify-content:center;line-height:1.08;min-width:0}
+ header.top .brand b{font-size:14px!important;letter-spacing:.06em}
+ header.top .brand span{font-size:8.5px!important;letter-spacing:.24em!important;margin:2px 0 0!important}
+ .toc-btn{max-width:none;padding:7px 12px 7px 10px}
+ .toc-btn #tocl{display:none}.toc-btn .tl-m{display:inline}
+ .cd-pill{padding:4px 9px 4px 7px}
+}
+@media (max-width:340px){header.top .brand span{display:none}.cd-pill i{display:none}}
+/* Mục lục: chữ các mục thẳng hàng với tên nhóm */
+.toc-g p{display:flex;align-items:center}
+.toc-g p span{min-width:30px}
+.toc-g a{padding:9px 12px 9px 30px!important;position:relative}
+.toc-g.on p{color:#4c2766}.toc-g.on p::after{content:"Đang xem";margin-left:auto;font-size:9.5px;letter-spacing:.08em;color:#1f8a57;background:#e6f3ec;border-radius:999px;padding:2px 8px}
+.toc-rep{display:grid;grid-template-columns:1fr auto;gap:2px 10px;align-items:center;margin:12px 0 4px;padding:13px 14px;border-radius:14px;text-decoration:none;background:linear-gradient(120deg,#221535,#4c2766);color:#fff;box-shadow:0 14px 30px -20px rgba(34,21,53,.9)}
+.toc-rep span{font:800 15px var(--body,system-ui);color:#f3d27a}.toc-rep small{grid-column:1;font-size:12px;color:#ddd3ea;line-height:1.4}
+.toc-rep i{grid-row:1/3;grid-column:2;font-style:normal;font-weight:800;color:#221535;background:linear-gradient(90deg,#f3d27a,#e2a73c);width:32px;height:32px;border-radius:50%;display:grid;place-items:center}
+/* Báo cáo ở phần đầu trang */
+.hero-rep{display:grid;grid-template-columns:1fr auto;gap:2px 12px;align-items:center;margin-top:14px;max-width:520px;padding:12px 14px;border-radius:14px;text-decoration:none;background:rgba(255,255,255,.08);border:1px solid rgba(243,210,122,.4);color:#fff;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.hero-rep b{font:800 15px var(--body,system-ui);color:#f3d27a}.hero-rep span{grid-column:1;font-size:12.5px;color:#e6def2;line-height:1.4}
+.hero-rep i{grid-row:1/3;grid-column:2;font-style:normal;font-weight:800;color:#221535;background:linear-gradient(90deg,#f3d27a,#e2a73c);width:30px;height:30px;border-radius:50%;display:grid;place-items:center}
+.hero-rep:hover{border-color:#f3d27a;background:rgba(255,255,255,.12)}
+/* Góc nhìn: 2 phương pháp */
+.g4-rep{margin-top:16px}
+.rp-h{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:6px 14px;margin-bottom:10px}
+.rp-h b{font:800 20px var(--disp,Georgia,serif);color:#221535}.rp-h a{font-weight:800;font-size:13.5px;color:#6a2d86;text-decoration:none}
+.rp-g{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rp-card{display:flex;flex-direction:column;gap:8px;padding:16px 18px;border-radius:16px;text-decoration:none;color:#f3eef8;background:linear-gradient(135deg,#221535,#4c2766);box-shadow:0 20px 40px -28px rgba(34,21,53,.9);transition:transform .2s}
+.rp-card.gold{background:linear-gradient(135deg,#2b1a10,#5a3a16)}
+.rp-card:hover{transform:translateY(-2px)}
+.rp-k{font:800 11px var(--body,system-ui);letter-spacing:.12em;text-transform:uppercase;color:#f3d27a}
+.rp-card b{font:800 17px/1.3 var(--disp,Georgia,serif);color:#fff}
+.rp-card ul{margin:0;padding:0 0 0 18px;font-size:13.5px;line-height:1.5;color:#e6def2}.rp-card li{margin:3px 0}
+.rp-go{margin-top:auto;align-self:flex-start;font-weight:800;font-size:13px;color:#221535;background:linear-gradient(90deg,#f3d27a,#e2a73c);border-radius:999px;padding:7px 14px}
+.rp-n{margin:8px 0 0;font-size:12px;color:var(--mute)}
+@media (max-width:760px){.rp-g{grid-template-columns:1fr}.rp-card{padding:14px 15px}.rp-card b{font-size:16px}.rp-h b{font-size:18px}}
+/* Tư vấn: linh hoạt theo thị trường */
+.tv-flex{margin:18px 0 6px;padding:16px 18px;border-radius:16px;background:#fff;border:1px solid var(--line);box-shadow:0 1px 2px rgba(31,27,38,.05)}
+.tv-flex h3{margin:0 0 10px;font:800 17px var(--disp,Georgia,serif);color:#221535}
+.tf-g{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.tf-g div{padding:12px 13px;border-radius:12px;background:#f8f6fb;border-left:3px solid #6a2d86}
+.tf-g div:nth-child(2){border-left-color:#1f8a57}.tf-g div:nth-child(3){border-left-color:#d08a1e}
+.tf-g b{display:block;font-size:14px;color:#221535;margin-bottom:3px}.tf-g p{margin:0;font-size:13.5px;line-height:1.5;color:#4d4757}
+.tf-go{display:inline-block;margin-top:12px;font-weight:800;font-size:13.5px;color:#6a2d86;text-decoration:none}
+@media (max-width:760px){.tf-g{grid-template-columns:1fr;gap:8px}.tv-flex{padding:14px}}
+/* Tin vĩ mô, lịch Fed */
+.dn-tag{cursor:default;font-family:var(--body,system-ui);background:#eef4fb;border-color:#d6e4f4;color:#2b6cb0}.dn-tag:hover{background:#eef4fb;color:#2b6cb0}
+.nw .evt{justify-self:start}.nw.mac .nw-h{color:#1f1b26}.nw.hot{background:linear-gradient(90deg,#fff8e6,#fff 70%)}.nw.hot .dn-tag{background:#221535;border-color:#221535;color:#f3d27a}.nw.hot .nw-h{font-weight:700}
+.evt.n.vm,.evt.v{background:#e9eef9;color:#2f4fa3}
+.nwl.in{color:#6a2d86!important;background:#f4f1f8;border-color:#e6def0}
+.ev.mac .dn-tag{background:#221535;border-color:#221535;color:#f3d27a}
+/* Thị trường thế giới */
+.wm-fed{display:grid;grid-template-columns:auto 1fr auto;gap:14px 22px;align-items:center;padding:18px 20px;border-radius:18px;background:linear-gradient(120deg,#1b1030,#3b2160 60%,#4c2766);color:#efe9f6;box-shadow:0 24px 50px -32px rgba(34,21,53,.95);margin:0 0 14px}
+.wm-fed .wm-ld{grid-column:1/-1;margin:0;color:#d9cfe6}
+.wf-k{display:block;font:800 10.5px var(--body,system-ui);letter-spacing:.14em;text-transform:uppercase;color:#cdbfe0}
+.wf-v{display:block;font:900 34px/1.1 var(--disp,Georgia,serif);color:#fff;margin:4px 0 6px;white-space:nowrap}
+.wf-b{display:inline-block;font-size:12px;font-weight:800;border-radius:999px;padding:3px 10px;background:rgba(255,255,255,.12);color:#fff}
+.wf-b.hike{background:#c43c32}.wf-b.cut{background:#1f8a57}.wf-b.hold{background:rgba(243,210,122,.2);color:#f3d27a}
+.wf-b2 p{margin:0 0 6px;font-size:13.5px;line-height:1.5;color:#e6def2}.wf-b2 p b{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#cdbfe0;margin-bottom:1px}
+.wf-c{text-align:right;padding-left:18px;border-left:1px solid rgba(255,255,255,.14)}
+.wf-c b{display:block;font:800 19px var(--body,system-ui);color:#f3d27a;margin:4px 0 2px;white-space:nowrap}.wf-c small{font-size:12px;color:#d9cfe6;line-height:1.45;display:block;max-width:220px;margin-left:auto}
+.wf-n{grid-column:1/-1;margin:2px 0 0;padding-top:12px;border-top:1px solid rgba(255,255,255,.12);font-size:13px;line-height:1.55;color:#d9cfe6}.wf-n b{color:#fff}
+.wm-tiles{display:grid;grid-template-columns:1fr 1fr;gap:6px 16px;margin:0 0 12px}
+.wm-gi{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.wm-g{margin:4px 0 6px;font:800 11px var(--body,system-ui);letter-spacing:.12em;text-transform:uppercase;color:#6a2d86}
+.wm-ti{position:relative;display:grid;grid-template-columns:1fr auto;gap:1px 6px;align-items:baseline;text-align:left;padding:10px 11px 8px;border-radius:13px;border:1px solid var(--line);background:#fff;cursor:pointer;font-family:inherit;color:#1f1b26;transition:border-color .2s,box-shadow .2s,transform .2s;min-width:0}
+.wm-ti:hover{border-color:#cdbfe0;transform:translateY(-1px)}
+.wm-ti[aria-pressed=true]{border-color:#6a2d86;box-shadow:0 0 0 2px rgba(106,45,134,.15),0 10px 22px -16px rgba(76,39,102,.6)}
+.wm-n{grid-column:1/-1;font-size:12px;font-weight:700;color:#5f5a69;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wm-ti b{font:800 15.5px var(--mono,ui-monospace,monospace);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.wm-p{font:700 12px var(--mono,ui-monospace,monospace);white-space:nowrap;color:#5f5a69}.wm-p.pos{color:#1f8a57}.wm-p.neg{color:#c43c32}
+.wm-sp{grid-column:1/-1;width:100%;height:26px;margin-top:4px}.wm-sp polyline{fill:none;stroke-width:1.6;vector-effect:non-scaling-stroke;stroke-linejoin:round}
+.wm-sp.up polyline{stroke:#1f8a57}.wm-sp.dn polyline{stroke:#c43c32}
+.wm-ti small{grid-column:1/-1;font-size:11px;color:#8a6a12;margin-top:2px}
+.wm-ti.fed b{font-family:var(--body,system-ui);font-size:15px}.wm-sp.st polyline{stroke:#6a2d86}
+.wm-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 14px;box-shadow:0 1px 2px rgba(31,27,38,.05)}
+.wm-top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px 12px;margin-bottom:8px}
+.wm-tt{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px}.wm-tt b{font-size:15px;color:#221535}
+.wm-big{font:800 22px var(--mono,ui-monospace,monospace);color:#1f1b26}.wm-u{font-size:12px;color:var(--mute)}
+.wm-plot{position:relative;height:330px;border-radius:10px;overflow:hidden;touch-action:pan-y}
+#wmv table td{padding:0!important;border:0!important}
+@media (max-width:1100px){.wm-tiles{grid-template-columns:1fr}}
+@media (max-width:760px){
+ .wm-fed{grid-template-columns:1fr;gap:10px;padding:16px}
+ .wf-v{font-size:30px}.wf-c{text-align:left;padding:10px 0 0;border-left:0;border-top:1px solid rgba(255,255,255,.14)}.wf-c small{margin-left:0;max-width:none}
+ .wm-gi{grid-template-columns:repeat(auto-fit,minmax(96px,1fr));gap:6px}
+ .wm-ti{grid-template-columns:1fr;padding:8px 9px 6px}.wm-ti b{font-size:13.5px}.wm-p{font-size:11.5px}.wm-ti.fed b{font-size:12.5px;white-space:normal}.wm-sp{height:22px}
+ .wm-plot{height:250px}.wm-big{font-size:19px}.wm-top .seg{width:100%}.wm-top .seg button{flex:1;justify-content:center}
+}
+.ev-dh{justify-content:flex-start!important}.ev-dh b,.ev-dh span{position:sticky;top:100px}.ev-dh span{top:124px}@media (min-width:761px){.ev-dh b{top:70px}.ev-dh span{top:98px}}
+
 .herobox{background-image:linear-gradient(90deg,rgba(28,17,45,.94) 0%,rgba(52,30,76,.84) 55%,rgba(76,39,102,.55) 100%),url(img/ws-d.jpg)!important;background-position:center 50%!important}
 @media (max-width:760px){.herobox{background-image:linear-gradient(90deg,rgba(28,17,45,.94) 0%,rgba(52,30,76,.84) 55%,rgba(76,39,102,.55) 100%),url(img/ws-m.jpg)!important;background-position:58% 40%!important}}
 </style>
@@ -684,25 +781,27 @@ table.ss-t tr:hover td,table.ss-t tr:hover th{background:#faf8fc!important}
 <a class="brand" href="#top"><b>HUY NGUYỄN</b><span>CHỨNG KHOÁN</span></a>
 <nav class="gnav" aria-label="Mục chính">
  <div class="gi"><a href="#g1">Hôm nay</a><div class="gd"><a href="#rs">Top 10 cổ phiếu khỏe</a><a href="#thitruong">Thị trường hôm nay</a><a href="#banggia">Bảng giá 3 sàn</a></div></div>
- <div class="gi"><a href="#g2">Công cụ</a><div class="gd"><a href="#soichart">Soi chart cổ phiếu</a><a href="#sosanh">So sánh 2 mã</a><a href="#vimo">Vĩ mô</a></div></div>
- <div class="gi"><a href="#g3">Doanh nghiệp</a><div class="gd"><a href="#bctc">Đánh giá BCTC</a><a href="#tintuc">Tin doanh nghiệp</a><a href="#lichsk">Lịch sự kiện</a></div></div>
+ <div class="gi"><a href="#g2">Công cụ</a><div class="gd"><a href="#soichart">Soi chart cổ phiếu</a><a href="#sosanh">So sánh 2 mã</a><a href="#vimo">Vĩ mô</a><a href="#thegioi">Thị trường thế giới &amp; Fed</a></div></div>
+ <div class="gi"><a href="#g3">Doanh nghiệp</a><div class="gd"><a href="#bctc">Đánh giá BCTC</a><a href="#tintuc">Tin tức &amp; vĩ mô</a><a href="#lichsk">Lịch sự kiện</a></div></div>
  <div class="gi"><a href="#g4">Góc nhìn</a><div class="gd"><a href="bao-cao-2026.html">Báo cáo lệnh &amp; Tích sản</a><a href="#bang">Bảng theo dõi</a><a href="#tieudiem">Tiêu điểm MSR</a></div></div>
+ <div class="gi"><a class="g-rep" href="bao-cao-2026.html">Báo cáo lệnh</a></div>
  <div class="gi"><a href="#g5">Dịch vụ</a><div class="gd"><a href="#tuvan">Tư vấn 1:1</a><a href="#tichluy">Tích lũy đến 10%/năm</a><a href="#congdong">Cộng đồng</a></div></div>
  <div class="gi"><a href="#g6">Học đầu tư</a><div class="gd"><a href="#congcu">Công cụ quản trị rủi ro</a><a href="#seri">Seri F0</a></div></div>
 </nav>
 <a class="cd-pill" id="cdp" href="#congdong" hidden><i aria-hidden="true"></i><b id="cdn"></b><span>thành viên</span></a>
 <a class="hcta" href="https://zalo.me/0365188286" target="_blank" rel="noopener">Tư vấn 1:1</a>
-<button class="toc-btn" id="tocb" type="button" aria-expanded="false" aria-controls="toc"><span class="tb-i" aria-hidden="true"><i></i><i></i><i></i></span><span id="tocl">Mục lục</span></button>
+<button class="toc-btn" id="tocb" type="button" aria-expanded="false" aria-controls="toc"><span class="tb-i" aria-hidden="true"><i></i><i></i><i></i></span><span id="tocl">Mục lục</span><span class="tl-m">Mục lục</span></button>
 </div></header>
 <div class="toc" id="toc" role="dialog" aria-modal="true" aria-label="Mục lục" hidden>
  <div class="toc-in">
   <div class="toc-h"><b>Mục lục</b><button type="button" class="toc-x" id="tocx" aria-label="Đóng mục lục">✕</button></div>
-  <div class="toc-g"><p><span>01</span>Hôm nay</p><a href="#rs">Top 10 cổ phiếu khỏe<small>Bộ lọc độc quyền, 15 phút/lần</small></a><a href="#thitruong">Thị trường hôm nay<small>Dẫn dắt, độ rộng, định giá, bản đồ nhiệt</small></a><a href="#banggia">Bảng giá 3 sàn<small>HOSE, HNX, UPCoM, VN30</small></a></div>
-  <div class="toc-g"><p><span>02</span>Công cụ phân tích</p><a href="#soichart">Soi chart cổ phiếu<small>Nến, MA, RSI, MACD</small></a><a href="#sosanh">So sánh 2 mã<small>Giá, định giá, ROE, cổ tức</small></a><a href="#vimo">Vĩ mô<small>Tỷ giá, dầu, vàng, lợi suất Mỹ</small></a></div>
-  <div class="toc-g"><p><span>03</span>Doanh nghiệp</p><a href="#bctc">Đánh giá BCTC<small>Điểm tốt, điểm cần lưu ý từng quý</small></a><a href="#tintuc">Tin doanh nghiệp<small>Công bố thông tin 7 ngày</small></a><a href="#lichsk">Lịch sự kiện<small>Cổ tức, ĐHCĐ, phát hành, cảnh báo</small></a></div>
-  <div class="toc-g"><p><span>04</span>Góc nhìn Huy Nguyễn</p><a href="bao-cao-2026.html">Báo cáo lệnh &amp; Tích sản<small>Kết quả 2016–2026</small></a><a href="#bang">Bảng theo dõi<small>Mã đang theo dõi theo ngành</small></a><a href="#tieudiem">Tiêu điểm MSR<small>Lợi nhuận theo quý</small></a></div>
-  <div class="toc-g"><p><span>05</span>Dịch vụ</p><a href="#tuvan">Tư vấn 1:1<small>Khám danh mục, kế hoạch mua và cắt lỗ</small></a><a href="#tichluy">Tích lũy đến 10%/năm<small>Ước tính tiền lãi</small></a><a href="#congdong">Cộng đồng<small>Nhóm Zalo, YouTube, Facebook</small></a></div>
-  <div class="toc-g"><p><span>06</span>Học đầu tư</p><a href="#congcu">Công cụ quản trị rủi ro<small>Tính mức cần hồi, điểm cắt lỗ</small></a><a href="#seri">Seri phân tích cơ bản F0<small>Mỗi tập một khái niệm</small></a></div>
+  <a class="toc-rep" href="bao-cao-2026.html"><span>Báo cáo lệnh &amp; Tích sản 2016–2026</span><small>Đầu cơ V306TMVN và tích sản ngân hàng: toàn bộ lệnh, kết quả từng năm so với VN-Index</small><i aria-hidden="true">→</i></a>
+  <div class="toc-g" data-g="g1"><p><span>01</span>Hôm nay</p><a href="#rs">Top 10 cổ phiếu khỏe<small>Bộ lọc độc quyền, 15 phút/lần</small></a><a href="#thitruong">Thị trường hôm nay<small>Dẫn dắt, độ rộng, định giá, bản đồ nhiệt</small></a><a href="#banggia">Bảng giá 3 sàn<small>HOSE, HNX, UPCoM, VN30</small></a></div>
+  <div class="toc-g" data-g="g2"><p><span>02</span>Công cụ phân tích</p><a href="#soichart">Soi chart cổ phiếu<small>Nến, MA, RSI, MACD</small></a><a href="#sosanh">So sánh 2 mã<small>Giá, định giá, ROE, cổ tức</small></a><a href="#vimo">Vĩ mô<small>Mức ảnh hưởng tới kinh tế Việt Nam</small></a><a href="#thegioi">Thị trường thế giới &amp; Fed<small>Lãi suất Fed, vàng, dầu, Mỹ, Nhật, Hàn</small></a></div>
+  <div class="toc-g" data-g="g3"><p><span>03</span>Doanh nghiệp</p><a href="#bctc">Đánh giá BCTC<small>Điểm tốt, điểm cần lưu ý từng quý</small></a><a href="#tintuc">Tin tức doanh nghiệp &amp; vĩ mô<small>Công bố thông tin, quyết định của Fed</small></a><a href="#lichsk">Lịch sự kiện<small>Cổ tức, ĐHCĐ, phát hành, lịch họp Fed</small></a></div>
+  <div class="toc-g" data-g="g4"><p><span>04</span>Góc nhìn Huy Nguyễn</p><a href="bao-cao-2026.html">Báo cáo lệnh &amp; Tích sản<small>Kết quả 2016–2026</small></a><a href="#bang">Bảng theo dõi<small>Mã đang theo dõi theo ngành</small></a><a href="#tieudiem">Tiêu điểm MSR<small>Lợi nhuận theo quý</small></a></div>
+  <div class="toc-g" data-g="g5"><p><span>05</span>Dịch vụ</p><a href="#tuvan">Tư vấn 1:1<small>Khám danh mục, kế hoạch mua và cắt lỗ</small></a><a href="#tichluy">Tích lũy đến 10%/năm<small>Ước tính tiền lãi</small></a><a href="#congdong">Cộng đồng<small>Nhóm Zalo, YouTube, Facebook</small></a></div>
+  <div class="toc-g" data-g="g6"><p><span>06</span>Học đầu tư</p><a href="#congcu">Công cụ quản trị rủi ro<small>Tính mức cần hồi, điểm cắt lỗ</small></a><a href="#seri">Seri phân tích cơ bản F0<small>Mỗi tập một khái niệm</small></a></div>
   <a class="btn main toc-cta" href="https://zalo.me/0365188286" target="_blank" rel="noopener">Đặt lịch tư vấn 1:1 qua Zalo <small>0365.188.286</small></a>
  </div>
 </div>
@@ -713,7 +812,7 @@ table.ss-t tr:hover td,table.ss-t tr:hover th{background:#faf8fc!important}
 <div><p class="eyebrow">Tư vấn đầu tư chứng khoán 1:1</p><h1>Mỗi nhà đầu tư một <em>kế hoạch riêng</em>.</h1>
 <p>Chứng khoán Huy Nguyễn đồng hành 1:1 với từng nhà đầu tư: đọc báo cáo tài chính mã bạn đang cầm, dựng danh mục theo số vốn và mức chịu rủi ro, đặt sẵn điểm mua và điểm cắt lỗ trước mỗi lệnh.</p>
 <div class="hero-act"><a class="btn main" href="https://zalo.me/0365188286" target="_blank" rel="noopener">Đặt lịch tư vấn 1:1 qua Zalo <small>0365.188.286</small></a><a class="btn vps" style="margin-top:10px" href="https://openaccount.vps.com.vn/?MKTID=BJIE" target="_blank" rel="noopener">Mở tài khoản chứng khoán VPS <small>Online 5 phút</small></a></div>
-<div class="soc" style="margin-top:18px"><a href="https://www.youtube.com/@chungkhoanhuynguyen" target="_blank" rel="noopener">YouTube @chungkhoanhuynguyen</a><a href="https://www.facebook.com/chungkhoanhuynguyenfa" target="_blank" rel="noopener">Facebook Nguyễn Huy Anh</a></div></div>
+<a class="hero-rep" href="bao-cao-2026.html"><b>Báo cáo lệnh 2016–2026</b><span>Đầu cơ V306TMVN và tích sản ngân hàng: toàn bộ lệnh, kết quả từng năm so với VN-Index</span><i aria-hidden="true">→</i></a><div class="soc" style="margin-top:18px"><a href="https://www.youtube.com/@chungkhoanhuynguyen" target="_blank" rel="noopener">YouTube @chungkhoanhuynguyen</a><a href="https://www.facebook.com/chungkhoanhuynguyenfa" target="_blank" rel="noopener">Facebook Nguyễn Huy Anh</a></div></div>
 <div class="cta" id="nhom"><p class="eyebrow">Cộng đồng miễn phí</p>
 <a class="btn" href="https://zalo.me/g/rkmzuy362" target="_blank" rel="noopener">Vào nhóm Zalo VIP1 <small>zalo.me/g/rkmzuy362</small></a>
 <a class="btn" href="https://zalo.me/g/jbnbiq994" target="_blank" rel="noopener">Vào nhóm Zalo VIP4 <small>zalo.me/g/jbnbiq994</small></a>
@@ -774,7 +873,7 @@ table.ss-t tr:hover td,table.ss-t tr:hover th{background:#faf8fc!important}
 </div></section>
 </div>
 
-<div class="grp alt" id="g2" data-name="Công cụ phân tích"><div class="grp-h"><div class="wrap"><span class="grp-n">02</span><div><div class="grp-t" role="heading" aria-level="2">Công cụ phân tích</div><p>Soi chart, so sánh 2 mã và bức tranh vĩ mô.</p></div></div></div>
+<div class="grp alt" id="g2" data-name="Công cụ phân tích"><div class="grp-h"><div class="wrap"><span class="grp-n">02</span><div><div class="grp-t" role="heading" aria-level="2">Công cụ phân tích</div><p>Soi chart, so sánh 2 mã, vĩ mô, lãi suất Fed và thị trường thế giới.</p></div></div></div>
 <section id="soichart" class="nocopy"><div class="wrap">
 <h2>Soi chart cổ phiếu</h2>
 <p class="sub">Biểu đồ nến kèm khối lượng, đường trung bình, Bollinger, RSI, MACD cho mọi mã sàn HOSE, các chỉ số và phái sinh VN30F1M. Mã sàn HNX, UPCoM hiển thị bằng biểu đồ TradingView. <span id="chu"></span></p>
@@ -826,9 +925,20 @@ table.ss-t tr:hover td,table.ss-t tr:hover th{background:#faf8fc!important}
 <div class="vm-grid" id="vmg"><p class="note ph">Đang tải số liệu vĩ mô…</p></div>
 <p class="note">Mức độ ảnh hưởng được đánh giá tự động theo biến động 1 tháng, mang tính tham khảo. Cần phân tích sâu cho danh mục của bạn: nhắn Zalo 0365.188.286.</p>
 </div></section>
+<section id="thegioi" class="nocopy"><div class="wrap">
+<h2>Thị trường thế giới</h2>
+<p class="sub">Lãi suất Fed, giá vàng, dầu Brent, dầu WTI, chứng khoán Mỹ, Nhật Bản, Hàn Quốc, chỉ số USD và lợi suất trái phiếu Mỹ. Giá đóng cửa gần nhất, tự cập nhật nhiều lần mỗi ngày. <span id="wmu"></span></p>
+<div class="wm-fed" id="wmf"><p class="ph wm-ld">Lãi suất Fed sẽ tải khi anh chị kéo tới đây…</p></div>
+<div class="wm-tiles" id="wmt" role="group" aria-label="Chọn biểu đồ"></div>
+<div class="wm-card">
+ <div class="wm-top"><div class="wm-tt" id="wmh"></div><div class="seg" id="wmr" role="group" aria-label="Khoảng thời gian"><button type="button" data-r="63">3T</button><button type="button" data-r="126">6T</button><button type="button" data-r="250">1N</button><button type="button" data-r="0">3N</button></div></div>
+ <div class="wm-plot" id="wmv"><div class="ch-load">Biểu đồ sẽ tải khi anh chị kéo tới đây…</div></div>
+</div>
+<p class="note">Giờ đóng cửa khác nhau theo từng thị trường: Nhật, Hàn đóng cửa khoảng 13:30, Mỹ khoảng 03:00–04:00 sáng hôm sau (giờ Việt Nam). Vàng và dầu là giá hợp đồng tương lai gần nhất. Giá vàng quy đổi chỉ để tham khảo, chưa gồm chênh lệch giá vàng trong nước. Thông tin tham khảo, không phải khuyến nghị mua bán.</p>
+</div></section>
 </div>
 
-<div class="grp" id="g3" data-name="Doanh nghiệp"><div class="grp-h"><div class="wrap"><span class="grp-n">03</span><div><div class="grp-t" role="heading" aria-level="2">Doanh nghiệp</div><p>Đánh giá BCTC, công bố thông tin và lịch sự kiện.</p></div></div></div>
+<div class="grp" id="g3" data-name="Doanh nghiệp & tin tức"><div class="grp-h"><div class="wrap"><span class="grp-n">03</span><div><div class="grp-t" role="heading" aria-level="2">Doanh nghiệp & tin tức</div><p>Đánh giá BCTC, tin doanh nghiệp, tin vĩ mô và lịch sự kiện.</p></div></div></div>
 <section id="bctc" class="nocopy"><div class="wrap">
 <h2>BCTC · Đánh giá kết quả kinh doanh</h2>
 <p class="sub">Mỗi quý, khi doanh nghiệp công bố báo cáo tài chính, trang tự đọc số liệu và chỉ ra điểm tốt, điểm cần lưu ý trong kết quả kinh doanh. Một số mã có thêm nhận xét của Huy Nguyễn. Đây là đánh giá chất lượng KQKD, <b>không phải khuyến nghị mua bán</b>. <span id="kqu"></span></p>
@@ -843,22 +953,22 @@ table.ss-t tr:hover td,table.ss-t tr:hover th{background:#faf8fc!important}
 <p class="note" style="margin-top:10px">Số liệu: BCTC quý do doanh nghiệp công bố, tự cập nhật mỗi ngày. Đánh giá tự động có thể chưa phản ánh hết các khoản bất thường; hãy đọc kèm BCTC gốc.</p>
 </div></section>
 <section id="tintuc" class="nocopy"><div class="wrap">
-<h2>Tin doanh nghiệp</h2>
-<p class="sub">Công bố thông tin chính thức của doanh nghiệp trên Sở giao dịch chứng khoán trong 7 ngày gần nhất: báo cáo tài chính, cổ tức, nghị quyết, nhân sự, giao dịch của người nội bộ. <span id="nwu"></span></p>
+<h2>Tin tức doanh nghiệp &amp; vĩ mô</h2>
+<p class="sub">Công bố thông tin chính thức của doanh nghiệp trên Sở giao dịch chứng khoán 7 ngày gần nhất (báo cáo tài chính, cổ tức, nghị quyết, nhân sự, giao dịch nội bộ), cùng tin vĩ mô thế giới: quyết định lãi suất của Fed, diễn biến chứng khoán Mỹ, Nhật, Hàn, giá vàng và dầu. <span id="nwu"></span></p>
 <div class="dn-bar">
- <div class="chips" id="nwf" role="group" aria-label="Lọc loại tin"><button class="chip" type="button" data-f="all" aria-pressed="true">Tất cả</button><button class="chip" type="button" data-f="bctc" aria-pressed="false">BCTC</button><button class="chip" type="button" data-f="quyen" aria-pressed="false">Cổ tức &amp; quyền</button><button class="chip" type="button" data-f="dhcd" aria-pressed="false">ĐHCĐ &amp; nghị quyết</button><button class="chip" type="button" data-f="ns" aria-pressed="false">Nhân sự</button><button class="chip" type="button" data-f="nb" aria-pressed="false">Giao dịch nội bộ</button><button class="chip" type="button" data-f="khac" aria-pressed="false">Khác</button></div>
+ <div class="chips" id="nwf" role="group" aria-label="Lọc loại tin"><button class="chip" type="button" data-f="all" aria-pressed="true">Tất cả</button><button class="chip" type="button" data-f="vm" aria-pressed="false">Vĩ mô &amp; Fed</button><button class="chip" type="button" data-f="bctc" aria-pressed="false">BCTC</button><button class="chip" type="button" data-f="quyen" aria-pressed="false">Cổ tức &amp; quyền</button><button class="chip" type="button" data-f="dhcd" aria-pressed="false">ĐHCĐ &amp; nghị quyết</button><button class="chip" type="button" data-f="ns" aria-pressed="false">Nhân sự</button><button class="chip" type="button" data-f="nb" aria-pressed="false">Giao dịch nội bộ</button><button class="chip" type="button" data-f="khac" aria-pressed="false">Khác</button></div>
  <div class="dn-tools"><input id="nwq" type="search" inputmode="search" autocomplete="off" spellcheck="false" placeholder="Lọc theo mã: HPG…" aria-label="Lọc tin theo mã"><label class="dn-w"><input type="checkbox" id="nww"> Chỉ mã theo dõi</label></div>
 </div>
 <ul class="nw-list" id="nwl"><li class="dn-ld ph">Tin sẽ tải khi anh chị kéo tới đây…</li></ul>
 <button class="kq-more" id="nwm" type="button" hidden>Xem thêm</button>
-<p class="note">Tiêu đề lấy nguyên văn từ thông báo của Sở; nút "Văn bản" mở bản gốc trên trang của Sở trong thẻ mới.</p>
+<p class="note">Tin doanh nghiệp giữ nguyên tiêu đề thông báo của Sở; nút "Văn bản" mở bản gốc trên trang của Sở trong thẻ mới. Tin vĩ mô được tổng hợp tự động từ thông cáo chính thức của Fed và giá đóng cửa các thị trường, giờ theo giờ Việt Nam.</p>
 </div></section>
 <section id="lichsk" class="nocopy"><div class="wrap">
 <h2>Lịch sự kiện</h2>
-<p class="sub">Ngày giao dịch không hưởng quyền cổ tức, chốt quyền và họp ĐHCĐ, phát hành thêm, niêm yết mới, cùng các cảnh báo như cắt margin, kiểm soát, hạn chế giao dịch. <span id="evu"></span></p>
+<p class="sub">Ngày giao dịch không hưởng quyền cổ tức, chốt quyền và họp ĐHCĐ, phát hành thêm, niêm yết mới, các cảnh báo như cắt margin, kiểm soát, hạn chế giao dịch, và lịch Fed công bố lãi suất. <span id="evu"></span></p>
 <div class="dn-bar">
  <div class="seg" id="evt" role="group" aria-label="Thời gian"><button type="button" data-t="next" aria-pressed="true">Sắp tới</button><button type="button" data-t="past" aria-pressed="false">7 ngày qua</button></div>
- <div class="chips" id="evf" role="group" aria-label="Lọc loại sự kiện"><button class="chip" type="button" data-f="all" aria-pressed="true">Tất cả</button><button class="chip" type="button" data-f="tien" aria-pressed="false">Cổ tức tiền</button><button class="chip" type="button" data-f="cp" aria-pressed="false">Cổ tức cổ phiếu</button><button class="chip" type="button" data-f="dhcd" aria-pressed="false">ĐHCĐ</button><button class="chip" type="button" data-f="ph" aria-pressed="false">Phát hành &amp; niêm yết</button><button class="chip" type="button" data-f="cb" aria-pressed="false">Cảnh báo</button></div>
+ <div class="chips" id="evf" role="group" aria-label="Lọc loại sự kiện"><button class="chip" type="button" data-f="all" aria-pressed="true">Tất cả</button><button class="chip" type="button" data-f="tien" aria-pressed="false">Cổ tức tiền</button><button class="chip" type="button" data-f="cp" aria-pressed="false">Cổ tức cổ phiếu</button><button class="chip" type="button" data-f="dhcd" aria-pressed="false">ĐHCĐ</button><button class="chip" type="button" data-f="ph" aria-pressed="false">Phát hành &amp; niêm yết</button><button class="chip" type="button" data-f="cb" aria-pressed="false">Cảnh báo</button><button class="chip" type="button" data-f="vm" aria-pressed="false">Lịch Fed</button></div>
  <div class="dn-tools"><input id="evq" type="search" inputmode="search" autocomplete="off" spellcheck="false" placeholder="Lọc theo mã…" aria-label="Lọc sự kiện theo mã"><label class="dn-w"><input type="checkbox" id="evw"> Chỉ mã theo dõi</label></div>
 </div>
 <div class="ev-list" id="evl"><p class="dn-ld ph">Lịch sẽ tải khi anh chị kéo tới đây…</p></div>
@@ -868,7 +978,22 @@ table.ss-t tr:hover td,table.ss-t tr:hover th{background:#faf8fc!important}
 </div>
 
 <div class="grp alt" id="g4" data-name="Góc nhìn Huy Nguyễn"><div class="grp-h"><div class="wrap"><span class="grp-n">04</span><div><div class="grp-t" role="heading" aria-level="2">Góc nhìn Huy Nguyễn</div><p>Báo cáo lệnh, bảng theo dõi và mã tiêu điểm.</p></div></div></div>
-<div class="wrap"><a class="g4-promo" href="bao-cao-2026.html"><div><b>Báo cáo lệnh &amp; Tích sản 2016–2026</b><small>Toàn bộ lệnh đầu cơ và danh mục tích sản, kết quả từng năm.</small></div><span>Xem báo cáo →</span></a></div>
+<div class="wrap g4-rep">
+ <div class="rp-h"><b>Báo cáo lệnh &amp; Tích sản 2016–2026</b><a href="bao-cao-2026.html">Xem toàn bộ báo cáo →</a></div>
+ <div class="rp-g">
+ <a class="rp-card" href="bao-cao-2026.html#luotsong">
+  <span class="rp-k">Đầu cơ V306TMVN · 2016–2026</span>
+  <b>Phù hợp vốn trung và dài hạn, quản trị rủi ro chặt chẽ</b>
+  <ul><li>Năm lỗ nặng nhất chỉ −11,9% (2022), trong khi VN-Index −32,8%</li><li>Đại đa số các năm có lãi: 8/10 năm trọn vẹn 2016–2025</li><li>Lệnh sai cắt lỗ sớm, đứng ngoài giữ tiền khi rủi ro thị trường cao</li></ul>
+  <span class="rp-go">Xem sổ lệnh từng năm →</span></a>
+ <a class="rp-card gold" href="bao-cao-2026.html#tichsan">
+  <span class="rp-k">Tích sản ngân hàng · 2018–2026</span>
+  <b>Hiệu suất dài hạn cao, nhưng ngắn và trung hạn có thể lỗ rất nhiều</b>
+  <ul><li>Giá cổ phiếu chưa phản ánh ngay giá trị doanh nghiệp: 2018 và 2019 tài khoản lỗ hai năm liền (−11,2% và −13,6%), có lúc sụt sâu nhất −42,5%</li><li>Nếu dùng vốn vay, phải thực sự chấp nhận được rủi ro lớn</li><li>Đổi lại là hiệu suất đầu tư cao nếu nắm giữ đủ lâu</li></ul>
+  <span class="rp-go">Xem kết quả tích sản →</span></a>
+ </div>
+ <p class="rp-n">Kết quả đã trừ phí giao dịch và thuế bán. Kết quả quá khứ không đảm bảo cho tương lai, không phải khuyến nghị mua bán.</p>
+</div>
 <section id="bang" class="nocopy"><div class="wrap">
 <h2>Bảng theo dõi</h2><p class="sub">Giá đóng cửa 1 năm gần nhất (nghìn đồng). Chỉ hiện các mã có chuỗi giá liền mạch, không bị lệch do chia cổ tức.</p>
 <div class="tools" role="group" aria-label="Lọc theo ngành"><button class="chip-b" type="button" data-f="all" aria-pressed="true">Tất cả</button><button class="chip-b" type="button" data-f="Chứng khoán" aria-pressed="false">Chứng khoán</button><button class="chip-b" type="button" data-f="Công nghệ" aria-pressed="false">Công nghệ</button><button class="chip-b" type="button" data-f="Dầu khí" aria-pressed="false">Dầu khí</button><button class="chip-b" type="button" data-f="Khoáng sản" aria-pressed="false">Khoáng sản</button><button class="chip-b" type="button" data-f="Ngân hàng" aria-pressed="false">Ngân hàng</button><button class="chip-b" type="button" data-f="Thép" aria-pressed="false">Thép</button><button class="chip-b" type="button" data-f="Tiêu dùng" aria-pressed="false">Tiêu dùng</button>
@@ -950,7 +1075,7 @@ table.ss-t tr:hover td,table.ss-t tr:hover th{background:#faf8fc!important}
 <div class="box"><h3>Kế hoạch mua và cắt lỗ</h3><p>Mỗi lệnh có vùng mua, điểm cắt lỗ và điều kiện chốt lời ghi rõ từ trước, để không quyết định theo cảm xúc.</p></div>
 <div class="box"><h3>Cập nhật theo mùa KQKD</h3><p>Nhắc lịch công bố kết quả kinh doanh của các mã trong danh mục và đánh giá lại ngay khi số liệu ra.</p></div>
 </div>
-<ol class="steps"><li><b>Nhắn Zalo 0365.188.286</b><span>Gửi số vốn, các mã đang cầm và mục tiêu.</span></li><li><b>Trao đổi 1:1</b><span>Anh Huy phân tích tình huống và đề xuất hướng đi.</span></li><li><b>Theo sát kế hoạch</b><span>Cập nhật khi thị trường hoặc kết quả kinh doanh thay đổi.</span></li></ol>
+<div class="tv-flex"><h3>Linh hoạt theo từng giai đoạn thị trường</h3><div class="tf-g"><div><b>Vĩ mô xấu</b><p>Không cần mua. Có thể đứng ngoài giữ tiền, thậm chí nghỉ hẳn cả năm, chờ cơ hội rõ ràng hơn.</p></div><div><b>Năm thị trường tăng mạnh</b><p>Cổ phiếu tích sản thường đạt định giá và phải bán bớt. Phần vốn đó chuyển sang phương pháp đầu cơ V306TMVN để tiếp tục kiếm lợi nhuận, khi thị trường đảo chiều vẫn quản trị rủi ro tốt.</p></div><div><b>Theo từng nhà đầu tư</b><p>Tỷ trọng giữa tích sản dài hạn và đầu cơ được điều chỉnh theo số vốn, thời gian đầu tư và mức chịu rủi ro của từng người.</p></div></div><a class="tf-go" href="bao-cao-2026.html">Xem kết quả hai phương pháp 2016–2026 →</a></div><ol class="steps"><li><b>Nhắn Zalo 0365.188.286</b><span>Gửi số vốn, các mã đang cầm và mục tiêu.</span></li><li><b>Trao đổi 1:1</b><span>Anh Huy phân tích tình huống và đề xuất hướng đi.</span></li><li><b>Theo sát kế hoạch</b><span>Cập nhật khi thị trường hoặc kết quả kinh doanh thay đổi.</span></li></ol>
 <p class="risk"><span><b>Lưu ý rủi ro:</b> Dùng vốn ngắn hạn (tiền cần dùng trong vài tháng, tiền vay) để mua cổ phiếu nắm dài hạn là cực kỳ rủi ro, nhất là khi dùng <b>margin</b> và <b>dồn toàn bộ vốn (all-in) vào 1 cổ phiếu</b>. Chỉ đầu tư dài hạn bằng tiền nhàn rỗi và luôn chia nhỏ danh mục.</span></p></div></section>
 <section id="tichluy"><div class="wrap">
 <div class="tl-box">
@@ -1003,7 +1128,7 @@ table.ss-t tr:hover td,table.ss-t tr:hover th{background:#faf8fc!important}
 <ol class="eps" id="eps"><li data-n="1" data-v="5pvftE6h81A" data-q="p/e là gì? mua cổ phiếu mà không biết p/e, giống mua nhà mà không hỏi giá."><span class="ep">Tập 1</span><div><b>P/E là gì?</b><p>Mua cổ phiếu mà không biết P/E, giống mua nhà mà không hỏi giá.</p></div></li><li data-n="2" data-v="h-mKua2XJ4E" data-q="p/b và roe: cặp đôi định giá ngân hàng cổ phiếu ngân hàng, chứng khoán mà chỉ nhìn p/e là sai."><span class="ep">Tập 2</span><div><b>P/B và ROE: cặp đôi định giá ngân hàng</b><p>Cổ phiếu ngân hàng, chứng khoán mà chỉ nhìn P/E là sai.</p></div></li><li data-n="3" data-v="M8x03cT4wKY" data-q="eps và bẫy lãi ảo doanh nghiệp báo lãi gấp đôi, bạn lao vào mua, rồi giá giảm. vì sao?"><span class="ep">Tập 3</span><div><b>EPS và bẫy lãi ảo</b><p>Doanh nghiệp báo lãi gấp đôi, bạn lao vào mua, rồi giá giảm. Vì sao?</p></div></li><li data-n="4" data-v="f3Ei0acch68" data-q="cổ phiếu là gì? mua một cổ phiếu là bạn trở thành người đồng sở hữu doanh nghiệp."><span class="ep">Tập 4</span><div><b>Cổ phiếu là gì?</b><p>Mua một cổ phiếu là bạn trở thành người đồng sở hữu doanh nghiệp.</p></div></li><li data-n="5" data-v="CBe9jCX8vuw" data-q="vốn hóa thị trường: giá thấp chưa chắc đã rẻ cổ phiếu 10 nghìn có thể đắt hơn cổ phiếu 100 nghìn."><span class="ep">Tập 5</span><div><b>Vốn hóa thị trường: giá thấp chưa chắc đã rẻ</b><p>Cổ phiếu 10 nghìn có thể đắt hơn cổ phiếu 100 nghìn.</p></div></li><li data-n="6" data-v="swNy6riItoE" data-q="bctc gồm những gì? ba bảng quan trọng nhất mà người mới cần biết đọc."><span class="ep">Tập 6</span><div><b>BCTC gồm những gì?</b><p>Ba bảng quan trọng nhất mà người mới cần biết đọc.</p></div></li><li data-n="7" data-v="ftNK7l21TH8" data-q="doanh thu tăng mà lãi giảm? bán được nhiều hơn nhưng lại lãi ít đi, tiền đi đâu?"><span class="ep">Tập 7</span><div><b>Doanh thu tăng mà lãi giảm?</b><p>Bán được nhiều hơn nhưng lại lãi ít đi, tiền đi đâu?</p></div></li><li data-n="8" data-v="kpmT0FYfJX8" data-q="biên lợi nhuận gộp: sức mạnh định giá cùng bán 100 đồng hàng, doanh nghiệp nào giữ lại được nhiều hơn?"><span class="ep">Tập 8</span><div><b>Biên lợi nhuận gộp: sức mạnh định giá</b><p>Cùng bán 100 đồng hàng, doanh nghiệp nào giữ lại được nhiều hơn?</p></div></li><li data-n="9" data-v="EYCjswHsDU8" data-q="biên lợi nhuận ròng: cuối cùng còn lại bao nhiêu? sau mọi chi phí, 100 đồng doanh thu còn mấy đồng lãi?"><span class="ep">Tập 9</span><div><b>Biên lợi nhuận ròng: cuối cùng còn lại bao nhiêu?</b><p>Sau mọi chi phí, 100 đồng doanh thu còn mấy đồng lãi?</p></div></li><li data-n="10" data-v="rhaXuoSTdYU" data-q="cổ tức tiền mặt hay cổ phiếu? nhận cổ tức cổ phiếu có thật sự giàu hơn không?"><span class="ep">Tập 10</span><div><b>Cổ tức tiền mặt hay cổ phiếu?</b><p>Nhận cổ tức cổ phiếu có thật sự giàu hơn không?</p></div></li><li data-n="11" data-v="-tFN-JqbJJw" data-q="hàng tồn kho: tài sản hay gánh nặng? kho đầy hàng có thể là tín hiệu tốt, cũng có thể là cờ đỏ."><span class="ep">Tập 11</span><div><b>Hàng tồn kho: tài sản hay gánh nặng?</b><p>Kho đầy hàng có thể là tín hiệu tốt, cũng có thể là cờ đỏ.</p></div></li><li data-n="12" data-v="wQeJOCZcmZo" data-q="phải thu khách hàng: bán rồi nhưng chưa thu tiền lãi trên giấy mà tiền chưa về thì rủi ro ở đâu?"><span class="ep">Tập 12</span><div><b>Phải thu khách hàng: bán rồi nhưng chưa thu tiền</b><p>Lãi trên giấy mà tiền chưa về thì rủi ro ở đâu?</p></div></li><li data-n="13" data-v="L3sRsUl7-dM" data-q="nợ vay và d/e: vay bao nhiêu là nguy hiểm? đòn bẩy giúp lãi nhanh, cũng làm lỗ nhanh."><span class="ep">Tập 13</span><div><b>Nợ vay và D/E: vay bao nhiêu là nguy hiểm?</b><p>Đòn bẩy giúp lãi nhanh, cũng làm lỗ nhanh.</p></div></li><li data-n="14" data-v="1sEMlvJ-66M" data-q="nợ vay và nợ chiếm dụng cùng là nợ, nhưng có loại nợ là gánh nặng, có loại nợ lại là sức mạnh."><span class="ep">Tập 14</span><div><b>Nợ vay và nợ chiếm dụng</b><p>Cùng là nợ, nhưng có loại nợ là gánh nặng, có loại nợ lại là sức mạnh.</p></div></li><li data-n="15" data-v="DTZr5jjWYOc" data-q="vốn chủ sở hữu: tiền thật của cổ đông nếu bán hết tài sản và trả hết nợ, cổ đông còn lại bao nhiêu? đó là vốn chủ sở hữu."><span class="ep">Tập 15</span><div><b>Vốn chủ sở hữu: tiền thật của cổ đông</b><p>Nếu bán hết tài sản và trả hết nợ, cổ đông còn lại bao nhiêu? Đó là vốn chủ sở hữu.</p></div></li><li data-n="16" data-v="U1v4DimOeJk" data-q="lợi nhuận chưa phân phối có một dòng trên báo cáo tài chính cho bạn biết khả năng chia cổ tức của doanh nghiệp."><span class="ep">Tập 16</span><div><b>Lợi nhuận chưa phân phối</b><p>Có một dòng trên báo cáo tài chính cho bạn biết khả năng chia cổ tức của doanh nghiệp.</p></div></li><li data-n="17" data-v="zrRVTlkkBUo" data-q="tài sản dở dang: tiền đang bị giam? hàng nghìn tỷ đồng nằm trong một dòng gọi là tài sản dở dang. đó là cơ hội hay rủi ro?"><span class="ep">Tập 17</span><div><b>Tài sản dở dang: tiền đang bị giam?</b><p>Hàng nghìn tỷ đồng nằm trong một dòng gọi là tài sản dở dang. Đó là cơ hội hay rủi ro?</p></div></li><li data-n="18" data-v="_wa3Ng1BFLo" data-q="người mua trả tiền trước có một khoản nợ mà doanh nghiệp càng nợ nhiều, cổ đông càng mừng."><span class="ep">Tập 18</span><div><b>Người mua trả tiền trước</b><p>Có một khoản nợ mà doanh nghiệp càng nợ nhiều, cổ đông càng mừng.</p></div></li><li data-n="19" data-v="opvEQgzWBac" data-q="tài sản ngắn hạn và dài hạn tài sản nghìn tỷ, nhưng khi cần tiền gấp thì có bán được không?"><span class="ep">Tập 19</span><div><b>Tài sản ngắn hạn và dài hạn</b><p>Tài sản nghìn tỷ, nhưng khi cần tiền gấp thì có bán được không?</p></div></li><li data-n="20" data-v="95gM2xf8PEg" data-q="lợi thế thương mại: mua đắt để lại gì? mua lại một công ty với giá cao hơn giá trị sổ sách, phần chênh lệch đi đâu?"><span class="ep">Tập 20</span><div><b>Lợi thế thương mại: mua đắt để lại gì?</b><p>Mua lại một công ty với giá cao hơn giá trị sổ sách, phần chênh lệch đi đâu?</p></div></li><li data-n="21" data-v="eXFf-ZtF9As" data-q="giá vốn hàng bán: chi phí lớn nhất với phần lớn doanh nghiệp, đây là khoản chi phí lớn nhất, quyết định sống còn."><span class="ep">Tập 21</span><div><b>Giá vốn hàng bán: chi phí lớn nhất</b><p>Với phần lớn doanh nghiệp, đây là khoản chi phí lớn nhất, quyết định sống còn.</p></div></li><li data-n="22" data-v="7E5s97t7i24" data-q="chi phí bán hàng và quản lý doanh thu tăng mạnh, nhưng chi phí bán hàng còn tăng mạnh hơn. đó là tăng trưởng hay đốt tiền?"><span class="ep">Tập 22</span><div><b>Chi phí bán hàng và quản lý</b><p>Doanh thu tăng mạnh, nhưng chi phí bán hàng còn tăng mạnh hơn. Đó là tăng trưởng hay đốt tiền?</p></div></li><li data-n="23" data-v="g10ijxZm2zs" data-q="chi phí lãi vay: kẻ ăn mòn lợi nhuận lãi suất tăng một chút, có doanh nghiệp mất cả nửa lợi nhuận. vì sao?"><span class="ep">Tập 23</span><div><b>Chi phí lãi vay: kẻ ăn mòn lợi nhuận</b><p>Lãi suất tăng một chút, có doanh nghiệp mất cả nửa lợi nhuận. Vì sao?</p></div></li><li data-n="24" data-v="0I77u-MPrlQ" data-q="doanh thu tài chính: lãi từ đâu ra? doanh nghiệp sản xuất mà lãi chủ yếu từ gửi tiết kiệm và bán cổ phiếu. có nên tin không?"><span class="ep">Tập 24</span><div><b>Doanh thu tài chính: lãi từ đâu ra?</b><p>Doanh nghiệp sản xuất mà lãi chủ yếu từ gửi tiết kiệm và bán cổ phiếu. Có nên tin không?</p></div></li><li data-n="25" data-v="SNCymK_MM9Q" data-q="lợi nhuận khác: cú hích một lần lợi nhuận quý này tăng gấp năm lần. trước khi mừng, hãy nhìn dòng lợi nhuận khác."><span class="ep">Tập 25</span><div><b>Lợi nhuận khác: cú hích một lần</b><p>Lợi nhuận quý này tăng gấp năm lần. Trước khi mừng, hãy nhìn dòng lợi nhuận khác.</p></div></li><li data-n="26" data-v="PkoT1F9seGA" data-q="cổ đông thiểu số: lãi của ai? tập đoàn báo lãi nghìn tỷ, nhưng phần thuộc về bạn, cổ đông công ty mẹ, có thể ít hơn nhiều."><span class="ep">Tập 26</span><div><b>Cổ đông thiểu số: lãi của ai?</b><p>Tập đoàn báo lãi nghìn tỷ, nhưng phần thuộc về bạn, cổ đông công ty mẹ, có thể ít hơn nhiều.</p></div></li><li data-n="27" data-v="qQejZdYXvvo" data-q="so sánh cùng kỳ hay quý trước? lợi nhuận tăng ba mươi phần trăm so với quý trước, nhưng giảm hai mươi phần trăm so với cùng kỳ. tin nào đúng?"><span class="ep">Tập 27</span><div><b>So sánh cùng kỳ hay quý trước?</b><p>Lợi nhuận tăng ba mươi phần trăm so với quý trước, nhưng giảm hai mươi phần trăm so với cùng kỳ. Tin nào đúng?</p></div></li><li data-n="28" data-v="L4NBcNbr9-0" data-q="lũy kế và kế hoạch năm doanh nghiệp đã đi được bao nhiêu phần đường so với mục tiêu? câu trả lời nằm ở lũy kế."><span class="ep">Tập 28</span><div><b>Lũy kế và kế hoạch năm</b><p>Doanh nghiệp đã đi được bao nhiêu phần đường so với mục tiêu? Câu trả lời nằm ở lũy kế.</p></div></li><li data-n="29" data-v="3gAjp0HN4HA" data-q="mùa báo cáo tài chính: đọc gì trước? mùa báo cáo tài chính, hàng trăm doanh nghiệp công bố cùng lúc. đọc thế nào cho nhanh?"><span class="ep">Tập 29</span><div><b>Mùa báo cáo tài chính: đọc gì trước?</b><p>Mùa báo cáo tài chính, hàng trăm doanh nghiệp công bố cùng lúc. Đọc thế nào cho nhanh?</p></div></li><li data-n="30" data-v="znTVopWV-p0" data-q="lưu chuyển tiền tệ: tiền thật ở đâu? lợi nhuận có thể là ý kiến, nhưng tiền mặt là sự thật."><span class="ep">Tập 30</span><div><b>Lưu chuyển tiền tệ: tiền thật ở đâu?</b><p>Lợi nhuận có thể là ý kiến, nhưng tiền mặt là sự thật.</p></div></li><li data-n="31" data-v="cWz-UNIcDmM" data-q="dòng tiền kinh doanh: thước đo sự thật muốn biết lợi nhuận là thật hay chỉ trên giấy, hãy so nó với dòng tiền kinh doanh."><span class="ep">Tập 31</span><div><b>Dòng tiền kinh doanh: thước đo sự thật</b><p>Muốn biết lợi nhuận là thật hay chỉ trên giấy, hãy so nó với dòng tiền kinh doanh.</p></div></li><li data-n="32" data-v="AYJ4ZeejFRU" data-q="dòng tiền đầu tư âm là tốt? dòng tiền âm nghe thì đáng sợ, nhưng với dòng tiền đầu tư, âm có khi lại là tin tốt."><span class="ep">Tập 32</span><div><b>Dòng tiền đầu tư âm là tốt?</b><p>Dòng tiền âm nghe thì đáng sợ, nhưng với dòng tiền đầu tư, âm có khi lại là tin tốt.</p></div></li><li data-n="33" data-v="x4cJyARiR_8" data-q="dòng tiền tài chính: vay hay trả? doanh nghiệp đang đi vay thêm, hay đang trả nợ và chia cổ tức? dòng tiền tài chính sẽ trả lời."><span class="ep">Tập 33</span><div><b>Dòng tiền tài chính: vay hay trả?</b><p>Doanh nghiệp đang đi vay thêm, hay đang trả nợ và chia cổ tức? Dòng tiền tài chính sẽ trả lời.</p></div></li><li data-n="34" data-v="5xH8ipIs1TA" data-q="dòng tiền tự do: tiền thật của cổ đông có một con số mà warren buffett rất coi trọng: dòng tiền tự do."><span class="ep">Tập 34</span><div><b>Dòng tiền tự do: tiền thật của cổ đông</b><p>Có một con số mà Warren Buffett rất coi trọng: dòng tiền tự do.</p></div></li><li data-n="35" data-v="lp4kqTWRyfU" data-q="capex là gì? tiêu tiền hay đầu tư? doanh nghiệp chi nghìn tỷ xây nhà máy. đó là tiêu tiền, hay là đầu tư cho tương lai?"><span class="ep">Tập 35</span><div><b>CAPEX là gì? Tiêu tiền hay đầu tư?</b><p>Doanh nghiệp chi nghìn tỷ xây nhà máy. Đó là tiêu tiền, hay là đầu tư cho tương lai?</p></div></li><li data-n="36" data-v="Ahd2EKA4qCY" data-q="khấu hao: chi phí không mất tiền? có một khoản chi phí làm giảm lợi nhuận nhưng không làm mất đồng tiền mặt nào."><span class="ep">Tập 36</span><div><b>Khấu hao: chi phí không mất tiền?</b><p>Có một khoản chi phí làm giảm lợi nhuận nhưng không làm mất đồng tiền mặt nào.</p></div></li><li data-n="37" data-v="en2OTa-mEpA" data-q="vốn lưu động: máu nuôi doanh nghiệp doanh nghiệp làm ăn tốt vẫn có thể chết vì thiếu một thứ: vốn lưu động."><span class="ep">Tập 37</span><div><b>Vốn lưu động: máu nuôi doanh nghiệp</b><p>Doanh nghiệp làm ăn tốt vẫn có thể chết vì thiếu một thứ: vốn lưu động.</p></div></li><li data-n="38" data-v="AZtfyV_EL7k" data-q="chu kỳ tiền mặt: tiền quay về sau mấy ngày? bỏ một đồng ra mua hàng, bao lâu thì đồng đó quay về?"><span class="ep">Tập 38</span><div><b>Chu kỳ tiền mặt: tiền quay về sau mấy ngày?</b><p>Bỏ một đồng ra mua hàng, bao lâu thì đồng đó quay về?</p></div></li><li data-n="39" data-v="WuDCOPg-44I" data-q="roa là gì? 1 đồng tài sản đẻ mấy đồng? roe cao chưa chắc doanh nghiệp giỏi, vì có thể nhờ vay nợ. muốn biết thật, hãy xem roa."><span class="ep">Tập 39</span><div><b>ROA là gì? 1 đồng tài sản đẻ mấy đồng?</b><p>ROE cao chưa chắc doanh nghiệp giỏi, vì có thể nhờ vay nợ. Muốn biết thật, hãy xem ROA.</p></div></li><li data-n="40" data-v="HV4EZDTcIC0" data-q="roic: thước đo doanh nghiệp xuất sắc các quỹ đầu tư lớn thích một chỉ số hơn cả roe: roic."><span class="ep">Tập 40</span><div><b>ROIC: thước đo doanh nghiệp xuất sắc</b><p>Các quỹ đầu tư lớn thích một chỉ số hơn cả ROE: ROIC.</p></div></li><li data-n="41" data-v="WGmNa9RQEyQ" data-q="ev/ebitda: định giá cả nợ vay p trên e bỏ qua nợ vay. muốn định giá cả doanh nghiệp, dân chuyên dùng ev trên ebitda."><span class="ep">Tập 41</span><div><b>EV/EBITDA: định giá cả nợ vay</b><p>P trên E bỏ qua nợ vay. Muốn định giá cả doanh nghiệp, dân chuyên dùng EV trên EBITDA.</p></div></li><li data-n="42" data-v="cCaI9FUNKtI" data-q="peg: p/e cao chưa chắc đắt cổ phiếu p trên e ba mươi có thể rẻ hơn cổ phiếu p trên e mười. vì sao?"><span class="ep">Tập 42</span><div><b>PEG: P/E cao chưa chắc đắt</b><p>Cổ phiếu P trên E ba mươi có thể rẻ hơn cổ phiếu P trên E mười. Vì sao?</p></div></li><li data-n="43" data-v="l6UnSaQ0JPM" data-q="p/s: khi doanh nghiệp chưa có lãi doanh nghiệp đang lỗ thì không dùng được p trên e. vậy định giá thế nào?"><span class="ep">Tập 43</span><div><b>P/S: khi doanh nghiệp chưa có lãi</b><p>Doanh nghiệp đang lỗ thì không dùng được P trên E. Vậy định giá thế nào?</p></div></li><li data-n="44" data-v="zC_g29htrzY" data-q="tỷ suất cổ tức: cổ phiếu thay tiết kiệm? có cổ phiếu trả cổ tức tiền mặt cao hơn cả lãi gửi tiết kiệm. có nên mua?"><span class="ep">Tập 44</span><div><b>Tỷ suất cổ tức: cổ phiếu thay tiết kiệm?</b><p>Có cổ phiếu trả cổ tức tiền mặt cao hơn cả lãi gửi tiết kiệm. Có nên mua?</p></div></li><li data-n="45" data-v="6wMI6-jd7lQ" data-q="thanh toán hiện hành: có đủ tiền trả nợ? một chỉ số đơn giản cho biết doanh nghiệp có nguy cơ mất khả năng thanh toán hay không."><span class="ep">Tập 45</span><div><b>Thanh toán hiện hành: có đủ tiền trả nợ?</b><p>Một chỉ số đơn giản cho biết doanh nghiệp có nguy cơ mất khả năng thanh toán hay không.</p></div></li><li data-n="46" data-v="dW5agKaX22s" data-q="thanh toán nhanh: bỏ tồn kho ra nếu ngày mai chủ nợ đòi tiền, doanh nghiệp trả ngay được bao nhiêu?"><span class="ep">Tập 46</span><div><b>Thanh toán nhanh: bỏ tồn kho ra</b><p>Nếu ngày mai chủ nợ đòi tiền, doanh nghiệp trả ngay được bao nhiêu?</p></div></li><li data-n="47" data-v="HTngUd68NCU" data-q="vòng quay tồn kho: hàng bán nhanh cỡ nào? hàng nằm trong kho bao lâu mới bán được? câu trả lời nói lên rất nhiều điều."><span class="ep">Tập 47</span><div><b>Vòng quay tồn kho: hàng bán nhanh cỡ nào?</b><p>Hàng nằm trong kho bao lâu mới bán được? Câu trả lời nói lên rất nhiều điều.</p></div></li><li data-n="48" data-v="JSb8UyD0VBg" data-q="dupont: mổ xẻ roe roe hai mươi phần trăm đến từ đâu: bán giỏi, quay vòng nhanh hay vay nhiều?"><span class="ep">Tập 48</span><div><b>DuPont: mổ xẻ ROE</b><p>ROE hai mươi phần trăm đến từ đâu: bán giỏi, quay vòng nhanh hay vay nhiều?</p></div></li><li data-n="49" data-v="j_tpHCb4rPo" data-q="tăng trưởng kép: sức mạnh của cagr lợi nhuận tăng mười lăm phần trăm mỗi năm, sau năm năm gấp mấy lần?"><span class="ep">Tập 49</span><div><b>Tăng trưởng kép: sức mạnh của CAGR</b><p>Lợi nhuận tăng mười lăm phần trăm mỗi năm, sau năm năm gấp mấy lần?</p></div></li><li data-n="50" data-v="vhzeAEZsup8" data-q="giá trị sổ sách: mỗi cổ phiếu đáng bao nhiêu? giá cổ phiếu thấp hơn giá trị sổ sách, có phải món hời?"><span class="ep">Tập 50</span><div><b>Giá trị sổ sách: mỗi cổ phiếu đáng bao nhiêu?</b><p>Giá cổ phiếu thấp hơn giá trị sổ sách, có phải món hời?</p></div></li><li data-n="51" data-v="IYbaxhixAyw" data-q="tỷ lệ chi trả cổ tức: chia bao nhiêu là đủ? doanh nghiệp chia hết lợi nhuận cho cổ đông, đó là tốt hay xấu?"><span class="ep">Tập 51</span><div><b>Tỷ lệ chi trả cổ tức: chia bao nhiêu là đủ?</b><p>Doanh nghiệp chia hết lợi nhuận cho cổ đông, đó là tốt hay xấu?</p></div></li><li data-n="52" data-v="46gp4kg-kwE" data-q="giá trị nội tại: giá và giá trị giá là thứ bạn trả, giá trị là thứ bạn nhận được."><span class="ep">Tập 52</span><div><b>Giá trị nội tại: giá và giá trị</b><p>Giá là thứ bạn trả, giá trị là thứ bạn nhận được.</p></div></li><li data-n="53" data-v="sN3JOUq1aTE" data-q="biên an toàn: bí quyết không thua lớn có một nguyên tắc giúp nhà đầu tư giá trị sống sót qua mọi cơn sập: biên an toàn."><span class="ep">Tập 53</span><div><b>Biên an toàn: bí quyết không thua lớn</b><p>Có một nguyên tắc giúp nhà đầu tư giá trị sống sót qua mọi cơn sập: biên an toàn.</p></div></li></ol></div></section>
 </div>
 </main>
-<footer><div class="wrap"><b>Lưu ý:</b> không dùng vốn ngắn hạn, margin hoặc dồn toàn bộ vốn vào 1 cổ phiếu để mua nắm giữ dài hạn. Nội dung chia sẻ quan điểm cá nhân và kiến thức đầu tư, không phải khuyến nghị mua bán. Số liệu có thể chậm so với thị trường. © Huy Nguyễn · Chứng khoán<p class="kw" aria-label="Chủ đề"><a href="#top">Chứng khoán</a> · <a href="#bctc">Định giá cổ phiếu</a> · <a href="#bctc">Phân tích báo cáo tài chính</a> · <a href="#banggia">Bảng giá chứng khoán</a> · <a href="#rs">Cổ phiếu mạnh nhất</a> · <a href="#thitruong">Toàn cảnh thị trường</a> · <a href="#soichart">Phân tích kỹ thuật</a> · <a href="#sosanh">So sánh cổ phiếu</a> · <a href="#vimo">Vĩ mô Việt Nam</a> · <a href="#tintuc">Tin doanh nghiệp</a> · <a href="#lichsk">Lịch cổ tức</a> · <a href="#lichsk">Lịch họp ĐHCĐ</a> · <a href="bao-cao-2026.html">Đầu cơ cổ phiếu</a> · <a href="#tichluy">Đầu tư tích sản</a> · <a href="#tuvan">Định giá mua tích sản</a> · <a href="#congcu">Quản trị rủi ro</a> · <a href="#tuvan">Tư vấn đầu tư chứng khoán 1:1</a> · <a href="#seri">Kiến thức đầu tư cho người mới</a> · <a href="#thitruong">VN-Index</a> · <a href="#banggia">VN30</a> · <a href="#banggia">HOSE</a> · <a href="#banggia">HNX</a> · <a href="#banggia">UPCoM</a></p></div></footer>
+<footer><div class="wrap"><b>Lưu ý:</b> không dùng vốn ngắn hạn, margin hoặc dồn toàn bộ vốn vào 1 cổ phiếu để mua nắm giữ dài hạn. Nội dung chia sẻ quan điểm cá nhân và kiến thức đầu tư, không phải khuyến nghị mua bán. Số liệu có thể chậm so với thị trường. © Huy Nguyễn · Chứng khoán<p class="kw" aria-label="Chủ đề"><a href="#top">Chứng khoán</a> · <a href="#bctc">Định giá cổ phiếu</a> · <a href="#bctc">Phân tích báo cáo tài chính</a> · <a href="#banggia">Bảng giá chứng khoán</a> · <a href="#rs">Cổ phiếu mạnh nhất</a> · <a href="#thitruong">Toàn cảnh thị trường</a> · <a href="#soichart">Phân tích kỹ thuật</a> · <a href="#sosanh">So sánh cổ phiếu</a> · <a href="#vimo">Vĩ mô Việt Nam</a> · <a href="#thegioi">Lãi suất Fed</a> · <a href="#thegioi">Giá vàng thế giới</a> · <a href="#thegioi">Giá dầu Brent, WTI</a> · <a href="#thegioi">Chứng khoán Mỹ, Nhật, Hàn</a> · <a href="#tintuc">Tin doanh nghiệp</a> · <a href="#lichsk">Lịch cổ tức</a> · <a href="#lichsk">Lịch họp ĐHCĐ</a> · <a href="bao-cao-2026.html">Đầu cơ cổ phiếu</a> · <a href="#tichluy">Đầu tư tích sản</a> · <a href="#tuvan">Định giá mua tích sản</a> · <a href="#congcu">Quản trị rủi ro</a> · <a href="#tuvan">Tư vấn đầu tư chứng khoán 1:1</a> · <a href="#seri">Kiến thức đầu tư cho người mới</a> · <a href="#thitruong">VN-Index</a> · <a href="#banggia">VN30</a> · <a href="#banggia">HOSE</a> · <a href="#banggia">HNX</a> · <a href="#banggia">UPCoM</a></p></div></footer>
 <div id="wm" aria-hidden="true" style="background-image:url(&quot;data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27360%27%20height%3D%27230%27%3E%3Cg%20transform%3D%27rotate%28-24%20180%20115%29%27%20font-family%3D%27Arial%2CHelvetica%2Csans-serif%27%20font-weight%3D%27700%27%20letter-spacing%3D%272%27%3E%3Ctext%20x%3D%2716%27%20y%3D%2796%27%20font-size%3D%2717%27%20fill%3D%27rgba%2876%2C39%2C102%2C0.06%29%27%3ECH%E1%BB%A8NG%20KHO%C3%81N%20HUY%20NGUY%E1%BB%84N%3C%2Ftext%3E%3Ctext%20x%3D%2740%27%20y%3D%27176%27%20font-size%3D%2713%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.06%29%27%3ECH%E1%BB%A8NG%20KHO%C3%81N%20HUY%20NGUY%E1%BB%84N%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fsvg%3E&quot;)"></div>
 <button id="totop" type="button" aria-label="Về đầu trang">↑</button>
 <script>window.HN_CD={n:1744,t:'29/10/2026'}/* số thành viên Zalo VIP1+VIP4+VIP5 (số thật), t = ngày cập nhật */</script>
@@ -1158,7 +1283,7 @@ G.innerHTML=j.items.map(i=>'<article class="vm"><div class="vm-h"><b>'+i.name+'<
 (function(){
 var R=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
 document.documentElement.classList.add('js');
-var SEL='section h2,section .sub,section h1,.lede,.kpis>.k,.tw,.tblw,.chart,.why,.tvg>.tvb,.box,.tk,.cta,.kq-cta,.vm-tone,ol.eps>li,.focus>*,.vid,.tabs,.ychips,.chips,.notes,.kq-bar,.tools,.mw,.tl-box,.ch-top,.ch-card,.ci,.bg-box,.nw-list,.ev-list,.ss-card,.ss-tw,.grp-h,.g4-promo';
+var SEL='section h2,section .sub,section h1,.lede,.kpis>.k,.tw,.tblw,.chart,.why,.tvg>.tvb,.box,.tk,.cta,.kq-cta,.vm-tone,ol.eps>li,.focus>*,.vid,.tabs,.ychips,.chips,.notes,.kq-bar,.tools,.mw,.tl-box,.ch-top,.ch-card,.ci,.bg-box,.nw-list,.ev-list,.ss-card,.ss-tw,.grp-h,.g4-rep,.wm-fed,.wm-tiles,.wm-card,.tv-flex,.hero-rep';
 function mark(root){
   var els=(root||document).querySelectorAll(SEL);
   els.forEach(function(e){
@@ -1469,7 +1594,7 @@ H.near(sec,init,600);
 })();
 </script>
 <script id="dnjs">
-/* Tin doanh nghiệp (data/news.bin) và Lịch sự kiện (data/ev.bin) */
+/* Tin tức (data/news.bin + tin vĩ mô data/mac.bin) và Lịch sự kiện (data/ev.bin + lịch họp Fed) */
 (function(){
 var H=window.HN,$=function(i){return document.getElementById(i)};if(!H)return;
 var esc=H.esc,DOW=['CN','Thứ 2','Thứ 3','Thứ 4','Thứ 5','Thứ 6','Thứ 7'];
@@ -1477,33 +1602,36 @@ function dmy(d){var p=String(d||'').split('-');return p.length===3?p[2]+'/'+p[1]
 function dm(d){var p=String(d||'').split('-');return p.length===3?p[2]+'/'+p[1]:''}
 function dow(d){var t=new Date(d+'T00:00:00Z');return DOW[t.getUTCDay()]}
 function chipsGroup(id,cb){var box=$(id);box.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;box.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});cb(b.dataset.f||b.dataset.t)})}
-function code(s){return '<a class="dn-c" href="#soichart" data-sym="'+esc(s)+'">'+esc(s)+'</a>'}
+function code(s,g){return g==='vm'?'<span class="dn-c dn-tag">'+esc(s)+'</span>':'<a class="dn-c" href="#soichart" data-sym="'+esc(s)+'">'+esc(s)+'</a>'}
+function safeUrl(u){return /^https:\/\/[a-z0-9.-]+\.(?:vn|com|org|net)(?:[\/?#]|$)/i.test(String(u||''))?u:''}
+function mac(){return H.get('data/mac.bin').catch(function(){return {}})}
 function stamp(id,j){if(j&&j.updated)$(id).textContent='Cập nhật '+j.updated+'.'}
 /* ---------- Tin ---------- */
-var NL={bctc:'BCTC',quyen:'Cổ tức & quyền',dhcd:'ĐHCĐ & nghị quyết',ns:'Nhân sự',nb:'Giao dịch nội bộ',khac:'Khác'};
+var NL={vm:'Vĩ mô thế giới',bctc:'BCTC',quyen:'Cổ tức & quyền',dhcd:'ĐHCĐ & nghị quyết',ns:'Nhân sự',nb:'Giao dịch nội bộ',khac:'Khác'};
 var NL0=H.mob()?12:30,EL0=H.mob()?12:40;var nw=null,nf_='all',nq='',nwo=false,nlim=NL0;
-function nRender(){var w=H.watch.list(),L=nw.filter(function(x){return (nf_==='all'||x[4]===nf_)&&(!nq||x[3].indexOf(nq)===0)&&(!nwo||w.indexOf(x[3])>=0)}),box=$('nwl'),last='';
+function nRender(){var w=H.watch.list(),L=nw.filter(function(x){return (nf_==='all'||x[4]===nf_)&&(!nq||(x[4]!=='vm'&&x[3].indexOf(nq)===0))&&(!nwo||(x[4]!=='vm'&&w.indexOf(x[3])>=0))}),box=$('nwl'),last='';
  if(!L.length){box.innerHTML='<li class="dn-ld">'+(nwo&&!w.length?'Chưa có mã theo dõi. Thêm mã bằng nút ☆ ở Bảng giá hoặc Soi chart.':'Không có tin phù hợp.')+'</li>';$('nwm').hidden=true;return}
  var h='';L.slice(0,nlim).forEach(function(x){if(x[1]!==last){last=x[1];h+='<li class="dn-day">'+dow(x[1])+', '+dmy(x[1])+'</li>'}
-  h+='<li class="nw"><span class="nw-t">'+esc(x[2]||'')+'</span>'+code(x[3])+'<span class="evt n '+x[4]+'">'+esc(NL[x[4]]||'Khác')+'</span><span class="nw-h">'+esc(x[5])+'</span>'+(x[6]?'<a class="nwl" href="'+esc(x[6])+'" target="_blank" rel="noopener nofollow" aria-label="Mở văn bản gốc">Văn bản ↗</a>':'')+'</li>'});
+  var u=x[4]==='vm'?'':safeUrl(x[6]);h+='<li class="nw'+(x[4]==='vm'?' vm'+(x[3]==='Fed'?' hot':''):'')+'"><span class="nw-t">'+esc(x[2]||'')+'</span>'+code(x[3],x[4])+'<span class="evt n '+x[4]+'">'+esc(NL[x[4]]||'Khác')+'</span><span class="nw-h">'+esc(x[5])+'</span>'+(u?'<a class="nwl" href="'+esc(u)+'" target="_blank" rel="noopener nofollow noreferrer" aria-label="Mở văn bản gốc">Văn bản ↗</a>':x[4]==='vm'?'<a class="nwl in" href="#thegioi">Biểu đồ</a>':'')+'</li>'});
  box.innerHTML=h;$('nwm').hidden=L.length<=nlim;$('nwm').textContent='Xem thêm '+(L.length-nlim)+' tin'}
-function nInit(){H.get('data/news.bin').then(function(j){nw=j.n||[];stamp('nwu',j);nRender()}).catch(function(){$('nwl').innerHTML='<li class="dn-ld">Tin đang cập nhật, anh chị quay lại sau ít phút.</li>'});
+function byTime(a,b){return a[1]<b[1]?1:a[1]>b[1]?-1:String(a[2]||'')<String(b[2]||'')?1:String(a[2]||'')>String(b[2]||'')?-1:0}
+function nInit(){Promise.all([H.get('data/news.bin'),mac()]).then(function(r){var j=r[0];nw=(j.n||[]).concat((r[1]&&r[1].n)||[]).sort(byTime);stamp('nwu',j);nRender()}).catch(function(){$('nwl').innerHTML='<li class="dn-ld">Tin đang cập nhật, anh chị quay lại sau ít phút.</li>'});
  chipsGroup('nwf',function(f){nf_=f;nlim=NL0;if(nw)nRender()});
  $('nwq').addEventListener('input',function(){nq=this.value.toUpperCase().replace(/[^A-Z0-9]/g,'');nlim=NL0;if(nw)nRender()});
  $('nww').addEventListener('change',function(){nwo=this.checked;nlim=NL0;if(nw)nRender()});
  $('nwm').addEventListener('click',function(){nlim+=NL0;nRender()});H.watch.on(function(){if(nw&&nwo)nRender()})}
 /* ---------- Lịch sự kiện ---------- */
-var ev=null,et='next',ef='all',eq='',ewo=false,elim=EL0,EC={tien:'t',cp:'c',dhcd:'d',ph:'p',cb:'w'};
+var ev=null,et='next',ef='all',eq='',ewo=false,elim=EL0,EC={tien:'t',cp:'c',dhcd:'d',ph:'p',cb:'w',vm:'v'};
 function eRender(){var today=H.vnNow().d,w=H.watch.list(),past=new Date(Date.parse(today+'T00:00:00Z')-7*864e5).toISOString().slice(0,10);
- var L=ev.filter(function(x){var ok=et==='next'?x[5]>=today:(x[5]<today&&x[5]>=past);return ok&&(ef==='all'||x[1]===ef)&&(!eq||x[0].indexOf(eq)===0)&&(!ewo||w.indexOf(x[0])>=0)});
+ var L=ev.filter(function(x){var ok=et==='next'?x[5]>=today:(x[5]<today&&x[5]>=past);return ok&&(ef==='all'||x[1]===ef)&&(!eq||(x[1]!=='vm'&&x[0].indexOf(eq)===0))&&(!ewo||(x[1]!=='vm'&&w.indexOf(x[0])>=0))});
  if(et==='past')L.reverse();var box=$('evl');
  if(!L.length){box.innerHTML='<p class="dn-ld">'+(ewo&&!w.length?'Chưa có mã theo dõi.':'Không có sự kiện phù hợp.')+'</p>';$('evm').hidden=true;return}
  var g={},order=[];L.slice(0,elim).forEach(function(x){if(!g[x[5]]){g[x[5]]=[];order.push(x[5])}g[x[5]].push(x)});
  var tm=new Date(Date.parse(today+'T00:00:00Z')+864e5).toISOString().slice(0,10);
  box.innerHTML=order.map(function(d){return '<div class="ev-day"><div class="ev-dh"><b>'+dm(d)+'</b><span>'+dow(d)+(d===today?' · <em>Hôm nay</em>':d===tm?' · <em>Ngày mai</em>':'')+'</span></div><ul>'+g[d].map(function(x){
-  return '<li class="ev">'+code(x[0])+'<span class="evt '+(EC[x[1]]||'')+'">'+esc(x[2])+'</span><span class="ev-n">'+esc(x[3]||'')+'</span><span class="ev-d">'+esc(x[4])+' '+dm(x[5])+(x[6]?' · '+esc(x[6])+' '+dm(x[7]):'')+'</span></li>'}).join('')+'</ul></div>'}).join('');
+  return '<li class="ev'+(x[1]==='vm'?' mac':'')+'">'+code(x[0],x[1])+'<span class="evt '+(EC[x[1]]||'')+'">'+esc(x[2])+'</span><span class="ev-n">'+esc(x[3]||'')+'</span><span class="ev-d">'+esc(x[4])+' '+dm(x[5])+(x[6]?' · '+esc(x[6])+' '+dm(x[7]):'')+'</span></li>'}).join('')+'</ul></div>'}).join('');
  $('evm').hidden=L.length<=elim;$('evm').textContent='Xem thêm '+(L.length-elim)+' sự kiện'}
-function eInit(){H.get('data/ev.bin').then(function(j){ev=j.e||[];stamp('evu',j);eRender()}).catch(function(){$('evl').innerHTML='<p class="dn-ld">Lịch đang cập nhật, anh chị quay lại sau ít phút.</p>'});
+function eInit(){Promise.all([H.get('data/ev.bin'),mac()]).then(function(r){var j=r[0];ev=(j.e||[]).concat((r[1]&&r[1].e)||[]).sort(function(a,b){return a[5]<b[5]?-1:a[5]>b[5]?1:(b[1]==='vm')-(a[1]==='vm')});stamp('evu',j);eRender()}).catch(function(){$('evl').innerHTML='<p class="dn-ld">Lịch đang cập nhật, anh chị quay lại sau ít phút.</p>'});
  var tb=$('evt');tb.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;tb.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});et=b.dataset.t;elim=EL0;if(ev)eRender()});
  chipsGroup('evf',function(f){ef=f;elim=EL0;if(ev)eRender()});
  $('evq').addEventListener('input',function(){eq=this.value.toUpperCase().replace(/[^A-Z0-9]/g,'');elim=EL0;if(ev)eRender()});
@@ -1576,6 +1704,75 @@ function init(){seg();
 H.near(sec,init,400);
 })();
 </script>
+<script id="wmjs">
+/* Thị trường thế giới (data/wm.bin) và lãi suất Fed (data/mac.bin) */
+(function(){
+var H=window.HN,$=function(i){return document.getElementById(i)},sec=$('thegioi');if(!sec||!H)return;
+var esc=H.esc,nf=H.nf,pc=H.pc,cls=H.cls;
+var GN={hh:'Hàng hoá',my:'Chứng khoán Mỹ',a:'Châu Á',ls:'USD & lãi suất'};
+var ACT={hold:'Giữ nguyên',hike:'Tăng',cut:'Giảm'};
+var st={k:'gold',r:250},sv=H.ls.get('hn_wm',null);if(sv&&typeof sv==='object'){if(/^[a-z0-9]{2,8}$/.test(sv.k||''))st.k=sv.k;if([0,63,126,250].indexOf(sv.r)>=0)st.r=sv.r}
+var S={},ORD=[],FED=null,FX=null,chart=null;
+function day(n){return new Date(n*864e5).toISOString().slice(0,10)}
+function dmy(s){var p=String(s||'').split('-');return p.length===3?p[2]+'/'+p[1]+'/'+p[0]:''}
+function dm(s){var p=String(s||'').split('-');return p.length===3?p[2]+'/'+p[1]:''}
+function rate(lo,hi){return nf(lo,2)+'–'+nf(hi,2)+'%'}
+function bp(b){return nf(b/100,2).replace(/0+$/,'').replace(/,$/,'')+' điểm %'}
+function chg(c,n){if(!c||c.length<2)return null;var i=Math.max(0,c.length-1-n);return (c[c.length-1]/c[i]-1)*100}
+function spark(c,w,h){var v=c.slice(-63);if(v.length<2)return '';var mn=Math.min.apply(0,v),mx=Math.max.apply(0,v),rg=mx-mn||1;
+ var pts=v.map(function(x,i){return (i*(w/(v.length-1))).toFixed(1)+','+(h-2-(x-mn)/rg*(h-4)).toFixed(1)}).join(' ');
+ return '<svg class="wm-sp '+(v[v.length-1]>=v[0]?'up':'dn')+'" viewBox="0 0 '+w+' '+h+'" preserveAspectRatio="none" aria-hidden="true"><polyline points="'+pts+'"/></svg>'}
+function gold(v){return FX&&v?nf(v*37.5/31.1035*FX/1e6,1)+' triệu đ/lượng':''}
+/* ---------- Ô lãi suất Fed ---------- */
+function fedBox(){var f=FED,box=$('wmf');if(!f||f.lo==null){box.innerHTML='<p class="wm-ld">Lãi suất Fed đang cập nhật.</p>';return}
+ var today=H.vnNow().d,nx=f.next,left=nx?Math.round((Date.parse(nx.ann.slice(0,10))-Date.parse(today))/864e5):null,c=f.chg;
+ var v=f.vote?'Biểu quyết '+f.vote[0]+'–'+f.vote[1]:'';
+ box.innerHTML='<div class="wf-a"><span class="wf-k">Lãi suất điều hành Fed</span><b class="wf-v">'+rate(f.lo,f.hi)+'</b>'+
+  (f.act?'<span class="wf-b '+f.act+'">'+ACT[f.act]+(f.bps?' '+bp(f.bps):'')+' · '+dm(f.d)+'</span>':'')+'</div>'+
+  '<div class="wf-b2"><p><b>Quyết định gần nhất</b>'+esc(f.ttl||'')+(f.t?'. Công bố '+esc(f.t)+' ngày '+dmy(f.d)+' (giờ Việt Nam).':'')+'</p>'+
+  (c?'<p><b>Lần thay đổi gần nhất</b>'+(c.act==='hike'?'Tăng ':'Giảm ')+bp(c.bps)+', hiệu lực từ '+dmy(c.d)+'.</p>':'')+'</div>'+
+  (nx?'<div class="wf-c"><span class="wf-k">Cuộc họp tới</span><b>'+(nx.d1.slice(5,7)===nx.d2.slice(5,7)?(+nx.d1.slice(8))+'–'+dmy(nx.d2):dm(nx.d1)+'–'+dmy(nx.d2))+'</b><small>Công bố khoảng '+esc(nx.ann.slice(11))+' ngày '+dm(nx.ann.slice(0,10))+' (giờ VN)'+(left!=null&&left>=0?' · còn '+left+' ngày':'')+(nx.sep?' · kèm dự báo kinh tế':'')+'</small></div>':'')+
+  '<p class="wf-n"><b>Ảnh hưởng tới Việt Nam:</b> Fed giữ lãi suất cao hoặc tăng thì đồng USD thường mạnh lên, gây áp lực lên tỷ giá USD/VND và dòng vốn ngoại. Fed giảm lãi suất thì áp lực tỷ giá giảm, Ngân hàng Nhà nước có thêm dư địa giữ lãi suất thấp.</p>'}
+/* ---------- Các ô giá ---------- */
+function tiles(){var G={},go=[];ORD.forEach(function(k){var s=S[k];if(!G[s.g]){G[s.g]=[];go.push(s.g)}
+  var c=s.c,last=c[c.length-1],d1=chg(c,1);
+  G[s.g].push('<button type="button" class="wm-ti" data-k="'+k+'" aria-pressed="'+(k===st.k)+'"><span class="wm-n">'+esc(s.n)+'</span><b>'+nf(last,s.d>2?2:s.d)+(s.u==='%'?'%':'')+'</b><span class="wm-p '+cls(d1)+'">'+pc(d1,2)+'</span>'+spark(c,96,26)+(k==='gold'&&FX?'<small>≈ '+gold(last)+'</small>':'')+'</button>')});
+ if(FED&&FED.hist&&FED.hist.length){if(!G.ls){G.ls=[];go.push('ls')}var hs=FED.hist.map(function(r){return r[2]});G.ls.push('<button type="button" class="wm-ti fed" data-k="fed" aria-pressed="'+(st.k==='fed')+'"><span class="wm-n">Lãi suất Fed</span><b>'+rate(FED.lo,FED.hi)+'</b><span class="wm-p">'+(FED.act?ACT[FED.act]:'')+'</span>'+spark(hs.concat([FED.hi]),96,26).replace('wm-sp ','wm-sp st ')+'</button>')}
+ $('wmt').innerHTML=go.map(function(g){return '<div class="wm-gr"><p class="wm-g">'+esc(GN[g]||'')+'</p><div class="wm-gi">'+G[g].join('')+'</div></div>'}).join('')}
+/* ---------- Biểu đồ lớn ---------- */
+function data(k){if(k==='fed'){var hs=FED.hist,lo=[],hi=[];hs.forEach(function(r){lo.push({time:day(r[0]),value:r[1]});hi.push({time:day(r[0]),value:r[2]})});var t=H.vnNow().d;if(hi.length&&hi[hi.length-1].time<t){lo.push({time:t,value:FED.lo});hi.push({time:t,value:FED.hi})}
+  if(st.r){var cut=new Date(Date.parse(t)-st.r/250*365*864e5).toISOString().slice(0,10),k0=0;for(var i=0;i<hi.length;i++)if(hi[i].time<=cut)k0=i;lo=lo.slice(k0);hi=hi.slice(k0);if(lo.length){lo[0]={time:cut,value:lo[0].value};hi[0]={time:cut,value:hi[0].value}}}
+  return {lo:lo,hi:hi}}
+ var s=S[k],n=st.r?Math.min(s.t.length,st.r+1):s.t.length,o=[];for(var i=s.t.length-n;i<s.t.length;i++)o.push({time:day(s.t[i]),value:s.c[i]});return o}
+function head(k,pts){var h=$('wmh');if(k==='fed'){h.innerHTML='<b>Lãi suất điều hành Fed</b><span class="wm-big">'+rate(FED.lo,FED.hi)+'</span><span class="wm-u">biên độ trên và dưới</span>';return}
+ var s=S[k],a=pts[0].value,b=pts[pts.length-1].value,ch=(b/a-1)*100;
+ h.innerHTML='<b>'+esc(s.n)+'</b><span class="wm-big">'+nf(b,s.d>2?2:s.d)+(s.u==='%'?'%':'')+'</span><span class="wm-u">'+esc(s.u==='%'?'':s.u)+'</span><span class="wm-p '+cls(ch)+'">'+pc(ch,1)+' trong '+({63:'3 tháng',126:'6 tháng',250:'1 năm',0:'3 năm'}[st.r])+'</span>'+(k==='gold'&&FX?'<span class="wm-u">≈ '+gold(b)+'</span>':'')}
+function plot(){var el=$('wmv'),LW=window.LightweightCharts,m=H.mob(),k=st.k;if(!LW)return;if(k!=='fed'&&!S[k])k=st.k=ORD[0];if(k==='fed'&&!(FED&&FED.hist))k=st.k=ORD[0];if(!k)return;
+ if(chart){chart.remove();chart=null}el.innerHTML='';el.style.height=(m?250:330)+'px';
+ var dec=k==='fed'?2:S[k].d>2?3:S[k].d;
+ chart=LW.createChart(el,{autoSize:true,layout:{background:{type:'solid',color:'#fff'},textColor:'#5f5a69',fontSize:m?10:11,fontFamily:getComputedStyle(document.body).fontFamily,attributionLogo:true},grid:{vertLines:{color:'#f4f1f7'},horzLines:{color:'#f4f1f7'}},rightPriceScale:{borderColor:'#e1dde8',scaleMargins:{top:.12,bottom:.08}},timeScale:{borderColor:'#e1dde8',rightOffset:2,tickMarkFormatter:function(t,ty){var s=typeof t==='string'?t:t.year+'-'+String(t.month).padStart(2,'0')+'-'+String(t.day).padStart(2,'0');if(ty===0)return s.slice(0,4);if(ty===1)return 'T'+(+s.slice(5,7));return s.slice(8,10)+'/'+s.slice(5,7)}},crosshair:{mode:0},localization:{locale:'vi-VN',dateFormat:'dd/MM/yyyy'},handleScroll:{mouseWheel:false,vertTouchDrag:false},handleScale:{mouseWheel:false}});
+ var pf={type:'custom',minMove:Math.pow(10,-dec),formatter:function(p){return nf(p,dec)}};
+ if(k==='fed'){var d=data('fed');var a=chart.addSeries(LW.LineSeries,{color:'#6a2d86',lineWidth:2.5,lineType:1,priceFormat:pf,priceLineVisible:false,title:'Trên'});a.setData(d.hi);
+  var b=chart.addSeries(LW.LineSeries,{color:'#d08a1e',lineWidth:2,lineType:1,priceFormat:pf,priceLineVisible:false,title:'Dưới'});b.setData(d.lo);head('fed')}
+ else{var pts=data(k),up=pts[pts.length-1].value>=pts[0].value,col=up?'#1f8a57':'#c43c32';
+  var s=chart.addSeries(LW.AreaSeries,{lineColor:col,lineWidth:2,topColor:up?'rgba(31,138,87,.22)':'rgba(196,60,50,.2)',bottomColor:'rgba(255,255,255,0)',priceFormat:pf,priceLineVisible:false,lastValueVisible:true});s.setData(pts);head(k,pts)}
+ try{LW.createTextWatermark(chart.panes()[0],{horzAlign:'center',vertAlign:'center',lines:[{text:'CHỨNG KHOÁN HUY NGUYỄN',color:'rgba(106,45,134,0.09)',fontSize:m?12:15,fontStyle:'bold'}]})}catch(e){}
+ chart.timeScale().fitContent()}
+function seg(){$('wmr').querySelectorAll('button').forEach(function(b){b.setAttribute('aria-pressed',String(+b.dataset.r===st.r))})}
+function sel(){$('wmt').querySelectorAll('.wm-ti').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.k===st.k))})}
+function save(){H.ls.set('hn_wm',st)}
+function init(){seg();
+ Promise.all([H.get('data/wm.bin').catch(function(){return null}),H.get('data/mac.bin').catch(function(){return null}),H.lib()]).then(function(x){var w=x[0],mc=x[1];
+  if(mc&&mc.fed)FED=mc.fed;fedBox();
+  if(w&&w.s){FX=w.fx||null;w.s.forEach(function(r){S[r[0]]={n:r[1],u:r[2],d:r[3],g:r[4],t:r[5],c:r[6]};ORD.push(r[0])});if(w.updated)$('wmu').textContent='Cập nhật '+w.updated+'.'}
+  if(!ORD.length){$('wmv').innerHTML='<div class="ch-load">Dữ liệu thế giới đang cập nhật, anh chị quay lại sau ít phút.</div>';return}
+  tiles();plot()}).catch(function(){$('wmv').innerHTML='<div class="ch-load">Chưa tải được dữ liệu, thử lại sau ít phút.</div>'});
+ $('wmt').addEventListener('click',function(e){var b=e.target.closest('.wm-ti');if(!b)return;st.k=b.dataset.k;save();sel();plot();if(H.mob())$('wmv').scrollIntoView({block:'nearest',behavior:'smooth'})});
+ $('wmr').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;st.r=+b.dataset.r;save();seg();plot()});
+ var rt,w0=innerWidth;window.addEventListener('resize',function(){if(Math.abs(innerWidth-w0)<40)return;w0=innerWidth;clearTimeout(rt);rt=setTimeout(function(){if(chart)plot()},300)})}
+H.near(sec,init,500);
+})();
+</script>
 <script id="uijs">
 /* Khung trang: mục lục, đánh dấu nhóm đang xem, ẩn thanh trên khi cuộn xuống (điện thoại), về đầu trang,
    thu gọn danh sách dài, ô số thành viên cộng đồng, hạn chế sao chép dữ liệu. */
@@ -1595,12 +1792,12 @@ D.addEventListener('keydown',function(e){if(e.key==='Escape'&&toc&&!toc.hidden)o
 D.addEventListener('click',function(e){var a=e.target.closest('a[href^="#"]');if(!a||a.hasAttribute('data-sym'))return;var id=a.getAttribute('href').slice(1);if(!id)return;var t=$(id);if(!t)return;e.preventDefault();
  if(H.scrollTo)H.scrollTo(t);else t.scrollIntoView({behavior:'smooth'});try{history.replaceState(null,'','#'+id)}catch(_){}});
 /* ----- Nhóm đang xem ----- */
-var groups=[].slice.call(D.querySelectorAll('.grp[data-name]')),lab=$('tocl'),nav=[].slice.call(D.querySelectorAll('.gnav .gi>a'));
+var tg=[].slice.call(D.querySelectorAll('.toc-g[data-g]')),groups=[].slice.call(D.querySelectorAll('.grp[data-name]')),lab=$('tocl'),nav=[].slice.call(D.querySelectorAll('.gnav .gi>a'));
 if(groups.length&&'IntersectionObserver' in W){var cur=null,vis={};
  var io=new IntersectionObserver(function(es){es.forEach(function(x){vis[x.target.id]=x.isIntersecting?x.intersectionRatio:0});var best=null,bv=0;groups.forEach(function(g){if((vis[g.id]||0)>bv){bv=vis[g.id];best=g}});
-  if(best&&best!==cur){cur=best;if(lab)lab.textContent=best.dataset.name;nav.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+best.id)})}},{rootMargin:'-40% 0px -55% 0px',threshold:[0,.01,.5,1]});
+  if(best&&best!==cur){cur=best;if(lab)lab.textContent=best.dataset.name;nav.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+best.id)});tg.forEach(function(g){g.classList.toggle('on',g.dataset.g===best.id)})}},{rootMargin:'-40% 0px -55% 0px',threshold:[0,.01,.5,1]});
  groups.forEach(function(g){io.observe(g)});
- var heroIo=new IntersectionObserver(function(es){if(es[0].isIntersecting&&lab){lab.textContent='Mục lục';cur=null;nav.forEach(function(a){a.classList.remove('on')})}},{threshold:.35});var hb=D.querySelector('.herobox');if(hb)heroIo.observe(hb)}
+ var heroIo=new IntersectionObserver(function(es){if(es[0].isIntersecting&&lab){lab.textContent='Mục lục';cur=null;nav.forEach(function(a){a.classList.remove('on')});tg.forEach(function(g){g.classList.remove('on')})}},{threshold:.35});var hb=D.querySelector('.herobox');if(hb)heroIo.observe(hb)}
 /* ----- Điện thoại: cuộn xuống ẩn thanh trên, cuộn lên hiện lại; nút về đầu trang ----- */
 var lastY=W.scrollY,tick=false,up=$('totop');
 W.addEventListener('scroll',function(){if(tick)return;tick=true;requestAnimationFrame(function(){var y=W.scrollY,dy=y-lastY;

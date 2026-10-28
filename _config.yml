@@ -1,0 +1,4 @@
+exclude:
+  - "*.py"
+  - "_nhanxet.json"
+  - "*.md"
