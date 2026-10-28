@@ -34,6 +34,27 @@ header.top nav a{padding:5px 11px;border:1px solid var(--line);border-radius:999
 .kpis>.k:last-child:nth-child(odd){grid-column:1/-1}
 .k span{display:block;line-height:1.35!important;margin-top:4px}
 }
+/* BCTC – đánh giá KQKD */
+.kq-bar{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;margin:0 0 16px}.kq-bar .chips{margin:0}
+#kqs{flex:1 1 180px;max-width:260px;padding:8px 12px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--fg);font:600 13px var(--mono)}
+#kqs:focus{outline:2px solid var(--gold);outline-offset:1px}
+.kq-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:12px}
+.kq{display:flex;flex-direction:column;gap:10px;padding:16px;border:1px solid var(--line);border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(255,255,255,0)),var(--panel);box-shadow:0 10px 30px -18px rgba(0,0,0,.8)}
+.kq.kv-pos{border-top:3px solid var(--up)!important}.kq.kv-mid{border-top:3px solid #c99a2e!important}.kq.kv-neg{border-top:3px solid var(--dn)!important}
+.kq-h{display:flex;align-items:baseline;gap:10px}.kq-h b{font:800 20px var(--mono);letter-spacing:.03em}.kq-h small{color:var(--mute);font:600 12px var(--mono)}
+.kq-v{margin-left:auto;font:700 11.5px var(--body);padding:3px 10px;border-radius:999px;border:1px solid}
+.kq-v.kv-pos{color:#0f7a43;background:#e3f7ea;border-color:#b7e6c8}.kq-v.kv-mid{color:#8a6410;background:#fbf1d9;border-color:#ecd59c}.kq-v.kv-neg{color:#b42318;background:#fde7e5;border-color:#f6c1bc}
+.kq-i{margin:0;padding:0;list-style:none;font:600 13.5px/1.5 var(--body);color:var(--fg)}.kq-h b{color:var(--fg)}.kq-bar .chip{font:600 13px var(--body);padding:6px 13px;border-radius:999px;border:1px solid var(--line);cursor:pointer}.kq-i li{padding:1px 0}
+.kq ul.g,.kq ul.b{margin:0;padding:0;list-style:none;font-size:13.5px;line-height:1.5}
+.kq ul.g li,.kq ul.b li{position:relative;padding-left:20px;margin:3px 0;color:var(--mute)}
+.kq ul.g li::before{content:"✓";position:absolute;left:2px;color:var(--up);font-weight:800}
+.kq ul.b li::before{content:"!";position:absolute;left:5px;color:var(--dn);font-weight:900}
+.kq-n{margin:0;padding:10px 12px;border-left:3px solid var(--gold);background:rgba(217,178,106,.06);border-radius:0 8px 8px 0;font-size:13.5px;color:var(--fg)}
+.kq-n i{display:block;font-style:normal;font:700 10.5px var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:3px}
+.kq-a{margin-top:auto;font:700 13px var(--body);color:var(--gold);text-decoration:none}.kq-a:hover{text-decoration:underline}
+.kq-more{display:block;margin:14px auto 0;padding:10px 22px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--fg);font:700 14px var(--body);cursor:pointer}.kq-more:hover{border-color:var(--gold);color:var(--gold)}
+.kq-cta{margin-top:18px;padding:18px;border:1px solid var(--gold);border-radius:14px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}.kq-cta p{margin:4px 0 0;color:var(--mute);font-size:14px}.kq-cta .btn{flex:0 0 auto}
+@media (max-width:760px){.kq-grid{grid-template-columns:1fr}.kq{padding:14px}.kq-h b{font-size:18px}#kqs{max-width:none}.kq-bar .chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;max-width:100%}.kq-bar .chips::-webkit-scrollbar{display:none}.kq-bar .chip{white-space:nowrap}}
 </style>
 <title>Huy Nguyễn Chứng Khoán</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -173,11 +194,56 @@ section{padding-block:28px!important}
 .hero{padding-block:28px 22px!important;gap:22px!important}
 nav{font-size:13px!important}
 }
+/* Theme v4: nền kem sáng – tím thương hiệu – chữ đen đậm (theo nhận diện kênh) */
+:root{--bg:#fbf6ea;--panel:#ffffff;--line:#e8dcc8;--fg:#16111c;--mute:#5e5668;--gold:#8e1592;--up:#0f9d58;--dn:#d92d20;--pur:#a21caf;--vn:#8a8494;color-scheme:light}
+html,body{background:var(--bg)!important;color:var(--fg)}
+body::after{display:none!important}
+h1,h2,h3{color:var(--fg)}
+a{color:inherit}
+header.top{background:linear-gradient(90deg,#3f1170 0%,#7b148f 50%,#b0168f 100%)!important;border-bottom:0!important;backdrop-filter:none!important}
+header.top .brand b{color:#fff!important}header.top .brand span{color:#f1d4ff!important}
+header.top nav{color:#f3e2ff!important}header.top nav a{color:#f7ecff}header.top nav a:hover,header.top nav a:focus-visible{color:#fff}
+body::before{background:#3f1170!important}
+.tape{background:#24092f!important;border-color:#24092f!important}
+.tape .tlab{background:#24092f!important;color:#f0b4ff!important}
+.tape .tlab::after{background:linear-gradient(90deg,#24092f,rgba(36,9,47,0))!important}
+.tape-in b{color:#fff!important}.tape-in>a,.tape-in>span{color:#d8c3e6}.tape-in em{color:#b9a3c9!important}
+.tape-in .pos{color:#4ade80!important}.tape-in .neg{color:#ff8a80!important}.tape-in .pur{color:#f0abfc!important;text-shadow:none!important}
+.herobox,.rhero{background:linear-gradient(90deg,rgba(52,10,84,.94) 0%,rgba(110,18,128,.80) 50%,rgba(176,22,143,.40) 100%),url(img/wallstreet.jpg) center 62%/cover no-repeat!important;color:#fff}
+.herobox h1,.rhero h1{color:#fff!important}.herobox h1 em,.rhero h1 em{color:#fde68a!important}
+.herobox p,.rhero p,.herobox .lede,.rhero .lede{color:#f3e6fb!important}
+.herobox .eyebrow,.rhero .brand,.rhero .brand a,.herobox .brand{color:#f5c6ff!important}
+.herobox .note,.herobox a:not(.btn){color:#f7ecff!important}
+.herobox .copy{color:#fff;border-color:rgba(255,255,255,.5);background:transparent}
+.photo-credit,.photo-credit a{color:rgba(255,255,255,.55)!important}
+.k,.box,.tk,.tw,.tblw,.chart,.why,.tvb,.kq,.rc,.btn{background:#fff!important;box-shadow:0 1px 2px rgba(63,17,112,.06),0 10px 26px -18px rgba(63,17,112,.35)!important}
+.k,.box,.tk,.tw,.tblw,.chart,.kq,.rc{border-color:var(--line)!important}
+.btn{color:var(--fg)}
+.btn.main{background:linear-gradient(90deg,#7b1fa2,#b5179e)!important;color:#fff!important;border:0!important}
+.btn.main small{color:#fbe7ff!important;opacity:1}
+.btn.vps{background:linear-gradient(90deg,#16a34a,#15803d)!important;color:#fff!important}
+.pur,.pos.pur,.n.pur,dd.pur{text-shadow:none!important;color:var(--pur)!important}
+.rsv{background:#dcfce7!important;color:#15803d!important}.rsv.pur{background:#f5d0fe!important;color:#86198f!important}
+.chip{color:var(--mute);background:#fff}.chip[aria-pressed="true"]{background:var(--gold)!important;color:#fff!important;border-color:var(--gold)!important}
+.tabs a{background:#fff;color:var(--fg)}.tabs a:hover{color:var(--gold);border-color:var(--gold)}
+.why{border-left-color:var(--gold)!important}.tvb{border-top-color:var(--gold)!important}
+.kq-n{background:#faf0fc!important}.kq-cta,.cta{border-color:var(--gold)}
+.off{fill:rgba(142,21,146,.07)!important}.g{stroke:#ece3d3}
+tr:hover td{background:#fbf3fd}
+.yt{color:#c4161c!important;border-color:rgba(196,22,28,.35)!important}
+.sec{border-top-color:var(--line)}
+footer{background:linear-gradient(90deg,#3f1170,#8e1592);color:#f1e2fa!important;border-top:0!important}
+footer a{color:#fff}
+input,select{background:#fff!important;color:var(--fg)!important;border-color:var(--line)!important}
+@media (max-width:760px){
+header.top nav a{background:rgba(255,255,255,.12)!important;border-color:rgba(255,255,255,.25)!important;color:#fff!important}
+.tape-in>a,.tape-in>span{background:#35103f!important;border-color:#4f1a5e!important}
+}
 </style>
 </head><body>
 
 <header class="top"><div class="wrap bar-in"><a class="brand" href="#top"><b>HUY NGUYỄN</b><span>CHỨNG KHOÁN</span></a>
-<nav><a href="bao-cao-2026.html">Báo cáo lệnh & Tích sản</a><a href="#rs">Top 10 khỏe</a><a href="#tuvan">Tư vấn 1:1</a><a href="#congdong">Cộng đồng</a><a href="#bang">Bảng theo dõi</a><a href="#tieudiem">Tiêu điểm MSR</a><a href="#congcu">Công cụ</a><a href="#seri">Seri F0</a><a href="#nhom">Nhóm Zalo</a></nav></div></header>
+<nav><a href="bao-cao-2026.html">Báo cáo lệnh & Tích sản</a><a href="#rs">Top 10 khỏe</a><a href="#bctc">Đánh giá BCTC</a><a href="#tuvan">Tư vấn 1:1</a><a href="#congdong">Cộng đồng</a><a href="#bang">Bảng theo dõi</a><a href="#tieudiem">Tiêu điểm MSR</a><a href="#congcu">Công cụ</a><a href="#seri">Seri F0</a><a href="#nhom">Nhóm Zalo</a></nav></div></header>
 <div class="tape" aria-label="Bảng điện Top 10"><span class="tlab">TOP 10</span><div class="tape-in" id="tape"><span>Đang tải bảng điện…</span></div></div>
 
 <main id="top">
@@ -198,6 +264,20 @@ nav{font-size:13px!important}
 <p class="note"><a href="bao-cao-2026.html" style="color:var(--gold);font-weight:700">Xem báo cáo lướt sóng &amp; tích sản →</a></p>
 <p class="note">Danh sách để theo dõi, không phải khuyến nghị mua. Mua vùng nào, cắt lỗ ở đâu, mã nào hợp danh mục của bạn: <a href="https://zalo.me/0365188286" target="_blank" rel="noopener">nhắn tư vấn 1:1 qua Zalo 0365.188.286</a>.</p>
 </div></section>
+<section id="bctc"><div class="wrap">
+<h2>BCTC · Đánh giá kết quả kinh doanh</h2>
+<p class="sub">Mỗi quý, khi doanh nghiệp công bố báo cáo tài chính, trang tự đọc số liệu và chỉ ra điểm tốt, điểm cần lưu ý trong kết quả kinh doanh. Một số mã có thêm nhận xét của Huy Nguyễn. Đây là đánh giá chất lượng KQKD, <b>không phải khuyến nghị mua bán</b>. <span id="kqu"></span></p>
+<div class="kq-bar">
+<div class="chips" role="group" aria-label="Lọc nhóm ngành" id="kqf"><button class="chip" type="button" data-f="all" aria-pressed="true">Tất cả</button><button class="chip" type="button" data-f="bank" aria-pressed="false">Ngân hàng</button><button class="chip" type="button" data-f="ck" aria-pressed="false">Chứng khoán</button><button class="chip" type="button" data-f="dn" aria-pressed="false">Doanh nghiệp</button></div>
+<div class="chips" role="group" aria-label="Lọc đánh giá" id="kqv"><button class="chip" type="button" data-v="all" aria-pressed="true">Mọi đánh giá</button><button class="chip" type="button" data-v="pos" aria-pressed="false">Tích cực</button><button class="chip" type="button" data-v="mid" aria-pressed="false">Trung tính</button><button class="chip" type="button" data-v="neg" aria-pressed="false">Tiêu cực</button></div>
+<input id="kqs" type="search" inputmode="search" autocomplete="off" placeholder="Tìm mã: TCB, HPG…" aria-label="Tìm mã cổ phiếu">
+</div>
+<div class="kq-grid" id="kqg"><p class="note">Đang tải đánh giá…</p></div>
+<button class="kq-more" id="kqm" type="button" hidden>Xem thêm</button>
+<div class="kq-cta"><div><b>Đang cầm mã có kết quả kinh doanh xấu? Muốn biết nên giữ hay cơ cấu?</b><p>Huy Nguyễn tư vấn 1:1, kết hợp BCTC với phân tích kỹ thuật và vĩ mô cho danh mục của bạn.</p></div><a class="btn main" href="https://zalo.me/0365188286" target="_blank" rel="noopener">Nhắn Zalo tư vấn <small>0365.188.286</small></a></div>
+<p class="note" style="margin-top:10px">Số liệu: BCTC quý do doanh nghiệp công bố (dữ liệu công khai VNDirect), tự cập nhật mỗi ngày. Đánh giá tự động có thể chưa phản ánh hết các khoản bất thường; hãy đọc kèm BCTC gốc.</p>
+</div></section>
+
 <section id="tuvan"><div class="wrap">
 <h2>Tư vấn 1:1 gồm những gì</h2><p class="sub">Làm việc trực tiếp với anh Huy qua Zalo hoặc gọi điện, theo đúng tình huống của bạn. Mỗi quyết định kết hợp cả ba lớp: <b style="color:var(--fg)">phân tích kỹ thuật</b> (xu hướng, dòng tiền, điểm mua và cắt lỗ), <b style="color:var(--fg)">phân tích cơ bản</b> (báo cáo tài chính, định giá) và <b style="color:var(--fg)">vĩ mô kinh tế</b> (lãi suất, tỷ giá, giá hàng hóa, dòng vốn ngoại). Hiệu quả hơn hẳn việc chạy theo một bộ lọc chung cho mọi người.</p>
 <div class="svc">
@@ -335,9 +415,9 @@ const cl=(x,t=50)=>x==null?'':(x>=t?'pos pur':x>=0?'pos':'neg');
 fetch('data/rs.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(j=>{
  document.getElementById('rsu').textContent='Lần cập nhật gần nhất: '+j.updated+'.';
  const tp=document.getElementById('tape');if(tp){const it=j.top.map(r=>'<a href="#rs"><b>'+r.s+'</b>'+r.close.toLocaleString('vi-VN')+' <i class="'+cl(r.d1,6.5)+'">'+f(r.d1,2)+'</i><em>3T <i class="'+cl(r.r3)+'">'+f(r.r3)+'</i></em></a>').join('');tp.innerHTML=it+it;}
- const m=document.getElementById('rsm');if(m)m.innerHTML=j.top.map((r,i)=>{const sp=r.spark,lo=Math.min(...sp),hi=Math.max(...sp),pts=sp.map((v,k)=>(k*100/(sp.length-1)).toFixed(1)+','+(30-(v-lo)/((hi-lo)||1)*27).toFixed(1)).join(' ');return '<div class="rc"><div class="rc-h"><span class="rc-i">'+(i+1)+'</span><b class="rc-s">'+r.s+'</b><span class="rc-p">'+r.close.toLocaleString('vi-VN')+'</span><span class="rc-d '+cl(r.d1,6.5)+'">'+f(r.d1,2)+'</span><span class="rsv'+(r.rs>=98?' pur':'')+'">Điểm '+Math.max(1,Math.min(9,r.rs-90))+'</span></div><div class="rc-g"><div><small>3 tháng</small><b class="'+cl(r.r3)+'">'+f(r.r3)+'</b></div><div><small>6 tháng</small><b class="'+cl(r.r6)+'">'+f(r.r6)+'</b></div><div><small>12 tháng</small><b class="'+cl(r.r12)+'">'+f(r.r12)+'</b></div><div><small>Cách đỉnh</small><b class="neg">'+f(r.fromhi)+'</b></div></div><svg viewBox="0 0 100 32" preserveAspectRatio="none"><polyline points="'+pts+'" fill="none" stroke="var(--up)" stroke-width="1.8" vector-effect="non-scaling-stroke"/></svg></div>'}).join('');
+ const m=document.getElementById('rsm');if(m)m.innerHTML=j.top.map((r,i)=>{const sp=r.spark,lo=Math.min(...sp),hi=Math.max(...sp),pts=sp.map((v,k)=>(k*100/(sp.length-1)).toFixed(1)+','+(30-(v-lo)/((hi-lo)||1)*27).toFixed(1)).join(' ');return '<div class="rc"><div class="rc-h"><span class="rc-i">'+(i+1)+'</span><b class="rc-s">'+r.s+'</b><span class="rc-p">'+r.close.toLocaleString('vi-VN')+'</span><span class="rc-d '+cl(r.d1,6.5)+'">'+f(r.d1,2)+'</span><span class="rsv'+((r.p??r.rs)>=98?' pur':'')+'">Điểm '+Math.max(1,Math.min(9,(r.p??r.rs)-90))+'</span></div><div class="rc-g"><div><small>3 tháng</small><b class="'+cl(r.r3)+'">'+f(r.r3)+'</b></div><div><small>6 tháng</small><b class="'+cl(r.r6)+'">'+f(r.r6)+'</b></div><div><small>12 tháng</small><b class="'+cl(r.r12)+'">'+f(r.r12)+'</b></div><div><small>Cách đỉnh</small><b class="neg">'+f(r.fromhi)+'</b></div></div><svg viewBox="0 0 100 32" preserveAspectRatio="none"><polyline points="'+pts+'" fill="none" stroke="var(--up)" stroke-width="1.8" vector-effect="non-scaling-stroke"/></svg></div>'}).join('');
  b.innerHTML=j.top.map((r,i)=>{const sp=r.spark,lo=Math.min(...sp),hi=Math.max(...sp),pts=sp.map((v,k)=>(k*100/(sp.length-1)).toFixed(1)+','+(28-(v-lo)/((hi-lo)||1)*26).toFixed(1)).join(' ');
- return '<tr><td>'+(i+1)+'</td><td class="sym2">'+r.s+'</td><td>'+r.close.toLocaleString('vi-VN')+'</td><td class="'+cl(r.d1,6.5)+'">'+f(r.d1,2)+'</td><td class="'+cl(r.r3)+'">'+f(r.r3)+'</td><td class="'+cl(r.r6)+'">'+f(r.r6)+'</td><td class="'+cl(r.r12)+'">'+f(r.r12)+'</td><td class="neg">'+f(r.fromhi)+'</td><td><span class="rsv'+(r.rs>=98?' pur':'')+'">'+Math.max(1,Math.min(9,r.rs-90))+'</span></td><td><svg width="100" height="30" viewBox="0 0 100 30"><polyline points="'+pts+'" fill="none" stroke="var(--up)" stroke-width="1.6"/></svg></td></tr>'}).join('');
+ return '<tr><td>'+(i+1)+'</td><td class="sym2">'+r.s+'</td><td>'+r.close.toLocaleString('vi-VN')+'</td><td class="'+cl(r.d1,6.5)+'">'+f(r.d1,2)+'</td><td class="'+cl(r.r3)+'">'+f(r.r3)+'</td><td class="'+cl(r.r6)+'">'+f(r.r6)+'</td><td class="'+cl(r.r12)+'">'+f(r.r12)+'</td><td class="neg">'+f(r.fromhi)+'</td><td><span class="rsv'+((r.p??r.rs)>=98?' pur':'')+'">'+Math.max(1,Math.min(9,(r.p??r.rs)-90))+'</span></td><td><svg width="100" height="30" viewBox="0 0 100 30"><polyline points="'+pts+'" fill="none" stroke="var(--up)" stroke-width="1.6"/></svg></td></tr>'}).join('');
 }).catch(()=>{b.innerHTML='<tr><td colspan="10" class="note">Bảng đang được cập nhật, quay lại sau ít phút.</td></tr>'});})();
 </script>
 <script>
@@ -349,5 +429,24 @@ run();new MutationObserver(run).observe(document.body,{childList:true,subtree:tr
 (function(){const L=document.querySelectorAll('#eps li[data-v]');const now=new Date();L.forEach(li=>{const n=+li.dataset.n,v=li.dataset.v;const rel=new Date(2026,9,26+n,6,30);const d=li.querySelector('div');const a=document.createElement('a');a.className='yt';a.target='_blank';a.rel='noopener';
 if(v&&now>=rel){a.href='https://www.youtube.com/shorts/'+v;a.textContent='▶ Xem trên YouTube';}else{a.href='https://www.youtube.com/@chungkhoanhuynguyen/shorts';a.textContent='⏳ Lên sóng '+String(rel.getDate()).padStart(2,'0')+'/'+String(rel.getMonth()+1).padStart(2,'0');a.classList.add('soon');}
 d.appendChild(a);});})();
+</script>
+<script>
+(function(){const G=document.getElementById('kqg');if(!G)return;const V={pos:'Tích cực',mid:'Trung tính',neg:'Tiêu cực'};const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let items=[],nx={},f='all',v='all',q='',lim=12;
+function card(r){const n=nx[r.s];return '<article class="kq kv-'+r.v+'"><div class="kq-h"><b>'+r.s+'</b><small>'+r.q+'</small><span class="kq-v kv-'+r.v+'">'+V[r.v]+'</span></div>'+
+'<ul class="kq-i">'+r.info.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>'+
+(r.good.length?'<ul class="g">'+r.good.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>':'')+
+(r.bad.length?'<ul class="b">'+r.bad.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>':'')+
+(n?'<p class="kq-n"><i>Nhận xét của Huy Nguyễn</i>'+esc(n)+'</p>':'')+
+'<a class="kq-a" href="https://zalo.me/0365188286" target="_blank" rel="noopener">Hỏi về '+r.s+' qua Zalo 0365.188.286 →</a></article>';}
+function render(){const L=items.filter(r=>(f==='all'||r.form===f)&&(v==='all'||r.v===v)&&(!q||r.s.includes(q)));
+G.innerHTML=L.length?L.slice(0,lim).map(card).join(''):'<p class="note">Không có mã phù hợp.</p>';const m=document.getElementById('kqm');m.hidden=L.length<=lim;m.textContent='Xem thêm '+(L.length-lim)+' mã';}
+function grp(id,key,set){document.querySelectorAll('#'+id+' .chip').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('#'+id+' .chip').forEach(x=>x.setAttribute('aria-pressed',x===b));set(b.dataset[key]);lim=12;render();}));}
+grp('kqf','f',x=>f=x);grp('kqv','v',x=>v=x);
+document.getElementById('kqs').addEventListener('input',e=>{q=e.target.value.trim().toUpperCase();lim=12;render();});
+document.getElementById('kqm').addEventListener('click',()=>{lim+=12;render();});
+Promise.all([fetch('data/kqkd.json',{cache:'no-store'}).then(r=>r.json()),fetch('data/nhanxet.json',{cache:'no-store'}).then(r=>r.ok?r.json():{}).catch(()=>({}))]).then(([j,n])=>{nx=n||{};
+const latest=j.items.length?j.items[0].date:'';items=j.items.slice().sort((a,b)=>(b.date>a.date)-(b.date<a.date)||(!!nx[b.s])-(!!nx[a.s])||({pos:0,mid:1,neg:2}[a.v]-{pos:0,mid:1,neg:2}[b.v]));
+document.getElementById('kqu').textContent='Cập nhật '+j.updated+'.';render();}).catch(()=>{G.innerHTML='<p class="note">Đang cập nhật dữ liệu, quay lại sau ít phút.</p>'});})();
 </script>
 </body></html>
