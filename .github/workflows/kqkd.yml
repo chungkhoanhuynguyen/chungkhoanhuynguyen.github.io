@@ -1,6 +1,7 @@
-name: Cap nhat danh gia BCTC
+name: Cap nhat danh gia BCTC va vi mo
 on:
   schedule:
+    - cron: "13 1 * * 1-6"
     - cron: "23 10 * * 1-6"
     - cron: "23 14 * * 1-6"
   workflow_dispatch:
@@ -16,11 +17,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - run: python vimo.py || true
       - run: python kqkd.py
       - run: |
           git config user.name "hn-bot"
           git config user.email "hn-bot@users.noreply.github.com"
-          git add data/kqkd.json
+          git add data/kqkd.json data/vimo.json
           git diff --cached --quiet || git commit -m "Cap nhat danh gia BCTC $(date -u +%F)"
           git pull --rebase -q || true
           git push
