@@ -21,7 +21,7 @@ jobs:
       - run: |
           git config user.name "hn-bot"
           git config user.email "hn-bot@users.noreply.github.com"
-          git add data/c
+          git add -A data/c
           git diff --cached --quiet || git commit -m "Cap nhat bieu do $(date -u +%F)"
           git pull --rebase -q || true
           git push
