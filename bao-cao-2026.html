@@ -1,7 +1,9 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Báo cáo lệnh 2016–2026</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;800;900&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;800;900&family=Playfair+Display:wght@600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap">
 <style>
 /* Báo cáo một trang: số tổng kết → biểu đồ tài khoản vs VN-Index → sổ lệnh → ghi chú. Nền tối vàng như thương hiệu */
 :root{--bg:#0d1017;--panel:#141a25;--line:#263043;--fg:#ece6d8;--mute:#8a93a6;--gold:#d6aa58;--up:#38be7a;--dn:#e5534f;--vn:#7d8aa3;
@@ -37,8 +39,28 @@ th.n,td.n{text-align:right;font-family:var(--mono)} .sym{font:700 15px var(--mon
 .notes{color:var(--mute);font-size:13px;margin-top:20px;display:grid;gap:6px} .notes p{margin:0}
 .chips{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 12px}.chip{font:600 13px var(--body);padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--mute);cursor:pointer}.chip[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}.chip:focus-visible{outline:2px solid var(--gold);outline-offset:2px}.why{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:12px;padding:18px 20px}.why p{margin:0 0 10px}.why p:last-child{margin:0}details{margin-top:8px}summary{cursor:pointer;color:var(--gold);font-weight:700;margin:6px 0 12px}.ytbl{min-width:480px}.cta{margin-top:26px;padding:18px;border:1px solid var(--gold);border-radius:12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
 .cta b{font-size:16px} .cta a{color:var(--gold);font-weight:700}
+/* Phong cách phố Wall: nền đêm Manhattan, chữ serif vàng, dải bảng điện chạy, lãi cao màu tím (màu trần) */
+:root{--bg:#070b14;--panel:#0e1526;--line:#1f2b45;--fg:#f1ead9;--mute:#8f9ab3;--gold:#d9b26a;--up:#2fd38a;--dn:#ff5b5b;--pur:#c77dff;--disp:"Playfair Display",Georgia,serif}
+body{background:radial-gradient(1200px 600px at 80% -10%,#16244a 0%,transparent 60%),radial-gradient(900px 500px at -10% 10%,#1a1633 0%,transparent 55%),linear-gradient(180deg,#070b14 0%,#05070d 100%) fixed;background-color:var(--bg)}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background-image:linear-gradient(rgba(217,178,106,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(217,178,106,.035) 1px,transparent 1px);background-size:48px 48px}
+h1,h2,.hero h1,.svc h3{font-family:var(--disp);letter-spacing:.005em}
+h1{font-weight:800} h2{font-weight:700}
+.pur,.pos.pur,.n.pur,dd.pur{color:var(--pur)!important;text-shadow:0 0 14px color-mix(in srgb,var(--pur) 45%,transparent)}
+.rsv.pur{background:color-mix(in srgb,var(--pur) 22%,transparent)}
+.tag.win.pur{color:var(--pur);border-color:color-mix(in srgb,var(--pur) 55%,transparent)}
+.k,.box,.tk,.tw,.tblw,.chart,.why,.tvb{background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(255,255,255,0)) ,var(--panel);box-shadow:0 1px 0 rgba(217,178,106,.08) inset,0 10px 30px -18px rgba(0,0,0,.8)}
+.k b{font-family:var(--mono)}
+.tape{overflow:hidden;border-bottom:1px solid var(--line);background:#04070d;font:600 13px var(--mono);white-space:nowrap}
+.tape-in{display:inline-flex;gap:28px;padding:7px 0;animation:tape 60s linear infinite}
+.tape-in span b{color:var(--fg);margin-right:6px}
+@keyframes tape{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.tape-in{animation:none}}
+.sky{position:absolute;left:0;right:0;bottom:0;height:180px;pointer-events:none;opacity:.22;z-index:-1}
+.herobox{position:relative;isolation:isolate}
+.leg2{font-size:12px;color:var(--mute);margin:8px 0 0}.leg2 i{color:var(--pur);font-style:normal;font-weight:700}
 .tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 22px}.tabs a{font:700 14px var(--body);padding:8px 14px;border-radius:999px;border:1px solid var(--line);color:var(--fg);text-decoration:none}.tabs a:hover{border-color:var(--gold);color:var(--gold)}.sec{border-top:1px solid var(--line);margin-top:44px;padding-top:8px}.st{font-size:12px;padding:2px 8px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}.st.h{color:var(--up);border-color:color-mix(in srgb,var(--up) 45%,transparent)}.st.w{color:var(--gold);border-color:color-mix(in srgb,var(--gold) 45%,transparent)}.st.n{color:var(--mute)}.tvg{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}.tvb{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:12px;padding:16px}.tvb b{font-size:16px}.tvb p{margin:6px 0 0;color:var(--mute);font-size:14px}.vid{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#000}.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 </style>
+</head><body>
 <div class="wrap">
 <div class="brand"><a href="./" style="color:inherit;text-decoration:none">HUY NGUYỄN · CHỨNG KHOÁN</a></div>
 <h1>Báo cáo lệnh lướt sóng 2016–2026</h1>
@@ -179,3 +201,9 @@ th.n,td.n{text-align:right;font-family:var(--mono)} .sym{font:700 15px var(--mon
 <script>
 document.querySelectorAll('.chips').forEach(g=>{const t=document.getElementById(g.dataset.t); g.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{g.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',x===b)); const y=b.dataset.y; t.querySelectorAll('tbody tr').forEach(r=>r.hidden=!(y==='all'||r.dataset.y===y));}));});
 </script>
+<script>
+// Tô tím các mức lãi cao (≥ +50%)
+(function(){function run(){document.querySelectorAll('.pos').forEach(e=>{if(e.classList.contains('pur'))return;const m=(e.textContent||'').replace(/\./g,'').replace(',','.').match(/\+\s*([\d.]+)%/);if(m&&parseFloat(m[1])>=50){e.classList.add('pur');const t=e.closest('tr');if(t){const g=t.querySelector('.tag.win');if(g)g.classList.add('pur')}}})}
+run();new MutationObserver(run).observe(document.body,{childList:true,subtree:true});})();
+</script>
+</body></html>
