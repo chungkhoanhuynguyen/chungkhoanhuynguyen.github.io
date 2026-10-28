@@ -104,9 +104,14 @@ h1{font-weight:800} h2{font-weight:700}
 .tape-in span b{color:var(--fg);margin-right:6px}
 @keyframes tape{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media (prefers-reduced-motion:reduce){.tape-in{animation:none}}
-.sky{position:absolute;left:0;right:0;bottom:0;height:180px;pointer-events:none;opacity:.22;z-index:-1}
-.herobox{position:relative;isolation:isolate}
 .leg2{font-size:12px;color:var(--mute);margin:8px 0 0}.leg2 i{color:var(--pur);font-style:normal;font-weight:700}
+html,body{overflow-x:hidden;max-width:100%}
+.tape{max-width:100vw}
+.herobox,.rhero{position:relative;isolation:isolate;background:linear-gradient(180deg,rgba(5,8,15,.30) 0%,rgba(5,8,15,.55) 60%,var(--bg) 100%),linear-gradient(90deg,rgba(5,8,15,.80) 0%,rgba(5,8,15,.15) 75%),url(img/wallstreet.jpg) center 62%/cover no-repeat}
+.rhero{margin:-36px calc(50% - 50vw) 0;padding:36px calc(50vw - 50%) 30px}
+.photo-credit{position:absolute;right:10px;bottom:6px;font-size:10px;color:rgba(241,234,217,.45)}
+.photo-credit a{color:inherit}
+@media (max-width:760px){nav{flex-wrap:nowrap;overflow-x:auto;width:100%;margin-left:0;gap:14px;padding-bottom:4px;scrollbar-width:none}nav::-webkit-scrollbar{display:none}nav a{white-space:nowrap}.bar-in{gap:8px}.herobox{background-position:58% 40%}.hero h1{font-size:clamp(32px,9vw,44px)}.kpis{grid-template-columns:1fr 1fr!important}.k b{font-size:24px!important}}
 </style>
 </head><body>
 
@@ -115,7 +120,7 @@ h1{font-weight:800} h2{font-weight:700}
 <div class="tape" aria-label="Bảng điện Top 10"><div class="tape-in" id="tape"><span>Đang tải bảng điện…</span></div></div>
 
 <main id="top">
-<div class="herobox"><svg class="sky" viewBox="0 0 1200 180" preserveAspectRatio="none" aria-hidden="true"><path fill="none" stroke="#d9b26a" stroke-width="1.5" d="M0 180V130h40v-30h30v40h25V90h20V60h12V40h6v20h12v30h20v50h30V110h35V70h18V30l10-20 10 20v40h18v60h30V95h40v45h22V80h28V55h10V20h4V8h4v12h4v35h10v25h28v60h35V100h25V60h20v80h30V120h40V85h30V50h6V30h6v20h6v35h30v55h35V105h28V75h22V45h10v30h22v65h30V115h45V90h25v50h30V100h20V65h14V35l8-12 8 12v30h14v75h40V110h30V80h25v60h40V125h50V100h30v80"/></svg><div class="wrap hero">
+<div class="herobox"><div class="photo-credit">Ảnh: Ken Lund · <a href="https://commons.wikimedia.org/wiki/File:New_and_Wall_Street,_Manhattan,_New_York_(7236992182).jpg" target="_blank" rel="noopener">CC BY-SA 2.0</a></div><div class="wrap hero">
 <div><p class="eyebrow">Tư vấn đầu tư chứng khoán 1:1</p><h1>Mỗi nhà đầu tư một <em>kế hoạch riêng</em>.</h1>
 <p>Chứng khoán Huy Nguyễn đồng hành 1:1 với từng nhà đầu tư: đọc báo cáo tài chính mã bạn đang cầm, dựng danh mục theo số vốn và mức chịu rủi ro, đặt sẵn điểm mua và điểm cắt lỗ trước mỗi lệnh.</p>
 <div class="hero-act"><a class="btn main" href="https://zalo.me/0365188286" target="_blank" rel="noopener">Đặt lịch tư vấn 1:1 qua Zalo <small>0365.188.286</small></a></div>
