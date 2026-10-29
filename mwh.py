@@ -49,8 +49,17 @@ for s in U:
     time.sleep(0.15)
 a50 = [round(100*c/n, 1) if n else None for c, n in zip(c50, n50)]
 a200 = [round(100*c/n, 1) if n else None for c, n in zip(c200, n200)]
+def flow(a50, a200):
+    ms, sg, e = [], [], None
+    for x, y in zip(a50, a200):
+        if x is None: ms.append(None); sg.append(0); continue
+        e = x if e is None else e + (x - e) * 0.5
+        ms.append(round(e, 1))
+        sg.append(1 if (x <= 25 and y is not None and x < y) else (-1 if x >= 75 else 0))
+    return ms, sg
+ms, sg = flow(a50, a200)
 now = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None) + datetime.timedelta(hours=7)
 os.makedirs("data", exist_ok=True)
-hncodec.dump(dict(updated=now.strftime("%H:%M %d/%m/%Y"), n=len(U), dates=dates, vn=[round(vn[d], 2) for d in dates], pe=ff(pe, dates), pb=ff(pb, dates), a50=a50, a200=a200),
+hncodec.dump(dict(updated=now.strftime("%H:%M %d/%m/%Y"), n=len(U), dates=dates, vn=[round(vn[d], 2) for d in dates], pe=ff(pe, dates), pb=ff(pb, dates), a50=a50, a200=a200, ms=ms, sg=sg),
              "data/mwh.bin"); hncodec.drop("data/mwh.json")
 print("ok", len(U), len(dates), a50[-1], a200[-1])

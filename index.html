@@ -330,6 +330,22 @@ html{scroll-behavior:auto}
 .mw-bar{display:flex;height:12px;border-radius:6px;overflow:hidden;margin:4px 0 2px}
 .mw-bar i{display:block;transition:flex-grow .8s cubic-bezier(.2,.7,.2,1)}
 .mw-wide{grid-column:1/-1}
+.lg.fb{background:#bfe3cc}.lg.ft{background:#f3c9c5}
+.fl-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:14px;align-items:center;margin:2px 0 8px}
+.fl-st{border-radius:12px;padding:10px 14px;background:#f4f1f8}
+.fl-st b{display:block;font-size:19px;line-height:1.25}.fl-st small{font-size:12px;color:var(--mute)}
+.fl-st.bot{background:#e6f3ec}.fl-st.bot b{color:#1f8a57}.fl-st.top{background:#fbeceb}.fl-st.top b{color:#c43c32}.fl-st.neu b{color:#6a2d86}
+.fl-g .bar{position:relative;height:12px;border-radius:999px;background:linear-gradient(90deg,#1f8a57 0%,#7cc79a 22%,#d9d3e3 40%,#d9d3e3 60%,#e8958d 78%,#c43c32 100%)}
+.fl-g .mk{position:absolute;top:-5px;width:4px;height:22px;border-radius:3px;background:#1f1b26;transform:translateX(-2px);box-shadow:0 0 0 2px #fff}
+.fl-g .lb{display:flex;justify-content:space-between;font-size:11.5px;color:var(--mute);margin-top:8px}
+.fl-g .val{font-size:12.5px;margin-bottom:6px}.fl-g .val b{font-size:15px}
+.fl-tb table{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:8px}
+.fl-tb th{font-weight:600;color:var(--mute);text-align:left;padding:5px 6px;border-bottom:1px solid var(--line)}
+.fl-tb td{padding:6px;border-bottom:1px solid #f0edf4}.fl-tb td.r,.fl-tb th.r{text-align:right}
+.fl-tb .tg{display:inline-block;white-space:nowrap;border-radius:999px;padding:1px 9px;font-weight:700;font-size:11.5px}
+.fl-tb .tg.b{background:#e6f3ec;color:#1f8a57}.fl-tb .tg.t{background:#fbeceb;color:#c43c32}
+@media(max-width:640px){.fl-top{grid-template-columns:1fr}.fl-tb th:nth-child(4),.fl-tb td:nth-child(4){display:none}}
+
 #mw-sec{max-width:680px}
 .mw-heat{display:grid;grid-template-columns:repeat(auto-fill,minmax(78px,1fr));grid-auto-rows:54px;gap:3px;grid-auto-flow:dense}
 .mw-heat div{border-radius:6px;padding:5px 6px;color:#fff;display:flex;flex-direction:column;justify-content:center;min-width:0;cursor:default;transition:transform .2s}
@@ -836,6 +852,11 @@ header.top .gnav .gi>a.g-rep:hover{background:rgba(243,210,122,.14)!important;co
  <article class="mw"><header><b>Nhóm dẫn dắt thị trường</b><span class="mw-tag">HOSE</span></header><div class="mw-c" id="mw-lead"></div><p class="mw-f" id="mw-lead-f"></p></article>
  <article class="mw"><header><b>Độ rộng thị trường</b><span class="mw-tag" id="mw-br-n"></span></header><div class="mw-big" id="mw-br-big"></div><div class="mw-c" id="mw-br"></div><p class="mw-f"><i class="lg up"></i>Tăng giá <i class="lg mid"></i>Đứng giá <i class="lg dn"></i>Giảm giá</p></article>
  <article class="mw"><header><b>Phân bổ thị trường</b><span class="mw-rg" data-c="ma"></span></header><div class="mw-c" id="mw-ma"></div><p class="mw-f"><i class="lg vn"></i>VN-Index (trái) <i class="lg a50"></i>Tỷ lệ mã trên MA50 <i class="lg a200"></i>Trên MA200 (% phải)</p></article>
+ <article class="mw mw-wide mw-flow" id="mw-flow-box" hidden><header><b>Sức mạnh dòng tiền thị trường</b><span class="mw-rg" data-c="fl"></span></header>
+ <div class="fl-top"><div class="fl-st" id="fl-st"></div><div class="fl-g" id="fl-g"></div></div>
+ <div class="mw-c" id="mw-fl"></div>
+ <p class="mw-f"><i class="lg vn"></i>VN-Index <i class="lg a50"></i>Sức mạnh dòng tiền <i class="lg fb"></i>Giai đoạn tạo đáy <i class="lg ft"></i>Giai đoạn tạo đỉnh</p>
+ <div class="fl-tb" id="fl-tb"></div></article>
  <article class="mw"><header><b>Thanh khoản cao nhất</b><span class="mw-tag">tỷ đồng</span></header><div class="mw-c" id="mw-tv"></div></article>
 </div>
 <div class="mw-grid" data-p="dg" hidden>
@@ -1355,6 +1376,7 @@ function ranges(key,draw){var box=document.querySelector('.mw-rg[data-c="'+key+'
  box.querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){box.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});draw(+b.dataset.n)})});draw(250);}
 function hist(h){
  var sl=function(a,n){return a.slice(-n)};
+ try{flowp(h)}catch(e){}
  ranges('ma',function(n){line($('mw-ma'),sl(h.dates,n),[{v:sl(h.vn,n),c:'#8d8899',fill:1,w:1.6},{v:sl(h.a50,n),c:'#6a2d86',ax:'r'},{v:sl(h.a200,n),c:'#d08a1e',ax:'r'}],{rr:[0,100]})});
  function val(k,lab){var all=h[k].filter(function(v){return v!=null}),avg=all.reduce(function(a,b){return a+b},0)/all.length;
   ranges(k,function(n){line($('mw-'+k),sl(h.dates,n),[{v:sl(h.vn,n),c:'#8d8899',fill:1,w:1.6},{v:sl(h[k],n),c:'#6a2d86',ax:'r',w:2}],{rd:k==='pb'?2:1,avg:avg})});
@@ -1364,6 +1386,41 @@ function hist(h){
  function lv(p){return p<=30?['#e6f3ec','#1f8a57','Thấp trong 1 năm']:p>=70?['#fbeceb','#c43c32','Cao trong 1 năm']:['#f6f0dc','#8a6a12','Quanh mức trung bình']}
  $('mw-dg-note').innerHTML=[a,b].map(function(o){var l=lv(o.pct);return '<span class="pill" style="background:'+l[0]+';color:'+l[1]+'">'+o.lab+' '+nf(o.cur,2)+' lần</span>'+l[2]+': trung bình 1 năm '+nf(o.avg,2)+', thấp nhất '+nf(o.mn,2)+', cao nhất '+nf(o.mx,2)+'. Hiện cao hơn '+o.pct+'% số phiên trong năm.'}).join('<br>')+
  '<br><span style="color:var(--mute);font-size:13px">Định giá thấp chưa chắc là tín hiệu mua, cần đọc cùng xu hướng lợi nhuận và dòng tiền. Tỷ lệ mã trên MA50 dưới 20% thường là vùng thị trường quá bán, trên 80% là vùng hưng phấn.</span>';
+}
+
+function flowp(h){
+ if(!h.ms||!h.sg)return; var box=$('mw-flow-box');box.hidden=false;
+ var D=h.dates,V=h.vn,M=h.ms,G=h.sg,N=D.length,last=N-1;
+ while(last>0&&M[last]==null)last--;
+ var cur=M[last],sgn=G[last],prev=M[Math.max(0,last-5)];
+ var st=$('fl-st');
+ if(sgn===1){st.className='fl-st bot';st.innerHTML='<small>Trạng thái hiện tại</small><b>Thị trường đang tạo đáy</b><small>Dòng tiền đã rút mạnh, lực bán đang ở vùng cạn kiệt.</small>'}
+ else if(sgn===-1){st.className='fl-st top';st.innerHTML='<small>Trạng thái hiện tại</small><b>Thị trường đang tạo đỉnh</b><small>Dòng tiền đang hưng phấn cao, rủi ro điều chỉnh tăng.</small>'}
+ else{var up=cur>=prev;st.className='fl-st neu';st.innerHTML='<small>Trạng thái hiện tại</small><b>Dòng tiền '+(up?'đang mạnh dần':'đang yếu dần')+'</b><small>Thị trường ở vùng trung tính, chưa có tín hiệu tạo đáy hay tạo đỉnh.</small>'}
+ $('fl-g').innerHTML='<div class="val">Sức mạnh dòng tiền: <b>'+nf(cur)+'</b>/100</div><div class="bar"><span class="mk" style="left:'+Math.max(0,Math.min(100,cur))+'%"></span></div><div class="lb"><span>Vùng tạo đáy</span><span>Trung tính</span><span>Vùng tạo đỉnh</span></div>';
+ function draw(n){
+  var a=Math.max(0,N-n),d=D.slice(a),v=V.slice(a),m=M.slice(a),g=G.slice(a),k=d.length;if(k<2)return;
+  var cw=($('mw-fl').clientWidth||700),W=cw<520?420:720,H=cw<520?300:280,L=44,R=12,T1=10,B1=cw<520?178:168,T2=cw<520?192:182,B2=cw<520?268:252,x=function(i){return L+(W-L-R)*i/(k-1)},bw=(W-L-R)/(k-1);
+  var vv=v.filter(function(z){return z!=null}),mn=Math.min.apply(0,vv),mx=Math.max.apply(0,vv),pd=(mx-mn)*.08||1;mn-=pd;mx+=pd;
+  var y1=function(z){return T1+(B1-T1)*(1-(z-mn)/(mx-mn))},y2=function(z){return T2+(B2-T2)*(1-z/100)},o='';
+  for(var i=0;i<k;i++){if(g[i]){o+='<rect x="'+(x(i)-bw/2).toFixed(1)+'" y="'+T1+'" width="'+(bw+.6).toFixed(1)+'" height="'+(B1-T1)+'" fill="'+(g[i]>0?'#bfe3cc':'#f3c9c5')+'" opacity=".75"/>'}}
+  for(var j=0;j<=3;j++){var yy=T1+(B1-T1)*j/3,vl=mx-(mx-mn)*j/3;o+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+yy+'" y2="'+yy+'" stroke="#ebe7f0"/><text x="'+(L-5)+'" y="'+(yy+4)+'" text-anchor="end">'+nf(vl)+'</text>'}
+  o+='<rect x="'+L+'" y="'+y2(25)+'" width="'+(W-L-R)+'" height="'+(y2(0)-y2(25))+'" fill="#e6f3ec"/><rect x="'+L+'" y="'+y2(100)+'" width="'+(W-L-R)+'" height="'+(y2(75)-y2(100))+'" fill="#fbeceb"/>';
+  o+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+y2(50)+'" y2="'+y2(50)+'" stroke="#ebe7f0"/><text x="'+(L-5)+'" y="'+(y2(100)+8)+'" text-anchor="end">Đỉnh</text><text x="'+(L-5)+'" y="'+(y2(0)-1)+'" text-anchor="end">Đáy</text>';
+  var pv=[],pm=[];for(i=0;i<k;i++){if(v[i]!=null)pv.push(x(i).toFixed(1)+','+y1(v[i]).toFixed(1));if(m[i]!=null)pm.push(x(i).toFixed(1)+','+y2(m[i]).toFixed(1))}
+  o+='<polygon points="'+x(0)+','+B1+' '+pv.join(' ')+' '+x(k-1)+','+B1+'" fill="#8d8899" opacity=".08"/><polyline class="lr" pathLength="1" points="'+pv.join(' ')+'" fill="none" stroke="#8d8899" stroke-width="1.7"/>';
+  o+='<polygon points="'+x(0)+','+B2+' '+pm.join(' ')+' '+x(k-1)+','+B2+'" fill="#6a2d86" opacity=".14"/><polyline class="lr" pathLength="1" points="'+pm.join(' ')+'" fill="none" stroke="#6a2d86" stroke-width="2"/>';
+  var s5=Math.max(1,Math.round(k/(W<500?3:5)));for(i=0;i<k;i+=s5){o+='<text x="'+x(i)+'" y="'+(H-10)+'" text-anchor="middle">'+d[i].slice(8,10)+'/'+d[i].slice(5,7)+'/'+d[i].slice(2,4)+'</text>'}
+  $('mw-fl').innerHTML=svg(W,H,o);
+ }
+ ranges('fl',draw);
+ // các giai đoạn tín hiệu
+ var E=[],cu=null;for(var i=0;i<N;i++){var s=G[i];if(s){if(cu&&cu.s===s&&i-cu.e<=5){cu.e=i}else{cu={s:s,b:i,e:i};E.push(cu)}}}
+ if(!E.length){$('fl-tb').innerHTML='';return}
+ var pc2=function(a,b){if(a==null||b==null)return '–';var r=(b/a-1)*100;return '<span style="color:'+(r>=0?UP:DN)+'">'+(r>=0?'+':'−')+Math.abs(r).toFixed(1).replace('.',',')+'%</span>'};
+ var fd=function(z){return z.slice(8,10)+'/'+z.slice(5,7)+'/'+z.slice(0,4)};
+ var rows=E.slice(-6).reverse().map(function(e){var a20=Math.min(N-1,e.b+20);return '<tr><td>'+fd(D[e.b])+(e.e>e.b?' – '+fd(D[e.e]):'')+'</td><td><span class="tg '+(e.s>0?'b':'t')+'">'+(e.s>0?'Tạo đáy':'Tạo đỉnh')+'</span></td><td class="r">'+nf(V[e.b],2)+'</td><td class="r">'+(e.b+20<N?pc2(V[e.b],V[a20]):'–')+'</td><td class="r">'+pc2(V[e.b],V[last])+'</td></tr>'}).join('');
+ $('fl-tb').innerHTML='<table><thead><tr><th>Giai đoạn</th><th>Tín hiệu</th><th class="r">VN-Index lúc đó</th><th class="r">Sau 20 phiên</th><th class="r">Đến nay</th></tr></thead><tbody>'+rows+'</tbody></table>';
 }
 function meters(m){return [['Mã trên MA50 (xu hướng ngắn)',m.a50],['Mã trên MA200 (xu hướng dài)',m.a200]].map(function(r){var c=r[1]<20?DN:r[1]>80?UP:'#6a2d86';return '<div style="margin:8px 0 0"><div style="display:flex;justify-content:space-between;font-size:12.5px"><span>'+r[0]+'</span><b style="color:'+c+'">'+nf(r[1],1)+'%</b></div><div class="mw-bar" style="height:8px;background:#efebf4"><i style="width:'+r[1]+'%;background:'+c+'"></i></div></div>'}).join('')}
 function live(m){
