@@ -295,7 +295,7 @@ W.HD={get:get};
 })();
 </script>
 <script>(function(){const tp=document.getElementById('tape');const f=(x,d=1)=>x==null?'–':(x>0?'+':'')+x.toLocaleString('vi-VN',{minimumFractionDigits:d,maximumFractionDigits:d})+'%';const c=(x,t)=>x==null?'':(x>=t?'pos pur':x>=0?'pos':'neg');
-HN.get('data/rs.bin',1).then(j=>{const it=j.top.map(r=>'<a href="index.html#rs"><b>'+r.s+'</b>'+r.close.toLocaleString('vi-VN')+' <i class="'+c(r.d1,6.5)+'">'+f(r.d1,2)+'</i><em>3T <i class="'+c(r.r3,50)+'">'+f(r.r3)+'</i></em></a>').join('');tp.innerHTML=it+it;}).catch(()=>{tp.parentNode.hidden=true});})();</script>
+HN.get('data/rs.bin',1).then(j=>{const it=j.top.map(r=>'<a href="index.html#top-10-co-phieu-khoe"><b>'+r.s+'</b>'+r.close.toLocaleString('vi-VN')+' <i class="'+c(r.d1,6.5)+'">'+f(r.d1,2)+'</i><em>3T <i class="'+c(r.r3,50)+'">'+f(r.r3)+'</i></em></a>').join('');tp.innerHTML=it+it;}).catch(()=>{tp.parentNode.hidden=true});})();</script>
 <div class="wrap">
 <div class="rhero"><div class="photo-credit">Ảnh: Ken Lund, CC BY-SA 2.0</div>
 <div class="brand"><a href="./" style="color:inherit;text-decoration:none">HUY NGUYỄN · CHỨNG KHOÁN</a></div>
