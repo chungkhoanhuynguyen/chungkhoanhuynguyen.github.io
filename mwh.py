@@ -55,7 +55,7 @@ def flow(a50, a200):
         if x is None: ms.append(None); sg.append(0); continue
         e = x if e is None else e + (x - e) * 0.5
         ms.append(round(e, 1))
-        sg.append(1 if (x <= 25 and y is not None and x < y) else (-1 if x >= 75 else 0))
+        sg.append(1 if (x <= 25 and y is not None and x < y) else (-1 if x >= 75 else (-2 if x >= 55 else 0)))
     return ms, sg
 ms, sg = flow(a50, a200)
 now = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None) + datetime.timedelta(hours=7)
