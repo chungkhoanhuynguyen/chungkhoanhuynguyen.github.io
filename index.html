@@ -1360,7 +1360,7 @@ d.appendChild(a);});})();
 </script>
 <script>
 (function(){const G=document.getElementById('kqg');if(!G)return;const V={pos:'Tích cực',mid:'Trung tính',neg:'Tiêu cực'};const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const KQL=matchMedia('(max-width:760px)').matches?6:12;let items=[],nx={},f='all',v='all',q='',lim=KQL;
+const KQL=matchMedia('(max-width:760px)').matches?4:6;let items=[],nx={},f='all',v='all',q='',lim=KQL;
 function card(r){const n=nx[r.s];return '<article class="kq kv-'+r.v+'"><div class="kq-h"><b>'+r.s+'</b><small>'+r.q+'</small><span class="kq-v kv-'+r.v+'">'+V[r.v]+'</span></div>'+
 '<ul class="kq-i">'+r.info.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>'+
 (r.good.length?'<ul class="g">'+r.good.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>':'')+
@@ -1757,7 +1757,7 @@ function mac(){return H.get('data/mac.bin').catch(function(){return {}})}
 function stamp(id,j){if(j&&j.updated)$(id).textContent='Cập nhật '+j.updated+'.'}
 /* ---------- Tin ---------- */
 var NL={vm:'Vĩ mô thế giới',bctc:'BCTC',quyen:'Cổ tức & quyền',dhcd:'ĐHCĐ & nghị quyết',ns:'Nhân sự',nb:'Giao dịch nội bộ',khac:'Khác'};
-var NL0=H.mob()?12:30,EL0=H.mob()?12:40;var nw=null,nf_='all',nq='',nwo=false,nlim=NL0;
+var NL0=H.mob()?6:10,EL0=H.mob()?6:12;var nw=null,nf_='all',nq='',nwo=false,nlim=NL0;
 function nRender(){var w=H.watch.list(),L=nw.filter(function(x){return (nf_==='all'||x[4]===nf_)&&(!nq||(x[4]!=='vm'&&x[3].indexOf(nq)===0))&&(!nwo||(x[4]!=='vm'&&w.indexOf(x[3])>=0))}),box=$('nwl'),last='';
  if(!L.length){box.innerHTML='<li class="dn-ld">'+(nwo&&!w.length?'Chưa có mã theo dõi. Thêm mã bằng nút ☆ ở Bảng giá hoặc Soi chart.':'Không có tin phù hợp.')+'</li>';$('nwm').hidden=true;return}
  var h='';L.slice(0,nlim).forEach(function(x){if(x[1]!==last){last=x[1];h+='<li class="dn-day">'+dow(x[1])+', '+dmy(x[1])+'</li>'}
