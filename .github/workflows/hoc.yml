@@ -1,0 +1,26 @@
+name: Mo bai hoc moi
+on:
+  schedule:
+    - cron: "11 13 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: data-push
+jobs:
+  hoc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python hoc.py
+      - run: |
+          git config user.name "hn-bot"
+          git config user.email "hn-bot@users.noreply.github.com"
+          git add -A hoc sitemap.xml
+          git diff --cached --quiet || git commit -m "Mo bai hoc $(date -u +%F)"
+          git pull --rebase -q || true
+          git push
