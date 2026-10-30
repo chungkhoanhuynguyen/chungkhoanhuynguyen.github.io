@@ -64,7 +64,7 @@ def head(title, desc, url, ld):
 <meta property="og:type" content="article"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{B}/img/og.png"><meta property="og:locale" content="vi_VN">
 <link rel="icon" href="/img/fav-32.png"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&family=Playfair+Display:wght@800;900&display=swap">
 <style>{CSS}.mt{{width:100%;border-collapse:collapse;font-size:15px;margin:8px 0 18px}}.mt td{{border-bottom:1px solid var(--line);padding:8px 6px}}.mt td.r{{text-align:right;font-variant-numeric:tabular-nums}}.mt td.n{{color:var(--mute);font-size:13px;text-align:right}}.up{{color:#0a8a4a}}.dn{{color:#c0392b}}.az{{columns:4 120px;font-size:15px;line-height:1.9}}.az a{{text-decoration:none}}.tag{{display:inline-block;font-size:12px;font-weight:700;border-radius:6px;padding:2px 8px;background:#f1eef6}}</style><script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script></head><body>
-<header class="top"><div class="in"><a class="brand" href="/">HUY NGUYỄN <b>·</b> CHỨNG KHOÁN</a><nav class="nav"><a href="/ma/">Mã CP</a><a href="/f0/">F0</a><a href="/hoc/">Bài học</a></nav></div></header>"""
+<header class="top"><div class="in"><a class="brand" href="/">HUY NGUYỄN <b>·</b> CHỨNG KHOÁN</a><nav class="nav"><a href="/mo-tai-khoan-chung-khoan.html">Mở TK</a><a href="/ma/">Mã CP</a><a href="/f0/">F0</a><a href="/hoc/">Bài học</a></nav></div></header>"""
 FOOT = """<footer>© Chứng Khoán Huy Nguyễn · <a href="/">chungkhoanhuynguyen.com</a><br>Thông tin tổng hợp từ dữ liệu thị trường và báo cáo tài chính, tham khảo, không phải khuyến nghị mua bán.</footer></body></html>"""
 
 os.makedirs(os.path.join(ROOT, "ma"), exist_ok=True)
@@ -128,6 +128,7 @@ for s in SYMS:
     same = [t for t in SYMS if S[t][1] == x[1] and t != s]
     i0 = SYMS.index(s); near = [t for t in SYMS[max(0, i0 - 4): i0 + 5] if t != s][:8]
     P.append("<h2>Mã cổ phiếu khác</h2><p>" + " · ".join(f'<a href="/ma/{t}.html">{t}</a>' for t in near) + ' · <a href="/ma/">Tất cả mã</a></p>')
+    P.append(f'<p>Chưa có tài khoản để mua {e(s)}? Xem <a href="/mo-tai-khoan-chung-khoan.html">hướng dẫn mở tài khoản chứng khoán online</a> (miễn phí, 5 phút).</p>')
     P.append('<p>Mới đầu tư? Đọc <a href="/f0/pe-la-gi.html">P/E là gì</a>, <a href="/f0/cach-doc-bang-gia-chung-khoan.html">cách đọc bảng giá</a> và <a href="/f0/">cẩm nang F0</a>.</p>')
     P.append("</article></main>" + FOOT)
     fn = f"ma/{s}.html"; keep.add(fn); made.append(s)
