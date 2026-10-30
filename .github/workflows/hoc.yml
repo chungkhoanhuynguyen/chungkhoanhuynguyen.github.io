@@ -21,7 +21,7 @@ jobs:
       - run: |
           git config user.name "hn-bot"
           git config user.email "hn-bot@users.noreply.github.com"
-          git add -A hoc f0 ma sitemap.xml mo-tai-khoan-chung-khoan.html
+          git add -A hoc f0 ma sitemap.xml mo-tai-khoan-chung-khoan.html thi-truong-chung-khoan-hom-nay.html dinh-gia-co-phieu.html tu-van-dau-tu-chung-khoan.html
           git diff --cached --quiet || git commit -m "Mo bai hoc $(date -u +%F)"
           git pull --rebase -q || true
           git push
