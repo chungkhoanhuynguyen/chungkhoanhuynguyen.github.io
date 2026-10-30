@@ -26,7 +26,7 @@ h3{font-size:18px;margin:22px 0 4px}.meta{color:var(--mute);font-size:14px}
 .vid{position:relative;aspect-ratio:16/9;margin:18px 0;border-radius:12px;overflow:hidden;background:#000}.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .sum{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:10px;padding:14px 16px;margin:16px 0}
 blockquote{margin:18px 0;padding:10px 16px;border-left:4px solid var(--acc);background:var(--panel);border-radius:8px;font-style:italic}
-.fimg{margin:18px 0}.fimg img{width:100%;max-width:620px;height:auto;border-radius:12px;border:1px solid #ddd;display:block}.fimg figcaption{font-size:14px;color:var(--mute);margin-top:6px}.cta{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0}.cta p{flex-basis:100%;margin:0}.f0l{padding-left:22px}.f0l li{margin:0 0 16px;line-height:1.5}.f0l small{color:var(--mute)}article ul,article ol{line-height:1.7}.btn{display:inline-block;padding:10px 16px;border-radius:999px;font-weight:700;text-decoration:none;font-size:15px}
+.fimg{margin:18px 0}.fimg img{width:100%;max-width:620px;height:auto;border-radius:12px;border:1px solid #ddd;display:block}.fimg figcaption{font-size:14px;color:var(--mute);margin-top:6px}.toc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 16px;margin:16px 0;font-size:15px}.toc ol{margin:6px 0 0;padding-left:20px;line-height:1.7}.step{font-size:13px;font-weight:700;color:var(--gold);letter-spacing:.5px;text-transform:uppercase}.gp{margin:26px 0 8px;padding-top:14px;border-top:1px solid var(--line)}.gp h2{margin:0 0 2px}.gp p{margin:0 0 8px;color:var(--mute);font-size:14px}.f0l li{margin:0 0 12px}.cta{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0}.cta p{flex-basis:100%;margin:0}.f0l{padding-left:22px}.f0l li{margin:0 0 16px;line-height:1.5}.f0l small{color:var(--mute)}article ul,article ol{line-height:1.7}.btn{display:inline-block;padding:10px 16px;border-radius:999px;font-weight:700;text-decoration:none;font-size:15px}
 .b1{background:#c4302b;color:#fff}.b2{border:1px solid var(--line);background:var(--panel);color:var(--fg)}
 .pn{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:24px 0}.pn a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px;text-decoration:none;color:var(--fg);font-size:14px}.pn small{color:var(--mute);display:block}
 .src{font-size:13px;color:var(--mute);border-top:1px solid var(--line);margin-top:28px;padding-top:12px}
@@ -111,6 +111,9 @@ for f in os.listdir(os.path.join(ROOT, "hoc")):
 
 # ---- Cẩm nang F0 (/f0/): bài viết chuẩn SEO cho người mới, nội dung trong _f0/bai.json ----
 F = json.load(open(os.path.join(ROOT, "_f0/bai.json"), encoding="utf-8"))
+GN = {1: "Bắt đầu", 2: "Giao dịch", 3: "Phân tích cơ bản", 4: "Phân tích kỹ thuật", 5: "Quản trị rủi ro & tâm lý", 6: "Sản phẩm khác"}
+GD = {1: "Chứng khoán là gì, mở tài khoản, nạp tiền", 2: "Đọc bảng giá, đặt lệnh, phí và thời gian tiền về", 3: "Đọc báo cáo tài chính, định giá, chọn cổ phiếu", 4: "Xu hướng, đường MA, RSI, dòng tiền", 5: "Cắt lỗ, margin, phân bổ vốn, kiểm soát cảm xúc", 6: "ETF, chứng chỉ quỹ, phái sinh, trái phiếu, IPO"}
+F = sorted(F, key=lambda x: x.get("grp", 1))
 FM = {x["slug"]: x for x in F}
 FP = lambda x: ("/%s.html" if x.get("root") else "/f0/%s.html") % x["slug"]
 os.makedirs(os.path.join(ROOT, "f0"), exist_ok=True)
@@ -137,14 +140,24 @@ for x in F:
          '<div class="bc"><a href="/">Trang chủ</a> › <a href="/f0/">Cẩm nang F0</a></div>',
          f'<h1>{e(x["title"])}</h1><div class="meta">Cẩm nang chứng khoán cho người mới · Huy Nguyễn</div>',
          f'<div class="sum"><b>Tóm tắt:</b> {e(x["desc"])}</div>']
-    for b in x["body"]:
+    g = x.get("grp", 1); gi = [y for y in F if y.get("grp", 1) == g]; k = gi.index(x)
+    p.insert(-2, f'<div class="step">Bước {g}: {GN[g]} · Bài {k + 1}/{len(gi)}</div>')
+    hs = [b[1] for b in x["body"] + x.get("add", []) if b[0] == "h2"]
+    if len(hs) >= 3:
+        p.append('<nav class="toc"><b>Nội dung bài</b><ol>' + "".join(f'<li><a href="#m{i}">{e(h)}</a></li>' for i, h in enumerate(hs)) + '</ol></nav>')
+    hi = 0
+    for b in x["body"] + x.get("add", []):
+        if b[0] == "h2":
+            p.append(f'<h2 id="m{hi}">{e(b[1])}</h2>'); hi += 1; continue
         if b[0] == "cta":
             p.append(f'<div class="cta"><p>{e(b[1])}</p><a class="btn b1" href="{e(b[2])}" target="_blank" rel="noopener nofollow">{e(b[3])}</a></div>')
         elif b[0] == "img":
             p.append(f'<figure class="fimg"><img src="{e(b[1])}" alt="{e(b[2])}" loading="lazy" width="907" height="873"><figcaption>{e(b[3])}</figcaption></figure>')
         else:
             p.append(blk(b[0], b[1]))
+    i = F.index(x); pv = F[i - 1] if i else None; nx = F[i + 1] if i + 1 < len(F) else None
     p.append("<h2>Câu hỏi thường gặp</h2>" + "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in x["faq"]))
+    p.append('<div class="pn">' + (f'<a href="{FP(pv)}"><small>← Bài trước</small>{e(pv["title"])}</a>' if pv else '<span></span>') + (f'<a href="{FP(nx)}" style="text-align:right"><small>Bài tiếp theo →</small>{e(nx["title"])}</a>' if nx else '<a href="/f0/" style="text-align:right"><small>Hoàn thành lộ trình →</small>Về mục lục cẩm nang</a>') + '</div>')
     p.append('<h2>Đọc tiếp</h2><ul>' + "".join(f'<li><a href="{FP(FM[r])}">{e(FM[r]["title"])}</a></li>' for r in x["rel"] if r in FM) + '<li><a href="/hoc/">Thư viện bài học có video</a></li></ul>')
     p.append(f'<div class="cta"><a class="btn b1" href="{YT}?sub_confirmation=1" rel="noopener">Đăng ký kênh YouTube</a><a class="btn b2" href="/">Bảng giá &amp; định giá cổ phiếu</a><a class="btn b2" href="https://zalo.me/g/jbnbiq994" rel="noopener">Nhóm Zalo hỏi đáp</a></div>')
     p.append("</article></main>" + FOOT)
@@ -157,8 +170,9 @@ p = [head("Chứng khoán cho người mới bắt đầu: cẩm nang F0 từ A 
           "Cẩm nang chứng khoán cho người mới: chứng khoán là gì, mở tài khoản, cách mua cổ phiếu, đọc bảng giá, P/E, cắt lỗ, margin, T+2, cổ tức, phí và thuế.",
           url, B + "/img/og.png", ld), "<main>",
      '<div class="bc"><a href="/">Trang chủ</a> › Cẩm nang F0</div><h1>Chứng khoán cho người mới bắt đầu: cẩm nang F0</h1>',
-     '<p class="meta">Học theo thứ tự từ trên xuống. Mỗi bài ngắn gọn, ví dụ thực tế trên thị trường Việt Nam.</p><ol class="f0l">' +
-     "".join(f'<li><a href="{FP(x)}"><b>{e(x["title"])}</b></a><br><small>{e(x["desc"])}</small></li>' for x in F) + "</ol>",
+     f'<p class="meta">{len(F)} bài, chia 6 bước. Học lần lượt từ Bước 1, mỗi bài có ví dụ dễ hiểu và nút sang bài tiếp theo.</p>' +
+     '<nav class="toc"><b>Lộ trình</b><ol>' + "".join(f'<li><a href="#b{g}">Bước {g}: {GN[g]}</a> <small>({sum(1 for x in F if x.get("grp", 1) == g)} bài)</small></li>' for g in GN if any(x.get("grp", 1) == g for x in F)) + '</ol></nav>' +
+     "".join(f'<section class="gp" id="b{g}"><h2>Bước {g}: {GN[g]}</h2><p>{GD[g]}</p><ol class="f0l">' + "".join(f'<li><a href="{FP(x)}"><b>{e(x["title"])}</b></a><br><small>{e(x["desc"])}</small></li>' for x in F if x.get("grp", 1) == g) + "</ol></section>" for g in GN if any(x.get("grp", 1) == g for x in F)),
      f'<div class="cta"><a class="btn b1" href="/hoc/">Thư viện bài học có video</a><a class="btn b2" href="{YT}?sub_confirmation=1" rel="noopener">Kênh YouTube</a></div></main>' + FOOT]
 open(os.path.join(ROOT, "f0/index.html"), "w", encoding="utf-8").write("\n".join(p))
 for f in os.listdir(os.path.join(ROOT, "f0")):
