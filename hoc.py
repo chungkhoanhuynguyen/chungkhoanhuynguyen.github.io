@@ -142,9 +142,10 @@ for x in F:
     p = [head(x["title"] + " | Chứng Khoán Huy Nguyễn", x["desc"], url, B + "/img/og.png", ld), "<main><article>",
          '<div class="bc"><a href="/">Trang chủ</a> › <a href="/f0/">Cẩm nang F0</a></div>',
          f'<h1>{e(x["title"])}</h1><div class="meta">Cẩm nang chứng khoán cho người mới · Huy Nguyễn</div>',
-         f'<div class="sum"><b>Tóm tắt:</b> {e(x["desc"])}</div>']
+         f'<div class="sum"><b>Tóm tắt:</b> {e(x["desc"])}</div>',
+         '<div style="margin:20px 0;padding:14px 16px;border-radius:12px;background:#0068ff12;border:1px solid #0068ff55"><b>💬 Học cùng cộng đồng: hỏi đáp miễn phí cho người mới, nhận bảng tổng hợp BCTC và nhận định thị trường mỗi ngày</b><br><a href="https://zalo.me/g/jbnbiq994" target="_blank" rel="noopener" style="display:inline-block;margin-top:8px;background:#0068ff;color:#fff;padding:9px 16px;border-radius:999px;font-weight:700;text-decoration:none">Tham gia nhóm Zalo cộng đồng (miễn phí)</a></div>']
     g = x.get("grp", 1); gi = [y for y in F if y.get("grp", 1) == g]; k = gi.index(x)
-    p.insert(-2, f'<div class="step">Bước {g}: {GN[g]} · Bài {k + 1}/{len(gi)}</div>')
+    p.insert(3, f'<div class="step">Bước {g}: {GN[g]} · Bài {k + 1}/{len(gi)}</div>')
     hs = [b[1] for b in x["body"] + x.get("add", []) if b[0] == "h2"]
     if len(hs) >= 3:
         p.append('<nav class="toc"><b>Nội dung bài</b><ol>' + "".join(f'<li><a href="#m{i}">{e(h)}</a></li>' for i, h in enumerate(hs)) + '</ol></nav>')
