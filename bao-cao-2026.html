@@ -218,7 +218,7 @@ header.top nav a{background:rgba(255,255,255,.08)!important;border-color:rgba(25
 .tabs{display:grid!important;grid-template-columns:repeat(3,1fr);gap:6px}.tabs a{text-align:center;padding:8px 4px!important;font-size:12.5px!important}
 .vm-tone{flex-direction:column;align-items:flex-start}
 }
-.upc{font-size:10.5px;font-weight:700;color:#8a6d1f;background:#f6edd2;border-radius:4px;padding:1px 5px;margin-left:4px;white-space:nowrap}</style>
+.upc{font-size:10.5px;font-weight:700;color:#8a6d1f;background:#f6edd2;border-radius:4px;padding:1px 5px;margin-left:4px;white-space:nowrap}.homebtn{display:inline-flex;align-items:center;gap:6px;margin:0 0 14px;padding:9px 16px;border-radius:999px;background:#f3d27a;color:#2a1640!important;font:800 14px var(--body,system-ui);text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.25)}.homebtn:hover{background:#ffe29a}</style>
 <style>.callout{margin:0 0 22px;padding:14px 16px;border-radius:14px;border:1px solid var(--line);background:var(--panel);border-left:4px solid var(--up)}.callout b{display:block;font-size:15px;margin-bottom:4px}.callout p{margin:0;color:var(--fg);line-height:1.6}.callout.warn{border-left-color:var(--dn);background:#fff7f5}.callout.warn b{color:var(--dn)}.callout.fit b{color:var(--up)}.flexg{margin-bottom:22px}.flexg .tvb:nth-child(2){border-top-color:var(--up)}.flexg .tvb:nth-child(3){border-top-color:#d08a1e}</style></head><body>
 <div class="tape" aria-label="Bảng điện Top 10"><span class="tlab">TOP 10</span><div class="tape-in" id="tape"><span>Đang tải bảng điện…</span></div></div>
 <script id="hncore">
@@ -298,7 +298,7 @@ W.HD={get:get};
 HN.get('data/rs.bin',1).then(j=>{const it=j.top.map(r=>'<a href="index.html#top-10-co-phieu-khoe"><b>'+r.s+'</b>'+r.close.toLocaleString('vi-VN')+' <i class="'+c(r.d1,6.5)+'">'+f(r.d1,2)+'</i><em>3T <i class="'+c(r.r3,50)+'">'+f(r.r3)+'</i></em></a>').join('');tp.innerHTML=it+it;}).catch(()=>{tp.parentNode.hidden=true});})();</script>
 <div class="wrap">
 <div class="rhero"><div class="photo-credit">Ảnh: Ken Lund, CC BY-SA 2.0</div>
-<div class="brand"><a href="./" style="color:inherit;text-decoration:none">HUY NGUYỄN · CHỨNG KHOÁN</a></div>
+<a class="homebtn" href="/">← Về trang chủ chungkhoanhuynguyen.com</a><div class="brand">HUY NGUYỄN · CHỨNG KHOÁN</div>
 <h1>Báo cáo lệnh đầu cơ 2016–2026</h1>
 <p class="lede">Toàn bộ lệnh mua, chốt lời và cắt lỗ từ 01/01/2016 đến 28/10/2026 theo phương pháp phân tích kỹ thuật của nhóm, trên tài khoản V306TMVN chia 4 phần: mỗi lệnh 25% tài sản, không dùng margin.</p>
 </div>
