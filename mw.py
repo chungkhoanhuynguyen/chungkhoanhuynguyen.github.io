@@ -92,6 +92,8 @@ hncodec.dump(dict(updated=now.strftime("%H:%M %d/%m/%Y"), date=today, n=len(rows
                   vn=[round(vn_close, 2) if vn_close else None, round(vn_ch, 2) if vn_ch is not None else None], vn_prev=vn),
              "data/mw.bin")
 hncodec.drop("data/mw.json")
+if len(rows) > 100:  # bản đồ ngành cho trang /ma/ (mục "Cổ phiếu cùng ngành")
+    hncodec.dump({"updated": now.strftime("%H:%M %d/%m/%Y"), "m": {r["s"]: r["n"] for r in rows}}, "data/sec.bin")
 
 # Bảng giá + nến trong phiên. Ngày nghỉ (giá cao/thấp/đóng của VN-Index trùng phiên trước) thì giữ bản cũ.
 def last_bar(sym):
