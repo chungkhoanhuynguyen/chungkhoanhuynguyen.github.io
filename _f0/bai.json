@@ -266,7 +266,9 @@
     "img",
     "/img/doi-tu-van-vps.jpg",
     "Hướng dẫn đổi chuyên gia tư vấn VPS sang Huy Nguyễn (ID BJIE) trên ứng dụng VPS SmartOne",
-    "Đã có tài khoản VPS: vào SmartOne → biểu tượng cá nhân → Quản lý dịch vụ → Đổi chuyên gia tư vấn → nhập ID BJIE – Nguyễn Huy Anh, tích cả 3 mục → Gửi yêu cầu."
+    "Đã có tài khoản VPS: vào SmartOne → biểu tượng cá nhân → Quản lý dịch vụ → Đổi chuyên gia tư vấn → nhập ID BJIE – Nguyễn Huy Anh, tích cả 3 mục → Gửi yêu cầu.",
+    907,
+    873
    ],
    [
     "cta",
@@ -376,7 +378,9 @@
     "img",
     "/img/doi-tu-van-vps.jpg",
     "Hướng dẫn đổi chuyên gia tư vấn VPS sang Huy Nguyễn (ID BJIE) trên ứng dụng VPS SmartOne",
-    "Đã có tài khoản VPS: vào SmartOne → biểu tượng cá nhân → Quản lý dịch vụ → Đổi chuyên gia tư vấn → nhập ID BJIE – Nguyễn Huy Anh, tích cả 3 mục → Gửi yêu cầu."
+    "Đã có tài khoản VPS: vào SmartOne → biểu tượng cá nhân → Quản lý dịch vụ → Đổi chuyên gia tư vấn → nhập ID BJIE – Nguyễn Huy Anh, tích cả 3 mục → Gửi yêu cầu.",
+    907,
+    873
    ]
   ],
   "faq": [
@@ -3619,6 +3623,929 @@
    "co-tuc-la-gi",
    "roe-eps-la-gi",
    "lo-chan-lo-le"
+  ]
+ },
+ {
+  "slug": "tich-san-chung-khoan-la-gi",
+  "kw": "tích sản chứng khoán là gì",
+  "title": "Tích sản chứng khoán là gì? Khác đầu cơ thế nào, ai nên tích sản",
+  "desc": "Tích sản chứng khoán là gì, khác đầu cơ ở đâu, ai hợp với cách đầu tư này và cần chuẩn bị gì trước khi bắt đầu. Giải thích dễ hiểu cho người mới.",
+  "grp": 7,
+  "body": [
+   [
+    "p",
+    "<b>Tích sản</b> là mua dần cổ phiếu của những doanh nghiệp tốt và giữ nhiều năm, để tài sản lớn lên cùng doanh nghiệp. Giống như mua dần một mảnh đất tốt mỗi năm, không cần ngày nào cũng hỏi giá."
+   ],
+   [
+    "p",
+    "<b>Đầu cơ</b> thì khác: mua để bán lại sau vài tuần hoặc vài tháng, kiếm lời từ biến động giá. Đầu cơ cần điểm mua, điểm cắt lỗ rõ ràng và theo dõi thị trường sát."
+   ],
+   [
+    "img",
+    "/img/f0/tich-san-vs-dau-co.jpg",
+    "So sánh tích sản và đầu cơ chứng khoán",
+    "Hai cách kiếm tiền khác nhau thì cách quản trị vốn cũng khác nhau."
+   ],
+   [
+    "h2",
+    "Lợi nhuận tích sản đến từ đâu?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Doanh nghiệp lớn lên:</b> lợi nhuận tăng đều thì giá trị cổ phiếu tăng theo thời gian.",
+     "<b>Cổ tức:</b> tiền mặt hoặc cổ phiếu chia thêm hằng năm, đem mua tiếp sẽ tạo <a href=\"/f0/lai-kep-trong-dau-tu.html\">lãi kép</a>.",
+     "<b>Mua được giá rẻ:</b> những năm thị trường xấu là lúc gom được nhiều cổ phiếu tốt với giá thấp."
+    ]
+   ],
+   [
+    "h2",
+    "Ai hợp với tích sản?"
+   ],
+   [
+    "ul",
+    [
+     "Người đi làm, có thu nhập đều, không có thời gian xem bảng giá cả ngày.",
+     "Có tiền nhàn rỗi ít nhất 3–5 năm không cần dùng tới.",
+     "Chịu được cảnh tài khoản âm 20–40% trong một thời gian mà không hoảng loạn bán ra."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ dễ hiểu"
+   ],
+   [
+    "p",
+    "Anh A mỗi tháng để dành 5 triệu mua cổ phiếu một ngân hàng lớn, cổ tức nhận về mua tiếp. Có năm giá giảm, anh vẫn mua đều nên mua được nhiều cổ phiếu hơn. Sau nhiều năm, phần lớn tài sản đến từ việc doanh nghiệp lớn lên và cổ tức tái đầu tư, chứ không phải từ việc đoán đúng giá từng ngày."
+   ],
+   [
+    "h2",
+    "Tích sản không phải là “mua rồi quên”"
+   ],
+   [
+    "p",
+    "Vẫn phải đọc báo cáo tài chính mỗi quý, xem doanh nghiệp còn tốt không, và giữ tỉ trọng hợp lý. Doanh nghiệp suy yếu thì giữ càng lâu càng lỗ. Đọc thêm <a href=\"/f0/rui-ro-khi-tich-san.html\">các rủi ro khi tích sản</a>."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Tích sản là mua dần doanh nghiệp tốt và giữ nhiều năm, khác đầu cơ ngắn hạn.",
+     "Lợi nhuận đến từ doanh nghiệp lớn lên, cổ tức và mua được giá rẻ lúc thị trường xấu.",
+     "Chỉ dùng tiền nhàn rỗi dài hạn và vẫn phải theo dõi doanh nghiệp định kỳ."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Tích sản bao lâu thì có kết quả?",
+    "Thường cần ít nhất 3–5 năm. Những năm đầu tài khoản có thể lỗ, đó là chuyện bình thường của tích sản."
+   ],
+   [
+    "Có nên vừa tích sản vừa đầu cơ?",
+    "Có thể, nhưng nên tách riêng hai phần vốn, mỗi phần một kỷ luật riêng, để không lấy tiền tích sản đi lướt sóng."
+   ],
+   [
+    "Tích sản cần bao nhiêu tiền?",
+    "Bắt đầu từ vài triệu mỗi tháng cũng được. Quan trọng là đều đặn và kỷ luật hơn số tiền ban đầu."
+   ]
+  ],
+  "rel": [
+   "huong-dan-tich-san-co-phieu-tu-a-den-z",
+   "chon-co-phieu-tich-san",
+   "rui-ro-khi-tich-san"
+  ]
+ },
+ {
+  "slug": "huong-dan-tich-san-co-phieu-tu-a-den-z",
+  "kw": "hướng dẫn tích sản cổ phiếu",
+  "title": "Hướng dẫn tích sản cổ phiếu từ A đến Z: kế hoạch 6 bước cho người mới",
+  "desc": "Hướng dẫn tích sản cổ phiếu từ A đến Z: đặt mục tiêu, lập quỹ dự phòng, số tiền mua mỗi tháng, chọn doanh nghiệp, mua đều, tái đầu tư cổ tức và rà soát.",
+  "grp": 7,
+  "body": [
+   [
+    "p",
+    "Tích sản thành công không nhờ chọn được một mã thần kỳ, mà nhờ một <b>kế hoạch đơn giản làm đều nhiều năm</b>. Dưới đây là 6 bước, làm đúng thứ tự."
+   ],
+   [
+    "img",
+    "/img/f0/quy-trinh-tich-san.jpg",
+    "Quy trình tích sản cổ phiếu 6 bước",
+    "Bước 1 và 2 là nền móng: thiếu hai bước này, tích sản rất dễ đổ vỡ giữa chừng."
+   ],
+   [
+    "h2",
+    "Bước 1: Đặt mục tiêu và thời gian"
+   ],
+   [
+    "p",
+    "Tích để làm gì, cần bao nhiêu, trong bao nhiêu năm? Ví dụ: tích 500 triệu trong 10 năm để con đi học. Có mục tiêu thì khi thị trường giảm, anh chị biết mình đang đi đường dài và không bán vội."
+   ],
+   [
+    "h2",
+    "Bước 2: Lập quỹ dự phòng trước"
+   ],
+   [
+    "p",
+    "Để riêng 3–6 tháng chi tiêu trong tài khoản tiết kiệm. Đây là lý do số 1 khiến nhiều người phải bán cổ phiếu đúng đáy: cần tiền gấp khi tài khoản đang lỗ."
+   ],
+   [
+    "h2",
+    "Bước 3: Chốt số tiền mỗi tháng"
+   ],
+   [
+    "p",
+    "Một con số cố định, ví dụ 10–20% thu nhập. Ví dụ: lương 20 triệu, mỗi tháng tích 3 triệu. Mua đều theo lịch giúp giá vốn tự cân bằng, xem bài <a href=\"/f0/mua-trung-binh-gia-dca.html\">mua trung bình giá (DCA)</a>."
+   ],
+   [
+    "h2",
+    "Bước 4: Chọn doanh nghiệp"
+   ],
+   [
+    "p",
+    "Ưu tiên doanh nghiệp đầu ngành, lãi đều nhiều năm, nợ vay vừa phải, có cổ tức. Chi tiết ở bài <a href=\"/f0/chon-co-phieu-tich-san.html\">cách chọn cổ phiếu tích sản</a>. Người mới nên giữ 3–5 mã, không dồn hết vào một mã."
+   ],
+   [
+    "h2",
+    "Bước 5: Mua đều và tái đầu tư cổ tức"
+   ],
+   [
+    "p",
+    "Đến ngày là mua, không chờ “đợi giảm thêm chút nữa”. Cổ tức tiền mặt nhận về thì mua tiếp. Năm thị trường giảm mạnh là năm nên giữ kỷ luật nhất."
+   ],
+   [
+    "h2",
+    "Bước 6: Rà soát mỗi quý"
+   ],
+   [
+    "ul",
+    [
+     "Đọc kết quả kinh doanh quý: lợi nhuận còn tăng đều không?",
+     "Một mã chiếm quá nhiều tỉ trọng thì bớt mua mã đó, mua mã khác.",
+     "Doanh nghiệp xấu đi rõ rệt (lỗ kéo dài, nợ tăng mạnh) thì cân nhắc thay mã."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Mục tiêu rõ và quỹ dự phòng là nền móng của tích sản.",
+     "Mua đều một số tiền cố định, cổ tức mua tiếp, giữ 3–5 doanh nghiệp tốt.",
+     "Rà soát mỗi quý, kỷ luật nhất vào những năm thị trường xấu."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Nên mua vào ngày nào trong tháng?",
+    "Ngày nào cũng được, miễn cố định, ví dụ ngay sau ngày nhận lương. Đều đặn quan trọng hơn chọn ngày."
+   ],
+   [
+    "Tháng nào giá tăng mạnh có nên ngừng mua?",
+    "Có thể giảm bớt nếu định giá đã quá cao, nhưng đừng ngừng hẳn chỉ vì sợ mua đắt. Kế hoạch dài hạn cần sự đều đặn."
+   ],
+   [
+    "Bao lâu thì đổi mã một lần?",
+    "Chỉ đổi khi doanh nghiệp xấu đi rõ ràng, không đổi vì giá đi ngang vài tháng."
+   ]
+  ],
+  "rel": [
+   "tich-san-chung-khoan-la-gi",
+   "mua-trung-binh-gia-dca",
+   "chon-co-phieu-tich-san"
+  ]
+ },
+ {
+  "slug": "chon-co-phieu-tich-san",
+  "kw": "cách chọn cổ phiếu tích sản",
+  "title": "Cách chọn cổ phiếu tích sản: 7 tiêu chí đơn giản cho người mới",
+  "desc": "Cách chọn cổ phiếu tích sản dài hạn: đầu ngành, lợi nhuận ổn định, ROE, nợ vay, cổ tức, ngành tăng trưởng và định giá hợp lý. Có ví dụ dễ hiểu cho F0.",
+  "grp": 7,
+  "body": [
+   [
+    "p",
+    "Tích sản là giữ nhiều năm, nên chọn sai doanh nghiệp là lỗi đắt nhất. Hãy tưởng tượng mình đang chọn <b>một người cộng sự làm ăn 10 năm</b>: cần giỏi, ổn định và không nợ nần chồng chất."
+   ],
+   [
+    "h2",
+    "7 tiêu chí cần kiểm tra"
+   ],
+   [
+    "ol",
+    [
+     "<b>Đầu ngành hoặc top đầu:</b> có lợi thế cạnh tranh, khó bị đối thủ đánh bật.",
+     "<b>Lợi nhuận ổn định nhiều năm:</b> xem 5–8 năm gần nhất, có năm giảm nhưng xu hướng chung đi lên.",
+     "<b>ROE cao và đều:</b> doanh nghiệp tạo nhiều lợi nhuận trên vốn chủ, xem bài <a href=\"/f0/roe-eps-la-gi.html\">ROE, EPS là gì</a>.",
+     "<b>Nợ vay hợp lý:</b> nợ không tăng nhanh hơn lợi nhuận; ngân hàng thì xem nợ xấu và bao phủ nợ xấu.",
+     "<b>Có cổ tức:</b> dấu hiệu doanh nghiệp có tiền thật, không chỉ lãi trên giấy.",
+     "<b>Ngành còn tăng trưởng dài hạn:</b> ví dụ ngân hàng, tiêu dùng, hạ tầng, gắn với kinh tế lớn lên.",
+     "<b>Định giá không quá đắt:</b> so P/E, P/B với lịch sử của chính doanh nghiệp và với ngành."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ so sánh"
+   ],
+   [
+    "p",
+    "Doanh nghiệp A: lãi tăng đều 10–15%/năm suốt 8 năm, ROE khoảng 18%, nợ ít, năm nào cũng trả cổ tức. Doanh nghiệp B: năm lãi lớn, năm lỗ, ROE lúc 25% lúc âm, nợ tăng gấp đôi. Với tích sản, A tốt hơn nhiều dù B có năm tăng giá mạnh hơn."
+   ],
+   [
+    "h2",
+    "Những dấu hiệu nên tránh"
+   ],
+   [
+    "ul",
+    [
+     "Lãi chủ yếu từ bán tài sản, thoái vốn, khoản bất thường.",
+     "Dòng tiền kinh doanh âm nhiều năm liền dù báo lãi.",
+     "Phát hành thêm cổ phiếu liên tục làm pha loãng.",
+     "Cổ phiếu tăng nóng vì tin đồn, chưa có lợi nhuận thật."
+    ]
+   ],
+   [
+    "p",
+    "Tra nhanh lợi nhuận 12 quý, P/E, ROE của từng mã tại mục <a href=\"/ma/\">tra cứu mã cổ phiếu</a> trên web."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Chọn doanh nghiệp như chọn cộng sự 10 năm: giỏi, ổn định, ít nợ.",
+     "Kiểm tra đủ 7 tiêu chí, tránh lợi nhuận bất thường và pha loãng.",
+     "Giữ 3–5 mã ở các ngành khác nhau để không phụ thuộc một doanh nghiệp."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Cổ phiếu ngân hàng có hợp tích sản không?",
+    "Nhiều ngân hàng lớn có lợi nhuận tăng đều và ROE cao nên thường được chọn, nhưng vẫn phải xem nợ xấu và bộ đệm dự phòng."
+   ],
+   [
+    "Có nên tích sản cổ phiếu penny giá rẻ?",
+    "Không nên. Giá thấp không có nghĩa là rẻ; nhiều mã penny lợi nhuận bấp bênh, rủi ro mất vốn cao."
+   ],
+   [
+    "Bao nhiêu mã là đủ?",
+    "Người mới 3–5 mã là vừa: đủ chia rủi ro mà vẫn theo dõi được."
+   ]
+  ],
+  "rel": [
+   "huong-dan-tich-san-co-phieu-tu-a-den-z",
+   "roe-eps-la-gi",
+   "rui-ro-khi-tich-san"
+  ]
+ },
+ {
+  "slug": "mua-trung-binh-gia-dca",
+  "kw": "mua trung bình giá DCA",
+  "title": "Mua trung bình giá (DCA) là gì? Ví dụ mua đều mỗi tháng có số liệu",
+  "desc": "Mua trung bình giá DCA là gì, vì sao mua đều mỗi tháng giúp giá vốn thấp hơn giá trung bình, ví dụ 12 tháng có số liệu và khi nào DCA không hiệu quả.",
+  "grp": 7,
+  "body": [
+   [
+    "p",
+    "<b>DCA</b> (mua trung bình giá) là mỗi kỳ bỏ ra <b>một số tiền cố định</b> để mua cổ phiếu, bất kể giá lên hay xuống. Giống như mỗi tháng đổ xăng 500 nghìn: xăng rẻ thì được nhiều lít, xăng đắt thì được ít lít."
+   ],
+   [
+    "h2",
+    "Ví dụ 12 tháng"
+   ],
+   [
+    "p",
+    "Ví dụ: mỗi tháng mua 2 triệu đồng một cổ phiếu, giá lần lượt 20.000, 18.000, 16.000, 15.000, 17.000, 14.000, 13.000, 15.000, 18.000, 19.000, 21.000, 22.000 đồng."
+   ],
+   [
+    "img",
+    "/img/f0/tich-san-dca.jpg",
+    "Ví dụ mua trung bình giá DCA 12 tháng",
+    "Tháng giá thấp, cùng 2 triệu mua được nhiều cổ phiếu hơn nên giá vốn bị kéo xuống."
+   ],
+   [
+    "ul",
+    [
+     "Tổng tiền bỏ ra: 24 triệu đồng.",
+     "Giá trung bình của 12 tháng: khoảng 17.333 đồng.",
+     "Giá vốn thực tế sau 12 tháng: khoảng 16.906 đồng, thấp hơn giá trung bình.",
+     "Cuối kỳ giá 22.000 đồng thì tài khoản lãi khoảng 30%."
+    ]
+   ],
+   [
+    "h2",
+    "Vì sao DCA hợp với người mới?"
+   ],
+   [
+    "ul",
+    [
+     "Không phải đoán đáy, đoán đỉnh.",
+     "Biến lúc thị trường giảm thành cơ hội mua được nhiều hơn, bớt sợ hãi.",
+     "Tạo thói quen để dành đều, hợp với người có lương hằng tháng."
+    ]
+   ],
+   [
+    "h2",
+    "Khi nào DCA không hiệu quả?"
+   ],
+   [
+    "p",
+    "DCA chỉ hiệu quả với <b>doanh nghiệp tốt, còn lớn lên</b>. Nếu doanh nghiệp suy yếu và giá giảm mãi không hồi, mua đều chỉ làm khoản lỗ lớn hơn. Vì vậy phải <a href=\"/f0/chon-co-phieu-tich-san.html\">chọn đúng doanh nghiệp</a> trước, rồi mới DCA."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "DCA là mua đều một số tiền cố định mỗi kỳ, không đoán giá.",
+     "Tháng giá thấp mua được nhiều hơn nên giá vốn thường thấp hơn giá trung bình.",
+     "Chỉ DCA vào doanh nghiệp tốt; doanh nghiệp xấu thì càng mua càng lỗ."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "DCA mỗi tháng hay mỗi tuần tốt hơn?",
+    "Mỗi tháng là đủ với người mới, vừa đỡ phí vừa dễ duy trì."
+   ],
+   [
+    "Giá giảm mạnh có nên mua gấp đôi?",
+    "Có thể mua thêm nếu doanh nghiệp vẫn tốt và còn tiền nhàn rỗi, nhưng không vay tiền để mua."
+   ],
+   [
+    "DCA có lỗ được không?",
+    "Có, nếu chọn sai doanh nghiệp hoặc bán ra trong lúc thị trường đang giảm sâu."
+   ]
+  ],
+  "rel": [
+   "huong-dan-tich-san-co-phieu-tu-a-den-z",
+   "lai-kep-trong-dau-tu",
+   "chon-co-phieu-tich-san"
+  ]
+ },
+ {
+  "slug": "lai-kep-trong-dau-tu",
+  "kw": "lãi kép trong đầu tư",
+  "title": "Lãi kép trong đầu tư chứng khoán: 100 triệu sau 20 năm thành bao nhiêu?",
+  "desc": "Lãi kép là gì, quy tắc 72 để tính thời gian gấp đôi tài sản, ví dụ 100 triệu với lợi nhuận 8%, 15%, 20% mỗi năm sau 20 năm và cách tận dụng lãi kép.",
+  "grp": 7,
+  "body": [
+   [
+    "p",
+    "<b>Lãi kép</b> là lãi sinh ra lãi. Năm nay lãi 15%, năm sau lấy cả gốc lẫn lãi đó đi đầu tư tiếp. Giống quả cầu tuyết lăn xuống dốc: lúc đầu nhỏ, càng lăn càng to nhanh."
+   ],
+   [
+    "h2",
+    "Ví dụ 100 triệu sau 20 năm"
+   ],
+   [
+    "img",
+    "/img/f0/lai-kep.jpg",
+    "Lãi kép 100 triệu sau 20 năm với 8%, 15%, 20% mỗi năm",
+    "Chênh vài phần trăm mỗi năm, sau 20 năm thành khác biệt rất lớn (ví dụ minh họa, không nạp thêm tiền)."
+   ],
+   [
+    "ul",
+    [
+     "8%/năm: 100 triệu thành khoảng <b>466 triệu</b>.",
+     "15%/năm: thành khoảng <b>1,64 tỷ</b>.",
+     "20%/năm: thành khoảng <b>3,83 tỷ</b>."
+    ]
+   ],
+   [
+    "h2",
+    "Quy tắc 72: bao lâu thì gấp đôi?"
+   ],
+   [
+    "p",
+    "Lấy 72 chia cho tỉ suất lợi nhuận mỗi năm. Ví dụ 12%/năm thì khoảng 72 ÷ 12 = 6 năm tài sản gấp đôi; 8%/năm thì khoảng 9 năm."
+   ],
+   [
+    "h2",
+    "3 điều kiện để lãi kép hoạt động"
+   ],
+   [
+    "ol",
+    [
+     "<b>Thời gian đủ dài:</b> phần tăng mạnh nhất nằm ở những năm cuối.",
+     "<b>Không rút ra giữa chừng:</b> cổ tức đem tái đầu tư.",
+     "<b>Không lỗ nặng:</b> một năm mất 50% cần tăng 100% mới về lại, xem bài <a href=\"/f0/quan-tri-von-la-gi.html\">quản trị vốn</a>."
+    ]
+   ],
+   [
+    "h2",
+    "Kẻ thù của lãi kép"
+   ],
+   [
+    "p",
+    "Giao dịch quá nhiều (phí và thuế mỗi lần bán), thua lỗ lớn một lần, và dùng tiền vay rồi bị bán giải chấp. Lãi kép thưởng cho người kiên nhẫn và giữ được vốn, không thưởng cho người đánh nhanh."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Lãi kép là lãi sinh lãi, càng để lâu càng mạnh.",
+     "Quy tắc 72: chia 72 cho % lợi nhuận mỗi năm để biết số năm gấp đôi.",
+     "Muốn lãi kép chạy thì phải giữ vốn, tránh lỗ lớn và tránh giao dịch quá nhiều."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Gửi tiết kiệm có lãi kép không?",
+    "Có, nếu lãi được nhập gốc. Nhưng lãi suất tiết kiệm thấp hơn kỳ vọng dài hạn của cổ phiếu tốt, đổi lại rủi ro cũng thấp hơn."
+   ],
+   [
+    "15%/năm có thực tế không?",
+    "Không có gì đảm bảo. Đó là con số ví dụ; thực tế có năm lãi, năm lỗ."
+   ],
+   [
+    "Bắt đầu muộn có còn kịp không?",
+    "Vẫn kịp, nhưng bắt đầu sớm thì cần ít vốn hơn để đạt cùng mục tiêu."
+   ]
+  ],
+  "rel": [
+   "mua-trung-binh-gia-dca",
+   "tich-san-chung-khoan-la-gi",
+   "quan-tri-von-la-gi"
+  ]
+ },
+ {
+  "slug": "rui-ro-khi-tich-san",
+  "kw": "rủi ro khi tích sản cổ phiếu",
+  "title": "Rủi ro khi tích sản cổ phiếu: 6 điều cần biết trước khi bắt đầu",
+  "desc": "Rủi ro khi tích sản cổ phiếu: sụt giảm sâu kéo dài, chọn sai doanh nghiệp, dùng vốn vay, dồn một mã, mua quá đắt, tâm lý bán đáy. Ví dụ thật có số liệu.",
+  "grp": 7,
+  "body": [
+   [
+    "p",
+    "Tích sản nghe có vẻ an toàn vì giữ lâu, nhưng thực tế <b>những năm đầu có thể lỗ rất nặng</b>. Biết trước rủi ro thì mới giữ được kế hoạch."
+   ],
+   [
+    "img",
+    "/img/f0/rui-ro-tich-san.jpg",
+    "6 rủi ro khi tích sản cổ phiếu",
+    "Phần lớn người bỏ cuộc giữa chừng vì không lường trước rủi ro 1, 3 và 6."
+   ],
+   [
+    "h2",
+    "1. Sụt giảm sâu và kéo dài"
+   ],
+   [
+    "p",
+    "Danh mục có thể âm 30–40% và nằm im nhiều năm. Đây là rủi ro ai tích sản cũng gặp."
+   ],
+   [
+    "h2",
+    "Ví dụ thật: lỗ trước, lãi sau"
+   ],
+   [
+    "p",
+    "Tài khoản tích sản cổ phiếu ngân hàng công khai trên <a href=\"/bao-cao-2026.html\">báo cáo lệnh</a> của web: năm 2018 lỗ 11,2%, năm 2019 lỗ tiếp 13,6%, có lúc sụt sâu nhất 42,5%. Nhưng nắm giữ đủ lâu, từ 01/2018 đến 28/10/2026 tài khoản đạt +731,1%, lãi kép bình quân 27,2% mỗi năm. Đó là kết quả quá khứ, không đảm bảo sẽ lặp lại, nhưng cho thấy tích sản đòi hỏi chịu được những năm lỗ."
+   ],
+   [
+    "img",
+    "/img/f0/bao-cao-tich-san.jpg",
+    "Kết quả tài khoản tích sản ngân hàng 2018–2026",
+    "Hai năm đầu lỗ liền, có lúc sụt 42,5%: ai bán ở giai đoạn này đã bỏ lỡ toàn bộ phần sau."
+   ],
+   [
+    "h2",
+    "2. Chọn sai doanh nghiệp"
+   ],
+   [
+    "p",
+    "Doanh nghiệp suy yếu thì giữ càng lâu càng lỗ. Rà soát báo cáo tài chính mỗi quý, xem bài <a href=\"/f0/chon-co-phieu-tich-san.html\">chọn cổ phiếu tích sản</a>."
+   ],
+   [
+    "h2",
+    "3. Dùng vốn vay"
+   ],
+   [
+    "p",
+    "Khi giá giảm 30%, người dùng margin có thể bị bán giải chấp, mất cơ hội chờ phục hồi. Tích sản nên dùng tiền của mình."
+   ],
+   [
+    "h2",
+    "4, 5, 6: Dồn một mã, mua quá đắt, bán đáy"
+   ],
+   [
+    "ul",
+    [
+     "Dồn hết vào một mã hoặc một ngành: một tin xấu kéo cả tài khoản.",
+     "Mua khi định giá quá cao: lợi nhuận nhiều năm sau sẽ thấp.",
+     "Hoảng loạn bán đúng lúc thị trường xấu nhất, xem bài <a href=\"/f0/tam-ly-fomo-va-hoang-loan.html\">tâm lý FOMO và hoảng loạn</a>."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Tích sản có thể lỗ 2 năm liền và sụt hơn 40%, phải chuẩn bị tâm lý từ đầu.",
+     "Không vay, không dồn một mã, không mua lúc quá đắt.",
+     "Rà soát doanh nghiệp định kỳ; kiên nhẫn mới hưởng được phần lãi kép phía sau."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Tài khoản tích sản lỗ 30% có nên bán?",
+    "Nếu doanh nghiệp vẫn tốt và đó là tiền nhàn rỗi thì sụt giảm là bình thường. Chỉ nên bán khi doanh nghiệp xấu đi rõ ràng."
+   ],
+   [
+    "Làm sao giảm rủi ro khi tích sản?",
+    "Dùng tiền nhàn rỗi, chia 3–5 mã ở các ngành khác nhau, mua đều, không vay và có quỹ dự phòng."
+   ],
+   [
+    "Tích sản có mất trắng được không?",
+    "Nếu dồn vào một doanh nghiệp yếu thì có thể mất rất nhiều. Chia vốn và chọn doanh nghiệp tốt giúp giảm rủi ro này."
+   ]
+  ],
+  "rel": [
+   "tich-san-chung-khoan-la-gi",
+   "margin-va-tien-mat-khi-tich-san",
+   "quan-tri-von-la-gi"
+  ]
+ },
+ {
+  "slug": "quan-tri-von-la-gi",
+  "kw": "quản trị vốn trong chứng khoán",
+  "title": "Quản trị vốn là gì? Kiến thức quan trọng nhất khi đầu tư chứng khoán",
+  "desc": "Quản trị vốn trong chứng khoán: vì sao bảo toàn vốn quan trọng nhất, lỗ bao nhiêu thì cần tăng bao nhiêu để hòa vốn, và 3 cách nhà đầu tư gần như chắc chắn mất tiền.",
+  "grp": 7,
+  "body": [
+   [
+    "p",
+    "Nhiều người nghĩ đầu tư giỏi là chọn đúng mã. Thực ra <b>quản trị vốn mới là kiến thức quan trọng nhất</b>: chọn đúng mã giúp anh chị kiếm tiền, còn quản trị vốn giúp anh chị <b>không mất hết tiền</b> khi chọn sai. Mà ai cũng có lúc chọn sai."
+   ],
+   [
+    "h2",
+    "Lỗ càng sâu, đường về càng xa"
+   ],
+   [
+    "p",
+    "Lỗ 10% thì chỉ cần tăng 11,1% là hòa vốn. Nhưng lỗ 50% thì phải tăng 100%, lỗ 70% phải tăng 233%. Đây là lý do người giỏi luôn ưu tiên <b>không để lỗ lớn</b>."
+   ],
+   [
+    "img",
+    "/img/f0/lo-can-tang-bao-nhieu.jpg",
+    "Lỗ bao nhiêu thì phải tăng bao nhiêu để hòa vốn",
+    "Công thức: % cần tăng = 1 ÷ (1 − % lỗ) − 1."
+   ],
+   [
+    "h2",
+    "3 cách nhà đầu tư cá nhân gần như chắc chắn mất tiền"
+   ],
+   [
+    "p",
+    "Theo kinh nghiệm nhiều năm của Huy Nguyễn, có 3 kiểu giao dịch mà gần như ai làm cũng mất tiền:"
+   ],
+   [
+    "img",
+    "/img/f0/3-cach-mat-tien.jpg",
+    "3 cách nhà đầu tư cá nhân gần như chắc chắn mất tiền",
+    "Theo kinh nghiệm của Huy Nguyễn: giao dịch quá nhiều, all-in 1 mã, vay margin không biết quản trị vốn."
+   ],
+   [
+    "ol",
+    [
+     "<b>Giao dịch quá nhiều:</b> trên 100 lệnh mỗi năm, trung bình 9–10 lệnh mỗi tháng. Gần như 99% người giao dịch kiểu này sẽ mất tiền. Ví dụ: mỗi lần mua và bán mất khoảng 0,15% phí mỗi chiều cộng 0,1% thuế khi bán, tức khoảng 0,4% mỗi vòng. 120 vòng một năm với toàn bộ vốn là khoảng 48% vốn đã đi vào phí và thuế, chưa kể các quyết định vội vàng.",
+     "<b>All-in một cổ phiếu:</b> dồn hết vốn vào một mã. Chỉ cần một tin xấu, cổ phiếu giảm 50% là tài khoản mất một nửa, phải tăng 100% mới gỡ lại.",
+     "<b>Vay margin mà không biết quản trị vốn:</b> giá giảm là bị gọi ký quỹ, bị bán giải chấp đúng vùng đáy, mất luôn cơ hội chờ phục hồi."
+    ]
+   ],
+   [
+    "h2",
+    "4 nguyên tắc quản trị vốn cơ bản"
+   ],
+   [
+    "ul",
+    [
+     "Mỗi lệnh chỉ chấp nhận mất 1–2% tổng vốn, xem cách tính ở bài <a href=\"/f0/cach-phan-bo-ty-trong-co-phieu.html\">phân bổ tỉ trọng</a>.",
+     "Chia vốn ra nhiều mã, nhiều ngành.",
+     "Luôn có điểm cắt lỗ trước khi mua.",
+     "Giữ tiền mặt khi thị trường rủi ro cao; đứng ngoài cũng là một vị thế."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Quản trị vốn quan trọng hơn chọn mã: sống sót trước, lợi nhuận sau.",
+     "Tránh 3 sai lầm: giao dịch quá nhiều, all-in 1 mã, vay margin không biết quản trị.",
+     "Mỗi lệnh rủi ro tối đa 1–2% vốn, luôn có điểm cắt lỗ và tiền mặt dự phòng."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Quản trị vốn khác cắt lỗ thế nào?",
+    "Cắt lỗ là một phần của quản trị vốn. Quản trị vốn còn gồm mua bao nhiêu, chia mấy mã, có dùng vay hay không và giữ bao nhiêu tiền mặt."
+   ],
+   [
+    "Bao nhiêu lệnh một năm là hợp lý?",
+    "Không có con số cố định, nhưng ít lệnh chất lượng thường tốt hơn nhiều lệnh vội. Giao dịch 9–10 lệnh mỗi tháng là dấu hiệu đang giao dịch quá nhiều."
+   ],
+   [
+    "Vốn nhỏ có cần quản trị vốn không?",
+    "Càng cần. Vốn nhỏ mất 50% thì rất khó gỡ, và thói quen xấu từ vốn nhỏ sẽ theo anh chị khi vốn lớn."
+   ]
+  ],
+  "rel": [
+   "cach-phan-bo-ty-trong-co-phieu",
+   "ty-le-thang-va-ty-le-loi-lo",
+   "margin-va-tien-mat-khi-tich-san"
+  ]
+ },
+ {
+  "slug": "cach-phan-bo-ty-trong-co-phieu",
+  "kw": "cách phân bổ tỉ trọng cổ phiếu",
+  "title": "Cách phân bổ tỉ trọng cổ phiếu: mua bao nhiêu là vừa, có công thức",
+  "desc": "Cách phân bổ tỉ trọng cổ phiếu theo rủi ro: công thức tính số cổ phiếu nên mua, giới hạn tỉ trọng mỗi mã và mỗi ngành, chia vốn tích sản và đầu cơ.",
+  "grp": 7,
+  "body": [
+   [
+    "p",
+    "Câu hỏi “mua bao nhiêu” quan trọng không kém “mua mã nào”. Cách an toàn là <b>tính theo số tiền chấp nhận mất</b>, không tính theo cảm giác “mã này chắc ăn, mua nhiều”."
+   ],
+   [
+    "h2",
+    "Công thức tính số cổ phiếu"
+   ],
+   [
+    "p",
+    "<b>Số cổ phiếu = (Tổng vốn × % rủi ro mỗi lệnh) ÷ (Giá mua − Giá cắt lỗ)</b>. Người mới nên để % rủi ro mỗi lệnh 1–2% tổng vốn."
+   ],
+   [
+    "img",
+    "/img/f0/ty-trong-vi-du.jpg",
+    "Ví dụ tính số cổ phiếu nên mua theo rủi ro",
+    "Sai lệnh thì mất đúng 2 triệu (1% vốn), tài khoản vẫn an toàn để làm lệnh tiếp."
+   ],
+   [
+    "h2",
+    "Ví dụ cụ thể"
+   ],
+   [
+    "ul",
+    [
+     "Tổng vốn 200 triệu, chấp nhận mất 1% mỗi lệnh = 2 triệu.",
+     "Mua giá 25.000 đồng, cắt lỗ ở 23.000 đồng, mỗi cổ phiếu rủi ro 2.000 đồng.",
+     "Số cổ phiếu = 2.000.000 ÷ 2.000 = 1.000 cổ phiếu, tức 25 triệu, khoảng 12,5% vốn."
+    ]
+   ],
+   [
+    "h2",
+    "Giới hạn tỉ trọng"
+   ],
+   [
+    "ul",
+    [
+     "Một mã không nên quá 20–25% tổng vốn với người mới.",
+     "Một ngành không nên quá 40% tổng vốn.",
+     "Luôn giữ một phần tiền mặt, nhất là khi thị trường rủi ro cao."
+    ]
+   ],
+   [
+    "h2",
+    "Chia vốn tích sản và đầu cơ"
+   ],
+   [
+    "p",
+    "Nếu làm cả hai, hãy tách thành hai “túi” riêng, ví dụ 70% tích sản dài hạn, 30% đầu cơ. Không lấy tiền tích sản đi bù lỗ đầu cơ. Đọc thêm <a href=\"/f0/quan-tri-von-la-gi.html\">quản trị vốn là gì</a>."
+   ],
+   [
+    "h2",
+    "Đừng all-in một mã"
+   ],
+   [
+    "p",
+    "Theo kinh nghiệm của Huy Nguyễn, all-in một cổ phiếu là một trong 3 cách nhà đầu tư cá nhân gần như chắc chắn mất tiền. Một tin xấu có thể lấy đi một nửa tài khoản."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Tính số cổ phiếu theo số tiền chấp nhận mất, mỗi lệnh 1–2% vốn.",
+     "Giới hạn tỉ trọng mỗi mã, mỗi ngành và luôn có tiền mặt.",
+     "Tách riêng vốn tích sản và đầu cơ, không all-in một mã."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Điểm cắt lỗ xa thì sao?",
+    "Điểm cắt lỗ càng xa thì số cổ phiếu mua càng ít để giữ đúng mức rủi ro. Công thức đã tự tính điều đó."
+   ],
+   [
+    "Vốn 20 triệu có cần chia nhỏ không?",
+    "Vẫn nên chia 2–3 mã và giữ kỷ luật cắt lỗ. Vốn nhỏ là lúc tốt nhất để tập thói quen đúng."
+   ],
+   [
+    "Có nên mua thêm khi đang lỗ?",
+    "Với đầu cơ thì không nên bình quân giá xuống. Với tích sản thì chỉ mua thêm khi doanh nghiệp vẫn tốt và vẫn trong giới hạn tỉ trọng."
+   ]
+  ],
+  "rel": [
+   "quan-tri-von-la-gi",
+   "ty-le-thang-va-ty-le-loi-lo",
+   "cat-lo-la-gi"
+  ]
+ },
+ {
+  "slug": "ty-le-thang-va-ty-le-loi-lo",
+  "kw": "tỉ lệ thắng và tỉ lệ lời lỗ",
+  "title": "Tỉ lệ thắng và tỉ lệ lời/lỗ: vì sao thắng ít hơn thua vẫn có lãi",
+  "desc": "Tỉ lệ thắng và tỉ lệ lời lỗ trong chứng khoán: công thức tỉ lệ thắng cần để hòa vốn, ví dụ thật 170 lệnh chỉ 83 lệnh lãi mà tài khoản vẫn tăng trưởng tốt.",
+  "grp": 7,
+  "body": [
+   [
+    "p",
+    "Người mới hay nghĩ phải thắng nhiều lệnh mới có lãi. Thực ra điều quan trọng hơn là <b>lãi trung bình lớn hơn lỗ trung bình bao nhiêu lần</b>. Giống bán hàng: không cần đơn nào cũng lãi, chỉ cần đơn lãi lãi nhiều, đơn lỗ lỗ ít."
+   ],
+   [
+    "h2",
+    "Công thức hòa vốn"
+   ],
+   [
+    "p",
+    "<b>Tỉ lệ thắng cần để hòa vốn = 1 ÷ (1 + R)</b>, với R = lãi trung bình ÷ lỗ trung bình. Ví dụ lãi trung bình gấp 2 lần lỗ trung bình thì chỉ cần thắng khoảng 33% số lệnh là hòa vốn, thắng 40% là đã có lãi."
+   ],
+   [
+    "img",
+    "/img/f0/ty-le-loi-lo.jpg",
+    "Tỉ lệ thắng cần để hòa vốn theo tỉ lệ lời lỗ",
+    "Lãi trung bình càng lớn so với lỗ trung bình thì tỉ lệ thắng cần càng thấp."
+   ],
+   [
+    "h2",
+    "Ví dụ thật từ báo cáo lệnh"
+   ],
+   [
+    "p",
+    "Trong <a href=\"/bao-cao-2026.html\">báo cáo lệnh 2016–2026</a> công khai trên web: 170 lệnh đã đóng, chỉ 83 lệnh lãi, tức khoảng 49%. Nhưng lệnh lãi trung bình +15,2%, lệnh lỗ trung bình chỉ −5,7%, tức lãi gấp khoảng 2,7 lần lỗ. Vì vậy tài khoản vẫn tăng trưởng tốt dù thua gần một nửa số lệnh."
+   ],
+   [
+    "h2",
+    "Làm sao để lãi lớn, lỗ nhỏ?"
+   ],
+   [
+    "ul",
+    [
+     "Cắt lỗ sớm, đúng kế hoạch, xem bài <a href=\"/f0/cat-lo-la-gi.html\">cắt lỗ là gì</a>.",
+     "Để lệnh đúng chạy, không chốt lời quá vội vì sợ mất lãi.",
+     "Chỉ vào lệnh khi phần lãi kỳ vọng lớn hơn hẳn phần rủi ro."
+    ]
+   ],
+   [
+    "h2",
+    "Sai lầm phổ biến"
+   ],
+   [
+    "p",
+    "Nhiều F0 làm ngược: lãi 5% là bán ngay, lỗ 20% vẫn cố giữ. Thắng 70% số lệnh nhưng vẫn mất tiền vì vài lệnh lỗ lớn xóa sạch các lệnh lãi nhỏ."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Quan trọng là lãi trung bình gấp mấy lần lỗ trung bình, không chỉ là số lệnh thắng.",
+     "Hòa vốn khi tỉ lệ thắng = 1 ÷ (1 + R).",
+     "Cắt lỗ nhỏ, để lệnh đúng chạy: thắng ít hơn thua vẫn có lãi."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Tỉ lệ thắng bao nhiêu là tốt?",
+    "Không có con số chung; 40–50% đi kèm lãi trung bình gấp 2–3 lần lỗ trung bình là rất tốt."
+   ],
+   [
+    "Có nên chốt lời sớm để chắc ăn?",
+    "Chốt quá sớm làm lãi trung bình nhỏ, buộc phải thắng rất nhiều lệnh mới có lãi. Nên có kế hoạch chốt lời từ trước."
+   ],
+   [
+    "Tính R thế nào?",
+    "Lấy lãi trung bình của các lệnh lãi chia cho lỗ trung bình của các lệnh lỗ, tính theo %."
+   ]
+  ],
+  "rel": [
+   "quan-tri-von-la-gi",
+   "cach-phan-bo-ty-trong-co-phieu",
+   "cat-lo-la-gi"
+  ]
+ },
+ {
+  "slug": "margin-va-tien-mat-khi-tich-san",
+  "kw": "margin khi tích sản",
+  "title": "Có nên dùng margin khi tích sản? Quản lý tiền mặt và quỹ dự phòng",
+  "desc": "Có nên dùng margin khi tích sản cổ phiếu: vì sao vay ký quỹ nguy hiểm với đầu tư dài hạn, giữ bao nhiêu tiền mặt, quỹ dự phòng và khi nào nên đứng ngoài.",
+  "grp": 7,
+  "body": [
+   [
+    "p",
+    "<b>Margin</b> là vay tiền công ty chứng khoán để mua thêm cổ phiếu. Với tích sản, vay margin giống như <b>mua nhà để ở lâu dài nhưng vay nợ ngắn hạn</b>: chỉ cần giá giảm một đợt là bị đòi nợ đúng lúc khó khăn nhất."
+   ],
+   [
+    "h2",
+    "Vì sao margin và tích sản không hợp nhau?"
+   ],
+   [
+    "ul",
+    [
+     "Tích sản phải chịu được sụt giảm 30–40%; người vay margin thường bị gọi ký quỹ trước mức đó.",
+     "Bị bán giải chấp ở vùng đáy là mất luôn cơ hội chờ phục hồi.",
+     "Lãi vay margin mỗi năm ăn vào lợi nhuận dài hạn."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ"
+   ],
+   [
+    "p",
+    "Ví dụ: vốn 100 triệu, vay thêm 100 triệu, mua 200 triệu cổ phiếu. Thị trường giảm 30% thì cổ phiếu còn 140 triệu, trừ nợ 100 triệu chỉ còn 40 triệu: vốn của mình đã mất 60%. Người không vay chỉ mất 30% và vẫn còn nguyên số cổ phiếu để chờ hồi phục."
+   ],
+   [
+    "p",
+    "Theo kinh nghiệm của Huy Nguyễn, vay margin mà không biết quản trị vốn là một trong 3 cách nhà đầu tư cá nhân gần như chắc chắn mất tiền. Đọc thêm <a href=\"/f0/quan-tri-von-la-gi.html\">quản trị vốn là gì</a>."
+   ],
+   [
+    "h2",
+    "Giữ bao nhiêu tiền mặt?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Quỹ dự phòng:</b> 3–6 tháng chi tiêu, để ngoài chứng khoán.",
+     "<b>Tiền mặt trong tài khoản:</b> một phần để mua thêm khi thị trường giảm mạnh.",
+     "Khi thị trường rủi ro cao, tăng tiền mặt, đứng ngoài chờ cơ hội rõ ràng hơn."
+    ]
+   ],
+   [
+    "h2",
+    "Khi nào nên đứng ngoài?"
+   ],
+   [
+    "p",
+    "Khi vĩ mô xấu (lãi suất tăng mạnh, tỷ giá căng), khi thị trường tăng quá nóng so với lợi nhuận doanh nghiệp, hoặc khi chính anh chị đang cần tiền. Đứng ngoài giữ tiền cũng là một quyết định đầu tư."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Tích sản nên dùng tiền của mình, không dùng margin.",
+     "Luôn có quỹ dự phòng 3–6 tháng chi tiêu và một phần tiền mặt trong tài khoản.",
+     "Đứng ngoài khi rủi ro cao; sống sót qua đợt giảm mới hưởng được đợt tăng."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Margin có lúc nào nên dùng không?",
+    "Chỉ khi đã rất hiểu quản trị vốn, vay ít, có kế hoạch cắt lỗ rõ ràng và dùng cho đầu cơ ngắn hạn, không dùng cho tích sản."
+   ],
+   [
+    "Bị gọi ký quỹ thì làm gì?",
+    "Nộp thêm tiền hoặc bán bớt cổ phiếu để giảm nợ. Tốt nhất là đừng để đến mức bị gọi ký quỹ."
+   ],
+   [
+    "Tiền mặt trong tài khoản có sinh lãi không?",
+    "Một số công ty chứng khoán có sản phẩm sinh lãi cho tiền nhàn rỗi; xem điều kiện cụ thể trên ứng dụng."
+   ]
+  ],
+  "rel": [
+   "rui-ro-khi-tich-san",
+   "quan-tri-von-la-gi",
+   "margin-la-gi"
   ]
  }
 ]
