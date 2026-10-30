@@ -41,7 +41,7 @@ def head(title, desc, url, img, ld):
 <meta property="og:type" content="article"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{img}"><meta property="og:locale" content="vi_VN"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/img/fav-32.png"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&family=Playfair+Display:wght@800;900&display=swap">
 <style>{CSS}</style><script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script></head><body>
-<header class="top"><div class="in"><a class="brand" href="/">HUY NGUYỄN <b>·</b> CHỨNG KHOÁN</a><nav class="nav"><a href="/f0/">F0</a><a href="/hoc/">Bài học</a><a class="hide" href="/">Bảng giá &amp; định giá</a><a href="{YT}?sub_confirmation=1" rel="noopener">YouTube</a></nav></div></header>"""
+<header class="top"><div class="in"><a class="brand" href="/">HUY NGUYỄN <b>·</b> CHỨNG KHOÁN</a><nav class="nav"><a href="/ma/">Mã CP</a><a href="/f0/">F0</a><a href="/hoc/">Bài học</a><a class="hide" href="/">Bảng giá &amp; định giá</a><a href="{YT}?sub_confirmation=1" rel="noopener">YouTube</a></nav></div></header>"""
 
 FOOT = """<footer>© Chứng Khoán Huy Nguyễn · <a href="/">chungkhoanhuynguyen.com</a><br>Nội dung chia sẻ kiến thức và quan điểm cá nhân, không phải khuyến nghị mua bán.</footer></body></html>"""
 
