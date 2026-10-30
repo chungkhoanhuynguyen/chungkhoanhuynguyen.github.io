@@ -57,6 +57,17 @@ def rsi(c, p=14):
     return 100 - 100 / (1 + g / l) if l else 100.0
 def chg(c, k): return (c[-1] / c[-1 - k] - 1) * 100 if len(c) > k and c[-1 - k] else None
 
+# Ngành từng mã: data/sec.bin (mw.py ghi mỗi 15 phút); thiếu thì dùng danh sách nhóm trong mw.py + bản đồ nhiệt
+_mw = open(os.path.join(ROOT, "mw.py"), encoding="utf-8").read()
+SECM = {}
+for _nm, _var in (("Ngân hàng", "BANK"), ("Chứng khoán", "CK"), ("Bất động sản", "BDS"), ("Bảo hiểm", "BH")):
+    _m = re.search(_var + r' = set\("([^"]+)"', _mw)
+    if _m: SECM.update({t: _nm for t in _m.group(1).split()})
+try:
+    for _r in (D("data/mw.bin") or {}).get("heat", []): SECM.setdefault(_r[0], _r[3])
+except Exception: pass
+try: SECM.update((D("data/sec.bin") or {}).get("m", {}))
+except Exception: pass
 SYMS = sorted(s for s, x in S.items() if x[1] in EXN and s in FD and (FD[s].get("v10") or 0) >= 20000 and os.path.exists(os.path.join(ROOT, "data/c", s + ".bin")))
 
 def head(title, desc, url, ld):
@@ -142,6 +153,28 @@ for s in SYMS:
     P.append(ZBOX.format(s=e(s)))
     P.append(f'<div class="cta"><a class="btn b1" href="/#ma={e(s)}">Xem biểu đồ {e(s)}</a><a class="btn b2" href="/#hoidap">Hỏi đáp chuyên sâu về {e(s)}</a><a class="btn b2" href="https://zalo.me/0365188286" rel="noopener">Tư vấn 1:1</a></div>')
     P.append("<h2>Câu hỏi thường gặp về cổ phiếu " + e(s) + "</h2>" + "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in faq))
+    ng = SECM.get(s)
+    if ng and ng not in ("Khác", "Tài chính"):
+        peers = sorted([t for t in SYMS if SECM.get(t) == ng], key=lambda t: -(FD[t].get("mc") or 0))
+        if s not in peers[:8]: peers = peers[:7] + [s]
+        peers = peers[:8]
+        if len(peers) >= 3:
+            def _y(t):
+                bb = bars(t); cc = [q[4] for q in bb if q[4] > 0]
+                return (cc[-1] if cc else None), chg(cc, 250)
+            trs = []
+            for t in peers:
+                ft = FD[t]; pt, yt = _y(t)
+                lk = e(t) if t == s else f'<a href="/ma/{t}.html">{t}</a>'
+                hl = ' style="background:#f1eef6"' if t == s else ''
+                trs.append(f"<tr{hl}><td><b>{lk}</b></td><td class='r'>{nf(pt)}</td><td class='r'>{nf(ft.get('pe'),1) if (ft.get('pe') or 0) > 0 else '–'}</td><td class='r'>{nf(ft.get('pb'),2) if (ft.get('pb') or 0) > 0 else '–'}</td><td class='r'>{nf(ft.get('roe'),1)}%</td><td class='r {'up' if (yt or 0) >= 0 else 'dn'}'>{pc(yt)}</td></tr>")
+            pes = sorted(FD[t]["pe"] for t in peers if (FD[t].get("pe") or 0) > 0)
+            mpe = pes[len(pes) // 2] if pes else None
+            note = ""
+            if mpe and pe and pe > 0:
+                note = f"<p>P/E của {e(s)} ({nf(pe,1)} lần) đang {'cao hơn' if pe > mpe else 'thấp hơn'} trung vị nhóm {e(ng.lower())} ({nf(mpe,1)} lần). Định giá thấp hơn chưa chắc rẻ: cần xem thêm tăng trưởng lợi nhuận và chất lượng tài sản.</p>"
+            P.append(f"<h2>So sánh {e(s)} với cổ phiếu cùng ngành {e(ng.lower())}</h2>" + note +
+                     "<div style='overflow-x:auto'><table class='mt'><tr><td><b>Mã</b></td><td class='r'><b>Giá</b></td><td class='r'><b>P/E</b></td><td class='r'><b>P/B</b></td><td class='r'><b>ROE</b></td><td class='r'><b>1 năm</b></td></tr>" + "".join(trs) + "</table></div>")
     same = [t for t in SYMS if S[t][1] == x[1] and t != s]
     i0 = SYMS.index(s); near = [t for t in SYMS[max(0, i0 - 4): i0 + 5] if t != s][:8]
     P.append("<h2>Mã cổ phiếu khác</h2><p>" + " · ".join(f'<a href="/ma/{t}.html">{t}</a>' for t in near) + ' · <a href="/ma/">Tất cả mã</a></p>')
