@@ -95,6 +95,9 @@ p = [head("Thư viện bài học chứng khoán cho người mới | Chứng Kh
           url, B + "/img/og.png", ld), "<main>",
      '<div class="bc"><a href="/">Trang chủ</a> › Thư viện bài học</div><h1>Thư viện bài học chứng khoán</h1>',
      '<p class="meta">Kiến thức chứng khoán cho người mới bắt đầu, kể bằng câu chuyện và số liệu có nguồn. Mỗi tối 20:00 có một bài mới.</p>']
+_TS = [x for x in json.load(open(os.path.join(ROOT, "_f0/bai.json"), encoding="utf-8")) if x.get("grp") == 7]
+if _TS:
+    p.append('<section class="toc" style="margin:18px 0"><b>Chuyên đề có ảnh minh họa: Tích sản &amp; quản trị vốn</b><p class="meta" style="margin:4px 0 6px">Kiến thức quan trọng nhất để sống sót lâu dài trên thị trường.</p><ol>' + "".join(f'<li><a href="/f0/{x["slug"]}.html">{e(x["title"])}</a></li>' for x in _TS) + '</ol></section>')
 _SO = ["Lệnh thật & bài học", "Vĩ mô nóng"] + [NAME[x] for x in SER]
 for sn in _SO + sorted({v["series"] for v in R} - set(_SO)):
     L = [v for v in R if (v.get("series") or NAME.get(v["k"][:2])) == sn]
@@ -111,8 +114,8 @@ for f in os.listdir(os.path.join(ROOT, "hoc")):
 
 # ---- Cẩm nang F0 (/f0/): bài viết chuẩn SEO cho người mới, nội dung trong _f0/bai.json ----
 F = json.load(open(os.path.join(ROOT, "_f0/bai.json"), encoding="utf-8"))
-GN = {1: "Bắt đầu", 2: "Giao dịch", 3: "Phân tích cơ bản", 4: "Phân tích kỹ thuật", 5: "Quản trị rủi ro & tâm lý", 6: "Sản phẩm khác"}
-GD = {1: "Chứng khoán là gì, mở tài khoản, nạp tiền", 2: "Đọc bảng giá, đặt lệnh, phí và thời gian tiền về", 3: "Đọc báo cáo tài chính, định giá, chọn cổ phiếu", 4: "Xu hướng, đường MA, RSI, dòng tiền", 5: "Cắt lỗ, margin, phân bổ vốn, kiểm soát cảm xúc", 6: "ETF, chứng chỉ quỹ, phái sinh, trái phiếu, IPO"}
+GN = {1: "Bắt đầu", 2: "Giao dịch", 3: "Phân tích cơ bản", 4: "Phân tích kỹ thuật", 5: "Quản trị rủi ro & tâm lý", 6: "Sản phẩm khác", 7: "Tích sản & quản trị vốn"}
+GD = {1: "Chứng khoán là gì, mở tài khoản, nạp tiền", 2: "Đọc bảng giá, đặt lệnh, phí và thời gian tiền về", 3: "Đọc báo cáo tài chính, định giá, chọn cổ phiếu", 4: "Xu hướng, đường MA, RSI, dòng tiền", 5: "Cắt lỗ, margin, phân bổ vốn, kiểm soát cảm xúc", 6: "ETF, chứng chỉ quỹ, phái sinh, trái phiếu, IPO", 7: "Tích sản từ A đến Z, rủi ro, quản trị vốn: kiến thức quan trọng nhất"}
 F = sorted(F, key=lambda x: x.get("grp", 1))
 FM = {x["slug"]: x for x in F}
 FP = lambda x: ("/%s.html" if x.get("root") else "/f0/%s.html") % x["slug"]
@@ -152,7 +155,7 @@ for x in F:
         if b[0] == "cta":
             p.append(f'<div class="cta"><p>{e(b[1])}</p><a class="btn b1" href="{e(b[2])}" target="_blank" rel="noopener nofollow">{e(b[3])}</a></div>')
         elif b[0] == "img":
-            p.append(f'<figure class="fimg"><img src="{e(b[1])}" alt="{e(b[2])}" loading="lazy" width="907" height="873"><figcaption>{e(b[3])}</figcaption></figure>')
+            p.append(f'<figure class="fimg"><img src="{e(b[1])}" alt="{e(b[2])}" loading="lazy" width="{b[4] if len(b)>4 else 1200}" height="{b[5] if len(b)>5 else 675}"><figcaption>{e(b[3])}</figcaption></figure>')
         else:
             p.append(blk(b[0], b[1]))
     i = F.index(x); pv = F[i - 1] if i else None; nx = F[i + 1] if i + 1 < len(F) else None
@@ -170,7 +173,7 @@ p = [head("Chứng khoán cho người mới bắt đầu: cẩm nang F0 từ A 
           "Cẩm nang chứng khoán cho người mới: chứng khoán là gì, mở tài khoản, cách mua cổ phiếu, đọc bảng giá, P/E, cắt lỗ, margin, T+2, cổ tức, phí và thuế.",
           url, B + "/img/og.png", ld), "<main>",
      '<div class="bc"><a href="/">Trang chủ</a> › Cẩm nang F0</div><h1>Chứng khoán cho người mới bắt đầu: cẩm nang F0</h1>',
-     f'<p class="meta">{len(F)} bài, chia 6 bước. Học lần lượt từ Bước 1, mỗi bài có ví dụ dễ hiểu và nút sang bài tiếp theo.</p>' +
+     f'<p class="meta">{len(F)} bài, chia {len(GN)} bước. Học lần lượt từ Bước 1, mỗi bài có ví dụ dễ hiểu và nút sang bài tiếp theo.</p>' +
      '<nav class="toc"><b>Lộ trình</b><ol>' + "".join(f'<li><a href="#b{g}">Bước {g}: {GN[g]}</a> <small>({sum(1 for x in F if x.get("grp", 1) == g)} bài)</small></li>' for g in GN if any(x.get("grp", 1) == g for x in F)) + '</ol></nav>' +
      "".join(f'<section class="gp" id="b{g}"><h2>Bước {g}: {GN[g]}</h2><p>{GD[g]}</p><ol class="f0l">' + "".join(f'<li><a href="{FP(x)}"><b>{e(x["title"])}</b></a><br><small>{e(x["desc"])}</small></li>' for x in F if x.get("grp", 1) == g) + "</ol></section>" for g in GN if any(x.get("grp", 1) == g for x in F)),
      f'<div class="cta"><a class="btn b1" href="/hoc/">Thư viện bài học có video</a><a class="btn b2" href="{YT}?sub_confirmation=1" rel="noopener">Kênh YouTube</a></div></main>' + FOOT]
