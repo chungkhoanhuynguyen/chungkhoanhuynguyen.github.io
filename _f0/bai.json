@@ -1,142 +1,1262 @@
 [
-{"slug":"chung-khoan-la-gi","kw":"chứng khoán là gì","title":"Chứng khoán là gì? Giải thích dễ hiểu cho người mới bắt đầu (F0)",
-"desc":"Chứng khoán là gì, cổ phiếu là gì, vì sao giá lên xuống và người mới nên bắt đầu từ đâu. Giải thích dễ hiểu bằng ví dụ thực tế trên thị trường Việt Nam.",
-"body":[["p","Chứng khoán là giấy tờ (nay chủ yếu là dữ liệu điện tử) chứng nhận quyền sở hữu hoặc quyền đòi nợ của người nắm giữ. Ở Việt Nam, khi nói \"chơi chứng khoán\", đa số người ta nói về <b>cổ phiếu</b>: mua cổ phiếu là mua một phần nhỏ của doanh nghiệp."],
-["h2","Cổ phiếu là gì?"],["p","Một công ty có 1 tỷ cổ phiếu, anh chị mua 1.000 cổ phiếu tức là sở hữu một phần triệu công ty. Công ty làm ăn có lãi thì phần lãi đó thuộc về cổ đông, có thể được chia cổ tức hoặc giữ lại để mở rộng kinh doanh, làm giá trị doanh nghiệp tăng lên."],
-["h2","Vì sao giá cổ phiếu lên xuống?"],["p","Giá trên sàn do người mua và người bán quyết định mỗi phiên. Về dài hạn, giá đi theo <b>lợi nhuận</b> của doanh nghiệp. Về ngắn hạn, giá chịu ảnh hưởng của tâm lý đám đông, lãi suất, dòng tiền và tin tức. Vì vậy cùng một doanh nghiệp tốt, mua đúng giá thì lãi, mua lúc quá đắt vẫn có thể lỗ nặng."],
-["h2","Ba sàn chứng khoán ở Việt Nam"],["ul",["HOSE (Sở Giao dịch Chứng khoán TP.HCM): doanh nghiệp lớn, biên độ dao động ±7% mỗi phiên.","HNX (Sở Giao dịch Chứng khoán Hà Nội): biên độ ±10%.","UPCoM: thị trường cho doanh nghiệp chưa niêm yết, biên độ ±15%."]],
-["h2","Người mới nên bắt đầu từ đâu?"],["p","Mở tài khoản chứng khoán, học 5 khái niệm nền tảng (P/E, P/B, ROE, cổ tức, cắt lỗ), bắt đầu bằng số tiền nhỏ và chỉ mua doanh nghiệp anh chị hiểu. Xem lộ trình chi tiết ở các bài bên dưới."]],
-"faq":[["Chứng khoán và cổ phiếu khác nhau thế nào?","Cổ phiếu là một loại chứng khoán. Chứng khoán còn gồm trái phiếu, chứng chỉ quỹ, chứng quyền và phái sinh."],["Cần bao nhiêu tiền để bắt đầu?","Không có mức tối thiểu bắt buộc. Nhiều người bắt đầu với vài triệu đồng để học cách đặt lệnh trước khi tăng vốn."]],
-"rel":["cach-mo-tai-khoan-chung-khoan","cach-mua-co-phieu-lan-dau","sai-lam-cua-f0"]},
-
-{"slug":"cach-mo-tai-khoan-chung-khoan","kw":"mở tài khoản chứng khoán","title":"Cách mở tài khoản chứng khoán online trong 5 phút (cho người mới)",
-"desc":"Hướng dẫn mở tài khoản chứng khoán online bằng CCCD trên điện thoại: cần gì, các bước, lưu ý chọn công ty chứng khoán và phí giao dịch.",
-"body":[["p","Hiện nay hầu hết công ty chứng khoán cho mở tài khoản online bằng định danh điện tử (eKYC): chụp căn cước công dân, quay khuôn mặt, ký hợp đồng điện tử. Toàn bộ mất khoảng 5–10 phút và miễn phí."],
-["h2","Cần chuẩn bị gì?"],["ul",["Căn cước công dân còn hạn.","Số điện thoại và email chính chủ.","Tài khoản ngân hàng cùng tên để nộp và rút tiền."]],
-["h2","Các bước mở tài khoản"],["ol",["Tải ứng dụng hoặc vào trang mở tài khoản của công ty chứng khoán.","Nhập số điện thoại, email, nhận mã OTP.","Chụp hai mặt CCCD và quay khuôn mặt để xác thực.","Chọn mã giới thiệu của người hỗ trợ (nếu có) để được tư vấn sau này.","Ký hợp đồng điện tử, nhận số tài khoản và mật khẩu đăng nhập."]],
-["h2","Chọn công ty chứng khoán thế nào?"],["p","Nên xem 3 thứ: ứng dụng đặt lệnh ổn định, phí giao dịch hợp lý và có người hỗ trợ khi cần. Với người mới, có người hướng dẫn trong vài tháng đầu quan trọng hơn chênh lệch vài phần nghìn phí."],
-["cta","Mở tài khoản cùng Huy Nguyễn để được hỗ trợ 1:1 trong giai đoạn đầu.","https://openaccount.vps.com.vn/?MKTID=BJIE","Mở tài khoản VPS (mã giới thiệu BJIE)"]],
-"faq":[["Mở tài khoản chứng khoán có mất phí không?","Thông thường miễn phí. Phí chỉ phát sinh khi giao dịch mua bán."],["Có cần nộp tiền ngay sau khi mở không?","Không bắt buộc. Anh chị nộp tiền khi sẵn sàng mua cổ phiếu đầu tiên."]],
-"rel":["cach-mua-co-phieu-lan-dau","phi-giao-dich-va-thue-chung-khoan","chung-khoan-la-gi"]},
-
-{"slug":"cach-mua-co-phieu-lan-dau","kw":"cách mua cổ phiếu","title":"Cách mua cổ phiếu lần đầu: hướng dẫn từng bước cho F0",
-"desc":"Hướng dẫn mua cổ phiếu lần đầu: nộp tiền, chọn mã, đặt lệnh LO, ATO, ATC, lô chẵn lô lẻ, giờ giao dịch và khi nào cổ phiếu về tài khoản.",
-"body":[["h2","Bước 1: Nộp tiền vào tài khoản"],["p","Chuyển khoản từ ngân hàng cùng tên vào tài khoản chứng khoán theo hướng dẫn trên ứng dụng. Tiền thường về trong vài phút."],
-["h2","Bước 2: Chọn mã và mức giá"],["p","Trước khi mua, xem doanh nghiệp làm gì, lợi nhuận mấy quý gần nhất, P/E so với ngành và xu hướng giá. Anh chị có thể tra nhanh ở mục <a href=\"/#soichart\">Soi chart</a> và <a href=\"/#bctc\">Đánh giá BCTC</a> trên web."],
-["h2","Bước 3: Đặt lệnh"],["ul",["Lệnh LO (giới hạn): mua đúng giá mình đặt hoặc tốt hơn. Phù hợp nhất cho người mới.","Lệnh ATO, ATC: khớp ở giá mở cửa hoặc đóng cửa, dễ khớp nhưng không kiểm soát được giá.","Lô chẵn là bội số của 100 cổ phiếu; lô lẻ từ 1 đến 99 cổ phiếu, đặt riêng."]],
-["h2","Giờ giao dịch sàn HOSE"],["ul",["9:00–9:15: phiên mở cửa (ATO).","9:15–11:30 và 13:00–14:30: khớp lệnh liên tục.","14:30–14:45: phiên đóng cửa (ATC)."]],
-["h2","Bước 4: Khi nào cổ phiếu về tài khoản?"],["p","Cổ phiếu mua hôm nay (ngày T) về tài khoản vào phiên chiều ngày T+2 và có thể bán từ lúc đó. Xem thêm bài <a href=\"/f0/t-2-la-gi.html\">T+2 là gì</a>."],
-["h2","Bước 5: Đặt sẵn mức cắt lỗ"],["p","Ghi lại mức giá sẽ bán nếu mình sai, ví dụ thấp hơn giá mua 7–8%. Đây là thói quen quan trọng nhất của người mới."]],
-"faq":[["Mua cổ phiếu tối thiểu bao nhiêu?","Có thể mua lô lẻ từ 1 cổ phiếu. Lô chẵn là 100 cổ phiếu."],["Đặt lệnh ngoài giờ được không?","Nhiều công ty cho đặt lệnh trước, lệnh sẽ được đưa vào sàn khi phiên giao dịch bắt đầu."]],
-"rel":["cach-doc-bang-gia-chung-khoan","t-2-la-gi","cat-lo-la-gi"]},
-
-{"slug":"dau-tu-chung-khoan-voi-10-trieu","kw":"đầu tư chứng khoán với 10 triệu","title":"Đầu tư chứng khoán với 10 triệu: bắt đầu thế nào để không mất tiền oan",
-"desc":"Có 10 triệu có nên đầu tư chứng khoán? Cách phân bổ vốn nhỏ, chọn cổ phiếu, kỳ vọng lợi nhuận thực tế và những sai lầm cần tránh.",
-"body":[["p","10 triệu đủ để bắt đầu học thật với tiền thật. Mục tiêu năm đầu không phải là giàu nhanh mà là <b>không mất tiền oan</b> và hình thành kỷ luật."],
-["h2","Phân bổ 10 triệu thế nào?"],["ul",["Chỉ mua 1–3 mã, mỗi mã không quá 40% vốn.","Giữ 20–30% tiền mặt để mua thêm khi có cơ hội rõ ràng.","Không dùng margin (vay ký quỹ) khi chưa có kinh nghiệm."]],
-["h2","Kỳ vọng lợi nhuận thực tế"],["p","Lãi suất tiết kiệm là mốc so sánh. Nếu cả năm không vượt được tiết kiệm sau khi trừ phí, cách đầu tư đang có vấn đề. Đừng tin những lời hứa lãi vài chục phần trăm mỗi tháng."],
-["h2","Vốn nhỏ nên chọn cổ phiếu nào?"],["p","Không có mã đúng cho mọi người. Tiêu chí an toàn cho người mới: doanh nghiệp có lãi đều nhiều năm, ROE trên 15%, nợ vay không quá cao, thanh khoản tốt. Tra nhanh bằng <a href=\"/#bang\">bộ lọc cổ phiếu</a> trên web."],
-["h2","Tích lũy đều đặn"],["p","Mỗi tháng góp thêm một khoản cố định giúp giảm rủi ro mua đúng đỉnh và tạo thói quen tiết kiệm."]],
-"faq":[["10 triệu mua được mấy cổ phiếu?","Tùy giá. Cổ phiếu giá 20.000đ thì 10 triệu mua được khoảng 500 cổ phiếu (chưa tính phí)."],["Có nên vay thêm để đầu tư?","Không nên khi mới bắt đầu. Vay làm khuếch đại cả lãi lẫn lỗ."]],
-"rel":["margin-la-gi","sai-lam-cua-f0","cach-chon-co-phieu-cho-nguoi-moi"]},
-
-{"slug":"cach-doc-bang-gia-chung-khoan","kw":"cách đọc bảng giá chứng khoán","title":"Cách đọc bảng giá chứng khoán: màu tím, xanh, đỏ, vàng nghĩa là gì",
-"desc":"Hướng dẫn đọc bảng giá chứng khoán cho F0: giá trần, sàn, tham chiếu, màu sắc, dư mua dư bán, khối lượng và khối ngoại.",
-"body":[["h2","Ba mức giá quan trọng"],["ul",["Giá tham chiếu (vàng): giá đóng cửa phiên trước, mốc tính tăng giảm.","Giá trần (tím): mức cao nhất được phép trong phiên.","Giá sàn (xanh lam): mức thấp nhất được phép trong phiên."]],
-["h2","Màu sắc trên bảng giá"],["ul",["Tím: tăng trần.","Xanh lá: tăng.","Vàng: đứng giá tham chiếu.","Đỏ: giảm.","Xanh lam: giảm sàn."]],
-["h2","Biên độ dao động"],["p","HOSE ±7%, HNX ±10%, UPCoM ±15% so với giá tham chiếu. Ngày đầu tiên lên sàn biên độ rộng hơn."],
-["h2","Dư mua, dư bán và khớp lệnh"],["p","Ba cột dư mua là các mức giá người mua đang chờ, ba cột dư bán là giá người bán đang chờ. Cột khớp lệnh cho biết giá và khối lượng vừa giao dịch. Dư mua trần lớn thường cho thấy lực cầu mạnh."],
-["h2","Khối ngoại"],["p","Cột NN mua, NN bán cho biết nhà đầu tư nước ngoài đang mua hay bán ròng. Xem bảng giá trực tiếp ở mục <a href=\"/#banggia\">Bảng giá</a> trên web."]],
-"faq":[["Đơn vị giá trên bảng là gì?","Giá hiển thị theo nghìn đồng. 25,5 nghĩa là 25.500 đồng mỗi cổ phiếu."],["Khối lượng hiển thị theo đơn vị nào?","Thường là cổ phiếu, một số bảng giá rút gọn theo đơn vị 10 cổ phiếu."]],
-"rel":["cach-mua-co-phieu-lan-dau","vn-index-la-gi","t-2-la-gi"]},
-
-{"slug":"pe-la-gi","kw":"P/E là gì","title":"P/E là gì? Cách dùng chỉ số P/E để biết cổ phiếu đắt hay rẻ",
-"desc":"P/E là gì, công thức tính, P/E bao nhiêu là rẻ, vì sao P/E thấp chưa chắc tốt. Ví dụ dễ hiểu và cách so sánh P/E theo ngành.",
-"body":[["p","<b>P/E = Giá cổ phiếu ÷ EPS</b> (lợi nhuận trên mỗi cổ phiếu trong 12 tháng gần nhất). P/E 10 nghĩa là nhà đầu tư trả 10 đồng cho 1 đồng lợi nhuận mỗi năm."],
-["h2","P/E bao nhiêu là rẻ?"],["p","Không có con số chung. Hãy so P/E với chính doanh nghiệp đó trong quá khứ, với các công ty cùng ngành và với trung vị thị trường. Web có sẵn công cụ <a href=\"/#bang\">định giá so sánh</a> hiển thị P/E so với trung vị."],
-["h2","Vì sao P/E thấp chưa chắc tốt?"],["ul",["Lợi nhuận có thể đến từ khoản bất thường, năm sau không lặp lại.","Ngành đang đi xuống nên thị trường trả giá thấp.","Doanh nghiệp tăng trưởng nhanh thường có P/E cao hơn và vẫn hợp lý."]],
-["h2","Dùng P/E kèm chỉ số nào?"],["p","Kết hợp với ROE (hiệu quả sử dụng vốn), tăng trưởng lợi nhuận và P/B. Một doanh nghiệp P/E vừa phải, ROE cao, lợi nhuận tăng đều là điểm khởi đầu tốt để tìm hiểu thêm."]],
-"faq":[["EPS là gì?","EPS là lợi nhuận sau thuế chia cho số cổ phiếu đang lưu hành."],["Doanh nghiệp lỗ thì P/E thế nào?","Khi lỗ, EPS âm nên P/E không có ý nghĩa và thường không hiển thị."]],
-"rel":["cach-chon-co-phieu-cho-nguoi-moi","co-tuc-la-gi","phan-tich-co-ban-va-ky-thuat"]},
-
-{"slug":"cat-lo-la-gi","kw":"cắt lỗ là gì","title":"Cắt lỗ là gì? Quy tắc cắt lỗ đơn giản giúp F0 sống sót",
-"desc":"Cắt lỗ trong chứng khoán là gì, nên cắt lỗ bao nhiêu phần trăm, vì sao người mới hay gồng lỗ và cách đặt mức cắt lỗ trước khi mua.",
-"body":[["p","Cắt lỗ là bán cổ phiếu khi giá đi ngược dự tính để giữ phần vốn còn lại. Đây không phải thất bại mà là chi phí của việc đầu tư."],
-["h2","Vì sao phải cắt lỗ sớm?"],["p","Giảm 10% cần tăng 11% để hòa vốn. Giảm 50% cần tăng 100%. Lỗ càng sâu càng khó gỡ, đó là lý do người gồng lỗ thường mất nhiều năm mới về bờ."],
-["h2","Đặt mức cắt lỗ thế nào?"],["ul",["Xác định trước khi mua, không quyết định lúc đang hoảng.","Mức phổ biến cho cổ phiếu tăng trưởng: 7–8% dưới giá mua.","Hoặc đặt dưới vùng hỗ trợ gần nhất trên biểu đồ.","Không bình quân giá xuống khi xu hướng đã gãy."]],
-["h2","Công cụ tính nhanh"],["p","Dùng mục <a href=\"/#congcu\">Quản trị rủi ro</a> trên web để tính giá cắt lỗ và mức cần tăng để hòa vốn."]],
-"faq":[["Cắt lỗ xong giá tăng lại thì sao?","Có thể xảy ra. Nếu doanh nghiệp vẫn tốt, mua lại khi xu hướng xác nhận. Cắt lỗ là để bảo vệ vốn trước những lần giảm sâu."],["Có nên đặt lệnh cắt lỗ tự động?","Nhiều ứng dụng có lệnh điều kiện. Hữu ích cho người không theo dõi bảng giá liên tục."]],
-"rel":["sai-lam-cua-f0","margin-la-gi","phan-tich-co-ban-va-ky-thuat"]},
-
-{"slug":"margin-la-gi","kw":"margin là gì","title":"Margin là gì? Vay ký quỹ chứng khoán lợi hại thế nào",
-"desc":"Margin (vay ký quỹ) là gì, cách tính sức mua, call margin, bán giải chấp và vì sao người mới không nên dùng margin.",
-"body":[["p","Margin là việc vay tiền công ty chứng khoán để mua thêm cổ phiếu, dùng chính cổ phiếu và tiền trong tài khoản làm tài sản đảm bảo."],
-["h2","Ví dụ dễ hiểu"],["p","Có 100 triệu, vay thêm 100 triệu để mua 200 triệu cổ phiếu. Cổ phiếu tăng 20% thì lãi 40 triệu, tức 40% vốn. Nhưng giảm 20% thì lỗ 40 triệu, chưa tính lãi vay."],
-["h2","Call margin và bán giải chấp"],["p","Khi giá giảm làm tỷ lệ tài sản đảm bảo xuống dưới mức quy định, công ty chứng khoán yêu cầu nộp thêm tiền (call margin). Không nộp kịp, cổ phiếu bị bán ra (giải chấp), thường ở giá rất xấu, kéo theo chuỗi giảm sàn."],
-["h2","Khi nào có thể dùng margin?"],["ul",["Đã có kinh nghiệm qua ít nhất một chu kỳ tăng giảm.","Thị trường đang trong xu hướng tăng rõ ràng.","Luôn có mức cắt lỗ và không vay hết sức mua."]]],
-"faq":[["Lãi margin bao nhiêu?","Tùy công ty chứng khoán và gói vay, tính theo ngày trên số tiền vay."],["Mã nào được vay margin?","Mỗi công ty có danh sách mã cho vay và tỷ lệ riêng, thay đổi theo thời kỳ."]],
-"rel":["cat-lo-la-gi","dau-tu-chung-khoan-voi-10-trieu","sai-lam-cua-f0"]},
-
-{"slug":"t-2-la-gi","kw":"T+2 là gì","title":"T+2 là gì? Khi nào cổ phiếu và tiền về tài khoản",
-"desc":"Chu kỳ thanh toán T+2 trong chứng khoán Việt Nam: mua hôm nay khi nào bán được, bán hôm nay khi nào có tiền, ứng trước tiền bán.",
-"body":[["p","T là ngày giao dịch. <b>T+2</b> nghĩa là việc thanh toán hoàn tất sau 2 ngày làm việc."],
-["h2","Mua cổ phiếu"],["p","Mua ngày T, cổ phiếu về tài khoản phiên chiều ngày T+2 và có thể bán từ lúc đó. Ví dụ mua thứ Hai, chiều thứ Tư bán được. Ngày nghỉ lễ, cuối tuần không tính."],
-["h2","Bán cổ phiếu"],["p","Bán ngày T, tiền về tài khoản ngày T+2. Nếu cần tiền sớm, có thể dùng dịch vụ ứng trước tiền bán và trả một khoản phí nhỏ."],
-["h2","Vì sao F0 cần nhớ T+2?"],["p","Trong 2 ngày chờ hàng về, giá có thể biến động mạnh và anh chị không bán được. Đó là lý do không nên mua đuổi những phiên tăng quá nóng."]],
-"faq":[["Mua thứ Sáu thì khi nào bán được?","Chiều thứ Ba tuần sau, nếu không có ngày nghỉ lễ."],["Tiền bán cổ phiếu có dùng mua mã khác ngay được không?","Được. Sức mua thường được cộng ngay sau khi lệnh bán khớp."]],
-"rel":["cach-mua-co-phieu-lan-dau","cach-doc-bang-gia-chung-khoan","phi-giao-dich-va-thue-chung-khoan"]},
-
-{"slug":"co-tuc-la-gi","kw":"cổ tức là gì","title":"Cổ tức là gì? Cổ tức tiền mặt và cổ tức cổ phiếu khác nhau thế nào",
-"desc":"Cổ tức là gì, ngày đăng ký cuối cùng, ngày giao dịch không hưởng quyền, cách tính cổ tức, thuế cổ tức và vì sao giá bị điều chỉnh sau khi chia.",
-"body":[["p","Cổ tức là phần lợi nhuận doanh nghiệp chia cho cổ đông. Ở Việt Nam, tỷ lệ cổ tức tính trên mệnh giá 10.000đ: cổ tức 15% nghĩa là 1.500đ mỗi cổ phiếu."],
-["h2","Hai loại cổ tức phổ biến"],["ul",["Cổ tức tiền mặt: tiền về tài khoản, bị khấu trừ thuế thu nhập cá nhân 5%.","Cổ tức cổ phiếu: nhận thêm cổ phiếu, phần sở hữu được chia nhỏ ra, giá được điều chỉnh giảm tương ứng."]],
-["h2","Mốc ngày cần nhớ"],["p","Muốn nhận cổ tức, anh chị phải có tên trong danh sách cổ đông ở <b>ngày đăng ký cuối cùng</b>. Do T+2, cần mua trước ngày giao dịch không hưởng quyền. Xem lịch ở mục <a href=\"/#lichsk\">Lịch sự kiện</a> trên web."],
-["h2","Tỷ suất cổ tức"],["p","Tỷ suất cổ tức = cổ tức tiền mặt mỗi năm ÷ giá cổ phiếu. Doanh nghiệp trả cổ tức tiền đều đặn nhiều năm thường có dòng tiền khỏe."]],
-"faq":[["Nhận cổ tức xong giá giảm có bị lỗ không?","Giá điều chỉnh giảm đúng bằng phần cổ tức, tổng tài sản không đổi tại thời điểm chia."],["Cổ tức cổ phiếu có bị thuế không?","Có, thuế 5% tính khi anh chị bán số cổ phiếu được chia."]],
-"rel":["pe-la-gi","cach-chon-co-phieu-cho-nguoi-moi","phi-giao-dich-va-thue-chung-khoan"]},
-
-{"slug":"vn-index-la-gi","kw":"VN-Index là gì","title":"VN-Index là gì? Chỉ số chứng khoán phản ánh điều gì",
-"desc":"VN-Index là gì, tính thế nào, vì sao VN-Index tăng mà cổ phiếu của mình vẫn giảm, VN30 và HNX-Index khác gì.",
-"body":[["p","VN-Index là chỉ số đại diện cho toàn bộ cổ phiếu niêm yết trên sàn HOSE, tính theo vốn hóa thị trường. Mốc gốc là 100 điểm ngày 28/7/2000."],
-["h2","Vì sao VN-Index tăng mà cổ phiếu mình giảm?"],["p","Vì chỉ số tính theo vốn hóa: vài mã lớn như ngân hàng, Vingroup tăng mạnh có thể kéo cả chỉ số đi lên trong khi phần lớn cổ phiếu khác giảm. Hãy nhìn thêm số mã tăng, giảm và thanh khoản."],
-["h2","Các chỉ số khác"],["ul",["VN30: 30 cổ phiếu vốn hóa và thanh khoản lớn nhất HOSE.","HNX-Index: đại diện sàn Hà Nội.","UPCoM-Index: đại diện thị trường UPCoM."]],
-["h2","Theo dõi ở đâu?"],["p","Xem biểu đồ VN-Index, VN30 cùng chỉ báo MA, RSI ở mục <a href=\"/#soichart\">Soi chart</a>, và sức mạnh dòng tiền ở mục <a href=\"/#dongtien\">Dòng tiền</a> trên web."]],
-"faq":[["VN-Index cao nhất là bao nhiêu?","Chỉ số đã nhiều lần lập đỉnh mới theo từng chu kỳ; xem số liệu cập nhật trên biểu đồ VN-Index của web."],["Có mua được VN-Index không?","Có thể đầu tư gián tiếp qua quỹ ETF mô phỏng chỉ số."]],
-"rel":["cach-doc-bang-gia-chung-khoan","phan-tich-co-ban-va-ky-thuat","chung-khoan-la-gi"]},
-
-{"slug":"phi-giao-dich-va-thue-chung-khoan","kw":"phí giao dịch chứng khoán","title":"Phí giao dịch và thuế chứng khoán: người mới cần biết những khoản nào",
-"desc":"Các loại phí khi mua bán cổ phiếu: phí giao dịch, thuế bán 0,1%, thuế cổ tức 5%, phí lưu ký, lãi margin và cách tính chi phí thực tế.",
-"body":[["h2","Phí giao dịch"],["p","Tính trên giá trị mỗi lệnh mua và bán, mức cụ thể tùy công ty chứng khoán và gói dịch vụ."],
-["h2","Thuế khi bán"],["p","Khi bán cổ phiếu, nhà đầu tư cá nhân nộp thuế 0,1% trên giá trị bán, kể cả khi bán lỗ."],
-["h2","Thuế cổ tức"],["p","Cổ tức tiền mặt và cổ tức cổ phiếu chịu thuế thu nhập cá nhân 5%."],
-["h2","Các khoản khác"],["ul",["Phí lưu ký chứng khoán, trừ định kỳ, rất nhỏ.","Lãi vay margin nếu có vay.","Phí ứng trước tiền bán nếu dùng."]],
-["h2","Ví dụ"],["p","Mua và bán 50 triệu cổ phiếu, với phí 0,15% mỗi chiều và thuế bán 0,1%, tổng chi phí khoảng 200.000đ. Lướt sóng càng nhiều thì phí và thuế càng ăn mòn lợi nhuận."]],
-"faq":[["Bán lỗ có phải nộp thuế không?","Có. Thuế 0,1% tính trên giá trị bán, không tính trên lãi."],["Thuế có được tự động khấu trừ không?","Có, công ty chứng khoán khấu trừ và nộp thay."]],
-"rel":["cach-mo-tai-khoan-chung-khoan","t-2-la-gi","co-tuc-la-gi"]},
-
-{"slug":"sai-lam-cua-f0","kw":"sai lầm khi đầu tư chứng khoán","title":"7 sai lầm khiến F0 mất tiền khi mới chơi chứng khoán",
-"desc":"Những sai lầm phổ biến của người mới đầu tư chứng khoán: mua theo tin đồn, gồng lỗ, all-in, dùng margin sớm, lướt sóng liên tục và cách tránh.",
-"body":[["ol",["Mua theo tin đồn, hội nhóm hô hào mà không xem doanh nghiệp làm gì.","Mua đuổi phiên tăng trần, nhất là sau một chuỗi tăng nóng.","Không đặt mức cắt lỗ, gồng lỗ từ 10% thành 50%.","Dồn hết tiền vào một mã (all-in).","Dùng margin khi chưa trải qua một lần thị trường giảm mạnh.","Bình quân giá xuống khi xu hướng đã gãy.","Lướt sóng liên tục, phí và thuế ăn mòn lợi nhuận."]],
-["h2","Cách tránh"],["p","Viết kế hoạch trước mỗi lệnh: vì sao mua, mua giá nào, chốt lời ở đâu, cắt lỗ ở đâu. Không có kế hoạch thì không mua. Bài học thực tế từ các lệnh công khai xem ở <a href=\"/hoc/\">Thư viện bài học</a>."],
-["h2","Bài học từ thị trường"],["p","Giá rẻ chưa phải là đáy, doanh nghiệp tốt chưa chắc là giá tốt. Biết mua là bạc, biết bán mới là vàng."]],
-"faq":[["F0 nên đầu tư ngắn hạn hay dài hạn?","Nên bắt đầu trung và dài hạn với doanh nghiệp tốt, vừa ít áp lực vừa ít phí."],["Có nên tham gia nhóm phím hàng?","Cẩn thận với nhóm hứa lợi nhuận cao, thu phí trước hoặc hô mua mã thanh khoản thấp."]],
-"rel":["cat-lo-la-gi","margin-la-gi","dau-tu-chung-khoan-voi-10-trieu"]},
-
-{"slug":"cach-chon-co-phieu-cho-nguoi-moi","kw":"cách chọn cổ phiếu","title":"Cách chọn cổ phiếu cho người mới: 5 tiêu chí đơn giản",
-"desc":"Người mới nên chọn cổ phiếu thế nào: 5 tiêu chí về lợi nhuận, ROE, nợ vay, định giá và thanh khoản, kèm công cụ lọc cổ phiếu miễn phí.",
-"body":[["p","Không có mã nào phù hợp cho tất cả mọi người, nhưng có bộ lọc giúp loại bớt rủi ro. Năm tiêu chí dưới đây là điểm khởi đầu."],
-["ol",["Lợi nhuận dương và tăng đều ít nhất 3 năm.","ROE trên 15%: doanh nghiệp dùng vốn hiệu quả.","Nợ vay không quá cao so với vốn chủ sở hữu.","Định giá hợp lý: P/E, P/B không quá cao so với ngành.","Thanh khoản đủ lớn để mua bán dễ dàng."]],
-["h2","Lọc nhanh trên web"],["p","Mục <a href=\"/#bang\">Bộ lọc cổ phiếu</a> cho phép đặt điều kiện P/E, P/B, ROE, cổ tức, vốn hóa và trả về danh sách mã phù hợp. Sau đó xem <a href=\"/#bctc\">đánh giá BCTC</a> và <a href=\"/#soichart\">xu hướng giá</a> trước khi quyết định."],
-["h2","Đặt câu hỏi chuyên sâu"],["p","Khách hàng PRO có thể hỏi đáp chuyên sâu từng mã ở mục <a href=\"/#hoidap\">Hỏi đáp PRO</a>."]],
-"faq":[["Có nên mua cổ phiếu giá rẻ (penny)?","Giá thấp không có nghĩa là rẻ. Nhiều mã penny có lợi nhuận kém và dễ bị đầu cơ."],["Nên giữ bao nhiêu mã?","Người mới nên giữ 3–5 mã để dễ theo dõi."]],
-"rel":["pe-la-gi","co-tuc-la-gi","phan-tich-co-ban-va-ky-thuat"]},
-
-{"slug":"phan-tich-co-ban-va-ky-thuat","kw":"phân tích cơ bản và phân tích kỹ thuật","title":"Phân tích cơ bản và phân tích kỹ thuật: F0 nên học cái nào trước",
-"desc":"Phân tích cơ bản là gì, phân tích kỹ thuật là gì, ưu nhược điểm và cách kết hợp hai phương pháp để chọn mã và chọn điểm mua.",
-"body":[["h2","Phân tích cơ bản: mua cái gì"],["p","Xem doanh nghiệp làm gì, lợi nhuận, nợ vay, dòng tiền, định giá. Trả lời câu hỏi: doanh nghiệp này có đáng sở hữu không và giá hiện tại đắt hay rẻ."],
-["h2","Phân tích kỹ thuật: mua lúc nào"],["p","Dùng biểu đồ giá, khối lượng, đường trung bình MA20, MA50, MA200, chỉ báo RSI để xác định xu hướng và điểm vào lệnh."],
-["h2","Kết hợp cả hai"],["p","Dùng cơ bản để chọn doanh nghiệp tốt, dùng kỹ thuật để chọn thời điểm và đặt cắt lỗ. Thêm lớp vĩ mô (lãi suất, tỷ giá, dòng tiền) để biết thị trường chung đang thuận hay nghịch."],
-["h2","Học ở đâu?"],["p","Seri <a href=\"/hoc/\">Kiến thức đầu tư nền tảng</a> và các video trên kênh <a href=\"https://www.youtube.com/@chungkhoanhuynguyen\" rel=\"noopener\">YouTube Chứng Khoán Huy Nguyễn</a> giải thích từng khái niệm bằng ví dụ thực tế."]],
-"faq":[["Người mới nên học cái nào trước?","Nên học cơ bản trước để biết mình đang sở hữu gì, sau đó học kỹ thuật để chọn điểm mua bán."],["Chỉ dùng kỹ thuật có được không?","Có thể với giao dịch ngắn hạn, nhưng rủi ro cao hơn nếu doanh nghiệp yếu."]],
-"rel":["pe-la-gi","cat-lo-la-gi","vn-index-la-gi"]}
+ {
+  "slug": "mo-tai-khoan-chung-khoan",
+  "root": true,
+  "kw": "mở tài khoản chứng khoán",
+  "title": "Mở tài khoản chứng khoán online 2026: hướng dẫn từng bước, miễn phí, 5 phút",
+  "desc": "Hướng dẫn mở tài khoản chứng khoán online bằng CCCD trên điện thoại: điều kiện, giấy tờ, 6 bước eKYC, phí, nạp tiền và cách chọn công ty chứng khoán. Có người hỗ trợ 1:1.",
+  "body": [
+   [
+    "p",
+    "<b>Mở tài khoản chứng khoán</b> là bước đầu tiên để mua bán cổ phiếu, chứng chỉ quỹ hay trái phiếu tại Việt Nam. Hiện nay anh chị có thể mở hoàn toàn online trên điện thoại bằng căn cước công dân, miễn phí, mất khoảng 5–10 phút, không cần đến quầy."
+   ],
+   [
+    "cta",
+    "Mở tài khoản cùng Huy Nguyễn để được hướng dẫn đặt lệnh đầu tiên và hỗ trợ 1:1 trong 3 tháng đầu.",
+    "https://openaccount.vps.com.vn/?MKTID=BJIE",
+    "Mở tài khoản chứng khoán VPS (mã giới thiệu BJIE)"
+   ],
+   [
+    "h2",
+    "Điều kiện mở tài khoản chứng khoán"
+   ],
+   [
+    "ul",
+    [
+     "Công dân Việt Nam, thường cần đủ 18 tuổi để tự mở online.",
+     "Có căn cước công dân (CCCD) còn hạn.",
+     "Có số điện thoại và email chính chủ.",
+     "Có tài khoản ngân hàng cùng tên để nộp và rút tiền."
+    ]
+   ],
+   [
+    "h2",
+    "6 bước mở tài khoản chứng khoán online"
+   ],
+   [
+    "ol",
+    [
+     "Vào trang mở tài khoản hoặc tải ứng dụng của công ty chứng khoán.",
+     "Nhập số điện thoại, email và mã OTP được gửi về.",
+     "Chụp hai mặt CCCD, hệ thống tự đọc thông tin.",
+     "Quay khuôn mặt để xác thực (eKYC).",
+     "Nhập mã giới thiệu của người hỗ trợ, ví dụ <b>BJIE</b> nếu mở VPS cùng Huy Nguyễn.",
+     "Ký hợp đồng điện tử, nhận số tài khoản và mật khẩu qua tin nhắn hoặc email."
+    ]
+   ],
+   [
+    "h2",
+    "Mở tài khoản chứng khoán có mất phí không?"
+   ],
+   [
+    "p",
+    "Mở tài khoản thường miễn phí. Chi phí chỉ phát sinh khi giao dịch: phí mua bán theo biểu phí của từng công ty và thuế 0,1% khi bán. Xem chi tiết ở bài <a href=\"/f0/phi-giao-dich-va-thue-chung-khoan.html\">phí giao dịch và thuế chứng khoán</a>."
+   ],
+   [
+    "h2",
+    "Nên mở tài khoản ở công ty chứng khoán nào?"
+   ],
+   [
+    "p",
+    "Không có công ty tốt nhất cho mọi người. Người mới nên ưu tiên 3 điều: ứng dụng đặt lệnh ổn định, dễ dùng; phí hợp lý; và quan trọng nhất là <b>có người hướng dẫn</b> khi gặp khó trong vài tháng đầu. Chênh lệch vài phần nghìn phí ít quan trọng hơn việc tránh được một lệnh sai."
+   ],
+   [
+    "h2",
+    "Sau khi mở tài khoản cần làm gì?"
+   ],
+   [
+    "ol",
+    [
+     "Đổi mật khẩu đăng nhập và mã PIN đặt lệnh.",
+     "Liên kết tài khoản ngân hàng, nộp tiền thử một khoản nhỏ.",
+     "Đọc <a href=\"/f0/cach-doc-bang-gia-chung-khoan.html\">cách đọc bảng giá</a> và <a href=\"/f0/cach-mua-co-phieu-lan-dau.html\">cách mua cổ phiếu lần đầu</a>.",
+     "Tra cứu doanh nghiệp trước khi mua ở mục <a href=\"/ma/\">danh sách mã cổ phiếu</a>."
+    ]
+   ],
+   [
+    "h2",
+    "Vì sao nên mở tài khoản cùng Huy Nguyễn?"
+   ],
+   [
+    "ul",
+    [
+     "Được hướng dẫn cài ứng dụng, nạp tiền, đặt lệnh đầu tiên qua Zalo.",
+     "Vào nhóm Zalo cộng đồng nhận nhận định thị trường hằng ngày.",
+     "Dùng mục Hỏi đáp chuyên sâu PRO trên web để hỏi về từng mã.",
+     "Lệnh mua bán thật được chia sẻ công khai trên kênh YouTube Chứng Khoán Huy Nguyễn."
+    ]
+   ],
+   [
+    "cta",
+    "Mở tài khoản xong, nhắn Zalo 0365.188.286 để nhận mã kích hoạt khách hàng PRO trên web.",
+    "https://openaccount.vps.com.vn/?MKTID=BJIE",
+    "Mở tài khoản ngay"
+   ]
+  ],
+  "faq": [
+   [
+    "Mở tài khoản chứng khoán mất bao lâu?",
+    "Mở online mất khoảng 5–10 phút. Tài khoản thường dùng được ngay hoặc trong ngày làm việc."
+   ],
+   [
+    "Mở tài khoản chứng khoán cần giấy tờ gì?",
+    "Chỉ cần căn cước công dân còn hạn, số điện thoại, email và tài khoản ngân hàng cùng tên."
+   ],
+   [
+    "Mở tài khoản chứng khoán có mất phí không?",
+    "Thường miễn phí. Phí chỉ phát sinh khi mua bán cổ phiếu."
+   ],
+   [
+    "Một người được mở mấy tài khoản chứng khoán?",
+    "Mỗi người được mở tài khoản ở nhiều công ty chứng khoán khác nhau, nhưng mỗi công ty chỉ một tài khoản giao dịch cơ sở."
+   ],
+   [
+    "Mã giới thiệu khi mở tài khoản dùng để làm gì?",
+    "Mã giới thiệu gắn tài khoản với người hỗ trợ, để anh chị được hướng dẫn và tư vấn sau khi mở. Mã BJIE là mã của Huy Nguyễn tại VPS."
+   ]
+  ],
+  "rel": [
+   "cach-mo-tai-khoan-chung-khoan-vps",
+   "mo-tai-khoan-chung-khoan-tren-dien-thoai",
+   "cach-nap-tien-vao-tai-khoan-chung-khoan"
+  ]
+ },
+ {
+  "slug": "cach-mo-tai-khoan-chung-khoan-vps",
+  "kw": "mở tài khoản chứng khoán VPS",
+  "title": "Cách mở tài khoản chứng khoán VPS online, mã giới thiệu BJIE",
+  "desc": "Hướng dẫn mở tài khoản chứng khoán VPS online bằng CCCD, nhập mã giới thiệu BJIE để được Huy Nguyễn hỗ trợ 1:1, cách nạp tiền và đặt lệnh đầu tiên.",
+  "body": [
+   [
+    "p",
+    "VPS là một trong những công ty chứng khoán có nhiều nhà đầu tư cá nhân tại Việt Nam. Anh chị có thể mở tài khoản VPS online trên điện thoại trong vài phút."
+   ],
+   [
+    "h2",
+    "Các bước mở tài khoản VPS"
+   ],
+   [
+    "ol",
+    [
+     "Bấm vào link mở tài khoản VPS bên dưới (đã gắn sẵn mã giới thiệu BJIE).",
+     "Nhập số điện thoại, email, xác nhận OTP.",
+     "Chụp CCCD hai mặt và quay khuôn mặt.",
+     "Kiểm tra mã giới thiệu là <b>BJIE</b>.",
+     "Ký hợp đồng điện tử và nhận thông tin đăng nhập."
+    ]
+   ],
+   [
+    "cta",
+    "Link mở tài khoản VPS đã gắn mã giới thiệu BJIE của Huy Nguyễn.",
+    "https://openaccount.vps.com.vn/?MKTID=BJIE",
+    "Mở tài khoản VPS (mã BJIE)"
+   ],
+   [
+    "h2",
+    "Mã giới thiệu BJIE có lợi gì?"
+   ],
+   [
+    "ul",
+    [
+     "Được Huy Nguyễn hướng dẫn cài ứng dụng, nạp tiền, đặt lệnh đầu tiên.",
+     "Nhận mã kích hoạt khách hàng để mở mục Hỏi đáp chuyên sâu PRO trên web.",
+     "Tham gia nhóm Zalo nhận định thị trường hằng ngày."
+    ]
+   ],
+   [
+    "h2",
+    "Đã mở tài khoản nhưng quên nhập mã?"
+   ],
+   [
+    "p",
+    "Anh chị nhắn Zalo 0365.188.286 để được hướng dẫn cách bổ sung người hỗ trợ theo quy định của công ty chứng khoán."
+   ]
+  ],
+  "faq": [
+   [
+    "Mã giới thiệu VPS của Huy Nguyễn là gì?",
+    "Mã giới thiệu là BJIE."
+   ],
+   [
+    "Mở tài khoản VPS có mất phí không?",
+    "Mở tài khoản thường miễn phí, phí chỉ phát sinh khi giao dịch theo biểu phí của VPS."
+   ]
+  ],
+  "rel": [
+   "mo-tai-khoan-chung-khoan",
+   "cach-nap-tien-vao-tai-khoan-chung-khoan",
+   "cach-mua-co-phieu-lan-dau"
+  ]
+ },
+ {
+  "slug": "mo-tai-khoan-chung-khoan-tren-dien-thoai",
+  "kw": "mở tài khoản chứng khoán trên điện thoại",
+  "title": "Mở tài khoản chứng khoán trên điện thoại: làm tại nhà, không cần ra quầy",
+  "desc": "Cách mở tài khoản chứng khoán trên điện thoại bằng CCCD và eKYC, những lỗi hay gặp khi chụp giấy tờ, quay khuôn mặt và cách xử lý.",
+  "body": [
+   [
+    "p",
+    "Chỉ cần điện thoại có camera và mạng ổn định, anh chị mở được tài khoản chứng khoán tại nhà. Xem các bước chi tiết ở bài <a href=\"/mo-tai-khoan-chung-khoan.html\">mở tài khoản chứng khoán online</a>."
+   ],
+   [
+    "h2",
+    "Lỗi hay gặp và cách xử lý"
+   ],
+   [
+    "ul",
+    [
+     "Ảnh CCCD bị lóa: chụp nơi đủ sáng, không bật đèn flash, đặt thẻ trên nền tối.",
+     "Không nhận diện được khuôn mặt: bỏ kính, khẩu trang, nhìn thẳng camera.",
+     "Không nhận được OTP: kiểm tra số điện thoại, chờ 1–2 phút rồi gửi lại.",
+     "Thông tin CCCD sai: sửa trực tiếp trước khi ký hợp đồng."
+    ]
+   ],
+   [
+    "h2",
+    "Bảo mật tài khoản"
+   ],
+   [
+    "ul",
+    [
+     "Không chia sẻ mật khẩu, mã PIN, mã OTP cho bất kỳ ai, kể cả người tự xưng nhân viên.",
+     "Chỉ dùng ứng dụng chính thức của công ty chứng khoán.",
+     "Bật xác thực hai lớp nếu có."
+    ]
+   ],
+   [
+    "cta",
+    "Cần người hướng dẫn qua điện thoại? Mở tài khoản cùng Huy Nguyễn.",
+    "https://openaccount.vps.com.vn/?MKTID=BJIE",
+    "Mở tài khoản (mã BJIE)"
+   ]
+  ],
+  "faq": [
+   [
+    "Mở tài khoản trên điện thoại có an toàn không?",
+    "An toàn nếu làm trên ứng dụng hoặc trang web chính thức và không chia sẻ mã OTP."
+   ],
+   [
+    "Không có tài khoản ngân hàng có mở được không?",
+    "Vẫn mở được, nhưng cần tài khoản ngân hàng cùng tên để rút tiền."
+   ]
+  ],
+  "rel": [
+   "mo-tai-khoan-chung-khoan",
+   "cach-mo-tai-khoan-chung-khoan-vps",
+   "cach-nap-tien-vao-tai-khoan-chung-khoan"
+  ]
+ },
+ {
+  "slug": "cach-nap-tien-vao-tai-khoan-chung-khoan",
+  "kw": "nạp tiền vào tài khoản chứng khoán",
+  "title": "Cách nạp tiền vào tài khoản chứng khoán và rút tiền về ngân hàng",
+  "desc": "Hướng dẫn nạp tiền vào tài khoản chứng khoán bằng chuyển khoản, nội dung chuyển khoản, thời gian tiền về, cách rút tiền và các lỗi thường gặp.",
+  "body": [
+   [
+    "h2",
+    "Nạp tiền"
+   ],
+   [
+    "ol",
+    [
+     "Mở ứng dụng chứng khoán, vào mục Nộp tiền để xem số tài khoản nhận và nội dung chuyển khoản.",
+     "Chuyển khoản từ ngân hàng cùng tên với đúng nội dung hướng dẫn.",
+     "Tiền thường về trong vài phút, sau đó có thể đặt lệnh mua."
+    ]
+   ],
+   [
+    "h2",
+    "Rút tiền"
+   ],
+   [
+    "p",
+    "Vào mục Rút tiền hoặc Chuyển tiền ra ngân hàng, chọn tài khoản ngân hàng đã đăng ký. Tiền bán cổ phiếu về tài khoản theo chu kỳ T+2, xem bài <a href=\"/f0/t-2-la-gi.html\">T+2 là gì</a>."
+   ],
+   [
+    "h2",
+    "Lỗi thường gặp"
+   ],
+   [
+    "ul",
+    [
+     "Ghi sai nội dung chuyển khoản: liên hệ người hỗ trợ để được ghi nhận thủ công.",
+     "Chuyển từ tài khoản khác tên: có thể bị từ chối hoặc chậm xử lý."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Nạp tiền vào tài khoản chứng khoán bao lâu thì về?",
+    "Thường vài phút trong giờ làm việc nếu chuyển đúng nội dung."
+   ],
+   [
+    "Có giới hạn số tiền nạp không?",
+    "Tùy hạn mức chuyển khoản của ngân hàng anh chị dùng."
+   ]
+  ],
+  "rel": [
+   "mo-tai-khoan-chung-khoan",
+   "cach-mua-co-phieu-lan-dau",
+   "t-2-la-gi"
+  ]
+ },
+ {
+  "slug": "mo-tai-khoan-chung-khoan-cho-sinh-vien",
+  "kw": "mở tài khoản chứng khoán cho sinh viên",
+  "title": "Sinh viên có nên mở tài khoản chứng khoán? Bắt đầu với số vốn nhỏ",
+  "desc": "Sinh viên mở tài khoản chứng khoán cần gì, nên bắt đầu với bao nhiêu tiền, học gì trước và những rủi ro cần tránh khi còn đi học.",
+  "body": [
+   [
+    "p",
+    "Sinh viên đủ 18 tuổi có CCCD là mở được tài khoản online. Bắt đầu sớm giúp học được kỷ luật đầu tư khi số tiền còn nhỏ, sai sót không quá đắt."
+   ],
+   [
+    "h2",
+    "Nên bắt đầu thế nào?"
+   ],
+   [
+    "ol",
+    [
+     "Mở tài khoản theo hướng dẫn ở bài <a href=\"/mo-tai-khoan-chung-khoan.html\">mở tài khoản chứng khoán</a>.",
+     "Học 5 khái niệm: P/E, P/B, ROE, cổ tức, cắt lỗ.",
+     "Bắt đầu với vài triệu đồng, mua lô lẻ cổ phiếu doanh nghiệp tốt.",
+     "Tuyệt đối không vay tiền, không dùng margin."
+    ]
+   ],
+   [
+    "h2",
+    "Rủi ro cần tránh"
+   ],
+   [
+    "ul",
+    [
+     "Nhóm phím hàng thu phí, hứa lãi cao.",
+     "Dùng tiền học phí, tiền sinh hoạt để đầu tư.",
+     "Lướt sóng liên tục khi chưa hiểu thị trường."
+    ]
+   ],
+   [
+    "cta",
+    "Có người hướng dẫn từ đầu sẽ đỡ mất tiền học phí thị trường.",
+    "https://openaccount.vps.com.vn/?MKTID=BJIE",
+    "Mở tài khoản cùng Huy Nguyễn"
+   ]
+  ],
+  "faq": [
+   [
+    "Sinh viên chưa đủ 18 tuổi có mở được không?",
+    "Thường cần đủ 18 tuổi để tự mở online; người chưa đủ tuổi cần người đại diện theo quy định của từng công ty."
+   ],
+   [
+    "Sinh viên nên đầu tư bao nhiêu tiền?",
+    "Chỉ dùng tiền nhàn rỗi, mất cũng không ảnh hưởng việc học và sinh hoạt."
+   ]
+  ],
+  "rel": [
+   "mo-tai-khoan-chung-khoan",
+   "dau-tu-chung-khoan-voi-10-trieu",
+   "sai-lam-cua-f0"
+  ]
+ },
+ {
+  "slug": "chung-khoan-la-gi",
+  "kw": "chứng khoán là gì",
+  "title": "Chứng khoán là gì? Giải thích dễ hiểu cho người mới bắt đầu (F0)",
+  "desc": "Chứng khoán là gì, cổ phiếu là gì, vì sao giá lên xuống và người mới nên bắt đầu từ đâu. Giải thích dễ hiểu bằng ví dụ thực tế trên thị trường Việt Nam.",
+  "body": [
+   [
+    "p",
+    "Chứng khoán là giấy tờ (nay chủ yếu là dữ liệu điện tử) chứng nhận quyền sở hữu hoặc quyền đòi nợ của người nắm giữ. Ở Việt Nam, khi nói \"chơi chứng khoán\", đa số người ta nói về <b>cổ phiếu</b>: mua cổ phiếu là mua một phần nhỏ của doanh nghiệp."
+   ],
+   [
+    "h2",
+    "Cổ phiếu là gì?"
+   ],
+   [
+    "p",
+    "Một công ty có 1 tỷ cổ phiếu, anh chị mua 1.000 cổ phiếu tức là sở hữu một phần triệu công ty. Công ty làm ăn có lãi thì phần lãi đó thuộc về cổ đông, có thể được chia cổ tức hoặc giữ lại để mở rộng kinh doanh, làm giá trị doanh nghiệp tăng lên."
+   ],
+   [
+    "h2",
+    "Vì sao giá cổ phiếu lên xuống?"
+   ],
+   [
+    "p",
+    "Giá trên sàn do người mua và người bán quyết định mỗi phiên. Về dài hạn, giá đi theo <b>lợi nhuận</b> của doanh nghiệp. Về ngắn hạn, giá chịu ảnh hưởng của tâm lý đám đông, lãi suất, dòng tiền và tin tức. Vì vậy cùng một doanh nghiệp tốt, mua đúng giá thì lãi, mua lúc quá đắt vẫn có thể lỗ nặng."
+   ],
+   [
+    "h2",
+    "Ba sàn chứng khoán ở Việt Nam"
+   ],
+   [
+    "ul",
+    [
+     "HOSE (Sở Giao dịch Chứng khoán TP.HCM): doanh nghiệp lớn, biên độ dao động ±7% mỗi phiên.",
+     "HNX (Sở Giao dịch Chứng khoán Hà Nội): biên độ ±10%.",
+     "UPCoM: thị trường cho doanh nghiệp chưa niêm yết, biên độ ±15%."
+    ]
+   ],
+   [
+    "h2",
+    "Người mới nên bắt đầu từ đâu?"
+   ],
+   [
+    "p",
+    "Mở tài khoản chứng khoán, học 5 khái niệm nền tảng (P/E, P/B, ROE, cổ tức, cắt lỗ), bắt đầu bằng số tiền nhỏ và chỉ mua doanh nghiệp anh chị hiểu. Xem lộ trình chi tiết ở các bài bên dưới."
+   ]
+  ],
+  "faq": [
+   [
+    "Chứng khoán và cổ phiếu khác nhau thế nào?",
+    "Cổ phiếu là một loại chứng khoán. Chứng khoán còn gồm trái phiếu, chứng chỉ quỹ, chứng quyền và phái sinh."
+   ],
+   [
+    "Cần bao nhiêu tiền để bắt đầu?",
+    "Không có mức tối thiểu bắt buộc. Nhiều người bắt đầu với vài triệu đồng để học cách đặt lệnh trước khi tăng vốn."
+   ]
+  ],
+  "rel": [
+   "cach-mo-tai-khoan-chung-khoan",
+   "cach-mua-co-phieu-lan-dau",
+   "sai-lam-cua-f0"
+  ]
+ },
+ {
+  "slug": "cach-mo-tai-khoan-chung-khoan",
+  "kw": "mở tài khoản chứng khoán",
+  "title": "Cách mở tài khoản chứng khoán online trong 5 phút (cho người mới)",
+  "desc": "Hướng dẫn mở tài khoản chứng khoán online bằng CCCD trên điện thoại: cần gì, các bước, lưu ý chọn công ty chứng khoán và phí giao dịch.",
+  "body": [
+   [
+    "p",
+    "Xem bản hướng dẫn đầy đủ, cập nhật 2026 ở trang <a href=\"/mo-tai-khoan-chung-khoan.html\">mở tài khoản chứng khoán online</a>."
+   ],
+   [
+    "p",
+    "Hiện nay hầu hết công ty chứng khoán cho mở tài khoản online bằng định danh điện tử (eKYC): chụp căn cước công dân, quay khuôn mặt, ký hợp đồng điện tử. Toàn bộ mất khoảng 5–10 phút và miễn phí."
+   ],
+   [
+    "h2",
+    "Cần chuẩn bị gì?"
+   ],
+   [
+    "ul",
+    [
+     "Căn cước công dân còn hạn.",
+     "Số điện thoại và email chính chủ.",
+     "Tài khoản ngân hàng cùng tên để nộp và rút tiền."
+    ]
+   ],
+   [
+    "h2",
+    "Các bước mở tài khoản"
+   ],
+   [
+    "ol",
+    [
+     "Tải ứng dụng hoặc vào trang mở tài khoản của công ty chứng khoán.",
+     "Nhập số điện thoại, email, nhận mã OTP.",
+     "Chụp hai mặt CCCD và quay khuôn mặt để xác thực.",
+     "Chọn mã giới thiệu của người hỗ trợ (nếu có) để được tư vấn sau này.",
+     "Ký hợp đồng điện tử, nhận số tài khoản và mật khẩu đăng nhập."
+    ]
+   ],
+   [
+    "h2",
+    "Chọn công ty chứng khoán thế nào?"
+   ],
+   [
+    "p",
+    "Nên xem 3 thứ: ứng dụng đặt lệnh ổn định, phí giao dịch hợp lý và có người hỗ trợ khi cần. Với người mới, có người hướng dẫn trong vài tháng đầu quan trọng hơn chênh lệch vài phần nghìn phí."
+   ],
+   [
+    "cta",
+    "Mở tài khoản cùng Huy Nguyễn để được hỗ trợ 1:1 trong giai đoạn đầu.",
+    "https://openaccount.vps.com.vn/?MKTID=BJIE",
+    "Mở tài khoản VPS (mã giới thiệu BJIE)"
+   ]
+  ],
+  "faq": [
+   [
+    "Mở tài khoản chứng khoán có mất phí không?",
+    "Thông thường miễn phí. Phí chỉ phát sinh khi giao dịch mua bán."
+   ],
+   [
+    "Có cần nộp tiền ngay sau khi mở không?",
+    "Không bắt buộc. Anh chị nộp tiền khi sẵn sàng mua cổ phiếu đầu tiên."
+   ]
+  ],
+  "rel": [
+   "cach-mua-co-phieu-lan-dau",
+   "phi-giao-dich-va-thue-chung-khoan",
+   "chung-khoan-la-gi"
+  ]
+ },
+ {
+  "slug": "cach-mua-co-phieu-lan-dau",
+  "kw": "cách mua cổ phiếu",
+  "title": "Cách mua cổ phiếu lần đầu: hướng dẫn từng bước cho F0",
+  "desc": "Hướng dẫn mua cổ phiếu lần đầu: nộp tiền, chọn mã, đặt lệnh LO, ATO, ATC, lô chẵn lô lẻ, giờ giao dịch và khi nào cổ phiếu về tài khoản.",
+  "body": [
+   [
+    "h2",
+    "Bước 1: Nộp tiền vào tài khoản"
+   ],
+   [
+    "p",
+    "Chuyển khoản từ ngân hàng cùng tên vào tài khoản chứng khoán theo hướng dẫn trên ứng dụng. Tiền thường về trong vài phút."
+   ],
+   [
+    "h2",
+    "Bước 2: Chọn mã và mức giá"
+   ],
+   [
+    "p",
+    "Trước khi mua, xem doanh nghiệp làm gì, lợi nhuận mấy quý gần nhất, P/E so với ngành và xu hướng giá. Anh chị có thể tra nhanh ở mục <a href=\"/#soichart\">Soi chart</a> và <a href=\"/#bctc\">Đánh giá BCTC</a> trên web."
+   ],
+   [
+    "h2",
+    "Bước 3: Đặt lệnh"
+   ],
+   [
+    "ul",
+    [
+     "Lệnh LO (giới hạn): mua đúng giá mình đặt hoặc tốt hơn. Phù hợp nhất cho người mới.",
+     "Lệnh ATO, ATC: khớp ở giá mở cửa hoặc đóng cửa, dễ khớp nhưng không kiểm soát được giá.",
+     "Lô chẵn là bội số của 100 cổ phiếu; lô lẻ từ 1 đến 99 cổ phiếu, đặt riêng."
+    ]
+   ],
+   [
+    "h2",
+    "Giờ giao dịch sàn HOSE"
+   ],
+   [
+    "ul",
+    [
+     "9:00–9:15: phiên mở cửa (ATO).",
+     "9:15–11:30 và 13:00–14:30: khớp lệnh liên tục.",
+     "14:30–14:45: phiên đóng cửa (ATC)."
+    ]
+   ],
+   [
+    "h2",
+    "Bước 4: Khi nào cổ phiếu về tài khoản?"
+   ],
+   [
+    "p",
+    "Cổ phiếu mua hôm nay (ngày T) về tài khoản vào phiên chiều ngày T+2 và có thể bán từ lúc đó. Xem thêm bài <a href=\"/f0/t-2-la-gi.html\">T+2 là gì</a>."
+   ],
+   [
+    "h2",
+    "Bước 5: Đặt sẵn mức cắt lỗ"
+   ],
+   [
+    "p",
+    "Ghi lại mức giá sẽ bán nếu mình sai, ví dụ thấp hơn giá mua 7–8%. Đây là thói quen quan trọng nhất của người mới."
+   ]
+  ],
+  "faq": [
+   [
+    "Mua cổ phiếu tối thiểu bao nhiêu?",
+    "Có thể mua lô lẻ từ 1 cổ phiếu. Lô chẵn là 100 cổ phiếu."
+   ],
+   [
+    "Đặt lệnh ngoài giờ được không?",
+    "Nhiều công ty cho đặt lệnh trước, lệnh sẽ được đưa vào sàn khi phiên giao dịch bắt đầu."
+   ]
+  ],
+  "rel": [
+   "cach-doc-bang-gia-chung-khoan",
+   "t-2-la-gi",
+   "cat-lo-la-gi"
+  ]
+ },
+ {
+  "slug": "dau-tu-chung-khoan-voi-10-trieu",
+  "kw": "đầu tư chứng khoán với 10 triệu",
+  "title": "Đầu tư chứng khoán với 10 triệu: bắt đầu thế nào để không mất tiền oan",
+  "desc": "Có 10 triệu có nên đầu tư chứng khoán? Cách phân bổ vốn nhỏ, chọn cổ phiếu, kỳ vọng lợi nhuận thực tế và những sai lầm cần tránh.",
+  "body": [
+   [
+    "p",
+    "10 triệu đủ để bắt đầu học thật với tiền thật. Mục tiêu năm đầu không phải là giàu nhanh mà là <b>không mất tiền oan</b> và hình thành kỷ luật."
+   ],
+   [
+    "h2",
+    "Phân bổ 10 triệu thế nào?"
+   ],
+   [
+    "ul",
+    [
+     "Chỉ mua 1–3 mã, mỗi mã không quá 40% vốn.",
+     "Giữ 20–30% tiền mặt để mua thêm khi có cơ hội rõ ràng.",
+     "Không dùng margin (vay ký quỹ) khi chưa có kinh nghiệm."
+    ]
+   ],
+   [
+    "h2",
+    "Kỳ vọng lợi nhuận thực tế"
+   ],
+   [
+    "p",
+    "Lãi suất tiết kiệm là mốc so sánh. Nếu cả năm không vượt được tiết kiệm sau khi trừ phí, cách đầu tư đang có vấn đề. Đừng tin những lời hứa lãi vài chục phần trăm mỗi tháng."
+   ],
+   [
+    "h2",
+    "Vốn nhỏ nên chọn cổ phiếu nào?"
+   ],
+   [
+    "p",
+    "Không có mã đúng cho mọi người. Tiêu chí an toàn cho người mới: doanh nghiệp có lãi đều nhiều năm, ROE trên 15%, nợ vay không quá cao, thanh khoản tốt. Tra nhanh bằng <a href=\"/#bang\">bộ lọc cổ phiếu</a> trên web."
+   ],
+   [
+    "h2",
+    "Tích lũy đều đặn"
+   ],
+   [
+    "p",
+    "Mỗi tháng góp thêm một khoản cố định giúp giảm rủi ro mua đúng đỉnh và tạo thói quen tiết kiệm."
+   ]
+  ],
+  "faq": [
+   [
+    "10 triệu mua được mấy cổ phiếu?",
+    "Tùy giá. Cổ phiếu giá 20.000đ thì 10 triệu mua được khoảng 500 cổ phiếu (chưa tính phí)."
+   ],
+   [
+    "Có nên vay thêm để đầu tư?",
+    "Không nên khi mới bắt đầu. Vay làm khuếch đại cả lãi lẫn lỗ."
+   ]
+  ],
+  "rel": [
+   "margin-la-gi",
+   "sai-lam-cua-f0",
+   "cach-chon-co-phieu-cho-nguoi-moi"
+  ]
+ },
+ {
+  "slug": "cach-doc-bang-gia-chung-khoan",
+  "kw": "cách đọc bảng giá chứng khoán",
+  "title": "Cách đọc bảng giá chứng khoán: màu tím, xanh, đỏ, vàng nghĩa là gì",
+  "desc": "Hướng dẫn đọc bảng giá chứng khoán cho F0: giá trần, sàn, tham chiếu, màu sắc, dư mua dư bán, khối lượng và khối ngoại.",
+  "body": [
+   [
+    "h2",
+    "Ba mức giá quan trọng"
+   ],
+   [
+    "ul",
+    [
+     "Giá tham chiếu (vàng): giá đóng cửa phiên trước, mốc tính tăng giảm.",
+     "Giá trần (tím): mức cao nhất được phép trong phiên.",
+     "Giá sàn (xanh lam): mức thấp nhất được phép trong phiên."
+    ]
+   ],
+   [
+    "h2",
+    "Màu sắc trên bảng giá"
+   ],
+   [
+    "ul",
+    [
+     "Tím: tăng trần.",
+     "Xanh lá: tăng.",
+     "Vàng: đứng giá tham chiếu.",
+     "Đỏ: giảm.",
+     "Xanh lam: giảm sàn."
+    ]
+   ],
+   [
+    "h2",
+    "Biên độ dao động"
+   ],
+   [
+    "p",
+    "HOSE ±7%, HNX ±10%, UPCoM ±15% so với giá tham chiếu. Ngày đầu tiên lên sàn biên độ rộng hơn."
+   ],
+   [
+    "h2",
+    "Dư mua, dư bán và khớp lệnh"
+   ],
+   [
+    "p",
+    "Ba cột dư mua là các mức giá người mua đang chờ, ba cột dư bán là giá người bán đang chờ. Cột khớp lệnh cho biết giá và khối lượng vừa giao dịch. Dư mua trần lớn thường cho thấy lực cầu mạnh."
+   ],
+   [
+    "h2",
+    "Khối ngoại"
+   ],
+   [
+    "p",
+    "Cột NN mua, NN bán cho biết nhà đầu tư nước ngoài đang mua hay bán ròng. Xem bảng giá trực tiếp ở mục <a href=\"/#banggia\">Bảng giá</a> trên web."
+   ]
+  ],
+  "faq": [
+   [
+    "Đơn vị giá trên bảng là gì?",
+    "Giá hiển thị theo nghìn đồng. 25,5 nghĩa là 25.500 đồng mỗi cổ phiếu."
+   ],
+   [
+    "Khối lượng hiển thị theo đơn vị nào?",
+    "Thường là cổ phiếu, một số bảng giá rút gọn theo đơn vị 10 cổ phiếu."
+   ]
+  ],
+  "rel": [
+   "cach-mua-co-phieu-lan-dau",
+   "vn-index-la-gi",
+   "t-2-la-gi"
+  ]
+ },
+ {
+  "slug": "pe-la-gi",
+  "kw": "P/E là gì",
+  "title": "P/E là gì? Cách dùng chỉ số P/E để biết cổ phiếu đắt hay rẻ",
+  "desc": "P/E là gì, công thức tính, P/E bao nhiêu là rẻ, vì sao P/E thấp chưa chắc tốt. Ví dụ dễ hiểu và cách so sánh P/E theo ngành.",
+  "body": [
+   [
+    "p",
+    "<b>P/E = Giá cổ phiếu ÷ EPS</b> (lợi nhuận trên mỗi cổ phiếu trong 12 tháng gần nhất). P/E 10 nghĩa là nhà đầu tư trả 10 đồng cho 1 đồng lợi nhuận mỗi năm."
+   ],
+   [
+    "h2",
+    "P/E bao nhiêu là rẻ?"
+   ],
+   [
+    "p",
+    "Không có con số chung. Hãy so P/E với chính doanh nghiệp đó trong quá khứ, với các công ty cùng ngành và với trung vị thị trường. Web có sẵn công cụ <a href=\"/#bang\">định giá so sánh</a> hiển thị P/E so với trung vị."
+   ],
+   [
+    "h2",
+    "Vì sao P/E thấp chưa chắc tốt?"
+   ],
+   [
+    "ul",
+    [
+     "Lợi nhuận có thể đến từ khoản bất thường, năm sau không lặp lại.",
+     "Ngành đang đi xuống nên thị trường trả giá thấp.",
+     "Doanh nghiệp tăng trưởng nhanh thường có P/E cao hơn và vẫn hợp lý."
+    ]
+   ],
+   [
+    "h2",
+    "Dùng P/E kèm chỉ số nào?"
+   ],
+   [
+    "p",
+    "Kết hợp với ROE (hiệu quả sử dụng vốn), tăng trưởng lợi nhuận và P/B. Một doanh nghiệp P/E vừa phải, ROE cao, lợi nhuận tăng đều là điểm khởi đầu tốt để tìm hiểu thêm."
+   ]
+  ],
+  "faq": [
+   [
+    "EPS là gì?",
+    "EPS là lợi nhuận sau thuế chia cho số cổ phiếu đang lưu hành."
+   ],
+   [
+    "Doanh nghiệp lỗ thì P/E thế nào?",
+    "Khi lỗ, EPS âm nên P/E không có ý nghĩa và thường không hiển thị."
+   ]
+  ],
+  "rel": [
+   "cach-chon-co-phieu-cho-nguoi-moi",
+   "co-tuc-la-gi",
+   "phan-tich-co-ban-va-ky-thuat"
+  ]
+ },
+ {
+  "slug": "cat-lo-la-gi",
+  "kw": "cắt lỗ là gì",
+  "title": "Cắt lỗ là gì? Quy tắc cắt lỗ đơn giản giúp F0 sống sót",
+  "desc": "Cắt lỗ trong chứng khoán là gì, nên cắt lỗ bao nhiêu phần trăm, vì sao người mới hay gồng lỗ và cách đặt mức cắt lỗ trước khi mua.",
+  "body": [
+   [
+    "p",
+    "Cắt lỗ là bán cổ phiếu khi giá đi ngược dự tính để giữ phần vốn còn lại. Đây không phải thất bại mà là chi phí của việc đầu tư."
+   ],
+   [
+    "h2",
+    "Vì sao phải cắt lỗ sớm?"
+   ],
+   [
+    "p",
+    "Giảm 10% cần tăng 11% để hòa vốn. Giảm 50% cần tăng 100%. Lỗ càng sâu càng khó gỡ, đó là lý do người gồng lỗ thường mất nhiều năm mới về bờ."
+   ],
+   [
+    "h2",
+    "Đặt mức cắt lỗ thế nào?"
+   ],
+   [
+    "ul",
+    [
+     "Xác định trước khi mua, không quyết định lúc đang hoảng.",
+     "Mức phổ biến cho cổ phiếu tăng trưởng: 7–8% dưới giá mua.",
+     "Hoặc đặt dưới vùng hỗ trợ gần nhất trên biểu đồ.",
+     "Không bình quân giá xuống khi xu hướng đã gãy."
+    ]
+   ],
+   [
+    "h2",
+    "Công cụ tính nhanh"
+   ],
+   [
+    "p",
+    "Dùng mục <a href=\"/#congcu\">Quản trị rủi ro</a> trên web để tính giá cắt lỗ và mức cần tăng để hòa vốn."
+   ]
+  ],
+  "faq": [
+   [
+    "Cắt lỗ xong giá tăng lại thì sao?",
+    "Có thể xảy ra. Nếu doanh nghiệp vẫn tốt, mua lại khi xu hướng xác nhận. Cắt lỗ là để bảo vệ vốn trước những lần giảm sâu."
+   ],
+   [
+    "Có nên đặt lệnh cắt lỗ tự động?",
+    "Nhiều ứng dụng có lệnh điều kiện. Hữu ích cho người không theo dõi bảng giá liên tục."
+   ]
+  ],
+  "rel": [
+   "sai-lam-cua-f0",
+   "margin-la-gi",
+   "phan-tich-co-ban-va-ky-thuat"
+  ]
+ },
+ {
+  "slug": "margin-la-gi",
+  "kw": "margin là gì",
+  "title": "Margin là gì? Vay ký quỹ chứng khoán lợi hại thế nào",
+  "desc": "Margin (vay ký quỹ) là gì, cách tính sức mua, call margin, bán giải chấp và vì sao người mới không nên dùng margin.",
+  "body": [
+   [
+    "p",
+    "Margin là việc vay tiền công ty chứng khoán để mua thêm cổ phiếu, dùng chính cổ phiếu và tiền trong tài khoản làm tài sản đảm bảo."
+   ],
+   [
+    "h2",
+    "Ví dụ dễ hiểu"
+   ],
+   [
+    "p",
+    "Có 100 triệu, vay thêm 100 triệu để mua 200 triệu cổ phiếu. Cổ phiếu tăng 20% thì lãi 40 triệu, tức 40% vốn. Nhưng giảm 20% thì lỗ 40 triệu, chưa tính lãi vay."
+   ],
+   [
+    "h2",
+    "Call margin và bán giải chấp"
+   ],
+   [
+    "p",
+    "Khi giá giảm làm tỷ lệ tài sản đảm bảo xuống dưới mức quy định, công ty chứng khoán yêu cầu nộp thêm tiền (call margin). Không nộp kịp, cổ phiếu bị bán ra (giải chấp), thường ở giá rất xấu, kéo theo chuỗi giảm sàn."
+   ],
+   [
+    "h2",
+    "Khi nào có thể dùng margin?"
+   ],
+   [
+    "ul",
+    [
+     "Đã có kinh nghiệm qua ít nhất một chu kỳ tăng giảm.",
+     "Thị trường đang trong xu hướng tăng rõ ràng.",
+     "Luôn có mức cắt lỗ và không vay hết sức mua."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Lãi margin bao nhiêu?",
+    "Tùy công ty chứng khoán và gói vay, tính theo ngày trên số tiền vay."
+   ],
+   [
+    "Mã nào được vay margin?",
+    "Mỗi công ty có danh sách mã cho vay và tỷ lệ riêng, thay đổi theo thời kỳ."
+   ]
+  ],
+  "rel": [
+   "cat-lo-la-gi",
+   "dau-tu-chung-khoan-voi-10-trieu",
+   "sai-lam-cua-f0"
+  ]
+ },
+ {
+  "slug": "t-2-la-gi",
+  "kw": "T+2 là gì",
+  "title": "T+2 là gì? Khi nào cổ phiếu và tiền về tài khoản",
+  "desc": "Chu kỳ thanh toán T+2 trong chứng khoán Việt Nam: mua hôm nay khi nào bán được, bán hôm nay khi nào có tiền, ứng trước tiền bán.",
+  "body": [
+   [
+    "p",
+    "T là ngày giao dịch. <b>T+2</b> nghĩa là việc thanh toán hoàn tất sau 2 ngày làm việc."
+   ],
+   [
+    "h2",
+    "Mua cổ phiếu"
+   ],
+   [
+    "p",
+    "Mua ngày T, cổ phiếu về tài khoản phiên chiều ngày T+2 và có thể bán từ lúc đó. Ví dụ mua thứ Hai, chiều thứ Tư bán được. Ngày nghỉ lễ, cuối tuần không tính."
+   ],
+   [
+    "h2",
+    "Bán cổ phiếu"
+   ],
+   [
+    "p",
+    "Bán ngày T, tiền về tài khoản ngày T+2. Nếu cần tiền sớm, có thể dùng dịch vụ ứng trước tiền bán và trả một khoản phí nhỏ."
+   ],
+   [
+    "h2",
+    "Vì sao F0 cần nhớ T+2?"
+   ],
+   [
+    "p",
+    "Trong 2 ngày chờ hàng về, giá có thể biến động mạnh và anh chị không bán được. Đó là lý do không nên mua đuổi những phiên tăng quá nóng."
+   ]
+  ],
+  "faq": [
+   [
+    "Mua thứ Sáu thì khi nào bán được?",
+    "Chiều thứ Ba tuần sau, nếu không có ngày nghỉ lễ."
+   ],
+   [
+    "Tiền bán cổ phiếu có dùng mua mã khác ngay được không?",
+    "Được. Sức mua thường được cộng ngay sau khi lệnh bán khớp."
+   ]
+  ],
+  "rel": [
+   "cach-mua-co-phieu-lan-dau",
+   "cach-doc-bang-gia-chung-khoan",
+   "phi-giao-dich-va-thue-chung-khoan"
+  ]
+ },
+ {
+  "slug": "co-tuc-la-gi",
+  "kw": "cổ tức là gì",
+  "title": "Cổ tức là gì? Cổ tức tiền mặt và cổ tức cổ phiếu khác nhau thế nào",
+  "desc": "Cổ tức là gì, ngày đăng ký cuối cùng, ngày giao dịch không hưởng quyền, cách tính cổ tức, thuế cổ tức và vì sao giá bị điều chỉnh sau khi chia.",
+  "body": [
+   [
+    "p",
+    "Cổ tức là phần lợi nhuận doanh nghiệp chia cho cổ đông. Ở Việt Nam, tỷ lệ cổ tức tính trên mệnh giá 10.000đ: cổ tức 15% nghĩa là 1.500đ mỗi cổ phiếu."
+   ],
+   [
+    "h2",
+    "Hai loại cổ tức phổ biến"
+   ],
+   [
+    "ul",
+    [
+     "Cổ tức tiền mặt: tiền về tài khoản, bị khấu trừ thuế thu nhập cá nhân 5%.",
+     "Cổ tức cổ phiếu: nhận thêm cổ phiếu, phần sở hữu được chia nhỏ ra, giá được điều chỉnh giảm tương ứng."
+    ]
+   ],
+   [
+    "h2",
+    "Mốc ngày cần nhớ"
+   ],
+   [
+    "p",
+    "Muốn nhận cổ tức, anh chị phải có tên trong danh sách cổ đông ở <b>ngày đăng ký cuối cùng</b>. Do T+2, cần mua trước ngày giao dịch không hưởng quyền. Xem lịch ở mục <a href=\"/#lichsk\">Lịch sự kiện</a> trên web."
+   ],
+   [
+    "h2",
+    "Tỷ suất cổ tức"
+   ],
+   [
+    "p",
+    "Tỷ suất cổ tức = cổ tức tiền mặt mỗi năm ÷ giá cổ phiếu. Doanh nghiệp trả cổ tức tiền đều đặn nhiều năm thường có dòng tiền khỏe."
+   ]
+  ],
+  "faq": [
+   [
+    "Nhận cổ tức xong giá giảm có bị lỗ không?",
+    "Giá điều chỉnh giảm đúng bằng phần cổ tức, tổng tài sản không đổi tại thời điểm chia."
+   ],
+   [
+    "Cổ tức cổ phiếu có bị thuế không?",
+    "Có, thuế 5% tính khi anh chị bán số cổ phiếu được chia."
+   ]
+  ],
+  "rel": [
+   "pe-la-gi",
+   "cach-chon-co-phieu-cho-nguoi-moi",
+   "phi-giao-dich-va-thue-chung-khoan"
+  ]
+ },
+ {
+  "slug": "vn-index-la-gi",
+  "kw": "VN-Index là gì",
+  "title": "VN-Index là gì? Chỉ số chứng khoán phản ánh điều gì",
+  "desc": "VN-Index là gì, tính thế nào, vì sao VN-Index tăng mà cổ phiếu của mình vẫn giảm, VN30 và HNX-Index khác gì.",
+  "body": [
+   [
+    "p",
+    "VN-Index là chỉ số đại diện cho toàn bộ cổ phiếu niêm yết trên sàn HOSE, tính theo vốn hóa thị trường. Mốc gốc là 100 điểm ngày 28/7/2000."
+   ],
+   [
+    "h2",
+    "Vì sao VN-Index tăng mà cổ phiếu mình giảm?"
+   ],
+   [
+    "p",
+    "Vì chỉ số tính theo vốn hóa: vài mã lớn như ngân hàng, Vingroup tăng mạnh có thể kéo cả chỉ số đi lên trong khi phần lớn cổ phiếu khác giảm. Hãy nhìn thêm số mã tăng, giảm và thanh khoản."
+   ],
+   [
+    "h2",
+    "Các chỉ số khác"
+   ],
+   [
+    "ul",
+    [
+     "VN30: 30 cổ phiếu vốn hóa và thanh khoản lớn nhất HOSE.",
+     "HNX-Index: đại diện sàn Hà Nội.",
+     "UPCoM-Index: đại diện thị trường UPCoM."
+    ]
+   ],
+   [
+    "h2",
+    "Theo dõi ở đâu?"
+   ],
+   [
+    "p",
+    "Xem biểu đồ VN-Index, VN30 cùng chỉ báo MA, RSI ở mục <a href=\"/#soichart\">Soi chart</a>, và sức mạnh dòng tiền ở mục <a href=\"/#dongtien\">Dòng tiền</a> trên web."
+   ]
+  ],
+  "faq": [
+   [
+    "VN-Index cao nhất là bao nhiêu?",
+    "Chỉ số đã nhiều lần lập đỉnh mới theo từng chu kỳ; xem số liệu cập nhật trên biểu đồ VN-Index của web."
+   ],
+   [
+    "Có mua được VN-Index không?",
+    "Có thể đầu tư gián tiếp qua quỹ ETF mô phỏng chỉ số."
+   ]
+  ],
+  "rel": [
+   "cach-doc-bang-gia-chung-khoan",
+   "phan-tich-co-ban-va-ky-thuat",
+   "chung-khoan-la-gi"
+  ]
+ },
+ {
+  "slug": "phi-giao-dich-va-thue-chung-khoan",
+  "kw": "phí giao dịch chứng khoán",
+  "title": "Phí giao dịch và thuế chứng khoán: người mới cần biết những khoản nào",
+  "desc": "Các loại phí khi mua bán cổ phiếu: phí giao dịch, thuế bán 0,1%, thuế cổ tức 5%, phí lưu ký, lãi margin và cách tính chi phí thực tế.",
+  "body": [
+   [
+    "h2",
+    "Phí giao dịch"
+   ],
+   [
+    "p",
+    "Tính trên giá trị mỗi lệnh mua và bán, mức cụ thể tùy công ty chứng khoán và gói dịch vụ."
+   ],
+   [
+    "h2",
+    "Thuế khi bán"
+   ],
+   [
+    "p",
+    "Khi bán cổ phiếu, nhà đầu tư cá nhân nộp thuế 0,1% trên giá trị bán, kể cả khi bán lỗ."
+   ],
+   [
+    "h2",
+    "Thuế cổ tức"
+   ],
+   [
+    "p",
+    "Cổ tức tiền mặt và cổ tức cổ phiếu chịu thuế thu nhập cá nhân 5%."
+   ],
+   [
+    "h2",
+    "Các khoản khác"
+   ],
+   [
+    "ul",
+    [
+     "Phí lưu ký chứng khoán, trừ định kỳ, rất nhỏ.",
+     "Lãi vay margin nếu có vay.",
+     "Phí ứng trước tiền bán nếu dùng."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ"
+   ],
+   [
+    "p",
+    "Mua và bán 50 triệu cổ phiếu, với phí 0,15% mỗi chiều và thuế bán 0,1%, tổng chi phí khoảng 200.000đ. Lướt sóng càng nhiều thì phí và thuế càng ăn mòn lợi nhuận."
+   ]
+  ],
+  "faq": [
+   [
+    "Bán lỗ có phải nộp thuế không?",
+    "Có. Thuế 0,1% tính trên giá trị bán, không tính trên lãi."
+   ],
+   [
+    "Thuế có được tự động khấu trừ không?",
+    "Có, công ty chứng khoán khấu trừ và nộp thay."
+   ]
+  ],
+  "rel": [
+   "cach-mo-tai-khoan-chung-khoan",
+   "t-2-la-gi",
+   "co-tuc-la-gi"
+  ]
+ },
+ {
+  "slug": "sai-lam-cua-f0",
+  "kw": "sai lầm khi đầu tư chứng khoán",
+  "title": "7 sai lầm khiến F0 mất tiền khi mới chơi chứng khoán",
+  "desc": "Những sai lầm phổ biến của người mới đầu tư chứng khoán: mua theo tin đồn, gồng lỗ, all-in, dùng margin sớm, lướt sóng liên tục và cách tránh.",
+  "body": [
+   [
+    "ol",
+    [
+     "Mua theo tin đồn, hội nhóm hô hào mà không xem doanh nghiệp làm gì.",
+     "Mua đuổi phiên tăng trần, nhất là sau một chuỗi tăng nóng.",
+     "Không đặt mức cắt lỗ, gồng lỗ từ 10% thành 50%.",
+     "Dồn hết tiền vào một mã (all-in).",
+     "Dùng margin khi chưa trải qua một lần thị trường giảm mạnh.",
+     "Bình quân giá xuống khi xu hướng đã gãy.",
+     "Lướt sóng liên tục, phí và thuế ăn mòn lợi nhuận."
+    ]
+   ],
+   [
+    "h2",
+    "Cách tránh"
+   ],
+   [
+    "p",
+    "Viết kế hoạch trước mỗi lệnh: vì sao mua, mua giá nào, chốt lời ở đâu, cắt lỗ ở đâu. Không có kế hoạch thì không mua. Bài học thực tế từ các lệnh công khai xem ở <a href=\"/hoc/\">Thư viện bài học</a>."
+   ],
+   [
+    "h2",
+    "Bài học từ thị trường"
+   ],
+   [
+    "p",
+    "Giá rẻ chưa phải là đáy, doanh nghiệp tốt chưa chắc là giá tốt. Biết mua là bạc, biết bán mới là vàng."
+   ]
+  ],
+  "faq": [
+   [
+    "F0 nên đầu tư ngắn hạn hay dài hạn?",
+    "Nên bắt đầu trung và dài hạn với doanh nghiệp tốt, vừa ít áp lực vừa ít phí."
+   ],
+   [
+    "Có nên tham gia nhóm phím hàng?",
+    "Cẩn thận với nhóm hứa lợi nhuận cao, thu phí trước hoặc hô mua mã thanh khoản thấp."
+   ]
+  ],
+  "rel": [
+   "cat-lo-la-gi",
+   "margin-la-gi",
+   "dau-tu-chung-khoan-voi-10-trieu"
+  ]
+ },
+ {
+  "slug": "cach-chon-co-phieu-cho-nguoi-moi",
+  "kw": "cách chọn cổ phiếu",
+  "title": "Cách chọn cổ phiếu cho người mới: 5 tiêu chí đơn giản",
+  "desc": "Người mới nên chọn cổ phiếu thế nào: 5 tiêu chí về lợi nhuận, ROE, nợ vay, định giá và thanh khoản, kèm công cụ lọc cổ phiếu miễn phí.",
+  "body": [
+   [
+    "p",
+    "Không có mã nào phù hợp cho tất cả mọi người, nhưng có bộ lọc giúp loại bớt rủi ro. Năm tiêu chí dưới đây là điểm khởi đầu."
+   ],
+   [
+    "ol",
+    [
+     "Lợi nhuận dương và tăng đều ít nhất 3 năm.",
+     "ROE trên 15%: doanh nghiệp dùng vốn hiệu quả.",
+     "Nợ vay không quá cao so với vốn chủ sở hữu.",
+     "Định giá hợp lý: P/E, P/B không quá cao so với ngành.",
+     "Thanh khoản đủ lớn để mua bán dễ dàng."
+    ]
+   ],
+   [
+    "h2",
+    "Lọc nhanh trên web"
+   ],
+   [
+    "p",
+    "Mục <a href=\"/#bang\">Bộ lọc cổ phiếu</a> cho phép đặt điều kiện P/E, P/B, ROE, cổ tức, vốn hóa và trả về danh sách mã phù hợp. Sau đó xem <a href=\"/#bctc\">đánh giá BCTC</a> và <a href=\"/#soichart\">xu hướng giá</a> trước khi quyết định."
+   ],
+   [
+    "h2",
+    "Đặt câu hỏi chuyên sâu"
+   ],
+   [
+    "p",
+    "Khách hàng PRO có thể hỏi đáp chuyên sâu từng mã ở mục <a href=\"/#hoidap\">Hỏi đáp PRO</a>."
+   ]
+  ],
+  "faq": [
+   [
+    "Có nên mua cổ phiếu giá rẻ (penny)?",
+    "Giá thấp không có nghĩa là rẻ. Nhiều mã penny có lợi nhuận kém và dễ bị đầu cơ."
+   ],
+   [
+    "Nên giữ bao nhiêu mã?",
+    "Người mới nên giữ 3–5 mã để dễ theo dõi."
+   ]
+  ],
+  "rel": [
+   "pe-la-gi",
+   "co-tuc-la-gi",
+   "phan-tich-co-ban-va-ky-thuat"
+  ]
+ },
+ {
+  "slug": "phan-tich-co-ban-va-ky-thuat",
+  "kw": "phân tích cơ bản và phân tích kỹ thuật",
+  "title": "Phân tích cơ bản và phân tích kỹ thuật: F0 nên học cái nào trước",
+  "desc": "Phân tích cơ bản là gì, phân tích kỹ thuật là gì, ưu nhược điểm và cách kết hợp hai phương pháp để chọn mã và chọn điểm mua.",
+  "body": [
+   [
+    "h2",
+    "Phân tích cơ bản: mua cái gì"
+   ],
+   [
+    "p",
+    "Xem doanh nghiệp làm gì, lợi nhuận, nợ vay, dòng tiền, định giá. Trả lời câu hỏi: doanh nghiệp này có đáng sở hữu không và giá hiện tại đắt hay rẻ."
+   ],
+   [
+    "h2",
+    "Phân tích kỹ thuật: mua lúc nào"
+   ],
+   [
+    "p",
+    "Dùng biểu đồ giá, khối lượng, đường trung bình MA20, MA50, MA200, chỉ báo RSI để xác định xu hướng và điểm vào lệnh."
+   ],
+   [
+    "h2",
+    "Kết hợp cả hai"
+   ],
+   [
+    "p",
+    "Dùng cơ bản để chọn doanh nghiệp tốt, dùng kỹ thuật để chọn thời điểm và đặt cắt lỗ. Thêm lớp vĩ mô (lãi suất, tỷ giá, dòng tiền) để biết thị trường chung đang thuận hay nghịch."
+   ],
+   [
+    "h2",
+    "Học ở đâu?"
+   ],
+   [
+    "p",
+    "Seri <a href=\"/hoc/\">Kiến thức đầu tư nền tảng</a> và các video trên kênh <a href=\"https://www.youtube.com/@chungkhoanhuynguyen\" rel=\"noopener\">YouTube Chứng Khoán Huy Nguyễn</a> giải thích từng khái niệm bằng ví dụ thực tế."
+   ]
+  ],
+  "faq": [
+   [
+    "Người mới nên học cái nào trước?",
+    "Nên học cơ bản trước để biết mình đang sở hữu gì, sau đó học kỹ thuật để chọn điểm mua bán."
+   ],
+   [
+    "Chỉ dùng kỹ thuật có được không?",
+    "Có thể với giao dịch ngắn hạn, nhưng rủi ro cao hơn nếu doanh nghiệp yếu."
+   ]
+  ],
+  "rel": [
+   "pe-la-gi",
+   "cat-lo-la-gi",
+   "vn-index-la-gi"
+  ]
+ }
 ]
