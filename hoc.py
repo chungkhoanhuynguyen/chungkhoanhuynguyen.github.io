@@ -41,7 +41,7 @@ def head(title, desc, url, img, ld):
 <meta property="og:type" content="article"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{img}"><meta property="og:locale" content="vi_VN"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/img/fav-32.png"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&family=Playfair+Display:wght@800;900&display=swap">
 <style>{CSS}</style><script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script></head><body>
-<header class="top"><div class="in"><a class="brand" href="/">HUY NGUYỄN <b>·</b> CHỨNG KHOÁN</a><nav class="nav"><a href="/ma/">Mã CP</a><a href="/f0/">F0</a><a href="/hoc/">Bài học</a><a class="hide" href="/">Bảng giá &amp; định giá</a><a href="{YT}?sub_confirmation=1" rel="noopener">YouTube</a></nav></div></header>"""
+<header class="top"><div class="in"><a class="brand" href="/">HUY NGUYỄN <b>·</b> CHỨNG KHOÁN</a><nav class="nav"><a href="/mo-tai-khoan-chung-khoan.html">Mở TK</a><a href="/ma/">Mã CP</a><a href="/f0/">F0</a><a href="/hoc/">Bài học</a><a class="hide" href="/">Bảng giá &amp; định giá</a><a href="{YT}?sub_confirmation=1" rel="noopener">YouTube</a></nav></div></header>"""
 
 FOOT = """<footer>© Chứng Khoán Huy Nguyễn · <a href="/">chungkhoanhuynguyen.com</a><br>Nội dung chia sẻ kiến thức và quan điểm cá nhân, không phải khuyến nghị mua bán.</footer></body></html>"""
 
@@ -112,6 +112,7 @@ for f in os.listdir(os.path.join(ROOT, "hoc")):
 # ---- Cẩm nang F0 (/f0/): bài viết chuẩn SEO cho người mới, nội dung trong _f0/bai.json ----
 F = json.load(open(os.path.join(ROOT, "_f0/bai.json"), encoding="utf-8"))
 FM = {x["slug"]: x for x in F}
+FP = lambda x: ("/%s.html" if x.get("root") else "/f0/%s.html") % x["slug"]
 os.makedirs(os.path.join(ROOT, "f0"), exist_ok=True)
 fkeep = set()
 FDATE = "2026-10-30"
@@ -121,7 +122,7 @@ def blk(t, c):
     if t in ("ul", "ol"): return "<%s>%s</%s>" % (t, "".join("<li>%s</li>" % x for x in c), t)
     return ""
 for x in F:
-    url = f"{B}/f0/{x['slug']}.html"
+    url = B + FP(x)
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": B + "/"},
@@ -142,20 +143,20 @@ for x in F:
         else:
             p.append(blk(b[0], b[1]))
     p.append("<h2>Câu hỏi thường gặp</h2>" + "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in x["faq"]))
-    p.append('<h2>Đọc tiếp</h2><ul>' + "".join(f'<li><a href="/f0/{r}.html">{e(FM[r]["title"])}</a></li>' for r in x["rel"] if r in FM) + '<li><a href="/hoc/">Thư viện bài học có video</a></li></ul>')
+    p.append('<h2>Đọc tiếp</h2><ul>' + "".join(f'<li><a href="{FP(FM[r])}">{e(FM[r]["title"])}</a></li>' for r in x["rel"] if r in FM) + '<li><a href="/hoc/">Thư viện bài học có video</a></li></ul>')
     p.append(f'<div class="cta"><a class="btn b1" href="{YT}?sub_confirmation=1" rel="noopener">Đăng ký kênh YouTube</a><a class="btn b2" href="/">Bảng giá &amp; định giá cổ phiếu</a><a class="btn b2" href="https://zalo.me/g/jbnbiq994" rel="noopener">Nhóm Zalo hỏi đáp</a></div>')
     p.append("</article></main>" + FOOT)
-    fn = f"f0/{x['slug']}.html"; fkeep.add(fn)
+    fn = FP(x)[1:]; fkeep.add(fn)
     open(os.path.join(ROOT, fn), "w", encoding="utf-8").write("\n".join(p))
 url = B + "/f0/"
 ld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Cẩm nang chứng khoán cho người mới (F0)", "url": url, "inLanguage": "vi",
-      "hasPart": [{"@type": "Article", "headline": x["title"][:110], "url": f"{B}/f0/{x['slug']}.html"} for x in F]}
+      "hasPart": [{"@type": "Article", "headline": x["title"][:110], "url": B + FP(x)} for x in F]}
 p = [head("Chứng khoán cho người mới bắt đầu: cẩm nang F0 từ A đến Z | Chứng Khoán Huy Nguyễn",
           "Cẩm nang chứng khoán cho người mới: chứng khoán là gì, mở tài khoản, cách mua cổ phiếu, đọc bảng giá, P/E, cắt lỗ, margin, T+2, cổ tức, phí và thuế.",
           url, B + "/img/og.png", ld), "<main>",
      '<div class="bc"><a href="/">Trang chủ</a> › Cẩm nang F0</div><h1>Chứng khoán cho người mới bắt đầu: cẩm nang F0</h1>',
      '<p class="meta">Học theo thứ tự từ trên xuống. Mỗi bài ngắn gọn, ví dụ thực tế trên thị trường Việt Nam.</p><ol class="f0l">' +
-     "".join(f'<li><a href="/f0/{x["slug"]}.html"><b>{e(x["title"])}</b></a><br><small>{e(x["desc"])}</small></li>' for x in F) + "</ol>",
+     "".join(f'<li><a href="{FP(x)}"><b>{e(x["title"])}</b></a><br><small>{e(x["desc"])}</small></li>' for x in F) + "</ol>",
      f'<div class="cta"><a class="btn b1" href="/hoc/">Thư viện bài học có video</a><a class="btn b2" href="{YT}?sub_confirmation=1" rel="noopener">Kênh YouTube</a></div></main>' + FOOT]
 open(os.path.join(ROOT, "f0/index.html"), "w", encoding="utf-8").write("\n".join(p))
 for f in os.listdir(os.path.join(ROOT, "f0")):
@@ -164,7 +165,7 @@ for f in os.listdir(os.path.join(ROOT, "f0")):
 today = now.strftime("%Y-%m-%d")
 U = [(B + "/", today, "daily", "1.0"), (B + "/hoc/", today, "daily", "0.9"), (B + "/bao-cao-2026.html", today, "weekly", "0.7")]
 U += [(f"{B}/hoc/{v['slug']}.html", v["d"], "monthly", "0.8") for v in R]
-U += [(B + "/f0/", today, "weekly", "0.9")] + [(f"{B}/f0/{x['slug']}.html", FDATE, "monthly", "0.8") for x in F]
+U += [(B + "/f0/", today, "weekly", "0.9")] + [(B + FP(x), FDATE, "monthly", "0.9" if x.get("root") else "0.8") for x in F]
 open(os.path.join(ROOT, "sitemap.xml"), "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     "".join(f"<url><loc>{u}</loc><lastmod>{d}</lastmod><changefreq>{c}</changefreq><priority>{pr}</priority></url>\n" for u, d, c, pr in U) + "</urlset>\n")
 print("hoc:", len(R), "bai")
