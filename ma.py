@@ -117,6 +117,21 @@ for s in SYMS:
          f"<p>{intro}</p>"]
     if val: P.append("<p>Về định giá: " + "; ".join(e(v) for v in val) + ".</p>")
     P.append("<h2>Chỉ số chính của " + e(s) + "</h2><table class='mt'>" + "".join(f"<tr><td>{e(a)}</td><td class='r'><b>{e(bv)}</b></td><td class='n'>{e(cv)}</td></tr>" for a, bv, cv in rows) + "</table>")
+    if k and k.get("h"):
+        H = k["h"]; mx = max([abs(z[1]) for z in H] + [1e-9]); W0 = 640; bw = W0 / len(H)
+        svg = [f'<svg viewBox="0 0 {W0} 230" role="img" aria-label="Lợi nhuận sau thuế {e(s)} theo quý" style="width:100%;height:auto;max-width:720px">']
+        base = 170
+        for j, (tgq, lnv, rvv) in enumerate(H):
+            hgt = abs(lnv) / mx * 140; x0 = j * bw + bw * 0.18; col = "#0a8a4a" if lnv >= 0 else "#c0392b"
+            y0 = base - hgt if lnv >= 0 else base
+            svg.append(f'<rect x="{x0:.1f}" y="{y0:.1f}" width="{bw*0.64:.1f}" height="{max(hgt,1):.1f}" rx="3" fill="{col}"/>')
+            svg.append(f'<text x="{x0+bw*0.32:.1f}" y="{(y0-4 if lnv>=0 else y0+hgt+12):.1f}" font-size="11" text-anchor="middle" fill="#444">{nf(lnv,0)}</text>')
+            svg.append(f'<text x="{x0+bw*0.32:.1f}" y="222" font-size="11" text-anchor="middle" fill="#666">{e(tgq)}</text>')
+        svg.append(f'<line x1="0" y1="{base}" x2="{W0}" y2="{base}" stroke="#ccc"/></svg>')
+        P.append(f"<h2>Lợi nhuận sau thuế {e(s)} {len(H)} quý gần nhất (tỷ đồng)</h2>" + "".join(svg))
+        if any(z[2] for z in H):
+            lab2 = "Thu nhập lãi thuần" if k.get("form") == "bank" else "Doanh thu thuần"
+            P.append(f"<table class='mt'><tr><td><b>Quý</b></td><td class='r'><b>{lab2}</b></td><td class='r'><b>LNST</b></td></tr>" + "".join(f"<tr><td>{e(t1)}</td><td class='r'>{nf(r1,0)}</td><td class='r'>{nf(l1,0)}</td></tr>" for t1, l1, r1 in reversed(H[-8:])) + "</table>")
     if k:
         lab = {"pos": "Tích cực", "mid": "Trung tính", "neg": "Tiêu cực"}.get(k.get("v"), "")
         P.append(f"<h2>Kết quả kinh doanh {e(k.get('q',''))}</h2><p><span class='tag'>{e(lab)}</span></p><ul>" + "".join(f"<li>{e(i)}</li>" for i in k.get("info", [])) + "</ul>")
