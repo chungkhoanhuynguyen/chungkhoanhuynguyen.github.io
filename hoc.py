@@ -26,14 +26,14 @@ h3{font-size:18px;margin:22px 0 4px}.meta{color:var(--mute);font-size:14px}
 .vid{position:relative;aspect-ratio:16/9;margin:18px 0;border-radius:12px;overflow:hidden;background:#000}.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .sum{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:10px;padding:14px 16px;margin:16px 0}
 blockquote{margin:18px 0;padding:10px 16px;border-left:4px solid var(--acc);background:var(--panel);border-radius:8px;font-style:italic}
-.cta{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0}.btn{display:inline-block;padding:10px 16px;border-radius:999px;font-weight:700;text-decoration:none;font-size:15px}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0}.cta p{flex-basis:100%;margin:0}.f0l{padding-left:22px}.f0l li{margin:0 0 16px;line-height:1.5}.f0l small{color:var(--mute)}article ul,article ol{line-height:1.7}.btn{display:inline-block;padding:10px 16px;border-radius:999px;font-weight:700;text-decoration:none;font-size:15px}
 .b1{background:#c4302b;color:#fff}.b2{border:1px solid var(--line);background:var(--panel);color:var(--fg)}
 .pn{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:24px 0}.pn a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px;text-decoration:none;color:var(--fg);font-size:14px}.pn small{color:var(--mute);display:block}
 .src{font-size:13px;color:var(--mute);border-top:1px solid var(--line);margin-top:28px;padding-top:12px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin:12px 0 28px}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;text-decoration:none;color:var(--fg)}.card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}.card span{display:block;padding:10px 12px;font-weight:600;font-size:15px;line-height:1.45}
 footer{text-align:center;color:var(--mute);font-size:13px;padding:24px 16px;border-top:1px solid var(--line)}
-@media(max-width:560px){.pn{grid-template-columns:1fr}.nav a.hide{display:none}.brand{font-size:13px}.nav{gap:10px;font-size:13px}.top .in{gap:8px}}"""
+@media(max-width:560px){.pn{grid-template-columns:1fr}.nav a.hide{display:none}.brand{min-width:0;overflow:hidden;text-overflow:ellipsis}.brand{font-size:13px}.nav{gap:10px;font-size:13px}.top .in{gap:8px}}"""
 
 def head(title, desc, url, img, ld):
     return f"""<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://i.ytimg.com; frame-src https://www.youtube-nocookie.com; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests"><meta name="referrer" content="strict-origin-when-cross-origin">
@@ -41,9 +41,9 @@ def head(title, desc, url, img, ld):
 <meta property="og:type" content="article"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{img}"><meta property="og:locale" content="vi_VN"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/img/fav-32.png"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&family=Playfair+Display:wght@800;900&display=swap">
 <style>{CSS}</style><script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script></head><body>
-<header class="top"><div class="in"><a class="brand" href="/">HUY NGUYỄN <b>·</b> CHỨNG KHOÁN</a><nav class="nav"><a href="/hoc/">Bài học</a><a class="hide" href="/">Bảng giá &amp; định giá</a><a href="{YT}?sub_confirmation=1" rel="noopener">YouTube</a></nav></div></header>"""
+<header class="top"><div class="in"><a class="brand" href="/">HUY NGUYỄN <b>·</b> CHỨNG KHOÁN</a><nav class="nav"><a href="/f0/">F0</a><a href="/hoc/">Bài học</a><a class="hide" href="/">Bảng giá &amp; định giá</a><a href="{YT}?sub_confirmation=1" rel="noopener">YouTube</a></nav></div></header>"""
 
-FOOT = """<footer>© Chứng Khoán Huy Nguyễn · <a href="/">chungkhoanhuynguyen.com</a><br>Nội dung chia sẻ kiến thức và quan điểm cá nhân, không phải khuyến nghị mua bán. Video dùng giọng đọc AI.</footer></body></html>"""
+FOOT = """<footer>© Chứng Khoán Huy Nguyễn · <a href="/">chungkhoanhuynguyen.com</a><br>Nội dung chia sẻ kiến thức và quan điểm cá nhân, không phải khuyến nghị mua bán.</footer></body></html>"""
 
 def desc_of(v):
     s = v["sum"].replace("\n", " ")
@@ -108,9 +108,63 @@ open(os.path.join(ROOT, "hoc/index.html"), "w", encoding="utf-8").write("\n".joi
 for f in os.listdir(os.path.join(ROOT, "hoc")):
     if f != "index.html" and "hoc/" + f not in keep: os.remove(os.path.join(ROOT, "hoc", f))
 
+
+# ---- Cẩm nang F0 (/f0/): bài viết chuẩn SEO cho người mới, nội dung trong _f0/bai.json ----
+F = json.load(open(os.path.join(ROOT, "_f0/bai.json"), encoding="utf-8"))
+FM = {x["slug"]: x for x in F}
+os.makedirs(os.path.join(ROOT, "f0"), exist_ok=True)
+fkeep = set()
+FDATE = "2026-10-30"
+def blk(t, c):
+    if t == "p": return "<p>%s</p>" % c
+    if t == "h2": return "<h2>%s</h2>" % e(c)
+    if t in ("ul", "ol"): return "<%s>%s</%s>" % (t, "".join("<li>%s</li>" % x for x in c), t)
+    return ""
+for x in F:
+    url = f"{B}/f0/{x['slug']}.html"
+    ld = {"@context": "https://schema.org", "@graph": [
+        {"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": B + "/"},
+            {"@type": "ListItem", "position": 2, "name": "Cẩm nang F0", "item": B + "/f0/"},
+            {"@type": "ListItem", "position": 3, "name": x["title"], "item": url}]},
+        {"@type": "Article", "headline": x["title"][:110], "description": x["desc"], "image": [B + "/img/og.png"], "datePublished": FDATE + "T17:00:00+07:00", "dateModified": today_iso if False else FDATE + "T17:00:00+07:00",
+         "inLanguage": "vi", "mainEntityOfPage": url, "keywords": x["kw"] + ", chứng khoán cho người mới, F0",
+         "author": {"@type": "Person", "name": "Huy Nguyễn", "url": B + "/"},
+         "publisher": {"@type": "Organization", "name": "Chứng Khoán Huy Nguyễn", "logo": {"@type": "ImageObject", "url": B + "/img/icon-512.png"}}},
+        {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in x["faq"]]}]}
+    p = [head(x["title"] + " | Chứng Khoán Huy Nguyễn", x["desc"], url, B + "/img/og.png", ld), "<main><article>",
+         '<div class="bc"><a href="/">Trang chủ</a> › <a href="/f0/">Cẩm nang F0</a></div>',
+         f'<h1>{e(x["title"])}</h1><div class="meta">Cẩm nang chứng khoán cho người mới · Huy Nguyễn</div>',
+         f'<div class="sum"><b>Tóm tắt:</b> {e(x["desc"])}</div>']
+    for b in x["body"]:
+        if b[0] == "cta":
+            p.append(f'<div class="cta"><p>{e(b[1])}</p><a class="btn b1" href="{e(b[2])}" target="_blank" rel="noopener nofollow">{e(b[3])}</a></div>')
+        else:
+            p.append(blk(b[0], b[1]))
+    p.append("<h2>Câu hỏi thường gặp</h2>" + "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in x["faq"]))
+    p.append('<h2>Đọc tiếp</h2><ul>' + "".join(f'<li><a href="/f0/{r}.html">{e(FM[r]["title"])}</a></li>' for r in x["rel"] if r in FM) + '<li><a href="/hoc/">Thư viện bài học có video</a></li></ul>')
+    p.append(f'<div class="cta"><a class="btn b1" href="{YT}?sub_confirmation=1" rel="noopener">Đăng ký kênh YouTube</a><a class="btn b2" href="/">Bảng giá &amp; định giá cổ phiếu</a><a class="btn b2" href="https://zalo.me/g/jbnbiq994" rel="noopener">Nhóm Zalo hỏi đáp</a></div>')
+    p.append("</article></main>" + FOOT)
+    fn = f"f0/{x['slug']}.html"; fkeep.add(fn)
+    open(os.path.join(ROOT, fn), "w", encoding="utf-8").write("\n".join(p))
+url = B + "/f0/"
+ld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Cẩm nang chứng khoán cho người mới (F0)", "url": url, "inLanguage": "vi",
+      "hasPart": [{"@type": "Article", "headline": x["title"][:110], "url": f"{B}/f0/{x['slug']}.html"} for x in F]}
+p = [head("Chứng khoán cho người mới bắt đầu: cẩm nang F0 từ A đến Z | Chứng Khoán Huy Nguyễn",
+          "Cẩm nang chứng khoán cho người mới: chứng khoán là gì, mở tài khoản, cách mua cổ phiếu, đọc bảng giá, P/E, cắt lỗ, margin, T+2, cổ tức, phí và thuế.",
+          url, B + "/img/og.png", ld), "<main>",
+     '<div class="bc"><a href="/">Trang chủ</a> › Cẩm nang F0</div><h1>Chứng khoán cho người mới bắt đầu: cẩm nang F0</h1>',
+     '<p class="meta">Học theo thứ tự từ trên xuống. Mỗi bài ngắn gọn, ví dụ thực tế trên thị trường Việt Nam.</p><ol class="f0l">' +
+     "".join(f'<li><a href="/f0/{x["slug"]}.html"><b>{e(x["title"])}</b></a><br><small>{e(x["desc"])}</small></li>' for x in F) + "</ol>",
+     f'<div class="cta"><a class="btn b1" href="/hoc/">Thư viện bài học có video</a><a class="btn b2" href="{YT}?sub_confirmation=1" rel="noopener">Kênh YouTube</a></div></main>' + FOOT]
+open(os.path.join(ROOT, "f0/index.html"), "w", encoding="utf-8").write("\n".join(p))
+for f in os.listdir(os.path.join(ROOT, "f0")):
+    if f != "index.html" and "f0/" + f not in fkeep: os.remove(os.path.join(ROOT, "f0", f))
+
 today = now.strftime("%Y-%m-%d")
 U = [(B + "/", today, "daily", "1.0"), (B + "/hoc/", today, "daily", "0.9"), (B + "/bao-cao-2026.html", today, "weekly", "0.7")]
 U += [(f"{B}/hoc/{v['slug']}.html", v["d"], "monthly", "0.8") for v in R]
+U += [(B + "/f0/", today, "weekly", "0.9")] + [(f"{B}/f0/{x['slug']}.html", FDATE, "monthly", "0.8") for x in F]
 open(os.path.join(ROOT, "sitemap.xml"), "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     "".join(f"<url><loc>{u}</loc><lastmod>{d}</lastmod><changefreq>{c}</changefreq><priority>{pr}</priority></url>\n" for u, d, c, pr in U) + "</urlset>\n")
 print("hoc:", len(R), "bai")
