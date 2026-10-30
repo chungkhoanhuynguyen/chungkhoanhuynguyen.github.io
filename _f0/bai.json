@@ -1,5 +1,169 @@
 [
  {
+  "slug": "chung-khoan-la-gi",
+  "kw": "chứng khoán là gì",
+  "title": "Chứng khoán là gì? Giải thích dễ hiểu cho người mới bắt đầu (F0)",
+  "desc": "Chứng khoán là gì, cổ phiếu là gì, vì sao giá lên xuống và người mới nên bắt đầu từ đâu. Giải thích dễ hiểu bằng ví dụ thực tế trên thị trường Việt Nam.",
+  "body": [
+   [
+    "p",
+    "Chứng khoán là giấy tờ (nay chủ yếu là dữ liệu điện tử) chứng nhận quyền sở hữu hoặc quyền đòi nợ của người nắm giữ. Ở Việt Nam, khi nói \"chơi chứng khoán\", đa số người ta nói về <b>cổ phiếu</b>: mua cổ phiếu là mua một phần nhỏ của doanh nghiệp."
+   ],
+   [
+    "h2",
+    "Cổ phiếu là gì?"
+   ],
+   [
+    "p",
+    "Một công ty có 1 tỷ cổ phiếu, anh chị mua 1.000 cổ phiếu tức là sở hữu một phần triệu công ty. Công ty làm ăn có lãi thì phần lãi đó thuộc về cổ đông, có thể được chia cổ tức hoặc giữ lại để mở rộng kinh doanh, làm giá trị doanh nghiệp tăng lên."
+   ],
+   [
+    "h2",
+    "Vì sao giá cổ phiếu lên xuống?"
+   ],
+   [
+    "p",
+    "Giá trên sàn do người mua và người bán quyết định mỗi phiên. Về dài hạn, giá đi theo <b>lợi nhuận</b> của doanh nghiệp. Về ngắn hạn, giá chịu ảnh hưởng của tâm lý đám đông, lãi suất, dòng tiền và tin tức. Vì vậy cùng một doanh nghiệp tốt, mua đúng giá thì lãi, mua lúc quá đắt vẫn có thể lỗ nặng."
+   ],
+   [
+    "h2",
+    "Ba sàn chứng khoán ở Việt Nam"
+   ],
+   [
+    "ul",
+    [
+     "HOSE (Sở Giao dịch Chứng khoán TP.HCM): doanh nghiệp lớn, biên độ dao động ±7% mỗi phiên.",
+     "HNX (Sở Giao dịch Chứng khoán Hà Nội): biên độ ±10%.",
+     "UPCoM: thị trường cho doanh nghiệp chưa niêm yết, biên độ ±15%."
+    ]
+   ],
+   [
+    "h2",
+    "Người mới nên bắt đầu từ đâu?"
+   ],
+   [
+    "p",
+    "Mở tài khoản chứng khoán, học 5 khái niệm nền tảng (P/E, P/B, ROE, cổ tức, cắt lỗ), bắt đầu bằng số tiền nhỏ và chỉ mua doanh nghiệp anh chị hiểu. Xem lộ trình chi tiết ở các bài bên dưới."
+   ]
+  ],
+  "faq": [
+   [
+    "Chứng khoán và cổ phiếu khác nhau thế nào?",
+    "Cổ phiếu là một loại chứng khoán. Chứng khoán còn gồm trái phiếu, chứng chỉ quỹ, chứng quyền và phái sinh."
+   ],
+   [
+    "Cần bao nhiêu tiền để bắt đầu?",
+    "Không có mức tối thiểu bắt buộc. Nhiều người bắt đầu với vài triệu đồng để học cách đặt lệnh trước khi tăng vốn."
+   ]
+  ],
+  "rel": [
+   "cach-mo-tai-khoan-chung-khoan",
+   "cach-mua-co-phieu-lan-dau",
+   "sai-lam-cua-f0"
+  ],
+  "grp": 1,
+  "add": [
+   [
+    "h2",
+    "Ví dụ thực tế"
+   ],
+   [
+    "p",
+    "Giả sử công ty A có 100 triệu cổ phiếu và anh chị mua 1.000 cổ phiếu, tức sở hữu 0,001% công ty. Nếu công ty lãi 200 tỷ đồng, phần lãi tương ứng của anh chị là 2 triệu đồng. Công ty có thể chia một phần thành <a href=\"/f0/co-tuc-la-gi.html\">cổ tức</a>, phần còn lại giữ để mở rộng kinh doanh. Khi công ty làm ăn tốt hơn, nhiều người muốn mua, giá cổ phiếu có xu hướng tăng."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Cổ phiếu là phần sở hữu nhỏ của một doanh nghiệp.",
+     "Giá cổ phiếu lên xuống theo kết quả kinh doanh và cung cầu.",
+     "Người mới nên học nền tảng trước, bắt đầu với vốn nhỏ."
+    ]
+   ]
+  ]
+ },
+ {
+  "slug": "vn-index-la-gi",
+  "kw": "VN-Index là gì",
+  "title": "VN-Index là gì? Chỉ số chứng khoán phản ánh điều gì",
+  "desc": "VN-Index là gì, tính thế nào, vì sao VN-Index tăng mà cổ phiếu của mình vẫn giảm, VN30 và HNX-Index khác gì.",
+  "body": [
+   [
+    "p",
+    "VN-Index là chỉ số đại diện cho toàn bộ cổ phiếu niêm yết trên sàn HOSE, tính theo vốn hóa thị trường. Mốc gốc là 100 điểm ngày 28/7/2000."
+   ],
+   [
+    "h2",
+    "Vì sao VN-Index tăng mà cổ phiếu mình giảm?"
+   ],
+   [
+    "p",
+    "Vì chỉ số tính theo vốn hóa: vài mã lớn như ngân hàng, Vingroup tăng mạnh có thể kéo cả chỉ số đi lên trong khi phần lớn cổ phiếu khác giảm. Hãy nhìn thêm số mã tăng, giảm và thanh khoản."
+   ],
+   [
+    "h2",
+    "Các chỉ số khác"
+   ],
+   [
+    "ul",
+    [
+     "VN30: 30 cổ phiếu vốn hóa và thanh khoản lớn nhất HOSE.",
+     "HNX-Index: đại diện sàn Hà Nội.",
+     "UPCoM-Index: đại diện thị trường UPCoM."
+    ]
+   ],
+   [
+    "h2",
+    "Theo dõi ở đâu?"
+   ],
+   [
+    "p",
+    "Xem biểu đồ VN-Index, VN30 cùng chỉ báo MA, RSI ở mục <a href=\"/#soichart\">Soi chart</a>, và sức mạnh dòng tiền ở mục <a href=\"/#dongtien\">Dòng tiền</a> trên web."
+   ]
+  ],
+  "faq": [
+   [
+    "VN-Index cao nhất là bao nhiêu?",
+    "Chỉ số đã nhiều lần lập đỉnh mới theo từng chu kỳ; xem số liệu cập nhật trên biểu đồ VN-Index của web."
+   ],
+   [
+    "Có mua được VN-Index không?",
+    "Có thể đầu tư gián tiếp qua quỹ ETF mô phỏng chỉ số."
+   ]
+  ],
+  "rel": [
+   "cach-doc-bang-gia-chung-khoan",
+   "phan-tich-co-ban-va-ky-thuat",
+   "chung-khoan-la-gi"
+  ],
+  "grp": 1,
+  "add": [
+   [
+    "h2",
+    "Ví dụ thực tế"
+   ],
+   [
+    "p",
+    "Giả sử VN-Index hôm qua đóng cửa 1.300 điểm, hôm nay 1.313 điểm: chỉ số tăng 13 điểm, tức 1%. Nhưng nếu tăng chủ yếu nhờ vài cổ phiếu vốn hóa lớn, nhiều mã nhỏ vẫn có thể giảm. Vì vậy ngoài điểm số, hãy xem số mã tăng, giảm và thanh khoản. Cập nhật mỗi ngày ở <a href=\"/thi-truong-chung-khoan-hom-nay.html\">thị trường chứng khoán hôm nay</a>."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "VN-Index đo biến động chung của cổ phiếu trên HOSE.",
+     "Chỉ số chịu ảnh hưởng lớn từ các mã vốn hóa lớn.",
+     "Xem thêm độ rộng thị trường và thanh khoản, không chỉ điểm số."
+    ]
+   ]
+  ]
+ },
+ {
   "slug": "mo-tai-khoan-chung-khoan",
   "root": true,
   "kw": "mở tài khoản chứng khoán",
@@ -137,6 +301,21 @@
    "cach-mo-tai-khoan-chung-khoan-vps",
    "mo-tai-khoan-chung-khoan-tren-dien-thoai",
    "cach-nap-tien-vao-tai-khoan-chung-khoan"
+  ],
+  "grp": 1,
+  "add": [
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Mở tài khoản online bằng CCCD, miễn phí, khoảng 5–10 phút.",
+     "Chi phí chỉ phát sinh khi mua bán: phí giao dịch và thuế 0,1% khi bán.",
+     "Sau khi mở, nạp thử khoản nhỏ và học đọc bảng giá trước khi đặt lệnh."
+    ]
+   ]
   ]
  },
  {
@@ -214,6 +393,21 @@
    "mo-tai-khoan-chung-khoan",
    "cach-nap-tien-vao-tai-khoan-chung-khoan",
    "cach-mua-co-phieu-lan-dau"
+  ],
+  "grp": 1,
+  "add": [
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Chuẩn bị CCCD, số điện thoại, email và tài khoản ngân hàng chính chủ.",
+     "Làm theo các bước eKYC trên ứng dụng, nhận số tài khoản qua tin nhắn hoặc email.",
+     "Đổi mật khẩu, mã PIN ngay và học <a href=\"/f0/cac-loai-lenh-chung-khoan.html\">các loại lệnh</a> trước khi giao dịch."
+    ]
+   ]
   ]
  },
  {
@@ -272,6 +466,29 @@
    "mo-tai-khoan-chung-khoan",
    "cach-mo-tai-khoan-chung-khoan-vps",
    "cach-nap-tien-vao-tai-khoan-chung-khoan"
+  ],
+  "grp": 1,
+  "add": [
+   [
+    "h2",
+    "Ví dụ thực tế"
+   ],
+   [
+    "p",
+    "Giả sử anh chị mở tài khoản lúc 21h trên điện thoại. Chụp CCCD bị mờ, hệ thống báo lỗi đọc thông tin. Anh chị chuyển ra chỗ sáng, đặt CCCD trên nền tối, chụp lại là được. Sau khi quay mặt xác thực và ký hợp đồng điện tử, khoảng vài phút đến một ngày làm việc sẽ nhận số tài khoản. Sáng hôm sau, nạp thử 1 triệu đồng để kiểm tra tiền đã về tài khoản chứng khoán chưa."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Mở tài khoản trên điện thoại chỉ cần CCCD và vài phút.",
+     "Lỗi thường gặp là ảnh mờ, ánh sáng yếu, thông tin không khớp ngân hàng.",
+     "Bảo mật mật khẩu, mã PIN, không đưa OTP cho bất kỳ ai."
+    ]
+   ]
   ]
  },
  {
@@ -326,6 +543,29 @@
    "mo-tai-khoan-chung-khoan",
    "cach-mua-co-phieu-lan-dau",
    "t-2-la-gi"
+  ],
+  "grp": 1,
+  "add": [
+   [
+    "h2",
+    "Ví dụ thực tế"
+   ],
+   [
+    "p",
+    "Giả sử anh chị chuyển 5 triệu đồng từ ngân hàng vào tài khoản chứng khoán, ghi đúng nội dung theo hướng dẫn của ứng dụng. Thường vài phút sau tiền hiện trong mục sức mua. Hôm sau anh chị bán cổ phiếu được 3 triệu đồng: số tiền này về tài khoản theo chu kỳ <a href=\"/f0/t-2-la-gi.html\">T+2</a>, lúc đó mới rút về ngân hàng được (trừ khi dùng dịch vụ ứng trước tiền bán có tính phí)."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Nạp tiền bằng chuyển khoản từ tài khoản ngân hàng chính chủ, ghi đúng nội dung.",
+     "Tiền bán cổ phiếu cần chờ thanh toán T+2 mới rút được.",
+     "Nạp thử khoản nhỏ trước khi nạp số tiền lớn."
+    ]
+   ]
   ]
  },
  {
@@ -384,69 +624,29 @@
    "mo-tai-khoan-chung-khoan",
    "dau-tu-chung-khoan-voi-10-trieu",
    "sai-lam-cua-f0"
-  ]
- },
- {
-  "slug": "chung-khoan-la-gi",
-  "kw": "chứng khoán là gì",
-  "title": "Chứng khoán là gì? Giải thích dễ hiểu cho người mới bắt đầu (F0)",
-  "desc": "Chứng khoán là gì, cổ phiếu là gì, vì sao giá lên xuống và người mới nên bắt đầu từ đâu. Giải thích dễ hiểu bằng ví dụ thực tế trên thị trường Việt Nam.",
-  "body": [
-   [
-    "p",
-    "Chứng khoán là giấy tờ (nay chủ yếu là dữ liệu điện tử) chứng nhận quyền sở hữu hoặc quyền đòi nợ của người nắm giữ. Ở Việt Nam, khi nói \"chơi chứng khoán\", đa số người ta nói về <b>cổ phiếu</b>: mua cổ phiếu là mua một phần nhỏ của doanh nghiệp."
-   ],
+  ],
+  "grp": 1,
+  "add": [
    [
     "h2",
-    "Cổ phiếu là gì?"
+    "Ví dụ thực tế"
    ],
    [
     "p",
-    "Một công ty có 1 tỷ cổ phiếu, anh chị mua 1.000 cổ phiếu tức là sở hữu một phần triệu công ty. Công ty làm ăn có lãi thì phần lãi đó thuộc về cổ đông, có thể được chia cổ tức hoặc giữ lại để mở rộng kinh doanh, làm giá trị doanh nghiệp tăng lên."
+    "Giả sử một bạn sinh viên mỗi tháng tiết kiệm được 1 triệu đồng. Thay vì dồn một lần vào cổ phiếu \"hot\", bạn mua đều chứng chỉ quỹ hoặc <a href=\"/f0/etf-la-gi.html\">ETF</a> mỗi tháng. Sau 12 tháng, bạn có 12 triệu vốn tích lũy, đã quen cách đặt lệnh, đọc bảng giá, và không bị áp lực vì số tiền mỗi lần nhỏ. Điều quý nhất là kinh nghiệm, không phải lợi nhuận năm đầu."
    ],
    [
     "h2",
-    "Vì sao giá cổ phiếu lên xuống?"
-   ],
-   [
-    "p",
-    "Giá trên sàn do người mua và người bán quyết định mỗi phiên. Về dài hạn, giá đi theo <b>lợi nhuận</b> của doanh nghiệp. Về ngắn hạn, giá chịu ảnh hưởng của tâm lý đám đông, lãi suất, dòng tiền và tin tức. Vì vậy cùng một doanh nghiệp tốt, mua đúng giá thì lãi, mua lúc quá đắt vẫn có thể lỗ nặng."
-   ],
-   [
-    "h2",
-    "Ba sàn chứng khoán ở Việt Nam"
+    "Tóm lại"
    ],
    [
     "ul",
     [
-     "HOSE (Sở Giao dịch Chứng khoán TP.HCM): doanh nghiệp lớn, biên độ dao động ±7% mỗi phiên.",
-     "HNX (Sở Giao dịch Chứng khoán Hà Nội): biên độ ±10%.",
-     "UPCoM: thị trường cho doanh nghiệp chưa niêm yết, biên độ ±15%."
+     "Sinh viên có thể mở tài khoản khi đủ tuổi theo quy định và có CCCD.",
+     "Bắt đầu với số vốn nhỏ, ưu tiên học hơn kiếm lời nhanh.",
+     "Tránh margin, tránh vay tiền và tránh nhóm hô hào mã."
     ]
-   ],
-   [
-    "h2",
-    "Người mới nên bắt đầu từ đâu?"
-   ],
-   [
-    "p",
-    "Mở tài khoản chứng khoán, học 5 khái niệm nền tảng (P/E, P/B, ROE, cổ tức, cắt lỗ), bắt đầu bằng số tiền nhỏ và chỉ mua doanh nghiệp anh chị hiểu. Xem lộ trình chi tiết ở các bài bên dưới."
    ]
-  ],
-  "faq": [
-   [
-    "Chứng khoán và cổ phiếu khác nhau thế nào?",
-    "Cổ phiếu là một loại chứng khoán. Chứng khoán còn gồm trái phiếu, chứng chỉ quỹ, chứng quyền và phái sinh."
-   ],
-   [
-    "Cần bao nhiêu tiền để bắt đầu?",
-    "Không có mức tối thiểu bắt buộc. Nhiều người bắt đầu với vài triệu đồng để học cách đặt lệnh trước khi tăng vốn."
-   ]
-  ],
-  "rel": [
-   "cach-mo-tai-khoan-chung-khoan",
-   "cach-mua-co-phieu-lan-dau",
-   "sai-lam-cua-f0"
   ]
  },
  {
@@ -517,6 +717,21 @@
    "cach-mua-co-phieu-lan-dau",
    "phi-giao-dich-va-thue-chung-khoan",
    "chung-khoan-la-gi"
+  ],
+  "grp": 1,
+  "add": [
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Chuẩn bị CCCD, số điện thoại, email, tài khoản ngân hàng chính chủ.",
+     "Mở online khoảng 5 phút, miễn phí.",
+     "Chọn công ty có ứng dụng ổn định và có người hướng dẫn trong thời gian đầu."
+    ]
+   ]
   ]
  },
  {
@@ -596,6 +811,21 @@
    "cach-doc-bang-gia-chung-khoan",
    "t-2-la-gi",
    "cat-lo-la-gi"
+  ],
+  "grp": 2,
+  "add": [
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Nộp tiền, chọn mã, đặt lệnh LO với số lượng là bội số 100.",
+     "Cổ phiếu về tài khoản theo chu kỳ T+2.",
+     "Đặt sẵn mức cắt lỗ ngay sau khi mua."
+    ]
+   ]
   ]
  },
  {
@@ -659,6 +889,29 @@
    "margin-la-gi",
    "sai-lam-cua-f0",
    "cach-chon-co-phieu-cho-nguoi-moi"
+  ],
+  "grp": 1,
+  "add": [
+   [
+    "h2",
+    "Ví dụ thực tế"
+   ],
+   [
+    "p",
+    "Giả sử anh chị có 10 triệu đồng. Chia 6 triệu cho 2 cổ phiếu thanh khoản tốt (mỗi mã 3 triệu, tức khoảng 100 cổ phiếu nếu giá 30.000đ), 2 triệu cho <a href=\"/f0/etf-la-gi.html\">ETF</a>, giữ 2 triệu tiền mặt. Mỗi mã đặt cắt lỗ 8%: nếu sai, mỗi lần chỉ mất khoảng 240.000đ. Mỗi tháng nạp thêm 1–2 triệu để tích lũy. Sau một năm, vốn tăng nhờ tích lũy đều và kinh nghiệm cũng tăng."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "10 triệu đủ để bắt đầu và học thực tế.",
+     "Chia 2–3 mã hoặc dùng ETF, luôn giữ một phần tiền mặt.",
+     "Tích lũy đều hàng tháng quan trọng hơn tìm mã tăng nhanh."
+    ]
+   ]
   ]
  },
  {
@@ -732,6 +985,29 @@
    "cach-mua-co-phieu-lan-dau",
    "vn-index-la-gi",
    "t-2-la-gi"
+  ],
+  "grp": 2,
+  "add": [
+   [
+    "h2",
+    "Ví dụ thực tế"
+   ],
+   [
+    "p",
+    "Giả sử bảng giá hiện cổ phiếu A: tham chiếu 20.000đ (vàng), trần 21.400đ (tím), sàn 18.600đ (xanh lam), giá khớp 20.500đ màu xanh lá, tăng 2,5%. Bên mua tốt nhất 20.450đ, bên bán tốt nhất 20.500đ. Muốn mua ngay, anh chị đặt LO 20.500đ; muốn chờ rẻ hơn, đặt 20.300đ và chấp nhận có thể không khớp. Xem thêm <a href=\"/f0/bien-do-gia-tran-san.html\">biên độ trần sàn</a>."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Ba mức giá quan trọng: tham chiếu, trần, sàn.",
+     "Màu sắc cho biết giá đang tăng, giảm, trần hay sàn.",
+     "Dư mua, dư bán giúp ước lượng giá có thể khớp."
+    ]
+   ]
   ]
  },
  {
@@ -787,6 +1063,29 @@
    "cach-chon-co-phieu-cho-nguoi-moi",
    "co-tuc-la-gi",
    "phan-tich-co-ban-va-ky-thuat"
+  ],
+  "grp": 3,
+  "add": [
+   [
+    "h2",
+    "Ví dụ thực tế: P/E như mua quán phở"
+   ],
+   [
+    "p",
+    "Giả sử anh chị mua lại một quán phở giá 1 tỷ đồng, mỗi năm quán lãi 100 triệu. P/E = 1 tỷ ÷ 100 triệu = 10, nghĩa là nếu lợi nhuận giữ nguyên, khoảng 10 năm hoàn vốn. Với cổ phiếu: giả sử cổ phiếu A giá 30.000đ, EPS 3.000đ thì P/E = 10. Cổ phiếu B giá 30.000đ, EPS 1.500đ thì P/E = 20, tức đắt gấp đôi xét theo lợi nhuận hiện tại, trừ khi B tăng trưởng nhanh hơn nhiều."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "P/E = giá ÷ EPS, giống số năm hoàn vốn nếu lợi nhuận không đổi.",
+     "So P/E với cùng ngành và lịch sử của chính doanh nghiệp.",
+     "Kết hợp với <a href=\"/f0/roe-eps-la-gi.html\">ROE, EPS</a> và <a href=\"/f0/pb-la-gi.html\">P/B</a> để đánh giá đầy đủ."
+    ]
+   ]
   ]
  },
  {
@@ -843,6 +1142,29 @@
    "sai-lam-cua-f0",
    "margin-la-gi",
    "phan-tich-co-ban-va-ky-thuat"
+  ],
+  "grp": 5,
+  "add": [
+   [
+    "h2",
+    "Ví dụ thực tế"
+   ],
+   [
+    "p",
+    "Giả sử anh chị mua 500 cổ phiếu A giá 20.000đ (10 triệu đồng), đặt cắt lỗ 7% tại 18.600đ. Giá về 18.600đ, anh chị bán, lỗ khoảng 700.000đ cộng phí thuế. Người không cắt lỗ giữ đến khi giá về 12.000đ thì lỗ 4 triệu, tức 40%, và cần lãi gần 67% mới gỡ được. Cắt lỗ nhỏ là cái giá rẻ để bảo vệ vốn."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Cắt lỗ là bán để giới hạn khoản lỗ khi dự đoán sai.",
+     "Đặt mức cắt lỗ trước khi mua, thường 5–10% hoặc dưới vùng hỗ trợ.",
+     "Lỗ càng sâu càng khó gỡ, nên cắt sớm và đúng kế hoạch."
+    ]
+   ]
   ]
  },
  {
@@ -898,6 +1220,21 @@
    "cat-lo-la-gi",
    "dau-tu-chung-khoan-voi-10-trieu",
    "sai-lam-cua-f0"
+  ],
+  "grp": 5,
+  "add": [
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Margin là vay tiền công ty chứng khoán để mua thêm cổ phiếu, phải trả lãi.",
+     "Đòn bẩy khuếch đại cả lãi lẫn lỗ, có thể bị bán giải chấp.",
+     "F0 chưa nên dùng margin khi chưa trải qua một lần thị trường giảm mạnh."
+    ]
+   ]
   ]
  },
  {
@@ -949,6 +1286,29 @@
    "cach-mua-co-phieu-lan-dau",
    "cach-doc-bang-gia-chung-khoan",
    "phi-giao-dich-va-thue-chung-khoan"
+  ],
+  "grp": 2,
+  "add": [
+   [
+    "h2",
+    "Ví dụ thực tế"
+   ],
+   [
+    "p",
+    "Giả sử anh chị mua 200 cổ phiếu A sáng thứ Hai. Theo T+2, cổ phiếu về tài khoản vào thứ Tư (tính ngày làm việc) và có thể bán từ phiên chiều thứ Tư. Nếu thứ Năm anh chị bán, tiền bán sẽ về tài khoản vào thứ Hai tuần sau, vì thứ Bảy và Chủ nhật không tính. Gặp ngày lễ thì cộng thêm."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "T+2 là 2 ngày làm việc sau ngày giao dịch.",
+     "Mua hôm nay, cổ phiếu về sau 2 ngày làm việc mới bán được.",
+     "Tiền bán cũng về theo T+2, cuối tuần và ngày lễ không tính."
+    ]
+   ]
   ]
  },
  {
@@ -1003,61 +1363,29 @@
    "pe-la-gi",
    "cach-chon-co-phieu-cho-nguoi-moi",
    "phi-giao-dich-va-thue-chung-khoan"
-  ]
- },
- {
-  "slug": "vn-index-la-gi",
-  "kw": "VN-Index là gì",
-  "title": "VN-Index là gì? Chỉ số chứng khoán phản ánh điều gì",
-  "desc": "VN-Index là gì, tính thế nào, vì sao VN-Index tăng mà cổ phiếu của mình vẫn giảm, VN30 và HNX-Index khác gì.",
-  "body": [
-   [
-    "p",
-    "VN-Index là chỉ số đại diện cho toàn bộ cổ phiếu niêm yết trên sàn HOSE, tính theo vốn hóa thị trường. Mốc gốc là 100 điểm ngày 28/7/2000."
-   ],
+  ],
+  "grp": 3,
+  "add": [
    [
     "h2",
-    "Vì sao VN-Index tăng mà cổ phiếu mình giảm?"
+    "Ví dụ thực tế"
    ],
    [
     "p",
-    "Vì chỉ số tính theo vốn hóa: vài mã lớn như ngân hàng, Vingroup tăng mạnh có thể kéo cả chỉ số đi lên trong khi phần lớn cổ phiếu khác giảm. Hãy nhìn thêm số mã tăng, giảm và thanh khoản."
+    "Giả sử anh chị có 1.000 cổ phiếu A. Công ty trả cổ tức tiền mặt 10% mệnh giá, tức 1.000đ/cổ phiếu. Anh chị nhận 1 triệu đồng, trừ thuế 5% còn 950.000đ. Nếu trả cổ tức bằng cổ phiếu tỷ lệ 10%, anh chị nhận thêm 100 cổ phiếu, nhưng giá được điều chỉnh giảm tương ứng vào ngày GDKHQ. Xem thêm <a href=\"/f0/chia-tach-co-phieu-thuong-phat-hanh-them.html\">cổ phiếu thưởng và phát hành thêm</a>."
    ],
    [
     "h2",
-    "Các chỉ số khác"
+    "Tóm lại"
    ],
    [
     "ul",
     [
-     "VN30: 30 cổ phiếu vốn hóa và thanh khoản lớn nhất HOSE.",
-     "HNX-Index: đại diện sàn Hà Nội.",
-     "UPCoM-Index: đại diện thị trường UPCoM."
+     "Cổ tức tính theo % mệnh giá 10.000đ, không theo giá thị trường.",
+     "Muốn nhận cổ tức phải mua trước ngày GDKHQ.",
+     "Cổ tức tiền mặt chịu thuế 5%; giá tham chiếu được điều chỉnh vào ngày GDKHQ."
     ]
-   ],
-   [
-    "h2",
-    "Theo dõi ở đâu?"
-   ],
-   [
-    "p",
-    "Xem biểu đồ VN-Index, VN30 cùng chỉ báo MA, RSI ở mục <a href=\"/#soichart\">Soi chart</a>, và sức mạnh dòng tiền ở mục <a href=\"/#dongtien\">Dòng tiền</a> trên web."
    ]
-  ],
-  "faq": [
-   [
-    "VN-Index cao nhất là bao nhiêu?",
-    "Chỉ số đã nhiều lần lập đỉnh mới theo từng chu kỳ; xem số liệu cập nhật trên biểu đồ VN-Index của web."
-   ],
-   [
-    "Có mua được VN-Index không?",
-    "Có thể đầu tư gián tiếp qua quỹ ETF mô phỏng chỉ số."
-   ]
-  ],
-  "rel": [
-   "cach-doc-bang-gia-chung-khoan",
-   "phan-tich-co-ban-va-ky-thuat",
-   "chung-khoan-la-gi"
   ]
  },
  {
@@ -1125,6 +1453,21 @@
    "cach-mo-tai-khoan-chung-khoan",
    "t-2-la-gi",
    "co-tuc-la-gi"
+  ],
+  "grp": 2,
+  "add": [
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Phí giao dịch tính cả khi mua và bán, theo biểu phí từng công ty.",
+     "Thuế 0,1% trên giá trị bán, kể cả khi bán lỗ.",
+     "Cổ tức tiền mặt chịu thuế 5%, thường được khấu trừ trước khi về tài khoản."
+    ]
+   ]
   ]
  },
  {
@@ -1176,6 +1519,29 @@
    "cat-lo-la-gi",
    "margin-la-gi",
    "dau-tu-chung-khoan-voi-10-trieu"
+  ],
+  "grp": 5,
+  "add": [
+   [
+    "h2",
+    "Ví dụ thực tế"
+   ],
+   [
+    "p",
+    "Giả sử anh chị có 50 triệu, nghe tin hô hào nên dồn hết vào một mã penny, thêm margin thành 80 triệu. Mã đó giảm 25%: tài khoản mất 20 triệu, tức 40% vốn thật, chưa tính lãi vay. Nếu ngay từ đầu chia 3 mã, không margin, đặt cắt lỗ 8%, thì dù sai cả 3 lần cũng chỉ mất khoảng 4 triệu. Cùng một thị trường, kết quả khác hẳn nhờ <a href=\"/f0/phan-bo-von-va-quan-tri-danh-muc.html\">phân bổ vốn</a> và kỷ luật."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Không mua theo tin đồn, không mua đuổi khi giá đã tăng nóng.",
+     "Không all-in, không dùng margin khi mới bắt đầu.",
+     "Luôn có kế hoạch mua, chốt lời và cắt lỗ trước khi đặt lệnh."
+    ]
+   ]
   ]
  },
  {
@@ -1229,6 +1595,29 @@
    "pe-la-gi",
    "co-tuc-la-gi",
    "phan-tich-co-ban-va-ky-thuat"
+  ],
+  "grp": 3,
+  "add": [
+   [
+    "h2",
+    "Ví dụ thực tế"
+   ],
+   [
+    "p",
+    "Giả sử anh chị đang cân nhắc 2 doanh nghiệp cùng ngành. Doanh nghiệp A: lợi nhuận tăng đều 4 năm, ROE khoảng 18%, nợ vay vừa phải, thanh khoản tốt. Doanh nghiệp B: lợi nhuận lúc lãi lúc lỗ, nợ vay lớn, thanh khoản thấp nhưng giá vừa tăng mạnh. Theo 5 tiêu chí, A là ứng viên để tìm hiểu sâu hơn, còn B nên để quan sát. Đọc thêm <a href=\"/f0/cach-doc-bao-cao-tai-chinh.html\">cách đọc báo cáo tài chính</a>."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Ưu tiên doanh nghiệp dễ hiểu, lợi nhuận tăng đều, ROE tốt.",
+     "Định giá hợp lý so với ngành, thanh khoản đủ để mua bán.",
+     "Lọc bằng số liệu trước, quyết định bằng kế hoạch rõ ràng."
+    ]
+   ]
   ]
  },
  {
@@ -1284,6 +1673,1952 @@
    "pe-la-gi",
    "cat-lo-la-gi",
    "vn-index-la-gi"
+  ],
+  "grp": 4,
+  "add": [
+   [
+    "h2",
+    "Ví dụ thực tế"
+   ],
+   [
+    "p",
+    "Giả sử qua phân tích cơ bản, anh chị chọn được cổ phiếu A: lợi nhuận tăng đều, P/E hợp lý. Phân tích kỹ thuật giúp chọn thời điểm: thay vì mua khi giá vừa tăng nóng và <a href=\"/f0/rsi-la-gi.html\">RSI</a> trên 70, anh chị chờ giá điều chỉnh về vùng <a href=\"/f0/ho-tro-khang-cu.html\">hỗ trợ</a> gần <a href=\"/f0/duong-ma-la-gi.html\">đường MA50</a> rồi mới mua, đặt cắt lỗ dưới hỗ trợ."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Phân tích cơ bản trả lời câu hỏi mua cái gì.",
+     "Phân tích kỹ thuật trả lời câu hỏi mua lúc nào, bán lúc nào.",
+     "F0 nên học cơ bản trước, sau đó dùng vài công cụ kỹ thuật đơn giản."
+    ]
+   ]
+  ]
+ },
+ {
+  "grp": 2,
+  "slug": "cac-loai-lenh-chung-khoan",
+  "kw": "các loại lệnh chứng khoán",
+  "title": "Các loại lệnh chứng khoán: LO, ATO, ATC, MP và giờ giao dịch",
+  "desc": "Các loại lệnh chứng khoán LO, ATO, ATC, MP, PLO là gì, dùng lúc nào, giờ giao dịch từng phiên trên HOSE, HNX, UPCoM. Giải thích dễ hiểu kèm ví dụ cho F0.",
+  "body": [
+   [
+    "p",
+    "Khi mua bán cổ phiếu, anh chị không chỉ chọn mã và số lượng mà còn phải chọn <b>loại lệnh</b>. Hiểu đơn giản, loại lệnh giống cách anh chị trả giá khi đi chợ: có lúc nói rõ \"tôi chỉ mua nếu giá 20 nghìn\", có lúc nói \"bán cho tôi giá nào cũng được, miễn là ngay bây giờ\"."
+   ],
+   [
+    "h2",
+    "Lệnh LO – lệnh giới hạn (dùng nhiều nhất)"
+   ],
+   [
+    "p",
+    "<b>LO</b> là lệnh đặt đúng một mức giá anh chị muốn. Lệnh mua chỉ khớp ở giá bằng hoặc thấp hơn giá đặt, lệnh bán chỉ khớp ở giá bằng hoặc cao hơn. Ví dụ: giả sử cổ phiếu A đang giao dịch quanh 20.300đ, anh chị đặt mua LO 100 cổ phiếu giá 20.000đ. Nếu giá không giảm về 20.000đ, lệnh nằm chờ trên bảng giá và tự hủy cuối ngày nếu chưa khớp. Người mới nên dùng LO cho gần như mọi lệnh vì kiểm soát được giá."
+   ],
+   [
+    "h2",
+    "Lệnh ATO, ATC – lệnh khớp giá mở cửa, đóng cửa"
+   ],
+   [
+    "ul",
+    [
+     "<b>ATO</b>: đặt trong phiên định giá mở cửa, khớp tại một mức giá chung lúc mở cửa. Lệnh ATO được ưu tiên khớp trước lệnh LO.",
+     "<b>ATC</b>: đặt trong phiên định giá đóng cửa, khớp tại giá đóng cửa. Hay dùng khi muốn chắc chắn mua hoặc bán trong ngày.",
+     "Hai lệnh này không ghi giá cụ thể, nên anh chị chấp nhận mức giá mà thị trường xác định."
+    ]
+   ],
+   [
+    "h2",
+    "Lệnh thị trường MP, MTL, MOK, MAK và PLO"
+   ],
+   [
+    "p",
+    "<b>Lệnh thị trường</b> là lệnh \"mua ngay ở giá tốt nhất đang có\". Trên HOSE thường gọi là MP; trên HNX có MTL (phần chưa khớp chuyển thành LO), MOK (khớp hết hoặc hủy), MAK (khớp được bao nhiêu thì khớp, phần còn lại hủy). <b>PLO</b> là lệnh sau giờ trên HNX, khớp ở giá đóng cửa. Tên gọi và cách hiển thị có thể khác một chút tùy sàn và ứng dụng, anh chị xem lại trong mục đặt lệnh. Lệnh thị trường dễ bị khớp giá xấu khi cổ phiếu ít người giao dịch, nên F0 hạn chế dùng."
+   ],
+   [
+    "h2",
+    "Giờ giao dịch trong ngày"
+   ],
+   [
+    "ul",
+    [
+     "<b>HOSE</b>: 9h00–9h15 phiên mở cửa (ATO); 9h15–11h30 khớp liên tục; 11h30–13h00 nghỉ trưa; 13h00–14h30 khớp liên tục; 14h30–14h45 phiên đóng cửa (ATC); đến 15h00 giao dịch thỏa thuận.",
+     "<b>HNX</b>: tương tự HOSE về khớp liên tục và ATC, sau đó có phiên PLO đến 15h00.",
+     "<b>UPCoM</b>: khớp lệnh liên tục buổi sáng và chiều, không có ATO/ATC như HOSE.",
+     "Giờ có thể được điều chỉnh theo quy định mới, nên kiểm tra lại trên ứng dụng giao dịch."
+    ]
+   ],
+   [
+    "p",
+    "Muốn thực hành đặt lệnh đầu tiên, xem bài <a href=\"/f0/cach-mua-co-phieu-lan-dau.html\">cách mua cổ phiếu lần đầu</a> và <a href=\"/f0/cach-doc-bang-gia-chung-khoan.html\">cách đọc bảng giá</a>."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Người mới nên dùng lệnh LO để kiểm soát giá mua bán.",
+     "ATO/ATC dùng khi muốn khớp ở giá mở cửa hoặc đóng cửa, chấp nhận giá chung.",
+     "Lệnh thị trường khớp nhanh nhưng dễ bị giá xấu, nhất là với mã ít thanh khoản."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Lệnh LO chưa khớp có tự hủy không?",
+    "Có. Lệnh LO chỉ có hiệu lực trong ngày, cuối phiên chưa khớp thì tự hủy. Hôm sau muốn mua phải đặt lại, trừ khi ứng dụng có tính năng lệnh điều kiện."
+   ],
+   [
+    "Có thể sửa hoặc hủy lệnh đã đặt không?",
+    "Được, khi lệnh chưa khớp và đang trong phiên cho phép. Trong phiên ATO, ATC thường không được hủy hoặc sửa lệnh."
+   ],
+   [
+    "Đặt lệnh ngoài giờ được không?",
+    "Nhiều ứng dụng cho đặt lệnh trước giờ mở cửa. Lệnh sẽ được đẩy vào sàn khi phiên bắt đầu."
+   ],
+   [
+    "F0 nên dùng lệnh nào?",
+    "Lệnh LO cho hầu hết trường hợp, vì anh chị biết chắc giá tối đa mình trả hoặc giá tối thiểu mình nhận."
+   ]
+  ],
+  "rel": [
+   "cach-mua-co-phieu-lan-dau",
+   "bien-do-gia-tran-san",
+   "lo-chan-lo-le"
+  ]
+ },
+ {
+  "grp": 2,
+  "slug": "bien-do-gia-tran-san",
+  "kw": "biên độ giá trần sàn",
+  "title": "Biên độ giá trần sàn là gì? Cách tính giá trần, giá sàn",
+  "desc": "Biên độ giá trần sàn trên HOSE 7%, HNX 10%, UPCoM 15% là gì, giá tham chiếu tính thế nào, màu tím và xanh lam trên bảng giá nghĩa là gì. Có ví dụ dễ hiểu.",
+  "body": [
+   [
+    "p",
+    "Ở Việt Nam, giá cổ phiếu không được tăng hay giảm vô hạn trong một ngày. Mỗi phiên có một mức cao nhất gọi là <b>giá trần</b> và mức thấp nhất gọi là <b>giá sàn</b>. Khoảng cách đó là <b>biên độ dao động</b>. Hãy hình dung như cái \"rào chắn\" để giá không nhảy quá mạnh trong một ngày."
+   ],
+   [
+    "h2",
+    "Giá tham chiếu là gì?"
+   ],
+   [
+    "p",
+    "<b>Giá tham chiếu</b> là mốc để tính trần, sàn. Trên HOSE và HNX, giá tham chiếu thường là giá đóng cửa của phiên trước. Trên UPCoM, giá tham chiếu là giá bình quân gia quyền của phiên trước. Bảng giá hiển thị giá tham chiếu bằng màu vàng."
+   ],
+   [
+    "h2",
+    "Biên độ từng sàn"
+   ],
+   [
+    "ul",
+    [
+     "<b>HOSE</b>: ±7% so với giá tham chiếu.",
+     "<b>HNX</b>: ±10%.",
+     "<b>UPCoM</b>: ±15%.",
+     "Ngày đầu niêm yết hoặc giao dịch trở lại sau thời gian dài, biên độ rộng hơn nhiều (ví dụ HOSE ±20%)."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ tính giá trần, giá sàn"
+   ],
+   [
+    "p",
+    "Giả sử cổ phiếu A trên HOSE có giá tham chiếu 20.000đ. Giá trần = 20.000 × 1,07 = 21.400đ. Giá sàn = 20.000 × 0,93 = 18.600đ. Trong phiên hôm đó, anh chị chỉ đặt được lệnh từ 18.600đ đến 21.400đ. Nếu cổ phiếu tương tự nằm trên UPCoM với biên độ 15%, giá trần sẽ là 23.000đ và giá sàn 17.000đ. Kết quả thực tế được làm tròn theo bước giá của sàn."
+   ],
+   [
+    "h2",
+    "Màu sắc trên bảng giá"
+   ],
+   [
+    "ul",
+    [
+     "<b>Tím</b>: giá trần, tăng hết biên độ.",
+     "<b>Xanh lam (xanh da trời)</b>: giá sàn, giảm hết biên độ.",
+     "<b>Vàng</b>: bằng giá tham chiếu. <b>Xanh lá</b>: tăng. <b>Đỏ</b>: giảm."
+    ]
+   ],
+   [
+    "p",
+    "Khi cổ phiếu \"tăng trần trắng bên bán\" nghĩa là không còn ai bán, người muốn mua phải xếp hàng. Ngược lại \"nằm sàn trắng bên mua\" là không còn ai mua, rất khó bán ra. F0 không nên mua đuổi khi giá đã tím, cũng không nên hoảng bán khi giá xanh lam mà chưa xem lý do. Đọc thêm <a href=\"/f0/cach-doc-bang-gia-chung-khoan.html\">cách đọc bảng giá chứng khoán</a>."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Giá trần, giá sàn = giá tham chiếu cộng trừ biên độ của từng sàn.",
+     "HOSE ±7%, HNX ±10%, UPCoM ±15%.",
+     "Tím là trần, xanh lam là sàn; đừng mua đuổi hay bán tháo chỉ vì màu sắc."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Vì sao có biên độ dao động?",
+    "Để hạn chế giá biến động quá mạnh trong một ngày, cho nhà đầu tư thời gian bình tĩnh đánh giá thông tin."
+   ],
+   [
+    "Chứng chỉ quỹ ETF có biên độ không?",
+    "Có, ETF niêm yết trên HOSE cũng theo biên độ ±7% như cổ phiếu."
+   ],
+   [
+    "Giá tham chiếu thay đổi khi chia cổ tức không?",
+    "Có. Vào ngày giao dịch không hưởng quyền, giá tham chiếu được điều chỉnh giảm tương ứng với quyền lợi đã chia."
+   ]
+  ],
+  "rel": [
+   "cach-doc-bang-gia-chung-khoan",
+   "cac-loai-lenh-chung-khoan",
+   "lo-chan-lo-le"
+  ]
+ },
+ {
+  "grp": 2,
+  "slug": "lo-chan-lo-le",
+  "kw": "lô chẵn lô lẻ",
+  "title": "Lô chẵn, lô lẻ là gì? Bước giá cổ phiếu cho người mới",
+  "desc": "Lô chẵn là bội số của 100 cổ phiếu, lô lẻ dưới 100 cổ phiếu. Cách mua bán lô lẻ, bước giá trên HOSE, HNX, UPCoM và ví dụ tính tiền cho người mới bắt đầu.",
+  "body": [
+   [
+    "p",
+    "Khi đặt lệnh, nhiều F0 bị báo lỗi vì nhập số lượng 50 cổ phiếu hoặc giá 20.020đ. Lý do là sàn có quy định về <b>lô giao dịch</b> và <b>bước giá</b>. Giống như mua trứng ở chợ đầu mối phải mua theo khay, còn mua lẻ vài quả thì đi quầy riêng."
+   ],
+   [
+    "h2",
+    "Lô chẵn là gì?"
+   ],
+   [
+    "p",
+    "<b>Lô chẵn</b> là số lượng cổ phiếu bằng 100 hoặc bội số của 100: 100, 200, 1.500 cổ phiếu… Đây là lệnh thông thường trên bảng giá chính. Ví dụ: giả sử cổ phiếu A giá 25.000đ, mua 1 lô 100 cổ phiếu cần 2.500.000đ cộng phí giao dịch."
+   ],
+   [
+    "h2",
+    "Lô lẻ là gì?"
+   ],
+   [
+    "p",
+    "<b>Lô lẻ</b> là từ 1 đến 99 cổ phiếu. Lô lẻ thường xuất hiện khi anh chị nhận cổ phiếu thưởng, cổ tức bằng cổ phiếu, hoặc muốn mua thử với số tiền rất nhỏ. Lô lẻ được giao dịch trên bảng giá lô lẻ riêng, thường chỉ dùng lệnh LO. Thanh khoản lô lẻ thấp hơn, giá khớp có thể kém hơn bảng chính một chút."
+   ],
+   [
+    "h2",
+    "Bước giá là gì?"
+   ],
+   [
+    "p",
+    "<b>Bước giá</b> là khoảng chênh nhỏ nhất giữa hai mức giá đặt lệnh, giống như tiền lẻ nhỏ nhất được chấp nhận."
+   ],
+   [
+    "ul",
+    [
+     "<b>HOSE</b>: giá dưới 10.000đ bước 10đ; từ 10.000đ đến dưới 50.000đ bước 50đ; từ 50.000đ trở lên bước 100đ. ETF và chứng quyền bước 10đ.",
+     "<b>HNX và UPCoM</b>: bước giá 100đ cho cổ phiếu.",
+     "Ví dụ: cổ phiếu HOSE giá 20.000đ thì đặt được 20.050đ, không đặt được 20.020đ."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ: xử lý 150 cổ phiếu"
+   ],
+   [
+    "p",
+    "Giả sử anh chị có 150 cổ phiếu sau khi nhận cổ tức. Muốn bán hết, anh chị đặt 100 cổ phiếu trên bảng chính (lô chẵn) và 50 cổ phiếu trên bảng lô lẻ. Hai lệnh có thể khớp ở giá khác nhau. Phí và thuế 0,1% vẫn tính bình thường trên giá trị bán, xem <a href=\"/f0/phi-giao-dich-va-thue-chung-khoan.html\">phí và thuế chứng khoán</a>."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Lô chẵn là bội số của 100 cổ phiếu, giao dịch trên bảng giá chính.",
+     "Lô lẻ từ 1–99 cổ phiếu, giao dịch bảng riêng, thanh khoản thấp hơn.",
+     "Đặt giá phải đúng bước giá của sàn, nếu không lệnh bị từ chối."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Vốn ít có mua lô lẻ được không?",
+    "Được. Lô lẻ phù hợp để mua thử vài cổ phiếu, nhưng nên chú ý giá khớp và phí tối thiểu nếu có."
+   ],
+   [
+    "Vì sao đặt lệnh báo sai bước giá?",
+    "Vì giá anh chị nhập không chia hết cho bước giá của sàn. Hãy làm tròn giá theo bước giá phù hợp."
+   ],
+   [
+    "Bán lô lẻ có bị thuế không?",
+    "Có, thuế 0,1% trên giá trị bán áp dụng giống lô chẵn."
+   ]
+  ],
+  "rel": [
+   "cac-loai-lenh-chung-khoan",
+   "bien-do-gia-tran-san",
+   "dau-tu-chung-khoan-voi-10-trieu"
+  ]
+ },
+ {
+  "grp": 2,
+  "slug": "thanh-khoan-co-phieu-la-gi",
+  "kw": "thanh khoản cổ phiếu là gì",
+  "title": "Thanh khoản cổ phiếu là gì? Vì sao F0 nên tránh mã kém thanh khoản",
+  "desc": "Thanh khoản cổ phiếu là gì, đo bằng khối lượng và giá trị giao dịch thế nào, bao nhiêu là đủ, rủi ro khi mua mã thanh khoản thấp. Giải thích kèm ví dụ cho F0.",
+  "body": [
+   [
+    "p",
+    "<b>Thanh khoản</b> là mức độ dễ dàng mua hoặc bán một cổ phiếu mà không làm giá thay đổi nhiều. Giống như bán xe máy phổ thông thì vài ngày có người mua, còn bán một món đồ cổ hiếm có thể chờ hàng tháng và phải giảm giá mạnh."
+   ],
+   [
+    "h2",
+    "Đo thanh khoản bằng gì?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Khối lượng khớp lệnh</b>: số cổ phiếu được mua bán trong phiên.",
+     "<b>Giá trị giao dịch</b>: khối lượng × giá, cho biết bao nhiêu tiền đổ vào mã đó mỗi ngày.",
+     "Nên xem <b>bình quân 20 phiên</b> thay vì một ngày, vì có ngày tăng đột biến do tin tức."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ dễ hiểu"
+   ],
+   [
+    "p",
+    "Giả sử cổ phiếu A giao dịch trung bình 2 triệu cổ phiếu/ngày, giá 20.000đ, tức khoảng 40 tỷ đồng mỗi phiên. Cổ phiếu B chỉ khoảng 5.000 cổ phiếu/ngày, giá 10.000đ, tức 50 triệu đồng. Nếu anh chị cần bán 100 triệu đồng cổ phiếu B, có thể phải bán trong nhiều ngày, hoặc hạ giá liên tục mới có người mua. Với cổ phiếu A, lượng đó khớp trong vài giây."
+   ],
+   [
+    "h2",
+    "Rủi ro của cổ phiếu kém thanh khoản"
+   ],
+   [
+    "ul",
+    [
+     "Muốn cắt lỗ cũng không bán được, nhất là khi giá nằm sàn.",
+     "Chênh lệch giữa giá mua tốt nhất và giá bán tốt nhất lớn, mua vào là lỗ ngay một khoản.",
+     "Dễ bị một nhóm nhỏ làm giá, kéo lên rồi xả hàng."
+    ]
+   ],
+   [
+    "h2",
+    "Bao nhiêu là đủ thanh khoản?"
+   ],
+   [
+    "p",
+    "Không có con số cố định. Một nguyên tắc đơn giản: số tiền anh chị mua nên nhỏ hơn nhiều so với giá trị giao dịch bình quân mỗi ngày của mã đó, ví dụ dưới 1–5%. Nhóm VN30 thường có thanh khoản tốt, phù hợp người mới. Có thể xem khối lượng ngay trên bảng giá hoặc trang <a href=\"/ma/\">tra cứu mã cổ phiếu</a>. Đọc thêm <a href=\"/f0/khoi-luong-giao-dich-va-dong-tien.html\">khối lượng giao dịch và dòng tiền</a>."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Thanh khoản là độ dễ mua bán mà không làm giá biến động mạnh.",
+     "Xem khối lượng và giá trị giao dịch bình quân 20 phiên.",
+     "F0 nên ưu tiên cổ phiếu thanh khoản tốt để có thể cắt lỗ khi cần."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Cổ phiếu thanh khoản cao có chắc an toàn không?",
+    "Không. Thanh khoản chỉ giúp mua bán dễ, còn giá vẫn có thể giảm nếu doanh nghiệp kém."
+   ],
+   [
+    "Vì sao cổ phiếu penny có lúc thanh khoản rất cao?",
+    "Có thể do dòng tiền đầu cơ ngắn hạn. Thanh khoản kiểu này đến nhanh và đi cũng rất nhanh."
+   ],
+   [
+    "Xem thanh khoản ở đâu?",
+    "Trên bảng giá có cột tổng khối lượng. Ứng dụng giao dịch thường có biểu đồ khối lượng theo ngày."
+   ]
+  ],
+  "rel": [
+   "khoi-luong-giao-dich-va-dong-tien",
+   "von-hoa-bluechip-penny",
+   "cach-chon-co-phieu-cho-nguoi-moi"
+  ]
+ },
+ {
+  "grp": 3,
+  "slug": "pb-la-gi",
+  "kw": "P/B là gì",
+  "title": "P/B là gì? Cách dùng chỉ số P/B định giá cổ phiếu cho F0",
+  "desc": "P/B là gì, công thức giá chia giá trị sổ sách, P/B bao nhiêu là rẻ, khi nào dùng P/B tốt hơn P/E (ngân hàng, chứng khoán). Ví dụ dễ hiểu cho người mới.",
+  "body": [
+   [
+    "p",
+    "<b>P/B = Giá cổ phiếu ÷ Giá trị sổ sách mỗi cổ phiếu (BVPS)</b>. Giá trị sổ sách là phần vốn chủ sở hữu, tức tài sản trừ đi nợ, chia cho số cổ phiếu. Hiểu nôm na: nếu đóng cửa công ty, bán hết tài sản, trả hết nợ thì mỗi cổ phiếu còn lại bao nhiêu tiền trên giấy."
+   ],
+   [
+    "h2",
+    "Ví dụ so sánh với mua quán"
+   ],
+   [
+    "p",
+    "Giả sử một quán cà phê có bàn ghế, máy móc, tiền mặt tổng 1 tỷ đồng, đang nợ 400 triệu. Phần thuộc về chủ là 600 triệu. Nếu anh chị trả 900 triệu để mua lại quán thì P/B = 900 ÷ 600 = 1,5 lần. Anh chị trả cao hơn giá trị sổ sách vì tin quán có khách quen, vị trí đẹp, sinh lời tốt."
+   ],
+   [
+    "h2",
+    "Ví dụ với cổ phiếu"
+   ],
+   [
+    "p",
+    "Giả sử cổ phiếu A giá 30.000đ, vốn chủ sở hữu 2.000 tỷ đồng, có 100 triệu cổ phiếu. BVPS = 2.000 tỷ ÷ 100 triệu = 20.000đ. P/B = 30.000 ÷ 20.000 = 1,5 lần. Nghĩa là thị trường đang trả 1,5 đồng cho 1 đồng vốn chủ sở hữu."
+   ],
+   [
+    "h2",
+    "P/B bao nhiêu là rẻ?"
+   ],
+   [
+    "ul",
+    [
+     "P/B dưới 1 nghĩa là giá thấp hơn giá trị sổ sách, nhưng có thể do tài sản kém chất lượng hoặc doanh nghiệp đang lỗ.",
+     "Doanh nghiệp có ROE cao thường xứng đáng P/B cao hơn.",
+     "Luôn so với cùng ngành và với lịch sử của chính doanh nghiệp."
+    ]
+   ],
+   [
+    "h2",
+    "Khi nào P/B hữu ích hơn P/E?"
+   ],
+   [
+    "p",
+    "P/B đặc biệt hợp với <b>ngân hàng, chứng khoán, bảo hiểm</b>, vì tài sản của họ chủ yếu là tiền và các khoản cho vay, giá trị sổ sách khá sát thực tế. Với công ty công nghệ, dịch vụ, tài sản chủ yếu là con người và thương hiệu nên P/B ít ý nghĩa hơn. Nên dùng P/B cùng <a href=\"/f0/pe-la-gi.html\">P/E</a> và <a href=\"/f0/roe-eps-la-gi.html\">ROE</a>, hoặc thử công cụ <a href=\"/dinh-gia-co-phieu.html\">định giá cổ phiếu</a>."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "P/B = giá cổ phiếu chia giá trị sổ sách mỗi cổ phiếu.",
+     "P/B thấp chưa chắc rẻ, cần xem chất lượng tài sản và ROE.",
+     "P/B hợp nhất với ngân hàng, chứng khoán, bảo hiểm."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Giá trị sổ sách lấy ở đâu?",
+    "Từ vốn chủ sở hữu trên bảng cân đối kế toán, chia cho số cổ phiếu đang lưu hành."
+   ],
+   [
+    "P/B âm có nghĩa là gì?",
+    "Vốn chủ sở hữu âm, tức nợ lớn hơn tài sản. Đây là dấu hiệu rủi ro rất cao."
+   ],
+   [
+    "P/B và P/E nên dùng cái nào?",
+    "Nên dùng cả hai. P/E nhìn vào lợi nhuận, P/B nhìn vào tài sản, kết hợp sẽ đầy đủ hơn."
+   ]
+  ],
+  "rel": [
+   "pe-la-gi",
+   "roe-eps-la-gi",
+   "doc-bctc-ngan-hang"
+  ]
+ },
+ {
+  "grp": 3,
+  "slug": "roe-eps-la-gi",
+  "kw": "ROE EPS là gì",
+  "title": "ROE, EPS là gì? Hai chỉ số đo doanh nghiệp làm ăn tốt hay không",
+  "desc": "ROE là gì, EPS là gì, công thức tính, ROE bao nhiêu là tốt, vì sao EPS tăng đều quan trọng. Ví dụ quán phở dễ hiểu cho người mới đầu tư chứng khoán.",
+  "body": [
+   [
+    "p",
+    "Hai chỉ số được nhắc nhiều nhất khi chọn cổ phiếu là <b>EPS</b> và <b>ROE</b>. EPS cho biết mỗi cổ phiếu \"kiếm\" được bao nhiêu tiền lãi. ROE cho biết công ty dùng tiền của cổ đông có hiệu quả không."
+   ],
+   [
+    "h2",
+    "EPS là gì?"
+   ],
+   [
+    "p",
+    "<b>EPS = Lợi nhuận sau thuế ÷ Số cổ phiếu đang lưu hành</b>. Giả sử công ty A lãi 200 tỷ đồng trong năm, có 100 triệu cổ phiếu. EPS = 2.000đ. Nếu anh chị có 1.000 cổ phiếu, phần lãi \"thuộc về\" anh chị là 2 triệu đồng, dù công ty có chia cổ tức hay không. EPS dùng để tính <a href=\"/f0/pe-la-gi.html\">P/E</a>: giá 20.000đ ÷ EPS 2.000đ = P/E 10."
+   ],
+   [
+    "h2",
+    "ROE là gì?"
+   ],
+   [
+    "p",
+    "<b>ROE = Lợi nhuận sau thuế ÷ Vốn chủ sở hữu</b>. Ví dụ quán phở: anh chị bỏ 500 triệu mở quán, mỗi năm lãi 100 triệu, ROE = 20%. Quán bên cạnh cũng bỏ 500 triệu nhưng chỉ lãi 25 triệu, ROE = 5%, thấp hơn cả gửi tiết kiệm. Rõ ràng quán thứ nhất làm ăn hiệu quả hơn."
+   ],
+   [
+    "h2",
+    "ROE bao nhiêu là tốt?"
+   ],
+   [
+    "ul",
+    [
+     "Thường ROE trên 15% duy trì nhiều năm được xem là tốt.",
+     "Cần so với lãi suất tiết kiệm: ROE thấp hơn lãi gửi ngân hàng là kém hấp dẫn.",
+     "Cẩn thận ROE cao do vay nợ nhiều: vốn chủ nhỏ, nợ lớn thì ROE đẹp nhưng rủi ro cao."
+    ]
+   ],
+   [
+    "h2",
+    "Đọc EPS thế nào cho đúng?"
+   ],
+   [
+    "ul",
+    [
+     "Xem xu hướng 3–5 năm: EPS tăng đều tốt hơn EPS lúc cao lúc thấp.",
+     "Loại bỏ lợi nhuận bất thường như bán đất, bán công ty con.",
+     "Khi phát hành thêm cổ phiếu, EPS có thể giảm dù lợi nhuận không đổi (pha loãng)."
+    ]
+   ],
+   [
+    "p",
+    "Xem thêm <a href=\"/f0/cach-doc-bao-cao-tai-chinh.html\">cách đọc báo cáo tài chính</a> để biết số liệu lấy ở đâu, hoặc tra từng doanh nghiệp tại <a href=\"/ma/\">danh sách mã</a>."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "EPS là lợi nhuận trên mỗi cổ phiếu, dùng để tính P/E.",
+     "ROE đo hiệu quả dùng vốn cổ đông, trên 15% bền vững là tốt.",
+     "Xem xu hướng nhiều năm và loại bỏ lợi nhuận bất thường."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "EPS cao có phải cổ phiếu tốt?",
+    "Chưa chắc. Cần so EPS với giá (P/E) và xem EPS có tăng đều không."
+   ],
+   [
+    "ROE và ROA khác nhau thế nào?",
+    "ROA chia lợi nhuận cho tổng tài sản, gồm cả phần vay nợ. ROE chỉ chia cho vốn của cổ đông."
+   ],
+   [
+    "EPS lấy số 1 năm hay 4 quý?",
+    "Thường dùng tổng 4 quý gần nhất để phản ánh tình hình mới nhất."
+   ]
+  ],
+  "rel": [
+   "pe-la-gi",
+   "pb-la-gi",
+   "cach-doc-bao-cao-tai-chinh"
+  ]
+ },
+ {
+  "grp": 3,
+  "slug": "cach-doc-bao-cao-tai-chinh",
+  "kw": "cách đọc báo cáo tài chính",
+  "title": "Cách đọc báo cáo tài chính trong 10 phút cho người mới",
+  "desc": "Cách đọc báo cáo tài chính cho F0: 3 báo cáo KQKD, cân đối kế toán, lưu chuyển tiền tệ, đọc gì trong 10 phút và 4 dấu hiệu cảnh báo doanh nghiệp có vấn đề.",
+  "body": [
+   [
+    "p",
+    "Báo cáo tài chính (BCTC) giống như \"phiếu khám sức khỏe\" của doanh nghiệp. Anh chị không cần là kế toán, chỉ cần biết nhìn vài chỉ số chính là đã lọc được nhiều rủi ro."
+   ],
+   [
+    "h2",
+    "3 báo cáo cần biết"
+   ],
+   [
+    "ul",
+    [
+     "<b>Kết quả kinh doanh (KQKD)</b>: bán được bao nhiêu, chi phí bao nhiêu, lãi bao nhiêu. Giống sổ thu chi của quán trong năm.",
+     "<b>Cân đối kế toán (CĐKT)</b>: công ty có gì (tài sản) và nợ ai (nợ phải trả), phần còn lại là vốn chủ. Giống bức ảnh chụp tài sản ở một thời điểm.",
+     "<b>Lưu chuyển tiền tệ (LCTT)</b>: tiền thật vào ra thế nào. Lãi trên giấy chưa chắc đã thu được tiền."
+    ]
+   ],
+   [
+    "h2",
+    "Đọc gì trong 10 phút?"
+   ],
+   [
+    "ol",
+    [
+     "Doanh thu và lợi nhuận sau thuế 4–8 quý gần nhất: có tăng đều không?",
+     "Biên lợi nhuận gộp: ổn định hay đang giảm?",
+     "Nợ vay so với vốn chủ sở hữu: có quá cao không?",
+     "Dòng tiền từ hoạt động kinh doanh: dương hay âm, có đi cùng lợi nhuận không?"
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ dòng tiền"
+   ],
+   [
+    "p",
+    "Giả sử công ty A báo lãi 100 tỷ đồng, nhưng dòng tiền kinh doanh âm 80 tỷ. Nhìn kỹ thấy khoản phải thu tăng 150 tỷ, tức là bán hàng chủ yếu cho khách nợ. Lãi đẹp trên giấy nhưng tiền chưa về túi. Nếu khách không trả, lợi nhuận đó có thể biến mất."
+   ],
+   [
+    "h2",
+    "4 dấu hiệu cảnh báo"
+   ],
+   [
+    "ul",
+    [
+     "<b>Lãi mà dòng tiền kinh doanh âm</b> nhiều kỳ liên tiếp.",
+     "<b>Khoản phải thu tăng nhanh hơn doanh thu</b>: bán chịu nhiều, nguy cơ khó đòi.",
+     "<b>Nợ vay tăng mạnh</b> trong khi lợi nhuận không tăng tương ứng.",
+     "<b>Lợi nhuận bất thường</b>: lãi chủ yếu từ thanh lý tài sản, đánh giá lại, không phải từ hoạt động chính."
+    ]
+   ],
+   [
+    "p",
+    "Muốn hiểu chỉ số rút ra từ BCTC, đọc <a href=\"/f0/roe-eps-la-gi.html\">ROE, EPS là gì</a>. Với ngân hàng, cách đọc khác hẳn, xem <a href=\"/f0/doc-bctc-ngan-hang.html\">đọc BCTC ngân hàng</a>. Số liệu tóm tắt từng doanh nghiệp có tại <a href=\"/ma/\">tra cứu mã</a>."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "KQKD cho biết lãi lỗ, CĐKT cho biết tài sản và nợ, LCTT cho biết tiền thật.",
+     "10 phút: xem doanh thu, lợi nhuận, biên gộp, nợ vay và dòng tiền kinh doanh.",
+     "Cảnh giác khi lãi mà không có tiền, phải thu và nợ vay tăng nhanh."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "BCTC xem ở đâu?",
+    "Trên website của doanh nghiệp mục quan hệ cổ đông, website sở giao dịch, hoặc các ứng dụng chứng khoán."
+   ],
+   [
+    "Nên đọc báo cáo quý hay năm?",
+    "Báo cáo năm đã kiểm toán đáng tin hơn. Báo cáo quý giúp theo dõi xu hướng mới nhất."
+   ],
+   [
+    "BCTC hợp nhất và riêng lẻ khác gì?",
+    "Hợp nhất gộp cả công ty mẹ và các công ty con. Nhà đầu tư nên ưu tiên xem báo cáo hợp nhất."
+   ],
+   [
+    "Ý kiến kiểm toán ngoại trừ có đáng lo?",
+    "Có. Đó là khi kiểm toán không đồng ý hoặc không xác minh được một số khoản, nên đọc kỹ lý do."
+   ]
+  ],
+  "rel": [
+   "roe-eps-la-gi",
+   "doc-bctc-ngan-hang",
+   "cach-chon-co-phieu-cho-nguoi-moi"
+  ]
+ },
+ {
+  "grp": 3,
+  "slug": "von-hoa-bluechip-penny",
+  "kw": "vốn hóa bluechip penny",
+  "title": "Vốn hóa, bluechip, midcap, penny là gì? Phân biệt cho F0",
+  "desc": "Vốn hóa thị trường là gì, cách tính, phân biệt cổ phiếu bluechip, midcap, penny, ưu nhược điểm từng nhóm và người mới nên bắt đầu từ nhóm nào.",
+  "body": [
+   [
+    "p",
+    "<b>Vốn hóa thị trường</b> là tổng giá trị của một công ty trên sàn chứng khoán: <b>Giá cổ phiếu × Số cổ phiếu đang lưu hành</b>. Hiểu đơn giản, đó là số tiền anh chị phải trả nếu muốn mua toàn bộ công ty theo giá thị trường hôm nay."
+   ],
+   [
+    "h2",
+    "Ví dụ tính vốn hóa"
+   ],
+   [
+    "p",
+    "Giả sử công ty A có 500 triệu cổ phiếu, giá 40.000đ. Vốn hóa = 500 triệu × 40.000 = 20.000 tỷ đồng. Công ty B giá chỉ 5.000đ nhưng có 2 tỷ cổ phiếu, vốn hóa cũng 10.000 tỷ đồng. Vì vậy <b>giá cổ phiếu thấp không có nghĩa là công ty nhỏ hay rẻ</b>."
+   ],
+   [
+    "h2",
+    "Bluechip là gì?"
+   ],
+   [
+    "p",
+    "<b>Bluechip</b> là cổ phiếu của các doanh nghiệp lớn, đầu ngành, hoạt động ổn định nhiều năm, thanh khoản cao. Ở Việt Nam, nhóm này thường nằm trong rổ VN30. Ví dụ quen thuộc như <a href=\"/ma/FPT.html\">FPT</a>, VNM, các ngân hàng lớn. Giống các chuỗi cửa hàng lớn: ít bất ngờ, tăng trưởng đều, giá ít khi tăng gấp đôi trong vài tuần."
+   ],
+   [
+    "h2",
+    "Midcap và penny"
+   ],
+   [
+    "ul",
+    [
+     "<b>Midcap</b>: vốn hóa trung bình, tăng trưởng có thể nhanh hơn bluechip nhưng biến động mạnh hơn.",
+     "<b>Penny</b>: cổ phiếu giá thấp, vốn hóa nhỏ, thường kết quả kinh doanh yếu hoặc thất thường. Giá dễ tăng giảm vài chục phần trăm trong thời gian ngắn.",
+     "Penny thường bị đầu cơ, thông tin ít minh bạch, dễ bị làm giá."
+    ]
+   ],
+   [
+    "h2",
+    "Người mới nên bắt đầu từ đâu?"
+   ],
+   [
+    "p",
+    "F0 nên bắt đầu với bluechip và midcap có kết quả kinh doanh tốt, thanh khoản cao. Penny chỉ nên chiếm phần rất nhỏ hoặc không có trong danh mục. Một suy nghĩ hay gặp: \"cổ phiếu 5.000đ chỉ cần lên 5.000đ là gấp đôi\" — nhưng nó cũng có thể về 2.000đ. Đọc thêm <a href=\"/f0/thanh-khoan-co-phieu-la-gi.html\">thanh khoản là gì</a> và <a href=\"/f0/cach-chon-co-phieu-cho-nguoi-moi.html\">cách chọn cổ phiếu</a>."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Vốn hóa = giá × số cổ phiếu, phản ánh quy mô công ty.",
+     "Bluechip ổn định, penny biến động mạnh và rủi ro cao.",
+     "F0 nên bắt đầu với doanh nghiệp lớn, thanh khoản tốt."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "VN30 là gì?",
+    "Là rổ 30 cổ phiếu có vốn hóa và thanh khoản lớn trên HOSE, được xem xét định kỳ."
+   ],
+   [
+    "Bluechip có thể giảm mạnh không?",
+    "Có. Khi thị trường chung giảm sâu, bluechip vẫn giảm, nhưng thường hồi phục bền hơn."
+   ],
+   [
+    "Cổ phiếu giá thấp có phải rẻ?",
+    "Không. Rẻ hay đắt phải so giá với lợi nhuận và tài sản, như P/E, P/B."
+   ]
+  ],
+  "rel": [
+   "thanh-khoan-co-phieu-la-gi",
+   "cach-chon-co-phieu-cho-nguoi-moi",
+   "vn-index-la-gi"
+  ]
+ },
+ {
+  "grp": 3,
+  "slug": "doc-bctc-ngan-hang",
+  "kw": "đọc báo cáo tài chính ngân hàng",
+  "title": "Đọc báo cáo tài chính ngân hàng: NIM, nợ xấu, CASA dễ hiểu",
+  "desc": "Cách đọc báo cáo tài chính ngân hàng cho người mới: NIM, tỷ lệ nợ xấu, bao phủ nợ xấu, chi phí dự phòng, CASA là gì, ý nghĩa và ví dụ minh họa dễ hiểu.",
+  "body": [
+   [
+    "p",
+    "Ngân hàng làm ăn khác hẳn công ty sản xuất: họ \"mua\" tiền (nhận tiền gửi) và \"bán\" tiền (cho vay). Vì vậy đọc BCTC ngân hàng cần vài chỉ số riêng. Nắm 5 chỉ số dưới đây là đủ để so sánh các ngân hàng với nhau."
+   ],
+   [
+    "h2",
+    "1. NIM – biên lãi ròng"
+   ],
+   [
+    "p",
+    "<b>NIM</b> là chênh lệch giữa lãi thu từ cho vay và lãi trả cho người gửi, tính trên tài sản sinh lãi. Giống tiệm cầm đồ: vay vào 6%, cho vay ra 10%, chênh 4% là phần kiếm được. Ví dụ: giả sử ngân hàng A có 100.000 tỷ tài sản sinh lãi, thu nhập lãi thuần 3.500 tỷ/năm, NIM khoảng 3,5%. NIM cao và ổn định là tốt."
+   ],
+   [
+    "h2",
+    "2. CASA – tiền gửi không kỳ hạn"
+   ],
+   [
+    "p",
+    "<b>CASA</b> là tỷ lệ tiền gửi không kỳ hạn (tiền trong tài khoản thanh toán) trên tổng tiền gửi. Ngân hàng chỉ trả lãi rất thấp cho khoản này, nên CASA cao giúp chi phí vốn rẻ, NIM tốt hơn."
+   ],
+   [
+    "h2",
+    "3. Nợ xấu và bao phủ nợ xấu"
+   ],
+   [
+    "ul",
+    [
+     "<b>Tỷ lệ nợ xấu</b>: phần cho vay khó đòi (nhóm 3–5) trên tổng dư nợ. Càng thấp càng tốt.",
+     "<b>Bao phủ nợ xấu</b>: dự phòng đã trích ÷ nợ xấu. Ví dụ nợ xấu 1.000 tỷ, đã trích dự phòng 1.200 tỷ thì bao phủ 120%, tức đã chuẩn bị sẵn \"quỹ đen\" nhiều hơn số nợ xấu.",
+     "Nên xem thêm nợ nhóm 2 (nợ cần chú ý), vì đây là nguồn nợ xấu tương lai."
+    ]
+   ],
+   [
+    "h2",
+    "4. Chi phí dự phòng"
+   ],
+   [
+    "p",
+    "<b>Chi phí dự phòng</b> là khoản ngân hàng trích ra từ lợi nhuận để phòng nợ không đòi được. Ngân hàng có thể giảm trích lập để lợi nhuận quý này đẹp hơn, nhưng sau đó phải bù lại. Vì vậy nên xem lợi nhuận trước dự phòng để thấy sức kiếm tiền thật."
+   ],
+   [
+    "h2",
+    "5. ROE và P/B"
+   ],
+   [
+    "p",
+    "Ngân hàng thường được định giá bằng <a href=\"/f0/pb-la-gi.html\">P/B</a> kết hợp <a href=\"/f0/roe-eps-la-gi.html\">ROE</a>. Ngân hàng có ROE cao, nợ xấu thấp, bao phủ tốt thường được thị trường trả P/B cao hơn. Cách đọc BCTC chung xem ở <a href=\"/f0/cach-doc-bao-cao-tai-chinh.html\">bài này</a>."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "NIM và CASA cho biết ngân hàng kiếm tiền từ cho vay tốt đến đâu.",
+     "Nợ xấu thấp, bao phủ nợ xấu cao là dấu hiệu an toàn.",
+     "Xem lợi nhuận trước dự phòng để tránh bị lợi nhuận \"làm đẹp\" đánh lừa."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Vì sao ngân hàng thường định giá bằng P/B?",
+    "Vì tài sản ngân hàng chủ yếu là tiền và khoản cho vay, giá trị sổ sách khá sát thực tế."
+   ],
+   [
+    "Tỷ lệ nợ xấu bao nhiêu là cao?",
+    "Thường trên 3% được xem là đáng lo. Nên so với các ngân hàng cùng quy mô."
+   ],
+   [
+    "CASA cao có luôn tốt?",
+    "Đa số là tốt vì vốn rẻ, nhưng CASA có thể giảm khi lãi suất tăng vì người dân chuyển sang gửi có kỳ hạn."
+   ]
+  ],
+  "rel": [
+   "pb-la-gi",
+   "cach-doc-bao-cao-tai-chinh",
+   "roe-eps-la-gi"
+  ]
+ },
+ {
+  "grp": 4,
+  "slug": "duong-ma-la-gi",
+  "kw": "đường MA là gì",
+  "title": "Đường MA là gì? Cách dùng MA20, MA50, MA200 cho người mới",
+  "desc": "Đường MA (trung bình động) là gì, cách tính, ý nghĩa MA20, MA50, MA200, cách nhìn xu hướng và điểm giao cắt. Ví dụ dễ hiểu cho F0 mới học phân tích kỹ thuật.",
+  "body": [
+   [
+    "p",
+    "<b>Đường MA</b> (Moving Average – trung bình động) là đường nối giá đóng cửa trung bình của một số phiên gần nhất. Nó giúp làm mượt những phiên tăng giảm lộn xộn, để anh chị nhìn rõ xu hướng chính. Giống như xem điểm trung bình cả học kỳ thay vì điểm từng bài kiểm tra."
+   ],
+   [
+    "h2",
+    "Cách tính MA, ví dụ đơn giản"
+   ],
+   [
+    "p",
+    "Giả sử giá đóng cửa 5 phiên gần nhất của cổ phiếu A là 20.000, 20.500, 21.000, 20.800 và 21.200đ. MA5 = tổng 103.500 ÷ 5 = 20.700đ. Ngày mai có giá mới, phiên cũ nhất bị bỏ ra, nên đường MA \"di chuyển\" theo thời gian. Ứng dụng giao dịch tự vẽ, anh chị không cần tính tay."
+   ],
+   [
+    "h2",
+    "MA20, MA50, MA200 nói gì?"
+   ],
+   [
+    "ul",
+    [
+     "<b>MA20</b>: khoảng 1 tháng giao dịch, phản ánh xu hướng ngắn hạn.",
+     "<b>MA50</b>: khoảng 2–3 tháng, xu hướng trung hạn.",
+     "<b>MA200</b>: gần 1 năm, xu hướng dài hạn. Giá nằm trên MA200 thường được xem là xu hướng dài hạn còn tốt."
+    ]
+   ],
+   [
+    "h2",
+    "Cách dùng MA đơn giản"
+   ],
+   [
+    "ul",
+    [
+     "Giá nằm trên MA và MA hướng lên: xu hướng tăng. Giá dưới MA, MA dốc xuống: xu hướng giảm.",
+     "MA thường đóng vai trò hỗ trợ hoặc kháng cự động, xem thêm <a href=\"/f0/ho-tro-khang-cu.html\">hỗ trợ và kháng cự</a>.",
+     "Khi MA ngắn cắt lên MA dài (ví dụ MA20 cắt lên MA50), nhiều người xem là tín hiệu xu hướng cải thiện; cắt xuống thì ngược lại."
+    ]
+   ],
+   [
+    "h2",
+    "Hạn chế của MA"
+   ],
+   [
+    "p",
+    "MA được tính từ giá quá khứ nên luôn đi chậm hơn giá. Khi thị trường đi ngang, giá cắt lên cắt xuống MA liên tục, tạo nhiều tín hiệu giả. Vì vậy nên kết hợp MA với <a href=\"/f0/khoi-luong-giao-dich-va-dong-tien.html\">khối lượng giao dịch</a> và nền tảng doanh nghiệp, không dùng một mình."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "MA là giá trung bình của N phiên gần nhất, giúp nhìn xu hướng.",
+     "MA20 ngắn hạn, MA50 trung hạn, MA200 dài hạn.",
+     "MA đi chậm hơn giá, nên kết hợp với khối lượng và phân tích cơ bản."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "MA và EMA khác nhau thế nào?",
+    "EMA đặt trọng số lớn hơn cho các phiên gần đây nên phản ứng nhanh hơn MA thường."
+   ],
+   [
+    "Nên dùng MA bao nhiêu?",
+    "F0 có thể bắt đầu với MA20 và MA50 cho trung hạn, thêm MA200 để nhìn bức tranh dài hạn."
+   ],
+   [
+    "Giá thủng MA20 có nên bán ngay?",
+    "Không nhất thiết. Nên xem khối lượng, thị trường chung và kế hoạch cắt lỗ đã đặt trước."
+   ]
+  ],
+  "rel": [
+   "ho-tro-khang-cu",
+   "rsi-la-gi",
+   "phan-tich-co-ban-va-ky-thuat"
+  ]
+ },
+ {
+  "grp": 4,
+  "slug": "rsi-la-gi",
+  "kw": "RSI là gì",
+  "title": "RSI là gì? Cách dùng chỉ báo RSI quá mua, quá bán cho F0",
+  "desc": "RSI là gì, thang 0–100 nghĩa là gì, vùng quá mua trên 70 và quá bán dưới 30, phân kỳ RSI và những sai lầm khi dùng RSI. Giải thích dễ hiểu cho người mới.",
+  "body": [
+   [
+    "p",
+    "<b>RSI</b> (Relative Strength Index – chỉ số sức mạnh tương đối) đo xem trong khoảng 14 phiên gần nhất, các phiên tăng mạnh hơn hay các phiên giảm mạnh hơn. RSI chạy từ 0 đến 100. Giống đồng hồ đo nhiệt độ của cổ phiếu: càng cao là càng \"nóng\", càng thấp là càng \"lạnh\"."
+   ],
+   [
+    "h2",
+    "Đọc RSI thế nào?"
+   ],
+   [
+    "ul",
+    [
+     "<b>RSI trên 70</b>: vùng quá mua, giá đã tăng nhanh, dễ có nhịp nghỉ.",
+     "<b>RSI dưới 30</b>: vùng quá bán, giá đã giảm nhanh, có thể hồi phục kỹ thuật.",
+     "<b>Quanh 50</b>: cân bằng giữa lực mua và lực bán."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ minh họa"
+   ],
+   [
+    "p",
+    "Giả sử cổ phiếu A tăng từ 20.000đ lên 26.000đ chỉ trong 8 phiên, RSI vọt lên 82. Đây là dấu hiệu nóng, mua đuổi lúc này dễ bị kẹp nếu giá điều chỉnh về 23.000–24.000đ. Ngược lại, nếu A giảm từ 26.000đ về 19.000đ trong thời gian ngắn và RSI xuống 25, áp lực bán có thể đã cạn bớt, nhưng chưa chắc đã là đáy."
+   ],
+   [
+    "h2",
+    "Phân kỳ RSI"
+   ],
+   [
+    "p",
+    "<b>Phân kỳ</b> là khi giá và RSI đi ngược nhau. Ví dụ giá lập đỉnh mới cao hơn nhưng RSI lại tạo đỉnh thấp hơn: lực tăng đang yếu dần. Ngược lại, giá tạo đáy thấp hơn mà RSI tạo đáy cao hơn: lực bán đang yếu đi. Phân kỳ là tín hiệu cảnh báo, cần thêm xác nhận."
+   ],
+   [
+    "h2",
+    "Sai lầm hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "Thấy RSI trên 70 là bán ngay: trong xu hướng tăng mạnh, RSI có thể ở vùng cao rất lâu.",
+     "Thấy RSI dưới 30 là bắt đáy: cổ phiếu xấu có thể quá bán rồi giảm tiếp.",
+     "Dùng RSI một mình, không xem <a href=\"/f0/duong-ma-la-gi.html\">đường MA</a>, khối lượng và tin tức doanh nghiệp."
+    ]
+   ],
+   [
+    "p",
+    "RSI hữu ích nhất khi dùng để tránh mua đuổi lúc quá nóng. Nền tảng chung xem bài <a href=\"/f0/phan-tich-co-ban-va-ky-thuat.html\">phân tích cơ bản và kỹ thuật</a>."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "RSI đo độ nóng lạnh của giá trên thang 0–100.",
+     "Trên 70 là quá mua, dưới 30 là quá bán, nhưng không phải lệnh mua bán.",
+     "Phân kỳ RSI là tín hiệu cảnh báo, cần kết hợp chỉ báo khác."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "RSI dùng bao nhiêu phiên?",
+    "Mặc định 14 phiên. Đa số ứng dụng đã cài sẵn thông số này."
+   ],
+   [
+    "RSI dùng cho đầu tư dài hạn được không?",
+    "Có thể xem RSI theo tuần để tránh mua vào lúc thị trường quá hưng phấn."
+   ],
+   [
+    "RSI và MA nên dùng cái nào?",
+    "MA cho biết xu hướng, RSI cho biết độ nóng. Kết hợp cả hai sẽ đầy đủ hơn."
+   ]
+  ],
+  "rel": [
+   "duong-ma-la-gi",
+   "ho-tro-khang-cu",
+   "khoi-luong-giao-dich-va-dong-tien"
+  ]
+ },
+ {
+  "grp": 4,
+  "slug": "ho-tro-khang-cu",
+  "kw": "hỗ trợ kháng cự",
+  "title": "Hỗ trợ và kháng cự là gì? Cách xác định cho người mới",
+  "desc": "Hỗ trợ và kháng cự là gì, vì sao giá hay dừng ở một vùng, cách xác định bằng đỉnh đáy, MA và số tròn, cách dùng để đặt điểm mua và cắt lỗ. Ví dụ dễ hiểu cho F0.",
+  "body": [
+   [
+    "p",
+    "<b>Hỗ trợ</b> là vùng giá mà khi giảm đến đó, lực mua thường xuất hiện và giữ giá lại, như cái sàn nhà. <b>Kháng cự</b> là vùng giá mà khi tăng đến, lực bán thường xuất hiện và chặn giá lại, như cái trần nhà."
+   ],
+   [
+    "h2",
+    "Vì sao có hỗ trợ, kháng cự?"
+   ],
+   [
+    "p",
+    "Vì trí nhớ của người đầu tư. Giả sử cổ phiếu A nhiều lần giảm về 20.000đ rồi bật lên, nhiều người nghĩ \"về 20.000đ là mua\". Ngược lại, ai đã mua ở 25.000đ và bị lỗ, khi giá quay lại 25.000đ họ muốn bán để hòa vốn, tạo kháng cự."
+   ],
+   [
+    "h2",
+    "Cách xác định đơn giản"
+   ],
+   [
+    "ul",
+    [
+     "<b>Đỉnh và đáy cũ</b>: những vùng giá đã nhiều lần đảo chiều.",
+     "<b>Đường trung bình</b>: MA20, MA50, MA200 thường là hỗ trợ hoặc kháng cự động, xem <a href=\"/f0/duong-ma-la-gi.html\">đường MA là gì</a>.",
+     "<b>Số tròn</b>: 20.000đ, 50.000đ, 100.000đ… dễ thu hút lệnh đặt.",
+     "Hỗ trợ, kháng cự là <b>vùng</b>, không phải một con số chính xác."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ áp dụng"
+   ],
+   [
+    "p",
+    "Giả sử cổ phiếu A dao động trong vùng 20.000–25.000đ suốt 3 tháng. Anh chị dự định mua gần 20.500đ (sát hỗ trợ), đặt cắt lỗ dưới 19.000đ (thủng hỗ trợ rõ ràng), kỳ vọng chốt lời gần 24.500đ (sát kháng cự). Mức lỗ tối đa khoảng 7%, mức lời kỳ vọng khoảng 19%: tỷ lệ lời/lỗ hợp lý. Xem thêm <a href=\"/f0/cat-lo-la-gi.html\">cách đặt cắt lỗ</a>."
+   ],
+   [
+    "h2",
+    "Khi hỗ trợ, kháng cự bị phá vỡ"
+   ],
+   [
+    "ul",
+    [
+     "Kháng cự bị vượt qua với khối lượng lớn thường trở thành hỗ trợ mới.",
+     "Hỗ trợ bị thủng thường trở thành kháng cự mới.",
+     "Phá vỡ mà khối lượng thấp dễ là phá vỡ giả, nên chờ xác nhận thêm vài phiên."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Hỗ trợ như sàn nhà, kháng cự như trần nhà của giá.",
+     "Xác định bằng đỉnh đáy cũ, đường MA và số tròn, luôn xem là một vùng.",
+     "Dùng hỗ trợ để mua và đặt cắt lỗ, dùng kháng cự để chốt lời."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Hỗ trợ có chắc chắn giữ được giá?",
+    "Không. Hỗ trợ chỉ là vùng có xác suất cao xuất hiện lực mua, có thể bị phá vỡ khi có tin xấu."
+   ],
+   [
+    "Nên vẽ trên khung ngày hay tuần?",
+    "F0 nên bắt đầu với khung ngày, xem thêm khung tuần cho xu hướng lớn."
+   ],
+   [
+    "Hỗ trợ càng nhiều lần chạm càng mạnh?",
+    "Thường là vậy, nhưng chạm quá nhiều lần cũng có thể làm hỗ trợ yếu dần."
+   ]
+  ],
+  "rel": [
+   "duong-ma-la-gi",
+   "cat-lo-la-gi",
+   "khoi-luong-giao-dich-va-dong-tien"
+  ]
+ },
+ {
+  "grp": 4,
+  "slug": "khoi-luong-giao-dich-va-dong-tien",
+  "kw": "khối lượng giao dịch",
+  "title": "Khối lượng giao dịch và dòng tiền: cách đọc cho người mới",
+  "desc": "Khối lượng giao dịch là gì, vì sao giá tăng phải đi kèm khối lượng, cách nhận biết dòng tiền vào ra, khối lượng đột biến và ví dụ minh họa dễ hiểu cho F0.",
+  "body": [
+   [
+    "p",
+    "<b>Khối lượng giao dịch</b> là số cổ phiếu được mua bán trong một phiên. Nếu giá là \"lời nói\" của thị trường thì khối lượng là \"âm lượng\" của lời nói đó. Giá tăng mà khối lượng lớn là cả chợ đồng tình; giá tăng mà khối lượng nhỏ là chỉ vài người nói."
+   ],
+   [
+    "h2",
+    "Dòng tiền là gì?"
+   ],
+   [
+    "p",
+    "<b>Dòng tiền</b> là tiền đổ vào hay rút ra khỏi một cổ phiếu, một ngành hay cả thị trường. Cách đo đơn giản nhất là giá trị giao dịch = khối lượng × giá. Khi dòng tiền vào mạnh và liên tục, giá thường có xu hướng tăng bền hơn."
+   ],
+   [
+    "h2",
+    "4 tình huống cơ bản"
+   ],
+   [
+    "ul",
+    [
+     "<b>Giá tăng, khối lượng tăng</b>: lực mua thật, xu hướng tăng đáng tin hơn.",
+     "<b>Giá tăng, khối lượng giảm</b>: lực mua yếu dần, cẩn thận.",
+     "<b>Giá giảm, khối lượng tăng</b>: áp lực bán mạnh, nhiều người muốn thoát.",
+     "<b>Giá giảm, khối lượng giảm</b>: bán ra cạn dần, có thể sắp tạo đáy."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ khối lượng đột biến"
+   ],
+   [
+    "p",
+    "Giả sử cổ phiếu A thường giao dịch 1 triệu cổ phiếu/ngày. Hôm nay khối lượng lên 4 triệu và giá vượt <a href=\"/f0/ho-tro-khang-cu.html\">kháng cự</a> 25.000đ. Đây là phá vỡ có xác nhận, đáng chú ý. Nhưng nếu khối lượng 4 triệu mà giá đứng yên hoặc tăng rồi đóng cửa giảm, có thể có người đang bán ra mạnh ở vùng giá cao."
+   ],
+   [
+    "h2",
+    "So sánh với trung bình"
+   ],
+   [
+    "p",
+    "Đừng nhìn một phiên đơn lẻ. Hãy so khối lượng hôm nay với trung bình 20 phiên. Nhiều ứng dụng có đường MA của khối lượng ngay dưới biểu đồ giá. Khối lượng gấp 1,5–2 lần trung bình được xem là đáng chú ý. Muốn biết dòng tiền cả thị trường hôm nay ra sao, xem <a href=\"/thi-truong-chung-khoan-hom-nay.html\">thị trường chứng khoán hôm nay</a>."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Khối lượng là âm lượng của giá, xác nhận xu hướng mạnh hay yếu.",
+     "Giá tăng kèm khối lượng tăng đáng tin hơn giá tăng khối lượng thấp.",
+     "Luôn so khối lượng với trung bình 20 phiên, không nhìn một phiên lẻ."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Khối lượng lớn có phải luôn là tín hiệu tốt?",
+    "Không. Khối lượng lớn ở vùng đỉnh sau chuỗi tăng nóng có thể là dấu hiệu phân phối."
+   ],
+   [
+    "Khối ngoại mua ròng có ý nghĩa gì?",
+    "Cho biết nhà đầu tư nước ngoài đang mua nhiều hơn bán, là một tham khảo về dòng tiền."
+   ],
+   [
+    "Thanh khoản và khối lượng khác gì nhau?",
+    "Khối lượng là số liệu từng phiên, thanh khoản là độ dễ mua bán, thường đánh giá qua khối lượng bình quân."
+   ]
+  ],
+  "rel": [
+   "thanh-khoan-co-phieu-la-gi",
+   "ho-tro-khang-cu",
+   "duong-ma-la-gi"
+  ]
+ },
+ {
+  "grp": 5,
+  "slug": "phan-bo-von-va-quan-tri-danh-muc",
+  "kw": "phân bổ vốn đầu tư chứng khoán",
+  "title": "Phân bổ vốn đầu tư chứng khoán và quản trị danh mục cho F0",
+  "desc": "Cách phân bổ vốn đầu tư chứng khoán cho F0: chia tiền mặt, số mã nên giữ, tỷ trọng mỗi mã, mua nhiều lần và quy tắc rủi ro 1–2% mỗi lệnh. Có ví dụ cụ thể.",
+  "body": [
+   [
+    "p",
+    "Nhiều F0 dành rất nhiều thời gian chọn mã, nhưng lại bỏ qua câu hỏi quan trọng hơn: <b>mua bao nhiêu?</b> Phân bổ vốn giống chia trứng vào nhiều giỏ: một giỏ rơi thì vẫn còn các giỏ khác."
+   ],
+   [
+    "h2",
+    "Bước 1: Chỉ dùng tiền nhàn rỗi"
+   ],
+   [
+    "p",
+    "Tiền đầu tư chứng khoán là tiền không cần dùng ít nhất 1–2 năm. Giữ riêng quỹ dự phòng 3–6 tháng chi tiêu ở ngân hàng. Đừng dùng tiền đóng học, tiền vay để đầu tư."
+   ],
+   [
+    "h2",
+    "Bước 2: Chia danh mục"
+   ],
+   [
+    "ul",
+    [
+     "Vốn nhỏ dưới 50 triệu: 2–4 mã là đủ, nhiều quá khó theo dõi.",
+     "Mỗi mã không quá 20–30% tổng vốn.",
+     "Không dồn quá nhiều vào một ngành, ví dụ toàn ngân hàng hoặc toàn bất động sản.",
+     "Luôn giữ một phần tiền mặt để có cơ hội khi thị trường giảm."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ với 100 triệu"
+   ],
+   [
+    "p",
+    "Giả sử anh chị có 100 triệu đồng. Có thể chia: 3 mã ở 3 ngành khác nhau, mỗi mã khoảng 25 triệu (tổng 75 triệu), giữ 25 triệu tiền mặt. Với mỗi mã, không mua hết một lần mà chia 2–3 lần: lần đầu 10 triệu, nếu đúng hướng mới mua thêm. Nếu cổ phiếu B giảm 10% và anh chị cắt lỗ, tổng vốn chỉ mất khoảng 1–2,5 triệu, tức 1–2,5% tài khoản."
+   ],
+   [
+    "h2",
+    "Quy tắc rủi ro 1–2%"
+   ],
+   [
+    "p",
+    "Một quy tắc đơn giản: mỗi lệnh, nếu sai và phải <a href=\"/f0/cat-lo-la-gi.html\">cắt lỗ</a>, không mất quá 1–2% tổng tài khoản. Nhờ vậy, dù sai 5 lần liên tiếp, anh chị vẫn còn trên 90% vốn để tiếp tục. Người all-in một mã thì chỉ cần sai một lần là mất rất nhiều."
+   ],
+   [
+    "h2",
+    "Xem lại danh mục định kỳ"
+   ],
+   [
+    "p",
+    "Mỗi tháng hoặc mỗi quý, kiểm tra: mã nào kết quả kinh doanh xấu đi, mã nào đã chiếm tỷ trọng quá lớn. Cân bằng lại nếu cần. Với vốn nhỏ, xem thêm <a href=\"/f0/dau-tu-chung-khoan-voi-10-trieu.html\">đầu tư với 10 triệu</a> hoặc cân nhắc <a href=\"/f0/etf-la-gi.html\">quỹ ETF</a> để đa dạng hóa dễ hơn."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Chỉ đầu tư bằng tiền nhàn rỗi, luôn có quỹ dự phòng.",
+     "Chia 3–5 mã, mỗi mã không quá 20–30% vốn, giữ một phần tiền mặt.",
+     "Mỗi lệnh sai không nên làm mất quá 1–2% tổng tài khoản."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Nên giữ bao nhiêu tiền mặt?",
+    "Tùy thị trường. Khi thị trường rủi ro cao có thể giữ nhiều hơn, ví dụ 30–50%. Khi xu hướng tốt có thể giải ngân nhiều hơn."
+   ],
+   [
+    "Đa dạng hóa nhiều mã có tốt hơn?",
+    "Không phải càng nhiều càng tốt. Quá nhiều mã khiến anh chị không theo dõi kịp và lợi nhuận bị trung bình hóa."
+   ],
+   [
+    "Có nên bình quân giá xuống?",
+    "Chỉ khi doanh nghiệp vẫn tốt và còn trong kế hoạch. Không nên bình quân khi xu hướng đã gãy hoặc lý do mua ban đầu không còn."
+   ]
+  ],
+  "rel": [
+   "cat-lo-la-gi",
+   "tam-ly-fomo-va-hoang-loan",
+   "khi-nao-nen-ban-co-phieu"
+  ]
+ },
+ {
+  "grp": 5,
+  "slug": "tam-ly-fomo-va-hoang-loan",
+  "kw": "tâm lý FOMO chứng khoán",
+  "title": "Tâm lý FOMO và hoảng loạn trong chứng khoán: cách kiểm soát",
+  "desc": "FOMO là gì, vì sao F0 hay mua đỉnh bán đáy, dấu hiệu bị cảm xúc chi phối và 5 cách đơn giản để giữ bình tĩnh khi thị trường tăng nóng hoặc giảm mạnh.",
+  "body": [
+   [
+    "p",
+    "<b>FOMO</b> (Fear Of Missing Out) là nỗi sợ bỏ lỡ: thấy người khác lãi, cổ phiếu tăng liên tục, mình sốt ruột lao vào mua. <b>Hoảng loạn</b> là ngược lại: thấy giá giảm mạnh, tin xấu dồn dập, mình bán tháo bằng mọi giá. Hai cảm xúc này là lý do lớn nhất khiến F0 \"mua đỉnh, bán đáy\"."
+   ],
+   [
+    "h2",
+    "Ví dụ chu kỳ cảm xúc"
+   ],
+   [
+    "p",
+    "Giả sử cổ phiếu A tăng từ 20.000đ lên 30.000đ. Hội nhóm bàn tán, anh chị mua ở 30.000đ vì sợ lỡ. Giá điều chỉnh về 26.000đ, anh chị tự an ủi \"chỉ là rung lắc\". Giá về 21.000đ, tin xấu xuất hiện, anh chị hoảng loạn bán. Sau đó giá quay lại 25.000đ. Kết quả: lỗ 30% trên một cổ phiếu mà người kiên nhẫn từ đầu có thể đã lãi."
+   ],
+   [
+    "h2",
+    "Dấu hiệu đang bị cảm xúc chi phối"
+   ],
+   [
+    "ul",
+    [
+     "Mua chỉ vì giá đã tăng nhiều phiên liên tiếp, không biết doanh nghiệp làm gì.",
+     "Mở ứng dụng xem giá hàng chục lần mỗi ngày, mất ngủ vì cổ phiếu.",
+     "Đặt lệnh ngay sau khi đọc một tin nhắn hô hào.",
+     "Bán tất cả trong phiên giảm sâu mà không có kế hoạch trước."
+    ]
+   ],
+   [
+    "h2",
+    "5 cách giữ bình tĩnh"
+   ],
+   [
+    "ol",
+    [
+     "<b>Viết kế hoạch trước khi mua</b>: lý do mua, giá mua, mức chốt lời, mức <a href=\"/f0/cat-lo-la-gi.html\">cắt lỗ</a>.",
+     "<b>Chia nhỏ lệnh</b>: không mua hết một lần, để còn tiền khi giá biến động.",
+     "<b>Giảm tỷ trọng</b>: nếu mất ngủ vì cổ phiếu, nghĩa là anh chị đang nắm quá nhiều.",
+     "<b>Chờ 24 giờ</b> trước khi mua một mã vừa nghe tin hot.",
+     "<b>Ghi nhật ký giao dịch</b>: xem lại vì sao mình lãi, vì sao mình lỗ."
+    ]
+   ],
+   [
+    "p",
+    "Thị trường luôn có cơ hội mới. Bỏ lỡ một con sóng không làm anh chị mất tiền, nhưng mua sai lúc thì có. Đọc thêm <a href=\"/f0/sai-lam-cua-f0.html\">7 sai lầm của F0</a> và xem bài học thực tế ở <a href=\"/hoc/\">thư viện video</a>."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "FOMO khiến mua đỉnh, hoảng loạn khiến bán đáy.",
+     "Kế hoạch viết sẵn là liều thuốc tốt nhất chống cảm xúc.",
+     "Bỏ lỡ cơ hội không mất tiền, mua sai lúc mới mất tiền."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Làm sao biết mình đang FOMO?",
+    "Nếu không trả lời được vì sao mua ngoài câu \"vì nó đang tăng\", rất có thể anh chị đang FOMO."
+   ],
+   [
+    "Thị trường giảm mạnh có nên bán hết?",
+    "Nên làm theo kế hoạch đã đặt. Mã nào chạm mức cắt lỗ thì xử lý, mã nào còn tốt thì giữ theo tỷ trọng hợp lý."
+   ],
+   [
+    "Có nên tắt ứng dụng xem giá?",
+    "Với nhà đầu tư trung hạn, xem giá một hai lần mỗi ngày là đủ, giúp giảm áp lực tâm lý."
+   ]
+  ],
+  "rel": [
+   "sai-lam-cua-f0",
+   "khi-nao-nen-ban-co-phieu",
+   "phan-bo-von-va-quan-tri-danh-muc"
+  ]
+ },
+ {
+  "grp": 5,
+  "slug": "khi-nao-nen-ban-co-phieu",
+  "kw": "khi nào nên bán cổ phiếu",
+  "title": "Khi nào nên bán cổ phiếu? 5 tình huống F0 cần biết",
+  "desc": "Khi nào nên bán cổ phiếu: chạm mức cắt lỗ, đạt mục tiêu giá, lý do mua không còn, định giá quá cao hoặc có cơ hội tốt hơn. Cách chốt lời từng phần có ví dụ.",
+  "body": [
+   [
+    "p",
+    "\"Biết mua là bạc, biết bán mới là vàng.\" Nhiều F0 mua rất kỹ nhưng lại bán theo cảm hứng: lãi một chút đã chốt, lỗ thì ôm mãi. Bán có kế hoạch giúp giữ lợi nhuận và bảo vệ vốn."
+   ],
+   [
+    "h2",
+    "1. Chạm mức cắt lỗ"
+   ],
+   [
+    "p",
+    "Trước khi mua đã đặt mức cắt lỗ thì khi giá chạm, hãy làm đúng kế hoạch. Giả sử mua cổ phiếu A giá 20.000đ, đặt cắt lỗ 8% tại 18.400đ. Giá về 18.400đ thì bán, không chờ \"hồi về giá vốn\". Lỗ 8% chỉ cần lãi khoảng 9% để gỡ; lỗ 50% phải lãi 100% mới hòa. Xem <a href=\"/f0/cat-lo-la-gi.html\">cắt lỗ là gì</a>."
+   ],
+   [
+    "h2",
+    "2. Đạt mục tiêu giá"
+   ],
+   [
+    "p",
+    "Khi giá đạt vùng mục tiêu, có thể <b>chốt lời từng phần</b>. Ví dụ đang có 1.000 cổ phiếu A mua giá 20.000đ, mục tiêu 26.000đ. Khi giá lên 26.000đ, bán 500 cổ phiếu, lãi khoảng 3 triệu đồng trước phí thuế. Phần còn lại đặt mức bảo vệ lợi nhuận, ví dụ bán nếu về 24.000đ. Cách này vừa giữ được lãi vừa không bỏ lỡ nếu giá tăng tiếp."
+   ],
+   [
+    "h2",
+    "3. Lý do mua không còn"
+   ],
+   [
+    "p",
+    "Mua vì kỳ vọng lợi nhuận tăng, nhưng báo cáo quý cho thấy lợi nhuận giảm mạnh, ngành gặp khó kéo dài, ban lãnh đạo có vấn đề. Khi lý do mua đã thay đổi, nên xem xét bán dù đang lãi hay lỗ."
+   ],
+   [
+    "h2",
+    "4. Định giá đã quá cao"
+   ],
+   [
+    "p",
+    "Khi <a href=\"/f0/pe-la-gi.html\">P/E</a> cao hơn nhiều so với lịch sử và cùng ngành mà tăng trưởng không theo kịp, giá có thể đã phản ánh hết kỳ vọng. Có thể dùng công cụ <a href=\"/dinh-gia-co-phieu.html\">định giá cổ phiếu</a> để tham khảo."
+   ],
+   [
+    "h2",
+    "5. Có cơ hội tốt hơn"
+   ],
+   [
+    "p",
+    "Vốn có hạn. Nếu một cổ phiếu đi ngang nhiều tháng trong khi anh chị tìm được cơ hội rõ ràng hơn, chuyển vốn cũng là một lý do hợp lý. Đừng quên tính phí giao dịch và thuế 0,1% khi bán."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Bán khi chạm cắt lỗ, đạt mục tiêu, hoặc lý do mua không còn.",
+     "Chốt lời từng phần giúp giữ lãi mà vẫn còn cơ hội nếu giá tăng tiếp.",
+     "Quyết định bán nên được viết sẵn trong kế hoạch trước khi mua."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Có nên bán khi đang lãi một chút?",
+    "Nếu chưa đạt mục tiêu và lý do mua vẫn còn, không cần vội. Nên có mức bảo vệ lợi nhuận thay vì bán theo cảm giác."
+   ],
+   [
+    "Bán rồi giá tăng tiếp thì sao?",
+    "Đó là chuyện bình thường. Không ai bán được ở đỉnh, quan trọng là giao dịch đúng kế hoạch."
+   ],
+   [
+    "Mua T+2 có bán ngay được không?",
+    "Cổ phiếu về tài khoản theo quy định thanh toán mới bán được, xem bài T+2 để biết chi tiết."
+   ]
+  ],
+  "rel": [
+   "cat-lo-la-gi",
+   "tam-ly-fomo-va-hoang-loan",
+   "t-2-la-gi"
+  ]
+ },
+ {
+  "grp": 6,
+  "slug": "etf-la-gi",
+  "kw": "ETF là gì",
+  "title": "ETF là gì? Quỹ ETF VN30 cho người mới đầu tư chứng khoán",
+  "desc": "ETF là gì, quỹ ETF hoạt động thế nào, các quỹ ETF phổ biến ở Việt Nam như E1VFVN30, FUEVFVND, cách mua bán ETF, ưu nhược điểm và ví dụ cho người mới.",
+  "body": [
+   [
+    "p",
+    "<b>ETF</b> (Exchange Traded Fund – quỹ hoán đổi danh mục) là quỹ đầu tư mô phỏng một chỉ số, ví dụ VN30, và được niêm yết trên sàn như một cổ phiếu. Mua 1 chứng chỉ quỹ ETF giống như mua một \"giỏ trái cây\" đã đóng sẵn, bên trong có nhiều loại, thay vì phải tự chọn từng quả."
+   ],
+   [
+    "h2",
+    "ETF hoạt động thế nào?"
+   ],
+   [
+    "p",
+    "Quỹ ETF dùng tiền của nhà đầu tư mua các cổ phiếu trong chỉ số theo đúng tỷ trọng. Khi chỉ số tăng, giá ETF tăng gần tương ứng; chỉ số giảm thì ETF cũng giảm. Quỹ không cố gắng chọn mã \"ngon nhất\", chỉ bám sát chỉ số."
+   ],
+   [
+    "h2",
+    "Một số ETF quen thuộc ở Việt Nam"
+   ],
+   [
+    "ul",
+    [
+     "<b>E1VFVN30</b>: mô phỏng chỉ số VN30, gồm 30 cổ phiếu lớn trên HOSE.",
+     "<b>FUEVFVND</b>: mô phỏng chỉ số VN Diamond, nhóm doanh nghiệp tốt bị hạn chế room ngoại.",
+     "Ngoài ra có các ETF mô phỏng VN100, VNFIN Lead, VN30 của nhiều công ty quản lý quỹ khác.",
+     "Mã ETF tra cứu và đặt lệnh trên bảng giá HOSE như cổ phiếu."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ đầu tư ETF"
+   ],
+   [
+    "p",
+    "Giả sử chứng chỉ ETF A giá 25.000đ. Mua 400 chứng chỉ cần khoảng 10 triệu đồng. Với 10 triệu này, anh chị gián tiếp sở hữu một phần nhỏ của cả 30 doanh nghiệp. Nếu chỉ số tăng 10% trong năm, giá ETF cũng tăng xấp xỉ 10%, chênh một chút do phí quản lý quỹ và sai số mô phỏng."
+   ],
+   [
+    "h2",
+    "Ưu và nhược điểm"
+   ],
+   [
+    "ul",
+    [
+     "<b>Ưu</b>: đa dạng hóa ngay cả khi vốn nhỏ, không cần chọn từng mã, minh bạch danh mục, mua bán dễ trên sàn.",
+     "<b>Nhược</b>: lợi nhuận chỉ ngang thị trường, không thể vượt trội; vẫn giảm khi thị trường giảm; một số ETF thanh khoản thấp.",
+     "ETF vẫn chịu phí giao dịch và thuế bán 0,1% như cổ phiếu; ngoài ra có phí quản lý quỹ được trừ dần vào giá trị quỹ."
+    ]
+   ],
+   [
+    "p",
+    "ETF hợp với người bận rộn, muốn tích lũy đều đặn hàng tháng. So sánh với <a href=\"/f0/chung-chi-quy-la-gi.html\">chứng chỉ quỹ mở</a> và đọc thêm <a href=\"/f0/vn-index-la-gi.html\">VN-Index là gì</a>."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "ETF là quỹ mô phỏng chỉ số, mua bán trên sàn như cổ phiếu.",
+     "Phù hợp người vốn nhỏ, ít thời gian, muốn đa dạng hóa.",
+     "Lợi nhuận bám theo thị trường, không vượt trội nhưng cũng tránh chọn sai mã."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Mua ETF bằng tài khoản chứng khoán thường được không?",
+    "Được. ETF niêm yết trên HOSE, đặt lệnh như cổ phiếu bằng tài khoản chứng khoán thông thường."
+   ],
+   [
+    "ETF có trả cổ tức không?",
+    "Tùy quỹ. Nhiều ETF giữ lại cổ tức để tái đầu tư, phản ánh vào giá chứng chỉ quỹ."
+   ],
+   [
+    "ETF có an toàn tuyệt đối không?",
+    "Không. ETF giảm rủi ro chọn sai một mã, nhưng vẫn giảm khi cả thị trường giảm."
+   ]
+  ],
+  "rel": [
+   "chung-chi-quy-la-gi",
+   "vn-index-la-gi",
+   "phan-bo-von-va-quan-tri-danh-muc"
+  ]
+ },
+ {
+  "grp": 6,
+  "slug": "chung-chi-quy-la-gi",
+  "kw": "chứng chỉ quỹ là gì",
+  "title": "Chứng chỉ quỹ là gì? Quỹ mở khác ETF thế nào cho người mới",
+  "desc": "Chứng chỉ quỹ là gì, quỹ mở hoạt động ra sao, giá NAV, phí mua bán, khác ETF thế nào, ai nên đầu tư quỹ. Giải thích dễ hiểu kèm ví dụ tích lũy hàng tháng.",
+  "body": [
+   [
+    "p",
+    "<b>Chứng chỉ quỹ</b> là giấy xác nhận anh chị góp tiền vào một quỹ đầu tư. Quỹ được quản lý bởi công ty quản lý quỹ chuyên nghiệp, gom tiền của nhiều người để mua cổ phiếu, trái phiếu hoặc tiền gửi. Giống như góp tiền thuê đầu bếp giỏi nấu cho cả nhóm, thay vì mỗi người tự vào bếp."
+   ],
+   [
+    "h2",
+    "Các loại quỹ thường gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>Quỹ cổ phiếu</b>: chủ yếu đầu tư cổ phiếu, lợi nhuận kỳ vọng cao, biến động mạnh.",
+     "<b>Quỹ trái phiếu</b>: chủ yếu trái phiếu, ổn định hơn, lợi nhuận vừa phải.",
+     "<b>Quỹ cân bằng</b>: kết hợp cả hai.",
+     "<b>Quỹ ETF</b>: mô phỏng chỉ số, giao dịch trên sàn, xem <a href=\"/f0/etf-la-gi.html\">ETF là gì</a>."
+    ]
+   ],
+   [
+    "h2",
+    "Giá NAV là gì?"
+   ],
+   [
+    "p",
+    "<b>NAV</b> (giá trị tài sản ròng trên mỗi chứng chỉ quỹ) là tổng tài sản quỹ trừ nợ, chia cho số chứng chỉ. Quỹ mở không giao dịch trên bảng giá; anh chị đặt lệnh mua bán với công ty quản lý quỹ và khớp theo NAV của kỳ giao dịch tiếp theo (thường hằng ngày hoặc vài lần mỗi tuần)."
+   ],
+   [
+    "h2",
+    "Ví dụ tích lũy hàng tháng"
+   ],
+   [
+    "p",
+    "Giả sử mỗi tháng anh chị mua 2 triệu đồng chứng chỉ quỹ. Tháng 1 NAV 20.000đ, mua được 100 chứng chỉ. Tháng 2 thị trường giảm, NAV 16.000đ, mua được 125 chứng chỉ. Tháng 3 NAV 20.000đ, mua 100 chứng chỉ. Sau 3 tháng có 325 chứng chỉ, giá vốn bình quân khoảng 18.460đ, thấp hơn mức 20.000đ. Đây là cách <b>bình quân giá</b> đều đặn, không cần đoán đỉnh đáy."
+   ],
+   [
+    "h2",
+    "Quỹ mở khác ETF thế nào?"
+   ],
+   [
+    "ul",
+    [
+     "Quỹ mở: mua bán với công ty quản lý quỹ theo NAV; ETF: mua bán trên sàn theo giá thị trường.",
+     "Quỹ mở thường do người quản lý chủ động chọn cổ phiếu; ETF bám chỉ số.",
+     "Quỹ mở có thể có phí mua, phí bán, nhất là khi rút sớm; nên đọc kỹ biểu phí."
+    ]
+   ],
+   [
+    "p",
+    "Chứng chỉ quỹ hợp với người không có thời gian theo dõi thị trường. Nếu muốn tự chọn cổ phiếu, xem <a href=\"/f0/cach-chon-co-phieu-cho-nguoi-moi.html\">cách chọn cổ phiếu cho người mới</a>."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Chứng chỉ quỹ là phần góp vốn vào quỹ do chuyên gia quản lý.",
+     "Quỹ mở giao dịch theo NAV, ETF giao dịch trên sàn.",
+     "Tích lũy đều hàng tháng giúp bình quân giá, hợp người bận rộn."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Mua chứng chỉ quỹ cần bao nhiêu tiền?",
+    "Nhiều quỹ mở cho phép bắt đầu từ vài trăm nghìn đến vài triệu đồng."
+   ],
+   [
+    "Quỹ có cam kết lợi nhuận không?",
+    "Không. Quỹ đầu tư không cam kết lợi nhuận, giá trị có thể giảm khi thị trường xấu."
+   ],
+   [
+    "Rút tiền từ quỹ mở mất bao lâu?",
+    "Tùy quỹ, thường vài ngày làm việc sau kỳ giao dịch. Rút sớm có thể chịu phí bán cao hơn."
+   ]
+  ],
+  "rel": [
+   "etf-la-gi",
+   "trai-phieu-la-gi",
+   "phan-bo-von-va-quan-tri-danh-muc"
+  ]
+ },
+ {
+  "grp": 6,
+  "slug": "phai-sinh-la-gi",
+  "kw": "phái sinh là gì",
+  "title": "Phái sinh là gì? Hợp đồng tương lai VN30 cho người mới",
+  "desc": "Chứng khoán phái sinh là gì, hợp đồng tương lai VN30 hoạt động thế nào, ký quỹ, hệ số nhân, long và short, ví dụ lãi lỗ và vì sao F0 chưa nên vội tham gia.",
+  "body": [
+   [
+    "p",
+    "<b>Chứng khoán phái sinh</b> là sản phẩm có giá trị \"phái sinh\" từ một tài sản khác. Ở Việt Nam, phổ biến nhất là <b>hợp đồng tương lai chỉ số VN30</b>. Anh chị không mua cổ phiếu, mà đặt cược vào việc chỉ số VN30 sẽ tăng hay giảm, giống như hai người thỏa thuận trước giá một bao gạo sẽ giao vào cuối tháng."
+   ],
+   [
+    "h2",
+    "Long và short"
+   ],
+   [
+    "ul",
+    [
+     "<b>Long (mua)</b>: kỳ vọng chỉ số tăng. Chỉ số tăng thì lãi.",
+     "<b>Short (bán)</b>: kỳ vọng chỉ số giảm. Chỉ số giảm thì lãi.",
+     "Có thể mở và đóng vị thế ngay trong ngày, không phải chờ như cổ phiếu."
+    ]
+   ],
+   [
+    "h2",
+    "Ký quỹ và hệ số nhân"
+   ],
+   [
+    "p",
+    "Mỗi điểm VN30 tương ứng 100.000đ (hệ số nhân). Anh chị không cần đủ toàn bộ giá trị hợp đồng mà chỉ cần <b>ký quỹ</b> một phần, thường khoảng dưới một phần năm giá trị, theo tỷ lệ do sở giao dịch và công ty chứng khoán quy định tại từng thời điểm. Đây chính là đòn bẩy."
+   ],
+   [
+    "h2",
+    "Ví dụ lãi lỗ"
+   ],
+   [
+    "p",
+    "Giả sử hợp đồng VN30 đang ở 1.500 điểm. Giá trị 1 hợp đồng = 1.500 × 100.000 = 150 triệu đồng. Giả sử ký quỹ khoảng 20%, cần khoảng 30 triệu. Anh chị mở long 1 hợp đồng. Nếu chỉ số tăng 30 điểm, lãi 3 triệu đồng (10% số tiền ký quỹ). Nhưng nếu giảm 30 điểm, lỗ 3 triệu. Giảm 150 điểm, lỗ 15 triệu, tức mất một nửa tiền ký quỹ chỉ vì chỉ số giảm 10%."
+   ],
+   [
+    "h2",
+    "Rủi ro rất cao"
+   ],
+   [
+    "ul",
+    [
+     "Đòn bẩy lớn: biến động nhỏ của chỉ số thành lãi lỗ lớn trên tiền ký quỹ.",
+     "Khi lỗ làm tiền ký quỹ xuống dưới mức yêu cầu, anh chị phải nộp thêm hoặc bị đóng vị thế.",
+     "Giao dịch nhanh trong ngày dễ bị cảm xúc chi phối, thua lỗ liên tục.",
+     "Hợp đồng có ngày đáo hạn, thường vào thứ Năm tuần thứ ba của tháng."
+    ]
+   ],
+   [
+    "p",
+    "F0 nên có kinh nghiệm với cổ phiếu, hiểu <a href=\"/f0/margin-la-gi.html\">đòn bẩy margin</a> và <a href=\"/f0/cat-lo-la-gi.html\">cắt lỗ</a> trước khi thử phái sinh, và chỉ dùng số tiền nhỏ chấp nhận mất."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Phái sinh VN30 là cược chỉ số tăng (long) hoặc giảm (short).",
+     "Mỗi điểm 100.000đ, chỉ cần ký quỹ một phần nên đòn bẩy cao.",
+     "Lãi nhanh nhưng lỗ cũng nhanh, F0 chưa nên vội tham gia."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Mở tài khoản phái sinh thế nào?",
+    "Cần có tài khoản chứng khoán cơ sở, sau đó đăng ký thêm tài khoản phái sinh trên ứng dụng và nộp tiền ký quỹ."
+   ],
+   [
+    "Phái sinh có bị thuế không?",
+    "Có thuế và các khoản phí riêng tính trên giá trị giao dịch. Xem biểu phí trên ứng dụng trước khi giao dịch."
+   ],
+   [
+    "Giờ giao dịch phái sinh?",
+    "Thường mở cửa sớm hơn thị trường cơ sở một chút buổi sáng và đóng cửa cùng phiên ATC."
+   ],
+   [
+    "Phái sinh có dùng để phòng hộ được không?",
+    "Có. Người nắm nhiều cổ phiếu có thể short phái sinh để giảm rủi ro khi thị trường giảm."
+   ]
+  ],
+  "rel": [
+   "margin-la-gi",
+   "cat-lo-la-gi",
+   "vn-index-la-gi"
+  ]
+ },
+ {
+  "grp": 6,
+  "slug": "trai-phieu-la-gi",
+  "kw": "trái phiếu là gì",
+  "title": "Trái phiếu là gì? Khác cổ phiếu thế nào, rủi ro cần biết",
+  "desc": "Trái phiếu là gì, trái phiếu chính phủ và trái phiếu doanh nghiệp, lãi coupon, kỳ hạn, khác cổ phiếu ra sao, rủi ro vỡ nợ và cách đánh giá cho người mới.",
+  "body": [
+   [
+    "p",
+    "<b>Trái phiếu</b> là giấy nợ. Khi mua trái phiếu, anh chị cho doanh nghiệp hoặc Nhà nước vay tiền. Đổi lại, bên phát hành trả lãi định kỳ và trả lại tiền gốc khi đáo hạn. Giống cho người quen vay tiền mở cửa hàng, có giấy hẹn trả lãi hàng quý và trả gốc sau 3 năm."
+   ],
+   [
+    "h2",
+    "Trái phiếu khác cổ phiếu thế nào?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Cổ phiếu</b>: anh chị là chủ sở hữu một phần công ty, lãi lỗ theo công ty, không có cam kết lợi nhuận.",
+     "<b>Trái phiếu</b>: anh chị là chủ nợ, được trả lãi theo thỏa thuận dù công ty lãi nhiều hay ít.",
+     "Khi công ty phá sản, chủ nợ trái phiếu được ưu tiên thanh toán trước cổ đông."
+    ]
+   ],
+   [
+    "h2",
+    "Các khái niệm cơ bản"
+   ],
+   [
+    "ul",
+    [
+     "<b>Mệnh giá</b>: số tiền gốc của mỗi trái phiếu.",
+     "<b>Lãi suất coupon</b>: lãi trả hằng năm tính trên mệnh giá, có thể cố định hoặc thả nổi.",
+     "<b>Kỳ hạn</b>: thời gian đến ngày trả gốc, ví dụ 2, 3, 5 năm."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ tính lãi"
+   ],
+   [
+    "p",
+    "Giả sử anh chị mua 100 trái phiếu mệnh giá 100.000đ, tổng 10 triệu đồng, lãi coupon 9%/năm, trả 6 tháng một lần, kỳ hạn 3 năm. Mỗi 6 tháng nhận khoảng 450.000đ tiền lãi (trước thuế). Sau 3 năm nhận lại 10 triệu tiền gốc. Tổng lãi khoảng 2,7 triệu, nếu doanh nghiệp trả đúng hạn."
+   ],
+   [
+    "h2",
+    "Rủi ro của trái phiếu"
+   ],
+   [
+    "ul",
+    [
+     "<b>Rủi ro vỡ nợ</b>: doanh nghiệp không trả được lãi hoặc gốc. Lãi suất càng cao bất thường, rủi ro càng lớn.",
+     "<b>Rủi ro thanh khoản</b>: muốn bán trước hạn có thể khó hoặc phải chịu giá thấp.",
+     "<b>Rủi ro lãi suất</b>: lãi suất thị trường tăng thì giá trái phiếu cũ thường giảm."
+    ]
+   ],
+   [
+    "p",
+    "Trước khi mua trái phiếu doanh nghiệp, hãy xem doanh nghiệp làm gì, nợ vay nhiều hay ít, có tài sản đảm bảo không, dòng tiền ra sao (xem <a href=\"/f0/cach-doc-bao-cao-tai-chinh.html\">cách đọc báo cáo tài chính</a>). Trái phiếu chính phủ an toàn hơn nhưng lãi thấp hơn. Người muốn đa dạng có thể dùng <a href=\"/f0/chung-chi-quy-la-gi.html\">quỹ trái phiếu</a>."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Trái phiếu là cho vay, nhận lãi định kỳ và gốc khi đáo hạn.",
+     "Ổn định hơn cổ phiếu nhưng vẫn có rủi ro vỡ nợ và khó bán trước hạn.",
+     "Lãi suất cao bất thường thường đi kèm rủi ro cao."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Lãi trái phiếu có bị thuế không?",
+    "Có. Lãi trái phiếu doanh nghiệp của cá nhân thường chịu thuế thu nhập. Kiểm tra quy định cụ thể khi mua."
+   ],
+   [
+    "Trái phiếu có an toàn hơn gửi tiết kiệm?",
+    "Không hẳn. Tiền gửi ngân hàng có bảo hiểm tiền gửi trong giới hạn, trái phiếu doanh nghiệp thì phụ thuộc vào sức khỏe doanh nghiệp."
+   ],
+   [
+    "Mua trái phiếu ở đâu?",
+    "Qua công ty chứng khoán, ngân hàng hoặc trên sàn đối với trái phiếu niêm yết."
+   ]
+  ],
+  "rel": [
+   "chung-chi-quy-la-gi",
+   "cach-doc-bao-cao-tai-chinh",
+   "chung-khoan-la-gi"
+  ]
+ },
+ {
+  "grp": 6,
+  "slug": "ipo-va-niem-yet-la-gi",
+  "kw": "IPO là gì",
+  "title": "IPO là gì? Niêm yết, lên sàn chứng khoán khác nhau thế nào",
+  "desc": "IPO là gì, niêm yết là gì, quy trình một công ty lên sàn HOSE, HNX, UPCoM, cách mua cổ phiếu IPO, biên độ ngày đầu và rủi ro người mới cần biết khi mua IPO.",
+  "body": [
+   [
+    "p",
+    "<b>IPO</b> (Initial Public Offering) là lần đầu tiên một công ty bán cổ phiếu ra công chúng. <b>Niêm yết</b> là việc đưa cổ phiếu lên sàn giao dịch để mọi người mua bán hằng ngày. Giống quán ăn gia đình lần đầu mời người ngoài góp vốn (IPO), sau đó mở cửa hàng ở trung tâm thương mại cho mọi người ra vào mua bán phần vốn đó (niêm yết)."
+   ],
+   [
+    "h2",
+    "Quy trình lên sàn cơ bản"
+   ],
+   [
+    "ol",
+    [
+     "Công ty cổ phần hóa hoặc chuẩn bị đủ điều kiện về vốn, lợi nhuận, số cổ đông.",
+     "Chào bán cổ phiếu lần đầu ra công chúng (IPO), có thể qua đấu giá hoặc bảo lãnh phát hành.",
+     "Đăng ký giao dịch trên UPCoM hoặc niêm yết trên HNX, HOSE.",
+     "Ngày giao dịch đầu tiên, cổ phiếu có biên độ rộng hơn bình thường."
+    ]
+   ],
+   [
+    "h2",
+    "Ba sàn khác nhau thế nào?"
+   ],
+   [
+    "ul",
+    [
+     "<b>HOSE</b>: điều kiện niêm yết cao nhất, thường là doanh nghiệp lớn.",
+     "<b>HNX</b>: doanh nghiệp quy mô vừa.",
+     "<b>UPCoM</b>: điều kiện thấp nhất, là nơi đăng ký giao dịch của nhiều công ty chưa đủ điều kiện niêm yết."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ ngày chào sàn"
+   ],
+   [
+    "p",
+    "Giả sử công ty A IPO giá 20.000đ, lên HOSE với giá tham chiếu ngày đầu 25.000đ. Biên độ ngày đầu trên HOSE rộng (±20%), giá có thể dao động từ 20.000đ đến 30.000đ ngay phiên đầu tiên. Nếu anh chị mua IPO ở 20.000đ và ngày đầu khớp 28.000đ, lãi tạm tính 40%. Nhưng nhiều trường hợp ngược lại, giá giảm dưới giá IPO sau vài tuần."
+   ],
+   [
+    "h2",
+    "Rủi ro khi mua IPO"
+   ],
+   [
+    "ul",
+    [
+     "Thông tin doanh nghiệp còn ít, lịch sử giá chưa có.",
+     "Giá chào bán có thể đã cao so với giá trị thật.",
+     "Cổ đông lớn có thể bán ra sau thời gian hạn chế chuyển nhượng.",
+     "Ngày đầu biến động mạnh, dễ bị FOMO, xem <a href=\"/f0/tam-ly-fomo-va-hoang-loan.html\">tâm lý FOMO</a>."
+    ]
+   ],
+   [
+    "p",
+    "Trước khi tham gia, hãy đọc bản cáo bạch, xem kết quả kinh doanh vài năm và so sánh <a href=\"/f0/pe-la-gi.html\">P/E</a> với công ty cùng ngành. Doanh nghiệp đã niêm yết có thể tra cứu ở <a href=\"/ma/\">danh sách mã</a>."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "IPO là bán cổ phiếu lần đầu, niêm yết là đưa cổ phiếu lên sàn.",
+     "Ngày đầu lên sàn biên độ rộng, giá biến động mạnh.",
+     "Đọc bản cáo bạch và so sánh định giá trước khi mua IPO."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Mua cổ phiếu IPO ở đâu?",
+    "Qua đợt đấu giá hoặc đăng ký mua tại công ty chứng khoán bảo lãnh phát hành, theo thông báo của doanh nghiệp."
+   ],
+   [
+    "IPO có chắc lãi không?",
+    "Không. Nhiều cổ phiếu sau IPO giảm dưới giá chào bán."
+   ],
+   [
+    "Hủy niêm yết là gì?",
+    "Là khi cổ phiếu bị đưa khỏi sàn do vi phạm hoặc thua lỗ kéo dài. Đây là rủi ro lớn với cổ đông."
+   ]
+  ],
+  "rel": [
+   "bien-do-gia-tran-san",
+   "chung-khoan-la-gi",
+   "tam-ly-fomo-va-hoang-loan"
+  ]
+ },
+ {
+  "grp": 6,
+  "slug": "chia-tach-co-phieu-thuong-phat-hanh-them",
+  "kw": "cổ phiếu thưởng phát hành thêm",
+  "title": "Cổ phiếu thưởng, phát hành thêm, quyền mua: F0 cần hiểu gì",
+  "desc": "Cổ phiếu thưởng, phát hành thêm, quyền mua cổ phiếu là gì, ngày GDKHQ, giá điều chỉnh thế nào, pha loãng là gì. Ví dụ tính toán dễ hiểu cho người mới.",
+  "body": [
+   [
+    "p",
+    "Thỉnh thoảng anh chị thấy tài khoản tự dưng có thêm cổ phiếu, hoặc giá cổ phiếu sáng nay \"giảm mạnh\" mà bảng giá vẫn báo màu vàng. Thường đó là do <b>cổ phiếu thưởng, cổ tức bằng cổ phiếu</b> hoặc <b>quyền mua phát hành thêm</b>."
+   ],
+   [
+    "h2",
+    "Ngày GDKHQ là gì?"
+   ],
+   [
+    "p",
+    "<b>GDKHQ</b> (giao dịch không hưởng quyền) là ngày mà người mua cổ phiếu từ hôm đó trở đi sẽ không được nhận quyền lợi. Muốn nhận, anh chị phải mua trước ngày GDKHQ. Vào ngày GDKHQ, giá tham chiếu được điều chỉnh giảm tương ứng."
+   ],
+   [
+    "h2",
+    "Cổ phiếu thưởng: chia bánh thành nhiều miếng"
+   ],
+   [
+    "p",
+    "Cổ phiếu thưởng giống như cắt chiếc bánh thành nhiều miếng hơn: số miếng tăng, nhưng tổng chiếc bánh không đổi. Ví dụ: giả sử anh chị có 1.000 cổ phiếu A giá 30.000đ (30 triệu đồng). Công ty thưởng tỷ lệ 10:2, tức cứ 10 cổ phiếu được thêm 2. Anh chị có 1.200 cổ phiếu. Giá tham chiếu ngày GDKHQ điều chỉnh còn 30.000 ÷ 1,2 = 25.000đ. Tổng giá trị vẫn 30 triệu."
+   ],
+   [
+    "h2",
+    "Phát hành thêm và quyền mua"
+   ],
+   [
+    "p",
+    "Khi công ty cần vốn, họ phát hành thêm cổ phiếu và cho cổ đông hiện hữu <b>quyền mua</b> với giá ưu đãi. Ví dụ tỷ lệ 5:1, giá 10.000đ: có 1.000 cổ phiếu thì được mua thêm 200 cổ phiếu với 2 triệu đồng. Anh chị phải đăng ký và nộp tiền trong thời hạn trên ứng dụng; quá hạn thì quyền mất giá trị. Nếu không muốn mua, có thể chuyển nhượng quyền theo thời gian quy định."
+   ],
+   [
+    "h2",
+    "Pha loãng là gì?"
+   ],
+   [
+    "ul",
+    [
+     "Số cổ phiếu tăng mà lợi nhuận chưa tăng tương ứng thì <a href=\"/f0/roe-eps-la-gi.html\">EPS</a> giảm, gọi là pha loãng.",
+     "Ví dụ lợi nhuận 200 tỷ, 100 triệu cổ phiếu: EPS 2.000đ. Phát hành thêm thành 125 triệu cổ phiếu: EPS còn 1.600đ.",
+     "Phát hành thêm tốt khi tiền dùng vào dự án sinh lời; xấu khi chỉ để trả nợ hoặc dự án mơ hồ."
+    ]
+   ],
+   [
+    "p",
+    "Cổ tức tiền mặt và các mốc ngày khác xem thêm <a href=\"/f0/co-tuc-la-gi.html\">cổ tức là gì</a>."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Cổ phiếu thưởng tăng số lượng nhưng giá điều chỉnh giảm, tổng tài sản không đổi.",
+     "Muốn nhận quyền lợi phải sở hữu cổ phiếu trước ngày GDKHQ.",
+     "Phát hành thêm có thể pha loãng EPS, cần xem tiền huy động dùng vào đâu."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Cổ phiếu thưởng bao lâu về tài khoản?",
+    "Thường vài tuần sau ngày chốt quyền, tùy tiến độ đăng ký lưu ký bổ sung."
+   ],
+   [
+    "Không thực hiện quyền mua có bị thiệt không?",
+    "Nếu giá thị trường cao hơn giá phát hành, bỏ quyền là thiệt vì cổ phiếu bị pha loãng mà mình không mua thêm."
+   ],
+   [
+    "Nhận cổ phiếu thưởng có bị thuế không?",
+    "Thường chưa nộp khi nhận, mà khi bán sẽ chịu thuế theo quy định."
+   ],
+   [
+    "Chia tách cổ phiếu là gì?",
+    "Là tách một cổ phiếu thành nhiều cổ phiếu có giá thấp hơn, bản chất giống thưởng cổ phiếu: số lượng tăng, giá giảm, tổng giá trị không đổi."
+   ]
+  ],
+  "rel": [
+   "co-tuc-la-gi",
+   "roe-eps-la-gi",
+   "lo-chan-lo-le"
   ]
  }
 ]
