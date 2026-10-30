@@ -148,9 +148,69 @@ open(os.path.join(ROOT, "ma/index.html"), "w", encoding="utf-8").write("\n".join
 for f in os.listdir(os.path.join(ROOT, "ma")):
     if f != "index.html" and "ma/" + f not in keep: os.remove(os.path.join(ROOT, "ma", f))
 
+
+# ---- Trang chủ đề cho tìm kiếm thương hiệu: thị trường hôm nay, định giá cổ phiếu, tư vấn ----
+def page(fn, title, desc, h1, body, ld_extra=None):
+    url = B + "/" + fn
+    ld = {"@context": "https://schema.org", "@graph": [
+        {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": B + "/"}, {"@type": "ListItem", "position": 2, "name": h1, "item": url}]},
+        {"@type": "WebPage", "name": title, "description": desc, "url": url, "inLanguage": "vi", "dateModified": today,
+         "publisher": {"@type": "Organization", "name": "Chứng Khoán Huy Nguyễn", "url": B + "/"}}] + (ld_extra or [])}
+    P = [head(title, desc, url, ld), "<main><article>", f'<div class="bc"><a href="/">Trang chủ</a> › {e(h1)}</div><h1>{e(h1)}</h1>'] + body + ["</article></main>" + FOOT]
+    open(os.path.join(ROOT, fn), "w", encoding="utf-8").write("\n".join(P))
+    return url
+CTA = ('<div class="cta"><a class="btn b1" href="/mo-tai-khoan-chung-khoan.html">Mở tài khoản chứng khoán</a>'
+       '<a class="btn b2" href="https://zalo.me/0365188286" rel="noopener">Tư vấn 1:1 qua Zalo</a><a class="btn b2" href="/#hoidap">Hỏi đáp PRO</a></div>')
+NAV = ('<h2>Khám phá thêm</h2><ul><li><a href="/thi-truong-chung-khoan-hom-nay.html">Thị trường chứng khoán hôm nay</a></li><li><a href="/dinh-gia-co-phieu.html">Định giá cổ phiếu</a></li>'
+       '<li><a href="/bao-cao-2026.html">Báo cáo lệnh 2016–2026</a></li><li><a href="/tu-van-dau-tu-chung-khoan.html">Tư vấn đầu tư chứng khoán</a></li><li><a href="/hoc/">Học chứng khoán</a></li><li><a href="/f0/">Cẩm nang F0</a></li><li><a href="/ma/">Tra cứu mã cổ phiếu</a></li></ul>')
+EXTRA = []
+# 1) Thị trường hôm nay
+IX = {}
+for code, nm in (("VNINDEX", "VN-Index"), ("VN30", "VN30"), ("HNX", "HNX-Index")):
+    bb = bars(code)
+    if len(bb) > 30:
+        cc = [q[4] for q in bb]; IX[code] = (nm, bb[-1][0], cc[-1], chg(cc, 1), chg(cc, 5), chg(cc, 21), chg(cc, 250), ma(cc, 20), ma(cc, 50), ma(cc, 200), rsi(cc))
+mv = []
+for t in made:
+    bb = bars(t)
+    if len(bb) > 2 and bb[-2][4]: mv.append((t, bb[-1][4], (bb[-1][4] / bb[-2][4] - 1) * 100, bb[-1][5] * bb[-1][4]))
+up = sorted(mv, key=lambda z: -z[2])[:10]; dn = sorted(mv, key=lambda z: z[2])[:10]; liq = sorted(mv, key=lambda z: -z[3])[:10]
+nup = sum(1 for z in mv if z[2] > 0); ndn = sum(1 for z in mv if z[2] < 0)
+body = []
+if "VNINDEX" in IX:
+    nm, dd, v, d1, d5, d21, d250, a20, a50, a200, rr = IX["VNINDEX"]
+    ab = sum(1 for m in (a20, a50, a200) if m and v > m)
+    st = "xu hướng tăng" if ab == 3 else "xu hướng giảm" if ab == 0 else "giằng co"
+    body.append(f"<p>Phiên {dmy(dd)}, <b>VN-Index</b> đóng cửa <b>{nf(v)}</b> điểm ({pc(d1)} trong phiên, {pc(d5)} trong 1 tuần, {pc(d250)} trong 1 năm). Chỉ số nằm trên {ab}/3 đường trung bình MA20, MA50, MA200, trạng thái <b>{st}</b>; RSI 14 phiên {nf(rr,0)}. Trong {len(mv)} mã có thanh khoản, {nup} mã tăng và {ndn} mã giảm.</p>")
+body.append("<h2>Các chỉ số chính</h2><table class='mt'>" + "".join(f"<tr><td>{e(z[0])}</td><td class='r'><b>{nf(z[2])}</b></td><td class='r {'up' if (z[3] or 0)>=0 else 'dn'}'>{pc(z[3])}</td><td class='n'>1 tháng {pc(z[5])}</td></tr>" for z in IX.values()) + "</table>")
+def tb(L, lab): return f"<h2>{lab}</h2><table class='mt'>" + "".join(f"<tr><td><a href='/ma/{t}.html'>{t}</a></td><td class='r'>{nf(p)}</td><td class='r {'up' if c>=0 else 'dn'}'>{pc(c)}</td></tr>" for t, p, c, _ in L) + "</table>"
+body += [tb(up, "Top 10 cổ phiếu tăng mạnh nhất"), tb(dn, "Top 10 cổ phiếu giảm mạnh nhất"), tb(liq, "Top 10 cổ phiếu thanh khoản cao nhất"),
+         "<p>Nhận định thị trường hằng ngày của Huy Nguyễn được chia sẻ trong nhóm Zalo cộng đồng và video lúc 20:00 trên kênh YouTube Chứng Khoán Huy Nguyễn.</p>", CTA, NAV]
+EXTRA.append(page("thi-truong-chung-khoan-hom-nay.html", f"Thị trường chứng khoán hôm nay {dmy(today)}: VN-Index, cổ phiếu tăng giảm mạnh | Chứng Khoán Huy Nguyễn",
+     "Thị trường chứng khoán hôm nay: VN-Index, VN30, HNX-Index, top cổ phiếu tăng giảm mạnh, thanh khoản cao, xu hướng và nhận định của Huy Nguyễn. Cập nhật mỗi ngày.",
+     "Thị trường chứng khoán hôm nay", body))
+# 2) Định giá cổ phiếu
+top = sorted(made, key=lambda t: -(FD[t].get("mc") or 0))[:40]
+body = ["<p>Định giá cổ phiếu là ước tính giá trị hợp lý của doanh nghiệp để so với giá thị trường. Cách nhanh nhất là so các chỉ số <b>P/E</b>, <b>P/B</b>, <b>ROE</b> với trung vị thị trường và với cùng ngành; sâu hơn là chiết khấu dòng tiền và so sánh tăng trưởng lợi nhuận.</p>",
+        f"<p>Trung vị thị trường hiện nay (các mã vốn hóa từ 1.000 tỷ): P/E {nf(MED['pe'],1)}, P/B {nf(MED['pb'],2)}, ROE {nf(MED['roe'],1)}%, cổ tức {nf(MED['dy'],1)}%.</p>",
+        "<h2>Bảng định giá 40 cổ phiếu vốn hóa lớn</h2><table class='mt'><tr><td><b>Mã</b></td><td class='r'><b>Giá</b></td><td class='r'><b>P/E</b></td><td class='r'><b>P/B</b></td><td class='r'><b>ROE</b></td></tr>" +
+        "".join(f"<tr><td><a href='/ma/{t}.html'>{t}</a></td><td class='r'>{nf(bars(t)[-1][4])}</td><td class='r'>{nf(FD[t].get('pe'),1)}</td><td class='r'>{nf(FD[t].get('pb'),2)}</td><td class='r'>{nf(FD[t].get('roe'),1)}%</td></tr>" for t in top) + "</table>",
+        "<p>Xem định giá chi tiết từng mã (kèm đánh giá báo cáo tài chính và xu hướng giá) trong <a href='/ma/'>danh sách mã cổ phiếu</a>, hoặc học cách dùng chỉ số ở bài <a href='/f0/pe-la-gi.html'>P/E là gì</a>.</p>", CTA, NAV]
+EXTRA.append(page("dinh-gia-co-phieu.html", "Định giá cổ phiếu: bảng P/E, P/B, ROE các mã vốn hóa lớn, cập nhật mỗi ngày | Chứng Khoán Huy Nguyễn",
+     "Định giá cổ phiếu Việt Nam: bảng P/E, P/B, ROE của 40 mã vốn hóa lớn so với trung vị thị trường, cách định giá cổ phiếu cho người mới. Cập nhật hằng ngày.",
+     "Định giá cổ phiếu", body))
+# 3) Tư vấn
+body = ["<p>Huy Nguyễn tư vấn đầu tư chứng khoán 1:1 qua Zalo hoặc điện thoại, kết hợp ba lớp: <b>phân tích kỹ thuật</b> (xu hướng, dòng tiền, điểm mua và cắt lỗ), <b>phân tích cơ bản</b> (báo cáo tài chính, định giá) và <b>vĩ mô</b> (lãi suất, tỷ giá, dòng vốn ngoại).</p>",
+        "<h2>Dịch vụ</h2><ul><li>Khám danh mục: rà từng mã anh chị đang cầm, mã nào nên giữ, mã nào cần kế hoạch thoát.</li><li>Dựng danh mục theo số vốn, thời gian và mức chịu rủi ro.</li><li>Kế hoạch mua và cắt lỗ cho từng lệnh.</li><li>Cập nhật theo mùa báo cáo tài chính.</li></ul>",
+        "<h2>Kết quả công khai</h2><p>Toàn bộ lệnh đầu cơ từ 2016 đến nay được công bố trong <a href='/bao-cao-2026.html'>Báo cáo lệnh 2016–2026</a>. Các lệnh tiêu biểu như MSR 2026, VIX 2025, FPT 2024, GEE 2024–2025 có video kể lại trên kênh YouTube.</p>",
+        "<h2>Bắt đầu thế nào?</h2><ol><li><a href='/mo-tai-khoan-chung-khoan.html'>Mở tài khoản chứng khoán</a> với mã giới thiệu BJIE.</li><li>Nhắn Zalo 0365.188.286 để nhận mã kích hoạt khách hàng và vào nhóm cộng đồng.</li><li>Dùng mục Hỏi đáp chuyên sâu PRO trên web để hỏi về từng mã.</li></ol>", CTA, NAV]
+EXTRA.append(page("tu-van-dau-tu-chung-khoan.html", "Tư vấn đầu tư chứng khoán 1:1 cùng Huy Nguyễn | Chứng Khoán Huy Nguyễn",
+     "Tư vấn đầu tư chứng khoán 1:1: khám danh mục, dựng danh mục theo vốn, kế hoạch mua và cắt lỗ, cập nhật BCTC. Lệnh thật công khai từ 2016. Zalo 0365.188.286.",
+     "Tư vấn đầu tư chứng khoán", body))
+
 sp = os.path.join(ROOT, "sitemap.xml"); sm = open(sp, encoding="utf-8").read()
-sm = re.sub(r"<url><loc>" + re.escape(B) + r"/ma/[^<]*</loc>.*?</url>\n", "", sm)
-add = f"<url><loc>{B}/ma/</loc><lastmod>{today}</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>\n" + \
+sm = re.sub(r"<url><loc>" + re.escape(B) + r"/(ma/[^<]*|thi-truong-chung-khoan-hom-nay\.html|dinh-gia-co-phieu\.html|tu-van-dau-tu-chung-khoan\.html)</loc>.*?</url>\n", "", sm)
+add = "".join(f"<url><loc>{u}</loc><lastmod>{today}</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>\n" for u in EXTRA) + f"<url><loc>{B}/ma/</loc><lastmod>{today}</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>\n" + \
       "".join(f"<url><loc>{B}/ma/{t}.html</loc><lastmod>{today}</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>\n" for t in made)
 sm = sm.replace("</urlset>", add + "</urlset>")
 open(sp, "w", encoding="utf-8").write(sm)
