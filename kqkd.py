@@ -37,16 +37,18 @@ def ty(v): return v / 1e9
 def fmt_ty(v):
     v = ty(v); s = f"{abs(v):,.0f}".replace(",", ".")
     return ("−" if v < 0 else "") + s + " tỷ"
+LTL = 1e12  # mã riêng: cùng kỳ lỗ, nay lãi (khác với tăng rất mạnh)
 def pct(a, b):
     if b is None or a is None or b == 0: return None
-    if b < 0 and a >= 0: return 999.0
+    if b < 0 and a >= 0: return LTL
     if b < 0: return None
-    if a < 0: return -999.0
+    if a < 0: return -LTL
     return (a / b - 1) * 100
 def fp(p):
     if p is None: return "–"
-    if p >= 999: return "chuyển từ lỗ sang lãi"
-    if p <= -999: return "chuyển từ lãi sang lỗ"
+    if p == LTL: return "chuyển từ lỗ sang lãi"
+    if p == -LTL: return "chuyển từ lãi sang lỗ"
+    if p >= 900: return "gấp " + f"{p / 100 + 1:.1f}".replace(".", ",") + " lần"
     return ("+" if p >= 0 else "−") + f"{abs(p):.1f}".replace(".", ",") + "%"
 
 def prev_year(d): return str(int(d[:4]) - 1) + d[4:]
@@ -69,13 +71,13 @@ def analyse(code):
     info.append(f"LNST công ty mẹ {tag}: {fmt_ty(ln)} ({fp(p_ln)} so với cùng kỳ)")
     if len(ytd) > 1: info.append(f"Lũy kế {len(ytd)*3} tháng: {fmt_ty(acc)} ({fp(p_acc)})")
     if ln < 0: b.append(f"Quý {qn} lỗ {fmt_ty(-ln)}")
-    elif p_ln is not None and p_ln >= 999: g.append("Lợi nhuận quý chuyển từ lỗ sang lãi so với cùng kỳ")
+    elif p_ln is not None and p_ln == LTL: g.append("Lợi nhuận quý chuyển từ lỗ sang lãi so với cùng kỳ")
     elif p_ln is not None and p_ln >= 15: g.append(f"Lợi nhuận quý tăng {fp(p_ln)} so với cùng kỳ")
     elif p_ln is not None and p_ln <= -15: b.append(f"Lợi nhuận quý giảm {fp(p_ln)} so với cùng kỳ")
     if dq and q[dq].get(LN, 0) > 0 and ln > 0:
         pq = pct(ln, q[dq][LN])
-        if pq is not None and -999 < pq <= -25: b.append(f"So với quý trước, lợi nhuận giảm {fp(pq)}")
-        if pq is not None and pq >= 30 and pq < 999: g.append(f"So với quý trước, lợi nhuận tăng {fp(pq)}")
+        if pq is not None and -LTL < pq <= -25: b.append(f"So với quý trước, lợi nhuận giảm {fp(pq)}")
+        if pq is not None and pq >= 30 and pq != LTL: g.append(f"So với quý trước, lợi nhuận tăng {fp(pq)}")
     if form == "bank":
         nii, niiy = c.get(421900, 0), y.get(421900, 0)
         fee, feey = c.get(423200, 0), y.get(423200, 0)
