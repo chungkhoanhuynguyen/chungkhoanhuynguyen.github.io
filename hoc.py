@@ -53,7 +53,7 @@ os.makedirs(os.path.join(ROOT, "hoc"), exist_ok=True)
 keep = set()
 for v in R:
     url = f"{B}/hoc/{v['slug']}.html"; thumb = f"https://i.ytimg.com/vi/{v['id']}/maxresdefault.jpg"
-    same = [x for x in R if x["k"][:2] == v["k"][:2]]; i = same.index(v)
+    same = [x for x in R if x.get("series") == v.get("series")]; i = same.index(v)
     prv = same[i - 1] if i > 0 else None; nxt = same[i + 1] if i + 1 < len(same) else None
     up = v["d"] + "T20:00:00+07:00"
     ld = {"@context": "https://schema.org", "@graph": [
@@ -95,10 +95,11 @@ p = [head("Thư viện bài học chứng khoán cho người mới | Chứng Kh
           url, B + "/img/og.png", ld), "<main>",
      '<div class="bc"><a href="/">Trang chủ</a> › Thư viện bài học</div><h1>Thư viện bài học chứng khoán</h1>',
      '<p class="meta">Kiến thức chứng khoán cho người mới bắt đầu, kể bằng câu chuyện và số liệu có nguồn. Mỗi tối 20:00 có một bài mới.</p>']
-for s in SER:
-    L = [v for v in R if v["k"][:2] == s]
+_SO = ["Lệnh thật & bài học", "Vĩ mô nóng"] + [NAME[x] for x in SER]
+for sn in _SO + sorted({v["series"] for v in R} - set(_SO)):
+    L = [v for v in R if (v.get("series") or NAME.get(v["k"][:2])) == sn]
     if not L: continue
-    p.append(f"<h2>{NAME[s]}</h2><div class=\"grid\">" + "".join(
+    p.append(f"<h2>{e(sn)}</h2><div class=\"grid\">" + "".join(
         f'<a class="card" href="/hoc/{v["slug"]}.html"><img src="/img/yt/{v["k"]}.jpg" alt="{e(v["h1"])}" width="480" height="270" loading="lazy"><span>{e(v["h1"])}</span></a>' for v in L) + "</div>")
 p.append(f'<div class="cta"><a class="btn b1" href="{YT}?sub_confirmation=1" rel="noopener">Đăng ký kênh để không lỡ bài mới</a></div></main>' + FOOT)
 open(os.path.join(ROOT, "hoc/index.html"), "w", encoding="utf-8").write("\n".join(p))
