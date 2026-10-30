@@ -149,7 +149,10 @@ def analyse(code):
     if ln < 0 or (p_ln is not None and p_ln <= -20 and sc <= 0): v = "neg"
     elif sc >= 2 or (sc >= 1 and (p_ln or 0) >= 15): v = "pos"
     else: v = "mid"
-    return dict(s=code, form=form, q=tag, date=d0, v=v, info=info[:4], good=g[:4], bad=b[:4])
+    RV = 421900 if form == "bank" else (21001 if form == "dn" else None)
+    def tg(d): return f"Q{(int(d[5:7]) - 1) // 3 + 1}/{d[2:4]}"
+    h = [[tg(d), round(ty(q[d].get(LN, 0)), 1), (round(ty(q[d].get(RV, 0)), 1) if RV else None)] for d in ds[-12:]]
+    return dict(s=code, form=form, q=tag, date=d0, v=v, info=info[:4], good=g[:4], bad=b[:4], h=h)
 
 out = []
 for s in W:
