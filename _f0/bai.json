@@ -14,7 +14,7 @@
     "cta",
     "Mở tài khoản cùng Huy Nguyễn để được hướng dẫn đặt lệnh đầu tiên và hỗ trợ 1:1 trong 3 tháng đầu.",
     "https://openaccount.vps.com.vn/?MKTID=BJIE",
-    "Mở tài khoản chứng khoán VPS (mã giới thiệu BJIE)"
+    "Mở tài khoản chứng khoán ngay"
    ],
    [
     "h2",
@@ -40,7 +40,6 @@
      "Nhập số điện thoại, email và mã OTP được gửi về.",
      "Chụp hai mặt CCCD, hệ thống tự đọc thông tin.",
      "Quay khuôn mặt để xác thực (eKYC).",
-     "Nhập mã giới thiệu của người hỗ trợ, ví dụ <b>BJIE</b> nếu mở VPS cùng Huy Nguyễn.",
      "Ký hợp đồng điện tử, nhận số tài khoản và mật khẩu qua tin nhắn hoặc email."
     ]
    ],
@@ -87,6 +86,25 @@
     ]
    ],
    [
+    "h2",
+    "Đã có tài khoản VPS? Đổi người tư vấn sang Huy Nguyễn"
+   ],
+   [
+    "ol",
+    [
+     "Mở ứng dụng VPS SmartOne, chọn biểu tượng cá nhân phía trên.",
+     "Chọn <b>Quản lý dịch vụ</b>.",
+     "Chọn <b>Đổi chuyên gia tư vấn</b>.",
+     "Nhập ID <b>BJIE</b> (Nguyễn Huy Anh), tích cả 3 mục rồi bấm <b>Gửi yêu cầu</b>."
+    ]
+   ],
+   [
+    "img",
+    "/img/doi-tu-van-vps.jpg",
+    "Hướng dẫn đổi chuyên gia tư vấn VPS sang Huy Nguyễn (ID BJIE) trên ứng dụng VPS SmartOne",
+    "Đã có tài khoản VPS: vào SmartOne → biểu tượng cá nhân → Quản lý dịch vụ → Đổi chuyên gia tư vấn → nhập ID BJIE – Nguyễn Huy Anh, tích cả 3 mục → Gửi yêu cầu."
+   ],
+   [
     "cta",
     "Mở tài khoản xong, nhắn Zalo 0365.188.286 để nhận mã kích hoạt khách hàng PRO trên web.",
     "https://openaccount.vps.com.vn/?MKTID=BJIE",
@@ -111,8 +129,8 @@
     "Mỗi người được mở tài khoản ở nhiều công ty chứng khoán khác nhau, nhưng mỗi công ty chỉ một tài khoản giao dịch cơ sở."
    ],
    [
-    "Mã giới thiệu khi mở tài khoản dùng để làm gì?",
-    "Mã giới thiệu gắn tài khoản với người hỗ trợ, để anh chị được hướng dẫn và tư vấn sau khi mở. Mã BJIE là mã của Huy Nguyễn tại VPS."
+    "Mở tài khoản qua link của Huy Nguyễn có cần nhập mã giới thiệu không?",
+    "Không cần. Link đã gắn sẵn người hỗ trợ là Huy Nguyễn. Nếu anh chị đã có tài khoản VPS, có thể đổi người tư vấn trong ứng dụng SmartOne theo hướng dẫn ở trên."
    ]
   ],
   "rel": [
@@ -124,8 +142,8 @@
  {
   "slug": "cach-mo-tai-khoan-chung-khoan-vps",
   "kw": "mở tài khoản chứng khoán VPS",
-  "title": "Cách mở tài khoản chứng khoán VPS online, mã giới thiệu BJIE",
-  "desc": "Hướng dẫn mở tài khoản chứng khoán VPS online bằng CCCD, nhập mã giới thiệu BJIE để được Huy Nguyễn hỗ trợ 1:1, cách nạp tiền và đặt lệnh đầu tiên.",
+  "title": "Cách mở tài khoản chứng khoán VPS online trên điện thoại",
+  "desc": "Hướng dẫn mở tài khoản chứng khoán VPS online bằng CCCD, có người hỗ trợ 1:1, và cách đổi người tư vấn sang Huy Nguyễn nếu đã có tài khoản VPS.",
   "body": [
    [
     "p",
@@ -138,22 +156,21 @@
    [
     "ol",
     [
-     "Bấm vào link mở tài khoản VPS bên dưới (đã gắn sẵn mã giới thiệu BJIE).",
+     "Bấm vào link mở tài khoản VPS bên dưới (đã gắn sẵn người hỗ trợ, không cần nhập mã).",
      "Nhập số điện thoại, email, xác nhận OTP.",
      "Chụp CCCD hai mặt và quay khuôn mặt.",
-     "Kiểm tra mã giới thiệu là <b>BJIE</b>.",
      "Ký hợp đồng điện tử và nhận thông tin đăng nhập."
     ]
    ],
    [
     "cta",
-    "Link mở tài khoản VPS đã gắn mã giới thiệu BJIE của Huy Nguyễn.",
+    "Bấm nút bên dưới, người hỗ trợ Huy Nguyễn đã được gắn sẵn, không cần nhập mã.",
     "https://openaccount.vps.com.vn/?MKTID=BJIE",
-    "Mở tài khoản VPS (mã BJIE)"
+    "Mở tài khoản VPS"
    ],
    [
     "h2",
-    "Mã giới thiệu BJIE có lợi gì?"
+    "Mở tài khoản cùng Huy Nguyễn có lợi gì?"
    ],
    [
     "ul",
@@ -165,17 +182,28 @@
    ],
    [
     "h2",
-    "Đã mở tài khoản nhưng quên nhập mã?"
+    "Đã có tài khoản VPS? Đổi người tư vấn sang Huy Nguyễn"
    ],
    [
-    "p",
-    "Anh chị nhắn Zalo 0365.188.286 để được hướng dẫn cách bổ sung người hỗ trợ theo quy định của công ty chứng khoán."
+    "ol",
+    [
+     "Mở ứng dụng VPS SmartOne, chọn biểu tượng cá nhân phía trên.",
+     "Chọn <b>Quản lý dịch vụ</b>.",
+     "Chọn <b>Đổi chuyên gia tư vấn</b>.",
+     "Nhập ID <b>BJIE</b> (Nguyễn Huy Anh), tích cả 3 mục rồi bấm <b>Gửi yêu cầu</b>."
+    ]
+   ],
+   [
+    "img",
+    "/img/doi-tu-van-vps.jpg",
+    "Hướng dẫn đổi chuyên gia tư vấn VPS sang Huy Nguyễn (ID BJIE) trên ứng dụng VPS SmartOne",
+    "Đã có tài khoản VPS: vào SmartOne → biểu tượng cá nhân → Quản lý dịch vụ → Đổi chuyên gia tư vấn → nhập ID BJIE – Nguyễn Huy Anh, tích cả 3 mục → Gửi yêu cầu."
    ]
   ],
   "faq": [
    [
-    "Mã giới thiệu VPS của Huy Nguyễn là gì?",
-    "Mã giới thiệu là BJIE."
+    "Đã có tài khoản VPS, muốn Huy Nguyễn hỗ trợ thì làm sao?",
+    "Vào SmartOne → Quản lý dịch vụ → Đổi chuyên gia tư vấn → nhập ID BJIE (Nguyễn Huy Anh), tích cả 3 mục và Gửi yêu cầu."
    ],
    [
     "Mở tài khoản VPS có mất phí không?",
@@ -227,7 +255,7 @@
     "cta",
     "Cần người hướng dẫn qua điện thoại? Mở tài khoản cùng Huy Nguyễn.",
     "https://openaccount.vps.com.vn/?MKTID=BJIE",
-    "Mở tài khoản (mã BJIE)"
+    "Mở tài khoản"
    ]
   ],
   "faq": [
@@ -457,7 +485,6 @@
      "Tải ứng dụng hoặc vào trang mở tài khoản của công ty chứng khoán.",
      "Nhập số điện thoại, email, nhận mã OTP.",
      "Chụp hai mặt CCCD và quay khuôn mặt để xác thực.",
-     "Chọn mã giới thiệu của người hỗ trợ (nếu có) để được tư vấn sau này.",
      "Ký hợp đồng điện tử, nhận số tài khoản và mật khẩu đăng nhập."
     ]
    ],
@@ -473,7 +500,7 @@
     "cta",
     "Mở tài khoản cùng Huy Nguyễn để được hỗ trợ 1:1 trong giai đoạn đầu.",
     "https://openaccount.vps.com.vn/?MKTID=BJIE",
-    "Mở tài khoản VPS (mã giới thiệu BJIE)"
+    "Mở tài khoản VPS"
    ]
   ],
   "faq": [
