@@ -1,12 +1,18 @@
 {
-  "TCB": "Lõi kinh doanh khỏe: thu nhập lãi và dịch vụ cùng tăng hai chữ số. Một phần mức tăng lợi nhuận đến từ trích lập dự phòng thấp hơn, bao phủ nợ xấu giảm từ khoảng 126% xuống 107%, nên đánh giá theo lợi nhuận cốt lõi. Cổ tức cổ phiếu 50%: giá điều chỉnh kỹ thuật từ 29/10, tổng tài sản của cổ đông không đổi.",
-  "VPB": "Tăng trưởng quy mô nhanh nhất nhóm ngân hàng tư nhân, quý kỷ lục thứ hai liên tiếp. Cái giá là biên lãi (NIM) thu hẹp và nợ nhóm 2 tăng khoảng 17,5% so với quý trước. Chất lượng tài sản sẽ quyết định lợi nhuận các quý tới.",
-  "SHB": "Đã nhận đủ tiền bán SHBFinance ngày 15/10, phần lãi này ghi nhận vào quý 4. Chi phí vận hành thuộc nhóm thấp nhất ngành. Cổ tức 16% (6% tiền mặt, 10% cổ phiếu). Điểm cần theo dõi: bao phủ nợ xấu còn thấp, khoảng 58%.",
-  "NAB": "LNTT 9 tháng hơn 4.700 tỷ, tăng khoảng 25%, đạt gần 80% kế hoạch năm. ROE gần 20%, thuộc nhóm cao nhất ngành.",
-  "LPB": "Quý 3 tăng chủ yếu nhờ lãi dịch vụ gấp gần 4 lần, trong khi thu nhập lãi thuần giảm 7,4%. Với ngân hàng phải xem lãi đến từ đâu: lãi dịch vụ đột biến khó lặp lại đều đặn như lãi cho vay.",
-  "PVP": "Quý 3 đi ngang do biên lợi nhuận không tăng thêm, thấp hơn kỳ vọng thị trường. Bù lại lũy kế 9 tháng LNTT 348,9 tỷ, tăng khoảng 80% và đã vượt khoảng 29% kế hoạch năm.",
-  "TCX": "LNTT quý 3 khoảng 2.152 tỷ, cao nhất lịch sử, trong khi nhiều công ty chứng khoán khác giảm mạnh vì thanh khoản thị trường đi xuống.",
-  "VIX": "Lợi nhuận phụ thuộc lớn vào danh mục tự doanh nên giảm rất sâu khi thị trường điều chỉnh. Giá cổ phiếu có lúc tăng ngược với kết quả kinh doanh: đó là dòng tiền, không phải nền tảng.",
-  "MSR": "Lãi tăng mạnh nhờ giá APT (vonfram) cao gấp đôi kịch bản đầu năm và nâng công suất. Kết quả rất nhạy với chu kỳ giá hàng hóa; khoản tiền cấp quyền khai thác mỏ Núi Pháo chưa được giải quyết dứt điểm.",
-  "KBC": "Quý 3 lãi gấp khoảng 3 lần cùng kỳ nhờ ghi nhận cho thuê đất KCN, nhưng lũy kế 9 tháng vẫn giảm hơn 23%. Tồn kho trên 35.400 tỷ và nợ vay gần 34.000 tỷ là điểm cần theo dõi."
+ "TCB": "Lõi kinh doanh khỏe: thu nhập lãi và dịch vụ cùng tăng hai chữ số. Một phần mức tăng lợi nhuận đến từ trích lập dự phòng thấp hơn, bao phủ nợ xấu giảm từ khoảng 126% xuống 107%, nên đánh giá theo lợi nhuận cốt lõi. Cổ tức cổ phiếu 50%: giá điều chỉnh kỹ thuật từ 29/10, tổng tài sản của cổ đông không đổi.",
+ "VPB": "Tăng trưởng quy mô nhanh nhất nhóm ngân hàng tư nhân, quý kỷ lục thứ hai liên tiếp. Cái giá là biên lãi (NIM) thu hẹp và nợ nhóm 2 tăng khoảng 17,5% so với quý trước. Chất lượng tài sản sẽ quyết định lợi nhuận các quý tới.",
+ "SHB": "Đã nhận đủ tiền bán SHBFinance ngày 15/10, phần lãi này ghi nhận vào quý 4. Chi phí vận hành thuộc nhóm thấp nhất ngành. Cổ tức 16% (6% tiền mặt, 10% cổ phiếu). Điểm cần theo dõi: bao phủ nợ xấu còn thấp, khoảng 58%.",
+ "NAB": "LNTT 9 tháng hơn 4.700 tỷ, tăng khoảng 25%, đạt gần 80% kế hoạch năm. ROE gần 20%, thuộc nhóm cao nhất ngành.",
+ "LPB": "Quý 3 tăng chủ yếu nhờ lãi dịch vụ gấp gần 4 lần, trong khi thu nhập lãi thuần giảm 7,4%. Với ngân hàng phải xem lãi đến từ đâu: lãi dịch vụ đột biến khó lặp lại đều đặn như lãi cho vay.",
+ "PVP": "Quý 3 đi ngang do biên lợi nhuận không tăng thêm, thấp hơn kỳ vọng thị trường. Bù lại lũy kế 9 tháng LNTT 348,9 tỷ, tăng khoảng 80% và đã vượt khoảng 29% kế hoạch năm.",
+ "TCX": "LNTT quý 3 khoảng 2.152 tỷ, cao nhất lịch sử, trong khi nhiều công ty chứng khoán khác giảm mạnh vì thanh khoản thị trường đi xuống.",
+ "VIX": "Lợi nhuận phụ thuộc lớn vào danh mục tự doanh nên giảm rất sâu khi thị trường điều chỉnh. Giá cổ phiếu có lúc tăng ngược với kết quả kinh doanh: đó là dòng tiền, không phải nền tảng.",
+ "MSR": "Lãi tăng mạnh nhờ giá APT (vonfram) cao gấp đôi kịch bản đầu năm và nâng công suất. Kết quả rất nhạy với chu kỳ giá hàng hóa; khoản tiền cấp quyền khai thác mỏ Núi Pháo chưa được giải quyết dứt điểm.",
+ "KBC": "Quý 3 lãi gấp khoảng 3 lần cùng kỳ nhờ ghi nhận cho thuê đất KCN, nhưng lũy kế 9 tháng vẫn giảm hơn 23%. Tồn kho trên 35.400 tỷ và nợ vay gần 34.000 tỷ là điểm cần theo dõi.",
+ "FRT": "Quý 3 lợi nhuận trước thuế khoảng 700 tỷ, hơn gấp đôi cùng kỳ và tăng so với quý trước. Tạm ổn, chờ thêm số liệu chi tiết của chuỗi Long Châu.",
+ "DCM": "Lợi nhuận quý 3 khoảng 432 tỷ, tăng 33% so với cùng kỳ nhưng giảm khoảng 60% so với đỉnh quý 2. Nhóm đạm khá khó: giá đầu vào tăng, giá bán giảm trong quý 3; quý 4 dự kiến còn thêm khó khăn.",
+ "DPM": "Lợi nhuận trước thuế quý 3 chỉ khoảng 100 tỷ, giảm 70% so với cùng kỳ và giảm 90% so với quý trước. Nhóm đạm khá khó: giá đầu vào tăng, giá bán giảm trong quý 3; quý 4 dự kiến còn thêm khó khăn.",
+ "PVD": "Lợi nhuận quý 3 giảm khoảng 70% so với cùng kỳ. Nhìn chung kém.",
+ "DHC": "Lợi nhuận quý 3 khoảng 150 tỷ, tăng 50% so với cùng kỳ, nhưng biên lợi nhuận đã giảm so với quý trước.",
+ "REE": "Lợi nhuận quý 3 tăng khoảng 12% nhờ mảng Cơ điện lạnh và Điện."
 }
