@@ -17,10 +17,11 @@ jobs:
         with:
           python-version: "3.12"
       - run: python hoc.py
+      - run: python ma.py
       - run: |
           git config user.name "hn-bot"
           git config user.email "hn-bot@users.noreply.github.com"
-          git add -A hoc sitemap.xml
+          git add -A hoc f0 ma sitemap.xml
           git diff --cached --quiet || git commit -m "Mo bai hoc $(date -u +%F)"
           git pull --rebase -q || true
           git push
