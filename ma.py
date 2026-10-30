@@ -1,6 +1,7 @@
 # Tạo trang từng mã cổ phiếu /ma/<MÃ>.html (dữ liệu thật trong data/*.bin) + /ma/index.html + bổ sung sitemap.xml
 # Chạy sau hoc.py mỗi ngày (GitHub Actions). Không đưa điểm mua/bán.
 import os, re, json, html, datetime
+ZBOX = '<div style="margin:20px 0;padding:14px 16px;border-radius:12px;background:#0068ff12;border:1px solid #0068ff55"><b>💬 Nhận cảnh báo khi {s} công bố BCTC, bảng tổng hợp BCTC quý mới nhất và nhận định thị trường mỗi ngày</b><br><a href="https://zalo.me/g/jbnbiq994" target="_blank" rel="noopener" style="display:inline-block;margin-top:8px;background:#0068ff;color:#fff;padding:9px 16px;border-radius:999px;font-weight:700;text-decoration:none">Tham gia nhóm Zalo cộng đồng (miễn phí)</a></div>'
 import hncodec
 B = "https://chungkhoanhuynguyen.com"
 YT = "https://www.youtube.com/@chungkhoanhuynguyen"
@@ -138,6 +139,7 @@ for s in SYMS:
         if k.get("good"): P.append("<h3>Điểm cộng</h3><ul>" + "".join(f"<li>{e(i)}</li>" for i in k["good"]) + "</ul>")
         if k.get("bad"): P.append("<h3>Điểm cần lưu ý</h3><ul>" + "".join(f"<li>{e(i)}</li>" for i in k["bad"]) + "</ul>")
     if nx: P.append(f"<h2>Nhận định của Huy Nguyễn về {e(s)}</h2><blockquote>{e(nx)}</blockquote>")
+    P.append(ZBOX.format(s=e(s)))
     P.append(f'<div class="cta"><a class="btn b1" href="/#ma={e(s)}">Xem biểu đồ {e(s)}</a><a class="btn b2" href="/#hoidap">Hỏi đáp chuyên sâu về {e(s)}</a><a class="btn b2" href="https://zalo.me/0365188286" rel="noopener">Tư vấn 1:1</a></div>')
     P.append("<h2>Câu hỏi thường gặp về cổ phiếu " + e(s) + "</h2>" + "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in faq))
     same = [t for t in SYMS if S[t][1] == x[1] and t != s]
@@ -175,7 +177,7 @@ def page(fn, title, desc, h1, body, ld_extra=None):
     open(os.path.join(ROOT, fn), "w", encoding="utf-8").write("\n".join(P))
     return url
 CTA = ('<div class="cta"><a class="btn b1" href="/mo-tai-khoan-chung-khoan.html">Mở tài khoản chứng khoán</a>'
-       '<a class="btn b2" href="https://zalo.me/0365188286" rel="noopener">Tư vấn 1:1 qua Zalo</a><a class="btn b2" href="/#hoidap">Hỏi đáp PRO</a></div>')
+       '<a class="btn b2" href="https://zalo.me/0365188286" rel="noopener">Tư vấn 1:1 qua Zalo</a><a class="btn b2" href="https://zalo.me/g/jbnbiq994" rel="noopener">Nhóm Zalo cộng đồng</a><a class="btn b2" href="/#hoidap">Hỏi đáp PRO</a></div>')
 NAV = ('<h2>Khám phá thêm</h2><ul><li><a href="/thi-truong-chung-khoan-hom-nay.html">Thị trường chứng khoán hôm nay</a></li><li><a href="/dinh-gia-co-phieu.html">Định giá cổ phiếu</a></li>'
        '<li><a href="/bao-cao-2026.html">Báo cáo lệnh 2016–2026</a></li><li><a href="/tu-van-dau-tu-chung-khoan.html">Tư vấn đầu tư chứng khoán</a></li><li><a href="/hoc/">Học chứng khoán</a></li><li><a href="/f0/">Cẩm nang F0</a></li><li><a href="/ma/">Tra cứu mã cổ phiếu</a></li></ul>')
 EXTRA = []
