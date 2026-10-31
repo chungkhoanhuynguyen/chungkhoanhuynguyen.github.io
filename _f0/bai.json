@@ -6305,5 +6305,605 @@
    "cach-chon-co-phieu-ngan-hang-de-tich-san",
    "margin-va-tien-mat-khi-tich-san"
   ]
+ },
+ {
+  "slug": "co-phieu-la-gi",
+  "kw": "cổ phiếu là gì",
+  "grp": 1,
+  "title": "Cổ phiếu là gì? Giải thích dễ hiểu cho người mới bắt đầu",
+  "desc": "Cổ phiếu là gì, mua cổ phiếu là mua gì, cổ phiếu phổ thông và ưu đãi khác nhau thế nào, kiếm tiền từ cổ phiếu bằng cách nào và rủi ro ra sao.",
+  "body": [
+   [
+    "p",
+    "<b>Cổ phiếu</b> là giấy chứng nhận bạn sở hữu một phần công ty. Khi mua 100 cổ phiếu của một doanh nghiệp có 1 tỷ cổ phiếu, bạn sở hữu 0,00001% công ty đó, được hưởng phần lợi nhuận và quyền biểu quyết tương ứng."
+   ],
+   [
+    "h2",
+    "1. Vì sao doanh nghiệp phát hành cổ phiếu?"
+   ],
+   [
+    "p",
+    "Doanh nghiệp cần vốn để mở rộng sản xuất, xây nhà máy, cho vay (với ngân hàng)... Thay vì đi vay, họ bán bớt quyền sở hữu cho nhà đầu tư. Sau khi niêm yết, cổ phiếu được mua bán qua lại giữa các nhà đầu tư trên sàn."
+   ],
+   [
+    "h2",
+    "2. Mua cổ phiếu kiếm tiền bằng cách nào?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Chênh lệch giá:</b> mua giá thấp, bán giá cao hơn khi doanh nghiệp làm ăn tốt lên.",
+     "<b>Cổ tức:</b> phần lợi nhuận công ty chia cho cổ đông bằng tiền mặt hoặc cổ phiếu.",
+     "<b>Quyền mua phát hành thêm:</b> đôi khi cổ đông được mua cổ phiếu mới với giá ưu đãi."
+    ]
+   ],
+   [
+    "h2",
+    "3. Cổ phiếu phổ thông và cổ phiếu ưu đãi"
+   ],
+   [
+    "p",
+    "Cổ phiếu mua bán trên sàn hằng ngày là <b>cổ phiếu phổ thông</b>: có quyền biểu quyết, nhận cổ tức theo quyết định của đại hội cổ đông. <b>Cổ phiếu ưu đãi</b> (ưu đãi cổ tức, ưu đãi biểu quyết...) thường không giao dịch tự do, nhà đầu tư cá nhân ít gặp."
+   ],
+   [
+    "h2",
+    "4. Mã cổ phiếu là gì?"
+   ],
+   [
+    "p",
+    "Mỗi cổ phiếu có một mã 3 chữ cái, ví dụ VCB (Vietcombank), FPT (FPT), HPG (Hòa Phát). Bạn đặt lệnh mua bán bằng mã này trên ứng dụng chứng khoán."
+   ],
+   [
+    "h2",
+    "5. Rủi ro khi mua cổ phiếu"
+   ],
+   [
+    "ul",
+    [
+     "Giá có thể giảm mạnh nếu doanh nghiệp làm ăn kém hoặc thị trường chung đi xuống.",
+     "Doanh nghiệp có thể không chia cổ tức.",
+     "Trường hợp xấu nhất doanh nghiệp phá sản, cổ đông được nhận lại sau cùng, thường mất gần hết vốn."
+    ]
+   ],
+   [
+    "p",
+    "Vì vậy người mới nên bắt đầu với số tiền nhỏ, chọn doanh nghiệp lớn có lợi nhuận ổn định và học cách đọc báo cáo tài chính trước khi bỏ nhiều vốn."
+   ]
+  ],
+  "faq": [
+   [
+    "Mua cổ phiếu tối thiểu bao nhiêu tiền?",
+    "Trên sàn Việt Nam có thể mua từ 1 cổ phiếu (lô lẻ), nên chỉ cần vài chục nghìn đến vài trăm nghìn đồng là đã mua được."
+   ],
+   [
+    "Cổ phiếu có hết hạn không?",
+    "Không. Cổ phiếu tồn tại chừng nào doanh nghiệp còn hoạt động và còn niêm yết."
+   ],
+   [
+    "Cổ phiếu khác trái phiếu thế nào?",
+    "Cổ phiếu là sở hữu một phần công ty, lãi lỗ theo kết quả kinh doanh. Trái phiếu là cho công ty vay, nhận lãi cố định và được trả gốc khi đáo hạn."
+   ]
+  ],
+  "rel": [
+   "chung-khoan-la-gi",
+   "cach-mua-co-phieu-lan-dau",
+   "co-tuc-la-gi",
+   "san-hose-hnx-upcom-la-gi"
+  ]
+ },
+ {
+  "slug": "san-hose-hnx-upcom-la-gi",
+  "kw": "sàn HOSE HNX UPCoM khác nhau thế nào",
+  "grp": 1,
+  "title": "Sàn HOSE, HNX, UPCoM là gì? Khác nhau thế nào?",
+  "desc": "Ba sàn chứng khoán Việt Nam HOSE, HNX, UPCoM khác nhau về điều kiện niêm yết, biên độ giá trần sàn và mức độ rủi ro. Người mới nên chọn cổ phiếu sàn nào.",
+  "body": [
+   [
+    "p",
+    "Việt Nam có ba nơi giao dịch cổ phiếu chính: <b>HOSE</b> (Sở Giao dịch Chứng khoán TP.HCM), <b>HNX</b> (Sở Giao dịch Chứng khoán Hà Nội) và <b>UPCoM</b> (thị trường đăng ký giao dịch của công ty đại chúng chưa niêm yết, do HNX vận hành)."
+   ],
+   [
+    "h2",
+    "1. Biên độ giá trong ngày"
+   ],
+   [
+    "ul",
+    [
+     "HOSE: ±7% so với giá tham chiếu",
+     "HNX: ±10%",
+     "UPCoM: ±15%"
+    ]
+   ],
+   [
+    "p",
+    "Biên độ càng rộng thì giá trong một phiên dao động càng mạnh, lãi nhanh nhưng lỗ cũng nhanh."
+   ],
+   [
+    "h2",
+    "2. Điều kiện niêm yết"
+   ],
+   [
+    "p",
+    "HOSE yêu cầu cao nhất về vốn điều lệ, số năm có lãi và số cổ đông, nên tập trung các doanh nghiệp lớn. HNX yêu cầu thấp hơn. UPCoM gần như không có điều kiện về lợi nhuận, nhiều doanh nghiệp nhỏ hoặc mới cổ phần hóa."
+   ],
+   [
+    "h2",
+    "3. Chỉ số đại diện"
+   ],
+   [
+    "ul",
+    [
+     "HOSE: VN-Index, VN30",
+     "HNX: HNX-Index, HNX30",
+     "UPCoM: UPCoM-Index"
+    ]
+   ],
+   [
+    "h2",
+    "4. Người mới nên chọn sàn nào?"
+   ],
+   [
+    "p",
+    "Người mới thường bắt đầu với cổ phiếu trên HOSE, đặc biệt nhóm VN30, vì doanh nghiệp lớn, thông tin minh bạch hơn và thanh khoản tốt. Cổ phiếu UPCoM có thể có cơ hội nhưng rủi ro thông tin và thanh khoản cao hơn nhiều."
+   ],
+   [
+    "h2",
+    "5. Cách nhận biết cổ phiếu thuộc sàn nào"
+   ],
+   [
+    "p",
+    "Trên bảng giá các app chứng khoán đều có tab riêng cho từng sàn. Khi tra cứu một mã, thông tin sàn luôn hiển thị cạnh tên doanh nghiệp."
+   ]
+  ],
+  "faq": [
+   [
+    "Giờ giao dịch các sàn có khác nhau không?",
+    "Cả ba sàn giao dịch từ 9h đến 15h, nghỉ trưa 11h30–13h. HOSE và HNX có phiên ATO/ATC, UPCoM khớp liên tục."
+   ],
+   [
+    "Cổ phiếu có thể chuyển sàn không?",
+    "Có. Doanh nghiệp đủ điều kiện có thể chuyển từ UPCoM lên HNX hoặc HOSE, và có thể bị hủy niêm yết nếu vi phạm."
+   ]
+  ],
+  "rel": [
+   "co-phieu-la-gi",
+   "bien-do-gia-tran-san",
+   "vn30-la-gi",
+   "gio-giao-dich-chung-khoan"
+  ]
+ },
+ {
+  "slug": "macd-la-gi",
+  "kw": "MACD là gì",
+  "grp": 4,
+  "title": "MACD là gì? Cách đọc chỉ báo MACD cho người mới",
+  "desc": "MACD là gì, gồm đường MACD, đường tín hiệu và histogram. Cách đọc giao cắt, phân kỳ MACD và những hạn chế người mới cần biết.",
+  "body": [
+   [
+    "p",
+    "<b>MACD</b> (Moving Average Convergence Divergence) là chỉ báo xu hướng phổ biến, đo khoảng cách giữa hai đường trung bình động hàm mũ (EMA) để cho biết đà tăng hay giảm đang mạnh lên hay yếu đi."
+   ],
+   [
+    "h2",
+    "1. MACD gồm những gì?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Đường MACD:</b> EMA 12 phiên trừ EMA 26 phiên.",
+     "<b>Đường tín hiệu (signal):</b> EMA 9 phiên của đường MACD.",
+     "<b>Histogram:</b> các cột thể hiện khoảng cách giữa MACD và đường tín hiệu."
+    ]
+   ],
+   [
+    "h2",
+    "2. Cách đọc cơ bản"
+   ],
+   [
+    "ul",
+    [
+     "MACD nằm trên 0: EMA ngắn hạn cao hơn dài hạn, xu hướng nghiêng về tăng.",
+     "MACD cắt lên đường tín hiệu: đà tăng đang mạnh lên.",
+     "MACD cắt xuống đường tín hiệu: đà tăng yếu đi.",
+     "Histogram thu hẹp dần: đà hiện tại đang chậm lại."
+    ]
+   ],
+   [
+    "h2",
+    "3. Phân kỳ MACD"
+   ],
+   [
+    "p",
+    "Khi giá tạo đỉnh mới cao hơn nhưng MACD tạo đỉnh thấp hơn, gọi là phân kỳ âm, cho thấy lực tăng đang yếu. Ngược lại giá tạo đáy thấp hơn mà MACD tạo đáy cao hơn là phân kỳ dương."
+   ],
+   [
+    "h2",
+    "4. Hạn chế của MACD"
+   ],
+   [
+    "ul",
+    [
+     "Là chỉ báo trễ vì tính từ đường trung bình, thường báo sau khi giá đã chạy một đoạn.",
+     "Thị trường đi ngang cho rất nhiều tín hiệu nhiễu.",
+     "Không nên dùng một mình, cần kết hợp khối lượng, xu hướng và cơ bản doanh nghiệp."
+    ]
+   ],
+   [
+    "p",
+    "Người mới nên dùng MACD để hiểu xu hướng, không phải để bấm mua bán theo từng lần giao cắt."
+   ]
+  ],
+  "faq": [
+   [
+    "Thông số MACD chuẩn là gì?",
+    "Phổ biến nhất là 12, 26, 9, hầu hết phần mềm để mặc định như vậy."
+   ],
+   [
+    "MACD dùng khung ngày hay tuần?",
+    "Khung ngày cho tín hiệu nhiều hơn, khung tuần ít nhiễu hơn và hợp người đầu tư trung dài hạn."
+   ]
+  ],
+  "rel": [
+   "duong-ma-la-gi",
+   "rsi-la-gi",
+   "cach-xem-bieu-do-chung-khoan",
+   "phan-tich-co-ban-va-ky-thuat"
+  ]
+ },
+ {
+  "slug": "mo-hinh-nen-nhat-co-ban",
+  "kw": "nến Nhật là gì",
+  "grp": 4,
+  "title": "Nến Nhật là gì? Cách đọc biểu đồ nến cho người mới",
+  "desc": "Biểu đồ nến Nhật là gì, cấu tạo một cây nến (giá mở cửa, đóng cửa, cao nhất, thấp nhất), nến xanh đỏ, các mẫu nến cơ bản như doji, búa, nhấn chìm.",
+  "body": [
+   [
+    "p",
+    "<b>Nến Nhật</b> là cách thể hiện giá phổ biến nhất trên biểu đồ chứng khoán. Mỗi cây nến cho biết 4 mức giá trong một khoảng thời gian (một phiên, một tuần...): mở cửa, đóng cửa, cao nhất và thấp nhất."
+   ],
+   [
+    "h2",
+    "1. Cấu tạo một cây nến"
+   ],
+   [
+    "ul",
+    [
+     "<b>Thân nến:</b> khoảng giữa giá mở cửa và đóng cửa.",
+     "<b>Bóng trên:</b> từ thân lên giá cao nhất.",
+     "<b>Bóng dưới:</b> từ thân xuống giá thấp nhất.",
+     "<b>Nến xanh (tăng):</b> đóng cửa cao hơn mở cửa. <b>Nến đỏ (giảm):</b> đóng cửa thấp hơn mở cửa."
+    ]
+   ],
+   [
+    "h2",
+    "2. Một số mẫu nến cơ bản"
+   ],
+   [
+    "ul",
+    [
+     "<b>Doji:</b> mở cửa gần bằng đóng cửa, thể hiện sự lưỡng lự giữa bên mua và bên bán.",
+     "<b>Nến búa:</b> thân nhỏ, bóng dưới dài, xuất hiện sau đà giảm cho thấy có lực mua ở vùng giá thấp.",
+     "<b>Nến nhấn chìm tăng:</b> nến xanh có thân bao trùm thân nến đỏ trước đó.",
+     "<b>Nến bóng trên dài:</b> giá từng lên cao nhưng bị bán xuống, cho thấy áp lực bán."
+    ]
+   ],
+   [
+    "h2",
+    "3. Đọc nến cần đi kèm gì?"
+   ],
+   [
+    "p",
+    "Một cây nến riêng lẻ ít ý nghĩa. Cần xem nó xuất hiện ở đâu (gần hỗ trợ, kháng cự?), khối lượng giao dịch lớn hay nhỏ, và xu hướng chung đang tăng hay giảm."
+   ],
+   [
+    "h2",
+    "4. Sai lầm thường gặp"
+   ],
+   [
+    "ul",
+    [
+     "Học thuộc hàng chục mẫu nến rồi giao dịch theo từng cây nến.",
+     "Bỏ qua khối lượng và bối cảnh thị trường.",
+     "Dùng nến trên khung quá ngắn (5 phút, 15 phút) khi đầu tư dài hạn."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Nến Nhật trên app chứng khoán màu gì?",
+    "Thường nến tăng màu xanh, nến giảm màu đỏ, một số phần mềm cho phép đổi màu."
+   ],
+   [
+    "Nên xem nến ngày hay nến tuần?",
+    "Người đầu tư trung dài hạn nên xem nến tuần để thấy xu hướng rõ hơn, dùng nến ngày để chọn thời điểm."
+   ]
+  ],
+  "rel": [
+   "cach-xem-bieu-do-chung-khoan",
+   "ho-tro-khang-cu",
+   "khoi-luong-giao-dich-va-dong-tien",
+   "macd-la-gi"
+  ]
+ },
+ {
+  "slug": "bang-can-doi-ke-toan-la-gi",
+  "kw": "bảng cân đối kế toán là gì",
+  "grp": 3,
+  "title": "Bảng cân đối kế toán là gì? Cách đọc cho nhà đầu tư mới",
+  "desc": "Bảng cân đối kế toán gồm tài sản, nợ phải trả và vốn chủ sở hữu. Những khoản mục nhà đầu tư cần chú ý: tiền, phải thu, hàng tồn kho, nợ vay.",
+  "body": [
+   [
+    "p",
+    "<b>Bảng cân đối kế toán</b> là một trong ba báo cáo tài chính chính, cho biết tại một thời điểm doanh nghiệp đang có gì (tài sản) và tiền đó từ đâu ra (nợ phải trả và vốn chủ sở hữu)."
+   ],
+   [
+    "h2",
+    "1. Công thức cơ bản"
+   ],
+   [
+    "p",
+    "<b>Tài sản = Nợ phải trả + Vốn chủ sở hữu.</b> Hai vế luôn bằng nhau."
+   ],
+   [
+    "h2",
+    "2. Phần tài sản"
+   ],
+   [
+    "ul",
+    [
+     "<b>Tiền và tương đương tiền:</b> càng nhiều càng an toàn khi khó khăn.",
+     "<b>Phải thu khách hàng:</b> bán hàng chưa thu được tiền. Tăng nhanh hơn doanh thu là dấu hiệu cần chú ý.",
+     "<b>Hàng tồn kho:</b> hàng chưa bán được. Tồn kho phình to có thể bị giảm giá trị.",
+     "<b>Tài sản cố định:</b> nhà xưởng, máy móc.",
+     "<b>Xây dựng cơ bản dở dang:</b> dự án đang làm, chưa tạo ra doanh thu."
+    ]
+   ],
+   [
+    "h2",
+    "3. Phần nguồn vốn"
+   ],
+   [
+    "ul",
+    [
+     "<b>Nợ vay ngắn hạn và dài hạn:</b> phải trả lãi, càng nhiều thì rủi ro khi lãi suất tăng càng lớn.",
+     "<b>Người mua trả tiền trước:</b> với doanh nghiệp bất động sản, đây thường là tín hiệu doanh thu tương lai.",
+     "<b>Vốn chủ sở hữu:</b> vốn góp và lợi nhuận giữ lại qua các năm."
+    ]
+   ],
+   [
+    "h2",
+    "4. Ba chỉ số nhanh từ bảng cân đối"
+   ],
+   [
+    "ul",
+    [
+     "Nợ vay / Vốn chủ: trên 1,5 lần với doanh nghiệp sản xuất là khá cao.",
+     "Tài sản ngắn hạn / Nợ ngắn hạn: dưới 1 là rủi ro thanh khoản.",
+     "Giá trị sổ sách mỗi cổ phiếu (BVPS) = Vốn chủ / số cổ phiếu, dùng để tính P/B."
+    ]
+   ],
+   [
+    "p",
+    "Ngân hàng có cấu trúc bảng cân đối khác hẳn doanh nghiệp thường, xem thêm bài đọc BCTC ngân hàng."
+   ]
+  ],
+  "faq": [
+   [
+    "Bảng cân đối kế toán công bố khi nào?",
+    "Doanh nghiệp niêm yết công bố theo quý, bán niên (soát xét) và năm (kiểm toán)."
+   ],
+   [
+    "Nên so sánh bảng cân đối như thế nào?",
+    "So với cùng kỳ năm trước và đầu năm để thấy tài sản, nợ vay thay đổi ra sao."
+   ]
+  ],
+  "rel": [
+   "cach-doc-bao-cao-tai-chinh",
+   "bao-cao-luu-chuyen-tien-te-la-gi",
+   "pb-la-gi",
+   "doc-bctc-ngan-hang"
+  ]
+ },
+ {
+  "slug": "bao-cao-luu-chuyen-tien-te-la-gi",
+  "kw": "báo cáo lưu chuyển tiền tệ là gì",
+  "grp": 3,
+  "title": "Báo cáo lưu chuyển tiền tệ là gì? Vì sao lãi mà vẫn thiếu tiền",
+  "desc": "Báo cáo lưu chuyển tiền tệ gồm dòng tiền kinh doanh, đầu tư và tài chính. Cách dùng dòng tiền để kiểm tra lợi nhuận doanh nghiệp có thật hay không.",
+  "body": [
+   [
+    "p",
+    "<b>Báo cáo lưu chuyển tiền tệ</b> cho biết tiền thực sự chảy vào và ra khỏi doanh nghiệp trong kỳ. Lợi nhuận trên báo cáo kết quả kinh doanh có thể chưa thu được tiền, còn dòng tiền thì khó làm đẹp hơn."
+   ],
+   [
+    "h2",
+    "1. Ba dòng tiền chính"
+   ],
+   [
+    "ul",
+    [
+     "<b>Dòng tiền từ hoạt động kinh doanh (CFO):</b> tiền thu từ bán hàng trừ chi phí. Quan trọng nhất.",
+     "<b>Dòng tiền đầu tư (CFI):</b> mua sắm máy móc, xây nhà máy, đầu tư công ty khác. Thường âm với doanh nghiệp đang mở rộng.",
+     "<b>Dòng tiền tài chính (CFF):</b> vay mới, trả nợ, trả cổ tức, phát hành cổ phiếu."
+    ]
+   ],
+   [
+    "h2",
+    "2. Vì sao lãi mà vẫn thiếu tiền?"
+   ],
+   [
+    "p",
+    "Doanh nghiệp bán chịu nhiều (phải thu tăng) hoặc ôm hàng tồn kho thì lợi nhuận kế toán vẫn có nhưng tiền chưa về. Nếu kéo dài nhiều năm, doanh nghiệp phải đi vay để hoạt động."
+   ],
+   [
+    "h2",
+    "3. Dấu hiệu tốt và xấu"
+   ],
+   [
+    "ul",
+    [
+     "Tốt: CFO dương và gần bằng hoặc lớn hơn lợi nhuận sau thuế qua nhiều năm.",
+     "Cần chú ý: lợi nhuận tăng mạnh nhưng CFO âm liên tục.",
+     "Cần chú ý: trả cổ tức tiền mặt bằng tiền đi vay."
+    ]
+   ],
+   [
+    "h2",
+    "4. Dòng tiền tự do"
+   ],
+   [
+    "p",
+    "Dòng tiền tự do = CFO trừ chi đầu tư tài sản cố định. Đây là phần tiền doanh nghiệp có thể dùng trả cổ tức, trả nợ hoặc mở rộng mà không cần vay thêm."
+   ]
+  ],
+  "faq": [
+   [
+    "Ngân hàng có cần xem lưu chuyển tiền tệ không?",
+    "Với ngân hàng, dòng tiền kinh doanh biến động rất lớn theo huy động và cho vay nên ít ý nghĩa, nên tập trung vào nợ xấu và lợi nhuận."
+   ],
+   [
+    "CFO âm một năm có đáng lo?",
+    "Một năm chưa nói lên nhiều, cần xem 3–5 năm và lý do (mở rộng tồn kho, bán chịu cho khách lớn...)."
+   ]
+  ],
+  "rel": [
+   "cach-doc-bao-cao-tai-chinh",
+   "bang-can-doi-ke-toan-la-gi",
+   "roe-eps-la-gi",
+   "co-tuc-la-gi"
+  ]
+ },
+ {
+  "slug": "khoi-ngoai-mua-rong-ban-rong-la-gi",
+  "kw": "khối ngoại mua ròng là gì",
+  "grp": 2,
+  "title": "Khối ngoại mua ròng, bán ròng là gì? Có nên theo khối ngoại?",
+  "desc": "Khối ngoại mua ròng, bán ròng nghĩa là gì, xem ở đâu, room ngoại là gì, và vì sao không nên mua bán chỉ vì khối ngoại.",
+  "body": [
+   [
+    "p",
+    "<b>Khối ngoại</b> là các nhà đầu tư nước ngoài (quỹ, tổ chức, cá nhân) giao dịch trên thị trường Việt Nam. <b>Mua ròng</b> là giá trị mua lớn hơn giá trị bán trong phiên, <b>bán ròng</b> là ngược lại."
+   ],
+   [
+    "h2",
+    "1. Xem giao dịch khối ngoại ở đâu?"
+   ],
+   [
+    "p",
+    "Hầu hết bảng giá đều có cột NN mua / NN bán cho từng mã và tổng hợp cả sàn cuối phiên. Các trang tin tài chính cũng thống kê top mã khối ngoại mua, bán ròng mỗi ngày."
+   ],
+   [
+    "h2",
+    "2. Room ngoại là gì?"
+   ],
+   [
+    "p",
+    "Room ngoại là tỷ lệ sở hữu tối đa nhà đầu tư nước ngoài được nắm giữ tại một doanh nghiệp. Ví dụ ngân hàng thường giới hạn 30%. Khi hết room, nhà đầu tư ngoại chỉ mua được qua thỏa thuận, đôi khi với giá cao hơn thị trường."
+   ],
+   [
+    "h2",
+    "3. Có nên mua bán theo khối ngoại?"
+   ],
+   [
+    "ul",
+    [
+     "Khối ngoại bán ròng có thể vì lý do ngoài Việt Nam: rút vốn khỏi thị trường mới nổi, tỷ giá, cơ cấu quỹ ETF.",
+     "Giao dịch thỏa thuận lớn làm số liệu mua bán ròng bị méo.",
+     "Khối ngoại cũng có lúc sai, đặc biệt trong ngắn hạn."
+    ]
+   ],
+   [
+    "p",
+    "Số liệu khối ngoại nên dùng như một thông tin tham khảo về dòng tiền, không phải lý do duy nhất để mua hay bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Khối ngoại bán ròng nhiều phiên thì thị trường có giảm không?",
+    "Không nhất thiết. Nhiều giai đoạn khối ngoại bán ròng kéo dài nhưng dòng tiền trong nước vẫn đẩy chỉ số tăng."
+   ],
+   [
+    "Tự doanh là gì?",
+    "Tự doanh là các công ty chứng khoán dùng vốn của chính họ để giao dịch, cũng được thống kê mua bán ròng mỗi phiên."
+   ]
+  ],
+  "rel": [
+   "khoi-luong-giao-dich-va-dong-tien",
+   "etf-la-gi",
+   "cach-doc-bang-gia-chung-khoan",
+   "vn-index-la-gi"
+  ]
+ },
+ {
+  "slug": "dai-hoi-co-dong-la-gi",
+  "kw": "đại hội cổ đông là gì",
+  "grp": 3,
+  "title": "Đại hội cổ đông là gì? Cổ đông nhỏ cần xem gì trong tài liệu ĐHCĐ",
+  "desc": "Đại hội đồng cổ đông thường niên là gì, cổ đông nhỏ có được dự không, cần đọc gì trong tài liệu: kế hoạch lợi nhuận, cổ tức, phát hành thêm cổ phiếu.",
+  "body": [
+   [
+    "p",
+    "<b>Đại hội đồng cổ đông (ĐHĐCĐ)</b> là cơ quan quyết định cao nhất của công ty cổ phần. Đại hội thường niên được tổ chức mỗi năm, thường trong khoảng tháng 3 đến tháng 6."
+   ],
+   [
+    "h2",
+    "1. Đại hội quyết định những gì?"
+   ],
+   [
+    "ul",
+    [
+     "Kế hoạch doanh thu, lợi nhuận năm.",
+     "Phương án chia cổ tức (tiền mặt, cổ phiếu).",
+     "Phát hành thêm cổ phiếu, tăng vốn, ESOP cho nhân viên.",
+     "Bầu hội đồng quản trị, ban kiểm soát.",
+     "Thù lao lãnh đạo, chọn công ty kiểm toán."
+    ]
+   ],
+   [
+    "h2",
+    "2. Cổ đông nhỏ có được dự không?"
+   ],
+   [
+    "p",
+    "Có. Ai sở hữu cổ phiếu vào ngày chốt danh sách đều có quyền dự, dù chỉ 1 cổ phiếu. Nhiều doanh nghiệp cho biểu quyết trực tuyến."
+   ],
+   [
+    "h2",
+    "3. Cần đọc gì trong tài liệu đại hội?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Kế hoạch lợi nhuận:</b> so với lợi nhuận năm trước, tăng hay giảm, có thực tế không.",
+     "<b>Cổ tức:</b> chia tiền mặt hay cổ phiếu, tỷ lệ bao nhiêu.",
+     "<b>Phát hành thêm:</b> giá phát hành, số lượng, mức độ pha loãng.",
+     "<b>ESOP:</b> giá bán cho nhân viên thấp hơn thị giá quá nhiều là thiệt cho cổ đông nhỏ."
+    ]
+   ],
+   [
+    "h2",
+    "4. Phiên họp hỏi đáp"
+   ],
+   [
+    "p",
+    "Phần chất vấn ban lãnh đạo thường có nhiều thông tin về kết quả quý đầu năm, triển vọng ngành và dự án mới, đáng để theo dõi."
+   ]
+  ],
+  "faq": [
+   [
+    "Tài liệu đại hội xem ở đâu?",
+    "Trên mục quan hệ cổ đông của website doanh nghiệp và trang công bố thông tin của sở giao dịch."
+   ],
+   [
+    "Mua cổ phiếu sau ngày chốt có được dự đại hội không?",
+    "Không, chỉ người có tên trong danh sách cổ đông vào ngày chốt mới được dự."
+   ]
+  ],
+  "rel": [
+   "co-tuc-la-gi",
+   "ngay-giao-dich-khong-huong-quyen",
+   "chia-tach-co-phieu-thuong-phat-hanh-them",
+   "cach-doc-bao-cao-tai-chinh"
+  ]
  }
 ]
