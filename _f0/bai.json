@@ -5199,5 +5199,95 @@
     ]
    ]
   ]
+ },
+ {
+  "slug": "lai-suat-margin",
+  "kw": "lãi suất margin",
+  "grp": 5,
+  "title": "Lãi suất margin tính thế nào? Chi phí thật khi vay ký quỹ chứng khoán",
+  "desc": "Lãi suất margin được tính theo ngày trên số tiền vay. Cách tự ước tính chi phí vay, vì sao giữ margin lâu rất tốn kém, và lưu ý rủi ro khi kết hợp margin với lướt sóng.",
+  "body": [
+   [
+    "p",
+    "<b>Lãi suất margin</b> là chi phí anh chị trả cho công ty chứng khoán khi vay tiền để mua thêm cổ phiếu (vay ký quỹ). Mỗi công ty chứng khoán công bố mức lãi riêng, thường quy ra theo năm và có thể thay đổi theo từng thời kỳ, nên trước khi vay cần xem biểu phí mới nhất của chính công ty mình đang dùng."
+   ],
+   [
+    "h2",
+    "Lãi margin được tính như thế nào?"
+   ],
+   [
+    "ul",
+    [
+     "Tính trên <b>số tiền thực vay</b>, không tính trên tổng giá trị cổ phiếu.",
+     "Tính <b>theo ngày</b>, kể cả thứ Bảy, Chủ nhật và ngày lễ khi khoản vay vẫn còn.",
+     "Công thức ước tính: Tiền lãi ≈ Số tiền vay × Lãi suất năm × Số ngày vay ÷ 365."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ để dễ hình dung"
+   ],
+   [
+    "p",
+    "Giả sử anh chị vay 100 triệu đồng với mức lãi giả định 12%/năm và giữ khoản vay 90 ngày. Tiền lãi ≈ 100 triệu × 12% × 90 ÷ 365 ≈ 2,96 triệu đồng. Nghĩa là cổ phiếu phải tăng đủ để bù gần 3 triệu tiền lãi, cộng phí giao dịch và thuế, thì anh chị mới bắt đầu có lãi trên phần tiền vay. (Con số 12% chỉ để minh họa cách tính.)"
+   ],
+   [
+    "h2",
+    "Chi phí ẩn: thời gian"
+   ],
+   [
+    "p",
+    "Margin hợp với khoản giữ ngắn. Giữ càng lâu, tiền lãi cộng dồn càng lớn, trong khi cổ phiếu có thể đi ngang hoặc giảm. Với người <a href=\"/f0/tich-san-chung-khoan-la-gi.html\">tích sản</a> dài hạn, chi phí này thường ăn mòn đáng kể lợi nhuận."
+   ],
+   [
+    "h2",
+    "Rủi ro lớn hơn tiền lãi: bị gọi ký quỹ"
+   ],
+   [
+    "p",
+    "Khi giá cổ phiếu giảm, tỷ lệ tài sản đảm bảo giảm theo. Xuống dưới ngưỡng quy định, công ty chứng khoán sẽ yêu cầu nộp thêm tiền; nếu không nộp kịp, cổ phiếu có thể bị bán bắt buộc ở giá thấp. Lúc đó khoản lỗ thực tế lớn hơn nhiều so với tiền lãi vay."
+   ],
+   [
+    "h2",
+    "Ghi chú của Huy Nguyễn"
+   ],
+   [
+    "p",
+    "Khi nhà đầu tư tự đề xuất dùng thêm margin và giao dịch lướt nhiều theo thị trường để mong lãi cao hơn phương pháp trong <a href=\"/bao-cao-2026.html\">Báo cáo lệnh</a> (ví dụ muốn 30–40% mỗi năm), cách làm này có thể đúng trong ngắn hạn và đạt lãi cao. Nhưng về dài hạn, kết hợp margin với lướt sóng <b>rủi ro hơn nhiều so với phương pháp đầu tư thuần túy</b>. Anh chị cần cân nhắc kỹ trước khi chọn cách này."
+   ]
+  ],
+  "faq": [
+   [
+    "Lãi margin có tính vào ngày nghỉ không?",
+    "Có. Lãi tính theo số ngày thực tế khoản vay còn tồn tại, gồm cả cuối tuần và ngày lễ."
+   ],
+   [
+    "Lãi suất margin bao nhiêu là hợp lý?",
+    "Mức lãi khác nhau giữa các công ty chứng khoán và thay đổi theo thời kỳ. Anh chị nên xem biểu phí mới nhất và tự tính chi phí theo công thức trong bài trước khi vay."
+   ],
+   [
+    "Người mới có nên dùng margin không?",
+    "Người mới nên làm quen với thị trường bằng tiền nhàn rỗi trước. Margin khuếch đại cả lãi lẫn lỗ và có nguy cơ bị bán bắt buộc khi thị trường giảm mạnh."
+   ]
+  ],
+  "rel": [
+   "margin-la-gi",
+   "margin-va-tien-mat-khi-tich-san",
+   "cat-lo-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Lãi margin tính theo ngày trên số tiền thực vay.",
+     "Giữ khoản vay càng lâu, chi phí càng lớn.",
+     "Rủi ro lớn nhất là bị gọi ký quỹ và bán bắt buộc khi giá giảm."
+    ]
+   ]
+  ]
  }
 ]
