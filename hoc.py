@@ -114,8 +114,8 @@ for f in os.listdir(os.path.join(ROOT, "hoc")):
 
 # ---- Cẩm nang F0 (/f0/): bài viết chuẩn SEO cho người mới, nội dung trong _f0/bai.json ----
 F = json.load(open(os.path.join(ROOT, "_f0/bai.json"), encoding="utf-8"))
-GN = {1: "Bắt đầu", 2: "Giao dịch", 3: "Phân tích cơ bản", 4: "Phân tích kỹ thuật", 5: "Quản trị rủi ro & tâm lý", 6: "Sản phẩm khác", 7: "Tích sản & quản trị vốn"}
-GD = {1: "Chứng khoán là gì, mở tài khoản, nạp tiền", 2: "Đọc bảng giá, đặt lệnh, phí và thời gian tiền về", 3: "Đọc báo cáo tài chính, định giá, chọn cổ phiếu", 4: "Xu hướng, đường MA, RSI, dòng tiền", 5: "Cắt lỗ, margin, phân bổ vốn, kiểm soát cảm xúc", 6: "ETF, chứng chỉ quỹ, phái sinh, trái phiếu, IPO", 7: "Tích sản từ A đến Z, rủi ro, quản trị vốn: kiến thức quan trọng nhất"}
+GN = {1: "Bắt đầu", 2: "Giao dịch", 3: "Phân tích cơ bản", 4: "Phân tích kỹ thuật", 5: "Quản trị rủi ro & tâm lý", 6: "Sản phẩm khác", 7: "Tích sản & quản trị vốn", 8: "Vĩ mô & ngành"}
+GD = {1: "Chứng khoán là gì, mở tài khoản, nạp tiền", 2: "Đọc bảng giá, đặt lệnh, phí và thời gian tiền về", 3: "Đọc báo cáo tài chính, định giá, chọn cổ phiếu", 4: "Xu hướng, đường MA, RSI, dòng tiền", 5: "Cắt lỗ, margin, phân bổ vốn, kiểm soát cảm xúc", 6: "ETF, chứng chỉ quỹ, phái sinh, trái phiếu, IPO", 7: "Tích sản từ A đến Z, rủi ro, quản trị vốn: kiến thức quan trọng nhất", 8: "Giá dầu, lãi suất, tỷ giá, chính sách tác động tới cổ phiếu"}
 F = sorted(F, key=lambda x: x.get("grp", 1))
 FM = {x["slug"]: x for x in F}
 FP = lambda x: ("/%s.html" if x.get("root") else "/f0/%s.html") % x["slug"]
