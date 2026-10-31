@@ -6905,5 +6905,572 @@
    "chia-tach-co-phieu-thuong-phat-hanh-them",
    "cach-doc-bao-cao-tai-chinh"
   ]
+ },
+ {
+  "slug": "roa-la-gi",
+  "kw": "ROA là gì",
+  "grp": 3,
+  "title": "ROA là gì? Cách tính và ý nghĩa tỷ suất sinh lời trên tài sản",
+  "desc": "ROA là gì, công thức tính ROA, ROA bao nhiêu là tốt, khác gì ROE và vì sao ngân hàng có ROA thấp. Giải thích dễ hiểu kèm ví dụ cho người mới.",
+  "body": [
+   [
+    "p",
+    "<b>ROA</b> (Return on Assets) là tỷ suất lợi nhuận trên tổng tài sản. Chỉ số này cho biết doanh nghiệp dùng mỗi 100 đồng tài sản thì tạo ra bao nhiêu đồng lãi sau thuế."
+   ],
+   [
+    "h2",
+    "Công thức tính ROA"
+   ],
+   [
+    "p",
+    "ROA = Lợi nhuận sau thuế ÷ Tổng tài sản bình quân × 100%. Tổng tài sản bình quân thường lấy trung bình đầu kỳ và cuối kỳ để tránh lệch khi tài sản tăng mạnh trong năm."
+   ],
+   [
+    "h2",
+    "Ví dụ dễ hiểu"
+   ],
+   [
+    "p",
+    "Doanh nghiệp A có tổng tài sản bình quân 1.000 tỷ, lãi sau thuế 80 tỷ: ROA = 8%. Doanh nghiệp B cùng ngành, tài sản 1.000 tỷ nhưng chỉ lãi 30 tỷ: ROA = 3%. Với cùng lượng tài sản, A dùng tài sản hiệu quả hơn B."
+   ],
+   [
+    "h2",
+    "ROA khác ROE thế nào?"
+   ],
+   [
+    "p",
+    "<a href=\"/f0/roe-eps-la-gi.html\">ROE</a> tính lãi trên vốn chủ sở hữu, nên doanh nghiệp vay nhiều có thể có ROE cao dù kinh doanh bình thường. ROA tính trên toàn bộ tài sản, gồm cả phần mua bằng tiền vay, nên phản ánh sát hơn năng lực sinh lời thật. Đọc ROE nên đặt cạnh ROA: ROE cao mà ROA thấp nghĩa là lãi phần lớn đến từ đòn bẩy."
+   ],
+   [
+    "h2",
+    "ROA bao nhiêu là tốt?"
+   ],
+   [
+    "ul",
+    [
+     "Không có con số chung cho mọi ngành, chỉ nên so trong cùng ngành.",
+     "Ngân hàng có tài sản rất lớn so với vốn nên ROA thường chỉ khoảng 1–2% vẫn là tốt.",
+     "Doanh nghiệp công nghệ, dịch vụ ít tài sản cố định thường có ROA cao hơn doanh nghiệp sản xuất nặng.",
+     "Quan trọng hơn con số một năm là xu hướng ROA qua nhiều năm: tăng đều là tín hiệu tốt."
+    ]
+   ],
+   [
+    "h2",
+    "Lưu ý khi dùng ROA"
+   ],
+   [
+    "ul",
+    [
+     "Lợi nhuận bất thường (bán tài sản, hoàn nhập dự phòng) làm ROA đột biến một năm, cần xem dòng lợi nhuận khác.",
+     "Doanh nghiệp vừa đầu tư nhà máy lớn có ROA tạm thấp vì tài sản tăng trước, lợi nhuận đến sau."
+    ]
+   ],
+   [
+    "p",
+    "Trên mỗi trang <a href=\"/ma/\">mã cổ phiếu</a> của Chứng Khoán Huy Nguyễn đều có ROA và ROE để anh chị so sánh nhanh."
+   ]
+  ],
+  "faq": [
+   [
+    "ROA là viết tắt của gì?",
+    "Return on Assets, tỷ suất lợi nhuận trên tổng tài sản."
+   ],
+   [
+    "ROA âm nghĩa là gì?",
+    "Doanh nghiệp đang lỗ trong kỳ tính toán."
+   ]
+  ],
+  "rel": [
+   "roe-eps-la-gi",
+   "pb-la-gi",
+   "cach-doc-bao-cao-tai-chinh"
+  ]
+ },
+ {
+  "slug": "ev-ebitda-la-gi",
+  "kw": "EV/EBITDA là gì",
+  "grp": 3,
+  "title": "EV/EBITDA là gì? Cách định giá doanh nghiệp tính cả nợ vay",
+  "desc": "EV/EBITDA là gì, cách tính EV và EBITDA, khi nào nên dùng thay cho P/E và những bẫy cần tránh. Giải thích bằng ví dụ dễ hiểu.",
+  "body": [
+   [
+    "p",
+    "<b>EV/EBITDA</b> là chỉ số định giá so sánh giá trị toàn bộ doanh nghiệp (EV) với lợi nhuận trước lãi vay, thuế và khấu hao (EBITDA). Khác với <a href=\"/f0/pe-la-gi.html\">P/E</a> chỉ nhìn phần của cổ đông, EV/EBITDA tính cả nợ vay."
+   ],
+   [
+    "h2",
+    "EV là gì?"
+   ],
+   [
+    "p",
+    "EV (Enterprise Value) = Vốn hóa thị trường + Nợ vay − Tiền và tương đương tiền. Hiểu đơn giản: muốn mua trọn doanh nghiệp, người mua phải trả tiền cho cổ đông và gánh luôn khoản nợ, nhưng được giữ lại số tiền mặt đang có."
+   ],
+   [
+    "h2",
+    "EBITDA là gì?"
+   ],
+   [
+    "p",
+    "EBITDA = Lợi nhuận trước thuế + Chi phí lãi vay + Khấu hao. Con số này gần với dòng tiền do hoạt động kinh doanh cốt lõi tạo ra, chưa bị ảnh hưởng bởi cách doanh nghiệp vay nợ hay chính sách khấu hao."
+   ],
+   [
+    "h2",
+    "Ví dụ"
+   ],
+   [
+    "p",
+    "Công ty X vốn hóa 8.000 tỷ, nợ vay 3.000 tỷ, tiền mặt 1.000 tỷ: EV = 10.000 tỷ. EBITDA năm 2.000 tỷ, vậy EV/EBITDA = 5 lần. Nếu doanh nghiệp cùng ngành giao dịch ở 8 lần, X đang được định giá thấp hơn, cần tìm hiểu vì sao."
+   ],
+   [
+    "h2",
+    "Khi nào nên dùng EV/EBITDA?"
+   ],
+   [
+    "ul",
+    [
+     "So sánh doanh nghiệp có mức nợ vay rất khác nhau.",
+     "Ngành nặng tài sản, khấu hao lớn: thép, điện, xi măng, viễn thông, cảng biển.",
+     "Doanh nghiệp đang lỗ kế toán vì khấu hao nhưng dòng tiền hoạt động vẫn dương."
+    ]
+   ],
+   [
+    "h2",
+    "Khi nào không nên dùng?"
+   ],
+   [
+    "ul",
+    [
+     "Ngân hàng, công ty chứng khoán, bảo hiểm: nợ là nguyên liệu kinh doanh, nên dùng P/B và ROE.",
+     "EBITDA bỏ qua chi phí đầu tư máy móc, doanh nghiệp phải liên tục thay thiết bị có thể trông rẻ một cách ảo."
+    ]
+   ],
+   [
+    "p",
+    "EV/EBITDA thấp chưa chắc là rẻ. Hãy đọc kèm báo cáo lưu chuyển tiền tệ và kế hoạch đầu tư của doanh nghiệp."
+   ]
+  ],
+  "faq": [
+   [
+    "EV/EBITDA bao nhiêu là rẻ?",
+    "Không có ngưỡng chung, nên so với doanh nghiệp cùng ngành và lịch sử của chính doanh nghiệp."
+   ],
+   [
+    "EV có thể nhỏ hơn vốn hóa không?",
+    "Có, khi tiền mặt lớn hơn nợ vay."
+   ]
+  ],
+  "rel": [
+   "pe-la-gi",
+   "pb-la-gi",
+   "bao-cao-luu-chuyen-tien-te-la-gi"
+  ]
+ },
+ {
+  "slug": "bollinger-bands-la-gi",
+  "kw": "Bollinger Bands là gì",
+  "grp": 4,
+  "title": "Bollinger Bands là gì? Cách đọc dải Bollinger cho người mới",
+  "desc": "Bollinger Bands là gì, cấu tạo 3 đường, ý nghĩa dải co hẹp và mở rộng, cách dùng kết hợp với RSI và khối lượng, những hiểu lầm hay gặp.",
+  "body": [
+   [
+    "p",
+    "<b>Bollinger Bands</b> (dải Bollinger) là chỉ báo kỹ thuật gồm 3 đường bao quanh giá, cho biết giá đang dao động mạnh hay yếu và đang ở vùng cao hay thấp so với mức trung bình gần đây."
+   ],
+   [
+    "h2",
+    "Cấu tạo dải Bollinger"
+   ],
+   [
+    "ul",
+    [
+     "Đường giữa: đường trung bình động 20 phiên (<a href=\"/f0/duong-ma-la-gi.html\">MA20</a>).",
+     "Dải trên: MA20 cộng 2 lần độ lệch chuẩn.",
+     "Dải dưới: MA20 trừ 2 lần độ lệch chuẩn."
+    ]
+   ],
+   [
+    "p",
+    "Độ lệch chuẩn đo mức biến động của giá. Giá biến động mạnh thì dải mở rộng, giá đi ngang ít biến động thì dải co hẹp."
+   ],
+   [
+    "h2",
+    "Cách đọc cơ bản"
+   ],
+   [
+    "ul",
+    [
+     "Dải co hẹp kéo dài: thị trường đang tích lũy, thường báo trước một nhịp biến động mạnh, nhưng không cho biết lên hay xuống.",
+     "Giá chạm dải trên: giá đang mạnh so với 20 phiên gần nhất, chưa phải tín hiệu bán.",
+     "Giá bám dải trên nhiều phiên liền: xu hướng tăng mạnh.",
+     "Giá thủng dải dưới kèm khối lượng lớn: áp lực bán mạnh, cần thận trọng."
+    ]
+   ],
+   [
+    "h2",
+    "Hiểu lầm hay gặp"
+   ],
+   [
+    "p",
+    "Nhiều người mới nghĩ giá chạm dải trên là phải bán, chạm dải dưới là phải mua. Trong xu hướng mạnh, giá có thể đi dọc dải trên hoặc dải dưới rất lâu. Bollinger nên dùng để đo biến động, kết hợp với <a href=\"/f0/rsi-la-gi.html\">RSI</a>, khối lượng và vùng <a href=\"/f0/ho-tro-khang-cu.html\">hỗ trợ kháng cự</a> trước khi ra quyết định."
+   ],
+   [
+    "h2",
+    "Xem Bollinger ở đâu?"
+   ],
+   [
+    "p",
+    "Mục Soi chart trên trang chủ chungkhoanhuynguyen.com có sẵn nút bật Bollinger cho mọi mã cổ phiếu và VN-Index."
+   ]
+  ],
+  "faq": [
+   [
+    "Bollinger Bands dùng tham số nào?",
+    "Mặc định phổ biến là 20 phiên và 2 độ lệch chuẩn."
+   ],
+   [
+    "Bollinger có dùng cho đầu tư dài hạn không?",
+    "Ít hữu ích, chủ yếu dùng cho giao dịch ngắn và trung hạn."
+   ]
+  ],
+  "rel": [
+   "duong-ma-la-gi",
+   "rsi-la-gi",
+   "macd-la-gi"
+  ]
+ },
+ {
+  "slug": "mo-hinh-hai-day-la-gi",
+  "kw": "mô hình hai đáy",
+  "grp": 4,
+  "title": "Mô hình hai đáy là gì? Cách nhận biết và tránh bẫy hai đáy giả",
+  "desc": "Mô hình hai đáy (double bottom) là gì, cách nhận diện đường viền cổ, vai trò khối lượng, điểm xác nhận và cách đặt cắt lỗ cho người mới.",
+  "body": [
+   [
+    "p",
+    "<b>Mô hình hai đáy</b> (double bottom, hình chữ W) là mẫu hình giá xuất hiện sau một nhịp giảm: giá tạo đáy, hồi lên, rồi giảm lại gần đáy cũ nhưng không thủng, sau đó tăng trở lại. Đây là dấu hiệu lực bán đang yếu dần."
+   ],
+   [
+    "h2",
+    "Các phần của mô hình"
+   ],
+   [
+    "ul",
+    [
+     "Đáy 1: điểm thấp nhất sau nhịp giảm.",
+     "Đỉnh giữa: mức giá cao nhất của nhịp hồi giữa hai đáy, còn gọi là đường viền cổ.",
+     "Đáy 2: giá quay về gần vùng đáy 1, lý tưởng là không thủng đáy 1."
+    ]
+   ],
+   [
+    "h2",
+    "Khi nào mô hình được xác nhận?"
+   ],
+   [
+    "p",
+    "Mô hình chỉ hoàn thành khi giá vượt lên trên đường viền cổ, tốt nhất là với khối lượng lớn hơn trung bình. Trước thời điểm đó, nó mới chỉ là một vùng giá đi ngang và vẫn có thể thủng đáy."
+   ],
+   [
+    "h2",
+    "Vai trò của khối lượng"
+   ],
+   [
+    "ul",
+    [
+     "Khối lượng ở đáy 2 thường thấp hơn đáy 1: người bán đã cạn.",
+     "Khối lượng tăng mạnh khi vượt đường viền cổ: dòng tiền mua thật sự quay lại."
+    ]
+   ],
+   [
+    "h2",
+    "Bẫy hai đáy giả"
+   ],
+   [
+    "p",
+    "Rất nhiều nhà đầu tư mua ngay tại đáy 2 vì nghĩ đã thấy mô hình, rồi giá thủng đáy và giảm tiếp. Để giảm rủi ro, chờ giá xác nhận vượt viền cổ và luôn đặt <a href=\"/f0/cat-lo-la-gi.html\">điểm cắt lỗ</a> dưới đáy 2. Nếu thị trường chung đang xấu, tỷ lệ mô hình thất bại cũng cao hơn."
+   ],
+   [
+    "p",
+    "Mô hình giá chỉ là xác suất, không phải chắc chắn. Kết hợp với kết quả kinh doanh của doanh nghiệp sẽ giúp lựa chọn tốt hơn."
+   ]
+  ],
+  "faq": [
+   [
+    "Hai đáy có cần bằng nhau tuyệt đối không?",
+    "Không, đáy 2 chênh vài phần trăm so với đáy 1 vẫn được chấp nhận."
+   ],
+   [
+    "Mô hình hai đỉnh là gì?",
+    "Là mẫu hình ngược lại (hình chữ M), báo hiệu xu hướng tăng có thể kết thúc."
+   ]
+  ],
+  "rel": [
+   "ho-tro-khang-cu",
+   "khoi-luong-giao-dich-va-dong-tien",
+   "cat-lo-la-gi"
+  ]
+ },
+ {
+  "slug": "mo-hinh-vai-dau-vai-la-gi",
+  "kw": "mô hình vai đầu vai",
+  "grp": 4,
+  "title": "Mô hình vai đầu vai là gì? Cách nhận biết đỉnh và đáy đảo chiều",
+  "desc": "Mô hình vai đầu vai và vai đầu vai ngược là gì, cách vẽ đường viền cổ, điểm xác nhận, cách đặt cắt lỗ và những lưu ý cho người mới.",
+  "body": [
+   [
+    "p",
+    "<b>Mô hình vai đầu vai</b> là mẫu hình đảo chiều kinh điển trong phân tích kỹ thuật, gồm 3 đỉnh: đỉnh giữa (đầu) cao nhất, hai đỉnh hai bên (vai trái, vai phải) thấp hơn và gần ngang nhau. Mẫu hình này thường xuất hiện khi xu hướng tăng sắp kết thúc."
+   ],
+   [
+    "h2",
+    "Cấu tạo mô hình"
+   ],
+   [
+    "ol",
+    [
+     "Vai trái: giá tăng lên một đỉnh rồi điều chỉnh.",
+     "Đầu: giá vượt đỉnh vai trái lên mức cao hơn, rồi giảm về gần vùng đáy cũ.",
+     "Vai phải: giá hồi lên nhưng không vượt được đầu, rồi giảm tiếp.",
+     "Đường viền cổ: nối hai đáy nằm giữa vai và đầu."
+    ]
+   ],
+   [
+    "h2",
+    "Khi nào mô hình hoàn thành?"
+   ],
+   [
+    "p",
+    "Mô hình xác nhận khi giá đóng cửa thủng đường viền cổ. Lúc này người đang nắm giữ nên cân nhắc giảm tỷ trọng. Trước khi thủng viền cổ, vai phải có thể chỉ là một nhịp điều chỉnh bình thường."
+   ],
+   [
+    "h2",
+    "Vai đầu vai ngược"
+   ],
+   [
+    "p",
+    "Ở chiều ngược lại, sau một xu hướng giảm có thể xuất hiện vai đầu vai ngược: ba đáy, đáy giữa thấp nhất. Khi giá vượt đường viền cổ với khối lượng lớn, đó là tín hiệu xu hướng giảm có thể kết thúc."
+   ],
+   [
+    "h2",
+    "Lưu ý quan trọng"
+   ],
+   [
+    "ul",
+    [
+     "Khối lượng thường giảm dần ở vai phải: lực mua suy yếu.",
+     "Giá thường quay lại kiểm tra đường viền cổ sau khi thủng, đây là cơ hội cuối để thoát hàng.",
+     "Không đoán trước mô hình khi vai phải chưa hình thành.",
+     "Luôn có kế hoạch <a href=\"/f0/cat-lo-la-gi.html\">cắt lỗ</a> nếu mô hình thất bại."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Mô hình vai đầu vai có chính xác không?",
+    "Đây là mẫu hình có độ tin cậy khá, nhưng vẫn có thể thất bại, nhất là khi tin tức thay đổi."
+   ],
+   [
+    "Vai trái và vai phải có cần bằng nhau?",
+    "Không cần tuyệt đối, chỉ cần gần cùng vùng giá."
+   ]
+  ],
+  "rel": [
+   "mo-hinh-hai-day-la-gi",
+   "ho-tro-khang-cu",
+   "khi-nao-nen-ban-co-phieu"
+  ]
+ },
+ {
+  "slug": "gia-tham-chieu-la-gi",
+  "kw": "giá tham chiếu là gì",
+  "grp": 2,
+  "title": "Giá tham chiếu là gì? Cách tính giá tham chiếu trên HOSE, HNX, UPCoM",
+  "desc": "Giá tham chiếu là gì, vì sao bảng giá có màu vàng, cách tính giá tham chiếu từng sàn và trường hợp giá tham chiếu bị điều chỉnh khi chia cổ tức.",
+  "body": [
+   [
+    "p",
+    "<b>Giá tham chiếu</b> là mức giá làm mốc để tính giá trần, giá sàn và mức tăng giảm của cổ phiếu trong một phiên. Trên <a href=\"/f0/cach-doc-bang-gia-chung-khoan.html\">bảng giá</a>, cổ phiếu đứng đúng giá tham chiếu thường hiện màu vàng."
+   ],
+   [
+    "h2",
+    "Cách tính giá tham chiếu từng sàn"
+   ],
+   [
+    "ul",
+    [
+     "HOSE và HNX: là giá đóng cửa của phiên giao dịch gần nhất trước đó.",
+     "UPCoM: là giá bình quân gia quyền theo khối lượng của phiên giao dịch gần nhất trước đó."
+    ]
+   ],
+   [
+    "h2",
+    "Giá trần, giá sàn tính từ giá tham chiếu"
+   ],
+   [
+    "p",
+    "Giá trần = giá tham chiếu × (1 + biên độ), giá sàn = giá tham chiếu × (1 − biên độ). Biên độ thông thường là ±7% trên HOSE, ±10% trên HNX và ±15% trên UPCoM. Chi tiết xem bài <a href=\"/f0/bien-do-gia-tran-san.html\">biên độ giá trần sàn</a>."
+   ],
+   [
+    "h2",
+    "Khi nào giá tham chiếu bị điều chỉnh?"
+   ],
+   [
+    "p",
+    "Vào <a href=\"/f0/ngay-giao-dich-khong-huong-quyen.html\">ngày giao dịch không hưởng quyền</a> (chia cổ tức, phát hành thêm cổ phiếu), giá tham chiếu được điều chỉnh giảm để phản ánh phần quyền lợi đã tách ra. Nhà đầu tư mới thấy giá giảm mạnh đầu phiên thường hoảng, nhưng thực chất tài sản không mất đi."
+   ],
+   [
+    "h2",
+    "Ví dụ"
+   ],
+   [
+    "p",
+    "Cổ phiếu trên HOSE đóng cửa hôm qua 20.000 đồng. Hôm nay giá tham chiếu là 20.000, giá trần 21.400, giá sàn 18.600 (đã làm tròn theo bước giá)."
+   ]
+  ],
+  "faq": [
+   [
+    "Giá tham chiếu có thay đổi trong phiên không?",
+    "Không, giá tham chiếu cố định suốt phiên."
+   ],
+   [
+    "Cổ phiếu mới niêm yết có giá tham chiếu không?",
+    "Có, ngày đầu do tổ chức niêm yết đề xuất và biên độ ngày đầu rộng hơn."
+   ]
+  ],
+  "rel": [
+   "cach-doc-bang-gia-chung-khoan",
+   "bien-do-gia-tran-san",
+   "ngay-giao-dich-khong-huong-quyen"
+  ]
+ },
+ {
+  "slug": "giao-dich-noi-bo-la-gi",
+  "kw": "giao dịch nội bộ là gì",
+  "grp": 2,
+  "title": "Giao dịch nội bộ là gì? Lãnh đạo mua bán cổ phiếu nói lên điều gì",
+  "desc": "Giao dịch cổ phiếu của người nội bộ là gì, ai là người nội bộ, vì sao phải công bố thông tin và cách đọc tín hiệu khi lãnh đạo mua hay bán cổ phiếu.",
+  "body": [
+   [
+    "p",
+    "<b>Giao dịch nội bộ</b> là việc mua bán cổ phiếu của những người nắm thông tin bên trong doanh nghiệp, như thành viên hội đồng quản trị, ban giám đốc, kế toán trưởng, người có liên quan của họ và cổ đông lớn. Theo quy định, các giao dịch này phải được công bố thông tin trên Sở giao dịch chứng khoán."
+   ],
+   [
+    "h2",
+    "Vì sao phải công bố?"
+   ],
+   [
+    "p",
+    "Người nội bộ biết tình hình doanh nghiệp sớm hơn nhà đầu tư thường. Việc công bố giúp thị trường minh bạch và hạn chế lợi dụng thông tin chưa công khai để kiếm lời, hành vi bị pháp luật nghiêm cấm."
+   ],
+   [
+    "h2",
+    "Đọc tín hiệu từ giao dịch nội bộ"
+   ],
+   [
+    "ul",
+    [
+     "Lãnh đạo mua bằng tiền túi với khối lượng lớn: thường là tín hiệu tự tin vào doanh nghiệp.",
+     "Lãnh đạo bán: có thể vì nhu cầu cá nhân, không nhất thiết là xấu, nhưng nhiều người cùng bán liên tục là điều cần lưu ý.",
+     "Đăng ký mua nhưng không mua hết: tín hiệu yếu hơn so với lời đăng ký ban đầu.",
+     "Người nhà lãnh đạo bán ra ngay trước khi có tin xấu: dấu hiệu cần thận trọng với doanh nghiệp."
+    ]
+   ],
+   [
+    "h2",
+    "Đừng chỉ dựa vào giao dịch nội bộ"
+   ],
+   [
+    "p",
+    "Giao dịch nội bộ là một mảnh ghép, không phải tín hiệu mua bán. Luôn đặt cạnh kết quả kinh doanh, định giá và xu hướng giá. Mục Tin tức doanh nghiệp trên chungkhoanhuynguyen.com có bộ lọc riêng cho giao dịch nội bộ 7 ngày gần nhất."
+   ],
+   [
+    "p",
+    "Muốn áp dụng vào danh mục đang cầm, anh chị có thể nhắn Huy Nguyễn qua Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Cổ đông lớn là ai?",
+    "Thường là người sở hữu từ 5% số cổ phiếu có quyền biểu quyết trở lên."
+   ],
+   [
+    "Xem giao dịch nội bộ ở đâu?",
+    "Trên trang công bố thông tin của Sở giao dịch hoặc mục Tin tức doanh nghiệp trên web Huy Nguyễn."
+   ]
+  ],
+  "rel": [
+   "dai-hoi-co-dong-la-gi",
+   "khoi-ngoai-mua-rong-ban-rong-la-gi",
+   "cach-chon-co-phieu-cho-nguoi-moi"
+  ]
+ },
+ {
+  "slug": "co-phieu-phong-thu-la-gi",
+  "kw": "cổ phiếu phòng thủ là gì",
+  "grp": 5,
+  "title": "Cổ phiếu phòng thủ là gì? Nhóm ngành nào giữ giá khi thị trường xấu",
+  "desc": "Cổ phiếu phòng thủ là gì, đặc điểm nhận biết, các ngành phòng thủ phổ biến ở Việt Nam và khi nào nên tăng tỷ trọng nhóm này trong danh mục.",
+  "body": [
+   [
+    "p",
+    "<b>Cổ phiếu phòng thủ</b> là cổ phiếu của doanh nghiệp có nhu cầu sản phẩm ổn định dù kinh tế tốt hay xấu. Khi thị trường giảm mạnh, nhóm này thường giảm ít hơn mặt bằng chung."
+   ],
+   [
+    "h2",
+    "Đặc điểm nhận biết"
+   ],
+   [
+    "ul",
+    [
+     "Sản phẩm thiết yếu: người dân vẫn phải dùng khi kinh tế khó khăn.",
+     "Doanh thu và lợi nhuận đều đặn qua nhiều năm, ít biến động theo chu kỳ.",
+     "Thường trả <a href=\"/f0/co-tuc-la-gi.html\">cổ tức</a> tiền mặt ổn định.",
+     "Nợ vay thấp, dòng tiền kinh doanh dương đều."
+    ]
+   ],
+   [
+    "h2",
+    "Các ngành phòng thủ phổ biến"
+   ],
+   [
+    "ul",
+    [
+     "Điện, nước sạch: nhu cầu gần như không đổi.",
+     "Thực phẩm, đồ uống thiết yếu.",
+     "Dược phẩm, y tế.",
+     "Một số doanh nghiệp tiện ích, hạ tầng có hợp đồng dài hạn."
+    ]
+   ],
+   [
+    "h2",
+    "Phòng thủ không có nghĩa là không giảm"
+   ],
+   [
+    "p",
+    "Trong các đợt bán tháo mạnh, cổ phiếu phòng thủ vẫn có thể giảm, chỉ là thường ít hơn. Đổi lại, khi thị trường tăng mạnh, nhóm này thường tăng chậm hơn cổ phiếu chu kỳ như chứng khoán, thép, bất động sản."
+   ],
+   [
+    "h2",
+    "Khi nào nên tăng tỷ trọng?"
+   ],
+   [
+    "p",
+    "Khi vĩ mô xấu đi, lãi suất tăng hoặc thị trường ở vùng định giá cao, nhiều nhà đầu tư chuyển một phần vốn sang nhóm phòng thủ hoặc giữ tiền mặt. Cách <a href=\"/f0/cach-phan-bo-ty-trong-co-phieu.html\">phân bổ tỷ trọng</a> hợp lý giúp danh mục bớt sụt giảm trong giai đoạn khó."
+   ]
+  ],
+  "faq": [
+   [
+    "Cổ phiếu ngân hàng có phải phòng thủ không?",
+    "Thường không, ngân hàng chịu ảnh hưởng mạnh của chu kỳ tín dụng và nợ xấu."
+   ],
+   [
+    "Cổ phiếu phòng thủ có hợp để tích sản không?",
+    "Có thể, nếu doanh nghiệp có lợi nhuận và cổ tức ổn định, mua ở mức định giá hợp lý."
+   ]
+  ],
+  "rel": [
+   "cach-phan-bo-ty-trong-co-phieu",
+   "co-phieu-tot-de-dau-tu-dai-han",
+   "co-tuc-la-gi"
+  ]
  }
 ]
