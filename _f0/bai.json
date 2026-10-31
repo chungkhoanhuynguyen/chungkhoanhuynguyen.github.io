@@ -4839,5 +4839,218 @@
     ]
    ]
   ]
+ },
+ {
+  "slug": "ngay-giao-dich-khong-huong-quyen",
+  "kw": "ngày giao dịch không hưởng quyền",
+  "grp": 2,
+  "title": "Ngày giao dịch không hưởng quyền là gì? Mua ngày nào để nhận cổ tức",
+  "desc": "Ngày giao dịch không hưởng quyền (GDKHQ) là gì, liên quan gì tới ngày đăng ký cuối cùng, mua trước ngày nào thì được nhận cổ tức, vì sao giá tham chiếu bị điều chỉnh.",
+  "body": [
+   [
+    "p",
+    "Khi doanh nghiệp chia cổ tức, phát hành thêm hay họp đại hội cổ đông, họ chốt danh sách cổ đông tại một <b>ngày đăng ký cuối cùng</b>. Ai có tên trong danh sách ngày đó mới được hưởng quyền."
+   ],
+   [
+    "h2",
+    "Ngày giao dịch không hưởng quyền là gì?"
+   ],
+   [
+    "p",
+    "Vì cổ phiếu mua về theo chu kỳ <a href=\"/f0/t-2-la-gi.html\">T+2</a>, người mua vào ngày GDKHQ sẽ có cổ phiếu về tài khoản sau ngày đăng ký cuối cùng, nên <b>không được hưởng quyền</b>. Ngày GDKHQ thường là 1 ngày làm việc trước ngày đăng ký cuối cùng."
+   ],
+   [
+    "h2",
+    "Muốn nhận cổ tức thì mua ngày nào?"
+   ],
+   [
+    "ul",
+    [
+     "Mua chậm nhất vào phiên liền trước ngày GDKHQ thì được hưởng quyền.",
+     "Mua đúng ngày GDKHQ hoặc sau đó thì không được hưởng.",
+     "Bán vào ngày GDKHQ vẫn được hưởng quyền, vì tại ngày chốt anh chị vẫn có tên."
+    ]
+   ],
+   [
+    "h2",
+    "Vì sao giá giảm vào ngày GDKHQ?"
+   ],
+   [
+    "p",
+    "Vào ngày GDKHQ, giá tham chiếu được điều chỉnh giảm tương ứng với phần quyền (cổ tức, cổ phiếu thưởng…). Tổng tài sản của cổ đông về lý thuyết không đổi: giá thấp đi nhưng bù lại bằng tiền cổ tức hoặc thêm cổ phiếu."
+   ]
+  ],
+  "faq": [
+   [
+    "Mua cổ phiếu để ăn cổ tức có lời không?",
+    "Thường không có lời ngay, vì giá bị điều chỉnh giảm đúng bằng phần cổ tức, lại còn mất thuế 5% trên cổ tức tiền mặt. Cổ tức chỉ có ý nghĩa khi nắm giữ doanh nghiệp tốt lâu dài."
+   ],
+   [
+    "Xem ngày GDKHQ ở đâu?",
+    "Trên ứng dụng chứng khoán, trang thông báo của Sở Giao dịch hoặc mục Lịch sự kiện trên chungkhoanhuynguyen.com."
+   ]
+  ],
+  "rel": [
+   "co-tuc-la-gi",
+   "t-2-la-gi",
+   "chia-tach-co-phieu-thuong-phat-hanh-them"
+  ],
+  "add": [
+   [
+    "h2",
+    "Ví dụ"
+   ],
+   [
+    "p",
+    "Doanh nghiệp A chia cổ tức tiền 1.000 đồng/cổ phiếu, ngày đăng ký cuối cùng là thứ Năm. Ngày GDKHQ khi đó thường là thứ Tư. Anh chị phải mua chậm nhất phiên thứ Ba. Ngày thứ Tư, nếu giá đóng cửa hôm trước là 30.000 đồng thì giá tham chiếu được điều chỉnh về khoảng 29.000 đồng."
+   ]
+  ]
+ },
+ {
+  "slug": "cach-xem-bieu-do-chung-khoan",
+  "kw": "cách xem biểu đồ chứng khoán",
+  "grp": 4,
+  "title": "Cách xem biểu đồ chứng khoán cho người mới: nến, khối lượng, xu hướng",
+  "desc": "Hướng dẫn xem biểu đồ chứng khoán từ đầu: đọc nến Nhật, khối lượng giao dịch, khung thời gian, nhận biết xu hướng tăng giảm và những lỗi người mới hay mắc.",
+  "body": [
+   [
+    "p",
+    "Biểu đồ giá cho biết <b>thị trường đã làm gì</b>, không cho biết chắc chắn sẽ làm gì. Người mới nên học đọc biểu đồ để tránh mua đuổi, không phải để đoán đỉnh đáy."
+   ],
+   [
+    "h2",
+    "1. Đọc một cây nến"
+   ],
+   [
+    "ul",
+    [
+     "Mỗi cây nến là một phiên (hoặc một tuần, một tháng tùy khung).",
+     "Nến xanh: giá đóng cửa cao hơn giá mở cửa. Nến đỏ: ngược lại.",
+     "Thân nến là khoảng từ giá mở đến giá đóng; râu nến là giá cao nhất, thấp nhất trong phiên."
+    ]
+   ],
+   [
+    "h2",
+    "2. Xem khối lượng"
+   ],
+   [
+    "p",
+    "Cột khối lượng bên dưới cho biết bao nhiêu cổ phiếu được mua bán. Giá tăng kèm khối lượng lớn đáng tin hơn giá tăng khi khối lượng teo tóp."
+   ],
+   [
+    "h2",
+    "3. Chọn khung thời gian"
+   ],
+   [
+    "ul",
+    [
+     "Khung ngày: phổ biến nhất với người mới.",
+     "Khung tuần: nhìn xu hướng lớn, lọc bớt nhiễu.",
+     "Khung phút: dành cho người giao dịch ngắn hạn, người mới không nên bắt đầu ở đây."
+    ]
+   ],
+   [
+    "h2",
+    "4. Nhận biết xu hướng"
+   ],
+   [
+    "ul",
+    [
+     "Xu hướng tăng: đỉnh sau cao hơn đỉnh trước, đáy sau cao hơn đáy trước.",
+     "Xu hướng giảm: đỉnh và đáy sau đều thấp hơn.",
+     "Đường trung bình như MA50, MA200 giúp nhìn xu hướng rõ hơn."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Xem biểu đồ chứng khoán miễn phí ở đâu?",
+    "Trên ứng dụng của công ty chứng khoán, hoặc mục Soi chart trên chungkhoanhuynguyen.com với hơn 250 mã."
+   ],
+   [
+    "Chỉ xem biểu đồ có đủ để mua cổ phiếu không?",
+    "Không nên. Biểu đồ cho biết thời điểm, còn chọn doanh nghiệp nào cần xem báo cáo tài chính và định giá."
+   ]
+  ],
+  "rel": [
+   "duong-ma-la-gi",
+   "ho-tro-khang-cu",
+   "khoi-luong-giao-dich-va-dong-tien"
+  ],
+  "add": [
+   [
+    "h2",
+    "Lỗi người mới hay mắc"
+   ],
+   [
+    "ul",
+    [
+     "Thấy nến xanh dài là mua ngay, mua đúng đỉnh ngắn hạn.",
+     "Vẽ quá nhiều chỉ báo, rối mắt mà không quyết định được gì.",
+     "Bỏ qua khối lượng và xu hướng lớn của khung tuần."
+    ]
+   ]
+  ]
+ },
+ {
+  "slug": "co-phieu-tot-de-dau-tu-dai-han",
+  "kw": "cổ phiếu tốt để đầu tư dài hạn",
+  "grp": 7,
+  "title": "Cổ phiếu tốt để đầu tư dài hạn: 6 tiêu chí tự kiểm tra",
+  "desc": "Cách tự đánh giá cổ phiếu tốt để đầu tư dài hạn: lợi nhuận tăng đều, ROE cao, nợ vay vừa phải, dòng tiền thật, định giá hợp lý, ban lãnh đạo minh bạch.",
+  "body": [
+   [
+    "p",
+    "Không có danh sách cổ phiếu tốt đúng mãi. Doanh nghiệp tốt hôm nay có thể yếu đi sau vài năm. Thay vì hỏi \"mã nào\", người đầu tư dài hạn nên biết cách <b>tự kiểm tra</b>."
+   ],
+   [
+    "h2",
+    "6 tiêu chí cơ bản"
+   ],
+   [
+    "ol",
+    [
+     "Lợi nhuận tăng đều nhiều năm, không phải tăng vọt một quý rồi giảm.",
+     "ROE ổn định ở mức cao so với ngành (xem bài <a href=\"/f0/roe-eps-la-gi.html\">ROE, EPS là gì</a>).",
+     "Nợ vay vừa phải, chi phí lãi vay không ăn hết lợi nhuận.",
+     "Dòng tiền kinh doanh dương, lợi nhuận có tiền thật đi kèm.",
+     "Định giá hợp lý: P/E, P/B không quá cao so với chính nó và cùng ngành.",
+     "Ban lãnh đạo minh bạch, trả cổ tức đều, không nhiều giao dịch nội bộ bất thường."
+    ]
+   ],
+   [
+    "h2",
+    "Cách kiểm tra nhanh trên web"
+   ],
+   [
+    "p",
+    "Mỗi trang mã cổ phiếu trên chungkhoanhuynguyen.com có biểu đồ lợi nhuận 12 quý, P/E, P/B, ROE và bảng so sánh cùng ngành, ví dụ <a href=\"/ma/VNM.html\">VNM</a>, <a href=\"/ma/REE.html\">REE</a>, <a href=\"/ma/FPT.html\">FPT</a>."
+   ]
+  ],
+  "faq": [
+   [
+    "Đầu tư dài hạn nên giữ bao lâu?",
+    "Thường từ 3–5 năm trở lên, miễn là doanh nghiệp vẫn giữ được các tiêu chí tốt."
+   ],
+   [
+    "Cổ phiếu tốt có cần cắt lỗ không?",
+    "Có. Khi doanh nghiệp xấu đi (lợi nhuận giảm nhiều quý, nợ tăng mạnh) thì lý do nắm giữ đã mất."
+   ]
+  ],
+  "rel": [
+   "chon-co-phieu-tich-san",
+   "cach-doc-bao-cao-tai-chinh",
+   "huong-dan-tich-san-co-phieu-tu-a-den-z"
+  ],
+  "add": [
+   [
+    "h2",
+    "Lưu ý"
+   ],
+   [
+    "p",
+    "Bài viết là kiến thức chung, không phải khuyến nghị mua bán mã cụ thể. Dù chọn doanh nghiệp tốt vẫn cần chia vốn cho nhiều mã và không dùng tiền vay."
+   ]
+  ]
  }
 ]
