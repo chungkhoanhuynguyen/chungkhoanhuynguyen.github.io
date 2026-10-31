@@ -125,7 +125,7 @@ for s in SYMS:
         {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]}]}
     P = [head(title + " | Chứng Khoán Huy Nguyễn", desc, url, ld), "<main><article>",
          f'<div class="bc"><a href="/">Trang chủ</a> › <a href="/ma/">Mã cổ phiếu</a> › {e(s)}</div>',
-         f'<h1>Cổ phiếu {e(s)}' + (f' – {e(name)}' if name != s else '') + '</h1><div class="meta">Sàn {ex} · cập nhật {dmy(today)} · giá điều chỉnh, nghìn đồng</div>',
+         f'<h1>Cổ phiếu {e(s)}' + (f' – {e(name)}' if name != s else '') + f'</h1><div class="meta">Sàn {ex} · cập nhật {dmy(last)} · giá điều chỉnh, nghìn đồng</div>',
          f"<p>{intro}</p>"]
     if val: P.append("<p>Về định giá: " + "; ".join(e(v) for v in val) + ".</p>")
     P.append("<h2>Chỉ số chính của " + e(s) + "</h2><table class='mt'>" + "".join(f"<tr><td>{e(a)}</td><td class='r'><b>{e(bv)}</b></td><td class='n'>{e(cv)}</td></tr>" for a, bv, cv in rows) + "</table>")
