@@ -77,7 +77,7 @@ def head(title, desc, url, ld):
 <link rel="icon" href="/img/fav-32.png"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&family=Playfair+Display:wght@800;900&display=swap">
 <style>{CSS}.mt{{width:100%;border-collapse:collapse;font-size:15px;margin:8px 0 18px}}.mt td{{border-bottom:1px solid var(--line);padding:8px 6px}}.mt td.r{{text-align:right;font-variant-numeric:tabular-nums}}.mt td.n{{color:var(--mute);font-size:13px;text-align:right}}.up{{color:#0a8a4a}}.dn{{color:#c0392b}}.az{{columns:4 120px;font-size:15px;line-height:1.9}}.az a{{text-decoration:none}}.tag{{display:inline-block;font-size:12px;font-weight:700;border-radius:6px;padding:2px 8px;background:#f1eef6}}</style><script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script></head><body>
 <header class="top"><div class="in"><a class="brand" href="/">HUY NGUYỄN <b>·</b> CHỨNG KHOÁN</a><nav class="nav"><a href="/mo-tai-khoan-chung-khoan.html">Mở TK</a><a href="/ma/">Mã CP</a><a href="/f0/">F0</a><a href="/hoc/">Bài học</a></nav></div></header>"""
-FOOT = """<footer>© Chứng Khoán Huy Nguyễn · <a href="/">chungkhoanhuynguyen.com</a><br>Thông tin tổng hợp từ dữ liệu thị trường và báo cáo tài chính, tham khảo, không phải khuyến nghị mua bán.</footer></body></html>"""
+FOOT = """<footer>© Chứng Khoán Huy Nguyễn · <a href="/">chungkhoanhuynguyen.com</a><br>Thông tin tổng hợp từ dữ liệu thị trường và báo cáo tài chính, tham khảo, không phải khuyến nghị mua bán.<br><a href="/gioi-thieu.html">Giới thiệu</a> · <a href="/lien-he.html">Liên hệ</a> · <a href="/chinh-sach-bao-mat.html">Chính sách bảo mật</a></footer></body></html>"""
 
 os.makedirs(os.path.join(ROOT, "ma"), exist_ok=True)
 keep = set(); made = []
@@ -259,8 +259,30 @@ EXTRA.append(page("tu-van-dau-tu-chung-khoan.html", "Tư vấn đầu tư chứn
      "Tư vấn đầu tư chứng khoán 1:1: khám danh mục, dựng danh mục theo vốn, kế hoạch mua và cắt lỗ, cập nhật BCTC. Lệnh thật công khai từ 2016. Zalo 0365.188.286.",
      "Tư vấn đầu tư chứng khoán", body))
 
+# 4) Trang thông tin (AdSense)
+EXTRA.append(page("gioi-thieu.html", "Giới thiệu Chứng Khoán Huy Nguyễn | chungkhoanhuynguyen.com",
+     "Giới thiệu website Chứng Khoán Huy Nguyễn: kiến thức chứng khoán miễn phí cho người mới, dữ liệu cổ phiếu cập nhật mỗi ngày, báo cáo lệnh công khai.",
+     "Giới thiệu", ["<p><b>Chứng Khoán Huy Nguyễn</b> (chungkhoanhuynguyen.com) là website chia sẻ kiến thức đầu tư chứng khoán Việt Nam do Huy Nguyễn xây dựng, hướng tới người mới bắt đầu và nhà đầu tư cá nhân muốn đầu tư bài bản, dài hạn.</p>",
+     "<h2>Website có gì?</h2><ul><li><a href='/f0/'>Cẩm nang F0</a>: hơn 90 bài kiến thức miễn phí từ cơ bản đến nâng cao, viết dễ hiểu, cập nhật liên tục.</li><li><a href='/hoc/'>Bài học</a> theo lộ trình.</li><li><a href='/ma/'>Trang từng mã cổ phiếu</a>: giá, P/E, P/B, ROE, kết quả kinh doanh, cập nhật mỗi ngày từ dữ liệu thị trường và báo cáo tài chính.</li><li><a href='/bao-cao-2026.html'>Báo cáo lệnh</a> công khai, gồm cả các năm lỗ.</li></ul>",
+     "<h2>Nguyên tắc nội dung</h2><ul><li>Số liệu lấy từ dữ liệu thị trường và báo cáo tài chính công bố, ghi rõ thời điểm.</li><li>Nội dung là kiến thức và quan điểm cá nhân, không phải khuyến nghị mua bán chứng khoán.</li><li>Nhấn mạnh quản trị rủi ro và quản trị vốn trước lợi nhuận.</li></ul>",
+     "<h2>Kênh khác</h2><p>Video phân tích trên <a href='https://www.youtube.com/@chungkhoanhuynguyen' rel='noopener'>YouTube Chứng Khoán Huy Nguyễn</a>. Cộng đồng trao đổi trên <a href='https://zalo.me/g/jbnbiq994' rel='noopener'>nhóm Zalo</a>.</p>"]))
+EXTRA.append(page("lien-he.html", "Liên hệ | Chứng Khoán Huy Nguyễn",
+     "Thông tin liên hệ Chứng Khoán Huy Nguyễn: Zalo, nhóm cộng đồng, kênh YouTube.",
+     "Liên hệ", ["<p>Mọi góp ý về nội dung, báo lỗi số liệu hoặc trao đổi hợp tác, anh chị có thể liên hệ:</p>",
+     "<ul><li>Zalo: <a href='https://zalo.me/0365188286' rel='noopener'>0365.188.286</a> (Huy Nguyễn)</li><li>Nhóm Zalo cộng đồng: <a href='https://zalo.me/g/jbnbiq994' rel='noopener'>zalo.me/g/jbnbiq994</a></li><li>YouTube: <a href='https://www.youtube.com/@chungkhoanhuynguyen' rel='noopener'>@chungkhoanhuynguyen</a></li><li>Website: chungkhoanhuynguyen.com</li></ul>",
+     "<p>Thời gian phản hồi thường trong ngày làm việc. Website không yêu cầu và không bao giờ hỏi mật khẩu, mã OTP hay thông tin thẻ của anh chị.</p>"]))
+EXTRA.append(page("chinh-sach-bao-mat.html", "Chính sách bảo mật | Chứng Khoán Huy Nguyễn",
+     "Chính sách bảo mật của chungkhoanhuynguyen.com: dữ liệu thu thập, cookie, quảng cáo của bên thứ ba (Google), liên kết ngoài và quyền của người dùng.",
+     "Chính sách bảo mật", ["<p>Cập nhật: 01/11/2026. Chính sách này mô tả cách chungkhoanhuynguyen.com xử lý thông tin khi anh chị truy cập website.</p>",
+     "<h2>1. Thông tin chúng tôi thu thập</h2><p>Website không có tài khoản đăng nhập và không yêu cầu nhập thông tin cá nhân. Máy chủ lưu trữ và các dịch vụ thống kê có thể ghi nhận thông tin kỹ thuật như địa chỉ IP, loại trình duyệt, thiết bị, trang đã xem và thời gian truy cập, nhằm vận hành và cải thiện website.</p>",
+     "<h2>2. Cookie và quảng cáo</h2><ul><li>Website có thể hiển thị quảng cáo của bên thứ ba, bao gồm Google. Các nhà cung cấp bên thứ ba, trong đó có Google, sử dụng cookie để phân phát quảng cáo dựa trên các lần truy cập trước của người dùng vào website này hoặc các website khác.</li><li>Việc Google sử dụng cookie quảng cáo cho phép Google và đối tác hiển thị quảng cáo phù hợp với anh chị.</li><li>Anh chị có thể tắt quảng cáo được cá nhân hóa tại <a href='https://adssettings.google.com' rel='noopener'>Cài đặt quảng cáo của Google</a>, hoặc tìm hiểu thêm tại <a href='https://policies.google.com/technologies/ads' rel='noopener'>chính sách quảng cáo của Google</a>.</li><li>Anh chị có thể chặn hoặc xóa cookie trong cài đặt trình duyệt.</li></ul>",
+     "<h2>3. Liên kết ngoài</h2><p>Website có liên kết tới YouTube, Zalo, công ty chứng khoán và các trang khác. Chúng tôi không chịu trách nhiệm về chính sách bảo mật của các trang đó.</p>",
+     "<h2>4. Trẻ em</h2><p>Nội dung dành cho người trưởng thành tìm hiểu đầu tư, không hướng tới trẻ em dưới 16 tuổi.</p>",
+     "<h2>5. Miễn trừ trách nhiệm</h2><p>Nội dung trên website là kiến thức và quan điểm cá nhân, không phải khuyến nghị mua bán chứng khoán. Nhà đầu tư tự chịu trách nhiệm với quyết định của mình.</p>",
+     "<h2>6. Liên hệ</h2><p>Mọi câu hỏi về chính sách này, xem trang <a href='/lien-he.html'>Liên hệ</a>.</p>"]))
+
 sp = os.path.join(ROOT, "sitemap.xml"); sm = open(sp, encoding="utf-8").read()
-sm = re.sub(r"<url><loc>" + re.escape(B) + r"/(ma/[^<]*|thi-truong-chung-khoan-hom-nay\.html|dinh-gia-co-phieu\.html|tu-van-dau-tu-chung-khoan\.html)</loc>.*?</url>\n", "", sm)
+sm = re.sub(r"<url><loc>" + re.escape(B) + r"/(ma/[^<]*|thi-truong-chung-khoan-hom-nay\.html|dinh-gia-co-phieu\.html|tu-van-dau-tu-chung-khoan\.html|gioi-thieu\.html|lien-he\.html|chinh-sach-bao-mat\.html)</loc>.*?</url>\n", "", sm)
 add = "".join(f"<url><loc>{u}</loc><lastmod>{today}</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>\n" for u in EXTRA) + f"<url><loc>{B}/ma/</loc><lastmod>{today}</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>\n" + \
       "".join(f"<url><loc>{B}/ma/{t}.html</loc><lastmod>{today}</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>\n" for t in made)
 sm = sm.replace("</urlset>", add + "</urlset>")
