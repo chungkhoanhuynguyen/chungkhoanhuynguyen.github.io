@@ -590,7 +590,7 @@ section.sec-c{padding-block:18px!important}
 .clip-btn{display:block;margin:12px auto 0}
 /* ===== Chữ mờ chống chụp màn hình ===== */
 #wm{position:fixed;inset:0;z-index:2147483000;pointer-events:none;background-repeat:repeat;transform:translateZ(0)}
-@media print{#wm{opacity:1!important;background-size:300px 190px!important}.toc,#totop,.tape,header.top{display:none!important}body::before{content:"Bản in từ Chứng Khoán Huy Nguyễn · Zalo 0365.188.286";display:block;font:700 14px sans-serif;text-align:center;padding:8px;border-bottom:2px solid #4c2766}}
+@media print{#wm{opacity:1!important;background-size:440px 280px!important}.toc,#totop,.tape,header.top{display:none!important}body::before{content:"Bản in từ Chứng Khoán Huy Nguyễn · Zalo 0365.188.286";display:block;font:700 14px sans-serif;text-align:center;padding:8px;border-bottom:2px solid #4c2766}}
 /* ===== Hạn chế sao chép ở vùng dữ liệu ===== */
 .nocopy{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
 .nocopy input,.nocopy textarea,.nocopy select{-webkit-user-select:text;user-select:text;-webkit-touch-callout:default}
@@ -2005,12 +2005,12 @@ function clip(box,sel,n,label){if(!box)return;var btn=D.createElement('button');
  btn.addEventListener('click',function(){open=!open;apply();if(!open)box.scrollIntoView({block:'start'})});
  new MutationObserver(function(){clearTimeout(box.__ct);box.__ct=setTimeout(apply,30)}).observe(box,{childList:true,subtree:true,attributes:true,attributeFilter:['hidden']});apply()}
 clip($('grid'),'.tk',6,'mã');clip($('eps'),'li',6,'tập');
-/* ----- Gập/mở từng mục (điện thoại mặc định chỉ mở các mục chính) ----- */
+/* ----- Gập/mở từng mục (mặc định chỉ mở các mục chính, mọi thiết bị) ----- */
 if(location.hash==='#rs')location.replace('#top-10-co-phieu-khoe');
-var OPEN0=['top-10-co-phieu-khoe','thitruong','banggia','soichart','tuvan','congdong'],SS=(H.ls&&H.ls.get('hn_sx',{}))||{};
+var OPEN0=['top-10-co-phieu-khoe','thitruong','banggia','tuvan','lotrinh'],SS=(H.ls&&H.ls.get('hn_sx',{}))||{};
 [].slice.call(D.querySelectorAll('.grp>section')).forEach(function(s){var h=s.querySelector(':scope>.wrap>h2');if(!h)return;h.classList.add('hx');
  var b=D.createElement('button');b.type='button';b.className='sx';h.appendChild(b);
- var closed=s.id in SS?!SS[s.id]:(mob()&&OPEN0.indexOf(s.id)<0);
+ var closed=s.id in SS?!SS[s.id]:(OPEN0.indexOf(s.id)<0);
  function set(c,save){s.classList.toggle('sec-c',c);b.setAttribute('aria-expanded',String(!c));b.setAttribute('aria-label',(c?'Mở ':'Thu gọn ')+h.firstChild.textContent);if(save){SS[s.id]=!c;H.ls&&H.ls.set('hn_sx',SS);if(!c)setTimeout(function(){W.dispatchEvent(new Event('resize'))},30)}}
  set(closed,false);s.__sx=set;
  h.addEventListener('click',function(e){if(e.target.closest('a'))return;set(!s.classList.contains('sec-c'),true)})});
