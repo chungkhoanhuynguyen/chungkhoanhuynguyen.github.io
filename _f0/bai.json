@@ -5125,5 +5125,79 @@
     ]
    ]
   ]
+ },
+ {
+  "slug": "co-phieu-quy-la-gi",
+  "kw": "cổ phiếu quỹ là gì",
+  "grp": 3,
+  "title": "Cổ phiếu quỹ là gì? Doanh nghiệp mua lại cổ phiếu có tốt không",
+  "desc": "Cổ phiếu quỹ là cổ phiếu doanh nghiệp tự mua lại. Vì sao doanh nghiệp mua cổ phiếu quỹ, ảnh hưởng gì tới EPS và giá cổ phiếu, khi nào là tín hiệu tốt, khi nào cần cảnh giác.",
+  "body": [
+   [
+    "p",
+    "<b>Cổ phiếu quỹ</b> là cổ phiếu do chính doanh nghiệp phát hành rồi mua lại từ thị trường. Cổ phiếu quỹ không được chia cổ tức và không có quyền biểu quyết."
+   ],
+   [
+    "h2",
+    "Vì sao doanh nghiệp mua cổ phiếu quỹ?"
+   ],
+   [
+    "ul",
+    [
+     "Ban lãnh đạo cho rằng giá cổ phiếu đang thấp hơn giá trị thật.",
+     "Dùng tiền mặt dư thừa để trả lại giá trị cho cổ đông.",
+     "Giữ để thưởng cho nhân viên (ESOP) hoặc bán lại sau."
+    ]
+   ],
+   [
+    "h2",
+    "Ảnh hưởng tới cổ đông"
+   ],
+   [
+    "p",
+    "Số cổ phiếu đang lưu hành giảm nên <a href=\"/f0/roe-eps-la-gi.html\">EPS</a> (lợi nhuận trên mỗi cổ phiếu) tăng lên dù lợi nhuận không đổi. Trong thời gian doanh nghiệp mua vào, cũng có thêm một lực cầu đỡ giá."
+   ],
+   [
+    "h2",
+    "Khi nào cần cảnh giác?"
+   ],
+   [
+    "ul",
+    [
+     "Doanh nghiệp đi vay để mua cổ phiếu quỹ.",
+     "Đăng ký mua nhiều nhưng mua rất ít hoặc không mua.",
+     "Mua xong rồi bán lại ngay khi giá lên, giống đầu cơ chính cổ phiếu của mình."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Cổ phiếu quỹ có được nhận cổ tức không?",
+    "Không. Cổ tức chỉ chia cho cổ phiếu đang lưu hành."
+   ],
+   [
+    "Doanh nghiệp mua cổ phiếu quỹ thì giá có chắc tăng không?",
+    "Không chắc. Đây chỉ là một yếu tố hỗ trợ; giá vẫn phụ thuộc kết quả kinh doanh và thị trường chung."
+   ]
+  ],
+  "rel": [
+   "roe-eps-la-gi",
+   "co-tuc-la-gi",
+   "chia-tach-co-phieu-thuong-phat-hanh-them"
+  ],
+  "add": [
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Cổ phiếu quỹ là cổ phiếu doanh nghiệp tự mua lại.",
+     "Thường là tín hiệu tốt khi dùng tiền mặt dư thừa, mua thật và mua khi giá thấp.",
+     "Cần cảnh giác khi đi vay để mua hoặc đăng ký mà không thực hiện."
+    ]
+   ]
+  ]
  }
 ]
