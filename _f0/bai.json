@@ -5052,5 +5052,78 @@
     "Bài viết là kiến thức chung, không phải khuyến nghị mua bán mã cụ thể. Dù chọn doanh nghiệp tốt vẫn cần chia vốn cho nhiều mã và không dùng tiền vay."
    ]
   ]
+ },
+ {
+  "slug": "cach-dat-lenh-mua-ban-co-phieu",
+  "kw": "cách đặt lệnh mua bán cổ phiếu",
+  "grp": 2,
+  "title": "Cách đặt lệnh mua bán cổ phiếu trên app cho người mới (từng bước)",
+  "desc": "Hướng dẫn đặt lệnh mua, bán cổ phiếu trên ứng dụng chứng khoán: chọn mã, chọn loại lệnh LO, nhập giá, khối lượng theo lô 100, kiểm tra sức mua, hủy sửa lệnh.",
+  "body": [
+   [
+    "p",
+    "Đặt lệnh là bước người mới hay lúng túng nhất. Mọi ứng dụng chứng khoán ở Việt Nam đều có các bước gần giống nhau như sau."
+   ],
+   [
+    "h2",
+    "Đặt lệnh mua"
+   ],
+   [
+    "ol",
+    [
+     "Mở mục Đặt lệnh, chọn <b>Mua</b>.",
+     "Nhập mã cổ phiếu, ví dụ FPT.",
+     "Chọn loại lệnh: người mới nên dùng <a href=\"/f0/cac-loai-lenh-chung-khoan.html\">lệnh LO</a> (lệnh giới hạn) để không mua đắt hơn giá mình đặt.",
+     "Nhập giá muốn mua, nằm trong biên độ trần sàn của ngày.",
+     "Nhập khối lượng: trên HOSE, HNX đặt theo lô chẵn 100 cổ phiếu; dưới 100 cổ phiếu là lô lẻ.",
+     "Kiểm tra sức mua đủ tiền, xác nhận lệnh."
+    ]
+   ],
+   [
+    "h2",
+    "Đặt lệnh bán"
+   ],
+   [
+    "p",
+    "Làm tương tự nhưng chọn <b>Bán</b>. Chỉ bán được số cổ phiếu đã về tài khoản (sau <a href=\"/f0/t-2-la-gi.html\">T+2</a>)."
+   ],
+   [
+    "h2",
+    "Sửa và hủy lệnh"
+   ],
+   [
+    "p",
+    "Lệnh chưa khớp có thể sửa giá, khối lượng hoặc hủy trong mục Sổ lệnh. Lệnh đã khớp thì không hủy được."
+   ]
+  ],
+  "faq": [
+   [
+    "Đặt lệnh rồi mà không khớp là sao?",
+    "Giá đặt chưa gặp người bán (hoặc người mua) ở mức đó. Lệnh LO chờ đến hết phiên, không khớp thì tự hủy cuối ngày."
+   ],
+   [
+    "Đặt lệnh ngoài giờ giao dịch được không?",
+    "Nhiều ứng dụng cho đặt lệnh trước, lệnh sẽ được gửi vào sàn khi phiên mở cửa."
+   ]
+  ],
+  "rel": [
+   "cac-loai-lenh-chung-khoan",
+   "cach-mua-co-phieu-lan-dau",
+   "gio-giao-dich-chung-khoan"
+  ],
+  "add": [
+   [
+    "h2",
+    "3 lỗi người mới hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "Đặt giá ngoài biên độ trần sàn nên lệnh bị từ chối.",
+     "Mua bằng lệnh thị trường lúc giá biến động mạnh, khớp giá cao hơn dự kiến.",
+     "Đặt khối lượng lẻ như 150 cổ phiếu trên lô chẵn, phải tách thành 100 và 50 cổ phiếu (lô lẻ)."
+    ]
+   ]
+  ]
  }
 ]
