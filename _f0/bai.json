@@ -4547,5 +4547,297 @@
    "quan-tri-von-la-gi",
    "margin-la-gi"
   ]
+ },
+ {
+  "slug": "gio-giao-dich-chung-khoan",
+  "kw": "giờ giao dịch chứng khoán",
+  "grp": 2,
+  "title": "Giờ giao dịch chứng khoán Việt Nam: lịch từng phiên HOSE, HNX, UPCoM",
+  "desc": "Giờ giao dịch chứng khoán Việt Nam trên HOSE, HNX, UPCoM: phiên ATO, khớp lệnh liên tục, nghỉ trưa, ATC, thỏa thuận. Ngày nào thị trường nghỉ.",
+  "body": [
+   [
+    "p",
+    "Thị trường chứng khoán Việt Nam giao dịch từ <b>thứ Hai đến thứ Sáu</b>, nghỉ thứ Bảy, Chủ nhật và các ngày lễ theo quy định. Mỗi ngày chia thành nhiều phiên với cách khớp lệnh khác nhau."
+   ],
+   [
+    "h2",
+    "Sàn HOSE"
+   ],
+   [
+    "ul",
+    [
+     "9:00 – 9:15: phiên mở cửa (ATO), khớp lệnh định kỳ một lần để ra giá mở cửa.",
+     "9:15 – 11:30: khớp lệnh liên tục buổi sáng.",
+     "11:30 – 13:00: nghỉ trưa, vẫn đặt lệnh chờ được.",
+     "13:00 – 14:30: khớp lệnh liên tục buổi chiều.",
+     "14:30 – 14:45: phiên đóng cửa (ATC), ra giá đóng cửa.",
+     "14:45 – 15:00: giao dịch thỏa thuận."
+    ]
+   ],
+   [
+    "h2",
+    "Sàn HNX"
+   ],
+   [
+    "ul",
+    [
+     "9:00 – 11:30: khớp lệnh liên tục buổi sáng (không có phiên ATO).",
+     "13:00 – 14:30: khớp lệnh liên tục buổi chiều.",
+     "14:30 – 14:45: phiên đóng cửa (ATC).",
+     "14:45 – 15:00: phiên sau giờ (lệnh PLO) và thỏa thuận."
+    ]
+   ],
+   [
+    "h2",
+    "Sàn UPCoM"
+   ],
+   [
+    "ul",
+    [
+     "9:00 – 11:30 và 13:00 – 15:00: khớp lệnh liên tục.",
+     "Giá tham chiếu ngày hôm sau là giá bình quân gia quyền trong ngày."
+    ]
+   ],
+   [
+    "p",
+    "Lịch trên là lịch phổ biến; Sở Giao dịch có thể điều chỉnh khi thay đổi hệ thống, anh chị nên xem thông báo trên ứng dụng của công ty chứng khoán."
+   ]
+  ],
+  "faq": [
+   [
+    "Thứ Bảy có giao dịch chứng khoán không?",
+    "Không. Thị trường chỉ giao dịch từ thứ Hai đến thứ Sáu, trừ ngày lễ."
+   ],
+   [
+    "Đặt lệnh lúc nghỉ trưa có được không?",
+    "Được. Lệnh sẽ chờ và tham gia khớp khi phiên chiều bắt đầu lúc 13:00."
+   ],
+   [
+    "Phiên ATC là gì?",
+    "Là phiên khớp lệnh định kỳ cuối ngày để xác định giá đóng cửa, từ 14:30 đến 14:45 trên HOSE và HNX."
+   ]
+  ],
+  "rel": [
+   "cac-loai-lenh-chung-khoan",
+   "t-2-la-gi",
+   "cach-doc-bang-gia-chung-khoan"
+  ],
+  "add": [
+   [
+    "h2",
+    "Mẹo cho người mới"
+   ],
+   [
+    "ul",
+    [
+     "Phiên ATO và ATC giá có thể nhảy mạnh, người mới nên dùng lệnh giới hạn (LO) để không mua đắt.",
+     "15 phút đầu phiên sáng thường biến động nhiều nhất, không nhất thiết phải vào lệnh ngay.",
+     "Muốn bán chắc chắn trong ngày thì nên đặt trước 14:30."
+    ]
+   ]
+  ]
+ },
+ {
+  "slug": "vn30-la-gi",
+  "kw": "VN30 là gì",
+  "grp": 1,
+  "title": "VN30 là gì? Rổ 30 cổ phiếu lớn nhất sàn HOSE và cách dùng",
+  "desc": "VN30 là chỉ số của 30 cổ phiếu vốn hóa và thanh khoản lớn nhất sàn HOSE. Cách chọn mã, khi nào đổi rổ, khác gì VN-Index và vì sao nhà đầu tư quan tâm.",
+  "body": [
+   [
+    "p",
+    "<b>VN30</b> là chỉ số đo biến động giá của <b>30 cổ phiếu</b> có vốn hóa lớn và thanh khoản tốt nhất trên sàn HOSE. Đây là nhóm cổ phiếu \"đầu tàu\" của thị trường."
+   ],
+   [
+    "h2",
+    "VN30 khác gì VN-Index?"
+   ],
+   [
+    "p",
+    "<a href=\"/f0/vn-index-la-gi.html\">VN-Index</a> tính trên toàn bộ cổ phiếu sàn HOSE, còn VN30 chỉ gồm 30 mã lớn. Vì các mã lớn chiếm phần lớn vốn hóa, hai chỉ số thường đi cùng chiều, nhưng có lúc tách nhau khi dòng tiền tập trung vào cổ phiếu vừa và nhỏ."
+   ],
+   [
+    "h2",
+    "Cổ phiếu được chọn vào VN30 thế nào?"
+   ],
+   [
+    "ul",
+    [
+     "Phải đáp ứng điều kiện về vốn hóa, tỷ lệ cổ phiếu tự do chuyển nhượng và thanh khoản.",
+     "Rổ được xem xét định kỳ mỗi nửa năm, có mã được thêm vào, có mã bị loại.",
+     "Mỗi mã có giới hạn tỷ trọng để một cổ phiếu không chi phối cả chỉ số."
+    ]
+   ],
+   [
+    "h2",
+    "Vì sao nhà đầu tư quan tâm VN30?"
+   ],
+   [
+    "ul",
+    [
+     "Hợp đồng tương lai chỉ số (phái sinh) dựa trên VN30.",
+     "Nhiều quỹ ETF mô phỏng VN30, khi đổi rổ dòng tiền quỹ mua bán theo.",
+     "Cổ phiếu VN30 thường là doanh nghiệp đầu ngành, phù hợp người mới bắt đầu tìm hiểu."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "VN30 có những cổ phiếu nào?",
+    "Thường gồm các ngân hàng lớn, bất động sản, thép, bán lẻ, công nghệ đầu ngành. Danh sách thay đổi sau mỗi kỳ xét lại, xem trên trang của Sở Giao dịch HOSE."
+   ],
+   [
+    "Mua cổ phiếu VN30 có an toàn không?",
+    "An toàn hơn cổ phiếu nhỏ về thanh khoản, nhưng giá vẫn có thể giảm mạnh. Vẫn cần quản trị vốn và chọn doanh nghiệp tốt."
+   ]
+  ],
+  "rel": [
+   "vn-index-la-gi",
+   "etf-la-gi",
+   "phai-sinh-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Cách tra nhanh"
+   ],
+   [
+    "p",
+    "Trên mỗi trang mã cổ phiếu của web có bảng <b>so sánh với cổ phiếu cùng ngành</b> (P/E, P/B, ROE, biến động 1 năm), ví dụ <a href=\"/ma/VCB.html\">VCB</a>, <a href=\"/ma/HPG.html\">HPG</a>, <a href=\"/ma/FPT.html\">FPT</a>."
+   ]
+  ]
+ },
+ {
+  "slug": "cach-tinh-lai-lo-co-phieu",
+  "kw": "cách tính lãi lỗ cổ phiếu",
+  "grp": 2,
+  "title": "Cách tính lãi lỗ cổ phiếu chính xác (có phí và thuế)",
+  "desc": "Công thức tính lãi lỗ khi mua bán cổ phiếu, đã trừ phí giao dịch và thuế bán 0,1%. Ví dụ cụ thể, cách tính giá vốn khi mua nhiều lần và mức hòa vốn.",
+  "body": [
+   [
+    "p",
+    "Nhiều người mới chỉ lấy giá bán trừ giá mua, nên tưởng lãi mà thực tế lỗ vì quên phí và thuế. Công thức đúng như sau."
+   ],
+   [
+    "h2",
+    "Công thức"
+   ],
+   [
+    "ul",
+    [
+     "Tiền mua = Giá mua × Số cổ phiếu + Phí mua.",
+     "Tiền bán thực nhận = Giá bán × Số cổ phiếu − Phí bán − Thuế bán (0,1% giá trị bán).",
+     "Lãi/lỗ = Tiền bán thực nhận − Tiền mua."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ"
+   ],
+   [
+    "p",
+    "Mua 1.000 cổ phiếu giá 20.000 đồng, phí 0,15%: tiền mua = 20.000.000 + 30.000 = 20.030.000 đồng. Bán giá 21.000 đồng, phí 0,15% và thuế 0,1%: thực nhận = 21.000.000 − 31.500 − 21.000 = 20.947.500 đồng. Lãi = 917.500 đồng, khoảng 4,6%."
+   ],
+   [
+    "h2",
+    "Giá hòa vốn"
+   ],
+   [
+    "p",
+    "Với phí mỗi chiều 0,15% và thuế 0,1%, giá phải tăng khoảng <b>0,4%</b> mới hòa vốn. Phí càng cao, giao dịch càng nhiều thì phần chi phí này càng ăn mòn lợi nhuận."
+   ]
+  ],
+  "faq": [
+   [
+    "Thuế bán cổ phiếu là bao nhiêu?",
+    "0,1% trên giá trị bán, kể cả khi bán lỗ."
+   ],
+   [
+    "Mua nhiều lần thì tính giá vốn thế nào?",
+    "Giá vốn bình quân = Tổng tiền đã mua (gồm phí) ÷ Tổng số cổ phiếu đang có."
+   ]
+  ],
+  "rel": [
+   "phi-giao-dich-va-thue-chung-khoan",
+   "mua-trung-binh-gia-dca",
+   "ty-le-thang-va-ty-le-loi-lo"
+  ],
+  "add": [
+   [
+    "h2",
+    "Vì sao giao dịch nhiều dễ thua?"
+   ],
+   [
+    "p",
+    "Mỗi vòng mua bán tốn khoảng 0,4% chi phí. Một năm 100 lệnh là khoảng 40% vốn bị phí và thuế ăn mất nếu mỗi lệnh dùng toàn bộ vốn. Đó là lý do nhà đầu tư cá nhân giao dịch quá nhiều gần như luôn thua thị trường."
+   ]
+  ]
+ },
+ {
+  "slug": "nen-dau-tu-chung-khoan-bao-nhieu-tien",
+  "kw": "nên đầu tư chứng khoán bao nhiêu tiền",
+  "grp": 7,
+  "title": "Nên đầu tư chứng khoán bao nhiêu tiền? Cách chia vốn cho người mới",
+  "desc": "Người mới nên bỏ bao nhiêu tiền vào chứng khoán: quỹ dự phòng trước, chỉ dùng tiền nhàn rỗi, bắt đầu nhỏ, chia vốn theo tỷ trọng, không dùng margin khi chưa có kinh nghiệm.",
+  "body": [
+   [
+    "p",
+    "Không có con số đúng cho mọi người. Câu hỏi đúng là: <b>số tiền nào anh chị có thể để yên 3–5 năm mà không ảnh hưởng cuộc sống?</b>"
+   ],
+   [
+    "h2",
+    "4 nguyên tắc trước khi bỏ tiền"
+   ],
+   [
+    "ol",
+    [
+     "Có quỹ dự phòng 3–6 tháng chi tiêu để ở ngân hàng, không đưa vào chứng khoán.",
+     "Chỉ dùng tiền nhàn rỗi, không vay mượn, không dùng tiền sắp phải chi.",
+     "Bắt đầu với số nhỏ (vài triệu đến vài chục triệu) để học cách thị trường vận hành.",
+     "Không dùng margin khi chưa có ít nhất 1–2 năm kinh nghiệm."
+    ]
+   ],
+   [
+    "h2",
+    "Chia vốn thế nào?"
+   ],
+   [
+    "ul",
+    [
+     "Không dồn hết vào 1 mã: chia cho 3–5 doanh nghiệp, mỗi mã một phần.",
+     "Mua dần nhiều lần thay vì mua một lần.",
+     "Giữ lại một phần tiền mặt cho lúc thị trường giảm mạnh."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "10 triệu có đầu tư chứng khoán được không?",
+    "Được. Bắt đầu với 10 triệu là cách tốt để học, xem bài đầu tư chứng khoán với 10 triệu trong cẩm nang F0."
+   ],
+   [
+    "Có nên vay tiền để đầu tư chứng khoán?",
+    "Không nên với người mới. Vay hoặc margin biến một đợt giảm giá bình thường thành khoản lỗ lớn."
+   ]
+  ],
+  "rel": [
+   "dau-tu-chung-khoan-voi-10-trieu",
+   "cach-phan-bo-ty-trong-co-phieu",
+   "quan-tri-von-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Lưu ý của Huy Nguyễn"
+   ],
+   [
+    "ul",
+    [
+     "Nhà đầu tư cá nhân giao dịch quá 100 lệnh mỗi năm (khoảng 9–10 lệnh mỗi tháng) gần như chắc chắn thua.",
+     "Mua dồn toàn bộ vốn vào một cổ phiếu cũng thua.",
+     "Vay margin mà không biết quản trị vốn cũng thua."
+    ]
+   ]
+  ]
  }
 ]
