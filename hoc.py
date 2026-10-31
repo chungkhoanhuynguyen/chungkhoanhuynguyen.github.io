@@ -163,7 +163,7 @@ for x in F:
     p.append("<h2>Câu hỏi thường gặp</h2>" + "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in x["faq"]))
     p.append('<div class="pn">' + (f'<a href="{FP(pv)}"><small>← Bài trước</small>{e(pv["title"])}</a>' if pv else '<span></span>') + (f'<a href="{FP(nx)}" style="text-align:right"><small>Bài tiếp theo →</small>{e(nx["title"])}</a>' if nx else '<a href="/f0/" style="text-align:right"><small>Hoàn thành lộ trình →</small>Về mục lục cẩm nang</a>') + '</div>')
     p.append('<h2>Đọc tiếp</h2><ul>' + "".join(f'<li><a href="{FP(FM[r])}">{e(FM[r]["title"])}</a></li>' for r in x["rel"] if r in FM) + '<li><a href="/hoc/">Thư viện bài học có video</a></li></ul>')
-    p.append(f'<div class="cta"><a class="btn b1" href="{YT}?sub_confirmation=1" rel="noopener">Đăng ký kênh YouTube</a><a class="btn b2" href="/">Bảng giá &amp; định giá cổ phiếu</a><a class="btn b2" href="https://zalo.me/g/jbnbiq994" rel="noopener">Nhóm Zalo hỏi đáp</a></div>')
+    p.append(f'<div class="cta"><a class="btn b1" href="/mo-tai-khoan-chung-khoan.html">Mở tài khoản chứng khoán</a><a class="btn b2" href="https://zalo.me/0365188286" rel="noopener">Tư vấn 1:1 qua Zalo</a><a class="btn b2" href="https://zalo.me/g/jbnbiq994" rel="noopener">Nhóm Zalo hỏi đáp</a><a class="btn b2" href="{YT}?sub_confirmation=1" rel="noopener">Kênh YouTube</a></div>')
     p.append("</article></main>" + FOOT)
     fn = FP(x)[1:]; fkeep.add(fn)
     open(os.path.join(ROOT, fn), "w", encoding="utf-8").write("\n".join(p))
