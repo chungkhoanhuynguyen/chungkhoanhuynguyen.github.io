@@ -7472,5 +7472,528 @@
    "co-phieu-tot-de-dau-tu-dai-han",
    "co-tuc-la-gi"
   ]
+ },
+ {
+  "slug": "no-xau-ngan-hang-la-gi",
+  "kw": "nợ xấu ngân hàng là gì",
+  "grp": 3,
+  "title": "Nợ xấu ngân hàng là gì? Cách đọc tỷ lệ nợ xấu và tỷ lệ bao phủ",
+  "desc": "Nợ xấu là khoản vay khó thu hồi. Cách đọc tỷ lệ nợ xấu, tỷ lệ bao phủ nợ xấu và chi phí dự phòng trong báo cáo tài chính ngân hàng, kèm ví dụ thật quý 3/2026.",
+  "body": [
+   [
+    "p",
+    "<b>Nợ xấu</b> là các khoản cho vay mà ngân hàng khó thu hồi đúng hạn, theo quy định là nợ nhóm 3, 4 và 5 (quá hạn từ 91 ngày trở lên hoặc bị đánh giá có khả năng mất vốn). Với cổ phiếu ngân hàng, nợ xấu là chỉ số rủi ro quan trọng nhất, quan trọng không kém lợi nhuận."
+   ],
+   [
+    "h2",
+    "Tỷ lệ nợ xấu là gì?"
+   ],
+   [
+    "ul",
+    [
+     "Công thức: Tỷ lệ nợ xấu = Nợ nhóm 3–5 ÷ Tổng dư nợ cho vay.",
+     "Dưới 2% thường được xem là kiểm soát tốt; trên 3% cần theo dõi kỹ.",
+     "Quan trọng hơn con số là <b>xu hướng</b>: tăng liên tục qua nhiều quý là tín hiệu cần chú ý."
+    ]
+   ],
+   [
+    "h2",
+    "Tỷ lệ bao phủ nợ xấu: tấm đệm của ngân hàng"
+   ],
+   [
+    "p",
+    "Tỷ lệ bao phủ = Dự phòng rủi ro tín dụng ÷ Nợ xấu. Bao phủ 100% nghĩa là ngân hàng đã trích đủ tiền dự phòng tương đương toàn bộ nợ xấu. Bao phủ càng thấp, nếu nợ xấu không thu hồi được thì lợi nhuận tương lai càng dễ bị ăn mòn."
+   ],
+   [
+    "h2",
+    "Ví dụ thật quý 3/2026"
+   ],
+   [
+    "ul",
+    [
+     "Vietcombank (VCB): nợ xấu 0,71%, bao phủ khoảng 243% – bộ đệm rất dày.",
+     "VPBank (VPB): nợ xấu 3,12% (quý trước 3,28%), bao phủ khoảng 54%.",
+     "VIB: nợ xấu 3,20% (quý trước 2,93%), bao phủ khoảng 42%."
+    ]
+   ],
+   [
+    "p",
+    "Cùng là ngân hàng có lãi, nhưng mức độ “an toàn” của lợi nhuận rất khác nhau. Xem số liệu từng mã tại trang <a href=\"/ma/VCB.html\">VCB</a>, <a href=\"/ma/VPB.html\">VPB</a>, <a href=\"/ma/VIB.html\">VIB</a>."
+   ],
+   [
+    "h2",
+    "Chi phí dự phòng ảnh hưởng lợi nhuận thế nào?"
+   ],
+   [
+    "p",
+    "Mỗi đồng trích dự phòng làm lợi nhuận kỳ đó giảm một đồng. Ví dụ quý 3/2026, Vietcombank trích dự phòng tăng khoảng 697% so với cùng kỳ nên lãi chỉ tăng 0,1% dù thu nhập lãi thuần tăng 39,1%. Ngược lại, ngân hàng giảm trích lập có thể báo lãi đẹp hơn, nhưng một phần lợi nhuận đó không đến từ kinh doanh cốt lõi."
+   ],
+   [
+    "h2",
+    "Checklist đọc nhanh cho người mới"
+   ],
+   [
+    "ul",
+    [
+     "Tỷ lệ nợ xấu đang tăng hay giảm so với quý trước?",
+     "Tỷ lệ bao phủ trên hay dưới 100%?",
+     "Lợi nhuận tăng nhờ thu nhập lãi thuần hay nhờ giảm dự phòng?"
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Nợ xấu là nợ nhóm mấy?",
+    "Nợ xấu gồm nợ nhóm 3 (dưới tiêu chuẩn), nhóm 4 (nghi ngờ) và nhóm 5 (có khả năng mất vốn)."
+   ],
+   [
+    "Tỷ lệ bao phủ nợ xấu bao nhiêu là tốt?",
+    "Trên 100% thường được xem là bộ đệm đủ dày. Dưới 50% nghĩa là dự phòng mới đủ cho chưa tới một nửa số nợ xấu."
+   ],
+   [
+    "Ngân hàng lãi giảm vì trích dự phòng có phải là xấu không?",
+    "Chưa chắc. Trích dự phòng nhiều làm lãi kỳ này thấp nhưng giúp bộ đệm dày hơn; cần xem cùng thu nhập lãi thuần và xu hướng nợ xấu."
+   ]
+  ],
+  "rel": [
+   "doc-bctc-ngan-hang",
+   "pb-la-gi",
+   "roe-eps-la-gi",
+   "cach-chon-co-phieu-ngan-hang-de-tich-san"
+  ]
+ },
+ {
+  "slug": "nim-la-gi",
+  "kw": "NIM là gì",
+  "grp": 3,
+  "title": "NIM là gì? Biên lãi thuần – thước đo khả năng kiếm tiền của ngân hàng",
+  "desc": "NIM (biên lãi thuần) cho biết ngân hàng kiếm được bao nhiêu từ mỗi đồng tài sản sinh lãi. Cách hiểu NIM, NIM bao nhiêu là cao, và ví dụ thật VPB, MBB, VIB, TPB quý 3/2026.",
+  "body": [
+   [
+    "p",
+    "<b>NIM</b> (Net Interest Margin – biên lãi thuần) là chỉ số đo khả năng kiếm tiền từ hoạt động cho vay của ngân hàng: lấy lãi thu từ cho vay trừ lãi trả cho người gửi tiền, rồi chia cho tài sản sinh lãi."
+   ],
+   [
+    "h2",
+    "Công thức NIM"
+   ],
+   [
+    "ul",
+    [
+     "NIM = Thu nhập lãi thuần ÷ Tài sản sinh lãi bình quân (quy ra theo năm).",
+     "Thu nhập lãi thuần = Lãi cho vay, đầu tư − Lãi trả tiền gửi, phát hành giấy tờ có giá.",
+     "NIM cao: ngân hàng cho vay được giá tốt hoặc huy động vốn rẻ."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ thật quý 3/2026"
+   ],
+   [
+    "ul",
+    [
+     "VPBank (VPB): NIM khoảng 4,56% – cao nhờ mảng cho vay tiêu dùng.",
+     "MB (MBB): NIM khoảng 3,72%.",
+     "VIB: NIM khoảng 2,83%.",
+     "TPBank (TPB): NIM khoảng 2,58%."
+    ]
+   ],
+   [
+    "p",
+    "Theo dõi từng mã tại <a href=\"/ma/VPB.html\">VPB</a>, <a href=\"/ma/MBB.html\">MBB</a>, <a href=\"/ma/TPB.html\">TPB</a>."
+   ],
+   [
+    "h2",
+    "NIM cao luôn tốt?"
+   ],
+   [
+    "p",
+    "Không hẳn. NIM cao thường đi kèm cho vay khách hàng rủi ro hơn (như tín dụng tiêu dùng), nên phải đọc cùng <a href=\"/f0/no-xau-ngan-hang-la-gi.html\">tỷ lệ nợ xấu và bao phủ</a>. Ví dụ VPBank NIM cao nhưng tỷ lệ bao phủ nợ xấu chỉ khoảng 54%."
+   ],
+   [
+    "h2",
+    "Đọc NIM thế nào cho đúng?"
+   ],
+   [
+    "ul",
+    [
+     "So sánh ngân hàng cùng mô hình (bán lẻ với bán lẻ, quốc doanh với quốc doanh).",
+     "Xem xu hướng NIM qua nhiều quý: NIM giảm liên tục thường báo hiệu cạnh tranh lãi suất hoặc chi phí vốn tăng.",
+     "Kết hợp với tăng trưởng thu nhập lãi thuần và ROE."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "NIM bao nhiêu là cao?",
+    "Với ngân hàng Việt Nam, NIM trên 4% thường được xem là cao, khoảng 3% là trung bình; nên so sánh trong cùng nhóm ngân hàng."
+   ],
+   [
+    "NIM khác lãi suất cho vay thế nào?",
+    "Lãi suất cho vay chỉ là giá bán vốn; NIM là phần chênh lệch còn lại sau khi trừ chi phí huy động, tính trên tài sản sinh lãi."
+   ],
+   [
+    "Xem NIM ở đâu?",
+    "NIM thường có trong báo cáo thường niên hoặc tài liệu nhà đầu tư; có thể ước tính từ thu nhập lãi thuần trên báo cáo kết quả kinh doanh."
+   ]
+  ],
+  "rel": [
+   "doc-bctc-ngan-hang",
+   "roe-eps-la-gi",
+   "pe-la-gi"
+  ]
+ },
+ {
+  "slug": "lenh-ato-atc-la-gi",
+  "kw": "lệnh ATO ATC là gì",
+  "grp": 2,
+  "title": "Lệnh ATO, ATC là gì? Khi nào nên dùng lệnh mở cửa, đóng cửa",
+  "desc": "Lệnh ATO (giá mở cửa) và ATC (giá đóng cửa) là gì, đặt trong khung giờ nào, ưu tiên khớp ra sao và những lưu ý cho người mới.",
+  "body": [
+   [
+    "p",
+    "<b>ATO</b> (At The Opening) là lệnh mua hoặc bán tại mức giá mở cửa. <b>ATC</b> (At The Close) là lệnh mua hoặc bán tại mức giá đóng cửa. Cả hai không ghi giá cụ thể, mà chấp nhận khớp ở mức giá được xác định sau phiên khớp lệnh định kỳ."
+   ],
+   [
+    "h2",
+    "1. Khung giờ đặt lệnh"
+   ],
+   [
+    "ul",
+    [
+     "ATO: phiên khớp lệnh định kỳ mở cửa 9h00–9h15 (HOSE).",
+     "ATC: phiên khớp lệnh định kỳ đóng cửa 14h30–14h45 (HOSE và HNX).",
+     "UPCoM không có phiên ATO, ATC, chỉ khớp lệnh liên tục."
+    ]
+   ],
+   [
+    "h2",
+    "2. Ưu tiên khớp lệnh"
+   ],
+   [
+    "p",
+    "Trong phiên định kỳ, lệnh ATO/ATC được ưu tiên khớp trước lệnh giới hạn (LO). Nếu không khớp hết, phần còn lại của lệnh ATO bị hủy sau phiên mở cửa, lệnh ATC bị hủy sau phiên đóng cửa."
+   ],
+   [
+    "h2",
+    "3. Khi nào dùng ATO, ATC?"
+   ],
+   [
+    "ul",
+    [
+     "Muốn chắc chắn mua hoặc bán được ngay đầu phiên, chấp nhận giá mở cửa.",
+     "Muốn giao dịch theo giá đóng cửa, ví dụ khi đánh giá xu hướng theo giá cuối ngày.",
+     "Cổ phiếu thanh khoản tốt, khối lượng đặt không quá lớn so với thị trường."
+    ]
+   ],
+   [
+    "h2",
+    "4. Rủi ro khi dùng"
+   ],
+   [
+    "ul",
+    [
+     "Không biết trước giá khớp, có thể khớp ở mức giá xấu khi thị trường hoảng loạn.",
+     "Lệnh ATC lớn ở cổ phiếu ít thanh khoản có thể đẩy giá đóng cửa bất lợi.",
+     "Người mới thường đặt ATO mua đuổi ngày tin tốt và khớp ở giá cao nhất phiên."
+    ]
+   ],
+   [
+    "p",
+    "Người mới nên dùng lệnh LO (giới hạn giá) là chính để kiểm soát giá mua bán, chỉ dùng ATO/ATC khi thật sự cần."
+   ]
+  ],
+  "faq": [
+   [
+    "Lệnh ATO có hủy được không?",
+    "Trong phiên định kỳ mở cửa, lệnh đã đặt không được hủy hoặc sửa theo quy định của HOSE."
+   ],
+   [
+    "Lệnh ATC khớp giá nào?",
+    "Khớp tại một mức giá đóng cửa chung cho cả phiên, là mức giá có khối lượng khớp lớn nhất."
+   ]
+  ],
+  "rel": [
+   "cac-loai-lenh-chung-khoan",
+   "gio-giao-dich-chung-khoan",
+   "cach-dat-lenh-mua-ban-co-phieu",
+   "san-hose-hnx-upcom-la-gi"
+  ]
+ },
+ {
+  "slug": "call-margin-la-gi",
+  "kw": "call margin là gì",
+  "grp": 5,
+  "title": "Call margin là gì? Bán giải chấp xảy ra khi nào và cách tránh",
+  "desc": "Call margin là khi tỷ lệ ký quỹ xuống dưới mức duy trì, công ty chứng khoán yêu cầu nộp thêm tiền hoặc bán bớt cổ phiếu. Ví dụ tính toán và cách phòng tránh.",
+  "body": [
+   [
+    "p",
+    "<b>Call margin</b> là thông báo của công ty chứng khoán khi tài khoản dùng vốn vay có tỷ lệ tài sản thực trên tổng tài sản xuống dưới mức duy trì. Nhà đầu tư phải nộp thêm tiền hoặc bán bớt cổ phiếu, nếu không sẽ bị <b>bán giải chấp</b>."
+   ],
+   [
+    "h2",
+    "1. Ví dụ dễ hiểu"
+   ],
+   [
+    "p",
+    "Bạn có 100 triệu, vay thêm 100 triệu mua 200 triệu cổ phiếu. Tỷ lệ tài sản thực ban đầu là 50%. Nếu cổ phiếu giảm 25%, danh mục còn 150 triệu, nợ vẫn 100 triệu, tài sản thực còn 50 triệu, tức khoảng 33%. Với mức duy trì thường quanh 30–40% tùy công ty, tài khoản đã sát hoặc dưới ngưỡng call."
+   ],
+   [
+    "h2",
+    "2. Vì sao call margin nguy hiểm?"
+   ],
+   [
+    "ul",
+    [
+     "Bị bán đúng lúc giá thấp, biến lỗ tạm thời thành lỗ thật.",
+     "Khi cả thị trường giảm, nhiều tài khoản bị bán giải chấp cùng lúc làm giá giảm sâu thêm.",
+     "Cổ phiếu giảm sàn nhiều phiên liên tiếp có thể không bán được, lỗ vượt cả vốn gốc."
+    ]
+   ],
+   [
+    "h2",
+    "3. Cách tránh bị call margin"
+   ],
+   [
+    "ul",
+    [
+     "Không vay tối đa hạn mức, giữ tỷ lệ vay thấp.",
+     "Không dùng margin cho cổ phiếu nhỏ, biến động mạnh.",
+     "Đặt điểm cắt lỗ trước khi giá chạm vùng call.",
+     "Luôn có tiền mặt dự phòng.",
+     "Theo dõi tỷ lệ ký quỹ hằng ngày trên ứng dụng."
+    ]
+   ],
+   [
+    "p",
+    "Margin là con dao hai lưỡi: lãi nhân đôi khi đúng, nhưng một đợt giảm mạnh có thể xóa sạch thành quả nhiều năm."
+   ]
+  ],
+  "faq": [
+   [
+    "Bị call margin có bao lâu để nộp tiền?",
+    "Tùy công ty chứng khoán, thường trong 1–2 ngày làm việc; nếu xuống dưới tỷ lệ xử lý, tài khoản có thể bị bán ngay trong phiên."
+   ],
+   [
+    "Mã nào được dùng margin?",
+    "Chỉ những mã nằm trong danh mục cho vay của công ty chứng khoán, với tỷ lệ cho vay khác nhau từng mã."
+   ]
+  ],
+  "rel": [
+   "margin-la-gi",
+   "lai-suat-margin",
+   "margin-va-tien-mat-khi-tich-san",
+   "cat-lo-la-gi"
+  ]
+ },
+ {
+  "slug": "chung-quyen-la-gi",
+  "kw": "chứng quyền có bảo đảm là gì",
+  "grp": 6,
+  "title": "Chứng quyền có bảo đảm (CW) là gì? Rủi ro người mới cần biết",
+  "desc": "Chứng quyền có bảo đảm (CW) là gì, cách đọc mã chứng quyền, giá thực hiện, tỷ lệ chuyển đổi, ngày đáo hạn và vì sao CW có thể mất gần hết giá trị.",
+  "body": [
+   [
+    "p",
+    "<b>Chứng quyền có bảo đảm</b> (covered warrant, CW) là sản phẩm do công ty chứng khoán phát hành, cho người nắm giữ quyền mua cổ phiếu cơ sở ở một mức giá xác định (giá thực hiện) vào ngày đáo hạn. Ở Việt Nam hiện chủ yếu là chứng quyền mua, thanh toán bằng tiền."
+   ],
+   [
+    "h2",
+    "1. Các thông số cần đọc"
+   ],
+   [
+    "ul",
+    [
+     "<b>Cổ phiếu cơ sở:</b> ví dụ chứng quyền trên HPG, MBB, VPB.",
+     "<b>Giá thực hiện:</b> mức giá để tính lãi khi đáo hạn.",
+     "<b>Tỷ lệ chuyển đổi:</b> bao nhiêu chứng quyền tương ứng 1 cổ phiếu.",
+     "<b>Ngày đáo hạn:</b> sau ngày này chứng quyền hết hiệu lực."
+    ]
+   ],
+   [
+    "h2",
+    "2. Lãi lỗ khi đáo hạn"
+   ],
+   [
+    "p",
+    "Nếu giá cổ phiếu cơ sở bình quân trước đáo hạn cao hơn giá thực hiện, người nắm giữ nhận phần chênh lệch (chia theo tỷ lệ chuyển đổi). Nếu thấp hơn, chứng quyền hết giá trị, mất toàn bộ tiền mua."
+   ],
+   [
+    "h2",
+    "3. Vì sao CW rủi ro cao?"
+   ],
+   [
+    "ul",
+    [
+     "Đòn bẩy lớn: cổ phiếu tăng giảm vài phần trăm, chứng quyền có thể biến động vài chục phần trăm.",
+     "Giá trị thời gian giảm dần khi gần đáo hạn.",
+     "Giá do tổ chức phát hành tạo lập, có thể chênh lệch với giá trị lý thuyết."
+    ]
+   ],
+   [
+    "p",
+    "Người mới chỉ nên tìm hiểu CW sau khi đã vững cổ phiếu cơ sở, và chỉ dùng phần vốn nhỏ sẵn sàng mất."
+   ]
+  ],
+  "faq": [
+   [
+    "Chứng quyền có được chia cổ tức không?",
+    "Không. Người nắm chứng quyền không phải cổ đông nên không nhận cổ tức hay quyền biểu quyết."
+   ],
+   [
+    "Mua chứng quyền ở đâu?",
+    "Giao dịch như cổ phiếu trên sàn HOSE qua tài khoản chứng khoán thông thường."
+   ]
+  ],
+  "rel": [
+   "phai-sinh-la-gi",
+   "etf-la-gi",
+   "margin-la-gi",
+   "co-phieu-la-gi"
+  ]
+ },
+ {
+  "slug": "lai-suat-tang-anh-huong-chung-khoan",
+  "kw": "lãi suất tăng ảnh hưởng chứng khoán",
+  "grp": 8,
+  "title": "Lãi suất tăng ảnh hưởng thế nào đến chứng khoán? Nhóm nào chịu tác động",
+  "desc": "Vì sao lãi suất tăng thường khiến chứng khoán giảm: dòng tiền chuyển sang tiết kiệm, chi phí vay tăng, định giá giảm. Ngân hàng, bất động sản, chứng khoán bị tác động ra sao.",
+  "body": [
+   [
+    "p",
+    "Lãi suất là giá của tiền. Khi lãi suất tiết kiệm và cho vay tăng, thị trường chứng khoán thường chịu áp lực qua ba kênh chính."
+   ],
+   [
+    "h2",
+    "1. Ba kênh tác động"
+   ],
+   [
+    "ul",
+    [
+     "<b>Dòng tiền:</b> gửi tiết kiệm hấp dẫn hơn, một phần tiền rút khỏi chứng khoán.",
+     "<b>Chi phí vốn của doanh nghiệp:</b> doanh nghiệp vay nhiều trả lãi cao hơn, lợi nhuận giảm.",
+     "<b>Định giá:</b> lãi suất cao làm nhà đầu tư đòi hỏi lợi suất cao hơn, P/E chấp nhận được thấp xuống."
+    ]
+   ],
+   [
+    "h2",
+    "2. Nhóm ngành chịu tác động"
+   ],
+   [
+    "ul",
+    [
+     "<b>Bất động sản:</b> vay nhiều, người mua nhà cũng phụ thuộc vay, thường chịu ảnh hưởng mạnh nhất.",
+     "<b>Chứng khoán:</b> margin đắt hơn, thanh khoản thị trường giảm, doanh thu môi giới và cho vay ký quỹ chậm lại.",
+     "<b>Ngân hàng:</b> tác động hai chiều: chi phí huy động tăng nhưng lãi cho vay cũng tăng; rủi ro lớn hơn là nợ xấu nếu khách hàng khó trả nợ.",
+     "<b>Doanh nghiệp ít nợ, nhiều tiền mặt:</b> có thể hưởng lợi từ lãi tiền gửi."
+    ]
+   ],
+   [
+    "h2",
+    "3. Theo dõi lãi suất ở đâu?"
+   ],
+   [
+    "ul",
+    [
+     "Lãi suất tiết kiệm 12 tháng của các ngân hàng lớn.",
+     "Lãi suất liên ngân hàng và hoạt động bơm, hút tiền của Ngân hàng Nhà nước qua thị trường mở.",
+     "Quyết định lãi suất của Fed, ảnh hưởng tỷ giá và dòng vốn ngoại."
+    ]
+   ],
+   [
+    "p",
+    "Lịch sử cho thấy giai đoạn lãi suất tăng mạnh (như 2022) thường đi kèm thị trường giảm, còn giai đoạn lãi suất giảm và tiền được bơm ra hệ thống thường là nền cho xu hướng tăng. Đây là quan sát lịch sử, không phải quy luật chắc chắn."
+   ]
+  ],
+  "faq": [
+   [
+    "Lãi suất giảm thì chứng khoán có chắc tăng không?",
+    "Không chắc chắn, nhưng lãi suất giảm là yếu tố hỗ trợ dòng tiền và định giá; còn phụ thuộc lợi nhuận doanh nghiệp và tâm lý thị trường."
+   ],
+   [
+    "Ngân hàng có lợi khi lãi suất tăng không?",
+    "Tùy ngân hàng: ngân hàng có nhiều tiền gửi không kỳ hạn (CASA) thường giữ biên lãi tốt hơn, nhưng nợ xấu có thể tăng nếu lãi suất cao kéo dài."
+   ]
+  ],
+  "rel": [
+   "gia-dau-tang-anh-huong-kinh-te-viet-nam",
+   "lai-suat-margin",
+   "doc-bctc-ngan-hang",
+   "tich-san-co-phieu-ngan-hang"
+  ]
+ },
+ {
+  "slug": "bao-cao-ket-qua-kinh-doanh-la-gi",
+  "kw": "báo cáo kết quả kinh doanh là gì",
+  "grp": 3,
+  "title": "Báo cáo kết quả kinh doanh là gì? Đọc doanh thu, lợi nhuận đúng cách",
+  "desc": "Báo cáo kết quả kinh doanh cho biết doanh thu, chi phí và lợi nhuận trong kỳ. Cách đọc biên lợi nhuận gộp, lợi nhuận cốt lõi và nhận biết lãi bất thường.",
+  "body": [
+   [
+    "p",
+    "<b>Báo cáo kết quả kinh doanh</b> (KQKD) cho biết doanh nghiệp bán được bao nhiêu, tốn bao nhiêu chi phí và lãi bao nhiêu trong một quý hoặc một năm. Đây là báo cáo nhà đầu tư xem nhiều nhất mỗi mùa BCTC."
+   ],
+   [
+    "h2",
+    "1. Các dòng chính từ trên xuống"
+   ],
+   [
+    "ol",
+    [
+     "Doanh thu thuần",
+     "Giá vốn hàng bán → Lợi nhuận gộp",
+     "Doanh thu và chi phí tài chính (lãi vay, lãi tiền gửi, chênh lệch tỷ giá)",
+     "Chi phí bán hàng, chi phí quản lý doanh nghiệp",
+     "Lợi nhuận thuần từ hoạt động kinh doanh",
+     "Thu nhập và chi phí khác",
+     "Lợi nhuận trước thuế, sau thuế, lợi nhuận của cổ đông công ty mẹ"
+    ]
+   ],
+   [
+    "h2",
+    "2. Biên lợi nhuận gộp"
+   ],
+   [
+    "p",
+    "Biên gộp = Lợi nhuận gộp / Doanh thu. Biên gộp cao và ổn định cho thấy doanh nghiệp có lợi thế giá bán hoặc chi phí. Ví dụ ngành nhựa, khi giá hạt nhựa tăng mạnh, biên gộp thường bị thu hẹp."
+   ],
+   [
+    "h2",
+    "3. Lợi nhuận cốt lõi và lãi bất thường"
+   ],
+   [
+    "p",
+    "Lợi nhuận có thể tăng đột biến nhờ bán tài sản, thoái vốn, hoàn nhập dự phòng hoặc thu nhập khác. Đây là khoản không lặp lại. Hãy xem lợi nhuận thuần từ hoạt động kinh doanh để biết mảng chính có thật sự tốt lên không."
+   ],
+   [
+    "h2",
+    "4. So sánh thế nào cho đúng?"
+   ],
+   [
+    "ul",
+    [
+     "So với cùng kỳ năm trước để loại bỏ yếu tố mùa vụ.",
+     "Xem lũy kế nhiều quý thay vì một quý đơn lẻ.",
+     "So với kế hoạch năm doanh nghiệp đặt ra tại đại hội cổ đông."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Lợi nhuận sau thuế và lợi nhuận công ty mẹ khác nhau thế nào?",
+    "Lợi nhuận công ty mẹ đã trừ phần của cổ đông thiểu số ở công ty con, đây là số dùng để tính EPS."
+   ],
+   [
+    "Doanh thu tăng mà lợi nhuận giảm là vì sao?",
+    "Thường do biên gộp giảm, chi phí tài chính hoặc chi phí bán hàng tăng nhanh hơn doanh thu."
+   ]
+  ],
+  "rel": [
+   "cach-doc-bao-cao-tai-chinh",
+   "bang-can-doi-ke-toan-la-gi",
+   "bao-cao-luu-chuyen-tien-te-la-gi",
+   "roe-eps-la-gi"
+  ]
  }
 ]
