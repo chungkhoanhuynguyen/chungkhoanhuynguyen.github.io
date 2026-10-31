@@ -7995,5 +7995,500 @@
    "bao-cao-luu-chuyen-tien-te-la-gi",
    "roe-eps-la-gi"
   ]
+ },
+ {
+  "slug": "he-so-no-de-la-gi",
+  "kw": "hệ số D/E là gì",
+  "grp": 3,
+  "title": "Hệ số D/E là gì? Cách tính nợ trên vốn chủ sở hữu và đọc mức an toàn",
+  "desc": "Hệ số D/E (nợ trên vốn chủ sở hữu) cho biết doanh nghiệp dùng bao nhiêu nợ so với vốn của cổ đông. Công thức, ví dụ bằng số, mức tham khảo theo ngành và các sai lầm khi đọc.",
+  "body": [
+   [
+    "p",
+    "<b>Hệ số D/E</b> (Debt to Equity – nợ trên vốn chủ sở hữu) là tỷ lệ giữa số nợ doanh nghiệp đang gánh và số vốn thuộc về cổ đông. D/E = 1 nghĩa là cứ 1 đồng vốn của cổ đông thì doanh nghiệp đang dùng thêm 1 đồng nợ. Chỉ số này trả lời câu hỏi rất thực tế: nếu kinh doanh gặp khó, doanh nghiệp có bị nợ đè hay không."
+   ],
+   [
+    "p",
+    "Các số để tính D/E đều nằm trên <a href=\"/f0/bang-can-doi-ke-toan-la-gi.html\">bảng cân đối kế toán</a>, nên anh chị chỉ cần biết đọc vài dòng là tự tính được, không phải phụ thuộc vào số liệu người khác đưa."
+   ],
+   [
+    "h2",
+    "1. Công thức tính hệ số D/E"
+   ],
+   [
+    "p",
+    "Có hai cách tính phổ biến, anh chị cần biết mình đang xem cách nào để không so sánh lệch:"
+   ],
+   [
+    "ul",
+    [
+     "<b>D/E theo tổng nợ</b> = Nợ phải trả / Vốn chủ sở hữu. Nợ phải trả gồm cả nợ vay lẫn các khoản phải trả nhà cung cấp, người mua trả tiền trước, lương chưa trả, thuế phải nộp…",
+     "<b>D/E theo nợ vay</b> (còn gọi nợ vay/VCSH) = (Vay ngắn hạn + Vay dài hạn) / Vốn chủ sở hữu. Cách này chỉ tính khoản nợ phải trả lãi, phản ánh rủi ro tài chính sát hơn.",
+     "<b>Nợ vay ròng/VCSH</b> = (Nợ vay − Tiền và tiền gửi ngắn hạn) / Vốn chủ sở hữu. Nếu ra số âm, doanh nghiệp đang có tiền mặt nhiều hơn nợ vay (gọi là “tiền mặt ròng”)."
+    ]
+   ],
+   [
+    "p",
+    "Trên các trang dữ liệu, chỉ số ghi “D/E” thường là cách thứ nhất. Khi đánh giá rủi ro, người làm phân tích hay ưu tiên cách thứ hai và thứ ba vì khoản phải trả nhà cung cấp hay tiền khách đặt trước không phát sinh lãi."
+   ],
+   [
+    "h2",
+    "2. Cách tự tính D/E từng bước"
+   ],
+   [
+    "ol",
+    [
+     "Mở báo cáo tài chính quý gần nhất, vào phần Bảng cân đối kế toán.",
+     "Lấy dòng <b>Nợ phải trả</b> (tổng) và dòng <b>Vốn chủ sở hữu</b>.",
+     "Tìm trong nợ ngắn hạn và nợ dài hạn hai dòng “Vay và nợ thuê tài chính” rồi cộng lại để có nợ vay.",
+     "Lấy dòng “Tiền và các khoản tương đương tiền” cộng “Đầu tư tài chính ngắn hạn” (tiền gửi kỳ hạn) để có lượng tiền.",
+     "Chia từng con số cho vốn chủ sở hữu, rồi làm lại với 4–8 quý trước để xem xu hướng tăng hay giảm."
+    ]
+   ],
+   [
+    "h2",
+    "3. Ví dụ bằng số cụ thể"
+   ],
+   [
+    "p",
+    "<b>Ví dụ 1 (giả định):</b> Công ty A có nợ phải trả 6.000 tỷ đồng, trong đó vay ngân hàng 4.000 tỷ; vốn chủ sở hữu 5.000 tỷ; tiền và tiền gửi 1.500 tỷ."
+   ],
+   [
+    "ul",
+    [
+     "D/E tổng nợ = 6.000 / 5.000 = 1,2 lần.",
+     "Nợ vay/VCSH = 4.000 / 5.000 = 0,8 lần.",
+     "Nợ vay ròng/VCSH = (4.000 − 1.500) / 5.000 = 0,5 lần."
+    ]
+   ],
+   [
+    "p",
+    "Cùng một doanh nghiệp nhưng ba con số khác nhau từ 0,5 đến 1,2. Nếu anh chị chỉ nhìn “D/E 1,2” sẽ nghĩ công ty vay khá nhiều, trong khi phần nợ thật sự phải trả lãi sau khi trừ tiền mặt chỉ bằng một nửa vốn."
+   ],
+   [
+    "p",
+    "<b>Ví dụ 2 (giả định) – nợ phóng đại cả lãi lẫn lỗ:</b> Công ty B và C cùng có tổng tài sản 10.000 tỷ, cùng kiếm được lợi nhuận trước lãi vay và thuế 1.000 tỷ/năm. B không vay, vốn chủ 10.000 tỷ. C vay 6.000 tỷ với lãi suất giả định 8%/năm, vốn chủ 4.000 tỷ (nợ vay/VCSH = 1,5)."
+   ],
+   [
+    "ul",
+    [
+     "B: lợi nhuận trước thuế 1.000 tỷ, ROE trước thuế = 10%.",
+     "C: trả lãi 480 tỷ, còn 520 tỷ, ROE trước thuế = 520 / 4.000 = 13%.",
+     "Năm xấu, lợi nhuận trước lãi vay giảm còn 400 tỷ: B vẫn lãi 400 tỷ (ROE 4%), còn C sau khi trả 480 tỷ lãi vay thì <b>lỗ 80 tỷ</b>."
+    ]
+   ],
+   [
+    "p",
+    "Đây là lý do <a href=\"/f0/roe-eps-la-gi.html\">ROE</a> cao chưa chắc đã tốt: một phần ROE có thể đến từ đòn bẩy nợ. Khi so hai công ty có ROE như nhau, công ty có D/E thấp hơn thường bền hơn."
+   ],
+   [
+    "h2",
+    "4. D/E bao nhiêu là an toàn? Phải xem theo ngành"
+   ],
+   [
+    "p",
+    "Không có một ngưỡng chung cho mọi doanh nghiệp. Mức tham khảo dưới đây chỉ để định hướng, anh chị nên so với các công ty cùng ngành và với chính lịch sử của doanh nghiệp đó:"
+   ],
+   [
+    "ul",
+    [
+     "<b>Công nghệ, bán lẻ, hàng tiêu dùng</b>: nợ vay/VCSH dưới 0,5 thường được xem là thoải mái.",
+     "<b>Sản xuất thép, xi măng, hóa chất, điện</b>: cần vốn lớn để xây nhà máy nên 0,5–1,5 khá phổ biến; trên 2 cần xem kỹ dòng tiền trả nợ.",
+     "<b>Bất động sản</b>: D/E tổng nợ thường cao vì tiền khách đặt cọc mua nhà nằm trong nợ phải trả; cần tách riêng nợ vay và trái phiếu.",
+     "<b>Ngân hàng, công ty chứng khoán</b>: bản chất là đi vay để cho vay, D/E ngân hàng thường 8–12 lần nên <b>không dùng D/E</b> để đánh giá; thay bằng hệ số an toàn vốn, <a href=\"/f0/no-xau-ngan-hang-la-gi.html\">nợ xấu</a> và <a href=\"/f0/nim-la-gi.html\">NIM</a>."
+    ]
+   ],
+   [
+    "h2",
+    "5. Phân biệt D/E với các chỉ số dễ nhầm"
+   ],
+   [
+    "ul",
+    [
+     "<b>D/E và D/A (nợ trên tổng tài sản)</b>: D/A = Nợ / Tổng tài sản, luôn nhỏ hơn 1. D/E = 1 tương đương D/A = 0,5. Hai chỉ số cùng nói về đòn bẩy nhưng thang đo khác nhau.",
+     "<b>D/E và hệ số thanh toán hiện hành</b>: hệ số thanh toán = Tài sản ngắn hạn / Nợ ngắn hạn, đo khả năng trả nợ trong 12 tháng. Công ty D/E thấp nhưng nợ ngắn hạn dồn cục vẫn có thể căng thanh khoản.",
+     "<b>D/E và khả năng trả lãi</b>: hệ số trả lãi = Lợi nhuận trước lãi vay và thuế / Chi phí lãi vay. D/E cho biết nợ nhiều hay ít, còn hệ số này cho biết lợi nhuận có đủ gánh lãi không. Dưới 2–3 lần là tín hiệu cần chú ý.",
+     "<b>Nợ vay và <a href=\"/f0/margin-la-gi.html\">margin</a></b>: margin là đòn bẩy của nhà đầu tư, còn D/E là đòn bẩy của doanh nghiệp. Dùng margin để mua cổ phiếu D/E cao là đòn bẩy chồng đòn bẩy."
+    ]
+   ],
+   [
+    "h2",
+    "6. Những sai lầm thường gặp khi đọc D/E"
+   ],
+   [
+    "ul",
+    [
+     "Chỉ nhìn một quý: D/E có thể thấp tạm thời do vừa phát hành thêm cổ phiếu, hoặc cao tạm thời do vay mùa vụ để nhập nguyên liệu. Hãy xem xu hướng 2–3 năm.",
+     "Coi mọi khoản nợ như nhau: tiền khách hàng trả trước là nợ “tốt” vì không mất lãi, còn trái phiếu đáo hạn dồn dập mới là áp lực.",
+     "Quên vốn chủ sở hữu có thể âm hoặc rất nhỏ do lỗ lũy kế, khiến D/E vọt lên hàng chục lần hoặc ra số vô nghĩa.",
+     "Bỏ qua dòng tiền: D/E 1 với dòng tiền kinh doanh dương đều đặn an toàn hơn D/E 0,6 mà năm nào cũng âm tiền. Xem thêm <a href=\"/f0/bao-cao-luu-chuyen-tien-te-la-gi.html\">báo cáo lưu chuyển tiền tệ</a>.",
+     "Áp ngưỡng của ngành này cho ngành khác, đặc biệt là đem D/E ngân hàng so với doanh nghiệp sản xuất."
+    ]
+   ],
+   [
+    "h2",
+    "7. Khi nào D/E đáng lo và cần kiểm tra thêm?"
+   ],
+   [
+    "p",
+    "D/E chỉ là điểm khởi đầu. Anh chị nên kiểm tra kỹ hơn khi thấy cùng lúc vài dấu hiệu: nợ vay tăng nhanh hơn doanh thu nhiều quý liên tiếp; chi phí lãi vay chiếm phần lớn lợi nhuận gộp; nợ ngắn hạn lớn hơn tiền và khoản phải thu; doanh nghiệp liên tục phát hành trái phiếu mới để trả trái phiếu cũ. Trong giai đoạn <a href=\"/f0/lai-suat-tang-anh-huong-chung-khoan.html\">lãi suất tăng</a>, nhóm doanh nghiệp vay nhiều thường bị ảnh hưởng lợi nhuận trước tiên."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "D/E = Nợ / Vốn chủ sở hữu; nên xem thêm nợ vay/VCSH và nợ vay ròng/VCSH.",
+     "Nợ giúp tăng ROE khi kinh doanh tốt nhưng khuếch đại thua lỗ khi kinh doanh xấu.",
+     "So D/E với doanh nghiệp cùng ngành và lịch sử của chính nó, không dùng cho ngân hàng.",
+     "Luôn đọc kèm hệ số trả lãi, hệ số thanh toán và dòng tiền kinh doanh."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Hệ số D/E là gì?",
+    "Là tỷ lệ nợ trên vốn chủ sở hữu, cho biết doanh nghiệp dùng bao nhiêu đồng nợ cho mỗi đồng vốn của cổ đông."
+   ],
+   [
+    "D/E bao nhiêu là tốt?",
+    "Tùy ngành. Với doanh nghiệp phi tài chính, nợ vay/VCSH dưới 1 thường được xem là vừa phải; ngành cần vốn lớn có thể cao hơn, còn ngân hàng thì không dùng D/E."
+   ],
+   [
+    "D/E âm nghĩa là gì?",
+    "Thường là vốn chủ sở hữu đã âm do lỗ lũy kế vượt vốn góp. Đây là tín hiệu tài chính rất yếu, khác với nợ vay ròng âm là doanh nghiệp có nhiều tiền mặt hơn nợ."
+   ],
+   [
+    "D/E thấp có chắc là doanh nghiệp tốt?",
+    "Không. D/E thấp chỉ cho biết rủi ro nợ thấp; doanh nghiệp vẫn có thể tăng trưởng kém hoặc biên lợi nhuận mỏng. Cần xem cùng ROE, lợi nhuận và dòng tiền."
+   ],
+   [
+    "Lấy số liệu tính D/E ở đâu?",
+    "Trong bảng cân đối kế toán của báo cáo tài chính quý hoặc năm, ở hai dòng Nợ phải trả và Vốn chủ sở hữu."
+   ]
+  ],
+  "rel": [
+   "bang-can-doi-ke-toan-la-gi",
+   "roe-eps-la-gi",
+   "cach-doc-bao-cao-tai-chinh"
+  ]
+ },
+ {
+  "slug": "co-phieu-chu-ky-la-gi",
+  "kw": "cổ phiếu chu kỳ là gì",
+  "grp": 8,
+  "title": "Cổ phiếu chu kỳ là gì? Nhận diện, ngành tiêu biểu và cách đọc P/E ngược",
+  "desc": "Cổ phiếu chu kỳ là cổ phiếu có lợi nhuận lên xuống theo chu kỳ kinh tế và giá hàng hóa. Cách nhận diện, các ngành chu kỳ ở Việt Nam, vì sao P/E thấp có thể là đỉnh và sai lầm thường gặp.",
+  "body": [
+   [
+    "p",
+    "<b>Cổ phiếu chu kỳ</b> là cổ phiếu của doanh nghiệp có lợi nhuận tăng mạnh khi nền kinh tế hoặc giá sản phẩm đi lên và giảm mạnh, thậm chí lỗ, khi chu kỳ đi xuống. Giá cổ phiếu vì vậy thường dao động theo từng “mùa” vài năm, chứ không đi lên đều đặn như nhóm doanh nghiệp tăng trưởng ổn định."
+   ],
+   [
+    "p",
+    "Hiểu cổ phiếu chu kỳ giúp anh chị tránh một cái bẫy rất phổ biến của người mới: thấy lợi nhuận kỷ lục, <a href=\"/f0/pe-la-gi.html\">P/E</a> rẻ thì yên tâm nắm giữ, đúng lúc chu kỳ sắp quay đầu."
+   ],
+   [
+    "h2",
+    "1. Vì sao lợi nhuận lại đi theo chu kỳ?"
+   ],
+   [
+    "p",
+    "Lợi nhuận doanh nghiệp chu kỳ phụ thuộc vào thứ họ không kiểm soát được: giá bán sản phẩm (thép, phân bón, dầu khí, hóa chất), cước vận tải, hoặc nhu cầu xây dựng, mua nhà, vay vốn. Thêm vào đó, các doanh nghiệp này thường có <b>chi phí cố định lớn</b> (nhà máy, máy móc, khấu hao). Khi giá bán tăng, doanh thu tăng thêm gần như đi thẳng vào lợi nhuận; khi giá bán giảm, chi phí cố định vẫn phải trả nên lợi nhuận co lại rất nhanh."
+   ],
+   [
+    "p",
+    "Chu kỳ thường lặp lại theo vòng: giá cao → doanh nghiệp lãi lớn, mở rộng công suất → cung tăng vượt cầu → giá giảm → lợi nhuận sụt, cắt giảm đầu tư → cung co lại → giá hồi phục. Mỗi vòng có thể kéo dài 2–5 năm, không có lịch cố định."
+   ],
+   [
+    "h2",
+    "2. Các ngành chu kỳ tiêu biểu ở Việt Nam"
+   ],
+   [
+    "ul",
+    [
+     "<b>Thép, tôn</b>: phụ thuộc giá thép, quặng sắt, than cốc và nhu cầu xây dựng. Ví dụ <a href=\"/ma/HPG.html\">HPG</a>, <a href=\"/ma/HSG.html\">HSG</a>.",
+     "<b>Hóa chất, phân bón</b>: phụ thuộc giá phốt pho vàng, urê, khí đầu vào. Ví dụ <a href=\"/ma/DGC.html\">DGC</a>.",
+     "<b>Dầu khí</b>: phụ thuộc giá dầu và khí thế giới. Ví dụ <a href=\"/ma/GAS.html\">GAS</a>; xem thêm bài <a href=\"/f0/co-phieu-dau-khi-khi-gia-dau-tang.html\">cổ phiếu dầu khí khi giá dầu tăng</a>.",
+     "<b>Chứng khoán</b>: lợi nhuận đi theo thanh khoản và độ sôi động của thị trường. Ví dụ <a href=\"/ma/SSI.html\">SSI</a>.",
+     "<b>Bất động sản, vật liệu xây dựng, vận tải biển, cao su, thủy sản</b>: phụ thuộc chu kỳ tín dụng, giá hàng hóa hoặc cước quốc tế."
+    ]
+   ],
+   [
+    "p",
+    "Việc nêu mã ở đây chỉ để minh họa nhóm ngành, không phải gợi ý giao dịch. Mức độ “chu kỳ” của từng doanh nghiệp còn tùy chi phí, nợ vay và vị thế trong ngành."
+   ],
+   [
+    "h2",
+    "3. Cách nhận diện một cổ phiếu chu kỳ"
+   ],
+   [
+    "ol",
+    [
+     "Lấy lợi nhuận sau thuế 8–10 năm gần nhất (trên báo cáo thường niên hoặc trang dữ liệu).",
+     "Xem lợi nhuận có lúc tăng gấp nhiều lần rồi giảm mạnh, thậm chí lỗ, hay không.",
+     "Xem <a href=\"/f0/bao-cao-ket-qua-kinh-doanh-la-gi.html\">biên lợi nhuận gộp</a> có dao động rộng (ví dụ từ 8% lên 30% rồi về 10%) không.",
+     "Đối chiếu với giá sản phẩm chính: nếu lợi nhuận đi gần như cùng chiều giá hàng hóa, đó là doanh nghiệp chu kỳ.",
+     "Kiểm tra tài sản cố định và <a href=\"/f0/he-so-no-de-la-gi.html\">nợ vay</a>: tài sản nặng và nợ cao khiến dao động lợi nhuận càng mạnh."
+    ]
+   ],
+   [
+    "h2",
+    "4. Nghịch lý P/E: thấp chưa chắc rẻ, cao chưa chắc đắt"
+   ],
+   [
+    "p",
+    "Với cổ phiếu thông thường, P/E thấp hay được hiểu là rẻ. Với cổ phiếu chu kỳ, điều này dễ sai, vì EPS ở đỉnh chu kỳ là EPS “đẹp bất thường” và sẽ không kéo dài."
+   ],
+   [
+    "p",
+    "<b>Ví dụ 1 (giả định):</b> Doanh nghiệp X bình thường có EPS khoảng 2.000 đồng. Năm giá sản phẩm tăng vọt, EPS lên 8.000 đồng; giá cổ phiếu 40.000 đồng, P/E = 5 lần, trông rất rẻ. Hai năm sau, giá sản phẩm giảm, EPS về 1.000 đồng. Nếu thị giá vẫn 40.000 đồng, P/E thành 40 lần. Người mua vì “P/E 5” thực chất đã mua ở vùng lợi nhuận đỉnh."
+   ],
+   [
+    "p",
+    "<b>Ví dụ 2 (giả định):</b> Ngược lại, ở đáy chu kỳ, doanh nghiệp Y chỉ có EPS 500 đồng, giá 20.000 đồng, P/E = 40 lần, trông rất đắt. Khi chu kỳ hồi phục, EPS lên 3.000 đồng; tính trên giá cũ, P/E chỉ còn khoảng 6,7 lần. Đây là lý do có câu quen thuộc trong giới đầu tư: với cổ phiếu chu kỳ, P/E cao thường xuất hiện gần đáy lợi nhuận, P/E thấp thường xuất hiện gần đỉnh lợi nhuận."
+   ],
+   [
+    "p",
+    "Cách khắc phục: dùng <b>EPS bình quân cả chu kỳ</b> (trung bình 5–10 năm) để tính P/E, hoặc dùng <a href=\"/f0/pb-la-gi.html\">P/B</a> vì giá trị sổ sách ít dao động hơn lợi nhuận. Với ví dụ X ở trên, nếu EPS bình quân chu kỳ khoảng 2.500 đồng thì giá 40.000 đồng tương ứng P/E chu kỳ 16 lần, không còn rẻ như con số 5."
+   ],
+   [
+    "h2",
+    "5. Những chỉ báo thường đi trước chu kỳ"
+   ],
+   [
+    "ul",
+    [
+     "Giá sản phẩm chính trên thị trường thế giới và trong nước (giá thép, urê, dầu, phốt pho…), thường biến động trước khi báo cáo tài chính phản ánh.",
+     "Tồn kho và công suất toàn ngành: nhiều nhà máy mới cùng hoạt động là dấu hiệu cung sắp dư.",
+     "Lãi suất và tín dụng: ảnh hưởng mạnh tới bất động sản, vật liệu xây dựng, chứng khoán.",
+     "Biên lợi nhuận gộp quý so với quý trước: biên bắt đầu thu hẹp dù doanh thu còn tăng thường là tín hiệu đỉnh lợi nhuận."
+    ]
+   ],
+   [
+    "h2",
+    "6. So sánh cổ phiếu chu kỳ và cổ phiếu phòng thủ"
+   ],
+   [
+    "ul",
+    [
+     "<b>Lợi nhuận</b>: chu kỳ dao động mạnh; <a href=\"/f0/co-phieu-phong-thu-la-gi.html\">phòng thủ</a> (điện nước, thực phẩm thiết yếu, dược) ổn định hơn.",
+     "<b>Biến động giá</b>: chu kỳ thường mạnh hơn thị trường cả lúc tăng lẫn lúc giảm.",
+     "<b>Cách định giá</b>: chu kỳ nên dùng EPS bình quân chu kỳ hoặc P/B; phòng thủ dùng P/E và tỷ suất cổ tức được.",
+     "<b>Phù hợp với</b>: chu kỳ đòi hỏi theo dõi sát giá hàng hóa và vĩ mô; phòng thủ hợp với người ít thời gian theo dõi."
+    ]
+   ],
+   [
+    "h2",
+    "7. Sai lầm thường gặp với cổ phiếu chu kỳ"
+   ],
+   [
+    "ul",
+    [
+     "Ngoại suy lợi nhuận kỷ lục cho nhiều năm tới.",
+     "Dùng P/E một năm để kết luận rẻ hay đắt.",
+     "Tích sản dài hạn một mã chu kỳ như với cổ phiếu tăng trưởng ổn định, dẫn tới có thể giữ qua cả đỉnh lẫn đáy và mất nhiều năm mới hòa vốn. Xem thêm <a href=\"/f0/rui-ro-khi-tich-san.html\">rủi ro khi tích sản</a>.",
+     "Dùng margin với cổ phiếu chu kỳ ở giai đoạn đi xuống, vốn đã biến động mạnh lại thêm đòn bẩy.",
+     "Dồn tỷ trọng lớn vào một ngành chu kỳ; nên <a href=\"/f0/cach-phan-bo-ty-trong-co-phieu.html\">phân bổ tỷ trọng</a> để một ngành đảo chiều không ảnh hưởng toàn bộ danh mục."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Cổ phiếu chu kỳ có lợi nhuận đi theo giá hàng hóa và chu kỳ kinh tế, dao động mạnh qua các năm.",
+     "Nhận diện bằng lịch sử lợi nhuận 8–10 năm và độ dao động của biên gộp.",
+     "Không đánh giá bằng P/E một năm; dùng EPS bình quân chu kỳ hoặc P/B.",
+     "Theo dõi giá sản phẩm, công suất ngành và lãi suất để biết chu kỳ đang ở giai đoạn nào."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Cổ phiếu chu kỳ là gì?",
+    "Là cổ phiếu của doanh nghiệp có lợi nhuận tăng giảm mạnh theo chu kỳ kinh tế hoặc giá sản phẩm như thép, phân bón, dầu khí, chứng khoán, bất động sản."
+   ],
+   [
+    "Vì sao P/E thấp ở cổ phiếu chu kỳ lại có thể là tín hiệu xấu?",
+    "Vì P/E thấp thường xuất hiện khi lợi nhuận đang ở đỉnh chu kỳ. Khi lợi nhuận giảm về mức bình thường, P/E sẽ tăng vọt dù giá không đổi."
+   ],
+   [
+    "Có nên tích sản cổ phiếu chu kỳ không?",
+    "Cổ phiếu chu kỳ ít phù hợp với cách tích sản đều đặn nhiều năm vì lợi nhuận và giá có thể giảm sâu trong giai đoạn đi xuống. Nếu nắm giữ, cần theo dõi chu kỳ ngành và giới hạn tỷ trọng."
+   ],
+   [
+    "Cổ phiếu ngân hàng có phải cổ phiếu chu kỳ không?",
+    "Ngân hàng chịu ảnh hưởng của chu kỳ tín dụng và nợ xấu nên có tính chu kỳ ở mức vừa phải, thấp hơn thép hay chứng khoán nhưng cao hơn nhóm thiết yếu."
+   ],
+   [
+    "Làm sao biết chu kỳ ngành đang ở đâu?",
+    "Theo dõi giá sản phẩm chính, tồn kho, công suất mới của toàn ngành, lãi suất và xu hướng biên lợi nhuận gộp qua các quý."
+   ]
+  ],
+  "rel": [
+   "co-phieu-phong-thu-la-gi",
+   "pe-la-gi",
+   "lai-suat-tang-anh-huong-chung-khoan"
+  ]
+ },
+ {
+  "slug": "duong-xu-huong-trendline-la-gi",
+  "kw": "đường xu hướng trendline là gì",
+  "grp": 4,
+  "title": "Đường xu hướng (trendline) là gì? Cách vẽ đúng và đọc tín hiệu phá vỡ",
+  "desc": "Đường xu hướng (trendline) là đường thẳng nối các đáy hoặc các đỉnh để thể hiện hướng đi của giá. Cách vẽ từng bước, ví dụ bằng số, kênh giá, cách xác nhận phá vỡ và sai lầm thường gặp.",
+  "body": [
+   [
+    "p",
+    "<b>Đường xu hướng</b> (trendline) là đường thẳng nối ít nhất hai đáy (trong xu hướng tăng) hoặc hai đỉnh (trong xu hướng giảm) trên biểu đồ giá. Nó cho anh chị thấy nhanh giá đang đi lên, đi xuống hay đi ngang, và đóng vai trò như một vùng <a href=\"/f0/ho-tro-khang-cu.html\">hỗ trợ hoặc kháng cự</a> nằm nghiêng."
+   ],
+   [
+    "p",
+    "Trendline là công cụ đơn giản nhất của <a href=\"/f0/phan-tich-co-ban-va-ky-thuat.html\">phân tích kỹ thuật</a>: không cần chỉ báo, chỉ cần biểu đồ nến và một cây bút vẽ đường thẳng trên ứng dụng xem biểu đồ."
+   ],
+   [
+    "h2",
+    "1. Ba loại đường xu hướng"
+   ],
+   [
+    "ul",
+    [
+     "<b>Xu hướng tăng</b>: các đáy sau cao hơn đáy trước. Trendline nối các đáy, nằm dưới giá và dốc lên.",
+     "<b>Xu hướng giảm</b>: các đỉnh sau thấp hơn đỉnh trước. Trendline nối các đỉnh, nằm trên giá và dốc xuống.",
+     "<b>Đi ngang (sideway)</b>: đỉnh và đáy gần ngang nhau; khi đó người ta dùng hai đường ngang hỗ trợ và kháng cự thay vì trendline nghiêng."
+    ]
+   ],
+   [
+    "h2",
+    "2. Cách vẽ trendline từng bước"
+   ],
+   [
+    "ol",
+    [
+     "Chọn khung thời gian: người mới nên bắt đầu với biểu đồ ngày (mỗi nến là một phiên). Xem lại bài <a href=\"/f0/cach-xem-bieu-do-chung-khoan.html\">cách xem biểu đồ chứng khoán</a>.",
+     "Xác định hai đáy (hoặc hai đỉnh) rõ ràng, cách nhau ít nhất vài tuần, đáy sau cao hơn đáy trước (hoặc đỉnh sau thấp hơn đỉnh trước).",
+     "Nối hai điểm đó và kéo dài đường thẳng sang phải.",
+     "Chờ điểm chạm thứ ba: nếu giá quay về gần đường và bật lại, trendline được xác nhận và đáng tin hơn.",
+     "Thống nhất cách vẽ: hoặc nối theo râu nến, hoặc theo giá đóng cửa, đừng lẫn lộn. Nhiều người dùng giá đóng cửa vì ít bị nhiễu hơn."
+    ]
+   ],
+   [
+    "p",
+    "Quy tắc thực hành: đường cần chạm càng nhiều điểm càng có ý nghĩa, và không nên cố “bẻ” đường cho vừa mọi cây nến. Nếu phải vẽ lại liên tục, có thể giá không có xu hướng rõ."
+   ],
+   [
+    "h2",
+    "3. Ví dụ bằng số"
+   ],
+   [
+    "p",
+    "<b>Ví dụ 1 (giả định) – trendline tăng:</b> Cổ phiếu A tạo đáy 20.000 đồng vào đầu tháng 3, đáy thứ hai 22.000 đồng vào đầu tháng 4 (cách khoảng 20 phiên). Đường nối hai đáy tăng 2.000 đồng sau 20 phiên, tức khoảng 100 đồng mỗi phiên. Sau thêm 15 phiên, trendline nằm ở khoảng 22.000 + 15 × 100 = 23.500 đồng. Nếu giá điều chỉnh về quanh 23.500 rồi bật lên, đó là lần chạm thứ ba xác nhận xu hướng."
+   ],
+   [
+    "p",
+    "<b>Ví dụ 2 (giả định) – trendline giảm và phá vỡ:</b> Cổ phiếu B có đỉnh 50.000 đồng, đỉnh sau 45.000 đồng sau 25 phiên, tức đường dốc xuống 200 đồng/phiên. Sau 10 phiên nữa, trendline ở khoảng 45.000 − 10 × 200 = 43.000 đồng. Một phiên B đóng cửa ở 44.200 đồng, cao hơn trendline khoảng 2,8%, kèm khối lượng gấp đôi trung bình 20 phiên: đây là dấu hiệu phá vỡ xu hướng giảm đáng chú ý hơn so với một phiên chỉ vượt bằng râu nến rồi đóng cửa dưới đường."
+   ],
+   [
+    "p",
+    "Lưu ý: ví dụ dùng phép tính tuyến tính trên biểu đồ giá thường để dễ hiểu; với giai đoạn giá biến động lớn, nhiều phần mềm cho phép chuyển sang thang logarit và đường sẽ lệch đi chút ít."
+   ],
+   [
+    "h2",
+    "4. Kênh giá: thêm một đường song song"
+   ],
+   [
+    "p",
+    "Khi đã có trendline tăng nối các đáy, anh chị có thể vẽ một đường song song đi qua đỉnh nổi bật nhất. Hai đường tạo thành <b>kênh giá tăng</b>; giá thường dao động giữa hai biên. Tương tự với kênh giá giảm. Kênh giá giúp hình dung vùng giá dễ gặp áp lực chốt lời (gần biên trên) và vùng thường có lực đỡ (gần biên dưới), nhưng không phải lúc nào giá cũng chạm đủ hai biên."
+   ],
+   [
+    "h2",
+    "5. Xác nhận phá vỡ trendline thế nào?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Giá đóng cửa</b> vượt qua đường, không chỉ râu nến. Nhiều người yêu cầu vượt 2–3% hoặc đóng cửa ngoài đường 2 phiên liên tiếp.",
+     "<b><a href=\"/f0/khoi-luong-giao-dich-va-dong-tien.html\">Khối lượng</a> tăng</b> so với trung bình 20 phiên cho thấy có dòng tiền thật tham gia.",
+     "<b>Kiểm định lại (retest)</b>: sau khi phá vỡ, giá thường quay lại gần đường cũ; trendline tăng bị phá có thể trở thành kháng cự và ngược lại.",
+     "<b>Đối chiếu với chỉ báo khác</b>: <a href=\"/f0/duong-ma-la-gi.html\">đường MA</a> hoặc <a href=\"/f0/rsi-la-gi.html\">RSI</a> cùng xác nhận thì tín hiệu đáng tin hơn."
+    ]
+   ],
+   [
+    "p",
+    "Phá vỡ trendline chỉ cho biết xu hướng cũ có thể đã yếu đi, không có nghĩa xu hướng ngược lại bắt đầu ngay. Giá thường đi ngang một thời gian trước khi hình thành xu hướng mới."
+   ],
+   [
+    "h2",
+    "6. Trendline khác gì đường MA và hỗ trợ ngang?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Trendline và đường MA</b>: MA là giá trung bình tự tính, cong theo giá và luôn có sẵn; trendline do người vẽ chọn điểm, là đường thẳng, nên mang tính chủ quan hơn nhưng phản ánh rõ cấu trúc đỉnh đáy.",
+     "<b>Trendline và hỗ trợ/kháng cự ngang</b>: hỗ trợ ngang là một mức giá cố định; trendline là mức giá thay đổi theo thời gian, mỗi phiên lại ở một vị trí khác.",
+     "<b>Trendline và mô hình giá</b>: các mô hình như <a href=\"/f0/mo-hinh-vai-dau-vai-la-gi.html\">vai đầu vai</a> hay <a href=\"/f0/mo-hinh-hai-day-la-gi.html\">hai đáy</a> thực chất cũng dùng đường thẳng (đường viền cổ, đường nối đỉnh) để xác định điểm phá vỡ."
+    ]
+   ],
+   [
+    "h2",
+    "7. Sai lầm thường gặp khi dùng trendline"
+   ],
+   [
+    "ul",
+    [
+     "Vẽ trendline từ những đáy quá gần nhau (2–3 phiên), tạo ra đường quá dốc và bị phá rất nhanh.",
+     "Chỉ có hai điểm chạm đã coi là xu hướng chắc chắn.",
+     "Vẽ trên khung 15 phút hay 1 giờ rồi dùng cho quyết định nắm giữ nhiều tháng.",
+     "Thấy râu nến xuyên qua đường là kết luận phá vỡ, không chờ giá đóng cửa và khối lượng.",
+     "Dùng trendline một mình mà bỏ qua kết quả kinh doanh, tin tức và bối cảnh chung của VN-Index.",
+     "Không xác định trước mức <a href=\"/f0/cat-lo-la-gi.html\">cắt lỗ</a> khi giá đóng cửa thủng trendline mà mình đang dựa vào."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Trendline nối các đáy tăng dần (xu hướng tăng) hoặc các đỉnh giảm dần (xu hướng giảm).",
+     "Cần ít nhất hai điểm để vẽ, điểm chạm thứ ba để xác nhận.",
+     "Xác nhận phá vỡ bằng giá đóng cửa, khối lượng và quan sát lần kiểm định lại.",
+     "Trendline là công cụ hỗ trợ quyết định, nên kết hợp với MA, khối lượng và quản trị rủi ro."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Đường xu hướng (trendline) là gì?",
+    "Là đường thẳng nối các đáy trong xu hướng tăng hoặc các đỉnh trong xu hướng giảm, thể hiện hướng đi của giá và đóng vai trò hỗ trợ hoặc kháng cự nghiêng."
+   ],
+   [
+    "Cần bao nhiêu điểm để vẽ trendline?",
+    "Tối thiểu hai điểm để vẽ, nhưng nên có điểm chạm thứ ba để xác nhận đường có ý nghĩa."
+   ],
+   [
+    "Vẽ trendline theo râu nến hay giá đóng cửa?",
+    "Cách nào cũng được, quan trọng là thống nhất. Giá đóng cửa ít nhiễu hơn, râu nến cho thấy mức giá cực trị đã từng chạm."
+   ],
+   [
+    "Giá thủng trendline có phải luôn giảm tiếp?",
+    "Không. Phá vỡ chỉ cho biết xu hướng cũ suy yếu; giá có thể đi ngang hoặc quay lại trên đường. Cần chờ đóng cửa, khối lượng và lần kiểm định lại."
+   ],
+   [
+    "Trendline dùng khung thời gian nào?",
+    "Người đầu tư trung và dài hạn nên dùng biểu đồ ngày hoặc tuần; khung càng lớn, trendline càng có ý nghĩa."
+   ]
+  ],
+  "rel": [
+   "ho-tro-khang-cu",
+   "duong-ma-la-gi",
+   "cach-xem-bieu-do-chung-khoan"
+  ]
  }
 ]
