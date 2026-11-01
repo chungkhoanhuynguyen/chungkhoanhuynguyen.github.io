@@ -9528,5 +9528,493 @@
    "cach-chon-co-phieu-ngan-hang-de-tich-san",
    "no-xau-ngan-hang-la-gi"
   ]
+ },
+ {
+  "slug": "bien-loi-nhuan-gop-la-gi",
+  "kw": "biên lợi nhuận gộp là gì",
+  "grp": 3,
+  "title": "Biên lợi nhuận gộp là gì? Công thức, cách đọc và ví dụ dễ hiểu",
+  "desc": "Biên lợi nhuận gộp là gì, công thức tính từ báo cáo kết quả kinh doanh, khác gì biên lợi nhuận ròng, bao nhiêu là tốt và những sai lầm khi đọc chỉ số này.",
+  "body": [
+   [
+    "p",
+    "<b>Biên lợi nhuận gộp</b> (gross margin) là tỷ lệ phần trăm lợi nhuận gộp trên doanh thu thuần. Nói đơn giản: cứ 100 đồng doanh nghiệp bán được, sau khi trừ chi phí trực tiếp để làm ra sản phẩm (giá vốn hàng bán), còn lại bao nhiêu đồng để trả chi phí bán hàng, quản lý, lãi vay, thuế và tạo ra lợi nhuận cho cổ đông. Đây là chỉ số đầu tiên anh chị nên nhìn khi muốn biết một doanh nghiệp có lợi thế về giá bán hay chi phí sản xuất hay không."
+   ],
+   [
+    "p",
+    "Số liệu để tính nằm ngay trên <a href=\"/f0/bao-cao-ket-qua-kinh-doanh-la-gi.html\">báo cáo kết quả kinh doanh</a>, nên chỉ cần vài phép chia là anh chị tự tính được mà không cần phần mềm."
+   ],
+   [
+    "h2",
+    "1. Công thức tính biên lợi nhuận gộp"
+   ],
+   [
+    "p",
+    "<b>Lợi nhuận gộp = Doanh thu thuần − Giá vốn hàng bán</b><br><b>Biên lợi nhuận gộp = Lợi nhuận gộp / Doanh thu thuần × 100%</b>"
+   ],
+   [
+    "p",
+    "Trong đó doanh thu thuần là doanh thu sau khi đã trừ chiết khấu, giảm giá, hàng bán bị trả lại. Giá vốn hàng bán gồm nguyên vật liệu, nhân công trực tiếp, khấu hao máy móc nhà xưởng và chi phí sản xuất chung gắn với hàng đã bán ra. Chi phí bán hàng (quảng cáo, hoa hồng đại lý, vận chuyển) và chi phí quản lý doanh nghiệp <b>không</b> nằm trong giá vốn."
+   ],
+   [
+    "h2",
+    "2. Cách tự tính từng bước trên báo cáo tài chính"
+   ],
+   [
+    "ol",
+    [
+     "Mở báo cáo tài chính quý hoặc năm của doanh nghiệp, tìm phần Báo cáo kết quả hoạt động kinh doanh.",
+     "Lấy dòng <b>Doanh thu thuần về bán hàng và cung cấp dịch vụ</b> (thường là mã số 10).",
+     "Lấy dòng <b>Lợi nhuận gộp về bán hàng và cung cấp dịch vụ</b> (thường là mã số 20). Nếu muốn kiểm tra, lấy doanh thu thuần trừ giá vốn (mã số 11).",
+     "Chia lợi nhuận gộp cho doanh thu thuần, nhân 100%.",
+     "Lặp lại cho ít nhất 8 quý hoặc 5 năm gần nhất để thấy xu hướng, và tính thêm cho 2–3 doanh nghiệp cùng ngành để so sánh."
+    ]
+   ],
+   [
+    "p",
+    "Hướng dẫn tổng quát về ba bảng báo cáo có trong bài <a href=\"/f0/cach-doc-bao-cao-tai-chinh.html\">cách đọc báo cáo tài chính cho người mới</a>."
+   ],
+   [
+    "h2",
+    "3. Ví dụ bằng số cụ thể"
+   ],
+   [
+    "p",
+    "<b>Ví dụ 1 – tính cơ bản.</b> Công ty A (giả định) có doanh thu thuần năm là 1.000 tỷ đồng, giá vốn hàng bán 750 tỷ đồng. Lợi nhuận gộp = 1.000 − 750 = 250 tỷ đồng. Biên lợi nhuận gộp = 250 / 1.000 = <b>25%</b>. Nghĩa là mỗi 100 đồng bán hàng, công ty giữ lại 25 đồng trước khi trả các chi phí khác."
+   ],
+   [
+    "p",
+    "<b>Ví dụ 2 – doanh thu tăng nhưng lãi gộp giảm.</b> Năm sau, công ty A tăng doanh thu 10% lên 1.100 tỷ, nhưng giá nguyên liệu tăng mạnh khiến giá vốn lên 836 tỷ. Lợi nhuận gộp = 264 tỷ, biên gộp chỉ còn 24%. Nếu giá vốn lên 880 tỷ thì lợi nhuận gộp còn 220 tỷ, biên gộp 20%: doanh thu tăng 10% nhưng lãi gộp lại <b>giảm 12%</b>. Đây là lý do không nên chỉ nhìn tăng trưởng doanh thu trên tin tức."
+   ],
+   [
+    "p",
+    "<b>Ví dụ 3 – so sánh hai mô hình kinh doanh.</b> Công ty B bán lẻ điện máy có doanh thu 5.000 tỷ, biên gộp 18%, lãi gộp 900 tỷ. Công ty C làm phần mềm có doanh thu 1.500 tỷ, biên gộp 60%, lãi gộp cũng 900 tỷ. Cùng lãi gộp, nhưng B phải bán gấp hơn 3 lần lượng hàng, cần kho bãi và vốn lưu động lớn hơn; chỉ cần giá vốn tăng 3 điểm % là B mất khoảng 1/6 lãi gộp, còn C chịu ảnh hưởng ít hơn nhiều."
+   ],
+   [
+    "h2",
+    "4. Biên gộp, biên hoạt động và biên ròng khác nhau thế nào?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Biên lợi nhuận gộp</b> = Lợi nhuận gộp / Doanh thu thuần: đo hiệu quả sản xuất và sức mạnh định giá.",
+     "<b>Biên lợi nhuận hoạt động</b> = (Lợi nhuận gộp − Chi phí bán hàng − Chi phí quản lý) / Doanh thu thuần: đo thêm khả năng kiểm soát bộ máy.",
+     "<b>Biên lợi nhuận ròng</b> = Lợi nhuận sau thuế / Doanh thu thuần: kết quả cuối cùng sau lãi vay, thu nhập tài chính, khoản bất thường và thuế."
+    ]
+   ],
+   [
+    "p",
+    "Một doanh nghiệp có thể biên gộp cao nhưng biên ròng thấp vì chi phí bán hàng lớn (hàng tiêu dùng quảng cáo nhiều) hoặc vay nợ nhiều (xem <a href=\"/f0/he-so-no-de-la-gi.html\">hệ số nợ D/E</a>). Ngược lại, biên ròng đột ngột cao có thể đến từ bán tài sản một lần, trong khi biên gộp vẫn đi xuống. Vì vậy hãy đọc cả ba biên theo thứ tự từ trên xuống."
+   ],
+   [
+    "p",
+    "<b>Nhầm lẫn hay gặp: biên gộp và tỷ lệ lãi trên giá vốn.</b> Người kinh doanh nhỏ thường nói \"lãi 1/3 giá vốn\": mua 75 đồng bán 100 đồng là lãi 25/75 = 33,3% trên giá vốn. Nhưng biên lợi nhuận gộp tính trên doanh thu, nên chỉ là 25%. Khi so với số liệu trong báo cáo hay bài phân tích, anh chị cần dùng đúng mẫu số là doanh thu."
+   ],
+   [
+    "h2",
+    "5. Biên lợi nhuận gộp bao nhiêu là tốt?"
+   ],
+   [
+    "p",
+    "Không có con số chung cho mọi ngành. Ngành bán lẻ, phân phối, thép, xây lắp thường có biên gộp thấp vì cạnh tranh về giá và nguyên liệu chiếm phần lớn chi phí. Ngành phần mềm, dược phẩm có thương hiệu, hạ tầng thu phí thường có biên gộp cao hơn nhiều. Đem biên 15% của một doanh nghiệp phân phối so với 50% của một doanh nghiệp công nghệ rồi kết luận bên nào tốt hơn là so sánh sai."
+   ],
+   [
+    "p",
+    "Cách đánh giá hợp lý gồm ba câu hỏi:"
+   ],
+   [
+    "ol",
+    [
+     "So với các doanh nghiệp <b>cùng ngành, cùng quy mô</b>, biên gộp cao hơn hay thấp hơn? Cao hơn ổn định nhiều năm thường gợi ý lợi thế cạnh tranh: thương hiệu, công nghệ, quy mô hoặc nguồn nguyên liệu rẻ.",
+     "Xu hướng nhiều năm đang <b>ổn định, tăng hay giảm</b>? Biên gộp giảm dần qua nhiều năm có thể báo hiệu cạnh tranh gay gắt hơn.",
+     "Biên gộp <b>dao động mạnh</b> đến đâu? Doanh nghiệp có biên gộp lên xuống theo giá hàng hóa thường thuộc nhóm <a href=\"/f0/co-phieu-chu-ky-la-gi.html\">cổ phiếu chu kỳ</a>, lợi nhuận khó dự báo hơn."
+    ]
+   ],
+   [
+    "h2",
+    "6. Vì sao biên lợi nhuận gộp thay đổi?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Giá nguyên liệu đầu vào:</b> ví dụ giá hạt nhựa tác động trực tiếp tới doanh nghiệp ngành nhựa (xem <a href=\"/f0/gia-hat-nhua-hdpe-pvc-tang-co-phieu-nganh-nhua.html\">giá hạt nhựa tăng ảnh hưởng ngành nhựa</a>).",
+     "<b>Khả năng tăng giá bán:</b> doanh nghiệp có thương hiệu mạnh chuyển được chi phí sang khách hàng, giữ được biên gộp; doanh nghiệp yếu phải chịu.",
+     "<b>Cơ cấu sản phẩm:</b> bán nhiều dòng cao cấp hơn làm biên gộp chung tăng dù giá từng sản phẩm không đổi.",
+     "<b>Công suất nhà máy:</b> khấu hao và chi phí cố định nằm trong giá vốn; chạy 90% công suất thì chi phí cố định trên mỗi sản phẩm thấp hơn chạy 50%.",
+     "<b>Tỷ giá:</b> doanh nghiệp nhập khẩu nguyên liệu bằng USD chịu thiệt khi tỷ giá tăng, doanh nghiệp xuất khẩu có thể được lợi.",
+     "<b>Yếu tố kế toán một lần:</b> trích lập hoặc hoàn nhập dự phòng giảm giá hàng tồn kho có thể làm biên gộp một quý tăng giảm bất thường. Đọc thuyết minh báo cáo để biết."
+    ]
+   ],
+   [
+    "h2",
+    "7. Sai lầm thường gặp khi dùng biên lợi nhuận gộp"
+   ],
+   [
+    "ul",
+    [
+     "<b>Chỉ nhìn một quý:</b> nhiều ngành có tính mùa vụ; nên so cùng quý năm trước và xem chuỗi 4 quý gần nhất.",
+     "<b>Áp dụng cho ngân hàng:</b> ngân hàng không có giá vốn hàng bán theo cách trên; với ngân hàng anh chị dùng <a href=\"/f0/nim-la-gi.html\">biên lãi ròng NIM</a>.",
+     "<b>Thấy biên gộp cao là mua:</b> biên gộp cao chưa nói gì về định giá; cổ phiếu tốt mua giá quá đắt vẫn có thể lỗ lâu. Cần xem thêm <a href=\"/f0/pe-la-gi.html\">P/E</a> và <a href=\"/f0/roe-eps-la-gi.html\">ROE, EPS</a>.",
+     "<b>Bỏ qua dòng tiền:</b> biên gộp đẹp nhưng khoản phải thu và tồn kho phình to thì lợi nhuận chưa thành tiền thật; đối chiếu với <a href=\"/f0/bao-cao-luu-chuyen-tien-te-la-gi.html\">báo cáo lưu chuyển tiền tệ</a>.",
+     "<b>Không đọc thuyết minh:</b> đôi khi doanh nghiệp thay đổi cách phân loại chi phí giữa giá vốn và chi phí bán hàng, làm biên gộp giữa các năm không còn so sánh được."
+    ]
+   ],
+   [
+    "h2",
+    "8. Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Biên lợi nhuận gộp = (Doanh thu thuần − Giá vốn) / Doanh thu thuần.",
+     "Cho biết doanh nghiệp giữ lại bao nhiêu từ mỗi đồng bán hàng trước chi phí vận hành, lãi vay và thuế.",
+     "Chỉ so sánh trong cùng ngành và theo xu hướng nhiều năm.",
+     "Đọc cùng biên hoạt động, biên ròng, dòng tiền và định giá, không dùng riêng lẻ.",
+     "Ngân hàng dùng NIM thay cho biên gộp."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Biên lợi nhuận gộp âm nghĩa là gì?",
+    "Doanh nghiệp đang bán hàng với giá thấp hơn chi phí trực tiếp để làm ra sản phẩm. Nếu kéo dài, doanh nghiệp càng bán nhiều càng lỗ; thường chỉ xảy ra khi giá đầu ra lao dốc, nhà máy chạy quá ít công suất hoặc có trích lập tồn kho lớn."
+   ],
+   [
+    "Lấy số liệu biên lợi nhuận gộp ở đâu?",
+    "Tự tính từ báo cáo kết quả kinh doanh trong báo cáo tài chính doanh nghiệp công bố trên website của doanh nghiệp hoặc của sở giao dịch. Nhiều trang dữ liệu tài chính cũng tính sẵn, nhưng nên đối chiếu với báo cáo gốc."
+   ],
+   [
+    "Biên gộp tăng có chắc lợi nhuận tăng không?",
+    "Không chắc. Lợi nhuận còn phụ thuộc doanh thu, chi phí bán hàng, chi phí quản lý, chi phí lãi vay và các khoản bất thường. Biên gộp tăng nhưng doanh thu giảm mạnh thì lợi nhuận vẫn có thể đi xuống."
+   ],
+   [
+    "Nên so sánh biên gộp theo quý hay theo năm?",
+    "Theo năm để thấy xu hướng dài, theo quý để phát hiện thay đổi sớm. Khi so quý, ưu tiên so với cùng quý năm trước để loại bớt yếu tố mùa vụ."
+   ],
+   [
+    "Biên lợi nhuận gộp khác gì ROE?",
+    "Biên gộp đo lãi trên doanh thu ở bước đầu, còn ROE đo lợi nhuận sau thuế trên vốn chủ sở hữu, phản ánh hiệu quả sử dụng tiền của cổ đông. Hai chỉ số bổ sung cho nhau."
+   ]
+  ],
+  "rel": [
+   "bao-cao-ket-qua-kinh-doanh-la-gi",
+   "cach-doc-bao-cao-tai-chinh",
+   "roe-eps-la-gi"
+  ]
+ },
+ {
+  "slug": "bat-day-co-phieu-la-gi",
+  "kw": "bắt đáy cổ phiếu",
+  "grp": 5,
+  "title": "Bắt đáy cổ phiếu là gì? Rủi ro, dấu hiệu và cách làm an toàn hơn",
+  "desc": "Bắt đáy cổ phiếu là gì, vì sao bắt đáy dễ thành bắt dao rơi, khác gì mua trung bình giá, dấu hiệu đáy đang hình thành và cách chia vốn, đặt điểm cắt lỗ có ví dụ bằng số.",
+  "body": [
+   [
+    "p",
+    "<b>Bắt đáy cổ phiếu</b> là mua vào khi giá đã giảm sâu, với kỳ vọng mua được gần mức thấp nhất trước khi giá đảo chiều đi lên. Ai cũng muốn mua ở đáy, nhưng đáy chỉ được xác nhận <b>sau khi</b> giá đã tăng trở lại; lúc đang giảm, không ai biết chắc mức nào là đáy. Vì vậy với người mới, bắt đáy không phải là đoán đúng một con số, mà là cách mua khi giá thấp nhưng vẫn kiểm soát được khoản lỗ nếu đoán sai."
+   ],
+   [
+    "h2",
+    "1. Vì sao bắt đáy hấp dẫn nhưng nguy hiểm?"
+   ],
+   [
+    "p",
+    "Hấp dẫn vì nếu đúng, mức lãi rất lớn: cổ phiếu từ 20.000 đồng hồi về 30.000 đồng là lãi 50%. Nguy hiểm vì toán học của thua lỗ không cân xứng:"
+   ],
+   [
+    "ul",
+    [
+     "Giảm 20% cần tăng 25% để về vốn.",
+     "Giảm 50% cần tăng 100% để về vốn.",
+     "Giảm 70% cần tăng hơn 233% để về vốn."
+    ]
+   ],
+   [
+    "p",
+    "<b>Ví dụ \"bắt dao rơi\".</b> Cổ phiếu X giảm từ 50.000 xuống 35.000 đồng (−30%). Anh chị nghĩ \"đã giảm 30% là rẻ\" nên mua. Sau đó giá tiếp tục xuống 20.000 đồng. Khoản đầu tư lỗ (35.000 − 20.000) / 35.000 ≈ <b>43%</b>, và cần tăng 75% mới về vốn. Mức giảm so với đỉnh cũ không phải là lý do để giá dừng giảm."
+   ],
+   [
+    "h2",
+    "2. Bắt đáy khác gì mua trung bình giá?"
+   ],
+   [
+    "p",
+    "Ba khái niệm này hay bị nhầm với nhau:"
+   ],
+   [
+    "ul",
+    [
+     "<b>Bắt đáy:</b> chủ động mua ở vùng giá thấp sau một nhịp giảm mạnh, thường có kế hoạch và mức cắt lỗ.",
+     "<b>Mua trung bình giá xuống (nhồi lệnh):</b> đang lỗ thì mua thêm cho giá vốn thấp đi, thường không có kế hoạch, dễ biến khoản lỗ nhỏ thành lớn.",
+     "<b><a href=\"/f0/mua-trung-binh-gia-dca.html\">Mua định kỳ DCA</a>:</b> mua số tiền cố định theo lịch (ví dụ mỗi tháng) bất kể giá, phù hợp tích sản dài hạn ở cổ phiếu hoặc quỹ có nền tảng tốt."
+    ]
+   ],
+   [
+    "p",
+    "<b>Ví dụ nhồi lệnh.</b> Anh chị mua 1.000 cổ phiếu giá 40.000 đồng (40 triệu). Giá về 30.000, mua thêm 1.000 cổ phiếu (30 triệu); giá vốn trung bình 35.000 đồng. Giá về 25.000, khoản lỗ là (35.000 − 25.000) × 2.000 = 20 triệu, gấp đôi so với nếu chỉ giữ 1.000 cổ phiếu ban đầu (15 triệu). Giá vốn thấp đi nhưng số tiền lỗ lại tăng."
+   ],
+   [
+    "h2",
+    "3. Dấu hiệu đáy có thể đang hình thành"
+   ],
+   [
+    "p",
+    "Không dấu hiệu nào chắc chắn, nhưng khi nhiều dấu hiệu xuất hiện cùng lúc, xác suất cao hơn so với mua chỉ vì \"giá đã giảm nhiều\":"
+   ],
+   [
+    "ol",
+    [
+     "<b>Giá ngừng tạo đáy thấp hơn:</b> lần giảm sau không thủng đáy lần trước, có thể hình thành <a href=\"/f0/mo-hinh-hai-day-la-gi.html\">mô hình hai đáy</a>.",
+     "<b>Khối lượng thay đổi:</b> những phiên giảm cuối khối lượng lớn đột biến rồi cạn dần, sau đó phiên tăng có khối lượng tốt hơn (xem <a href=\"/f0/khoi-luong-giao-dich-va-dong-tien.html\">khối lượng giao dịch và dòng tiền</a>).",
+     "<b>Giá vượt lại đường trung bình:</b> ví dụ đóng cửa trên <a href=\"/f0/duong-ma-la-gi.html\">đường MA20</a> sau thời gian dài nằm dưới.",
+     "<b>Phản ứng với tin xấu yếu dần:</b> tin xấu tiếp tục ra nhưng giá không giảm sâu thêm.",
+     "<b>Nền tảng doanh nghiệp không hỏng:</b> giá giảm do thị trường chung hoặc tâm lý, còn lợi nhuận, nợ vay và dòng tiền vẫn ổn."
+    ]
+   ],
+   [
+    "p",
+    "Điểm 5 quan trọng nhất. Cổ phiếu giảm vì doanh nghiệp thật sự xấu đi (lỗ kéo dài, nợ quá hạn, mất khách hàng lớn) có thể không có đáy rõ ràng trong nhiều năm."
+   ],
+   [
+    "h2",
+    "4. Cách bắt đáy an toàn hơn: làm từng bước"
+   ],
+   [
+    "ol",
+    [
+     "<b>Chọn đối tượng:</b> chỉ cân nhắc cổ phiếu có nền tảng tốt, thanh khoản đủ lớn; tránh cổ phiếu đang có vấn đề về pháp lý hoặc tài chính.",
+     "<b>Giới hạn tỷ trọng:</b> quyết định trước số tiền tối đa cho mã này, ví dụ không quá 20–30% tài khoản.",
+     "<b>Chia lệnh:</b> chia số tiền đó làm 2–3 phần, mua phần đầu ở vùng hỗ trợ, phần sau chỉ mua khi giá có dấu hiệu xác nhận đi lên.",
+     "<b>Đặt điểm <a href=\"/f0/cat-lo-la-gi.html\">cắt lỗ</a> trước khi mua:</b> thường dưới vùng đáy gần nhất; nếu thủng nghĩa là nhận định sai.",
+     "<b>Tính số tiền lỗ tối đa:</b> nếu thua, tổng tài khoản chỉ nên mất khoảng 1–2%.",
+     "<b>Không dùng margin:</b> bắt đáy bằng tiền vay rất dễ bị <a href=\"/f0/call-margin-la-gi.html\">call margin</a> đúng lúc giá thủng đáy."
+    ]
+   ],
+   [
+    "p",
+    "<b>Ví dụ có số.</b> Tài khoản 100 triệu đồng. Anh chị dành tối đa 30 triệu cho cổ phiếu Y (đang giảm từ 45.000 về quanh 30.000 đồng, vùng hỗ trợ cũ). Lần 1 mua 300 cổ phiếu giá 30.000 (9 triệu). Giá chỉnh về 27.000 nhưng không thủng đáy cũ, mua lần 2 thêm 300 cổ phiếu (8,1 triệu). Tổng 600 cổ phiếu, vốn 17,1 triệu, giá vốn trung bình 28.500 đồng. Điểm cắt lỗ đặt tại 25.500 (dưới đáy cũ). Nếu thủng, khoản lỗ khoảng (28.500 − 25.500) × 600 = 1,8 triệu, tức <b>1,8% tài khoản</b>. Phần tiền thứ 3 chỉ dùng khi giá vượt lên trên 32.000 với khối lượng tốt. Đây là ví dụ minh họa cách quản trị rủi ro, không phải khuyến nghị cho mã cụ thể nào."
+   ],
+   [
+    "h2",
+    "5. Bắt đáy thị trường khác bắt đáy cổ phiếu riêng lẻ"
+   ],
+   [
+    "p",
+    "Khi chỉ số VN-Index giảm mạnh do yếu tố chung (lãi suất, tỷ giá, tâm lý), phần lớn cổ phiếu giảm theo, kể cả doanh nghiệp tốt. Khi đó cơ hội thường nằm ở cổ phiếu cơ bản tốt bị bán theo đám đông. Ngược lại, một cổ phiếu giảm mạnh trong lúc thị trường đi ngang hoặc tăng thường có lý do riêng, cần tìm hiểu kỹ trước khi nghĩ đến chuyện bắt đáy. Với người mới, chia vốn mua dần một <a href=\"/f0/etf-la-gi.html\">quỹ ETF</a> khi thị trường chung giảm sâu thường đơn giản và ít rủi ro chọn sai mã hơn."
+   ],
+   [
+    "h2",
+    "6. Sai lầm thường gặp khi bắt đáy"
+   ],
+   [
+    "ul",
+    [
+     "<b>So với đỉnh cũ để kết luận rẻ:</b> \"đã giảm 60% so với đỉnh\" không nói gì về giá trị hiện tại của doanh nghiệp.",
+     "<b>Dùng toàn bộ tiền một lần:</b> không còn tiền nếu giá giảm tiếp, cũng không còn tiền nếu cơ hội tốt hơn xuất hiện.",
+     "<b>Không cắt lỗ vì nghĩ \"đã ở đáy rồi\":</b> khi giá thủng đáy, giữ nguyên là để khoản lỗ tự quyết định thay anh chị.",
+     "<b>Bắt đáy theo tin đồn nhóm chat:</b> đây là dạng <a href=\"/f0/tam-ly-fomo-va-hoang-loan.html\">FOMO</a> ngược, mua vì sợ lỡ đáy.",
+     "<b>Lướt bắt đáy liên tục:</b> mua bán quá nhiều lần làm phí và sai số cộng dồn, dễ thành <a href=\"/f0/overtrading-la-gi.html\">overtrading</a>."
+    ]
+   ],
+   [
+    "h2",
+    "7. Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Đáy chỉ biết chắc sau khi giá đã tăng; mục tiêu là mua ở vùng thấp với rủi ro được giới hạn.",
+     "Giá giảm nhiều không đồng nghĩa với rẻ; nền tảng doanh nghiệp quyết định.",
+     "Chia lệnh, giới hạn tỷ trọng, đặt cắt lỗ trước khi mua, không dùng margin.",
+     "Phân biệt bắt đáy có kế hoạch với nhồi lệnh khi đang lỗ.",
+     "Người mới có thể ưu tiên mua định kỳ hoặc ETF thay vì cố đoán đáy từng mã."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Có cách nào biết chính xác đáy cổ phiếu không?",
+    "Không. Đáy chỉ được nhận ra khi nhìn lại. Các công cụ kỹ thuật và cơ bản chỉ giúp tăng xác suất, vì vậy luôn cần mức cắt lỗ và giới hạn tỷ trọng."
+   ],
+   [
+    "Bắt đáy có nên dùng margin không?",
+    "Không nên, đặc biệt với người mới. Giá có thể giảm tiếp sau khi mua, tỷ lệ ký quỹ tụt nhanh và tài khoản bị bán giải chấp ở vùng giá thấp nhất."
+   ],
+   [
+    "Mua thêm khi cổ phiếu đang lỗ có phải là bắt đáy không?",
+    "Chỉ khi đó là kế hoạch chia lệnh đã định trước, có điểm cắt lỗ rõ ràng. Mua thêm chỉ để kéo giá vốn xuống mà không có kế hoạch là nhồi lệnh, rủi ro cao."
+   ],
+   [
+    "Bắt đáy theo RSI quá bán có hiệu quả không?",
+    "RSI dưới 30 cho biết giá giảm nhanh, không có nghĩa là sắp tăng. Trong xu hướng giảm mạnh, RSI có thể ở vùng quá bán rất lâu, nên chỉ dùng như một tín hiệu phụ."
+   ],
+   [
+    "Người mới nên bắt đáy hay mua khi xu hướng đã rõ?",
+    "Mua khi xu hướng tăng đã được xác nhận thường mất một phần lợi nhuận đầu sóng nhưng ít rủi ro hơn. Người mới nên ưu tiên cách này hoặc mua định kỳ."
+   ]
+  ],
+  "rel": [
+   "cat-lo-la-gi",
+   "mua-trung-binh-gia-dca",
+   "mo-hinh-hai-day-la-gi"
+  ]
+ },
+ {
+  "slug": "fibonacci-thoai-lui-la-gi",
+  "kw": "Fibonacci thoái lui là gì",
+  "grp": 4,
+  "title": "Fibonacci thoái lui là gì? Cách vẽ, cách tính và ví dụ cho người mới",
+  "desc": "Fibonacci thoái lui là gì, các mức 23,6% 38,2% 50% 61,8%, công thức tự tính, cách vẽ trên biểu đồ, kết hợp với hỗ trợ kháng cự và sai lầm thường gặp, có ví dụ bằng số.",
+  "body": [
+   [
+    "p",
+    "<b>Fibonacci thoái lui</b> (Fibonacci retracement) là công cụ phân tích kỹ thuật dùng các tỷ lệ 23,6%, 38,2%, 50%, 61,8% và 78,6% của một con sóng giá để ước tính vùng giá có thể điều chỉnh về trước khi tiếp tục xu hướng. Khi cổ phiếu tăng mạnh rồi giảm lại, Fibonacci giúp anh chị trả lời câu hỏi: giá có thể lùi về đâu thì còn được coi là điều chỉnh bình thường?"
+   ],
+   [
+    "p",
+    "Các tỷ lệ này bắt nguồn từ dãy số Fibonacci (1, 1, 2, 3, 5, 8, 13, 21, 34…), trong đó tỷ số giữa hai số liền nhau tiến dần tới 0,618. Mức 50% không phải tỷ lệ Fibonacci nhưng được dùng phổ biến vì giá thường hồi khoảng một nửa con sóng. Bản chất công cụ này hoạt động một phần nhờ rất nhiều người cùng nhìn vào các mức đó."
+   ],
+   [
+    "h2",
+    "1. Công thức tính các mức Fibonacci thoái lui"
+   ],
+   [
+    "p",
+    "<b>Trong xu hướng tăng</b> (giá đi từ đáy A lên đỉnh B rồi điều chỉnh):<br>Mức thoái lui = Đỉnh B − (Đỉnh B − Đáy A) × tỷ lệ"
+   ],
+   [
+    "p",
+    "<b>Trong xu hướng giảm</b> (giá đi từ đỉnh A xuống đáy B rồi hồi lên):<br>Mức hồi = Đáy B + (Đỉnh A − Đáy B) × tỷ lệ"
+   ],
+   [
+    "p",
+    "Ý nghĩa thường dùng: điều chỉnh về 23,6–38,2% là xu hướng còn mạnh; về 50–61,8% là điều chỉnh sâu nhưng vẫn có thể là bình thường; thủng 78,6% thì khả năng cao con sóng trước đã kết thúc."
+   ],
+   [
+    "h2",
+    "2. Ví dụ tính bằng số cụ thể"
+   ],
+   [
+    "p",
+    "<b>Ví dụ 1 – xu hướng tăng.</b> Cổ phiếu Z (giả định) tăng từ đáy 20.000 đồng lên đỉnh 30.000 đồng. Biên độ con sóng = 10.000 đồng. Các mức thoái lui:"
+   ],
+   [
+    "ul",
+    [
+     "23,6%: 30.000 − 2.360 = <b>27.640</b> đồng",
+     "38,2%: 30.000 − 3.820 = <b>26.180</b> đồng",
+     "50%: 30.000 − 5.000 = <b>25.000</b> đồng",
+     "61,8%: 30.000 − 6.180 = <b>23.820</b> đồng",
+     "78,6%: 30.000 − 7.860 = <b>22.140</b> đồng"
+    ]
+   ],
+   [
+    "p",
+    "Nếu giá điều chỉnh về quanh 26.000 rồi bật lên với khối lượng tăng, đó là dấu hiệu xu hướng tăng còn khỏe. Nếu giá đóng cửa dưới 22.140, kịch bản tăng tiếp yếu đi rõ rệt."
+   ],
+   [
+    "p",
+    "<b>Ví dụ 2 – xu hướng giảm.</b> Cổ phiếu W giảm từ đỉnh 60.000 xuống đáy 40.000 đồng (biên độ 20.000) rồi hồi phục. Các mức có thể gặp lực bán: 38,2% tại 40.000 + 7.640 = <b>47.640</b>; 50% tại <b>50.000</b>; 61,8% tại 40.000 + 12.360 = <b>52.360</b> đồng. Người đang kẹt hàng thường dùng các vùng này để cân nhắc giảm tỷ trọng, người mới chú ý không đuổi giá khi cổ phiếu hồi lên sát các mức đó."
+   ],
+   [
+    "h2",
+    "3. Cách vẽ Fibonacci trên biểu đồ từng bước"
+   ],
+   [
+    "ol",
+    [
+     "Mở biểu đồ nến khung ngày (xem <a href=\"/f0/cach-xem-bieu-do-chung-khoan.html\">cách xem biểu đồ chứng khoán</a>), chọn công cụ \"Fib Retracement\" hoặc \"Fibonacci thoái lui\".",
+     "Xác định một con sóng <b>rõ ràng</b>: đáy và đỉnh nổi bật, nhìn qua cũng thấy, không chọn những nhịp nhỏ vài phiên.",
+     "Xu hướng tăng: kéo từ đáy lên đỉnh. Xu hướng giảm: kéo từ đỉnh xuống đáy. Phần mềm tự vẽ các đường ngang.",
+     "Đánh dấu thêm các vùng <a href=\"/f0/ho-tro-khang-cu.html\">hỗ trợ, kháng cự</a> cũ và <a href=\"/f0/duong-ma-la-gi.html\">đường MA</a> lớn gần các mức Fibonacci.",
+     "Chờ phản ứng của giá tại vùng đó (nến rút chân, khối lượng tăng) thay vì đặt lệnh chỉ vì giá chạm đường kẻ."
+    ]
+   ],
+   [
+    "h2",
+    "4. Kết hợp Fibonacci với công cụ khác"
+   ],
+   [
+    "p",
+    "Fibonacci đứng một mình cho ra 5 mức giá, quá nhiều để biết mức nào sẽ có tác dụng. Giá trị của nó tăng lên khi một mức Fibonacci <b>trùng</b> với tín hiệu khác, gọi là vùng hợp lưu:"
+   ],
+   [
+    "ul",
+    [
+     "Trùng với đỉnh cũ đã bị vượt (kháng cự cũ thành hỗ trợ mới).",
+     "Trùng với <a href=\"/f0/duong-xu-huong-trendline-la-gi.html\">đường xu hướng</a> tăng đang đi lên.",
+     "Trùng với đường MA50 hoặc MA200.",
+     "Có <a href=\"/f0/khoi-luong-giao-dich-va-dong-tien.html\">khối lượng</a> giảm dần khi điều chỉnh về và tăng lên khi bật lại.",
+     "<a href=\"/f0/rsi-la-gi.html\">RSI</a> không tạo đáy mới dù giá chạm mức Fibonacci."
+    ]
+   ],
+   [
+    "p",
+    "Trong ví dụ 1, nếu đỉnh cũ trước đó của cổ phiếu Z nằm ở 26.000 đồng thì vùng 26.000–26.180 (mức 38,2%) là vùng hợp lưu đáng theo dõi hơn hẳn các mức khác."
+   ],
+   [
+    "h2",
+    "5. Fibonacci thoái lui khác Fibonacci mở rộng"
+   ],
+   [
+    "p",
+    "Hai công cụ dễ nhầm: <b>thoái lui</b> đo các mức <b>bên trong</b> con sóng cũ (dưới 100%) để tìm vùng điều chỉnh; <b>mở rộng</b> (Fibonacci extension) đo các mức <b>vượt ra ngoài</b> con sóng như 127,2%, 161,8% để ước tính mục tiêu nếu giá vượt đỉnh. Ví dụ với sóng 20.000–30.000, mức 161,8% tính từ đáy là 20.000 + 16.180 = 36.180 đồng. Thoái lui trả lời \"lùi về đâu\", mở rộng trả lời \"có thể đi tới đâu\"."
+   ],
+   [
+    "h2",
+    "6. Sai lầm thường gặp khi dùng Fibonacci"
+   ],
+   [
+    "ul",
+    [
+     "<b>Chọn đỉnh đáy tùy tiện</b> để đường kẻ khớp với điều mình muốn thấy; hai người chọn hai con sóng khác nhau sẽ ra hai bộ mức khác nhau.",
+     "<b>Coi mức Fibonacci là giá chính xác:</b> nên coi là vùng, chênh lệch 1–2% là bình thường.",
+     "<b>Dùng trên cổ phiếu thanh khoản thấp</b> hoặc khung thời gian quá nhỏ: giá dễ bị kéo qua lại, các mức gần như không có ý nghĩa.",
+     "<b>Không có điểm cắt lỗ:</b> mua ở 61,8% nhưng không có kế hoạch nếu giá thủng 78,6%. Xem <a href=\"/f0/cat-lo-la-gi.html\">cắt lỗ là gì</a>.",
+     "<b>Bỏ qua bối cảnh:</b> khi thị trường chung đang giảm mạnh, mọi mức hỗ trợ kỹ thuật đều dễ bị phá."
+    ]
+   ],
+   [
+    "h2",
+    "7. Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Fibonacci thoái lui ước tính vùng điều chỉnh tại 23,6%, 38,2%, 50%, 61,8%, 78,6% của con sóng trước.",
+     "Xu hướng tăng: Đỉnh − (Đỉnh − Đáy) × tỷ lệ; xu hướng giảm: Đáy + (Đỉnh − Đáy) × tỷ lệ.",
+     "Chọn con sóng rõ ràng trên khung ngày, coi các mức là vùng giá.",
+     "Hiệu quả nhất khi trùng với hỗ trợ cũ, đường MA, trendline và có xác nhận khối lượng.",
+     "Luôn đi kèm điểm cắt lỗ; Fibonacci là công cụ xác suất, không phải dự báo chắc chắn."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Mức Fibonacci nào quan trọng nhất?",
+    "Mức 38,2%, 50% và 61,8% được theo dõi nhiều nhất. Mức 61,8% thường được coi là ranh giới cuối của một nhịp điều chỉnh lành mạnh."
+   ],
+   [
+    "Fibonacci dùng cho khung thời gian nào?",
+    "Dùng được ở mọi khung, nhưng người mới nên dùng khung ngày hoặc tuần với các con sóng rõ ràng, vì khung nhỏ có nhiều nhiễu."
+   ],
+   [
+    "Có thể dùng Fibonacci cho VN-Index không?",
+    "Có. Nhiều người dùng Fibonacci trên chỉ số để ước tính vùng điều chỉnh của thị trường chung, cách vẽ và tính giống như với cổ phiếu."
+   ],
+   [
+    "Giá chạm mức Fibonacci có nên mua ngay không?",
+    "Không nên mua chỉ vì chạm đường kẻ. Hãy chờ dấu hiệu giá phản ứng như nến rút chân, khối lượng tăng khi bật lên, và luôn xác định trước điểm cắt lỗ."
+   ],
+   [
+    "Phần mềm nào có công cụ Fibonacci?",
+    "Hầu hết ứng dụng giao dịch và trang biểu đồ phổ biến đều có công cụ Fibonacci thoái lui trong thanh công cụ vẽ."
+   ]
+  ],
+  "rel": [
+   "ho-tro-khang-cu",
+   "duong-xu-huong-trendline-la-gi",
+   "cach-xem-bieu-do-chung-khoan"
+  ]
  }
 ]
