@@ -11176,5 +11176,486 @@
    "peg-la-gi",
    "bao-cao-luu-chuyen-tien-te-la-gi"
   ]
+ },
+ {
+  "slug": "fcf-dong-tien-tu-do-la-gi",
+  "kw": "dòng tiền tự do FCF là gì",
+  "grp": 3,
+  "title": "Dòng tiền tự do (FCF) là gì? Cách tính, ví dụ và cách đọc cho người mới",
+  "desc": "Dòng tiền tự do (FCF) là tiền doanh nghiệp còn lại sau khi chi đầu tư để duy trì và mở rộng. Công thức, cách lấy số từ báo cáo lưu chuyển tiền tệ, ví dụ và sai lầm hay gặp.",
+  "body": [
+   [
+    "p",
+    "<b>Dòng tiền tự do (Free Cash Flow – FCF)</b> là phần tiền mặt doanh nghiệp thực sự còn lại sau khi đã trả mọi chi phí hoạt động và chi tiền mua sắm, xây dựng tài sản cố định để duy trì và mở rộng kinh doanh. Đây là số tiền doanh nghiệp có thể “tự do” dùng để trả cổ tức, mua lại cổ phiếu, trả nợ hoặc tích lũy. Nói gọn: lợi nhuận là con số kế toán, còn FCF là tiền thật đi vào túi."
+   ],
+   [
+    "p",
+    "Nhiều doanh nghiệp báo lãi đều đặn nhưng FCF âm nhiều năm liền, vì tiền bị “chôn” ở hàng tồn kho, khoản phải thu hoặc dự án chưa tạo ra doanh thu. Vì vậy FCF là bộ lọc rất tốt để anh chị phân biệt doanh nghiệp kiếm tiền thật với doanh nghiệp chỉ đẹp trên giấy."
+   ],
+   [
+    "h2",
+    "1. Công thức tính FCF"
+   ],
+   [
+    "p",
+    "Cách phổ biến và dễ làm nhất với nhà đầu tư cá nhân:"
+   ],
+   [
+    "p",
+    "<b>FCF = Lưu chuyển tiền thuần từ hoạt động kinh doanh (CFO) − Tiền chi mua sắm, xây dựng tài sản cố định (Capex)</b>"
+   ],
+   [
+    "ul",
+    [
+     "<b>CFO</b>: dòng “Lưu chuyển tiền thuần từ hoạt động kinh doanh” trong <a href=\"/f0/bao-cao-luu-chuyen-tien-te-la-gi.html\">báo cáo lưu chuyển tiền tệ</a>.",
+     "<b>Capex</b>: dòng “Tiền chi để mua sắm, xây dựng TSCĐ và các tài sản dài hạn khác” ở phần hoạt động đầu tư (thường ghi số âm trong ngoặc).",
+     "Có thể cộng lại “Tiền thu từ thanh lý TSCĐ” nếu khoản này lặp lại đều đặn; nếu chỉ phát sinh một lần thì nên bỏ qua để tránh làm đẹp số."
+    ]
+   ],
+   [
+    "p",
+    "Ngoài ra còn hai biến thể anh chị sẽ gặp trong các báo cáo phân tích: <b>FCFF</b> (dòng tiền tự do cho cả doanh nghiệp, trước khi trả lãi vay) và <b>FCFE</b> (dòng tiền tự do cho cổ đông, sau khi tính vay và trả nợ). Người mới chỉ cần nắm công thức CFO − Capex là đủ dùng cho việc sàng lọc."
+   ],
+   [
+    "h2",
+    "2. Cách lấy số từ báo cáo tài chính từng bước"
+   ],
+   [
+    "ol",
+    [
+     "Mở báo cáo tài chính năm (ưu tiên bản đã kiểm toán, hợp nhất) trên website doanh nghiệp hoặc trang thông tin của sở giao dịch.",
+     "Tìm báo cáo lưu chuyển tiền tệ, ghi lại dòng lưu chuyển tiền thuần từ hoạt động kinh doanh.",
+     "Ở phần hoạt động đầu tư, ghi lại dòng tiền chi mua sắm, xây dựng tài sản cố định.",
+     "Lấy CFO trừ Capex (lấy giá trị tuyệt đối của Capex) để ra FCF năm đó.",
+     "Lặp lại cho ít nhất 5 năm gần nhất và đặt cạnh <a href=\"/f0/bao-cao-ket-qua-kinh-doanh-la-gi.html\">lợi nhuận sau thuế</a> từng năm để so sánh.",
+     "Tính thêm tổng FCF 5 năm chia tổng lợi nhuận 5 năm để thấy doanh nghiệp chuyển lợi nhuận thành tiền được bao nhiêu phần trăm."
+    ]
+   ],
+   [
+    "p",
+    "Lý do nên xem nhiều năm: FCF của một năm riêng lẻ dao động mạnh, ví dụ năm xây nhà máy mới thì Capex vọt lên và FCF âm, nhưng đó có thể là khoản đầu tư tốt cho tương lai."
+   ],
+   [
+    "h2",
+    "3. Ví dụ bằng số cụ thể"
+   ],
+   [
+    "p",
+    "<b>Ví dụ 1 – Doanh nghiệp A (giả định):</b> lợi nhuận sau thuế 200 tỷ, CFO 260 tỷ, Capex 60 tỷ. FCF = 260 − 60 = 200 tỷ, bằng 100% lợi nhuận. Nếu A có 100 triệu cổ phiếu, FCF mỗi cổ phiếu = 2.000 đồng. Với giá 30.000 đồng, <b>lợi suất FCF</b> (FCF ÷ vốn hóa) = 2.000 ÷ 30.000 ≈ 6,7%/năm. Đây là doanh nghiệp đủ tiền để chia cổ tức mà không phải vay."
+   ],
+   [
+    "p",
+    "<b>Ví dụ 2 – Doanh nghiệp B (giả định):</b> cũng lãi 200 tỷ, nhưng CFO chỉ 40 tỷ vì khoản phải thu khách hàng tăng 150 tỷ, Capex 120 tỷ. FCF = 40 − 120 = −80 tỷ. B muốn trả cổ tức tiền mặt 100 tỷ thì phải vay thêm hoặc phát hành cổ phiếu. Trên báo cáo kết quả kinh doanh, A và B giống hệt nhau; nhìn FCF thì khác nhau hoàn toàn."
+   ],
+   [
+    "p",
+    "<b>Ví dụ 3 – FCF âm nhưng không xấu:</b> doanh nghiệp C có CFO 300 tỷ, năm nay chi 500 tỷ xây nhà máy, FCF = −200 tỷ. Nếu nhà máy đi vào hoạt động sau 2 năm và CFO tăng lên 450 tỷ trong khi Capex duy trì chỉ còn 80 tỷ, FCF sẽ đạt 370 tỷ. Điều cần kiểm tra là nguồn tiền xây nhà máy đến từ đâu: tiền tích lũy thì an toàn hơn vay nợ lớn (xem <a href=\"/f0/he-so-no-de-la-gi.html\">hệ số D/E</a>)."
+   ],
+   [
+    "h2",
+    "4. FCF khác lợi nhuận, EBITDA và CFO thế nào?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Lợi nhuận sau thuế</b>: ghi nhận theo nguyên tắc kế toán, có thể gồm doanh thu bán chịu chưa thu tiền và không trừ tiền chi đầu tư tài sản.",
+     "<b>EBITDA</b>: lợi nhuận trước lãi vay, thuế và khấu hao; bỏ qua cả vốn lưu động lẫn Capex nên thường cao hơn FCF nhiều (xem <a href=\"/f0/ev-ebitda-la-gi.html\">EV/EBITDA</a>).",
+     "<b>CFO</b>: tiền từ hoạt động kinh doanh, đã phản ánh thay đổi vốn lưu động nhưng chưa trừ tiền đầu tư tài sản.",
+     "<b>FCF</b>: CFO trừ tiếp Capex – gần nhất với số tiền cổ đông có thể được hưởng."
+    ]
+   ],
+   [
+    "p",
+    "Một cách nhớ: đi từ lợi nhuận → CFO → FCF là đi từ “lãi trên sổ sách” đến “tiền thật còn lại”. Mỗi bước trừ đi một thứ doanh nghiệp phải bỏ tiền ra."
+   ],
+   [
+    "h2",
+    "5. Doanh nghiệp nào nên xem kỹ FCF, ngành nào không?"
+   ],
+   [
+    "p",
+    "FCF hữu ích nhất với doanh nghiệp sản xuất, bán lẻ, tiêu dùng, công nghệ, tiện ích như điện, nước, khí. Đây cũng là đầu vào chính của phương pháp <a href=\"/f0/dcf-la-gi.html\">định giá DCF</a>."
+   ],
+   [
+    "p",
+    "FCF <b>không phù hợp</b> để đánh giá ngân hàng, công ty chứng khoán, bảo hiểm: dòng tiền của họ gắn với hoạt động cho vay, nhận tiền gửi, mua bán tài sản tài chính nên CFO có thể âm hoặc dương rất lớn mà không nói lên nhiều. Với ngân hàng, anh chị nên dùng ROE, <a href=\"/f0/nim-la-gi.html\">NIM</a>, nợ xấu, CASA. Với doanh nghiệp bất động sản, CFO thường biến động theo tiến độ bàn giao dự án, cần đọc kèm thuyết minh hàng tồn kho và người mua trả tiền trước."
+   ],
+   [
+    "h2",
+    "6. Sai lầm thường gặp khi dùng FCF"
+   ],
+   [
+    "ul",
+    [
+     "<b>Chỉ nhìn một năm</b>: kết luận doanh nghiệp xấu vì một năm FCF âm do đầu tư mở rộng.",
+     "<b>Quên vốn lưu động</b>: CFO tăng đột biến vì doanh nghiệp kéo dài thời gian trả nhà cung cấp; năm sau phải trả lại, FCF sẽ giảm.",
+     "<b>Bỏ sót Capex ẩn</b>: một số doanh nghiệp mua tài sản qua công ty con hoặc góp vốn liên doanh; khoản này nằm ở dòng khác trong hoạt động đầu tư.",
+     "<b>Nhầm tiền gửi có kỳ hạn với Capex</b>: tiền gửi ngân hàng trên 3 tháng cũng nằm ở hoạt động đầu tư nhưng không phải chi mua tài sản cố định, không trừ vào FCF.",
+     "<b>So sánh khác ngành</b>: doanh nghiệp phần mềm cần ít Capex nên FCF cao hơn thép, xi măng; so sánh nên trong cùng ngành."
+    ]
+   ],
+   [
+    "h2",
+    "7. Tóm lại: checklist FCF 5 phút"
+   ],
+   [
+    "ul",
+    [
+     "FCF = CFO − Capex, lấy số từ báo cáo lưu chuyển tiền tệ.",
+     "Xem tối thiểu 5 năm; tổng FCF/tổng lợi nhuận càng gần hoặc trên 80% càng tốt cho doanh nghiệp đã trưởng thành.",
+     "FCF âm cần hỏi: do đầu tư mở rộng có kế hoạch, hay do không thu được tiền?",
+     "Cổ tức tiền mặt nên nhỏ hơn FCF; trả cổ tức vượt FCF nhiều năm thường phải đi vay.",
+     "Lợi suất FCF so với lãi suất tiết kiệm giúp anh chị biết giá đang đắt hay rẻ một cách thô."
+    ]
+   ],
+   [
+    "p",
+    "Nếu anh chị muốn tập tính FCF trên doanh nghiệp thật, có thể hỏi trong nhóm Zalo cộng đồng ở đầu bài."
+   ]
+  ],
+  "faq": [
+   [
+    "FCF âm có phải doanh nghiệp sắp phá sản?",
+    "Không nhất thiết. FCF âm do đầu tư mở rộng có kế hoạch và nguồn vốn an toàn là bình thường; đáng lo khi CFO âm kéo dài vì không thu được tiền bán hàng."
+   ],
+   [
+    "Lấy số FCF ở đâu?",
+    "Từ báo cáo lưu chuyển tiền tệ trong báo cáo tài chính: lưu chuyển tiền thuần từ hoạt động kinh doanh trừ tiền chi mua sắm, xây dựng tài sản cố định."
+   ],
+   [
+    "Lợi suất FCF bao nhiêu là tốt?",
+    "Không có ngưỡng cố định; nhiều nhà đầu tư so với lãi suất tiết kiệm và lợi suất trái phiếu chính phủ. Lợi suất FCF ổn định và cao hơn các mức này là dấu hiệu giá không đắt."
+   ],
+   [
+    "Có dùng FCF để đánh giá ngân hàng được không?",
+    "Không phù hợp. Ngân hàng nên đánh giá bằng ROE, NIM, nợ xấu, CASA, tỷ lệ an toàn vốn và P/B."
+   ],
+   [
+    "FCF và cổ tức liên quan thế nào?",
+    "Cổ tức tiền mặt bền vững thường được trả từ FCF. Doanh nghiệp trả cổ tức lớn hơn FCF nhiều năm liền thường phải vay hoặc dùng tiền tích lũy cũ."
+   ]
+  ],
+  "rel": [
+   "bao-cao-luu-chuyen-tien-te-la-gi",
+   "dcf-la-gi",
+   "co-tuc-la-gi"
+  ]
+ },
+ {
+  "slug": "he-so-beta-la-gi",
+  "kw": "hệ số beta cổ phiếu là gì",
+  "grp": 5,
+  "title": "Hệ số beta là gì? Đo độ biến động cổ phiếu so với VN-Index cho người mới",
+  "desc": "Hệ số beta cho biết cổ phiếu dao động mạnh hay yếu hơn thị trường. Cách hiểu beta > 1, < 1, cách tự tính bằng Excel, ví dụ và cách dùng beta để phân bổ vốn.",
+  "body": [
+   [
+    "p",
+    "<b>Hệ số beta (β)</b> đo mức độ cổ phiếu biến động cùng chiều với thị trường chung. Ở Việt Nam, “thị trường” thường là <a href=\"/f0/vn-index-la-gi.html\">VN-Index</a>. Beta = 1 nghĩa là trung bình cổ phiếu tăng giảm tương đương chỉ số; beta = 1,5 nghĩa là khi VN-Index giảm 10%, cổ phiếu có xu hướng giảm khoảng 15%; beta = 0,6 nghĩa là chỉ giảm khoảng 6%."
+   ],
+   [
+    "p",
+    "Beta không cho biết cổ phiếu tốt hay xấu, mà cho biết <b>mức “rung lắc” anh chị phải chịu</b> khi nắm giữ. Hiểu beta giúp chọn cổ phiếu phù hợp với khả năng chịu đựng và quyết định tỷ trọng hợp lý."
+   ],
+   [
+    "h2",
+    "1. Cách đọc các mức beta"
+   ],
+   [
+    "ul",
+    [
+     "<b>Beta > 1</b>: dao động mạnh hơn thị trường. Thường gặp ở cổ phiếu chứng khoán, bất động sản, thép, cổ phiếu vốn hóa nhỏ – nhóm hưởng lợi nhiều khi thị trường lên nhưng giảm sâu khi thị trường xuống.",
+     "<b>Beta ≈ 1</b>: đi gần như cùng nhịp thị trường, ví dụ nhiều cổ phiếu vốn hóa lớn trong rổ <a href=\"/f0/vn30-la-gi.html\">VN30</a>.",
+     "<b>0 < Beta < 1</b>: dao động nhẹ hơn thị trường, thường là <a href=\"/f0/co-phieu-phong-thu-la-gi.html\">cổ phiếu phòng thủ</a> như điện, nước, tiêu dùng thiết yếu.",
+     "<b>Beta ≈ 0</b>: gần như không liên quan đến thị trường (ví dụ tiền gửi, hoặc cổ phiếu rất ít giao dịch – trường hợp này beta thấp vì thiếu dữ liệu chứ không phải vì an toàn).",
+     "<b>Beta < 0</b>: đi ngược thị trường; rất hiếm với cổ phiếu Việt Nam."
+    ]
+   ],
+   [
+    "h2",
+    "2. Công thức và cách tự tính bằng Excel"
+   ],
+   [
+    "p",
+    "<b>β = Hiệp phương sai (lợi suất cổ phiếu, lợi suất thị trường) ÷ Phương sai (lợi suất thị trường)</b>"
+   ],
+   [
+    "p",
+    "Nghe phức tạp nhưng Excel hoặc Google Sheets làm hộ anh chị:"
+   ],
+   [
+    "ol",
+    [
+     "Tải giá đóng cửa theo tuần (hoặc ngày) của cổ phiếu và VN-Index trong 1–2 năm, cùng các mốc thời gian. Nên dùng giá đã điều chỉnh cổ tức, chia tách.",
+     "Tính lợi suất mỗi kỳ: (giá kỳ này ÷ giá kỳ trước) − 1, cho cả cổ phiếu và chỉ số.",
+     "Dùng hàm <b>=SLOPE(cột lợi suất cổ phiếu; cột lợi suất VN-Index)</b>. Kết quả chính là beta.",
+     "Có thể dùng thêm <b>=CORREL(...)</b> để xem mức tương quan; tương quan thấp (dưới 0,3) thì beta kém tin cậy."
+    ]
+   ],
+   [
+    "p",
+    "Nhiều bảng giá và trang dữ liệu cũng hiển thị sẵn beta. Mỗi nơi có thể dùng khung thời gian khác nhau (52 tuần, 2 năm, dữ liệu ngày hay tuần) nên số liệu lệch nhau là bình thường."
+   ],
+   [
+    "h2",
+    "3. Ví dụ bằng số cụ thể"
+   ],
+   [
+    "p",
+    "<b>Ví dụ 1 – Ước tính mức giảm:</b> anh chị nắm cổ phiếu X có beta 1,4 và cổ phiếu Y có beta 0,7, mỗi mã 50 triệu. Nếu VN-Index giảm 15% trong một đợt điều chỉnh, theo beta: X giảm khoảng 1,4 × 15% = 21% (mất 10,5 triệu), Y giảm khoảng 0,7 × 15% = 10,5% (mất 5,25 triệu). Đây là ước lượng trung bình, thực tế có thể lệch nhiều do tin riêng của từng doanh nghiệp."
+   ],
+   [
+    "p",
+    "<b>Ví dụ 2 – Beta danh mục:</b> beta danh mục bằng trung bình có trọng số beta từng mã. Danh mục 100 triệu gồm 40% mã beta 1,5; 40% mã beta 0,8; 20% tiền mặt (beta 0). Beta danh mục = 0,4 × 1,5 + 0,4 × 0,8 + 0,2 × 0 = 0,92. Muốn giảm rung lắc xuống 0,7, anh chị có thể tăng tiền mặt hoặc giảm tỷ trọng mã beta cao, không nhất thiết phải bán hết."
+   ],
+   [
+    "p",
+    "<b>Ví dụ 3 – Margin làm beta tăng:</b> dùng <a href=\"/f0/margin-la-gi.html\">margin</a> tỷ lệ 1:1 (vay bằng vốn tự có) thì biến động trên vốn tự có xấp xỉ gấp đôi. Danh mục beta 0,92 khi dùng margin 1:1 có beta hiệu dụng khoảng 1,84 so với vốn của anh chị, chưa kể lãi vay."
+   ],
+   [
+    "h2",
+    "4. Beta khác độ lệch chuẩn và rủi ro doanh nghiệp thế nào?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Beta</b> chỉ đo phần biến động <b>đi theo thị trường</b> (rủi ro hệ thống).",
+     "<b>Độ lệch chuẩn</b> (volatility) đo tổng mức dao động của giá, gồm cả phần riêng của doanh nghiệp. Một cổ phiếu có thể beta thấp nhưng vẫn dao động rất mạnh vì tin riêng.",
+     "<b>Rủi ro doanh nghiệp</b> (nợ vay, gian lận, mất khách hàng lớn) không thể hiện trong beta. Beta 0,5 không bảo vệ anh chị khỏi một doanh nghiệp nợ nần."
+    ]
+   ],
+   [
+    "p",
+    "Vì vậy beta là công cụ quản trị biến động danh mục, không thay thế cho việc đọc <a href=\"/f0/cach-doc-bao-cao-tai-chinh.html\">báo cáo tài chính</a>."
+   ],
+   [
+    "h2",
+    "5. Dùng beta trong thực tế"
+   ],
+   [
+    "ul",
+    [
+     "<b>Chọn mã theo khẩu vị</b>: người mới, vốn từ lương, không theo dõi bảng giá thường xuyên nên ưu tiên danh mục beta dưới 1.",
+     "<b>Đặt cắt lỗ phù hợp</b>: mã beta cao dao động lớn nên ngưỡng <a href=\"/f0/cat-lo-la-gi.html\">cắt lỗ</a> quá chặt dễ bị “quét”; cân nhắc giảm khối lượng thay vì nới ngưỡng tùy tiện.",
+     "<b>Phân bổ vốn</b>: mã beta cao có thể giữ tỷ trọng nhỏ hơn để mức lỗ tiềm năng của từng mã tương đương nhau (xem <a href=\"/f0/cach-phan-bo-ty-trong-co-phieu.html\">phân bổ tỉ trọng</a>).",
+     "<b>Theo chu kỳ thị trường</b>: giai đoạn thị trường thuận lợi, mã beta cao thường tăng nhanh hơn; giai đoạn rủi ro, nhóm beta thấp giữ giá tốt hơn – nhưng đây là xu hướng thống kê, không phải quy luật chắc chắn."
+    ]
+   ],
+   [
+    "h2",
+    "6. Hạn chế và sai lầm thường gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>Beta thay đổi theo thời gian</b>: doanh nghiệp đổi mô hình kinh doanh, tăng nợ, hay dòng tiền đầu cơ đổ vào đều làm beta thay đổi.",
+     "<b>Beta tính từ quá khứ</b>: không đảm bảo lặp lại, nhất là khi có sự kiện đặc biệt.",
+     "<b>Cổ phiếu ít thanh khoản</b>: giá đứng yên nhiều phiên làm beta thấp giả tạo (xem <a href=\"/f0/thanh-khoan-co-phieu-la-gi.html\">thanh khoản</a>).",
+     "<b>Nhầm beta thấp là an toàn</b>: beta thấp chỉ nghĩa là ít đi theo thị trường, doanh nghiệp vẫn có thể giảm mạnh vì vấn đề riêng.",
+     "<b>So sánh beta từ hai nguồn khác nhau</b>: khác khung thời gian, khác tần suất dữ liệu cho kết quả khác."
+    ]
+   ],
+   [
+    "h2",
+    "7. Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Beta đo độ nhạy của cổ phiếu với VN-Index: >1 mạnh hơn, <1 nhẹ hơn thị trường.",
+     "Tự tính bằng hàm SLOPE trên lợi suất tuần trong 1–2 năm.",
+     "Beta danh mục = trung bình có trọng số; tiền mặt có beta 0, margin làm beta hiệu dụng tăng.",
+     "Beta không đo rủi ro riêng doanh nghiệp; luôn kết hợp phân tích cơ bản.",
+     "Dùng beta để chọn tỷ trọng và mức chịu đựng, không dùng để dự báo giá."
+    ]
+   ],
+   [
+    "p",
+    "Anh chị cần trao đổi cách cân beta cho danh mục của mình thì có thể nhắn qua Zalo ở cuối bài."
+   ]
+  ],
+  "faq": [
+   [
+    "Beta bao nhiêu là tốt?",
+    "Không có mức tốt chung. Người ưu tiên ổn định chọn danh mục beta dưới 1; người chấp nhận dao động lớn để kỳ vọng lợi nhuận cao hơn có thể chọn beta trên 1."
+   ],
+   [
+    "Xem beta cổ phiếu ở đâu?",
+    "Nhiều bảng giá, trang dữ liệu tài chính hiển thị sẵn; hoặc tự tính bằng hàm SLOPE trong Excel từ giá đóng cửa của cổ phiếu và VN-Index."
+   ],
+   [
+    "Beta âm có nghĩa là gì?",
+    "Cổ phiếu có xu hướng đi ngược thị trường. Với cổ phiếu Việt Nam điều này hiếm và thường không ổn định qua các giai đoạn."
+   ],
+   [
+    "Beta thấp có chắc ít lỗ không?",
+    "Không. Beta chỉ đo phần biến động theo thị trường; cổ phiếu beta thấp vẫn giảm mạnh nếu doanh nghiệp gặp vấn đề riêng."
+   ],
+   [
+    "Nên tính beta theo dữ liệu ngày hay tuần?",
+    "Dữ liệu tuần trong 1–2 năm thường ổn định hơn, giảm nhiễu từ biến động trong phiên; dữ liệu ngày phù hợp khi cần cập nhật nhanh."
+   ]
+  ],
+  "rel": [
+   "co-phieu-phong-thu-la-gi",
+   "phan-bo-von-va-quan-tri-danh-muc",
+   "vn-index-la-gi"
+  ]
+ },
+ {
+  "slug": "co-phieu-tang-truong-va-co-phieu-gia-tri",
+  "kw": "cổ phiếu tăng trưởng và cổ phiếu giá trị",
+  "grp": 3,
+  "title": "Cổ phiếu tăng trưởng và cổ phiếu giá trị khác nhau thế nào? Cách nhận biết cho người mới",
+  "desc": "Cổ phiếu tăng trưởng (growth) và cổ phiếu giá trị (value) khác nhau ở tốc độ lớn, định giá và rủi ro. Tiêu chí nhận biết, ví dụ bằng số, bẫy giá trị và cách kết hợp hai nhóm.",
+  "body": [
+   [
+    "p",
+    "<b>Cổ phiếu tăng trưởng</b> là cổ phiếu của doanh nghiệp có doanh thu, lợi nhuận tăng nhanh hơn mặt bằng chung, nhà đầu tư chấp nhận trả giá cao (P/E, P/B cao) để đổi lấy tương lai. <b>Cổ phiếu giá trị</b> là cổ phiếu đang giao dịch thấp hơn giá trị thực ước tính (P/E, P/B thấp so với lịch sử hoặc so với ngành), thường của doanh nghiệp đã trưởng thành, tăng trưởng chậm nhưng ổn định, hay chia cổ tức."
+   ],
+   [
+    "p",
+    "Hai trường phái này không đối lập tuyệt đối: một cổ phiếu có thể vừa tăng trưởng tốt vừa đang rẻ. Điều quan trọng là anh chị hiểu mình đang trả tiền cho cái gì và kỳ vọng lợi nhuận đến từ đâu."
+   ],
+   [
+    "h2",
+    "1. Bảng so sánh nhanh"
+   ],
+   [
+    "ul",
+    [
+     "<b>Tốc độ tăng lợi nhuận</b>: tăng trưởng thường trên 15–20%/năm; giá trị thường dưới 10%/năm.",
+     "<b>Định giá</b>: tăng trưởng có <a href=\"/f0/pe-la-gi.html\">P/E</a>, <a href=\"/f0/pb-la-gi.html\">P/B</a> cao hơn ngành; giá trị có P/E, P/B thấp hơn ngành hoặc thấp hơn trung bình lịch sử của chính nó.",
+     "<b>Cổ tức</b>: tăng trưởng thường giữ lại lợi nhuận để mở rộng, cổ tức thấp; giá trị thường chia <a href=\"/f0/co-tuc-la-gi.html\">cổ tức</a> tiền mặt đều.",
+     "<b>Nguồn lợi nhuận cho nhà đầu tư</b>: tăng trưởng nhờ lợi nhuận doanh nghiệp tăng; giá trị nhờ thị trường định giá lại về đúng giá trị cộng cổ tức.",
+     "<b>Rủi ro chính</b>: tăng trưởng sợ tăng trưởng chậm lại khiến P/E co lại; giá trị sợ “bẫy giá trị” – rẻ vì doanh nghiệp thật sự đi xuống."
+    ]
+   ],
+   [
+    "h2",
+    "2. Tiêu chí nhận biết cổ phiếu tăng trưởng"
+   ],
+   [
+    "ol",
+    [
+     "Doanh thu và lợi nhuận tăng đều trong 3–5 năm, không chỉ một năm đột biến.",
+     "ROE cao và ổn định (xem <a href=\"/f0/roe-eps-la-gi.html\">ROE, EPS</a>), cho thấy tăng trưởng không phải chỉ nhờ bơm thêm vốn.",
+     "Có thị trường còn rộng để mở rộng: thị phần nhỏ trong ngành đang lớn, sản phẩm mới, thị trường xuất khẩu mới.",
+     "Lợi thế cạnh tranh rõ: thương hiệu, công nghệ, chi phí thấp, mạng lưới phân phối.",
+     "Tăng trưởng được tài trợ bằng tiền tự tạo ra hoặc nợ vay ở mức an toàn."
+    ]
+   ],
+   [
+    "p",
+    "Một công cụ hay dùng để cân giữa giá và tốc độ tăng là <a href=\"/f0/peg-la-gi.html\">chỉ số PEG</a> = P/E ÷ tốc độ tăng EPS (%). PEG quanh 1 hoặc thấp hơn cho thấy giá chưa quá đắt so với tăng trưởng."
+   ],
+   [
+    "h2",
+    "3. Tiêu chí nhận biết cổ phiếu giá trị"
+   ],
+   [
+    "ol",
+    [
+     "P/E hoặc P/B thấp hơn trung bình 5 năm của chính doanh nghiệp và thấp hơn các doanh nghiệp cùng ngành.",
+     "Doanh nghiệp vẫn có lãi ổn định, <a href=\"/f0/fcf-dong-tien-tu-do-la-gi.html\">dòng tiền tự do</a> dương nhiều năm.",
+     "Bảng cân đối lành mạnh, nợ vay vừa phải.",
+     "Có lý do rõ khiến giá đang thấp mà lý do đó mang tính tạm thời: thị trường chung giảm, ngành đang ở đáy chu kỳ, tin xấu ngắn hạn.",
+     "Có chất xúc tác giúp thị trường nhận ra giá trị: lợi nhuận phục hồi, thoái vốn, chia cổ tức lớn, mua cổ phiếu quỹ."
+    ]
+   ],
+   [
+    "h2",
+    "4. Ví dụ bằng số cụ thể"
+   ],
+   [
+    "p",
+    "<b>Ví dụ 1 – Cổ phiếu tăng trưởng (giả định):</b> doanh nghiệp G có EPS 4.000 đồng, giá 100.000 đồng, P/E = 25. Nếu EPS tăng 20%/năm trong 3 năm, EPS năm thứ ba ≈ 4.000 × 1,2³ ≈ 6.900 đồng. Giữ P/E 25, giá ≈ 172.500 đồng (+72%). Nhưng nếu tăng trưởng chậm lại còn 8%/năm và thị trường hạ P/E xuống 15, EPS năm thứ ba ≈ 5.040 đồng, giá ≈ 75.600 đồng (−24%) dù doanh nghiệp vẫn tăng trưởng. Đây là rủi ro “co P/E” của cổ phiếu tăng trưởng."
+   ],
+   [
+    "p",
+    "<b>Ví dụ 2 – Cổ phiếu giá trị (giả định):</b> doanh nghiệp V có EPS 3.000 đồng, giá 24.000 đồng, P/E = 8, trong khi trung bình 5 năm là P/E 12; cổ tức tiền mặt 1.500 đồng/năm (lợi suất 6,25%). EPS chỉ tăng 5%/năm. Sau 2 năm, EPS ≈ 3.300 đồng; nếu P/E về lại 11, giá ≈ 36.300 đồng (+51%), cộng 3.000 đồng cổ tức nhận được. Nếu thị trường không định giá lại và P/E vẫn 8, giá ≈ 26.400 đồng (+10%), cộng cổ tức tổng lợi nhuận khoảng 22,5% – vẫn dương nhờ giá mua thấp."
+   ],
+   [
+    "p",
+    "Hai ví dụ cho thấy: với cổ phiếu tăng trưởng, điều quan trọng nhất là <b>tăng trưởng có duy trì được không</b>; với cổ phiếu giá trị, điều quan trọng nhất là <b>giá có thật sự rẻ và doanh nghiệp có còn khỏe không</b>."
+   ],
+   [
+    "h2",
+    "5. Dễ nhầm: giá trị khác “giá thấp”, tăng trưởng khác “giá đang tăng”"
+   ],
+   [
+    "ul",
+    [
+     "Cổ phiếu giá 8.000 đồng không có nghĩa là rẻ; rẻ hay đắt phải so giá với lợi nhuận và tài sản (P/E, P/B), không so con số tuyệt đối (xem <a href=\"/f0/von-hoa-bluechip-penny.html\">vốn hóa, bluechip, penny</a>).",
+     "Cổ phiếu tăng giá mạnh vài tháng chưa chắc là cổ phiếu tăng trưởng; cần lợi nhuận doanh nghiệp tăng thật.",
+     "Cổ phiếu <a href=\"/f0/co-phieu-chu-ky-la-gi.html\">chu kỳ</a> (thép, phân bón, vận tải) thường có P/E thấp nhất ở đỉnh chu kỳ vì lợi nhuận đang cao kỷ lục – trông như cổ phiếu giá trị nhưng thực ra có thể đắt."
+    ]
+   ],
+   [
+    "h2",
+    "6. Sai lầm thường gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>Mua tăng trưởng ở bất kỳ giá nào</b>: trả P/E quá cao khiến chỉ một quý tăng trưởng chậm lại là giá giảm mạnh.",
+     "<b>Rơi vào bẫy giá trị</b>: mua vì P/E thấp nhưng lợi nhuận đang giảm dần qua từng năm, P/E thấp là xứng đáng.",
+     "<b>Ngoại suy tăng trưởng quá xa</b>: giả định doanh nghiệp tăng 30%/năm trong 10 năm là rất hiếm.",
+     "<b>Thiếu kiên nhẫn với cổ phiếu giá trị</b>: định giá lại có thể mất 1–3 năm; bán sớm khi chưa có chất xúc tác.",
+     "<b>Đổi phong cách liên tục</b>: thị trường ưa nhóm nào thì chạy theo nhóm đó, dẫn đến mua đỉnh bán đáy (xem <a href=\"/f0/tam-ly-fomo-va-hoang-loan.html\">tâm lý FOMO</a>)."
+    ]
+   ],
+   [
+    "h2",
+    "7. Người mới nên chọn trường phái nào?"
+   ],
+   [
+    "p",
+    "Không có trường phái luôn thắng; các giai đoạn thị trường thay nhau ưu ái mỗi nhóm. Với người mới, cách thực tế là kết hợp: phần lõi danh mục là doanh nghiệp đầu ngành, lợi nhuận ổn định, định giá hợp lý (gần với “giá trị”), phần nhỏ hơn dành cho doanh nghiệp tăng trưởng nhanh mà anh chị hiểu rõ. Trường phái “tăng trưởng với giá hợp lý” (GARP) chính là điểm giao giữa hai nhóm, phù hợp với người <a href=\"/f0/tich-san-chung-khoan-la-gi.html\">tích sản</a> dài hạn."
+   ],
+   [
+    "h2",
+    "8. Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Tăng trưởng: lợi nhuận tăng nhanh, định giá cao, ít cổ tức; rủi ro lớn nhất là tăng trưởng chậm lại.",
+     "Giá trị: định giá thấp so với lịch sử/ngành, tăng chậm, cổ tức đều; rủi ro lớn nhất là bẫy giá trị.",
+     "Đánh giá bằng P/E, P/B, PEG, ROE và dòng tiền tự do, luôn so trong cùng ngành.",
+     "Kết hợp hai nhóm và giữ một phong cách nhất quán tốt hơn chạy theo nhóm đang hot."
+    ]
+   ],
+   [
+    "p",
+    "Nếu anh chị muốn tập phân loại một mã cụ thể theo các tiêu chí trên, có thể đặt câu hỏi trong nhóm Zalo cộng đồng."
+   ]
+  ],
+  "faq": [
+   [
+    "Cổ phiếu tăng trưởng có rủi ro hơn cổ phiếu giá trị không?",
+    "Thường biến động mạnh hơn vì định giá cao phụ thuộc kỳ vọng; nhưng cổ phiếu giá trị cũng có rủi ro riêng là bẫy giá trị."
+   ],
+   [
+    "P/E thấp có phải là cổ phiếu giá trị?",
+    "Chưa chắc. Cần xem lợi nhuận có bền không, có phải đang ở đỉnh chu kỳ không, và so P/E với lịch sử, với ngành."
+   ],
+   [
+    "Cổ phiếu ngân hàng là tăng trưởng hay giá trị?",
+    "Tùy từng ngân hàng và từng giai đoạn: ngân hàng tăng tín dụng, lợi nhuận nhanh với P/B cao nghiêng về tăng trưởng; ngân hàng P/B thấp, cổ tức đều nghiêng về giá trị."
+   ],
+   [
+    "GARP là gì?",
+    "Growth At a Reasonable Price – chọn doanh nghiệp tăng trưởng tốt nhưng chỉ mua ở mức định giá hợp lý, thường xét bằng chỉ số PEG quanh 1 hoặc thấp hơn."
+   ],
+   [
+    "Người tích sản nên chọn nhóm nào?",
+    "Thường ưu tiên doanh nghiệp đầu ngành, lợi nhuận và cổ tức ổn định, định giá hợp lý, kết hợp một phần nhỏ doanh nghiệp tăng trưởng mà mình hiểu rõ."
+   ]
+  ],
+  "rel": [
+   "pe-la-gi",
+   "peg-la-gi",
+   "cach-chon-co-phieu-cho-nguoi-moi"
+  ]
  }
 ]
