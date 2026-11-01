@@ -167,8 +167,8 @@
   "slug": "mo-tai-khoan-chung-khoan",
   "root": true,
   "kw": "mở tài khoản chứng khoán",
-  "title": "Mở tài khoản chứng khoán online 2026: hướng dẫn từng bước, miễn phí, 5 phút",
-  "desc": "Hướng dẫn mở tài khoản chứng khoán online bằng CCCD trên điện thoại: điều kiện, giấy tờ, 6 bước eKYC, phí, nạp tiền và cách chọn công ty chứng khoán. Có người hỗ trợ 1:1.",
+  "title": "Mở tài khoản chứng khoán online 2026: hướng dẫn từng bước",
+  "desc": "Mở tài khoản chứng khoán online bằng CCCD trên điện thoại: điều kiện, 6 bước eKYC, phí, nạp tiền và cách chọn công ty chứng khoán.",
   "body": [
    [
     "p",
@@ -417,7 +417,7 @@
  {
   "slug": "mo-tai-khoan-chung-khoan-tren-dien-thoai",
   "kw": "mở tài khoản chứng khoán trên điện thoại",
-  "title": "Mở tài khoản chứng khoán trên điện thoại: làm tại nhà, không cần ra quầy",
+  "title": "Mở tài khoản chứng khoán trên điện thoại: làm tại nhà, 5 phút",
   "desc": "Cách mở tài khoản chứng khoán trên điện thoại bằng CCCD và eKYC, những lỗi hay gặp khi chụp giấy tờ, quay khuôn mặt và cách xử lý.",
   "body": [
    [
@@ -1395,62 +1395,108 @@
  {
   "slug": "phi-giao-dich-va-thue-chung-khoan",
   "kw": "phí giao dịch chứng khoán",
-  "title": "Phí giao dịch và thuế chứng khoán: người mới cần biết những khoản nào",
-  "desc": "Các loại phí khi mua bán cổ phiếu: phí giao dịch, thuế bán 0,1%, thuế cổ tức 5%, phí lưu ký, lãi margin và cách tính chi phí thực tế.",
+  "title": "Phí giao dịch và thuế chứng khoán: người mới cần biết gì?",
+  "desc": "Các khoản phí khi mua bán cổ phiếu: phí giao dịch, thuế bán 0,1%, thuế cổ tức 5%, phí lưu ký, lãi margin – kèm ví dụ tính chi phí thực tế.",
   "body": [
    [
+    "p",
+    "Nhiều người mới chỉ nhìn giá mua và giá bán mà quên rằng mỗi lệnh đều có chi phí. Lãi 2% mà mất gần 0,5% cho phí và thuế thì lợi nhuận thực chỉ còn khoảng 1,5%. Bài này liệt kê đủ các khoản để bạn tự tính."
+   ],
+   [
     "h2",
-    "Phí giao dịch"
+    "1. Phí giao dịch"
    ],
    [
     "p",
-    "Tính trên giá trị mỗi lệnh mua và bán, mức cụ thể tùy công ty chứng khoán và gói dịch vụ."
+    "Tính theo phần trăm trên <b>giá trị khớp lệnh</b>, thu ở <b>cả chiều mua và chiều bán</b>. Mức cụ thể tùy công ty chứng khoán và gói dịch vụ, thường dao động khoảng 0,1%–0,35% mỗi chiều; một số nơi có gói phí rất thấp hoặc miễn phí theo chương trình. Lệnh không khớp thì không mất phí."
    ],
    [
     "h2",
-    "Thuế khi bán"
+    "2. Thuế khi bán cổ phiếu"
    ],
    [
     "p",
-    "Khi bán cổ phiếu, nhà đầu tư cá nhân nộp thuế 0,1% trên giá trị bán, kể cả khi bán lỗ."
+    "Nhà đầu tư cá nhân nộp thuế thu nhập cá nhân <b>0,1% trên giá trị bán</b>, áp dụng cả khi bán lỗ. Thuế được công ty chứng khoán khấu trừ tự động, bạn không phải tự kê khai."
    ],
    [
     "h2",
-    "Thuế cổ tức"
-   ],
-   [
-    "p",
-    "Cổ tức tiền mặt và cổ tức cổ phiếu chịu thuế thu nhập cá nhân 5%."
-   ],
-   [
-    "h2",
-    "Các khoản khác"
+    "3. Thuế cổ tức"
    ],
    [
     "ul",
     [
-     "Phí lưu ký chứng khoán, trừ định kỳ, rất nhỏ.",
-     "Lãi vay margin nếu có vay.",
-     "Phí ứng trước tiền bán nếu dùng."
+     "<b>Cổ tức tiền mặt</b>: chịu thuế 5%, được khấu trừ trước khi tiền về tài khoản.",
+     "<b>Cổ tức bằng cổ phiếu, cổ phiếu thưởng</b>: cũng chịu thuế 5%, nhưng chỉ nộp khi bạn bán số cổ phiếu đó (tính trên mệnh giá), kèm thuế bán 0,1%."
+    ]
+   ],
+   [
+    "p",
+    "Xem thêm <a href=\"/f0/co-tuc-la-gi.html\">cổ tức là gì</a>."
+   ],
+   [
+    "h2",
+    "4. Các khoản nhỏ khác"
+   ],
+   [
+    "ul",
+    [
+     "<b>Phí lưu ký</b>: thu định kỳ theo số lượng cổ phiếu nắm giữ, mỗi tháng rất nhỏ (vài nghìn đồng với danh mục vài nghìn cổ phiếu).",
+     "<b>Lãi vay margin</b>: nếu vay để mua, lãi tính theo ngày trên số tiền vay. Đây thường là khoản chi phí lớn nhất của người giao dịch nhiều – xem <a href=\"/f0/lai-suat-margin.html\">lãi suất margin</a>.",
+     "<b>Phí ứng trước tiền bán</b>: muốn dùng tiền bán trước khi tiền về (T+2) thì trả phí theo ngày.",
+     "<b>Phí chuyển khoản</b> ra ngân hàng: tùy công ty, nhiều nơi miễn phí."
     ]
    ],
    [
     "h2",
-    "Ví dụ"
+    "5. Ví dụ tính chi phí thực tế"
    ],
    [
     "p",
-    "Mua và bán 50 triệu cổ phiếu, với phí 0,15% mỗi chiều và thuế bán 0,1%, tổng chi phí khoảng 200.000đ. Lướt sóng càng nhiều thì phí và thuế càng ăn mòn lợi nhuận."
+    "Giả sử phí giao dịch 0,15% mỗi chiều. Bạn mua 1.000 cổ phiếu giá 25.000đ (25 triệu) và bán ở 26.000đ (26 triệu):"
+   ],
+   [
+    "ul",
+    [
+     "Phí mua: 25.000.000 × 0,15% = 37.500đ.",
+     "Phí bán: 26.000.000 × 0,15% = 39.000đ.",
+     "Thuế bán: 26.000.000 × 0,1% = 26.000đ.",
+     "Tổng chi phí: 102.500đ. Lãi gộp 1.000.000đ → lãi thực khoảng 897.500đ."
+    ]
+   ],
+   [
+    "p",
+    "Một vòng mua bán tốn khoảng 0,4% giá trị. Nếu mỗi tháng mua bán 10 vòng với toàn bộ vốn, chi phí đã khoảng 4% vốn mỗi tháng – gần bằng lãi tiết kiệm cả năm."
+   ],
+   [
+    "h2",
+    "6. Cách giảm chi phí"
+   ],
+   [
+    "ol",
+    [
+     "Giao dịch ít mà chất: tránh <a href=\"/f0/overtrading-la-gi.html\">giao dịch quá mức</a>.",
+     "So sánh biểu phí giữa các công ty chứng khoán trước khi mở tài khoản.",
+     "Hạn chế vay margin, ứng trước khi chưa thật cần.",
+     "Với người tích sản: mua định kỳ, giữ dài, chi phí phí và thuế gần như không đáng kể."
+    ]
+   ],
+   [
+    "p",
+    "Biểu phí có thể thay đổi theo từng công ty và quy định hiện hành; các con số trong bài là ví dụ minh họa. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
    ]
   ],
   "faq": [
    [
     "Bán lỗ có phải nộp thuế không?",
-    "Có. Thuế 0,1% tính trên giá trị bán, không tính trên lãi."
+    "Có. Thuế 0,1% tính trên giá trị bán, không tính trên lãi; vì vậy bán lỗ vẫn phải nộp."
    ],
    [
     "Thuế có được tự động khấu trừ không?",
-    "Có, công ty chứng khoán khấu trừ và nộp thay."
+    "Có. Công ty chứng khoán khấu trừ thuế bán và thuế cổ tức tiền mặt, nộp thay nhà đầu tư."
+   ],
+   [
+    "Lệnh đặt nhưng không khớp có mất phí không?",
+    "Không. Phí giao dịch chỉ tính trên phần lệnh đã khớp."
    ]
   ],
   "rel": [
@@ -4000,7 +4046,7 @@
  {
   "slug": "lai-kep-trong-dau-tu",
   "kw": "lãi kép trong đầu tư",
-  "title": "Lãi kép trong đầu tư chứng khoán: 100 triệu sau 20 năm thành bao nhiêu?",
+  "title": "Lãi kép trong đầu tư: 100 triệu sau 20 năm thành bao nhiêu?",
   "desc": "Lãi kép là gì, quy tắc 72 để tính thời gian gấp đôi tài sản, ví dụ 100 triệu với lợi nhuận 8%, 15%, 20% mỗi năm sau 20 năm và cách tận dụng lãi kép.",
   "grp": 7,
   "body": [
@@ -4190,8 +4236,8 @@
  {
   "slug": "quan-tri-von-la-gi",
   "kw": "quản trị vốn trong chứng khoán",
-  "title": "Quản trị vốn là gì? Kiến thức quan trọng nhất khi đầu tư chứng khoán",
-  "desc": "Quản trị vốn trong chứng khoán: vì sao bảo toàn vốn quan trọng nhất, lỗ bao nhiêu thì cần tăng bao nhiêu để hòa vốn, và 3 cách nhà đầu tư gần như chắc chắn mất tiền.",
+  "title": "Quản trị vốn là gì? Kiến thức quan trọng nhất khi đầu tư",
+  "desc": "Quản trị vốn trong chứng khoán: vì sao bảo toàn vốn quan trọng nhất, lỗ bao nhiêu thì cần tăng bao nhiêu để hòa vốn, và 3 cách dễ mất tiền.",
   "grp": 7,
   "body": [
    [
@@ -4781,37 +4827,78 @@
   "slug": "nen-dau-tu-chung-khoan-bao-nhieu-tien",
   "kw": "nên đầu tư chứng khoán bao nhiêu tiền",
   "grp": 7,
-  "title": "Nên đầu tư chứng khoán bao nhiêu tiền? Cách chia vốn cho người mới",
-  "desc": "Người mới nên bỏ bao nhiêu tiền vào chứng khoán: quỹ dự phòng trước, chỉ dùng tiền nhàn rỗi, bắt đầu nhỏ, chia vốn theo tỷ trọng, không dùng margin khi chưa có kinh nghiệm.",
+  "title": "Nên đầu tư chứng khoán bao nhiêu tiền? Cách chia vốn người mới",
+  "desc": "Người mới nên bỏ bao nhiêu tiền vào chứng khoán: quỹ dự phòng trước, chỉ dùng tiền nhàn rỗi, bắt đầu nhỏ, chia vốn theo tỷ trọng, tránh margin.",
   "body": [
    [
     "p",
-    "Không có con số đúng cho mọi người. Câu hỏi đúng là: <b>số tiền nào anh chị có thể để yên 3–5 năm mà không ảnh hưởng cuộc sống?</b>"
+    "Không có con số đúng cho mọi người. Câu hỏi đúng là: <b>số tiền nào anh chị có thể để yên 3–5 năm mà không ảnh hưởng cuộc sống?</b> Trả lời được câu này, bạn sẽ biết nên bắt đầu với bao nhiêu."
    ],
    [
     "h2",
-    "4 nguyên tắc trước khi bỏ tiền"
+    "1. Bốn nguyên tắc trước khi bỏ tiền"
    ],
    [
     "ol",
     [
-     "Có quỹ dự phòng 3–6 tháng chi tiêu để ở ngân hàng, không đưa vào chứng khoán.",
-     "Chỉ dùng tiền nhàn rỗi, không vay mượn, không dùng tiền sắp phải chi.",
-     "Bắt đầu với số nhỏ (vài triệu đến vài chục triệu) để học cách thị trường vận hành.",
-     "Không dùng margin khi chưa có ít nhất 1–2 năm kinh nghiệm."
+     "<b>Quỹ dự phòng trước</b>: để riêng 3–6 tháng chi tiêu ở ngân hàng, không đưa vào chứng khoán. Ốm đau, mất việc… không bắt bạn phải bán cổ phiếu đúng lúc giá thấp.",
+     "<b>Chỉ dùng tiền nhàn rỗi</b>: không vay mượn, không dùng tiền học phí, tiền nhà sắp phải trả.",
+     "<b>Bắt đầu nhỏ</b>: vài triệu đến vài chục triệu để học cách thị trường vận hành, học đặt lệnh, học cảm giác khi giá giảm.",
+     "<b>Không dùng margin</b> khi chưa có ít nhất 1–2 năm kinh nghiệm. Xem <a href=\"/f0/margin-la-gi.html\">margin là gì</a>."
     ]
    ],
    [
     "h2",
-    "Chia vốn thế nào?"
+    "2. Tỷ lệ tham khảo theo thu nhập"
+   ],
+   [
+    "p",
+    "Với người đi làm có thu nhập ổn định, một cách đơn giản là trích <b>10–20% thu nhập mỗi tháng</b> để đầu tư đều đặn. Ví dụ lương 15 triệu, trích 2–3 triệu mỗi tháng; sau 1 năm có 24–36 triệu tiền gốc, đủ để hình thành danh mục nhỏ mà không ảnh hưởng chi tiêu."
+   ],
+   [
+    "p",
+    "Một quy tắc khác hay được nhắc: tỷ lệ cổ phiếu trong tổng tài sản không nên vượt quá mức bạn chịu được nếu thị trường giảm 30–40%. Nếu nghĩ tới cảnh danh mục giảm một phần ba mà mất ngủ, hãy giảm tỷ lệ xuống."
+   ],
+   [
+    "h2",
+    "3. Chia vốn thế nào?"
    ],
    [
     "ul",
     [
-     "Không dồn hết vào 1 mã: chia cho 3–5 doanh nghiệp, mỗi mã một phần.",
-     "Mua dần nhiều lần thay vì mua một lần.",
-     "Giữ lại một phần tiền mặt cho lúc thị trường giảm mạnh."
+     "Không dồn hết vào 1 mã: chia cho 3–5 doanh nghiệp, mỗi mã một phần. Xem <a href=\"/f0/cach-phan-bo-ty-trong-co-phieu.html\">cách phân bổ tỷ trọng</a>.",
+     "Mua dần nhiều lần thay vì mua một lần – cách <a href=\"/f0/mua-trung-binh-gia-dca.html\">mua trung bình giá (DCA)</a> giúp không phải đoán đáy.",
+     "Giữ lại một phần tiền mặt cho lúc thị trường giảm mạnh.",
+     "Ưu tiên doanh nghiệp dễ hiểu, lợi nhuận ổn định; nhiều người bắt đầu bằng cổ phiếu ngân hàng lớn."
     ]
+   ],
+   [
+    "h2",
+    "4. Ba sai lầm khiến người mới mất tiền"
+   ],
+   [
+    "ul",
+    [
+     "Giao dịch quá nhiều: hơn 100 lệnh mỗi năm (khoảng 9–10 lệnh mỗi tháng) thì phí, thuế và quyết định cảm tính thường ăn hết lợi nhuận.",
+     "Dồn toàn bộ vốn vào một cổ phiếu vì nghe tin.",
+     "Vay margin mà không biết quản trị vốn – một đợt giảm bình thường cũng có thể bị bán giải chấp."
+    ]
+   ],
+   [
+    "h2",
+    "5. Lộ trình gợi ý năm đầu"
+   ],
+   [
+    "ol",
+    [
+     "Tháng 1–3: mở tài khoản, bỏ số tiền nhỏ, học đọc bảng giá và đặt lệnh.",
+     "Tháng 4–6: học đọc 3 chỉ số cơ bản P/E, P/B, ROE; ghi <a href=\"/f0/nhat-ky-giao-dich.html\">nhật ký giao dịch</a>.",
+     "Tháng 7–12: góp đều hàng tháng, chỉ tăng vốn khi đã quen với biến động."
+    ]
+   ],
+   [
+    "p",
+    "Muốn bắt đầu bằng tích sản cổ phiếu ngân hàng: xem <a href=\"/bao-cao-2026.html#tichsan\">bảng tích sản</a>. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
    ]
   ],
   "faq": [
@@ -4822,6 +4909,10 @@
    [
     "Có nên vay tiền để đầu tư chứng khoán?",
     "Không nên với người mới. Vay hoặc margin biến một đợt giảm giá bình thường thành khoản lỗ lớn."
+   ],
+   [
+    "Nên góp bao nhiêu mỗi tháng?",
+    "Tham khảo 10–20% thu nhập, sau khi đã có quỹ dự phòng 3–6 tháng chi tiêu."
    ]
   ],
   "rel": [
@@ -4848,8 +4939,8 @@
   "slug": "ngay-giao-dich-khong-huong-quyen",
   "kw": "ngày giao dịch không hưởng quyền",
   "grp": 2,
-  "title": "Ngày giao dịch không hưởng quyền là gì? Mua ngày nào để nhận cổ tức",
-  "desc": "Ngày giao dịch không hưởng quyền (GDKHQ) là gì, liên quan gì tới ngày đăng ký cuối cùng, mua trước ngày nào thì được nhận cổ tức, vì sao giá tham chiếu bị điều chỉnh.",
+  "title": "Ngày giao dịch không hưởng quyền là gì? Mua ngày nào nhận cổ tức",
+  "desc": "Ngày giao dịch không hưởng quyền (GDKHQ) là gì, liên quan gì ngày đăng ký cuối cùng, mua trước ngày nào để nhận cổ tức, vì sao giá được điều chỉnh.",
   "body": [
    [
     "p",
@@ -5135,7 +5226,7 @@
   "kw": "cổ phiếu quỹ là gì",
   "grp": 3,
   "title": "Cổ phiếu quỹ là gì? Doanh nghiệp mua lại cổ phiếu có tốt không",
-  "desc": "Cổ phiếu quỹ là cổ phiếu doanh nghiệp tự mua lại. Vì sao doanh nghiệp mua cổ phiếu quỹ, ảnh hưởng gì tới EPS và giá cổ phiếu, khi nào là tín hiệu tốt, khi nào cần cảnh giác.",
+  "desc": "Cổ phiếu quỹ là cổ phiếu doanh nghiệp tự mua lại. Vì sao mua lại, ảnh hưởng tới EPS và giá cổ phiếu, khi nào là tín hiệu tốt, khi nào cần cảnh giác.",
   "body": [
    [
     "p",
@@ -5208,8 +5299,8 @@
   "slug": "lai-suat-margin",
   "kw": "lãi suất margin",
   "grp": 5,
-  "title": "Lãi suất margin tính thế nào? Chi phí thật khi vay ký quỹ chứng khoán",
-  "desc": "Lãi suất margin được tính theo ngày trên số tiền vay. Cách tự ước tính chi phí vay, vì sao giữ margin lâu rất tốn kém, và lưu ý rủi ro khi kết hợp margin với lướt sóng.",
+  "title": "Lãi suất margin tính thế nào? Chi phí thật khi vay ký quỹ",
+  "desc": "Lãi suất margin tính theo ngày trên số tiền vay. Cách tự ước tính chi phí, vì sao giữ margin lâu rất tốn kém và rủi ro khi kết hợp với lướt sóng.",
   "body": [
    [
     "p",
@@ -6222,8 +6313,8 @@
   "slug": "dca-co-phieu-ngan-hang-hang-thang",
   "kw": "tích sản ngân hàng hàng tháng",
   "grp": 7,
-  "title": "Tích sản cổ phiếu ngân hàng hàng tháng (DCA): cách làm và sai lầm thường gặp",
-  "desc": "Cách tích sản cổ phiếu ngân hàng hàng tháng bằng phương pháp mua trung bình giá DCA: chia vốn, chọn mã, khi nào mua thêm và những sai lầm khiến tích sản thất bại.",
+  "title": "Tích sản cổ phiếu ngân hàng hàng tháng (DCA): cách làm, sai lầm",
+  "desc": "Cách tích sản cổ phiếu ngân hàng hàng tháng bằng DCA: chia vốn, chọn mã, khi nào mua thêm và những sai lầm khiến tích sản thất bại.",
   "body": [
    [
     "p",
@@ -7566,8 +7657,8 @@
   "slug": "nim-la-gi",
   "kw": "NIM là gì",
   "grp": 3,
-  "title": "NIM là gì? Biên lãi thuần – thước đo khả năng kiếm tiền của ngân hàng",
-  "desc": "NIM (biên lãi thuần) cho biết ngân hàng kiếm được bao nhiêu từ mỗi đồng tài sản sinh lãi. Cách hiểu NIM, NIM bao nhiêu là cao, và ví dụ thật VPB, MBB, VIB, TPB quý 3/2026.",
+  "title": "NIM là gì? Biên lãi thuần – thước đo sinh lời của ngân hàng",
+  "desc": "NIM (biên lãi thuần) cho biết ngân hàng kiếm bao nhiêu từ mỗi đồng tài sản sinh lãi. NIM bao nhiêu là cao, ví dụ VPB, MBB, VIB, TPB quý 3/2026.",
   "body": [
    [
     "p",
@@ -7857,8 +7948,8 @@
   "slug": "lai-suat-tang-anh-huong-chung-khoan",
   "kw": "lãi suất tăng ảnh hưởng chứng khoán",
   "grp": 8,
-  "title": "Lãi suất tăng ảnh hưởng thế nào đến chứng khoán? Nhóm nào chịu tác động",
-  "desc": "Vì sao lãi suất tăng thường khiến chứng khoán giảm: dòng tiền chuyển sang tiết kiệm, chi phí vay tăng, định giá giảm. Ngân hàng, bất động sản, chứng khoán bị tác động ra sao.",
+  "title": "Lãi suất tăng ảnh hưởng thế nào đến chứng khoán?",
+  "desc": "Vì sao lãi suất tăng thường khiến chứng khoán giảm: tiền chuyển sang tiết kiệm, chi phí vay tăng, định giá giảm. Ngành nào chịu tác động mạnh.",
   "body": [
    [
     "p",
@@ -8000,8 +8091,8 @@
   "slug": "he-so-no-de-la-gi",
   "kw": "hệ số D/E là gì",
   "grp": 3,
-  "title": "Hệ số D/E là gì? Cách tính nợ trên vốn chủ sở hữu và đọc mức an toàn",
-  "desc": "Hệ số D/E (nợ trên vốn chủ sở hữu) cho biết doanh nghiệp dùng bao nhiêu nợ so với vốn của cổ đông. Công thức, ví dụ bằng số, mức tham khảo theo ngành và các sai lầm khi đọc.",
+  "title": "Hệ số D/E là gì? Cách tính nợ trên vốn chủ và mức an toàn",
+  "desc": "Hệ số D/E (nợ trên vốn chủ) cho biết doanh nghiệp dùng bao nhiêu nợ so với vốn cổ đông. Công thức, ví dụ bằng số, mức tham khảo theo ngành.",
   "body": [
    [
     "p",
@@ -8179,8 +8270,8 @@
   "slug": "co-phieu-chu-ky-la-gi",
   "kw": "cổ phiếu chu kỳ là gì",
   "grp": 8,
-  "title": "Cổ phiếu chu kỳ là gì? Nhận diện, ngành tiêu biểu và cách đọc P/E ngược",
-  "desc": "Cổ phiếu chu kỳ là cổ phiếu có lợi nhuận lên xuống theo chu kỳ kinh tế và giá hàng hóa. Cách nhận diện, các ngành chu kỳ ở Việt Nam, vì sao P/E thấp có thể là đỉnh và sai lầm thường gặp.",
+  "title": "Cổ phiếu chu kỳ là gì? Nhận diện và cách đọc P/E ngược",
+  "desc": "Cổ phiếu chu kỳ có lợi nhuận lên xuống theo kinh tế và giá hàng hóa. Cách nhận diện, ngành chu kỳ ở Việt Nam, vì sao P/E thấp có thể là đỉnh.",
   "body": [
    [
     "p",
@@ -8340,8 +8431,8 @@
   "slug": "duong-xu-huong-trendline-la-gi",
   "kw": "đường xu hướng trendline là gì",
   "grp": 4,
-  "title": "Đường xu hướng (trendline) là gì? Cách vẽ đúng và đọc tín hiệu phá vỡ",
-  "desc": "Đường xu hướng (trendline) là đường thẳng nối các đáy hoặc các đỉnh để thể hiện hướng đi của giá. Cách vẽ từng bước, ví dụ bằng số, kênh giá, cách xác nhận phá vỡ và sai lầm thường gặp.",
+  "title": "Đường xu hướng (trendline) là gì? Cách vẽ và đọc phá vỡ",
+  "desc": "Trendline là đường nối các đáy hoặc các đỉnh thể hiện hướng đi của giá. Cách vẽ từng bước, ví dụ bằng số, kênh giá và cách xác nhận phá vỡ.",
   "body": [
    [
     "p",
@@ -8495,7 +8586,7 @@
   "slug": "tich-san-co-phieu-ngan-hang-quoc-doanh",
   "kw": "tích sản VCB BID CTG",
   "grp": 7,
-  "title": "Tích sản cổ phiếu ngân hàng quốc doanh: VCB, BID, CTG khác nhau thế nào?",
+  "title": "Tích sản ngân hàng quốc doanh: VCB, BID, CTG khác nhau thế nào?",
   "desc": "So sánh ba ngân hàng quốc doanh VCB, BID, CTG khi tích sản dài hạn: ROE, P/E, P/B, cổ tức, ưu điểm và rủi ro của nhóm ngân hàng có vốn Nhà nước.",
   "body": [
    [
@@ -9385,8 +9476,8 @@
   "slug": "ty-gia-tang-anh-huong-co-phieu",
   "kw": "tỷ giá tăng ảnh hưởng chứng khoán",
   "grp": 8,
-  "title": "Tỷ giá USD tăng ảnh hưởng thế nào đến cổ phiếu? Ngành nào lợi, ngành nào hại",
-  "desc": "Tỷ giá USD/VND tăng tác động đến chứng khoán Việt Nam qua dòng vốn ngoại, lãi suất, nợ vay ngoại tệ. Ngành xuất khẩu hưởng lợi, ngành nhập khẩu và vay USD bất lợi.",
+  "title": "Tỷ giá USD tăng ảnh hưởng thế nào đến cổ phiếu? Ngành nào lợi",
+  "desc": "Tỷ giá USD/VND tăng tác động tới chứng khoán qua dòng vốn ngoại, lãi suất, nợ ngoại tệ. Ngành xuất khẩu hưởng lợi, ngành nhập khẩu và vay USD bất lợi.",
   "body": [
    [
     "p",
@@ -9707,7 +9798,7 @@
   "kw": "bắt đáy cổ phiếu",
   "grp": 5,
   "title": "Bắt đáy cổ phiếu là gì? Rủi ro, dấu hiệu và cách làm an toàn hơn",
-  "desc": "Bắt đáy cổ phiếu là gì, vì sao bắt đáy dễ thành bắt dao rơi, khác gì mua trung bình giá, dấu hiệu đáy đang hình thành và cách chia vốn, đặt điểm cắt lỗ có ví dụ bằng số.",
+  "desc": "Bắt đáy cổ phiếu là gì, vì sao dễ thành bắt dao rơi, khác gì mua trung bình giá, dấu hiệu đáy hình thành và cách chia vốn, đặt điểm cắt lỗ.",
   "body": [
    [
     "p",
@@ -9863,8 +9954,8 @@
   "slug": "fibonacci-thoai-lui-la-gi",
   "kw": "Fibonacci thoái lui là gì",
   "grp": 4,
-  "title": "Fibonacci thoái lui là gì? Cách vẽ, cách tính và ví dụ cho người mới",
-  "desc": "Fibonacci thoái lui là gì, các mức 23,6% 38,2% 50% 61,8%, công thức tự tính, cách vẽ trên biểu đồ, kết hợp với hỗ trợ kháng cự và sai lầm thường gặp, có ví dụ bằng số.",
+  "title": "Fibonacci thoái lui là gì? Cách vẽ, cách tính cho người mới",
+  "desc": "Fibonacci thoái lui là gì, các mức 23,6% 38,2% 50% 61,8%, công thức tự tính, cách vẽ trên biểu đồ, kết hợp hỗ trợ kháng cự, có ví dụ bằng số.",
   "body": [
    [
     "p",
@@ -11181,8 +11272,8 @@
   "slug": "fcf-dong-tien-tu-do-la-gi",
   "kw": "dòng tiền tự do FCF là gì",
   "grp": 3,
-  "title": "Dòng tiền tự do (FCF) là gì? Cách tính, ví dụ và cách đọc cho người mới",
-  "desc": "Dòng tiền tự do (FCF) là tiền doanh nghiệp còn lại sau khi chi đầu tư để duy trì và mở rộng. Công thức, cách lấy số từ báo cáo lưu chuyển tiền tệ, ví dụ và sai lầm hay gặp.",
+  "title": "Dòng tiền tự do (FCF) là gì? Cách tính và ví dụ cho người mới",
+  "desc": "Dòng tiền tự do (FCF) là tiền doanh nghiệp còn lại sau chi đầu tư. Công thức, cách lấy số từ báo cáo lưu chuyển tiền tệ, ví dụ và sai lầm hay gặp.",
   "body": [
    [
     "p",
@@ -11345,8 +11436,8 @@
   "slug": "he-so-beta-la-gi",
   "kw": "hệ số beta cổ phiếu là gì",
   "grp": 5,
-  "title": "Hệ số beta là gì? Đo độ biến động cổ phiếu so với VN-Index cho người mới",
-  "desc": "Hệ số beta cho biết cổ phiếu dao động mạnh hay yếu hơn thị trường. Cách hiểu beta > 1, < 1, cách tự tính bằng Excel, ví dụ và cách dùng beta để phân bổ vốn.",
+  "title": "Hệ số beta là gì? Đo độ biến động cổ phiếu so với VN-Index",
+  "desc": "Hệ số beta cho biết cổ phiếu dao động mạnh hay yếu hơn thị trường. Cách hiểu beta > 1, < 1, cách tự tính bằng Excel và dùng beta để phân bổ vốn.",
   "body": [
    [
     "p",
@@ -11505,8 +11596,8 @@
   "slug": "co-phieu-tang-truong-va-co-phieu-gia-tri",
   "kw": "cổ phiếu tăng trưởng và cổ phiếu giá trị",
   "grp": 3,
-  "title": "Cổ phiếu tăng trưởng và cổ phiếu giá trị khác nhau thế nào? Cách nhận biết cho người mới",
-  "desc": "Cổ phiếu tăng trưởng (growth) và cổ phiếu giá trị (value) khác nhau ở tốc độ lớn, định giá và rủi ro. Tiêu chí nhận biết, ví dụ bằng số, bẫy giá trị và cách kết hợp hai nhóm.",
+  "title": "Cổ phiếu tăng trưởng và cổ phiếu giá trị khác nhau thế nào?",
+  "desc": "Cổ phiếu tăng trưởng và cổ phiếu giá trị khác nhau ở tốc độ lớn, định giá và rủi ro. Tiêu chí nhận biết, ví dụ bằng số, bẫy giá trị và cách kết hợp.",
   "body": [
    [
     "p",
@@ -12254,5 +12345,855 @@
    "cach-chon-co-phieu-ngan-hang-de-tich-san",
    "cach-phan-bo-ty-trong-co-phieu"
   ]
+ },
+ {
+  "slug": "bao-phu-no-xau-la-gi",
+  "kw": "bao phủ nợ xấu là gì",
+  "grp": 3,
+  "title": "Bao phủ nợ xấu là gì? Cách đọc “bộ đệm” của ngân hàng",
+  "desc": "Tỷ lệ bao phủ nợ xấu là gì, cách tính, bao nhiêu là dày hay mỏng, và số liệu quý 3/2026 của các ngân hàng niêm yết để người mới dễ so sánh.",
+  "body": [
+   [
+    "p",
+    "Khi đọc báo cáo tài chính ngân hàng, người mới thường chỉ nhìn lợi nhuận và tỷ lệ nợ xấu. Nhưng có một chỉ số quan trọng không kém: <b>tỷ lệ bao phủ nợ xấu</b>. Nó cho biết ngân hàng đã “để dành” bao nhiêu tiền để đỡ cho những khoản vay có thể không đòi được."
+   ],
+   [
+    "h2",
+    "1. Bao phủ nợ xấu là gì?"
+   ],
+   [
+    "p",
+    "Tỷ lệ bao phủ nợ xấu = <b>Dự phòng rủi ro cho vay ÷ Nợ xấu (nhóm 3–5)</b>. Dự phòng là khoản ngân hàng đã trích từ lợi nhuận các kỳ trước, ghi giảm trên bảng cân đối. Nếu bao phủ 100%, nghĩa là giả sử toàn bộ nợ xấu mất trắng, ngân hàng đã có sẵn đủ tiền dự phòng để bù, không phải trích thêm từ lợi nhuận tương lai."
+   ],
+   [
+    "p",
+    "Ví dụ: một ngân hàng có 10.000 tỷ nợ xấu và 8.000 tỷ dự phòng thì bao phủ là 80%. Nếu nợ xấu không thu hồi được, ngân hàng còn thiếu 2.000 tỷ phải trích thêm – và khoản đó sẽ trừ thẳng vào lợi nhuận các quý sau."
+   ],
+   [
+    "h2",
+    "2. Bao nhiêu là dày, bao nhiêu là mỏng?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Trên 100%</b>: bộ đệm dày, ngân hàng có dư địa giảm trích lập khi cần, lợi nhuận ít bị “sốc”.",
+     "<b>Khoảng 60–100%</b>: mức trung bình, cần xem thêm xu hướng nợ xấu.",
+     "<b>Dưới 60%</b>: bộ đệm mỏng; nếu nợ xấu tăng, ngân hàng dễ phải trích lập nhiều, lợi nhuận giảm."
+    ]
+   ],
+   [
+    "p",
+    "Không có ngưỡng “chuẩn” cố định. Ngân hàng cho vay tiêu dùng nhiều thường có nợ xấu cao hơn nhưng cũng có lãi suất cho vay cao hơn, nên phải nhìn cùng NIM và lợi nhuận."
+   ],
+   [
+    "h2",
+    "3. Số liệu thực tế quý 3/2026"
+   ],
+   [
+    "p",
+    "Theo BCTC quý 3/2026 các ngân hàng niêm yết (tổng hợp trên chungkhoanhuynguyen.com):"
+   ],
+   [
+    "ul",
+    [
+     "Bộ đệm dày nhất: <b>VCB khoảng 243%</b>, TCB khoảng 107%, ACB khoảng 91%, KLB khoảng 81%. CTG (quý 2/2026) khoảng 134%.",
+     "Ở giữa: NAB khoảng 67%, LPB khoảng 63%, OCB khoảng 58%, VAB khoảng 55%.",
+     "Mỏng hơn: VPB khoảng 54%, MSB khoảng 47%, VIB khoảng 42%, EIB khoảng 41%."
+    ]
+   ],
+   [
+    "p",
+    "Điều đáng chú ý: VCB quý 3/2026 có lợi nhuận chỉ tăng 0,1% so với cùng kỳ vì chi phí dự phòng tăng gần 700%. Tức là ngân hàng chọn trích thêm để bộ đệm dày hơn nữa, chấp nhận lợi nhuận đi ngang trong ngắn hạn."
+   ],
+   [
+    "h2",
+    "4. Đọc bao phủ cùng chỉ số nào?"
+   ],
+   [
+    "ol",
+    [
+     "<b>Tỷ lệ nợ xấu</b>: bao phủ 50% với nợ xấu 1% khác hẳn bao phủ 50% với nợ xấu 4%. Xem bài <a href=\"/f0/no-xau-ngan-hang-la-gi.html\">nợ xấu ngân hàng là gì</a>.",
+     "<b>Xu hướng</b>: bao phủ giảm dần qua các quý trong khi nợ xấu tăng là tín hiệu cần thận trọng.",
+     "<b>Chi phí dự phòng</b>: lợi nhuận tăng nhờ giảm trích lập thì chất lượng lợi nhuận kém hơn lợi nhuận tăng nhờ cho vay.",
+     "<b>Nợ nhóm 2</b> (nợ cần chú ý): đây là “hàng chờ” có thể chuyển thành nợ xấu."
+    ]
+   ],
+   [
+    "h2",
+    "5. Ý nghĩa với người tích sản"
+   ],
+   [
+    "p",
+    "Người tích sản cổ phiếu ngân hàng giữ cổ phiếu nhiều năm, đi qua cả chu kỳ tốt lẫn xấu. Ngân hàng có bộ đệm dày thường ít bị “đứt gãy” lợi nhuận khi kinh tế khó khăn, nhờ đó cổ phiếu cũng ít biến động mạnh hơn. Ngược lại, ngân hàng bộ đệm mỏng có thể lãi rất đẹp lúc thuận lợi nhưng dễ hụt hơi khi nợ xấu tăng."
+   ],
+   [
+    "p",
+    "Muốn so nhanh ROE, P/B, nợ xấu các ngân hàng trước khi tích sản: xem <a href=\"/bao-cao-2026.html#tichsan\">bảng tích sản</a>."
+   ],
+   [
+    "p",
+    "Số liệu là tổng hợp từ BCTC, chỉ mang tính tham khảo, không phải khuyến nghị mua bán. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Bao phủ nợ xấu bao nhiêu là an toàn?",
+    "Không có ngưỡng cố định; trên 100% được xem là bộ đệm dày, dưới 60% là mỏng. Cần xem cùng tỷ lệ nợ xấu và xu hướng qua các quý."
+   ],
+   [
+    "Vì sao bao phủ cao mà lợi nhuận lại giảm?",
+    "Vì để tăng bao phủ, ngân hàng phải trích thêm dự phòng, khoản này trừ vào lợi nhuận kỳ đó – như VCB quý 3/2026."
+   ],
+   [
+    "Xem bao phủ nợ xấu ở đâu?",
+    "Trong thuyết minh BCTC ngân hàng (dự phòng rủi ro cho vay và phân loại nợ), hoặc các trang tổng hợp số liệu theo quý."
+   ]
+  ],
+  "rel": [
+   "no-xau-ngan-hang-la-gi",
+   "doc-bctc-ngan-hang",
+   "nim-la-gi",
+   "tich-san-co-phieu-ngan-hang"
+  ],
+  "add": []
+ },
+ {
+  "slug": "chi-phi-du-phong-la-gi",
+  "kw": "chi phí dự phòng ngân hàng là gì",
+  "grp": 3,
+  "title": "Chi phí dự phòng ngân hàng là gì? Vì sao lãi tăng chưa chắc tốt",
+  "desc": "Chi phí dự phòng rủi ro tín dụng là gì, ảnh hưởng thế nào tới lợi nhuận ngân hàng, cách nhận biết lãi tăng nhờ trích lập ít – kèm ví dụ quý 3/2026.",
+  "body": [
+   [
+    "p",
+    "Mỗi mùa báo cáo, tiêu đề “ngân hàng lãi tăng mạnh” xuất hiện khắp nơi. Nhưng người đọc BCTC kỹ sẽ hỏi thêm: lãi tăng vì kinh doanh tốt hơn, hay vì <b>trích dự phòng ít đi</b>? Bài này giải thích chi phí dự phòng và cách đọc nó."
+   ],
+   [
+    "h2",
+    "1. Chi phí dự phòng là gì?"
+   ],
+   [
+    "p",
+    "Ngân hàng cho vay thì luôn có rủi ro một phần khách hàng không trả được. Theo quy định, ngân hàng phải trích trước một khoản từ lợi nhuận để phòng rủi ro đó – gọi là <b>chi phí dự phòng rủi ro tín dụng</b>. Trên báo cáo kết quả kinh doanh, nó nằm ngay trước dòng lợi nhuận trước thuế:"
+   ],
+   [
+    "p",
+    "<b>Lợi nhuận trước thuế = Thu nhập hoạt động − Chi phí hoạt động − Chi phí dự phòng</b>"
+   ],
+   [
+    "p",
+    "Vì vậy, chỉ cần dự phòng giảm, lợi nhuận đã tăng, dù thu nhập không đổi. Và ngược lại."
+   ],
+   [
+    "h2",
+    "2. Ví dụ thật từ quý 3/2026"
+   ],
+   [
+    "ul",
+    [
+     "<b>VCB</b>: thu nhập lãi thuần tăng 39,1%, nhưng chi phí dự phòng tăng khoảng 697% → lợi nhuận quý chỉ tăng 0,1%. Bù lại, bao phủ nợ xấu khoảng 243%, rất dày.",
+     "<b>ACB</b>: dự phòng tăng khoảng 223% → lợi nhuận quý tăng 9,8%, lũy kế 9 tháng chỉ +3,7%.",
+     "<b>TCB</b>: lợi nhuận quý +23,7%, trong đó chi phí dự phòng giảm 38,8%.",
+     "<b>BID</b>: lợi nhuận quý +39,9%, chi phí dự phòng giảm 25,0%.",
+     "<b>VAB</b>: lợi nhuận +10,1% dù thu nhập lãi thuần giảm 16,3%, nhờ dự phòng giảm khoảng 89,6%."
+    ]
+   ],
+   [
+    "p",
+    "Cùng là “lãi tăng”, nhưng chất lượng rất khác nhau. Lợi nhuận tăng nhờ cho vay và dịch vụ thì bền hơn lợi nhuận tăng nhờ giảm trích lập."
+   ],
+   [
+    "h2",
+    "3. Khi nào giảm dự phòng là hợp lý?"
+   ],
+   [
+    "p",
+    "Giảm trích lập không phải lúc nào cũng xấu. Nếu nợ xấu giảm, khách hàng trả nợ tốt hơn và bộ đệm đã dày, ngân hàng hoàn toàn có cơ sở trích ít đi. Ngược lại, nếu nợ xấu đang tăng mà dự phòng lại giảm, bộ đệm sẽ mỏng dần – đó là lúc cần thận trọng."
+   ],
+   [
+    "h2",
+    "4. Ba bước kiểm tra nhanh"
+   ],
+   [
+    "ol",
+    [
+     "So <b>thu nhập lãi thuần</b> với lợi nhuận: lõi cho vay tăng hay giảm?",
+     "Xem <b>chi phí dự phòng</b> tăng hay giảm so với cùng kỳ.",
+     "Xem <b>nợ xấu và bao phủ nợ xấu</b>: bộ đệm đang dày lên hay mỏng đi? Xem thêm <a href=\"/f0/no-xau-ngan-hang-la-gi.html\">nợ xấu ngân hàng</a>."
+    ]
+   ],
+   [
+    "h2",
+    "5. Bài học cho người mới"
+   ],
+   [
+    "p",
+    "Đừng chỉ đọc con số lợi nhuận trong tiêu đề. Ngân hàng có thể “điều tiết” lợi nhuận giữa các năm bằng cách trích nhiều lúc thuận lợi và trích ít lúc khó khăn. Người đầu tư dài hạn nên ưu tiên ngân hàng có thu nhập cốt lõi tăng đều và bộ đệm dự phòng đủ dày, thay vì ngân hàng có một quý lãi đột biến."
+   ],
+   [
+    "p",
+    "Muốn so nhanh ROE, P/B, nợ xấu các ngân hàng trước khi tích sản: xem <a href=\"/bao-cao-2026.html#tichsan\">bảng tích sản</a>."
+   ],
+   [
+    "p",
+    "Số liệu tổng hợp từ BCTC quý 3/2026, không phải khuyến nghị mua bán. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Chi phí dự phòng tăng có phải ngân hàng đang gặp khó?",
+    "Không hẳn. Có thể nợ xấu tăng, nhưng cũng có thể ngân hàng chủ động trích thêm để bộ đệm dày hơn. Cần xem cùng nợ xấu và bao phủ."
+   ],
+   [
+    "Hoàn nhập dự phòng là gì?",
+    "Là khi khoản nợ đã trích dự phòng được thu hồi, ngân hàng ghi ngược lại phần dự phòng, làm tăng lợi nhuận kỳ đó."
+   ],
+   [
+    "Dự phòng nằm ở đâu trên BCTC?",
+    "Trên báo cáo kết quả kinh doanh là dòng chi phí dự phòng rủi ro tín dụng; trên bảng cân đối là dự phòng rủi ro cho vay khách hàng."
+   ]
+  ],
+  "rel": [
+   "no-xau-ngan-hang-la-gi",
+   "doc-bctc-ngan-hang",
+   "bao-cao-ket-qua-kinh-doanh-la-gi",
+   "chu-ky-co-phieu-ngan-hang"
+  ],
+  "add": []
+ },
+ {
+  "slug": "ky-thu-tien-binh-quan",
+  "kw": "kỳ thu tiền bình quân",
+  "grp": 3,
+  "title": "Kỳ thu tiền bình quân là gì? Cách tính và ý nghĩa",
+  "desc": "Kỳ thu tiền bình quân (DSO) cho biết doanh nghiệp mất bao lâu để thu tiền bán hàng. Công thức, ví dụ tính, cách đọc và các dấu hiệu cảnh báo cho người mới.",
+  "body": [
+   [
+    "p",
+    "Doanh nghiệp báo doanh thu tăng mạnh nhưng tiền lại không về – đây là chuyện không hiếm. Một chỉ số giúp phát hiện điều đó là <b>kỳ thu tiền bình quân</b> (tiếng Anh: Days Sales Outstanding – DSO)."
+   ],
+   [
+    "h2",
+    "1. Kỳ thu tiền bình quân là gì?"
+   ],
+   [
+    "p",
+    "Đó là số ngày trung bình doanh nghiệp cần để thu được tiền sau khi bán hàng chịu cho khách. Kỳ thu tiền càng ngắn, tiền quay vòng càng nhanh, doanh nghiệp càng ít phải đi vay để duy trì hoạt động."
+   ],
+   [
+    "h2",
+    "2. Cách tính"
+   ],
+   [
+    "p",
+    "<b>Kỳ thu tiền bình quân = Phải thu khách hàng bình quân ÷ Doanh thu thuần × 365</b>"
+   ],
+   [
+    "p",
+    "Phải thu bình quân = (phải thu đầu kỳ + phải thu cuối kỳ) ÷ 2, lấy trên <a href=\"/f0/bang-can-doi-ke-toan-la-gi.html\">bảng cân đối kế toán</a>. Doanh thu thuần lấy trên báo cáo kết quả kinh doanh cả năm (hoặc 4 quý gần nhất)."
+   ],
+   [
+    "p",
+    "Ví dụ minh họa: doanh nghiệp A có doanh thu năm 3.650 tỷ, phải thu bình quân 500 tỷ. Kỳ thu tiền = 500 ÷ 3.650 × 365 = 50 ngày. Nghĩa là trung bình 50 ngày sau khi giao hàng, A mới nhận được tiền."
+   ],
+   [
+    "h2",
+    "3. Bao nhiêu ngày là tốt?"
+   ],
+   [
+    "p",
+    "Không có con số chung, vì mỗi ngành một kiểu bán hàng:"
+   ],
+   [
+    "ul",
+    [
+     "<b>Bán lẻ, siêu thị, chuỗi điện thoại</b>: khách trả tiền ngay, kỳ thu tiền thường rất ngắn.",
+     "<b>Sản xuất bán cho đại lý</b> (vật liệu xây dựng, ống nhựa, thép): thường vài chục ngày vì phải cho đại lý nợ.",
+     "<b>Xây dựng, công nghệ làm dự án</b>: có thể kéo dài nhiều tháng vì thanh toán theo tiến độ nghiệm thu."
+    ]
+   ],
+   [
+    "p",
+    "Cách đúng là <b>so với chính doanh nghiệp đó qua nhiều năm</b> và so với đối thủ cùng ngành."
+   ],
+   [
+    "h2",
+    "4. Dấu hiệu cảnh báo"
+   ],
+   [
+    "ol",
+    [
+     "Kỳ thu tiền tăng đều qua nhiều quý trong khi doanh thu tăng mạnh: doanh nghiệp có thể đang nới điều kiện bán chịu để “đẩy” doanh thu.",
+     "Phải thu tăng nhanh hơn doanh thu: tiền nằm ở khách hàng, không về túi doanh nghiệp.",
+     "Dòng tiền kinh doanh âm nhiều năm dù lợi nhuận dương: xem <a href=\"/f0/bao-cao-luu-chuyen-tien-te-la-gi.html\">báo cáo lưu chuyển tiền tệ</a>.",
+     "Dự phòng phải thu khó đòi tăng: một phần khách hàng có thể không trả."
+    ]
+   ],
+   [
+    "h2",
+    "5. Kết hợp với các chỉ số khác"
+   ],
+   [
+    "p",
+    "Kỳ thu tiền thường được đọc cùng <a href=\"/f0/hang-ton-kho-la-gi.html\">vòng quay hàng tồn kho</a> và kỳ trả tiền cho nhà cung cấp. Ghép ba con số này lại sẽ ra <b>chu kỳ tiền mặt</b>: doanh nghiệp bỏ tiền ra bao lâu mới thu về. Chu kỳ càng ngắn, nhu cầu vốn lưu động càng ít, doanh nghiệp càng ít phụ thuộc vay ngân hàng."
+   ],
+   [
+    "h2",
+    "6. Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Kỳ thu tiền bình quân đo tốc độ thu tiền bán hàng.",
+     "So theo thời gian và với doanh nghiệp cùng ngành, không so chéo ngành.",
+     "Doanh thu tăng mà kỳ thu tiền cũng tăng mạnh là điểm cần soi kỹ."
+    ]
+   ],
+   [
+    "p",
+    "Ví dụ trong bài là số minh họa, không phải khuyến nghị mua bán. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Kỳ thu tiền bình quân và vòng quay phải thu khác gì nhau?",
+    "Vòng quay phải thu = doanh thu ÷ phải thu bình quân. Kỳ thu tiền = 365 ÷ vòng quay. Hai cách nói của cùng một ý."
+   ],
+   [
+    "Ngân hàng có dùng chỉ số này không?",
+    "Không. Kỳ thu tiền dùng cho doanh nghiệp sản xuất, thương mại, dịch vụ; ngân hàng có bộ chỉ số riêng như NIM, nợ xấu."
+   ],
+   [
+    "Lấy số liệu tính ở đâu?",
+    "Phải thu khách hàng trên bảng cân đối kế toán, doanh thu thuần trên báo cáo kết quả kinh doanh trong BCTC."
+   ]
+  ],
+  "rel": [
+   "hang-ton-kho-la-gi",
+   "cach-doc-bao-cao-tai-chinh",
+   "bao-cao-luu-chuyen-tien-te-la-gi",
+   "fcf-dong-tien-tu-do-la-gi"
+  ],
+  "add": []
+ },
+ {
+  "slug": "doc-bctc-cong-ty-bat-dong-san",
+  "kw": "đọc báo cáo tài chính công ty bất động sản",
+  "grp": 3,
+  "title": "Cách đọc BCTC công ty bất động sản cho người mới",
+  "desc": "Đọc BCTC doanh nghiệp bất động sản: hàng tồn kho, người mua trả tiền trước, nợ vay, doanh thu theo bàn giao – và vì sao lợi nhuận từng quý dao động mạnh.",
+  "body": [
+   [
+    "p",
+    "Báo cáo tài chính của công ty bất động sản khác hẳn doanh nghiệp sản xuất hay bán lẻ. Lợi nhuận có quý tăng vài trăm phần trăm, quý sau lại giảm gần hết. Hiểu cách ghi nhận sẽ giúp người mới tránh hiểu nhầm."
+   ],
+   [
+    "h2",
+    "1. Doanh thu ghi nhận khi bàn giao"
+   ],
+   [
+    "p",
+    "Công ty bất động sản thường chỉ ghi nhận doanh thu khi <b>bàn giao</b> căn hộ, nhà phố hay đất nền cho khách, chứ không phải lúc ký hợp đồng hay thu tiền đợt đầu. Vì vậy doanh thu và lợi nhuận đi theo <b>tiến độ bàn giao dự án</b>."
+   ],
+   [
+    "p",
+    "Ví dụ quý 3/2026: VHM lãi 23.146 tỷ (+453,2% so với cùng kỳ), biên gộp 60,3%; trong khi KDH có doanh thu giảm 96,2%, NLG lãi giảm 96,7%. Không phải doanh nghiệp “tốt lên” hay “xấu đi” chỉ trong một quý – mà là quý đó có hay không có dự án bàn giao. Nên nhìn <b>lũy kế 4 quý hoặc nhiều năm</b>."
+   ],
+   [
+    "h2",
+    "2. Hàng tồn kho – tài sản lớn nhất"
+   ],
+   [
+    "p",
+    "Với công ty bất động sản, <a href=\"/f0/hang-ton-kho-la-gi.html\">hàng tồn kho</a> chủ yếu là quỹ đất và dự án đang xây dựng, thường chiếm phần lớn tổng tài sản. Cần xem: dự án nằm ở đâu, pháp lý đã hoàn chỉnh chưa, bao lâu nữa mới bán và bàn giao được. Tồn kho lớn nhưng vướng pháp lý nhiều năm là vốn “chết”."
+   ],
+   [
+    "h2",
+    "3. Người mua trả tiền trước – chỉ báo doanh thu tương lai"
+   ],
+   [
+    "p",
+    "Khi khách đóng tiền theo tiến độ nhưng chưa nhận nhà, khoản này nằm ở mục <b>người mua trả tiền trước</b> (hoặc doanh thu chưa thực hiện) bên phần nợ phải trả. Khoản này tăng nghĩa là dự án bán tốt và sẽ thành doanh thu khi bàn giao. Đây là một trong những chỉ báo hữu ích nhất khi đọc BCTC bất động sản."
+   ],
+   [
+    "h2",
+    "4. Nợ vay và chi phí lãi vay"
+   ],
+   [
+    "ul",
+    [
+     "Xem <a href=\"/f0/he-so-no-de-la-gi.html\">hệ số nợ trên vốn chủ</a>: bất động sản dùng đòn bẩy nhiều, nhưng nợ quá cao là rủi ro khi lãi suất tăng hoặc bán hàng chậm.",
+     "Xem trái phiếu đến hạn trong 12 tháng tới: áp lực trả nợ lớn có thể buộc doanh nghiệp bán dự án giá thấp.",
+     "Chi phí lãi vay có thể được vốn hóa vào giá trị dự án, nên nhìn dòng tiền trả lãi thực tế trên báo cáo lưu chuyển tiền tệ."
+    ]
+   ],
+   [
+    "h2",
+    "5. Dòng tiền kinh doanh"
+   ],
+   [
+    "p",
+    "Công ty bất động sản hay có dòng tiền kinh doanh âm trong giai đoạn mua đất, xây dựng – điều này bình thường. Nhưng nếu âm kéo dài nhiều năm, doanh nghiệp phải liên tục vay hoặc phát hành thêm cổ phiếu. Đọc thêm <a href=\"/f0/bao-cao-luu-chuyen-tien-te-la-gi.html\">báo cáo lưu chuyển tiền tệ</a>."
+   ],
+   [
+    "h2",
+    "6. Checklist 5 điểm"
+   ],
+   [
+    "ol",
+    [
+     "Doanh thu, lợi nhuận lũy kế 4 quý – không kết luận từ một quý.",
+     "Người mua trả tiền trước tăng hay giảm.",
+     "Hàng tồn kho: dự án nào, pháp lý ra sao.",
+     "Nợ vay, trái phiếu đến hạn.",
+     "Lợi nhuận khác, lợi nhuận từ chuyển nhượng công ty con: có phải khoản một lần không."
+    ]
+   ],
+   [
+    "p",
+    "Số liệu ví dụ từ BCTC quý 3/2026, chỉ để minh họa cách đọc, không phải khuyến nghị mua bán. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Vì sao lợi nhuận công ty bất động sản dao động mạnh?",
+    "Vì doanh thu ghi nhận khi bàn giao dự án; quý có bàn giao lớn thì lãi cao, quý không có thì thấp."
+   ],
+   [
+    "Chỉ số nào báo trước doanh thu bất động sản?",
+    "Người mua trả tiền trước (doanh thu chưa thực hiện): tiền khách đã đóng nhưng chưa nhận nhà."
+   ],
+   [
+    "Có nên định giá bằng P/E một quý?",
+    "Không nên. Hãy dùng lợi nhuận nhiều năm, kết hợp P/B và giá trị quỹ đất."
+   ]
+  ],
+  "rel": [
+   "cach-doc-bao-cao-tai-chinh",
+   "hang-ton-kho-la-gi",
+   "he-so-no-de-la-gi",
+   "bao-cao-luu-chuyen-tien-te-la-gi"
+  ],
+  "add": []
+ },
+ {
+  "slug": "xu-huong-tang-giam-di-ngang",
+  "kw": "xu hướng tăng giảm đi ngang",
+  "grp": 4,
+  "title": "Xu hướng tăng, giảm, đi ngang: cách nhận biết cho người mới",
+  "desc": "Ba trạng thái của giá cổ phiếu: xu hướng tăng, giảm và đi ngang. Cách nhận biết bằng đỉnh đáy, đường trung bình và khối lượng, cùng những sai lầm hay gặp.",
+  "body": [
+   [
+    "p",
+    "Câu nói quen thuộc của dân phân tích kỹ thuật: “Xu hướng là bạn”. Nhưng trước khi “làm bạn”, người mới cần biết giá đang ở trạng thái nào. Về cơ bản, giá cổ phiếu chỉ có ba trạng thái: <b>tăng, giảm và đi ngang</b>."
+   ],
+   [
+    "h2",
+    "1. Xu hướng tăng"
+   ],
+   [
+    "p",
+    "Giá tạo ra các <b>đỉnh sau cao hơn đỉnh trước</b> và <b>đáy sau cao hơn đáy trước</b>. Mỗi lần điều chỉnh, giá không thủng đáy cũ mà bật lên và vượt đỉnh cũ. Trên biểu đồ, giá thường nằm trên các <a href=\"/f0/duong-ma-la-gi.html\">đường trung bình</a> như MA50, MA200 và các đường này dốc lên."
+   ],
+   [
+    "h2",
+    "2. Xu hướng giảm"
+   ],
+   [
+    "p",
+    "Ngược lại: <b>đỉnh sau thấp hơn đỉnh trước</b>, <b>đáy sau thấp hơn đáy trước</b>. Mỗi nhịp hồi đều yếu và bị bán xuống trước khi chạm đỉnh cũ. Giá nằm dưới các đường trung bình dốc xuống. Đây là giai đoạn người mới hay “bắt dao rơi” – mua vì thấy giá đã giảm nhiều, rồi giá tiếp tục giảm."
+   ],
+   [
+    "h2",
+    "3. Đi ngang (tích lũy hoặc phân phối)"
+   ],
+   [
+    "p",
+    "Giá dao động trong một vùng, có cận trên (<a href=\"/f0/ho-tro-khang-cu.html\">kháng cự</a>) và cận dưới (hỗ trợ) tương đối rõ. Các đường trung bình đi gần như nằm ngang và đan xen nhau. Thị trường thường dành phần lớn thời gian để đi ngang. Giai đoạn này có thể là tích lũy trước khi tăng, hoặc phân phối trước khi giảm – chỉ biết chắc khi giá thoát khỏi vùng."
+   ],
+   [
+    "h2",
+    "4. Cách nhận biết nhanh"
+   ],
+   [
+    "ol",
+    [
+     "<b>Nhìn đỉnh và đáy</b>: đánh dấu 3–4 đỉnh, đáy gần nhất xem chúng cao dần hay thấp dần.",
+     "<b>Vẽ đường xu hướng</b>: nối các đáy (xu hướng tăng) hoặc các đỉnh (xu hướng giảm). Xem bài <a href=\"/f0/duong-xu-huong-trendline-la-gi.html\">đường xu hướng</a>.",
+     "<b>Dùng đường trung bình</b>: giá trên MA200 và MA200 dốc lên là xu hướng dài hạn tăng.",
+     "<b>Xem khối lượng</b>: xu hướng khỏe thường có khối lượng tăng theo chiều xu hướng và giảm ở nhịp điều chỉnh."
+    ]
+   ],
+   [
+    "h2",
+    "5. Xu hướng phụ thuộc khung thời gian"
+   ],
+   [
+    "p",
+    "Một cổ phiếu có thể đang giảm trên biểu đồ ngày nhưng vẫn tăng trên biểu đồ tuần. Vì vậy luôn nói rõ xu hướng “theo khung nào”. Người tích sản dài hạn nên ưu tiên khung tuần, khung tháng; người giao dịch ngắn hạn mới cần soi khung ngày. Xem thêm <a href=\"/f0/khung-thoi-gian-bieu-do.html\">khung thời gian biểu đồ</a>."
+   ],
+   [
+    "h2",
+    "6. Sai lầm hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "Thấy giá giảm nhiều là nghĩ “đã rẻ” trong khi xu hướng giảm chưa kết thúc.",
+     "Mua đuổi khi giá vừa chạy mạnh ở cuối xu hướng tăng.",
+     "Giao dịch liên tục trong vùng đi ngang và bị phí, thuế bào mòn.",
+     "Chỉ nhìn biểu đồ mà quên kết quả kinh doanh – xu hướng dài hạn của giá vẫn đi theo lợi nhuận doanh nghiệp."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "p",
+    "Xác định đúng trạng thái giá giúp người mới tránh được nhiều quyết định cảm tính. Kết hợp xu hướng giá với sức khỏe tài chính doanh nghiệp sẽ an toàn hơn chỉ dùng một trong hai. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Làm sao biết xu hướng tăng đã kết thúc?",
+    "Dấu hiệu sớm là giá thủng đáy gần nhất và không vượt được đỉnh cũ; xác nhận rõ hơn khi giá xuống dưới đường trung bình dài hạn."
+   ],
+   [
+    "Giai đoạn đi ngang thì làm gì?",
+    "Tùy chiến lược. Người tích sản có thể mua dần ở vùng hỗ trợ; người giao dịch thường chờ giá thoát khỏi vùng đi ngang."
+   ],
+   [
+    "Xu hướng nên xem ở khung nào?",
+    "Đầu tư dài hạn ưu tiên khung tuần, tháng; giao dịch ngắn hạn mới cần khung ngày."
+   ]
+  ],
+  "rel": [
+   "duong-xu-huong-trendline-la-gi",
+   "ho-tro-khang-cu",
+   "duong-ma-la-gi",
+   "cach-xem-bieu-do-chung-khoan"
+  ],
+  "add": []
+ },
+ {
+  "slug": "khung-thoi-gian-bieu-do",
+  "kw": "khung thời gian biểu đồ chứng khoán",
+  "grp": 4,
+  "title": "Khung thời gian biểu đồ: ngày, tuần hay tháng cho người mới?",
+  "desc": "Khung thời gian biểu đồ là gì, khác nhau thế nào giữa khung phút, ngày, tuần, tháng và người mới, người tích sản nên xem khung nào để tránh nhiễu.",
+  "body": [
+   [
+    "p",
+    "Cùng một cổ phiếu, mở biểu đồ ngày thấy giá đang giảm, chuyển sang biểu đồ tuần lại thấy đang tăng. Người mới thường bối rối vì chưa hiểu <b>khung thời gian</b>. Bài này giải thích ngắn gọn."
+   ],
+   [
+    "h2",
+    "1. Khung thời gian là gì?"
+   ],
+   [
+    "p",
+    "Mỗi cây nến trên biểu đồ đại diện cho một khoảng thời gian. Biểu đồ <b>ngày</b>: mỗi nến là một phiên. Biểu đồ <b>tuần</b>: mỗi nến gộp 5 phiên, giá mở cửa là phiên thứ Hai, đóng cửa là phiên cuối tuần. Biểu đồ <b>tháng</b> gộp cả tháng. Ngoài ra còn khung phút, giờ cho người giao dịch trong phiên. Xem lại cách đọc nến ở bài <a href=\"/f0/mo-hinh-nen-nhat-co-ban.html\">nến Nhật cơ bản</a>."
+   ],
+   [
+    "h2",
+    "2. Mỗi khung dùng để làm gì?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Khung tháng</b>: thấy bức tranh nhiều năm – chu kỳ lớn của cổ phiếu và ngành.",
+     "<b>Khung tuần</b>: xác định xu hướng trung – dài hạn, lọc bớt nhiễu của từng phiên. Phù hợp người đi làm, người tích sản.",
+     "<b>Khung ngày</b>: tìm vùng mua bán cụ thể, theo dõi hỗ trợ, kháng cự gần.",
+     "<b>Khung phút, giờ</b>: dành cho giao dịch rất ngắn, nhiễu nhiều, không phù hợp người mới."
+    ]
+   ],
+   [
+    "h2",
+    "3. Vì sao khung nhỏ dễ “lừa” người mới?"
+   ],
+   [
+    "p",
+    "Khung càng nhỏ, mỗi cây nến càng chịu ảnh hưởng của vài lệnh lớn, tin đồn hay tâm lý nhất thời. Nhìn khung 5 phút cả ngày dễ khiến người mới mua bán liên tục, vừa mệt vừa tốn phí. Thói quen này dẫn tới <a href=\"/f0/overtrading-la-gi.html\">giao dịch quá mức</a> – một trong những lý do phổ biến khiến nhà đầu tư cá nhân thua lỗ."
+   ],
+   [
+    "h2",
+    "4. Nguyên tắc “từ lớn đến nhỏ”"
+   ],
+   [
+    "ol",
+    [
+     "Bắt đầu từ <b>khung tuần</b> (hoặc tháng) để biết xu hướng chính.",
+     "Chuyển xuống <b>khung ngày</b> để tìm vùng giá hợp lý trong xu hướng đó.",
+     "Chỉ hành động khi hai khung không mâu thuẫn quá lớn. Ví dụ: tuần đang tăng, ngày điều chỉnh về hỗ trợ."
+    ]
+   ],
+   [
+    "p",
+    "Cách này giúp tránh trường hợp mua theo một nhịp hồi ngắn trên khung ngày trong khi khung tuần vẫn đang giảm mạnh."
+   ],
+   [
+    "h2",
+    "5. Ví dụ dễ hiểu"
+   ],
+   [
+    "p",
+    "Một cổ phiếu ngân hàng tăng từ đầu năm, khung tuần các đáy cao dần. Tháng gần đây giá giảm 3 phiên liên tiếp. Trên khung ngày trông như “đang sập”, nhưng trên khung tuần đó chỉ là một nhịp điều chỉnh bình thường trong <a href=\"/f0/xu-huong-tang-giam-di-ngang.html\">xu hướng tăng</a>. Người nhìn khung tuần sẽ bình tĩnh hơn nhiều."
+   ],
+   [
+    "p",
+    "Một lưu ý nữa: các mốc như đỉnh 52 tuần, đáy 52 tuần thực chất là đọc trên khung tuần. Khi nghe ai đó nói “cổ phiếu đang ở đáy”, hãy hỏi lại: đáy của khung nào, trong bao lâu?"
+   ],
+   [
+    "h2",
+    "6. Gợi ý cho người mới"
+   ],
+   [
+    "ul",
+    [
+     "Người tích sản: xem khung tuần mỗi cuối tuần là đủ.",
+     "Người giao dịch vài tuần: kết hợp tuần và ngày.",
+     "Hạn chế mở bảng giá và biểu đồ phút trong giờ làm việc.",
+     "Chỉ báo như RSI, MACD cũng cho tín hiệu khác nhau ở mỗi khung – luôn ghi rõ khung khi đọc."
+    ]
+   ],
+   [
+    "p",
+    "Bài viết mang tính giáo dục, không phải khuyến nghị mua bán. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Người mới nên xem biểu đồ khung nào?",
+    "Khung tuần để biết xu hướng chính và khung ngày để chọn vùng giá; tránh khung phút."
+   ],
+   [
+    "Vì sao chỉ báo ở khung ngày và khung tuần khác nhau?",
+    "Vì mỗi khung tính trên dữ liệu khác nhau: một nến tuần gộp 5 phiên nên tín hiệu chậm hơn nhưng ít nhiễu hơn."
+   ],
+   [
+    "Biểu đồ tuần lấy giá đóng cửa nào?",
+    "Giá đóng cửa của phiên giao dịch cuối cùng trong tuần, thường là thứ Sáu."
+   ]
+  ],
+  "rel": [
+   "cach-xem-bieu-do-chung-khoan",
+   "mo-hinh-nen-nhat-co-ban",
+   "overtrading-la-gi",
+   "duong-ma-la-gi"
+  ],
+  "add": []
+ },
+ {
+  "slug": "trai-phieu-doanh-nghiep-rui-ro",
+  "kw": "rủi ro trái phiếu doanh nghiệp",
+  "grp": 6,
+  "title": "Rủi ro trái phiếu doanh nghiệp: người mới cần biết gì?",
+  "desc": "Trái phiếu doanh nghiệp không phải sổ tiết kiệm: 5 rủi ro chính, cách đọc thông tin phát hành và những câu hỏi cần đặt ra trước khi bỏ tiền.",
+  "body": [
+   [
+    "p",
+    "Lãi suất trái phiếu doanh nghiệp thường cao hơn gửi tiết kiệm, nên nhiều người coi đó là “sổ tiết kiệm lãi cao”. Đây là hiểu nhầm nguy hiểm. Trái phiếu là khoản cho doanh nghiệp vay, và <b>khả năng trả nợ của doanh nghiệp</b> mới là thứ quyết định bạn có lấy lại tiền hay không."
+   ],
+   [
+    "h2",
+    "1. Trái phiếu doanh nghiệp là gì?"
+   ],
+   [
+    "p",
+    "Khi mua trái phiếu, bạn cho doanh nghiệp vay tiền trong một thời hạn, nhận lãi định kỳ (coupon) và nhận lại gốc khi đáo hạn. Khác với cổ phiếu, trái chủ không sở hữu doanh nghiệp, nhưng được ưu tiên trả nợ trước cổ đông. Xem kiến thức nền ở bài <a href=\"/f0/trai-phieu-la-gi.html\">trái phiếu là gì</a>."
+   ],
+   [
+    "h2",
+    "2. Năm rủi ro chính"
+   ],
+   [
+    "ol",
+    [
+     "<b>Rủi ro vỡ nợ</b>: doanh nghiệp không trả được lãi hoặc gốc đúng hạn. Lãi suất càng cao bất thường so với mặt bằng, rủi ro thường càng lớn.",
+     "<b>Rủi ro thanh khoản</b>: muốn bán trước hạn nhưng không có người mua, hoặc phải bán giảm giá. Nhiều trái phiếu phát hành riêng lẻ gần như không có thị trường mua bán.",
+     "<b>Rủi ro tài sản bảo đảm</b>: tài sản đảm bảo có thể là cổ phiếu, dự án chưa hoàn thiện – giá trị dễ giảm mạnh đúng lúc doanh nghiệp gặp khó.",
+     "<b>Rủi ro lãi suất</b>: khi lãi suất thị trường tăng, giá trái phiếu lãi cố định đang nắm giữ giảm.",
+     "<b>Rủi ro thông tin</b>: người mua không đọc kỹ bản công bố thông tin, nhầm trái phiếu với sản phẩm có bảo đảm của ngân hàng hay công ty chứng khoán."
+    ]
+   ],
+   [
+    "h2",
+    "3. Bài học từ giai đoạn 2022–2023"
+   ],
+   [
+    "p",
+    "Giai đoạn 2022–2023, nhiều doanh nghiệp, chủ yếu bất động sản, chậm trả lãi và gốc trái phiếu, phải đàm phán gia hạn với trái chủ. Sau đó, quy định về phát hành riêng lẻ được siết lại: trái phiếu riêng lẻ chủ yếu dành cho nhà đầu tư chuyên nghiệp, yêu cầu công bố thông tin chặt hơn. Bài học lớn nhất: lãi suất hấp dẫn không bù được rủi ro mất vốn."
+   ],
+   [
+    "h2",
+    "4. Năm câu hỏi trước khi mua"
+   ],
+   [
+    "ul",
+    [
+     "Doanh nghiệp làm gì, có lãi thật và dòng tiền kinh doanh dương không? Xem <a href=\"/f0/bao-cao-luu-chuyen-tien-te-la-gi.html\">lưu chuyển tiền tệ</a>.",
+     "Nợ vay đang ở mức nào so với vốn chủ? Xem <a href=\"/f0/he-so-no-de-la-gi.html\">hệ số nợ D/E</a>.",
+     "Tiền huy động dùng vào việc gì, dự án có pháp lý đầy đủ chưa?",
+     "Tài sản bảo đảm là gì, ai định giá, có dễ bán không?",
+     "Nếu cần tiền trước hạn, bán lại cho ai, với điều kiện gì?"
+    ]
+   ],
+   [
+    "h2",
+    "5. Phân bổ hợp lý"
+   ],
+   [
+    "p",
+    "Với người mới, trái phiếu doanh nghiệp không nên chiếm phần lớn tài sản. Nếu muốn có thu nhập cố định, có thể cân nhắc tiền gửi ngân hàng, trái phiếu Chính phủ hoặc quỹ trái phiếu được quản lý chuyên nghiệp – lãi thấp hơn nhưng rủi ro thấp hơn nhiều. Luôn chia nhỏ, không dồn vào một tổ chức phát hành."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Trái phiếu doanh nghiệp là cho vay, không phải gửi tiết kiệm.",
+     "Lãi càng cao bất thường, càng phải hỏi nhiều.",
+     "Đọc kỹ thông tin phát hành, tài sản bảo đảm và khả năng trả nợ."
+    ]
+   ],
+   [
+    "p",
+    "Bài viết mang tính giáo dục, không phải khuyến nghị đầu tư. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Trái phiếu doanh nghiệp có được bảo hiểm tiền gửi không?",
+    "Không. Bảo hiểm tiền gửi chỉ áp dụng cho tiền gửi tại tổ chức tín dụng, không áp dụng cho trái phiếu doanh nghiệp."
+   ],
+   [
+    "Trái phiếu có tài sản bảo đảm là an toàn?",
+    "Không hẳn. Tài sản bảo đảm có thể mất giá hoặc khó bán đúng lúc doanh nghiệp gặp khó; quá trình xử lý thường kéo dài."
+   ],
+   [
+    "Trái phiếu doanh nghiệp có hợp với người mới?",
+    "Chỉ nên khi hiểu rõ doanh nghiệp phát hành và dùng phần tiền nhỏ; quỹ trái phiếu hoặc tiền gửi phù hợp hơn với đa số người mới."
+   ]
+  ],
+  "rel": [
+   "trai-phieu-la-gi",
+   "he-so-no-de-la-gi",
+   "chung-chi-quy-la-gi",
+   "tich-san-co-phieu-hay-gui-tiet-kiem"
+  ],
+  "add": []
+ },
+ {
+  "slug": "gia-thep-va-hpg",
+  "kw": "giá thép và cổ phiếu HPG",
+  "grp": 8,
+  "title": "Giá thép và cổ phiếu HPG: mối liên hệ người mới cần biết",
+  "desc": "Vì sao giá thép tác động mạnh tới lợi nhuận Hòa Phát (HPG), Nam Kim, Hoa Sen; đọc biên gộp, chi phí lãi vay và kết quả quý 3/2026 của nhóm thép.",
+  "body": [
+   [
+    "p",
+    "Thép là ngành <a href=\"/f0/co-phieu-chu-ky-la-gi.html\">chu kỳ</a> điển hình: lợi nhuận phụ thuộc mạnh vào giá bán thép và giá nguyên liệu. Hòa Phát (HPG) là doanh nghiệp thép lớn nhất sàn, nên hiểu mối liên hệ này giúp người mới đọc tin ngành chính xác hơn."
+   ],
+   [
+    "h2",
+    "1. Lợi nhuận thép đến từ “chênh lệch”"
+   ],
+   [
+    "p",
+    "Doanh nghiệp thép mua quặng sắt, than cốc (hoặc phôi, thép cuộn), luyện và cán thành sản phẩm. Lợi nhuận phụ thuộc vào <b>chênh lệch giữa giá bán thép và chi phí nguyên liệu</b>. Giá thép tăng nhanh hơn giá nguyên liệu thì biên lợi nhuận mở rộng; ngược lại thì co lại. Vì vậy chỉ số đáng theo dõi nhất là <a href=\"/f0/bien-loi-nhuan-gop-la-gi.html\">biên lợi nhuận gộp</a>."
+   ],
+   [
+    "h2",
+    "2. Kết quả quý 3/2026 của HPG"
+   ],
+   [
+    "ul",
+    [
+     "Doanh thu thuần 62.214 tỷ, tăng 70,9% so với cùng kỳ.",
+     "LNST công ty mẹ 8.217 tỷ, tăng 106,0%.",
+     "Biên gộp 19,2% (cùng kỳ 16,7%) – sản lượng lớn hơn và biên tốt hơn cùng lúc.",
+     "Lũy kế 9 tháng 23.582 tỷ, tăng 103,5%.",
+     "Điểm cần theo dõi: chi phí lãi vay tăng 118,4%."
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: BCTC quý 3/2026 của HPG, tổng hợp trên chungkhoanhuynguyen.com."
+   ],
+   [
+    "h2",
+    "3. Cùng ngành, kết quả rất khác"
+   ],
+   [
+    "p",
+    "Quý 3/2026, Nam Kim (NKG) lãi 126 tỷ, tăng 154,8%; trong khi Hoa Sen (HSG) lãi 55 tỷ, giảm 37,4%. Doanh nghiệp tôn mạ như NKG, HSG mua thép cán nóng làm đầu vào, chịu thêm biến động xuất khẩu và hàng tồn kho, nên không phải lúc nào cũng đi cùng chiều với HPG."
+   ],
+   [
+    "h2",
+    "4. Những yếu tố tác động giá thép"
+   ],
+   [
+    "ol",
+    [
+     "<b>Bất động sản và đầu tư công</b> trong nước: tiêu thụ thép xây dựng.",
+     "<b>Giá thép Trung Quốc</b>: nước sản xuất lớn nhất thế giới, giá xuất khẩu của họ ảnh hưởng giá thế giới.",
+     "<b>Giá quặng sắt, than cốc</b>: chi phí đầu vào chính.",
+     "<b>Thuế phòng vệ thương mại</b>: thuế chống bán phá giá trong nước và ở thị trường xuất khẩu."
+    ]
+   ],
+   [
+    "p",
+    "Với HPG, chi phí lãi vay tăng mạnh thường đi kèm giai đoạn đầu tư dự án lớn: vay nhiều hơn để xây nhà máy mới, khi dự án chạy đủ công suất thì sản lượng tăng. Người đọc BCTC nên theo dõi xem lợi nhuận tăng thêm có đủ bù chi phí lãi vay tăng thêm hay không."
+   ],
+   [
+    "h2",
+    "5. Cách đọc cổ phiếu thép cho người mới"
+   ],
+   [
+    "ul",
+    [
+     "Không định giá cổ phiếu chu kỳ bằng P/E của một năm đỉnh: lợi nhuận đỉnh thường không kéo dài.",
+     "Theo dõi biên gộp từng quý: biên co lại liên tục là dấu hiệu chu kỳ đang yếu đi.",
+     "Xem hàng tồn kho và nợ vay: tồn kho lớn khi giá thép giảm dễ gây lỗ.",
+     "Giá cổ phiếu chu kỳ thường đi trước kết quả kinh doanh vài quý."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "p",
+    "Giá thép và biên gộp là chìa khóa để hiểu lợi nhuận HPG. Quý 3/2026 cho thấy cả sản lượng lẫn biên lợi nhuận đều cải thiện, nhưng chi phí lãi vay tăng nhanh là điểm cần theo dõi tiếp. Xem số liệu 12 quý tại <a href=\"/ma/HPG.html\">trang HPG</a>."
+   ],
+   [
+    "p",
+    "Số liệu từ BCTC quý 3/2026, không phải khuyến nghị mua bán. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Giá thép tăng thì HPG có chắc lãi hơn không?",
+    "Không chắc. Nếu giá quặng, than tăng nhanh hơn giá thép thì biên lợi nhuận vẫn có thể giảm."
+   ],
+   [
+    "Vì sao cổ phiếu thép biến động mạnh?",
+    "Vì lợi nhuận ngành chu kỳ dao động lớn theo giá hàng hóa và nhu cầu xây dựng."
+   ],
+   [
+    "Nên xem chỉ số gì đầu tiên với cổ phiếu thép?",
+    "Biên lợi nhuận gộp theo quý, sau đó là hàng tồn kho và nợ vay."
+   ]
+  ],
+  "rel": [
+   "co-phieu-chu-ky-la-gi",
+   "bien-loi-nhuan-gop-la-gi",
+   "hang-ton-kho-la-gi",
+   "ty-gia-tang-anh-huong-co-phieu"
+  ],
+  "add": []
  }
 ]
