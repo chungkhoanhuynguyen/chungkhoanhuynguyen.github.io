@@ -1041,7 +1041,7 @@ header.top .gnav .gi>a.g-rep:hover{background:rgba(243,210,122,.14)!important;co
 </div></section>
 <section id="thegioi" class="nocopy"><div class="wrap">
 <h2>Thị trường thế giới</h2>
-<p class="sub">Lãi suất Fed, giá vàng, dầu Brent, dầu WTI, chứng khoán Mỹ, Nhật Bản, Hàn Quốc, chỉ số USD và lợi suất trái phiếu Mỹ. Giá đóng cửa gần nhất. <span id="wmu"></span></p>
+<p class="sub">Lãi suất Fed, vàng, dầu Brent, WTI, chứng khoán Mỹ, Nhật Bản, Hàn Quốc, USD/VND, DXY, lợi suất Mỹ và Bitcoin. Giá đóng cửa gần nhất. <span id="wmu"></span> <a href="/the-gioi-hang-hoa.html">Xem bảng đầy đủ</a></p>
 <div class="wm-fed" id="wmf"><p class="ph wm-ld">Đang tải…</p></div>
 <div class="wm-tiles" id="wmt" role="group" aria-label="Chọn biểu đồ"></div>
 <div class="wm-card">
@@ -1902,7 +1902,7 @@ H.near(sec,init,400);
 (function(){
 var H=window.HN,$=function(i){return document.getElementById(i)},sec=$('thegioi');if(!sec||!H)return;
 var esc=H.esc,nf=H.nf,pc=H.pc,cls=H.cls;
-var GN={hh:'Hàng hoá',my:'Chứng khoán Mỹ',a:'Châu Á',ls:'USD & lãi suất'};
+var GN={hh:'Hàng hoá',my:'Chứng khoán Mỹ',a:'Châu Á',ls:'USD & lãi suất',ts:'Tiền số'};
 var ACT={hold:'Giữ nguyên',hike:'Tăng',cut:'Giảm'};
 var st={k:'gold',r:250},sv=H.ls.get('hn_wm',null);if(sv&&typeof sv==='object'){if(/^[a-z0-9]{2,8}$/.test(sv.k||''))st.k=sv.k;if([0,63,126,250].indexOf(sv.r)>=0)st.r=sv.r}
 var S={},ORD=[],FED=null,FX=null,chart=null;
