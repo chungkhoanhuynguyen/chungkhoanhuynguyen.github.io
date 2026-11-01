@@ -98,8 +98,8 @@ for s in SYMS:
     k = KQ.get(s); nx = NX.get(s) if isinstance(NX, dict) else None
     url = f"{B}/ma/{s}.html"
     nm2 = f" ({name})" if name != s else ""
-    title = f"Cổ phiếu {s}{nm2}: giá hôm nay, định giá P/E, kết quả kinh doanh"
-    desc = f"{s} giá {nf(p)} nghìn đồng ngày {dmy(last)}, {pc(yr)} trong 1 năm. P/E {nf(pe,1)}, P/B {nf(pb,2)}, ROE {nf(roe,1)}%. Xu hướng, đỉnh đáy 52 tuần, đánh giá BCTC {s}."
+    title = f"Cổ phiếu {s}: giá hôm nay, định giá P/E, P/B, lợi nhuận"
+    desc = f"Cổ phiếu {s} hôm nay {nf(p)} nghìn đồng ({dmy(last)}), {pc(yr)} 1 năm. P/E {nf(pe,1)}, P/B {nf(pb,2)}, ROE {nf(roe,1)}%. Định giá {s}, lợi nhuận, xu hướng."
     intro = (f"Cổ phiếu <b>{e(s)}</b>" + (f" của {e(name)}" if name != s else "") + f" niêm yết trên sàn {ex}. Phiên {dmy(last)}, {e(s)} đóng cửa ở <b>{nf(p)}</b> nghìn đồng, "
              f"<span class='{'up' if (w or 0)>=0 else 'dn'}'>{pc(w)}</span> trong 1 tuần và <span class='{'up' if (yr or 0)>=0 else 'dn'}'>{pc(yr)}</span> trong 1 năm. "
              f"Giá đang ở {tr} (trên {ab}/{len(ms)} đường trung bình MA20, MA50, MA200).")
@@ -212,7 +212,7 @@ def page(fn, title, desc, h1, body, ld_extra=None):
 CTA = ('<div class="cta"><a class="btn b1" href="/mo-tai-khoan-chung-khoan.html">Mở tài khoản chứng khoán</a>'
        '<a class="btn b2" href="https://zalo.me/0365188286" rel="noopener">Tư vấn 1:1 qua Zalo</a><a class="btn b2" href="https://zalo.me/g/jbnbiq994" rel="noopener">Nhóm Zalo cộng đồng</a><a class="btn b2" href="/#hoidap">Hỏi đáp PRO</a></div>')
 NAV = ('<h2>Khám phá thêm</h2><ul><li><a href="/thi-truong-chung-khoan-hom-nay.html">Thị trường chứng khoán hôm nay</a></li><li><a href="/dinh-gia-co-phieu.html">Định giá cổ phiếu</a></li>'
-       '<li><a href="/bao-cao-2026.html">Báo cáo lệnh 2016–2026</a></li><li><a href="/tu-van-dau-tu-chung-khoan.html">Tư vấn đầu tư chứng khoán</a></li><li><a href="/hoc/">Học chứng khoán</a></li><li><a href="/f0/">Cẩm nang F0</a></li><li><a href="/ma/">Tra cứu mã cổ phiếu</a></li></ul>')
+       '<li><a href="/bao-cao-2026.html">Báo cáo lệnh 2016–2026</a></li><li><a href="/tu-van-dau-tu-chung-khoan.html">Tư vấn đầu tư chứng khoán</a></li><li><a href="/hoc/">Học chứng khoán</a></li><li><a href="/f0/">Cẩm nang F0</a></li><li><a href="/the-gioi-hang-hoa.html">Thế giới &amp; hàng hóa</a></li><li><a href="/ma/">Tra cứu mã cổ phiếu</a></li></ul>')
 EXTRA = []
 # 1) Thị trường hôm nay
 IX = {}
@@ -281,8 +281,40 @@ EXTRA.append(page("chinh-sach-bao-mat.html", "Chính sách bảo mật | Chứng
      "<h2>5. Miễn trừ trách nhiệm</h2><p>Nội dung trên website là kiến thức và quan điểm cá nhân, không phải khuyến nghị mua bán chứng khoán. Nhà đầu tư tự chịu trách nhiệm với quyết định của mình.</p>",
      "<h2>6. Liên hệ</h2><p>Mọi câu hỏi về chính sách này, xem trang <a href='/lien-he.html'>Liên hệ</a>.</p>"]))
 
+# 5) Thế giới & hàng hóa (data/wm.bin do world.py cập nhật)
+try:
+    WM = D("data/wm.bin") or {}
+except Exception:
+    WM = {}
+if WM.get("s"):
+    import datetime as _dt
+    _E = _dt.date(1970, 1, 1)
+    def _ago(t, c, days):
+        lim = t[-1] - days
+        for i in range(len(t) - 1, -1, -1):
+            if t[i] <= lim: return (c[-1] / c[i] - 1) * 100 if c[i] else None
+        return None
+    GN = {"hh": "Hàng hóa", "my": "Chứng khoán Mỹ", "a": "Châu Á", "ls": "USD & lãi suất", "ts": "Tiền số"}
+    rows = {}
+    for k, n, u, d, g, t, c in WM["s"]:
+        if len(c) < 2: continue
+        d1 = (c[-1] / c[-2] - 1) * 100 if c[-2] else None
+        rows.setdefault(g, []).append(f"<tr><td>{e(n)}<br><small class='n'>{e(u)}</small></td><td class='r'><b>{nf(c[-1], d)}</b></td>"
+            + "".join(f"<td class='r {'up' if (v or 0) >= 0 else 'dn'}'>{pc(v)}</td>" for v in (d1, _ago(t, c, 7), _ago(t, c, 30), _ago(t, c, 365))) + "</tr>")
+    hdr = "<tr style='font-size:13px'><td><b>Tài sản</b></td><td class='r'><b>Giá</b></td><td class='r'><b>Phiên</b></td><td class='r'><b>1T</b></td><td class='r'><b>1Th</b></td><td class='r'><b>1N</b></td></tr>"
+    body = ["<p>Giá đóng cửa gần nhất của chứng khoán Mỹ (Dow Jones, S&amp;P 500, Nasdaq), châu Á (Nikkei 225, KOSPI), dầu Brent, dầu WTI, vàng thế giới, Bitcoin, tỷ giá USD/VND, chỉ số USD (DXY) và lợi suất trái phiếu Mỹ 10 năm. "
+            f"Cập nhật tự động nhiều lần mỗi ngày (lần gần nhất {e(WM.get('updated', ''))}).</p>", "<style>@media(max-width:480px){.mt{font-size:13px}.mt td{padding:7px 3px}.mt small{font-size:11px}}</style>"]
+    for g in ("my", "a", "hh", "ls", "ts"):
+        if g in rows: body.append(f"<h2>{GN[g]}</h2><div style='overflow-x:auto'><table class='mt'>{hdr}{''.join(rows[g])}</table></div>")
+    body += ["<p><small class='n'>1T = 1 tuần, 1Th = 1 tháng, 1N = 1 năm. Số liệu tham khảo, không phải khuyến nghị đầu tư.</small></p>",
+             "<h2>Vì sao nhà đầu tư Việt Nam cần theo dõi thị trường thế giới?</h2><ul><li>Chứng khoán Mỹ giảm mạnh thường kéo tâm lý phiên sau ở châu Á và Việt Nam.</li><li>Giá dầu tác động cổ phiếu dầu khí, vận tải, hàng không; giá vàng phản ánh tâm lý phòng thủ.</li><li>DXY và lợi suất Mỹ tăng gây áp lực tỷ giá USD/VND và dòng vốn khối ngoại.</li></ul>",
+             "<p>Đọc thêm: <a href='/f0/ty-gia-tang-anh-huong-co-phieu.html'>tỷ giá tăng ảnh hưởng cổ phiếu</a>, <a href='/f0/fed-tang-giam-lai-suat-tac-dong.html'>Fed tăng giảm lãi suất</a>, <a href='/#thegioi'>biểu đồ thế giới trên trang chủ</a>.</p>", CTA, NAV]
+    EXTRA.append(page("the-gioi-hang-hoa.html", "Thị trường thế giới hôm nay: Dow Jones, S&P 500, dầu, vàng, Bitcoin | Chứng Khoán Huy Nguyễn",
+         "Giá thế giới hôm nay: Dow Jones, S&P 500, Nasdaq, Nikkei, dầu Brent, WTI, vàng, Bitcoin, USD/VND, DXY. Thay đổi phiên, tuần, tháng, năm. Cập nhật tự động.",
+         "Thị trường thế giới & hàng hóa hôm nay", body))
+
 sp = os.path.join(ROOT, "sitemap.xml"); sm = open(sp, encoding="utf-8").read()
-sm = re.sub(r"<url><loc>" + re.escape(B) + r"/(ma/[^<]*|thi-truong-chung-khoan-hom-nay\.html|dinh-gia-co-phieu\.html|tu-van-dau-tu-chung-khoan\.html|gioi-thieu\.html|lien-he\.html|chinh-sach-bao-mat\.html)</loc>.*?</url>\n", "", sm)
+sm = re.sub(r"<url><loc>" + re.escape(B) + r"/(ma/[^<]*|thi-truong-chung-khoan-hom-nay\.html|dinh-gia-co-phieu\.html|tu-van-dau-tu-chung-khoan\.html|gioi-thieu\.html|lien-he\.html|chinh-sach-bao-mat\.html|the-gioi-hang-hoa\.html)</loc>.*?</url>\n", "", sm)
 add = "".join(f"<url><loc>{u}</loc><lastmod>{today}</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>\n" for u in EXTRA) + f"<url><loc>{B}/ma/</loc><lastmod>{today}</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>\n" + \
       "".join(f"<url><loc>{B}/ma/{t}.html</loc><lastmod>{today}</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>\n" for t in made)
 sm = sm.replace("</urlset>", add + "</urlset>")

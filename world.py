@@ -64,6 +64,8 @@ SER = [
     ("kospi", "KOSPI", "điểm", 2, "a", "^KS11"),
     ("dxy", "DXY (chỉ số USD)", "điểm", 2, "ls", "DX-Y.NYB"),
     ("us10", "TP Mỹ 10 năm (lợi suất)", "%", 3, "ls", "^TNX"),
+    ("usdvnd", "USD/VND", "đồng", 0, "ls", "VND=X"),
+    ("btc", "Bitcoin", "USD", 0, "ts", "BTC-USD"),
 ]
 
 
