@@ -116,8 +116,8 @@ def analyse(code):
         mg, mgy = c.get(700044, 0), y.get(700044, 0)
         p = pct(br, bry)
         if p is not None and bry > 0:
-            if p >= 20: g.append(f"Doanh thu môi giới {fp(p)}")
-            elif p <= -20: b.append(f"Doanh thu môi giới giảm {fp(p)}")
+            if p >= 20: g.append(f"Doanh thu phí giao dịch {fp(p)}")
+            elif p <= -20: b.append(f"Doanh thu phí giao dịch giảm {fp(p)}")
         p = pct(mg, mgy)
         if p is not None and mgy > 0:
             if p >= 20: g.append(f"Lãi cho vay ký quỹ {fp(p)}, đạt {fmt_ty(mg)}")
