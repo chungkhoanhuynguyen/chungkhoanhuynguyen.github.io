@@ -1,0 +1,21 @@
+name: Anh duyet tao hinh 3D
+on:
+  push:
+    paths: ["_video/story/nhanvat3d.py"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq libxi6 libxkbcommon0 libxrender1 libgl1 libsm6 libxxf86vm1 libxfixes3 >/dev/null
+      - run: curl -sL https://download.blender.org/release/Blender4.2/blender-4.2.3-linux-x64.tar.xz | tar -xJ -C /tmp
+      - run: |
+          mkdir -p out
+          /tmp/blender-4.2.3-linux-x64/blender -b -noaudio -P _video/story/nhanvat3d.py -- $PWD/out/nhanvat.png 2>&1 | grep -E "Error|Traceback|Saved" | tail -5
+      - run: |
+          cd out && git init -q -b anh-out && git config user.name hn-bot && git config user.email hn-bot@users.noreply.github.com
+          git add -A && git commit -qm anh && git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" anh-out
