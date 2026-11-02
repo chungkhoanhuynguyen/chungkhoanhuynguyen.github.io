@@ -1,0 +1,28 @@
+{
+ "ten": "Vì sao chị bán xôi để dành giỏi hơn anh lương 25 triệu?",
+ "bg": "assets/boi_canh_pho_co_ha_noi_phan_tren.png",
+ "am_nen": "pho_hanoi",
+ "canh": [
+  {"nv": [{"anh": "assets/cun_bo_khoc.png", "x": 0.5, "cao": 0.52, "vao": "nhay", "dien": "khoc_hu"}],
+   "say": "Lương hai mươi lăm triệu. Mới ngày hai mươi sáu mà tài khoản đã về gần số không.",
+   "chu": ["LƯƠNG 25 TRIỆU", "NGÀY 26 ĐÃ HẾT TIỀN?"], "sfx": ["ting"]},
+  {"nv": [{"anh": "assets/cun_bo_ngai.png", "x": 0.28, "cao": 0.45, "dien": "gai_dau"}, {"anh": "assets/gau_gao_toanthan.png", "x": 0.74, "cao": 0.5, "vao": "truot_phai", "noi": 1}],
+   "say": "Trong khi chị bán xôi đầu ngõ, mỗi ngày lãi vài trăm nghìn, cuối năm vẫn có tiền để dành. Vì sao vậy?",
+   "chu": ["CHỊ BÁN XÔI", "CUỐI NĂM VẪN CÓ TIỀN"]},
+  {"nv": [{"anh": "assets/gau_gao_vui.png", "x": 0.5, "cao": 0.5, "vao": "nhay", "noi": 1, "dien": "sang_mat"}],
+   "say": "Lý do thứ nhất. Chị ấy thu tiền mỗi ngày, nên trích vốn và tiền để dành ra trước, rồi mới tiêu phần còn lại.",
+   "chu": ["1. TRÍCH TIỀN TRƯỚC", "RỒI MỚI TIÊU"], "mau": [[40,44,60],[30,150,90]], "sfx": ["cash"]},
+  {"bg": "assets/boi_canh_hem_sai_gon_phan_tren.png", "nv": [{"anh": "assets/cun_bo_ngai.png", "x": 0.5, "cao": 0.5, "vao": "truot_trai", "dien": "ngai"}],
+   "say": "Còn người đi làm thường làm ngược lại. Lương về là tiêu trước, cuối tháng còn bao nhiêu mới để dành. Mà cuối tháng thì thường chẳng còn gì.",
+   "chu": ["LƯƠNG VỀ TIÊU TRƯỚC", "CUỐI THÁNG CÒN 0"], "sfx": ["slurp", "ting"]},
+  {"nv": [{"anh": "assets/cun_bo_khoc.png", "x": 0.5, "cao": 0.5, "dien": "giat_minh"}],
+   "say": "Lý do thứ hai. Lương tăng thì chi tiêu cũng tăng theo: điện thoại mới, trả góp, trà sữa mỗi ngày.",
+   "chu": ["2. LƯƠNG TĂNG", "CHI TIÊU TĂNG THEO"], "sfx": ["cash"]},
+  {"nv": [{"anh": "assets/gau_gao_vui.png", "x": 0.5, "cao": 0.5, "noi": 1}],
+   "say": "Lý do thứ ba. Người bán nhỏ nhìn thấy tiền ra vào mỗi ngày, nên biết rõ từng đồng đi đâu.",
+   "chu": ["3. NHÌN TIỀN MỖI NGÀY", "BIẾT RÕ TỪNG ĐỒNG"], "mau": [[40,44,60],[30,150,90]]},
+  {"nv": [{"anh": "assets/cun_bo_vui.png", "x": 0.3, "cao": 0.45, "vao": "nhay", "dien": "sang_mat"}, {"anh": "assets/gau_gao_vui.png", "x": 0.72, "cao": 0.45}],
+   "say": "Bài học: lương về, trích mười đến hai mươi phần trăm để dành trước, rồi mới tiêu. Làm đều mỗi tháng, thời gian sẽ lo phần còn lại.",
+   "chu": ["LƯƠNG VỀ: TRÍCH 10–20%", "TRƯỚC KHI TIÊU"], "mau": [[40,44,60],[30,150,90]], "sfx": ["tada"]}
+ ]
+}
