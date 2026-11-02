@@ -1,0 +1,98 @@
+name: Xuong video (giong mien phi + dung)
+# Đẩy lô kịch bản vào _video/queue/<LÔ>/ (video_dai.py + px_tuan.json [+ meta.json]) -> tự đọc giọng, dựng, xuất mp4.
+# Kết quả: nhánh video-out (thư mục <LÔ>/) + Release "video-<LÔ>".
+on:
+  push:
+    paths: ["_video/queue/**/video_dai.py"]
+  workflow_dispatch:
+    inputs:
+      batch: {description: "Tên lô (thư mục trong _video/queue)", required: true}
+      keys: {description: "KEY cách nhau dấu cách (để trống = tất cả)", required: false, default: ""}
+permissions:
+  contents: write
+concurrency:
+  group: video-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      batch: ${{ steps.p.outputs.batch }}
+      keys: ${{ steps.p.outputs.keys }}
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 2}
+      - id: p
+        run: |
+          python3 - <<'PY'
+          import os, re, json, subprocess
+          b = "${{ github.event.inputs.batch }}".strip(); ks = "${{ github.event.inputs.keys }}".split()
+          if not b:
+              ch = subprocess.run(["git", "diff", "--name-only", "HEAD~1", "HEAD"], capture_output=True, text=True).stdout.split()
+              ds = [p.split("/")[2] for p in ch if p.startswith("_video/queue/") and p.endswith("video_dai.py")]
+              b = ds[-1] if ds else ""
+          if b and not ks:
+              src = open(f"_video/queue/{b}/video_dai.py", encoding="utf-8").read()
+              ks = re.findall(r'^S\["([A-Za-z0-9_]+)"\]\s*=', src, re.M)
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"batch={b}\nkeys={json.dumps(ks)}\n")
+          print(b, ks)
+          PY
+  render:
+    needs: plan
+    if: needs.plan.outputs.batch != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        key: ${{ fromJson(needs.plan.outputs.keys) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/huggingface
+            ~/.cache/pip
+          key: vieneu-v1
+      - run: pip install -q vieneu "onnxruntime==1.22.1" numpy pillow
+      - run: python _video/render.py "${{ needs.plan.outputs.batch }}" "${{ matrix.key }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: out-${{ matrix.key }}
+          path: _video/out/
+          retention-days: 7
+  publish:
+    needs: [plan, render]
+    if: always() && needs.plan.outputs.batch != ''
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 1}
+      - uses: actions/download-artifact@v4
+        with: {path: art, pattern: out-*, merge-multiple: true}
+      - name: Day len nhanh video-out + Release
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          B="${{ needs.plan.outputs.batch }}"
+          mkdir -p /tmp/vo/$B && cp -r art/* /tmp/vo/$B/ 2>/dev/null || true
+          cp _video/queue/$B/meta.json /tmp/vo/$B/ 2>/dev/null || true
+          ls -la /tmp/vo/$B > /tmp/vo/$B/TRANG_THAI.txt
+          echo "run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" >> /tmp/vo/$B/TRANG_THAI.txt
+          git config --global user.name hn-bot; git config --global user.email hn-bot@users.noreply.github.com
+          cd /tmp/vo
+          if git ls-remote --exit-code "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}" video-out >/dev/null 2>&1; then
+            git clone -q --depth 1 -b video-out "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}" repo
+          else
+            mkdir repo && cd repo && git init -q -b video-out && git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}" && cd ..
+          fi
+          cd repo
+          # chỉ giữ 3 lô gần nhất cho nhẹ
+          ls -1d */ 2>/dev/null | sort | head -n -2 | xargs -r git rm -rq
+          rm -rf "$B" && cp -r "/tmp/vo/$B" . && git add -A && git commit -qm "video $B" && git push -q origin video-out
+          cd /tmp/vo
+          gh release delete "video-$B" -y -R ${{ github.repository }} 2>/dev/null || true
+          gh release create "video-$B" -R ${{ github.repository }} -t "Video $B" -n "Lô $B" /tmp/vo/$B/*.mp4 /tmp/vo/$B/*.png /tmp/vo/$B/*.txt || true
