@@ -31,7 +31,7 @@ def conv(sc):
         ch = s.pop("chart", None)
         if ch and ch.get("sym") in px:
             s.update(k="candles", sym=ch["sym"], n=min(int(ch.get("weeks", 52)), len(px[ch["sym"]])),
-                     circles=ch.get("circles", []), tag=(s["label"] or ch["sym"]).upper()[:40] + " · NẾN TUẦN", reveal=1.6)
+                     circles=ch.get("circles", []), tag=(lambda t: t if "NẾN TUẦN" in t else t[:40] + " · NẾN TUẦN")((s["label"] or ch["sym"]).upper()), reveal=1.6)
         else: s["k"] = "text"
     elif k == "image":
         if not os.path.exists(os.path.join(HERE, "engine", s.get("img", "?"))): s["k"] = "text"
