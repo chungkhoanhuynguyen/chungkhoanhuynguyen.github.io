@@ -155,6 +155,21 @@ def fund(codes):
     return {"f": keys, "d": D}
 
 
+def reports():
+    """Danh mục báo cáo phân tích công khai của CTCK (chỉ tiêu đề, ngày, mã, link file gốc tại nguồn; không chép nội dung)."""
+    d = get(S2 + "news?q=newsGroup:analytic_report~locale:VN&size=200&sort=newsDate:desc")
+    if not d or not d.get("data"):
+        return None
+    T = {"company_report": "dn", "industry_report": "ng", "macro_report": "vm", "strategy_report": "cl", "bond_report": "tp"}
+    out = []
+    for x in d["data"]:
+        a = [z.get("url") for z in (x.get("attachments") or []) if (z.get("url") or "").lower().endswith(".pdf")]
+        if not a:
+            continue
+        out.append([x.get("newsDate", ""), T.get(x.get("newsType"), "kh"), (x.get("tagCodes") or "")[:30], (x.get("newsTitle") or "").strip()[:220], a[0], x.get("newsSource") or ""])
+    return out
+
+
 def main():
     os.makedirs("data", exist_ok=True)
     ev = events()
@@ -163,6 +178,9 @@ def main():
     nw = news()
     if nw:
         print("tin", len(nw), put("data/news.bin", "n", nw))
+    bc = reports()
+    if bc:
+        print("báo cáo", len(bc), put("data/bc.bin", "r", bc))
     syms = (hncodec.load("data/c/syms.bin", {}) or {}).get("s", [])
     codes = sorted(set(r[0] for r in syms if r[1] in ("H", "X", "U") and stock(r[0])))
     if codes:
