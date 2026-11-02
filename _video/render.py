@@ -1,6 +1,6 @@
 # Xưởng video: kịch bản NV1 (S["KEY"]) -> giọng chốt (VieNeu miễn phí) -> dựng dx2 -> nhạc nền -> mp4 + ảnh bìa
 # Dùng: python _video/render.py <thư mục lô trong _video/queue> KEY [--preview N]
-import sys, os, json, subprocess, shutil, time
+import sys, re, os, json, subprocess, shutil, time
 import numpy as np
 HERE = os.path.dirname(os.path.abspath(__file__))
 batch, key = sys.argv[1], sys.argv[2]
@@ -161,6 +161,24 @@ except Exception as e:
 # 4) dựng + nhạc nền
 rawmp4 = WORK + "/raw.mp4"; out = os.path.join(OUT, key + ".mp4")
 b = build_land(key, scenes, wd, rawmp4, tempo=1.0)
+# 4b) hiệu ứng âm thanh (tự tổng hợp, không bản quyền): lướt khi chuyển cảnh, "ting" mở chương, "tada" kết
+try:
+    sys.path.insert(0, os.path.join(HERE, "story")); import am_thanh, wave as _wv
+    ev = []
+    for i in range(1, len(b) - 1): ev.append((max(0, b[i] - 0.18), "whoosh"))
+    for i, r in enumerate(raw):
+        if i < len(b) - 1 and r.get("ch"): ev.append((b[i] + 0.25, "ting"))
+        elif i < len(b) - 1 and re.search(r"\d+[.,]?\d*\s*(%|tỷ|nghìn tỷ|lần)", r.get("say", "")): ev.append((b[i] + 0.35, "pop"))
+    ev.append((max(0, b[-2] + 0.3), "tada"))
+    x = am_thanh.track(b[-1] + 1, ev) * 0.28
+    sf = WORK + "/sfx.wav"
+    with _wv.open(sf, "w") as w: w.setnchannels(1); w.setsampwidth(2); w.setframerate(44100); w.writeframes((x * 32767).astype("int16").tobytes())
+    r2 = WORK + "/raw_sfx.mp4"
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", rawmp4, "-i", sf, "-filter_complex", "[0:a][1:a]amix=inputs=2:duration=first:normalize=0[a]",
+                    "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", r2], check=True)
+    rawmp4 = r2; print(key, "sfx", len(ev), flush=True)
+except Exception as e:
+    print("sfx: bo qua", e, flush=True)
 music.mix(rawmp4, b, out)
 # 5) ảnh bìa = khung cảnh mở đầu lúc 3 giây
 land(dx2.draw(scenes[0], 3.0), scenes[0], 3.0).resize((1280, 720), Image.LANCZOS).save(os.path.join(OUT, key + "_bia.png"))
