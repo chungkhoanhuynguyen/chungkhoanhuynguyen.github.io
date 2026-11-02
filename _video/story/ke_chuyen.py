@@ -6,7 +6,7 @@ import sys, os, json, math, subprocess, time, io
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 HERE = os.path.dirname(os.path.abspath(__file__)); VID = os.path.dirname(HERE)
-sys.path.insert(0, HERE); sys.path.insert(0, os.path.join(VID, "engine")); sys.path.insert(0, VID)
+sys.path.insert(0, HERE); sys.path.insert(0, os.path.join(VID, "engine")); sys.path.insert(0, os.path.dirname(VID))
 import am_thanh, music
 W, H, FPS = 1080, 1920, 30
 truyen = json.load(open(sys.argv[1], encoding="utf-8")); OUT = sys.argv[2]
