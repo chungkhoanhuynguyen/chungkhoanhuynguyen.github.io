@@ -1,0 +1,372 @@
+[
+[
+"ATO / ATC",
+"Lệnh mua bán tại mức giá khớp lệnh định kỳ mở cửa (ATO) hoặc đóng cửa (ATC).",
+"lenh-ato-atc-la-gi"
+],
+[
+"Bán giải chấp",
+"Công ty chứng khoán tự bán cổ phiếu của khách khi tỷ lệ ký quỹ margin xuống dưới mức bắt buộc.",
+"ban-giai-chap-la-gi"
+],
+[
+"Bắt đáy",
+"Mua khi giá đang giảm với kỳ vọng mua được ở vùng thấp nhất.",
+"bat-day-co-phieu-la-gi"
+],
+[
+"Biên độ giá (trần, sàn)",
+"Mức tăng giảm tối đa trong phiên: HOSE ±7%, HNX ±10%, UPCoM ±15%.",
+"bien-do-gia-tran-san"
+],
+[
+"Biên lợi nhuận gộp",
+"Lợi nhuận gộp chia doanh thu thuần, cho biết doanh nghiệp giữ lại bao nhiêu sau giá vốn.",
+"bien-loi-nhuan-gop-la-gi"
+],
+[
+"Bluechip",
+"Cổ phiếu của doanh nghiệp lớn, đầu ngành, thanh khoản cao.",
+"von-hoa-bluechip-penny"
+],
+[
+"Bollinger Bands",
+"Dải chỉ báo gồm đường trung bình và hai dải độ lệch chuẩn, đo độ biến động giá.",
+"bollinger-bands-la-gi"
+],
+[
+"Breakout",
+"Giá vượt qua vùng kháng cự hoặc thủng hỗ trợ với khối lượng lớn.",
+"breakout-la-gi"
+],
+[
+"BVPS",
+"Giá trị sổ sách mỗi cổ phiếu = vốn chủ sở hữu ÷ số cổ phiếu.",
+"bvps-la-gi"
+],
+[
+"Call margin",
+"Yêu cầu nộp thêm tiền hoặc bán bớt cổ phiếu khi tỷ lệ ký quỹ xuống thấp.",
+"call-margin-la-gi"
+],
+[
+"CASA",
+"Tỷ lệ tiền gửi không kỳ hạn của ngân hàng – nguồn vốn giá rẻ.",
+"casa-la-gi"
+],
+[
+"Cắt lỗ",
+"Bán cổ phiếu khi lỗ chạm mức định trước để bảo vệ vốn.",
+"cat-lo-la-gi"
+],
+[
+"Chứng chỉ quỹ",
+"Giấy chứng nhận phần vốn góp vào một quỹ đầu tư.",
+"chung-chi-quy-la-gi"
+],
+[
+"Chứng quyền (CW)",
+"Quyền mua cổ phiếu ở giá định trước trong thời hạn nhất định, do công ty chứng khoán phát hành.",
+"chung-quyen-la-gi"
+],
+[
+"Cổ phiếu",
+"Giấy chứng nhận quyền sở hữu một phần doanh nghiệp.",
+"co-phieu-la-gi"
+],
+[
+"Cổ phiếu chu kỳ",
+"Cổ phiếu có lợi nhuận biến động mạnh theo chu kỳ kinh tế, giá hàng hóa.",
+"co-phieu-chu-ky-la-gi"
+],
+[
+"Cổ phiếu phòng thủ",
+"Cổ phiếu ngành có nhu cầu ổn định, ít biến động khi kinh tế xấu.",
+"co-phieu-phong-thu-la-gi"
+],
+[
+"Cổ phiếu quỹ",
+"Cổ phiếu do chính doanh nghiệp mua lại và nắm giữ.",
+"co-phieu-quy-la-gi"
+],
+[
+"Cổ tức",
+"Phần lợi nhuận doanh nghiệp chia cho cổ đông, bằng tiền hoặc cổ phiếu.",
+"co-tuc-la-gi"
+],
+[
+"DCA",
+"Mua đều đặn định kỳ một số tiền cố định, không cần đoán đáy.",
+"mua-trung-binh-gia-dca"
+],
+[
+"DCF",
+"Định giá bằng chiết khấu dòng tiền tương lai về hiện tại.",
+"dcf-la-gi"
+],
+[
+"D/E",
+"Hệ số nợ vay trên vốn chủ sở hữu, đo mức đòn bẩy tài chính.",
+"he-so-no-de-la-gi"
+],
+[
+"Đại hội cổ đông",
+"Cuộc họp của cổ đông quyết định kế hoạch, cổ tức, nhân sự lớn.",
+"dai-hoi-co-dong-la-gi"
+],
+[
+"Đường MA",
+"Đường trung bình động của giá, giúp nhìn xu hướng.",
+"duong-ma-la-gi"
+],
+[
+"Đường xu hướng",
+"Đường nối các đỉnh hoặc đáy để xác định hướng đi của giá.",
+"duong-xu-huong-trendline-la-gi"
+],
+[
+"EPS",
+"Lợi nhuận trên mỗi cổ phiếu.",
+"roe-eps-la-gi"
+],
+[
+"ETF",
+"Quỹ mô phỏng một chỉ số, niêm yết và giao dịch như cổ phiếu.",
+"etf-la-gi"
+],
+[
+"EV/EBITDA",
+"Chỉ số định giá so giá trị doanh nghiệp với lợi nhuận trước lãi vay, thuế, khấu hao.",
+"ev-ebitda-la-gi"
+],
+[
+"FCF",
+"Dòng tiền tự do: tiền từ kinh doanh trừ chi đầu tư tài sản cố định.",
+"fcf-dong-tien-tu-do-la-gi"
+],
+[
+"Fibonacci thoái lui",
+"Các mức 23,6%, 38,2%, 50%, 61,8% dùng tìm vùng giá điều chỉnh.",
+"fibonacci-thoai-lui-la-gi"
+],
+[
+"FOMO",
+"Tâm lý sợ bỏ lỡ, dẫn đến mua đuổi khi giá đã tăng mạnh.",
+"tam-ly-fomo-va-hoang-loan"
+],
+[
+"Gap giá",
+"Khoảng trống giá giữa hai phiên liền nhau trên biểu đồ.",
+"gap-gia-la-gi"
+],
+[
+"Giá tham chiếu",
+"Giá làm mốc tính trần, sàn trong phiên, thường là giá đóng cửa phiên trước.",
+"gia-tham-chieu-la-gi"
+],
+[
+"Giao dịch nội bộ",
+"Mua bán cổ phiếu của lãnh đạo, cổ đông lớn và người liên quan, phải công bố.",
+"giao-dich-noi-bo-la-gi"
+],
+[
+"Hàng tồn kho",
+"Nguyên liệu, thành phẩm, dự án doanh nghiệp đang giữ chưa bán.",
+"hang-ton-kho-la-gi"
+],
+[
+"Hệ số Beta",
+"Mức biến động của cổ phiếu so với thị trường chung.",
+"he-so-beta-la-gi"
+],
+[
+"Hỗ trợ, kháng cự",
+"Vùng giá thường dừng giảm (hỗ trợ) hoặc dừng tăng (kháng cự).",
+"ho-tro-khang-cu"
+],
+[
+"Hợp đồng tương lai",
+"Thỏa thuận mua bán chỉ số hoặc tài sản ở giá định trước vào ngày tương lai.",
+"hop-dong-tuong-lai-vn30"
+],
+[
+"Ichimoku",
+"Hệ thống chỉ báo “mây” cho biết xu hướng, hỗ trợ, kháng cự.",
+"ichimoku-la-gi"
+],
+[
+"IPO",
+"Lần đầu doanh nghiệp chào bán cổ phiếu ra công chúng.",
+"ipo-va-niem-yet-la-gi"
+],
+[
+"Khối ngoại",
+"Nhà đầu tư nước ngoài; mua ròng/bán ròng là chênh lệch mua bán trong phiên.",
+"khoi-ngoai-mua-rong-ban-rong-la-gi"
+],
+[
+"Khối lượng giao dịch",
+"Số cổ phiếu được khớp trong phiên, phản ánh dòng tiền.",
+"khoi-luong-giao-dich-va-dong-tien"
+],
+[
+"Lãi kép",
+"Lãi sinh ra lại tiếp tục sinh lãi theo thời gian.",
+"lai-kep-trong-dau-tu"
+],
+[
+"LDR",
+"Tỷ lệ cho vay trên tiền gửi của ngân hàng.",
+"ldr-la-gi"
+],
+[
+"Lô chẵn, lô lẻ",
+"Lô chẵn là bội số 100 cổ phiếu; lô lẻ dưới 100 cổ phiếu.",
+"lo-chan-lo-le"
+],
+[
+"MACD",
+"Chỉ báo động lượng dựa trên chênh lệch hai đường trung bình.",
+"macd-la-gi"
+],
+[
+"Margin",
+"Vay tiền công ty chứng khoán để mua cổ phiếu, dùng cổ phiếu làm tài sản đảm bảo.",
+"margin-la-gi"
+],
+[
+"Mệnh giá",
+"Giá ghi trên cổ phiếu, ở Việt Nam là 10.000 đồng.",
+"menh-gia-co-phieu-la-gi"
+],
+[
+"Moat",
+"Lợi thế cạnh tranh bền vững giúp doanh nghiệp giữ lợi nhuận cao.",
+"loi-the-canh-tranh-moat"
+],
+[
+"NIM",
+"Biên lãi ròng của ngân hàng.",
+"nim-la-gi"
+],
+[
+"Nợ xấu",
+"Khoản vay nhóm 3–5, khó thu hồi.",
+"no-xau-ngan-hang-la-gi"
+],
+[
+"Overtrading",
+"Giao dịch quá nhiều, phí và cảm xúc bào mòn tài khoản.",
+"overtrading-la-gi"
+],
+[
+"P/B",
+"Giá cổ phiếu chia giá trị sổ sách mỗi cổ phiếu.",
+"pb-la-gi"
+],
+[
+"P/E",
+"Giá cổ phiếu chia lợi nhuận mỗi cổ phiếu (EPS).",
+"pe-la-gi"
+],
+[
+"PEG",
+"P/E chia tốc độ tăng trưởng lợi nhuận.",
+"peg-la-gi"
+],
+[
+"Penny",
+"Cổ phiếu giá thấp, vốn hóa nhỏ, rủi ro cao.",
+"von-hoa-bluechip-penny"
+],
+[
+"Phái sinh",
+"Sản phẩm có giá trị dựa trên tài sản cơ sở như chỉ số VN30.",
+"phai-sinh-la-gi"
+],
+[
+"Phân kỳ",
+"Giá và chỉ báo đi ngược chiều nhau, cảnh báo xu hướng yếu đi.",
+"phan-ky-la-gi"
+],
+[
+"Quyền mua",
+"Quyền của cổ đông hiện hữu được mua cổ phiếu phát hành thêm.",
+"quyen-mua-co-phieu-la-gi"
+],
+[
+"ROA",
+"Lợi nhuận trên tổng tài sản.",
+"roa-la-gi"
+],
+[
+"ROE",
+"Lợi nhuận trên vốn chủ sở hữu.",
+"roe-eps-la-gi"
+],
+[
+"Room ngoại",
+"Tỷ lệ sở hữu tối đa của nhà đầu tư nước ngoài tại một doanh nghiệp.",
+"room-ngoai-la-gi"
+],
+[
+"RSI",
+"Chỉ báo sức mạnh tương đối, đo vùng quá mua, quá bán.",
+"rsi-la-gi"
+],
+[
+"Sàn HOSE, HNX, UPCoM",
+"Ba nơi giao dịch cổ phiếu tại Việt Nam.",
+"san-hose-hnx-upcom-la-gi"
+],
+[
+"T+2",
+"Tiền và cổ phiếu về tài khoản sau 2 ngày làm việc kể từ ngày khớp.",
+"t-2-la-gi"
+],
+[
+"Tăng trưởng tín dụng",
+"Mức tăng dư nợ cho vay của ngân hàng.",
+"tang-truong-tin-dung-la-gi"
+],
+[
+"Thanh khoản",
+"Mức độ dễ mua bán cổ phiếu mà không làm giá biến động nhiều.",
+"thanh-khoan-co-phieu-la-gi"
+],
+[
+"Thị trường bò, gấu",
+"Giai đoạn thị trường tăng (bò) hoặc giảm (gấu) kéo dài.",
+"thi-truong-bo-gau-la-gi"
+],
+[
+"Tích sản",
+"Tích lũy tài sản bằng cách mua đều cổ phiếu tốt trong nhiều năm.",
+"tich-san-chung-khoan-la-gi"
+],
+[
+"Trái phiếu",
+"Chứng khoán nợ: nhà đầu tư cho tổ chức phát hành vay và nhận lãi.",
+"trai-phieu-la-gi"
+],
+[
+"Tự doanh",
+"Công ty chứng khoán dùng vốn của mình để đầu tư.",
+"tu-doanh-la-gi"
+],
+[
+"Vốn hóa",
+"Giá trị thị trường của doanh nghiệp = thị giá × số cổ phiếu lưu hành.",
+"von-hoa-bluechip-penny"
+],
+[
+"VN-Index",
+"Chỉ số đại diện cho toàn bộ cổ phiếu trên sàn HOSE.",
+"vn-index-la-gi"
+],
+[
+"VN30",
+"Chỉ số 30 cổ phiếu vốn hóa lớn, thanh khoản cao trên HOSE.",
+"vn30-la-gi"
+]
+]
