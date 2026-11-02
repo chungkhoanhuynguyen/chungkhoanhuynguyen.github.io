@@ -33,7 +33,7 @@ jobs:
               b = ds[-1] if ds else ""
           if b and not ks:
               src = open(f"_video/queue/{b}/video_dai.py", encoding="utf-8").read()
-              ks = re.findall(r'^S\["([A-Za-z0-9_]+)"\]\s*=', src, re.M)
+              ks = re.findall(r'^S\[["\x27]([A-Za-z0-9_]+)["\x27]\]\s*=', src, re.M)
           with open(os.environ["GITHUB_OUTPUT"], "a") as f:
               f.write(f"batch={b}\nkeys={json.dumps(ks)}\n")
           print(b, ks)
