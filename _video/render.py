@@ -58,12 +58,76 @@ for i, sc in enumerate(raw):
     tts.save(np.asarray(tts.infer(say, voice=VOICE, temperature=0.7), dtype=np.float32), "%s/%02d.wav" % (wd, i))
 print(key, "giong %.0fs" % (time.time() - t0), flush=True)
 
+
+# ---- khung NGANG 1920x1080 cho YouTube video dài: ghép từ khung dọc của engine ----
+from PIL import Image, ImageDraw, ImageFilter
+LW, LH = 1920, 1080
+def _bg():
+    g = Image.new("RGB", (LW, LH), (13, 16, 23)); d = ImageDraw.Draw(g)
+    for r, c in ((900, (18, 22, 31)), (600, (22, 27, 38)), (320, (26, 32, 45))):
+        d.ellipse([LW*0.36-r, LH/2-r, LW*0.36+r, LH/2+r], fill=c)
+    return g.filter(ImageFilter.GaussianBlur(140))
+LBG = _bg()
+def _cover(v):
+    c = v.resize((LW, int(v.height*LW/v.width)), Image.BILINEAR).crop((0, 400, LW, 400+LH)).filter(ImageFilter.GaussianBlur(40))
+    return Image.blend(c, Image.new("RGB", (LW, LH), (8, 10, 15)), 0.55)
+def land(v, sc, t):
+    k = sc["k"]; im = _cover(v)
+    if k in ("end", "text"):
+        c = v.crop((0, 200, 1080, 1720)); s = LH/c.height; c = c.resize((int(c.width*s), LH), Image.LANCZOS)
+        im.paste(c, ((LW-c.width)//2, 0)); return im
+    p = v.crop((66, 470, 1014, 1150)); s = 1.42; p = p.resize((int(p.width*s), int(p.height*s)), Image.LANCZOS)
+    im.paste(p, (50, (LH-p.height)//2 + 20))
+    d = ImageDraw.Draw(im); x0 = 50 + p.width + 40; cw = LW - x0 - 50; cx = x0 + cw/2
+    dx2.brand(im, d, cx, 70, 0.9, 1.0, (10, 12, 17))
+    lab = sc.get("label") or ""
+    if lab:
+        a = dx2.ease(t/0.4); f = dx2.fit(d, lab, "Bold", cw, 34); tw = d.textlength(lab, font=f)
+        d.text((cx - tw/2, 300), lab, font=f, fill=dx2.mix(dx2.GOLD, a, (10, 12, 17)))
+        d.line([cx - 60, 352, cx + 60, 352], fill=dx2.mix(dx2.GOLD, a, (10, 12, 17)), width=3)
+    cols = sc.get("cols") or [dx2.CREAM, dx2.GOLD]; y = 430
+    for i, l in enumerate(sc.get("cap") or []):
+        if not l: continue
+        a = dx2.ease((t - 0.25 - i*0.18)/0.45)
+        if a <= 0: continue
+        f = dx2.fit(d, l, "Black", cw, 92); c = cols[i] if i < len(cols) else dx2.CREAM
+        tw = d.textlength(l, font=f); d.text((cx - tw/2, y + (1-a)*24), l, font=f, fill=dx2.mix(c, a, (10, 12, 17))); y += int(f.size*1.2)
+    f = dx2.F("SemiBold", 26); u = "chungkhoanhuynguyen.com"; d.text((cx - d.textlength(u, font=f)/2, LH - 70), u, font=f, fill=(120, 128, 146))
+    return im
+def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
+    import wave, re
+    tmpd = "/tmp/hl_%s_parts" % key; os.makedirs(tmpd, exist_ok=True); parts = []; b = [0.0]
+    for i in range(len(scenes)):
+        src = os.path.join(wav_dir, "%02d.wav" % i); dst = os.path.join(tmpd, "%02d.wav" % i)
+        pad = gap + (tail if i == len(scenes)-1 else 0)
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", src, "-af",
+            "silenceremove=start_periods=1:start_threshold=-40dB:start_silence=0.05,areverse,silenceremove=start_periods=1:start_threshold=-40dB:start_silence=0.08,areverse,atempo=%.3f,apad=pad_dur=%.2f" % (tempo, pad),
+            "-ar", "44100", "-ac", "1", dst])
+        with wave.open(dst) as w: dd = w.getnframes()/w.getframerate()
+        b.append(b[-1] + dd); parts.append(dst)
+    lst = os.path.join(tmpd, "list.txt"); open(lst, "w").write("".join("file '%s'\n" % p for p in parts))
+    A = os.path.join(tmpd, "full.wav")
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", A])
+    tmp = "/tmp/hl_%s.mp4" % key; FPS = dx2.FPS
+    p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", "%dx%d" % (LW, LH), "-r", str(FPS), "-i", "-",
+                          "-pix_fmt", "yuv420p", "-c:v", "libx264", "-crf", "20", "-preset", "veryfast", tmp], stdin=subprocess.PIPE)
+    fr = 0
+    for i, sc in enumerate(scenes):
+        n = int(round(b[i+1]*FPS)) - fr
+        for j in range(n): p.stdin.write(land(dx2.draw(sc, j/FPS, j/max(1, n)), sc, j/FPS).tobytes())
+        fr += n
+    p.stdin.close(); p.wait()
+    af = ("highpass=f=120,acompressor=threshold=-26dB:ratio=4:attack=3:release=60:makeup=6,"
+          "loudnorm=I=-14:TP=-1:LRA=7,alimiter=limit=0.95:attack=1:release=40:level=false")
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", tmp, "-i", A, "-af", af, "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "44100", "-shortest", out])
+    return b
+
 # 4) dựng + nhạc nền
 rawmp4 = WORK + "/raw.mp4"; out = os.path.join(OUT, key + ".mp4")
-b = dx2.build_scenes(key, scenes, wd, rawmp4, tempo=1.0)
+b = build_land(key, scenes, wd, rawmp4, tempo=1.0)
 music.mix(rawmp4, b, out)
 # 5) ảnh bìa = khung cảnh mở đầu lúc 3 giây
-dx2.draw(scenes[0], 3.0).save(os.path.join(OUT, key + "_bia.png"))
+land(dx2.draw(scenes[0], 3.0), scenes[0], 3.0).resize((1280, 720), Image.LANCZOS).save(os.path.join(OUT, key + "_bia.png"))
 # 6) mốc chương thật theo giọng (cho mô tả YouTube)
 ch = []
 for i, sc in enumerate(raw):
