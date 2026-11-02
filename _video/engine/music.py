@@ -57,10 +57,10 @@ def track(total, bounds):
 def write(path, x):
     with wave.open(path, "w") as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((np.clip(x, -1, 1)*32767).astype(np.int16).tobytes())
-def mix(video, bounds, out, music_db=-7):
+def mix(video, bounds, out, music_db=-21):
     total = bounds[-1]; write("/tmp/bgm.wav", track(total, bounds))
     fc = ("[1:a]volume=%ddB,aresample=44100[m];[0:a]asplit=2[v][sc];"
-          "[m][sc]sidechaincompress=threshold=0.2:ratio=2:attack=40:release=250[md];"
+          "[m][sc]sidechaincompress=threshold=0.03:ratio=8:attack=20:release=400[md];"
           "[v][md]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95[a]") % music_db
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", video, "-i", "/tmp/bgm.wav", "-filter_complex", fc,
                     "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", out])
