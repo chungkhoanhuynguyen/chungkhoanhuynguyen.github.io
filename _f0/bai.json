@@ -14512,5 +14512,453 @@
    "mua-trung-binh-gia-dca"
   ],
   "add": []
+ },
+ {
+  "slug": "thi-truong-bo-gau-la-gi",
+  "kw": "thị trường bò thị trường gấu là gì",
+  "grp": 1,
+  "title": "Thị trường bò, thị trường gấu là gì? Người mới cần biết gì",
+  "desc": "Thị trường bò (tăng) và thị trường gấu (giảm) là gì, dấu hiệu nhận biết, kéo dài bao lâu và người mới nên hành xử thế nào trong từng giai đoạn.",
+  "body": [
+   [
+    "p",
+    "Trên báo chí tài chính hay gặp hai hình ảnh: <b>con bò</b> và <b>con gấu</b>. Bò húc sừng từ dưới lên – tượng trưng thị trường tăng. Gấu vả móng từ trên xuống – tượng trưng thị trường giảm. Hiểu hai trạng thái này giúp người mới không hoảng loạn khi thị trường đổi chiều."
+   ],
+   [
+    "h2",
+    "1. Thị trường bò (bull market)"
+   ],
+   [
+    "ul",
+    [
+     "Chỉ số như <a href=\"/f0/vn-index-la-gi.html\">VN-Index</a> tăng kéo dài nhiều tháng, thường được hiểu là tăng từ 20% trở lên tính từ đáy.",
+     "Thanh khoản tăng, nhiều người mới mở tài khoản, tin tốt xuất hiện dày đặc.",
+     "Doanh nghiệp báo lãi tăng, lãi suất thường ổn định hoặc giảm."
+    ]
+   ],
+   [
+    "h2",
+    "2. Thị trường gấu (bear market)"
+   ],
+   [
+    "ul",
+    [
+     "Chỉ số giảm kéo dài, thường được hiểu là giảm từ 20% trở lên tính từ đỉnh.",
+     "Thanh khoản cạn, tâm lý bi quan, nhiều nhà đầu tư dùng margin bị <a href=\"/f0/ban-giai-chap-la-gi.html\">bán giải chấp</a>.",
+     "Thường đi kèm lãi suất tăng, lợi nhuận doanh nghiệp suy giảm hoặc cú sốc vĩ mô."
+    ]
+   ],
+   [
+    "h2",
+    "3. Điều chỉnh khác gì thị trường gấu?"
+   ],
+   [
+    "p",
+    "Giảm 5–10% trong vài tuần là <b>điều chỉnh</b> – chuyện bình thường kể cả trong thị trường bò. Chỉ khi giảm sâu và kéo dài, xu hướng chính chuyển sang giảm (các đỉnh, đáy thấp dần) mới gọi là thị trường gấu. Xem <a href=\"/f0/xu-huong-tang-giam-di-ngang.html\">xu hướng tăng, giảm, đi ngang</a>."
+   ],
+   [
+    "h2",
+    "4. Người mới nên làm gì?"
+   ],
+   [
+    "ol",
+    [
+     "<b>Thị trường bò</b>: đừng FOMO mua đuổi mã đã tăng quá mạnh, đừng tăng margin vì thấy ai cũng lãi. Xem <a href=\"/f0/tam-ly-fomo-va-hoang-loan.html\">tâm lý FOMO</a>.",
+     "<b>Thị trường gấu</b>: giữ tiền mặt, tránh <a href=\"/f0/bat-day-co-phieu-la-gi.html\">bắt đáy</a> bằng toàn bộ vốn; đây cũng là lúc người tích sản mua dần được giá tốt.",
+     "Cả hai giai đoạn: chỉ dùng tiền nhàn rỗi, chia vốn, có kế hoạch <a href=\"/f0/cat-lo-la-gi.html\">cắt lỗ</a>."
+    ]
+   ],
+   [
+    "h2",
+    "5. Bài học lịch sử"
+   ],
+   [
+    "p",
+    "Thị trường Việt Nam từng có những giai đoạn tăng mạnh rồi giảm sâu, như 2006–2007 rồi 2008, hay 2021 rồi 2022. Điểm chung: lúc hưng phấn nhất thường gần đỉnh, lúc bi quan nhất thường gần đáy. Người sống sót lâu dài là người không vay quá sức và giữ kỷ luật."
+   ],
+   [
+    "p",
+    "Bài viết mang tính giáo dục, không phải khuyến nghị mua bán. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Thị trường bò kéo dài bao lâu?",
+    "Không cố định, có thể vài tháng đến vài năm, tùy chu kỳ kinh tế và lãi suất."
+   ],
+   [
+    "Giảm bao nhiêu thì gọi là thị trường gấu?",
+    "Quy ước phổ biến là giảm từ 20% trở lên so với đỉnh và kéo dài."
+   ],
+   [
+    "Thị trường gấu có nên đầu tư không?",
+    "Người tích sản dài hạn có thể mua dần bằng tiền nhàn rỗi; tránh margin và dồn vốn một lần."
+   ]
+  ],
+  "rel": [
+   "vn-index-la-gi",
+   "xu-huong-tang-giam-di-ngang",
+   "tam-ly-fomo-va-hoang-loan",
+   "bat-day-co-phieu-la-gi"
+  ],
+  "add": []
+ },
+ {
+  "slug": "tu-doanh-la-gi",
+  "kw": "tự doanh là gì",
+  "grp": 2,
+  "title": "Tự doanh là gì? Khối tự doanh mua ròng, bán ròng nghĩa là gì",
+  "desc": "Tự doanh là việc công ty chứng khoán dùng vốn của mình để đầu tư. Ý nghĩa của tự doanh mua ròng, bán ròng và vì sao không nên mua theo máy móc.",
+  "body": [
+   [
+    "p",
+    "Cuối mỗi phiên, bản tin thị trường hay có dòng “khối tự doanh mua ròng 200 tỷ”. Người mới thường thắc mắc tự doanh là ai và có nên làm theo không."
+   ],
+   [
+    "h2",
+    "1. Tự doanh là gì?"
+   ],
+   [
+    "p",
+    "<b>Tự doanh</b> là hoạt động công ty chứng khoán dùng <b>chính vốn của mình</b> để mua bán cổ phiếu, trái phiếu, chứng chỉ quỹ, phái sinh nhằm kiếm lời. Khác với phí giao dịch thu từ khách hàng, tự doanh lãi hay lỗ phụ thuộc hoàn toàn vào thị trường."
+   ],
+   [
+    "h2",
+    "2. Mua ròng, bán ròng"
+   ],
+   [
+    "ul",
+    [
+     "<b>Mua ròng</b>: giá trị mua lớn hơn giá trị bán trong phiên.",
+     "<b>Bán ròng</b>: giá trị bán lớn hơn giá trị mua.",
+     "Cùng cách hiểu với <a href=\"/f0/khoi-ngoai-mua-rong-ban-rong-la-gi.html\">khối ngoại mua ròng, bán ròng</a>."
+    ]
+   ],
+   [
+    "h2",
+    "3. Vì sao tự doanh mua bán nhiều?"
+   ],
+   [
+    "ol",
+    [
+     "<b>Phòng hộ</b>: công ty phát hành <a href=\"/f0/chung-quyen-la-gi.html\">chứng quyền</a> phải mua bán cổ phiếu cơ sở để phòng rủi ro.",
+     "<b>Giao dịch chênh lệch</b> giữa rổ cổ phiếu và hợp đồng tương lai, quỹ ETF.",
+     "<b>Đầu tư thật</b> theo nhận định của công ty.",
+     "<b>Cơ cấu</b> danh mục vào cuối quý."
+    ]
+   ],
+   [
+    "p",
+    "Vì có nhiều mục đích như vậy, một phiên tự doanh mua ròng chưa chắc là “tín hiệu tăng giá”."
+   ],
+   [
+    "h2",
+    "4. Tự doanh trên BCTC công ty chứng khoán"
+   ],
+   [
+    "p",
+    "Tự doanh làm lợi nhuận công ty chứng khoán biến động mạnh. Ví dụ quý 3/2026, mảng tự doanh của VIX lỗ ròng 88 tỷ, kéo LNST công ty mẹ giảm 92,9% so với cùng kỳ (BCTC quý 3/2026, tổng hợp trên chungkhoanhuynguyen.com). Đọc thêm <a href=\"/f0/doc-bctc-cong-ty-chung-khoan.html\">cách đọc BCTC công ty chứng khoán</a>."
+   ],
+   [
+    "h2",
+    "5. Người mới dùng thông tin này thế nào?"
+   ],
+   [
+    "ul",
+    [
+     "Xem như một dữ liệu tham khảo về dòng tiền, không phải lệnh mua bán.",
+     "Quan tâm xu hướng nhiều phiên hơn là một phiên đơn lẻ.",
+     "Ưu tiên kết quả kinh doanh doanh nghiệp khi ra quyết định dài hạn."
+    ]
+   ],
+   [
+    "p",
+    "Bài viết mang tính giáo dục, không phải khuyến nghị mua bán. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Khối tự doanh là ai?",
+    "Là bộ phận đầu tư bằng vốn của chính các công ty chứng khoán."
+   ],
+   [
+    "Tự doanh mua ròng có nên mua theo?",
+    "Không nên máy móc, vì tự doanh mua bán cả để phòng hộ chứng quyền, phái sinh, ETF."
+   ],
+   [
+    "Xem dữ liệu tự doanh ở đâu?",
+    "Các bản tin cuối phiên và trang thống kê của sở giao dịch, công ty chứng khoán."
+   ]
+  ],
+  "rel": [
+   "khoi-ngoai-mua-rong-ban-rong-la-gi",
+   "doc-bctc-cong-ty-chung-khoan",
+   "chung-quyen-la-gi",
+   "khoi-luong-giao-dich-va-dong-tien"
+  ],
+  "add": []
+ },
+ {
+  "slug": "room-ngoai-la-gi",
+  "kw": "room ngoại là gì",
+  "grp": 2,
+  "title": "Room ngoại là gì? Hết room, kín room ảnh hưởng ra sao",
+  "desc": "Room ngoại là tỷ lệ sở hữu tối đa của nhà đầu tư nước ngoài tại một doanh nghiệp. Mức 49%, 30% với ngân hàng, kín room nghĩa là gì và ảnh hưởng giá.",
+  "body": [
+   [
+    "p",
+    "<b>Room ngoại</b> là tỷ lệ cổ phần tối đa mà nhà đầu tư nước ngoài được sở hữu tại một doanh nghiệp niêm yết. Khi khối ngoại đã mua đủ tỷ lệ này, cổ phiếu được gọi là <b>kín room</b> (hết room)."
+   ],
+   [
+    "h2",
+    "1. Các mức room phổ biến"
+   ],
+   [
+    "ul",
+    [
+     "<b>Ngành thông thường</b>: phần lớn doanh nghiệp có room 49%; một số ngành không hạn chế, doanh nghiệp có thể nâng room tới 100% nếu đại hội cổ đông thông qua.",
+     "<b>Ngân hàng</b>: tổng sở hữu nước ngoài tối đa 30% (một số trường hợp đặc biệt có quy định riêng).",
+     "<b>Ngành có điều kiện</b> (một số lĩnh vực viễn thông, vận tải, quốc phòng…): room thấp hơn theo quy định."
+    ]
+   ],
+   [
+    "h2",
+    "2. Ví dụ thực tế"
+   ],
+   [
+    "p",
+    "Theo dữ liệu ngày 31/10/2026: MWG có tỷ lệ sở hữu nước ngoài khoảng 49,0% – gần kín room; VNM khoảng 49,7% vì doanh nghiệp này đã nới room. Trong khi đó, nhiều ngân hàng còn cách xa trần 30%: TCB khoảng 13,9%, BID khoảng 17,4%, VCB khoảng 19,9%."
+   ],
+   [
+    "h2",
+    "3. Kín room ảnh hưởng gì?"
+   ],
+   [
+    "ol",
+    [
+     "Nhà đầu tư nước ngoài muốn mua phải mua lại từ nhà đầu tư nước ngoài khác, thường qua giao dịch thỏa thuận và có thể trả <b>giá cao hơn</b> giá khớp trên sàn.",
+     "Dòng tiền ngoại không thể mua thêm trên sàn, nên giao dịch của <a href=\"/f0/khoi-ngoai-mua-rong-ban-rong-la-gi.html\">khối ngoại</a> ở mã đó thường ít.",
+     "Khi doanh nghiệp công bố nới room, thị trường có thể kỳ vọng dòng tiền ngoại mới."
+    ]
+   ],
+   [
+    "h2",
+    "4. Room ngoại và nâng hạng thị trường"
+   ],
+   [
+    "p",
+    "Giới hạn sở hữu nước ngoài là một trong các tiêu chí các tổ chức xếp hạng thị trường quốc tế xem xét. Mở rộng room giúp thị trường hấp dẫn hơn với quỹ ngoại."
+   ],
+   [
+    "h2",
+    "5. Người mới cần lưu ý"
+   ],
+   [
+    "ul",
+    [
+     "Kín room không có nghĩa doanh nghiệp tốt, còn room trống không có nghĩa doanh nghiệp xấu.",
+     "Thông tin room chỉ là một dữ liệu về dòng tiền; quyết định đầu tư vẫn dựa trên kết quả kinh doanh và định giá.",
+     "Xem tỷ lệ sở hữu nước ngoài tại trang thông tin từng mã."
+    ]
+   ],
+   [
+    "p",
+    "Bài viết mang tính giáo dục, không phải khuyến nghị mua bán. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Room ngoại ngân hàng là bao nhiêu?",
+    "Tối đa 30% vốn điều lệ cho tổng nhà đầu tư nước ngoài, trừ trường hợp đặc biệt."
+   ],
+   [
+    "Kín room là gì?",
+    "Là khi tỷ lệ sở hữu nước ngoài đã chạm mức tối đa cho phép; khối ngoại không mua thêm được trên sàn."
+   ],
+   [
+    "Nhà đầu tư trong nước có bị ảnh hưởng?",
+    "Không bị hạn chế mua bán; chỉ là dòng tiền ngoại ở mã đó bị giới hạn."
+   ]
+  ],
+  "rel": [
+   "khoi-ngoai-mua-rong-ban-rong-la-gi",
+   "co-phieu-la-gi",
+   "tich-san-co-phieu-ngan-hang",
+   "fed-tang-giam-lai-suat-tac-dong"
+  ],
+  "add": []
+ },
+ {
+  "slug": "dau-hieu-co-phieu-bi-lam-gia",
+  "kw": "dấu hiệu cổ phiếu bị làm giá",
+  "grp": 5,
+  "title": "Dấu hiệu cổ phiếu bị làm giá: 7 cờ đỏ người mới cần biết",
+  "desc": "Cổ phiếu bị làm giá (thao túng) thường có dấu hiệu gì: tăng trần liên tục không tin, thanh khoản đột biến, nhóm kín hô hào. Cách tự bảo vệ cho người mới.",
+  "body": [
+   [
+    "p",
+    "Thao túng giá cổ phiếu là hành vi bị pháp luật nghiêm cấm, nhưng vẫn xảy ra, chủ yếu ở mã vốn hóa nhỏ, ít người nắm giữ. Người mới thường là người mua cuối cùng ở vùng giá cao. Dưới đây là những <b>cờ đỏ</b> thường gặp."
+   ],
+   [
+    "h2",
+    "1. Bảy dấu hiệu cảnh báo"
+   ],
+   [
+    "ol",
+    [
+     "<b>Tăng trần nhiều phiên liên tiếp không có tin</b> hoặc tin rất mơ hồ.",
+     "<b>Thanh khoản đột biến</b> gấp nhiều lần bình thường ở một mã trước đó gần như không có giao dịch. Xem <a href=\"/f0/thanh-khoan-co-phieu-la-gi.html\">thanh khoản cổ phiếu</a>.",
+     "<b>Vốn hóa nhỏ, cổ phiếu tự do ít</b>: chỉ cần ít tiền là đẩy được giá.",
+     "<b>Hô hào trong nhóm kín, mạng xã hội</b>: “mục tiêu x2, x3”, “hàng sắp có tin lớn”.",
+     "<b>Lợi nhuận doanh nghiệp không tương xứng</b>: giá tăng gấp đôi trong khi doanh nghiệp lỗ hoặc lãi rất nhỏ.",
+     "<b>Cổ đông lớn, người nội bộ bán ra</b> đúng lúc giá cao. Xem <a href=\"/f0/giao-dich-noi-bo-la-gi.html\">giao dịch nội bộ</a>.",
+     "<b>Sập sàn liên tiếp, mất thanh khoản</b> sau giai đoạn tăng nóng – người đến sau không bán được."
+    ]
+   ],
+   [
+    "h2",
+    "2. Kịch bản thường thấy"
+   ],
+   [
+    "p",
+    "Giai đoạn 1: gom hàng âm thầm khi giá thấp. Giai đoạn 2: kéo giá, tạo thanh khoản ảo bằng nhiều tài khoản mua bán qua lại. Giai đoạn 3: tung tin, hô hào để nhà đầu tư nhỏ lẻ mua đuổi. Giai đoạn 4: phân phối hết hàng, giá giảm sàn nhiều phiên. Khi người mới nhận ra thì đã ở giai đoạn 4."
+   ],
+   [
+    "h2",
+    "3. Cách tự bảo vệ"
+   ],
+   [
+    "ul",
+    [
+     "Ưu tiên cổ phiếu vốn hóa lớn, thanh khoản tốt, lợi nhuận thật. Xem <a href=\"/f0/von-hoa-bluechip-penny.html\">bluechip và penny</a>.",
+     "Kiểm tra mã có đang bị <a href=\"/f0/co-phieu-bi-canh-bao-kiem-soat-han-che.html\">cảnh báo, kiểm soát</a> không.",
+     "Không mua theo nhóm kín, không chuyển tiền cho người lạ “đánh hộ”.",
+     "Luôn đặt mức <a href=\"/f0/cat-lo-la-gi.html\">cắt lỗ</a> và không dùng margin cho mã nhỏ."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "p",
+    "Giá tăng mạnh không có nền tảng là rủi ro, không phải cơ hội. Câu hỏi đơn giản nhất: “Nếu không ai hô, mình có mua cổ phiếu này không?”. Bài viết mang tính giáo dục, không phải khuyến nghị mua bán. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Làm giá cổ phiếu có vi phạm pháp luật không?",
+    "Có. Thao túng giá chứng khoán bị xử phạt hành chính và có thể bị truy cứu trách nhiệm hình sự."
+   ],
+   [
+    "Mã nào dễ bị làm giá?",
+    "Thường là mã vốn hóa nhỏ, ít cổ phiếu tự do, thanh khoản thấp, ít thông tin."
+   ],
+   [
+    "Đang giữ mã có dấu hiệu bị làm giá thì sao?",
+    "Xem lại lý do mua, kế hoạch cắt lỗ và tỷ trọng; tránh mua thêm khi chưa hiểu doanh nghiệp."
+   ]
+  ],
+  "rel": [
+   "chung-khoan-co-phai-lua-dao-khong",
+   "von-hoa-bluechip-penny",
+   "tam-ly-fomo-va-hoang-loan",
+   "sai-lam-cua-f0"
+  ],
+  "add": []
+ },
+ {
+  "slug": "menh-gia-co-phieu-la-gi",
+  "kw": "mệnh giá cổ phiếu là gì",
+  "grp": 1,
+  "title": "Mệnh giá cổ phiếu là gì? Khác thị giá và giá trị sổ sách",
+  "desc": "Mệnh giá cổ phiếu 10.000đ nghĩa là gì, khác thị giá và giá trị sổ sách thế nào, vì sao cổ tức tính theo % mệnh giá. Giải thích dễ hiểu cho người mới.",
+  "body": [
+   [
+    "p",
+    "Một cổ phiếu có nhiều loại “giá” khiến người mới dễ nhầm: <b>mệnh giá</b>, <b>thị giá</b> và <b>giá trị sổ sách</b>. Hiểu đúng ba khái niệm này giúp đọc thông báo cổ tức và định giá không bị sai."
+   ],
+   [
+    "h2",
+    "1. Mệnh giá là gì?"
+   ],
+   [
+    "p",
+    "Mệnh giá là giá ghi trên cổ phiếu khi phát hành. Ở Việt Nam, cổ phiếu chào bán ra công chúng có mệnh giá <b>10.000 đồng</b>. Vốn điều lệ = số cổ phiếu × mệnh giá. Ví dụ doanh nghiệp có 100 triệu cổ phiếu thì vốn điều lệ là 1.000 tỷ đồng."
+   ],
+   [
+    "h2",
+    "2. Thị giá là gì?"
+   ],
+   [
+    "p",
+    "Thị giá là giá giao dịch trên sàn, thay đổi theo cung cầu mỗi phiên. Thị giá có thể cao hơn mệnh giá rất nhiều (doanh nghiệp tốt) hoặc thấp hơn (doanh nghiệp gặp khó). Mệnh giá gần như không liên quan đến thị giá hằng ngày."
+   ],
+   [
+    "h2",
+    "3. Giá trị sổ sách là gì?"
+   ],
+   [
+    "p",
+    "Giá trị sổ sách mỗi cổ phiếu (BVPS) = vốn chủ sở hữu ÷ số cổ phiếu. So thị giá với BVPS ra chỉ số <a href=\"/f0/pb-la-gi.html\">P/B</a>. Xem thêm <a href=\"/f0/bvps-la-gi.html\">BVPS là gì</a>."
+   ],
+   [
+    "h2",
+    "4. Vì sao cổ tức tính theo % mệnh giá?"
+   ],
+   [
+    "ul",
+    [
+     "Doanh nghiệp công bố cổ tức 15% nghĩa là 15% × 10.000đ = <b>1.500 đồng mỗi cổ phiếu</b>, không phải 15% thị giá.",
+     "Nếu thị giá 30.000đ thì tỷ suất cổ tức thực tế chỉ 1.500 ÷ 30.000 = 5%.",
+     "Đọc thêm <a href=\"/f0/co-tuc-la-gi.html\">cổ tức là gì</a>."
+    ]
+   ],
+   [
+    "h2",
+    "5. Mệnh giá và phát hành thêm"
+   ],
+   [
+    "p",
+    "Doanh nghiệp thường phát hành thêm cho cổ đông hiện hữu ở giá 10.000đ (bằng mệnh giá). Khi thị giá cao hơn nhiều, quyền mua có giá trị; khi thị giá thấp, quyền mua kém hấp dẫn. Xem <a href=\"/f0/quyen-mua-co-phieu-la-gi.html\">quyền mua cổ phiếu</a>."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Mệnh giá: 10.000đ, dùng tính vốn điều lệ và cổ tức.",
+     "Thị giá: giá mua bán trên sàn.",
+     "Giá trị sổ sách: vốn chủ chia số cổ phiếu, dùng tính P/B."
+    ]
+   ],
+   [
+    "p",
+    "Bài viết mang tính giáo dục, không phải khuyến nghị mua bán. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Mệnh giá cổ phiếu Việt Nam là bao nhiêu?",
+    "10.000 đồng mỗi cổ phiếu với cổ phiếu chào bán ra công chúng."
+   ],
+   [
+    "Cổ tức 10% là bao nhiêu tiền?",
+    "10% mệnh giá, tức 1.000 đồng mỗi cổ phiếu (trước thuế 5%)."
+   ],
+   [
+    "Thị giá dưới mệnh giá có phải rẻ?",
+    "Không chắc. Cần xem giá trị sổ sách, lợi nhuận và rủi ro của doanh nghiệp."
+   ]
+  ],
+  "rel": [
+   "co-phieu-la-gi",
+   "co-tuc-la-gi",
+   "bvps-la-gi",
+   "pb-la-gi"
+  ],
+  "add": []
  }
 ]
