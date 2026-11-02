@@ -118,6 +118,18 @@ GN = {1: "Bắt đầu", 2: "Giao dịch", 3: "Phân tích cơ bản", 4: "Phân
 GD = {1: "Chứng khoán là gì, mở tài khoản, nạp tiền", 2: "Đọc bảng giá, đặt lệnh, phí và thời gian tiền về", 3: "Đọc báo cáo tài chính, định giá, chọn cổ phiếu", 4: "Xu hướng, đường MA, RSI, dòng tiền", 5: "Cắt lỗ, margin, phân bổ vốn, kiểm soát cảm xúc", 6: "ETF, chứng chỉ quỹ, phái sinh, trái phiếu, IPO", 7: "Tích sản từ A đến Z, rủi ro, quản trị vốn: kiến thức quan trọng nhất", 8: "Giá dầu, lãi suất, tỷ giá, chính sách tác động tới cổ phiếu"}
 F = sorted(F, key=lambda x: x.get("grp", 1))
 FM = {x["slug"]: x for x in F}
+# Trang trụ cột (hub) cho từng cụm từ khóa + từ điển thuật ngữ (NV2 2/11)
+HUB = {1: "bat-dau-chung-khoan", 2: "giao-dich-chung-khoan", 3: "phan-tich-co-ban", 4: "phan-tich-ky-thuat", 5: "quan-tri-rui-ro-va-tam-ly", 6: "san-pham-chung-khoan", 7: "tich-san-co-phieu", 8: "vi-mo-va-nganh"}
+HT = {1: "Chứng khoán cho người mới bắt đầu: kiến thức nền tảng", 2: "Giao dịch chứng khoán: đặt lệnh, bảng giá, phí, T+2", 3: "Phân tích cơ bản cổ phiếu: đọc BCTC, P/E, P/B, ROE", 4: "Phân tích kỹ thuật cho người mới: nến, MA, RSI, MACD", 5: "Quản trị rủi ro và tâm lý đầu tư chứng khoán", 6: "Sản phẩm chứng khoán: ETF, quỹ, phái sinh, trái phiếu", 7: "Tích sản cổ phiếu: đầu tư dài hạn từ A đến Z", 8: "Vĩ mô và ngành: lãi suất, tỷ giá, giá dầu, cổ phiếu"}
+HI = {1: "Bắt đầu từ con số 0: chứng khoán là gì, cổ phiếu là gì, mở tài khoản và nạp tiền thế nào, nên đầu tư bao nhiêu và cách tránh lừa đảo. Đây là nhóm bài nên đọc đầu tiên trước khi đặt lệnh đầu tiên.",
+      2: "Mọi thứ cần biết khi bắt đầu mua bán: giờ giao dịch, các loại lệnh, đọc bảng giá, biên độ trần sàn, phí và thuế, thời gian tiền và cổ phiếu về tài khoản, khối ngoại, tự doanh.",
+      3: "Phân tích cơ bản giúp hiểu doanh nghiệp bạn sở hữu: đọc ba báo cáo tài chính, các chỉ số định giá P/E, P/B, PEG, EV/EBITDA, chỉ số hiệu quả ROE, ROA và các chỉ số riêng của ngân hàng như NIM, CASA, nợ xấu.",
+      4: "Phân tích kỹ thuật dùng biểu đồ giá và khối lượng để tìm xu hướng và vùng giá hợp lý: nến Nhật, hỗ trợ kháng cự, đường MA, RSI, MACD, Bollinger, các mô hình giá. Nên dùng kết hợp với phân tích cơ bản.",
+      5: "Giữ được vốn quan trọng hơn kiếm lãi nhanh: cắt lỗ, margin và call margin, phân bổ vốn, kỷ luật, các bẫy tâm lý như FOMO, bắt đáy, và những cờ đỏ cần tránh.",
+      6: "Ngoài cổ phiếu còn nhiều sản phẩm khác: quỹ ETF, quỹ mở, chứng chỉ quỹ, chứng quyền, hợp đồng tương lai VN30, trái phiếu, IPO. Mỗi loại có rủi ro và cách dùng khác nhau.",
+      7: "Tích sản là con đường bền vững cho người đi làm: mua đều cổ phiếu tốt, tái đầu tư cổ tức, để lãi kép làm việc. Chuyên đề có nhiều bài về tích sản cổ phiếu ngân hàng.",
+      8: "Giá cổ phiếu chịu tác động của lãi suất, tỷ giá, lạm phát, giá dầu, giá thép và chính sách. Nhóm bài này giải thích từng mối liên hệ bằng số liệu thật."}
+HP = lambda g: "/f0/chu-de-%s.html" % HUB[g]
 FP = lambda x: ("/%s.html" if x.get("root") else "/f0/%s.html") % x["slug"]
 os.makedirs(os.path.join(ROOT, "f0"), exist_ok=True)
 fkeep = set()
@@ -133,19 +145,20 @@ for x in F:
         {"@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": B + "/"},
             {"@type": "ListItem", "position": 2, "name": "Cẩm nang F0", "item": B + "/f0/"},
-            {"@type": "ListItem", "position": 3, "name": x["title"], "item": url}]},
+            {"@type": "ListItem", "position": 3, "name": GN[x.get("grp", 1)], "item": B + HP(x.get("grp", 1))},
+            {"@type": "ListItem", "position": 4, "name": x["title"], "item": url}]},
         {"@type": "Article", "headline": x["title"][:110], "description": x["desc"], "image": [B + "/img/og.png"], "datePublished": FDATE + "T17:00:00+07:00", "dateModified": today_iso if False else FDATE + "T17:00:00+07:00",
          "inLanguage": "vi", "mainEntityOfPage": url, "keywords": x["kw"] + ", chứng khoán cho người mới, F0",
          "author": {"@type": "Person", "name": "Huy Nguyễn", "url": B + "/"},
          "publisher": {"@type": "Organization", "name": "Chứng Khoán Huy Nguyễn", "logo": {"@type": "ImageObject", "url": B + "/img/icon-512.png"}}},
         {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in x["faq"]]}]}
     p = [head(x["title"] + " | Chứng Khoán Huy Nguyễn", x["desc"], url, B + "/img/og.png", ld), "<main><article>",
-         '<div class="bc"><a href="/">Trang chủ</a> › <a href="/f0/">Cẩm nang F0</a></div>',
+         '<div class="bc"><a href="/">Trang chủ</a> › <a href="/f0/">Cẩm nang F0</a> › <a href="%s">%s</a></div>' % (HP(x.get("grp", 1)), GN[x.get("grp", 1)]),
          f'<h1>{e(x["title"])}</h1><div class="meta">Cẩm nang chứng khoán cho người mới · Huy Nguyễn</div>',
          f'<div class="sum"><b>Tóm tắt:</b> {e(x["desc"])}</div>',
          '<div style="margin:20px 0;padding:14px 16px;border-radius:12px;background:#0068ff12;border:1px solid #0068ff55"><b>💬 Học cùng cộng đồng: hỏi đáp miễn phí cho người mới, nhận bảng tổng hợp BCTC và nhận định thị trường mỗi ngày</b><br><a href="https://zalo.me/g/jbnbiq994" target="_blank" rel="noopener" style="display:inline-block;margin-top:8px;background:#0068ff;color:#fff;padding:9px 16px;border-radius:999px;font-weight:700;text-decoration:none">Tham gia nhóm Zalo cộng đồng (miễn phí)</a></div>']
     g = x.get("grp", 1); gi = [y for y in F if y.get("grp", 1) == g]; k = gi.index(x)
-    p.insert(3, f'<div class="step">Bước {g}: {GN[g]} · Bài {k + 1}/{len(gi)}</div>')
+    p.insert(3, f'<div class="step"><a href="{HP(g)}" style="color:inherit;text-decoration:none">Bước {g}: {GN[g]}</a> · Bài {k + 1}/{len(gi)}</div>')
     hs = [b[1] for b in x["body"] + x.get("add", []) if b[0] == "h2"]
     if len(hs) >= 3:
         p.append('<nav class="toc"><b>Nội dung bài</b><ol>' + "".join(f'<li><a href="#m{i}">{e(h)}</a></li>' for i, h in enumerate(hs)) + '</ol></nav>')
@@ -162,11 +175,50 @@ for x in F:
     i = F.index(x); pv = F[i - 1] if i else None; nx = F[i + 1] if i + 1 < len(F) else None
     p.append("<h2>Câu hỏi thường gặp</h2>" + "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in x["faq"]))
     p.append('<div class="pn">' + (f'<a href="{FP(pv)}"><small>← Bài trước</small>{e(pv["title"])}</a>' if pv else '<span></span>') + (f'<a href="{FP(nx)}" style="text-align:right"><small>Bài tiếp theo →</small>{e(nx["title"])}</a>' if nx else '<a href="/f0/" style="text-align:right"><small>Hoàn thành lộ trình →</small>Về mục lục cẩm nang</a>') + '</div>')
-    p.append('<h2>Đọc tiếp</h2><ul>' + "".join(f'<li><a href="{FP(FM[r])}">{e(FM[r]["title"])}</a></li>' for r in x["rel"] if r in FM) + '<li><a href="/hoc/">Thư viện bài học có video</a></li></ul>')
+    p.append('<h2>Đọc tiếp</h2><ul>' + "".join(f'<li><a href="{FP(FM[r])}">{e(FM[r]["title"])}</a></li>' for r in x["rel"] if r in FM) + '<li><a href="{HP(x.get("grp", 1))}">Tất cả bài chủ đề {e(GN[x.get("grp", 1)])}</a></li><li><a href="/f0/tu-dien-thuat-ngu-chung-khoan.html">Từ điển thuật ngữ chứng khoán A–Z</a></li><li><a href="/hoc/">Thư viện bài học có video</a></li></ul>')
     p.append(f'<div class="cta"><a class="btn b1" href="/mo-tai-khoan-chung-khoan.html">Mở tài khoản chứng khoán</a><a class="btn b2" href="https://zalo.me/0365188286" rel="noopener">Tư vấn 1:1 qua Zalo</a><a class="btn b2" href="https://zalo.me/g/jbnbiq994" rel="noopener">Nhóm Zalo hỏi đáp</a><a class="btn b2" href="{YT}?sub_confirmation=1" rel="noopener">Kênh YouTube</a></div>')
     p.append("</article></main>" + FOOT)
     fn = FP(x)[1:]; fkeep.add(fn)
     open(os.path.join(ROOT, fn), "w", encoding="utf-8").write("\n".join(p))
+HNAV = '<nav class="toc"><b>Chủ đề</b><ol>' + "".join(f'<li><a href="{HP(g)}">{GN[g]}</a></li>' for g in GN) + '<li><a href="/f0/tu-dien-thuat-ngu-chung-khoan.html">Từ điển thuật ngữ A–Z</a></li></ol></nav>'
+for g in GN:
+    L = [x for x in F if x.get("grp", 1) == g]
+    if not L: continue
+    url = B + HP(g)
+    ld = {"@context": "https://schema.org", "@graph": [
+        {"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": B + "/"},
+            {"@type": "ListItem", "position": 2, "name": "Cẩm nang F0", "item": B + "/f0/"},
+            {"@type": "ListItem", "position": 3, "name": GN[g], "item": url}]},
+        {"@type": "CollectionPage", "name": HT[g], "url": url, "inLanguage": "vi", "description": HI[g][:155],
+         "hasPart": [{"@type": "Article", "headline": x["title"][:110], "url": B + FP(x)} for x in L]}]}
+    p = [head(HT[g][:65], (HI[g][:152] + "…") if len(HI[g]) > 155 else HI[g], url, B + "/img/og.png", ld), "<main>",
+         f'<div class="bc"><a href="/">Trang chủ</a> › <a href="/f0/">Cẩm nang F0</a> › {GN[g]}</div><h1>{e(HT[g])}</h1>',
+         f'<p>{e(HI[g])}</p><p class="meta">{len(L)} bài · Bước {g} trong lộ trình cẩm nang chứng khoán cho người mới.</p>',
+         '<ol class="f0l">' + "".join(f'<li><a href="{FP(x)}"><b>{e(x["title"])}</b></a><br><small>{e(x["desc"])}</small></li>' for x in L) + '</ol>',
+         HNAV, '<div class="cta"><a class="btn b1" href="/f0/">Xem toàn bộ lộ trình</a><a class="btn b2" href="https://zalo.me/0365188286" rel="noopener">Tư vấn 1:1 qua Zalo</a></div></main>' + FOOT]
+    fn = HP(g)[1:]; fkeep.add(fn)
+    open(os.path.join(ROOT, fn), "w", encoding="utf-8").write("\n".join(p))
+_TD = json.load(open(os.path.join(ROOT, "_f0/tu_dien.json"), encoding="utf-8"))
+_TD = sorted([t for t in _TD if not t[2] or t[2] in FM], key=lambda t: t[0].lower())
+url = B + "/f0/tu-dien-thuat-ngu-chung-khoan.html"
+ld = {"@context": "https://schema.org", "@graph": [
+    {"@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": B + "/"},
+        {"@type": "ListItem", "position": 2, "name": "Cẩm nang F0", "item": B + "/f0/"},
+        {"@type": "ListItem", "position": 3, "name": "Từ điển thuật ngữ", "item": url}]},
+    {"@type": "DefinedTermSet", "name": "Từ điển thuật ngữ chứng khoán A–Z", "url": url, "inLanguage": "vi",
+     "hasDefinedTerm": [{"@type": "DefinedTerm", "name": t[0], "description": t[1]} for t in _TD]}]}
+_L = sorted({t[0][0].upper() for t in _TD})
+p = [head("Từ điển thuật ngữ chứng khoán A–Z cho người mới", "Giải thích ngắn gọn %d thuật ngữ chứng khoán thường gặp từ A đến Z: P/E, ROE, margin, T+2, ATO, ETF, cổ tức… kèm link bài chi tiết cho người mới." % len(_TD), url, B + "/img/og.png", ld), "<main>",
+     '<div class="bc"><a href="/">Trang chủ</a> › <a href="/f0/">Cẩm nang F0</a> › Từ điển thuật ngữ</div><h1>Từ điển thuật ngữ chứng khoán A–Z</h1>',
+     f'<p>{len(_TD)} thuật ngữ người mới hay gặp, mỗi mục giải thích một câu và dẫn tới bài chi tiết.</p>',
+     '<p class="meta">' + " · ".join(f'<a href="#k{i}">{c}</a>' for i, c in enumerate(_L)) + '</p>']
+for i, c in enumerate(_L):
+    p.append(f'<h2 id="k{i}">{c}</h2><ul>' + "".join(f'<li><b>{e(t[0])}</b>: {e(t[1])}' + (f' <a href="/f0/{t[2]}.html">Xem chi tiết</a>' if t[2] else "") + "</li>" for t in _TD if t[0][0].upper() == c) + "</ul>")
+p.append(HNAV + '<div class="cta"><a class="btn b1" href="/f0/">Lộ trình cẩm nang F0</a></div></main>' + FOOT)
+fkeep.add("f0/tu-dien-thuat-ngu-chung-khoan.html")
+open(os.path.join(ROOT, "f0/tu-dien-thuat-ngu-chung-khoan.html"), "w", encoding="utf-8").write("\n".join(p))
 url = B + "/f0/"
 ld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Cẩm nang chứng khoán cho người mới (F0)", "url": url, "inLanguage": "vi",
       "hasPart": [{"@type": "Article", "headline": x["title"][:110], "url": B + FP(x)} for x in F]}
@@ -176,7 +228,7 @@ p = [head("Chứng khoán cho người mới bắt đầu: cẩm nang F0 từ A 
      '<div class="bc"><a href="/">Trang chủ</a> › Cẩm nang F0</div><h1>Chứng khoán cho người mới bắt đầu: cẩm nang F0</h1>',
      f'<p class="meta">{len(F)} bài, chia {len(GN)} bước. Học lần lượt từ Bước 1, mỗi bài có ví dụ dễ hiểu và nút sang bài tiếp theo.</p>' +
      '<nav class="toc"><b>Lộ trình</b><ol>' + "".join(f'<li><a href="#b{g}">Bước {g}: {GN[g]}</a> <small>({sum(1 for x in F if x.get("grp", 1) == g)} bài)</small></li>' for g in GN if any(x.get("grp", 1) == g for x in F)) + '</ol></nav>' +
-     "".join(f'<section class="gp" id="b{g}"><h2>Bước {g}: {GN[g]}</h2><p>{GD[g]}</p><ol class="f0l">' + "".join(f'<li><a href="{FP(x)}"><b>{e(x["title"])}</b></a><br><small>{e(x["desc"])}</small></li>' for x in F if x.get("grp", 1) == g) + "</ol></section>" for g in GN if any(x.get("grp", 1) == g for x in F)),
+     HNAV + "".join(f'<section class="gp" id="b{g}"><h2><a href="{HP(g)}" style="color:inherit;text-decoration:none">Bước {g}: {GN[g]}</a></h2><p>{GD[g]}</p><ol class="f0l">' + "".join(f'<li><a href="{FP(x)}"><b>{e(x["title"])}</b></a><br><small>{e(x["desc"])}</small></li>' for x in F if x.get("grp", 1) == g) + "</ol></section>" for g in GN if any(x.get("grp", 1) == g for x in F)),
      f'<div class="cta"><a class="btn b1" href="/hoc/">Thư viện bài học có video</a><a class="btn b2" href="{YT}?sub_confirmation=1" rel="noopener">Kênh YouTube</a></div></main>' + FOOT]
 open(os.path.join(ROOT, "f0/index.html"), "w", encoding="utf-8").write("\n".join(p))
 for f in os.listdir(os.path.join(ROOT, "f0")):
@@ -185,7 +237,7 @@ for f in os.listdir(os.path.join(ROOT, "f0")):
 today = now.strftime("%Y-%m-%d")
 U = [(B + "/", today, "daily", "1.0"), (B + "/hoc/", today, "daily", "0.9"), (B + "/bao-cao-2026.html", today, "weekly", "0.7")]
 U += [(f"{B}/hoc/{v['slug']}.html", v["d"], "monthly", "0.8") for v in R]
-U += [(B + "/f0/", today, "weekly", "0.9")] + [(B + FP(x), FDATE, "monthly", "0.9" if x.get("root") else "0.8") for x in F]
+U += [(B + "/f0/", today, "weekly", "0.9"), (B + "/f0/tu-dien-thuat-ngu-chung-khoan.html", today, "weekly", "0.9")] + [(B + HP(g), today, "weekly", "0.9") for g in GN] + [(B + FP(x), FDATE, "monthly", "0.9" if x.get("root") else "0.8") for x in F]
 open(os.path.join(ROOT, "sitemap.xml"), "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     "".join(f"<url><loc>{u}</loc><lastmod>{d}</lastmod><changefreq>{c}</changefreq><priority>{pr}</priority></url>\n" for u, d, c, pr in U) + "</urlset>\n")
 print("hoc:", len(R), "bai")
