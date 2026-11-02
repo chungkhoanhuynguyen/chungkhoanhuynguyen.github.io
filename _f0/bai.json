@@ -835,7 +835,7 @@
  {
   "slug": "dau-tu-chung-khoan-voi-10-trieu",
   "kw": "đầu tư chứng khoán với 10 triệu",
-  "title": "Đầu tư chứng khoán với 10 triệu: bắt đầu thế nào để không mất tiền oan",
+  "title": "Đầu tư chứng khoán với 10 triệu: bắt đầu thế nào cho đúng",
   "desc": "Có 10 triệu có nên đầu tư chứng khoán? Cách phân bổ vốn nhỏ, chọn cổ phiếu, kỳ vọng lợi nhuận thực tế và những sai lầm cần tránh.",
   "body": [
    [
@@ -921,7 +921,7 @@
  {
   "slug": "cach-doc-bang-gia-chung-khoan",
   "kw": "cách đọc bảng giá chứng khoán",
-  "title": "Cách đọc bảng giá chứng khoán: màu tím, xanh, đỏ, vàng nghĩa là gì",
+  "title": "Cách đọc bảng giá chứng khoán: màu tím, xanh, đỏ, vàng",
   "desc": "Hướng dẫn đọc bảng giá chứng khoán cho F0: giá trần, sàn, tham chiếu, màu sắc, dư mua dư bán, khối lượng và khối ngoại.",
   "body": [
    [
@@ -1318,7 +1318,7 @@
  {
   "slug": "co-tuc-la-gi",
   "kw": "cổ tức là gì",
-  "title": "Cổ tức là gì? Cổ tức tiền mặt và cổ tức cổ phiếu khác nhau thế nào",
+  "title": "Cổ tức là gì? Cổ tức tiền mặt và cổ tức cổ phiếu khác gì",
   "desc": "Cổ tức là gì, ngày đăng ký cuối cùng, ngày giao dịch không hưởng quyền, cách tính cổ tức, thuế cổ tức và vì sao giá bị điều chỉnh sau khi chia.",
   "body": [
    [
@@ -2018,8 +2018,8 @@
   "grp": 2,
   "slug": "thanh-khoan-co-phieu-la-gi",
   "kw": "thanh khoản cổ phiếu là gì",
-  "title": "Thanh khoản cổ phiếu là gì? Vì sao F0 nên tránh mã kém thanh khoản",
-  "desc": "Thanh khoản cổ phiếu là gì, đo bằng khối lượng và giá trị giao dịch thế nào, bao nhiêu là đủ, rủi ro khi mua mã thanh khoản thấp. Giải thích kèm ví dụ cho F0.",
+  "title": "Thanh khoản cổ phiếu là gì? Vì sao F0 nên tránh mã kém",
+  "desc": "Thanh khoản cổ phiếu là gì, đo bằng khối lượng và giá trị giao dịch, bao nhiêu là đủ, rủi ro khi mua mã thanh khoản thấp. Ví dụ cho F0.",
   "body": [
    [
     "p",
@@ -2537,7 +2537,7 @@
   "slug": "duong-ma-la-gi",
   "kw": "đường MA là gì",
   "title": "Đường MA là gì? Cách dùng MA20, MA50, MA200 cho người mới",
-  "desc": "Đường MA (trung bình động) là gì, cách tính, ý nghĩa MA20, MA50, MA200, cách nhìn xu hướng và điểm giao cắt. Ví dụ dễ hiểu cho F0 mới học phân tích kỹ thuật.",
+  "desc": "Đường MA (trung bình động) là gì, cách tính, ý nghĩa MA20, MA50, MA200, cách nhìn xu hướng và điểm giao cắt. Ví dụ dễ hiểu cho F0.",
   "body": [
    [
     "p",
@@ -2709,7 +2709,7 @@
   "slug": "ho-tro-khang-cu",
   "kw": "hỗ trợ kháng cự",
   "title": "Hỗ trợ và kháng cự là gì? Cách xác định cho người mới",
-  "desc": "Hỗ trợ và kháng cự là gì, vì sao giá hay dừng ở một vùng, cách xác định bằng đỉnh đáy, MA và số tròn, cách dùng để đặt điểm mua và cắt lỗ. Ví dụ dễ hiểu cho F0.",
+  "desc": "Hỗ trợ và kháng cự là gì, vì sao giá hay dừng ở một vùng, cách xác định bằng đỉnh đáy, MA, số tròn và cách dùng để đặt điểm cắt lỗ.",
   "body": [
    [
     "p",
@@ -3047,7 +3047,7 @@
   "slug": "khi-nao-nen-ban-co-phieu",
   "kw": "khi nào nên bán cổ phiếu",
   "title": "Khi nào nên bán cổ phiếu? 5 tình huống F0 cần biết",
-  "desc": "Khi nào nên bán cổ phiếu: chạm mức cắt lỗ, đạt mục tiêu giá, lý do mua không còn, định giá quá cao hoặc có cơ hội tốt hơn. Cách chốt lời từng phần có ví dụ.",
+  "desc": "Khi nào nên bán cổ phiếu: chạm mức cắt lỗ, đạt mục tiêu giá, lý do mua không còn, định giá quá cao. Cách chốt lời từng phần có ví dụ.",
   "body": [
    [
     "p",
@@ -3494,7 +3494,7 @@
   "slug": "ipo-va-niem-yet-la-gi",
   "kw": "IPO là gì",
   "title": "IPO là gì? Niêm yết, lên sàn chứng khoán khác nhau thế nào",
-  "desc": "IPO là gì, niêm yết là gì, quy trình một công ty lên sàn HOSE, HNX, UPCoM, cách mua cổ phiếu IPO, biên độ ngày đầu và rủi ro người mới cần biết khi mua IPO.",
+  "desc": "IPO là gì, niêm yết là gì, quy trình lên sàn HOSE, HNX, UPCoM, cách mua cổ phiếu IPO, biên độ ngày đầu và rủi ro người mới cần biết.",
   "body": [
    [
     "p",
@@ -3769,7 +3769,7 @@
  {
   "slug": "huong-dan-tich-san-co-phieu-tu-a-den-z",
   "kw": "hướng dẫn tích sản cổ phiếu",
-  "title": "Hướng dẫn tích sản cổ phiếu từ A đến Z: kế hoạch 6 bước cho người mới",
+  "title": "Hướng dẫn tích sản cổ phiếu từ A đến Z: kế hoạch 6 bước",
   "desc": "Hướng dẫn tích sản cổ phiếu từ A đến Z: đặt mục tiêu, lập quỹ dự phòng, số tiền mua mỗi tháng, chọn doanh nghiệp, mua đều, tái đầu tư cổ tức và rà soát.",
   "grp": 7,
   "body": [
@@ -3958,7 +3958,7 @@
  {
   "slug": "mua-trung-binh-gia-dca",
   "kw": "mua trung bình giá DCA",
-  "title": "Mua trung bình giá (DCA) là gì? Ví dụ mua đều mỗi tháng có số liệu",
+  "title": "Mua trung bình giá (DCA) là gì? Ví dụ mua đều mỗi tháng",
   "desc": "Mua trung bình giá DCA là gì, vì sao mua đều mỗi tháng giúp giá vốn thấp hơn giá trung bình, ví dụ 12 tháng có số liệu và khi nào DCA không hiệu quả.",
   "grp": 7,
   "body": [
@@ -4329,7 +4329,7 @@
  {
   "slug": "cach-phan-bo-ty-trong-co-phieu",
   "kw": "cách phân bổ tỉ trọng cổ phiếu",
-  "title": "Cách phân bổ tỉ trọng cổ phiếu: mua bao nhiêu là vừa, có công thức",
+  "title": "Cách phân bổ tỉ trọng cổ phiếu: mua bao nhiêu là vừa?",
   "desc": "Cách phân bổ tỉ trọng cổ phiếu theo rủi ro: công thức tính số cổ phiếu nên mua, giới hạn tỉ trọng mỗi mã và mỗi ngành, chia vốn tích sản và đầu cơ.",
   "grp": 7,
   "body": [
@@ -4602,7 +4602,7 @@
   "slug": "gio-giao-dich-chung-khoan",
   "kw": "giờ giao dịch chứng khoán",
   "grp": 2,
-  "title": "Giờ giao dịch chứng khoán Việt Nam: lịch từng phiên HOSE, HNX, UPCoM",
+  "title": "Giờ giao dịch chứng khoán: lịch phiên HOSE, HNX, UPCoM",
   "desc": "Giờ giao dịch chứng khoán Việt Nam trên HOSE, HNX, UPCoM: phiên ATO, khớp lệnh liên tục, nghỉ trưa, ATC, thỏa thuận. Ngày nào thị trường nghỉ.",
   "body": [
    [
@@ -5005,7 +5005,7 @@
   "slug": "cach-xem-bieu-do-chung-khoan",
   "kw": "cách xem biểu đồ chứng khoán",
   "grp": 4,
-  "title": "Cách xem biểu đồ chứng khoán cho người mới: nến, khối lượng, xu hướng",
+  "title": "Cách xem biểu đồ chứng khoán: nến, khối lượng, xu hướng",
   "desc": "Hướng dẫn xem biểu đồ chứng khoán từ đầu: đọc nến Nhật, khối lượng giao dịch, khung thời gian, nhận biết xu hướng tăng giảm và những lỗi người mới hay mắc.",
   "body": [
    [
@@ -5152,8 +5152,8 @@
   "slug": "cach-dat-lenh-mua-ban-co-phieu",
   "kw": "cách đặt lệnh mua bán cổ phiếu",
   "grp": 2,
-  "title": "Cách đặt lệnh mua bán cổ phiếu trên app cho người mới (từng bước)",
-  "desc": "Hướng dẫn đặt lệnh mua, bán cổ phiếu trên ứng dụng chứng khoán: chọn mã, chọn loại lệnh LO, nhập giá, khối lượng theo lô 100, kiểm tra sức mua, hủy sửa lệnh.",
+  "title": "Cách đặt lệnh mua bán cổ phiếu trên app cho người mới",
+  "desc": "Hướng dẫn đặt lệnh mua, bán cổ phiếu trên ứng dụng: chọn mã, loại lệnh LO, nhập giá, khối lượng theo lô 100, kiểm tra sức mua, hủy sửa lệnh.",
   "body": [
    [
     "p",
@@ -7374,7 +7374,7 @@
   "slug": "gia-tham-chieu-la-gi",
   "kw": "giá tham chiếu là gì",
   "grp": 2,
-  "title": "Giá tham chiếu là gì? Cách tính giá tham chiếu trên HOSE, HNX, UPCoM",
+  "title": "Giá tham chiếu là gì? Cách tính trên HOSE, HNX, UPCoM",
   "desc": "Giá tham chiếu là gì, vì sao bảng giá có màu vàng, cách tính giá tham chiếu từng sàn và trường hợp giá tham chiếu bị điều chỉnh khi chia cổ tức.",
   "body": [
    [
@@ -7498,7 +7498,7 @@
   "slug": "co-phieu-phong-thu-la-gi",
   "kw": "cổ phiếu phòng thủ là gì",
   "grp": 5,
-  "title": "Cổ phiếu phòng thủ là gì? Nhóm ngành nào giữ giá khi thị trường xấu",
+  "title": "Cổ phiếu phòng thủ là gì? Ngành nào giữ giá khi thị trường xấu",
   "desc": "Cổ phiếu phòng thủ là gì, đặc điểm nhận biết, các ngành phòng thủ phổ biến ở Việt Nam và khi nào nên tăng tỷ trọng nhóm này trong danh mục.",
   "body": [
    [
@@ -7569,7 +7569,7 @@
   "kw": "nợ xấu ngân hàng là gì",
   "grp": 3,
   "title": "Nợ xấu ngân hàng là gì? Cách đọc tỷ lệ nợ xấu và tỷ lệ bao phủ",
-  "desc": "Nợ xấu là khoản vay khó thu hồi. Cách đọc tỷ lệ nợ xấu, tỷ lệ bao phủ nợ xấu và chi phí dự phòng trong báo cáo tài chính ngân hàng, kèm ví dụ thật quý 3/2026.",
+  "desc": "Nợ xấu là khoản vay khó thu hồi. Cách đọc tỷ lệ nợ xấu, tỷ lệ bao phủ và chi phí dự phòng trong BCTC ngân hàng, kèm ví dụ quý 3/2026.",
   "body": [
    [
     "p",
@@ -7816,7 +7816,7 @@
   "kw": "call margin là gì",
   "grp": 5,
   "title": "Call margin là gì? Bán giải chấp xảy ra khi nào và cách tránh",
-  "desc": "Call margin là khi tỷ lệ ký quỹ xuống dưới mức duy trì, công ty chứng khoán yêu cầu nộp thêm tiền hoặc bán bớt cổ phiếu. Ví dụ tính toán và cách phòng tránh.",
+  "desc": "Call margin là khi tỷ lệ ký quỹ xuống dưới mức duy trì, phải nộp thêm tiền hoặc bán bớt cổ phiếu. Ví dụ tính toán và cách phòng tránh.",
   "body": [
    [
     "p",
@@ -8018,7 +8018,7 @@
   "slug": "bao-cao-ket-qua-kinh-doanh-la-gi",
   "kw": "báo cáo kết quả kinh doanh là gì",
   "grp": 3,
-  "title": "Báo cáo kết quả kinh doanh là gì? Đọc doanh thu, lợi nhuận đúng cách",
+  "title": "Báo cáo kết quả kinh doanh là gì? Đọc doanh thu, lợi nhuận",
   "desc": "Báo cáo kết quả kinh doanh cho biết doanh thu, chi phí và lợi nhuận trong kỳ. Cách đọc biên lợi nhuận gộp, lợi nhuận cốt lõi và nhận biết lãi bất thường.",
   "body": [
    [
@@ -8672,7 +8672,7 @@
   "slug": "tich-san-co-phieu-ngan-hang-tu-nhan",
   "kw": "tích sản MBB TCB ACB",
   "grp": 7,
-  "title": "Tích sản ngân hàng tư nhân lớn: MBB, TCB, ACB, VPB có gì khác nhau?",
+  "title": "Tích sản ngân hàng tư nhân: MBB, TCB, ACB, VPB khác gì nhau?",
   "desc": "So sánh các ngân hàng tư nhân lớn MBB, TCB, ACB, VPB cho tích sản dài hạn: ROE, P/B, cổ tức tiền mặt, NIM và rủi ro cần biết.",
   "body": [
    [
@@ -8894,7 +8894,7 @@
   "slug": "quyen-mua-co-phieu-la-gi",
   "kw": "quyền mua cổ phiếu là gì",
   "grp": 2,
-  "title": "Quyền mua cổ phiếu là gì? Có nên thực hiện quyền mua phát hành thêm?",
+  "title": "Quyền mua cổ phiếu là gì? Có nên thực hiện quyền mua?",
   "desc": "Quyền mua cổ phiếu phát hành thêm là gì, cách tính số cổ phiếu được mua, đăng ký thực hiện quyền, chuyển nhượng quyền và giá điều chỉnh.",
   "body": [
    [
@@ -8965,7 +8965,7 @@
   "slug": "tai-khoan-chung-khoan-co-mat-tien-khong",
   "kw": "tài khoản chứng khoán có mất tiền không",
   "grp": 1,
-  "title": "Tài khoản chứng khoán có mất tiền không? Những rủi ro và cách bảo vệ",
+  "title": "Tài khoản chứng khoán có mất tiền không? Rủi ro và cách bảo vệ",
   "desc": "Tiền trong tài khoản chứng khoán có an toàn không, khi nào có thể mất tiền (giá giảm, margin, lừa đảo) và cách bảo vệ tài khoản cho người mới.",
   "body": [
    [
@@ -9344,7 +9344,7 @@
   "slug": "ky-luat-dau-tu",
   "kw": "kỷ luật trong đầu tư chứng khoán",
   "grp": 5,
-  "title": "Kỷ luật trong đầu tư chứng khoán: 7 nguyên tắc giữ tài khoản sống sót",
+  "title": "Kỷ luật đầu tư chứng khoán: 7 nguyên tắc giữ tài khoản",
   "desc": "Kỷ luật đầu tư chứng khoán là gì, 7 nguyên tắc cụ thể về cắt lỗ, tỷ trọng, margin, nhật ký giao dịch giúp nhà đầu tư cá nhân tồn tại lâu dài.",
   "body": [
    [
@@ -9410,7 +9410,7 @@
   "kw": "mô hình 2 đỉnh 2 đáy",
   "grp": 4,
   "title": "Mô hình hai đỉnh, hai đáy là gì? Cách nhận biết cho người mới",
-  "desc": "Mô hình hai đỉnh (double top) và hai đáy (double bottom) trong phân tích kỹ thuật: cách nhận biết, đường viền cổ, khối lượng xác nhận và rủi ro tín hiệu giả.",
+  "desc": "Mô hình hai đỉnh (double top) và hai đáy (double bottom): cách nhận biết, đường viền cổ, khối lượng xác nhận và rủi ro tín hiệu giả.",
   "body": [
    [
     "p",
@@ -10240,7 +10240,7 @@
   "slug": "no-vay-tren-von-chu-so-huu",
   "kw": "tỷ lệ nợ vay trên vốn chủ sở hữu",
   "grp": 3,
-  "title": "Tỷ lệ nợ vay trên vốn chủ sở hữu (D/E) là gì? Bao nhiêu là an toàn",
+  "title": "Nợ vay trên vốn chủ sở hữu (D/E) là gì? Bao nhiêu là an toàn",
   "desc": "Tỷ lệ nợ vay trên vốn chủ (D/E) đo mức dùng đòn bẩy của doanh nghiệp. Cách tính, mức an toàn theo ngành và rủi ro khi lãi suất tăng.",
   "body": [
    [
@@ -10805,7 +10805,7 @@
   "slug": "tang-truong-tin-dung-la-gi",
   "kw": "tăng trưởng tín dụng là gì",
   "grp": 3,
-  "title": "Tăng trưởng tín dụng là gì? Vì sao cổ phiếu ngân hàng phụ thuộc vào nó",
+  "title": "Tăng trưởng tín dụng là gì? Vì sao cổ phiếu ngân hàng phụ thuộc",
   "desc": "Tăng trưởng tín dụng là mức tăng dư nợ cho vay của ngân hàng. Room tín dụng, ảnh hưởng tới lợi nhuận ngân hàng và cách đọc chỉ số này.",
   "body": [
    [
@@ -10987,7 +10987,7 @@
   "kw": "tích sản từ 0 đến 1 tỷ",
   "grp": 7,
   "title": "Tích sản từ 0 đến 1 tỷ: mỗi tháng cần bao nhiêu và mất bao lâu?",
-  "desc": "Tính toán thực tế để tích sản cổ phiếu từ 0 đến 1 tỷ đồng: số tiền mỗi tháng, thời gian, lợi suất giả định và những điều quyết định bạn có về đích hay không.",
+  "desc": "Tính toán thực tế tích sản cổ phiếu từ 0 đến 1 tỷ: số tiền mỗi tháng, thời gian, lợi suất giả định và điều quyết định bạn có về đích.",
   "body": [
    [
     "p",
@@ -11182,7 +11182,7 @@
   "slug": "dcf-la-gi",
   "kw": "DCF là gì",
   "grp": 3,
-  "title": "DCF là gì? Định giá cổ phiếu bằng chiết khấu dòng tiền cho người mới",
+  "title": "DCF là gì? Định giá cổ phiếu bằng chiết khấu dòng tiền",
   "desc": "DCF (chiết khấu dòng tiền) ước tính giá trị doanh nghiệp bằng dòng tiền tương lai quy về hiện tại. Công thức, ví dụ đơn giản và các giả định dễ sai.",
   "body": [
    [
@@ -13823,6 +13823,693 @@
    "co-phieu-bi-canh-bao-kiem-soat-han-che",
    "bao-cao-ket-qua-kinh-doanh-la-gi",
    "bang-can-doi-ke-toan-la-gi"
+  ],
+  "add": []
+ },
+ {
+  "slug": "doc-bctc-cong-ty-chung-khoan",
+  "kw": "đọc báo cáo tài chính công ty chứng khoán",
+  "grp": 3,
+  "title": "Cách đọc BCTC công ty chứng khoán cho người mới",
+  "desc": "Lợi nhuận công ty chứng khoán đến từ đâu: phí giao dịch, cho vay ký quỹ, tự doanh. Cách đọc từng mảng, kèm số liệu quý 3/2026 của SSI, VCI, VND.",
+  "body": [
+   [
+    "p",
+    "Cổ phiếu công ty chứng khoán thường tăng mạnh khi thị trường sôi động và giảm nhanh khi thị trường trầm lắng. Lý do nằm ngay trong cấu trúc lợi nhuận. Đọc đúng báo cáo tài chính sẽ giúp người mới hiểu vì sao cùng một quý, có công ty lãi tăng, có công ty lãi giảm gần hết."
+   ],
+   [
+    "h2",
+    "1. Ba nguồn thu chính"
+   ],
+   [
+    "ul",
+    [
+     "<b>Phí giao dịch</b>: thu trên mỗi lệnh khớp của khách hàng. Phụ thuộc trực tiếp vào thanh khoản toàn thị trường và thị phần của công ty.",
+     "<b>Lãi cho vay ký quỹ (margin)</b>: tiền lãi thu từ khách vay để mua cổ phiếu. Dư nợ cho vay càng lớn, khoản này càng lớn – nhưng rủi ro cũng tăng theo. Xem <a href=\"/f0/margin-la-gi.html\">margin là gì</a>.",
+     "<b>Tự doanh</b>: công ty dùng vốn của mình đầu tư cổ phiếu, trái phiếu, chứng chỉ tiền gửi. Lãi hay lỗ biến động theo thị trường, nên đây là mảng khó dự báo nhất."
+    ]
+   ],
+   [
+    "p",
+    "Ngoài ra còn ngân hàng đầu tư (tư vấn phát hành, bảo lãnh) và lưu ký, nhưng ở đa số công ty, ba mảng trên chiếm phần lớn lợi nhuận."
+   ],
+   [
+    "h2",
+    "2. Ví dụ quý 3/2026: cùng ngành, kết quả khác nhau"
+   ],
+   [
+    "ul",
+    [
+     "<b>SSI</b>: LNST công ty mẹ 1.125 tỷ, giảm 23,7% so với cùng kỳ; doanh thu phí giao dịch giảm 62,1%; lũy kế 9 tháng vẫn tăng 14,2%.",
+     "<b>VCI</b>: lãi 367 tỷ (−12,6%), nhưng lãi cho vay ký quỹ tăng 50,5% lên 472 tỷ, giúp bù một phần phí giao dịch giảm 49,9%.",
+     "<b>VND</b>: lãi 329 tỷ (−64,5%) do phí giao dịch giảm 70,4% và lãi tự doanh giảm hơn một nửa.",
+     "<b>VIX</b>: lãi 174 tỷ (−92,9%), mảng tự doanh lỗ ròng 88 tỷ trong quý."
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: BCTC quý 3/2026 các công ty, tổng hợp trên chungkhoanhuynguyen.com. Bài học: công ty nào phụ thuộc nhiều vào tự doanh thì lợi nhuận dao động mạnh nhất khi thị trường đổi chiều."
+   ],
+   [
+    "h2",
+    "3. Đọc bảng cân đối: nhìn gì?"
+   ],
+   [
+    "ol",
+    [
+     "<b>Dư nợ cho vay ký quỹ</b> so với vốn chủ sở hữu: tăng nhanh là dấu hiệu công ty đang đẩy đòn bẩy cho khách.",
+     "<b>Danh mục tự doanh</b> (tài sản tài chính FVTPL, AFS): bao nhiêu là cổ phiếu, bao nhiêu là tiền gửi, trái phiếu – cổ phiếu càng nhiều thì càng biến động.",
+     "<b>Nợ vay ngắn hạn</b>: công ty chứng khoán vay ngân hàng để cho khách vay margin; cần xem chi phí lãi vay tăng hay giảm.",
+     "<b>Vốn chủ sở hữu</b>: quyết định hạn mức cho vay margin, nên nhiều công ty liên tục tăng vốn."
+    ]
+   ],
+   [
+    "h2",
+    "4. Định giá: vì sao hay dùng P/B?"
+   ],
+   [
+    "p",
+    "Tài sản công ty chứng khoán chủ yếu là tài sản tài chính, giá trị sổ sách khá sát giá trị thực, nên nhà đầu tư thường so <a href=\"/f0/pb-la-gi.html\">P/B</a>. Tham khảo dữ liệu ngày 31/10/2026: SSI P/B khoảng 1,48, ROE 12,2%; VND P/B khoảng 0,94, ROE 9,9%; VCI P/B khoảng 1,26, ROE 8,5%. P/B cao hơn thường đi kèm ROE cao hơn hoặc kỳ vọng thị phần lớn hơn."
+   ],
+   [
+    "h2",
+    "5. Checklist nhanh"
+   ],
+   [
+    "ul",
+    [
+     "Lợi nhuận đến từ mảng nào? Phí và margin bền hơn tự doanh.",
+     "Thanh khoản thị trường đang tăng hay giảm – yếu tố quyết định phí giao dịch.",
+     "Dư nợ margin so với vốn chủ, chất lượng tài sản đảm bảo.",
+     "Đừng định giá bằng lợi nhuận của một quý đột biến: ngành này có tính <a href=\"/f0/co-phieu-chu-ky-la-gi.html\">chu kỳ</a> rõ."
+    ]
+   ],
+   [
+    "p",
+    "Bài viết mang tính giáo dục, không phải khuyến nghị mua bán. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Vì sao cổ phiếu chứng khoán biến động mạnh?",
+    "Vì lợi nhuận phụ thuộc thanh khoản thị trường và kết quả tự doanh – cả hai đều thay đổi nhanh theo thị trường."
+   ],
+   [
+    "Mảng nào của công ty chứng khoán ổn định nhất?",
+    "Thường là lãi cho vay ký quỹ và phí giao dịch ở công ty có thị phần lớn; tự doanh biến động nhất."
+   ],
+   [
+    "Nên dùng chỉ số nào để so sánh?",
+    "P/B kết hợp ROE, và cơ cấu lợi nhuận theo mảng."
+   ]
+  ],
+  "rel": [
+   "cach-doc-bao-cao-tai-chinh",
+   "pb-la-gi",
+   "margin-la-gi",
+   "co-phieu-chu-ky-la-gi"
+  ],
+  "add": []
+ },
+ {
+  "slug": "loi-the-canh-tranh-moat",
+  "kw": "lợi thế cạnh tranh moat",
+  "grp": 3,
+  "title": "Lợi thế cạnh tranh (moat) là gì? 5 loại hào kinh tế",
+  "desc": "Moat – hào kinh tế – là lợi thế giúp doanh nghiệp giữ lợi nhuận cao lâu dài. 5 loại moat phổ biến, cách nhận biết qua ROE, biên lợi nhuận và ví dụ dễ hiểu.",
+  "body": [
+   [
+    "p",
+    "Nhà đầu tư Warren Buffett hay ví doanh nghiệp tốt như một tòa lâu đài, còn <b>lợi thế cạnh tranh</b> là con hào bao quanh, ngăn đối thủ tấn công. Từ đó có khái niệm <b>moat</b> – hào kinh tế. Doanh nghiệp có moat giữ được lợi nhuận cao nhiều năm; không có moat thì lãi cao sớm muộn bị đối thủ kéo xuống."
+   ],
+   [
+    "h2",
+    "1. Năm loại moat phổ biến"
+   ],
+   [
+    "ol",
+    [
+     "<b>Thương hiệu</b>: khách sẵn sàng trả giá cao hơn hoặc trung thành vì tin tưởng (sữa, bia, trang sức).",
+     "<b>Chi phí thấp</b>: quy mô lớn giúp sản xuất rẻ hơn đối thủ (thép, phân bón, bán lẻ quy mô lớn).",
+     "<b>Chi phí chuyển đổi</b>: khách đổi nhà cung cấp rất phiền, tốn kém (phần mềm doanh nghiệp, ngân hàng có nhiều dịch vụ gắn với tài khoản).",
+     "<b>Hiệu ứng mạng lưới</b>: càng nhiều người dùng, sản phẩm càng có giá trị (sàn giao dịch, ví điện tử).",
+     "<b>Tài sản độc quyền, giấy phép</b>: cảng biển vị trí đẹp, quỹ đất khu công nghiệp, giấy phép khó xin."
+    ]
+   ],
+   [
+    "h2",
+    "2. Nhận biết moat qua số liệu"
+   ],
+   [
+    "p",
+    "Moat thật sẽ để lại dấu vết trên báo cáo tài chính trong nhiều năm, không chỉ một quý:"
+   ],
+   [
+    "ul",
+    [
+     "<a href=\"/f0/roe-eps-la-gi.html\">ROE</a> cao và ổn định qua nhiều năm (thường trên 15%) mà không cần vay nợ quá nhiều.",
+     "<a href=\"/f0/bien-loi-nhuan-gop-la-gi.html\">Biên lợi nhuận gộp</a> cao hơn đối thủ cùng ngành và không bị bào mòn theo thời gian.",
+     "Thị phần giữ vững hoặc tăng dần.",
+     "Dòng tiền kinh doanh dương đều đặn, đủ trả cổ tức và tái đầu tư."
+    ]
+   ],
+   [
+    "p",
+    "Ví dụ tham khảo dữ liệu ngày 31/10/2026: FPT có ROE khoảng 24,3%, MWG khoảng 29,5% – mức cao so với mặt bằng chung. Tuy vậy, ROE cao một thời điểm chưa đủ kết luận có moat; cần xem chuỗi nhiều năm và hiểu nguồn gốc lợi thế."
+   ],
+   [
+    "h2",
+    "3. Moat có thể bị phá"
+   ],
+   [
+    "ul",
+    [
+     "Công nghệ mới làm lợi thế cũ mất giá trị.",
+     "Đối thủ lớn, nhiều vốn nhảy vào ngành.",
+     "Chính sách thay đổi (thuế, giấy phép, giá điều tiết).",
+     "Ban lãnh đạo mở rộng sang mảng không có lợi thế."
+    ]
+   ],
+   [
+    "h2",
+    "4. Moat và định giá"
+   ],
+   [
+    "p",
+    "Doanh nghiệp có moat thường được thị trường trả <a href=\"/f0/pe-la-gi.html\">P/E</a> cao hơn. Mua doanh nghiệp tốt ở giá quá đắt vẫn có thể lỗ nhiều năm. Kết hợp moat với <b>biên an toàn</b>: tìm doanh nghiệp có hào kinh tế, rồi chờ mức giá hợp lý."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Moat là lý do doanh nghiệp giữ lợi nhuận cao lâu dài.",
+     "Kiểm tra bằng ROE, biên gộp, thị phần nhiều năm.",
+     "Moat tốt vẫn cần mua ở giá hợp lý."
+    ]
+   ],
+   [
+    "p",
+    "Bài viết mang tính giáo dục, không phải khuyến nghị mua bán. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Moat trong chứng khoán nghĩa là gì?",
+    "Là lợi thế cạnh tranh bền vững giúp doanh nghiệp giữ lợi nhuận cao, khó bị đối thủ bắt chước."
+   ],
+   [
+    "ROE cao có phải luôn là có moat?",
+    "Không. ROE cao có thể do đòn bẩy nợ hoặc một năm thuận lợi; cần xem nhiều năm và nguồn gốc lợi thế."
+   ],
+   [
+    "Ngân hàng có moat không?",
+    "Có thể có, ví dụ nguồn vốn giá rẻ (CASA cao), mạng lưới khách hàng lớn, chi phí chuyển đổi cao."
+   ]
+  ],
+  "rel": [
+   "roe-eps-la-gi",
+   "bien-loi-nhuan-gop-la-gi",
+   "co-phieu-tang-truong-va-co-phieu-gia-tri",
+   "casa-la-gi"
+  ],
+  "add": []
+ },
+ {
+  "slug": "chung-khoan-co-phai-lua-dao-khong",
+  "kw": "chứng khoán có phải lừa đảo không",
+  "grp": 1,
+  "title": "Chứng khoán có phải lừa đảo không? Phân biệt thật và giả",
+  "desc": "Thị trường chứng khoán là kênh đầu tư hợp pháp, nhưng lừa đảo đội lốt chứng khoán thì có thật. Cách phân biệt, dấu hiệu nhận biết và cách tự bảo vệ.",
+  "body": [
+   [
+    "p",
+    "Nhiều người mới nghe “chứng khoán” là nghĩ tới mất tiền, lừa đảo. Thực tế cần tách bạch hai chuyện: <b>thị trường chứng khoán</b> là kênh đầu tư hợp pháp, được Nhà nước quản lý; còn <b>lừa đảo mượn danh chứng khoán</b> thì có thật và ngày càng tinh vi."
+   ],
+   [
+    "h2",
+    "1. Thị trường chứng khoán thật vận hành thế nào?"
+   ],
+   [
+    "ul",
+    [
+     "Cổ phiếu niêm yết trên các sàn HOSE, HNX, UPCoM, chịu giám sát của Ủy ban Chứng khoán Nhà nước. Xem <a href=\"/f0/san-hose-hnx-upcom-la-gi.html\">sàn HOSE, HNX, UPCoM</a>.",
+     "Bạn mở tài khoản đứng tên mình tại công ty chứng khoán được cấp phép; tiền nằm trong tài khoản của bạn, cổ phiếu được lưu ký tập trung.",
+     "Giá cổ phiếu lên xuống theo cung cầu và kết quả kinh doanh doanh nghiệp. Lỗ vì giá giảm là rủi ro đầu tư, không phải bị lừa."
+    ]
+   ],
+   [
+    "h2",
+    "2. Những kiểu lừa đảo hay gặp"
+   ],
+   [
+    "ol",
+    [
+     "<b>Cam kết lợi nhuận cố định cao</b>: “lãi 5–10% mỗi tháng, không rủi ro”. Không ai cam kết được điều này trên thị trường thật.",
+     "<b>Ủy thác vào tài khoản người lạ</b>: chuyển tiền cho cá nhân “đầu tư hộ”, rồi mất liên lạc.",
+     "<b>Ứng dụng, sàn giả</b>: tải app qua đường link lạ, giao diện giống thật, nhưng tiền nộp vào tài khoản cá nhân. Rút tiền thì bị đòi “phí”, “thuế”.",
+     "<b>Nhóm kín “phím hàng”</b>: kéo người vào nhóm mua mã nhỏ, kém thanh khoản để người tổ chức bán ra.",
+     "<b>Giả danh</b> công ty chứng khoán, người nổi tiếng, cơ quan nhà nước để xin mã OTP, mật khẩu."
+    ]
+   ],
+   [
+    "h2",
+    "3. Năm dấu hiệu cần dừng lại ngay"
+   ],
+   [
+    "ul",
+    [
+     "Yêu cầu chuyển tiền vào tài khoản cá nhân thay vì tài khoản đứng tên bạn.",
+     "Hứa lãi cao, đều đặn, “chắc chắn”.",
+     "Thúc ép quyết định nhanh, “chỉ còn hôm nay”.",
+     "Xin mật khẩu, mã OTP, hoặc đòi phí trước khi rút tiền.",
+     "Mã cổ phiếu được “phím” có thanh khoản rất thấp, tăng trần liên tục không có tin. Xem <a href=\"/f0/thanh-khoan-co-phieu-la-gi.html\">thanh khoản cổ phiếu</a>."
+    ]
+   ],
+   [
+    "h2",
+    "4. Cách tự bảo vệ"
+   ],
+   [
+    "ol",
+    [
+     "Chỉ mở tài khoản tại công ty chứng khoán có tên trong danh sách được cấp phép; tải app từ kho ứng dụng chính thức.",
+     "Không đưa mật khẩu, OTP cho bất kỳ ai, kể cả người xưng là nhân viên.",
+     "Tự đặt lệnh, tự kiểm tra số dư. Xem <a href=\"/f0/tai-khoan-chung-khoan-co-mat-tien-khong.html\">tài khoản chứng khoán có mất tiền không</a>.",
+     "Chỉ đầu tư bằng tiền nhàn rỗi và hiểu doanh nghiệp mình mua."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "p",
+    "Chứng khoán không phải lừa đảo, nhưng có rủi ro mất tiền nếu đầu tư thiếu hiểu biết, và có kẻ lừa đảo lợi dụng sự thiếu hiểu biết đó. Học kiến thức nền là cách bảo vệ tốt nhất. Cần trao đổi riêng: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Đầu tư chứng khoán có hợp pháp không?",
+    "Có. Thị trường chứng khoán Việt Nam hoạt động theo Luật Chứng khoán, chịu giám sát của Ủy ban Chứng khoán Nhà nước."
+   ],
+   [
+    "Lỗ khi đầu tư có phải bị lừa không?",
+    "Không. Giá giảm là rủi ro thị trường. Lừa đảo là khi bị chiếm đoạt tiền qua cam kết giả, app giả, tài khoản người khác."
+   ],
+   [
+    "Làm sao kiểm tra app chứng khoán thật?",
+    "Tải từ kho ứng dụng chính thức, đối chiếu tên công ty chứng khoán được cấp phép và tài khoản đứng tên chính bạn."
+   ]
+  ],
+  "rel": [
+   "co-nen-dau-tu-chung-khoan-khong",
+   "tai-khoan-chung-khoan-co-mat-tien-khong",
+   "sai-lam-cua-f0",
+   "cach-mo-tai-khoan-chung-khoan"
+  ],
+  "add": []
+ },
+ {
+  "slug": "dau-tu-chung-khoan-cho-nguoi-di-lam",
+  "kw": "đầu tư chứng khoán cho người đi làm",
+  "grp": 7,
+  "title": "Đầu tư chứng khoán cho người đi làm: ít thời gian vẫn hiệu quả",
+  "desc": "Người đi làm bận rộn đầu tư chứng khoán thế nào: tích sản định kỳ, chọn ít mã dễ hiểu, xem tuần một lần, tránh bảng giá giờ làm việc.",
+  "body": [
+   [
+    "p",
+    "Người đi làm văn phòng, công nhân, giáo viên… thường không thể nhìn bảng giá cả ngày. Tin tốt là điều đó không cần thiết. Với người có thu nhập đều đặn, cách hiệu quả nhất thường là <b>đầu tư chậm, đều và dài hạn</b>."
+   ],
+   [
+    "h2",
+    "1. Lợi thế của người đi làm"
+   ],
+   [
+    "ul",
+    [
+     "Có <b>dòng tiền đều mỗi tháng</b> – rất hợp với mua định kỳ.",
+     "Không phụ thuộc vào lãi chứng khoán để sống, nên không bị áp lực bán đúng lúc giá thấp.",
+     "Thời gian đầu tư dài (10–20 năm) để <a href=\"/f0/lai-kep-trong-dau-tu.html\">lãi kép</a> phát huy."
+    ]
+   ],
+   [
+    "h2",
+    "2. Công thức đơn giản 4 bước"
+   ],
+   [
+    "ol",
+    [
+     "<b>Lập quỹ dự phòng</b> 3–6 tháng chi tiêu trước khi đầu tư.",
+     "<b>Trích cố định</b> 10–20% lương ngay khi nhận lương, chuyển vào tài khoản chứng khoán.",
+     "<b>Mua định kỳ</b> 1 lần mỗi tháng vào 3–5 doanh nghiệp lớn, dễ hiểu, lợi nhuận ổn định. Xem <a href=\"/f0/mua-trung-binh-gia-dca.html\">mua trung bình giá (DCA)</a>.",
+     "<b>Xem lại mỗi quý</b> khi doanh nghiệp công bố BCTC, thay vì xem giá mỗi ngày."
+    ]
+   ],
+   [
+    "h2",
+    "3. Chọn mã thế nào cho đỡ tốn thời gian?"
+   ],
+   [
+    "ul",
+    [
+     "Ưu tiên doanh nghiệp đầu ngành, thanh khoản tốt, có cổ tức – nhiều người chọn cổ phiếu ngân hàng lớn để tích sản.",
+     "Theo dõi 3 chỉ số chính: <a href=\"/f0/pe-la-gi.html\">P/E</a>, P/B, <a href=\"/f0/roe-eps-la-gi.html\">ROE</a>.",
+     "Hoặc dùng <a href=\"/f0/etf-la-gi.html\">quỹ ETF</a> nếu không muốn chọn từng mã."
+    ]
+   ],
+   [
+    "h2",
+    "4. Những thói quen nên tránh"
+   ],
+   [
+    "ul",
+    [
+     "Mở bảng giá trong giờ làm việc: vừa ảnh hưởng công việc, vừa dễ mua bán cảm tính.",
+     "Theo tin đồn trong nhóm chat, mua mã mình không hiểu.",
+     "Vay margin để “tăng tốc”.",
+     "Bán hết khi thị trường giảm vài phiên vì sợ hãi. Xem <a href=\"/f0/ky-luat-dau-tu.html\">kỷ luật đầu tư</a>."
+    ]
+   ],
+   [
+    "h2",
+    "5. Ví dụ"
+   ],
+   [
+    "p",
+    "Chị A lương 15 triệu, mỗi tháng trích 2,5 triệu mua cổ phiếu vào ngày nhận lương; mỗi quý dành 1 buổi tối đọc kết quả kinh doanh các mã đang giữ. Tổng thời gian khoảng 2–3 giờ mỗi quý. Sau 5 năm, tiền gốc tích lũy 150 triệu, chưa kể cổ tức tái đầu tư. Con số lãi thực tế tùy thị trường, nhưng thói quen này giúp chị không bị cuốn vào biến động hằng ngày."
+   ],
+   [
+    "p",
+    "Muốn bắt đầu tích sản cổ phiếu ngân hàng: xem <a href=\"/bao-cao-2026.html#tichsan\">bảng tích sản</a>. Cần trao đổi riêng: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Người đi làm có nên lướt sóng?",
+    "Thường không phù hợp: lướt sóng cần theo dõi liên tục, dễ ảnh hưởng công việc và tốn phí."
+   ],
+   [
+    "Mỗi tháng nên đầu tư bao nhiêu?",
+    "Tham khảo 10–20% thu nhập, sau khi đã có quỹ dự phòng."
+   ],
+   [
+    "Nên xem tài khoản bao lâu một lần?",
+    "Với người tích sản, mỗi tuần hoặc mỗi tháng là đủ; đọc kỹ BCTC mỗi quý."
+   ]
+  ],
+  "rel": [
+   "nen-dau-tu-chung-khoan-bao-nhieu-tien",
+   "mua-trung-binh-gia-dca",
+   "huong-dan-tich-san-co-phieu-tu-a-den-z",
+   "tich-san-cho-nguoi-luong-10-trieu"
+  ],
+  "add": []
+ },
+ {
+  "slug": "mo-hinh-cai-coc-tay-cam",
+  "kw": "mô hình cái cốc tay cầm",
+  "grp": 4,
+  "title": "Mô hình cái cốc tay cầm (cup and handle) là gì?",
+  "desc": "Mô hình cốc tay cầm: hình dạng, cách nhận biết đáy cốc, tay cầm, điểm phá vỡ, khối lượng xác nhận và những tín hiệu giả người mới hay gặp.",
+  "body": [
+   [
+    "p",
+    "<b>Cái cốc tay cầm</b> (cup and handle) là một mô hình tiếp diễn xu hướng tăng, được nhà đầu tư William O'Neil phổ biến. Trên biểu đồ, giá vẽ nên hình chiếc cốc có tay cầm bên phải."
+   ],
+   [
+    "h2",
+    "1. Cấu tạo mô hình"
+   ],
+   [
+    "ol",
+    [
+     "<b>Xu hướng tăng trước đó</b>: mô hình chỉ có ý nghĩa khi xuất hiện sau một nhịp tăng.",
+     "<b>Thân cốc</b>: giá điều chỉnh rồi tạo đáy tròn (hình chữ U), không phải đáy nhọn chữ V. Độ sâu thường khoảng 15–35% so với đỉnh trái.",
+     "<b>Miệng cốc</b>: giá hồi lên gần đỉnh cũ, tạo vùng <a href=\"/f0/ho-tro-khang-cu.html\">kháng cự</a>.",
+     "<b>Tay cầm</b>: một nhịp điều chỉnh nhỏ, ngắn (vài phiên đến vài tuần), nằm ở nửa trên của cốc, khối lượng giảm.",
+     "<b>Điểm phá vỡ</b>: giá vượt đỉnh tay cầm với khối lượng tăng mạnh."
+    ]
+   ],
+   [
+    "h2",
+    "2. Vì sao mô hình hoạt động?"
+   ],
+   [
+    "p",
+    "Đáy tròn cho thấy lực bán cạn dần, người bán lỗ đã thoát ra từ từ. Tay cầm là nhịp “rũ” cuối cùng: những người mua ở đỉnh cũ bán hòa vốn. Khi nguồn cung ở vùng đỉnh cũ đã được hấp thụ, giá dễ đi lên hơn – đặc biệt nếu doanh nghiệp có kết quả kinh doanh tốt hỗ trợ."
+   ],
+   [
+    "h2",
+    "3. Cách đọc khối lượng"
+   ],
+   [
+    "ul",
+    [
+     "Khối lượng giảm dần ở đáy cốc và trong tay cầm: lực bán yếu.",
+     "Khối lượng tăng rõ (thường cao hơn bình quân 20 phiên) ở phiên phá vỡ: xác nhận dòng tiền vào. Xem <a href=\"/f0/breakout-la-gi.html\">breakout là gì</a>."
+    ]
+   ],
+   [
+    "h2",
+    "4. Tín hiệu giả hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "Đáy chữ V nhọn: giá giảm và hồi quá nhanh, chưa đủ thời gian “rũ”.",
+     "Tay cầm quá sâu (xuống nửa dưới của cốc) hoặc kéo dài quá lâu.",
+     "Phá vỡ với khối lượng thấp, rồi giá quay lại dưới miệng cốc.",
+     "Mô hình xuất hiện khi thị trường chung đang trong <a href=\"/f0/xu-huong-tang-giam-di-ngang.html\">xu hướng giảm</a>."
+    ]
+   ],
+   [
+    "h2",
+    "5. Quản trị rủi ro"
+   ],
+   [
+    "p",
+    "Không mô hình nào chính xác 100%. Người dùng mô hình thường đặt mức <a href=\"/f0/cat-lo-la-gi.html\">cắt lỗ</a> dưới đáy tay cầm, và chỉ dùng một phần vốn cho mỗi lần thử. Nên kết hợp với lợi nhuận doanh nghiệp: mô hình đẹp trên một cổ phiếu có lợi nhuận suy giảm vẫn dễ thất bại."
+   ],
+   [
+    "p",
+    "Bài viết mang tính giáo dục, không phải khuyến nghị mua bán. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Mô hình cốc tay cầm báo hiệu gì?",
+    "Là mô hình tiếp diễn tăng: sau giai đoạn tích lũy hình cốc, giá có khả năng tiếp tục tăng khi vượt đỉnh tay cầm."
+   ],
+   [
+    "Mô hình cốc tay cầm hình thành trong bao lâu?",
+    "Thường vài tuần đến vài tháng trên biểu đồ ngày hoặc tuần."
+   ],
+   [
+    "Khối lượng có quan trọng không?",
+    "Rất quan trọng: phá vỡ cần khối lượng tăng rõ; phá vỡ khối lượng thấp dễ là tín hiệu giả."
+   ]
+  ],
+  "rel": [
+   "breakout-la-gi",
+   "ho-tro-khang-cu",
+   "mo-hinh-hai-dinh-hai-day",
+   "cach-xem-bieu-do-chung-khoan"
+  ],
+  "add": []
+ },
+ {
+  "slug": "hop-dong-tuong-lai-vn30",
+  "kw": "hợp đồng tương lai VN30",
+  "grp": 6,
+  "title": "Hợp đồng tương lai VN30 là gì? Cách tính lãi lỗ cho người mới",
+  "desc": "Hợp đồng tương lai chỉ số VN30 (VN30F): hệ số nhân, ký quỹ, ngày đáo hạn, cách tính lãi lỗ theo điểm, giao dịch T+0 và rủi ro đòn bẩy.",
+  "body": [
+   [
+    "p",
+    "Hợp đồng tương lai chỉ số VN30 (mã dạng <b>VN30F</b> + tháng đáo hạn) là sản phẩm phái sinh phổ biến nhất ở Việt Nam. Người giao dịch không mua cổ phiếu, mà đặt cược chỉ số VN30 sẽ tăng (mở vị thế <b>mua – Long</b>) hay giảm (vị thế <b>bán – Short</b>). Kiến thức nền: <a href=\"/f0/phai-sinh-la-gi.html\">phái sinh là gì</a>."
+   ],
+   [
+    "h2",
+    "1. Các thông số chính"
+   ],
+   [
+    "ul",
+    [
+     "<b>Tài sản cơ sở</b>: chỉ số VN30 (30 cổ phiếu lớn trên HOSE).",
+     "<b>Hệ số nhân</b>: 100.000 đồng mỗi điểm chỉ số. Chỉ số ở 1.500 điểm thì giá trị một hợp đồng là 150 triệu đồng.",
+     "<b>Ký quỹ</b>: chỉ cần nộp một phần giá trị hợp đồng (tỷ lệ do trung tâm lưu ký quy định, có thể thay đổi) – đây chính là đòn bẩy.",
+     "<b>Ngày đáo hạn</b>: thứ Năm tuần thứ ba của tháng đáo hạn; luôn có hợp đồng tháng hiện tại, tháng kế tiếp và hai tháng cuối quý gần nhất.",
+     "<b>Thanh toán</b>: bằng tiền, theo giá đóng cửa chỉ số ngày đáo hạn.",
+     "<b>Giao dịch T+0</b>: mở và đóng vị thế ngay trong phiên; lãi lỗ được tính hằng ngày."
+    ]
+   ],
+   [
+    "h2",
+    "2. Ví dụ tính lãi lỗ"
+   ],
+   [
+    "p",
+    "Bạn mở 1 hợp đồng Long ở 1.500 điểm. Chỉ số tăng lên 1.520 điểm: lãi 20 × 100.000 = <b>2 triệu đồng</b> (chưa trừ phí, thuế). Nếu chỉ số giảm về 1.470 điểm: lỗ 30 × 100.000 = <b>3 triệu đồng</b>. Với vị thế Short thì ngược lại. Vì chỉ ký quỹ một phần nhỏ giá trị hợp đồng, phần trăm lãi lỗ trên tiền ký quỹ lớn hơn nhiều lần mức biến động của chỉ số."
+   ],
+   [
+    "h2",
+    "3. Rủi ro người mới cần biết"
+   ],
+   [
+    "ol",
+    [
+     "<b>Đòn bẩy cao</b>: chỉ số đi ngược vài chục điểm có thể làm mất phần lớn tiền ký quỹ.",
+     "<b>Bị đóng vị thế bắt buộc</b>: khi tỷ lệ ký quỹ xuống dưới ngưỡng, phải nộp thêm tiền hoặc bị đóng vị thế – tương tự <a href=\"/f0/call-margin-la-gi.html\">call margin</a>.",
+     "<b>Giao dịch quá nhiều</b>: T+0 dễ khiến người mới vào lệnh liên tục, phí và cảm xúc bào mòn tài khoản. Xem <a href=\"/f0/overtrading-la-gi.html\">overtrading</a>.",
+     "<b>Biến động mạnh quanh ngày đáo hạn</b> và các phiên có tin vĩ mô."
+    ]
+   ],
+   [
+    "h2",
+    "4. Phái sinh dùng để làm gì?"
+   ],
+   [
+    "p",
+    "Ngoài đầu cơ, hợp đồng tương lai còn dùng để <b>phòng hộ</b>: người đang giữ danh mục cổ phiếu lớn có thể mở vị thế Short để giảm thiệt hại khi lo thị trường giảm, mà không phải bán cổ phiếu. Đây là cách dùng mà các tổ chức hay áp dụng."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Mỗi điểm VN30 = 100.000 đồng mỗi hợp đồng.",
+     "Lãi lỗ khuếch đại nhờ ký quỹ – rủi ro cao hơn cổ phiếu cơ sở nhiều.",
+     "Người mới nên nắm vững cổ phiếu trước khi thử phái sinh, và chỉ dùng phần vốn nhỏ."
+    ]
+   ],
+   [
+    "p",
+    "Thông số có thể thay đổi theo quy định hiện hành. Bài viết mang tính giáo dục, không phải khuyến nghị mua bán. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Một hợp đồng VN30F trị giá bao nhiêu?",
+    "Bằng điểm chỉ số × 100.000 đồng; ví dụ 1.500 điểm thì khoảng 150 triệu đồng."
+   ],
+   [
+    "Hợp đồng tương lai VN30 đáo hạn khi nào?",
+    "Thứ Năm tuần thứ ba của tháng đáo hạn."
+   ],
+   [
+    "Có giữ hợp đồng qua đêm được không?",
+    "Được, lãi lỗ được tính hằng ngày theo giá thanh toán cuối ngày; cần đủ ký quỹ."
+   ]
+  ],
+  "rel": [
+   "phai-sinh-la-gi",
+   "call-margin-la-gi",
+   "overtrading-la-gi",
+   "quan-tri-von-la-gi"
+  ],
+  "add": []
+ },
+ {
+  "slug": "quy-mo-quy-dong",
+  "kw": "quỹ mở và quỹ đóng",
+  "grp": 6,
+  "title": "Quỹ mở và quỹ đóng khác nhau thế nào? Người mới nên chọn gì",
+  "desc": "So sánh quỹ mở, quỹ đóng và quỹ ETF: cách mua bán, giá NAV, chiết khấu, phí, thanh khoản – và loại nào hợp với người mới không có thời gian.",
+  "body": [
+   [
+    "p",
+    "Không có thời gian chọn từng cổ phiếu? Nhiều người chọn góp tiền vào <b>quỹ đầu tư</b> để chuyên gia quản lý. Nhưng quỹ cũng có nhiều loại, phổ biến nhất là <b>quỹ mở</b>, <b>quỹ đóng</b> và <b>quỹ ETF</b>. Kiến thức nền: <a href=\"/f0/chung-chi-quy-la-gi.html\">chứng chỉ quỹ là gì</a>."
+   ],
+   [
+    "h2",
+    "1. Quỹ mở"
+   ],
+   [
+    "ul",
+    [
+     "Mua bán <b>trực tiếp với công ty quản lý quỹ</b> (qua ứng dụng, đại lý phân phối), không qua sàn.",
+     "Giá giao dịch = <b>NAV mỗi chứng chỉ quỹ</b> (giá trị tài sản ròng) tại kỳ định giá, không có chênh lệch theo cung cầu.",
+     "Quy mô quỹ thay đổi: nhà đầu tư mua thêm thì quỹ phát hành thêm, bán ra thì quỹ mua lại.",
+     "Nhiều quỹ cho phép đầu tư định kỳ với số tiền nhỏ – rất hợp người đi làm.",
+     "Lưu ý phí: phí quản lý hằng năm, có thể có phí mua, phí bán (giảm dần theo thời gian nắm giữ)."
+    ]
+   ],
+   [
+    "h2",
+    "2. Quỹ đóng"
+   ],
+   [
+    "ul",
+    [
+     "Huy động vốn một lần khi thành lập, sau đó <b>không phát hành thêm, không mua lại</b> theo yêu cầu.",
+     "Chứng chỉ quỹ niêm yết trên sàn, muốn bán phải bán cho nhà đầu tư khác.",
+     "Giá trên sàn có thể <b>thấp hơn NAV</b> (chiết khấu) hoặc cao hơn (thặng dư), tùy cung cầu và tâm lý.",
+     "Thanh khoản thường thấp hơn cổ phiếu lớn."
+    ]
+   ],
+   [
+    "h2",
+    "3. Quỹ ETF – lai giữa hai loại"
+   ],
+   [
+    "p",
+    "<a href=\"/f0/etf-la-gi.html\">Quỹ ETF</a> niêm yết trên sàn như quỹ đóng, nhưng có cơ chế hoán đổi giúp giá bám sát NAV, và mô phỏng một chỉ số (như VN30, VNDiamond). Phí thường thấp vì không cần chọn cổ phiếu chủ động."
+   ],
+   [
+    "h2",
+    "4. Bảng so sánh nhanh"
+   ],
+   [
+    "ul",
+    [
+     "<b>Nơi giao dịch</b>: quỹ mở – với công ty quản lý quỹ; quỹ đóng, ETF – trên sàn.",
+     "<b>Giá</b>: quỹ mở – đúng NAV; quỹ đóng – theo cung cầu, có thể chiết khấu; ETF – sát NAV.",
+     "<b>Thời gian khớp</b>: quỹ mở – theo kỳ giao dịch của quỹ; quỹ đóng, ETF – trong phiên.",
+     "<b>Phù hợp</b>: quỹ mở – góp định kỳ, không cần tài khoản chứng khoán; ETF – người có tài khoản chứng khoán muốn mua cả rổ."
+    ]
+   ],
+   [
+    "h2",
+    "5. Chọn quỹ cần xem gì?"
+   ],
+   [
+    "ol",
+    [
+     "Hiệu quả nhiều năm so với chỉ số tham chiếu (VN-Index, VN30), không chỉ năm gần nhất.",
+     "Tổng phí mỗi năm – phí nhỏ nhưng cộng dồn nhiều năm sẽ đáng kể.",
+     "Chiến lược: quỹ cổ phiếu, quỹ cân bằng hay quỹ trái phiếu – rủi ro rất khác nhau.",
+     "Quy mô quỹ và công ty quản lý quỹ."
+    ]
+   ],
+   [
+    "p",
+    "Bài viết mang tính giáo dục, không phải khuyến nghị mua bán. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Quỹ mở có rút tiền bất cứ lúc nào không?",
+    "Đặt lệnh bán bất cứ lúc nào, nhưng lệnh khớp theo kỳ giao dịch của quỹ và có thể mất phí bán nếu nắm giữ ngắn."
+   ],
+   [
+    "Vì sao quỹ đóng hay giao dịch dưới NAV?",
+    "Vì không có cơ chế mua lại theo NAV, giá trên sàn phụ thuộc cung cầu; thanh khoản thấp thường làm giá chiết khấu."
+   ],
+   [
+    "Người mới nên chọn quỹ nào?",
+    "Người đi làm muốn góp đều thường hợp quỹ mở hoặc ETF; quan trọng nhất là hiểu chiến lược và phí của quỹ."
+   ]
+  ],
+  "rel": [
+   "chung-chi-quy-la-gi",
+   "etf-la-gi",
+   "dau-tu-chung-khoan-cho-nguoi-di-lam",
+   "mua-trung-binh-gia-dca"
   ],
   "add": []
  }
