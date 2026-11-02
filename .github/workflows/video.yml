@@ -11,7 +11,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: video-${{ github.ref }}
+  group: video-${{ github.run_id }}
   cancel-in-progress: false
 jobs:
   plan:
