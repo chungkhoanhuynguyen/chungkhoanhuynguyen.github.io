@@ -76,8 +76,19 @@ def _cover(v, sc):
         c = c.resize((LW, LH), Image.BILINEAR)
         _CV[key_] = Image.blend(c, Image.new("RGB", (LW, LH), (8, 10, 15)), 0.55)
     return _CV[key_].copy()
+def _prep_ph(sc, ph):
+    # nền ảnh thật làm tối + thẻ ảnh sắc nét bên phải
+    r = max(LW/ph.width, LH/ph.height); b = ph.resize((int(ph.width*r)+1, int(ph.height*r)+1), Image.LANCZOS)
+    b = b.crop(((b.width-LW)//2, (b.height-LH)//2, (b.width-LW)//2+LW, (b.height-LH)//2+LH)).filter(ImageFilter.GaussianBlur(3))
+    sc["_bg"] = Image.blend(b, Image.new("RGB", (LW, LH), (8, 10, 15)), 0.66)
+    cw, chh = 440, 260; r = max(cw/ph.width, chh/ph.height); c = ph.resize((int(ph.width*r)+1, int(ph.height*r)+1), Image.LANCZOS)
+    c = c.crop(((c.width-cw)//2, (c.height-chh)//2, (c.width-cw)//2+cw, (c.height-chh)//2+chh))
+    m = Image.new("L", (cw, chh), 0); ImageDraw.Draw(m).rounded_rectangle([0, 0, cw-1, chh-1], 18, fill=255)
+    sc["_card"] = (c, m)
 def land(v, sc, t):
-    k = sc["k"]; im = _cover(v, sc)
+    k = sc["k"]; im = sc["_bg"].copy() if "_bg" in sc else _cover(v, sc)
+    if "_bg" in sc:
+        fc = dx2.F("SemiBold", 18); ImageDraw.Draw(im).text((24, LH-34), "Ảnh minh hoạ: Wikimedia Commons", font=fc, fill=(150, 156, 170))
     if k in ("end", "text"):
         c = v.crop((0, 200, 1080, 1720)); s = LH/c.height; c = c.resize((int(c.width*s), LH), Image.LANCZOS)
         im.paste(c, ((LW-c.width)//2, 0)); return im
@@ -97,6 +108,12 @@ def land(v, sc, t):
         if a <= 0: continue
         f = dx2.fit(d, l, "Black", cw, 92); c = cols[i] if i < len(cols) else dx2.CREAM
         tw = d.textlength(l, font=f); d.text((cx - tw/2, y + (1-a)*24), l, font=f, fill=dx2.mix(c, a, (10, 12, 17))); y += int(f.size*1.2)
+    if "_card" in sc:
+        c, m = sc["_card"]; a = dx2.ease((t - 0.5)/0.5)
+        if a > 0:
+            yy = LH - 110 - c.height + int((1-a)*30); xx = int(cx - c.width/2)
+            ImageDraw.Draw(im).rounded_rectangle([xx-4, yy-4, xx+c.width+3, yy+c.height+3], 21, fill=dx2.GOLD)
+            im.paste(c, (xx, yy), m)
     f = dx2.F("SemiBold", 26); u = "chungkhoanhuynguyen.com"; d.text((cx - d.textlength(u, font=f)/2, LH - 70), u, font=f, fill=(120, 128, 146))
     return im
 def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
@@ -126,6 +143,20 @@ def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
           "loudnorm=I=-14:TP=-1:LRA=7,alimiter=limit=0.95:attack=1:release=40:level=false")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", tmp, "-i", A, "-af", af, "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "44100", "-shortest", out])
     return b
+
+# 3b) ảnh minh hoạ thật cho từng cảnh (Commons, miễn phí)
+try:
+    sys.path.insert(0, HERE); import anh
+    kho = anh.Kho(WORK + "/anh"); chu_de = g.get("META", {}).get(key, {}).get("title", "") if isinstance(g.get("META"), dict) else ""
+    nph = 0
+    for i, sc in enumerate(scenes):
+        sc["anh"] = raw[i].get("anh", ""); sc["say"] = raw[i].get("say", ""); sc["ch"] = raw[i].get("ch", "")
+        ph = kho.cho(sc, chu_de)
+        if ph is not None: _prep_ph(sc, ph); nph += 1
+    open(os.path.join(OUT, key + "_anh.txt"), "w", encoding="utf-8").write("Ảnh minh hoạ (Wikimedia Commons):\n" + "\n".join(kho.credit) + "\n")
+    print(key, "anh minh hoa", nph, "/", len(scenes), flush=True)
+except Exception as e:
+    print("anh: bo qua", e, flush=True)
 
 # 4) dựng + nhạc nền
 rawmp4 = WORK + "/raw.mp4"; out = os.path.join(OUT, key + ".mp4")
