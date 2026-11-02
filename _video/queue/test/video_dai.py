@@ -11,3 +11,4 @@ S["TEST"]=[
  {"k":"checklist","label":"Danh sách","cap":("BA","Ý"),"cols":(WHITE,GOLD),"items":[("Một",GOLD),("Hai",RED)],"say":"Thử danh sách."},
  {"k":"end","label":"","cap":("HẾT","THỬ"),"cols":(WHITE,GOLD),"say":"Hẹn gặp lại."}]
 # landscape 1920x1080
+# rerun ffmpeg
