@@ -13195,5 +13195,635 @@
    "ty-gia-tang-anh-huong-co-phieu"
   ],
   "add": []
+ },
+ {
+  "slug": "bat-dau-dau-tu-som",
+  "kw": "bắt đầu đầu tư sớm",
+  "grp": 7,
+  "title": "Bắt đầu đầu tư sớm: bài học 200 năm từ Benjamin Franklin",
+  "desc": "Vì sao bắt đầu sớm quan trọng hơn số tiền lớn? Câu chuyện quỹ 200 năm của Franklin, ví dụ người góp ít mà về đích trước và 4 bước cho người mới.",
+  "body": [
+   [
+    "p",
+    "Nhiều người mới nghĩ: “Mình ít tiền quá, đợi dư dả rồi hãy đầu tư”. Thực tế, thứ quý nhất của người mới không phải là số vốn, mà là <b>thời gian</b>. Bài này kể một câu chuyện có thật hơn 200 năm trước và vài phép tính đơn giản để bạn thấy vì sao bắt đầu sớm, dù với số tiền nhỏ, lại là lợi thế lớn nhất."
+   ],
+   [
+    "p",
+    "<span class=\"vid\" style=\"display:block\"><iframe src=\"https://www.youtube-nocookie.com/embed/weqzjUt7Tao?rel=0\" title=\"Lãi kép: thí nghiệm 200 năm của Benjamin Franklin\" loading=\"lazy\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></span>"
+   ],
+   [
+    "h2",
+    "1. Món quà “cấm tiêu” của Benjamin Franklin"
+   ],
+   [
+    "p",
+    "Năm 1789, nhà khoa học, chính khách Mỹ Benjamin Franklin (người in trên tờ 100 đô la) để lại cho hai thành phố Boston và Philadelphia mỗi nơi 1.000 bảng Anh, kèm một điều kiện lạ: không được tiêu hết số tiền đó trong 200 năm. Tiền được dùng để cho những người thợ trẻ vay với lãi 5% mỗi năm, thu về lại cho người khác vay tiếp. Sau 100 năm, mỗi thành phố được dùng phần lớn quỹ cho công trình công cộng, phần còn lại tiếp tục sinh lời thêm 100 năm."
+   ],
+   [
+    "p",
+    "Kết quả không hoàn hảo như Franklin tự tính – có khoản vay không đòi được, nghề học việc suy tàn – nhưng quỹ vẫn lớn lên gấp nhiều lần, đủ xây trường dạy nghề và viện nghiên cứu mang tên ông, và vẫn còn tiền sau hai thế kỷ. Bài học Franklin muốn để lại rất giản dị: một khoản tiền nhỏ, một mức lãi đều đặn và <b>đủ thời gian</b> có thể làm được điều mà số vốn lớn trong thời gian ngắn không làm được."
+   ],
+   [
+    "h2",
+    "2. Vì sao thời gian “mạnh” hơn số tiền"
+   ],
+   [
+    "p",
+    "Với <a href=\"/f0/lai-kep-trong-dau-tu.html\">lãi kép</a>, tiền lãi năm nay lại sinh lãi năm sau. Những năm đầu, phần tăng thêm rất nhỏ nên dễ nản. Nhưng càng về sau, “quả cầu tuyết” càng lăn nhanh. Vì vậy, mỗi năm bắt đầu muộn không chỉ mất một năm tiền góp, mà mất luôn năm tăng trưởng mạnh nhất ở cuối hành trình."
+   ],
+   [
+    "h2",
+    "3. Ví dụ: An và Bình"
+   ],
+   [
+    "p",
+    "Giả định lợi nhuận bình quân 10%/năm, tính lãi hằng tháng (chỉ để minh họa, thực tế có năm lãi năm lỗ):"
+   ],
+   [
+    "ul",
+    [
+     "<b>An</b> bắt đầu từ 25 tuổi, mỗi tháng góp 5 triệu, góp đúng 10 năm (tổng 600 triệu) rồi dừng hẳn, để tiền tự sinh lời.",
+     "<b>Bình</b> bắt đầu từ 35 tuổi, mỗi tháng góp 5 triệu, đều đặn 25 năm (tổng 1,5 tỷ)."
+    ]
+   ],
+   [
+    "p",
+    "Đến 60 tuổi, An có khoảng 12,5 tỷ đồng, Bình khoảng 6,7 tỷ đồng. An góp ít hơn 2,5 lần nhưng có nhiều hơn gần 1,9 lần – chỉ vì bắt đầu sớm hơn 10 năm. Nếu bạn đang ở tuổi của Bình, cũng đừng nản: bắt đầu hôm nay vẫn tốt hơn rất nhiều so với đợi thêm 5 năm nữa."
+   ],
+   [
+    "h2",
+    "4. Người mới bắt đầu thế nào?"
+   ],
+   [
+    "ol",
+    [
+     "<b>Trả cho mình trước</b>: nhận lương là trích ngay một tỷ lệ cố định (ví dụ 10–20%), không đợi cuối tháng còn thừa.",
+     "<b>Góp đều, không chờ thời điểm đẹp</b>: không ai đoán trước được đáy. Cách <a href=\"/f0/mua-trung-binh-gia-dca.html\">mua đều đặn DCA</a> giúp bạn khỏi phải đoán.",
+     "<b>Tái đầu tư cổ tức</b>: nhận cổ tức thì mua thêm, đừng tiêu, để lãi tiếp tục sinh lãi.",
+     "<b>Đừng cắt ngang</b>: chỉ rút tiền khi thật cần. Mỗi lần rút là dừng quả cầu tuyết đang lăn."
+    ]
+   ],
+   [
+    "h2",
+    "5. Ba điều làm chậm hành trình"
+   ],
+   [
+    "ul",
+    [
+     "<b>Lạm phát</b>: hãy nhìn lãi thực (lãi trừ lạm phát), không chỉ lãi danh nghĩa. Xem thêm <a href=\"/f0/lam-phat-va-chung-khoan.html\">lạm phát và chứng khoán</a>.",
+     "<b>Phí và mua bán quá nhiều</b>: 10%/năm trong 30 năm cho kết quả gấp khoảng 17,4 lần; nếu mất 2%/năm vì phí, chỉ còn khoảng 10,1 lần – thấp hơn khoảng 42%.",
+     "<b>Thua lỗ lớn</b>: lỗ 50% cần lãi 100% mới hòa vốn. Giữ vốn trước, kiếm lời sau; tránh dùng <a href=\"/f0/margin-la-gi.html\">margin</a> khi mới bắt đầu."
+    ]
+   ],
+   [
+    "h2",
+    "6. Lời nhắn cho người mới"
+   ],
+   [
+    "p",
+    "Bạn không cần nhiều tiền để bắt đầu, cũng không cần giỏi ngay từ đầu. Bạn cần một kế hoạch đơn giản, sự đều đặn và kiên nhẫn. Số tiền nhỏ hôm nay, nếu được chăm sóc đủ lâu, sẽ trở thành tài sản đáng kể – giống món quà 1.000 bảng của Franklin. Với nhiều người, tích sản cổ phiếu ngân hàng là điểm khởi đầu dễ theo dõi: xem nhanh ROE, P/B các ngân hàng tại <a href=\"/bao-cao-2026.html#tichsan\">bảng tích sản</a>."
+   ],
+   [
+    "p",
+    "Xem video đầy đủ trên kênh: <a href=\"/hoc/lai-kep-ky-quan-thu-8-cua-dau-tu-thi-nghiem-200-nam-cua.html\">Lãi kép – kỳ quan thứ 8 của đầu tư</a> hoặc <a href=\"https://www.youtube.com/@chungkhoanhuynguyen\" target=\"_blank\" rel=\"noopener\">YouTube Chứng Khoán Huy Nguyễn</a>."
+   ],
+   [
+    "p",
+    "Các con số trong bài là ví dụ minh họa tự tính, không phải cam kết lợi nhuận hay khuyến nghị mua bán. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Ít tiền có nên bắt đầu đầu tư không?",
+    "Có. Bắt đầu sớm với số tiền nhỏ giúp bạn có thêm thời gian cho lãi kép và học kinh nghiệm khi rủi ro còn nhỏ."
+   ],
+   [
+    "Bắt đầu muộn ở tuổi 35–40 có còn ý nghĩa?",
+    "Vẫn có. Góp đều và tránh thua lỗ lớn vẫn tạo ra khác biệt đáng kể; quan trọng là bắt đầu càng sớm càng tốt kể từ hôm nay."
+   ],
+   [
+    "Câu chuyện quỹ của Franklin có thật không?",
+    "Có. Di chúc năm 1789 của Benjamin Franklin lập quỹ cho Boston và Philadelphia, hoạt động khoảng 200 năm trước khi được giải ngân."
+   ]
+  ],
+  "rel": [
+   "lai-kep-trong-dau-tu",
+   "mua-trung-binh-gia-dca",
+   "tich-san-chung-khoan-la-gi",
+   "tich-san-cho-nguoi-luong-10-trieu"
+  ],
+  "add": []
+ },
+ {
+  "slug": "tich-san-cho-con",
+  "kw": "tích sản cho con",
+  "grp": 7,
+  "title": "Tích sản cho con: kế hoạch đầu tư 18 năm cho bố mẹ",
+  "desc": "Tích sản cho con bằng cổ phiếu: góp bao nhiêu mỗi tháng, chọn gì, đứng tên ai, tránh sai lầm nào. Ví dụ tính lãi kép 18 năm dễ hiểu cho bố mẹ.",
+  "body": [
+   [
+    "p",
+    "Nhiều bố mẹ muốn chuẩn bị cho con một khoản tiền học đại học, du học hay vốn khởi nghiệp. Gửi tiết kiệm là cách quen thuộc, nhưng với khoảng thời gian dài 15–18 năm, <b>tích sản cổ phiếu</b> (mua đều đặn, giữ lâu, tái đầu tư cổ tức) là lựa chọn nhiều gia đình cân nhắc thêm. Bài này giúp bạn lập một kế hoạch đơn giản."
+   ],
+   [
+    "h2",
+    "1. Vì sao tích sản cho con hợp với cổ phiếu?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Thời gian rất dài</b>: con mới sinh thì bố mẹ có gần 18 năm – đủ để <a href=\"/f0/lai-kep-trong-dau-tu.html\">lãi kép</a> phát huy và đủ để đi qua vài chu kỳ lên xuống của thị trường.",
+     "<b>Không cần rút sớm</b>: mục tiêu rõ ngày dùng tiền, nên không bị áp lực bán khi thị trường giảm.",
+     "<b>Góp nhỏ đều đặn</b>: 1–3 triệu mỗi tháng là bắt đầu được, không cần vốn lớn."
+    ]
+   ],
+   [
+    "h2",
+    "2. Ví dụ: góp 2 triệu mỗi tháng trong 18 năm"
+   ],
+   [
+    "p",
+    "Giả định minh họa: góp 2 triệu/tháng, tổng tiền góp 432 triệu đồng. Nếu lợi nhuận bình quân 10%/năm (tính lãi hằng tháng), sau 18 năm khoản tiền vào khoảng 1,2 tỷ đồng. Nếu chỉ 6%/năm, khoảng 780 triệu. Thực tế có năm lãi, năm lỗ; con số chỉ để thấy sức mạnh của thời gian, không phải cam kết."
+   ],
+   [
+    "h2",
+    "3. Bốn bước lập kế hoạch"
+   ],
+   [
+    "ol",
+    [
+     "<b>Tách riêng tài khoản</b>: dùng một tài khoản chứng khoán riêng (hoặc tiểu khoản) chỉ cho mục tiêu của con, không trộn với tiền lướt sóng của bố mẹ.",
+     "<b>Cố định ngày và số tiền</b>: ví dụ ngày nhận lương mỗi tháng góp 2 triệu – cách <a href=\"/f0/mua-trung-binh-gia-dca.html\">mua đều DCA</a> giúp khỏi phải đoán đáy.",
+     "<b>Chọn doanh nghiệp đầu ngành, kinh doanh ổn định</b>: ưu tiên công ty lợi nhuận đều, ít nợ, có cổ tức; phân bổ 3–5 mã hoặc dùng <a href=\"/f0/etf-la-gi.html\">quỹ ETF</a> nếu không có thời gian theo dõi.",
+     "<b>Tái đầu tư cổ tức</b>: cổ tức tiền mặt mua thêm cổ phiếu, không tiêu."
+    ]
+   ],
+   [
+    "h2",
+    "4. Quản trị rủi ro theo tuổi của con"
+   ],
+   [
+    "ul",
+    [
+     "<b>Con 0–10 tuổi</b>: có thể để tỷ trọng cổ phiếu cao vì còn nhiều thời gian bù đắp các đợt giảm.",
+     "<b>Con 10–15 tuổi</b>: bắt đầu chốt dần một phần lãi sang tiền gửi hoặc trái phiếu an toàn.",
+     "<b>2–3 năm cuối</b>: chuyển phần lớn sang tiền gửi để không bị một đợt giảm mạnh đúng lúc cần tiền đóng học."
+    ]
+   ],
+   [
+    "h2",
+    "5. Sai lầm thường gặp"
+   ],
+   [
+    "ul",
+    [
+     "Dùng <a href=\"/f0/margin-la-gi.html\">margin</a> (vay ký quỹ) cho tiền của con – rủi ro bị bán giải chấp, không phù hợp mục tiêu dài hạn.",
+     "Dồn hết vào 1 mã \"hot\" theo tin đồn.",
+     "Ngừng góp khi thị trường giảm – đây lại là lúc mua được giá thấp hơn.",
+     "Rút tiền của con dùng việc khác giữa chừng."
+    ]
+   ],
+   [
+    "p",
+    "Nhiều gia đình chọn cổ phiếu ngân hàng làm phần lõi vì dễ theo dõi và có cổ tức: xem nhanh ROE, P/B các ngân hàng tại <a href=\"/bao-cao-2026.html#tichsan\">bảng tích sản</a>."
+   ],
+   [
+    "p",
+    "Các con số là ví dụ tự tính, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Tích sản cho con nên góp bao nhiêu mỗi tháng?",
+    "Tùy thu nhập gia đình; 1–3 triệu/tháng đều đặn trong 15–18 năm đã tạo khác biệt lớn nhờ lãi kép. Quan trọng là đều đặn và không rút giữa chừng."
+   ],
+   [
+    "Có thể mở tài khoản chứng khoán đứng tên con không?",
+    "Người chưa đủ tuổi thường cần người giám hộ theo quy định của từng công ty chứng khoán; cách phổ biến là bố mẹ đứng tên một tài khoản riêng dành cho con."
+   ],
+   [
+    "Gần đến lúc dùng tiền thì làm gì?",
+    "Khoảng 2–3 năm trước khi cần tiền, chuyển dần sang tiền gửi hoặc tài sản an toàn để tránh rủi ro thị trường giảm đúng lúc cần rút."
+   ]
+  ],
+  "rel": [
+   "tich-san-chung-khoan-la-gi",
+   "lai-kep-trong-dau-tu",
+   "tich-san-cho-nguoi-luong-10-trieu",
+   "tai-dau-tu-co-tuc"
+  ],
+  "add": []
+ },
+ {
+  "slug": "tich-san-co-phieu-ngan-hang-bao-nhieu-ma",
+  "kw": "tích sản cổ phiếu ngân hàng bao nhiêu mã",
+  "grp": 7,
+  "title": "Tích sản cổ phiếu ngân hàng: nên giữ bao nhiêu mã?",
+  "desc": "Tích sản ngân hàng nên giữ 1, 3 hay 5 mã? Cách chia tỷ trọng, kết hợp quốc doanh và tư nhân, ví dụ ROE, P/B thật của các ngân hàng lớn.",
+  "body": [
+   [
+    "p",
+    "Khi bắt đầu tích sản cổ phiếu ngân hàng, câu hỏi hay gặp là: <b>nên dồn vào 1 mã tốt nhất hay chia ra nhiều mã?</b> Câu trả lời ngắn: với người mới, <b>3–5 mã</b> thường là cân bằng giữa đa dạng và khả năng theo dõi."
+   ],
+   [
+    "h2",
+    "1. Vì sao không nên chỉ 1 mã?"
+   ],
+   [
+    "ul",
+    [
+     "Mỗi ngân hàng có rủi ro riêng: nợ xấu tăng, trích lập dự phòng lớn, thay đổi lãnh đạo, sự cố pháp lý.",
+     "Ví dụ trong quý 3/2026 (số liệu báo cáo tài chính), có ngân hàng lợi nhuận tăng 40–58% so với cùng kỳ, nhưng cũng có ngân hàng lợi nhuận giảm hơn 50% vì phải trích lập nhiều. Chỉ giữ 1 mã, bạn chịu trọn rủi ro riêng đó."
+    ]
+   ],
+   [
+    "h2",
+    "2. Vì sao không nên quá nhiều mã?"
+   ],
+   [
+    "ul",
+    [
+     "Cổ phiếu ngân hàng thường lên xuống cùng chiều theo chu kỳ lãi suất và tín dụng, nên 10 mã ngân hàng không đa dạng hơn 4 mã bao nhiêu.",
+     "Mỗi quý phải đọc thêm báo cáo của từng mã – quá nhiều mã thì người mới khó theo kịp, dễ giữ cả mã đang xấu đi mà không biết."
+    ]
+   ],
+   [
+    "h2",
+    "3. Gợi ý cách chia (minh họa)"
+   ],
+   [
+    "ul",
+    [
+     "<b>1–2 ngân hàng quốc doanh</b>: quy mô lớn, nợ xấu được kiểm soát, bao phủ nợ xấu thường cao – phần \"giữ nhịp\" cho danh mục.",
+     "<b>2–3 ngân hàng tư nhân</b>: ROE cao, tăng trưởng nhanh hơn, có ngân hàng trả cổ tức tiền mặt đều.",
+     "Mỗi mã không quá 30–35% danh mục; mã nào xấu đi (nợ xấu tăng liên tục, lợi nhuận giảm nhiều quý) thì giảm tỷ trọng."
+    ]
+   ],
+   [
+    "h2",
+    "4. Một vài số liệu tham khảo"
+   ],
+   [
+    "p",
+    "Theo dữ liệu cập nhật 31/10/2026: VCB P/B khoảng 1,85, ROE 17,6%; CTG P/B 1,2, ROE 22,3%; MBB P/B 1,24, ROE 21,8%; ACB P/B 1,17, ROE 16,5%; TCB P/B 1,23, ROE 15,4%. Đây là ví dụ để bạn thấy cách so sánh <a href=\"/f0/roe-eps-la-gi.html\">ROE</a> với <a href=\"/f0/pb-la-gi.html\">P/B</a>, không phải danh sách khuyến nghị."
+   ],
+   [
+    "h2",
+    "5. Ba tiêu chí giữ mã trong danh mục"
+   ],
+   [
+    "ol",
+    [
+     "ROE ổn định trên khoảng 15% trong nhiều năm.",
+     "Tỷ lệ <a href=\"/f0/no-xau-ngan-hang-la-gi.html\">nợ xấu</a> thấp hoặc đang giảm, bao phủ nợ xấu đủ dày.",
+     "Định giá P/B không quá cao so với lịch sử của chính ngân hàng đó."
+    ]
+   ],
+   [
+    "p",
+    "Bảng so sánh ROE, P/B, cổ tức các ngân hàng cập nhật tự động: <a href=\"/bao-cao-2026.html#tichsan\">bảng tích sản</a>."
+   ]
+  ],
+  "faq": [
+   [
+    "Tích sản ngân hàng nên giữ mấy mã?",
+    "Với người mới, 3–5 mã là hợp lý: đủ giảm rủi ro riêng từng ngân hàng mà vẫn theo dõi được báo cáo mỗi quý."
+   ],
+   [
+    "Có nên kết hợp ngân hàng quốc doanh và tư nhân?",
+    "Nhiều người kết hợp: quốc doanh cho sự ổn định, tư nhân cho tăng trưởng và cổ tức. Tỷ lệ tùy khẩu vị rủi ro."
+   ],
+   [
+    "Khi nào bỏ một mã ra khỏi danh mục?",
+    "Khi nền tảng xấu đi kéo dài: lợi nhuận giảm nhiều quý, nợ xấu tăng liên tục, ROE giảm rõ rệt – không phải vì giá giảm vài phiên."
+   ]
+  ],
+  "rel": [
+   "tich-san-co-phieu-ngan-hang",
+   "tich-san-co-phieu-ngan-hang-quoc-doanh",
+   "tich-san-co-phieu-ngan-hang-tu-nhan",
+   "cach-chon-co-phieu-ngan-hang-de-tich-san"
+  ],
+  "add": []
+ },
+ {
+  "slug": "dung-lo-dong-trung-binh-gia-xuong",
+  "kw": "trung bình giá xuống",
+  "grp": 5,
+  "title": "Trung bình giá xuống: vì sao F0 dễ \"gồng lỗ\" sai cách?",
+  "desc": "Trung bình giá xuống là gì, khác DCA ra sao? Vì sao mua thêm khi đang lỗ dễ khiến khoản lỗ phình to, và 4 nguyên tắc để không mắc bẫy này.",
+  "body": [
+   [
+    "p",
+    "<b>Trung bình giá xuống</b> (hay \"bình quân giá xuống\") là khi cổ phiếu bạn đang giữ giảm giá, bạn mua thêm để giá vốn trung bình thấp hơn, hy vọng chỉ cần giá hồi nhẹ là hòa vốn. Nghe hợp lý, nhưng đây là một trong những lý do phổ biến khiến người mới lỗ nặng."
+   ],
+   [
+    "h2",
+    "1. Ví dụ đơn giản"
+   ],
+   [
+    "p",
+    "Bạn mua 1.000 cổ phiếu giá 50.000đ (50 triệu). Giá giảm còn 40.000đ, bạn mua thêm 1.000 cổ – giá vốn trung bình còn 45.000đ. Giá giảm tiếp còn 30.000đ, bạn mua thêm 2.000 cổ – giá vốn còn khoảng 37.500đ, tổng tiền bỏ vào 150 triệu, đang lỗ khoảng 30 triệu. Khoản lỗ ban đầu 20%, nay đã thành 30 triệu đồng trên số vốn gấp 3 lần, và tài khoản bị dồn vào một mã."
+   ],
+   [
+    "h2",
+    "2. Khác gì với DCA?"
+   ],
+   [
+    "ul",
+    [
+     "<b><a href=\"/f0/mua-trung-binh-gia-dca.html\">DCA</a></b>: mua đều theo lịch (mỗi tháng), số tiền cố định, kế hoạch có trước, thường cho mục tiêu tích sản dài hạn và danh mục đa dạng.",
+     "<b>Trung bình giá xuống</b>: mua thêm vì đang lỗ, không có kế hoạch trước, thường tăng tiền mỗi lần, dễ dồn hết vốn vào 1 mã."
+    ]
+   ],
+   [
+    "h2",
+    "3. Vì sao nguy hiểm?"
+   ],
+   [
+    "ul",
+    [
+     "Giá giảm thường có lý do: kết quả kinh doanh xấu, ngành gặp khó, dòng tiền rút ra. Mua thêm là đặt cược ngược với thông tin đó.",
+     "Lỗ 50% cần lãi 100% mới hòa vốn – càng mua thêm, khoản cần hồi phục càng lớn.",
+     "Dễ dính <a href=\"/f0/margin-la-gi.html\">margin</a>: hết tiền mặt thì vay để mua tiếp, gặp <a href=\"/f0/call-margin-la-gi.html\">call margin</a> và bị bán giải chấp đúng đáy.",
+     "Tâm lý \"không chịu sai\": càng mua thêm càng khó <a href=\"/f0/cat-lo-la-gi.html\">cắt lỗ</a>."
+    ]
+   ],
+   [
+    "h2",
+    "4. Bốn nguyên tắc để không mắc bẫy"
+   ],
+   [
+    "ol",
+    [
+     "<b>Có kế hoạch trước khi mua</b>: tỷ trọng tối đa cho 1 mã (ví dụ 20–25% danh mục) và mức cắt lỗ.",
+     "<b>Chỉ mua thêm khi nền tảng không đổi</b>: kiểm tra lại báo cáo tài chính, nếu lợi nhuận đi xuống thì không mua thêm.",
+     "<b>Không dùng margin để bình quân</b>.",
+     "<b>Ưu tiên mua thêm mã đang đúng</b> (đang có lãi, xu hướng tăng) hơn là mã đang sai."
+    ]
+   ],
+   [
+    "p",
+    "Tóm lại, mua thêm không xấu nếu nằm trong kế hoạch phân bổ vốn có sẵn; còn mua thêm chỉ để \"gỡ\" thường làm khoản lỗ lớn hơn."
+   ]
+  ],
+  "faq": [
+   [
+    "Trung bình giá xuống có phải lúc nào cũng sai?",
+    "Không hẳn. Nếu nằm trong kế hoạch phân bổ vốn từ trước, doanh nghiệp vẫn tốt và tỷ trọng chưa vượt giới hạn, mua thêm có thể hợp lý. Sai là mua thêm chỉ để gỡ lỗ."
+   ],
+   [
+    "DCA và trung bình giá xuống khác nhau thế nào?",
+    "DCA mua đều theo lịch, số tiền cố định, bất kể giá lên hay xuống; trung bình giá xuống là mua thêm vì đang lỗ, không có kế hoạch trước."
+   ]
+  ],
+  "rel": [
+   "cat-lo-la-gi",
+   "mua-trung-binh-gia-dca",
+   "quan-tri-von-la-gi",
+   "sai-lam-cua-f0"
+  ],
+  "add": []
+ },
+ {
+  "slug": "phan-ky-la-gi",
+  "kw": "phân kỳ là gì",
+  "grp": 4,
+  "title": "Phân kỳ là gì? Phân kỳ RSI, MACD dễ hiểu cho người mới",
+  "desc": "Phân kỳ là gì trong phân tích kỹ thuật? Cách nhận biết phân kỳ âm, phân kỳ dương trên RSI, MACD, ví dụ minh họa và những lưu ý để tránh tín hiệu giả.",
+  "body": [
+   [
+    "p",
+    "<b>Phân kỳ</b> (divergence) xảy ra khi giá cổ phiếu và một chỉ báo động lượng như <a href=\"/f0/rsi-la-gi.html\">RSI</a> hoặc <a href=\"/f0/macd-la-gi.html\">MACD</a> đi ngược chiều nhau. Nó cho thấy lực đẩy của xu hướng hiện tại đang yếu dần – một dấu hiệu cảnh báo sớm, chứ không phải lệnh mua bán."
+   ],
+   [
+    "h2",
+    "1. Phân kỳ âm (giảm)"
+   ],
+   [
+    "p",
+    "Giá tạo <b>đỉnh sau cao hơn đỉnh trước</b>, nhưng RSI/MACD tạo <b>đỉnh sau thấp hơn</b>. Nghĩa là giá vẫn lên nhưng động lượng mua yếu đi. Thường gặp ở cuối một con sóng tăng dài, cảnh báo khả năng điều chỉnh hoặc đi ngang."
+   ],
+   [
+    "h2",
+    "2. Phân kỳ dương (tăng)"
+   ],
+   [
+    "p",
+    "Giá tạo <b>đáy sau thấp hơn đáy trước</b>, nhưng chỉ báo tạo <b>đáy sau cao hơn</b>. Lực bán đang cạn dần, có thể xuất hiện nhịp hồi. Đây là lý do nhiều người dùng phân kỳ dương khi tìm vùng bắt đáy – nhưng cần thêm xác nhận."
+   ],
+   [
+    "h2",
+    "3. Cách nhận biết từng bước"
+   ],
+   [
+    "ol",
+    [
+     "Chọn <a href=\"/f0/khung-thoi-gian-bieu-do.html\">khung thời gian</a> ngày hoặc tuần (khung nhỏ nhiễu nhiều).",
+     "Nối 2 đỉnh (hoặc 2 đáy) gần nhau của giá.",
+     "Nối 2 đỉnh (hoặc 2 đáy) tương ứng trên RSI/MACD, cùng thời điểm.",
+     "Nếu 2 đường dốc ngược chiều nhau → có phân kỳ."
+    ]
+   ],
+   [
+    "h2",
+    "4. Phân kỳ ẩn"
+   ],
+   [
+    "p",
+    "Ngược lại với phân kỳ thường, <b>phân kỳ ẩn</b> báo hiệu xu hướng cũ có thể <b>tiếp diễn</b>. Ví dụ trong xu hướng tăng, giá tạo đáy sau cao hơn nhưng RSI tạo đáy sau thấp hơn – nhịp điều chỉnh có thể chỉ là tạm thời. Người mới nên nắm phân kỳ thường trước."
+   ],
+   [
+    "h2",
+    "5. Lưu ý để tránh tín hiệu giả"
+   ],
+   [
+    "ul",
+    [
+     "Phân kỳ có thể kéo dài nhiều tuần, giá vẫn tiếp tục đi theo xu hướng cũ – đừng vào lệnh ngược xu hướng chỉ vì thấy phân kỳ.",
+     "Chờ xác nhận: giá phá <a href=\"/f0/duong-xu-huong-trendline-la-gi.html\">đường xu hướng</a>, khối lượng tăng, hoặc nến đảo chiều rõ.",
+     "Kết hợp với vùng <a href=\"/f0/ho-tro-khang-cu.html\">hỗ trợ, kháng cự</a> và nền tảng doanh nghiệp.",
+     "Luôn có mức cắt lỗ."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Phân kỳ âm có phải là tín hiệu bán?",
+    "Không bắt buộc. Phân kỳ âm cảnh báo động lượng tăng yếu đi; cần thêm xác nhận như giá gãy xu hướng hoặc hỗ trợ trước khi hành động."
+   ],
+   [
+    "Nên dùng RSI hay MACD để xem phân kỳ?",
+    "Cả hai đều được. RSI nhạy hơn, MACD mượt hơn; nhiều người xem cả hai để kiểm tra chéo."
+   ]
+  ],
+  "rel": [
+   "rsi-la-gi",
+   "macd-la-gi",
+   "ho-tro-khang-cu",
+   "breakout-la-gi"
+  ],
+  "add": []
+ },
+ {
+  "slug": "gap-gia-la-gi",
+  "kw": "gap giá là gì",
+  "grp": 4,
+  "title": "Gap giá là gì? 4 loại khoảng trống giá và cách đọc",
+  "desc": "Gap giá (khoảng trống giá) là gì, vì sao xuất hiện? Phân biệt gap thường, gap phá vỡ, gap tiếp diễn, gap kiệt sức và lưu ý với biên độ trần sàn ở Việt Nam.",
+  "body": [
+   [
+    "p",
+    "<b>Gap giá</b> (khoảng trống giá) là vùng giá không có giao dịch nào trên biểu đồ nến: giá mở cửa phiên sau cao hơn giá cao nhất, hoặc thấp hơn giá thấp nhất, của phiên trước. Trên biểu đồ bạn sẽ thấy một \"khoảng hở\" giữa hai cây nến."
+   ],
+   [
+    "h2",
+    "1. Vì sao có gap?"
+   ],
+   [
+    "ul",
+    [
+     "Tin tức ngoài giờ giao dịch: kết quả kinh doanh, cổ tức, tin vĩ mô, thị trường thế giới biến động mạnh đêm trước.",
+     "Lệnh đặt dồn vào phiên <a href=\"/f0/lenh-ato-atc-la-gi.html\">ATO</a> đầu ngày.",
+     "Ở Việt Nam, cổ phiếu tăng/giảm kịch <a href=\"/f0/bien-do-gia-tran-san.html\">biên độ trần sàn</a> nhiều phiên liên tiếp cũng tạo gap.",
+     "Ngày giao dịch không hưởng quyền: giá tham chiếu được điều chỉnh nên biểu đồ chưa điều chỉnh có thể hiện gap \"giả\"."
+    ]
+   ],
+   [
+    "h2",
+    "2. Bốn loại gap"
+   ],
+   [
+    "ul",
+    [
+     "<b>Gap thường</b>: xuất hiện trong vùng đi ngang, khối lượng thấp, thường bị lấp lại nhanh. Ít ý nghĩa.",
+     "<b>Gap phá vỡ</b> (breakaway): giá nhảy khỏi vùng tích lũy kèm khối lượng lớn, thường mở đầu xu hướng mới. Liên quan tới <a href=\"/f0/breakout-la-gi.html\">breakout</a>.",
+     "<b>Gap tiếp diễn</b>: xuất hiện giữa một xu hướng mạnh, cho thấy lực mua (hoặc bán) vẫn dồi dào.",
+     "<b>Gap kiệt sức</b>: xuất hiện cuối một đợt tăng/giảm dài, khối lượng rất lớn, sau đó giá đảo chiều và lấp gap – dấu hiệu xu hướng sắp hết lực."
+    ]
+   ],
+   [
+    "h2",
+    "3. \"Lấp gap\" là gì?"
+   ],
+   [
+    "p",
+    "Khi giá quay lại đi qua hết khoảng trống, người ta gọi là lấp gap. Nhiều gap thường được lấp, nhưng gap phá vỡ mạnh có thể rất lâu không lấp. Vì vậy câu \"gap nào cũng lấp\" không phải quy luật để đặt cược."
+   ],
+   [
+    "h2",
+    "4. Người mới nên dùng gap thế nào?"
+   ],
+   [
+    "ol",
+    [
+     "Xem kèm <a href=\"/f0/khoi-luong-giao-dich-va-dong-tien.html\">khối lượng</a>: gap có khối lượng lớn đáng tin hơn.",
+     "Xác định gap nằm ở đâu trong xu hướng: đầu, giữa hay cuối.",
+     "Tìm nguyên nhân: tin tốt thật (lợi nhuận tăng) khác với tin đồn.",
+     "Không mua đuổi ngay phiên gap tăng mạnh; chờ vài phiên xem giá giữ được vùng gap hay không, và luôn đặt mức cắt lỗ."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Gap giá có luôn được lấp không?",
+    "Không. Gap thường hay được lấp, nhưng gap phá vỡ trong xu hướng mạnh có thể không lấp trong thời gian dài."
+   ],
+   [
+    "Vì sao cổ phiếu Việt Nam hay có gap?",
+    "Do biên độ trần sàn giới hạn giá mỗi phiên, cùng với tin tức ngoài giờ và lệnh dồn vào phiên ATO."
+   ]
+  ],
+  "rel": [
+   "breakout-la-gi",
+   "mo-hinh-nen-nhat-co-ban",
+   "khoi-luong-giao-dich-va-dong-tien",
+   "bien-do-gia-tran-san"
+  ],
+  "add": []
+ },
+ {
+  "slug": "kiem-toan-ngoai-tru-la-gi",
+  "kw": "kiểm toán ngoại trừ là gì",
+  "grp": 3,
+  "title": "Ý kiến kiểm toán ngoại trừ là gì? F0 cần lưu ý gì?",
+  "desc": "Kiểm toán ngoại trừ là gì, khác chấp nhận toàn phần, từ chối, trái ngược thế nào? Rủi ro với cổ phiếu và cách đọc nhanh báo cáo kiểm toán.",
+  "body": [
+   [
+    "p",
+    "Báo cáo tài chính năm (và bán niên) của doanh nghiệp niêm yết phải được công ty kiểm toán độc lập kiểm tra. Ở đầu báo cáo có phần <b>ý kiến kiểm toán</b> – một đoạn ngắn nhưng rất quan trọng, cho biết số liệu bạn sắp đọc đáng tin đến mức nào."
+   ],
+   [
+    "h2",
+    "1. Bốn loại ý kiến kiểm toán"
+   ],
+   [
+    "ul",
+    [
+     "<b>Chấp nhận toàn phần</b>: báo cáo phản ánh trung thực, hợp lý trên các khía cạnh trọng yếu. Đây là mức tốt nhất.",
+     "<b>Ngoại trừ</b>: nhìn chung trung thực, <b>trừ</b> một hoặc vài khoản mục kiểm toán viên không đồng ý hoặc không thu thập đủ bằng chứng.",
+     "<b>Trái ngược</b>: báo cáo sai lệch trọng yếu và lan rộng – không phản ánh đúng thực tế.",
+     "<b>Từ chối đưa ra ý kiến</b>: kiểm toán viên không thể thu thập đủ bằng chứng để kết luận."
+    ]
+   ],
+   [
+    "p",
+    "Ngoài ra còn có <b>đoạn nhấn mạnh</b>: ý kiến vẫn là chấp nhận, nhưng kiểm toán lưu ý người đọc về một vấn đề, ví dụ nghi ngờ khả năng hoạt động liên tục. Đoạn này cũng cần đọc kỹ."
+   ],
+   [
+    "h2",
+    "2. Bị ngoại trừ thì nghiêm trọng đến đâu?"
+   ],
+   [
+    "p",
+    "Tùy khoản mục. Ngoại trừ một khoản nhỏ về phân loại chi phí ít ảnh hưởng; nhưng ngoại trừ về <b>khoản phải thu lớn khó đòi</b>, <a href=\"/f0/hang-ton-kho-la-gi.html\">hàng tồn kho</a> không kiểm kê được, khoản đầu tư không xác định được giá trị… có thể khiến lợi nhuận thật thấp hơn nhiều so với con số công bố."
+   ],
+   [
+    "h2",
+    "3. Ảnh hưởng tới cổ phiếu"
+   ],
+   [
+    "ul",
+    [
+     "Theo quy định niêm yết, ý kiến ngoại trừ, trái ngược hoặc từ chối nhiều năm liên tục có thể khiến cổ phiếu bị <a href=\"/f0/co-phieu-bi-canh-bao-kiem-soat-han-che.html\">cảnh báo, kiểm soát</a>, thậm chí hủy niêm yết.",
+     "Cổ phiếu bị cảnh báo có thể bị loại khỏi danh sách cho vay ký quỹ.",
+     "Lợi nhuận phải điều chỉnh sau kiểm toán (chênh lệch trước – sau kiểm toán) là dấu hiệu cần cẩn trọng."
+    ]
+   ],
+   [
+    "h2",
+    "4. Cách đọc nhanh trong 2 phút"
+   ],
+   [
+    "ol",
+    [
+     "Mở báo cáo tài chính đã kiểm toán, tìm mục \"Báo cáo kiểm toán độc lập\".",
+     "Đọc tiêu đề đoạn ý kiến: \"Ý kiến của kiểm toán viên\" hay \"Cơ sở của ý kiến kiểm toán ngoại trừ\".",
+     "Nếu có ngoại trừ: đọc khoản mục nào, bao nhiêu tiền, so với lợi nhuận và vốn chủ sở hữu.",
+     "So sánh lợi nhuận trước và sau kiểm toán; doanh nghiệp thường phải giải trình nếu chênh lệch lớn."
+    ]
+   ],
+   [
+    "p",
+    "Đây là bước nên làm trước khi đọc tiếp các chỉ số như <a href=\"/f0/pe-la-gi.html\">P/E</a> hay <a href=\"/f0/roe-eps-la-gi.html\">ROE</a>, vì chỉ số chỉ đúng khi số liệu gốc đáng tin."
+   ]
+  ],
+  "faq": [
+   [
+    "Cổ phiếu bị kiểm toán ngoại trừ có nên tránh?",
+    "Không phải lúc nào cũng vậy, nhưng cần đọc kỹ khoản bị ngoại trừ và mức ảnh hưởng tới lợi nhuận, vốn chủ. Người mới nên ưu tiên doanh nghiệp được chấp nhận toàn phần."
+   ],
+   [
+    "Ý kiến kiểm toán nằm ở đâu?",
+    "Ở phần \"Báo cáo kiểm toán độc lập\", ngay đầu báo cáo tài chính năm hoặc báo cáo soát xét bán niên."
+   ]
+  ],
+  "rel": [
+   "cach-doc-bao-cao-tai-chinh",
+   "co-phieu-bi-canh-bao-kiem-soat-han-che",
+   "bao-cao-ket-qua-kinh-doanh-la-gi",
+   "bang-can-doi-ke-toan-la-gi"
+  ],
+  "add": []
  }
 ]
