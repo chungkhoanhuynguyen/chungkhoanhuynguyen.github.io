@@ -68,11 +68,16 @@ def _bg():
         d.ellipse([LW*0.36-r, LH/2-r, LW*0.36+r, LH/2+r], fill=c)
     return g.filter(ImageFilter.GaussianBlur(140))
 LBG = _bg()
-def _cover(v):
-    c = v.resize((LW, int(v.height*LW/v.width)), Image.BILINEAR).crop((0, 400, LW, 400+LH)).filter(ImageFilter.GaussianBlur(40))
-    return Image.blend(c, Image.new("RGB", (LW, LH), (8, 10, 15)), 0.55)
+_CV = {}
+def _cover(v, sc):
+    key_ = id(sc)
+    if key_ not in _CV:
+        c = v.resize((480, int(v.height*480/v.width)), Image.BILINEAR).crop((0, 100, 480, 370)).filter(ImageFilter.GaussianBlur(10))
+        c = c.resize((LW, LH), Image.BILINEAR)
+        _CV[key_] = Image.blend(c, Image.new("RGB", (LW, LH), (8, 10, 15)), 0.55)
+    return _CV[key_].copy()
 def land(v, sc, t):
-    k = sc["k"]; im = _cover(v)
+    k = sc["k"]; im = _cover(v, sc)
     if k in ("end", "text"):
         c = v.crop((0, 200, 1080, 1720)); s = LH/c.height; c = c.resize((int(c.width*s), LH), Image.LANCZOS)
         im.paste(c, ((LW-c.width)//2, 0)); return im
