@@ -10,3 +10,4 @@ S["TEST"]=[
  {"k":"bars","label":"Thử cột âm","cap":("CỘT","ÂM"),"cols":(WHITE,RED),"bars":[("2018",-9.3,RED,"−9,3"),("2021",35.7,GREEN,"+35,7")],"say":"Thử cột âm và dương."},
  {"k":"checklist","label":"Danh sách","cap":("BA","Ý"),"cols":(WHITE,GOLD),"items":[("Một",GOLD),("Hai",RED)],"say":"Thử danh sách."},
  {"k":"end","label":"","cap":("HẾT","THỬ"),"cols":(WHITE,GOLD),"say":"Hẹn gặp lại."}]
+# landscape 1920x1080
