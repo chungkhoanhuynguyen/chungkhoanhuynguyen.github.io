@@ -14960,5 +14960,836 @@
    "pb-la-gi"
   ],
   "add": []
+ },
+ {
+  "slug": "car-ngan-hang-la-gi",
+  "kw": "CAR ngân hàng là gì",
+  "grp": 3,
+  "title": "CAR ngân hàng là gì? Hệ số an toàn vốn cho người mới",
+  "desc": "CAR ngân hàng là gì, cách tính hệ số an toàn vốn, mức tối thiểu 8%, CAR ảnh hưởng tăng trưởng tín dụng, cổ tức và cổ đông ra sao. Giải thích dễ hiểu.",
+  "body": [
+   [
+    "p",
+    "<b>CAR</b> (Capital Adequacy Ratio – hệ số an toàn vốn) cho biết ngân hàng có bao nhiêu vốn của chính mình để \"đỡ\" cho các khoản cho vay và đầu tư có rủi ro. Đây là một trong những chỉ số quan trọng nhất khi đọc cổ phiếu ngân hàng, bên cạnh NIM, nợ xấu và bao phủ nợ xấu."
+   ],
+   [
+    "h2",
+    "1. Cách tính CAR"
+   ],
+   [
+    "p",
+    "CAR = Vốn tự có ÷ Tổng tài sản có rủi ro (đã nhân hệ số rủi ro). Vốn tự có gồm vốn cấp 1 (vốn điều lệ, lợi nhuận giữ lại, các quỹ) và vốn cấp 2 (một số khoản nợ thứ cấp, dự phòng chung…). Tài sản có rủi ro không phải tổng tài sản: mỗi loại tài sản được nhân một hệ số. Cho vay doanh nghiệp, cho vay bất động sản thường có hệ số cao; tiền mặt, trái phiếu chính phủ có hệ số thấp hoặc bằng 0."
+   ],
+   [
+    "p",
+    "Theo chuẩn Basel II mà Ngân hàng Nhà nước áp dụng, CAR tối thiểu là <b>8%</b>. Nghĩa là cứ 100 đồng tài sản có rủi ro, ngân hàng phải có ít nhất 8 đồng vốn tự có."
+   ],
+   [
+    "h2",
+    "2. Vì sao CAR quan trọng với nhà đầu tư?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Giới hạn tăng trưởng:</b> muốn cho vay thêm 1.000 tỷ đồng, ngân hàng cần thêm khoảng 80 tỷ vốn nếu CAR đang sát 8%. Ngân hàng CAR thấp khó tăng tín dụng nhanh.",
+     "<b>Ảnh hưởng cổ tức:</b> để giữ CAR, ngân hàng thường giữ lại lợi nhuận, chia cổ tức bằng cổ phiếu thay vì tiền mặt.",
+     "<b>Pha loãng:</b> CAR thấp kéo dài có thể phải phát hành thêm cổ phiếu, làm EPS bị pha loãng.",
+     "<b>Khả năng chịu sốc:</b> khi nợ xấu tăng, ngân hàng phải trích dự phòng và có thể ghi lỗ. Vốn dày giúp đi qua giai đoạn khó mà không phải gọi thêm vốn gấp."
+    ]
+   ],
+   [
+    "h2",
+    "3. CAR cao có phải luôn tốt?"
+   ],
+   [
+    "p",
+    "Không hẳn. CAR quá cao có thể nghĩa là vốn chưa được dùng hiệu quả, làm ROE thấp. Ngược lại, CAR sát ngưỡng với ROE cao có thể là ngân hàng đang dùng đòn bẩy tối đa. Nhà đầu tư nên đọc CAR cùng ROE, tốc độ tăng trưởng tín dụng và chất lượng tài sản."
+   ],
+   [
+    "h2",
+    "4. Đọc CAR ở đâu?"
+   ],
+   [
+    "p",
+    "CAR thường được công bố trong báo cáo thường niên, thuyết minh báo cáo tài chính (phần quản lý vốn) hoặc tài liệu đại hội cổ đông. Không phải ngân hàng nào cũng công bố CAR mỗi quý, nên khi so sánh cần dùng cùng kỳ số liệu."
+   ],
+   [
+    "h2",
+    "5. Liên hệ với các chỉ số khác"
+   ],
+   [
+    "ul",
+    [
+     "<b>CAR + nợ xấu:</b> nợ xấu cao mà CAR mỏng là tổ hợp rủi ro nhất.",
+     "<b>CAR + bao phủ nợ xấu:</b> bao phủ thấp thì lợi nhuận tương lai còn phải gánh dự phòng, ăn dần vào vốn.",
+     "<b>CAR + tăng trưởng tín dụng:</b> tín dụng tăng nhanh hơn lợi nhuận giữ lại thì CAR sẽ giảm dần."
+    ]
+   ],
+   [
+    "p",
+    "Người tích sản cổ phiếu ngân hàng giữ cổ phiếu nhiều năm nên ưu tiên ngân hàng có vốn đủ dày để tăng trưởng mà không phải liên tục phát hành thêm. Muốn xem số liệu thật về tích sản cổ phiếu ngân hàng qua nhiều năm: <a href=\"/bao-cao-2026.html#tichsan\">bảng tích sản</a>."
+   ],
+   [
+    "p",
+    "Nội dung mang tính giáo dục, không phải khuyến nghị mua bán. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "CAR tối thiểu của ngân hàng Việt Nam là bao nhiêu?",
+    "Theo chuẩn Basel II mà Ngân hàng Nhà nước áp dụng, CAR tối thiểu là 8%."
+   ],
+   [
+    "CAR thấp thì ngân hàng làm gì?",
+    "Giữ lại lợi nhuận, chia cổ tức bằng cổ phiếu, phát hành thêm cổ phiếu hoặc nợ thứ cấp, hoặc làm chậm tăng trưởng tín dụng."
+   ],
+   [
+    "CAR khác bao phủ nợ xấu thế nào?",
+    "CAR đo vốn so với tài sản rủi ro; bao phủ nợ xấu đo dự phòng đã trích so với nợ xấu. Hai chỉ số bổ sung cho nhau."
+   ]
+  ],
+  "rel": [
+   "bao-phu-no-xau-la-gi",
+   "no-xau-ngan-hang-la-gi",
+   "doc-bctc-ngan-hang",
+   "tang-truong-tin-dung-la-gi"
+  ],
+  "add": []
+ },
+ {
+  "slug": "dinh-gia-cong-ty-chung-khoan",
+  "kw": "định giá cổ phiếu công ty chứng khoán",
+  "grp": 3,
+  "title": "Định giá cổ phiếu công ty chứng khoán: P/B, ROE và chu kỳ",
+  "desc": "Cách định giá cổ phiếu công ty chứng khoán bằng P/B và ROE, vì sao P/E dễ đánh lừa, đọc margin và tự doanh. Có số liệu P/B, ROE tháng 11/2026.",
+  "body": [
+   [
+    "p",
+    "Cổ phiếu công ty chứng khoán (CTCK) thường tăng mạnh nhất khi thị trường sôi động và giảm nhanh nhất khi thanh khoản cạn. Vì lợi nhuận đi theo sóng thị trường, cách định giá nhóm này khác doanh nghiệp sản xuất."
+   ],
+   [
+    "h2",
+    "1. Vì sao dùng P/B nhiều hơn P/E?"
+   ],
+   [
+    "p",
+    "Tài sản của CTCK chủ yếu là tiền, cho vay margin và danh mục chứng khoán – đều gần với giá trị thị trường. Vì vậy giá trị sổ sách (BVPS) phản ánh khá sát giá trị thật. Trong khi đó lợi nhuận lên xuống mạnh theo năm: năm đỉnh P/E trông rất rẻ, năm đáy P/E lại rất cao. <b>P/B</b> ổn định hơn qua chu kỳ."
+   ],
+   [
+    "h2",
+    "2. P/B phải đi cùng ROE"
+   ],
+   [
+    "p",
+    "Công ty có ROE cao, đều qua nhiều năm xứng đáng P/B cao hơn. Số liệu tổng hợp ngày 2/11/2026 (P/B – ROE 4 quý gần nhất): TCX 1,93 – 13,8%; SSI 1,48 – 12,2%; VCI 1,26 – 8,5%; VND 0,94 – 9,9%; SHS 0,91 – 5,9%. Có thể thấy TCX và SSI được trả P/B cao hơn đi kèm ROE cao hơn; nhóm P/B dưới 1 thường có ROE thấp hơn hoặc lợi nhuận đang giảm."
+   ],
+   [
+    "p",
+    "Một quy tắc kinh nghiệm: so P/B với ROE <b>trung bình nhiều năm</b>, không phải ROE của một năm thị trường sôi động."
+   ],
+   [
+    "h2",
+    "3. Tách lợi nhuận theo mảng"
+   ],
+   [
+    "ul",
+    [
+     "<b>Phí giao dịch:</b> theo thanh khoản thị trường, cạnh tranh mạnh nên biên mỏng.",
+     "<b>Cho vay margin:</b> nguồn thu ổn định, tăng theo dư nợ; cần xem dư nợ so với vốn chủ.",
+     "<b>Tự doanh:</b> lãi lỗ theo giá chứng khoán, dao động mạnh nhất.",
+     "<b>Ngân hàng đầu tư:</b> tư vấn, bảo lãnh phát hành, phụ thuộc số thương vụ."
+    ]
+   ],
+   [
+    "p",
+    "Công ty có tỷ trọng margin và phí cao, tự doanh thấp thường có lợi nhuận đều hơn, được thị trường trả giá cao hơn. Công ty mà phần lớn lãi đến từ tự doanh cần được định giá thận trọng."
+   ],
+   [
+    "h2",
+    "4. Các bước định giá đơn giản"
+   ],
+   [
+    "ol",
+    [
+     "Lấy BVPS mới nhất trong BCTC.",
+     "Tính ROE trung bình 3–5 năm, xem ROE hiện tại đang ở đầu hay cuối chu kỳ.",
+     "So P/B với các CTCK cùng quy mô, cùng cơ cấu nguồn thu.",
+     "Kiểm tra có kế hoạch tăng vốn (phát hành thêm) không – tăng vốn làm BVPS và EPS thay đổi."
+    ]
+   ],
+   [
+    "h2",
+    "5. Bẫy thường gặp"
+   ],
+   [
+    "ul",
+    [
+     "Mua khi lợi nhuận kỷ lục, P/E thấp – thường là gần đỉnh chu kỳ.",
+     "Bỏ qua lãi đánh giá lại tự doanh chưa thực hiện.",
+     "Không để ý pha loãng từ các đợt phát hành liên tục."
+    ]
+   ],
+   [
+    "h2",
+    "6. Ví dụ đọc nhanh"
+   ],
+   [
+    "p",
+    "Giả sử hai công ty chứng khoán cùng P/B 1,5. Công ty A có ROE trung bình 5 năm 15%, lợi nhuận chủ yếu từ margin và phí. Công ty B có ROE trung bình 8%, năm nay ROE vọt lên 18% nhờ tự doanh. Cùng một mức P/B, A đáng tin hơn vì nguồn lãi bền; B có thể đang ở đỉnh chu kỳ."
+   ],
+   [
+    "p",
+    "Nội dung mang tính giáo dục, không phải khuyến nghị mua bán. Số liệu: dữ liệu tổng hợp ngày 2/11/2026. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Định giá công ty chứng khoán nên dùng P/E hay P/B?",
+    "Ưu tiên P/B kết hợp ROE trung bình nhiều năm, vì lợi nhuận CTCK dao động mạnh theo chu kỳ thị trường."
+   ],
+   [
+    "P/B dưới 1 có phải rẻ?",
+    "Chưa chắc. P/B thấp thường đi kèm ROE thấp hoặc lợi nhuận đang giảm; cần xem lý do."
+   ],
+   [
+    "Mảng nào của công ty chứng khoán ổn định nhất?",
+    "Thường là cho vay margin, vì thu lãi theo dư nợ; tự doanh là mảng biến động nhất."
+   ]
+  ],
+  "rel": [
+   "doc-bctc-cong-ty-chung-khoan",
+   "pb-la-gi",
+   "roe-eps-la-gi",
+   "co-phieu-chu-ky-la-gi"
+  ],
+  "add": []
+ },
+ {
+  "slug": "vn-index-tang-giam-vi-sao",
+  "kw": "vì sao VN-Index tăng giảm",
+  "grp": 1,
+  "title": "Vì sao VN-Index tăng giảm? 6 nguyên nhân người mới cần biết",
+  "desc": "Vì sao VN-Index tăng giảm mỗi phiên: vốn hóa lớn, lãi suất, tỷ giá, khối ngoại, lợi nhuận doanh nghiệp và tâm lý. Giải thích dễ hiểu cho người mới.",
+  "body": [
+   [
+    "p",
+    "VN-Index là chỉ số đại diện cho toàn bộ cổ phiếu trên sàn HOSE, tính theo <b>vốn hóa</b>. Mỗi ngày chỉ số xanh hay đỏ là kết quả cộng dồn của hàng trăm mã, nhưng không phải mã nào cũng có sức nặng như nhau."
+   ],
+   [
+    "h2",
+    "1. Cổ phiếu vốn hóa lớn kéo chỉ số"
+   ],
+   [
+    "p",
+    "Vì tính theo vốn hóa, vài chục mã lớn quyết định phần lớn biến động. Theo dữ liệu tổng hợp ngày 2/11/2026, riêng nhóm ngân hàng lớn đã có vốn hóa hàng trăm nghìn tỷ mỗi mã: VCB khoảng 470 nghìn tỷ, BID khoảng 260 nghìn tỷ, CTG, TCB, VPB mỗi mã khoảng 230 nghìn tỷ. Vì vậy có phiên VN-Index tăng mà đa số cổ phiếu trong danh mục của bạn lại giảm."
+   ],
+   [
+    "h2",
+    "2. Lợi nhuận doanh nghiệp"
+   ],
+   [
+    "p",
+    "Về dài hạn, chỉ số đi theo lợi nhuận của các doanh nghiệp niêm yết. Mùa báo cáo tài chính, lợi nhuận tăng tốt giúp thị trường có nền; lợi nhuận đi lùi làm giá khó giữ."
+   ],
+   [
+    "h2",
+    "3. Lãi suất"
+   ],
+   [
+    "p",
+    "Lãi suất tiết kiệm và lãi vay tăng làm cổ phiếu kém hấp dẫn hơn so với gửi tiền, đồng thời tăng chi phí cho doanh nghiệp và người dùng margin. Lãi suất giảm thường có tác động ngược lại."
+   ],
+   [
+    "h2",
+    "4. Tỷ giá và khối ngoại"
+   ],
+   [
+    "p",
+    "Khi đồng USD mạnh lên, nhà đầu tư nước ngoài có xu hướng rút vốn khỏi các thị trường mới nổi, bán ròng cổ phiếu vốn hóa lớn. Khối ngoại bán ròng liên tục thường gây áp lực lên chỉ số."
+   ],
+   [
+    "h2",
+    "5. Dòng tiền và margin"
+   ],
+   [
+    "p",
+    "Thanh khoản tăng, dư nợ margin tăng giúp thị trường đi lên nhanh. Ngược lại khi giá giảm mạnh, bán giải chấp (call margin) làm đà giảm mạnh thêm."
+   ],
+   [
+    "h2",
+    "6. Tâm lý và tin tức"
+   ],
+   [
+    "p",
+    "Tin vĩ mô, chính sách, sự kiện thế giới tác động mạnh trong ngắn hạn. Tâm lý đám đông (FOMO khi tăng, hoảng loạn khi giảm) thường khuếch đại biến động hơn mức cơ bản."
+   ],
+   [
+    "h2",
+    "Người mới nên làm gì?"
+   ],
+   [
+    "ul",
+    [
+     "Đừng đánh giá danh mục chỉ bằng màu của VN-Index – hãy xem cổ phiếu của mình và ngành của nó.",
+     "Theo dõi độ rộng thị trường (số mã tăng/giảm) để biết chỉ số được kéo bởi vài mã hay cả thị trường.",
+     "Ưu tiên lợi nhuận doanh nghiệp hơn là đoán chỉ số ngày mai."
+    ]
+   ],
+   [
+    "h2",
+    "Đọc VN-Index cùng độ rộng thị trường"
+   ],
+   [
+    "p",
+    "Một phiên VN-Index tăng 10 điểm nhưng số mã giảm nhiều hơn số mã tăng thường là phiên \"xanh vỏ đỏ lòng\" – vài trụ kéo chỉ số. Ngược lại, phiên chỉ số đi ngang mà đa số cổ phiếu tăng cho thấy dòng tiền lan tỏa. Thói quen xem cả số mã tăng/giảm, khối lượng và nhóm ngành dẫn dắt sẽ giúp người mới hiểu thị trường sát hơn so với chỉ nhìn một con số."
+   ],
+   [
+    "p",
+    "Ngoài ra, nên nhớ VN-Index không tính cổ tức tiền mặt: doanh nghiệp chia cổ tức thì giá điều chỉnh giảm tương ứng, chỉ số cũng giảm theo, dù nhà đầu tư không mất tiền."
+   ],
+   [
+    "p",
+    "Nội dung mang tính giáo dục, không phải khuyến nghị mua bán. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Vì sao VN-Index tăng mà cổ phiếu của tôi giảm?",
+    "Vì chỉ số tính theo vốn hóa, vài mã lớn tăng có thể kéo cả chỉ số dù đa số mã giảm."
+   ],
+   [
+    "Yếu tố nào ảnh hưởng VN-Index lâu dài nhất?",
+    "Lợi nhuận của các doanh nghiệp niêm yết; lãi suất và dòng tiền tác động mạnh ở ngắn và trung hạn."
+   ],
+   [
+    "Khối ngoại bán ròng có làm VN-Index giảm không?",
+    "Thường gây áp lực, nhất là lên cổ phiếu vốn hóa lớn, nhưng không phải lúc nào cũng quyết định xu hướng."
+   ]
+  ],
+  "rel": [
+   "vn-index-la-gi",
+   "vn30-la-gi",
+   "khoi-ngoai-mua-rong-ban-rong-la-gi",
+   "lai-suat-tang-anh-huong-chung-khoan"
+  ],
+  "add": []
+ },
+ {
+  "slug": "giao-dich-thoa-thuan-la-gi",
+  "kw": "giao dịch thỏa thuận là gì",
+  "grp": 2,
+  "title": "Giao dịch thỏa thuận là gì? Đọc lệnh thỏa thuận thế nào",
+  "desc": "Giao dịch thỏa thuận là gì, khác khớp lệnh ra sao, vì sao có thỏa thuận giá thấp hoặc cao bất thường và người mới nên đọc thông tin này thế nào.",
+  "body": [
+   [
+    "p",
+    "Trên bảng giá, ngoài khối lượng khớp lệnh còn có mục <b>giao dịch thỏa thuận</b>. Có phiên một mã khớp lệnh vài trăm nghìn cổ phiếu nhưng thỏa thuận cả chục triệu cổ phiếu. Vậy thỏa thuận là gì?"
+   ],
+   [
+    "h2",
+    "1. Khái niệm"
+   ],
+   [
+    "p",
+    "Giao dịch thỏa thuận là việc bên mua và bên bán tự thương lượng trước về <b>giá và khối lượng</b>, sau đó thực hiện qua hệ thống của sở giao dịch. Giao dịch không đi qua sổ lệnh khớp tự động như lệnh LO, ATO, ATC."
+   ],
+   [
+    "h2",
+    "2. Khác khớp lệnh thế nào?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Khớp lệnh:</b> mọi nhà đầu tư đặt lệnh, hệ thống ghép theo giá và thời gian.",
+     "<b>Thỏa thuận:</b> hai bên đã biết nhau, thường là lô lớn giữa tổ chức, quỹ, cổ đông lớn.",
+     "Giá thỏa thuận vẫn phải nằm trong biên độ trần – sàn của phiên.",
+     "Khối lượng thỏa thuận không làm thay đổi giá khớp trên bảng giá."
+    ]
+   ],
+   [
+    "h2",
+    "3. Ai thường giao dịch thỏa thuận?"
+   ],
+   [
+    "ul",
+    [
+     "Quỹ đầu tư, công ty chứng khoán chuyển nhượng lô lớn.",
+     "Cổ đông lớn, cổ đông nội bộ mua bán (có công bố thông tin).",
+     "Nhà đầu tư nước ngoài sang tay khi mã đã hết room ngoại.",
+     "Giao dịch cơ cấu nội bộ giữa các công ty trong cùng tập đoàn."
+    ]
+   ],
+   [
+    "h2",
+    "4. Đọc thông tin thỏa thuận"
+   ],
+   [
+    "p",
+    "Thỏa thuận không phải tín hiệu mua bán. Tuy vậy, một số điểm đáng chú ý:"
+   ],
+   [
+    "ul",
+    [
+     "Giá thỏa thuận <b>sát giá sàn</b> với khối lượng lớn: bên bán chấp nhận giá thấp, có thể vì cần tiền hoặc giải chấp.",
+     "Thỏa thuận lớn trùng thời điểm cổ đông lớn đăng ký bán: tra công bố thông tin để biết ai bán, ai mua.",
+     "Khối ngoại thỏa thuận lớn làm số liệu \"mua ròng/bán ròng\" của khối ngoại bị lệch – nên tách riêng khớp lệnh và thỏa thuận."
+    ]
+   ],
+   [
+    "h2",
+    "5. Nhà đầu tư cá nhân có thỏa thuận được không?"
+   ],
+   [
+    "p",
+    "Có, nếu tự tìm được đối tác và thông qua công ty chứng khoán đặt lệnh thỏa thuận. Thực tế người mới hiếm khi cần; điều quan trọng hơn là biết đọc số liệu thỏa thuận để không hiểu nhầm thanh khoản thật của một mã."
+   ],
+   [
+    "h2",
+    "6. Ví dụ đọc bảng giá"
+   ],
+   [
+    "p",
+    "Một mã ngân hàng phiên hôm nay khớp lệnh 5 triệu cổ phiếu, giá đóng cửa tăng 1%. Cùng phiên có 20 triệu cổ phiếu thỏa thuận ở giá thấp hơn 3%. Thanh khoản \"tổng\" là 25 triệu, nhưng thanh khoản thật mà nhà đầu tư nhỏ lẻ tham gia chỉ là 5 triệu. Khi tính khối lượng trung bình để đánh giá độ dễ mua bán, nên dùng khối lượng khớp lệnh."
+   ],
+   [
+    "p",
+    "Nếu muốn biết bên mua, bên bán là ai, hãy xem các báo cáo kết quả giao dịch của cổ đông lớn, người nội bộ được công bố trong vài ngày sau đó."
+   ],
+   [
+    "p",
+    "Nội dung mang tính giáo dục, không phải khuyến nghị mua bán. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Giao dịch thỏa thuận có ảnh hưởng giá cổ phiếu không?",
+    "Không làm thay đổi giá khớp trên bảng giá, nhưng thông tin về giá và người bán có thể ảnh hưởng tâm lý."
+   ],
+   [
+    "Giá thỏa thuận có được vượt trần sàn không?",
+    "Không, giá thỏa thuận phải nằm trong biên độ dao động của phiên."
+   ],
+   [
+    "Vì sao khối ngoại mua ròng đột biến một phiên?",
+    "Thường do một giao dịch thỏa thuận lô lớn; nên xem riêng phần khớp lệnh."
+   ]
+  ],
+  "rel": [
+   "khoi-ngoai-mua-rong-ban-rong-la-gi",
+   "cac-loai-lenh-chung-khoan",
+   "giao-dich-noi-bo-la-gi",
+   "room-ngoai-la-gi"
+  ],
+  "add": []
+ },
+ {
+  "slug": "von-luu-dong-la-gi",
+  "kw": "vốn lưu động là gì",
+  "grp": 3,
+  "title": "Vốn lưu động là gì? Cách đọc vốn lưu động trên BCTC",
+  "desc": "Vốn lưu động là gì, công thức tài sản ngắn hạn trừ nợ ngắn hạn, vốn lưu động âm có xấu không, và liên hệ hàng tồn kho, phải thu. Ví dụ dễ hiểu.",
+  "body": [
+   [
+    "p",
+    "<b>Vốn lưu động</b> (working capital) là số tiền doanh nghiệp cần để vận hành hằng ngày: mua nguyên liệu, giữ hàng tồn kho, chờ khách hàng trả tiền. Đây là chỉ số giúp trả lời câu hỏi: công ty có đủ \"tiền chạy\" trong ngắn hạn không?"
+   ],
+   [
+    "h2",
+    "1. Công thức"
+   ],
+   [
+    "p",
+    "Vốn lưu động = <b>Tài sản ngắn hạn − Nợ ngắn hạn</b>. Hai số này nằm ngay trên bảng cân đối kế toán. Tài sản ngắn hạn gồm tiền, đầu tư ngắn hạn, phải thu, hàng tồn kho; nợ ngắn hạn gồm vay ngắn hạn, phải trả người bán, người mua trả tiền trước…"
+   ],
+   [
+    "h2",
+    "2. Ví dụ giả định"
+   ],
+   [
+    "p",
+    "Một cửa hàng điện máy có tài sản ngắn hạn 500 tỷ (tiền 50, phải thu 100, tồn kho 350) và nợ ngắn hạn 400 tỷ. Vốn lưu động = 100 tỷ. Nếu năm sau tồn kho tăng lên 500 tỷ mà doanh thu không tăng, vốn lưu động phình ra – tiền bị \"chôn\" trong hàng hóa."
+   ],
+   [
+    "h2",
+    "3. Vốn lưu động âm có xấu không?"
+   ],
+   [
+    "p",
+    "Không phải lúc nào cũng xấu. Chuỗi bán lẻ thu tiền mặt ngay nhưng trả nhà cung cấp sau 30–60 ngày có thể có vốn lưu động âm mà vẫn khỏe – họ dùng tiền của nhà cung cấp để vận hành. Ngược lại, doanh nghiệp sản xuất vốn lưu động âm vì vay ngắn hạn quá nhiều để đầu tư dài hạn là dấu hiệu rủi ro thanh khoản."
+   ],
+   [
+    "h2",
+    "4. Thay đổi vốn lưu động và dòng tiền"
+   ],
+   [
+    "p",
+    "Khi vốn lưu động tăng (tồn kho, phải thu tăng), dòng tiền kinh doanh bị kéo xuống dù lợi nhuận vẫn có. Đó là lý do có doanh nghiệp \"lãi mà không có tiền\". Đọc báo cáo lưu chuyển tiền tệ sẽ thấy các dòng tăng/giảm phải thu, tồn kho, phải trả."
+   ],
+   [
+    "h2",
+    "5. Chỉ số liên quan"
+   ],
+   [
+    "ul",
+    [
+     "<b>Hệ số thanh toán hiện hành</b> = tài sản ngắn hạn ÷ nợ ngắn hạn (trên 1 là có đệm).",
+     "<b>Kỳ thu tiền bình quân</b>: bao nhiêu ngày khách hàng trả tiền.",
+     "<b>Vòng quay hàng tồn kho</b>: hàng bán nhanh hay chậm.",
+     "<b>Chu kỳ tiền mặt</b> = ngày tồn kho + ngày thu tiền − ngày trả nhà cung cấp."
+    ]
+   ],
+   [
+    "h2",
+    "6. Lưu ý khi đọc"
+   ],
+   [
+    "ul",
+    [
+     "So với doanh thu: vốn lưu động tăng nhanh hơn doanh thu là dấu hiệu cần kiểm tra.",
+     "So cùng ngành: mỗi ngành có cấu trúc vốn lưu động khác nhau.",
+     "Ngân hàng, công ty chứng khoán không phân tích vốn lưu động theo cách này."
+    ]
+   ],
+   [
+    "h2",
+    "7. Áp dụng khi chọn cổ phiếu"
+   ],
+   [
+    "p",
+    "Khi so hai doanh nghiệp cùng ngành, doanh nghiệp cần ít vốn lưu động hơn cho mỗi đồng doanh thu thường tạo ra dòng tiền tốt hơn, ít phải đi vay ngắn hạn. Hãy theo dõi tỷ lệ vốn lưu động trên doanh thu qua vài năm: tăng đều là dấu hiệu tiền bị giữ lại nhiều hơn trong hàng hóa và công nợ."
+   ],
+   [
+    "p",
+    "Nội dung mang tính giáo dục, không phải khuyến nghị mua bán. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Vốn lưu động âm có nghĩa công ty sắp phá sản?",
+    "Không nhất thiết. Bán lẻ thu tiền ngay, trả nhà cung cấp sau có thể vốn lưu động âm mà vẫn khỏe."
+   ],
+   [
+    "Vốn lưu động tăng có tốt không?",
+    "Tùy nguyên nhân. Tăng do tồn kho, phải thu phình ra mà doanh thu không tăng là dấu hiệu xấu."
+   ],
+   [
+    "Xem vốn lưu động ở đâu?",
+    "Lấy tài sản ngắn hạn trừ nợ ngắn hạn trên bảng cân đối kế toán."
+   ]
+  ],
+  "rel": [
+   "bang-can-doi-ke-toan-la-gi",
+   "hang-ton-kho-la-gi",
+   "ky-thu-tien-binh-quan",
+   "bao-cao-luu-chuyen-tien-te-la-gi"
+  ],
+  "add": []
+ },
+ {
+  "slug": "bien-an-toan-la-gi",
+  "kw": "biên an toàn là gì",
+  "grp": 3,
+  "title": "Biên an toàn là gì? Mua cổ phiếu có khoảng đệm sai số",
+  "desc": "Biên an toàn (margin of safety) là gì, cách tính chênh lệch giữa giá trị nội tại và giá thị trường, bao nhiêu là đủ, ví dụ dễ hiểu cho người mới.",
+  "body": [
+   [
+    "p",
+    "<b>Biên an toàn</b> (margin of safety) là khoảng chênh giữa giá trị bạn ước tính cho một cổ phiếu và giá bạn trả. Khái niệm này do Benjamin Graham – thầy của Warren Buffett – phổ biến, và là nền tảng của đầu tư giá trị."
+   ],
+   [
+    "h2",
+    "1. Vì sao cần biên an toàn?"
+   ],
+   [
+    "p",
+    "Mọi phép định giá đều dựa trên giả định: lợi nhuận tương lai, tốc độ tăng trưởng, lãi suất. Giả định có thể sai. Mua với giá thấp hơn đáng kể so với giá trị ước tính giúp bạn vẫn không lỗ nặng dù ước tính sai một phần."
+   ],
+   [
+    "h2",
+    "2. Cách tính"
+   ],
+   [
+    "p",
+    "Biên an toàn = (Giá trị nội tại ước tính − Giá thị trường) ÷ Giá trị nội tại ước tính."
+   ],
+   [
+    "p",
+    "Ví dụ giả định: bạn ước tính cổ phiếu X đáng giá 50.000 đồng. Giá trên sàn 35.000 đồng. Biên an toàn = (50.000 − 35.000) ÷ 50.000 = 30%. Nếu thực tế giá trị chỉ 42.000 đồng (ước tính sai 16%), bạn vẫn đang mua rẻ hơn giá trị."
+   ],
+   [
+    "h2",
+    "3. Bao nhiêu là đủ?"
+   ],
+   [
+    "ul",
+    [
+     "Doanh nghiệp ổn định, lợi nhuận dễ dự báo: biên an toàn 15–25% có thể chấp nhận.",
+     "Doanh nghiệp chu kỳ, tăng trưởng nhanh, nhiều nợ: cần biên lớn hơn, 30–50%.",
+     "Không có con số cố định – càng ít chắc chắn, càng cần đệm dày."
+    ]
+   ],
+   [
+    "h2",
+    "4. Biên an toàn không chỉ là giá"
+   ],
+   [
+    "ul",
+    [
+     "<b>Bảng cân đối khỏe:</b> ít nợ vay giúp doanh nghiệp sống sót qua giai đoạn khó.",
+     "<b>Lợi thế cạnh tranh:</b> giúp lợi nhuận bền hơn so với ước tính.",
+     "<b>Quản trị vốn của chính bạn:</b> không dùng margin cao, không dồn hết vào một mã – đó cũng là một lớp an toàn."
+    ]
+   ],
+   [
+    "h2",
+    "5. Sai lầm thường gặp"
+   ],
+   [
+    "ul",
+    [
+     "Nâng giả định cho đẹp để \"thấy\" biên an toàn lớn.",
+     "Nhầm giá giảm mạnh là có biên an toàn – giá giảm có thể vì giá trị thật cũng giảm.",
+     "Chỉ nhìn P/E thấp ở ngành chu kỳ khi lợi nhuận đang ở đỉnh."
+    ]
+   ],
+   [
+    "h2",
+    "6. Ví dụ với hai kịch bản"
+   ],
+   [
+    "p",
+    "Bạn ước tính doanh nghiệp B có giá trị 40.000 đồng/cổ phiếu. Nếu mua ở 38.000 đồng, biên an toàn chỉ 5%: chỉ cần lợi nhuận năm sau thấp hơn kỳ vọng 10%, giá trị thật đã dưới giá mua. Nếu kiên nhẫn chờ mua ở 28.000 đồng, biên an toàn 30%: kể cả lợi nhuận giảm 20%, bạn vẫn mua thấp hơn giá trị. Sự khác biệt nằm ở sự kiên nhẫn chờ giá, không phải ở việc dự báo giỏi hơn."
+   ],
+   [
+    "p",
+    "Graham ví biên an toàn như tải trọng thiết kế của cây cầu: cầu chịu được 30 tấn nhưng chỉ cho xe 10 tấn đi qua."
+   ],
+   [
+    "h2",
+    "7. Áp dụng thực tế"
+   ],
+   [
+    "p",
+    "Trước khi mua, hãy viết ra: giá trị ước tính, giả định chính, và giá mua tối đa (đã trừ biên an toàn). Kỷ luật chờ giá về vùng đó quan trọng hơn việc đoán đúng từng phiên. Nội dung mang tính giáo dục, không phải khuyến nghị mua bán. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Biên an toàn bao nhiêu phần trăm là hợp lý?",
+    "Không cố định; doanh nghiệp ổn định có thể 15–25%, doanh nghiệp chu kỳ hoặc nhiều rủi ro cần 30–50%."
+   ],
+   [
+    "Giá giảm mạnh có nghĩa là có biên an toàn?",
+    "Không. Phải so với giá trị nội tại; giá trị thật cũng có thể giảm theo."
+   ],
+   [
+    "Biên an toàn có áp dụng cho tích sản không?",
+    "Có. Chọn doanh nghiệp khỏe, mua đều và không dùng nợ vay là các lớp an toàn bổ sung."
+   ]
+  ],
+  "rel": [
+   "dcf-la-gi",
+   "pe-la-gi",
+   "loi-the-canh-tranh-moat",
+   "co-phieu-tang-truong-va-co-phieu-gia-tri"
+  ],
+  "add": []
+ },
+ {
+  "slug": "tich-san-sau-nghi-huu",
+  "kw": "tích sản sau nghỉ hưu",
+  "grp": 7,
+  "title": "Tích sản sau nghỉ hưu: giữ tiền đều, giảm rủi ro thế nào?",
+  "desc": "Tích sản sau nghỉ hưu khác lúc còn đi làm ra sao: ưu tiên dòng tiền, tỷ trọng tiền mặt, cổ tức, không dùng margin. Có số liệu thật về mức sụt giảm quá khứ.",
+  "body": [
+   [
+    "p",
+    "Khi còn đi làm, tích sản là góp đều mỗi tháng và chờ lãi kép. Khi nghỉ hưu, bài toán đổi chiều: không còn thu nhập lương để góp thêm, mà cần <b>rút ra</b> để chi tiêu. Phương pháp vì thế cũng phải điều chỉnh."
+   ],
+   [
+    "h2",
+    "1. Rủi ro lớn nhất: bán đúng lúc thị trường giảm"
+   ],
+   [
+    "p",
+    "Số liệu thật của một tài khoản tích sản cổ phiếu ngân hàng từ 01/2018 cho thấy: cả giai đoạn tăng 731,1%, nhưng có lúc sụt sâu nhất <b>−42,5%</b>, và có 3 năm lỗ (2018 −11,2%, 2019 −13,6%, 2022 −17,2%). Người còn đi làm có thể chờ qua những năm này. Người nghỉ hưu nếu phải bán cổ phiếu để chi tiêu đúng năm giảm sẽ biến khoản lỗ tạm thời thành lỗ thật."
+   ],
+   [
+    "h2",
+    "2. Nguyên tắc chia ba ngăn"
+   ],
+   [
+    "ul",
+    [
+     "<b>Ngăn chi tiêu (1–2 năm):</b> tiền gửi tiết kiệm, đủ chi tiêu cơ bản, không phụ thuộc thị trường.",
+     "<b>Ngăn đệm (3–5 năm):</b> tài sản ít biến động hơn như tiền gửi kỳ hạn dài, trái phiếu chính phủ, chứng chỉ quỹ trái phiếu.",
+     "<b>Ngăn tăng trưởng:</b> cổ phiếu doanh nghiệp khỏe, giữ dài hạn; chỉ bán khi thị trường thuận lợi để bổ sung cho hai ngăn trên."
+    ]
+   ],
+   [
+    "h2",
+    "3. Ưu tiên dòng tiền hơn tăng giá"
+   ],
+   [
+    "p",
+    "Doanh nghiệp có lợi nhuận đều nhiều năm và chính sách chia cổ tức tiền mặt ổn định phù hợp hơn với người nghỉ hưu. Cổ tức là dòng tiền không cần bán cổ phiếu. Lưu ý cổ tức tiền mặt bị khấu trừ thuế thu nhập cá nhân 5%."
+   ],
+   [
+    "h2",
+    "4. Những điều nên tránh"
+   ],
+   [
+    "ul",
+    [
+     "<b>Margin:</b> sụt giảm 40% với đòn bẩy có thể xóa sạch tài khoản – không còn thời gian để gỡ.",
+     "<b>Dồn vào một mã:</b> một sự cố doanh nghiệp có thể ảnh hưởng cả kế hoạch hưu trí.",
+     "<b>Lướt sóng để \"kiếm thêm\":</b> chi phí và rủi ro cao, áp lực tâm lý lớn."
+    ]
+   ],
+   [
+    "h2",
+    "5. Lập kế hoạch rút tiền"
+   ],
+   [
+    "p",
+    "Ví dụ giả định: cần 10 triệu/tháng (120 triệu/năm). Nếu danh mục 3 tỷ, mức rút là 4%/năm. Mức rút thấp giúp tài sản có cơ hội tiếp tục tăng; rút trên 6–7%/năm trong khi danh mục chủ yếu là cổ phiếu làm rủi ro cạn tiền tăng mạnh nếu gặp vài năm giảm liên tiếp."
+   ],
+   [
+    "h2",
+    "6. Thông điệp không đổi"
+   ],
+   [
+    "p",
+    "Dù ở giai đoạn nào, phương pháp không sợ sai, chỉ sợ theo giữa chừng rồi đổi ý. Sau nghỉ hưu, kỷ luật thể hiện ở việc giữ đủ ngăn tiền mặt để không bao giờ phải bán cổ phiếu lúc hoảng loạn. Muốn xem số liệu thật về tích sản cổ phiếu ngân hàng qua nhiều năm: <a href=\"/bao-cao-2026.html#tichsan\">bảng tích sản</a>."
+   ],
+   [
+    "p",
+    "Kết quả quá khứ, không phải cam kết lợi nhuận. Nội dung mang tính giáo dục, không phải khuyến nghị mua bán. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Người nghỉ hưu có nên tích sản cổ phiếu?",
+    "Có thể, nhưng cần giữ đủ tiền chi tiêu 1–2 năm bên ngoài thị trường và không dùng margin."
+   ],
+   [
+    "Mỗi năm nên rút bao nhiêu phần trăm danh mục?",
+    "Mức thận trọng thường quanh 4%/năm; rút càng cao, rủi ro cạn tiền khi thị trường giảm càng lớn."
+   ],
+   [
+    "Cổ tức tiền mặt bị đánh thuế bao nhiêu?",
+    "Cá nhân bị khấu trừ thuế thu nhập 5% trên cổ tức tiền mặt."
+   ]
+  ],
+  "rel": [
+   "tich-san-chung-khoan-la-gi",
+   "rui-ro-khi-tich-san",
+   "co-phieu-ngan-hang-co-tuc-cao",
+   "cach-phan-bo-ty-trong-co-phieu"
+  ],
+  "add": []
+ },
+ {
+  "slug": "trai-phieu-chinh-phu-la-gi",
+  "kw": "trái phiếu chính phủ là gì",
+  "grp": 6,
+  "title": "Trái phiếu chính phủ là gì? Vì sao ảnh hưởng chứng khoán",
+  "desc": "Trái phiếu chính phủ là gì, khác trái phiếu doanh nghiệp thế nào, lợi suất trái phiếu chính phủ ảnh hưởng lãi suất, định giá cổ phiếu và ngân hàng ra sao.",
+  "body": [
+   [
+    "p",
+    "<b>Trái phiếu chính phủ</b> là giấy nợ do Nhà nước (Bộ Tài chính, qua Kho bạc Nhà nước) phát hành để huy động vốn cho ngân sách và đầu tư công. Người mua trái phiếu cho Nhà nước vay tiền và nhận lãi định kỳ, cuối kỳ nhận lại gốc."
+   ],
+   [
+    "h2",
+    "1. Đặc điểm chính"
+   ],
+   [
+    "ul",
+    [
+     "<b>Rủi ro tín dụng thấp nhất</b> trong nước vì được đảm bảo bằng ngân sách nhà nước.",
+     "Kỳ hạn phổ biến: 5, 10, 15, 20, 30 năm.",
+     "Người mua chủ yếu là ngân hàng, công ty bảo hiểm, quỹ đầu tư; cá nhân chủ yếu tiếp cận gián tiếp qua quỹ trái phiếu.",
+     "Có thị trường giao dịch thứ cấp trên Sở Giao dịch Chứng khoán Hà Nội (HNX)."
+    ]
+   ],
+   [
+    "h2",
+    "2. Khác trái phiếu doanh nghiệp thế nào?"
+   ],
+   [
+    "p",
+    "Trái phiếu doanh nghiệp trả lãi cao hơn vì rủi ro doanh nghiệp không trả được nợ cao hơn. Trái phiếu chính phủ lãi thấp hơn nhưng gần như không có rủi ro vỡ nợ. Bài học từ các vụ trái phiếu doanh nghiệp vỡ nợ: lãi cao luôn đi kèm rủi ro cao."
+   ],
+   [
+    "h2",
+    "3. Lợi suất trái phiếu chính phủ – \"lãi suất phi rủi ro\""
+   ],
+   [
+    "p",
+    "Lợi suất trái phiếu chính phủ 10 năm thường được dùng làm lãi suất phi rủi ro khi định giá cổ phiếu (mô hình DCF). Khi lợi suất này tăng:"
+   ],
+   [
+    "ul",
+    [
+     "Tỷ lệ chiết khấu tăng, giá trị nội tại tính ra của cổ phiếu giảm.",
+     "Tiền có xu hướng chuyển sang kênh an toàn hơn, cổ phiếu kém hấp dẫn tương đối.",
+     "Ngân hàng nắm nhiều trái phiếu có thể ghi nhận lỗ đánh giá lại."
+    ]
+   ],
+   [
+    "p",
+    "Khi lợi suất giảm, tác động thường ngược lại."
+   ],
+   [
+    "h2",
+    "4. Liên hệ với cổ phiếu ngân hàng"
+   ],
+   [
+    "p",
+    "Ngân hàng là người nắm giữ trái phiếu chính phủ lớn nhất. Trái phiếu chính phủ có hệ số rủi ro thấp khi tính CAR, giúp ngân hàng giữ thanh khoản mà không tốn nhiều vốn. Lãi từ mua bán trái phiếu cũng là một dòng thu nhập ngoài lãi của ngân hàng."
+   ],
+   [
+    "h2",
+    "5. Cá nhân có nên mua?"
+   ],
+   [
+    "p",
+    "Với người cần sự an toàn, đặc biệt người sắp nghỉ hưu, phần tài sản đệm có thể nằm ở quỹ trái phiếu hoặc tiền gửi. Cổ phiếu phù hợp cho phần tiền dài hạn, chấp nhận biến động. Cân bằng hai loại tùy tuổi, mục tiêu và khả năng chịu rủi ro."
+   ],
+   [
+    "h2",
+    "6. Ví dụ giá trái phiếu khi lãi suất đổi"
+   ],
+   [
+    "p",
+    "Giả sử một trái phiếu mệnh giá 100.000 đồng, lãi 3%/năm, còn 10 năm. Nếu lãi suất thị trường tăng lên 4%, người mua mới chỉ chấp nhận trả thấp hơn 100.000 đồng để có lợi suất tương đương – giá trái phiếu giảm khoảng 8%. Giữ đến đáo hạn thì vẫn nhận đủ gốc và lãi; chỉ người bán trước hạn mới chịu khoản lỗ giá này."
+   ],
+   [
+    "p",
+    "Nội dung mang tính giáo dục, không phải khuyến nghị mua bán. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Trái phiếu chính phủ có rủi ro không?",
+    "Rủi ro vỡ nợ rất thấp, nhưng giá trái phiếu vẫn biến động khi lãi suất thay đổi nếu bán trước hạn."
+   ],
+   [
+    "Cá nhân mua trái phiếu chính phủ thế nào?",
+    "Chủ yếu gián tiếp qua quỹ trái phiếu; giao dịch trực tiếp trên HNX thường là nhà đầu tư tổ chức."
+   ],
+   [
+    "Lợi suất trái phiếu chính phủ tăng thì chứng khoán thế nào?",
+    "Thường gây áp lực vì làm tăng tỷ lệ chiết khấu và khiến kênh an toàn hấp dẫn hơn."
+   ]
+  ],
+  "rel": [
+   "trai-phieu-la-gi",
+   "trai-phieu-doanh-nghiep-rui-ro",
+   "lai-suat-tang-anh-huong-chung-khoan",
+   "dcf-la-gi"
+  ],
+  "add": []
  }
 ]
