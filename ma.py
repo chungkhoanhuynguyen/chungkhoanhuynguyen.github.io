@@ -150,7 +150,8 @@ for s in SYMS:
         if k.get("good"): P.append("<h3>Điểm cộng</h3><ul>" + "".join(f"<li>{e(i)}</li>" for i in k["good"]) + "</ul>")
         if k.get("bad"): P.append("<h3>Điểm cần lưu ý</h3><ul>" + "".join(f"<li>{e(i)}</li>" for i in k["bad"]) + "</ul>")
     if os.path.exists(os.path.join(ROOT, "data/bctc/%s.bin" % s)):
-        P.append(f'<h2>Báo cáo tài chính {e(s)}: cân đối kế toán, kết quả kinh doanh, lưu chuyển tiền tệ, chỉ số tài chính</h2><div id="bctc" data-ma="{e(s)}"><p>Đang tải báo cáo tài chính {e(s)}…</p></div><script src="/bctc.js?v=1" defer></script>')
+        _ng = SECM.get(s); _pe = ",".join(sorted([t for t in SYMS if _ng and SECM.get(t) == _ng and os.path.exists(os.path.join(ROOT, "data/bctc/%s.bin" % t))], key=lambda t: -(FD.get(t, {}).get("mc") or 0))[:10])
+        P.append(f'<h2>Báo cáo tài chính {e(s)}: cân đối kế toán, kết quả kinh doanh, lưu chuyển tiền tệ, chỉ số tài chính</h2><div id="bctc" data-ma="{e(s)}" data-peers="{_pe}"><p>Đang tải báo cáo tài chính {e(s)}…</p></div><script src="/bctc.js?v=1" defer></script>')
     if nx: P.append(f"<h2>Nhận định của Huy Nguyễn về {e(s)}</h2><blockquote>{e(nx)}</blockquote>")
     P.append(ZBOX.format(s=e(s)))
     P.append(f'<div class="cta"><a class="btn b1" href="/#ma={e(s)}">Xem biểu đồ {e(s)}</a><a class="btn b2" href="/#hoidap">Hỏi đáp chuyên sâu về {e(s)}</a><a class="btn b2" href="https://zalo.me/0365188286" rel="noopener">Tư vấn 1:1</a></div>')
