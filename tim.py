@@ -1,7 +1,7 @@
 # Tạo tim.json cho ô "Tìm nhanh" trên trang chủ: mọi trang + các mục của trang chủ (tiêu đề, đường dẫn, nhóm)
 import os, re, glob, json, html
 ROOT = os.path.dirname(os.path.abspath(__file__)); out = []
-MUC = [("Top 10 cổ phiếu khỏe nhất", "/#top-10-co-phieu-khoe"), ("Thị trường hôm nay", "/thi-truong-chung-khoan-hom-nay.html"), ("Sức mạnh dòng tiền", "/#dongtien"),
+MUC = [("Top 10 cổ phiếu khỏe nhất", "/#top-10-co-phieu-khoe"), ("Sức mạnh dòng tiền", "/#dongtien"),
        ("Bảng giá chứng khoán 3 sàn", "/#banggia"), ("Soi chart cổ phiếu", "/#soichart"), ("So sánh 2 mã cổ phiếu", "/#sosanh"), ("Vĩ mô Việt Nam", "/#vimo"),
        ("Thị trường thế giới, hàng hóa", "/the-gioi-hang-hoa.html"), ("Đánh giá BCTC kết quả kinh doanh quý", "/#bctc"), ("Kết quả kinh doanh quý toàn thị trường: xếp hạng lợi nhuận", "/ket-qua-kinh-doanh-quy.html"), ("Tin tức doanh nghiệp và vĩ mô", "/#tintuc"),
        ("Báo cáo phân tích công ty chứng khoán", "/#baocao"), ("Lịch sự kiện, cổ tức, họp ĐHCĐ", "/#lichsk"), ("Bảng theo dõi cổ phiếu", "/#bang"),
