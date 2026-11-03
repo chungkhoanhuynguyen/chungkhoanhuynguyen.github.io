@@ -81,6 +81,38 @@ FOOT = """<footer>© Chứng Khoán Huy Nguyễn · <a href="/">chungkhoanhuyngu
 
 os.makedirs(os.path.join(ROOT, "ma"), exist_ok=True)
 keep = set(); made = []
+def _bf(rows, *keys):
+    for k in keys:
+        for r in rows:
+            if r[0].lower().startswith(k): return r[2]
+    return None
+def _ql(d): return "Q%d/%s" % ((int(d[5:7]) - 1) // 3 + 1, d[:4])
+def _nt(v): return "–" if v is None else (("−" if v < 0 else "") + f"{abs(v):,.0f}".replace(",", "."))
+def bctc_tinh(s, B):
+    """Bảng BCTC chính dạng HTML tĩnh (Google đọc được) + câu tóm tắt + FAQ."""
+    q = B["q"]; d = q["d"][:5]; bs, is_, cf = q.get("bs", []), q.get("is", []), q.get("cf", [])
+    bank = B["f"] == "bank"
+    R = [("Tổng tài sản", _bf(bs, "tổng cộng tài sản", "tổng tài sản")), ("Vốn chủ sở hữu", _bf(bs, "vốn chủ sở hữu")),
+         ("Nợ phải trả", _bf(bs, "tổng nợ phải trả", "nợ phải trả"))]
+    if bank: R += [("Cho vay khách hàng", _bf(bs, "cho vay khách hàng")), ("Tiền gửi của khách hàng", _bf(bs, "tiền gửi của khách hàng")),
+                   ("Thu nhập lãi thuần", _bf(is_, "thu nhập lãi thuần")), ("Tổng thu nhập hoạt động", _bf(is_, "tổng thu nhập hoạt động")),
+                   ("Chi phí dự phòng rủi ro tín dụng", _bf(is_, "chi phí dự phòng rủi ro tín dụng"))]
+    else: R += [("Doanh thu thuần", _bf(is_, "doanh thu thuần", "cộng doanh thu hoạt động", "doanh thu hoạt động")), ("Lợi nhuận gộp", _bf(is_, "lợi nhuận gộp"))]
+    ln = _bf(is_, "lợi nhuận sau thuế của công ty mẹ", "lợi nhuận sau thuế của cổ đông", "lợi nhuận sau thuế thu nhập doanh nghiệp")
+    R += [("Lợi nhuận sau thuế công ty mẹ", ln), ("Lưu chuyển tiền thuần từ hoạt động kinh doanh", _bf(cf, "lưu chuyển tiền thuần từ hoạt động kinh doanh", "lưu chuyển tiền thuần từ các hoạt động sản xuất", "lưu chuyển tiền thuần từ hoạt động sản xuất"))]
+    R = [(a, v) for a, v in R if v]
+    if not R: return "", [], None
+    t = ("<table class='mt'><tr><td><b>Chỉ tiêu (tỷ đồng)</b></td>" + "".join(f"<td class='r'><b>{_ql(x)}</b></td>" for x in d) + "</tr>" +
+         "".join(f"<tr><td>{a}</td>" + "".join(f"<td class='r'>{_nt(v[i] if i < len(v) else None)}</td>" for i in range(len(d))) + "</tr>" for a, v in R) + "</table>")
+    sm, faq, ql = "", [], _ql(d[0])
+    if ln and ln[0] is not None:
+        yoy = (ln[0] / ln[4] - 1) * 100 if len(ln) > 4 and ln[4] and ln[4] > 0 else None
+        ys = "" if yoy is None else f", {'tăng' if yoy >= 0 else 'giảm'} {abs(yoy):.1f}% so với cùng kỳ".replace(".", ",")
+        ta = R[0][1][0] if R[0][0] == "Tổng tài sản" else None
+        sm = f"Theo báo cáo tài chính hợp nhất {ql}, {s} lãi sau thuế công ty mẹ {_nt(ln[0])} tỷ đồng{ys}" + (f"; tổng tài sản {_nt(ta)} tỷ đồng" if ta else "") + "."
+        faq = [(f"Lợi nhuận {ql} của {s} là bao nhiêu?", sm), (f"Xem báo cáo tài chính {s} ở đâu?", f"Trang này có đủ cân đối kế toán, kết quả kinh doanh, lưu chuyển tiền tệ và chỉ số tài chính của {s} theo 8 quý và 5 năm, tải được về Excel.")]
+    return f"<p>{sm}</p>{t}", faq, ql
+
 for s in SYMS:
     x = S[s]; r = FD[s]; name = x[2] if x[2] and x[2] != s else s; ex = EXN[x[1]]
     b = bars(s)
@@ -98,8 +130,11 @@ for s in SYMS:
     k = KQ.get(s); nx = NX.get(s) if isinstance(NX, dict) else None
     url = f"{B}/ma/{s}.html"
     nm2 = f" ({name})" if name != s else ""
-    title = f"Cổ phiếu {s}: giá hôm nay, định giá P/E, P/B, lợi nhuận"
+    BT = hncodec.load(os.path.join(ROOT, "data/bctc/%s.bin" % s)) if os.path.exists(os.path.join(ROOT, "data/bctc/%s.bin" % s)) else None
+    bhtml, bfaq, bql = bctc_tinh(s, BT) if BT and BT.get("q", {}).get("d") else ("", [], None)
+    title = f"Cổ phiếu {s}: BCTC {bql}, giá, định giá P/E, P/B" if bql else f"Cổ phiếu {s}: giá hôm nay, định giá P/E, P/B, lợi nhuận"
     desc = f"Cổ phiếu {s} hôm nay {nf(p)} nghìn đồng ({dmy(last)}), {pc(yr)} 1 năm. P/E {nf(pe,1)}, P/B {nf(pb,2)}, ROE {nf(roe,1)}%. Định giá {s}, lợi nhuận, xu hướng."
+    if bql: desc = (f"Báo cáo tài chính {s} {bql}: cân đối kế toán, KQKD, lưu chuyển tiền tệ 8 quý. " + desc)[:158]
     intro = (f"Cổ phiếu <b>{e(s)}</b>" + (f" của {e(name)}" if name != s else "") + f" niêm yết trên sàn {ex}. Phiên {dmy(last)}, {e(s)} đóng cửa ở <b>{nf(p)}</b> nghìn đồng, "
              f"<span class='{'up' if (w or 0)>=0 else 'dn'}'>{pc(w)}</span> trong 1 tuần và <span class='{'up' if (yr or 0)>=0 else 'dn'}'>{pc(yr)}</span> trong 1 năm. "
              f"Giá đang ở {tr} (trên {ab}/{len(ms)} đường trung bình MA20, MA50, MA200).")
@@ -117,6 +152,7 @@ for s in SYMS:
            (f"P/E của {s} là bao nhiêu?", f"P/E hiện khoảng {nf(pe,1)} lần" + (f", {cmp(pe, MED['pe'])}." if pe and pe > 0 else ".") + " P/E cần so cùng ngành và chất lượng lợi nhuận."),
            (f"{s} có trả cổ tức không?", f"Tỷ suất cổ tức gần đây khoảng {nf(dy,1)}%." if dy else f"Chưa ghi nhận cổ tức tiền mặt gần đây của {s} trong dữ liệu."),
            (f"Có nên mua cổ phiếu {s} không?", f"Trang này không đưa khuyến nghị mua bán. Quyết định nên dựa trên định giá, kết quả kinh doanh, xu hướng giá và khẩu vị rủi ro của từng người. Khách hàng có thể hỏi chuyên sâu về {s} ở mục Hỏi đáp PRO hoặc trao đổi 1:1 với Huy Nguyễn.")]
+    faq = bfaq + faq
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": B + "/"},
             {"@type": "ListItem", "position": 2, "name": "Mã cổ phiếu", "item": B + "/ma/"}, {"@type": "ListItem", "position": 3, "name": f"Cổ phiếu {s}", "item": url}]},
@@ -151,7 +187,7 @@ for s in SYMS:
         if k.get("bad"): P.append("<h3>Điểm cần lưu ý</h3><ul>" + "".join(f"<li>{e(i)}</li>" for i in k["bad"]) + "</ul>")
     if os.path.exists(os.path.join(ROOT, "data/bctc/%s.bin" % s)):
         _ng = SECM.get(s); _pe = ",".join(sorted([t for t in SYMS if _ng and SECM.get(t) == _ng and os.path.exists(os.path.join(ROOT, "data/bctc/%s.bin" % t))], key=lambda t: -(FD.get(t, {}).get("mc") or 0))[:10])
-        P.append(f'<h2>Báo cáo tài chính {e(s)}: cân đối kế toán, kết quả kinh doanh, lưu chuyển tiền tệ, chỉ số tài chính</h2><div id="bctc" data-ma="{e(s)}" data-peers="{_pe}"><p>Đang tải báo cáo tài chính {e(s)}…</p></div><script src="/bctc.js?v=1" defer></script>')
+        P.append(f'<h2>Báo cáo tài chính {e(s)}: cân đối kế toán, kết quả kinh doanh, lưu chuyển tiền tệ, chỉ số tài chính</h2><div id="bctc" data-ma="{e(s)}" data-peers="{_pe}">{bhtml or "<p>Đang tải báo cáo tài chính " + e(s) + "…</p>"}</div><script src="/bctc.js?v=1" defer></script>')
     if nx: P.append(f"<h2>Nhận định của Huy Nguyễn về {e(s)}</h2><blockquote>{e(nx)}</blockquote>")
     P.append(ZBOX.format(s=e(s)))
     P.append(f'<div class="cta"><a class="btn b1" href="/#ma={e(s)}">Xem biểu đồ {e(s)}</a><a class="btn b2" href="/#hoidap">Hỏi đáp chuyên sâu về {e(s)}</a><a class="btn b2" href="https://zalo.me/0365188286" rel="noopener">Tư vấn 1:1</a></div>')
