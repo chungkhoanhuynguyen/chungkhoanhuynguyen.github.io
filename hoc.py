@@ -35,6 +35,12 @@ blockquote{margin:18px 0;padding:10px 16px;border-left:4px solid var(--acc);back
 footer{text-align:center;color:var(--mute);font-size:13px;padding:24px 16px;border-top:1px solid var(--line)}
 @media(max-width:560px){.pn{grid-template-columns:1fr}.nav a.hide{display:none}.brand{min-width:0;overflow:hidden;text-overflow:ellipsis}.brand{font-size:13px}.nav{gap:10px;font-size:13px}.top .in{gap:8px}}"""
 
+def _ngan(t, n=64):
+    t = t.strip()
+    if len(t) <= n: return t
+    for sep in (": ", " – ", " - ", ", "):
+        if sep in t and len(t.split(sep)[0]) >= 25 and len(t.split(sep)[0]) <= n: return t.split(sep)[0]
+    return t[:n].rsplit(" ", 1)[0].rstrip(",:–-") + "…"
 def head(title, desc, url, img, ld):
     return f"""<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://i.ytimg.com; frame-src https://www.youtube-nocookie.com; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests"><meta name="referrer" content="strict-origin-when-cross-origin">
 <title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{url}">
@@ -67,7 +73,7 @@ for v in R:
          "publisher": {"@type": "Organization", "name": "Chứng Khoán Huy Nguyễn", "logo": {"@type": "ImageObject", "url": B + "/img/icon-512.png"}}},
         {"@type": "VideoObject", "name": v["title"][:100], "description": v["sum"], "thumbnailUrl": [thumb, f"{B}/img/yt/{v['k']}.jpg"],
          "uploadDate": up, "embedUrl": f"https://www.youtube.com/embed/{v['id']}", "url": f"https://www.youtube.com/watch?v={v['id']}", "inLanguage": "vi"}]}
-    p = [head(v["h1"] + " | Chứng Khoán Huy Nguyễn", desc_of(v), url, thumb, ld), "<main><article>",
+    p = [head(_ngan(v["h1"]) + " | Chứng Khoán Huy Nguyễn", desc_of(v)[:158], url, thumb, ld), "<main><article>",
          f'<div class="bc"><a href="/">Trang chủ</a> › <a href="/hoc/">Thư viện bài học</a> › {e(v["series"])}</div>',
          f'<h1>{e(v["h1"])}</h1><div class="meta">{e(v["series"])} · {dmy(v["d"])} · Video + bài viết</div>',
          f'<div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/{v["id"]}?rel=0" title="{e(v["h1"])}" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>',
@@ -91,7 +97,7 @@ url = B + "/hoc/"
 ld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Thư viện bài học chứng khoán", "url": url, "inLanguage": "vi",
       "hasPart": [{"@type": "Article", "headline": v["h1"][:110], "url": f"{B}/hoc/{v['slug']}.html"} for v in R]}
 p = [head("Thư viện bài học chứng khoán cho người mới | Chứng Khoán Huy Nguyễn",
-          "Học chứng khoán từ đầu: lịch sử thị trường Việt Nam và thế giới, tư duy nhà đầu tư huyền thoại, đọc báo cáo tài chính, định giá cổ phiếu. Mỗi bài có video và bài viết.",
+          "Học chứng khoán từ đầu: lịch sử thị trường, tư duy nhà đầu tư huyền thoại, đọc báo cáo tài chính, định giá cổ phiếu. Mỗi bài có video và bài viết.",
           url, B + "/img/og.png", ld), "<main>",
      '<div class="bc"><a href="/">Trang chủ</a> › Thư viện bài học</div><h1>Thư viện bài học chứng khoán</h1>',
      '<p class="meta">Kiến thức chứng khoán cho người mới bắt đầu, kể bằng câu chuyện và số liệu có nguồn. Mỗi tối 20:00 có một bài mới.</p>']
