@@ -1,0 +1,14 @@
+name: Tu kiem web (link hong, sitemap, tieu de)
+on:
+  push:
+    branches: [main]
+    paths: ["**.html", "sitemap.xml", "hoc.py", "ma.py", "_kiem/**"]
+  schedule:
+    - cron: "17 23 * * *"
+  workflow_dispatch:
+jobs:
+  kiem:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 _kiem/kiem_web.py
