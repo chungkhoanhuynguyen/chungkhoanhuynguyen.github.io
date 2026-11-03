@@ -2,12 +2,14 @@
 Một ảnh duy nhất -> nhiều khung, chạy CPU (numpy + OpenCV), không cần GPU, không cần dịch vụ ngoài."""
 import numpy as np, cv2, subprocess
 
-CROP = (85, 125, 645, 685)          # x0,y0,x1,y1 trong ảnh gốc: đầu + vai, không dính logo/nền khác
-MC = np.array([358.0, 421.0])        # tâm miệng
-HW = 38.0                            # nửa chiều rộng miệng
-ML = 421.0                           # đường môi
-CHIN = 482.0
-EYES = [((325.0, 306.0), 17.0, 7.0, 7.0), ((420.0, 319.0), 18.0, 7.5, 7.0)]  # tâm, nửa rộng, nửa cao, góc nghiêng
+CROP = (55, 15, 735, 695)          # x0,y0,x1,y1 trong ảnh gốc: đầu + vai, không dính logo/nền khác
+MC = np.array([402.0, 433.0])        # tâm miệng
+HW = 50.0                            # nửa chiều rộng miệng
+ML = 433.0                           # đường môi
+CHIN = 536.0
+K = HW / 38.0                        # thang kích thước so với ảnh gốc ban đầu
+EYES = [((349.0, 279.0), 24.0, 10.0, 3.8), ((478.0, 287.5), 25.0, 10.5, 3.8)]  # tâm, nửa rộng, nửa cao, góc nghiêng
+CHEEK = [(335, 352, 355, 362), (470, 366, 490, 376)]   # vùng da lấy màu mí mắt (x0,y0,x1,y1)
 
 def _sm(t, a, b):
     t = np.clip((t - a) / (b - a), 0, 1); return t * t * (3 - 2 * t)
@@ -23,17 +25,17 @@ class ChanDung:
         self.X = xx + x0; self.Y = yy + y0           # toạ độ ảnh gốc
         dx = self.X - MC[0]
         self.wn = np.exp(-(dx / (0.62 * HW)) ** 2)    # kéo môi dưới (hẹp, giữ khoé miệng)
-        self.ww = np.exp(-0.5 * (dx / 62.0) ** 2)     # kéo cằm (rộng)
-        a = 1 - _sm(self.Y, ML + 22, ML + 42)         # vùng môi -> vùng cằm
-        self.wy = _sm(self.Y, ML, ML + 5) * (1 - _sm(self.Y, CHIN, CHIN + 55))
+        self.ww = np.exp(-0.5 * (dx / (62.0 * K)) ** 2)     # kéo cằm (rộng)
+        a = 1 - _sm(self.Y, ML + 22 * K, ML + 42 * K)         # vùng môi -> vùng cằm
+        self.wy = _sm(self.Y, ML, ML + 5 * K) * (1 - _sm(self.Y, CHIN, CHIN + 55 * K))
         self.wbase = (a * self.wn + (1 - a) * self.ww) * self.wy
-        self.gx = np.exp(-(dx / (1.6 * HW)) ** 2) * _sm(self.Y, ML - 20, ML - 8) * (1 - _sm(self.Y, ML + 26, ML + 40))
+        self.gx = np.exp(-(dx / (1.6 * HW)) ** 2) * _sm(self.Y, ML - 20 * K, ML - 8 * K) * (1 - _sm(self.Y, ML + 26 * K, ML + 40 * K))
         self.skin = [self._cheek()] * 2
         self.mask = self._mask()
 
     def _cheek(self):
-        p = np.concatenate([self.im[372 - self.oy:382 - self.oy, 300 - self.ox:320 - self.ox].reshape(-1, 3), self.im[372 - self.oy:382 - self.oy, 400 - self.ox:420 - self.ox].reshape(-1, 3)]).astype(np.float32)
-        return tuple(int(v * 0.97) for v in np.median(p, 0))
+        ps = [self.im[y0 - self.oy:y1 - self.oy, x0 - self.ox:x1 - self.ox].reshape(-1, 3) for x0, y0, x1, y1 in CHEEK]
+        return tuple(int(v * 0.97) for v in np.median(np.concatenate(ps).astype(np.float32), 0))
 
     def _skin(self, c):
         x, y = int(c[0] - self.ox), int(c[1] - self.oy)
@@ -48,7 +50,7 @@ class ChanDung:
 
     def frame(self, mo, wide=0.0, blink=0.0, t=0.0, nod=0.0):
         """mo 0..1 độ mở miệng; wide -1..1 (tròn <-> bè); blink 0..1; trả BGR size×size (đã bo góc + viền)."""
-        h = 17.0 * float(np.clip(mo, 0, 1))
+        h = 17.0 * K * float(np.clip(mo, 0, 1))
         im = self.im
         if h > 0.3 or abs(wide) > 0.02:
             s = 1.0 + 0.09 * wide
@@ -62,7 +64,7 @@ class ChanDung:
             cx, cy = MC[0] - self.ox, ML - self.oy
             hwid = HW * (0.62 + 0.14 * wide) * (0.8 + 0.2 * mo)
             cv2.ellipse(lay, (int(cx), int(cy + h * 0.5)), (int(hwid), int(h * 0.5 + 1)), 0, 0, 360, (34, 30, 72), -1, cv2.LINE_AA)
-            th = int(min(h * 0.32, 7))
+            th = int(min(h * 0.32, 7 * K))
             if th >= 2: cv2.ellipse(lay, (int(cx), int(cy + th * 0.5 + 1)), (int(hwid * 0.86), th), 0, 180, 360, (205, 205, 215), -1, cv2.LINE_AA)
             cv2.ellipse(a, (int(cx), int(cy + h * 0.5)), (int(hwid), int(h * 0.5 + 1)), 0, 0, 360, 1.0, -1, cv2.LINE_AA)
             a = cv2.GaussianBlur(a, (0, 0), 1.1)[..., None]
@@ -73,13 +75,13 @@ class ChanDung:
                 ctr = (int(c[0] - self.ox), int(c[1] - self.oy))
                 cv2.ellipse(ov, ctr, (int(ew), int(max(1, eh * 1.15 * blink))), ang, 0, 360, sk, -1, cv2.LINE_AA)
                 if blink > 0.6:
-                    cv2.ellipse(ov, (ctr[0], ctr[1] + int(eh * 0.5 * blink)), (int(ew), 2), ang, 0, 180, (45, 35, 40), 1, cv2.LINE_AA)
+                    cv2.ellipse(ov, (ctr[0], ctr[1] + int(eh * 0.5 * blink)), (int(ew), 2), ang, 0, 180, (45, 35, 40), 2, cv2.LINE_AA)
             im = cv2.addWeighted(im, 0.25, ov, 0.75, 0)
         # đung đưa nhẹ: xoay, dịch, thở
         rot = 0.9 * np.sin(t * 0.9) + 0.5 * np.sin(t * 2.3 + 1.0)
-        dx = 2.0 * np.sin(t * 0.7 + 0.5); dy = 1.5 * np.sin(t * 1.1) + nod * 3.0
+        dx = 2.0 * K * np.sin(t * 0.7 + 0.5); dy = 1.5 * K * np.sin(t * 1.1) + nod * 3.0 * K
         sc = 1.0 + 0.004 * np.sin(t * 1.6)
-        M = cv2.getRotationMatrix2D((self.W / 2, self.H * 0.62), rot, sc); M[:, 2] += (dx, dy)
+        M = cv2.getRotationMatrix2D((self.W / 2, self.H * 0.55), rot, sc); M[:, 2] += (dx, dy)
         im = cv2.warpAffine(im, M, (self.W, self.H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REPLICATE)
         out = cv2.resize(im, (self.size, self.size), interpolation=cv2.INTER_AREA)
         return out
