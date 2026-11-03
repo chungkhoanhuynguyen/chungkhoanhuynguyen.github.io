@@ -171,8 +171,6 @@ def reports():
 
 
 def wi_cs(fd):
-    """Đồng bộ P/B và ROE theo định nghĩa WiData (data/wi_cs.bin do việc chạy hằng ngày lấy từ WiData MCP).
-    BVPS WiData = (Tổng TS − TSCĐ vô hình − Nợ − CĐ thiểu số)/CPLH; ROE = LNST/VCSH bình quân."""
     w = (hncodec.load("data/wi_cs.bin", {}) or {}).get("d") or {}
     if not w:
         return
@@ -190,7 +188,7 @@ def wi_cs(fd):
         if x.get("roe") is not None:
             r[ix["roe"]] = round(x["roe"] * 100, 1)
         n += 1
-    print("đồng bộ WiData", n)
+    print("cs", n)
 
 
 def main():

