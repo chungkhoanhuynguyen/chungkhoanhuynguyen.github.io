@@ -236,4 +236,21 @@ for i, sc in enumerate(raw):
         s = int(b[i]); ch.append("%d:%02d %s" % (s // 60, s % 60, sc["ch"]))
 if ch and not ch[0].startswith("0:00"): ch[0] = "0:00" + ch[0][ch[0].index(" "):]
 open(os.path.join(OUT, key + "_chuong.txt"), "w", encoding="utf-8").write("\n".join(ch) + "\n")
+# 7) TỰ KIỂM CHẤT LƯỢNG (ghi KEY_qc.txt; NV3 không đăng nếu có dòng LỖI)
+qc = []
+try:
+    fr = "/tmp/qc_%s.png" % key
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", "0.3", "-i", out, "-frames:v", "1", fr])
+    br = np.asarray(Image.open(fr).convert("L")).mean()
+    if br < 22: qc.append("LỖI khung đầu quá tối (%.0f) – ảnh bìa tự động sẽ đen" % br)
+    lu = subprocess.run(["ffmpeg", "-hide_banner", "-i", out, "-af", "ebur128", "-f", "null", "-"], capture_output=True, text=True).stderr
+    m = re.findall(r"I:\s+(-?[\d.]+) LUFS", lu); lv = float(m[-1]) if m else -99
+    if lv < -24 or lv > -9: qc.append("LỖI âm lượng tổng %.1f LUFS (chuẩn -16 đến -12)" % lv)
+    if b[-1] < 300: qc.append("CẢNH BÁO video chỉ %.0f giây (kênh chính nên 8–12 phút)" % b[-1])
+    if not os.path.exists(os.path.join(OUT, key + ".srt")): qc.append("LỖI thiếu file phụ đề .srt")
+    if not os.path.exists(os.path.join(OUT, key + "_bia.png")): qc.append("LỖI thiếu ảnh bìa")
+except Exception as ex:
+    qc.append("CẢNH BÁO không tự kiểm được: %s" % ex)
+open(os.path.join(OUT, key + "_qc.txt"), "w", encoding="utf-8").write(("\n".join(qc) or "ĐẠT: khung đầu, âm lượng, phụ đề, ảnh bìa") + "\n")
+print(key, "QC:", qc or "dat", flush=True)
 print(key, "xong %.0fs, dai %.0fs" % (time.time() - t0, b[-1]), flush=True)
