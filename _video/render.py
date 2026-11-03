@@ -142,6 +142,24 @@ def _draw_sub(im, sc, t, cx, wmax):
     tw = d.textlength(cur, font=f); y = LH - 112 if wmax < LW - 300 else LH - 118
     d.rounded_rectangle([cx - tw/2 - 22, y - 10, cx + tw/2 + 22, y + f.size + 14], 14, fill=(0, 0, 0, 170))
     d.text((cx - tw/2, y), cur, font=f, fill=(255, 255, 255), stroke_width=2, stroke_fill=(0, 0, 0))
+AV = [None, None, 0]
+def _av_init(wav):
+    try:
+        sys.path.insert(0, HERE); sys.path.insert(0, os.path.join(HERE, "..")); import hncodec, chandung, base64
+        d = hncodec.load(os.path.join(HERE, "engine", "chandung.bin")); pj = WORK + "/chandung.jpg"
+        open(pj, "wb").write(base64.b64decode(d["jpg"]))
+        AV[0] = chandung.ChanDung(pj, 170); AV[1] = chandung.dieu_khien(wav, dx2.FPS); print(key, "chan dung ok", flush=True)
+    except Exception as e: AV[0] = None; print("chan dung: bo qua", repr(e), flush=True)
+def _av_dan(im):
+    if AV[0] is None or not SUB_ON[0]: return im
+    try:
+        o, w, b, n = AV[1]; gf = AV[2]; k = min(gf, len(o) - 1)
+        bub = AV[0].bubble(mo=o[k], wide=w[k], blink=b[k], t=gf / dx2.FPS, nod=n[k])
+        rgb = Image.fromarray(bub[..., 2::-1].copy() if False else bub[..., [2, 1, 0]].copy()); al = Image.fromarray(bub[..., 3].copy())
+        im.paste(rgb, (1605 - 85, 156), al)
+    except Exception as e:
+        AV[0] = None; print("chan dung: tat", repr(e), flush=True)
+    return im
 def land(v, sc, t):
     k = sc["k"]; im = sc["_bg"].copy() if "_bg" in sc else _cover(v, sc)
     if "_bg" in sc:
@@ -156,9 +174,9 @@ def land(v, sc, t):
     lab = sc.get("label") or ""
     if lab:
         a = dx2.ease(t/0.4); f = dx2.fit(d, lab, "Bold", cw, 34); tw = d.textlength(lab, font=f)
-        d.text((cx - tw/2, 300), lab, font=f, fill=dx2.mix(dx2.GOLD, a, (10, 12, 17)))
-        d.line([cx - 60, 352, cx + 60, 352], fill=dx2.mix(dx2.GOLD, a, (10, 12, 17)), width=3)
-    cols = sc.get("cols") or [dx2.CREAM, dx2.GOLD]; y = 430
+        d.text((cx - tw/2, 336), lab, font=f, fill=dx2.mix(dx2.GOLD, a, (10, 12, 17)))
+        d.line([cx - 60, 388, cx + 60, 388], fill=dx2.mix(dx2.GOLD, a, (10, 12, 17)), width=3)
+    cols = sc.get("cols") or [dx2.CREAM, dx2.GOLD]; y = 466
     for i, l in enumerate(sc.get("cap") or []):
         if not l: continue
         a = dx2.ease((t - 0.25 - i*0.18)/0.45)
@@ -172,6 +190,7 @@ def land(v, sc, t):
             ImageDraw.Draw(im).rounded_rectangle([xx-4, yy-4, xx+c.width+3, yy+c.height+3], 21, fill=dx2.GOLD)
             im.paste(c, (xx, yy), m)
     f = dx2.F("SemiBold", 26); u = "chungkhoanhuynguyen.com"; d.text((cx - d.textlength(u, font=f)/2, LH - 70), u, font=f, fill=(120, 128, 146))
+    _av_dan(im)
     _draw_sub(im, sc, t, _px + _pw/2, _pw)
     return im
 def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
@@ -188,14 +207,14 @@ def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
     lst = os.path.join(tmpd, "list.txt"); open(lst, "w").write("".join("file '%s'\n" % p for p in parts))
     A = os.path.join(tmpd, "full.wav")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", A])
-    _sub_plan(scenes, b, gap); SUB_ON[0] = True
+    _sub_plan(scenes, b, gap); SUB_ON[0] = True; _av_init(A)
     tmp = "/tmp/hl_%s.mp4" % key; FPS = dx2.FPS
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", "%dx%d" % (LW, LH), "-r", str(FPS), "-i", "-",
                           "-pix_fmt", "yuv420p", "-c:v", "libx264", "-crf", "20", "-preset", "veryfast", tmp], stdin=subprocess.PIPE)
     fr = 0
     for i, sc in enumerate(scenes):
         n = int(round(b[i+1]*FPS)) - fr
-        for j in range(n): p.stdin.write(land(dx2.draw(sc, j/FPS, j/max(1, n)), sc, j/FPS).tobytes())
+        for j in range(n): AV[2] = fr + j; p.stdin.write(land(dx2.draw(sc, j/FPS, j/max(1, n)), sc, j/FPS).tobytes())
         fr += n
     p.stdin.close(); p.wait(); SUB_ON[0] = False
     _srt(scenes, b, os.path.join(OUT, key + ".srt"))
