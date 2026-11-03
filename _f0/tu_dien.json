@@ -368,5 +368,35 @@
 "VN30",
 "Chỉ số 30 cổ phiếu vốn hóa lớn, thanh khoản cao trên HOSE.",
 "vn30-la-gi"
+],
+[
+"CIR",
+"Tỷ lệ chi phí hoạt động trên tổng thu nhập hoạt động của ngân hàng; càng thấp thì vận hành càng hiệu quả.",
+"cir-la-gi"
+],
+[
+"Thu nhập lãi thuần (NII)",
+"Tiền lãi ngân hàng thu từ cho vay và đầu tư trừ đi tiền lãi phải trả cho người gửi và các khoản vay.",
+"thu-nhap-lai-thuan-la-gi"
+],
+[
+"Nợ nhóm 2",
+"Nợ cần chú ý, quá hạn ngắn hoặc được cơ cấu lại; chưa phải nợ xấu nhưng dễ chuyển xấu.",
+"no-nhom-2-la-gi"
+],
+[
+"HDPE",
+"Nhựa polyethylene mật độ cao, nguyên liệu chính làm ống nước, ống luồn cáp của doanh nghiệp ngành nhựa.",
+"hdpe-la-gi"
+],
+[
+"Brent / WTI",
+"Hai loại dầu thô chuẩn dùng làm tham chiếu giá dầu thế giới (Biển Bắc và Mỹ).",
+"gia-dau-brent-wti-la-gi"
+],
+[
+"Stop loss",
+"Điểm cắt lỗ đặt trước, tại đó nhà đầu tư bán để dừng một khoản lỗ.",
+"stop-loss-bao-nhieu-phan-tram"
 ]
 ]
