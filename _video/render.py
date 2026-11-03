@@ -125,7 +125,7 @@ def _draw_sub(im, sc, t, cx, wmax):
     if not cur: return
     d = ImageDraw.Draw(im, "RGBA"); f = dx2.F("Bold", 40)
     while d.textlength(cur, font=f) > wmax - 60 and f.size > 26: f = dx2.F("Bold", f.size - 2)
-    tw = d.textlength(cur, font=f); y = LH - 118
+    tw = d.textlength(cur, font=f); y = LH - 112 if wmax < LW - 300 else LH - 118
     d.rounded_rectangle([cx - tw/2 - 22, y - 10, cx + tw/2 + 22, y + f.size + 14], 14, fill=(0, 0, 0, 170))
     d.text((cx - tw/2, y), cur, font=f, fill=(255, 255, 255), stroke_width=2, stroke_fill=(0, 0, 0))
 def land(v, sc, t):
@@ -135,8 +135,8 @@ def land(v, sc, t):
     if k in ("end", "text"):
         c = v.crop((0, 200, 1080, 1720)); s = LH/c.height; c = c.resize((int(c.width*s), LH), Image.LANCZOS)
         im.paste(c, ((LW-c.width)//2, 0)); _draw_sub(im, sc, t, LW/2, LW - 200); return im
-    p = v.crop((66, 470, 1014, 1150)); s = 1.42; p = p.resize((int(p.width*s), int(p.height*s)), Image.LANCZOS)
-    im.paste(p, (50, (LH-p.height)//2 + 20)); _px, _pw = 50, p.width
+    p = v.crop((66, 470, 1014, 1150)); s = 1.32; p = p.resize((int(p.width*s), int(p.height*s)), Image.LANCZOS)
+    im.paste(p, (50, 26)); _px, _pw = 50, p.width          # chừa dải dưới cho phụ đề, không che số liệu
     d = ImageDraw.Draw(im); x0 = 50 + p.width + 40; cw = LW - x0 - 50; cx = x0 + cw/2
     dx2.brand(im, d, cx, 70, 0.9, 1.0, (10, 12, 17))
     lab = sc.get("label") or ""
