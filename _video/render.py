@@ -144,6 +144,7 @@ def _draw_sub(im, sc, t, cx, wmax):
     d.text((cx - tw/2, y), cur, font=f, fill=(255, 255, 255), stroke_width=2, stroke_fill=(0, 0, 0))
 AV = [None, None, 0]
 def _av_init(wav):
+    if os.environ.get('CHAN_DUNG') != '1': return
     try:
         sys.path.insert(0, HERE); sys.path.insert(0, os.path.join(HERE, "..")); import hncodec, chandung, base64
         d = hncodec.load(os.path.join(HERE, "engine", "chandung.bin")); pj = WORK + "/chandung.jpg"
