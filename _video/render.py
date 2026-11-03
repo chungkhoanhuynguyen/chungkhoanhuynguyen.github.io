@@ -24,6 +24,20 @@ g = {}; exec(open(os.path.join(QD, "video_dai.py"), encoding="utf-8").read(), g)
 raw = g["S"][key]
 if prev: raw = raw[:prev]
 
+# 2b) đọc đúng tên web + chèn lời mời về nhóm tư vấn (giữa video và trước cảnh kết) — áp cho mọi video dài
+_WEB = "chứng khoán Huy Nguyễn chấm com"
+def _doc_web(t):
+    t = re.sub(r"(?i)chung\s*khoan\s*huy\s*nguyen\s*(\.|chấm)\s*com", _WEB, t)
+    return re.sub(r"(?i)chungkhoanhuynguyen", "chứng khoán Huy Nguyễn", t)
+CTA_GIUA = {"k": "text", "label": "NHÓM TƯ VẤN MIỄN PHÍ", "cap": ("VÀO NHÓM ZALO", "0365 188 286"), "cta": 1,
+    "say": "Khoan, nói nhanh một chút. Nếu anh chị không có thời gian tự lọc cổ phiếu, hãy vào nhóm Zalo tư vấn của Huy Nguyễn. Ở đó mỗi ngày có danh sách cổ phiếu khỏe, nhận định thị trường, và anh chị được hỏi trực tiếp về danh mục của mình, hoàn toàn miễn phí. Số Zalo là không ba sáu năm, một tám tám, hai tám sáu, có sẵn trong phần mô tả. Giờ mình đi tiếp."}
+CTA_CUOI = {"k": "text", "label": "ĐỪNG ĐẦU TƯ MỘT MÌNH", "cap": ("ZALO 0365 188 286", "CHUNGKHOANHUYNGUYEN.COM"), "cta": 1,
+    "say": "Trước khi kết thúc, có hai thứ anh chị nên lưu lại. Một, vào chứng khoán Huy Nguyễn chấm com để xem bảng mười cổ phiếu khỏe nhất thị trường cập nhật liên tục và báo cáo tài chính hơn bốn trăm mã, miễn phí. Hai, nếu anh chị đang kẹt hàng, chưa biết nên giữ hay cơ cấu, hoặc muốn có người đồng hành, nhắn Zalo số không ba sáu năm, một tám tám, hai tám sáu để vào nhóm tư vấn, Huy và đội ngũ sẽ hỗ trợ trực tiếp. Đầu tư một mình rất dễ sai, có người cùng đi sẽ chắc hơn. Nhớ đăng ký kênh và bấm chuông để không bỏ lỡ video tiếp theo."}
+if not g.get("NO_CTA") and not any(x.get("cta") for x in raw) and len(raw) >= 6:
+    raw = list(raw); raw.insert(len(raw)//2, dict(CTA_GIUA))
+    raw.insert(len(raw) - 1 if raw[-1].get("k") == "end" else len(raw), dict(CTA_CUOI))
+for _x in raw: _x["say"] = _doc_web(_x.get("say", ""))
+
 def conv(sc):
     s = dict(sc); k = s["k"]
     s.setdefault("label", ""); s.setdefault("cap", ("", ""))
