@@ -932,6 +932,29 @@ header.top .gnav .gi>a.g-rep:hover{background:rgba(243,210,122,.14)!important;co
 <p class="note">Không mở được link? Nhắn Zalo <span id="zl">0365.188.286</span><button class="copy" id="cp" type="button">Sao chép</button></p>
 </div></div></div>
 
+<section id="timnhanh" class="tn"><div class="wrap">
+<h2 class="tn-h">Tìm nhanh trên trang</h2>
+<div class="tn-box"><input id="tnq" type="search" placeholder="Gõ mã (VD: MBB) hoặc chủ đề (VD: P/E, margin, bảng giá, tích sản)…" autocomplete="off" aria-label="Tìm nhanh"><div id="tnr" class="tn-r" role="listbox"></div></div>
+<div class="tn-g">
+<a href="/thi-truong-chung-khoan-hom-nay.html"><b>📈 Thị trường hôm nay</b><span>Toàn cảnh, dòng tiền, top cổ phiếu khỏe</span></a>
+<a href="#banggia"><b>📊 Bảng giá 3 sàn</b><span>HOSE, HNX, UPCoM</span></a>
+<a href="/dinh-gia-co-phieu.html"><b>💰 Định giá cổ phiếu</b><span>P/E, P/B, ROE các mã lớn</span></a>
+<a href="/ma/"><b>🔎 Tra cứu mã A–Z</b><span>Giá, định giá, lợi nhuận từng mã</span></a>
+<a href="#bctc"><b>📑 BCTC doanh nghiệp</b><span>Kết quả kinh doanh quý mới nhất</span></a>
+<a href="/f0/"><b>🎓 Học chứng khoán F0</b><span>Lộ trình 7 bước, 190+ bài</span></a>
+<a href="/hoc/"><b>▶️ Bài học có video</b><span>Kênh YouTube Chứng Khoán Huy Nguyễn</span></a>
+<a href="/tu-van-dau-tu-chung-khoan.html"><b>🤝 Tư vấn 1:1</b><span>Zalo 0365.188.286</span></a>
+</div></div></section>
+<style>.tn{padding:22px 0 8px}.tn-h{font-size:20px;margin:0 0 10px}.tn-box{position:relative;margin-bottom:14px}#tnq{width:100%;box-sizing:border-box;padding:14px 16px;font-size:16px;border-radius:12px;border:1px solid var(--line);background:var(--panel);color:var(--fg)}#tnq:focus{outline:2px solid var(--gold)}.tn-r{position:absolute;z-index:50;left:0;right:0;top:100%;background:var(--panel);border:1px solid var(--line);border-radius:12px;margin-top:4px;display:none;max-height:420px;overflow:auto}.tn-r a{display:block;padding:10px 14px;color:var(--fg);text-decoration:none;border-bottom:1px solid var(--line)}.tn-r a:hover,.tn-r a.on{background:#ffffff10}.tn-r small{color:var(--gold);margin-right:8px;font-size:12px}.tn-g{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.tn-g a{display:block;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--fg);text-decoration:none}.tn-g a:hover{border-color:var(--gold)}.tn-g b{display:block;font-size:15px}.tn-g span{display:block;font-size:13px;color:var(--mute);margin-top:3px}@media(max-width:760px){.tn-g{grid-template-columns:repeat(2,1fr)}}</style>
+<script>(function(){var D=null,q=document.getElementById('tnq'),r=document.getElementById('tnr');
+function n(s){return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/\//g,'')}
+function load(){if(D)return Promise.resolve(D);return fetch('/tim.json').then(function(x){return x.json()}).then(function(j){D=j.map(function(a){return [a[0],a[1],a[2],n(a[0]+' '+a[1])]});return D})}
+function show(){var v=n(q.value.trim());if(!v){r.style.display='none';return}load().then(function(d){var w=v.split(/\s+/),m=[],ma=v.toUpperCase().replace(/[^A-Z0-9]/g,'');
+d.forEach(function(a){if(w.every(function(x){return a[3].indexOf(x)>=0})){var t=n(a[0]),sc=(a[1]=='/ma/'+ma+'.html'?0:a[2]=='Mục'?1:(' '+t).indexOf(' '+w[0])>=0||(' '+t).indexOf(' '+w[0].replace('/',''))>=0?2:3);m.push([sc,a])}});m.sort(function(x,y){return x[0]-y[0]});
+r.innerHTML=m.slice(0,10).map(function(x){var a=x[1];return '<a href="'+a[1]+'"><small>'+a[2]+'</small>'+a[0].replace(/</g,'&lt;')+'</a>'}).join('')||'<a>Không thấy – thử từ khác hoặc mã cổ phiếu</a>';r.style.display='block'})}
+q.addEventListener('input',show);q.addEventListener('focus',function(){load();show()});
+q.addEventListener('keydown',function(e){if(e.key=='Enter'){var a=r.querySelector('a[href]');if(a)location.href=a.getAttribute('href')}});
+document.addEventListener('click',function(e){if(!e.target.closest('.tn-box'))r.style.display='none'})})();</script>
 <nav class="gtabs" id="gtabs" aria-label="Chọn mục"><div class="wrap"><a href="#g1"><span>01</span>Hôm nay</a><a href="#g2"><span>02</span>Công cụ</a><a href="#g3"><span>03</span>Doanh nghiệp</a><a href="#g4"><span>04</span>Góc nhìn</a><a href="#g5"><span>05</span>Dịch vụ</a><a href="#g6"><span>06</span>Học đầu tư</a></div></nav>
 <div class="grp" id="g1" data-name="Hôm nay"><div class="grp-h"><div class="wrap"><span class="grp-n">01</span><div><div class="grp-t" role="heading" aria-level="2">Hôm nay</div><p>Top 10 cổ phiếu khỏe, toàn cảnh thị trường, sức mạnh dòng tiền và bảng giá 3 sàn.</p></div></div></div>
 <section id="top-10-co-phieu-khoe" class="nocopy"><div class="wrap">
