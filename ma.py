@@ -352,8 +352,41 @@ if WM.get("s"):
          "Giá thế giới hôm nay: Dow Jones, S&P 500, Nasdaq, Nikkei, dầu Brent, WTI, vàng, Bitcoin, USD/VND, DXY. Thay đổi phiên, tuần, tháng, năm. Cập nhật tự động.",
          "Thị trường thế giới & hàng hóa hôm nay", body))
 
+# ---- Trang tổng hợp KẾT QUẢ KINH DOANH QUÝ toàn thị trường (từ data/bctc/_tom.bin) ----
+TOM = hncodec.load(os.path.join(ROOT, "data/bctc/_tom.bin"), {}) or {}
+if len(TOM) >= 20:
+    from collections import Counter
+    dq = Counter(v["d"] for v in TOM.values()).most_common(1)[0][0]; QL = _ql(dq); QN = QL.replace("/", " năm ").replace("Q", "quý ")
+    L = {t: v for t, v in TOM.items() if v.get("d") == dq and v.get("ln") is not None}
+    tot = sum(v["ln"] for v in L.values()); up = sum(1 for v in L.values() if (v.get("yoy") or 0) > 0); dn = sum(1 for v in L.values() if v.get("yoy") is not None and v["yoy"] < 0)
+    lo = sum(1 for v in L.values() if v["ln"] < 0)
+    def nm(t): return e(S[t][2]) if t in S and S[t][2] and S[t][2] != t else ""
+    def row(t, v): return (f"<tr><td><a href='/ma/{t}.html'><b>{t}</b></a><br><small class='n'>{nm(t)}</small></td><td class='r'>{_nt(v['ln'])}</td>"
+                           f"<td class='r {'up' if (v.get('yoy') or 0) >= 0 else 'dn'}'>{'–' if v.get('yoy') is None else (('+' if v['yoy'] >= 0 else '−') + f'{abs(v[chr(121)+chr(111)+chr(121)]):.1f}'.replace('.', ',') + '%')}</td>"
+                           f"<td class='r'>{_nt(v.get('ln4'))}</td><td class='r'>{'–' if v.get('roe') is None else f'{v[chr(114)+chr(111)+chr(101)]:.1f}'.replace('.', ',') + '%'}</td></tr>")
+    HD = "<tr><td><b>Mã</b></td><td class='r'><b>LNST quý (tỷ)</b></td><td class='r'><b>So cùng kỳ</b></td><td class='r'><b>LNST 4 quý</b></td><td class='r'><b>ROE</b></td></tr>"
+    def bang(tt, items): return f"<h2>{tt}</h2><div style='overflow-x:auto'><table class='mt'>{HD}" + "".join(row(t, v) for t, v in items) + "</table></div>"
+    srt = sorted(L.items(), key=lambda x: -x[1]["ln"])
+    gr = sorted([x for x in L.items() if x[1].get("yoy") is not None and x[1]["ln"] >= 50], key=lambda x: -x[1]["yoy"])
+    nh = [x for x in srt if x[1].get("f") == "bank"]; ck = [x for x in srt if x[1].get("f") == "ck"]
+    tl = f"Kết quả kinh doanh {QL}: lợi nhuận {len(L)} doanh nghiệp niêm yết"
+    ds = f"Kết quả kinh doanh {QN} của {len(L)} doanh nghiệp: tổng LNST {_nt(tot)} tỷ, {up} mã tăng, {dn} mã giảm. Xếp hạng lãi lớn nhất, tăng mạnh nhất, ngân hàng, chứng khoán."
+    faqk = [(f"Kết quả kinh doanh {QN} có gì nổi bật?", f"{len(L)} doanh nghiệp đã có số liệu, tổng lợi nhuận sau thuế công ty mẹ khoảng {_nt(tot)} tỷ đồng; {up} doanh nghiệp tăng lãi so với cùng kỳ, {dn} doanh nghiệp giảm, {lo} doanh nghiệp lỗ."),
+            (f"Doanh nghiệp nào lãi lớn nhất {QN}?", ", ".join(f"{t} ({_nt(v['ln'])} tỷ)" for t, v in srt[:5]) + "."),
+            (f"Ngân hàng nào lãi nhiều nhất {QN}?", ", ".join(f"{t} ({_nt(v['ln'])} tỷ)" for t, v in nh[:5]) + "." if nh else "Chưa đủ số liệu.")]
+    body = [f"<p>Tổng hợp tự động từ báo cáo tài chính hợp nhất {QN} của <b>{len(L)}</b> doanh nghiệp niêm yết: tổng lợi nhuận sau thuế công ty mẹ khoảng <b>{_nt(tot)} tỷ đồng</b>. "
+            f"<b class='up'>{up}</b> doanh nghiệp tăng lãi so với cùng kỳ, <b class='dn'>{dn}</b> doanh nghiệp giảm, {lo} doanh nghiệp lỗ. Bấm vào mã để xem đầy đủ cân đối kế toán, kết quả kinh doanh, lưu chuyển tiền tệ 8 quý.</p>",
+            bang(f"Top 20 doanh nghiệp lãi lớn nhất {QL}", srt[:20]),
+            bang(f"Top 20 tăng trưởng lợi nhuận mạnh nhất {QL} (lãi từ 50 tỷ)", gr[:20]),
+            bang(f"Ngân hàng: lợi nhuận {QL}", nh) if nh else "", bang(f"Công ty chứng khoán: lợi nhuận {QL}", ck) if ck else "",
+            bang(f"Top 15 giảm lãi mạnh nhất {QL} (lãi từ 50 tỷ)", gr[::-1][:15]),
+            bang(f"Toàn bộ {len(L)} doanh nghiệp (A–Z)", sorted(L.items())),
+            "<h2>Câu hỏi thường gặp</h2>" + "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in faqk),
+            "<p><small class='n'>LNST = lợi nhuận sau thuế công ty mẹ. ROE tính trên lợi nhuận 4 quý gần nhất / vốn chủ sở hữu. Số liệu tham khảo, không phải khuyến nghị mua bán. Đọc thêm <a href='/f0/cach-doc-bao-cao-tai-chinh.html'>cách đọc báo cáo tài chính</a>.</small></p>"]
+    EXTRA.append(page("ket-qua-kinh-doanh-quy.html", tl[:68] + " | Chứng Khoán Huy Nguyễn", ds[:158], tl, body,
+                      [{"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqk]}]))
 sp = os.path.join(ROOT, "sitemap.xml"); sm = open(sp, encoding="utf-8").read()
-sm = re.sub(r"<url><loc>" + re.escape(B) + r"/(ma/[^<]*|thi-truong-chung-khoan-hom-nay\.html|dinh-gia-co-phieu\.html|tu-van-dau-tu-chung-khoan\.html|gioi-thieu\.html|lien-he\.html|chinh-sach-bao-mat\.html|the-gioi-hang-hoa\.html)</loc>.*?</url>\n", "", sm)
+sm = re.sub(r"<url><loc>" + re.escape(B) + r"/(ma/[^<]*|thi-truong-chung-khoan-hom-nay\.html|dinh-gia-co-phieu\.html|tu-van-dau-tu-chung-khoan\.html|gioi-thieu\.html|lien-he\.html|chinh-sach-bao-mat\.html|the-gioi-hang-hoa\.html|ket-qua-kinh-doanh-quy\.html)</loc>.*?</url>\n", "", sm)
 add = "".join(f"<url><loc>{u}</loc><lastmod>{today}</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>\n" for u in EXTRA) + f"<url><loc>{B}/ma/</loc><lastmod>{today}</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>\n" + \
       "".join(f"<url><loc>{B}/ma/{t}.html</loc><lastmod>{today}</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>\n" for t in made)
 sm = sm.replace("</urlset>", add + "</urlset>")
