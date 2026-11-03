@@ -17383,5 +17383,734 @@
    "co-phieu-chu-ky-la-gi"
   ],
   "add": []
+ },
+ {
+  "slug": "dinh-gia-co-phieu-ngan-hang-pb-roe",
+  "kw": "định giá cổ phiếu ngân hàng",
+  "grp": 3,
+  "title": "Định giá cổ phiếu ngân hàng bằng P/B và ROE: cách làm 10 phút",
+  "desc": "Cách định giá cổ phiếu ngân hàng bằng P/B chia ROE, kèm bảng 8 ngân hàng ngày 28/10/2026, 3 cái bẫy và quy trình 4 bước cho người mới.",
+  "body": [
+   [
+    "p",
+    "Định giá cổ phiếu ngân hàng không cần mô hình phức tạp. Với người mới, cặp chỉ số <b>P/B</b> và <b>ROE</b> đã trả lời được phần lớn câu hỏi: tôi đang trả bao nhiêu, và ngân hàng này kiếm lại cho cổ đông được bao nhiêu. Bài này hướng dẫn cách đặt hai con số cạnh nhau bằng một phép chia 10 giây, rồi kiểm tra bằng ba lớp xác nhận."
+   ],
+   [
+    "h2",
+    "P/B và ROE nói điều gì?"
+   ],
+   [
+    "p",
+    "P/B là giá thị trường chia cho giá trị sổ sách mỗi cổ phiếu, cho biết bạn đang trả gấp bao nhiêu lần phần vốn ghi trên sổ (xem <a href='/f0/pb-la-gi.html'>P/B là gì</a>). ROE là lợi nhuận sau thuế 12 tháng chia cho vốn chủ sở hữu, cho biết mỗi 100 đồng vốn tạo ra bao nhiêu đồng lãi (xem <a href='/f0/roe-eps-la-gi.html'>ROE và EPS</a>). Với ngân hàng, sổ sách chủ yếu là các khoản cho vay và tiền, nên P/B có ý nghĩa hơn nhiều so với doanh nghiệp sản xuất."
+   ],
+   [
+    "h2",
+    "Phép chia mười giây: P/B ÷ ROE"
+   ],
+   [
+    "p",
+    "Lấy P/B chia cho ROE (tính bằng số phần trăm, ví dụ 21,8) ta được giá phải trả cho mỗi một điểm phần trăm ROE. Số càng nhỏ thì theo thước đo này càng rẻ. Theo dữ liệu tổng hợp ngày 28/10/2026, một số kết quả như sau: TPB P/B 0,86 và ROE 17,9% cho ra 0,048; CTG 1,12 và 22,5% cho ra 0,050; MBB 1,20 và 21,8% cho ra 0,055; VIB 1,02 và 16,2% cho ra 0,063; ACB 1,13 và 16,5% cho ra 0,068; TCB 1,22 và 15,4% cho ra 0,079; MSB 1,26 và 14,3% cho ra 0,088; VCB 1,77 và 17,6% cho ra 0,101."
+   ],
+   [
+    "p",
+    "Điều thú vị là MBB và TCB có P/B gần như bằng nhau (khoảng 1,2) nhưng ROE chênh nhau 6,4 điểm. Cùng giá để mua, nhưng một bên kiếm tiền trên vốn nhanh hơn khoảng 42%. Ngược lại, VCB có P/B cao hơn MBB khoảng 47% trong khi ROE lại thấp hơn. Nếu chỉ nhìn P/B, bạn sẽ không thấy sự khác biệt đó."
+   ],
+   [
+    "h2",
+    "Ba lớp xác nhận trước khi kết luận"
+   ],
+   [
+    "ol",
+    [
+     "<b>Tăng trưởng:</b> ROE là bức ảnh của bốn quý đã qua. Hãy xem lợi nhuận quý gần nhất so với cùng kỳ và thu nhập lãi thuần, tức phần lõi cho vay. Quý 3/2026, lợi nhuận TPB tăng 57,4%, MBB tăng 44,3%, VCB chỉ tăng 0,1% dù thu nhập lãi thuần tăng 39,1%. Xem <a href='/f0/thu-nhap-lai-thuan-la-gi.html'>thu nhập lãi thuần là gì</a>.",
+     "<b>Chất lượng tài sản:</b> xem <a href='/f0/no-xau-ngan-hang-la-gi.html'>nợ xấu</a> và <a href='/f0/bao-phu-no-xau-la-gi.html'>bao phủ nợ xấu</a>. Cùng quý, bao phủ nợ xấu của TCB khoảng 107%, ACB 91%, MBB 85%; một ngân hàng bao phủ mỏng thường bị thị trường trừ sẵn vào giá.",
+     "<b>Lịch sử của chính nó:</b> so P/B hiện tại với mặt bằng giá nhiều năm của cùng ngân hàng, vì mỗi ngân hàng có mức định giá riêng."
+    ]
+   ],
+   [
+    "h2",
+    "Ba cái bẫy thường gặp"
+   ],
+   [
+    "ul",
+    [
+     "Thấy P/B dưới 1 là kết luận rẻ. Giá thấp hơn sổ sách có thể do thị trường lo về chất lượng tài sản hoặc ROE thấp.",
+     "ROE cao nhờ khoản thu một lần hoặc nhờ đòn bẩy (vay nhiều hơn so với vốn), không phải nhờ kiếm lời tốt hơn. Xem <a href='/f0/roa-la-gi.html'>ROA là gì</a> để tách đòn bẩy.",
+     "So P/B ngân hàng với doanh nghiệp thép hay bán lẻ. Ý nghĩa của giá trị sổ sách ở các ngành rất khác nhau."
+    ]
+   ],
+   [
+    "h2",
+    "Quy trình bốn bước cho người mới"
+   ],
+   [
+    "p",
+    "Bước một, lập bảng P/B, ROE và P/B ÷ ROE cho nhóm ngân hàng cùng quy mô. Bước hai, kiểm tra tăng trưởng lợi nhuận và thu nhập lãi thuần. Bước ba, kiểm tra nợ xấu và bao phủ nợ xấu. Bước bốn, so với lịch sử của chính ngân hàng. Làm đủ bốn bước, bạn chưa biết giá ngày mai, nhưng biết mình đang trả giá cho điều gì và chấp nhận đánh đổi nào. Xem thêm cách đọc báo cáo ở bài <a href='/f0/doc-bctc-ngan-hang.html'>đọc BCTC ngân hàng</a>. Phép chia P/B ÷ ROE là cách tính minh họa của chúng tôi, không phải chuẩn của ngành."
+   ],
+   [
+    "p",
+    "Xem thêm bảng tích sản ngân hàng với số liệu thật tại <a href='/bao-cao-2026.html#tichsan'>Báo cáo 2026 – bảng tích sản</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "P/B ngân hàng bao nhiêu là rẻ?",
+    "Không có mức rẻ chung. Cần đặt P/B cạnh ROE, tăng trưởng và chất lượng tài sản; P/B dưới 1 có thể rẻ hoặc phản ánh rủi ro."
+   ],
+   [
+    "Vì sao chia P/B cho ROE?",
+    "Để biết bạn trả bao nhiêu cho mỗi điểm phần trăm sinh lời trên vốn, giúp so sánh các ngân hàng có P/B và ROE khác nhau."
+   ],
+   [
+    "Cách này có dự báo được giá không?",
+    "Không. Đây chỉ là công cụ so sánh định giá tại một thời điểm, kết quả quá khứ không phải cam kết lợi nhuận."
+   ]
+  ],
+  "rel": [
+   "pb-la-gi",
+   "roe-eps-la-gi",
+   "doc-bctc-ngan-hang",
+   "bao-phu-no-xau-la-gi",
+   "co-phieu-ngan-hang-p-b-thap"
+  ],
+  "add": []
+ },
+ {
+  "slug": "ty-le-ky-quy-la-gi",
+  "kw": "tỷ lệ ký quỹ là gì",
+  "grp": 5,
+  "title": "Tỷ lệ ký quỹ là gì? Cách tính khi mua cổ phiếu bằng margin",
+  "desc": "Tỷ lệ ký quỹ là phần vốn tự có trên giá trị cổ phiếu mua bằng margin. Công thức, ví dụ tính ngưỡng cảnh báo, giải chấp và cách an toàn cho người mới.",
+  "body": [
+   [
+    "p",
+    "Khi mua cổ phiếu bằng đòn bẩy, bạn sẽ gặp cụm <b>tỷ lệ ký quỹ</b>. Hiểu đúng nó là điều kiện tối thiểu trước khi bấm nút vay, vì đây là con số quyết định lúc nào tài khoản bị cảnh báo và lúc nào bị bán bắt buộc. Bài này giải thích bằng ví dụ giả định để dễ tính."
+   ],
+   [
+    "h2",
+    "Tỷ lệ ký quỹ là gì?"
+   ],
+   [
+    "p",
+    "Tỷ lệ ký quỹ là phần trăm vốn của chính bạn (tài sản ròng) trên tổng giá trị cổ phiếu đang nắm giữ bằng margin. Công thức thường dùng: <b>Tỷ lệ ký quỹ = (Giá trị tài sản − Dư nợ vay) ÷ Giá trị tài sản × 100%</b>. Tài sản gồm cổ phiếu tính theo giá thị trường và tiền mặt. Mỗi công ty chứng khoán có cách tính, danh mục mã được vay và mức tỷ lệ riêng, nên các con số dưới đây chỉ là giả định để minh họa. Xem nền tảng ở bài <a href='/f0/margin-la-gi.html'>margin là gì</a>."
+   ],
+   [
+    "h2",
+    "Ví dụ: vay 100 triệu, vốn 100 triệu"
+   ],
+   [
+    "p",
+    "Giả sử bạn có 100 triệu đồng vốn, vay thêm 100 triệu và mua cổ phiếu trị giá 200 triệu. Lúc này tài sản 200 triệu, dư nợ 100 triệu, tỷ lệ ký quỹ = (200 − 100) ÷ 200 = 50%."
+   ],
+   [
+    "p",
+    "Nếu giá cổ phiếu giảm 20%, tài sản còn 160 triệu, dư nợ vẫn 100 triệu, tỷ lệ ký quỹ = (160 − 100) ÷ 160 = 37,5%. Vốn của bạn từ 100 triệu còn 60 triệu, tức đã mất 40%, gấp đôi mức giảm của cổ phiếu. Đây chính là cách đòn bẩy khuếch đại thua lỗ. Nếu giá giảm 40%, tài sản còn 120 triệu, tỷ lệ ký quỹ chỉ còn (120 − 100) ÷ 120 ≈ 16,7%, vốn còn 20 triệu."
+   ],
+   [
+    "h2",
+    "Ba ngưỡng bạn cần biết"
+   ],
+   [
+    "ul",
+    [
+     "<b>Ngưỡng ban đầu:</b> tỷ lệ tối thiểu để được giải ngân khoản vay, ví dụ 50% (giả định).",
+     "<b>Ngưỡng cảnh báo (call margin):</b> khi tỷ lệ ký quỹ giảm xuống mức này, bạn nhận thông báo và phải bổ sung tiền hoặc bán bớt cổ phiếu. Xem <a href='/f0/call-margin-la-gi.html'>call margin là gì</a>.",
+     "<b>Ngưỡng xử lý (giải chấp):</b> thấp hơn nữa, công ty chứng khoán có quyền bán cổ phiếu của bạn để thu hồi nợ, bất kể giá lúc đó. Xem <a href='/f0/ban-giai-chap-la-gi.html'>bán giải chấp là gì</a>."
+    ]
+   ],
+   [
+    "p",
+    "Điểm nguy hiểm: ngưỡng xử lý thường đến đúng lúc thị trường giảm mạnh, tức giá thấp nhất. Cổ phiếu bị bán ở đáy, trong khi nếu không vay, bạn có thể đã giữ và chờ giá hồi."
+   ],
+   [
+    "h2",
+    "Chi phí đi kèm"
+   ],
+   [
+    "p",
+    "Khoản vay có lãi suất, tính theo ngày. Xem <a href='/f0/lai-suat-margin.html'>lãi suất margin</a>. Nếu cổ phiếu đi ngang, bạn vẫn mất lãi vay đều đặn. Vì vậy margin chỉ có ý nghĩa khi bạn tự tin về thời gian ngắn và có kế hoạch thoát rõ ràng."
+   ],
+   [
+    "h2",
+    "Cách dùng an toàn cho người mới"
+   ],
+   [
+    "ol",
+    [
+     "Chưa dùng margin khi chưa trải qua một đợt thị trường giảm mạnh bằng tiền thật của mình.",
+     "Nếu dùng, chỉ vay một phần nhỏ so với vốn và để tỷ lệ ký quỹ cao hơn nhiều so với ngưỡng cảnh báo.",
+     "Luôn giữ tiền mặt dự phòng để bổ sung ký quỹ khi cần, thay vì phải bán lúc giá thấp.",
+     "Đọc kỹ hợp đồng: danh mục mã được vay, ngưỡng, thời gian xử lý và chi phí.",
+     "Nhớ rằng lỗ 50% cần lãi 100% để hòa vốn; đòn bẩy làm bạn tới mức lỗ đó nhanh hơn."
+    ]
+   ],
+   [
+    "p",
+    "Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Tỷ lệ ký quỹ bao nhiêu thì bị bán giải chấp?",
+    "Mỗi công ty chứng khoán quy định khác nhau trong hợp đồng; hãy đọc kỹ ngưỡng cảnh báo và ngưỡng xử lý của nơi bạn mở tài khoản."
+   ],
+   [
+    "Tỷ lệ ký quỹ khác tỷ lệ vay thế nào?",
+    "Tỷ lệ vay là dư nợ trên tài sản, tỷ lệ ký quỹ là vốn tự có trên tài sản; hai tỷ lệ cộng lại bằng 100%."
+   ],
+   [
+    "Người mới có nên dùng margin?",
+    "Không nên khi chưa có kinh nghiệm, vì đòn bẩy khuếch đại cả lãi và lỗ và có thể bị bán bắt buộc ở giá thấp."
+   ]
+  ],
+  "rel": [
+   "margin-la-gi",
+   "call-margin-la-gi",
+   "ban-giai-chap-la-gi",
+   "lai-suat-margin",
+   "sai-lam-cua-f0"
+  ],
+  "add": []
+ },
+ {
+  "slug": "co-phieu-bi-huy-niem-yet-la-gi",
+  "kw": "cổ phiếu bị hủy niêm yết là gì",
+  "grp": 2,
+  "title": "Cổ phiếu bị hủy niêm yết là gì? Cổ đông cần làm gì?",
+  "desc": "Hủy niêm yết là khi cổ phiếu bị rút khỏi sàn. Hai loại hủy bắt buộc và tự nguyện, dấu hiệu cảnh báo sớm và việc cổ đông cần làm để bảo vệ tài sản.",
+  "body": [
+   [
+    "p",
+    "Một ngày nào đó, cổ phiếu trong danh mục nhận thông báo <b>hủy niêm yết</b>. Với người mới, tin này gây hoang mang vì không rõ cổ phiếu còn bán được không và tiền có mất không. Bài này giải thích khái niệm và các bước nên làm, theo hướng chung; quy định cụ thể thay đổi theo từng thời kỳ nên bạn cần đối chiếu thông báo của sở giao dịch."
+   ],
+   [
+    "h2",
+    "Hủy niêm yết là gì?"
+   ],
+   [
+    "p",
+    "Niêm yết là việc cổ phiếu được đăng ký giao dịch trên sàn chính thức như HOSE hoặc HNX. Hủy niêm yết là việc cổ phiếu bị rút khỏi sàn đó. Cổ phiếu không biến mất và bạn vẫn là cổ đông của công ty, nhưng khả năng mua bán thuận tiện trên sàn bị mất hoặc thay đổi. Cổ phiếu có thể chuyển sang giao dịch trên thị trường khác như UPCoM hoặc không còn giao dịch tập trung."
+   ],
+   [
+    "h2",
+    "Hai kiểu hủy niêm yết"
+   ],
+   [
+    "ul",
+    [
+     "<b>Bắt buộc:</b> do sở giao dịch quyết định khi công ty vi phạm điều kiện duy trì niêm yết, ví dụ kinh doanh thua lỗ kéo dài, vốn chủ sở hữu âm, chậm nộp báo cáo tài chính hoặc báo cáo kiểm toán không chấp nhận. Trước đó cổ phiếu thường trải qua giai đoạn cảnh báo, kiểm soát, hạn chế giao dịch. Xem <a href='/f0/co-phieu-bi-canh-bao-kiem-soat-han-che.html'>cổ phiếu bị cảnh báo, kiểm soát, hạn chế giao dịch</a>.",
+     "<b>Tự nguyện:</b> do chính công ty đề nghị, ví dụ để chuyển sang sàn khác, tái cơ cấu, sáp nhập hoặc chuyển thành công ty không đại chúng. Quyết định thường cần đại hội đồng cổ đông thông qua."
+    ]
+   ],
+   [
+    "h2",
+    "Dấu hiệu cảnh báo sớm"
+   ],
+   [
+    "ol",
+    [
+     "Lỗ nhiều quý liên tiếp hoặc vốn chủ sở hữu giảm sát mức âm. Xem <a href='/f0/cach-doc-bao-cao-tai-chinh.html'>cách đọc báo cáo tài chính</a>.",
+     "Ý kiến kiểm toán ngoại trừ, từ chối hoặc trái ngược.",
+     "Chậm công bố báo cáo hoặc liên tục xin gia hạn.",
+     "Cổ phiếu chuyển diện cảnh báo hoặc kiểm soát, thanh khoản cạn dần.",
+     "Thay đổi lớn về ban lãnh đạo, kiểm toán, tranh chấp pháp lý."
+    ]
+   ],
+   [
+    "h2",
+    "Cổ đông nên làm gì?"
+   ],
+   [
+    "p",
+    "Việc đầu tiên là đọc thông báo chính thức trên website sở giao dịch và của công ty: ngày hủy, nơi cổ phiếu sẽ giao dịch tiếp, thời gian còn được giao dịch trên sàn cũ. Việc thứ hai là xem lại lý do bạn đã mua; nếu lý do không còn, hãy cân nhắc thoát theo kế hoạch thay vì chờ tin tốt. Việc thứ ba là kiểm tra khả năng thanh khoản ở nơi giao dịch mới, vì sàn UPCoM thường có thanh khoản thấp hơn, khó bán hơn."
+   ],
+   [
+    "p",
+    "Ví dụ giả định: cổ phiếu X bị hủy niêm yết bắt buộc và chuyển sang UPCoM. Giá có thể giảm mạnh vào những phiên trước và sau tin, khối lượng khớp thưa. Người nắm giữ 10.000 cổ phiếu có thể phải đặt bán nhiều phiên với từng lô nhỏ. Nếu đã dùng margin, rủi ro còn lớn hơn vì công ty chứng khoán có thể ngừng nhận cổ phiếu đó làm tài sản đảm bảo."
+   ],
+   [
+    "h2",
+    "Phòng ngừa từ đầu"
+   ],
+   [
+    "p",
+    "Cách tốt nhất là tránh doanh nghiệp có dấu hiệu yếu về tài chính và minh bạch. Giữ danh mục phân tán, không dồn vốn vào một mã, và không mua cổ phiếu chỉ vì giá thấp. Xem thêm <a href='/f0/dau-hieu-co-phieu-bi-lam-gia.html'>dấu hiệu cổ phiếu bị làm giá</a> và <a href='/f0/chung-khoan-co-phai-lua-dao-khong.html'>chứng khoán có phải lừa đảo không</a>."
+   ],
+   [
+    "p",
+    "Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Cổ phiếu bị hủy niêm yết có mất hết tiền không?",
+    "Không nhất thiết. Bạn vẫn là cổ đông, nhưng thanh khoản có thể thấp và giá thường giảm mạnh; kết quả phụ thuộc tình hình công ty."
+   ],
+   [
+    "Sau khi hủy niêm yết còn bán được không?",
+    "Tùy trường hợp, cổ phiếu có thể chuyển sang UPCoM hoặc giao dịch ngoài sàn; cần đọc thông báo của sở giao dịch để biết nơi giao dịch tiếp theo."
+   ],
+   [
+    "Hủy niêm yết tự nguyện có xấu không?",
+    "Không hẳn; có thể do tái cơ cấu hoặc chuyển sàn. Cần xem lý do và quyền lợi cổ đông trong nghị quyết."
+   ]
+  ],
+  "rel": [
+   "co-phieu-bi-canh-bao-kiem-soat-han-che",
+   "cach-doc-bao-cao-tai-chinh",
+   "dau-hieu-co-phieu-bi-lam-gia",
+   "ipo-va-niem-yet-la-gi"
+  ],
+  "add": []
+ },
+ {
+  "slug": "cach-nhan-biet-tin-don-chung-khoan",
+  "kw": "tin đồn chứng khoán",
+  "grp": 5,
+  "title": "Tin đồn chứng khoán: 5 câu hỏi kiểm tra trước khi tin",
+  "desc": "Cách nhận biết tin đồn chứng khoán bằng 5 câu hỏi kiểm tra nguồn, số liệu, thời điểm. Ví dụ cổ phiếu tăng 4,6 lần rồi mất 61% từ đỉnh.",
+  "body": [
+   [
+    "p",
+    "Mỗi ngày người mới đầu tư nhận hàng chục tin nhắn dạng “mã này sắp có tin lớn”. Tin đồn không phải lúc nào cũng sai, nhưng người đến sau thường là người trả giá cao nhất. Bài này đưa ra năm câu hỏi đơn giản để kiểm tra một tin trước khi hành động."
+   ],
+   [
+    "h2",
+    "Năm câu hỏi kiểm tra"
+   ],
+   [
+    "ol",
+    [
+     "<b>Ai nói, và họ được gì?</b> Người đăng tin đang nắm cổ phiếu hay bán khóa học, hội nhóm? Nếu người nói có lợi khi bạn mua, hãy coi đó là quảng cáo.",
+     "<b>Có nguồn gốc kiểm chứng được không?</b> Thông tin chính thống nằm trên website sở giao dịch, công bố của doanh nghiệp hoặc báo cáo tài chính. Ảnh chụp màn hình không nguồn không phải bằng chứng.",
+     "<b>Con số cụ thể nào?</b> Tin thật thường có số: lợi nhuận quý, giá trị hợp đồng, ngày công bố. Tin chỉ có tính từ như “siêu lớn”, “sắp bùng nổ” thường là cảm xúc.",
+     "<b>Giá đã chạy chưa?</b> Nếu giá đã tăng mạnh trước khi bạn nghe tin, phần lớn kỳ vọng có thể đã nằm trong giá. Hãy so với lợi nhuận thực.",
+     "<b>Nếu sai, tôi mất bao nhiêu?</b> Quyết định mức lỗ tối đa trước khi mua. Không có kế hoạch cắt lỗ thì không mua theo tin. Xem <a href='/f0/stop-loss-bao-nhieu-phan-tram.html'>stop loss bao nhiêu phần trăm</a>."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ: khi giá chạy trước lợi nhuận"
+   ],
+   [
+    "p",
+    "Cổ phiếu VIX là một ví dụ về chu kỳ hưng phấn. Giữa tháng 1/2025, giá đóng cửa quanh 6.920 đồng. Ngày 15/10/2025, giá lên 31.850 đồng, gấp 4,6 lần chỉ sau 9 tháng. Đến ngày 28/10/2026, giá còn 12.450 đồng, thấp hơn đỉnh khoảng 61%. Muốn về lại đỉnh, giá phải tăng khoảng 156%."
+   ],
+   [
+    "p",
+    "Bài học không nằm ở một mã cụ thể mà ở cách giá vận động: nhiều cổ phiếu tăng rất mạnh trong thời gian ngắn khi tin tốt và tâm lý đám đông cùng xuất hiện, và giảm mạnh khi kỳ vọng nguội đi. Người nhận tin ở giai đoạn cuối thường mua gần đỉnh. Đây là mô tả quá khứ, không phải dự báo cho bất kỳ mã nào."
+   ],
+   [
+    "h2",
+    "Các chiêu thường gặp"
+   ],
+   [
+    "ul",
+    [
+     "Tạo cảm giác khan hiếm: “chỉ còn hôm nay”, “hàng này không ai biết”.",
+     "Chứng minh bằng lệnh lãi đã đóng, giấu các lệnh lỗ.",
+     "Mời vào nhóm kín rồi thu phí hoặc hô mua đồng loạt.",
+     "Mượn tên người nổi tiếng hoặc lãnh đạo doanh nghiệp.",
+     "Hứa lãi cố định, không rủi ro."
+    ]
+   ],
+   [
+    "p",
+    "Nếu thấy dấu hiệu này, hãy xem bài <a href='/f0/dau-hieu-co-phieu-bi-lam-gia.html'>dấu hiệu cổ phiếu bị làm giá</a> và <a href='/f0/tam-ly-fomo-va-hoang-loan.html'>tâm lý FOMO và hoảng loạn</a>. Một thói quen hữu ích: khi nhận tin, đợi qua đêm rồi mới kiểm tra, vì tâm lý vội vàng là thứ tin đồn dựa vào nhiều nhất."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "p",
+    "Tin đồn không thay thế được việc đọc doanh nghiệp. Hỏi nguồn, hỏi số, hỏi giá đã chạy chưa và hỏi mình sẵn sàng mất bao nhiêu. Nếu không trả lời được cả bốn câu, đó chưa phải lúc hành động. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Tin đồn chứng khoán có thật không?",
+    "Có thể có phần thật, nhưng thường người nhận sau đã trả giá cao; cần kiểm chứng nguồn chính thống và so với lợi nhuận thực."
+   ],
+   [
+    "Làm sao biết nhóm hô mã có đáng tin?",
+    "Cẩn thận với nhóm hứa lãi, thu phí trước, hô mã đồng loạt; mọi quyết định nên dựa trên phân tích của chính mình."
+   ],
+   [
+    "Nên làm gì khi đã mua theo tin và bị lỗ?",
+    "Đánh giá lại theo kế hoạch cắt lỗ đã đặt; tránh bình quân giá xuống khi lý do mua ban đầu đã sai."
+   ]
+  ],
+  "rel": [
+   "dau-hieu-co-phieu-bi-lam-gia",
+   "tam-ly-fomo-va-hoang-loan",
+   "chung-khoan-co-phai-lua-dao-khong",
+   "stop-loss-bao-nhieu-phan-tram"
+  ],
+  "add": []
+ },
+ {
+  "slug": "ngay-dang-ky-cuoi-cung-la-gi",
+  "kw": "ngày đăng ký cuối cùng là gì",
+  "grp": 2,
+  "title": "Ngày đăng ký cuối cùng là gì? Cách tính để nhận cổ tức",
+  "desc": "Ngày đăng ký cuối cùng là ngày chốt danh sách cổ đông nhận cổ tức. Cách tính ngày GDKHQ trước 1 ngày làm việc, ví dụ và các sai lầm hay gặp.",
+  "body": [
+   [
+    "p",
+    "Khi doanh nghiệp công bố trả cổ tức, bạn thường thấy hai ngày: <b>ngày giao dịch không hưởng quyền</b> và <b>ngày đăng ký cuối cùng</b>. Nhiều người mua đúng ngày đăng ký cuối cùng rồi thắc mắc vì sao không nhận cổ tức. Bài này giải thích hai ngày đó khác nhau thế nào."
+   ],
+   [
+    "h2",
+    "Ngày đăng ký cuối cùng là gì?"
+   ],
+   [
+    "p",
+    "Đây là ngày doanh nghiệp chốt danh sách cổ đông được hưởng quyền, như nhận cổ tức, cổ phiếu thưởng hay quyền mua thêm. Chỉ người có tên trong danh sách chốt tại cuối ngày này mới được hưởng. Doanh nghiệp công bố ngày này trong thông báo gửi sở giao dịch và đăng trên website."
+   ],
+   [
+    "h2",
+    "Vì sao phải mua trước đó vài ngày?"
+   ],
+   [
+    "p",
+    "Chu kỳ thanh toán T+2 khiến cổ phiếu mua hôm nay mới về tài khoản sau 2 ngày làm việc (xem <a href='/f0/t-2-la-gi.html'>T+2 là gì</a>). Vì vậy, để có tên trong danh sách chốt, bạn phải mua sớm hơn. Sở giao dịch quy định <b>ngày giao dịch không hưởng quyền</b> là 1 ngày làm việc trước ngày đăng ký cuối cùng. Từ ngày này trở đi, người mua mới không còn được hưởng quyền, và giá tham chiếu được điều chỉnh giảm tương ứng. Xem <a href='/f0/ngay-giao-dich-khong-huong-quyen.html'>ngày giao dịch không hưởng quyền</a>."
+   ],
+   [
+    "h2",
+    "Ví dụ có lịch cụ thể (giả định)"
+   ],
+   [
+    "p",
+    "Giả sử ngày đăng ký cuối cùng là thứ Sáu 20/11. Ngày giao dịch không hưởng quyền là thứ Năm 19/11. Muốn hưởng quyền, bạn phải mua và cổ phiếu phải về tài khoản vào cuối ngày thứ Sáu 20/11. Với T+2, bạn cần mua chậm nhất vào thứ Tư 18/11. Nếu mua sáng thứ Năm 19/11, cổ phiếu mua ở ngày không hưởng quyền nên bạn không nhận cổ tức. Ví dụ ngày có thể đổi theo lịch nghỉ lễ và quy định mới, nên luôn đối chiếu thông báo chính thức."
+   ],
+   [
+    "h2",
+    "Từ ngày chốt đến ngày tiền về"
+   ],
+   [
+    "ol",
+    [
+     "<b>Ngày đăng ký cuối cùng:</b> chốt danh sách cổ đông.",
+     "<b>Ngày thanh toán:</b> doanh nghiệp công bố, thường cách ngày chốt vài tuần; tiền hoặc cổ phiếu mới về tài khoản. Cổ tức tiền mặt có thể bị khấu trừ thuế thu nhập cá nhân theo quy định.",
+     "<b>Giá sau điều chỉnh:</b> sau ngày không hưởng quyền, giá tham chiếu giảm gần bằng phần cổ tức; tổng tài sản về lý thuyết không đổi."
+    ]
+   ],
+   [
+    "h2",
+    "Những sai lầm hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "Mua đúng ngày đăng ký cuối cùng và nghĩ vẫn được nhận.",
+     "Nghĩ rằng mua sát ngày chốt rồi bán sau để “ăn” cổ tức là miễn phí. Giá thường được điều chỉnh giảm, nên phần cổ tức nhận được không tạo ra lãi thêm.",
+     "Quên kiểm tra phần trăm cổ tức là bằng tiền hay bằng cổ phiếu. Xem <a href='/f0/co-tuc-la-gi.html'>cổ tức là gì</a>.",
+     "Bán trước ngày chốt khi cổ tức đã công bố mà chưa tính phần quyền bị mất."
+    ]
+   ],
+   [
+    "p",
+    "Với người tích sản dài hạn, ngày chốt quyền không phải thứ cần đuổi theo. Điều quan trọng hơn là doanh nghiệp có đủ lợi nhuận và dòng tiền để trả cổ tức bền vững hay không. Xem <a href='/f0/tai-dau-tu-co-tuc.html'>tái đầu tư cổ tức</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Mua ngày đăng ký cuối cùng có được nhận cổ tức không?",
+    "Thường không, vì do chu kỳ T+2 và ngày không hưởng quyền nằm trước ngày chốt 1 ngày làm việc; cần mua sớm hơn."
+   ],
+   [
+    "Ngày không hưởng quyền khác ngày đăng ký cuối cùng thế nào?",
+    "Ngày không hưởng quyền là ngày người mua mới không còn được nhận quyền, nằm trước ngày đăng ký cuối cùng 1 ngày làm việc."
+   ],
+   [
+    "Mua sát ngày chốt để lấy cổ tức có lợi không?",
+    "Không đảm bảo, vì giá được điều chỉnh giảm sau ngày không hưởng quyền nên tổng giá trị không tự tăng."
+   ]
+  ],
+  "rel": [
+   "ngay-giao-dich-khong-huong-quyen",
+   "t-2-la-gi",
+   "co-tuc-la-gi",
+   "tai-dau-tu-co-tuc"
+  ],
+  "add": []
+ },
+ {
+  "slug": "loi-nhuan-tang-gia-co-phieu-giam-vi-sao",
+  "kw": "lợi nhuận tăng nhưng giá cổ phiếu giảm",
+  "grp": 3,
+  "title": "Lợi nhuận tăng mà giá cổ phiếu giảm: 4 lý do thường gặp",
+  "desc": "Vì sao lợi nhuận tăng mạnh mà giá cổ phiếu vẫn giảm? 4 lý do: nền so sánh, kỳ vọng, chu kỳ, dòng tiền. Ví dụ MWG lãi gấp đôi nhưng giá đi lùi.",
+  "body": [
+   [
+    "p",
+    "Một trong những điều khiến người mới bối rối nhất: doanh nghiệp báo lãi tăng mạnh nhưng giá cổ phiếu không tăng, thậm chí giảm. Mâu thuẫn này có thể giải thích được bằng bốn lý do. Bài này dùng ví dụ thật để minh họa."
+   ],
+   [
+    "h2",
+    "Ví dụ: Thế Giới Di Động (MWG)"
+   ],
+   [
+    "p",
+    "Theo số liệu tổng hợp đến quý 3/2026, lợi nhuận bốn quý gần nhất của MWG khoảng 11.180 tỷ đồng, gần gấp đôi bốn quý trước đó (tăng 92%). Quý 3/2026, lợi nhuận đạt 3.094 tỷ đồng, tăng 74,7%; doanh thu 52.614 tỷ đồng (tăng 32%); biên lợi nhuận gộp 21,7% so với 18,8% cùng kỳ. Vậy mà giá cổ phiếu ngày 28/10/2026 thấp hơn đúng một năm trước khoảng 7,1% và thấp hơn đỉnh ngày 2/2/2026 (91.050 đồng)."
+   ],
+   [
+    "h2",
+    "Lý do 1: Giá đã đi trước lợi nhuận"
+   ],
+   [
+    "p",
+    "Thị trường định giá tương lai, không định giá quá khứ. Khi lợi nhuận bùng nổ, giá thường đã tăng từ trước để phản ánh kỳ vọng. Đến lúc lợi nhuận được công bố, tin tốt không còn là tin mới. Câu nói quen thuộc: mua tin đồn, bán tin thật."
+   ],
+   [
+    "h2",
+    "Lý do 2: Tốc độ tăng đang chậm lại"
+   ],
+   [
+    "p",
+    "Điều thị trường nhìn không chỉ là mức tăng mà là xu hướng của mức tăng. Ở MWG, tốc độ tăng lợi nhuận quý theo cùng kỳ đi qua các mức 144,2%, 75,6%, 100,4% rồi 74,7%. Dù vẫn rất cao, đà tăng đang thấp hơn đỉnh vì nền so sánh dày lên. Khi tăng trưởng giảm tốc, nhà đầu tư thường đòi mức giá thấp hơn cho mỗi đồng lợi nhuận, tức P/E giảm."
+   ],
+   [
+    "h2",
+    "Lý do 3: Chất lượng và tính bền của lợi nhuận"
+   ],
+   [
+    "p",
+    "Lợi nhuận có thể tăng nhờ khoản thu một lần, hoàn nhập dự phòng, thoái vốn hay giá nguyên liệu tạm thấp. Nếu thị trường cho rằng khoản này không lặp lại, họ sẽ không trả giá cao. Với cổ phiếu chu kỳ, P/E thấp ở đỉnh chu kỳ có thể đánh lừa (xem <a href='/f0/co-phieu-chu-ky-la-gi.html'>cổ phiếu chu kỳ là gì</a>). Hãy phân biệt lợi nhuận từ hoạt động chính với phần còn lại, ví dụ biên lợi nhuận gộp 21,7% ở MWG là tín hiệu cải thiện thật hơn một khoản thu lẻ. Xem <a href='/f0/bien-loi-nhuan-gop-la-gi.html'>biên lợi nhuận gộp</a>."
+   ],
+   [
+    "h2",
+    "Lý do 4: Dòng tiền và tâm lý thị trường"
+   ],
+   [
+    "p",
+    "Giá còn phụ thuộc thanh khoản, dòng vốn ngoại, lãi suất và tâm lý chung. Một thị trường thận trọng có thể bán ngay cả cổ phiếu tốt để lấy tiền mặt. Nhiều khi giá giảm không vì doanh nghiệp xấu đi mà vì dòng tiền rời khỏi thị trường."
+   ],
+   [
+    "h2",
+    "Cách đọc đúng thay vì hoảng hốt"
+   ],
+   [
+    "ol",
+    [
+     "So lợi nhuận với giá bằng P/E và so với P/E lịch sử của chính doanh nghiệp. Xem <a href='/f0/pe-la-gi.html'>P/E là gì</a>.",
+     "Xem xu hướng tăng trưởng qua nhiều quý, không chỉ một quý.",
+     "Tách lợi nhuận hoạt động khỏi khoản bất thường.",
+     "Hỏi: thị trường đang trừ gì vào giá mà mình chưa thấy?",
+     "Với người tích sản, tiếp tục kỷ luật góp đều thay vì đổi ý theo từng biến động. Xem <a href='/f0/mua-trung-binh-gia-dca.html'>mua trung bình giá</a>."
+    ]
+   ],
+   [
+    "p",
+    "Kết luận: lợi nhuận tăng là điều kiện cần chứ chưa phải điều kiện đủ để giá tăng. Ví dụ MWG chỉ để minh họa cách nghĩ, không phải khuyến nghị. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Lợi nhuận tăng nhưng giá giảm có phải doanh nghiệp bị làm giá không?",
+    "Không nhất thiết. Thường do giá đã chạy trước, tốc độ tăng chậm lại hoặc dòng tiền thị trường yếu."
+   ],
+   [
+    "Nên xem chỉ số nào khi lợi nhuận tăng mà giá giảm?",
+    "Xem P/E hiện tại so với lịch sử, tốc độ tăng trưởng qua nhiều quý, biên lợi nhuận gộp và chất lượng lợi nhuận."
+   ],
+   [
+    "Giá giảm khi lợi nhuận tăng có phải cơ hội?",
+    "Có thể hoặc không; cần xác định thị trường đang lo điều gì và đối chiếu với kế hoạch của bạn."
+   ]
+  ],
+  "rel": [
+   "pe-la-gi",
+   "co-phieu-chu-ky-la-gi",
+   "bien-loi-nhuan-gop-la-gi",
+   "mua-trung-binh-gia-dca"
+  ],
+  "add": []
+ },
+ {
+  "slug": "lo-bao-nhieu-phan-tram-thi-hoa-von",
+  "kw": "lỗ bao nhiêu phần trăm thì hòa vốn",
+  "grp": 5,
+  "title": "Lỗ 50% cần lãi bao nhiêu để hòa vốn? Bảng tính cho F0",
+  "desc": "Lỗ 10%, 30%, 50%, 61% cần lãi bao nhiêu để về lại hòa vốn? Công thức, bảng tính, ví dụ VN-Index 2025 và cách dùng để đặt giới hạn lỗ trước khi mua.",
+  "body": [
+   [
+    "p",
+    "Một trong những sai lầm phổ biến nhất của người mới là nghĩ rằng lỗ bao nhiêu phần trăm thì chờ lãi đúng bấy nhiêu phần trăm là hòa vốn. Toán học không hoạt động như vậy. Bài này đưa ra công thức, bảng tính và ví dụ thật để bạn đặt giới hạn lỗ hợp lý trước khi mua."
+   ],
+   [
+    "h2",
+    "Công thức"
+   ],
+   [
+    "p",
+    "<b>Mức lãi cần để hòa vốn = 1 ÷ (1 − mức lỗ) − 1</b>. Ví dụ lỗ 50% (0,5): 1 ÷ 0,5 − 1 = 1, tức cần lãi 100%. Lý do: bạn có 100 triệu, lỗ 50% còn 50 triệu; muốn về 100 triệu phải nhân đôi số tiền còn lại, tức tăng 100%, không phải 50%."
+   ],
+   [
+    "h2",
+    "Bảng tính nhanh"
+   ],
+   [
+    "ul",
+    [
+     "Lỗ 10% → cần lãi 11,1%.",
+     "Lỗ 20% → cần lãi 25,0%.",
+     "Lỗ 30% → cần lãi 42,9%.",
+     "Lỗ 40% → cần lãi 66,7%.",
+     "Lỗ 50% → cần lãi 100%.",
+     "Lỗ 61% → cần lãi khoảng 156%.",
+     "Lỗ 75% → cần lãi 300%."
+    ]
+   ],
+   [
+    "p",
+    "Bạn có thể thấy con số cần lãi tăng nhanh hơn nhiều so với con số đã lỗ. Từ mức lỗ khoảng 30% trở đi, quãng đường quay lại bắt đầu rất dốc."
+   ],
+   [
+    "h2",
+    "Ví dụ thật: VN-Index năm 2025"
+   ],
+   [
+    "p",
+    "Theo dữ liệu giá đóng cửa tổng hợp, ngày 17/3/2025 VN-Index đóng cửa 1.336,26 điểm. Ngày 9/4/2025 còn 1.094,30 điểm, giảm 18,1%. Để về lại đỉnh cũ cần tăng khoảng 22,1%. Chỉ số đã làm được điều này vào ngày 27/5/2025, tức khoảng 10 tuần tính từ đỉnh. Một cổ phiếu riêng lẻ có thể rơi sâu hơn nhiều: cổ phiếu VIX từ đỉnh 31.850 đồng (15/10/2025) xuống 12.450 đồng (28/10/2026), giảm khoảng 61% và cần tăng khoảng 156% để về lại đỉnh. Đây là mô tả quá khứ, không phải dự báo."
+   ],
+   [
+    "h2",
+    "Lỗ nhỏ lặp lại cũng cộng dồn"
+   ],
+   [
+    "p",
+    "Lỗ 10% liên tiếp 5 lần không phải lỗ 50% mà còn khoảng 59% vốn, vì mỗi lần lỗ tính trên số tiền còn lại (0,9 mũ 5 ≈ 0,59). Muốn về lại ban đầu cần lãi khoảng 69,3%. Nghĩa là cắt lỗ chỉ có ích khi mỗi lần cắt đủ nhỏ so với lợi nhuận của những lần thắng."
+   ],
+   [
+    "h2",
+    "Dùng bảng này để đặt giới hạn lỗ"
+   ],
+   [
+    "ol",
+    [
+     "Trước khi mua, viết ra mức lỗ tối đa chấp nhận được cho khoản này theo phần trăm tổng vốn. Xem <a href='/f0/stop-loss-bao-nhieu-phan-tram.html'>stop loss bao nhiêu phần trăm</a>.",
+     "Đừng chờ “tăng bằng mức đã giảm”: hãy tính mức cần lãi thật bằng công thức.",
+     "Chia vốn để một cổ phiếu rơi 50% không phá hỏng cả danh mục. Xem <a href='/f0/quan-tri-von-la-gi.html'>quản trị vốn là gì</a>.",
+     "Tránh margin: đòn bẩy đưa bạn tới vùng dốc nhanh hơn. Xem <a href='/f0/margin-la-gi.html'>margin là gì</a>.",
+     "Với tích sản dài hạn, kỷ luật góp đều giúp bạn không phải đoán điểm vào. Xem <a href='/f0/tich-san-chung-khoan-la-gi.html'>tích sản chứng khoán là gì</a>."
+    ]
+   ],
+   [
+    "p",
+    "Điều cần nhớ: giữ vốn trước, kiếm lãi sau. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Lỗ 50% cần lãi bao nhiêu để hòa vốn?",
+    "Cần lãi 100%, tức giá phải tăng gấp đôi, vì số vốn còn lại chỉ bằng một nửa ban đầu."
+   ],
+   [
+    "Công thức tính mức lãi cần để hòa vốn là gì?",
+    "Mức lãi cần = 1 ÷ (1 − mức lỗ) − 1, với mức lỗ viết dưới dạng số thập phân."
+   ],
+   [
+    "Vì sao nên cắt lỗ sớm?",
+    "Vì lỗ càng sâu thì mức lãi cần để hòa vốn càng tăng nhanh, quãng đường quay lại càng dài."
+   ]
+  ],
+  "rel": [
+   "cat-lo-la-gi",
+   "stop-loss-bao-nhieu-phan-tram",
+   "quan-tri-von-la-gi",
+   "margin-la-gi",
+   "tich-san-chung-khoan-la-gi"
+  ],
+  "add": []
+ },
+ {
+  "slug": "pe-trailing-va-pe-forward-la-gi",
+  "kw": "P/E trailing và P/E forward",
+  "grp": 3,
+  "title": "P/E trailing và P/E forward là gì? Khác nhau ở đâu?",
+  "desc": "P/E trailing tính trên lợi nhuận 4 quý đã qua, P/E forward tính trên dự phóng. Cách phân biệt, ví dụ tính và bẫy khi lợi nhuận tăng nhanh hoặc giảm.",
+  "body": [
+   [
+    "p",
+    "Khi tra cổ phiếu, bạn thường thấy một con số P/E duy nhất. Thực ra có hai cách tính phổ biến: <b>P/E trailing</b> (dựa trên quá khứ) và <b>P/E forward</b> (dựa trên dự phóng). Hiểu sự khác nhau giúp bạn tránh kết luận sai khi lợi nhuận đang thay đổi nhanh. Nếu chưa quen khái niệm, xem trước <a href='/f0/pe-la-gi.html'>P/E là gì</a>."
+   ],
+   [
+    "h2",
+    "P/E trailing: nhìn vào gương chiếu hậu"
+   ],
+   [
+    "p",
+    "P/E trailing bằng giá cổ phiếu chia cho lợi nhuận trên mỗi cổ phiếu (EPS) của 4 quý gần nhất đã công bố. Ưu điểm: dựa trên số thật, không cần dự đoán. Nhược điểm: phản ánh quá khứ, chậm hơn thực tế khi doanh nghiệp đang thay đổi. Hầu hết bảng giá và trang dữ liệu mặc định dùng P/E trailing. Ví dụ theo dữ liệu tổng hợp ngày 28/10/2026, P/E trailing của MBB khoảng 5,8, CTG khoảng 5,75, ACB khoảng 7,32, TCB khoảng 7,94 và VCB khoảng 10,75."
+   ],
+   [
+    "h2",
+    "P/E forward: nhìn về phía trước"
+   ],
+   [
+    "p",
+    "P/E forward bằng giá chia cho EPS dự phóng của 4 quý tới hoặc năm tới, do doanh nghiệp, công ty chứng khoán hoặc chính bạn ước tính. Ưu điểm: phản ánh kỳ vọng tăng trưởng. Nhược điểm: dự phóng có thể sai và có thể quá lạc quan. Không có con số P/E forward “chuẩn” cho mọi người, nên khi dùng cần ghi rõ giả định."
+   ],
+   [
+    "h2",
+    "Ví dụ minh họa (giả định)"
+   ],
+   [
+    "p",
+    "Cổ phiếu A giá 20.000 đồng, EPS 4 quý qua là 2.000 đồng, P/E trailing = 10. Nếu lợi nhuận được dự phóng tăng 25% trong năm tới, EPS dự phóng 2.500 đồng thì P/E forward = 20.000 ÷ 2.500 = 8. Nhìn P/E trailing, cổ phiếu có vẻ đắt hơn thực tế; nhìn P/E forward, cổ phiếu có vẻ rẻ hơn. Ngược lại, nếu lợi nhuận được dự phóng giảm 25%, EPS còn 1.500 đồng, P/E forward = 13,3, đắt hơn so với con số 10 bạn đang thấy."
+   ],
+   [
+    "h2",
+    "Khi nào hai con số lệch nhau nhiều?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Lợi nhuận đang tăng nhanh:</b> P/E trailing nhìn cao hơn thực tế. Ví dụ quý 3/2026, lợi nhuận MBB tăng 44,3% so với cùng kỳ, nên EPS 4 quý phản ánh chưa đầy đủ tốc độ gần đây.",
+     "<b>Lợi nhuận đang giảm:</b> P/E trailing nhìn thấp hơn thực tế, dễ tạo ảo giác rẻ. Đây là bẫy kinh điển, nhất là với cổ phiếu chu kỳ; xem <a href='/f0/co-phieu-chu-ky-la-gi.html'>cổ phiếu chu kỳ là gì</a>.",
+     "<b>Có khoản bất thường:</b> khoản thu một lần làm EPS trailing và cả dự phóng sai lệch."
+    ]
+   ],
+   [
+    "h2",
+    "Cách dùng cho người mới"
+   ],
+   [
+    "ol",
+    [
+     "Luôn kiểm tra P/E trailing đang tính trên 4 quý nào, và quý mới nhất so với cùng kỳ ra sao.",
+     "Nếu lợi nhuận quý gần nhất đi lệch mạnh so với bình quân 4 quý, hãy cẩn thận với P/E trailing.",
+     "Tự ước tính EPS cho một kịch bản thận trọng, một kịch bản trung bình, một kịch bản lạc quan, rồi tính P/E forward cho cả ba.",
+     "So P/E với doanh nghiệp cùng ngành và với P/B, ROE. Xem <a href='/f0/pb-la-gi.html'>P/B là gì</a> và <a href='/f0/roe-eps-la-gi.html'>ROE và EPS</a>.",
+     "Không dùng một chỉ số đơn lẻ để kết luận rẻ hay đắt."
+    ]
+   ],
+   [
+    "p",
+    "Nhớ rằng dự phóng chỉ là ước tính; kết quả thực tế có thể khác. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "P/E trailing và P/E forward cái nào tốt hơn?",
+    "Không cái nào hơn hẳn: trailing dựa trên số thật nhưng chậm, forward phản ánh kỳ vọng nhưng có thể sai; nên dùng cả hai."
+   ],
+   [
+    "P/E trailing là gì?",
+    "Là giá chia cho EPS của 4 quý gần nhất đã công bố, dùng phổ biến trên bảng giá và trang dữ liệu."
+   ],
+   [
+    "Vì sao P/E thấp có thể là bẫy?",
+    "Nếu lợi nhuận đang giảm, EPS dự phóng sẽ thấp hơn EPS quá khứ, khiến P/E thực tế cao hơn con số bạn thấy."
+   ]
+  ],
+  "rel": [
+   "pe-la-gi",
+   "pb-la-gi",
+   "roe-eps-la-gi",
+   "co-phieu-chu-ky-la-gi"
+  ],
+  "add": []
  }
 ]
