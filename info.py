@@ -170,6 +170,29 @@ def reports():
     return out
 
 
+def wi_cs(fd):
+    """Đồng bộ P/B và ROE theo định nghĩa WiData (data/wi_cs.bin do việc chạy hằng ngày lấy từ WiData MCP).
+    BVPS WiData = (Tổng TS − TSCĐ vô hình − Nợ − CĐ thiểu số)/CPLH; ROE = LNST/VCSH bình quân."""
+    w = (hncodec.load("data/wi_cs.bin", {}) or {}).get("d") or {}
+    if not w:
+        return
+    F = fd["f"]; ix = {k: i for i, k in enumerate(F)}
+    n = 0
+    for c, r in fd["d"].items():
+        x = w.get(c)
+        if not x:
+            continue
+        pe, eps = r[ix["pe"]], r[ix["eps"]]
+        if x.get("bvps"):
+            r[ix["bvps"]] = int(round(x["bvps"]))
+            if pe and eps:
+                r[ix["pb"]] = round(pe * eps / x["bvps"], 2)
+        if x.get("roe") is not None:
+            r[ix["roe"]] = round(x["roe"] * 100, 1)
+        n += 1
+    print("đồng bộ WiData", n)
+
+
 def main():
     os.makedirs("data", exist_ok=True)
     ev = events()
@@ -185,6 +208,7 @@ def main():
     codes = sorted(set(r[0] for r in syms if r[1] in ("H", "X", "U") and stock(r[0])))
     if codes:
         fd = fund(codes)
+        wi_cs(fd)
         print("chỉ số", len(fd["d"]), put("data/fund.bin", "v", fd))
 
 
