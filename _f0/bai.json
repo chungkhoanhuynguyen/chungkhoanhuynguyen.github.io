@@ -10379,7 +10379,8 @@
    "ho-tro-khang-cu",
    "khoi-luong-giao-dich-va-dong-tien",
    "mo-hinh-nen-nhat-co-ban"
-  ]
+  ],
+  "canon": "mo-hinh-vai-dau-vai-la-gi"
  },
  {
   "slug": "fed-tang-giam-lai-suat-tac-dong",
@@ -16649,6 +16650,737 @@
    "breakout-la-gi",
    "ho-tro-khang-cu",
    "mo-hinh-cai-coc-tay-cam"
+  ],
+  "add": []
+ },
+ {
+  "slug": "stop-loss-bao-nhieu-phan-tram",
+  "kw": "stop loss bao nhiêu phần trăm",
+  "grp": 5,
+  "title": "Stop loss bao nhiêu phần trăm? Cách đặt điểm cắt lỗ hợp lý",
+  "desc": "Stop loss nên đặt bao nhiêu phần trăm? 3 cách đặt điểm cắt lỗ theo tỷ lệ, vùng hỗ trợ và rủi ro vốn, kèm ví dụ tính khối lượng cho người mới.",
+  "body": [
+   [
+    "p",
+    "<b>Stop loss</b> (điểm cắt lỗ) là mức giá được đặt trước, tại đó nhà đầu tư sẵn sàng bán để dừng một khoản lỗ. Không có con số “đúng cho mọi người”, vì phần trăm cắt lỗ phụ thuộc vào cổ phiếu biến động mạnh hay yếu, khung thời gian đầu tư và số tiền anh chị chấp nhận mất. Bài này giúp anh chị chọn cách đặt thay vì chép một con số."
+   ],
+   [
+    "h2",
+    "Vì sao cần điểm cắt lỗ?"
+   ],
+   [
+    "p",
+    "Lỗ càng sâu thì đường quay lại càng dài. Lỗ 10% cần lãi khoảng 11,1% để hòa vốn; lỗ 30% cần lãi 42,9%; lỗ 50% cần lãi 100%, tức giá phải tăng gấp đôi. Điểm cắt lỗ giúp một sai lầm nhỏ không biến thành khoản lỗ lớn, đồng thời giữ lại vốn để mua cơ hội tiếp theo."
+   ],
+   [
+    "h2",
+    "Ba cách đặt stop loss phổ biến"
+   ],
+   [
+    "ol",
+    [
+     "<b>Theo tỷ lệ cố định:</b> cắt khi giá giảm 5–10% so với giá mua, thường dùng cho giao dịch ngắn hạn. Ưu điểm là đơn giản; nhược điểm là không tính đến độ biến động riêng của từng mã.",
+     "<b>Theo vùng hỗ trợ:</b> đặt ngay dưới một mức hỗ trợ kỹ thuật như đáy gần nhất hoặc đường trung bình quan trọng. Nếu giá thủng hỗ trợ, lý do mua ban đầu coi như sai. Xem thêm bài <a href='/f0/ho-tro-khang-cu.html'>hỗ trợ và kháng cự</a>.",
+     "<b>Theo độ biến động:</b> dùng ATR (biên độ dao động thực trung bình) nhân hệ số 1,5–2 để đặt khoảng cách. Mã dao động mạnh cần khoảng cách rộng hơn mã dao động nhẹ."
+    ]
+   ],
+   [
+    "h2",
+    "Tính khối lượng để lỗ không vượt mức chấp nhận"
+   ],
+   [
+    "p",
+    "Cách làm có kỷ luật là bắt đầu từ số tiền chấp nhận mất, thường 1–2% tổng vốn cho mỗi lệnh, rồi mới tính khối lượng. Công thức: <b>Khối lượng = (Vốn × % rủi ro) ÷ (Giá mua − Giá cắt lỗ)</b>."
+   ],
+   [
+    "p",
+    "Ví dụ giả định: vốn 200 triệu đồng, chấp nhận mất 1% (2 triệu). Mua ở 40.000 đồng, cắt lỗ ở 37.000 đồng, chênh 3.000 đồng mỗi cổ phiếu. Khối lượng tối đa là 2.000.000 ÷ 3.000 ≈ 666, làm tròn xuống 600 cổ phiếu. Vốn bỏ ra khoảng 24 triệu (12% tài khoản). Nếu chạm điểm cắt lỗ, khoản mất là 600 × 3.000 = 1,8 triệu, khoảng 0,9% vốn. Cùng một điểm cắt lỗ nhưng mua ít hơn thì lỗ nhỏ hơn."
+   ],
+   [
+    "h2",
+    "Lưu ý riêng khi giao dịch ở Việt Nam"
+   ],
+   [
+    "ul",
+    [
+     "Biên độ giá mỗi phiên là ±7% trên HOSE, ±10% trên HNX và ±15% trên UPCoM. Cổ phiếu thanh khoản thấp có thể giảm sàn nhiều phiên liền mà không có người mua, lệnh bán không khớp. Xem <a href='/f0/bien-do-gia-tran-san.html'>biên độ giá trần sàn</a>.",
+     "Giao dịch T+2: cổ phiếu mua hôm nay chưa bán được ngay, nên điểm cắt lỗ phải tính cho cả những phiên chờ hàng về. Xem <a href='/f0/t-2-la-gi.html'>T+2 là gì</a>.",
+     "Một số công ty chứng khoán có lệnh điều kiện để tự động bán khi chạm giá; hãy kiểm tra điều kiện, thời hạn hiệu lực và phí trước khi dùng. Xem <a href='/f0/lenh-dieu-kien-la-gi.html'>lệnh điều kiện</a>.",
+     "Với người tích sản dài hạn, tiêu chí bán thường dựa vào doanh nghiệp (lợi nhuận, nợ xấu, quản trị) nhiều hơn là một con số phần trăm của giá."
+    ]
+   ],
+   [
+    "h2",
+    "Ba sai lầm hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "Đặt điểm cắt lỗ rồi dời xa hơn mỗi khi giá đến gần vì “chưa muốn chịu lỗ”. Chỉ nên dời điểm cắt lỗ theo hướng có lợi, tức nâng lên khi giá tăng.",
+     "Đặt quá sát nên bị “quét” bởi dao động bình thường trong phiên. Hãy so khoảng cách với biên độ dao động thường ngày của mã.",
+     "Không ghi kế hoạch trước khi mua. Hãy viết ra giá mua, điểm cắt lỗ và lý do, rồi làm đúng điều đã viết."
+    ]
+   ],
+   [
+    "p",
+    "Điểm cắt lỗ không đảm bảo thắng; nó chỉ giúp thua có kiểm soát. Đọc thêm <a href='/f0/cat-lo-la-gi.html'>cắt lỗ là gì</a> và <a href='/f0/ty-le-thang-va-ty-le-loi-lo.html'>tỷ lệ thắng và tỷ lệ lời lỗ</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Cắt lỗ 5%, 7% hay 10%?",
+    "Không có con số cố định. Giao dịch ngắn hạn thường dùng khoảng 5–8%, mã biến động mạnh cần rộng hơn. Điều quan trọng hơn là số tiền mất mỗi lệnh không vượt 1–2% tổng vốn."
+   ],
+   [
+    "Có nên dời điểm cắt lỗ xa hơn khi giá đi ngược?",
+    "Không nên dời xa chỉ vì chưa muốn chịu lỗ. Nếu sau khi mua có thông tin mới làm thay đổi nhận định thì nên đánh giá lại cả kế hoạch, thay vì chỉ sửa con số."
+   ],
+   [
+    "Cắt lỗ xong giá tăng lại thì sao?",
+    "Điều này sẽ thỉnh thoảng xảy ra và là cái giá của việc bảo vệ vốn. Anh chị có thể mua lại nếu có tín hiệu và kế hoạch mới, nhưng phải tính như một lệnh mới."
+   ]
+  ],
+  "rel": [
+   "cat-lo-la-gi",
+   "ty-le-thang-va-ty-le-loi-lo",
+   "phan-bo-von-va-quan-tri-danh-muc",
+   "bien-do-gia-tran-san"
+  ],
+  "add": []
+ },
+ {
+  "slug": "co-nen-mua-co-phieu-khi-thi-truong-giam",
+  "kw": "có nên mua cổ phiếu khi thị trường giảm",
+  "grp": 5,
+  "title": "Có nên mua cổ phiếu khi thị trường giảm? 4 câu hỏi cần trả lời",
+  "desc": "Thị trường giảm có nên mua cổ phiếu? 4 câu hỏi về kế hoạch, vốn, doanh nghiệp và kỷ luật trước khi quyết định, cùng ví dụ chia vốn thành nhiều đợt.",
+  "body": [
+   [
+    "p",
+    "Khi chỉ số giảm nhiều phiên, hai ý nghĩ thường xuất hiện cùng lúc: “giá rẻ rồi, mua thôi” và “còn giảm nữa thì sao”. Cả hai đều chưa phải câu trả lời. Việc có nên mua hay không phụ thuộc vào kế hoạch của từng người chứ không phụ thuộc vào cảm giác. Bài này đưa ra bốn câu hỏi để tự kiểm tra trước khi đặt lệnh."
+   ],
+   [
+    "h2",
+    "Giá giảm chưa chắc là giá rẻ"
+   ],
+   [
+    "p",
+    "Giá giảm chỉ cho biết cổ phiếu đang rẻ hơn hôm qua, chưa cho biết nó có rẻ so với giá trị. Nếu lợi nhuận của doanh nghiệp cũng đi xuống thì giá thấp hơn có thể hoàn toàn hợp lý. Hãy xem lợi nhuận, nợ vay và dòng tiền trước, rồi mới so với <a href='/f0/pe-la-gi.html'>P/E</a> hay <a href='/f0/pb-la-gi.html'>P/B</a>. Chênh lệch giữa các doanh nghiệp rất lớn: trong quý 3/2026, nhóm ngân hàng có nơi lãi tăng hơn 50% so với cùng kỳ, cũng có nơi giảm hơn 60% (dữ liệu tổng hợp 2/11/2026), dù cùng một ngành."
+   ],
+   [
+    "h2",
+    "Bốn câu hỏi trước khi mua"
+   ],
+   [
+    "ol",
+    [
+     "<b>Mình mua để làm gì và giữ bao lâu?</b> Giao dịch vài tuần và tích sản nhiều năm cần cách xử lý khác nhau. Người tích sản có thể chia nhỏ nhiều đợt; người lướt sóng cần điểm cắt lỗ rõ ràng.",
+     "<b>Số tiền này có cần dùng trong 1–2 năm tới không?</b> Tiền cần cho việc gấp (học phí, sửa nhà, quỹ dự phòng) không nên đưa vào cổ phiếu, kể cả lúc giá đang giảm.",
+     "<b>Mình hiểu doanh nghiệp này kiếm tiền thế nào?</b> Nếu không giải thích được bằng vài câu, hãy dành thêm thời gian tìm hiểu.",
+     "<b>Nếu giảm thêm 20–30% mình sẽ làm gì?</b> Nếu câu trả lời là hoảng loạn bán hoặc vay thêm để bình quân giá, kế hoạch đang quá rủi ro."
+    ]
+   ],
+   [
+    "h2",
+    "Cách thực tế: chia vốn thành nhiều đợt"
+   ],
+   [
+    "p",
+    "Thay vì dùng toàn bộ tiền một lần, anh chị có thể chia thành vài đợt cách nhau theo thời gian hoặc theo mức giá. Ví dụ giả định: dự định đầu tư 90 triệu đồng vào một doanh nghiệp đã tìm hiểu kỹ. Chia ba đợt 30 triệu: một đợt ngay, một đợt sau một tháng, một đợt sau hai tháng. Nếu giá giảm thêm, đợt sau mua được nhiều cổ phiếu hơn; nếu giá tăng lại, anh chị vẫn có phần đã mua. Không cách nào đảm bảo mua đúng đáy, nhưng cách này giảm áp lực phải đoán đúng một điểm duy nhất. Xem thêm <a href='/f0/mua-trung-binh-gia-dca.html'>mua trung bình giá (DCA)</a>."
+   ],
+   [
+    "h2",
+    "Điều không nên làm khi thị trường giảm"
+   ],
+   [
+    "ul",
+    [
+     "Dùng <a href='/f0/margin-la-gi.html'>margin</a> để mua thêm. Khi giá tiếp tục giảm, bị gọi ký quỹ là lúc buộc phải bán ở mức giá thấp nhất. Xem <a href='/f0/call-margin-la-gi.html'>call margin là gì</a>.",
+     "Bình quân giá xuống liên tục với cổ phiếu có lợi nhuận đang xấu đi. Xem <a href='/f0/dung-lo-dong-trung-binh-gia-xuong.html'>trung bình giá xuống: vì sao F0 dễ gồng lỗ sai cách</a> trước khi làm.",
+     "Bán toàn bộ ngay tại vùng giảm mạnh chỉ vì sợ. Quyết định bán nên dựa vào lý do đã ghi trong kế hoạch, không phải tâm trạng trong ngày.",
+     "Dồn hết tiền vào một mã. Phân bổ vốn quan trọng hơn việc chọn đúng thời điểm."
+    ]
+   ],
+   [
+    "p",
+    "Nếu anh chị tích sản đều đặn thì thị trường giảm là giai đoạn cùng số tiền mua được nhiều cổ phiếu hơn, miễn là doanh nghiệp vẫn kiếm được tiền và anh chị đủ kiên nhẫn. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Thị trường giảm có phải lúc tốt để mua cổ phiếu không?",
+    "Có thể là cơ hội với doanh nghiệp tốt, nhưng cũng có thể giảm tiếp. Điều quan trọng là mua theo kế hoạch, chia vốn thành nhiều đợt và không dùng tiền cần dùng gấp."
+   ],
+   [
+    "Có nên mua cổ phiếu bằng margin khi thị trường giảm?",
+    "Không nên khi mới bắt đầu. Vay ký quỹ khuếch đại cả lãi và lỗ, và nếu giá giảm tiếp thì có thể bị buộc bán ở mức giá thấp."
+   ],
+   [
+    "Làm sao biết thị trường đã chạm đáy?",
+    "Rất khó biết trước. Vì vậy nhiều nhà đầu tư chia vốn thành nhiều đợt thay vì cố mua đúng đáy."
+   ]
+  ],
+  "rel": [
+   "mua-trung-binh-gia-dca",
+   "margin-la-gi",
+   "tam-ly-fomo-va-hoang-loan",
+   "dung-lo-dong-trung-binh-gia-xuong"
+  ],
+  "add": []
+ },
+ {
+  "slug": "thu-nhap-lai-thuan-la-gi",
+  "kw": "thu nhập lãi thuần là gì",
+  "grp": 3,
+  "title": "Thu nhập lãi thuần là gì? Cách đọc trong báo cáo ngân hàng",
+  "desc": "Thu nhập lãi thuần là phần chênh lệch lãi cho vay và lãi huy động, nguồn thu cốt lõi của ngân hàng. Cách đọc và số liệu quý 3/2026 của CTG, VCB, VPB.",
+  "body": [
+   [
+    "p",
+    "<b>Thu nhập lãi thuần</b> (NII) là tiền lãi ngân hàng thu từ cho vay và đầu tư, trừ đi tiền lãi phải trả cho người gửi tiền và các khoản vay. Với đa số ngân hàng Việt Nam, đây là nguồn thu lớn nhất và ổn định nhất, thường chiếm phần lớn tổng thu nhập hoạt động. Khi đọc báo cáo kết quả kinh doanh của ngân hàng, đây là dòng nên xem đầu tiên."
+   ],
+   [
+    "h2",
+    "Công thức và ví dụ"
+   ],
+   [
+    "p",
+    "Thu nhập lãi thuần = Thu nhập lãi và các khoản tương tự − Chi phí lãi và các khoản tương tự. Ví dụ giả định: ngân hàng thu 1.000 tỷ đồng tiền lãi cho vay, trả 650 tỷ tiền lãi huy động thì thu nhập lãi thuần là 350 tỷ đồng. Khoản này được dùng để trả chi phí vận hành, trích dự phòng rủi ro, nộp thuế, phần còn lại mới là lợi nhuận."
+   ],
+   [
+    "h2",
+    "Số liệu thật quý 3/2026"
+   ],
+   [
+    "p",
+    "Theo báo cáo tài chính quý 3/2026 (dữ liệu tổng hợp 2/11/2026), thu nhập lãi thuần quý này của CTG là 21.816 tỷ đồng, VCB 20.386 tỷ, VPB 18.158 tỷ, MBB 17.836 tỷ và BID 17.056 tỷ. Cộng bốn quý gần nhất, CTG đạt khoảng 79.891 tỷ, tăng 23,3% so với bốn quý trước đó; VCB khoảng 73.446 tỷ, tăng 30,3%."
+   ],
+   [
+    "p",
+    "Lưu ý nhỏ: con số bốn quý gần nhất là tự tính bằng cách cộng các quý Q4/2025 đến Q3/2026, có thể chênh nhẹ so với số công bố trong báo cáo thường niên."
+   ],
+   [
+    "h2",
+    "Vì sao nên xem riêng dòng này?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Đó là nguồn thu lặp lại.</b> Lãi từ cho vay đến mỗi quý, trong khi lãi dịch vụ hay hoàn nhập dự phòng có thể chỉ xuất hiện một lần. Xem thêm <a href='/f0/thu-nhap-ngoai-lai-ngan-hang.html'>thu nhập ngoài lãi</a>.",
+     "<b>Lợi nhuận tăng nhưng lõi chưa chắc tăng.</b> Trong quý 3/2026, thu nhập lãi thuần của NAB giảm 13,5% so với cùng kỳ nhưng lợi nhuận vẫn tăng 23,0%, nhờ lãi dịch vụ. Đây là dạng tăng trưởng cần theo dõi thêm vài quý.",
+     "<b>Nó cho biết quy mô cho vay.</b> Thu nhập lãi thuần tăng thường đi cùng <a href='/f0/tang-truong-tin-dung-la-gi.html'>tăng trưởng tín dụng</a> hoặc biên lãi cải thiện."
+    ]
+   ],
+   [
+    "h2",
+    "Liên hệ với NIM"
+   ],
+   [
+    "p",
+    "Thu nhập lãi thuần là số tiền tuyệt đối, còn <a href='/f0/nim-la-gi.html'>NIM</a> là tỷ lệ của số đó trên tài sản sinh lãi. Hai ngân hàng có thu nhập lãi thuần bằng nhau nhưng quy mô khác nhau sẽ có NIM khác nhau. Ví dụ NIM quý 3/2026 của VPB khoảng 4,56%, MBB khoảng 3,72%, trong khi EIB khoảng 1,97%. Nên dùng cả hai chỉ số cùng nhau."
+   ],
+   [
+    "h2",
+    "Cách theo dõi qua nhiều quý"
+   ],
+   [
+    "ol",
+    [
+     "So sánh với cùng kỳ năm trước để loại yếu tố mùa vụ.",
+     "So với quý liền trước để thấy nhịp gần nhất.",
+     "Đặt cạnh lợi nhuận sau thuế để biết lợi nhuận tăng nhờ lõi cho vay hay nhờ khoản khác.",
+     "Xem cùng <a href='/f0/chi-phi-du-phong-la-gi.html'>chi phí dự phòng</a> và <a href='/f0/no-xau-ngan-hang-la-gi.html'>nợ xấu</a> để biết chất lượng tăng trưởng."
+    ]
+   ],
+   [
+    "p",
+    "Xem thêm bảng tích sản ngân hàng với số liệu thật tại <a href='/bao-cao-2026.html#tichsan'>Báo cáo 2026 – bảng tích sản</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Thu nhập lãi thuần khác lợi nhuận thế nào?",
+    "Thu nhập lãi thuần là khoản thu cốt lõi trước chi phí vận hành, dự phòng và thuế. Lợi nhuận là phần còn lại sau khi trừ các khoản đó."
+   ],
+   [
+    "Thu nhập lãi thuần giảm có phải xấu không?",
+    "Thường là tín hiệu cần chú ý, vì lõi cho vay yếu đi. Tuy vậy cần xem nguyên nhân, ví dụ ngân hàng chủ động giảm lãi cho vay hay nhu cầu tín dụng yếu."
+   ],
+   [
+    "Xem thu nhập lãi thuần ở đâu?",
+    "Trong báo cáo kết quả kinh doanh của ngân hàng, dòng “Thu nhập lãi thuần”; trên web này có trong phần đánh giá BCTC từng mã ngân hàng."
+   ]
+  ],
+  "rel": [
+   "nim-la-gi",
+   "doc-bctc-ngan-hang",
+   "chi-phi-du-phong-la-gi",
+   "thu-nhap-ngoai-lai-ngan-hang"
+  ],
+  "add": []
+ },
+ {
+  "slug": "cir-la-gi",
+  "kw": "CIR là gì",
+  "grp": 3,
+  "title": "CIR là gì? Tỷ lệ chi phí trên thu nhập của ngân hàng",
+  "desc": "CIR là tỷ lệ chi phí hoạt động trên tổng thu nhập của ngân hàng, thước đo hiệu quả vận hành. Công thức, cách đọc CIR bao nhiêu là tốt và ví dụ cụ thể.",
+  "body": [
+   [
+    "p",
+    "<b>CIR</b> (Cost-to-Income Ratio) là tỷ lệ chi phí hoạt động trên tổng thu nhập hoạt động của ngân hàng. Nói đơn giản, CIR cho biết ngân hàng phải bỏ ra bao nhiêu đồng chi phí để kiếm 100 đồng thu nhập. Chỉ số này càng thấp thì ngân hàng vận hành càng gọn, giữ lại được nhiều lợi nhuận hơn trước khi trích dự phòng rủi ro."
+   ],
+   [
+    "h2",
+    "Công thức tính CIR"
+   ],
+   [
+    "p",
+    "CIR = Chi phí hoạt động ÷ Tổng thu nhập hoạt động × 100%. Trong đó chi phí hoạt động gồm lương nhân viên, thuê trụ sở, công nghệ, marketing, khấu hao; không gồm chi phí dự phòng rủi ro tín dụng. Tổng thu nhập hoạt động gồm thu nhập lãi thuần, lãi dịch vụ, lãi kinh doanh ngoại hối, chứng khoán và các khoản thu khác."
+   ],
+   [
+    "p",
+    "Ví dụ giả định: một ngân hàng có tổng thu nhập hoạt động 10.000 tỷ đồng, chi phí hoạt động 3.500 tỷ đồng thì CIR là 35%. Nghĩa là cứ 100 đồng thu nhập, 35 đồng dùng cho vận hành, còn 65 đồng để trích dự phòng, nộp thuế và tạo lợi nhuận."
+   ],
+   [
+    "h2",
+    "CIR bao nhiêu là tốt?"
+   ],
+   [
+    "ul",
+    [
+     "Không có ngưỡng tuyệt đối, nhưng nhiều tài liệu phân tích thường xem mức dưới khoảng 40% là hiệu quả, 40–50% là trung bình và trên 50% là cần xem xét thêm.",
+     "Nên so sánh trong cùng nhóm: ngân hàng bán lẻ có nhiều chi nhánh thường có CIR cao hơn ngân hàng tập trung khách hàng doanh nghiệp.",
+     "Một ngân hàng đang đầu tư mạnh vào công nghệ có thể tạm thời có CIR cao hơn, nhưng cần thấy thu nhập tăng theo ở các quý sau."
+    ]
+   ],
+   [
+    "h2",
+    "Đọc CIR cùng các chỉ số khác"
+   ],
+   [
+    "p",
+    "CIR thấp chưa chắc ngân hàng tốt. Nếu ngân hàng cắt giảm chi phí nhưng chất lượng dịch vụ và tăng trưởng suy yếu, hoặc CIR thấp vì thu nhập tăng đột biến một lần, thì con số đẹp chưa phản ánh sức khỏe thật. Hãy xem cùng:"
+   ],
+   [
+    "ol",
+    [
+     "<a href='/f0/nim-la-gi.html'>NIM</a>: ngân hàng kiếm được bao nhiêu trên mỗi đồng tài sản sinh lãi.",
+     "<a href='/f0/chi-phi-du-phong-la-gi.html'>Chi phí dự phòng</a>: phần tiền phải trích để phòng nợ xấu, không nằm trong CIR nhưng ảnh hưởng mạnh đến lợi nhuận.",
+     "<a href='/f0/no-xau-ngan-hang-la-gi.html'>Nợ xấu</a> và <a href='/f0/bao-phu-no-xau-la-gi.html'>bao phủ nợ xấu</a>: chất lượng tài sản.",
+     "<a href='/f0/roe-eps-la-gi.html'>ROE</a>: hiệu quả sử dụng vốn của cổ đông."
+    ]
+   ],
+   [
+    "h2",
+    "Tìm CIR ở đâu?"
+   ],
+   [
+    "p",
+    "Nhiều ngân hàng công bố CIR trong báo cáo thường niên hoặc tài liệu cho nhà đầu tư. Nếu không có, anh chị có thể tự tính từ báo cáo kết quả kinh doanh: lấy dòng “Chi phí hoạt động” chia cho “Tổng thu nhập hoạt động”. Với cách tự tính, hãy ghi rõ kỳ báo cáo và dùng số liệu cùng một kỳ để so sánh công bằng. Nên so CIR qua nhiều quý của chính một ngân hàng để thấy xu hướng cải thiện hay xấu đi."
+   ],
+   [
+    "p",
+    "Xem thêm bảng tích sản ngân hàng với số liệu thật tại <a href='/bao-cao-2026.html#tichsan'>Báo cáo 2026 – bảng tích sản</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "CIR cao hay thấp thì tốt?",
+    "CIR thấp thường là tốt hơn, vì ngân hàng tốn ít chi phí hơn để tạo ra mỗi đồng thu nhập. Tuy nhiên cần xem cùng NIM, nợ xấu và tăng trưởng."
+   ],
+   [
+    "CIR có gồm chi phí dự phòng không?",
+    "Không. CIR chỉ tính chi phí hoạt động; chi phí dự phòng rủi ro tín dụng được xem riêng và có thể làm lợi nhuận biến động mạnh."
+   ],
+   [
+    "Có thể so CIR giữa các ngân hàng khác nhau không?",
+    "Có, nhưng nên so các ngân hàng có mô hình kinh doanh gần nhau, và dùng số liệu cùng kỳ."
+   ]
+  ],
+  "rel": [
+   "nim-la-gi",
+   "doc-bctc-ngan-hang",
+   "chi-phi-du-phong-la-gi",
+   "roa-la-gi"
+  ],
+  "add": []
+ },
+ {
+  "slug": "no-nhom-2-la-gi",
+  "kw": "nợ nhóm 2 là gì",
+  "grp": 3,
+  "title": "Nợ nhóm 2 là gì? Khác nợ xấu thế nào, vì sao cần theo dõi",
+  "desc": "Nợ nhóm 2 (nợ cần chú ý) chưa phải nợ xấu nhưng dễ chuyển xấu. Cách phân loại 5 nhóm nợ, vì sao nên theo dõi và số liệu nợ xấu các ngân hàng quý 3/2026.",
+  "body": [
+   [
+    "p",
+    "Khi đọc báo cáo của ngân hàng, anh chị thường thấy con số <b>nợ xấu</b>. Ít người để ý rằng trước khi một khoản vay thành nợ xấu, nó thường đi qua <b>nợ nhóm 2</b>, còn gọi là nợ cần chú ý. Hiểu nhóm này giúp nhận ra áp lực chất lượng tài sản sớm hơn một nhịp."
+   ],
+   [
+    "h2",
+    "Năm nhóm nợ ở ngân hàng"
+   ],
+   [
+    "p",
+    "Theo quy định của Ngân hàng Nhà nước, các khoản nợ được phân thành năm nhóm dựa chủ yếu vào số ngày quá hạn và khả năng trả nợ của khách hàng:"
+   ],
+   [
+    "ol",
+    [
+     "<b>Nhóm 1 – nợ đủ tiêu chuẩn:</b> trả đúng hạn hoặc quá hạn rất ngắn, khách hàng có khả năng trả đầy đủ.",
+     "<b>Nhóm 2 – nợ cần chú ý:</b> quá hạn khoảng từ 10 đến 90 ngày, hoặc khoản nợ được cơ cấu lại thời hạn trả.",
+     "<b>Nhóm 3 – nợ dưới tiêu chuẩn:</b> quá hạn khoảng từ 91 đến 180 ngày.",
+     "<b>Nhóm 4 – nợ nghi ngờ:</b> quá hạn khoảng từ 181 đến 360 ngày.",
+     "<b>Nhóm 5 – nợ có khả năng mất vốn:</b> quá hạn trên 360 ngày hoặc khách hàng mất khả năng trả."
+    ]
+   ],
+   [
+    "p",
+    "Các mốc ngày ở trên chỉ mang tính tóm tắt; từng khoản vay còn chịu các điều kiện cụ thể trong quy định hiện hành, anh chị nên xem thuyết minh báo cáo tài chính của ngân hàng để biết chi tiết."
+   ],
+   [
+    "h2",
+    "Nợ xấu gồm những nhóm nào?"
+   ],
+   [
+    "p",
+    "Nợ xấu là tổng các khoản nợ thuộc nhóm 3, 4 và 5. Nợ nhóm 2 chưa tính vào nợ xấu, nhưng là “vùng đệm” dễ chuyển xấu nếu khách hàng tiếp tục chậm trả. Vì vậy hai ngân hàng có cùng tỷ lệ nợ xấu có thể rất khác nhau nếu một bên có tỷ lệ nợ nhóm 2 cao hơn nhiều."
+   ],
+   [
+    "h2",
+    "Vì sao nên theo dõi nợ nhóm 2?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Dấu hiệu sớm:</b> nợ nhóm 2 tăng nhanh trong vài quý liên tiếp thường báo trước nợ xấu tăng.",
+     "<b>Chi phí dự phòng:</b> khi khoản vay chuyển nhóm, ngân hàng phải trích dự phòng nhiều hơn, làm lợi nhuận giảm. Xem <a href='/f0/chi-phi-du-phong-la-gi.html'>chi phí dự phòng là gì</a>.",
+     "<b>Nợ cơ cấu lại:</b> một phần nợ nhóm 2 đến từ việc cơ cấu thời hạn trả nợ, nên cần đọc thuyết minh để biết khoản nào là cơ cấu."
+    ]
+   ],
+   [
+    "h2",
+    "Số liệu nợ xấu thật quý 3/2026"
+   ],
+   [
+    "p",
+    "Dữ liệu tổng hợp web (cập nhật 2/11/2026) hiện có tỷ lệ nợ xấu quý 3/2026 của nhiều ngân hàng, chưa có dòng nợ nhóm 2 riêng. Mức thấp: VCB 0,71%, ACB 1,19%, TCB 1,27%, VAB 1,38%, NAB 1,61%. Mức cao hơn: SHB 2,22%, EIB 2,62%, MSB 2,70%, VPB 3,12%, VIB 3,20%, OCB 3,99%."
+   ],
+   [
+    "p",
+    "Tỷ lệ nợ xấu chỉ là một mặt; cần xem cùng <a href='/f0/bao-phu-no-xau-la-gi.html'>bao phủ nợ xấu</a>. Cùng quý, bao phủ nợ xấu của VCB khoảng 243%, TCB 107%, ACB 91%, trong khi VIB khoảng 42% và EIB khoảng 41%. So sánh hai chỉ số cho thấy ngân hàng nào có “túi đệm” dày hơn khi nợ xấu tăng."
+   ],
+   [
+    "h2",
+    "Cách đọc ngắn gọn khi xem báo cáo ngân hàng"
+   ],
+   [
+    "ol",
+    [
+     "Xem nợ xấu và nợ nhóm 2 so với quý trước, không chỉ so với cùng kỳ.",
+     "Xem bao phủ nợ xấu và <a href='/f0/chi-phi-du-phong-la-gi.html'>chi phí dự phòng</a> để biết ngân hàng đang trích mạnh hay nhẹ tay.",
+     "Đọc tăng trưởng tín dụng đi cùng, vì tín dụng tăng nhanh thường cần thêm thời gian mới lộ nợ xấu."
+    ]
+   ],
+   [
+    "p",
+    "Xem thêm bảng tích sản ngân hàng với số liệu thật tại <a href='/bao-cao-2026.html#tichsan'>Báo cáo 2026 – bảng tích sản</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Nợ nhóm 2 có phải nợ xấu không?",
+    "Không. Nợ xấu là nợ nhóm 3, 4 và 5. Nợ nhóm 2 là nợ cần chú ý, có nguy cơ chuyển thành nợ xấu nếu khách hàng tiếp tục chậm trả."
+   ],
+   [
+    "Xem nợ nhóm 2 ở đâu?",
+    "Thường nằm trong thuyết minh báo cáo tài chính hoặc báo cáo thường niên của ngân hàng, mục phân loại nợ theo nhóm."
+   ],
+   [
+    "Nợ xấu thấp có đủ để kết luận ngân hàng an toàn?",
+    "Chưa đủ. Cần xem thêm nợ nhóm 2, bao phủ nợ xấu, nợ được cơ cấu lại và tốc độ tăng tín dụng."
+   ]
+  ],
+  "rel": [
+   "no-xau-ngan-hang-la-gi",
+   "bao-phu-no-xau-la-gi",
+   "chi-phi-du-phong-la-gi",
+   "doc-bctc-ngan-hang"
+  ],
+  "add": []
+ },
+ {
+  "slug": "lai-suat-huy-dong-va-loi-nhuan-ngan-hang",
+  "kw": "lãi suất huy động và lợi nhuận ngân hàng",
+  "grp": 3,
+  "title": "Lãi suất huy động tăng, lợi nhuận ngân hàng thay đổi ra sao?",
+  "desc": "Lãi suất huy động tăng làm chi phí vốn của ngân hàng tăng. Cơ chế tác động đến NIM, vai trò của CASA, ví dụ tính và NIM quý 3/2026 của VPB, MBB, VIB.",
+  "body": [
+   [
+    "p",
+    "Tiền gửi của người dân và doanh nghiệp là “nguyên liệu” chính của ngân hàng: nhận tiền với lãi suất huy động, cho vay với lãi suất cao hơn, phần chênh lệch là nguồn thu cốt lõi. Vì vậy khi lãi suất huy động thay đổi, lợi nhuận của ngân hàng có thể thay đổi theo, nhưng mức độ khác nhau giữa từng nhà băng."
+   ],
+   [
+    "h2",
+    "Cơ chế tác động"
+   ],
+   [
+    "p",
+    "Chi phí vốn của ngân hàng tăng khi lãi suất tiền gửi tăng. Nếu lãi suất cho vay không tăng kịp thì biên lãi thuần (<a href='/f0/nim-la-gi.html'>NIM</a>) bị thu hẹp. Ví dụ giả định: một ngân hàng có 500.000 tỷ đồng tiền gửi chịu lãi. Nếu lãi suất huy động bình quân tăng thêm 0,5 điểm phần trăm trong cả năm, chi phí lãi tăng thêm khoảng 500.000 × 0,5% = 2.500 tỷ đồng. Nếu cho vay không tăng giá bán tương ứng, thu nhập lãi thuần giảm đúng bằng ấy."
+   ],
+   [
+    "h2",
+    "Vì sao mỗi ngân hàng chịu tác động khác nhau?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Tỷ trọng tiền gửi không kỳ hạn (CASA):</b> ngân hàng có nhiều CASA có chi phí vốn thấp hơn và ít nhạy với lãi suất tiết kiệm. Xem <a href='/f0/casa-la-gi.html'>CASA là gì</a>.",
+     "<b>Cơ cấu cho vay:</b> khoản vay thả nổi lãi suất điều chỉnh nhanh hơn khoản vay cố định lãi suất.",
+     "<b>Kỳ hạn tiền gửi:</b> tiền gửi dài hạn giữ chi phí cũ lâu hơn, nên tác động đến chậm hơn.",
+     "<b>Phân khúc khách hàng:</b> ngân hàng cho vay phân khúc rủi ro cao thường có lãi cho vay lớn hơn, đệm tốt hơn nhưng nợ xấu cũng cao hơn."
+    ]
+   ],
+   [
+    "h2",
+    "Số liệu NIM quý 3/2026"
+   ],
+   [
+    "p",
+    "Theo dữ liệu tổng hợp trên web (cập nhật 2/11/2026), NIM quý 3/2026 khoảng 4,56% ở VPB, 3,72% ở MBB, 2,83% ở VIB và MSB, 2,62% ở OCB, 2,58% ở TPB, 2,25% ở VAB và 1,97% ở EIB. NIM khác nhau chủ yếu do mô hình kinh doanh và cơ cấu nguồn vốn, không chỉ do lãi suất huy động. NIM cao thường đi kèm cho vay phân khúc rủi ro lớn hơn, nên cần xem cùng nợ xấu, ví dụ nợ xấu VPB quý 3 khoảng 3,12%."
+   ],
+   [
+    "h2",
+    "Lãi suất huy động không phải yếu tố duy nhất"
+   ],
+   [
+    "p",
+    "Lợi nhuận ngân hàng còn phụ thuộc <a href='/f0/tang-truong-tin-dung-la-gi.html'>tăng trưởng tín dụng</a>, <a href='/f0/thu-nhap-ngoai-lai-ngan-hang.html'>thu nhập ngoài lãi</a> và <a href='/f0/chi-phi-du-phong-la-gi.html'>chi phí dự phòng</a>. Quý 3/2026 cho thấy điều đó: thu nhập lãi thuần của NAB giảm 13,5% so với cùng kỳ nhưng lợi nhuận vẫn tăng 23,0% nhờ lãi dịch vụ. Chỉ nhìn một biến số như lãi suất huy động thường dẫn đến kết luận sai."
+   ],
+   [
+    "h2",
+    "Gợi ý cách theo dõi"
+   ],
+   [
+    "ol",
+    [
+     "Xem NIM và thu nhập lãi thuần qua nhiều quý, không chỉ một quý.",
+     "Theo dõi CASA nếu ngân hàng công bố; CASA ổn định thường là điểm đệm khi lãi suất biến động.",
+     "Đọc phần giải trình của ngân hàng về chi phí vốn và kế hoạch điều chỉnh lãi suất cho vay.",
+     "Đặt cạnh tăng trưởng lợi nhuận và nợ xấu để thấy bức tranh đầy đủ."
+    ]
+   ],
+   [
+    "p",
+    "Xem thêm bảng tích sản ngân hàng với số liệu thật tại <a href='/bao-cao-2026.html#tichsan'>Báo cáo 2026 – bảng tích sản</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Lãi suất huy động tăng thì cổ phiếu ngân hàng có giảm không?",
+    "Không có quan hệ cố định. Phụ thuộc ngân hàng có chuyển được chi phí sang lãi suất cho vay không, mức CASA và tăng trưởng tín dụng. Cần xem từng ngân hàng cụ thể."
+   ],
+   [
+    "NIM giảm có nghĩa lợi nhuận giảm?",
+    "Không nhất thiết. Lợi nhuận còn phụ thuộc quy mô tín dụng, thu nhập ngoài lãi và chi phí dự phòng."
+   ],
+   [
+    "CASA cao có lợi gì?",
+    "CASA có chi phí vốn thấp nên thường giúp NIM tốt hơn và ổn định hơn khi lãi suất tiết kiệm biến động."
+   ]
+  ],
+  "rel": [
+   "nim-la-gi",
+   "casa-la-gi",
+   "doc-bctc-ngan-hang",
+   "lai-suat-tang-anh-huong-chung-khoan"
+  ],
+  "add": []
+ },
+ {
+  "slug": "hdpe-la-gi",
+  "kw": "HDPE là gì",
+  "grp": 8,
+  "title": "HDPE là gì? Nhựa HDPE và cổ phiếu ngành nhựa cần biết",
+  "desc": "HDPE là nhựa polyethylene mật độ cao, dùng làm ống nước, ống luồn cáp. Giá hạt nhựa ảnh hưởng ngành nhựa thế nào, số liệu BMP, NTP, AAA quý 3/2026.",
+  "body": [
+   [
+    "p",
+    "<b>HDPE</b> là viết tắt của High-Density Polyethylene, tức nhựa polyethylene mật độ cao. Đây là một trong những loại nhựa được dùng nhiều nhất thế giới nhờ bền, nhẹ, chịu hóa chất tốt và không bị gỉ. Với nhà đầu tư chứng khoán, hạt nhựa HDPE là nguyên liệu đầu vào của nhiều doanh nghiệp ngành nhựa, nên giá của nó ảnh hưởng trực tiếp đến biên lợi nhuận."
+   ],
+   [
+    "h2",
+    "HDPE được dùng làm gì?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Ống cấp thoát nước, ống dẫn khí:</b> ống HDPE có thể cuộn dài, nối bằng hàn nhiệt, ít rò rỉ, chịu được đất ẩm và hóa chất.",
+     "<b>Ống luồn cáp điện, cáp viễn thông:</b> dùng trong hạ tầng điện và internet.",
+     "<b>Bao bì và đồ gia dụng:</b> chai, can, thùng chứa, màng bọc, túi.",
+     "<b>Công nghiệp và nông nghiệp:</b> ống tưới tiêu, lớp lót ao hồ, bể chứa."
+    ]
+   ],
+   [
+    "h2",
+    "Giá hạt nhựa quyết định điều gì?"
+   ],
+   [
+    "p",
+    "Hạt nhựa HDPE được sản xuất từ dầu mỏ hoặc khí, nên giá thường biến động theo giá dầu và cung cầu nhựa toàn cầu. Doanh nghiệp ống nhựa mua hạt nhựa làm nguyên liệu, rồi bán thành phẩm cho thị trường xây dựng và hạ tầng. Khi giá hạt nhựa tăng, chi phí giá vốn tăng; nếu không nâng được giá bán, biên lợi nhuận gộp sẽ bị thu hẹp. Xem thêm <a href='/f0/gia-hat-nhua-hdpe-pvc-tang-co-phieu-nganh-nhua.html'>giá hạt nhựa HDPE, PVC tăng và cổ phiếu ngành nhựa</a> và <a href='/f0/bien-loi-nhuan-gop-la-gi.html'>biên lợi nhuận gộp là gì</a>."
+   ],
+   [
+    "h2",
+    "Số liệu ngành nhựa quý 3/2026"
+   ],
+   [
+    "p",
+    "Theo dữ liệu tổng hợp trên web (cập nhật 2/11/2026), nhóm ngành nhựa có sự phân hóa lớn. ROE bốn quý gần nhất của BMP khoảng 41,1% (P/E 8,99; P/B 3,55), NTP khoảng 28,5% (P/E 9,05; P/B 2,39) và AAA khoảng 9,3% (P/E 4,80; P/B 0,48). Cùng ngành nhựa nhưng thị trường định giá rất khác nhau, vì ROE khác nhau."
+   ],
+   [
+    "p",
+    "Quý 3/2026, BMP có lợi nhuận 319 tỷ đồng, giảm 8,9% so với cùng kỳ; biên lợi nhuận gộp thu hẹp từ 47,9% xuống 40,3%. Ví dụ này cho thấy ngay cả doanh nghiệp đầu ngành, chi phí đầu vào và cạnh tranh giá vẫn có thể ép biên lợi nhuận. Xem thêm <a href='/f0/co-phieu-bmp-nhua-binh-minh-phan-tich.html'>phân tích cổ phiếu BMP</a>."
+   ],
+   [
+    "h2",
+    "ROA cũng quan trọng trong ngành nhựa"
+   ],
+   [
+    "p",
+    "ROA (lợi nhuận trên tổng tài sản) của BMP khoảng 34,3% so với ROE 41,1%: doanh nghiệp ít dùng nợ, tài sản gần như do vốn chủ sở hữu tài trợ. AAA có ROA khoảng 4,4% và ROE 9,3%, cho thấy dùng đòn bẩy nhiều hơn mà vẫn sinh lời thấp. Đây là lý do cần đọc cả ROE và ROA, xem thêm <a href='/f0/roa-la-gi.html'>ROA là gì</a>."
+   ],
+   [
+    "h2",
+    "Cách theo dõi doanh nghiệp ngành nhựa"
+   ],
+   [
+    "ol",
+    [
+     "Theo dõi biên lợi nhuận gộp qua nhiều quý để thấy tác động của giá hạt nhựa.",
+     "Xem giá bán sản phẩm có tăng theo chi phí đầu vào không, qua doanh thu và biên gộp.",
+     "Đọc nợ vay, hàng tồn kho và giá hạt nhựa tồn kho, vì tồn kho giá thấp hay cao ảnh hưởng giá vốn các quý sau.",
+     "Phân biệt ROE cao do biên lợi nhuận tốt hay do đòn bẩy."
+    ]
+   ],
+   [
+    "p",
+    "Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "HDPE và PVC khác nhau thế nào?",
+    "Cả hai là nhựa dùng làm ống nhưng khác thành phần và đặc tính. HDPE dẻo, chịu va đập, có thể cuộn dài và hàn nhiệt; PVC cứng hơn, thường nối bằng keo hoặc gioăng."
+   ],
+   [
+    "Giá dầu tăng có làm giá hạt nhựa HDPE tăng?",
+    "Thường có liên quan vì hạt nhựa làm từ dầu hoặc khí, nhưng giá còn phụ thuộc cung cầu nhựa và chi phí vận chuyển nên không tăng giảm đồng thời."
+   ],
+   [
+    "Cổ phiếu ngành nhựa có phải cổ phiếu chu kỳ?",
+    "Phần nào có, vì lợi nhuận chịu ảnh hưởng của giá nguyên liệu và nhu cầu xây dựng. Xem thêm bài cổ phiếu chu kỳ để biết cách đọc."
+   ]
+  ],
+  "rel": [
+   "gia-hat-nhua-hdpe-pvc-tang-co-phieu-nganh-nhua",
+   "co-phieu-bmp-nhua-binh-minh-phan-tich",
+   "bien-loi-nhuan-gop-la-gi",
+   "co-phieu-chu-ky-la-gi"
+  ],
+  "add": []
+ },
+ {
+  "slug": "gia-dau-brent-wti-la-gi",
+  "kw": "giá dầu Brent WTI là gì",
+  "grp": 8,
+  "title": "Giá dầu Brent và WTI là gì? Cách đọc cho nhà đầu tư dầu khí",
+  "desc": "Brent và WTI là hai chuẩn giá dầu thô thế giới. Khác nhau thế nào, vì sao quan trọng với cổ phiếu dầu khí, ví dụ BSR, PLX, PVD quý 3/2026.",
+  "body": [
+   [
+    "p",
+    "Khi bản tin nhắc “giá dầu hôm nay”, người ta thường nói đến giá của <b>dầu Brent</b> hoặc <b>dầu WTI</b>. Đây là hai loại dầu thô làm chuẩn tham chiếu cho giá dầu thế giới. Hiểu hai cái tên này giúp anh chị đọc đúng tin tức về giá dầu và biết nó tác động thế nào đến cổ phiếu dầu khí trên sàn Việt Nam."
+   ],
+   [
+    "h2",
+    "Brent là gì?"
+   ],
+   [
+    "p",
+    "Brent là dầu thô khai thác ở khu vực Biển Bắc, giao dịch chủ yếu trên sàn ICE ở châu Âu. Giá Brent được dùng làm tham chiếu cho phần lớn dầu thô mua bán ở châu Âu, châu Phi và nhiều nước châu Á. Vì vậy khi nói giá dầu thế giới, nhiều bản tin và nhà phân tích dùng Brent."
+   ],
+   [
+    "h2",
+    "WTI là gì?"
+   ],
+   [
+    "p",
+    "WTI (West Texas Intermediate) là dầu thô khai thác ở Mỹ, giao hàng tại Cushing (bang Oklahoma) và giao dịch trên sàn NYMEX. WTI là chuẩn giá dầu của thị trường Mỹ. Cả Brent và WTI đều là dầu nhẹ, ít lưu huỳnh nên chất lượng cao, thường được dùng làm thước đo."
+   ],
+   [
+    "h2",
+    "Hai chuẩn khác nhau ở đâu?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Địa điểm:</b> Brent từ Biển Bắc, WTI từ Mỹ.",
+     "<b>Giá:</b> hai giá thường lệch nhau vài đô la mỗi thùng, mức chênh thay đổi theo vận chuyển, tồn kho và cung cầu từng khu vực. Anh chị nên xem giá cập nhật từ nguồn đáng tin cậy, không nên cố định một con số.",
+     "<b>Đơn vị:</b> đô la Mỹ trên thùng; một thùng khoảng 159 lít."
+    ]
+   ],
+   [
+    "h2",
+    "Vì sao quan trọng với cổ phiếu dầu khí?"
+   ],
+   [
+    "p",
+    "Doanh nghiệp dầu khí nằm ở nhiều khâu và chịu ảnh hưởng khác nhau từ giá dầu. Xem chi tiết ở bài <a href='/f0/co-phieu-dau-khi-khi-gia-dau-tang.html'>cổ phiếu dầu khí khi giá dầu tăng</a>. Quý 3/2026 (dữ liệu tổng hợp 2/11/2026) là ví dụ rõ:"
+   ],
+   [
+    "ul",
+    [
+     "<b>BSR (lọc dầu):</b> lợi nhuận quý 3 đạt 8.968 tỷ đồng, tăng 888,2% so với cùng kỳ; biên lợi nhuận gộp lên 16,2% từ 2,9%. Biên lọc dầu phụ thuộc chênh lệch giữa giá sản phẩm và giá dầu thô.",
+     "<b>PLX (phân phối xăng dầu):</b> lợi nhuận 1.241 tỷ đồng, tăng 103,2%, nhưng doanh thu tới 138.482 tỷ nên biên lợi nhuận ròng chỉ khoảng 0,9%.",
+     "<b>PVD (dịch vụ khoan):</b> doanh thu quý 3 tăng 25,0% nhưng lợi nhuận giảm 74,5%, biên gộp từ 23,7% xuống 12,8%; chi phí lãi vay tăng 79,0%."
+    ]
+   ],
+   [
+    "p",
+    "Ba ví dụ cho thấy một điều: giá dầu tăng không làm mọi doanh nghiệp dầu khí tăng lãi như nhau. Mỗi khâu có cơ chế khác, nên cần đọc biên lợi nhuận chứ không chỉ doanh thu. Xem thêm <a href='/f0/bien-loi-nhuan-gop-la-gi.html'>biên lợi nhuận gộp</a> và <a href='/f0/co-phieu-chu-ky-la-gi.html'>cổ phiếu chu kỳ là gì</a>."
+   ],
+   [
+    "h2",
+    "Giá dầu thế giới và giá xăng trong nước"
+   ],
+   [
+    "p",
+    "Giá xăng dầu trong nước chịu ảnh hưởng của giá sản phẩm xăng dầu thế giới, tỷ giá và thuế phí, thường được điều chỉnh định kỳ theo quy định. Giá dầu thô Brent hay WTI là một trong các yếu tố, nhưng không phải con số duy nhất quyết định giá bán lẻ. Xem thêm <a href='/f0/nguon-cung-dau-gian-doan-nha-dau-tu-can-biet.html'>nguồn cung dầu gián đoạn</a>."
+   ],
+   [
+    "p",
+    "Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Brent hay WTI quan trọng hơn?",
+    "Cả hai đều quan trọng. Brent thường được dùng như chuẩn giá dầu thế giới, WTI là chuẩn của thị trường Mỹ."
+   ],
+   [
+    "Giá dầu tăng thì cổ phiếu dầu khí nào tăng lợi nhuận?",
+    "Tùy khâu kinh doanh: khai thác và lọc dầu thường hưởng lợi rõ hơn, phân phối và dịch vụ chịu tác động khác. Cần xem biên lợi nhuận từng doanh nghiệp."
+   ],
+   [
+    "Xem giá Brent, WTI ở đâu?",
+    "Trên các trang dữ liệu hàng hóa và tin tài chính uy tín; web này có bảng Thế giới và hàng hóa trong phần dữ liệu thị trường."
+   ]
+  ],
+  "rel": [
+   "co-phieu-dau-khi-khi-gia-dau-tang",
+   "nguon-cung-dau-gian-doan-nha-dau-tu-can-biet",
+   "gia-dau-tang-anh-huong-kinh-te-viet-nam",
+   "co-phieu-chu-ky-la-gi"
   ],
   "add": []
  }
