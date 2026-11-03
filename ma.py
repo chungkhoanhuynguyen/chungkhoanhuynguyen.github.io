@@ -275,7 +275,7 @@ body.append("<h2>Các chỉ số chính</h2><table class='mt'>" + "".join(f"<tr>
 def tb(L, lab): return f"<h2>{lab}</h2><table class='mt'>" + "".join(f"<tr><td><a href='/ma/{t}.html'>{t}</a></td><td class='r'>{nf(p)}</td><td class='r {'up' if c>=0 else 'dn'}'>{pc(c)}</td></tr>" for t, p, c, _ in L) + "</table>"
 body += [tb(up, "Top 10 cổ phiếu tăng mạnh nhất"), tb(dn, "Top 10 cổ phiếu giảm mạnh nhất"), tb(liq, "Top 10 cổ phiếu thanh khoản cao nhất"),
          "<p>Nhận định thị trường hằng ngày của Huy Nguyễn được chia sẻ trong nhóm Zalo cộng đồng và video lúc 20:00 trên kênh YouTube Chứng Khoán Huy Nguyễn.</p>", CTA, NAV]
-EXTRA.append(page("thi-truong-chung-khoan-hom-nay.html", f"Thị trường chứng khoán hôm nay {dmy(today)}: VN-Index, cổ phiếu tăng giảm mạnh | Chứng Khoán Huy Nguyễn",
+EXTRA.append(page("thi-truong-chung-khoan-hom-nay.html", f"Chứng khoán hôm nay {dmy(today)}: VN-Index, mã tăng giảm mạnh | Chứng Khoán Huy Nguyễn",
      "Thị trường chứng khoán hôm nay: VN-Index, VN30, HNX-Index, top cổ phiếu tăng giảm mạnh, thanh khoản cao, xu hướng và nhận định của Huy Nguyễn. Cập nhật mỗi ngày.",
      "Thị trường chứng khoán hôm nay", body))
 # 2) Định giá cổ phiếu
@@ -285,7 +285,7 @@ body = ["<p>Định giá cổ phiếu là ước tính giá trị hợp lý củ
         "<h2>Bảng định giá 40 cổ phiếu vốn hóa lớn</h2><table class='mt'><tr><td><b>Mã</b></td><td class='r'><b>Giá</b></td><td class='r'><b>P/E</b></td><td class='r'><b>P/B</b></td><td class='r'><b>ROE</b></td></tr>" +
         "".join(f"<tr><td><a href='/ma/{t}.html'>{t}</a></td><td class='r'>{nf(bars(t)[-1][4])}</td><td class='r'>{nf(FD[t].get('pe'),1)}</td><td class='r'>{nf(FD[t].get('pb'),2)}</td><td class='r'>{nf(FD[t].get('roe'),1)}%</td></tr>" for t in top) + "</table>",
         "<p>Xem định giá chi tiết từng mã (kèm đánh giá báo cáo tài chính và xu hướng giá) trong <a href='/ma/'>danh sách mã cổ phiếu</a>, hoặc học cách dùng chỉ số ở bài <a href='/f0/pe-la-gi.html'>P/E là gì</a>.</p>", CTA, NAV]
-EXTRA.append(page("dinh-gia-co-phieu.html", "Định giá cổ phiếu: bảng P/E, P/B, ROE các mã vốn hóa lớn, cập nhật mỗi ngày | Chứng Khoán Huy Nguyễn",
+EXTRA.append(page("dinh-gia-co-phieu.html", "Định giá cổ phiếu: bảng P/E, P/B, ROE mã vốn hóa lớn | Chứng Khoán Huy Nguyễn",
      "Định giá cổ phiếu Việt Nam: bảng P/E, P/B, ROE của 40 mã vốn hóa lớn so với trung vị thị trường, cách định giá cổ phiếu cho người mới. Cập nhật hằng ngày.",
      "Định giá cổ phiếu", body))
 # 3) Tư vấn
