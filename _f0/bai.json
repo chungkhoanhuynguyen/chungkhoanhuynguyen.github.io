@@ -18112,5 +18112,652 @@
    "co-phieu-chu-ky-la-gi"
   ],
   "add": []
+ },
+ {
+  "slug": "doc-bctc-hop-nhat-va-rieng-le",
+  "kw": "BCTC hợp nhất và riêng lẻ",
+  "grp": 3,
+  "title": "BCTC hợp nhất và riêng lẻ: khác nhau thế nào, đọc bản nào?",
+  "desc": "BCTC hợp nhất và BCTC riêng lẻ khác nhau ra sao, vì sao lợi nhuận hai bản chênh lệch, nhà đầu tư nên đọc bản nào và các điểm cần lưu ý.",
+  "body": [
+   [
+    "p",
+    "Mùa báo cáo tài chính, nhiều doanh nghiệp công bố hai bản: <b>BCTC riêng lẻ</b> (công ty mẹ) và <b>BCTC hợp nhất</b> (cả tập đoàn). Hai bản có thể chênh nhau rất xa về lợi nhuận, khiến người mới bối rối không biết tin con số nào."
+   ],
+   [
+    "h2",
+    "1. BCTC riêng lẻ là gì"
+   ],
+   [
+    "p",
+    "BCTC riêng lẻ chỉ phản ánh <b>pháp nhân công ty mẹ</b>. Các công ty con hiện diện dưới dạng một khoản đầu tư, và công ty mẹ chỉ ghi nhận thu nhập từ con khi nhận <b>cổ tức</b>. Vì vậy, nếu công ty con lãi lớn nhưng chưa chia cổ tức, BCTC riêng lẻ của mẹ không thấy khoản lãi đó."
+   ],
+   [
+    "h2",
+    "2. BCTC hợp nhất là gì"
+   ],
+   [
+    "p",
+    "BCTC hợp nhất <b>cộng gộp toàn bộ</b> tài sản, nợ, doanh thu, chi phí của công ty mẹ và các công ty con mà mẹ kiểm soát, sau khi loại trừ giao dịch nội bộ (mẹ bán cho con, con vay mẹ…). Phần lợi nhuận của cổ đông khác tại công ty con được tách ra thành <b>lợi ích cổ đông không kiểm soát</b>."
+   ],
+   [
+    "h2",
+    "3. Ví dụ giả định"
+   ],
+   [
+    "p",
+    "Công ty mẹ M sở hữu 80% công ty con C. Năm nay M tự kinh doanh lãi 100 tỷ, C lãi 200 tỷ nhưng chưa chia cổ tức."
+   ],
+   [
+    "ul",
+    [
+     "BCTC riêng lẻ của M: lãi <b>100 tỷ</b>.",
+     "BCTC hợp nhất: tổng lãi 300 tỷ, trong đó phần của cổ đông công ty mẹ = 100 + 80% × 200 = <b>260 tỷ</b>, lợi ích cổ đông không kiểm soát = 40 tỷ.",
+     "Năm sau C chia cổ tức 150 tỷ cho M: lãi riêng lẻ của M tăng vọt, nhưng hợp nhất <b>không đổi</b> vì đây là tiền chuyển nội bộ."
+    ]
+   ],
+   [
+    "h2",
+    "4. Nhà đầu tư nên đọc bản nào?"
+   ],
+   [
+    "p",
+    "Với hầu hết doanh nghiệp có công ty con, hãy dùng <b>BCTC hợp nhất</b> và dòng <b>lợi nhuận sau thuế của cổ đông công ty mẹ</b> để tính <a href=\"/f0/roe-eps-la-gi.html\">EPS, ROE</a> và <a href=\"/f0/pe-la-gi.html\">P/E</a>. Đây cũng là số liệu dùng trên các trang mã của chungkhoanhuynguyen.com."
+   ],
+   [
+    "p",
+    "BCTC riêng lẻ vẫn hữu ích khi muốn biết: công ty mẹ có đủ tiền mặt để trả cổ tức không, nợ vay nằm ở mẹ hay ở con, và mẹ đang \"rút\" cổ tức từ con thế nào."
+   ],
+   [
+    "h2",
+    "5. Ba điểm cần cẩn thận"
+   ],
+   [
+    "ol",
+    [
+     "<b>Lãi riêng lẻ tăng đột biến vì cổ tức từ con</b>: không phải tăng trưởng thật của cả tập đoàn.",
+     "<b>Lợi ích cổ đông không kiểm soát lớn</b>: phần lớn lợi nhuận thuộc về cổ đông khác ở công ty con, cổ đông mẹ hưởng ít hơn con số tổng.",
+     "<b>Giao dịch nội bộ</b>: doanh thu riêng lẻ có thể bao gồm bán hàng cho công ty con – đã bị loại khi hợp nhất."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "p",
+    "BCTC hợp nhất cho bức tranh cả tập đoàn và là bản chuẩn để định giá; BCTC riêng lẻ cho biết sức khỏe pháp nhân mẹ. Khi thấy tin \"lãi tăng gấp nhiều lần\", hãy kiểm tra đó là bản nào. Xem thêm <a href=\"/f0/cach-doc-bao-cao-tai-chinh.html\">cách đọc báo cáo tài chính</a>."
+   ],
+   [
+    "p",
+    "Bài viết mang tính giáo dục, không phải khuyến nghị đầu tư. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Vì sao lợi nhuận hợp nhất và riêng lẻ chênh nhau?",
+    "Vì riêng lẻ chỉ ghi nhận lãi công ty con khi nhận cổ tức, còn hợp nhất cộng gộp lãi của công ty con ngay trong kỳ."
+   ],
+   [
+    "Tính P/E dùng lợi nhuận bản nào?",
+    "Dùng lợi nhuận sau thuế của cổ đông công ty mẹ trên BCTC hợp nhất."
+   ],
+   [
+    "Doanh nghiệp không có công ty con thì sao?",
+    "Chỉ có một bản BCTC, không cần phân biệt hợp nhất và riêng lẻ."
+   ]
+  ],
+  "rel": [
+   "cach-doc-bao-cao-tai-chinh",
+   "bao-cao-ket-qua-kinh-doanh-la-gi",
+   "pe-la-gi",
+   "kiem-toan-ngoai-tru-la-gi"
+  ]
+ },
+ {
+  "slug": "nen-bua-hammer-la-gi",
+  "kw": "nến búa là gì",
+  "grp": 4,
+  "title": "Nến búa (Hammer) là gì? Cách nhận diện và dùng đúng",
+  "desc": "Nến búa Hammer là gì, khác nến búa ngược và người treo cổ thế nào, điều kiện xác nhận, ví dụ dễ hiểu và lỗi thường gặp khi bắt đáy theo nến búa.",
+  "body": [
+   [
+    "p",
+    "Nến búa (Hammer) là một mẫu <a href=\"/f0/mo-hinh-nen-nhat-co-ban.html\">nến Nhật</a> có <b>thân nhỏ ở phía trên và râu dưới dài</b>, trông giống cái búa. Nó thường xuất hiện sau một nhịp giảm và gợi ý bên bán đã đẩy giá xuống sâu nhưng bên mua kéo giá lên lại gần mức mở cửa."
+   ],
+   [
+    "h2",
+    "1. Đặc điểm nhận diện"
+   ],
+   [
+    "ul",
+    [
+     "Râu dưới dài ít nhất <b>gấp 2 lần thân nến</b>.",
+     "Thân nến nhỏ, nằm ở phần trên của cây nến; màu xanh hay đỏ đều được (xanh mạnh hơn).",
+     "Râu trên rất ngắn hoặc không có.",
+     "Xuất hiện <b>sau một xu hướng giảm</b> – điều kiện bắt buộc."
+    ]
+   ],
+   [
+    "h2",
+    "2. Ví dụ giả định"
+   ],
+   [
+    "p",
+    "Cổ phiếu Y giảm 6 phiên liên tiếp từ 25.000 xuống 21.000 đồng. Phiên thứ 7 mở cửa 21.000, có lúc rơi xuống 19.800 nhưng đóng cửa 21.200 đồng. Thân nến 200 đồng, râu dưới 1.200 đồng – gấp 6 lần thân: đây là nến búa. Phiên sau Y tăng lên 22.000 với khối lượng lớn hơn trung bình: tín hiệu được <b>xác nhận</b>."
+   ],
+   [
+    "h2",
+    "3. Phân biệt các mẫu nến giống búa"
+   ],
+   [
+    "ul",
+    [
+     "<b>Người treo cổ (Hanging Man)</b>: hình dạng y hệt nến búa nhưng xuất hiện <b>sau xu hướng tăng</b> – cảnh báo lực bán bắt đầu xuất hiện.",
+     "<b>Búa ngược (Inverted Hammer)</b>: thân nhỏ ở dưới, râu trên dài, xuất hiện sau xu hướng giảm.",
+     "<b>Doji chuồn chuồn</b>: mở cửa và đóng cửa gần bằng nhau, râu dưới dài – tương tự búa nhưng thân gần như bằng 0."
+    ]
+   ],
+   [
+    "h2",
+    "4. Điều kiện xác nhận"
+   ],
+   [
+    "ol",
+    [
+     "<b>Phiên sau tăng</b> và đóng cửa trên giá đóng cửa của nến búa.",
+     "<b>Khối lượng</b> phiên búa hoặc phiên xác nhận cao hơn trung bình 20 phiên.",
+     "Nến búa nằm gần <a href=\"/f0/ho-tro-khang-cu.html\">vùng hỗ trợ</a> quan trọng hoặc đường MA dài hạn.",
+     "Khung tuần đáng tin hơn khung ngày."
+    ]
+   ],
+   [
+    "h2",
+    "5. Lỗi thường gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>Bắt đáy ngay khi thấy búa</b> mà không chờ xác nhận – trong xu hướng giảm mạnh, búa có thể chỉ là nhịp nghỉ.",
+     "<b>Không đặt cắt lỗ</b>: điểm cắt lỗ hợp lý là dưới đáy râu búa; thủng đáy này tức tín hiệu thất bại.",
+     "<b>Bỏ qua bối cảnh</b>: doanh nghiệp vừa công bố lỗ lớn thì một cây nến không thay đổi được câu chuyện.",
+     "Xem thêm vì sao <a href=\"/f0/bat-day-co-phieu-la-gi.html\">bắt đáy</a> rủi ro với người mới."
+    ]
+   ],
+   [
+    "h2",
+    "6. Nến búa trên khung tuần"
+   ],
+   [
+    "p",
+    "Trên khung tuần, một cây nến búa gói trọn 5 phiên giao dịch: giá đã thử xuống thấp trong tuần nhưng bên mua kéo lên lại trước khi tuần kết thúc. Tín hiệu này ít nhiễu hơn khung ngày, nên người mới chỉ cần kiểm tra biểu đồ tuần vào cuối tuần là đủ. Đọc thêm <a href=\"/f0/khung-thoi-gian-bieu-do.html\">khung thời gian biểu đồ</a> để chọn khung phù hợp với phong cách đầu tư của mình."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "p",
+    "Nến búa là tín hiệu đảo chiều tiềm năng sau xu hướng giảm, nhưng chỉ đáng tin khi được xác nhận bởi phiên sau và khối lượng. Luôn đặt cắt lỗ dưới đáy râu và kết hợp với phân tích cơ bản."
+   ],
+   [
+    "p",
+    "Bài viết mang tính giáo dục, không phải khuyến nghị đầu tư. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Nến búa màu đỏ có giá trị không?",
+    "Có, nhưng nến búa màu xanh (đóng cửa cao hơn mở cửa) thường mạnh hơn."
+   ],
+   [
+    "Nến búa xuất hiện sau xu hướng tăng thì sao?",
+    "Khi đó gọi là nến người treo cổ, mang ý nghĩa cảnh báo giảm chứ không phải tín hiệu tăng."
+   ],
+   [
+    "Nên đặt cắt lỗ ở đâu khi dùng nến búa?",
+    "Thường đặt dưới đáy râu dưới của nến búa."
+   ]
+  ],
+  "rel": [
+   "mo-hinh-nen-nhat-co-ban",
+   "ho-tro-khang-cu",
+   "bat-day-co-phieu-la-gi",
+   "cat-lo-la-gi"
+  ]
+ },
+ {
+  "slug": "danh-muc-tich-san-mau",
+  "kw": "danh mục tích sản mẫu",
+  "grp": 7,
+  "title": "Danh mục tích sản mẫu: cách chia tỷ trọng cho người mới",
+  "desc": "Danh mục tích sản mẫu theo nhóm tài sản và nhóm ngành, cách chia tỷ trọng, tái cân bằng mỗi năm và 5 nguyên tắc giữ kỷ luật – không khuyến nghị mã cụ thể.",
+  "body": [
+   [
+    "p",
+    "Người mới tích sản thường hỏi: \"Nên mua mã gì?\". Câu hỏi đúng hơn là: <b>danh mục của mình nên có hình dạng thế nào</b>? Bài này đưa ra khung danh mục mẫu theo nhóm, để bạn tự điền doanh nghiệp phù hợp sau khi tìm hiểu – không nêu mã cụ thể."
+   ],
+   [
+    "h2",
+    "1. Ba lớp của một danh mục tích sản"
+   ],
+   [
+    "ol",
+    [
+     "<b>Lớp tiền dự phòng</b>: 3–6 tháng chi tiêu, để ở tiền gửi. Lớp này không đầu tư, giúp bạn không phải bán cổ phiếu khi cần tiền gấp.",
+     "<b>Lớp lõi</b>: cổ phiếu doanh nghiệp đầu ngành, lãi đều nhiều năm, chiếm phần lớn vốn đầu tư.",
+     "<b>Lớp vệ tinh</b>: phần nhỏ cho doanh nghiệp tăng trưởng hoặc ngành chu kỳ – chấp nhận dao động lớn hơn."
+    ]
+   ],
+   [
+    "h2",
+    "2. Khung tỷ trọng tham khảo (phần vốn đầu tư)"
+   ],
+   [
+    "ul",
+    [
+     "<b>Ngân hàng đầu ngành</b>: 30–40%. Lợi nhuận gắn với tăng trưởng tín dụng và kinh tế; nên chọn ngân hàng có lợi nhuận tăng đều qua nhiều quý, nợ xấu được kiểm soát.",
+     "<b>Tiêu dùng, bán lẻ thiết yếu</b>: 15–20%. Nhu cầu ổn định.",
+     "<b>Tiện ích (điện, nước, cảng)</b>: 10–15%. Dòng tiền đều, hay trả cổ tức tiền mặt.",
+     "<b>Ngành chu kỳ (thép, dầu khí, chứng khoán)</b>: 10–15%. Lợi nhuận lên xuống mạnh theo chu kỳ.",
+     "<b>Quỹ ETF</b>: 10–20%. Đa dạng hóa tự động – xem <a href=\"/f0/etf-la-gi.html\">ETF là gì</a>."
+    ]
+   ],
+   [
+    "p",
+    "Tỷ trọng cụ thể tùy tuổi, thu nhập, khẩu vị rủi ro. Người lớn tuổi nên tăng lớp tiện ích và tiền dự phòng; người trẻ có thể tăng lớp vệ tinh."
+   ],
+   [
+    "h2",
+    "3. Bao nhiêu mã là đủ"
+   ],
+   [
+    "p",
+    "Với vốn nhỏ, 3–5 doanh nghiệp (hoặc 1 ETF + 2–3 doanh nghiệp) là đủ theo dõi. Nhiều hơn 10 mã thường khiến người mới không đọc kịp BCTC. Mỗi mã không nên vượt 25% danh mục. Xem thêm <a href=\"/f0/tich-san-co-phieu-ngan-hang-bao-nhieu-ma.html\">tích sản ngân hàng bao nhiêu mã</a>."
+   ],
+   [
+    "h2",
+    "4. Góp đều và tái cân bằng"
+   ],
+   [
+    "ol",
+    [
+     "Mỗi tháng góp một số tiền cố định (<a href=\"/f0/mua-trung-binh-gia-dca.html\">DCA</a>), ưu tiên nhóm đang thấp hơn tỷ trọng mục tiêu.",
+     "Mỗi năm một lần, so tỷ trọng thực tế với mục tiêu. Nhóm nào vượt quá 5–10 điểm phần trăm thì dùng tiền góp mới bù cho nhóm thiếu, hạn chế bán.",
+     "Cổ tức tiền mặt nhận được: <a href=\"/f0/tai-dau-tu-co-tuc.html\">tái đầu tư</a> vào nhóm đang thiếu."
+    ]
+   ],
+   [
+    "h2",
+    "5. Năm nguyên tắc giữ kỷ luật"
+   ],
+   [
+    "ul",
+    [
+     "Không dùng <a href=\"/f0/margin-va-tien-mat-khi-tich-san.html\">margin</a> cho danh mục tích sản.",
+     "Chỉ bán khi lý do mua không còn (doanh nghiệp xấu đi), không bán vì giá giảm tạm thời.",
+     "Ghi lại lý do mua từng mã để đối chiếu mỗi mùa BCTC.",
+     "Không đổi chiến lược giữa chừng khi thị trường giảm – đó là lúc góp đều mua được nhiều cổ phiếu nhất.",
+     "Phương pháp không sợ sai, chỉ sợ theo giữa chừng rồi đổi ý."
+    ]
+   ],
+   [
+    "p",
+    "Muốn xem số liệu thật thay cho ví dụ: <a href=\"/bao-cao-2026.html#tichsan\">bảng tích sản cổ phiếu ngân hàng</a> cập nhật theo BCTC quý gần nhất."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "p",
+    "Danh mục tích sản tốt bắt đầu từ cấu trúc: tiền dự phòng, lớp lõi, lớp vệ tinh, tỷ trọng rõ ràng và lịch tái cân bằng. Mã cụ thể là bước sau, sau khi bạn đọc hiểu doanh nghiệp. Kết quả quá khứ, không phải cam kết lợi nhuận."
+   ],
+   [
+    "p",
+    "Bài viết mang tính giáo dục, không phải khuyến nghị đầu tư. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Danh mục tích sản có nên toàn cổ phiếu ngân hàng?",
+    "Không nên dồn 100% vào một ngành. Ngân hàng có thể là lớp lõi lớn, nhưng nên có thêm ngành khác hoặc ETF để đa dạng."
+   ],
+   [
+    "Bao lâu nên tái cân bằng một lần?",
+    "Mỗi năm một lần là đủ với đa số người tích sản, hoặc khi một nhóm lệch quá 10 điểm phần trăm so với mục tiêu."
+   ],
+   [
+    "Vốn ít có làm được danh mục này không?",
+    "Có. Có thể bắt đầu bằng ETF và 1–2 doanh nghiệp, mua lô lẻ, rồi mở rộng dần."
+   ]
+  ],
+  "rel": [
+   "huong-dan-tich-san-co-phieu-tu-a-den-z",
+   "cach-phan-bo-ty-trong-co-phieu",
+   "tich-san-co-phieu-ngan-hang",
+   "mua-trung-binh-gia-dca"
+  ]
+ },
+ {
+  "slug": "lai-bao-nhieu-phan-tram-mot-nam-la-tot",
+  "kw": "đầu tư lãi bao nhiêu phần trăm một năm là tốt",
+  "grp": 7,
+  "title": "Đầu tư lãi bao nhiêu phần trăm một năm là tốt?",
+  "desc": "Đầu tư cổ phiếu lãi bao nhiêu phần trăm một năm là tốt? So với lạm phát, tiết kiệm, VN-Index 3 năm thật và cách đặt kỳ vọng hợp lý cho người mới.",
+  "body": [
+   [
+    "p",
+    "\"Lãi 20%/năm có giỏi không?\" – câu trả lời phụ thuộc vào bạn so với cái gì, trong bao lâu và chịu rủi ro thế nào. Bài này giúp đặt kỳ vọng thực tế, tránh cả hai bẫy: kỳ vọng quá cao rồi liều lĩnh, hoặc quá thấp rồi bỏ cuộc."
+   ],
+   [
+    "h2",
+    "1. Ba mốc để so sánh"
+   ],
+   [
+    "ol",
+    [
+     "<b>Lạm phát</b>: lãi thấp hơn lạm phát nghĩa là sức mua thực giảm. Đây là mốc tối thiểu.",
+     "<b>Lãi tiết kiệm 12 tháng</b>: mức gần như không rủi ro. Đầu tư cổ phiếu chịu rủi ro cao hơn nên cần kỳ vọng cao hơn mức này.",
+     "<b>Chỉ số thị trường (VN-Index)</b>: nếu nhiều năm liền bạn lãi thấp hơn chỉ số, mua quỹ ETF theo chỉ số có thể hiệu quả hơn tự chọn mã."
+    ]
+   ],
+   [
+    "h2",
+    "2. VN-Index 3 năm qua (số liệu thật)"
+   ],
+   [
+    "p",
+    "VN-Index đóng cửa 1.060,62 điểm ngày 27/10/2023 và 1.766,65 điểm ngày 28/10/2026 – tăng khoảng 66,6% sau 3 năm, tương đương khoảng <b>18,5%/năm</b> theo lãi kép tính theo năm (chưa tính cổ tức). Nhưng từng năm rất khác nhau:"
+   ],
+   [
+    "ul",
+    [
+     "10/2023 – 10/2024: lên 1.254,77 điểm, khoảng +18,3%.",
+     "10/2024 – 10/2025: lên 1.680,50 điểm, khoảng +33,9%.",
+     "10/2025 – 10/2026: lên 1.766,65 điểm, khoảng +5,1%."
+    ]
+   ],
+   [
+    "p",
+    "Bài học: con số trung bình đẹp được tạo ra từ những năm rất tốt và những năm gần như đứng yên. Người bỏ cuộc trong năm kém sẽ không có mặt ở năm tốt."
+   ],
+   [
+    "h2",
+    "3. Kỳ vọng hợp lý cho người mới"
+   ],
+   [
+    "ul",
+    [
+     "Mục tiêu dài hạn: <b>vượt lãi tiết kiệm vài điểm phần trăm mỗi năm</b> và tiến gần chỉ số thị trường đã là kết quả tốt.",
+     "Đánh giá theo chu kỳ 3–5 năm, không theo từng tháng.",
+     "Một năm lãi 50–100% thường đi kèm rủi ro rất lớn, khó lặp lại – đừng lấy làm chuẩn.",
+     "Ai hứa lãi cố định 5–10%/tháng là dấu hiệu <a href=\"/f0/chung-khoan-co-phai-lua-dao-khong.html\">lừa đảo</a>."
+    ]
+   ],
+   [
+    "h2",
+    "4. Sức mạnh của vài phần trăm"
+   ],
+   [
+    "p",
+    "Ví dụ giả định: góp 5 triệu cuối mỗi tháng trong 10 năm (tổng 600 triệu), lãi kép tính theo tháng (lợi suất năm chia 12). Với lợi suất 6%/năm, số tiền cuối kỳ khoảng 820 triệu; với 10%/năm khoảng 1,02 tỷ; với 14%/năm khoảng 1,3 tỷ. Chênh 4 điểm phần trăm mỗi năm tạo ra khác biệt hàng trăm triệu – đó là <a href=\"/f0/lai-kep-trong-dau-tu.html\">lãi kép</a>."
+   ],
+   [
+    "h2",
+    "5. Đo lợi nhuận cho đúng"
+   ],
+   [
+    "ol",
+    [
+     "Tính cả cổ tức nhận được.",
+     "Với góp đều mỗi tháng, đừng lấy tổng lãi chia tổng vốn – tiền góp sau ở trong thị trường ít thời gian hơn. Hãy dùng <a href=\"/f0/mua-trung-binh-gia-dca.html\">cách tính DCA</a> hoặc hàm XIRR trong bảng tính.",
+     "Ghi lại cả mức sụt giảm lớn nhất đã chịu, không chỉ lợi nhuận cuối."
+    ]
+   ],
+   [
+    "p",
+    "Muốn xem số liệu thật thay cho ví dụ: <a href=\"/bao-cao-2026.html#tichsan\">bảng tích sản cổ phiếu ngân hàng</a> cập nhật theo BCTC quý gần nhất."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "p",
+    "Lãi tốt là lãi vượt lạm phát và tiết kiệm một cách bền vững qua nhiều năm, với mức rủi ro bạn chịu được. Kỷ luật đều đặn quan trọng hơn một năm rực rỡ. Kết quả quá khứ, không phải cam kết lợi nhuận."
+   ],
+   [
+    "p",
+    "Bài viết mang tính giáo dục, không phải khuyến nghị đầu tư. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Lãi 15%/năm có phải là tốt?",
+    "Với đầu tư dài hạn, duy trì được khoảng đó qua nhiều năm là kết quả tốt; quan trọng là bền vững và mức rủi ro đã chịu."
+   ],
+   [
+    "VN-Index tăng bao nhiêu mỗi năm?",
+    "Không cố định. Ví dụ từ 27/10/2023 đến 28/10/2026 tăng khoảng 66,6%, tương đương khoảng 18,5%/năm, nhưng từng năm dao động từ khoảng 5% đến 34%."
+   ],
+   [
+    "Có nên so lợi nhuận của mình với người khác?",
+    "Nên so với mốc khách quan như lạm phát, tiết kiệm, chỉ số thị trường; lời khoe lãi trên mạng thường không kèm rủi ro và thua lỗ."
+   ]
+  ],
+  "rel": [
+   "lai-kep-trong-dau-tu",
+   "tich-san-co-phieu-hay-gui-tiet-kiem",
+   "mua-trung-binh-gia-dca",
+   "lam-phat-va-chung-khoan"
+  ]
+ },
+ {
+  "slug": "co-phieu-ban-le",
+  "kw": "cổ phiếu bán lẻ",
+  "grp": 8,
+  "title": "Cổ phiếu bán lẻ: đọc lợi nhuận quý 3/2026 và chỉ số cần biết",
+  "desc": "Cổ phiếu bán lẻ là gì, lợi nhuận quý 3/2026 của MWG, FRT, DGW, PNJ, các chỉ số SSSG, biên gộp, tồn kho và vì sao cùng ngành mà kết quả trái ngược.",
+  "body": [
+   [
+    "p",
+    "Cổ phiếu bán lẻ là cổ phiếu của các chuỗi bán hàng trực tiếp cho người tiêu dùng: điện thoại – điện máy, thuốc, thực phẩm, trang sức, thiết bị công nghệ. Lợi nhuận ngành gắn chặt với <b>sức mua của người dân</b>, nên đây là nhóm phản ánh nhanh tình hình kinh tế."
+   ],
+   [
+    "h2",
+    "1. Kết quả quý 3/2026 (số liệu thật)"
+   ],
+   [
+    "ul",
+    [
+     "<b>Thế Giới Di Động (MWG)</b>: doanh thu 52.614 tỷ (+32,0%), lợi nhuận 3.094 tỷ (+74,7%), biên gộp 21,7% (cùng kỳ 18,8%). 9 tháng lãi 9.111 tỷ (+83,5%).",
+     "<b>FPT Retail (FRT)</b>: doanh thu 17.530 tỷ (+33,7%), lợi nhuận 440 tỷ (+101,3%); chi phí lãi vay +157,4%.",
+     "<b>Digiworld (DGW)</b>: doanh thu 11.022 tỷ (+49,1%), lợi nhuận 276 tỷ (+65,9%).",
+     "<b>PNJ</b>: doanh thu 6.995 tỷ (−14,0%), lỗ 257 tỷ; biên gộp 8,7% (cùng kỳ 19,8%)."
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: BCTC quý 3/2026, tổng hợp trên chungkhoanhuynguyen.com. Cùng ngành bán lẻ nhưng ba doanh nghiệp tăng mạnh, một doanh nghiệp lỗ – cho thấy mặt hàng và chi phí đầu vào quan trọng thế nào."
+   ],
+   [
+    "h2",
+    "2. Bốn chỉ số cần đọc"
+   ],
+   [
+    "ol",
+    [
+     "<b>SSSG – tăng trưởng cùng cửa hàng</b>: doanh thu tăng vì cửa hàng cũ bán tốt hơn hay chỉ vì mở thêm cửa hàng.",
+     "<b><a href=\"/f0/bien-loi-nhuan-gop-la-gi.html\">Biên lợi nhuận gộp</a></b>: biên cải thiện như MWG cho thấy giá bán tốt hơn hoặc cơ cấu hàng có lãi hơn; biên co lại như PNJ cho thấy chi phí đầu vào (giá vàng) tăng nhanh hơn giá bán.",
+     "<b><a href=\"/f0/hang-ton-kho-la-gi.html\">Hàng tồn kho</a></b>: bán lẻ ôm hàng nhiều, tồn kho tăng nhanh hơn doanh thu là dấu hiệu cần chú ý.",
+     "<b>Chi phí vận hành</b>: thuê mặt bằng, nhân viên – tăng nhanh hơn doanh thu sẽ bào mòn lợi nhuận."
+    ]
+   ],
+   [
+    "h2",
+    "3. Định giá cổ phiếu bán lẻ"
+   ],
+   [
+    "p",
+    "Theo dữ liệu tổng hợp 3/11/2026 (4 quý gần nhất): MWG P/E 9,56, ROE 29,5%; FRT P/E 18,2, ROE 25,4%; DGW P/E 8,93, ROE 26,9%; PNJ P/E 4,72, ROE 12,7%. P/E thấp của PNJ phản ánh lợi nhuận 4 quý cũ chưa trừ hết khoản lỗ – P/E thấp không đồng nghĩa với rẻ khi lợi nhuận đang đi xuống. Xem <a href=\"/f0/pe-la-gi.html\">P/E là gì</a>."
+   ],
+   [
+    "h2",
+    "4. Rủi ro của ngành bán lẻ"
+   ],
+   [
+    "ul",
+    [
+     "Sức mua yếu khi kinh tế chậm lại hoặc lãi suất cao.",
+     "Cạnh tranh giá với thương mại điện tử.",
+     "Mở rộng quá nhanh bằng vốn vay – chi phí lãi vay tăng (FRT quý 3: +157,4%).",
+     "Biến động giá hàng hóa đầu vào (vàng với trang sức, điện thoại với chu kỳ ra mẫu mới)."
+    ]
+   ],
+   [
+    "p",
+    "Một mẹo đơn giản: đặt doanh thu và lợi nhuận 8–12 quý gần nhất cạnh nhau. Doanh thu tăng đều mà lợi nhuận tăng nhanh hơn là dấu hiệu chuỗi đang khai thác tốt quy mô; doanh thu tăng mà lợi nhuận đi ngang là lúc cần đọc kỹ biên gộp và chi phí."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "p",
+    "Cổ phiếu bán lẻ hưởng lợi khi sức mua tăng, nhưng hãy đọc SSSG, biên gộp và tồn kho để biết tăng trưởng có thật và bền không. Xem số liệu 12 quý trên trang <a href=\"/ma/MWG.html\">MWG</a>, <a href=\"/ma/FRT.html\">FRT</a>."
+   ],
+   [
+    "p",
+    "Bài viết mang tính giáo dục, không phải khuyến nghị đầu tư. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Cổ phiếu bán lẻ gồm những mã nào?",
+    "Phổ biến có MWG, FRT, DGW, PNJ và các doanh nghiệp tiêu dùng có chuỗi cửa hàng riêng."
+   ],
+   [
+    "Vì sao PNJ lỗ quý 3/2026?",
+    "Doanh thu giảm 14,0% và biên gộp giảm từ 19,8% xuống 8,7%, theo BCTC quý 3/2026."
+   ],
+   [
+    "Chỉ số quan trọng nhất của cổ phiếu bán lẻ là gì?",
+    "Tăng trưởng doanh thu cùng cửa hàng (SSSG) kết hợp biên lợi nhuận gộp."
+   ]
+  ],
+  "rel": [
+   "bien-loi-nhuan-gop-la-gi",
+   "hang-ton-kho-la-gi",
+   "pe-la-gi",
+   "co-phieu-phong-thu-la-gi"
+  ]
+ },
+ {
+  "slug": "co-phieu-cang-bien-logistics",
+  "kw": "cổ phiếu cảng biển logistics",
+  "grp": 8,
+  "title": "Cổ phiếu cảng biển, logistics: đọc thế nào cho người mới",
+  "desc": "Cổ phiếu cảng biển và logistics: mô hình kinh doanh cảng, vận tải biển, chỉ số cần xem, số liệu quý 3/2026 của GMD, HAH, VSC và rủi ro chu kỳ.",
+  "body": [
+   [
+    "p",
+    "Cổ phiếu cảng biển và logistics gắn với <b>dòng hàng xuất nhập khẩu</b>. Khi thương mại tăng, container qua cảng nhiều hơn, tàu chạy kín chỗ hơn. Nhưng mỗi mắt xích trong chuỗi kiếm tiền theo cách khác nhau."
+   ],
+   [
+    "h2",
+    "1. Ba nhóm chính"
+   ],
+   [
+    "ul",
+    [
+     "<b>Khai thác cảng</b>: thu phí bốc xếp, lưu bãi theo sản lượng container. Tài sản lớn, chi phí cố định cao, biên lợi nhuận thường cao khi cảng chạy gần hết công suất.",
+     "<b>Vận tải biển</b>: cho thuê tàu hoặc tự chạy tuyến; lợi nhuận phụ thuộc mạnh vào <b>giá cước</b> – biến động rất lớn theo chu kỳ.",
+     "<b>Logistics, kho bãi</b>: dịch vụ giao nhận, kho, vận tải nội địa; tài sản nhẹ hơn, biên thấp hơn nhưng ổn định hơn."
+    ]
+   ],
+   [
+    "h2",
+    "2. Số liệu thật quý 3/2026"
+   ],
+   [
+    "ul",
+    [
+     "<b>Hải An (HAH)</b> – vận tải container: doanh thu 1.419 tỷ (+5,3%), lợi nhuận 329 tỷ (+8,0%), 9 tháng 1.001 tỷ (+11,3%).",
+     "<b>Gemadept (GMD)</b> – cảng: doanh thu 2.210 tỷ (+41,6%), lợi nhuận 444 tỷ (+40,8%), 9 tháng 2.102 tỷ (+80,7%); nhưng biên gộp 31,8% (cùng kỳ 42,7%) và lợi nhuận giảm 60,5% so với quý 2 – quý trước có đóng góp lớn từ doanh thu tài chính.",
+     "<b>Viconship (VSC)</b> – cảng: doanh thu 935 tỷ (+10,7%), biên gộp 41,7% (cùng kỳ 37,7%) nhưng lỗ 9 tỷ do chi phí lãi vay tăng 83,6%; 9 tháng lãi 190 tỷ (−31,2%)."
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: BCTC quý 3/2026 tổng hợp trên chungkhoanhuynguyen.com. Theo dữ liệu 3/11/2026, ROE 4 quý gần nhất: HAH 22,5%, GMD 17,6%, VSC 3,8%. Trường hợp VSC cho thấy: biên gộp tốt chưa đủ nếu nợ vay mở rộng bến làm chi phí lãi vay tăng nhanh."
+   ],
+   [
+    "h2",
+    "3. Chỉ số cần đọc"
+   ],
+   [
+    "ol",
+    [
+     "<b>Sản lượng container (TEU)</b> qua cảng và công suất thiết kế: cảng gần đầy là lúc biên tốt nhất, nhưng cần đầu tư mở rộng.",
+     "<b>Giá cước vận tải</b> với doanh nghiệp tàu: cước cao kéo lãi vọt, cước giảm lãi rơi nhanh.",
+     "<b>Nợ vay và chi phí lãi vay</b>: mua tàu, xây bến đều cần vốn lớn.",
+     "<b>Lợi nhuận cốt lõi và lãi tài chính</b>: tách lãi bán khoản đầu tư, thoái vốn khỏi lãi khai thác."
+    ]
+   ],
+   [
+    "h2",
+    "4. Rủi ro"
+   ],
+   [
+    "ul",
+    [
+     "Thương mại toàn cầu chậm lại, thuế quan thay đổi.",
+     "Giá cước giảm sau giai đoạn tăng nóng – ngành <a href=\"/f0/co-phieu-chu-ky-la-gi.html\">chu kỳ</a> điển hình.",
+     "Cạnh tranh từ cảng mới trong cùng khu vực.",
+     "Đầu tư dở dang lớn làm chi phí khấu hao, lãi vay tăng trước khi có doanh thu."
+    ]
+   ],
+   [
+    "h2",
+    "5. Cách người mới theo dõi ngành"
+   ],
+   [
+    "p",
+    "Theo dõi số liệu xuất nhập khẩu hằng tháng, sản lượng hàng qua cảng biển và giá cước container thế giới – các con số này thường đi trước báo cáo tài chính một đến hai quý. Khi đọc BCTC, hãy so lợi nhuận gộp từ khai thác với lợi nhuận trước thuế: nếu phần chênh lệch đến chủ yếu từ doanh thu tài chính hay thanh lý tài sản, đó là lãi khó lặp lại. Cuối cùng, xem <a href=\"/f0/he-so-no-de-la-gi.html\">hệ số nợ</a> trước các đợt đầu tư bến mới hoặc mua tàu."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "p",
+    "Cổ phiếu cảng biển, logistics đi theo dòng hàng thương mại. Hãy phân biệt cảng (ổn định hơn, biên cao) với vận tải biển (theo cước, chu kỳ mạnh), và luôn tách lãi cốt lõi khỏi lãi tài chính. Xem số liệu 12 quý tại trang <a href=\"/ma/GMD.html\">GMD</a>, <a href=\"/ma/HAH.html\">HAH</a>."
+   ],
+   [
+    "p",
+    "Bài viết mang tính giáo dục, không phải khuyến nghị đầu tư. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Cổ phiếu cảng biển có phải cổ phiếu chu kỳ?",
+    "Có tính chu kỳ theo thương mại, nhưng khai thác cảng thường ổn định hơn vận tải biển vốn phụ thuộc mạnh vào giá cước."
+   ],
+   [
+    "Vì sao lợi nhuận GMD quý 3/2026 giảm so với quý 2?",
+    "Quý 2 có đóng góp lớn từ doanh thu tài chính; quý 3 lợi nhuận vẫn tăng 40,8% so với cùng kỳ nhưng biên gộp thu hẹp còn 31,8%."
+   ],
+   [
+    "Chỉ số quan trọng nhất của cổ phiếu cảng là gì?",
+    "Sản lượng container so với công suất và biên lợi nhuận gộp, kèm nợ vay khi mở rộng bến."
+   ]
+  ],
+  "rel": [
+   "co-phieu-chu-ky-la-gi",
+   "bien-loi-nhuan-gop-la-gi",
+   "he-so-no-de-la-gi",
+   "ty-gia-tang-anh-huong-co-phieu"
+  ]
  }
 ]
