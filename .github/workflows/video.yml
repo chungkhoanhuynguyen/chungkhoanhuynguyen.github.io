@@ -101,4 +101,4 @@ jobs:
           done
           cd /tmp/vo
           gh release delete "video-$B" -y -R ${{ github.repository }} 2>/dev/null || true
-          gh release create "video-$B" -R ${{ github.repository }} -t "Video $B" -n "Lô $B" /tmp/vo/$B/*.mp4 /tmp/vo/$B/*.png /tmp/vo/$B/*.txt || true
+          gh release create "video-$B" -R ${{ github.repository }} -t "Video $B" -n "Lô $B" /tmp/vo/$B/*.mp4 /tmp/vo/$B/*.png /tmp/vo/$B/*.txt /tmp/vo/$B/*.srt || true

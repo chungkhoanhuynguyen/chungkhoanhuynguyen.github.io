@@ -85,15 +85,54 @@ def _prep_ph(sc, ph):
     c = c.crop(((c.width-cw)//2, (c.height-chh)//2, (c.width-cw)//2+cw, (c.height-chh)//2+chh))
     m = Image.new("L", (cw, chh), 0); ImageDraw.Draw(m).rounded_rectangle([0, 0, cw-1, chh-1], 18, fill=255)
     sc["_card"] = (c, m)
+
+# --- phụ đề: chia lời đọc thành câu ngắn, rải theo thời lượng giọng thật ---
+def _chunks(txt, mx=52):
+    import re as _re
+    parts = [x.strip() for x in _re.split(r"(?<=[.!?;:,])\s+", (txt or "").strip()) if x.strip()]
+    out = []
+    for p_ in parts:
+        w = p_.split(); cur = ""
+        for x in w:
+            if len(cur) + len(x) + 1 > mx and cur: out.append(cur); cur = x
+            else: cur = (cur + " " + x).strip()
+        if cur: out.append(cur)
+    m = []
+    for c in out:
+        if m and len(m[-1]) + len(c) + 1 <= 34: m[-1] += " " + c
+        else: m.append(c)
+    return m
+def _sub_plan(scenes, b, gap):
+    for i, sc in enumerate(scenes):
+        ch = _chunks(sc.get("say", "")); T = max(0.5, b[i+1] - b[i] - gap); n = sum(len(c) for c in ch) or 1; t = 0; sc["_sub"] = []
+        for c in ch:
+            d_ = T * len(c) / n; sc["_sub"].append((t, t + d_, c)); t += d_
+def _srt(scenes, b, path):
+    def ts(x): h = int(x // 3600); m = int(x % 3600 // 60); s_ = x % 60; return "%02d:%02d:%06.3f" % (h, m, s_)
+    L = []; k = 1
+    for i, sc in enumerate(scenes):
+        for a, e, c in sc.get("_sub", []):
+            L.append("%d\n%s --> %s\n%s\n" % (k, ts(b[i] + a).replace(".", ","), ts(b[i] + e).replace(".", ","), c)); k += 1
+    open(path, "w", encoding="utf-8").write("\n".join(L))
+SUB_ON = [False]
+def _draw_sub(im, sc, t, cx, wmax):
+    if not SUB_ON[0]: return
+    cur = next((c for a, e, c in sc.get("_sub", []) if a <= t < e), None)
+    if not cur: return
+    d = ImageDraw.Draw(im, "RGBA"); f = dx2.F("Bold", 40)
+    while d.textlength(cur, font=f) > wmax - 60 and f.size > 26: f = dx2.F("Bold", f.size - 2)
+    tw = d.textlength(cur, font=f); y = LH - 118
+    d.rounded_rectangle([cx - tw/2 - 22, y - 10, cx + tw/2 + 22, y + f.size + 14], 14, fill=(0, 0, 0, 170))
+    d.text((cx - tw/2, y), cur, font=f, fill=(255, 255, 255), stroke_width=2, stroke_fill=(0, 0, 0))
 def land(v, sc, t):
     k = sc["k"]; im = sc["_bg"].copy() if "_bg" in sc else _cover(v, sc)
     if "_bg" in sc:
         fc = dx2.F("SemiBold", 18); ImageDraw.Draw(im).text((24, LH-34), "Ảnh minh hoạ: Wikimedia Commons", font=fc, fill=(150, 156, 170))
     if k in ("end", "text"):
         c = v.crop((0, 200, 1080, 1720)); s = LH/c.height; c = c.resize((int(c.width*s), LH), Image.LANCZOS)
-        im.paste(c, ((LW-c.width)//2, 0)); return im
+        im.paste(c, ((LW-c.width)//2, 0)); _draw_sub(im, sc, t, LW/2, LW - 200); return im
     p = v.crop((66, 470, 1014, 1150)); s = 1.42; p = p.resize((int(p.width*s), int(p.height*s)), Image.LANCZOS)
-    im.paste(p, (50, (LH-p.height)//2 + 20))
+    im.paste(p, (50, (LH-p.height)//2 + 20)); _px, _pw = 50, p.width
     d = ImageDraw.Draw(im); x0 = 50 + p.width + 40; cw = LW - x0 - 50; cx = x0 + cw/2
     dx2.brand(im, d, cx, 70, 0.9, 1.0, (10, 12, 17))
     lab = sc.get("label") or ""
@@ -115,6 +154,7 @@ def land(v, sc, t):
             ImageDraw.Draw(im).rounded_rectangle([xx-4, yy-4, xx+c.width+3, yy+c.height+3], 21, fill=dx2.GOLD)
             im.paste(c, (xx, yy), m)
     f = dx2.F("SemiBold", 26); u = "chungkhoanhuynguyen.com"; d.text((cx - d.textlength(u, font=f)/2, LH - 70), u, font=f, fill=(120, 128, 146))
+    _draw_sub(im, sc, t, _px + _pw/2, _pw)
     return im
 def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
     import wave, re
@@ -130,6 +170,7 @@ def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
     lst = os.path.join(tmpd, "list.txt"); open(lst, "w").write("".join("file '%s'\n" % p for p in parts))
     A = os.path.join(tmpd, "full.wav")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", A])
+    _sub_plan(scenes, b, gap); SUB_ON[0] = True
     tmp = "/tmp/hl_%s.mp4" % key; FPS = dx2.FPS
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", "%dx%d" % (LW, LH), "-r", str(FPS), "-i", "-",
                           "-pix_fmt", "yuv420p", "-c:v", "libx264", "-crf", "20", "-preset", "veryfast", tmp], stdin=subprocess.PIPE)
@@ -138,7 +179,8 @@ def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
         n = int(round(b[i+1]*FPS)) - fr
         for j in range(n): p.stdin.write(land(dx2.draw(sc, j/FPS, j/max(1, n)), sc, j/FPS).tobytes())
         fr += n
-    p.stdin.close(); p.wait()
+    p.stdin.close(); p.wait(); SUB_ON[0] = False
+    _srt(scenes, b, os.path.join(OUT, key + ".srt"))
     af = ("highpass=f=120,acompressor=threshold=-26dB:ratio=4:attack=3:release=60:makeup=6,"
           "loudnorm=I=-14:TP=-1:LRA=7,alimiter=limit=0.95:attack=1:release=40:level=false")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", tmp, "-i", A, "-af", af, "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "44100", "-shortest", out])
@@ -160,6 +202,7 @@ except Exception as e:
 
 # 4) dựng + nhạc nền
 rawmp4 = WORK + "/raw.mp4"; out = os.path.join(OUT, key + ".mp4")
+for _i, _sc in enumerate(scenes): _sc.setdefault("say", raw[_i].get("say", "") if _i < len(raw) else "")
 b = build_land(key, scenes, wd, rawmp4, tempo=1.0)
 # 4b) hiệu ứng âm thanh (tự tổng hợp, không bản quyền): lướt khi chuyển cảnh, "ting" mở chương, "tada" kết
 try:
