@@ -38,12 +38,16 @@ def med(k, pos=True):
     return a[len(a) // 2] if a else None
 MED = {"pe": med("pe"), "pb": med("pb"), "roe": med("roe", False), "dy": med("dy")}
 
+_RECENT = (hncodec.load(os.path.join(ROOT, "data/c/recent.bin"), None) or {}).get("b") or {}
 def bars(sym):
     p = os.path.join(ROOT, "data/c", sym + ".bin")
     if not os.path.exists(p): return []
     j = hncodec.load(p); d = datetime.date.fromisoformat(j["d0"]); out = []
     for g, o, h, l, c, v in zip(j["g"], j["o"], j["h"], j["l"], j["c"], j["v"]):
         d += datetime.timedelta(g); out.append((d.isoformat(), o / 100, h / 100, l / 100, c / 100, v))
+    last = out[-1][0] if out else ""
+    for r in _RECENT.get(sym, []):  # nối các phiên mới (data/c/recent.bin) vào sau dữ liệu gốc
+        if r[0] > last: out.append((r[0], r[1] / 100, r[2] / 100, r[3] / 100, r[4] / 100, r[5] if len(r) > 5 else 0)); last = r[0]
     return out
 def ma(c, n): return sum(c[-n:]) / n if len(c) >= n else None
 def rsi(c, p=14):
