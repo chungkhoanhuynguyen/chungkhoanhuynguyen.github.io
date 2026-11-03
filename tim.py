@@ -10,7 +10,8 @@ MUC = [("Top 10 cổ phiếu khỏe nhất", "/#top-10-co-phieu-khoe"), ("Thị 
        ("Học chứng khoán từ số 0: lộ trình 7 bước", "/f0/"), ("Lịch sử và câu chuyện chứng khoán", "/#lichsu"), ("Định giá cổ phiếu", "/dinh-gia-co-phieu.html"),
        ("Tra cứu mã cổ phiếu A–Z", "/ma/"), ("Mở tài khoản chứng khoán", "/mo-tai-khoan-chung-khoan.html"), ("Bài học có video", "/hoc/"),
        ("Từ điển thuật ngữ chứng khoán", "/f0/tu-dien-thuat-ngu-chung-khoan.html"), ("Giới thiệu Huy Nguyễn", "/gioi-thieu.html"), ("Liên hệ", "/lien-he.html")]
-for t, u in MUC: out.append([t, u, "Mục"])
+for t, u in MUC:
+    if "#" in u or u.endswith("/") or os.path.exists(os.path.join(ROOT, u.lstrip("/"))): out.append([t, u, "Mục"])  # bỏ mục chưa có trang
 NH = {"f0": "Cẩm nang F0", "hoc": "Bài học", "ma": "Mã cổ phiếu"}
 for p in sorted(glob.glob(ROOT + "/**/*.html", recursive=True)):
     rel = p.replace(ROOT, "").replace("\\", "/")
