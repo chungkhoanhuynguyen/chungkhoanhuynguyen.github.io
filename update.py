@@ -6,6 +6,8 @@ _S1 = _h("aHR0cHM6Ly9kY2hhcnQtYXBpLnZuZGlyZWN0LmNvbS52bi9kY2hhcnQvaGlzdG9yeQ==")
 _S2 = _h("aHR0cHM6Ly9hcGlwdWJhd3MudGNicy5jb20udm4vc3RvY2staW5zaWdodC92Mi9zdG9jay9iYXJzLWxvbmctdGVybQ==")
 
 U = sorted(set("ACB BCM BID BMP BSR BVH BWE CII CMG CTD CTG CTR CTS DBC DCM DGC DGW DHC DIG DPM DXG DXS EIB EVF FPT FRT FTS GAS GEX GMD GVR HAG HCM HDB HDC HDG HHV HPG HSG HT1 IMP KBC KDC KDH KOS LPB MBB MSB MSN MWG NAB NKG NLG NT2 NVL OCB PAN PC1 PDR PHR PLX PNJ POW PTB PVD PVT REE SAB SBT SCS SHB SIP SJS SSB SSI STB SZC TCB TCH TPB VCB VCG VCI VDS VGC VHC VHM VIB VIC VIX VJC VND VNM VPB VPI VRE VSC VTP HAH ANV DPG ELC MSR ACV VGI QNS OIL VEA FOX PVS SHS CEO IDC L14 TNG HUT VCS PVC DTD BAF DNH NTP NVB PAP PET VGR VPL PGS MSH".split()))
+try: U = sorted(set(U) | set(hncodec.load("data/rs_wi.bin").get("ung", [])))  # mã RS cao toàn thị trường
+except Exception: pass
 UA = {"User-Agent": "Mozilla/5.0"}
 def get(url):
     with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=20) as r: return json.load(r)

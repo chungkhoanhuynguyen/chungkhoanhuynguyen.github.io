@@ -1,0 +1,26 @@
+name: RS toan thi truong
+on:
+  schedule:
+    - cron: "23 8 * * 1-5"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: data-push
+jobs:
+  rs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python rs_all.py
+      - run: python update.py
+      - run: |
+          git config user.name "hn-bot"
+          git config user.email "hn-bot@users.noreply.github.com"
+          git add data/rs_wi.bin data/rs.bin
+          git diff --cached --quiet || git commit -m "RS toan thi truong $(date -u +%F)"
+          for i in 1 2 3 4 5; do git pull --rebase --autostash -X theirs -q && git push && break; sleep 5; done
