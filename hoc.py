@@ -134,6 +134,14 @@ FP = lambda x: ("/%s.html" if x.get("root") else "/f0/%s.html") % x["slug"]
 os.makedirs(os.path.join(ROOT, "f0"), exist_ok=True)
 fkeep = set()
 FDATE = "2026-10-30"
+try: YTM = json.load(open(os.path.join(ROOT, "_f0/yt.json"), encoding="utf-8"))
+except Exception: YTM = {}
+def ytblk(vs):
+    if not vs: return ""
+    h = ['<h2>Video giải thích chi tiết</h2>']
+    for v in vs[:2]:
+        h.append(f'<figure class="fimg"><a href="https://www.youtube.com/watch?v={e(v[0])}" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/{e(v[0])}/hqdefault.jpg" alt="{e(v[1])}" loading="lazy" width="480" height="360"></a><figcaption>▶ {e(v[1])} – xem trên kênh YouTube Chứng Khoán Huy Nguyễn</figcaption></figure>')
+    return "".join(h)
 def blk(t, c):
     if t == "p": return "<p>%s</p>" % c
     if t == "h2": return "<h2>%s</h2>" % e(c)
@@ -147,11 +155,12 @@ for x in F:
             {"@type": "ListItem", "position": 2, "name": "Cẩm nang F0", "item": B + "/f0/"},
             {"@type": "ListItem", "position": 3, "name": GN[x.get("grp", 1)], "item": B + HP(x.get("grp", 1))},
             {"@type": "ListItem", "position": 4, "name": x["title"], "item": url}]},
-        {"@type": "Article", "headline": x["title"][:110], "description": x["desc"], "image": [B + "/img/og.png"], "datePublished": FDATE + "T17:00:00+07:00", "dateModified": today_iso if False else FDATE + "T17:00:00+07:00",
+        {"@type": "Article", "headline": x["title"][:110], "description": x["desc"], "image": [B + "/img/og.png"], "datePublished": x.get("date", FDATE) + "T17:00:00+07:00", "dateModified": x.get("mod", x.get("date", FDATE)) + "T17:00:00+07:00",
          "inLanguage": "vi", "mainEntityOfPage": url, "keywords": x["kw"] + ", chứng khoán cho người mới, F0",
          "author": {"@type": "Person", "name": "Huy Nguyễn", "url": B + "/"},
          "publisher": {"@type": "Organization", "name": "Chứng Khoán Huy Nguyễn", "logo": {"@type": "ImageObject", "url": B + "/img/icon-512.png"}}},
-        {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in x["faq"]]}]}
+        {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in x["faq"]]}]
+         + [{"@type": "VideoObject", "name": v[1][:100], "description": x["desc"], "thumbnailUrl": "https://i.ytimg.com/vi/%s/hqdefault.jpg" % v[0], "uploadDate": v[2] + "T12:00:00+07:00", "contentUrl": "https://www.youtube.com/watch?v=" + v[0], "embedUrl": "https://www.youtube.com/embed/" + v[0]} for v in YTM.get(x["slug"], [])[:2]]}
     p = [head(x["title"] + " | Chứng Khoán Huy Nguyễn", x["desc"], (B + "/f0/%s.html" % x["canon"]) if x.get("canon") else url, B + "/img/og.png", ld), "<main><article>",
          '<div class="bc"><a href="/">Trang chủ</a> › <a href="/f0/">Cẩm nang F0</a> › <a href="%s">%s</a></div>' % (HP(x.get("grp", 1)), GN[x.get("grp", 1)]),
          f'<h1>{e(x["title"])}</h1><div class="meta">Cẩm nang chứng khoán cho người mới · Huy Nguyễn</div>',
@@ -173,9 +182,10 @@ for x in F:
         else:
             p.append(blk(b[0], b[1]))
     i = F.index(x); pv = F[i - 1] if i else None; nx = F[i + 1] if i + 1 < len(F) else None
+    p.append(ytblk(YTM.get(x["slug"], [])))
     p.append("<h2>Câu hỏi thường gặp</h2>" + "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in x["faq"]))
     p.append('<div class="pn">' + (f'<a href="{FP(pv)}"><small>← Bài trước</small>{e(pv["title"])}</a>' if pv else '<span></span>') + (f'<a href="{FP(nx)}" style="text-align:right"><small>Bài tiếp theo →</small>{e(nx["title"])}</a>' if nx else '<a href="/f0/" style="text-align:right"><small>Hoàn thành lộ trình →</small>Về mục lục cẩm nang</a>') + '</div>')
-    p.append('<h2>Đọc tiếp</h2><ul>' + "".join(f'<li><a href="{FP(FM[r])}">{e(FM[r]["title"])}</a></li>' for r in x["rel"] if r in FM) + '<li><a href="{HP(x.get("grp", 1))}">Tất cả bài chủ đề {e(GN[x.get("grp", 1)])}</a></li><li><a href="/f0/tu-dien-thuat-ngu-chung-khoan.html">Từ điển thuật ngữ chứng khoán A–Z</a></li><li><a href="/hoc/">Thư viện bài học có video</a></li></ul>')
+    p.append('<h2>Đọc tiếp</h2><ul>' + "".join(f'<li><a href="{FP(FM[r])}">{e(FM[r]["title"])}</a></li>' for r in x["rel"] if r in FM) + f'<li><a href="{HP(x.get("grp", 1))}">Tất cả bài chủ đề {e(GN[x.get("grp", 1)])}</a></li><li><a href="/f0/tu-dien-thuat-ngu-chung-khoan.html">Từ điển thuật ngữ chứng khoán A–Z</a></li><li><a href="/hoc/">Thư viện bài học có video</a></li></ul>')
     p.append(f'<div class="cta"><a class="btn b1" href="/mo-tai-khoan-chung-khoan.html">Mở tài khoản chứng khoán</a><a class="btn b2" href="https://zalo.me/0365188286" rel="noopener">Tư vấn 1:1 qua Zalo</a><a class="btn b2" href="https://zalo.me/g/jbnbiq994" rel="noopener">Nhóm Zalo hỏi đáp</a><a class="btn b2" href="{YT}?sub_confirmation=1" rel="noopener">Kênh YouTube</a></div>')
     p.append("</article></main>" + FOOT)
     fn = FP(x)[1:]; fkeep.add(fn)
