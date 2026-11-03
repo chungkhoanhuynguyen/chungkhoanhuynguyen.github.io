@@ -398,5 +398,30 @@
 "Stop loss",
 "Điểm cắt lỗ đặt trước, tại đó nhà đầu tư bán để dừng một khoản lỗ.",
 "stop-loss-bao-nhieu-phan-tram"
+],
+[
+"Dòng tiền kinh doanh (CFO)",
+"Tiền thật thu vào trừ tiền thật chi ra từ hoạt động kinh doanh chính trong kỳ.",
+"dong-tien-kinh-doanh-la-gi"
+],
+[
+"DuPont",
+"Cách tách ROE thành biên lợi nhuận ròng × vòng quay tài sản × đòn bẩy tài chính.",
+"dupont-la-gi"
+],
+[
+"Khấu hao",
+"Phần chi phí tài sản cố định được chia vào từng kỳ trong thời gian sử dụng, không phải tiền chi ra trong kỳ.",
+"khau-hao-la-gi"
+],
+[
+"Phải thu khách hàng",
+"Số tiền khách hàng còn nợ doanh nghiệp từ các lần bán chịu.",
+"khoan-phai-thu-khach-hang-la-gi"
+],
+[
+"Vốn chủ sở hữu",
+"Phần tài sản thuộc về cổ đông, bằng tổng tài sản trừ nợ phải trả.",
+"von-chu-so-huu-la-gi"
 ]
 ]

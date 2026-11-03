@@ -88,12 +88,23 @@
  {
   "slug": "vn-index-la-gi",
   "kw": "VN-Index là gì",
+  "grp": 1,
+  "viet_day": true,
+  "add": [],
   "title": "VN-Index là gì? Chỉ số chứng khoán phản ánh điều gì",
   "desc": "VN-Index là gì, tính thế nào, vì sao VN-Index tăng mà cổ phiếu của mình vẫn giảm, VN30 và HNX-Index khác gì.",
   "body": [
    [
     "p",
-    "VN-Index là chỉ số đại diện cho toàn bộ cổ phiếu niêm yết trên sàn HOSE, tính theo vốn hóa thị trường. Mốc gốc là 100 điểm ngày 28/7/2000."
+    "VN-Index là chỉ số đại diện cho toàn bộ cổ phiếu niêm yết trên sàn HOSE, được tính theo vốn hóa thị trường. Mốc gốc là 100 điểm vào ngày 28/7/2000. Khi bản tin nói “thị trường tăng”, nhiều khi họ nói đến con số này. Hiểu cách nó được tính giúp anh chị đọc đúng điều con số nói và điều nó không nói."
+   ],
+   [
+    "h2",
+    "VN-Index được tính thế nào?"
+   ],
+   [
+    "p",
+    "Chỉ số so sánh tổng vốn hóa của các cổ phiếu hiện tại với tổng vốn hóa ở kỳ gốc, rồi nhân với 100. Quan trọng nhất: đây là chỉ số <b>tính theo vốn hóa</b>, nghĩa là cổ phiếu có vốn hóa càng lớn thì ảnh hưởng đến chỉ số càng nhiều. Một cổ phiếu lớn như ngân hàng hay tập đoàn bất động sản tăng 3% có thể nhích chỉ số nhiều hơn hàng chục cổ phiếu nhỏ giảm 3%."
    ],
    [
     "h2",
@@ -101,27 +112,52 @@
    ],
    [
     "p",
-    "Vì chỉ số tính theo vốn hóa: vài mã lớn như ngân hàng, Vingroup tăng mạnh có thể kéo cả chỉ số đi lên trong khi phần lớn cổ phiếu khác giảm. Hãy nhìn thêm số mã tăng, giảm và thanh khoản."
+    "Vì vài mã vốn hóa lớn tăng mạnh có thể kéo cả chỉ số đi lên trong khi phần lớn cổ phiếu khác giảm. Ngược lại, chỉ số giảm nhẹ nhưng cổ phiếu bạn nắm vẫn có thể tăng. Hãy nhìn thêm số mã tăng và giảm, thanh khoản, và xem nhóm ngành nào đang dẫn dắt."
    ],
    [
     "h2",
-    "Các chỉ số khác"
+    "Ví dụ có số liệu thật"
+   ],
+   [
+    "p",
+    "Theo dữ liệu giá đóng cửa tổng hợp, ngày 28/10/2026 VN-Index đóng cửa ở 1.766,65 điểm, trong khi mức đóng cửa cao nhất trong dữ liệu từ cuối năm 2023 là 1.927,94 điểm vào ngày 18/5/2026. Nghĩa là chỉ số đang thấp hơn đỉnh khoảng 8,4%. Để về lại đỉnh cần tăng khoảng 9,1%. Một ví dụ khác: ngày 17/3/2025 chỉ số là 1.336,26 điểm, đến 9/4/2025 còn 1.094,30 điểm (giảm 18,1%), rồi về lại đỉnh cũ vào cuối tháng 5/2025. Đây là mô tả quá khứ, không phải dự báo."
+   ],
+   [
+    "h2",
+    "Các chỉ số khác cần biết"
    ],
    [
     "ul",
     [
-     "VN30: 30 cổ phiếu vốn hóa và thanh khoản lớn nhất HOSE.",
-     "HNX-Index: đại diện sàn Hà Nội.",
-     "UPCoM-Index: đại diện thị trường UPCoM."
+     "<b>VN30:</b> gồm 30 cổ phiếu vốn hóa và thanh khoản lớn nhất HOSE, đại diện nhóm cổ phiếu vốn hóa lớn. Xem <a href='/f0/vn30-la-gi.html'>VN30 là gì</a>.",
+     "<b>HNX-Index:</b> đại diện sàn Hà Nội.",
+     "<b>UPCoM-Index:</b> đại diện thị trường UPCoM, thanh khoản thường thấp hơn."
     ]
    ],
    [
     "h2",
-    "Theo dõi ở đâu?"
+    "Có đầu tư vào VN-Index được không?"
    ],
    [
     "p",
-    "Xem biểu đồ VN-Index, VN30 cùng chỉ báo MA, RSI ở mục <a href=\"/#soichart\">Soi chart</a>, và sức mạnh dòng tiền ở mục <a href=\"/#dongtien\">Dòng tiền</a> trên web."
+    "Không mua trực tiếp “chỉ số”, nhưng có thể đầu tư gián tiếp qua quỹ ETF mô phỏng chỉ số hoặc qua chứng chỉ quỹ. Xem <a href='/f0/etf-la-gi.html'>ETF là gì</a>. Cách này giúp phân tán rủi ro hơn mua một cổ phiếu riêng lẻ, nhưng vẫn chịu biến động chung của thị trường."
+   ],
+   [
+    "h2",
+    "Cách theo dõi hợp lý"
+   ],
+   [
+    "ol",
+    [
+     "Đừng chỉ nhìn điểm số trong ngày; xem biểu đồ tuần, tháng để thấy xu hướng.",
+     "So VN-Index với đỉnh và đáy gần nhất, và tính mức cần tăng/giảm thay vì chỉ nhìn số điểm.",
+     "Xem độ rộng: số mã tăng so với số mã giảm, thanh khoản toàn thị trường.",
+     "Phân biệt chỉ số với danh mục của mình: hiệu quả đầu tư của bạn có thể khác chỉ số."
+    ]
+   ],
+   [
+    "p",
+    "Cập nhật mỗi ngày ở <a href='/'>trang chủ</a>; xem biểu đồ VN-Index cùng MA, RSI ở mục <a href='/#soichart'>Soi chart</a> và sức mạnh dòng tiền ở mục <a href='/#dongtien'>Dòng tiền</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
    ]
   ],
   "faq": [
@@ -132,35 +168,16 @@
    [
     "Có mua được VN-Index không?",
     "Có thể đầu tư gián tiếp qua quỹ ETF mô phỏng chỉ số."
+   ],
+   [
+    "VN-Index và VN30 khác nhau thế nào?",
+    "VN-Index gồm toàn bộ cổ phiếu HOSE, VN30 chỉ gồm 30 cổ phiếu lớn nhất về vốn hóa và thanh khoản."
    ]
   ],
   "rel": [
    "cach-doc-bang-gia-chung-khoan",
    "phan-tich-co-ban-va-ky-thuat",
    "chung-khoan-la-gi"
-  ],
-  "grp": 1,
-  "add": [
-   [
-    "h2",
-    "Ví dụ thực tế"
-   ],
-   [
-    "p",
-    "Giả sử VN-Index hôm qua đóng cửa 1.300 điểm, hôm nay 1.313 điểm: chỉ số tăng 13 điểm, tức 1%. Nhưng nếu tăng chủ yếu nhờ vài cổ phiếu vốn hóa lớn, nhiều mã nhỏ vẫn có thể giảm. Vì vậy ngoài điểm số, hãy xem số mã tăng, giảm và thanh khoản. Cập nhật mỗi ngày ở thị trường chứng khoán hôm nay."
-   ],
-   [
-    "h2",
-    "Tóm lại"
-   ],
-   [
-    "ul",
-    [
-     "VN-Index đo biến động chung của cổ phiếu trên HOSE.",
-     "Chỉ số chịu ảnh hưởng lớn từ các mã vốn hóa lớn.",
-     "Xem thêm độ rộng thị trường và thanh khoản, không chỉ điểm số."
-    ]
-   ]
   ]
  },
  {
@@ -1095,12 +1112,15 @@
  {
   "slug": "cat-lo-la-gi",
   "kw": "cắt lỗ là gì",
+  "grp": 5,
+  "viet_day": true,
+  "add": [],
   "title": "Cắt lỗ là gì? Quy tắc cắt lỗ đơn giản giúp F0 sống sót",
   "desc": "Cắt lỗ trong chứng khoán là gì, nên cắt lỗ bao nhiêu phần trăm, vì sao người mới hay gồng lỗ và cách đặt mức cắt lỗ trước khi mua.",
   "body": [
    [
     "p",
-    "Cắt lỗ là bán cổ phiếu khi giá đi ngược dự tính để giữ phần vốn còn lại. Đây không phải thất bại mà là chi phí của việc đầu tư."
+    "Cắt lỗ là bán cổ phiếu khi giá đi ngược dự tính để giữ phần vốn còn lại. Đây không phải thất bại mà là chi phí của việc đầu tư: không ai đoán đúng mọi lần, nhưng người sống lâu là người để mỗi lần sai chỉ gây thiệt hại nhỏ."
    ],
    [
     "h2",
@@ -1108,28 +1128,58 @@
    ],
    [
     "p",
-    "Giảm 10% cần tăng 11% để hòa vốn. Giảm 50% cần tăng 100%. Lỗ càng sâu càng khó gỡ, đó là lý do người gồng lỗ thường mất nhiều năm mới về bờ."
+    "Vì toán học bất đối xứng. Giảm 10% cần tăng 11,1% để hòa vốn. Giảm 30% cần tăng 42,9%. Giảm 50% cần tăng 100%, tức giá phải gấp đôi. Giảm 61% cần tăng khoảng 156%. Lỗ càng sâu càng khó gỡ, đó là lý do người gồng lỗ thường mất nhiều năm mới về bờ, hoặc không về. Xem bảng tính đầy đủ ở bài <a href='/f0/lo-bao-nhieu-phan-tram-thi-hoa-von.html'>lỗ bao nhiêu phần trăm thì hòa vốn</a>."
+   ],
+   [
+    "h2",
+    "Vì sao người mới hay gồng lỗ?"
+   ],
+   [
+    "ul",
+    [
+     "Nỗi đau mất tiền thường lớn hơn niềm vui được tiền, nên cắt lỗ đồng nghĩa với việc phải thừa nhận mình sai.",
+     "Hy vọng “chờ về bờ”, trong khi mức tăng cần có lớn hơn mức đã giảm.",
+     "Không có kế hoạch từ trước nên quyết định lúc đang hoảng.",
+     "Nhầm lẫn giữa lỗ trên giấy và lỗ thật: lỗ chưa bán vẫn là mất giá trị tài sản."
+    ]
    ],
    [
     "h2",
     "Đặt mức cắt lỗ thế nào?"
    ],
    [
-    "ul",
+    "ol",
     [
-     "Xác định trước khi mua, không quyết định lúc đang hoảng.",
-     "Mức phổ biến cho cổ phiếu tăng trưởng: 7–8% dưới giá mua.",
-     "Hoặc đặt dưới vùng hỗ trợ gần nhất trên biểu đồ.",
-     "Không bình quân giá xuống khi xu hướng đã gãy."
+     "<b>Xác định trước khi mua</b>, không quyết định lúc đang hoảng. Viết giá mua, giá cắt lỗ và lý do vào sổ.",
+     "<b>Theo tỷ lệ:</b> mức phổ biến cho giao dịch ngắn hạn là 5–10% dưới giá mua, tùy độ biến động của mã.",
+     "<b>Theo kỹ thuật:</b> đặt dưới vùng hỗ trợ gần nhất trên biểu đồ. Xem <a href='/f0/ho-tro-khang-cu.html'>hỗ trợ và kháng cự</a>.",
+     "<b>Theo vốn:</b> tính khối lượng để khoản lỗ không vượt 1–2% tổng vốn mỗi lệnh. Xem <a href='/f0/stop-loss-bao-nhieu-phan-tram.html'>stop loss bao nhiêu phần trăm</a>.",
+     "Không bình quân giá xuống khi xu hướng đã gãy hoặc lý do mua đã sai."
     ]
    ],
    [
     "h2",
-    "Công cụ tính nhanh"
+    "Ví dụ thực tế"
    ],
    [
     "p",
-    "Dùng mục <a href=\"/#congcu\">Quản trị rủi ro</a> trên web để tính giá cắt lỗ và mức cần tăng để hòa vốn."
+    "Giả sử bạn mua 500 cổ phiếu A giá 20.000 đồng (10 triệu đồng), đặt cắt lỗ 7% tại 18.600 đồng. Giá về 18.600 đồng, bạn bán, lỗ khoảng 700.000 đồng cộng phí thuế. Người không cắt lỗ giữ đến khi giá về 12.000 đồng thì lỗ 4 triệu đồng, tức 40%, và cần lãi khoảng 67% mới gỡ được. Cắt lỗ nhỏ là cái giá rẻ để bảo vệ vốn."
+   ],
+   [
+    "h2",
+    "Khi nào cắt lỗ không phù hợp?"
+   ],
+   [
+    "p",
+    "Với người tích sản dài hạn, tiêu chí bán thường dựa vào doanh nghiệp (lợi nhuận, nợ xấu, quản trị) nhiều hơn một con số phần trăm của giá. Nhưng điều đó không có nghĩa là không có quy tắc: bạn vẫn cần biết khi nào lý do đầu tư không còn đúng. Xem <a href='/f0/khi-nao-ban-co-phieu-tich-san.html'>khi nào bán cổ phiếu tích sản</a>."
+   ],
+   [
+    "h2",
+    "Công cụ hỗ trợ"
+   ],
+   [
+    "p",
+    "Nhiều ứng dụng có lệnh điều kiện để tự bán khi chạm giá, xem <a href='/f0/lenh-dieu-kien-la-gi.html'>lệnh điều kiện</a>. Dùng mục <a href='/#congcu'>Quản trị rủi ro</a> trên web để tính giá cắt lỗ và mức cần tăng để hòa vốn. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
    ]
   ],
   "faq": [
@@ -1140,35 +1190,16 @@
    [
     "Có nên đặt lệnh cắt lỗ tự động?",
     "Nhiều ứng dụng có lệnh điều kiện. Hữu ích cho người không theo dõi bảng giá liên tục."
+   ],
+   [
+    "Cắt lỗ bao nhiêu phần trăm là hợp lý?",
+    "Không có con số chung; phổ biến 5–10% cho giao dịch ngắn hạn, quan trọng là khoản lỗ mỗi lệnh không vượt 1–2% tổng vốn."
    ]
   ],
   "rel": [
    "sai-lam-cua-f0",
    "margin-la-gi",
    "phan-tich-co-ban-va-ky-thuat"
-  ],
-  "grp": 5,
-  "add": [
-   [
-    "h2",
-    "Ví dụ thực tế"
-   ],
-   [
-    "p",
-    "Giả sử anh chị mua 500 cổ phiếu A giá 20.000đ (10 triệu đồng), đặt cắt lỗ 7% tại 18.600đ. Giá về 18.600đ, anh chị bán, lỗ khoảng 700.000đ cộng phí thuế. Người không cắt lỗ giữ đến khi giá về 12.000đ thì lỗ 4 triệu, tức 40%, và cần lãi gần 67% mới gỡ được. Cắt lỗ nhỏ là cái giá rẻ để bảo vệ vốn."
-   ],
-   [
-    "h2",
-    "Tóm lại"
-   ],
-   [
-    "ul",
-    [
-     "Cắt lỗ là bán để giới hạn khoản lỗ khi dự đoán sai.",
-     "Đặt mức cắt lỗ trước khi mua, thường 5–10% hoặc dưới vùng hỗ trợ.",
-     "Lỗ càng sâu càng khó gỡ, nên cắt sớm và đúng kế hoạch."
-    ]
-   ]
   ]
  },
  {
@@ -18758,6 +18789,539 @@
    "bien-loi-nhuan-gop-la-gi",
    "he-so-no-de-la-gi",
    "ty-gia-tang-anh-huong-co-phieu"
+  ]
+ },
+ {
+  "slug": "dong-tien-kinh-doanh-la-gi",
+  "kw": "dòng tiền kinh doanh là gì",
+  "grp": 3,
+  "title": "Dòng tiền kinh doanh (CFO) là gì? Cách đọc lãi so với tiền thật",
+  "desc": "Dòng tiền kinh doanh CFO là tiền thật thu về từ hoạt động chính. Cách so với lợi nhuận, ví dụ HPG, MWG, KBC quý 3/2026 và 3 phép kiểm tra nhanh.",
+  "body": [
+   [
+    "p",
+    "Một doanh nghiệp có thể báo lãi lớn mà trong két vẫn thiếu tiền. Hai con số trả lời hai câu hỏi khác nhau: <b>lợi nhuận</b> cho biết hoạt động có sinh lời không, còn <b>dòng tiền kinh doanh</b> (CFO, viết tắt của cash flow from operations) cho biết doanh nghiệp có thu được tiền thật hay không. Bài này giúp bạn đọc cả hai cạnh nhau."
+   ],
+   [
+    "h2",
+    "Dòng tiền kinh doanh là gì?"
+   ],
+   [
+    "p",
+    "CFO là tiền thật thu vào trừ tiền thật chi ra từ hoạt động chính, nằm ở dòng đầu tiên của báo cáo lưu chuyển tiền tệ (xem <a href='/f0/bao-cao-luu-chuyen-tien-te-la-gi.html'>báo cáo lưu chuyển tiền tệ là gì</a>). Khác với lợi nhuận ghi theo thời điểm bán hàng, CFO chỉ ghi khi tiền thực sự đi qua tài khoản. Bán chịu thì có doanh thu nhưng chưa có tiền; nhập hàng về kho thì tiền ra rồi nhưng chi phí chưa được ghi."
+   ],
+   [
+    "h2",
+    "Ví dụ thật: bốn doanh nghiệp, bốn bức tranh"
+   ],
+   [
+    "p",
+    "Số liệu tổng bốn quý gần nhất đến quý 3/2026 (báo cáo hợp nhất, tỷ đồng): Hòa Phát (HPG) lãi sau thuế khoảng 27.634 và CFO khoảng 29.501, tiền nhiều hơn lãi. Thế Giới Di Động (MWG) lãi khoảng 11.717 nhưng CFO chỉ khoảng 2.432, tức khoảng 21 đồng tiền trên 100 đồng lãi. Kinh Bắc (KBC) lãi khoảng 1.843 trong khi CFO âm khoảng 9.394. PVTrans (PVT) lãi khoảng 1.927 và CFO khoảng 3.662."
+   ],
+   [
+    "p",
+    "Vì sao khác nhau? Ở MWG, hàng tồn kho cuối quý 3/2026 là khoảng 35.054 tỷ đồng, tăng khoảng 45% so với một năm trước trong khi doanh thu quý 3 tăng 32%, nên tiền bị giữ trong kho (xem <a href='/f0/hang-ton-kho-la-gi.html'>hàng tồn kho là gì</a>). Ở KBC, tồn kho tăng từ khoảng 25.091 lên 35.415 tỷ đồng vì đất khu công nghiệp phải bỏ tiền ra trước. Ở PVT, khấu hao tàu lớn nên tiền cao hơn lãi (xem <a href='/f0/khau-hao-la-gi.html'>khấu hao là gì</a>)."
+   ],
+   [
+    "h2",
+    "Ba phép kiểm tra nhanh"
+   ],
+   [
+    "ol",
+    [
+     "<b>CFO ÷ lãi sau thuế</b>, nhìn tổng 3–5 năm thay vì một quý. Một quý đơn lẻ dao động rất mạnh.",
+     "<b>So khoản phải thu và hàng tồn kho với doanh thu:</b> nếu hai khoản này tăng nhanh hơn doanh thu nhiều quý liền, hãy mở thuyết minh (xem <a href='/f0/khoan-phai-thu-khach-hang-la-gi.html'>khoản phải thu khách hàng</a>).",
+     "<b>Dòng tiền tự do</b> = CFO trừ chi mua sắm tài sản cố định (xem <a href='/f0/fcf-dong-tien-tu-do-la-gi.html'>FCF là gì</a>). Bốn quý qua, HPG có CFO khoảng 29.501 tỷ và chi mua sắm khoảng 16.493 tỷ, còn lại khoảng 13.008 tỷ."
+    ]
+   ],
+   [
+    "h2",
+    "Những chỗ dễ hiểu nhầm"
+   ],
+   [
+    "ul",
+    [
+     "CFO âm một quý chưa phải tín hiệu xấu nếu doanh nghiệp đang mở rộng có chủ đích, nhưng âm nhiều năm liền thì cần lý giải.",
+     "Ngân hàng và công ty chứng khoán có cấu trúc dòng tiền khác, không đọc CFO như doanh nghiệp sản xuất.",
+     "CFO cao không tự động là tốt: có thể do thu hồi công nợ một lần hoặc chậm trả nhà cung cấp."
+    ]
+   ],
+   [
+    "p",
+    "Kết luận: lãi và CFO lệch nhau là một câu hỏi, chưa phải kết luận. Hãy hỏi tiền đang ở đâu: kho, khách hàng, hay đã chuyển thành tài sản mới. Bạn có thể tra BCTC từng mã tại trang mã của web. Số liệu: BCTC hợp nhất đến Q3/2026, cập nhật 3/11/2026. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Dòng tiền kinh doanh âm có nghĩa là lỗ không?",
+    "Không. CFO âm nghĩa là tiền ra nhiều hơn tiền vào từ hoạt động chính, có thể do nhập hàng, mua đất hoặc khách trả chậm; cần đọc thuyết minh."
+   ],
+   [
+    "CFO nên cao hơn hay thấp hơn lợi nhuận?",
+    "Với doanh nghiệp nhiều tài sản cố định, CFO thường cao hơn lãi nhờ khấu hao; nếu thấp hơn nhiều quý liền thì cần kiểm tra phải thu và tồn kho."
+   ],
+   [
+    "Xem dòng tiền kinh doanh ở đâu?",
+    "Ở dòng đầu tiên của báo cáo lưu chuyển tiền tệ trong BCTC quý hoặc năm của doanh nghiệp."
+   ]
+  ],
+  "rel": [
+   "bao-cao-luu-chuyen-tien-te-la-gi",
+   "fcf-dong-tien-tu-do-la-gi",
+   "hang-ton-kho-la-gi",
+   "cach-doc-bao-cao-tai-chinh"
+  ]
+ },
+ {
+  "slug": "dupont-la-gi",
+  "kw": "dupont là gì",
+  "grp": 3,
+  "title": "DuPont là gì? Tách ROE thành 3 nút: biên, vòng quay, đòn bẩy",
+  "desc": "DuPont tách ROE = biên lợi nhuận × vòng quay tài sản × đòn bẩy. Ví dụ MWG, VNM, HPG, MBB quý 3/2026 và 3 cái bẫy khi nhìn ROE cao.",
+  "body": [
+   [
+    "p",
+    "Hai doanh nghiệp cùng ROE 30% có thể là hai cỗ máy hoàn toàn khác nhau. Cách tách <b>DuPont</b> (tên một tập đoàn Mỹ đã dùng từ hơn một trăm năm trước) giúp mở nắp ROE ra và thấy từng nút bấm bên trong. Nếu chưa quen, xem trước <a href='/f0/roe-eps-la-gi.html'>ROE và EPS</a>."
+   ],
+   [
+    "h2",
+    "Ba nút của ROE"
+   ],
+   [
+    "ul",
+    [
+     "<b>Biên lợi nhuận ròng</b> = lợi nhuận ÷ doanh thu: bán 100 đồng giữ lại bao nhiêu.",
+     "<b>Vòng quay tài sản</b> = doanh thu ÷ tổng tài sản: mỗi đồng tài sản bán được bao nhiêu.",
+     "<b>Đòn bẩy</b> = tổng tài sản ÷ vốn chủ sở hữu: một đồng vốn của mình điều khiển bao nhiêu đồng tài sản."
+    ]
+   ],
+   [
+    "p",
+    "Nhân ba nút lại ra ROE. Vì ROA = biên × vòng quay, nên đòn bẩy cũng bằng ROE ÷ ROA (xem <a href='/f0/roa-la-gi.html'>ROA là gì</a>)."
+   ],
+   [
+    "h2",
+    "Mở nắp bốn cỗ máy (quý 3/2026)"
+   ],
+   [
+    "p",
+    "Số liệu bốn quý gần nhất, tỷ số xấp xỉ từ dữ liệu tổng hợp: Thế Giới Di Động (MWG) ROE 29,5% gồm biên 5,9%, vòng quay khoảng 2,06 và đòn bẩy khoảng 2,4: biên mỏng nhưng hàng quay nhanh. Vinamilk (VNM) ROE 31,1% gồm biên 16,2%, vòng quay khoảng 1,26 và đòn bẩy khoảng 1,5. Nhựa Bình Minh (BMP) ROE 41,1% với biên 22,7%, đòn bẩy chỉ khoảng 1,2. MB (MBB) ROE 21,8% với ROA 2,0% và đòn bẩy khoảng 10,9 lần vì là ngân hàng."
+   ],
+   [
+    "h2",
+    "Ngành nặng tài sản bù bằng biên"
+   ],
+   [
+    "p",
+    "Hòa Phát (HPG) có vòng quay khoảng 0,82 nên cần biên khoảng 12,7% để ra ROE 19,9%. PV Power (POW) vòng quay chỉ khoảng 0,53 vì nhà máy điện là tài sản rất lớn, biên khoảng 12,0%, đòn bẩy khoảng 2,4, ROE 15,3%. Ngược lại PNJ có vòng quay khoảng 2,15 nhưng biên chỉ khoảng 4,0%, ROE 12,7%. Vì vậy không so biên giữa các ngành khác nhau."
+   ],
+   [
+    "h2",
+    "Ba cái bẫy khi nhìn ROE"
+   ],
+   [
+    "ol",
+    [
+     "ROE tăng chỉ vì đòn bẩy tăng (vay thêm), trong khi kinh doanh không tốt hơn và rủi ro lớn hơn.",
+     "ROE tăng vì vốn chủ co lại (lỗ, mua lại cổ phiếu) chứ không vì lãi tăng.",
+     "ROE một năm bị kéo bởi khoản lãi bất thường; xem thêm <a href='/f0/loi-nhuan-tang-gia-co-phieu-giam-vi-sao.html'>lợi nhuận tăng mà giá giảm</a>."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ tự tính"
+   ],
+   [
+    "p",
+    "Công ty B có doanh thu 1.000 tỷ, lợi nhuận 80 tỷ, tổng tài sản 800 tỷ, vốn chủ 400 tỷ. Biên lợi nhuận = 8%, vòng quay = 1,25, đòn bẩy = 2. ROE = 8% × 1,25 × 2 = 20%. Nếu công ty tăng đòn bẩy lên 3 (vay thêm) mà kinh doanh không đổi, ROE thành 30% nhưng rủi ro cũng tăng. Đó là lý do cùng một ROE, nên hỏi ROE đến từ nút nào."
+   ],
+   [
+    "h2",
+    "Quy trình ba bước"
+   ],
+   [
+    "p",
+    "Bước một, ghi ba nút ra giấy. Bước hai, so từng nút với chính công ty trong 5 năm và với đối thủ cùng ngành. Bước ba, hỏi nút nào bền: biên bền khi có lợi thế cạnh tranh (xem <a href='/f0/loi-the-canh-tranh-moat.html'>moat là gì</a>), vòng quay bền khi vận hành tốt, còn đòn bẩy là nút rủi ro nhất (xem <a href='/f0/he-so-no-de-la-gi.html'>hệ số nợ trên vốn</a>). Với ngân hàng, đòn bẩy cao là mô hình kinh doanh, nên cần đọc kèm nợ xấu và dự phòng (xem <a href='/f0/dinh-gia-co-phieu-ngan-hang-pb-roe.html'>định giá cổ phiếu ngân hàng</a>; bảng tích sản ngân hàng số liệu thật tại <a href='/bao-cao-2026.html#tichsan'>Báo cáo 2026</a>). Số liệu: dữ liệu tổng hợp 3/11/2026. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "DuPont là gì?",
+    "Là cách tách ROE thành biên lợi nhuận ròng, vòng quay tài sản và đòn bẩy tài chính để biết ROE đến từ đâu."
+   ],
+   [
+    "Đòn bẩy ngân hàng 10 lần có nguy hiểm không?",
+    "Đó là đặc điểm mô hình nhận tiền gửi để cho vay; cần đọc kèm nợ xấu, dự phòng và hệ số an toàn vốn."
+   ],
+   [
+    "Có nên so ROE giữa các ngành?",
+    "Không nên so thẳng, vì mỗi ngành có cấu trúc biên, vòng quay và đòn bẩy khác nhau."
+   ]
+  ],
+  "rel": [
+   "roe-eps-la-gi",
+   "roa-la-gi",
+   "he-so-no-de-la-gi",
+   "dinh-gia-co-phieu-ngan-hang-pb-roe"
+  ]
+ },
+ {
+  "slug": "khau-hao-la-gi",
+  "kw": "khấu hao là gì",
+  "grp": 3,
+  "title": "Khấu hao là gì? Vì sao dòng tiền có thể cao hơn lợi nhuận",
+  "desc": "Khấu hao là cách chia chi phí tài sản cố định qua nhiều năm. Ví dụ PVT, HAH, REE, HPG quý 3/2026: dòng tiền kinh doanh cao hơn lợi nhuận vì sao.",
+  "body": [
+   [
+    "p",
+    "Bạn mở báo cáo của một công ty vận tải biển và thấy dòng tiền kinh doanh gần gấp đôi lợi nhuận. Nghe lạ, nhưng thường là bình thường. Lý do nằm ở một khoản chi phí không làm tiền ra khỏi két: <b>khấu hao</b>."
+   ],
+   [
+    "h2",
+    "Khấu hao là gì?"
+   ],
+   [
+    "p",
+    "Khấu hao là việc chia chi phí mua tài sản cố định (máy móc, nhà xưởng, tàu thuyền) thành nhiều kỳ trong suốt thời gian sử dụng, thay vì ghi hết một lần. Mỗi quý, báo cáo kết quả kinh doanh bị trừ một phần khấu hao, làm lợi nhuận thấp đi, nhưng quý đó không có đồng nào thật sự chi ra cho khoản này. Tiền đã chi từ lúc mua tài sản."
+   ],
+   [
+    "h2",
+    "Ví dụ giả định"
+   ],
+   [
+    "p",
+    "Một công ty mua con tàu 100 tỷ đồng, dùng 10 năm. Mỗi năm khấu hao 10 tỷ. Nếu doanh thu trừ mọi chi phí tiền mặt là 30 tỷ thì lợi nhuận trước thuế là 20 tỷ, nhưng tiền thu về là 30 tỷ. Khoảng chênh 10 tỷ chính là khấu hao: kế toán ghi như chi phí, nhưng không phải tiền ra."
+   ],
+   [
+    "h2",
+    "Số liệu thật: tiền cao hơn lãi"
+   ],
+   [
+    "p",
+    "Dòng tiền kinh doanh chia cho lợi nhuận sau thuế, tổng bốn quý đến quý 3/2026 (báo cáo hợp nhất): PVT khoảng 190%, HAH khoảng 136%, REE khoảng 126%, HPG khoảng 107%. Đây đều là ngành nhiều tài sản cố định (tàu, nhà máy, thép). Ngược lại, các ngành tiêu dùng và bán lẻ thường thấp hơn: Vinamilk khoảng 83%, Thế Giới Di Động khoảng 21% vì tiền nằm trong hàng tồn kho (xem <a href='/f0/dong-tien-kinh-doanh-la-gi.html'>dòng tiền kinh doanh là gì</a>)."
+   ],
+   [
+    "h2",
+    "Khấu hao không phải kết luận"
+   ],
+   [
+    "ul",
+    [
+     "Tiền cao hơn lãi nhờ khấu hao chưa có nghĩa tiền dư: doanh nghiệp vẫn phải tái đầu tư để thay tài sản cũ. Hãy trừ chi mua sắm để ra dòng tiền tự do (xem <a href='/f0/fcf-dong-tien-tu-do-la-gi.html'>FCF là gì</a>). REE bốn quý qua có CFO khoảng 4.304 tỷ nhưng chi mua sắm khoảng 3.908 tỷ, còn lại khoảng 400 tỷ.",
+     "Doanh nghiệp ghi khấu hao nhanh hay chậm làm lợi nhuận mỗi kỳ khác nhau; nên so lợi nhuận trước khấu hao (EBITDA) khi so sánh, xem <a href='/f0/ev-ebitda-la-gi.html'>EV/EBITDA là gì</a>.",
+     "Tài sản không khấu hao như đất vẫn có thể cần đánh giá lại giá trị."
+    ]
+   ],
+   [
+    "h2",
+    "Cách dùng khi đọc báo cáo"
+   ],
+   [
+    "ol",
+    [
+     "Tìm dòng khấu hao trong báo cáo lưu chuyển tiền tệ (phần điều chỉnh) hoặc thuyết minh tài sản cố định.",
+     "So khấu hao với chi mua sắm tài sản: nếu chi mua sắm vượt xa khấu hao, doanh nghiệp đang mở rộng.",
+     "Đừng vội thấy tiền cao hơn lãi là tốt: hãy xem phần dư sau khi tái đầu tư."
+    ]
+   ],
+   [
+    "p",
+    "Hiểu khấu hao giúp bạn tránh hai sai lầm: coi lợi nhuận là tiền thật, và coi dòng tiền cao là dư dả. Số liệu: BCTC hợp nhất đến Q3/2026, cập nhật 3/11/2026. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Khấu hao có phải là tiền chi ra không?",
+    "Không. Tiền đã chi lúc mua tài sản; khấu hao chỉ là cách chia chi phí đó vào các kỳ."
+   ],
+   [
+    "Vì sao dòng tiền cao hơn lợi nhuận?",
+    "Thường do khấu hao lớn được cộng lại khi tính dòng tiền, phổ biến ở ngành vận tải, điện, thép."
+   ],
+   [
+    "Khấu hao nhiều có xấu không?",
+    "Không hẳn; chỉ cho thấy doanh nghiệp có nhiều tài sản cố định. Cần xem thêm chi mua sắm và nợ vay."
+   ]
+  ],
+  "rel": [
+   "dong-tien-kinh-doanh-la-gi",
+   "fcf-dong-tien-tu-do-la-gi",
+   "ev-ebitda-la-gi",
+   "bao-cao-ket-qua-kinh-doanh-la-gi"
+  ]
+ },
+ {
+  "slug": "khoan-phai-thu-khach-hang-la-gi",
+  "kw": "khoản phải thu khách hàng",
+  "grp": 3,
+  "title": "Khoản phải thu khách hàng là gì? Khi nào cần lo ngại",
+  "desc": "Khoản phải thu khách hàng là tiền bán chịu chưa thu. Cách so với doanh thu, ví dụ POW và HPG quý 3/2026 và dấu hiệu cần soi thuyết minh.",
+  "body": [
+   [
+    "p",
+    "Doanh nghiệp bán hàng, ghi doanh thu và lãi, nhưng khách chưa trả tiền: phần đó nằm ở dòng <b>phải thu khách hàng</b> trên bảng cân đối kế toán (xem <a href='/f0/bang-can-doi-ke-toan-la-gi.html'>bảng cân đối kế toán là gì</a>). Đây là một trong những chỗ đầu tiên nên nhìn khi lợi nhuận tăng nhanh."
+   ],
+   [
+    "h2",
+    "Phải thu khách hàng là gì?"
+   ],
+   [
+    "p",
+    "Là số tiền khách hàng còn nợ doanh nghiệp từ các lần bán chịu. Doanh nghiệp bán cho khách quen với kỳ hạn thanh toán 30–90 ngày là chuyện bình thường. Nhưng nếu khoản này phình ra nhanh hơn doanh thu, tiền đang bị giữ ở khách thay vì về két. Xem thêm <a href='/f0/von-luu-dong-la-gi.html'>vốn lưu động là gì</a>."
+   ],
+   [
+    "h2",
+    "Ví dụ: hai doanh nghiệp, hai tốc độ"
+   ],
+   [
+    "p",
+    "PV Power (POW): khoản phải thu khách hàng cuối quý 3/2026 khoảng 23.964 tỷ đồng, so với khoảng 9.805 tỷ cùng thời điểm năm trước, tức gấp khoảng 2,4 lần. Doanh thu quý 3 tăng 113,5% (16.772 tỷ), lợi nhuận 9 tháng tăng 246,5%. Phải thu tăng khoảng 144%, nhanh hơn doanh thu. Tổng bốn quý, lợi nhuận hợp nhất khoảng 7.724 tỷ nhưng dòng tiền kinh doanh khoảng 1.419 tỷ. Bán điện cho đối tác lớn có kỳ thanh toán dài, nên đây là câu hỏi cần đọc thuyết minh, không phải kết luận về chất lượng."
+   ],
+   [
+    "p",
+    "Hòa Phát (HPG): phải thu khách hàng tăng từ khoảng 7.979 lên 12.238 tỷ (tăng khoảng 53%), trong khi doanh thu quý 3 tăng 70,9%. Phải thu tăng chậm hơn doanh thu, và dòng tiền kinh doanh bốn quý khoảng 29.501 tỷ cao hơn lợi nhuận khoảng 27.634 tỷ."
+   ],
+   [
+    "h2",
+    "Ba dấu hiệu cần soi kỹ"
+   ],
+   [
+    "ol",
+    [
+     "Phải thu tăng nhanh hơn doanh thu trong nhiều quý liền.",
+     "Số ngày thu tiền bình quân kéo dài ra, tính bằng phải thu ÷ doanh thu × số ngày trong kỳ.",
+     "Dự phòng phải thu khó đòi tăng hoặc có khoản phải thu quá hạn, tập trung ở một vài khách hàng lớn."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ tính số ngày thu tiền"
+   ],
+   [
+    "p",
+    "Giả sử doanh nghiệp A có doanh thu quý 3 là 1.000 tỷ và phải thu khách hàng cuối quý 450 tỷ. Số ngày thu tiền bình quân khoảng 450 ÷ 1.000 × 90 ≈ 41 ngày. Nếu một năm trước phải thu là 250 tỷ với doanh thu 900 tỷ, số ngày chỉ khoảng 25. Khi số ngày kéo dài ra, tiền bị giữ ở khách hàng lâu hơn, và doanh nghiệp có thể phải vay thêm để duy trì hoạt động. Xem thêm <a href='/f0/ky-thu-tien-binh-quan.html'>kỳ thu tiền bình quân</a>."
+   ],
+   [
+    "h2",
+    "Phải thu khách hàng khác phải thu khác"
+   ],
+   [
+    "p",
+    "Cần phân biệt phải thu khách hàng với trả trước cho người bán và phải thu khác. Ba dòng này nằm cạnh nhau nhưng ý nghĩa khác nhau; đọc thuyết minh để biết khoản nào là bán hàng thật, khoản nào là cho vay hoặc tạm ứng. Ngân hàng và công ty chứng khoán có cấu trúc riêng, không áp dụng cách này."
+   ],
+   [
+    "h2",
+    "Cách dùng"
+   ],
+   [
+    "p",
+    "Mỗi quý, tính tốc độ tăng của phải thu và hàng tồn kho (xem <a href='/f0/hang-ton-kho-la-gi.html'>hàng tồn kho là gì</a>) rồi so với tốc độ tăng doanh thu cùng kỳ. Nếu hai khoản này đi nhanh hơn doanh thu liên tục, hãy so thêm <a href='/f0/dong-tien-kinh-doanh-la-gi.html'>dòng tiền kinh doanh</a> để xem lợi nhuận đã thành tiền chưa. Số liệu: BCTC hợp nhất đến Q3/2026, cập nhật 3/11/2026. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Phải thu khách hàng cao có xấu không?",
+    "Không nhất thiết; cần so với doanh thu và lịch sử của chính doanh nghiệp, đồng thời xem kỳ hạn thanh toán và dự phòng."
+   ],
+   [
+    "Phải thu tăng nhanh hơn doanh thu nói lên điều gì?",
+    "Có thể khách trả chậm hơn hoặc doanh nghiệp nới tín dụng bán hàng; cần đọc thuyết minh để xác nhận."
+   ],
+   [
+    "Xem phải thu khách hàng ở đâu?",
+    "Trên bảng cân đối kế toán, mục các khoản phải thu ngắn hạn, và chi tiết trong thuyết minh."
+   ]
+  ],
+  "rel": [
+   "bang-can-doi-ke-toan-la-gi",
+   "von-luu-dong-la-gi",
+   "hang-ton-kho-la-gi",
+   "dong-tien-kinh-doanh-la-gi"
+  ]
+ },
+ {
+  "slug": "co-phieu-phan-bon-la-gi",
+  "kw": "cổ phiếu phân bón",
+  "grp": 8,
+  "title": "Cổ phiếu phân bón (đạm): đọc DCM, DPM thế nào cho người mới",
+  "desc": "Cổ phiếu phân bón, đạm: giá khí, giá urê và biên gộp quyết định lợi nhuận. So sánh DCM, DPM quý 3/2026: lợi nhuận, ROE, P/E, cổ tức và rủi ro chu kỳ.",
+  "body": [
+   [
+    "p",
+    "Phân đạm là ngành chu kỳ điển hình: lợi nhuận phụ thuộc giá urê thế giới, giá khí đầu vào và mùa vụ nông nghiệp. Hai mã niêm yết lớn là Đạm Cà Mau (DCM) và Đạm Phú Mỹ (DPM) có số liệu quý 3/2026 rất khác nhau dù cùng ngành, nên là ví dụ tốt để học cách đọc cổ phiếu chu kỳ."
+   ],
+   [
+    "h2",
+    "Doanh nghiệp phân đạm kiếm tiền thế nào?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Bán urê và phân bón:</b> giá bán đi theo thị trường thế giới và nhu cầu mùa vụ.",
+     "<b>Chi phí khí:</b> khí tự nhiên là nguyên liệu lớn, nên giá khí đầu vào quyết định biên gộp.",
+     "<b>Chi phí khác:</b> bảo dưỡng nhà máy, vận chuyển, lãi vay."
+    ]
+   ],
+   [
+    "h2",
+    "Số liệu thật quý 3/2026"
+   ],
+   [
+    "p",
+    "Đạm Cà Mau (DCM): lợi nhuận sau thuế công ty mẹ quý 3 là 430 tỷ, tăng 31,1% so với cùng kỳ; 9 tháng là 2.282 tỷ, tăng 49,6%; doanh thu quý 3 là 5.742 tỷ, tăng 92,1%. ROE 4 quý 24,2%, P/E 6,27, P/B 1,44, tỷ suất cổ tức theo dữ liệu tổng hợp 6,21%."
+   ],
+   [
+    "p",
+    "Đạm Phú Mỹ (DPM): quý 3 chỉ 40 tỷ, giảm 82,9% so với cùng kỳ, nhưng 9 tháng vẫn là 1.348 tỷ, tăng 59,7%; doanh thu quý 3 là 4.128 tỷ, tăng 10,7%. ROE 13,7%, P/E 8,34, P/B 1,16, cổ tức 7,68%."
+   ],
+   [
+    "h2",
+    "Biên gộp kể câu chuyện"
+   ],
+   [
+    "p",
+    "Lợi nhuận gộp của DPM quý 3/2026 khoảng 581 tỷ, so với khoảng 1.665 tỷ của quý 2: biên gộp từ khoảng 23,8% xuống khoảng 14,1%. Của DCM, lợi nhuận gộp quý 3 khoảng 1.099 tỷ (biên khoảng 19,1%) so với khoảng 2.100 tỷ quý 2 (khoảng 31,3%). Cả hai cùng thu hẹp so với quý 2, nhưng mức thu hẹp và nền cùng kỳ khác nhau. Xem <a href='/f0/bien-loi-nhuan-gop-la-gi.html'>biên lợi nhuận gộp là gì</a>."
+   ],
+   [
+    "p",
+    "Điều này nhắc ta rằng quý đột biến (quý 2/2026 của cả hai mã) không phải mức bình thường. Với cổ phiếu chu kỳ, P/E thấp ở đỉnh chu kỳ có thể đánh lừa (xem <a href='/f0/co-phieu-chu-ky-la-gi.html'>cổ phiếu chu kỳ là gì</a>)."
+   ],
+   [
+    "h2",
+    "Dòng tiền và nợ"
+   ],
+   [
+    "p",
+    "Bốn quý đến quý 3/2026, DCM có dòng tiền kinh doanh khoảng 2.552 tỷ so với lợi nhuận hợp nhất khoảng 2.719 tỷ (khoảng 94%); DPM khoảng 1.953 tỷ so với khoảng 1.603 tỷ (khoảng 122%). Chi phí lãi vay của cả hai khá nhỏ so với lợi nhuận gộp (DPM quý 3 khoảng 51 tỷ, DCM khoảng 37 tỷ). Xem <a href='/f0/dong-tien-kinh-doanh-la-gi.html'>dòng tiền kinh doanh là gì</a>."
+   ],
+   [
+    "h2",
+    "Bốn điều nên xem khi so DCM và DPM"
+   ],
+   [
+    "ol",
+    [
+     "Biên lợi nhuận gộp nhiều quý, không chỉ một quý.",
+     "Giá urê và giá khí đầu vào, vì hai thứ này quyết định biên.",
+     "Cổ tức: tỷ suất cao nhưng lợi nhuận chu kỳ nên mức chia có thể thay đổi.",
+     "Chênh lệch giữa lợi nhuận quý và 9 tháng, như DPM +59,7% 9 tháng nhưng −82,9% quý 3."
+    ]
+   ],
+   [
+    "p",
+    "Đừng so cứng hai mã: sản phẩm, vị trí nhà máy và hợp đồng khí khác nhau. Dùng bảng này để đặt câu hỏi, không phải để kết luận. Số liệu: BCTC Q3/2026, dữ liệu tổng hợp 3/11/2026. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Vì sao lợi nhuận cổ phiếu phân đạm biến động mạnh?",
+    "Vì giá urê và giá khí đầu vào đổi theo chu kỳ nên biên gộp co giãn mạnh giữa các quý."
+   ],
+   [
+    "Quý 3 giảm mạnh nhưng 9 tháng vẫn tăng nghĩa là gì?",
+    "Nghĩa là các quý đầu năm rất cao nên cộng dồn vẫn tăng; cần xem xu hướng nhiều quý."
+   ],
+   [
+    "Nên xem chỉ số nào ở cổ phiếu phân bón?",
+    "Biên lợi nhuận gộp, lợi nhuận nhiều quý, dòng tiền kinh doanh, cổ tức và giá urê, giá khí."
+   ]
+  ],
+  "rel": [
+   "co-phieu-chu-ky-la-gi",
+   "bien-loi-nhuan-gop-la-gi",
+   "dong-tien-kinh-doanh-la-gi",
+   "co-phieu-dau-khi-khi-gia-dau-tang"
+  ]
+ },
+ {
+  "slug": "von-chu-so-huu-la-gi",
+  "kw": "vốn chủ sở hữu là gì",
+  "grp": 3,
+  "title": "Vốn chủ sở hữu là gì? Cách đọc trên bảng cân đối kế toán",
+  "desc": "Vốn chủ sở hữu là phần tài sản thuộc về cổ đông sau khi trừ nợ. Cấu phần, cách tính ROE, ví dụ HPG, POW, REE quý 3/2026 và lưu ý khi đọc.",
+  "body": [
+   [
+    "p",
+    "Nếu tổng tài sản là cái bánh, thì nợ là phần của chủ nợ, còn <b>vốn chủ sở hữu</b> là phần còn lại thuộc về cổ đông. Đây là mẫu số của ROE và là nền của giá trị sổ sách, nên hiểu nó giúp bạn đọc nhiều chỉ số khác."
+   ],
+   [
+    "h2",
+    "Công thức và cấu phần"
+   ],
+   [
+    "p",
+    "Vốn chủ sở hữu = Tổng tài sản − Nợ phải trả. Trên bảng cân đối kế toán (xem <a href='/f0/bang-can-doi-ke-toan-la-gi.html'>bảng cân đối kế toán là gì</a>), vốn chủ sở hữu thường gồm vốn góp của cổ đông, thặng dư vốn cổ phần, lợi nhuận sau thuế chưa phân phối và một số quỹ. Phần lợi nhuận giữ lại qua các năm thường là cấu phần tăng nhanh nhất ở doanh nghiệp làm ăn có lãi."
+   ],
+   [
+    "h2",
+    "Ví dụ có số liệu thật"
+   ],
+   [
+    "p",
+    "Hòa Phát (HPG): vốn chủ sở hữu cuối quý 3/2026 khoảng 149.568 tỷ đồng, so với khoảng 127.516 tỷ một năm trước, tăng khoảng 17,3%. Trong đó lợi nhuận sau thuế chưa phân phối khoảng 62.977 tỷ. PV Power (POW): vốn chủ sở hữu khoảng 46.376 tỷ, tăng khoảng 27,1% so với khoảng 36.476 tỷ. REE: khoảng 26.379 tỷ, tăng khoảng 9,2% so với khoảng 24.165 tỷ."
+   ],
+   [
+    "p",
+    "Lợi nhuận giữ lại làm vốn chủ tăng, nhưng nếu vốn tăng nhanh hơn lợi nhuận thì ROE bị kéo xuống (xem <a href='/f0/roe-eps-la-gi.html'>ROE và EPS</a>)."
+   ],
+   [
+    "h2",
+    "Vốn chủ sở hữu dùng để làm gì?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Tính ROE:</b> lợi nhuận 12 tháng chia cho vốn chủ sở hữu.",
+     "<b>Tính giá trị sổ sách mỗi cổ phiếu (BVPS):</b> vốn chủ chia số cổ phiếu, xem <a href='/f0/bvps-la-gi.html'>BVPS là gì</a>.",
+     "<b>Tính P/B:</b> giá thị trường chia BVPS, xem <a href='/f0/pb-la-gi.html'>P/B là gì</a>.",
+     "<b>Tính đòn bẩy:</b> nợ trên vốn chủ, xem <a href='/f0/no-vay-tren-von-chu-so-huu.html'>nợ vay trên vốn chủ sở hữu</a>."
+    ]
+   ],
+   [
+    "h2",
+    "Những lưu ý khi đọc"
+   ],
+   [
+    "ol",
+    [
+     "Vốn chủ sở hữu là giá trị theo sổ sách, không phải giá trị thị trường của doanh nghiệp.",
+     "Vốn chủ âm nghĩa là nợ vượt tài sản, là dấu hiệu rất đáng lo, có thể dẫn đến cảnh báo hoặc hủy niêm yết (xem <a href='/f0/co-phieu-bi-huy-niem-yet-la-gi.html'>hủy niêm yết</a>).",
+     "Vốn chủ tăng do phát hành thêm cổ phiếu sẽ làm loãng cổ đông cũ; xem <a href='/f0/chia-tach-co-phieu-thuong-phat-hanh-them.html'>phát hành thêm</a>.",
+     "Lợi ích cổ đông không kiểm soát cũng nằm trong vốn chủ hợp nhất; nên xem vốn chủ thuộc cổ đông công ty mẹ khi tính ROE."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ tính ROE từ vốn chủ"
+   ],
+   [
+    "p",
+    "Giả sử doanh nghiệp A có vốn chủ đầu năm 100 tỷ, cuối năm 120 tỷ, lợi nhuận cả năm 22 tỷ. Vốn chủ bình quân là 110 tỷ, ROE = 22 ÷ 110 = 20%. Nếu doanh nghiệp phát hành thêm cổ phiếu thu 20 tỷ vào giữa năm trong khi lợi nhuận không đổi, vốn chủ bình quân tăng, ROE giảm. Ngược lại, nếu doanh nghiệp mua lại cổ phiếu làm vốn chủ co lại, ROE có thể tăng dù lợi nhuận không đổi. Vì vậy phải đọc ROE cùng sự thay đổi của vốn chủ."
+   ],
+   [
+    "p",
+    "Cách dùng đơn giản nhất: mỗi quý, so vốn chủ với một năm trước, rồi hỏi vốn tăng nhờ lợi nhuận giữ lại hay nhờ góp thêm tiền. Số liệu: BCTC hợp nhất đến Q3/2026, cập nhật 3/11/2026. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Vốn chủ sở hữu có phải vốn điều lệ không?",
+    "Không. Vốn điều lệ chỉ là phần vốn góp; vốn chủ còn gồm thặng dư và lợi nhuận giữ lại."
+   ],
+   [
+    "Vốn chủ sở hữu âm nghĩa là gì?",
+    "Nghĩa là tổng nợ lớn hơn tổng tài sản, là dấu hiệu rủi ro tài chính cao."
+   ],
+   [
+    "Vốn chủ sở hữu tăng có tốt không?",
+    "Tốt nếu tăng nhờ lợi nhuận giữ lại; cần xem thêm nếu tăng do phát hành thêm cổ phiếu."
+   ]
+  ],
+  "rel": [
+   "bang-can-doi-ke-toan-la-gi",
+   "roe-eps-la-gi",
+   "bvps-la-gi",
+   "pb-la-gi"
   ]
  }
 ]
