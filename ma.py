@@ -250,34 +250,9 @@ def page(fn, title, desc, h1, body, ld_extra=None):
     return url
 CTA = ('<div class="cta"><a class="btn b1" href="/mo-tai-khoan-chung-khoan.html">Mở tài khoản chứng khoán</a>'
        '<a class="btn b2" href="https://zalo.me/0365188286" rel="noopener">Tư vấn 1:1 qua Zalo</a><a class="btn b2" href="https://zalo.me/g/jbnbiq994" rel="noopener">Nhóm Zalo cộng đồng</a><a class="btn b2" href="/#hoidap">Hỏi đáp PRO</a></div>')
-NAV = ('<h2>Khám phá thêm</h2><ul><li><a href="/thi-truong-chung-khoan-hom-nay.html">Thị trường chứng khoán hôm nay</a></li><li><a href="/dinh-gia-co-phieu.html">Định giá cổ phiếu</a></li>'
+NAV = ('<h2>Khám phá thêm</h2><ul><li><a href="/dinh-gia-co-phieu.html">Định giá cổ phiếu</a></li>'
        '<li><a href="/bao-cao-2026.html">Báo cáo lệnh 2016–2026</a></li><li><a href="/tu-van-dau-tu-chung-khoan.html">Tư vấn đầu tư chứng khoán</a></li><li><a href="/hoc/">Học chứng khoán</a></li><li><a href="/f0/">Cẩm nang F0</a></li><li><a href="/the-gioi-hang-hoa.html">Thế giới &amp; hàng hóa</a></li><li><a href="/ma/">Tra cứu mã cổ phiếu</a></li></ul>')
 EXTRA = []
-# 1) Thị trường hôm nay
-IX = {}
-for code, nm in (("VNINDEX", "VN-Index"), ("VN30", "VN30"), ("HNX", "HNX-Index")):
-    bb = bars(code)
-    if len(bb) > 30:
-        cc = [q[4] for q in bb]; IX[code] = (nm, bb[-1][0], cc[-1], chg(cc, 1), chg(cc, 5), chg(cc, 21), chg(cc, 250), ma(cc, 20), ma(cc, 50), ma(cc, 200), rsi(cc))
-mv = []
-for t in made:
-    bb = bars(t)
-    if len(bb) > 2 and bb[-2][4]: mv.append((t, bb[-1][4], (bb[-1][4] / bb[-2][4] - 1) * 100, bb[-1][5] * bb[-1][4]))
-up = sorted(mv, key=lambda z: -z[2])[:10]; dn = sorted(mv, key=lambda z: z[2])[:10]; liq = sorted(mv, key=lambda z: -z[3])[:10]
-nup = sum(1 for z in mv if z[2] > 0); ndn = sum(1 for z in mv if z[2] < 0)
-body = []
-if "VNINDEX" in IX:
-    nm, dd, v, d1, d5, d21, d250, a20, a50, a200, rr = IX["VNINDEX"]
-    ab = sum(1 for m in (a20, a50, a200) if m and v > m)
-    st = "xu hướng tăng" if ab == 3 else "xu hướng giảm" if ab == 0 else "giằng co"
-    body.append(f"<p>Phiên {dmy(dd)}, <b>VN-Index</b> đóng cửa <b>{nf(v)}</b> điểm ({pc(d1)} trong phiên, {pc(d5)} trong 1 tuần, {pc(d250)} trong 1 năm). Chỉ số nằm trên {ab}/3 đường trung bình MA20, MA50, MA200, trạng thái <b>{st}</b>; RSI 14 phiên {nf(rr,0)}. Trong {len(mv)} mã có thanh khoản, {nup} mã tăng và {ndn} mã giảm.</p>")
-body.append("<h2>Các chỉ số chính</h2><table class='mt'>" + "".join(f"<tr><td>{e(z[0])}</td><td class='r'><b>{nf(z[2])}</b></td><td class='r {'up' if (z[3] or 0)>=0 else 'dn'}'>{pc(z[3])}</td><td class='n'>1 tháng {pc(z[5])}</td></tr>" for z in IX.values()) + "</table>")
-def tb(L, lab): return f"<h2>{lab}</h2><table class='mt'>" + "".join(f"<tr><td><a href='/ma/{t}.html'>{t}</a></td><td class='r'>{nf(p)}</td><td class='r {'up' if c>=0 else 'dn'}'>{pc(c)}</td></tr>" for t, p, c, _ in L) + "</table>"
-body += [tb(up, "Top 10 cổ phiếu tăng mạnh nhất"), tb(dn, "Top 10 cổ phiếu giảm mạnh nhất"), tb(liq, "Top 10 cổ phiếu thanh khoản cao nhất"),
-         "<p>Nhận định thị trường hằng ngày của Huy Nguyễn được chia sẻ trong nhóm Zalo cộng đồng và video lúc 20:00 trên kênh YouTube Chứng Khoán Huy Nguyễn.</p>", CTA, NAV]
-EXTRA.append(page("thi-truong-chung-khoan-hom-nay.html", f"Chứng khoán hôm nay {dmy(today)}: VN-Index, mã tăng giảm mạnh | Chứng Khoán Huy Nguyễn",
-     "Thị trường chứng khoán hôm nay: VN-Index, VN30, HNX-Index, top cổ phiếu tăng giảm mạnh, thanh khoản cao, xu hướng và nhận định của Huy Nguyễn. Cập nhật mỗi ngày.",
-     "Thị trường chứng khoán hôm nay", body))
 # 2) Định giá cổ phiếu
 top = sorted(made, key=lambda t: -(FD[t].get("mc") or 0))[:40]
 body = ["<p>Định giá cổ phiếu là ước tính giá trị hợp lý của doanh nghiệp để so với giá thị trường. Cách nhanh nhất là so các chỉ số <b>P/E</b>, <b>P/B</b>, <b>ROE</b> với trung vị thị trường và với cùng ngành; sâu hơn là chiết khấu dòng tiền và so sánh tăng trưởng lợi nhuận.</p>",
