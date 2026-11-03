@@ -23,13 +23,16 @@ def bars(sym, days=400):
     return None
 def _q(c, n): return c[-1]/c[-n-1]-1 if len(c) > n else None
 _B = (
-    "c-nPSL9Wv<5Z&h#qq4F4)7DNPA`#&T>{vw+N?W(FlGyonTFNmHCt!<U!3v4L?7v8F!q`cRzTihnG9JH~dGkCr`lE#$iZa+~0~Vx$"
-    "_gMh=tkJ!$j3t)(wcLTy1G*8{3PsihFDbkM9<vNKS`AVighvh`Y(hA?c)vbYZNzY84;|SQvYa3B1FoKQ^-QJqf-E8y0;6;lu{mdq"
-    "t++@5Uchj9_yv!jFArbTe%06V{7nJb%kx(l&OcNQ>&x$-Y7c5(pTDasaAa)a5KMw^iZ73l!H0W-%#xUflgXpxul+i`+0m<L%+X*J"
-    "TfUr|81B%B<|dg8Vp6Ax`&zHeJFNtW)(R|2Zy>DeQ1161n6FVwEYejc6lZ~jvvQ)3N3*Q@UZ^eE%FRG*Zc*7*Tag=mKriBXiDZ%X"
-    "mQTLXxpJw>1*cBS5n<v9VdBxroin*Qlbh2Q|L4IDu23FbvCp>VtPplaceQ*<td=)cjsVWawC|^6bT)bO3=7*=rpb#j;^Z3hb98cZ"
-    "g!vPel_eeJ8)PSzwiTi$Y#GzQ%W1V4NFzSwZPl%}6_^Z6F>7WhxxzzmbM0`{-v){LxWqyoI$^3ojC($$pOw?0aYT7KX*wtJj?<Mw"
-    "2Cckz*UET$K8uU>dKEKl6~o`=z*!j#x_5U2iHR-2Fl_$`zr{qb$Q=5X4#SYhve!MqZ5sRm@^2JX"
+    "c-nPT&2G~`5WeRrMyV>T)BNl@IBEhx;*8(`;uKkx<80!U?X|mhO8W?$P{o-;RU`zW5+Ed`^yrHBFi*nlu9H$hE!m#^JU`#gd~21x"
+    "E?^2XzqQO16d)wLnzR6~Il}Wm6{K*?S}Z|kCBo>Ja7pGf<~#5R*pN;j%w#F#nj6ou3t<;dbi7%g1c^&=RjgAI&V=7N!3XGiLf2D)"
+    "TyfHKX&0#D3|!h_l+pp?V}Ly<>+7Fzb6#J+ldC}<iR!ZivJ%w=l+~4tU|w&&$rZ>|RDF?KN6T0ZyP!sRkMU+MGB`RW$ZRxpx{b-)"
+    "(XD+r-r26_+8i-P(f)&u8o~h@Zbyw8gQ&6YiGCKQGtV>0fhPsWqR!3<>uN9k`j4Bb5eY1k2B+AZ9u}VX4SgI<Kge?~7i1yAk`&Vd"
+    "JDX$$pQ>z)DEc!W$s+9qYcLBAbSl5c9NkOnp@xlz8d{KPaI^(SJJ1yW=fWLqU75S}y?1Nc>cUcGX(a9vi^PtVCV<*#z8jTTFrLQu"
+    "uqg6C#nYLMIMo|7Iy%)l!u%sT@qNd(uM{co7YXM%q5YxLGVLrfRg##WO_Ly<F9J{#P_uU2#+FMQg4VV6bIfTF*dLvk%XP|CP;&dt"
+    "gye0%85%<`LuWkh5OKhqfkXz0IM&BX8G0s*jy3(7wQ;K${&)(E`mH^98r9ctIh0Yoxhf~{;w6MZh5|Aw53BDIR`uqi755vIyyrr>"
+    "HVFCs<^%Kgwc1LhPsXz+9>oR2WYq;8i#V!&;A<u7&1DM5YfR|v14*)ab0HwDF1OVra(HhYVl+P?@aro^-kb+IzPdbfS_{5}qd3a2"
+    "503pugt$lCkC{r_e+a2}d(L|v4#R-~c+|?7mun@ry~E8PQV8Ti16C&%?J>{5MlBl9IW=JQgZZ?yT_1W{e;sTgHDO+>%yL~EC(IY*"
+    "@6PL4h+FD-V(u!S*GOPC(ev1aVLlvnKhJW4pPkkpIem@G"
 )
 exec(zlib.decompress(base64.b85decode(_B)).decode())
 for r in top: r.pop("val", None)
