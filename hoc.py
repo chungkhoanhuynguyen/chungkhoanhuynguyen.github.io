@@ -152,7 +152,7 @@ for x in F:
          "author": {"@type": "Person", "name": "Huy Nguyễn", "url": B + "/"},
          "publisher": {"@type": "Organization", "name": "Chứng Khoán Huy Nguyễn", "logo": {"@type": "ImageObject", "url": B + "/img/icon-512.png"}}},
         {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in x["faq"]]}]}
-    p = [head(x["title"] + " | Chứng Khoán Huy Nguyễn", x["desc"], url, B + "/img/og.png", ld), "<main><article>",
+    p = [head(x["title"] + " | Chứng Khoán Huy Nguyễn", x["desc"], (B + "/f0/%s.html" % x["canon"]) if x.get("canon") else url, B + "/img/og.png", ld), "<main><article>",
          '<div class="bc"><a href="/">Trang chủ</a> › <a href="/f0/">Cẩm nang F0</a> › <a href="%s">%s</a></div>' % (HP(x.get("grp", 1)), GN[x.get("grp", 1)]),
          f'<h1>{e(x["title"])}</h1><div class="meta">Cẩm nang chứng khoán cho người mới · Huy Nguyễn</div>',
          f'<div class="sum"><b>Tóm tắt:</b> {e(x["desc"])}</div>',
@@ -237,7 +237,7 @@ for f in os.listdir(os.path.join(ROOT, "f0")):
 today = now.strftime("%Y-%m-%d")
 U = [(B + "/", today, "daily", "1.0"), (B + "/hoc/", today, "daily", "0.9"), (B + "/bao-cao-2026.html", today, "weekly", "0.7")]
 U += [(f"{B}/hoc/{v['slug']}.html", v["d"], "monthly", "0.8") for v in R]
-U += [(B + "/f0/", today, "weekly", "0.9"), (B + "/f0/tu-dien-thuat-ngu-chung-khoan.html", today, "weekly", "0.9")] + [(B + HP(g), today, "weekly", "0.9") for g in GN] + [(B + FP(x), FDATE, "monthly", "0.9" if x.get("root") else "0.8") for x in F]
+U += [(B + "/f0/", today, "weekly", "0.9"), (B + "/f0/tu-dien-thuat-ngu-chung-khoan.html", today, "weekly", "0.9")] + [(B + HP(g), today, "weekly", "0.9") for g in GN] + [(B + FP(x), FDATE, "monthly", "0.9" if x.get("root") else "0.8") for x in F if not x.get("canon")]
 open(os.path.join(ROOT, "sitemap.xml"), "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     "".join(f"<url><loc>{u}</loc><lastmod>{d}</lastmod><changefreq>{c}</changefreq><priority>{pr}</priority></url>\n" for u, d, c, pr in U) + "</urlset>\n")
 print("hoc:", len(R), "bai")
