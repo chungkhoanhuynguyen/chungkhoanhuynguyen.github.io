@@ -28,6 +28,7 @@ def doi(s):
                 prv = toks[j-1].lower().strip(",.") if j > i else ""
                 nxt = toks[j+1].lower().strip(",.") if j + 1 < len(toks) else ""
                 if not (prv in ("mươi", "mười", "trăm", "nghìn", "ngàn", "triệu", "tỷ", "tỉ", "linh", "lẻ") or nxt in ("mươi", "trăm", "nghìn", "ngàn", "triệu", "tỷ", "tỉ", "phẩy", "phần")): break
+            if j > i and toks[j-1].lower().strip(",.") in D and w in D: break   # 2 chữ số liền nhau = 2 số khác nhau
             j += 1
         if j > i:
             seg = [t.lower().strip(",.") for t in toks[i:j]]
