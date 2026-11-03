@@ -99,12 +99,16 @@ def _chunks(txt, mx=52):
         if cur: out.append(cur)
     m = []
     for c in out:
-        if m and len(m[-1]) + len(c) + 1 <= 34: m[-1] += " " + c
+        if m and (len(m[-1]) + len(c) + 1 <= 34 or (len(c) < 12 and len(m[-1]) + len(c) + 1 <= 64)): m[-1] += " " + c
         else: m.append(c)
     return m
+def _doi(t):
+    try:
+        import so_chu; return so_chu.doi(t)
+    except Exception: return t
 def _sub_plan(scenes, b, gap):
     for i, sc in enumerate(scenes):
-        ch = _chunks(sc.get("say", "")); T = max(0.5, b[i+1] - b[i] - gap); n = sum(len(c) for c in ch) or 1; t = 0; sc["_sub"] = []
+        ch = _chunks(_doi(sc.get("say", ""))); T = max(0.5, b[i+1] - b[i] - gap); n = sum(len(c) for c in ch) or 1; t = 0; sc["_sub"] = []
         for c in ch:
             d_ = T * len(c) / n; sc["_sub"].append((t, t + d_, c)); t += d_
 def _srt(scenes, b, path):
