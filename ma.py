@@ -71,7 +71,7 @@ except Exception: pass
 SYMS = sorted(s for s, x in S.items() if x[1] in EXN and s in FD and (FD[s].get("v10") or 0) >= 20000 and os.path.exists(os.path.join(ROOT, "data/c", s + ".bin")))
 
 def head(title, desc, url, ld):
-    return f"""<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests"><meta name="referrer" content="strict-origin-when-cross-origin">
+    return f"""<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests"><meta name="referrer" content="strict-origin-when-cross-origin">
 <title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{url}">
 <meta property="og:type" content="article"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{B}/img/og.png"><meta property="og:locale" content="vi_VN">
 <link rel="icon" href="/img/fav-32.png"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&family=Playfair+Display:wght@800;900&display=swap">
@@ -149,6 +149,8 @@ for s in SYMS:
         P.append(f"<h2>Kết quả kinh doanh {e(k.get('q',''))}</h2><p><span class='tag'>{e(lab)}</span></p><ul>" + "".join(f"<li>{e(i)}</li>" for i in k.get("info", [])) + "</ul>")
         if k.get("good"): P.append("<h3>Điểm cộng</h3><ul>" + "".join(f"<li>{e(i)}</li>" for i in k["good"]) + "</ul>")
         if k.get("bad"): P.append("<h3>Điểm cần lưu ý</h3><ul>" + "".join(f"<li>{e(i)}</li>" for i in k["bad"]) + "</ul>")
+    if os.path.exists(os.path.join(ROOT, "data/bctc/%s.bin" % s)):
+        P.append(f'<h2>Báo cáo tài chính {e(s)}: cân đối kế toán, kết quả kinh doanh, lưu chuyển tiền tệ, chỉ số tài chính</h2><div id="bctc" data-ma="{e(s)}"><p>Đang tải báo cáo tài chính {e(s)}…</p></div><script src="/bctc.js?v=1" defer></script>')
     if nx: P.append(f"<h2>Nhận định của Huy Nguyễn về {e(s)}</h2><blockquote>{e(nx)}</blockquote>")
     P.append(ZBOX.format(s=e(s)))
     P.append(f'<div class="cta"><a class="btn b1" href="/#ma={e(s)}">Xem biểu đồ {e(s)}</a><a class="btn b2" href="/#hoidap">Hỏi đáp chuyên sâu về {e(s)}</a><a class="btn b2" href="https://zalo.me/0365188286" rel="noopener">Tư vấn 1:1</a></div>')

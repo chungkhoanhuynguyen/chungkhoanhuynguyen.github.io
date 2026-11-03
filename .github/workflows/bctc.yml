@@ -1,0 +1,30 @@
+name: Bao cao tai chinh day du cho trang ma
+on:
+  schedule:
+    - cron: "23 20 * * 6"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: data-push
+jobs:
+  bctc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python bctc.py
+      - run: python hoc.py
+      - run: python ma.py
+      - run: python tim.py
+      - run: python _kiem/kiem_web.py
+      - run: |
+          git config user.name "hn-bot"
+          git config user.email "hn-bot@users.noreply.github.com"
+          git add -A data/bctc hoc f0 ma sitemap.xml mo-tai-khoan-chung-khoan.html thi-truong-chung-khoan-hom-nay.html dinh-gia-co-phieu.html tu-van-dau-tu-chung-khoan.html the-gioi-hang-hoa.html tim.json
+          git diff --cached --quiet || git commit -m "BCTC day du $(date -u +%F)"
+          git pull --rebase -q || true
+          git push
