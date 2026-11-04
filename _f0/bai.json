@@ -592,12 +592,32 @@
  {
   "slug": "mo-tai-khoan-chung-khoan-cho-sinh-vien",
   "kw": "mở tài khoản chứng khoán cho sinh viên",
+  "grp": 1,
+  "viet_day": true,
+  "add": [],
   "title": "Sinh viên có nên mở tài khoản chứng khoán? Bắt đầu với số vốn nhỏ",
   "desc": "Sinh viên mở tài khoản chứng khoán cần gì, nên bắt đầu với bao nhiêu tiền, học gì trước và những rủi ro cần tránh khi còn đi học.",
   "body": [
    [
     "p",
-    "Sinh viên đủ 18 tuổi có CCCD là mở được tài khoản online. Bắt đầu sớm giúp học được kỷ luật đầu tư khi số tiền còn nhỏ, sai sót không quá đắt."
+    "Nhiều bạn sinh viên muốn thử đầu tư nhưng lo thiếu tiền, thiếu kinh nghiệm hoặc sợ mất tiền học phí. Thực tế, sinh viên đủ 18 tuổi có căn cước công dân là mở được tài khoản online. Bắt đầu sớm giúp học được kỷ luật đầu tư khi số tiền còn nhỏ, sai sót không quá đắt. Bài này nói rõ cần chuẩn bị gì và nên tránh gì."
+   ],
+   [
+    "h2",
+    "Cần chuẩn bị gì để mở tài khoản?"
+   ],
+   [
+    "ul",
+    [
+     "Căn cước công dân còn hạn và số điện thoại chính chủ.",
+     "Một tài khoản ngân hàng đứng tên mình để nạp và rút tiền (xem <a href='/f0/cach-nap-tien-vao-tai-khoan-chung-khoan.html'>cách nạp tiền vào tài khoản chứng khoán</a>).",
+     "Email để nhận thông báo và hợp đồng điện tử.",
+     "Thời gian khoảng 10–15 phút nếu mở online, tùy công ty chứng khoán."
+    ]
+   ],
+   [
+    "p",
+    "Hướng dẫn chi tiết từng bước ở bài <a href='/mo-tai-khoan-chung-khoan.html'>mở tài khoản chứng khoán</a>."
    ],
    [
     "h2",
@@ -606,11 +626,19 @@
    [
     "ol",
     [
-     "Mở tài khoản theo hướng dẫn ở bài <a href=\"/mo-tai-khoan-chung-khoan.html\">mở tài khoản chứng khoán</a>.",
-     "Học 5 khái niệm: P/E, P/B, ROE, cổ tức, cắt lỗ.",
-     "Bắt đầu với vài triệu đồng, mua lô lẻ cổ phiếu doanh nghiệp tốt.",
-     "Tuyệt đối không vay tiền, không dùng margin."
+     "Học 5 khái niệm cơ bản trước: <a href='/f0/pe-la-gi.html'>P/E</a>, <a href='/f0/pb-la-gi.html'>P/B</a>, <a href='/f0/roe-eps-la-gi.html'>ROE</a>, <a href='/f0/co-tuc-la-gi.html'>cổ tức</a> và <a href='/f0/cat-lo-la-gi.html'>cắt lỗ</a>.",
+     "Bắt đầu với vài triệu đồng, ưu tiên học cách đặt lệnh, đọc bảng giá, tính lãi lỗ.",
+     "Mua đều mỗi tháng thay vì dồn một lần (xem <a href='/f0/mua-trung-binh-gia-dca.html'>mua trung bình giá DCA</a>).",
+     "Tuyệt đối không vay tiền, không dùng <a href='/f0/margin-la-gi.html'>margin</a>."
     ]
+   ],
+   [
+    "h2",
+    "Ví dụ thực tế"
+   ],
+   [
+    "p",
+    "Giả sử một bạn sinh viên mỗi tháng tiết kiệm được 1 triệu đồng. Thay vì dồn một lần vào cổ phiếu đang nóng, bạn mua đều chứng chỉ quỹ hoặc <a href='/f0/etf-la-gi.html'>ETF</a> mỗi tháng. Sau 12 tháng, bạn có 12 triệu đồng vốn tích lũy, đã quen cách đặt lệnh, đọc bảng giá, và không bị áp lực vì số tiền mỗi lần nhỏ. Điều quý nhất là kinh nghiệm, không phải lợi nhuận năm đầu. Ví dụ này chỉ minh họa cách làm, không phải dự báo lợi nhuận."
    ],
    [
     "h2",
@@ -619,10 +647,19 @@
    [
     "ul",
     [
-     "Nhóm phím hàng thu phí, hứa lãi cao.",
-     "Dùng tiền học phí, tiền sinh hoạt để đầu tư.",
-     "Lướt sóng liên tục khi chưa hiểu thị trường."
+     "Nhóm kín thu phí, hứa lãi cao hoặc hô mã đồng loạt (xem <a href='/f0/chung-khoan-co-phai-lua-dao-khong.html'>chứng khoán có phải lừa đảo không</a>).",
+     "Dùng tiền học phí, tiền sinh hoạt để đầu tư; chỉ dùng tiền nhàn rỗi.",
+     "Lướt sóng liên tục khi chưa hiểu thị trường, dễ mất tiền vì phí và cảm xúc (xem <a href='/f0/sai-lam-cua-f0.html'>sai lầm của F0</a>).",
+     "Nghe tin đồn trên mạng xã hội rồi mua theo."
     ]
+   ],
+   [
+    "h2",
+    "Nên đầu tư bao nhiêu?"
+   ],
+   [
+    "p",
+    "Không có con số chung. Nguyên tắc dễ nhớ: số tiền nếu mất hoàn toàn cũng không ảnh hưởng việc học và sinh hoạt. Tham khảo thêm <a href='/f0/dau-tu-chung-khoan-voi-10-trieu.html'>đầu tư chứng khoán với 10 triệu</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
    ],
    [
     "cta",
@@ -639,35 +676,16 @@
    [
     "Sinh viên nên đầu tư bao nhiêu tiền?",
     "Chỉ dùng tiền nhàn rỗi, mất cũng không ảnh hưởng việc học và sinh hoạt."
+   ],
+   [
+    "Sinh viên nên học gì trước khi đầu tư?",
+    "Học P/E, P/B, ROE, cổ tức và cắt lỗ trước, rồi tập đặt lệnh với số tiền nhỏ."
    ]
   ],
   "rel": [
    "mo-tai-khoan-chung-khoan",
    "dau-tu-chung-khoan-voi-10-trieu",
    "sai-lam-cua-f0"
-  ],
-  "grp": 1,
-  "add": [
-   [
-    "h2",
-    "Ví dụ thực tế"
-   ],
-   [
-    "p",
-    "Giả sử một bạn sinh viên mỗi tháng tiết kiệm được 1 triệu đồng. Thay vì dồn một lần vào cổ phiếu \"hot\", bạn mua đều chứng chỉ quỹ hoặc <a href=\"/f0/etf-la-gi.html\">ETF</a> mỗi tháng. Sau 12 tháng, bạn có 12 triệu vốn tích lũy, đã quen cách đặt lệnh, đọc bảng giá, và không bị áp lực vì số tiền mỗi lần nhỏ. Điều quý nhất là kinh nghiệm, không phải lợi nhuận năm đầu."
-   ],
-   [
-    "h2",
-    "Tóm lại"
-   ],
-   [
-    "ul",
-    [
-     "Sinh viên có thể mở tài khoản khi đủ tuổi theo quy định và có CCCD.",
-     "Bắt đầu với số vốn nhỏ, ưu tiên học hơn kiếm lời nhanh.",
-     "Tránh margin, tránh vay tiền và tránh nhóm hô hào mã."
-    ]
-   ]
   ]
  },
  {
@@ -1704,16 +1722,23 @@
  {
   "slug": "phan-tich-co-ban-va-ky-thuat",
   "kw": "phân tích cơ bản và phân tích kỹ thuật",
+  "grp": 4,
+  "viet_day": true,
+  "add": [],
   "title": "Phân tích cơ bản và phân tích kỹ thuật: F0 nên học cái nào trước",
   "desc": "Phân tích cơ bản là gì, phân tích kỹ thuật là gì, ưu nhược điểm và cách kết hợp hai phương pháp để chọn mã và chọn điểm mua.",
   "body": [
+   [
+    "p",
+    "Người mới thường nghe hai trường phái: một bên nói phải đọc báo cáo tài chính, bên kia nói biểu đồ giá nói lên tất cả. Thực ra hai cách trả lời hai câu hỏi khác nhau: <b>mua cái gì</b> và <b>mua lúc nào</b>. Hiểu rõ phân biệt này giúp bạn không rơi vào cực đoan."
+   ],
    [
     "h2",
     "Phân tích cơ bản: mua cái gì"
    ],
    [
     "p",
-    "Xem doanh nghiệp làm gì, lợi nhuận, nợ vay, dòng tiền, định giá. Trả lời câu hỏi: doanh nghiệp này có đáng sở hữu không và giá hiện tại đắt hay rẻ."
+    "Phân tích cơ bản nhìn vào chính doanh nghiệp: kinh doanh gì, lợi nhuận, nợ vay, dòng tiền và mức định giá. Công cụ gồm báo cáo tài chính (xem <a href='/f0/cach-doc-bao-cao-tai-chinh.html'>cách đọc báo cáo tài chính</a>), các chỉ số như <a href='/f0/pe-la-gi.html'>P/E</a>, <a href='/f0/pb-la-gi.html'>P/B</a>, <a href='/f0/roe-eps-la-gi.html'>ROE</a>. Câu hỏi trả lời: doanh nghiệp này có đáng sở hữu không và giá hiện tại đắt hay rẻ. Ưu điểm là hợp với đầu tư dài hạn; nhược điểm là không cho biết thời điểm."
    ],
    [
     "h2",
@@ -1721,15 +1746,36 @@
    ],
    [
     "p",
-    "Dùng biểu đồ giá, khối lượng, đường trung bình MA20, MA50, MA200, chỉ báo RSI để xác định xu hướng và điểm vào lệnh."
+    "Phân tích kỹ thuật dùng biểu đồ giá và khối lượng để xác định xu hướng và điểm vào lệnh. Công cụ gồm <a href='/f0/duong-ma-la-gi.html'>đường trung bình MA</a>, <a href='/f0/rsi-la-gi.html'>RSI</a>, <a href='/f0/ho-tro-khang-cu.html'>hỗ trợ và kháng cự</a> và mô hình nến. Ưu điểm là cho tín hiệu rõ ràng về thời điểm và mức cắt lỗ; nhược điểm là không cho biết doanh nghiệp có tốt không, và có thể cho nhiều tín hiệu giả khi thị trường đi ngang."
    ],
    [
     "h2",
-    "Kết hợp cả hai"
+    "Ví dụ thực tế"
    ],
    [
     "p",
-    "Dùng cơ bản để chọn doanh nghiệp tốt, dùng kỹ thuật để chọn thời điểm và đặt cắt lỗ. Thêm lớp vĩ mô (lãi suất, tỷ giá, dòng tiền) để biết thị trường chung đang thuận hay nghịch."
+    "Giả sử qua phân tích cơ bản, bạn chọn được cổ phiếu A: lợi nhuận tăng đều, P/E hợp lý. Phân tích kỹ thuật giúp chọn thời điểm: thay vì mua khi giá vừa tăng nóng và RSI trên 70, bạn chờ giá điều chỉnh về vùng hỗ trợ gần đường MA50 rồi mới mua, và đặt mức cắt lỗ dưới hỗ trợ đó. Kết hợp như vậy giúp bạn tránh mua đúng lúc quá nóng một doanh nghiệp tốt."
+   ],
+   [
+    "h2",
+    "Kết hợp hai phương pháp"
+   ],
+   [
+    "ol",
+    [
+     "Dùng cơ bản để lọc ra một danh sách doanh nghiệp đáng theo dõi.",
+     "Dùng kỹ thuật để chọn điểm mua, điểm cắt lỗ và kích thước vị thế (xem <a href='/f0/cat-lo-la-gi.html'>cắt lỗ là gì</a>).",
+     "Thêm lớp vĩ mô: lãi suất, tỷ giá, dòng tiền để biết thị trường chung đang thuận hay nghịch.",
+     "Ghi lại lý do mua và điều kiện bán vào sổ giao dịch."
+    ]
+   ],
+   [
+    "h2",
+    "Người mới nên học cái nào trước?"
+   ],
+   [
+    "p",
+    "Nên học cơ bản trước để biết mình đang sở hữu gì, rồi học vài công cụ kỹ thuật đơn giản: xu hướng, hỗ trợ kháng cự, MA, RSI. Đừng cố học mọi chỉ báo cùng lúc; hai ba công cụ dùng nhất quán tốt hơn mười công cụ dùng lộn xộn. Với người tích sản dài hạn, phần cơ bản quan trọng hơn; với người giao dịch ngắn hạn, phần kỹ thuật quan trọng hơn nhưng vẫn cần kỷ luật quản trị vốn."
    ],
    [
     "h2",
@@ -1737,7 +1783,7 @@
    ],
    [
     "p",
-    "Seri <a href=\"/hoc/\">Kiến thức đầu tư nền tảng</a> và các video trên kênh <a href=\"https://www.youtube.com/@chungkhoanhuynguyen\" rel=\"noopener\">YouTube Chứng Khoán Huy Nguyễn</a> giải thích từng khái niệm bằng ví dụ thực tế."
+    "Seri <a href='/hoc/'>Kiến thức đầu tư nền tảng</a> và các video trên kênh <a href='https://www.youtube.com/@chungkhoanhuynguyen' rel='noopener'>YouTube Chứng Khoán Huy Nguyễn</a> giải thích từng khái niệm bằng ví dụ thực tế. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
    ]
   ],
   "faq": [
@@ -1748,35 +1794,16 @@
    [
     "Chỉ dùng kỹ thuật có được không?",
     "Có thể với giao dịch ngắn hạn, nhưng rủi ro cao hơn nếu doanh nghiệp yếu."
+   ],
+   [
+    "Phân tích cơ bản có cho biết thời điểm mua không?",
+    "Không. Cơ bản cho biết doanh nghiệp và mức định giá; thời điểm cần thêm công cụ kỹ thuật và kỷ luật vốn."
    ]
   ],
   "rel": [
    "pe-la-gi",
    "cat-lo-la-gi",
    "vn-index-la-gi"
-  ],
-  "grp": 4,
-  "add": [
-   [
-    "h2",
-    "Ví dụ thực tế"
-   ],
-   [
-    "p",
-    "Giả sử qua phân tích cơ bản, anh chị chọn được cổ phiếu A: lợi nhuận tăng đều, P/E hợp lý. Phân tích kỹ thuật giúp chọn thời điểm: thay vì mua khi giá vừa tăng nóng và <a href=\"/f0/rsi-la-gi.html\">RSI</a> trên 70, anh chị chờ giá điều chỉnh về vùng <a href=\"/f0/ho-tro-khang-cu.html\">hỗ trợ</a> gần <a href=\"/f0/duong-ma-la-gi.html\">đường MA50</a> rồi mới mua, đặt cắt lỗ dưới hỗ trợ."
-   ],
-   [
-    "h2",
-    "Tóm lại"
-   ],
-   [
-    "ul",
-    [
-     "Phân tích cơ bản trả lời câu hỏi mua cái gì.",
-     "Phân tích kỹ thuật trả lời câu hỏi mua lúc nào, bán lúc nào.",
-     "F0 nên học cơ bản trước, sau đó dùng vài công cụ kỹ thuật đơn giản."
-    ]
-   ]
   ]
  },
  {
@@ -19323,5 +19350,637 @@
    "bvps-la-gi",
    "pb-la-gi"
   ]
+ },
+ {
+  "slug": "co-phieu-thuy-san-la-gi",
+  "kw": "cổ phiếu thủy sản",
+  "grp": 8,
+  "title": "Cổ phiếu thủy sản: ANV, FMC, VHC khác nhau ở đâu?",
+  "desc": "Cổ phiếu thủy sản chịu tác động giá cá, thuế nhập khẩu, tỷ giá. So sánh ROE, P/E, P/B, cổ tức của ANV, FMC, VHC, MPC quý 3/2026.",
+  "body": [
+   [
+    "p",
+    "Thủy sản là ngành xuất khẩu lớn, nhưng lợi nhuận của từng doanh nghiệp rất khác nhau tùy loại sản phẩm và thị trường. Bài này đặt các mã niêm yết cạnh nhau bằng số liệu thật, để bạn biết nên hỏi gì trước khi so sánh."
+   ],
+   [
+    "h2",
+    "Ba yếu tố chi phối ngành"
+   ],
+   [
+    "ul",
+    [
+     "<b>Giá cá nguyên liệu và giá bán:</b> cá tra, tôm, cá ngừ có chu kỳ giá riêng.",
+     "<b>Thị trường xuất khẩu và thuế:</b> chính sách nhập khẩu của các nước lớn có thể làm giá bán và đơn hàng thay đổi.",
+     "<b>Tỷ giá:</b> doanh thu thu bằng ngoại tệ nên tỷ giá ảnh hưởng đến biên (xem <a href='/f0/ty-gia-tang-anh-huong-co-phieu.html'>tỷ giá tăng ảnh hưởng cổ phiếu</a>)."
+    ]
+   ],
+   [
+    "h2",
+    "Bảng so sánh (dữ liệu 3/11/2026)"
+   ],
+   [
+    "p",
+    "ROE 4 quý, P/E, P/B và tỷ suất cổ tức theo dữ liệu tổng hợp: ANV ROE 21,1%, P/E 5,61, P/B 1,09, cổ tức 6,39%. FMC ROE 20,3%, P/E 4,21, P/B 0,89, cổ tức 5,75%. VHC ROE 12,2%, P/E 8,08, P/B 1,04, cổ tức 4,51%. MPC ROE 10,2%, P/E 9,54, P/B 0,95, cổ tức 2,55%. CMX ROE 4,8%, P/E 6,68, P/B 0,36. IDI ROE 4,2%, P/E 8,76, P/B 0,38."
+   ],
+   [
+    "p",
+    "Có thể thấy ANV và FMC vừa có ROE trên 20% vừa có P/E thấp, trong khi CMX và IDI có P/B dưới 0,4 nhưng ROE chỉ khoảng 4%. P/B thấp không đồng nghĩa với rẻ nếu ROE thấp (xem <a href='/f0/pb-la-gi.html'>P/B là gì</a> và <a href='/f0/pe-la-gi.html'>P/E là gì</a>)."
+   ],
+   [
+    "h2",
+    "Dòng tiền và vốn lưu động"
+   ],
+   [
+    "p",
+    "Ngành thủy sản cần nhiều vốn lưu động để nuôi, thu mua và tồn kho. VHC bốn quý đến quý 3/2026 có lợi nhuận hợp nhất khoảng 1.314 tỷ và dòng tiền kinh doanh khoảng 472 tỷ, tức khoảng 36%, khá thấp dù ROE 12,2%. Một năm chưa kết luận được điều gì, nhưng đây là lý do nên đọc <a href='/f0/dong-tien-kinh-doanh-la-gi.html'>dòng tiền kinh doanh</a> cùng lợi nhuận, và xem <a href='/f0/von-luu-dong-la-gi.html'>vốn lưu động</a>."
+   ],
+   [
+    "h2",
+    "Bốn câu hỏi trước khi so sánh"
+   ],
+   [
+    "ol",
+    [
+     "Doanh nghiệp bán sản phẩm gì (cá tra, tôm, cá ngừ, chế biến sâu) và cho thị trường nào?",
+     "Lợi nhuận có ổn định qua nhiều năm hay chỉ tốt một vài quý?",
+     "Tỷ lệ nợ vay và chi phí lãi vay ra sao?",
+     "Cổ tức có bền vững không, khi lợi nhuận phụ thuộc giá cá?"
+    ]
+   ],
+   [
+    "h2",
+    "Cổ tức và giá trị sổ sách"
+   ],
+   [
+    "p",
+    "Ba mã có cổ tức theo dữ liệu tổng hợp trên 4,5% là ANV, FMC và VHC. Nhưng cổ tức cao chỉ bền khi lợi nhuận bền; nhóm thủy sản biến động theo giá cá nên mức chia mỗi năm có thể thay đổi. P/B gần 1 ở ANV, FMC, VHC cho thấy thị trường đang trả gần bằng giá trị sổ sách, trong khi ROE hai mã đầu khoảng 20%. Hãy theo dõi lợi nhuận từng quý để biết mức ROE này có duy trì không, và đọc thêm <a href='/f0/co-phieu-tot-de-dau-tu-dai-han.html'>cổ phiếu tốt để đầu tư dài hạn</a>."
+   ],
+   [
+    "p",
+    "Cổ phiếu thủy sản mang tính chu kỳ (xem <a href='/f0/co-phieu-chu-ky-la-gi.html'>cổ phiếu chu kỳ là gì</a>), vì vậy P/E thấp ở đỉnh chu kỳ có thể đánh lừa. Hãy dùng bảng trên làm điểm khởi đầu để hỏi, không phải để kết luận. Số liệu: dữ liệu tổng hợp 3/11/2026 (4 quý gần nhất), BCTC hợp nhất đến Q3/2026. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Cổ phiếu thủy sản chịu tác động bởi yếu tố nào?",
+    "Giá cá, thị trường và thuế nhập khẩu của các nước mua hàng, tỷ giá và chi phí nguyên liệu."
+   ],
+   [
+    "P/B dưới 0,4 của cổ phiếu thủy sản có phải rẻ?",
+    "Không nhất thiết, vì ROE của các mã đó chỉ khoảng 4%; cần xem khả năng sinh lời và tài sản."
+   ],
+   [
+    "Nên so cổ phiếu thủy sản dựa trên chỉ số nào?",
+    "ROE nhiều năm, P/E, dòng tiền kinh doanh, nợ vay và tỷ suất cổ tức."
+   ]
+  ],
+  "rel": [
+   "co-phieu-chu-ky-la-gi",
+   "pe-la-gi",
+   "pb-la-gi",
+   "ty-gia-tang-anh-huong-co-phieu"
+  ],
+  "add": []
+ },
+ {
+  "slug": "co-phieu-khu-cong-nghiep-la-gi",
+  "kw": "cổ phiếu khu công nghiệp",
+  "grp": 8,
+  "title": "Cổ phiếu khu công nghiệp: đọc KBC, IDC, SZC thế nào cho người mới",
+  "desc": "Cổ phiếu khu công nghiệp ghi nhận lợi nhuận theo đợt cho thuê đất. Số liệu KBC, IDC, SZC quý 3/2026: lợi nhuận, ROE, P/B và rủi ro cần xem.",
+  "body": [
+   [
+    "p",
+    "Khu công nghiệp (KCN) là mảng kinh doanh khác thường: doanh nghiệp bỏ tiền ra mua và san lấp đất trước, rồi cho nhà máy thuê lại. Vì cách ghi nhận doanh thu theo đợt, lợi nhuận mỗi quý nhấp nhô rất mạnh. Bài này giúp bạn đọc các mã KCN mà không bị đánh lừa bởi một quý đẹp hay xấu."
+   ],
+   [
+    "h2",
+    "Doanh nghiệp KCN kiếm tiền thế nào?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Cho thuê đất:</b> thu một khoản lớn khi bàn giao đất, thường ghi nhận doanh thu một lần tùy chính sách kế toán.",
+     "<b>Cho thuê nhà xưởng, phí hạ tầng, điện nước:</b> thu đều nhưng nhỏ hơn.",
+     "<b>Quỹ đất:</b> tài sản lớn nhất, nằm trong hàng tồn kho hoặc chi phí xây dựng dở dang."
+    ]
+   ],
+   [
+    "h2",
+    "Số liệu quý 3/2026"
+   ],
+   [
+    "p",
+    "Kinh Bắc (KBC): lợi nhuận sau thuế công ty mẹ quý 3 là 911 tỷ đồng, tăng 196,6% nhờ nền thấp, doanh thu 3.187 tỷ (tăng 136,6%); nhưng 9 tháng vẫn là 1.143 tỷ, giảm 23,6%. ROE 4 quý 6,5%, P/B 0,94. IDC: quý 3 giảm 41,5% (493 tỷ), 9 tháng giảm 7,4% (1.373 tỷ), nhưng ROE 20,9% và tỷ suất cổ tức theo dữ liệu tổng hợp 8,37%, P/B 1,88. SZC: quý 3 tăng 3,8% (22 tỷ) nhưng 9 tháng giảm 76,2% (58 tỷ), ROE 5,1%, P/B 1,12."
+   ],
+   [
+    "p",
+    "Cùng ngành, ba mã cho ba bức tranh khác nhau. Nhìn một quý rất dễ sai: KBC tăng gần ba lần trong quý nhưng 9 tháng vẫn thấp hơn cùng kỳ."
+   ],
+   [
+    "h2",
+    "Dòng tiền: tiền ra trước, lãi đến sau"
+   ],
+   [
+    "p",
+    "Bốn quý đến quý 3/2026, KBC có lợi nhuận hợp nhất khoảng 1.843 tỷ nhưng dòng tiền kinh doanh âm khoảng 9.394 tỷ; hàng tồn kho tăng từ khoảng 25.091 lên 35.415 tỷ đồng. Đó là đặc điểm của ngành: mua đất và làm hạ tầng trước, bàn giao sau. Xem <a href='/f0/dong-tien-kinh-doanh-la-gi.html'>dòng tiền kinh doanh là gì</a> và <a href='/f0/hang-ton-kho-la-gi.html'>hàng tồn kho</a>."
+   ],
+   [
+    "h2",
+    "Năm điều nên xem"
+   ],
+   [
+    "ol",
+    [
+     "Tỷ lệ lấp đầy các khu đã mở và giá thuê đất bình quân.",
+     "Lợi nhuận nhiều quý và 9 tháng, không chỉ một quý.",
+     "Quỹ đất còn lại và tiến độ pháp lý các dự án mới.",
+     "Nợ vay và chi phí lãi vay so với dòng tiền (xem <a href='/f0/no-vay-tren-von-chu-so-huu.html'>nợ vay trên vốn chủ</a>).",
+     "Khách thuê lớn đến từ ngành nào, vì nhu cầu thuê đất đi theo dòng vốn đầu tư vào sản xuất."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ đọc một quý đẹp"
+   ],
+   [
+    "p",
+    "Giả sử doanh nghiệp X báo lợi nhuận quý 3 tăng 150% vì bàn giao một lô đất lớn. Câu hỏi cần đặt: quý sau còn bàn giao không, lượng đất đã ký hợp đồng chưa bàn giao là bao nhiêu, tiền đã thu về chưa hay mới ghi nhận. Một quý đẹp có thể là kết quả của thời điểm bàn giao chứ chưa phải xu hướng bền. Vì vậy hãy xem lợi nhuận 9 tháng, 4 quý và dòng tiền thực nhận."
+   ],
+   [
+    "h2",
+    "Rủi ro và lưu ý"
+   ],
+   [
+    "p",
+    "Ngành KCN phụ thuộc đầu tư nước ngoài, thủ tục pháp lý và lãi suất. Doanh thu theo đợt khiến P/E khó đọc: P/E thấp ở quý bàn giao lớn có thể đánh lừa (xem <a href='/f0/pe-trailing-va-pe-forward-la-gi.html'>P/E trailing và forward</a>). Đây là cổ phiếu chu kỳ, xem thêm <a href='/f0/co-phieu-chu-ky-la-gi.html'>cổ phiếu chu kỳ là gì</a>. Số liệu: BCTC Q3/2026, dữ liệu tổng hợp 3/11/2026. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Vì sao lợi nhuận cổ phiếu KCN biến động mạnh?",
+    "Vì doanh thu cho thuê đất thường được ghi một lần khi bàn giao, nên các quý có và không có bàn giao chênh nhau rất lớn."
+   ],
+   [
+    "Nên xem chỉ số nào ở cổ phiếu KCN?",
+    "Lợi nhuận nhiều quý, tồn kho đất, dòng tiền kinh doanh, nợ vay, tỷ lệ lấp đầy và giá thuê."
+   ],
+   [
+    "Cổ phiếu KCN có phải cổ phiếu chu kỳ?",
+    "Có tính chu kỳ vì phụ thuộc đầu tư sản xuất, lãi suất và thủ tục pháp lý."
+   ]
+  ],
+  "rel": [
+   "co-phieu-chu-ky-la-gi",
+   "hang-ton-kho-la-gi",
+   "dong-tien-kinh-doanh-la-gi",
+   "doc-bctc-cong-ty-bat-dong-san"
+  ],
+  "add": []
+ },
+ {
+  "slug": "adx-la-gi",
+  "kw": "ADX là gì",
+  "grp": 4,
+  "title": "ADX là gì? Đo sức mạnh xu hướng bằng chỉ báo ADX",
+  "desc": "ADX là gì, cách đọc ADX cùng +DI, −DI, các mốc 20, 25, 40 để biết thị trường có xu hướng hay đi ngang, lưu ý khi dùng cho người mới.",
+  "body": [
+   [
+    "p",
+    "<b>ADX</b> (Average Directional Index) là chỉ báo đo <b>sức mạnh của xu hướng</b>, không cho biết xu hướng đi lên hay đi xuống. Nó trả lời câu hỏi: giá có đang chạy theo một hướng rõ ràng, hay chỉ lình xình? Đây là mảnh ghép hay bị bỏ quên khi người mới học các chỉ báo như <a href='/f0/macd-la-gi.html'>MACD</a> hay <a href='/f0/rsi-la-gi.html'>RSI</a>."
+   ],
+   [
+    "h2",
+    "ADX gồm những đường nào?"
+   ],
+   [
+    "ul",
+    [
+     "<b>ADX</b>: đường chính, dao động từ 0 đến 100, thường tính trên 14 phiên.",
+     "<b>+DI</b>: đo lực của các nhịp tăng.",
+     "<b>−DI</b>: đo lực của các nhịp giảm."
+    ]
+   ],
+   [
+    "p",
+    "Hai đường +DI và −DI cho biết bên nào đang mạnh hơn; ADX cho biết xu hướng đó mạnh đến đâu. Khi ADX cao, nhìn xem +DI hay −DI nằm trên để biết hướng."
+   ],
+   [
+    "h2",
+    "Các mốc đọc ADX thường dùng"
+   ],
+   [
+    "ul",
+    [
+     "Dưới 20: xu hướng yếu hoặc thị trường <a href='/f0/xu-huong-tang-giam-di-ngang.html'>đi ngang</a>.",
+     "20 đến 25: xu hướng bắt đầu hình thành, cần xác nhận thêm.",
+     "Trên 25: xu hướng rõ.",
+     "Trên 40: xu hướng rất mạnh, nhưng cũng có thể sắp mệt."
+    ]
+   ],
+   [
+    "p",
+    "Các mốc này chỉ là ước lệ phổ biến, không phải ranh giới tuyệt đối. Hãy kiểm tra trên chính cổ phiếu bạn theo dõi, vì mỗi mã có độ biến động khác nhau."
+   ],
+   [
+    "h2",
+    "Cách đọc cơ bản"
+   ],
+   [
+    "ol",
+    [
+     "Nhìn ADX: đang dưới 20 hay trên 25? Nếu dưới 20, các tín hiệu cắt của đường trung bình hay MACD dễ bị nhiễu.",
+     "Nếu ADX trên 25, nhìn tiếp +DI và −DI: +DI nằm trên thì xu hướng tăng đang chiếm ưu thế, −DI nằm trên thì xu hướng giảm đang chiếm ưu thế.",
+     "ADX dốc lên nghĩa là xu hướng đang mạnh dần; ADX quay đầu giảm khi giá vẫn tăng cho thấy đà đang yếu bớt, chưa phải tín hiệu đảo chiều."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ giả định"
+   ],
+   [
+    "p",
+    "Cổ phiếu A đi ngang trong vùng 20.000 đến 21.000 đồng suốt ba tuần, ADX quanh 15. Người dùng <a href='/f0/duong-ma-la-gi.html'>đường trung bình</a> sẽ thấy giá cắt MA liên tục mà không đi đến đâu. Sau đó giá vượt 21.000 đồng với khối lượng tăng, ADX nhích từ 15 lên 27, +DI vượt lên trên −DI. Lúc này ADX xác nhận xu hướng tăng đang hình thành. Nếu ADX vẫn dưới 20 khi giá vượt đỉnh, khả năng cao đó là <a href='/f0/breakout-la-gi.html'>breakout giả</a>."
+   ],
+   [
+    "h2",
+    "ADX giúp tránh sai lầm nào?"
+   ],
+   [
+    "ul",
+    [
+     "Dùng chỉ báo đi theo xu hướng khi thị trường đang đi ngang và bị cắt lỗ liên tục.",
+     "Đuổi theo giá ở giai đoạn xu hướng đã quá nóng khi ADX trên 40 và bắt đầu quay đầu.",
+     "Nhầm một nhịp hồi nhỏ trong xu hướng mạnh với đảo chiều."
+    ]
+   ],
+   [
+    "h2",
+    "Hạn chế cần biết"
+   ],
+   [
+    "ul",
+    [
+     "ADX là chỉ báo <b>chậm</b>: nó xác nhận xu hướng sau khi giá đã đi một đoạn.",
+     "Không cho biết điểm vào hay ra cụ thể.",
+     "Trên cổ phiếu ít thanh khoản, đường ADX dễ giật và kém tin cậy.",
+     "Nên đi cùng <a href='/f0/khoi-luong-giao-dich-va-dong-tien.html'>khối lượng giao dịch</a> và kế hoạch cắt lỗ rõ ràng."
+    ]
+   ],
+   [
+    "h2",
+    "Người mới nên dùng thế nào?"
+   ],
+   [
+    "p",
+    "Coi ADX như đèn báo đường đang thông hay đang kẹt: nó giúp bạn chọn công cụ phù hợp thay vì quyết định mua bán. Khi ADX thấp, ưu tiên quan sát các vùng hỗ trợ, kháng cự; khi ADX cao, ưu tiên đi theo xu hướng và quản trị rủi ro. Phân tích kỹ thuật luôn nên đi cùng <a href='/f0/phan-tich-co-ban-va-ky-thuat.html'>phân tích cơ bản</a> và kỷ luật vốn. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ],
+   [
+    "p",
+    "Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "ADX bao nhiêu là xu hướng mạnh?",
+    "Thường coi trên 25 là xu hướng rõ và trên 40 là rất mạnh; dưới 20 là xu hướng yếu hoặc đi ngang. Đây là ước lệ, cần kiểm tra theo từng cổ phiếu."
+   ],
+   [
+    "ADX có cho biết giá tăng hay giảm không?",
+    "Không. ADX chỉ đo sức mạnh xu hướng. Hướng được xem qua +DI và −DI."
+   ],
+   [
+    "Nên đặt ADX bao nhiêu phiên?",
+    "Cài đặt phổ biến là 14 phiên; nên thống nhất một cài đặt để so sánh."
+   ]
+  ],
+  "rel": [
+   "macd-la-gi",
+   "rsi-la-gi",
+   "duong-ma-la-gi",
+   "xu-huong-tang-giam-di-ngang"
+  ],
+  "add": []
+ },
+ {
+  "slug": "sideway-la-gi",
+  "kw": "sideway là gì",
+  "grp": 4,
+  "title": "Sideway là gì? Cách nhận biết và ứng xử khi giá đi ngang",
+  "desc": "Sideway là gì, vì sao giá đi ngang trong biên độ, cách nhận biết bằng hỗ trợ kháng cự, ADX và những sai lầm của người mới khi thị trường lình xình.",
+  "body": [
+   [
+    "p",
+    "<b>Sideway</b> là trạng thái giá dao động trong một vùng hẹp, không tạo xu hướng tăng hay giảm rõ ràng trong một thời gian. Người Việt hay nói thị trường lình xình, đi ngang, tích lũy. Đây là trạng thái chiếm khá nhiều thời gian của cổ phiếu, và là nơi nhiều người mới mất tiền vì dùng cách làm của thị trường có xu hướng."
+   ],
+   [
+    "h2",
+    "Dấu hiệu nhận biết"
+   ],
+   [
+    "ul",
+    [
+     "Giá chạm đi chạm lại một vùng <a href='/f0/ho-tro-khang-cu.html'>hỗ trợ</a> ở dưới và kháng cự ở trên.",
+     "Các <a href='/f0/duong-ma-la-gi.html'>đường trung bình</a> đi phẳng, giá cắt qua lại liên tục.",
+     "Khối lượng giảm dần khi biên độ hẹp lại.",
+     "Chỉ báo sức mạnh xu hướng ADX nằm dưới khoảng 20 (xem <a href='/f0/adx-la-gi.html'>ADX là gì</a>)."
+    ]
+   ],
+   [
+    "h2",
+    "Vì sao giá đi ngang?"
+   ],
+   [
+    "p",
+    "Giá đi ngang khi lực mua và lực bán cân bằng. Có thể thị trường chờ thông tin như báo cáo tài chính, họp cổ đông, quyết định lãi suất; có thể nhóm lớn đang gom hoặc phân phối từ từ; hoặc đơn giản là thiếu dòng tiền mới. Bản thân sideway không xấu hay tốt, nó chỉ nói rằng chưa có bên nào thắng."
+   ],
+   [
+    "h2",
+    "Ba cách ứng xử cơ bản"
+   ],
+   [
+    "ol",
+    [
+     "<b>Đứng ngoài quan sát</b>: nếu chưa có kế hoạch rõ, giữ tiền mặt không phải là sai.",
+     "<b>Giao dịch trong biên độ</b>: dành cho người có kinh nghiệm, mua gần hỗ trợ, bán gần kháng cự, đặt mức <a href='/f0/cat-lo-la-gi.html'>cắt lỗ</a> ngay dưới hỗ trợ; vì phí giao dịch và thuế, biên độ phải đủ rộng mới có lợi.",
+     "<b>Chờ phá vỡ</b>: chỉ hành động khi giá thoát khỏi biên độ cùng khối lượng tăng rõ, và chờ xác nhận để tránh <a href='/f0/breakout-la-gi.html'>breakout giả</a>."
+    ]
+   ],
+   [
+    "h2",
+    "Sai lầm thường gặp"
+   ],
+   [
+    "ul",
+    [
+     "Mua đuổi khi giá vừa chạm đỉnh biên độ, rồi mắc kẹt khi giá quay lại.",
+     "Đặt cắt lỗ quá sát nên bị rung ra liên tục.",
+     "Giao dịch quá nhiều vì sốt ruột, dẫn tới <a href='/f0/overtrading-la-gi.html'>overtrading</a>.",
+     "Cho rằng sideway nhất định kết thúc theo một hướng, trong khi cả hai kịch bản đều có thể xảy ra."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ giả định"
+   ],
+   [
+    "p",
+    "Cổ phiếu B dao động giữa 18.000 và 20.000 đồng trong sáu tuần. Một người mua ở 19.800 đồng vì thấy giá đang tăng, giá quay về 18.200 đồng và lỗ gần 8%. Người khác chờ giá về 18.100 đồng gần hỗ trợ, đặt cắt lỗ ở 17.700 đồng, kỳ vọng lãi khoảng 8–9% nếu giá lên vùng 19.700 đồng, và dừng nếu giá thủng 17.700 đồng. Cùng một biểu đồ nhưng kỷ luật khác nhau cho kết quả khác nhau."
+   ],
+   [
+    "h2",
+    "Sideway và nhà đầu tư dài hạn"
+   ],
+   [
+    "p",
+    "Với người tích sản dài hạn, các giai đoạn đi ngang không phải vấn đề; quan trọng là doanh nghiệp vẫn tạo lợi nhuận và dòng tiền. Góp đều trong lúc giá đi ngang giúp giá vốn trung bình ổn định, xem thêm <a href='/f0/mua-trung-binh-gia-dca.html'>mua trung bình giá (DCA)</a>. Ngược lại, nếu bạn lướt sóng ngắn hạn, sideway là giai đoạn nên giảm tần suất giao dịch. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ],
+   [
+    "p",
+    "Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Sideway kéo dài bao lâu?",
+    "Không có quy luật cố định; có thể vài tuần đến vài tháng. Biên độ hẹp và khối lượng giảm thường là dấu hiệu tích lũy sắp kết thúc, nhưng không cho biết hướng."
+   ],
+   [
+    "Sideway nên mua hay bán?",
+    "Không có đáp án chung. Người mới nên giảm giao dịch, chờ giá thoát khỏi biên độ có xác nhận thay vì đoán hướng."
+   ],
+   [
+    "Sideway khác điều chỉnh thế nào?",
+    "Điều chỉnh là giá giảm từ đỉnh; sideway là giá dao động ngang trong biên độ, không giảm cũng không tăng rõ."
+   ]
+  ],
+  "rel": [
+   "xu-huong-tang-giam-di-ngang",
+   "ho-tro-khang-cu",
+   "breakout-la-gi",
+   "adx-la-gi"
+  ],
+  "add": []
+ },
+ {
+  "slug": "mo-hinh-co-la-gi",
+  "kw": "mô hình cờ là gì",
+  "grp": 4,
+  "title": "Mô hình cờ (Flag) là gì? Cách nhận biết và lưu ý",
+  "desc": "Mô hình cờ là gì, gồm cột cờ và lá cờ ra sao, khác mô hình tam giác thế nào, cách xác nhận bằng khối lượng và lưu ý khi áp dụng ở Việt Nam.",
+  "body": [
+   [
+    "p",
+    "<b>Mô hình cờ</b> (Flag) là mô hình tiếp diễn xu hướng gồm hai phần: một <b>cột cờ</b> là đoạn giá tăng (hoặc giảm) mạnh và nhanh, sau đó là <b>lá cờ</b>, đoạn giá đi ngang hoặc nghiêng nhẹ ngược xu hướng trong biên độ hẹp. Nếu giá thoát khỏi lá cờ cùng hướng với cột cờ, xu hướng cũ được xem là tiếp diễn."
+   ],
+   [
+    "h2",
+    "Cấu trúc của mô hình"
+   ],
+   [
+    "ol",
+    [
+     "<b>Cột cờ</b>: giá tăng mạnh trong vài phiên, thường kèm khối lượng lớn.",
+     "<b>Lá cờ</b>: giá hồi nhẹ hoặc đi ngang trong kênh song song nghiêng xuống (với cờ tăng), khối lượng giảm dần.",
+     "<b>Điểm thoát</b>: giá vượt đường biên trên của lá cờ, khối lượng tăng trở lại."
+    ]
+   ],
+   [
+    "p",
+    "Với cờ giảm thì ngược lại: cột cờ là đoạn giảm mạnh, lá cờ là nhịp hồi nhẹ rồi giá phá xuống tiếp. Mô hình có thể gặp trên mọi <a href='/f0/khung-thoi-gian-bieu-do.html'>khung thời gian</a>, nhưng khung ngày và tuần thường đáng tin hơn khung phút."
+   ],
+   [
+    "h2",
+    "Vì sao mô hình này hình thành?"
+   ],
+   [
+    "p",
+    "Sau một nhịp tăng mạnh, một số người chốt lời khiến giá chững và hồi nhẹ, nhưng lực bán không đủ lớn để đảo chiều. Khối lượng khô dần cho thấy ít người muốn bán. Khi người mua mới quay lại, giá bứt phá tiếp. Đây là cách nhìn tâm lý chứ không phải quy luật tuyệt đối."
+   ],
+   [
+    "h2",
+    "Khác tam giác và cờ đuôi nheo"
+   ],
+   [
+    "ul",
+    [
+     "<b>Cờ</b>: lá cờ có hai cạnh song song.",
+     "<b>Cờ đuôi nheo (pennant)</b>: lá cờ co hẹp dần thành hình tam giác nhỏ.",
+     "<b>Tam giác</b>: thường hình thành trong thời gian dài hơn và không bắt buộc đứng sau một cột cờ mạnh, xem <a href='/f0/mo-hinh-tam-giac.html'>mô hình tam giác</a>."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ giả định"
+   ],
+   [
+    "p",
+    "Cổ phiếu D tăng từ 20.000 lên 26.000 đồng trong 6 phiên (cột cờ) với khối lượng gấp đôi trung bình. Sau đó giá đi xuống nhẹ về 24.800 đồng trong 8 phiên, khối lượng giảm. Phiên tiếp theo, giá vượt 25.500 đồng với khối lượng tăng 1,5 lần mức trung bình. Người quan sát có thể coi đó là tín hiệu xác nhận và đặt mức cắt lỗ dưới đáy lá cờ. Nếu giá rơi thủng đáy lá cờ, mô hình thất bại và cần cắt lỗ."
+   ],
+   [
+    "h2",
+    "Những điều cần kiểm tra"
+   ],
+   [
+    "ul",
+    [
+     "Cột cờ đủ dài và nhanh chưa, hay chỉ là một nhịp tăng nhỏ?",
+     "Lá cờ có hồi quá sâu không? Hồi quá khoảng một nửa cột cờ thường làm mô hình kém tin cậy.",
+     "<a href='/f0/khoi-luong-giao-dich-va-dong-tien.html'>Khối lượng</a> có giảm trong lá cờ và tăng khi thoát không?",
+     "Có <a href='/f0/ho-tro-khang-cu.html'>kháng cự</a> mạnh ngay phía trên không?"
+    ]
+   ],
+   [
+    "h2",
+    "Lưu ý với thị trường Việt Nam"
+   ],
+   [
+    "ul",
+    [
+     "Biên độ <a href='/f0/bien-do-gia-tran-san.html'>trần sàn</a> làm cột cờ có thể chỉ gồm vài phiên tăng trần liên tiếp với khối lượng thấp: cần thận trọng.",
+     "Cổ phiếu ít thanh khoản dễ tạo mô hình giả vì chỉ vài lệnh lớn.",
+     "Tin đồn và <a href='/f0/boc-dau-la-gi.html'>bốc đầu</a> có thể tạo nhịp tăng rồi biến mất, không phải mô hình thật."
+    ]
+   ],
+   [
+    "h2",
+    "Người mới nên nhớ"
+   ],
+   [
+    "p",
+    "Mô hình cờ chỉ là xác suất, không phải chắc chắn. Luôn xác định trước điểm sai và mức rủi ro chấp nhận, không mua đuổi sau khi giá đã đi xa. Kết hợp với <a href='/f0/phan-tich-co-ban-va-ky-thuat.html'>phân tích cơ bản</a> để biết doanh nghiệp đứng sau mã cổ phiếu có đáng quan tâm không. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ],
+   [
+    "p",
+    "Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "Mô hình cờ báo hiệu tăng hay giảm?",
+    "Cờ tăng báo hiệu xu hướng tăng có thể tiếp diễn; cờ giảm báo hiệu xu hướng giảm có thể tiếp diễn. Hướng phụ thuộc cột cờ trước đó."
+   ],
+   [
+    "Lá cờ kéo dài bao lâu?",
+    "Thường từ vài phiên đến vài tuần; nếu quá dài, mô hình có thể chuyển thành đi ngang và mất ý nghĩa."
+   ],
+   [
+    "Khác gì mô hình cái cốc tay cầm?",
+    "Cốc tay cầm có hình bầu tròn kéo dài nhiều tuần đến nhiều tháng, còn mô hình cờ ngắn hơn và đứng sau một đoạn giá tăng nhanh."
+   ]
+  ],
+  "rel": [
+   "mo-hinh-cai-coc-tay-cam",
+   "breakout-la-gi",
+   "mo-hinh-tam-giac",
+   "khoi-luong-giao-dich-va-dong-tien"
+  ],
+  "add": []
+ },
+ {
+  "slug": "volume-profile",
+  "kw": "volume profile là gì",
+  "grp": 4,
+  "title": "Volume Profile là gì? Đọc vùng giá có khối lượng lớn",
+  "desc": "Volume Profile là gì, khác khối lượng theo thời gian ra sao, cách đọc POC, vùng giá trị VAH VAL và lưu ý cho người mới khi dùng trên cổ phiếu Việt Nam.",
+  "body": [
+   [
+    "p",
+    "<b>Volume Profile</b> là biểu đồ khối lượng nằm ngang, hiển thị <b>khối lượng giao dịch tại từng mức giá</b>, thay vì tại từng thời điểm như thanh khối lượng quen thuộc ở đáy biểu đồ. Nhìn vào đó bạn thấy vùng giá nào được giao dịch nhiều, vùng nào gần như bị bỏ qua. Đây là công cụ bổ sung cho <a href='/f0/khoi-luong-giao-dich-va-dong-tien.html'>khối lượng giao dịch</a> và <a href='/f0/ho-tro-khang-cu.html'>hỗ trợ, kháng cự</a>."
+   ],
+   [
+    "h2",
+    "Khác biệt với khối lượng thông thường"
+   ],
+   [
+    "ul",
+    [
+     "<b>Khối lượng theo thời gian</b>: mỗi cột là tổng khối lượng của một phiên hoặc một cây nến.",
+     "<b>Volume Profile</b>: mỗi thanh ngang là tổng khối lượng giao dịch ở một mức giá, cộng dồn trong khoảng thời gian bạn chọn."
+    ]
+   ],
+   [
+    "p",
+    "Ví dụ trong 30 phiên, cổ phiếu có 12 phiên đi qua vùng 25.000 đồng, mỗi lần khớp nhiều. Volume Profile sẽ vẽ thanh dài nhất quanh mức giá đó."
+   ],
+   [
+    "h2",
+    "Ba khái niệm chính"
+   ],
+   [
+    "ul",
+    [
+     "<b>POC (Point of Control)</b>: mức giá có khối lượng giao dịch lớn nhất trong khoảng thời gian chọn, thường là vùng giá được thị trường đồng thuận nhiều nhất.",
+     "<b>Vùng giá trị (Value Area)</b>: vùng giá chứa khoảng 70% tổng khối lượng, cạnh trên là VAH và cạnh dưới là VAL.",
+     "<b>HVN và LVN</b>: vùng khối lượng cao (High Volume Node) và vùng khối lượng thấp (Low Volume Node)."
+    ]
+   ],
+   [
+    "h2",
+    "Cách đọc đơn giản"
+   ],
+   [
+    "ol",
+    [
+     "Giá nằm trong vùng giá trị: thị trường đang cân bằng, giá hay quay về POC.",
+     "Giá thoát khỏi VAH hoặc VAL cùng khối lượng tăng: có thể bắt đầu xu hướng mới (xem <a href='/f0/breakout-la-gi.html'>breakout</a>).",
+     "Vùng LVN thường là nơi giá đi qua nhanh vì trước đó ít người giao dịch; vùng HVN là nơi giá dễ chững lại, đóng vai trò hỗ trợ hoặc kháng cự."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ giả định"
+   ],
+   [
+    "p",
+    "Cổ phiếu C trong 60 phiên dao động 22.000 đến 28.000 đồng. Volume Profile cho POC ở 24.500 đồng, VAL 23.000, VAH 26.500. Giá hiện tại 24.000 đồng, nằm trong vùng giá trị. Nếu giá lên vùng 26.500 đồng rồi chững lại thì VAH có thể đóng vai trò kháng cự; ngược lại nếu giá thủng 23.000 đồng với khối lượng lớn, vùng VAL bị phá và cần xem lại kịch bản."
+   ],
+   [
+    "h2",
+    "Lưu ý với thị trường Việt Nam"
+   ],
+   [
+    "ul",
+    [
+     "Nhiều nền tảng biểu đồ chỉ có Volume Profile ở bản trả phí hoặc cần chọn công cụ vẽ riêng; hãy kiểm tra ứng dụng bạn dùng.",
+     "Với cổ phiếu ít thanh khoản, hình dạng profile thiếu ổn định.",
+     "Khoảng thời gian chọn quyết định kết quả: 30 phiên, 3 tháng hay 1 năm cho profile rất khác nhau.",
+     "Giá điều chỉnh khi chia cổ tức, chia thưởng làm mức giá lịch sử thay đổi, xem <a href='/f0/ngay-giao-dich-khong-huong-quyen.html'>ngày giao dịch không hưởng quyền</a>."
+    ]
+   ],
+   [
+    "h2",
+    "Người mới nên dùng thế nào?"
+   ],
+   [
+    "p",
+    "Đừng coi Volume Profile là công cụ dự báo. Hãy dùng nó để biết vùng giá nào đã có nhiều người mua bán, tức nơi có thể có phản ứng, rồi kết hợp với xu hướng, <a href='/f0/khung-thoi-gian-bieu-do.html'>khung thời gian lớn</a> và kế hoạch cắt lỗ. Bắt đầu với khung 3 đến 6 tháng trên cổ phiếu thanh khoản tốt để dễ quan sát. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ],
+   [
+    "p",
+    "Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ]
+  ],
+  "faq": [
+   [
+    "POC trong Volume Profile là gì?",
+    "Là mức giá có khối lượng giao dịch lớn nhất trong khoảng thời gian bạn chọn, thường được xem là mức giá được thị trường chấp nhận nhiều nhất."
+   ],
+   [
+    "Volume Profile khác khối lượng thường thế nào?",
+    "Khối lượng thường tính theo thời gian (mỗi phiên); Volume Profile tính theo mức giá (mỗi vùng giá)."
+   ],
+   [
+    "Volume Profile có dự báo giá không?",
+    "Không. Nó chỉ ra vùng giá có nhiều giao dịch để tham khảo hỗ trợ, kháng cự; cần kết hợp công cụ khác."
+   ]
+  ],
+  "rel": [
+   "khoi-luong-giao-dich-va-dong-tien",
+   "ho-tro-khang-cu",
+   "breakout-la-gi",
+   "khung-thoi-gian-bieu-do"
+  ],
+  "add": []
  }
 ]
