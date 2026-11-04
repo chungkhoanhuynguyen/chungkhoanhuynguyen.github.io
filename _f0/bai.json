@@ -9526,7 +9526,7 @@
   "body": [
    [
     "p",
-    "Phương pháp tốt đến đâu cũng thất bại nếu không có kỷ luật. Kỷ luật là làm đúng kế hoạch đã đặt ra, kể cả khi cảm xúc muốn làm khác."
+    "Phương pháp tốt đến đâu cũng thất bại nếu không có kỷ luật. Kỷ luật là làm đúng kế hoạch đã đặt ra, kể cả khi cảm xúc muốn làm khác. Phần lớn nhà đầu tư cá nhân không thua vì chọn sai mã một lần, mà vì để một lần sai trở thành khoản lỗ lớn (xem <a href='/f0/vi-sao-nha-dau-tu-ca-nhan-thua-lo.html'>vì sao nhà đầu tư cá nhân thua lỗ</a>)."
    ],
    [
     "h2",
@@ -9535,14 +9535,22 @@
    [
     "ol",
     [
-     "<b>Viết kế hoạch trước khi mua:</b> lý do mua, điểm cắt lỗ, mục tiêu.",
-     "<b>Cắt lỗ đúng điểm đã định:</b> không dời điểm cắt lỗ xuống thấp hơn.",
-     "<b>Giới hạn tỷ trọng:</b> không mã nào chiếm quá lớn trong danh mục.",
-     "<b>Hạn chế margin:</b> chỉ dùng khi hiểu rõ rủi ro, không vay tối đa.",
+     "<b>Viết kế hoạch trước khi mua:</b> lý do mua, điểm cắt lỗ, mục tiêu, thời gian nắm giữ dự kiến.",
+     "<b>Cắt lỗ đúng điểm đã định:</b> không dời điểm cắt lỗ xuống thấp hơn (xem <a href='/f0/cat-lo-la-gi.html'>cắt lỗ là gì</a>).",
+     "<b>Giới hạn tỷ trọng:</b> không mã nào chiếm quá lớn trong danh mục (xem <a href='/f0/phan-bo-von-va-quan-tri-danh-muc.html'>phân bổ vốn</a>).",
+     "<b>Hạn chế margin:</b> chỉ dùng khi hiểu rõ rủi ro, không vay tối đa (xem <a href='/f0/margin-la-gi.html'>margin là gì</a>).",
      "<b>Không bình quân giá xuống</b> với cổ phiếu đang xấu đi về cơ bản.",
-     "<b>Ghi nhật ký giao dịch</b> và xem lại mỗi tháng.",
+     "<b>Ghi <a href='/f0/nhat-ky-giao-dich.html'>nhật ký giao dịch</a></b> và xem lại mỗi tháng.",
      "<b>Nghỉ khi mất bình tĩnh:</b> sau chuỗi lỗ, dừng lại thay vì cố gỡ."
     ]
+   ],
+   [
+    "h2",
+    "Ví dụ: kỷ luật cứu tài khoản thế nào"
+   ],
+   [
+    "p",
+    "Hai nhà đầu tư cùng mua một cổ phiếu giá 20.000 đồng với 100 triệu. Người A đặt cắt lỗ 8%, giá xuống 18.400 thì bán, mất khoảng 8 triệu. Người B không có kế hoạch, giữ và mua thêm khi giá xuống, đến khi giá còn 12.000 thì lỗ 40% trên số vốn ban đầu và còn kẹt thêm phần mua sau. Để gỡ 8%, A chỉ cần lãi khoảng 8,7%; để gỡ 40%, B cần lãi khoảng 67% (xem <a href='/f0/lo-bao-nhieu-phan-tram-thi-hoa-von.html'>lỗ bao nhiêu phần trăm thì hòa vốn</a>). Ví dụ minh họa, không phải dự báo."
    ],
    [
     "h2",
@@ -9551,9 +9559,10 @@
    [
     "ul",
     [
-     "Sợ mất cơ hội (FOMO) khiến mua đuổi.",
+     "Sợ mất cơ hội (FOMO) khiến mua đuổi (xem <a href='/f0/tam-ly-fomo-va-hoang-loan.html'>tâm lý FOMO và hoảng loạn</a>).",
      "Không chấp nhận sai nên không cắt lỗ.",
-     "Thấy người khác lãi nhanh nên phá kế hoạch."
+     "Thấy người khác lãi nhanh nên phá kế hoạch.",
+     "Giao dịch quá nhiều để \"gỡ\" (xem <a href='/f0/overtrading-la-gi.html'>overtrading</a>)."
     ]
    ],
    [
@@ -9561,8 +9570,18 @@
     "Cách rèn kỷ luật"
    ],
    [
+    "ol",
+    [
+     "Bắt đầu với số vốn nhỏ để sai lầm còn rẻ.",
+     "Viết quy tắc ngắn trên một trang giấy và dán cạnh màn hình.",
+     "Đặt lệnh cắt lỗ ngay sau khi mua thay vì \"để mai tính\".",
+     "Đo kết quả theo quý thay vì theo ngày; tách tiền tiêu dùng khỏi tiền đầu tư.",
+     "Mỗi tháng tự chấm: bao nhiêu lệnh làm đúng kế hoạch, bao nhiêu lệnh phá kế hoạch."
+    ]
+   ],
+   [
     "p",
-    "Bắt đầu với số vốn nhỏ, đặt quy tắc đơn giản, đo lường kết quả theo quý thay vì theo ngày. Kỷ luật được hình thành từ thói quen, không phải từ ý chí nhất thời."
+    "Kỷ luật được hình thành từ thói quen, không phải từ ý chí nhất thời. Một bộ quy tắc đơn giản được làm đều đặn tốt hơn một hệ thống phức tạp bị bỏ dở. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
    ]
   ],
   "faq": [
@@ -9571,16 +9590,21 @@
     "Với nhà đầu tư cá nhân, kỷ luật quản trị vốn thường quyết định việc tồn tại lâu dài nhiều hơn việc chọn đúng từng mã."
    ],
    [
-    "Lỡ phá kế hoạch thì làm gì?",
-    "Ghi lại lý do, đánh giá hậu quả và điều chỉnh quy tắc nếu cần, thay vì tiếp tục phá kế hoạch để gỡ."
+    "Làm sao không dời điểm cắt lỗ?",
+    "Đặt lệnh cắt lỗ ngay khi mua và ghi lý do vào nhật ký; chỉ thay đổi khi kế hoạch được viết lại lúc thị trường đóng cửa."
+   ],
+   [
+    "Sau chuỗi lỗ nên làm gì?",
+    "Tạm dừng giao dịch, giảm quy mô lệnh và xem lại nhật ký để tìm lỗi lặp lại."
    ]
   ],
   "rel": [
    "cat-lo-la-gi",
+   "nhat-ky-giao-dich",
    "overtrading-la-gi",
-   "phan-bo-von-va-quan-tri-danh-muc",
-   "vi-sao-nha-dau-tu-ca-nhan-thua-lo"
-  ]
+   "tam-ly-fomo-va-hoang-loan"
+  ],
+  "viet_day": true
  },
  {
   "slug": "mo-hinh-hai-dinh-hai-day",
@@ -21145,6 +21169,544 @@
    "bien-loi-nhuan-gop-la-gi",
    "pe-trailing-va-pe-forward-la-gi",
    "co-phieu-thuy-san-la-gi"
+  ]
+ },
+ {
+  "slug": "ty-suat-co-tuc-la-gi",
+  "kw": "tỷ suất cổ tức là gì",
+  "grp": 3,
+  "title": "Tỷ suất cổ tức là gì? Cách tính và bẫy cổ tức cao",
+  "desc": "Tỷ suất cổ tức = cổ tức tiền mặt mỗi năm ÷ giá cổ phiếu. Cách tính, ví dụ VNM, QNS, FMC, TCB, MBB tháng 11/2026 và 4 bẫy khi chọn cổ tức cao.",
+  "body": [
+   [
+    "p",
+    "Nhiều người tìm cổ phiếu để nhận tiền đều đặn mỗi năm giống lãi tiết kiệm. Chỉ số giúp so sánh nhanh là <b>tỷ suất cổ tức</b> (dividend yield). Nhưng con số này dễ đánh lừa nếu chỉ nhìn một năm. Nếu chưa rõ cổ tức là gì, xem trước <a href='/f0/co-tuc-la-gi.html'>cổ tức là gì</a>."
+   ],
+   [
+    "h2",
+    "Tỷ suất cổ tức là gì?"
+   ],
+   [
+    "p",
+    "Tỷ suất cổ tức = cổ tức tiền mặt trên mỗi cổ phiếu trong 12 tháng ÷ giá cổ phiếu hiện tại × 100%. Ví dụ cổ phiếu giá 50.000 đồng, mỗi năm trả 2.500 đồng tiền mặt thì tỷ suất cổ tức là 5%. Lưu ý cổ tức ở Việt Nam thường tính theo mệnh giá 10.000 đồng: \"cổ tức 25%\" nghĩa là 2.500 đồng mỗi cổ phiếu, không phải 25% trên giá bạn mua."
+   ],
+   [
+    "h2",
+    "Số liệu thật (dữ liệu tổng hợp 4/11/2026)"
+   ],
+   [
+    "p",
+    "Tỷ suất cổ tức theo dữ liệu tổng hợp 12 tháng gần nhất: Vinamilk (VNM) khoảng 8,35%, Đường Quảng Ngãi (QNS) khoảng 8,12%, Đạm Phú Mỹ (DPM) khoảng 7,72%, Thực phẩm Sao Ta (FMC) khoảng 5,76%, Techcombank (TCB) khoảng 5,24%, MB (MBB) khoảng 4,23%. Trong khi đó Vietcombank (VCB) chỉ khoảng 1,68% vì ngân hàng giữ lại lợi nhuận để tăng vốn. Tỷ suất thay đổi mỗi ngày theo giá, nên con số này chỉ đúng tại thời điểm tra."
+   ],
+   [
+    "h2",
+    "Bốn bẫy khi chọn cổ phiếu cổ tức cao"
+   ],
+   [
+    "ol",
+    [
+     "<b>Giá giảm mạnh làm tỷ suất \"đẹp\":</b> giá rơi một nửa thì tỷ suất gấp đôi, nhưng có thể do doanh nghiệp đang xấu đi.",
+     "<b>Cổ tức một lần:</b> doanh nghiệp bán tài sản rồi chia một khoản lớn; năm sau không lặp lại.",
+     "<b>Chia vượt lợi nhuận:</b> so cổ tức với EPS (xem <a href='/f0/roe-eps-la-gi.html'>ROE và EPS</a>). Chia quá 100% lợi nhuận nhiều năm thì không bền.",
+     "<b>Ngành chu kỳ:</b> phân bón, thép, thủy sản có năm lãi lớn, năm lãi mỏng nên cổ tức cũng lên xuống (xem <a href='/f0/co-phieu-chu-ky-la-gi.html'>cổ phiếu chu kỳ</a>)."
+    ]
+   ],
+   [
+    "h2",
+    "Cổ tức tiền mặt và cổ tức cổ phiếu"
+   ],
+   [
+    "p",
+    "Tỷ suất cổ tức chỉ nên tính cổ tức tiền mặt. Cổ tức bằng cổ phiếu chỉ làm tăng số lượng cổ phiếu, giá sẽ được điều chỉnh giảm tương ứng vào <a href='/f0/ngay-giao-dich-khong-huong-quyen.html'>ngày giao dịch không hưởng quyền</a>, nên tổng giá trị bạn nắm giữ gần như không đổi ngay lúc chia. Nhiều ngân hàng chia cổ tức bằng cổ phiếu để tăng vốn, vì vậy tỷ suất tiền mặt thấp không có nghĩa doanh nghiệp làm ăn kém."
+   ],
+   [
+    "h2",
+    "Ví dụ so với gửi tiết kiệm"
+   ],
+   [
+    "p",
+    "Giả sử bạn có 100 triệu đồng mua một cổ phiếu tỷ suất 6%. Mỗi năm bạn nhận khoảng 6 triệu trước thuế; cổ tức tiền mặt bị khấu trừ thuế thu nhập cá nhân 5% (xem <a href='/f0/phi-giao-dich-va-thue-chung-khoan.html'>phí và thuế chứng khoán</a>). Khác tiết kiệm, giá cổ phiếu có thể giảm 20–30% trong một năm xấu, và cổ tức năm sau không được cam kết. Ngược lại, nếu doanh nghiệp tăng trưởng, cả cổ tức lẫn giá đều có thể tăng theo thời gian."
+   ],
+   [
+    "h2",
+    "Cách dùng tỷ suất cổ tức"
+   ],
+   [
+    "ul",
+    [
+     "So tỷ suất của cùng một mã qua 5 năm, không chỉ năm nay.",
+     "Đọc kèm lợi nhuận, dòng tiền và nợ vay để biết doanh nghiệp còn đủ tiền chia.",
+     "Nếu muốn tích lũy, cân nhắc <a href='/f0/tai-dau-tu-co-tuc.html'>tái đầu tư cổ tức</a> để tận dụng lãi kép."
+    ]
+   ],
+   [
+    "p",
+    "Với người tích sản cổ phiếu ngân hàng, có thể tham khảo phần tích sản trong <a href='/bao-cao-2026.html#tichsan'>báo cáo 2026</a>. Số liệu: dữ liệu tổng hợp 4/11/2026. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Tỷ suất cổ tức bao nhiêu là cao?",
+    "Không có mốc chung; cần so với lãi tiết kiệm, với chính doanh nghiệp qua nhiều năm và khả năng duy trì từ lợi nhuận."
+   ],
+   [
+    "Cổ tức cổ phiếu có tính vào tỷ suất cổ tức không?",
+    "Thường không; tỷ suất cổ tức chỉ tính phần trả bằng tiền mặt."
+   ],
+   [
+    "Vì sao tỷ suất cổ tức thay đổi mỗi ngày?",
+    "Vì mẫu số là giá cổ phiếu, giá đổi thì tỷ suất đổi dù cổ tức không đổi."
+   ]
+  ],
+  "rel": [
+   "co-tuc-la-gi",
+   "tai-dau-tu-co-tuc",
+   "co-phieu-ngan-hang-co-tuc-cao",
+   "ngay-giao-dich-khong-huong-quyen"
+  ]
+ },
+ {
+  "slug": "loi-nhuan-bat-thuong-la-gi",
+  "kw": "lợi nhuận bất thường là gì",
+  "grp": 3,
+  "title": "Lợi nhuận bất thường là gì? Cách nhận ra lãi không lặp lại",
+  "desc": "Lợi nhuận bất thường là khoản lãi một lần như đền bù đất, bán công ty con. Ví dụ PHR, GVR, PDR quý 3/2026 và cách tách khỏi lãi cốt lõi.",
+  "body": [
+   [
+    "p",
+    "Lợi nhuận quý này tăng gấp đôi chưa chắc doanh nghiệp bán hàng tốt hơn gấp đôi. Một phần có thể đến từ khoản lãi chỉ xảy ra một lần: tiền đền bù đất, bán công ty con, hoàn nhập dự phòng. Đó là <b>lợi nhuận bất thường</b>. Nhận ra nó giúp bạn không định giá doanh nghiệp bằng một con số không lặp lại."
+   ],
+   [
+    "h2",
+    "Lợi nhuận bất thường nằm ở đâu?"
+   ],
+   [
+    "p",
+    "Trên <a href='/f0/bao-cao-ket-qua-kinh-doanh-la-gi.html'>báo cáo kết quả kinh doanh</a>, hãy so ba dòng: <b>lợi nhuận gộp</b> (từ bán hàng), <b>doanh thu hoạt động tài chính</b> (lãi tiền gửi, cổ tức, lãi bán khoản đầu tư) và <b>lợi nhuận khác</b> (thanh lý tài sản, đền bù, tiền phạt). Nếu hai dòng sau lớn hơn nhiều so với lợi nhuận gộp, lợi nhuận quý đó phụ thuộc vào thứ không phải kinh doanh cốt lõi."
+   ],
+   [
+    "h2",
+    "Ví dụ thật quý 3/2026"
+   ],
+   [
+    "p",
+    "Cao su Phước Hòa (PHR): lợi nhuận trước thuế quý 3/2026 khoảng 534 tỷ đồng, trong đó lợi nhuận khác khoảng 470 tỷ (khoảng 88%), còn lợi nhuận gộp chỉ khoảng 101 tỷ. Cộng 9 tháng, lợi nhuận khác khoảng 966 tỷ trên tổng lợi nhuận trước thuế khoảng 1.340 tỷ. Phần lớn đến từ việc chuyển đất cao su sang làm khu công nghiệp, là khoản phụ thuộc tiến độ bàn giao đất."
+   ],
+   [
+    "p",
+    "Tập đoàn Cao su (GVR): lợi nhuận khác quý 3 khoảng 1.998 tỷ trên lợi nhuận trước thuế khoảng 4.423 tỷ (khoảng 45%). Phát Đạt (PDR): doanh thu tài chính quý 3 khoảng 710 tỷ trong khi lợi nhuận gộp chỉ khoảng 2,6 tỷ; lợi nhuận đến chủ yếu từ hoạt động tài chính, không phải bán căn hộ. Xem thêm <a href='/f0/co-phieu-cao-su.html'>cổ phiếu cao su</a> và <a href='/f0/doc-bctc-cong-ty-bat-dong-san.html'>đọc BCTC công ty bất động sản</a>."
+   ],
+   [
+    "h2",
+    "Vì sao quan trọng với P/E?"
+   ],
+   [
+    "p",
+    "P/E tính bằng giá chia lợi nhuận 4 quý. Nếu lợi nhuận bị thổi lên bởi khoản một lần, P/E trông thấp hơn thực tế. Khi khoản đó không lặp lại, lợi nhuận năm sau giảm và P/E \"rẻ\" bỗng thành đắt (xem <a href='/f0/pe-trailing-va-pe-forward-la-gi.html'>P/E trailing và forward</a>). Đây cũng là một lý do <a href='/f0/loi-nhuan-tang-gia-co-phieu-giam-vi-sao.html'>lợi nhuận tăng mà giá cổ phiếu giảm</a>."
+   ],
+   [
+    "h2",
+    "Bốn bước tách lợi nhuận cốt lõi"
+   ],
+   [
+    "ol",
+    [
+     "Lấy lợi nhuận trước thuế trừ lợi nhuận khác.",
+     "Trừ tiếp phần doanh thu tài chính bất thường (lãi bán công ty con, đánh giá lại khoản đầu tư) – đọc thuyết minh để biết.",
+     "Cộng lại các khoản chi phí một lần lớn nếu có (trích lập đột xuất, phạt).",
+     "So con số còn lại qua nhiều quý để thấy xu hướng kinh doanh thật."
+    ]
+   ],
+   [
+    "h2",
+    "Không phải khoản nào cũng xấu"
+   ],
+   [
+    "p",
+    "Đền bù đất ở doanh nghiệp cao su có thể kéo dài nhiều năm nếu quỹ đất chuyển đổi lớn; lãi tiền gửi của doanh nghiệp nhiều tiền mặt là đều đặn. Điểm mấu chốt không phải \"tốt\" hay \"xấu\" mà là <b>có lặp lại không</b> và <b>bao giờ hết</b>. Ghi rõ điều này vào <a href='/f0/nhat-ky-giao-dich.html'>nhật ký giao dịch</a> trước khi dùng lợi nhuận để định giá."
+   ],
+   [
+    "p",
+    "Số liệu: BCTC hợp nhất Q3/2026, dữ liệu tổng hợp 4/11/2026. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Lợi nhuận bất thường là gì?",
+    "Là khoản lãi hoặc lỗ không đến từ hoạt động kinh doanh chính và khó lặp lại, như thanh lý tài sản, đền bù, bán công ty con."
+   ],
+   [
+    "Xem lợi nhuận bất thường ở đâu?",
+    "Ở dòng lợi nhuận khác và doanh thu tài chính trên báo cáo kết quả kinh doanh, chi tiết trong thuyết minh."
+   ],
+   [
+    "Có nên loại lợi nhuận bất thường khi tính P/E?",
+    "Nên tính thêm một P/E dựa trên lợi nhuận cốt lõi để so sánh, tránh bị đánh lừa bởi khoản một lần."
+   ]
+  ],
+  "rel": [
+   "bao-cao-ket-qua-kinh-doanh-la-gi",
+   "pe-trailing-va-pe-forward-la-gi",
+   "loi-nhuan-tang-gia-co-phieu-giam-vi-sao",
+   "co-phieu-cao-su"
+  ]
+ },
+ {
+  "slug": "nen-doji-la-gi",
+  "kw": "nến doji là gì",
+  "grp": 4,
+  "title": "Nến Doji là gì? 4 dạng Doji và cách đọc đúng ngữ cảnh",
+  "desc": "Nến Doji có giá mở cửa gần bằng giá đóng cửa, thể hiện sự lưỡng lự. 4 dạng Doji, cách đọc theo xu hướng, khối lượng và lỗi người mới hay mắc.",
+  "body": [
+   [
+    "p",
+    "Trên biểu đồ nến, có những cây nến thân gần như không có, chỉ là một gạch ngang với hai râu. Đó là <b>nến Doji</b>. Người mới hay nghe \"Doji là đảo chiều\", nhưng thực tế Doji chỉ cho biết bên mua và bên bán đang cân bằng; nó có ý nghĩa hay không tùy vào vị trí xuất hiện. Nếu chưa quen nến, xem <a href='/f0/mo-hinh-nen-nhat-co-ban.html'>mô hình nến Nhật cơ bản</a>."
+   ],
+   [
+    "h2",
+    "Nến Doji là gì?"
+   ],
+   [
+    "p",
+    "Doji là cây nến có giá mở cửa và giá đóng cửa bằng hoặc gần bằng nhau, nên thân nến rất mỏng. Trong phiên, giá có thể đi lên cao và xuống thấp, tạo râu trên và râu dưới, nhưng cuối phiên quay về gần điểm xuất phát. Thông điệp: phe mua và phe bán chưa bên nào thắng."
+   ],
+   [
+    "h2",
+    "Bốn dạng Doji thường gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>Doji thường:</b> râu trên và râu dưới gần bằng nhau, lưỡng lự thuần túy.",
+     "<b>Doji chân dài:</b> hai râu rất dài, phiên dao động mạnh nhưng đóng cửa về giữa – mức lưỡng lự cao.",
+     "<b>Doji chuồn chuồn:</b> râu dưới dài, gần như không có râu trên; giá bị bán xuống rồi được mua lên lại. Hình dáng giống <a href='/f0/nen-bua-hammer-la-gi.html'>nến búa</a> nhưng thân mỏng hơn.",
+     "<b>Doji bia mộ:</b> râu trên dài, gần như không có râu dưới; giá được kéo lên rồi bị bán xuống."
+    ]
+   ],
+   [
+    "h2",
+    "Đọc Doji theo ngữ cảnh"
+   ],
+   [
+    "p",
+    "Một cây Doji giữa vùng đi ngang gần như không nói gì (xem <a href='/f0/xu-huong-tang-giam-di-ngang.html'>xu hướng tăng, giảm, đi ngang</a>). Doji đáng chú ý khi xuất hiện sau một nhịp tăng hoặc giảm dài, tại vùng <a href='/f0/ho-tro-khang-cu.html'>hỗ trợ hoặc kháng cự</a> rõ ràng, và đi kèm khối lượng lớn bất thường. Ngay cả khi đó, Doji chỉ là tín hiệu \"đà đang chậm lại\", cần cây nến phiên sau xác nhận hướng đi."
+   ],
+   [
+    "h2",
+    "Ví dụ minh họa"
+   ],
+   [
+    "p",
+    "Giả sử một cổ phiếu tăng liền 8 phiên từ 20.000 lên 25.000 đồng, chạm vùng đỉnh cũ. Phiên thứ 9 xuất hiện Doji bia mộ với khối lượng gấp đôi trung bình 20 phiên. Phiên thứ 10 giá giảm và đóng cửa dưới đáy cây Doji. Lúc này tín hiệu chững lại mới được xác nhận. Nếu phiên thứ 10 giá vẫn tăng vượt đỉnh Doji, tín hiệu bị phủ định. Ví dụ chỉ minh họa cách đọc, không phải dự báo."
+   ],
+   [
+    "h2",
+    "Lỗi người mới hay mắc"
+   ],
+   [
+    "ol",
+    [
+     "Thấy Doji là bán ngay hoặc mua ngay mà không chờ xác nhận.",
+     "Đọc Doji trên khung 5 phút, 15 phút với cổ phiếu thanh khoản thấp – nhiều nhiễu (xem <a href='/f0/khung-thoi-gian-bieu-do.html'>khung thời gian biểu đồ</a>).",
+     "Bỏ qua khối lượng: Doji khối lượng thấp thường ít ý nghĩa.",
+     "Không đặt <a href='/f0/cat-lo-la-gi.html'>điểm cắt lỗ</a> khi giao dịch theo tín hiệu nến."
+    ]
+   ],
+   [
+    "p",
+    "Nến chỉ là một mảnh ghép. Kết hợp xu hướng, khối lượng và phân tích doanh nghiệp sẽ cho bức tranh đầy đủ hơn (xem <a href='/f0/phan-tich-co-ban-va-ky-thuat.html'>phân tích cơ bản và kỹ thuật</a>). Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Nến Doji có phải tín hiệu đảo chiều không?",
+    "Không chắc chắn; Doji chỉ thể hiện lưỡng lự, cần nến phiên sau và vị trí hỗ trợ, kháng cự để xác nhận."
+   ],
+   [
+    "Doji chuồn chuồn và nến búa khác nhau thế nào?",
+    "Cả hai có râu dưới dài, nhưng Doji chuồn chuồn có giá mở và đóng gần như bằng nhau, nến búa có thân nhỏ rõ hơn."
+   ],
+   [
+    "Nên xem Doji ở khung thời gian nào?",
+    "Người mới nên dùng khung ngày hoặc tuần để giảm nhiễu."
+   ]
+  ],
+  "rel": [
+   "mo-hinh-nen-nhat-co-ban",
+   "nen-bua-hammer-la-gi",
+   "ho-tro-khang-cu",
+   "khung-thoi-gian-bieu-do"
+  ]
+ },
+ {
+  "slug": "co-phieu-o-to",
+  "kw": "cổ phiếu ô tô",
+  "grp": 8,
+  "title": "Cổ phiếu ô tô: đọc VEA, HAX, SVC, TMT cho người mới",
+  "desc": "Cổ phiếu ô tô Việt Nam: lắp ráp, phân phối, liên doanh. Số liệu VEA, HAX, SVC, TMT quý 3/2026: lợi nhuận, tồn kho, ROE, P/E và rủi ro cần xem.",
+  "body": [
+   [
+    "p",
+    "Nhóm ô tô niêm yết ở Việt Nam gồm ba kiểu doanh nghiệp khá khác nhau: hưởng lợi nhuận từ liên doanh với hãng lớn, đại lý phân phối, và lắp ráp xe thương mại. Hiểu mô hình trước giúp bạn đọc số liệu đúng cách."
+   ],
+   [
+    "h2",
+    "Ba mô hình kinh doanh"
+   ],
+   [
+    "ul",
+    [
+     "<b>Hưởng lãi liên doanh:</b> VEA (Tổng công ty Máy động lực và Máy nông nghiệp) có phần vốn trong các liên doanh xe máy, ô tô; lợi nhuận chủ yếu đến từ phần lãi liên doanh, không phải doanh thu bán hàng.",
+     "<b>Đại lý phân phối:</b> HAX (Haxaco), SVC (Savico) bán xe và dịch vụ; biên lợi nhuận mỏng, phụ thuộc sức mua và chính sách giá của hãng.",
+     "<b>Lắp ráp xe thương mại:</b> TMT (Ô tô TMT) lắp ráp xe tải, xe điện nhỏ; vốn chủ nhỏ, đòn bẩy cao."
+    ]
+   ],
+   [
+    "h2",
+    "Số liệu quý 3/2026"
+   ],
+   [
+    "p",
+    "VEA: lợi nhuận sau thuế công ty mẹ quý 3 khoảng 1.893 tỷ đồng (+5,2%), 9 tháng khoảng 5.849 tỷ (+13,1%), trong khi doanh thu thuần quý 3 chỉ khoảng 1.256 tỷ. Lợi nhuận lớn hơn doanh thu là dấu hiệu lợi nhuận đến từ liên doanh. ROE 4 quý 28,6%, P/E 6,46."
+   ],
+   [
+    "p",
+    "HAX: doanh thu quý 3 khoảng 1.392 tỷ (+21% so với cùng kỳ), lợi nhuận sau thuế khoảng 3,6 tỷ so với lỗ khoảng 25,8 tỷ cùng kỳ; hàng tồn kho cuối quý khoảng 2.117 tỷ, gấp khoảng 2,6 lần mức 812 tỷ một năm trước. ROE 3,9%, P/E 15,95. SVC: doanh thu quý 3 khoảng 6.074 tỷ (giảm khoảng 26%), lợi nhuận khoảng 129 tỷ so với 345 tỷ cùng kỳ; ROE 4,2%. TMT: tồn kho khoảng 1.040 tỷ so với vốn chủ khoảng 245 tỷ; ROE 36,6% nhưng trên nền vốn rất nhỏ."
+   ],
+   [
+    "h2",
+    "Đại lý: tồn kho là chỉ số quan trọng"
+   ],
+   [
+    "p",
+    "Đại lý phải nhập xe trước rồi bán sau. Tồn kho tăng nhanh hơn doanh thu có thể do chuẩn bị mùa bán cuối năm, nhưng cũng có thể là hàng chậm bán, kéo theo chi phí lãi vay và áp lực giảm giá (xem <a href='/f0/hang-ton-kho-la-gi.html'>hàng tồn kho là gì</a>). Với HAX, tồn kho tăng 2,6 lần trong khi doanh thu quý tăng 21% là điểm cần theo dõi qua quý 4."
+   ],
+   [
+    "h2",
+    "Năm yếu tố chi phối ngành"
+   ],
+   [
+    "ol",
+    [
+     "Sức mua tiêu dùng và lãi suất vay mua xe (xem <a href='/f0/lai-suat-tang-anh-huong-chung-khoan.html'>lãi suất tăng ảnh hưởng chứng khoán</a>).",
+     "Chính sách thuế, phí trước bạ và ưu đãi cho xe lắp ráp trong nước.",
+     "Cạnh tranh giá giữa các hãng, đặc biệt xe điện và xe nhập khẩu.",
+     "Tỷ giá, vì linh kiện và xe nhập trả bằng ngoại tệ (xem <a href='/f0/ty-gia-tang-anh-huong-co-phieu.html'>tỷ giá tăng ảnh hưởng cổ phiếu</a>).",
+     "Nợ vay và tồn kho của đại lý."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ đọc một mã liên doanh"
+   ],
+   [
+    "p",
+    "Với doanh nghiệp như VEA, đừng dùng biên lợi nhuận gộp để đánh giá vì doanh thu nhỏ so với lợi nhuận. Hãy xem dòng \"lợi nhuận trong công ty liên kết\" và sức bán của các hãng liên doanh. Cổ tức của nhóm này thường phụ thuộc tiền liên doanh chia về. Ô tô là ngành <a href='/f0/co-phieu-chu-ky-la-gi.html'>chu kỳ</a>, nên đọc nhiều quý thay vì một quý. Số liệu: BCTC Q3/2026, dữ liệu tổng hợp 4/11/2026. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Cổ phiếu ô tô chịu tác động bởi gì?",
+    "Sức mua, lãi suất vay mua xe, chính sách thuế phí, cạnh tranh giá và tỷ giá."
+   ],
+   [
+    "Vì sao lợi nhuận VEA lớn hơn doanh thu?",
+    "Vì phần lớn lợi nhuận đến từ lãi các công ty liên doanh, ghi ở dòng lợi nhuận công ty liên kết, không nằm trong doanh thu."
+   ],
+   [
+    "Nên xem chỉ số nào ở đại lý ô tô?",
+    "Doanh thu, biên gộp, hàng tồn kho, nợ vay và chi phí lãi vay qua nhiều quý."
+   ]
+  ],
+  "rel": [
+   "hang-ton-kho-la-gi",
+   "co-phieu-chu-ky-la-gi",
+   "co-phieu-ban-le",
+   "ty-gia-tang-anh-huong-co-phieu"
+  ]
+ },
+ {
+  "slug": "cach-rut-tien-tu-tai-khoan-chung-khoan",
+  "kw": "cách rút tiền từ tài khoản chứng khoán",
+  "grp": 2,
+  "title": "Cách rút tiền từ tài khoản chứng khoán về ngân hàng",
+  "desc": "Cách rút tiền từ tài khoản chứng khoán về ngân hàng: khi nào tiền bán cổ phiếu về, các bước chuyển, phí, thời gian và lỗi thường gặp.",
+  "body": [
+   [
+    "p",
+    "Bán cổ phiếu xong, câu hỏi tiếp theo là \"bao giờ rút được tiền và rút thế nào\". Quy trình đơn giản, nhưng người mới hay nhầm giữa tiền đã bán và tiền đã về. Bài này giải thích từng bước."
+   ],
+   [
+    "h2",
+    "Khi nào tiền bán cổ phiếu về tài khoản?"
+   ],
+   [
+    "p",
+    "Thị trường cơ sở Việt Nam thanh toán theo chu kỳ T+2: bạn bán ngày T thì tiền về tài khoản chứng khoán vào ngày làm việc thứ hai sau đó (xem <a href='/f0/t-2-la-gi.html'>T+2 là gì</a>). Trước thời điểm này, tiền hiển thị là \"tiền chờ về\", chưa rút được. Nếu cần sớm, có thể dùng <a href='/f0/ung-truoc-tien-ban-la-gi.html'>ứng trước tiền bán</a> nhưng phải trả phí theo số ngày ứng."
+   ],
+   [
+    "h2",
+    "Các bước rút tiền"
+   ],
+   [
+    "ol",
+    [
+     "Đăng nhập ứng dụng hoặc web giao dịch của công ty chứng khoán.",
+     "Vào mục chuyển tiền / rút tiền, chọn chuyển ra ngân hàng.",
+     "Chọn tài khoản ngân hàng thụ hưởng. Thông thường phải là tài khoản đứng tên chính chủ đã đăng ký.",
+     "Nhập số tiền không vượt quá \"số tiền có thể rút\".",
+     "Xác thực bằng mã OTP hoặc sinh trắc học, rồi kiểm tra lịch sử giao dịch."
+    ]
+   ],
+   [
+    "h2",
+    "Thời gian và phí"
+   ],
+   [
+    "p",
+    "Trong giờ hành chính ngày làm việc, nhiều công ty chuyển tiền nhanh trong vài phút đến vài giờ; ngoài giờ hoặc ngày nghỉ có thể sang ngày làm việc kế tiếp. Phí chuyển tiền tùy công ty và ngân hàng, nhiều nơi miễn phí khi chuyển về tài khoản chính chủ. Kiểm tra biểu phí trên ứng dụng trước khi rút; khoản thuế 0,1% khi bán đã được trừ lúc khớp lệnh (xem <a href='/f0/phi-giao-dich-va-thue-chung-khoan.html'>phí giao dịch và thuế</a>)."
+   ],
+   [
+    "h2",
+    "Vì sao \"số tiền có thể rút\" thấp hơn số dư?"
+   ],
+   [
+    "ul",
+    [
+     "Còn tiền bán chưa về (chưa đủ T+2).",
+     "Đang dùng <a href='/f0/margin-la-gi.html'>margin</a>: phải giữ lại tiền để đảm bảo tỷ lệ ký quỹ.",
+     "Có lệnh mua đang chờ khớp làm tạm giữ tiền.",
+     "Cổ tức tiền mặt chưa đến ngày thanh toán."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ"
+   ],
+   [
+    "p",
+    "Bạn bán 1.000 cổ phiếu giá 30.000 đồng vào thứ Hai. Giá trị bán 30 triệu đồng, trừ phí giao dịch và thuế bán khoảng 0,1%, còn khoảng 29,9 triệu (phí cụ thể tùy nơi). Thứ Tư tiền về tài khoản, bạn có thể rút về ngân hàng. Nếu thứ Hai bạn cần tiền gấp, phải ứng trước và trả phí tính theo 2 ngày."
+   ],
+   [
+    "h2",
+    "Lưu ý an toàn"
+   ],
+   [
+    "p",
+    "Không đưa mã OTP, mật khẩu cho bất kỳ ai, kể cả người tự xưng nhân viên hỗ trợ. Tiền trong tài khoản chứng khoán được quản lý tách biệt tại ngân hàng (xem <a href='/f0/tai-khoan-chung-khoan-co-mat-tien-khong.html'>tài khoản chứng khoán có mất tiền không</a>). Nếu bị yêu cầu chuyển tiền \"phí mở khóa\" để rút, đó là dấu hiệu lừa đảo (xem <a href='/f0/chung-khoan-co-phai-lua-dao-khong.html'>chứng khoán có phải lừa đảo không</a>). Cách nạp tiền ngược lại xem ở <a href='/f0/cach-nap-tien-vao-tai-khoan-chung-khoan.html'>cách nạp tiền vào tài khoản chứng khoán</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Bán cổ phiếu bao lâu thì rút được tiền?",
+    "Tiền về tài khoản chứng khoán theo T+2, sau đó rút về ngân hàng thường trong ngày làm việc."
+   ],
+   [
+    "Có rút tiền về tài khoản người khác được không?",
+    "Thường chỉ rút về tài khoản ngân hàng chính chủ đã đăng ký, để bảo vệ nhà đầu tư."
+   ],
+   [
+    "Rút tiền có mất phí không?",
+    "Tùy công ty chứng khoán và ngân hàng; nhiều nơi miễn phí khi rút về tài khoản chính chủ."
+   ]
+  ],
+  "rel": [
+   "t-2-la-gi",
+   "ung-truoc-tien-ban-la-gi",
+   "cach-nap-tien-vao-tai-khoan-chung-khoan",
+   "tai-khoan-chung-khoan-co-mat-tien-khong"
+  ]
+ },
+ {
+  "slug": "so-sanh-pe-pb-khi-nao-dung",
+  "kw": "nên dùng P/E hay P/B",
+  "grp": 3,
+  "title": "Nên dùng P/E hay P/B? Chọn chỉ số định giá theo ngành",
+  "desc": "Khi nào dùng P/E, khi nào dùng P/B: theo ngành, theo lợi nhuận ổn định hay không. Ví dụ VCB, MBB, HPG, MWG, HSG tháng 11/2026 và 3 lỗi hay gặp.",
+  "body": [
+   [
+    "p",
+    "P/E và P/B là hai chỉ số định giá phổ biến nhất, nhưng mỗi chỉ số hợp với một kiểu doanh nghiệp. Dùng nhầm có thể khiến cổ phiếu đắt trông như rẻ. Nếu chưa quen, đọc trước <a href='/f0/pe-la-gi.html'>P/E là gì</a> và <a href='/f0/pb-la-gi.html'>P/B là gì</a>."
+   ],
+   [
+    "h2",
+    "Khác nhau ở mẫu số"
+   ],
+   [
+    "ul",
+    [
+     "<b>P/E</b> = giá ÷ lợi nhuận mỗi cổ phiếu 4 quý: trả bao nhiêu đồng cho 1 đồng lãi một năm.",
+     "<b>P/B</b> = giá ÷ giá trị sổ sách mỗi cổ phiếu (<a href='/f0/bvps-la-gi.html'>BVPS</a>): trả bao nhiêu đồng cho 1 đồng vốn chủ."
+    ]
+   ],
+   [
+    "p",
+    "Hai chỉ số nối với nhau bằng ROE: P/B ≈ P/E × ROE. Cổ phiếu có ROE cao thường có P/B cao, và điều đó không tự động là đắt."
+   ],
+   [
+    "h2",
+    "Khi nào ưu tiên P/E?"
+   ],
+   [
+    "p",
+    "Khi lợi nhuận tương đối ổn định và tài sản không phải là thứ tạo ra giá trị chính: bán lẻ, tiêu dùng, công nghệ, dịch vụ. Ví dụ Thế Giới Di Động (MWG) P/E 9,54, P/B 2,33, ROE 29,5% (dữ liệu tổng hợp 4/11/2026): P/B cao phản ánh vốn được dùng hiệu quả, nên P/E là thước đo hợp lý hơn."
+   ],
+   [
+    "h2",
+    "Khi nào ưu tiên P/B?"
+   ],
+   [
+    "p",
+    "Khi tài sản và vốn là nguyên liệu kinh doanh: ngân hàng, công ty chứng khoán, bảo hiểm. Vietcombank (VCB) P/B 1,76 với ROE 17,6%; MB (MBB) P/B 1,21 với ROE 21,8%. Với ngân hàng, cặp P/B–ROE nói nhiều hơn P/E (xem <a href='/f0/dinh-gia-co-phieu-ngan-hang-pb-roe.html'>định giá cổ phiếu ngân hàng bằng P/B và ROE</a>). P/B cũng hữu ích khi doanh nghiệp đang lỗ hoặc lãi rất mỏng, lúc P/E không còn ý nghĩa."
+   ],
+   [
+    "h2",
+    "Ngành chu kỳ: cẩn thận cả hai"
+   ],
+   [
+    "p",
+    "Hòa Phát (HPG) P/E 6,54, P/B 1,21, ROE 19,9%. Hoa Sen (HSG) P/E 13,16 nhưng P/B chỉ 0,73 với ROE 5,4%; Nam Kim (NKG) P/E 24,49, P/B 0,77, ROE 3,2%. Cùng ngành thép, P/B dưới 1 đi cùng ROE thấp, còn P/E cao vì lợi nhuận đang mỏng. Ở <a href='/f0/co-phieu-chu-ky-la-gi.html'>cổ phiếu chu kỳ</a>, P/E thấp thường xuất hiện ở đỉnh lợi nhuận, nên nhiều người dùng P/B so với lịch sử chu kỳ."
+   ],
+   [
+    "h2",
+    "Ba lỗi hay gặp"
+   ],
+   [
+    "ol",
+    [
+     "So P/E giữa các ngành khác nhau, ví dụ ngân hàng với bán lẻ.",
+     "Thấy P/B dưới 1 là cho rằng rẻ mà không xem ROE và chất lượng tài sản.",
+     "Dùng P/E khi lợi nhuận 4 quý bị đội bởi khoản một lần (xem <a href='/f0/loi-nhuan-bat-thuong-la-gi.html'>lợi nhuận bất thường</a>)."
+    ]
+   ],
+   [
+    "h2",
+    "Quy tắc ngắn"
+   ],
+   [
+    "p",
+    "Lợi nhuận đều và tài sản nhẹ: ưu tiên P/E. Tài sản là hàng hóa kinh doanh (ngân hàng, chứng khoán): ưu tiên P/B kèm ROE. Ngành chu kỳ hoặc đang lỗ: đọc P/B và lợi nhuận nhiều năm. Luôn so với chính doanh nghiệp qua thời gian và với đối thủ cùng ngành. Số liệu: dữ liệu tổng hợp 4/11/2026, P/E và P/B thay đổi theo giá mỗi ngày. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Ngân hàng nên định giá bằng P/E hay P/B?",
+    "Thường dùng P/B kèm ROE, vì vốn chủ là nền tảng cho vay và lợi nhuận của ngân hàng."
+   ],
+   [
+    "P/B dưới 1 có phải cổ phiếu rẻ?",
+    "Không nhất thiết; nếu ROE thấp hoặc tài sản kém chất lượng, P/B thấp là hợp lý."
+   ],
+   [
+    "Doanh nghiệp đang lỗ thì dùng chỉ số nào?",
+    "P/E không có ý nghĩa khi lỗ; có thể dùng P/B, P/S hoặc so lợi nhuận nhiều năm."
+   ]
+  ],
+  "rel": [
+   "pe-la-gi",
+   "pb-la-gi",
+   "dinh-gia-co-phieu-ngan-hang-pb-roe",
+   "roe-eps-la-gi"
   ]
  }
 ]
