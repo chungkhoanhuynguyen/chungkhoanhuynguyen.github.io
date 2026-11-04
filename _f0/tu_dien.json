@@ -423,5 +423,20 @@
 "Vốn chủ sở hữu",
 "Phần tài sản thuộc về cổ đông, bằng tổng tài sản trừ nợ phải trả.",
 "von-chu-so-huu-la-gi"
+],
+[
+"Tỷ suất cổ tức",
+"Cổ tức tiền mặt mỗi năm chia cho giá cổ phiếu, tính bằng %.",
+"ty-suat-co-tuc-la-gi"
+],
+[
+"Lợi nhuận bất thường",
+"Khoản lãi hoặc lỗ một lần không đến từ kinh doanh chính, như đền bù đất, bán công ty con.",
+"loi-nhuan-bat-thuong-la-gi"
+],
+[
+"Nến Doji",
+"Cây nến có giá mở cửa gần bằng giá đóng cửa, thể hiện sự lưỡng lự giữa bên mua và bên bán.",
+"nen-doji-la-gi"
 ]
 ]
