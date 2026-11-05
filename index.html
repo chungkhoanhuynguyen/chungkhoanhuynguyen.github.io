@@ -906,10 +906,28 @@ header.top .gnav .gi>a.g-rep:hover{background:rgba(243,210,122,.14)!important;co
 .mw-grid{animation:hnIn .28s cubic-bezier(.2,.8,.2,1)}
 .vs-grid>*{animation:hnIn .28s cubic-bezier(.2,.8,.2,1) both}.vs-grid>*:nth-child(2){animation-delay:.04s}.vs-grid>*:nth-child(3){animation-delay:.08s}.vs-grid>*:nth-child(4){animation-delay:.12s}
 .toc:not([hidden]){animation:hnFade .2s ease-out}.toc:not([hidden]) .toc-in{animation:hnDrop .26s cubic-bezier(.2,.8,.2,1)}
-.top .wrap.bar-in{max-width:none}
-@media(max-width:1500px){.cd-pill span{display:none}.gnav .gi>a{padding-left:9px!important;padding-right:9px!important}}
+.top .wrap.bar-in{max-width:1180px}
+.cd-pill{display:none!important}
+#hacl{display:none}.hacc{padding-left:10px!important;padding-right:10px!important}
+.hn-navts{border:1px solid rgba(242,193,78,.55)!important;border-radius:999px!important;padding:6px 14px!important;color:#f2c14e!important}
+.hn-navts::after{display:none!important}
+header.top .brand{align-items:center!important}
+header.top .brand b{font-size:15px!important;color:#fff!important;letter-spacing:.04em}
+header.top .brand span{color:#f2c14e!important;font-size:11.5px!important;letter-spacing:.14em!important;margin:0!important;font-weight:600}
+header.top .gnav .gi>a{font-size:14px!important;color:#c9bddb!important;padding:8px 12px!important}
+header.top .gnav .gi>a.hn-navts{color:#f2c14e!important;border:1px solid rgba(242,193,78,.55)!important;border-radius:999px!important;padding:7px 14px!important;margin-right:6px}
+header.top .gnav .gi>a.hn-navts:hover{background:rgba(242,193,78,.12)!important;color:#ffe2a0!important}
+.hn-eb{display:flex;align-items:center;gap:8px;color:rgba(241,234,217,.8)!important}.hn-eb i{width:8px;height:8px;border-radius:50%;background:#2fbf71;box-shadow:0 0 0 4px rgba(47,191,113,.18)}
+.hero h1.hn-h1{font:800 clamp(40px,5.6vw,72px)/1.03 "Playfair Display",Georgia,serif;margin:12px 0 16px}
+.hn-h1 em{font-style:normal;color:#f2c14e}
+.hn-lead{color:rgba(241,234,217,.78);max-width:34em}
+.hero-rep.hn-ts{max-width:420px;margin-top:12px}
+.hn-soc{margin-top:18px!important}
+.hn-so{display:flex;flex-wrap:wrap;gap:28px;margin-top:22px;font-size:13px;color:rgba(241,234,217,.72)}.hn-so b{display:block;font-family:"JetBrains Mono",ui-monospace,Menlo,monospace;font-size:20px;color:#fff;font-weight:500}
+
 @media(max-width:1260px){#hacl{display:none}.brand span{display:none}.hcta{padding-left:12px!important;padding-right:12px!important}}
-@media(max-width:1300px){.gnav .gi>a{font-size:13.5px}.cd-pill{display:none!important}}
+@media(max-width:1300px){.gnav .gi>a{font-size:13.5px}.cd-pill{display:none!important}
+#hacl{display:none}.hacc{padding-left:10px!important;padding-right:10px!important}}
 @media(max-width:1220px){.gnav .gi>a{padding-left:6px!important;padding-right:6px!important;font-size:13px}.hn-navts{padding:3px 8px!important}#hacl{display:none}}
 @media (prefers-reduced-motion:reduce){.mw-grid,.vs-grid>*,.toc,.toc-in{animation:none!important}}
 </style>
@@ -918,13 +936,10 @@ header.top .gnav .gi>a.g-rep:hover{background:rgba(243,210,122,.14)!important;co
 <header class="top" id="hdr"><div class="wrap bar-in">
 <a class="brand" href="#top"><b>HUY NGUYỄN</b><span>CHỨNG KHOÁN</span></a>
 <nav class="gnav" aria-label="Mục chính">
- <div class="gi"><a class="hn-navts" href="bao-cao-2026.html#tichsan">★ Tích sản</a></div>
- <div class="gi"><a href="#g1">Hôm nay</a><div class="gd"><a href="#top-10-co-phieu-khoe">Top 10 cổ phiếu khỏe</a><a href="#dongtien">Sức mạnh dòng tiền</a><a href="#banggia">Bảng giá 3 sàn</a></div></div>
- <div class="gi"><a href="#g2">Công cụ</a><div class="gd"><a href="/dinh-gia-co-phieu.html">Định giá cổ phiếu</a><a href="/ma/">Tra cứu mã cổ phiếu (A–Z)</a><a href="#soichart">Soi chart cổ phiếu</a><a href="#sosanh">So sánh 2 mã</a></div></div>
- <div class="gi"><a href="#g3">Doanh nghiệp</a><div class="gd"><a href="#bctc">Đánh giá BCTC</a><a href="#tintuc">Tin tức &amp; vĩ mô</a><a href="#baocao">Báo cáo phân tích CTCK</a><a href="#lichsk">Lịch sự kiện</a></div></div>
- <div class="gi"><a href="#g4">Góc nhìn</a><div class="gd"><a href="bao-cao-2026.html">Báo cáo lệnh &amp; Tích sản</a><a href="#bang">Bảng theo dõi</a><a href="#tieudiem">Tiêu điểm MSR</a><a href="/hoc/livestream-18-1-2025-ctg-cti-vlb-dau-tu-cong-siet-tin-dung.html">Nhìn lại nhận định CTG · CTI · VLB (1/2025)</a></div></div>
- <div class="gi"><a href="#g5">Dịch vụ</a><div class="gd"><a href="/tu-van-dau-tu-chung-khoan.html">Tư vấn đầu tư chứng khoán</a><a href="/mo-tai-khoan-chung-khoan.html">Mở tài khoản chứng khoán</a><a href="#hoidap">Hỏi đáp PRO</a><a href="#congdong">Cộng đồng</a></div></div>
- <div class="gi"><a href="#g6">Học đầu tư</a><div class="gd"><a href="/f0/">Cẩm nang chứng khoán cho người mới</a><a href="#seri">Seri F0</a><a href="#lichsu">Lịch sử &amp; câu chuyện chứng khoán</a><a href="/hoc/">Thư viện bài học (bài viết)</a></div></div>
+ <div class="gi"><a class="hn-navts" href="bao-cao-2026.html#tichsan">★ Bảng giá tích sản</a></div>
+ <div class="gi"><a href="#g1">Hôm nay</a><div class="gd"><a href="#top-10-co-phieu-khoe">Top 10 cổ phiếu khỏe</a><a href="#thitruong">Thị trường hôm nay</a><a href="#dongtien">Sức mạnh dòng tiền</a><a href="#banggia">Bảng giá 3 sàn</a><a href="#tintuc">Tin tức &amp; vĩ mô</a><a href="#lichsk">Lịch sự kiện</a></div></div>
+ <div class="gi"><a href="#g2">Công cụ</a><div class="gd"><a href="/dinh-gia-co-phieu.html">Định giá cổ phiếu</a><a href="/ma/">Tra cứu mã cổ phiếu (A–Z)</a><a href="#soichart">Soi chart cổ phiếu</a><a href="#sosanh">So sánh 2 mã</a><a href="#bctc">Đánh giá BCTC</a><a href="#baocao">Báo cáo phân tích CTCK</a><a href="bao-cao-2026.html">Báo cáo lệnh 2016–2026</a><a href="#bang">Bảng theo dõi</a></div></div>
+ <div class="gi"><a href="#g6">Học đầu tư</a><div class="gd"><a href="/hoc/">Thư viện bài học</a><a href="/f0/">Cẩm nang chứng khoán cho người mới</a><a href="#seri">Seri F0</a><a href="#lichsu">Lịch sử &amp; câu chuyện chứng khoán</a><a href="/tu-van-dau-tu-chung-khoan.html">Tư vấn đầu tư chứng khoán</a><a href="/mo-tai-khoan-chung-khoan.html">Mở tài khoản chứng khoán</a><a href="#congdong">Cộng đồng Zalo miễn phí</a></div></div>
 </nav>
 <a class="cd-pill" id="cdp" href="#congdong" hidden><i aria-hidden="true"></i><b id="cdn"></b><span>thành viên</span></a>
 <a class="hcta" href="https://zalo.me/0365188286" target="_blank" rel="noopener">Tư vấn 1:1</a>
@@ -949,10 +964,10 @@ header.top .gnav .gi>a.g-rep:hover{background:rgba(243,210,122,.14)!important;co
 
 <main id="top">
 <div class="herobox hn-astro"><canvas id="hnAstro" aria-hidden="true"></canvas><div class="wrap hero">
-<div><p class="eyebrow">Tư vấn đầu tư chứng khoán 1:1</p><h1>Mỗi nhà đầu tư một <em>kế hoạch riêng</em>.</h1>
-<p>Chứng khoán Huy Nguyễn đồng hành 1:1 với từng nhà đầu tư: đọc báo cáo tài chính mã bạn đang cầm, dựng danh mục theo số vốn và mức chịu rủi ro, đặt sẵn điểm mua và điểm cắt lỗ trước mỗi lệnh.</p>
+<div><p class="eyebrow hn-eb"><i aria-hidden="true"></i>Tư vấn đầu tư chứng khoán 1:1</p><h1 class="hn-h1">Mỗi nhà đầu tư một <em>kế hoạch riêng.</em></h1>
+<p class="hn-lead">Đọc báo cáo tài chính mã bạn đang cầm, dựng danh mục theo số vốn và mức chịu rủi ro, đặt sẵn điểm mua và điểm cắt lỗ trước mỗi lệnh.</p>
 <div class="hero-act"><a class="btn main" href="https://zalo.me/0365188286" target="_blank" rel="noopener">Đặt lịch tư vấn 1:1 qua Zalo <small>0365.188.286</small></a><a class="btn vps" style="margin-top:10px" href="/mo-tai-khoan-chung-khoan.html#chon">Mở tài khoản chứng khoán <small>Online 5 phút</small></a></div>
-<a class="hero-rep hn-ts" href="bao-cao-2026.html#tichsan"><b>★ Bảng giá tích sản</b><span>Nhóm ngân hàng cổ tức đều: giá mua tích sản, cổ tức, kết quả từng năm</span><i aria-hidden="true">→</i></a><a class="hero-rep" href="mo-tai-khoan-chung-khoan.html"><b>Mở tài khoản chứng khoán online</b><span>Miễn phí, 5 phút bằng CCCD trên điện thoại, được Huy Nguyễn hướng dẫn 1:1</span><i aria-hidden="true">→</i></a><div class="soc hn-soc" style="margin-top:18px"><a href="https://www.facebook.com/chungkhoanhuynguyenfa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4V10.5H7.8v3h2.6V21z"/></svg>Facebook Nguyễn Huy Anh</a><a href="https://www.youtube.com/@chungkhoanhuynguyen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z"/></svg>YouTube</a><a href="https://www.tiktok.com/@chungkhoanhuynguyen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M16.6 3c.4 2 1.7 3.4 3.9 3.6v3a7.3 7.3 0 0 1-3.8-1.2v6.3a5.7 5.7 0 1 1-5.7-5.7l.6.1v3.1a2.6 2.6 0 1 0 2 2.5V3z"/></svg>TikTok</a></div></div>
+<a class="hero-rep hn-ts" href="bao-cao-2026.html#tichsan"><b>Bảng giá tích sản</b><span>Nhóm ngân hàng cổ tức đều, cập nhật mỗi phiên</span><i aria-hidden="true">→</i></a><div class="hn-so"><span><b>1.700+</b>thành viên cộng đồng</span><span><b>2016–2026</b>báo cáo lệnh công khai</span></div><div class="soc hn-soc" style="margin-top:18px"><a href="https://www.facebook.com/chungkhoanhuynguyenfa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4V10.5H7.8v3h2.6V21z"/></svg>Facebook Nguyễn Huy Anh</a><a href="https://www.youtube.com/@chungkhoanhuynguyen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z"/></svg>YouTube</a><a href="https://www.tiktok.com/@chungkhoanhuynguyen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M16.6 3c.4 2 1.7 3.4 3.9 3.6v3a7.3 7.3 0 0 1-3.8-1.2v6.3a5.7 5.7 0 1 1-5.7-5.7l.6.1v3.1a2.6 2.6 0 1 0 2 2.5V3z"/></svg>TikTok</a></div></div>
 <div aria-hidden="true"></div></div></div></div>
 
 <section id="timnhanh" class="tn"><div class="wrap">
@@ -2470,7 +2485,7 @@ const CST=[];for(let k=0;k<7;k++){const cx0=rnd(),cy0=rnd()*.9,pts=[];for(let n=
 const FAINT=Array.from({length:140},()=>[rnd(),rnd(),rnd()*6.28,rnd()]);
 const SYM=["VN-INDEX","DOW JONES","S&P 500","NASDAQ","NIKKEI 225","KOSPI","SHANGHAI","HANG SENG","TAIEX","SET","JCI","STI","NIFTY 50","ASX 200","FTSE 100","DAX","CAC 40","EURO STOXX 50"];
 function rot3(p,ax,ay,az){let[x,y,z]=p;let c=Math.cos(az),s=Math.sin(az);[x,y]=[x*c-y*s,x*s+y*c];c=Math.cos(ax);s=Math.sin(ax);[y,z]=[y*c-z*s,y*s+z*c];c=Math.cos(ay);s=Math.sin(ay);[x,z]=[x*c+z*s,-x*s+z*c];return[x,y,z]}
-function drawAstro(t){g.clearRect(0,0,W,H);const mob=W<900,cx=mob?W*.72:W*.74,cy=mob?H*.06+90:H*.48,R=mob?Math.min(W*.22,80):Math.min(W*.17,H*.3);
+function drawAstro(t){g.clearRect(0,0,W,H);const mob=W<900,cx=mob?W*.72:W*.72,cy=mob?H*.06+90:H*.5,R=mob?Math.min(W*.22,80):Math.min(W*.165,H*.33);
   /* nền sao + chòm sao mảnh */
   FAINT.forEach(([x,y,p,b])=>{const a=.15+.5*b*(.6+.4*Math.sin(t*.0008+p));g.fillStyle=`rgba(240,228,200,${a})`;g.fillRect(x*W,y*H,b>.85?1.8:1,b>.85?1.8:1)});
   g.strokeStyle="rgba(214,190,140,.16)";g.lineWidth=.8;CST.forEach(pts=>{g.beginPath();pts.forEach((p,i)=>i?g.lineTo(p[0]*W,p[1]*H):g.moveTo(p[0]*W,p[1]*H));g.stroke();pts.forEach(p=>{g.fillStyle="rgba(255,236,190,.75)";g.beginPath();g.arc(p[0]*W,p[1]*H,1.6,0,7);g.fill()})});
