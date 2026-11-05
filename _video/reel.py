@@ -111,12 +111,21 @@ def ve_cuoi(im, prog):
     wu = d.textlength(u1, font=fu) + d.textlength(u2, font=fd); x = W/2 - wu/2; yu = H - 130
     d.text((x, yu), u1, font=fu, fill=TRANG); d.text((x + d.textlength(u1, font=fu), yu), u2, font=fd, fill=VANG)
 
+def ve_web_to(im, t, y):
+    """Cảnh kéo về web: tên web to giữa khung ảnh."""
+    d = ImageDraw.Draw(im, "RGBA"); a = dx2.ease(t / 0.4)
+    u1, u2 = "chungkhoanhuynguyen", ".com"; fu = F("Black", 56); fd = F("Bold", 56)
+    wu = d.textlength(u1, font=fu) + d.textlength(u2, font=fd); x = W/2 - wu/2
+    d.rounded_rectangle([x - 34, y - 26, x + wu + 34, y + 92], 26, fill=(22, 9, 40, int(225 * a)), outline=TIM_S + (int(255 * a),), width=4)
+    d.text((x, y), u1, font=fu, fill=TRANG + (int(255 * a),)); d.text((x + d.textlength(u1, font=fu), y), u2, font=fd, fill=VANG + (int(255 * a),))
+
 def khung(R, i, t, T, ph, tong_t, tong_T):
     im = NEN.copy(); c = R["canh"][i]
     yb = ve_dau(im, R.get("hook"), R.get("nhan"))
     y0 = max(yb + 24, 430); y1 = 1360
     ve_anh(im, ph, t, T, y0, y1)
     ve_chu_to(im, c.get("chu_to", ""), t, y1, c.get("hoi", 0))
+    if c.get("web"): ve_web_to(im, t, (y0 + y1) // 2 - 60)
     ve_phu_de(im, bo_mien_tru(c.get("loi", "")), t, T, 1420)
     ve_cuoi(im, tong_t / max(tong_T, 0.1))
     return im
@@ -131,13 +140,20 @@ def anh_canh(R, kho):
         out.append(ph)
     return out
 
+KEO_WEB = {"chu_to": "VÀO WEB XEM SỐ LIỆU",
+    "loi": "Bảng giá tích sản, số liệu ngân hàng và báo cáo hơn 400 mã cập nhật mỗi phiên tại chungkhoanhuynguyen.com, vào xem miễn phí.",
+    "loi_doc": "Bảng giá tích sản, số liệu ngân hàng và báo cáo hơn bốn trăm mã cập nhật mỗi phiên tại chứng khoán Huy Nguyễn chấm com, vào xem miễn phí."}
 def ket_cau_hoi(R):
     """Cảnh cuối là câu hỏi mở để khách bình luận, tranh luận."""
+    w = R.get("keo_web", KEO_WEB)          # tin nóng vẫn phải kéo khách về web (anh Huy 6/11)
+    if w:
+        w = dict(w); w.setdefault("anh", "Ho Chi Minh City Stock Exchange"); w["web"] = 1
+        if re.search(r"XEM VIDEO|VIDEO ĐẦY ĐỦ", R["canh"][-1].get("chu_to", ""), re.I): R["canh"][-1] = w
+        else: R["canh"].append(w)
     q = R.get("cau_hoi")
     if not q: return
     q = dict(q); q.setdefault("anh", R["canh"][-1].get("anh", "")); q["hoi"] = 1
-    if re.search(r"XEM VIDEO|VIDEO ĐẦY ĐỦ", R["canh"][-1].get("chu_to", ""), re.I): R["canh"][-1] = q
-    else: R["canh"].append(q)
+    R["canh"].append(q)
 
 def main():
     lo, key = sys.argv[1], sys.argv[2]; QD = os.path.join(HERE, "queue", lo)
