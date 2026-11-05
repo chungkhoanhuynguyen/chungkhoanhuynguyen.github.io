@@ -72,7 +72,7 @@ def _nen_chart(im, seed, up):
     im.paste(lay, (0, 0), lay)
 
 def _sticker(pt, w=7):
-    # anh Huy 6/11 00:14: bỏ viền trắng dày -> viền sáng mảnh (rim light) vàng nhạt + bóng đổ mềm, chân dung tự nhiên
+    # anh Huy 6/11 00:14: bỏ viền trắng dày -> viền sáng mảnh (rim light) tím thương hiệu (anh Huy 00:23) + bóng đổ mềm, chân dung tự nhiên
     a = pt.getchannel("A"); pad = 30
     W2, H2 = pt.width + pad*2, pt.height + pad
     A = Image.new("L", (W2, H2)); A.paste(a, (pad, pad))
@@ -81,7 +81,7 @@ def _sticker(pt, w=7):
     s_ = Image.new("RGBA", (W2, H2), (8, 4, 18, 0)); s_.putalpha(sh)
     out.alpha_composite(s_, (10, 4))
     rim = A.filter(ImageFilter.MaxFilter(5)).filter(ImageFilter.GaussianBlur(3)).point(lambda v: int(v*0.85))  # viền sáng 2-3px
-    r_ = Image.new("RGBA", (W2, H2), (255, 214, 102, 0)); r_.putalpha(rim)
+    r_ = Image.new("RGBA", (W2, H2), (196, 140, 255, 0)); r_.putalpha(rim)
     out.alpha_composite(r_)
     body = Image.new("RGBA", (W2, H2), (0, 0, 0, 0)); body.paste(pt, (pad, pad)); out.alpha_composite(body)
     # cắt đáy phẳng, không lộ hiệu ứng ở mép dưới
