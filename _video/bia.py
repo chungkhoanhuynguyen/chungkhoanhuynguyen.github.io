@@ -121,9 +121,10 @@ def make(sc, meta=None, ph=None, out=None):
         im.paste(pt, (px_, H - pt.height), pt); d = ImageDraw.Draw(im)
         fl = dx2.F("Black", 30); d.text((60, 30), "HUY NGUYỄN", font=fl, fill=TRANG)
         d.text((60 + d.textlength("HUY NGUYỄN ", font=fl), 36), "CHỨNG KHOÁN", font=dx2.F("SemiBold", 22), fill=VANG)
-        fu = dx2.F("Bold", 30); u = "chungkhoanhuynguyen.com"
-        d.rounded_rectangle([50, H-78, 50 + d.textlength(u, font=fu) + 32, H-28], 12, fill=(0, 0, 0))
-        d.text((66, H-74), u, font=fu, fill=VANG)
+        # anh Huy 6/11 00:38: URL nhỏ gọn kiểu tên thương hiệu (giống dòng HUY NGUYỄN CHỨNG KHOÁN), bỏ khung đen
+        fu = dx2.F("Bold", 26); fd = dx2.F("SemiBold", 26); u1 = "chungkhoanhuynguyen"; yu = H - 58
+        for dx_, dy_ in ((2, 2), (1, 1)): d.text((60+dx_, yu+dy_), u1 + ".com", font=fu, fill=(10, 5, 20))
+        d.text((60, yu), u1, font=fu, fill=TRANG); d.text((60 + d.textlength(u1, font=fu), yu), ".com", font=fd, fill=VANG)
         MW = 720
     else:
         try: dx2.brand(im, d, W-170, 30, 0.62, 1.0, TIM0)

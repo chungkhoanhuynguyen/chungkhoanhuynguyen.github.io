@@ -7,7 +7,8 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 V = json.load(open(os.path.join(ROOT, "_hoc/videos.json"), encoding="utf-8"))
 now = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None) + datetime.timedelta(hours=7)
 def live(v):
-    return now >= datetime.datetime.fromisoformat(v["d"] + "T20:00:00")
+    # chỉ xuất bản khi đã có id YouTube và đã tới ngày ra mắt (video từ hàng chờ có id rỗng)
+    return bool(v.get("id")) and bool(v.get("d")) and now >= datetime.datetime.fromisoformat(v["d"] + "T20:00:00")
 R = [v for v in V if live(v)]
 e = lambda s: html.escape(s or "", quote=True)
 def dmy(d): y, m, dd = d.split("-"); return "%s/%s/%s" % (int(dd), int(m), y)
