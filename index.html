@@ -888,11 +888,37 @@ header.top .gnav .gi>a.g-rep:hover{background:rgba(243,210,122,.14)!important;co
 .bc-l a{flex:1 1 300px;color:#24133f;font-weight:600;text-decoration:none}.bc-l a:hover{color:#6b3fc4;text-decoration:underline}.bc-d{font:600 13px ui-monospace,monospace;color:#7a6f94;min-width:42px}
 .bc-t{font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;background:#efe9fa;color:#4a3a6b;white-space:nowrap}.bc-vm{background:#fff3d6;color:#8a5a00}.bc-cl{background:#e3f2ff;color:#1f5fbf}.bc-tp{background:#e7f7ee;color:#11823b}.bc-ng{background:#fde8e8;color:#b5472f}
 .bc-l em{font-style:normal;font-size:12px;color:#9a93b3}
-</style></head><body>
+</style><style id="hn-astro-css">
+.herobox.hn-astro{position:relative;overflow:hidden;background:radial-gradient(800px 520px at 75% 45%,rgba(107,47,160,.5),transparent 70%),linear-gradient(180deg,#221038,#150a24)!important;background-image:radial-gradient(800px 520px at 75% 45%,rgba(107,47,160,.5),transparent 70%),linear-gradient(180deg,#221038,#150a24)!important}
+#hnAstro{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.herobox.hn-astro>.wrap{position:relative;z-index:1}
+.hero-rep.hn-ts{background:linear-gradient(90deg,rgba(242,193,78,.2),rgba(242,193,78,.05));border-color:rgba(242,193,78,.7)}
+.hero-rep.hn-ts b{color:#f2c14e}
+.hero-rep i{transition:transform .15s ease}.hero-rep:hover i{transform:translateX(3px)}
+.hn-soc a{display:inline-flex;align-items:center;gap:6px;transition:color .15s ease}.hn-soc a:hover{color:#fff}
+.hn-zl span{display:inline-flex;align-items:center;gap:8px}.hn-zl svg{color:#0068ff;background:#fff;border-radius:50%;padding:1px}
+.hn-navts{color:#f2c14e!important;border:1px solid rgba(242,193,78,.5);border-radius:999px;padding:4px 12px!important}
+.btn,.hero-rep,.hcta,.mw-tabs button,.vs-tabs button,.copy{transition:transform .12s ease,filter .15s ease,background-color .15s ease}
+.btn:active,.hero-rep:active,.hcta:active,.mw-tabs button:active,.vs-tabs button:active,.copy:active{transform:scale(.97)}
+@keyframes hnIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes hnFade{from{opacity:0}to{opacity:1}}
+@keyframes hnDrop{from{opacity:0;transform:translateY(-10px) scale(.98)}to{opacity:1;transform:none}}
+.mw-grid{animation:hnIn .28s cubic-bezier(.2,.8,.2,1)}
+.vs-grid>*{animation:hnIn .28s cubic-bezier(.2,.8,.2,1) both}.vs-grid>*:nth-child(2){animation-delay:.04s}.vs-grid>*:nth-child(3){animation-delay:.08s}.vs-grid>*:nth-child(4){animation-delay:.12s}
+.toc:not([hidden]){animation:hnFade .2s ease-out}.toc:not([hidden]) .toc-in{animation:hnDrop .26s cubic-bezier(.2,.8,.2,1)}
+.top .wrap.bar-in{max-width:none}
+@media(max-width:1500px){.cd-pill span{display:none}.gnav .gi>a{padding-left:9px!important;padding-right:9px!important}}
+@media(max-width:1260px){#hacl{display:none}.brand span{display:none}.hcta{padding-left:12px!important;padding-right:12px!important}}
+@media(max-width:1300px){.gnav .gi>a{font-size:13.5px}.cd-pill{display:none!important}}
+@media(max-width:1220px){.gnav .gi>a{padding-left:6px!important;padding-right:6px!important;font-size:13px}.hn-navts{padding:3px 8px!important}#hacl{display:none}}
+@media (prefers-reduced-motion:reduce){.mw-grid,.vs-grid>*,.toc,.toc-in{animation:none!important}}
+</style>
+</head><body>
 
 <header class="top" id="hdr"><div class="wrap bar-in">
 <a class="brand" href="#top"><b>HUY NGUYỄN</b><span>CHỨNG KHOÁN</span></a>
 <nav class="gnav" aria-label="Mục chính">
+ <div class="gi"><a class="hn-navts" href="bao-cao-2026.html#tichsan">★ Tích sản</a></div>
  <div class="gi"><a href="#g1">Hôm nay</a><div class="gd"><a href="#top-10-co-phieu-khoe">Top 10 cổ phiếu khỏe</a><a href="#dongtien">Sức mạnh dòng tiền</a><a href="#banggia">Bảng giá 3 sàn</a></div></div>
  <div class="gi"><a href="#g2">Công cụ</a><div class="gd"><a href="/dinh-gia-co-phieu.html">Định giá cổ phiếu</a><a href="/ma/">Tra cứu mã cổ phiếu (A–Z)</a><a href="#soichart">Soi chart cổ phiếu</a><a href="#sosanh">So sánh 2 mã</a></div></div>
  <div class="gi"><a href="#g3">Doanh nghiệp</a><div class="gd"><a href="#bctc">Đánh giá BCTC</a><a href="#tintuc">Tin tức &amp; vĩ mô</a><a href="#baocao">Báo cáo phân tích CTCK</a><a href="#lichsk">Lịch sự kiện</a></div></div>
@@ -908,6 +934,7 @@ header.top .gnav .gi>a.g-rep:hover{background:rgba(243,210,122,.14)!important;co
 <div class="toc" id="toc" role="dialog" aria-modal="true" aria-label="Mục lục" hidden>
  <div class="toc-in">
   <div class="toc-h"><b>Mục lục</b><button type="button" class="toc-x" id="tocx" aria-label="Đóng mục lục">✕</button></div>
+  <a class="toc-rep" href="bao-cao-2026.html#tichsan"><span>★ Bảng giá tích sản</span><small>Giá mua tích sản nhóm ngân hàng, cổ tức</small><i aria-hidden="true">→</i></a>
   <a class="toc-rep" href="bao-cao-2026.html"><span>Báo cáo lệnh &amp; Tích sản 2016–2026</span><small>Đầu cơ V306TMVN và tích sản ngân hàng: toàn bộ lệnh, kết quả từng năm so với VN-Index</small><i aria-hidden="true">→</i></a>
   <div class="toc-g" data-g="g1"><p><span>01</span>Hôm nay</p><a href="#top-10-co-phieu-khoe">Top 10 cổ phiếu khỏe<small>Bộ lọc độc quyền</small></a><a href="#thitruong">Thị trường hôm nay<small>Dẫn dắt, độ rộng, định giá, bản đồ nhiệt</small></a><a href="#dongtien">Sức mạnh dòng tiền<small>Tạo đáy, tạo đỉnh, lịch sử tín hiệu</small></a><a href="#banggia">Bảng giá 3 sàn<small>HOSE, HNX, UPCoM, VN30</small></a></div>
   <div class="toc-g" data-g="g2"><p><span>02</span>Công cụ phân tích</p><a href="#soichart">Soi chart cổ phiếu<small>Nến, MA, RSI, MACD</small></a><a href="#sosanh">So sánh 2 mã<small>Giá, định giá, ROE, cổ tức</small></a><a href="#vimo">Vĩ mô<small>Mức ảnh hưởng tới kinh tế Việt Nam</small></a><a href="#thegioi">Thị trường thế giới &amp; Fed<small>Lãi suất Fed, vàng, dầu, Mỹ, Nhật, Hàn</small></a></div>
@@ -921,16 +948,12 @@ header.top .gnav .gi>a.g-rep:hover{background:rgba(243,210,122,.14)!important;co
 <div class="tape" aria-label="Bảng điện Top 10"><span class="tlab">TOP 10</span><div class="tape-in" id="tape"><span>Đang tải bảng điện…</span></div></div>
 
 <main id="top">
-<div class="herobox"><div class="photo-credit">Ảnh: Ken Lund, CC BY-SA 2.0</div><div class="wrap hero">
+<div class="herobox hn-astro"><canvas id="hnAstro" aria-hidden="true"></canvas><div class="wrap hero">
 <div><p class="eyebrow">Tư vấn đầu tư chứng khoán 1:1</p><h1>Mỗi nhà đầu tư một <em>kế hoạch riêng</em>.</h1>
 <p>Chứng khoán Huy Nguyễn đồng hành 1:1 với từng nhà đầu tư: đọc báo cáo tài chính mã bạn đang cầm, dựng danh mục theo số vốn và mức chịu rủi ro, đặt sẵn điểm mua và điểm cắt lỗ trước mỗi lệnh.</p>
 <div class="hero-act"><a class="btn main" href="https://zalo.me/0365188286" target="_blank" rel="noopener">Đặt lịch tư vấn 1:1 qua Zalo <small>0365.188.286</small></a><a class="btn vps" style="margin-top:10px" href="/mo-tai-khoan-chung-khoan.html#chon">Mở tài khoản chứng khoán <small>Online 5 phút</small></a></div>
-<a class="hero-rep" href="bao-cao-2026.html"><b>Báo cáo lệnh 2016–2026</b><span>Đầu cơ V306TMVN và tích sản ngân hàng: toàn bộ lệnh, kết quả từng năm so với VN-Index</span><i aria-hidden="true">→</i></a><a class="hero-rep" href="mo-tai-khoan-chung-khoan.html"><b>Mở tài khoản chứng khoán online</b><span>Miễn phí, 5 phút bằng CCCD trên điện thoại, được Huy Nguyễn hướng dẫn 1:1</span><i aria-hidden="true">→</i></a><div class="soc" style="margin-top:18px"><a href="https://www.youtube.com/@chungkhoanhuynguyen" target="_blank" rel="noopener">YouTube @chungkhoanhuynguyen</a><a href="https://www.facebook.com/chungkhoanhuynguyenfa" target="_blank" rel="noopener">Facebook Nguyễn Huy Anh</a></div></div>
-<div class="cta" id="nhom"><p class="eyebrow">Cộng đồng miễn phí</p>
-<a class="btn" href="https://zalo.me/g/rkmzuy362" target="_blank" rel="noopener">Vào nhóm Zalo VIP1 <small>zalo.me/g/rkmzuy362</small></a>
-<a class="btn" href="https://zalo.me/g/jbnbiq994" target="_blank" rel="noopener">Vào nhóm Zalo VIP4 <small>zalo.me/g/jbnbiq994</small></a>
-<p class="note">Không mở được link? Nhắn Zalo <span id="zl">0365.188.286</span><button class="copy" id="cp" type="button">Sao chép</button></p>
-</div></div></div>
+<a class="hero-rep hn-ts" href="bao-cao-2026.html#tichsan"><b>★ Bảng giá tích sản</b><span>Nhóm ngân hàng cổ tức đều: giá mua tích sản, cổ tức, kết quả từng năm</span><i aria-hidden="true">→</i></a><a class="hero-rep" href="mo-tai-khoan-chung-khoan.html"><b>Mở tài khoản chứng khoán online</b><span>Miễn phí, 5 phút bằng CCCD trên điện thoại, được Huy Nguyễn hướng dẫn 1:1</span><i aria-hidden="true">→</i></a><div class="soc hn-soc" style="margin-top:18px"><a href="https://www.facebook.com/chungkhoanhuynguyenfa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4V10.5H7.8v3h2.6V21z"/></svg>Facebook Nguyễn Huy Anh</a><a href="https://www.youtube.com/@chungkhoanhuynguyen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z"/></svg>YouTube</a><a href="https://www.tiktok.com/@chungkhoanhuynguyen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M16.6 3c.4 2 1.7 3.4 3.9 3.6v3a7.3 7.3 0 0 1-3.8-1.2v6.3a5.7 5.7 0 1 1-5.7-5.7l.6.1v3.1a2.6 2.6 0 1 0 2 2.5V3z"/></svg>TikTok</a></div></div>
+<div aria-hidden="true"></div></div></div></div>
 
 <section id="timnhanh" class="tn"><div class="wrap">
 <h2 class="tn-h">Tìm nhanh trên trang</h2>
@@ -1416,7 +1439,7 @@ function d2(){const b=+buy.value,s=+sl.value;if(!(b>0)||!(s>0)){slr.innerHTML='<
 buy.addEventListener('input',d2);sl.addEventListener('input',d2);d2();
 const q=document.getElementById('q'),li=[...document.querySelectorAll('#eps li')];
 q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();li.forEach(l=>l.hidden=v&&!l.dataset.q.includes(v))});
-document.getElementById('cp').addEventListener('click',e=>{const t='0365188286';
+(document.getElementById('cp')||{addEventListener(){}}).addEventListener('click',e=>{const t='0365188286';
  (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>{e.target.textContent='Đã chép'}).catch(()=>{const r=document.createRange();r.selectNodeContents(document.getElementById('zl'));const s=getSelection();s.removeAllRanges();s.addRange(r)})});
 })();
 
@@ -2439,4 +2462,49 @@ $('bct').addEventListener('click',function(e){var b=e.target.closest('button');i
 $('bcq').addEventListener('input',function(){st.q=this.value.trim().toUpperCase();st.n=20;render()});
 $('bcm').addEventListener('click',function(){st.n+=20;render()});
 H.near(sec,load);})();
-</script></body></html>
+</script><script>
+/* Thiên cầu chiêm tinh – nền màn hình đầu (canvas, không thư viện) */
+(function(){var cv=document.getElementById("hnAstro");if(!cv||!cv.getContext)return;var g=cv.getContext("2d"),box=cv.parentNode,W=0,H=0,DPR=Math.min(1.5,window.devicePixelRatio||1),mx=0,my=0;
+var RM=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;var seed=11;function rnd(){seed=seed*16807%2147483647;return seed/2147483647}
+const CST=[];for(let k=0;k<7;k++){const cx0=rnd(),cy0=rnd()*.9,pts=[];for(let n=0;n<4+(k%3);n++)pts.push([cx0+(rnd()-.5)*.16,cy0+(rnd()-.5)*.16]);CST.push(pts)}
+const FAINT=Array.from({length:140},()=>[rnd(),rnd(),rnd()*6.28,rnd()]);
+const SYM=["VN-INDEX","DOW JONES","S&P 500","NASDAQ","NIKKEI 225","KOSPI","SHANGHAI","HANG SENG","TAIEX","SET","JCI","STI","NIFTY 50","ASX 200","FTSE 100","DAX","CAC 40","EURO STOXX 50"];
+function rot3(p,ax,ay,az){let[x,y,z]=p;let c=Math.cos(az),s=Math.sin(az);[x,y]=[x*c-y*s,x*s+y*c];c=Math.cos(ax);s=Math.sin(ax);[y,z]=[y*c-z*s,y*s+z*c];c=Math.cos(ay);s=Math.sin(ay);[x,z]=[x*c+z*s,-x*s+z*c];return[x,y,z]}
+function drawAstro(t){g.clearRect(0,0,W,H);const mob=W<900,cx=mob?W*.72:W*.74,cy=mob?H*.06+90:H*.48,R=mob?Math.min(W*.22,80):Math.min(W*.17,H*.3);
+  /* nền sao + chòm sao mảnh */
+  FAINT.forEach(([x,y,p,b])=>{const a=.15+.5*b*(.6+.4*Math.sin(t*.0008+p));g.fillStyle=`rgba(240,228,200,${a})`;g.fillRect(x*W,y*H,b>.85?1.8:1,b>.85?1.8:1)});
+  g.strokeStyle="rgba(214,190,140,.16)";g.lineWidth=.8;CST.forEach(pts=>{g.beginPath();pts.forEach((p,i)=>i?g.lineTo(p[0]*W,p[1]*H):g.moveTo(p[0]*W,p[1]*H));g.stroke();pts.forEach(p=>{g.fillStyle="rgba(255,236,190,.75)";g.beginPath();g.arc(p[0]*W,p[1]*H,1.6,0,7);g.fill()})});
+  /* quầng ấm */
+  let rg=g.createRadialGradient(cx,cy,0,cx,cy,R*1.9);rg.addColorStop(0,"rgba(214,170,90,.16)");rg.addColorStop(.5,"rgba(90,50,140,.18)");rg.addColorStop(1,"rgba(0,0,0,0)");g.fillStyle=rg;g.fillRect(0,0,W,H);
+  const P=(p)=>{const k=1/(2.6-p[2]*.5);return[cx+p[0]*R*k*2.2,cy+p[1]*R*k*2.2,p[2]]};
+  const spin=t*.00006+mx*.4,tilt=-1.05+my*.15;
+  /* vòng tròn lớn có vạch khắc */
+  function ring(rr,ax,ay,az,ticks,col,w,label){const pts=[];for(let i=0;i<=180;i++){const a=i/180*6.2832;pts.push(P(rot3([Math.cos(a)*rr,0,Math.sin(a)*rr],ax,ay,az)))}
+    for(let i=0;i<180;i++){const a=pts[i],b=pts[i+1],f=(a[2]+rr)/(2*rr);g.strokeStyle=`rgba(${col},${.18+f*.62})`;g.lineWidth=w*(.6+f*.6);g.beginPath();g.moveTo(a[0],a[1]);g.lineTo(b[0],b[1]);g.stroke()}
+    if(ticks)for(let i=0;i<ticks;i++){const a=i/ticks*6.2832,L=i%5?.035:.08,p1=P(rot3([Math.cos(a)*rr,0,Math.sin(a)*rr],ax,ay,az)),p2=P(rot3([Math.cos(a)*(rr+L),0,Math.sin(a)*(rr+L)],ax,ay,az));const f=(p1[2]+rr)/(2*rr);
+      g.strokeStyle=`rgba(${col},${.15+f*.6})`;g.lineWidth=1;g.beginPath();g.moveTo(p1[0],p1[1]);g.lineTo(p2[0],p2[1]);g.stroke()}
+    if(label){g.font=`500 ${Math.max(9,R*.07)}px "JetBrains Mono",monospace`;g.textAlign="center";g.textBaseline="middle";
+      label.forEach((s,i)=>{const a=i/label.length*6.2832,p=P(rot3([Math.cos(a)*(rr+.24),0,Math.sin(a)*(rr+.24)],ax,ay,az));const f=(p[2]+rr)/(2*rr);if(f<.35)return;g.fillStyle=`rgba(242,205,130,${(f-.35)*1.4})`;g.fillText(s,p[0],p[1])});g.textAlign="left"}}
+  /* quả cầu kinh vĩ tuyến bên trong */
+  g.lineWidth=.7;for(let la=-60;la<=60;la+=30){const y=Math.sin(la*Math.PI/180)*.62,r=Math.cos(la*Math.PI/180)*.62;g.beginPath();for(let i=0;i<=64;i++){const a=i/64*6.2832,p=P(rot3([Math.cos(a)*r,y,Math.sin(a)*r],tilt,spin*3,0));i?g.lineTo(p[0],p[1]):g.moveTo(p[0],p[1])}g.strokeStyle="rgba(180,150,230,.28)";g.stroke()}
+  for(let lo=0;lo<180;lo+=30){g.beginPath();for(let i=0;i<=64;i++){const a=i/64*6.2832,p=P(rot3(rot3([Math.cos(a)*.62,Math.sin(a)*.62,0],0,lo*Math.PI/180,0),tilt,spin*3,0));i?g.lineTo(p[0],p[1]):g.moveTo(p[0],p[1])}g.strokeStyle="rgba(180,150,230,.22)";g.stroke()}
+  /* các vòng thiên cầu */
+  ring(1.0,tilt,spin,0,72,"226,190,120",1.4,null);                 /* xích đạo, khắc độ */
+  ring(1.0,tilt+.41,spin*.6,.41,36,"200,160,240",1.1,null);        /* hoàng đạo nghiêng */
+  ring(1.0,tilt,spin,Math.PI/2,0,"226,190,120",1.1,null);           /* kinh tuyến */
+  ring(1.18,tilt,-spin*.5,0,120,"242,205,130",1.6,SYM);             /* vòng mã cổ phiếu ngoài cùng */
+  /* lõi vàng + trục */
+  const n1=P(rot3([0,-1.25,0],tilt,0,0)),n2=P(rot3([0,1.25,0],tilt,0,0));g.strokeStyle="rgba(242,205,130,.5)";g.lineWidth=1.2;g.beginPath();g.moveTo(n1[0],n1[1]);g.lineTo(n2[0],n2[1]);g.stroke();
+  g.globalCompositeOperation="lighter";const cg=g.createRadialGradient(cx,cy,0,cx,cy,R*.22);cg.addColorStop(0,"rgba(255,236,180,.95)");cg.addColorStop(.3,"rgba(242,193,78,.5)");cg.addColorStop(1,"rgba(242,193,78,0)");g.fillStyle=cg;g.beginPath();g.arc(cx,cy,R*.22,0,7);g.fill();
+  /* hành tinh nhỏ chạy trên hoàng đạo */
+  for(let j=0;j<3;j++){const a=t*.00012*(1+j*.4)+j*2.1,p=P(rot3([Math.cos(a),0,Math.sin(a)],tilt+.41,spin*.6,.41));const hg=g.createRadialGradient(p[0],p[1],0,p[0],p[1],9);hg.addColorStop(0,j?"rgba(210,180,255,.95)":"rgba(255,225,150,.95)");hg.addColorStop(1,"rgba(0,0,0,0)");g.fillStyle=hg;g.fillRect(p[0]-9,p[1]-9,18,18)}
+  g.globalCompositeOperation="source-over"}
+
+function fit(){W=box.clientWidth;H=box.clientHeight;cv.width=W*DPR;cv.height=H*DPR;g.setTransform(DPR,0,0,DPR,0,0);drawAstro(performance.now())}
+fit();addEventListener("resize",fit);var on=true,raf=0;function loop(t){drawAstro(t);if(on&&!RM)raf=requestAnimationFrame(loop)}
+if("IntersectionObserver" in window)new IntersectionObserver(function(e){on=e[0].isIntersecting;if(on&&!RM){cancelAnimationFrame(raf);raf=requestAnimationFrame(loop)}}).observe(box);
+if(!RM)raf=requestAnimationFrame(loop);
+if(!RM&&matchMedia("(pointer:fine)").matches)box.addEventListener("pointermove",function(e){var r=box.getBoundingClientRect();mx=(e.clientX-r.left)/r.width-.5;my=(e.clientY-r.top)/r.height-.5});
+})();
+</script>
+</body></html>
