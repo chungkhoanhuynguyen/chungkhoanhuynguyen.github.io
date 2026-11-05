@@ -1,10 +1,39 @@
-{"TN0611": {"kenh": "@chungkhoanhuynguyen", "seri": "Tin nóng", "ngay": "2026-11-06", "gio_goi_y": "11:30",
- "tieu_de": "NÓNG: NHNN bơm thanh khoản 182 ngày, gần 48.800 tỷ đồng – tiền đi đâu, ai hưởng lợi?",
- "mo_ta": "Ngân hàng Nhà nước mở đợt hoán đổi USD/VND kỳ hạn 182 ngày, quy mô tối đa 2 tỷ USD (≈48.800 tỷ đồng), ngày giá trị 9/11/2026. Kỳ hạn dài gấp hơn 26 lần đợt tháng 9. Video giải thích cơ chế hoán đổi, điều kiện tham gia, ý nghĩa với nhà đầu tư và 3 mốc cần theo dõi.\n\nNguồn: CafeF, 04/11/2026.\nCập nhật kết quả đấu thầu và dữ liệu cổ phiếu ngân hàng: https://chungkhoanhuynguyen.com\nNội dung chia sẻ kiến thức, không phải khuyến nghị mua bán chứng khoán.",
- "tags": ["ngân hàng nhà nước bơm tiền", "hoán đổi ngoại tệ", "thanh khoản ngân hàng", "tin nóng chứng khoán", "cổ phiếu ngân hàng", "lãi suất liên ngân hàng", "NHNN", "chứng khoán"],
- "chuong": ["Mở đầu", "Chương 1 – Tin chính trong 30 giây", "Chương 2 – Hoán đổi ngoại tệ là gì", "Chương 3 – Vì sao kỳ hạn dài mới là điểm nóng", "Chương 4 – Ai được tham gia", "Chương 5 – Bối cảnh: chuỗi động thái nới lỏng", "Chương 6 – Ý nghĩa với nhà đầu tư cổ phiếu", "Chương 7 – Ba mốc cần theo dõi"],
- "bia_hook": ["NHNN BƠM TIỀN", "182 NGÀY", "48.800 TỶ"], "badge": "GẤP 26 LẦN",
- "fb_post": "🔥 NHNN BƠM THANH KHOẢN 182 NGÀY – GẦN 48.800 TỶ ĐỒNG\n\nHôm nay 6/11, NHNN mở hoán đổi USD/VND kỳ hạn 182 ngày, tối đa 2 tỷ USD, tiền về hệ thống từ 9/11.\n📌 Các đợt trước chỉ 7–21 ngày, lần này dài gấp 26 lần\n📌 Ngân hàng bán USD nhận VND, 6 tháng sau mua lại (chênh 305 đ/USD)\n📌 Chỉ ngân hàng có nợ nước ngoài trung, dài hạn mới tham gia\n\nTiền đi đâu, cổ phiếu ngân hàng có hưởng lợi? Xem giải thích đầy đủ 👉 {LINK}\nDữ liệu & tư vấn: chungkhoanhuynguyen.com\n#chungkhoan #nganhang #NHNN",
- "short_caption": "NHNN bơm thanh khoản 182 ngày, gần 48.800 tỷ đồng. Đợt trước chỉ 7 ngày! Ai được dùng tiền này? #chungkhoan #nganhang #tinnong",
- "nguon": "https://cafef.vn/nong-ngan-hang-nha-nuoc-muon-bom-thanh-khoan-dai-han-cho-he-thong-ngan-hang-188261104132128425.chn",
- "luu_y": "Tin nóng: đăng ngay hôm nay 6/11 (ngoại lệ lịch hẹn 2–3 tuần). Không nêu kết quả đấu thầu vì chưa có."}}
+{
+ "TN0611": {
+  "kenh": "@chungkhoanhuynguyen",
+  "seri": "Tin nóng",
+  "ngay": "2026-11-06",
+  "gio_goi_y": "11:30",
+  "tieu_de": "NÓNG: NHNN bơm thanh khoản 182 ngày, gần 48.800 tỷ đồng – tiền đi đâu, ai hưởng lợi?",
+  "mo_ta": "Ngân hàng Nhà nước mở đợt hoán đổi USD/VND kỳ hạn 182 ngày, quy mô tối đa 2 tỷ USD (≈48.800 tỷ đồng), ngày giá trị 9/11/2026. Kỳ hạn dài gấp hơn 26 lần đợt tháng 9. Video giải thích cơ chế hoán đổi, điều kiện tham gia, ý nghĩa với nhà đầu tư và 3 mốc cần theo dõi.\n\nNguồn: CafeF, 04/11/2026.\nCập nhật kết quả đấu thầu và dữ liệu cổ phiếu ngân hàng: https://chungkhoanhuynguyen.com\nNội dung chia sẻ kiến thức, không phải khuyến nghị mua bán chứng khoán.",
+  "tags": [
+   "ngân hàng nhà nước bơm tiền",
+   "hoán đổi ngoại tệ",
+   "thanh khoản ngân hàng",
+   "tin nóng chứng khoán",
+   "cổ phiếu ngân hàng",
+   "lãi suất liên ngân hàng",
+   "NHNN",
+   "chứng khoán"
+  ],
+  "chuong": [
+   "Mở đầu",
+   "Chương 1 – Tin chính trong 30 giây",
+   "Chương 2 – Hoán đổi ngoại tệ là gì",
+   "Chương 3 – Vì sao kỳ hạn dài mới là điểm nóng",
+   "Chương 4 – Ai được tham gia",
+   "Chương 5 – Bối cảnh: chuỗi động thái nới lỏng",
+   "Chương 6 – Ý nghĩa với nhà đầu tư cổ phiếu",
+   "Chương 7 – Ba mốc cần theo dõi"
+  ],
+  "bia_hook": [
+   "NHNN BƠM TIỀN",
+   "182 NGÀY"
+  ],
+  "badge": "48.800 TỶ",
+  "fb_post": "🔥 NHNN BƠM THANH KHOẢN 182 NGÀY – GẦN 48.800 TỶ ĐỒNG\n\nHôm nay 6/11, NHNN mở hoán đổi USD/VND kỳ hạn 182 ngày, tối đa 2 tỷ USD, tiền về hệ thống từ 9/11.\n📌 Các đợt trước chỉ 7–21 ngày, lần này dài gấp 26 lần\n📌 Ngân hàng bán USD nhận VND, 6 tháng sau mua lại (chênh 305 đ/USD)\n📌 Chỉ ngân hàng có nợ nước ngoài trung, dài hạn mới tham gia\n\nTiền đi đâu, cổ phiếu ngân hàng có hưởng lợi? Xem giải thích đầy đủ 👉 {LINK}\nDữ liệu & tư vấn: chungkhoanhuynguyen.com\n#chungkhoan #nganhang #NHNN",
+  "short_caption": "NHNN bơm thanh khoản 182 ngày, gần 48.800 tỷ đồng. Đợt trước chỉ 7 ngày! Ai được dùng tiền này? #chungkhoan #nganhang #tinnong",
+  "nguon": "https://cafef.vn/nong-ngan-hang-nha-nuoc-muon-bom-thanh-khoan-dai-han-cho-he-thong-ngan-hang-188261104132128425.chn",
+  "luu_y": "Tin nóng: đăng ngay hôm nay 6/11 (ngoại lệ lịch hẹn 2–3 tuần). Không nêu kết quả đấu thầu vì chưa có."
+ }
+}
