@@ -141,8 +141,8 @@ def anh_canh(R, kho):
     return out
 
 KEO_WEB = {"chu_to": "VÀO WEB XEM SỐ LIỆU",
-    "loi": "Bảng giá tích sản, số liệu ngân hàng và báo cáo hơn 400 mã cập nhật mỗi phiên tại chungkhoanhuynguyen.com, anh chị vào xem miễn phí nhé.",
-    "loi_doc": "Bảng giá tích sản, số liệu ngân hàng và báo cáo hơn bốn trăm mã cập nhật mỗi phiên tại chứng khoán Huy Nguyễn chấm com, anh chị vào xem miễn phí nhé."}
+    "loi": "Em cập nhật bảng giá tích sản, số liệu ngân hàng và báo cáo hơn 400 mã trên chungkhoanhuynguyen.com mỗi phiên. Anh chị vào xem miễn phí nhé.",
+    "loi_doc": "Em cập nhật bảng giá tích sản, số liệu ngân hàng và báo cáo hơn bốn trăm mã trên chứng khoán Huy Nguyễn chấm com mỗi phiên. Anh chị vào xem miễn phí nhé."}
 def ket_cau_hoi(R):
     """Cảnh cuối là câu hỏi mở để khách bình luận, tranh luận."""
     w = R.get("keo_web", KEO_WEB)          # tin nóng vẫn phải kéo khách về web (anh Huy 6/11)
