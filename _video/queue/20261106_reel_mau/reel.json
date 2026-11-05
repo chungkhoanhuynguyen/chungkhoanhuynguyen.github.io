@@ -56,7 +56,12 @@
    "tin nóng chứng khoán",
    "chứng khoán"
   ],
-  "tu_so_tu": 152
+  "tu_so_tu": 152,
+  "cau_hoi": {
+   "chu_to": "TIỀN CÓ VÀO CHỨNG KHOÁN?",
+   "loi": "Theo bạn, 48.800 tỷ này sẽ chảy vào cổ phiếu ngân hàng, hay chỉ nằm yên trong hệ thống? Bình luận phe của bạn.",
+   "loi_doc": "Theo bạn, bốn mươi tám nghìn tám trăm tỷ này sẽ chảy vào cổ phiếu ngân hàng, hay chỉ nằm yên trong hệ thống? Bình luận phe của bạn."
+  }
  },
  {
   "key": "TN0611S2",
@@ -115,7 +120,12 @@
    "tin nóng chứng khoán",
    "chứng khoán"
   ],
-  "tu_so_tu": 137
+  "tu_so_tu": 137,
+  "cau_hoi": {
+   "chu_to": "BƠM TIỀN HAY CHO VAY?",
+   "loi": "Bạn coi đây là bơm tiền thật, hay chỉ là cho vay có hẹn trả? Bình luận một chữ: BƠM hoặc VAY.",
+   "loi_doc": "Bạn coi đây là bơm tiền thật, hay chỉ là cho vay có hẹn trả? Bình luận một chữ: bơm, hoặc vay."
+  }
  },
  {
   "key": "TN0611S3",
@@ -174,6 +184,11 @@
    "tin nóng chứng khoán",
    "chứng khoán"
   ],
-  "tu_so_tu": 135
+  "tu_so_tu": 135,
+  "cau_hoi": {
+   "chu_to": "MỐC NÀO ĐỔI CHIỀU?",
+   "loi": "Trong ba mốc này, bạn nghĩ mốc nào sẽ làm thị trường đổi chiều? Bình luận số 1, 2 hoặc 3.",
+   "loi_doc": "Trong ba mốc này, bạn nghĩ mốc nào sẽ làm thị trường đổi chiều? Bình luận số một, hai, hoặc ba."
+  }
  }
 ]

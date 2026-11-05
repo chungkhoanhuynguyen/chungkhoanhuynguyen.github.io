@@ -1,6 +1,7 @@
 # Khung REEL DỌC 1080x1920 (TikTok / FB Reel / YouTube Shorts) – thương hiệu tím-vàng Huy Nguyễn.
 # Học công thức "9 PHÚT KINH DOANH": tiêu đề vàng 2 tầng cố định trên cùng, ảnh thật ở giữa, chữ to theo lời,
-# cuối khung: miễn trừ chữ nhỏ (không đọc) + chungkhoanhuynguyen.com (anh Huy chốt 6/11: bỏ dải vàng).
+# cuối khung: chungkhoanhuynguyen.com (anh Huy chốt 6/11: bỏ dải vàng, bỏ câu miễn trừ).
+# Kết bài = CÂU HỎI MỞ gây tranh luận (R["cau_hoi"] = {chu_to, loi, loi_doc}) thay cảnh "xem video đầy đủ".
 # Đầu vào: _video/queue/<LÔ>/reel.json = [{key, hook:[dòng1, dòng2], canh:[{chu_to, loi, loi_doc, anh?}], nhan?}]
 # Dùng: python _video/reel.py <LÔ> <KEY>        (--khung: chỉ xuất 3 ảnh khung mẫu, không đọc giọng)
 import sys, os, re, json, subprocess, wave, time
@@ -67,15 +68,16 @@ def ve_anh(im, ph, t, T, y0, y1):
     for k in range(260): sd.line([0, k, bw, k], fill=(10, 4, 20, int(200 * k / 260)))
     im.paste(sh, (x0, y0 + bh - 260), Image.composite(sh, Image.new("RGBA", sh.size), m.crop((0, bh - 260, bw, bh))))
 
-def ve_chu_to(im, s, t, yb):
+def ve_chu_to(im, s, t, yb, hoi=0):
     """Chữ to của cảnh: dập vào cuối khung ảnh."""
     if not s: return
     s = s.replace("→", "»")
     d = ImageDraw.Draw(im, "RGBA"); a = dx2.ease(t / 0.35); sc = 1.25 - 0.25 * a
     f = fit(d, s, "Black", W - 170, int(84 * sc)); tw = d.textlength(s, font=f)
     x = W/2 - tw/2; y = yb - f.size - 46
-    d.rounded_rectangle([x - 28, y - 14, x + tw + 28, y + f.size + 22], 18, fill=(VANG[0], VANG[1], VANG[2], int(255 * a)))
-    d.text((x, y), s, font=f, fill=(24, 8, 44, int(255 * a)))
+    nen_, chu_ = ((214, 38, 52), (255, 255, 255)) if hoi else (VANG, (24, 8, 44))
+    d.rounded_rectangle([x - 28, y - 14, x + tw + 28, y + f.size + 22], 18, fill=nen_ + (int(255 * a),))
+    d.text((x, y), s, font=f, fill=chu_ + (int(255 * a),))
 
 def tach(txt, mx=30):
     w = txt.split(); out = []; cur = ""
@@ -98,16 +100,15 @@ def ve_phu_de(im, loi, t, T, y):
 MIEN_TRU = "Nội dung chia sẻ kiến thức, không phải khuyến nghị mua bán."
 _MT = re.compile(r"\s*[^.!?]*(chia sẻ kiến thức|không phải (là )?khuyến nghị)[^.!?]*[.!?]?", re.I)
 def bo_mien_tru(t):
-    """Câu miễn trừ không đọc, không chạy phụ đề – đã in chữ nhỏ cố định ở cuối khung."""
+    """Bỏ hẳn câu miễn trừ khỏi lời đọc, phụ đề, mô tả (tin nóng không khuyến nghị mua bán)."""
     return _MT.sub("", t or "").strip()
 
 def ve_cuoi(im, prog):
-    """Cuối khung: vạch tiến độ mảnh + chữ miễn trừ nhỏ + tên web."""
+    """Cuối khung: vạch tiến độ mảnh + tên web (anh Huy 6/11: bỏ câu miễn trừ)."""
     d = ImageDraw.Draw(im); y0 = H - 190
     d.rectangle([0, y0, W, y0 + 5], fill=(46, 20, 78)); d.rectangle([0, y0, int(W * prog), y0 + 5], fill=TIM_S)
-    fm = F("Medium", 24); d.text((W/2 - d.textlength(MIEN_TRU, font=fm)/2, y0 + 34), MIEN_TRU, font=fm, fill=(168, 150, 196))
     u1, u2 = "chungkhoanhuynguyen", ".com"; fu = F("Bold", 32); fd = F("SemiBold", 32)
-    wu = d.textlength(u1, font=fu) + d.textlength(u2, font=fd); x = W/2 - wu/2; yu = H - 96
+    wu = d.textlength(u1, font=fu) + d.textlength(u2, font=fd); x = W/2 - wu/2; yu = H - 130
     d.text((x, yu), u1, font=fu, fill=TRANG); d.text((x + d.textlength(u1, font=fu), yu), u2, font=fd, fill=VANG)
 
 def khung(R, i, t, T, ph, tong_t, tong_T):
@@ -115,7 +116,7 @@ def khung(R, i, t, T, ph, tong_t, tong_T):
     yb = ve_dau(im, R.get("hook"), R.get("nhan"))
     y0 = max(yb + 24, 430); y1 = 1360
     ve_anh(im, ph, t, T, y0, y1)
-    ve_chu_to(im, c.get("chu_to", ""), t, y1)
+    ve_chu_to(im, c.get("chu_to", ""), t, y1, c.get("hoi", 0))
     ve_phu_de(im, bo_mien_tru(c.get("loi", "")), t, T, 1420)
     ve_cuoi(im, tong_t / max(tong_T, 0.1))
     return im
@@ -130,10 +131,19 @@ def anh_canh(R, kho):
         out.append(ph)
     return out
 
+def ket_cau_hoi(R):
+    """Cảnh cuối là câu hỏi mở để khách bình luận, tranh luận."""
+    q = R.get("cau_hoi")
+    if not q: return
+    q = dict(q); q.setdefault("anh", R["canh"][-1].get("anh", "")); q["hoi"] = 1
+    if re.search(r"XEM VIDEO|VIDEO ĐẦY ĐỦ", R["canh"][-1].get("chu_to", ""), re.I): R["canh"][-1] = q
+    else: R["canh"].append(q)
+
 def main():
     lo, key = sys.argv[1], sys.argv[2]; QD = os.path.join(HERE, "queue", lo)
     OUT = os.path.join(HERE, "out"); os.makedirs(OUT, exist_ok=True); WORK = "/tmp/reel_" + key; os.makedirs(WORK, exist_ok=True)
     R = next(r for r in json.load(open(os.path.join(QD, "reel.json"), encoding="utf-8")) if r["key"] == key)
+    ket_cau_hoi(R)
     try:
         import anh; kho = anh.Kho(WORK + "/anh")
     except Exception: kho = None
@@ -178,7 +188,8 @@ def main():
     except Exception as e:
         print("nhac: bo qua", e, flush=True); os.replace(tmp, out)
     khung(R, 0, 1.5, 4, phs[0], 1.5, b[-1]).resize((540, 960), Image.LANCZOS).save(os.path.join(OUT, key + "_bia.png"))
-    cap = R.get("short_caption") or R.get("tieu_de", "")
+    cap = bo_mien_tru(R.get("short_caption") or R.get("tieu_de", ""))
+    if R.get("cau_hoi"): cap = "💬 " + R["cau_hoi"].get("loi", "") + "\n\n" + cap
     open(os.path.join(OUT, key + "_mo_ta.txt"), "w", encoding="utf-8").write(
         cap + "\n\n📌 Huy Nguyễn Chứng Khoán\n🌐 chungkhoanhuynguyen.com\n💬 Zalo tư vấn: 0365 188 286\n" +
         (" ".join("#" + t.lstrip("#") for t in R.get("tags", [])) + "\n"))
