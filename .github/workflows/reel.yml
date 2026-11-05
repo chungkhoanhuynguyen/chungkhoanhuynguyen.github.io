@@ -1,0 +1,68 @@
+name: Xuong reel doc (TikTok/Reel/Shorts)
+# Đẩy _video/queue/<LÔ>/reel.json -> đọc giọng, dựng khung dọc tím-vàng -> Release "reel-<LÔ>".
+on:
+  push:
+    paths: ["_video/queue/**/reel.json"]
+  workflow_dispatch:
+    inputs:
+      batch: {description: "Tên lô", required: true}
+permissions:
+  contents: write
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      batch: ${{ steps.p.outputs.batch }}
+      keys: ${{ steps.p.outputs.keys }}
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 2}
+      - id: p
+        run: |
+          python3 - <<'PY'
+          import os, json, subprocess
+          b = "${{ github.event.inputs.batch }}".strip()
+          if not b:
+              ch = subprocess.run(["git", "diff", "--name-only", "HEAD~1", "HEAD"], capture_output=True, text=True).stdout.split()
+              ds = [p.split("/")[2] for p in ch if p.startswith("_video/queue/") and p.endswith("reel.json")]
+              b = ds[-1] if ds else ""
+          ks = [r["key"] for r in json.load(open(f"_video/queue/{b}/reel.json", encoding="utf-8"))] if b else []
+          open(os.environ["GITHUB_OUTPUT"], "a").write(f"batch={b}\nkeys={json.dumps(ks)}\n"); print(b, ks)
+          PY
+  render:
+    needs: plan
+    if: needs.plan.outputs.batch != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        key: ${{ fromJson(needs.plan.outputs.keys) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/huggingface
+            ~/.cache/pip
+          key: vieneu-v1
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+      - run: pip install -q vieneu "onnxruntime==1.22.1" numpy pillow opencv-python-headless
+      - run: python _video/reel.py "${{ needs.plan.outputs.batch }}" "${{ matrix.key }}"
+      - uses: actions/upload-artifact@v4
+        with: {name: "reel-${{ matrix.key }}", path: _video/out/, retention-days: 7}
+  publish:
+    needs: [plan, render]
+    if: always() && needs.plan.outputs.batch != ''
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with: {path: art, pattern: reel-*, merge-multiple: true}
+      - env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          B="${{ needs.plan.outputs.batch }}"
+          gh release delete "reel-$B" -y -R ${{ github.repository }} 2>/dev/null || true
+          gh release create "reel-$B" -R ${{ github.repository }} -t "Reel $B" -n "Reel dọc lô $B" art/*.mp4 art/*.png art/*.txt || true

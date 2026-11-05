@@ -1,0 +1,179 @@
+[
+ {
+  "key": "TN0611S1",
+  "dai": "~50s",
+  "tieu_de": "NHNN: đợt trước 7 ngày, lần này 182 ngày – gấp hơn 26 lần",
+  "hook": [
+   "ĐỢT TRƯỚC 7 NGÀY",
+   "LẦN NÀY 182 NGÀY"
+  ],
+  "canh": [
+   {
+    "chu_to": "7 → 182 NGÀY",
+    "loi": "Đợt hoán đổi trước đó của Ngân hàng Nhà nước chỉ kéo dài 7 ngày. Lần này là 182 ngày.",
+    "loi_doc": "Đợt hoán đổi trước đó của Ngân hàng Nhà nước chỉ kéo dài bảy ngày. Lần này là một trăm tám mươi hai ngày.",
+    "anh": "State Bank of Vietnam"
+   },
+   {
+    "chu_to": "GẤP HƠN 26 LẦN",
+    "loi": "Các đợt trước trong năm là 21 ngày, 14 ngày rồi 7 ngày. Kỳ hạn lần này dài gấp hơn 26 lần đợt gần nhất.",
+    "loi_doc": "Các đợt trước trong năm là hai mươi mốt ngày, mười bốn ngày rồi bảy ngày. Kỳ hạn lần này dài gấp hơn hai mươi sáu lần đợt gần nhất.",
+    "anh": "US dollar banknotes"
+   },
+   {
+    "chu_to": "TỐI ĐA 2 TỶ USD",
+    "loi": "Hạn mức tối đa 2 tỷ đô la, tương đương khoảng 48.800 tỷ đồng, ngày giá trị 9 tháng 11.",
+    "loi_doc": "Hạn mức tối đa hai tỷ đô la, tương đương khoảng bốn mươi tám nghìn tám trăm tỷ đồng, ngày giá trị chín tháng mười một.",
+    "anh": "Vietnamese dong banknotes"
+   },
+   {
+    "chu_to": "LÀ TRẦN, KHÔNG CHẮC",
+    "loi": "Nhưng hai tỷ đô la là mức trần. Quy mô thật phụ thuộc kết quả đấu thầu ngày 6 tháng 11.",
+    "loi_doc": "Nhưng hai tỷ đô la là mức trần. Quy mô thật phụ thuộc kết quả đấu thầu ngày sáu tháng mười một.",
+    "anh": "bank Vietnam"
+   },
+   {
+    "chu_to": "SÁU THÁNG ĐỦ LẬP KẾ HOẠCH",
+    "loi": "Vay một tuần chỉ đủ xoay vòng. Vay sáu tháng ngân hàng mới tính được chuyện cân đối vốn cuối năm.",
+    "loi_doc": "Vay một tuần chỉ đủ xoay vòng. Vay sáu tháng ngân hàng mới tính được chuyện cân đối vốn cuối năm.",
+    "anh": "Hanoi skyline"
+   },
+   {
+    "chu_to": "XEM VIDEO ĐẦY ĐỦ",
+    "loi": "Giải thích đầy đủ cơ chế và ba mốc theo dõi có trong video dài trên kênh. Nội dung chia sẻ kiến thức, không phải khuyến nghị mua bán.",
+    "loi_doc": "Giải thích đầy đủ cơ chế và ba mốc theo dõi có trong video dài trên kênh. Nội dung chia sẻ kiến thức, không phải khuyến nghị mua bán.",
+    "anh": "Ho Chi Minh City skyline"
+   }
+  ],
+  "short_caption": "Đợt trước 7 ngày, lần này 182 ngày: NHNN mở hoán đổi USD/VND tối đa 2 tỷ USD. Quy mô thật phụ thuộc kết quả đấu thầu 6/11. Giải thích đầy đủ trong video dài trên kênh. Chia sẻ kiến thức, không phải khuyến nghị.",
+  "nguon": "CafeF 04/11/2026 – https://cafef.vn/nong-ngan-hang-nha-nuoc-muon-bom-thanh-khoan-dai-han-cho-he-thong-ngan-hang-188261104132128425.chn",
+  "khung": "dọc 1080x1920, giọng Hải Đăng tempo 1.0, ảnh thật + nến VN-Index tuần, không mặt anh Huy",
+  "lien_ket": "TN0611 (video dài kênh chính, QL1 đã đẩy xưởng)",
+  "tags": [
+   "NHNN",
+   "hoán đổi ngoại tệ",
+   "thanh khoản ngân hàng",
+   "tin nóng chứng khoán",
+   "chứng khoán"
+  ],
+  "tu_so_tu": 152
+ },
+ {
+  "key": "TN0611S2",
+  "dai": "~55s",
+  "tieu_de": "Hoán đổi USD/VND giải thích bằng ví dụ cầm đồ có hẹn chuộc",
+  "hook": [
+   "HOÁN ĐỔI = CẦM ĐỒ",
+   "CÓ HẸN CHUỘC?"
+  ],
+  "canh": [
+   {
+    "chu_to": "HOÁN ĐỔI LÀ GÌ?",
+    "loi": "Hoán đổi ngoại tệ giống như cầm đồ có hẹn chuộc.",
+    "loi_doc": "Hoán đổi ngoại tệ giống như cầm đồ có hẹn chuộc.",
+    "anh": "State Bank of Vietnam"
+   },
+   {
+    "chu_to": "ĐƯA USD, NHẬN ĐỒNG",
+    "loi": "Ngân hàng thương mại đưa đô la cho Ngân hàng Nhà nước và nhận về tiền đồng.",
+    "loi_doc": "Ngân hàng thương mại đưa đô la cho Ngân hàng Nhà nước và nhận về tiền đồng.",
+    "anh": "US dollar banknotes"
+   },
+   {
+    "chu_to": "SÁU THÁNG SAU MUA LẠI",
+    "loi": "Cùng lúc, hai bên cam kết sáu tháng sau ngân hàng mua lại đúng số đô la đó.",
+    "loi_doc": "Cùng lúc, hai bên cam kết sáu tháng sau ngân hàng mua lại đúng số đô la đó.",
+    "anh": "Vietnamese dong banknotes"
+   },
+   {
+    "chu_to": "24.399 → 24.704",
+    "loi": "Giá giao ngay 24.399 đồng một đô la, giá kỳ hạn 24.704 đồng. Chênh 305 đồng chính là chi phí dùng tiền đồng trong sáu tháng.",
+    "loi_doc": "Giá giao ngay hai mươi bốn nghìn ba trăm chín mươi chín đồng một đô la, giá kỳ hạn hai mươi bốn nghìn bảy trăm linh bốn đồng. Chênh ba trăm linh năm đồng chính là chi phí dùng tiền đồng trong sáu tháng.",
+    "anh": "bank Vietnam"
+   },
+   {
+    "chu_to": "TIỀN KHÔNG CHO KHÔNG",
+    "loi": "Nghĩa là đây là vốn có kỳ hạn, có giá và có ngày trả, không phải tiền tặng.",
+    "loi_doc": "Nghĩa là đây là vốn có kỳ hạn, có giá và có ngày trả, không phải tiền tặng.",
+    "anh": "Hanoi skyline"
+   },
+   {
+    "chu_to": "XEM VIDEO ĐẦY ĐỦ",
+    "loi": "Video dài trên kênh nói rõ ai được tham gia và ý nghĩa với nhà đầu tư. Nội dung chia sẻ kiến thức, không phải khuyến nghị mua bán.",
+    "loi_doc": "Video dài trên kênh nói rõ ai được tham gia và ý nghĩa với nhà đầu tư. Nội dung chia sẻ kiến thức, không phải khuyến nghị mua bán.",
+    "anh": "Ho Chi Minh City skyline"
+   }
+  ],
+  "short_caption": "Hoán đổi USD/VND = cầm đồ có hẹn chuộc: đưa USD nhận VND, 182 ngày sau mua lại với giá kỳ hạn 24.704 (giao ngay 24.399). Giải thích đầy đủ trong video dài. Chia sẻ kiến thức, không phải khuyến nghị.",
+  "nguon": "CafeF 04/11/2026 – https://cafef.vn/nong-ngan-hang-nha-nuoc-muon-bom-thanh-khoan-dai-han-cho-he-thong-ngan-hang-188261104132128425.chn",
+  "khung": "dọc 1080x1920, giọng Hải Đăng tempo 1.0, ảnh thật + nến VN-Index tuần, không mặt anh Huy",
+  "lien_ket": "TN0611 (video dài kênh chính, QL1 đã đẩy xưởng)",
+  "tags": [
+   "NHNN",
+   "hoán đổi ngoại tệ",
+   "thanh khoản ngân hàng",
+   "tin nóng chứng khoán",
+   "chứng khoán"
+  ],
+  "tu_so_tu": 137
+ },
+ {
+  "key": "TN0611S3",
+  "dai": "~50s",
+  "tieu_de": "3 mốc theo dõi sau tin NHNN hoán đổi 182 ngày",
+  "hook": [
+   "3 MỐC THEO DÕI",
+   "SAU TIN 182 NGÀY"
+  ],
+  "canh": [
+   {
+    "chu_to": "3 MỐC THEO DÕI",
+    "loi": "Sau tin Ngân hàng Nhà nước hoán đổi kỳ hạn 182 ngày, có ba mốc đáng theo dõi.",
+    "loi_doc": "Sau tin Ngân hàng Nhà nước hoán đổi kỳ hạn một trăm tám mươi hai ngày, có ba mốc đáng theo dõi.",
+    "anh": "State Bank of Vietnam"
+   },
+   {
+    "chu_to": "MỐC 1: ĐẤU THẦU 6/11",
+    "loi": "Một, kết quả đấu thầu ngày 6 tháng 11: bao nhiêu ngân hàng tham gia và dùng bao nhiêu trong hạn mức hai tỷ đô la.",
+    "loi_doc": "Một, kết quả đấu thầu ngày sáu tháng mười một: bao nhiêu ngân hàng tham gia và dùng bao nhiêu trong hạn mức hai tỷ đô la.",
+    "anh": "US dollar banknotes"
+   },
+   {
+    "chu_to": "MỐC 2: TỪ 9/11",
+    "loi": "Hai, từ ngày 9 tháng 11, xem lãi suất liên ngân hàng có giảm hay không.",
+    "loi_doc": "Hai, từ ngày chín tháng mười một, xem lãi suất liên ngân hàng có giảm hay không.",
+    "anh": "Vietnamese dong banknotes"
+   },
+   {
+    "chu_to": "MỐC 3: THÁNG 5/2027",
+    "loi": "Ba, khoảng tháng 5 năm 2027, khi hợp đồng đáo hạn và tiền được thu về.",
+    "loi_doc": "Ba, khoảng tháng năm năm hai nghìn không trăm hai mươi bảy, khi hợp đồng đáo hạn và tiền được thu về.",
+    "anh": "bank Vietnam"
+   },
+   {
+    "chu_to": "ĐỪNG MUA VÌ MỘT DÒNG TÍT",
+    "loi": "Tin đã công bố từ ngày 4 tháng 11, giá có thể đã phản ánh một phần. Đừng quyết định chỉ vì một dòng tít.",
+    "loi_doc": "Tin đã công bố từ ngày bốn tháng mười một, giá có thể đã phản ánh một phần. Đừng quyết định chỉ vì một dòng tít.",
+    "anh": "Hanoi skyline"
+   },
+   {
+    "chu_to": "XEM VIDEO ĐẦY ĐỦ",
+    "loi": "Phân tích đầy đủ trong video dài trên kênh. Nội dung chia sẻ kiến thức, không phải khuyến nghị mua bán.",
+    "loi_doc": "Phân tích đầy đủ trong video dài trên kênh. Nội dung chia sẻ kiến thức, không phải khuyến nghị mua bán.",
+    "anh": "Ho Chi Minh City skyline"
+   }
+  ],
+  "short_caption": "3 mốc theo dõi sau tin NHNN hoán đổi 182 ngày: kết quả đấu thầu 6/11, lãi suất liên ngân hàng từ 9/11, đáo hạn khoảng tháng 5/2027. Video đầy đủ trên kênh. Chia sẻ kiến thức, không phải khuyến nghị.",
+  "nguon": "CafeF 04/11/2026 – https://cafef.vn/nong-ngan-hang-nha-nuoc-muon-bom-thanh-khoan-dai-han-cho-he-thong-ngan-hang-188261104132128425.chn",
+  "khung": "dọc 1080x1920, giọng Hải Đăng tempo 1.0, ảnh thật + nến VN-Index tuần, không mặt anh Huy",
+  "lien_ket": "TN0611 (video dài kênh chính, QL1 đã đẩy xưởng)",
+  "tags": [
+   "NHNN",
+   "hoán đổi ngoại tệ",
+   "thanh khoản ngân hàng",
+   "tin nóng chứng khoán",
+   "chứng khoán"
+  ],
+  "tu_so_tu": 135
+ }
+]
