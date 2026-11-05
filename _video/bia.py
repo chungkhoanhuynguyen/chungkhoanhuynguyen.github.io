@@ -34,7 +34,7 @@ def _fit(d, s, mw, st, mn=64):
 
 def _size(d, L, mw):
     st = 156 if len(L) <= 2 else 128
-    while st > 60 and (max(d.textlength(l, font=dx2.F("Black", st)) for l in L) > mw or len(L)*st*1.08 > 480): st -= 4
+    while st > 60 and (max(d.textlength(l, font=dx2.F("Black", st)) for l in L) > mw or len(L)*st*1.08 > 400): st -= 4
     return st
 
 def _wrap(d, L, mw):
@@ -51,6 +51,41 @@ def _wrap(d, L, mw):
             if st > best[1]: best = (c, st)
     return best
 
+def _nen_chart(im, seed, up):
+    # biểu đồ nến cách điệu phát sáng phía sau (luôn có, kể cả khi thiếu ảnh)
+    import random
+    r = random.Random(seed); lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); dd = ImageDraw.Draw(lay)
+    for gx in range(0, W, 80): dd.line([(gx, 0), (gx, H)], fill=(255, 255, 255, 10))
+    for gy in range(0, H, 80): dd.line([(0, gy), (W, gy)], fill=(255, 255, 255, 10))
+    n = 34; x0 = 420; step = (W - x0 - 20) / n; v = 0.55; pts = []
+    for i in range(n):
+        drift = (-0.012 if up else 0.012); o = v; c = min(0.85, max(0.15, v + drift + r.uniform(-0.05, 0.05)))
+        hi = max(o, c) + r.uniform(0, 0.03); lo = min(o, c) - r.uniform(0, 0.03)
+        X = x0 + i*step; Y = lambda q: int(H*q)
+        col = (46, 204, 113, 120) if c < o else (231, 76, 60, 120)
+        dd.line([(X+step*0.35, Y(hi)), (X+step*0.35, Y(lo))], fill=col, width=2)
+        dd.rectangle([X+step*0.1, Y(min(o, c)), X+step*0.6, Y(max(o, c))+2], fill=col)
+        pts.append((X+step*0.35, Y(c))); v = c
+    glow = Image.new("RGBA", (W, H), (0, 0, 0, 0)); gd = ImageDraw.Draw(glow)
+    gd.line(pts, fill=(255, 204, 0, 200), width=8); glow = glow.filter(ImageFilter.GaussianBlur(10))
+    lay.alpha_composite(glow); ImageDraw.Draw(lay).line(pts, fill=(255, 220, 90, 230), width=3)
+    im.paste(lay, (0, 0), lay)
+
+def _sticker(pt, w=7):
+    # viền trắng quanh chân dung (kiểu sticker)
+    a = pt.getchannel("A").point(lambda v: 255 if v > 40 else 0)
+    big = a.filter(ImageFilter.MaxFilter(w*2+1))
+    ImageDraw.Draw(big).rectangle([0, 0, w*2, pt.height], fill=0); ImageDraw.Draw(big).rectangle([0, pt.height-w*2, pt.width, pt.height], fill=0); ImageDraw.Draw(big).rectangle([pt.width-w*2, 0, pt.width, pt.height], fill=0)
+    big = Image.composite(big, a, big)
+    st = Image.new("RGBA", pt.size, (255, 255, 255, 0)); st.putalpha(big)
+    st.alpha_composite(pt); return st
+
+def _arrow(d, x, y, up, s=1.0):
+    col = (46, 204, 113) if up else (231, 76, 60)
+    if up: pts = [(x, y+60*s), (x+40*s, y), (x+80*s, y+60*s), (x+55*s, y+60*s), (x+55*s, y+110*s), (x+25*s, y+110*s), (x+25*s, y+60*s)]
+    else: pts = [(x, y+50*s), (x+40*s, y+110*s), (x+80*s, y+50*s), (x+55*s, y+50*s), (x+55*s, y), (x+25*s, y), (x+25*s, y+50*s)]
+    d.polygon(pts, fill=col, outline=(0, 0, 0))
+
 def make(sc, meta=None, ph=None, out=None):
     meta = meta or {}
     im = Image.new("RGB", (W, H), TIM0); d = ImageDraw.Draw(im)
@@ -63,14 +98,17 @@ def make(sc, meta=None, ph=None, out=None):
         m = Image.new("L", (pw, H))
         for x in range(pw): ImageDraw.Draw(m).line([(x, 0), (x, H)], fill=int(255*min(1, x/260)))
         im.paste(p, (W-pw, 0), m); d = ImageDraw.Draw(im)
+    _txt = " ".join(_lines(sc, meta)) + " " + str(meta.get("badge") or sc.get("label") or "")
+    _up = not re.search(r"(^|\s)[-−]\d|GIẢM|SẬP|LỖ|MẤT|BONG BÓNG|CÒN \d|SAI|BẪY|CHÁY", _txt.upper())
+    _nen_chart(im, hash(_txt) & 0xffff, _up); d = ImageDraw.Draw(im)
     d.rectangle([0, 0, 14, H], fill=VANG)
     CK = os.path.join(HERE, "engine", "chu_kenh.png")
     if os.path.exists(CK):  # chân dung tách nền, nhỏ vừa ở góc phải dưới (anh Huy 5/11 23:41), nền là ảnh minh hoạ
-        pt = Image.open(CK).convert("RGBA"); ph_ = 470; pt = pt.resize((int(pt.width*ph_/pt.height), ph_), Image.LANCZOS)
+        pt = Image.open(CK).convert("RGBA"); ph_ = 540; pt = pt.resize((int(pt.width*ph_/pt.height), ph_), Image.LANCZOS)
         a_ = pt.getchannel("A"); rm = Image.new("L", pt.size, 255)
-        for x in range(60): ImageDraw.Draw(rm).line([(x, 0), (x, pt.height)], fill=int(255*x/60))
-        from PIL import ImageChops; pt.putalpha(ImageChops.multiply(a_, rm))
-        px_ = W - pt.width + 20
+        for x in range(70): ImageDraw.Draw(rm).line([(x, 0), (x, pt.height)], fill=int(255*x/70))
+        from PIL import ImageChops; pt = _sticker(pt); pt.putalpha(ImageChops.multiply(pt.getchannel("A"), rm))
+        px_ = W - pt.width + 6
         gl = Image.new("L", (W, H)); ImageDraw.Draw(gl).ellipse([px_+30, H-ph_-20, px_+pt.width, H+150], fill=170)
         gl = gl.filter(ImageFilter.GaussianBlur(50)); im.paste(Image.new("RGB", (W, H), (20, 10, 34)), (0, 0), gl)
         im.paste(pt, (px_, H - ph_), pt); d = ImageDraw.Draw(im)
@@ -86,15 +124,20 @@ def make(sc, meta=None, ph=None, out=None):
         MW = 740
     L = _lines(sc, meta); x0, mw = 60, MW
     L, st = _wrap(d, L, mw); fs = [dx2.F("Black", st) for _ in L]
-    hh = sum(int(f.size*1.08) for f in fs); y = max(70, (H - hh)//2 - 40)
+    hh = sum(int(f.size*1.08) for f in fs) + (60 if len(fs) >= 2 else 0); y = max(96, (H - hh)//2 - 70)
     cols = [TRANG, VANG, TRANG]
     for i, (l, f) in enumerate(zip(L, fs)):
+        if i == 1 and len(L) >= 2:  # dòng nhấn: chữ đen trên dải vàng
+            y += 34; tw = d.textlength(l, font=f); bb = d.textbbox((x0, y), l, font=f)
+            d.rounded_rectangle([x0-14, bb[1]-12, x0+tw+14, bb[3]+14], 10, fill=VANG)
+            d.text((x0, y), l, font=f, fill=(15, 10, 25)); y += int(f.size*1.08) + 22; continue
         for dx, dy in ((5, 6), (3, 3)): d.text((x0+dx, y+dy), l, font=f, fill=(0, 0, 0))  # bóng chữ
-        d.text((x0, y), l, font=f, fill=cols[i % 3]); y += int(f.size*1.08)
+        d.text((x0, y), l, font=f, fill=TRANG); y += int(f.size*1.08)
     b = _badge(sc, meta, L)
     if b:
         fb = dx2.F("Black", 54); tw = d.textlength(b, font=fb); y += 18
         d.rounded_rectangle([x0, y, x0+tw+48, y+82], 14, fill=DO); d.text((x0+24, y+8), b, font=fb, fill=TRANG)
+        _arrow(d, x0+tw+66, y+2, not b.strip().startswith(("-", "−")), 0.72)
     if out: im.save(out)
     return im
 
