@@ -21708,5 +21708,627 @@
    "dinh-gia-co-phieu-ngan-hang-pb-roe",
    "roe-eps-la-gi"
   ]
+ },
+ {
+  "slug": "chi-so-thanh-toan-hien-hanh-la-gi",
+  "kw": "chỉ số thanh toán hiện hành là gì",
+  "title": "Chỉ số thanh toán hiện hành là gì? Trả nổi nợ ngắn hạn không",
+  "desc": "Chỉ số thanh toán hiện hành và thanh toán nhanh: công thức, ví dụ tính, ngưỡng tham khảo, vì sao khác nhau theo ngành và các bẫy khi đọc.",
+  "body": [
+   [
+    "p",
+    "Chỉ số thanh toán hiện hành (current ratio) đo khả năng doanh nghiệp trả các khoản nợ ngắn hạn bằng tài sản ngắn hạn. Đây là một trong những phép kiểm tra sức khỏe tài chính đầu tiên."
+   ],
+   [
+    "h2",
+    "Công thức"
+   ],
+   [
+    "p",
+    "Thanh toán hiện hành = Tài sản ngắn hạn ÷ Nợ ngắn hạn. Ví dụ tài sản ngắn hạn 1.500 tỷ, nợ ngắn hạn 1.000 tỷ thì chỉ số là 1,5 lần: mỗi đồng nợ ngắn hạn có 1,5 đồng tài sản ngắn hạn đối ứng."
+   ],
+   [
+    "h2",
+    "Thanh toán nhanh"
+   ],
+   [
+    "p",
+    "Thanh toán nhanh = (Tài sản ngắn hạn − Hàng tồn kho) ÷ Nợ ngắn hạn. Bỏ hàng tồn kho vì không chắc bán được nhanh và đủ giá. Với ví dụ trên nếu tồn kho là 600 tỷ thì chỉ số nhanh là (1.500 − 600) ÷ 1.000 = 0,9 lần."
+   ],
+   [
+    "h2",
+    "Ngưỡng tham khảo"
+   ],
+   [
+    "ul",
+    [
+     "Trên 1: tài sản ngắn hạn đủ bao phủ nợ ngắn hạn, mức thường được xem là an toàn tương đối.",
+     "Dưới 1: có thể áp lực thanh khoản, cần xem dòng tiền và khả năng vay mới.",
+     "Quá cao (ví dụ trên 3): có thể tiền và hàng nằm yên, vốn dùng chưa hiệu quả."
+    ]
+   ],
+   [
+    "p",
+    "Đây chỉ là mốc tham khảo. Mỗi ngành khác nhau: bán lẻ có thể chỉ số thấp vì nhận tiền ngay, xây dựng thường cao vì giữ nhiều hàng và phải thu."
+   ],
+   [
+    "h2",
+    "Những bẫy khi đọc"
+   ],
+   [
+    "ul",
+    [
+     "Tài sản ngắn hạn gồm cả khoản phải thu và tồn kho có thể khó thu hồi hoặc khó bán.",
+     "Doanh nghiệp bất động sản thường ghi hàng tồn kho (dự án dở dang) rất lớn nên chỉ số nhanh thấp là bình thường.",
+     "Nên so với chính doanh nghiệp qua các quý, không chỉ so với người khác."
+    ]
+   ],
+   [
+    "h2",
+    "Dùng cùng chỉ số nào"
+   ],
+   [
+    "p",
+    "Kết hợp với <a href=\"/f0/dong-tien-kinh-doanh-la-gi.html\">dòng tiền kinh doanh</a>, nợ vay trên vốn chủ và <a href=\"/f0/chu-ky-tien-mat-la-gi.html\">chu kỳ tiền mặt</a> để có bức tranh đầy đủ. Ngân hàng không dùng chỉ số này vì cấu trúc bảng cân đối khác."
+   ],
+   [
+    "p",
+    "Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ],
+   [
+    "h2",
+    "Ví dụ so sánh hai doanh nghiệp"
+   ],
+   [
+    "p",
+    "Doanh nghiệp A có chỉ số hiện hành 2,0 nhưng 70% tài sản ngắn hạn là hàng tồn kho bán chậm; doanh nghiệp B có chỉ số 1,2 nhưng phần lớn là tiền và phải thu ngắn hạn từ khách uy tín. Nhìn chỉ một con số, A có vẻ an toàn hơn; nhìn thành phần, B có thể linh hoạt hơn. Vì vậy luôn mở bảng cân đối để xem tài sản ngắn hạn gồm những gì. Xem thêm <a href=\"/f0/tai-san-ngan-han-la-gi.html\">tài sản ngắn hạn và dài hạn</a>."
+   ]
+  ],
+  "faq": [
+   [
+    "Chỉ số thanh toán dưới 1 có nguy hiểm không?",
+    "Không nhất thiết, tùy ngành và dòng tiền; nhưng là tín hiệu cần đọc thêm."
+   ],
+   [
+    "Lấy số liệu ở đâu?",
+    "Bảng cân đối kế toán hợp nhất: dòng tổng tài sản ngắn hạn và tổng nợ ngắn hạn."
+   ],
+   [
+    "Thanh toán nhanh khác hiện hành thế nào?",
+    "Thanh toán nhanh loại hàng tồn kho khỏi tử số nên thận trọng hơn."
+   ]
+  ],
+  "rel": [
+   "khoan-phai-thu-khach-hang-la-gi",
+   "chu-ky-tien-mat-la-gi",
+   "von-chu-so-huu-la-gi",
+   "von-luu-dong-la-gi"
+  ],
+  "add": [],
+  "grp": 3
+ },
+ {
+  "slug": "tai-san-ngan-han-la-gi",
+  "kw": "tài sản ngắn hạn là gì",
+  "title": "Tài sản ngắn hạn và dài hạn là gì? Cách đọc bảng cân đối",
+  "desc": "Tài sản ngắn hạn gồm tiền, phải thu, hàng tồn kho; tài sản dài hạn gồm tài sản cố định, đầu tư dài hạn. Ý nghĩa và cách đọc trên bảng cân đối kế toán.",
+  "body": [
+   [
+    "p",
+    "Bảng cân đối kế toán chia tài sản thành hai nhóm theo thời gian chuyển hóa thành tiền: ngắn hạn (thường trong 12 tháng) và dài hạn (trên 12 tháng)."
+   ],
+   [
+    "h2",
+    "Tài sản ngắn hạn gồm gì"
+   ],
+   [
+    "ul",
+    [
+     "Tiền và tương đương tiền: tiền mặt, tiền gửi không kỳ hạn, tiền gửi ngắn hạn.",
+     "Đầu tư tài chính ngắn hạn: chứng khoán kinh doanh, tiền gửi có kỳ hạn dưới 12 tháng.",
+     "Các khoản phải thu ngắn hạn: tiền khách hàng nợ, trả trước cho nhà cung cấp.",
+     "Hàng tồn kho: nguyên liệu, thành phẩm, dự án dở dang."
+    ]
+   ],
+   [
+    "h2",
+    "Tài sản dài hạn gồm gì"
+   ],
+   [
+    "ul",
+    [
+     "Tài sản cố định: máy móc, nhà xưởng, quyền sử dụng đất.",
+     "Bất động sản đầu tư, đầu tư dài hạn vào công ty con, liên kết.",
+     "Tài sản dở dang dài hạn: công trình đang xây.",
+     "Lợi thế thương mại và tài sản vô hình."
+    ]
+   ],
+   [
+    "h2",
+    "Vì sao cần phân biệt"
+   ],
+   [
+    "p",
+    "Doanh nghiệp cần tài sản ngắn hạn đủ để trả nợ ngắn hạn, còn tài sản dài hạn tạo năng lực sản xuất bền vững. Cơ cấu tài sản cho biết mô hình kinh doanh: bán lẻ nhiều hàng tồn kho, sản xuất nhiều tài sản cố định, bất động sản nhiều dự án dở dang, ngân hàng chủ yếu là cho vay."
+   ],
+   [
+    "h2",
+    "Cách đọc nhanh"
+   ],
+   [
+    "ul",
+    [
+     "Tiền chiếm tỷ trọng cao: thanh khoản tốt nhưng cần xem tiền có sinh lời.",
+     "Phải thu và tồn kho tăng nhanh hơn doanh thu: dấu hiệu cần đọc kỹ. Xem <a href=\"/f0/khoan-phai-thu-khach-hang-la-gi.html\">khoản phải thu</a>.",
+     "Tài sản dở dang lớn kéo dài: hiệu quả đầu tư chưa ghi nhận lợi nhuận."
+    ]
+   ],
+   [
+    "h2",
+    "Kết hợp với nợ và vốn chủ sở hữu"
+   ],
+   [
+    "p",
+    "Tổng tài sản luôn bằng nợ phải trả cộng vốn chủ sở hữu. Nên đọc cùng <a href=\"/f0/von-chu-so-huu-la-gi.html\">vốn chủ sở hữu</a> và <a href=\"/f0/chi-so-thanh-toan-hien-hanh-la-gi.html\">chỉ số thanh toán hiện hành</a>."
+   ],
+   [
+    "p",
+    "Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ],
+   [
+    "h2",
+    "Ví dụ cơ cấu theo ngành"
+   ],
+   [
+    "p",
+    "Nhà bán lẻ thường có tài sản ngắn hạn chiếm tỷ trọng lớn (hàng tồn kho, tiền). Doanh nghiệp cảng biển, điện, cấp nước có tài sản dài hạn chiếm đa số (tài sản cố định). Doanh nghiệp bất động sản có hàng tồn kho là dự án dở dang. Vì vậy hãy so cơ cấu tài sản của doanh nghiệp với đối thủ cùng ngành, không so xuyên ngành. Xem thêm <a href=\"/f0/vong-quay-tai-san-la-gi.html\">vòng quay tài sản</a>."
+   ],
+   [
+    "h2",
+    "Một sai lầm hay gặp"
+   ],
+   [
+    "p",
+    "Nhiều người chỉ nhìn tổng tài sản tăng và kết luận doanh nghiệp đang lớn mạnh. Nhưng tài sản tăng do phải thu và tồn kho phình ra khác hẳn tài sản tăng do nhà máy mới đi vào hoạt động. Luôn hỏi tài sản tăng ở khoản mục nào và có đi kèm doanh thu, lợi nhuận tăng tương ứng không."
+   ]
+  ],
+  "faq": [
+   [
+    "Hàng tồn kho có phải tài sản ngắn hạn không?",
+    "Có, vì dự kiến bán hoặc dùng trong vòng một chu kỳ kinh doanh, thường dưới 12 tháng."
+   ],
+   [
+    "Tài sản cố định khấu hao thế nào?",
+    "Giá trị được phân bổ dần vào chi phí hằng kỳ; xem bài khấu hao."
+   ],
+   [
+    "Tổng tài sản lấy ở dòng nào?",
+    "Dòng Tổng cộng tài sản trên bảng cân đối kế toán, bằng tổng nguồn vốn."
+   ]
+  ],
+  "rel": [
+   "bang-can-doi-ke-toan-la-gi",
+   "khau-hao-la-gi",
+   "von-chu-so-huu-la-gi",
+   "khoan-phai-thu-khach-hang-la-gi"
+  ],
+  "add": [],
+  "grp": 3
+ },
+ {
+  "slug": "bien-loi-nhuan-rong-la-gi",
+  "kw": "biên lợi nhuận ròng là gì",
+  "title": "Biên lợi nhuận ròng là gì? Cách tính và ví dụ VNM, MWG",
+  "desc": "Biên lợi nhuận ròng = lợi nhuận sau thuế ÷ doanh thu thuần. Công thức, ví dụ VNM, MWG, BWE 4 quý tới Q3/2026 và vì sao phải so trong cùng ngành.",
+  "body": [
+   [
+    "p",
+    "Biên lợi nhuận ròng (net profit margin) cho biết mỗi 100 đồng doanh thu còn lại bao nhiêu đồng lợi nhuận sau khi trừ hết giá vốn, chi phí bán hàng, quản lý, lãi vay và thuế. Đây là chỉ số tóm tắt hiệu quả cuối cùng của cả mô hình kinh doanh."
+   ],
+   [
+    "h2",
+    "Công thức"
+   ],
+   [
+    "p",
+    "Biên lợi nhuận ròng = Lợi nhuận sau thuế của cổ đông công ty mẹ ÷ Doanh thu thuần. Nên dùng tổng 4 quý gần nhất cho cả tử số và mẫu số để loại bớt yếu tố mùa vụ. Ví dụ doanh thu 4 quý 1.000 tỷ, lợi nhuận 80 tỷ thì biên ròng là 8%."
+   ],
+   [
+    "h2",
+    "Ví dụ thật: 4 quý tới Q3/2026"
+   ],
+   [
+    "p",
+    "Số liệu từ báo cáo tài chính hợp nhất các quý, tổng 4 quý Q4/2025–Q3/2026 (tính ngày 5/11/2026):"
+   ],
+   [
+    "ul",
+    [
+     "VNM: doanh thu thuần khoảng 70.495 tỷ, lợi nhuận công ty mẹ khoảng 11.400 tỷ → biên ròng khoảng 16,2%.",
+     "MWG: doanh thu khoảng 190.148 tỷ, lợi nhuận khoảng 11.180 tỷ → biên ròng khoảng 5,9%.",
+     "BWE (nước Bình Dương): doanh thu khoảng 4.916 tỷ, lợi nhuận khoảng 1.230 tỷ → biên ròng khoảng 25,0% (có đóng góp từ công ty liên kết)."
+    ]
+   ],
+   [
+    "p",
+    "Lợi nhuận hai doanh nghiệp VNM và MWG gần bằng nhau, nhưng MWG cần doanh thu gần gấp ba để tạo ra cùng số lợi nhuận. Đó là khác biệt của mô hình: bán lẻ biên mỏng, quay vòng nhanh; sản xuất hàng tiêu dùng có thương hiệu giữ biên cao hơn."
+   ],
+   [
+    "h2",
+    "Vì sao không so biên ròng giữa các ngành"
+   ],
+   [
+    "p",
+    "Biên ròng 5,9% của một nhà bán lẻ không có nghĩa là kém hơn biên 16% của doanh nghiệp sữa. Bán lẻ bù biên mỏng bằng vòng quay tài sản nhanh. Muốn hiểu đầy đủ, hãy đọc cùng <a href=\"/f0/vong-quay-tai-san-la-gi.html\">vòng quay tài sản</a> và phân tích <a href=\"/f0/dupont-la-gi.html\">DuPont</a>: ROE = biên ròng × vòng quay tài sản × đòn bẩy."
+   ],
+   [
+    "h2",
+    "Biên gộp, biên hoạt động và biên ròng"
+   ],
+   [
+    "ul",
+    [
+     "Biên gộp: chỉ trừ giá vốn, phản ánh sức mạnh định giá sản phẩm. Xem <a href=\"/f0/bien-loi-nhuan-gop-la-gi.html\">biên lợi nhuận gộp</a>.",
+     "Biên hoạt động: trừ thêm chi phí bán hàng và quản lý, phản ánh khả năng kiểm soát chi phí.",
+     "Biên ròng: trừ thêm lãi vay, thuế và cộng các khoản tài chính, liên kết, bất thường."
+    ]
+   ],
+   [
+    "p",
+    "Nếu biên gộp ổn định mà biên ròng tăng vọt, hãy kiểm tra xem phần tăng đến từ kinh doanh chính hay từ <a href=\"/f0/loi-nhuan-bat-thuong-la-gi.html\">lợi nhuận bất thường</a> như thanh lý tài sản, hoàn nhập dự phòng."
+   ],
+   [
+    "h2",
+    "Cách đọc xu hướng"
+   ],
+   [
+    "ul",
+    [
+     "So biên ròng 4 quý gần nhất với 4 quý trước đó của chính doanh nghiệp.",
+     "Biên ròng tăng kèm doanh thu tăng là tín hiệu tích cực về hiệu quả.",
+     "Biên ròng giảm liên tục dù doanh thu tăng: chi phí đang tăng nhanh hơn, cần đọc thuyết minh.",
+     "Doanh nghiệp nợ vay lớn có biên ròng nhạy với lãi suất."
+    ]
+   ],
+   [
+    "h2",
+    "Lấy số liệu ở đâu"
+   ],
+   [
+    "p",
+    "Dòng Doanh thu thuần và Lợi nhuận sau thuế của cổ đông công ty mẹ nằm trong báo cáo kết quả kinh doanh. Xem hướng dẫn <a href=\"/f0/bao-cao-ket-qua-kinh-doanh-la-gi.html\">đọc báo cáo kết quả kinh doanh</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Biên lợi nhuận ròng bao nhiêu là tốt?",
+    "Không có mức chung. Hãy so với doanh nghiệp cùng ngành và với chính doanh nghiệp qua nhiều quý."
+   ],
+   [
+    "Biên ròng âm nghĩa là gì?",
+    "Doanh nghiệp đang lỗ sau khi trừ mọi chi phí và thuế trong kỳ."
+   ],
+   [
+    "Ngân hàng có dùng biên ròng không?",
+    "Ngân hàng thường dùng NIM, CIR và chi phí dự phòng thay cho biên ròng."
+   ]
+  ],
+  "rel": [
+   "bien-loi-nhuan-gop-la-gi",
+   "dupont-la-gi",
+   "bao-cao-ket-qua-kinh-doanh-la-gi",
+   "roa-la-gi"
+  ],
+  "add": [],
+  "grp": 3
+ },
+ {
+  "slug": "vong-quay-tai-san-la-gi",
+  "kw": "vòng quay tài sản là gì",
+  "title": "Vòng quay tài sản là gì? Cách tính và ý nghĩa theo ngành",
+  "desc": "Vòng quay tổng tài sản = doanh thu ÷ tổng tài sản bình quân. Công thức, ví dụ MWG, VNM, BWE tới Q3/2026 và cách đọc cùng biên lợi nhuận, ROA.",
+  "body": [
+   [
+    "p",
+    "Vòng quay tổng tài sản (asset turnover) đo mỗi đồng tài sản tạo ra bao nhiêu đồng doanh thu trong một năm. Chỉ số cao nghĩa là doanh nghiệp dùng tài sản hiệu quả để bán hàng; chỉ số thấp thường gặp ở ngành cần đầu tư lớn."
+   ],
+   [
+    "h2",
+    "Công thức"
+   ],
+   [
+    "p",
+    "Vòng quay tài sản = Doanh thu thuần 4 quý ÷ Tổng tài sản bình quân. Tài sản bình quân lấy trung bình đầu kỳ và cuối kỳ (hoặc trung bình 5 quý) để tránh lệch do một thời điểm. Ví dụ doanh thu 2.000 tỷ, tài sản bình quân 1.000 tỷ thì vòng quay là 2 lần."
+   ],
+   [
+    "h2",
+    "Ví dụ thật tới Q3/2026"
+   ],
+   [
+    "p",
+    "Doanh thu 4 quý Q4/2025–Q3/2026 chia tổng tài sản bình quân 5 quý gần nhất, từ báo cáo tài chính hợp nhất (tính ngày 5/11/2026):"
+   ],
+   [
+    "ul",
+    [
+     "MWG (bán lẻ): khoảng 2,06 vòng – mỗi đồng tài sản tạo ra hơn 2 đồng doanh thu.",
+     "VNM (sữa): khoảng 1,26 vòng.",
+     "DGC (hóa chất): khoảng 0,53 vòng.",
+     "BWE (cấp nước): khoảng 0,32 vòng – hạ tầng đường ống, nhà máy chiếm phần lớn tài sản."
+    ]
+   ],
+   [
+    "p",
+    "Bán lẻ quay vòng nhanh nhưng biên lợi nhuận mỏng; cấp nước quay chậm nhưng doanh thu ổn định và biên cao hơn. Không có mô hình nào tốt tuyệt đối, chỉ có cách đọc đúng theo ngành."
+   ],
+   [
+    "h2",
+    "Liên hệ với ROA và DuPont"
+   ],
+   [
+    "p",
+    "ROA = Biên lợi nhuận ròng × Vòng quay tài sản. MWG có biên ròng khoảng 5,9% nhân vòng quay 2,06 cho ROA khoảng 12%; BWE biên ròng khoảng 25% nhân vòng quay 0,32 cho ROA khoảng 8%. Hai con đường khác nhau dẫn tới hiệu quả tài sản. Xem <a href=\"/f0/roa-la-gi.html\">ROA là gì</a>, <a href=\"/f0/bien-loi-nhuan-rong-la-gi.html\">biên lợi nhuận ròng</a> và <a href=\"/f0/dupont-la-gi.html\">DuPont</a>."
+   ],
+   [
+    "h2",
+    "Khi nào vòng quay giảm là đáng chú ý"
+   ],
+   [
+    "ul",
+    [
+     "Tài sản tăng mạnh (nhà máy mới, dự án dở dang) nhưng doanh thu chưa tăng theo: có thể là giai đoạn đầu tư, cần theo dõi khi nào đi vào hoạt động.",
+     "Hàng tồn kho và phải thu phình ra nhanh hơn doanh thu: dấu hiệu bán chậm hoặc nới tín dụng cho khách.",
+     "Tiền mặt tích lũy lớn không sinh lời cũng làm vòng quay giảm."
+    ]
+   ],
+   [
+    "h2",
+    "Các vòng quay chi tiết"
+   ],
+   [
+    "p",
+    "Ngoài vòng quay tổng tài sản còn có vòng quay hàng tồn kho, vòng quay phải thu và vòng quay tài sản cố định. Chúng giúp tìm ra khoản mục nào làm hiệu quả thay đổi. Xem thêm <a href=\"/f0/hang-ton-kho-la-gi.html\">hàng tồn kho</a> và <a href=\"/f0/ky-thu-tien-binh-quan.html\">kỳ thu tiền bình quân</a>."
+   ],
+   [
+    "h2",
+    "Lưu ý khi so sánh"
+   ],
+   [
+    "ul",
+    [
+     "Chỉ so doanh nghiệp cùng ngành, cùng mô hình.",
+     "Doanh nghiệp vừa mua công ty con có tài sản tăng đột ngột, vòng quay giảm tạm thời.",
+     "Ngân hàng và công ty chứng khoán không dùng chỉ số này theo cách thông thường."
+    ]
+   ],
+   [
+    "p",
+    "Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Vòng quay tài sản bao nhiêu là tốt?",
+    "Tùy ngành: bán lẻ thường trên 1,5 vòng, hạ tầng và tiện ích thường dưới 0,5 vòng."
+   ],
+   [
+    "Vòng quay cao có luôn tốt không?",
+    "Không hẳn. Cần đọc cùng biên lợi nhuận; vòng quay cao mà biên quá mỏng vẫn có thể kém hiệu quả."
+   ],
+   [
+    "Lấy số liệu ở đâu?",
+    "Doanh thu thuần ở báo cáo kết quả kinh doanh, tổng tài sản ở bảng cân đối kế toán."
+   ]
+  ],
+  "rel": [
+   "roa-la-gi",
+   "dupont-la-gi",
+   "bien-loi-nhuan-rong-la-gi",
+   "hang-ton-kho-la-gi"
+  ],
+  "add": [],
+  "grp": 3
+ },
+ {
+  "slug": "co-phieu-nganh-nuoc",
+  "kw": "cổ phiếu ngành nước",
+  "title": "Cổ phiếu ngành nước: BWE, TDM, TDW – đặc điểm và số liệu",
+  "desc": "Cổ phiếu ngành cấp nước có doanh thu ổn định, tài sản lớn, nợ vay đầu tư. Số liệu BWE, TDM, TDW 4 quý tới Q3/2026 và những điểm cần kiểm tra.",
+  "body": [
+   [
+    "p",
+    "Cổ phiếu ngành nước là cổ phiếu của các doanh nghiệp khai thác, xử lý và phân phối nước sạch, một số kèm xử lý nước thải và rác thải. Nhu cầu nước thiết yếu nên doanh thu ít biến động theo chu kỳ kinh tế, nhưng giá nước chịu điều tiết và cần vốn đầu tư lớn."
+   ],
+   [
+    "h2",
+    "Đặc điểm của ngành"
+   ],
+   [
+    "ul",
+    [
+     "Doanh thu ổn định, tăng theo dân số, khu công nghiệp và đô thị hóa trong vùng phục vụ.",
+     "Giá nước do cơ quan nhà nước phê duyệt, tăng giá cần lộ trình nên lợi nhuận không bật mạnh.",
+     "Tài sản cố định lớn (nhà máy, đường ống) nên vòng quay tài sản thấp, khấu hao cao.",
+     "Thường vay nợ để mở rộng công suất, nhạy với lãi suất.",
+     "Tỷ lệ thất thoát nước là chỉ số vận hành quan trọng."
+    ]
+   ],
+   [
+    "h2",
+    "Số liệu thật: 4 quý Q4/2025–Q3/2026"
+   ],
+   [
+    "p",
+    "Từ báo cáo tài chính hợp nhất các quý; P/E, P/B theo giá ngày 5/11/2026:"
+   ],
+   [
+    "ul",
+    [
+     "BWE (Nước – Môi trường Bình Dương): doanh thu khoảng 4.916 tỷ (+13% so với 4 quý trước), lợi nhuận công ty mẹ khoảng 1.230 tỷ (+44%), nợ phải trả/vốn chủ khoảng 1,15 lần; P/E khoảng 9,1, P/B khoảng 1,47. Lợi nhuận có đóng góp đáng kể từ công ty liên kết.",
+     "TDM (Nước Thủ Dầu Một): doanh thu khoảng 504 tỷ (+24%), lợi nhuận khoảng 201 tỷ (−22%), nợ phải trả/vốn chủ khoảng 0,31 lần; P/E khoảng 36, P/B khoảng 2,34.",
+     "TDW (Cấp nước Thủ Đức): doanh thu khoảng 1.384 tỷ, lợi nhuận khoảng 71 tỷ, biên ròng khoảng 5,2% do chủ yếu phân phối nước mua lại; P/E khoảng 5,7, P/B khoảng 1,53."
+    ]
+   ],
+   [
+    "p",
+    "Ba doanh nghiệp cùng ngành nhưng mô hình khác nhau: BWE vừa sản xuất vừa phân phối và đầu tư liên kết; TDM chủ yếu sản xuất nước bán buôn; TDW chủ yếu phân phối. Vì vậy biên lợi nhuận và mức định giá chênh lệch lớn."
+   ],
+   [
+    "h2",
+    "Những điểm cần kiểm tra"
+   ],
+   [
+    "ul",
+    [
+     "Lợi nhuận đến từ kinh doanh nước hay từ công ty liên kết, doanh thu tài chính.",
+     "Chi phí xây dựng dở dang và kế hoạch nâng công suất: khi nào nhà máy mới đi vào hoạt động.",
+     "Nợ vay và chi phí lãi vay so với lợi nhuận hoạt động.",
+     "Lộ trình điều chỉnh giá nước tại địa phương.",
+     "Thanh khoản cổ phiếu: nhiều mã ngành nước giao dịch rất ít, khó mua bán khối lượng lớn."
+    ]
+   ],
+   [
+    "h2",
+    "Vì sao P/E chênh nhau nhiều"
+   ],
+   [
+    "p",
+    "P/E của TDM cao vì lợi nhuận 4 quý giảm trong khi giá giữ; P/E của TDW thấp vì quy mô nhỏ và biên mỏng. Một chỉ số đơn lẻ không nói lên đắt hay rẻ, cần đọc cùng tăng trưởng và chất lượng lợi nhuận. Xem <a href=\"/f0/pe-la-gi.html\">P/E là gì</a> và <a href=\"/f0/so-sanh-pe-pb-khi-nao-dung.html\">khi nào dùng P/E, P/B</a>."
+   ],
+   [
+    "h2",
+    "Phù hợp với ai"
+   ],
+   [
+    "p",
+    "Nhóm cổ phiếu tiện ích như nước, điện thường được người thích dòng tiền ổn định quan tâm, nhưng tăng trưởng chậm và thanh khoản thấp. Xem thêm <a href=\"/f0/gia-dien-va-co-phieu-dien.html\">cổ phiếu điện</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Cổ phiếu ngành nước có ít rủi ro không?",
+    "Doanh thu ổn định hơn nhiều ngành, nhưng vẫn có rủi ro nợ vay, giá nước chậm điều chỉnh và thanh khoản thấp."
+   ],
+   [
+    "Vì sao lợi nhuận BWE tăng nhanh hơn doanh thu?",
+    "Một phần nhờ lợi nhuận từ công ty liên kết và doanh thu tài chính, cần tách khỏi kinh doanh nước khi đánh giá."
+   ],
+   [
+    "Số liệu lấy từ đâu?",
+    "Báo cáo tài chính hợp nhất các quý của doanh nghiệp; P/E, P/B theo giá ngày 5/11/2026."
+   ]
+  ],
+  "rel": [
+   "gia-dien-va-co-phieu-dien",
+   "pe-la-gi",
+   "khau-hao-la-gi",
+   "co-phieu-khu-cong-nghiep-la-gi"
+  ],
+  "add": [],
+  "grp": 8
+ },
+ {
+  "slug": "co-phieu-hay-bat-dong-san",
+  "kw": "đầu tư cổ phiếu hay bất động sản",
+  "title": "Đầu tư cổ phiếu hay bất động sản? So sánh cho người mới",
+  "desc": "So sánh cổ phiếu và bất động sản theo vốn ban đầu, thanh khoản, chi phí, đòn bẩy, dòng tiền và công sức quản lý. Ví dụ với 500 triệu đồng.",
+  "body": [
+   [
+    "p",
+    "Cổ phiếu và bất động sản là hai kênh tích lũy tài sản phổ biến ở Việt Nam. Không kênh nào luôn tốt hơn; mỗi kênh hợp với số vốn, thời gian và tính cách khác nhau. Bài này so sánh theo các tiêu chí thực tế để bạn tự quyết định."
+   ],
+   [
+    "h2",
+    "Vốn ban đầu"
+   ],
+   [
+    "p",
+    "Cổ phiếu có thể bắt đầu với vài triệu đồng và góp đều mỗi tháng. Bất động sản thường cần hàng trăm triệu đến vài tỷ, hoặc phải vay ngân hàng. Xem <a href=\"/f0/nen-dau-tu-chung-khoan-bao-nhieu-tien.html\">nên đầu tư chứng khoán bao nhiêu tiền</a>."
+   ],
+   [
+    "h2",
+    "Thanh khoản"
+   ],
+   [
+    "p",
+    "Cổ phiếu thanh khoản tốt có thể bán trong phiên, tiền về sau chu kỳ thanh toán. Bất động sản có thể mất vài tuần đến vài tháng để bán, nhất là khi thị trường trầm lắng, và thường phải giảm giá để bán nhanh."
+   ],
+   [
+    "h2",
+    "Chi phí giao dịch và nắm giữ"
+   ],
+   [
+    "ul",
+    [
+     "Cổ phiếu: phí mua bán khoảng 0,1–0,3% mỗi chiều cộng thuế bán 0,1%; gần như không tốn chi phí nắm giữ.",
+     "Bất động sản: thuế, phí trước bạ, công chứng, phí trung gian khi bán, sửa chữa, quản lý cho thuê – tổng có thể vài phần trăm giá trị."
+    ]
+   ],
+   [
+    "h2",
+    "Dòng tiền định kỳ"
+   ],
+   [
+    "p",
+    "Cổ phiếu có cổ tức, bất động sản có tiền cho thuê. Tỷ suất cho thuê nhà ở tại các thành phố lớn thường thấp so với giá mua, trong khi cổ tức phụ thuộc lợi nhuận từng doanh nghiệp. Xem <a href=\"/f0/ty-suat-co-tuc-la-gi.html\">tỷ suất cổ tức</a>."
+   ],
+   [
+    "h2",
+    "Biến động và tâm lý"
+   ],
+   [
+    "p",
+    "Giá cổ phiếu cập nhật mỗi giây nên biến động hiện rõ, dễ khiến người mới hoảng sợ bán sai lúc. Giá bất động sản không niêm yết hằng ngày nên cảm giác ổn định hơn, nhưng không có nghĩa là giá không giảm khi thị trường khó khăn – chỉ là khó bán và khó thấy."
+   ],
+   [
+    "h2",
+    "Đòn bẩy"
+   ],
+   [
+    "p",
+    "Mua nhà thường vay 50–70% giá trị với kỳ hạn dài; đầu tư cổ phiếu có thể dùng <a href=\"/f0/margin-la-gi.html\">margin</a> ngắn hạn và có nguy cơ bị bán giải chấp. Cả hai đều phóng đại lãi lẫn lỗ, cần tính khả năng trả nợ khi thu nhập giảm."
+   ],
+   [
+    "h2",
+    "Ví dụ với 500 triệu đồng"
+   ],
+   [
+    "ul",
+    [
+     "Cổ phiếu: chia 5–10 doanh nghiệp, giải ngân dần trong 6–12 tháng, tái đầu tư cổ tức, tốn ít thời gian nếu theo nguyên tắc.",
+     "Bất động sản: 500 triệu thường chỉ đủ phần vốn đối ứng, phần còn lại vay; tiền tập trung vào một tài sản, cần thời gian tìm hiểu pháp lý, vị trí."
+    ]
+   ],
+   [
+    "h2",
+    "Kết hợp cả hai"
+   ],
+   [
+    "p",
+    "Nhiều gia đình giữ nhà để ở, dùng tiền tiết kiệm hằng tháng tích lũy cổ phiếu, rồi cân nhắc bất động sản đầu tư khi tài sản đủ lớn. Điều quan trọng là hiểu kênh mình chọn và giữ kỷ luật. Danh mục tích sản cổ phiếu ngân hàng tham khảo nằm trong <a href=\"/bao-cao-2026.html#tichsan\">báo cáo 2026</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Kênh nào lãi hơn trong dài hạn?",
+    "Phụ thuộc giai đoạn, vị trí và lựa chọn cụ thể; quá khứ không đảm bảo tương lai."
+   ],
+   [
+    "Người ít vốn nên bắt đầu từ đâu?",
+    "Cổ phiếu cho phép bắt đầu với số vốn nhỏ và góp đều, nhưng cần học kiến thức cơ bản trước."
+   ],
+   [
+    "Có nên vay để đầu tư không?",
+    "Chỉ khi dòng tiền trả nợ chắc chắn kể cả lúc thu nhập giảm; người mới nên hạn chế đòn bẩy."
+   ]
+  ],
+  "rel": [
+   "tich-san-co-phieu-hay-gui-tiet-kiem",
+   "gia-vang-va-chung-khoan",
+   "doc-bctc-cong-ty-bat-dong-san",
+   "margin-la-gi"
+  ],
+  "add": [],
+  "grp": 7
  }
 ]

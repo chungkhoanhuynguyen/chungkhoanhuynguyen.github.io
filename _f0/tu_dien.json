@@ -438,5 +438,20 @@
 "Nến Doji",
 "Cây nến có giá mở cửa gần bằng giá đóng cửa, thể hiện sự lưỡng lự giữa bên mua và bên bán.",
 "nen-doji-la-gi"
+],
+[
+"Biên lợi nhuận ròng",
+"Lợi nhuận sau thuế chia doanh thu thuần, cho biết mỗi 100 đồng doanh thu còn lại bao nhiêu đồng lãi.",
+"bien-loi-nhuan-rong-la-gi"
+],
+[
+"Vòng quay tài sản",
+"Doanh thu chia tổng tài sản bình quân, đo hiệu quả dùng tài sản để tạo doanh thu.",
+"vong-quay-tai-san-la-gi"
+],
+[
+"Chỉ số thanh toán hiện hành",
+"Tài sản ngắn hạn chia nợ ngắn hạn, đo khả năng trả nợ ngắn hạn.",
+"chi-so-thanh-toan-hien-hanh-la-gi"
 ]
 ]
