@@ -141,8 +141,8 @@ def anh_canh(R, kho):
     return out
 
 KEO_WEB = {"chu_to": "VÀO WEB XEM SỐ LIỆU",
-    "loi": "Bảng giá tích sản, số liệu ngân hàng và báo cáo hơn 400 mã cập nhật mỗi phiên tại chungkhoanhuynguyen.com, vào xem miễn phí.",
-    "loi_doc": "Bảng giá tích sản, số liệu ngân hàng và báo cáo hơn bốn trăm mã cập nhật mỗi phiên tại chứng khoán Huy Nguyễn chấm com, vào xem miễn phí."}
+    "loi": "Bảng giá tích sản, số liệu ngân hàng và báo cáo hơn 400 mã cập nhật mỗi phiên tại chungkhoanhuynguyen.com, anh chị vào xem miễn phí nhé.",
+    "loi_doc": "Bảng giá tích sản, số liệu ngân hàng và báo cáo hơn bốn trăm mã cập nhật mỗi phiên tại chứng khoán Huy Nguyễn chấm com, anh chị vào xem miễn phí nhé."}
 def ket_cau_hoi(R):
     """Cảnh cuối là câu hỏi mở để khách bình luận, tranh luận."""
     w = R.get("keo_web", KEO_WEB)          # tin nóng vẫn phải kéo khách về web (anh Huy 6/11)
@@ -160,6 +160,11 @@ def main():
     OUT = os.path.join(HERE, "out"); os.makedirs(OUT, exist_ok=True); WORK = "/tmp/reel_" + key; os.makedirs(WORK, exist_ok=True)
     R = next(r for r in json.load(open(os.path.join(QD, "reel.json"), encoding="utf-8")) if r["key"] == key)
     ket_cau_hoi(R)
+    import xung_ho                      # xưng em – anh chị (anh Huy chốt 6/11)
+    for c in R["canh"]:
+        for k_ in ("loi", "loi_doc", "chu_to"): c[k_] = xung_ho.le_phep(c.get(k_, ""))
+    for k_ in ("short_caption", "tieu_de"): R[k_] = xung_ho.le_phep(R.get(k_, ""))
+    if R.get("cau_hoi"): R["cau_hoi"] = {k_: xung_ho.le_phep(v_) for k_, v_ in R["cau_hoi"].items()}
     try:
         import anh; kho = anh.Kho(WORK + "/anh")
     except Exception: kho = None
