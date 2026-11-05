@@ -33,8 +33,10 @@ CTA_GIUA = {"k": "text", "label": "NHÓM TƯ VẤN MIỄN PHÍ", "cap": ("VÀO N
     "say": "Khoan, nói nhanh một chút. Nếu anh chị không có thời gian tự lọc cổ phiếu, hãy vào nhóm Zalo tư vấn của Huy Nguyễn. Ở đó mỗi ngày có danh sách cổ phiếu khỏe, nhận định thị trường, và anh chị được hỏi trực tiếp về danh mục của mình, hoàn toàn miễn phí. Số Zalo là không ba sáu năm, một tám tám, hai tám sáu, có sẵn trong phần mô tả. Giờ mình đi tiếp."}
 CTA_CUOI = {"k": "text", "label": "ĐỪNG ĐẦU TƯ MỘT MÌNH", "cap": ("ZALO 0365 188 286", "CHUNGKHOANHUYNGUYEN.COM"), "cta": 1,
     "say": "Trước khi kết thúc, có hai thứ anh chị nên lưu lại. Một, vào chứng khoán Huy Nguyễn chấm com để xem bảng mười cổ phiếu khỏe nhất thị trường cập nhật liên tục và báo cáo tài chính hơn bốn trăm mã, miễn phí. Hai, nếu anh chị đang kẹt hàng, chưa biết nên giữ hay cơ cấu, hoặc muốn có người đồng hành, nhắn Zalo số không ba sáu năm, một tám tám, hai tám sáu để vào nhóm tư vấn, Huy và đội ngũ sẽ hỗ trợ trực tiếp. Đầu tư một mình rất dễ sai, có người cùng đi sẽ chắc hơn. Nhớ đăng ký kênh và bấm chuông để không bỏ lỡ video tiếp theo."}
+CTA_WEB = {"k": "text", "label": "TÀI LIỆU ĐI KÈM VIDEO", "cap": ("TÀI LIỆU MIỄN PHÍ", "CHUNGKHOANHUYNGUYEN.COM"), "cta": 1,
+    "say": "Toàn bộ số liệu trong video này, cùng bảng định giá và báo cáo tài chính hơn bốn trăm mã, anh chị xem miễn phí tại chứng khoán Huy Nguyễn chấm com. Ở đó có người tư vấn trực tiếp nếu anh chị cần hỏi về mã mình đang cầm."}
 if not g.get("NO_CTA") and not any(x.get("cta") for x in raw) and len(raw) >= 6:
-    raw = list(raw); raw.insert(len(raw)//2, dict(CTA_GIUA))
+    raw = list(raw); raw.insert(max(2, len(raw)//4), dict(CTA_WEB)); raw.insert(len(raw)*2//3, dict(CTA_GIUA))
     raw.insert(len(raw) - 1 if raw[-1].get("k") == "end" else len(raw), dict(CTA_CUOI))
 for _x in raw: _x["say"] = _doc_web(_x.get("say", ""))
 

@@ -56,7 +56,7 @@ def make(sc, meta=None, ph=None, out=None):
     im = Image.new("RGB", (W, H), TIM0); d = ImageDraw.Draw(im)
     for y in range(H):  # nền chuyển tím
         a = y / H; d.line([(0, y), (W, y)], fill=tuple(int(TIM0[i] + (TIM1[i]-TIM0[i])*a) for i in range(3)))
-    if ph is not None:  # ảnh thật bên phải, mờ dần sang trái
+    if ph is not None and not os.path.exists(os.path.join(HERE, "engine", "chu_kenh.png")):  # ảnh thật bên phải, mờ dần sang trái
         pw = 620; r = max(pw/ph.width, H/ph.height); p = ph.convert("RGB").resize((int(ph.width*r)+1, int(ph.height*r)+1), Image.LANCZOS)
         p = p.crop(((p.width-pw)//2, (p.height-H)//2, (p.width-pw)//2+pw, (p.height-H)//2+H))
         p = Image.blend(p, Image.new("RGB", p.size, TIM0), 0.25)
@@ -64,9 +64,27 @@ def make(sc, meta=None, ph=None, out=None):
         for x in range(pw): ImageDraw.Draw(m).line([(x, 0), (x, H)], fill=int(255*min(1, x/260)))
         im.paste(p, (W-pw, 0), m); d = ImageDraw.Draw(im)
     d.rectangle([0, 0, 14, H], fill=VANG)
-    try: dx2.brand(im, d, W-170, 30, 0.62, 1.0, TIM0)
-    except Exception: d.text((W-280, 34), "HUY NGUYỄN", font=dx2.F("Black", 34), fill=TRANG)
-    L = _lines(sc, meta); x0, mw = 60, 740
+    CK = os.path.join(HERE, "engine", "chu_kenh.png")
+    if os.path.exists(CK):  # chân dung chủ kênh (ảnh tĩnh thật, anh Huy duyệt 5/11) – nhận diện thương hiệu
+        pt = Image.open(CK).convert("RGBA"); ph_ = 690; pt = pt.resize((int(pt.width*ph_/pt.height), ph_), Image.LANCZOS)
+        px_ = W - pt.width + 30
+        a_ = pt.getchannel("A"); rm = Image.new("L", pt.size, 255)
+        for x in range(90): ImageDraw.Draw(rm).line([(x, 0), (x, pt.height)], fill=int(255*x/90))
+        from PIL import ImageChops; pt.putalpha(ImageChops.multiply(a_, rm))
+        gl = Image.new("L", (W, H)); ImageDraw.Draw(gl).ellipse([px_+40, 120, px_+pt.width-20, H+200], fill=150)
+        gl = gl.filter(ImageFilter.GaussianBlur(70)); im.paste(Image.new("RGB", (W, H), (120, 70, 170)), (0, 0), gl)
+        im.paste(pt, (px_, H - ph_), pt); d = ImageDraw.Draw(im)
+        fl = dx2.F("Black", 30); d.text((60, 30), "HUY NGUYỄN", font=fl, fill=TRANG)
+        d.text((60 + d.textlength("HUY NGUYỄN ", font=fl), 36), "CHỨNG KHOÁN", font=dx2.F("SemiBold", 22), fill=VANG)
+        fu = dx2.F("Bold", 30); u = "chungkhoanhuynguyen.com"
+        d.rounded_rectangle([50, H-78, 50 + d.textlength(u, font=fu) + 32, H-28], 12, fill=(0, 0, 0))
+        d.text((66, H-74), u, font=fu, fill=VANG)
+        MW = 680
+    else:
+        try: dx2.brand(im, d, W-170, 30, 0.62, 1.0, TIM0)
+        except Exception: d.text((W-280, 34), "HUY NGUYỄN", font=dx2.F("Black", 34), fill=TRANG)
+        MW = 740
+    L = _lines(sc, meta); x0, mw = 60, MW
     L, st = _wrap(d, L, mw); fs = [dx2.F("Black", st) for _ in L]
     hh = sum(int(f.size*1.08) for f in fs); y = max(70, (H - hh)//2 - 40)
     cols = [TRANG, VANG, TRANG]
