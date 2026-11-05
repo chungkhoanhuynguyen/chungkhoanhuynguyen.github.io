@@ -22330,5 +22330,771 @@
   ],
   "add": [],
   "grp": 7
+ },
+ {
+  "slug": "chi-phi-lai-vay-la-gi",
+  "kw": "chi phí lãi vay là gì",
+  "title": "Chi phí lãi vay là gì? Cách đọc trong báo cáo kết quả kinh doanh",
+  "desc": "Chi phí lãi vay là khoản doanh nghiệp trả cho nợ vay. Công thức, ví dụ tính, khi nào lãi vay tăng nhanh hơn lợi nhuận và cách kiểm tra khả năng gánh lãi.",
+  "body": [
+   [
+    "p",
+    "Chi phí lãi vay là số tiền doanh nghiệp phải trả cho các khoản đi vay ngân hàng, trái phiếu hoặc tổ chức tín dụng trong kỳ. Trên báo cáo kết quả kinh doanh, nó nằm trong mục chi phí tài chính, và là khoản trừ trước khi tính lợi nhuận trước thuế."
+   ],
+   [
+    "h2",
+    "Công thức ước tính nhanh"
+   ],
+   [
+    "p",
+    "Lãi suất bình quân ≈ Chi phí lãi vay cả năm ÷ Dư nợ vay bình quân. Ví dụ doanh nghiệp vay bình quân 10.000 tỷ đồng, trả lãi 800 tỷ trong năm thì lãi suất bình quân khoảng 8%. Đây là con số ước tính vì dư nợ thay đổi theo từng thời điểm và một phần lãi vay có thể được vốn hóa vào giá trị dự án."
+   ],
+   [
+    "h2",
+    "Vì sao lãi vay cần đọc kỹ"
+   ],
+   [
+    "p",
+    "Lãi vay là chi phí cố định theo hợp đồng: dù doanh thu giảm, doanh nghiệp vẫn phải trả. Khi doanh thu và biên lợi nhuận tốt, lãi vay dễ gánh. Khi chu kỳ ngành đảo chiều, cùng một khoản lãi vay có thể ăn một phần lớn lợi nhuận. Vì vậy với doanh nghiệp vay nhiều như bất động sản, thép hay điện, lãi vay là dòng nên xem ngay sau lợi nhuận."
+   ],
+   [
+    "h2",
+    "Ví dụ: lãi vay tăng nhanh hơn lợi nhuận"
+   ],
+   [
+    "p",
+    "Giả sử doanh thu tăng 70%, lợi nhuận tăng 100%, nhưng chi phí lãi vay tăng 118%. Điều này có thể xảy ra khi doanh nghiệp vay thêm để đầu tư dự án lớn. Lãi vay tăng không tự nó là xấu, miễn là dự án tạo ra dòng tiền đủ để gánh. Điều cần xem là khoản vay dùng để làm gì và khi nào dự án đóng góp doanh thu."
+   ],
+   [
+    "h2",
+    "Ba cách kiểm tra khả năng gánh lãi"
+   ],
+   [
+    "ul",
+    [
+     "Hệ số bao phủ lãi vay = Lợi nhuận trước lãi vay và thuế ÷ Chi phí lãi vay: càng cao càng an toàn; dưới 1,5 thường cần thận trọng.",
+     "Nợ vay ròng trên vốn chủ sở hữu: cho biết mức độ dựa vào nợ so với vốn của cổ đông.",
+     "Dòng tiền kinh doanh so với lãi vay và nợ gốc đến hạn trong 12 tháng tới."
+    ]
+   ],
+   [
+    "h2",
+    "Lưu ý khi so sánh"
+   ],
+   [
+    "ul",
+    [
+     "Lãi vay được vốn hóa vào dự án không hiện ở chi phí tài chính nhưng vẫn là nghĩa vụ trả.",
+     "Lãi suất thả nổi làm chi phí thay đổi khi mặt bằng lãi suất đổi.",
+     "Ngân hàng có cách ghi nhận khác: lãi trả cho tiền gửi nằm trong chi phí lãi, không phải chi phí tài chính như doanh nghiệp thường."
+    ]
+   ],
+   [
+    "p",
+    "Kết hợp với <a href=\"/f0/he-so-no-de-la-gi.html\">hệ số nợ trên vốn chủ</a>, <a href=\"/f0/he-so-bao-phu-lai-vay-la-gi.html\">hệ số bao phủ lãi vay</a> và <a href=\"/f0/dong-tien-kinh-doanh-la-gi.html\">dòng tiền kinh doanh</a> để có bức tranh đủ. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Chi phí lãi vay tăng có phải luôn xấu không?",
+    "Không. Nếu vay để đầu tư dự án sinh lời, lãi vay tăng là tự nhiên; cần xem dòng tiền có gánh được không."
+   ],
+   [
+    "Xem chi phí lãi vay ở đâu?",
+    "Trong báo cáo kết quả kinh doanh, mục chi phí tài chính, và chi tiết ở thuyết minh."
+   ],
+   [
+    "Lãi vay vốn hóa là gì?",
+    "Là phần lãi vay của dự án đang xây dựng được cộng vào giá trị dự án thay vì ghi vào chi phí trong kỳ."
+   ]
+  ],
+  "rel": [
+   "he-so-bao-phu-lai-vay-la-gi",
+   "he-so-no-de-la-gi",
+   "dong-tien-kinh-doanh-la-gi"
+  ],
+  "add": [],
+  "grp": 2
+ },
+ {
+  "slug": "he-so-bao-phu-lai-vay-la-gi",
+  "kw": "hệ số bao phủ lãi vay là gì",
+  "title": "Hệ số bao phủ lãi vay là gì? Doanh nghiệp có gánh nổi lãi không",
+  "desc": "Hệ số bao phủ lãi vay đo khả năng trả lãi từ lợi nhuận hoạt động. Công thức EBIT chia lãi vay, ví dụ tính, ngưỡng tham khảo và các bẫy khi đọc.",
+  "body": [
+   [
+    "p",
+    "Hệ số bao phủ lãi vay (interest coverage ratio) cho biết lợi nhuận hoạt động của doanh nghiệp gấp bao nhiêu lần số lãi phải trả. Đây là phép thử nhanh để biết doanh nghiệp còn đệm an toàn trước gánh nặng nợ vay hay không."
+   ],
+   [
+    "h2",
+    "Công thức"
+   ],
+   [
+    "p",
+    "Hệ số bao phủ lãi vay = EBIT ÷ Chi phí lãi vay, trong đó EBIT là lợi nhuận trước lãi vay và thuế. Ví dụ EBIT là 1.200 tỷ, lãi vay 300 tỷ thì hệ số là 4 lần: lợi nhuận hoạt động gấp bốn lần lãi phải trả, nếu lợi nhuận giảm 75% doanh nghiệp vẫn đủ trả lãi."
+   ],
+   [
+    "h2",
+    "Ngưỡng tham khảo"
+   ],
+   [
+    "ul",
+    [
+     "Trên 3 lần: thường được xem là có đệm tương đối an toàn.",
+     "Từ 1,5 đến 3 lần: cần theo dõi, nhất là với ngành chu kỳ.",
+     "Dưới 1,5 lần: áp lực lớn; dưới 1 lần là lợi nhuận hoạt động không đủ trả lãi."
+    ]
+   ],
+   [
+    "p",
+    "Đây chỉ là mốc tham khảo. Ngành có dòng tiền ổn định như điện, nước chịu được hệ số thấp hơn ngành chu kỳ như thép, xây dựng."
+   ],
+   [
+    "h2",
+    "Ví dụ so sánh hai doanh nghiệp"
+   ],
+   [
+    "p",
+    "Doanh nghiệp A có hệ số 6 lần nhưng lợi nhuận phụ thuộc giá hàng hóa; doanh nghiệp B có hệ số 2,5 lần nhưng doanh thu hợp đồng dài hạn ổn định. Nhìn một con số, A có vẻ an toàn hơn. Nhìn bản chất doanh thu, B có thể dễ dự đoán hơn. Vì vậy đừng đọc hệ số tách khỏi tính chu kỳ của ngành."
+   ],
+   [
+    "h2",
+    "Những bẫy khi đọc"
+   ],
+   [
+    "ul",
+    [
+     "EBIT một quý có thể bị méo bởi khoản bất thường; dùng bốn quý gần nhất.",
+     "Lãi vay vốn hóa không nằm trong mẫu số nhưng vẫn là nghĩa vụ trả.",
+     "Hệ số cao chưa đảm bảo trả được nợ gốc; cần xem lịch đáo hạn."
+    ]
+   ],
+   [
+    "h2",
+    "Bài tập nhỏ"
+   ],
+   [
+    "p",
+    "Lấy lợi nhuận trước thuế và chi phí lãi vay của bốn quý gần nhất trong báo cáo hợp nhất, cộng lại để ra EBIT, rồi chia cho lãi vay. Làm cho hai doanh nghiệp cùng ngành và so sánh. Nếu hệ số của một doanh nghiệp giảm dần qua nhiều năm trong khi nợ vay tăng, đó là xu hướng đáng theo dõi kỹ hơn bất kỳ con số đơn lẻ nào."
+   ],
+   [
+    "h2",
+    "Kịch bản thử sức chịu đựng"
+   ],
+   [
+    "p",
+    "Giả sử EBIT giảm 40% do chu kỳ ngành xấu, trong khi lãi vay không đổi. Doanh nghiệp có hệ số 4 lần sẽ còn khoảng 2,4 lần, vẫn gánh được. Doanh nghiệp có hệ số 1,5 lần sẽ còn 0,9 lần, tức không đủ trả lãi. Cách tính này gọi là kiểm tra sức chịu đựng và chỉ mất vài phút."
+   ],
+   [
+    "p",
+    "Hãy đọc cùng <a href=\"/f0/chi-phi-lai-vay-la-gi.html\">chi phí lãi vay</a>, <a href=\"/f0/he-so-no-de-la-gi.html\">hệ số nợ</a> và dòng tiền. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "EBIT lấy ở đâu?",
+    "Lấy lợi nhuận trước thuế cộng chi phí lãi vay, trong báo cáo kết quả kinh doanh."
+   ],
+   [
+    "Ngân hàng có dùng hệ số này không?",
+    "Không, vì lãi vay là chi phí hoạt động chính của ngân hàng."
+   ],
+   [
+    "Hệ số âm nghĩa là gì?",
+    "EBIT âm, tức hoạt động kinh doanh đang lỗ trước cả khi trả lãi; đây là mức rủi ro cao."
+   ]
+  ],
+  "rel": [
+   "chi-phi-lai-vay-la-gi",
+   "he-so-no-de-la-gi",
+   "dong-tien-kinh-doanh-la-gi"
+  ],
+  "add": [],
+  "grp": 2
+ },
+ {
+  "slug": "vong-quay-hang-ton-kho-la-gi",
+  "kw": "vòng quay hàng tồn kho là gì",
+  "title": "Vòng quay hàng tồn kho là gì? Cách tính và số ngày tồn kho",
+  "desc": "Vòng quay hàng tồn kho cho biết hàng bán nhanh hay chậm. Công thức, số ngày tồn kho, ví dụ tính và cách đọc theo ngành để tránh hiểu nhầm.",
+  "body": [
+   [
+    "p",
+    "Vòng quay hàng tồn kho cho biết trong một năm doanh nghiệp bán hết và nhập lại kho bao nhiêu lần. Hàng bán càng nhanh, vốn bị kẹt trong kho càng ít, nhưng mức tốt phụ thuộc rất nhiều vào ngành."
+   ],
+   [
+    "h2",
+    "Công thức"
+   ],
+   [
+    "p",
+    "Vòng quay hàng tồn kho = Giá vốn hàng bán ÷ Hàng tồn kho bình quân. Số ngày tồn kho = 365 ÷ Vòng quay. Ví dụ giá vốn cả năm 6.000 tỷ, tồn kho bình quân 1.000 tỷ thì vòng quay là 6 lần, tức khoảng 61 ngày hàng nằm trong kho trước khi bán."
+   ],
+   [
+    "h2",
+    "Đọc theo ngành"
+   ],
+   [
+    "ul",
+    [
+     "Bán lẻ thực phẩm: vòng quay cao, số ngày tồn kho ngắn vì hàng dễ hỏng.",
+     "Sản xuất thép, hóa chất: vòng quay trung bình, phụ thuộc nguyên liệu và giá.",
+     "Bất động sản: tồn kho là dự án dở dang, vòng quay thấp là bình thường."
+    ]
+   ],
+   [
+    "h2",
+    "Khi nào vòng quay giảm là cờ đỏ"
+   ],
+   [
+    "p",
+    "Vòng quay giảm dần qua nhiều quý, trong khi doanh thu không tăng tương ứng, nghĩa là hàng đang nằm lâu hơn. Rủi ro là phải giảm giá để bán, hoặc trích lập dự phòng giảm giá hàng tồn kho, làm lợi nhuận mỏng đi. Ví dụ tồn kho tăng 40% trong khi doanh thu tăng 5% là tín hiệu nên tìm hiểu lý do."
+   ],
+   [
+    "h2",
+    "Khi nào tồn kho tăng lại hợp lý"
+   ],
+   [
+    "ul",
+    [
+     "Doanh nghiệp tích trữ nguyên liệu trước khi giá tăng hoặc trước mùa cao điểm.",
+     "Mở nhà máy, kho mới cho kế hoạch tăng trưởng.",
+     "Chuyển sang mô hình bán chịu hoặc phân phối rộng hơn."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ so sánh hai doanh nghiệp"
+   ],
+   [
+    "p",
+    "Doanh nghiệp X có vòng quay 12 lần (khoảng 30 ngày), doanh nghiệp Y có 4 lần (khoảng 91 ngày). Nếu X là siêu thị và Y là nhà sản xuất máy móc, hai con số đều có thể bình thường. Nếu cả hai cùng ngành và Y chậm hơn X nhiều năm liền, Y đang bị kẹt vốn nhiều hơn: cứ một đồng doanh thu cần nhiều vốn lưu động hơn, nên phải vay nhiều hơn và chịu thêm chi phí lãi vay."
+   ],
+   [
+    "h2",
+    "Bài tập nhỏ"
+   ],
+   [
+    "p",
+    "Lấy giá vốn và hàng tồn kho đầu kỳ, cuối kỳ của một doanh nghiệp bạn quan tâm trong báo cáo hợp nhất, tính vòng quay và số ngày tồn kho của bốn năm gần nhất, rồi đặt cạnh tăng trưởng doanh thu. Chỉ mất mười phút nhưng cho bạn thấy doanh nghiệp đang quản lý vốn lưu động tốt hơn hay kém đi."
+   ],
+   [
+    "p",
+    "Hãy xem cùng <a href=\"/f0/hang-ton-kho-la-gi.html\">hàng tồn kho</a>, <a href=\"/f0/khoan-phai-thu-khach-hang-la-gi.html\">khoản phải thu</a> và <a href=\"/f0/dong-tien-kinh-doanh-la-gi.html\">dòng tiền kinh doanh</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Vòng quay bao nhiêu là tốt?",
+    "Không có mức chung; so với chính doanh nghiệp qua các quý và với doanh nghiệp cùng ngành."
+   ],
+   [
+    "Dùng giá vốn hay doanh thu để tính?",
+    "Chuẩn là giá vốn hàng bán vì hàng tồn kho được ghi theo giá vốn."
+   ],
+   [
+    "Số ngày tồn kho khác vòng quay thế nào?",
+    "Là cùng một thông tin nhìn theo hai cách: số ngày = 365 chia vòng quay."
+   ]
+  ],
+  "rel": [
+   "hang-ton-kho-la-gi",
+   "khoan-phai-thu-khach-hang-la-gi",
+   "vong-quay-tai-san-la-gi"
+  ],
+  "add": [],
+  "grp": 2
+ },
+ {
+  "slug": "bong-bong-tai-san-la-gi",
+  "kw": "bong bóng tài sản là gì",
+  "title": "Bong bóng tài sản là gì? 5 dấu hiệu nhận biết và bài học lịch sử",
+  "desc": "Bong bóng tài sản là khi giá tăng vượt xa giá trị thực. Giải thích 5 dấu hiệu, vì sao khó nhận ra đúng lúc và cách bảo vệ danh mục bằng quản trị vốn.",
+  "body": [
+   [
+    "p",
+    "Bong bóng tài sản xảy ra khi giá một loại tài sản như cổ phiếu, bất động sản hay tiền số tăng vượt xa giá trị cơ bản của nó, chủ yếu vì kỳ vọng giá còn tăng chứ không vì lợi ích mà tài sản mang lại. Khi niềm tin đảo chiều, giá có thể giảm rất sâu trong thời gian ngắn."
+   ],
+   [
+    "h2",
+    "Năm dấu hiệu thường gặp"
+   ],
+   [
+    "ul",
+    [
+     "Giá tăng nhanh hơn rất nhiều so với lợi nhuận hoặc dòng tiền tạo ra.",
+     "Người mới đổ xô vào, tài khoản mở mới tăng đột biến.",
+     "Nhiều người vay mượn để mua, đòn bẩy trong thị trường tăng cao.",
+     "Lập luận lần này khác được chấp nhận rộng rãi.",
+     "Ai cũng bàn chuyện đầu tư, kể cả người chưa từng quan tâm."
+    ]
+   ],
+   [
+    "h2",
+    "Vì sao khó nhận ra đúng lúc"
+   ],
+   [
+    "p",
+    "Đỉnh chỉ rõ khi nhìn lại. Một thị trường có thể nóng thêm nhiều tháng sau khi các dấu hiệu xuất hiện, và người cảnh giác sớm thường bị chê là bảo thủ. Vì vậy các dấu hiệu bong bóng không dùng để dự báo ngày giá đảo chiều, mà để nhắc mình giảm đòn bẩy và giữ kỷ luật."
+   ],
+   [
+    "h2",
+    "Ví dụ về độ sâu của một cú sụp"
+   ],
+   [
+    "p",
+    "Giả sử một tài sản giảm 50% từ đỉnh. Để về lại giá cũ cần tăng 100%. Nếu giảm 80%, cần tăng tới 400%. Phép tính này cho thấy mất vốn lớn khó gỡ thế nào, nên bảo toàn vốn quan trọng hơn cố bắt đúng đỉnh."
+   ],
+   [
+    "h2",
+    "Cách bảo vệ danh mục"
+   ],
+   [
+    "ul",
+    [
+     "Không dùng đòn bẩy vượt mức chịu được cú giảm 30%.",
+     "Chia nhỏ vốn, góp đều thay vì dồn một lần ở vùng giá nóng.",
+     "Đặt trước mức cắt lỗ và tỷ trọng tối đa cho từng mã.",
+     "Giữ một phần tiền mặt để có lựa chọn khi giá rẻ thật."
+    ]
+   ],
+   [
+    "h2",
+    "Các giai đoạn thường gặp của một chu kỳ bong bóng"
+   ],
+   [
+    "ul",
+    [
+     "Khởi đầu: có câu chuyện hợp lý, giá tăng nhờ cơ bản cải thiện.",
+     "Hưng phấn: dòng tiền mới đổ vào, giá tăng nhanh hơn cơ bản.",
+     "Cuồng nhiệt: ai cũng tham gia, vay mượn nhiều, lập luận lần này khác.",
+     "Đảo chiều: một cú sốc nhỏ làm niềm tin lung lay, người vay bị ép bán.",
+     "Hoảng loạn: giá giảm sâu, thanh khoản cạn, mọi người cùng muốn thoát."
+    ]
+   ],
+   [
+    "p",
+    "Nhận ra mình đang ở giai đoạn nào chưa bao giờ dễ. Nhưng chỉ cần nhớ rằng giai đoạn cuồng nhiệt luôn cảm giác như an toàn nhất, bạn đã có lý do để kiểm tra lại mức đòn bẩy và tỷ trọng của mình."
+   ],
+   [
+    "p",
+    "Xem thêm <a href=\"/f0/tam-ly-fomo-va-hoang-loan.html\">tâm lý FOMO và hoảng loạn</a> và <a href=\"/f0/stop-loss-bao-nhieu-phan-tram.html\">cắt lỗ bao nhiêu phần trăm</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Bong bóng có dự báo được thời điểm vỡ không?",
+    "Không. Dấu hiệu chỉ cho biết rủi ro tăng cao, không cho biết ngày đảo chiều."
+   ],
+   [
+    "Thị trường tăng mạnh có phải bong bóng không?",
+    "Không nhất thiết; cần so giá với lợi nhuận, dòng tiền và mức đòn bẩy."
+   ],
+   [
+    "Người mới nên làm gì khi thị trường quá nóng?",
+    "Giữ tỷ trọng và đòn bẩy trong mức chịu được, không dồn hết vốn một lần."
+   ]
+  ],
+  "rel": [
+   "tam-ly-fomo-va-hoang-loan",
+   "stop-loss-bao-nhieu-phan-tram",
+   "lai-kep-trong-dau-tu"
+  ],
+  "add": [],
+  "grp": 5
+ },
+ {
+  "slug": "quy-tac-72-la-gi",
+  "kw": "quy tắc 72 là gì",
+  "title": "Quy tắc 72 là gì? Ước nhanh số năm để tiền tăng gấp đôi",
+  "desc": "Quy tắc 72: lấy 72 chia cho tỷ suất để ước số năm tiền gấp đôi. Ví dụ, độ chính xác, ứng dụng với lạm phát và những giới hạn cần nhớ.",
+  "body": [
+   [
+    "p",
+    "Quy tắc 72 là cách ước nhanh bằng nhẩm: lấy 72 chia cho tỷ suất tăng trưởng hàng năm (tính bằng phần trăm) để ra số năm cần thiết để một khoản tiền tăng gấp đôi nhờ lãi kép."
+   ],
+   [
+    "h2",
+    "Ví dụ"
+   ],
+   [
+    "ul",
+    [
+     "Tỷ suất 6%/năm: 72 ÷ 6 = 12 năm gấp đôi.",
+     "Tỷ suất 8%/năm: 72 ÷ 8 = 9 năm.",
+     "Tỷ suất 12%/năm: 72 ÷ 12 = 6 năm."
+    ]
+   ],
+   [
+    "p",
+    "Đây là tỷ suất giả định để hiểu nguyên lý. Thị trường cổ phiếu không trả đều mỗi năm, có năm lãi, có năm lỗ."
+   ],
+   [
+    "h2",
+    "Độ chính xác"
+   ],
+   [
+    "p",
+    "Công thức chính xác là ln 2 chia ln của một cộng tỷ suất. Với tỷ suất từ 6% đến 10%, quy tắc 72 sai lệch rất nhỏ. Với 8%, kết quả chính xác là khoảng 9,01 năm, rất gần 9 năm. Với tỷ suất quá thấp hoặc quá cao, bạn có thể đổi số 72 sang 69 hoặc 70 để chính xác hơn."
+   ],
+   [
+    "h2",
+    "Dùng quy tắc 72 cho lạm phát"
+   ],
+   [
+    "p",
+    "Quy tắc này cũng cho thấy sức mua bị bào mòn. Nếu lạm phát bình quân 4%/năm, 72 ÷ 4 = 18 năm thì sức mua của một khoản tiền giữ yên giảm còn một nửa. Vì vậy so tỷ suất gửi tiết kiệm với lạm phát để nhìn lãi suất thực."
+   ],
+   [
+    "h2",
+    "Ví dụ về chi phí và thuế"
+   ],
+   [
+    "p",
+    "Nếu tỷ suất danh nghĩa 8% nhưng chi phí và thuế làm tỷ suất thực nhận còn 6%, thời gian gấp đôi tăng từ 9 lên 12 năm. Một chênh lệch nhỏ mỗi năm cộng dồn thành khác biệt đáng kể."
+   ],
+   [
+    "h2",
+    "Giới hạn cần nhớ"
+   ],
+   [
+    "ul",
+    [
+     "Chỉ là ước lượng, không thay cho tính chính xác.",
+     "Giả định tỷ suất đều, trong khi thực tế biến động.",
+     "Không tính đến việc rút tiền hay góp thêm giữa chừng."
+    ]
+   ],
+   [
+    "h2",
+    "Bài tập nhỏ"
+   ],
+   [
+    "p",
+    "Hãy thử tự hỏi: với tỷ suất giả định 7%/năm, bao lâu để 200 triệu thành 400 triệu? Lấy 72 chia 7 được khoảng 10,3 năm. Còn nếu muốn gấp bốn lần, bạn cần hai lần gấp đôi, tức khoảng 20,6 năm. Làm vài phép nhẩm như vậy giúp bạn cảm nhận thời gian quan trọng thế nào trong lãi kép, và vì sao bắt đầu sớm lại có giá trị lớn đến vậy."
+   ],
+   [
+    "p",
+    "Xem thêm bài <a href=\"/f0/lai-kep-trong-dau-tu.html\">lãi kép trong đầu tư</a>. Ví dụ mang tính minh họa, không phải cam kết lợi nhuận. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ],
+   [
+    "p",
+    "Cách tích sản đều đặn theo dài hạn: <a href=\"/bao-cao-2026.html#tichsan\">xem mục tích sản</a>."
+   ]
+  ],
+  "faq": [
+   [
+    "Quy tắc 72 có áp dụng cho cổ phiếu không?",
+    "Dùng được để ước tỷ suất bình quân giả định, nhưng thực tế biến động nên chỉ để minh họa."
+   ],
+   [
+    "Vì sao là 72?",
+    "Vì 72 có nhiều ước số (2, 3, 4, 6, 8, 9, 12) nên dễ nhẩm với các tỷ suất phổ biến."
+   ],
+   [
+    "Quy tắc 72 có tính lãi kép không?",
+    "Có, nó giả định lợi nhuận được tái đầu tư mỗi năm."
+   ]
+  ],
+  "rel": [
+   "lai-kep-trong-dau-tu",
+   "danh-muc-tich-san-mau",
+   "ty-suat-co-tuc-la-gi"
+  ],
+  "add": [],
+  "grp": 7
+ },
+ {
+  "slug": "thien-kien-neo-gia-la-gi",
+  "kw": "thiên kiến neo giá là gì",
+  "title": "Thiên kiến neo giá là gì? Vì sao nhà đầu tư kẹt ở giá vốn",
+  "desc": "Neo giá là xu hướng bám vào một con số ban đầu như giá mua. Giải thích ví dụ, hậu quả khi chờ về giá vốn và cách tự hỏi để ra quyết định lý trí hơn.",
+  "body": [
+   [
+    "p",
+    "Neo giá (anchoring bias) là xu hướng dựa quá nhiều vào thông tin đầu tiên nhận được, thường là một con số, khi ra quyết định về sau. Trong đầu tư, cái neo phổ biến nhất là giá mua của chính bạn."
+   ],
+   [
+    "h2",
+    "Ví dụ"
+   ],
+   [
+    "p",
+    "Bạn mua cổ phiếu ở 40.000 đồng, giá giảm còn 30.000 đồng và bạn tự nhủ chờ về 40.000 đồng sẽ bán. Nhưng thị trường không biết bạn mua giá nào. Giá mua của bạn không tạo ra lợi nhuận cho doanh nghiệp, không ảnh hưởng người mua bán khác. Nó chỉ là cái neo trong đầu."
+   ],
+   [
+    "h2",
+    "Hậu quả thường gặp"
+   ],
+   [
+    "ul",
+    [
+     "Giữ lì mã lỗ để chờ hòa vốn trong khi cơ hội khác tốt hơn.",
+     "Bán sớm mã lãi vì thấy đã đạt mục tiêu cũ.",
+     "Không mua thêm mã tốt vì giá đã cao hơn giá từng thấy."
+    ]
+   ],
+   [
+    "h2",
+    "Câu hỏi để thoát khỏi cái neo"
+   ],
+   [
+    "p",
+    "Hãy tự hỏi: nếu hôm nay tôi chưa sở hữu cổ phiếu này, với thông tin hiện tại, tôi có mua nó ở giá này không? Nếu câu trả lời là có, giữ là hợp lý dù đang lỗ. Nếu là không, lý do giữ chỉ còn là chờ về giá vốn."
+   ],
+   [
+    "h2",
+    "Toán học của việc chờ hòa vốn"
+   ],
+   [
+    "p",
+    "Mất 25% cần tăng 33% để hòa vốn; mất 50% cần tăng 100%. Chờ hòa vốn đồng nghĩa với việc đặt cược vào mức tăng rất lớn, trong khi vốn bị khóa lại, không dùng được cho cơ hội khác. Đó là chi phí cơ hội mà cái neo che đi."
+   ],
+   [
+    "h2",
+    "Cách đối phó"
+   ],
+   [
+    "ul",
+    [
+     "Đánh giá định kỳ từng mã như người mới, không nhìn giá vốn.",
+     "Viết trước lý do mua, mức thoát và điều kiện thay đổi quan điểm.",
+     "Dùng tiêu chí định lượng như lợi nhuận, dòng tiền, định giá để quyết định."
+    ]
+   ],
+   [
+    "h2",
+    "Neo giá ở nơi khác"
+   ],
+   [
+    "ul",
+    [
+     "Neo vào mức đỉnh cũ: tưởng cổ phiếu từng đạt giá cao thì rẻ khi ở dưới đỉnh.",
+     "Neo vào giá mục tiêu của người khác mà không kiểm tra giả định.",
+     "Neo vào P/E lịch sử khi cấu trúc doanh nghiệp đã thay đổi."
+    ]
+   ],
+   [
+    "p",
+    "Ở những trường hợp này, cách đối phó vẫn như nhau: quay về doanh nghiệp hiện tại, dòng tiền hiện tại và rủi ro hiện tại, không bám vào bất kỳ con số nào chỉ vì nó đến trước."
+   ],
+   [
+    "p",
+    "Xem thêm <a href=\"/f0/ac-cam-thua-lo-la-gi.html\">ác cảm thua lỗ</a>, <a href=\"/f0/tam-ly-fomo-va-hoang-loan.html\">tâm lý FOMO và hoảng loạn</a> và <a href=\"/f0/stop-loss-bao-nhieu-phan-tram.html\">cắt lỗ</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Giá vốn có quan trọng không?",
+    "Quan trọng cho việc tính lãi lỗ và thuế, nhưng không nên là lý do duy nhất để giữ hay bán."
+   ],
+   [
+    "Neo giá khác ác cảm thua lỗ thế nào?",
+    "Neo giá là bám vào con số; ác cảm thua lỗ là nỗi đau mất mát lớn hơn niềm vui được lợi. Hai thiên kiến thường đi cùng nhau."
+   ],
+   [
+    "Có bỏ hẳn được thiên kiến neo giá không?",
+    "Khó bỏ hẳn, nhưng quy tắc viết sẵn và đánh giá định kỳ giúp giảm ảnh hưởng."
+   ]
+  ],
+  "rel": [
+   "ac-cam-thua-lo-la-gi",
+   "tam-ly-fomo-va-hoang-loan",
+   "nhat-ky-giao-dich"
+  ],
+  "add": [],
+  "grp": 5
+ },
+ {
+  "slug": "ac-cam-thua-lo-la-gi",
+  "kw": "ác cảm thua lỗ là gì",
+  "title": "Ác cảm thua lỗ là gì? Vì sao ta giữ mã lỗ và bán sớm mã lãi",
+  "desc": "Ác cảm thua lỗ là xu hướng sợ mất mát hơn thích được lợi. Vì sao ta giữ mã lỗ, bán sớm mã lãi và cách đặt quy tắc để giảm tác hại.",
+  "body": [
+   [
+    "p",
+    "Ác cảm thua lỗ (loss aversion) là xu hướng cảm nhận nỗi đau khi mất một khoản mạnh hơn niềm vui khi được một khoản tương đương. Khái niệm được Daniel Kahneman và Amos Tversky mô tả, với ước tính nỗi đau lớn hơn khoảng hai lần."
+   ],
+   [
+    "h2",
+    "Biểu hiện khi đầu tư"
+   ],
+   [
+    "ul",
+    [
+     "Bán sớm cổ phiếu đang lãi để khóa niềm vui.",
+     "Giữ lì cổ phiếu đang lỗ vì không muốn thừa nhận thua.",
+     "Không dám cắt lỗ dù lý do mua ban đầu không còn đúng."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ"
+   ],
+   [
+    "p",
+    "Bạn có hai mã: một mã lãi 10% và một mã lỗ 20%. Bán mã lãi để thấy mình thắng, giữ mã lỗ chờ hòa vốn. Sau một thời gian, mã lãi tiếp tục tăng mà bạn đã ra, mã lỗ tiếp tục giảm. Danh mục dần chỉ còn toàn mã lỗ lâu năm."
+   ],
+   [
+    "h2",
+    "Vì sao lỗ nhỏ rẻ hơn lỗ lớn"
+   ],
+   [
+    "p",
+    "Mất 10% cần tăng khoảng 11% để hòa vốn; mất 30% cần tăng khoảng 43%; mất 50% cần tăng 100%. Mức lỗ càng sâu, đường quay lại càng dài. Vì thế một quy tắc cắt lỗ đặt trước khi vào lệnh thường rẻ hơn rất nhiều so với cố gỡ một khoản lỗ lớn."
+   ],
+   [
+    "h2",
+    "Cách giảm tác hại"
+   ],
+   [
+    "ul",
+    [
+     "Đặt quy tắc cắt lỗ và chốt lời bằng con số trước khi mua.",
+     "Nhìn cả danh mục thay vì từng mã riêng lẻ.",
+     "Ghi nhật ký lý do mua và đánh giá lại khi lý do thay đổi.",
+     "Giảm tần suất xem giá để bớt phản ứng theo cảm xúc."
+    ]
+   ],
+   [
+    "h2",
+    "Lưu ý"
+   ],
+   [
+    "p",
+    "Cắt lỗ không có nghĩa lúc nào cũng bán khi giá giảm; điều quan trọng là quyết định dựa trên quy tắc đã định thay vì cảm xúc. Mỗi nhà đầu tư cần mức chấp nhận rủi ro riêng."
+   ],
+   [
+    "h2",
+    "Bài tập nhỏ"
+   ],
+   [
+    "p",
+    "Mở danh mục của bạn, liệt kê các mã lãi và các mã lỗ cùng thời gian nắm giữ. Nếu các mã lỗ được giữ lâu hơn nhiều so với mã lãi, đó là dấu hiệu của ác cảm thua lỗ. Với mỗi mã lỗ, hãy viết một câu trả lời cho câu hỏi: nếu chưa sở hữu, tôi có mua ở giá này không? Kết quả thường khiến nhiều người nhìn danh mục của mình khác hẳn."
+   ],
+   [
+    "p",
+    "Xem thêm <a href=\"/f0/thien-kien-neo-gia-la-gi.html\">thiên kiến neo giá</a> và <a href=\"/f0/stop-loss-bao-nhieu-phan-tram.html\">cắt lỗ bao nhiêu phần trăm</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Ác cảm thua lỗ có ở mọi người không?",
+    "Nghiên cứu hành vi cho thấy khá phổ biến, mức độ khác nhau theo từng người."
+   ],
+   [
+    "Làm sao biết mình có bị không?",
+    "Nếu danh mục chứa nhiều mã lỗ lâu năm và rất ít mã thắng, đó là dấu hiệu đáng xem lại."
+   ],
+   [
+    "Nhật ký giao dịch giúp gì?",
+    "Giúp nhìn lại lý do mua bán bằng chữ viết, thay vì nhớ theo cảm xúc."
+   ]
+  ],
+  "rel": [
+   "thien-kien-neo-gia-la-gi",
+   "tam-ly-fomo-va-hoang-loan",
+   "stop-loss-bao-nhieu-phan-tram"
+  ],
+  "add": [],
+  "grp": 5
+ },
+ {
+  "slug": "ty-le-chi-tra-co-tuc-la-gi",
+  "kw": "tỷ lệ chi trả cổ tức là gì",
+  "title": "Tỷ lệ chi trả cổ tức là gì? Cổ tức có bền không",
+  "desc": "Tỷ lệ chi trả cổ tức là phần trăm lợi nhuận được chia cho cổ đông. Công thức, ví dụ, ngưỡng tham khảo và cách đọc cùng dòng tiền.",
+  "body": [
+   [
+    "p",
+    "Tỷ lệ chi trả cổ tức (payout ratio) cho biết doanh nghiệp dùng bao nhiêu phần trăm lợi nhuận để trả cổ tức cho cổ đông, phần còn lại được giữ lại để tái đầu tư."
+   ],
+   [
+    "h2",
+    "Công thức và ví dụ"
+   ],
+   [
+    "p",
+    "Tỷ lệ chi trả = Cổ tức mỗi cổ phiếu ÷ EPS. Ví dụ EPS 5.000 đồng, cổ tức tiền mặt 2.000 đồng thì tỷ lệ chi trả là 40%, phần 60% còn lại được giữ để mở rộng kinh doanh. Nếu EPS 5.000 đồng mà trả cổ tức 5.500 đồng, tỷ lệ là 110%: doanh nghiệp trả nhiều hơn lợi nhuận kiếm được, phải lấy từ tiền tích lũy hoặc vay."
+   ],
+   [
+    "h2",
+    "Đọc tỷ lệ chi trả thế nào"
+   ],
+   [
+    "ul",
+    [
+     "Thấp (dưới 30%): giữ lại nhiều để tăng trưởng, thường gặp ở doanh nghiệp đang mở rộng.",
+     "Trung bình (30% đến 60%): cân bằng giữa chia và giữ lại.",
+     "Cao (trên 80%): chia gần hết lợi nhuận, cổ tức dễ bị cắt nếu lợi nhuận giảm."
+    ]
+   ],
+   [
+    "h2",
+    "Cổ tức bền cần nhiều hơn một con số"
+   ],
+   [
+    "p",
+    "Hai doanh nghiệp cùng tỷ lệ chi trả 50% có thể rất khác nhau. Một bên có dòng tiền kinh doanh ổn định và ít nợ, bên kia có lợi nhuận kế toán đẹp nhưng dòng tiền âm. Cổ tức thực chất được trả bằng tiền, nên hãy so cổ tức với dòng tiền tự do chứ không chỉ với lợi nhuận."
+   ],
+   [
+    "h2",
+    "Ví dụ so sánh"
+   ],
+   [
+    "p",
+    "Doanh nghiệp A trả 60% lợi nhuận, dòng tiền tự do gấp 1,2 lần cổ tức. Doanh nghiệp B trả 60% lợi nhuận nhưng dòng tiền tự do chỉ bằng 0,4 lần cổ tức, phần còn lại lấy từ vay. A có cổ tức bền hơn B dù tỷ lệ giống nhau."
+   ],
+   [
+    "h2",
+    "Những bẫy cần tránh"
+   ],
+   [
+    "ul",
+    [
+     "Tỷ suất cổ tức cao có thể do giá giảm mạnh chứ không do doanh nghiệp giỏi.",
+     "Cổ tức bằng cổ phiếu không phải tiền mặt; xem bài về pha loãng.",
+     "Một năm chia cao bất thường không có nghĩa năm sau lặp lại."
+    ]
+   ],
+   [
+    "h2",
+    "Bài tập nhỏ"
+   ],
+   [
+    "p",
+    "Chọn một doanh nghiệp trả cổ tức tiền mặt đều đặn, lấy cổ tức mỗi cổ phiếu và EPS của năm năm gần nhất, tính tỷ lệ chi trả từng năm. Nếu tỷ lệ ổn định trong khi EPS tăng dần, cổ tức đang lớn lên cùng lợi nhuận. Nếu tỷ lệ tăng vọt vì EPS giảm, mức cổ tức hiện tại có thể khó giữ."
+   ],
+   [
+    "p",
+    "Xem thêm <a href=\"/f0/co-tuc-la-gi.html\">cổ tức là gì</a> và <a href=\"/f0/ty-suat-co-tuc-la-gi.html\">tỷ suất cổ tức</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ],
+   [
+    "p",
+    "Cổ tức trong chiến lược tích sản dài hạn: <a href=\"/bao-cao-2026.html#tichsan\">xem mục tích sản</a>."
+   ]
+  ],
+  "faq": [
+   [
+    "Tỷ lệ chi trả trên 100% có nghĩa là gì?",
+    "Doanh nghiệp trả nhiều hơn lợi nhuận kiếm được trong kỳ, cần xem tiền lấy từ đâu."
+   ],
+   [
+    "Tỷ lệ chi trả khác tỷ suất cổ tức thế nào?",
+    "Tỷ lệ chi trả so với lợi nhuận; tỷ suất cổ tức so với giá cổ phiếu."
+   ],
+   [
+    "Doanh nghiệp không trả cổ tức có xấu không?",
+    "Không nhất thiết; nếu lợi nhuận giữ lại được tái đầu tư hiệu quả, giá trị cổ đông vẫn tăng."
+   ]
+  ],
+  "rel": [
+   "co-tuc-la-gi",
+   "ty-suat-co-tuc-la-gi",
+   "dong-tien-kinh-doanh-la-gi"
+  ],
+  "add": [],
+  "grp": 4
  }
 ]
