@@ -44,6 +44,9 @@ for _x in raw:
     _x["say"] = xung_ho.le_phep(_doc_web(_x.get("say", "")))
     if isinstance(_x.get("cap"), (list, tuple)): _x["cap"] = tuple(xung_ho.le_phep(c) for c in _x["cap"])
     elif isinstance(_x.get("cap"), str): _x["cap"] = xung_ho.le_phep(_x["cap"])
+try:
+    import kiem_loi; _QCV = kiem_loi.kiem([{"loi": x.get("say", "")} for x in raw if not x.get("cta")], None, False)
+except Exception as _e: _QCV = []
 
 def conv(sc):
     s = dict(sc); k = s["k"]
@@ -292,7 +295,7 @@ for i, sc in enumerate(raw):
 if ch and not ch[0].startswith("0:00"): ch[0] = "0:00" + ch[0][ch[0].index(" "):]
 open(os.path.join(OUT, key + "_chuong.txt"), "w", encoding="utf-8").write("\n".join(ch) + "\n")
 # 7) TỰ KIỂM CHẤT LƯỢNG (ghi KEY_qc.txt; NV3 không đăng nếu có dòng LỖI)
-qc = []
+qc = list(_QCV)
 try:
     fr = "/tmp/qc_%s.png" % key
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", "0.3", "-i", out, "-frames:v", "1", fr])
