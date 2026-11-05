@@ -104,11 +104,11 @@ def make(sc, meta=None, ph=None, out=None):
     d.rectangle([0, 0, 14, H], fill=VANG)
     CK = os.path.join(HERE, "engine", "chu_kenh.png")
     if os.path.exists(CK):  # chân dung tách nền, nhỏ vừa ở góc phải dưới (anh Huy 5/11 23:41), nền là ảnh minh hoạ
-        pt = Image.open(CK).convert("RGBA"); ph_ = 540; pt = pt.resize((int(pt.width*ph_/pt.height), ph_), Image.LANCZOS)
+        pt = Image.open(CK).convert("RGBA"); ph_ = 600; pt = pt.resize((int(pt.width*ph_/pt.height), ph_), Image.LANCZOS)
         a_ = pt.getchannel("A"); rm = Image.new("L", pt.size, 255)
         for x in range(70): ImageDraw.Draw(rm).line([(x, 0), (x, pt.height)], fill=int(255*x/70))
-        from PIL import ImageChops; pt = _sticker(pt); pt.putalpha(ImageChops.multiply(pt.getchannel("A"), rm))
-        px_ = W - pt.width + 6
+        pt = _sticker(pt)  # ảnh gốc nét, đủ 2 vai -> không làm mờ mép
+        px_ = W - pt.width - 24
         gl = Image.new("L", (W, H)); ImageDraw.Draw(gl).ellipse([px_+30, H-ph_-20, px_+pt.width, H+150], fill=170)
         gl = gl.filter(ImageFilter.GaussianBlur(50)); im.paste(Image.new("RGB", (W, H), (20, 10, 34)), (0, 0), gl)
         im.paste(pt, (px_, H - ph_), pt); d = ImageDraw.Draw(im)
