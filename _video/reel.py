@@ -1,6 +1,6 @@
 # Khung REEL DỌC 1080x1920 (TikTok / FB Reel / YouTube Shorts) – thương hiệu tím-vàng Huy Nguyễn.
 # Học công thức "9 PHÚT KINH DOANH": tiêu đề vàng 2 tầng cố định trên cùng, ảnh thật ở giữa, chữ to theo lời,
-# dải cuối cố định "VIDEO 19H HẰNG NGÀY – HUY NGUYỄN CHỨNG KHOÁN".
+# cuối khung: miễn trừ chữ nhỏ (không đọc) + chungkhoanhuynguyen.com (anh Huy chốt 6/11: bỏ dải vàng).
 # Đầu vào: _video/queue/<LÔ>/reel.json = [{key, hook:[dòng1, dòng2], canh:[{chu_to, loi, loi_doc, anh?}], nhan?}]
 # Dùng: python _video/reel.py <LÔ> <KEY>        (--khung: chỉ xuất 3 ảnh khung mẫu, không đọc giọng)
 import sys, os, re, json, subprocess, wave, time
@@ -95,28 +95,28 @@ def ve_phu_de(im, loi, t, T, y):
         c = VANG if g0 + i == k else TRANG; tw = d.textlength(s, font=f)
         d.text((W/2 - tw/2, y + i * 78), s, font=f, fill=c, stroke_width=5, stroke_fill=(12, 4, 24))
 
+MIEN_TRU = "Nội dung chia sẻ kiến thức, không phải khuyến nghị mua bán."
+_MT = re.compile(r"\s*[^.!?]*(chia sẻ kiến thức|không phải (là )?khuyến nghị)[^.!?]*[.!?]?", re.I)
+def bo_mien_tru(t):
+    """Câu miễn trừ không đọc, không chạy phụ đề – đã in chữ nhỏ cố định ở cuối khung."""
+    return _MT.sub("", t or "").strip()
+
 def ve_cuoi(im, prog):
-    """Dải thương hiệu cố định dưới cùng."""
-    d = ImageDraw.Draw(im); y0 = H - 250
-    g = np.linspace(0, 1, W)[None, :, None]
-    bar = (np.array(VANG2) * (1 - g) + np.array(VANG) * g).repeat(150, axis=0).astype(np.uint8)
-    im.paste(Image.fromarray(bar), (0, y0))
-    d.rectangle([0, y0, int(W * prog), y0 + 7], fill=TIM)
-    s1 = "VIDEO 19H HẰNG NGÀY"; s2 = "HUY NGUYỄN CHỨNG KHOÁN"
-    f1 = F("Black", 50); f2 = F("Bold", 32)
-    d.text((W/2 - d.textlength(s1, font=f1)/2, y0 + 22), s1, font=f1, fill=(30, 10, 56))
-    d.text((W/2 - d.textlength(s2, font=f2)/2, y0 + 86), s2, font=f2, fill=(58, 22, 96))
-    u1, u2 = "chungkhoanhuynguyen", ".com"; fu = F("Bold", 30); fd = F("SemiBold", 30)
-    wu = d.textlength(u1, font=fu) + d.textlength(u2, font=fd); x = W/2 - wu/2; yu = H - 76
+    """Cuối khung: vạch tiến độ mảnh + chữ miễn trừ nhỏ + tên web."""
+    d = ImageDraw.Draw(im); y0 = H - 190
+    d.rectangle([0, y0, W, y0 + 5], fill=(46, 20, 78)); d.rectangle([0, y0, int(W * prog), y0 + 5], fill=TIM_S)
+    fm = F("Medium", 24); d.text((W/2 - d.textlength(MIEN_TRU, font=fm)/2, y0 + 34), MIEN_TRU, font=fm, fill=(168, 150, 196))
+    u1, u2 = "chungkhoanhuynguyen", ".com"; fu = F("Bold", 32); fd = F("SemiBold", 32)
+    wu = d.textlength(u1, font=fu) + d.textlength(u2, font=fd); x = W/2 - wu/2; yu = H - 96
     d.text((x, yu), u1, font=fu, fill=TRANG); d.text((x + d.textlength(u1, font=fu), yu), u2, font=fd, fill=VANG)
 
 def khung(R, i, t, T, ph, tong_t, tong_T):
     im = NEN.copy(); c = R["canh"][i]
     yb = ve_dau(im, R.get("hook"), R.get("nhan"))
-    y0 = max(yb + 24, 430); y1 = 1300
+    y0 = max(yb + 24, 430); y1 = 1360
     ve_anh(im, ph, t, T, y0, y1)
     ve_chu_to(im, c.get("chu_to", ""), t, y1)
-    ve_phu_de(im, c.get("loi", ""), t, T, 1352)
+    ve_phu_de(im, bo_mien_tru(c.get("loi", "")), t, T, 1420)
     ve_cuoi(im, tong_t / max(tong_T, 0.1))
     return im
 
@@ -152,7 +152,7 @@ def main():
     tts = Vieneu(); parts = []; b = [0.0]; t0 = time.time()
     for i, c in enumerate(R["canh"]):
         src = "%s/%02d_raw.wav" % (WORK, i); dst = "%s/%02d.wav" % (WORK, i)
-        tts.save(np.asarray(tts.infer((c.get("loi_doc") or c.get("loi") or ".").strip(), voice=VOICE, temperature=0.7), dtype=np.float32), src)
+        tts.save(np.asarray(tts.infer((bo_mien_tru(c.get("loi_doc") or c.get("loi")) or ".").strip(), voice=VOICE, temperature=0.7), dtype=np.float32), src)
         pad = 0.18 + (0.9 if i == len(R["canh"]) - 1 else 0)
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", src, "-af",
             "silenceremove=start_periods=1:start_threshold=-40dB:start_silence=0.05,areverse,silenceremove=start_periods=1:start_threshold=-40dB:start_silence=0.08,areverse,atempo=1.08,apad=pad_dur=%.2f" % pad,
@@ -180,7 +180,7 @@ def main():
     khung(R, 0, 1.5, 4, phs[0], 1.5, b[-1]).resize((540, 960), Image.LANCZOS).save(os.path.join(OUT, key + "_bia.png"))
     cap = R.get("short_caption") or R.get("tieu_de", "")
     open(os.path.join(OUT, key + "_mo_ta.txt"), "w", encoding="utf-8").write(
-        cap + "\n\n📌 Video 19h hằng ngày – Huy Nguyễn Chứng Khoán\n🌐 chungkhoanhuynguyen.com\n💬 Zalo tư vấn: 0365 188 286\n" +
+        cap + "\n\n📌 Huy Nguyễn Chứng Khoán\n🌐 chungkhoanhuynguyen.com\n💬 Zalo tư vấn: 0365 188 286\n" +
         (" ".join("#" + t.lstrip("#") for t in R.get("tags", [])) + "\n"))
     if kho is not None and getattr(kho, "credit", None):
         open(os.path.join(OUT, key + "_anh.txt"), "w", encoding="utf-8").write("Ảnh minh hoạ (Wikimedia Commons):\n" + "\n".join(kho.credit) + "\n")
