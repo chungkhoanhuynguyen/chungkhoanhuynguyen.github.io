@@ -160,6 +160,12 @@ def main():
     OUT = os.path.join(HERE, "out"); os.makedirs(OUT, exist_ok=True); WORK = "/tmp/reel_" + key; os.makedirs(WORK, exist_ok=True)
     R = next(r for r in json.load(open(os.path.join(QD, "reel.json"), encoding="utf-8")) if r["key"] == key)
     ket_cau_hoi(R)
+    try:
+        import kiem_loi; QC = kiem_loi.kiem([c for c in R["canh"] if not c.get("web") and not c.get("hoi")], R.get("cau_hoi"), True)
+    except Exception as e: QC = ["CẢNH BÁO không tự kiểm được văn phong: %s" % e]
+    os.makedirs(os.path.join(HERE, "out"), exist_ok=True)
+    open(os.path.join(HERE, "out", key + "_qc.txt"), "w", encoding="utf-8").write(("\n".join(QC) or "ĐẠT văn phong") + "\n")
+    print(key, "van phong:", QC or "dat", flush=True)
     import xung_ho                      # xưng em – anh chị (anh Huy chốt 6/11)
     for c in R["canh"]:
         for k_ in ("loi", "loi_doc", "chu_to"): c[k_] = xung_ho.le_phep(c.get(k_, ""))
