@@ -9,9 +9,16 @@
   ],
   "canh": [
    {
+    "chu_to": "NHNN BƠM TIỀN 182 NGÀY",
+    "anh": "State Bank of Vietnam",
+    "loi": "Tin nóng: Ngân hàng Nhà nước vừa mở đợt bơm tiền cho các ngân hàng qua hoán đổi ngoại tệ, kỳ hạn 182 ngày, tối đa 2 tỷ đô la.",
+    "loi_doc": "Tin nóng: Ngân hàng Nhà nước vừa mở đợt bơm tiền cho các ngân hàng qua hoán đổi ngoại tệ, kỳ hạn một trăm tám mươi hai ngày, tối đa hai tỷ đô la.",
+    "tin": 1
+   },
+   {
     "chu_to": "7 → 182 NGÀY",
-    "loi": "Đợt hoán đổi trước đó của Ngân hàng Nhà nước chỉ kéo dài 7 ngày. Lần này là 182 ngày.",
-    "loi_doc": "Đợt hoán đổi trước đó của Ngân hàng Nhà nước chỉ kéo dài bảy ngày. Lần này là một trăm tám mươi hai ngày.",
+    "loi": "Điều đáng chú ý: đợt hoán đổi trước đó chỉ kéo dài 7 ngày. Lần này là 182 ngày.",
+    "loi_doc": "Điều đáng chú ý: đợt hoán đổi trước đó chỉ kéo dài bảy ngày. Lần này là một trăm tám mươi hai ngày.",
     "anh": "State Bank of Vietnam"
    },
    {
@@ -21,9 +28,9 @@
     "anh": "United States one hundred dollar bill 2013 series"
    },
    {
-    "chu_to": "TỐI ĐA 2 TỶ USD",
-    "loi": "Hạn mức tối đa 2 tỷ đô la, tương đương khoảng 48.800 tỷ đồng, ngày giá trị 9 tháng 11.",
-    "loi_doc": "Hạn mức tối đa hai tỷ đô la, tương đương khoảng bốn mươi tám nghìn tám trăm tỷ đồng, ngày giá trị chín tháng mười một.",
+    "chu_to": "KHOẢNG 48.800 TỶ ĐỒNG",
+    "loi": "Hai tỷ đô la tương đương khoảng 48.800 tỷ đồng, tiền vào hệ thống từ ngày 9 tháng 11.",
+    "loi_doc": "Hai tỷ đô la tương đương khoảng bốn mươi tám nghìn tám trăm tỷ đồng, tiền vào hệ thống từ ngày chín tháng mười một.",
     "anh": "Vietnamese dong banknotes"
    },
    {
@@ -72,6 +79,13 @@
    "CÓ HẸN CHUỘC?"
   ],
   "canh": [
+   {
+    "chu_to": "NHNN BƠM TIỀN 182 NGÀY",
+    "anh": "State Bank of Vietnam",
+    "loi": "Tin nóng: Ngân hàng Nhà nước vừa mở đợt bơm tiền cho các ngân hàng qua hoán đổi ngoại tệ, kỳ hạn 182 ngày, tối đa 2 tỷ đô la. Cơ chế này hiểu đơn giản như sau.",
+    "loi_doc": "Tin nóng: Ngân hàng Nhà nước vừa mở đợt bơm tiền cho các ngân hàng qua hoán đổi ngoại tệ, kỳ hạn một trăm tám mươi hai ngày, tối đa hai tỷ đô la. Cơ chế này hiểu đơn giản như sau.",
+    "tin": 1
+   },
    {
     "chu_to": "HOÁN ĐỔI LÀ GÌ?",
     "loi": "Hoán đổi ngoại tệ giống như cầm đồ có hẹn chuộc.",
@@ -137,10 +151,11 @@
   ],
   "canh": [
    {
-    "chu_to": "3 MỐC THEO DÕI",
-    "loi": "Sau tin Ngân hàng Nhà nước hoán đổi kỳ hạn 182 ngày, có ba mốc đáng theo dõi.",
-    "loi_doc": "Sau tin Ngân hàng Nhà nước hoán đổi kỳ hạn một trăm tám mươi hai ngày, có ba mốc đáng theo dõi.",
-    "anh": "State Bank of Vietnam"
+    "chu_to": "NHNN BƠM TIỀN 182 NGÀY",
+    "anh": "State Bank of Vietnam",
+    "loi": "Tin nóng: Ngân hàng Nhà nước vừa mở đợt bơm tiền cho các ngân hàng qua hoán đổi ngoại tệ, kỳ hạn 182 ngày, tối đa 2 tỷ đô la. Sau tin này, có ba mốc cần theo dõi.",
+    "loi_doc": "Tin nóng: Ngân hàng Nhà nước vừa mở đợt bơm tiền cho các ngân hàng qua hoán đổi ngoại tệ, kỳ hạn một trăm tám mươi hai ngày, tối đa hai tỷ đô la. Sau tin này, có ba mốc cần theo dõi.",
+    "tin": 1
    },
    {
     "chu_to": "MỐC 1: ĐẤU THẦU 6/11",
