@@ -65,20 +65,21 @@ def make(sc, meta=None, ph=None, out=None):
         im.paste(p, (W-pw, 0), m); d = ImageDraw.Draw(im)
     d.rectangle([0, 0, 14, H], fill=VANG)
     CK = os.path.join(HERE, "engine", "chu_kenh.png")
-    if os.path.exists(CK):  # mặt chủ kênh NHỎ ở góc (anh Huy 5/11 23:39: không để to)
-        pt = Image.open(CK).convert("RGBA"); D_ = 210
-        sq = pt.crop((int(pt.width*0.12), int(pt.height*0.02), int(pt.width*0.88), int(pt.height*0.02) + int(pt.width*0.76))).resize((D_, D_), Image.LANCZOS)
-        bgc = Image.new("RGBA", (D_, D_), (58, 24, 88, 255)); bgc.alpha_composite(sq)
-        cm = Image.new("L", (D_, D_)); ImageDraw.Draw(cm).ellipse([0, 0, D_-1, D_-1], fill=255)
-        cx_, cy_ = W - D_ - 36, H - D_ - 36
-        ImageDraw.Draw(im).ellipse([cx_-7, cy_-7, cx_+D_+6, cy_+D_+6], fill=VANG)
-        im.paste(bgc.convert("RGB"), (cx_, cy_), cm); d = ImageDraw.Draw(im)
+    if os.path.exists(CK):  # chân dung tách nền, nhỏ vừa ở góc phải dưới (anh Huy 5/11 23:41), nền là ảnh minh hoạ
+        pt = Image.open(CK).convert("RGBA"); ph_ = 470; pt = pt.resize((int(pt.width*ph_/pt.height), ph_), Image.LANCZOS)
+        a_ = pt.getchannel("A"); rm = Image.new("L", pt.size, 255)
+        for x in range(60): ImageDraw.Draw(rm).line([(x, 0), (x, pt.height)], fill=int(255*x/60))
+        from PIL import ImageChops; pt.putalpha(ImageChops.multiply(a_, rm))
+        px_ = W - pt.width + 20
+        gl = Image.new("L", (W, H)); ImageDraw.Draw(gl).ellipse([px_+30, H-ph_-20, px_+pt.width, H+150], fill=170)
+        gl = gl.filter(ImageFilter.GaussianBlur(50)); im.paste(Image.new("RGB", (W, H), (20, 10, 34)), (0, 0), gl)
+        im.paste(pt, (px_, H - ph_), pt); d = ImageDraw.Draw(im)
         fl = dx2.F("Black", 30); d.text((60, 30), "HUY NGUYỄN", font=fl, fill=TRANG)
         d.text((60 + d.textlength("HUY NGUYỄN ", font=fl), 36), "CHỨNG KHOÁN", font=dx2.F("SemiBold", 22), fill=VANG)
         fu = dx2.F("Bold", 30); u = "chungkhoanhuynguyen.com"
         d.rounded_rectangle([50, H-78, 50 + d.textlength(u, font=fu) + 32, H-28], 12, fill=(0, 0, 0))
         d.text((66, H-74), u, font=fu, fill=VANG)
-        MW = 740
+        MW = 720
     else:
         try: dx2.brand(im, d, W-170, 30, 0.62, 1.0, TIM0)
         except Exception: d.text((W-280, 34), "HUY NGUYỄN", font=dx2.F("Black", 34), fill=TRANG)
