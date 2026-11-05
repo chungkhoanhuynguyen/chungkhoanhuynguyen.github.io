@@ -10,45 +10,39 @@
   "canh": [
    {
     "chu_to": "NHNN BƠM TIỀN 182 NGÀY",
+    "loi": "Em chào anh chị, em là Huy, môi giới chứng khoán. Sáng nay em đọc được một tin nóng. Ngân hàng Nhà nước vừa thông báo bơm tiền cho các ngân hàng qua hoán đổi ngoại tệ, kỳ hạn 182 ngày, tối đa 2 tỷ đô la.",
+    "loi_doc": "Em chào anh chị, em là Huy, môi giới chứng khoán. Sáng nay em đọc được một tin nóng. Ngân hàng Nhà nước vừa thông báo bơm tiền cho các ngân hàng qua hoán đổi ngoại tệ, kỳ hạn một trăm tám mươi hai ngày, tối đa hai tỷ đô la.",
     "anh": "State Bank of Vietnam",
-    "loi": "Tin nóng: Ngân hàng Nhà nước vừa mở đợt bơm tiền cho các ngân hàng qua hoán đổi ngoại tệ, kỳ hạn 182 ngày, tối đa 2 tỷ đô la.",
-    "loi_doc": "Tin nóng: Ngân hàng Nhà nước vừa mở đợt bơm tiền cho các ngân hàng qua hoán đổi ngoại tệ, kỳ hạn một trăm tám mươi hai ngày, tối đa hai tỷ đô la.",
     "tin": 1
    },
    {
-    "chu_to": "7 → 182 NGÀY",
-    "loi": "Điều đáng chú ý: đợt hoán đổi trước đó chỉ kéo dài 7 ngày. Lần này là 182 ngày.",
-    "loi_doc": "Điều đáng chú ý: đợt hoán đổi trước đó chỉ kéo dài bảy ngày. Lần này là một trăm tám mươi hai ngày.",
-    "anh": "State Bank of Vietnam"
-   },
-   {
-    "chu_to": "GẤP HƠN 26 LẦN",
-    "loi": "Các đợt trước trong năm là 21 ngày, 14 ngày rồi 7 ngày. Kỳ hạn lần này dài gấp hơn 26 lần đợt gần nhất.",
-    "loi_doc": "Các đợt trước trong năm là hai mươi mốt ngày, mười bốn ngày rồi bảy ngày. Kỳ hạn lần này dài gấp hơn hai mươi sáu lần đợt gần nhất.",
+    "chu_to": "7 » 182 NGÀY",
+    "loi": "Điều làm em chú ý nhất là kỳ hạn. Đợt hoán đổi gần nhất chỉ kéo dài 7 ngày, còn đợt này kéo dài tới 182 ngày.",
+    "loi_doc": "Điều làm em chú ý nhất là kỳ hạn. Đợt hoán đổi gần nhất chỉ kéo dài bảy ngày, còn đợt này kéo dài tới một trăm tám mươi hai ngày.",
     "anh": "United States one hundred dollar bill 2013 series"
    },
    {
-    "chu_to": "KHOẢNG 48.800 TỶ ĐỒNG",
-    "loi": "Hai tỷ đô la tương đương khoảng 48.800 tỷ đồng, tiền vào hệ thống từ ngày 9 tháng 11.",
-    "loi_doc": "Hai tỷ đô la tương đương khoảng bốn mươi tám nghìn tám trăm tỷ đồng, tiền vào hệ thống từ ngày chín tháng mười một.",
+    "chu_to": "GẤP HƠN 26 LẦN",
+    "loi": "Các đợt trước trong năm lần lượt là 21 ngày, 14 ngày rồi 7 ngày. Như vậy kỳ hạn lần này dài gấp hơn 26 lần đợt gần nhất.",
+    "loi_doc": "Các đợt trước trong năm lần lượt là hai mươi mốt ngày, mười bốn ngày rồi bảy ngày. Như vậy kỳ hạn lần này dài gấp hơn hai mươi sáu lần đợt gần nhất.",
     "anh": "Vietnamese dong banknotes"
    },
    {
-    "chu_to": "LÀ TRẦN, KHÔNG CHẮC",
-    "loi": "Nhưng hai tỷ đô la là mức trần. Quy mô thật phụ thuộc kết quả đấu thầu ngày 6 tháng 11.",
-    "loi_doc": "Nhưng hai tỷ đô la là mức trần. Quy mô thật phụ thuộc kết quả đấu thầu ngày sáu tháng mười một.",
+    "chu_to": "KHOẢNG 48.800 TỶ ĐỒNG",
+    "loi": "Hạn mức 2 tỷ đô la tương đương khoảng 48.800 tỷ đồng. Số tiền này sẽ vào hệ thống ngân hàng từ ngày 9 tháng 11.",
+    "loi_doc": "Hạn mức hai tỷ đô la tương đương khoảng bốn mươi tám nghìn tám trăm tỷ đồng. Số tiền này sẽ vào hệ thống ngân hàng từ ngày chín tháng mười một.",
     "anh": "bank Vietnam"
    },
    {
-    "chu_to": "SÁU THÁNG ĐỦ LẬP KẾ HOẠCH",
-    "loi": "Vay một tuần chỉ đủ xoay vòng. Vay sáu tháng ngân hàng mới tính được chuyện cân đối vốn cuối năm.",
-    "loi_doc": "Vay một tuần chỉ đủ xoay vòng. Vay sáu tháng ngân hàng mới tính được chuyện cân đối vốn cuối năm.",
+    "chu_to": "LÀ TRẦN, KHÔNG CHẮC",
+    "loi": "Tuy nhiên, 2 tỷ đô la chỉ là mức trần. Quy mô thật phụ thuộc vào kết quả đấu thầu ngày 6 tháng 11.",
+    "loi_doc": "Tuy nhiên, hai tỷ đô la chỉ là mức trần. Quy mô thật phụ thuộc vào kết quả đấu thầu ngày sáu tháng mười một.",
     "anh": "Hanoi skyline"
    },
    {
-    "chu_to": "XEM VIDEO ĐẦY ĐỦ",
-    "loi": "Giải thích đầy đủ cơ chế và ba mốc theo dõi có trong video dài trên kênh. Nội dung chia sẻ kiến thức, không phải khuyến nghị mua bán.",
-    "loi_doc": "Giải thích đầy đủ cơ chế và ba mốc theo dõi có trong video dài trên kênh. Nội dung chia sẻ kiến thức, không phải khuyến nghị mua bán.",
+    "chu_to": "SÁU THÁNG ĐỦ LẬP KẾ HOẠCH",
+    "loi": "Theo em, đây là điểm quan trọng. Khoản vay một tuần chỉ giúp ngân hàng xoay vòng, còn khoản vay sáu tháng giúp ngân hàng chủ động cân đối vốn đến cuối năm.",
+    "loi_doc": "Theo em, đây là điểm quan trọng. Khoản vay một tuần chỉ giúp ngân hàng xoay vòng, còn khoản vay sáu tháng giúp ngân hàng chủ động cân đối vốn đến cuối năm.",
     "anh": "Ho Chi Minh City skyline"
    }
   ],
@@ -81,45 +75,39 @@
   "canh": [
    {
     "chu_to": "NHNN BƠM TIỀN 182 NGÀY",
+    "loi": "Em chào anh chị, em là Huy, môi giới chứng khoán. Ngân hàng Nhà nước vừa thông báo bơm tiền cho các ngân hàng qua hoán đổi ngoại tệ, kỳ hạn 182 ngày, tối đa 2 tỷ đô la. Nhiều anh chị hỏi em hoán đổi là gì, em giải thích ngắn gọn như sau.",
+    "loi_doc": "Em chào anh chị, em là Huy, môi giới chứng khoán. Ngân hàng Nhà nước vừa thông báo bơm tiền cho các ngân hàng qua hoán đổi ngoại tệ, kỳ hạn một trăm tám mươi hai ngày, tối đa hai tỷ đô la. Nhiều anh chị hỏi em hoán đổi là gì, em giải thích ngắn gọn như sau.",
     "anh": "State Bank of Vietnam",
-    "loi": "Tin nóng: Ngân hàng Nhà nước vừa mở đợt bơm tiền cho các ngân hàng qua hoán đổi ngoại tệ, kỳ hạn 182 ngày, tối đa 2 tỷ đô la. Cơ chế này hiểu đơn giản như sau.",
-    "loi_doc": "Tin nóng: Ngân hàng Nhà nước vừa mở đợt bơm tiền cho các ngân hàng qua hoán đổi ngoại tệ, kỳ hạn một trăm tám mươi hai ngày, tối đa hai tỷ đô la. Cơ chế này hiểu đơn giản như sau.",
     "tin": 1
    },
    {
-    "chu_to": "HOÁN ĐỔI LÀ GÌ?",
-    "loi": "Hoán đổi ngoại tệ giống như cầm đồ có hẹn chuộc.",
-    "loi_doc": "Hoán đổi ngoại tệ giống như cầm đồ có hẹn chuộc.",
-    "anh": "State Bank of Vietnam"
-   },
-   {
-    "chu_to": "ĐƯA USD, NHẬN ĐỒNG",
-    "loi": "Ngân hàng thương mại đưa đô la cho Ngân hàng Nhà nước và nhận về tiền đồng.",
-    "loi_doc": "Ngân hàng thương mại đưa đô la cho Ngân hàng Nhà nước và nhận về tiền đồng.",
+    "chu_to": "GIỐNG CẦM ĐỒ CÓ HẸN CHUỘC",
+    "loi": "Hoán đổi ngoại tệ giống như một hợp đồng cầm đồ có hẹn ngày chuộc.",
+    "loi_doc": "Hoán đổi ngoại tệ giống như một hợp đồng cầm đồ có hẹn ngày chuộc.",
     "anh": "United States one hundred dollar bill 2013 series"
    },
    {
-    "chu_to": "SÁU THÁNG SAU MUA LẠI",
-    "loi": "Cùng lúc, hai bên cam kết sáu tháng sau ngân hàng mua lại đúng số đô la đó.",
-    "loi_doc": "Cùng lúc, hai bên cam kết sáu tháng sau ngân hàng mua lại đúng số đô la đó.",
+    "chu_to": "ĐƯA USD, NHẬN ĐỒNG",
+    "loi": "Ngân hàng thương mại đưa đô la cho Ngân hàng Nhà nước, và Ngân hàng Nhà nước trả lại tiền đồng.",
+    "loi_doc": "Ngân hàng thương mại đưa đô la cho Ngân hàng Nhà nước, và Ngân hàng Nhà nước trả lại tiền đồng.",
     "anh": "Vietnamese dong banknotes"
    },
    {
-    "chu_to": "24.399 → 24.704",
-    "loi": "Giá giao ngay 24.399 đồng một đô la, giá kỳ hạn 24.704 đồng. Chênh 305 đồng chính là chi phí dùng tiền đồng trong sáu tháng.",
-    "loi_doc": "Giá giao ngay hai mươi bốn nghìn ba trăm chín mươi chín đồng một đô la, giá kỳ hạn hai mươi bốn nghìn bảy trăm linh bốn đồng. Chênh ba trăm linh năm đồng chính là chi phí dùng tiền đồng trong sáu tháng.",
+    "chu_to": "SÁU THÁNG SAU MUA LẠI",
+    "loi": "Cùng lúc đó, hai bên cam kết sáu tháng sau ngân hàng thương mại sẽ mua lại đúng số đô la đó.",
+    "loi_doc": "Cùng lúc đó, hai bên cam kết sáu tháng sau ngân hàng thương mại sẽ mua lại đúng số đô la đó.",
     "anh": "bank Vietnam"
    },
    {
-    "chu_to": "TIỀN KHÔNG CHO KHÔNG",
-    "loi": "Nghĩa là đây là vốn có kỳ hạn, có giá và có ngày trả, không phải tiền tặng.",
-    "loi_doc": "Nghĩa là đây là vốn có kỳ hạn, có giá và có ngày trả, không phải tiền tặng.",
+    "chu_to": "24.399 » 24.704",
+    "loi": "Giá giao ngay là 24.399 đồng một đô la, còn giá kỳ hạn là 24.704 đồng. Khoản chênh 305 đồng chính là chi phí ngân hàng trả để dùng tiền đồng trong sáu tháng.",
+    "loi_doc": "Giá giao ngay là hai mươi bốn nghìn ba trăm chín mươi chín đồng một đô la, còn giá kỳ hạn là hai mươi bốn nghìn bảy trăm linh bốn đồng. Khoản chênh ba trăm linh năm đồng chính là chi phí ngân hàng trả để dùng tiền đồng trong sáu tháng.",
     "anh": "Hanoi skyline"
    },
    {
-    "chu_to": "XEM VIDEO ĐẦY ĐỦ",
-    "loi": "Video dài trên kênh nói rõ ai được tham gia và ý nghĩa với nhà đầu tư. Nội dung chia sẻ kiến thức, không phải khuyến nghị mua bán.",
-    "loi_doc": "Video dài trên kênh nói rõ ai được tham gia và ý nghĩa với nhà đầu tư. Nội dung chia sẻ kiến thức, không phải khuyến nghị mua bán.",
+    "chu_to": "TIỀN KHÔNG CHO KHÔNG",
+    "loi": "Vì vậy, em muốn anh chị hiểu rằng đây là vốn có kỳ hạn, có giá và có ngày trả, chứ không phải tiền cho không.",
+    "loi_doc": "Vì vậy, em muốn anh chị hiểu rằng đây là vốn có kỳ hạn, có giá và có ngày trả, chứ không phải tiền cho không.",
     "anh": "Ho Chi Minh City skyline"
    }
   ],
@@ -152,39 +140,33 @@
   "canh": [
    {
     "chu_to": "NHNN BƠM TIỀN 182 NGÀY",
+    "loi": "Em chào anh chị, em là Huy, môi giới chứng khoán. Ngân hàng Nhà nước vừa thông báo bơm tiền cho các ngân hàng qua hoán đổi ngoại tệ, kỳ hạn 182 ngày, tối đa 2 tỷ đô la. Sau tin này, em đang theo dõi ba mốc quan trọng.",
+    "loi_doc": "Em chào anh chị, em là Huy, môi giới chứng khoán. Ngân hàng Nhà nước vừa thông báo bơm tiền cho các ngân hàng qua hoán đổi ngoại tệ, kỳ hạn một trăm tám mươi hai ngày, tối đa hai tỷ đô la. Sau tin này, em đang theo dõi ba mốc quan trọng.",
     "anh": "State Bank of Vietnam",
-    "loi": "Tin nóng: Ngân hàng Nhà nước vừa mở đợt bơm tiền cho các ngân hàng qua hoán đổi ngoại tệ, kỳ hạn 182 ngày, tối đa 2 tỷ đô la. Sau tin này, có ba mốc cần theo dõi.",
-    "loi_doc": "Tin nóng: Ngân hàng Nhà nước vừa mở đợt bơm tiền cho các ngân hàng qua hoán đổi ngoại tệ, kỳ hạn một trăm tám mươi hai ngày, tối đa hai tỷ đô la. Sau tin này, có ba mốc cần theo dõi.",
     "tin": 1
    },
    {
     "chu_to": "MỐC 1: ĐẤU THẦU 6/11",
-    "loi": "Một, kết quả đấu thầu ngày 6 tháng 11: bao nhiêu ngân hàng tham gia và dùng bao nhiêu trong hạn mức hai tỷ đô la.",
-    "loi_doc": "Một, kết quả đấu thầu ngày sáu tháng mười một: bao nhiêu ngân hàng tham gia và dùng bao nhiêu trong hạn mức hai tỷ đô la.",
-    "anh": "United States one hundred dollar bill 2013 series"
+    "loi": "Mốc thứ nhất là kết quả đấu thầu ngày 6 tháng 11. Em sẽ xem có bao nhiêu ngân hàng tham gia và họ dùng bao nhiêu trong hạn mức 2 tỷ đô la.",
+    "loi_doc": "Mốc thứ nhất là kết quả đấu thầu ngày sáu tháng mười một. Em sẽ xem có bao nhiêu ngân hàng tham gia và họ dùng bao nhiêu trong hạn mức hai tỷ đô la.",
+    "anh": "bank Vietnam"
    },
    {
     "chu_to": "MỐC 2: TỪ 9/11",
-    "loi": "Hai, từ ngày 9 tháng 11, xem lãi suất liên ngân hàng có giảm hay không.",
-    "loi_doc": "Hai, từ ngày chín tháng mười một, xem lãi suất liên ngân hàng có giảm hay không.",
+    "loi": "Mốc thứ hai bắt đầu từ ngày 9 tháng 11. Em sẽ theo dõi lãi suất liên ngân hàng có giảm hay không.",
+    "loi_doc": "Mốc thứ hai bắt đầu từ ngày chín tháng mười một. Em sẽ theo dõi lãi suất liên ngân hàng có giảm hay không.",
     "anh": "Vietnamese dong banknotes"
    },
    {
     "chu_to": "MỐC 3: THÁNG 5/2027",
-    "loi": "Ba, khoảng tháng 5 năm 2027, khi hợp đồng đáo hạn và tiền được thu về.",
-    "loi_doc": "Ba, khoảng tháng năm năm hai nghìn không trăm hai mươi bảy, khi hợp đồng đáo hạn và tiền được thu về.",
-    "anh": "bank Vietnam"
-   },
-   {
-    "chu_to": "ĐỪNG MUA VÌ MỘT DÒNG TÍT",
-    "loi": "Tin đã công bố từ ngày 4 tháng 11, giá có thể đã phản ánh một phần. Đừng quyết định chỉ vì một dòng tít.",
-    "loi_doc": "Tin đã công bố từ ngày bốn tháng mười một, giá có thể đã phản ánh một phần. Đừng quyết định chỉ vì một dòng tít.",
+    "loi": "Mốc thứ ba rơi vào khoảng tháng 5 năm 2027, khi hợp đồng đáo hạn và Ngân hàng Nhà nước thu tiền về.",
+    "loi_doc": "Mốc thứ ba rơi vào khoảng tháng năm năm hai nghìn không trăm hai mươi bảy, khi hợp đồng đáo hạn và Ngân hàng Nhà nước thu tiền về.",
     "anh": "Hanoi skyline"
    },
    {
-    "chu_to": "XEM VIDEO ĐẦY ĐỦ",
-    "loi": "Phân tích đầy đủ trong video dài trên kênh. Nội dung chia sẻ kiến thức, không phải khuyến nghị mua bán.",
-    "loi_doc": "Phân tích đầy đủ trong video dài trên kênh. Nội dung chia sẻ kiến thức, không phải khuyến nghị mua bán.",
+    "chu_to": "ĐỪNG MUA VÌ MỘT DÒNG TÍT",
+    "loi": "Tin này đã công bố từ ngày 4 tháng 11, nên giá cổ phiếu có thể đã phản ánh một phần. Em khuyên anh chị đừng quyết định chỉ vì một dòng tít.",
+    "loi_doc": "Tin này đã công bố từ ngày bốn tháng mười một, nên giá cổ phiếu có thể đã phản ánh một phần. Em khuyên anh chị đừng quyết định chỉ vì một dòng tít.",
     "anh": "Ho Chi Minh City skyline"
    }
   ],
