@@ -92,6 +92,7 @@ def _cover(v, sc):
         _CV[key_] = Image.blend(c, Image.new("RGB", (LW, LH), (8, 10, 15)), 0.55)
     return _CV[key_].copy()
 def _prep_ph(sc, ph):
+    sc["_ph"] = ph
     # nền ảnh thật làm tối + thẻ ảnh sắc nét bên phải
     r = max(LW/ph.width, LH/ph.height); b = ph.resize((int(ph.width*r)+1, int(ph.height*r)+1), Image.LANCZOS)
     b = b.crop(((b.width-LW)//2, (b.height-LH)//2, (b.width-LW)//2+LW, (b.height-LH)//2+LH)).filter(ImageFilter.GaussianBlur(3))
@@ -263,7 +264,14 @@ except Exception as e:
     print("sfx: bo qua", e, flush=True)
 music.mix(rawmp4, b, out)
 # 5) ảnh bìa = khung cảnh mở đầu lúc 3 giây
-land(dx2.draw(scenes[0], 3.0), scenes[0], 3.0).resize((1280, 720), Image.LANCZOS).save(os.path.join(OUT, key + "_bia.png"))
+try:  # ảnh bìa đồng bộ chữ to (bia.py) – anh Huy chốt 5/11
+    import bia as _bia
+    _M = g.get("META", {}).get(key, {}) if isinstance(g.get("META"), dict) else {}
+    _sc0 = dict(raw[0]); _sc0["cap"] = scenes[0].get("cap")
+    _bia.make(_sc0, _M, next((x["_ph"] for x in scenes if x.get("_ph") is not None), None), os.path.join(OUT, key + "_bia.png"))
+except Exception as e:
+    print("bia: dung khung cu", e, flush=True)
+    land(dx2.draw(scenes[0], 3.0), scenes[0], 3.0).resize((1280, 720), Image.LANCZOS).save(os.path.join(OUT, key + "_bia.png"))
 # 6) mốc chương thật theo giọng (cho mô tả YouTube)
 ch = []
 for i, sc in enumerate(raw):
