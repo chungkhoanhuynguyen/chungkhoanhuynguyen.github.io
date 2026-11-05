@@ -57,8 +57,27 @@ def track(total, bounds):
 def write(path, x):
     with wave.open(path, "w") as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((np.clip(x, -1, 1)*32767).astype(np.int16).tobytes())
+def ket_hop(total, bounds):
+    """Anh Huy chốt 6/11: kết hợp mẫu 2 (kịch tính) + mẫu 3 (lo-fi).
+    Mở bài (cảnh đầu) = 2 để giật người xem; thân bài = 3 nhẹ, dễ nghe giọng; cảnh cuối (kêu gọi/câu hỏi) = 2 để chốt mạnh."""
+    import nhac20
+    n = int(SR*total); b = list(bounds)
+    a_end = min(max(b[1] if len(b) > 2 else total*.2, 4.0), total*.35)       # hết cảnh mở đầu
+    z_beg = max(b[-2] if len(b) > 3 else total*.85, a_end + 4.0)             # đầu cảnh cuối
+    if z_beg > total - 3: z_beg = total
+    kt = nhac20.tao(2, total + 2)[:n]; lf = nhac20.tao(3, total + 2)[:n]
+    kt = np.pad(kt, (0, max(0, n-len(kt)))); lf = np.pad(lf, (0, max(0, n-len(lf))))
+    t = np.arange(n)/SR; xf = 1.6
+    w = np.clip((t - a_end)/xf + .5, 0, 1)                                  # 0 -> 2, 1 -> 3
+    if z_beg < total: w = w * np.clip((z_beg - t)/xf + .5, 0, 1)
+    out = kt*np.sqrt(1-w)*1.0 + lf*np.sqrt(w)*1.15
+    fo = int(SR*1.8); out[-fo:] *= np.linspace(1, 0, fo)
+    return out/(np.abs(out).max()+1e-9)*.9
 def mix(video, bounds, out, music_db=-14):
-    total = bounds[-1]; write("/tmp/bgm.wav", track(total, bounds))
+    total = bounds[-1]
+    try: x = ket_hop(total, bounds)
+    except Exception as e: print("nhac ket hop loi, dung mau 2:", e, flush=True); x = track(total, bounds)
+    write("/tmp/bgm.wav", x)
     fc = ("[1:a]volume=%ddB,aresample=44100[m];[0:a]asplit=2[v][sc];"
           "[m][sc]sidechaincompress=threshold=0.1:ratio=3:attack=30:release=300[md];"
           "[v][md]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95[a]") % music_db
