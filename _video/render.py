@@ -41,6 +41,7 @@ for _x in raw: _x["say"] = _doc_web(_x.get("say", ""))
 def conv(sc):
     s = dict(sc); k = s["k"]
     s.setdefault("label", ""); s.setdefault("cap", ("", ""))
+    if isinstance(s["cap"], str): s["cap"] = tuple(s["cap"].split("\n"))  # cap chuỗi -> các dòng
     if k == "hook":
         ch = s.pop("chart", None)
         if ch and ch.get("sym") in px:
