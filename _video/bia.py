@@ -104,7 +104,7 @@ def make(sc, meta=None, ph=None, out=None):
     d.rectangle([0, 0, 14, H], fill=VANG)
     CK = os.path.join(HERE, "engine", "chu_kenh.png")
     if os.path.exists(CK):  # chân dung tách nền, nhỏ vừa ở góc phải dưới (anh Huy 5/11 23:41), nền là ảnh minh hoạ
-        pt = Image.open(CK).convert("RGBA"); ph_ = 600; pt = pt.resize((int(pt.width*ph_/pt.height), ph_), Image.LANCZOS)
+        pt = Image.open(CK).convert("RGBA"); ph_ = 480; pt = pt.resize((int(pt.width*ph_/pt.height), ph_), Image.LANCZOS)
         a_ = pt.getchannel("A"); rm = Image.new("L", pt.size, 255)
         for x in range(70): ImageDraw.Draw(rm).line([(x, 0), (x, pt.height)], fill=int(255*x/70))
         pt = _sticker(pt)  # ảnh gốc nét, đủ 2 vai -> không làm mờ mép
