@@ -1,7 +1,7 @@
 # Ảnh bìa YouTube ĐỒNG BỘ cho mọi video dài (anh Huy chốt 5/11): nền tím đậm, CHỮ TO IN HOA trái
 # (trắng / vàng xen kẽ), nhãn đỏ có con số, ảnh thật bên phải mờ dần, logo HUY NGUYỄN góc phải trên.
 # Dùng trong render.py (make) hoặc chạy riêng: python3 _video/bia.py <lô> [KEY ...] -> _video/out/<KEY>_bia.png
-import os, re, sys
+import os, re, sys, json
 from PIL import Image, ImageDraw, ImageFilter
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, "engine"))
@@ -89,6 +89,10 @@ if __name__ == "__main__":
     kho = anh.Kho("/tmp/anh_bia")
     for k in (keys or list(S)):
         raw = S[k]; sc = dict(raw[0]); mt = META.get(k, {})
+        try:
+            _mj = json.load(open(os.path.join(HERE, "queue", lo, "meta.json"), encoding="utf-8")).get(k, {})
+            if not mt.get("bia"): mt = dict(mt, bia=_mj.get("bia_hook") or _mj.get("bia"), title=mt.get("title") or _mj.get("tieu_de", ""))
+        except Exception: pass
         if isinstance(sc.get("cap"), str): sc["cap"] = tuple(sc["cap"].split("\n"))
         ph = None
         for s in raw[:4]:

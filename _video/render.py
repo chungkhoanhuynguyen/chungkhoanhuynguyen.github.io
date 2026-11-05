@@ -267,6 +267,11 @@ music.mix(rawmp4, b, out)
 try:  # ảnh bìa đồng bộ chữ to (bia.py) – anh Huy chốt 5/11
     import bia as _bia
     _M = g.get("META", {}).get(key, {}) if isinstance(g.get("META"), dict) else {}
+    if not _M.get("bia"):  # lấy bìa/tiêu đề từ meta.json của lô (bia_hook, tieu_de)
+        try:
+            _mj = json.load(open(os.path.join(QD, "meta.json"), encoding="utf-8")).get(key, {})
+            _M = dict(_M, bia=_mj.get("bia_hook") or _mj.get("bia"), title=_M.get("title") or _mj.get("tieu_de", ""), badge=_M.get("badge") or _mj.get("badge"))
+        except Exception: pass
     _sc0 = dict(raw[0]); _sc0["cap"] = scenes[0].get("cap")
     _bia.make(_sc0, _M, next((x["_ph"] for x in scenes if x.get("_ph") is not None), None), os.path.join(OUT, key + "_bia.png"))
 except Exception as e:
