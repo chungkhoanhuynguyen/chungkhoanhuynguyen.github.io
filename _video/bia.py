@@ -72,13 +72,20 @@ def _nen_chart(im, seed, up):
     im.paste(lay, (0, 0), lay)
 
 def _sticker(pt, w=7):
-    # viền trắng quanh chân dung (kiểu sticker)
-    a = pt.getchannel("A").point(lambda v: 255 if v > 40 else 0)
-    big = a.filter(ImageFilter.MaxFilter(w*2+1))
-    ImageDraw.Draw(big).rectangle([0, 0, w*2, pt.height], fill=0); ImageDraw.Draw(big).rectangle([0, pt.height-w*2, pt.width, pt.height], fill=0); ImageDraw.Draw(big).rectangle([pt.width-w*2, 0, pt.width, pt.height], fill=0)
-    big = Image.composite(big, a, big)
-    st = Image.new("RGBA", pt.size, (255, 255, 255, 0)); st.putalpha(big)
-    st.alpha_composite(pt); return st
+    # anh Huy 6/11 00:14: bỏ viền trắng dày -> viền sáng mảnh (rim light) vàng nhạt + bóng đổ mềm, chân dung tự nhiên
+    a = pt.getchannel("A"); pad = 30
+    W2, H2 = pt.width + pad*2, pt.height + pad
+    A = Image.new("L", (W2, H2)); A.paste(a, (pad, pad))
+    out = Image.new("RGBA", (W2, H2), (0, 0, 0, 0))
+    sh = A.filter(ImageFilter.GaussianBlur(16)).point(lambda v: int(v*0.75))  # bóng đổ
+    s_ = Image.new("RGBA", (W2, H2), (8, 4, 18, 0)); s_.putalpha(sh)
+    out.alpha_composite(s_, (10, 4))
+    rim = A.filter(ImageFilter.MaxFilter(5)).filter(ImageFilter.GaussianBlur(3)).point(lambda v: int(v*0.85))  # viền sáng 2-3px
+    r_ = Image.new("RGBA", (W2, H2), (255, 214, 102, 0)); r_.putalpha(rim)
+    out.alpha_composite(r_)
+    body = Image.new("RGBA", (W2, H2), (0, 0, 0, 0)); body.paste(pt, (pad, pad)); out.alpha_composite(body)
+    # cắt đáy phẳng, không lộ hiệu ứng ở mép dưới
+    return out.crop((0, 0, W2, H2))
 
 def _arrow(d, x, y, up, s=1.0):
     col = (46, 204, 113) if up else (231, 76, 60)
@@ -108,10 +115,10 @@ def make(sc, meta=None, ph=None, out=None):
         a_ = pt.getchannel("A"); rm = Image.new("L", pt.size, 255)
         for x in range(70): ImageDraw.Draw(rm).line([(x, 0), (x, pt.height)], fill=int(255*x/70))
         pt = _sticker(pt)  # ảnh gốc nét, đủ 2 vai -> không làm mờ mép
-        px_ = W - pt.width - 24
+        px_ = W - pt.width + 6
         gl = Image.new("L", (W, H)); ImageDraw.Draw(gl).ellipse([px_+30, H-ph_-20, px_+pt.width, H+150], fill=170)
         gl = gl.filter(ImageFilter.GaussianBlur(50)); im.paste(Image.new("RGB", (W, H), (20, 10, 34)), (0, 0), gl)
-        im.paste(pt, (px_, H - ph_), pt); d = ImageDraw.Draw(im)
+        im.paste(pt, (px_, H - pt.height), pt); d = ImageDraw.Draw(im)
         fl = dx2.F("Black", 30); d.text((60, 30), "HUY NGUYỄN", font=fl, fill=TRANG)
         d.text((60 + d.textlength("HUY NGUYỄN ", font=fl), 36), "CHỨNG KHOÁN", font=dx2.F("SemiBold", 22), fill=VANG)
         fu = dx2.F("Bold", 30); u = "chungkhoanhuynguyen.com"
