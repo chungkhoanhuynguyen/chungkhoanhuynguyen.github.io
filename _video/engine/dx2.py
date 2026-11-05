@@ -78,6 +78,8 @@ def panel(d, a=1.0, box=BX):
 
 def caption(d, lines, t, y=1250, cols=None, size=86):
     cols = cols or [CREAM, GOLD, RED]
+    if isinstance(lines, str): lines = lines.split("\n")  # cap dạng chuỗi có \n
+    lines = [x for l in lines for x in str(l).split("\n")]
     for i, l in enumerate(lines):
         if not l: continue
         a = ease((t - 0.25 - i*0.18) / 0.45)
