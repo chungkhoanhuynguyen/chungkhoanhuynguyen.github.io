@@ -1,0 +1,21 @@
+name: Anh bia dong bo (dung lai bia cho lo da render)
+on:
+  workflow_dispatch:
+    inputs:
+      batches: {description: "cac lo, cach nhau dau cach", required: true}
+permissions: {contents: read}
+jobs:
+  bia:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 1}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -q numpy pillow
+      - run: |
+          echo '{}' > /tmp/px.json
+          for b in ${{ inputs.batches }}; do HN_PX=/tmp/px.json python _video/bia.py "$b" || echo "LOI $b"; done
+          ls _video/out | wc -l
+      - uses: actions/upload-artifact@v4
+        with: {name: bia-dong-bo, path: _video/out/*_bia.png, retention-days: 7}
