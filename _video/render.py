@@ -1,6 +1,7 @@
 # Xưởng video: kịch bản NV1 (S["KEY"]) -> giọng chốt (VieNeu miễn phí) -> dựng dx2 -> nhạc nền -> mp4 + ảnh bìa
 # Dùng: python _video/render.py <thư mục lô trong _video/queue> KEY [--preview N]
 import sys, re, os, json, subprocess, shutil, time
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import numpy as np
 HERE = os.path.dirname(os.path.abspath(__file__))
 batch, key = sys.argv[1], sys.argv[2]
@@ -38,7 +39,11 @@ CTA_WEB = {"k": "text", "label": "TÀI LIỆU ĐI KÈM VIDEO", "cap": ("TÀI LI�
 if not g.get("NO_CTA") and not any(x.get("cta") for x in raw) and len(raw) >= 6:
     raw = list(raw); raw.insert(max(2, len(raw)//4), dict(CTA_WEB)); raw.insert(len(raw)*2//3, dict(CTA_GIUA))
     raw.insert(len(raw) - 1 if raw[-1].get("k") == "end" else len(raw), dict(CTA_CUOI))
-for _x in raw: _x["say"] = _doc_web(_x.get("say", ""))
+import xung_ho  # xưng em – anh chị, không gọi "bạn" (anh Huy chốt 6/11)
+for _x in raw:
+    _x["say"] = xung_ho.le_phep(_doc_web(_x.get("say", "")))
+    if isinstance(_x.get("cap"), (list, tuple)): _x["cap"] = tuple(xung_ho.le_phep(c) for c in _x["cap"])
+    elif isinstance(_x.get("cap"), str): _x["cap"] = xung_ho.le_phep(_x["cap"])
 
 def conv(sc):
     s = dict(sc); k = s["k"]
