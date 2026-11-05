@@ -49,7 +49,10 @@ jobs:
             ~/.cache/huggingface
             ~/.cache/pip
           key: vieneu-v1
-      - run: command -v ffmpeg || for i in 1 2 3; do timeout 240 sh -c "sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null" && break; sleep 5; done
+      - run: command -v ffmpeg || timeout 150 sh -c "sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null" || true
+      - run: |
+          command -v ffmpeg && exit 0
+          pip install -q imageio-ffmpeg && sudo ln -sf "$(python -c 'import imageio_ffmpeg as f;print(f.get_ffmpeg_exe())')" /usr/local/bin/ffmpeg && ffmpeg -version | head -1
       - run: pip install -q vieneu "onnxruntime==1.22.1" numpy pillow opencv-python-headless
       - run: python _video/reel.py "${{ needs.plan.outputs.batch }}" "${{ matrix.key }}"
       - uses: actions/upload-artifact@v4
