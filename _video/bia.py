@@ -32,6 +32,25 @@ def _fit(d, s, mw, st, mn=64):
     while st > mn and d.textlength(s, font=dx2.F("Black", st)) > mw: st -= 4
     return dx2.F("Black", st)
 
+def _size(d, L, mw):
+    st = 156 if len(L) <= 2 else 128
+    while st > 60 and (max(d.textlength(l, font=dx2.F("Black", st)) for l in L) > mw or len(L)*st*1.08 > 480): st -= 4
+    return st
+
+def _wrap(d, L, mw):
+    # giữ ngắt dòng gốc nếu chữ đủ to (>=112), không thì chia lại từ thành 2–3 dòng cho chữ to nhất
+    best = (L, _size(d, L, mw))
+    if best[1] >= 112: return best
+    w = [x for x in " ".join(L).split() if x not in ("·", "-", "–", "|")]
+    for n in (2, 3):
+        if len(w) < n: continue
+        import itertools
+        for cut in itertools.combinations(range(1, len(w)), n-1):
+            idx = (0,) + cut + (len(w),); c = [" ".join(w[idx[i]:idx[i+1]]) for i in range(n)]
+            st = _size(d, c, mw)
+            if st > best[1]: best = (c, st)
+    return best
+
 def make(sc, meta=None, ph=None, out=None):
     meta = meta or {}
     im = Image.new("RGB", (W, H), TIM0); d = ImageDraw.Draw(im)
@@ -47,9 +66,8 @@ def make(sc, meta=None, ph=None, out=None):
     d.rectangle([0, 0, 14, H], fill=VANG)
     try: dx2.brand(im, d, W-170, 30, 0.62, 1.0, TIM0)
     except Exception: d.text((W-280, 34), "HUY NGUYỄN", font=dx2.F("Black", 34), fill=TRANG)
-    L = _lines(sc, meta); x0, mw = 60, 760
-    fs = [_fit(d, l, mw, 150 if len(L) <= 2 else 124) for l in L]
-    st = min(f.size for f in fs); fs = [dx2.F("Black", st) for _ in L]
+    L = _lines(sc, meta); x0, mw = 60, 740
+    L, st = _wrap(d, L, mw); fs = [dx2.F("Black", st) for _ in L]
     hh = sum(int(f.size*1.08) for f in fs); y = max(70, (H - hh)//2 - 40)
     cols = [TRANG, VANG, TRANG]
     for i, (l, f) in enumerate(zip(L, fs)):
