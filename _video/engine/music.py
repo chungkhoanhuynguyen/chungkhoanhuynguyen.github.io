@@ -57,7 +57,7 @@ def track(total, bounds):
 def write(path, x):
     with wave.open(path, "w") as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((np.clip(x, -1, 1)*32767).astype(np.int16).tobytes())
-def ket_hop(total, bounds):
+def ket_hop(total, bounds, lofi=False):
     """Anh Huy chốt 6/11: kết hợp mẫu 2 (kịch tính) + mẫu 3 (lo-fi).
     Mở bài (cảnh đầu) = 2 để giật người xem; thân bài = 3 nhẹ, dễ nghe giọng; cảnh cuối (kêu gọi/câu hỏi) = 2 để chốt mạnh."""
     import nhac20
@@ -67,19 +67,23 @@ def ket_hop(total, bounds):
     if z_beg > total - 3: z_beg = total
     kt = nhac20.tao(2, total + 2)[:n]; lf = nhac20.tao(3, total + 2)[:n]
     kt = np.pad(kt, (0, max(0, n-len(kt)))); lf = np.pad(lf, (0, max(0, n-len(lf))))
+    _r = lambda a: a / (np.sqrt(np.mean(a**2)) + 1e-9)          # cân bằng độ to 2 mẫu, không bị bật to ở mở/kết (anh Huy phản ánh 7/11)
+    kt = _r(kt); lf = _r(lf)
     t = np.arange(n)/SR; xf = 1.6
     w = np.clip((t - a_end)/xf + .5, 0, 1)                                  # 0 -> 2, 1 -> 3
     if z_beg < total: w = w * np.clip((z_beg - t)/xf + .5, 0, 1)
-    out = kt*np.sqrt(1-w)*1.0 + lf*np.sqrt(w)*1.15
+    if lofi: w = np.ones_like(t)          # video kể chuyện: lo-fi chill cả bài (anh Huy 7/11)
+    out = kt*np.sqrt(1-w) + lf*np.sqrt(w)
     fo = int(SR*1.8); out[-fo:] *= np.linspace(1, 0, fo)
-    return out/(np.abs(out).max()+1e-9)*.9
-def mix(video, bounds, out, music_db=-14):
+    out = out/(np.sqrt(np.mean(out**2))+1e-9)*0.12            # chuẩn hoá theo RMS (không theo đỉnh)
+    return np.clip(out, -0.95, 0.95)
+def mix(video, bounds, out, music_db=-8, lofi=False):
     total = bounds[-1]
-    try: x = ket_hop(total, bounds)
+    try: x = ket_hop(total, bounds, lofi)
     except Exception as e: print("nhac ket hop loi, dung mau 2:", e, flush=True); x = track(total, bounds)
     write("/tmp/bgm.wav", x)
     fc = ("[1:a]volume=%ddB,aresample=44100[m];[0:a]asplit=2[v][sc];"
-          "[m][sc]sidechaincompress=threshold=0.1:ratio=3:attack=30:release=300[md];"
+          "[m][sc]sidechaincompress=threshold=0.04:ratio=6:attack=20:release=350[md];"
           "[v][md]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95[a]") % music_db
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", video, "-i", "/tmp/bgm.wav", "-filter_complex", fc,
                     "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", out])

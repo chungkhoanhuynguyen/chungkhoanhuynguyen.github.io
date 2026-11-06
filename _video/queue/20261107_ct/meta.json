@@ -31,7 +31,9 @@
   "bia_hook": [
    "7 CÂU NÓI",
    "CỦA MUNGER"
-  ]
+  ],
+  "badge": "= 7 QUY TRÌNH",
+  "nhac": "lofi"
  },
  "CT0711B": {
   "kenh": "@chungkhoanhuynguyen",
@@ -62,9 +64,11 @@
    "Tổng kết"
   ],
   "bia_hook": [
-   "GÁC CỔNG",
-   "ĐỂ LẠI 8 TRIỆU $"
-  ]
+   "LAO CÔNG",
+   "8 TRIỆU $"
+  ],
+  "badge": "60 NĂM KIÊN NHẪN",
+  "nhac": "lofi"
  },
  "CT0711C": {
   "kenh": "@chungkhoanhuynguyen",
@@ -94,9 +98,11 @@
    "Chương 7 – Lịch sử lặp lại"
   ],
   "bia_hook": [
-   "THẮNG 100 TRIỆU $",
+   "100 TRIỆU $",
    "RỒI PHÁ SẢN"
-  ]
+  ],
+  "badge": "BÀI HỌC QUẢN TRỊ VỐN",
+  "nhac": "lofi"
  },
  "CT0711D": {
   "kenh": "@chungkhoanhuynguyen",
@@ -125,9 +131,11 @@
    "Tổng kết"
   ],
   "bia_hook": [
-   "180 $ → 7 TRIỆU $",
-   "75 NĂM KHÔNG BÁN"
-  ]
+   "3 CỔ PHIẾU",
+   "7 TRIỆU $"
+  ],
+  "badge": "75 NĂM KHÔNG BÁN",
+  "nhac": "lofi"
  },
  "CT0711E": {
   "kenh": "@chungkhoanhuynguyen",
@@ -156,9 +164,11 @@
    "Tổng kết"
   ],
   "bia_hook": [
-   "BUFFETT 11 TUỔI",
-   "LỆNH ĐẦU ĐỜI"
-  ]
+   "11 TUỔI",
+   "LỖ 30%"
+  ],
+  "badge": "LỆNH ĐẦU CỦA BUFFETT",
+  "nhac": "lofi"
  },
  "CT0711F": {
   "kenh": "@chungkhoanhuynguyen",
@@ -190,6 +200,8 @@
   "bia_hook": [
    "MUA CẢ",
    "ĐỐNG RƠM"
-  ]
+  ],
+  "badge": "5 CÂU NÓI CỦA BOGLE",
+  "nhac": "lofi"
  }
 }

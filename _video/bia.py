@@ -40,7 +40,7 @@ def _size(d, L, mw):
 def _wrap(d, L, mw):
     # giữ ngắt dòng gốc nếu chữ đủ to (>=112), không thì chia lại từ thành 2–3 dòng cho chữ to nhất
     best = (L, _size(d, L, mw))
-    if best[1] >= 112: return best
+    if best[1] >= 84: return best      # giữ đúng ngắt dòng bia_hook đã soạn (anh Huy 7/11: không bẻ '7 CÂU / NÓI CỦA / MUNGER')
     w = [x for x in " ".join(L).split() if x not in ("·", "-", "–", "|")]
     for n in (2, 3):
         if len(w) < n: continue
@@ -107,7 +107,9 @@ def make(sc, meta=None, ph=None, out=None):
         im.paste(p, (W-pw, 0), m); d = ImageDraw.Draw(im)
     _txt = " ".join(_lines(sc, meta)) + " " + str(meta.get("badge") or sc.get("label") or "")
     _up = not re.search(r"(^|\s)[-−]\d|GIẢM|SẬP|LỖ|MẤT|BONG BÓNG|CÒN \d|SAI|BẪY|CHÁY", _txt.upper())
-    _nen_chart(im, hash(_txt) & 0xffff, _up); d = ImageDraw.Draw(im)
+    if ph is None or re.search(r"VN-?INDEX|THỊ TRƯỜNG|NẾN|ĐỈNH|ĐÁY|DÒNG TIỀN|BCTC|LỢI NHUẬN", _txt.upper()):
+        _nen_chart(im, hash(_txt) & 0xffff, _up)   # nến cách điệu chỉ khi chủ đề thị trường/thiếu ảnh; video câu chuyện để ảnh thật sạch
+    d = ImageDraw.Draw(im)
     d.rectangle([0, 0, 14, H], fill=VANG)
     CK = os.path.join(HERE, "engine", "chu_kenh.png")
     if os.path.exists(CK):  # chân dung tách nền, nhỏ vừa ở góc phải dưới (anh Huy 5/11 23:41), nền là ảnh minh hoạ
@@ -145,7 +147,7 @@ def make(sc, meta=None, ph=None, out=None):
     if b:
         fb = dx2.F("Black", 54); tw = d.textlength(b, font=fb); y += 18
         d.rounded_rectangle([x0, y, x0+tw+48, y+82], 14, fill=DO); d.text((x0+24, y+8), b, font=fb, fill=TRANG)
-        _arrow(d, x0+tw+66, y+2, not b.strip().startswith(("-", "−")), 0.72)
+        if SO.fullmatch(b.strip()): _arrow(d, x0+tw+66, y+2, not b.strip().startswith(("-", "−")), 0.72)   # mũi tên chỉ khi nhãn là con số
     if out: im.save(out)
     return im
 
@@ -161,6 +163,7 @@ if __name__ == "__main__":
         try:
             _mj = json.load(open(os.path.join(HERE, "queue", lo, "meta.json"), encoding="utf-8")).get(k, {})
             if not mt.get("bia"): mt = dict(mt, bia=_mj.get("bia_hook") or _mj.get("bia"), title=mt.get("title") or _mj.get("tieu_de", ""))
+            if _mj.get("badge") and not mt.get("badge"): mt = dict(mt, badge=_mj["badge"])
         except Exception: pass
         if isinstance(sc.get("cap"), str): sc["cap"] = tuple(sc["cap"].split("\n"))
         ph = None
