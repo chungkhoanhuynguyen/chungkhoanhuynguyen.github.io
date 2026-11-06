@@ -1,7 +1,7 @@
 # Xưng hô lễ phép cho lời đọc + phụ đề (anh Huy chốt 6/11): người nói xưng "em", gọi người xem "anh chị".
 # Không nói trống không / không gọi "bạn". Áp tự động trong render.py và reel.py.
 import re
-_GIU = r"(?!\s*(bè|đời|học|thân|đồng hành|hàng|gái|trai|cũ)\b)"
+_GIU = r"(?!\s*(bè|đời|học|thân|đồng hành|hàng|gái|trai|cũ|nào|[A-Z](?: ?[A-Z])+)\b)(?<!\d bạn)"
 QUY = [
     (r"\b(các|những) bạn\b", "anh chị"), (r"\b(Các|Những) bạn\b", "Anh chị"),
     (r"(?<!người )(?<!làm )\bbạn\b" + _GIU, "anh chị"), (r"(?<!Người )\bBạn\b" + _GIU, "Anh chị"),
