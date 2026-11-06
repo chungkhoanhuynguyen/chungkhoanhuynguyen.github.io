@@ -1,0 +1,65 @@
+[
+ {
+  "key": "TN0711H",
+  "tieu_de": "Iran phát video dạy dân sống sót sau vụ nổ hạt nhân: thị trường đang định giá rủi ro này thế nào?",
+  "hook": ["IRAN DẠY DÂN", "TRÁNH BOM HẠT NHÂN"],
+  "nhan": "TIN NÓNG THẾ GIỚI",
+  "short_caption": "Iran vừa phát video 8 phút hướng dẫn người dân sống sót sau vụ nổ hạt nhân. Giá dầu, giá vàng và chứng khoán đang phản ứng ra sao, và nhà đầu tư Việt Nam nên nhìn tin này thế nào?",
+  "tags": ["tinnong", "iran", "giadau", "chungkhoan", "vnindex"],
+  "keo_web": {
+   "chu_to": "GIÁ DẦU, VÀNG MỖI NGÀY",
+   "loi": "Giá dầu, giá vàng và chỉ số thế giới em cập nhật mỗi ngày trên chungkhoanhuynguyen.com. Anh chị vào xem miễn phí nhé.",
+   "loi_doc": "Giá dầu, giá vàng và chỉ số thế giới em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com. Anh chị vào xem miễn phí nhé."
+  },
+  "cau_hoi": {
+   "chu_to": "LO THẬT HAY LO THỪA?",
+   "loi": "Theo anh chị, thị trường đang lo thật hay đang lo thừa về Trung Đông?",
+   "loi_doc": "Theo anh chị, thị trường đang lo thật hay đang lo thừa về Trung Đông?"
+  },
+  "canh": [
+   {
+    "chu_to": "IRAN DẠY DÂN TRÁNH BOM",
+    "loi": "Em chào anh chị. Truyền hình nhà nước Iran vừa phát một video dài 8 phút, hướng dẫn người dân cách sống sót nếu xảy ra vụ nổ hạt nhân. Đây là lần đầu Iran công khai làm việc này.",
+    "loi_doc": "Em chào anh chị. Truyền hình nhà nước Iran vừa phát một video dài tám phút, hướng dẫn người dân cách sống sót nếu xảy ra vụ nổ hạt nhân. Đây là lần đầu Iran công khai làm việc này.",
+    "anh": "Tehran skyline",
+    "tin": 1
+   },
+   {
+    "chu_to": "VIDEO NÓI GÌ?",
+    "loi": "Video khuyên người dân không nhìn vào chớp sáng, nằm sấp sau vật chắn, rồi trú trong tầng hầm ít nhất 24 giờ. Nó được phát ở tỉnh Isfahan, nơi có cơ sở hạt nhân Natanz.",
+    "loi_doc": "Video khuyên người dân không nhìn vào chớp sáng, nằm sấp sau vật chắn, rồi trú trong tầng hầm ít nhất hai mươi bốn giờ. Nó được phát ở tỉnh Isfahan, nơi có cơ sở hạt nhân Natanz.",
+    "anh": "Isfahan"
+   },
+   {
+    "chu_to": "CĂNG THẲNG LEO THANG",
+    "loi": "Đêm 2/11, Mỹ đã không kích có giới hạn đảo Qeshm ở eo biển Hormuz. Phía Mỹ gọi đây là hành động phòng thủ. Còn đàm phán hai bên thì vẫn chưa đi đến đâu.",
+    "loi_doc": "Đêm hai tháng mười một, Mỹ đã không kích có giới hạn đảo Qeshm ở eo biển Hormuz. Phía Mỹ gọi đây là hành động phòng thủ. Còn đàm phán hai bên thì vẫn chưa đi đến đâu.",
+    "anh": "Strait of Hormuz"
+   },
+   {
+    "chu_to": "HORMUZ LÀ HỌNG DẦU",
+    "loi": "Eo biển Hormuz là con đường của khoảng một phần năm lượng dầu thế giới. Thị trường không sợ tiếng súng bằng sợ con đường này bị chặn. Vì vậy mỗi tin từ Iran đều được quy ra giá dầu.",
+    "loi_doc": "Eo biển Hormuz là con đường của khoảng một phần năm lượng dầu thế giới. Thị trường không sợ tiếng súng bằng sợ con đường này bị chặn. Vì vậy mỗi tin từ Iran đều được quy ra giá dầu.",
+    "anh": "oil tanker"
+   },
+   {
+    "chu_to": "THỊ TRƯỜNG PHẢN ỨNG",
+    "loi": "Điều lạ là dầu Brent vẫn đứng quanh 98 USD, vàng còn giảm nhẹ. Thứ giảm mạnh lại là chứng khoán: Mỹ mất hơn 4%, Nhật và Hàn mất 6%. Thị trường đang lo về giá cổ phiếu nhiều hơn lo chiến tranh.",
+    "loi_doc": "Điều lạ là dầu Brent vẫn đứng quanh chín mươi tám đô la, vàng còn giảm nhẹ. Thứ giảm mạnh lại là chứng khoán: Mỹ mất hơn bốn phần trăm, Nhật và Hàn mất sáu phần trăm. Thị trường đang lo về giá cổ phiếu nhiều hơn lo chiến tranh.",
+    "hinh": "hinh/the_gioi.png"
+   },
+   {
+    "chu_to": "VIỆT NAM NHÌN THẾ NÀO",
+    "loi": "Với Việt Nam, tin Trung Đông thường chạm trước vào nhóm dầu khí, rồi tới chi phí vận tải và tỷ giá. Tin xấu đến nhanh, nhưng tác động lên lợi nhuận doanh nghiệp thì cần nhiều quý mới thấy rõ.",
+    "loi_doc": "Với Việt Nam, tin Trung Đông thường chạm trước vào nhóm dầu khí, rồi tới chi phí vận tải và tỷ giá. Tin xấu đến nhanh, nhưng tác động lên lợi nhuận doanh nghiệp thì cần nhiều quý mới thấy rõ.",
+    "anh": "Ho Chi Minh City Stock Exchange"
+   },
+   {
+    "chu_to": "SỢ HÃI LÀ GIÁ VÉ",
+    "loi": "Em luôn nhắc anh chị một điều. Nỗi sợ là cái giá phải trả khi vào thị trường, còn quản trị rủi ro là cách để mình không trả giá quá đắt. Tỷ trọng vừa phải và điểm cắt lỗ có trước vẫn là tấm khiên tốt nhất.",
+    "loi_doc": "Em luôn nhắc anh chị một điều. Nỗi sợ là cái giá phải trả khi vào thị trường, còn quản trị rủi ro là cách để mình không trả giá quá đắt. Tỷ trọng vừa phải và điểm cắt lỗ có trước vẫn là tấm khiên tốt nhất.",
+    "anh": "Ho Chi Minh City skyline"
+   }
+  ]
+ }
+]
