@@ -1,7 +1,7 @@
 # Tự kiểm văn phong lời thoại trước khi dựng (anh Huy 6/11: "viết lời thoại hơi kém, tự cải thiện, đừng để tôi sửa nhiều").
 # Trả về danh sách lỗi; xưởng ghi vào KEY_qc.txt, NV3 không đăng nếu còn dòng "LỖI".
 import re
-CAM = [(r"\btôi\b|(?<!\d )\bbạn\b(?!\s*(bè|nào|học|[A-Z]{2,})\b)", "gọi 'bạn'/xưng 'tôi' – phải xưng em, gọi anh chị"),
+CAM = [(r"\btôi\b|(?<!\d )(?<!người )\bbạn\b(?!\s*(bè|nào|học|đồng hành|đời|thân|[A-Z]{2,})\b)", "gọi 'bạn'/xưng 'tôi' – phải xưng em, gọi anh chị"),
        (r"không phải (là )?khuyến nghị|chia sẻ kiến thức", "câu miễn trừ – anh Huy đã bỏ"),
        (r"em là Huy|môi giới chứng khoán\.", "tự giới thiệu 'em là môi giới' – không cần"),
        (r"bình luận giúp em|để lại (giúp em )?một chữ", "câu cuối phải là câu hỏi mở thuần, không xin bình luận"),
