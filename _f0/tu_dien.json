@@ -483,5 +483,35 @@
 "Thuế đối ứng",
 "Mức thuế một nước áp lên hàng nhập khẩu để cân bằng với rào cản của nước đối tác.",
 "thue-doi-ung-la-gi"
+],
+[
+"Người mua trả tiền trước",
+"Tiền khách hàng đã thanh toán nhưng doanh nghiệp chưa giao hàng, ghi ở nợ phải trả.",
+"nguoi-mua-tra-tien-truoc-la-gi"
+],
+[
+"Lợi nhuận sau thuế chưa phân phối",
+"Phần lợi nhuận tích lũy chưa chia cổ tức, chưa trích quỹ, nằm trong vốn chủ sở hữu.",
+"loi-nhuan-sau-thue-chua-phan-phoi-la-gi"
+],
+[
+"Lợi ích cổ đông không kiểm soát",
+"Phần vốn và lợi nhuận của công ty con thuộc cổ đông khác ngoài công ty mẹ trong báo cáo hợp nhất.",
+"loi-ich-co-dong-khong-kiem-soat-la-gi"
+],
+[
+"Tài sản cố định",
+"Tài sản dùng lâu dài cho sản xuất kinh doanh như nhà xưởng, máy móc, quyền sử dụng đất.",
+"tai-san-co-dinh-la-gi"
+],
+[
+"Pha loãng cổ phiếu",
+"Số cổ phiếu tăng làm mỗi cổ phiếu đại diện phần nhỏ hơn lợi nhuận và tài sản doanh nghiệp.",
+"pha-loang-co-phieu-la-gi"
+],
+[
+"ESOP",
+"Chương trình phát hành cổ phiếu cho người lao động, thường với giá ưu đãi.",
+"esop-la-gi"
 ]
 ]
