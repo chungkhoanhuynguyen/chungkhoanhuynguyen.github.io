@@ -26540,7 +26540,8 @@
    "ty-le-thang-va-ty-le-loi-lo",
    "ky-luat-dau-tu",
    "vi-sao-nha-dau-tu-ca-nhan-thua-lo"
-  ]
+  ],
+  "canon": "nhat-ky-giao-dich"
  },
  {
   "slug": "chot-loi-tung-phan",
@@ -27161,5 +27162,615 @@
    "no-vay-tren-von-chu-so-huu"
   ],
   "add": []
+ },
+ {
+  "slug": "tien-rong-va-no-rong-la-gi",
+  "kw": "tiền ròng và nợ ròng là gì",
+  "title": "Tiền ròng và nợ ròng là gì? Cách tính từ báo cáo tài chính",
+  "desc": "Tiền ròng, nợ ròng là gì, cách tính từ bảng cân đối kế toán và vì sao quan trọng hơn tổng nợ. Ví dụ VNM, HPG, REE tại 30/9/2026.",
+  "body": [
+   [
+    "p",
+    "<b>Nợ ròng</b> là tổng vay nợ có trả lãi trừ đi tiền và các khoản đầu tư tài chính ngắn hạn mà doanh nghiệp đang có. Nếu kết quả âm, tức tiền nhiều hơn nợ vay, người ta gọi doanh nghiệp có <b>tiền ròng</b> (net cash). Đây là cách nhìn nợ thực chất hơn so với chỉ nhìn con số tổng nợ phải trả."
+   ],
+   [
+    "h2",
+    "Công thức đơn giản"
+   ],
+   [
+    "ul",
+    [
+     "Nợ vay = vay và nợ thuê tài chính ngắn hạn + dài hạn.",
+     "Tiền = tiền và tương đương tiền + đầu tư tài chính ngắn hạn (phần lớn là tiền gửi có kỳ hạn).",
+     "Nợ ròng = nợ vay − tiền. Âm thì là tiền ròng."
+    ]
+   ],
+   [
+    "p",
+    "Lưu ý: nợ phải trả người bán, người mua trả tiền trước, doanh thu chưa thực hiện không tính vào nợ vay, vì đó là nợ không chịu lãi phát sinh từ hoạt động kinh doanh."
+   ],
+   [
+    "h2",
+    "Ví dụ thực tế tại 30/9/2026"
+   ],
+   [
+    "ul",
+    [
+     "VNM: tiền và đầu tư ngắn hạn khoảng 26.538 tỷ đồng, vay khoảng 8.482 tỷ → tiền ròng khoảng 18.056 tỷ đồng.",
+     "HPG: tiền và đầu tư ngắn hạn khoảng 46.127 tỷ, vay khoảng 105.737 tỷ → nợ ròng khoảng 59.610 tỷ, bằng khoảng 39,9% vốn chủ sở hữu.",
+     "REE: tiền và đầu tư ngắn hạn khoảng 7.961 tỷ, vay khoảng 11.465 tỷ → nợ ròng khoảng 3.505 tỷ, bằng khoảng 13,3% vốn chủ sở hữu."
+    ]
+   ],
+   [
+    "p",
+    "Cùng là doanh nghiệp lớn nhưng ba cấu trúc rất khác: VNM gần như không phụ thuộc vốn vay, HPG dùng nợ để tài trợ dự án lớn, REE vay chủ yếu cho mảng điện và hạ tầng có dòng tiền đều."
+   ],
+   [
+    "h2",
+    "Vì sao nợ ròng quan trọng hơn tổng nợ"
+   ],
+   [
+    "p",
+    "Hai công ty cùng vay 10.000 tỷ đồng nhưng một công ty đang giữ 9.000 tỷ tiền gửi, công ty kia chỉ có 500 tỷ. Rủi ro tài chính của hai bên khác hẳn nhau. Nợ ròng cho biết nếu dùng hết tiền đang có để trả nợ thì còn nợ bao nhiêu, từ đó đánh giá sức chịu đựng khi lãi suất tăng hoặc kinh doanh chậm lại."
+   ],
+   [
+    "h2",
+    "Các chỉ số nên xem kèm"
+   ],
+   [
+    "ul",
+    [
+     "Nợ ròng / vốn chủ sở hữu: dưới 50% thường được coi là an toàn với doanh nghiệp sản xuất, nhưng mỗi ngành một khác.",
+     "Nợ ròng / EBITDA: cần bao nhiêu năm lợi nhuận hoạt động để trả hết nợ ròng.",
+     "Hệ số khả năng trả lãi vay: lợi nhuận có đủ trả lãi không."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Doanh nghiệp có tiền ròng có phải luôn tốt?",
+    "Tiền ròng giúp an toàn, nhưng nếu giữ quá nhiều tiền mà không đầu tư hiệu quả thì ROE có thể bị kéo xuống. Cần xem doanh nghiệp dùng tiền đó thế nào."
+   ],
+   [
+    "Ngân hàng có tính nợ ròng không?",
+    "Không. Ngân hàng nhận tiền gửi và cho vay là hoạt động chính, nên dùng các chỉ số riêng như CAR, LDR, nợ xấu."
+   ],
+   [
+    "Đầu tư tài chính ngắn hạn có được tính như tiền không?",
+    "Thường là tiền gửi có kỳ hạn dưới 12 tháng nên được tính vào. Nếu là cổ phiếu kinh doanh thì nên trừ hao vì giá trị có thể biến động."
+   ]
+  ],
+  "rel": [
+   "he-so-no-de-la-gi",
+   "tien-va-tuong-duong-tien-la-gi",
+   "dau-tu-giu-den-ngay-dao-han-la-gi",
+   "he-so-bao-phu-lai-vay-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Đọc xu hướng, không chỉ một kỳ"
+   ],
+   [
+    "p",
+    "Nợ ròng có thể tăng nhanh khi doanh nghiệp đang xây nhà máy, rồi giảm dần khi dự án bắt đầu tạo dòng tiền. Vì vậy nên xem dãy bốn đến tám quý: nợ ròng tăng mà lợi nhuận và dòng tiền kinh doanh cũng tăng thì khác hẳn trường hợp nợ ròng tăng để bù lỗ hoặc trả cổ tức."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Nợ ròng = vay có lãi − tiền và đầu tư ngắn hạn.",
+     "Âm là tiền ròng, dương là nợ ròng.",
+     "So nợ ròng với vốn chủ, lợi nhuận và dòng tiền, theo nhiều quý."
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: báo cáo tài chính hợp nhất quý 3/2026 (số dư 30/9/2026), dữ liệu tổng hợp trên chungkhoanhuynguyen.com. Số liệu quá khứ dùng để minh họa cách đọc, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "grp": 3
+ },
+ {
+  "slug": "doanh-thu-hoat-dong-tai-chinh-la-gi",
+  "kw": "doanh thu hoạt động tài chính là gì",
+  "title": "Doanh thu hoạt động tài chính là gì? Đọc thế nào cho đúng",
+  "desc": "Doanh thu hoạt động tài chính gồm những gì, vì sao có thể làm lợi nhuận đẹp lên và cách tách khỏi lợi nhuận cốt lõi. Ví dụ VNM, MWG quý 3/2026.",
+  "body": [
+   [
+    "p",
+    "<b>Doanh thu hoạt động tài chính</b> là phần thu nhập doanh nghiệp có được từ tiền và các khoản đầu tư, không đến từ việc bán hàng hay cung cấp dịch vụ chính. Dòng này nằm ngay dưới lợi nhuận gộp trên báo cáo kết quả kinh doanh, cạnh dòng chi phí tài chính."
+   ],
+   [
+    "h2",
+    "Gồm những khoản nào"
+   ],
+   [
+    "ul",
+    [
+     "Lãi tiền gửi, lãi trái phiếu, lãi cho vay.",
+     "Cổ tức, lợi nhuận được chia từ khoản đầu tư không hợp nhất.",
+     "Lãi chênh lệch tỷ giá, lãi bán khoản đầu tư, lãi thanh lý công ty con.",
+     "Chiết khấu thanh toán được hưởng."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ quý 3/2026"
+   ],
+   [
+    "ul",
+    [
+     "VNM: doanh thu tài chính 600,3 tỷ đồng, tăng khoảng 51,7% so với 395,8 tỷ cùng kỳ, tương đương khoảng 16,2% lợi nhuận trước thuế của quý.",
+     "MWG: doanh thu tài chính 1.162,4 tỷ đồng, tăng khoảng 43,7% so với 809,1 tỷ cùng kỳ, tương đương khoảng 27,4% lợi nhuận trước thuế của quý. Nguồn chính là lãi từ khoảng 53.315 tỷ đồng đầu tư tài chính ngắn hạn tại 30/9/2026."
+    ]
+   ],
+   [
+    "p",
+    "Hai ví dụ cho thấy với doanh nghiệp giữ nhiều tiền, thu nhập tài chính không hề nhỏ. Khi lãi suất tiền gửi thay đổi, phần lợi nhuận này cũng thay đổi theo, độc lập với việc bán hàng tốt hay xấu."
+   ],
+   [
+    "h2",
+    "Vì sao cần tách riêng"
+   ],
+   [
+    "p",
+    "Nhà đầu tư thường muốn biết lợi nhuận cốt lõi, tức phần đến từ hoạt động kinh doanh chính và có thể lặp lại. Một quý lợi nhuận tăng mạnh có thể chỉ vì lãi bán khoản đầu tư hay lãi tỷ giá. Nếu không tách ra, ta dễ nghĩ doanh nghiệp đang kinh doanh tốt hơn thực tế."
+   ],
+   [
+    "h2",
+    "Cách đọc nhanh"
+   ],
+   [
+    "ul",
+    [
+     "Lấy lợi nhuận gộp trừ chi phí bán hàng và quản lý để ra lợi nhuận từ hoạt động chính.",
+     "So doanh thu tài chính với lợi nhuận trước thuế: tỷ lệ cao thì lợi nhuận phụ thuộc nhiều vào tiền gửi, đầu tư.",
+     "Đọc thuyết minh để biết khoản nào lặp lại (lãi tiền gửi) và khoản nào một lần (lãi thoái vốn)."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Doanh thu tài chính cao có phải xấu không?",
+    "Không. Lãi tiền gửi đều đặn là thu nhập thật. Chỉ cần phân biệt nó với lợi nhuận kinh doanh chính và với các khoản lãi một lần."
+   ],
+   [
+    "Doanh thu tài chính khác thu nhập khác thế nào?",
+    "Doanh thu tài chính đến từ tiền và đầu tư. Thu nhập khác đến từ các khoản ngoài hoạt động như thanh lý tài sản cố định, tiền phạt, bồi thường."
+   ],
+   [
+    "Ngân hàng có dòng doanh thu tài chính không?",
+    "Ngân hàng dùng mẫu báo cáo riêng, thu nhập lãi là hoạt động chính nên được trình bày là thu nhập lãi thuần, không phải doanh thu tài chính."
+   ]
+  ],
+  "rel": [
+   "bao-cao-ket-qua-kinh-doanh-la-gi",
+   "loi-nhuan-bat-thuong-la-gi",
+   "chi-phi-lai-vay-la-gi",
+   "dau-tu-giu-den-ngay-dao-han-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Lưu ý khi so sánh giữa các quý"
+   ],
+   [
+    "p",
+    "Lãi chênh lệch tỷ giá và lãi bán khoản đầu tư thường dồn vào một vài quý, nên doanh thu tài chính có thể nhảy vọt rồi rơi mạnh. Khi thấy một quý doanh thu tài chính cao bất thường so với dãy các quý trước, hãy đọc thuyết minh để biết lý do trước khi kết luận lợi nhuận đã tăng bền vững."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Doanh thu tài chính là thu nhập từ tiền và đầu tư, không phải từ bán hàng.",
+     "Tách nó ra để thấy lợi nhuận cốt lõi.",
+     "Phân biệt khoản lặp lại và khoản một lần."
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: báo cáo tài chính hợp nhất quý 3/2026 (số dư 30/9/2026), dữ liệu tổng hợp trên chungkhoanhuynguyen.com. Số liệu quá khứ dùng để minh họa cách đọc, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "grp": 3
+ },
+ {
+  "slug": "vay-ngan-han-va-dai-han-la-gi",
+  "kw": "vay ngắn hạn và dài hạn",
+  "title": "Vay ngắn hạn và vay dài hạn là gì? Đọc cơ cấu nợ vay",
+  "desc": "Vay ngắn hạn, vay dài hạn khác gì, vì sao cơ cấu kỳ hạn nợ quan trọng và cách đọc trên bảng cân đối. Ví dụ HPG, POW, REE, VNM tại 30/9/2026.",
+  "body": [
+   [
+    "p",
+    "Trên bảng cân đối kế toán, nợ vay được chia thành hai dòng: <b>vay và nợ thuê tài chính ngắn hạn</b> (phải trả trong vòng 12 tháng) và <b>vay và nợ thuê tài chính dài hạn</b> (trên 12 tháng). Phần nợ dài hạn đến hạn trong năm tới cũng được chuyển sang dòng ngắn hạn."
+   ],
+   [
+    "h2",
+    "Mỗi loại dùng để làm gì"
+   ],
+   [
+    "ul",
+    [
+     "Vay ngắn hạn: thường tài trợ vốn lưu động như mua nguyên liệu, hàng tồn kho, khoản phải thu. Lãi suất thường thấp hơn nhưng phải đảo nợ liên tục.",
+     "Vay dài hạn: thường tài trợ tài sản dài hạn như nhà máy, dự án điện, hạ tầng. Lãi suất cao hơn nhưng thời gian trả dài, khớp với dòng tiền của dự án."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ tại 30/9/2026"
+   ],
+   [
+    "ul",
+    [
+     "HPG: vay ngắn hạn khoảng 78.615 tỷ, dài hạn khoảng 27.122 tỷ → ngắn hạn chiếm khoảng 74,3% tổng vay.",
+     "POW: vay ngắn hạn khoảng 19.438 tỷ, dài hạn khoảng 18.087 tỷ → ngắn hạn khoảng 51,8%.",
+     "REE: vay ngắn hạn khoảng 1.266 tỷ, dài hạn khoảng 10.199 tỷ → ngắn hạn chỉ khoảng 11,0%.",
+     "VNM: vay gần như toàn bộ là ngắn hạn (khoảng 8.385 tỷ so với 97 tỷ dài hạn), nhưng VNM giữ lượng tiền và đầu tư ngắn hạn lớn hơn nhiều so với nợ vay."
+    ]
+   ],
+   [
+    "h2",
+    "Vì sao cơ cấu kỳ hạn quan trọng"
+   ],
+   [
+    "p",
+    "Rủi ro lớn nhất là dùng vay ngắn hạn để xây tài sản dài hạn. Khi tín dụng thắt chặt hoặc lãi suất tăng, doanh nghiệp phải đảo nợ với chi phí cao hơn, trong khi dự án chưa tạo ra tiền. Ngược lại, doanh nghiệp thương mại hay sản xuất có vòng quay hàng tồn kho nhanh dùng vay ngắn hạn là hợp lý, vì hàng bán ra là có tiền trả nợ."
+   ],
+   [
+    "h2",
+    "Cách đọc nhanh"
+   ],
+   [
+    "ul",
+    [
+     "So vay ngắn hạn với tiền và đầu tư ngắn hạn: đủ trả bao nhiêu phần.",
+     "So vay ngắn hạn với hàng tồn kho và phải thu: nợ có đang tài trợ đúng cho vốn lưu động không.",
+     "Xem chỉ số thanh toán hiện hành và dòng tiền kinh doanh qua nhiều quý."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Vay ngắn hạn nhiều có nguy hiểm không?",
+    "Không hẳn. Nguy hiểm khi vay ngắn hạn lớn mà tiền mặt ít, dòng tiền kinh doanh yếu và tài sản được tài trợ là tài sản dài hạn."
+   ],
+   [
+    "Trái phiếu doanh nghiệp nằm ở dòng nào?",
+    "Trái phiếu phát hành thường được ghi trong vay và nợ thuê tài chính; phần đáo hạn trong 12 tháng tới chuyển sang ngắn hạn."
+   ],
+   [
+    "Nên xem thêm thông tin gì?",
+    "Thuyết minh vay nợ cho biết lãi suất, đồng tiền vay, tài sản đảm bảo và lịch trả nợ, giúp đánh giá rủi ro rõ hơn."
+   ]
+  ],
+  "rel": [
+   "tien-rong-va-no-rong-la-gi",
+   "chi-so-thanh-toan-hien-hanh-la-gi",
+   "von-luu-dong-la-gi",
+   "he-so-no-de-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Cẩn thận với nợ vay bằng ngoại tệ"
+   ],
+   [
+    "p",
+    "Một số doanh nghiệp vay bằng đô la Mỹ hoặc euro để có lãi suất thấp. Khi tỷ giá tăng, nợ quy đổi ra đồng tăng theo và tạo lỗ tỷ giá trong chi phí tài chính. Thuyết minh vay nợ sẽ ghi rõ đồng tiền vay, nên đọc thêm phần này với doanh nghiệp có nợ vay lớn."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Ngắn hạn: trả trong 12 tháng, dùng cho vốn lưu động.",
+     "Dài hạn: trả trên 12 tháng, dùng cho dự án và tài sản dài hạn.",
+     "Nợ nên khớp kỳ hạn với tài sản mà nó tài trợ."
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: báo cáo tài chính hợp nhất quý 3/2026 (số dư 30/9/2026), dữ liệu tổng hợp trên chungkhoanhuynguyen.com. Số liệu quá khứ dùng để minh họa cách đọc, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "grp": 3
+ },
+ {
+  "slug": "ty-suat-thue-thuc-te-la-gi",
+  "kw": "thuế suất thực tế là gì",
+  "title": "Thuế suất thực tế là gì? Vì sao không phải lúc nào cũng 20%",
+  "desc": "Thuế suất thực tế là gì, cách tính từ báo cáo kết quả kinh doanh, vì sao khác mức 20% và ảnh hưởng tới lợi nhuận. Ví dụ VNM, HPG, MWG 9 tháng 2026.",
+  "body": [
+   [
+    "p",
+    "<b>Thuế suất thực tế</b> (effective tax rate) là tỷ lệ chi phí thuế thu nhập doanh nghiệp trên lợi nhuận kế toán trước thuế. Mức thuế phổ thông ở Việt Nam là 20%, nhưng con số thực tế của từng doanh nghiệp có thể thấp hoặc cao hơn khá nhiều."
+   ],
+   [
+    "h2",
+    "Cách tính"
+   ],
+   [
+    "p",
+    "Thuế suất thực tế = chi phí thuế TNDN (gồm hiện hành và hoãn lại) / lợi nhuận kế toán trước thuế. Nên tính theo chín tháng hoặc bốn quý để giảm nhiễu, vì một quý riêng có thể lệch do hoàn thuế hay điều chỉnh."
+   ],
+   [
+    "h2",
+    "Ví dụ 9 tháng đầu năm 2026"
+   ],
+   [
+    "ul",
+    [
+     "VNM: lợi nhuận trước thuế khoảng 10.608 tỷ đồng, chi phí thuế khoảng 2.003 tỷ → thuế suất thực tế khoảng 18,9%.",
+     "HPG: lợi nhuận trước thuế khoảng 27.056 tỷ, chi phí thuế khoảng 3.310 tỷ → khoảng 12,2%; riêng quý 3 chỉ khoảng 9,3%.",
+     "MWG: lợi nhuận trước thuế khoảng 11.600 tỷ, chi phí thuế khoảng 1.966 tỷ → khoảng 16,9%."
+    ]
+   ],
+   [
+    "h2",
+    "Vì sao khác 20%"
+   ],
+   [
+    "ul",
+    [
+     "Ưu đãi thuế: dự án mới, khu kinh tế, địa bàn khó khăn được miễn giảm có thời hạn.",
+     "Thu nhập không chịu thuế: cổ tức nhận từ doanh nghiệp khác, lãi từ công ty liên kết (đã nộp thuế ở công ty đó).",
+     "Chi phí không được trừ: phạt, chi phí vượt định mức làm thuế suất thực tế cao hơn.",
+     "Lỗ của công ty con: không bù trừ được với lãi của công ty khác trong tập đoàn."
+    ]
+   ],
+   [
+    "h2",
+    "Vì sao nhà đầu tư nên quan tâm"
+   ],
+   [
+    "p",
+    "Nếu thuế suất thấp vì ưu đãi có thời hạn, khi ưu đãi hết thì lợi nhuận sau thuế sẽ giảm dù kinh doanh không đổi. Ví dụ doanh nghiệp đang chịu 10% chuyển lên 20%, với lợi nhuận trước thuế 1.000 tỷ đồng thì lợi nhuận sau thuế giảm từ 900 tỷ xuống 800 tỷ, tức khoảng 11%. Khi định giá bằng P/E, cần tính đến thay đổi này."
+   ]
+  ],
+  "faq": [
+   [
+    "Thuế suất thực tế thấp có phải tốt?",
+    "Tốt cho lợi nhuận hiện tại, nhưng cần biết lý do và thời hạn. Ưu đãi hết hạn sẽ làm lợi nhuận giảm."
+   ],
+   [
+    "Thuế suất thực tế âm nghĩa là gì?",
+    "Thường do ghi nhận tài sản thuế hoãn lại lớn hoặc được hoàn thuế. Đây là khoản bất thường, không nên dùng để dự phóng."
+   ],
+   [
+    "Thông tin ưu đãi thuế xem ở đâu?",
+    "Trong thuyết minh báo cáo tài chính, mục thuế thu nhập doanh nghiệp, thường ghi rõ thuế suất áp dụng và thời gian ưu đãi."
+   ]
+  ],
+  "rel": [
+   "thue-thu-nhap-hoan-lai-la-gi",
+   "bao-cao-ket-qua-kinh-doanh-la-gi",
+   "bien-loi-nhuan-rong-la-gi",
+   "pe-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Dùng khi so sánh doanh nghiệp"
+   ],
+   [
+    "p",
+    "Hai doanh nghiệp có cùng lợi nhuận trước thuế nhưng thuế suất thực tế khác nhau sẽ có lợi nhuận sau thuế và EPS khác nhau. Khi so sánh hiệu quả kinh doanh, có thể so cả lợi nhuận trước thuế hoặc EBIT để tránh khác biệt do chính sách thuế, rồi mới quay lại xem lợi nhuận sau thuế."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Thuế suất thực tế = chi phí thuế / lợi nhuận trước thuế.",
+     "Tính theo chín tháng hoặc bốn quý.",
+     "Hỏi lý do và thời hạn nếu thuế suất thấp hơn 20% nhiều."
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: báo cáo tài chính hợp nhất quý 3/2026 (số dư 30/9/2026), dữ liệu tổng hợp trên chungkhoanhuynguyen.com. Số liệu quá khứ dùng để minh họa cách đọc, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "grp": 3
+ },
+ {
+  "slug": "lai-lo-tu-cong-ty-lien-ket-la-gi",
+  "kw": "lãi lỗ từ công ty liên kết là gì",
+  "title": "Lãi lỗ từ công ty liên kết là gì? Cách đọc trên báo cáo",
+  "desc": "Công ty liên kết là gì, lãi lỗ từ công ty liên kết ghi nhận ra sao theo phương pháp vốn chủ sở hữu và vì sao không có tiền ngay. Ví dụ REE, VNM.",
+  "body": [
+   [
+    "p",
+    "<b>Công ty liên kết</b> là doanh nghiệp mà công ty mẹ có ảnh hưởng đáng kể nhưng không kiểm soát, thường sở hữu từ 20% đến 50% quyền biểu quyết. Phần lãi hoặc lỗ tương ứng tỷ lệ sở hữu được ghi vào dòng <b>lãi lỗ trong công ty liên kết, liên doanh</b> trên báo cáo kết quả kinh doanh hợp nhất."
+   ],
+   [
+    "h2",
+    "Phương pháp vốn chủ sở hữu"
+   ],
+   [
+    "p",
+    "Công ty mẹ không cộng doanh thu, chi phí của công ty liên kết vào báo cáo của mình. Thay vào đó, khoản đầu tư được ghi theo giá gốc, sau đó mỗi kỳ cộng thêm phần lãi (hoặc trừ phần lỗ) theo tỷ lệ sở hữu, và trừ đi cổ tức đã nhận. Vì vậy giá trị khoản đầu tư trên bảng cân đối thay đổi theo kết quả của công ty liên kết."
+   ],
+   [
+    "h2",
+    "Ví dụ thực tế"
+   ],
+   [
+    "ul",
+    [
+     "REE: quý 3/2026 lãi từ công ty liên kết khoảng 219,7 tỷ đồng, tương đương khoảng 23,7% lợi nhuận sau thuế 926 tỷ của quý. Chín tháng 2026 khoảng 562,4 tỷ. Giá trị khoản đầu tư vào công ty liên kết khoảng 6.017 tỷ đồng tại 30/9/2026.",
+     "VNM: quý 3/2025 ghi lỗ từ công ty liên kết khoảng 194,5 tỷ đồng, sang quý 3/2026 chuyển thành lãi khoảng 40,7 tỷ. Biến động này làm lợi nhuận hai kỳ chênh lệch dù hoạt động sữa chính không đổi nhiều."
+    ]
+   ],
+   [
+    "h2",
+    "Điểm cần lưu ý"
+   ],
+   [
+    "ul",
+    [
+     "Lãi liên kết là lãi kế toán, công ty mẹ chỉ nhận tiền khi công ty liên kết chia cổ tức.",
+     "Khoản lãi này đã chịu thuế ở công ty liên kết nên thường không bị tính thuế lần nữa ở công ty mẹ.",
+     "Nếu phần lớn lợi nhuận đến từ liên kết, cần tìm hiểu sức khỏe các công ty đó."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Công ty liên kết khác công ty con thế nào?",
+    "Công ty con bị kiểm soát (thường sở hữu trên 50%) nên được hợp nhất toàn bộ. Công ty liên kết chỉ có ảnh hưởng đáng kể nên chỉ ghi phần lãi lỗ theo tỷ lệ."
+   ],
+   [
+    "Lãi liên kết có làm tăng dòng tiền không?",
+    "Không trực tiếp. Dòng tiền chỉ tăng khi nhận cổ tức. Trên báo cáo lưu chuyển tiền tệ, khoản lãi này được trừ ra khi tính dòng tiền kinh doanh."
+   ],
+   [
+    "Vì sao lãi liên kết có thể âm?",
+    "Khi công ty liên kết lỗ, công ty mẹ ghi nhận phần lỗ theo tỷ lệ sở hữu, làm giảm lợi nhuận hợp nhất."
+   ]
+  ],
+  "rel": [
+   "doc-bctc-hop-nhat-va-rieng-le",
+   "loi-ich-co-dong-khong-kiem-soat-la-gi",
+   "loi-nhuan-bat-thuong-la-gi",
+   "dong-tien-kinh-doanh-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Đọc cùng dòng tiền cổ tức"
+   ],
+   [
+    "p",
+    "Một cách kiểm tra đơn giản là so lãi liên kết lũy kế vài năm với cổ tức thực nhận từ các công ty này trong báo cáo lưu chuyển tiền tệ. Nếu lãi ghi nhận lớn nhưng tiền về rất ít trong thời gian dài, lợi nhuận đó kém chắc chắn hơn so với lợi nhuận từ hoạt động chính."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Công ty liên kết: sở hữu khoảng 20–50%, có ảnh hưởng nhưng không kiểm soát.",
+     "Ghi theo phương pháp vốn chủ sở hữu.",
+     "Lãi liên kết là lãi kế toán, tiền về khi có cổ tức."
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: báo cáo tài chính hợp nhất quý 3/2026 (số dư 30/9/2026), dữ liệu tổng hợp trên chungkhoanhuynguyen.com. Số liệu quá khứ dùng để minh họa cách đọc, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "grp": 3
+ },
+ {
+  "slug": "phai-tra-nguoi-ban-la-gi",
+  "kw": "phải trả người bán là gì",
+  "title": "Phải trả người bán là gì? Vốn chiếm dụng không mất lãi",
+  "desc": "Phải trả người bán là gì, vì sao được gọi là vốn chiếm dụng, cách tính số ngày phải trả và dấu hiệu cần chú ý. Ví dụ MWG, VNM, HPG quý 3/2026.",
+  "body": [
+   [
+    "p",
+    "<b>Phải trả người bán</b> là số tiền doanh nghiệp còn nợ nhà cung cấp cho hàng hóa, nguyên liệu hoặc dịch vụ đã nhận nhưng chưa thanh toán. Đây là khoản nợ ngắn hạn trên bảng cân đối kế toán, nằm trong phần nợ phải trả, và thường không phải trả lãi."
+   ],
+   [
+    "h2",
+    "Vì sao gọi là vốn chiếm dụng"
+   ],
+   [
+    "p",
+    "Khi được nhà cung cấp cho trả chậm 30 hay 60 ngày, doanh nghiệp có thể bán hàng, thu tiền rồi mới trả. Trong thời gian đó, tiền của nhà cung cấp đang tài trợ cho hoạt động của doanh nghiệp mà không mất lãi. Doanh nghiệp có vị thế mạnh với nhà cung cấp thường chiếm dụng được nhiều hơn, giảm nhu cầu vay ngân hàng."
+   ],
+   [
+    "h2",
+    "Số ngày phải trả"
+   ],
+   [
+    "p",
+    "Số ngày phải trả = phải trả người bán / giá vốn hàng bán trong kỳ × số ngày của kỳ. Với số liệu quý, nhân với khoảng 91 ngày. Chỉ số này cho biết trung bình doanh nghiệp mất bao nhiêu ngày để thanh toán cho nhà cung cấp."
+   ],
+   [
+    "h2",
+    "Ví dụ quý 3/2026"
+   ],
+   [
+    "ul",
+    [
+     "MWG: phải trả người bán khoảng 16.198 tỷ đồng, giá vốn quý khoảng 41.192 tỷ → khoảng 36 ngày; khoản này bằng khoảng 46% hàng tồn kho.",
+     "VNM: phải trả người bán khoảng 4.388 tỷ, giá vốn quý khoảng 10.829 tỷ → khoảng 37 ngày.",
+     "HPG: phải trả người bán khoảng 16.773 tỷ, giá vốn quý khoảng 50.292 tỷ → khoảng 30 ngày. Con số này giảm từ khoảng 26.690 tỷ tại 30/6/2026, cho thấy khoản phải trả biến động mạnh theo lịch nhập quặng, than."
+    ]
+   ],
+   [
+    "h2",
+    "Đọc cùng chu kỳ tiền mặt"
+   ],
+   [
+    "p",
+    "Chu kỳ tiền mặt = số ngày tồn kho + số ngày thu tiền − số ngày phải trả. Số ngày phải trả càng dài thì chu kỳ tiền mặt càng ngắn, doanh nghiệp càng ít phải bỏ tiền ra tài trợ vốn lưu động."
+   ]
+  ],
+  "faq": [
+   [
+    "Phải trả người bán tăng có phải xấu không?",
+    "Không hẳn. Tăng cùng doanh thu là bình thường. Đáng chú ý khi khoản này tăng mạnh trong khi doanh thu giảm, có thể doanh nghiệp đang chậm thanh toán vì thiếu tiền."
+   ],
+   [
+    "Phải trả người bán khác vay nợ thế nào?",
+    "Vay nợ có lãi và hợp đồng vay với ngân hàng, trái chủ. Phải trả người bán phát sinh từ mua bán hàng hóa, thường không có lãi."
+   ],
+   [
+    "Có nên tính phải trả người bán vào nợ ròng?",
+    "Thường không. Nợ ròng chỉ tính vay có lãi trừ tiền, còn phải trả người bán được xem là một phần vốn lưu động."
+   ]
+  ],
+  "rel": [
+   "chu-ky-tien-mat-la-gi",
+   "von-luu-dong-la-gi",
+   "vong-quay-hang-ton-kho-la-gi",
+   "tien-rong-va-no-rong-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Dấu hiệu cần chú ý"
+   ],
+   [
+    "ul",
+    [
+     "Số ngày phải trả kéo dài đột ngột so với các quý trước mà không có lý do kinh doanh rõ ràng.",
+     "Phải trả người bán lớn nhưng tiền mặt rất thấp và dòng tiền kinh doanh âm nhiều quý.",
+     "Phần lớn khoản phải trả là với bên liên quan; xem thêm thuyết minh."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Phải trả người bán là nợ nhà cung cấp, thường không có lãi.",
+     "Số ngày phải trả cho biết doanh nghiệp được trả chậm bao lâu.",
+     "Đọc cùng tồn kho, phải thu và dòng tiền để thấy bức tranh vốn lưu động."
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: báo cáo tài chính hợp nhất quý 3/2026 (số dư 30/9/2026), dữ liệu tổng hợp trên chungkhoanhuynguyen.com. Số liệu quá khứ dùng để minh họa cách đọc, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "grp": 3
  }
 ]
