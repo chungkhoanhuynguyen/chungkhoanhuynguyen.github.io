@@ -14,3 +14,10 @@ Cập nhật mỗi Chủ nhật (QL1) và ngay khi anh Huy góp ý. NV1 đọc f
 ## Đo hiệu quả (mỗi Chủ nhật)
 - Lấy lượt xem, % xem hết, bình luận của 5 bản tin trong tuần (TikTok, Shorts, Reels).
 - Bản tin top 1 và bản thấp nhất: ghi 1 dòng vì sao (hook, câu ví von, chủ đề), rút 1 quy tắc mới vào mục "Đã duyệt" hoặc "Tránh".
+
+## 6/11 tối – anh Huy: "bổ sung thêm tin tức và nhiều hình ảnh hơn, nhất là tin tức thế giới"
+- Mỗi số BẮT BUỘC có khối THẾ GIỚI (2–3 cảnh) ngay sau câu mở: Mỹ đêm qua (ảnh Phố Wall/NYSE) → thẻ hinh/the_gioi.png (S&P, Nasdaq, Dow, Nikkei, KOSPI, vàng, Brent, DXY) → so sánh với VN (ảnh sàn châu Á).
+- Câu mở nêu luôn tin thế giới lớn nhất + VN-Index (điểm, %). Hook 2 tầng kiểu "MỸ –4%, NHẬT HÀN –6%" / "VIỆT NAM CHỈ –0,9%".
+- Xen ảnh thật giữa các thẻ số: không để 2 thẻ số liền nhau quá 3 cảnh.
+- Câu thâm thúy mẫu đã dùng: "Kỳ vọng giống chiếc thang máy: đi lên từng tầng, đi xuống một mạch." / "Tiền không biến mất, tiền chỉ chạy về chỗ nó thấy an toàn." / "Thế giới hắt hơi, Việt Nam có khi cảm muộn vài phiên." (không lặp lại ở số sau)
+- Dữ liệu: du_lieu.json có the_gioi.chi_so (pct từng mã), the_gioi.tin (tiêu đề mac.bin), vn_index.
