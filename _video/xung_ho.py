@@ -2,9 +2,10 @@
 # Không nói trống không / không gọi "bạn". Áp tự động trong render.py và reel.py.
 import re
 _GIU = r"(?!\s*(bè|đời|học|thân|đồng hành|hàng|gái|trai|cũ|nào|[A-Z](?: ?[A-Z])+)\b)(?<!\d bạn)"
+_SO = "".join("(?<!%s )" % w for w in "một hai ba bốn tư năm lăm sáu bảy tám chín mười mươi trăm mốt".split())
 QUY = [
     (r"\b(các|những) bạn\b", "anh chị"), (r"\b(Các|Những) bạn\b", "Anh chị"),
-    (r"(?<!người )(?<!làm )\bbạn\b" + _GIU, "anh chị"), (r"(?<!Người )\bBạn\b" + _GIU, "Anh chị"),
+    (r"(?<!người )(?<!làm )" + _SO + r"\bbạn\b" + _GIU, "anh chị"), (r"(?<!Người )\bBạn\b" + _GIU, "Anh chị"),
     (r"\bchúng tôi\b", "chúng em"), (r"\bChúng tôi\b", "Chúng em"),
     (r"\btôi\b", "em"), (r"\bTôi\b", "Em"),
     (r"\bchúng mình\b", "chúng em"), (r"\bChúng mình\b", "Chúng em"),
