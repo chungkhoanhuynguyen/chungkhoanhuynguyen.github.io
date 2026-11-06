@@ -33,7 +33,7 @@ S['TN0611'] = [
   'anh': 'calendar months planning',
   'say': 'Quy mô hai tỷ đô la không mới, các đợt trước cũng từ một đến hai tỷ. Điểm khác là thời gian. Tiền vay bảy ngày chỉ đủ để ngân hàng xoay vòng ngắn. '
          'Tiền sáu tháng thì ngân hàng có thể tính chuyện cân đối vốn cho cả cuối năm hai nghìn không trăm hai mươi sáu và đầu năm hai nghìn không trăm hai mươi bảy, '
-         'đúng mùa nhu cầu tín dụng và rút tiền tăng cao. Bạn hình dung thế này: vay bạn bè một tuần thì chỉ đủ trả nợ gấp, vay sáu tháng mới đủ để lên kế hoạch.'},
+         'đúng mùa nhu cầu tín dụng và rút tiền tăng cao. Em lấy một ví dụ đời thường: khoản vay một tuần chỉ đủ để trả nợ gấp, còn khoản vay sáu tháng mới đủ để lên kế hoạch.'},
  {'k': 'checklist', 'ch': 'Chương 4 – Ai được tham gia', 'moc': True, 'label': 'Điều kiện tham gia theo công bố',
   'cap': ('KHÔNG PHẢI', 'AI CŨNG ĐƯỢC'), 'cols': (WHITE, GOLD),
   'items': [('Có nợ vay nước ngoài trung, dài hạn hoặc trái phiếu quốc tế', BLUE), ('Thời hạn còn lại từ 12 tháng trở lên', BLUE), ('Tùy lượng USD sẵn có và nhu cầu vốn VND', GOLD), ('Quy mô thật phụ thuộc kết quả đấu thầu', RED)],
@@ -48,7 +48,7 @@ S['TN0611'] = [
   'say': 'Động thái này không đứng một mình. Trước đó, Ngân hàng Nhà nước đã yêu cầu các tổ chức tín dụng giảm lãi suất huy động và lãi suất cho vay, '
          'đồng thời nới một loạt giới hạn đối với hệ thống. Ghép các mảnh lại, thông điệp khá rõ: cơ quan điều hành muốn tiền trong hệ thống dồi dào hơn và rẻ hơn, '
          'nhưng làm bằng công cụ có kỳ hạn để có thể thu về khi cần.'},
- {'k': 'checklist', 'ch': 'Chương 6 – Ý nghĩa với nhà đầu tư cổ phiếu', 'moc': True, 'label': 'Kênh tác động, không phải khuyến nghị',
+ {'k': 'checklist', 'ch': 'Chương 6 – Ý nghĩa với nhà đầu tư cổ phiếu', 'moc': True, 'label': 'Kênh tác động tới cổ phiếu',
   'cap': ('NHÀ ĐẦU TƯ', 'CẦN HIỂU'), 'cols': (WHITE, GOLD),
   'items': [('Thanh khoản dồi dào thường hỗ trợ lãi suất liên ngân hàng', GREEN), ('Áp lực huy động cuối năm của ngân hàng có thể dịu bớt', GREEN), ('Tiền vẫn phải trả lại sau 182 ngày', RED), ('Thị trường có thể đã phản ánh trước một phần tin', RED)],
   'anh': 'stock market trading screen',
@@ -64,5 +64,5 @@ S['TN0611'] = [
          'Mình sẽ cập nhật kết quả đấu thầu trên web chungkhoanhuynguyen.com ngay khi có.'},
  {'k': 'end', 'label': '', 'cap': ('TIN NÓNG', 'ĐỌC BẰNG SỐ'), 'cols': (WHITE, GOLD),
   'say': 'Thông tin trong video theo công bố của Ngân hàng Nhà nước được báo CafeF đăng ngày bốn tháng mười một năm hai nghìn không trăm hai mươi sáu. '
-         'Video chia sẻ kiến thức, không phải khuyến nghị mua bán. Nếu bạn muốn biết cổ phiếu ngân hàng nào phù hợp với danh mục của mình, để lại bình luận hoặc vào chungkhoanhuynguyen.com để được tư vấn trực tiếp.'},
+         'Theo anh chị, dòng vốn 182 ngày này sẽ chảy vào cổ phiếu ngân hàng, hay chỉ nằm yên trong hệ thống? Số liệu ngân hàng cập nhật mỗi phiên, anh chị xem miễn phí tại chungkhoanhuynguyen.com.'},
 ]
