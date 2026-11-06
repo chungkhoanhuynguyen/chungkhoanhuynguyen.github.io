@@ -568,5 +568,35 @@
 "Tiền và tương đương tiền",
 "Tiền mặt, tiền gửi không kỳ hạn và khoản đầu tư có kỳ hạn gốc tối đa 3 tháng.",
 "tien-va-tuong-duong-tien-la-gi"
+],
+[
+"Nợ ròng / Tiền ròng",
+"Vay có lãi trừ tiền và đầu tư tài chính ngắn hạn; âm thì gọi là tiền ròng.",
+"tien-rong-va-no-rong-la-gi"
+],
+[
+"Doanh thu hoạt động tài chính",
+"Thu nhập từ lãi tiền gửi, cổ tức, lãi tỷ giá, lãi bán khoản đầu tư.",
+"doanh-thu-hoat-dong-tai-chinh-la-gi"
+],
+[
+"Vay ngắn hạn / dài hạn",
+"Nợ vay phải trả trong 12 tháng là ngắn hạn, trên 12 tháng là dài hạn.",
+"vay-ngan-han-va-dai-han-la-gi"
+],
+[
+"Thuế suất thực tế",
+"Chi phí thuế TNDN chia cho lợi nhuận kế toán trước thuế.",
+"ty-suat-thue-thuc-te-la-gi"
+],
+[
+"Công ty liên kết",
+"Doanh nghiệp được sở hữu khoảng 20–50%, có ảnh hưởng đáng kể nhưng không kiểm soát.",
+"lai-lo-tu-cong-ty-lien-ket-la-gi"
+],
+[
+"Phải trả người bán",
+"Số tiền doanh nghiệp còn nợ nhà cung cấp cho hàng hóa, dịch vụ đã nhận, thường không có lãi.",
+"phai-tra-nguoi-ban-la-gi"
 ]
 ]
