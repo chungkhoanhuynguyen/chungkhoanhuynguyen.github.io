@@ -4241,6 +4241,38 @@
      "Tháng giá thấp mua được nhiều hơn nên giá vốn thường thấp hơn giá trung bình.",
      "Chỉ DCA vào doanh nghiệp tốt; doanh nghiệp xấu thì càng mua càng lỗ."
     ]
+   ],
+   [
+    "h2",
+    "Số liệu thật: góp đều 38 tháng, ba kết quả khác nhau"
+   ],
+   [
+    "p",
+    "Góp 3 triệu đồng vào phiên đầu mỗi tháng từ 10/2023 đến 11/2026 (38 tháng, 114 triệu vốn), tính theo giá đóng cửa và chưa tính cổ tức:"
+   ],
+   [
+    "ul",
+    [
+     "MBB: giá trị khoảng 151,7 triệu, lãi khoảng 33%. Nếu mua một lần từ đầu: khoảng 245,7 triệu.",
+     "GAS: khoảng 125,4 triệu, lãi khoảng 10%, dù có lúc lãi khoảng 92% (4/3/2026).",
+     "REE: khoảng 113,8 triệu, gần hòa vốn; mua một lần từ đầu: khoảng 155,4 triệu."
+    ]
+   ],
+   [
+    "p",
+    "Bài học: DCA giúp không phải đoán thời điểm, nhưng khi cổ phiếu tăng mạnh ở đầu kỳ, DCA sẽ kém mua một lần. Khi giá tăng nhanh hơn lợi nhuận, người góp đều nên cân nhắc tái cân bằng hoặc chốt từng phần."
+   ],
+   [
+    "h2",
+    "Ba nguyên tắc để DCA hiệu quả hơn"
+   ],
+   [
+    "ul",
+    [
+     "Góp đều vào nhiều mã hoặc quỹ chỉ số, không dồn một mã.",
+     "Đặt tỷ trọng mục tiêu, dồn tiền góp mới vào mã đang thấp hơn mục tiêu.",
+     "Xem lại doanh nghiệp mỗi quý: DCA chỉ đúng khi lợi nhuận vẫn đi lên."
+    ]
    ]
   ],
   "faq": [
@@ -4332,6 +4364,33 @@
      "Quy tắc 72: chia 72 cho % lợi nhuận mỗi năm để biết số năm gấp đôi.",
      "Muốn lãi kép chạy thì phải giữ vốn, tránh lỗ lớn và tránh giao dịch quá nhiều."
     ]
+   ],
+   [
+    "h2",
+    "Lãi kép cần ba thứ: tỷ suất, thời gian, và không lỗ nặng"
+   ],
+   [
+    "p",
+    "Theo quy tắc 72, tiền tăng gấp đôi sau khoảng 72 chia cho tỷ suất lợi nhuận mỗi năm: 6% mất khoảng 12 năm, 12% mất khoảng 6 năm. Nhưng lãi kép bị phá hủy rất nhanh bởi một khoản lỗ lớn: lỗ 50% thì phải lãi 100% mới hòa, tương đương mất nhiều năm lãi kép."
+   ],
+   [
+    "ul",
+    [
+     "Ví dụ: 100 triệu lãi 12%/năm trong 10 năm thành khoảng 310 triệu.",
+     "Nếu giữa chừng có một năm lỗ 40%, kết quả 10 năm chỉ còn khoảng 166 triệu, dù 9 năm còn lại vẫn lãi 12%."
+    ]
+   ],
+   [
+    "p",
+    "Vì vậy với lãi kép, tránh lỗ nặng quan trọng không kém tìm lợi nhuận cao. Quản trị tỷ trọng, hạn chế margin và giữ quỹ dự phòng chính là cách bảo vệ lãi kép."
+   ],
+   [
+    "h2",
+    "Ví dụ thực tế: VN-Index 3 năm"
+   ],
+   [
+    "p",
+    "Từ 27/10/2023 đến 6/11/2026, VN-Index tăng khoảng 62,7%, tương đương khoảng 17% mỗi năm theo lãi kép, dù giữa chừng có lúc giảm khoảng 18,1% từ đỉnh (3–4/2025). Người ở lại thị trường qua nhịp giảm mới nhận được kết quả đó."
    ]
   ],
   "faq": [
@@ -27772,5 +27831,826 @@
    ]
   ],
   "grp": 3
+ },
+ {
+  "slug": "chuoi-thua-lien-tiep-trong-dau-tu",
+  "kw": "chuỗi thua liên tiếp",
+  "grp": 5,
+  "title": "Chuỗi thua liên tiếp: thua 10 lệnh còn bao nhiêu vốn?",
+  "desc": "Chuỗi thua liên tiếp là gì, vì sao người giao dịch nào cũng gặp, tài khoản còn lại bao nhiêu sau 10 lệnh thua ở mức rủi ro 1%, 2%, 5%, 10% và cách sống sót.",
+  "body": [
+   [
+    "p",
+    "<b>Chuỗi thua liên tiếp</b> là nhiều lệnh thua nối tiếp nhau. Người mới thường nghĩ đó là chuyện hiếm, nhưng với bất kỳ ai giao dịch thường xuyên, chuỗi 5 đến 10 lệnh thua xảy ra vài lần mỗi năm, nhất là khi thị trường đi xuống. Điều quyết định không phải là có gặp chuỗi thua hay không, mà là tài khoản còn lại bao nhiêu sau chuỗi đó."
+   ],
+   [
+    "h2",
+    "Vì sao chuỗi thua chắc chắn xảy ra?"
+   ],
+   [
+    "p",
+    "Giả sử anh chị có tỷ lệ thắng 50%, tức là cứ hai lệnh thì thắng một. Xác suất thua 5 lệnh liền là khoảng 3%, nghe nhỏ. Nhưng nếu một năm anh chị vào 100 lệnh, khả năng gặp ít nhất một chuỗi 5 lệnh thua liên tiếp là rất cao. Với tỷ lệ thắng 40%, chuỗi thua còn dài hơn. Vì vậy chuỗi thua là một phần bình thường của giao dịch, không phải dấu hiệu mình kém."
+   ],
+   [
+    "h2",
+    "Thua 10 lệnh liên tiếp còn bao nhiêu vốn?"
+   ],
+   [
+    "ul",
+    [
+     "Mỗi lệnh rủi ro 1% tài khoản: còn khoảng 90,4% vốn.",
+     "Mỗi lệnh rủi ro 2%: còn khoảng 81,7%.",
+     "Mỗi lệnh rủi ro 5%: còn khoảng 59,9%.",
+     "Mỗi lệnh rủi ro 10%: chỉ còn khoảng 34,9%."
+    ]
+   ],
+   [
+    "p",
+    "Người còn 90% vốn chỉ cần lãi khoảng 11% để hồi lại. Người còn 35% vốn cần lãi gần 190%, gần như không thể bằng giao dịch bình thường. Khác biệt duy nhất giữa hai người là con số rủi ro cho mỗi lệnh."
+   ],
+   [
+    "h2",
+    "Sai lầm phổ biến trong chuỗi thua"
+   ],
+   [
+    "ul",
+    [
+     "Tăng khối lượng để gỡ nhanh: làm chuỗi thua tiếp theo đau gấp đôi.",
+     "Dùng margin để gỡ: thêm lãi vay và rủi ro bị bán giải chấp.",
+     "Bỏ điểm cắt lỗ vì nghĩ lần này sẽ hồi.",
+     "Đổi phương pháp liên tục sau mỗi lệnh thua, không đủ dữ liệu để biết cách nào đúng."
+    ]
+   ],
+   [
+    "h2",
+    "Cách sống sót qua chuỗi thua"
+   ],
+   [
+    "ul",
+    [
+     "Giữ rủi ro mỗi lệnh 1–2% tài khoản, viết ra trước khi vào lệnh.",
+     "Đặt giới hạn lỗ theo tuần hoặc tháng, ví dụ lỗ 6% trong tháng thì dừng giao dịch mới, chỉ quản lý lệnh đang có.",
+     "Sau 3–4 lệnh thua liền, giảm một nửa khối lượng cho tới khi có lệnh thắng.",
+     "Ghi nhật ký giao dịch để phân biệt thua do phương pháp hay do thị trường."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Chuỗi thua là bình thường, không phải ngoại lệ.",
+     "Rủi ro mỗi lệnh quyết định tài khoản còn bao nhiêu sau chuỗi thua.",
+     "Dừng lại và giảm khối lượng tốt hơn cố gỡ."
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: báo cáo tài chính quý 3/2026 và giá đóng cửa đến 6/11/2026, dữ liệu tổng hợp trên chungkhoanhuynguyen.com. Số liệu quá khứ dùng để minh họa cách đọc, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Thua 5 lệnh liền có nên đổi phương pháp?",
+    "Chưa nên vội. 5 lệnh là mẫu quá nhỏ. Hãy xem nhật ký 30–50 lệnh gần nhất trước khi kết luận."
+   ],
+   [
+    "Giới hạn lỗ tháng bao nhiêu là hợp lý?",
+    "Nhiều người dùng 5–8% tài khoản. Chạm mức đó thì dừng mở lệnh mới tới tháng sau."
+   ]
+  ],
+  "rel": [
+   "quy-tac-rui-ro-1-phan-tram",
+   "sut-giam-tai-khoan-drawdown-la-gi",
+   "lo-bao-nhieu-phan-tram-thi-hoa-von",
+   "nhat-ky-giao-dich-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Áp dụng ngay"
+   ],
+   [
+    "p",
+    "Trước khi vào lệnh tiếp theo sau 3 lệnh thua, anh chị hỏi lại ba câu: rủi ro lệnh này có đúng 1–2% không, lệnh này có nằm trong kế hoạch đã viết không, và mình có đang muốn gỡ không. Nếu câu trả lời thứ ba là có, hãy nghỉ một phiên."
+   ]
+  ]
+ },
+ {
+  "slug": "cach-tinh-khoi-luong-mua-theo-diem-cat-lo",
+  "kw": "cách tính khối lượng mua cổ phiếu",
+  "grp": 5,
+  "title": "Cách tính khối lượng mua cổ phiếu theo điểm cắt lỗ (công thức 1 dòng)",
+  "desc": "Công thức tính khối lượng mua cổ phiếu theo số tiền rủi ro và điểm cắt lỗ, ví dụ tài khoản 500 triệu, các lỗi hay gặp và cách áp dụng với mã thanh khoản thấp.",
+  "body": [
+   [
+    "p",
+    "Phần lớn nhà đầu tư mới quyết định mua bao nhiêu cổ phiếu theo cảm giác: thích nhiều thì mua nhiều. Cách làm chuyên nghiệp hơn là tính ngược từ <b>số tiền chấp nhận mất</b> nếu lệnh sai."
+   ],
+   [
+    "h2",
+    "Công thức"
+   ],
+   [
+    "p",
+    "<b>Khối lượng = Số tiền rủi ro ÷ (Giá mua − Giá cắt lỗ)</b>. Số tiền rủi ro thường là 1–2% tổng tài khoản."
+   ],
+   [
+    "h2",
+    "Ví dụ tài khoản 500 triệu đồng"
+   ],
+   [
+    "ul",
+    [
+     "Rủi ro 1% = 5 triệu đồng.",
+     "Giá mua dự kiến 20.000 đồng, cắt lỗ ở 18.000 đồng: mỗi cổ phiếu chấp nhận mất 2.000 đồng.",
+     "Khối lượng = 5.000.000 ÷ 2.000 = 2.500 cổ phiếu, khoảng 50 triệu đồng (10% tài khoản).",
+     "Nếu cắt lỗ ở 19.000 đồng: khối lượng 5.000 cổ phiếu, khoảng 100 triệu đồng."
+    ]
+   ],
+   [
+    "p",
+    "Rủi ro vẫn đúng 5 triệu trong cả hai trường hợp. Điểm cắt lỗ gần thì mua được nhiều hơn, điểm cắt lỗ xa thì phải mua ít đi."
+   ],
+   [
+    "h2",
+    "Kiểm tra thêm giới hạn tỷ trọng"
+   ],
+   [
+    "p",
+    "Nếu điểm cắt lỗ quá gần, công thức có thể cho ra vị thế rất lớn, ví dụ 40–50% tài khoản. Khi đó hãy áp thêm giới hạn tỷ trọng mỗi mã, chẳng hạn không quá 15–20% tài khoản, và lấy con số nhỏ hơn."
+   ],
+   [
+    "h2",
+    "Lỗi hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "Đặt cắt lỗ theo số tiền muốn mua, thay vì theo vùng giá có ý nghĩa.",
+     "Dời cắt lỗ xuống khi giá chạm, làm rủi ro thực tế lớn hơn kế hoạch.",
+     "Quên phí giao dịch và thuế khi bán.",
+     "Áp dụng nguyên công thức cho mã thanh khoản thấp: giá có thể gap qua điểm cắt lỗ, nên dùng rủi ro 0,5% thay vì 1%."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Quyết định số tiền rủi ro trước, khối lượng sau.",
+     "Khối lượng = rủi ro ÷ khoảng cách cắt lỗ.",
+     "Luôn so với giới hạn tỷ trọng mỗi mã."
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: báo cáo tài chính quý 3/2026 và giá đóng cửa đến 6/11/2026, dữ liệu tổng hợp trên chungkhoanhuynguyen.com. Số liệu quá khứ dùng để minh họa cách đọc, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Có cần tính lại khi tài khoản thay đổi?",
+    "Có. Số tiền rủi ro 1% thay đổi theo giá trị tài khoản hiện tại, nên tính lại mỗi khi vào lệnh mới."
+   ],
+   [
+    "Mua nhiều lần thì tính thế nào?",
+    "Cộng tổng số tiền có thể mất của tất cả các lần mua so với điểm cắt lỗ chung, không vượt mức rủi ro đã định."
+   ]
+  ],
+  "rel": [
+   "quy-tac-rui-ro-1-phan-tram",
+   "cat-lo-la-gi",
+   "stop-loss-bao-nhieu-phan-tram",
+   "ke-hoach-giao-dich-truoc-khi-mua"
+  ],
+  "add": [
+   [
+    "h2",
+    "Áp dụng ngay"
+   ],
+   [
+    "p",
+    "Viết bốn dòng trước mỗi lệnh: giá mua dự kiến, giá cắt lỗ và lý do đặt ở đó, số tiền rủi ro bằng bao nhiêu phần trăm tài khoản, khối lượng tính ra theo công thức. Sau đó so khối lượng với giới hạn tỷ trọng mỗi mã và giá trị giao dịch trung bình 10 phiên của mã đó. Nếu vị thế lớn hơn khoảng 10% giá trị giao dịch một phiên, nên giảm bớt vì sẽ khó bán khi cần."
+   ]
+  ]
+ },
+ {
+  "slug": "ky-vong-loi-nhuan-expectancy-la-gi",
+  "kw": "kỳ vọng lợi nhuận giao dịch",
+  "grp": 5,
+  "title": "Kỳ vọng lợi nhuận (expectancy) là gì? Vì sao thắng 40% vẫn có lãi",
+  "desc": "Kỳ vọng lợi nhuận mỗi lệnh là gì, công thức tính từ tỷ lệ thắng và mức lãi lỗ trung bình, ví dụ thắng 40% vẫn có lãi và thắng 70% vẫn lỗ.",
+  "body": [
+   [
+    "p",
+    "Nhiều người chỉ quan tâm tỷ lệ thắng. Thực tế, một phương pháp thắng 40% số lệnh vẫn có thể có lãi, còn phương pháp thắng 70% vẫn có thể lỗ. Con số quyết định là <b>kỳ vọng lợi nhuận</b>, tức trung bình mỗi lệnh mang lại bao nhiêu."
+   ],
+   [
+    "h2",
+    "Công thức"
+   ],
+   [
+    "p",
+    "<b>Kỳ vọng = (Tỷ lệ thắng × Lãi trung bình) − (Tỷ lệ thua × Lỗ trung bình)</b>."
+   ],
+   [
+    "h2",
+    "Ví dụ 1: thắng 40% vẫn có lãi"
+   ],
+   [
+    "ul",
+    [
+     "Tỷ lệ thắng 40%, lãi trung bình mỗi lệnh thắng 15%.",
+     "Tỷ lệ thua 60%, lỗ trung bình mỗi lệnh thua 5% nhờ cắt lỗ kỷ luật.",
+     "Kỳ vọng = 0,4 × 15% − 0,6 × 5% = 6% − 3% = +3% mỗi lệnh."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ 2: thắng 70% vẫn lỗ"
+   ],
+   [
+    "ul",
+    [
+     "Tỷ lệ thắng 70%, nhưng chốt lời sớm, lãi trung bình chỉ 4%.",
+     "Tỷ lệ thua 30%, không cắt lỗ, lỗ trung bình 12%.",
+     "Kỳ vọng = 0,7 × 4% − 0,3 × 12% = 2,8% − 3,6% = −0,8% mỗi lệnh."
+    ]
+   ],
+   [
+    "p",
+    "Ví dụ 2 là thói quen rất phổ biến: lãi một chút đã bán vì sợ mất, lỗ thì giữ vì hy vọng hồi. Tỷ lệ thắng cao tạo cảm giác giỏi, nhưng tài khoản vẫn đi xuống."
+   ],
+   [
+    "h2",
+    "Cách tính kỳ vọng của chính mình"
+   ],
+   [
+    "ul",
+    [
+     "Lấy 30–50 lệnh gần nhất trong nhật ký giao dịch.",
+     "Tính tỷ lệ thắng, lãi trung bình các lệnh thắng, lỗ trung bình các lệnh thua.",
+     "Áp công thức. Nếu kỳ vọng âm, vấn đề thường nằm ở lỗ trung bình quá lớn."
+    ]
+   ],
+   [
+    "h2",
+    "Cải thiện kỳ vọng"
+   ],
+   [
+    "ul",
+    [
+     "Cắt lỗ đúng kế hoạch để giảm lỗ trung bình.",
+     "Chốt lời từng phần thay vì bán hết quá sớm.",
+     "Bỏ những kiểu vào lệnh có kỳ vọng âm trong nhật ký."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Tỷ lệ thắng chỉ là một nửa câu chuyện.",
+     "Kỳ vọng dương mới là điều kiện để có lãi dài hạn.",
+     "Kiểm soát lỗ trung bình là cách cải thiện nhanh nhất."
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: báo cáo tài chính quý 3/2026 và giá đóng cửa đến 6/11/2026, dữ liệu tổng hợp trên chungkhoanhuynguyen.com. Số liệu quá khứ dùng để minh họa cách đọc, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Bao nhiêu lệnh thì kỳ vọng đáng tin?",
+    "Ít nhất 30 lệnh, tốt hơn là 50–100 lệnh cùng một phương pháp."
+   ],
+   [
+    "Kỳ vọng dương có đảm bảo lãi?",
+    "Không. Nó chỉ cho biết trung bình dài hạn; vẫn cần quản trị vốn để sống sót qua chuỗi thua."
+   ]
+  ],
+  "rel": [
+   "ty-le-thang-va-ty-le-loi-lo",
+   "chuoi-thua-lien-tiep-trong-dau-tu",
+   "nhat-ky-giao-dich-la-gi",
+   "chot-loi-tung-phan"
+  ],
+  "add": [
+   [
+    "h2",
+    "Áp dụng ngay"
+   ],
+   [
+    "p",
+    "Một chỉ số đi kèm là tỷ lệ lãi trên lỗ trung bình. Ở ví dụ 1, lãi trung bình 15% so với lỗ trung bình 5% là tỷ lệ 3 lần, nên chỉ cần thắng khoảng 25% số lệnh là hòa vốn. Ở ví dụ 2, tỷ lệ chỉ 0,33 lần, phải thắng trên 75% mới hòa. Anh chị nên ghi cả hai con số này trong nhật ký mỗi tháng để thấy mình đang cải thiện hay đi lùi."
+   ]
+  ]
+ },
+ {
+  "slug": "stress-test-danh-muc-la-gi",
+  "kw": "stress test danh mục đầu tư",
+  "grp": 5,
+  "title": "Stress test danh mục: nếu thị trường giảm 20–30%, tài khoản còn bao nhiêu?",
+  "desc": "Stress test danh mục là gì, cách tự kiểm tra tài khoản khi thị trường giảm 20–30% bằng số liệu thật về mức giảm của cổ phiếu lớn, có margin và không margin.",
+  "body": [
+   [
+    "p",
+    "<b>Stress test</b> là tự hỏi trước: nếu thị trường xảy ra kịch bản xấu, tài khoản của mình còn bao nhiêu và mình có buộc phải bán không. Ngân hàng làm việc này định kỳ; nhà đầu tư cá nhân cũng nên làm, chỉ mất khoảng 10 phút."
+   ],
+   [
+    "h2",
+    "Kịch bản xấu không hiếm"
+   ],
+   [
+    "p",
+    "Tính theo giá đóng cửa từ 10/2023 đến 6/11/2026, VN-Index có lúc giảm khoảng 18,1% từ đỉnh. Nhiều cổ phiếu lớn giảm sâu hơn nhiều: FPT khoảng 57,5%, GAS khoảng 50,0%, VHM khoảng 40,9%, BID khoảng 37,7%. Vì vậy kịch bản thị trường giảm 20% và cổ phiếu riêng lẻ giảm 30–50% là kịch bản cần chuẩn bị."
+   ],
+   [
+    "h2",
+    "Cách stress test 3 bước"
+   ],
+   [
+    "ul",
+    [
+     "Bước 1: liệt kê từng mã, giá trị và tỷ trọng.",
+     "Bước 2: áp mức giảm giả định, ví dụ mã ngân hàng −30%, mã chu kỳ −40%, mã phòng thủ −15%.",
+     "Bước 3: cộng lại giá trị còn lại, trừ nợ margin nếu có, ra tài sản ròng sau kịch bản."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ tài khoản 500 triệu đồng"
+   ],
+   [
+    "ul",
+    [
+     "Không margin, danh mục giảm bình quân 30%: còn 350 triệu, lỗ 30%.",
+     "Có margin 1:1 (500 triệu vốn + 500 triệu vay), tài sản 1 tỷ giảm 30% còn 700 triệu, trừ nợ 500 triệu, tài sản ròng còn 200 triệu: mất 60% vốn, và rất có thể đã bị gọi ký quỹ trước đó."
+    ]
+   ],
+   [
+    "h2",
+    "Câu hỏi sau khi stress test"
+   ],
+   [
+    "ul",
+    [
+     "Mức lỗ đó mình có chịu được về tâm lý và tài chính không?",
+     "Có khoản nào buộc phải bán ở đáy (margin, tiền cần dùng trong 6–12 tháng)?",
+     "Mã hoặc ngành nào chiếm phần lớn khoản lỗ giả định?"
+    ]
+   ],
+   [
+    "h2",
+    "Điều chỉnh sau stress test"
+   ],
+   [
+    "ul",
+    [
+     "Giảm margin hoặc trả bớt nợ.",
+     "Giảm tỷ trọng mã hoặc ngành gây lỗ lớn nhất trong kịch bản.",
+     "Giữ quỹ dự phòng tiền mặt ngoài tài khoản chứng khoán."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Stress test giúp biết trước điểm gãy của tài khoản.",
+     "Margin nhân đôi mức lỗ trong kịch bản xấu.",
+     "Làm lại mỗi quý hoặc khi danh mục thay đổi lớn."
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: báo cáo tài chính quý 3/2026 và giá đóng cửa đến 6/11/2026, dữ liệu tổng hợp trên chungkhoanhuynguyen.com. Số liệu quá khứ dùng để minh họa cách đọc, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Nên giả định giảm bao nhiêu?",
+    "Thường dùng hai kịch bản: thị trường −20% và −35%, cổ phiếu riêng lẻ giảm sâu hơn thị trường 1,5–2 lần."
+   ],
+   [
+    "Có cần công cụ phức tạp?",
+    "Không. Một bảng tính đơn giản với tỷ trọng và mức giảm giả định là đủ."
+   ]
+  ],
+  "rel": [
+   "quan-tri-rui-ro-khi-thi-truong-giam-manh",
+   "rui-ro-tap-trung-danh-muc",
+   "ban-giai-chap-la-gi",
+   "quy-du-phong-truoc-khi-dau-tu"
+  ],
+  "add": [
+   [
+    "h2",
+    "Áp dụng ngay"
+   ],
+   [
+    "p",
+    "Mẫu bảng đơn giản gồm các cột: mã, ngành, giá trị hiện tại, tỷ trọng, mức giảm giả định, giá trị sau kịch bản. Dòng cuối cộng tổng, trừ nợ margin và cộng tiền mặt. Nếu tài sản ròng sau kịch bản giảm quá mức anh chị chịu được, hãy điều chỉnh ngay khi thị trường còn bình thường, đừng chờ đến lúc kịch bản xảy ra."
+   ]
+  ]
+ },
+ {
+  "slug": "tuong-quan-co-phieu-trong-danh-muc",
+  "kw": "tương quan cổ phiếu",
+  "grp": 5,
+  "title": "Tương quan cổ phiếu: 5 mã ngân hàng có phải là đa dạng hóa?",
+  "desc": "Tương quan cổ phiếu là gì, vì sao nhiều mã cùng ngành vẫn giảm cùng lúc, ví dụ nhóm ngân hàng năm 2026 và cách đa dạng hóa thật sự.",
+  "body": [
+   [
+    "p",
+    "<b>Tương quan</b> đo mức độ hai cổ phiếu cùng tăng, cùng giảm với nhau. Hai mã tương quan cao thì khi một mã giảm, mã kia cũng thường giảm. Danh mục có nhiều mã nhưng tương quan cao giống như chỉ có một mã lớn."
+   ],
+   [
+    "h2",
+    "Ví dụ: ngân hàng năm 2026"
+   ],
+   [
+    "p",
+    "Theo giá đóng cửa, năm 2026 BID có lúc giảm khoảng 37,7% từ đỉnh, CTG khoảng 29,7%, VCB khoảng 29,0%, MBB khoảng 22,4%, TCB khoảng 30,5% tính từ đỉnh 10/2025. Cả năm mã cùng có lợi nhuận 9 tháng tăng từ khoảng 18% đến 34%, nhưng giá vẫn giảm cùng nhau vì dòng tiền rút khỏi cả nhóm. Người cầm năm mã ngân hàng không được bảo vệ bởi đa dạng hóa."
+   ],
+   [
+    "h2",
+    "Vì sao cổ phiếu cùng ngành tương quan cao?"
+   ],
+   [
+    "ul",
+    [
+     "Cùng chịu một yếu tố vĩ mô: lãi suất, tín dụng, giá hàng hóa.",
+     "Cùng được quỹ đầu tư mua bán theo nhóm ngành.",
+     "Tin xấu của một doanh nghiệp làm nhà đầu tư lo cho cả ngành."
+    ]
+   ],
+   [
+    "h2",
+    "Đa dạng hóa thật sự"
+   ],
+   [
+    "ul",
+    [
+     "Chia theo ngành có động lực khác nhau: ngân hàng, tiêu dùng thiết yếu, tiện ích điện nước, công nghệ, xuất khẩu.",
+     "Kết hợp nhóm hưởng lợi ngược chiều: ví dụ giá dầu giảm bất lợi cho dầu khí nhưng có lợi cho hàng không.",
+     "Giới hạn tổng tỷ trọng mỗi ngành, ví dụ không quá 30–35%.",
+     "Giữ một phần tiền mặt hoặc tài sản ít tương quan với cổ phiếu."
+    ]
+   ],
+   [
+    "h2",
+    "Cách tự kiểm tra"
+   ],
+   [
+    "p",
+    "Nhóm danh mục theo ngành rồi cộng tỷ trọng từng nhóm. Nếu một nhóm vượt 40–50%, danh mục đang tập trung dù có nhiều mã. Có thể so biểu đồ giá các mã trong 1–2 năm: mã nào đỉnh đáy trùng nhau là tương quan cao."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Số lượng mã không bằng mức độ đa dạng.",
+     "Mã cùng ngành thường giảm cùng lúc khi ngành gặp khó.",
+     "Đa dạng hóa theo động lực kinh doanh, không theo số mã."
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: báo cáo tài chính quý 3/2026 và giá đóng cửa đến 6/11/2026, dữ liệu tổng hợp trên chungkhoanhuynguyen.com. Số liệu quá khứ dùng để minh họa cách đọc, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Bao nhiêu mã là đủ đa dạng?",
+    "Với nhà đầu tư cá nhân, 6–10 mã ở 4–5 ngành khác nhau thường đủ; quan trọng là tỷ trọng ngành."
+   ],
+   [
+    "Quỹ ETF có giúp giảm tương quan?",
+    "ETF chỉ số giúp phân tán rủi ro riêng lẻ, nhưng vẫn tương quan với toàn thị trường."
+   ]
+  ],
+  "rel": [
+   "rui-ro-tap-trung-danh-muc",
+   "rui-ro-he-thong-va-phi-he-thong",
+   "phan-bo-von-va-quan-tri-danh-muc",
+   "cach-phan-bo-ty-trong-co-phieu"
+  ],
+  "add": [
+   [
+    "h2",
+    "Áp dụng ngay"
+   ],
+   [
+    "p",
+    "Một ví dụ về hai nhóm đi ngược chiều: tuần đầu tháng 11/2026, khi giá dầu Brent giảm gần 20% trong ba phiên, từ phiên 30/10 đến 6/11 GAS giảm khoảng 5,0%, BSR giảm khoảng 4,9%, trong khi HVN tăng khoảng 5,3% và VJC tăng khoảng 2,4%. Kết hợp những nhóm có động lực ngược nhau giúp danh mục bớt dao động."
+   ]
+  ]
+ },
+ {
+  "slug": "rui-ro-gap-gia-la-gi",
+  "kw": "rủi ro gap giá",
+  "grp": 5,
+  "title": "Rủi ro gap giá là gì? Khi giá nhảy qua điểm cắt lỗ",
+  "desc": "Gap giá là gì, vì sao lệnh cắt lỗ không phải lúc nào cũng khớp đúng giá, ví dụ giảm sàn nhiều phiên và cách giảm rủi ro gap cho nhà đầu tư cá nhân.",
+  "body": [
+   [
+    "p",
+    "<b>Gap giá</b> là khi giá mở cửa phiên sau cách xa giá đóng cửa phiên trước, không có giao dịch ở khoảng giữa. Với nhà đầu tư, gap giảm nguy hiểm vì giá có thể nhảy qua điểm cắt lỗ, khiến mức lỗ thực tế lớn hơn kế hoạch."
+   ],
+   [
+    "h2",
+    "Vì sao gap giá xảy ra?"
+   ],
+   [
+    "ul",
+    [
+     "Tin xấu ra ngoài giờ giao dịch: kết quả kinh doanh, điều tra, sự cố.",
+     "Biến động lớn của thị trường thế giới qua đêm, như phiên 5/11/2026 Nasdaq giảm 5,52%, sáng 6/11 Nikkei giảm 5,96%.",
+     "Cổ phiếu thanh khoản thấp, ít người đặt lệnh ở các mức giá giữa."
+    ]
+   ],
+   [
+    "h2",
+    "Giảm sàn nhiều phiên: dạng gap nặng nhất"
+   ],
+   [
+    "p",
+    "Sàn HOSE giới hạn biên độ 7% mỗi phiên. Khi có tin rất xấu, cổ phiếu có thể giảm sàn và không có người mua, lệnh bán không khớp. Nếu kéo dài 3 phiên, giá có thể mất khoảng 20% trước khi anh chị bán được, dù điểm cắt lỗ đặt ở −7%."
+   ],
+   [
+    "h2",
+    "Cách giảm rủi ro gap"
+   ],
+   [
+    "ul",
+    [
+     "Giảm rủi ro mỗi lệnh với mã thanh khoản thấp, ví dụ 0,5% thay vì 1% tài khoản.",
+     "Giới hạn tỷ trọng mỗi mã để một cú gap không làm hỏng cả tài khoản.",
+     "Cẩn trọng trước ngày công bố kết quả kinh doanh hoặc sự kiện lớn.",
+     "Không dùng margin cao, vì gap có thể kéo tài khoản dưới tỷ lệ ký quỹ ngay khi mở cửa."
+    ]
+   ],
+   [
+    "h2",
+    "Tính mức lỗ thực tế vào kế hoạch"
+   ],
+   [
+    "p",
+    "Khi lập kế hoạch, hãy giả định lỗ thực tế có thể gấp 1,5–2 lần khoảng cắt lỗ với mã ít giao dịch. Nếu mức đó vẫn chấp nhận được, vị thế đang có kích thước hợp lý."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Cắt lỗ là kế hoạch, không phải bảo hiểm tuyệt đối.",
+     "Gap giá làm lỗ thực tế vượt kế hoạch.",
+     "Tỷ trọng nhỏ và ít đòn bẩy là cách phòng gap hiệu quả nhất."
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: báo cáo tài chính quý 3/2026 và giá đóng cửa đến 6/11/2026, dữ liệu tổng hợp trên chungkhoanhuynguyen.com. Số liệu quá khứ dùng để minh họa cách đọc, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Gap tăng có lợi không?",
+    "Có, nếu anh chị đang cầm cổ phiếu. Nhưng mua đuổi sau gap tăng có rủi ro giá quay lại lấp khoảng trống."
+   ],
+   [
+    "Đặt lệnh cắt lỗ trước có tránh được gap?",
+    "Không hoàn toàn. Lệnh vẫn chỉ khớp khi có người mua ở mức giá đó."
+   ]
+  ],
+  "rel": [
+   "rui-ro-thanh-khoan-co-phieu",
+   "cat-lo-la-gi",
+   "bien-do-gia-tran-san",
+   "cach-tinh-khoi-luong-mua-theo-diem-cat-lo"
+  ],
+  "add": [
+   [
+    "h2",
+    "Áp dụng ngay"
+   ],
+   [
+    "p",
+    "Bài tập nhanh: lấy danh mục hiện tại, giả định mã lớn nhất giảm sàn 3 phiên liền, khoảng 20%. Nhân với tỷ trọng mã đó để ra mức lỗ trên toàn tài khoản. Nếu kết quả vượt 4–5% tài khoản, tỷ trọng mã đó đang lớn so với rủi ro gap, nhất là khi mã có thanh khoản thấp hoặc sắp công bố tin quan trọng."
+   ]
+  ]
+ },
+ {
+  "slug": "tai-can-bang-danh-muc-la-gi",
+  "kw": "tái cân bằng danh mục",
+  "grp": 7,
+  "title": "Tái cân bằng danh mục là gì? Ví dụ góp đều GAS từng lãi 92% còn 10%",
+  "desc": "Tái cân bằng danh mục là gì, khi nào nên làm, ví dụ thật góp đều GAS 38 tháng từng lãi 92% rồi còn khoảng 10%, và quy tắc tái cân bằng đơn giản cho người tích sản.",
+  "body": [
+   [
+    "p",
+    "<b>Tái cân bằng</b> là đưa tỷ trọng các tài sản trong danh mục về mức mục tiêu ban đầu, bằng cách bán bớt phần đã tăng quá nhiều và mua thêm phần còn thấp. Đây là cách chốt lời có kỷ luật mà không phải đoán đỉnh."
+   ],
+   [
+    "h2",
+    "Ví dụ thật: góp đều GAS"
+   ],
+   [
+    "p",
+    "Góp 3 triệu đồng mỗi tháng vào GAS từ 10/2023, theo giá đóng cửa: ngày 9/4/2025 danh mục có lúc lỗ khoảng 27,7%; ngày 4/3/2026 lãi khoảng 92%; đến 6/11/2026, sau 38 tháng và 114 triệu tiền vốn, giá trị khoảng 125,4 triệu, lãi khoảng 10% (chưa tính cổ tức). Giá GAS giảm khoảng 50% từ ngày 4/3 đến 22/7/2026, dù lợi nhuận quý 3/2026 vẫn tăng 79,5%."
+   ],
+   [
+    "h2",
+    "Tỷ trọng tự phình to thế nào"
+   ],
+   [
+    "p",
+    "Nếu danh mục có 3 mã ngang nhau và một mã lãi 92% còn hai mã đi ngang, mã đó tự chiếm gần một nửa danh mục. Không ai quyết định điều đó, nhưng rủi ro của cả danh mục đã dồn vào một mã."
+   ],
+   [
+    "h2",
+    "Hai cách tái cân bằng phổ biến"
+   ],
+   [
+    "ul",
+    [
+     "Theo lịch: mỗi quý hoặc mỗi 6 tháng kiểm tra và đưa về tỷ trọng mục tiêu.",
+     "Theo ngưỡng: khi một mã lệch quá 5 điểm phần trăm so với mục tiêu thì cân bằng lại.",
+     "Với người góp đều hằng tháng, cách nhẹ nhàng nhất là dồn tiền góp mới vào mã đang thấp hơn mục tiêu, hạn chế phải bán."
+    ]
+   ],
+   [
+    "h2",
+    "Lưu ý"
+   ],
+   [
+    "ul",
+    [
+     "Mỗi lần bán có phí và thuế, không nên cân bằng quá thường xuyên.",
+     "Tái cân bằng không áp dụng cho mã đã xấu đi về cơ bản; khi đó cần xem lại lý do nắm giữ.",
+     "Ghi lại tỷ trọng mục tiêu ngay từ đầu để không quyết định theo cảm xúc."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Tái cân bằng là bán có quy tắc, không phải đoán đỉnh.",
+     "Mã tăng nhanh tự làm danh mục tập trung.",
+     "Dồn tiền góp mới vào mã thấp hơn mục tiêu là cách đơn giản nhất."
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: báo cáo tài chính quý 3/2026 và giá đóng cửa đến 6/11/2026, dữ liệu tổng hợp trên chungkhoanhuynguyen.com. Số liệu quá khứ dùng để minh họa cách đọc, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Tái cân bằng có làm giảm lợi nhuận?",
+    "Có thể giảm một phần lãi khi mã mạnh tiếp tục tăng, nhưng đổi lại giảm mạnh rủi ro khi mã đó đảo chiều."
+   ],
+   [
+    "Tỷ trọng mục tiêu bao nhiêu là hợp lý?",
+    "Người tích sản thường để mỗi mã 15–30% tùy số mã; ngân hàng cùng nhóm nên tính chung."
+   ]
+  ],
+  "rel": [
+   "chot-loi-tung-phan",
+   "khi-nao-ban-co-phieu-tich-san",
+   "cach-phan-bo-ty-trong-co-phieu",
+   "mua-trung-binh-gia-dca"
+  ],
+  "add": [
+   [
+    "h2",
+    "Áp dụng ngay"
+   ],
+   [
+    "p",
+    "Một ví dụ khác: góp đều REE 3 triệu mỗi tháng trong 38 tháng, 114 triệu tiền vốn, hôm nay khoảng 113,8 triệu, gần hòa vốn, dù có thời điểm giá lên khoảng 62,35 nghìn đồng ngày 26/3/2026. Người có quy tắc chốt bớt khi mã vượt tỷ trọng mục tiêu sẽ giữ được một phần thành quả của giai đoạn tăng giá."
+   ]
+  ]
+ },
+ {
+  "slug": "bay-co-tuc-cao-la-gi",
+  "kw": "bẫy cổ tức cao",
+  "grp": 7,
+  "title": "Bẫy cổ tức cao là gì? 4 dấu hiệu cổ tức 10% khó lặp lại",
+  "desc": "Bẫy cổ tức là gì, cách tính tỷ lệ chi trả ước tính bằng tỷ suất cổ tức nhân P/E, ví dụ TNG, BMP, VNM, QNS, SSI và 4 dấu hiệu cổ tức có thể bị cắt.",
+  "body": [
+   [
+    "p",
+    "<b>Bẫy cổ tức</b> là khi một cổ phiếu trông hấp dẫn vì tỷ suất cổ tức cao, nhưng mức cổ tức đó khó duy trì, hoặc tỷ suất cao chỉ vì giá đã giảm mạnh. Người mua vì cổ tức có thể nhận cổ tức thấp hơn năm sau và lỗ thêm về giá."
+   ],
+   [
+    "h2",
+    "Tỷ lệ chi trả ước tính"
+   ],
+   [
+    "p",
+    "Một cách ước tính nhanh: <b>tỷ lệ chi trả ≈ tỷ suất cổ tức × P/E</b>. Con số này cho biết doanh nghiệp đang trả khoảng bao nhiêu phần trăm lợi nhuận thành cổ tức."
+   ],
+   [
+    "ul",
+    [
+     "TNG: tỷ suất 11,01%, P/E 4,97 → chi trả khoảng 55%; lợi nhuận quý 3/2026 +29,5%.",
+     "QNS: 8,15%, P/E 9,0 → khoảng 73%; lợi nhuận quý 3 +18,1%.",
+     "VNM: 8,18%, P/E 10,54 → khoảng 86%; lợi nhuận quý 3 +17,3%.",
+     "BMP: 10,78%, P/E 9,02 → khoảng 97%; lợi nhuận quý 3 −8,9%.",
+     "SSI: 7,47%, P/E 13,75 → khoảng 103%; lợi nhuận quý 3 −23,7%."
+    ]
+   ],
+   [
+    "p",
+    "Dữ liệu ngày 6/11/2026. Hai mã có tỷ lệ chi trả cao nhất cũng là hai mã lợi nhuận quý 3 giảm. Điều đó không có nghĩa chắc chắn sẽ cắt cổ tức, nhưng dư địa đã mỏng hơn."
+   ],
+   [
+    "h2",
+    "4 dấu hiệu bẫy cổ tức"
+   ],
+   [
+    "ul",
+    [
+     "Tỷ suất cao vì giá giảm mạnh, không phải vì cổ tức tăng.",
+     "Tỷ lệ chi trả trên 90% trong khi lợi nhuận đang giảm.",
+     "Dòng tiền kinh doanh thấp hơn tiền chi cổ tức nhiều năm liền.",
+     "Ngành có chu kỳ mạnh, lợi nhuận năm tốt khó lặp lại."
+    ]
+   ],
+   [
+    "h2",
+    "Cổ tức bền thường có gì?"
+   ],
+   [
+    "ul",
+    [
+     "Lợi nhuận ổn định hoặc tăng nhiều năm.",
+     "Tỷ lệ chi trả dưới khoảng 70–80%, còn dư địa khi lợi nhuận giảm.",
+     "Dòng tiền kinh doanh dương và ít nợ vay."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Đừng chọn cổ phiếu chỉ vì tỷ suất cổ tức cao.",
+     "Tính tỷ lệ chi trả và xem xu hướng lợi nhuận.",
+     "Cổ tức bền đến từ lợi nhuận bền và dòng tiền thật."
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: báo cáo tài chính quý 3/2026 và giá đóng cửa đến 6/11/2026, dữ liệu tổng hợp trên chungkhoanhuynguyen.com. Số liệu quá khứ dùng để minh họa cách đọc, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Tỷ suất cổ tức tính theo năm nào?",
+    "Thường theo cổ tức tiền mặt năm gần nhất chia cho giá hiện tại; không phải cam kết cho năm sau."
+   ],
+   [
+    "Tỷ lệ chi trả trên 100% có sao không?",
+    "Có thể trả từ lợi nhuận giữ lại các năm trước, nhưng không bền nếu kéo dài."
+   ]
+  ],
+  "rel": [
+   "ty-suat-co-tuc-la-gi",
+   "ty-le-chi-tra-co-tuc-la-gi",
+   "co-tuc-la-gi",
+   "tai-dau-tu-co-tuc"
+  ],
+  "add": [
+   [
+    "h2",
+    "Áp dụng ngay"
+   ],
+   [
+    "p",
+    "Ngoài tỷ lệ chi trả, anh chị nên mở báo cáo lưu chuyển tiền tệ, so dòng tiền thuần từ hoạt động kinh doanh với tiền chi trả cổ tức trong 3–5 năm. Nếu doanh nghiệp phải vay thêm hoặc bán tài sản để trả cổ tức, mức chi trả hiện tại khó duy trì. Với công ty chứng khoán, lợi nhuận phụ thuộc thị trường nên cổ tức thường dao động theo chu kỳ."
+   ]
+  ]
  }
 ]
