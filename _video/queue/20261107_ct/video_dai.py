@@ -98,3 +98,71 @@ S["CT0711F"] = [
  CL(("5 CÂU NÓI", "5 QUY TRÌNH"), ["Phần lõi: quỹ chỉ số hoặc nhóm đầu ngành", "Giảm số lần giao dịch, giảm phí", "Không đuổi theo tin tức", "Chọn tỷ lệ phân bổ, cân bằng mỗi năm", "Phần chọn mã riêng chỉ là phần nhỏ"], "Gom lại thành năm quy trình. Một, phần lõi danh mục là quỹ chỉ số hoặc nhóm doanh nghiệp đầu ngành. Hai, giảm số lần giao dịch để giảm phí. Ba, không đuổi theo tin tức. Bốn, chọn tỷ lệ phân bổ và cân bằng lại mỗi năm. Năm, phần chọn mã riêng chỉ là phần nhỏ.", ch="Tổng kết"),
  END(("ĐƠN GIẢN", "THẮNG PHỨC TẠP"), "Bogle chứng minh rằng cách đơn giản nhất thường thắng cách phức tạp nhất. Nếu chỉ được chọn một, anh chị sẽ mua cả đống rơm, hay đi tìm cây kim?"),
 ]
+
+# ===== BỔ SUNG 7/11 01:30: trau chuốt, đào sâu để đạt 6–9 phút (anh Huy) =====
+def _chen(key, sau_ch, canh):
+    L = S[key]; i = next(j for j, c in enumerate(L) if c.get('ch', '').startswith(sau_ch)) + 1
+    L[i:i] = canh
+
+_chen("CT0711A", "Mở đầu", [
+ T(("AI LÀ", "CHARLIE MUNGER?"), "Trước khi vào bảy câu nói, anh chị cần biết Munger là ai. Ông sinh năm một nghìn chín trăm hai mươi tư ở Omaha, cùng thành phố với Buffett. Hồi nhỏ ông từng làm thêm ở cửa hàng tạp hóa của ông nội Buffett, nhưng phải đến năm ba mươi lăm tuổi hai người mới gặp nhau trong một bữa tối. Munger là luật sư, mất con trai vì bệnh bạch cầu khi mới chín tuổi, ly hôn và gần như trắng tay ở tuổi ba mươi. Người đàn ông đó về sau trở thành một trong những nhà đầu tư được kính trọng nhất thế giới. Vì vậy những câu nói của ông không phải lý thuyết sách vở, mà là thứ được chắt ra từ chính những năm tháng khó khăn nhất.", anh="Omaha Nebraska downtown", ch="Người đàn ông đứng sau Buffett"),
+])
+_chen("CT0711A", "Câu 2", [
+ T(("CON SỐ", "LÀM ANH CHỊ GIẬT MÌNH"), "Em đưa anh chị một con số để thấy chờ đợi đáng giá thế nào. Berkshire bỏ ra khoảng một phẩy ba tỷ đô la để mua Coca-Cola trong hai năm một nghìn chín trăm tám mươi tám và tám mươi chín. Đến nay, riêng tiền cổ tức Coca-Cola trả cho Berkshire mỗi năm đã vào khoảng bảy trăm triệu đô, tức hơn một nửa số vốn ban đầu, năm nào cũng về. Trong khi đó, người mua bán Coca-Cola liên tục suốt ba mươi năm qua phần lớn chỉ nhận lại phí giao dịch và thuế. Cùng một cổ phiếu, kết quả khác nhau chỉ vì một bên biết ngồi yên.", anh="Coca-Cola delivery truck", ch="Phép tính của sự chờ đợi"),
+])
+_chen("CT0711A", "Câu 5", [
+ T(("VÌ SAO", "MÌNH HAY CHỐT LÃI VỤN?"), "Vì sao nhà đầu tư Việt Nam hay chốt lãi vụn? Vì não người sợ mất khoản lãi đang có hơn là thích khoản lãi lớn hơn phía trước. Tài khoản xanh năm phần trăm là chúng ta đã thấy ngứa tay. Thêm vào đó, bảng điện nhảy từng giây làm mình có cảm giác phải làm gì đó. Munger chữa bệnh này rất đơn giản: ông gần như không nhìn giá hằng ngày. Ông nhìn doanh nghiệp. Chừng nào doanh nghiệp vẫn kiếm tiền tốt hơn năm ngoái, ông không có lý do gì để bán.", anh="Stock exchange screens", ch="Bệnh chốt lãi vụn"),
+])
+_chen("CT0711A", "Câu 7", [
+ T(("CÂU HỎI", "TRƯỚC KHI MUA"), "Nếu gom cả bảy câu nói vào một thói quen, em đề nghị anh chị trước mỗi lệnh mua hãy tự trả lời bốn câu hỏi bằng văn bản. Một, điều gì có thể làm mình mất một nửa số tiền này. Hai, mình có hiểu doanh nghiệp kiếm tiền bằng cách nào không. Ba, ban lãnh đạo được lợi gì khi cổ phiếu tăng. Bốn, nếu giá giảm ba mươi phần trăm ngày mai thì mình sẽ làm gì. Chỉ cần viết ra bốn câu này, anh chị đã loại bỏ được phần lớn những lệnh mua theo cảm xúc.", anh="Notebook pen", ch="Bốn câu hỏi trước khi mua", moc=True),
+])
+
+_chen("CT0711B", "Chương 1", [
+ T(("CUỘC ĐỜI", "BÌNH THƯỜNG ĐẾN LẠ"), "Để anh chị thấy câu chuyện này đặc biệt thế nào, em kể thêm về cuộc đời ông Read. Ông sinh năm một nghìn chín trăm hai mươi mốt trong một gia đình nông dân nghèo, mỗi ngày đi bộ hoặc đi nhờ xe hơn sáu cây số để đến trường. Ông là người đầu tiên trong gia đình tốt nghiệp trung học. Chiến tranh thế giới thứ hai, ông nhập ngũ và phục vụ ở Bắc Phi, Ý. Về nước, ông mở một trạm xăng nhỏ, làm ở đó gần hai mươi lăm năm, rồi nghỉ hưu, rồi lại đi làm lao công bán thời gian thêm mười bảy năm. Không có gì trong cuộc đời ấy giống với hình ảnh một triệu phú.", anh="Gas station 1950s", ch="Cuộc đời bình thường"),
+])
+_chen("CT0711B", "Chương 2", [
+ BN(("NẾU MỖI THÁNG", "BỎ RA 3 TRIỆU"), 6.8, "{:,.1f}", " tỷ đồng", "GÓP 3 TRIỆU/THÁNG · 10%/NĂM · 30 NĂM", "phép tính giả định, không phải cam kết", "Em làm một phép tính giả định để anh chị thấy cơ chế đó ở Việt Nam. Nếu mỗi tháng anh chị đều đặn bỏ ra ba triệu đồng, và giả định danh mục tăng trung bình mười phần trăm mỗi năm, thì sau ba mươi năm, tổng tiền góp chỉ khoảng một tỷ không trăm tám mươi triệu, nhưng tài sản có thể lên khoảng sáu tỷ tám trăm triệu đồng. Ngay cả nếu chỉ tính hai mươi năm, con số cũng vào khoảng hai phẩy ba tỷ. Đây là phép tính giả định, không phải lời hứa lợi nhuận, nhưng nó cho thấy thời gian và kỷ luật làm được những việc mà thu nhập cao chưa chắc làm được.", ch="Phép tính cho người Việt", moc=True),
+])
+_chen("CT0711B", "Chương 6", [
+ T(("THÓI QUEN", "MỖI SÁNG"), "Người thân của ông kể rằng ông thường ngồi ở thư viện thị trấn mỗi sáng, đọc báo tài chính và ghi chép tay. Ông có tài khoản ở công ty môi giới nhưng hiếm khi gọi điện đặt lệnh. Khi có cổ phiếu, ông cất giấy chứng nhận trong một két an toàn ở ngân hàng, dày tới mức chồng giấy cao khoảng mười hai phân. Ông không kể với ai, kể cả người thân, về số tài sản này. Sự kín đáo đó cũng là một kiểu kỷ luật: không khoe, nên không bị áp lực phải chứng minh, không bị cám dỗ phải mạo hiểm thêm.", anh="Bank safe deposit box", ch="Thói quen hằng ngày của ông Read"),
+])
+
+_chen("CT0711C", "Chương 1", [
+ T(("PHI VỤ", "NĂM 1929"), "Năm một nghìn chín trăm hai mươi chín, thị trường Mỹ đang ở đỉnh hưng phấn. Người đánh giày, người lái taxi đều cho lời khuyên mua cổ phiếu. Livermore nhận ra những dấu hiệu quen thuộc: giá tăng nhưng số mã dẫn dắt ngày càng ít, và tiền vay ký quỹ phình to. Ông bắt đầu bán khống từng phần, thử từng bước, chỉ tăng vị thế khi thị trường xác nhận ông đúng. Khi cú sập ngày hai mươi bốn và hai mươi chín tháng mười ập đến, vị thế bán của ông thắng đậm. Báo chí gọi ông là con gấu lớn nhất Phố Wall, và có người còn đổ lỗi cho ông gây ra cú sập.", anh="Black Tuesday 1929", ch="Phi vụ để đời năm 1929", moc=True),
+])
+_chen("CT0711C", "Chương 5", [
+ T(("TÂM LÝ", "SAU CHIẾN THẮNG"), "Có một điều em thấy rất quan trọng mà ít người nói: thời điểm nguy hiểm nhất của nhà đầu tư không phải lúc thua, mà ngay sau một chiến thắng lớn. Sau khi thắng, chúng ta tin rằng mình đã hiểu thị trường, liền tăng quy mô và nới lỏng kỷ luật. Livermore cũng vậy. Ông thắng năm một nghìn chín trăm lẻ bảy rồi thua lớn vào phi vụ bông. Ông thắng năm một nghìn chín trăm hai mươi chín rồi mất gần hết trong vài năm sau. Anh chị hãy nhìn lại chính tài khoản của mình: khoản lỗ lớn nhất thường đến ngay sau chuỗi thắng dài nhất.", anh="Casino chips", ch="Cái bẫy sau chiến thắng", moc=True),
+])
+_chen("CT0711C", "Chương 6", [
+ T(("ÁP VÀO", "THỊ TRƯỜNG VIỆT NAM"), "Áp vào thị trường Việt Nam, bài học này càng thấm. Năm hai nghìn không trăm hai mươi mốt, rất nhiều nhà đầu tư mới thắng lớn nhờ thị trường tăng mạnh, rồi vay ký quỹ tối đa ở vùng đỉnh đầu năm hai nghìn không trăm hai mươi hai. Khi VN-Index giảm từ khoảng một nghìn năm trăm ba mươi sáu điểm xuống quanh chín trăm mười một điểm, những tài khoản dùng đòn bẩy cao bị bán giải chấp liên tục. Không phải họ chọn sai cổ phiếu, mà là họ quên quản trị vốn đúng lúc mình tự tin nhất.", anh="Ho Chi Minh City Stock Exchange", ch="Bài học cho nhà đầu tư Việt"),
+])
+
+_chen("CT0711D", "Chương 1", [
+ T(("CHỈ LÀ", "MỘT CÔ THƯ KÝ"), "Grace Groner mồ côi cha mẹ từ khi mười hai tuổi, được một gia đình trong vùng nhận nuôi và cho ăn học. Cô tốt nghiệp đại học năm một nghìn chín trăm ba mươi mốt, giữa thời kỳ Đại suy thoái, rồi làm thư ký cho Abbott suốt bốn mươi ba năm. Cô không lập gia đình, sống trong một căn nhà nhỏ được tặng lại, và không ai trong vùng nghĩ cô có nhiều tiền. Ba cổ phiếu năm một nghìn chín trăm ba mươi lăm, với giá sáu mươi đô mỗi cổ phiếu, là một khoản lớn với lương của một thư ký thời đó, nhưng cô vẫn mua vì tin vào công ty nơi mình làm việc mỗi ngày.", anh="1930s office typewriter", ch="Cô thư ký mồ côi"),
+])
+_chen("CT0711D", "Chương 3", [
+ T(("ĐIỀU KHÓ NHẤT", "LÀ KHÔNG LÀM GÌ"), "Anh chị hãy tưởng tượng cảm giác của bà vào ngày mười chín tháng mười năm một nghìn chín trăm tám mươi bảy, khi thị trường Mỹ mất hai mươi hai phần trăm trong một ngày. Tài sản của bà lúc đó có thể đã vài trăm nghìn đô, và bốc hơi một phần năm chỉ trong vài giờ. Báo chí khắp nơi nói về ngày tận thế của chứng khoán. Người bình thường sẽ bán để giữ lại phần còn lại. Bà không bán, và chỉ hai năm sau thị trường đã lấy lại toàn bộ mức giảm. Không làm gì nghe thì dễ, nhưng đó là việc khó nhất trong đầu tư.", anh="Black Monday 1987", ch="Ngày thứ Hai đen tối", moc=True),
+])
+_chen("CT0711D", "Chương 4", [
+ T(("PHIÊN BẢN", "VIỆT NAM"), "Ở Việt Nam, thị trường mới có hơn hai mươi lăm năm, nên chưa có câu chuyện bảy mươi lăm năm. Nhưng nguyên lý thì giống hệt. Một nhà đầu tư mua cổ phiếu của doanh nghiệp đầu ngành từ những năm đầu thị trường, nhận cổ phiếu thưởng, cổ tức, và giữ qua các lần sập năm hai nghìn không trăm lẻ tám, hai nghìn không trăm hai mươi, hai nghìn không trăm hai mươi hai, thường đã có kết quả gấp nhiều lần. Ngược lại, người mua những mã đầu cơ không có lợi nhuận thật thì nhiều mã đã bị hủy niêm yết. Chọn đúng loại doanh nghiệp quan trọng không kém việc giữ lâu.", anh="Ho Chi Minh City skyline night", ch="Áp vào thị trường Việt Nam"),
+])
+
+_chen("CT0711E", "Mở đầu", [
+ T(("CẬU BÉ", "MÊ CON SỐ"), "Ngay từ sáu tuổi, Buffett đã mua sáu lon nước ngọt với giá hai mươi lăm xu rồi bán lại mỗi lon năm xu, lãi năm xu cho cả lốc. Cậu đi giao báo, bán kẹo cao su, và đọc hết mọi cuốn sách về đầu tư trong thư viện Omaha. Bố cậu là một người môi giới chứng khoán, nên cậu thường đến văn phòng của bố, viết giá cổ phiếu lên bảng đen. Chính trong căn phòng đó, cậu chọn mua cổ phiếu đầu tiên của đời mình. Một cậu bé mười một tuổi đã có vốn, có kiến thức, có đam mê. Vậy mà lệnh mua đầu tiên vẫn khiến cậu toát mồ hôi.", anh="Coca-Cola vintage bottles", ch="Cậu bé mê con số"),
+])
+_chen("CT0711E", "Chương 2", [
+ T(("ANH CHỊ", "ĐÃ TỪNG CHƯA?"), "Em nghĩ hầu như nhà đầu tư Việt Nam nào cũng có một mã giống Cities Service của Buffett. Mua, giảm ba mươi phần trăm, gồng mấy tháng, vừa về hòa hoặc lãi chút xíu là bán ngay cho nhẹ người. Sau đó mã đó tăng gấp đôi, gấp ba, và mình chỉ đứng nhìn. Cảm giác đó đau hơn cả cảm giác lỗ. Điều đáng nói là Buffett không đổ lỗi cho thị trường, ông viết ra bài học và dùng nó suốt đời. Thay vì tiếc nuối, anh chị hãy biến lần bán sớm đó thành một nguyên tắc.", anh="Man looking at phone", ch="Mã Cities Service của anh chị", moc=True),
+])
+_chen("CT0711E", "Chương 5", [
+ T(("TỪ CẬU BÉ", "ĐẾN BERKSHIRE"), "Ba bài học đó theo Buffett suốt đời. Ông nổi tiếng với câu nói thời gian nắm giữ yêu thích của ông là mãi mãi. Ông mua Coca-Cola năm một nghìn chín trăm tám mươi tám và không bán. Ông mua American Express từ đầu thập niên chín mươi và vẫn giữ. Ông viết thư cho cổ đông mỗi năm để giải thích cách nghĩ, để cổ đông cũng kiên nhẫn như ông. Một lệnh lỗ năm đô của cậu bé mười một tuổi đã định hình cách làm của một trong những người đầu tư thành công nhất lịch sử.", anh="Berkshire Hathaway annual meeting", ch="Bài học đi theo cả đời"),
+])
+
+_chen("CT0711F", "Mở đầu", [
+ T(("NGƯỜI BỊ", "PHỐ WALL GHÉT"), "John Bogle sinh năm một nghìn chín trăm hai mươi chín, đúng năm Phố Wall sụp đổ, và lớn lên trong cảnh gia đình mất gần hết tài sản. Ông vừa học vừa làm bồi bàn để trả học phí. Luận văn tốt nghiệp của ông ở đại học Princeton năm một nghìn chín trăm năm mươi mốt đã đặt câu hỏi: các quỹ đầu tư có thật sự thắng được thị trường không. Câu trả lời ông tìm thấy là không, phần lớn là không. Hai mươi lăm năm sau, ông biến câu trả lời đó thành một sản phẩm, và Phố Wall ghét ông vì sản phẩm đó làm giảm phí của cả ngành.", anh="Princeton University", ch="Cậu sinh viên đặt câu hỏi"),
+])
+_chen("CT0711F", "Câu 2", [
+ BN(("PHÍ 2%/NĂM", "TRONG 30 NĂM"), -43, "{:,.0f}", "%", "CÙNG LỢI NHUẬN 8%/NĂM", "phần tài sản bị phí ăn mất (giả định)", "Em làm phép tính giả định cho rõ. Một trăm triệu đồng, tăng tám phần trăm mỗi năm trong ba mươi năm, sẽ thành khoảng một tỷ không trăm lẻ sáu triệu. Nếu mỗi năm bị trừ hai phần trăm phí, lợi nhuận còn sáu phần trăm, thì sau ba mươi năm chỉ còn khoảng năm trăm bảy mươi bốn triệu. Chênh lệch là gần một nửa, khoảng bốn mươi ba phần trăm tài sản, mất đi chỉ vì hai phần trăm mỗi năm. Với người giao dịch liên tục, phí và thuế mỗi năm có khi còn cao hơn hai phần trăm rất nhiều.", ch="Phép tính của chi phí", col=RED),
+])
+_chen("CT0711F", "Câu 4", [
+ T(("THỬ THÁCH", "NĂM 2008"), "Niềm tin của Bogle bị thử thách nặng nhất năm hai nghìn không trăm lẻ tám. Chỉ số S và P năm trăm giảm khoảng ba mươi bảy phần trăm trong một năm. Rất nhiều người bán quỹ chỉ số ở đáy và thề không quay lại. Bogle lên truyền hình nhắc đi nhắc lại một câu: đừng làm gì cả, cứ giữ vững lộ trình. Mười năm sau, những ai giữ được đã thấy tài sản của mình cao hơn đáy năm hai nghìn không trăm lẻ chín khoảng bốn lần. Những người bán ở đáy thì phần lớn lỡ toàn bộ nhịp hồi phục.", anh="2008 financial crisis newspaper", ch="Thử thách năm 2008", moc=True),
+])
