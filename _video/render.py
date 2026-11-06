@@ -173,8 +173,12 @@ def _av_dan(im):
     except Exception as e:
         AV[0] = None; print("chan dung: tat", repr(e), flush=True)
     return im
+import land_text
 def land(v, sc, t):
-    k = sc["k"]; im = sc["_bg"].copy() if "_bg" in sc else _cover(v, sc)
+    k = sc["k"]
+    if k in ("end", "text"):   # cảnh chữ: ảnh tràn khung + Ken Burns + đổi góc máy (bỏ kiểu cột dọc giữa màn hình)
+        im = land_text.frame(sc, t); _draw_sub(im, sc, t, LW/2, LW - 200); return im
+    im = sc["_bg"].copy() if "_bg" in sc else _cover(v, sc)
     if "_bg" in sc:
         fc = dx2.F("SemiBold", 18); ImageDraw.Draw(im).text((24, LH-34), "Ảnh minh hoạ: Wikimedia Commons", font=fc, fill=(150, 156, 170))
     if k in ("end", "text"):
@@ -227,7 +231,7 @@ def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
     fr = 0
     for i, sc in enumerate(scenes):
         n = int(round(b[i+1]*FPS)) - fr
-        for j in range(n): AV[2] = fr + j; p.stdin.write(land(dx2.draw(sc, j/FPS, j/max(1, n)), sc, j/FPS).tobytes())
+        for j in range(n): AV[2] = fr + j; p.stdin.write(land(None if sc["k"] in ("text", "end") else dx2.draw(sc, j/FPS, j/max(1, n)), sc, j/FPS).tobytes())
         fr += n
     p.stdin.close(); p.wait(); SUB_ON[0] = False
     _srt(scenes, b, os.path.join(OUT, key + ".srt"))
@@ -244,7 +248,19 @@ try:
     for i, sc in enumerate(scenes):
         sc["anh"] = raw[i].get("anh", ""); sc["say"] = raw[i].get("say", ""); sc["ch"] = raw[i].get("ch", "")
         ph = kho.cho(sc, chu_de)
-        if ph is not None: _prep_ph(sc, ph); nph += 1
+        if ph is not None:
+            _prep_ph(sc, ph); nph += 1
+            if sc.get("k") in ("text", "end") and not raw[i].get("cta"):
+                try:
+                    import wave as _w0
+                    with _w0.open("%s/%02d.wav" % (wd, i)) as _ww: _dur = _ww.getnframes() / _ww.getframerate()
+                except Exception: _dur = len(sc.get("say", "").split()) / 3.3
+                phs = [ph]
+                for _ in range(min(3, int(_dur // land_text.SHOT))):
+                    p2 = kho.cho(sc, chu_de)
+                    if p2 is None: break
+                    phs.append(p2)
+                land_text.prep(sc, phs)
     open(os.path.join(OUT, key + "_anh.txt"), "w", encoding="utf-8").write("Ảnh minh hoạ (Wikimedia Commons):\n" + "\n".join(kho.credit) + "\n")
     print(key, "anh minh hoa", nph, "/", len(scenes), flush=True)
 except Exception as e:
