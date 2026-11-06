@@ -538,5 +538,35 @@
 "Trái phiếu chuyển đổi",
 "Trái phiếu cho phép người nắm giữ đổi sang cổ phiếu theo giá định trước.",
 "trai-phieu-chuyen-doi-la-gi"
+],
+[
+"Dự phòng giảm giá hàng tồn kho",
+"Khoản ghi trước phần mất giá dự kiến của hàng trong kho, làm giảm lợi nhuận kỳ trích.",
+"du-phong-giam-gia-hang-ton-kho-la-gi"
+],
+[
+"Chi phí trả trước",
+"Khoản đã chi nhưng lợi ích kéo dài nhiều kỳ, phân bổ dần vào chi phí.",
+"chi-phi-tra-truoc-la-gi"
+],
+[
+"Đầu tư nắm giữ đến ngày đáo hạn",
+"Khoản đầu tư giữ đến hạn để nhận lãi, chủ yếu là tiền gửi kỳ hạn trên 3 tháng.",
+"dau-tu-giu-den-ngay-dao-han-la-gi"
+],
+[
+"Bất động sản đầu tư",
+"Bất động sản nắm giữ để cho thuê hoặc chờ tăng giá, không để bán hay tự dùng.",
+"bat-dong-san-dau-tu-la-gi"
+],
+[
+"Thuế thu nhập hoãn lại",
+"Phần thuế chênh lệch do khác biệt thời điểm giữa lợi nhuận kế toán và thu nhập chịu thuế.",
+"thue-thu-nhap-hoan-lai-la-gi"
+],
+[
+"Tiền và tương đương tiền",
+"Tiền mặt, tiền gửi không kỳ hạn và khoản đầu tư có kỳ hạn gốc tối đa 3 tháng.",
+"tien-va-tuong-duong-tien-la-gi"
 ]
 ]

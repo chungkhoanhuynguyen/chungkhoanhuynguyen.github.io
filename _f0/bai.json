@@ -26630,5 +26630,536 @@
    "ty-le-thang-va-ty-le-loi-lo",
    "ac-cam-thua-lo-la-gi"
   ]
+ },
+ {
+  "slug": "du-phong-giam-gia-hang-ton-kho-la-gi",
+  "kw": "dự phòng giảm giá hàng tồn kho",
+  "grp": 3,
+  "title": "Dự phòng giảm giá hàng tồn kho là gì? Cách đọc trên BCTC",
+  "desc": "Dự phòng giảm giá hàng tồn kho là gì, vì sao làm giảm lợi nhuận, cách tính tỷ lệ dự phòng trên tồn kho. Ví dụ MWG, HSG, DGW, VNM quý 3/2026.",
+  "body": [
+   [
+    "p",
+    "<b>Dự phòng giảm giá hàng tồn kho</b> là khoản doanh nghiệp ghi nhận trước khi hàng trong kho có khả năng phải bán thấp hơn giá vốn. Hàng có thể lỗi mốt, hết hạn, hỏng, hoặc giá thị trường giảm sâu. Kế toán yêu cầu ghi nhận phần mất giá ngay khi thấy rủi ro, không đợi đến lúc bán."
+   ],
+   [
+    "h2",
+    "Ghi ở đâu trên báo cáo?"
+   ],
+   [
+    "p",
+    "Trên bảng cân đối kế toán, mục <a href=\"/f0/hang-ton-kho-la-gi.html\">hàng tồn kho</a> thường có hai dòng: giá gốc hàng tồn kho và dòng dự phòng mang dấu âm. Hàng tồn kho thuần bằng giá gốc trừ dự phòng. Trên báo cáo kết quả kinh doanh, phần trích thêm được cộng vào giá vốn hàng bán, nên làm giảm lợi nhuận gộp của kỳ đó. Khi hàng đã bán được với giá tốt hơn dự kiến, phần dư được hoàn nhập và làm lợi nhuận tăng."
+   ],
+   [
+    "h2",
+    "Tỷ lệ dự phòng trên tồn kho"
+   ],
+   [
+    "p",
+    "Cách đọc nhanh là chia dự phòng cho giá gốc tồn kho. Số liệu tại 30/9/2026:"
+   ],
+   [
+    "ul",
+    [
+     "MWG: dự phòng 775,8 tỷ trên tồn kho gốc 35.829,6 tỷ, khoảng 2,2%. Một năm trước tỷ lệ cũng khoảng 2,2% (543,8 trên 24.645,1 tỷ), dù tồn kho tăng mạnh.",
+     "HSG: 238,2 tỷ trên 8.960 tỷ, khoảng 2,7%, tăng từ 1,6% tại 31/12/2025 (149,8 tỷ). Ngành tôn thép nhạy với giá nguyên liệu.",
+     "DGW: 213,6 tỷ trên 4.868,9 tỷ, khoảng 4,4%, gần gấp đôi mức 2,1% của quý trước (125,1 tỷ).",
+     "VNM: 46,3 tỷ trên 7.514,8 tỷ, chỉ khoảng 0,6%. Hàng tiêu dùng thiết yếu quay vòng nhanh nên rủi ro mất giá thấp."
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: báo cáo tài chính hợp nhất các quý, dữ liệu tổng hợp trên web, đơn vị tỷ đồng."
+   ],
+   [
+    "h2",
+    "Đọc tín hiệu thế nào?"
+   ],
+   [
+    "p",
+    "Tỷ lệ dự phòng ổn định trong khi tồn kho tăng thường là bình thường khi doanh nghiệp mở rộng. Tỷ lệ tăng nhanh trong một quý, như DGW quý 3/2026, là dấu hiệu nên tìm hiểu thêm: hàng chậm bán ở nhóm sản phẩm nào, có liên quan tới vòng đời sản phẩm điện tử hay giá bán giảm. Ngược lại, tỷ lệ quá thấp ở ngành có hàng dễ lỗi thời cũng đáng hỏi, vì có thể doanh nghiệp đang trích chưa đủ."
+   ],
+   [
+    "p",
+    "Nên đọc cùng <a href=\"/f0/vong-quay-hang-ton-kho-la-gi.html\">vòng quay hàng tồn kho</a> và biên lợi nhuận gộp. Tồn kho tăng, vòng quay chậm lại và dự phòng tăng cùng lúc là tổ hợp cần thận trọng hơn từng dấu hiệu đơn lẻ."
+   ],
+   [
+    "h2",
+    "So sánh giữa các ngành"
+   ],
+   [
+    "p",
+    "Không nên so tỷ lệ dự phòng giữa ngành khác nhau. Bán lẻ điện máy và điện thoại có hàng mất giá nhanh khi có mẫu mới; thép chịu biến động giá nguyên liệu; thực phẩm có hạn dùng nhưng quay vòng nhanh; bất động sản thường gần như không trích vì hàng tồn kho là dự án. So với chính doanh nghiệp qua nhiều quý và với doanh nghiệp cùng ngành mới có ý nghĩa."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Dự phòng là phần mất giá dự kiến của hàng trong kho, ghi trước khi bán.",
+     "Trích thêm làm giảm lợi nhuận, hoàn nhập làm tăng lợi nhuận.",
+     "Theo dõi tỷ lệ dự phòng trên tồn kho gốc qua nhiều quý và so cùng ngành."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Dự phòng giảm giá hàng tồn kho có phải là tiền mất thật?",
+    "Chưa hẳn. Đây là ước tính kế toán; nếu sau đó bán được giá tốt hơn, phần dư sẽ được hoàn nhập."
+   ],
+   [
+    "Doanh nghiệp bất động sản có trích dự phòng tồn kho không?",
+    "Có thể, nhưng thường nhỏ so với quy mô tồn kho dự án. Ví dụ KDH không có dòng dự phòng tồn kho tại 30/9/2026."
+   ],
+   [
+    "Tỷ lệ dự phòng bao nhiêu là cao?",
+    "Không có ngưỡng chung. Nên so với lịch sử của chính doanh nghiệp và các công ty cùng ngành."
+   ]
+  ],
+  "rel": [
+   "hang-ton-kho-la-gi",
+   "vong-quay-hang-ton-kho-la-gi",
+   "hoan-nhap-du-phong-la-gi",
+   "bien-loi-nhuan-gop-la-gi"
+  ],
+  "add": []
+ },
+ {
+  "slug": "chi-phi-tra-truoc-la-gi",
+  "kw": "chi phí trả trước là gì",
+  "grp": 3,
+  "title": "Chi phí trả trước là gì? Ngắn hạn, dài hạn và cách đọc",
+  "desc": "Chi phí trả trước là gì, khác chi phí thường thế nào, ngắn hạn và dài hạn, vì sao cần để ý khi khoản này tăng nhanh. Ví dụ VNM, HPG, MSN năm 2026.",
+  "body": [
+   [
+    "p",
+    "<b>Chi phí trả trước</b> là khoản tiền doanh nghiệp đã chi nhưng lợi ích kéo dài nhiều kỳ, nên chưa ghi hết vào chi phí ngay. Ví dụ trả trước tiền thuê mặt bằng ba năm, mua công cụ dụng cụ dùng nhiều năm, chi phí sửa chữa lớn, bảo hiểm trả trước. Khoản này nằm bên tài sản và được phân bổ dần vào chi phí theo thời gian sử dụng."
+   ],
+   [
+    "h2",
+    "Ví dụ dễ hiểu"
+   ],
+   [
+    "p",
+    "Một cửa hàng trả trước 120 triệu đồng tiền thuê cho 24 tháng. Nếu ghi hết vào tháng đầu, tháng đó lỗ nặng còn 23 tháng sau lại trông lãi hơn thực tế. Kế toán ghi 120 triệu vào chi phí trả trước, rồi mỗi tháng phân bổ 5 triệu vào chi phí. Tiền đã ra khỏi doanh nghiệp từ đầu, nhưng lợi nhuận được phản ánh đều theo kỳ."
+   ],
+   [
+    "h2",
+    "Ngắn hạn và dài hạn"
+   ],
+   [
+    "ul",
+    [
+     "Chi phí trả trước ngắn hạn: phân bổ trong vòng 12 tháng, nằm trong tài sản ngắn hạn.",
+     "Chi phí trả trước dài hạn: phân bổ trên 12 tháng, nằm trong tài sản dài hạn. Thường gồm tiền thuê đất trả trước, công cụ dụng cụ, chi phí sửa chữa lớn, lợi thế kinh doanh khi cổ phần hóa."
+    ]
+   ],
+   [
+    "h2",
+    "Số liệu thực tế"
+   ],
+   [
+    "p",
+    "Tại 30/9/2026, chi phí trả trước dài hạn của VNM là 1.302,6 tỷ đồng, tăng từ 982,7 tỷ một năm trước. HPG là 6.409,4 tỷ, tăng từ 4.390,5 tỷ, nhưng chỉ khoảng 2,3% tổng tài sản 283.450 tỷ. MSN là 7.890,6 tỷ, khoảng 5,3% tổng tài sản. Nguồn: báo cáo tài chính hợp nhất các quý, dữ liệu tổng hợp trên web, đơn vị tỷ đồng."
+   ],
+   [
+    "h2",
+    "Vì sao nhà đầu tư nên để ý?"
+   ],
+   [
+    "p",
+    "Phần lớn trường hợp chi phí trả trước là bình thường. Tuy nhiên có hai điểm cần xem. Thứ nhất, khoản này đã tiêu tiền thật nhưng chưa vào chi phí, nên dòng tiền có thể yếu hơn lợi nhuận trong kỳ chi. Thứ hai, nếu khoản này tăng nhanh bất thường so với quy mô hoạt động, có thể doanh nghiệp đang giữ chi phí trên bảng cân đối để lợi nhuận hiện tại đẹp hơn. Các kỳ sau phải phân bổ dần, tạo áp lực lên lợi nhuận tương lai."
+   ],
+   [
+    "p",
+    "Cách kiểm tra là đọc thuyết minh báo cáo tài chính: chi phí trả trước gồm những khoản nào, thời gian phân bổ bao lâu. Khoản thuê đất, sửa chữa nhà máy có giải thích rõ thường ít đáng lo hơn những khoản ghi chung chung \"chi phí khác chờ phân bổ\"."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Chi phí trả trước là tiền đã chi, ghi dần vào chi phí theo thời gian hưởng lợi.",
+     "Ngắn hạn phân bổ trong 12 tháng, dài hạn trên 12 tháng.",
+     "So với tổng tài sản và đọc thuyết minh nếu khoản này tăng nhanh."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Chi phí trả trước có phải là tài sản thật không?",
+    "Về kế toán là tài sản, nhưng thường không bán lại được. Nó đại diện cho lợi ích sử dụng trong tương lai."
+   ],
+   [
+    "Chi phí trả trước khác khấu hao thế nào?",
+    "Khấu hao áp dụng cho tài sản cố định. Chi phí trả trước phân bổ các khoản chi không đủ điều kiện ghi tài sản cố định. Cả hai đều chia chi phí theo thời gian."
+   ],
+   [
+    "Chi phí trả trước ảnh hưởng dòng tiền ra sao?",
+    "Tiền chi ra ngay khi trả trước, còn chi phí ghi dần. Vì vậy năm chi lớn, dòng tiền kinh doanh có thể thấp hơn lợi nhuận."
+   ]
+  ],
+  "rel": [
+   "khau-hao-la-gi",
+   "dong-tien-kinh-doanh-la-gi",
+   "bang-can-doi-ke-toan-la-gi",
+   "tai-san-ngan-han-la-gi"
+  ],
+  "add": []
+ },
+ {
+  "slug": "dau-tu-giu-den-ngay-dao-han-la-gi",
+  "kw": "đầu tư nắm giữ đến ngày đáo hạn",
+  "grp": 3,
+  "title": "Đầu tư giữ đến ngày đáo hạn là gì? Tiền gửi ẩn trên BCTC",
+  "desc": "Đầu tư nắm giữ đến ngày đáo hạn là gì, vì sao nhiều doanh nghiệp có khoản này lớn hơn cả tiền mặt. Ví dụ VNM, MWG, HPG tại 30/9/2026.",
+  "body": [
+   [
+    "p",
+    "<b>Đầu tư nắm giữ đến ngày đáo hạn</b> là các khoản doanh nghiệp đầu tư với ý định giữ đến khi đáo hạn để nhận lãi, phổ biến nhất là tiền gửi ngân hàng có kỳ hạn trên 3 tháng, ngoài ra có trái phiếu, tín phiếu. Tiền gửi kỳ hạn dưới 3 tháng thường được xếp vào tiền và tương đương tiền, còn trên 3 tháng nằm ở dòng này."
+   ],
+   [
+    "h2",
+    "Vì sao quan trọng?"
+   ],
+   [
+    "p",
+    "Nhiều người chỉ nhìn dòng tiền mặt và kết luận doanh nghiệp ít tiền. Thực tế phần lớn tiền nhàn rỗi có thể nằm ở đầu tư ngắn hạn giữ đến ngày đáo hạn. Khi tính lượng tiền thực có, nên cộng cả tiền, tương đương tiền và khoản này, rồi so với nợ vay để biết doanh nghiệp đang có tiền ròng hay nợ ròng."
+   ],
+   [
+    "h2",
+    "Số liệu tại 30/9/2026"
+   ],
+   [
+    "ul",
+    [
+     "VNM: 22.925,6 tỷ đồng, khoảng 39,6% tổng tài sản, trong khi tiền và tương đương tiền chỉ 3.612 tỷ.",
+     "MWG: 53.314,9 tỷ, khoảng 49,6% tổng tài sản, tăng từ 33.436,3 tỷ một năm trước; tiền và tương đương tiền 6.456 tỷ.",
+     "HPG: 39.273,9 tỷ, tăng từ 18.903,9 tỷ một năm trước; tiền và tương đương tiền 6.852,9 tỷ."
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: báo cáo tài chính hợp nhất các quý, dữ liệu tổng hợp trên web, đơn vị tỷ đồng."
+   ],
+   [
+    "h2",
+    "Đọc cùng các chỉ số nào?"
+   ],
+   [
+    "p",
+    "Thứ nhất, so với nợ vay. Một doanh nghiệp có tiền gửi lớn đồng thời vay nhiều có thể đang tận dụng chênh lệch kỳ hạn hoặc cần vốn lưu động theo mùa, cần đọc thuyết minh. Thứ hai, xem doanh thu hoạt động tài chính: lãi tiền gửi được ghi vào đây. Với doanh nghiệp giữ tiền gửi lớn, lãi suất huy động tăng hay giảm có thể làm lợi nhuận thay đổi đáng kể dù hoạt động lõi không đổi. Thứ ba, xem khoản này có bị dùng làm tài sản bảo đảm cho khoản vay hay không, vì khi đó tiền không hoàn toàn tự do."
+   ],
+   [
+    "h2",
+    "Ngắn hạn và dài hạn"
+   ],
+   [
+    "p",
+    "Bảng cân đối thường có hai dòng: đầu tư nắm giữ đến ngày đáo hạn ngắn hạn (đáo hạn trong 12 tháng) và dài hạn. Ví dụ VNM có thêm 402,3 tỷ dài hạn, MWG có 3.264,2 tỷ dài hạn tại 30/9/2026. Phần dài hạn kém linh hoạt hơn vì rút trước hạn thường mất lãi."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Phần lớn là tiền gửi có kỳ hạn trên 3 tháng và trái phiếu.",
+     "Khi đánh giá sức khỏe tài chính, cộng khoản này với tiền mặt rồi so với nợ vay.",
+     "Lãi tiền gửi vào doanh thu tài chính, nên lợi nhuận nhạy với lãi suất."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Đầu tư giữ đến ngày đáo hạn có rủi ro không?",
+    "Tiền gửi ngân hàng rủi ro thấp. Trái phiếu doanh nghiệp có rủi ro tín dụng, cần xem thuyết minh để biết loại tài sản."
+   ],
+   [
+    "Vì sao doanh nghiệp không trả cổ tức thay vì giữ tiền gửi?",
+    "Doanh nghiệp có thể giữ tiền cho kế hoạch đầu tư, vốn lưu động theo mùa hoặc dự phòng rủi ro. Chính sách cổ tức do đại hội cổ đông quyết định."
+   ],
+   [
+    "Khoản này khác chứng khoán kinh doanh thế nào?",
+    "Chứng khoán kinh doanh là cổ phiếu, trái phiếu mua để bán kiếm chênh lệch giá. Đầu tư giữ đến ngày đáo hạn là để nhận lãi đến hạn."
+   ]
+  ],
+  "rel": [
+   "chung-chi-tien-gui-la-gi",
+   "tai-san-ngan-han-la-gi",
+   "no-vay-tren-von-chu-so-huu",
+   "bang-can-doi-ke-toan-la-gi"
+  ],
+  "add": []
+ },
+ {
+  "slug": "bat-dong-san-dau-tu-la-gi",
+  "kw": "bất động sản đầu tư là gì",
+  "grp": 3,
+  "title": "Bất động sản đầu tư là gì? Khác hàng tồn kho bất động sản",
+  "desc": "Bất động sản đầu tư là gì trên báo cáo tài chính, khác hàng tồn kho bất động sản và tài sản cố định ra sao. Ví dụ VRE, VHM, KDH, NLG năm 2026.",
+  "body": [
+   [
+    "p",
+    "<b>Bất động sản đầu tư</b> là nhà, đất, công trình mà doanh nghiệp nắm giữ để cho thuê hoặc chờ tăng giá, không dùng cho sản xuất kinh doanh của chính mình và không để bán trong kỳ kinh doanh thông thường. Ví dụ trung tâm thương mại cho thuê mặt bằng, tòa văn phòng cho thuê."
+   ],
+   [
+    "h2",
+    "Ba cách ghi một bất động sản"
+   ],
+   [
+    "ul",
+    [
+     "Hàng tồn kho: căn hộ, đất nền xây để bán. Doanh thu ghi một lần khi bàn giao.",
+     "Tài sản cố định: nhà xưởng, văn phòng doanh nghiệp tự dùng.",
+     "Bất động sản đầu tư: tài sản cho thuê lấy tiền thuê đều đặn hoặc giữ chờ tăng giá."
+    ]
+   ],
+   [
+    "p",
+    "Cùng là bất động sản nhưng ý định sử dụng quyết định nó nằm ở đâu, và cách tạo ra lợi nhuận cũng khác hẳn."
+   ],
+   [
+    "h2",
+    "Số liệu thực tế tại 30/9/2026"
+   ],
+   [
+    "ul",
+    [
+     "VRE: bất động sản đầu tư 27.162,9 tỷ đồng, khoảng 43,5% tổng tài sản. Đây là doanh nghiệp cho thuê trung tâm thương mại nên tài sản chính nằm ở dòng này, hàng tồn kho chỉ 199,6 tỷ.",
+     "VHM: 24.345,7 tỷ, tăng từ 16.221,7 tỷ một năm trước, nhưng rất nhỏ so với hàng tồn kho hơn 247.000 tỷ. Mô hình chủ yếu là xây để bán.",
+     "KDH: 229,1 tỷ; NLG: 423,9 tỷ. Hai doanh nghiệp này cũng chủ yếu phát triển dự án để bán."
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: báo cáo tài chính hợp nhất các quý, dữ liệu tổng hợp trên web, đơn vị tỷ đồng."
+   ],
+   [
+    "h2",
+    "Ghi theo giá gốc, không theo giá thị trường"
+   ],
+   [
+    "p",
+    "Ở Việt Nam, bất động sản đầu tư cho thuê thường ghi theo giá gốc trừ <a href=\"/f0/khau-hao-la-gi.html\">khấu hao</a> lũy kế. Vì vậy giá trị sổ sách có thể thấp hơn nhiều giá thị trường, nhất là tài sản mua từ lâu ở vị trí tốt. Thuyết minh báo cáo đôi khi có thông tin giá trị hợp lý; nếu không có, nên thận trọng khi tự ước tính."
+   ],
+   [
+    "h2",
+    "Đọc doanh nghiệp cho thuê thế nào?"
+   ],
+   [
+    "p",
+    "Với doanh nghiệp có nhiều bất động sản đầu tư, doanh thu cho thuê thường đều đặn hơn doanh thu bán dự án, nhưng tăng trưởng chậm hơn. Nên xem tỷ lệ lấp đầy, giá thuê bình quân, chi phí khấu hao và lợi nhuận gộp từ cho thuê. Với doanh nghiệp bán dự án, dòng này thường chỉ là phần phụ."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Bất động sản đầu tư là tài sản cho thuê hoặc chờ tăng giá, không để bán.",
+     "Khác hàng tồn kho (để bán) và tài sản cố định (tự dùng).",
+     "Thường ghi theo giá gốc trừ khấu hao, có thể thấp hơn giá thị trường."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Bất động sản đầu tư có bị khấu hao không?",
+    "Loại nắm giữ để cho thuê được khấu hao như tài sản cố định. Loại chỉ chờ tăng giá thường không khấu hao mà xem xét suy giảm giá trị."
+   ],
+   [
+    "Doanh nghiệp có thể chuyển hàng tồn kho sang bất động sản đầu tư không?",
+    "Có, khi mục đích sử dụng thay đổi, ví dụ chuyển từ bán sang giữ để cho thuê. Thuyết minh báo cáo sẽ ghi lại việc chuyển đổi."
+   ],
+   [
+    "Bất động sản đầu tư lớn có phải tốt không?",
+    "Không tự nhiên tốt hay xấu. Nó cho dòng tiền đều nhưng cần vốn lớn; hiệu quả phụ thuộc tỷ lệ lấp đầy và giá thuê."
+   ]
+  ],
+  "rel": [
+   "doc-bctc-cong-ty-bat-dong-san",
+   "tai-san-co-dinh-la-gi",
+   "hang-ton-kho-la-gi",
+   "khau-hao-la-gi"
+  ],
+  "add": []
+ },
+ {
+  "slug": "thue-thu-nhap-hoan-lai-la-gi",
+  "kw": "thuế thu nhập hoãn lại là gì",
+  "grp": 3,
+  "title": "Thuế thu nhập hoãn lại là gì? Đọc đúng trên báo cáo tài chính",
+  "desc": "Thuế thu nhập hoãn lại là gì, tài sản thuế hoãn lại và thuế hoãn lại phải trả khác nhau thế nào, vì sao làm lợi nhuận lệch. Ví dụ VNM, MWG, KDH.",
+  "body": [
+   [
+    "p",
+    "<b>Thuế thu nhập hoãn lại</b> phát sinh vì lợi nhuận kế toán và thu nhập chịu thuế không trùng nhau về thời điểm. Có khoản kế toán ghi chi phí năm nay nhưng luật thuế chỉ cho trừ năm sau, hoặc ngược lại. Phần chênh lệch về thời điểm này tạo ra tài sản thuế hoãn lại hoặc thuế hoãn lại phải trả."
+   ],
+   [
+    "h2",
+    "Hai dòng trên bảng cân đối"
+   ],
+   [
+    "ul",
+    [
+     "Tài sản thuế thu nhập hoãn lại: doanh nghiệp đã nộp thuế sớm hơn so với lợi nhuận kế toán, sau này sẽ được trừ lại. Ví dụ khoản dự phòng đã ghi chi phí nhưng chưa được trừ khi tính thuế, hoặc lỗ tính thuế được chuyển sang năm sau.",
+     "Thuế thu nhập hoãn lại phải trả: doanh nghiệp đang nộp ít hơn so với lợi nhuận kế toán, sau này phải nộp bù. Ví dụ khấu hao nhanh cho mục đích thuế, hoặc lãi đánh giá lại tài sản khi hợp nhất."
+    ]
+   ],
+   [
+    "h2",
+    "Ảnh hưởng lên lợi nhuận"
+   ],
+   [
+    "p",
+    "Trên báo cáo kết quả kinh doanh, chi phí thuế gồm hai phần: thuế hiện hành (số phải nộp kỳ này) và thuế hoãn lại. Ví dụ quý 3/2026, VNM có chi phí thuế hiện hành 735,2 tỷ đồng, thuế hoãn lại −3,4 tỷ, tổng chi phí thuế 731,8 tỷ. Phần hoãn lại ở đây rất nhỏ nên lợi nhuận gần như không bị lệch. Nguồn: báo cáo tài chính hợp nhất các quý, dữ liệu tổng hợp trên web, đơn vị tỷ đồng."
+   ],
+   [
+    "h2",
+    "Số dư đáng chú ý tại 30/9/2026"
+   ],
+   [
+    "ul",
+    [
+     "MWG: tài sản thuế hoãn lại 771,6 tỷ, tăng từ 388,9 tỷ một năm trước.",
+     "KDH: thuế hoãn lại phải trả 1.056,1 tỷ, tăng từ 608,4 tỷ một năm trước.",
+     "VNM: tài sản thuế hoãn lại 78,1 tỷ; thuế hoãn lại phải trả 225 tỷ."
+    ]
+   ],
+   [
+    "p",
+    "Các con số này nhỏ so với tổng tài sản, nhưng sự thay đổi nhanh là gợi ý nên đọc thuyết minh để hiểu nguồn gốc chênh lệch."
+   ],
+   [
+    "h2",
+    "Khi nào cần thận trọng?"
+   ],
+   [
+    "p",
+    "Tài sản thuế hoãn lại từ lỗ lũy kế chỉ có giá trị nếu doanh nghiệp có lãi trong tương lai để khấu trừ. Nếu kinh doanh tiếp tục yếu, khoản này có thể bị ghi giảm và làm lợi nhuận giảm thêm. Ngoài ra, một quý có thuế hoãn lại âm lớn làm tổng chi phí thuế giảm, lợi nhuận sau thuế tăng mà không do hoạt động lõi. Vì vậy nên so lợi nhuận trước thuế giữa các kỳ, không chỉ nhìn lợi nhuận sau thuế."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Thuế hoãn lại sinh ra do chênh lệch thời điểm giữa kế toán và luật thuế.",
+     "Tài sản thuế hoãn lại là phần được trừ sau, thuế hoãn lại phải trả là phần nộp sau.",
+     "So lợi nhuận trước thuế khi phần thuế hoãn lại biến động mạnh."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Thuế hoãn lại có phải là tiền thật không?",
+    "Không phải dòng tiền trong kỳ. Đây là khoản điều chỉnh kế toán; tiền thuế thật đã nộp là phần thuế hiện hành."
+   ],
+   [
+    "Vì sao chi phí thuế có lúc âm?",
+    "Khi thuế hoãn lại được ghi nhận âm lớn hoặc có hoàn thuế, tổng chi phí thuế có thể âm, làm lợi nhuận sau thuế lớn hơn lợi nhuận trước thuế."
+   ],
+   [
+    "Nhà đầu tư cá nhân có cần tính lại thuế hoãn lại không?",
+    "Không cần tính lại. Chỉ cần nhận ra khi phần này làm lợi nhuận sau thuế lệch và đọc lợi nhuận trước thuế để so sánh."
+   ]
+  ],
+  "rel": [
+   "bao-cao-ket-qua-kinh-doanh-la-gi",
+   "loi-nhuan-bat-thuong-la-gi",
+   "khau-hao-la-gi",
+   "bao-cao-tai-chinh-bi-kiem-toan-dieu-chinh"
+  ],
+  "add": []
+ },
+ {
+  "slug": "tien-va-tuong-duong-tien-la-gi",
+  "kw": "tiền và tương đương tiền là gì",
+  "grp": 3,
+  "title": "Tiền và tương đương tiền là gì? Đọc đúng lượng tiền doanh nghiệp",
+  "desc": "Tiền và tương đương tiền gồm những gì, vì sao chỉ nhìn dòng này dễ đánh giá sai lượng tiền thật, cách tính tiền ròng. Ví dụ VNM, MWG, NLG năm 2026.",
+  "body": [
+   [
+    "p",
+    "<b>Tiền và các khoản tương đương tiền</b> là dòng đầu tiên trong tài sản ngắn hạn. Nó gồm tiền mặt tại quỹ, tiền gửi không kỳ hạn và các khoản đầu tư ngắn hạn có thể chuyển thành tiền dễ dàng, thời hạn gốc không quá 3 tháng, ví dụ tiền gửi kỳ hạn 1 tháng."
+   ],
+   [
+    "h2",
+    "Vì sao chỉ nhìn dòng này dễ sai?"
+   ],
+   [
+    "p",
+    "Doanh nghiệp có nhiều tiền nhàn rỗi thường gửi kỳ hạn dài hơn 3 tháng để được lãi cao hơn. Khoản đó không nằm ở tiền và tương đương tiền mà ở <a href=\"/f0/dau-tu-giu-den-ngay-dao-han-la-gi.html\">đầu tư nắm giữ đến ngày đáo hạn</a>. Tại 30/9/2026, VNM có tiền và tương đương tiền 3.612 tỷ đồng nhưng đầu tư giữ đến ngày đáo hạn ngắn hạn tới 22.925,6 tỷ. MWG có 6.456 tỷ tiền và 53.314,9 tỷ đầu tư giữ đến ngày đáo hạn. Nếu chỉ nhìn dòng tiền mặt, người đọc sẽ đánh giá thấp lượng tiền thật của hai doanh nghiệp này nhiều lần. Nguồn: báo cáo tài chính hợp nhất các quý, dữ liệu tổng hợp trên web, đơn vị tỷ đồng."
+   ],
+   [
+    "h2",
+    "Tiền ròng hay nợ ròng"
+   ],
+   [
+    "p",
+    "Cách đọc hữu ích hơn là tính tiền ròng: lấy tiền, tương đương tiền và tiền gửi có kỳ hạn, trừ đi vay và nợ thuê tài chính ngắn hạn, dài hạn. Kết quả dương nghĩa là doanh nghiệp có tiền ròng, có thể trả hết nợ vay mà vẫn còn tiền. Kết quả âm là nợ ròng, cần xem thêm khả năng trả lãi qua <a href=\"/f0/he-so-bao-phu-lai-vay-la-gi.html\">hệ số bao phủ lãi vay</a>."
+   ],
+   [
+    "h2",
+    "Tiền biến động theo quý"
+   ],
+   [
+    "p",
+    "Số dư tiền chỉ là ảnh chụp tại ngày cuối kỳ. Ví dụ NLG có 6.814,3 tỷ đồng tiền và tương đương tiền tại 31/12/2025, xuống 3.835,7 tỷ tại 30/9/2026. Việc giảm có thể do trả nợ, đầu tư dự án, chia cổ tức hoặc chuyển sang tiền gửi dài hơn. Muốn biết lý do, hãy xem <a href=\"/f0/bao-cao-luu-chuyen-tien-te-la-gi.html\">báo cáo lưu chuyển tiền tệ</a>: tiền đến từ kinh doanh, đầu tư hay tài chính."
+   ],
+   [
+    "h2",
+    "Những điểm cần lưu ý"
+   ],
+   [
+    "ul",
+    [
+     "Tiền có thể bị hạn chế sử dụng, ví dụ ký quỹ, tài khoản phong tỏa của dự án. Thuyết minh thường ghi rõ.",
+     "Doanh nghiệp có tiền lớn mà vẫn vay nhiều cần được giải thích hợp lý.",
+     "Số dư tiền cuối quý có thể được làm đẹp tạm thời; so nhiều quý để thấy xu hướng."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Tiền và tương đương tiền gồm tiền mặt, tiền gửi không kỳ hạn và khoản kỳ hạn tối đa 3 tháng.",
+     "Cộng thêm tiền gửi kỳ hạn dài hơn để thấy lượng tiền thật.",
+     "Đọc kèm nợ vay và báo cáo lưu chuyển tiền tệ."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Doanh nghiệp nhiều tiền mặt có phải luôn tốt?",
+    "Tiền nhiều giúp an toàn, nhưng nếu giữ quá nhiều mà không có kế hoạch sử dụng, hiệu quả vốn (ROE) có thể bị kéo xuống."
+   ],
+   [
+    "Tương đương tiền có rủi ro mất giá không?",
+    "Rất thấp, vì là khoản kỳ hạn ngắn, dễ chuyển thành tiền với giá trị gần như không đổi."
+   ],
+   [
+    "Ngân hàng có dòng tiền và tương đương tiền giống doanh nghiệp không?",
+    "Ngân hàng có cấu trúc báo cáo riêng, gồm tiền mặt, tiền gửi tại Ngân hàng Nhà nước và tại tổ chức tín dụng khác, nên không so trực tiếp với doanh nghiệp sản xuất."
+   ]
+  ],
+  "rel": [
+   "dau-tu-giu-den-ngay-dao-han-la-gi",
+   "bao-cao-luu-chuyen-tien-te-la-gi",
+   "tai-san-ngan-han-la-gi",
+   "no-vay-tren-von-chu-so-huu"
+  ],
+  "add": []
  }
 ]
