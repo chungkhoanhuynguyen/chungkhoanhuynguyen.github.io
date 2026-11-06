@@ -210,7 +210,7 @@ def main():
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", A])
     tmp = WORK + "/v.mp4"
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", "%dx%d" % (W, H), "-r", str(FPS), "-i", "-",
-                          "-i", A, "-pix_fmt", "yuv420p", "-c:v", "libx264", "-crf", "21", "-preset", "veryfast",
+                          "-i", A, "-pix_fmt", "yuv420p", "-c:v", "libx264", "-crf", "17", "-g", "60", "-preset", "veryfast",
                           "-af", "highpass=f=120,loudnorm=I=-14:TP=-1:LRA=7", "-c:a", "aac", "-b:a", "192k", "-shortest", tmp], stdin=subprocess.PIPE)
     fr = 0
     for i in range(len(R["canh"])):

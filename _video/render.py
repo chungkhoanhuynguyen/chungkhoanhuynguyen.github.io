@@ -223,7 +223,7 @@ def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
     _sub_plan(scenes, b, gap); SUB_ON[0] = True; _av_init(A)
     tmp = "/tmp/hl_%s.mp4" % key; FPS = dx2.FPS
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", "%dx%d" % (LW, LH), "-r", str(FPS), "-i", "-",
-                          "-pix_fmt", "yuv420p", "-c:v", "libx264", "-crf", "20", "-preset", "veryfast", tmp], stdin=subprocess.PIPE)
+                          "-pix_fmt", "yuv420p", "-c:v", "libx264", "-crf", "17", "-g", "60", "-preset", "veryfast", tmp], stdin=subprocess.PIPE)
     fr = 0
     for i, sc in enumerate(scenes):
         n = int(round(b[i+1]*FPS)) - fr
