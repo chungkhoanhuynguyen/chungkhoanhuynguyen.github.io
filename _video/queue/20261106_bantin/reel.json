@@ -1,0 +1,74 @@
+[
+ {
+  "key": "BT0611",
+  "tieu_de": "Bản tin Phong Thần 6/11: VIC kéo lùi chỉ số, dòng tiền 35/100, NVB giữ ngôi đầu",
+  "hook": [
+   "PHONG THẦN 6/11",
+   "DÒNG TIỀN 35/100"
+  ],
+  "nhan": "BẢN TIN PHONG THẦN",
+  "short_caption": "Bản tin Phong Thần 6/11: 220 mã giảm, VIC lấy đi 5,6 điểm, sức mạnh dòng tiền 35/100, NVB – MSR – MSB dẫn bảng cổ phiếu khỏe nhất.",
+  "tags": [
+   "chungkhoan",
+   "bantinchungkhoan",
+   "VNIndex",
+   "phongthan",
+   "cophieu"
+  ],
+  "keo_web": {
+   "chu_to": "BẢNG PHONG THẦN MỖI NGÀY",
+   "loi": "Bảng Phong Thần và chỉ số sức mạnh dòng tiền em cập nhật mỗi phiên trên chungkhoanhuynguyen.com. Anh chị vào xem miễn phí nhé.",
+   "loi_doc": "Bảng Phong Thần và chỉ số sức mạnh dòng tiền em cập nhật mỗi phiên trên chứng khoán Huy Nguyễn chấm com. Anh chị vào xem miễn phí nhé."
+  },
+  "cau_hoi": {
+   "chu_to": "DÒNG TIỀN QUAY LẠI?",
+   "loi": "Theo anh chị, phiên tới dòng tiền sẽ quay lại hay tiếp tục yếu đi?",
+   "loi_doc": "Theo anh chị, phiên tới dòng tiền sẽ quay lại hay tiếp tục yếu đi?"
+  },
+  "canh": [
+   {
+    "chu_to": "PHONG THẦN 6/11",
+    "loi": "Em chào anh chị, đây là Bản tin Phong Thần ngày 6/11. Hôm nay bảng điện nhìn giống vườn cà chua chín: 220 mã giảm, chỉ có 113 mã tăng.",
+    "loi_doc": "Em chào anh chị, đây là Bản tin Phong Thần ngày sáu tháng mười một. Hôm nay bảng điện nhìn giống vườn cà chua chín: hai trăm hai mươi mã giảm, chỉ có một trăm mười ba mã tăng.",
+    "anh": "Ho Chi Minh City Stock Exchange",
+    "tin": 1
+   },
+   {
+    "chu_to": "BẢNG ĐIỆN",
+    "loi": "Nhân vật chính hôm nay là VIC. Một mình VIC lấy đi khoảng 5,6 điểm của VN-Index, VHM góp thêm 2,1 điểm. Hai anh em nhà Vin hôm nay rất đồng lòng, chỉ tiếc là đồng lòng đi xuống. Chiều ngược lại, MSN, CTG và VPL cố kéo lên nhưng mỗi mã chỉ góp chưa tới nửa điểm.",
+    "loi_doc": "Nhân vật chính hôm nay là V I C. Một mình V I C lấy đi khoảng năm phẩy sáu điểm của VN-Index, V H M góp thêm hai phẩy một điểm. Hai anh em nhà Vin hôm nay rất đồng lòng, chỉ tiếc là đồng lòng đi xuống. Chiều ngược lại, M S N, C T G và V P L cố kéo lên nhưng mỗi mã chỉ góp chưa tới nửa điểm.",
+    "hinh": "hinh/do_rong.png"
+   },
+   {
+    "chu_to": "NGÀNH",
+    "loi": "Theo ngành, hàng lâu bền, dịch vụ tiêu dùng và chứng khoán là ba nhóm hiếm hoi còn giữ được màu xanh. Công nghệ giảm gần 4% và là nhóm yếu nhất phiên.",
+    "loi_doc": "Theo ngành, hàng lâu bền, dịch vụ tiêu dùng và chứng khoán là ba nhóm hiếm hoi còn giữ được màu xanh. Công nghệ giảm gần bốn phần trăm và là nhóm yếu nhất phiên.",
+    "hinh": "hinh/nganh.png"
+   },
+   {
+    "chu_to": "DÒNG TIỀN",
+    "loi": "Chỉ số sức mạnh dòng tiền trên web của em đang ở mức 35 trên 100, tức vùng trung tính và đang yếu dần. Thị trường lúc này giống quán cà phê buổi chiều: khách vẫn ngồi đông, nhưng ít ai gọi thêm ly thứ hai.",
+    "loi_doc": "Chỉ số sức mạnh dòng tiền trên web của em đang ở mức ba mươi lăm trên một trăm, tức vùng trung tính và đang yếu dần. Thị trường lúc này giống quán cà phê buổi chiều: khách vẫn ngồi đông, nhưng ít ai gọi thêm ly thứ hai.",
+    "hinh": "hinh/dong_tien.png"
+   },
+   {
+    "chu_to": "BẢNG PHONG THẦN",
+    "loi": "Còn đây là bảng Phong Thần, danh sách cổ phiếu khỏe nhất thị trường. NVB giữ ngôi đầu với mức tăng 42% trong 3 tháng. MSR đứng thứ hai, tăng 68,7% trong 3 tháng dù hôm nay điều chỉnh 2,2%. MSB giữ vị trí thứ ba.",
+    "loi_doc": "Còn đây là bảng Phong Thần, danh sách cổ phiếu khỏe nhất thị trường. N V B giữ ngôi đầu với mức tăng bốn mươi hai phần trăm trong ba tháng. M S R đứng thứ hai, tăng sáu mươi tám phẩy bảy phần trăm trong ba tháng dù hôm nay điều chỉnh hai phẩy hai phần trăm. M S B giữ vị trí thứ ba.",
+    "hinh": "hinh/top10.png"
+   },
+   {
+    "chu_to": "TIN DOANH NGHIỆP",
+    "loi": "Về tin doanh nghiệp, VPBank vừa thông qua phương án mua lại trước hạn một lô trái phiếu. Ở IDC, người có liên quan đến Tổng giám đốc đăng ký mua 4,4 triệu cổ phiếu. Người trong nhà mua vào luôn được thị trường để ý, nhưng anh chị nên xem thêm kết quả kinh doanh trước khi kết luận.",
+    "loi_doc": "Về tin doanh nghiệp, VPBank vừa thông qua phương án mua lại trước hạn một lô trái phiếu. Ở I D C, người có liên quan đến Tổng giám đốc đăng ký mua bốn phẩy bốn triệu cổ phiếu. Người trong nhà mua vào luôn được thị trường để ý, nhưng anh chị nên xem thêm kết quả kinh doanh trước khi kết luận.",
+    "anh": "Hanoi skyline"
+   },
+   {
+    "chu_to": "GÓC QUẢN TRỊ RỦI RO",
+    "loi": "Góc quản trị rủi ro hôm nay: khi dòng tiền yếu dần, em không dồn hết vốn vào một mã đang nóng. Mã đứng đầu bảng vẫn có thể điều chỉnh 5 đến 10% bất cứ lúc nào, nên điểm cắt lỗ phải có trước khi mua.",
+    "loi_doc": "Góc quản trị rủi ro hôm nay: khi dòng tiền yếu dần, em không dồn hết vốn vào một mã đang nóng. Mã đứng đầu bảng vẫn có thể điều chỉnh năm đến mười phần trăm bất cứ lúc nào, nên điểm cắt lỗ phải có trước khi mua.",
+    "anh": "Ho Chi Minh City skyline"
+   }
+  ]
+ }
+]
