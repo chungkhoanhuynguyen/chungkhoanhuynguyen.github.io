@@ -288,7 +288,9 @@ try:
     rawmp4 = r2; print(key, "sfx", len(ev), flush=True)
 except Exception as e:
     print("sfx: bo qua", e, flush=True)
-music.mix(rawmp4, b, out)
+try: _NH = json.load(open(os.path.join(HERE, "queue", sys.argv[1], "meta.json"), encoding="utf-8")).get(key, {}).get("nhac", "")
+except Exception: _NH = ""
+music.mix(rawmp4, b, out, lofi=(_NH == "lofi"))
 # 5) ảnh bìa = khung cảnh mở đầu lúc 3 giây
 try:  # ảnh bìa đồng bộ chữ to (bia.py) – anh Huy chốt 5/11
     import bia as _bia
