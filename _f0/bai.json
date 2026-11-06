@@ -1468,7 +1468,7 @@
   "body": [
    [
     "p",
-    "Cổ tức là phần lợi nhuận doanh nghiệp chia cho cổ đông. Ở Việt Nam, tỷ lệ cổ tức tính trên mệnh giá 10.000đ: cổ tức 15% nghĩa là 1.500đ mỗi cổ phiếu."
+    "Cổ tức là phần lợi nhuận doanh nghiệp chia cho cổ đông. Ở Việt Nam, tỷ lệ cổ tức thường tính trên mệnh giá 10.000 đồng: cổ tức 15% nghĩa là 1.500 đồng mỗi cổ phiếu, không tính theo giá thị trường."
    ],
    [
     "h2",
@@ -1478,16 +1478,24 @@
     "ul",
     [
      "Cổ tức tiền mặt: tiền về tài khoản, bị khấu trừ thuế thu nhập cá nhân 5%.",
-     "Cổ tức cổ phiếu: nhận thêm cổ phiếu, phần sở hữu được chia nhỏ ra, giá được điều chỉnh giảm tương ứng."
+     "Cổ tức cổ phiếu: nhận thêm cổ phiếu, phần sở hữu được chia nhỏ ra, giá được điều chỉnh giảm tương ứng, tổng giá trị chưa thay đổi."
     ]
    ],
    [
     "h2",
-    "Mốc ngày cần nhớ"
+    "Ba mốc ngày cần nhớ"
    ],
    [
     "p",
-    "Muốn nhận cổ tức, anh chị phải có tên trong danh sách cổ đông ở <b>ngày đăng ký cuối cùng</b>. Do T+2, cần mua trước ngày giao dịch không hưởng quyền. Xem lịch ở mục <a href=\"/#lichsk\">Lịch sự kiện</a> trên web."
+    "Muốn nhận cổ tức, bạn phải có tên trong danh sách cổ đông ở <b>ngày đăng ký cuối cùng</b>. Do chu kỳ thanh toán T+2, cần mua trước <b>ngày giao dịch không hưởng quyền</b> (ngày này giá tham chiếu bị điều chỉnh giảm). Mốc thứ ba là <b>ngày thực hiện</b>, khi tiền hoặc cổ phiếu về tài khoản, thường sau vài tuần. Xem <a href=\"/f0/ngay-dang-ky-cuoi-cung-la-gi.html\">ngày đăng ký cuối cùng</a>."
+   ],
+   [
+    "h2",
+    "Ví dụ tính tay"
+   ],
+   [
+    "p",
+    "Bạn có 1.000 cổ phiếu, công ty trả cổ tức tiền mặt 10% (1.000 đồng/cổ phiếu). Tiền nhận = 1.000.000 đồng, trừ thuế 5% còn 950.000 đồng. Giá hôm trước 30.000 đồng thì giá tham chiếu ngày không hưởng quyền là 29.000 đồng: bạn mất 1.000 đồng giá nhưng nhận 1.000 đồng tiền (trước thuế), nên không phải là lỗ."
    ],
    [
     "h2",
@@ -1495,7 +1503,39 @@
    ],
    [
     "p",
-    "Tỷ suất cổ tức = cổ tức tiền mặt mỗi năm ÷ giá cổ phiếu. Doanh nghiệp trả cổ tức tiền đều đặn nhiều năm thường có dòng tiền khỏe."
+    "Tỷ suất cổ tức = cổ tức tiền mặt mỗi năm ÷ giá cổ phiếu. Ví dụ cổ tức 2.000 đồng, giá 40.000 đồng thì tỷ suất là 5%. Cẩn thận: tỷ suất cao có thể do giá đã giảm mạnh hoặc khoản chia không lặp lại. Doanh nghiệp trả cổ tức đều đặn nhiều năm thường có dòng tiền khỏe. Xem <a href=\"/f0/ty-suat-co-tuc-la-gi.html\">tỷ suất cổ tức là gì</a> và <a href=\"/f0/ty-le-chi-tra-co-tuc-la-gi.html\">tỷ lệ chi trả cổ tức</a>."
+   ],
+   [
+    "h2",
+    "Cổ tức cổ phiếu và thuế"
+   ],
+   [
+    "p",
+    "Cổ tức cổ phiếu chưa bị thuế khi nhận, thuế 5% tính khi bán số cổ phiếu được chia theo quy định hiện hành. Quy định có thể thay đổi nên hãy đối chiếu thông báo chính thức. Xem thêm <a href=\"/f0/chia-tach-co-phieu-thuong-phat-hanh-them.html\">chia tách, cổ phiếu thưởng</a>."
+   ],
+   [
+    "h2",
+    "Tái đầu tư cổ tức"
+   ],
+   [
+    "p",
+    "Dùng cổ tức tiền mặt mua thêm cổ phiếu giúp số cổ phiếu tăng dần và là cách đưa lãi kép vào đầu tư. Ví dụ nhận 950.000 đồng sau thuế, nếu giá 29.000 đồng/cổ phiếu có thể mua thêm khoảng 32 cổ phiếu (chưa tính phí, dùng lô lẻ). Xem <a href=\"/f0/lai-kep-trong-dau-tu.html\">lãi kép trong đầu tư</a> và <a href=\"/f0/tai-dau-tu-co-tuc.html\">tái đầu tư cổ tức</a>."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Cổ tức tính theo % mệnh giá 10.000 đồng, không theo giá thị trường.",
+     "Muốn nhận cổ tức phải mua trước ngày giao dịch không hưởng quyền.",
+     "Giá được điều chỉnh vào ngày đó, nên đừng hiểu nhầm là bị lỗ."
+    ]
+   ],
+   [
+    "p",
+    "Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
    ]
   ],
   "faq": [
@@ -1505,37 +1545,21 @@
    ],
    [
     "Cổ tức cổ phiếu có bị thuế không?",
-    "Có, thuế 5% tính khi anh chị bán số cổ phiếu được chia."
+    "Có, thuế 5% tính khi bán số cổ phiếu được chia, theo quy định hiện hành."
+   ],
+   [
+    "Cổ tức 15% là 15% giá cổ phiếu?",
+    "Không. 15% tính trên mệnh giá 10.000 đồng, tức 1.500 đồng mỗi cổ phiếu."
    ]
   ],
   "rel": [
-   "pe-la-gi",
-   "cach-chon-co-phieu-cho-nguoi-moi",
+   "ty-suat-co-tuc-la-gi",
+   "ty-le-chi-tra-co-tuc-la-gi",
+   "ngay-giao-dich-khong-huong-quyen",
    "phi-giao-dich-va-thue-chung-khoan"
   ],
-  "grp": 3,
-  "add": [
-   [
-    "h2",
-    "Ví dụ thực tế"
-   ],
-   [
-    "p",
-    "Giả sử anh chị có 1.000 cổ phiếu A. Công ty trả cổ tức tiền mặt 10% mệnh giá, tức 1.000đ/cổ phiếu. Anh chị nhận 1 triệu đồng, trừ thuế 5% còn 950.000đ. Nếu trả cổ tức bằng cổ phiếu tỷ lệ 10%, anh chị nhận thêm 100 cổ phiếu, nhưng giá được điều chỉnh giảm tương ứng vào ngày GDKHQ. Xem thêm <a href=\"/f0/chia-tach-co-phieu-thuong-phat-hanh-them.html\">cổ phiếu thưởng và phát hành thêm</a>."
-   ],
-   [
-    "h2",
-    "Tóm lại"
-   ],
-   [
-    "ul",
-    [
-     "Cổ tức tính theo % mệnh giá 10.000đ, không theo giá thị trường.",
-     "Muốn nhận cổ tức phải mua trước ngày GDKHQ.",
-     "Cổ tức tiền mặt chịu thuế 5%; giá tham chiếu được điều chỉnh vào ngày GDKHQ."
-    ]
-   ]
-  ]
+  "add": [],
+  "grp": 3
  },
  {
   "slug": "phi-giao-dich-va-thue-chung-khoan",
@@ -4951,13 +4975,12 @@
  {
   "slug": "cach-tinh-lai-lo-co-phieu",
   "kw": "cách tính lãi lỗ cổ phiếu",
-  "grp": 2,
   "title": "Cách tính lãi lỗ cổ phiếu chính xác (có phí và thuế)",
   "desc": "Công thức tính lãi lỗ khi mua bán cổ phiếu, đã trừ phí giao dịch và thuế bán 0,1%. Ví dụ cụ thể, cách tính giá vốn khi mua nhiều lần và mức hòa vốn.",
   "body": [
    [
     "p",
-    "Nhiều người mới chỉ lấy giá bán trừ giá mua, nên tưởng lãi mà thực tế lỗ vì quên phí và thuế. Công thức đúng như sau."
+    "Nhiều người mới chỉ lấy giá bán trừ giá mua, nên tưởng lãi mà thực tế lỗ vì quên phí và thuế. Công thức đúng cần đủ ba phần: tiền mua, tiền bán thực nhận và chênh lệch giữa chúng."
    ],
    [
     "h2",
@@ -4968,16 +4991,17 @@
     [
      "Tiền mua = Giá mua × Số cổ phiếu + Phí mua.",
      "Tiền bán thực nhận = Giá bán × Số cổ phiếu − Phí bán − Thuế bán (0,1% giá trị bán).",
-     "Lãi/lỗ = Tiền bán thực nhận − Tiền mua."
+     "Lãi/lỗ = Tiền bán thực nhận − Tiền mua.",
+     "Tỷ suất = Lãi/lỗ ÷ Tiền mua."
     ]
    ],
    [
     "h2",
-    "Ví dụ"
+    "Ví dụ chi tiết"
    ],
    [
     "p",
-    "Mua 1.000 cổ phiếu giá 20.000 đồng, phí 0,15%: tiền mua = 20.000.000 + 30.000 = 20.030.000 đồng. Bán giá 21.000 đồng, phí 0,15% và thuế 0,1%: thực nhận = 21.000.000 − 31.500 − 21.000 = 20.947.500 đồng. Lãi = 917.500 đồng, khoảng 4,6%."
+    "Mua 1.000 cổ phiếu giá 20.000 đồng, phí 0,15%: tiền mua = 20.000.000 + 30.000 = 20.030.000 đồng. Bán giá 21.000 đồng, phí 0,15% và thuế 0,1%: thực nhận = 21.000.000 − 31.500 − 21.000 = 20.947.500 đồng. Lãi = 917.500 đồng, khoảng 4,6% trên tiền mua. Nếu chỉ lấy (21.000 − 20.000) × 1.000 sẽ ra 1.000.000 đồng, sai lệch gần 83.000 đồng."
    ],
    [
     "h2",
@@ -4985,34 +5009,79 @@
    ],
    [
     "p",
-    "Với phí mỗi chiều 0,15% và thuế 0,1%, giá phải tăng khoảng <b>0,4%</b> mới hòa vốn. Phí càng cao, giao dịch càng nhiều thì phần chi phí này càng ăn mòn lợi nhuận."
-   ]
-  ],
-  "faq": [
-   [
-    "Thuế bán cổ phiếu là bao nhiêu?",
-    "0,1% trên giá trị bán, kể cả khi bán lỗ."
+    "Với phí mỗi chiều 0,15% và thuế bán 0,1%, giá phải tăng khoảng <b>0,4%</b> mới hòa vốn. Mua 20.000 đồng thì cần bán khoảng 20.080 đồng trở lên. Mức phí của từng công ty chứng khoán khác nhau nên hãy thay số phí của bạn vào công thức."
    ],
    [
-    "Mua nhiều lần thì tính giá vốn thế nào?",
-    "Giá vốn bình quân = Tổng tiền đã mua (gồm phí) ÷ Tổng số cổ phiếu đang có."
-   ]
-  ],
-  "rel": [
-   "phi-giao-dich-va-thue-chung-khoan",
-   "mua-trung-binh-gia-dca",
-   "ty-le-thang-va-ty-le-loi-lo"
-  ],
-  "add": [
+    "h2",
+    "Mua nhiều lần: giá vốn bình quân"
+   ],
+   [
+    "p",
+    "Giá vốn bình quân = Tổng tiền đã mua (gồm phí) ÷ Tổng số cổ phiếu đang có. Ví dụ mua 500 cổ phiếu giá 20.000 rồi 500 cổ phiếu giá 18.000, tổng tiền khoảng 19.000.000 cộng phí, giá vốn bình quân xấp xỉ 19.000 đồng cộng phí. Xem thêm <a href=\"/f0/mua-trung-binh-gia-dca.html\">mua trung bình giá</a>."
+   ],
    [
     "h2",
     "Vì sao giao dịch nhiều dễ thua?"
    ],
    [
     "p",
-    "Mỗi vòng mua bán tốn khoảng 0,4% chi phí. Một năm 100 lệnh là khoảng 40% vốn bị phí và thuế ăn mất nếu mỗi lệnh dùng toàn bộ vốn. Đó là lý do nhà đầu tư cá nhân giao dịch quá nhiều gần như luôn thua thị trường."
+    "Mỗi vòng mua bán tốn khoảng 0,4% chi phí. Một năm 100 vòng là khoảng 40% vốn bị phí và thuế ăn mất nếu mỗi vòng dùng toàn bộ vốn. Đó là lý do nhà đầu tư cá nhân giao dịch quá nhiều thường khó thắng chính chi phí của mình. Xem <a href=\"/f0/overtrading-la-gi.html\">overtrading là gì</a>."
+   ],
+   [
+    "h2",
+    "Lưu ý"
+   ],
+   [
+    "ul",
+    [
+     "Thuế bán 0,1% tính cả khi bán lỗ.",
+     "Cổ tức tiền mặt nhận được tính riêng, bị khấu trừ thuế 5%.",
+     "Mức phí và thuế có thể thay đổi, hãy đối chiếu quy định và biểu phí hiện hành."
+    ]
+   ],
+   [
+    "h2",
+    "Bảng kiểm nhanh trước khi đặt lệnh"
+   ],
+   [
+    "ul",
+    [
+     "Giá hòa vốn của lệnh này là bao nhiêu (khoảng +0,4% so với giá mua)?",
+     "Mức lãi kỳ vọng có lớn hơn chi phí nhiều lần không?",
+     "Nếu giá giảm 10%, khoản lỗ thực tế gồm cả phí là bao nhiêu đồng?"
+    ]
+   ],
+   [
+    "p",
+    "Dùng bảng tính đơn giản với các ô giá mua, giá bán, phí, thuế để tính trước. Thói quen tính lãi lỗ có phí và thuế giúp bạn nhìn lệnh bằng con số thật thay vì cảm giác."
+   ],
+   [
+    "p",
+    "Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
    ]
-  ]
+  ],
+  "faq": [
+   [
+    "Thuế bán cổ phiếu là bao nhiêu?",
+    "0,1% trên giá trị bán, kể cả khi bán lỗ, theo quy định hiện hành."
+   ],
+   [
+    "Mua nhiều lần thì tính giá vốn thế nào?",
+    "Giá vốn bình quân = Tổng tiền đã mua (gồm phí) ÷ Tổng số cổ phiếu đang có."
+   ],
+   [
+    "Lỗ bao nhiêu phần trăm thì cần tăng bao nhiêu để hòa vốn?",
+    "Lỗ 20% cần tăng 25%, lỗ 50% cần tăng 100% mới về vốn, chưa tính phí."
+   ]
+  ],
+  "rel": [
+   "phi-giao-dich-va-thue-chung-khoan",
+   "mua-trung-binh-gia-dca",
+   "lo-bao-nhieu-phan-tram-thi-hoa-von",
+   "ty-le-thang-va-ty-le-loi-lo"
+  ],
+  "add": [],
+  "grp": 2
  },
  {
   "slug": "nen-dau-tu-chung-khoan-bao-nhieu-tien",
@@ -5342,9 +5411,8 @@
  {
   "slug": "cach-dat-lenh-mua-ban-co-phieu",
   "kw": "cách đặt lệnh mua bán cổ phiếu",
-  "grp": 2,
   "title": "Cách đặt lệnh mua bán cổ phiếu trên app cho người mới",
-  "desc": "Hướng dẫn đặt lệnh mua, bán cổ phiếu trên ứng dụng: chọn mã, loại lệnh LO, nhập giá, khối lượng theo lô 100, kiểm tra sức mua, hủy sửa lệnh.",
+  "desc": "Hướng dẫn đặt lệnh mua, bán cổ phiếu trên ứng dụng: chọn mã, lệnh LO, nhập giá, khối lượng theo lô 100, kiểm tra sức mua, sửa hủy lệnh và lỗi hay gặp.",
   "body": [
    [
     "p",
@@ -5367,6 +5435,14 @@
    ],
    [
     "h2",
+    "Ví dụ tính nhanh"
+   ],
+   [
+    "p",
+    "Muốn mua 300 cổ phiếu giá 25.000 đồng: giá trị lệnh = 300 × 25.000 = 7.500.000 đồng, chưa gồm phí giao dịch. Sức mua cần lớn hơn số này. Nếu giá thị trường đang là 25.100 đồng mà bạn đặt LO 25.000 đồng, lệnh sẽ chờ cho đến khi có người bán ở giá đó hoặc thấp hơn."
+   ],
+   [
+    "h2",
     "Đặt lệnh bán"
    ],
    [
@@ -5379,25 +5455,21 @@
    ],
    [
     "p",
-    "Lệnh chưa khớp có thể sửa giá, khối lượng hoặc hủy trong mục Sổ lệnh. Lệnh đã khớp thì không hủy được."
-   ]
-  ],
-  "faq": [
-   [
-    "Đặt lệnh rồi mà không khớp là sao?",
-    "Giá đặt chưa gặp người bán (hoặc người mua) ở mức đó. Lệnh LO chờ đến hết phiên, không khớp thì tự hủy cuối ngày."
+    "Lệnh chưa khớp có thể sửa giá, khối lượng hoặc hủy trong mục Sổ lệnh. Lệnh đã khớp thì không hủy được. Lệnh khớp một phần: phần chưa khớp vẫn có thể sửa hoặc hủy."
    ],
    [
-    "Đặt lệnh ngoài giờ giao dịch được không?",
-    "Nhiều ứng dụng cho đặt lệnh trước, lệnh sẽ được gửi vào sàn khi phiên mở cửa."
-   ]
-  ],
-  "rel": [
-   "cac-loai-lenh-chung-khoan",
-   "cach-mua-co-phieu-lan-dau",
-   "gio-giao-dich-chung-khoan"
-  ],
-  "add": [
+    "h2",
+    "Quy tắc an toàn cho người mới"
+   ],
+   [
+    "ul",
+    [
+     "Đặt thử khối lượng nhỏ để quen giao diện trước khi đặt lệnh lớn.",
+     "Luôn đọc lại màn hình xác nhận: mã, mua hay bán, giá, khối lượng.",
+     "Không đặt lệnh khi vừa nghe tin đồn mà chưa kiểm tra thông tin.",
+     "Không chia sẻ mật khẩu, mã OTP cho bất kỳ ai."
+    ]
+   ],
    [
     "h2",
     "3 lỗi người mới hay gặp"
@@ -5409,8 +5481,54 @@
      "Mua bằng lệnh thị trường lúc giá biến động mạnh, khớp giá cao hơn dự kiến.",
      "Đặt khối lượng lẻ như 150 cổ phiếu trên lô chẵn, phải tách thành 100 và 50 cổ phiếu (lô lẻ)."
     ]
+   ],
+   [
+    "h2",
+    "Khi giá chạy nhanh"
+   ],
+   [
+    "p",
+    "Trong phiên biến động mạnh, giá có thể thay đổi giữa lúc bạn nhập và lúc xác nhận lệnh. Lệnh LO bảo vệ bạn khỏi khớp ở giá xấu hơn mức đã đặt, nhưng đổi lại có thể không khớp. Đừng vội sửa giá liên tục theo cảm xúc; hãy quyết định mức giá chấp nhận được trước khi mở màn hình đặt lệnh."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Người mới nên dùng lệnh LO, đặt giá trong biên độ, khối lượng theo lô 100.",
+     "Đọc lại màn hình xác nhận trước khi bấm.",
+     "Chỉ bán được cổ phiếu đã về tài khoản."
+    ]
+   ],
+   [
+    "p",
+    "Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
    ]
-  ]
+  ],
+  "faq": [
+   [
+    "Đặt lệnh rồi mà không khớp là sao?",
+    "Giá đặt chưa gặp người bán (hoặc người mua) ở mức đó. Lệnh LO chờ đến hết phiên, không khớp thì tự hủy cuối ngày."
+   ],
+   [
+    "Đặt lệnh ngoài giờ giao dịch được không?",
+    "Nhiều ứng dụng cho đặt lệnh trước, lệnh sẽ được gửi vào sàn khi phiên mở cửa."
+   ],
+   [
+    "Lô lẻ đặt thế nào?",
+    "Lô lẻ (1–99 cổ phiếu) đặt ở bảng giao dịch lô lẻ riêng, giá có thể chênh so với bảng lô chẵn."
+   ]
+  ],
+  "rel": [
+   "cac-loai-lenh-chung-khoan",
+   "cach-mua-co-phieu-lan-dau",
+   "gio-giao-dich-chung-khoan",
+   "lo-chan-lo-le"
+  ],
+  "add": [],
+  "grp": 2
  },
  {
   "slug": "co-phieu-quy-la-gi",
@@ -23925,5 +24043,538 @@
    ]
   ],
   "grp": 8
+ },
+ {
+  "slug": "ebit-la-gi",
+  "kw": "EBIT là gì",
+  "grp": 3,
+  "title": "EBIT là gì? Lợi nhuận hoạt động và biên EBIT cho người mới",
+  "desc": "EBIT là lợi nhuận trước lãi vay và thuế, cho thấy doanh nghiệp kiếm tiền từ hoạt động chính tốt đến đâu. Công thức, ví dụ tính và cách đọc biên EBIT.",
+  "body": [
+   [
+    "p",
+    "<b>EBIT</b> (Earnings Before Interest and Taxes) là lợi nhuận trước lãi vay và thuế. Chỉ số này trả lời câu hỏi: nếu bỏ qua cách doanh nghiệp vay nợ và mức thuế phải nộp, thì riêng hoạt động kinh doanh cốt lõi tạo ra bao nhiêu lợi nhuận."
+   ],
+   [
+    "h2",
+    "Công thức tính EBIT"
+   ],
+   [
+    "ul",
+    [
+     "EBIT = Lợi nhuận trước thuế + Chi phí lãi vay.",
+     "Hoặc: EBIT = Doanh thu thuần − Giá vốn − Chi phí bán hàng − Chi phí quản lý doanh nghiệp (cách tính từ trên xuống, gần với lợi nhuận từ hoạt động kinh doanh).",
+     "Biên EBIT = EBIT ÷ Doanh thu thuần."
+    ]
+   ],
+   [
+    "p",
+    "Cả hai cách cho kết quả gần nhau nhưng không hoàn toàn bằng, vì cách thứ nhất còn gồm doanh thu tài chính và lợi nhuận khác. Khi so sánh, hãy dùng cùng một cách cho mọi doanh nghiệp."
+   ],
+   [
+    "h2",
+    "Ví dụ tính tay"
+   ],
+   [
+    "p",
+    "Một công ty có doanh thu 1.000 tỷ đồng, lợi nhuận trước thuế 120 tỷ đồng, chi phí lãi vay 30 tỷ đồng. EBIT = 120 + 30 = 150 tỷ đồng, biên EBIT = 150 ÷ 1.000 = 15%. Một đối thủ cùng ngành có doanh thu 1.000 tỷ, lợi nhuận trước thuế 140 tỷ, gần như không vay. EBIT của đối thủ khoảng 140 tỷ, biên 14%. Nhìn lợi nhuận trước thuế thì công ty thứ hai trông tốt hơn, nhưng xét hoạt động cốt lõi thì công ty thứ nhất kinh doanh hiệu quả hơn một chút, chỉ là gánh lãi vay nặng hơn."
+   ],
+   [
+    "h2",
+    "EBIT dùng để làm gì"
+   ],
+   [
+    "ul",
+    [
+     "So sánh hiệu quả kinh doanh giữa các doanh nghiệp có mức nợ khác nhau.",
+     "Tính <a href=\"/f0/he-so-bao-phu-lai-vay-la-gi.html\">hệ số bảo phủ lãi vay</a> = EBIT ÷ Chi phí lãi vay, để xem doanh nghiệp có đủ sức trả lãi không.",
+     "Làm nền cho chỉ số <a href=\"/f0/ev-ebitda-la-gi.html\">EV/EBITDA</a> khi định giá.",
+     "Theo dõi xu hướng biên EBIT qua nhiều quý để xem lợi thế cạnh tranh có giữ được không."
+    ]
+   ],
+   [
+    "h2",
+    "EBIT khác EBITDA thế nào"
+   ],
+   [
+    "p",
+    "EBITDA cộng thêm khấu hao vào EBIT. Với doanh nghiệp nhiều nhà máy, máy móc như thép, điện, xi măng, khấu hao rất lớn nên EBITDA cao hơn EBIT đáng kể. Với doanh nghiệp bán lẻ, phần mềm, khoảng cách nhỏ hơn. Xem thêm <a href=\"/f0/khau-hao-la-gi.html\">khấu hao là gì</a>."
+   ],
+   [
+    "h2",
+    "Những điểm cần cẩn thận"
+   ],
+   [
+    "ul",
+    [
+     "EBIT có thể bị đẩy lên bởi lợi nhuận khác hoặc lãi thanh lý tài sản, hãy tách khoản không lặp lại.",
+     "Không dùng EBIT cho ngân hàng, vì lãi vay là hoạt động chính chứ không phải chi phí tài chính.",
+     "So sánh biên EBIT trong cùng ngành; bán lẻ biên mỏng, phần mềm biên dày là chuyện bình thường."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "EBIT là lợi nhuận từ hoạt động chính, chưa trừ lãi vay và thuế.",
+     "Biên EBIT giúp so sánh doanh nghiệp có cấu trúc nợ khác nhau.",
+     "Đọc EBIT cùng chi phí lãi vay và dòng tiền kinh doanh, không đọc riêng lẻ."
+    ]
+   ],
+   [
+    "p",
+    "Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "EBIT có giống lợi nhuận gộp không?",
+    "Không. Lợi nhuận gộp chỉ trừ giá vốn; EBIT trừ thêm chi phí bán hàng và quản lý."
+   ],
+   [
+    "Biên EBIT bao nhiêu là tốt?",
+    "Tùy ngành. Nên so với các doanh nghiệp cùng ngành và với lịch sử của chính doanh nghiệp."
+   ],
+   [
+    "Có dùng EBIT cho ngân hàng được không?",
+    "Không nên, vì với ngân hàng lãi vay là hoạt động kinh doanh chính."
+   ]
+  ],
+  "rel": [
+   "bien-loi-nhuan-gop-la-gi",
+   "bien-loi-nhuan-rong-la-gi",
+   "ev-ebitda-la-gi",
+   "he-so-bao-phu-lai-vay-la-gi"
+  ],
+  "add": []
+ },
+ {
+  "slug": "chung-chi-tien-gui-la-gi",
+  "kw": "chứng chỉ tiền gửi là gì",
+  "grp": 6,
+  "title": "Chứng chỉ tiền gửi là gì? So với gửi tiết kiệm và cổ phiếu",
+  "desc": "Chứng chỉ tiền gửi là giấy tờ có giá do ngân hàng phát hành để huy động vốn. Đặc điểm, ưu nhược điểm, rủi ro và so sánh với gửi tiết kiệm, cổ phiếu.",
+  "body": [
+   [
+    "p",
+    "<b>Chứng chỉ tiền gửi</b> (CCTG) là giấy tờ có giá do ngân hàng hoặc tổ chức tín dụng phát hành để huy động vốn, có kỳ hạn và lãi suất xác định từ đầu. Về bản chất, người mua đang cho ngân hàng vay tiền trong một khoảng thời gian, giống gửi tiết kiệm nhưng hình thức và điều kiện khác."
+   ],
+   [
+    "h2",
+    "Đặc điểm chính"
+   ],
+   [
+    "ul",
+    [
+     "Kỳ hạn thường từ vài tháng đến vài năm.",
+     "Lãi suất cố định hoặc thả nổi, công bố trong điều kiện phát hành; nhiều đợt có lãi cao hơn tiết kiệm cùng kỳ hạn.",
+     "Có thể không được rút trước hạn, hoặc rút trước chỉ hưởng lãi thấp; một số loại được chuyển nhượng cho người khác.",
+     "Mệnh giá và số tiền tối thiểu tùy từng đợt phát hành."
+    ]
+   ],
+   [
+    "h2",
+    "So với gửi tiết kiệm"
+   ],
+   [
+    "p",
+    "Gửi tiết kiệm linh hoạt hơn: rút trước hạn thường vẫn được, chỉ chịu lãi không kỳ hạn. Chứng chỉ tiền gửi đổi tính linh hoạt lấy lãi suất cao hơn một chút. Cần đọc kỹ điều kiện bảo hiểm tiền gửi: không phải mọi loại giấy tờ có giá đều được bảo hiểm như sổ tiết kiệm, nên hãy hỏi rõ ngân hàng và đọc văn bản chính thức."
+   ],
+   [
+    "h2",
+    "So với cổ phiếu"
+   ],
+   [
+    "p",
+    "Cổ phiếu là phần sở hữu doanh nghiệp, lợi nhuận không cố định và giá có thể giảm mạnh. Chứng chỉ tiền gửi là khoản cho vay, thu nhập biết trước nhưng không hưởng phần tăng trưởng. Ví dụ giả định: 100 triệu đồng mua chứng chỉ lãi 6%/năm, sau một năm nhận khoảng 6 triệu đồng tiền lãi, không hơn không kém. Cùng số tiền vào cổ phiếu có thể lãi nhiều hơn hoặc lỗ, tùy doanh nghiệp và thời điểm."
+   ],
+   [
+    "h2",
+    "Rủi ro cần biết"
+   ],
+   [
+    "ul",
+    [
+     "Rủi ro thanh khoản: cần tiền gấp có thể không rút được hoặc mất phần lớn lãi.",
+     "Rủi ro tổ chức phát hành: phụ thuộc sức khỏe tài chính của ngân hàng.",
+     "Rủi ro lạm phát: lãi suất cố định có thể thấp hơn lạm phát nếu giá cả tăng nhanh.",
+     "Rủi ro nhầm sản phẩm: phân biệt rõ chứng chỉ tiền gửi với trái phiếu doanh nghiệp hay sản phẩm bảo hiểm được giới thiệu tại quầy."
+    ]
+   ],
+   [
+    "h2",
+    "Ai nên quan tâm"
+   ],
+   [
+    "p",
+    "Phù hợp với khoản tiền chắc chắn chưa dùng tới trong suốt kỳ hạn, cần thu nhập ổn định. Với nhà đầu tư cổ phiếu, chứng chỉ tiền gửi có thể là phần an toàn trong danh mục, giúp giảm biến động tổng thể. Xem thêm <a href=\"/f0/tich-san-co-phieu-hay-gui-tiet-kiem.html\">tích sản cổ phiếu hay gửi tiết kiệm</a>."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Chứng chỉ tiền gửi là khoản cho ngân hàng vay có kỳ hạn, lãi biết trước.",
+     "Đổi tính linh hoạt lấy lãi suất cao hơn tiết kiệm một chút.",
+     "Đọc kỹ điều kiện rút trước hạn và bảo hiểm tiền gửi trước khi mua."
+    ]
+   ],
+   [
+    "p",
+    "Nội dung chỉ mang tính giáo dục, không phải khuyến nghị đầu tư."
+   ]
+  ],
+  "faq": [
+   [
+    "Chứng chỉ tiền gửi có được rút trước hạn không?",
+    "Tùy điều kiện từng đợt phát hành; nhiều loại không cho rút trước hoặc chỉ hưởng lãi thấp."
+   ],
+   [
+    "Chứng chỉ tiền gửi có an toàn hơn cổ phiếu không?",
+    "Biến động giá thấp hơn nhiều, nhưng vẫn có rủi ro thanh khoản và rủi ro tổ chức phát hành."
+   ],
+   [
+    "Có phải đóng thuế lãi chứng chỉ tiền gửi không?",
+    "Cần đối chiếu quy định thuế hiện hành cho từng loại giấy tờ có giá; hỏi rõ ngân hàng khi mua."
+   ]
+  ],
+  "rel": [
+   "trai-phieu-la-gi",
+   "trai-phieu-chinh-phu-la-gi",
+   "tich-san-co-phieu-hay-gui-tiet-kiem"
+  ],
+  "add": []
+ },
+ {
+  "slug": "tich-san-cho-sinh-vien",
+  "kw": "tích sản cho sinh viên",
+  "grp": 7,
+  "title": "Tích sản cho sinh viên: bắt đầu với 1 triệu mỗi tháng",
+  "desc": "Sinh viên có nên tích sản cổ phiếu? Cách bắt đầu với 1 triệu đồng mỗi tháng, ví dụ lãi kép 5 và 10 năm, quỹ dự phòng và những sai lầm cần tránh.",
+  "body": [
+   [
+    "p",
+    "Sinh viên có lợi thế lớn nhất trong đầu tư mà người đi làm lâu năm không mua lại được: <b>thời gian</b>. Tích sản là góp đều một khoản nhỏ mỗi tháng vào tài sản sinh lời, giữ lâu dài và để lãi kép làm việc. Số tiền ban đầu không cần lớn, quan trọng là đều đặn."
+   ],
+   [
+    "h2",
+    "Trước khi bắt đầu"
+   ],
+   [
+    "ul",
+    [
+     "Ưu tiên chi phí học tập và sinh hoạt; chỉ dùng tiền thật sự dư.",
+     "Có quỹ dự phòng tối thiểu 1–2 tháng chi tiêu trong tài khoản tiết kiệm.",
+     "Không vay tiền, không dùng margin để tích sản.",
+     "Đủ 18 tuổi để tự <a href=\"/f0/mo-tai-khoan-chung-khoan-cho-sinh-vien.html\">mở tài khoản chứng khoán</a> đứng tên mình."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ lãi kép với 1 triệu mỗi tháng"
+   ],
+   [
+    "p",
+    "Giả định góp 1 triệu đồng vào cuối mỗi tháng, lợi suất tính lãi kép theo tháng (lợi suất năm chia 12):"
+   ],
+   [
+    "ul",
+    [
+     "5 năm (góp 60 triệu): lợi suất 6%/năm thành khoảng 69,8 triệu; 10%/năm thành khoảng 77,4 triệu.",
+     "10 năm (góp 120 triệu): 6%/năm thành khoảng 163,9 triệu; 10%/năm thành khoảng 204,8 triệu."
+    ]
+   ],
+   [
+    "p",
+    "Đây là phép tính giả định, không phải cam kết lợi nhuận. Thực tế cổ phiếu có năm giảm, năm tăng; điều phép tính cho thấy là khoảng cách giữa tiền góp và tài sản cuối kỳ rộng ra rất nhanh ở những năm sau. Bắt đầu năm 20 tuổi thay vì 30 tuổi là thêm 10 năm cho lãi kép."
+   ],
+   [
+    "h2",
+    "Cách làm đơn giản"
+   ],
+   [
+    "ol",
+    [
+     "Chọn một ngày cố định mỗi tháng, ví dụ ngày nhận tiền làm thêm.",
+     "Chọn ít mã, doanh nghiệp lớn, lợi nhuận ổn định, có trả cổ tức; hoặc chứng chỉ quỹ, ETF để đa dạng hóa.",
+     "Mua đều đặn, không cố đoán đáy, dùng lô lẻ nếu số tiền nhỏ.",
+     "Cổ tức nhận được thì tái đầu tư.",
+     "Mỗi năm xem lại một lần, không xem giá mỗi giờ."
+    ]
+   ],
+   [
+    "h2",
+    "Sai lầm sinh viên hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "Nghe hội nhóm, mua mã đang tăng nóng rồi bỏ cuộc khi giảm.",
+     "Giao dịch liên tục, phí và thuế ăn mòn vốn nhỏ.",
+     "Dồn toàn bộ tiền vào một mã.",
+     "Dừng góp khi thị trường giảm, đúng lúc mua được giá thấp hơn."
+    ]
+   ],
+   [
+    "p",
+    "Thông điệp xuyên suốt của tích sản: phương pháp không sợ sai, chỉ sợ theo giữa chừng rồi đổi ý."
+   ],
+   [
+    "p",
+    "Muốn xem số liệu thật của các mã ngân hàng hay được chọn để tích sản, tham khảo <a href=\"/bao-cao-2026.html#tichsan\">bảng tích sản ngân hàng</a> (kết quả quá khứ, không phải cam kết lợi nhuận)."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Thời gian là tài sản lớn nhất của sinh viên.",
+     "1 triệu mỗi tháng, đều đặn, quan trọng hơn số tiền lớn một lần.",
+     "Có quỹ dự phòng, không vay, giữ kỷ luật khi thị trường giảm."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Sinh viên chưa có thu nhập có nên tích sản?",
+    "Nên ưu tiên học tập và quỹ dự phòng trước; khi có khoản dư đều đặn mới bắt đầu."
+   ],
+   [
+    "Số tiền nhỏ có mua được cổ phiếu không?",
+    "Có, bằng lô lẻ (dưới 100 cổ phiếu) hoặc chứng chỉ quỹ."
+   ],
+   [
+    "Bao lâu nên xem lại danh mục?",
+    "Mỗi quý hoặc mỗi năm một lần là đủ cho tích sản dài hạn."
+   ]
+  ],
+  "rel": [
+   "tich-san-chung-khoan-la-gi",
+   "lai-kep-trong-dau-tu",
+   "mo-tai-khoan-chung-khoan-cho-sinh-vien",
+   "bat-dau-dau-tu-som"
+  ],
+  "add": []
+ },
+ {
+  "slug": "co-phieu-ngan-hang-la-gi",
+  "kw": "cổ phiếu ngân hàng",
+  "grp": 8,
+  "title": "Cổ phiếu ngân hàng là gì? Cách đọc P/B, ROE nhóm ngân hàng",
+  "desc": "Cổ phiếu ngân hàng là gì, vì sao chiếm tỷ trọng lớn trên VN-Index, các chỉ số cần xem (P/B, ROE, nợ xấu, NIM) và ví dụ số liệu ngày 6/11/2026.",
+  "body": [
+   [
+    "p",
+    "Cổ phiếu ngân hàng là cổ phiếu của các ngân hàng thương mại niêm yết. Đây là nhóm có vốn hóa lớn nhất thị trường Việt Nam, nên biến động của nhóm này ảnh hưởng mạnh tới <a href=\"/f0/vn-index-la-gi.html\">VN-Index</a>. Ngân hàng kiếm tiền chủ yếu từ chênh lệch lãi cho vay và lãi huy động, cộng thêm phí dịch vụ."
+   ],
+   [
+    "h2",
+    "Vì sao đọc ngân hàng khác doanh nghiệp sản xuất"
+   ],
+   [
+    "p",
+    "Ngân hàng dùng đòn bẩy rất cao: vốn chủ sở hữu chỉ chiếm khoảng một phần mười tổng tài sản. Lợi nhuận phụ thuộc lớn vào chất lượng khoản vay và chi phí dự phòng. Vì vậy với ngân hàng, P/B và ROE thường được dùng nhiều hơn P/E, kèm các chỉ số chất lượng tài sản."
+   ],
+   [
+    "h2",
+    "Các chỉ số cần xem"
+   ],
+   [
+    "ul",
+    [
+     "<a href=\"/f0/pb-la-gi.html\">P/B</a>: giá so với giá trị sổ sách.",
+     "<a href=\"/f0/roe-eps-la-gi.html\">ROE</a>: lợi nhuận trên vốn chủ, đo hiệu quả.",
+     "<a href=\"/f0/nim-la-gi.html\">NIM</a>: biên lãi ròng.",
+     "<a href=\"/f0/no-xau-ngan-hang-la-gi.html\">Nợ xấu</a> và <a href=\"/f0/bao-phu-no-xau-la-gi.html\">bao phủ nợ xấu</a>.",
+     "<a href=\"/f0/casa-la-gi.html\">CASA</a> và <a href=\"/f0/car-ngan-hang-la-gi.html\">CAR</a>."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ số liệu (dữ liệu web ngày 6/11/2026)"
+   ],
+   [
+    "ul",
+    [
+     "VCB: P/B 1,79 lần, ROE 17,6%.",
+     "CTG: P/B 1,19 lần, ROE 22,5%.",
+     "MBB: P/B 1,25 lần, ROE 21,8%.",
+     "ACB: P/B 1,15 lần, ROE 16,5%."
+    ]
+   ],
+   [
+    "p",
+    "VCB có ROE thấp hơn CTG nhưng P/B cao hơn: thị trường trả giá cao hơn cho chất lượng tài sản, bao phủ nợ xấu và tính ổn định. Đây là ví dụ cho thấy P/B thấp chưa chắc rẻ và P/B cao chưa chắc đắt; cần đặt P/B cạnh ROE và chất lượng tài sản. Số liệu thay đổi theo giá mỗi phiên, xem cập nhật ở trang mã như <a href=\"/ma/VCB.html\">/ma/VCB.html</a>."
+   ],
+   [
+    "h2",
+    "Chu kỳ của ngân hàng"
+   ],
+   [
+    "p",
+    "Khi kinh tế tốt, tín dụng tăng, nợ xấu giảm, lợi nhuận tăng nhanh. Khi kinh tế khó, nợ xấu tăng, ngân hàng phải trích dự phòng, lợi nhuận chững lại. Xem thêm <a href=\"/f0/chu-ky-co-phieu-ngan-hang.html\">chu kỳ cổ phiếu ngân hàng</a>."
+   ],
+   [
+    "h2",
+    "Rủi ro cần biết"
+   ],
+   [
+    "ul",
+    [
+     "Nợ xấu ẩn: khoản vay cơ cấu lại hoặc nợ nhóm 2 tăng.",
+     "Phát hành thêm cổ phiếu làm pha loãng.",
+     "Biến động lãi suất làm NIM co lại."
+    ]
+   ],
+   [
+    "h2",
+    "Người mới nên bắt đầu thế nào"
+   ],
+   [
+    "p",
+    "Đọc báo cáo tài chính của ba đến năm ngân hàng lớn trong cùng một quý, ghi lại P/B, ROE, nợ xấu, bao phủ nợ xấu vào một bảng. Theo dõi các chỉ số đó qua bốn đến tám quý sẽ thấy ngân hàng nào ổn định, ngân hàng nào biến động. Đó là nền tảng tốt hơn nhiều so với chạy theo tin tức hằng ngày."
+   ],
+   [
+    "p",
+    "Muốn xem số liệu thật của các mã ngân hàng hay được chọn để tích sản, tham khảo <a href=\"/bao-cao-2026.html#tichsan\">bảng tích sản ngân hàng</a> (kết quả quá khứ, không phải cam kết lợi nhuận)."
+   ],
+   [
+    "p",
+    "Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Vì sao cổ phiếu ngân hàng hay được chọn để tích sản?",
+    "Vì lợi nhuận lớn, nhiều ngân hàng có ROE cao và trả cổ tức, nhưng vẫn cần chọn ngân hàng có chất lượng tài sản tốt."
+   ],
+   [
+    "P/B ngân hàng bao nhiêu là rẻ?",
+    "Không có mức chung; cần so P/B với ROE và chất lượng tài sản của từng ngân hàng."
+   ],
+   [
+    "Có nên dùng P/E cho ngân hàng không?",
+    "Có thể tham khảo, nhưng P/B và ROE thường phản ánh tốt hơn với nhóm ngân hàng."
+   ]
+  ],
+  "rel": [
+   "dinh-gia-co-phieu-ngan-hang-pb-roe",
+   "doc-bctc-ngan-hang",
+   "chu-ky-co-phieu-ngan-hang",
+   "tich-san-co-phieu-ngan-hang"
+  ],
+  "add": []
+ },
+ {
+  "slug": "bao-cao-tai-chinh-bi-kiem-toan-dieu-chinh",
+  "kw": "báo cáo tài chính bị kiểm toán điều chỉnh",
+  "grp": 3,
+  "title": "BCTC bị kiểm toán điều chỉnh: vì sao lãi trước, lỗ sau?",
+  "desc": "Vì sao lợi nhuận trên báo cáo tự lập và báo cáo sau kiểm toán có thể chênh lệch lớn, các khoản hay bị điều chỉnh và cách nhà đầu tư tự kiểm tra.",
+  "body": [
+   [
+    "p",
+    "Doanh nghiệp niêm yết công bố báo cáo tài chính quý do tự lập, bán niên được soát xét và năm được kiểm toán. Có lúc lợi nhuận sau kiểm toán khác xa số tự lập, thậm chí từ lãi chuyển thành lỗ. Hiểu vì sao xảy ra giúp nhà đầu tư không bị bất ngờ."
+   ],
+   [
+    "h2",
+    "Các khoản hay bị điều chỉnh"
+   ],
+   [
+    "ul",
+    [
+     "Trích lập dự phòng: phải thu khó đòi, hàng tồn kho giảm giá, đầu tư tài chính.",
+     "Ghi nhận doanh thu: doanh thu ghi sớm khi chưa đủ điều kiện, nhất là bất động sản, xây dựng.",
+     "Chi phí lãi vay được vốn hóa hay phải tính vào chi phí kỳ.",
+     "Lợi thế thương mại, công ty liên kết, khoản đầu tư bị giảm giá trị."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ giả định"
+   ],
+   [
+    "p",
+    "Một doanh nghiệp tự lập báo cáo năm lãi 50 tỷ đồng. Kiểm toán viên yêu cầu trích thêm 40 tỷ dự phòng phải thu khó đòi và hủy ghi nhận 30 tỷ doanh thu chưa đủ điều kiện (biên lợi nhuận phần này 50%, tức 15 tỷ lợi nhuận). Lợi nhuận sau kiểm toán còn 50 − 40 − 15 = −5 tỷ đồng: từ lãi thành lỗ, dù tiền mặt của doanh nghiệp không đổi."
+   ],
+   [
+    "h2",
+    "Tín hiệu cần chú ý"
+   ],
+   [
+    "ul",
+    [
+     "Chênh lệch lợi nhuận trước và sau kiểm toán lớn, doanh nghiệp phải giải trình theo quy định.",
+     "Ý kiến kiểm toán không phải chấp nhận toàn phần: xem <a href=\"/f0/kiem-toan-ngoai-tru-la-gi.html\">kiểm toán ngoại trừ</a>.",
+     "Đổi công ty kiểm toán liên tục, nộp báo cáo chậm.",
+     "Phải thu, tồn kho tăng nhanh hơn doanh thu nhiều kỳ liền."
+    ]
+   ],
+   [
+    "h2",
+    "Nhà đầu tư tự kiểm tra thế nào"
+   ],
+   [
+    "ol",
+    [
+     "So lợi nhuận với <a href=\"/f0/dong-tien-kinh-doanh-la-gi.html\">dòng tiền kinh doanh</a>: lãi đều mà dòng tiền âm kéo dài là điểm cần hỏi.",
+     "Đọc thuyết minh về dự phòng, phải thu quá hạn, hàng tồn kho.",
+     "Đọc văn bản giải trình chênh lệch và ý kiến kiểm toán khi báo cáo năm công bố.",
+     "Không kết luận chỉ từ một quý tự lập đẹp bất thường."
+    ]
+   ],
+   [
+    "h2",
+    "Lịch công bố cần nhớ"
+   ],
+   [
+    "p",
+    "Báo cáo quý công bố trong khoảng một tháng sau khi quý kết thúc, báo cáo bán niên soát xét vào quý 3, báo cáo năm kiểm toán thường trong quý 1 năm sau. Vì vậy số lợi nhuận cả năm mà nhiều người dùng từ cuối tháng 1 thực chất là số tự lập, có thể còn thay đổi khi báo cáo kiểm toán ra đời."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Báo cáo tự lập có thể bị điều chỉnh khi kiểm toán, chủ yếu ở dự phòng và ghi nhận doanh thu.",
+     "Lợi nhuận đi cùng dòng tiền kinh doanh thì đáng tin hơn.",
+     "Ý kiến kiểm toán và giải trình chênh lệch là tài liệu nên đọc."
+    ]
+   ],
+   [
+    "p",
+    "Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Báo cáo soát xét khác kiểm toán thế nào?",
+    "Soát xét (bán niên) mức độ đảm bảo thấp hơn kiểm toán (năm), kiểm tra ít thủ tục hơn."
+   ],
+   [
+    "Chênh lệch sau kiểm toán có phải gian lận không?",
+    "Không nhất thiết; có thể do khác biệt cách ghi nhận, nhưng chênh lệch lớn và lặp lại là tín hiệu cần thận trọng."
+   ],
+   [
+    "Báo cáo quý có được kiểm toán không?",
+    "Thường không; báo cáo quý do doanh nghiệp tự lập."
+   ]
+  ],
+  "rel": [
+   "kiem-toan-ngoai-tru-la-gi",
+   "loi-nhuan-bat-thuong-la-gi",
+   "dong-tien-kinh-doanh-la-gi",
+   "khoan-phai-thu-khach-hang-la-gi"
+  ],
+  "add": []
  }
 ]
