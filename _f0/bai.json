@@ -3,11 +3,11 @@
   "slug": "chung-khoan-la-gi",
   "kw": "chứng khoán là gì",
   "title": "Chứng khoán là gì? Giải thích dễ hiểu cho người mới bắt đầu (F0)",
-  "desc": "Chứng khoán là gì, cổ phiếu là gì, vì sao giá lên xuống và người mới nên bắt đầu từ đâu. Giải thích dễ hiểu bằng ví dụ thực tế trên thị trường Việt Nam.",
+  "desc": "Chứng khoán là gì, cổ phiếu là gì, vì sao giá lên xuống, ba sàn ở Việt Nam và lộ trình bắt đầu cho người mới. Giải thích bằng ví dụ thực tế.",
   "body": [
    [
     "p",
-    "Chứng khoán là giấy tờ (nay chủ yếu là dữ liệu điện tử) chứng nhận quyền sở hữu hoặc quyền đòi nợ của người nắm giữ. Ở Việt Nam, khi nói \"chơi chứng khoán\", đa số người ta nói về <b>cổ phiếu</b>: mua cổ phiếu là mua một phần nhỏ của doanh nghiệp."
+    "Chứng khoán là giấy tờ, nay chủ yếu là dữ liệu điện tử, chứng nhận quyền sở hữu hoặc quyền đòi nợ của người nắm giữ. Ở Việt Nam, khi nói chơi chứng khoán, đa số người ta nói về <b>cổ phiếu</b>: mua cổ phiếu là mua một phần nhỏ của doanh nghiệp."
    ],
    [
     "h2",
@@ -15,7 +15,20 @@
    ],
    [
     "p",
-    "Một công ty có 1 tỷ cổ phiếu, anh chị mua 1.000 cổ phiếu tức là sở hữu một phần triệu công ty. Công ty làm ăn có lãi thì phần lãi đó thuộc về cổ đông, có thể được chia cổ tức hoặc giữ lại để mở rộng kinh doanh, làm giá trị doanh nghiệp tăng lên."
+    "Một công ty có 100 triệu cổ phiếu, anh chị mua 1.000 cổ phiếu tức là sở hữu 0,001% công ty. Công ty làm ăn có lãi thì phần lãi thuộc về cổ đông: có thể được chia cổ tức, hoặc được giữ lại để mở rộng kinh doanh làm giá trị doanh nghiệp tăng lên. Nếu công ty lãi 200 tỷ đồng, phần lãi tương ứng với 1.000 cổ phiếu là 2 triệu đồng."
+   ],
+   [
+    "h2",
+    "Các loại chứng khoán"
+   ],
+   [
+    "ul",
+    [
+     "Cổ phiếu: quyền sở hữu một phần doanh nghiệp.",
+     "Trái phiếu: khoản cho vay, người nắm giữ nhận lãi và gốc.",
+     "Chứng chỉ quỹ, ETF: góp vốn vào quỹ đầu tư nhiều tài sản.",
+     "Chứng quyền, phái sinh: sản phẩm phức tạp hơn, rủi ro cao, người mới nên tìm hiểu kỹ trước."
+    ]
    ],
    [
     "h2",
@@ -32,10 +45,18 @@
    [
     "ul",
     [
-     "HOSE (Sở Giao dịch Chứng khoán TP.HCM): doanh nghiệp lớn, biên độ dao động ±7% mỗi phiên.",
-     "HNX (Sở Giao dịch Chứng khoán Hà Nội): biên độ ±10%.",
-     "UPCoM: thị trường cho doanh nghiệp chưa niêm yết, biên độ ±15%."
+     "HOSE: doanh nghiệp lớn, biên độ dao động ±7% mỗi phiên.",
+     "HNX: biên độ ±10%.",
+     "UPCoM: thị trường cho doanh nghiệp đại chúng chưa niêm yết, biên độ ±15%."
     ]
+   ],
+   [
+    "h2",
+    "Rủi ro cần biết"
+   ],
+   [
+    "p",
+    "Giá cổ phiếu có thể giảm mạnh và anh chị có thể mất một phần hoặc toàn bộ số tiền bỏ ra. Vì vậy chỉ nên dùng tiền nhàn rỗi, không vay mượn để đầu tư khi chưa hiểu rõ."
    ],
    [
     "h2",
@@ -43,7 +64,7 @@
    ],
    [
     "p",
-    "Mở tài khoản chứng khoán, học 5 khái niệm nền tảng (P/E, P/B, ROE, cổ tức, cắt lỗ), bắt đầu bằng số tiền nhỏ và chỉ mua doanh nghiệp anh chị hiểu. Xem lộ trình chi tiết ở các bài bên dưới."
+    "Mở tài khoản chứng khoán, học năm khái niệm nền tảng (P/E, P/B, ROE, cổ tức, cắt lỗ), bắt đầu bằng số tiền nhỏ và chỉ mua doanh nghiệp anh chị hiểu. Xem lộ trình chi tiết ở các bài bên dưới."
    ]
   ],
   "faq": [
@@ -54,6 +75,10 @@
    [
     "Cần bao nhiêu tiền để bắt đầu?",
     "Không có mức tối thiểu bắt buộc. Nhiều người bắt đầu với vài triệu đồng để học cách đặt lệnh trước khi tăng vốn."
+   ],
+   [
+    "Đầu tư chứng khoán có phải đánh bạc không?",
+    "Không, nếu anh chị mua doanh nghiệp mình hiểu, ở mức giá hợp lý và nắm giữ có kỷ luật. Mua theo tin đồn, vay nhiều để lướt sóng thì rủi ro rất cao."
    ]
   ],
   "rel": [
@@ -61,16 +86,7 @@
    "cach-mua-co-phieu-lan-dau",
    "sai-lam-cua-f0"
   ],
-  "grp": 1,
   "add": [
-   [
-    "h2",
-    "Ví dụ thực tế"
-   ],
-   [
-    "p",
-    "Giả sử công ty A có 100 triệu cổ phiếu và anh chị mua 1.000 cổ phiếu, tức sở hữu 0,001% công ty. Nếu công ty lãi 200 tỷ đồng, phần lãi tương ứng của anh chị là 2 triệu đồng. Công ty có thể chia một phần thành <a href=\"/f0/co-tuc-la-gi.html\">cổ tức</a>, phần còn lại giữ để mở rộng kinh doanh. Khi công ty làm ăn tốt hơn, nhiều người muốn mua, giá cổ phiếu có xu hướng tăng."
-   ],
    [
     "h2",
     "Tóm lại"
@@ -82,8 +98,13 @@
      "Giá cổ phiếu lên xuống theo kết quả kinh doanh và cung cầu.",
      "Người mới nên học nền tảng trước, bắt đầu với vốn nhỏ."
     ]
+   ],
+   [
+    "p",
+    "Một lời nhắc cuối: không có cách nào để biết chắc giá ngày mai. Điều anh chị kiểm soát được là số tiền bỏ vào, doanh nghiệp mình hiểu và kỷ luật khi giá biến động."
    ]
-  ]
+  ],
+  "grp": 1
  },
  {
   "slug": "vn-index-la-gi",
@@ -1075,11 +1096,19 @@
   "slug": "pe-la-gi",
   "kw": "P/E là gì",
   "title": "P/E là gì? Cách dùng chỉ số P/E để biết cổ phiếu đắt hay rẻ",
-  "desc": "P/E là gì, công thức tính, P/E bao nhiêu là rẻ, vì sao P/E thấp chưa chắc tốt. Ví dụ dễ hiểu và cách so sánh P/E theo ngành.",
+  "desc": "P/E là gì, công thức tính, P/E bao nhiêu là rẻ, vì sao P/E thấp chưa chắc tốt. Ví dụ quán phở dễ hiểu và cách so sánh P/E theo ngành.",
   "body": [
    [
     "p",
-    "<b>P/E = Giá cổ phiếu ÷ EPS</b> (lợi nhuận trên mỗi cổ phiếu trong 12 tháng gần nhất). P/E 10 nghĩa là nhà đầu tư trả 10 đồng cho 1 đồng lợi nhuận mỗi năm."
+    "<b>P/E = Giá cổ phiếu ÷ EPS</b>, trong đó EPS là lợi nhuận trên mỗi cổ phiếu trong 12 tháng gần nhất. P/E 10 nghĩa là nhà đầu tư trả 10 đồng cho 1 đồng lợi nhuận mỗi năm."
+   ],
+   [
+    "h2",
+    "Ví dụ quán phở"
+   ],
+   [
+    "p",
+    "Giả sử anh chị mua lại một quán phở giá 1 tỷ đồng, mỗi năm quán lãi 100 triệu. P/E = 1 tỷ ÷ 100 triệu = 10, nghĩa là nếu lợi nhuận giữ nguyên, khoảng 10 năm hoàn vốn. Với cổ phiếu: cổ phiếu A giá 30.000 đồng, EPS 3.000 đồng thì P/E = 10. Cổ phiếu B giá 30.000 đồng, EPS 1.500 đồng thì P/E = 20, tức đắt gấp đôi xét theo lợi nhuận hiện tại, trừ khi B tăng trưởng nhanh hơn nhiều."
    ],
    [
     "h2",
@@ -1096,9 +1125,10 @@
    [
     "ul",
     [
-     "Lợi nhuận có thể đến từ khoản bất thường, năm sau không lặp lại.",
+     "Lợi nhuận có thể đến từ khoản bất thường, kỳ sau không lặp lại.",
      "Ngành đang đi xuống nên thị trường trả giá thấp.",
-     "Doanh nghiệp tăng trưởng nhanh thường có P/E cao hơn và vẫn hợp lý."
+     "Doanh nghiệp tăng trưởng nhanh thường có P/E cao hơn và vẫn hợp lý.",
+     "P/E tính trên bốn quý gần nhất, nên một quý đột biến có thể làm méo con số."
     ]
    ],
    [
@@ -1107,33 +1137,7 @@
    ],
    [
     "p",
-    "Kết hợp với ROE (hiệu quả sử dụng vốn), tăng trưởng lợi nhuận và P/B. Một doanh nghiệp P/E vừa phải, ROE cao, lợi nhuận tăng đều là điểm khởi đầu tốt để tìm hiểu thêm."
-   ]
-  ],
-  "faq": [
-   [
-    "EPS là gì?",
-    "EPS là lợi nhuận sau thuế chia cho số cổ phiếu đang lưu hành."
-   ],
-   [
-    "Doanh nghiệp lỗ thì P/E thế nào?",
-    "Khi lỗ, EPS âm nên P/E không có ý nghĩa và thường không hiển thị."
-   ]
-  ],
-  "rel": [
-   "cach-chon-co-phieu-cho-nguoi-moi",
-   "co-tuc-la-gi",
-   "phan-tich-co-ban-va-ky-thuat"
-  ],
-  "grp": 3,
-  "add": [
-   [
-    "h2",
-    "Ví dụ thực tế: P/E như mua quán phở"
-   ],
-   [
-    "p",
-    "Giả sử anh chị mua lại một quán phở giá 1 tỷ đồng, mỗi năm quán lãi 100 triệu. P/E = 1 tỷ ÷ 100 triệu = 10, nghĩa là nếu lợi nhuận giữ nguyên, khoảng 10 năm hoàn vốn. Với cổ phiếu: giả sử cổ phiếu A giá 30.000đ, EPS 3.000đ thì P/E = 10. Cổ phiếu B giá 30.000đ, EPS 1.500đ thì P/E = 20, tức đắt gấp đôi xét theo lợi nhuận hiện tại, trừ khi B tăng trưởng nhanh hơn nhiều."
+    "Kết hợp với <a href=\"/f0/roe-eps-la-gi.html\">ROE</a> (hiệu quả sử dụng vốn), tốc độ tăng trưởng lợi nhuận và <a href=\"/f0/pb-la-gi.html\">P/B</a>. Với ngân hàng, xem thêm nợ xấu và bao phủ nợ xấu. Một doanh nghiệp P/E vừa phải, ROE cao, lợi nhuận tăng đều là điểm khởi đầu tốt để tìm hiểu thêm."
    ],
    [
     "h2",
@@ -1144,10 +1148,36 @@
     [
      "P/E = giá ÷ EPS, giống số năm hoàn vốn nếu lợi nhuận không đổi.",
      "So P/E với cùng ngành và lịch sử của chính doanh nghiệp.",
-     "Kết hợp với <a href=\"/f0/roe-eps-la-gi.html\">ROE, EPS</a> và <a href=\"/f0/pb-la-gi.html\">P/B</a> để đánh giá đầy đủ."
+     "Đọc P/E cùng ROE, tăng trưởng và chất lượng lợi nhuận, không đọc riêng lẻ."
     ]
    ]
-  ]
+  ],
+  "faq": [
+   [
+    "EPS là gì?",
+    "EPS là lợi nhuận sau thuế chia cho số cổ phiếu đang lưu hành."
+   ],
+   [
+    "Doanh nghiệp lỗ thì P/E thế nào?",
+    "Khi lỗ, EPS âm nên P/E không có ý nghĩa và thường không hiển thị."
+   ],
+   [
+    "P/E trailing và P/E forward khác gì?",
+    "P/E trailing dùng lợi nhuận bốn quý đã qua, P/E forward dùng lợi nhuận dự phóng. Xem thêm bài riêng về hai loại P/E."
+   ]
+  ],
+  "rel": [
+   "pe-trailing-va-pe-forward-la-gi",
+   "co-tuc-la-gi",
+   "pe-bi-meo-boi-mot-quy-loi-nhuan"
+  ],
+  "add": [
+   [
+    "p",
+    "Lưu ý: P/E của ngân hàng và doanh nghiệp sản xuất không so trực tiếp được vì cấu trúc lợi nhuận và rủi ro khác nhau. Ngân hàng nên xem cùng P/B, ROE và chất lượng tài sản."
+   ]
+  ],
+  "grp": 3
  },
  {
   "slug": "cat-lo-la-gi",
@@ -23096,5 +23126,804 @@
   ],
   "add": [],
   "grp": 4
+ },
+ {
+  "slug": "hieu-ung-nen-so-sanh-la-gi",
+  "kw": "hiệu ứng nền so sánh là gì",
+  "title": "Hiệu ứng nền so sánh là gì? Vì sao tăng 45% chưa chắc đẹp",
+  "desc": "Hiệu ứng nền so sánh là gì, vì sao cùng mức lợi nhuận mà tăng trưởng lúc cao lúc thấp, và cách tránh bị phần trăm đánh lừa khi đọc báo cáo tài chính.",
+  "body": [
+   [
+    "p",
+    "Hiệu ứng nền so sánh (base effect) là hiện tượng mức tăng trưởng phần trăm bị phóng đại hoặc thu nhỏ vì kỳ so sánh có giá trị quá thấp hoặc quá cao. Đây là lý do cùng một doanh nghiệp, lợi nhuận tuyệt đối gần như không đổi, nhưng tăng trưởng năm nay lại trông rất khác."
+   ],
+   [
+    "h2",
+    "Ví dụ bằng số"
+   ],
+   [
+    "p",
+    "Giả sử năm ngoái một công ty lãi 100 tỷ đồng, năm nay lãi 145 tỷ đồng: tăng 45%. Nghe rất ấn tượng. Nhưng nếu năm trước nữa công ty từng lãi 140 tỷ đồng và năm ngoái chỉ thấp vì một khoản trích lập đột biến, thì năm nay thực chất mới chỉ bằng mức bình thường. Ngược lại, nếu năm ngoái lãi 200 tỷ đồng, năm nay lãi 220 tỷ đồng chỉ tăng 10%, nhưng số lợi nhuận tuyệt đối lớn hơn nhiều so với ví dụ đầu."
+   ],
+   [
+    "h2",
+    "Gặp ở đâu khi đọc báo cáo"
+   ],
+   [
+    "ul",
+    [
+     "Lợi nhuận quý tăng rất mạnh so với cùng kỳ, trong khi cùng kỳ năm trước là quý thấp bất thường.",
+     "Lũy kế chín tháng tăng nhanh hơn một quý riêng lẻ, vì các quý đầu năm trước thấp.",
+     "Tăng trưởng sau một năm khó khăn thường trông đẹp, dù mới chỉ quay về mức cũ."
+    ]
+   ],
+   [
+    "h2",
+    "Cách tránh bị đánh lừa"
+   ],
+   [
+    "p",
+    "Có ba thói quen đơn giản. Thứ nhất, luôn nhìn dãy năm đến sáu quý thay vì một cặp hai số. Thứ hai, đặt số tuyệt đối cạnh phần trăm: lợi nhuận bao nhiêu tỷ đồng, chứ không chỉ tăng bao nhiêu phần trăm. Thứ ba, so sánh cả với quý liền trước, không chỉ với cùng kỳ năm ngoái, để thấy đà hiện tại."
+   ],
+   [
+    "h2",
+    "Hiệu ứng nền với chỉ số thị trường"
+   ],
+   [
+    "p",
+    "Cùng nguyên lý áp dụng cho chỉ số: sau khi một chỉ số giảm sâu, mức tăng phần trăm trong những tháng sau thường trông lớn vì xuất phát từ nền thấp. Một chỉ số giảm 20% cần tăng 25% mới về lại mốc cũ, vì phần trăm luôn tính trên nền khác nhau."
+   ]
+  ],
+  "faq": [
+   [
+    "Hiệu ứng nền khác gì tăng trưởng thật?",
+    "Tăng trưởng thật nói lên sức mạnh hoạt động. Hiệu ứng nền chỉ là cách phần trăm bị méo vì kỳ so sánh bất thường."
+   ],
+   [
+    "Làm sao biết kỳ trước có bất thường?",
+    "Nhìn chuỗi nhiều quý: quý nào lệch hẳn so với các quý xung quanh thì nên tìm hiểu lý do."
+   ],
+   [
+    "Có nên bỏ qua phần trăm tăng trưởng không?",
+    "Không. Phần trăm vẫn hữu ích, chỉ cần đọc kèm số tuyệt đối và kỳ so sánh để hiểu đúng."
+   ]
+  ],
+  "rel": [
+   "cach-doc-bao-cao-tai-chinh",
+   "loi-nhuan-bat-thuong-la-gi",
+   "bao-cao-ket-qua-kinh-doanh-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Ví dụ thực tế với ngân hàng"
+   ],
+   [
+    "p",
+    "VPB báo lợi nhuận quý 3/2026 là 8.644 tỷ đồng, tăng 18,8% so với cùng kỳ, nhưng lũy kế chín tháng 23.227 tỷ đồng lại tăng 44,9% (số liệu báo cáo quý 3/2026). Lý do là các quý đầu năm trước thấp, nên phần trăm của chín tháng được phóng đại. Nếu chỉ đọc con số 44,9%, người xem dễ tưởng đà tăng trưởng đang tăng tốc, trong khi quý gần nhất tăng chậm hơn."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Phần trăm tăng trưởng luôn phụ thuộc vào kỳ so sánh.",
+     "Đặt số tuyệt đối cạnh số phần trăm.",
+     "Đọc dãy nhiều quý thay vì một cặp số."
+    ]
+   ]
+  ],
+  "grp": 3
+ },
+ {
+  "slug": "pe-bi-meo-boi-mot-quy-loi-nhuan",
+  "kw": "P/E bị méo",
+  "title": "P/E bị méo vì một quý lợi nhuận bất thường: cách kiểm tra",
+  "desc": "P/E tính trên lợi nhuận bốn quý gần nhất nên dễ bị méo khi có một quý đột biến. Cách kiểm tra P/E có đáng tin bằng ba câu hỏi và một phép thử đơn giản.",
+  "body": [
+   [
+    "p",
+    "P/E trailing được tính bằng vốn hóa chia cho tổng lợi nhuận bốn quý gần nhất. Vì mẫu số là tổng của bốn số, chỉ cần một quý bất thường là P/E thay đổi đáng kể, dù giá cổ phiếu không đổi."
+   ],
+   [
+    "h2",
+    "Ví dụ minh họa"
+   ],
+   [
+    "p",
+    "Giả sử vốn hóa là 40.000 tỷ đồng. Bốn quý gần nhất lãi lần lượt 2.500, 1.700, 1.800 và 2.400 tỷ đồng, tổng 8.400 tỷ, P/E khoảng 4,8 lần. Nếu hai quý cao nhất chỉ bằng mức trung bình hai quý còn lại, khoảng 1.750 tỷ, tổng còn 7.000 tỷ và P/E lên khoảng 5,7 lần. Đây là phép thử giả định để minh họa, không phải dự báo, nhưng nó cho thấy P/E thấp chỉ đáng tin khi lợi nhuận lặp lại được."
+   ],
+   [
+    "h2",
+    "Cái bẫy chạy hai chiều"
+   ],
+   [
+    "p",
+    "Khi một quý lõm kéo tổng bốn quý xuống, P/E trông cao hơn thực lực thường lệ. Khi một quý vọt lên, P/E trông thấp hơn. Vì vậy một con số P/E đứng riêng lẻ gần như không nói lên điều gì."
+   ],
+   [
+    "h2",
+    "Ba câu hỏi trước khi tin P/E"
+   ],
+   [
+    "ul",
+    [
+     "Trong bốn quý có quý nào cao vọt hoặc thấp lõm bất thường không?",
+     "ROE và tốc độ tăng trưởng đi kèm ra sao?",
+     "Chất lượng tài sản thế nào, với ngân hàng là nợ xấu và bao phủ nợ xấu?"
+    ]
+   ],
+   [
+    "h2",
+    "Một phép thử nhanh"
+   ],
+   [
+    "p",
+    "Hãy thay quý bất thường bằng mức trung bình của các quý còn lại rồi tính lại P/E. Nếu kết quả chênh nhiều so với con số hiển thị, nên đọc P/E đó với sự dè dặt và xem thêm P/B, ROE."
+   ]
+  ],
+  "faq": [
+   [
+    "P/E forward có tránh được vấn đề này không?",
+    "P/E forward dùng lợi nhuận dự phóng nên tránh quý đột biến quá khứ, nhưng phụ thuộc vào độ chính xác của dự phóng."
+   ],
+   [
+    "Quý thế nào được coi là bất thường?",
+    "Quý lệch hẳn so với các quý xung quanh, thường do thoái vốn, hoàn nhập dự phòng, lãi tỷ giá hoặc khoản thu nhập khác một lần."
+   ],
+   [
+    "P/B có bị méo như P/E không?",
+    "Ít hơn, vì vốn chủ sở hữu thay đổi chậm. Nên đọc P/E cùng P/B và ROE để có bức tranh cân bằng."
+   ]
+  ],
+  "rel": [
+   "pe-la-gi",
+   "pe-trailing-va-pe-forward-la-gi",
+   "loi-nhuan-bat-thuong-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Vì sao điều này quan trọng với ngân hàng"
+   ],
+   [
+    "p",
+    "Lợi nhuận ngân hàng biến động theo chi phí dự phòng nên các quý thường lệch nhau khá rõ. Một quý hoàn nhập dự phòng hoặc một quý trích lập mạnh đủ làm P/E đổi đáng kể. Vì vậy với ngân hàng, nên đọc P/E cùng chuỗi lợi nhuận từng quý và P/B, ROE thay vì chỉ nhìn một con số."
+   ],
+   [
+    "h2",
+    "Các nguồn gây méo thường gặp"
+   ],
+   [
+    "ul",
+    [
+     "Thoái vốn, bán tài sản hoặc bán dự án: lãi lớn một lần.",
+     "Hoàn nhập dự phòng hoặc lãi chênh lệch tỷ giá.",
+     "Trích lập mạnh một quý khiến lợi nhuận lõm sâu.",
+     "Doanh nghiệp bất động sản bàn giao dồn vào một quý."
+    ]
+   ],
+   [
+    "p",
+    "Khi gặp một trong các trường hợp trên, hãy xem dòng lợi nhuận khác và doanh thu tài chính trong báo cáo kết quả kinh doanh để biết phần nào là lõi."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "P/E bốn quý gần nhất có thể bị méo bởi một quý.",
+     "Thử thay quý bất thường bằng mức trung bình rồi tính lại.",
+     "P/E thấp chỉ đáng tin khi lợi nhuận lặp lại được."
+    ]
+   ]
+  ],
+  "grp": 3
+ },
+ {
+  "slug": "day-thi-truong-la-gi",
+  "kw": "đáy thị trường là gì",
+  "title": "Đáy thị trường là gì? Vì sao đáy chỉ nhìn thấy khi đã qua",
+  "desc": "Đáy thị trường là gì, vì sao không ai xác định được đáy lúc đang giảm, và nên chuẩn bị gì thay vì cố đoán đáy. Ví dụ VN-Index tháng 4/2025.",
+  "body": [
+   [
+    "p",
+    "Đáy thị trường là mức giá hoặc điểm số thấp nhất trong một đợt giảm trước khi chuyển sang hồi phục. Vấn đề là đáy chỉ được xác nhận sau khi giá đã đi lên đủ xa. Lúc đang giảm, mọi mức giá thấp đều có thể là đáy hoặc chưa phải."
+   ],
+   [
+    "h2",
+    "Ví dụ từ VN-Index"
+   ],
+   [
+    "p",
+    "Từ giá đóng cửa tuần 24/3/2025 khoảng 1.317 điểm, VN-Index chạm đáy trong phiên 9/4/2025 ở 1.073,61 điểm, tức giảm khoảng 18,5%. Ngay trong tuần đó chỉ số đóng cửa ở 1.222 điểm, bật khoảng 13,9% từ đáy. Nhưng các tuần sau vẫn có lúc quay lại thử vùng thấp: tuần 21/4 có mức thấp 1.137 điểm. Không có tín hiệu nào ghi sẵn đó là đáy."
+   ],
+   [
+    "h2",
+    "Vì sao khó đoán đáy"
+   ],
+   [
+    "ul",
+    [
+     "Giảm nhanh thường đi cùng bật nhanh, nên khoảng thời gian để nhận ra rất ngắn.",
+     "Tin tức xấu nhất thường xuất hiện gần đáy, nhưng cũng xuất hiện ở nhiều điểm không phải đáy.",
+     "Tâm lý hoảng loạn khiến nhiều người bán đúng lúc giá thấp."
+    ]
+   ],
+   [
+    "h2",
+    "Thay vì đoán đáy"
+   ],
+   [
+    "p",
+    "Nên chuẩn bị từ trước: dùng tiền nhàn rỗi, không vay ký quỹ sát mức bị bán giải chấp, chia vốn thành nhiều đợt và đặt kỷ luật rõ ràng. Nhà đầu tư có kế hoạch thường ít phải đưa ra quyết định cảm tính vào đúng thời điểm khó nhất."
+   ],
+   [
+    "p",
+    "Lưu ý: ví dụ trên là nhìn lại lịch sử, không phải dự báo hay khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Có dấu hiệu nào nhận biết đáy không?",
+    "Có nhiều chỉ báo nhưng không chỉ báo nào đúng mọi lúc. Chúng chỉ giúp tăng xác suất, không bảo đảm."
+   ],
+   [
+    "Đáy thị trường và bắt đáy cổ phiếu khác gì?",
+    "Đáy thị trường nói về cả chỉ số. Bắt đáy là hành động mua một mã khi nghĩ giá đã thấp nhất, rủi ro hơn vì từng mã có thể giảm tiếp dù chỉ số đã hồi."
+   ],
+   [
+    "Thị trường mất bao lâu để hồi phục sau đáy?",
+    "Không cố định. Có đợt hồi nhanh trong vài tuần, có đợt mất nhiều năm. Vì vậy không nên dùng tiền cần dùng gấp để đầu tư."
+   ]
+  ],
+  "rel": [
+   "tam-ly-fomo-va-hoang-loan",
+   "ban-giai-chap-la-gi",
+   "bat-day-co-phieu-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Những sai lầm thường gặp quanh đáy"
+   ],
+   [
+    "p",
+    "Sai lầm thứ nhất là dồn toàn bộ vốn vào một thời điểm vì tin đó là đáy. Sai lầm thứ hai là bán toàn bộ vì sợ giảm tiếp, đúng lúc giá thấp. Sai lầm thứ ba là dùng đòn bẩy quá cao, khiến tài khoản bị bán giải chấp trước khi thị trường kịp hồi phục."
+   ],
+   [
+    "h2",
+    "Một kế hoạch đơn giản cho giai đoạn giảm sâu"
+   ],
+   [
+    "p",
+    "Trước khi thị trường biến động, có thể viết sẵn ba điều: tỷ lệ tiền mặt tối thiểu luôn giữ, số đợt giải ngân nếu giá giảm thêm và mức đòn bẩy tối đa chấp nhận. Khi tin xấu dồn dập, chỉ cần làm đúng những gì đã viết. Cách này không giúp mua đúng đáy, nhưng giúp tránh những quyết định vội vàng làm mất nhiều tiền nhất."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Đáy chỉ xác nhận được khi đã qua.",
+     "Giảm nhanh thường đi cùng bật nhanh.",
+     "Kỷ luật chuẩn bị từ trước quan trọng hơn đoán đáy."
+    ]
+   ]
+  ],
+  "grp": 8
+ },
+ {
+  "slug": "cho-vay-tieu-dung-va-cho-vay-doanh-nghiep-khac-gi",
+  "kw": "cho vay tiêu dùng và cho vay doanh nghiệp",
+  "title": "Cho vay tiêu dùng và cho vay doanh nghiệp: ngân hàng khác gì?",
+  "desc": "So sánh mô hình cho vay tiêu dùng và cho vay doanh nghiệp: biên lãi, nợ xấu, bao phủ nợ xấu và vì sao không nên so nợ xấu giữa hai mô hình khác nhau.",
+  "body": [
+   [
+    "p",
+    "Hai ngân hàng có thể cùng quy mô nhưng sinh lời theo hai cách rất khác. Một bên cho vay nhiều cá nhân không có tài sản đảm bảo, bên kia cho vay chủ yếu doanh nghiệp lớn có tài sản bảo đảm. Hiểu khác biệt này giúp đọc báo cáo công bằng hơn."
+   ],
+   [
+    "h2",
+    "Cho vay tiêu dùng"
+   ],
+   [
+    "p",
+    "Lãi suất cho vay cao hơn, nên biên lãi ròng (NIM) thường cao, có thể trên 4%. Đổi lại, khoản vay nhỏ, nhiều, thường không có tài sản đảm bảo nên tỷ lệ nợ xấu cao hơn. Ngân hàng phải trích dự phòng lớn và đòi hỏi quản trị rủi ro tốt."
+   ],
+   [
+    "h2",
+    "Cho vay doanh nghiệp lớn"
+   ],
+   [
+    "p",
+    "Lãi suất thấp hơn, NIM thường chỉ khoảng 2% đến 3,5%. Khoản vay lớn, thường có tài sản bảo đảm, nợ xấu thấp hơn nhưng chỉ một vài khoản lớn gặp khó cũng có thể ảnh hưởng đáng kể."
+   ],
+   [
+    "h2",
+    "Vì sao so nợ xấu khập khiễng"
+   ],
+   [
+    "p",
+    "Nợ xấu 3% ở ngân hàng cho vay tiêu dùng có thể là bình thường, trong khi 3% ở ngân hàng cho vay doanh nghiệp lớn có thể đáng lo. Câu hỏi đúng là phần lãi kiếm thêm có đủ bù cho phần tiền mất đi hay không."
+   ],
+   [
+    "h2",
+    "Các chỉ số nên xem cùng nhau"
+   ],
+   [
+    "ul",
+    [
+     "NIM: biên lãi ròng so với cùng mô hình.",
+     "Nợ xấu và xu hướng nhiều quý: đang tăng hay giảm.",
+     "Bao phủ nợ xấu: đệm dự phòng dày hay mỏng.",
+     "Chi phí dự phòng so với thu nhập lãi thuần."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Mô hình nào tốt hơn?",
+    "Không có mô hình tốt hơn tuyệt đối. Mỗi mô hình đánh đổi giữa biên lãi và rủi ro."
+   ],
+   [
+    "Làm sao biết một ngân hàng thiên về cho vay tiêu dùng?",
+    "Xem cơ cấu dư nợ theo khách hàng cá nhân, doanh nghiệp trong thuyết minh báo cáo tài chính và mức NIM so với ngành."
+   ],
+   [
+    "Bao phủ nợ xấu bao nhiêu là an toàn?",
+    "Không có mốc chung, nhưng bao phủ càng cao thì đệm càng dày. Mô hình rủi ro cao càng cần bao phủ tốt."
+   ]
+  ],
+  "rel": [
+   "nim-la-gi",
+   "no-xau-ngan-hang-la-gi",
+   "bao-phu-no-xau-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Ví dụ so sánh"
+   ],
+   [
+    "p",
+    "Theo báo cáo quý 3/2026, VPB có NIM khoảng 4,56% và nợ xấu 3,12%, còn TPB có NIM khoảng 2,58% và nợ xấu 2,10%. Hai con số nợ xấu không thể so trực tiếp: biên lãi cao hơn gần hai điểm phần trăm là phần bù cho rủi ro cao hơn. Điều cần hỏi là phần bù đó có đủ không, và đệm dự phòng có dày không (bao phủ nợ xấu quý 3/2026 của hai ngân hàng lần lượt khoảng 54% và 57%)."
+   ],
+   [
+    "p",
+    "Muốn xem cách chọn ngân hàng để tích sản dài hạn, có thể tham khảo <a href=\"/bao-cao-2026.html#tichsan\">mục tích sản trong báo cáo 2026</a>."
+   ],
+   [
+    "h2",
+    "Chu kỳ kinh tế tác động khác nhau"
+   ],
+   [
+    "p",
+    "Khi kinh tế chậm lại, thu nhập người vay cá nhân giảm nhanh nên nợ xấu mảng tiêu dùng thường tăng sớm. Mảng doanh nghiệp lớn chịu tác động chậm hơn nhưng có thể tập trung vào vài khoản lớn. Vì vậy khi đọc báo cáo, nên theo dõi xu hướng nợ xấu qua nhiều quý thay vì một con số."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Mô hình khác nhau thì so sánh phải cùng nhóm.",
+     "NIM cao thường đi cùng nợ xấu cao.",
+     "Luôn đặt bao phủ nợ xấu cạnh tỷ lệ nợ xấu."
+    ]
+   ]
+  ],
+  "grp": 5
+ },
+ {
+  "slug": "loi-nhuan-quy-va-luy-ke-doc-the-nao",
+  "kw": "lợi nhuận quý và lũy kế",
+  "title": "Lợi nhuận quý và lũy kế: đọc thế nào cho đúng",
+  "desc": "Phân biệt lợi nhuận quý, lũy kế và bốn quý gần nhất (TTM) khi đọc báo cáo tài chính, ví dụ cách ba con số kể ba câu chuyện khác nhau.",
+  "body": [
+   [
+    "p",
+    "Một báo cáo thường có ba cách nhìn lợi nhuận: riêng quý, lũy kế từ đầu năm và bốn quý gần nhất. Mỗi con số trả lời một câu hỏi khác nhau, và nhầm lẫn giữa chúng là lỗi rất phổ biến."
+   ],
+   [
+    "h2",
+    "Lợi nhuận quý"
+   ],
+   [
+    "p",
+    "Cho biết hoạt động trong ba tháng gần nhất. Nhạy với các khoản đột biến như hoàn nhập hoặc trích lập dự phòng, thoái vốn. Dùng để xem đà hiện tại, nhưng không nên kết luận từ một quý."
+   ],
+   [
+    "h2",
+    "Lũy kế từ đầu năm"
+   ],
+   [
+    "p",
+    "Cộng các quý từ đầu năm. Ví dụ VPB lãi quý 3/2026 tăng 18,8% nhưng lũy kế chín tháng tăng 44,9%, vì các quý đầu năm trước là nền thấp. Lũy kế giảm nhiễu hơn một quý, nhưng dễ bị ảnh hưởng bởi hiệu ứng nền."
+   ],
+   [
+    "h2",
+    "Bốn quý gần nhất (TTM)"
+   ],
+   [
+    "p",
+    "Cộng bốn quý liên tiếp bất kể đầu năm hay cuối năm. Đây là số dùng tính P/E và ROE. Nó trơn hơn quý riêng lẻ, và luôn cập nhật sau mỗi quý mới."
+   ],
+   [
+    "h2",
+    "Cách đọc cùng nhau"
+   ],
+   [
+    "ul",
+    [
+     "Quý tăng mạnh, lũy kế tăng vừa: có thể một quý đột biến.",
+     "Quý yếu, lũy kế vẫn mạnh: có thể chỉ chững lại ngắn hạn.",
+     "TTM tăng đều qua các lần cập nhật: xu hướng bền hơn."
+    ]
+   ],
+   [
+    "p",
+    "Một nguyên tắc ngắn gọn: dùng quý để xem đà, lũy kế để xem tiến độ cả năm, TTM để định giá."
+   ]
+  ],
+  "faq": [
+   [
+    "Vì sao không chỉ dùng số quý?",
+    "Vì số quý bị méo bởi khoản đột biến và mùa vụ, nên dễ dẫn tới kết luận sai."
+   ],
+   [
+    "TTM khác lũy kế thế nào?",
+    "Lũy kế cộng từ quý 1 năm hiện tại, nên số quý thay đổi. TTM luôn cộng đúng bốn quý gần nhất."
+   ],
+   [
+    "Lũy kế dùng để làm gì?",
+    "Để so tiến độ với kế hoạch năm doanh nghiệp đã đặt ra tại đại hội cổ đông."
+   ]
+  ],
+  "rel": [
+   "cach-doc-bao-cao-tai-chinh",
+   "hieu-ung-nen-so-sanh-la-gi",
+   "pe-trailing-va-pe-forward-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Ví dụ"
+   ],
+   [
+    "p",
+    "Một doanh nghiệp giả định lãi quý 3 là 100 tỷ đồng, lũy kế chín tháng 280 tỷ, và bốn quý gần nhất 380 tỷ. Con số 100 tỷ cho biết đà của ba tháng, 280 tỷ cho biết tiến độ năm, 380 tỷ là mẫu số để tính P/E. Ba con số cùng nằm trong một báo cáo nhưng phục vụ ba mục đích khác nhau."
+   ],
+   [
+    "h2",
+    "Lỗi hay gặp khi đọc tin"
+   ],
+   [
+    "p",
+    "Nhiều tiêu đề chỉ ghi lợi nhuận tăng mạnh mà không nói rõ là quý hay lũy kế. Trước khi kết luận, hãy mở báo cáo gốc và kiểm ba điều: kỳ báo cáo là quý mấy, so với kỳ nào, và có khoản đột biến nào không. Một phút kiểm tra như vậy tránh được nhiều hiểu lầm."
+   ],
+   [
+    "p",
+    "Thói quen tốt là ghi lại lợi nhuận từng quý của doanh nghiệp mình theo dõi vào một bảng đơn giản. Sau vài năm, anh chị sẽ tự thấy quý nào là mùa cao điểm, quý nào thường thấp và đâu là bất thường thật sự."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Quý để xem đà, lũy kế để xem tiến độ, bốn quý để định giá.",
+     "Không kết luận từ một con số duy nhất.",
+     "Luôn kiểm tra kỳ so sánh."
+    ]
+   ]
+  ],
+  "grp": 5
+ },
+ {
+  "slug": "yoy-qoq-la-gi",
+  "kw": "YoY QoQ là gì",
+  "title": "YoY và QoQ là gì? So sánh lợi nhuận cùng kỳ và quý trước",
+  "desc": "YoY là so với cùng kỳ năm trước, QoQ là so với quý liền trước. Khi nào dùng YoY, khi nào dùng QoQ, ví dụ ngân hàng lãi tăng YoY nhưng giảm QoQ.",
+  "body": [
+   [
+    "p",
+    "YoY (year on year) là so với cùng kỳ năm trước. QoQ (quarter on quarter) là so với quý liền trước. Hai cách so sánh trả lời hai câu hỏi khác nhau và có thể cho kết quả trái chiều."
+   ],
+   [
+    "h2",
+    "Ví dụ"
+   ],
+   [
+    "p",
+    "HDB quý 3/2026 lãi 3.852 tỷ đồng. So với cùng kỳ năm trước thì tăng 5,6% (YoY). So với quý 2/2026 thì giảm 30,7% (QoQ). Cả hai con số đều đúng, chỉ khác mốc so sánh. Báo cáo cùng quý cũng cho thấy chi phí dự phòng tăng 47,4%, một phần giải thích vì sao quý này thấp hơn quý trước."
+   ],
+   [
+    "h2",
+    "Khi nào dùng YoY"
+   ],
+   [
+    "p",
+    "YoY loại bỏ yếu tố mùa vụ, vì so cùng thời điểm của năm. Phù hợp với doanh nghiệp bán lẻ, nông sản, xây dựng có tính mùa vụ rõ rệt."
+   ],
+   [
+    "h2",
+    "Khi nào dùng QoQ"
+   ],
+   [
+    "p",
+    "QoQ cho thấy đà gần nhất, nên phản ứng nhanh khi tình hình đổi chiều. Nhưng dễ nhiễu hơn vì quý liền trước có thể bất thường."
+   ],
+   [
+    "h2",
+    "Cách dùng cùng nhau"
+   ],
+   [
+    "ul",
+    [
+     "YoY tăng, QoQ giảm: tăng trưởng cả năm còn tốt nhưng đà đang chậm lại, cần xem lý do.",
+     "YoY giảm, QoQ tăng: có thể đang hồi phục từ nền thấp.",
+     "Cả hai cùng tăng: tín hiệu mạnh hơn, nhưng vẫn cần xem chất lượng lợi nhuận."
+    ]
+   ],
+   [
+    "p",
+    "Dù dùng cách nào, nên đặt kèm số tuyệt đối và dãy nhiều quý để tránh hiểu sai."
+   ]
+  ],
+  "faq": [
+   [
+    "QoQ có dùng cho mọi ngành không?",
+    "Với ngành có mùa vụ rõ, QoQ dễ gây hiểu lầm, nên ưu tiên YoY."
+   ],
+   [
+    "YoY và QoQ trái chiều là xấu?",
+    "Không hẳn. Đó là tín hiệu cần tìm lý do: mùa vụ, khoản đột biến hay thay đổi thật trong kinh doanh."
+   ],
+   [
+    "Có cách so sánh nào khác?",
+    "Có thể dùng lũy kế từ đầu năm hoặc tổng bốn quý gần nhất để giảm nhiễu của một quý."
+   ]
+  ],
+  "rel": [
+   "loi-nhuan-quy-va-luy-ke-doc-the-nao",
+   "hieu-ung-nen-so-sanh-la-gi",
+   "cach-doc-bao-cao-tai-chinh"
+  ],
+  "add": [
+   [
+    "h2",
+    "Ví dụ với doanh nghiệp mùa vụ"
+   ],
+   [
+    "p",
+    "Một doanh nghiệp bán lẻ thường có quý cuối năm doanh thu cao nhờ mua sắm cuối năm. So quý 1 với quý 4 liền trước (QoQ) gần như luôn cho thấy giảm, nhưng đó chỉ là mùa vụ. So với quý 1 năm trước (YoY) mới cho bức tranh công bằng."
+   ],
+   [
+    "h2",
+    "YoY và QoQ trong tin vĩ mô"
+   ],
+   [
+    "p",
+    "Hai cách so sánh này cũng xuất hiện trong số liệu vĩ mô như GDP, lạm phát, tín dụng. Lạm phát thường được báo theo YoY, còn tăng trưởng tín dụng thường tính từ đầu năm. Đọc đúng mốc so sánh giúp tránh hiểu sai tin tức và phản ứng thái quá."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "YoY loại bỏ mùa vụ, QoQ cho thấy đà gần nhất.",
+     "Hai con số trái chiều là bình thường, cần giải thích.",
+     "Luôn đọc kèm số tuyệt đối."
+    ]
+   ]
+  ],
+  "grp": 5
+ },
+ {
+  "slug": "hoan-nhap-du-phong-la-gi",
+  "kw": "hoàn nhập dự phòng là gì",
+  "title": "Hoàn nhập dự phòng là gì? Vì sao làm lợi nhuận ngân hàng tăng",
+  "desc": "Hoàn nhập dự phòng là gì, vì sao nó làm lợi nhuận ngân hàng tăng, và cách phân biệt quý đẹp nhờ hoạt động lõi với quý đẹp nhờ hoàn nhập.",
+  "body": [
+   [
+    "p",
+    "Khi ngân hàng trích dự phòng, khoản tiền đó được ghi vào chi phí và làm lợi nhuận giảm. Hoàn nhập dự phòng là chiều ngược lại: nếu nợ xấu được xử lý tốt hơn dự kiến, phần dự phòng đã trích dư được ghi giảm chi phí, làm lợi nhuận tăng."
+   ],
+   [
+    "h2",
+    "Ví dụ đơn giản"
+   ],
+   [
+    "p",
+    "Ngân hàng trích dự phòng 100 tỷ đồng cho một khoản vay có nguy cơ. Về sau khách hàng trả được nợ, cần dự phòng chỉ còn 40 tỷ. Phần 60 tỷ dư được hoàn nhập, cộng lại vào lợi nhuận kỳ đó dù ngân hàng không kiếm thêm tiền từ hoạt động cho vay."
+   ],
+   [
+    "h2",
+    "Vì sao cần phân biệt"
+   ],
+   [
+    "ul",
+    [
+     "Lợi nhuận nhờ thu nhập lãi thuần tăng là lợi nhuận lặp lại được.",
+     "Lợi nhuận nhờ hoàn nhập thường không lặp lại đều đặn.",
+     "Quý có hoàn nhập lớn có thể làm P/E trông thấp hơn thực lực."
+    ]
+   ],
+   [
+    "h2",
+    "Cách kiểm tra"
+   ],
+   [
+    "p",
+    "So sánh mức tăng lợi nhuận với mức tăng thu nhập lãi thuần. Nếu lợi nhuận tăng nhanh hơn nhiều mà thu nhập lãi tăng vừa phải, hãy xem chi phí dự phòng: nếu giảm mạnh hoặc âm, quý đó có thể đẹp nhờ hoàn nhập. Ngược lại, khi dự phòng tăng mạnh, lợi nhuận có thể thấp dù hoạt động lõi vẫn tốt."
+   ],
+   [
+    "h2",
+    "Cách đọc cân bằng"
+   ],
+   [
+    "p",
+    "Hoàn nhập không xấu, nó có thể cho thấy chất lượng tài sản cải thiện. Chỉ cần nhớ tách nó ra khi dự phóng lợi nhuận các quý sau."
+   ]
+  ],
+  "faq": [
+   [
+    "Dự phòng tăng có phải tin xấu?",
+    "Không chắc. Có thể ngân hàng thận trọng làm dày đệm, cũng có thể rủi ro thực sự tăng. Cần xem cùng nợ xấu và bao phủ."
+   ],
+   [
+    "Doanh nghiệp ngoài ngân hàng có hoàn nhập dự phòng không?",
+    "Có, ví dụ hoàn nhập dự phòng giảm giá hàng tồn kho, phải thu khó đòi hoặc đầu tư tài chính."
+   ],
+   [
+    "Xem hoàn nhập ở đâu trong báo cáo?",
+    "Ở dòng chi phí dự phòng rủi ro tín dụng của báo cáo kết quả kinh doanh và phần thuyết minh đi kèm."
+   ]
+  ],
+  "rel": [
+   "chi-phi-du-phong-la-gi",
+   "bao-phu-no-xau-la-gi",
+   "thu-nhap-lai-thuan-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Ví dụ quý đẹp nhờ hoàn nhập"
+   ],
+   [
+    "p",
+    "Giả sử quý này thu nhập lãi thuần chỉ tăng 5% nhưng lợi nhuận tăng 30%, trong khi chi phí dự phòng giảm mạnh. Phần lớn mức tăng lợi nhuận đến từ việc chi phí giảm, không phải từ hoạt động cho vay mở rộng. Quý sau, nếu chi phí dự phòng trở lại mức thường lệ, lợi nhuận có thể thấp hơn nhiều."
+   ],
+   [
+    "p",
+    "Ai tích sản cổ phiếu ngân hàng dài hạn có thể xem thêm <a href=\"/bao-cao-2026.html#tichsan\">mục tích sản trong báo cáo 2026</a>."
+   ],
+   [
+    "h2",
+    "Hoàn nhập và chất lượng tài sản"
+   ],
+   [
+    "p",
+    "Một ngân hàng hoàn nhập đều đặn nhiều quý kèm nợ xấu giảm thường là dấu hiệu tích cực về thu hồi nợ. Nhưng nếu hoàn nhập khiến bao phủ nợ xấu mỏng đi trong khi nợ xấu không giảm, đó là cách làm đẹp lợi nhuận ngắn hạn và cần thận trọng hơn."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Hoàn nhập làm tăng lợi nhuận mà không tạo thêm thu nhập lõi.",
+     "So tăng trưởng lợi nhuận với tăng trưởng thu nhập lãi thuần.",
+     "Tách khoản hoàn nhập khi dự phóng các quý sau."
+    ]
+   ]
+  ],
+  "grp": 5
+ },
+ {
+  "slug": "thue-doi-ung-la-gi",
+  "kw": "thuế đối ứng là gì",
+  "title": "Thuế đối ứng là gì? Tin thuế quan tác động chứng khoán ra sao",
+  "desc": "Thuế đối ứng là gì, vì sao thông báo thuế quan có thể tác động tới doanh nghiệp xuất khẩu và tâm lý thị trường chứng khoán, nên theo dõi những gì.",
+  "body": [
+   [
+    "p",
+    "Thuế đối ứng là mức thuế một quốc gia áp lên hàng nhập khẩu từ nước khác, thường được mô tả là để cân bằng với mức thuế hoặc rào cản mà nước kia áp lên hàng của mình. Khi một thị trường lớn thay đổi thuế, chuỗi cung ứng và giá cả có thể thay đổi theo."
+   ],
+   [
+    "h2",
+    "Vì sao ảnh hưởng chứng khoán"
+   ],
+   [
+    "ul",
+    [
+     "Doanh nghiệp xuất khẩu có thể bị giảm đơn hàng hoặc phải giảm giá.",
+     "Tâm lý thị trường thay đổi nhanh vì lo ngại về tăng trưởng kinh tế.",
+     "Dòng vốn có thể chuyển hướng, khiến tỷ giá và thanh khoản biến động."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ tháng 4 năm 2025"
+   ],
+   [
+    "p",
+    "Đầu tháng 4 năm 2025, thông tin về thuế đối ứng của Mỹ khiến nhiều thị trường châu Á biến động mạnh. Số liệu chỉ số cho thấy VN-Index giảm khoảng 18,5% từ giá đóng cửa tuần 24/3/2025 (khoảng 1.317 điểm) xuống đáy trong phiên 9/4/2025 (1.073,61 điểm). Đây là ví dụ lịch sử về cách một thông tin vĩ mô có thể tác động nhanh tới tâm lý."
+   ],
+   [
+    "h2",
+    "Nhà đầu tư nên theo dõi gì"
+   ],
+   [
+    "ul",
+    [
+     "Tỷ trọng xuất khẩu của doanh nghiệp đang quan tâm.",
+     "Thị trường xuất khẩu chính và mức độ phụ thuộc.",
+     "Diễn biến đàm phán và thông báo chính thức, tránh tin đồn.",
+     "Phản ứng của tỷ giá và dòng vốn ngoại."
+    ]
+   ],
+   [
+    "p",
+    "Nội dung mang tính giải thích kiến thức, không phải dự báo hay khuyến nghị."
+   ]
+  ],
+  "faq": [
+   [
+    "Mọi cổ phiếu đều bị ảnh hưởng như nhau?",
+    "Không. Doanh nghiệp hướng nội địa thường ít chịu tác động trực tiếp hơn doanh nghiệp xuất khẩu."
+   ],
+   [
+    "Ngành nào thường nhạy với thuế quan?",
+    "Các ngành xuất khẩu nhiều như dệt may, thủy sản, gỗ, linh kiện điện tử và một phần khu công nghiệp."
+   ],
+   [
+    "Có nên bán hết khi có tin thuế quan?",
+    "Quyết định nên dựa trên kế hoạch và mức chịu rủi ro của mỗi người. Phản ứng theo tin đồn thường dẫn tới bán đúng lúc giá thấp."
+   ]
+  ],
+  "rel": [
+   "lam-phat-va-chung-khoan",
+   "ty-gia-tang-anh-huong-co-phieu",
+   "day-thi-truong-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Phân biệt các loại thuế thương mại"
+   ],
+   [
+    "p",
+    "Ngoài thuế đối ứng còn có thuế chống bán phá giá, thuế chống trợ cấp và hạn ngạch. Mỗi loại áp cho phạm vi khác nhau: có loại áp cho cả quốc gia, có loại chỉ cho một mặt hàng hoặc một doanh nghiệp. Khi đọc tin, nên xem rõ thuế áp cho mặt hàng nào, mức bao nhiêu và từ khi nào."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Thuế đối ứng là mức thuế áp lên hàng nhập khẩu để cân bằng với nước đối tác.",
+     "Tác động mạnh nhất tới doanh nghiệp xuất khẩu và tâm lý thị trường.",
+     "Nên dựa vào thông báo chính thức thay vì tin đồn."
+    ]
+   ],
+   [
+    "p",
+    "Khi tin vĩ mô lớn xuất hiện, thị trường thường biến động mạnh trước khi tác động thực tế lên doanh thu và lợi nhuận kịp lộ ra trong báo cáo. Vì vậy cần tách hai lớp: phản ứng tâm lý trong ngắn hạn và tác động thật lên kết quả kinh doanh, vốn chỉ thấy khi báo cáo các quý tiếp theo được công bố."
+   ]
+  ],
+  "grp": 8
  }
 ]
