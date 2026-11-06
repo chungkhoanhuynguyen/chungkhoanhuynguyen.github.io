@@ -453,5 +453,35 @@
 "Chỉ số thanh toán hiện hành",
 "Tài sản ngắn hạn chia nợ ngắn hạn, đo khả năng trả nợ ngắn hạn.",
 "chi-so-thanh-toan-hien-hanh-la-gi"
+],
+[
+"EBIT",
+"Lợi nhuận trước lãi vay và thuế, đo hiệu quả hoạt động kinh doanh chính.",
+"ebit-la-gi"
+],
+[
+"Chứng chỉ tiền gửi",
+"Giấy tờ có giá do ngân hàng phát hành để huy động vốn, có kỳ hạn và lãi suất xác định.",
+"chung-chi-tien-gui-la-gi"
+],
+[
+"Hiệu ứng nền so sánh",
+"Phần trăm tăng trưởng bị phóng đại hoặc thu nhỏ vì kỳ so sánh thấp hoặc cao bất thường.",
+"hieu-ung-nen-so-sanh-la-gi"
+],
+[
+"YoY / QoQ",
+"So sánh với cùng kỳ năm trước (YoY) hoặc với quý liền trước (QoQ).",
+"yoy-qoq-la-gi"
+],
+[
+"Hoàn nhập dự phòng",
+"Ghi giảm khoản dự phòng đã trích dư, làm lợi nhuận kỳ đó tăng.",
+"hoan-nhap-du-phong-la-gi"
+],
+[
+"Thuế đối ứng",
+"Mức thuế một nước áp lên hàng nhập khẩu để cân bằng với rào cản của nước đối tác.",
+"thue-doi-ung-la-gi"
 ]
 ]
