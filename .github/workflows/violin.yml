@@ -1,0 +1,23 @@
+name: Nhac violin that (VSCO2 CE, CC0)
+on:
+  workflow_dispatch:
+  push:
+    paths: ['_video/engine/violin_that.py']
+permissions: { contents: write }
+jobs:
+  lam:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          command -v ffmpeg || (timeout 150 sudo apt-get update -qq && timeout 200 sudo apt-get install -y -qq ffmpeg)
+          pip install -q numpy soundfile
+          git clone --depth 1 https://github.com/sgossner/VSCO-2-CE.git /tmp/vsco
+          find /tmp/vsco -iname '*.wav' | grep -i -E 'violin|vln|cello|bass|timp' | head -60
+          python _video/engine/violin_that.py /tmp/vsco out
+          cat out/kho_mau.json
+      - run: |
+          gh release delete nhac-violin-that -y --cleanup-tag || true
+          gh release create nhac-violin-that out/*.mp3 out/kho_mau.json -t "20 mau violin that" -n "Mau VSCO 2 CE (CC0)"
+        env: { GH_TOKEN: '${{ github.token }}' }
