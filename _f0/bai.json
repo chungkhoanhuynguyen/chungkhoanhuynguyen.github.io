@@ -1269,7 +1269,9 @@
   "rel": [
    "sai-lam-cua-f0",
    "margin-la-gi",
-   "phan-tich-co-ban-va-ky-thuat"
+   "phan-tich-co-ban-va-ky-thuat",
+   "quy-tac-rui-ro-1-phan-tram",
+   "ke-hoach-giao-dich-truoc-khi-mua"
   ]
  },
  {
@@ -1356,7 +1358,9 @@
   "rel": [
    "cat-lo-la-gi",
    "dau-tu-chung-khoan-voi-10-trieu",
-   "sai-lam-cua-f0"
+   "sai-lam-cua-f0",
+   "rui-ro-thanh-khoan-co-phieu",
+   "quan-tri-rui-ro-khi-thi-truong-giam-manh"
   ],
   "add": []
  },
@@ -3171,7 +3175,9 @@
   "rel": [
    "cat-lo-la-gi",
    "tam-ly-fomo-va-hoang-loan",
-   "khi-nao-nen-ban-co-phieu"
+   "khi-nao-nen-ban-co-phieu",
+   "rui-ro-tap-trung-danh-muc",
+   "rui-ro-he-thong-va-phi-he-thong"
   ]
  },
  {
@@ -4538,7 +4544,10 @@
   "rel": [
    "cach-phan-bo-ty-trong-co-phieu",
    "ty-le-thang-va-ty-le-loi-lo",
-   "margin-va-tien-mat-khi-tich-san"
+   "margin-va-tien-mat-khi-tich-san",
+   "quy-tac-rui-ro-1-phan-tram",
+   "sut-giam-tai-khoan-drawdown-la-gi",
+   "quy-du-phong-truoc-khi-dau-tu"
   ]
  },
  {
@@ -9750,7 +9759,9 @@
    "cat-lo-la-gi",
    "nhat-ky-giao-dich",
    "overtrading-la-gi",
-   "tam-ly-fomo-va-hoang-loan"
+   "tam-ly-fomo-va-hoang-loan",
+   "nhat-ky-giao-dich-la-gi",
+   "ke-hoach-giao-dich-truoc-khi-mua"
   ],
   "viet_day": true
  },
@@ -25692,6 +25703,932 @@
    "pha-loang-co-phieu-la-gi",
    "roe-eps-la-gi",
    "trai-phieu-doanh-nghiep-rui-ro"
+  ]
+ },
+ {
+  "slug": "quy-tac-rui-ro-1-phan-tram",
+  "kw": "quy tắc rủi ro 1% mỗi lệnh",
+  "grp": 5,
+  "title": "Quy tắc rủi ro 1%: cách tính khối lượng mua theo điểm cắt lỗ",
+  "desc": "Quy tắc rủi ro 1–2% vốn mỗi lệnh là gì, công thức tính số cổ phiếu được mua từ điểm cắt lỗ, ví dụ với tài khoản 200 triệu và những lỗi hay gặp.",
+  "body": [
+   [
+    "p",
+    "Nhiều nhà đầu tư quyết định mua bao nhiêu cổ phiếu theo cảm giác: thấy mã đẹp thì mua nhiều, thấy chưa chắc thì mua ít. <b>Quy tắc rủi ro 1%</b> thay cảm giác bằng một phép tính: mỗi lệnh, nếu sai và phải <a href=\"/f0/cat-lo-la-gi.html\">cắt lỗ</a>, anh chị chỉ mất tối đa 1% (hoặc 2%) tổng vốn."
+   ],
+   [
+    "h2",
+    "Vì sao lại là 1–2%?"
+   ],
+   [
+    "p",
+    "Không ai đúng mãi. Một người có tỷ lệ thắng khá tốt vẫn có thể gặp 5–7 lệnh sai liên tiếp. Nếu mỗi lệnh mất 1% vốn, 7 lệnh sai liên tiếp làm tài khoản giảm khoảng 6,8%, vẫn hồi phục được dễ dàng. Nếu mỗi lệnh mất 10% vốn, 7 lệnh sai liên tiếp làm tài khoản mất khoảng 52%, và phải <a href=\"/f0/lo-bao-nhieu-phan-tram-thi-hoa-von.html\">tăng hơn 100% mới hòa vốn</a>."
+   ],
+   [
+    "h2",
+    "Công thức tính khối lượng mua"
+   ],
+   [
+    "p",
+    "<b>Số cổ phiếu được mua = (Tổng vốn × % rủi ro) ÷ (Giá mua − Giá cắt lỗ)</b>"
+   ],
+   [
+    "p",
+    "Phần trên tử số là số tiền tối đa anh chị chấp nhận mất. Phần dưới mẫu số là số tiền mất trên mỗi cổ phiếu nếu giá chạm điểm cắt lỗ. Như vậy, điểm cắt lỗ phải được xác định <b>trước</b>, khối lượng mua được tính <b>sau</b>."
+   ],
+   [
+    "h2",
+    "Ví dụ giả định"
+   ],
+   [
+    "p",
+    "Tài khoản 200 triệu đồng, rủi ro 1% mỗi lệnh, tức chấp nhận mất tối đa 2 triệu đồng. Định mua cổ phiếu A giá 25.000 đồng, điểm cắt lỗ 23.000 đồng (thủng vùng hỗ trợ gần nhất)."
+   ],
+   [
+    "ul",
+    [
+     "Rủi ro mỗi cổ phiếu: 25.000 − 23.000 = 2.000 đồng.",
+     "Số cổ phiếu được mua: 2.000.000 ÷ 2.000 = 1.000 cổ phiếu.",
+     "Giá trị lệnh: 1.000 × 25.000 = 25 triệu đồng, tức khoảng 12,5% tài khoản."
+    ]
+   ],
+   [
+    "p",
+    "Nếu điểm cắt lỗ xa hơn, ví dụ 21.000 đồng, rủi ro mỗi cổ phiếu là 4.000 đồng và anh chị chỉ được mua 500 cổ phiếu. Điểm cắt lỗ càng xa, khối lượng mua càng nhỏ. Đây là điểm mấu chốt: <b>quy tắc 1% không giới hạn giá trị lệnh, mà giới hạn số tiền có thể mất</b>."
+   ],
+   [
+    "h2",
+    "Hai giới hạn đi kèm"
+   ],
+   [
+    "ul",
+    [
+     "<b>Trần tỷ trọng mỗi mã:</b> kể cả khi điểm cắt lỗ rất gần, không để một mã vượt 20–25% tài khoản, vì giá có thể mở cửa giảm sàn vượt qua điểm cắt lỗ. Xem thêm <a href=\"/f0/cach-phan-bo-ty-trong-co-phieu.html\">cách phân bổ tỷ trọng</a>.",
+     "<b>Tổng rủi ro mở:</b> cộng rủi ro của tất cả lệnh đang giữ. Nếu đang có 6 lệnh, mỗi lệnh 1%, tổng rủi ro mở là 6%. Nhiều người đặt trần tổng rủi ro mở khoảng 6–8% tài khoản."
+    ]
+   ],
+   [
+    "h2",
+    "Những lỗi hay gặp"
+   ],
+   [
+    "ol",
+    [
+     "Mua trước, nghĩ điểm cắt lỗ sau. Khi đã cầm hàng, người ta thường dời điểm cắt lỗ xa dần.",
+     "Đặt điểm cắt lỗ theo số tiền muốn mất thay vì theo biểu đồ. Điểm cắt lỗ nên ở nơi mà nếu giá chạm tới thì lý do mua không còn đúng.",
+     "Dùng <a href=\"/f0/margin-la-gi.html\">margin</a> nhưng tính 1% trên vốn vay. Phải tính trên vốn tự có.",
+     "Không tính phí và thuế. Với lệnh nhỏ, phí và thuế khoảng 0,4% mỗi vòng mua bán có thể chiếm phần đáng kể trong số tiền rủi ro."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Mỗi lệnh chỉ mất tối đa 1–2% tổng vốn nếu sai.",
+     "Xác định điểm cắt lỗ trước, rồi mới tính khối lượng mua.",
+     "Giữ trần tỷ trọng mỗi mã và trần tổng rủi ro mở."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Rủi ro 1% có phải là cắt lỗ 1% không?",
+    "Không. 1% là phần trăm tổng vốn có thể mất. Điểm cắt lỗ trên giá cổ phiếu có thể là 5%, 8% hay 10%; khối lượng mua sẽ được điều chỉnh để số tiền mất vẫn chỉ là 1% tổng vốn."
+   ],
+   [
+    "Tài khoản nhỏ có cần quy tắc 1% không?",
+    "Có. Tài khoản nhỏ càng cần giữ vốn để học và tích lũy. Nếu thấy 1% quá nhỏ, có thể dùng 2%, nhưng không nên vượt mức này."
+   ],
+   [
+    "Đầu tư dài hạn có cần quy tắc này không?",
+    "Nhà đầu tư dài hạn thường không cắt lỗ theo giá ngắn hạn, nhưng vẫn cần giới hạn tỷ trọng mỗi mã và tổng rủi ro danh mục để một sai lầm không làm hỏng cả kế hoạch."
+   ]
+  ],
+  "rel": [
+   "cat-lo-la-gi",
+   "cach-phan-bo-ty-trong-co-phieu",
+   "stop-loss-bao-nhieu-phan-tram",
+   "quan-tri-von-la-gi"
+  ]
+ },
+ {
+  "slug": "sut-giam-tai-khoan-drawdown-la-gi",
+  "kw": "drawdown là gì",
+  "grp": 5,
+  "title": "Drawdown là gì? Đo mức sụt giảm tài khoản từ đỉnh",
+  "desc": "Drawdown và max drawdown là gì, cách tính mức sụt giảm từ đỉnh tài khoản, vì sao quan trọng hơn lợi nhuận trung bình và cách đặt ngưỡng dừng giao dịch.",
+  "body": [
+   [
+    "p",
+    "<b>Drawdown</b> (mức sụt giảm) là phần trăm tài khoản bị giảm tính từ đỉnh cao nhất gần nhất. <b>Max drawdown</b> là mức sụt giảm lớn nhất trong một giai đoạn. Đây là con số trả lời câu hỏi thật nhất: <i>trong lúc tệ nhất, tài khoản của anh chị đã mất bao nhiêu?</i>"
+   ],
+   [
+    "h2",
+    "Cách tính"
+   ],
+   [
+    "p",
+    "<b>Drawdown = (Giá trị đỉnh − Giá trị hiện tại) ÷ Giá trị đỉnh</b>"
+   ],
+   [
+    "p",
+    "Ví dụ giả định: tài khoản tăng từ 100 triệu lên đỉnh 150 triệu, sau đó giảm còn 105 triệu. Drawdown = (150 − 105) ÷ 150 = 30%. Dù vẫn đang lãi 5% so với vốn ban đầu, anh chị đã trải qua mức sụt 30% tính từ đỉnh."
+   ],
+   [
+    "h2",
+    "Vì sao drawdown quan trọng hơn lợi nhuận trung bình?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Toán học hồi phục:</b> sụt 20% cần tăng 25% để về đỉnh, sụt 40% cần tăng 67%, sụt 60% cần tăng 150%. Xem bảng ở bài <a href=\"/f0/lo-bao-nhieu-phan-tram-thi-hoa-von.html\">lỗ bao nhiêu thì hòa vốn</a>.",
+     "<b>Tâm lý:</b> phần lớn nhà đầu tư bỏ cuộc hoặc làm liều ở đúng giai đoạn drawdown sâu nhất, thường là gần đáy.",
+     "<b>So sánh phương pháp:</b> hai cách đầu tư cùng lãi 20%/năm, cách nào có max drawdown 15% thì dễ theo đuổi hơn nhiều so với cách có max drawdown 50%."
+    ]
+   ],
+   [
+    "h2",
+    "Tham chiếu từ thị trường"
+   ],
+   [
+    "p",
+    "VN-Index từng giảm từ khoảng 1.529 điểm (đầu 2022) xuống khoảng 874 điểm (cuối 2022), tức drawdown khoảng 43%. Giai đoạn 2007–2009, chỉ số từ khoảng 1.170 điểm xuống khoảng 235 điểm, drawdown khoảng 80%. Cổ phiếu riêng lẻ, nhất là khi dùng <a href=\"/f0/margin-la-gi.html\">margin</a>, có thể sụt sâu hơn chỉ số rất nhiều."
+   ],
+   [
+    "h2",
+    "Đặt ngưỡng drawdown cho chính mình"
+   ],
+   [
+    "ol",
+    [
+     "Ghi lại giá trị tài khoản cuối mỗi tuần, đánh dấu đỉnh cao nhất.",
+     "Đặt ngưỡng cảnh báo, ví dụ sụt 8% từ đỉnh: giảm một nửa khối lượng mỗi lệnh mới.",
+     "Đặt ngưỡng dừng, ví dụ sụt 15% từ đỉnh: ngừng mở lệnh mới, rà lại <a href=\"/f0/nhat-ky-giao-dich-la-gi.html\">nhật ký giao dịch</a> và kế hoạch trước khi quay lại.",
+     "Không nạp thêm tiền để gỡ trong lúc đang ở drawdown sâu."
+    ]
+   ],
+   [
+    "p",
+    "Các con số 8% và 15% chỉ là ví dụ. Điều quan trọng là anh chị đặt ngưỡng <b>trước</b> khi thua lỗ, khi đầu óc còn bình tĩnh."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Drawdown đo mức sụt tính từ đỉnh, không phải từ vốn ban đầu.",
+     "Sụt càng sâu, đường hồi phục càng xa theo cấp số.",
+     "Đặt sẵn ngưỡng cảnh báo và ngưỡng dừng, rồi tuân thủ."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Drawdown khác lỗ thế nào?",
+    "Lỗ tính so với vốn bỏ ra. Drawdown tính so với đỉnh cao nhất của tài khoản, nên có thể đang lãi so với vốn nhưng vẫn ở trong drawdown sâu."
+   ],
+   [
+    "Max drawdown bao nhiêu là chấp nhận được?",
+    "Tùy khẩu vị rủi ro, nhưng phần lớn nhà đầu tư cá nhân khó giữ kỷ luật khi tài khoản sụt quá 20–25% từ đỉnh. Nên chọn cách đầu tư có max drawdown nằm trong mức anh chị chịu được."
+   ],
+   [
+    "Có nên dừng giao dịch khi drawdown lớn?",
+    "Nên tạm dừng mở lệnh mới khi chạm ngưỡng đã đặt trước, để rà lại sai lầm. Dừng không có nghĩa là bán hết, mà là không làm thêm điều có thể khiến tài khoản sụt sâu hơn."
+   ]
+  ],
+  "rel": [
+   "lo-bao-nhieu-phan-tram-thi-hoa-von",
+   "quan-tri-von-la-gi",
+   "quy-tac-rui-ro-1-phan-tram",
+   "ky-luat-dau-tu"
+  ]
+ },
+ {
+  "slug": "rui-ro-tap-trung-danh-muc",
+  "kw": "rủi ro tập trung danh mục",
+  "grp": 5,
+  "title": "Rủi ro tập trung: 5 mã cùng ngành không phải là đa dạng hóa",
+  "desc": "Rủi ro tập trung danh mục là gì, vì sao nắm 5 cổ phiếu cùng ngành vẫn rủi ro như 1 mã, cách kiểm tra mức tập trung theo mã, ngành và nguồn vốn vay.",
+  "body": [
+   [
+    "p",
+    "Nhiều nhà đầu tư nghĩ mình đã <a href=\"/f0/phan-bo-von-va-quan-tri-danh-muc.html\">đa dạng hóa</a> vì danh mục có 5–6 mã. Nhưng nếu cả 6 mã đều là ngân hàng, hoặc đều là bất động sản, thì khi ngành gặp tin xấu, cả danh mục giảm cùng lúc. Đó là <b>rủi ro tập trung</b>."
+   ],
+   [
+    "h2",
+    "Ba kiểu tập trung hay gặp"
+   ],
+   [
+    "ol",
+    [
+     "<b>Tập trung theo mã:</b> một cổ phiếu chiếm trên 30–40% tài khoản.",
+     "<b>Tập trung theo ngành:</b> nhiều mã nhưng cùng chịu một yếu tố, ví dụ cùng phụ thuộc lãi suất (ngân hàng, chứng khoán, bất động sản) hoặc cùng phụ thuộc giá thép.",
+     "<b>Tập trung theo nguồn vốn:</b> dùng <a href=\"/f0/margin-la-gi.html\">margin</a> cho nhiều mã cùng lúc. Khi thị trường giảm chung, tất cả cùng bị gọi ký quỹ một lúc."
+    ]
+   ],
+   [
+    "h2",
+    "Tương quan: vì sao các mã giảm cùng nhau"
+   ],
+   [
+    "p",
+    "<b>Tương quan</b> đo mức độ hai cổ phiếu biến động cùng chiều. Cổ phiếu trong cùng một ngành thường có tương quan cao vì cùng chịu một chính sách, một chu kỳ, một dòng tiền. Ở Việt Nam, các nhóm ngân hàng, chứng khoán và bất động sản còn có tương quan với nhau qua kênh lãi suất và tín dụng."
+   ],
+   [
+    "p",
+    "Ví dụ giả định: danh mục 100 triệu chia đều 5 mã chứng khoán. Thị trường điều chỉnh, thanh khoản giảm, nhóm chứng khoán giảm trung bình 25%. Tài khoản mất khoảng 25 triệu, gần như giống hệt việc dồn hết vào 1 mã."
+   ],
+   [
+    "h2",
+    "Tự kiểm tra danh mục trong 5 phút"
+   ],
+   [
+    "ul",
+    [
+     "Không mã nào vượt 20–25% tài khoản.",
+     "Không ngành nào vượt 35–40% tài khoản.",
+     "Liệt kê yếu tố chung: nếu lãi suất tăng mạnh, bao nhiêu phần trăm danh mục bị ảnh hưởng xấu?",
+     "Nếu dùng margin, tính xem thị trường giảm 15% thì tài khoản còn bao nhiêu và có bị gọi ký quỹ không.",
+     "Giữ một phần <a href=\"/f0/margin-va-tien-mat-khi-tich-san.html\">tiền mặt</a> để không bị ép bán."
+    ]
+   ],
+   [
+    "h2",
+    "Đa dạng hóa đúng cách"
+   ],
+   [
+    "p",
+    "Đa dạng hóa không phải là mua thật nhiều mã. Danh mục 6–10 mã thuộc 3–4 ngành có động lực khác nhau thường đủ cho nhà đầu tư cá nhân. Mua quá nhiều mã lại khiến anh chị không theo dõi kịp báo cáo của từng doanh nghiệp."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Nhiều mã cùng ngành vẫn là tập trung.",
+     "Đặt trần theo mã, theo ngành và theo vốn vay.",
+     "Đa dạng hóa theo động lực tăng trưởng, không theo số lượng mã."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Nắm bao nhiêu mã là đủ đa dạng?",
+    "Với nhà đầu tư cá nhân, khoảng 6–10 mã thuộc 3–4 ngành khác nhau thường đủ. Quan trọng là các mã không cùng chịu một yếu tố rủi ro."
+   ],
+   [
+    "Ngân hàng và chứng khoán có phải hai ngành khác nhau?",
+    "Khác ngành nhưng có tương quan khá cao vì cùng nhạy với lãi suất, tín dụng và dòng tiền thị trường, nên không nên xem là đa dạng hóa hoàn toàn."
+   ],
+   [
+    "Tích sản một mã ngân hàng có rủi ro tập trung không?",
+    "Có. Tích sản dài hạn vẫn nên chia ra 2–4 mã hoặc kết hợp quỹ ETF để giảm rủi ro riêng của một doanh nghiệp."
+   ]
+  ],
+  "rel": [
+   "phan-bo-von-va-quan-tri-danh-muc",
+   "cach-phan-bo-ty-trong-co-phieu",
+   "rui-ro-khi-tich-san",
+   "margin-la-gi"
+  ]
+ },
+ {
+  "slug": "ke-hoach-giao-dich-truoc-khi-mua",
+  "kw": "kế hoạch giao dịch trước khi mua cổ phiếu",
+  "grp": 5,
+  "title": "Kế hoạch giao dịch: 6 câu phải trả lời trước khi bấm mua",
+  "desc": "Kế hoạch giao dịch gồm lý do mua, điểm vào, điểm cắt lỗ, mục tiêu, tỷ trọng và thời gian nắm giữ. Mẫu 6 câu hỏi và ví dụ điền sẵn cho người mới.",
+  "body": [
+   [
+    "p",
+    "Phần lớn quyết định sai không đến từ việc thiếu thông tin, mà đến từ việc mua khi chưa có kế hoạch. Khi đã cầm cổ phiếu, cảm xúc sẽ quyết định thay anh chị. <b>Kế hoạch giao dịch</b> là bản ghi ngắn trả lời 6 câu hỏi <b>trước</b> khi bấm mua."
+   ],
+   [
+    "h2",
+    "6 câu hỏi bắt buộc"
+   ],
+   [
+    "ol",
+    [
+     "<b>Vì sao mua?</b> Một đến hai câu: lợi nhuận tăng, định giá thấp so với lịch sử, xu hướng giá xác nhận…",
+     "<b>Mua ở đâu?</b> Vùng giá mua và cách mua (một lần hay chia 2–3 lần).",
+     "<b>Sai ở đâu?</b> Điểm <a href=\"/f0/cat-lo-la-gi.html\">cắt lỗ</a>: mức giá mà nếu chạm tới thì lý do mua không còn đúng.",
+     "<b>Mua bao nhiêu?</b> Tính theo <a href=\"/f0/quy-tac-rui-ro-1-phan-tram.html\">quy tắc rủi ro 1%</a> và trần tỷ trọng mỗi mã.",
+     "<b>Chốt lời thế nào?</b> Mục tiêu giá, hoặc điều kiện để <a href=\"/f0/chot-loi-tung-phan.html\">chốt lời từng phần</a>.",
+     "<b>Giữ bao lâu, và khi nào xem lại?</b> Ví dụ: xem lại sau báo cáo quý kế tiếp."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ điền sẵn (giả định)"
+   ],
+   [
+    "ul",
+    [
+     "Lý do: lợi nhuận 2 quý gần nhất tăng trên 20%, P/E thấp hơn trung bình 3 năm.",
+     "Vùng mua: 24.000–25.000 đồng, chia 2 lần.",
+     "Cắt lỗ: đóng cửa dưới 22.800 đồng.",
+     "Khối lượng: tài khoản 200 triệu, rủi ro 1% = 2 triệu, rủi ro mỗi cổ phiếu khoảng 2.000 đồng, mua tối đa 1.000 cổ phiếu.",
+     "Chốt lời: bán một nửa ở 29.000 đồng, phần còn lại giữ đến khi giá đóng cửa dưới đường MA20.",
+     "Xem lại: sau báo cáo tài chính quý tới hoặc khi giá chạm cắt lỗ."
+    ]
+   ],
+   [
+    "h2",
+    "Vì sao phải viết ra?"
+   ],
+   [
+    "p",
+    "Kế hoạch trong đầu rất dễ bị sửa lúc thị trường biến động. Viết ra giấy hoặc ghi chú điện thoại giúp anh chị so lại khi muốn làm khác kế hoạch. Nếu muốn đổi, hãy hỏi: <i>thông tin mới là gì?</i> Nếu chỉ là cảm giác sợ hoặc tham, giữ nguyên kế hoạch."
+   ],
+   [
+    "h2",
+    "Kế hoạch tốt không có nghĩa là lệnh thắng"
+   ],
+   [
+    "p",
+    "Một lệnh làm đúng kế hoạch vẫn có thể lỗ, và một lệnh làm sai kế hoạch vẫn có thể lãi. Hãy chấm điểm quyết định theo việc có làm đúng kế hoạch không, ghi vào <a href=\"/f0/nhat-ky-giao-dich-la-gi.html\">nhật ký giao dịch</a>. Về dài hạn, làm đúng quy trình mới tạo ra kết quả ổn định."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Không trả lời được 6 câu hỏi thì chưa mua.",
+     "Điểm cắt lỗ và khối lượng phải có trước khi đặt lệnh.",
+     "Chỉ đổi kế hoạch khi có thông tin mới, không đổi vì cảm xúc."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Đầu tư dài hạn có cần kế hoạch giao dịch?",
+    "Có, nhưng các câu hỏi khác đi: lý do sở hữu doanh nghiệp, tỷ trọng tối đa, điều kiện nào thì bán (ví dụ lợi nhuận suy giảm nhiều quý liên tiếp)."
+   ],
+   [
+    "Có cần ghi kế hoạch cho cả lệnh nhỏ?",
+    "Nên ghi. Lệnh nhỏ là lúc rèn thói quen ít tốn kém nhất."
+   ],
+   [
+    "Lỡ mua rồi mới lập kế hoạch thì sao?",
+    "Lập ngay, đặc biệt là điểm cắt lỗ và tỷ trọng. Nếu tỷ trọng đang vượt quy tắc rủi ro, giảm bớt về đúng mức."
+   ]
+  ],
+  "rel": [
+   "quy-tac-rui-ro-1-phan-tram",
+   "cat-lo-la-gi",
+   "ky-luat-dau-tu",
+   "ty-le-thang-va-ty-le-loi-lo"
+  ]
+ },
+ {
+  "slug": "rui-ro-thanh-khoan-co-phieu",
+  "kw": "rủi ro thanh khoản cổ phiếu",
+  "grp": 5,
+  "title": "Rủi ro thanh khoản: khi muốn bán mà không ai mua",
+  "desc": "Rủi ro thanh khoản cổ phiếu là gì, vì sao mã thanh khoản thấp có thể giảm sàn nhiều phiên không bán được, cách kiểm tra giá trị giao dịch và quy tắc tỷ trọng.",
+  "body": [
+   [
+    "p",
+    "Giá trên bảng điện chỉ có ý nghĩa khi anh chị bán được ở mức đó. <b>Rủi ro thanh khoản</b> là rủi ro muốn bán mà không có đủ người mua, phải hạ giá rất sâu hoặc chờ nhiều phiên. Với cổ phiếu ít giao dịch, khoản lỗ thật thường lớn hơn nhiều so với con số trên màn hình."
+   ],
+   [
+    "h2",
+    "Dấu hiệu cổ phiếu thanh khoản thấp"
+   ],
+   [
+    "ul",
+    [
+     "Giá trị giao dịch bình quân 20 phiên thấp, ví dụ dưới vài tỷ đồng mỗi phiên.",
+     "Khoảng cách giữa giá mua tốt nhất và giá bán tốt nhất rộng.",
+     "Nhiều phiên khớp rất ít hoặc không khớp.",
+     "Cổ đông lớn nắm phần lớn cổ phiếu, lượng cổ phiếu tự do chuyển nhượng ít."
+    ]
+   ],
+   [
+    "h2",
+    "Chuyện gì xảy ra khi có tin xấu?"
+   ],
+   [
+    "p",
+    "Với mã thanh khoản cao, giá giảm nhưng vẫn khớp được. Với mã thanh khoản thấp, lệnh bán dồn ở giá sàn mà không có người mua, gọi là <b>trắng bên mua</b>. Giá có thể giảm sàn nhiều phiên liên tiếp trong khi anh chị không bán được cổ phiếu nào. Nếu đang dùng <a href=\"/f0/margin-la-gi.html\">margin</a>, tình huống này còn nguy hiểm hơn vì công ty chứng khoán cũng không bán giải chấp được, khoản lỗ có thể vượt quá vốn ban đầu."
+   ],
+   [
+    "h2",
+    "Quy tắc tỷ trọng theo thanh khoản"
+   ],
+   [
+    "p",
+    "Một nguyên tắc đơn giản: <b>giá trị nắm giữ không nên vượt khoảng 10–20% giá trị giao dịch bình quân một phiên</b> của mã đó. Ví dụ giả định: mã B giao dịch bình quân 2 tỷ đồng mỗi phiên thì vị thế nên dưới khoảng 200–400 triệu đồng, để có thể thoát hết trong một đến hai phiên mà không đẩy giá giảm mạnh."
+   ],
+   [
+    "h2",
+    "Cách kiểm tra nhanh"
+   ],
+   [
+    "ol",
+    [
+     "Xem giá trị giao dịch bình quân 20 phiên trên trang từng mã của <a href=\"/f0/cach-doc-bang-gia-chung-khoan.html\">bảng giá</a>.",
+     "So vị thế dự định với con số đó.",
+     "Xem độ sâu bảng giá: ba bước giá mua tốt nhất có đủ khối lượng cho lệnh của anh chị không.",
+     "Tránh dùng margin cho mã thanh khoản thấp."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Giá chỉ thật khi bán được.",
+     "Mã thanh khoản thấp có thể giảm sàn nhiều phiên không bán được.",
+     "Giữ vị thế nhỏ so với giá trị giao dịch bình quân, không dùng margin cho mã ít giao dịch."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Bao nhiêu thì gọi là thanh khoản thấp?",
+    "Không có ngưỡng cố định. Với nhà đầu tư cá nhân, mã có giá trị giao dịch bình quân chỉ vài trăm triệu đến dưới vài tỷ đồng mỗi phiên nên được xem là thanh khoản thấp và cần giữ tỷ trọng nhỏ."
+   ],
+   [
+    "Trắng bên mua là gì?",
+    "Là tình trạng bảng giá không còn lệnh mua, chỉ có lệnh bán dồn ở giá sàn, nên người muốn bán không khớp được."
+   ],
+   [
+    "Cổ phiếu vốn hóa lớn có rủi ro thanh khoản không?",
+    "Ít hơn nhiều, nhưng trong phiên hoảng loạn, ngay cả mã lớn cũng có thể trắng bên mua trong thời gian ngắn."
+   ]
+  ],
+  "rel": [
+   "von-hoa-bluechip-penny",
+   "margin-la-gi",
+   "call-margin-la-gi",
+   "cach-phan-bo-ty-trong-co-phieu"
+  ]
+ },
+ {
+  "slug": "quy-du-phong-truoc-khi-dau-tu",
+  "kw": "quỹ dự phòng trước khi đầu tư chứng khoán",
+  "grp": 7,
+  "title": "Quỹ dự phòng: lớp bảo vệ đầu tiên trước khi đầu tư chứng khoán",
+  "desc": "Vì sao cần quỹ dự phòng 3–6 tháng chi tiêu trước khi đầu tư, tiền nào được đưa vào chứng khoán, tiền nào không, và thứ tự ưu tiên tài chính cho người mới.",
+  "body": [
+   [
+    "p",
+    "Quản trị rủi ro không bắt đầu từ điểm cắt lỗ, mà bắt đầu từ <b>số tiền nào được phép đưa vào chứng khoán</b>. Người không có quỹ dự phòng sẽ bị buộc phải bán cổ phiếu đúng lúc cần tiền, mà lúc cần tiền thường lại là lúc thị trường đang giảm."
+   ],
+   [
+    "h2",
+    "Quỹ dự phòng là gì?"
+   ],
+   [
+    "p",
+    "Là khoản tiền đủ cho <b>3–6 tháng chi tiêu thiết yếu</b> (ăn ở, đi lại, học phí, trả nợ đến hạn), gửi ở nơi rút được nhanh và an toàn như tài khoản tiết kiệm. Khoản này không đầu tư, không dùng để bắt đáy."
+   ],
+   [
+    "p",
+    "Ví dụ giả định: chi tiêu thiết yếu 15 triệu đồng mỗi tháng thì quỹ dự phòng khoảng 45–90 triệu đồng. Người có thu nhập không đều, như tự kinh doanh hay làm hoa hồng, nên giữ gần mức 6 tháng."
+   ],
+   [
+    "h2",
+    "Thứ tự ưu tiên tài chính"
+   ],
+   [
+    "ol",
+    [
+     "Trả hết nợ lãi suất cao (thẻ tín dụng, vay tiêu dùng).",
+     "Lập quỹ dự phòng 3–6 tháng.",
+     "Mua bảo hiểm sức khỏe cơ bản cho bản thân và người phụ thuộc.",
+     "Đầu tư phần tiền nhàn rỗi, bắt đầu từ <a href=\"/f0/tich-san-chung-khoan-la-gi.html\">tích sản</a> định kỳ."
+    ]
+   ],
+   [
+    "h2",
+    "Tiền nào không được đưa vào chứng khoán"
+   ],
+   [
+    "ul",
+    [
+     "Tiền sẽ cần trong 12 tháng tới: đặt cọc nhà, học phí, cưới hỏi.",
+     "Tiền vay mượn người thân hoặc vay tiêu dùng.",
+     "Tiền mà nếu mất 30% thì anh chị mất ngủ hoặc ảnh hưởng gia đình."
+    ]
+   ],
+   [
+    "h2",
+    "Vì sao điều này giúp đầu tư tốt hơn?"
+   ],
+   [
+    "p",
+    "Khi biết chắc mình không bị ép bán, anh chị có thể giữ kỷ luật trong những đợt <a href=\"/f0/sut-giam-tai-khoan-drawdown-la-gi.html\">sụt giảm</a> sâu, thậm chí mua thêm theo kế hoạch tích sản. Người không có quỹ dự phòng thường bán ở đáy, không phải vì sai về doanh nghiệp, mà vì hết tiền chi tiêu."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Quỹ dự phòng 3–6 tháng chi tiêu là lớp bảo vệ đầu tiên.",
+     "Chỉ đầu tư tiền nhàn rỗi, không dùng tiền sẽ cần trong 12 tháng.",
+     "Không bị ép bán là lợi thế lớn nhất của nhà đầu tư cá nhân."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Quỹ dự phòng nên gửi ở đâu?",
+    "Ở nơi an toàn và rút nhanh: tiết kiệm ngân hàng kỳ hạn ngắn hoặc tài khoản có thể rút trong 1–2 ngày. Không đặt trong cổ phiếu."
+   ],
+   [
+    "Đã có quỹ dự phòng có được dùng để bắt đáy?",
+    "Không. Nếu dùng quỹ dự phòng để mua cổ phiếu thì nó không còn là quỹ dự phòng."
+   ],
+   [
+    "Người mới chỉ có ít tiền thì sao?",
+    "Vẫn ưu tiên quỹ dự phòng trước, có thể song song tích sản số tiền nhỏ hằng tháng để học và tạo thói quen."
+   ]
+  ],
+  "rel": [
+   "rui-ro-khi-tich-san",
+   "quan-tri-von-la-gi",
+   "danh-muc-tich-san-mau",
+   "margin-va-tien-mat-khi-tich-san"
+  ]
+ },
+ {
+  "slug": "rui-ro-he-thong-va-phi-he-thong",
+  "kw": "rủi ro hệ thống và rủi ro phi hệ thống",
+  "grp": 5,
+  "title": "Rủi ro hệ thống và phi hệ thống: rủi ro nào đa dạng hóa được?",
+  "desc": "Rủi ro hệ thống (cả thị trường) và phi hệ thống (riêng doanh nghiệp): ví dụ thực tế, rủi ro nào đa dạng hóa được, rủi ro nào cần tiền mặt.",
+  "body": [
+   [
+    "p",
+    "Không phải rủi ro nào cũng xử lý bằng một cách. Hiểu rủi ro chia làm hai loại giúp anh chị biết khi nào nên <a href=\"/f0/phan-bo-von-va-quan-tri-danh-muc.html\">đa dạng hóa</a>, khi nào nên giữ tiền mặt."
+   ],
+   [
+    "h2",
+    "Rủi ro phi hệ thống: riêng một doanh nghiệp"
+   ],
+   [
+    "p",
+    "Là rủi ro chỉ ảnh hưởng một doanh nghiệp hoặc một nhóm nhỏ: lãnh đạo bị điều tra, mất hợp đồng lớn, nhà máy gặp sự cố, báo cáo tài chính bị kiểm toán điều chỉnh, phát hành thêm gây <a href=\"/f0/pha-loang-co-phieu-la-gi.html\">pha loãng</a>."
+   ],
+   [
+    "p",
+    "<b>Cách giảm:</b> đa dạng hóa. Nếu mỗi mã chỉ chiếm khoảng 10–15% danh mục, một doanh nghiệp gặp sự cố và giảm 40% chỉ làm danh mục mất khoảng 4–6%."
+   ],
+   [
+    "h2",
+    "Rủi ro hệ thống: cả thị trường"
+   ],
+   [
+    "p",
+    "Là rủi ro tác động lên hầu hết cổ phiếu cùng lúc: lãi suất tăng mạnh, tỷ giá biến động, khủng hoảng tài chính, dịch bệnh, dòng vốn ngoại rút ra. Năm 2020 khi dịch Covid bùng phát, VN-Index giảm về khoảng 659 điểm; năm 2022 chỉ số giảm khoảng 43% từ đỉnh. Trong những giai đoạn đó, danh mục đa dạng đến đâu cũng giảm."
+   ],
+   [
+    "p",
+    "<b>Cách giảm:</b> đa dạng hóa không giúp được nhiều. Công cụ chính là <b>tỷ trọng cổ phiếu so với tiền mặt</b>, hạn chế <a href=\"/f0/margin-la-gi.html\">margin</a>, và với nhà đầu tư dài hạn, là kỷ luật góp đều thay vì đoán đỉnh đáy."
+   ],
+   [
+    "h2",
+    "Beta: thước đo nhạy với thị trường"
+   ],
+   [
+    "p",
+    "Hệ số beta cho biết cổ phiếu thường biến động mạnh hơn hay yếu hơn thị trường. Beta 1,5 nghĩa là trong quá khứ, khi thị trường giảm 10%, cổ phiếu đó thường giảm khoảng 15%. Danh mục nhiều mã beta cao như chứng khoán, bất động sản sẽ chịu rủi ro hệ thống nặng hơn. Beta là số liệu lịch sử, không phải dự báo."
+   ],
+   [
+    "h2",
+    "Áp dụng vào danh mục"
+   ],
+   [
+    "ul",
+    [
+     "Rủi ro riêng doanh nghiệp: chia nhỏ tỷ trọng, đọc báo cáo tài chính định kỳ.",
+     "Rủi ro thị trường: điều chỉnh tỷ lệ tiền mặt, không vay quá mức, chuẩn bị kịch bản cho <a href=\"/f0/quan-tri-rui-ro-khi-thi-truong-giam-manh.html\">khi thị trường giảm mạnh</a>.",
+     "Kiểm tra beta bình quân danh mục trước những giai đoạn nhiều biến động."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Rủi ro phi hệ thống giảm được bằng đa dạng hóa.",
+     "Rủi ro hệ thống chỉ giảm được bằng tỷ trọng tiền mặt và hạn chế vay.",
+     "Đừng nghĩ nhiều mã là an toàn khi cả thị trường giảm."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Đa dạng hóa có loại bỏ hết rủi ro không?",
+    "Không. Đa dạng hóa giảm rủi ro riêng doanh nghiệp, nhưng rủi ro chung của thị trường vẫn còn."
+   ],
+   [
+    "Beta thấp có nghĩa là cổ phiếu an toàn?",
+    "Beta thấp nghĩa là trong quá khứ ít nhạy với thị trường. Cổ phiếu vẫn có thể giảm mạnh vì rủi ro riêng của doanh nghiệp."
+   ],
+   [
+    "Nhà đầu tư dài hạn xử lý rủi ro hệ thống thế nào?",
+    "Góp đều theo kế hoạch, giữ quỹ dự phòng, không vay margin, nên không bị ép bán trong những đợt giảm chung."
+   ]
+  ],
+  "rel": [
+   "rui-ro-tap-trung-danh-muc",
+   "phan-bo-von-va-quan-tri-danh-muc",
+   "quan-tri-von-la-gi",
+   "margin-la-gi"
+  ]
+ },
+ {
+  "slug": "quan-tri-rui-ro-khi-thi-truong-giam-manh",
+  "kw": "làm gì khi thị trường chứng khoán giảm mạnh",
+  "grp": 5,
+  "title": "Thị trường giảm mạnh: kịch bản 4 bước chuẩn bị trước",
+  "desc": "Làm gì khi thị trường chứng khoán giảm mạnh: kiểm tra margin, rà điểm cắt lỗ, phân loại cổ phiếu, kế hoạch tiền mặt. Kịch bản viết sẵn để không hoảng loạn.",
+  "body": [
+   [
+    "p",
+    "Thị trường giảm mạnh là chuyện chắc chắn sẽ xảy ra, chỉ không biết khi nào. Người mất nhiều tiền nhất thường không phải người chọn sai cổ phiếu, mà là người <b>không có kịch bản</b> và ra quyết định trong lúc <a href=\"/f0/tam-ly-fomo-va-hoang-loan.html\">hoảng loạn</a>. Hãy viết sẵn kịch bản khi thị trường còn bình thường."
+   ],
+   [
+    "h2",
+    "Bước 1: Kiểm tra margin và tỷ lệ ký quỹ"
+   ],
+   [
+    "p",
+    "Đây là việc đầu tiên vì đây là rủi ro bị ép bán. Tính thử: nếu thị trường giảm thêm 10% và 20%, tỷ lệ ký quỹ còn bao nhiêu, có chạm ngưỡng <a href=\"/f0/call-margin-la-gi.html\">call margin</a> không. Nếu có, giảm nợ vay ngay khi còn chủ động, đừng chờ công ty chứng khoán bán giải chấp ở giá sàn."
+   ],
+   [
+    "h2",
+    "Bước 2: Rà lại điểm cắt lỗ"
+   ],
+   [
+    "p",
+    "Các lệnh đã có kế hoạch thì làm đúng kế hoạch. Không dời điểm cắt lỗ xa hơn chỉ vì thị trường chung đang xấu. Lệnh không có điểm cắt lỗ thì đặt ngay, dựa trên <a href=\"/f0/quy-tac-rui-ro-1-phan-tram.html\">quy tắc rủi ro</a> so với vốn hiện tại."
+   ],
+   [
+    "h2",
+    "Bước 3: Phân loại cổ phiếu đang nắm"
+   ],
+   [
+    "ul",
+    [
+     "<b>Nhóm A:</b> doanh nghiệp tốt, lợi nhuận vẫn tăng, giá giảm theo thị trường. Có thể giữ, thậm chí là ứng viên mua thêm khi thị trường ổn định lại.",
+     "<b>Nhóm B:</b> lý do mua ban đầu không còn đúng (lợi nhuận suy giảm, tin xấu riêng). Ưu tiên bán.",
+     "<b>Nhóm C:</b> mã thanh khoản thấp, dùng margin, tỷ trọng quá lớn. Giảm trước vì <a href=\"/f0/rui-ro-thanh-khoan-co-phieu.html\">rủi ro thanh khoản</a> tăng mạnh khi thị trường xấu."
+    ]
+   ],
+   [
+    "h2",
+    "Bước 4: Kế hoạch tiền mặt"
+   ],
+   [
+    "p",
+    "Quyết định trước tỷ lệ tiền mặt tối thiểu, ví dụ 20–30% khi thị trường có dấu hiệu suy yếu. Nếu muốn mua khi giá thấp, chia tiền làm 3–4 phần và chỉ mua thêm khi thị trường có dấu hiệu cân bằng, không dồn hết vào một phiên giảm."
+   ],
+   [
+    "h2",
+    "Những việc không nên làm"
+   ],
+   [
+    "ol",
+    [
+     "Vay thêm margin để <a href=\"/f0/dung-lo-dong-trung-binh-gia-xuong.html\">bình quân giá xuống</a>.",
+     "Nạp thêm tiền từ quỹ dự phòng.",
+     "Bán toàn bộ trong phiên hoảng loạn mà không theo kịch bản.",
+     "Theo dõi bảng điện từng phút, liên tục đổi quyết định."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Viết kịch bản khi thị trường còn bình thường.",
+     "Thứ tự: margin, cắt lỗ, phân loại cổ phiếu, tiền mặt.",
+     "Mục tiêu là sống sót và giữ được khả năng mua khi thị trường hồi phục."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Có nên bán hết khi thị trường giảm mạnh?",
+    "Không nhất thiết. Bán các mã sai lý do ban đầu, mã dùng margin và mã thanh khoản thấp trước. Mã doanh nghiệp tốt có thể giữ theo kế hoạch."
+   ],
+   [
+    "Khi nào nên mua lại?",
+    "Khi thị trường có dấu hiệu cân bằng, ví dụ giảm chậm lại, thanh khoản ổn định. Nên chia nhỏ tiền mua nhiều lần thay vì đoán đáy một lần."
+   ],
+   [
+    "Nhà đầu tư tích sản có cần làm 4 bước này không?",
+    "Phần lớn không cần bán, nhưng vẫn nên kiểm tra không dùng margin, có quỹ dự phòng và tiếp tục góp đều theo kế hoạch."
+   ]
+  ],
+  "rel": [
+   "call-margin-la-gi",
+   "tam-ly-fomo-va-hoang-loan",
+   "rui-ro-he-thong-va-phi-he-thong",
+   "cat-lo-la-gi"
+  ]
+ },
+ {
+  "slug": "nhat-ky-giao-dich-la-gi",
+  "kw": "nhật ký giao dịch chứng khoán",
+  "grp": 5,
+  "title": "Nhật ký giao dịch: công cụ rẻ nhất để bớt lặp lại sai lầm",
+  "desc": "Nhật ký giao dịch chứng khoán gồm những cột nào, cách ghi trong 2 phút mỗi lệnh, cách tổng kết tháng để tìm sai lầm lặp lại và tỷ lệ thắng thật của mình.",
+  "body": [
+   [
+    "p",
+    "Hầu hết nhà đầu tư nhớ rõ lệnh lãi lớn nhất và quên những lệnh lỗ vì làm sai. <b>Nhật ký giao dịch</b> ghi lại từng quyết định, để anh chị nhìn thấy sai lầm của chính mình bằng số liệu thay vì bằng trí nhớ."
+   ],
+   [
+    "h2",
+    "Mỗi lệnh ghi những gì?"
+   ],
+   [
+    "ul",
+    [
+     "Ngày, mã, giá mua, khối lượng, tỷ trọng so với tài khoản.",
+     "Lý do mua (1–2 câu) và điểm cắt lỗ dự kiến, theo <a href=\"/f0/ke-hoach-giao-dich-truoc-khi-mua.html\">kế hoạch giao dịch</a>.",
+     "Ngày bán, giá bán, lãi lỗ theo tiền và theo phần trăm.",
+     "Lý do bán: đúng kế hoạch, cắt lỗ, hay bán vì cảm xúc.",
+     "Một dòng tự chấm: có làm đúng kế hoạch không (Có/Không)."
+    ]
+   ],
+   [
+    "p",
+    "Mất khoảng 2 phút mỗi lệnh. Có thể dùng bảng tính trên điện thoại hoặc sổ tay."
+   ],
+   [
+    "h2",
+    "Tổng kết cuối tháng"
+   ],
+   [
+    "ol",
+    [
+     "<b>Tỷ lệ thắng và lãi lỗ bình quân:</b> bao nhiêu lệnh lãi, lãi trung bình bao nhiêu, lỗ trung bình bao nhiêu. Xem cách đọc ở bài <a href=\"/f0/ty-le-thang-va-ty-le-loi-lo.html\">tỷ lệ thắng và tỷ lệ lời lỗ</a>.",
+     "<b>Lệnh làm đúng và làm sai kế hoạch:</b> so kết quả hai nhóm. Nhiều người phát hiện các lệnh làm sai kế hoạch chiếm phần lớn khoản lỗ.",
+     "<b>Sai lầm lặp lại:</b> mua đuổi sau phiên tăng mạnh, dời điểm cắt lỗ, bình quân giá xuống, giao dịch quá nhiều.",
+     "<b>Một điều sửa trong tháng tới:</b> chỉ chọn một điều, ví dụ không mua mã đã tăng trên 15% trong 5 phiên."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ giả định"
+   ],
+   [
+    "p",
+    "Tháng 10 có 12 lệnh: 5 lệnh lãi trung bình 8%, 7 lệnh lỗ trung bình 5%. Trong 7 lệnh lỗ có 4 lệnh mua đuổi sau phiên tăng trần. Bài học rõ ràng: bỏ thói quen mua đuổi có thể giảm phần lớn số lệnh lỗ của tháng sau."
+   ],
+   [
+    "h2",
+    "Vì sao hiệu quả?"
+   ],
+   [
+    "p",
+    "Nhật ký biến cảm giác thành số liệu. Khi thấy bằng con số rằng mình lỗ chủ yếu vì một thói quen, việc sửa trở nên cụ thể hơn nhiều so với lời khuyên chung chung như \"phải <a href=\"/f0/ky-luat-dau-tu.html\">kỷ luật</a>\"."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Ghi mỗi lệnh trong 2 phút: lý do, cắt lỗ, kết quả, có đúng kế hoạch không.",
+     "Tổng kết tháng để tìm sai lầm lặp lại.",
+     "Mỗi tháng sửa một thói quen."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Nhà đầu tư dài hạn có cần nhật ký?",
+    "Có, nhưng ghi theo quyết định mua bán và lý do sở hữu, kèm lần xem lại sau mỗi báo cáo quý."
+   ],
+   [
+    "Nên dùng công cụ gì?",
+    "Bảng tính đơn giản là đủ. Quan trọng là ghi đều đặn, không phải công cụ."
+   ],
+   [
+    "Ghi nhật ký mất thời gian quá thì sao?",
+    "Chỉ cần 5 cột bắt buộc: mã, lý do mua, điểm cắt lỗ, kết quả, có đúng kế hoạch không."
+   ]
+  ],
+  "rel": [
+   "ke-hoach-giao-dich-truoc-khi-mua",
+   "ty-le-thang-va-ty-le-loi-lo",
+   "ky-luat-dau-tu",
+   "vi-sao-nha-dau-tu-ca-nhan-thua-lo"
+  ]
+ },
+ {
+  "slug": "chot-loi-tung-phan",
+  "kw": "chốt lời từng phần",
+  "grp": 5,
+  "title": "Chốt lời từng phần: giữ lãi mà vẫn không bỏ lỡ sóng lớn",
+  "desc": "Chốt lời từng phần là gì, ba cách chốt lời phổ biến (theo mục tiêu, theo đường MA, theo cắt lỗ dời lên), ví dụ tính toán và lỗi để lãi thành lỗ.",
+  "body": [
+   [
+    "p",
+    "Quản trị rủi ro không chỉ là cắt lỗ. Để một khoản lãi 20% quay về lỗ cũng là một thất bại về quản trị rủi ro. <b>Chốt lời từng phần</b> giúp khóa một phần lợi nhuận, trong khi phần còn lại vẫn có cơ hội đi tiếp."
+   ],
+   [
+    "h2",
+    "Ba cách chốt lời phổ biến"
+   ],
+   [
+    "ol",
+    [
+     "<b>Theo mục tiêu giá:</b> bán một phần khi giá đạt mục tiêu đã đặt trong <a href=\"/f0/ke-hoach-giao-dich-truoc-khi-mua.html\">kế hoạch giao dịch</a>, ví dụ khi lãi gấp 2 lần khoảng rủi ro ban đầu.",
+     "<b>Theo đường xu hướng:</b> giữ phần còn lại cho tới khi giá đóng cửa dưới một đường <a href=\"/f0/duong-ma-la-gi.html\">trung bình động</a> đã chọn, ví dụ MA20.",
+     "<b>Dời điểm cắt lỗ lên:</b> khi giá tăng, nâng điểm cắt lỗ lên giá vốn rồi cao hơn, để lệnh không thể chuyển từ lãi thành lỗ."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ giả định"
+   ],
+   [
+    "p",
+    "Mua 1.000 cổ phiếu giá 25.000 đồng, cắt lỗ 23.000 đồng (rủi ro 2.000 đồng mỗi cổ phiếu)."
+   ],
+   [
+    "ul",
+    [
+     "Giá lên 29.000 đồng (lãi gấp 2 lần rủi ro): bán 500 cổ phiếu, khóa lãi 2 triệu đồng. Dời cắt lỗ phần còn lại lên 25.000 đồng.",
+     "Giá tiếp tục lên 33.000 đồng: dời cắt lỗ lên 30.000 đồng.",
+     "Giá quay đầu, đóng cửa 29.800 đồng: bán nốt 500 cổ phiếu, lãi thêm khoảng 2,4 triệu đồng."
+    ]
+   ],
+   [
+    "p",
+    "Tổng lãi khoảng 4,4 triệu đồng trước phí và thuế. Nếu bán hết ở 29.000 đồng, lãi 4 triệu nhưng bỏ lỡ đoạn tăng tiếp. Nếu giữ hết và không dời cắt lỗ, khi giá quay về 25.000 đồng thì lãi bằng 0."
+   ],
+   [
+    "h2",
+    "Những lỗi hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "Bán hết quá sớm vì sợ mất lãi, trong khi vẫn giữ nguyên mã đang lỗ. Đây là biểu hiện của <a href=\"/f0/ac-cam-thua-lo-la-gi.html\">ác cảm thua lỗ</a>.",
+     "Không có quy tắc nào cho phần còn lại, để lãi trôi về lỗ.",
+     "Mua lại ngay sau khi chốt lời ở giá cao hơn chỉ vì tiếc."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Chốt một phần ở mục tiêu, giữ phần còn lại theo quy tắc rõ ràng.",
+     "Dời điểm cắt lỗ lên để lệnh lãi không thành lỗ.",
+     "Quy tắc chốt lời phải có trong kế hoạch trước khi mua."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Nên chốt bao nhiêu phần trăm mỗi lần?",
+    "Phổ biến là chia đôi hoặc chia ba. Không có tỷ lệ đúng tuyệt đối, quan trọng là quyết định trước và làm đều đặn."
+   ],
+   [
+    "Đầu tư dài hạn có cần chốt lời từng phần?",
+    "Có thể dùng khi một mã tăng mạnh khiến tỷ trọng vượt quá trần đã đặt, bán bớt để đưa tỷ trọng về đúng kế hoạch."
+   ],
+   [
+    "Chốt lời xong giá tăng tiếp thì sao?",
+    "Đó là chi phí của việc kiểm soát rủi ro. Phần còn lại vẫn hưởng một phần đà tăng nếu anh chị giữ theo quy tắc."
+   ]
+  ],
+  "rel": [
+   "ke-hoach-giao-dich-truoc-khi-mua",
+   "cat-lo-la-gi",
+   "ty-le-thang-va-ty-le-loi-lo",
+   "ac-cam-thua-lo-la-gi"
   ]
  }
 ]
