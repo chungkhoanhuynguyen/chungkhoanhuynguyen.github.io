@@ -21,3 +21,7 @@ Cập nhật mỗi Chủ nhật (QL1) và ngay khi anh Huy góp ý. NV1 đọc f
 - Xen ảnh thật giữa các thẻ số: không để 2 thẻ số liền nhau quá 3 cảnh.
 - Câu thâm thúy mẫu đã dùng: "Kỳ vọng giống chiếc thang máy: đi lên từng tầng, đi xuống một mạch." / "Tiền không biến mất, tiền chỉ chạy về chỗ nó thấy an toàn." / "Thế giới hắt hơi, Việt Nam có khi cảm muộn vài phiên." (không lặp lại ở số sau)
 - Dữ liệu: du_lieu.json có the_gioi.chi_so (pct từng mã), the_gioi.tin (tiêu đề mac.bin), vn_index.
+
+## 6/11 – bài học của QL1 (anh Huy nhắc "từ đầu không bổ sung luôn")
+- Khi dựng chương trình mới: rà HẾT nguồn dữ liệu web đang có (mw, mwh, rs, news, wm, mac, vimo…) và đưa vào ngay bản đầu, không chờ anh Huy nhắc.
+- Ngày thế giới biến động mạnh (chỉ số lớn ±2% trở lên) thì tin thế giới lên câu mở, không để cuối.
