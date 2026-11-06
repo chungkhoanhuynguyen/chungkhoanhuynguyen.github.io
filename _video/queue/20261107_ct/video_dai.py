@@ -166,3 +166,65 @@ _chen("CT0711F", "Câu 2", [
 _chen("CT0711F", "Câu 4", [
  T(("THỬ THÁCH", "NĂM 2008"), "Niềm tin của Bogle bị thử thách nặng nhất năm hai nghìn không trăm lẻ tám. Chỉ số S và P năm trăm giảm khoảng ba mươi bảy phần trăm trong một năm. Rất nhiều người bán quỹ chỉ số ở đáy và thề không quay lại. Bogle lên truyền hình nhắc đi nhắc lại một câu: đừng làm gì cả, cứ giữ vững lộ trình. Mười năm sau, những ai giữ được đã thấy tài sản của mình cao hơn đáy năm hai nghìn không trăm lẻ chín khoảng bốn lần. Những người bán ở đáy thì phần lớn lỡ toàn bộ nhịp hồi phục.", anh="2008 financial crisis newspaper", ch="Thử thách năm 2008", moc=True),
 ])
+
+# ===== BỔ SUNG 7/11 05:00 vòng 2: đủ ≥6 phút (lời đọc ≥1.250 chữ) =====
+_chen("CT0711B", "Chương 3", [
+ T(("VÌ SAO ÍT AI", "LÀM NHƯ ÔNG"), "Câu hỏi tự nhiên là vì sao rất ít người làm được như ông Read, dù công thức nghe quá đơn giản. Em nghĩ có ba lý do. Lý do thứ nhất là sự sốt ruột, vì ai cũng muốn giàu trong vài năm chứ không muốn đợi sáu mươi năm. Lý do thứ hai là sự so sánh, vì nhìn người quen khoe lãi lớn, chúng ta thấy cách chậm rãi của mình thật kém cỏi. Lý do thứ ba là cảm giác phải làm gì đó, trong khi việc đúng đắn nhất đôi khi lại là không làm gì cả."),
+])
+_chen("CT0711B", "Chương 5", [
+ T(("QUY TRÌNH", "5 BƯỚC"), "Em tóm tắt cách của ông Read thành năm bước mà người đi làm lương bình thường áp dụng được. Bước một, ngay đầu tháng trích một khoản cố định đem đầu tư, trước khi tiêu bất cứ thứ gì. Bước hai, chỉ chọn doanh nghiệp đầu ngành mà mình hiểu cách họ kiếm tiền. Bước ba, chia ra nhiều mã để một sai lầm không làm sụp cả danh mục. Bước bốn, tái đầu tư cổ tức. Bước năm, mặc kệ tiếng ồn hằng ngày của thị trường và chỉ xem lại danh mục mỗi quý."),
+])
+_chen("CT0711B", "Chương 6", [
+ T(("BA CÂU HỎI", "TỰ KIỂM TRA"), "Trước khi kết thúc phần này, em đề nghị anh chị tự hỏi ba câu. Câu một, mỗi tháng mình có trích tiền đầu tư trước khi tiêu không, hay chỉ đầu tư khi còn dư. Câu hai, mình có thể kể rõ doanh nghiệp mình đang giữ kiếm tiền bằng cách nào không. Câu ba, nếu thị trường giảm ba mươi phần trăm vào tháng sau, mình có ngủ được không. Nếu một trong ba câu khiến anh chị lưỡng lự, đó chính là việc cần sửa đầu tiên."),
+])
+_chen("CT0711C", "Chương 2", [
+ T(("TIỀN KHÔNG", "PHẢI VẤN ĐỀ"), "Điều em muốn anh chị chú ý là Livermore không thiếu trí thông minh, không thiếu thông tin và cũng không thiếu tiền. Thứ ông thiếu là một hệ thống bảo vệ chính mình sau mỗi lần thắng. Trong chứng khoán, người ta hay tin rằng cứ giỏi hơn là sẽ an toàn hơn. Câu chuyện của ông cho thấy điều ngược lại, vì càng giỏi, người ta càng dễ tin vào phán đoán của mình và càng dám đặt cược lớn hơn."),
+])
+_chen("CT0711C", "Chương 4", [
+ T(("BA LẦN", "PHÁ SẢN"), "Nhiều người không biết rằng Livermore phá sản không chỉ một lần. Ông từng mất sạch vốn nhiều lần trong đời, rồi lại gượng dậy kiếm lại. Điều đó cho thấy ông có kỹ năng, nhưng cũng cho thấy một mô thức lặp lại: thắng lớn, tăng đòn bẩy, thua lớn, làm lại. Một chiến lược mà phải làm lại từ đầu nhiều lần thì không phải là chiến lược bền vững, dù mỗi lần ông kiếm lại đều rất ấn tượng."),
+])
+_chen("CT0711C", "Chương 5", [
+ T(("NHỮNG LUẬT", "ÔNG ĐỂ LẠI"), "Dù kết cục buồn, Livermore để lại vài nguyên tắc vẫn đúng đến ngày nay. Ông nói đừng bao giờ bình quân giá xuống khi vị thế đang lỗ. Ông nói hãy để lợi nhuận chạy nhưng cắt lỗ nhanh. Ông cũng nói tiền lớn nằm ở việc ngồi yên khi đúng xu hướng. Điều đáng tiếc là chính ông đã không giữ nổi những nguyên tắc ấy ở những năm cuối đời, và đó là lời nhắc rằng biết luật chưa đủ, phải có cơ chế buộc mình tuân theo."),
+])
+_chen("CT0711D", "Chương 1", [
+ T(("ĐỒNG TIỀN", "ĐẦU TIÊN"), "Câu chuyện bắt đầu từ một quyết định rất nhỏ. Cô Grace Groner khi ấy còn trẻ, lương thư ký chỉ đủ sống giản dị, nhưng cô vẫn dành ra một khoản để mua ba cổ phiếu của công ty nơi cô làm việc. Cô không hề biết mình đang gieo một hạt giống. Cô chỉ nghĩ rằng đó là một khoản tiết kiệm nhỏ, và cô để yên suốt phần đời còn lại của mình."),
+])
+_chen("CT0711D", "Chương 2", [
+ T(("PHÉP NHÂN", "ÂM THẦM"), "Anh chị hãy hình dung cổ phiếu ấy như một cây nhỏ trồng trong vườn. Mỗi năm nó trả cổ tức, và cô dùng cổ tức đó mua thêm cổ phiếu mới. Cổ phiếu mới lại sinh cổ tức mới. Trong nhiều năm đầu, con số tăng rất chậm nên chẳng ai để ý. Nhưng phép nhân âm thầm đó chạy mỗi ngày, và sau vài chục năm nó bắt đầu tạo ra những bước nhảy mà chính cô cũng ngạc nhiên."),
+])
+_chen("CT0711D", "Chương 4", [
+ T(("BÀI HỌC", "CHO NGƯỜI TRẺ"), "Điều em thích nhất ở câu chuyện này là nó dành cho người trẻ. Anh chị không cần một khoản vốn lớn mới bắt đầu, chỉ cần bắt đầu sớm và không phá vỡ thứ mình đã xây. Mỗi năm chậm lại là mất đi một phần lớn của đường cong cuối cùng, vì lãi kép thưởng nhiều nhất cho những năm cuối. Người bắt đầu muộn mười năm không thể bù lại bằng cách làm việc chăm hơn."),
+])
+_chen("CT0711D", "Chương 5", [
+ T(("TIỀN LÀ", "PHƯƠNG TIỆN"), "Cuối đời, bà Grace vẫn sống trong một căn hộ nhỏ, mặc đồ cũ và không mua gì xa xỉ. Với bà, tiền không phải đích đến mà là phương tiện để làm điều có ý nghĩa. Bà dùng gần như toàn bộ tài sản để lập quỹ học bổng cho các sinh viên trường mình từng học. Em nghĩ đó là cách kết thúc đẹp nhất cho một đời đầu tư kiên nhẫn: tiền được dùng để mở đường cho người khác."),
+])
+_chen("CT0711D", "Tổng kết", [
+ T(("TÓM LẠI", "CÂU CHUYỆN NÀY"), "Nếu phải nói gọn bài học của bà Grace Groner, em sẽ nói bốn ý. Một, bắt đầu sớm, dù số tiền nhỏ. Hai, chọn doanh nghiệp tốt và giữ nó thật lâu. Ba, tái đầu tư cổ tức thay vì tiêu. Bốn, đừng bán vì sợ hãi trong những phiên thị trường hoảng loạn. Bốn ý này nghe không hấp dẫn, nhưng chúng là thứ đã biến ba cổ phiếu thành hàng triệu đô la."),
+])
+_chen("CT0711E", "Chương 1", [
+ T(("TUỔI MƯỜI MỘT", "VÀ MỘT GIÁ MUA"), "Buffett mười một tuổi cùng chị gái mua cổ phiếu Cities Service ưu đãi với giá ba mươi tám đô la một cổ phiếu. Cổ phiếu giảm xuống khoảng hai mươi bảy đô la, và cậu bé ngày nào cũng lo lắng. Khi giá hồi lên khoảng bốn mươi đô la, cậu bán ngay cho nhẹ lòng. Điều đáng nhớ là sau đó cổ phiếu còn tăng lên hơn hai trăm đô la. Cậu bé học được rằng cảm xúc là kẻ thù lớn nhất của lệnh mua."),
+])
+_chen("CT0711E", "Chương 2", [
+ T(("CẢM GIÁC", "ĐAU TIẾC"), "Em muốn dừng lại ở cảm giác đau tiếc, vì nó chính là bài học. Khi bán sớm rồi thấy giá tiếp tục tăng, nhà đầu tư thường tự trách rồi lao vào mua đuổi ở mức cao hơn. Buffett thì làm khác: ông biến nỗi đau đó thành quy tắc. Từ đó ông không bán những doanh nghiệp tốt chỉ để thoát khỏi sự bất an, và ông chỉ bán khi lý do ban đầu để mua không còn đúng nữa."),
+])
+_chen("CT0711E", "Chương 3", [
+ T(("BA CÂU HỎI", "TRƯỚC KHI BÁN"), "Từ đó em rút ra ba câu hỏi để anh chị tự hỏi trước khi bấm bán. Câu một, lý do mua ban đầu của mình còn đúng không. Câu hai, mình bán vì doanh nghiệp xấu đi hay vì mình đang sợ. Câu ba, nếu hôm nay chưa có cổ phiếu này, mình có mua nó ở mức giá hiện tại không. Nếu câu trả lời cho câu ba là có, thì rất có thể mình đang bán vì cảm xúc chứ không phải vì lý trí."),
+])
+_chen("CT0711E", "Chương 4", [
+ T(("ĐỪNG SỐNG", "BẰNG HỒI TƯỞNG"), "Một cạm bẫy khác là sống bằng hồi tưởng, kiểu giá mà hôm đó mình mua thêm. Hồi tưởng luôn dễ dàng vì chúng ta đã biết kết quả. Lúc quyết định thật sự, mọi thứ đều mù mờ. Vì vậy thay vì tiếc nuối, anh chị nên viết nhật ký giao dịch: ghi lý do mua, giá mục tiêu và điểm sai trước khi vào lệnh. Cuối quý đọc lại, anh chị sẽ thấy rõ mình sai ở đâu và đúng ở đâu."),
+])
+_chen("CT0711E", "Chương 5", [
+ T(("BẮT ĐẦU", "TỪ LỆNH NHỎ"), "Điều em thích là Buffett không bắt đầu bằng một thương vụ lớn mà bằng một lệnh nhỏ mắc sai lầm. Điều đó nghĩa là sai lầm đầu đời không phải dấu chấm hết, mà là học phí rẻ nhất mà anh chị từng trả. Nếu anh chị đang có những lệnh lỗ đầu tiên, đừng vội xóa ứng dụng. Hãy ghi lại điều mình học được, vì khoản học phí đó chỉ rẻ khi anh chị thật sự rút ra bài học từ nó."),
+])
+_chen("CT0711F", "Câu 1", [
+ T(("TẠI SAO", "ÍT AI LÀM"), "Câu hỏi đặt ra là nếu quỹ chỉ số hiệu quả như vậy thì vì sao không phải ai cũng dùng. Em nghĩ có hai lý do. Thứ nhất, nó nhàm chán, vì không có câu chuyện về cổ phiếu bay cao để kể với người quen. Thứ hai, ngành tài chính kiếm tiền từ phí giao dịch và phí quản lý, nên họ không có động lực quảng bá thứ rẻ nhất. Bogle đi ngược dòng đó, và vì thế ông bị nhiều người ở Phố Wall xem là kẻ gây rối."),
+])
+_chen("CT0711F", "Câu 3", [
+ T(("ĐỪNG TÌM", "KIM TRONG BÃI CỎ"), "Bogle có một cách ví von rất hay: thay vì mất công tìm cây kim trong đống cỏ khô, hãy mua cả đống cỏ. Tìm đúng một cổ phiếu hơn thị trường là chuyện rất khó, và ngay cả các chuyên gia cũng thường thất bại sau khi trừ phí. Mua cả thị trường nghĩa là anh chị nhận phần lợi nhuận trung bình của nền kinh tế, mà không phải đoán ai thắng ai thua."),
+])
+_chen("CT0711F", "Câu 4", [
+ T(("KỶ LUẬT", "LÀ THỨ KHÓ NHẤT"), "Điều khó nhất ở quỹ chỉ số không phải chọn quỹ, mà là giữ kỷ luật khi thị trường giảm. Người mua quỹ chỉ số nhưng bán tháo ở đáy vẫn thua, dù công cụ rất tốt. Vì vậy Bogle nhấn mạnh việc đặt một kế hoạch cố định: góp đều mỗi tháng, không nhìn giá mỗi ngày, và chỉ điều chỉnh tỷ trọng khi hoàn cảnh cá nhân thay đổi."),
+])
+_chen("CT0711F", "Câu 5", [
+ T(("BA VIỆC", "LÀM NGAY"), "Nếu muốn áp dụng ngay hôm nay, anh chị làm ba việc. Việc một, liệt kê tất cả khoản phí mình đang trả cho các quỹ và dịch vụ đầu tư. Việc hai, đặt lịch góp cố định hằng tháng vào một sản phẩm phí thấp, đa dạng. Việc ba, đặt quy tắc không bán khi thị trường giảm, trừ khi mục tiêu tài chính của mình thay đổi. Chỉ ba việc đó đã đủ để đi trước phần lớn nhà đầu tư."),
+])
