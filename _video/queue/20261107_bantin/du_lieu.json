@@ -1,0 +1,591 @@
+{
+ "ngay": "2026-11-06",
+ "cap_nhat": "15:59 06/11/2026",
+ "suc_manh_dong_tien": 36.4,
+ "dong_tien_20": [
+  31.8,
+  30.2,
+  30.3,
+  29.3,
+  30.2,
+  32.3,
+  34.4,
+  41.0,
+  44.1,
+  45.1,
+  45.1,
+  44.9,
+  44.4,
+  42.7,
+  37.3,
+  30.5,
+  29.4,
+  33.3,
+  36.0,
+  36.4
+ ],
+ "do_rong": [
+  113,
+  60,
+  220
+ ],
+ "keo_len": [
+  [
+   "MSN",
+   0.44
+  ],
+  [
+   "CTG",
+   0.39
+  ],
+  [
+   "VPL",
+   0.34
+  ],
+  [
+   "VPB",
+   0.31
+  ],
+  [
+   "STB",
+   0.3
+  ]
+ ],
+ "de_xuong": [
+  [
+   "VIC",
+   -5.56
+  ],
+  [
+   "VHM",
+   -2.08
+  ],
+  [
+   "VCB",
+   -1.06
+  ],
+  [
+   "MCH",
+   -0.9
+  ],
+  [
+   "FPT",
+   -0.87
+  ]
+ ],
+ "nganh": [
+  [
+   "Hàng lâu bền",
+   1.23
+  ],
+  [
+   "Dịch vụ tiêu dùng",
+   0.98
+  ],
+  [
+   "Chứng khoán",
+   0.48
+  ],
+  [
+   "Dược, y tế",
+   -0.02
+  ],
+  [
+   "Tiêu dùng",
+   -0.2
+  ],
+  [
+   "Sản xuất",
+   -0.39
+  ],
+  [
+   "Bảo hiểm",
+   -0.52
+  ],
+  [
+   "Điện, nước",
+   -0.58
+  ],
+  [
+   "Dịch vụ",
+   -0.59
+  ],
+  [
+   "Ngân hàng",
+   -0.61
+  ],
+  [
+   "Tài chính",
+   -0.66
+  ],
+  [
+   "Dầu khí",
+   -0.97
+  ],
+  [
+   "Bán lẻ",
+   -0.99
+  ],
+  [
+   "Xây dựng, dịch vụ CN",
+   -1.13
+  ],
+  [
+   "Vận tải, cảng",
+   -1.15
+  ],
+  [
+   "Phân phối",
+   -1.35
+  ],
+  [
+   "Bất động sản",
+   -1.39
+  ],
+  [
+   "Khoáng sản, thép",
+   -1.43
+  ],
+  [
+   "Hóa chất, phân bón",
+   -1.58
+  ],
+  [
+   "Điện tử",
+   -2.46
+  ],
+  [
+   "Công nghệ",
+   -3.9
+  ]
+ ],
+ "a50": 34.6,
+ "a200": 18.7,
+ "top10": [
+  {
+   "s": "NVB",
+   "close": 15.9,
+   "d1": 1.92,
+   "r3": 42.0,
+   "r6": 47.2,
+   "r12": 8.9,
+   "fromhi": -7.0
+  },
+  {
+   "s": "MSR",
+   "close": 61.4,
+   "d1": -2.23,
+   "r3": 68.7,
+   "r6": 57.6,
+   "r12": 176.2,
+   "fromhi": -7.5
+  },
+  {
+   "s": "MSB",
+   "close": 16.35,
+   "d1": -0.61,
+   "r3": 21.5,
+   "r6": 45.3,
+   "r12": 62.8,
+   "fromhi": -0.6
+  },
+  {
+   "s": "TCH",
+   "close": 13.5,
+   "d1": 3.85,
+   "r3": 22.7,
+   "r6": -10.5,
+   "r12": -28.0,
+   "fromhi": -29.1
+  },
+  {
+   "s": "VPL",
+   "close": 92.9,
+   "d1": 0.98,
+   "r3": 14.8,
+   "r6": 4.4,
+   "r12": 20.5,
+   "fromhi": -12.6
+  },
+  {
+   "s": "PET",
+   "close": 50.0,
+   "d1": -1.96,
+   "r3": 28.5,
+   "r6": 51.7,
+   "r12": 142.8,
+   "fromhi": -12.1
+  },
+  {
+   "s": "NKG",
+   "close": 12.15,
+   "d1": -2.8,
+   "r3": 10.5,
+   "r6": -3.2,
+   "r12": -16.5,
+   "fromhi": -22.5
+  },
+  {
+   "s": "HDC",
+   "close": 12.85,
+   "d1": -1.15,
+   "r3": 9.8,
+   "r6": -20.3,
+   "r12": -50.8,
+   "fromhi": -50.5
+  },
+  {
+   "s": "CTS",
+   "close": 23.35,
+   "d1": 2.41,
+   "r3": 6.9,
+   "r6": 9.5,
+   "r12": -22.0,
+   "fromhi": -21.6
+  }
+ ],
+ "tin": [
+  {
+   "ma": "DSC",
+   "loai": "quyen",
+   "tieu_de": "Thông báo ngày ĐKCC lấy ý kiến cổ đông bằng văn bản lần 01 năm 2026",
+   "gio": "18:04"
+  },
+  {
+   "ma": "CTS",
+   "loai": "quyen",
+   "tieu_de": "Thông báo hủy ngày ĐKCC để thực hiện quyền lấy ý kiến cổ đông bằng văn bản theo Thông báo số 2085 ngày 21/10/2026 của HOSE",
+   "gio": "18:02"
+  },
+  {
+   "ma": "ANT",
+   "loai": "dhcd",
+   "tieu_de": "Nghị quyết HĐQT số 82, 83 ngày 06/11/2026",
+   "gio": "17:57"
+  },
+  {
+   "ma": "SPM",
+   "loai": "quyen",
+   "tieu_de": "Thông báo ngày ĐKCC chi trả cổ tức năm 2025 bằng tiền",
+   "gio": "17:56"
+  },
+  {
+   "ma": "EVG",
+   "loai": "khac",
+   "tieu_de": "Nhắc nhở chậm CBTT Nghị quyết HĐQT",
+   "gio": "17:52"
+  },
+  {
+   "ma": "ELC",
+   "loai": "nb",
+   "tieu_de": "Báo cáo kết quả giao dịch cổ phiếu của người nội bộ Phan Chiến Thắng",
+   "gio": "17:50"
+  },
+  {
+   "ma": "HMC",
+   "loai": "dhcd",
+   "tieu_de": "Nghị quyết HĐQT về việc chấp thuận giao dịch bán hàng hóa với tổ chức có liên quan của công ty mẹ",
+   "gio": "17:49"
+  },
+  {
+   "ma": "HSL",
+   "loai": "khac",
+   "tieu_de": "Giấy chứng nhận đăng ký doanh nghiệp thay đổi lần thứ 22",
+   "gio": "17:47"
+  },
+  {
+   "ma": "AST",
+   "loai": "ns",
+   "tieu_de": "Thông báo thay đổi nhân sự (kèm Bản cung cấp thông tin)",
+   "gio": "17:47"
+  },
+  {
+   "ma": "AST",
+   "loai": "khac",
+   "tieu_de": "Điều lệ Công ty sửa đổi, bổ sung ngày 06/11/2026",
+   "gio": "17:46"
+  },
+  {
+   "ma": "KOS",
+   "loai": "nb",
+   "tieu_de": "Báo cáo kết quả giao dịch cổ phiếu của người nội bộ Nguyễn Thị Phương Thảo",
+   "gio": "17:46"
+  },
+  {
+   "ma": "KOS",
+   "loai": "nb",
+   "tieu_de": "Báo cáo kết quả giao dịch cổ phiếu của người nội bộ Nguyễn Thị Hằng",
+   "gio": "17:46"
+  },
+  {
+   "ma": "KOS",
+   "loai": "nb",
+   "tieu_de": "Báo cáo kết quả giao dịch cổ phiếu của người nội bộ Nguyễn Việt Cường",
+   "gio": "17:44"
+  },
+  {
+   "ma": "KOS",
+   "loai": "nb",
+   "tieu_de": "Báo cáo kết quả giao dịch cổ phiếu của tổ chức có liên quan đến người nội bộ CTCP Đầu tư Leo Regulus",
+   "gio": "17:43"
+  },
+  {
+   "ma": "AST",
+   "loai": "dhcd",
+   "tieu_de": "Biên bản, Nghị quyết ĐHĐCĐ bất thường năm 2026 (kèm tài liệu họp)",
+   "gio": "17:42"
+  },
+  {
+   "ma": "MDG",
+   "loai": "quyen",
+   "tieu_de": "Nghị quyết và Biên bản kiểm phiếu bằng hình thức lấy ý kiến cổ đông bằng văn bản",
+   "gio": "17:41"
+  },
+  {
+   "ma": "AST",
+   "loai": "dhcd",
+   "tieu_de": "Nghị quyết HĐQT số 16 ngày 06/11/2026",
+   "gio": "17:40"
+  },
+  {
+   "ma": "TCX",
+   "loai": "dhcd",
+   "tieu_de": "Nghị quyết HĐQT số 010511 ngày 05/11/2026",
+   "gio": "17:40"
+  },
+  {
+   "ma": "AFX",
+   "loai": "khac",
+   "tieu_de": "Giấy chứng nhận đăng ký chào bán thêm CP ra công chúng",
+   "gio": "17:39"
+  },
+  {
+   "ma": "TCX",
+   "loai": "dhcd",
+   "tieu_de": "Nghị quyết HĐQT về việc TCBS làm đại lý phân phối cho quỹ TCMS",
+   "gio": "17:37"
+  },
+  {
+   "ma": "YEG",
+   "loai": "dhcd",
+   "tieu_de": "Nghị quyết HĐQT số 456 ngày 05/11/2026 (kèm Đơn từ nhiệm TV BKS)",
+   "gio": "17:37"
+  },
+  {
+   "ma": "TDP",
+   "loai": "dhcd",
+   "tieu_de": "Nghị quyết HĐQT về việc nhận hoàn trả một phần vốn góp tại CTCP Thuận Đức JB",
+   "gio": "17:35"
+  },
+  {
+   "ma": "TLG",
+   "loai": "nb",
+   "tieu_de": "Thông báo về giao dịch có liên quan tới cổ đông lớn TLAT",
+   "gio": "17:35"
+  },
+  {
+   "ma": "TMS",
+   "loai": "dhcd",
+   "tieu_de": "Nghị quyết HĐQT số 136 ngày 06/11/2026",
+   "gio": "17:34"
+  },
+  {
+   "ma": "TMS",
+   "loai": "dhcd",
+   "tieu_de": "Thông báo thay đổi nhân sự - Bổ nhiệm Phó Tổng Giám đốc (kèm Nghị quyết HĐQT)",
+   "gio": "17:34"
+  },
+  {
+   "ma": "YEG",
+   "loai": "dhcd",
+   "tieu_de": "Nghị quyết HĐQT số 457 ngày 05/11/2026",
+   "gio": "17:34"
+  },
+  {
+   "ma": "DBT",
+   "loai": "quyen",
+   "tieu_de": "Thông báo ngày ĐKCC trả cổ tức năm 2025 bằng cổ phiếu",
+   "gio": "17:33"
+  },
+  {
+   "ma": "TMS",
+   "loai": "dhcd",
+   "tieu_de": "Nghị quyết HĐQT số 137 ngày 06/11/2026",
+   "gio": "17:33"
+  },
+  {
+   "ma": "TMS",
+   "loai": "dhcd",
+   "tieu_de": "Nghị quyết HĐQT số 138 ngày 06/11/2026",
+   "gio": "17:33"
+  },
+  {
+   "ma": "YEG",
+   "loai": "ns",
+   "tieu_de": "Thông báo thay đổi nhân sự - Người được ủy quyền CBTT",
+   "gio": "17:32"
+  },
+  {
+   "ma": "YEG",
+   "loai": "dhcd",
+   "tieu_de": "Thông báo thay đổi nhân sự - Chủ tịch HĐQT, Tổng Giám đốc (kèm Nghị quyết HĐQT)",
+   "gio": "17:31"
+  },
+  {
+   "ma": "VPL",
+   "loai": "dhcd",
+   "tieu_de": "Nghị quyết HĐQT về việc miễn nhiệm và bổ nhiệm Giám đốc Tài chính của Công ty",
+   "gio": "17:28"
+  },
+  {
+   "ma": "VPL",
+   "loai": "ns",
+   "tieu_de": "Thông báo thay đổi nhân sự - Miễn nhiệm và bổ nhiệm Giám đốc Tài chính",
+   "gio": "17:27"
+  },
+  {
+   "ma": "SJS",
+   "loai": "nb",
+   "tieu_de": "Thông báo giao dịch cổ phiếu của tổ chức có liên quan của Người nội bộ Công ty Cổ phần Chứng khoán Quốc Gia",
+   "gio": "17:26"
+  },
+  {
+   "ma": "BVB",
+   "loai": "khac",
+   "tieu_de": "Báo cáo kết quả phát hành CP theo chương trình lựa chọn cho người lao động (kèm tài liệu)",
+   "gio": "17:25"
+  },
+  {
+   "ma": "BSR",
+   "loai": "dhcd",
+   "tieu_de": "Nghị quyết HĐQT điều chỉnh Kế hoạch hoạt động SXKD năm 2026",
+   "gio": "17:23"
+  },
+  {
+   "ma": "BCE",
+   "loai": "dhcd",
+   "tieu_de": "Nghị quyết HĐQT số 18 ngày 06/11/2026",
+   "gio": "17:21"
+  },
+  {
+   "ma": "MBB",
+   "loai": "khac",
+   "tieu_de": "Quyết định của HĐQT về việc thay đổi địa điểm Chi nhánh Nam Gia Lâm, thay đổi địa điểm và tên gọi PGD Nam Trung Yên",
+   "gio": "17:19"
+  },
+  {
+   "ma": "TNT",
+   "loai": "dhcd",
+   "tieu_de": "Nghị quyết HĐQT về việc góp vốn cùng người có liên quan để thành lập Công ty con - DATANA",
+   "gio": "17:16"
+  },
+  {
+   "ma": "VPX",
+   "loai": "dhcd",
+   "tieu_de": "Biên bản kiểm phiếu - Nghị quyết ĐHĐCĐ về việc lấy ý kiến cổ đông bằng văn bản lần 2 năm 2026 và tài liệu kèm theo",
+   "gio": "17:14"
+  }
+ ],
+ "vn_index": {
+  "val": "1.725,36",
+  "d1": -0.8829628948774482,
+  "m1": -0.782647199204134
+ },
+ "the_gioi": {
+  "chi_so": {
+   "gold": {
+    "ten": "Vàng thế giới",
+    "gia": 4046.3,
+    "pct": -1.63
+   },
+   "brent": {
+    "ten": "Dầu Brent",
+    "gia": 98.24,
+    "pct": -0.05
+   },
+   "wti": {
+    "ten": "Dầu WTI",
+    "gia": 90.69,
+    "pct": 0.19
+   },
+   "spx": {
+    "ten": "S&P 500",
+    "gia": 7389.68,
+    "pct": 0.49
+   },
+   "dji": {
+    "ten": "Dow Jones",
+    "gia": 51099.91,
+    "pct": -0.82
+   },
+   "ixic": {
+    "ten": "Nasdaq",
+    "gia": 24651.77,
+    "pct": 1.39
+   },
+   "n225": {
+    "ten": "Nikkei 225",
+    "gia": 57434.77,
+    "pct": -5.96
+   },
+   "kospi": {
+    "ten": "KOSPI",
+    "gia": 5059.69,
+    "pct": -6.02
+   },
+   "dxy": {
+    "ten": "DXY (chỉ số USD)",
+    "gia": 102.34,
+    "pct": 0.78
+   },
+   "us10": {
+    "ten": "TP Mỹ 10 năm (lợi suất)",
+    "gia": 4.864,
+    "pct": 0.56
+   },
+   "usdvnd": {
+    "ten": "USD/VND",
+    "gia": 25580.0,
+    "pct": -0.46
+   },
+   "btc": {
+    "ten": "Bitcoin",
+    "gia": 75450.0,
+    "pct": -0.65
+   }
+  },
+  "tin": [
+   {
+    "ngay": "2026-11-07",
+    "vung": "Mỹ",
+    "tieu_de": "Chứng khoán Mỹ phiên 06/11: S&P 500 +0,49% (7.389,68 điểm), Dow Jones −0,82%, Nasdaq +1,39%"
+   },
+   {
+    "ngay": "2026-11-07",
+    "vung": "Hàng hoá",
+    "tieu_de": "Vàng và dầu phiên 06/11: vàng −1,63% (4.046,3 USD/ounce), Brent −0,05% (98,24 USD/thùng), WTI +0,19%"
+   },
+   {
+    "ngay": "2026-11-06",
+    "vung": "Châu Á",
+    "tieu_de": "Chứng khoán Nhật, Hàn phiên 06/11: Nikkei 225 −5,96% (57.434,77 điểm), KOSPI −6,02%"
+   },
+   {
+    "ngay": "2026-11-06",
+    "vung": "Mỹ",
+    "tieu_de": "Chứng khoán Mỹ phiên 05/11: S&P 500 −4,36% (7.353,73 điểm), Dow Jones −3,44%, Nasdaq −5,52%"
+   },
+   {
+    "ngay": "2026-11-06",
+    "vung": "Hàng hoá",
+    "tieu_de": "Vàng và dầu phiên 05/11: vàng +0,99% (4.113,5 USD/ounce), Brent +3,88% (98,29 USD/thùng), WTI +2,72%"
+   },
+   {
+    "ngay": "2026-11-05",
+    "vung": "Châu Á",
+    "tieu_de": "Chứng khoán Nhật, Hàn phiên 05/11: Nikkei 225 −1,79% (61.077,90 điểm), KOSPI −5,28%"
+   }
+  ],
+  "fed": "Fed giữ nguyên lãi suất điều hành ở 3,75–4,00% (biểu quyết 10–2, 2 thành viên muốn tăng 0,25 điểm %)"
+ }
+}
