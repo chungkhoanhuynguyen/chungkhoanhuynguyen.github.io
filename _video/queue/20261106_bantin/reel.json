@@ -1,17 +1,18 @@
 [
  {
   "key": "BT0611",
-  "tieu_de": "Bản tin Phong Thần 6/11: VIC kéo lùi chỉ số, dòng tiền 35/100, NVB giữ ngôi đầu",
+  "tieu_de": "Bản tin Phong Thần 6/11: Mỹ giảm 4%, Nhật Hàn giảm 6%, VN-Index chỉ giảm 0,9% – VIC kéo lùi chỉ số",
   "hook": [
-   "PHONG THẦN 6/11",
-   "VIC KÉO CẢ LỚP"
+   "MỸ –4%, NHẬT HÀN –6%",
+   "VIỆT NAM CHỈ –0,9%"
   ],
   "nhan": "BẢN TIN PHONG THẦN",
-  "short_caption": "Bản tin Phong Thần 6/11: VIC một mình kéo tụt 5,6 điểm, dòng tiền 35/100 đang ngồi im, NVB – MSR – MSB dẫn bảng cổ phiếu khỏe nhất.",
+  "short_caption": "Bản tin Phong Thần 6/11: Phố Wall giảm hơn 4%, Nikkei và KOSPI mất 6%, VN-Index chỉ lùi 0,88% về 1.725 điểm. VIC một mình kéo tụt 5,6 điểm, dòng tiền 35/100 đang ngồi im.",
   "tags": [
    "chungkhoan",
    "bantinchungkhoan",
    "VNIndex",
+   "chungkhoanthegioi",
    "phongthan",
    "cophieu"
   ],
@@ -28,15 +29,33 @@
   "canh": [
    {
     "chu_to": "PHONG THẦN 6/11",
-    "loi": "Em chào anh chị, đây là Bản tin Phong Thần phiên 6/11. Hôm nay 220 mã giảm, chỉ 113 mã tăng. Bảng điện đỏ, nhưng câu chuyện đáng kể lại nằm ở chỗ khác.",
-    "loi_doc": "Em chào anh chị, đây là Bản tin Phong Thần phiên sáu tháng mười một. Hôm nay hai trăm hai mươi mã giảm, chỉ một trăm mười ba mã tăng. Bảng điện đỏ, nhưng câu chuyện đáng kể lại nằm ở chỗ khác.",
-    "anh": "Ho Chi Minh City Stock Exchange",
+    "loi": "Em chào anh chị, đây là Bản tin Phong Thần phiên 6/11. Đêm qua chứng khoán Mỹ giảm hơn 4%, sáng nay Nhật và Hàn Quốc cùng mất 6%. Còn VN-Index hôm nay chỉ lùi 0,88%, về 1.725 điểm.",
+    "loi_doc": "Em chào anh chị, đây là Bản tin Phong Thần phiên sáu tháng mười một. Đêm qua chứng khoán Mỹ giảm hơn bốn phần trăm, sáng nay Nhật và Hàn Quốc cùng mất sáu phần trăm. Còn VN-Index hôm nay chỉ lùi không phẩy tám mươi tám phần trăm, về một nghìn bảy trăm hai mươi lăm điểm.",
+    "anh": "New York Stock Exchange",
     "tin": 1
    },
    {
+    "chu_to": "PHỐ WALL ĐÊM QUA",
+    "loi": "Ở Mỹ, Nasdaq giảm 5,5%, S&P 500 giảm 4,4%. Nhóm công nghệ từng được mua vì kỳ vọng thì nay bị bán cũng vì kỳ vọng. Kỳ vọng giống chiếc thang máy: đi lên từng tầng, nhưng đi xuống thì một mạch.",
+    "loi_doc": "Ở Mỹ, Nasdaq giảm năm phẩy năm phần trăm, S and P năm trăm giảm bốn phẩy bốn phần trăm. Nhóm công nghệ từng được mua vì kỳ vọng thì nay bị bán cũng vì kỳ vọng. Kỳ vọng giống chiếc thang máy: đi lên từng tầng, nhưng đi xuống thì một mạch.",
+    "anh": "Wall Street New York"
+   },
+   {
+    "chu_to": "THẾ GIỚI",
+    "loi": "Sáng nay Nikkei giảm 5,96%, KOSPI giảm 6,02%. Vàng giảm nhẹ 0,85%, dầu Brent gần như đứng yên, chỉ có đồng USD tăng. Khi cả thế giới cùng bán, tiền không biến mất, tiền chỉ chạy về chỗ nó thấy an toàn.",
+    "loi_doc": "Sáng nay Nikkei giảm năm phẩy chín mươi sáu phần trăm, KOSPI giảm sáu phẩy không hai phần trăm. Vàng giảm nhẹ không phẩy tám mươi lăm phần trăm, dầu Brent gần như đứng yên, chỉ có đồng đô la Mỹ tăng. Khi cả thế giới cùng bán, tiền không biến mất, tiền chỉ chạy về chỗ nó thấy an toàn.",
+    "hinh": "hinh/the_gioi.png"
+   },
+   {
+    "chu_to": "VIỆT NAM ĐỨNG VỮNG",
+    "loi": "So với hàng xóm mất 6%, VN-Index giảm chưa tới 1% là bình tĩnh hơn nhiều. Nhưng đứng vững hôm nay chưa phải miễn nhiễm. Thị trường thế giới hắt hơi, Việt Nam có khi cảm muộn vài phiên.",
+    "loi_doc": "So với hàng xóm mất sáu phần trăm, VN-Index giảm chưa tới một phần trăm là bình tĩnh hơn nhiều. Nhưng đứng vững hôm nay chưa phải miễn nhiễm. Thị trường thế giới hắt hơi, Việt Nam có khi cảm muộn vài phiên.",
+    "anh": "Tokyo Stock Exchange"
+   },
+   {
     "chu_to": "BẢNG ĐIỆN",
-    "loi": "VN-Index giống điểm trung bình của cả lớp, nhưng bạn nào to con thì được nhân hệ số cao. Hôm nay bạn VIC làm bài kém, một mình kéo tụt 5,6 điểm, VHM thêm 2,1 điểm. 113 bạn làm bài tốt cộng lại vẫn không gỡ nổi. Nên khi chỉ số giảm, chưa chắc cả lớp đều học dở.",
-    "loi_doc": "VN-Index giống điểm trung bình của cả lớp, nhưng bạn nào to con thì được nhân hệ số cao. Hôm nay bạn V I C làm bài kém, một mình kéo tụt năm phẩy sáu điểm, V H M thêm hai phẩy một điểm. Một trăm mười ba bạn làm bài tốt cộng lại vẫn không gỡ nổi. Nên khi chỉ số giảm, chưa chắc cả lớp đều học dở.",
+    "loi": "Trong nước, VN-Index giống điểm trung bình của cả lớp, nhưng bạn nào to con thì được nhân hệ số cao. Hôm nay 220 mã giảm, 113 mã tăng. Bạn VIC làm bài kém, một mình kéo tụt 5,6 điểm, VHM thêm 2,1 điểm. 113 bạn làm bài tốt cộng lại vẫn không gỡ nổi. Nên khi chỉ số giảm, chưa chắc cả lớp đều học dở.",
+    "loi_doc": "Trong nước, VN-Index giống điểm trung bình của cả lớp, nhưng bạn nào to con thì được nhân hệ số cao. Hôm nay hai trăm hai mươi mã giảm, một trăm mười ba mã tăng. Bạn V I C làm bài kém, một mình kéo tụt năm phẩy sáu điểm, V H M thêm hai phẩy một điểm. Một trăm mười ba bạn làm bài tốt cộng lại vẫn không gỡ nổi. Nên khi chỉ số giảm, chưa chắc cả lớp đều học dở.",
     "hinh": "hinh/do_rong.png"
    },
    {

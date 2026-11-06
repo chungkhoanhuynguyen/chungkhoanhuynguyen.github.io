@@ -81,22 +81,44 @@ def the_nganh(sec, out):
         d.text((560 + bw + 14, y + 6), f"{v:+.2f}%".replace(".", ","), font=F("Bold", 34), fill=c)
     im.save(out)
 
+def the_the_gioi(wm, out):
+    im, d = nen("THẾ GIỚI ĐÊM QUA – SÁNG NAY", "Chỉ số và hàng hoá phiên gần nhất")
+    ten = {"spx": "S&P 500 (Mỹ)", "ixic": "Nasdaq (Mỹ)", "dji": "Dow Jones (Mỹ)", "n225": "Nikkei 225 (Nhật)", "kospi": "KOSPI (Hàn)", "gold": "Vàng thế giới", "brent": "Dầu Brent", "dxy": "Chỉ số USD (DXY)"}
+    S = {x[0]: x for x in wm["s"]}; y = 170
+    for k in ("spx", "ixic", "dji", "n225", "kospi", "gold", "brent", "dxy"):
+        if k not in S: continue
+        v = S[k][6]; ch = (v[-1] / v[-2] - 1) * 100; c = XANH if ch >= 0 else DO
+        d.text((44, y), ten[k], font=F("Bold", 38), fill=TRANG)
+        d.text((560, y), f"{v[-1]:,.2f}".replace(",", "X").replace(".", ",").replace("X", "."), font=F("SemiBold", 34), fill=MO)
+        d.text((800, y), f"{ch:+.2f}%".replace(".", ","), font=F("Black", 38), fill=c); y += 76
+    im.save(out)
+
+def the_gioi_data(wm, mac):
+    S = {x[0]: x for x in wm["s"]}; o = {}
+    for k, x in S.items():
+        v = x[6]
+        if len(v) >= 2: o[k] = dict(ten=x[1], gia=v[-1], pct=round((v[-1] / v[-2] - 1) * 100, 2))
+    return dict(chi_so=o, tin=[dict(ngay=n[1], vung=n[3], tieu_de=n[5]) for n in mac.get("n", [])[:6]],
+                fed=mac.get("fed", {}).get("ttl", ""))
+
 def main():
     lo = sys.argv[1]; ngay = sys.argv[2] if len(sys.argv) > 2 else None
     od = os.path.join(HERE, "queue", lo); hd = os.path.join(od, "hinh"); os.makedirs(hd, exist_ok=True)
     D = lambda f: hncodec.load(os.path.join(ROOT, "data", f + ".bin"))
     mw, mwh, rs, nw = D("mw"), D("mwh"), D("rs"), D("news")
+    wm, mac, vimo = D("wm"), D("mac"), D("vimo")
     ngay = ngay or mw.get("date")
     ms_hist = [x for x in mwh.get("ms", []) if x is not None]; ms = ms_hist[-1] if ms_hist else 50
     tin = [dict(ma=x[3], loai=x[4], tieu_de=x[5], gio=x[2]) for x in nw["n"] if x[1] == ngay][:40]
     du = dict(ngay=ngay, cap_nhat=mw.get("updated"), suc_manh_dong_tien=ms, dong_tien_20=ms_hist[-20:], do_rong=mw["breadth"],
               keo_len=mw["up"][:5], de_xuong=mw["dn"][:5], nganh=mw.get("sec", []), a50=mw.get("a50"), a200=mw.get("a200"),
-              top10=[{k: x[k] for k in ("s", "close", "d1", "r3", "r6", "r12", "fromhi")} for x in rs["top"][:10]], tin=tin)
+              top10=[{k: x[k] for k in ("s", "close", "d1", "r3", "r6", "r12", "fromhi")} for x in rs["top"][:10]], tin=tin, vn_index=vimo.get("vn"), the_gioi=the_gioi_data(wm, mac))
     json.dump(du, open(os.path.join(od, "du_lieu.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     the_dong_tien(ms, ms_hist, os.path.join(hd, "dong_tien.png"))
     the_do_rong(mw["breadth"], mw["up"], mw["dn"], os.path.join(hd, "do_rong.png"))
     the_top10(rs["top"], os.path.join(hd, "top10.png"), rs.get("updated", ""))
     the_nganh(mw.get("sec", []), os.path.join(hd, "nganh.png"))
+    the_the_gioi(wm, os.path.join(hd, "the_gioi.png"))
     print("bantin", lo, ngay, "ms", ms)
 
 if __name__ == "__main__":

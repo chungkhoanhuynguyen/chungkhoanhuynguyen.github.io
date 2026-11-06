@@ -1,7 +1,7 @@
 {
  "ngay": "2026-11-06",
  "cap_nhat": "15:59 06/11/2026",
- "suc_manh_dong_tien": 34.7,
+ "suc_manh_dong_tien": 36.4,
  "dong_tien_20": [
   31.8,
   30.2,
@@ -22,7 +22,7 @@
   29.4,
   33.3,
   36.0,
-  34.7
+  36.4
  ],
  "do_rong": [
   113,
@@ -485,5 +485,107 @@
    "tieu_de": "Giấy xác nhận về việc thay đổi nội dung đăng ký doanh nghiệp",
    "gio": "14:44"
   }
- ]
+ ],
+ "vn_index": {
+  "val": "1.725,36",
+  "d1": -0.8829628948774482,
+  "m1": -0.782647199204134
+ },
+ "the_gioi": {
+  "chi_so": {
+   "gold": {
+    "ten": "Vàng thế giới",
+    "gia": 4078.4,
+    "pct": -0.85
+   },
+   "brent": {
+    "ten": "Dầu Brent",
+    "gia": 97.92,
+    "pct": -0.38
+   },
+   "wti": {
+    "ten": "Dầu WTI",
+    "gia": 90.39,
+    "pct": -0.14
+   },
+   "spx": {
+    "ten": "S&P 500",
+    "gia": 7353.73,
+    "pct": -4.36
+   },
+   "dji": {
+    "ten": "Dow Jones",
+    "gia": 51523.06,
+    "pct": -3.44
+   },
+   "ixic": {
+    "ten": "Nasdaq",
+    "gia": 24315.0,
+    "pct": -5.52
+   },
+   "n225": {
+    "ten": "Nikkei 225",
+    "gia": 57434.77,
+    "pct": -5.96
+   },
+   "kospi": {
+    "ten": "KOSPI",
+    "gia": 5059.69,
+    "pct": -6.02
+   },
+   "dxy": {
+    "ten": "DXY (chỉ số USD)",
+    "gia": 102.01,
+    "pct": 0.45
+   },
+   "us10": {
+    "ten": "TP Mỹ 10 năm (lợi suất)",
+    "gia": 4.837,
+    "pct": -1.16
+   },
+   "usdvnd": {
+    "ten": "USD/VND",
+    "gia": 25680.0,
+    "pct": -0.07
+   },
+   "btc": {
+    "ten": "Bitcoin",
+    "gia": 76136.0,
+    "pct": 0.26
+   }
+  },
+  "tin": [
+   {
+    "ngay": "2026-11-07",
+    "vung": "Hàng hoá",
+    "tieu_de": "Vàng và dầu phiên 06/11: vàng −0,85% (4.078,4 USD/ounce), Brent −0,38% (97,92 USD/thùng), WTI −0,14%"
+   },
+   {
+    "ngay": "2026-11-06",
+    "vung": "Châu Á",
+    "tieu_de": "Chứng khoán Nhật, Hàn phiên 06/11: Nikkei 225 −5,96% (57.434,77 điểm), KOSPI −6,02%"
+   },
+   {
+    "ngay": "2026-11-06",
+    "vung": "Mỹ",
+    "tieu_de": "Chứng khoán Mỹ phiên 05/11: S&P 500 −4,36% (7.353,73 điểm), Dow Jones −3,44%, Nasdaq −5,52%"
+   },
+   {
+    "ngay": "2026-11-06",
+    "vung": "Hàng hoá",
+    "tieu_de": "Vàng và dầu phiên 05/11: vàng +0,99% (4.113,5 USD/ounce), Brent +3,88% (98,29 USD/thùng), WTI +2,72%"
+   },
+   {
+    "ngay": "2026-11-05",
+    "vung": "Châu Á",
+    "tieu_de": "Chứng khoán Nhật, Hàn phiên 05/11: Nikkei 225 −1,79% (61.077,90 điểm), KOSPI −5,28%"
+   },
+   {
+    "ngay": "2026-11-05",
+    "vung": "Mỹ",
+    "tieu_de": "Chứng khoán Mỹ phiên 04/11: S&P 500 +1,58% (7.688,62 điểm), Dow Jones +3,03%, Nasdaq +1,44%"
+   }
+  ],
+  "fed": "Fed giữ nguyên lãi suất điều hành ở 3,75–4,00% (biểu quyết 10–2, 2 thành viên muốn tăng 0,25 điểm %)"
+ }
 }
