@@ -21,7 +21,7 @@ def kiem(canh, cau_hoi=None, tin_nong=True):
         if re.search(r"\b(\w+) \1\b", t, re.I): loi.append("CẢNH BÁO cảnh %d: lặp từ liền nhau" % (i + 1))
     if tin_nong and canh:
         t0 = canh[0].get("loi", "")
-        if len(t0.split()) < 15 or not re.search(r"\bvừa\b|\bhôm nay\b|\bsáng nay\b|\bchiều nay\b|\btối qua\b", t0):
+        if len(t0.split()) < 15 or not re.search(r"\bvừa\b|\bhôm nay\b|\bsáng nay\b|\bchiều nay\b|\btối qua\b|\bphiên\b", t0, re.I):
             loi.append("LỖI cảnh 1: chưa nói rõ TIN GÌ (ai – vừa làm gì – bao nhiêu – khi nào)")
     if cau_hoi is not None:
         q = cau_hoi.get("loi", "")

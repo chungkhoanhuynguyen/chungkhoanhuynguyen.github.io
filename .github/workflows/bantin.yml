@@ -1,0 +1,22 @@
+name: Ban tin Phong Than (du lieu + the hinh)
+# 16:40 giờ VN thứ 2–6: dựng du_lieu.json + thẻ hình cho bản tin tối. NV1 viết reel.json dựa trên du_lieu.json.
+on:
+  schedule: [{cron: "40 9 * * 1-5"}]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -q pillow numpy
+      - run: |
+          LO="$(TZ=Asia/Ho_Chi_Minh date +%Y%m%d)_bantin"
+          python _video/bantin.py "$LO"
+          git config user.name "hn-bot"; git config user.email "hn-bot@users.noreply.github.com"
+          git add "_video/queue/$LO/du_lieu.json" "_video/queue/$LO/hinh"
+          git commit -qm "Ban tin $LO: du lieu + the hinh" || exit 0
+          for i in 1 2 3 4; do git pull --rebase -q && git push -q && break; sleep 6; done

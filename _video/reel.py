@@ -51,11 +51,16 @@ def ve_anh(im, ph, t, T, y0, y1):
     """Ảnh thật ở giữa (zoom chậm Ken Burns), viền tím sáng."""
     bw, bh = W - 72, y1 - y0; x0 = 36
     if ph is not None:
-        z = 1.0 + 0.08 * min(1, t / max(T, 0.1))
-        r = max(bw / ph.width, bh / ph.height) * z
-        p = ph.resize((int(ph.width * r) + 1, int(ph.height * r) + 1), Image.BILINEAR)
-        ox = (p.width - bw) // 2; oy = (p.height - bh) // 2
-        p = p.crop((ox, oy, ox + bw, oy + bh))
+        if ph.info.get("fit"):  # thẻ số liệu: giữ trọn khung, phóng rất nhẹ
+            r = min(bw / ph.width, bh / ph.height) * (1.0 + 0.02 * min(1, t / max(T, 0.1)))
+            q = ph.resize((int(ph.width * r), int(ph.height * r)), Image.BILINEAR)
+            p = Image.new("RGB", (bw, bh), (20, 10, 38)); p.paste(q, ((bw - q.width) // 2, (bh - q.height) // 2))
+        else:
+            z = 1.0 + 0.08 * min(1, t / max(T, 0.1))
+            r = max(bw / ph.width, bh / ph.height) * z
+            p = ph.resize((int(ph.width * r) + 1, int(ph.height * r) + 1), Image.BILINEAR)
+            ox = (p.width - bw) // 2; oy = (p.height - bh) // 2
+            p = p.crop((ox, oy, ox + bw, oy + bh))
     else:
         p = Image.new("RGB", (bw, bh), (34, 16, 60)); dd = ImageDraw.Draw(p)
         for k in range(0, bw + bh, 46): dd.line([k, 0, k - bh, bh], fill=(44, 22, 76), width=14)
@@ -64,6 +69,7 @@ def ve_anh(im, ph, t, T, y0, y1):
     im.paste(Image.new("RGB", (W, H), TIM_S), (0, 0), gl.filter(ImageFilter.GaussianBlur(14)))
     ImageDraw.Draw(im).rounded_rectangle([x0 - 4, y0 - 4, x0 + bw + 3, y0 + bh + 3], 38, fill=TIM_S)
     im.paste(p, (x0, y0), m)
+    if ph is not None and ph.info.get("fit"): return
     sh = Image.new("RGBA", (bw, 260), (0, 0, 0, 0)); sd = ImageDraw.Draw(sh)
     for k in range(260): sd.line([0, k, bw, k], fill=(10, 4, 20, int(200 * k / 260)))
     im.paste(sh, (x0, y0 + bh - 260), Image.composite(sh, Image.new("RGBA", sh.size), m.crop((0, bh - 260, bw, bh))))
@@ -124,17 +130,20 @@ def khung(R, i, t, T, ph, tong_t, tong_T):
     yb = ve_dau(im, R.get("hook"), R.get("nhan"))
     y0 = max(yb + 24, 430); y1 = 1360
     ve_anh(im, ph, t, T, y0, y1)
-    ve_chu_to(im, c.get("chu_to", ""), t, y1, c.get("hoi", 0))
+    if not c.get("hinh"): ve_chu_to(im, c.get("chu_to", ""), t, y1, c.get("hoi", 0))
     if c.get("web"): ve_web_to(im, t, (y0 + y1) // 2 - 60)
     ve_phu_de(im, bo_mien_tru(c.get("loi", "")), t, T, 1420)
     ve_cuoi(im, tong_t / max(tong_T, 0.1))
     return im
 
-def anh_canh(R, kho):
+def anh_canh(R, kho, qd=""):
     out = []
     for c in R["canh"]:
         ph = None
-        if kho is not None:
+        if c.get("hinh"):  # thẻ số liệu tự dựng (bản tin): đường dẫn trong thư mục lô
+            try: ph = Image.open(os.path.join(qd, c["hinh"])).convert("RGB"); ph.info["fit"] = 1
+            except Exception as e: print("hinh: loi", e, flush=True)
+        elif kho is not None:
             try: ph = kho.cho({"anh": c.get("anh", ""), "label": c.get("chu_to", ""), "say": c.get("loi", "")}, R.get("tieu_de", ""))
             except Exception as e: print("anh: bo qua", e, flush=True)
         out.append(ph)
@@ -174,7 +183,7 @@ def main():
     try:
         import anh; kho = anh.Kho(WORK + "/anh")
     except Exception: kho = None
-    phs = anh_canh(R, kho) if "--khong-anh" not in sys.argv else [None] * len(R["canh"])
+    phs = anh_canh(R, kho, QD) if "--khong-anh" not in sys.argv else [None] * len(R["canh"])
     if "--khung" in sys.argv:
         for i in (0, len(R["canh"]) // 2, len(R["canh"]) - 1):
             khung(R, i, 1.2, 4, phs[i], i * 4 + 1.2, len(R["canh"]) * 4).save(os.path.join(OUT, "%s_khung%d.png" % (key, i)))

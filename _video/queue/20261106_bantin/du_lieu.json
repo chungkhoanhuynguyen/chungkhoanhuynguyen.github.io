@@ -1,0 +1,489 @@
+{
+ "ngay": "2026-11-06",
+ "cap_nhat": "15:59 06/11/2026",
+ "suc_manh_dong_tien": 34.7,
+ "dong_tien_20": [
+  31.8,
+  30.2,
+  30.3,
+  29.3,
+  30.2,
+  32.3,
+  34.4,
+  41.0,
+  44.1,
+  45.1,
+  45.1,
+  44.9,
+  44.4,
+  42.7,
+  37.3,
+  30.5,
+  29.4,
+  33.3,
+  36.0,
+  34.7
+ ],
+ "do_rong": [
+  113,
+  60,
+  220
+ ],
+ "keo_len": [
+  [
+   "MSN",
+   0.44
+  ],
+  [
+   "CTG",
+   0.39
+  ],
+  [
+   "VPL",
+   0.34
+  ],
+  [
+   "VPB",
+   0.31
+  ],
+  [
+   "STB",
+   0.3
+  ]
+ ],
+ "de_xuong": [
+  [
+   "VIC",
+   -5.56
+  ],
+  [
+   "VHM",
+   -2.08
+  ],
+  [
+   "VCB",
+   -1.06
+  ],
+  [
+   "MCH",
+   -0.9
+  ],
+  [
+   "FPT",
+   -0.87
+  ]
+ ],
+ "nganh": [
+  [
+   "Hàng lâu bền",
+   1.23
+  ],
+  [
+   "Dịch vụ tiêu dùng",
+   0.98
+  ],
+  [
+   "Chứng khoán",
+   0.48
+  ],
+  [
+   "Dược, y tế",
+   -0.02
+  ],
+  [
+   "Tiêu dùng",
+   -0.2
+  ],
+  [
+   "Sản xuất",
+   -0.39
+  ],
+  [
+   "Bảo hiểm",
+   -0.52
+  ],
+  [
+   "Điện, nước",
+   -0.58
+  ],
+  [
+   "Dịch vụ",
+   -0.59
+  ],
+  [
+   "Ngân hàng",
+   -0.61
+  ],
+  [
+   "Tài chính",
+   -0.66
+  ],
+  [
+   "Dầu khí",
+   -0.97
+  ],
+  [
+   "Bán lẻ",
+   -0.99
+  ],
+  [
+   "Xây dựng, dịch vụ CN",
+   -1.13
+  ],
+  [
+   "Vận tải, cảng",
+   -1.15
+  ],
+  [
+   "Phân phối",
+   -1.35
+  ],
+  [
+   "Bất động sản",
+   -1.39
+  ],
+  [
+   "Khoáng sản, thép",
+   -1.43
+  ],
+  [
+   "Hóa chất, phân bón",
+   -1.58
+  ],
+  [
+   "Điện tử",
+   -2.46
+  ],
+  [
+   "Công nghệ",
+   -3.9
+  ]
+ ],
+ "a50": 34.6,
+ "a200": 18.7,
+ "top10": [
+  {
+   "s": "NVB",
+   "close": 15.9,
+   "d1": 1.92,
+   "r3": 42.0,
+   "r6": 47.2,
+   "r12": 8.9,
+   "fromhi": -7.0
+  },
+  {
+   "s": "MSR",
+   "close": 61.4,
+   "d1": -2.23,
+   "r3": 68.7,
+   "r6": 57.6,
+   "r12": 176.2,
+   "fromhi": -7.5
+  },
+  {
+   "s": "MSB",
+   "close": 16.35,
+   "d1": -0.61,
+   "r3": 21.5,
+   "r6": 45.3,
+   "r12": 62.8,
+   "fromhi": -0.6
+  },
+  {
+   "s": "TCH",
+   "close": 13.5,
+   "d1": 3.85,
+   "r3": 22.7,
+   "r6": -10.5,
+   "r12": -28.0,
+   "fromhi": -29.1
+  },
+  {
+   "s": "VPL",
+   "close": 92.9,
+   "d1": 0.98,
+   "r3": 14.8,
+   "r6": 4.4,
+   "r12": 20.5,
+   "fromhi": -12.6
+  },
+  {
+   "s": "PET",
+   "close": 50.0,
+   "d1": -1.96,
+   "r3": 28.5,
+   "r6": 51.7,
+   "r12": 142.8,
+   "fromhi": -12.1
+  },
+  {
+   "s": "NKG",
+   "close": 12.15,
+   "d1": -2.8,
+   "r3": 10.5,
+   "r6": -3.2,
+   "r12": -16.5,
+   "fromhi": -22.5
+  },
+  {
+   "s": "HDC",
+   "close": 12.85,
+   "d1": -1.15,
+   "r3": 9.8,
+   "r6": -20.3,
+   "r12": -50.8,
+   "fromhi": -50.5
+  },
+  {
+   "s": "CTS",
+   "close": 23.35,
+   "d1": 2.41,
+   "r3": 6.9,
+   "r6": 9.5,
+   "r12": -22.0,
+   "fromhi": -21.6
+  }
+ ],
+ "tin": [
+  {
+   "ma": "DST",
+   "loai": "dhcd",
+   "tieu_de": "Biên bản họp Đại hội đồng cổ đông bất thường 2026",
+   "gio": "16:59"
+  },
+  {
+   "ma": "ECI",
+   "loai": "dhcd",
+   "tieu_de": "Thông báo thay đổi ngày họp đại hội cổ đông năm 2026",
+   "gio": "16:56"
+  },
+  {
+   "ma": "NAS",
+   "loai": "ns",
+   "tieu_de": "Thay đổi nhân sự",
+   "gio": "16:35"
+  },
+  {
+   "ma": "VSE",
+   "loai": "dhcd",
+   "tieu_de": "Nghị quyết Hội đồng quản trị",
+   "gio": "16:33"
+  },
+  {
+   "ma": "LLM",
+   "loai": "dhcd",
+   "tieu_de": "Nghị quyết Hội đồng quản trị",
+   "gio": "16:32"
+  },
+  {
+   "ma": "BCC",
+   "loai": "ns",
+   "tieu_de": "Thay đổi nhân sự",
+   "gio": "16:23"
+  },
+  {
+   "ma": "VPB",
+   "loai": "dhcd",
+   "tieu_de": "Nghị quyết HĐQT phê duyệt, chấp thuận phương án mua lại trước hạn Trái phiếu VPB12516",
+   "gio": "16:23"
+  },
+  {
+   "ma": "VNT",
+   "loai": "nb",
+   "tieu_de": "Công ty cổ phần Transimex - người có liên quan đến Ủy viên HĐQT - đăng ký mua 100.000 CP",
+   "gio": "16:22"
+  },
+  {
+   "ma": "VNF",
+   "loai": "nb",
+   "tieu_de": "Công ty cổ phần Transimex - người có liên quan đến Ủy viên HĐQT - đăng ký mua 1.000.000 CP",
+   "gio": "16:20"
+  },
+  {
+   "ma": "UDJ",
+   "loai": "quyen",
+   "tieu_de": "Ngày đăng ký cuối cùng lấy ý kiến cổ đông bằng văn bản",
+   "gio": "16:09"
+  },
+  {
+   "ma": "MKP",
+   "loai": "quyen",
+   "tieu_de": "Ngày đăng ký cuối cùng lấy ý kiến cổ đông bằng văn bản",
+   "gio": "16:02"
+  },
+  {
+   "ma": "KTC",
+   "loai": "dhcd",
+   "tieu_de": "Ngày đăng ký cuối cùng Tổ chức Đại hội đồng cổ đông bất thường năm 2026",
+   "gio": "16:00"
+  },
+  {
+   "ma": "VST",
+   "loai": "nb",
+   "tieu_de": "Công đoàn CTCP Vận tải và Thuê tàu biển Việt Nam - người có liên quan đến Phó Tổng Giám đốc; Ủy viên HĐQT - đã bán 5.000 CP",
+   "gio": "16:00"
+  },
+  {
+   "ma": "VFC",
+   "loai": "khac",
+   "tieu_de": "Thay đổi nội dung đăng ký doanh nghiệp",
+   "gio": "15:46"
+  },
+  {
+   "ma": "IDC",
+   "loai": "nb",
+   "tieu_de": "Đặng Việt Dũng - người có liên quan đến Tổng Giám đốc; Ủy viên HĐQT - đăng ký mua 4.400.000 CP",
+   "gio": "15:45"
+  },
+  {
+   "ma": "L12",
+   "loai": "nb",
+   "tieu_de": "Báo cáo thay đổi sở hữu cổ phiếu của cổ đông lớn - Nguyễn Thế Nam",
+   "gio": "15:43"
+  },
+  {
+   "ma": "LSS",
+   "loai": "khac",
+   "tieu_de": "Giấy chứng nhận đăng ký doanh nghiệp thay đổi lần thứ 15",
+   "gio": "15:33"
+  },
+  {
+   "ma": "ANT",
+   "loai": "bctc",
+   "tieu_de": "Đính chính BCTC HN và Riêng năm 2025 đã được kiểm toán và BCTC HN và Riêng 6 tháng đầu năm 2026 đã được soát xét",
+   "gio": "15:32"
+  },
+  {
+   "ma": "TVD",
+   "loai": "dhcd",
+   "tieu_de": "Ngày đăng ký cuối cùng Tổ chức Đại hội đồng cổ đông bất thường năm 2026 lần 03",
+   "gio": "15:29"
+  },
+  {
+   "ma": "TPB",
+   "loai": "khac",
+   "tieu_de": "Thông báo nhận được Văn bản của NHNNVN Chi nhánh khu vực 2 về việc thay đổi địa điểm đặt trụ sở PGD Bình Tân",
+   "gio": "15:28"
+  },
+  {
+   "ma": "MIC",
+   "loai": "ns",
+   "tieu_de": "Thay đổi nhân sự",
+   "gio": "15:28"
+  },
+  {
+   "ma": "SHN",
+   "loai": "dhcd",
+   "tieu_de": "Nghị quyết Hội đồng quản trị",
+   "gio": "15:26"
+  },
+  {
+   "ma": "VIB",
+   "loai": "khac",
+   "tieu_de": "Điều lệ công ty",
+   "gio": "15:16"
+  },
+  {
+   "ma": "NST",
+   "loai": "dhcd",
+   "tieu_de": "Nghị quyết họp Hội đồng quản trị phiên thường kỳ Quý IV năm 2026",
+   "gio": "15:16"
+  },
+  {
+   "ma": "DGW",
+   "loai": "nb",
+   "tieu_de": "Báo cáo kết quả giao dịch cổ phiếu của người nội bộ Trần Bảo Minh",
+   "gio": "15:15"
+  },
+  {
+   "ma": "MST",
+   "loai": "dhcd",
+   "tieu_de": "Nghị quyết Hội đồng quản trị",
+   "gio": "15:13"
+  },
+  {
+   "ma": "GVR",
+   "loai": "dhcd",
+   "tieu_de": "Thông báo và Nghị quyết HĐQT về ngày ĐKCC thực hiện quyền tham dự ĐHĐCĐ bất thường 2026",
+   "gio": "15:09"
+  },
+  {
+   "ma": "PAC",
+   "loai": "nb",
+   "tieu_de": "Thông báo giao dịch cổ phiếu của tổ chức có liên quan đến người nội bộ Công đoàn PAC",
+   "gio": "15:08"
+  },
+  {
+   "ma": "MST",
+   "loai": "dhcd",
+   "tieu_de": "Nghị quyết Hội đồng quản trị",
+   "gio": "15:03"
+  },
+  {
+   "ma": "BCB",
+   "loai": "nb",
+   "tieu_de": "Công ty TNHH Xây dựng Quang Thành - người có liên quan đến Ủy viên HĐQT - đăng ký bán 1.140.000 CP",
+   "gio": "15:03"
+  },
+  {
+   "ma": "TRS",
+   "loai": "khac",
+   "tieu_de": "Ký hợp đồng kiểm toán báo cáo tài chính năm 2026",
+   "gio": "15:03"
+  },
+  {
+   "ma": "CST",
+   "loai": "dhcd",
+   "tieu_de": "Thông báo về ngày đăng ký cuối cùng chốt danh sách cổ đông để thực hiện quyền tham dự Đại hội đồng cổ đông bất thường năm 2026",
+   "gio": "15:01"
+  },
+  {
+   "ma": "TA6",
+   "loai": "khac",
+   "tieu_de": "Ký hợp đồng kiểm toán báo cáo tài chính năm 2026",
+   "gio": "15:01"
+  },
+  {
+   "ma": "DSD",
+   "loai": "dhcd",
+   "tieu_de": "Ngày đăng ký cuối cùng Đại hội đồng cổ đông bất thường năm 2026",
+   "gio": "15:00"
+  },
+  {
+   "ma": "PSL",
+   "loai": "quyen",
+   "tieu_de": "Ngày đăng ký cuối cùng trả cổ tức bằng tiền mặt",
+   "gio": "15:00"
+  },
+  {
+   "ma": "CST",
+   "loai": "dhcd",
+   "tieu_de": "Nghị quyết Hội đồng quản trị",
+   "gio": "14:59"
+  },
+  {
+   "ma": "AIG",
+   "loai": "quyen",
+   "tieu_de": "Ngày đăng ký cuối cùng lấy ý kiến cổ đông bằng văn bản",
+   "gio": "14:50"
+  },
+  {
+   "ma": "DSP",
+   "loai": "dhcd",
+   "tieu_de": "Nghị quyết Hội đồng quản trị",
+   "gio": "14:45"
+  },
+  {
+   "ma": "KHX",
+   "loai": "dhcd",
+   "tieu_de": "Nghị quyết Đại hội đồng cổ đông bất thường lần 2 năm 2026",
+   "gio": "14:44"
+  },
+  {
+   "ma": "CH5",
+   "loai": "khac",
+   "tieu_de": "Giấy xác nhận về việc thay đổi nội dung đăng ký doanh nghiệp",
+   "gio": "14:44"
+  }
+ ]
+}
