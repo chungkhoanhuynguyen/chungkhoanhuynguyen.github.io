@@ -25143,5 +25143,555 @@
    "giao-dich-noi-bo-la-gi",
    "chia-tach-co-phieu-thuong-phat-hanh-them"
   ]
+ },
+ {
+  "slug": "roic-la-gi",
+  "kw": "ROIC là gì",
+  "grp": 3,
+  "title": "ROIC là gì? Đo hiệu quả của toàn bộ vốn doanh nghiệp dùng",
+  "desc": "ROIC là gì, công thức tính, khác ROE và ROA ra sao, vì sao ROE cao chưa chắc doanh nghiệp giỏi. Ví dụ ước tính ROIC của VNM, HPG, DGW.",
+  "body": [
+   [
+    "p",
+    "<b>ROIC</b> (Return on Invested Capital) là tỷ suất lợi nhuận trên vốn đầu tư. Nó trả lời câu hỏi: mỗi 100 đồng doanh nghiệp đang dùng, gồm cả tiền của cổ đông và tiền đi vay, tạo ra bao nhiêu đồng lợi nhuận từ hoạt động kinh doanh."
+   ],
+   [
+    "h2",
+    "Công thức đơn giản"
+   ],
+   [
+    "p",
+    "<b>ROIC = Lợi nhuận hoạt động sau thuế ÷ Vốn đầu tư</b>. Lợi nhuận hoạt động sau thuế (NOPAT) có thể ước tính bằng (lợi nhuận trước thuế + chi phí lãi vay) × (1 − thuế suất thực tế). Vốn đầu tư ước tính bằng vốn chủ sở hữu + nợ vay có trả lãi, nên lấy bình quân đầu kỳ và cuối kỳ."
+   ],
+   [
+    "p",
+    "Ví dụ giả định: một công ty có vốn chủ 800 tỷ đồng, vay 200 tỷ đồng, lợi nhuận hoạt động sau thuế 150 tỷ đồng. Vốn đầu tư là 1.000 tỷ, ROIC = 150 ÷ 1.000 = 15%."
+   ],
+   [
+    "h2",
+    "ROIC khác ROE thế nào?"
+   ],
+   [
+    "p",
+    "<a href=\"/f0/roe-eps-la-gi.html\">ROE</a> chỉ tính trên vốn của cổ đông. Một doanh nghiệp vay nhiều có thể đẩy ROE lên cao dù bản thân hoạt động kinh doanh không quá hiệu quả. ROIC tính trên cả vốn vay nên phần nào loại bỏ tác động của đòn bẩy, cho thấy chất lượng hoạt động lõi rõ hơn."
+   ],
+   [
+    "h2",
+    "Ví dụ ước tính từ báo cáo tài chính"
+   ],
+   [
+    "p",
+    "Tính theo bốn quý gần nhất đến quý 3/2026, cách tính đơn giản ở trên: VNM có ROIC khoảng 25% và ROE khoảng 30%, nợ vay thấp so với vốn chủ. HPG có ROIC khoảng 14%, ROE khoảng 20%. DGW có ROIC khoảng 16% nhưng ROE khoảng 28%, vì nợ vay (khoảng 3.866 tỷ) lớn hơn vốn chủ (khoảng 3.385 tỷ đồng). Khoảng cách lớn giữa ROE và ROIC thường cho thấy đòn bẩy đang đóng góp đáng kể. Nguồn: báo cáo tài chính hợp nhất do doanh nghiệp công bố, tổng hợp ngày 6/11/2026."
+   ],
+   [
+    "h2",
+    "Đọc ROIC thế nào cho đúng"
+   ],
+   [
+    "ul",
+    [
+     "So với chi phí vốn: ROIC bền vững cao hơn lãi vay và kỳ vọng của cổ đông là dấu hiệu doanh nghiệp tạo ra giá trị.",
+     "Xem chuỗi nhiều năm: ROIC ổn định qua chu kỳ quan trọng hơn một năm đột biến.",
+     "So cùng ngành: ngành thâm dụng vốn như thép, điện thường có ROIC thấp hơn ngành bán lẻ, hàng tiêu dùng.",
+     "Không dùng cho ngân hàng, bảo hiểm, chứng khoán vì nợ là nguyên liệu kinh doanh của họ."
+    ]
+   ],
+   [
+    "h2",
+    "Hạn chế"
+   ],
+   [
+    "p",
+    "Mỗi nguồn dữ liệu tính ROIC theo cách hơi khác nhau: có nơi trừ tiền mặt khỏi vốn đầu tư, có nơi dùng EBIT thay cho lợi nhuận trước thuế cộng lãi vay. Vì vậy khi so sánh, nên dùng cùng một cách tính. Doanh nghiệp đang xây nhà máy lớn cũng có ROIC tạm thời thấp vì vốn đã bỏ ra nhưng chưa tạo doanh thu."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "ROIC đo hiệu quả của cả vốn chủ và vốn vay.",
+     "ROE cao hơn ROIC nhiều thường do đòn bẩy.",
+     "So ROIC cùng ngành, cùng cách tính và qua nhiều năm."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "ROIC bao nhiêu là tốt?",
+    "Không có ngưỡng chung, nhưng ROIC bền vững trên 15% thường được xem là tốt với doanh nghiệp sản xuất, tiêu dùng. Quan trọng là cao hơn chi phí vốn."
+   ],
+   [
+    "ROIC khác ROA thế nào?",
+    "ROA chia lợi nhuận cho toàn bộ tài sản, kể cả phần tài trợ bằng nợ không lãi như phải trả người bán. ROIC chỉ tính vốn chủ và nợ vay có lãi."
+   ],
+   [
+    "Ngân hàng có dùng ROIC không?",
+    "Không. Với ngân hàng nên dùng ROE, ROA và các chỉ số riêng như NIM, nợ xấu."
+   ]
+  ],
+  "rel": [
+   "roe-eps-la-gi",
+   "roa-la-gi",
+   "dupont-la-gi",
+   "ebit-la-gi"
+  ]
+ },
+ {
+  "slug": "loi-the-thuong-mai-la-gi",
+  "kw": "lợi thế thương mại là gì",
+  "grp": 3,
+  "title": "Lợi thế thương mại là gì? Hiểu khoản mục từ các thương vụ M&A",
+  "desc": "Lợi thế thương mại là gì, vì sao xuất hiện khi doanh nghiệp mua công ty khác, cách phân bổ theo chuẩn mực Việt Nam và rủi ro khi khoản này quá lớn.",
+  "body": [
+   [
+    "p",
+    "<b>Lợi thế thương mại</b> là phần chênh lệch khi một doanh nghiệp mua công ty khác với giá cao hơn giá trị hợp lý của tài sản thuần bên bị mua. Phần trả thêm này phản ánh những thứ không cầm nắm được như thương hiệu, khách hàng, kênh phân phối, đội ngũ."
+   ],
+   [
+    "h2",
+    "Ví dụ giả định"
+   ],
+   [
+    "p",
+    "Công ty A mua toàn bộ công ty B với giá 1.000 tỷ đồng. Tài sản của B có giá trị hợp lý 900 tỷ, nợ 300 tỷ, tài sản thuần là 600 tỷ. Phần chênh lệch 400 tỷ đồng được ghi là lợi thế thương mại trên báo cáo hợp nhất của A."
+   ],
+   [
+    "h2",
+    "Nằm ở đâu trên báo cáo?"
+   ],
+   [
+    "p",
+    "Lợi thế thương mại chỉ xuất hiện trên <a href=\"/f0/doc-bctc-hop-nhat-va-rieng-le.html\">báo cáo hợp nhất</a>, thuộc phần tài sản dài hạn của <a href=\"/f0/bang-can-doi-ke-toan-la-gi.html\">bảng cân đối kế toán</a>. Theo chuẩn mực kế toán Việt Nam, khoản này được phân bổ dần vào chi phí trong thời gian không quá 10 năm, nên số dư giảm đều qua từng quý và làm lợi nhuận thấp đi một phần mỗi kỳ."
+   ],
+   [
+    "h2",
+    "Ví dụ số liệu"
+   ],
+   [
+    "p",
+    "Tại 31/12/2025, MSN ghi nhận lợi thế thương mại khoảng 2.968 tỷ đồng, giảm từ khoảng 3.588 tỷ một năm trước đó, tức mỗi quý phân bổ vào chi phí khoảng 155 tỷ đồng. Cùng thời điểm VNM có khoảng 829 tỷ, DGW khoảng 218 tỷ đồng. Từ năm 2026, dữ liệu tổng hợp không còn tách dòng này riêng nên bài dùng số cuối năm 2025. Nguồn: báo cáo tài chính hợp nhất do doanh nghiệp công bố, tổng hợp ngày 6/11/2026."
+   ],
+   [
+    "h2",
+    "Vì sao nhà đầu tư cần để ý"
+   ],
+   [
+    "ul",
+    [
+     "Khoản này không tạo ra tiền: nó là giá trị kế toán của phần trả thêm khi mua.",
+     "Phân bổ làm giảm lợi nhuận kế toán hàng năm dù không có tiền chi ra trong kỳ.",
+     "Nếu thương vụ không hiệu quả, doanh nghiệp có thể phải ghi giảm nhanh, gây lỗ đột biến.",
+     "Tỷ lệ lợi thế thương mại trên vốn chủ quá lớn cho thấy doanh nghiệp đã trả giá cao cho tăng trưởng mua lại."
+    ]
+   ],
+   [
+    "h2",
+    "Cách đọc"
+   ],
+   [
+    "p",
+    "Hãy so lợi thế thương mại với tổng tài sản và vốn chủ sở hữu. Nếu chỉ vài phần trăm, ảnh hưởng không đáng kể. Nếu chiếm phần lớn vốn chủ, nên xem thêm công ty bị mua đóng góp bao nhiêu lợi nhuận, và giá trị sổ sách hữu hình (vốn chủ trừ lợi thế thương mại) khi tính <a href=\"/f0/pb-la-gi.html\">P/B</a>."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Lợi thế thương mại là phần trả cao hơn giá trị tài sản thuần khi mua công ty.",
+     "Theo chuẩn mực Việt Nam, phân bổ dần tối đa 10 năm.",
+     "Khoản lớn so với vốn chủ cần được xem xét kỹ hơn."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Lợi thế thương mại có phải tài sản thật không?",
+    "Đây là tài sản vô hình trên sổ sách, không bán riêng được và không tạo ra tiền trực tiếp."
+   ],
+   [
+    "Lợi thế thương mại âm là gì?",
+    "Khi giá mua thấp hơn giá trị tài sản thuần, phần chênh lệch được ghi nhận là thu nhập ngay trong kỳ mua."
+   ],
+   [
+    "Có ở báo cáo riêng lẻ không?",
+    "Không. Lợi thế thương mại từ mua công ty con chỉ xuất hiện trên báo cáo hợp nhất."
+   ]
+  ],
+  "rel": [
+   "doc-bctc-hop-nhat-va-rieng-le",
+   "bang-can-doi-ke-toan-la-gi",
+   "pb-la-gi",
+   "loi-ich-co-dong-khong-kiem-soat-la-gi"
+  ]
+ },
+ {
+  "slug": "chi-phi-xay-dung-co-ban-do-dang-la-gi",
+  "kw": "chi phí xây dựng cơ bản dở dang là gì",
+  "grp": 3,
+  "title": "Chi phí xây dựng cơ bản dở dang là gì? Đọc qua ví dụ HPG, POW",
+  "desc": "Chi phí xây dựng cơ bản dở dang là gì, vì sao khoản này tăng khi doanh nghiệp xây nhà máy và chuyển sang tài sản cố định ra sao. Ví dụ HPG, POW.",
+  "body": [
+   [
+    "p",
+    "<b>Chi phí xây dựng cơ bản dở dang</b> là số tiền doanh nghiệp đã chi cho các công trình, nhà máy, máy móc đang xây dựng hoặc lắp đặt nhưng chưa hoàn thành, chưa đưa vào sử dụng. Khoản này nằm trong nhóm tài sản dở dang dài hạn trên <a href=\"/f0/bang-can-doi-ke-toan-la-gi.html\">bảng cân đối kế toán</a>."
+   ],
+   [
+    "h2",
+    "Vòng đời của khoản này"
+   ],
+   [
+    "ul",
+    [
+     "Khi đang xây: chi phí được cộng dồn vào xây dựng cơ bản dở dang, chưa tính khấu hao.",
+     "Khi hoàn thành: toàn bộ được chuyển sang <a href=\"/f0/tai-san-co-dinh-la-gi.html\">tài sản cố định</a>.",
+     "Sau khi chuyển: bắt đầu trích <a href=\"/f0/khau-hao-la-gi.html\">khấu hao</a> và lãi vay của dự án không còn được vốn hóa, nên chi phí trên báo cáo kết quả kinh doanh tăng lên."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ HPG"
+   ],
+   [
+    "p",
+    "Tại 30/6/2025, chi phí xây dựng cơ bản dở dang của HPG khoảng 72.704 tỷ đồng, phần lớn liên quan dự án khu liên hợp mới. Đến 31/12/2025 khoản này chỉ còn khoảng 10.721 tỷ, trong khi tài sản cố định tăng từ khoảng 104.711 tỷ (30/9/2025) lên khoảng 133.608 tỷ đồng. Đây là dấu hiệu công trình lớn đã được chuyển sang vận hành."
+   ],
+   [
+    "h2",
+    "Ví dụ POW"
+   ],
+   [
+    "p",
+    "POW có chi phí xây dựng cơ bản dở dang khoảng 24.628 tỷ đồng tại 30/9/2025, giảm còn khoảng 909 tỷ tại 31/12/2025; tài sản cố định cùng kỳ tăng từ khoảng 22.330 tỷ lên khoảng 45.789 tỷ đồng. Nguồn: báo cáo tài chính hợp nhất do doanh nghiệp công bố, tổng hợp ngày 6/11/2026."
+   ],
+   [
+    "h2",
+    "Nhà đầu tư nên đọc thế nào?"
+   ],
+   [
+    "ul",
+    [
+     "Khoản dở dang lớn so với tổng tài sản: doanh nghiệp đang trong giai đoạn đầu tư, chưa có doanh thu từ phần tài sản này.",
+     "Khoản dở dang giảm mạnh, tài sản cố định tăng: dự án đã vận hành, cần theo dõi doanh thu tăng có đủ bù khấu hao và lãi vay hay không.",
+     "Khoản dở dang đứng yên nhiều năm: có thể dự án chậm tiến độ, nên đọc thuyết minh để biết lý do.",
+     "Xem cùng nợ vay: dự án lớn thường tài trợ bằng vay dài hạn."
+    ]
+   ],
+   [
+    "h2",
+    "Liên hệ với lợi nhuận"
+   ],
+   [
+    "p",
+    "Giai đoạn chuyển giao thường khiến lợi nhuận chưa tăng tương xứng ngay: khấu hao và lãi vay bắt đầu ghi vào chi phí trong khi công suất còn đang tăng dần. Vì vậy nên theo dõi vài quý sau khi dự án vận hành thay vì kết luận từ một quý. Thuyết minh báo cáo tài chính thường liệt kê từng công trình dở dang, giúp biết dự án nào sắp hoàn thành."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Là chi phí đã bỏ ra cho công trình chưa hoàn thành.",
+     "Hoàn thành thì chuyển sang tài sản cố định và bắt đầu khấu hao.",
+     "Theo dõi để biết doanh nghiệp đang ở giai đoạn đầu tư hay khai thác."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Chi phí xây dựng cơ bản dở dang có bị khấu hao không?",
+    "Không. Chỉ khi công trình hoàn thành và chuyển sang tài sản cố định thì mới bắt đầu khấu hao."
+   ],
+   [
+    "Khoản này tăng là tốt hay xấu?",
+    "Không tốt không xấu. Nó cho thấy doanh nghiệp đang đầu tư; hiệu quả chỉ thấy khi dự án vận hành."
+   ],
+   [
+    "Tìm khoản này ở đâu?",
+    "Trong mục tài sản dài hạn, phần tài sản dở dang dài hạn của bảng cân đối kế toán; chi tiết từng công trình có ở thuyết minh."
+   ]
+  ],
+  "rel": [
+   "tai-san-co-dinh-la-gi",
+   "khau-hao-la-gi",
+   "fcf-dong-tien-tu-do-la-gi",
+   "gia-thep-va-hpg"
+  ]
+ },
+ {
+  "slug": "doanh-thu-chua-thuc-hien-la-gi",
+  "kw": "doanh thu chưa thực hiện là gì",
+  "grp": 3,
+  "title": "Doanh thu chưa thực hiện là gì? Ví dụ vé máy bay bán trước",
+  "desc": "Doanh thu chưa thực hiện là gì, vì sao là khoản nợ phải trả, khác người mua trả tiền trước thế nào và cách đọc qua ví dụ VJC, HVN.",
+  "body": [
+   [
+    "p",
+    "<b>Doanh thu chưa thực hiện</b> là số tiền doanh nghiệp đã nhận của khách hàng cho hàng hóa, dịch vụ sẽ cung cấp trong tương lai. Vì chưa giao hàng hoặc chưa cung cấp dịch vụ, khoản này chưa được ghi nhận là doanh thu mà nằm ở phần <b>nợ phải trả</b>."
+   ],
+   [
+    "h2",
+    "Ví dụ dễ hiểu"
+   ],
+   [
+    "p",
+    "Một hãng bay bán vé tháng 12 cho chuyến bay dịp Tết tháng 2. Tiền vé đã về tài khoản nhưng chuyến bay chưa diễn ra, nên hãng ghi vào doanh thu chưa thực hiện. Khi chuyến bay cất cánh, khoản này chuyển thành doanh thu. Tương tự là học phí thu trước, phí thuê bao trả trước một năm, thẻ thành viên."
+   ],
+   [
+    "h2",
+    "Ví dụ số liệu hàng không"
+   ],
+   [
+    "p",
+    "Tại 30/9/2026, doanh thu chưa thực hiện ngắn hạn của VJC khoảng 3.578 tỷ đồng, của HVN khoảng 1.916 tỷ đồng. Với VJC, khoản này cao nhất tại 31/12/2025 (khoảng 5.179 tỷ đồng), phù hợp với việc khách mua vé Tết từ sớm. Nguồn: báo cáo tài chính hợp nhất do doanh nghiệp công bố, tổng hợp ngày 6/11/2026."
+   ],
+   [
+    "h2",
+    "Khác người mua trả tiền trước thế nào?"
+   ],
+   [
+    "p",
+    "Cả hai đều là tiền nhận trước. <a href=\"/f0/nguoi-mua-tra-tien-truoc-la-gi.html\">Người mua trả tiền trước</a> thường dùng khi khách đặt cọc cho một hợp đồng giao hàng, như mua căn hộ. Doanh thu chưa thực hiện thường dùng khi dịch vụ được cung cấp dần theo thời gian hoặc đã xuất hóa đơn nhưng chưa đủ điều kiện ghi doanh thu. Cách phân loại cụ thể tùy chính sách kế toán từng doanh nghiệp."
+   ],
+   [
+    "h2",
+    "Vì sao nhà đầu tư nên để ý?"
+   ],
+   [
+    "ul",
+    [
+     "Là nguồn doanh thu tương lai gần như chắc chắn, giúp ước tính kết quả các quý tới.",
+     "Là nguồn tiền không lãi: doanh nghiệp nhận tiền trước, dùng vốn của khách hàng.",
+     "Khoản này tăng đều cho thấy nhu cầu khách hàng tốt; giảm mạnh bất thường nên tìm hiểu lý do.",
+     "Có tính mùa vụ: so với cùng kỳ năm trước thay vì quý liền trước."
+    ]
+   ],
+   [
+    "h2",
+    "Lưu ý khi đọc"
+   ],
+   [
+    "p",
+    "Đây vẫn là nghĩa vụ: nếu doanh nghiệp không cung cấp được dịch vụ, họ phải hoàn tiền. Vì vậy khi tính các chỉ số nợ, cần tách khoản này khỏi nợ vay có trả lãi để không đánh giá sai mức độ rủi ro tài chính. Một doanh nghiệp có nợ phải trả lớn nhưng phần lớn là doanh thu chưa thực hiện thường an toàn hơn doanh nghiệp có cùng mức nợ nhưng toàn là vay ngân hàng, vì nghĩa vụ của họ là cung cấp dịch vụ chứ không phải trả tiền lãi."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Tiền đã nhận nhưng chưa cung cấp hàng hóa, dịch vụ.",
+     "Nằm ở nợ phải trả, chuyển thành doanh thu khi hoàn thành nghĩa vụ.",
+     "Gợi ý về doanh thu các quý tới, đọc theo mùa vụ."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Doanh thu chưa thực hiện có phải nợ xấu không?",
+    "Không. Đây là nghĩa vụ cung cấp dịch vụ cho khách hàng đã trả tiền, không phải khoản vay."
+   ],
+   [
+    "Có ảnh hưởng tới lợi nhuận không?",
+    "Trong kỳ nhận tiền thì chưa. Lợi nhuận chỉ ghi nhận khi khoản này chuyển thành doanh thu."
+   ],
+   [
+    "Ngành nào hay có khoản này lớn?",
+    "Hàng không, giáo dục, phần mềm thuê bao, du lịch, viễn thông và các dịch vụ thu tiền trước."
+   ]
+  ],
+  "rel": [
+   "nguoi-mua-tra-tien-truoc-la-gi",
+   "bao-cao-ket-qua-kinh-doanh-la-gi",
+   "co-phieu-hang-khong",
+   "bang-can-doi-ke-toan-la-gi"
+  ]
+ },
+ {
+  "slug": "chi-phi-ban-hang-va-quan-ly-doanh-nghiep",
+  "kw": "chi phí bán hàng và chi phí quản lý doanh nghiệp",
+  "grp": 3,
+  "title": "Chi phí bán hàng và chi phí quản lý doanh nghiệp: cách đọc",
+  "desc": "Chi phí bán hàng và chi phí quản lý doanh nghiệp là gì, gồm những gì, tỷ lệ trên doanh thu nói lên điều gì. Ví dụ VNM, MWG, DGW, HPG.",
+  "body": [
+   [
+    "p",
+    "Sau khi lấy doanh thu trừ giá vốn để ra <a href=\"/f0/bien-loi-nhuan-gop-la-gi.html\">lợi nhuận gộp</a>, doanh nghiệp còn phải trả hai nhóm chi phí vận hành lớn: <b>chi phí bán hàng</b> và <b>chi phí quản lý doanh nghiệp</b>. Đây là phần quyết định lợi nhuận gộp còn lại bao nhiêu thành lợi nhuận hoạt động."
+   ],
+   [
+    "h2",
+    "Mỗi loại gồm những gì?"
+   ],
+   [
+    "ul",
+    [
+     "Chi phí bán hàng: lương nhân viên bán hàng, quảng cáo, khuyến mãi, thuê cửa hàng, vận chuyển giao hàng, hoa hồng đại lý.",
+     "Chi phí quản lý doanh nghiệp: lương bộ máy văn phòng, thuê trụ sở, phần mềm, phí kiểm toán, dự phòng phải thu khó đòi."
+    ]
+   ],
+   [
+    "h2",
+    "Tỷ lệ trên doanh thu khác nhau theo mô hình"
+   ],
+   [
+    "p",
+    "Tính trên bốn quý gần nhất đến quý 3/2026: chi phí bán hàng của VNM khoảng 21,1% doanh thu thuần, MWG khoảng 12,5%, DGW khoảng 5,3%, HPG khoảng 2,3%. Chi phí quản lý của cả bốn đều dưới 3%. Nguồn: báo cáo tài chính hợp nhất do doanh nghiệp công bố, tổng hợp ngày 6/11/2026."
+   ],
+   [
+    "p",
+    "Doanh nghiệp hàng tiêu dùng cần quảng cáo và hệ thống phân phối rộng nên chi phí bán hàng cao. Bán lẻ tốn tiền thuê mặt bằng và nhân viên cửa hàng. Nhà phân phối và sản xuất nguyên liệu bán cho số ít khách hàng lớn nên chi phí bán hàng thấp, nhưng thường biên lợi nhuận gộp cũng thấp hơn. Vì vậy không so tỷ lệ này giữa các ngành khác nhau."
+   ],
+   [
+    "h2",
+    "Đọc gì từ hai khoản này?"
+   ],
+   [
+    "ul",
+    [
+     "Tỷ lệ chi phí trên doanh thu giảm dần khi doanh thu tăng: doanh nghiệp đang tận dụng quy mô.",
+     "Chi phí bán hàng tăng nhanh hơn doanh thu: có thể đang đẩy khuyến mãi để giữ thị phần, biên lợi nhuận sẽ chịu áp lực.",
+     "Chi phí quản lý tăng đột biến: xem thuyết minh, có thể do trích dự phòng phải thu khó đòi.",
+     "Quý cuối năm thường cao hơn do thưởng, quảng cáo mùa mua sắm."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ giả định"
+   ],
+   [
+    "p",
+    "Doanh nghiệp A có doanh thu 1.000 tỷ, lợi nhuận gộp 300 tỷ, chi phí bán hàng 150 tỷ, chi phí quản lý 50 tỷ. Lợi nhuận từ hoạt động bán hàng là 100 tỷ đồng. Nếu năm sau doanh thu tăng 20% mà hai khoản chi phí chỉ tăng 5%, lợi nhuận phần này tăng lên khoảng 150 tỷ, tức tăng 50%. Đây là đòn bẩy hoạt động, và chiều ngược lại cũng đúng khi doanh thu giảm."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Hai khoản chi phí vận hành nằm giữa lợi nhuận gộp và lợi nhuận hoạt động.",
+     "Tỷ lệ trên doanh thu tùy mô hình kinh doanh, chỉ so cùng ngành.",
+     "Theo dõi xu hướng nhiều quý để thấy hiệu quả quy mô."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Chi phí bán hàng cao có xấu không?",
+    "Không hẳn. Hàng tiêu dùng thương hiệu mạnh thường chi nhiều cho bán hàng nhưng biên lợi nhuận gộp cao bù lại."
+   ],
+   [
+    "Hai khoản này có gồm chi phí lãi vay không?",
+    "Không. Lãi vay nằm trong chi phí tài chính, là một dòng riêng."
+   ],
+   [
+    "Nên so với doanh thu hay lợi nhuận gộp?",
+    "Thường so với doanh thu thuần. Có thể so thêm với lợi nhuận gộp để biết chi phí vận hành ăn mất bao nhiêu phần lợi nhuận gộp."
+   ]
+  ],
+  "rel": [
+   "bao-cao-ket-qua-kinh-doanh-la-gi",
+   "bien-loi-nhuan-gop-la-gi",
+   "bien-loi-nhuan-rong-la-gi",
+   "ebit-la-gi"
+  ]
+ },
+ {
+  "slug": "trai-phieu-chuyen-doi-la-gi",
+  "kw": "trái phiếu chuyển đổi là gì",
+  "grp": 6,
+  "title": "Trái phiếu chuyển đổi là gì? Lợi ích và rủi ro pha loãng",
+  "desc": "Trái phiếu chuyển đổi là gì, cách tính số cổ phiếu nhận khi chuyển đổi, vì sao doanh nghiệp phát hành và tác động pha loãng với cổ đông hiện hữu.",
+  "body": [
+   [
+    "p",
+    "<b>Trái phiếu chuyển đổi</b> là trái phiếu cho phép người nắm giữ đổi sang cổ phiếu của doanh nghiệp phát hành theo một tỷ lệ hoặc giá chuyển đổi đã định trước. Nếu không chuyển đổi, người nắm giữ nhận lãi và gốc như <a href=\"/f0/trai-phieu-la-gi.html\">trái phiếu</a> thông thường."
+   ],
+   [
+    "h2",
+    "Ví dụ giả định"
+   ],
+   [
+    "p",
+    "Doanh nghiệp phát hành trái phiếu mệnh giá 100.000 đồng, lãi 5%/năm, giá chuyển đổi 20.000 đồng/cổ phiếu. Mỗi trái phiếu đổi được 100.000 ÷ 20.000 = 5 cổ phiếu. Nếu đến hạn giá cổ phiếu là 30.000 đồng, 5 cổ phiếu trị giá 150.000 đồng, người nắm giữ thường chọn chuyển đổi. Nếu giá chỉ 15.000 đồng, 5 cổ phiếu trị giá 75.000 đồng, người nắm giữ thường chọn nhận lại tiền gốc."
+   ],
+   [
+    "h2",
+    "Vì sao doanh nghiệp phát hành?"
+   ],
+   [
+    "ul",
+    [
+     "Lãi suất thấp hơn trái phiếu thường vì người mua được quyền chuyển đổi.",
+     "Nếu chuyển đổi, khoản nợ biến thành vốn chủ, doanh nghiệp không phải trả gốc.",
+     "Phù hợp với doanh nghiệp đang tăng trưởng, cần vốn mà không muốn phát hành cổ phiếu ngay ở giá hiện tại."
+    ]
+   ],
+   [
+    "h2",
+    "Tác động tới cổ đông hiện hữu"
+   ],
+   [
+    "p",
+    "Khi trái phiếu được chuyển đổi, số cổ phiếu lưu hành tăng lên, gây <a href=\"/f0/pha-loang-co-phieu-la-gi.html\">pha loãng</a>. Ví dụ doanh nghiệp có 100 triệu cổ phiếu, phát hành 1.000 tỷ đồng trái phiếu chuyển đổi với giá 20.000 đồng thì có thể phát sinh thêm 50 triệu cổ phiếu. Lợi nhuận phải chia cho 150 triệu cổ phiếu thay vì 100 triệu, EPS giảm khoảng một phần ba nếu lợi nhuận không đổi. Vì vậy báo cáo tài chính có thêm chỉ tiêu EPS suy giảm, tính như thể các trái phiếu đã chuyển đổi."
+   ],
+   [
+    "h2",
+    "Rủi ro cho người mua trái phiếu"
+   ],
+   [
+    "ul",
+    [
+     "Lãi thấp hơn trái phiếu thường; nếu giá cổ phiếu không tăng, lợi suất có thể kém gửi tiết kiệm.",
+     "Vẫn chịu rủi ro tín dụng: doanh nghiệp gặp khó có thể không trả được gốc, lãi.",
+     "Điều khoản có thể phức tạp: điều chỉnh giá chuyển đổi, quyền mua lại trước hạn của doanh nghiệp."
+    ]
+   ],
+   [
+    "h2",
+    "Nhà đầu tư cổ phiếu nên kiểm tra gì?"
+   ],
+   [
+    "p",
+    "Đọc thuyết minh báo cáo tài chính hoặc nghị quyết phát hành để biết: khối lượng trái phiếu chuyển đổi đang lưu hành, giá chuyển đổi, thời điểm được chuyển đổi. Từ đó ước tính số cổ phiếu có thể tăng thêm và so với số cổ phiếu hiện có. Khối lượng có thể chuyển đổi càng lớn so với vốn hiện tại, tác động pha loãng càng đáng kể."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Là trái phiếu có quyền đổi sang cổ phiếu theo giá định trước.",
+     "Doanh nghiệp được vay lãi thấp, đổi lại có thể pha loãng cổ đông.",
+     "Xem EPS suy giảm và điều khoản chuyển đổi trước khi đánh giá."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Ai được quyền quyết định chuyển đổi?",
+    "Thường là người nắm giữ trái phiếu, trong khoảng thời gian và điều kiện ghi trong phương án phát hành."
+   ],
+   [
+    "EPS suy giảm là gì?",
+    "Là EPS tính như thể mọi trái phiếu chuyển đổi, quyền chọn đã được chuyển thành cổ phiếu, luôn bằng hoặc thấp hơn EPS cơ bản."
+   ],
+   [
+    "Người mới có phù hợp với trái phiếu chuyển đổi không?",
+    "Nên tìm hiểu kỹ điều khoản và sức khỏe tài chính của doanh nghiệp phát hành, vì sản phẩm phức tạp hơn trái phiếu thường."
+   ]
+  ],
+  "rel": [
+   "trai-phieu-la-gi",
+   "pha-loang-co-phieu-la-gi",
+   "roe-eps-la-gi",
+   "trai-phieu-doanh-nghiep-rui-ro"
+  ]
  }
 ]

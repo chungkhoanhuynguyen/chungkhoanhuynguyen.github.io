@@ -513,5 +513,30 @@
 "ESOP",
 "Chương trình phát hành cổ phiếu cho người lao động, thường với giá ưu đãi.",
 "esop-la-gi"
+],
+[
+"ROIC",
+"Tỷ suất lợi nhuận hoạt động sau thuế trên tổng vốn chủ và nợ vay doanh nghiệp sử dụng.",
+"roic-la-gi"
+],
+[
+"Lợi thế thương mại",
+"Phần giá mua cao hơn giá trị hợp lý tài sản thuần khi mua một công ty khác.",
+"loi-the-thuong-mai-la-gi"
+],
+[
+"Chi phí xây dựng cơ bản dở dang",
+"Chi phí đã bỏ ra cho công trình, nhà máy chưa hoàn thành, chưa đưa vào sử dụng.",
+"chi-phi-xay-dung-co-ban-do-dang-la-gi"
+],
+[
+"Doanh thu chưa thực hiện",
+"Tiền đã nhận của khách cho hàng hóa, dịch vụ sẽ cung cấp sau, ghi ở nợ phải trả.",
+"doanh-thu-chua-thuc-hien-la-gi"
+],
+[
+"Trái phiếu chuyển đổi",
+"Trái phiếu cho phép người nắm giữ đổi sang cổ phiếu theo giá định trước.",
+"trai-phieu-chuyen-doi-la-gi"
 ]
 ]
