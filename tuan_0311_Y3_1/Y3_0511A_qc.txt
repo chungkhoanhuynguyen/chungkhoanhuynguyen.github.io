@@ -1,0 +1,10 @@
+LỖI cảnh 1: gọi 'bạn'/xưng 'tôi' – phải xưng em, gọi anh chị
+CẢNH BÁO cảnh 2: câu cụt thiếu chủ ngữ – "Trước hết là sự kiện."
+CẢNH BÁO cảnh 3: câu quá dài (41 từ) – tách đôi
+CẢNH BÁO cảnh 4: câu quá dài (54 từ) – tách đôi
+CẢNH BÁO cảnh 4: lặp từ liền nhau
+CẢNH BÁO cảnh 7: câu quá dài (49 từ) – tách đôi
+CẢNH BÁO cảnh 8: câu quá dài (63 từ) – tách đôi
+CẢNH BÁO cảnh 8: câu quá dài (39 từ) – tách đôi
+CẢNH BÁO cảnh 8: lặp từ liền nhau
+CẢNH BÁO cảnh 10: câu cụt thiếu chủ ngữ – "Hãy để lại bình luận."

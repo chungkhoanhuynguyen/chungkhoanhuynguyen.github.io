@@ -1,0 +1,12 @@
+CẢNH BÁO cảnh 1: câu quá dài (46 từ) – tách đôi
+CẢNH BÁO cảnh 2: câu cụt thiếu chủ ngữ – "Chương một."
+CẢNH BÁO cảnh 2: câu cụt thiếu chủ ngữ – "Bức tranh toàn hệ thống."
+CẢNH BÁO cảnh 4: câu cụt thiếu chủ ngữ – "Chương ba."
+CẢNH BÁO cảnh 4: câu cụt thiếu chủ ngữ – "A C B."
+CẢNH BÁO cảnh 5: câu cụt thiếu chủ ngữ – "Chương bốn."
+CẢNH BÁO cảnh 6: câu cụt thiếu chủ ngữ – "Chương năm."
+CẢNH BÁO cảnh 6: câu quá dài (40 từ) – tách đôi
+CẢNH BÁO cảnh 6: câu quá dài (52 từ) – tách đôi
+CẢNH BÁO cảnh 6: câu quá dài (54 từ) – tách đôi
+CẢNH BÁO cảnh 7: câu cụt thiếu chủ ngữ – "Chương sáu."
+CẢNH BÁO cảnh 8: câu cụt thiếu chủ ngữ – "Hãy để lại bình luận."

@@ -1,0 +1,6 @@
+CẢNH BÁO cảnh 3: câu cụt thiếu chủ ngữ – "Giờ là đường đi."
+CẢNH BÁO cảnh 3: câu cụt thiếu chủ ngữ – "Đơn vị triệu đồng."
+CẢNH BÁO cảnh 5: câu quá dài (47 từ) – tách đôi
+CẢNH BÁO cảnh 8: câu quá dài (68 từ) – tách đôi
+CẢNH BÁO cảnh 9: câu quá dài (98 từ) – tách đôi
+CẢNH BÁO cảnh 10: câu quá dài (47 từ) – tách đôi

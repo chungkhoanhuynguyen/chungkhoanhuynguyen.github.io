@@ -1,0 +1,567 @@
+1
+00:00:00,000 --> 00:00:02,690
+Thế Giới Di Động quý ba lãi 3.094 tỷ đồng,
+
+2
+00:00:02,690 --> 00:00:04,484
+tăng hơn 74% so với cùng kỳ,
+
+3
+00:00:04,484 --> 00:00:05,893
+doanh thu vượt 52.000.
+
+4
+00:00:05,893 --> 00:00:07,815
+Bán lẻ vốn là ngành biên mỏng,
+
+5
+00:00:07,815 --> 00:00:11,403
+vậy lãi tăng nhanh hơn doanh thu hơn gấp đôi đến từ đâu?
+
+6
+00:00:11,403 --> 00:00:15,118
+Em soi báo cáo theo năm dòng để thấy phần nào là bán hàng,
+
+7
+00:00:15,118 --> 00:00:17,040
+phần nào là kiểm soát chi phí.
+
+8
+00:00:17,320 --> 00:00:20,559
+Cách em đọc báo cáo tài chính của Thế Giới Di Động
+
+9
+00:00:20,559 --> 00:00:22,438
+là năm dòng theo thứ tự. Một,
+
+10
+00:00:22,438 --> 00:00:24,705
+doanh thu hoặc thu nhập chính. Hai,
+
+11
+00:00:24,705 --> 00:00:28,333
+lợi nhuận sau thuế và đường đi của nó qua nhiều quý. Ba,
+
+12
+00:00:28,333 --> 00:00:29,305
+lãi đến từ đâu:
+
+13
+00:00:29,305 --> 00:00:32,155
+hoạt động cốt lõi hay khoản bất thường. Bốn,
+
+14
+00:00:32,155 --> 00:00:33,451
+chi phí và dự phòng,
+
+15
+00:00:33,451 --> 00:00:35,913
+nơi lợi nhuận dễ bị bào mòn nhất. Năm,
+
+16
+00:00:35,913 --> 00:00:36,884
+dòng tiền thật,
+
+17
+00:00:36,884 --> 00:00:39,864
+vì lợi nhuận kế toán chưa phải tiền trong túi.
+
+18
+00:00:39,864 --> 00:00:43,039
+Số liệu lấy từ báo cáo tài chính quý ba năm 2026.
+
+19
+00:00:43,319 --> 00:00:45,069
+Toàn bộ số liệu trong video này,
+
+20
+00:00:45,069 --> 00:00:47,859
+cùng bảng định giá và báo cáo tài chính hơn 400 mã,
+
+21
+00:00:47,859 --> 00:00:50,977
+anh chị xem miễn phí tại chứng khoán Huy Nguyễn chấm com.
+
+22
+00:00:50,977 --> 00:00:53,712
+Ở đó có người tư vấn trực tiếp nếu anh chị cần hỏi
+
+23
+00:00:53,712 --> 00:00:54,697
+về mã em đang cầm.
+
+24
+00:00:54,977 --> 00:00:57,068
+Dòng một là doanh thu thuần.
+
+25
+00:00:57,068 --> 00:01:00,204
+Quý ba doanh thu thuần đạt 52.614 tỷ đồng,
+
+26
+00:01:00,204 --> 00:01:02,146
+tăng 32,0% so với cùng kỳ.
+
+27
+00:01:02,146 --> 00:01:03,266
+So với quý hai,
+
+28
+00:01:03,266 --> 00:01:04,834
+con số này tăng 7,9%.
+
+29
+00:01:04,834 --> 00:01:06,552
+Trong tám quý gần nhất,
+
+30
+00:01:06,552 --> 00:01:10,360
+quý cao nhất là quý ba năm 2026 với 52.614 tỷ đồng,
+
+31
+00:01:10,360 --> 00:01:14,318
+quý thấp nhất là quý bốn năm 2024 với 34.574 tỷ đồng.
+
+32
+00:01:14,318 --> 00:01:18,127
+Nhìn đường đi này trước khi nhìn lợi nhuận giúp anh
+
+33
+00:01:18,127 --> 00:01:22,832
+chị biết lãi tăng là nhờ bán được nhiều hơn hay nhờ đổi cơ cấu.
+
+34
+00:01:22,832 --> 00:01:26,864
+Em lấy số trong tám quý để tránh kết luận từ một điểm.
+
+35
+00:01:27,144 --> 00:01:29,514
+Dòng hai là lợi nhuận sau thuế.
+
+36
+00:01:29,514 --> 00:01:32,876
+Quý ba lợi nhuận sau thuế đạt 3.094 tỷ đồng,
+
+37
+00:01:32,876 --> 00:01:34,863
+tăng 74,7% so với cùng kỳ,
+
+38
+00:01:34,863 --> 00:01:36,774
+và thấp hơn quý hai 6,3%.
+
+39
+00:01:36,774 --> 00:01:40,060
+Lũy kế chín tháng đầu năm là 9.111 tỷ đồng,
+
+40
+00:01:40,060 --> 00:01:42,047
+tăng 83,5% so với cùng kỳ.
+
+41
+00:01:42,047 --> 00:01:45,256
+Cộng bốn quý gần nhất được 11.180 tỷ đồng.
+
+42
+00:01:45,256 --> 00:01:46,326
+Trong tám quý,
+
+43
+00:01:46,326 --> 00:01:50,224
+quý tốt nhất là quý hai năm 2026 với 3.302 tỷ đồng,
+
+44
+00:01:50,224 --> 00:01:53,969
+quý yếu nhất là quý bốn năm 2024 với 847 tỷ đồng.
+
+45
+00:01:53,969 --> 00:01:57,713
+Khoảng cách giữa hai quý này cho anh chị biết lợi
+
+46
+00:01:57,713 --> 00:02:01,305
+nhuận của doanh nghiệp đều đặn hay thất thường,
+
+47
+00:02:01,305 --> 00:02:04,820
+và một quý đẹp hay xấu có nên được coi là bình
+
+48
+00:02:04,820 --> 00:02:06,120
+thường hay không.
+
+49
+00:02:06,400 --> 00:02:08,343
+Dòng ba là lãi đến từ đâu.
+
+50
+00:02:08,343 --> 00:02:11,631
+Dữ liệu tổng hợp từ báo cáo quý ba cho thấy:
+
+51
+00:02:11,631 --> 00:02:14,620
+Lợi nhuận quý tăng 74,7% so với cùng kỳ;
+
+52
+00:02:14,620 --> 00:02:16,190
+Doanh thu tăng 32,0%;
+
+53
+00:02:16,190 --> 00:02:20,076
+Biên lợi nhuận gộp 21,7% (cùng kỳ 18,8%), cải thiện.
+
+54
+00:02:20,076 --> 00:02:24,410
+Bán lẻ kiếm tiền từ biên lợi nhuận gộp nhân với doanh thu,
+
+55
+00:02:24,410 --> 00:02:26,279
+rồi trừ chi phí cửa hàng.
+
+56
+00:02:26,279 --> 00:02:28,222
+Quý ba biên gộp lên 21,7%,
+
+57
+00:02:28,222 --> 00:02:29,193
+cùng kỳ 18,8.
+
+58
+00:02:29,193 --> 00:02:31,958
+Chỉ riêng ba điểm phần trăm biên gộp,
+
+59
+00:02:31,958 --> 00:02:33,901
+trên mức doanh thu 52.000,
+
+60
+00:02:33,901 --> 00:02:35,695
+đã là một khối tiền lớn.
+
+61
+00:02:35,695 --> 00:02:39,880
+Doanh thu tăng 32% nhưng lãi tăng hơn gấp đôi tốc độ đó,
+
+62
+00:02:39,880 --> 00:02:42,944
+nghĩa là chi phí tăng chậm hơn doanh thu.
+
+63
+00:02:43,224 --> 00:02:45,076
+Dòng bốn là chi phí và dự phòng.
+
+64
+00:02:45,076 --> 00:02:46,118
+Ở bán lẻ điện máy,
+
+65
+00:02:46,118 --> 00:02:48,954
+dòng cần soi là hàng tồn kho và dự phòng giảm giá
+
+66
+00:02:48,954 --> 00:02:49,706
+hàng tồn kho,
+
+67
+00:02:49,706 --> 00:02:51,790
+vì hàng công nghệ mất giá rất nhanh.
+
+68
+00:02:51,790 --> 00:02:54,337
+Một dòng nữa là chi phí bán hàng và quản lý:
+
+69
+00:02:54,337 --> 00:02:57,867
+nếu chi phí cố định cửa hàng bị pha loãng khi doanh thu tăng,
+
+70
+00:02:57,867 --> 00:03:00,066
+lợi nhuận sẽ tăng nhanh hơn doanh thu.
+
+71
+00:03:00,066 --> 00:03:01,456
+Khi doanh thu chững lại,
+
+72
+00:03:01,456 --> 00:03:02,787
+hiệu ứng này đảo chiều,
+
+73
+00:03:02,787 --> 00:03:06,144
+nên hãy xem đòn bẩy này đang giúp hay đang chờ để làm hại.
+
+74
+00:03:06,424 --> 00:03:07,970
+Dòng năm là dòng tiền thật.
+
+75
+00:03:07,970 --> 00:03:09,975
+Bán lẻ thường có lợi thế dòng tiền:
+
+76
+00:03:09,975 --> 00:03:11,120
+khách trả tiền ngay,
+
+77
+00:03:11,120 --> 00:03:13,067
+nhà cung cấp cho nợ vài chục ngày.
+
+78
+00:03:13,067 --> 00:03:15,874
+Nhưng cũng chính vì vậy hàng tồn kho tăng mạnh có
+
+79
+00:03:15,874 --> 00:03:18,623
+thể làm dòng tiền kinh doanh yếu đi dù lãi tăng.
+
+80
+00:03:18,623 --> 00:03:21,544
+Dữ liệu tổng hợp em dùng chưa có số lưu chuyển tiền
+
+81
+00:03:21,544 --> 00:03:23,262
+tệ nên video không nêu con số;
+
+82
+00:03:23,262 --> 00:03:26,126
+anh chị so lợi nhuận quý ba với dòng tiền thuần từ
+
+83
+00:03:26,126 --> 00:03:27,329
+hoạt động kinh doanh.
+
+84
+00:03:27,609 --> 00:03:29,122
+Khoan, nói nhanh một chút.
+
+85
+00:03:29,122 --> 00:03:31,859
+Nếu anh chị không có thời gian tự lọc cổ phiếu,
+
+86
+00:03:31,859 --> 00:03:34,188
+hãy vào nhóm Zalo tư vấn của Huy Nguyễn.
+
+87
+00:03:34,188 --> 00:03:36,575
+Ở đó mỗi ngày có danh sách cổ phiếu khỏe,
+
+88
+00:03:36,575 --> 00:03:37,797
+nhận định thị trường,
+
+89
+00:03:37,797 --> 00:03:40,767
+và anh chị được hỏi trực tiếp về danh mục của mình,
+
+90
+00:03:40,767 --> 00:03:41,873
+hoàn toàn miễn phí.
+
+91
+00:03:41,873 --> 00:03:43,503
+Số Zalo là không ba sáu năm,
+
+92
+00:03:43,503 --> 00:03:44,958
+một tám tám, hai tám sáu,
+
+93
+00:03:44,958 --> 00:03:46,356
+có sẵn trong phần mô tả.
+
+94
+00:03:46,356 --> 00:03:47,229
+Giờ em đi tiếp.
+
+95
+00:03:47,509 --> 00:03:48,728
+Cuối cùng là giá.
+
+96
+00:03:48,728 --> 00:03:51,595
+Theo dữ liệu tổng hợp ngày hai tháng 11,
+
+97
+00:03:51,595 --> 00:03:55,323
+vốn hóa Thế Giới Di Động khoảng 109,2 nghìn tỷ đồng,
+
+98
+00:03:55,323 --> 00:03:57,402
+P trên E 9,77, P trên B 2,39,
+
+99
+00:03:57,402 --> 00:03:59,337
+ROE bốn quý gần nhất 29,5%.
+
+100
+00:03:59,337 --> 00:04:03,065
+Hai chỉ số này chỉ có nghĩa khi đặt cạnh tốc độ tăng
+
+101
+00:04:03,065 --> 00:04:05,502
+trưởng lợi nhuận và độ bền của nó.
+
+102
+00:04:05,502 --> 00:04:07,366
+Định giá chỉ là bước cuối:
+
+103
+00:04:07,366 --> 00:04:10,448
+trước đó anh chị phải biết lãi này có thật,
+
+104
+00:04:10,448 --> 00:04:13,244
+có bền và có biến thành tiền hay không.
+
+105
+00:04:13,244 --> 00:04:14,965
+Đây là con số tham khảo,
+
+106
+00:04:14,965 --> 00:04:17,187
+không phải khuyến nghị mua bán.
+
+107
+00:04:17,467 --> 00:04:20,906
+Bẫy của câu chuyện tăng trưởng là nhìn phần trăm mà quên nền.
+
+108
+00:04:20,906 --> 00:04:23,781
+Lợi nhuận bốn quý trước đó của Thế Giới Di Động dao
+
+109
+00:04:23,781 --> 00:04:25,923
+động từ khoảng 1.700 đến hơn 3.300 tỷ,
+
+110
+00:04:25,923 --> 00:04:28,967
+tức là doanh nghiệp đang đi lên từ nền thấp hơn nhiều.
+
+111
+00:04:28,967 --> 00:04:31,165
+Quý ba cũng thấp hơn quý hai khoảng 6%.
+
+112
+00:04:31,165 --> 00:04:32,913
+Tăng trưởng so với cùng kỳ đẹp,
+
+113
+00:04:32,913 --> 00:04:35,337
+nhưng đà quý này chưa phải đường thẳng lên.
+
+114
+00:04:35,617 --> 00:04:38,500
+Bốn bài học từ báo cáo của Thế Giới Di Động. Một,
+
+115
+00:04:38,500 --> 00:04:41,089
+lợi nhuận bán lẻ là biên gộp nhân doanh thu,
+
+116
+00:04:41,089 --> 00:04:42,619
+trừ chi phí cửa hàng. Hai,
+
+117
+00:04:42,619 --> 00:04:46,149
+chi phí cố định tạo đòn bẩy hai chiều khi doanh thu đổi. Ba,
+
+118
+00:04:46,149 --> 00:04:49,738
+hàng công nghệ mất giá nhanh nên cần xem tồn kho và dự phòng.
+
+119
+00:04:49,738 --> 00:04:49,973
+Bốn,
+
+120
+00:04:49,973 --> 00:04:53,092
+so cả cùng kỳ và quý trước để biết đà tăng còn không.
+
+121
+00:04:53,372 --> 00:04:54,482
+Trước khi kết thúc,
+
+122
+00:04:54,482 --> 00:04:56,586
+có hai thứ anh chị nên lưu lại. Một,
+
+123
+00:04:56,586 --> 00:04:59,507
+vào chứng khoán Huy Nguyễn chấm com để xem bảng 10
+
+124
+00:04:59,507 --> 00:05:02,429
+cổ phiếu khỏe nhất thị trường cập nhật liên tục và
+
+125
+00:05:02,429 --> 00:05:05,000
+báo cáo tài chính hơn 400 mã, miễn phí. Hai,
+
+126
+00:05:05,000 --> 00:05:06,519
+nếu anh chị đang kẹt hàng,
+
+127
+00:05:06,519 --> 00:05:08,214
+chưa biết nên giữ hay cơ cấu,
+
+128
+00:05:08,214 --> 00:05:09,908
+hoặc muốn có người đồng hành,
+
+129
+00:05:09,908 --> 00:05:11,661
+nhắn Zalo số không ba sáu năm,
+
+130
+00:05:11,661 --> 00:05:12,362
+một tám tám,
+
+131
+00:05:12,362 --> 00:05:14,174
+hai tám sáu để vào nhóm tư vấn,
+
+132
+00:05:14,174 --> 00:05:16,219
+Huy và đội ngũ sẽ hỗ trợ trực tiếp.
+
+133
+00:05:16,219 --> 00:05:17,797
+Đầu tư một mình rất dễ sai,
+
+134
+00:05:17,797 --> 00:05:19,491
+có người cùng đi sẽ chắc hơn.
+
+135
+00:05:19,491 --> 00:05:23,114
+Nhớ đăng ký kênh và bấm chuông để không bỏ lỡ video tiếp theo.
+
+136
+00:05:23,394 --> 00:05:26,642
+Số liệu trong video lấy từ báo cáo tài chính quý ba
+
+137
+00:05:26,642 --> 00:05:29,636
+năm 2026 và dữ liệu tổng hợp ngày hai tháng 11.
+
+138
+00:05:29,636 --> 00:05:31,292
+Đây là góc nhìn tham khảo,
+
+139
+00:05:31,292 --> 00:05:33,266
+không phải khuyến nghị mua bán.
+
+140
+00:05:33,266 --> 00:05:37,215
+Dữ liệu từng mã có trên trang chứng khoán huy nguyễn chấm com.
+
+141
+00:05:37,215 --> 00:05:40,209
+Anh chị muốn em soi doanh nghiệp nào tiếp theo?
+
+142
+00:05:40,209 --> 00:05:41,546
+Hãy để lại bình luận.

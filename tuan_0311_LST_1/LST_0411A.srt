@@ -1,0 +1,543 @@
+1
+00:00:00,000 --> 00:00:01,139
+Mùa xuân năm 1.720,
+
+2
+00:00:01,139 --> 00:00:04,437
+cổ phiếu Công ty Biển Nam ở London còn khoảng 128 bảng.
+
+3
+00:00:04,437 --> 00:00:07,075
+Mùa hè cùng năm nó chạm khoảng 1 nghìn bảng.
+
+4
+00:00:07,075 --> 00:00:07,854
+Đến cuối năm,
+
+5
+00:00:07,854 --> 00:00:09,473
+nó chỉ còn khoảng 124 bảng.
+
+6
+00:00:09,473 --> 00:00:11,151
+Trong vòng chưa đầy một năm,
+
+7
+00:00:11,151 --> 00:00:14,269
+người ta chứng kiến cả một cú tăng gấp tám lần và cú
+
+8
+00:00:14,269 --> 00:00:15,528
+sập gần như xóa sạch.
+
+9
+00:00:15,528 --> 00:00:18,226
+Trong những người mắc kẹt có cả Isaac Newton,
+
+10
+00:00:18,226 --> 00:00:20,444
+người nổi tiếng nhất nước Anh khi đó.
+
+11
+00:00:20,444 --> 00:00:22,603
+Video này kể lại bong bóng Biển Nam:
+
+12
+00:00:22,603 --> 00:00:23,742
+nó bắt đầu thế nào,
+
+13
+00:00:23,742 --> 00:00:25,660
+vì sao cả giới tinh hoa lao vào,
+
+14
+00:00:25,660 --> 00:00:27,159
+và Newton đã học được gì.
+
+15
+00:00:27,159 --> 00:00:30,097
+Số liệu giá lấy từ các tài liệu lịch sử tài chính
+
+16
+00:00:30,097 --> 00:00:31,536
+được trích dẫn rộng rãi,
+
+17
+00:00:31,536 --> 00:00:33,035
+mức giá mang tính xấp xỉ.
+
+18
+00:00:33,315 --> 00:00:35,287
+Công ty Biển Nam được lập năm 1.711,
+
+19
+00:00:35,287 --> 00:00:37,041
+với độc quyền buôn bán ở Nam Mỹ,
+
+20
+00:00:37,041 --> 00:00:39,726
+dù khi đó Anh đang có chiến tranh với Tây Ban Nha
+
+21
+00:00:39,726 --> 00:00:42,082
+nên hoạt động thương mại thực chất rất nhỏ.
+
+22
+00:00:42,082 --> 00:00:45,315
+Điểm then chốt nằm ở một kế hoạch tài chính năm 1.702 mươi:
+
+23
+00:00:45,315 --> 00:00:48,000
+công ty đề nghị tiếp nhận khoảng 31 triệu bảng nợ
+
+24
+00:00:48,000 --> 00:00:48,986
+của chính phủ Anh,
+
+25
+00:00:48,986 --> 00:00:51,671
+đổi lấy cổ phiếu của chính mình cho những chủ nợ.
+
+26
+00:00:51,671 --> 00:00:55,068
+Nếu giá cổ phiếu càng cao thì càng ít cổ phiếu phải phát hành,
+
+27
+00:00:55,068 --> 00:00:57,862
+nên ban lãnh đạo có động cơ rất lớn để giữ giá lên.
+
+28
+00:00:57,862 --> 00:00:59,232
+Tin tức tốt được tung ra,
+
+29
+00:00:59,232 --> 00:01:01,917
+hứa hẹn lợi nhuận từ thương mại châu Mỹ khổng lồ,
+
+30
+00:01:01,917 --> 00:01:04,054
+dù thực tế chưa có dòng tiền tương ứng.
+
+31
+00:01:04,334 --> 00:01:05,239
+Đầu năm 1.720,
+
+32
+00:01:05,239 --> 00:01:06,854
+cổ phiếu khoảng 128 bảng.
+
+33
+00:01:06,854 --> 00:01:09,116
+Chỉ trong vài tháng mùa xuân và hè,
+
+34
+00:01:09,116 --> 00:01:11,378
+giá bị đẩy lên khoảng 1 nghìn bảng,
+
+35
+00:01:11,378 --> 00:01:13,252
+tức tăng gần tám lần. Khi đó,
+
+36
+00:01:13,252 --> 00:01:17,129
+cả những người chưa bao giờ chơi cổ phiếu cũng muốn có phần:
+
+37
+00:01:17,129 --> 00:01:18,809
+quý tộc, tu sĩ, người hầu,
+
+38
+00:01:18,809 --> 00:01:21,652
+thậm chí phụ nữ lần đầu tham gia thị trường.
+
+39
+00:01:21,652 --> 00:01:22,492
+Đến cuối năm,
+
+40
+00:01:22,492 --> 00:01:24,301
+giá chỉ còn khoảng 124 bảng,
+
+41
+00:01:24,301 --> 00:01:27,274
+tức là gần như quay về nơi xuất phát. Hơn nữa,
+
+42
+00:01:27,274 --> 00:01:30,634
+rất nhiều người mua ở vùng giá cao bằng tiền vay nên
+
+43
+00:01:30,634 --> 00:01:32,766
+thiệt hại không dừng ở vốn bỏ ra,
+
+44
+00:01:32,766 --> 00:01:35,028
+mà kéo theo cả những người cho vay.
+
+45
+00:01:35,308 --> 00:01:38,605
+Cơn sốt đẻ ra hàng loạt công ty mới cùng chào bán cổ phiếu.
+
+46
+00:01:38,605 --> 00:01:41,455
+Nổi tiếng nhất là chuyện một công ty gọi vốn để làm
+
+47
+00:01:41,455 --> 00:01:44,640
+một công việc hệ trọng nhưng không ai được biết đó là gì,
+
+48
+00:01:44,640 --> 00:01:47,434
+và chỉ trong một buổi sáng đã thu được số tiền lớn
+
+49
+00:01:47,434 --> 00:01:48,998
+rồi người sáng lập biến mất.
+
+50
+00:01:48,998 --> 00:01:52,072
+Chuyện này thường được kể lại như bài học về sự cả tin,
+
+51
+00:01:52,072 --> 00:01:54,195
+dù chi tiết đã được truyền thuyết hóa.
+
+52
+00:01:54,195 --> 00:01:57,101
+Quốc hội Anh thông qua Đạo luật Bubble Act năm 1.720
+
+53
+00:01:57,101 --> 00:01:59,839
+để hạn chế các công ty cổ phần chưa có giấy phép,
+
+54
+00:01:59,839 --> 00:02:02,744
+1 phần để bảo vệ chính Công ty Biển Nam khỏi sự cạnh
+
+55
+00:02:02,744 --> 00:02:03,471
+tranh về vốn.
+
+56
+00:02:03,471 --> 00:02:06,376
+Trớ trêu là chính các biện pháp được cho là kiềm chế
+
+57
+00:02:06,376 --> 00:02:08,612
+lại góp phần làm bong bóng vỡ nhanh hơn.
+
+58
+00:02:08,892 --> 00:02:10,386
+Khoan, nói nhanh một chút.
+
+59
+00:02:10,386 --> 00:02:13,087
+Nếu anh chị không có thời gian tự lọc cổ phiếu,
+
+60
+00:02:13,087 --> 00:02:15,385
+hãy vào nhóm Zalo tư vấn của Huy Nguyễn.
+
+61
+00:02:15,385 --> 00:02:17,741
+Ở đó mỗi ngày có danh sách cổ phiếu khỏe,
+
+62
+00:02:17,741 --> 00:02:18,948
+nhận định thị trường,
+
+63
+00:02:18,948 --> 00:02:21,879
+và anh chị được hỏi trực tiếp về danh mục của mình,
+
+64
+00:02:21,879 --> 00:02:22,970
+hoàn toàn miễn phí.
+
+65
+00:02:22,970 --> 00:02:24,580
+Số Zalo là không ba sáu năm,
+
+66
+00:02:24,580 --> 00:02:26,016
+một tám tám, hai tám sáu,
+
+67
+00:02:26,016 --> 00:02:27,395
+có sẵn trong phần mô tả.
+
+68
+00:02:27,395 --> 00:02:28,372
+Giờ mình đi tiếp.
+
+69
+00:02:28,652 --> 00:02:31,244
+Isaac Newton có thời gian giữ cổ phiếu Biển Nam.
+
+70
+00:02:31,244 --> 00:02:32,701
+Theo các nghiên cứu sử học,
+
+71
+00:02:32,701 --> 00:02:35,239
+ông bán bớt với khoản lãi tốt khi giá còn thấp,
+
+72
+00:02:35,239 --> 00:02:36,804
+nhưng thấy giá tiếp tục tăng,
+
+73
+00:02:36,804 --> 00:02:38,532
+những người xung quanh giàu lên,
+
+74
+00:02:38,532 --> 00:02:41,231
+ông quay lại mua vào ở vùng giá cao và bị mắc kẹt,
+
+75
+00:02:41,231 --> 00:02:43,391
+ước tính thiệt hại khoảng 20 nghìn bảng,
+
+76
+00:02:43,391 --> 00:02:44,848
+một số tiền cực lớn khi đó.
+
+77
+00:02:44,848 --> 00:02:47,116
+Có một câu nói thường được gán cho ông là:
+
+78
+00:02:47,116 --> 00:02:49,761
+tôi tính được chuyển động của các thiên thể nhưng
+
+79
+00:02:49,761 --> 00:02:51,867
+không tính nổi sự điên rồ của đám đông.
+
+80
+00:02:51,867 --> 00:02:54,620
+Nhưng chưa có bằng chứng chắc chắn rằng ông thực sự
+
+81
+00:02:54,620 --> 00:02:55,268
+nói điều đó.
+
+82
+00:02:55,268 --> 00:02:58,507
+Điều đáng học là nỗi đau của việc nhìn người khác kiếm tiền,
+
+83
+00:02:58,507 --> 00:03:01,530
+khiến bộ não thông minh nhất cũng quay lại với đám đông.
+
+84
+00:03:01,810 --> 00:03:02,724
+Bài học thứ nhất:
+
+85
+00:03:02,724 --> 00:03:05,786
+khi ban lãnh đạo có động cơ rất lớn giữ giá cổ phiếu cao,
+
+86
+00:03:05,786 --> 00:03:07,989
+hãy đối chiếu lời hứa với dòng tiền thực.
+
+87
+00:03:07,989 --> 00:03:09,816
+Thương mại ở Nam Mỹ chưa có nhiều,
+
+88
+00:03:09,816 --> 00:03:11,212
+nhưng lời hứa thì có thừa.
+
+89
+00:03:11,212 --> 00:03:12,072
+Bài học thứ hai:
+
+90
+00:03:12,072 --> 00:03:14,812
+nỗi sợ bỏ lỡ làm người thông minh quay lại đúng nơi
+
+91
+00:03:14,812 --> 00:03:15,564
+họ vừa rời đi.
+
+92
+00:03:15,564 --> 00:03:17,068
+Newton đã làm điều khó nhất,
+
+93
+00:03:17,068 --> 00:03:17,982
+đó là bán có lãi,
+
+94
+00:03:17,982 --> 00:03:20,668
+rồi thua vì không giữ được kỷ luật của chính mình.
+
+95
+00:03:20,668 --> 00:03:21,474
+Bài học thứ ba:
+
+96
+00:03:21,474 --> 00:03:24,536
+chốt lãi một lần không có nghĩa là bạn miễn nhiễm rủi ro.
+
+97
+00:03:24,536 --> 00:03:25,665
+Quyết định tiếp theo,
+
+98
+00:03:25,665 --> 00:03:26,900
+mua lại ở vùng giá cao,
+
+99
+00:03:26,900 --> 00:03:28,566
+mới là điều quyết định kết quả.
+
+100
+00:03:28,566 --> 00:03:31,145
+Một kế hoạch mua bán viết sẵn trước khi vào lệnh
+
+101
+00:03:31,145 --> 00:03:33,992
+giúp bạn đỡ phải đối mặt với chính mình giữa cơn sốt.
+
+102
+00:03:34,272 --> 00:03:35,459
+Sau khi bong bóng vỡ,
+
+103
+00:03:35,459 --> 00:03:37,155
+Quốc hội Anh mở cuộc điều tra.
+
+104
+00:03:37,155 --> 00:03:40,095
+1 phần tài sản của các giám đốc công ty bị tịch thu,
+
+105
+00:03:40,095 --> 00:03:42,809
+và bộ trưởng tài chính John Aislabie bị khai trừ
+
+106
+00:03:42,809 --> 00:03:45,579
+khỏi Hạ viện rồi bị giam một thời gian ngắn trong
+
+107
+00:03:45,579 --> 00:03:47,162
+Tháp London. Robert Walpole,
+
+108
+00:03:47,162 --> 00:03:48,858
+người được giao xử lý hậu quả,
+
+109
+00:03:48,858 --> 00:03:51,458
+giúp ổn định lại tín nhiệm tài chính nhà nước.
+
+110
+00:03:51,458 --> 00:03:54,398
+Kết quả trực tiếp là nhiều năm dân Anh ngần ngại với
+
+111
+00:03:54,398 --> 00:03:55,811
+cổ phiếu công ty cổ phần,
+
+112
+00:03:55,811 --> 00:03:58,581
+và các quy định về công ty cổ phần được siết chặt
+
+113
+00:03:58,581 --> 00:03:59,825
+cho tới tận thế kỷ 19.
+
+114
+00:03:59,825 --> 00:04:00,503
+Một lần nữa,
+
+115
+00:04:00,503 --> 00:04:02,199
+cú sập không chỉ làm mất tiền,
+
+116
+00:04:02,199 --> 00:04:04,800
+nó làm xói mòn lòng tin vào cả một thị trường.
+
+117
+00:04:05,080 --> 00:04:06,219
+Trước khi kết thúc,
+
+118
+00:04:06,219 --> 00:04:08,377
+có hai thứ anh chị nên lưu lại. Một,
+
+119
+00:04:08,377 --> 00:04:11,375
+vào chứng khoán Huy Nguyễn chấm com để xem bảng 10
+
+120
+00:04:11,375 --> 00:04:14,372
+cổ phiếu khỏe nhất thị trường cập nhật liên tục và
+
+121
+00:04:14,372 --> 00:04:17,010
+báo cáo tài chính hơn 400 mã, miễn phí. Hai,
+
+122
+00:04:17,010 --> 00:04:18,569
+nếu anh chị đang kẹt hàng,
+
+123
+00:04:18,569 --> 00:04:20,307
+chưa biết nên giữ hay cơ cấu,
+
+124
+00:04:20,307 --> 00:04:22,046
+hoặc muốn có người đồng hành,
+
+125
+00:04:22,046 --> 00:04:23,844
+nhắn Zalo số không ba sáu năm,
+
+126
+00:04:23,844 --> 00:04:24,564
+một tám tám,
+
+127
+00:04:24,564 --> 00:04:26,422
+hai tám sáu để vào nhóm tư vấn,
+
+128
+00:04:26,422 --> 00:04:28,521
+Huy và đội ngũ sẽ hỗ trợ trực tiếp.
+
+129
+00:04:28,521 --> 00:04:30,139
+Đầu tư một mình rất dễ sai,
+
+130
+00:04:30,139 --> 00:04:31,878
+có người cùng đi sẽ chắc hơn.
+
+131
+00:04:31,878 --> 00:04:35,595
+Nhớ đăng ký kênh và bấm chuông để không bỏ lỡ video tiếp theo.
+
+132
+00:04:35,875 --> 00:04:38,886
+Số liệu trong video lấy từ nguồn ghi ở phần mô tả.
+
+133
+00:04:38,886 --> 00:04:41,957
+Đây là câu chuyện lịch sử để học tâm lý thị trường,
+
+134
+00:04:41,957 --> 00:04:43,823
+không phải khuyến nghị mua bán.
+
+135
+00:04:43,823 --> 00:04:46,112
+Bạn muốn mình kể cú sập nào tiếp theo?
+
+136
+00:04:46,112 --> 00:04:47,497
+Hãy bình luận bên dưới.

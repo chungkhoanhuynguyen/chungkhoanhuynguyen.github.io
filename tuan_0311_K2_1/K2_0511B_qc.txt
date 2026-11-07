@@ -1,0 +1,8 @@
+CẢNH BÁO cảnh 1: câu quá dài (44 từ) – tách đôi
+CẢNH BÁO cảnh 4: câu cụt thiếu chủ ngữ – "Vinhomes."
+CẢNH BÁO cảnh 4: câu quá dài (54 từ) – tách đôi
+CẢNH BÁO cảnh 6: câu cụt thiếu chủ ngữ – "Khang Điền."
+CẢNH BÁO cảnh 8: câu cụt thiếu chủ ngữ – "Đất Xanh."
+CẢNH BÁO cảnh 13: lặp từ liền nhau
+CẢNH BÁO cảnh 15: câu quá dài (43 từ) – tách đôi
+CẢNH BÁO cảnh 16: câu quá dài (46 từ) – tách đôi

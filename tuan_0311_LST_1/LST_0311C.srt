@@ -1,0 +1,515 @@
+1
+00:00:00,000 --> 00:00:01,810
+Ngày 28 tháng bảy năm 2 nghìn,
+
+2
+00:00:01,810 --> 00:00:04,827
+sàn giao dịch chứng khoán đầu tiên của Việt Nam mở
+
+3
+00:00:04,827 --> 00:00:08,085
+cửa tại Thành phố Hồ Chí Minh với chỉ hai mã cổ phiếu.
+
+4
+00:00:08,085 --> 00:00:09,352
+Chưa đầy một năm sau,
+
+5
+00:00:09,352 --> 00:00:11,162
+VN-Index đạt đỉnh 571,04 điểm,
+
+6
+00:00:11,162 --> 00:00:13,998
+rồi mất khoảng 3 phần tư giá trị trong vài năm.
+
+7
+00:00:13,998 --> 00:00:17,739
+Đây là bong bóng đầu tiên của thị trường chứng khoán Việt Nam,
+
+8
+00:00:17,739 --> 00:00:20,816
+và nó chứa gần như đủ các yếu tố mà các cơn sốt sau
+
+9
+00:00:20,816 --> 00:00:22,808
+này lặp lại: ít hàng, nhiều tiền,
+
+10
+00:00:22,808 --> 00:00:24,557
+kỳ vọng lớn và kiến thức non.
+
+11
+00:00:24,557 --> 00:00:27,454
+Video này kể lại câu chuyện đó với những con số,
+
+12
+00:00:27,454 --> 00:00:30,591
+để bạn thấy thị trường hôm nay thừa hưởng điều gì từ
+
+13
+00:00:30,591 --> 00:00:31,677
+những ngày đầu ấy.
+
+14
+00:00:31,957 --> 00:00:34,714
+Trung tâm Giao dịch Chứng khoán Thành phố Hồ Chí
+
+15
+00:00:34,714 --> 00:00:37,126
+Minh mở cửa ngày 28 tháng bảy năm 2 nghìn.
+
+16
+00:00:37,126 --> 00:00:38,791
+Chỉ có hai cổ phiếu niêm yết:
+
+17
+00:00:38,791 --> 00:00:41,204
+REE của Cơ điện lạnh và SAM của Cáp Sacom.
+
+18
+00:00:41,204 --> 00:00:43,214
+VN-Index được tính từ mốc 100 điểm.
+
+19
+00:00:43,214 --> 00:00:45,855
+Biên độ dao động giá mỗi phiên khi đó rất hẹp,
+
+20
+00:00:45,855 --> 00:00:48,842
+lệnh đặt theo phương thức khá thô sơ so với hôm nay,
+
+21
+00:00:48,842 --> 00:00:51,886
+và phần lớn nhà đầu tư chưa từng thấy cổ phiếu là gì.
+
+22
+00:00:51,886 --> 00:00:52,575
+Hai năm đầu,
+
+23
+00:00:52,575 --> 00:00:55,389
+thị trường nhỏ đến mức chỉ vài chục tỷ đồng đã đủ
+
+24
+00:00:55,389 --> 00:00:56,365
+làm thay đổi giá.
+
+25
+00:00:56,365 --> 00:00:59,466
+Chưa tới 20 doanh nghiệp niêm yết trong những năm đầu,
+
+26
+00:00:59,466 --> 00:01:02,395
+nên nguồn cung cổ phiếu rất hạn chế trong khi người
+
+27
+00:01:02,395 --> 00:01:03,831
+muốn mua ngày càng nhiều.
+
+28
+00:01:04,111 --> 00:01:05,217
+Từ mốc 100 điểm,
+
+29
+00:01:05,217 --> 00:01:08,533
+VN-Index tăng liên tục trong hơn 11 tháng và đạt
+
+30
+00:01:08,533 --> 00:01:11,850
+đỉnh 571,04 điểm vào ngày 25 tháng sáu năm 2001.
+
+31
+00:01:11,850 --> 00:01:13,508
+Tức là tăng hơn năm lần.
+
+32
+00:01:13,508 --> 00:01:16,134
+Giá nhiều cổ phiếu tăng gấp nhiều lần,
+
+33
+00:01:16,134 --> 00:01:17,654
+câu chuyện ai mua REE,
+
+34
+00:01:17,654 --> 00:01:19,381
+SAM đều lãi lan khắp nơi.
+
+35
+00:01:19,381 --> 00:01:20,417
+Nhưng sau đỉnh,
+
+36
+00:01:20,417 --> 00:01:24,425
+thị trường quay đầu và kéo dài giai đoạn đi xuống rất lâu,
+
+37
+00:01:24,425 --> 00:01:27,672
+tới khoảng năm 2003 chỉ số còn khoảng 130 điểm,
+
+38
+00:01:27,672 --> 00:01:29,952
+mất khoảng 3 phần tư so với đỉnh.
+
+39
+00:01:29,952 --> 00:01:33,545
+Số liệu đỉnh và đáy lấy từ thống kê của Sở Giao dịch
+
+40
+00:01:33,545 --> 00:01:35,895
+Chứng khoán Thành phố Hồ Chí Minh;
+
+41
+00:01:35,895 --> 00:01:37,138
+mức đáy là xấp xỉ.
+
+42
+00:01:37,418 --> 00:01:39,045
+Có ba lý do thường được nhắc.
+
+43
+00:01:39,045 --> 00:01:40,111
+Một là cung rất ít:
+
+44
+00:01:40,111 --> 00:01:41,962
+chỉ có vài doanh nghiệp niêm yết,
+
+45
+00:01:41,962 --> 00:01:44,654
+trong khi dòng tiền tìm kiếm cơ hội thì dồi dào.
+
+46
+00:01:44,654 --> 00:01:46,337
+Hai là nhà đầu tư còn rất mới,
+
+47
+00:01:46,337 --> 00:01:48,805
+nhiều người chưa quen đọc báo cáo tài chính,
+
+48
+00:01:48,805 --> 00:01:51,722
+quyết định dựa trên tin đồn và kể lại từ người quen.
+
+49
+00:01:51,722 --> 00:01:52,507
+Ba là kỳ vọng:
+
+50
+00:01:52,507 --> 00:01:55,424
+thị trường chứng khoán được xem là bước tiến lớn của
+
+51
+00:01:55,424 --> 00:01:56,097
+nền kinh tế,
+
+52
+00:01:56,097 --> 00:01:57,892
+ai cũng nghĩ giá sẽ chỉ có tăng.
+
+53
+00:01:57,892 --> 00:02:01,033
+Khi giá tăng nhanh hơn lợi nhuận doanh nghiệp rất nhiều,
+
+54
+00:02:01,033 --> 00:02:02,716
+hệ số định giá bị đẩy lên cao.
+
+55
+00:02:02,716 --> 00:02:03,838
+Giá vượt xa giá trị,
+
+56
+00:02:03,838 --> 00:02:06,250
+và chỉ cần một đợt bán là kéo giá quay đầu.
+
+57
+00:02:06,250 --> 00:02:08,774
+Đó là công thức quen thuộc của mọi bong bóng,
+
+58
+00:02:08,774 --> 00:02:09,672
+chỉ khác tên mã.
+
+59
+00:02:09,952 --> 00:02:11,423
+Khoan, nói nhanh một chút.
+
+60
+00:02:11,423 --> 00:02:14,082
+Nếu anh chị không có thời gian tự lọc cổ phiếu,
+
+61
+00:02:14,082 --> 00:02:16,345
+hãy vào nhóm Zalo tư vấn của Huy Nguyễn.
+
+62
+00:02:16,345 --> 00:02:18,664
+Ở đó mỗi ngày có danh sách cổ phiếu khỏe,
+
+63
+00:02:18,664 --> 00:02:19,852
+nhận định thị trường,
+
+64
+00:02:19,852 --> 00:02:22,737
+và anh chị được hỏi trực tiếp về danh mục của mình,
+
+65
+00:02:22,737 --> 00:02:23,812
+hoàn toàn miễn phí.
+
+66
+00:02:23,812 --> 00:02:25,396
+Số Zalo là không ba sáu năm,
+
+67
+00:02:25,396 --> 00:02:26,811
+một tám tám, hai tám sáu,
+
+68
+00:02:26,811 --> 00:02:28,169
+có sẵn trong phần mô tả.
+
+69
+00:02:28,169 --> 00:02:29,130
+Giờ mình đi tiếp.
+
+70
+00:02:29,410 --> 00:02:32,490
+Thị trường nhỏ có đặc điểm là hiệu ứng đám đông cực mạnh.
+
+71
+00:02:32,490 --> 00:02:33,948
+Người vào đầu tiên lãi lớn,
+
+72
+00:02:33,948 --> 00:02:34,759
+tin tức lan ra,
+
+73
+00:02:34,759 --> 00:02:37,838
+người đến sau càng đông và càng bị hút vào ở mức giá cao.
+
+74
+00:02:37,838 --> 00:02:40,485
+Thanh khoản mỏng nghĩa là lúc mua thì dễ đẩy giá,
+
+75
+00:02:40,485 --> 00:02:42,106
+lúc bán thì khó tìm người mua.
+
+76
+00:02:42,106 --> 00:02:43,024
+Sau khi qua đỉnh,
+
+77
+00:02:43,024 --> 00:02:46,158
+nhiều người giữ tâm lý chờ giá hồi về giá mua rồi mới bán,
+
+78
+00:02:46,158 --> 00:02:48,211
+và thời gian chờ đó kéo dài nhiều năm.
+
+79
+00:02:48,211 --> 00:02:51,398
+Hình minh họa chỉ mô tả diễn biến tâm lý theo ba giai đoạn,
+
+80
+00:02:51,398 --> 00:02:53,235
+không phải số liệu người tham gia.
+
+81
+00:02:53,235 --> 00:02:53,991
+Điều đáng học:
+
+82
+00:02:53,991 --> 00:02:56,747
+khi bạn cảm thấy mình là người cuối cùng được hưởng
+
+83
+00:02:56,747 --> 00:02:59,178
+cơ hội thì thường lại là người đến muộn nhất.
+
+84
+00:02:59,458 --> 00:03:00,417
+So với năm 2001,
+
+85
+00:03:00,417 --> 00:03:02,277
+thị trường hôm nay đã rất khác.
+
+86
+00:03:02,277 --> 00:03:04,856
+Số doanh nghiệp niêm yết lên tới hàng trăm,
+
+87
+00:03:04,856 --> 00:03:08,034
+thông tin công bố theo quý và ai cũng có thể tra cứu.
+
+88
+00:03:08,034 --> 00:03:09,054
+Có thêm quy định,
+
+89
+00:03:09,054 --> 00:03:10,793
+có thêm công cụ và kiến thức.
+
+90
+00:03:10,793 --> 00:03:12,593
+Nhưng thứ không đổi là tâm lý.
+
+91
+00:03:12,593 --> 00:03:13,732
+Khi giá tăng nhanh,
+
+92
+00:03:13,732 --> 00:03:15,592
+ai cũng muốn vào; khi giá giảm,
+
+93
+00:03:15,592 --> 00:03:17,271
+ai cũng muốn thoát cùng lúc.
+
+94
+00:03:17,271 --> 00:03:18,830
+Và vì thanh khoản lớn hơn,
+
+95
+00:03:18,830 --> 00:03:20,750
+sử dụng vay ký quỹ cũng lớn hơn,
+
+96
+00:03:20,750 --> 00:03:23,569
+nên cả đà tăng lẫn đà giảm đều có thể mạnh hơn.
+
+97
+00:03:23,569 --> 00:03:26,687
+Công cụ tốt hơn chưa chắc làm con người bớt phản ứng
+
+98
+00:03:26,687 --> 00:03:27,527
+theo đám đông.
+
+99
+00:03:27,807 --> 00:03:29,259
+Từ câu chuyện đầu tiên này,
+
+100
+00:03:29,259 --> 00:03:31,625
+ba việc dễ làm nhưng ít người kiên trì. Một,
+
+101
+00:03:31,625 --> 00:03:34,744
+đọc báo cáo tài chính trước khi mua: doanh thu, lợi nhuận,
+
+102
+00:03:34,744 --> 00:03:37,917
+nợ vay và dòng tiền nói với bạn nhiều hơn một lời đồn. Hai,
+
+103
+00:03:37,917 --> 00:03:40,713
+không vay để mua khi chưa có kế hoạch trả nợ ngay cả
+
+104
+00:03:40,713 --> 00:03:42,058
+lúc giá giảm một nửa. Ba,
+
+105
+00:03:42,058 --> 00:03:44,209
+chia vốn và không dồn tất cả vào một mã,
+
+106
+00:03:44,209 --> 00:03:45,930
+dù mã đó đang tăng nóng đến đâu.
+
+107
+00:03:45,930 --> 00:03:47,866
+Những nguyên tắc này nghe nhàm chán,
+
+108
+00:03:47,866 --> 00:03:50,608
+nhưng thị trường sau hơn 25 đã nhiều lần chứng minh
+
+109
+00:03:50,608 --> 00:03:53,405
+người giữ được chúng thường còn lại sau mỗi cơn bão.
+
+110
+00:03:53,685 --> 00:03:54,870
+Trước khi kết thúc,
+
+111
+00:03:54,870 --> 00:03:57,115
+có hai thứ anh chị nên lưu lại. Một,
+
+112
+00:03:57,115 --> 00:04:00,234
+vào chứng khoán Huy Nguyễn chấm com để xem bảng 10
+
+113
+00:04:00,234 --> 00:04:03,354
+cổ phiếu khỏe nhất thị trường cập nhật liên tục và
+
+114
+00:04:03,354 --> 00:04:06,098
+báo cáo tài chính hơn 400 mã, miễn phí. Hai,
+
+115
+00:04:06,098 --> 00:04:07,720
+nếu anh chị đang kẹt hàng,
+
+116
+00:04:07,720 --> 00:04:09,529
+chưa biết nên giữ hay cơ cấu,
+
+117
+00:04:09,529 --> 00:04:11,338
+hoặc muốn có người đồng hành,
+
+118
+00:04:11,338 --> 00:04:13,210
+nhắn Zalo số không ba sáu năm,
+
+119
+00:04:13,210 --> 00:04:13,958
+một tám tám,
+
+120
+00:04:13,958 --> 00:04:15,892
+hai tám sáu để vào nhóm tư vấn,
+
+121
+00:04:15,892 --> 00:04:18,075
+Huy và đội ngũ sẽ hỗ trợ trực tiếp.
+
+122
+00:04:18,075 --> 00:04:19,760
+Đầu tư một mình rất dễ sai,
+
+123
+00:04:19,760 --> 00:04:21,569
+có người cùng đi sẽ chắc hơn.
+
+124
+00:04:21,569 --> 00:04:25,436
+Nhớ đăng ký kênh và bấm chuông để không bỏ lỡ video tiếp theo.
+
+125
+00:04:25,716 --> 00:04:28,795
+Số liệu trong video lấy từ nguồn ghi ở phần mô tả.
+
+126
+00:04:28,795 --> 00:04:31,936
+Đây là câu chuyện lịch sử để học tâm lý thị trường,
+
+127
+00:04:31,936 --> 00:04:33,845
+không phải khuyến nghị mua bán.
+
+128
+00:04:33,845 --> 00:04:36,185
+Bạn muốn mình kể cú sập nào tiếp theo?
+
+129
+00:04:36,185 --> 00:04:37,601
+Hãy bình luận bên dưới.

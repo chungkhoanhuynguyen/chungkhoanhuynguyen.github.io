@@ -1,0 +1,563 @@
+1
+00:00:00,000 --> 00:00:01,447
+Ngày 19 tháng 15 1987,
+
+2
+00:00:01,447 --> 00:00:03,486
+chỉ số Dow Jones giảm 508 điểm,
+
+3
+00:00:03,486 --> 00:00:04,670
+tương đương 22,6%,
+
+4
+00:00:04,670 --> 00:00:06,249
+xuống còn 1.738,74 điểm.
+
+5
+00:00:06,249 --> 00:00:10,327
+Đó vẫn là mức giảm một ngày lớn nhất trong lịch sử chỉ số này.
+
+6
+00:00:10,327 --> 00:00:13,813
+Điều lạ là không có một tin xấu đủ lớn để giải thích:
+
+7
+00:00:13,813 --> 00:00:15,195
+không có chiến tranh,
+
+8
+00:00:15,195 --> 00:00:17,102
+không có công ty lớn phá sản,
+
+9
+00:00:17,102 --> 00:00:18,878
+kinh tế Mỹ không suy thoái.
+
+10
+00:00:18,878 --> 00:00:20,325
+Vậy điều gì đã xảy ra?
+
+11
+00:00:20,325 --> 00:00:22,825
+Video này kể lại ngày thứ Hai Đen Tối,
+
+12
+00:00:22,825 --> 00:00:26,180
+vai trò của chiến lược bảo hiểm danh mục và bài học
+
+13
+00:00:26,180 --> 00:00:27,232
+đáng ngạc nhiên:
+
+14
+00:00:27,232 --> 00:00:29,337
+cuối năm đó chỉ số vẫn tăng nhẹ.
+
+15
+00:00:29,617 --> 00:00:33,073
+Thị trường Mỹ năm 1987 là thị trường của niềm tin.
+
+16
+00:00:33,073 --> 00:00:36,598
+Dow Jones đóng cửa năm trước ở 1.895,95 điểm và đạt
+
+17
+00:00:36,598 --> 00:00:39,086
+đỉnh 2.722,42 vào ngày 25 tháng tám,
+
+18
+00:00:39,086 --> 00:00:43,096
+tức là tăng khoảng 44% trong chưa tới tám tháng. Sau đỉnh,
+
+19
+00:00:43,096 --> 00:00:45,100
+thị trường đã điều chỉnh dần:
+
+20
+00:00:45,100 --> 00:00:46,828
+lãi suất trái phiếu tăng,
+
+21
+00:00:46,828 --> 00:00:47,865
+đồng đô la yếu,
+
+22
+00:00:47,865 --> 00:00:50,492
+tranh cãi giữa Mỹ và các nước đối tác,
+
+23
+00:00:50,492 --> 00:00:53,395
+một dự luật thuế về thâu tóm doanh nghiệp.
+
+24
+00:00:53,395 --> 00:00:56,298
+Tuần cuối cùng trước ngày thứ Hai Đen Tối,
+
+25
+00:00:56,298 --> 00:00:58,371
+chỉ số đã mất gần 18% từ đỉnh.
+
+26
+00:00:58,371 --> 00:00:59,754
+Người ta bắt đầu lo,
+
+27
+00:00:59,754 --> 00:01:02,519
+nhưng không ai đoán nổi điều sắp xảy ra.
+
+28
+00:01:02,799 --> 00:01:06,375
+Dow Jones giảm từ 2.722 điểm xuống 2.246,74 điểm vào
+
+29
+00:01:06,375 --> 00:01:08,095
+thứ Sáu ngày 16 tháng 10.
+
+30
+00:01:08,095 --> 00:01:10,227
+Thứ Hai ngày 19, mọi thứ vỡ ra:
+
+31
+00:01:10,227 --> 00:01:11,603
+chỉ số mất 508 điểm,
+
+32
+00:01:11,603 --> 00:01:12,635
+xuống 1.738,74.
+
+33
+00:01:12,635 --> 00:01:15,868
+Khối lượng giao dịch kỷ lục khoảng 600 triệu cổ
+
+34
+00:01:15,868 --> 00:01:18,688
+phiếu khiến hệ thống ghi lệnh bị quá tải.
+
+35
+00:01:18,688 --> 00:01:22,883
+Thị trường các nước khác cũng sụp đổ theo múi giờ: Hồng Kông,
+
+36
+00:01:22,883 --> 00:01:23,709
+Úc, Anh, Mỹ.
+
+37
+00:01:23,709 --> 00:01:27,010
+Sở Giao dịch Hồng Kông đóng cửa bốn ngày sau đó.
+
+38
+00:01:27,010 --> 00:01:30,381
+Cú giảm 22% trong một ngày thì bất kỳ mô hình nào
+
+39
+00:01:30,381 --> 00:01:34,714
+theo phân bố thông thường cũng coi là gần như không thể xảy ra.
+
+40
+00:01:34,994 --> 00:01:37,609
+Một trong những nguyên nhân thường được nhắc là
+
+41
+00:01:37,609 --> 00:01:39,222
+chiến lược bảo hiểm danh mục.
+
+42
+00:01:39,222 --> 00:01:40,558
+Ý tưởng nghe rất hợp lý:
+
+43
+00:01:40,558 --> 00:01:41,782
+nếu giá cổ phiếu giảm,
+
+44
+00:01:41,782 --> 00:01:44,619
+mô hình sẽ tự động bán hợp đồng tương lai chỉ số để
+
+45
+00:01:44,619 --> 00:01:45,454
+giảm thiệt hại.
+
+46
+00:01:45,454 --> 00:01:48,124
+Báo cáo của Ủy ban Brady ước tính chiến lược này
+
+47
+00:01:48,124 --> 00:01:50,739
+đang quản lý khoảng 60 đến 90 tỷ đô la tài sản.
+
+48
+00:01:50,739 --> 00:01:53,743
+Vấn đề là khi quá nhiều người dùng cùng một công thức,
+
+49
+00:01:53,743 --> 00:01:55,690
+thì giá giảm sẽ kích hoạt lệnh bán,
+
+50
+00:01:55,690 --> 00:01:57,192
+lệnh bán làm giá giảm thêm,
+
+51
+00:01:57,192 --> 00:01:59,529
+giá giảm thêm lại kích hoạt thêm lệnh bán.
+
+52
+00:01:59,529 --> 00:02:02,422
+Chiến lược an toàn của từng người hóa ra tạo nguy cơ
+
+53
+00:02:02,422 --> 00:02:03,257
+cho cả tập thể.
+
+54
+00:02:03,257 --> 00:02:06,428
+Các nhà nghiên cứu vẫn tranh luận mức độ đóng góp của nó,
+
+55
+00:02:06,428 --> 00:02:09,154
+nhưng đa số đồng ý nó góp phần khuếch đại cú sập.
+
+56
+00:02:09,434 --> 00:02:10,950
+Khoan, nói nhanh một chút.
+
+57
+00:02:10,950 --> 00:02:13,691
+Nếu anh chị không có thời gian tự lọc cổ phiếu,
+
+58
+00:02:13,691 --> 00:02:16,024
+hãy vào nhóm Zalo tư vấn của Huy Nguyễn.
+
+59
+00:02:16,024 --> 00:02:18,415
+Ở đó mỗi ngày có danh sách cổ phiếu khỏe,
+
+60
+00:02:18,415 --> 00:02:19,640
+nhận định thị trường,
+
+61
+00:02:19,640 --> 00:02:22,614
+và anh chị được hỏi trực tiếp về danh mục của mình,
+
+62
+00:02:22,614 --> 00:02:23,722
+hoàn toàn miễn phí.
+
+63
+00:02:23,722 --> 00:02:25,355
+Số Zalo là không ba sáu năm,
+
+64
+00:02:25,355 --> 00:02:26,813
+một tám tám, hai tám sáu,
+
+65
+00:02:26,813 --> 00:02:28,212
+có sẵn trong phần mô tả.
+
+66
+00:02:28,212 --> 00:02:29,204
+Giờ mình đi tiếp.
+
+67
+00:02:29,484 --> 00:02:32,265
+Điều khiến thứ Hai Đen Tối đặc biệt là sự vắng mặt
+
+68
+00:02:32,265 --> 00:02:33,378
+của tin xấu rõ ràng.
+
+69
+00:02:33,378 --> 00:02:36,215
+Nhà kinh tế Robert Shiller khảo sát nhà đầu tư ngay
+
+70
+00:02:36,215 --> 00:02:38,941
+sau đó và thấy nhiều người nói họ bán vì thấy thị
+
+71
+00:02:38,941 --> 00:02:39,886
+trường đang giảm,
+
+72
+00:02:39,886 --> 00:02:42,000
+chứ không vì một thông tin cụ thể nào.
+
+73
+00:02:42,000 --> 00:02:44,615
+Nghĩa là giá giảm trở thành chính lý do để bán.
+
+74
+00:02:44,615 --> 00:02:46,506
+Khi các lệnh bán tự động chen vào,
+
+75
+00:02:46,506 --> 00:02:48,675
+thanh khoản biến mất đúng lúc cần nhất,
+
+76
+00:02:48,675 --> 00:02:50,511
+người tạo lập thị trường rút lui,
+
+77
+00:02:50,511 --> 00:02:52,013
+giá nhảy cóc qua nhiều mức.
+
+78
+00:02:52,013 --> 00:02:53,738
+Cú sập không cần một lý do lớn.
+
+79
+00:02:53,738 --> 00:02:54,961
+Nó cần cấu trúc dễ vỡ,
+
+80
+00:02:54,961 --> 00:02:58,244
+một cú sốc nhỏ và đủ nhiều người cùng hành động giống nhau.
+
+81
+00:02:58,524 --> 00:02:59,256
+Sáng hôm sau,
+
+82
+00:02:59,256 --> 00:03:00,608
+Cục Dự trữ Liên bang Mỹ,
+
+83
+00:03:00,608 --> 00:03:02,804
+khi đó do Alan Greenspan vừa nhậm chức,
+
+84
+00:03:02,804 --> 00:03:05,733
+ra tuyên bố ngắn gọn rằng sẽ sẵn sàng cung cấp thanh
+
+85
+00:03:05,733 --> 00:03:07,704
+khoản để hỗ trợ hệ thống tài chính.
+
+86
+00:03:07,704 --> 00:03:10,633
+Ngân hàng trung ương khuyến khích các ngân hàng tiếp
+
+87
+00:03:10,633 --> 00:03:12,661
+tục cho các công ty chứng khoán vay.
+
+88
+00:03:12,661 --> 00:03:15,195
+Trong hai ngày tiếp theo thị trường hồi mạnh.
+
+89
+00:03:15,195 --> 00:03:16,378
+Hệ thống cầu chì giá,
+
+90
+00:03:16,378 --> 00:03:19,420
+tức là cơ chế tạm dừng giao dịch khi giá giảm quá sâu,
+
+91
+00:03:19,420 --> 00:03:22,687
+được đưa vào sau đó để cho nhà đầu tư thời gian bình tĩnh.
+
+92
+00:03:22,687 --> 00:03:23,869
+Cũng chính từ năm đó,
+
+93
+00:03:23,869 --> 00:03:26,629
+nhà đầu tư dần kỳ vọng ngân hàng trung ương sẽ ra
+
+94
+00:03:26,629 --> 00:03:28,488
+tay mỗi khi thị trường đi quá xa,
+
+95
+00:03:28,488 --> 00:03:31,079
+một kỳ vọng sau này được gọi là Greenspan put.
+
+96
+00:03:31,359 --> 00:03:33,261
+Đây là chi tiết thú vị nhất.
+
+97
+00:03:33,261 --> 00:03:36,251
+Dow Jones kết thúc năm 1987 ở 1.938,83 điểm,
+
+98
+00:03:36,251 --> 00:03:38,901
+vẫn cao hơn cuối năm trước khoảng 2,3%.
+
+99
+00:03:38,901 --> 00:03:42,230
+Người bán ngày 19 tháng 10 để rồi nhìn thị trường
+
+100
+00:03:42,230 --> 00:03:44,201
+hồi phục đã mất số tiền thật;
+
+101
+00:03:44,201 --> 00:03:47,122
+người ngồi yên giữ cổ phiếu tốt, không vay,
+
+102
+00:03:47,122 --> 00:03:48,753
+kết thúc năm không thua.
+
+103
+00:03:48,753 --> 00:03:52,830
+Chỉ số lấy lại đỉnh tháng tám vào khoảng tháng bảy năm 1989,
+
+104
+00:03:52,830 --> 00:03:55,072
+tức hai năm sau. So với năm 1929,
+
+105
+00:03:55,072 --> 00:03:57,042
+đây là cú sập sâu nhưng ngắn,
+
+106
+00:03:57,042 --> 00:04:01,119
+vì không đi kèm khủng hoảng ngân hàng hay suy thoái kinh tế.
+
+107
+00:04:01,399 --> 00:04:02,373
+Bài học thứ nhất:
+
+108
+00:04:02,373 --> 00:04:04,607
+giá giảm có thể trở thành lý do để bán,
+
+109
+00:04:04,607 --> 00:04:06,554
+và vòng xoáy đó không cần tin xấu.
+
+110
+00:04:06,554 --> 00:04:07,470
+Bài học thứ hai:
+
+111
+00:04:07,470 --> 00:04:10,277
+một chiến lược an toàn với từng người có thể nguy
+
+112
+00:04:10,277 --> 00:04:11,766
+hiểm khi tất cả cùng dùng.
+
+113
+00:04:11,766 --> 00:04:14,974
+Hãy tự hỏi nếu mọi người cùng hành động như tôi thì sao.
+
+114
+00:04:14,974 --> 00:04:15,833
+Bài học thứ ba:
+
+115
+00:04:15,833 --> 00:04:17,437
+khả năng chờ đợi là lợi thế.
+
+116
+00:04:17,437 --> 00:04:18,353
+Người không vay,
+
+117
+00:04:18,353 --> 00:04:19,556
+giữ doanh nghiệp tốt,
+
+118
+00:04:19,556 --> 00:04:22,248
+hoàn toàn có thể sống sót qua cả ngày giảm 22%.
+
+119
+00:04:22,248 --> 00:04:25,055
+Người vay thì bị buộc phải bán đúng lúc xấu nhất.
+
+120
+00:04:25,055 --> 00:04:27,518
+Không ai biết cú sập tiếp theo đến khi nào,
+
+121
+00:04:27,518 --> 00:04:29,637
+nhưng ai cũng có thể chuẩn bị cho nó.
+
+122
+00:04:29,917 --> 00:04:31,041
+Trước khi kết thúc,
+
+123
+00:04:31,041 --> 00:04:33,171
+có hai thứ anh chị nên lưu lại. Một,
+
+124
+00:04:33,171 --> 00:04:36,129
+vào chứng khoán Huy Nguyễn chấm com để xem bảng 10
+
+125
+00:04:36,129 --> 00:04:39,087
+cổ phiếu khỏe nhất thị trường cập nhật liên tục và
+
+126
+00:04:39,087 --> 00:04:41,690
+báo cáo tài chính hơn 400 mã, miễn phí. Hai,
+
+127
+00:04:41,690 --> 00:04:43,229
+nếu anh chị đang kẹt hàng,
+
+128
+00:04:43,229 --> 00:04:44,944
+chưa biết nên giữ hay cơ cấu,
+
+129
+00:04:44,944 --> 00:04:46,660
+hoặc muốn có người đồng hành,
+
+130
+00:04:46,660 --> 00:04:48,435
+nhắn Zalo số không ba sáu năm,
+
+131
+00:04:48,435 --> 00:04:49,145
+một tám tám,
+
+132
+00:04:49,145 --> 00:04:50,979
+hai tám sáu để vào nhóm tư vấn,
+
+133
+00:04:50,979 --> 00:04:53,050
+Huy và đội ngũ sẽ hỗ trợ trực tiếp.
+
+134
+00:04:53,050 --> 00:04:54,647
+Đầu tư một mình rất dễ sai,
+
+135
+00:04:54,647 --> 00:04:56,363
+có người cùng đi sẽ chắc hơn.
+
+136
+00:04:56,363 --> 00:05:00,031
+Nhớ đăng ký kênh và bấm chuông để không bỏ lỡ video tiếp theo.
+
+137
+00:05:00,311 --> 00:05:03,343
+Số liệu trong video lấy từ nguồn ghi ở phần mô tả.
+
+138
+00:05:03,343 --> 00:05:06,436
+Đây là câu chuyện lịch sử để học tâm lý thị trường,
+
+139
+00:05:06,436 --> 00:05:08,315
+không phải khuyến nghị mua bán.
+
+140
+00:05:08,315 --> 00:05:10,620
+Bạn muốn mình kể cú sập nào tiếp theo?
+
+141
+00:05:10,620 --> 00:05:12,014
+Hãy bình luận bên dưới.

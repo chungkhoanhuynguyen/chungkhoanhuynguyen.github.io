@@ -1,0 +1,6 @@
+CẢNH BÁO cảnh 1: câu quá dài (42 từ) – tách đôi
+CẢNH BÁO cảnh 4: câu cụt thiếu chủ ngữ – "PV Power."
+CẢNH BÁO cảnh 8: câu quá dài (46 từ) – tách đôi
+CẢNH BÁO cảnh 11: lặp từ liền nhau
+CẢNH BÁO cảnh 12: lặp từ liền nhau
+CẢNH BÁO cảnh 15: câu quá dài (46 từ) – tách đôi

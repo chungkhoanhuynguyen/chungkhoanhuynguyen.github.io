@@ -1,0 +1,5 @@
+CẢNH BÁO cảnh 1: câu quá dài (48 từ) – tách đôi
+CẢNH BÁO cảnh 6: câu cụt thiếu chủ ngữ – "Hòa Phát."
+CẢNH BÁO cảnh 6: câu quá dài (46 từ) – tách đôi
+CẢNH BÁO cảnh 12: câu quá dài (40 từ) – tách đôi
+CẢNH BÁO cảnh 14: câu quá dài (50 từ) – tách đôi

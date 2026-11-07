@@ -1,0 +1,10 @@
+CẢNH BÁO cảnh 1: câu cụt thiếu chủ ngữ – "Nghe rất tốt."
+CẢNH BÁO cảnh 1: câu quá dài (44 từ) – tách đôi
+CẢNH BÁO cảnh 3: câu cụt thiếu chủ ngữ – "Giờ là đường đi."
+CẢNH BÁO cảnh 3: câu cụt thiếu chủ ngữ – "Đơn vị triệu đồng."
+CẢNH BÁO cảnh 4: lặp từ liền nhau
+CẢNH BÁO cảnh 5: câu quá dài (48 từ) – tách đôi
+CẢNH BÁO cảnh 6: lặp từ liền nhau
+CẢNH BÁO cảnh 8: câu quá dài (64 từ) – tách đôi
+CẢNH BÁO cảnh 9: câu quá dài (99 từ) – tách đôi
+CẢNH BÁO cảnh 9: lặp từ liền nhau

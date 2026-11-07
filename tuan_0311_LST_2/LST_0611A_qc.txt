@@ -1,0 +1,3 @@
+CẢNH BÁO cảnh 5: câu quá dài (40 từ) – tách đôi
+CẢNH BÁO cảnh 5: lặp từ liền nhau
+CẢNH BÁO cảnh 9: câu cụt thiếu chủ ngữ – "Hãy bình luận bên dưới."

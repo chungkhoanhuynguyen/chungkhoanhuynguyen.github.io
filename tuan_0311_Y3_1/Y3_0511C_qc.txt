@@ -1,0 +1,10 @@
+CẢNH BÁO cảnh 2: câu quá dài (42 từ) – tách đôi
+CẢNH BÁO cảnh 3: câu quá dài (85 từ) – tách đôi
+CẢNH BÁO cảnh 5: câu quá dài (46 từ) – tách đôi
+CẢNH BÁO cảnh 6: câu quá dài (40 từ) – tách đôi
+CẢNH BÁO cảnh 7: câu cụt thiếu chủ ngữ – "Đi sâu quý ba."
+CẢNH BÁO cảnh 7: câu quá dài (39 từ) – tách đôi
+CẢNH BÁO cảnh 8: câu quá dài (41 từ) – tách đôi
+CẢNH BÁO cảnh 9: câu cụt thiếu chủ ngữ – "Đúng một phần."
+CẢNH BÁO cảnh 10: lặp từ liền nhau
+CẢNH BÁO cảnh 11: câu cụt thiếu chủ ngữ – "Hãy để lại bình luận."

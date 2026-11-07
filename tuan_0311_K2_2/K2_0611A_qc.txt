@@ -1,0 +1,9 @@
+CẢNH BÁO cảnh 1: câu quá dài (49 từ) – tách đôi
+CẢNH BÁO cảnh 4: câu cụt thiếu chủ ngữ – "Kinh Bắc."
+CẢNH BÁO cảnh 5: câu quá dài (42 từ) – tách đôi
+CẢNH BÁO cảnh 6: câu cụt thiếu chủ ngữ – "Sonadezi Châu Đức."
+CẢNH BÁO cảnh 8: câu cụt thiếu chủ ngữ – "IDICO."
+CẢNH BÁO cảnh 10: lặp từ liền nhau
+CẢNH BÁO cảnh 11: lặp từ liền nhau
+CẢNH BÁO cảnh 12: câu quá dài (40 từ) – tách đôi
+CẢNH BÁO cảnh 14: câu quá dài (50 từ) – tách đôi

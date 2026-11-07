@@ -1,0 +1,8 @@
+CẢNH BÁO cảnh 4: câu quá dài (41 từ) – tách đôi
+CẢNH BÁO cảnh 4: câu quá dài (43 từ) – tách đôi
+CẢNH BÁO cảnh 5: câu quá dài (52 từ) – tách đôi
+CẢNH BÁO cảnh 6: câu quá dài (42 từ) – tách đôi
+CẢNH BÁO cảnh 6: lặp từ liền nhau
+CẢNH BÁO cảnh 7: câu quá dài (43 từ) – tách đôi
+CẢNH BÁO cảnh 9: câu cụt thiếu chủ ngữ – "Chương tám: rủi ro."
+CẢNH BÁO cảnh 10: câu quá dài (39 từ) – tách đôi

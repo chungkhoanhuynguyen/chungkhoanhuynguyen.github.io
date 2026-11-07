@@ -1,0 +1,12 @@
+total 33076
+drwxr-xr-x 2 runner runner     4096 Nov  7 07:37 .
+drwxr-xr-x 3 runner runner     4096 Nov  7 07:37 ..
+-rw-r--r-- 1 runner runner        0 Nov  7 07:37 TRANG_THAI.txt
+-rw-r--r-- 1 runner runner 33162711 Nov  7 07:37 Y3_0611A.mp4
+-rw-r--r-- 1 runner runner    11194 Nov  7 07:37 Y3_0611A.srt
+-rw-r--r-- 1 runner runner     2922 Nov  7 07:37 Y3_0611A_anh.txt
+-rw-r--r-- 1 runner runner   635478 Nov  7 07:37 Y3_0611A_bia.png
+-rw-r--r-- 1 runner runner      424 Nov  7 07:37 Y3_0611A_chuong.txt
+-rw-r--r-- 1 runner runner      485 Nov  7 07:37 Y3_0611A_qc.txt
+-rw-r--r-- 1 runner runner    30186 Nov  7 07:37 meta.json
+run: https://github.com/chungkhoanhuynguyen/chungkhoanhuynguyen.github.io/actions/runs/42350657738

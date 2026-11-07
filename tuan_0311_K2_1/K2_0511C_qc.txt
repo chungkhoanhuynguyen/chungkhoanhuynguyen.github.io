@@ -1,0 +1,9 @@
+CẢNH BÁO cảnh 4: câu cụt thiếu chủ ngữ – "Masan."
+CẢNH BÁO cảnh 4: câu quá dài (46 từ) – tách đôi
+CẢNH BÁO cảnh 6: câu cụt thiếu chủ ngữ – "Đường Quảng Ngãi."
+CẢNH BÁO cảnh 8: câu cụt thiếu chủ ngữ – "Vinamilk."
+CẢNH BÁO cảnh 8: câu quá dài (46 từ) – tách đôi
+CẢNH BÁO cảnh 9: câu cụt thiếu chủ ngữ – "Sabeco."
+CẢNH BÁO cảnh 9: câu quá dài (46 từ) – tách đôi
+CẢNH BÁO cảnh 12: câu quá dài (40 từ) – tách đôi
+CẢNH BÁO cảnh 14: câu quá dài (50 từ) – tách đôi

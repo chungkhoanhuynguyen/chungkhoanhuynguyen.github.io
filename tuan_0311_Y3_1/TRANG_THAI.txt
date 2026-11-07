@@ -1,0 +1,36 @@
+total 148728
+drwxr-xr-x 2 runner runner     4096 Nov  7 06:47 .
+drwxr-xr-x 3 runner runner     4096 Nov  7 06:47 ..
+-rw-r--r-- 1 runner runner        0 Nov  7 06:47 TRANG_THAI.txt
+-rw-r--r-- 1 runner runner 27347660 Nov  7 06:47 Y3_0411B.mp4
+-rw-r--r-- 1 runner runner    10129 Nov  7 06:47 Y3_0411B.srt
+-rw-r--r-- 1 runner runner     2225 Nov  7 06:47 Y3_0411B_anh.txt
+-rw-r--r-- 1 runner runner   566085 Nov  7 06:47 Y3_0411B_bia.png
+-rw-r--r-- 1 runner runner      436 Nov  7 06:47 Y3_0411B_chuong.txt
+-rw-r--r-- 1 runner runner      869 Nov  7 06:47 Y3_0411B_qc.txt
+-rw-r--r-- 1 runner runner 29591651 Nov  7 06:47 Y3_0411C.mp4
+-rw-r--r-- 1 runner runner    11496 Nov  7 06:47 Y3_0411C.srt
+-rw-r--r-- 1 runner runner     2380 Nov  7 06:47 Y3_0411C_anh.txt
+-rw-r--r-- 1 runner runner   656142 Nov  7 06:47 Y3_0411C_bia.png
+-rw-r--r-- 1 runner runner      344 Nov  7 06:47 Y3_0411C_chuong.txt
+-rw-r--r-- 1 runner runner      542 Nov  7 06:47 Y3_0411C_qc.txt
+-rw-r--r-- 1 runner runner 30003289 Nov  7 06:47 Y3_0511A.mp4
+-rw-r--r-- 1 runner runner    11513 Nov  7 06:47 Y3_0511A.srt
+-rw-r--r-- 1 runner runner     2480 Nov  7 06:47 Y3_0511A_anh.txt
+-rw-r--r-- 1 runner runner   587752 Nov  7 06:47 Y3_0511A_bia.png
+-rw-r--r-- 1 runner runner      442 Nov  7 06:47 Y3_0511A_chuong.txt
+-rw-r--r-- 1 runner runner      667 Nov  7 06:47 Y3_0511A_qc.txt
+-rw-r--r-- 1 runner runner 30878459 Nov  7 06:47 Y3_0511B.mp4
+-rw-r--r-- 1 runner runner    11283 Nov  7 06:47 Y3_0511B.srt
+-rw-r--r-- 1 runner runner     2614 Nov  7 06:47 Y3_0511B_anh.txt
+-rw-r--r-- 1 runner runner   579397 Nov  7 06:47 Y3_0511B_bia.png
+-rw-r--r-- 1 runner runner      367 Nov  7 06:47 Y3_0511B_chuong.txt
+-rw-r--r-- 1 runner runner      929 Nov  7 06:47 Y3_0511B_qc.txt
+-rw-r--r-- 1 runner runner 31188468 Nov  7 06:47 Y3_0511C.mp4
+-rw-r--r-- 1 runner runner    12291 Nov  7 06:47 Y3_0511C.srt
+-rw-r--r-- 1 runner runner     2583 Nov  7 06:47 Y3_0511C_anh.txt
+-rw-r--r-- 1 runner runner   708172 Nov  7 06:47 Y3_0511C_bia.png
+-rw-r--r-- 1 runner runner      336 Nov  7 06:47 Y3_0511C_chuong.txt
+-rw-r--r-- 1 runner runner      672 Nov  7 06:47 Y3_0511C_qc.txt
+-rw-r--r-- 1 runner runner    30186 Nov  7 06:47 meta.json
+run: https://github.com/chungkhoanhuynguyen/chungkhoanhuynguyen.github.io/actions/runs/42344761970

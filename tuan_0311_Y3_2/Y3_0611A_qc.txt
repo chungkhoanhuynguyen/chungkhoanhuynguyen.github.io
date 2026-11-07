@@ -1,0 +1,7 @@
+CẢNH BÁO cảnh 3: câu quá dài (44 từ) – tách đôi
+CẢNH BÁO cảnh 6: câu quá dài (56 từ) – tách đôi
+CẢNH BÁO cảnh 8: câu cụt thiếu chủ ngữ – "Đặt cạnh nhau."
+CẢNH BÁO cảnh 8: câu quá dài (57 từ) – tách đôi
+CẢNH BÁO cảnh 9: câu quá dài (49 từ) – tách đôi
+CẢNH BÁO cảnh 9: câu quá dài (54 từ) – tách đôi
+CẢNH BÁO cảnh 11: câu cụt thiếu chủ ngữ – "Hãy để lại bình luận."

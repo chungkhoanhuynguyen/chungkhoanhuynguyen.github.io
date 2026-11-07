@@ -1,0 +1,7 @@
+CẢNH BÁO cảnh 1: câu quá dài (49 từ) – tách đôi
+CẢNH BÁO cảnh 3: câu cụt thiếu chủ ngữ – "Giờ là đường đi."
+CẢNH BÁO cảnh 3: câu cụt thiếu chủ ngữ – "Đơn vị triệu đồng."
+CẢNH BÁO cảnh 4: lặp từ liền nhau
+CẢNH BÁO cảnh 5: câu quá dài (50 từ) – tách đôi
+LỖI cảnh 7: gọi 'bạn'/xưng 'tôi' – phải xưng em, gọi anh chị
+CẢNH BÁO cảnh 8: câu quá dài (81 từ) – tách đôi

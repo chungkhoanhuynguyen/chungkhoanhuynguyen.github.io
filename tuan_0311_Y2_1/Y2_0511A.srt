@@ -1,0 +1,567 @@
+1
+00:00:00,000 --> 00:00:02,418
+Vinamilk quý ba lãi 2.964 tỷ đồng,
+
+2
+00:00:02,418 --> 00:00:04,266
+tăng 17,3% so với cùng kỳ,
+
+3
+00:00:04,266 --> 00:00:06,684
+trong khi doanh thu chỉ tăng 8,9%.
+
+4
+00:00:06,684 --> 00:00:08,390
+Chín tháng lãi tăng 30%.
+
+5
+00:00:08,390 --> 00:00:11,021
+Một doanh nghiệp tiêu dùng đầu ngành,
+
+6
+00:00:11,021 --> 00:00:13,936
+lãi tăng nhanh hơn doanh thu gần gấp đôi.
+
+7
+00:00:13,936 --> 00:00:15,927
+Câu hỏi của thám tử BCTC là:
+
+8
+00:00:15,927 --> 00:00:19,624
+phần tăng thêm đó đến từ biên lợi nhuận, từ chi phí,
+
+9
+00:00:19,624 --> 00:00:21,473
+hay từ thu nhập tài chính?
+
+10
+00:00:21,753 --> 00:00:24,933
+Cách em đọc báo cáo tài chính của Vinamilk là năm
+
+11
+00:00:24,933 --> 00:00:26,361
+dòng theo thứ tự. Một,
+
+12
+00:00:26,361 --> 00:00:28,632
+doanh thu hoặc thu nhập chính. Hai,
+
+13
+00:00:28,632 --> 00:00:32,267
+lợi nhuận sau thuế và đường đi của nó qua nhiều quý. Ba,
+
+14
+00:00:32,267 --> 00:00:33,240
+lãi đến từ đâu:
+
+15
+00:00:33,240 --> 00:00:36,096
+hoạt động cốt lõi hay khoản bất thường. Bốn,
+
+16
+00:00:36,096 --> 00:00:37,394
+chi phí và dự phòng,
+
+17
+00:00:37,394 --> 00:00:39,860
+nơi lợi nhuận dễ bị bào mòn nhất. Năm,
+
+18
+00:00:39,860 --> 00:00:40,833
+dòng tiền thật,
+
+19
+00:00:40,833 --> 00:00:43,818
+vì lợi nhuận kế toán chưa phải tiền trong túi.
+
+20
+00:00:43,818 --> 00:00:46,998
+Số liệu lấy từ báo cáo tài chính quý ba năm 2026.
+
+21
+00:00:47,278 --> 00:00:49,178
+Toàn bộ số liệu trong video này,
+
+22
+00:00:49,178 --> 00:00:52,205
+cùng bảng định giá và báo cáo tài chính hơn 400 mã,
+
+23
+00:00:52,205 --> 00:00:55,588
+anh chị xem miễn phí tại chứng khoán Huy Nguyễn chấm com.
+
+24
+00:00:55,588 --> 00:00:58,555
+Ở đó có người tư vấn trực tiếp nếu anh chị cần hỏi
+
+25
+00:00:58,555 --> 00:00:59,624
+về mã em đang cầm.
+
+26
+00:00:59,904 --> 00:01:02,060
+Dòng một là doanh thu thuần.
+
+27
+00:01:02,060 --> 00:01:05,294
+Quý ba doanh thu thuần đạt 18.465 tỷ đồng,
+
+28
+00:01:05,294 --> 00:01:07,220
+tăng 8,9% so với cùng kỳ.
+
+29
+00:01:07,220 --> 00:01:08,375
+So với quý hai,
+
+30
+00:01:08,375 --> 00:01:09,992
+con số này giảm 2,0%.
+
+31
+00:01:09,992 --> 00:01:11,763
+Trong tám quý gần nhất,
+
+32
+00:01:11,763 --> 00:01:15,768
+quý cao nhất là quý hai năm 2026 với 18.847 tỷ đồng,
+
+33
+00:01:15,768 --> 00:01:19,850
+quý thấp nhất là quý một năm 2025 với 12.934 tỷ đồng.
+
+34
+00:01:19,850 --> 00:01:23,777
+Nhìn đường đi này trước khi nhìn lợi nhuận giúp anh
+
+35
+00:01:23,777 --> 00:01:28,629
+chị biết lãi tăng là nhờ bán được nhiều hơn hay nhờ đổi cơ cấu.
+
+36
+00:01:28,629 --> 00:01:32,788
+Em lấy số trong tám quý để tránh kết luận từ một điểm.
+
+37
+00:01:33,068 --> 00:01:35,429
+Dòng hai là lợi nhuận sau thuế.
+
+38
+00:01:35,429 --> 00:01:38,782
+Quý ba lợi nhuận sau thuế đạt 2.964 tỷ đồng,
+
+39
+00:01:38,782 --> 00:01:40,762
+tăng 17,3% so với cùng kỳ,
+
+40
+00:01:40,762 --> 00:01:42,667
+và thấp hơn quý hai 6,4%.
+
+41
+00:01:42,667 --> 00:01:45,943
+Lũy kế chín tháng đầu năm là 8.560 tỷ đồng,
+
+42
+00:01:45,943 --> 00:01:47,924
+tăng 30,3% so với cùng kỳ.
+
+43
+00:01:47,924 --> 00:01:51,123
+Cộng bốn quý gần nhất được 11.400 tỷ đồng.
+
+44
+00:01:51,123 --> 00:01:52,190
+Trong tám quý,
+
+45
+00:01:52,190 --> 00:01:56,075
+quý tốt nhất là quý hai năm 2026 với 3.167 tỷ đồng,
+
+46
+00:01:56,075 --> 00:01:59,961
+quý yếu nhất là quý một năm 2025 với 1.568 tỷ đồng.
+
+47
+00:01:59,961 --> 00:02:03,694
+Khoảng cách giữa hai quý này cho anh chị biết lợi
+
+48
+00:02:03,694 --> 00:02:07,275
+nhuận của doanh nghiệp đều đặn hay thất thường,
+
+49
+00:02:07,275 --> 00:02:10,779
+và một quý đẹp hay xấu có nên được coi là bình
+
+50
+00:02:10,779 --> 00:02:12,074
+thường hay không.
+
+51
+00:02:12,354 --> 00:02:14,019
+Dòng ba là lãi đến từ đâu.
+
+52
+00:02:14,019 --> 00:02:16,836
+Dữ liệu tổng hợp từ báo cáo quý ba cho thấy:
+
+53
+00:02:16,836 --> 00:02:19,396
+Lợi nhuận quý tăng 17,3% so với cùng kỳ.
+
+54
+00:02:19,396 --> 00:02:20,741
+Với doanh nghiệp sữa,
+
+55
+00:02:20,741 --> 00:02:23,622
+lãi nhanh hơn doanh thu thường đến từ ba nơi:
+
+56
+00:02:23,622 --> 00:02:25,734
+giá nguyên liệu như bột sữa giảm,
+
+57
+00:02:25,734 --> 00:02:28,359
+cơ cấu sản phẩm nghiêng về dòng biên cao,
+
+58
+00:02:28,359 --> 00:02:32,136
+hoặc chi phí bán hàng và quảng cáo tăng chậm hơn doanh thu.
+
+59
+00:02:32,136 --> 00:02:35,209
+Vinamilk còn một nguồn lãi riêng là thu nhập tài
+
+60
+00:02:35,209 --> 00:02:37,002
+chính từ lượng tiền gửi lớn.
+
+61
+00:02:37,002 --> 00:02:39,115
+Muốn biết cái nào chiếm tỷ trọng,
+
+62
+00:02:39,115 --> 00:02:40,203
+hãy xem biên gộp,
+
+63
+00:02:40,203 --> 00:02:43,340
+chi phí bán hàng và doanh thu tài chính trong báo
+
+64
+00:02:43,340 --> 00:02:44,812
+cáo kết quả kinh doanh.
+
+65
+00:02:45,092 --> 00:02:46,739
+Dòng bốn là chi phí và dự phòng.
+
+66
+00:02:46,739 --> 00:02:49,414
+Doanh nghiệp tiêu dùng ít rủi ro nợ xấu nhưng có hai
+
+67
+00:02:49,414 --> 00:02:50,855
+dòng nên liếc: hàng tồn kho,
+
+68
+00:02:50,855 --> 00:02:51,987
+vì sữa có hạn sử dụng,
+
+69
+00:02:51,987 --> 00:02:53,479
+và khoản phải thu khách hàng,
+
+70
+00:02:53,479 --> 00:02:55,639
+vì nhà phân phối được cấp hạn mức công nợ.
+
+71
+00:02:55,639 --> 00:02:58,469
+Phải thu tăng nhanh hơn doanh thu là tín hiệu đáng hỏi.
+
+72
+00:02:58,469 --> 00:03:01,041
+Ngoài ra dự phòng nợ phải thu khó đòi trong thuyết
+
+73
+00:03:01,041 --> 00:03:03,562
+minh cho thấy doanh nghiệp đang lạc quan hay thận
+
+74
+00:03:03,562 --> 00:03:05,415
+trọng với chính khách hàng của mình.
+
+75
+00:03:05,695 --> 00:03:07,340
+Dòng năm là dòng tiền thật.
+
+76
+00:03:07,340 --> 00:03:10,508
+Vinamilk nổi tiếng là doanh nghiệp tiền mặt dồi dào,
+
+77
+00:03:10,508 --> 00:03:12,396
+nên câu hỏi dòng tiền ở đây là:
+
+78
+00:03:12,396 --> 00:03:15,991
+dòng tiền kinh doanh có tương xứng với lợi nhuận hay không,
+
+79
+00:03:15,991 --> 00:03:18,915
+và tiền được dùng để chi trả cổ tức hay mở rộng.
+
+80
+00:03:18,915 --> 00:03:22,023
+Dữ liệu tổng hợp em dùng chưa có số lưu chuyển tiền
+
+81
+00:03:22,023 --> 00:03:23,850
+tệ nên video không nêu con số.
+
+82
+00:03:23,850 --> 00:03:27,018
+Anh chị so dòng tiền thuần hoạt động kinh doanh chín
+
+83
+00:03:27,018 --> 00:03:29,455
+tháng với lợi nhuận chín tháng 8.560 tỷ.
+
+84
+00:03:29,735 --> 00:03:31,242
+Khoan, nói nhanh một chút.
+
+85
+00:03:31,242 --> 00:03:33,966
+Nếu anh chị không có thời gian tự lọc cổ phiếu,
+
+86
+00:03:33,966 --> 00:03:36,284
+hãy vào nhóm Zalo tư vấn của Huy Nguyễn.
+
+87
+00:03:36,284 --> 00:03:38,660
+Ở đó mỗi ngày có danh sách cổ phiếu khỏe,
+
+88
+00:03:38,660 --> 00:03:39,877
+nhận định thị trường,
+
+89
+00:03:39,877 --> 00:03:42,832
+và anh chị được hỏi trực tiếp về danh mục của mình,
+
+90
+00:03:42,832 --> 00:03:43,933
+hoàn toàn miễn phí.
+
+91
+00:03:43,933 --> 00:03:45,556
+Số Zalo là không ba sáu năm,
+
+92
+00:03:45,556 --> 00:03:47,004
+một tám tám, hai tám sáu,
+
+93
+00:03:47,004 --> 00:03:48,395
+có sẵn trong phần mô tả.
+
+94
+00:03:48,395 --> 00:03:49,265
+Giờ em đi tiếp.
+
+95
+00:03:49,545 --> 00:03:50,706
+Cuối cùng là giá.
+
+96
+00:03:50,706 --> 00:03:53,439
+Theo dữ liệu tổng hợp ngày hai tháng 11,
+
+97
+00:03:53,439 --> 00:03:56,445
+vốn hóa Vinamilk khoảng 118,9 nghìn tỷ đồng,
+
+98
+00:03:56,445 --> 00:03:58,494
+P trên E 10,43, P trên B 3,45,
+
+99
+00:03:58,494 --> 00:04:00,339
+ROE bốn quý gần nhất 31,1%.
+
+100
+00:04:00,339 --> 00:04:03,892
+Hai chỉ số này chỉ có nghĩa khi đặt cạnh tốc độ tăng
+
+101
+00:04:03,892 --> 00:04:06,214
+trưởng lợi nhuận và độ bền của nó.
+
+102
+00:04:06,214 --> 00:04:07,991
+Định giá chỉ là bước cuối:
+
+103
+00:04:07,991 --> 00:04:10,928
+trước đó anh chị phải biết lãi này có thật,
+
+104
+00:04:10,928 --> 00:04:13,593
+có bền và có biến thành tiền hay không.
+
+105
+00:04:13,593 --> 00:04:15,233
+Đây là con số tham khảo,
+
+106
+00:04:15,233 --> 00:04:17,350
+không phải khuyến nghị mua bán.
+
+107
+00:04:17,630 --> 00:04:20,738
+Bẫy với doanh nghiệp ổn định là nghĩ rằng ổn định
+
+108
+00:04:20,738 --> 00:04:22,070
+thì không cần đọc kỹ.
+
+109
+00:04:22,070 --> 00:04:25,113
+Thực ra tăng trưởng doanh thu 8,9% là nhịp chậm,
+
+110
+00:04:25,113 --> 00:04:28,348
+và lợi nhuận quý ba còn thấp hơn quý hai khoảng 6%.
+
+111
+00:04:28,348 --> 00:04:31,518
+Một doanh nghiệp ROE hơn 30% với P trên B 3,45 vừa
+
+112
+00:04:31,518 --> 00:04:33,992
+được thị trường trả giá cho sự ổn định,
+
+113
+00:04:33,992 --> 00:04:36,972
+vừa dễ bị đòi hỏi cao khi tăng trưởng chậm lại.
+
+114
+00:04:37,252 --> 00:04:39,785
+Bốn bài học từ báo cáo của Vinamilk. Một,
+
+115
+00:04:39,785 --> 00:04:42,503
+lãi nhanh hơn doanh thu phải có lý do: biên,
+
+116
+00:04:42,503 --> 00:04:44,727
+chi phí hay thu nhập tài chính. Hai,
+
+117
+00:04:44,727 --> 00:04:48,062
+phải thu tăng nhanh hơn doanh thu là điểm cần hỏi. Ba,
+
+118
+00:04:48,062 --> 00:04:50,595
+doanh nghiệp ổn định vẫn có thể chậm lại,
+
+119
+00:04:50,595 --> 00:04:52,139
+hãy so cả quý trước. Bốn,
+
+120
+00:04:52,139 --> 00:04:55,907
+nhiều tiền mặt thì hỏi tiền được dùng chia cổ tức hay đầu tư.
+
+121
+00:04:56,187 --> 00:04:57,300
+Trước khi kết thúc,
+
+122
+00:04:57,300 --> 00:04:59,407
+có hai thứ anh chị nên lưu lại. Một,
+
+123
+00:04:59,407 --> 00:05:02,333
+vào chứng khoán Huy Nguyễn chấm com để xem bảng 10
+
+124
+00:05:02,333 --> 00:05:05,260
+cổ phiếu khỏe nhất thị trường cập nhật liên tục và
+
+125
+00:05:05,260 --> 00:05:07,835
+báo cáo tài chính hơn 400 mã, miễn phí. Hai,
+
+126
+00:05:07,835 --> 00:05:09,357
+nếu anh chị đang kẹt hàng,
+
+127
+00:05:09,357 --> 00:05:11,054
+chưa biết nên giữ hay cơ cấu,
+
+128
+00:05:11,054 --> 00:05:12,752
+hoặc muốn có người đồng hành,
+
+129
+00:05:12,752 --> 00:05:14,508
+nhắn Zalo số không ba sáu năm,
+
+130
+00:05:14,508 --> 00:05:15,210
+một tám tám,
+
+131
+00:05:15,210 --> 00:05:17,024
+hai tám sáu để vào nhóm tư vấn,
+
+132
+00:05:17,024 --> 00:05:19,073
+Huy và đội ngũ sẽ hỗ trợ trực tiếp.
+
+133
+00:05:19,073 --> 00:05:20,653
+Đầu tư một mình rất dễ sai,
+
+134
+00:05:20,653 --> 00:05:22,351
+có người cùng đi sẽ chắc hơn.
+
+135
+00:05:22,351 --> 00:05:25,980
+Nhớ đăng ký kênh và bấm chuông để không bỏ lỡ video tiếp theo.
+
+136
+00:05:26,260 --> 00:05:29,541
+Số liệu trong video lấy từ báo cáo tài chính quý ba
+
+137
+00:05:29,541 --> 00:05:32,564
+năm 2026 và dữ liệu tổng hợp ngày hai tháng 11.
+
+138
+00:05:32,564 --> 00:05:34,237
+Đây là góc nhìn tham khảo,
+
+139
+00:05:34,237 --> 00:05:36,231
+không phải khuyến nghị mua bán.
+
+140
+00:05:36,231 --> 00:05:40,220
+Dữ liệu từng mã có trên trang chứng khoán huy nguyễn chấm com.
+
+141
+00:05:40,220 --> 00:05:43,244
+Anh chị muốn em soi doanh nghiệp nào tiếp theo?
+
+142
+00:05:43,244 --> 00:05:44,595
+Hãy để lại bình luận.

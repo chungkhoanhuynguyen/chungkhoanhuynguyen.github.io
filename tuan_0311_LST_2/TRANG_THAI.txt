@@ -1,0 +1,12 @@
+total 34276
+drwxr-xr-x 2 runner runner     4096 Nov  7 06:59 .
+drwxr-xr-x 3 runner runner     4096 Nov  7 06:59 ..
+-rw-r--r-- 1 runner runner 34281380 Nov  7 06:59 LST_0611A.mp4
+-rw-r--r-- 1 runner runner    11027 Nov  7 06:59 LST_0611A.srt
+-rw-r--r-- 1 runner runner     2579 Nov  7 06:59 LST_0611A_anh.txt
+-rw-r--r-- 1 runner runner   747486 Nov  7 06:59 LST_0611A_bia.png
+-rw-r--r-- 1 runner runner      224 Nov  7 06:59 LST_0611A_chuong.txt
+-rw-r--r-- 1 runner runner      199 Nov  7 06:59 LST_0611A_qc.txt
+-rw-r--r-- 1 runner runner        0 Nov  7 06:59 TRANG_THAI.txt
+-rw-r--r-- 1 runner runner    31730 Nov  7 06:59 meta.json
+run: https://github.com/chungkhoanhuynguyen/chungkhoanhuynguyen.github.io/actions/runs/42348748064

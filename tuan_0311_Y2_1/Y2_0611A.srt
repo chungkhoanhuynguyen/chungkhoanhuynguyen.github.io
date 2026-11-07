@@ -1,0 +1,591 @@
+1
+00:00:00,000 --> 00:00:02,185
+Kinh Bắc quý ba lãi 911 tỷ đồng,
+
+2
+00:00:02,185 --> 00:00:03,823
+gấp hơn 120 lần quý hai,
+
+3
+00:00:03,823 --> 00:00:05,598
+và gấp gần ba lần cùng kỳ.
+
+4
+00:00:05,598 --> 00:00:09,353
+Nhưng chín tháng lũy kế vẫn thấp hơn năm ngoái hơn 23%.
+
+5
+00:00:09,353 --> 00:00:10,923
+Một con số vừa rất đẹp,
+
+6
+00:00:10,923 --> 00:00:12,698
+vừa rất xấu tùy cách nhìn.
+
+7
+00:00:12,698 --> 00:00:16,384
+Hôm nay thám tử BCTC soi doanh nghiệp khu công nghiệp:
+
+8
+00:00:16,384 --> 00:00:18,364
+lãi theo quý nhảy vọt vì đâu,
+
+9
+00:00:18,364 --> 00:00:19,457
+và có bền không.
+
+10
+00:00:19,737 --> 00:00:22,874
+Cách em đọc báo cáo tài chính của Kinh Bắc là năm
+
+11
+00:00:22,874 --> 00:00:24,282
+dòng theo thứ tự. Một,
+
+12
+00:00:24,282 --> 00:00:26,523
+doanh thu hoặc thu nhập chính. Hai,
+
+13
+00:00:26,523 --> 00:00:30,109
+lợi nhuận sau thuế và đường đi của nó qua nhiều quý. Ba,
+
+14
+00:00:30,109 --> 00:00:31,069
+lãi đến từ đâu:
+
+15
+00:00:31,069 --> 00:00:33,887
+hoạt động cốt lõi hay khoản bất thường. Bốn,
+
+16
+00:00:33,887 --> 00:00:35,167
+chi phí và dự phòng,
+
+17
+00:00:35,167 --> 00:00:37,600
+nơi lợi nhuận dễ bị bào mòn nhất. Năm,
+
+18
+00:00:37,600 --> 00:00:38,561
+dòng tiền thật,
+
+19
+00:00:38,561 --> 00:00:41,506
+vì lợi nhuận kế toán chưa phải tiền trong túi.
+
+20
+00:00:41,506 --> 00:00:44,643
+Số liệu lấy từ báo cáo tài chính quý ba năm 2026.
+
+21
+00:00:44,923 --> 00:00:46,624
+Toàn bộ số liệu trong video này,
+
+22
+00:00:46,624 --> 00:00:49,335
+cùng bảng định giá và báo cáo tài chính hơn 400 mã,
+
+23
+00:00:49,335 --> 00:00:52,364
+anh chị xem miễn phí tại chứng khoán Huy Nguyễn chấm com.
+
+24
+00:00:52,364 --> 00:00:55,022
+Ở đó có người tư vấn trực tiếp nếu anh chị cần hỏi
+
+25
+00:00:55,022 --> 00:00:55,978
+về mã em đang cầm.
+
+26
+00:00:56,258 --> 00:00:58,484
+Dòng một là doanh thu thuần.
+
+27
+00:00:58,484 --> 00:01:01,742
+Quý ba doanh thu thuần đạt 3.187 tỷ đồng,
+
+28
+00:01:01,742 --> 00:01:03,888
+tăng 136,6% so với cùng kỳ.
+
+29
+00:01:03,888 --> 00:01:05,080
+So với quý hai,
+
+30
+00:01:05,080 --> 00:01:06,908
+con số này tăng 441,4%.
+
+31
+00:01:06,908 --> 00:01:08,736
+Trong tám quý gần nhất,
+
+32
+00:01:08,736 --> 00:01:12,710
+quý cao nhất là quý ba năm 2026 với 3.187 tỷ đồng,
+
+33
+00:01:12,710 --> 00:01:16,683
+quý thấp nhất là quý hai năm 2025 với 510 tỷ đồng.
+
+34
+00:01:16,683 --> 00:01:20,737
+Nhìn đường đi này trước khi nhìn lợi nhuận giúp anh
+
+35
+00:01:20,737 --> 00:01:25,743
+chị biết lãi tăng là nhờ bán được nhiều hơn hay nhờ đổi cơ cấu.
+
+36
+00:01:25,743 --> 00:01:30,035
+Em lấy số trong tám quý để tránh kết luận từ một điểm.
+
+37
+00:01:30,315 --> 00:01:32,895
+Dòng hai là lợi nhuận sau thuế.
+
+38
+00:01:32,895 --> 00:01:36,389
+Quý ba lợi nhuận sau thuế đạt 911 tỷ đồng,
+
+39
+00:01:36,389 --> 00:01:38,636
+tăng 196,6% so với cùng kỳ,
+
+40
+00:01:38,636 --> 00:01:40,716
+và cao hơn quý 14.556,9%.
+
+41
+00:01:40,716 --> 00:01:44,294
+Lũy kế chín tháng đầu năm là 1.143 tỷ đồng,
+
+42
+00:01:44,294 --> 00:01:46,458
+giảm 23,6% so với cùng kỳ.
+
+43
+00:01:46,458 --> 00:01:49,870
+Cộng bốn quý gần nhất được 1.751 tỷ đồng.
+
+44
+00:01:49,870 --> 00:01:51,034
+Trong tám quý,
+
+45
+00:01:51,034 --> 00:01:55,029
+quý tốt nhất là quý ba năm 2026 với 911 tỷ đồng,
+
+46
+00:01:55,029 --> 00:01:59,106
+quý yếu nhất là quý hai năm 2026 với 7,2 tỷ đồng.
+
+47
+00:01:59,106 --> 00:02:03,183
+Khoảng cách giữa hai quý này cho anh chị biết lợi
+
+48
+00:02:03,183 --> 00:02:07,094
+nhuận của doanh nghiệp đều đặn hay thất thường,
+
+49
+00:02:07,094 --> 00:02:10,922
+và một quý đẹp hay xấu có nên được coi là bình
+
+50
+00:02:10,922 --> 00:02:12,336
+thường hay không.
+
+51
+00:02:12,616 --> 00:02:14,781
+Dòng ba là lãi đến từ đâu.
+
+52
+00:02:14,781 --> 00:02:18,445
+Dữ liệu tổng hợp từ báo cáo quý ba cho thấy:
+
+53
+00:02:18,445 --> 00:02:21,860
+Lợi nhuận quý tăng 196,6% so với cùng kỳ;
+
+54
+00:02:21,860 --> 00:02:23,275
+So với quý trước,
+
+55
+00:02:23,275 --> 00:02:25,690
+lợi nhuận tăng gấp 127,1 lần;
+
+56
+00:02:25,690 --> 00:02:27,522
+Doanh thu tăng 136,6%;
+
+57
+00:02:27,522 --> 00:02:31,686
+Biên lợi nhuận gộp 54,0% (cùng kỳ 58,2%), thu hẹp;
+
+58
+00:02:31,686 --> 00:02:33,934
+Chi phí lãi vay tăng 69,0%,
+
+59
+00:02:33,934 --> 00:02:35,350
+ăn vào lợi nhuận.
+
+60
+00:02:35,350 --> 00:02:39,680
+Doanh nghiệp khu công nghiệp ghi nhận doanh thu theo
+
+61
+00:02:39,680 --> 00:02:43,677
+từng đợt cho thuê lại đất hoặc bàn giao hạ tầng,
+
+62
+00:02:43,677 --> 00:02:47,091
+nên doanh thu và lợi nhuận quý không đều.
+
+63
+00:02:47,091 --> 00:02:49,006
+Quý hai chỉ lãi 7,2 tỷ,
+
+64
+00:02:49,006 --> 00:02:53,336
+quý ba lãi 911 tỷ với doanh thu 3.187 tỷ, tăng 136%.
+
+65
+00:02:53,336 --> 00:02:55,501
+Biên gộp 54% là đặc trưng:
+
+66
+00:02:55,501 --> 00:02:57,916
+đất cho thuê có biên rất cao,
+
+67
+00:02:57,916 --> 00:03:01,330
+nhưng chỉ khi có hợp đồng ký và bàn giao.
+
+68
+00:03:01,610 --> 00:03:03,548
+Dòng bốn là chi phí và dự phòng.
+
+69
+00:03:03,548 --> 00:03:05,486
+Dòng cần soi là chi phí lãi vay,
+
+70
+00:03:05,486 --> 00:03:07,061
+tăng gần 70% trong quý ba.
+
+71
+00:03:07,061 --> 00:03:10,695
+Doanh nghiệp khu công nghiệp phải ứng vốn rất lớn để đền bù,
+
+72
+00:03:10,695 --> 00:03:13,178
+san lấp và xây hạ tầng trước khi bán đất,
+
+73
+00:03:13,178 --> 00:03:14,510
+nên nợ vay thường cao.
+
+74
+00:03:14,510 --> 00:03:15,237
+Cùng với đó,
+
+75
+00:03:15,237 --> 00:03:18,265
+hãy xem khoản người mua trả trước tiền thuê đất và
+
+76
+00:03:18,265 --> 00:03:20,203
+hàng tồn kho là chi phí dở dang,
+
+77
+00:03:20,203 --> 00:03:22,747
+vì đó là hai dòng dự báo doanh thu kỳ sau.
+
+78
+00:03:23,027 --> 00:03:24,600
+Dòng năm là dòng tiền thật.
+
+79
+00:03:24,600 --> 00:03:27,631
+Dòng tiền của doanh nghiệp khu công nghiệp thường đi
+
+80
+00:03:27,631 --> 00:03:29,379
+lệch lợi nhuận một khoảng dài:
+
+81
+00:03:29,379 --> 00:03:32,060
+tiền chi phát triển đất ra từ nhiều năm trước,
+
+82
+00:03:32,060 --> 00:03:33,750
+tiền khách thuê trả theo đợt.
+
+83
+00:03:33,750 --> 00:03:36,955
+Một quý lãi lớn có thể là kết quả của nhiều năm đầu tư.
+
+84
+00:03:36,955 --> 00:03:39,927
+Dữ liệu tổng hợp em dùng chưa có số lưu chuyển tiền
+
+85
+00:03:39,927 --> 00:03:41,676
+tệ nên video không nêu con số.
+
+86
+00:03:41,676 --> 00:03:44,706
+Anh chị so dòng tiền thuần kinh doanh quý ba với lợi
+
+87
+00:03:44,706 --> 00:03:45,464
+nhuận 911 tỷ.
+
+88
+00:03:45,744 --> 00:03:47,325
+Khoan, nói nhanh một chút.
+
+89
+00:03:47,325 --> 00:03:50,183
+Nếu anh chị không có thời gian tự lọc cổ phiếu,
+
+90
+00:03:50,183 --> 00:03:52,615
+hãy vào nhóm Zalo tư vấn của Huy Nguyễn.
+
+91
+00:03:52,615 --> 00:03:55,108
+Ở đó mỗi ngày có danh sách cổ phiếu khỏe,
+
+92
+00:03:55,108 --> 00:03:56,385
+nhận định thị trường,
+
+93
+00:03:56,385 --> 00:03:59,486
+và anh chị được hỏi trực tiếp về danh mục của mình,
+
+94
+00:03:59,486 --> 00:04:00,641
+hoàn toàn miễn phí.
+
+95
+00:04:00,641 --> 00:04:02,344
+Số Zalo là không ba sáu năm,
+
+96
+00:04:02,344 --> 00:04:03,864
+một tám tám, hai tám sáu,
+
+97
+00:04:03,864 --> 00:04:05,324
+có sẵn trong phần mô tả.
+
+98
+00:04:05,324 --> 00:04:06,236
+Giờ em đi tiếp.
+
+99
+00:04:06,516 --> 00:04:07,641
+Cuối cùng là giá.
+
+100
+00:04:07,641 --> 00:04:10,287
+Theo dữ liệu tổng hợp ngày hai tháng 11,
+
+101
+00:04:10,287 --> 00:04:13,132
+vốn hóa Kinh Bắc khoảng 24,5 nghìn tỷ đồng,
+
+102
+00:04:13,132 --> 00:04:15,117
+P trên E 13,98, P trên B 0,94,
+
+103
+00:04:15,117 --> 00:04:16,837
+ROE bốn quý gần nhất 6,5%.
+
+104
+00:04:16,837 --> 00:04:20,278
+Hai chỉ số này chỉ có nghĩa khi đặt cạnh tốc độ tăng
+
+105
+00:04:20,278 --> 00:04:22,527
+trưởng lợi nhuận và độ bền của nó.
+
+106
+00:04:22,527 --> 00:04:24,248
+Định giá chỉ là bước cuối:
+
+107
+00:04:24,248 --> 00:04:27,093
+trước đó anh chị phải biết lãi này có thật,
+
+108
+00:04:27,093 --> 00:04:29,673
+có bền và có biến thành tiền hay không.
+
+109
+00:04:29,673 --> 00:04:31,261
+Đây là con số tham khảo,
+
+110
+00:04:31,261 --> 00:04:33,312
+không phải khuyến nghị mua bán.
+
+111
+00:04:33,592 --> 00:04:35,167
+Bẫy ở đây là hai chiều.
+
+112
+00:04:35,167 --> 00:04:37,289
+Nhìn riêng quý ba thấy bùng nổ;
+
+113
+00:04:37,289 --> 00:04:40,028
+nhìn riêng chín tháng lại thấy suy giảm.
+
+114
+00:04:40,028 --> 00:04:42,698
+Cách đọc đúng là đặt tám quý cạnh nhau:
+
+115
+00:04:42,698 --> 00:04:43,930
+có quý lãi 782 tỷ,
+
+116
+00:04:43,930 --> 00:04:45,025
+có quý chỉ 7 tỷ.
+
+117
+00:04:45,025 --> 00:04:46,258
+Với loại hình này,
+
+118
+00:04:46,258 --> 00:04:49,681
+P trên E 13,98 và P trên B 0,94 chỉ có ý nghĩa khi
+
+119
+00:04:49,681 --> 00:04:53,446
+anh chị hiểu được độ dài của chu kỳ ghi nhận doanh thu.
+
+120
+00:04:53,726 --> 00:04:56,033
+Bốn bài học từ báo cáo của Kinh Bắc. Một,
+
+121
+00:04:56,033 --> 00:04:58,058
+một quý nhảy vọt chưa phải xu hướng,
+
+122
+00:04:58,058 --> 00:04:59,859
+hãy nhìn lũy kế và tám quý. Hai,
+
+123
+00:04:59,859 --> 00:05:03,291
+doanh thu khu công nghiệp đi theo đợt ký và bàn giao đất. Ba,
+
+124
+00:05:03,291 --> 00:05:06,610
+chi phí lãi vay là dòng nhạy vì vốn ứng trước rất lớn. Bốn,
+
+125
+00:05:06,610 --> 00:05:09,255
+người mua trả trước và chi phí dở dang cho biết
+
+126
+00:05:09,255 --> 00:05:10,211
+doanh thu kỳ sau.
+
+127
+00:05:10,491 --> 00:05:11,640
+Trước khi kết thúc,
+
+128
+00:05:11,640 --> 00:05:13,816
+có hai thứ anh chị nên lưu lại. Một,
+
+129
+00:05:13,816 --> 00:05:16,838
+vào chứng khoán Huy Nguyễn chấm com để xem bảng 10
+
+130
+00:05:16,838 --> 00:05:19,860
+cổ phiếu khỏe nhất thị trường cập nhật liên tục và
+
+131
+00:05:19,860 --> 00:05:22,520
+báo cáo tài chính hơn 400 mã, miễn phí. Hai,
+
+132
+00:05:22,520 --> 00:05:24,091
+nếu anh chị đang kẹt hàng,
+
+133
+00:05:24,091 --> 00:05:25,844
+chưa biết nên giữ hay cơ cấu,
+
+134
+00:05:25,844 --> 00:05:27,597
+hoặc muốn có người đồng hành,
+
+135
+00:05:27,597 --> 00:05:29,410
+nhắn Zalo số không ba sáu năm,
+
+136
+00:05:29,410 --> 00:05:30,136
+một tám tám,
+
+137
+00:05:30,136 --> 00:05:32,010
+hai tám sáu để vào nhóm tư vấn,
+
+138
+00:05:32,010 --> 00:05:34,125
+Huy và đội ngũ sẽ hỗ trợ trực tiếp.
+
+139
+00:05:34,125 --> 00:05:35,757
+Đầu tư một mình rất dễ sai,
+
+140
+00:05:35,757 --> 00:05:37,510
+có người cùng đi sẽ chắc hơn.
+
+141
+00:05:37,510 --> 00:05:41,258
+Nhớ đăng ký kênh và bấm chuông để không bỏ lỡ video tiếp theo.
+
+142
+00:05:41,538 --> 00:05:44,624
+Số liệu trong video lấy từ báo cáo tài chính quý ba
+
+143
+00:05:44,624 --> 00:05:47,468
+năm 2026 và dữ liệu tổng hợp ngày hai tháng 11.
+
+144
+00:05:47,468 --> 00:05:49,042
+Đây là góc nhìn tham khảo,
+
+145
+00:05:49,042 --> 00:05:50,918
+không phải khuyến nghị mua bán.
+
+146
+00:05:50,918 --> 00:05:54,670
+Dữ liệu từng mã có trên trang chứng khoán huy nguyễn chấm com.
+
+147
+00:05:54,670 --> 00:05:57,514
+Anh chị muốn em soi doanh nghiệp nào tiếp theo?
+
+148
+00:05:57,514 --> 00:05:58,785
+Hãy để lại bình luận.
