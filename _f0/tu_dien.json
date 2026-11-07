@@ -598,5 +598,35 @@
 "Phải trả người bán",
 "Số tiền doanh nghiệp còn nợ nhà cung cấp cho hàng hóa, dịch vụ đã nhận, thường không có lãi.",
 "phai-tra-nguoi-ban-la-gi"
+],
+[
+"Giá vốn hàng bán",
+"Chi phí trực tiếp tạo ra hàng hóa, dịch vụ đã bán trong kỳ; doanh thu thuần trừ giá vốn ra lợi nhuận gộp.",
+"gia-von-hang-ban-la-gi"
+],
+[
+"Thặng dư vốn cổ phần",
+"Phần chênh lệch giữa giá phát hành và mệnh giá cổ phiếu, ghi trong vốn chủ sở hữu.",
+"von-gop-va-thang-du-von-co-phan-la-gi"
+],
+[
+"Quỹ đầu tư phát triển",
+"Quỹ trích từ lợi nhuận sau thuế để mở rộng đầu tư, nằm trong vốn chủ sở hữu.",
+"quy-dau-tu-phat-trien-la-gi"
+],
+[
+"Chi phí tài chính",
+"Chi phí liên quan hoạt động tài chính: lãi vay, lỗ tỷ giá, dự phòng đầu tư.",
+"chi-phi-tai-chinh-la-gi"
+],
+[
+"Dòng tiền đầu tư",
+"Tiền chi và thu từ mua bán tài sản dài hạn, cho vay, gửi tiền có kỳ hạn, góp vốn.",
+"dong-tien-dau-tu-la-gi"
+],
+[
+"Dòng tiền tài chính",
+"Tiền ra vào giữa doanh nghiệp với chủ nợ và cổ đông: vay, trả nợ, phát hành, cổ tức.",
+"dong-tien-tai-chinh-la-gi"
 ]
 ]

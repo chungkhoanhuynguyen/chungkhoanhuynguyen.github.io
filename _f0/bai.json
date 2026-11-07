@@ -28652,5 +28652,576 @@
     "Ngoài tỷ lệ chi trả, anh chị nên mở báo cáo lưu chuyển tiền tệ, so dòng tiền thuần từ hoạt động kinh doanh với tiền chi trả cổ tức trong 3–5 năm. Nếu doanh nghiệp phải vay thêm hoặc bán tài sản để trả cổ tức, mức chi trả hiện tại khó duy trì. Với công ty chứng khoán, lợi nhuận phụ thuộc thị trường nên cổ tức thường dao động theo chu kỳ."
    ]
   ]
+ },
+ {
+  "slug": "gia-von-hang-ban-la-gi",
+  "kw": "giá vốn hàng bán là gì",
+  "title": "Giá vốn hàng bán là gì? Cách đọc tỷ lệ giá vốn trên doanh thu",
+  "desc": "Giá vốn hàng bán là gì, gồm những gì, cách tính tỷ lệ giá vốn/doanh thu và ý nghĩa với biên gộp. Ví dụ VNM, HPG, PLX, GAS, DGW quý 3/2026.",
+  "body": [
+   [
+    "p",
+    "<b>Giá vốn hàng bán</b> là toàn bộ chi phí trực tiếp để tạo ra hàng hóa, dịch vụ mà doanh nghiệp đã bán trong kỳ. Đây là dòng chi phí đầu tiên và thường lớn nhất trên báo cáo kết quả kinh doanh, đứng ngay sau doanh thu thuần. Doanh thu thuần trừ giá vốn hàng bán ra lợi nhuận gộp."
+   ],
+   [
+    "h2",
+    "Giá vốn hàng bán gồm những gì"
+   ],
+   [
+    "ul",
+    [
+     "Với doanh nghiệp sản xuất: nguyên vật liệu, nhân công trực tiếp, chi phí sản xuất chung như điện, khấu hao máy móc nhà xưởng.",
+     "Với doanh nghiệp thương mại, bán lẻ: giá mua hàng hóa cộng chi phí đưa hàng về kho.",
+     "Với doanh nghiệp dịch vụ: chi phí trực tiếp để cung cấp dịch vụ, ví dụ nhiên liệu và thuê máy bay của hãng hàng không.",
+     "Dự phòng giảm giá hàng tồn kho trích thêm hoặc hoàn nhập cũng được ghi vào giá vốn."
+    ]
+   ],
+   [
+    "p",
+    "Chi phí bán hàng, quản lý doanh nghiệp và lãi vay KHÔNG nằm trong giá vốn mà được trình bày ở các dòng phía dưới."
+   ],
+   [
+    "h2",
+    "Tỷ lệ giá vốn trên doanh thu"
+   ],
+   [
+    "p",
+    "Tỷ lệ giá vốn = giá vốn hàng bán / doanh thu thuần. Tỷ lệ này cộng với biên lợi nhuận gộp luôn bằng 100%. Tỷ lệ thấp nghĩa là doanh nghiệp giữ lại nhiều tiền hơn trên mỗi đồng doanh thu để trang trải các chi phí khác."
+   ],
+   [
+    "h2",
+    "Ví dụ quý 3/2026"
+   ],
+   [
+    "ul",
+    [
+     "VNM: giá vốn khoảng 10.829 tỷ đồng trên doanh thu 18.465 tỷ → tỷ lệ 58,6% (quý 3/2025: 58,2%).",
+     "REE: 66,7%, tăng từ 63,5% cùng kỳ do giá vốn tăng 34,6% nhanh hơn doanh thu tăng 28,1%.",
+     "HPG: 80,8%, giảm từ 83,3% cùng kỳ; doanh thu tăng 70,9% trong khi giá vốn tăng 65,9%.",
+     "GAS: 84,3%, giảm từ 88,5% cùng kỳ.",
+     "DGW: 91,6% và PLX: 94,7% – đặc thù phân phối, kinh doanh xăng dầu nên phần lớn doanh thu là giá vốn."
+    ]
+   ],
+   [
+    "p",
+    "Số liệu từ báo cáo tài chính hợp nhất quý 3/2026 các doanh nghiệp. So sánh chỉ có ý nghĩa giữa các doanh nghiệp cùng ngành hoặc cùng một doanh nghiệp qua nhiều kỳ."
+   ]
+  ],
+  "faq": [
+   [
+    "Giá vốn hàng bán tăng có phải xấu không?",
+    "Không hẳn. Bán được nhiều hàng hơn thì giá vốn tăng theo. Cần so tốc độ tăng giá vốn với tốc độ tăng doanh thu: giá vốn tăng nhanh hơn thì biên gộp bị thu hẹp."
+   ],
+   [
+    "Vì sao doanh nghiệp phân phối có tỷ lệ giá vốn trên 90%?",
+    "Doanh nghiệp phân phối mua hàng về bán lại, phần giá trị gia tăng mỏng. Họ bù lại bằng vòng quay hàng tồn kho nhanh và doanh thu lớn."
+   ],
+   [
+    "Giá vốn hàng bán có gồm khấu hao không?",
+    "Có, phần khấu hao máy móc, nhà xưởng phục vụ sản xuất được tính vào giá vốn. Khấu hao văn phòng, cửa hàng thường nằm ở chi phí quản lý hoặc chi phí bán hàng."
+   ]
+  ],
+  "rel": [
+   "bien-loi-nhuan-gop-la-gi",
+   "bao-cao-ket-qua-kinh-doanh-la-gi",
+   "vong-quay-hang-ton-kho-la-gi",
+   "khau-hao-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Cách dùng khi đọc báo cáo"
+   ],
+   [
+    "ul",
+    [
+     "Theo dõi tỷ lệ giá vốn ít nhất 4–8 quý để thấy xu hướng, tránh kết luận từ 1 quý.",
+     "Với ngành hàng hóa như thép, phân bón, xăng dầu, tỷ lệ giá vốn dao động theo giá nguyên liệu đầu vào và giá bán đầu ra.",
+     "Nếu tỷ lệ giá vốn giảm đột ngột, xem thuyết minh có khoản hoàn nhập dự phòng tồn kho hay không, vì khoản này làm biên gộp đẹp lên một lần."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Giá vốn hàng bán là chi phí trực tiếp của hàng đã bán.",
+     "Tỷ lệ giá vốn + biên gộp = 100%.",
+     "Đọc theo xu hướng và so với doanh nghiệp cùng ngành."
+    ]
+   ]
+  ],
+  "grp": 3
+ },
+ {
+  "slug": "von-gop-va-thang-du-von-co-phan-la-gi",
+  "kw": "vốn góp và thặng dư vốn cổ phần",
+  "title": "Vốn góp và thặng dư vốn cổ phần là gì? Đọc trong BCTC",
+  "desc": "Vốn góp chủ sở hữu và thặng dư vốn cổ phần là gì, khác nhau thế nào, vì sao tăng khi phát hành cổ phiếu. Ví dụ NLG, VJC, HPG, PLX, VNM 2025–2026.",
+  "body": [
+   [
+    "p",
+    "Trong phần vốn chủ sở hữu trên bảng cân đối kế toán, hai dòng đầu tiên thường là <b>vốn góp của chủ sở hữu</b> và <b>thặng dư vốn cổ phần</b>. Hai dòng này cho biết cổ đông đã thực sự bỏ bao nhiêu tiền vào doanh nghiệp, tách biệt với phần lợi nhuận doanh nghiệp tự làm ra."
+   ],
+   [
+    "h2",
+    "Vốn góp là gì"
+   ],
+   [
+    "p",
+    "Vốn góp (vốn điều lệ đã góp) = số cổ phiếu đã phát hành × mệnh giá 10.000 đồng. Ví dụ một công ty có 100 triệu cổ phiếu thì vốn góp là 1.000 tỷ đồng, bất kể giá thị trường đang là bao nhiêu."
+   ],
+   [
+    "h2",
+    "Thặng dư vốn cổ phần là gì"
+   ],
+   [
+    "p",
+    "Khi doanh nghiệp bán cổ phiếu cao hơn mệnh giá, phần chênh lệch ghi vào thặng dư vốn cổ phần. Ví dụ phát hành 50 triệu cổ phiếu giá 30.000 đồng: vốn góp tăng 500 tỷ, thặng dư tăng 1.000 tỷ, tổng tiền thu về 1.500 tỷ."
+   ],
+   [
+    "h2",
+    "Ví dụ thực tế"
+   ],
+   [
+    "ul",
+    [
+     "NLG: quý 4/2025 vốn góp tăng từ 3.850,8 lên 4.851,0 tỷ đồng và thặng dư tăng từ 2.643,0 lên 4.142,4 tỷ; báo cáo lưu chuyển tiền tệ ghi nhận khoảng 2.499,6 tỷ thu từ phát hành cổ phiếu. Phần thặng dư gấp rưỡi phần vốn góp cho thấy cổ phiếu được bán giá khoảng 25.000 đồng.",
+     "VJC: vốn góp tăng từ 5.916,1 lên 7.690,9 tỷ trong quý 2/2026 (tăng 30%) nhưng thặng dư giữ 4.747,4 tỷ và không có tiền thu từ phát hành – dấu hiệu chia cổ phiếu thưởng/cổ tức bằng cổ phiếu.",
+     "HPG: vốn góp tăng từ 76.754,7 lên 84.429,6 tỷ trong quý 3/2026 (tăng 10%), cũng không kèm dòng tiền phát hành.",
+     "PLX: thặng dư tăng từ 7.359,1 lên 7.969,1 tỷ trong quý 3/2026.",
+     "VNM: vốn góp 20.899,6 tỷ, thặng dư chỉ 34,1 tỷ, không đổi nhiều năm – doanh nghiệp ít huy động vốn mới."
+    ]
+   ],
+   [
+    "p",
+    "Số liệu từ báo cáo tài chính hợp nhất các kỳ đến 30/9/2026."
+   ]
+  ],
+  "faq": [
+   [
+    "Vốn góp tăng có làm cổ đông mất lợi ích?",
+    "Nếu phát hành thu tiền, vốn được bổ sung nhưng lợi nhuận chia cho nhiều cổ phiếu hơn. Nếu chia thưởng, giá trị doanh nghiệp không đổi, chỉ số cổ phiếu tăng và giá điều chỉnh giảm tương ứng."
+   ],
+   [
+    "Thặng dư vốn cổ phần có thể âm không?",
+    "Có. Khi doanh nghiệp mua cổ phiếu quỹ hoặc phát hành với chi phí lớn, dòng này có thể âm. Một số doanh nghiệp cũng dùng thặng dư để phát hành cổ phiếu thưởng."
+   ],
+   [
+    "Vốn góp lớn có nghĩa doanh nghiệp mạnh?",
+    "Không. Vốn góp chỉ phản ánh số cổ phiếu × mệnh giá. Sức mạnh nằm ở lợi nhuận, dòng tiền và ROE trên toàn bộ vốn chủ sở hữu."
+   ]
+  ],
+  "rel": [
+   "von-chu-so-huu-la-gi",
+   "menh-gia-co-phieu-la-gi",
+   "pha-loang-co-phieu-la-gi",
+   "chia-tach-co-phieu-thuong-phat-hanh-them"
+  ],
+  "add": [
+   [
+    "h2",
+    "Cách phân biệt phát hành thu tiền và chia thưởng"
+   ],
+   [
+    "ul",
+    [
+     "Phát hành thu tiền: vốn góp tăng, thường thặng dư cũng tăng, và báo cáo lưu chuyển tiền tệ có dòng \"Tiền thu từ phát hành cổ phiếu\".",
+     "Chia thưởng, cổ tức bằng cổ phiếu: vốn góp tăng, lợi nhuận chưa phân phối hoặc thặng dư giảm tương ứng, không có tiền vào.",
+     "Tổng vốn chủ sở hữu chỉ thực sự tăng thêm ở trường hợp thứ nhất."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Vốn góp = số cổ phiếu × mệnh giá.",
+     "Thặng dư = phần bán cao hơn mệnh giá.",
+     "Đối chiếu với báo cáo lưu chuyển tiền tệ để biết có tiền mới vào hay không."
+    ]
+   ]
+  ],
+  "grp": 3
+ },
+ {
+  "slug": "quy-dau-tu-phat-trien-la-gi",
+  "kw": "quỹ đầu tư phát triển là gì",
+  "title": "Quỹ đầu tư phát triển là gì? Vì sao GAS giữ quỹ hơn 32.000 tỷ",
+  "desc": "Quỹ đầu tư phát triển là gì, trích từ đâu, dùng làm gì, có chia cổ tức được không. Ví dụ GAS, POW, HPG, REE tại 30/9/2026.",
+  "body": [
+   [
+    "p",
+    "<b>Quỹ đầu tư phát triển</b> là một quỹ nằm trong vốn chủ sở hữu, được trích từ lợi nhuận sau thuế theo nghị quyết đại hội đồng cổ đông. Mục đích là giữ lại một phần lợi nhuận để mở rộng sản xuất, đầu tư chiều sâu hoặc bổ sung vốn điều lệ, thay vì chia hết cho cổ đông."
+   ],
+   [
+    "h2",
+    "Quỹ này đến từ đâu"
+   ],
+   [
+    "p",
+    "Sau khi có lợi nhuận cả năm, đại hội đồng cổ đông quyết định phân phối: chia cổ tức, trích quỹ khen thưởng phúc lợi, trích quỹ đầu tư phát triển, phần còn lại để ở lợi nhuận chưa phân phối. Khi trích quỹ, tiền không đi đâu cả – chỉ là bút toán chuyển từ dòng \"lợi nhuận sau thuế chưa phân phối\" sang dòng \"quỹ đầu tư phát triển\", tổng vốn chủ sở hữu không đổi."
+   ],
+   [
+    "h2",
+    "Ví dụ tại 30/9/2026"
+   ],
+   [
+    "ul",
+    [
+     "GAS: quỹ đầu tư phát triển khoảng 32.803,6 tỷ đồng, bằng khoảng 44% vốn chủ sở hữu 74.618,1 tỷ, lớn hơn cả vốn góp 24.129,5 tỷ. Quỹ tăng từ 29.380,6 tỷ trong quý 2/2026 sau đợt trích lập theo kế hoạch phân phối lợi nhuận.",
+     "POW: khoảng 2.798,2 tỷ, bằng khoảng 6% vốn chủ sở hữu.",
+     "HPG: khoảng 1.388,4 tỷ, chưa tới 1% vốn chủ sở hữu 149.568,4 tỷ – phần lớn lợi nhuận giữ lại nằm ở lợi nhuận chưa phân phối.",
+     "REE: khoảng 413 tỷ.",
+     "VNM: quỹ này về 0 từ quý 2/2026 (trước đó 78,7 tỷ)."
+    ]
+   ],
+   [
+    "p",
+    "Doanh nghiệp có vốn nhà nước lớn thường trích quỹ đầu tư phát triển với tỷ lệ cao theo quy định quản lý vốn nhà nước, nên dòng này hay lớn ở các tập đoàn như GAS, POW."
+   ]
+  ],
+  "faq": [
+   [
+    "Quỹ đầu tư phát triển có chia cổ tức được không?",
+    "Thông thường quỹ dùng cho đầu tư hoặc tăng vốn điều lệ. Một số doanh nghiệp dùng quỹ để phát hành cổ phiếu thưởng, nhưng chia cổ tức tiền mặt thường lấy từ lợi nhuận chưa phân phối."
+   ],
+   [
+    "Quỹ lớn có phải doanh nghiệp có nhiều tiền?",
+    "Không nhất thiết. Quỹ là một dòng nguồn vốn, tiền thực tế có thể đã nằm ở tài sản cố định, tiền gửi hoặc khoản đầu tư khác. Muốn biết tiền mặt phải xem phía tài sản."
+   ],
+   [
+    "Quỹ đầu tư phát triển khác quỹ khen thưởng phúc lợi thế nào?",
+    "Quỹ đầu tư phát triển thuộc vốn chủ sở hữu. Quỹ khen thưởng phúc lợi dành cho người lao động và được trình bày ở phần nợ phải trả ngắn hạn."
+   ]
+  ],
+  "rel": [
+   "von-chu-so-huu-la-gi",
+   "loi-nhuan-sau-thue-chua-phan-phoi-la-gi",
+   "ty-le-chi-tra-co-tuc-la-gi",
+   "co-tuc-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Nhà đầu tư nên đọc dòng này thế nào"
+   ],
+   [
+    "ul",
+    [
+     "Quỹ đầu tư phát triển + lợi nhuận chưa phân phối = phần lớn lợi nhuận tích lũy doanh nghiệp giữ lại qua nhiều năm.",
+     "Quỹ lớn so với vốn góp cho thấy doanh nghiệp đã tích lũy lâu năm, có dư địa phát hành cổ phiếu thưởng.",
+     "Khi so tỷ lệ chi trả cổ tức giữa các doanh nghiệp, cần nhớ phần trích quỹ không đến tay cổ đông dưới dạng tiền."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Quỹ đầu tư phát triển trích từ lợi nhuận sau thuế, nằm trong vốn chủ sở hữu.",
+     "Trích quỹ là bút toán nội bộ, không làm giảm vốn chủ sở hữu.",
+     "Doanh nghiệp vốn nhà nước thường có quỹ lớn."
+    ]
+   ]
+  ],
+  "grp": 3
+ },
+ {
+  "slug": "chi-phi-tai-chinh-la-gi",
+  "kw": "chi phí tài chính là gì",
+  "title": "Chi phí tài chính là gì? Khác chi phí lãi vay ở điểm nào",
+  "desc": "Chi phí tài chính là gì, gồm lãi vay, lỗ tỷ giá, dự phòng đầu tư. Cách tách phần ngoài lãi vay, ví dụ VJC, PLX, MWG, VNM quý 3/2026.",
+  "body": [
+   [
+    "p",
+    "<b>Chi phí tài chính</b> là dòng trên báo cáo kết quả kinh doanh ghi nhận các khoản chi phí liên quan đến hoạt động tài chính của doanh nghiệp. Nhiều người nghĩ chi phí tài chính chỉ là lãi vay, nhưng thực tế nó rộng hơn. Ngay dưới dòng này thường có dòng \"Trong đó: chi phí lãi vay\" để tách riêng."
+   ],
+   [
+    "h2",
+    "Chi phí tài chính gồm những gì"
+   ],
+   [
+    "ul",
+    [
+     "Chi phí lãi vay ngân hàng, lãi trái phiếu.",
+     "Lỗ chênh lệch tỷ giá khi thanh toán hoặc đánh giá lại khoản nợ ngoại tệ.",
+     "Dự phòng giảm giá chứng khoán kinh doanh và tổn thất đầu tư vào đơn vị khác.",
+     "Lỗ khi bán các khoản đầu tư tài chính, chiết khấu thanh toán cho khách hàng.",
+     "Phí phát hành trái phiếu, phí bảo lãnh."
+    ]
+   ],
+   [
+    "h2",
+    "Tách phần ngoài lãi vay"
+   ],
+   [
+    "p",
+    "Lấy chi phí tài chính trừ chi phí lãi vay sẽ ra phần chi phí tài chính khác, chủ yếu là tỷ giá và dự phòng. Phần này biến động mạnh, thường không lặp lại đều đặn như lãi vay."
+   ],
+   [
+    "h2",
+    "Ví dụ quý 3/2026"
+   ],
+   [
+    "ul",
+    [
+     "MWG: chi phí tài chính 465,6 tỷ đồng, trong đó lãi vay 456,2 tỷ (98%) – gần như toàn bộ là lãi vay.",
+     "VNM: 151,4 tỷ, lãi vay 99,3 tỷ (65,6%), phần khác khoảng 52,1 tỷ.",
+     "VJC: 1.267,3 tỷ, lãi vay 1.068,7 tỷ (84,3%), phần khác khoảng 198,6 tỷ – hãng bay có nhiều khoản nợ, thuê bằng ngoại tệ nên chịu ảnh hưởng tỷ giá.",
+     "PLX: 614,2 tỷ nhưng lãi vay chỉ 256,8 tỷ (41,8%), phần khác khoảng 357,4 tỷ – lớn hơn cả lãi vay, do doanh nghiệp nhập khẩu xăng dầu thanh toán bằng USD."
+    ]
+   ],
+   [
+    "p",
+    "Số liệu từ báo cáo tài chính hợp nhất quý 3/2026."
+   ]
+  ],
+  "faq": [
+   [
+    "Chi phí tài chính tăng mạnh có đáng lo không?",
+    "Cần tách ra xem. Nếu do lãi vay tăng vì vay nhiều hơn thì xem hệ số bao phủ lãi vay. Nếu do lỗ tỷ giá hay dự phòng thì có thể chỉ mang tính một lần, nhưng doanh nghiệp nợ ngoại tệ lớn sẽ chịu rủi ro này lặp lại."
+   ],
+   [
+    "Doanh thu tài chính có bù cho chi phí tài chính không?",
+    "Hai dòng trình bày riêng. Lấy doanh thu tài chính trừ chi phí tài chính ra kết quả hoạt động tài chính thuần, giúp thấy doanh nghiệp đang lãi hay lỗ ở mảng tài chính."
+   ],
+   [
+    "Vì sao chi phí lãi vay trên báo cáo có thể thấp hơn tiền lãi đã trả?",
+    "Lãi vay cho dự án đang xây dựng được vốn hóa vào giá trị tài sản dở dang, không ghi vào chi phí trong kỳ. Vì vậy cần xem cả báo cáo lưu chuyển tiền tệ dòng tiền lãi vay đã trả."
+   ]
+  ],
+  "rel": [
+   "chi-phi-lai-vay-la-gi",
+   "doanh-thu-hoat-dong-tai-chinh-la-gi",
+   "he-so-bao-phu-lai-vay-la-gi",
+   "ty-gia-tang-anh-huong-co-phieu"
+  ],
+  "add": [
+   [
+    "h2",
+    "Lưu ý khi đọc"
+   ],
+   [
+    "ul",
+    [
+     "Doanh nghiệp vay hoặc nhập khẩu bằng USD: theo dõi tỷ giá USD/VND cuối quý, vì lỗ tỷ giá đánh giá lại có thể làm lợi nhuận quý giảm đột ngột.",
+     "Doanh nghiệp nắm nhiều cổ phiếu, trái phiếu: dự phòng đầu tư tăng khi thị trường giảm, và có thể hoàn nhập khi thị trường hồi.",
+     "So chi phí tài chính với lợi nhuận gộp để biết phần chi phí này đang \"ăn\" bao nhiêu lợi nhuận."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Chi phí tài chính = lãi vay + tỷ giá + dự phòng đầu tư + chi phí tài chính khác.",
+     "Luôn tách dòng lãi vay ra để đọc riêng.",
+     "Phần ngoài lãi vay biến động mạnh, cần xem thuyết minh."
+    ]
+   ]
+  ],
+  "grp": 3
+ },
+ {
+  "slug": "dong-tien-dau-tu-la-gi",
+  "kw": "dòng tiền đầu tư là gì",
+  "title": "Dòng tiền đầu tư là gì? Âm có xấu không, đọc thế nào",
+  "desc": "Lưu chuyển tiền từ hoạt động đầu tư là gì, gồm mua tài sản, gửi tiền có kỳ hạn, góp vốn. Vì sao âm chưa chắc xấu. Ví dụ HPG, REE, VJC, PLX 2026.",
+  "body": [
+   [
+    "p",
+    "<b>Dòng tiền đầu tư</b> (lưu chuyển tiền thuần từ hoạt động đầu tư) là phần thứ hai của báo cáo lưu chuyển tiền tệ. Nó cho biết trong kỳ doanh nghiệp đã chi bao nhiêu tiền để mua tài sản dài hạn, cho vay, gửi tiền có kỳ hạn, góp vốn vào công ty khác, và thu về bao nhiêu từ các hoạt động ngược lại."
+   ],
+   [
+    "h2",
+    "Các dòng chính"
+   ],
+   [
+    "ul",
+    [
+     "Mua sắm tài sản cố định (capex): xây nhà máy, mua máy móc, máy bay.",
+     "Thanh lý tài sản cố định: tiền thu từ bán tài sản cũ.",
+     "Tiền chi cho vay, mua công cụ nợ: gồm cả tiền gửi ngân hàng có kỳ hạn trên 3 tháng.",
+     "Tiền thu hồi cho vay, bán lại công cụ nợ: tiền gửi đáo hạn rút về.",
+     "Góp vốn và thu hồi vốn góp vào đơn vị khác.",
+     "Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia."
+    ]
+   ],
+   [
+    "h2",
+    "Âm có phải xấu?"
+   ],
+   [
+    "p",
+    "Doanh nghiệp đang phát triển thường có dòng tiền đầu tư âm vì phải chi cho tài sản mới. Điều quan trọng là tiền chi đi vào đâu: chi mua tài sản tạo ra doanh thu trong tương lai, hay chỉ là chuyển tiền nhàn rỗi sang tiền gửi có kỳ hạn."
+   ],
+   [
+    "h2",
+    "Ví dụ quý 3/2026"
+   ],
+   [
+    "ul",
+    [
+     "HPG: dòng tiền đầu tư âm khoảng 18.975,7 tỷ đồng. Nhưng mua sắm tài sản cố định chỉ khoảng 2.083,6 tỷ; phần lớn là chi cho vay, mua công cụ nợ 22.939,6 tỷ trừ thu hồi 6.973,1 tỷ – tức chủ yếu chuyển tiền sang tiền gửi có kỳ hạn sau giai đoạn đầu tư lớn (quý 3/2025 capex còn 13.174,6 tỷ).",
+     "REE: âm khoảng 1.973,2 tỷ, trong đó mua tài sản cố định 1.823,9 tỷ – chi thật cho đầu tư dự án.",
+     "VJC: mua tài sản cố định khoảng 5.307,8 tỷ quý 1 và 7.299,1 tỷ quý 2/2026, liên quan đội tàu bay.",
+     "PLX: âm khoảng 12.907,6 tỷ, chủ yếu do chi cho vay, gửi tiền 22.023,2 tỷ."
+    ]
+   ],
+   [
+    "p",
+    "Số liệu từ báo cáo lưu chuyển tiền tệ hợp nhất từng quý 2026."
+   ]
+  ],
+  "faq": [
+   [
+    "Dòng tiền đầu tư dương có tốt không?",
+    "Không chắc. Dương có thể do rút tiền gửi về, bán tài sản hoặc thoái vốn. Nếu doanh nghiệp liên tục bán tài sản để có tiền thì cần xem lý do."
+   ],
+   [
+    "Capex lấy ở đâu trên báo cáo?",
+    "Ở dòng \"Mua sắm, xây dựng tài sản cố định và các tài sản dài hạn khác\" trong phần hoạt động đầu tư. Dòng tiền tự do thường tính bằng dòng tiền kinh doanh trừ capex."
+   ],
+   [
+    "Vì sao gửi tiền ngân hàng lại nằm trong dòng tiền đầu tư?",
+    "Tiền gửi kỳ hạn trên 3 tháng không được coi là tương đương tiền, nên khi gửi hoặc rút được ghi vào hoạt động đầu tư."
+   ]
+  ],
+  "rel": [
+   "bao-cao-luu-chuyen-tien-te-la-gi",
+   "fcf-dong-tien-tu-do-la-gi",
+   "dau-tu-giu-den-ngay-dao-han-la-gi",
+   "chi-phi-xay-dung-co-ban-do-dang-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Cách đọc nhanh"
+   ],
+   [
+    "ul",
+    [
+     "Tách capex ra khỏi tổng dòng tiền đầu tư; phần còn lại thường là gửi/rút tiền và góp vốn.",
+     "So capex với khấu hao: capex lớn hơn khấu hao nhiều lần nghĩa là doanh nghiệp đang mở rộng.",
+     "Đọc cùng dòng tiền kinh doanh: dòng tiền kinh doanh đủ trả capex là trạng thái lành mạnh."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Dòng tiền đầu tư phản ánh tiền chi cho tài sản dài hạn, cho vay, góp vốn.",
+     "Âm không xấu nếu tiền đi vào tài sản tạo lợi nhuận.",
+     "Luôn xem chi tiết từng dòng, không chỉ con số tổng."
+    ]
+   ]
+  ],
+  "grp": 3
+ },
+ {
+  "slug": "dong-tien-tai-chinh-la-gi",
+  "kw": "dòng tiền tài chính là gì",
+  "title": "Dòng tiền tài chính là gì? Vay, trả nợ, cổ tức trong BCTC",
+  "desc": "Lưu chuyển tiền từ hoạt động tài chính là gì: vay nợ, trả gốc, phát hành cổ phiếu, trả cổ tức. Cách đọc qua ví dụ VNM, HPG, PLX, GAS 2025–2026.",
+  "body": [
+   [
+    "p",
+    "<b>Dòng tiền tài chính</b> (lưu chuyển tiền thuần từ hoạt động tài chính) là phần thứ ba của báo cáo lưu chuyển tiền tệ. Nó ghi lại tiền ra vào giữa doanh nghiệp với những người cấp vốn: chủ nợ (ngân hàng, trái chủ) và cổ đông."
+   ],
+   [
+    "h2",
+    "Các dòng chính"
+   ],
+   [
+    "ul",
+    [
+     "Tiền thu từ phát hành cổ phiếu, nhận vốn góp.",
+     "Tiền chi mua lại cổ phiếu quỹ.",
+     "Tiền vay ngắn hạn, dài hạn nhận được.",
+     "Tiền chi trả nợ gốc vay và nợ thuê tài chính.",
+     "Cổ tức, lợi nhuận đã trả cho chủ sở hữu."
+    ]
+   ],
+   [
+    "p",
+    "Dương nghĩa là doanh nghiệp đang huy động thêm vốn (vay hoặc phát hành nhiều hơn số trả). Âm nghĩa là doanh nghiệp đang trả lại tiền cho chủ nợ, cổ đông."
+   ],
+   [
+    "h2",
+    "Ví dụ thực tế"
+   ],
+   [
+    "ul",
+    [
+     "VNM quý 3/2026: âm khoảng 3.746,3 tỷ đồng, chủ yếu do trả cổ tức 3.866,1 tỷ; vay mới 3.368,5 tỷ và trả gốc 3.248,7 tỷ gần như cân nhau.",
+     "HPG quý 3/2026: dương khoảng 7.755,3 tỷ – vay nhận được 41.401,6 tỷ, trả gốc 33.640,8 tỷ, tức vay ròng thêm khoảng 7.761 tỷ.",
+     "PLX quý 3/2026: dương khoảng 16.138,2 tỷ – vay 54.964,9 tỷ, trả 38.430,8 tỷ, trùng thời điểm doanh nghiệp chi nhiều cho hoạt động đầu tư và vốn lưu động.",
+     "GAS quý 4/2025: âm khoảng 4.359,7 tỷ, trong đó trả cổ tức 4.012,4 tỷ."
+    ]
+   ],
+   [
+    "p",
+    "Số liệu từ báo cáo lưu chuyển tiền tệ hợp nhất từng quý."
+   ]
+  ],
+  "faq": [
+   [
+    "Dòng tiền tài chính dương là tốt hay xấu?",
+    "Tùy. Dương vì vay để xây nhà máy có hiệu quả thì bình thường. Dương vì phải vay để bù dòng tiền kinh doanh âm kéo dài thì cần thận trọng."
+   ],
+   [
+    "Trả cổ tức nằm ở phần nào của báo cáo lưu chuyển tiền tệ?",
+    "Cổ tức đã trả bằng tiền nằm ở dòng tiền tài chính. Cổ tức bằng cổ phiếu không có tiền ra nên không xuất hiện ở đây."
+   ],
+   [
+    "Vay và trả nợ hàng chục nghìn tỷ mỗi quý có bình thường?",
+    "Với doanh nghiệp vay ngắn hạn xoay vòng để tài trợ vốn lưu động như thép, xăng dầu thì bình thường. Nên nhìn số vay ròng = tiền vay trừ trả gốc."
+   ]
+  ],
+  "rel": [
+   "bao-cao-luu-chuyen-tien-te-la-gi",
+   "dong-tien-kinh-doanh-la-gi",
+   "vay-ngan-han-va-dai-han-la-gi",
+   "tien-rong-va-no-rong-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Đọc cùng hai dòng tiền còn lại"
+   ],
+   [
+    "ul",
+    [
+     "Mô hình lành mạnh thường gặp: dòng tiền kinh doanh dương, đầu tư âm vừa phải, tài chính âm (trả nợ, trả cổ tức).",
+     "Doanh nghiệp đang mở rộng: kinh doanh dương, đầu tư âm lớn, tài chính dương (vay thêm).",
+     "Dấu hiệu cần chú ý: kinh doanh âm nhiều quý, tài chính dương liên tục để bù – doanh nghiệp đang sống nhờ vay."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Dòng tiền tài chính = tiền giữa doanh nghiệp với chủ nợ và cổ đông.",
+     "Xem vay ròng thay vì tổng tiền vay.",
+     "Luôn đọc cùng dòng tiền kinh doanh và đầu tư."
+    ]
+   ]
+  ],
+  "grp": 3
  }
 ]
