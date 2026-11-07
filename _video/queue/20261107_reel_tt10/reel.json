@@ -9,12 +9,16 @@
   ],
   "nhan": "VĨ MÔ · CÂU CHUYỆN",
   "nhac": "lofi",
-  "music_db": -19,
+  "music_db": -3,
   "toc": 1.02,
   "canh": [
    {
     "chu_to": "10% MỖI NĂM",
-    "anh": "Ho Chi Minh City skyline night",
+    "anh": [
+     "Ho Chi Minh City skyline night",
+     "Bitexco Financial Tower",
+     "Ho Chi Minh City traffic"
+    ],
     "loi": "Anh chị có để ý không, quý ba vừa rồi kinh tế Việt Nam tăng gần mười phần trăm, và mục tiêu năm năm tới là từ mười phần trăm mỗi năm trở lên. Tăng trưởng hai con số. Nghe thì giống một khẩu hiệu. Nhưng em đọc kỹ thì thấy, đằng sau con số đó là một cuộc chạy đua với thời gian.",
     "loi_doc": "Anh chị có để ý không, quý ba vừa rồi kinh tế Việt Nam tăng gần mười phần trăm, và mục tiêu năm năm tới là từ mười phần trăm mỗi năm trở lên. Tăng trưởng hai con số. Nghe thì giống một khẩu hiệu. Nhưng em đọc kỹ thì thấy, đằng sau con số đó là một cuộc chạy đua với thời gian."
    },
@@ -22,11 +26,19 @@
     "chu_to": "QUÝ 3/2026: 9,95%",
     "hinh": "the_gdp.png",
     "loi": "Năm 2025, kinh tế Việt Nam tăng 8,02%. Sang năm nay, quý một 8,15%, quý hai 8,81%, và quý ba vừa rồi 9,95%. Chỉ còn cách mốc 10% đúng một chút xíu.",
-    "loi_doc": "Năm hai nghìn không trăm hai mươi lăm, kinh tế Việt Nam tăng tám phẩy không hai phần trăm. Sang năm nay, quý một tám phẩy mười lăm phần trăm, quý hai tám phẩy tám mươi mốt phần trăm, và quý ba vừa rồi chín phẩy chín mươi lăm phần trăm. Chỉ còn cách mốc mười phần trăm đúng một chút xíu."
+    "loi_doc": "Năm hai nghìn không trăm hai mươi lăm, kinh tế Việt Nam tăng tám phẩy không hai phần trăm. Sang năm nay, quý một tám phẩy mười lăm phần trăm, quý hai tám phẩy tám mươi mốt phần trăm, và quý ba vừa rồi chín phẩy chín mươi lăm phần trăm. Chỉ còn cách mốc mười phần trăm đúng một chút xíu.",
+    "anh": [
+     "Ho Chi Minh City Landmark 81",
+     "container port Vietnam"
+    ]
    },
    {
     "chu_to": "MỤC TIÊU TỪ 10%/NĂM",
-    "anh": "National Assembly Building Hanoi",
+    "anh": [
+     "National Assembly Building Hanoi",
+     "Hanoi Old Quarter",
+     "Ba Dinh Square"
+    ],
     "loi": "Nghị quyết Đại hội XIV đặt mục tiêu cả giai đoạn 2026 đến 2030 tăng trưởng bình quân từ 10% mỗi năm trở lên. Đến năm 2045, Việt Nam muốn trở thành nước phát triển, thu nhập cao.",
     "loi_doc": "Nghị quyết Đại hội mười bốn đặt mục tiêu cả giai đoạn hai nghìn không trăm hai mươi sáu đến hai nghìn không trăm ba mươi tăng trưởng bình quân từ mười phần trăm mỗi năm trở lên. Đến năm hai nghìn không trăm bốn mươi lăm, Việt Nam muốn trở thành nước phát triển, thu nhập cao."
    },
@@ -34,23 +46,39 @@
     "chu_to": "5.026 USD MỖI NGƯỜI",
     "hinh": "the_thang.png",
     "loi": "Nhưng mình đang đứng ở đâu? Năm 2025, mỗi người Việt Nam làm ra khoảng 5.026 đô la. Mục tiêu năm 2030 là khoảng 8.500 đô la. Còn ngưỡng thu nhập cao của Ngân hàng Thế giới hiện là trên 14.375 đô la.",
-    "loi_doc": "Nhưng mình đang đứng ở đâu? Năm hai nghìn không trăm hai mươi lăm, mỗi người Việt Nam làm ra khoảng năm nghìn không trăm hai mươi sáu đô la. Mục tiêu năm hai nghìn không trăm ba mươi là khoảng tám nghìn năm trăm đô la. Còn ngưỡng thu nhập cao của Ngân hàng Thế giới hiện là trên mười bốn nghìn ba trăm bảy mươi lăm đô la."
+    "loi_doc": "Nhưng mình đang đứng ở đâu? Năm hai nghìn không trăm hai mươi lăm, mỗi người Việt Nam làm ra khoảng năm nghìn không trăm hai mươi sáu đô la. Mục tiêu năm hai nghìn không trăm ba mươi là khoảng tám nghìn năm trăm đô la. Còn ngưỡng thu nhập cao của Ngân hàng Thế giới hiện là trên mười bốn nghìn ba trăm bảy mươi lăm đô la.",
+    "anh": [
+     "Ho Chi Minh City street market",
+     "Vietnamese dong banknotes"
+    ]
    },
    {
     "chu_to": "GẤP GẦN 3 LẦN",
     "hinh": "the_toan.png",
     "loi": "Tức là mình phải giàu lên gần gấp ba. Em làm một phép tính đơn giản. Nếu tăng 10% mỗi năm, mất khoảng 11 năm. Nếu chỉ tăng 6% mỗi năm, mất khoảng 18 năm. Bảy năm chênh lệch đó, nghe thì nhỏ, nhưng nó quyết định cả một thế hệ.",
-    "loi_doc": "Tức là mình phải giàu lên gần gấp ba. Em làm một phép tính đơn giản. Nếu tăng mười phần trăm mỗi năm, mất khoảng mười một năm. Nếu chỉ tăng sáu phần trăm mỗi năm, mất khoảng mười tám năm. Bảy năm chênh lệch đó, nghe thì nhỏ, nhưng nó quyết định cả một thế hệ."
+    "loi_doc": "Tức là mình phải giàu lên gần gấp ba. Em làm một phép tính đơn giản. Nếu tăng mười phần trăm mỗi năm, mất khoảng mười một năm. Nếu chỉ tăng sáu phần trăm mỗi năm, mất khoảng mười tám năm. Bảy năm chênh lệch đó, nghe thì nhỏ, nhưng nó quyết định cả một thế hệ.",
+    "anh": [
+     "Hanoi traffic motorbikes",
+     "Saigon skyline"
+    ]
    },
    {
     "chu_to": "ĐỒNG HỒ ĐANG ĐẾM",
     "hinh": "the_danso.png",
     "loi": "Vì có một chiếc đồng hồ không ai dừng được. Theo Cục Thống kê và Quỹ Dân số Liên Hợp Quốc, năm 2034 Việt Nam bước vào thời kỳ dân số già. Năm 2036, thời kỳ dân số vàng khép lại, sớm hơn dự báo cũ khoảng ba năm.",
-    "loi_doc": "Vì có một chiếc đồng hồ không ai dừng được. Theo Cục Thống kê và Quỹ Dân số Liên Hợp Quốc, năm hai nghìn không trăm ba mươi tư Việt Nam bước vào thời kỳ dân số già. Năm hai nghìn không trăm ba mươi sáu, thời kỳ dân số vàng khép lại, sớm hơn dự báo cũ khoảng ba năm."
+    "loi_doc": "Vì có một chiếc đồng hồ không ai dừng được. Theo Cục Thống kê và Quỹ Dân số Liên Hợp Quốc, năm hai nghìn không trăm ba mươi tư Việt Nam bước vào thời kỳ dân số già. Năm hai nghìn không trăm ba mươi sáu, thời kỳ dân số vàng khép lại, sớm hơn dự báo cũ khoảng ba năm.",
+    "anh": [
+     "Vietnam rice field",
+     "Hanoi street"
+    ]
    },
    {
     "chu_to": "CHƯA GIÀU ĐÃ GIÀ",
-    "anh": "elderly Vietnamese people",
+    "anh": [
+     "elderly Vietnamese people",
+     "Hoi An old town",
+     "Vietnam village"
+    ],
     "loi": "Anh chị thử ghép hai con số lại. Nếu chỉ tăng 6% mỗi năm, mình sẽ già trước khi kịp giàu. Khi đó, người đi làm ít đi, người cần chăm sóc nhiều lên. Đó là điều mà các nhà kinh tế gọi là chưa giàu đã già.",
     "loi_doc": "Anh chị thử ghép hai con số lại. Nếu chỉ tăng sáu phần trăm mỗi năm, mình sẽ già trước khi kịp giàu. Khi đó, người đi làm ít đi, người cần chăm sóc nhiều lên. Đó là điều mà các nhà kinh tế gọi là chưa giàu đã già."
    },
@@ -58,17 +86,29 @@
     "chu_to": "108 NƯỚC, 34 NƯỚC THOÁT",
     "hinh": "the_bay.png",
     "loi": "Và đây không phải nỗi lo của riêng mình. Ngân hàng Thế giới thống kê có 108 nước thu nhập trung bình. Từ năm 1990 đến nay, chỉ 34 nền kinh tế leo được lên thu nhập cao.",
-    "loi_doc": "Và đây không phải nỗi lo của riêng mình. Ngân hàng Thế giới thống kê có một trăm lẻ tám nước thu nhập trung bình. Từ năm một nghìn chín trăm chín mươi đến nay, chỉ ba mươi tư nền kinh tế leo được lên thu nhập cao."
+    "loi_doc": "Và đây không phải nỗi lo của riêng mình. Ngân hàng Thế giới thống kê có một trăm lẻ tám nước thu nhập trung bình. Từ năm một nghìn chín trăm chín mươi đến nay, chỉ ba mươi tư nền kinh tế leo được lên thu nhập cao.",
+    "anh": [
+     "Kuala Lumpur skyline",
+     "Jakarta skyline"
+    ]
    },
    {
     "chu_to": "BẪY 8.000 USD",
-    "anh": "Bangkok skyline",
+    "anh": [
+     "Bangkok skyline",
+     "Manila skyline",
+     "Bangkok traffic"
+    ],
     "loi": "Báo cáo đó còn chỉ ra, nhiều nước thường mắc kẹt ở quanh mức 8.000 đô la mỗi người. Anh chị để ý giúp em, đó cũng chính là vùng mà Việt Nam hướng tới vào năm 2030. Tức là cái bẫy nằm ngay trên đường mình đi.",
     "loi_doc": "Báo cáo đó còn chỉ ra, nhiều nước thường mắc kẹt ở quanh mức tám nghìn đô la mỗi người. Anh chị để ý giúp em, đó cũng chính là vùng mà Việt Nam hướng tới vào năm hai nghìn không trăm ba mươi. Tức là cái bẫy nằm ngay trên đường mình đi."
    },
    {
     "chu_to": "HÀN QUỐC 1960",
-    "anh": "Seoul 1960s",
+    "anh": [
+     "Seoul 1960s",
+     "Cheonggyecheon",
+     "Han River Seoul"
+    ],
     "loi": "Có nước nào từng thoát được chưa? Hàn Quốc là một ví dụ. Năm 1960, thu nhập mỗi người Hàn Quốc chỉ khoảng 1.200 đô la. Giai đoạn 1963 đến 1978, họ tăng trưởng gần 10% mỗi năm, liên tục suốt mười lăm năm.",
     "loi_doc": "Có nước nào từng thoát được chưa? Hàn Quốc là một ví dụ. Năm một nghìn chín trăm sáu mươi, thu nhập mỗi người Hàn Quốc chỉ khoảng một nghìn hai trăm đô la. Giai đoạn một nghìn chín trăm sáu mươi ba đến một nghìn chín trăm bảy mươi tám, họ tăng trưởng gần mười phần trăm mỗi năm, liên tục suốt mười lăm năm."
    },
@@ -76,17 +116,29 @@
     "chu_to": "1.200 → 33.000 USD",
     "hinh": "the_han.png",
     "loi": "Đến cuối năm 2023, con số đó là khoảng 33.000 đô la. Từ một nước nghèo sau chiến tranh, họ thành một nền kinh tế phát triển. Và họ làm được, vì đã chạy thật nhanh khi dân số còn trẻ.",
-    "loi_doc": "Đến cuối năm hai nghìn không trăm hai mươi ba, con số đó là khoảng ba mươi ba nghìn đô la. Từ một nước nghèo sau chiến tranh, họ thành một nền kinh tế phát triển. Và họ làm được, vì đã chạy thật nhanh khi dân số còn trẻ."
+    "loi_doc": "Đến cuối năm hai nghìn không trăm hai mươi ba, con số đó là khoảng ba mươi ba nghìn đô la. Từ một nước nghèo sau chiến tranh, họ thành một nền kinh tế phát triển. Và họ làm được, vì đã chạy thật nhanh khi dân số còn trẻ.",
+    "anh": [
+     "Seoul skyline",
+     "Samsung headquarters"
+    ]
    },
    {
     "chu_to": "CƠ HỘI ĐI KÈM RỦI RO",
-    "anh": "construction site Vietnam",
+    "anh": [
+     "construction site Vietnam",
+     "Ho Chi Minh City Metro Line 1",
+     "Cat Lai port"
+    ],
     "loi": "Với nhà đầu tư, tăng trưởng cao kéo theo đầu tư công, xây dựng, tín dụng. Quý ba năm nay, công nghiệp và xây dựng tăng 12,5%. Nhưng chạy nhanh cũng dễ nóng, nhất là tín dụng, lạm phát và tỷ giá. Nên em vẫn chọn doanh nghiệp hưởng lợi thật, và giữ kỷ luật vốn.",
     "loi_doc": "Với nhà đầu tư, tăng trưởng cao kéo theo đầu tư công, xây dựng, tín dụng. Quý ba năm nay, công nghiệp và xây dựng tăng mười hai phẩy năm phần trăm. Nhưng chạy nhanh cũng dễ nóng, nhất là tín dụng, lạm phát và tỷ giá. Nên em vẫn chọn doanh nghiệp hưởng lợi thật, và giữ kỷ luật vốn."
    },
    {
     "chu_to": "KHÔNG PHẢI KHẨU HIỆU",
-    "anh": "Hanoi Long Bien bridge sunrise",
+    "anh": [
+     "Hanoi Long Bien bridge sunrise",
+     "Ha Long Bay",
+     "Golden Bridge Da Nang"
+    ],
     "loi": "Vậy nên, mười phần trăm không phải tham vọng cho đẹp. Nó là tốc độ tối thiểu để kịp giàu trước khi già. Và mười năm tới, có lẽ là cơ hội lớn nhất của cả thế hệ chúng ta.",
     "loi_doc": "Vậy nên, mười phần trăm không phải tham vọng cho đẹp. Nó là tốc độ tối thiểu để kịp giàu trước khi già. Và mười năm tới, có lẽ là cơ hội lớn nhất của cả thế hệ chúng ta."
    }
