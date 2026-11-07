@@ -628,5 +628,40 @@
 "Dòng tiền tài chính",
 "Tiền ra vào giữa doanh nghiệp với chủ nợ và cổ đông: vay, trả nợ, phát hành, cổ tức.",
 "dong-tien-tai-chinh-la-gi"
+],
+[
+"Phải trả người lao động",
+"Lương, thưởng đã tính cho nhân viên nhưng chưa chi trả tại ngày lập báo cáo.",
+"phai-tra-nguoi-lao-dong-la-gi"
+],
+[
+"Chi phí phải trả",
+"Chi phí đã ghi nhận vào kỳ nhưng chưa có hóa đơn hoặc chưa trả tiền (chi phí trích trước).",
+"chi-phi-phai-tra-la-gi"
+],
+[
+"Trả trước cho người bán",
+"Tiền doanh nghiệp ứng trước cho nhà cung cấp, nhà thầu khi chưa nhận hàng hay dịch vụ.",
+"tra-truoc-cho-nguoi-ban-la-gi"
+],
+[
+"Quỹ khen thưởng phúc lợi",
+"Quỹ trích từ lợi nhuận sau thuế để thưởng và chi phúc lợi cho người lao động, ghi ở nợ phải trả.",
+"quy-khen-thuong-phuc-loi-la-gi"
+],
+[
+"Dự phòng phải thu khó đòi",
+"Khoản trích cho các khoản phải thu có nguy cơ không thu hồi được, ghi âm trừ vào phải thu.",
+"du-phong-phai-thu-kho-doi-la-gi"
+],
+[
+"Phải thu khác",
+"Các khoản phải thu không đến từ bán hàng: đặt cọc, ký quỹ, tạm ứng, cho mượn, lãi dự thu.",
+"phai-thu-khac-la-gi"
+],
+[
+"Lợi nhuận thuần từ HĐKD",
+"Lợi nhuận từ hoạt động thường xuyên (bán hàng, tài chính, liên kết) trước lợi nhuận khác và thuế.",
+"loi-nhuan-thuan-tu-hoat-dong-kinh-doanh-la-gi"
 ]
 ]

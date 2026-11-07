@@ -30065,5 +30065,632 @@
    "tam-ly-fomo-va-hoang-loan",
    "ty-trong-tien-mat-trong-danh-muc"
   ]
+ },
+ {
+  "slug": "phai-tra-nguoi-lao-dong-la-gi",
+  "kw": "phải trả người lao động là gì",
+  "grp": 3,
+  "title": "Phải trả người lao động là gì? Đọc dòng lương thưởng chưa trả",
+  "desc": "Phải trả người lao động là gì, vì sao số dư cuối năm thường cao rồi giảm mạnh quý 1. Ví dụ HPG, POW, VNM, FRT, PLX đến 30/9/2026.",
+  "body": [
+   [
+    "p",
+    "<b>Phải trả người lao động</b> là khoản nợ ngắn hạn trên bảng cân đối kế toán, ghi nhận tiền lương, tiền công, thưởng và các khoản phụ cấp doanh nghiệp đã tính cho nhân viên nhưng đến ngày lập báo cáo chưa chi trả. Đây là một khoản nợ \"không lãi\", phát sinh tự nhiên trong hoạt động, giống như <a href=\"/f0/phai-tra-nguoi-ban-la-gi.html\">phải trả người bán</a>."
+   ],
+   [
+    "h2",
+    "Vì sao doanh nghiệp có khoản này"
+   ],
+   [
+    "p",
+    "Lương thường được tính theo tháng nhưng trả vào đầu tháng sau. Thưởng cuối năm, lương tháng 13, thưởng theo kết quả kinh doanh thường được trích trước vào chi phí rồi chi vào dịp Tết hoặc sau khi quyết toán. Vì vậy vào ngày 31/12, số dư phải trả người lao động thường cao nhất trong năm, rồi giảm mạnh ở quý 1 khi tiền thưởng đã được chi."
+   ],
+   [
+    "h2",
+    "Ví dụ thực tế"
+   ],
+   [
+    "ul",
+    [
+     "HPG: 995,9 tỷ đồng tại 31/12/2025, giảm còn 343,8 tỷ tại 31/3/2026 và 374,9 tỷ tại 30/9/2026 – khoảng 650 tỷ đã chi trong quý 1, phần lớn là thưởng cuối năm.",
+     "POW: 472,5 tỷ tại 31/12/2025, còn 170,1 tỷ tại 31/3/2026.",
+     "VNM: 321,6 tỷ tại 31/12/2025, còn 231,8 tỷ tại 31/3/2026, rồi 302,4 tỷ tại 30/9/2026.",
+     "FRT: 1.546,5 tỷ tại 30/9/2026, tăng 43,8% so với 1.075,8 tỷ cùng kỳ – chuỗi bán lẻ nhiều nhân viên, lương thưởng gắn doanh số tăng theo quy mô.",
+     "PLX: 2.023,7 tỷ tại 30/9/2026 – doanh nghiệp có mạng lưới cửa hàng lớn nên số dư cao."
+    ]
+   ],
+   [
+    "p",
+    "Số liệu từ báo cáo tài chính hợp nhất các kỳ đến 30/9/2026, đơn vị tỷ đồng."
+   ],
+   [
+    "h2",
+    "Đọc dòng này thế nào"
+   ],
+   [
+    "ul",
+    [
+     "So cùng thời điểm các năm (30/9 với 30/9) thay vì so quý liền kề, vì khoản này có tính mùa vụ rõ.",
+     "Số dư tăng cùng doanh thu, lợi nhuận là bình thường: doanh nghiệp làm tốt thì trích thưởng nhiều hơn.",
+     "Số dư tăng mạnh trong khi doanh thu đi ngang hoặc giảm, kéo dài nhiều kỳ, có thể là dấu hiệu chậm trả lương – cần xem thêm dòng tiền kinh doanh và tiền mặt.",
+     "Dòng này tách biệt với quỹ khen thưởng phúc lợi: quỹ trích từ lợi nhuận sau thuế, còn lương thưởng ở đây đã nằm trong chi phí trước thuế."
+    ]
+   ],
+   [
+    "p",
+    "Khi đọc báo cáo, đặt dòng này cạnh <a href=\"/f0/chi-phi-ban-hang-va-quan-ly-doanh-nghiep.html\">chi phí bán hàng và quản lý doanh nghiệp</a> để hiểu cơ cấu chi phí nhân sự của doanh nghiệp."
+   ]
+  ],
+  "faq": [
+   [
+    "Phải trả người lao động có phải là nợ vay không?",
+    "Không. Đây là nợ chiếm dụng không phải trả lãi, phát sinh do thời điểm trả lương chậm hơn thời điểm ghi nhận chi phí. Nó không tính vào nợ vay khi tính hệ số nợ vay trên vốn chủ."
+   ],
+   [
+    "Vì sao số dư phải trả người lao động quý 1 thường thấp?",
+    "Vì thưởng cuối năm và lương tháng 13 đã trích tại 31/12 được chi vào dịp Tết, nằm trong quý 1. Ví dụ HPG giảm từ 995,9 tỷ xuống 343,8 tỷ sau quý 1/2026."
+   ],
+   [
+    "Số dư này tăng mạnh có đáng lo không?",
+    "Chỉ đáng chú ý khi tăng liên tục trong khi kinh doanh không tăng và tiền mặt eo hẹp. Nếu tăng cùng doanh thu và lợi nhuận thì thường là thưởng theo kết quả."
+   ]
+  ],
+  "rel": [
+   "phai-tra-nguoi-ban-la-gi",
+   "chi-phi-ban-hang-va-quan-ly-doanh-nghiep",
+   "bang-can-doi-ke-toan-la-gi",
+   "quy-khen-thuong-phuc-loi-la-gi"
+  ]
+ },
+ {
+  "slug": "chi-phi-phai-tra-la-gi",
+  "kw": "chi phí phải trả là gì",
+  "grp": 3,
+  "title": "Chi phí phải trả là gì? Khoản trích trước trên bảng cân đối",
+  "desc": "Chi phí phải trả là chi phí đã ghi nhận nhưng chưa có hóa đơn, chưa trả tiền. Cách đọc, khác phải trả người bán, ví dụ PLX, CTD, GAS, VNM.",
+  "body": [
+   [
+    "p",
+    "<b>Chi phí phải trả</b> (còn gọi là chi phí trích trước) là khoản nợ ngắn hạn ghi nhận những chi phí đã phát sinh, đã tính vào kết quả kinh doanh của kỳ, nhưng doanh nghiệp chưa nhận đủ hóa đơn hoặc chưa đến hạn thanh toán. Nguyên tắc kế toán dồn tích yêu cầu chi phí phải ghi vào đúng kỳ tạo ra doanh thu, kể cả khi tiền chưa chi."
+   ],
+   [
+    "h2",
+    "Thường gồm những gì"
+   ],
+   [
+    "ul",
+    [
+     "Lãi vay đã phát sinh nhưng chưa đến kỳ trả lãi.",
+     "Chi phí công trình, khối lượng xây lắp đã hoàn thành nhưng nhà thầu phụ chưa xuất hóa đơn.",
+     "Chi phí vận chuyển, khuyến mãi, chiết khấu thương mại cho đại lý đã cam kết.",
+     "Chi phí điện, nước, sửa chữa lớn trích trước."
+    ]
+   ],
+   [
+    "h2",
+    "Khác gì phải trả người bán"
+   ],
+   [
+    "p",
+    "<a href=\"/f0/phai-tra-nguoi-ban-la-gi.html\">Phải trả người bán</a> là khoản nợ đã có hóa đơn rõ ràng của nhà cung cấp. Chi phí phải trả là khoản doanh nghiệp tự ước tính và trích trước khi chưa có chứng từ cuối cùng. Vì là ước tính, khoản này có thể bị điều chỉnh khi hóa đơn thật về."
+   ],
+   [
+    "h2",
+    "Ví dụ thực tế"
+   ],
+   [
+    "ul",
+    [
+     "PLX: 4.465,0 tỷ tại 31/12/2025, giảm còn 652,9 tỷ tại 31/3/2026, rồi lên 3.209,6 tỷ tại 30/6 và 2.482,8 tỷ tại 30/9/2026 – biến động rất mạnh theo từng kỳ trích và chi.",
+     "CTD: 4.445,3 tỷ tại 30/9/2026, tương đương khoảng 39% doanh thu quý 3 (11.268,5 tỷ) – doanh nghiệp xây dựng trích trước chi phí khối lượng công trình đã làm.",
+     "GAS: 4.964,1 tỷ tại 30/9/2026, cao hơn mức 3.260,3 tỷ cùng kỳ năm trước.",
+     "VNM: 2.474,0 tỷ tại 30/9/2026, so với 1.754,1 tỷ tại 31/12/2025."
+    ]
+   ],
+   [
+    "p",
+    "Số liệu từ báo cáo tài chính hợp nhất các kỳ đến 30/9/2026, đơn vị tỷ đồng."
+   ],
+   [
+    "h2",
+    "Đọc dòng này thế nào"
+   ],
+   [
+    "ul",
+    [
+     "Chi phí phải trả lớn nghĩa là một phần chi phí đã nằm trong lợi nhuận nhưng tiền chưa ra – dòng tiền kinh doanh kỳ này có thể tốt hơn lợi nhuận, và kỳ sau sẽ phải chi.",
+     "Giảm mạnh bất thường có thể đi kèm việc hoàn nhập khoản trích thừa, làm lợi nhuận kỳ đó cao lên. Khi lợi nhuận tăng đột biến, xem thuyết minh có hoàn nhập chi phí trích trước hay không.",
+     "Với doanh nghiệp xây dựng, so chi phí phải trả với doanh thu và khoản phải thu để hiểu tiến độ thanh toán với chủ đầu tư và nhà thầu phụ."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Chi phí phải trả có phải nợ vay không?",
+    "Không. Đây là nợ ngắn hạn không lãi, phát sinh do chi phí ghi nhận trước khi trả tiền. Riêng phần lãi vay trích trước thì gắn với khoản vay nhưng vẫn không tính là nợ gốc."
+   ],
+   [
+    "Vì sao chi phí phải trả ảnh hưởng tới lợi nhuận?",
+    "Vì khoản trích trước đã tính vào chi phí kỳ này. Nếu trích nhiều, lợi nhuận kỳ này giảm; nếu sau đó trích thừa và hoàn nhập, lợi nhuận kỳ sau tăng."
+   ],
+   [
+    "Xem chi tiết chi phí phải trả ở đâu?",
+    "Trong thuyết minh báo cáo tài chính, mục chi phí phải trả ngắn hạn, thường chia theo từng loại như lãi vay, chi phí công trình, chi phí bán hàng."
+   ]
+  ],
+  "rel": [
+   "phai-tra-nguoi-ban-la-gi",
+   "chi-phi-tra-truoc-la-gi",
+   "dong-tien-kinh-doanh-la-gi",
+   "bang-can-doi-ke-toan-la-gi"
+  ]
+ },
+ {
+  "slug": "tra-truoc-cho-nguoi-ban-la-gi",
+  "kw": "trả trước cho người bán là gì",
+  "grp": 3,
+  "title": "Trả trước cho người bán là gì? Tiền ứng trước nhà cung cấp",
+  "desc": "Trả trước cho người bán là tiền doanh nghiệp ứng trước cho nhà cung cấp, nhà thầu. Cách đọc, khi nào cần để ý, ví dụ HPG, CTD, VJC, KDH.",
+  "body": [
+   [
+    "p",
+    "<b>Trả trước cho người bán</b> là khoản tiền doanh nghiệp đã chuyển trước cho nhà cung cấp, nhà thầu hoặc đối tác nhưng chưa nhận được hàng hóa, dịch vụ hay khối lượng công việc tương ứng. Trên bảng cân đối kế toán, khoản này nằm trong nhóm các khoản phải thu ngắn hạn – vì doanh nghiệp có quyền nhận lại hàng hoặc tiền."
+   ],
+   [
+    "p",
+    "Đây là chiều ngược lại của <a href=\"/f0/nguoi-mua-tra-tien-truoc-la-gi.html\">người mua trả tiền trước</a>: một bên ứng tiền, bên kia giữ tiền."
+   ],
+   [
+    "h2",
+    "Vì sao phải trả trước"
+   ],
+   [
+    "ul",
+    [
+     "Nhập nguyên liệu, máy móc phải đặt cọc trước khi giao hàng.",
+     "Ứng vốn cho nhà thầu phụ, nhà thầu xây dựng theo hợp đồng.",
+     "Doanh nghiệp bất động sản ứng tiền đền bù, giải phóng mặt bằng, đặt cọc mua quỹ đất.",
+     "Hãng bay ứng trước cho nhà sản xuất, nhà cung cấp dịch vụ kỹ thuật."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ thực tế"
+   ],
+   [
+    "ul",
+    [
+     "HPG: 3.805,1 tỷ đồng tại 30/9/2026, gấp khoảng 2 lần mức 1.878,1 tỷ tại 31/12/2025 – thời điểm doanh nghiệp đẩy mạnh nhập nguyên liệu và đầu tư.",
+     "CTD: 3.112,5 tỷ tại 30/9/2026, tăng 77,4% so với 1.754,8 tỷ cuối năm 2025 – nhà thầu xây dựng ứng vốn cho thầu phụ khi khối lượng công trình tăng.",
+     "VJC: 3.086,6 tỷ tại 30/9/2026, so với 1.874,1 tỷ cuối năm 2025.",
+     "KDH: 1.953,0 tỷ tại 30/9/2026, giảm từ 3.279,5 tỷ cuối năm 2025 – với doanh nghiệp bất động sản, khoản này thường gắn với quỹ đất, đền bù."
+    ]
+   ],
+   [
+    "p",
+    "Số liệu từ báo cáo tài chính hợp nhất các kỳ đến 30/9/2026, đơn vị tỷ đồng."
+   ],
+   [
+    "h2",
+    "Khi nào cần để ý"
+   ],
+   [
+    "ul",
+    [
+     "Khoản trả trước lớn so với tổng tài sản và kéo dài nhiều năm không giảm: tiền đã ra nhưng chưa thành hàng hóa hay dự án.",
+     "Trả trước cho bên liên quan với số tiền lớn: đọc thuyết minh xem đối tác là ai.",
+     "Có dự phòng phải thu khó đòi trích cho khoản trả trước: dấu hiệu đối tác khó hoàn trả.",
+     "Ngược lại, trả trước tăng cùng kế hoạch mở rộng sản xuất rõ ràng là bình thường."
+    ]
+   ],
+   [
+    "p",
+    "Trả trước cho người bán làm tăng nhu cầu <a href=\"/f0/von-luu-dong-la-gi.html\">vốn lưu động</a>, nên thường làm dòng tiền kinh doanh kỳ đó yếu đi."
+   ]
+  ],
+  "faq": [
+   [
+    "Trả trước cho người bán là tài sản hay nợ?",
+    "Là tài sản, nằm trong các khoản phải thu ngắn hạn (hoặc dài hạn nếu thời hạn trên 12 tháng), vì doanh nghiệp có quyền nhận hàng hoặc nhận lại tiền."
+   ],
+   [
+    "Khoản này tăng có tốt không?",
+    "Tùy bối cảnh. Tăng vì chuẩn bị sản xuất, thi công nhiều hơn là bình thường. Tăng kéo dài, không chuyển thành hàng tồn kho hay tài sản, hoặc trả trước cho bên liên quan lớn thì cần đọc kỹ thuyết minh."
+   ],
+   [
+    "Trả trước cho người bán khác chi phí trả trước thế nào?",
+    "Trả trước cho người bán là tiền ứng cho đối tác, sẽ chuyển thành hàng hóa, dịch vụ. Chi phí trả trước là chi phí đã trả và được phân bổ dần vào nhiều kỳ, như tiền thuê, công cụ dụng cụ."
+   ]
+  ],
+  "rel": [
+   "nguoi-mua-tra-tien-truoc-la-gi",
+   "khoan-phai-thu-khach-hang-la-gi",
+   "chi-phi-tra-truoc-la-gi",
+   "von-luu-dong-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Trả trước cho người bán là tài sản, nằm trong phải thu.",
+     "Tăng vì mở rộng sản xuất, thi công là bình thường; kéo dài không chuyển thành hàng hay tài sản thì cần đọc thuyết minh.",
+     "Luôn xem đối tác có phải bên liên quan không."
+    ]
+   ]
+  ]
+ },
+ {
+  "slug": "quy-khen-thuong-phuc-loi-la-gi",
+  "kw": "quỹ khen thưởng phúc lợi là gì",
+  "grp": 3,
+  "title": "Quỹ khen thưởng phúc lợi là gì? Vì sao nằm ở nợ phải trả",
+  "desc": "Quỹ khen thưởng phúc lợi trích từ lợi nhuận sau thuế để thưởng, phúc lợi cho nhân viên. Vì sao là nợ phải trả, ví dụ VNM, GAS, PLX, HPG.",
+  "body": [
+   [
+    "p",
+    "<b>Quỹ khen thưởng, phúc lợi</b> là quỹ doanh nghiệp trích từ lợi nhuận sau thuế, theo nghị quyết đại hội đồng cổ đông, để thưởng cho người lao động và chi cho các hoạt động phúc lợi như tham quan, hỗ trợ khó khăn, xây dựng công trình phúc lợi. Điểm nhiều người mới bất ngờ: trên bảng cân đối kế toán theo chuẩn mực Việt Nam, quỹ này nằm ở <b>nợ phải trả</b>, không nằm trong vốn chủ sở hữu."
+   ],
+   [
+    "h2",
+    "Vì sao là nợ phải trả"
+   ],
+   [
+    "p",
+    "Khi đại hội cổ đông quyết định trích quỹ, phần lợi nhuận đó không còn thuộc về cổ đông nữa mà là nghĩa vụ doanh nghiệp phải chi cho người lao động. Vì vậy số tiền được chuyển từ <a href=\"/f0/loi-nhuan-sau-thue-chua-phan-phoi-la-gi.html\">lợi nhuận sau thuế chưa phân phối</a> sang nợ phải trả. Đây cũng là lý do vốn chủ sở hữu giảm sau mỗi lần trích quỹ, giống như khi chia <a href=\"/f0/co-tuc-la-gi.html\">cổ tức</a>."
+   ],
+   [
+    "h2",
+    "Khác gì lương thưởng thông thường"
+   ],
+   [
+    "ul",
+    [
+     "Lương, thưởng theo hợp đồng: tính vào chi phí trước thuế, làm giảm lợi nhuận.",
+     "Quỹ khen thưởng phúc lợi: trích sau thuế, không làm giảm lợi nhuận trên báo cáo kết quả kinh doanh nhưng làm giảm phần lợi nhuận còn lại cho cổ đông."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ thực tế"
+   ],
+   [
+    "ul",
+    [
+     "VNM: 1.172,3 tỷ đồng tại 30/9/2026, tăng từ 749,5 tỷ tại 31/3/2026 sau khi trích quỹ từ lợi nhuận năm trước.",
+     "PLX: 1.161,6 tỷ tại 30/6/2026, giảm còn 779,9 tỷ tại 30/9/2026 – khoảng 381,7 tỷ đã được chi trong quý 3.",
+     "GAS: 875,6 tỷ tại 30/9/2026.",
+     "HPG: 721,8 tỷ tại 30/9/2026, thấp hơn mức 1.105,1 tỷ cùng kỳ năm trước.",
+     "Nhiều doanh nghiệp tư nhân trích rất ít: VJC 14,4 tỷ, FRT 6,4 tỷ tại 30/9/2026."
+    ]
+   ],
+   [
+    "p",
+    "Số liệu từ báo cáo tài chính hợp nhất các kỳ đến 30/9/2026, đơn vị tỷ đồng."
+   ],
+   [
+    "h2",
+    "Nhà đầu tư nên để ý gì"
+   ],
+   [
+    "ul",
+    [
+     "Tỷ lệ trích quỹ trên lợi nhuận: trích quá cao làm giảm phần dành cho cổ đông; xem tờ trình đại hội cổ đông hằng năm.",
+     "Doanh nghiệp nhà nước thường trích theo quy định riêng, mức trích có thể cao hơn doanh nghiệp tư nhân.",
+     "Khi tính ROE hay giá trị sổ sách, quỹ này đã nằm ngoài vốn chủ nên không cần trừ thêm."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Quỹ khen thưởng phúc lợi có làm giảm lợi nhuận không?",
+    "Không làm giảm lợi nhuận sau thuế trên báo cáo kết quả kinh doanh, vì được trích sau thuế. Nhưng làm giảm lợi nhuận chưa phân phối, tức phần thuộc về cổ đông."
+   ],
+   [
+    "Ai quyết định mức trích quỹ?",
+    "Đại hội đồng cổ đông thông qua phương án phân phối lợi nhuận hằng năm, trong đó có tỷ lệ trích quỹ khen thưởng, phúc lợi."
+   ],
+   [
+    "Vì sao quỹ này tăng giảm theo quý?",
+    "Tăng khi doanh nghiệp trích quỹ sau đại hội cổ đông, giảm dần khi chi thưởng và phúc lợi cho người lao động trong năm."
+   ]
+  ],
+  "rel": [
+   "loi-nhuan-sau-thue-chua-phan-phoi-la-gi",
+   "quy-dau-tu-phat-trien-la-gi",
+   "von-chu-so-huu-la-gi",
+   "phai-tra-nguoi-lao-dong-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Quỹ trích sau thuế theo nghị quyết đại hội cổ đông.",
+     "Nằm ở nợ phải trả, không thuộc vốn chủ.",
+     "Mức trích cao làm giảm phần lợi nhuận dành cho cổ đông."
+    ]
+   ]
+  ]
+ },
+ {
+  "slug": "du-phong-phai-thu-kho-doi-la-gi",
+  "kw": "dự phòng phải thu khó đòi là gì",
+  "grp": 3,
+  "title": "Dự phòng phải thu khó đòi là gì? Cách đọc và cờ đỏ",
+  "desc": "Dự phòng phải thu khó đòi là khoản trích cho nợ khách hàng có nguy cơ không thu được. Cách tính tỷ lệ, cờ đỏ, ví dụ HDG, SAB, CTD, GAS.",
+  "body": [
+   [
+    "p",
+    "<b>Dự phòng phải thu khó đòi</b> là khoản doanh nghiệp trích lập cho những khoản phải thu có nguy cơ không thu hồi được, như khách hàng quá hạn lâu, đang giải thể, phá sản hoặc mất khả năng thanh toán. Trên bảng cân đối kế toán, dự phòng được ghi số âm, trừ thẳng vào nhóm các khoản phải thu. Khi trích thêm, phần trích ghi vào chi phí quản lý doanh nghiệp, làm giảm lợi nhuận."
+   ],
+   [
+    "h2",
+    "Cách đọc nhanh"
+   ],
+   [
+    "p",
+    "Lấy số dự phòng chia cho <a href=\"/f0/khoan-phai-thu-khach-hang-la-gi.html\">phải thu khách hàng</a> để ra tỷ lệ tương đối. Đây chỉ là phép ước nhanh, vì dự phòng có thể trích cho cả phải thu khác và trả trước cho người bán; muốn chính xác cần đọc thuyết minh."
+   ],
+   [
+    "h2",
+    "Ví dụ tại 30/9/2026"
+   ],
+   [
+    "ul",
+    [
+     "VNM: dự phòng 20,3 tỷ so với phải thu khách hàng 5.225,0 tỷ – khoảng 0,4%, nợ khó đòi không đáng kể.",
+     "PLX: 1.433,8 tỷ so với 19.037,2 tỷ – khoảng 7,5%.",
+     "CTD: 1.328,6 tỷ so với 16.041,3 tỷ – khoảng 8,3%; doanh nghiệp xây dựng thường có công nợ chủ đầu tư chậm trả.",
+     "GAS: 1.833,8 tỷ so với 20.288,3 tỷ – khoảng 9,0%; dự phòng từng ở mức 2.334,0 tỷ tại 31/3/2026 rồi giảm khoảng 500 tỷ trong quý 2.",
+     "HDG: 939,9 tỷ so với 1.561,7 tỷ – khoảng 60%, và dự phòng đã tăng từ 588,8 tỷ (30/9/2025) lên 939,9 tỷ (30/9/2026), tức tăng 59,6% trong một năm.",
+     "SAB: 576,2 tỷ so với 647,4 tỷ – tỷ lệ cao nhưng số dư gần như đứng yên qua nhiều quý, thường là khoản nợ cũ đã trích gần đủ."
+    ]
+   ],
+   [
+    "p",
+    "Số liệu từ báo cáo tài chính hợp nhất các kỳ đến 30/9/2026, đơn vị tỷ đồng."
+   ],
+   [
+    "h2",
+    "Cờ đỏ cần để ý"
+   ],
+   [
+    "ul",
+    [
+     "Dự phòng tăng nhanh nhiều quý liên tiếp: khách hàng lớn đang chậm trả, lợi nhuận sẽ còn bị ăn mòn.",
+     "Phải thu tăng mạnh nhưng dự phòng không đổi: có thể doanh nghiệp chưa trích đủ.",
+     "Dự phòng giảm đột ngột: có thể do thu hồi được nợ (<a href=\"/f0/hoan-nhap-du-phong-la-gi.html\">hoàn nhập dự phòng</a>, cộng vào lợi nhuận) hoặc xóa nợ – đọc thuyết minh để biết."
+    ]
+   ],
+   [
+    "p",
+    "Kết hợp với <a href=\"/f0/ky-thu-tien-binh-quan.html\">kỳ thu tiền bình quân</a> để thấy doanh nghiệp đang thu tiền nhanh hay chậm đi."
+   ]
+  ],
+  "faq": [
+   [
+    "Dự phòng phải thu khó đòi có phải là đã mất tiền không?",
+    "Chưa hẳn. Dự phòng là ước tính khả năng không thu được. Nếu sau đó đòi được nợ, doanh nghiệp hoàn nhập dự phòng và ghi tăng lợi nhuận."
+   ],
+   [
+    "Tỷ lệ dự phòng bao nhiêu là cao?",
+    "Không có ngưỡng chung, phụ thuộc ngành. Nên so với chính doanh nghiệp qua nhiều năm và với doanh nghiệp cùng ngành; chú ý xu hướng tăng hơn là con số một kỳ."
+   ],
+   [
+    "Dự phòng phải thu được ghi vào chi phí nào?",
+    "Thường ghi vào chi phí quản lý doanh nghiệp. Vì vậy chi phí quản lý tăng đột biến có thể do trích dự phòng nợ khó đòi."
+   ]
+  ],
+  "rel": [
+   "khoan-phai-thu-khach-hang-la-gi",
+   "hoan-nhap-du-phong-la-gi",
+   "ky-thu-tien-binh-quan",
+   "chi-phi-ban-hang-va-quan-ly-doanh-nghiep"
+  ],
+  "add": [
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Dự phòng ghi âm, trừ vào phải thu, phần trích thêm làm giảm lợi nhuận.",
+     "Xem xu hướng nhiều quý, không chỉ một kỳ.",
+     "Dự phòng giảm có thể là thu hồi được nợ hoặc xóa nợ – đọc thuyết minh."
+    ]
+   ]
+  ]
+ },
+ {
+  "slug": "phai-thu-khac-la-gi",
+  "kw": "phải thu khác là gì",
+  "grp": 3,
+  "title": "Phải thu khác là gì? Dòng nhỏ trên BCTC cần đọc kỹ",
+  "desc": "Phải thu khác gồm đặt cọc, ký quỹ, tạm ứng, cho bên khác mượn tiền. Vì sao cần đọc thuyết minh, ví dụ VJC, GAS, HAG, VNM đến 30/9/2026.",
+  "body": [
+   [
+    "p",
+    "<b>Các khoản phải thu khác</b> là nhóm phải thu không đến từ việc bán hàng cho khách hàng. Trên bảng cân đối kế toán, dòng này nằm cạnh <a href=\"/f0/khoan-phai-thu-khach-hang-la-gi.html\">phải thu khách hàng</a> và <a href=\"/f0/tra-truoc-cho-nguoi-ban-la-gi.html\">trả trước cho người bán</a>. Với nhiều doanh nghiệp, đây chỉ là khoản nhỏ; nhưng có trường hợp nó lớn ngang hoặc hơn phải thu khách hàng, khi đó nhất định phải đọc thuyết minh."
+   ],
+   [
+    "h2",
+    "Thường gồm những gì"
+   ],
+   [
+    "ul",
+    [
+     "Tiền đặt cọc, ký quỹ, ký cược cho đối tác.",
+     "Tạm ứng cho nhân viên đi công tác, mua hàng.",
+     "Lãi tiền gửi, cổ tức đã đến kỳ nhưng chưa nhận.",
+     "Khoản cho bên khác mượn tiền, hỗ trợ vốn, hợp tác kinh doanh.",
+     "Khoản phải thu từ thanh lý tài sản, chuyển nhượng dự án hay cổ phần."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ tại 30/9/2026"
+   ],
+   [
+    "ul",
+    [
+     "VJC: 17.378,7 tỷ đồng, so với phải thu khách hàng 22.575,1 tỷ – với hãng bay, nhóm này thường gồm tiền ký quỹ thuê máy bay và các khoản liên quan bảo dưỡng.",
+     "GAS: 6.942,5 tỷ, giảm từ 10.125,0 tỷ tại 30/6/2026.",
+     "HAG: 1.491,1 tỷ, so với 623,1 tỷ tại 31/3/2026 và 3.275,9 tỷ tại 30/9/2025 – biến động lớn qua từng kỳ.",
+     "VNM: 440,1 tỷ, so với 915,9 tỷ tại 31/12/2025 – khoản nhỏ so với quy mô, phần lớn là lãi tiền gửi dự thu.",
+     "DGW: chỉ 25,2 tỷ, trong khi cùng kỳ năm trước là 1.093,0 tỷ."
+    ]
+   ],
+   [
+    "p",
+    "Số liệu từ báo cáo tài chính hợp nhất các kỳ đến 30/9/2026, đơn vị tỷ đồng."
+   ],
+   [
+    "h2",
+    "Vì sao cần đọc kỹ"
+   ],
+   [
+    "ul",
+    [
+     "Phải thu khác lớn, kéo dài, đối tượng là bên liên quan: tiền của doanh nghiệp có thể đang được dùng ngoài hoạt động kinh doanh chính.",
+     "Khoản cho mượn, hợp tác đầu tư không có tài sản đảm bảo: rủi ro không thu hồi cao hơn bán hàng thông thường.",
+     "Biến động lớn giữa các kỳ: tìm nguyên nhân trong thuyết minh (chuyển nhượng, thu hồi, phân loại lại).",
+     "Ngược lại, khoản ký quỹ đặc thù ngành như hàng không, hay lãi tiền gửi dự thu của doanh nghiệp nhiều tiền mặt, là bình thường."
+    ]
+   ],
+   [
+    "p",
+    "Đọc dòng này trên <a href=\"/f0/bang-can-doi-ke-toan-la-gi.html\">bảng cân đối kế toán</a> cùng dự phòng phải thu để có bức tranh đầy đủ về chất lượng tài sản ngắn hạn."
+   ]
+  ],
+  "faq": [
+   [
+    "Phải thu khác có tính vào vòng quay khoản phải thu không?",
+    "Thường không. Vòng quay khoản phải thu và kỳ thu tiền bình quân dùng phải thu khách hàng so với doanh thu, vì phải thu khác không gắn với bán hàng."
+   ],
+   [
+    "Phải thu khác lớn có phải dấu hiệu xấu?",
+    "Không phải luôn luôn. Cần xem thuyết minh: ký quỹ đặc thù ngành hay lãi dự thu là bình thường; cho bên liên quan mượn tiền lớn, kéo dài thì cần thận trọng."
+   ],
+   [
+    "Xem chi tiết phải thu khác ở đâu?",
+    "Trong thuyết minh báo cáo tài chính, mục phải thu ngắn hạn khác và dài hạn khác, thường liệt kê theo nội dung và theo đối tượng, có ghi bên liên quan."
+   ]
+  ],
+  "rel": [
+   "khoan-phai-thu-khach-hang-la-gi",
+   "tra-truoc-cho-nguoi-ban-la-gi",
+   "du-phong-phai-thu-kho-doi-la-gi",
+   "bang-can-doi-ke-toan-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Phải thu khác không đến từ bán hàng.",
+     "Khoản lớn, kéo dài, với bên liên quan cần thận trọng.",
+     "Ký quỹ đặc thù ngành và lãi dự thu thường là bình thường."
+    ]
+   ]
+  ]
+ },
+ {
+  "slug": "loi-nhuan-thuan-tu-hoat-dong-kinh-doanh-la-gi",
+  "kw": "lợi nhuận thuần từ hoạt động kinh doanh là gì",
+  "grp": 3,
+  "title": "Lợi nhuận thuần từ hoạt động kinh doanh là gì? Cách tính",
+  "desc": "Lợi nhuận thuần từ HĐKD = lãi gộp + tài chính + liên kết − chi phí bán hàng, quản lý. Cách đọc, ví dụ VNM, REE, HSG, GMD, KDH năm 2026.",
+  "body": [
+   [
+    "p",
+    "<b>Lợi nhuận thuần từ hoạt động kinh doanh</b> là dòng lợi nhuận trên báo cáo kết quả kinh doanh, nằm ngay trước phần thu nhập khác, chi phí khác. Nó cho biết doanh nghiệp làm ra bao nhiêu lợi nhuận từ hoạt động thường xuyên – gồm cả bán hàng và hoạt động tài chính – trước khi tính các khoản bất thường và thuế."
+   ],
+   [
+    "h2",
+    "Công thức"
+   ],
+   [
+    "p",
+    "Lợi nhuận thuần từ HĐKD = <a href=\"/f0/bien-loi-nhuan-gop-la-gi.html\">lợi nhuận gộp</a> + doanh thu hoạt động tài chính − chi phí tài chính + lãi (lỗ) công ty liên kết − chi phí bán hàng − chi phí quản lý doanh nghiệp."
+   ],
+   [
+    "p",
+    "Sau đó cộng <i>lợi nhuận khác</i> (thu nhập khác − chi phí khác) ra lợi nhuận kế toán trước thuế."
+   ],
+   [
+    "h2",
+    "Ví dụ quý 3/2026"
+   ],
+   [
+    "ul",
+    [
+     "VNM: lợi nhuận gộp 7.636,5 tỷ đồng, lợi nhuận thuần từ HĐKD 3.702,7 tỷ (48,5% lãi gộp) – chi phí bán hàng lớn của doanh nghiệp tiêu dùng ăn khoảng một nửa lãi gộp. Lợi nhuận khác chỉ −8,7 tỷ.",
+     "REE: lãi gộp 1.088,0 tỷ, lợi nhuận thuần 1.086,6 tỷ – gần bằng nhau vì 219,7 tỷ lãi từ công ty liên kết và 212,9 tỷ doanh thu tài chính bù lại chi phí.",
+     "HSG: lãi gộp 1.249,9 tỷ nhưng lợi nhuận thuần chỉ 96,0 tỷ (7,7%) – chi phí bán hàng, quản lý và tài chính chiếm gần hết."
+    ]
+   ],
+   [
+    "h2",
+    "Khi lợi nhuận thuần lớn hơn cả lãi gộp"
+   ],
+   [
+    "ul",
+    [
+     "GMD quý 2/2026: lãi gộp 924,3 tỷ, lợi nhuận thuần 1.597,0 tỷ – nhờ 689,6 tỷ doanh thu tài chính và 383,0 tỷ lãi liên kết.",
+     "KDH quý 2/2026: lãi gộp chỉ 81,0 tỷ nhưng lợi nhuận thuần 824,9 tỷ, vì doanh thu tài chính 906,2 tỷ."
+    ]
+   ],
+   [
+    "p",
+    "Những trường hợp này cho thấy lợi nhuận kỳ đó đến chủ yếu từ hoạt động tài chính, không phải bán hàng. Cần đọc thuyết minh doanh thu tài chính để biết có lặp lại không (xem <a href=\"/f0/doanh-thu-hoat-dong-tai-chinh-la-gi.html\">doanh thu hoạt động tài chính</a>)."
+   ],
+   [
+    "p",
+    "Số liệu từ báo cáo tài chính hợp nhất các kỳ đến 30/9/2026, đơn vị tỷ đồng."
+   ],
+   [
+    "h2",
+    "Đọc dòng này thế nào"
+   ],
+   [
+    "ul",
+    [
+     "So lợi nhuận thuần với lãi gộp để thấy chi phí vận hành ăn bao nhiêu.",
+     "Tách phần đến từ tài chính và liên kết ra để biết lõi kinh doanh đang khỏe hay yếu.",
+     "Nếu lợi nhuận trước thuế cao hơn lợi nhuận thuần nhiều, phần chênh là lợi nhuận khác – thường bất thường, như KDH quý 3/2026 lợi nhuận khác 126,6 tỷ trên 189,0 tỷ lợi nhuận trước thuế."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Lợi nhuận thuần từ HĐKD khác lợi nhuận trước thuế ở đâu?",
+    "Lợi nhuận trước thuế = lợi nhuận thuần từ HĐKD + lợi nhuận khác. Lợi nhuận khác gồm thu nhập và chi phí bất thường như thanh lý tài sản, tiền phạt, bồi thường."
+   ],
+   [
+    "Vì sao lợi nhuận thuần có thể cao hơn lợi nhuận gộp?",
+    "Vì nó cộng thêm doanh thu tài chính và lãi công ty liên kết. Khi các khoản này lớn hơn tổng chi phí bán hàng, quản lý và tài chính, lợi nhuận thuần sẽ vượt lãi gộp."
+   ],
+   [
+    "Nên dùng lợi nhuận nào để tính P/E?",
+    "P/E thường dùng lợi nhuận sau thuế của cổ đông công ty mẹ. Tuy vậy, nên xem lợi nhuận thuần từ HĐKD và loại bớt khoản tài chính một lần để đánh giá lợi nhuận bền vững."
+   ]
+  ],
+  "rel": [
+   "bao-cao-ket-qua-kinh-doanh-la-gi",
+   "bien-loi-nhuan-gop-la-gi",
+   "loi-nhuan-bat-thuong-la-gi",
+   "lai-lo-tu-cong-ty-lien-ket-la-gi"
+  ]
  }
 ]
