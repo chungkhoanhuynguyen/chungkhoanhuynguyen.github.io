@@ -1,0 +1,65 @@
+name: Cat video dai thanh clip doc (TikTok/Reel phu)
+# Đẩy _video/queue/<LÔ>/doc.json = [{tag, key, title}] -> cắt 2-3 clip dọc/video -> Release "doc-<LÔ>".
+on:
+  push:
+    paths: ["_video/queue/**/doc.json"]
+  workflow_dispatch:
+    inputs:
+      batch: {description: "Tên lô", required: true}
+permissions:
+  contents: write
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      batch: ${{ steps.p.outputs.batch }}
+      keys: ${{ steps.p.outputs.keys }}
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 2}
+      - id: p
+        run: |
+          python3 - <<'PY'
+          import os, json, subprocess
+          b = "${{ github.event.inputs.batch }}".strip()
+          if not b:
+              ch = subprocess.run(["git", "diff", "--name-only", "HEAD~1", "HEAD"], capture_output=True, text=True).stdout.split()
+              ds = [p.split("/")[2] for p in ch if p.startswith("_video/queue/") and p.endswith("doc.json")]
+              b = ds[-1] if ds else ""
+          ks = [r["key"] for r in json.load(open(f"_video/queue/{b}/doc.json", encoding="utf-8"))] if b else []
+          open(os.environ["GITHUB_OUTPUT"], "a").write(f"batch={b}\nkeys={json.dumps(ks)}\n"); print(b, ks)
+          PY
+  cut:
+    needs: plan
+    if: needs.plan.outputs.batch != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        key: ${{ fromJson(needs.plan.outputs.keys) }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: command -v ffmpeg || timeout 150 sh -c "sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null"
+      - run: pip install -q pillow
+      - env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          B="${{ needs.plan.outputs.batch }}"; K="${{ matrix.key }}"
+          eval "$(python3 -c "import json,shlex;r=[x for x in json.load(open('_video/queue/$B/doc.json',encoding='utf-8')) if x['key']=='$K'][0];print('TAG='+shlex.quote(r['tag'])+'; TI='+shlex.quote(r['title']))")"
+          mkdir -p in && gh release download "$TAG" -R ${{ github.repository }} -D in -p "$K.mp4" -p "$K.srt" -p "${K}_chuong.txt"
+          python _video/doc_cat.py in "$K" "$TI"
+      - uses: actions/upload-artifact@v4
+        with: {name: "doc-${{ matrix.key }}", path: _video/out/, retention-days: 7}
+  publish:
+    needs: [plan, cut]
+    if: always() && needs.plan.outputs.batch != ''
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with: {path: art, pattern: doc-*, merge-multiple: true}
+      - env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          B="${{ needs.plan.outputs.batch }}"
+          gh release delete "doc-$B" -y -R ${{ github.repository }} 2>/dev/null || true
+          gh release create "doc-$B" -R ${{ github.repository }} -t "Clip doc $B" -n "Clip dọc cắt từ video dài, lô $B" art/*.mp4 art/*.json || true
