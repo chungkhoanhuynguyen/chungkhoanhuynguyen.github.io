@@ -82,8 +82,9 @@ def mix(video, bounds, out, music_db=-8, lofi=False):
     try: x = ket_hop(total, bounds, lofi)
     except Exception as e: print("nhac ket hop loi, dung mau 2:", e, flush=True); x = track(total, bounds)
     write("/tmp/bgm.wav", x)
+    th, ra = ("0.10", "2.5") if lofi else ("0.04", "6")   # kể chuyện: nhạc nền nghe rõ, chỉ hạ nhẹ khi có giọng (anh Huy 7/11 "nhạc không nghe thấy gì")
     fc = ("[1:a]volume=%ddB,aresample=44100[m];[0:a]asplit=2[v][sc];"
-          "[m][sc]sidechaincompress=threshold=0.04:ratio=6:attack=20:release=350[md];"
-          "[v][md]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95[a]") % music_db
+          "[m][sc]sidechaincompress=threshold=%s:ratio=%s:attack=60:release=600[md];"
+          "[v][md]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95[a]") % (music_db, th, ra)
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", video, "-i", "/tmp/bgm.wav", "-filter_complex", fc,
                     "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", out])
