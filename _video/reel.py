@@ -185,6 +185,7 @@ def anh_canh(R, kho, qd=""):
         if c.get("hinh"):
             try: ph = Image.open(os.path.join(qd, c["hinh"])).convert("RGB"); ph.info["fit"] = 1; seq.append(ph)
             except Exception as e: print("hinh: loi", e, flush=True)
+        if not seq and out and out[-1]: seq = [x for x in out[-1] if not x.info.get("fit")][-1:]   # không tìm được ảnh: dùng lại ảnh cảnh trước, không để khung trống
         out.append(seq or None)
     R["_phs"] = out
     return out

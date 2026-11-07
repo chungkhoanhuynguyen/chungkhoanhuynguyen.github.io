@@ -1,5 +1,5 @@
 # Ảnh minh hoạ thật, miễn phí (Wikimedia Commons, giấy phép CC/PD) cho từng cảnh video dài.
-import json, os, re, urllib.request, urllib.parse, io, hashlib
+import json, os, re, urllib.request, urllib.parse, urllib.error, io, hashlib
 from PIL import Image
 UA = {"User-Agent": "HuyNguyenVideoBot/1.0 (chungkhoanhuynguyen.com)"}
 OKLIC = re.compile(r"^(CC BY|CC0|Public domain|PD|CC-BY)", re.I)
@@ -21,8 +21,19 @@ CHU = [  # từ trong câu -> từ khoá
 ]
 NEN = ["Ho Chi Minh City skyline", "Hanoi skyline", "Bitexco Financial Tower", "Saigon river night", "Landmark 81"]
 
+import time
+_LAST = [0.0]
 def _get(u, t=20):
-    return urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=t).read()
+    """Tải có giãn cách + thử lại khi Wikimedia báo 429 (quá nhiều yêu cầu) – lỗi 7/11 làm cảnh trống ảnh."""
+    for k in range(6):
+        dt = time.time() - _LAST[0]
+        if dt < 0.8: time.sleep(0.8 - dt)
+        _LAST[0] = time.time()
+        try: return urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=t).read()
+        except urllib.error.HTTPError as e:
+            if e.code in (429, 503) and k < 5:
+                w = float(e.headers.get("Retry-After") or 0) or 4 * 2 ** k; print("anh: 429, cho %.0fs" % w, flush=True); time.sleep(min(w, 60)); continue
+            raise
 
 NGUOI = re.compile(r"confederate|counterfeit|people|person|portrait|men of|women of|businesspeople|business people|politician|chairman|ceo|founder|births|living people|selfie|headshot|ông |bà |chân dung|doanh nhân|chủ tịch|giám đốc|lãnh đạo|_em\\.|nguyen|nguyễn|tran |trần |le van|lê văn|pham|phạm|hoang|hoàng|võ |đỗ |doan|đoàn")
 def tim(q, n=12):
@@ -45,7 +56,10 @@ def tim(q, n=12):
 class Kho:
     def __init__(s, wd): s.wd = wd; os.makedirs(wd, exist_ok=True); s.cache = {}; s.dung = set(); s.credit = []
     def _ds(s, q):
-        if q not in s.cache: s.cache[q] = tim(q)
+        if q not in s.cache:
+            r = tim(q)
+            if not r: return []          # lỗi/không có: không lưu, lần sau thử lại
+            s.cache[q] = r
         return s.cache[q]
     def cho(s, sc, chu_de=""):
         """Chọn 1 ảnh chưa dùng cho cảnh. Trả về PIL.Image hoặc None."""
