@@ -147,6 +147,8 @@ def frame(sc, t):
             f = dx2.fit(d, l, "Black", LW - 260, 120); tw = d.textlength(l, font=f)
             c = cols[i] if i < len(cols) else dx2.CREAM
             d.text((LW / 2 - tw / 2, y + (1 - a) * 26), l, font=f, fill=dx2.mix(c, a, (11, 13, 19))); y += int(f.size * 1.18)
+        mt = "Quan điểm cá nhân, không phải khuyến nghị đầu tư."; fm = dx2.F("Medium", 22)
+        d.text((LW / 2 - d.textlength(mt, font=fm) / 2, LH - 56), mt, font=fm, fill=(140, 146, 162))
         return im
     d.text((24, LH - 30), "Ảnh minh hoạ: Wikimedia Commons", font=dx2.F("SemiBold", 16), fill=(150, 156, 170))
     s = int(t // SHOT); big = (s % 3) != 1          # góc cận: chữ thu nhỏ thành nhãn để ảnh "thở"
