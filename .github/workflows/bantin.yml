@@ -1,7 +1,7 @@
 name: Ban tin Phong Than (du lieu + the hinh)
 # 16:40 giờ VN thứ 2–6: dựng du_lieu.json + thẻ hình cho bản tin tối. NV1 viết reel.json dựa trên du_lieu.json.
 on:
-  schedule: [{cron: "40 9 * * 1-5"}]
+  # schedule tắt 7/11: anh Huy dừng Bản tin Phong Thần
   workflow_dispatch:
 permissions:
   contents: write
