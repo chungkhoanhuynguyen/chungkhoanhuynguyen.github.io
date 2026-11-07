@@ -5473,6 +5473,47 @@
    [
     "p",
     "Bài viết là kiến thức chung, không phải khuyến nghị mua bán mã cụ thể. Dù chọn doanh nghiệp tốt vẫn cần chia vốn cho nhiều mã và không dùng tiền vay."
+   ],
+   [
+    "h2",
+    "Ví dụ đọc 6 tiêu chí với số liệu thật"
+   ],
+   [
+    "ul",
+    [
+     "VNM: ROE khoảng 31,1%, tỷ suất cổ tức khoảng 8,14%, giá đóng cửa 6/11/2026 khoảng 57,8 nghìn đồng. Tiêu chí ROE và cổ tức đạt, nhưng cần xem lợi nhuận có tăng đều không.",
+     "MBB: ROE khoảng 21,8%, cổ tức khoảng 4,16%, giá khoảng 19,25 nghìn đồng. Với ngân hàng, nên xem thêm nợ xấu và bao phủ nợ xấu.",
+     "HPG: ROE khoảng 19,9%, giá khoảng 21,2 nghìn đồng; là ngành chu kỳ nên lợi nhuận phụ thuộc giá thép, cần đọc theo chu kỳ."
+    ]
+   ],
+   [
+    "p",
+    "Số liệu ROE, cổ tức tổng hợp ngày 7/11/2026 trên chungkhoanhuynguyen.com."
+   ],
+   [
+    "h2",
+    "Doanh nghiệp tốt chưa chắc là khoản đầu tư tốt"
+   ],
+   [
+    "p",
+    "Một doanh nghiệp tốt mua ở giá quá cao vẫn có thể cho kết quả kém nhiều năm. Vì vậy tiêu chí định giá luôn đi cùng năm tiêu chí còn lại. Ngược lại, giá rẻ mà doanh nghiệp đang xấu đi thì là bẫy giá trị."
+   ],
+   [
+    "h2",
+    "Quản trị rủi ro khi giữ dài hạn"
+   ],
+   [
+    "ol",
+    [
+     "Không để một mã vượt 15–20% danh mục, dù tốt tới đâu.",
+     "Mỗi quý đọc lại báo cáo: tiêu chí nào còn, tiêu chí nào mất.",
+     "Viết trước điều kiện bán: lợi nhuận giảm nhiều quý liền, nợ tăng mạnh, ban lãnh đạo thiếu minh bạch.",
+     "Tái cân bằng khi một mã tăng quá mạnh so với phần còn lại."
+    ]
+   ],
+   [
+    "p",
+    "Giữ dài hạn không có nghĩa là giữ mãi. Đó là giữ chừng nào doanh nghiệp còn đáp ứng các tiêu chí đã đặt ra."
    ]
   ]
  },
@@ -10872,6 +10913,46 @@
    "lai-suat-tang-anh-huong-chung-khoan",
    "khoi-ngoai-mua-rong-ban-rong-la-gi",
    "chu-ky-co-phieu-ngan-hang"
+  ],
+  "add": [
+   [
+    "h2",
+    "Diễn biến lãi suất Fed gần đây"
+   ],
+   [
+    "ul",
+    [
+     "Biên trên lãi suất điều hành từng ở 5,5%, sau đó Fed giảm dần qua nhiều đợt xuống 3,75%.",
+     "Tháng 9/2026, Fed tăng trở lại 0,25 điểm %, lên 3,75–4,00%.",
+     "Cuộc họp kết thúc ngày 29/10/2026 (giờ Việt Nam): giữ nguyên 3,75–4,00%, biểu quyết 10–2, hai thành viên muốn tăng thêm 0,25 điểm %.",
+     "Cuộc họp tiếp theo: 8–9/12/2026, kèm dự báo kinh tế."
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: thông báo FOMC; cập nhật tại mục Lịch sự kiện trên chungkhoanhuynguyen.com."
+   ],
+   [
+    "h2",
+    "Nhìn lại năm 2022"
+   ],
+   [
+    "p",
+    "Năm 2022 Fed nâng lãi suất từ gần 0% lên 4,25–4,50%, một trong những chu kỳ tăng nhanh nhất nhiều thập kỷ. Đồng USD mạnh lên, tỷ giá trong nước chịu áp lực, lãi suất huy động trong nước tăng và VN-Index giảm khoảng một phần ba trong cả năm. Đây là ví dụ rõ nhất về cách lãi suất Mỹ lan sang thị trường Việt Nam."
+   ],
+   [
+    "h2",
+    "Nhà đầu tư nên làm gì trước kỳ họp Fed?"
+   ],
+   [
+    "ol",
+    [
+     "Kiểm tra tỷ lệ vay ký quỹ: lãi suất cao kéo dài làm chi phí vay đắt hơn.",
+     "Xem danh mục có bao nhiêu doanh nghiệp nợ USD hoặc nhập khẩu nhiều nguyên liệu.",
+     "Giữ một phần tiền mặt để không bị động.",
+     "Chuẩn bị cho nhiều kịch bản thay vì đoán quyết định của Fed."
+    ]
+   ]
   ]
  },
  {
@@ -29223,5 +29304,766 @@
    ]
   ],
   "grp": 3
+ },
+ {
+  "slug": "ty-trong-tien-mat-trong-danh-muc",
+  "kw": "tỷ trọng tiền mặt trong danh mục",
+  "grp": 5,
+  "title": "Tỷ trọng tiền mặt trong danh mục bao nhiêu là đủ?",
+  "desc": "Nên giữ bao nhiêu tiền mặt trong danh mục chứng khoán: vai trò của tiền mặt, 3 mức tham khảo theo khẩu vị rủi ro, cách giải ngân khi thị trường giảm.",
+  "body": [
+   [
+    "p",
+    "<b>Tỷ trọng tiền mặt</b> là phần vốn trong tài khoản chứng khoán chưa mua cổ phiếu. Nhiều nhà đầu tư mới coi tiền mặt là tiền \"nằm chết\", nên luôn mua hết 100%. Thực ra tiền mặt là một vị thế có chủ đích: nó không sinh lời nhiều, nhưng cho anh chị quyền chọn lựa khi thị trường biến động."
+   ],
+   [
+    "h2",
+    "Tiền mặt làm được gì?"
+   ],
+   [
+    "ul",
+    [
+     "Giảm mức sụt giảm của tài khoản: danh mục 30% tiền mặt, cổ phiếu giảm 20% thì tài khoản chỉ giảm khoảng 14%.",
+     "Cho phép mua thêm khi giá giảm mà không phải bán mã khác hay vay ký quỹ.",
+     "Giảm áp lực tâm lý: người còn tiền thường bình tĩnh hơn người đã mua hết.",
+     "Là chỗ chứa tạm khi chưa tìm được cơ hội hợp lý."
+    ]
+   ],
+   [
+    "h2",
+    "Ba mức tham khảo"
+   ],
+   [
+    "ol",
+    [
+     "Phòng thủ: 30–50% tiền mặt, phù hợp người sắp cần tiền hoặc không chịu được sụt giảm lớn.",
+     "Cân bằng: 10–30% tiền mặt, phù hợp đa số người đi làm đầu tư song song.",
+     "Tích sản dài hạn: 0–10% tiền mặt trong tài khoản, vì tiền góp mới mỗi tháng đã đóng vai trò dòng tiền bổ sung."
+    ]
+   ],
+   [
+    "p",
+    "Đây là mức tham khảo, không phải công thức. Quan trọng nhất là con số được quyết định trước, ghi vào kế hoạch, không thay đổi theo cảm xúc từng phiên."
+   ],
+   [
+    "h2",
+    "Tiền mặt khác quỹ dự phòng"
+   ],
+   [
+    "p",
+    "Tiền mặt trong tài khoản chứng khoán là để đầu tư. Quỹ dự phòng (3–6 tháng chi tiêu) nằm ngoài tài khoản, dùng cho ốm đau, mất việc. Không nên coi tiền mặt trong tài khoản là quỹ dự phòng, vì đến lúc cần tiền gấp có thể anh chị đã lỡ mua cổ phiếu và phải bán lỗ. Xem thêm bài <a href=\"/f0/quy-du-phong-truoc-khi-dau-tu.html\">quỹ dự phòng trước khi đầu tư</a>."
+   ],
+   [
+    "h2",
+    "Giải ngân phần tiền mặt thế nào?"
+   ],
+   [
+    "ul",
+    [
+     "Chia làm 3–4 lần, mỗi lần khi thị trường giảm thêm một nấc đã định trước (ví dụ mỗi 7–10%).",
+     "Ưu tiên doanh nghiệp đã có trong danh sách theo dõi, lợi nhuận còn tăng.",
+     "Sau mỗi lần giải ngân, kiểm tra lại tỷ trọng từng mã và từng ngành."
+    ]
+   ],
+   [
+    "p",
+    "Ví dụ: VN-Index lên đỉnh tuần khoảng 1.933 điểm giữa tháng 5/2026 và về quanh 1.725 điểm tuần đầu tháng 11/2026, giảm gần 11%. Người giữ 20–30% tiền mặt có thể giải ngân từng phần trong nhịp giảm đó mà không phải bán mã nào."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Tiền mặt là một vị thế, không phải tiền nằm chết.",
+     "Chọn mức tiền mặt theo khẩu vị rủi ro và ghi vào kế hoạch.",
+     "Tách riêng quỹ dự phòng khỏi tài khoản chứng khoán.",
+     "Giải ngân từng phần theo nấc định trước."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Giữ 100% cổ phiếu có sai không?",
+    "Không sai nếu anh chị có thu nhập ổn định, quỹ dự phòng riêng và chấp nhận được sụt giảm lớn. Nhưng không nên vừa 100% cổ phiếu vừa vay ký quỹ."
+   ],
+   [
+    "Tiền mặt trong tài khoản có sinh lời không?",
+    "Nhiều công ty chứng khoán có sản phẩm tự động sinh lời cho tiền nhàn rỗi với lãi suất thấp. Mục đích chính của tiền mặt vẫn là sự linh hoạt, không phải lợi nhuận."
+   ],
+   [
+    "Khi nào nên tăng tỷ trọng tiền mặt?",
+    "Khi danh mục đã tăng mạnh vượt tỷ trọng kế hoạch, khi sắp cần tiền, hoặc khi định giá chung đã cao so với lợi nhuận doanh nghiệp."
+   ]
+  ],
+  "rel": [
+   "quy-du-phong-truoc-khi-dau-tu",
+   "phan-bo-von-va-quan-tri-danh-muc",
+   "tai-can-bang-danh-muc-la-gi",
+   "quan-tri-rui-ro-khi-thi-truong-giam-manh"
+  ]
+ },
+ {
+  "slug": "dung-lo-di-dong-trailing-stop-la-gi",
+  "kw": "trailing stop là gì",
+  "grp": 5,
+  "title": "Trailing stop là gì? Dừng lỗ di động để giữ lãi",
+  "desc": "Trailing stop (dừng lỗ di động) là gì, cách đặt theo % từ đỉnh, ví dụ với số liệu thật, ưu nhược điểm và lỗi thường gặp của nhà đầu tư mới.",
+  "body": [
+   [
+    "p",
+    "<b>Trailing stop</b> (dừng lỗ di động) là mức giá bán tự đi lên theo giá cổ phiếu, nhưng không bao giờ đi xuống. Nếu điểm cắt lỗ thông thường bảo vệ vốn, thì trailing stop bảo vệ phần lãi đã có."
+   ],
+   [
+    "h2",
+    "Cách hoạt động"
+   ],
+   [
+    "p",
+    "Anh chị chọn một khoảng cách, ví dụ 15% dưới giá cao nhất kể từ khi mua. Mỗi khi giá lập đỉnh mới, mức dừng lỗ được nâng lên theo. Khi giá giảm từ đỉnh đúng 15%, anh chị bán."
+   ],
+   [
+    "h2",
+    "Ví dụ với số liệu thật"
+   ],
+   [
+    "p",
+    "Cổ phiếu DGW có đỉnh 52 tuần khoảng 53,48 nghìn đồng. Với trailing stop 15%, mức bán là khoảng 53,48 × 0,85 ≈ 45,46 nghìn đồng. Ngày 6/11/2026, DGW đóng cửa khoảng 38,50 nghìn đồng, tức đã giảm khoảng 28% từ đỉnh. Người dùng trailing stop 15% đã thoát ở quanh 45,5, giữ được phần lớn lãi nếu mua ở vùng thấp hơn, thay vì chịu thêm 13 điểm phần trăm giảm."
+   ],
+   [
+    "h2",
+    "Chọn khoảng cách bao nhiêu?"
+   ],
+   [
+    "ul",
+    [
+     "Quá hẹp (5–7%): dễ bị bật ra bởi dao động bình thường, mua bán liên tục, tốn phí.",
+     "Quá rộng (30% trở lên): trả lại gần hết phần lãi trước khi bán.",
+     "Nhiều người chọn 10–20% tùy độ biến động của mã. Mã biến động mạnh (hệ số beta cao) cần khoảng rộng hơn.",
+     "Có thể dùng giá đóng cửa thay vì giá trong phiên để tránh bị \"quét\" bởi một cú giảm ngắn."
+    ]
+   ],
+   [
+    "h2",
+    "Ưu và nhược điểm"
+   ],
+   [
+    "ul",
+    [
+     "Ưu: kỷ luật, không phải đoán đỉnh, để lãi chạy và tự khóa lãi.",
+     "Nhược: trong thị trường đi ngang, có thể bán rồi giá lại tăng; không phù hợp với tích sản dài hạn dựa trên giá trị doanh nghiệp.",
+     "Ở Việt Nam, phần lớn công ty chứng khoán chưa có lệnh trailing stop tự động cho mọi tài khoản, anh chị cần tự theo dõi và đặt lệnh."
+    ]
+   ],
+   [
+    "h2",
+    "Lỗi thường gặp"
+   ],
+   [
+    "ol",
+    [
+     "Hạ mức dừng lỗ xuống khi giá giảm – đây là phá luật, không còn là trailing stop.",
+     "Đặt khoảng cách theo cảm xúc, mỗi lần một khác.",
+     "Dùng trailing stop cho mã đang mua với lý do dài hạn rồi bán vì một nhịp điều chỉnh bình thường."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Trailing stop chỉ đi lên, không đi xuống.",
+     "Chọn khoảng cách theo độ biến động, ghi trước khi mua.",
+     "Phù hợp giao dịch theo xu hướng hơn là tích sản dài hạn."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Trailing stop khác stop loss thế nào?",
+    "Stop loss cố định ở một mức giá dưới giá mua. Trailing stop di chuyển lên theo đỉnh mới của giá, nên vừa bảo vệ vốn vừa bảo vệ lãi."
+   ],
+   [
+    "Có nên dùng trailing stop cho cổ phiếu tích sản?",
+    "Thường không cần. Người tích sản dựa vào lợi nhuận doanh nghiệp và tái cân bằng định kỳ, không bán vì giá giảm một khoảng nhất định."
+   ],
+   [
+    "Bị bán rồi giá tăng lại thì sao?",
+    "Đó là chi phí của kỷ luật. Có thể mua lại nếu lý do ban đầu vẫn còn và có điểm vào mới rõ ràng."
+   ]
+  ],
+  "rel": [
+   "stop-loss-bao-nhieu-phan-tram",
+   "cat-lo-la-gi",
+   "chot-loi-tung-phan",
+   "he-so-beta-la-gi"
+  ]
+ },
+ {
+  "slug": "rui-ro-nganh-la-gi",
+  "kw": "rủi ro ngành là gì",
+  "grp": 5,
+  "title": "Rủi ro ngành là gì? Khi cả nhóm cổ phiếu cùng đi xuống",
+  "desc": "Rủi ro ngành là gì, khác rủi ro từng mã thế nào, ví dụ nhóm chứng khoán và bất động sản quý 3/2026, cách giới hạn tỷ trọng theo ngành.",
+  "body": [
+   [
+    "p",
+    "<b>Rủi ro ngành</b> là rủi ro ảnh hưởng tới gần như mọi doanh nghiệp trong cùng một ngành: chính sách thay đổi, giá đầu vào tăng, nhu cầu giảm, hoặc công nghệ mới thay thế sản phẩm. Khi rủi ro ngành xảy ra, chọn được mã tốt nhất ngành cũng chỉ giúp giảm ít hơn, không tránh được."
+   ],
+   [
+    "h2",
+    "Khác rủi ro từng mã thế nào?"
+   ],
+   [
+    "ul",
+    [
+     "Rủi ro từng mã: ban lãnh đạo yếu, một dự án thất bại, sổ sách có vấn đề. Đa dạng nhiều mã trong ngành giúp giảm.",
+     "Rủi ro ngành: cả nhóm chịu chung một cú sốc. Chỉ đa dạng hóa sang ngành khác mới giảm được.",
+     "Rủi ro hệ thống: cả thị trường giảm (xem bài <a href=\"/f0/rui-ro-he-thong-va-phi-he-thong.html\">rủi ro hệ thống và phi hệ thống</a>)."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ thực tế quý 3/2026"
+   ],
+   [
+    "ul",
+    [
+     "Nhóm chứng khoán: doanh thu phí giao dịch của SSI, VND, HCM, VIX, FTS, SHS, VCI, TCX giảm từ khoảng 37% đến 76% so với cùng kỳ, vì thanh khoản thị trường giảm. Lợi nhuận quý của VND giảm 64,5%, VIX giảm 92,9%. Đây là rủi ro chung của cả ngành.",
+     "Nhóm bất động sản: NLG lãi quý 3 giảm 96,7%, DXG giảm 83,6%, KDH giảm 25,5% do ít dự án bàn giao, trong khi VHM tăng mạnh nhờ bàn giao lớn. Rủi ro ngành ở đây là chu kỳ bàn giao và pháp lý dự án."
+    ]
+   ],
+   [
+    "p",
+    "Số liệu từ báo cáo tài chính quý 3/2026 của các doanh nghiệp."
+   ],
+   [
+    "h2",
+    "Bài học lịch sử: Kodak"
+   ],
+   [
+    "p",
+    "Kodak phát minh máy ảnh số năm 1975 nhưng phá sản năm 2012 vì cả ngành phim chụp ảnh bị thay thế. Cổ đông Kodak không sai khi chọn công ty dẫn đầu ngành, họ sai vì dồn quá nhiều vào một ngành đang bị công nghệ đào thải."
+   ],
+   [
+    "h2",
+    "Cách quản trị rủi ro ngành"
+   ],
+   [
+    "ol",
+    [
+     "Đặt giới hạn tỷ trọng mỗi ngành, ví dụ không quá 30–40% danh mục cho một ngành.",
+     "Cộng tỷ trọng theo ngành, không chỉ theo mã: 5 mã ngân hàng là một khoản đặt cược vào ngân hàng.",
+     "Theo dõi chỉ số dẫn dắt ngành: thanh khoản thị trường với chứng khoán, giá thép với thép, lãi suất với bất động sản và ngân hàng.",
+     "Hỏi định kỳ: sản phẩm cốt lõi của ngành này mười năm nữa còn cần không?"
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Rủi ro ngành không giảm được bằng cách mua nhiều mã cùng ngành.",
+     "Giới hạn tỷ trọng theo ngành và cộng dồn theo ngành.",
+     "Theo dõi biến số dẫn dắt của từng ngành."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Danh mục 10 mã có đủ đa dạng hóa ngành không?",
+    "Chưa chắc. Nếu 10 mã thuộc 2 ngành có tương quan cao như ngân hàng và bất động sản, rủi ro ngành vẫn rất lớn."
+   ],
+   [
+    "Có nên tránh hẳn ngành chu kỳ?",
+    "Không cần tránh, nhưng nên giới hạn tỷ trọng và hiểu biến số dẫn dắt chu kỳ của ngành đó."
+   ],
+   [
+    "Làm sao biết ngành đang gặp rủi ro?",
+    "Khi nhiều doanh nghiệp trong ngành cùng báo doanh thu, biên lợi nhuận giảm trong cùng một quý, đó thường là tín hiệu rủi ro chung của ngành."
+   ]
+  ],
+  "rel": [
+   "rui-ro-he-thong-va-phi-he-thong",
+   "rui-ro-tap-trung-danh-muc",
+   "tuong-quan-co-phieu-trong-danh-muc",
+   "phan-bo-von-va-quan-tri-danh-muc"
+  ]
+ },
+ {
+  "slug": "cong-thuc-kelly-la-gi",
+  "kw": "công thức Kelly là gì",
+  "grp": 5,
+  "title": "Công thức Kelly là gì? Vì sao nên dùng một nửa Kelly",
+  "desc": "Công thức Kelly tính tỷ lệ vốn tối ưu cho mỗi lần đặt cược, ví dụ dễ hiểu, vì sao nhà đầu tư nên dùng một nửa hoặc một phần tư Kelly.",
+  "body": [
+   [
+    "p",
+    "<b>Công thức Kelly</b> do John L. Kelly, kỹ sư tại Bell Labs, công bố năm 1956. Nó trả lời một câu hỏi quản trị vốn: nếu biết xác suất thắng và tỷ lệ lãi trên lỗ, nên đặt bao nhiêu phần trăm vốn cho mỗi lần để tài sản tăng nhanh nhất về dài hạn mà không cháy tài khoản?"
+   ],
+   [
+    "h2",
+    "Công thức"
+   ],
+   [
+    "p",
+    "Tỷ lệ vốn tối ưu f = p − (1 − p) / b, trong đó p là xác suất thắng, b là tỷ lệ lãi khi thắng chia cho lỗ khi thua."
+   ],
+   [
+    "h2",
+    "Ví dụ"
+   ],
+   [
+    "ul",
+    [
+     "Chiến lược có tỷ lệ thắng 50%, lãi trung bình 20% khi đúng, lỗ trung bình 10% khi sai, tức b = 2.",
+     "f = 0,5 − 0,5 / 2 = 0,25, tức Kelly gợi ý dồn 25% vốn cho mỗi lần.",
+     "Nếu tỷ lệ thắng chỉ 40% với b = 1,5: f = 0,4 − 0,6 / 1,5 = 0, tức không nên tham gia vì kỳ vọng bằng không."
+    ]
+   ],
+   [
+    "h2",
+    "Vì sao không dùng đủ Kelly?"
+   ],
+   [
+    "ol",
+    [
+     "Xác suất thắng và tỷ lệ lãi lỗ trong chứng khoán chỉ là ước tính, rất dễ lạc quan quá mức. Ước tính sai một chút, Kelly đầy đủ sẽ đặt cược quá tay.",
+     "Kelly đầy đủ tạo ra sụt giảm tài khoản rất sâu. Về lý thuyết, xác suất tài khoản có lúc giảm còn một nửa là khá cao.",
+     "Cổ phiếu có rủi ro gap giá, sự kiện bất ngờ mà công thức không tính tới."
+    ]
+   ],
+   [
+    "p",
+    "Vì vậy nhiều nhà đầu tư chuyên nghiệp, trong đó có Edward Thorp – người phổ biến Kelly trong đầu tư – thường dùng một nửa hoặc một phần tư mức Kelly. Mức tăng trưởng giảm ít, nhưng sụt giảm tài khoản nhỏ hơn rất nhiều."
+   ],
+   [
+    "h2",
+    "Áp dụng thực tế"
+   ],
+   [
+    "ul",
+    [
+     "Ghi nhật ký giao dịch ít nhất 30–50 lệnh để ước tính tỷ lệ thắng và lãi lỗ trung bình thật của chính mình.",
+     "Tính Kelly, rồi chia 2 hoặc chia 4.",
+     "Kết hợp với quy tắc rủi ro 1–2% vốn mỗi lệnh: lấy mức nhỏ hơn.",
+     "Kelly ra số âm hoặc bằng 0: chiến lược không có lợi thế, dừng lại để xem lại."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Kelly cho biết mức đặt cược tối đa hợp lý, không phải mức nên dùng.",
+     "Dùng một nửa hoặc một phần tư Kelly.",
+     "Số liệu đầu vào phải từ nhật ký thật, không từ cảm giác."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Công thức Kelly có dùng cho tích sản được không?",
+    "Ít phù hợp. Tích sản dài hạn không có tỷ lệ thắng thua rõ ràng theo từng lệnh, nên dùng tỷ trọng theo ngành và tái cân bằng thì hợp lý hơn."
+   ],
+   [
+    "Kelly ra 40% có nên dồn 40% vào một mã?",
+    "Không nên. Đó là dấu hiệu ước tính quá lạc quan. Nên chia nhỏ và kết hợp giới hạn tỷ trọng mỗi mã."
+   ],
+   [
+    "Kelly khác quy tắc 1% thế nào?",
+    "Quy tắc 1% giới hạn số tiền có thể mất mỗi lệnh. Kelly tính tỷ lệ vốn dựa trên lợi thế. Dùng cả hai và chọn mức thận trọng hơn."
+   ]
+  ],
+  "rel": [
+   "quy-tac-rui-ro-1-phan-tram",
+   "ky-vong-loi-nhuan-expectancy-la-gi",
+   "ty-le-thang-va-ty-le-loi-lo",
+   "nhat-ky-giao-dich-la-gi"
+  ]
+ },
+ {
+  "slug": "da-dang-hoa-danh-muc-bao-nhieu-ma",
+  "kw": "đa dạng hóa danh mục bao nhiêu mã",
+  "grp": 5,
+  "title": "Đa dạng hóa danh mục: bao nhiêu mã cổ phiếu là đủ?",
+  "desc": "Nên giữ bao nhiêu mã cổ phiếu để đa dạng hóa, vì sao 10 mã cùng ngành chưa phải đa dạng, cách chia theo ngành và tránh dàn trải quá mức.",
+  "body": [
+   [
+    "p",
+    "<b>Đa dạng hóa</b> là chia vốn cho nhiều khoản đầu tư để một khoản sai không làm hỏng cả danh mục. Câu hỏi thường gặp: giữ bao nhiêu mã là đủ? Câu trả lời phụ thuộc vào các mã đó khác nhau đến đâu, không chỉ ở số lượng."
+   ],
+   [
+    "h2",
+    "Nghiên cứu nói gì?"
+   ],
+   [
+    "p",
+    "Các nghiên cứu kinh điển ở thị trường Mỹ cho thấy phần lớn rủi ro riêng từng mã được giảm khi danh mục có khoảng 15–30 cổ phiếu ở nhiều ngành khác nhau. Sau mức đó, thêm mã giảm rủi ro rất ít. Ray Dalio cũng cho rằng 15–20 nguồn lợi nhuận tốt và ít tương quan có thể giảm khoảng 80% rủi ro danh mục."
+   ],
+   [
+    "h2",
+    "Với nhà đầu tư cá nhân Việt Nam"
+   ],
+   [
+    "ul",
+    [
+     "Vốn nhỏ, ít thời gian: 5–8 mã ở 4–5 ngành khác nhau, hoặc dùng quỹ ETF.",
+     "Vốn vừa, có thời gian theo dõi: 8–15 mã, mỗi mã 5–12% danh mục.",
+     "Quá 20 mã: khó theo dõi báo cáo từng quý, dễ thành dàn trải, kết quả gần chỉ số nhưng tốn thời gian và phí hơn."
+    ]
+   ],
+   [
+    "h2",
+    "10 mã chưa chắc là đa dạng"
+   ],
+   [
+    "p",
+    "Nếu 10 mã đều là ngân hàng, chúng thường tăng giảm cùng nhau vì chịu chung lãi suất, nợ xấu và chính sách tín dụng. Về rủi ro, danh mục đó gần như một khoản đặt cược vào ngành ngân hàng. Đa dạng hóa thật cần các khoản phản ứng khác nhau với cùng một tin: ngân hàng, tiêu dùng, điện, công nghệ, xuất khẩu, cùng với tiền mặt hoặc tiền gửi."
+   ],
+   [
+    "h2",
+    "Cách kiểm tra danh mục"
+   ],
+   [
+    "ol",
+    [
+     "Cộng tỷ trọng theo ngành: ngành lớn nhất không nên quá 30–40%.",
+     "Xem tương quan: trong đợt giảm gần nhất, các mã có giảm cùng lúc không?",
+     "Đặt giới hạn mỗi mã, ví dụ tối đa 15–20% danh mục.",
+     "Mỗi quý tái cân bằng khi một mã hoặc ngành vượt giới hạn."
+    ]
+   ],
+   [
+    "h2",
+    "Đừng dàn trải"
+   ],
+   [
+    "p",
+    "Đa dạng hóa không có nghĩa là mua mọi thứ. Mỗi mã trong danh mục vẫn cần có lý do, có ngưỡng sai rõ ràng. Mua thêm mã chỉ để cảm thấy an toàn mà không hiểu doanh nghiệp là một dạng rủi ro khác."
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Số mã quan trọng ít hơn mức độ khác nhau giữa các mã.",
+     "5–15 mã ở nhiều ngành là đủ với đa số nhà đầu tư cá nhân.",
+     "Giới hạn tỷ trọng mỗi mã và mỗi ngành, tái cân bằng định kỳ."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Vốn 50 triệu có nên chia 10 mã?",
+    "Có thể chia 4–6 mã ở các ngành khác nhau hoặc góp vào quỹ ETF để tránh mỗi mã quá nhỏ, khó theo dõi."
+   ],
+   [
+    "Đa dạng hóa có làm giảm lợi nhuận?",
+    "Có thể giảm lợi nhuận của kịch bản tốt nhất, nhưng giảm mạnh hơn nhiều thiệt hại của kịch bản xấu nhất. Về dài hạn, tránh được khoản lỗ lớn quan trọng hơn."
+   ],
+   [
+    "ETF có phải cách đa dạng hóa đơn giản nhất?",
+    "Với người ít thời gian thì đúng. Một quỹ ETF theo chỉ số đã chứa nhiều mã ở nhiều ngành."
+   ]
+  ],
+  "rel": [
+   "rui-ro-tap-trung-danh-muc",
+   "tuong-quan-co-phieu-trong-danh-muc",
+   "cach-phan-bo-ty-trong-co-phieu",
+   "tai-can-bang-danh-muc-la-gi"
+  ]
+ },
+ {
+  "slug": "hieu-ung-bay-dan-la-gi",
+  "kw": "hiệu ứng bầy đàn trong chứng khoán",
+  "grp": 7,
+  "title": "Hiệu ứng bầy đàn là gì? Vì sao đám đông hay mua đỉnh",
+  "desc": "Hiệu ứng bầy đàn trong chứng khoán là gì, ví dụ lịch sử từ South Sea 1720 đến dotcom 2000, dấu hiệu nhận biết và 5 cách tự bảo vệ.",
+  "body": [
+   [
+    "p",
+    "<b>Hiệu ứng bầy đàn</b> là xu hướng làm theo số đông thay vì dựa vào phân tích của chính mình. Trong chứng khoán, nó thể hiện ở việc mua vì \"ai cũng đang mua\" và bán vì \"ai cũng đang bán\". Bầy đàn khiến giá đi quá xa giá trị theo cả hai chiều."
+   ],
+   [
+    "h2",
+    "Vì sao con người hay theo đám đông?"
+   ],
+   [
+    "ul",
+    [
+     "Sợ bỏ lỡ cơ hội khi thấy người khác lãi (FOMO).",
+     "Nghĩ rằng đám đông biết điều mình chưa biết.",
+     "Sai cùng mọi người dễ chịu hơn sai một mình.",
+     "Mạng xã hội, nhóm chat khuếch đại tin đồn và cảm xúc rất nhanh."
+    ]
+   ],
+   [
+    "h2",
+    "Bài học lịch sử"
+   ],
+   [
+    "ul",
+    [
+     "Năm 1720, bong bóng công ty South Sea ở Anh cuốn cả Isaac Newton. Ông bán sớm có lãi, rồi thấy người khác tiếp tục lãi nên mua lại ở giá cao và mất khoảng 20.000 bảng.",
+     "Năm 2000, chỉ số Nasdaq lên khoảng 5.048 điểm trong cơn sốt cổ phiếu Internet, rồi mất khoảng 78% đến năm 2002.",
+     "Ở Việt Nam, giai đoạn cuối 2021 – đầu 2022 nhiều nhóm cổ phiếu tăng mạnh nhờ dòng tiền đám đông, rồi giảm sâu trong năm 2022 khi VN-Index mất khoảng một phần ba."
+    ]
+   ],
+   [
+    "h2",
+    "Dấu hiệu bầy đàn đang lên cao"
+   ],
+   [
+    "ol",
+    [
+     "Người chưa từng đầu tư cũng hỏi nên mua mã gì.",
+     "Thanh khoản tăng đột biến ở những mã nhỏ, ít thông tin.",
+     "Lý do mua chủ yếu là \"đang tăng\" hoặc \"nghe nói có tin\".",
+     "Ai nhắc tới rủi ro bị cho là bi quan, lạc hậu."
+    ]
+   ],
+   [
+    "h2",
+    "5 cách tự bảo vệ"
+   ],
+   [
+    "ol",
+    [
+     "Viết lý do mua và điều kiện sai trước khi đặt lệnh.",
+     "Chờ một phiên trước khi mua mã đang tăng nóng.",
+     "Giới hạn tỷ trọng mỗi mã để một quyết định theo đám đông không làm hỏng cả danh mục.",
+     "Hạn chế nhóm tin đồn; đọc số liệu gốc từ báo cáo tài chính.",
+     "Khi thị trường hoảng loạn, đọc lại kế hoạch thay vì đọc nhóm chat."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Đám đông đúng trong phần giữa xu hướng, thường sai ở hai đầu.",
+     "Nhận biết dấu hiệu hưng phấn và hoảng loạn.",
+     "Kế hoạch viết sẵn là cách chống bầy đàn hiệu quả nhất."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Đi ngược đám đông có luôn đúng?",
+    "Không. Đi ngược chỉ vì muốn khác là một dạng cảm xúc khác. Quyết định cần dựa vào số liệu doanh nghiệp và giá."
+   ],
+   [
+    "Bầy đàn khác FOMO thế nào?",
+    "FOMO là cảm xúc sợ bỏ lỡ của từng người. Bầy đàn là hành vi tập thể khi rất nhiều người cùng hành động theo cảm xúc đó."
+   ],
+   [
+    "Làm sao biết mình đang theo bầy đàn?",
+    "Nếu không nói được lý do mua bằng số liệu, ngoài việc giá đang tăng và nhiều người đang mua, nhiều khả năng anh chị đang theo đám đông."
+   ]
+  ],
+  "rel": [
+   "tam-ly-fomo-va-hoang-loan",
+   "bong-bong-tai-san-la-gi",
+   "cach-nhan-biet-tin-don-chung-khoan",
+   "ky-luat-dau-tu"
+  ]
+ },
+ {
+  "slug": "thien-kien-qua-tu-tin-la-gi",
+  "kw": "thiên kiến quá tự tin trong đầu tư",
+  "grp": 7,
+  "title": "Thiên kiến quá tự tin là gì? Vì sao giao dịch nhiều hay lỗ",
+  "desc": "Thiên kiến quá tự tin khiến nhà đầu tư giao dịch quá nhiều, dồn tỷ trọng lớn. Nghiên cứu Barber và Odean, dấu hiệu và cách khắc phục.",
+  "body": [
+   [
+    "p",
+    "<b>Thiên kiến quá tự tin</b> là xu hướng đánh giá kiến thức, khả năng dự báo của mình cao hơn thực tế. Trong đầu tư, nó khiến người ta giao dịch quá nhiều, dồn quá nhiều vốn vào một nhận định và xem nhẹ rủi ro."
+   ],
+   [
+    "h2",
+    "Nghiên cứu nói gì?"
+   ],
+   [
+    "p",
+    "Hai nhà kinh tế Brad Barber và Terrance Odean phân tích tài khoản của hơn 66.000 hộ gia đình tại một công ty chứng khoán Mỹ giai đoạn 1991–1996. Nhóm giao dịch nhiều nhất có lợi nhuận ròng khoảng 11,4% mỗi năm, trong khi thị trường đạt khoảng 17,9%. Bài báo năm 2000 của họ có tựa đề \"Giao dịch có hại cho tài sản của nhà đầu tư\". Nghiên cứu khác của họ cũng cho thấy nam giới giao dịch nhiều hơn nữ giới khoảng 45% và có kết quả ròng kém hơn."
+   ],
+   [
+    "h2",
+    "Dấu hiệu quá tự tin"
+   ],
+   [
+    "ol",
+    [
+     "Tin rằng mình biết chắc mã nào sẽ tăng trong tuần tới.",
+     "Không viết điều kiện sai trước khi mua.",
+     "Một mã chiếm quá nửa danh mục vì \"chắc ăn\".",
+     "Thắng vài lệnh liên tiếp rồi tăng vay ký quỹ.",
+     "Nhớ rõ lệnh thắng, quên lệnh thua."
+    ]
+   ],
+   [
+    "h2",
+    "Vì sao nguy hiểm?"
+   ],
+   [
+    "ul",
+    [
+     "Mỗi lệnh mua bán tốn phí và thuế; giao dịch nhiều làm chi phí cộng dồn rất lớn.",
+     "Tỷ trọng quá lớn biến một lần sai thành khoản lỗ không gỡ được: lỗ 50% cần lãi 100% mới hòa vốn.",
+     "Quá tự tin sau chuỗi thắng thường dẫn tới đòn bẩy, đúng lúc thị trường đổi chiều."
+    ]
+   ],
+   [
+    "h2",
+    "Cách khắc phục"
+   ],
+   [
+    "ol",
+    [
+     "Ghi nhật ký giao dịch: lý do, kỳ vọng, kết quả. Sau 3 tháng đọc lại để thấy tỷ lệ đúng thật.",
+     "Trước khi mua, viết ra 3 lý do mình có thể sai.",
+     "Giới hạn tỷ trọng mỗi mã và số lệnh mỗi tháng.",
+     "So sánh kết quả của mình với VN-Index hoặc quỹ ETF; nếu kém hơn nhiều năm liền, cân nhắc đầu tư thụ động."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Quá tự tin làm tăng số lệnh, tăng tỷ trọng và tăng đòn bẩy.",
+     "Nhật ký giao dịch là thuốc giải tốt nhất.",
+     "Khiêm tốn với dự báo, kỷ luật với tỷ trọng."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Tự tin khác quá tự tin thế nào?",
+    "Tự tin là hành động theo kế hoạch đã kiểm chứng. Quá tự tin là tin vào dự báo mà không có bằng chứng và không chuẩn bị cho khả năng sai."
+   ],
+   [
+    "Thắng liên tiếp có phải do giỏi?",
+    "Có thể, nhưng cũng có thể do thị trường chung đang tăng. Hãy so với chỉ số trong cùng thời gian."
+   ],
+   [
+    "Giao dịch bao nhiêu lệnh mỗi tháng là nhiều?",
+    "Không có con số chung. Nếu phí và thuế hằng năm chiếm phần đáng kể lợi nhuận, hoặc anh chị không ghi được lý do cho từng lệnh, đó là quá nhiều."
+   ]
+  ],
+  "rel": [
+   "overtrading-la-gi",
+   "thien-kien-xac-nhan",
+   "nhat-ky-giao-dich-la-gi",
+   "vi-sao-nha-dau-tu-ca-nhan-thua-lo"
+  ]
+ },
+ {
+  "slug": "bo-lo-phien-tang-manh-nhat",
+  "kw": "bỏ lỡ những phiên tăng mạnh nhất",
+  "grp": 7,
+  "title": "Bỏ lỡ 10 phiên tăng mạnh nhất: cái giá của đứng ngoài",
+  "desc": "Vì sao bỏ lỡ vài phiên tăng mạnh nhất làm lợi nhuận dài hạn giảm một nửa, các phiên đó thường nằm sát phiên giảm mạnh, và cách hành động hợp lý.",
+  "body": [
+   [
+    "p",
+    "Nhiều nhà đầu tư nghĩ rằng chỉ cần tránh được các đợt giảm là sẽ giàu. Nhưng dữ liệu dài hạn cho thấy một sự thật khó chịu: phần lớn lợi nhuận của thị trường đến từ một số ít phiên tăng rất mạnh, và người cố né giảm thường bỏ lỡ chính những phiên đó."
+   ],
+   [
+    "h2",
+    "Dữ liệu từ thị trường Mỹ"
+   ],
+   [
+    "p",
+    "Các thống kê được J.P. Morgan Asset Management cập nhật hằng năm cho thấy: trong khoảng 20 năm, nếu bỏ lỡ chỉ 10 phiên tăng mạnh nhất của chỉ số S&P 500, lợi nhuận tích lũy giảm khoảng một nửa so với người nắm giữ liên tục. Bỏ lỡ 20 phiên tốt nhất, lợi nhuận còn thấp hơn nữa."
+   ],
+   [
+    "h2",
+    "Vì sao lại như vậy?"
+   ],
+   [
+    "ul",
+    [
+     "Phiên tăng mạnh nhất thường nằm sát phiên giảm mạnh nhất, trong cùng giai đoạn biến động cao.",
+     "Theo các thống kê đó, phần lớn phiên tăng tốt nhất xảy ra trong thị trường giá xuống hoặc ngay đầu nhịp hồi phục.",
+     "Người bán vì sợ hãi sau một phiên giảm sâu thường đứng ngoài đúng lúc thị trường bật lại."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ gần đây"
+   ],
+   [
+    "p",
+    "Tuần đầu tháng 11/2026, chỉ số S&P 500 giảm 4,36% phiên 5/11 nhưng trước đó phiên 4/11 tăng 1,58%, và phiên 6/11 tăng lại 0,31%. Những phiên tăng giảm lớn đan xen nhau trong vài ngày. Người chạy khỏi thị trường sau phiên giảm sẽ rất khó biết khi nào nên quay lại."
+   ],
+   [
+    "h2",
+    "Vậy có nên luôn giữ 100% cổ phiếu?"
+   ],
+   [
+    "p",
+    "Không hẳn. Bài học là đừng cố đoán từng phiên, chứ không phải bỏ quản trị rủi ro. Cách hợp lý là quyết định trước tỷ trọng cổ phiếu và tiền mặt, giảm rủi ro bằng đa dạng hóa và không vay ký quỹ, thay vì bán hết rồi chờ mua lại."
+   ],
+   [
+    "h2",
+    "Cách hành động"
+   ],
+   [
+    "ol",
+    [
+     "Giữ tỷ trọng cổ phiếu phù hợp khả năng chịu sụt giảm của mình, để không phải bán hoảng loạn.",
+     "Góp vốn định kỳ, không phụ thuộc vào việc đoán đáy.",
+     "Tái cân bằng theo lịch thay vì theo cảm xúc.",
+     "Nếu cần giảm rủi ro, giảm từng phần thay vì bán toàn bộ."
+    ]
+   ],
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Vài phiên tăng mạnh nhất tạo ra phần lớn lợi nhuận dài hạn.",
+     "Chúng thường đến ngay sau phiên giảm mạnh.",
+     "Kiểm soát rủi ro bằng tỷ trọng, không bằng cách đoán thời điểm ra vào."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Vậy né được 10 phiên giảm mạnh nhất thì sao?",
+    "Về lý thuyết lợi nhuận sẽ rất cao, nhưng thực tế gần như không ai né được phiên giảm mà không bỏ lỡ phiên tăng ngay sau đó."
+   ],
+   [
+    "Thị trường Việt Nam có giống vậy không?",
+    "Nguyên lý tương tự: biên độ ±7% trên HOSE khiến các nhịp hồi thường diễn ra rất nhanh sau các phiên giảm sâu."
+   ],
+   [
+    "Có nên bán hết khi thấy thị trường xấu?",
+    "Thay vì bán hết, hãy kiểm tra tỷ trọng, vay ký quỹ và tỷ lệ tiền mặt so với kế hoạch rồi điều chỉnh từng phần."
+   ]
+  ],
+  "rel": [
+   "mua-trung-binh-gia-dca",
+   "co-nen-mua-co-phieu-khi-thi-truong-giam",
+   "tam-ly-fomo-va-hoang-loan",
+   "ty-trong-tien-mat-trong-danh-muc"
+  ]
  }
 ]
