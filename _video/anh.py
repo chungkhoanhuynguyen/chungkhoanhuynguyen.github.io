@@ -70,7 +70,8 @@ class Kho:
             if m in MA and MA[m] not in qs: qs.append(MA[m])
         for pat, q in CHU:
             if re.search(pat, txt, re.I) and q not in qs: qs.append(q)
-        qs += NEN
+        if sc.get("chat"): qs = [sc["anh"]]       # reel: chỉ đúng từ khoá cảnh (ảnh khớp lời)
+        else: qs += NEN
         for q in qs:
             for it in s._ds(q):
                 if it["u"] in s.dung: continue

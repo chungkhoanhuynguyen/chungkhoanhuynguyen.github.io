@@ -49,6 +49,8 @@ def ve_dau(im, hook, nhan, a=1.0):
 
 def anh_khung(ph, t, T, bw, bh, k=0):
     """Cắt 1 khung ảnh: Ken Burns đổi hướng theo k (phóng vào / lùi ra / lia trái-phải)."""
+    if ph.info.get("the"):  # thẻ số liệu CHẠY: cột mọc, số đếm lên (anh Huy 7/11)
+        import the_so; ph = the_so.ve(ph.info["the"], t); ph.info["fit"] = 1
     if ph.info.get("fit"):  # thẻ số liệu: giữ trọn khung, phóng rất nhẹ
         r = min(bw / ph.width, bh / ph.height) * (1.0 + 0.02 * min(1, t / max(T, 0.1)))
         q = ph.resize((int(ph.width * r), int(ph.height * r)), Image.BILINEAR)
@@ -90,23 +92,45 @@ def ve_chu_to(im, s, t, yb, hoi=0):
     d.rounded_rectangle([x - 28, y - 14, x + tw + 28, y + f.size + 22], 18, fill=nen_ + (int(255 * a),))
     d.text((x, y), s, font=f, fill=chu_ + (int(255 * a),))
 
-def tach(txt, mx=30):
-    w = txt.split(); out = []; cur = ""
-    for x in w:
-        if len(cur) + len(x) + 1 > mx and cur: out.append(cur); cur = x
-        else: cur = (cur + " " + x).strip()
-    if cur: out.append(cur)
-    return out
+PD_F = 54; PD_W = W - 130
+def _rong(s): return ImageDraw.Draw(NEN).textlength(s, font=F("ExtraBold", PD_F))
+def _chia2(ws):
+    """Chia 1 cụm thành ≤2 dòng cân nhau (độ dài gần bằng nhau, không dòng nào vượt khung)."""
+    if _rong(" ".join(ws)) <= PD_W: return [" ".join(ws)]
+    best = None
+    for k in range(1, len(ws)):
+        a, b = " ".join(ws[:k]), " ".join(ws[k:]); ra, rb = _rong(a), _rong(b)
+        if ra > PD_W or rb > PD_W: continue
+        sc = abs(ra - rb) - (40 if ws[k - 1][-1:] in ",;:" else 0)
+        if best is None or sc < best[0]: best = (sc, [a, b])
+    return best[1] if best else None
+def tach(txt):
+    """Phụ đề kiểu chuẩn: tách theo câu/dấu phẩy thành cụm ≤2 dòng cân đối."""
+    cum = []
+    for cau in re.split(r"(?<=[.!?…])\s+", (txt or "").strip()):
+        ws = cau.split()
+        while ws:
+            n = len(ws)
+            while n > 1 and _chia2(ws[:n]) is None: n -= 1
+            # ưu tiên ngắt ở dấu phẩy gần cuối cụm
+            for m in range(n, max(1, n - 5), -1):
+                if ws[m - 1][-1:] in ",;:" and m < len(ws): n = m; break
+            cum.append(_chia2(ws[:n]) or [" ".join(ws[:n])]); ws = ws[n:]
+    return cum
 
 def ve_phu_de(im, loi, t, T, y):
-    """Lời chạy theo giọng: 2 dòng/lượt, dòng đang đọc sáng vàng."""
-    ds = tach(loi); n = len(ds)
-    if not n: return
-    k = min(n - 1, int(t / max(T, 0.1) * n)); g0 = (k // 3) * 3
-    d = ImageDraw.Draw(im); f = F("ExtraBold", 56)
-    for i, s in enumerate(ds[g0:g0 + 3]):
-        c = VANG if g0 + i == k else TRANG; tw = d.textlength(s, font=f)
-        d.text((W/2 - tw/2, y + i * 78), s, font=f, fill=c, stroke_width=5, stroke_fill=(12, 4, 24))
+    """Phụ đề: từng cụm 1–2 dòng căn giữa, đổi cụm theo tỉ lệ số chữ (khớp giọng đọc)."""
+    cum = tach(loi)
+    if not cum: return
+    L = [len(" ".join(c)) for c in cum]; tot = sum(L); a = 0; k = len(cum) - 1
+    for i, l in enumerate(L):
+        a += l / tot * T
+        if t < a: k = i; break
+    d = ImageDraw.Draw(im); f = F("ExtraBold", PD_F); ls = cum[k]
+    y0 = y + (40 if len(ls) == 1 else 0)
+    for i, s_ in enumerate(ls):
+        tw = d.textlength(s_, font=f)
+        d.text((W/2 - tw/2, y0 + i * 80), s_, font=f, fill=TRANG, stroke_width=5, stroke_fill=(12, 4, 24))
 
 MIEN_TRU = "Nội dung chia sẻ kiến thức, không phải khuyến nghị mua bán."
 _MT = re.compile(r"\s*[^.!?]*(chia sẻ kiến thức|không phải (là )?khuyến nghị)[^.!?]*[.!?]?", re.I)
@@ -130,11 +154,11 @@ def ve_web_to(im, t, y):
     d.rounded_rectangle([x - 34, y - 26, x + wu + 34, y + 92], 26, fill=(22, 9, 40, int(225 * a)), outline=TIM_S + (int(255 * a),), width=4)
     d.text((x, y), u1, font=fu, fill=TRANG + (int(255 * a),)); d.text((x + d.textlength(u1, font=fu), y), u2, font=fd, fill=VANG + (int(255 * a),))
 
-XF = 0.5   # chuyển cảnh mờ dần (giây)
+XF = 0.7   # chuyển cảnh mờ dần (giây)
 def doan(seq, t, T, force=None):
     """Chia thời gian cảnh cho chuỗi ảnh; thẻ số liệu (fit) ở cuối giữ 55% thời lượng."""
     n = len(seq); card = n > 1 and seq[-1].info.get("fit")
-    if card: lens = [T * 0.45 / (n - 1)] * (n - 1) + [T * 0.55]
+    if card: lens = [T * 0.22 / (n - 1)] * (n - 1) + [T * 0.78]   # thẻ số liệu giữ lâu cho kịp đọc
     else: lens = [T / n] * n
     if force is not None: return force, 0, lens[force]
     a = 0
@@ -167,22 +191,26 @@ def khung(R, i, t, T, ph, tong_t, tong_T):
     return im
 
 def anh_canh(R, kho, qd=""):
-    """Mỗi cảnh nhiều ảnh (đổi ảnh ~3,5 giây/lần); cảnh có thẻ số liệu: ảnh trước, thẻ sau."""
+    """Ảnh ĐÚNG lời: mỗi cảnh 1–2 ảnh theo thứ tự câu (đổi ~7 giây/lần, anh Huy 7/11 chê chuyển cảnh nhiều);
+    chỉ tìm đúng từ khoá cảnh, không lấy ảnh chung chung. Cảnh có thẻ số liệu: 1 ảnh mở rồi thẻ chạy."""
     out = []
     for c in R["canh"]:
         seq = []; qs = c.get("anh", "")
         qs = qs if isinstance(qs, list) else ([qs] if qs else [])
-        dur = len((c.get("loi_doc") or c.get("loi") or "").split()) / 2.7
-        can = max(1, round(dur / 3.6)) - (1 if c.get("hinh") else 0)
-        if c.get("hinh"): can = max(1 if qs else 0, can)
-        if kho is not None and can > 0:
+        dur = len((c.get("loi_doc") or c.get("loi") or "").split()) / 2.6
+        co_the = c.get("the") or c.get("hinh")
+        can = 1 if co_the else max(1, min(len(qs) or 1, round(dur / 7.0)))
+        if co_the and not qs: can = 0
+        if kho is not None:
             for k in range(can):
                 q = qs[k % len(qs)] if qs else ""
                 try:
-                    ph = kho.cho({"anh": q, "label": c.get("chu_to", ""), "say": c.get("loi", "")}, R.get("tieu_de", ""))
+                    ph = kho.cho({"anh": q, "chat": 1 if q else 0, "label": c.get("chu_to", ""), "say": c.get("loi", "")}, R.get("tieu_de", ""))
                     if ph is not None: seq.append(ph)
                 except Exception as e: print("anh: bo qua", e, flush=True)
-        if c.get("hinh"):
+        if c.get("the"):
+            ph = Image.new("RGB", (8, 8)); ph.info["the"] = c["the"]; ph.info["fit"] = 1; seq.append(ph)
+        elif c.get("hinh"):
             try: ph = Image.open(os.path.join(qd, c["hinh"])).convert("RGB"); ph.info["fit"] = 1; seq.append(ph)
             except Exception as e: print("hinh: loi", e, flush=True)
         if not seq and out and out[-1]: seq = [x for x in out[-1] if not x.info.get("fit")][-1:]   # không tìm được ảnh: dùng lại ảnh cảnh trước, không để khung trống
