@@ -230,7 +230,7 @@ def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
                           "-pix_fmt", "yuv420p", "-c:v", "libx264", "-crf", "21", "-g", "60", "-preset", "veryfast", tmp], stdin=subprocess.PIPE)
     fr = 0
     for i, sc in enumerate(scenes):
-        n = int(round(b[i+1]*FPS)) - fr
+        n = int(round(b[i+1]*FPS)) - fr; sc["_T"] = n / FPS
         for j in range(n): AV[2] = fr + j; p.stdin.write(land(None if sc["k"] in ("text", "end") else dx2.draw(sc, j/FPS, j/max(1, n)), sc, j/FPS).tobytes())
         fr += n
     p.stdin.close(); p.wait(); SUB_ON[0] = False
