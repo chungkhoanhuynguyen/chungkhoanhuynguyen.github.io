@@ -14,7 +14,7 @@ def _grad():
     if "g" not in _GR:
         a = Image.new("L", (LW, LH), 0); px = a.load()
         for x in range(LW):
-            v = int(235 * max(0.0, 1 - x / (LW * 0.72)) ** 1.25)
+            v = int(240 * min(1.0, max(0.0, 1.25 - x / (LW * 0.62))) ** 0.85)   # vùng chữ bên trái tối đủ để đọc trên mọi ảnh
             for y in range(0, LH, 1): px[x, y] = v
         b = Image.new("L", (LW, LH), 0); d = ImageDraw.Draw(b)
         for y in range(LH - 300, LH): d.line([0, y, LW, y], fill=int(210 * ((y - (LH - 300)) / 300) ** 1.4))
