@@ -145,6 +145,9 @@ def ve_cuoi(im, prog):
     u1, u2 = "chungkhoanhuynguyen", ".com"; fu = F("Bold", 32); fd = F("SemiBold", 32)
     wu = d.textlength(u1, font=fu) + d.textlength(u2, font=fd); x = W/2 - wu/2; yu = H - 130
     d.text((x, yu), u1, font=fu, fill=TRANG); d.text((x + d.textlength(u1, font=fu), yu), u2, font=fd, fill=VANG)
+    if prog > 0.9:   # anh Huy 8/11: câu miễn trừ chỉ là chữ nhỏ ở góc, hiện thoáng ở cuối, không đọc
+        a = min(1, (prog - 0.9) / 0.02); fm = F("Medium", 22)
+        d.text((40, H - 62), "Quan điểm cá nhân, không phải khuyến nghị đầu tư.", font=fm, fill=tuple(int(c * a + 20 * (1 - a)) for c in (150, 140, 175)))
 
 def ve_web_to(im, t, y):
     """Cảnh kéo về web: tên web to giữa khung ảnh."""
