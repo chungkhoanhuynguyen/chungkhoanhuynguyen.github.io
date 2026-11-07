@@ -319,5 +319,327 @@
    "vimo",
    "vietnam"
   ]
+ },
+ {
+  "key": "TT10_0711T",
+  "dai": "~2:40",
+  "tieu_de": "GDP tăng gần 10%, sao ta lại thấy nghèo đi? Vì sao Việt Nam vẫn phải đòi tăng trưởng hai con số",
+  "hook": [
+   "GDP TĂNG GẦN 10%",
+   "SAO TA THẤY NGHÈO ĐI?"
+  ],
+  "nhan": "VĨ MÔ · CÂU CHUYỆN",
+  "nhac": "lofi",
+  "music_db": -2,
+  "toc": 1.12,
+  "canh": [
+   {
+    "chu_to": "GDP TĂNG, VÍ MỎNG ĐI?",
+    "anh": [
+     "Ho Chi Minh City traffic",
+     "Ho Chi Minh City street market"
+    ],
+    "loi": "Quý ba vừa rồi, kinh tế Việt Nam tăng 9,95%, gần chạm mốc hai con số. Nhưng anh chị hỏi quanh xem. Ai cũng than kiếm tiền khó hơn. Đi chợ, ai cũng thấy đắt hơn. Còn căn nhà thì cứ xa dần. Vậy tiền tăng trưởng đi đâu?",
+    "loi_doc": "Quý ba vừa rồi, kinh tế Việt Nam tăng chín phẩy chín mươi lăm phần trăm, gần chạm mốc hai con số. Nhưng anh chị hỏi quanh xem. Ai cũng than kiếm tiền khó hơn. Đi chợ, ai cũng thấy đắt hơn. Còn căn nhà thì cứ xa dần. Vậy tiền tăng trưởng đi đâu?",
+    "the": {
+     "loai": "cot",
+     "tieu": "TĂNG TRƯỞNG GDP VIỆT NAM",
+     "nguon": "Cục Thống kê",
+     "hang": [
+      [
+       "2025",
+       8.02
+      ],
+      [
+       "Q1/26",
+       8.15
+      ],
+      [
+       "Q2/26",
+       8.81
+      ],
+      [
+       "Q3/26",
+       9.95
+      ]
+     ],
+     "noi": [
+      3
+     ],
+     "dv": "%",
+     "max": 11
+    }
+   },
+   {
+    "chu_to": "LƯƠNG TĂNG, GIÁ CŨNG TĂNG",
+    "anh": [
+     "Vietnamese dong banknotes"
+    ],
+    "loi": "Lương bình quân quý ba là 9,2 triệu đồng một tháng, tăng 9,9%. Con số này nghe thì khá. Nhưng giá cả cùng kỳ tăng 4,8%, riêng nhóm nhà ở, điện nước tăng 6,59%. Trừ đi, phần tăng thật chỉ còn khoảng một nửa.",
+    "loi_doc": "Lương bình quân quý ba là chín phẩy hai triệu đồng một tháng, tăng chín phẩy chín phần trăm. Con số này nghe thì khá. Nhưng giá cả cùng kỳ tăng bốn phẩy tám phần trăm, riêng nhóm nhà ở, điện nước tăng sáu phẩy năm mươi chín phần trăm. Trừ đi, phần tăng thật chỉ còn khoảng một nửa.",
+    "the": {
+     "loai": "cot",
+     "tieu": "QUÝ 3/2026 SO VỚI CÙNG KỲ",
+     "nguon": "Cục Thống kê",
+     "hang": [
+      [
+       "Thu nhập",
+       9.9
+      ],
+      [
+       "Giá cả",
+       4.8
+      ],
+      [
+       "Nhà ở, điện",
+       6.59
+      ]
+     ],
+     "noi": [
+      0
+     ],
+     "dv": "%",
+     "max": 12
+    }
+   },
+   {
+    "chu_to": "TÀI SẢN CHẠY NHANH HƠN LƯƠNG",
+    "anh": [
+     "Hanoi apartment buildings",
+     "gold bars"
+    ],
+    "loi": "Điều đau nhất nằm ở tài sản. Theo Savills, giá căn hộ Hà Nội hiện cao hơn năm 2019 hơn 200%, bình quân khoảng 26% mỗi năm. Vàng chín tháng qua tăng 42,67%. Trong khi lương chỉ tăng khoảng 10%.",
+    "loi_doc": "Điều đau nhất nằm ở tài sản. Theo Savills, giá căn hộ Hà Nội hiện cao hơn năm hai nghìn không trăm mười chín hơn hai trăm phần trăm, bình quân khoảng hai mươi sáu phần trăm mỗi năm. Vàng chín tháng qua tăng bốn mươi hai phẩy sáu mươi bảy phần trăm. Trong khi lương chỉ tăng khoảng mười phần trăm.",
+    "the": {
+     "loai": "cot",
+     "tieu": "MỖI NĂM TĂNG BAO NHIÊU?",
+     "nguon": "Cục Thống kê, Savills Hà Nội",
+     "hang": [
+      [
+       "Lương",
+       9.9
+      ],
+      [
+       "Căn hộ HN",
+       26
+      ],
+      [
+       "Vàng 9T",
+       42.67
+      ]
+     ],
+     "noi": [
+      2
+     ],
+     "dv": "%",
+     "max": 48
+    }
+   },
+   {
+    "chu_to": "AI CÓ TÀI SẢN, NGƯỜI ĐÓ GIÀU",
+    "anh": [
+     "Hanoi skyline",
+     "Vietnam motorbike commuters"
+    ],
+    "loi": "Nên cảm giác nghèo đi là có thật. Không phải mình làm ít đi. Mà người có tài sản giàu nhanh hơn, còn người chỉ có tiền lương thì bị bỏ lại phía sau.",
+    "loi_doc": "Nên cảm giác nghèo đi là có thật. Không phải mình làm ít đi. Mà người có tài sản giàu nhanh hơn, còn người chỉ có tiền lương thì bị bỏ lại phía sau."
+   },
+   {
+    "chu_to": "TĂNG TRƯỞNG NẰM Ở ĐÂU?",
+    "anh": [
+     "factory Vietnam",
+     "container port Vietnam"
+    ],
+    "loi": "Còn tăng trưởng nằm ở đâu? Tám tháng đầu năm, khu vực vốn nước ngoài chiếm 79,9% xuất khẩu và tăng 26,9%. Doanh nghiệp trong nước chỉ tăng 7,4%. Và hơn 60% người lao động vẫn làm việc phi chính thức.",
+    "loi_doc": "Còn tăng trưởng nằm ở đâu? Tám tháng đầu năm, khu vực vốn nước ngoài chiếm bảy mươi chín phẩy chín phần trăm xuất khẩu và tăng hai mươi sáu phẩy chín phần trăm. Doanh nghiệp trong nước chỉ tăng bảy phẩy bốn phần trăm. Và hơn sáu mươi phần trăm người lao động vẫn làm việc phi chính thức.",
+    "the": {
+     "loai": "lon",
+     "tieu": "XUẤT KHẨU 8 THÁNG 2026",
+     "nguon": "Tạp chí Kinh tế Tài chính, Cục Thống kê",
+     "dong": [
+      [
+       "79,9%",
+       110,
+       "vang"
+      ],
+      [
+       "thuộc khu vực FDI, tăng 26,9%",
+       42,
+       "trang"
+      ],
+      [
+       "+7,4%",
+       100,
+       "tim2"
+      ],
+      [
+       "khu vực trong nước",
+       42,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "VẬY SAO VẪN ĐÒI 10%?",
+    "anh": [
+     "Vietnam National Assembly",
+     "Hanoi Old Quarter"
+    ],
+    "loi": "Nghe vậy thì tăng trưởng nhanh để làm gì? Câu trả lời nằm ở một cuộc chạy đua với thời gian. Năm 2025, mỗi người Việt Nam làm ra khoảng 5.026 đô la. Ngưỡng thu nhập cao hiện là trên 14.375 đô la, tức gấp gần ba lần.",
+    "loi_doc": "Nghe vậy thì tăng trưởng nhanh để làm gì? Câu trả lời nằm ở một cuộc chạy đua với thời gian. Năm hai nghìn không trăm hai mươi lăm, mỗi người Việt Nam làm ra khoảng năm nghìn không trăm hai mươi sáu đô la. Ngưỡng thu nhập cao hiện là trên mười bốn nghìn ba trăm bảy mươi lăm đô la, tức gấp gần ba lần.",
+    "the": {
+     "loai": "thang",
+     "tieu": "GDP BÌNH QUÂN ĐẦU NGƯỜI",
+     "nguon": "Cục Thống kê, NQ Đại hội XIV, Ngân hàng Thế giới",
+     "hang": [
+      [
+       "Năm 2025",
+       5026,
+       "tim"
+      ],
+      [
+       "Mục tiêu năm 2030",
+       8500,
+       "tim2"
+      ],
+      [
+       "Ngưỡng thu nhập cao",
+       14375,
+       "vang"
+      ]
+     ],
+     "dv": " USD"
+    }
+   },
+   {
+    "chu_to": "11 NĂM HAY 18 NĂM",
+    "anh": [
+     "clock"
+    ],
+    "loi": "Tăng 10% mỗi năm, mình cần khoảng 11 năm. Tăng 6% mỗi năm, cần khoảng 18 năm. Và đồng hồ dân số không chờ ai. Năm 2034, Việt Nam bước vào dân số già. Năm 2036, thời kỳ dân số vàng khép lại.",
+    "loi_doc": "Tăng mười phần trăm mỗi năm, mình cần khoảng mười một năm. Tăng sáu phần trăm mỗi năm, cần khoảng mười tám năm. Và đồng hồ dân số không chờ ai. Năm hai nghìn không trăm ba mươi tư, Việt Nam bước vào dân số già. Năm hai nghìn không trăm ba mươi sáu, thời kỳ dân số vàng khép lại.",
+    "the": {
+     "loai": "lon",
+     "tieu": "CUỘC ĐUA VỚI THỜI GIAN",
+     "nguon": "Tính đơn giản; Cục Thống kê – UNFPA 12/2025",
+     "dong": [
+      [
+       "10%/năm ≈ 11 năm",
+       70,
+       "vang"
+      ],
+      [
+       "6%/năm ≈ 18 năm",
+       70,
+       "tim2"
+      ],
+      [
+       "2034: dân số già",
+       56,
+       "trang"
+      ],
+      [
+       "2036: hết dân số vàng",
+       56,
+       "do"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "CHƯA GIÀU ĐÃ GIÀ",
+    "anh": [
+     "elderly man Vietnam",
+     "old woman Vietnam market"
+    ],
+    "loi": "Chậm một chút thôi, mình sẽ già trước khi kịp giàu. Ngân hàng Thế giới thống kê có 108 nước thu nhập trung bình, và từ năm 1990 chỉ 34 nền kinh tế leo được lên thu nhập cao.",
+    "loi_doc": "Chậm một chút thôi, mình sẽ già trước khi kịp giàu. Ngân hàng Thế giới thống kê có một trăm lẻ tám nước thu nhập trung bình, và từ năm một nghìn chín trăm chín mươi chỉ ba mươi tư nền kinh tế leo được lên thu nhập cao.",
+    "the": {
+     "loai": "lon",
+     "tieu": "BẪY THU NHẬP TRUNG BÌNH",
+     "nguon": "Ngân hàng Thế giới, 2024",
+     "dong": [
+      [
+       "108",
+       120,
+       "tim2"
+      ],
+      [
+       "nước thu nhập trung bình",
+       44,
+       "trang"
+      ],
+      [
+       "34",
+       120,
+       "vang"
+      ],
+      [
+       "lên được thu nhập cao từ 1990",
+       44,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "HÀN QUỐC ĐÃ LÀM ĐƯỢC",
+    "anh": [
+     "Seoul skyline"
+    ],
+    "loi": "Hàn Quốc từng làm được. Năm 1960, thu nhập mỗi người chỉ khoảng 1.200 đô la. Họ tăng gần 10% mỗi năm suốt mười lăm năm, và cuối năm 2023 đã khoảng 33.000 đô la.",
+    "loi_doc": "Hàn Quốc từng làm được. Năm một nghìn chín trăm sáu mươi, thu nhập mỗi người chỉ khoảng một nghìn hai trăm đô la. Họ tăng gần mười phần trăm mỗi năm suốt mười lăm năm, và cuối năm hai nghìn không trăm hai mươi ba đã khoảng ba mươi ba nghìn đô la.",
+    "the": {
+     "loai": "thang",
+     "tieu": "HÀN QUỐC: THU NHẬP ĐẦU NGƯỜI",
+     "nguon": "Ngân hàng Thế giới",
+     "hang": [
+      [
+       "Năm 1960",
+       1200,
+       "tim"
+      ],
+      [
+       "Cuối năm 2023",
+       33000,
+       "vang"
+      ]
+     ],
+     "dv": " USD"
+    }
+   },
+   {
+    "chu_to": "ĐỪNG CHỈ GIỮ TIỀN LƯƠNG",
+    "anh": [
+     "Ho Chi Minh City Stock Exchange",
+     "Bitexco Financial Tower"
+    ],
+    "loi": "Vậy anh chị nên nghĩ gì? Khi kinh tế chạy nhanh, tài sản thường tăng nhanh hơn tiền lương. Nên em nghĩ, đừng chỉ giữ tiền lương. Hãy đều đặn biến một phần thu nhập thành tài sản, có kỷ luật và hiểu mình đang mua gì.",
+    "loi_doc": "Vậy anh chị nên nghĩ gì? Khi kinh tế chạy nhanh, tài sản thường tăng nhanh hơn tiền lương. Nên em nghĩ, đừng chỉ giữ tiền lương. Hãy đều đặn biến một phần thu nhập thành tài sản, có kỷ luật và hiểu mình đang mua gì."
+   },
+   {
+    "chu_to": "MƯỜI NĂM QUYẾT ĐỊNH",
+    "anh": [
+     "Long Bien bridge",
+     "Golden Bridge Da Nang"
+    ],
+    "loi": "Mười phần trăm không phải khẩu hiệu cho đẹp. Nó là tốc độ để kịp giàu trước khi già. Và mười năm tới, có lẽ là cơ hội lớn nhất của cả thế hệ chúng ta.",
+    "loi_doc": "Mười phần trăm không phải khẩu hiệu cho đẹp. Nó là tốc độ để kịp giàu trước khi già. Và mười năm tới, có lẽ là cơ hội lớn nhất của cả thế hệ chúng ta."
+   }
+  ],
+  "cau_hoi": {
+   "chu_to": "ANH CHỊ THẤY SAO?",
+   "loi": "Anh chị để lại bình luận cho em biết nhé: năm nay anh chị thấy kiếm tiền dễ hơn hay khó hơn năm ngoái?",
+   "loi_doc": "Anh chị để lại bình luận cho em biết nhé: năm nay anh chị thấy kiếm tiền dễ hơn hay khó hơn năm ngoái?"
+  },
+  "short_caption": "GDP quý 3 tăng 9,95%, sao nhiều người vẫn thấy kiếm tiền khó hơn? Lương tăng 9,9% nhưng giá cả tăng 4,8%, căn hộ Hà Nội tăng bình quân khoảng 26%/năm, vàng 9 tháng tăng 42,67%. Người có tài sản giàu nhanh, người chỉ có lương bị bỏ lại. Và vì sao Việt Nam vẫn phải tăng trưởng hai con số: đồng hồ dân số đang đếm ngược.\n\nNguồn: Cục Thống kê, Savills Hà Nội, Nghị quyết Đại hội XIV, Cục Thống kê – UNFPA (12/2025), Ngân hàng Thế giới.\nQuan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [
+   "chungkhoan",
+   "kinhte",
+   "vimo",
+   "vietnam"
+  ],
+  "keo_web": null
  }
 ]
