@@ -40,8 +40,10 @@ if not g.get("NO_CTA") and not any(x.get("cta") for x in raw) and len(raw) >= 6:
     raw = list(raw); raw.insert(max(2, len(raw)//4), dict(CTA_WEB)); raw.insert(len(raw)*2//3, dict(CTA_GIUA))
     raw.insert(len(raw) - 1 if raw[-1].get("k") == "end" else len(raw), dict(CTA_CUOI))
 import xung_ho  # xưng em – anh chị, không gọi "bạn" (anh Huy chốt 6/11)
+_MT_DOC = re.compile(r"[^.!?]*(?:không phải (?:là )?khuyến nghị|quan điểm cá nhân|chia sẻ kiến thức, không)[^.!?]*[.!?]?\s*", re.I)
+# anh Huy 7/11: câu miễn trừ chỉ ghi CHỮ NHỎ trên hình, KHÔNG đọc thành lời
 for _x in raw:
-    _x["say"] = xung_ho.le_phep(_doc_web(_x.get("say", "")))
+    _x["say"] = re.sub(r"\s{2,}", " ", _MT_DOC.sub(" ", xung_ho.le_phep(_doc_web(_x.get("say", ""))))).strip()
     if isinstance(_x.get("cap"), (list, tuple)): _x["cap"] = tuple(xung_ho.le_phep(c) for c in _x["cap"])
     elif isinstance(_x.get("cap"), str): _x["cap"] = xung_ho.le_phep(_x["cap"])
 try:
