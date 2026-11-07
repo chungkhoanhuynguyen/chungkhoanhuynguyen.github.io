@@ -201,7 +201,7 @@ def main():
         tts.save(np.asarray(tts.infer((bo_mien_tru(c.get("loi_doc") or c.get("loi")) or ".").strip(), voice=VOICE, temperature=0.7), dtype=np.float32), src)
         pad = 0.18 + (0.9 if i == len(R["canh"]) - 1 else 0)
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", src, "-af",
-            "silenceremove=start_periods=1:start_threshold=-40dB:start_silence=0.05,areverse,silenceremove=start_periods=1:start_threshold=-40dB:start_silence=0.08,areverse,atempo=1.08,apad=pad_dur=%.2f" % pad,
+            "silenceremove=start_periods=1:start_threshold=-40dB:start_silence=0.05,areverse,silenceremove=start_periods=1:start_threshold=-40dB:start_silence=0.08,areverse,atempo=%.2f,apad=pad_dur=%.2f" % (float(R.get("toc", 1.08)), pad),
             "-ar", "44100", "-ac", "1", dst])
         with wave.open(dst) as w: b.append(b[-1] + w.getnframes() / w.getframerate())
         parts.append(dst)
@@ -220,7 +220,7 @@ def main():
     p.stdin.close(); p.wait()
     out = os.path.join(OUT, key + ".mp4")
     try:
-        import music; music.mix(tmp, b, out, music_db=-17)
+        import music; music.mix(tmp, b, out, music_db=R.get("music_db", -17), lofi=(R.get("nhac") == "lofi"))
     except Exception as e:
         print("nhac: bo qua", e, flush=True); os.replace(tmp, out)
     khung(R, 0, 1.5, 4, phs[0], 1.5, b[-1]).resize((540, 960), Image.LANCZOS).save(os.path.join(OUT, key + "_bia.png"))
