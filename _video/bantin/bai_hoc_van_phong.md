@@ -25,3 +25,10 @@ Cập nhật mỗi Chủ nhật (QL1) và ngay khi anh Huy góp ý. NV1 đọc f
 ## 6/11 – bài học của QL1 (anh Huy nhắc "từ đầu không bổ sung luôn")
 - Khi dựng chương trình mới: rà HẾT nguồn dữ liệu web đang có (mw, mwh, rs, news, wm, mac, vimo…) và đưa vào ngay bản đầu, không chờ anh Huy nhắc.
 - Ngày thế giới biến động mạnh (chỉ số lớn ±2% trở lên) thì tin thế giới lên câu mở, không để cuối.
+
+## 7/11 – Video dài YouTube (anh Huy chê "đang ngang đổi sang dọc", nhạc to, thumb chưa chuẩn)
+- Cảnh chữ video ngang phải là ảnh tràn khung 16:9 (land_text.py), cấm dán khung dọc reel vào giữa.
+- Nhạc nền: chuẩn hoá RMS, thấp hơn giọng ~20 dB; video kể chuyện dùng lo-fi cả bài ("nhac": "lofi" trong meta.json).
+- Bìa: giữ đúng 2 dòng bia_hook + nhãn đỏ (badge); không dùng ký tự →; không nến giả lập khi có ảnh thật.
+- Trước khi giao: rút 12 khung (ffmpeg tile) xem tận mắt + đo âm lượng, rồi mới tải lên.
+- Thay video đã hẹn: tải bản mới cùng giờ rồi chuyển bản cũ sang Riêng tư (không xoá).
