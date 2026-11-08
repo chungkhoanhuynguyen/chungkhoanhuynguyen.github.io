@@ -13,7 +13,7 @@ BG = (24, 12, 44); MAU = {"tim": (124, 58, 237), "tim2": (196, 140, 255), "vang"
 MO = (170, 160, 200)
 
 def so(v, dv="", nd=None):
-    if nd is None: nd = 0 if abs(v) >= 100 else 2
+    if nd is None: nd = 0 if abs(v) >= 100 else 1
     s = f"{v:,.{nd}f}".replace(",", "§").replace(".", ",").replace("§", ".")
     return s + dv
 
@@ -26,14 +26,19 @@ def nen(sp, t):
     return im, d
 
 def cot(sp, t):
-    im, d = nen(sp, t); rows = sp["hang"]; n = len(rows); mx = sp.get("max") or max(v for _, v in rows) * 1.15
-    x0, x1 = 110, W - 110; bw = (x1 - x0) / n; yb = H - 150; top = 200; hl = set(sp.get("noi", []))
+    im, d = nen(sp, t); rows = sp["hang"]; n = len(rows)
+    mxp = max([v for _, v in rows] + [0]); mxn = -min([v for _, v in rows] + [0]); mx = sp.get("max") or (mxp + mxn) * 1.15 or 1
+    x0, x1 = 110, W - 110; bw = (x1 - x0) / n; top = 200; bot = H - 150; hl = set(sp.get("noi", []))
+    yb = top + (bot - top) * (mxp * 1.08 / ((mxp + mxn) * 1.08 or 1)) if mxn else bot   # trục 0 (có số âm thì trục nâng lên)
     for i, (lab, v) in enumerate(rows):
         a = ease((t - 0.3 - i * 0.35) / 0.9)
-        h = (yb - top) * v / mx * a; cx = x0 + bw * i + bw / 2; c = MAU["vang"] if i in hl else MAU["tim"]
-        if a > 0: d.rounded_rectangle([cx - bw * 0.32, yb - max(h, 4), cx + bw * 0.32, yb], 14, fill=c)
-        d.text((cx, yb + 16), lab, font=F("Bold", 32), fill=MO, anchor="ma")
-        if a > 0.05: d.text((cx, yb - h - 62), so(v * a, sp.get("dv", "")), font=F("Black", 46), fill=MAU["trang"], anchor="ma")
+        h = (bot - top) / 1.15 * v / mx * a; cx = x0 + bw * i + bw / 2
+        c = MAU["do"] if v < 0 else (MAU["vang"] if i in hl else MAU["tim"])
+        if a > 0:
+            y_a, y_b = (yb - max(h, 4), yb) if v >= 0 else (yb, yb - h)
+            d.rounded_rectangle([cx - bw * 0.32, y_a, cx + bw * 0.32, max(y_b, y_a + 4)], 14, fill=c)
+        d.text((cx, (yb + 16) if v >= 0 else (yb - 56)), lab, font=F("Bold", 32), fill=MO, anchor="ma")
+        if a > 0.05: d.text((cx, (yb - h - 62) if v >= 0 else (yb - h + 14)), so(v * a, sp.get("dv", "")), font=F("Black", 46), fill=MAU["trang"], anchor="ma")
     return im
 
 def thang(sp, t):
