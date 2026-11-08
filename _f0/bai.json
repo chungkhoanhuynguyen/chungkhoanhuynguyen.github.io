@@ -30380,6 +30380,18 @@
     ]
    ],
    [
+    "h2",
+    "Cách đọc trong 3 bước"
+   ],
+   [
+    "ol",
+    [
+     "So với tổng tài sản và với chính doanh nghiệp các kỳ trước: VNM tại 30/9/2026 là 497,6 tỷ, gần mức 444,0 tỷ cuối năm 2025, chỉ chưa tới 1% tổng tài sản – bình thường với doanh nghiệp sản xuất.",
+     "Đối chiếu với hàng tồn kho và chi phí xây dựng cơ bản dở dang các quý sau: khoản trả trước đúng nghĩa sẽ chuyển thành hàng hoặc tài sản, rồi giảm xuống.",
+     "Đọc thuyết minh tên đối tác: nếu là công ty liên quan đến cổ đông lớn, khoản trả trước kéo dài là dấu hiệu tiền có thể đang bị dùng ngoài mục đích kinh doanh."
+    ]
+   ],
+   [
     "p",
     "Trả trước cho người bán làm tăng nhu cầu <a href=\"/f0/von-luu-dong-la-gi.html\">vốn lưu động</a>, nên thường làm dòng tiền kinh doanh kỳ đó yếu đi."
    ]
@@ -30466,6 +30478,14 @@
    [
     "p",
     "Số liệu từ báo cáo tài chính hợp nhất các kỳ đến 30/9/2026, đơn vị tỷ đồng."
+   ],
+   [
+    "h2",
+    "Cách tính tỷ lệ trích quỹ"
+   ],
+   [
+    "p",
+    "Lấy số quỹ được đại hội cổ đông duyệt trích chia cho lợi nhuận sau thuế của năm trước, thường thấy trong tờ trình phân phối lợi nhuận. Nhiều doanh nghiệp trích vài phần trăm; tỷ lệ cao bất thường so với các năm trước và so với doanh nghiệp cùng ngành là điều cổ đông nên hỏi tại đại hội. Quỹ thường tăng lên sau khi trích, rồi giảm dần trong năm khi được chi cho người lao động – vì vậy so sánh nên làm ở cùng thời điểm của mỗi năm, không so quý đầu năm với quý cuối năm."
    ],
    [
     "h2",
@@ -30566,6 +30586,14 @@
     ]
    ],
    [
+    "h2",
+    "Dự phòng đi vào lợi nhuận thế nào"
+   ],
+   [
+    "p",
+    "Khi trích thêm dự phòng, phần tăng thêm được ghi vào chi phí quản lý doanh nghiệp trong quý, làm lợi nhuận giảm dù doanh nghiệp chưa mất tiền mặt. Ngược lại, khi khách trả được nợ cũ, phần dự phòng không còn cần được hoàn nhập, ghi giảm chi phí và làm lợi nhuận quý đó tăng. Vì vậy nếu chi phí quản lý doanh nghiệp một quý thấp bất thường, hãy kiểm tra có khoản hoàn nhập dự phòng hay không trước khi kết luận doanh nghiệp tiết kiệm chi phí."
+   ],
+   [
     "p",
     "Kết hợp với <a href=\"/f0/ky-thu-tien-binh-quan.html\">kỳ thu tiền bình quân</a> để thấy doanh nghiệp đang thu tiền nhanh hay chậm đi."
    ]
@@ -30659,6 +30687,18 @@
      "Khoản cho mượn, hợp tác đầu tư không có tài sản đảm bảo: rủi ro không thu hồi cao hơn bán hàng thông thường.",
      "Biến động lớn giữa các kỳ: tìm nguyên nhân trong thuyết minh (chuyển nhượng, thu hồi, phân loại lại).",
      "Ngược lại, khoản ký quỹ đặc thù ngành như hàng không, hay lãi tiền gửi dự thu của doanh nghiệp nhiều tiền mặt, là bình thường."
+    ]
+   ],
+   [
+    "h2",
+    "Cách đọc trong 3 bước"
+   ],
+   [
+    "ol",
+    [
+     "So với tổng tài sản và vốn chủ sở hữu: VNM tại 30/9/2026 là 440,1 tỷ, giảm từ 915,9 tỷ cuối năm 2025, dưới 1% tổng tài sản.",
+     "Xem xu hướng nhiều quý: tăng đều mà không giải thích được thì đọc kỹ thuyết minh; giảm mạnh thì xem tiền thu về hay chuyển sang khoản mục khác.",
+     "Đọc danh sách đối tượng phải thu trong thuyết minh: tạm ứng cá nhân lớn, cho bên liên quan mượn tiền, hay đặt cọc mua dự án là các trường hợp cần thận trọng."
     ]
    ],
    [
@@ -31599,6 +31639,601 @@
    [
     "p",
     "Bank run là cuộc khủng hoảng niềm tin diễn ra nhanh. Người đầu tư cổ phiếu ngân hàng nên theo dõi cả thanh khoản và cơ cấu nguồn vốn, và luôn giới hạn tỷ trọng cả nhóm ngân hàng."
+   ]
+  ]
+ },
+ {
+  "slug": "tai-san-sinh-hoc-la-gi",
+  "kw": "tài sản sinh học là gì",
+  "grp": 3,
+  "title": "Tài sản sinh học là gì? Dòng mới trên báo cáo tài chính 2026",
+  "desc": "Tài sản sinh học là vật nuôi, cây trồng doanh nghiệp đang nuôi trồng. Cách đọc dòng mới trên BCTC 2026 với ví dụ VNM, BAF, DBC, HAG.",
+  "body": [
+   [
+    "p",
+    "<b>Tài sản sinh học</b> là con vật nuôi và cây trồng mà doanh nghiệp đang nuôi, trồng để bán hoặc để lấy sản phẩm: đàn heo thịt, đàn bò sữa, vườn cây ăn trái, cây mía. Từ năm tài chính 2026, chế độ kế toán doanh nghiệp mới (Thông tư 99/2025/TT-BTC) tách nhóm này thành dòng riêng trên <a href=\"/f0/bang-can-doi-ke-toan-la-gi.html\">bảng cân đối kế toán</a>, nên nhiều người mới đọc báo cáo quý 1/2026 thấy một dòng lạ chưa từng có."
+   ],
+   [
+    "h2",
+    "Ngắn hạn và dài hạn khác nhau thế nào"
+   ],
+   [
+    "ul",
+    [
+     "<b>Tài sản sinh học ngắn hạn</b>: con vật, cây trồng cho sản phẩm một lần, quay vòng dưới 12 tháng – ví dụ heo thịt, gà thịt, cây trồng theo mùa vụ.",
+     "<b>Tài sản sinh học dài hạn</b>: con vật, cây trồng cho sản phẩm định kỳ nhiều năm – ví dụ bò sữa, heo nái, cây cao su, cây ăn trái lâu năm. Nhóm này được chia tiếp thành giai đoạn chưa trưởng thành và đã trưởng thành, có nguyên giá và khấu hao lũy kế giống tài sản cố định."
+    ]
+   ],
+   [
+    "p",
+    "Trước năm 2026, các khoản này vẫn có nhưng nằm lẫn trong <a href=\"/f0/hang-ton-kho-la-gi.html\">hàng tồn kho</a> (heo thịt) hoặc <a href=\"/f0/tai-san-co-dinh-la-gi.html\">tài sản cố định</a> (bò sữa, vườn cây). Vì vậy khi so sánh với năm 2025, đừng vội kết luận tài sản cố định hay tồn kho \"giảm mạnh\" – có thể chỉ là chuyển dòng."
+   ],
+   [
+    "h2",
+    "Ví dụ tại 30/9/2026"
+   ],
+   [
+    "ul",
+    [
+     "VNM: tài sản sinh học dài hạn 1.633,0 tỷ (đàn bò cho sữa: chưa trưởng thành 520,0 tỷ, đã trưởng thành 1.113,1 tỷ) và ngắn hạn 327,8 tỷ. Tài sản cố định hữu hình của VNM giảm từ 11.618,1 tỷ (31/12/2025) xuống 10.336,3 tỷ (31/3/2026), cùng quý dòng tài sản sinh học dài hạn 1.563,9 tỷ xuất hiện – phù hợp với việc đàn bò được tách khỏi tài sản cố định.",
+     "BAF: ngắn hạn 2.753,2 tỷ, gần gấp đôi mức 1.432,9 tỷ tại 31/3/2026; dài hạn 724,8 tỷ. Tổng khoảng 3.478 tỷ, bằng khoảng 24% tổng tài sản 14.274,1 tỷ.",
+     "DBC: ngắn hạn 1.877,7 tỷ, dài hạn 740,0 tỷ – khoảng 14% tổng tài sản 18.535,7 tỷ.",
+     "HAG: ngắn hạn 506,6 tỷ, dài hạn 166,7 tỷ – khoảng 2,3% tổng tài sản.",
+     "HPG: ngắn hạn 1.063,4 tỷ, tăng từ 473,3 tỷ tại 30/6/2026 (mảng nông nghiệp)."
+    ]
+   ],
+   [
+    "p",
+    "Số liệu từ báo cáo tài chính hợp nhất các kỳ đến 30/9/2026, đơn vị tỷ đồng."
+   ],
+   [
+    "h2",
+    "Nhà đầu tư nên đọc dòng này ra sao"
+   ],
+   [
+    "ol",
+    [
+     "Xem tỷ trọng trên tổng tài sản: với doanh nghiệp chăn nuôi như BAF, DBC, đây là tài sản chính, biến động giá heo tác động trực tiếp lên giá trị dòng này và lên lợi nhuận.",
+     "So với doanh thu: tài sản sinh học ngắn hạn tăng nhanh hơn doanh thu nhiều quý có thể là đàn đang tăng quy mô (chuẩn bị bán), cũng có thể là hàng chưa bán được.",
+     "Đọc thuyết minh về dự phòng và dịch bệnh: dịch tả heo, lở mồm long móng có thể buộc doanh nghiệp tiêu hủy đàn và ghi giảm giá trị.",
+     "Nhóm dài hạn có khấu hao: bò sữa, heo nái khấu hao theo thời gian cho sản phẩm, làm tăng chi phí giống như <a href=\"/f0/khau-hao-la-gi.html\">khấu hao</a> máy móc."
+    ]
+   ],
+   [
+    "p",
+    "Đọc thêm về đặc thù ngành tại <a href=\"/f0/co-phieu-chan-nuoi.html\">cổ phiếu chăn nuôi</a>."
+   ]
+  ],
+  "faq": [
+   [
+    "Tài sản sinh học có phải hàng tồn kho không?",
+    "Từ năm 2026 thì không còn ghi chung. Tài sản sinh học là dòng riêng; trước đó, heo thịt hay cây trồng ngắn ngày thường được ghi trong hàng tồn kho."
+   ],
+   [
+    "Vì sao báo cáo năm 2025 không có dòng này?",
+    "Vì dòng tài sản sinh học tách riêng theo chế độ kế toán mới áp dụng từ năm tài chính 2026. Số năm 2025 vẫn nằm trong tồn kho hoặc tài sản cố định."
+   ],
+   [
+    "Doanh nghiệp nào có tài sản sinh học lớn?",
+    "Chủ yếu là chăn nuôi, sữa, nông nghiệp. Tại 30/9/2026, BAF có khoảng 3.478 tỷ, DBC khoảng 2.618 tỷ, VNM khoảng 1.961 tỷ."
+   ]
+  ],
+  "rel": [
+   "hang-ton-kho-la-gi",
+   "tai-san-co-dinh-la-gi",
+   "co-phieu-chan-nuoi",
+   "bang-can-doi-ke-toan-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Tài sản sinh học là vật nuôi, cây trồng – dòng riêng từ năm 2026.",
+     "Ngắn hạn cho sản phẩm một lần, dài hạn cho sản phẩm định kỳ và có khấu hao.",
+     "So với năm 2025 cần nhớ là chuyển dòng, không phải tài sản biến mất."
+    ]
+   ]
+  ]
+ },
+ {
+  "slug": "cac-khoan-giam-tru-doanh-thu-la-gi",
+  "kw": "các khoản giảm trừ doanh thu là gì",
+  "grp": 3,
+  "title": "Các khoản giảm trừ doanh thu là gì? Đọc đúng doanh thu thuần",
+  "desc": "Giảm trừ doanh thu gồm chiết khấu thương mại, giảm giá, hàng bán bị trả lại. Cách tính tỷ lệ và ví dụ VNM, SAB, HPG, DGW, KDH năm 2026.",
+  "body": [
+   [
+    "p",
+    "<b>Các khoản giảm trừ doanh thu</b> là phần doanh nghiệp phải trừ khỏi tổng doanh thu bán hàng để ra <b>doanh thu thuần</b>. Đây là dòng thứ hai trên <a href=\"/f0/bao-cao-ket-qua-kinh-doanh-la-gi.html\">báo cáo kết quả kinh doanh</a>, ngay dưới tổng doanh thu. Phần lớn số liệu \"doanh thu\" báo chí nhắc đến là doanh thu thuần, tức đã trừ dòng này."
+   ],
+   [
+    "h2",
+    "Gồm những gì"
+   ],
+   [
+    "ul",
+    [
+     "<b>Chiết khấu thương mại</b>: giảm giá cho khách mua số lượng lớn, đại lý đạt doanh số.",
+     "<b>Giảm giá hàng bán</b>: giảm cho khách vì hàng lỗi, sai quy cách, giao chậm.",
+     "<b>Hàng bán bị trả lại</b>: khách trả hàng, doanh nghiệp hoàn tiền hoặc trừ công nợ."
+    ]
+   ],
+   [
+    "p",
+    "Công thức: <b>Doanh thu thuần = Tổng doanh thu − Các khoản giảm trừ</b>. Tỷ lệ cần xem: giảm trừ chia tổng doanh thu."
+   ],
+   [
+    "h2",
+    "Ví dụ thực tế năm 2026"
+   ],
+   [
+    "ul",
+    [
+     "VNM quý 3/2026: giảm trừ 7,2 tỷ trên tổng doanh thu 18.472,4 tỷ – chỉ khoảng 0,04%.",
+     "HPG quý 3/2026: 454,9 tỷ trên 62.669,1 tỷ – khoảng 0,7%.",
+     "SAB quý 3/2026: 94,6 tỷ trên 6.778,7 tỷ – khoảng 1,4%; quý 2/2026 là 126,0 tỷ trên 7.014,0 tỷ.",
+     "DGW: quý 3/2026 là 115,2 tỷ trên 11.137,5 tỷ (khoảng 1,0%), nhưng quý 2/2026 lên 288,1 tỷ trên 7.561,4 tỷ (khoảng 3,8%) và quý 4/2025 là 302,2 tỷ (khoảng 3,6%) – với nhà phân phối, chiết khấu và hàng trả lại dao động theo chính sách bán hàng từng quý.",
+     "KDH quý 2/2026: giảm trừ 77,9 tỷ trên tổng doanh thu 238,5 tỷ – gần một phần ba. Với doanh nghiệp bất động sản, quý ít bàn giao mà có thanh lý hợp đồng thì tỷ lệ có thể rất cao; cần đọc thuyết minh."
+    ]
+   ],
+   [
+    "p",
+    "Số liệu từ báo cáo tài chính hợp nhất các kỳ đến 30/9/2026, đơn vị tỷ đồng."
+   ],
+   [
+    "h2",
+    "Khi nào cần để ý"
+   ],
+   [
+    "ol",
+    [
+     "Tỷ lệ giảm trừ tăng đột ngột so với các quý trước: có thể doanh nghiệp phải chiết khấu mạnh để đẩy hàng, hoặc khách trả lại nhiều.",
+     "Doanh thu tổng tăng nhưng doanh thu thuần tăng chậm hơn: tăng trưởng một phần đến từ chiết khấu, biên lợi nhuận sẽ chịu áp lực.",
+     "Giảm trừ lớn ở quý đầu năm sau một quý cuối năm doanh thu kỷ lục: dấu hiệu hàng đẩy cho đại lý cuối năm bị trả lại.",
+     "So sánh trong cùng ngành: bán lẻ, phân phối, đồ uống thường có chiết khấu đều đặn; thép, sữa thường thấp."
+    ]
+   ],
+   [
+    "p",
+    "Sau dòng này, đọc tiếp <a href=\"/f0/gia-von-hang-ban-la-gi.html\">giá vốn hàng bán</a> và <a href=\"/f0/bien-loi-nhuan-gop-la-gi.html\">biên lợi nhuận gộp</a> – các tỷ lệ này đều tính trên doanh thu thuần."
+   ],
+   [
+    "p",
+    "Một mẹo nhỏ: khi đọc tin \"doanh thu kỷ lục\", hãy mở báo cáo xem đó là tổng doanh thu hay doanh thu thuần, và giảm trừ quý đó có cao bất thường không."
+   ]
+  ],
+  "faq": [
+   [
+    "Doanh thu báo chí đưa là doanh thu tổng hay thuần?",
+    "Thường là doanh thu thuần, tức đã trừ các khoản giảm trừ. Khi so sánh, nên dùng cùng một loại cho mọi kỳ."
+   ],
+   [
+    "Chiết khấu thanh toán có nằm trong giảm trừ doanh thu không?",
+    "Không. Chiết khấu cho khách trả tiền sớm thường ghi vào chi phí tài chính, khác với chiết khấu thương mại nằm trong giảm trừ doanh thu."
+   ],
+   [
+    "Tỷ lệ giảm trừ bao nhiêu là cao?",
+    "Không có mốc chung. Hãy so với chính doanh nghiệp các quý trước và với doanh nghiệp cùng ngành; tăng đột biến mới là điều cần tìm hiểu."
+   ]
+  ],
+  "rel": [
+   "bao-cao-ket-qua-kinh-doanh-la-gi",
+   "gia-von-hang-ban-la-gi",
+   "bien-loi-nhuan-gop-la-gi",
+   "khoan-phai-thu-khach-hang-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Giảm trừ = chiết khấu thương mại + giảm giá + hàng bị trả lại.",
+     "Doanh thu thuần mới là con số dùng để tính biên lợi nhuận.",
+     "Theo dõi tỷ lệ giảm trừ qua nhiều quý để phát hiện đẩy hàng."
+    ]
+   ]
+  ]
+ },
+ {
+  "slug": "dau-tu-tai-chinh-ngan-han-la-gi",
+  "kw": "đầu tư tài chính ngắn hạn là gì",
+  "grp": 3,
+  "title": "Đầu tư tài chính ngắn hạn là gì? Tiền gửi, chứng khoán trên BCTC",
+  "desc": "Đầu tư tài chính ngắn hạn gồm tiền gửi kỳ hạn dưới 12 tháng và chứng khoán kinh doanh. Ví dụ VNM, SAB, GAS, HPG, FRT tại 30/9/2026.",
+  "body": [
+   [
+    "p",
+    "<b>Các khoản đầu tư tài chính ngắn hạn</b> là tiền doanh nghiệp đem đầu tư với thời hạn còn lại không quá 12 tháng: chủ yếu là tiền gửi ngân hàng kỳ hạn trên 3 tháng, ngoài ra có cổ phiếu, trái phiếu mua để bán kiếm lời. Dòng này nằm trong tài sản ngắn hạn, ngay dưới <a href=\"/f0/tien-va-tuong-duong-tien-la-gi.html\">tiền và tương đương tiền</a>."
+   ],
+   [
+    "h2",
+    "Thường gồm ba phần"
+   ],
+   [
+    "ul",
+    [
+     "<b>Chứng khoán kinh doanh</b>: cổ phiếu, trái phiếu mua để bán lại – giá trị dao động theo thị trường.",
+     "<b>Dự phòng giảm giá chứng khoán kinh doanh</b>: ghi âm khi giá thị trường thấp hơn giá gốc.",
+     "<b><a href=\"/f0/dau-tu-giu-den-ngay-dao-han-la-gi.html\">Đầu tư giữ đến ngày đáo hạn</a></b>: tiền gửi có kỳ hạn, trái phiếu giữ tới hạn – ở hầu hết doanh nghiệp sản xuất, đây là phần lớn nhất."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ tại 30/9/2026"
+   ],
+   [
+    "ul",
+    [
+     "VNM: 22.926,0 tỷ, gần như toàn bộ là giữ đến ngày đáo hạn (22.925,6 tỷ), gấp hơn 6 lần tiền và tương đương tiền 3.612,0 tỷ.",
+     "SAB: 16.133,8 tỷ, khoảng 54% tổng tài sản 29.922,1 tỷ.",
+     "GAS: 35.269,9 tỷ, khoảng 34% tổng tài sản 105.020,5 tỷ.",
+     "HPG: 39.273,9 tỷ, gấp đôi mức 19.484,4 tỷ tại 31/12/2025 – tiền dư được chuyển sang gửi có kỳ hạn.",
+     "FRT: 11.273,2 tỷ, tăng từ 5.929,0 tỷ cuối năm 2025.",
+     "MCH: 5.766,6 tỷ, trong đó giữ đến ngày đáo hạn 3.263,7 tỷ – phần còn lại là các khoản đầu tư khác, cần xem thuyết minh."
+    ]
+   ],
+   [
+    "p",
+    "Số liệu từ báo cáo tài chính hợp nhất các kỳ đến 30/9/2026, đơn vị tỷ đồng."
+   ],
+   [
+    "h2",
+    "Vì sao nhà đầu tư nên quan tâm"
+   ],
+   [
+    "ol",
+    [
+     "Tính tiền ròng đúng: nhiều doanh nghiệp để tiền ở tiền gửi kỳ hạn chứ không ở dòng tiền mặt. Khi tính <a href=\"/f0/tien-rong-va-no-rong-la-gi.html\">tiền ròng</a>, nên cộng cả tiền gửi ngắn hạn, nếu không sẽ đánh giá thấp lượng tiền thật.",
+     "Nguồn của doanh thu tài chính: khoản tiền gửi lớn tạo lãi đều mỗi quý, ghi vào <a href=\"/f0/doanh-thu-hoat-dong-tai-chinh-la-gi.html\">doanh thu hoạt động tài chính</a>. Lãi suất tiền gửi giảm thì phần lợi nhuận này cũng giảm.",
+     "Phân biệt với chứng khoán kinh doanh: nếu phần lớn là cổ phiếu, lợi nhuận có thể dao động mạnh theo thị trường, kèm dự phòng hoặc hoàn nhập.",
+     "Xem tiền có bị cầm cố không: thuyết minh có thể ghi tiền gửi dùng để bảo đảm khoản vay – khi đó không tự do sử dụng."
+    ]
+   ],
+   [
+    "p",
+    "Một cách đọc nhanh: cộng tiền và tương đương tiền với đầu tư tài chính ngắn hạn, rồi so với vay ngắn hạn. VNM tại 30/9/2026 có 3.612,0 + 22.926,0 = 26.538,0 tỷ, gấp hơn 3 lần vay ngắn hạn 8.384,7 tỷ – thanh khoản rất dồi dào."
+   ]
+  ],
+  "faq": [
+   [
+    "Đầu tư tài chính ngắn hạn có phải tiền mặt không?",
+    "Gần như vậy với tiền gửi kỳ hạn dưới 12 tháng, nhưng rút trước hạn có thể mất lãi. Chứng khoán kinh doanh thì không chắc chắn giá trị như tiền."
+   ],
+   [
+    "Vì sao doanh nghiệp không để hết ở dòng tiền?",
+    "Tiền gửi kỳ hạn trên 3 tháng có lãi suất cao hơn tiền gửi không kỳ hạn, và theo quy định kế toán phải ghi ở đầu tư ngắn hạn chứ không ở tương đương tiền."
+   ],
+   [
+    "Khoản này tăng mạnh là tốt hay xấu?",
+    "Thường là doanh nghiệp dư tiền. Nhưng nên xem tiền đến từ đâu: từ lợi nhuận kinh doanh thì tốt, từ vay nợ hay phát hành cổ phiếu thì cần đọc thêm."
+   ]
+  ],
+  "rel": [
+   "tien-va-tuong-duong-tien-la-gi",
+   "dau-tu-giu-den-ngay-dao-han-la-gi",
+   "tien-rong-va-no-rong-la-gi",
+   "doanh-thu-hoat-dong-tai-chinh-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Phần lớn là tiền gửi có kỳ hạn và trái phiếu giữ tới hạn.",
+     "Cộng vào tiền khi đánh giá sức mạnh tài chính.",
+     "Tách riêng phần chứng khoán kinh doanh vì giá trị dao động."
+    ]
+   ]
+  ]
+ },
+ {
+  "slug": "no-phai-tra-la-gi",
+  "kw": "nợ phải trả là gì",
+  "grp": 3,
+  "title": "Nợ phải trả là gì? Không phải nợ nào cũng là nợ vay",
+  "desc": "Nợ phải trả gồm nợ vay và các khoản chiếm dụng như phải trả người bán, chi phí phải trả, thuế. Cách đọc với ví dụ VNM, SAB, VJC, FRT, KDH.",
+  "body": [
+   [
+    "p",
+    "<b>Nợ phải trả</b> là toàn bộ nghĩa vụ doanh nghiệp phải thanh toán cho người khác: ngân hàng, nhà cung cấp, người lao động, Nhà nước, cổ đông được chia cổ tức. Trên <a href=\"/f0/bang-can-doi-ke-toan-la-gi.html\">bảng cân đối kế toán</a>, tổng tài sản luôn bằng nợ phải trả cộng <a href=\"/f0/von-chu-so-huu-la-gi.html\">vốn chủ sở hữu</a>."
+   ],
+   [
+    "h2",
+    "Hai nhóm cần tách ra"
+   ],
+   [
+    "ul",
+    [
+     "<b>Nợ vay có lãi</b>: <a href=\"/f0/vay-ngan-han-va-dai-han-la-gi.html\">vay ngắn hạn và dài hạn</a>, trái phiếu phát hành – phải trả lãi, đến hạn phải trả gốc.",
+     "<b>Nợ chiếm dụng không lãi</b>: <a href=\"/f0/phai-tra-nguoi-ban-la-gi.html\">phải trả người bán</a>, người mua trả tiền trước, chi phí phải trả, thuế phải nộp, phải trả người lao động. Đây là tiền của người khác doanh nghiệp đang dùng tạm, thường không tốn lãi."
+    ]
+   ],
+   [
+    "p",
+    "Hai doanh nghiệp cùng nợ phải trả 50% tổng tài sản có thể rủi ro rất khác nhau: một bên chủ yếu nợ ngân hàng, bên kia chủ yếu nợ nhà cung cấp và khách trả trước."
+   ],
+   [
+    "h2",
+    "Ví dụ tại 30/9/2026"
+   ],
+   [
+    "ul",
+    [
+     "VNM: nợ phải trả 19.628,2 tỷ, trong đó vay ngắn và dài hạn khoảng 8.482,1 tỷ (khoảng 43%); phần còn lại chủ yếu là phải trả người bán 4.388,4 tỷ, chi phí phải trả 2.474,0 tỷ, thuế phải nộp 2.110,9 tỷ.",
+     "SAB: nợ phải trả 10.267,2 tỷ tại 30/6/2026, trong đó cổ tức phải trả 3.905,5 tỷ; sau khi chi trả, còn 7.238,4 tỷ tại 30/9/2026, khoảng 24% tổng tài sản.",
+     "GAS: 30.402,3 tỷ, khoảng 29% tổng tài sản 105.020,5 tỷ.",
+     "VJC: 126.209,9 tỷ, khoảng 83% tổng tài sản 152.790,0 tỷ – hàng không dùng nhiều nợ cho tàu bay.",
+     "FRT: 24.009,9 tỷ, khoảng 79% tổng tài sản 30.533,4 tỷ – bán lẻ dùng nhiều tiền nhà cung cấp và vay ngắn hạn cho hàng tồn kho.",
+     "KDH: 23.165,4 tỷ, tăng khoảng 79% so với 12.909,7 tỷ tại 31/12/2025."
+    ]
+   ],
+   [
+    "p",
+    "Số liệu từ báo cáo tài chính hợp nhất các kỳ đến 30/9/2026, đơn vị tỷ đồng."
+   ],
+   [
+    "h2",
+    "Cách đọc nhanh trong 3 bước"
+   ],
+   [
+    "ol",
+    [
+     "Lấy nợ phải trả chia tổng tài sản để biết mức dùng tiền của người khác; so với doanh nghiệp cùng ngành.",
+     "Tách nợ vay có lãi, tính <a href=\"/f0/he-so-no-de-la-gi.html\">hệ số nợ D/E</a> theo nợ vay để thấy rủi ro lãi suất.",
+     "Xem nợ tăng vì sao: vay thêm để đầu tư, hay chiếm dụng nhà cung cấp nhiều hơn, hay chỉ là cổ tức đã chốt chưa chi (giảm ngay quý sau)."
+    ]
+   ],
+   [
+    "p",
+    "Nợ không xấu tự thân; điều cần tránh là nợ vay lớn trong khi dòng tiền kinh doanh yếu và tiền mặt mỏng."
+   ],
+   [
+    "p",
+    "Lưu ý ngân hàng là trường hợp đặc biệt: tiền gửi của khách hàng nằm trong nợ phải trả, nên tỷ lệ nợ trên tổng tài sản của ngân hàng thường trên 90%. Với ngân hàng, hãy đọc <a href=\"/f0/car-ngan-hang-la-gi.html\">hệ số an toàn vốn CAR</a> thay vì so tỷ lệ nợ với doanh nghiệp sản xuất."
+   ]
+  ],
+  "faq": [
+   [
+    "Nợ phải trả và nợ vay khác gì nhau?",
+    "Nợ vay là một phần của nợ phải trả, phải trả lãi. Nợ phải trả còn gồm các khoản không lãi như phải trả người bán, thuế, lương chưa trả, cổ tức chưa chi."
+   ],
+   [
+    "Nợ phải trả trên 70% tổng tài sản có đáng lo không?",
+    "Tùy ngành. Ngân hàng, hàng không, bán lẻ thường cao; doanh nghiệp sản xuất nhẹ vốn thường thấp. Cần xem phần nợ vay và dòng tiền trả nợ."
+   ],
+   [
+    "Vì sao nợ phải trả tăng mạnh rồi giảm ngay quý sau?",
+    "Một nguyên nhân hay gặp là cổ tức đã chốt quyền nhưng chưa chi được ghi vào nợ phải trả; khi chi xong, khoản này giảm."
+   ]
+  ],
+  "rel": [
+   "bang-can-doi-ke-toan-la-gi",
+   "he-so-no-de-la-gi",
+   "vay-ngan-han-va-dai-han-la-gi",
+   "phai-tra-nguoi-ban-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Tổng tài sản = nợ phải trả + vốn chủ sở hữu.",
+     "Tách nợ vay có lãi khỏi nợ chiếm dụng không lãi.",
+     "So với cùng ngành và xem lý do nợ tăng."
+    ]
+   ]
+  ]
+ },
+ {
+  "slug": "loi-nhuan-ke-toan-truoc-thue-la-gi",
+  "kw": "lợi nhuận kế toán trước thuế là gì",
+  "grp": 3,
+  "title": "Lợi nhuận kế toán trước thuế là gì? Cách đọc từ BCTC",
+  "desc": "Lợi nhuận trước thuế = lợi nhuận thuần kinh doanh + lợi nhuận khác. Cách đọc, khác EBIT ra sao, ví dụ VNM, HPG, HAG, KDH năm 2026.",
+  "body": [
+   [
+    "p",
+    "<b>Lợi nhuận kế toán trước thuế</b> (LNTT) là phần lời của doanh nghiệp trước khi trừ thuế thu nhập doanh nghiệp. Trên <a href=\"/f0/bao-cao-ket-qua-kinh-doanh-la-gi.html\">báo cáo kết quả kinh doanh</a>, dòng này đứng sau lợi nhuận khác và trước chi phí thuế. Kế hoạch lợi nhuận của nhiều doanh nghiệp tại đại hội cổ đông cũng thường đặt theo LNTT."
+   ],
+   [
+    "h2",
+    "Công thức"
+   ],
+   [
+    "p",
+    "<b>LNTT = <a href=\"/f0/loi-nhuan-thuan-tu-hoat-dong-kinh-doanh-la-gi.html\">Lợi nhuận thuần từ hoạt động kinh doanh</a> + Lợi nhuận khác</b>. Lợi nhuận khác = thu nhập khác − chi phí khác (thanh lý tài sản, tiền phạt, bồi thường…). Sau đó: lợi nhuận sau thuế = LNTT − chi phí thuế TNDN."
+   ],
+   [
+    "h2",
+    "Khác EBIT thế nào"
+   ],
+   [
+    "p",
+    "<a href=\"/f0/ebit-la-gi.html\">EBIT</a> là lợi nhuận trước lãi vay và thuế, tức cộng ngược chi phí lãi vay vào LNTT. Doanh nghiệp vay nhiều thì EBIT cao hơn LNTT rõ rệt; doanh nghiệp gần như không vay thì hai số xấp xỉ nhau."
+   ],
+   [
+    "h2",
+    "Ví dụ thực tế"
+   ],
+   [
+    "ul",
+    [
+     "VNM quý 3/2026: lợi nhuận thuần 3.702,7 tỷ + lợi nhuận khác −8,7 tỷ = LNTT 3.694,0 tỷ; trừ thuế 731,8 tỷ còn lợi nhuận sau thuế 2.962,2 tỷ. Lợi nhuận khác gần như không đáng kể – chất lượng lợi nhuận tốt.",
+     "HPG quý 3/2026: LNTT 9.108,7 tỷ, trong đó lợi nhuận khác 286,6 tỷ, khoảng 3%.",
+     "HAG quý 2/2026: lợi nhuận thuần từ kinh doanh lỗ 402,3 tỷ, nhưng lợi nhuận khác 1.529,5 tỷ kéo LNTT lên 1.127,2 tỷ.",
+     "KDH quý 3/2026: LNTT 189,0 tỷ, trong đó lợi nhuận khác 126,6 tỷ, khoảng hai phần ba."
+    ]
+   ],
+   [
+    "p",
+    "Số liệu từ báo cáo tài chính hợp nhất các kỳ đến 30/9/2026, đơn vị tỷ đồng."
+   ],
+   [
+    "h2",
+    "Ví dụ dễ hình dung"
+   ],
+   [
+    "p",
+    "Một cửa hàng bán được 1 tỷ đồng doanh thu thuần, trừ giá vốn 700 triệu, chi phí bán hàng và quản lý 150 triệu, chi phí lãi vay 20 triệu, cộng 10 triệu lãi tiền gửi: lợi nhuận thuần từ kinh doanh là 140 triệu. Năm đó cửa hàng thanh lý một chiếc xe cũ lời 30 triệu (lợi nhuận khác). LNTT là 170 triệu; nếu thuế suất 20% thì nộp 34 triệu, lợi nhuận sau thuế còn 136 triệu. Năm sau không còn xe để bán, nên phần 30 triệu không lặp lại – đó là lý do nhà đầu tư nhìn lợi nhuận thuần từ kinh doanh trước, rồi mới nhìn LNTT. Với doanh nghiệp niêm yết, các khoản như vậy được liệt kê trong thuyết minh thu nhập khác và chi phí khác."
+   ],
+   [
+    "h2",
+    "Đọc LNTT thế nào cho đúng"
+   ],
+   [
+    "ol",
+    [
+     "Luôn tách phần lợi nhuận khác: nếu chiếm tỷ trọng lớn, đó thường là khoản <a href=\"/f0/loi-nhuan-bat-thuong-la-gi.html\">lợi nhuận bất thường</a>, khó lặp lại.",
+     "So LNTT với kế hoạch năm để biết tiến độ, nhưng nhớ cộng dồn đúng các quý.",
+     "Xem chi phí thuế: <a href=\"/f0/ty-suat-thue-thuc-te-la-gi.html\">tỷ suất thuế thực tế</a> (VNM quý 3/2026 khoảng 19,8%) thay đổi bất thường cũng làm lợi nhuận sau thuế lệch khỏi LNTT.",
+     "Khi tính P/E, dùng lợi nhuận sau thuế của cổ đông công ty mẹ, không dùng LNTT."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Lợi nhuận trước thuế cao có chắc lợi nhuận sau thuế cao?",
+    "Thường đi cùng nhau, nhưng ưu đãi thuế, thuế hoãn lại hay lỗ không được khấu trừ có thể làm hai số chênh lệch."
+   ],
+   [
+    "LNTT có giống EBIT không?",
+    "Không. EBIT cộng thêm chi phí lãi vay vào LNTT, dùng để so sánh hiệu quả kinh doanh giữa doanh nghiệp vay nhiều và vay ít."
+   ],
+   [
+    "Vì sao kinh doanh lỗ mà LNTT vẫn dương?",
+    "Vì lợi nhuận khác lớn, ví dụ thanh lý tài sản, bồi thường hoặc xử lý công nợ. Phần này thường không lặp lại các quý sau."
+   ]
+  ],
+  "rel": [
+   "ebit-la-gi",
+   "loi-nhuan-thuan-tu-hoat-dong-kinh-doanh-la-gi",
+   "loi-nhuan-bat-thuong-la-gi",
+   "ty-suat-thue-thuc-te-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "LNTT = lợi nhuận thuần kinh doanh + lợi nhuận khác.",
+     "Tách lợi nhuận khác để đánh giá chất lượng lợi nhuận.",
+     "EBIT cộng thêm lãi vay; P/E dùng lợi nhuận sau thuế công ty mẹ."
+    ]
+   ]
+  ]
+ },
+ {
+  "slug": "phai-tra-co-tuc-la-gi",
+  "kw": "phải trả cổ tức là gì",
+  "grp": 3,
+  "title": "Phải trả cổ tức là gì? Vì sao nợ tăng rồi giảm sau 1 quý",
+  "desc": "Phải trả cổ tức là cổ tức đã chốt quyền nhưng chưa chi, nằm ở nợ ngắn hạn. Ví dụ VNM, SAB, GAS, PLX, DGW năm 2026 và cách đọc.",
+  "body": [
+   [
+    "p",
+    "<b>Phải trả cổ tức cho cổ đông</b> là số <a href=\"/f0/co-tuc-la-gi.html\">cổ tức tiền mặt</a> doanh nghiệp đã quyết định chia, đã chốt danh sách cổ đông nhưng chưa chuyển tiền tại ngày lập báo cáo. Khoản này nằm trong nợ ngắn hạn. Từ năm 2026, nhiều báo cáo tách nó thành dòng riêng, nên dễ theo dõi hơn trước."
+   ],
+   [
+    "h2",
+    "Vòng đời của khoản này"
+   ],
+   [
+    "ol",
+    [
+     "Hội đồng quản trị hoặc đại hội cổ đông quyết định chia cổ tức, công bố <a href=\"/f0/ngay-dang-ky-cuoi-cung-la-gi.html\">ngày đăng ký cuối cùng</a>.",
+     "Doanh nghiệp ghi giảm lợi nhuận chưa phân phối (vốn chủ) và ghi tăng phải trả cổ tức (nợ phải trả).",
+     "Đến ngày thanh toán, tiền chuyển cho cổ đông: phải trả cổ tức giảm, tiền giảm, và khoản chi xuất hiện ở <a href=\"/f0/dong-tien-tai-chinh-la-gi.html\">dòng tiền tài chính</a>."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ năm 2026"
+   ],
+   [
+    "ul",
+    [
+     "VNM: 3.874,7 tỷ tại 30/6/2026, còn 8,6 tỷ tại 30/9/2026 – cổ tức đã chi trong quý 3.",
+     "SAB: 3.905,5 tỷ tại 30/6/2026, còn 54,9 tỷ tại 30/9/2026; nhờ vậy nợ phải trả giảm từ 10.267,2 tỷ xuống 7.238,4 tỷ.",
+     "PLX: 1.622,7 tỷ tại 30/6/2026, còn 16,8 tỷ tại 30/9/2026.",
+     "GAS: 6.061,6 tỷ tại 30/6/2026 và vẫn 5.491,7 tỷ tại 30/9/2026 – cổ tức chưa chi hết tại ngày báo cáo.",
+     "DGW: 670,1 tỷ tại 30/9/2026, trong khi 30/6/2026 bằng 0 – cổ tức mới chốt trong quý 3.",
+     "REE: 846,5 tỷ tại 31/3/2026, còn 82,8 tỷ tại 30/6/2026."
+    ]
+   ],
+   [
+    "p",
+    "Số liệu từ báo cáo tài chính hợp nhất các kỳ đến 30/9/2026, đơn vị tỷ đồng."
+   ],
+   [
+    "h2",
+    "Ví dụ dễ hình dung"
+   ],
+   [
+    "p",
+    "Giả sử doanh nghiệp có 100 triệu cổ phiếu, quyết định chia cổ tức tiền mặt 2.000 đồng mỗi cổ phiếu, ngày đăng ký cuối cùng 15/9, ngày thanh toán 10/10. Tại báo cáo quý 3 (30/9), doanh nghiệp đã ghi 200 tỷ phải trả cổ tức ở nợ ngắn hạn và vốn chủ giảm 200 tỷ, nhưng tiền vẫn còn trên tài khoản. Đến báo cáo quý 4, tiền đã giảm 200 tỷ, khoản phải trả về gần 0, và dòng cổ tức đã trả xuất hiện trong lưu chuyển tiền tệ. Người chỉ nhìn quý 3 có thể nghĩ nợ tăng, tiền nhiều – thực ra khoản tiền đó đã có chủ."
+   ],
+   [
+    "h2",
+    "Nhà đầu tư rút ra được gì"
+   ],
+   [
+    "ul",
+    [
+     "Đừng nhầm nợ tăng vì cổ tức với nợ tăng vì vay: khoản này không có lãi và sẽ giảm khi chi trả.",
+     "Khi tính <a href=\"/f0/he-so-no-de-la-gi.html\">hệ số nợ</a> hay tiền ròng, nhớ rằng tiền mặt cuối quý có thể sắp giảm vì phải trả cổ tức còn lớn.",
+     "Khoản phải trả cổ tức tồn lâu nhiều quý mà không chi: cần đọc thông báo của doanh nghiệp về lịch thanh toán.",
+     "Vốn chủ sở hữu giảm ngay khi chốt quyền, không đợi ngày chi tiền – vì vậy <a href=\"/f0/bvps-la-gi.html\">giá trị sổ sách mỗi cổ phiếu</a> cũng giảm theo."
+    ]
+   ]
+  ],
+  "faq": [
+   [
+    "Phải trả cổ tức có phải nợ xấu không?",
+    "Không. Đây là nghĩa vụ đã biết trước số tiền và thời điểm, không có lãi, thường được trả hết trong vài tuần đến vài tháng."
+   ],
+   [
+    "Vì sao vốn chủ sở hữu giảm trước khi tôi nhận cổ tức?",
+    "Vì kế toán ghi giảm lợi nhuận chưa phân phối ngay khi quyết định chia và chốt quyền; tiền chỉ chuyển vào ngày thanh toán."
+   ],
+   [
+    "Cổ tức bằng cổ phiếu có ghi vào phải trả cổ tức không?",
+    "Không. Cổ tức cổ phiếu chỉ chuyển từ lợi nhuận chưa phân phối sang vốn góp, không phát sinh nghĩa vụ trả tiền."
+   ]
+  ],
+  "rel": [
+   "co-tuc-la-gi",
+   "ngay-dang-ky-cuoi-cung-la-gi",
+   "dong-tien-tai-chinh-la-gi",
+   "no-phai-tra-la-gi"
+  ],
+  "add": [
+   [
+    "h2",
+    "Tóm lại"
+   ],
+   [
+    "ul",
+    [
+     "Cổ tức đã chốt quyền nhưng chưa chi nằm ở nợ ngắn hạn.",
+     "Tăng lúc chốt quyền, giảm khi chi trả – thường trong 1 quý.",
+     "Không nhầm với nợ vay khi đánh giá đòn bẩy."
+    ]
    ]
   ]
  }
