@@ -1,0 +1,20 @@
+[{
+"key": "TN0911A",
+"tieu_de": "GDP tăng gần 10%, sao doanh nghiệp vẫn khó thở?",
+"hook": ["GDP GẦN 10%", "DN VẪN KHÓ THỞ?"],
+"nhan": "VĨ MÔ NÓNG",
+"short_caption": "GDP quý 3 tăng 9,95% nhưng 10 tháng có 56.300 doanh nghiệp giải thể, gấp đôi cùng kỳ. Tăng trưởng đang chảy về đâu và nhà đầu tư nên chọn cổ phiếu thế nào? Quan điểm cá nhân, không phải khuyến nghị đầu tư.",
+"tags": [], "keo_web": null, "toc": 1.12, "nhac": "lofi", "music_db": -2, "hieu_ung": 1,
+"cau_hoi": {"chu_to": "DN ANH CHỊ THẾ NÀO?", "loi": "Công ty anh chị năm nay dễ thở hơn hay khó hơn năm ngoái? Bình luận cho em biết nhé.", "loi_doc": "Công ty anh chị năm nay dễ thở hơn hay khó hơn năm ngoái? Bình luận cho em biết nhé."},
+"canh": [
+{"chu_to": "GDP TĂNG 9,95%", "loi": "GDP quý 3 tăng 9,95%, cao nhất nhiều năm. Vậy mà nhiều chủ doanh nghiệp vẫn kêu khó thở. Ai đang nói đúng?", "loi_doc": "GDP quý ba tăng chín phẩy chín lăm phần trăm, cao nhất nhiều năm. Vậy mà nhiều chủ doanh nghiệp vẫn kêu khó thở. Ai đang nói đúng?", "anh": "Ho Chi Minh City skyline", "chat": 1},
+{"chu_to": "56.300 DN GIẢI THỂ", "loi": "Mười tháng đầu năm, 56.300 doanh nghiệp đã giải thể, tăng gần 110% so với cùng kỳ. Gấp đôi năm ngoái.", "loi_doc": "Mười tháng đầu năm, năm mươi sáu nghìn ba trăm doanh nghiệp đã giải thể, tăng gần một trăm mười phần trăm so với cùng kỳ. Gấp đôi năm ngoái.",
+ "the": {"loai": "lon", "tieu": "10 THÁNG 2026", "nguon": "Cục Thống kê", "dong": [["56.300", 120, "do"], ["DN GIẢI THỂ", 56, "trang"], ["+109,8% CÙNG KỲ", 62, "vang"]]}},
+{"chu_to": "MỖI THÁNG 18.200 DN RỜI ĐI", "loi": "Mỗi tháng có 24.400 doanh nghiệp gia nhập, nhưng cũng có 18.200 doanh nghiệp rút lui. Cứ 4 cửa hàng mở ra thì 3 cửa hàng đóng lại.", "loi_doc": "Mỗi tháng có hai mươi tư nghìn bốn trăm doanh nghiệp gia nhập, nhưng cũng có mười tám nghìn hai trăm doanh nghiệp rút lui. Cứ bốn cửa hàng mở ra thì ba cửa hàng đóng lại.",
+ "the": {"loai": "thang", "tieu": "BÌNH QUÂN MỖI THÁNG", "nguon": "Cục Thống kê, 10 tháng 2026", "dv": " DN", "hang": [["Gia nhập, quay lại", 24400, "tim2"], ["Rút lui", 18200, "do"]]}},
+{"chu_to": "DN LỚN CÀNG LỚN", "loi": "Điều lạ là vốn bình quân mỗi doanh nghiệp mới lại tăng 34,8%, lên 13,2 tỷ. Trong khi số lao động đăng ký mới giảm 17,4%. Tiền dồn vào doanh nghiệp lớn, còn doanh nghiệp nhỏ thì chật vật.", "loi_doc": "Điều lạ là vốn bình quân mỗi doanh nghiệp mới lại tăng ba mươi tư phẩy tám phần trăm, lên mười ba phẩy hai tỷ. Trong khi số lao động đăng ký mới giảm mười bảy phẩy bốn phần trăm. Tiền dồn vào doanh nghiệp lớn, còn doanh nghiệp nhỏ thì chật vật.", "anh": "Construction site crane Vietnam", "chat": 1},
+{"chu_to": "1/5 DN SẢN XUẤT KHÓ", "loi": "Khảo sát quý 3 cho thấy cứ 5 doanh nghiệp chế biến chế tạo thì 1 doanh nghiệp đang gặp khó. Tăng trưởng cao, nhưng không chia đều cho tất cả.", "loi_doc": "Khảo sát quý ba cho thấy cứ năm doanh nghiệp chế biến chế tạo thì một doanh nghiệp đang gặp khó. Tăng trưởng cao, nhưng không chia đều cho tất cả.", "anh": "Factory workers assembly line", "chat": 1},
+{"chu_to": "BÀI HỌC CHỌN CỔ PHIẾU", "loi": "Với nhà đầu tư cũng vậy. GDP cao không có nghĩa cổ phiếu nào cũng tăng. Tiền đang chọn doanh nghiệp đầu ngành, ít nợ, dòng tiền khỏe. Doanh nghiệp yếu thì càng bị bỏ lại.", "loi_doc": "Với nhà đầu tư cũng vậy. GDP cao không có nghĩa cổ phiếu nào cũng tăng. Tiền đang chọn doanh nghiệp đầu ngành, ít nợ, dòng tiền khỏe. Doanh nghiệp yếu thì càng bị bỏ lại.",
+ "the": {"loai": "lon", "tieu": "3 CÂU HỎI TRƯỚC KHI MUA", "nguon": "", "dong": [["ĐẦU NGÀNH?", 76, "vang"], ["NỢ VAY THẤP?", 76, "trang"], ["DÒNG TIỀN DƯƠNG?", 76, "tim2"]]}}
+]
+}]
