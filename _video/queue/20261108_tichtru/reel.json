@@ -22,7 +22,8 @@
     "loi": "Em chào anh chị. Sau Iran dạy dân tránh bom hạt nhân, giờ đã có 33 nước khuyên người dân tích trữ đồ ăn, nước uống và thuốc men tại nhà.",
     "loi_doc": "Em chào anh chị. Sau Iran dạy dân tránh bom hạt nhân, giờ đã có ba mươi ba nước khuyên người dân tích trữ đồ ăn, nước uống và thuốc men tại nhà.",
     "anh": "supermarket shelves canned food",
-    "tin": 1
+    "tin": 1,
+    "chat": 1
    },
    {
     "chu_to": "ĐỨC: 10 NGÀY",
@@ -56,19 +57,22 @@
     "chu_to": "TRỮ NHỮNG GÌ?",
     "loi": "Danh sách gần như giống nhau: đồ ăn khô, đồ hộp, nước uống, thuốc thiết yếu, pin, đèn pin và radio. Na Uy còn khuyên trữ cả viên i-ốt, phòng sự cố hạt nhân.",
     "loi_doc": "Danh sách gần như giống nhau: đồ ăn khô, đồ hộp, nước uống, thuốc thiết yếu, pin, đèn pin và radio. Na Uy còn khuyên trữ cả viên i ốt, phòng sự cố hạt nhân.",
-    "anh": "emergency kit flashlight radio"
+    "anh": "Flashlight",
+    "chat": 1
    },
    {
     "chu_to": "VÌ SAO LÚC NÀY?",
     "loi": "Lý do được nêu là xung đột địa chính trị, thời tiết cực đoan và nguy cơ mất điện, đứt chuỗi cung ứng. Các chính phủ nói rõ: chuẩn bị không có nghĩa là chiến tranh sắp xảy ra.",
     "loi_doc": "Lý do được nêu là xung đột địa chính trị, thời tiết cực đoan và nguy cơ mất điện, đứt chuỗi cung ứng. Các chính phủ nói rõ: chuẩn bị không có nghĩa là chiến tranh sắp xảy ra.",
-    "anh": "power outage city night"
+    "anh": "power outage city night",
+    "chat": 1
    },
    {
     "chu_to": "MALAYSIA: KHÔNG CẦN",
     "loi": "Ngược lại, ngày 2/11 Malaysia trấn an dân rằng nước này có dự trữ lương thực ít nhất 6 tháng, không cần đi mua tích trữ. Vì chính đám đông đổ xô đi mua mới làm kệ hàng trống.",
     "loi_doc": "Ngược lại, ngày hai tháng mười một, Malaysia trấn an dân rằng nước này có dự trữ lương thực ít nhất sáu tháng, không cần đi mua tích trữ. Vì chính đám đông đổ xô đi mua mới làm kệ hàng trống.",
-    "anh": "Kuala Lumpur"
+    "anh": "Petronas Towers",
+    "chat": 1
    },
    {
     "chu_to": "BÀI HỌC CHO NHÀ ĐẦU TƯ",
