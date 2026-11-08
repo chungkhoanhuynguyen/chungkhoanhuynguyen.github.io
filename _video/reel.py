@@ -118,19 +118,33 @@ def tach(txt):
             cum.append(_chia2(ws[:n]) or [" ".join(ws[:n])]); ws = ws[n:]
     return cum
 
-def ve_phu_de(im, loi, t, T, y):
-    """Phụ đề: từng cụm 1–2 dòng căn giữa, đổi cụm theo tỉ lệ số chữ (khớp giọng đọc)."""
+XANH = (90, 240, 120); DO = (255, 92, 92)
+_DO = re.compile(r"^(giảm|mất|lỗ|sập|nghèo|khó|âm|bán|tháo|hoảng|đóng|phá|nợ)", re.I)
+_XANH = re.compile(r"^(tăng|lãi|giàu|lời|dương|hồi|mua|gom)", re.I)
+def _mau(w):
+    """Từ khoá đổi màu như video mẫu: số = vàng, xấu = đỏ, tốt = xanh."""
+    if re.search(r"\d", w): return VANG
+    if _DO.match(w): return DO
+    if _XANH.match(w): return XANH
+    return TRANG
+def ve_phu_de(im, loi, t, T, y, pop=True):
+    """Phụ đề: từng cụm 1–2 dòng căn giữa, đổi cụm theo tỉ lệ số chữ; cụm mới NẢY lên + từ khoá đổi màu (học video mẫu 9/11)."""
     cum = tach(loi)
     if not cum: return
-    L = [len(" ".join(c)) for c in cum]; tot = sum(L); a = 0; k = len(cum) - 1
+    L = [len(" ".join(c)) for c in cum]; tot = sum(L); a = 0; k = len(cum) - 1; st = 0
     for i, l in enumerate(L):
+        if t < a + l / tot * T: k = i; st = a; break
         a += l / tot * T
-        if t < a: k = i; break
-    d = ImageDraw.Draw(im); f = F("ExtraBold", PD_F); ls = cum[k]
-    y0 = y + (40 if len(ls) == 1 else 0)
+    else: st = a - L[-1] / tot * T
+    sc = 1 + (0.14 * (1 - dx2.ease(min(1, (t - st) / 0.16))) if pop else 0)
+    d = ImageDraw.Draw(im); f = F("ExtraBold", int(PD_F * sc)); ls = cum[k]; sp = d.textlength(" ", font=f)
+    y0 = y + (40 if len(ls) == 1 else 0) - int((sc - 1) * 40)
     for i, s_ in enumerate(ls):
-        tw = d.textlength(s_, font=f)
-        d.text((W/2 - tw/2, y0 + i * 80), s_, font=f, fill=TRANG, stroke_width=5, stroke_fill=(12, 4, 24))
+        ws = s_.split(); tw = d.textlength(s_, font=f); x = W/2 - tw/2
+        for w_ in ws:
+            c_ = _mau(w_)
+            d.text((x, y0 + i * 80), w_, font=f, fill=c_, stroke_width=5, stroke_fill=(12, 4, 24))
+            x += d.textlength(w_, font=f) + sp
 
 MIEN_TRU = "Nội dung chia sẻ kiến thức, không phải khuyến nghị mua bán."
 _MT = re.compile(r"\s*[^.!?]*(chia sẻ kiến thức|không phải (là )?khuyến nghị)[^.!?]*[.!?]?", re.I)
@@ -169,9 +183,41 @@ def doan(seq, t, T, force=None):
         if t < a + L or j == n - 1: return j, t - a, L
         a += L
 
+def ve_tien_do(im, i, n, t, T):
+    """Thanh tiến độ chương trên cùng: PHẦN i/n + vạch chạy (học video mẫu 9/11)."""
+    d = ImageDraw.Draw(im, "RGBA"); f = F("Bold", 24); s_ = "PHẦN %d/%d" % (i + 1, n); tw = d.textlength(s_, font=f)
+    x0, x1, y0 = 250, W - 250, 34
+    d.rounded_rectangle([x0, y0, x1, y0 + 44], 14, fill=(16, 6, 32, 210), outline=TIM_S + (200,), width=2)
+    d.text((x0 + 22, y0 + 8), s_, font=f, fill=TRANG)
+    bx0 = x0 + 44 + tw; bx1 = x1 - 22; p_ = (i + min(1, t / max(T, .1))) / n
+    d.rounded_rectangle([bx0, y0 + 18, bx1, y0 + 26], 4, fill=(60, 30, 100, 255))
+    d.rounded_rectangle([bx0, y0 + 18, bx0 + int((bx1 - bx0) * p_), y0 + 26], 4, fill=TIM_S + (255,))
+
+def ve_theo_doi(im, t, T):
+    """Cảnh cuối: nút THEO DÕI có con trỏ bấm vào rồi chuyển ĐÃ THEO DÕI (học video mẫu 9/11)."""
+    t0 = T * 0.35
+    if t < t0: return
+    d = ImageDraw.Draw(im, "RGBA"); a = dx2.ease(min(1, (t - t0) / 0.3)); da = t > t0 + 1.2
+    s_ = "ĐÃ THEO DÕI" if da else "+ THEO DÕI"; f = F("Black", 46); tw = d.textlength(s_, font=f)
+    sc = 1 - (0.08 if t0 + 1.1 < t < t0 + 1.3 else 0); w_ = (tw + 90) * sc; h_ = 96 * sc; cx, cy = W / 2, 1645
+    nen_ = (70, 60, 90) if da else (236, 40, 64)
+    d.rounded_rectangle([cx - w_ / 2, cy - h_ / 2, cx + w_ / 2, cy + h_ / 2], 48, fill=nen_ + (int(245 * a),))
+    d.text((cx, cy), s_, font=F("Black", int(46 * sc)), fill=(255, 255, 255, int(255 * a)), anchor="mm")
+    k = min(1, max(0, (t - t0 - 0.3) / 0.8)); px, py = cx + 260 - 200 * dx2.ease(k), cy + 140 - 110 * dx2.ease(k)
+    d.polygon([(px, py), (px, py + 52), (px + 14, py + 40), (px + 26, py + 64), (px + 36, py + 59), (px + 24, py + 36), (px + 42, py + 36)], fill=(255, 255, 255, int(255 * a)), outline=(0, 0, 0, 255))
+
 def khung(R, i, t, T, ph, tong_t, tong_T):
-    im = NEN.copy(); c = R["canh"][i]
+    im = NEN.copy(); c = R["canh"][i]; hu = R.get("hieu_ung", 1)
+    seq0 = ph if isinstance(ph, list) else ([ph] if ph is not None else [])
+    if hu and seq0 and not seq0[0].info.get("fit"):   # nền = chính ảnh phóng to, mờ, tối (học video mẫu 9/11)
+        b_ = seq0[doan(seq0, t, T)[0]]
+        if "_mo" not in b_.info:
+            r_ = max(108 / b_.width, 192 / b_.height); q_ = b_.convert("RGB").resize((int(b_.width * r_) + 1, int(b_.height * r_) + 1))
+            q_ = q_.crop(((q_.width - 108) // 2, (q_.height - 192) // 2, (q_.width - 108) // 2 + 108, (q_.height - 192) // 2 + 192)).filter(ImageFilter.GaussianBlur(5))
+            b_.info["_mo"] = Image.blend(q_.resize((W, H), Image.BILINEAR), NEN, 0.55)
+        im = b_.info["_mo"].copy()
     yb = ve_dau(im, R.get("hook"), R.get("nhan"))
+    if hu: ve_tien_do(im, i, len(R["canh"]), t, T)
     y0 = max(yb + 24, 430); y1 = 1360
     seq = ph if isinstance(ph, list) else ([ph] if ph is not None else [])
     bw, bh = W - 72, y1 - y0; ready = None; cur = None
@@ -191,6 +237,10 @@ def khung(R, i, t, T, ph, tong_t, tong_T):
     if c.get("web"): ve_web_to(im, t, (y0 + y1) // 2 - 60)
     ve_phu_de(im, bo_mien_tru(c.get("loi", "")), t, T, 1420)
     ve_cuoi(im, tong_t / max(tong_T, 0.1))
+    if hu and c.get("hoi"): ve_theo_doi(im, t, T)
+    if hu and i > 0 and t < 0.22:   # punch-in khi sang cảnh mới
+        z = 1 + 0.06 * (1 - dx2.ease(t / 0.22)); cw_, ch_ = int(W / z), int(H / z)
+        im = im.crop(((W - cw_) // 2, (H - ch_) // 2, (W - cw_) // 2 + cw_, (H - ch_) // 2 + ch_)).resize((W, H), Image.BILINEAR)
     return im
 
 def anh_canh(R, kho, qd=""):
@@ -292,7 +342,7 @@ def main():
     p.stdin.close(); p.wait()
     out = os.path.join(OUT, key + ".mp4")
     try:
-        import music; music.mix(tmp, b, out, music_db=R.get("music_db", -17), lofi=(R.get("nhac") == "lofi"))
+        import music; music.mix(tmp, b, out, music_db=R.get("music_db", -17), lofi=(R.get("nhac") == "lofi"), whoosh=R.get("hieu_ung", 1))
     except Exception as e:
         print("nhac: bo qua", e, flush=True); os.replace(tmp, out)
     khung(R, 0, 1.5, 4, phs[0], 1.5, b[-1]).resize((540, 960), Image.LANCZOS).save(os.path.join(OUT, key + "_bia.png"))

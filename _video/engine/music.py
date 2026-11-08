@@ -77,10 +77,23 @@ def ket_hop(total, bounds, lofi=False):
     fo = int(SR*1.8); out[-fo:] *= np.linspace(1, 0, fo)
     out = out/(np.sqrt(np.mean(out**2))+1e-9)*0.12            # chuẩn hoá theo RMS (không theo đỉnh)
     return np.clip(out, -0.95, 0.95)
-def mix(video, bounds, out, music_db=-8, lofi=False):
+def whoosh(d=0.45):
+    """Tiếng vút khi chuyển cảnh (học video mẫu 9/11): nhiễu lọc quét tần số, lên rồi tắt."""
+    n = int(SR*d); x = np.random.randn(n); t = np.arange(n)/n
+    y = np.zeros(n); k = 2
+    for i in range(n):
+        k = 2 + int(30*(1-t[i]))
+        y[i] = x[max(0, i-k):i+1].mean()
+    return y*np.sin(np.pi*t)**2*0.9
+def mix(video, bounds, out, music_db=-8, lofi=False, whoosh_on=None, whoosh=0):
     total = bounds[-1]
     try: x = ket_hop(total, bounds, lofi)
     except Exception as e: print("nhac ket hop loi, dung mau 2:", e, flush=True); x = track(total, bounds)
+    if whoosh:
+        w_ = globals()["whoosh"]() * 0.35 / (10 ** (music_db / 20))   # bù lại mức nhạc để tiếng vút nghe rõ
+        for bt in bounds[1:-1]:
+            i = max(0, int((bt - 0.25)*SR)); x[i:i+len(w_)] += w_[:len(x)-i]
+        x = np.clip(x, -0.95, 0.95)
     write("/tmp/bgm.wav", x)
     th, ra = ("0.10", "2.5") if lofi else ("0.04", "6")   # kể chuyện: nhạc nền nghe rõ, chỉ hạ nhẹ khi có giọng (anh Huy 7/11 "nhạc không nghe thấy gì")
     fc = ("[1:a]volume=%ddB,aresample=44100[m];[0:a]asplit=2[v][sc];"
