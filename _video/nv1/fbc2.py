@@ -15,13 +15,13 @@ OLD = {s for _, s in sorted(OLD, reverse=True)[:35]}
 C = []
 for s, x in KQ.items():
     f = fund(s)
-    if s in LOAI or s in OLD or not f or f.get('mc', 0) < 1500 or not f.get('pe') or f['pe'] <= 0: continue
+    if s in LOAI or not f or f.get('mc', 0) < 800 or not f.get('pe') or f['pe'] <= 0: continue
     try: c = [r[4] for r in daily(s)]
     except Exception: continue
-    if len(c) < 500: continue
+    if len(c) < 300: continue
     r = [c[i] / c[i - 1] - 1 for i in range(1, len(c)) if c[i - 1]]
     v = st.pstdev(r) * math.sqrt(250) * 100; C.append((f['mc'], s, v))
-C.sort(reverse=True); C = C[:35]; C.sort(key=lambda t: t[2])
+C.sort(key=lambda t: (t[1] in OLD, -t[0])); C = C[:35]; C.sort(key=lambda t: t[2])
 T = ['07:30', '10:30', '13:30', '17:00', '20:30']; d0 = datetime.date(2026, 12, 7); posts = []
 for i, (_, s, v) in enumerate(C):
     x = KQ[s]; f = fund(s); d = d0 + datetime.timedelta(days=i // 5)
@@ -33,7 +33,7 @@ for i, (_, s, v) in enumerate(C):
         h1, h2, s, vn(v, 1), vn(vm, 1), vn(stop, 1), s, vn(pos, 0), x['info'][0], x['info'][1], vn(f['pe'], 2), vn(f['pb'], 2), vn(f['roe'], 1), vn(f['beta'], 2), CS_AN[0], CS_AN[1], s)
     posts.append({"trang": "Nguyễn Huy Anh (trang chính)", "date": d.isoformat(), "time": T[i % 5], "key": "FB_%s_%d_%s" % (d.strftime('%m%d'), i % 5 + 1, s), "ma": s,
                   "hook1": h1, "hook2": h2, "anh_goi_y": "chụp trang chungkhoanhuynguyen.com/ma/%s.html (giữ thanh menu HUY NGUYỄN CHỨNG KHOÁN)" % s, "caption": cap})
-note = "35 caption FB trang chính 7–13/12/2026 (5 bài/ngày, từ mã ít dao động tới nhiều dao động). Chủ đề tuần: ĐỘ BIẾN ĐỘNG & CHIA VỐN THEO RỦI RO (khớp video CH2711B, bài F0 do-bien-dong-co-phieu-la-gi). 35 vốn hóa lớn nhất có P/E>0, không trùng mã tuần trước; loại %s." % ", ".join(sorted(LOAI))
+note = "35 caption FB trang chính 7–13/12/2026 (5 bài/ngày, từ mã ít dao động tới nhiều dao động). Chủ đề tuần: ĐỘ BIẾN ĐỘNG & CHIA VỐN THEO RỦI RO (khớp video CH2711B, bài F0 do-bien-dong-co-phieu-la-gi). 35 vốn hóa lớn nhất có P/E>0, ưu tiên mã không trùng tuần trước; loại %s." % ", ".join(sorted(LOAI))
 for j in range(3):
     json.dump({"ghi_chu": note, "posts": posts[j * 12:(j + 1) * 12]}, open('/tmp/sp/tp/fb_chinh_%d.json' % (j + 1), 'w', encoding='utf-8'), ensure_ascii=False)
 print(len(posts), [(p['ma'], p['hook1'], p['hook2']) for p in posts][:6]); print(posts[-1]['caption'])
