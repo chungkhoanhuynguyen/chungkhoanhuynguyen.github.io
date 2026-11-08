@@ -184,6 +184,12 @@
      ]
     }
    }
-  ]
+  ],
+  "keo_web": {
+   "chu_to": "SỐ LIỆU 400+ MÃ",
+   "loi": "Số liệu trong video em lấy từ bảng kết quả quý 3 của hơn 400 mã mà em cập nhật mỗi phiên trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Số liệu trong video em lấy từ bảng kết quả quý ba của hơn bốn trăm mã mà em cập nhật mỗi phiên trên chứng khoán Huy Nguyễn chấm com.",
+   "web": 1
+  }
  }
 ]
