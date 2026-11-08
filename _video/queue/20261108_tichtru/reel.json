@@ -1,0 +1,104 @@
+[
+ {
+  "key": "TN0811A",
+  "tieu_de": "33 nước khuyên dân tích trữ đồ ăn, nước, thuốc: chuyện gì đang xảy ra?",
+  "hook": [
+   "33 NƯỚC KÊU DÂN",
+   "TÍCH TRỮ ĐỒ ĂN"
+  ],
+  "nhan": "TIN NÓNG THẾ GIỚI",
+  "short_caption": "33 nước khuyên người dân tích trữ đồ ăn, nước uống và thuốc men. Đức khuyên 10 ngày, Anh và EU 72 giờ, Na Uy trữ cả viên i-ốt. Chuyện gì đang xảy ra và anh chị nên nhìn tin này thế nào? Quan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [],
+  "keo_web": null,
+  "toc": 1.1,
+  "cau_hoi": {
+   "chu_to": "NHÀ ANH CHỊ CÓ TRỮ?",
+   "loi": "Nhà anh chị có để sẵn đồ ăn, nước và thuốc cho vài ngày không? Để lại bình luận cho em biết nhé.",
+   "loi_doc": "Nhà anh chị có để sẵn đồ ăn, nước và thuốc cho vài ngày không? Để lại bình luận cho em biết nhé."
+  },
+  "canh": [
+   {
+    "chu_to": "33 NƯỚC KÊU DÂN TÍCH TRỮ",
+    "loi": "Em chào anh chị. Sau Iran dạy dân tránh bom hạt nhân, giờ đã có 33 nước khuyên người dân tích trữ đồ ăn, nước uống và thuốc men tại nhà.",
+    "loi_doc": "Em chào anh chị. Sau Iran dạy dân tránh bom hạt nhân, giờ đã có ba mươi ba nước khuyên người dân tích trữ đồ ăn, nước uống và thuốc men tại nhà.",
+    "anh": "supermarket shelves canned food",
+    "tin": 1
+   },
+   {
+    "chu_to": "ĐỨC: 10 NGÀY",
+    "loi": "Mức khuyên mỗi nước một khác. Đức khuyên trữ đủ tới 10 ngày. Thụy Điển và Na Uy khoảng một tuần. Anh, Pháp và Liên minh châu Âu khuyên tối thiểu 72 giờ.",
+    "loi_doc": "Mức khuyên mỗi nước một khác. Đức khuyên trữ đủ tới mười ngày. Thụy Điển và Na Uy khoảng một tuần. Anh, Pháp và Liên minh châu Âu khuyên tối thiểu bảy mươi hai giờ.",
+    "the": {
+     "loai": "thang",
+     "tieu": "KHUYÊN TRỮ BAO NHIÊU NGÀY?",
+     "nguon": "The Vibes 2/11/2026",
+     "dv": " ngày",
+     "hang": [
+      [
+       "Đức",
+       10,
+       "vang"
+      ],
+      [
+       "Thụy Điển, Na Uy",
+       7,
+       "tim2"
+      ],
+      [
+       "Anh, Pháp, EU, Nhật",
+       3,
+       "tim"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "TRỮ NHỮNG GÌ?",
+    "loi": "Danh sách gần như giống nhau: đồ ăn khô, đồ hộp, nước uống, thuốc thiết yếu, pin, đèn pin và radio. Na Uy còn khuyên trữ cả viên i-ốt, phòng sự cố hạt nhân.",
+    "loi_doc": "Danh sách gần như giống nhau: đồ ăn khô, đồ hộp, nước uống, thuốc thiết yếu, pin, đèn pin và radio. Na Uy còn khuyên trữ cả viên i ốt, phòng sự cố hạt nhân.",
+    "anh": "emergency kit flashlight radio"
+   },
+   {
+    "chu_to": "VÌ SAO LÚC NÀY?",
+    "loi": "Lý do được nêu là xung đột địa chính trị, thời tiết cực đoan và nguy cơ mất điện, đứt chuỗi cung ứng. Các chính phủ nói rõ: chuẩn bị không có nghĩa là chiến tranh sắp xảy ra.",
+    "loi_doc": "Lý do được nêu là xung đột địa chính trị, thời tiết cực đoan và nguy cơ mất điện, đứt chuỗi cung ứng. Các chính phủ nói rõ: chuẩn bị không có nghĩa là chiến tranh sắp xảy ra.",
+    "anh": "power outage city night"
+   },
+   {
+    "chu_to": "MALAYSIA: KHÔNG CẦN",
+    "loi": "Ngược lại, ngày 2/11 Malaysia trấn an dân rằng nước này có dự trữ lương thực ít nhất 6 tháng, không cần đi mua tích trữ. Vì chính đám đông đổ xô đi mua mới làm kệ hàng trống.",
+    "loi_doc": "Ngược lại, ngày hai tháng mười một, Malaysia trấn an dân rằng nước này có dự trữ lương thực ít nhất sáu tháng, không cần đi mua tích trữ. Vì chính đám đông đổ xô đi mua mới làm kệ hàng trống.",
+    "anh": "Kuala Lumpur"
+   },
+   {
+    "chu_to": "BÀI HỌC CHO NHÀ ĐẦU TƯ",
+    "loi": "Với nhà đầu tư cũng vậy. Tin xấu dồn dập dễ làm mình bán tháo theo đám đông. Có sẵn tiền dự phòng vài tháng thì không bị ép phải bán cổ phiếu đúng lúc thị trường hoảng loạn.",
+    "loi_doc": "Với nhà đầu tư cũng vậy. Tin xấu dồn dập dễ làm mình bán tháo theo đám đông. Có sẵn tiền dự phòng vài tháng thì không bị ép phải bán cổ phiếu đúng lúc thị trường hoảng loạn.",
+    "the": {
+     "loai": "lon",
+     "tieu": "QUỸ DỰ PHÒNG",
+     "nguon": "",
+     "dong": [
+      [
+       "TRỮ ĐỒ ĂN 3–10 NGÀY",
+       54,
+       "trang"
+      ],
+      [
+       "TRỮ TIỀN 3–6 THÁNG",
+       64,
+       "vang"
+      ],
+      [
+       "KHÔNG BÁN THÁO",
+       60,
+       "tim2"
+      ]
+     ]
+    }
+   }
+  ],
+  "nhac": "lofi",
+  "music_db": -2
+ }
+]
