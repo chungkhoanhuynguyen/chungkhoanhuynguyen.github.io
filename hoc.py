@@ -34,7 +34,8 @@ blockquote{margin:18px 0;padding:10px 16px;border-left:4px solid var(--acc);back
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin:12px 0 28px}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;text-decoration:none;color:var(--fg)}.card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}.card span{display:block;padding:10px 12px;font-weight:600;font-size:15px;line-height:1.45}
 footer{text-align:center;color:var(--mute);font-size:13px;padding:24px 16px;border-top:1px solid var(--line)}
-@media(max-width:560px){.pn{grid-template-columns:1fr}.nav a.hide{display:none}.brand{min-width:0;overflow:hidden;text-overflow:ellipsis}.brand{font-size:13px}.nav{gap:10px;font-size:13px}.top .in{gap:8px}}"""
+@media(max-width:560px){.pn{grid-template-columns:1fr}.nav a.hide{display:none}.brand{min-width:0;overflow:hidden;text-overflow:ellipsis}.brand{font-size:13px}.nav{gap:10px;font-size:13px}.top .in{gap:8px}}
+.tb{overflow-x:auto;margin:14px 0}.tb table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.5}.tb th,.tb td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:right;white-space:nowrap}.tb th:first-child,.tb td:first-child{text-align:left;white-space:normal}.tb th{color:var(--mute);font-weight:600}"""
 
 def _ngan(t, n=64):
     t = t.strip()
@@ -153,6 +154,7 @@ def blk(t, c):
     if t == "p": return "<p>%s</p>" % c
     if t == "h2": return "<h2>%s</h2>" % e(c)
     if t in ("ul", "ol"): return "<%s>%s</%s>" % (t, "".join("<li>%s</li>" % x for x in c), t)
+    if t == "table": return '<div class="tb"><table><thead><tr>%s</tr></thead><tbody>%s</tbody></table></div>' % ("".join("<th>%s</th>" % x for x in c[0]), "".join("<tr>%s</tr>" % "".join("<td>%s</td>" % x for x in r) for r in c[1:]))
     return ""
 for x in F:
     url = B + FP(x)
