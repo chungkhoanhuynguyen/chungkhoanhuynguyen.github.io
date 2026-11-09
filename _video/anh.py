@@ -37,6 +37,12 @@ def _get(u, t=20):
 
 NGUOI = re.compile(r"confederate|counterfeit|people|person|portrait|men of|women of|businesspeople|business people|politician|chairman|ceo|founder|births|living people|selfie|headshot|ông |bà |chân dung|doanh nhân|chủ tịch|giám đốc|lãnh đạo|_em\\.|nguyen|nguyễn|tran |trần |le van|lê văn|pham|phạm|hoang|hoàng|võ |đỗ |doan|đoàn")
 def tim(q, n=12):
+    if q.startswith("File:"):   # đúng 1 file Commons (cho cả bản đồ .svg → ảnh PNG), dùng cho cảnh bản đồ
+        u = "https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode({"action": "query", "format": "json", "titles": q, "prop": "imageinfo", "iiprop": "url|extmetadata", "iiurlwidth": 1600})
+        try: pg = list(json.loads(_get(u))["query"]["pages"].values())[0]; ii = pg["imageinfo"][0]
+        except Exception as e: print("anh: loi file", q, e); return []
+        md = ii.get("extmetadata", {}); tg = re.sub("<[^>]+>", "", md.get("Artist", {}).get("value", "")).strip()[:60]
+        return [{"u": ii.get("thumburl") or ii["url"], "tg": tg or "không rõ", "lic": md.get("LicenseShortName", {}).get("value", ""), "trang": ii.get("descriptionurl", "")}]
     u = "https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode({
         "action": "query", "format": "json", "generator": "search", "gsrsearch": "filetype:bitmap " + q,
         "gsrnamespace": 6, "gsrlimit": n, "prop": "imageinfo", "iiprop": "url|extmetadata|size", "iiurlwidth": 1920})
@@ -76,7 +82,7 @@ class Kho:
             for it in s._ds(q):
                 if it["u"] in s.dung: continue
                 try:
-                    im = Image.open(io.BytesIO(_get(it["u"], 30))).convert("RGB")
+                    im = Image.open(io.BytesIO(_get(it["u"], 30))); im = (Image.alpha_composite(Image.new("RGBA", im.size, (255, 255, 255, 255)), im.convert("RGBA")) if im.mode in ("RGBA", "LA", "P") else im).convert("RGB")
                 except Exception as e: print("anh: loi tai", e); s.dung.add(it["u"]); continue
                 s.dung.add(it["u"]); s.credit.append("%s – %s (%s) %s" % (q, it["tg"], it["lic"], it["trang"]))
                 return im
