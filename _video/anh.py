@@ -54,10 +54,14 @@ def tim(q, n=12):
         lic = md.get("LicenseShortName", {}).get("value", "")
         if not OKLIC.match(lic) or ii.get("width", 0) < 1000 or ii.get("width", 0) < ii.get("height", 1): continue
         cat = (md.get("Categories", {}).get("value", "") + "|" + p.get("title", "") + "|" + re.sub("<[^>]+>", "", md.get("ImageDescription", {}).get("value", ""))).lower()
-        if NGUOI.search(cat): continue          # không dùng ảnh chân dung / người thật (nhất là người nổi tiếng)
+        if NGUOI.search(cat): continue
+        if XAU.search(cat): continue            # 10/11: lọt ảnh hồ sơ vụ án (EFTA), ảnh lưu trữ NARA không liên quan
+        if any(w[:5] not in cat for w in re.findall(r"[a-z]{3,}", q.lower())): continue   # mọi từ khoá phải có trong tên/mô tả/danh mục (tránh 'red stock' → cây thông)          # không dùng ảnh chân dung / người thật (nhất là người nổi tiếng)
         tg = re.sub("<[^>]+>", "", md.get("Artist", {}).get("value", "")).strip()[:60]
         out.append({"u": ii.get("thumburl") or ii["url"], "tg": tg or "không rõ", "lic": lic, "trang": ii.get("descriptionurl", "")})
     return out
+
+XAU = re.compile(r"efta\d|epstein|nara|evidence|court|crime|police|prison|\.tif", re.I)
 
 class Kho:
     def __init__(s, wd): s.wd = wd; os.makedirs(wd, exist_ok=True); s.cache = {}; s.dung = set(); s.credit = []

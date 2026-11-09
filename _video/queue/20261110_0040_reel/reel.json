@@ -16,8 +16,8 @@
   "hieu_ung": 1,
   "cau_hoi": {
    "chu_to": "ANH CHỊ NGHĨ SAO?",
-   "loi": "Theo anh chị, tỷ suất cổ tức hơn 10% của PNJ là món quà hay cái bẫy? Bình luận cho em biết nhé.",
-   "loi_doc": "Theo anh chị, tỷ suất cổ tức hơn mười phần trăm của PNJ là món quà hay cái bẫy? Bình luận cho em biết nhé."
+   "loi": "Bình luận cho em biết: theo anh chị, tỷ suất cổ tức hơn 10% của PNJ là món quà hay cái bẫy?",
+   "loi_doc": "Bình luận cho em biết: theo anh chị, tỷ suất cổ tức hơn mười phần trăm của PNJ là món quà hay cái bẫy?"
   },
   "canh": [
    {
@@ -25,8 +25,8 @@
     "loi": "Đầu năm, PNJ còn giao dịch quanh 80 nghìn đồng. Phiên 9/11, PNJ giảm 5,65%, đóng cửa 14.200 đồng, đúng đáy 52 tuần. Vàng thì sáng, mà cổ phiếu tiệm vàng lại tối thui. Anh chị có biết chuyện gì đang xảy ra với PNJ không?",
     "loi_doc": "Đầu năm, PNJ còn giao dịch quanh tám mươi nghìn đồng. Phiên ngày chín tháng mười một, PNJ giảm năm phẩy sáu mươi lăm phần trăm, đóng cửa mười bốn nghìn hai trăm đồng, đúng đáy năm mươi hai tuần. Vàng thì sáng, mà cổ phiếu tiệm vàng lại tối thui. Anh chị có biết chuyện gì đang xảy ra với PNJ không?",
     "anh": [
-     "jewelry store",
-     "gold jewelry display"
+     "gold jewelry display",
+     "jewellery shop window"
     ],
     "chat": 1
    },
@@ -86,10 +86,28 @@
     "chu_to": "CỔ TỨC 10% LÀ QUÀ?",
     "loi": "Tỷ suất cổ tức nhìn lên 10,54%, gấp đôi lãi tiết kiệm. Nhưng tỷ suất cao lên chủ yếu vì giá rơi, chứ không phải vì công ty trả nhiều hơn. Cổ tức năm sau còn được như cũ hay không phải chờ hội đồng quản trị công bố.",
     "loi_doc": "Tỷ suất cổ tức nhìn lên mười phẩy năm mươi bốn phần trăm, gấp đôi lãi tiết kiệm. Nhưng tỷ suất cao lên chủ yếu vì giá rơi, chứ không phải vì công ty trả nhiều hơn. Cổ tức năm sau còn được như cũ hay không phải chờ hội đồng quản trị công bố.",
-    "anh": [
-     "cash envelope",
-     "calculator coins"
-    ]
+    "the": {
+     "loai": "lon",
+     "tieu": "VÌ SAO CỔ TỨC 10%?",
+     "nguon": "Dữ liệu thị trường 9/11",
+     "dong": [
+      [
+       "CỔ TỨC 10,54%",
+       72,
+       "vang"
+      ],
+      [
+       "VÌ GIÁ RƠI 83%",
+       64,
+       "do"
+      ],
+      [
+       "KHÔNG PHẢI TRẢ NHIỀU HƠN",
+       44,
+       "trang"
+      ]
+     ]
+    }
    },
    {
     "chu_to": "NHÀ ĐẦU TƯ NHỎ LẺ",
@@ -137,8 +155,8 @@
   "hieu_ung": 1,
   "cau_hoi": {
    "chu_to": "ANH CHỊ CÓ ĐU?",
-   "loi": "Ba phiên VND tăng vừa rồi, anh chị đứng ngoài hay đã nhảy vào? Bình luận cho em biết nhé.",
-   "loi_doc": "Ba phiên VND tăng vừa rồi, anh chị đứng ngoài hay đã nhảy vào? Bình luận cho em biết nhé."
+   "loi": "Bình luận cho em biết: ba phiên VND tăng vừa rồi, anh chị đứng ngoài hay đã nhảy vào?",
+   "loi_doc": "Bình luận cho em biết: ba phiên VND tăng vừa rồi, anh chị đứng ngoài hay đã nhảy vào?"
   },
   "canh": [
    {
@@ -155,9 +173,34 @@
     "chu_to": "CẢ NHÓM ĐỎ",
     "loi": "Không chỉ VND. Phiên 9/11, SSI giảm 2,45%, VIX giảm 2,62%, VN-Index mất 0,64% còn khoảng 1.714 điểm. Nhóm chứng khoán vốn nhạy với thị trường, nên thường đi trước khi tâm lý đổi chiều.",
     "loi_doc": "Không chỉ đồng. Phiên ngày chín tháng mười một, SSI giảm hai phẩy bốn mươi lăm phần trăm, VIX giảm hai phẩy sáu mươi hai phần trăm, VN Index mất không phẩy sáu mươi bốn phần trăm còn khoảng một nghìn bảy trăm mười bốn điểm. Nhóm chứng khoán vốn nhạy với thị trường, nên thường đi trước khi tâm lý đổi chiều.",
-    "anh": [
-     "red stock board"
-    ]
+    "the": {
+     "loai": "cot",
+     "tieu": "PHIÊN 9/11",
+     "nguon": "Dữ liệu thị trường",
+     "hang": [
+      [
+       "VND",
+       -3.34
+      ],
+      [
+       "VIX",
+       -2.62
+      ],
+      [
+       "SSI",
+       -2.45
+      ],
+      [
+       "VN-Index",
+       -0.64
+      ]
+     ],
+     "noi": [
+      0
+     ],
+     "dv": "%",
+     "max": 4
+    }
    },
    {
     "chu_to": "5 ANH EM CÙNG LÙI",
