@@ -120,8 +120,28 @@
     "chu_to": "AI ĐƯỢC TRẢ TIỀN?",
     "loi": "Tin tốt là quỹ bảo đảm tiền gửi đã bắt đầu trả cho tài khoản nhỏ, và ngân hàng trung ương nói sẽ trả đủ cho khoảng 97% khách hàng.",
     "loi_doc": "Tin tốt là quỹ bảo đảm tiền gửi đã bắt đầu trả cho tài khoản nhỏ, và ngân hàng trung ương nói sẽ trả đủ cho khoảng chín mươi bảy phần trăm khách hàng.",
-    "anh": "Guaraní paraguayo billetes",
-    "chat": 1
+    "the": {
+     "loai": "lon",
+     "tieu": "QUỸ BẢO ĐẢM TIỀN GỬI",
+     "nguon": "AP, NPR 5/11/2026",
+     "dong": [
+      [
+       "~97%",
+       130,
+       "vang"
+      ],
+      [
+       "KHÁCH ĐƯỢC TRẢ ĐỦ",
+       58,
+       "trang"
+      ],
+      [
+       "TÀI KHOẢN NHỎ TRẢ TRƯỚC",
+       46,
+       "tim2"
+      ]
+     ]
+    }
    },
    {
     "chu_to": "VIỆT NAM: BẢO HIỂM 350 TRIỆU",
@@ -177,8 +197,28 @@
     "chu_to": "CHIA TIỀN MÀ GIỮ",
     "loi": "Bài học cho mỗi gia đình: đừng dồn hết vào một nơi chỉ vì lãi cao hay ứng dụng đẹp. Chia ra vài ngân hàng, mỗi nơi trong hạn mức được bảo hiểm.",
     "loi_doc": "Bài học cho mỗi gia đình: đừng dồn hết vào một nơi chỉ vì lãi cao hay ứng dụng đẹp. Chia ra vài ngân hàng, mỗi nơi trong hạn mức được bảo hiểm.",
-    "anh": "Vietnam dong banknotes",
-    "chat": 1
+    "the": {
+     "loai": "lon",
+     "tieu": "GIỮ TIỀN AN TOÀN",
+     "nguon": "",
+     "dong": [
+      [
+       "CHIA VÀI NGÂN HÀNG",
+       58,
+       "trang"
+      ],
+      [
+       "MỖI NƠI ≤ 350 TRIỆU",
+       62,
+       "vang"
+      ],
+      [
+       "ĐỪNG CHẠY THEO LÃI CAO",
+       50,
+       "do"
+      ]
+     ]
+    }
    }
   ]
  }
