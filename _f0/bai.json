@@ -32577,5 +32577,527 @@
    "co-nen-mua-co-phieu-khi-thi-truong-giam",
    "tam-ly-fomo-va-hoang-loan"
   ]
+ },
+ {
+  "slug": "chung-khoan-kinh-doanh-la-gi",
+  "kw": "chứng khoán kinh doanh là gì",
+  "grp": 3,
+  "title": "Chứng khoán kinh doanh là gì? Vì sao lãi ngân hàng lên xuống",
+  "desc": "Quý 3/2026 VPBank lỗ 363 tỷ từ kinh doanh chứng khoán, cùng kỳ lãi 1.287 tỷ. Cách đọc dòng chứng khoán kinh doanh trong BCTC ngân hàng.",
+  "body": [
+   [
+    "p",
+    "Quý 3/2026, VPBank (VPB) báo lãi sau thuế công ty mẹ 8.644 tỷ đồng, tăng 18,8% so với cùng kỳ. Nhìn qua thì đẹp. Nhưng nếu anh chị mở báo cáo kết quả kinh doanh ra, sẽ thấy một dòng nhỏ: <b>lợi nhuận thuần từ hoạt động kinh doanh chứng khoán</b> quý 3/2026 là <b>âm 363,1 tỷ</b>. Cùng kỳ năm 2025, dòng này dương 1.287,0 tỷ. Chỉ riêng một dòng đã chênh 1.650 tỷ trước thuế. Đó là dòng mà nhiều người đọc báo cáo ngân hàng bỏ qua."
+   ],
+   [
+    "h2",
+    "Chứng khoán kinh doanh là gì?"
+   ],
+   [
+    "p",
+    "<b>Chứng khoán kinh doanh</b> là trái phiếu, cổ phiếu, chứng chỉ quỹ mà ngân hàng mua với mục đích <b>bán lại trong thời gian ngắn</b> để hưởng chênh lệch giá. Nó khác <b>chứng khoán đầu tư</b> (sẵn sàng để bán hoặc giữ đến ngày đáo hạn), là phần ngân hàng nắm lâu hơn, chủ yếu trái phiếu chính phủ để quản lý thanh khoản."
+   ],
+   [
+    "p",
+    "Trên bảng cân đối kế toán ngân hàng, anh chị sẽ thấy ba dòng đi liền nhau:"
+   ],
+   [
+    "ul",
+    [
+     "<b>Chứng khoán kinh doanh</b> (giá trị gộp).",
+     "<b>Dự phòng giảm giá chứng khoán kinh doanh</b> (số âm, phần ngân hàng đã trích vì giá giảm).",
+     "Số thuần = gộp trừ dự phòng."
+    ]
+   ],
+   [
+    "p",
+    "Còn trên báo cáo kết quả kinh doanh, kết quả mua bán phần này nằm ở dòng <b>lợi nhuận thuần từ hoạt động kinh doanh chứng khoán</b>. Đây là một phần của <a href=\"/f0/thu-nhap-ngoai-lai-ngan-hang.html\">thu nhập ngoài lãi</a>."
+   ],
+   [
+    "h2",
+    "Đọc số của ACB từng bước thế nào?"
+   ],
+   [
+    "p",
+    "Lấy Á Châu (ACB), số liệu báo cáo tài chính hợp nhất ngày 30/9/2026, đơn vị tỷ đồng:"
+   ],
+   [
+    "ol",
+    [
+     "Chứng khoán kinh doanh gộp: 6.709,4.",
+     "Dự phòng giảm giá: −313,9 (30/6/2026 mới là −171,8, tức trích thêm khoảng 142 tỷ trong quý).",
+     "Số thuần: 6.709,4 − 313,9 = 6.395,5.",
+     "So với tổng tài sản 1.104.379,5: chỉ khoảng 0,6%.",
+     "Kết quả quý 3/2026: lỗ 141,7, trong khi quý 3/2025 lãi 367,4. Chênh lệch khoảng 509 tỷ trước thuế."
+    ]
+   ],
+   [
+    "p",
+    "Danh mục chỉ chiếm 0,6% tài sản, nhưng chênh lệch 509 tỷ đã đủ ăn vào phần tăng trưởng. Quý 3/2026 ACB lãi sau thuế công ty mẹ 4.699 tỷ, chỉ tăng 9,8%, dù thu nhập lãi thuần tăng 21,1%. Một phần khoảng cách nằm ở dòng này, phần còn lại ở chi phí dự phòng tín dụng tăng mạnh."
+   ],
+   [
+    "h2",
+    "Năm ngân hàng khác nhau thế nào?"
+   ],
+   [
+    "p",
+    "Số liệu BCTC quý 3/2026 và quý 3/2025, đơn vị tỷ đồng. Cột \"% thu nhập\" là lãi/lỗ kinh doanh chứng khoán chia tổng thu nhập hoạt động trong quý:"
+   ],
+   [
+    "table",
+    [
+     [
+      "Ngân hàng",
+      "CK kinh doanh 30/9/26",
+      "% tổng tài sản",
+      "Lãi/lỗ Q3/26",
+      "% thu nhập Q3/26",
+      "Lãi/lỗ Q3/25"
+     ],
+     [
+      "VPB",
+      "25.438,8",
+      "1,6%",
+      "−363,1",
+      "−1,6%",
+      "1.287,0"
+     ],
+     [
+      "ACB",
+      "6.709,4",
+      "0,6%",
+      "−141,7",
+      "−1,4%",
+      "367,4"
+     ],
+     [
+      "MBB",
+      "41.494,7",
+      "2,3%",
+      "280,0",
+      "1,3%",
+      "172,4"
+     ],
+     [
+      "HDB",
+      "28.739,2",
+      "2,5%",
+      "138,2",
+      "1,2%",
+      "4,4"
+     ],
+     [
+      "VCB",
+      "12.869,2",
+      "0,5%",
+      "199,5",
+      "0,8%",
+      "106,4"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Hai điều đáng chú ý. Thứ nhất, quy mô thay đổi rất nhanh: MB (MBB) tăng từ 8.888,5 tỷ (30/6/2026) lên 41.494,7 tỷ (30/9/2026), gấp khoảng 4,7 lần trong một quý; HDBank (HDB) từ 490,5 tỷ cuối 2025 lên 28.739,2 tỷ. Thứ hai, chiều ngược lại cũng có: Techcombank (TCB) từ 9.000,9 tỷ cuối 2024 xuống còn 125,7 tỷ. Danh mục lớn hơn nghĩa là kết quả quý sau sẽ nhạy hơn với giá trái phiếu, cổ phiếu."
+   ],
+   [
+    "h2",
+    "Vì sao dòng này hay làm nhà đầu tư hiểu sai?"
+   ],
+   [
+    "p",
+    "Vì nó <b>không lặp lại đều</b>. Thu nhập lãi thuần đến từ cho vay, tháng nào cũng có. Còn lãi chứng khoán phụ thuộc giá thị trường đúng thời điểm khóa sổ. Một quý lãi lớn từ chứng khoán có thể khiến tăng trưởng lợi nhuận trông rất đẹp, rồi quý sau đảo chiều làm con số tụt mạnh, dù mảng cho vay vẫn khỏe. VPB là ví dụ: thu nhập lãi thuần quý 3/2026 vẫn tăng 20,6%, nhưng dòng chứng khoán kéo ngược."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>Lấy tăng trưởng lợi nhuận quý có lãi chứng khoán lớn làm mốc.</b> Quý 3/2025 VPB lãi 1.287,0 tỷ từ chứng khoán, chiếm khoảng 6,4% tổng thu nhập quý. Ai lấy quý đó làm chuẩn sẽ thấy quý sau \"giảm tốc\" dù mảng cốt lõi không đổi.",
+     "<b>Không nhìn dòng dự phòng giảm giá.</b> Dự phòng chứng khoán kinh doanh của VPB tăng từ 283,7 tỷ (30/6/2026) lên 641,6 tỷ (30/9/2026). Dự phòng tăng là tín hiệu giá danh mục đang thấp hơn giá mua.",
+     "<b>Nhầm chứng khoán kinh doanh với chứng khoán đầu tư.</b> Hai dòng khác mục đích, khác cách ghi nhận. Cộng gộp lại để kết luận \"ngân hàng đầu cơ nhiều\" là sai."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist anh chị tự làm được"
+   ],
+   [
+    "ul",
+    [
+     "Mở BCTC quý, tìm dòng chứng khoán kinh doanh gộp, dự phòng và số thuần.",
+     "Chia cho tổng tài sản: dưới 1% là nhỏ, trên 2% là đáng theo dõi.",
+     "So lãi/lỗ kinh doanh chứng khoán quý này với cùng kỳ năm trước.",
+     "Tính lại tăng trưởng lợi nhuận trước thuế sau khi bỏ dòng này ra.",
+     "Xem quy mô danh mục thay đổi bao nhiêu trong quý so với quý trước."
+    ]
+   ],
+   [
+    "p",
+    "Khi đã quen tách phần lợi nhuận lặp lại và phần không lặp lại, việc chọn ngân hàng để <a href=\"/f0/tich-san-co-phieu-ngan-hang.html\">tích sản</a> sẽ chắc tay hơn. Bảng theo dõi tích sản ngân hàng cập nhật tại <a href=\"/bao-cao-2026.html#tichsan\">đây</a>."
+   ],
+   [
+    "p",
+    "Số liệu trong bài lấy từ BCTC hợp nhất quý 3/2026 các ngân hàng, chỉ để minh họa cách đọc, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Chứng khoán kinh doanh của ngân hàng gồm những gì?",
+    "Chủ yếu là trái phiếu (chính phủ, tổ chức tín dụng, doanh nghiệp), một phần cổ phiếu và chứng chỉ quỹ mà ngân hàng mua để bán lại trong ngắn hạn."
+   ],
+   [
+    "Lỗ kinh doanh chứng khoán có làm ngân hàng mất vốn không?",
+    "Thường không. Với các ngân hàng trong bài, danh mục chỉ 0,5–2,5% tổng tài sản, nên lỗ một quý chủ yếu làm lợi nhuận quý đó thấp đi, không đe dọa vốn."
+   ],
+   [
+    "Chứng khoán kinh doanh khác chứng khoán đầu tư thế nào?",
+    "Chứng khoán kinh doanh mua để bán lại ngắn hạn, lãi lỗ vào kết quả từng quý. Chứng khoán đầu tư nắm lâu hơn, chủ yếu để quản lý thanh khoản và hưởng lãi trái phiếu."
+   ]
+  ],
+  "rel": [
+   "thu-nhap-ngoai-lai-ngan-hang",
+   "doc-bctc-ngan-hang",
+   "nim-la-gi",
+   "chi-phi-du-phong-la-gi"
+  ]
+ },
+ {
+  "slug": "thue-va-cac-khoan-phai-nop-nha-nuoc-la-gi",
+  "kw": "thuế và các khoản phải nộp nhà nước là gì",
+  "grp": 3,
+  "title": "Thuế phải nộp Nhà nước là gì? Đọc đúng trong BCTC, ví dụ VNM",
+  "desc": "VNM ghi chi phí thuế TNDN 735 tỷ quý 3/2026 nhưng chỉ nộp 23,8 tỷ tiền. Dòng thuế phải nộp Nhà nước nói gì về dòng tiền và lợi nhuận.",
+  "body": [
+   [
+    "p",
+    "Quý 3/2026, Vinamilk (VNM) ghi <b>chi phí thuế thu nhập doanh nghiệp hiện hành 735,2 tỷ đồng</b>. Nhưng trên báo cáo lưu chuyển tiền tệ, số tiền thuế thu nhập doanh nghiệp thực nộp trong quý chỉ <b>23,8 tỷ</b>. Phần chênh lệch không biến mất. Nó nằm ở một dòng bên phần nợ: <b>thuế và các khoản phải nộp Nhà nước</b>, tăng từ 1.064,4 tỷ (30/6/2026) lên 2.110,9 tỷ (30/9/2026). So với 763,2 tỷ hồi 31/3/2026, con số đã gấp khoảng 2,8 lần."
+   ],
+   [
+    "h2",
+    "Dòng thuế phải nộp Nhà nước gồm những gì?"
+   ],
+   [
+    "p",
+    "Đây là khoản <b>nợ ngắn hạn</b>: số thuế doanh nghiệp đã phát sinh nhưng chưa nộp vào ngân sách tính đến ngày khóa sổ. Nó không chỉ có thuế thu nhập doanh nghiệp, mà còn:"
+   ],
+   [
+    "ul",
+    [
+     "Thuế giá trị gia tăng (GTGT) đầu ra chưa nộp.",
+     "Thuế tiêu thụ đặc biệt (bia, rượu, ô tô…), thuế xuất nhập khẩu.",
+     "Thuế thu nhập cá nhân doanh nghiệp khấu trừ của người lao động.",
+     "Thuế bảo vệ môi trường, tiền thuê đất, các loại phí khác."
+    ]
+   ],
+   [
+    "p",
+    "Vì vậy, với doanh nghiệp bia như Sabeco (SAB), dòng này luôn lớn: 2.281,9 tỷ ngày 30/9/2026, trong khi chi phí thuế thu nhập doanh nghiệp hiện hành cả quý chỉ 295,2 tỷ. Phần lớn còn lại là thuế tiêu thụ đặc biệt và GTGT."
+   ],
+   [
+    "h2",
+    "Vì sao nộp ít quý này, nộp nhiều quý sau?"
+   ],
+   [
+    "p",
+    "Thuế thu nhập doanh nghiệp được tạm nộp trong năm và <b>quyết toán vào đầu năm sau</b>. Thời điểm tiền thực sự ra khỏi doanh nghiệp vì thế không khớp với thời điểm ghi chi phí. Nhìn số tiền thuế TNDN đã nộp theo từng quý (tỷ đồng, báo cáo lưu chuyển tiền tệ):"
+   ],
+   [
+    "ul",
+    [
+     "<b>VNM</b>: quý 1/2026 nộp 1.580,0 · quý 2 nộp 425,5 · quý 3 nộp 23,8.",
+     "<b>HPG</b>: quý 1/2026 nộp 2.210,1 · quý 2 nộp 237,7 · quý 3 nộp 6,6.",
+     "<b>GAS</b>: quý 1/2026 nộp 1.043,6 · quý 2 nộp 631,5 · quý 3 nộp 438,2."
+    ]
+   ],
+   [
+    "p",
+    "Quý 1 thường là quý nộp nặng nhất. Hòa Phát (HPG) quý 1/2025 cũng nộp 1.670,3 tỷ. Hiểu nhịp này, anh chị sẽ không ngạc nhiên khi dòng tiền kinh doanh quý 1 của nhiều doanh nghiệp yếu hơn quý 3."
+   ],
+   [
+    "h2",
+    "Bốn doanh nghiệp lớn so sánh ra sao?"
+   ],
+   [
+    "p",
+    "Đơn vị tỷ đồng, cộng dồn 9 tháng 2026 (quý 1 đến quý 3), số liệu BCTC hợp nhất:"
+   ],
+   [
+    "table",
+    [
+     [
+      "Mã",
+      "Phải nộp 31/3/26",
+      "Phải nộp 30/9/26",
+      "Thuế TNDN hiện hành 9T",
+      "Thuế TNDN đã nộp 9T"
+     ],
+     [
+      "VNM",
+      "763,2",
+      "2.110,9",
+      "1.984,6",
+      "2.029,3"
+     ],
+     [
+      "SAB",
+      "1.451,3",
+      "2.281,9",
+      "876,2",
+      "678,5"
+     ],
+     [
+      "GAS",
+      "881,1",
+      "2.467,3",
+      "3.391,1",
+      "2.113,3"
+     ],
+     [
+      "HPG",
+      "1.909,5",
+      "2.344,2",
+      "3.409,2",
+      "2.454,4"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Cách đọc: VNM 9 tháng nộp nhiều hơn số ghi chi phí (vì quý 1 quyết toán cả năm 2025), còn GAS và HPG ghi chi phí nhiều hơn số đã nộp, nên dòng phải nộp tăng. Không có gì bất thường, nhưng nó cho biết <b>khoản tiền sẽ phải chi ra trong vài tháng tới</b>."
+   ],
+   [
+    "h2",
+    "Tính từng bước với VNM quý 3/2026 thế nào?"
+   ],
+   [
+    "ol",
+    [
+     "Lợi nhuận kế toán trước thuế quý 3/2026: 3.694,0 tỷ.",
+     "Chi phí thuế TNDN hiện hành: 735,2 tỷ → khoảng 19,9% lợi nhuận trước thuế, sát thuế suất phổ thông 20% (xem <a href=\"/f0/ty-suat-thue-thuc-te-la-gi.html\">tỷ suất thuế thực tế</a>).",
+     "Tiền thuế TNDN thực nộp trong quý: 23,8 tỷ.",
+     "Phần chưa nộp: khoảng 711 tỷ, cộng với GTGT và các loại thuế khác, đẩy dòng phải nộp tăng khoảng 1.046 tỷ trong quý.",
+     "Hệ quả: dòng tiền kinh doanh quý 3 trông khỏe hơn mức \"bình thường\", vì một phần tiền đang giữ hộ ngân sách."
+    ]
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>Khen dòng tiền quý 3 mà quên quý 1.</b> HPG quý 3/2026 chỉ nộp 6,6 tỷ thuế TNDN, nhưng quý 1 đã nộp 2.210,1 tỷ. So dòng tiền nên so cả năm hoặc cùng kỳ, không so quý 3 với quý 1.",
+     "<b>Thấy thuế phải nộp tăng là lo doanh nghiệp nợ thuế.</b> Với VNM, GAS, dòng này tăng chủ yếu vì lãi phát sinh trong năm chưa đến hạn quyết toán. Đáng lo là khi dòng này phình to qua nhiều năm trong lúc lợi nhuận không tăng, hoặc thuyết minh có khoản bị truy thu, phạt chậm nộp.",
+     "<b>Lấy cả dòng phải nộp để tính thuế suất.</b> Với SAB, phần lớn là thuế tiêu thụ đặc biệt và GTGT, không liên quan thuế thu nhập. Muốn tính thuế suất phải dùng chi phí thuế TNDN trên báo cáo kết quả kinh doanh."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist anh chị tự làm được"
+   ],
+   [
+    "ul",
+    [
+     "Tìm dòng thuế và các khoản phải nộp Nhà nước ở nợ ngắn hạn, so với đầu năm.",
+     "Đối chiếu chi phí thuế TNDN hiện hành (kết quả kinh doanh) với thuế TNDN đã nộp (lưu chuyển tiền tệ).",
+     "Chia chi phí thuế cho lợi nhuận trước thuế: lệch xa 20% thì đọc thuyết minh ưu đãi thuế.",
+     "Với ngành bia, rượu, xăng dầu, ô tô: nhớ phần lớn là thuế gián thu.",
+     "So dòng tiền kinh doanh theo năm, không so quý 1 với quý 3."
+    ]
+   ],
+   [
+    "p",
+    "Liên quan: <a href=\"/f0/thue-thu-nhap-hoan-lai-la-gi.html\">thuế thu nhập hoãn lại</a> là phần thuế lệch giữa kế toán và luật thuế, khác với khoản phải nộp trong bài này. Số liệu lấy từ BCTC hợp nhất quý 1–3/2026, chỉ để minh họa cách đọc, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Thuế và các khoản phải nộp Nhà nước là tài sản hay nợ?",
+    "Là nợ ngắn hạn. Khoản ngược lại, thuế nộp thừa hoặc được khấu trừ, nằm ở tài sản ngắn hạn với tên thuế và các khoản khác phải thu Nhà nước."
+   ],
+   [
+    "Vì sao thuế phải nộp cuối quý 3 thường cao?",
+    "Vì thuế thu nhập phát sinh từ lãi 9 tháng phần lớn chưa đến hạn quyết toán, cộng với GTGT và thuế tiêu thụ đặc biệt của tháng cuối quý chưa nộp."
+   ],
+   [
+    "Thuế phải nộp tăng mạnh có phải dấu hiệu xấu?",
+    "Không nhất thiết. Nếu đi cùng lợi nhuận tăng thì bình thường. Chỉ cần cảnh giác khi khoản này tăng nhiều năm liền mà lợi nhuận đứng yên, hoặc thuyết minh có truy thu, chậm nộp."
+   ]
+  ],
+  "rel": [
+   "ty-suat-thue-thuc-te-la-gi",
+   "thue-thu-nhap-hoan-lai-la-gi",
+   "no-phai-tra-la-gi",
+   "bao-cao-luu-chuyen-tien-te-la-gi"
+  ]
+ },
+ {
+  "slug": "du-phong-phai-tra-la-gi",
+  "kw": "dự phòng phải trả là gì",
+  "grp": 3,
+  "title": "Dự phòng phải trả là gì? Khoản nợ chưa đến hạn, ví dụ VJC, HVN",
+  "desc": "Vietjet có hơn 20.691 tỷ dự phòng phải trả, khoảng 16% nợ phải trả. Dự phòng phải trả là gì, khác dự phòng giảm giá ra sao, cách đọc từng bước.",
+  "body": [
+   [
+    "p",
+    "Ngày 31/3/2026, dự phòng phải trả ngắn hạn của Vietnam Airlines (HVN) chỉ 25,4 tỷ đồng. Ba tháng sau, ngày 30/6/2026, con số là <b>2.831,6 tỷ</b>, gấp hơn 100 lần. Cùng quý 2/2026, HVN báo lỗ trước thuế 497,6 tỷ. Một khoản \"nợ\" mà doanh nghiệp chưa phải trả cho ai cụ thể, lại có thể làm lợi nhuận đổi màu. Đó là <b>dự phòng phải trả</b>."
+   ],
+   [
+    "h2",
+    "Dự phòng phải trả là gì?"
+   ],
+   [
+    "p",
+    "<b>Dự phòng phải trả</b> là khoản nợ doanh nghiệp ghi nhận trước cho một nghĩa vụ <b>chắc chắn hoặc gần như chắc chắn sẽ phát sinh</b>, nhưng chưa biết chính xác số tiền hoặc thời điểm. Ba điều kiện để ghi: có nghĩa vụ từ sự kiện đã xảy ra, nhiều khả năng phải chi tiền, và ước tính được số tiền."
+   ],
+   [
+    "p",
+    "Ví dụ thường gặp:"
+   ],
+   [
+    "ul",
+    [
+     "Bảo hành sản phẩm, công trình xây dựng.",
+     "Bảo dưỡng lớn, trả lại tài sản thuê theo điều kiện hợp đồng (hãng bay).",
+     "Tháo dỡ, hoàn nguyên mặt bằng khi hết dự án.",
+     "Tái cơ cấu, kiện tụng có khả năng thua, hợp đồng có rủi ro lỗ."
+    ]
+   ],
+   [
+    "p",
+    "Khi trích, doanh nghiệp ghi tăng chi phí trong kỳ và tăng nợ. Khi thực chi, tiền ra và nợ giảm, không ảnh hưởng lợi nhuận nữa. Nếu ước tính thừa, phần thừa được <a href=\"/f0/hoan-nhap-du-phong-la-gi.html\">hoàn nhập</a> làm lợi nhuận kỳ đó tăng."
+   ],
+   [
+    "h2",
+    "Khác dự phòng giảm giá ở chỗ nào?"
+   ],
+   [
+    "p",
+    "Đây là chỗ người mới hay nhầm. <a href=\"/f0/du-phong-giam-gia-hang-ton-kho-la-gi.html\">Dự phòng giảm giá hàng tồn kho</a> hay <a href=\"/f0/du-phong-phai-thu-kho-doi-la-gi.html\">dự phòng phải thu khó đòi</a> là số âm <b>trừ vào tài sản</b>, cho biết tài sản đang đáng giá ít hơn sổ sách. Còn dự phòng phải trả nằm bên <b>nợ</b>, cho biết doanh nghiệp sẽ phải chi thêm tiền trong tương lai."
+   ],
+   [
+    "h2",
+    "Bốn doanh nghiệp đang mang bao nhiêu dự phòng?"
+   ],
+   [
+    "p",
+    "Số liệu BCTC hợp nhất ngày 30/9/2026, đơn vị tỷ đồng:"
+   ],
+   [
+    "table",
+    [
+     [
+      "Mã",
+      "Ngắn hạn",
+      "Dài hạn",
+      "Tổng",
+      "% nợ phải trả"
+     ],
+     [
+      "VJC",
+      "2.225,8",
+      "18.465,4",
+      "20.691,2",
+      "16,4%"
+     ],
+     [
+      "GAS",
+      "16,0",
+      "3.300,0",
+      "3.316,0",
+      "10,9%"
+     ],
+     [
+      "HVN",
+      "1.469,3",
+      "3.436,7",
+      "4.906,0",
+      "6,7%"
+     ],
+     [
+      "POW",
+      "1.472,1",
+      "2.033,3",
+      "3.505,4",
+      "5,6%"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Vietjet (VJC) nổi bật: hơn 20 nghìn tỷ, khoảng 16,4% tổng nợ phải trả 126.209,9 tỷ. Với hãng bay thuê máy bay, khoản này thường gắn với nghĩa vụ bảo dưỡng định kỳ và trả máy bay đúng điều kiện hợp đồng. Nó không phải nợ vay, không trả lãi, nhưng là tiền thật sẽ phải chi."
+   ],
+   [
+    "h2",
+    "Tính từng bước với HVN thế nào?"
+   ],
+   [
+    "ol",
+    [
+     "30/6/2026: ngắn hạn 2.831,6 + dài hạn 1.666,0 = 4.497,6 tỷ.",
+     "30/9/2026: ngắn hạn 1.469,3 + dài hạn 3.436,7 = 4.906,0 tỷ.",
+     "Ngắn hạn giảm 1.362,3 tỷ, nhìn qua tưởng đã chi hoặc hoàn nhập.",
+     "Nhưng tổng lại <b>tăng</b> 408,4 tỷ: phần lớn chỉ chuyển từ ngắn hạn sang dài hạn.",
+     "Muốn biết lý do cụ thể, đọc thuyết minh \"Dự phòng phải trả\" trong BCTC: mỗi khoản có số đầu kỳ, trích thêm, sử dụng, hoàn nhập."
+    ]
+   ],
+   [
+    "p",
+    "Bài học: luôn cộng cả ngắn hạn và dài hạn trước khi kết luận."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>Chỉ nhìn một nửa.</b> Như HVN ở trên, ngắn hạn giảm mạnh nhưng tổng dự phòng vẫn tăng. Chỉ đọc một dòng sẽ ra kết luận ngược.",
+     "<b>Quên dự phòng khi tính đòn bẩy.</b> Hệ số nợ vay/vốn chủ của VJC không gồm 20.691 tỷ dự phòng. Khi so mức an toàn của hãng bay, nên nhìn cả tổng nợ phải trả (xem <a href=\"/f0/no-phai-tra-la-gi.html\">nợ phải trả là gì</a>).",
+     "<b>Không để ý khoản trích một lần.</b> PV Power (POW) có dự phòng ngắn hạn tăng từ 215,5 tỷ (30/9/2025) lên 1.472,1 tỷ (31/12/2025) và giữ nguyên ba quý liền. Đức Giang (DGC) từ 0 lên 100 tỷ rồi 200 tỷ trong quý 2 và 3/2026. Khoản trích lớn một quý làm lợi nhuận quý đó thấp, và nếu sau này hoàn nhập thì lợi nhuận quý hoàn nhập sẽ cao bất thường."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist anh chị tự làm được"
+   ],
+   [
+    "ul",
+    [
+     "Tìm cả hai dòng dự phòng phải trả ngắn hạn và dài hạn, cộng lại.",
+     "So với quý trước và cùng kỳ: tăng hay giảm bao nhiêu.",
+     "Chia cho tổng nợ phải trả để biết khoản này lớn cỡ nào.",
+     "Quý nào tăng hoặc giảm đột biến, mở thuyết minh xem trích cho việc gì.",
+     "Khi lợi nhuận tăng vọt, kiểm tra có hoàn nhập dự phòng không."
+    ]
+   ],
+   [
+    "p",
+    "Số liệu lấy từ BCTC hợp nhất các quý 2025–2026, chỉ để minh họa cách đọc, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Dự phòng phải trả có phải là nợ vay không?",
+    "Không. Đây là nghĩa vụ ước tính, không trả lãi. Nhưng doanh nghiệp vẫn sẽ phải chi tiền, nên cần tính vào bức tranh nợ."
+   ],
+   [
+    "Dự phòng phải trả nằm ở đâu trong BCTC?",
+    "Ở phần nợ phải trả của bảng cân đối kế toán, tách thành ngắn hạn (dự kiến chi trong 12 tháng) và dài hạn. Chi tiết từng khoản nằm trong thuyết minh."
+   ],
+   [
+    "Hoàn nhập dự phòng phải trả có làm tăng lợi nhuận không?",
+    "Có. Phần đã trích thừa được ghi giảm chi phí trong kỳ hoàn nhập, nên lợi nhuận kỳ đó tăng dù không có thêm doanh thu."
+   ]
+  ],
+  "rel": [
+   "hoan-nhap-du-phong-la-gi",
+   "no-phai-tra-la-gi",
+   "chi-phi-phai-tra-la-gi",
+   "co-phieu-hang-khong"
+  ]
  }
 ]

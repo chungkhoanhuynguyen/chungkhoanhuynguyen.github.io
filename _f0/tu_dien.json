@@ -693,5 +693,20 @@
 "Phải trả cổ tức",
 "Cổ tức tiền mặt đã chốt quyền nhưng chưa chi, ghi ở nợ ngắn hạn.",
 "phai-tra-co-tuc-la-gi"
+],
+[
+"Chứng khoán kinh doanh",
+"Trái phiếu, cổ phiếu ngân hàng hoặc doanh nghiệp mua để bán lại trong ngắn hạn, lãi lỗ ghi vào kết quả từng quý.",
+"chung-khoan-kinh-doanh-la-gi"
+],
+[
+"Thuế phải nộp Nhà nước",
+"Khoản thuế đã phát sinh (TNDN, GTGT, tiêu thụ đặc biệt…) nhưng chưa nộp tại ngày khóa sổ, ghi ở nợ ngắn hạn.",
+"thue-va-cac-khoan-phai-nop-nha-nuoc-la-gi"
+],
+[
+"Dự phòng phải trả",
+"Khoản nợ ghi trước cho nghĩa vụ gần như chắc chắn phát sinh nhưng chưa rõ số tiền hoặc thời điểm, như bảo hành, bảo dưỡng.",
+"du-phong-phai-tra-la-gi"
 ]
 ]
