@@ -1,24 +1,164 @@
-[{
-"key": "TN0911B",
-"tieu_de": "Ngân hàng số sập, 3 triệu người kẹt tiền, Tổng thống Paraguay từ chức: bài học cho người Việt",
-"hook": ["3 TRIỆU NGƯỜI", "KẸT TIỀN 1 ĐÊM"],
-"nhan": "TIN NÓNG THẾ GIỚI",
-"short_caption": "Ngân hàng số Ueno ở Paraguay sập, 3 triệu khách bị đóng băng tài khoản, Tổng thống Santiago Peña từ chức ngày 5/11. Việt Nam đã nâng hạn mức bảo hiểm tiền gửi lên 350 triệu đồng. Anh chị đang chia tiền gửi ở mấy ngân hàng? Quan điểm cá nhân, không phải khuyến nghị đầu tư.",
-"tags": [], "toc": 1.12, "nhac": "lofi", "music_db": -2, "hieu_ung": 1,
-"cau_hoi": {"chu_to": "ANH CHỊ GỬI MẤY NƠI?", "loi": "Anh chị đang gửi tiền ở một ngân hàng hay chia ra nhiều nơi? Bình luận cho em biết nhé.", "loi_doc": "Anh chị đang gửi tiền ở một ngân hàng hay chia ra nhiều nơi? Bình luận cho em biết nhé."},
-"canh": [
-{"chu_to": "NGÂN HÀNG SẬP, TỔNG THỐNG TỪ CHỨC", "loi": "Chỉ trong một tuần, một ngân hàng số sụp đổ khiến 3 triệu người kẹt tiền, và Tổng thống Paraguay phải từ chức.", "loi_doc": "Chỉ trong một tuần, một ngân hàng số sụp đổ khiến ba triệu người kẹt tiền, và Tổng thống Paraguay phải từ chức.", "anh": "Asunción Paraguay", "chat": 1, "tin": 1},
-{"chu_to": "UENO: TỪ FINTECH THÀNH NGÂN HÀNG", "loi": "Ueno khởi đầu là một công ty công nghệ tài chính, rồi lớn rất nhanh. Ngân hàng này có khoảng 3 triệu khách, trong một đất nước 6,5 triệu dân, và giữ khoảng 800 triệu USD tiền công quỹ, gồm cả quỹ hưu trí.", "loi_doc": "Ueno khởi đầu là một công ty công nghệ tài chính, rồi lớn rất nhanh. Ngân hàng này có khoảng ba triệu khách, trong một đất nước sáu phẩy năm triệu dân, và giữ khoảng tám trăm triệu đô la tiền công quỹ, gồm cả quỹ hưu trí.",
- "the": {"loai": "lon", "tieu": "NGÂN HÀNG SỐ UENO", "nguon": "AP, NPR 5/11/2026", "dong": [["3 TRIỆU KHÁCH", 84, "vang"], ["/ 6,5 TRIỆU DÂN", 56, "trang"], ["~800 TRIỆU USD CÔNG QUỸ", 50, "do"]]}},
-{"chu_to": "APP, THẺ, CHUYỂN KHOẢN TÊ LIỆT", "loi": "Khi ngân hàng trung ương tiếp quản Ueno, ứng dụng, thẻ và chuyển khoản đều ngừng hoạt động, chi nhánh đóng cửa. Nhiều gia đình bỗng không có tiền mua đồ ăn.", "loi_doc": "Khi ngân hàng trung ương tiếp quản Ueno, ứng dụng, thẻ và chuyển khoản đều ngừng hoạt động, chi nhánh đóng cửa. Nhiều gia đình bỗng không có tiền mua đồ ăn.", "anh": "ATM machine", "chat": 1},
-{"chu_to": "CHẤN ĐỘNG DÂY CHUYỀN", "loi": "Thống đốc ngân hàng trung ương rời ghế. 6 lãnh đạo Ueno bị tạm giam, 27 người bị truy tố. Đồng guarani mất gần 7% chỉ trong một tuần.", "loi_doc": "Thống đốc ngân hàng trung ương rời ghế. Sáu lãnh đạo Ueno bị tạm giam, hai mươi bảy người bị truy tố. Đồng guarani mất gần bảy phần trăm chỉ trong một tuần.",
- "the": {"loai": "lon", "tieu": "SAU 1 TUẦN", "nguon": "AP, NPR 5/11/2026", "dong": [["6 LÃNH ĐẠO BỊ TẠM GIAM", 54, "trang"], ["27 NGƯỜI BỊ TRUY TỐ", 54, "vang"], ["GUARANI −7%/TUẦN", 62, "do"]]}},
-{"chu_to": "TỔNG THỐNG TỪ CHỨC 5/11", "loi": "Ông Santiago Peña từng có liên hệ với tập đoàn mẹ của Ueno. Ngày 5/11 ông tuyên bố từ chức, và chỉ vài phút sau Hạ viện bỏ phiếu 78-0 luận tội ông.", "loi_doc": "Ông Santiago Peña từng có liên hệ với tập đoàn mẹ của Ueno. Ngày năm tháng mười một ông tuyên bố từ chức, và chỉ vài phút sau Hạ viện bỏ phiếu bảy mươi tám không luận tội ông.", "anh": "Palacio de los López", "chat": 1},
-{"chu_to": "AI ĐƯỢC TRẢ TIỀN?", "loi": "Điều đáng chú ý là không phải ai cũng mất trắng. Quỹ bảo đảm tiền gửi bắt đầu trả cho tài khoản nhỏ, và ngân hàng trung ương nói sẽ trả đủ cho khoảng 97% khách hàng.", "loi_doc": "Điều đáng chú ý là không phải ai cũng mất trắng. Quỹ bảo đảm tiền gửi bắt đầu trả cho tài khoản nhỏ, và ngân hàng trung ương nói sẽ trả đủ cho khoảng chín mươi bảy phần trăm khách hàng.", "anh": "Paraguayan guaraní banknotes", "chat": 1},
-{"chu_to": "VIỆT NAM: BẢO HIỂM 350 TRIỆU", "loi": "Ở Việt Nam, từ ngày 13/7/2026, hạn mức bảo hiểm tiền gửi đã tăng từ 125 triệu lên 350 triệu đồng cho mỗi người tại mỗi ngân hàng, gấp 2,8 lần.", "loi_doc": "Ở Việt Nam, từ ngày mười ba tháng bảy năm hai không hai sáu, hạn mức bảo hiểm tiền gửi đã tăng từ một trăm hai mươi lăm triệu lên ba trăm năm mươi triệu đồng cho mỗi người tại mỗi ngân hàng, gấp hai phẩy tám lần.",
- "the": {"loai": "thang", "tieu": "HẠN MỨC BẢO HIỂM TIỀN GỬI", "nguon": "BHTG Việt Nam, từ 13/7/2026", "dv": " triệu", "hang": [["Trước đây", 125, "tim"], ["Từ 13/7/2026", 350, "vang"]]}},
-{"chu_to": "CỔ PHIẾU VIỆT NAM SAO?", "loi": "Paraguay là nền kinh tế nhỏ, nên ảnh hưởng trực tiếp tới chứng khoán Việt Nam gần như không có. Nhưng nó nhắc nhà đầu tư nhìn kỹ chất lượng ngân hàng: nợ xấu, dự phòng, và nguồn tiền gửi.", "loi_doc": "Paraguay là nền kinh tế nhỏ, nên ảnh hưởng trực tiếp tới chứng khoán Việt Nam gần như không có. Nhưng nó nhắc nhà đầu tư nhìn kỹ chất lượng ngân hàng: nợ xấu, dự phòng, và nguồn tiền gửi.",
- "the": {"loai": "lon", "tieu": "SOI CỔ PHIẾU NGÂN HÀNG", "nguon": "", "dong": [["NỢ XẤU TĂNG HAY GIẢM?", 58, "do"], ["DỰ PHÒNG ĐỦ CHƯA?", 58, "vang"], ["TIỀN GỬI CÓ ỔN ĐỊNH?", 58, "tim2"]]}},
-{"chu_to": "CHIA TIỀN MÀ GIỮ", "loi": "Bài học cho mỗi gia đình: đừng dồn hết vào một nơi chỉ vì lãi cao hay ứng dụng đẹp. Chia ra vài ngân hàng, mỗi nơi trong hạn mức được bảo hiểm.", "loi_doc": "Bài học cho mỗi gia đình: đừng dồn hết vào một nơi chỉ vì lãi cao hay ứng dụng đẹp. Chia ra vài ngân hàng, mỗi nơi trong hạn mức được bảo hiểm.", "anh": "Piggy bank coins", "chat": 1}
+[
+ {
+  "key": "TN0911B",
+  "tieu_de": "Ngân hàng số sập, 3 triệu người kẹt tiền, Tổng thống Paraguay từ chức: bài học cho người Việt",
+  "hook": [
+   "3 TRIỆU NGƯỜI",
+   "KẸT TIỀN 1 ĐÊM"
+  ],
+  "nhan": "TIN NÓNG THẾ GIỚI",
+  "short_caption": "Ngân hàng số Ueno ở Paraguay sập, 3 triệu khách bị đóng băng tài khoản, Tổng thống Santiago Peña từ chức ngày 5/11. Việt Nam đã nâng hạn mức bảo hiểm tiền gửi lên 350 triệu đồng. Anh chị đang chia tiền gửi ở mấy ngân hàng? Quan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [],
+  "toc": 1.12,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "ANH CHỊ GỬI MẤY NƠI?",
+   "loi": "Anh chị đang gửi tiền ở một ngân hàng hay chia ra nhiều nơi? Bình luận cho em biết nhé.",
+   "loi_doc": "Anh chị đang gửi tiền ở một ngân hàng hay chia ra nhiều nơi? Bình luận cho em biết nhé."
+  },
+  "canh": [
+   {
+    "chu_to": "NGÂN HÀNG SẬP, TỔNG THỐNG TỪ CHỨC",
+    "loi": "Chỉ trong một tuần, một ngân hàng số sụp đổ khiến 3 triệu người kẹt tiền, và Tổng thống Paraguay phải từ chức.",
+    "loi_doc": "Chỉ trong một tuần, một ngân hàng số sụp đổ khiến ba triệu người kẹt tiền, và Tổng thống Paraguay phải từ chức.",
+    "anh": "Asunción skyline",
+    "chat": 1,
+    "tin": 1
+   },
+   {
+    "chu_to": "UENO: TỪ FINTECH THÀNH NGÂN HÀNG",
+    "loi": "Ueno khởi đầu là một công ty công nghệ tài chính, rồi lớn rất nhanh. Ngân hàng này có khoảng 3 triệu khách, trong một đất nước 6,5 triệu dân, và giữ khoảng 800 triệu USD tiền công quỹ, gồm cả quỹ hưu trí.",
+    "loi_doc": "Ueno khởi đầu là một công ty công nghệ tài chính, rồi lớn rất nhanh. Ngân hàng này có khoảng ba triệu khách, trong một đất nước sáu phẩy năm triệu dân, và giữ khoảng tám trăm triệu đô la tiền công quỹ, gồm cả quỹ hưu trí.",
+    "the": {
+     "loai": "lon",
+     "tieu": "NGÂN HÀNG SỐ UENO",
+     "nguon": "AP, NPR 5/11/2026",
+     "dong": [
+      [
+       "3 TRIỆU KHÁCH",
+       84,
+       "vang"
+      ],
+      [
+       "/ 6,5 TRIỆU DÂN",
+       56,
+       "trang"
+      ],
+      [
+       "~800 TRIỆU USD CÔNG QUỸ",
+       50,
+       "do"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "APP, THẺ, CHUYỂN KHOẢN TÊ LIỆT",
+    "loi": "Khi ngân hàng trung ương tiếp quản Ueno, ứng dụng, thẻ và chuyển khoản đều ngừng hoạt động, chi nhánh đóng cửa. Nhiều gia đình bỗng không có tiền mua đồ ăn.",
+    "loi_doc": "Khi ngân hàng trung ương tiếp quản Ueno, ứng dụng, thẻ và chuyển khoản đều ngừng hoạt động, chi nhánh đóng cửa. Nhiều gia đình bỗng không có tiền mua đồ ăn.",
+    "anh": "ATM machine",
+    "chat": 1
+   },
+   {
+    "chu_to": "CHẤN ĐỘNG DÂY CHUYỀN",
+    "loi": "Thống đốc ngân hàng trung ương rời ghế. 6 lãnh đạo Ueno bị tạm giam, 27 người bị truy tố. Đồng guarani mất gần 7% chỉ trong một tuần.",
+    "loi_doc": "Thống đốc ngân hàng trung ương rời ghế. Sáu lãnh đạo Ueno bị tạm giam, hai mươi bảy người bị truy tố. Đồng guarani mất gần bảy phần trăm chỉ trong một tuần.",
+    "the": {
+     "loai": "lon",
+     "tieu": "SAU 1 TUẦN",
+     "nguon": "AP, NPR 5/11/2026",
+     "dong": [
+      [
+       "6 LÃNH ĐẠO BỊ TẠM GIAM",
+       54,
+       "trang"
+      ],
+      [
+       "27 NGƯỜI BỊ TRUY TỐ",
+       54,
+       "vang"
+      ],
+      [
+       "GUARANI −7%/TUẦN",
+       62,
+       "do"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "TỔNG THỐNG TỪ CHỨC 5/11",
+    "loi": "Ông Santiago Peña từng có liên hệ với tập đoàn mẹ của Ueno. Ngày 5/11 ông tuyên bố từ chức, và chỉ vài phút sau Hạ viện bỏ phiếu 78-0 luận tội ông.",
+    "loi_doc": "Ông Santiago Peña từng có liên hệ với tập đoàn mẹ của Ueno. Ngày năm tháng mười một ông tuyên bố từ chức, và chỉ vài phút sau Hạ viện bỏ phiếu bảy mươi tám không luận tội ông.",
+    "anh": "Palacio de los López",
+    "chat": 1
+   },
+   {
+    "chu_to": "AI ĐƯỢC TRẢ TIỀN?",
+    "loi": "Điều đáng chú ý là không phải ai cũng mất trắng. Quỹ bảo đảm tiền gửi bắt đầu trả cho tài khoản nhỏ, và ngân hàng trung ương nói sẽ trả đủ cho khoảng 97% khách hàng.",
+    "loi_doc": "Điều đáng chú ý là không phải ai cũng mất trắng. Quỹ bảo đảm tiền gửi bắt đầu trả cho tài khoản nhỏ, và ngân hàng trung ương nói sẽ trả đủ cho khoảng chín mươi bảy phần trăm khách hàng.",
+    "anh": "Paraguayan guaraní banknotes",
+    "chat": 1
+   },
+   {
+    "chu_to": "VIỆT NAM: BẢO HIỂM 350 TRIỆU",
+    "loi": "Ở Việt Nam, từ ngày 13/7/2026, hạn mức bảo hiểm tiền gửi đã tăng từ 125 triệu lên 350 triệu đồng cho mỗi người tại mỗi ngân hàng, gấp 2,8 lần.",
+    "loi_doc": "Ở Việt Nam, từ ngày mười ba tháng bảy năm hai không hai sáu, hạn mức bảo hiểm tiền gửi đã tăng từ một trăm hai mươi lăm triệu lên ba trăm năm mươi triệu đồng cho mỗi người tại mỗi ngân hàng, gấp hai phẩy tám lần.",
+    "the": {
+     "loai": "thang",
+     "tieu": "HẠN MỨC BẢO HIỂM TIỀN GỬI",
+     "nguon": "BHTG Việt Nam, từ 13/7/2026",
+     "dv": " triệu",
+     "hang": [
+      [
+       "Trước đây",
+       125,
+       "tim"
+      ],
+      [
+       "Từ 13/7/2026",
+       350,
+       "vang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "CỔ PHIẾU VIỆT NAM SAO?",
+    "loi": "Paraguay là nền kinh tế nhỏ, nên ảnh hưởng trực tiếp tới chứng khoán Việt Nam gần như không có. Nhưng nó nhắc nhà đầu tư nhìn kỹ chất lượng ngân hàng: nợ xấu, dự phòng, và nguồn tiền gửi.",
+    "loi_doc": "Paraguay là nền kinh tế nhỏ, nên ảnh hưởng trực tiếp tới chứng khoán Việt Nam gần như không có. Nhưng nó nhắc nhà đầu tư nhìn kỹ chất lượng ngân hàng: nợ xấu, dự phòng, và nguồn tiền gửi.",
+    "the": {
+     "loai": "lon",
+     "tieu": "SOI CỔ PHIẾU NGÂN HÀNG",
+     "nguon": "",
+     "dong": [
+      [
+       "NỢ XẤU TĂNG HAY GIẢM?",
+       58,
+       "do"
+      ],
+      [
+       "DỰ PHÒNG ĐỦ CHƯA?",
+       58,
+       "vang"
+      ],
+      [
+       "TIỀN GỬI CÓ ỔN ĐỊNH?",
+       58,
+       "tim2"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "CHIA TIỀN MÀ GIỮ",
+    "loi": "Bài học cho mỗi gia đình: đừng dồn hết vào một nơi chỉ vì lãi cao hay ứng dụng đẹp. Chia ra vài ngân hàng, mỗi nơi trong hạn mức được bảo hiểm.",
+    "loi_doc": "Bài học cho mỗi gia đình: đừng dồn hết vào một nơi chỉ vì lãi cao hay ứng dụng đẹp. Chia ra vài ngân hàng, mỗi nơi trong hạn mức được bảo hiểm.",
+    "anh": "Vietnamese dong banknotes",
+    "chat": 1
+   }
+  ]
+ }
 ]
-}]
