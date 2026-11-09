@@ -20,21 +20,28 @@
   },
   "canh": [
    {
-    "chu_to": "NGÂN HÀNG SẬP, TỔNG THỐNG TỪ CHỨC",
-    "loi": "Chỉ trong một tuần, một ngân hàng số sụp đổ khiến 3 triệu người kẹt tiền, và Tổng thống Paraguay phải từ chức.",
-    "loi_doc": "Chỉ trong một tuần, một ngân hàng số sụp đổ khiến ba triệu người kẹt tiền, và Tổng thống Paraguay phải từ chức.",
-    "anh": "Asunción skyline",
+    "chu_to": "NƯỚC NÀO, Ở ĐÂU?",
+    "loi": "Paraguay là một nước nhỏ nằm giữa Nam Mỹ, không giáp biển, kẹp giữa Brazil, Argentina và Bolivia, dân số khoảng 6,5 triệu người.",
+    "loi_doc": "Paraguay là một nước nhỏ nằm giữa Nam Mỹ, không giáp biển, kẹp giữa Brazil, Argentina và Bolivia, dân số khoảng sáu phẩy năm triệu người.",
+    "anh": "Paraguay orthographic projection",
     "chat": 1,
     "tin": 1
    },
    {
-    "chu_to": "UENO: TỪ FINTECH THÀNH NGÂN HÀNG",
-    "loi": "Ueno khởi đầu là một công ty công nghệ tài chính, rồi lớn rất nhanh. Ngân hàng này có khoảng 3 triệu khách, trong một đất nước 6,5 triệu dân, và giữ khoảng 800 triệu USD tiền công quỹ, gồm cả quỹ hưu trí.",
-    "loi_doc": "Ueno khởi đầu là một công ty công nghệ tài chính, rồi lớn rất nhanh. Ngân hàng này có khoảng ba triệu khách, trong một đất nước sáu phẩy năm triệu dân, và giữ khoảng tám trăm triệu đô la tiền công quỹ, gồm cả quỹ hưu trí.",
+    "chu_to": "KINH TẾ ĐANG ĐI LÊN",
+    "loi": "Nước này sống nhờ đậu nành, thịt bò và đập thủy điện Itaipú. Năm 2024, Moody's lần đầu nâng Paraguay lên hạng đầu tư, và chính phủ quảng bá đây là nơi đáng để rót vốn.",
+    "loi_doc": "Nước này sống nhờ đậu nành, thịt bò và đập thủy điện Itaipú. Năm hai không hai bốn, Moody's lần đầu nâng Paraguay lên hạng đầu tư, và chính phủ quảng bá đây là nơi đáng để rót vốn.",
+    "anh": "Itaipu Dam",
+    "chat": 1
+   },
+   {
+    "chu_to": "UENO LÀ AI?",
+    "loi": "Biểu tượng của sự đổi mới đó là Ueno, một ngân hàng số lớn rất nhanh trong 5 năm. Ueno có khoảng 3 triệu khách, hơn 60% người trưởng thành, và giữ khoảng 800 triệu USD tiền công, gần một nửa là quỹ hưu trí và y tế.",
+    "loi_doc": "Biểu tượng của sự đổi mới đó là Ueno, một ngân hàng số lớn rất nhanh trong năm năm. Ueno có khoảng ba triệu khách, hơn sáu mươi phần trăm người trưởng thành, và giữ khoảng tám trăm triệu đô la tiền công, gần một nửa là quỹ hưu trí và y tế.",
     "the": {
      "loai": "lon",
      "tieu": "NGÂN HÀNG SỐ UENO",
-     "nguon": "AP, NPR 5/11/2026",
+     "nguon": "AS/COA, AP 11/2026",
      "dong": [
       [
        "3 TRIỆU KHÁCH",
@@ -42,12 +49,12 @@
        "vang"
       ],
       [
-       "/ 6,5 TRIỆU DÂN",
-       56,
+       ">60% NGƯỜI TRƯỞNG THÀNH",
+       50,
        "trang"
       ],
       [
-       "~800 TRIỆU USD CÔNG QUỸ",
+       "~800 TRIỆU USD TIỀN CÔNG",
        50,
        "do"
       ]
@@ -55,16 +62,37 @@
     }
    },
    {
-    "chu_to": "APP, THẺ, CHUYỂN KHOẢN TÊ LIỆT",
-    "loi": "Khi ngân hàng trung ương tiếp quản Ueno, ứng dụng, thẻ và chuyển khoản đều ngừng hoạt động, chi nhánh đóng cửa. Nhiều gia đình bỗng không có tiền mua đồ ăn.",
-    "loi_doc": "Khi ngân hàng trung ương tiếp quản Ueno, ứng dụng, thẻ và chuyển khoản đều ngừng hoạt động, chi nhánh đóng cửa. Nhiều gia đình bỗng không có tiền mua đồ ăn.",
+    "chu_to": "THÁNG 6: ĐÈN VÀNG",
+    "loi": "Từ tháng 6, cơ quan quản lý đã cảnh báo Ueno cho vay rủi ro, đặc biệt là cho các công ty liên quan tới chính chủ ngân hàng. Đến tháng 11, vốn của Ueno tụt dưới ngưỡng an toàn.",
+    "loi_doc": "Từ tháng sáu, cơ quan quản lý đã cảnh báo Ueno cho vay rủi ro, đặc biệt là cho các công ty liên quan tới chính chủ ngân hàng. Đến tháng mười một, vốn của Ueno tụt dưới ngưỡng an toàn.",
+    "anh": "Bank vault",
+    "chat": 1
+   },
+   {
+    "chu_to": "2/11: KHÓA TÀI KHOẢN",
+    "loi": "Ngày 2/11, ngân hàng trung ương tiếp quản Ueno. Hôm sau, tài khoản bị khóa, ứng dụng, thẻ và chuyển khoản ngừng hết. Người dân hoảng loạn và kéo ra đường biểu tình ở thủ đô Asunción.",
+    "loi_doc": "Ngày hai tháng mười một, ngân hàng trung ương tiếp quản Ueno. Hôm sau, tài khoản bị khóa, ứng dụng, thẻ và chuyển khoản ngừng hết. Người dân hoảng loạn và kéo ra đường biểu tình ở thủ đô Asunción.",
     "anh": "ATM machine",
     "chat": 1
    },
    {
-    "chu_to": "CHẤN ĐỘNG DÂY CHUYỀN",
-    "loi": "Thống đốc ngân hàng trung ương rời ghế. 6 lãnh đạo Ueno bị tạm giam, 27 người bị truy tố. Đồng guarani mất gần 7% chỉ trong một tuần.",
-    "loi_doc": "Thống đốc ngân hàng trung ương rời ghế. Sáu lãnh đạo Ueno bị tạm giam, hai mươi bảy người bị truy tố. Đồng guarani mất gần bảy phần trăm chỉ trong một tuần.",
+    "chu_to": "VÌ SAO DÂN GIẬN TỔNG THỐNG?",
+    "loi": "Dân giận vì tiền hưu trí của họ nằm ở đó. Tổng thống Santiago Peña từng là cổ đông của công ty sở hữu Ueno tới năm ngoái, và đã bổ nhiệm một lãnh đạo Ueno làm thống đốc ngân hàng trung ương.",
+    "loi_doc": "Dân giận vì tiền hưu trí của họ nằm ở đó. Tổng thống Santiago Peña từng là cổ đông của công ty sở hữu Ueno tới năm ngoái, và đã bổ nhiệm một lãnh đạo Ueno làm thống đốc ngân hàng trung ương.",
+    "anh": "Palacio de los López",
+    "chat": 1
+   },
+   {
+    "chu_to": "5/11: TỪ CHỨC, BỊ LUẬN TỘI",
+    "loi": "Ngày 5/11, ông Peña xin lỗi và từ chức. Ngay sau đó Hạ viện bỏ phiếu 78-0 luận tội ông, kể cả đảng của ông cũng quay lưng. Phó tổng thống Pedro Alliana dự kiến kế nhiệm.",
+    "loi_doc": "Ngày năm tháng mười một, ông Peña xin lỗi và từ chức. Ngay sau đó Hạ viện bỏ phiếu bảy mươi tám không luận tội ông, kể cả đảng của ông cũng quay lưng. Phó tổng thống Pedro Alliana dự kiến kế nhiệm.",
+    "anh": "National Congress of Paraguay",
+    "chat": 1
+   },
+   {
+    "chu_to": "HẬU QUẢ SAU 1 TUẦN",
+    "loi": "Thống đốc ngân hàng trung ương rời ghế, 6 lãnh đạo Ueno bị tạm giam, 27 người bị truy tố. Đồng guarani mất gần 7% trong một tuần, trái phiếu chính phủ giảm giá.",
+    "loi_doc": "Thống đốc ngân hàng trung ương rời ghế, sáu lãnh đạo Ueno bị tạm giam, hai mươi bảy người bị truy tố. Đồng guarani mất gần bảy phần trăm trong một tuần, trái phiếu chính phủ giảm giá.",
     "the": {
      "loai": "lon",
      "tieu": "SAU 1 TUẦN",
@@ -89,16 +117,9 @@
     }
    },
    {
-    "chu_to": "TỔNG THỐNG TỪ CHỨC 5/11",
-    "loi": "Ông Santiago Peña từng có liên hệ với tập đoàn mẹ của Ueno. Ngày 5/11 ông tuyên bố từ chức, và chỉ vài phút sau Hạ viện bỏ phiếu 78-0 luận tội ông.",
-    "loi_doc": "Ông Santiago Peña từng có liên hệ với tập đoàn mẹ của Ueno. Ngày năm tháng mười một ông tuyên bố từ chức, và chỉ vài phút sau Hạ viện bỏ phiếu bảy mươi tám không luận tội ông.",
-    "anh": "Palacio de los López",
-    "chat": 1
-   },
-   {
     "chu_to": "AI ĐƯỢC TRẢ TIỀN?",
-    "loi": "Điều đáng chú ý là không phải ai cũng mất trắng. Quỹ bảo đảm tiền gửi bắt đầu trả cho tài khoản nhỏ, và ngân hàng trung ương nói sẽ trả đủ cho khoảng 97% khách hàng.",
-    "loi_doc": "Điều đáng chú ý là không phải ai cũng mất trắng. Quỹ bảo đảm tiền gửi bắt đầu trả cho tài khoản nhỏ, và ngân hàng trung ương nói sẽ trả đủ cho khoảng chín mươi bảy phần trăm khách hàng.",
+    "loi": "Tin tốt là quỹ bảo đảm tiền gửi đã bắt đầu trả cho tài khoản nhỏ, và ngân hàng trung ương nói sẽ trả đủ cho khoảng 97% khách hàng.",
+    "loi_doc": "Tin tốt là quỹ bảo đảm tiền gửi đã bắt đầu trả cho tài khoản nhỏ, và ngân hàng trung ương nói sẽ trả đủ cho khoảng chín mươi bảy phần trăm khách hàng.",
     "anh": "Paraguayan guaraní banknotes",
     "chat": 1
    },
