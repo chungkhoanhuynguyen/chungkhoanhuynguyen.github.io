@@ -1,0 +1,156 @@
+[
+ {
+  "key": "SH0112A",
+  "tieu_de": "Ngân hàng trả 6,8% mà vẫn lãi 41.000 tỷ: bí mật nằm trong tài khoản thanh toán",
+  "hook": [
+   "TRẢ 6,8%",
+   "VẪN LÃI 41.000 TỶ?"
+  ],
+  "nhan": "TIỀN CỦA MÌNH ĐI ĐÂU",
+  "short_caption": "Gửi 1 tỷ, ngân hàng trả 68 triệu/năm. Cũng 12 tháng đó Vietcombank lãi ~41.000 tỷ. Bí mật: ~32% tiền gửi là tiền không kỳ hạn, lãi gần 0. Video đầy đủ trên kênh. Quan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [],
+  "keo_web": null,
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "ANH CHỊ ĐỂ ĐÂU?",
+   "loi": "Anh chị đang để phần lớn tiền ở tài khoản thanh toán, tiết kiệm hay cổ phiếu?",
+   "loi_doc": "Anh chị đang để phần lớn tiền ở tài khoản thanh toán, tiết kiệm hay cổ phiếu?"
+  },
+  "canh": [
+   {
+    "chu_to": "TRẢ 6,8%",
+    "loi": "Gửi một tỷ đồng mười hai tháng, ngân hàng trả anh chị khoảng 68 triệu. Nghe rất hậu.",
+    "loi_doc": "Gửi một tỷ đồng mười hai tháng, ngân hàng trả anh chị khoảng sáu mươi tám triệu. Nghe rất hậu.",
+    "the": {
+     "loai": "lon",
+     "tieu": "GỬI 1 TỶ 12 THÁNG",
+     "nguon": "Lãi niêm yết VCB 30/10/2026",
+     "dong": [
+      [
+       "6,8%",
+       90,
+       "vang"
+      ],
+      [
+       "≈ 68 TRIỆU",
+       60,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "VẪN LÃI 41.000 TỶ",
+    "loi": "Nhưng cũng mười hai tháng đó, riêng Vietcombank lãi khoảng 41 nghìn tỷ. Tiền đó từ đâu ra?",
+    "loi_doc": "Nhưng cũng mười hai tháng đó, riêng Vietcombank lãi khoảng bốn mươi mốt nghìn tỷ. Tiền đó từ đâu ra?",
+    "the": {
+     "loai": "lon",
+     "tieu": "VIETCOMBANK 4 QUÝ GẦN NHẤT",
+     "nguon": "BCTC đến quý 3/2026",
+     "dong": [
+      [
+       "41.000 TỶ",
+       90,
+       "vang"
+      ],
+      [
+       "LỢI NHUẬN",
+       50,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "THU 5,48% – VỐN 2,84%",
+    "loi": "Mỗi trăm đồng tài sản, Vietcombank thu về 5,48 đồng lãi. Thấp hơn cả lãi tiết kiệm 6,8%. Vậy mà giá vốn bình quân chỉ 2,84 đồng.",
+    "loi_doc": "Mỗi trăm đồng tài sản, Vietcombank thu về năm phẩy bốn mươi tám đồng lãi. Thấp hơn cả lãi tiết kiệm sáu phẩy tám phần trăm. Vậy mà giá vốn bình quân chỉ hai phẩy tám mươi bốn đồng.",
+    "the": {
+     "loai": "cot",
+     "tieu": "VIETCOMBANK 12 THÁNG",
+     "nguon": "BCTC TTM quý 3/2026",
+     "hang": [
+      [
+       "Thu lãi",
+       5.48
+      ],
+      [
+       "Giá vốn",
+       2.84
+      ],
+      [
+       "NIM",
+       2.93
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "%",
+     "max": 6
+    }
+   },
+   {
+    "chu_to": "32% TIỀN GẦN NHƯ FREE",
+    "loi": "Bí mật là tiền không kỳ hạn: số dư trong tài khoản nhận lương, chuyển khoản của chúng ta. Ở Vietcombank nó chiếm khoảng 32%, lãi chỉ khoảng 0,1% một năm.",
+    "loi_doc": "Bí mật là tiền không kỳ hạn: số dư trong tài khoản nhận lương, chuyển khoản của chúng ta. Ở Vietcombank nó chiếm khoảng ba mươi hai phần trăm, lãi chỉ khoảng không phẩy một phần trăm một năm.",
+    "the": {
+     "loai": "lon",
+     "tieu": "TIỀN KHÔNG KỲ HẠN (CASA)",
+     "nguon": "BCTC quý 3/2026",
+     "dong": [
+      [
+       "32,2%",
+       90,
+       "xanh"
+      ],
+      [
+       "≈ 573.000 TỶ",
+       56,
+       "trang"
+      ],
+      [
+       "LÃI GẦN BẰNG 0",
+       44,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "MIỄN PHÍ CHUYỂN KHOẢN?",
+    "loi": "Đó là lý do ngân hàng đua nhau miễn phí chuyển khoản. Họ không làm từ thiện, họ đang mua tiền rẻ.",
+    "loi_doc": "Đó là lý do ngân hàng đua nhau miễn phí chuyển khoản. Họ không làm từ thiện, họ đang mua tiền rẻ.",
+    "anh": [
+     "mobile banking app smartphone"
+    ],
+    "chat": 1
+   },
+   {
+    "chu_to": "GỬI TIỀN HAY LÀM CHỦ?",
+    "loi": "Muốn đứng cùng phía ngân hàng thì phải làm chủ, tức là mua cổ phiếu. Nhưng làm chủ thì chịu biến động: Vietcombank đang thấp hơn đỉnh 52 tuần khoảng 31%. Video đầy đủ em so sánh từng con số trên kênh.",
+    "loi_doc": "Muốn đứng cùng phía ngân hàng thì phải làm chủ, tức là mua cổ phiếu. Nhưng làm chủ thì chịu biến động: Vietcombank đang thấp hơn đỉnh năm mươi hai tuần khoảng ba mươi mốt phần trăm. Video đầy đủ em so sánh từng con số trên kênh.",
+    "the": {
+     "loai": "lon",
+     "tieu": "VCB CÁCH ĐỈNH 52 TUẦN",
+     "nguon": "Giá 9/11/2026",
+     "dong": [
+      [
+       "−30,8%",
+       90,
+       "do"
+      ],
+      [
+       "TIẾT KIỆM: GỐC KHÔNG ĐỔI",
+       40,
+       "trang"
+      ]
+     ]
+    }
+   }
+  ]
+ }
+]
