@@ -39,9 +39,13 @@ NGUOI = re.compile(r"confederate|counterfeit|people|person|portrait|men of|women
 def tim_ov(q, n=20):
     """QL1 11/11 (anh Huy: ảnh minh hoạ phải sát nội dung): Openverse – kho ảnh CC lớn (Flickr, v.v.), khớp ý nghĩa tốt hơn Commons.
     Dùng: anh='ov:elderly woman bank counter'. Chỉ lấy giấy phép cho phép dùng thương mại, ảnh ngang ≥1200px."""
-    u = "https://api.openverse.org/v1/images/?" + urllib.parse.urlencode({"q": q, "page_size": n, "license_type": "commercial", "aspect_ratio": "wide", "size": "large", "mature": "false"})
-    try: rs = json.loads(_get(u, 30)).get("results", [])
-    except Exception as e: print("anh: loi openverse", q, e); return []
+    rs = []; w = q.split()
+    for qq, extra in ((q, {"size": "large"}), (q, {}), (" ".join(w[:2]), {}), (w[-1] if len(w) > 2 else "", {})):   # chặt → lỏng
+        if not qq: continue
+        u = "https://api.openverse.org/v1/images/?" + urllib.parse.urlencode(dict({"q": qq, "page_size": n, "license_type": "commercial", "aspect_ratio": "wide", "mature": "false"}, **extra))
+        try: rs = [r for r in json.loads(_get(u, 30)).get("results", []) if (r.get("width") or 0) >= 1200 and "sketchfab" not in (r.get("foreign_landing_url") or "")]
+        except Exception as e: print("anh: loi openverse", qq, e); rs = []
+        if rs: break
     out = []
     for r in rs:
         if (r.get("width") or 0) < 1200 or XAU.search((r.get("title") or "") + " " + " ".join(t.get("name", "") for t in r.get("tags") or [])): continue

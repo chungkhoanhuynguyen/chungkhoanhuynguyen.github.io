@@ -27,7 +27,7 @@ S = [
         ('Huỷ hợp đồng trước hạn: nhận giá trị hoàn lại sau khi trừ các khoản phí.', '')]),
       say=("Tối đó, con gái bạn lục tủ, tìm ra một tập giấy bạn ký ở ngân hàng năm ngoái. Trên cùng là dòng chữ: hợp đồng bảo hiểm nhân thọ liên kết đầu tư. "
            "Thời hạn ba mươi lăm năm. Phí chín mươi triệu mỗi năm. Năm ký, bạn sáu mươi sáu tuổi. Nghĩa là hợp đồng kéo dài đến khi bạn một trăm linh một tuổi.")),
- dict(k='text', cap=('VÌ SAO THẬT TỆ KHI', 'GỬI TIẾT KIỆM MÀ RA VỀ VỚI BẢO HIỂM'), cols=CC, anh='ov:bank counter customer||Ho Chi Minh City skyline',
+ dict(k='text', cap=('VÌ SAO THẬT TỆ KHI', 'GỬI TIẾT KIỆM MÀ RA VỀ VỚI BẢO HIỂM'), cols=CC, anh='ov:bank teller||Ho Chi Minh City skyline',
       say=("Bạn chưa từng định mua bảo hiểm. Bạn chỉ đến ngân hàng quen, gặp cô nhân viên quen, để gửi lại sổ tiết kiệm như mười năm nay vẫn làm. "
            "Hôm nay mình sẽ cùng bạn đi lại buổi sáng hôm đó: vì sao thật tệ khi gửi tiết kiệm mà ra về với một hợp đồng bảo hiểm. "
            "Nhân vật là giả định, nhưng chuyện này đã xảy ra với hàng nghìn người thật, và cuối video mình sẽ cho bạn xem con số.")),
@@ -49,7 +49,7 @@ S = [
         ('My', 'Dạ vẫn là tiết kiệm cô ạ, chỉ là gói đặc biệt cho khách quen thôi')]),
       say=("Sáng hôm đó, My niềm nở như mọi lần. Cô ơi, sổ của cô đáo hạn rồi, mà lãi tiết kiệm giờ thấp lắm. Bên con có gói tiết kiệm an tâm, lãi khoảng mười phần trăm mỗi năm, lại tặng kèm bảo hiểm sức khoẻ. "
            "Bạn hỏi đúng một câu: thế vẫn là gửi tiết kiệm phải không cháu? My cười: dạ vẫn là tiết kiệm cô ạ, chỉ là gói đặc biệt cho khách quen thôi.")),
- dict(k='text', cap=('"CÔ KÝ VÀO ĐÂY,', 'ĐÂY, VÀ ĐÂY Ạ"'), cols=CR, anh='ov:signing document tablet||File:Sở GDCK TPHCM (HOSE).JPG',
+ dict(k='text', cap=('"CÔ KÝ VÀO ĐÂY,', 'ĐÂY, VÀ ĐÂY Ạ"'), cols=CR, anh='ov:signing tablet||File:Sở GDCK TPHCM (HOSE).JPG',
       say=("My đưa bạn một chiếc máy tính bảng, lướt rất nhanh qua nhiều trang chữ nhỏ. Cô ký vào đây, đây, và đây ạ. Rồi một tờ uỷ nhiệm chi chuyển hai trăm triệu. "
            "Mắt bạn kém, kính để quên ở nhà. Nhưng đây là ngân hàng, là cô cháu quen mười năm. Bạn ký. "
            "Lúc ra về, bạn không được cầm bản hợp đồng nào. My nói: hồ sơ bên con lưu, vài hôm gửi về nhà cô.")),
@@ -83,7 +83,7 @@ S = [
         ('Hạnh', 'Mai con xin nghỉ, con với mẹ ra ngân hàng')]),
       say=("Đêm đó, Hạnh, con gái bạn, ngồi đọc từng trang. Mười giờ tối, Hạnh nhắn: mẹ ơi, đây không phải sổ tiết kiệm đâu mẹ. Là bảo hiểm liên kết đầu tư ba mươi lăm năm, mỗi năm phải đóng chín mươi triệu. "
            "Bạn gõ chậm từng chữ: nhưng cái My bảo là tiết kiệm mà con. Hạnh trả lời: không đóng tiếp thì hợp đồng có thể mất hiệu lực, muốn huỷ thì chỉ nhận lại một phần. Mai con xin nghỉ, con với mẹ ra ngân hàng.")),
- dict(k='text', cap=('LƯƠNG HƯU 6 TRIỆU', 'PHÍ 90 TRIỆU MỖI NĂM'), cols=CR, anh='ov:elderly woman counting money||Saigon river',
+ dict(k='text', cap=('LƯƠNG HƯU 6 TRIỆU', 'PHÍ 90 TRIỆU MỖI NĂM'), cols=CR, anh='ov:counting money||Saigon river',
       say=("Lương hưu của bạn sáu triệu một tháng, tức bảy mươi hai triệu một năm. Phí bảo hiểm chín mươi triệu một năm. "
            "Bạn không bao giờ có thể đóng nổi hợp đồng này. Người bán biết điều đó ngay từ lúc nhìn cuốn sổ hưu trên tay bạn. Và họ vẫn bán.")),
  # ---------------- CHƯƠNG 5 ----------------
@@ -98,7 +98,7 @@ S = [
       say=("Vì sao hai trăm triệu chỉ còn khoảng bốn mươi sáu triệu? Với bảo hiểm liên kết đầu tư, nhiều khoản phí bị trừ trước khi tiền vào quỹ đầu tư, nhất là phí ban đầu của những năm đầu tiên. "
            "Đây là ví dụ minh hoạ, mỗi hợp đồng một khác. Nhưng nguyên tắc chung giống nhau: huỷ càng sớm, mất càng nhiều. "
            "Sản phẩm này được thiết kế cho người giữ mười, hai mươi năm, không phải cho một người về hưu cần tiền khi ốm đau.")),
- dict(k='text', cap=('MẤT 154 TRIỆU', 'BẰNG 2 NĂM LƯƠNG HƯU'), cols=CR, anh='ov:old woman sad window||Ho Chi Minh City apartments',
+ dict(k='text', cap=('MẤT 154 TRIỆU', 'BẰNG 2 NĂM LƯƠNG HƯU'), cols=CR, anh='ov:elderly woman window||Ho Chi Minh City apartments',
       say=("Bạn ngồi xuống ghế, tính nhẩm theo thói quen của một cô giáo. Mất khoảng một trăm năm mươi tư triệu, bằng hai năm lương hưu. "
            "Còn nếu không huỷ, mỗi năm phải tìm đâu ra chín mươi triệu, trong khi cả năm bạn chỉ có bảy mươi hai triệu. "
            "Đường nào cũng mất. Và lần đầu tiên sau nhiều năm, bạn thấy mình già.")),
@@ -140,7 +140,7 @@ S = [
            "Kết luận nêu nhân viên không trực tiếp tư vấn, để người khác dùng mã đại lý, khách hàng không hiểu sản phẩm mình mua. "
            "Theo VTV, tỷ lệ huỷ hợp đồng sau năm đầu ở một kênh lên tới bảy mươi ba phần trăm. Chỉ riêng một doanh nghiệp đã có khoảng ba mươi tám nghìn hợp đồng bị huỷ.")),
  # ---------------- CHƯƠNG 8 ----------------
- dict(k='text', ch='Chương 8 – Tám tháng đi khiếu nại', cap=('8 THÁNG', 'VÀ MỘT LÁ ĐƠN'), cols=CC, moc=True, anh='ov:paperwork documents desk||Ho Chi Minh City apartments',
+ dict(k='text', ch='Chương 8 – Tám tháng đi khiếu nại', cap=('8 THÁNG', 'VÀ MỘT LÁ ĐƠN'), cols=CC, moc=True, anh='ov:paperwork||Ho Chi Minh City apartments',
       say=("Tám tháng sau, sau nhiều lá đơn, nhiều buổi làm việc, và một lần Hạnh phải nghỉ không lương để đưa mẹ đi, công ty bảo hiểm đồng ý hoàn lại phần lớn số tiền. "
            "Bạn may mắn hơn nhiều người. Nhưng có những thứ không hoàn lại được: tám tháng mất ngủ, cảm giác xấu hổ vì đã ký mà không đọc, và niềm tin vào cái quầy giao dịch mà bạn đã đến suốt mười năm.")),
  # ---------------- CHƯƠNG 9 ----------------
@@ -150,7 +150,7 @@ S = [
            "Một, tiền của tôi chuyển đến ai, ngân hàng hay một công ty khác? Hai, trên giấy có chữ bảo hiểm, liên kết đầu tư, hay phí định kỳ không? "
            "Ba, thời hạn bao nhiêu năm, mỗi năm phải đóng bao nhiêu? Bốn, nếu huỷ sau năm đầu thì nhận lại bao nhiêu, ghi ra giấy cho tôi. "
            "Năm, tôi có được cầm hợp đồng về nhà đọc, nhờ con cháu xem không? Nếu câu trả lời là không, đừng ký.")),
- dict(k='text', cap=('21 NGÀY', 'LÀ TẤM VÉ CUỐI CÙNG'), cols=CC, anh='ov:calendar pages||Saigon river',
+ dict(k='text', cap=('21 NGÀY', 'LÀ TẤM VÉ CUỐI CÙNG'), cols=CC, anh='ov:calendar||Saigon river',
       say=("Và nếu lỡ ký rồi, hãy nhớ con số hai mươi mốt ngày. Đó là thời gian cân nhắc luật cho bạn để huỷ và lấy lại gần như toàn bộ tiền. "
            "Bảo hiểm không xấu. Một người trụ cột trong gia đình, có thu nhập đều, mua đúng loại bảo hiểm mình cần, là một quyết định tốt. "
            "Thứ xấu là bán bảo hiểm cho một người tưởng mình đang gửi tiết kiệm. Còn nếu bạn muốn tự tìm hiểu các kênh đầu tư minh bạch, có báo cáo công khai, bạn có thể bắt đầu từ chứng khoán Huy Nguyễn chấm com.")),
@@ -162,7 +162,7 @@ S = [
         ('Hạnh', 'Và nhớ mang kính theo đấy')]),
       say=("Tối hôm tiền về, Hạnh nhắn: mẹ ơi tiền về rồi, mẹ kiểm tra nhé. Bạn nhắn lại: mẹ xin lỗi con, làm con khổ mấy tháng nay. "
            "Hạnh trả lời: không sao mẹ. Lần sau ra ngân hàng, mẹ gọi con đã nhé. Và nhớ mang kính theo.")),
- dict(k='text', cap=('ĐẾN ĐỂ GIỮ TIỀN', 'VỀ VỚI LỜI HỨA 35 NĂM'), cols=CC, anh='ov:mother daughter walking||Ho Chi Minh City skyline',
+ dict(k='text', cap=('ĐẾN ĐỂ GIỮ TIỀN', 'VỀ VỚI LỜI HỨA 35 NĂM'), cols=CC, anh='ov:mother daughter||Ho Chi Minh City skyline',
       say=("Bạn đến ngân hàng để giữ tiền cho an toàn. Bạn ra về với một lời hứa ba mươi lăm năm, mà người hứa thì đã nghỉ việc từ lâu.")),
  dict(k='end', cap=('BỐ MẸ BẠN ĐÃ TỪNG', 'GẶP CHUYỆN NÀY CHƯA?'), cols=CC,
       say=("Bố mẹ bạn, hay chính bạn, đã từng được mời gói tiết kiệm đặc biệt ở quầy giao dịch chưa? Kể ở phần bình luận nhé, và gửi video này cho bố mẹ, người lớn tuổi trong nhà xem trước lần đáo hạn tới. "
