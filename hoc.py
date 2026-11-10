@@ -244,10 +244,12 @@ ld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Cẩ
 p = [head("Chứng khoán cho người mới bắt đầu: cẩm nang F0 từ A đến Z | Chứng Khoán Huy Nguyễn",
           "Cẩm nang chứng khoán cho người mới: chứng khoán là gì, mở tài khoản, cách mua cổ phiếu, đọc bảng giá, P/E, cắt lỗ, margin, T+2, cổ tức, phí và thuế.",
           url, B + "/img/og.png", ld), "<main>",
+     # QL1 11/11: điện thoại chỉ hiện 6 bài đầu mỗi bước (chỉ tiêu đề) + nút xem đủ, trang từ ~57.000px còn vài màn hình
+     '<style>.gp-all{display:none}@media (max-width:600px){.gp .f0l li:nth-child(n+7){display:none}.gp .f0l small{display:none}.gp .f0l li{padding:6px 0}.gp-all{display:block;margin:4px 0 8px;padding:12px 16px;min-height:44px;border:1px solid #d9cdee;border-radius:12px;font-weight:700;text-decoration:none;text-align:center}}</style>',
      '<div class="bc"><a href="/">Trang chủ</a> › Cẩm nang F0</div><h1>Chứng khoán cho người mới bắt đầu: cẩm nang F0</h1>',
      f'<p class="meta">{len(F)} bài, chia {len(GN)} bước. Học lần lượt từ Bước 1, mỗi bài có ví dụ dễ hiểu và nút sang bài tiếp theo.</p>' +
      '<nav class="toc"><b>Lộ trình</b><ol>' + "".join(f'<li><a href="#b{g}">Bước {g}: {GN[g]}</a> <small>({sum(1 for x in F if x.get("grp", 1) == g)} bài)</small></li>' for g in GN if any(x.get("grp", 1) == g for x in F)) + '</ol></nav>' +
-     HNAV + "".join(f'<section class="gp" id="b{g}"><h2><a href="{HP(g)}" style="color:inherit;text-decoration:none">Bước {g}: {GN[g]}</a></h2><p>{GD[g]}</p><ol class="f0l">' + "".join(f'<li><a href="{FP(x)}"><b>{e(x["title"])}</b></a><br><small>{e(x["desc"])}</small></li>' for x in F if x.get("grp", 1) == g) + "</ol></section>" for g in GN if any(x.get("grp", 1) == g for x in F)),
+     HNAV + "".join(f'<section class="gp" id="b{g}"><h2><a href="{HP(g)}" style="color:inherit;text-decoration:none">Bước {g}: {GN[g]}</a></h2><p>{GD[g]}</p><ol class="f0l">' + "".join(f'<li><a href="{FP(x)}"><b>{e(x["title"])}</b></a><br><small>{e(x["desc"])}</small></li>' for x in F if x.get("grp", 1) == g) + f'</ol><a class="gp-all" href="{HP(g)}">Xem đủ {sum(1 for x in F if x.get("grp", 1) == g)} bài Bước {g} →</a></section>' for g in GN if any(x.get("grp", 1) == g for x in F)),
      f'<div class="cta"><a class="btn b1" href="/hoc/">Thư viện bài học có video</a><a class="btn b2" href="{YT}?sub_confirmation=1" rel="noopener">Kênh YouTube</a></div></main>' + FOOT]
 open(os.path.join(ROOT, "f0/index.html"), "w", encoding="utf-8").write("\n".join(p))
 for f in os.listdir(os.path.join(ROOT, "f0")):
