@@ -67,7 +67,7 @@ def conv(sc):
         s["items"] = [it[0] if isinstance(it, (list, tuple)) else it for it in s.get("items", [])]
     elif k == "bars":
         s["bars"] = [(b[0], abs(b[1]) if b[1] else 0.001, b[2], b[3] if len(b) > 3 else str(b[1])) for b in s.get("bars", [])]
-    elif k not in dx2.KINDS and k not in ("text", "end", "chat", "noti"): s["k"] = "text"
+    elif k not in dx2.KINDS and k not in ("text", "end", "chat", "noti", "call", "giay"): s["k"] = "text"
     if s["k"] == "text": s.setdefault("y", 860)
     return s
 scenes = [conv(s) for s in raw]
@@ -202,7 +202,7 @@ def _av_dan(im):
 import land_text
 def land(v, sc, t):
     k = sc["k"]
-    if k in ("chat", "noti"):   # cảnh điện thoại (chat_ui) – phụ đề dưới cột chữ bên phải
+    if k in ("chat", "noti", "call", "giay"):   # cảnh điện thoại (chat_ui) – phụ đề dưới cột chữ bên phải
         import chat_ui; im = chat_ui.frame(sc, t); _draw_sub(im, sc, t, 1295, 1100); return im
     if k in ("end", "text"):   # cảnh chữ: ảnh tràn khung + Ken Burns + đổi góc máy (bỏ kiểu cột dọc giữa màn hình)
         im = land_text.frame(sc, t); _draw_sub(im, sc, t, LW/2, LW - 200); return im
@@ -261,7 +261,7 @@ def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
     for i, sc in enumerate(scenes):
         n = int(round(b[i+1]*FPS)) - fr; sc["_T"] = n / FPS
         for j in range(n):
-            AV[2] = fr + j; im = land(None if sc["k"] in ("text", "end", "chat", "noti") else dx2.draw(sc, j/FPS, j/max(1, n)), sc, j/FPS)
+            AV[2] = fr + j; im = land(None if sc["k"] in ("text", "end", "chat", "noti", "call", "giay") else dx2.draw(sc, j/FPS, j/max(1, n)), sc, j/FPS)
             if HU[0]:
                 tt = j / FPS
                 if i > 0 and tt < 0.22:   # punch-in 1.06 -> 1 đầu cảnh

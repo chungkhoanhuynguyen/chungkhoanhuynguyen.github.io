@@ -38,7 +38,7 @@ def _than_may(im):
     return d
 
 def _chu_phai(im, sc, t):
-    d = ImageDraw.Draw(im); x0 = PX0 + PW + 110; cw = LW - x0 - 90; y = 300
+    d = ImageDraw.Draw(im); x0 = sc.get('_x0', PX0 + PW + 110); cw = LW - x0 - 90; y = 300
     lab = sc.get("label") or ""
     if lab:
         f = dx2.F("Bold", 32); a = dx2.ease(t / 0.4)
@@ -138,3 +138,68 @@ def noti(sc, t):
 
 KINDS = dict(chat=chat, noti=noti)
 def frame(sc, t): return KINDS[sc["k"]](sc, t)
+
+# ---- QL1 10/11 tập 3: cuộc gọi đến + tờ giấy (hợp đồng) có gạch đỏ điều khoản ----
+import math
+def call(sc, t):
+    im = _nen(sc); d = _than_may(im)
+    scr = Image.new("RGB", (SW, SH)); s = ImageDraw.Draw(scr)
+    for y in range(SH): s.line([0, y, SW, y], fill=(int(16 + 30 * y / SH), int(40 + 20 * y / SH), int(36 + 10 * y / SH)))
+    c = sc.get("call", {}); ten = c.get("ten", "?"); mau = c.get("mau", (56, 189, 248))
+    s.text((SW / 2, 110), c.get("nhan", "Cuộc gọi đến"), font=dx2.F("SemiBold", 24), fill=(200, 210, 220), anchor="mt")
+    cx, cy = SW / 2, 330
+    
+    for k in range(3):   # vòng sóng chuông
+        ph = ((t * 0.9) + k / 3) % 1; r = 90 + ph * 100
+        s.ellipse([cx - r, cy - r, cx + r, cy + r], outline=tuple(int(x * (1 - ph) + 30 * ph) for x in mau), width=3)
+    s.ellipse([cx - 90, cy - 90, cx + 90, cy + 90], fill=mau)
+    s.text((cx, cy), ten[:1].upper(), font=dx2.F("Black", 90), fill=DARK, anchor="mm")
+    s.text((cx, 560), ten, font=dx2.fit(s, ten, "Bold", SW - 60, 44), fill=(245, 246, 250), anchor="mt")
+    s.text((cx, 615), c.get("phu", "Di động"), font=dx2.F("SemiBold", 24), fill=(170, 180, 190), anchor="mt")
+    lines = c.get("loi", []); tms = _thoi_diem(sc, len(lines)); y = 680
+    for i, l in enumerate(lines):
+        if t < tms[i]: break
+        p = dx2.ease((t - tms[i]) / 0.3)
+        for w in _wrap(s, "“" + l + "”", dx2.F("SemiBold", 24), SW - 70):
+            s.text((cx, y), w, font=dx2.F("SemiBold", 24), fill=dx2.mix((235, 240, 245), p, (20, 50, 44)), anchor="mt"); y += 32
+        y += 12
+    for x0, col, lab in ((SW * 0.25, (239, 68, 68), "Từ chối"), (SW * 0.75, (34, 197, 94), "Trả lời")):
+        b = 8 * math.sin(t * 6) if lab == "Trả lời" else 0
+        s.ellipse([x0 - 46, SH - 170 - b, x0 + 46, SH - 78 - b], fill=col)
+        s.text((x0, SH - 60), lab, font=dx2.F("SemiBold", 22), fill=(220, 225, 230), anchor="mt")
+    m = Image.new("L", (SW, SH), 0); ImageDraw.Draw(m).rounded_rectangle([0, 0, SW - 1, SH - 1], 50, fill=255)
+    im.paste(scr, (SX, SY), m); _chu_phai(im, sc, t); return im
+
+def giay(sc, t):
+    im = _nen(sc); gw, gh = 620, 980; x0, y0 = 90, 50
+    sh = Image.new("L", (LW, LH), 0); ImageDraw.Draw(sh).rectangle([x0 + 14, y0 + 20, x0 + gw + 14, y0 + gh + 20], fill=160)
+    im.paste((0, 0, 0), (0, 0), sh.filter(ImageFilter.GaussianBlur(24)))
+    pg = Image.new("RGB", (gw, gh), (246, 241, 228)); s = ImageDraw.Draw(pg)
+    g = sc.get("giay", {}); s.text((gw / 2, 50), g.get("tieu_de", "HỢP ĐỒNG"), font=dx2.fit(s, g.get("tieu_de", ""), "Black", gw - 80, 34), fill=(30, 30, 36), anchor="mt")
+    s.text((gw / 2, 100), g.get("so", ""), font=dx2.F("SemiBold", 20), fill=(110, 110, 120), anchor="mt")
+    y = 160; fb = dx2.F("SemiBold", 23); dk = g.get("dieu", []); tms = _thoi_diem(sc, sum(1 for x in dk if x[1]))
+    j = 0
+    for txt, nhan in dk:
+        ls = _wrap(s, txt, fb, gw - 90)
+        for k, l in enumerate(ls): s.text((50, y + 32 * k), l, font=fb, fill=(40, 40, 48))
+        if nhan:
+            p = dx2.ease((t - tms[j]) / 0.5) if t >= tms[j] else 0; j += 1
+            if p > 0:
+                for k, l in enumerate(ls):
+                    w = s.textlength(l, font=fb) * min(1, p * len(ls) - k) if p * len(ls) > k else 0
+                    if w > 0: s.line([50, y + 32 * k + 29, 50 + w, y + 32 * k + 29], fill=(220, 38, 38), width=4)
+                if p > 0.6:
+                    yb = y + 32 * len(ls) + 6; tw = s.textlength(nhan, font=dx2.F("Black", 20))
+                    s.rounded_rectangle([50, yb, 50 + tw + 28, yb + 34], 8, outline=(220, 38, 38), width=3)
+                    s.text((64, yb + 17), nhan, font=dx2.F("Black", 20), fill=(220, 38, 38), anchor="lm")
+            y += 44
+        y += 32 * len(ls) + 22
+    s.line([60, gh - 150, 280, gh - 150], fill=(120, 120, 130), width=2); s.text((170, gh - 140), "Bên mua ký", font=dx2.F("SemiBold", 18), fill=(110, 110, 120), anchor="mt")
+    s.ellipse([gw - 250, gh - 250, gw - 80, gh - 80], outline=(200, 40, 40), width=6)
+    s.text((gw - 165, gh - 165), g.get("dau", "ĐÃ THU TIỀN"), font=dx2.F("Black", 22), fill=(200, 40, 40), anchor="mm")
+    a = dx2.ease(t / 0.5); rot = pg.rotate(-1.5, expand=True, fillcolor=(0, 0, 0))
+    m = Image.new("L", pg.size, 255).rotate(-1.5, expand=True, fillcolor=0)
+    im.paste(rot, (x0, y0 + int((1 - a) * 40)), m)
+    sc2 = dict(sc, _x0=x0 + gw + 90); _chu_phai(im, sc2, t); return im
+
+KINDS.update(call=call, giay=giay)
