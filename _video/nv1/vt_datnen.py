@@ -1,0 +1,255 @@
+# -*- coding: utf-8 -*-
+# QL1 10/11/2026 – kênh @5 tập 3 "Vì Sao Thật Tệ Khi Mua Đất Theo Hội Nhóm". Khuôn tập phím hàng (anh Huy: "nghe đến hết") + nâng cấp:
+# cảnh cuộc gọi đến (call), tờ hợp đồng gạch đỏ (giay), nhiều nhân vật, 2 cú lật (người giới thiệu ăn hoa hồng, "luật sư đòi tiền" lừa lần 2).
+# Vụ thật – Địa ốc Alibaba: 58 "dự án ma", 22 pháp nhân; cam kết mua lại cao hơn 30% sau 12 tháng hoặc 38% sau 15 tháng, hoặc thuê lại lãi 2%/tháng;
+# bán 1.500–2.000 sản phẩm/tháng; ~1 triệu bút lục/140 thùng (CAND 14/12/2022). Sơ thẩm 29/12/2022: Nguyễn Thái Luyện chung thân,
+# vợ 32 năm, em trai 27 năm, 19 nhân viên 10–19 năm; bồi thường >2.445 tỷ cho 4.548 bị hại (ttbc-hcm.gov.vn).
+import os, sys, json
+sys.path.insert(0, os.path.dirname(__file__)); import lib
+from lib import GOLD, RED, GREEN, BLUE, WHITE
+LO = '/tmp/cw/_video/queue/20261110_2100_vt'
+KEY = 'VT5DATNEN'; CC = (WHITE, GOLD); CR = (WHITE, RED)
+R_, V_, X_, H_, G_ = (239, 68, 68), (255, 196, 0), (56, 189, 248), (255, 120, 160), (34, 197, 94)
+v = lambda x, d=0: lib.vn(x, d)
+NHOM = 'Hội Đầu Tư Đất Nền Sinh Lời'; NAN = 'Khách hàng dự án X Riverside'
+TRAM = 'Trâm – Tư vấn dự án'; TUNG = 'Chồng ♥'; HANG = 'Chị Hằng kế toán'
+GIA, DT = 950, 120; THUE = round(GIA * 0.02, 1); MUA_LAI = round(GIA * 1.3)
+GIA_DINH = 400; NHAN = THUE * 3; MAT = GIA + GIA_DINH - NHAN
+S = [
+ # ---------------- MỞ ĐẦU ----------------
+ dict(k='noti', ch='Mở đầu', cap=('950 TRIỆU', 'ĐỔI LẤY MỘT TỜ GIẤY'), cols=CR, noti=dict(gio='07:02', ngay='Chủ Nhật', items=[
+        ('Ngân hàng', 'Biến động số dư', 'TK của Quý khách −950.000.000 VND. Nội dung: GOP VON LO A12 X RIVERSIDE', R_),
+        ('Nhóm chat', NHOM, 'Trâm: Chúc mừng chị đã chốt lô A12, lô đẹp nhất dự án!!!', V_)]),
+      say=("Bảy giờ sáng Chủ nhật. Điện thoại bạn sáng lên hai thông báo. Một từ ngân hàng: tài khoản trừ chín trăm năm mươi triệu đồng. "
+           "Một từ nhóm chat: chúc mừng chị đã chốt lô A12, lô đẹp nhất dự án. Ai đó thả một loạt pháo hoa.")),
+ dict(k='text', cap=('HAI NĂM SAU', 'LÔ ĐẤT VẪN LÀ RUỘNG'), cols=CC, anh='rice field Vietnam',
+      say=("Chín trăm năm mươi triệu. Mười hai năm đi làm của hai vợ chồng. Đổi lấy một tờ giấy và một lời hứa. "
+           "Hai năm sau, lô đất A12 vẫn là một thửa ruộng. Còn tờ giấy đó, bạn cất trong một túi nilon, cùng với hàng nghìn người khác đang cầm tờ giấy y hệt. "
+           "Hôm nay mình sẽ cùng bạn sống lại câu chuyện đó: vì sao thật tệ khi mua đất theo hội nhóm. "
+           "Nhân vật là giả định, nhưng từng thủ đoạn trong video đã xảy ra thật, với hơn bốn nghìn năm trăm người, trong một vụ án mà mình sẽ kể ở cuối video.")),
+ # ---------------- CHƯƠNG 1 ----------------
+ dict(k='text', ch='Chương 1 – Mười hai năm ở nhà thuê', cap=('12 NĂM Ở NHÀ THUÊ', 'VÀ MỘT GIẤC MƠ'), cols=CC, moc=True, anh='Ho Chi Minh City apartments',
+      say=("Bạn ba mươi sáu tuổi, làm kế toán cho một công ty gỗ ở Bình Dương. Chồng bạn, anh Tùng, là thợ điện công trình. Hai đứa con, một lớp năm, một mẫu giáo. "
+           "Cả nhà ở thuê đã mười hai năm. Mỗi lần chủ nhà tăng giá, bạn lại đi tìm phòng mới, lại thuê xe chở đồ, lại xin cho con học trường mới. "
+           "Trong sổ tiết kiệm có sáu trăm triệu. Bạn biết rõ từng đồng trong đó, vì bạn là người ghi sổ.")),
+ dict(k='text', cap=('TIỀN ĐỂ NGÂN HÀNG', 'CHẠY KHÔNG KỊP GIÁ ĐẤT'), cols=CC, anh='Binh Duong',
+      say=("Nhưng bạn có một nỗi sợ. Mỗi năm, sáu trăm triệu đẻ ra hơn ba mươi triệu tiền lãi. Còn giá đất quanh chỗ bạn ở, người ta nói tăng ba bốn chục phần trăm. "
+           "Bạn có cảm giác mình đang chạy bộ đuổi theo một chiếc xe máy. Càng để tiền nằm im, ước mơ có một mảnh đất cho hai đứa nhỏ càng xa.")),
+ # ---------------- CHƯƠNG 2 ----------------
+ dict(k='chat', ch='Chương 2 – Người đồng nghiệp tốt bụng', cap=('"2 NĂM, X2"', '"ĐẤT KHÔNG BAO GIỜ GIẢM"'), cols=CC, moc=True, chat=dict(ten=HANG, tv='Đang hoạt động', gio='12:15', mau=H_, msgs=[
+        ('Hằng', 'Em ơi chị vừa bán lô đất mua 2 năm trước, lãi 400 triệu'),
+        ('Hằng', 'Đất không bao giờ giảm giá đâu em. Người ta có đẻ thêm đất được đâu'),
+        ('me', 'Chị mua ở đâu thế chị?'),
+        ('Hằng', 'Dự án X Riverside, cách thành phố 40 phút. Có cam kết mua lại hẳn hoi'),
+        ('Hằng', 'Để chị giới thiệu em bạn chị bên dự án, nó tư vấn nhiệt tình lắm')]),
+      say=("Rồi một buổi trưa, chị Hằng ngồi bàn bên nhắn sang. Em ơi, chị vừa bán lô đất mua hai năm trước, lãi bốn trăm triệu. "
+           "Đất không bao giờ giảm giá đâu em, người ta có đẻ thêm đất được đâu. "
+           "Chị Hằng là người tử tế. Năm ngoái con bạn ốm, chị là người đầu tiên chuyển tiền cho bạn mượn. Vì thế, khi chị nói, bạn tin.")),
+ dict(k='call', cap=('"CHỦ NHẬT NÀY', 'CÓ XE ĐÓN TẬN NHÀ"'), cols=CC, call=dict(ten=TRAM, phu='Di động', mau=H_, loi=[
+        'Em chào chị, em là Trâm, chị Hằng giới thiệu chị qua em ạ',
+        'Chủ nhật này bên em có xe đưa khách đi tham quan dự án',
+        'Miễn phí ăn trưa, có bốc thăm trúng xe máy nữa chị']),
+      say=("Tối hôm đó, một số lạ gọi đến. Giọng con gái, ngọt và nhanh. Em chào chị, em là Trâm, chị Hằng giới thiệu chị qua em. "
+           "Chủ nhật này bên em có xe đưa khách đi tham quan dự án, miễn phí ăn trưa, có bốc thăm trúng xe máy nữa chị. "
+           "Bạn định từ chối. Nhưng nghe đến chữ miễn phí, bạn nghĩ: đi xem thôi mà, có mất gì đâu.")),
+ # ---------------- CHƯƠNG 3 ----------------
+ dict(k='text', ch='Chương 3 – Chuyến xe Chủ nhật', cap=('XE 45 CHỖ', 'NHẠC, NƯỚC SUỐI, BÁNH MÌ'), cols=CC, moc=True, anh='bus Vietnam',
+      say=("Sáu giờ sáng Chủ nhật, một chiếc xe bốn mươi lăm chỗ đỗ ngay đầu hẻm. Trên xe có nước suối, bánh mì, nhạc sôi động. "
+           "Một nhân viên cầm micro nói suốt bốn mươi phút đường: sân bay sắp mở, cao tốc sắp xong, khu công nghiệp sắp về, đất ở đây chỉ có lên. "
+           "Bạn nhìn quanh. Xe kín chỗ. Có cặp vợ chồng già, có nhóm công nhân, có cô giáo về hưu. Ai cũng có vẻ háo hức giống bạn.")),
+ dict(k='text', cap=('BĂNG RÔN, TIẾNG CHUÔNG', 'VÀ "CHỐT LÔ!"'), cols=CR, anh='construction site Vietnam',
+      say=("Xe dừng trước một khu đất trống, cắm đầy cờ và băng rôn. Một cái rạp lớn, sân khấu, loa thùng. MC hô: chỉ còn mười lô cuối cùng với giá ưu đãi hôm nay. "
+           "Rồi cứ vài phút, tiếng chuông lại reo. Chúc mừng anh Hưng chốt lô B5. Chúc mừng chị Lan chốt hai lô C. Cả rạp vỗ tay. "
+           "Bạn không biết rằng trong những cái tên được xướng lên, có bao nhiêu người là khách thật.")),
+ dict(k='noti', cap=('BỐC THĂM', 'TRÚNG XE MÁY!'), cols=CC, noti=dict(gio='11:05', ngay='Chủ Nhật', items=[
+        ('Nhóm chat', NHOM, 'Trâm: Chúc mừng anh Hưng trúng xe máy trong chương trình bốc thăm hôm nay!', V_),
+        ('Nhóm chat', NHOM, 'Anh Hưng: Cảm ơn công ty, mới đi lần đầu đã trúng. Chốt luôn lô B5!', V_)]),
+      say=("Đúng mười một giờ, MC bốc thăm. Người trúng chiếc xe máy là anh Hưng, người vừa chốt lô B5. Anh Hưng lên sân khấu, cầm chìa khoá, cười rạng rỡ, nói mới đi lần đầu đã trúng, đúng là đất lành. "
+           "Cả rạp vỗ tay. Bạn cũng vỗ tay. Trong đầu bạn, dự án này bỗng có cảm giác may mắn, có cảm giác của những người thắng cuộc.")),
+ dict(k='chat', cap=('"CHỈ CÒN 2 LÔ"', '"CHỊ GIỮ HỘ EM"'), cols=CR, chat=dict(ten=NHOM, tv='3.420 thành viên', gio='11:40', msgs=[
+        ('Trâm', 'Cập nhật: A12, A13 là 2 lô góc cuối cùng của dãy A'),
+        ('Anh Hưng', 'Vừa chốt B5, cảm ơn em Trâm'),
+        ('Hằng', 'Em ơi chị giữ A12 cho em rồi đấy, lô góc đẹp nhất'),
+        ('Trâm', 'Chị cọc trước 50 triệu để giữ chỗ nhé, 12 giờ là mở bán cho khách khác')]),
+      say=("Mười một giờ bốn mươi, nhóm chat của dự án báo: A12 và A13 là hai lô góc cuối cùng. Chị Hằng nhắn riêng: chị giữ A12 cho em rồi đấy. "
+           "Trâm thêm một câu: chị cọc trước năm mươi triệu để giữ chỗ nhé, mười hai giờ là em mở bán cho khách khác. "
+           "Còn hai mươi phút. Bạn không có thời gian để gọi cho chồng.")),
+ # ---------------- CHƯƠNG 4 ----------------
+ dict(k='giay', ch='Chương 4 – Tờ giấy có con dấu đỏ', cap=('ĐỌC KỸ', 'TỜ GIẤY NÀY'), cols=CR, moc=True, giay=dict(tieu_de='HỢP ĐỒNG GÓP VỐN', so='Số: 0412/2026/HĐGV – Dự án X Riverside', dau='ĐÃ THU TIỀN', dieu=[
+        ('Điều 1. Bên A nhận vốn góp của Bên B để phát triển dự án khu dân cư X Riverside.', ''),
+        ('Điều 2. Lô A12, diện tích 120 m², 100% thổ cư, sổ riêng từng nền.', 'CHƯA CÓ SỔ'),
+        ('Điều 3. Tổng giá trị 950.000.000 đồng, thanh toán trước khi ký.', ''),
+        ('Điều 4. Bên A cam kết mua lại với giá cao hơn 30% sau 12 tháng, hoặc thuê lại 2%/tháng.', 'CAM KẾT ĐẸP')]),
+      say=("Trâm đưa bạn một tờ giấy, mực còn thơm. Hợp đồng góp vốn. Lô A12, một trăm hai mươi mét vuông, một trăm phần trăm thổ cư, sổ riêng từng nền. "
+           "Và điều khoản khiến tim bạn đập nhanh: công ty cam kết mua lại với giá cao hơn ba mươi phần trăm sau mười hai tháng, hoặc thuê lại với lãi hai phần trăm một tháng. "
+           "Bạn là kế toán. Bạn nhẩm ngay: hai phần trăm một tháng là hai mươi bốn phần trăm một năm, gấp bốn lần gửi tiết kiệm.")),
+ dict(k='cards', cap=('LỜI HỨA', 'TRÊN TỜ GIẤY'), cols=CC, moc=True,
+      cards=[('%s triệu' % v(GIA), 'giá lô A12, 120 m²', ''), ('%s triệu' % v(MUA_LAI), 'cam kết mua lại sau 12 tháng', ''), ('%s triệu/tháng' % v(THUE, 0), 'hoặc tiền thuê lại 2%', '')],
+      say=("Chín trăm năm mươi triệu hôm nay. Mười hai tháng sau, công ty mua lại một tỷ hai trăm ba mươi lăm triệu. Hoặc mỗi tháng nhận khoảng mười chín triệu tiền thuê lại. "
+           "Có một điều bạn không để ý: đây là hợp đồng góp vốn, không phải hợp đồng mua bán đất. Không có sổ. Không có số giấy phép xây dựng. "
+           "Chỉ có một con dấu đỏ thật to, ghi: đã thu tiền.")),
+ dict(k='chat', cap=('"SAO KHÔNG CÓ SỔ?"', '"6 THÁNG NỮA RA SỔ"'), cols=CR, chat=dict(ten=TUNG, tv='Đang hoạt động', gio='11:52', mau=X_, msgs=[
+        ('me', 'Anh ơi em định cọc lô đất ở dự án chị Hằng giới thiệu'),
+        ('Tùng', 'Có sổ chưa em?'),
+        ('me', 'Bên công ty nói 6 tháng nữa ra sổ riêng từng nền'),
+        ('Tùng', 'Anh thấy sao sao. Về nhà bàn đã'),
+        ('me', 'Không kịp anh ơi, 12 giờ người ta bán cho khách khác')]),
+      say=("Bạn nhắn cho chồng. Anh Tùng chỉ hỏi một câu: có sổ chưa em. Bạn trả lời: bên công ty nói sáu tháng nữa ra sổ riêng từng nền. "
+           "Anh Tùng nhắn: anh thấy sao sao, về nhà bàn đã. Bạn gõ: không kịp anh ơi, mười hai giờ người ta bán cho khách khác. "
+           "Mười một giờ năm mươi tám phút, bạn chuyển năm mươi triệu tiền cọc.")),
+ # ---------------- CHƯƠNG 5 ----------------
+ dict(k='text', ch='Chương 5 – Gom đủ 950 triệu', cap=('600 TRIỆU TIẾT KIỆM', '+ 350 TRIỆU ĐI VAY'), cols=CC, moc=True, anh='Ho Chi Minh City skyline',
+      say=("Tối đó, hai vợ chồng cãi nhau to nhất từ ngày cưới. Nhưng bạn có bảng tính, có hợp đồng, có lời của chị Hằng. Anh Tùng thua. "
+           "Sáu trăm triệu tiết kiệm chưa đủ. Bạn vay thêm em chồng ba trăm năm mươi triệu, hứa mười hai tháng sau trả cả gốc lẫn lãi. "
+           "Sáng Chủ nhật tuần sau, bảy giờ hai phút, chín trăm năm mươi triệu rời khỏi tài khoản. Chính là cái thông báo ở đầu câu chuyện.")),
+ # ---------------- CHƯƠNG 6 ----------------
+ dict(k='noti', ch='Chương 6 – Ba tháng mật ngọt', cap=('THÁNG NÀO CŨNG', 'TIỀN VỀ ĐÚNG HẸN'), cols=CC, moc=True, noti=dict(gio='09:00', ngay='Ngày 5', items=[
+        ('Ngân hàng', 'Biến động số dư', 'TK +19.000.000 VND. ND: TIEN THUE LAI LO A12 THANG 1', G_),
+        ('Ngân hàng', 'Biến động số dư', 'TK +19.000.000 VND. ND: TIEN THUE LAI LO A12 THANG 2', G_),
+        ('Ngân hàng', 'Biến động số dư', 'TK +19.000.000 VND. ND: TIEN THUE LAI LO A12 THANG 3', G_)]),
+      say=("Ngày mùng năm tháng đầu tiên, điện thoại báo: cộng mười chín triệu đồng, tiền thuê lại lô A12. Tháng thứ hai, đúng ngày mùng năm, lại mười chín triệu. Tháng thứ ba, vẫn đúng hẹn. "
+           "Anh Tùng bắt đầu im lặng. Bạn bắt đầu tự tin. Mười chín triệu một tháng, gần bằng lương của chồng, mà không phải làm gì.")),
+ dict(k='chat', cap=('"CHỊ ƠI', 'CHO EM GÓP VỚI"'), cols=CR, chat=dict(ten='Ngọc – em gái', tv='Đang hoạt động', gio='20:12', mau=G_, msgs=[
+        ('Ngọc', 'Chị ơi tháng nào chị cũng có 19 triệu thật à'),
+        ('me', 'Thật, 3 tháng rồi, đúng ngày luôn'),
+        ('Ngọc', 'Em với mẹ có 400 triệu, mẹ để dưỡng già. Cho em góp với'),
+        ('me', 'Để chị hỏi Trâm, lô A13 còn không'),
+        ('Trâm', 'Dạ còn chị, em giữ riêng cho nhà mình ạ')]),
+      say=("Rồi em gái bạn, Ngọc, nhắn: chị ơi, tháng nào chị cũng có mười chín triệu thật à. Em với mẹ có bốn trăm triệu, mẹ để dưỡng già, cho em góp với. "
+           "Bạn hỏi Trâm. Trâm trả lời nhanh như mọi khi: dạ còn chị, lô A13, em giữ riêng cho nhà mình. "
+           "Đó là lúc bạn, không hề biết, đã trở thành người kéo người thân của mình vào.")),
+ dict(k='chat', cap=('BẠN KHOE', 'CẢ HỘI BẠN THÂN'), cols=CC, chat=dict(ten='Hội bạn cấp 3', tv='24 thành viên', gio='21:03', msgs=[
+        ('me', 'Tháng thứ 3 rồi, đúng ngày 5 là tiền về. Ai muốn tìm hiểu thì hỏi mình nhé', 'lai', '+19.000.000'),
+        ('Thu', 'Thật không bà, cho tui xin số người tư vấn'),
+        ('Bích', 'Tui cũng muốn góp, nhà tui đang có 200 triệu'),
+        ('me', 'Để mình gửi số Trâm cho, bạn bè mình mà')]),
+      say=("Bạn chụp màn hình tin nhắn ngân hàng, gửi vào nhóm bạn cấp ba: tháng thứ ba rồi, đúng ngày mùng năm là tiền về, ai muốn tìm hiểu thì hỏi mình nhé. "
+           "Thu xin số người tư vấn. Bích nói nhà đang có hai trăm triệu. Bạn gửi số của Trâm cho cả hai, với một câu rất thật lòng: bạn bè mình mà. "
+           "Đúng như chị Hằng từng gửi số của Trâm cho bạn.")),
+ dict(k='bignum', cap=('THỨ ĐANG TRẢ LÃI CHO BẠN', 'LÀ GÌ?'), cols=CR, value=19, fmt='{:,.0f}', unit=' triệu', top='MỖI THÁNG, ĐÚNG NGÀY 5', sub='tiền thuê lại… hay tiền của khách sau?', col=GOLD,
+      say=("Nhưng hãy dừng lại một chút. Một mảnh ruộng chưa có sổ, chưa xây gì, chưa cho ai thuê, lấy đâu ra mười chín triệu mỗi tháng để trả cho bạn? "
+           "Câu trả lời thường rất đơn giản: tiền của khách sau trả lãi cho khách trước. Chỉ cần công ty bán đủ nhanh, tiền lãi sẽ về đúng hẹn. "
+           "Và mười chín triệu mỗi tháng chính là thứ quảng cáo hiệu quả nhất. Nó biến bạn thành người đi rủ người khác.")),
+ # ---------------- CHƯƠNG 7 ----------------
+ dict(k='chat', ch='Chương 7 – Tháng thứ tư', cap=('"ĐANG HOÀN THIỆN', 'PHÁP LÝ Ạ"'), cols=CR, moc=True, chat=dict(ten=TRAM, tv='Hoạt động 3 giờ trước', gio='10:30', mau=H_, msgs=[
+        ('me', 'Em ơi hôm nay mùng 5 mà chị chưa nhận tiền thuê'),
+        ('Trâm', 'Dạ công ty đang hoàn thiện pháp lý, chậm vài hôm thôi chị'),
+        ('me', 'Thế bao giờ ra sổ em?'),
+        ('Trâm', 'Dạ dự kiến quý sau ạ. Chị yên tâm, dự án lớn lắm')]),
+      say=("Tháng thứ tư, ngày mùng năm trôi qua. Không có tin nhắn ngân hàng nào. Bạn nhắn Trâm. Trâm trả lời sau ba tiếng: công ty đang hoàn thiện pháp lý, chậm vài hôm thôi chị. "
+           "Bạn hỏi bao giờ ra sổ. Trâm nói: dự kiến quý sau ạ, chị yên tâm, dự án lớn lắm. Vài hôm thành vài tuần. Vài tuần thành vài tháng.")),
+ dict(k='text', cap=('BẠN TỰ ĐI', 'XEM LÔ ĐẤT'), cols=CR, anh='rice field Vietnam',
+      say=("Một sáng thứ Bảy, bạn và anh Tùng tự chạy xe máy đến dự án. Không còn rạp, không còn cờ, không còn loa. Chỉ có mấy cái cọc bê tông sơn đỏ cắm giữa ruộng. "
+           "Một bác nông dân đang tưới rau. Bạn hỏi: bác ơi, đây có phải khu dân cư X Riverside không. Bác nhìn bạn một lúc rồi nói: đất này là đất trồng lúa, cô ạ. Tuần nào cũng có người đến hỏi câu đó.")),
+ # ---------------- CHƯƠNG 8 ----------------
+ dict(k='noti', ch='Chương 8 – Tin tức lúc 6 giờ chiều', cap=('"KHỞI TỐ', 'LÃNH ĐẠO CÔNG TY"'), cols=CR, moc=True, noti=dict(gio='18:04', ngay='Thứ Ba', items=[
+        ('Tin tức', 'Khởi tố lãnh đạo công ty bán dự án không có pháp lý', 'Hàng nghìn khách hàng đã góp vốn vào các dự án phân lô chưa được cấp phép…', R_),
+        ('Nhóm chat', NAN, 'Có ai liên lạc được với Trâm không? Văn phòng đóng cửa rồi', V_),
+        ('Tin nhắn', 'Ngọc – em gái', 'Chị ơi tiền của mẹ thì sao hả chị???', G_)]),
+      say=("Sáu giờ chiều thứ Ba, bạn đang nấu cơm thì điện thoại hiện tin tức: khởi tố lãnh đạo công ty bán dự án không có pháp lý. Tên dự án nằm ngay trong bài. "
+           "Ngay sau đó, nhóm chat của khách hàng nổ tung: có ai liên lạc được với Trâm không, văn phòng đóng cửa rồi. "
+           "Rồi tin nhắn của Ngọc. Chỉ một câu, ba dấu hỏi: chị ơi, tiền của mẹ thì sao hả chị.")),
+ dict(k='chat', cap=('NGƯỜI GIỚI THIỆU', 'ĂN HOA HỒNG'), cols=CR, chat=dict(ten=NAN, tv='2.917 thành viên', gio='21:20', msgs=[
+        ('Anh Hưng', 'Ai được ai giới thiệu vào thì hỏi lại người đó đi'),
+        ('Cô Mai', 'Hoá ra người giới thiệu được hoa hồng 5% mỗi lô các bác ạ'),
+        ('me', 'Chị Hằng ơi chị có biết chuyện này không?'),
+        ('*', 'Hằng đã rời khỏi nhóm')]),
+      say=("Đêm đó, trong nhóm khách hàng, có người viết: hoá ra người giới thiệu được hoa hồng năm phần trăm mỗi lô các bác ạ. "
+           "Năm phần trăm của chín trăm năm mươi triệu là bốn mươi bảy triệu rưỡi. Bạn gõ: chị Hằng ơi, chị có biết chuyện này không. "
+           "Một dòng chữ xám hiện lên: Hằng đã rời khỏi nhóm. Lô đất lãi bốn trăm triệu của chị Hằng, bạn chưa bao giờ được xem giấy tờ.")),
+ dict(k='call', cap=('"CHỊ ƠI', 'EM CẦN LẠI TIỀN"'), cols=CR, call=dict(ten='Hải – em chồng', phu='Di động', mau=X_, loi=[
+        'Chị ơi, vợ em sắp sinh, cuối tháng em cần lại 350 triệu',
+        'Anh Tùng bảo chị cầm, chị xem thế nào giúp em']),
+      say=("Hai hôm sau, em chồng gọi. Chị ơi, vợ em sắp sinh, cuối tháng em cần lại ba trăm năm mươi triệu, anh Tùng bảo chị cầm, chị xem thế nào giúp em. "
+           "Bạn đứng ở hành lang công ty, cầm điện thoại rất lâu. Bạn không biết phải bắt đầu câu trả lời từ đâu. "
+           "Bạn chỉ nói được: em cho chị thêm ít thời gian. Đầu dây bên kia im lặng, rồi tắt máy.")),
+ # ---------------- CHƯƠNG 9 ----------------
+ dict(k='call', ch='Chương 9 – Cú lừa thứ hai', cap=('"EM LÀ LUẬT SƯ', 'CHUYÊN ĐÒI TIỀN"'), cols=CR, moc=True, call=dict(ten='Luật sư Minh', phu='Số lạ', mau=(200, 160, 255), loi=[
+        'Chào chị, bên em chuyên hỗ trợ khách hàng dự án X đòi lại tiền',
+        'Đã đòi được cho hơn 200 người rồi chị',
+        'Phí hồ sơ 30 triệu, chị chuyển trước để em nộp sớm']),
+      say=("Một tuần sau, một số lạ gọi đến. Chào chị, em là luật sư Minh, bên em chuyên hỗ trợ khách hàng dự án X đòi lại tiền, đã đòi được cho hơn hai trăm người rồi. "
+           "Phí hồ sơ ba mươi triệu, chị chuyển trước để em nộp sớm, kẻo hết lượt. "
+           "Người đang mất tiền luôn muốn tin rằng có ai đó sẽ cứu mình. Bạn chuyển ba mươi triệu, số tiền cuối cùng còn lại trong tài khoản.")),
+ dict(k='text', cap=('SỐ MÁY', 'KHÔNG LIÊN LẠC ĐƯỢC'), cols=CR, anh='Ho Chi Minh City skyline',
+      say=("Ba ngày sau, số của luật sư Minh không liên lạc được nữa. Đây là thủ đoạn thường thấy sau các vụ lừa đảo lớn: kẻ thứ hai tìm đến nạn nhân của kẻ thứ nhất, hứa đòi lại tiền, thu một khoản phí rồi biến mất. "
+           "Hãy nhớ: muốn đòi quyền lợi trong một vụ án, bạn làm việc trực tiếp với cơ quan điều tra và toà án, không qua ai nhận đòi hộ có thu phí trước.")),
+ dict(k='bignum', cap=('SAU HAI NĂM', 'CẢ NHÀ ĐÃ MẤT'), cols=CR, value=MAT + 30, fmt='{:,.0f}', unit=' triệu', top='950 + 400 CỦA MẸ + 30 "LUẬT SƯ" − 57 ĐÃ NHẬN', sub='chưa tính 350 triệu đang nợ em chồng', col=RED,
+      say=("Cộng lại sau hai năm: chín trăm năm mươi triệu của gia đình bạn, bốn trăm triệu dưỡng già của mẹ, ba mươi triệu cho luật sư giả. "
+           "Trừ đi năm mươi bảy triệu tiền thuê lại đã nhận ba tháng đầu, cả nhà mất khoảng %s triệu đồng. "
+           "Trong đó có ba trăm năm mươi triệu bạn vẫn còn nợ em chồng, và một khoản bạn không bao giờ trả được: lòng tin của mẹ.") % v(MAT + 30)),
+ # ---------------- CHƯƠNG 10 ----------------
+ dict(k='cards', ch='Chương 10 – Chuyện này đã xảy ra thật', cap=('VỤ ĐỊA ỐC ALIBABA', 'TP.HCM, 2022'), cols=CR, moc=True, anh='Ho Chi Minh City skyline',
+      cards=[('58', '"dự án ma" phân lô bán nền không phép', ''), ('4.548', 'bị hại được toà xác định', ''), ('> 2.445 tỷ', 'buộc bồi thường', '')],
+      say=("Nếu bạn nghĩ đây là chuyện tưởng tượng, hãy nghe vụ địa ốc Alibaba. Theo hồ sơ vụ án, công ty này lập hai mươi hai pháp nhân và mua rất nhiều đất nông nghiệp. Rồi họ phân lô bán nền năm mươi tám dự án không có giấy phép. "
+           "Khách được giới thiệu là đất thổ cư, đầy đủ pháp lý. Cuối năm 2022, toà án TP.HCM xử sơ thẩm. Toà xác định 4.548 bị hại, buộc bồi thường hơn hai nghìn bốn trăm bốn mươi lăm tỷ đồng.")),
+ dict(k='giay', cap=('CAM KẾT', 'Y HỆT CÂU CHUYỆN'), cols=CR, giay=dict(tieu_de='THỦ ĐOẠN TRONG HỒ SƠ VỤ ÁN', so='Theo báo Công an Nhân dân, 14/12/2022', dau='VỤ ÁN THẬT', dieu=[
+        ('Cam kết mua lại với giá cao hơn 30% sau 12 tháng.', 'LÃI ẢO'),
+        ('Hoặc mua lại cao hơn 38% sau 15 tháng.', ''),
+        ('Hoặc thuê lại với lãi 2% một tháng.', 'LÃI ẢO'),
+        ('Công ty bán trung bình 1.500–2.000 sản phẩm mỗi tháng.', '')]),
+      say=("Và thủ đoạn thì y hệt câu chuyện của bạn. Theo báo Công an Nhân dân, công ty cam kết mua lại với giá cao hơn ba mươi phần trăm sau mười hai tháng, hoặc ba mươi tám phần trăm sau mười lăm tháng. Hoặc thuê lại với lãi hai phần trăm một tháng. "
+           "Mỗi tháng, công ty bán trung bình một nghìn rưỡi đến hai nghìn sản phẩm. Hồ sơ vụ án khoảng một triệu bút lục, đựng trong một trăm bốn mươi thùng, chở bằng hai xe tải.")),
+ dict(k='cards', cap=('BẢN ÁN', 'SƠ THẨM 29/12/2022'), cols=CR, moc=True, anh='Ho Chi Minh City skyline',
+      cards=[('Chung thân', 'chủ tịch Nguyễn Thái Luyện', ''), ('32 năm', 'vợ của ông Luyện', ''), ('10–19 năm', '19 nhân viên', '')],
+      say=("Chủ tịch công ty nhận án chung thân. Vợ ông ta ba mươi hai năm tù, em trai hai mươi bảy năm. Mười chín nhân viên nhận từ mười đến mười chín năm tù. "
+           "Toà ghi nhận nhiều người trong số đó còn trẻ, ít kinh nghiệm, tin vào người đứng đầu. "
+           "Nghĩa là những cô Trâm, những người cầm micro trên xe, có khi cũng chỉ là người làm công. Nhưng tiền của hơn bốn nghìn gia đình thì đã đi mất.")),
+ # ---------------- CHƯƠNG 11 ----------------
+ dict(k='text', ch='Chương 11 – Vì sao người cẩn thận vẫn sập bẫy', cap=('KHÔNG PHẢI VÌ THAM', 'MÀ VÌ BỊ DẪN TỪNG BƯỚC'), cols=CC, moc=True, anh='staircase',
+      say=("Bạn là kế toán. Bạn ghi sổ từng đồng. Nhưng bạn vẫn mất tiền, vì cái bẫy không bắt đầu bằng một cú lớn. "
+           "Nó bắt đầu bằng một người quen tốt bụng. Một chuyến xe miễn phí. Một đám đông đang vỗ tay. Một chiếc đồng hồ đếm ngược. Một tờ giấy có con dấu đỏ. "
+           "Rồi ba tháng tiền về đúng hẹn, để chính bạn đi rủ người thân. Mỗi bước đều nhỏ, đều có vẻ hợp lý. Chỉ khi nhìn lại cả con đường, bạn mới thấy mình đã đi xa đến đâu.")),
+ dict(k='checklist', cap=('TRƯỚC KHI ĐẶT CỌC', 'KIỂM TRA 3 THỨ'), cols=CC, moc=True,
+      items=[('Sổ đỏ của chính lô đất, không phải "sổ dự án"', GREEN), ('Quy hoạch tra được ở cơ quan nhà nước', GREEN), ('Giấy phép đủ điều kiện bán nhà ở hình thành trong tương lai', GREEN)],
+      say=("Trước khi đặt cọc bất kỳ lô đất nào, hãy tự kiểm tra ba thứ. Một, sổ đỏ của chính lô đất bạn mua, chứ không phải một tờ giấy nói rằng sổ sắp có. "
+           "Hai, quy hoạch của khu đất, thứ bạn có thể tự hỏi ở cơ quan nhà nước địa phương. "
+           "Ba, nếu là dự án chưa xây, chủ đầu tư phải có văn bản đủ điều kiện bán nhà ở hình thành trong tương lai. Thiếu một trong ba, đừng chuyển tiền, dù người giới thiệu là ai.")),
+ dict(k='checklist', cap=('6 DẤU HIỆU', 'DỰ ÁN MA'), cols=CR, moc=True,
+      items=[('Chỉ có hợp đồng góp vốn, chưa có sổ', RED), ('Cam kết mua lại, thuê lại lãi cao', RED), ('Xe đón miễn phí, hội thảo, chuông "chốt lô"', RED), ('Thúc giục: chỉ còn 2 lô, 12 giờ hết hạn', RED), ('Người giới thiệu có hoa hồng', RED), ('"Luật sư" đòi tiền hộ, thu phí trước', RED)],
+      say=("Nếu chỉ nhớ một phần của video này, hãy nhớ sáu dấu hiệu. Một, chỉ có hợp đồng góp vốn hay đặt cọc, chưa có sổ, chưa có giấy phép. "
+           "Hai, cam kết mua lại hoặc thuê lại với lãi cao bất thường. Ba, xe đón miễn phí, hội thảo, tiếng chuông chốt lô. "
+           "Bốn, thúc giục: chỉ còn hai lô, mười hai giờ hết hạn. Năm, người giới thiệu có hoa hồng, dù đó là người bạn quý. "
+           "Sáu, sau khi mất tiền, có người tự tìm đến nhận đòi hộ và thu phí trước. Gặp một dấu hiệu, hãy dừng lại. Gặp hai dấu hiệu, hãy quay về.")),
+ dict(k='text', cap=('TÀI SẢN THẬT', 'THÌ MINH BẠCH'), cols=CC, anh='File:Sở GDCK TPHCM (HOSE).JPG',
+      say=("Mua đất không xấu. Đầu tư không xấu. Thứ xấu là bỏ tiền vào thứ mình không kiểm chứng được. "
+           "Một mảnh đất thật có sổ, có quy hoạch tra được ở cơ quan nhà nước. Một doanh nghiệp niêm yết thật có báo cáo tài chính được kiểm toán, công bố công khai mỗi quý. "
+           "Nếu bạn muốn xem nhanh lợi nhuận, nợ vay, P/E của hơn 400 doanh nghiệp niêm yết trước khi xuống tiền, bạn có thể tra miễn phí trên chứng khoán Huy Nguyễn chấm com.")),
+ # ---------------- KẾT ----------------
+ dict(k='chat', ch='Kết – Thứ thật duy nhất', cap=('"MÌNH LÀM LẠI', 'TỪ ĐẦU NHÉ"'), cols=CC, moc=True, chat=dict(ten=TUNG, tv='Đang hoạt động', gio='22:47', mau=X_, msgs=[
+        ('me', 'Em xin lỗi anh. Em xin lỗi mẹ, xin lỗi Ngọc'),
+        ('Tùng', 'Tiền mất thì mình làm lại'),
+        ('Tùng', 'Từ giờ cái gì không có sổ, không xem được giấy tờ thì mình không mua nữa'),
+        ('Tùng', 'Ngủ đi em, mai còn đưa con đi học')]),
+      say=("Đêm đó, bạn nhắn cho chồng: em xin lỗi anh, em xin lỗi mẹ, xin lỗi Ngọc. Anh Tùng trả lời: tiền mất thì mình làm lại. "
+           "Từ giờ cái gì không có sổ, không xem được giấy tờ, thì mình không mua nữa. Ngủ đi em, mai còn đưa con đi học.")),
+ dict(k='text', cap=('THỨ THẬT DUY NHẤT', 'LÀ TIỀN CỦA BẠN'), cols=CC, anh='Saigon river',
+      say=("Họ bán cho bạn một mảnh đất trên giấy, một lời hứa trên giấy, một tiếng chuông chốt lô và một tràng vỗ tay. "
+           "Trong cả giao dịch đó, chỉ có đúng một thứ là thật: tiền của bạn.")),
+ dict(k='end', cap=('BẠN ĐÃ TỪNG', 'ĐI XE "THAM QUAN DỰ ÁN" CHƯA?'), cols=CC,
+      say=("Bạn hay người thân đã từng được mời đi xe tham quan dự án miễn phí chưa? Họ đã nói gì với bạn? Kể ở phần bình luận nhé, biết đâu có người đang chuẩn bị đặt cọc đọc được. "
+           "Tập sau: vì sao thật tệ khi gửi tiết kiệm cả đời.")),
+]
+import ql_post; S = ql_post.tach(S, max_tu=100)
+for c in S: c['say'] = lib.doc(c['say'])
+TIEU = 'Vì Sao Thật Tệ Khi Mua Đất Theo Hội Nhóm | Cam Kết Lãi 2%/Tháng… Rồi Đất Vẫn Là Ruộng'
+MT = ("Bạn 36 tuổi, 12 năm ở nhà thuê, có 600 triệu tiết kiệm. Một đồng nghiệp tốt bụng, một chuyến xe tham quan dự án miễn phí, tiếng chuông \"chốt lô\", hợp đồng góp vốn cam kết mua lại +30% sau 12 tháng hoặc thuê lại 2%/tháng… Ba tháng đầu tiền về đúng hẹn. Rồi tháng thứ tư.\n\n"
+      "Câu chuyện giả định, nhưng thủ đoạn lấy từ vụ án có thật – Công ty Địa ốc Alibaba:\n"
+      "• 58 \"dự án ma\" phân lô bán nền không phép, 22 pháp nhân; cam kết mua lại cao hơn 30% sau 12 tháng, 38% sau 15 tháng, hoặc thuê lại 2%/tháng; bán 1.500–2.000 sản phẩm/tháng (Công an Nhân dân, 14/12/2022)\n"
+      "• Sơ thẩm 29/12/2022: chủ tịch Nguyễn Thái Luyện chung thân; bồi thường hơn 2.445 tỷ đồng cho 4.548 bị hại (Trung tâm Báo chí TP.HCM)\n\n"
+      "6 dấu hiệu dự án ma ở chương 11.\n\n"
+      "Tra lợi nhuận, nợ vay, P/E 400+ doanh nghiệp niêm yết miễn phí: https://chungkhoanhuynguyen.com\nKênh chính: https://www.youtube.com/@chungkhoanhuynguyen\n\n"
+      "Nhân vật, tên dự án \"X Riverside\" là hư cấu, không ám chỉ dự án nào đang hoạt động.\nChia sẻ góc nhìn, không phải khuyến nghị đầu tư.")
+META = {KEY: dict(kenh='@chungkhoanhuynguyen5', seri='Vì sao thật tệ khi…', ngay='2026-11-17', gio_goi_y='20:00', gio='20:00', nhac='lofi',
+    tieu_de=TIEU, title=TIEU, mo_ta=MT,
+    tags=['mua đất nền', 'dự án ma', 'lừa đảo bất động sản', 'Alibaba', 'đất nền phân lô', 'hợp đồng góp vốn', 'cam kết mua lại', 'vì sao thật tệ khi'],
+    bia_hook=['CAM KẾT LÃI 2%', 'ĐẤT VẪN LÀ RUỘNG'], badge='VÌ SAO THẬT TỆ KHI…',
+    chuong=[c['ch'] for c in S if c.get('ch')])}
+os.makedirs(LO, exist_ok=True)
+open(LO + '/video_dai.py', 'w', encoding='utf-8').write(
+    "# VIDEO DÀI kênh phụ @chungkhoanhuynguyen5 – tập 3 'Vì sao thật tệ khi mua đất theo hội nhóm' (QL1 10/11/2026).\n"
+    "XH_BAN = True; NO_CTA = True\nGOLD=%r; RED=%r; GREEN=%r; BLUE=%r; WHITE=%r\nS = {}\n" % (GOLD, RED, GREEN, BLUE, WHITE) + "S[%r] = %r\n" % (KEY, S) + "META = %r\n" % META)
+json.dump(META, open(LO + '/meta.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+json.dump({}, open(LO + '/px_tuan.json', 'w'))
+from collections import Counter
+print('so chu', lib.dem(S), 'canh', len(S), dict(Counter(c['k'] for c in S)), THUE, MUA_LAI, MAT, len(TIEU))
