@@ -15,5 +15,8 @@ def tach(S, max_tu=95, anh_mac_dinh='Ho Chi Minh City skyline'):
         if c['k'] == 'end' or len(parts) == 1: out.append(c); continue
         c['say'] = parts[0]; out.append(c)
         for p in parts[1:]:
-            out.append(dict(k='text', cap=c.get('cap', ('', '')), cols=c.get('cols'), anh=c.get('anh2') or c.get('anh') or anh_mac_dinh, say=p))
+            if c['k'] in ('checklist', 'bars', 'cards', 'bignum'):   # giữ hình số liệu, tránh ảnh lạc đề
+                d = {k: v for k, v in c.items() if k not in ('ch', 'say', 'moc')}; d['say'] = p; out.append(d)
+            else:
+                out.append(dict(k='text', cap=c.get('cap', ('', '')), cols=c.get('cols'), anh=c.get('anh2') or anh_mac_dinh, say=p))
     return out

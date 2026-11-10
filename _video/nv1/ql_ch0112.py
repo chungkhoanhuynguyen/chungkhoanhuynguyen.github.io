@@ -32,8 +32,8 @@ S = [
            "Ngân hàng cũng vậy, chỉ có điều món hàng là tiền. Ngân hàng mua tiền của người gửi, rồi bán tiền đó cho người vay. "
            "Vậy ngân hàng mua tiền của anh chị với giá bao nhiêu? Nhiều người sẽ trả lời là 6 đến 7% một năm. Đó là con số dán trên bảng lãi suất. "
            "Nhưng đây là chỗ thú vị nhất, và cũng là chỗ phần lớn người gửi tiền không để ý.")),
- dict(k='cards', ch='Chương 3 – Con số ngân hàng không dán lên bảng', cap=('GIÁ VỐN THẬT', 'CỦA VIETCOMBANK'), cols=CC, moc=True, anh='calculator money',
-      cards=[('Thu lãi', '5,48%', ''), ('Giá vốn', '2,84%', ''), ('NIM', '2,93%', '')],
+ dict(k='cards', ch='Chương 3 – Con số ngân hàng không dán lên bảng', cap=('GIÁ VỐN THẬT', 'CỦA VIETCOMBANK'), cols=CC, moc=True, anh='Ho Chi Minh City skyline',
+      cards=[('5,48%', 'thu lãi trên tài sản', ''), ('2,84%', 'giá vốn bình quân', ''), ('2,93%', 'biên lãi thuần NIM', '')],
       say=("Theo báo cáo tài chính mười hai tháng gần nhất của Vietcombank, mỗi một trăm đồng tài sản sinh lãi mang về khoảng 5,48 đồng tiền lãi một năm. "
            "Trong khi đó, chi phí vốn bình quân, tức là giá trung bình ngân hàng phải trả cho mỗi một trăm đồng vốn huy động, chỉ khoảng 2,84 đồng. "
            "Nhưng có một điều lạ ở đây. Lãi tiết kiệm mười hai tháng niêm yết gần đây là 6,8%, vậy sao giá vốn bình quân chỉ có 2,84%? "
@@ -60,8 +60,8 @@ S = [
            "Và đây là một bất ngờ. VPBank, ngân hàng có tiền rẻ ít nhất, lại có biên lãi cao nhất, khoảng 5,15%. MB khoảng 4,16%. "
            "Còn Vietcombank, ngân hàng có giá vốn rẻ nhất, biên lãi chỉ khoảng 2,93%, và BIDV thấp nhất, khoảng 2,16%. "
            "Vốn đắt mà vẫn lời nhiều hơn, VPBank làm thế nào? Câu trả lời nằm ở việc họ bán tiền cho ai.")),
- dict(k='cards', ch='Chương 6 – Lãi cao luôn có giá của nó', cap=('NỢ XẤU', 'TRÊN DƯ NỢ'), cols=CC, moc=True, anh='warning sign',
-      cards=[('Nợ xấu VPB', '3,1%', ''), ('Nợ xấu VCB', '0,7%', ''), ('Thu lãi VPB', '10,07%', '')],
+ dict(k='cards', ch='Chương 6 – Lãi cao luôn có giá của nó', cap=('NỢ XẤU', 'TRÊN DƯ NỢ'), cols=CC, moc=True, anh='Ho Chi Minh City skyline',
+      cards=[('3,1%', 'nợ xấu / cho vay VPB', ''), ('0,7%', 'nợ xấu / cho vay VCB', ''), ('10,07%', 'thu lãi trên tài sản VPB', '')],
       say=("VPBank thu lãi trên tài sản khoảng 10,07% một năm, gần gấp đôi Vietcombank, vì họ cho vay nhiều ở mảng tiêu dùng và khách hàng cá nhân, nơi lãi suất cao. "
            "Nhưng lãi cao luôn có giá của nó. Tính theo số dư quý 3 năm 2026, nợ xấu của VPBank khoảng 37,8 nghìn tỷ, bằng khoảng 3,1% dư nợ cho vay. "
            "Vietcombank cho vay nhiều hơn VPBank, nhưng nợ xấu chỉ khoảng 12,8 nghìn tỷ, tương đương khoảng 0,7% dư nợ. "
@@ -73,7 +73,7 @@ S = [
            "Khi anh chị mua cổ phiếu ngân hàng, anh chị trở thành một trong những người chủ của tiệm gạo đó, và được chia phần lời theo tỷ lệ cổ phần. "
            "Nghe hấp dẫn, nhưng em sẽ cho anh chị thấy cả hai mặt bằng số, chứ không chỉ mặt đẹp.")),
  dict(k='cards', ch='Chương 7 – Đổi phía: từ người gửi thành người chủ', cap=('100 ĐỒNG GIÁ', 'KIẾM ĐƯỢC BAO NHIÊU?'), cols=CC, moc=True,
-      cards=[('VCB lãi', '9,3 đồng', ''), ('MB lãi', '16,7 đồng', ''), ('Tiết kiệm', '6,8 đồng', '')],
+      cards=[('9,3 đồng', 'VCB lãi / 100đ giá', ''), ('16,7 đồng', 'MB lãi / 100đ giá', ''), ('6,8 đồng', 'gửi tiết kiệm', '')],
       say=("Lấy hệ số giá trên lợi nhuận, P trên E. Vietcombank có P trên E khoảng 10,75 lần, nghĩa là cứ một trăm đồng anh chị trả cho cổ phiếu, "
            "ngân hàng tạo ra khoảng 9,3 đồng lợi nhuận một năm. Nhưng phần chia bằng tiền mặt chỉ khoảng 1,7 đồng, phần còn lại ngân hàng giữ lại để lớn tiếp. "
            "MB có P trên E khoảng 5,97 lần, tức là khoảng 16,7 đồng lợi nhuận trên một trăm đồng giá, và chia tiền mặt khoảng 4,2 đồng. "
@@ -85,7 +85,7 @@ S = [
            "Một người mua ở đỉnh với một tỷ đồng, nếu bán hôm nay sẽ còn khoảng %s triệu. Trong khi đó, ngân hàng vẫn đang làm ăn có lãi. "
            "Đây là điều quan trọng nhất của cả video. Doanh nghiệp tốt chưa chắc là khoản đầu tư tốt nếu mua sai giá. Giá cổ phiếu còn có thể đi ngược với lợi nhuận trong một thời gian dài. "
            "Làm chủ thì được chia lời, nhưng cũng phải chịu được những năm giá đi xuống.") % (lib.vn(dinh, 2), lib.vn(gia, 2), lib.vn(-giam, 1), lib.vn(1000 * gia / dinh, 0))),
- dict(k='checklist', ch='Chương 9 – Bốn câu hỏi trước khi để tiền', cap=('4 CÂU HỎI', 'TRƯỚC KHI ĐỂ TIỀN'), cols=CC, anh='checklist notebook',
+ dict(k='checklist', ch='Chương 9 – Bốn câu hỏi trước khi để tiền', cap=('4 CÂU HỎI', 'TRƯỚC KHI ĐỂ TIỀN'), cols=CC, anh='Ho Chi Minh City skyline',
       items=[('Đã có quỹ dự phòng 6 tháng chưa?', GREEN), ('Tiền này bao lâu nữa mới cần?', GREEN), ('CASA, NIM, nợ xấu ngân hàng ra sao?', GOLD), ('Giá đã cao hơn lợi nhuận bao nhiêu?', GOLD)],
       say=("Vậy anh chị nên để tiền ở đâu? Em không trả lời thay anh chị được, nhưng em gợi ý bốn câu hỏi. "
            "Một, anh chị đã có quỹ dự phòng đủ sáu tháng chi tiêu ở dạng tiết kiệm chưa? Phần tiền này nên an toàn trước tiên. "

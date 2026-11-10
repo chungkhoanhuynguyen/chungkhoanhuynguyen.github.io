@@ -25,7 +25,7 @@ S = [
            "Trong video này, em sẽ mổ xẻ cỗ máy kiếm tiền của Vinamilk bằng số liệu thật, xem mười nghìn đồng doanh thu đi đâu và còn lại bao nhiêu. "
            "Cuối video là câu trả lời, và một bài học mà nhiều người phải trả giá bằng tiền thật mới hiểu.")),
  dict(k='cards', ch='Chương 1 – Mười nghìn đồng doanh thu đi đâu?', cap=('10.000 ĐỒNG', 'ĐI ĐÂU?'), cols=CC, moc=True, anh='dairy cows farm',
-      cards=[('Lãi gộp', '4.200 đ', ''), ('Bán hàng', '2.110 đ', ''), ('Lãi ròng', '1.620 đ', '')],
+      cards=[('4.200 đ', 'lãi gộp', ''), ('2.110 đ', 'chi phí bán hàng', ''), ('1.620 đ', 'lãi ròng sau thuế', '')],
       say=("Hãy tưởng tượng anh chị mua sữa Vinamilk và trả mười nghìn đồng. Theo báo cáo tài chính mười hai tháng gần nhất, khoảng 5.800 đồng là giá vốn, gồm sữa nguyên liệu, bao bì, nhà máy. "
            "Phần còn lại, khoảng 4.200 đồng, là lãi gộp. "
            "Từ lãi gộp đó, khoảng 2.110 đồng dành cho chi phí bán hàng, khoảng 290 đồng cho chi phí quản lý. "
@@ -36,15 +36,15 @@ S = [
            "Mỗi mười nghìn đồng doanh thu, hơn hai nghìn đồng phải chi ra chỉ để giữ chỗ trên kệ và trong đầu người mua. "
            "Đó là cái giá để làm vua sữa. Nó cũng giải thích vì sao doanh nghiệp nhỏ rất khó cạnh tranh: họ không đủ tiền để trả cái giá này. "
            "Câu hỏi tiếp theo là: cỗ máy này mấy năm gần đây chạy nhanh lên hay chậm lại?")),
- dict(k='bars', ch='Chương 3 – Cỗ máy chạy nhanh hơn', cap=('LỢI NHUẬN', '12 QUÝ GẦN NHẤT'), anh2='milk factory', cols=CC, moc=True,
+ dict(k='bars', ch='Chương 3 – Cỗ máy chạy nhanh hơn', cap=('LỢI NHUẬN', '12 QUÝ GẦN NHẤT'), anh2='dairy cows farm', cols=CC, moc=True,
       bars=[(q, p, GREEN if i >= 8 else BLUE, v(p)) for i, (q, p, r) in enumerate(it)],
       say=("Đây là lợi nhuận sau thuế công ty mẹ của Vinamilk trong mười hai quý, từ cuối năm 2023 đến quý 3 năm 2026. "
            "Ba quý gần nhất của năm 2026 đều cao hơn cùng kỳ. Quý 3 năm nay đạt khoảng %s tỷ đồng, tăng khoảng 17,3%%. "
            "Lũy kế chín tháng đạt khoảng 8.560 tỷ, tăng khoảng 30,3%%. Doanh thu thuần quý 3 khoảng 18.465 tỷ, tăng khoảng 8,9%%. "
            "Biên lợi nhuận ròng mười hai tháng cũng nhích từ khoảng 14,1%% năm ngoái lên khoảng 16,2%%. "
            "Nói đơn giản, cỗ máy đang chạy tốt hơn. Vậy thì giá cổ phiếu phải tăng chứ? Đây là chỗ thị trường làm nhiều người bối rối.") % v(it[-1][1])),
- dict(k='cards', ch='Chương 4 – Lãi tăng, giá giảm: chuyện gì đã xảy ra?', cap=('LÃI TĂNG', 'GIÁ VẪN GIẢM'), cols=CC, moc=True, anh='price tag discount',
-      cards=[('EPS', '+%s%%' % v(tang_eps), ''), ('Giá', '%s%%' % v(doi_gia), ''), ('P/E', '%s → %s' % (v(PE0, 1), v(PE1, 1)), '')],
+ dict(k='cards', ch='Chương 4 – Lãi tăng, giá giảm: chuyện gì đã xảy ra?', cap=('LÃI TĂNG', 'GIÁ VẪN GIẢM'), cols=CC, moc=True, anh='supermarket aisle',
+      cards=[('+%s%%' % v(tang_eps), 'lợi nhuận mỗi cổ phiếu', ''), ('%s%%' % v(doi_gia), 'giá cổ phiếu', ''), ('%s lần' % v(PE1, 1), 'P/E, 3 năm trước %s' % v(PE0, 1), '')],
       say=("Hãy đặt ba con số cạnh nhau. Lợi nhuận trên mỗi cổ phiếu tăng từ khoảng %s đồng lên khoảng %s đồng, tức là tăng khoảng %s%%. "
            "Nhưng giá cổ phiếu đi từ %s đồng xuống khoảng %s đồng. "
            "Thứ thay đổi chính là hệ số P trên E, tức là thị trường sẵn sàng trả bao nhiêu đồng cho một đồng lợi nhuận. "
@@ -55,20 +55,20 @@ S = [
            "Ba năm trước, nhiều người vẫn kỳ vọng Vinamilk tăng trưởng mạnh trở lại. Thực tế, doanh thu mười hai tháng chỉ tăng khoảng 14% sau hai năm, chậm hơn nhiều doanh nghiệp khác. "
            "Khi kỳ vọng giảm, hệ số P trên E co lại, và phần co lại đó ăn mất toàn bộ phần tăng của lợi nhuận. "
            "Bài học ở đây là: anh chị không chỉ mua một doanh nghiệp, anh chị còn mua cả kỳ vọng của thị trường về doanh nghiệp đó. Mua lúc kỳ vọng quá cao, doanh nghiệp tốt mấy cũng khó cứu.")),
- dict(k='bignum', ch='Chương 5 – Người giữ ba năm lãi hay lỗ?', cap=('GIỮ 3 NĂM', 'TÍNH CẢ CỔ TỨC'), anh2='piggy bank coins', cols=CC, moc=True,
+ dict(k='bignum', ch='Chương 5 – Người giữ ba năm lãi hay lỗ?', cap=('GIỮ 3 NĂM', 'TÍNH CẢ CỔ TỨC'), anh2='Ho Chi Minh City skyline', cols=CC, moc=True,
       value=round(tong, 1), fmt='{:,.1f}', unit='%', top='GIÁ %s%% + CỔ TỨC %s Đ' % (v(doi_gia, 1), v(CT)), sub='trước thuế và phí, chưa tái đầu tư', col=RED if tong < 0 else GREEN,
       say=("Giờ trả lời câu hỏi mở đầu. Giả sử một người mua Vinamilk ngày 10 tháng 11 năm 2023 với giá %s đồng. Giữ đến hôm nay, người đó mất khoảng %s%% vì giá giảm. "
            "Nhưng trong ba năm đó, họ nhận được tổng cộng khoảng %s đồng cổ tức tiền mặt trên mỗi cổ phiếu. "
            "Cộng lại, kết quả là khoảng %s%%, gần như hòa vốn sau ba năm, chưa tính thuế và phí. "
            "Cổ tức đã cứu khoản đầu tư khỏi lỗ, nhưng không biến nó thành khoản lãi. "
            "Trong cùng ba năm, nếu để tiền gửi tiết kiệm, anh chị đã có lãi chắc chắn. Đó là cái giá của việc mua đúng doanh nghiệp nhưng ở mức giá kỳ vọng quá cao.") % (v(G0), v(-doi_gia, 1), v(CT), v(tong, 1))),
- dict(k='text', ch='Chương 6 – Bức tranh bây giờ khác gì?', cap=('BÂY GIỜ', 'KHÁC 3 NĂM TRƯỚC?'), cols=CC, anh='calendar planning',
+ dict(k='text', ch='Chương 6 – Bức tranh bây giờ khác gì?', cap=('BÂY GIỜ', 'KHÁC 3 NĂM TRƯỚC?'), cols=CC, anh='Ho Chi Minh City skyline',
       say=("Vậy bây giờ thì sao? Em không đưa ra khuyến nghị mua bán, nhưng em có thể đặt hai bức tranh cạnh nhau để anh chị tự đánh giá. "
            "Ba năm trước, P trên E khoảng 16,3 lần và lợi nhuận đi ngang. Bây giờ, P trên E khoảng 10,4 lần và lợi nhuận chín tháng tăng khoảng 30%%. "
            "Vinamilk đã trả 1.850 đồng cổ tức vào tháng 6. Công ty sắp trả thêm 2.500 đồng đợt 1 năm 2026, ngày giao dịch không hưởng quyền là 11 tháng 11. "
            "Cộng lại khoảng 4.350 đồng, tương đương khoảng %s%% so với giá hiện tại. "
            "Nhưng anh chị nhớ: cổ tức cao một phần là do giá thấp, và câu hỏi thật sự vẫn là tăng trưởng của năm 2027 có giữ được không.") % v(4350 / gia * 100, 1)),
- dict(k='checklist', ch='Chương 7 – Ba câu hỏi trước khi mua cổ phiếu tốt', cap=('3 CÂU HỎI', 'TRƯỚC KHI MUA'), cols=CC, anh='checklist notebook',
+ dict(k='checklist', ch='Chương 7 – Ba câu hỏi trước khi mua cổ phiếu tốt', cap=('3 CÂU HỎI', 'TRƯỚC KHI MUA'), cols=CC, anh='Ho Chi Minh City skyline',
       items=[('Lợi nhuận có tăng thật không?', GREEN), ('Đang trả bao nhiêu lần lợi nhuận?', GOLD), ('Tính cả cổ tức thì lãi bao nhiêu?', GOLD)],
       say=("Rút gọn lại, trước khi mua một cổ phiếu tốt, anh chị hãy hỏi ba câu. "
            "Một, lợi nhuận có thật sự tăng không, nhìn ít nhất tám đến mười hai quý chứ không phải một quý. "
