@@ -34098,5 +34098,311 @@
    "tien-gui-cua-khach-hang-la-gi",
    "doc-bctc-ngan-hang"
   ]
+ },
+ {
+  "slug": "p-e-thap-co-phai-re-co-phieu-chu-ky",
+  "kw": "P/E thấp có phải rẻ",
+  "grp": 3,
+  "title": "P/E thấp có phải rẻ? Bẫy P/E ở cổ phiếu chu kỳ (ví dụ thép)",
+  "desc": "Hòa Phát lãi kỷ lục 34.521 tỷ năm 2021, P/E rất thấp, rồi năm 2022 lãi giảm 76%. Vì sao P/E thấp ở cổ phiếu chu kỳ có thể là bẫy và cách tự kiểm tra.",
+  "body": [
+   [
+    "p",
+    "Năm 2021, Hòa Phát lãi sau thuế <b>34.521 tỷ đồng</b>, kỷ lục trong lịch sử công ty. Lợi nhuận lớn như vậy khiến chỉ số P/E trông rất thấp, nhiều người kết luận cổ phiếu thép đang \"rẻ\". Chỉ một năm sau, năm 2022, lợi nhuận còn <b>8.444 tỷ đồng</b>, giảm 76%, và quý 4/2022 công ty lỗ gần 2.000 tỷ. Cái \"rẻ\" năm 2021 hóa ra là đỉnh. Bài này giải thích vì sao, và cách anh chị tự kiểm tra trước khi tin vào một con số P/E thấp."
+   ],
+   [
+    "h2",
+    "P/E đo cái gì, và chỗ hở nằm ở đâu?"
+   ],
+   [
+    "p",
+    "P/E = giá cổ phiếu chia cho lợi nhuận mỗi cổ phiếu (EPS) của 4 quý gần nhất. P/E 6 lần nghĩa là nếu lợi nhuận giữ nguyên, anh chị cần khoảng 6 năm lợi nhuận để \"hoàn vốn\". Chữ quan trọng nhất ở đây là <b>nếu lợi nhuận giữ nguyên</b>. Với doanh nghiệp bán hàng thiết yếu, lợi nhuận khá ổn định nên giả định này tạm dùng được. Với doanh nghiệp chu kỳ như thép, phân bón, hóa chất, vận tải biển, lợi nhuận có thể gấp đôi hoặc mất ba phần tư chỉ trong một năm. Khi đó, P/E chỉ là ảnh chụp của một khoảnh khắc."
+   ],
+   [
+    "h2",
+    "Vì sao P/E thấp nhất lại hay xuất hiện ở đỉnh chu kỳ?"
+   ],
+   [
+    "p",
+    "Ở đỉnh chu kỳ, giá bán cao, biên lợi nhuận rộng, EPS phình to. Thị trường thường đoán được lợi nhuận này khó kéo dài nên không trả giá cao, P/E vì thế co lại. Ngược lại, ở đáy chu kỳ, lợi nhuận rất mỏng nên P/E có thể rất cao, dù giá cổ phiếu đã giảm sâu. Ví dụ Hòa Phát năm 2022: biên lợi nhuận gộp quý 1 khoảng 23%; từ giữa tháng 5 giá thép xây dựng giảm gần như liên tiếp 19 lần, tổng khoảng 25%; đến quý 4 biên lợi nhuận gộp còn âm 3% (theo bản tin nhà đầu tư quý 4/2022 của Hòa Phát)."
+   ],
+   [
+    "h2",
+    "So sánh 3 doanh nghiệp thép hiện nay"
+   ],
+   [
+    "p",
+    "Bảng dưới lấy số liệu báo cáo tài chính quý 3/2026 và chỉ số tính đến phiên 10/11/2026 (nguồn: dữ liệu chungkhoanhuynguyen.com). Cùng ngành, nhưng P/E rất khác nhau:"
+   ],
+   [
+    "table",
+    [
+     [
+      "Mã",
+      "LNST quý 3/2026",
+      "So cùng kỳ",
+      "P/E",
+      "P/B",
+      "ROE"
+     ],
+     [
+      "HPG",
+      "8.217 tỷ",
+      "+106,0%",
+      "6,4",
+      "1,19",
+      "19,9%"
+     ],
+     [
+      "HSG",
+      "55 tỷ",
+      "−37,4%",
+      "14,1",
+      "0,74",
+      "5,4%"
+     ],
+     [
+      "NKG",
+      "126 tỷ",
+      "+154,8%",
+      "24,8",
+      "0,78",
+      "3,2%"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Hòa Phát có P/E thấp nhất vì lợi nhuận đang cao. Hoa Sen và Nam Kim có P/E cao hơn hẳn dù P/B dưới 1, vì lợi nhuận đang mỏng (ROE chỉ 3–5%). Nếu chỉ nhìn P/E, anh chị sẽ kết luận HPG rẻ nhất, NKG đắt nhất. Nhưng câu hỏi đúng phải là: lợi nhuận hiện tại của mỗi công ty đang ở đâu trong chu kỳ của chính nó?"
+   ],
+   [
+    "h2",
+    "Tính thử: \"P/E bình thường hóa\""
+   ],
+   [
+    "p",
+    "Một cách tự kiểm tra là thay lợi nhuận hiện tại bằng lợi nhuận \"trung bình\" khi biên lợi nhuận quay về mức bình thường. Với Hòa Phát quý 3/2026:"
+   ],
+   [
+    "ol",
+    [
+     "Sản lượng thép chính bán ra khoảng 3,8 triệu tấn/quý; lợi nhuận sau thuế 8.265 tỷ → khoảng <b>2,17 triệu đồng/tấn</b> (chia thô).",
+     "Quý 3/2025 cùng cách tính chỉ khoảng <b>1,62 triệu đồng/tấn</b>.",
+     "Giả sử giữ sản lượng nhưng lãi mỗi tấn về 1,62 triệu: 3,8 × 4 × 1,62 ≈ <b>24.600 tỷ/năm</b>.",
+     "Vốn hóa khoảng 176.000 tỷ → P/E bình thường hóa ≈ 176.000 / 24.600 ≈ <b>7,2 lần</b>."
+    ]
+   ],
+   [
+    "p",
+    "Nếu P/E sau khi bình thường hóa vẫn chấp nhận được, anh chị có biên an toàn. Nếu nó tăng vọt lên 20–30 lần, cái rẻ hôm nay có thể chỉ là ảo giác của đỉnh chu kỳ. Lưu ý đây là phép tính minh họa, không phải dự báo."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>Mua vì P/E thấp nhất ngành.</b> Năm 2021 cổ phiếu thép có P/E rất thấp vì lãi kỷ lục; năm 2022 lợi nhuận Hòa Phát giảm 76%.",
+     "<b>Bỏ qua khoản lãi một lần.</b> 6 tháng đầu 2026 Hòa Phát ghi nhận 4.929 tỷ doanh thu tài chính từ bán công ty con – khoản này làm EPS lũy kế đẹp hơn nhưng không lặp lại.",
+     "<b>Bán vì P/E cao ở đáy chu kỳ.</b> Khi lợi nhuận mỏng, P/E cao (như NKG 24,8 lần) chưa chắc là đắt; có khi đó lại là lúc lợi nhuận sắp hồi phục."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist tự kiểm tra cổ phiếu chu kỳ"
+   ],
+   [
+    "ul",
+    [
+     "Lợi nhuận tăng vì sản lượng (năng lực mới) hay vì giá bán? Phần đến từ giá dễ mất hơn.",
+     "Biên lợi nhuận gộp hiện tại so với trung bình 5 năm cao hay thấp?",
+     "Có khoản lãi một lần nào (bán công ty con, hoàn nhập dự phòng) không?",
+     "Nếu biên lợi nhuận về trung bình, P/E là bao nhiêu?",
+     "Giá đầu vào (quặng, than, khí) và giá đầu ra đang đi cùng hay ngược chiều?"
+    ]
+   ],
+   [
+    "p",
+    "Video phân tích chi tiết Hòa Phát (lãi gấp đôi mà giá giảm 20%) có trên kênh YouTube Chứng Khoán Huy Nguyễn, seri \"Doanh nghiệp kiếm tiền thế nào\"."
+   ]
+  ],
+  "faq": [
+   [
+    "P/E thấp có phải là rẻ không?",
+    "Không chắc. P/E chỉ dùng lợi nhuận 4 quý gần nhất. Với cổ phiếu chu kỳ, P/E thấp thường xuất hiện khi lợi nhuận đang ở đỉnh và có thể giảm mạnh sau đó."
+   ],
+   [
+    "Cổ phiếu chu kỳ là gì?",
+    "Là cổ phiếu của doanh nghiệp có lợi nhuận lên xuống mạnh theo giá hàng hóa hoặc chu kỳ kinh tế, như thép, phân bón, hóa chất, vận tải biển, bất động sản."
+   ],
+   [
+    "Nên dùng chỉ số nào thay P/E cho cổ phiếu chu kỳ?",
+    "Có thể dùng P/B kết hợp ROE trung bình nhiều năm, hoặc P/E bình thường hóa: thay lợi nhuận hiện tại bằng lợi nhuận khi biên lợi nhuận về mức trung bình."
+   ]
+  ],
+  "rel": [
+   "co-phieu-chu-ky-la-gi",
+   "pe-la-gi",
+   "loi-nhuan-bat-thuong-la-gi",
+   "pe-bi-meo-boi-mot-quy-loi-nhuan"
+  ]
+ },
+ {
+  "slug": "doc-thuyet-minh-doanh-thu-theo-mang",
+  "kw": "thuyết minh doanh thu",
+  "grp": 3,
+  "title": "Đọc thuyết minh doanh thu: doanh thu tăng 35% mà mảng chính lỗ?",
+  "desc": "Vietjet quý 3/2026: doanh thu +35% nhưng tiền vé −9,6%; mảng tàu bay lãi gộp 2.850 tỷ, phần còn lại lỗ gộp 813 tỷ. Cách đọc thuyết minh doanh thu.",
+  "body": [
+   [
+    "p",
+    "Quý 3/2026, Vietjet báo doanh thu <b>22.849 tỷ đồng, tăng 35%</b>. Nghe rất tốt, nhưng cùng quý số khách chỉ tăng 3,3% và số chuyến bay tăng 2,4%. Khách gần như đứng yên mà doanh thu tăng hơn một phần ba – tiền đến từ đâu? Câu trả lời không nằm ở trang đầu báo cáo tài chính, mà ở phần thuyết minh doanh thu gần cuối. Bài này hướng dẫn anh chị đọc phần đó."
+   ],
+   [
+    "h2",
+    "Thuyết minh doanh thu nằm ở đâu?"
+   ],
+   [
+    "p",
+    "Báo cáo kết quả kinh doanh chỉ cho một dòng \"Doanh thu thuần\". Muốn biết doanh thu gồm những gì, anh chị kéo xuống phần thuyết minh, tìm mục có tên kiểu \"Doanh thu thuần về bán hàng và cung cấp dịch vụ\" (với Vietjet là thuyết minh số 26). Ngay sau đó thường là mục \"Giá vốn hàng bán\" (thuyết minh 27). Đặt hai bảng cạnh nhau là thấy mảng nào lãi, mảng nào lỗ."
+   ],
+   [
+    "h2",
+    "Ví dụ: tách doanh thu Vietjet quý 3/2026"
+   ],
+   [
+    "table",
+    [
+     [
+      "Dòng doanh thu",
+      "Quý 3/2026 (tỷ đồng)",
+      "Quý 3/2025 (tỷ đồng)",
+      "Thay đổi"
+     ],
+     [
+      "Vé nội địa + quốc tế",
+      "7.613",
+      "8.425",
+      "−9,6%"
+     ],
+     [
+      "Dịch vụ phụ trợ",
+      "6.155",
+      "6.048",
+      "+1,8%"
+     ],
+     [
+      "Cho thuê chuyến bay",
+      "3.008",
+      "1.432",
+      "×2,1"
+     ],
+     [
+      "Thu xếp, mua bán tàu bay, động cơ",
+      "4.356",
+      "435",
+      "×10"
+     ],
+     [
+      "Cho thuê khô tàu bay",
+      "917",
+      "483",
+      "+90%"
+     ],
+     [
+      "Khác",
+      "801",
+      "108",
+      "×7,4"
+     ],
+     [
+      "Tổng",
+      "22.849",
+      "16.931",
+      "+35%"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: BCTC hợp nhất quý 3/2026 của Vietjet, thuyết minh 26. Tiền vé – nguồn thu cốt lõi – giảm 9,6%. Phần tăng đến chủ yếu từ mua bán tàu bay và cho thuê chuyến."
+   ],
+   [
+    "h2",
+    "Bước 2: ghép với giá vốn từng mảng"
+   ],
+   [
+    "ol",
+    [
+     "Mảng tàu bay: doanh thu 4.356 tỷ, giá vốn 1.506 tỷ → lãi gộp khoảng <b>2.850 tỷ</b>.",
+     "Lãi gộp toàn công ty: 22.849 − 20.812 = khoảng <b>2.037 tỷ</b>.",
+     "Phần còn lại (chở khách, phụ trợ, thuê chuyến, cho thuê khô, khác): 2.037 − 2.850 ≈ <b>−813 tỷ</b>.",
+     "Cùng cách tính, quý 3/2025 phần này còn lãi gộp khoảng 1.660 tỷ."
+    ]
+   ],
+   [
+    "p",
+    "Nói cách khác, trong quý 3/2026 một mảng lãi gộp nhiều hơn cả công ty. Vietjet giải trình giá nhiên liệu bay ở mức cao do căng thẳng Trung Đông; chi phí khai thác bay tăng 24,5% trong khi số chuyến chỉ tăng 2,4%."
+   ],
+   [
+    "h2",
+    "Mua bán tàu bay có phải \"làm đẹp\" số liệu?"
+   ],
+   [
+    "p",
+    "Không hẳn. Đây là mô hình lâu năm: hãng đặt mua máy bay số lượng lớn nên được giá tốt, bán cho công ty cho thuê rồi thuê lại để khai thác. Tiền là thật, hợp pháp. Điểm khác là <b>chất lượng</b>: lợi nhuận chở khách lặp lại mỗi ngày, còn lợi nhuận mua bán tàu bay phụ thuộc lịch giao máy bay và từng hợp đồng, có quý nhiều, quý ít. Khi định giá, anh chị nên tách hai phần này ra."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>Chỉ nhìn dòng tổng doanh thu.</b> Vietjet +35% nhưng tiền vé −9,6%.",
+     "<b>Nhầm doanh thu một lần với doanh thu lặp lại.</b> Doanh thu bán tài sản, chuyển nhượng dự án, bán công ty con không đều đặn như doanh thu bán hàng.",
+     "<b>Bỏ qua giá vốn từng mảng.</b> Doanh thu một mảng tăng mạnh nhưng nếu giá vốn tăng mạnh hơn thì lợi nhuận vẫn giảm. Vietnam Airlines quý 3/2026 doanh thu +28,7% nhưng biên lãi gộp từ 12,5% xuống 7,3%."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist 5 phút khi đọc thuyết minh doanh thu"
+   ],
+   [
+    "ul",
+    [
+     "Doanh thu gồm mấy mảng? Mảng nào lớn nhất?",
+     "Mảng cốt lõi tăng hay giảm so với cùng kỳ?",
+     "Có dòng nào tăng đột biến (gấp nhiều lần)? Đó là hoạt động lặp lại hay một lần?",
+     "Đặt cạnh thuyết minh giá vốn: mảng nào lãi gộp, mảng nào lỗ?",
+     "Đọc văn bản giải trình kết quả kinh doanh của công ty để biết họ tự giải thích thế nào."
+    ]
+   ],
+   [
+    "p",
+    "Video \"Vietjet bay một khách lãi bao nhiêu\" trên kênh YouTube Chứng Khoán Huy Nguyễn phân tích chi tiết ví dụ này."
+   ]
+  ],
+  "faq": [
+   [
+    "Thuyết minh báo cáo tài chính là gì?",
+    "Là phần giải thích chi tiết đi kèm các bảng số trong báo cáo tài chính: doanh thu gồm những gì, giá vốn, các khoản vay, tài sản, chính sách kế toán."
+   ],
+   [
+    "Doanh thu tăng có phải công ty làm ăn tốt hơn?",
+    "Chưa chắc. Cần xem doanh thu tăng ở mảng nào, có phải hoạt động lặp lại không, và giá vốn của mảng đó tăng bao nhiêu."
+   ],
+   [
+    "Tìm thuyết minh doanh thu ở đâu trong BCTC?",
+    "Ở phần thuyết minh gần cuối báo cáo, mục \"Doanh thu thuần về bán hàng và cung cấp dịch vụ\"; ngay sau thường là mục \"Giá vốn hàng bán\"."
+   ]
+  ],
+  "rel": [
+   "doanh-thu-hoat-dong-tai-chinh-la-gi",
+   "loi-nhuan-bat-thuong-la-gi",
+   "cac-khoan-giam-tru-doanh-thu-la-gi",
+   "doanh-thu-chua-thuc-hien-la-gi"
+  ]
  }
 ]
