@@ -22,15 +22,15 @@ S = [
         ('Cam kết mua lại với giá cao hơn 30% sau 12 tháng.', 'CAM KẾT ĐẸP')]),
       say=("Bạn đang đứng giữa một thửa ruộng, tay cầm tờ hợp đồng có con dấu đỏ. Trên giấy ghi rõ: lô số mười hai, một trăm phần trăm thổ cư, sổ riêng từng nền. "
            "Dưới chân bạn là bùn. Một bác nông dân đi ngang qua, nhìn tờ giấy rồi lắc đầu: cô cũng đến tìm lô đất à? Tuần nào cũng có người đến hỏi câu đó.")),
- dict(k='text', cap=('950 TRIỆU', 'CHO MỘT THỬA RUỘNG'), cols=CR, anh='rice field Vietnam',
+ dict(k='text', cap=('950 TRIỆU', 'CHO MỘT THỬA RUỘNG'), cols=CR, anh='ov:rice paddy field vietnam||rice field Vietnam',
       say=("Tờ giấy đó có giá chín trăm năm mươi triệu đồng. Là toàn bộ tiền tiết kiệm mười hai năm của hai vợ chồng bạn, cộng thêm tiền đi vay. "
            "Ba tháng đầu, công ty trả bạn mười chín triệu mỗi tháng, đúng ngày, không sai một lần. Rồi họ biến mất. "
            "Và người dẫn bạn đến đây, không phải người lạ. Đó là chị đồng nghiệp tốt bụng nhất công ty.")),
- dict(k='text', cap=('VÌ SAO THẬT TỆ KHI', 'MUA ĐẤT THEO HỘI NHÓM'), cols=CC, anh='Ho Chi Minh City skyline',
+ dict(k='text', cap=('VÌ SAO THẬT TỆ KHI', 'MUA ĐẤT THEO HỘI NHÓM'), cols=CC, anh='ov:land for sale sign||Ho Chi Minh City skyline',
       say=("Hôm nay mình sẽ cùng bạn đi lại từ đầu con đường dẫn đến thửa ruộng này: vì sao thật tệ khi mua đất theo hội nhóm. "
            "Nhân vật là giả định. Nhưng từng thủ đoạn trong video đã xảy ra thật với hơn bốn nghìn năm trăm người, và mình sẽ kể vụ án đó ở cuối video.")),
  # ---------------- CHƯƠNG 1 ----------------
- dict(k='text', ch='Chương 1 – Mười hai năm ở nhà thuê', cap=('12 NĂM Ở NHÀ THUÊ', 'VÀ MỘT GIẤC MƠ'), cols=CC, moc=True, anh='Ho Chi Minh City apartments',
+ dict(k='text', ch='Chương 1 – Mười hai năm ở nhà thuê', cap=('12 NĂM Ở NHÀ THUÊ', 'VÀ MỘT GIẤC MƠ'), cols=CC, moc=True, anh='ov:vietnam alley houses||Ho Chi Minh City apartments',
       say=("Bạn ba mươi sáu tuổi, kế toán cho một công ty gỗ ở Bình Dương. Chồng là thợ điện công trình, hai đứa con còn nhỏ. Cả nhà ở thuê mười hai năm, mỗi lần chủ nhà tăng giá lại một lần chuyển nhà. "
            "Trong sổ có sáu trăm triệu, mỗi năm đẻ ra hơn ba mươi triệu tiền lãi. Còn giá đất quanh chỗ bạn ở, người ta nói tăng ba bốn chục phần trăm. "
            "Bạn có cảm giác mình đang chạy bộ đuổi theo một chiếc xe máy.")),
@@ -52,11 +52,11 @@ S = [
            "Chủ nhật này bên em có xe đưa khách đi tham quan dự án, miễn phí ăn trưa, có bốc thăm trúng xe máy nữa chị. "
            "Bạn định từ chối. Nhưng nghe đến chữ miễn phí, bạn nghĩ: đi xem thôi mà, có mất gì đâu.")),
  # ---------------- CHƯƠNG 3 ----------------
- dict(k='text', ch='Chương 3 – Chuyến xe Chủ nhật', cap=('XE 45 CHỖ', 'NHẠC, NƯỚC SUỐI, BÁNH MÌ'), cols=CC, moc=True, anh='highway Vietnam',
+ dict(k='text', ch='Chương 3 – Chuyến xe Chủ nhật', cap=('XE 45 CHỖ', 'NHẠC, NƯỚC SUỐI, BÁNH MÌ'), cols=CC, moc=True, anh='ov:tour bus interior passengers||highway Vietnam',
       say=("Sáu giờ sáng Chủ nhật, một chiếc xe bốn mươi lăm chỗ đỗ ngay đầu hẻm. Trên xe có nước suối, bánh mì, nhạc sôi động. "
            "Một nhân viên cầm micro nói suốt bốn mươi phút đường: sân bay sắp mở, cao tốc sắp xong, khu công nghiệp sắp về, đất ở đây chỉ có lên. "
            "Bạn nhìn quanh. Xe kín chỗ. Có cặp vợ chồng già, có nhóm công nhân, có cô giáo về hưu. Ai cũng có vẻ háo hức giống bạn.")),
- dict(k='text', cap=('BĂNG RÔN, TIẾNG CHUÔNG', 'VÀ "CHỐT LÔ!"'), cols=CR, anh='rice field Vietnam',
+ dict(k='text', cap=('BĂNG RÔN, TIẾNG CHUÔNG', 'VÀ "CHỐT LÔ!"'), cols=CR, anh='ov:outdoor event tent stage crowd||rice field Vietnam',
       say=("Xe dừng trước một khu đất trống, cắm đầy cờ và băng rôn. Một cái rạp lớn, sân khấu, loa thùng. MC hô: chỉ còn mười lô cuối cùng với giá ưu đãi hôm nay. "
            "Rồi cứ vài phút, tiếng chuông lại reo. Chúc mừng anh Hưng chốt lô B năm. Chúc mừng chị Lan chốt hai lô dãy C. Cả rạp vỗ tay. "
            "Bạn không biết rằng trong những cái tên được xướng lên, có bao nhiêu người là khách thật.")),
@@ -97,7 +97,7 @@ S = [
            "Anh Tùng nhắn: anh thấy sao sao, về nhà bàn đã. Bạn gõ: không kịp anh ơi, mười hai giờ người ta bán cho khách khác. "
            "Mười một giờ năm mươi tám phút, bạn chuyển năm mươi triệu tiền cọc.")),
  # ---------------- CHƯƠNG 5 ----------------
- dict(k='text', ch='Chương 5 – Gom đủ 950 triệu', cap=('600 TRIỆU TIẾT KIỆM', '+ 350 TRIỆU ĐI VAY'), cols=CC, moc=True, anh='Ho Chi Minh City skyline',
+ dict(k='text', ch='Chương 5 – Gom đủ 950 triệu', cap=('600 TRIỆU TIẾT KIỆM', '+ 350 TRIỆU ĐI VAY'), cols=CC, moc=True, anh='ov:vietnamese dong banknotes||Ho Chi Minh City skyline',
       say=("Tối đó, hai vợ chồng cãi nhau to nhất từ ngày cưới. Nhưng bạn có bảng tính, có hợp đồng, có lời của chị Hằng. Anh Tùng thua. "
            "Sáu trăm triệu tiết kiệm chưa đủ. Bạn vay thêm em chồng ba trăm năm mươi triệu, hứa mười hai tháng sau trả cả gốc lẫn lãi. "
            "Sáng Chủ nhật tuần sau, bạn ký tờ hợp đồng, và chín trăm năm mươi triệu rời khỏi tài khoản.")),
@@ -137,7 +137,7 @@ S = [
         ('Trâm', 'Dạ dự kiến quý sau ạ. Chị yên tâm, dự án lớn lắm')]),
       say=("Tháng thứ tư, ngày mùng năm trôi qua. Không có tin nhắn ngân hàng nào. Bạn nhắn Trâm. Trâm trả lời sau ba tiếng: công ty đang hoàn thiện pháp lý, chậm vài hôm thôi chị. "
            "Bạn hỏi bao giờ ra sổ. Trâm nói: dự kiến quý sau ạ, chị yên tâm, dự án lớn lắm. Vài hôm thành vài tuần. Vài tuần thành vài tháng.")),
- dict(k='text', cap=('BẠN TỰ ĐI', 'XEM LÔ ĐẤT'), cols=CR, anh='rice field Vietnam',
+ dict(k='text', cap=('BẠN TỰ ĐI', 'XEM LÔ ĐẤT'), cols=CR, anh='ov:farmer rice field vietnam||rice field Vietnam',
       say=("Một sáng thứ Bảy, bạn và anh Tùng tự chạy xe máy đến dự án. Không còn rạp, không còn cờ, không còn loa. Chỉ có mấy cái cọc bê tông sơn đỏ cắm giữa ruộng. "
            "Và đó chính là buổi sáng ở đầu câu chuyện, khi bác nông dân nói với bạn: đất này là đất trồng lúa, cô ạ.")),
  # ---------------- CHƯƠNG 8 ----------------
@@ -170,7 +170,7 @@ S = [
       say=("Một tuần sau, một số lạ gọi đến. Chào chị, em là luật sư Minh, bên em chuyên hỗ trợ khách hàng dự án X đòi lại tiền, đã đòi được cho hơn hai trăm người rồi. "
            "Phí hồ sơ ba mươi triệu, chị chuyển trước để em nộp sớm, kẻo hết lượt. "
            "Người đang mất tiền luôn muốn tin rằng có ai đó sẽ cứu mình. Bạn chuyển ba mươi triệu, số tiền cuối cùng còn lại trong tài khoản.")),
- dict(k='text', cap=('SỐ MÁY', 'KHÔNG LIÊN LẠC ĐƯỢC'), cols=CR, anh='Ho Chi Minh City skyline',
+ dict(k='text', cap=('SỐ MÁY', 'KHÔNG LIÊN LẠC ĐƯỢC'), cols=CR, anh='ov:woman phone call worried||Ho Chi Minh City skyline',
       say=("Ba ngày sau, số của luật sư Minh không liên lạc được nữa. Đây là thủ đoạn thường thấy sau các vụ lừa đảo lớn: kẻ thứ hai tìm đến nạn nhân của kẻ thứ nhất, hứa đòi lại tiền, thu một khoản phí rồi biến mất. "
            "Hãy nhớ: muốn đòi quyền lợi trong một vụ án, bạn làm việc trực tiếp với cơ quan điều tra và toà án, không qua ai nhận đòi hộ có thu phí trước.")),
  dict(k='bignum', cap=('SAU HAI NĂM', 'CẢ NHÀ ĐÃ MẤT'), cols=CR, value=MAT + 30, fmt='{:,.0f}', unit=' triệu', top='TIỀN NHÀ + TIỀN CỦA MẸ + "LUẬT SƯ"', sub='chưa tính 350 triệu đang nợ em chồng', col=RED,
@@ -195,7 +195,7 @@ S = [
            "Toà ghi nhận nhiều người trong số đó còn trẻ, ít kinh nghiệm, tin vào người đứng đầu. "
            "Nghĩa là những cô Trâm, những người cầm micro trên xe, có khi cũng chỉ là người làm công. Nhưng tiền của hơn bốn nghìn gia đình thì đã đi mất.")),
  # ---------------- CHƯƠNG 11 ----------------
- dict(k='text', ch='Chương 11 – Vì sao người cẩn thận vẫn sập bẫy', cap=('KHÔNG PHẢI VÌ THAM', 'MÀ VÌ BỊ DẪN TỪNG BƯỚC'), cols=CC, moc=True, anh='staircase',
+ dict(k='text', ch='Chương 11 – Vì sao người cẩn thận vẫn sập bẫy', cap=('KHÔNG PHẢI VÌ THAM', 'MÀ VÌ BỊ DẪN TỪNG BƯỚC'), cols=CC, moc=True, anh='ov:dark stairs down||staircase',
       say=("Bạn là kế toán. Bạn ghi sổ từng đồng. Nhưng bạn vẫn mất tiền, vì cái bẫy không bắt đầu bằng một cú lớn. "
            "Mỗi bước đều nhỏ, đều có một người dễ mến đứng cạnh, và đều có vẻ hợp lý. "
            "Chỉ khi đứng giữa thửa ruộng nhìn lại, bạn mới thấy mình đã đi xa đến đâu.")),
@@ -220,7 +220,7 @@ S = [
         ('Tùng', 'Ngủ đi em, mai còn đưa con đi học')]),
       say=("Đêm đó, bạn nhắn cho chồng: em xin lỗi anh, em xin lỗi mẹ, xin lỗi Ngọc. Anh Tùng trả lời: tiền mất thì mình làm lại. "
            "Từ giờ cái gì không có sổ, không xem được giấy tờ, thì mình không mua nữa. Ngủ đi em, mai còn đưa con đi học.")),
- dict(k='text', cap=('THỨ THẬT DUY NHẤT', 'LÀ TIỀN CỦA BẠN'), cols=CC, anh='Saigon river',
+ dict(k='text', cap=('THỨ THẬT DUY NHẤT', 'LÀ TIỀN CỦA BẠN'), cols=CC, anh='ov:family sunset vietnam||Saigon river',
       say=("Họ bán cho bạn một mảnh đất trên giấy, một lời hứa trên giấy, một tiếng chuông chốt lô và một tràng vỗ tay. "
            "Trong cả giao dịch đó, chỉ có đúng một thứ là thật: tiền của bạn.")),
  dict(k='end', cap=('BẠN ĐÃ TỪNG', 'ĐI XE "THAM QUAN DỰ ÁN" CHƯA?'), cols=CC,

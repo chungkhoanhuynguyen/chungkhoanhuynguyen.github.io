@@ -36,7 +36,22 @@ def _get(u, t=20):
             raise
 
 NGUOI = re.compile(r"confederate|counterfeit|people|person|portrait|men of|women of|businesspeople|business people|politician|chairman|ceo|founder|births|living people|selfie|headshot|ông |bà |chân dung|doanh nhân|chủ tịch|giám đốc|lãnh đạo|_em\\.|nguyen|nguyễn|tran |trần |le van|lê văn|pham|phạm|hoang|hoàng|võ |đỗ |doan|đoàn")
+def tim_ov(q, n=20):
+    """QL1 11/11 (anh Huy: ảnh minh hoạ phải sát nội dung): Openverse – kho ảnh CC lớn (Flickr, v.v.), khớp ý nghĩa tốt hơn Commons.
+    Dùng: anh='ov:elderly woman bank counter'. Chỉ lấy giấy phép cho phép dùng thương mại, ảnh ngang ≥1200px."""
+    u = "https://api.openverse.org/v1/images/?" + urllib.parse.urlencode({"q": q, "page_size": n, "license_type": "commercial", "aspect_ratio": "wide", "size": "large", "mature": "false"})
+    try: rs = json.loads(_get(u, 30)).get("results", [])
+    except Exception as e: print("anh: loi openverse", q, e); return []
+    out = []
+    for r in rs:
+        if (r.get("width") or 0) < 1200 or XAU.search((r.get("title") or "") + " " + " ".join(t.get("name", "") for t in r.get("tags") or [])): continue
+        lic = ("CC " + (r.get("license") or "").upper() + " " + (r.get("license_version") or "")).replace("CC CC0", "CC0").replace("CC PDM", "Public domain").strip()
+        out.append({"u": r["url"], "tg": (r.get("creator") or "không rõ")[:60], "lic": lic, "trang": r.get("foreign_landing_url") or r.get("url")})
+    print("anh: openverse", q, len(out), flush=True)
+    return out
+
 def tim(q, n=12):
+    if q.startswith("ov:"): return tim_ov(q[3:].strip())
     if q.startswith("File:"):   # đúng 1 file Commons (cho cả bản đồ .svg → ảnh PNG), dùng cho cảnh bản đồ
         u = "https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode({"action": "query", "format": "json", "titles": q, "prop": "imageinfo", "iiprop": "url|extmetadata", "iiurlwidth": 1600})
         try: pg = list(json.loads(_get(u))["query"]["pages"].values())[0]; ii = pg["imageinfo"][0]
@@ -75,14 +90,14 @@ class Kho:
         """Chọn 1 ảnh chưa dùng cho cảnh. Trả về PIL.Image hoặc None."""
         txt = " ".join(str(sc.get(k, "")) for k in ("anh", "label", "say", "ch")) + " " + chu_de
         qs = []
-        if sc.get("anh"): qs.append(sc["anh"])
+        if sc.get("anh"): qs.extend(q.strip() for q in str(sc["anh"]).split("||") if q.strip())   # nhiều từ khoá dự phòng: "ov:...||Commons..."
         for m in re.findall(r"\b([A-Z]{3})\b", txt):
             if m in MA and MA[m] not in qs: qs.append(MA[m])
         for pat, q in CHU:
             if re.search(pat, txt, re.I) and q not in qs: qs.append(q)
-        if sc.get("chat"): qs = [sc["anh"]]       # reel: chỉ đúng từ khoá cảnh (ảnh khớp lời)
+        if sc.get("chat") and not isinstance(sc["chat"], dict): qs = [q.strip() for q in str(sc.get("anh") or "").split("||") if q.strip()]   # reel: chỉ đúng từ khoá cảnh
         else: qs += NEN
-        for q in qs:
+        for q in [q for q in qs if q]:
             for it in s._ds(q):
                 if it["u"] in s.dung:
                     # 11/11 NV1: ảnh chỉ định đích danh (File:) được dùng lại cho cảnh sau, thay vì rơi xuống từ khoá chung lạc đề
