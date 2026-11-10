@@ -11,10 +11,10 @@ EPS0 = G0 / PE0; EPS1 = gia / PE1; boi = EPS1 / EPS0; doi_gia = (gia / G0 - 1) *
 v = lambda x, d=0: lib.vn(x, d)
 NM = [('Q3/2023', 0.59), ('Q3/2024', 2.27), ('Q3/2025', 3.94), ('Q3/2026', 6.16)]
 S = [
- dict(k='hook', ch='Mở đầu', label='Thế Giới Di Động', cap=('60 ĐỒNG', 'THÀNH 616 ĐỒNG'), cols=CC, anh='electronics store Vietnam',
+ dict(k='hook', ch='Mở đầu', label='Thế Giới Di Động', cap=('60 ĐỒNG', 'THÀNH 616 ĐỒNG'), cols=CC, anh='File:Thegioididong Hoi An in 2015.jpg',
       chart=dict(sym='MWGW', tf='W', weeks=52, circles=[cir[0], cir[2]]),
       say="Ba năm trước, cứ mười nghìn đồng anh chị trả ở Thế Giới Di Động hay Điện Máy Xanh, công ty chỉ giữ lại được khoảng 60 đồng lợi nhuận. Bây giờ con số đó là khoảng 616 đồng, gấp hơn mười lần."),
- dict(k='bignum', cap=('GIÁ CỔ PHIẾU MWG', 'SAU 3 NĂM'), cols=CC, value=round(doi_gia, 1), fmt='+{:,.1f}', unit='%', top='%s → %s ĐỒNG' % (v(G0), v(gia)), sub='Vinamilk cùng kỳ: −16,9%', col=GREEN,
+ dict(k='bignum', cap=('GIÁ CỔ PHIẾU MWG', 'SAU 3 NĂM'), cols=CC, value=round(doi_gia, 1), fmt='+{:,.1f}', unit='%', top='TỪ %s LÊN %s ĐỒNG' % (v(G0), v(gia)), sub='Vinamilk cùng kỳ: −16,9%', col=GREEN,
       say=("Cổ phiếu cũng đi theo. Ngày 10 tháng 11 năm 2023, MWG giá %s đồng. Hôm nay giá khoảng %s đồng, tăng khoảng %s%%. "
            "Trong khi đó, như em phân tích ở video trước, Vinamilk cùng ba năm lại giảm gần 17%%.") % (v(G0), v(gia), v(doi_gia, 1))),
  dict(k='text', cap=('CÙNG BA NĂM', 'VÌ SAO NGƯỢC NHAU?'), cols=CC, anh='supermarket aisle',
@@ -26,7 +26,7 @@ S = [
       say=("Đây là biên lợi nhuận ròng mười hai tháng của Thế Giới Di Động, đổi ra số đồng giữ lại trên mỗi mười nghìn đồng doanh thu. "
            "Quý 3 năm 2023 chỉ khoảng 59 đồng. Một năm sau lên khoảng 227 đồng, rồi 394 đồng, và quý 3 năm nay khoảng 616 đồng. "
            "Ngành bán lẻ điện máy vốn lãi mỏng, nên từ 0,6% lên 6,2% là một cú lội ngược dòng rất hiếm. Vậy tiền tăng thêm đến từ đâu?")),
- dict(k='cards', ch='Chương 2 – Cắt chi phí bán hàng', cap=('CHI PHÍ BÁN HÀNG', 'TRÊN DOANH THU'), cols=CC, moc=True, anh='electronics store Vietnam',
+ dict(k='cards', ch='Chương 2 – Cắt chi phí bán hàng', cap=('CHI PHÍ BÁN HÀNG', 'TRÊN DOANH THU'), cols=CC, moc=True, anh='Thegioididong',
       cards=[('18,2%', 'chi phí bán hàng 12 tháng đến Q3/2023', ''), ('12,5%', 'chi phí bán hàng 12 tháng đến Q3/2026', ''), ('21,4%', 'biên lãi gộp hiện nay', '')],
       say=("Nguồn lớn nhất là chi phí bán hàng. Mười hai tháng đến quý 3 năm 2023, chi phí bán hàng ăn mất khoảng 18,2% doanh thu. "
            "Ba năm sau chỉ còn khoảng 12,5%. Trong khi biên lãi gộp gần như giữ nguyên quanh 20 đến 21%. "
