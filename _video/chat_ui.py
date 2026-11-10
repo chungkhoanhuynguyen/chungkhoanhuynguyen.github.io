@@ -14,10 +14,12 @@ BUB_L = (38, 44, 58); BUB_R = (0, 104, 255); SYS = (120, 128, 146)
 MAU_TEN = [(255, 196, 0), (90, 200, 250), (255, 120, 160), (120, 230, 140), (200, 160, 255), (255, 160, 90)]
 
 def _nen(sc):
-    if "_bg" in sc: return sc["_bg"].copy()
     g = Image.new("RGB", (LW, LH), DARK); d = ImageDraw.Draw(g)
     for r, c in ((900, (20, 25, 36)), (560, (26, 32, 46))): d.ellipse([560 - r, LH/2 - r, 560 + r, LH/2 + r], fill=c)
-    return g.filter(ImageFilter.GaussianBlur(120))
+    g = g.filter(ImageFilter.GaussianBlur(120)); d = ImageDraw.Draw(g, "RGBA")
+    for x in range(0, LW, 48): d.line([x, 0, x, LH], fill=(255, 255, 255, 6))
+    for y in range(0, LH, 48): d.line([0, y, LW, y], fill=(255, 255, 255, 6))
+    return g
 
 def _wrap(d, s, f, mw):
     out, cur = [], ""
