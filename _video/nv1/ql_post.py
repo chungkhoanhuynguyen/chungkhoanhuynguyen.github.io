@@ -15,8 +15,11 @@ def tach(S, max_tu=95, anh_mac_dinh='Ho Chi Minh City skyline'):
         if c['k'] == 'end' or len(parts) == 1: out.append(c); continue
         c['say'] = parts[0]; out.append(c)
         for p in parts[1:]:
-            if c['k'] in ('checklist', 'bars', 'cards', 'bignum'):   # giữ hình số liệu, tránh ảnh lạc đề
-                d = {k: v for k, v in c.items() if k not in ('ch', 'say', 'moc')}; d['say'] = p; out.append(d)
+            if c['k'] in ('checklist', 'bars', 'cards', 'bignum', 'chat', 'noti'):   # giữ hình số liệu / điện thoại, tránh ảnh lạc đề
+                d = {k: v for k, v in c.items() if k not in ('ch', 'say', 'moc')}; d['say'] = p
+                for kk, ds in (('chat', 'msgs'), ('noti', 'items')):   # cảnh điện thoại nối tiếp: tin đã hiện đủ, không phát lại
+                    if kk in d: d[kk] = dict(d[kk], co_san=len(d[kk].get(ds, [])))
+                out.append(d)
             else:
                 out.append(dict(k='text', cap=c.get('cap', ('', '')), cols=c.get('cols'), anh=c.get('anh2') or anh_mac_dinh, say=p))
     return out
