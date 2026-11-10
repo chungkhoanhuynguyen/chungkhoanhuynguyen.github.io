@@ -32,7 +32,7 @@ S = [
       say=("Bạn ba mươi sáu tuổi, làm kế toán cho một công ty gỗ ở Bình Dương. Chồng bạn, anh Tùng, là thợ điện công trình. Hai đứa con, một lớp năm, một mẫu giáo. "
            "Cả nhà ở thuê đã mười hai năm. Mỗi lần chủ nhà tăng giá, bạn lại đi tìm phòng mới, lại thuê xe chở đồ, lại xin cho con học trường mới. "
            "Trong sổ tiết kiệm có sáu trăm triệu. Bạn biết rõ từng đồng trong đó, vì bạn là người ghi sổ.")),
- dict(k='text', cap=('TIỀN ĐỂ NGÂN HÀNG', 'CHẠY KHÔNG KỊP GIÁ ĐẤT'), cols=CC, anh='Binh Duong',
+ dict(k='text', cap=('TIỀN ĐỂ NGÂN HÀNG', 'CHẠY KHÔNG KỊP GIÁ ĐẤT'), cols=CC, anh='Thu Duc',
       say=("Nhưng bạn có một nỗi sợ. Mỗi năm, sáu trăm triệu đẻ ra hơn ba mươi triệu tiền lãi. Còn giá đất quanh chỗ bạn ở, người ta nói tăng ba bốn chục phần trăm. "
            "Bạn có cảm giác mình đang chạy bộ đuổi theo một chiếc xe máy. Càng để tiền nằm im, ước mơ có một mảnh đất cho hai đứa nhỏ càng xa.")),
  # ---------------- CHƯƠNG 2 ----------------
@@ -53,11 +53,11 @@ S = [
            "Chủ nhật này bên em có xe đưa khách đi tham quan dự án, miễn phí ăn trưa, có bốc thăm trúng xe máy nữa chị. "
            "Bạn định từ chối. Nhưng nghe đến chữ miễn phí, bạn nghĩ: đi xem thôi mà, có mất gì đâu.")),
  # ---------------- CHƯƠNG 3 ----------------
- dict(k='text', ch='Chương 3 – Chuyến xe Chủ nhật', cap=('XE 45 CHỖ', 'NHẠC, NƯỚC SUỐI, BÁNH MÌ'), cols=CC, moc=True, anh='bus Vietnam',
+ dict(k='text', ch='Chương 3 – Chuyến xe Chủ nhật', cap=('XE 45 CHỖ', 'NHẠC, NƯỚC SUỐI, BÁNH MÌ'), cols=CC, moc=True, anh='highway Vietnam',
       say=("Sáu giờ sáng Chủ nhật, một chiếc xe bốn mươi lăm chỗ đỗ ngay đầu hẻm. Trên xe có nước suối, bánh mì, nhạc sôi động. "
            "Một nhân viên cầm micro nói suốt bốn mươi phút đường: sân bay sắp mở, cao tốc sắp xong, khu công nghiệp sắp về, đất ở đây chỉ có lên. "
            "Bạn nhìn quanh. Xe kín chỗ. Có cặp vợ chồng già, có nhóm công nhân, có cô giáo về hưu. Ai cũng có vẻ háo hức giống bạn.")),
- dict(k='text', cap=('BĂNG RÔN, TIẾNG CHUÔNG', 'VÀ "CHỐT LÔ!"'), cols=CR, anh='construction site Vietnam',
+ dict(k='text', cap=('BĂNG RÔN, TIẾNG CHUÔNG', 'VÀ "CHỐT LÔ!"'), cols=CR, anh='rice field Vietnam',
       say=("Xe dừng trước một khu đất trống, cắm đầy cờ và băng rôn. Một cái rạp lớn, sân khấu, loa thùng. MC hô: chỉ còn mười lô cuối cùng với giá ưu đãi hôm nay. "
            "Rồi cứ vài phút, tiếng chuông lại reo. Chúc mừng anh Hưng chốt lô B5. Chúc mừng chị Lan chốt hai lô C. Cả rạp vỗ tay. "
            "Bạn không biết rằng trong những cái tên được xướng lên, có bao nhiêu người là khách thật.")),
@@ -174,7 +174,7 @@ S = [
  dict(k='text', cap=('SỐ MÁY', 'KHÔNG LIÊN LẠC ĐƯỢC'), cols=CR, anh='Ho Chi Minh City skyline',
       say=("Ba ngày sau, số của luật sư Minh không liên lạc được nữa. Đây là thủ đoạn thường thấy sau các vụ lừa đảo lớn: kẻ thứ hai tìm đến nạn nhân của kẻ thứ nhất, hứa đòi lại tiền, thu một khoản phí rồi biến mất. "
            "Hãy nhớ: muốn đòi quyền lợi trong một vụ án, bạn làm việc trực tiếp với cơ quan điều tra và toà án, không qua ai nhận đòi hộ có thu phí trước.")),
- dict(k='bignum', cap=('SAU HAI NĂM', 'CẢ NHÀ ĐÃ MẤT'), cols=CR, value=MAT + 30, fmt='{:,.0f}', unit=' triệu', top='950 + 400 CỦA MẸ + 30 "LUẬT SƯ" − 57 ĐÃ NHẬN', sub='chưa tính 350 triệu đang nợ em chồng', col=RED,
+ dict(k='bignum', cap=('SAU HAI NĂM', 'CẢ NHÀ ĐÃ MẤT'), cols=CR, value=MAT + 30, fmt='{:,.0f}', unit=' triệu', top='TIỀN NHÀ + TIỀN CỦA MẸ + "LUẬT SƯ"', sub='chưa tính 350 triệu đang nợ em chồng', col=RED,
       say=("Cộng lại sau hai năm: chín trăm năm mươi triệu của gia đình bạn, bốn trăm triệu dưỡng già của mẹ, ba mươi triệu cho luật sư giả. "
            "Trừ đi năm mươi bảy triệu tiền thuê lại đã nhận ba tháng đầu, cả nhà mất khoảng %s triệu đồng. "
            "Trong đó có ba trăm năm mươi triệu bạn vẫn còn nợ em chồng, và một khoản bạn không bao giờ trả được: lòng tin của mẹ.") % v(MAT + 30)),
@@ -243,7 +243,7 @@ MT = ("Bạn 36 tuổi, 12 năm ở nhà thuê, có 600 triệu tiết kiệm. M
 META = {KEY: dict(kenh='@chungkhoanhuynguyen5', seri='Vì sao thật tệ khi…', ngay='2026-11-17', gio_goi_y='20:00', gio='20:00', nhac='lofi',
     tieu_de=TIEU, title=TIEU, mo_ta=MT,
     tags=['mua đất nền', 'dự án ma', 'lừa đảo bất động sản', 'Alibaba', 'đất nền phân lô', 'hợp đồng góp vốn', 'cam kết mua lại', 'vì sao thật tệ khi'],
-    bia_hook=['CAM KẾT LÃI 2%', 'ĐẤT VẪN LÀ RUỘNG'], badge='VÌ SAO THẬT TỆ KHI…',
+    bia_hook=['HỨA LÃI 2%', 'VẪN LÀ RUỘNG'], badge='VÌ SAO THẬT TỆ KHI…',
     chuong=[c['ch'] for c in S if c.get('ch')])}
 os.makedirs(LO, exist_ok=True)
 open(LO + '/video_dai.py', 'w', encoding='utf-8').write(
