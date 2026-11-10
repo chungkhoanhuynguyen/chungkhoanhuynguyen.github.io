@@ -16,7 +16,10 @@ if __name__ == "__main__":
     sc = dict(raw[0])
     if isinstance(sc.get("cap"), str): sc["cap"] = tuple(sc["cap"].split("\n"))
     kho = anh.Kho("/tmp/anh_bia"); ph = None
-    for s in raw[:4]:
+    if M.get("bia_anh"):   # ảnh nền bìa sát chủ đề (vd 'ov:diamond ring||diamond')
+        try: ph = kho.cho(dict(k="text", anh=M["bia_anh"]), M.get("title", ""))
+        except Exception as e: print("bia_anh loi", e)
+    for s in ([] if ph is not None else raw[:4]):
         try: ph = kho.cho(dict(s), M.get("title", ""))
         except Exception: ph = None
         if ph is not None: break

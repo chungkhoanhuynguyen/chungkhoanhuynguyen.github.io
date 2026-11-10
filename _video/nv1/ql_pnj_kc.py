@@ -173,6 +173,7 @@ META = {KEY: dict(kenh='@chungkhoanhuynguyen', seri='Chuyện gì đã xảy ra?
     tieu_de=TIEU, title=TIEU, mo_ta=MT,
     tags=['PNJ', 'cổ phiếu PNJ', 'PNJ lỗ', 'thu đổi kim cương', 'PNJ kim cương', 'chuyện gì đã xảy ra với PNJ', 'rủi ro ẩn', 'đọc báo cáo tài chính', 'cổ phiếu quốc dân'],
     bia_hook=['MẤT 77%', 'TRONG 4 THÁNG'], badge='CHUYỆN GÌ ĐÃ XẢY RA VỚI PNJ?',
+    bia_anh='ov:diamond ring||diamond',
     bia_hook_b=['LÃI 1.467 TỶ', 'RỒI LỖ 6.271 TỶ'], badge_b='PNJ: VÌ SAO?',
     bia_hook_c=['LỜI HỨA', '21.000 TỶ'], badge_c='KHOẢN NỢ KHÔNG AI THẤY',
     fb_post=("Quý 1/2026 lãi 1.467 tỷ, gấp đôi cùng kỳ. 4 tháng sau cổ phiếu −77%, kế hoạch lỗ 6.271 tỷ 😳\n\n"
