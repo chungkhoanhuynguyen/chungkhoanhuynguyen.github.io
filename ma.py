@@ -359,7 +359,10 @@ if len(TOM) >= 20:
             bang(f"Top 20 tăng trưởng lợi nhuận mạnh nhất {QL} (lãi từ 50 tỷ)", gr[:20]),
             bang(f"Ngân hàng: lợi nhuận {QL}", nh) if nh else "", bang(f"Công ty chứng khoán: lợi nhuận {QL}", ck) if ck else "",
             bang(f"Top 15 giảm lãi mạnh nhất {QL} (lãi từ 50 tỷ)", gr[::-1][:15]),
-            bang(f"Toàn bộ {len(L)} doanh nghiệp (A–Z)", sorted(L.items())),
+            # QL1 11/11: bảng 401 mã gập lại (trang điện thoại từ ~56.000px còn vài màn hình), máy tìm kiếm vẫn đọc được
+            f"<h2>Toàn bộ {len(L)} doanh nghiệp (A–Z)</h2><details class='azd'><summary>Mở bảng {len(L)} doanh nghiệp</summary><div style='overflow-x:auto'><table class='mt'>{HD}" + "".join(row(t, v) for t, v in sorted(L.items())) + "</table></div></details>"
+            "<style>.azd summary{cursor:pointer;display:block;padding:12px 16px;min-height:44px;border:1px solid var(--line);border-radius:12px;font-weight:700;margin:8px 0}"
+            "@media(max-width:600px){.mt small.n{display:block;max-width:34vw;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}</style>",
             "<h2>Câu hỏi thường gặp</h2>" + "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in faqk),
             "<p><small class='n'>LNST = lợi nhuận sau thuế công ty mẹ. ROE tính trên lợi nhuận 4 quý gần nhất / vốn chủ sở hữu. Số liệu tham khảo, không phải khuyến nghị mua bán. Đọc thêm <a href='/f0/cach-doc-bao-cao-tai-chinh.html'>cách đọc báo cáo tài chính</a>.</small></p>"]
     EXTRA.append(page("ket-qua-kinh-doanh-quy.html", tl[:68] + " | Chứng Khoán Huy Nguyễn", ds[:158], tl, body,
