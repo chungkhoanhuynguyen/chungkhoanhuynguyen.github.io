@@ -59,7 +59,7 @@ header.top nav a{padding:5px 11px;border:1px solid var(--line);border-radius:999
 <link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="img/fav-32.png"><link rel="icon" type="image/png" sizes="48x48" href="img/icon-48.png"><link rel="icon" type="image/png" sizes="192x192" href="img/icon-192.png"><link rel="apple-touch-icon" href="img/apple-touch-icon.png"><meta name="theme-color" content="#221535"><title>Chứng Khoán Huy Nguyễn – Định giá cổ phiếu, BCTC, bảng giá</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@600&display=swap">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@600&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@600&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@600&display=swap"></noscript>
 <style>
 /* Bố cục: bảng điện tối · một dải hero, rồi bảng theo dõi, tiêu điểm, công cụ, seri — gold chỉ dùng cho thương hiệu */
 :root{--bg:#0d1017;--panel:#141a25;--line:#263043;--fg:#ece6d8;--mute:#8a93a6;--gold:#d6aa58;--up:#38be7a;--dn:#e5534f;
@@ -239,7 +239,7 @@ body::before{background:#221535!important}
 .btn.main{background:#6a2d86!important;color:#fff!important;border:0!important}.btn.main:hover{background:#5a2473!important}
 .btn.main small{color:#eadcf3!important;opacity:1}
 .btn.vps{background:#1f8a57!important;color:#fff!important;border:0!important}.btn.vps small{color:#dff5e9!important}
-.btn.zcd{background:#0068ff!important;color:#fff!important;border:0!important}.btn.zcd:hover{background:#0057d6!important}.btn.zcd small{color:#dbe8ff!important;opacity:1}
+.btn.zcd{background:#0057d9!important;color:#fff!important;border:0!important}.btn.zcd:hover{background:#0057d6!important}.btn.zcd small{color:#fff!important;opacity:1}
 .pur,.pos.pur,.n.pur,dd.pur{text-shadow:none!important;color:var(--pur)!important}
 .rsv{background:#e4f3ea!important;color:#1f7a4d!important}.rsv.pur{background:#efe2f6!important;color:#6a2d86!important}
 .chip,.chip-b{color:var(--mute);background:#fff}
@@ -978,7 +978,7 @@ header.top .gnav .gi>a.hn-navts:hover{background:rgba(242,193,78,.12)!important;
 
 <section id="timnhanh" class="tn"><div class="wrap">
 <h2 class="tn-h">Tìm nhanh trên trang</h2>
-<div class="tn-box"><input id="tnq" type="search" placeholder="Gõ mã (VD: MBB) hoặc chủ đề (VD: P/E, margin, bảng giá, tích sản)…" autocomplete="off" aria-label="Tìm nhanh"><div id="tnr" class="tn-r" role="listbox"></div></div>
+<div class="tn-box"><input id="tnq" type="search" placeholder="Gõ mã (MBB) hoặc chủ đề…" autocomplete="off" aria-label="Tìm nhanh"><div id="tnr" class="tn-r" role="listbox"></div></div>
 <div class="tn-g">
 <a href="#banggia"><b>📊 Bảng giá 3 sàn</b><span>HOSE, HNX, UPCoM</span></a>
 <a href="/dinh-gia-co-phieu.html"><b>💰 Định giá cổ phiếu</b><span>P/E, P/B, ROE các mã lớn</span></a>
@@ -1009,7 +1009,7 @@ document.addEventListener('click',function(e){if(!e.target.closest('.tn-box'))r.
 <section id="thitruong" class="nocopy"><div class="wrap">
 <h2>Thị trường hôm nay</h2>
 <p class="sub">Toàn cảnh sàn HOSE: nhóm cổ phiếu dẫn dắt, độ rộng, định giá, phân bổ dòng tiền và bản đồ nhiệt. <span id="mwu"></span></p>
-<div class="mw-tabs" role="tablist" aria-label="Chọn nhóm thông tin">
+<div class="mw-tabs" role="group" aria-label="Chọn nhóm thông tin">
 <button class="mt" type="button" data-t="tq" aria-pressed="true">Tổng quan</button><button class="mt" type="button" data-t="dg" aria-pressed="false">Định giá</button><button class="mt" type="button" data-t="nh" aria-pressed="false">Ngành &amp; bản đồ nhiệt</button><button class="mt" type="button" data-t="kh" aria-pressed="false">Dành cho khách hàng</button>
 </div>
 <div class="mw-grid" data-p="tq">
@@ -2529,4 +2529,29 @@ if(!RM)raf=requestAnimationFrame(loop);
 if(!RM&&matchMedia("(pointer:fine)").matches)box.addEventListener("pointermove",function(e){var r=box.getBoundingClientRect();mx=(e.clientX-r.left)/r.width-.5;my=(e.clientY-r.top)/r.height-.5});
 })();
 </script>
+<style id="mb1111">/* QL1 11/11: tối ưu điện thoại – bỏ khoảng trống trang trí, gọn bảng giá mini, vùng bấm ≥44px */
+@media (max-width:600px){
+#hnAstro{display:none!important}
+.herobox.hn-astro .wrap.hero.hero-in{padding-bottom:32px!important}
+#bgmini:not(.mb-all) .mb-g>.mb-c:nth-child(n+5){display:none}
+#bgmini:not(.mb-all) .mb-c.v30 tbody tr:nth-child(n+11){display:none}
+.mb-xem{display:block;width:100%;min-height:48px;margin:12px 0 4px;border:1px solid #d9cdee;border-radius:12px;background:#fff;color:#4a2a7a;font-weight:700;font-size:16px;line-height:1.2;font-family:inherit;cursor:pointer;transition:transform .12s ease}
+.mb-xem:active{transform:scale(.97)}
+footer{padding-left:16px;padding-right:16px}footer>.wrap{padding-left:0;padding-right:0}
+footer>a{display:inline-block;padding:12px 2px;min-height:44px}
+.gtabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent)}
+}
+/* tương phản chữ (Lighthouse) */
+.rc .pos,.rc-g b.pos,.rc-d.pos{color:#0b7a37}
+.gtabs a span{opacity:.8}
+.btn.vps{background:#16703f!important}
+.hero-act .btn small{opacity:1;color:#fff}
+@media (min-width:601px){.mb-xem{display:none}}
+</style>
+<script id="mb1111js">(function(){function go(){var b=document.getElementById('bgmini');if(!b||document.querySelector('.mb-xem'))return;var n=b.querySelectorAll('.mb-g>.mb-c').length;if(n<5)return;
+var bt=document.createElement('button');bt.type='button';bt.className='mb-xem';bt.textContent='Xem đủ '+n+' nhóm ngành';
+bt.onclick=function(){var on=b.classList.toggle('mb-all');bt.textContent=on?'Thu gọn':'Xem đủ '+n+' nhóm ngành';if(!on)b.scrollIntoView({block:'start'})};
+b.parentNode.insertBefore(bt,b.nextSibling);
+var f=b.parentNode.querySelector('input');if(f)f.addEventListener('input',function(){if(f.value.trim())b.classList.add('mb-all')});}
+var t=0,iv=setInterval(function(){go();if(document.querySelector('.mb-xem')||++t>300)clearInterval(iv)},1000);})();</script>
 </body></html>
