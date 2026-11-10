@@ -183,7 +183,7 @@ MT = ("Bạn 66 tuổi, giáo viên về hưu, đến ngân hàng quen gửi l�
 META = {KEY: dict(kenh='@chungkhoanhuynguyen5', seri='Vì sao thật tệ khi…', ngay='2026-11-18', gio_goi_y='20:00', gio='20:00', nhac='lofi',
     tieu_de=TIEU, title=TIEU, mo_ta=MT,
     tags=['bảo hiểm liên kết đầu tư', 'gửi tiết kiệm thành bảo hiểm', 'bancassurance', 'huỷ hợp đồng bảo hiểm', 'thời gian cân nhắc 21 ngày', 'bảo hiểm qua ngân hàng', 'người về hưu', 'vì sao thật tệ khi'],
-    bia_hook=['GỬI TIẾT KIỆM', 'RA BẢO HIỂM 35 NĂM'], badge='VÌ SAO THẬT TỆ KHI…',
+    bia_hook=['MẤT 154 TRIỆU', 'VÌ 1 CHỮ KÝ'], badge='VÌ SAO THẬT TỆ KHI…',
     chuong=[c['ch'] for c in S if c.get('ch')])}
 os.makedirs(LO, exist_ok=True)
 open(LO + '/video_dai.py', 'w', encoding='utf-8').write(
