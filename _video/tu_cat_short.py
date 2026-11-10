@@ -33,7 +33,7 @@ if __name__ == "__main__":
         t = json.load(open(os.path.join(HERE, "queue", lo, "meta.json"), encoding="utf-8"))[key].get("title", key)
     except Exception: t = key
     ten = t.split(" | ")[0].split(": ")[0].strip()
-    if len(ten) > 46: ten = ten[:44].rsplit(" ", 1)[0] + "…"
+    if len(ten) > 34: ten = ten[:32].rsplit(" ", 1)[0] + "…"
     src = os.path.join(od, key + ".mp4"); os.environ["SRT"] = os.path.join(od, key + ".srt")
     canh = json.load(open(os.path.join(od, key + "_canh.json"), encoding="utf-8"))
     tong = canh[-1]["e"]; kq = []
