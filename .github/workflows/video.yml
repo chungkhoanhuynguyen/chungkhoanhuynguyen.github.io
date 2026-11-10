@@ -61,6 +61,13 @@ jobs:
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core >/dev/null
       - run: pip install -q vieneu "onnxruntime==1.22.1" numpy pillow opencv-python-headless
       - run: python _video/render.py "${{ needs.plan.outputs.batch }}" "${{ matrix.key }}"
+      - name: Tu cat 3 Shorts + bia A/B/C (QL1 11/11)
+        continue-on-error: true
+        run: |
+          B="${{ needs.plan.outputs.batch }}"; K="${{ matrix.key }}"
+          export HN_PX="_video/queue/$B/px_tuan.json"
+          timeout 900 python _video/tu_cat_short.py _video/out "$K" "$B" || true
+          timeout 600 python _video/bia_ab.py "$B" "$K" || true
       - uses: actions/upload-artifact@v4
         with:
           name: out-${{ matrix.key }}
@@ -101,4 +108,4 @@ jobs:
           done
           cd /tmp/vo
           gh release delete "video-$B" -y -R ${{ github.repository }} 2>/dev/null || true
-          gh release create "video-$B" -R ${{ github.repository }} -t "Video $B" -n "Lô $B" /tmp/vo/$B/*.mp4 /tmp/vo/$B/*.png /tmp/vo/$B/*.txt /tmp/vo/$B/*.srt || true
+          gh release create "video-$B" -R ${{ github.repository }} -t "Video $B" -n "Lô $B" /tmp/vo/$B/*.mp4 /tmp/vo/$B/*.png /tmp/vo/$B/*.txt /tmp/vo/$B/*.srt /tmp/vo/$B/*.json || true

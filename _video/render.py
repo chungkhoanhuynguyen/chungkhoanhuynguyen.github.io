@@ -324,6 +324,10 @@ def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
         fr += n
     p.stdin.close(); p.wait(); SUB_ON[0] = False
     _srt(scenes, b, os.path.join(OUT, key + ".srt"))
+    try:  # QL1 11/11: mốc từng cảnh cho bước tự cắt Shorts (tu_cat_short.py)
+        json.dump([dict(a=round(b[i], 2), e=round(b[i + 1], 2), k=sc.get("k"), cap=list(sc.get("cap") or []), ch=sc.get("ch", ""))
+                   for i, sc in enumerate(scenes) if i < len(b) - 1], open(os.path.join(OUT, key + "_canh.json"), "w", encoding="utf-8"), ensure_ascii=False)
+    except Exception as _e: print("canh.json: bo qua", _e, flush=True)
     af = ("highpass=f=120,acompressor=threshold=-26dB:ratio=4:attack=3:release=60:makeup=6,"
           "loudnorm=I=-14:TP=-1:LRA=7,alimiter=limit=0.95:attack=1:release=40:level=false")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", tmp, "-i", A, "-af", af, "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "44100", "-shortest", out])
@@ -449,6 +453,11 @@ try:
     if lv < -24 or lv > -9: qc.append("LỖI âm lượng tổng %.1f LUFS (chuẩn -16 đến -12)" % lv)
     if b[-1] < 300: qc.append("CẢNH BÁO video chỉ %.0f giây (kênh chính nên 8–12 phút)" % b[-1])
     if not os.path.exists(os.path.join(OUT, key + ".srt")): qc.append("LỖI thiếu file phụ đề .srt")
+    try:  # QL1 11/11: tự bắt lỗi số trên phụ đề (vd "6.000.001 tháng", "tháng 15", chữ số dính chữ)
+        _tx = open(os.path.join(OUT, key + ".srt"), encoding="utf-8").read()
+        for _m in re.findall(r"[^\n]*(?:\d{1,3}(?:\.\d{3}){2,}\d*\s*(?:triệu|tỷ|nghìn|tháng|năm)|tháng 1[3-9]\b|tháng [2-9]\d\b|\d[a-zA-ZÀ-ỹ]{2,})[^\n]*", _tx)[:5]:
+            qc.append("LỖI phụ đề số nghi sai: " + _m.strip()[:80])
+    except Exception: pass
     if not os.path.exists(os.path.join(OUT, key + "_bia.png")): qc.append("LỖI thiếu ảnh bìa")
 except Exception as ex:
     qc.append("CẢNH BÁO không tự kiểm được: %s" % ex)
