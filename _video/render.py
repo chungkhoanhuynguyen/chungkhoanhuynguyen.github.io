@@ -42,10 +42,11 @@ if not g.get("NO_CTA") and not any(x.get("cta") for x in raw) and len(raw) >= 6:
 import xung_ho  # xưng em – anh chị, không gọi "bạn" (anh Huy chốt 6/11)
 _MT_DOC = re.compile(r"[^.!?]*(?:không phải (?:là )?khuyến nghị|quan điểm cá nhân|chia sẻ kiến thức, không)[^.!?]*[.!?]?\s*", re.I)
 # anh Huy 7/11: câu miễn trừ chỉ ghi CHỮ NHỎ trên hình, KHÔNG đọc thành lời
+_LP = (lambda t: t) if g.get("XH_BAN") else xung_ho.le_phep  # anh Huy 10/11: kênh @5 kể chuyện nhập vai được gọi "bạn"
 for _x in raw:
-    _x["say"] = re.sub(r"\s{2,}", " ", _MT_DOC.sub(" ", xung_ho.le_phep(_doc_web(_x.get("say", ""))))).strip()
-    if isinstance(_x.get("cap"), (list, tuple)): _x["cap"] = tuple(xung_ho.le_phep(c) for c in _x["cap"])
-    elif isinstance(_x.get("cap"), str): _x["cap"] = xung_ho.le_phep(_x["cap"])
+    _x["say"] = re.sub(r"\s{2,}", " ", _MT_DOC.sub(" ", _LP(_doc_web(_x.get("say", ""))))).strip()
+    if isinstance(_x.get("cap"), (list, tuple)): _x["cap"] = tuple(_LP(c) for c in _x["cap"])
+    elif isinstance(_x.get("cap"), str): _x["cap"] = _LP(_x["cap"])
 try:
     import kiem_loi; _QCV = kiem_loi.kiem([{"loi": x.get("say", "")} for x in raw if not x.get("cta")], None, False)
 except Exception as _e: _QCV = []
