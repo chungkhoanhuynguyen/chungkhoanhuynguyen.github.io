@@ -40,10 +40,10 @@ def tim_ov(q, n=20):
     """QL1 11/11 (anh Huy: ảnh minh hoạ phải sát nội dung): Openverse – kho ảnh CC lớn (Flickr, v.v.), khớp ý nghĩa tốt hơn Commons.
     Dùng: anh='ov:elderly woman bank counter'. Chỉ lấy giấy phép cho phép dùng thương mại, ảnh ngang ≥1200px."""
     rs = []; w = q.split()
-    for qq, extra in ((q, {"size": "large"}), (q, {}), (" ".join(w[:2]), {}), (w[-1] if len(w) > 2 else "", {})):   # chặt → lỏng
+    for qq, extra in ((q, {}), (" ".join(w[:2]) if len(w) > 2 else "", {})):   # 2 lần tối đa (lần 3 bị quá 90 phút)
         if not qq: continue
         u = "https://api.openverse.org/v1/images/?" + urllib.parse.urlencode(dict({"q": qq, "page_size": n, "license_type": "commercial", "aspect_ratio": "wide", "mature": "false"}, **extra))
-        try: rs = [r for r in json.loads(_get(u, 30)).get("results", []) if (r.get("width") or 0) >= 1200 and "sketchfab" not in (r.get("foreign_landing_url") or "")]
+        try: rs = [r for r in json.loads(_get(u, 15)).get("results", []) if (r.get("width") or 0) >= 1200 and "sketchfab" not in (r.get("foreign_landing_url") or "")]
         except Exception as e: print("anh: loi openverse", qq, e); rs = []
         if rs: break
     out = []
