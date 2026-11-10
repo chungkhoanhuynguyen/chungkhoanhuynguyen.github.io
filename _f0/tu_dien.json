@@ -708,5 +708,20 @@
 "Dự phòng phải trả",
 "Khoản nợ ghi trước cho nghĩa vụ gần như chắc chắn phát sinh nhưng chưa rõ số tiền hoặc thời điểm, như bảo hành, bảo dưỡng.",
 "du-phong-phai-tra-la-gi"
+],
+[
+"Chứng khoán đầu tư (ngân hàng)",
+"Trái phiếu, giấy tờ có giá ngân hàng nắm trung dài hạn để giữ thanh khoản và hưởng lãi, gồm nhóm sẵn sàng để bán và giữ đến ngày đáo hạn.",
+"chung-khoan-dau-tu-ngan-hang-la-gi"
+],
+[
+"Tiền gửi của khách hàng",
+"Tiền cá nhân, doanh nghiệp gửi vào ngân hàng, ghi ở nợ phải trả; là nguồn vốn lớn nhất của hầu hết ngân hàng.",
+"tien-gui-cua-khach-hang-la-gi"
+],
+[
+"Phát hành giấy tờ có giá",
+"Khoản ngân hàng huy động bằng chứng chỉ tiền gửi, kỳ phiếu, trái phiếu do chính ngân hàng phát hành.",
+"phat-hanh-giay-to-co-gia-la-gi"
 ]
 ]

@@ -33563,5 +33563,540 @@
    "ban-giai-chap-la-gi",
    "rui-ro-thanh-khoan-co-phieu"
   ]
+ },
+ {
+  "slug": "chung-khoan-dau-tu-ngan-hang-la-gi",
+  "kw": "chứng khoán đầu tư ngân hàng là gì",
+  "grp": 3,
+  "title": "Chứng khoán đầu tư ngân hàng là gì? Đọc dòng dự phòng",
+  "desc": "Quý 3/2026 dự phòng chứng khoán đầu tư của Vietcombank tăng từ 1.348 lên 6.352 tỷ. Cách đọc chứng khoán đầu tư trong BCTC ngân hàng.",
+  "body": [
+   [
+    "p",
+    "Quý 3/2026, Vietcombank (VCB) có lợi nhuận trước dự phòng 17.401,8 tỷ đồng, tăng 44,8% so với cùng kỳ. Vậy mà lợi nhuận trước thuế chỉ 11.217,7 tỷ, gần như đi ngang (−0,2%). Một phần lời giải nằm ở bảng cân đối: <b>dự phòng giảm giá chứng khoán đầu tư</b> của VCB tăng từ 1.348,0 tỷ (30/6/2026) lên 6.351,9 tỷ (30/9/2026), tức thêm khoảng 5.004 tỷ chỉ trong một quý. Dòng này nằm ở giữa bảng, ít người để ý."
+   ],
+   [
+    "h2",
+    "Chứng khoán đầu tư là gì?"
+   ],
+   [
+    "p",
+    "<b>Chứng khoán đầu tư</b> là trái phiếu, giấy tờ có giá mà ngân hàng nắm giữ <b>trung và dài hạn</b>, chủ yếu trái phiếu chính phủ, trái phiếu tổ chức tín dụng khác và một phần trái phiếu doanh nghiệp. Mục đích chính là giữ thanh khoản dự trữ và hưởng lãi, khác với <a href=\"/f0/chung-khoan-kinh-doanh-la-gi.html\">chứng khoán kinh doanh</a> mua để bán lại ngắn hạn."
+   ],
+   [
+    "p",
+    "Trên BCTC ngân hàng, mục này tách thành ba dòng:"
+   ],
+   [
+    "ul",
+    [
+     "<b>Sẵn sàng để bán</b>: có thể bán bất cứ lúc nào khi cần tiền hoặc khi giá tốt.",
+     "<b>Giữ đến ngày đáo hạn</b>: ngân hàng cam kết nắm tới khi tổ chức phát hành trả gốc (xem thêm <a href=\"/f0/dau-tu-giu-den-ngay-dao-han-la-gi.html\">đầu tư giữ đến ngày đáo hạn</a>).",
+     "<b>Dự phòng giảm giá chứng khoán đầu tư</b>: số âm, phần ngân hàng trích khi giá trị thu hồi thấp hơn giá ghi sổ."
+    ]
+   ],
+   [
+    "h2",
+    "Đọc số ACB từng bước thế nào?"
+   ],
+   [
+    "p",
+    "Lấy Á Châu (ACB), số liệu ngày 30/9/2026:"
+   ],
+   [
+    "ol",
+    [
+     "Sẵn sàng để bán: 170.285,1.",
+     "Giữ đến ngày đáo hạn: 11.367,5.",
+     "Dự phòng: −11,2.",
+     "Cộng lại: 170.285,1 + 11.367,5 − 11,2 = 181.641,4.",
+     "So với tổng tài sản 1.104.379,5: khoảng 16,4%.",
+     "So với cuối 2025 (144.164,1): tăng 26,0% trong 9 tháng."
+    ]
+   ],
+   [
+    "p",
+    "Đặt cạnh chứng khoán kinh doanh của chính ACB (6.709,4 tỷ), danh mục đầu tư lớn gấp khoảng 27 lần. Nghĩa là phần lớn \"chứng khoán\" trong ngân hàng là tiền dự trữ đặt vào trái phiếu, không phải tiền lướt sóng. Dự phòng chỉ 11,2 tỷ cho thấy danh mục chủ yếu là loại rủi ro thấp."
+   ],
+   [
+    "h2",
+    "Năm ngân hàng khác nhau ra sao?"
+   ],
+   [
+    "p",
+    "Số liệu ngày 30/9/2026, đơn vị tỷ đồng:"
+   ],
+   [
+    "table",
+    [
+     [
+      "Ngân hàng",
+      "CK đầu tư (thuần)",
+      "% tổng tài sản",
+      "Sẵn sàng để bán",
+      "Giữ đến đáo hạn",
+      "Dự phòng"
+     ],
+     [
+      "VCB",
+      "173.844,6",
+      "6,5%",
+      "153.843,3",
+      "26.353,3",
+      "−6.351,9"
+     ],
+     [
+      "BID",
+      "286.851,7",
+      "8,2%",
+      "188.787,2",
+      "98.132,3",
+      "−67,8"
+     ],
+     [
+      "MBB",
+      "256.975,1",
+      "14,0%",
+      "252.453,6",
+      "4.758,3",
+      "−236,9"
+     ],
+     [
+      "ACB",
+      "181.641,4",
+      "16,4%",
+      "170.285,1",
+      "11.367,5",
+      "−11,2"
+     ],
+     [
+      "STB",
+      "118.836,9",
+      "11,2%",
+      "71.588,6",
+      "54.473,6",
+      "−7.225,3"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Ba điểm đáng chú ý. MB (MBB) để gần như toàn bộ ở nhóm sẵn sàng để bán, linh hoạt khi cần tiền. BIDV (BID) giữ tới 98.132,3 tỷ ở nhóm giữ đến đáo hạn, kiểu \"cất kho\" dài. Sacombank (STB) có dự phòng lớn so với quy mô (7.225,3 tỷ), giảm dần từ 8.096,5 tỷ cuối 2025, phản ánh các khoản tồn đọng cũ đang được xử lý."
+   ],
+   [
+    "h2",
+    "Vì sao dự phòng chứng khoán đầu tư quan trọng?"
+   ],
+   [
+    "p",
+    "Vì nó đi thẳng vào lợi nhuận. Khi ngân hàng trích thêm dự phòng cho trái phiếu đầu tư, chi phí dự phòng trong quý tăng và lợi nhuận trước thuế giảm, dù mảng cho vay vẫn tốt. Ở VCB, chi phí dự phòng rủi ro quý 3/2026 lên 6.184,1 tỷ, trong khi quý 2/2026 chỉ 502,6 tỷ. Ngược lại, khi dự phòng được hoàn nhập (như STB đang giảm dần), lợi nhuận được cộng thêm. Cả hai chiều đều <b>không lặp lại đều</b>, nên cần tách ra khi so tăng trưởng."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>Nghĩ chứng khoán đầu tư là \"đầu cơ\".</b> ACB có 181.641,4 tỷ chứng khoán đầu tư nhưng dự phòng chỉ 11,2 tỷ: phần lớn là trái phiếu an toàn để giữ thanh khoản.",
+     "<b>Chỉ nhìn lợi nhuận sau thuế mà bỏ qua dòng dự phòng.</b> VCB lãi trước dự phòng tăng 44,8% nhưng lợi nhuận trước thuế đi ngang; không mở bảng cân đối sẽ không thấy dự phòng chứng khoán đầu tư tăng khoảng 5.004 tỷ.",
+     "<b>So quy mô danh mục giữa hai ngân hàng mà không chia cho tổng tài sản.</b> BID có danh mục lớn nhất (286.851,7 tỷ) nhưng chỉ 8,2% tài sản, thấp hơn ACB 16,4%."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist anh chị tự làm được"
+   ],
+   [
+    "ul",
+    [
+     "Tìm ba dòng: sẵn sàng để bán, giữ đến đáo hạn, dự phòng.",
+     "Chia chứng khoán đầu tư cho tổng tài sản để biết tỷ trọng.",
+     "So dự phòng cuối quý với quý trước: tăng mạnh là tín hiệu cần đọc thuyết minh.",
+     "Đặt chi phí dự phòng quý cạnh lợi nhuận trước dự phòng để thấy phần bị \"ăn\" mất.",
+     "So với chứng khoán kinh doanh để biết ngân hàng thiên về giữ hay lướt."
+    ]
+   ],
+   [
+    "p",
+    "Khi đã quen đọc nguồn vốn và tài sản của ngân hàng, việc chọn mã để <a href=\"/f0/tich-san-co-phieu-ngan-hang.html\">tích sản</a> sẽ chắc tay hơn. Bảng theo dõi tích sản ngân hàng cập nhật tại <a href=\"/bao-cao-2026.html#tichsan\">đây</a>."
+   ],
+   [
+    "p",
+    "Số liệu trong bài lấy từ BCTC hợp nhất quý 3/2026 các ngân hàng, đơn vị tỷ đồng, chỉ để minh họa cách đọc, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Chứng khoán đầu tư của ngân hàng gồm những gì?",
+    "Chủ yếu là trái phiếu chính phủ, trái phiếu và giấy tờ có giá của tổ chức tín dụng khác, một phần trái phiếu doanh nghiệp, chia thành nhóm sẵn sàng để bán và giữ đến ngày đáo hạn."
+   ],
+   [
+    "Dự phòng chứng khoán đầu tư tăng có xấu không?",
+    "Nó làm lợi nhuận kỳ đó giảm và cho thấy một số khoản có giá trị thu hồi thấp hơn giá ghi sổ. Cần đọc thuyết minh để biết khoản nào, lớn hay nhỏ so với vốn chủ."
+   ],
+   [
+    "Chứng khoán đầu tư khác chứng khoán kinh doanh thế nào?",
+    "Chứng khoán đầu tư nắm trung dài hạn để giữ thanh khoản và hưởng lãi; chứng khoán kinh doanh mua để bán lại ngắn hạn, lãi lỗ dao động mạnh theo giá thị trường."
+   ]
+  ],
+  "rel": [
+   "chung-khoan-kinh-doanh-la-gi",
+   "dau-tu-giu-den-ngay-dao-han-la-gi",
+   "trai-phieu-chinh-phu-la-gi",
+   "doc-bctc-ngan-hang",
+   "chi-phi-du-phong-la-gi"
+  ]
+ },
+ {
+  "slug": "tien-gui-cua-khach-hang-la-gi",
+  "kw": "tiền gửi của khách hàng là gì",
+  "grp": 3,
+  "title": "Tiền gửi khách hàng là gì? Đọc huy động vốn ngân hàng",
+  "desc": "9 tháng 2026 HDBank tăng tiền gửi 26,5%, ACB chỉ 1,9% dù cho vay tăng 11,5%. Cách đọc dòng tiền gửi của khách hàng trong BCTC ngân hàng.",
+  "body": [
+   [
+    "p",
+    "Chín tháng đầu 2026, HDBank (HDB) huy động thêm 148.452 tỷ đồng tiền gửi khách hàng, tăng 26,5%. Cùng thời gian, Á Châu (ACB) chỉ thêm 11.122 tỷ, tăng 1,9%, trong khi dư nợ cho vay của ACB vẫn tăng 11,5%. Tiền cho vay thêm không tự sinh ra: nó phải đến từ đâu đó. Đọc dòng <b>tiền gửi của khách hàng</b> là cách nhanh nhất để thấy ngân hàng đang lấy vốn ở đâu."
+   ],
+   [
+    "h2",
+    "Tiền gửi của khách hàng là gì?"
+   ],
+   [
+    "p",
+    "Đây là tiền cá nhân và doanh nghiệp gửi vào ngân hàng: tiền gửi không kỳ hạn (tài khoản thanh toán), tiền gửi có kỳ hạn, tiền gửi vốn chuyên dùng, ký quỹ. Trên bảng cân đối, nó nằm ở <b>nợ phải trả</b>, vì ngân hàng phải trả lại khi khách rút. Với hầu hết ngân hàng Việt Nam, đây là nguồn vốn lớn nhất, thường 50–70% tổng nguồn vốn."
+   ],
+   [
+    "p",
+    "Phần không kỳ hạn gọi là <a href=\"/f0/casa-la-gi.html\">CASA</a>, gần như không mất lãi nên càng nhiều càng tốt cho <a href=\"/f0/nim-la-gi.html\">NIM</a>. Phần có kỳ hạn thì ngân hàng trả lãi theo biểu lãi suất."
+   ],
+   [
+    "h2",
+    "Đọc số từng bước thế nào?"
+   ],
+   [
+    "p",
+    "Lấy ACB, đơn vị tỷ đồng:"
+   ],
+   [
+    "ol",
+    [
+     "Tiền gửi khách hàng 31/12/2025: 585.180,2; ngày 30/9/2026: 596.302,3.",
+     "Tăng thêm: 11.122,1, tức +1,9%.",
+     "Cho vay khách hàng (gộp) cùng kỳ: 686.777,4 → 765.614,4, tăng 78.837,0 (+11,5%).",
+     "Khoảng trống khoảng 67.700 tỷ phải bù bằng nguồn khác. Ở ACB, giấy tờ có giá phát hành tăng 77.417,1 tỷ, gần như lấp đúng chỗ thiếu.",
+     "Tiền gửi chiếm 596.302,3 / 1.104.379,5 = 54,0% tổng nguồn vốn."
+    ]
+   ],
+   [
+    "p",
+    "Không có gì sai khi ngân hàng dùng nguồn khác, nhưng mỗi nguồn có giá vốn và kỳ hạn riêng. Biết ngân hàng đang dựa vào đâu giúp anh chị hiểu vì sao chi phí lãi tăng nhanh hay chậm."
+   ],
+   [
+    "h2",
+    "Năm ngân hàng khác nhau thế nào?"
+   ],
+   [
+    "p",
+    "Số liệu BCTC hợp nhất, so 30/9/2026 với 31/12/2025. Cột \"Cho vay / tiền gửi\" là phép chia đơn giản dư nợ gộp cho tiền gửi khách hàng, không phải <a href=\"/f0/ldr-la-gi.html\">LDR</a> theo quy định:"
+   ],
+   [
+    "table",
+    [
+     [
+      "Ngân hàng",
+      "Tiền gửi 30/9/26",
+      "Tiền gửi 9T",
+      "Cho vay 9T",
+      "Cho vay / tiền gửi",
+      "% nguồn vốn"
+     ],
+     [
+      "VCB",
+      "1.781.703,0",
+      "+6,5%",
+      "+8,5%",
+      "101,9%",
+      "66,4%"
+     ],
+     [
+      "CTG",
+      "1.944.301,0",
+      "+8,4%",
+      "+7,5%",
+      "110,1%",
+      "65,9%"
+     ],
+     [
+      "ACB",
+      "596.302,3",
+      "+1,9%",
+      "+11,5%",
+      "128,4%",
+      "54,0%"
+     ],
+     [
+      "VPB",
+      "793.047,4",
+      "+26,3%",
+      "+28,4%",
+      "152,8%",
+      "49,2%"
+     ],
+     [
+      "HDB",
+      "709.166,5",
+      "+26,5%",
+      "+31,8%",
+      "101,5%",
+      "62,0%"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "VCB và CTG là kiểu \"tiền gửi đi trước\": tiền gửi chiếm khoảng 2/3 nguồn vốn, cho vay chỉ nhỉnh hơn tiền gửi một chút. VPBank (VPB) cho vay gấp 1,5 lần tiền gửi, nghĩa là phụ thuộc nhiều hơn vào vay liên ngân hàng và giấy tờ có giá. HDB tăng mạnh cả hai vế nên tỷ lệ vẫn quanh 100%."
+   ],
+   [
+    "h2",
+    "Tiền gửi tăng thì lợi nhuận có tăng theo?"
+   ],
+   [
+    "p",
+    "Không hẳn. Tiền gửi có kỳ hạn là chi phí. Quý 3/2026 so với quý 3/2025, chi phí lãi của VCB tăng 62,8%, ACB tăng 67,2%, VPB tăng 90,2%, HDB tăng 98,0%. Nếu thu nhập lãi tăng chậm hơn chi phí lãi, NIM sẽ hẹp lại. Vì vậy cần đặt tốc độ tăng tiền gửi cạnh thu nhập lãi thuần, không xem riêng."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>Khen huy động tăng mạnh mà không hỏi giá vốn.</b> HDB tăng tiền gửi 26,5% nhưng chi phí lãi quý 3/2026 gần gấp đôi cùng kỳ (+98,0%).",
+     "<b>Nhầm tỷ lệ cho vay/tiền gửi đơn giản với LDR theo quy định.</b> VPB 152,8% theo phép chia thô, nhưng LDR quy định tính theo công thức riêng, loại trừ và cộng thêm một số khoản.",
+     "<b>Bỏ qua nguồn bù khi tiền gửi đi ngang.</b> ACB tiền gửi +1,9% nhưng cho vay +11,5%; phần chênh nằm ở giấy tờ có giá tăng 77.417,1 tỷ."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist anh chị tự làm được"
+   ],
+   [
+    "ul",
+    [
+     "Lấy tiền gửi khách hàng cuối quý và cuối năm trước, tính % tăng.",
+     "Đặt cạnh % tăng cho vay khách hàng cùng kỳ.",
+     "Chia tiền gửi cho tổng nguồn vốn để biết mức phụ thuộc.",
+     "Nếu cho vay tăng nhanh hơn nhiều: tìm nguồn bù (giấy tờ có giá, vay tổ chức tín dụng khác).",
+     "So % tăng chi phí lãi với % tăng thu nhập lãi cùng quý."
+    ]
+   ],
+   [
+    "p",
+    "Khi đã quen đọc nguồn vốn và tài sản của ngân hàng, việc chọn mã để <a href=\"/f0/tich-san-co-phieu-ngan-hang.html\">tích sản</a> sẽ chắc tay hơn. Bảng theo dõi tích sản ngân hàng cập nhật tại <a href=\"/bao-cao-2026.html#tichsan\">đây</a>."
+   ],
+   [
+    "p",
+    "Số liệu trong bài lấy từ BCTC hợp nhất quý 3/2026 các ngân hàng, đơn vị tỷ đồng, chỉ để minh họa cách đọc, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Tiền gửi của khách hàng nằm ở đâu trong BCTC ngân hàng?",
+    "Ở phần nợ phải trả của bảng cân đối kế toán, ngay sau mục tiền gửi và vay các tổ chức tín dụng khác."
+   ],
+   [
+    "Tiền gửi tăng nhanh có phải ngân hàng tốt hơn?",
+    "Chưa chắc. Cần xem tiền gửi tăng nhờ CASA rẻ hay nhờ trả lãi cao; chi phí lãi tăng nhanh hơn thu nhập lãi sẽ làm NIM giảm."
+   ],
+   [
+    "Tỷ lệ cho vay trên tiền gửi bao nhiêu là cao?",
+    "Phép chia đơn giản trên 120% cho thấy ngân hàng dựa nhiều vào nguồn ngoài tiền gửi. LDR theo quy định có công thức riêng và mức trần riêng, nên đọc thêm thuyết minh."
+   ]
+  ],
+  "rel": [
+   "casa-la-gi",
+   "ldr-la-gi",
+   "nim-la-gi",
+   "lai-suat-huy-dong-va-loi-nhuan-ngan-hang",
+   "doc-bctc-ngan-hang"
+  ]
+ },
+ {
+  "slug": "phat-hanh-giay-to-co-gia-la-gi",
+  "kw": "phát hành giấy tờ có giá là gì",
+  "grp": 3,
+  "title": "Phát hành giấy tờ có giá là gì? Nguồn vốn ngân hàng",
+  "desc": "9 tháng 2026 ACB tăng giấy tờ có giá 77.417 tỷ, gần 7 lần phần tiền gửi tăng thêm. Cách đọc dòng phát hành giấy tờ có giá trong BCTC ngân hàng.",
+  "body": [
+   [
+    "p",
+    "Chín tháng đầu 2026, Á Châu (ACB) tăng dòng <b>phát hành giấy tờ có giá</b> thêm 77.417 tỷ đồng, từ 133.294,4 lên 210.711,5 tỷ. Con số này gần gấp 7 lần phần tiền gửi khách hàng tăng thêm cùng kỳ (11.122 tỷ). Nói cách khác, phần lớn vốn mới để ACB cho vay năm nay không đến từ sổ tiết kiệm mà từ chứng chỉ tiền gửi và trái phiếu do chính ngân hàng phát hành."
+   ],
+   [
+    "h2",
+    "Giấy tờ có giá ngân hàng phát hành là gì?"
+   ],
+   [
+    "p",
+    "Đây là các khoản ngân hàng đi vay bằng cách phát hành công cụ nợ: <a href=\"/f0/chung-chi-tien-gui-la-gi.html\">chứng chỉ tiền gửi</a>, kỳ phiếu, trái phiếu (kể cả trái phiếu thứ cấp). Trên bảng cân đối, dòng này nằm ở nợ phải trả, sau tiền gửi khách hàng."
+   ],
+   [
+    "p",
+    "Điểm khác tiền gửi thông thường: kỳ hạn thường dài hơn (1–10 năm), lãi suất thường cao hơn, và một phần trái phiếu thứ cấp có thể được tính vào vốn cấp 2 theo quy định. Ngân hàng dùng nguồn này để có vốn trung dài hạn, giảm <a href=\"/f0/rui-ro-ky-han-ngan-hang-la-gi.html\">rủi ro kỳ hạn</a> khi cho vay mua nhà, dự án."
+   ],
+   [
+    "h2",
+    "Đọc số từng bước thế nào?"
+   ],
+   [
+    "p",
+    "Lấy ACB, đơn vị tỷ đồng:"
+   ],
+   [
+    "ol",
+    [
+     "Giấy tờ có giá 31/12/2025: 133.294,4; ngày 30/9/2026: 210.711,5.",
+     "Tăng 77.417,1, tức +58,1% trong 9 tháng.",
+     "Chia cho tổng nguồn vốn 1.104.379,5: khoảng 19,1%, gần 1/5 nguồn vốn.",
+     "Tiền gửi khách hàng cùng kỳ chỉ tăng 11.122,1.",
+     "Cho vay khách hàng tăng 78.837,0: phần lớn được tài trợ bằng giấy tờ có giá."
+    ]
+   ],
+   [
+    "p",
+    "Hệ quả là chi phí vốn khó giảm nhanh. Chi phí lãi quý 3/2026 của ACB là 13.846,6 tỷ, tăng 67,2% so với cùng kỳ, trong khi thu nhập lãi thuần tăng 21,1%."
+   ],
+   [
+    "h2",
+    "Sáu ngân hàng khác nhau thế nào?"
+   ],
+   [
+    "p",
+    "Số liệu BCTC hợp nhất, đơn vị tỷ đồng:"
+   ],
+   [
+    "table",
+    [
+     [
+      "Ngân hàng",
+      "GTCG 30/9/26",
+      "GTCG 31/12/25",
+      "Thay đổi 9T",
+      "% tổng nguồn vốn"
+     ],
+     [
+      "ACB",
+      "210.711,5",
+      "133.294,4",
+      "+58,1%",
+      "19,1%"
+     ],
+     [
+      "TCB",
+      "237.047,1",
+      "215.330,1",
+      "+10,1%",
+      "18,0%"
+     ],
+     [
+      "MBB",
+      "302.399,2",
+      "187.236,1",
+      "+61,5%",
+      "16,5%"
+     ],
+     [
+      "BID",
+      "311.012,6",
+      "225.407,8",
+      "+38,0%",
+      "8,9%"
+     ],
+     [
+      "CTG",
+      "123.087,0",
+      "174.030,4",
+      "−29,3%",
+      "4,2%"
+     ],
+     [
+      "VCB",
+      "47.392,0",
+      "27.101,2",
+      "+74,9%",
+      "1,8%"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Hai nhóm rõ rệt. ACB, Techcombank (TCB), MB (MBB) dùng giấy tờ có giá cho 16–19% nguồn vốn. Vietcombank (VCB) dù tăng 74,9% nhưng chỉ chiếm 1,8% vì tiền gửi đã chiếm khoảng 2/3 nguồn vốn. VietinBank (CTG) đi ngược: giảm 50.943 tỷ giấy tờ có giá trong 9 tháng, thay bằng tiền gửi tăng 150.569 tỷ."
+   ],
+   [
+    "h2",
+    "Khi nào dòng này đáng lo?"
+   ],
+   [
+    "p",
+    "Bản thân việc phát hành giấy tờ có giá là bình thường. Cần chú ý khi: tỷ trọng tăng rất nhanh trong thời gian ngắn, lãi suất phát hành cao hơn hẳn mặt bằng, hoặc nhiều đợt đáo hạn dồn vào cùng một năm. Thông tin kỳ hạn và lãi suất nằm trong thuyết minh BCTC và các công bố phát hành trái phiếu."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>Chỉ nhìn tiền gửi để đánh giá huy động.</b> ACB tiền gửi +1,9% trông như \"huy động yếu\", nhưng tổng nguồn vốn vẫn tăng nhờ giấy tờ có giá +58,1%.",
+     "<b>Coi mọi giấy tờ có giá như nhau.</b> Chứng chỉ tiền gửi ngắn hạn khác hẳn trái phiếu thứ cấp 7–10 năm về kỳ hạn, chi phí và vai trò vốn.",
+     "<b>So số tuyệt đối giữa ngân hàng lớn và nhỏ.</b> BID có 311.012,6 tỷ, lớn hơn ACB, nhưng chỉ 8,9% nguồn vốn so với 19,1% của ACB."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist anh chị tự làm được"
+   ],
+   [
+    "ul",
+    [
+     "Tìm dòng phát hành giấy tờ có giá cuối quý và cuối năm trước.",
+     "Chia cho tổng nguồn vốn để biết tỷ trọng.",
+     "Đặt cạnh mức tăng tiền gửi khách hàng cùng kỳ.",
+     "So % tăng chi phí lãi với % tăng thu nhập lãi thuần.",
+     "Đọc thuyết minh để xem kỳ hạn, lãi suất và đợt đáo hạn lớn."
+    ]
+   ],
+   [
+    "p",
+    "Khi đã quen đọc nguồn vốn và tài sản của ngân hàng, việc chọn mã để <a href=\"/f0/tich-san-co-phieu-ngan-hang.html\">tích sản</a> sẽ chắc tay hơn. Bảng theo dõi tích sản ngân hàng cập nhật tại <a href=\"/bao-cao-2026.html#tichsan\">đây</a>."
+   ],
+   [
+    "p",
+    "Số liệu trong bài lấy từ BCTC hợp nhất quý 3/2026 các ngân hàng, đơn vị tỷ đồng, chỉ để minh họa cách đọc, không phải khuyến nghị mua bán."
+   ]
+  ],
+  "faq": [
+   [
+    "Giấy tờ có giá ngân hàng phát hành gồm những gì?",
+    "Chứng chỉ tiền gửi, kỳ phiếu, trái phiếu thường và trái phiếu thứ cấp do chính ngân hàng phát hành để huy động vốn."
+   ],
+   [
+    "Vì sao ngân hàng phát hành trái phiếu khi đã có tiền gửi?",
+    "Để có vốn kỳ hạn dài hơn cho các khoản vay trung dài hạn, đáp ứng tỷ lệ an toàn và một phần để bổ sung vốn cấp 2."
+   ],
+   [
+    "Giấy tờ có giá chiếm bao nhiêu nguồn vốn là cao?",
+    "Trong nhóm ngân hàng ở bài, 16–19% là mức cao (ACB, TCB, MBB), dưới 5% là thấp (CTG, VCB). Quan trọng hơn là tốc độ tăng và chi phí."
+   ]
+  ],
+  "rel": [
+   "chung-chi-tien-gui-la-gi",
+   "trai-phieu-la-gi",
+   "rui-ro-ky-han-ngan-hang-la-gi",
+   "tien-gui-cua-khach-hang-la-gi",
+   "doc-bctc-ngan-hang"
+  ]
  }
 ]
