@@ -36,7 +36,9 @@ CTA_CUOI = {"k": "text", "label": "ĐỪNG ĐẦU TƯ MỘT MÌNH", "cap": ("ZAL
     "say": "Trước khi kết thúc, có hai thứ anh chị nên lưu lại. Một, vào chứng khoán Huy Nguyễn chấm com để xem bảng mười cổ phiếu khỏe nhất thị trường cập nhật liên tục và báo cáo tài chính hơn bốn trăm mã, miễn phí. Hai, nếu anh chị đang kẹt hàng, chưa biết nên giữ hay cơ cấu, hoặc muốn có người đồng hành, nhắn Zalo số không ba sáu năm, một tám tám, hai tám sáu để vào nhóm tư vấn, Huy và đội ngũ sẽ hỗ trợ trực tiếp. Đầu tư một mình rất dễ sai, có người cùng đi sẽ chắc hơn. Nhớ đăng ký kênh và bấm chuông để không bỏ lỡ video tiếp theo."}
 CTA_WEB = {"k": "text", "label": "TÀI LIỆU ĐI KÈM VIDEO", "cap": ("TÀI LIỆU MIỄN PHÍ", "CHUNGKHOANHUYNGUYEN.COM"), "cta": 1,
     "say": "Toàn bộ số liệu trong video này, cùng bảng định giá và báo cáo tài chính hơn bốn trăm mã, anh chị xem miễn phí tại chứng khoán Huy Nguyễn chấm com. Ở đó có người tư vấn trực tiếp nếu anh chị cần hỏi về mã mình đang cầm."}
-if not g.get("NO_CTA") and not any(x.get("cta") for x in raw) and len(raw) >= 6:
+if g.get("CHI_CTA_CUOI") and not any(x.get("cta") for x in raw):   # QL1 11/11: video kể chuyện – không cắt ngang mạch truyện, chỉ 1 lời mời ở cuối
+    raw = list(raw); raw.insert(len(raw) - 1 if raw[-1].get("k") == "end" else len(raw), dict(CTA_CUOI))
+elif not g.get("NO_CTA") and not any(x.get("cta") for x in raw) and len(raw) >= 6:
     raw = list(raw); raw.insert(max(2, len(raw)//4), dict(CTA_WEB)); raw.insert(len(raw)*2//3, dict(CTA_GIUA))
     raw.insert(len(raw) - 1 if raw[-1].get("k") == "end" else len(raw), dict(CTA_CUOI))
 import xung_ho  # xưng em – anh chị, không gọi "bạn" (anh Huy chốt 6/11)

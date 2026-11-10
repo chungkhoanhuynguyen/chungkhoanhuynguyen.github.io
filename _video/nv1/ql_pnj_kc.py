@@ -72,7 +72,7 @@ S = [
         ('Chứng khoán', 'Ứng dụng giao dịch', 'PNJ: giá sàn, dư bán lớn', R_)]),
       say=("Ngày hai tháng bảy, Công an tỉnh Thanh Hoá thông báo triệt phá một đường dây buôn lậu kim cương xuyên quốc gia, khởi tố hai mươi hai bị can, thu giữ một nghìn một trăm viên kim cương. "
            "Trong số người bị bắt có giám đốc công ty kiểm định trực thuộc PNJ. Sáng hôm sau, cổ phiếu PNJ nằm sàn.")),
- dict(k='text', cap=('CÔNG AN KẾT LUẬN', 'KHÔNG VÀO HỆ THỐNG BÁN LẺ'), cols=CC, anh='ov:magnifying glass diamond||diamond',
+ dict(k='text', cap=('CÔNG AN KẾT LUẬN', 'KHÔNG VÀO HỆ THỐNG BÁN LẺ'), cols=CC, anh='ov:loose diamonds||diamond',
       say=("Em cần nói rõ điểm này cho công bằng. Ngày hai mươi tháng tám, theo kết quả điều tra ban đầu Công an tỉnh Thanh Hoá công bố, toàn bộ số kim cương buôn lậu được bán cho khách hàng cá nhân, không đưa vào hệ thống bán lẻ của PNJ. "
            "PNJ cũng khẳng định đây là trách nhiệm cá nhân, và công ty có đầy đủ hồ sơ nhập khẩu hợp lệ. "
            "Nhưng anh chị để ý: kết luận đó đến sau bảy tuần. Còn nỗi sợ thì chỉ cần một đêm.")),
@@ -84,7 +84,7 @@ S = [
         ('Thu', 'Bà không bán thì người khác bán. Hết tiền là họ không mua nữa đâu')]),
       say=("Sáng thứ hai, nhóm bạn chị Lan sôi lên từ sáu giờ. Thu nhắn: tôi ra cửa hàng từ sáu giờ, đã có hàng người rồi. Hằng: bán lại đi các bà, trước khi họ đổi chính sách. "
            "Chị Lan gõ: nhưng nhẫn của tôi đâu có vấn đề gì. Thu trả lời một câu mà chị nhớ mãi: bà không bán thì người khác bán. Hết tiền là họ không mua nữa đâu.")),
- dict(k='text', cap=('KHÔNG AI SỢ KIM CƯƠNG GIẢ', 'HỌ SỢ NGƯỜI KHÁC BÁN TRƯỚC'), cols=CR, anh='ov:crowd queue store||people waiting line',
+ dict(k='text', cap=('KHÔNG AI SỢ KIM CƯƠNG GIẢ', 'HỌ SỢ NGƯỜI KHÁC BÁN TRƯỚC'), cols=CR, anh='ov:long queue people waiting||queue',
       say=("Câu nói của Thu chính là cơ chế của mọi cuộc tháo chạy. Người ta không bán vì chắc chắn kim cương của mình có vấn đề. Người ta bán vì sợ người khác bán trước, và đến lượt mình thì cửa hàng hết tiền. "
            "Ngân hàng gặp nó và gọi là rút tiền hàng loạt. Quỹ đầu tư gặp nó và gọi là làn sóng rút vốn. Và tháng bảy năm 2026, một doanh nghiệp trang sức gặp nó lần đầu tiên.")),
  dict(k='cards', cap=('THÁNG 7/2026', 'KHÁCH BÁN LẠI BAO NHIÊU?'), cols=CR, moc=True,
@@ -183,7 +183,7 @@ META = {KEY: dict(kenh='@chungkhoanhuynguyen', seri='Chuyện gì đã xảy ra?
 os.makedirs(LO, exist_ok=True)
 open(LO + '/video_dai.py', 'w', encoding='utf-8').write(
     "# VIDEO DÀI kênh chính – kể chuyện 'Chuyện gì đã xảy ra với PNJ' (QL1 11/11/2026).\n"
-    "GOLD=%r; RED=%r; GREEN=%r; BLUE=%r; WHITE=%r\nS = {}\n" % (GOLD, RED, GREEN, BLUE, WHITE) + "S[%r] = %r\n" % (KEY, S) + "META = %r\n" % META)
+    "CHI_CTA_CUOI = True\nGOLD=%r; RED=%r; GREEN=%r; BLUE=%r; WHITE=%r\nS = {}\n" % (GOLD, RED, GREEN, BLUE, WHITE) + "S[%r] = %r\n" % (KEY, S) + "META = %r\n" % META)
 json.dump(META, open(LO + '/meta.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 json.dump({}, open(LO + '/px_tuan.json', 'w'))
 from collections import Counter
