@@ -200,6 +200,10 @@ def giay(sc, t):
     a = dx2.ease(t / 0.5); rot = pg.rotate(-1.5, expand=True, fillcolor=(0, 0, 0))
     m = Image.new("L", pg.size, 255).rotate(-1.5, expand=True, fillcolor=0)
     im.paste(rot, (x0, y0 + int((1 - a) * 40)), m)
+    T = max(2.0, sc.get("_T", 8.0)); z = 1 + 0.06 * min(1, t / T)   # Ken Burns chậm vào tờ giấy, tránh cảnh đứng yên
+    if z > 1.001:
+        w2, h2 = int(LW * z), int(LH * z); cx0 = int((x0 + gw / 2) * z - (x0 + gw / 2)); cy0 = int((h2 - LH) / 2)
+        im = im.resize((w2, h2), Image.BILINEAR).crop((cx0, cy0, cx0 + LW, cy0 + LH))
     sc2 = dict(sc, _x0=x0 + gw + 90); _chu_phai(im, sc2, t); return im
 
 KINDS.update(call=call, giay=giay)
