@@ -17,13 +17,16 @@
   "cau_hoi": {
    "chu_to": "ANH CHỊ ĐỂ ĐÂU?",
    "loi": "Anh chị đang để phần lớn tiền ở tài khoản thanh toán, tiết kiệm hay cổ phiếu?",
-   "loi_doc": "Anh chị đang để phần lớn tiền ở tài khoản thanh toán, tiết kiệm hay cổ phiếu?"
+   "loi_doc": "Anh chị đang để phần lớn tiền ở tài khoản thanh toán, tiết kiệm hay cổ phiếu?",
+   "anh": [
+    "File:Sở GDCK TPHCM (HOSE).JPG"
+   ]
   },
   "canh": [
    {
     "chu_to": "TRẢ 6,8%",
-    "loi": "Gửi một tỷ đồng mười hai tháng, ngân hàng trả anh chị khoảng 68 triệu. Nghe rất hậu.",
-    "loi_doc": "Gửi một tỷ đồng mười hai tháng, ngân hàng trả anh chị khoảng sáu mươi tám triệu. Nghe rất hậu.",
+    "loi": "Theo bảng lãi suất ngày 30/10/2026, Vietcombank trả khoảng 6,8% cho kỳ hạn mười hai tháng. Anh chị gửi một tỷ đồng thì nhận khoảng 68 triệu tiền lãi.",
+    "loi_doc": "Theo bảng lãi suất ngày ba mươi tháng mười năm hai nghìn không trăm hai mươi sáu, Vietcombank trả khoảng sáu phẩy tám phần trăm cho kỳ hạn mười hai tháng. Anh chị gửi một tỷ đồng thì nhận khoảng sáu mươi tám triệu tiền lãi.",
     "the": {
      "loai": "lon",
      "tieu": "GỬI 1 TỶ 12 THÁNG",
@@ -44,8 +47,8 @@
    },
    {
     "chu_to": "VẪN LÃI 41.000 TỶ",
-    "loi": "Nhưng cũng mười hai tháng đó, riêng Vietcombank lãi khoảng 41 nghìn tỷ. Tiền đó từ đâu ra?",
-    "loi_doc": "Nhưng cũng mười hai tháng đó, riêng Vietcombank lãi khoảng bốn mươi mốt nghìn tỷ. Tiền đó từ đâu ra?",
+    "loi": "Nghe như ngân hàng đang trả rất hậu. Nhưng cũng mười hai tháng đó, riêng Vietcombank lãi khoảng 41 nghìn tỷ. Tiền đó từ đâu ra?",
+    "loi_doc": "Nghe như ngân hàng đang trả rất hậu. Nhưng cũng mười hai tháng đó, riêng Vietcombank lãi khoảng bốn mươi mốt nghìn tỷ. Tiền đó từ đâu ra?",
     "the": {
      "loai": "lon",
      "tieu": "VIETCOMBANK 4 QUÝ GẦN NHẤT",
@@ -124,10 +127,23 @@
     "chu_to": "MIỄN PHÍ CHUYỂN KHOẢN?",
     "loi": "Đó là lý do ngân hàng đua nhau miễn phí chuyển khoản. Họ không làm từ thiện, họ đang mua tiền rẻ.",
     "loi_doc": "Đó là lý do ngân hàng đua nhau miễn phí chuyển khoản. Họ không làm từ thiện, họ đang mua tiền rẻ.",
-    "anh": [
-     "mobile banking app smartphone"
-    ],
-    "chat": 1
+    "the": {
+     "loai": "lon",
+     "tieu": "MIỄN PHÍ CHUYỂN KHOẢN",
+     "nguon": "",
+     "dong": [
+      [
+       "ĐỂ MUA",
+       56,
+       "trang"
+      ],
+      [
+       "TIỀN RẺ",
+       90,
+       "vang"
+      ]
+     ]
+    }
    },
    {
     "chu_to": "GỬI TIỀN HAY LÀM CHỦ?",
