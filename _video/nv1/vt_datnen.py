@@ -81,8 +81,8 @@ S = [
         ('Điều 3. Tổng giá trị 950.000.000 đồng, thanh toán trước khi ký.', ''),
         ('Điều 4. Bên A cam kết mua lại với giá cao hơn 30% sau 12 tháng, hoặc thuê lại 2%/tháng.', 'CAM KẾT ĐẸP')]),
       say=("Trâm đưa bạn một tờ giấy, mực còn thơm. Hợp đồng góp vốn. Lô A12, một trăm hai mươi mét vuông, một trăm phần trăm thổ cư, sổ riêng từng nền. "
-           "Và điều khoản khiến tim bạn đập nhanh: công ty cam kết mua lại với giá cao hơn ba mươi phần trăm sau mười hai tháng, hoặc thuê lại với lãi hai phần trăm một tháng. "
-           "Bạn là kế toán. Bạn nhẩm ngay: hai phần trăm một tháng là hai mươi bốn phần trăm một năm, gấp bốn lần gửi tiết kiệm.")),
+           "Và điều khoản khiến tim bạn đập nhanh: công ty cam kết mua lại với giá cao hơn ba mươi phần trăm sau mười hai tháng, hoặc thuê lại với lãi hai phần trăm mỗi tháng. "
+           "Bạn là kế toán. Bạn nhẩm ngay: hai phần trăm mỗi tháng là hai mươi bốn phần trăm mỗi năm, gấp bốn lần gửi tiết kiệm.")),
  dict(k='cards', cap=('LỜI HỨA', 'TRÊN TỜ GIẤY'), cols=CC, moc=True,
       cards=[('%s triệu' % v(GIA), 'giá lô A12, 120 m²', ''), ('%s triệu' % v(MUA_LAI), 'cam kết mua lại sau 12 tháng', ''), ('%s triệu/tháng' % v(THUE, 0), 'hoặc tiền thuê lại 2%', '')],
       say=("Chín trăm năm mươi triệu hôm nay. Mười hai tháng sau, công ty mua lại một tỷ hai trăm ba mươi lăm triệu. Hoặc mỗi tháng nhận khoảng mười chín triệu tiền thuê lại. "
@@ -108,7 +108,7 @@ S = [
         ('Ngân hàng', 'Biến động số dư', 'TK +19.000.000 VND. ND: TIEN THUE LAI LO A12 THANG 2', G_),
         ('Ngân hàng', 'Biến động số dư', 'TK +19.000.000 VND. ND: TIEN THUE LAI LO A12 THANG 3', G_)]),
       say=("Ngày mùng năm tháng đầu tiên, điện thoại báo: cộng mười chín triệu đồng, tiền thuê lại lô A12. Tháng thứ hai, đúng ngày mùng năm, lại mười chín triệu. Tháng thứ ba, vẫn đúng hẹn. "
-           "Anh Tùng bắt đầu im lặng. Bạn bắt đầu tự tin. Mười chín triệu một tháng, gần bằng lương của chồng, mà không phải làm gì.")),
+           "Anh Tùng bắt đầu im lặng. Bạn bắt đầu tự tin. Mười chín triệu mỗi tháng, gần bằng lương của chồng, mà không phải làm gì.")),
  dict(k='chat', cap=('"CHỊ ƠI', 'CHO EM GÓP VỚI"'), cols=CR, chat=dict(ten='Ngọc – em gái', tv='Đang hoạt động', gio='20:12', mau=G_, msgs=[
         ('Ngọc', 'Chị ơi tháng nào chị cũng có 19 triệu thật à'),
         ('me', 'Thật, 3 tháng rồi, đúng ngày luôn'),
@@ -188,7 +188,7 @@ S = [
         ('Hoặc mua lại cao hơn 38% sau 15 tháng.', ''),
         ('Hoặc thuê lại với lãi 2% một tháng.', 'LÃI ẢO'),
         ('Công ty bán trung bình 1.500–2.000 sản phẩm mỗi tháng.', '')]),
-      say=("Và thủ đoạn thì y hệt câu chuyện của bạn. Theo báo Công an Nhân dân, công ty cam kết mua lại với giá cao hơn ba mươi phần trăm sau mười hai tháng, hoặc ba mươi tám phần trăm sau mười lăm tháng. Hoặc thuê lại với lãi hai phần trăm một tháng. "
+      say=("Và thủ đoạn thì y hệt câu chuyện của bạn. Theo báo Công an Nhân dân, công ty cam kết mua lại với giá cao hơn ba mươi phần trăm sau mười hai tháng, hoặc ba mươi tám phần trăm sau mười lăm tháng. Hoặc thuê lại với lãi hai phần trăm mỗi tháng. "
            "Mỗi tháng, công ty bán trung bình một nghìn rưỡi đến hai nghìn sản phẩm. Hồ sơ vụ án khoảng một triệu bút lục, đựng trong một trăm bốn mươi thùng, chở bằng hai xe tải.")),
  dict(k='cards', cap=('BẢN ÁN', 'SƠ THẨM 29/12/2022'), cols=CR, moc=True, anh='Ho Chi Minh City skyline',
       cards=[('Chung thân', 'chủ tịch Nguyễn Thái Luyện', ''), ('32 năm', 'vợ của ông Luyện', ''), ('10–19 năm', '19 nhân viên', '')],

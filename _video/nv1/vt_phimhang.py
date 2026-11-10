@@ -22,7 +22,7 @@ S = [
            "Câu chuyện là giả định, nhưng mọi thủ đoạn trong video đều lấy từ những vụ án có thật đã bị công an khởi tố, và mình sẽ nêu rõ từng vụ ở cuối video.")),
  # ---------------- CHƯƠNG 1 ----------------
  dict(k='text', ch='Chương 1 – Người đàn ông chậm chân nhất', cap=('31 TUỔI, LƯƠNG 14 TRIỆU', 'VỢ BẦU THÁNG THỨ SÁU'), cols=CC, moc=True, anh=A(4),
-      say=("Bạn 31 tuổi, làm giám sát kho, lương 14 triệu một tháng. Vợ bạn tên Hà, đang bầu tháng thứ sáu. "
+      say=("Bạn 31 tuổi, làm giám sát kho, lương 14 triệu mỗi tháng. Vợ bạn tên Hà, đang bầu tháng thứ sáu. "
            "Hai vợ chồng thuê một căn phòng 20 mét vuông, cuối tháng nào cũng ngồi tính tiền điện, tiền sữa bầu, tiền gửi về quê. "
            "Trong ngân hàng, bạn có 300 triệu, gom góp suốt bảy năm. Mẹ vợ hứa cho thêm 200 triệu, để sang năm hai đứa trả trước một căn chung cư nhỏ.")),
  dict(k='text', cap=('500 TRIỆU', 'VÀ MỘT GIẤC MƠ CĂN HỘ'), cols=CC, anh=A(4),
@@ -66,7 +66,7 @@ S = [
  dict(k='cards', ch='Chương 4 – Phòng VIP Kim Cương', cap=('MUỐN NHẬN', 'HÀNG CỦA TAY TO?'), cols=CC, moc=True,
       cards=[('15 triệu', 'phí phòng VIP mỗi tháng', ''), ('5 suất', 'còn lại, hết hạn tối nay', ''), ('x2', 'mục tiêu mã "có tay to đứng sau"', '')],
       say=("Đến tuần thứ ba, Thư nhắn riêng. Anh ơi, nhóm miễn phí chỉ là để mọi người làm quen thôi. Hàng thật của thầy nằm ở phòng VIP Kim Cương. "
-           "Ở đó có mã có tay to đứng sau, mục tiêu gấp đôi trong một tháng. Phí 15 triệu một tháng anh nhé. "
+           "Ở đó có mã có tay to đứng sau, mục tiêu gấp đôi trong một tháng. Phí 15 triệu mỗi tháng anh nhé. "
            "Tháng này chỉ còn năm suất, hết hạn lúc mười hai giờ đêm nay. Em giữ cho anh một suất được không ạ?")),
  dict(k='text', cap=('15 TRIỆU', 'HAY MỘT CĂN HỘ?'), cols=CC, anh=A(11),
       say=("Mười lăm triệu. Hơn một tháng lương. Bạn đứng ngoài ban công phòng trọ, nhìn vào trong thấy Hà đang ngồi gấp quần áo sơ sinh mua ở chợ. "
