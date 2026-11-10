@@ -1,0 +1,21 @@
+name: IndexNow (Bing, Yandex, Seznam...)
+on:
+  workflow_dispatch:
+  schedule: [{cron: "23 1 * * *"}]
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 1}
+      - name: Gui URL trong sitemap
+        run: |
+          python3 - <<'P'
+          import re, json, urllib.request
+          K = "22d05c5c173c41b4bd60273e8d874e8b"
+          U = re.findall(r"<loc>([^<]+)</loc>", open("sitemap.xml", encoding="utf-8").read())
+          for i in range(0, len(U), 9000):
+              body = json.dumps({"host": "chungkhoanhuynguyen.com", "key": K, "keyLocation": "https://chungkhoanhuynguyen.com/%s.txt" % K, "urlList": U[i:i+9000]}).encode()
+              r = urllib.request.urlopen(urllib.request.Request("https://api.indexnow.org/indexnow", body, {"Content-Type": "application/json; charset=utf-8"}), timeout=60)
+              print("IndexNow", len(U[i:i+9000]), "URL ->", r.status)
+          P
