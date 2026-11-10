@@ -734,8 +734,8 @@
  {
   "slug": "cach-mo-tai-khoan-chung-khoan",
   "kw": "mở tài khoản chứng khoán",
-  "title": "Cách mở tài khoản chứng khoán online trong 5 phút (cho người mới)",
-  "desc": "Hướng dẫn mở tài khoản chứng khoán online bằng CCCD trên điện thoại: cần gì, các bước, lưu ý chọn công ty chứng khoán và phí giao dịch.",
+  "title": "Cách mở (tạo, đăng ký) tài khoản chứng khoán online trong 5 phút",
+  "desc": "Cách tạo và đăng ký tài khoản chứng khoán online bằng CCCD trên điện thoại trong 5 phút: chuẩn bị gì, các bước eKYC, chọn công ty chứng khoán, phí và lỗi thường gặp.",
   "body": [
    [
     "p",
@@ -813,6 +813,58 @@
      "Mở online khoảng 5 phút, miễn phí.",
      "Chọn công ty có ứng dụng ổn định và có người hướng dẫn trong thời gian đầu."
     ]
+   ],
+   [
+    "h2",
+    "Tạo tài khoản chứng khoán cần chuẩn bị gì?"
+   ],
+   [
+    "ul",
+    [
+     "Căn cước công dân gắn chip còn hạn (người từ đủ 18 tuổi).",
+     "Số điện thoại và email chính chủ để nhận mã OTP.",
+     "Một tài khoản ngân hàng đứng tên mình để nạp, rút tiền.",
+     "Điện thoại có camera để chụp CCCD và quay khuôn mặt (eKYC)."
+    ]
+   ],
+   [
+    "h2",
+    "Các bước đăng ký tài khoản chứng khoán online"
+   ],
+   [
+    "ol",
+    [
+     "Tải ứng dụng của công ty chứng khoán đã chọn, bấm Mở tài khoản.",
+     "Chụp hai mặt CCCD, kiểm tra thông tin tự điền có đúng không.",
+     "Quay khuôn mặt theo hướng dẫn để xác thực.",
+     "Chọn số tài khoản, liên kết ngân hàng, ký hợp đồng điện tử bằng OTP.",
+     "Nhận thông tin đăng nhập; thường dùng được ngay hoặc trong ngày làm việc."
+    ]
+   ],
+   [
+    "h2",
+    "Chọn công ty chứng khoán nào?"
+   ],
+   [
+    "p",
+    "Nên so sánh 4 điểm: phí giao dịch, ứng dụng dễ dùng, có người hỗ trợ khi cần và lãi suất vay ký quỹ (nếu sau này dùng). Người mới nên ưu tiên công ty có ứng dụng ổn định và có người tư vấn trả lời được câu hỏi cơ bản."
+   ],
+   [
+    "h2",
+    "Lỗi thường gặp khi mở tài khoản"
+   ],
+   [
+    "ul",
+    [
+     "Ảnh CCCD lóa sáng hoặc mất góc: chụp lại trên nền tối, đủ ánh sáng.",
+     "eKYC báo không khớp khuôn mặt: bỏ kính, đứng nơi đủ sáng, giữ điện thoại ngang mặt.",
+     "Tên tài khoản ngân hàng không trùng tên trên CCCD: phải dùng tài khoản chính chủ.",
+     "Mở nhiều tài khoản cùng một công ty: mỗi người chỉ có một tài khoản giao dịch tại một công ty chứng khoán."
+    ]
+   ],
+   [
+    "p",
+    "Muốn được hướng dẫn trực tiếp từng bước, anh chị xem trang <a href=\"/mo-tai-khoan-chung-khoan.html\">mở tài khoản chứng khoán online</a> hoặc nhắn Zalo để được hỗ trợ."
    ]
   ]
  },
@@ -4885,7 +4937,7 @@
   "slug": "gio-giao-dich-chung-khoan",
   "kw": "giờ giao dịch chứng khoán",
   "grp": 2,
-  "title": "Giờ giao dịch chứng khoán: lịch phiên HOSE, HNX, UPCoM",
+  "title": "Giờ giao dịch chứng khoán Việt Nam: lịch phiên HOSE, HNX, UPCoM",
   "desc": "Giờ giao dịch chứng khoán Việt Nam trên HOSE, HNX, UPCoM: phiên ATO, khớp lệnh liên tục, nghỉ trưa, ATC, thỏa thuận. Ngày nào thị trường nghỉ.",
   "body": [
    [
@@ -4966,6 +5018,59 @@
      "Phiên ATO và ATC giá có thể nhảy mạnh, người mới nên dùng lệnh giới hạn (LO) để không mua đắt.",
      "15 phút đầu phiên sáng thường biến động nhiều nhất, không nhất thiết phải vào lệnh ngay.",
      "Muốn bán chắc chắn trong ngày thì nên đặt trước 14:30."
+    ]
+   ],
+   [
+    "h2",
+    "Bảng tóm tắt giờ giao dịch chứng khoán Việt Nam"
+   ],
+   [
+    "ul",
+    [
+     "HOSE: ATO 9:00–9:15 · liên tục 9:15–11:30 và 13:00–14:30 · ATC 14:30–14:45 · thỏa thuận tới 15:00.",
+     "HNX: liên tục 9:00–11:30 và 13:00–14:30 · ATC 14:30–14:45 · sau giờ (PLO) 14:45–15:00.",
+     "UPCoM: liên tục 9:00–11:30 và 13:00–15:00, không có ATO/ATC.",
+     "Nghỉ trưa 11:30–13:00 ở cả ba sàn; lệnh đặt lúc nghỉ trưa sẽ chờ phiên chiều."
+    ]
+   ],
+   [
+    "h2",
+    "Khi nào đặt lệnh để dễ khớp nhất?"
+   ],
+   [
+    "p",
+    "Muốn <b>mua giá tốt</b>, người mới thường đặt lệnh giới hạn (LO) trong phiên liên tục, khi đã thấy giá giao dịch thực tế. Đặt lệnh ATO/ATC thì chắc khớp hơn nhưng không kiểm soát được giá. Muốn <b>bán chắc chắn trong ngày</b>, hãy đặt trước 14:30 trên HOSE/HNX vì sau đó chỉ còn phiên định kỳ cuối ngày."
+   ],
+   [
+    "h2",
+    "Những ngày thị trường chứng khoán nghỉ"
+   ],
+   [
+    "ul",
+    [
+     "Thứ Bảy, Chủ nhật.",
+     "Tết Dương lịch, Tết Nguyên đán, Giỗ Tổ Hùng Vương, 30/4 – 1/5, Quốc khánh 2/9 và các ngày nghỉ bù theo lịch của Bộ Lao động.",
+     "Lịch nghỉ cụ thể từng năm do Sở Giao dịch Chứng khoán công bố trước kỳ nghỉ; ứng dụng của công ty chứng khoán sẽ thông báo."
+    ]
+   ],
+   [
+    "h2",
+    "Giờ giao dịch và thời gian tiền về (T+2)"
+   ],
+   [
+    "p",
+    "Mua cổ phiếu hôm nay (ngày T) thì cổ phiếu về tài khoản chiều ngày làm việc thứ hai sau đó (T+2) và mới bán được từ lúc đó. Bán cổ phiếu ngày T thì tiền về tài khoản ngày T+2. Ngày nghỉ lễ không tính vào T+2, nên mua trước kỳ nghỉ dài cần tính thêm số ngày chờ."
+   ],
+   [
+    "h2",
+    "Lỗi người mới hay gặp về giờ giao dịch"
+   ],
+   [
+    "ul",
+    [
+     "Đặt lệnh sau 15:00 rồi tưởng đã mua: lệnh chỉ là lệnh chờ cho phiên hôm sau (nếu công ty chứng khoán cho đặt trước).",
+     "Đặt lệnh ATC rồi mua đúng giá cao nhất ngày vì phiên cuối biến động mạnh.",
+     "Quên UPCoM khớp đến 15:00 và không có ATC như HOSE."
     ]
    ]
   ]
@@ -5514,6 +5619,51 @@
    [
     "p",
     "Giữ dài hạn không có nghĩa là giữ mãi. Đó là giữ chừng nào doanh nghiệp còn đáp ứng các tiêu chí đã đặt ra."
+   ],
+   [
+    "h2",
+    "Cách đầu tư cổ phiếu dài hạn cho người mới"
+   ],
+   [
+    "ol",
+    [
+     "Chỉ dùng tiền nhàn rỗi ít nhất 3–5 năm, không dùng tiền vay hay tiền sắp cần.",
+     "Chọn doanh nghiệp đầu ngành, lợi nhuận tăng đều nhiều năm, nợ vay vừa phải.",
+     "Mua chia nhiều lần (mua đều theo tháng) thay vì dồn một lần.",
+     "Xem lại báo cáo tài chính mỗi quý, không cần theo dõi giá từng phiên.",
+     "Giữ chừng nào câu chuyện doanh nghiệp còn đúng; bán khi lý do mua không còn."
+    ]
+   ],
+   [
+    "h2",
+    "Tự kiểm tra nhanh một cổ phiếu dài hạn"
+   ],
+   [
+    "ul",
+    [
+     "Lợi nhuận 5 năm gần nhất: tăng đều hay lúc lên lúc xuống?",
+     "ROE (lợi nhuận trên vốn chủ): duy trì trên khoảng 15% là dấu hiệu tốt ở nhiều ngành.",
+     "Nợ vay so với vốn chủ: tăng nhanh là điểm cần cẩn thận.",
+     "Dòng tiền kinh doanh: có tiền thật về hay chỉ lãi trên giấy?",
+     "Định giá P/E, P/B so với chính lịch sử của mã và các mã cùng ngành."
+    ]
+   ],
+   [
+    "p",
+    "Các chỉ số P/E, P/B, ROE, lợi nhuận 8 quý của hơn 400 mã có sẵn miễn phí ở trang <a href=\"/ma/\">tra cứu mã cổ phiếu</a>."
+   ],
+   [
+    "h2",
+    "Sai lầm khi đầu tư dài hạn"
+   ],
+   [
+    "ul",
+    [
+     "Mua theo tin đồn rồi gọi là đầu tư dài hạn khi bị lỗ.",
+     "Dồn toàn bộ vốn vào một mã.",
+     "Dùng margin cho khoản định giữ nhiều năm: lãi vay ăn mòn lợi nhuận và dễ bị bán giải chấp khi thị trường giảm.",
+     "Bỏ quên danh mục, không xem lại khi doanh nghiệp xấu đi."
+    ]
    ]
   ]
  },
