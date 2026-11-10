@@ -104,6 +104,12 @@ def _cover(v, sc):
         c = c.resize((LW, LH), Image.BILINEAR)
         _CV[key_] = Image.blend(c, Image.new("RGB", (LW, LH), (8, 10, 15)), 0.55)
     return _CV[key_].copy()
+def _kb_bg(sc, t):
+    """Ken Burns nhẹ cho ảnh nền cảnh số liệu: zoom 1.00->1.08 + lia chậm, chiều xen kẽ theo cảnh."""
+    B = sc["_bg"]; T = max(1.0, sc.get("_T") or 20.0); u = dx2.ease(min(1.0, t / T)) if T < 3 else min(1.0, t / T)
+    zin = (sc.get("_idx", 0) % 2 == 0); z = 1.0 + 0.08 * (u if zin else 1 - u)
+    w2, h2 = int(LW / z), int(LH / z); dx = int((LW - w2) * (0.3 + 0.4 * u)); dy = (LH - h2) // 2
+    return B.crop((dx, dy, dx + w2, dy + h2)).resize((LW, LH), Image.BILINEAR)
 def _prep_ph(sc, ph):
     sc["_ph"] = ph
     # nền ảnh thật làm tối + thẻ ảnh sắc nét bên phải
@@ -148,7 +154,10 @@ def _srt(scenes, b, path):
             L.append("%d\n%s --> %s\n%s\n" % (k, ts(b[i] + a).replace(".", ","), ts(b[i] + e).replace(".", ","), c)); k += 1
     open(path, "w", encoding="utf-8").write("\n".join(L))
 SUB_ON = [False]
-HU = [os.environ.get("HIEU_UNG", "1") == "1"]   # 10/11: hiệu ứng video dài (chuyển cảnh, phụ đề màu, thanh chương)
+HU = [os.environ.get("HIEU_UNG", "1") == "1"]
+# 11/11 NV1: HIỆU ỨNG 2 – chuyển cảnh đa dạng (whip đổi chương / crossfade / zoom xuyên), Ken Burns ảnh nền cảnh số liệu,
+# thanh chương có vạch mốc, whoosh chỉ khi đổi chương. Bật: META/biến HIEU_UNG2=1 hoặc lô >= 20261111 (lô cũ giữ nguyên).
+HU2 = [HU[0] and (os.environ.get("HIEU_UNG2") == "1" or bool(g.get("HIEU_UNG2")) or (os.environ.get("HIEU_UNG2") != "0" and batch[:8] >= "20261111"))]   # 10/11: hiệu ứng video dài (chuyển cảnh, phụ đề màu, thanh chương)
 _DO = re.compile(r"^(giảm|mất|lỗ|sập|nghèo|khó|âm|bán|tháo|hoảng|đóng|phá|nợ|rơi|bẫy|rủi)", re.I)
 _XANH = re.compile(r"^(tăng|lãi|giàu|lời|dương|hồi|mua|gom|khỏe|bền)", re.I)
 def _mau(w):
@@ -175,9 +184,17 @@ def _draw_sub(im, sc, t, cx, wmax):
 def _thanh_chuong(im, scenes, i, frac):
     """Thanh tiến độ mảnh trên cùng + nhãn chương ngắn (giúp người xem biết còn bao nhiêu, giữ chân)."""
     d = ImageDraw.Draw(im, "RGBA"); n = len(scenes)
-    d.rectangle([0, 0, LW, 6], fill=(255, 255, 255, 40)); d.rectangle([0, 0, int(LW * (i + frac) / n), 6], fill=(255, 196, 0, 230))
+    B = scenes[0].get("_B") if HU2[0] else None
+    pr = ((B[i] + frac * (B[i + 1] - B[i])) / B[-1]) if B else (i + frac) / n
+    d.rectangle([0, 0, LW, 6], fill=(255, 255, 255, 40)); d.rectangle([0, 0, int(LW * pr), 6], fill=(255, 196, 0, 230))
+    if HU2[0]:   # vạch mốc đầu mỗi chương (theo thời lượng thật) – người xem thấy còn mấy phần
+        B = scenes[0].get("_B")
+        for k, sk in enumerate(scenes):
+            if k and sk.get("ch"):
+                x = int(LW * ((B[k] / B[-1]) if B else k / n)); d.rectangle([x - 2, 0, x + 2, 12], fill=(255, 255, 255, 200))
     ch = scenes[i].get("ch") or ""
-    if ch and frac < 0.12:   # nhãn chương hiện 1–2s đầu chương
+    _tt = frac * (scenes[i].get("_T") or 10)
+    if ch and ((0.36 < _tt < 2.8) if HU2[0] else frac < 0.12):   # nhãn chương hiện 1–2s đầu chương (HU2: sau khi chuyển cảnh xong)
         f = dx2.F("Bold", 26); tw = d.textlength(ch, font=f)
         d.rounded_rectangle([24, 18, 24 + tw + 32, 18 + 46], 23, fill=(255, 196, 0, 235)); d.text((40, 26), ch, font=f, fill=(10, 12, 17))
 AV = [None, None, 0]
@@ -206,7 +223,8 @@ def land(v, sc, t):
         import chat_ui; im = chat_ui.frame(sc, t); _draw_sub(im, sc, t, 1295, 1100); return im
     if k in ("end", "text"):   # cảnh chữ: ảnh tràn khung + Ken Burns + đổi góc máy (bỏ kiểu cột dọc giữa màn hình)
         im = land_text.frame(sc, t); _draw_sub(im, sc, t, LW/2, LW - 200); return im
-    im = sc["_bg"].copy() if "_bg" in sc else _cover(v, sc)
+    if "_bg" in sc and HU2[0]: im = _kb_bg(sc, t)
+    else: im = sc["_bg"].copy() if "_bg" in sc else _cover(v, sc)
     if "_bg" in sc:
         fc = dx2.F("SemiBold", 18); ImageDraw.Draw(im).text((24, LH-34), "Ảnh minh hoạ: Wikimedia Commons", font=fc, fill=(150, 156, 170))
     if k in ("end", "text"):
@@ -239,6 +257,30 @@ def land(v, sc, t):
     _draw_sub(im, sc, t, _px + _pw/2, _pw)
     return im
 PREV = [None]
+def _kieu(scenes, i):
+    """Kiểu chuyển: đổi chương = whip (lia nhanh); cảnh thường xen kẽ crossfade / zoom xuyên; vào/ra CTA = crossfade."""
+    if scenes[i].get("ch"): return "whip"
+    if scenes[i].get("cta") or scenes[i - 1].get("cta"): return "fade"
+    return "zoom" if i % 3 == 0 else "fade"
+DUR = {"whip": 0.34, "fade": 0.40, "zoom": 0.36}
+def _mo_ngang(im, k):
+    """mờ chuyển động ngang (rẻ): co chiều ngang rồi phóng lại."""
+    k = max(1, int(k)); return im.resize((max(8, LW // k), LH), Image.BILINEAR).resize((LW, LH), Image.BILINEAR) if k > 1 else im
+def _chuyen(prev, cur, tt, kieu):
+    D = DUR[kieu]
+    if tt >= D: return cur
+    u = dx2.ease(tt / D)
+    if kieu == "fade": return Image.blend(prev, cur, u)
+    if kieu == "zoom":   # khung cũ phóng to mờ dần, khung mới thu từ 1.06 về 1
+        z1 = 1.0 + 0.14 * u; w1, h1 = int(LW * z1), int(LH * z1)
+        a = prev.resize((w1, h1), Image.BILINEAR).crop(((w1 - LW)//2, (h1 - LH)//2, (w1 - LW)//2 + LW, (h1 - LH)//2 + LH))
+        z2 = 1.06 - 0.06 * u; w2, h2 = int(LW * z2), int(LH * z2)
+        b_ = cur.resize((w2, h2), Image.BILINEAR).crop(((w2 - LW)//2, (h2 - LH)//2, (w2 - LW)//2 + LW, (h2 - LH)//2 + LH))
+        return Image.blend(a, b_, u)
+    # whip: cả 2 khung trượt sang trái, mờ ngang mạnh nhất ở giữa
+    x = int(LW * u); bl = 1 + 22 * (1 - abs(2 * u - 1))
+    can = Image.new("RGB", (LW, LH)); can.paste(prev, (-x, 0)); can.paste(cur, (LW - x, 0))
+    return _mo_ngang(can, bl)
 def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
     import wave, re
     tmpd = "/tmp/hl_%s_parts" % key; os.makedirs(tmpd, exist_ok=True); parts = []; b = [0.0]
@@ -254,6 +296,8 @@ def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
     A = os.path.join(tmpd, "full.wav")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", A])
     _sub_plan(scenes, b, gap); SUB_ON[0] = True; _av_init(A)
+    scenes[0]["_B"] = list(b)
+    for _k, _s in enumerate(scenes): _s["_idx"] = _k; _s["_hu2"] = HU2[0]
     tmp = "/tmp/hl_%s.mp4" % key; FPS = dx2.FPS
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", "%dx%d" % (LW, LH), "-r", str(FPS), "-i", "-",
                           "-pix_fmt", "yuv420p", "-c:v", "libx264", "-crf", "21", "-g", "60", "-preset", "veryfast", tmp], stdin=subprocess.PIPE)
@@ -262,7 +306,12 @@ def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
         n = int(round(b[i+1]*FPS)) - fr; sc["_T"] = n / FPS
         for j in range(n):
             AV[2] = fr + j; im = land(None if sc["k"] in ("text", "end", "chat", "noti", "call", "giay") else dx2.draw(sc, j/FPS, j/max(1, n)), sc, j/FPS)
-            if HU[0]:
+            if HU2[0]:
+                tt = j / FPS
+                if i > 0 and PREV[0] is not None: im = _chuyen(PREV[0], im, tt, _kieu(scenes, i))
+                _thanh_chuong(im, scenes, i, j / max(1, n))
+                if j == n - 1: PREV[0] = im.copy()
+            elif HU[0]:
                 tt = j / FPS
                 if i > 0 and tt < 0.22:   # punch-in 1.06 -> 1 đầu cảnh
                     z = 1.06 - 0.06 * dx2.ease(tt / 0.22); w2, h2 = int(LW * z), int(LH * z)
@@ -314,7 +363,8 @@ b = build_land(key, scenes, wd, rawmp4, tempo=1.0)
 try:
     sys.path.insert(0, os.path.join(HERE, "story")); import am_thanh, wave as _wv
     ev = []
-    for i in range(1, len(b) - 1): ev.append((max(0, b[i] - 0.18), "whoosh"))
+    for i in range(1, len(b) - 1):
+        if not HU2[0] or raw[i].get("ch"): ev.append((max(0, b[i] - 0.12), "whoosh"))
     for i, r in enumerate(raw):
         if i < len(b) - 1 and r.get("ch"): ev.append((b[i] + 0.25, "ting"))
         elif i < len(b) - 1 and re.search(r"\d+[.,]?\d*\s*(%|tỷ|nghìn tỷ|lần)", r.get("say", "")): ev.append((b[i] + 0.35, "pop"))
