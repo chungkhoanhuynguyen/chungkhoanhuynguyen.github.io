@@ -35,6 +35,14 @@ def prep(sc, phs):
     if L: sc["_kb"] = L
 
 def _shot_bg(sc, t):
+    # HIỆU ỨNG 2: đổi góc máy bằng hoà trộn 0,45s thay vì cắt cứng
+    s = int(t // SHOT); r = t - s * SHOT
+    if sc.get("_hu2") and s > 0 and r < 0.45:
+        a = _shot_raw(sc, s * SHOT - 0.02); b = _shot_raw(sc, t); u = dx2.ease(r / 0.45)
+        return Image.blend(a, b, u)
+    return _shot_raw(sc, t)
+
+def _shot_raw(sc, t):
     s = int(t // SHOT); u = (t % SHOT) / SHOT; B = sc["_kb"][s % len(sc["_kb"])]
     # góc máy xen kẽ: rộng zoom vào / cận lia ngang / rộng zoom ra
     kind = s % 3
