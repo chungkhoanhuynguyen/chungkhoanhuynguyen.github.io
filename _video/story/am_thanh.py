@@ -99,6 +99,30 @@ def track(total, events, nen_kieu=None, nen_db=-20):
         s = f(); i = int(st * SR); out[i:i + len(s)] += s[:max(0, len(out) - i)]
     return np.clip(out, -1, 1)
 
+# ---- QL1 11/11: âm thanh cảnh điện thoại / giấy tờ ----
+def rung():           # điện thoại rung 2 nhịp
+    out = []
+    for _ in range(2):
+        t = _t(0.32); x = np.sin(2 * np.pi * 165 * t) * (0.6 + 0.4 * np.sign(np.sin(2 * np.pi * 28 * t)))
+        out += [_lp(x, 6) * _env(len(t), 0.01, 0.05) * 0.55, np.zeros(int(SR * 0.12))]
+    return np.concatenate(out)
+def chuong():         # nhạc chuông cuộc gọi đến
+    out = []
+    for _ in range(2):
+        for f in (1046.5, 1318.5, 1568.0, 1318.5):
+            t = _t(0.18); out.append((np.sin(2 * np.pi * f * t) + 0.3 * np.sin(4 * np.pi * f * t)) * np.exp(-t * 14) * 0.35)
+        out.append(np.zeros(int(SR * 0.35)))
+    return np.concatenate(out)
+def tin():            # tin nhắn bật lên
+    t = _t(0.16); return (np.sin(2 * np.pi * 1480 * t) * np.exp(-t * 30) + 0.5 * np.sin(2 * np.pi * 1975 * t) * np.exp(-t * 40)) * 0.28
+def but():            # bút gạch dưới
+    n = _noise(0.38); return _lp(n - _lp(n, 40), 3) * _env(len(n), 0.03, 0.12) * 0.18
+def dau():            # đóng dấu
+    t = _t(0.3); th = np.sin(2 * np.pi * (90 - 40 * t) * t) * np.exp(-t * 18) * 0.8
+    c = _noise(0.03) * 0.4; th[:len(c)] += c; return th
+
+HANH.update(rung=lambda: rung() * 1.6, chuong=lambda: chuong() * 1.5, tin=lambda: tin() * 1.6, but=lambda: but() * 2.0, dau=dau)
+
 if __name__ == "__main__":   # bản nghe thử: lần lượt từng tiếng trên nền phố Hà Nội
     import wave, sys
     names = list(DIEN) + list(HANH); ev = [(0.6 + i * 1.1, k) for i, k in enumerate(names)]

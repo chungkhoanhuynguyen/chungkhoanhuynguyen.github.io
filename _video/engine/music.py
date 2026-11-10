@@ -57,7 +57,7 @@ def track(total, bounds):
 def write(path, x):
     with wave.open(path, "w") as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((np.clip(x, -1, 1)*32767).astype(np.int16).tobytes())
-def ket_hop(total, bounds, lofi=False):
+def ket_hop(total, bounds, lofi=False, cang=None):
     """Anh Huy chốt 6/11: kết hợp mẫu 2 (kịch tính) + mẫu 3 (lo-fi).
     Mở bài (cảnh đầu) = 2 để giật người xem; thân bài = 3 nhẹ, dễ nghe giọng; cảnh cuối (kêu gọi/câu hỏi) = 2 để chốt mạnh."""
     import nhac20
@@ -73,6 +73,11 @@ def ket_hop(total, bounds, lofi=False):
     w = np.clip((t - a_end)/xf + .5, 0, 1)                                  # 0 -> 2, 1 -> 3
     if z_beg < total: w = w * np.clip((z_beg - t)/xf + .5, 0, 1)
     if lofi: w = np.ones_like(t)          # video kể chuyện: lo-fi chill cả bài (anh Huy 7/11)
+    if lofi and cang:                     # QL1 11/11: đoạn căng (sập, mất tiền, gọi ký quỹ) chuyển dần sang nhạc kịch tính rồi về lo-fi
+        m = np.zeros_like(t)
+        for a_, b_ in cang: m[(t >= a_) & (t < b_)] = 1.0
+        k_ = int(SR * 2.5); m = np.convolve(m, np.ones(k_) / k_, "same")
+        w = 1 - 0.75 * np.clip(m, 0, 1)
     out = kt*np.sqrt(1-w) + lf*np.sqrt(w)
     fo = int(SR*1.8); out[-fo:] *= np.linspace(1, 0, fo)
     out = out/(np.sqrt(np.mean(out**2))+1e-9)*0.12            # chuẩn hoá theo RMS (không theo đỉnh)
@@ -85,9 +90,9 @@ def whoosh(d=0.45):
         k = 2 + int(30*(1-t[i]))
         y[i] = x[max(0, i-k):i+1].mean()
     return y*np.sin(np.pi*t)**2*0.9
-def mix(video, bounds, out, music_db=-8, lofi=False, whoosh_on=None, whoosh=0):
+def mix(video, bounds, out, music_db=-8, lofi=False, whoosh_on=None, whoosh=0, cang=None):
     total = bounds[-1]
-    try: x = ket_hop(total, bounds, lofi)
+    try: x = ket_hop(total, bounds, lofi, cang)
     except Exception as e: print("nhac ket hop loi, dung mau 2:", e, flush=True); x = track(total, bounds)
     if whoosh:
         w_ = globals()["whoosh"]() * 0.35 / (10 ** (music_db / 20))   # bù lại mức nhạc để tiếng vút nghe rõ
@@ -96,8 +101,10 @@ def mix(video, bounds, out, music_db=-8, lofi=False, whoosh_on=None, whoosh=0):
         x = np.clip(x, -0.95, 0.95)
     write("/tmp/bgm.wav", x)
     th, ra = ("0.10", "2.5") if lofi else ("0.04", "6")   # kể chuyện: nhạc nền nghe rõ, chỉ hạ nhẹ khi có giọng (anh Huy 7/11 "nhạc không nghe thấy gì")
-    fc = ("[1:a]volume=%ddB,aresample=44100[m];[0:a]asplit=2[v][sc];"
+    # QL1 11/11: làm sạch giọng anh Huy (cắt ù thấp, nén nhẹ cho đều, sáng 3kHz cho rõ chữ) + chuẩn âm lượng YouTube -14 LUFS
+    fc = ("[1:a]volume=%ddB,aresample=44100[m];[0:a]highpass=f=75,acompressor=threshold=-20dB:ratio=2.5:attack=8:release=120:makeup=2,"
+          "equalizer=f=3200:t=q:w=1.2:g=2,equalizer=f=250:t=q:w=1:g=-1.5,asplit=2[v][sc];"
           "[m][sc]sidechaincompress=threshold=%s:ratio=%s:attack=60:release=600[md];"
-          "[v][md]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95[a]") % (music_db, th, ra)
+          "[v][md]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11,aresample=44100[a]") % (music_db, th, ra)
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", video, "-i", "/tmp/bgm.wav", "-filter_complex", fc,
                     "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", out])

@@ -376,6 +376,30 @@ try:
         if i < len(b) - 1 and r.get("ch"): ev.append((b[i] + 0.25, "ting"))
         elif i < len(b) - 1 and re.search(r"\d+[.,]?\d*\s*(%|tỷ|nghìn tỷ|lần)", r.get("say", "")): ev.append((b[i] + 0.35, "pop"))
     ev.append((max(0, b[-2] + 0.3), "tada"))
+    # QL1 11/11: tiếng theo cảnh điện thoại / giấy tờ, khớp đúng nhịp bật của chat_ui
+    try:
+        import chat_ui as _cu
+        for i, sc in enumerate(scenes):
+            if i >= len(b) - 1: break
+            k = sc.get("k"); t0 = b[i]
+            if k == "chat":
+                c = sc.get("chat", {}); tms = _cu._thoi_diem(sc, len(c.get("msgs", [])), c.get("co_san", 0))
+                for j, tt in enumerate(tms):
+                    if tt >= 0: ev.append((t0 + tt, "tin"))
+            elif k == "noti":
+                n = sc.get("noti", {}); tms = _cu._thoi_diem(sc, len(n.get("items", [])), n.get("co_san", 0))
+                for j, tt in enumerate(tms):
+                    if tt >= 0: ev.append((t0 + tt, "rung" if j == 0 else "tin"))
+            elif k == "call" and not sc.get("co_san"):
+                ev.append((t0 + 0.1, "chuong"))
+                if sc.get("_T", 0) > 6: ev.append((t0 + 2.4, "rung"))
+            elif k == "giay":
+                g = sc.get("giay", {}); dk = g.get("dieu", []); tms = _cu._thoi_diem(sc, sum(1 for x in dk if x[1]))
+                for tt in tms: ev.append((t0 + tt, "but"))
+                if tms: ev.append((t0 + tms[-1] + 0.6, "dau"))
+        ev = [e for e in ev if not (e[1] == "pop" and any(abs(e[0] - f[0]) < 0.5 and f[1] in ("tin", "rung", "chuong", "but") for f in ev))]
+    except Exception as _e:
+        print("sfx dien thoai: bo qua", _e, flush=True)
     x = am_thanh.track(b[-1] + 1, ev) * 0.28
     sf = WORK + "/sfx.wav"
     with _wv.open(sf, "w") as w: w.setnchannels(1); w.setsampwidth(2); w.setframerate(44100); w.writeframes((x * 32767).astype("int16").tobytes())
@@ -387,7 +411,11 @@ except Exception as e:
     print("sfx: bo qua", e, flush=True)
 try: _NH = json.load(open(os.path.join(HERE, "queue", sys.argv[1], "meta.json"), encoding="utf-8")).get(key, {}).get("nhac", "")
 except Exception: _NH = ""
-music.mix(rawmp4, b, out, lofi=(_NH == "lofi"))
+_CANG = re.compile(r"sập|mất trắng|bốc hơi|cháy tài khoản|gọi ký quỹ|bán giải chấp|phá sản|vỡ nợ|lừa|kiện|bắt|trắng tay|nợ nần|hoảng|tháo chạy|lao dốc|thua lỗ", re.I)
+_cg = [(b[i], b[i + 1]) for i, r in enumerate(raw) if i < len(b) - 1 and _CANG.search(r.get("say", ""))]
+try: music.mix(rawmp4, b, out, lofi=(_NH == "lofi"), cang=_cg or None)
+except TypeError: music.mix(rawmp4, b, out, lofi=(_NH == "lofi"))
+print(key, "nhac cang", len(_cg), flush=True)
 # 5) ảnh bìa = khung cảnh mở đầu lúc 3 giây
 try:  # ảnh bìa đồng bộ chữ to (bia.py) – anh Huy chốt 5/11
     import bia as _bia
