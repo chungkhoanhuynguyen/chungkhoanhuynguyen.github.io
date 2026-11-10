@@ -151,7 +151,7 @@ S = [
       say=("Thông báo thứ hai, từ thằng Tùng: mày ơi, tao cũng mất hết rồi, nhóm của thầy Phong là lừa đảo. Thì ra ảnh lãi ba mươi phần trăm hôm nào cũng chỉ là ảnh lãi trên giấy. "
            "Thông báo thứ ba, từ mẹ vợ: con ơi, mẹ hỏi chút, tiền mẹ chuyển hai đứa để mua nhà, con gửi tiết kiệm ở ngân hàng nào, mẹ muốn chuyển thêm cho đủ kỳ hạn. "
            "Bạn nhìn ba tin nhắn rất lâu. Rồi bạn bước vào phòng, nhìn Hà đang ngủ, tay đặt lên bụng.")),
- dict(k='bignum', cap=('SAU BA THÁNG', 'BẠN ĐÃ MẤT'), cols=CR, value=470, fmt='{:,.0f}', unit=' triệu', top='15 TR PHÍ VIP + 120 TR LỖ MÃ X + 335 TR NẠP SÀN', sub='trong đó 90 triệu là tiền vay', col=RED,
+ dict(k='bignum', cap=('SAU BA THÁNG', 'BẠN ĐÃ MẤT'), cols=CR, value=470, fmt='{:,.0f}', unit=' triệu', top='PHÍ VIP + LỖ MÃ X + NẠP SÀN ẢO', sub='trong đó 90 triệu là tiền vay', col=RED,
       say=("Cộng lại sau ba tháng: mười lăm triệu tiền phí phòng VIP. Khoảng một trăm hai mươi triệu lỗ ở mã X. Ba trăm ba mươi lăm triệu nạp vào sàn ảo, trừ đi ba triệu rút được hôm đầu. "
            "Tổng cộng khoảng bốn trăm bảy mươi triệu đồng. Năm trăm triệu tiền mua nhà giờ chỉ còn khoảng một trăm ba mươi lăm triệu, cộng thêm 90 triệu nợ ứng dụng cho vay, đang lãi chồng lãi. "
            "Và điều tệ nhất: tất cả những người bạn gặp trên hành trình đó, thầy Phong, chị Lan Anh, anh Hùng, Thư, đều có thể chưa từng tồn tại.")),
@@ -194,8 +194,8 @@ OV = {
         ('Hùng', 'Vừa đặt cọc xe mới nhờ thầy. Tạ ơn thầy'),
         ('Cô Mai', 'Cô về hưu rồi, nhờ thầy mà trả hết nợ cho con'),
         ('Thầy Phong', 'Kỷ luật là chiến thắng. 9h15 vào lệnh.')])),
- 3: dict(anh='Saigon night'),
- 4: dict(anh='Binh Duong'), 5: dict(anh='Com tam'), 6: dict(anh='smartphone'),
+ 3: dict(anh='Ho Chi Minh City skyline'),
+ 4: dict(anh='Ho Chi Minh City apartments'), 5: dict(anh='Com tam'), 6: dict(anh='smartphone'),
  7: dict(k='chat', chat=dict(ten='Thư – Trợ lý thầy Phong', tv='Đang hoạt động', gio='22:41', mau=(255, 120, 160), msgs=[
         ('Thư', 'Anh ơi, em là Thư bên đội ngũ của thầy Phong ạ'),
         ('Thư', 'Anh đầu tư lâu chưa ạ?'), ('me', 'Anh mới tìm hiểu thôi em'),
@@ -250,7 +250,7 @@ OV = {
         ('Vay nhanh', 'Khoản vay quá hạn 7 ngày', 'Chúng tôi sẽ liên hệ những người trong danh bạ của quý khách.', R_),
         ('Tin nhắn', 'Tùng', 'Mày ơi, tao cũng mất hết rồi. Nhóm của thầy Phong là lừa đảo.', X_),
         ('Tin nhắn', 'Mẹ vợ', 'Con ơi, tiền mẹ chuyển hai đứa mua nhà, con gửi tiết kiệm ngân hàng nào?', (34, 197, 94))])),
- 26: dict(anh='staircase'), 27: dict(anh='Vietcombank'), 28: dict(anh='Saigon river'),
+ 26: dict(anh='staircase'), 27: dict(anh='File:Sở GDCK TPHCM (HOSE).JPG'), 28: dict(anh='Saigon river'),
 }
 for c in S:
     for key_ in ('anh', 'anh2'):
