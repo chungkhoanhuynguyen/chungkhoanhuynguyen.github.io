@@ -57,7 +57,7 @@ S = [
         ('Vy', 'Dạ khoảng 13%/năm, tính theo ngày, dùng ngày nào tính ngày đó thôi ạ'),
         ('Vy', 'Thị trường đang đẹp lắm anh, nhiều khách bên em dùng hết sức mua')]),
       say=("Tuần sau, bạn mở tài khoản chứng khoán, chuyển vào năm trăm triệu. Mười giờ sáng, một chuyên viên tư vấn tên Vy nhắn tin. "
-           "Anh ơi, sức mua của anh đang là một tỷ đồng đó ạ. Lãi vay khoảng mười ba phần trăm một năm, dùng ngày nào tính ngày đó thôi. "
+           "Anh ơi, sức mua của anh đang là một tỷ đồng đó ạ. Lãi vay khoảng mười ba phần trăm mỗi năm, dùng ngày nào tính ngày đó thôi. "
            "Thị trường đang đẹp lắm anh. Nhiều khách bên em dùng hết sức mua.")),
  dict(k='cards', cap=('500 TRIỆU', 'THÀNH SỨC MUA 1 TỶ'), cols=CC, moc=True,
       cards=[('%s triệu' % v(VON), 'tiền thật của bạn', ''), ('%s triệu' % v(VAY), 'tiền vay công ty chứng khoán', ''), ('%s triệu' % v(TONG), 'cổ phiếu đứng tên bạn', '')],
@@ -203,7 +203,7 @@ S = [
       items=[('Không dùng tiền sắp cần đến', GREEN), ('Vay ít, không bao giờ mua tối đa', GREEN), ('Tự đặt điểm dừng trước vạch call', GREEN), ('Tính lãi vay vào kỳ vọng lợi nhuận', GOLD)],
       say=("Margin không phải ác quỷ. Nó là con dao trong bếp: vấn đề là ai cầm, và cầm lúc nào. Nếu vẫn muốn dùng, hãy nhớ bốn nguyên tắc. "
            "Một, không bao giờ dùng tiền sắp cần đến: tiền cưới, tiền nhà, tiền học. Hai, vay ít, đừng bao giờ bấm mua tối đa. "
-           "Ba, tự đặt điểm dừng lỗ của mình, trước khi công ty chứng khoán đặt hộ. Bốn, cộng tiền lãi vay vào bài toán: nếu kỳ vọng không thắng nổi mười ba phần trăm một năm, khoản vay đó không đáng.")),
+           "Ba, tự đặt điểm dừng lỗ của mình, trước khi công ty chứng khoán đặt hộ. Bốn, cộng tiền lãi vay vào bài toán: nếu kỳ vọng không thắng nổi mười ba phần trăm mỗi năm, khoản vay đó không đáng.")),
  dict(k='text', cap=('ĐỪNG VAY TIỀN', 'MUA THỨ MÌNH KHÔNG HIỂU'), cols=CC, anh='File:Sở GDCK TPHCM (HOSE).JPG',
       say=("Và quan trọng nhất, đừng vay tiền để mua thứ mình không hiểu. Trong câu chuyện này, bạn chưa từng mở báo cáo tài chính của mã Khoa chỉ. "
            "Nếu muốn xem nhanh P/E, lợi nhuận và biên lãi của hơn 400 mã trước khi xuống tiền, bạn có thể tra miễn phí trên chứng khoán Huy Nguyễn chấm com.")),
