@@ -17,14 +17,20 @@ def can_hoa(m): return (1 / (1 - m / 100) - 1) * 100
 S = [
  dict(k='hook', ch='Mở đầu', label='Vì sao thật tệ khi…', cap=('THỊ TRƯỜNG GIẢM 23%', 'TÀI KHOẢN MẤT 46%'), cols=CR, anh='File:Sở GDCK TPHCM (HOSE).JPG',
       say="Thị trường giảm 23%. Nhưng tài khoản của bạn mất 46%. Và đó mới chỉ là ngày đầu tiên của cơn ác mộng."),
- dict(k='bignum', cap=('9 GIỜ TỐI', 'MỘT TIN NHẮN'), cols=CR, value=35, fmt='{:,.0f}', unit='%', top='TỶ LỆ KÝ QUỸ CÒN', sub='yêu cầu nộp thêm tiền trước 10 giờ sáng mai', col=RED,
+ dict(k='noti', cap=('9 GIỜ TỐI', 'MỘT TIN NHẮN'), cols=CR, noti=dict(gio='21:00', ngay='Thứ Năm', items=[
+        ('Tin nhắn', 'Công ty chứng khoán', 'Tỷ lệ ký quỹ của Quý khách đã xuống dưới mức duy trì. Đề nghị nộp bổ sung trước 10:00 ngày mai, nếu không hệ thống sẽ tự bán.', (239, 68, 68))]),
       say=("Chín giờ tối thứ Năm, điện thoại của bạn rung lên. Một tin nhắn từ công ty chứng khoán: tỷ lệ ký quỹ của quý khách đã xuống dưới mức duy trì. "
            "Đề nghị nộp thêm tiền trước mười giờ sáng mai. Nếu không, hệ thống sẽ tự bán.")),
  dict(k='text', cap=('VÌ SAO THẬT TỆ KHI', 'VAY MARGIN ĐU ĐỈNH'), cols=CC, anh='Ho Chi Minh City skyline',
       say=("Khoan đã. Bạn đâu phải người liều. Bạn là nhân viên văn phòng, 29 tuổi, có 500 triệu đồng dành dụm suốt sáu năm để cưới vợ. "
            "Vậy làm sao một người cẩn thận như bạn lại rơi vào đúng tình huống này? Hôm nay mình sẽ cùng bạn sống lại câu chuyện đó: vì sao thật tệ khi vay margin đu đỉnh. "
            "Câu chuyện là giả định, nhưng từng con số đều tính được, và rất nhiều người ngoài đời đã đi đúng con đường này.")),
- dict(k='text', ch='Chương 1 – Bữa tiệc mà ai cũng được mời', cap=('AI CŨNG ĐANG LÃI', 'TRỪ MÌNH'), cols=CC, moc=True, anh='coffee shop Vietnam',
+ dict(k='chat', ch='Chương 1 – Bữa tiệc mà ai cũng được mời', cap=('AI CŨNG ĐANG LÃI', 'TRỪ MÌNH'), cols=CC, moc=True,
+      chat=dict(ten='Hội bạn đại học', tv='18 thành viên', gio='22:15', msgs=[
+        ('Khoa', 'Hai tháng lãi 30% anh em ạ', 'lai', '+30,4%'),
+        ('Chị Ngân kế toán', 'Chị vừa đổi xe nhờ cổ phiếu đấy'),
+        ('Khoa', 'Ai còn gửi tiết kiệm là lạc hậu rồi'),
+        ('me', 'Mình vẫn để tiết kiệm…')]),
       say=("Mọi chuyện bắt đầu ở quán cà phê. Thằng bạn thân thời đại học khoe vừa lãi 30% trong hai tháng. Chị kế toán trong công ty mua được xe mới. "
            "Nhóm chat chứng khoán mỗi tối đều có người đăng ảnh tài khoản xanh lè. "
            "Còn bạn để 500 triệu trong sổ tiết kiệm, mỗi tháng nhận khoảng ba triệu tiền lãi. Ngồi giữa những câu chuyện đó, bạn bắt đầu thấy mình là đứa chậm chân nhất bàn. "
@@ -35,7 +41,7 @@ S = [
            "Công ty chứng khoán sẵn sàng cho bạn vay thêm đúng bằng số tiền bạn có. Đó chính là margin, hay giao dịch ký quỹ. "
            "Chỉ cần bấm nút mua tối đa, 500 triệu của bạn biến thành một tỷ đồng cổ phiếu. "
            "Nghe thì giống được tặng thêm một đôi chân. Nhưng thật ra, đó là một cái thang mượn. Người ta cho bạn mượn thang để leo cao hơn, chứ không cho bạn mượn dù để nhảy xuống.")),
- dict(k='bignum', ch='Chương 3 – Tuần trăng mật', cap=('THỊ TRƯỜNG +10%', 'VỐN CỦA TUẤN'), cols=CC, moc=True, value=20, fmt='+{:,.0f}', unit='%', top='LÃI 100 TRIỆU', sub='trong vòng một tháng', col=GREEN,
+ dict(k='bignum', ch='Chương 3 – Tuần trăng mật', cap=('THỊ TRƯỜNG +10%', 'VỐN CỦA BẠN'), cols=CC, moc=True, value=20, fmt='+{:,.0f}', unit='%', top='LÃI 100 TRIỆU', sub='trong vòng một tháng', col=GREEN,
       say=("Tháng đầu tiên, mọi thứ đẹp như mơ. Cổ phiếu tăng 10%. Một tỷ thành một tỷ một trăm triệu. "
            "Nhưng tiền vay vẫn là 500 triệu, nên toàn bộ 100 triệu tiền lãi thuộc về bạn. Vốn của bạn tăng 20%, gấp đôi thị trường. "
            "Bạn bắt đầu nghĩ mình có năng khiếu. Bạn tính nhẩm: cứ đà này, cuối năm có thể mua được nhà. "
@@ -51,7 +57,7 @@ S = [
            "Bạn chốt lời một mã, rồi lại dùng toàn bộ sức mua mới để mua mã đang được nhắc nhiều nhất. "
            "Bạn không đọc báo cáo tài chính của nó. Bạn chỉ biết nó vừa tăng ba phiên liền và ai cũng đang nói về nó. "
            "Chính khoảnh khắc này mới là đu đỉnh. Không phải vì giá cao, mà vì lý do mua chỉ còn là: người khác đang mua.")),
- dict(k='bars', ch='Chương 6 – Khi thị trường quay đầu', cap=('THỊ TRƯỜNG GIẢM', 'VỐN CỦA TUẤN MẤT'), cols=CR, moc=True,
+ dict(k='bars', ch='Chương 6 – Khi thị trường quay đầu', cap=('THỊ TRƯỜNG GIẢM', 'VỐN CỦA BẠN MẤT'), cols=CR, moc=True,
       bars=[('Giảm %d%%' % g, round(tk(g)[2]), RED if g >= 20 else GOLD, '−' + v(tk(g)[2]) + '%') for g in (10, 20, 23, 30)],
       say=("Rồi thị trường quay đầu, chậm rãi lúc đầu. Giảm 10%%, tài khoản bạn mất %s%%. Giảm 20%%, bạn mất %s%% số vốn. "
            "Đòn bẩy làm lợi nhuận gấp đôi lúc lên, thì cũng làm thua lỗ gấp đôi lúc xuống. Toán học không có thiên vị. "
@@ -62,7 +68,7 @@ S = [
            "Phần thật sự là của bạn chỉ còn %s triệu, tức khoảng %s%% tổng tài sản. Ở nhiều công ty chứng khoán, đây là quanh mức tỷ lệ duy trì. "
            "Đó là lúc tin nhắn chín giờ tối xuất hiện. Người ta gọi đó là call margin. "
            "Công ty chứng khoán không quan tâm cổ phiếu của bạn tốt hay xấu, sau này có lên lại hay không. Họ chỉ quan tâm một điều: tiền cho vay phải được an toàn.") % (v(tk(23)[0]), v(tk(23)[1]), v(tk(23)[3]))),
- dict(k='checklist', ch='Chương 8 – Ba lựa chọn, không cái nào dễ chịu', cap=('ĐÊM ĐÓ BẠN CÓ', '3 LỰA CHỌN'), cols=CR, moc=True,
+ dict(k='checklist', ch='Chương 8 – Ba lựa chọn, không cái nào dễ chịu', cap=('ĐÊM ĐÓ BẠN CÓ', '3 LỰA CHỌN'), cols=CR, moc=True, anh='Saigon night',
       items=[('Nộp thêm tiền: tiền ở đâu ra?', GOLD), ('Tự bán bớt: chốt lỗ ngay', GOLD), ('Không làm gì: bị bán giải chấp', RED)],
       say=("Đêm đó, bạn có ba lựa chọn. Một, nộp thêm tiền. Nhưng toàn bộ tiền tiết kiệm đã nằm trong tài khoản rồi. Muốn nộp thêm, bạn phải vay bố mẹ, vay người quen, hoặc quẹt thẻ tín dụng. "
            "Hai, tự bán bớt cổ phiếu để giảm nợ, tức là biến khoản lỗ trên giấy thành khoản lỗ thật. "
@@ -79,7 +85,7 @@ S = [
            "Đây là phần toán học mà ít ai nói cho bạn biết. Mất 20%%, cần tăng 25%% để về bờ. Mất 46%%, cần tăng %s%%. "
            "Mất 60%%, cần tăng %s%%. Và mất 80%%, cần tăng tới %s%%. "
            "Thua lỗ càng sâu, con đường về càng dài, theo cấp số không công bằng chút nào.") % (v(can_hoa(46)), v(can_hoa(60)), v(can_hoa(80)))),
- dict(k='bignum', ch='Chương 11 – Chuyện này đã xảy ra thật', cap=('VN-INDEX NĂM 2022', 'TỪ ĐỈNH XUỐNG ĐÁY'), cols=CR, moc=True, value=round(-GIAM22, 1), fmt='{:,.1f}', unit='%', top='%s → %s ĐIỂM' % (v(D0, 0), v(D1, 0)), sub='đóng cửa 4/1/2022 → 16/11/2022', col=RED,
+ dict(k='bignum', ch='Chương 11 – Chuyện này đã xảy ra thật', cap=('VN-INDEX NĂM 2022', 'TỪ ĐỈNH XUỐNG ĐÁY'), cols=CR, moc=True, value=round(-GIAM22, 1), fmt='{:,.1f}', unit='%', top='TỪ %s XUỐNG %s ĐIỂM' % (v(D0, 0), v(D1, 0)), sub='đóng cửa 4/1/2022 và 16/11/2022', col=RED, anh='File:Sở GDCK TPHCM (HOSE).JPG',
       say=("Bạn có thể nghĩ đây chỉ là chuyện tưởng tượng. Nhưng năm 2022, VN-Index đóng cửa ở đỉnh khoảng %s điểm vào ngày 4 tháng 1. "
            "Đến giữa tháng 11, chỉ số đóng cửa quanh %s điểm, giảm khoảng %s%%. Nhiều cổ phiếu đầu cơ còn giảm 70, 80%%. "
            "Với người không vay, đó là một năm buồn. Với người dùng margin tối đa ở vùng đỉnh, đó là năm tài khoản về gần bằng 0.") % (v(D0, 0), v(D1, 0), v(GIAM22, 0))),
