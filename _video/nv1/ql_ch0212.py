@@ -103,7 +103,7 @@ g = {}; exec(src, g) if src else None
 SS = g.get('S', {}); MM = g.get('META', {}); SS[KEY] = S; MM[KEY] = META[KEY]
 open(LO + '/video_dai.py', 'w', encoding='utf-8').write(
     "# VIDEO DÀI – QL1 soạn 10/11/2026 theo chuẩn video_dai_ke_chuyen_1011 + chien_luoc_nut_bac_1011.\n"
-    "GOLD=%r; RED=%r; GREEN=%r; BLUE=%r; WHITE=%r\nS = %r\nMETA = %r\n" % (GOLD, RED, GREEN, BLUE, WHITE, SS, MM))
+    "GOLD=%r; RED=%r; GREEN=%r; BLUE=%r; WHITE=%r\nS = {}\n" % (GOLD, RED, GREEN, BLUE, WHITE) + "".join("S[%r] = %r\n" % (k, x) for k, x in SS.items()) + "META = %r\n" % MM)
 json.dump(MM, open(LO + '/meta.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 px = json.load(open(LO + '/px_tuan.json')) if os.path.exists(LO + '/px_tuan.json') else {}
 px['VNMW'] = wk; json.dump(px, open(LO + '/px_tuan.json', 'w'), ensure_ascii=False)
