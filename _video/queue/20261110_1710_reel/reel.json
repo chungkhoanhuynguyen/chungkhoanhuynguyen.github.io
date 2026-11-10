@@ -1,0 +1,154 @@
+[
+ {
+  "key": "TN1011A",
+  "tieu_de": "Ngân hàng Nhà nước bơm tiền thật: mua USD thứ Hai, thứ Tư hằng tuần từ 11/11 – tiền có chảy vào chứng khoán?",
+  "hook": [
+   "NHNN BƠM TIỀN THẬT",
+   "CHỨNG KHOÁN ĐƯỢC GÌ?"
+  ],
+  "nhan": "TIN NÓNG VĨ MÔ",
+  "short_caption": "Từ 11/11, Ngân hàng Nhà nước mua USD giao ngay thứ Hai và thứ Tư hằng tuần, giá 25.500 đồng. Khác hoán đổi 6/11: tiền đồng bơm ra không bị rút về. 13 lần NHNN mua USD giai đoạn 2016–2023, VN-Index tăng 11 lần sau 1 tháng. Quan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "ANH CHỊ NGHĨ SAO?",
+   "loi": "Theo anh chị, đợt bơm tiền này đủ kéo lãi suất giảm và đẩy thị trường đi lên không?",
+   "loi_doc": "Theo anh chị, đợt bơm tiền này đủ kéo lãi suất giảm và đẩy thị trường đi lên không?",
+   "anh": [
+    "File:Sở GDCK TPHCM (HOSE).JPG"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "NHNN BƠM TIỀN THẬT",
+    "loi": "Hôm nay ngày 10/11, Ngân hàng Nhà nước vừa thông báo: từ 11/11, cứ thứ Hai và thứ Tư hằng tuần sẽ mua USD giao ngay của các ngân hàng, giá 25.500 đồng một đô.",
+    "loi_doc": "Hôm nay ngày mười tháng mười một, Ngân hàng Nhà nước vừa thông báo: từ ngày mười một tháng mười một, cứ thứ Hai và thứ Tư hằng tuần sẽ mua đô la Mỹ giao ngay của các ngân hàng, giá hai mươi lăm nghìn năm trăm đồng một đô.",
+    "the": {
+     "loai": "lon",
+     "tieu": "TỪ 11/11/2026",
+     "nguon": "NHNN qua Vietstock, Dân trí 10/11",
+     "dong": [
+      [
+       "MUA USD",
+       70,
+       "trang"
+      ],
+      [
+       "25.500 Đ",
+       90,
+       "vang"
+      ],
+      [
+       "THỨ HAI + THỨ TƯ",
+       44,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "KHÁC GÌ HOÁN ĐỔI 6/11?",
+    "loi": "Đợt hoán đổi ngày 6/11 bơm tối đa khoảng 48.800 tỷ, nhưng sau 182 ngày sẽ rút về. Lần này mua đứt, tiền đồng ở lại hệ thống, không có lịch thu hồi.",
+    "loi_doc": "Đợt hoán đổi ngày sáu tháng mười một bơm tối đa khoảng bốn mươi tám nghìn tám trăm tỷ, nhưng sau một trăm tám mươi hai ngày sẽ rút về. Lần này mua đứt, tiền đồng ở lại hệ thống, không có lịch thu hồi.",
+    "the": {
+     "loai": "lon",
+     "tieu": "HOÁN ĐỔI 6/11 vs MUA ĐỨT 11/11",
+     "nguon": "Vietstock 10/11/2026",
+     "dong": [
+      [
+       "HOÁN ĐỔI: RÚT VỀ SAU 182 NGÀY",
+       40,
+       "do"
+      ],
+      [
+       "MUA ĐỨT: TIỀN Ở LẠI",
+       52,
+       "xanh"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "VÌ SAO LÀM LÚC NÀY?",
+    "loi": "Lãi suất qua đêm đã tăng từ 3,7% ngày 3/11 lên 4,6% ngày 9/11. Cuối năm và Tết cần nhiều tiền, trong khi tỷ giá đã hạ nhiệt.",
+    "loi_doc": "Lãi suất qua đêm đã tăng từ ba phẩy bảy phần trăm ngày ba tháng mười một lên bốn phẩy sáu phần trăm ngày chín tháng mười một. Cuối năm và Tết cần nhiều tiền, trong khi tỷ giá đã hạ nhiệt.",
+    "the": {
+     "loai": "cot",
+     "tieu": "LÃI SUẤT QUA ĐÊM",
+     "nguon": "ABS qua Dân trí 10/11",
+     "hang": [
+      [
+       "3/11",
+       3.7
+      ],
+      [
+       "9/11",
+       4.6
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "%",
+     "max": 5
+    }
+   },
+   {
+    "chu_to": "13 LẦN – 11 LẦN TĂNG",
+    "loi": "Theo ABS, trong 13 lần Ngân hàng Nhà nước mua USD giai đoạn 2016 đến 2023, VN-Index tăng 11 lần sau một tháng, bình quân 4,35%. Đó là thống kê quá khứ, không phải lời hứa.",
+    "loi_doc": "Theo ABS, trong mười ba lần Ngân hàng Nhà nước mua đô la Mỹ giai đoạn hai nghìn không trăm mười sáu đến hai nghìn không trăm hai mươi ba, VN Index tăng mười một lần sau một tháng, bình quân bốn phẩy ba mươi lăm phần trăm. Đó là thống kê quá khứ, không phải lời hứa.",
+    "the": {
+     "loai": "lon",
+     "tieu": "VN-INDEX 1 THÁNG SAU KHI NHNN MUA USD",
+     "nguon": "ABS, 2016–2023",
+     "dong": [
+      [
+       "11/13 LẦN TĂNG",
+       70,
+       "xanh"
+      ],
+      [
+       "BÌNH QUÂN +4,35%",
+       56,
+       "vang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "NHƯNG CẨN THẬN",
+    "loi": "Lạm phát tháng 10 đã 5,09%. Ngân hàng Nhà nước có thể hút bớt tiền qua kênh khác, và nhu cầu vốn cuối năm cao nên lãi suất chưa chắc giảm ngay.",
+    "loi_doc": "Lạm phát tháng mười đã năm phẩy không chín phần trăm. Ngân hàng Nhà nước có thể hút bớt tiền qua kênh khác, và nhu cầu vốn cuối năm cao nên lãi suất chưa chắc giảm ngay.",
+    "the": {
+     "loai": "lon",
+     "tieu": "RỦI RO",
+     "nguon": "Dân trí 10/11/2026",
+     "dong": [
+      [
+       "CPI THÁNG 10: 5,09%",
+       56,
+       "do"
+      ],
+      [
+       "CÓ THỂ BỊ HÚT LẠI",
+       44,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "TIỀN VÀO ĐÂU TRƯỚC?",
+    "loi": "Tiền vào ngân hàng trước, chưa vào thẳng chứng khoán. Thứ cần theo dõi là lãi suất liên ngân hàng có hạ trong vài tuần tới không, và Ngân hàng Nhà nước có bơm ròng đều nhiều tuần liền không.",
+    "loi_doc": "Tiền vào ngân hàng trước, chưa vào thẳng chứng khoán. Thứ cần theo dõi là lãi suất liên ngân hàng có hạ trong vài tuần tới không, và Ngân hàng Nhà nước có bơm ròng đều nhiều tuần liền không.",
+    "anh": [
+     "File:Sở GDCK TPHCM (HOSE).JPG"
+    ],
+    "chat": 1
+   }
+  ]
+ }
+]
