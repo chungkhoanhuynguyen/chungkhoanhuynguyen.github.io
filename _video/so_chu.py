@@ -30,6 +30,8 @@ def doi(s):
                 # QL1 11/11: sau "mười/mươi" số 5 đọc là "lăm", nên "tháng mười năm hai nghìn…" / "hai mươi năm" là NĂM (thời gian), không phải 15/25
                 if not (prv in ("linh", "lẻ") or nxt in ("mươi", "trăm", "nghìn", "ngàn", "triệu", "tỷ", "tỉ", "phẩy", "phần")): break
             if j > i and toks[j-1].lower().strip(",.") in D and w in D: break   # 2 chữ số liền nhau = 2 số khác nhau
+            # QL1 11/11: "sáu triệu một tháng" = 6 triệu MỖI tháng, không phải 6.000.001
+            if w == "một" and j > i and toks[j-1].lower().strip(",.") in M and j + 1 < len(toks) and (toks[j+1].lower().strip(",.") not in W or (toks[j+1].lower().strip(",.") == "năm" and (j + 2 >= len(toks) or toks[j+2].lower().strip(",.") not in ("trăm", "mươi", "nghìn", "ngàn", "triệu", "tỷ", "tỉ")))): break
             j += 1
         if j > i:
             seg = [t.lower().strip(",.") for t in toks[i:j]]
