@@ -147,15 +147,38 @@ def _srt(scenes, b, path):
             L.append("%d\n%s --> %s\n%s\n" % (k, ts(b[i] + a).replace(".", ","), ts(b[i] + e).replace(".", ","), c)); k += 1
     open(path, "w", encoding="utf-8").write("\n".join(L))
 SUB_ON = [False]
+HU = [os.environ.get("HIEU_UNG", "1") == "1"]   # 10/11: hiệu ứng video dài (chuyển cảnh, phụ đề màu, thanh chương)
+_DO = re.compile(r"^(giảm|mất|lỗ|sập|nghèo|khó|âm|bán|tháo|hoảng|đóng|phá|nợ|rơi|bẫy|rủi)", re.I)
+_XANH = re.compile(r"^(tăng|lãi|giàu|lời|dương|hồi|mua|gom|khỏe|bền)", re.I)
+def _mau(w):
+    if re.search(r"\d", w): return (255, 200, 40)
+    if _DO.match(w): return (255, 92, 92)
+    if _XANH.match(w): return (90, 240, 120)
+    return (255, 255, 255)
 def _draw_sub(im, sc, t, cx, wmax):
     if not SUB_ON[0]: return
-    cur = next((c for a, e, c in sc.get("_sub", []) if a <= t < e), None)
+    cur = next(((a, c) for a, e, c in sc.get("_sub", []) if a <= t < e), None)
     if not cur: return
+    a0, cur = cur
     d = ImageDraw.Draw(im, "RGBA"); f = dx2.F("Bold", 40)
     while d.textlength(cur, font=f) > wmax - 60 and f.size > 26: f = dx2.F("Bold", f.size - 2)
+    if HU[0]:   # nảy nhẹ 1.12 -> 1 trong 0.16s khi đổi cụm
+        k = min(1.0, (t - a0) / 0.16); sz = max(20, int(f.size * (1.12 - 0.12 * dx2.ease(k)))); f = dx2.F("Bold", sz)
     tw = d.textlength(cur, font=f); y = LH - 112 if wmax < LW - 300 else LH - 118
     d.rounded_rectangle([cx - tw/2 - 22, y - 10, cx + tw/2 + 22, y + f.size + 14], 14, fill=(0, 0, 0, 170))
-    d.text((cx - tw/2, y), cur, font=f, fill=(255, 255, 255), stroke_width=2, stroke_fill=(0, 0, 0))
+    if not HU[0]:
+        d.text((cx - tw/2, y), cur, font=f, fill=(255, 255, 255), stroke_width=2, stroke_fill=(0, 0, 0)); return
+    x = cx - tw/2; sp = d.textlength(" ", font=f)
+    for w in cur.split(" "):
+        d.text((x, y), w, font=f, fill=_mau(w), stroke_width=2, stroke_fill=(0, 0, 0)); x += d.textlength(w, font=f) + sp
+def _thanh_chuong(im, scenes, i, frac):
+    """Thanh tiến độ mảnh trên cùng + nhãn chương ngắn (giúp người xem biết còn bao nhiêu, giữ chân)."""
+    d = ImageDraw.Draw(im, "RGBA"); n = len(scenes)
+    d.rectangle([0, 0, LW, 6], fill=(255, 255, 255, 40)); d.rectangle([0, 0, int(LW * (i + frac) / n), 6], fill=(255, 196, 0, 230))
+    ch = scenes[i].get("ch") or ""
+    if ch and frac < 0.12:   # nhãn chương hiện 1–2s đầu chương
+        f = dx2.F("Bold", 26); tw = d.textlength(ch, font=f)
+        d.rounded_rectangle([24, 18, 24 + tw + 32, 18 + 46], 23, fill=(255, 196, 0, 235)); d.text((40, 26), ch, font=f, fill=(10, 12, 17))
 AV = [None, None, 0]
 def _av_init(wav):
     if os.environ.get('CHAN_DUNG') != '1': return
@@ -212,6 +235,7 @@ def land(v, sc, t):
     _av_dan(im)
     _draw_sub(im, sc, t, _px + _pw/2, _pw)
     return im
+PREV = [None]
 def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
     import wave, re
     tmpd = "/tmp/hl_%s_parts" % key; os.makedirs(tmpd, exist_ok=True); parts = []; b = [0.0]
@@ -233,7 +257,18 @@ def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
     fr = 0
     for i, sc in enumerate(scenes):
         n = int(round(b[i+1]*FPS)) - fr; sc["_T"] = n / FPS
-        for j in range(n): AV[2] = fr + j; p.stdin.write(land(None if sc["k"] in ("text", "end") else dx2.draw(sc, j/FPS, j/max(1, n)), sc, j/FPS).tobytes())
+        for j in range(n):
+            AV[2] = fr + j; im = land(None if sc["k"] in ("text", "end") else dx2.draw(sc, j/FPS, j/max(1, n)), sc, j/FPS)
+            if HU[0]:
+                tt = j / FPS
+                if i > 0 and tt < 0.22:   # punch-in 1.06 -> 1 đầu cảnh
+                    z = 1.06 - 0.06 * dx2.ease(tt / 0.22); w2, h2 = int(LW * z), int(LH * z)
+                    im = im.resize((w2, h2), Image.BILINEAR).crop(((w2 - LW)//2, (h2 - LH)//2, (w2 - LW)//2 + LW, (h2 - LH)//2 + LH))
+                if i > 0 and tt < 0.28 and PREV[0] is not None:   # hoà trộn mượt với khung cuối cảnh trước
+                    im = Image.blend(PREV[0], im, dx2.ease(tt / 0.28))
+                _thanh_chuong(im, scenes, i, j / max(1, n))
+                if j == n - 1: PREV[0] = im.copy()
+            p.stdin.write(im.tobytes())
         fr += n
     p.stdin.close(); p.wait(); SUB_ON[0] = False
     _srt(scenes, b, os.path.join(OUT, key + ".srt"))
