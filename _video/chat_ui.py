@@ -78,9 +78,11 @@ def chat(sc, t):
         if ai == "*":   # dòng hệ thống
             lines = _wrap(s, txt, dx2.F("SemiBold", 20), SW - 80); h = 30 * len(lines) + 20; blocks.append(("sys", lines, h, p, kieu)); continue
         lines = _wrap(s, txt, fb, mw - 36); h = 34 * len(lines) + 30 + (28 if ai != "me" else 0) + (110 if kieu == "lai" else 0)
-        blocks.append((ai, lines, h, p, kieu))
+        blocks.append((ai, lines, h, p, kieu if kieu != 'lai' else ('lai', m[3] if len(m) > 3 else '')))
     tong = sum(b[2] + 14 for b in blocks); vung = SH - 140 - 90; y = 136 - max(0, tong - vung)
     for ai, lines, h, p, kieu in blocks:
+        so_lai = ''
+        if isinstance(kieu, tuple): kieu, so_lai = kieu
         if y + h < 120: y += h + 14; continue
         if ai == "sys":
             f = dx2.F("SemiBold", 20)
@@ -101,7 +103,7 @@ def chat(sc, t):
         if kieu == "lai":   # ảnh chụp tài khoản lãi (giả định)
             s.rounded_rectangle([x + 14, yy + 6, x + bw - 14, yy + 98], 14, fill=(10, 40, 26))
             s.text((x + 30, yy + 16), "Lãi/lỗ tạm tính", font=dx2.F("SemiBold", 18), fill=(150, 220, 170))
-            s.text((x + 30, yy + 42), m[3] if len(m) > 3 else "+38,2%", font=dx2.F("Black", 40), fill=(60, 230, 120))
+            s.text((x + 30, yy + 42), so_lai or "+38,2%", font=dx2.F("Black", 40), fill=(60, 230, 120))
         y += h + 14
     # ô nhập
     s.rectangle([0, SH - 86, SW, SH], fill=(24, 28, 38)); s.rounded_rectangle([20, SH - 70, SW - 20, SH - 18], 26, fill=(36, 41, 54))
