@@ -40,7 +40,7 @@ def _size(d, L, mw):
 def _wrap(d, L, mw):
     # giữ ngắt dòng gốc nếu chữ đủ to (>=112), không thì chia lại từ thành 2–3 dòng cho chữ to nhất
     best = (L, _size(d, L, mw))
-    if best[1] >= 84: return best      # giữ đúng ngắt dòng bia_hook đã soạn (anh Huy 7/11: không bẻ '7 CÂU / NÓI CỦA / MUNGER')
+    if best[1] >= 68: return best      # QL1 11/11: hạ ngưỡng 84->68, tránh bẻ "LƯƠNG / HƯU", "NỀN NHẬN 1" – giữ đúng ngắt dòng bia_hook đã soạn (anh Huy 7/11: không bẻ '7 CÂU / NÓI CỦA / MUNGER')
     w = [x for x in " ".join(L).split() if x not in ("·", "-", "–", "|")]
     for n in (2, 3):
         if len(w) < n: continue

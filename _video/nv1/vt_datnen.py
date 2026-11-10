@@ -241,6 +241,8 @@ META = {KEY: dict(kenh='@chungkhoanhuynguyen5', seri='Vì sao thật tệ khi…
     tieu_de=TIEU, title=TIEU, mo_ta=MT,
     tags=['mua đất nền', 'dự án ma', 'lừa đảo bất động sản', 'Alibaba', 'đất nền phân lô', 'hợp đồng góp vốn', 'cam kết mua lại', 'vì sao thật tệ khi'],
     bia_hook=['HỨA LÃI 2%', 'VẪN LÀ RUỘNG'], badge='VÌ SAO THẬT TỆ KHI…',
+    bia_hook_b=['MUA ĐẤT NỀN', 'NHẬN VỀ RUỘNG'], badge_b='VÌ SAO THẬT TỆ KHI…',
+    bia_hook_c=['CỌC 50 TRIỆU', 'SỔ ĐỎ ĐÂU?'], badge_c='CHUYỆN THẬT CÓ NGUỒN',
     chuong=[c['ch'] for c in S if c.get('ch')])}
 os.makedirs(LO, exist_ok=True)
 open(LO + '/video_dai.py', 'w', encoding='utf-8').write(
