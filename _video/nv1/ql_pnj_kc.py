@@ -165,7 +165,7 @@ MT = ("Quý 1/2026 PNJ lãi 1.467 tỷ, gấp đôi cùng kỳ. Bốn tháng sau
       "• Chính sách thu đổi 75–90% hoá đơn, kim cương rời tới 95–98% (Nhà Đầu Tư 29/10/2026); nghĩa vụ tích luỹ ~21.000 tỷ (VietnamFinance 21/10/2026)\n"
       "• Kế hoạch 2026 lỗ 6.271 tỷ gồm dự phòng 7.071 tỷ; phát hành riêng lẻ tối đa 550 triệu cổ phiếu (VnEconomy 22/10/2026)\n"
       "• Giá cổ phiếu: đóng cửa 30/6/2026 và 10/11/2026\n\n"
-      "Soi P/E, lợi nhuận từng quý, dòng tiền 400+ mã: https://chungkhoanhuynguyen.com\n"
+      "Hồ sơ PNJ (lợi nhuận 8 quý, P/E, P/B): https://chungkhoanhuynguyen.com/ma/PNJ.html\nSoi P/E, lợi nhuận từng quý, dòng tiền 400+ mã: https://chungkhoanhuynguyen.com\n"
       "Cần trao đổi riêng về danh mục: Zalo 0365.188.286\n\n"
       "Nhân vật chị Lan, Minh là hư cấu. Video không nhằm kết luận về trách nhiệm pháp lý của bất kỳ cá nhân, tổ chức nào; thông tin vụ án theo công bố của cơ quan điều tra và báo chí.\n"
       "Chia sẻ góc nhìn, không phải khuyến nghị mua bán.")
