@@ -184,6 +184,8 @@ META = {KEY: dict(kenh='@chungkhoanhuynguyen5', seri='Vì sao thật tệ khi…
     tieu_de=TIEU, title=TIEU, mo_ta=MT,
     tags=['bảo hiểm liên kết đầu tư', 'gửi tiết kiệm thành bảo hiểm', 'bancassurance', 'huỷ hợp đồng bảo hiểm', 'thời gian cân nhắc 21 ngày', 'bảo hiểm qua ngân hàng', 'người về hưu', 'vì sao thật tệ khi'],
     bia_hook=['MẤT 154 TRIỆU', 'VÌ 1 CHỮ KÝ'], badge='VÌ SAO THẬT TỆ KHI…',
+    bia_hook_b=['GỬI TIẾT KIỆM', 'RA BẢO HIỂM'], badge_b='CHUYỆN THẬT 6.060 NGƯỜI',
+    bia_hook_c=['PHÍ 90 TRIỆU', 'LƯƠNG 6 TRIỆU'], badge_c='VÌ SAO THẬT TỆ KHI…',
     chuong=[c['ch'] for c in S if c.get('ch')])}
 os.makedirs(LO, exist_ok=True)
 open(LO + '/video_dai.py', 'w', encoding='utf-8').write(
