@@ -336,6 +336,7 @@ def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
 # 3b) ảnh minh hoạ thật cho từng cảnh (Commons, miễn phí)
 try:
     sys.path.insert(0, HERE); import anh
+    anh.HAN[0] = time.time() + float(os.environ.get("HAN_ANH", 1200))
     kho = anh.Kho(WORK + "/anh"); chu_de = g.get("META", {}).get(key, {}).get("title", "") if isinstance(g.get("META"), dict) else ""
     nph = 0
     for i, sc in enumerate(scenes):
