@@ -64,7 +64,7 @@ def tim(q, n=12):
 XAU = re.compile(r"efta\d|epstein|nara|evidence|court|crime|police|prison|\.tif|ceremony|Stake_acquisition|signing", re.I)
 
 class Kho:
-    def __init__(s, wd): s.wd = wd; os.makedirs(wd, exist_ok=True); s.cache = {}; s.dung = set(); s.credit = []
+    def __init__(s, wd): s.wd = wd; os.makedirs(wd, exist_ok=True); s.cache = {}; s.dung = set(); s.credit = []; s.img = {}
     def _ds(s, q):
         if q not in s.cache:
             r = tim(q)
@@ -84,10 +84,13 @@ class Kho:
         else: qs += NEN
         for q in qs:
             for it in s._ds(q):
-                if it["u"] in s.dung: continue
+                if it["u"] in s.dung:
+                    # 11/11 NV1: ảnh chỉ định đích danh (File:) được dùng lại cho cảnh sau, thay vì rơi xuống từ khoá chung lạc đề
+                    if q.startswith("File:") and q == sc.get("anh") and it["u"] in s.img: return s.img[it["u"]].copy()
+                    continue
                 try:
                     im = Image.open(io.BytesIO(_get(it["u"], 30))); im = (Image.alpha_composite(Image.new("RGBA", im.size, (255, 255, 255, 255)), im.convert("RGBA")) if im.mode in ("RGBA", "LA", "P") else im).convert("RGB")
                 except Exception as e: print("anh: loi tai", e); s.dung.add(it["u"]); continue
-                s.dung.add(it["u"]); s.credit.append("%s – %s (%s) %s" % (q, it["tg"], it["lic"], it["trang"]))
+                s.dung.add(it["u"]); s.img[it["u"]] = im; s.credit.append("%s – %s (%s) %s" % (q, it["tg"], it["lic"], it["trang"]))
                 return im
         return None

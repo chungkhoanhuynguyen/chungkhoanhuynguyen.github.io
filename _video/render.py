@@ -345,8 +345,15 @@ try:
                     with _w0.open("%s/%02d.wav" % (wd, i)) as _ww: _dur = _ww.getnframes() / _ww.getframerate()
                 except Exception: _dur = len(sc.get("say", "").split()) / 3.3
                 phs = [ph]
-                for _ in range(min(3, int(_dur // land_text.SHOT))):
-                    p2 = kho.cho(sc, chu_de)
+                _them = raw[i].get("anh_them") or []
+                _file = str(raw[i].get("anh", "")).startswith("File:")
+                for _k in range(min(3, int(_dur // land_text.SHOT))):
+                    # 11/11 NV1: cảnh đã chọn đúng File: thì góc máy phụ chỉ lấy từ 'anh_them' (tránh ảnh lạc đề như cổng HUTA KATOWICE, sách báo cáo 1979);
+                    # không có 'anh_them' thì giữ 1 ảnh, Ken Burns đổi góc máy
+                    if _file:
+                        if _k >= len(_them): break
+                        p2 = kho.cho({"anh": _them[_k], "chat": 1}, chu_de)
+                    else: p2 = kho.cho(sc, chu_de)
                     if p2 is None: break
                     phs.append(p2)
                 land_text.prep(sc, phs)
