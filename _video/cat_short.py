@@ -54,7 +54,22 @@ def lop(hook, cta, out):
     d.text((540, 1650), "Huy Nguyễn Chứng Khoán", font=dx2.F("Bold", 34), fill=(255, 255, 255, 220), anchor="mm")
     im.save(out)
 
+def bat_dau_cau(src, a):
+    """QL1 11/11: dời điểm bắt đầu về đầu câu gần nhất (trong ±3 giây) theo .srt, để Short không mở giữa câu."""
+    srt = os.environ.get("SRT") or os.path.splitext(src)[0] + ".srt"
+    if not os.path.exists(srt): return a
+    tx = open(srt, encoding="utf-8").read()
+    cue = re.findall(r"(\d\d):(\d\d):(\d\d),(\d+) --> .*?\n(.+?)(?:\n\n|\Z)", tx, re.S)
+    st = [(int(h) * 3600 + int(m) * 60 + int(x) + int(ms) / 1000, t) for h, m, x, ms, t in cue]
+    prev = ""; tot = []
+    for s, t in st:
+        if not prev or re.search(r"[.?!…]$", prev.strip()): tot.append(s)
+        prev = t
+    gan = [s for s in tot if abs(s - a) <= 3]
+    return (min(gan, key=lambda s: abs(s - a)) - 0.05) if gan else a
+
 def cat(src, out, a, dmax, hook, cta):
+    a = max(0.0, bat_dau_cau(src, a))
     d = ngat(src, a, dmax, float(os.environ.get("DMIN", 30))); png = out + ".png"; lop(hook, cta, png)
     fc = ("[0:v]split=2[b][f];[b]scale=-2:1920,crop=1080:1920,boxblur=28:2,eq=brightness=-0.18[bg];"
           "[f]scale=1080:-2[fg];[bg][fg]overlay=0:(H-h)/2+40[v1];[v1][1:v]overlay=0:0,format=yuv420p[v]")
