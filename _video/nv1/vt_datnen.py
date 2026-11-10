@@ -56,7 +56,7 @@ S = [
       say=("Sáu giờ sáng Chủ nhật, một chiếc xe bốn mươi lăm chỗ đỗ ngay đầu hẻm. Trên xe có nước suối, bánh mì, nhạc sôi động. "
            "Một nhân viên cầm micro nói suốt bốn mươi phút đường: sân bay sắp mở, cao tốc sắp xong, khu công nghiệp sắp về, đất ở đây chỉ có lên. "
            "Bạn nhìn quanh. Xe kín chỗ. Có cặp vợ chồng già, có nhóm công nhân, có cô giáo về hưu. Ai cũng có vẻ háo hức giống bạn.")),
- dict(k='text', cap=('BĂNG RÔN, TIẾNG CHUÔNG', 'VÀ "CHỐT LÔ!"'), cols=CR, anh='ov:event crowd stage||rice field Vietnam',
+ dict(k='text', cap=('BĂNG RÔN, TIẾNG CHUÔNG', 'VÀ "CHỐT LÔ!"'), cols=CR, anh='ov:outdoor tent event banners||rice field Vietnam',
       say=("Xe dừng trước một khu đất trống, cắm đầy cờ và băng rôn. Một cái rạp lớn, sân khấu, loa thùng. MC hô: chỉ còn mười lô cuối cùng với giá ưu đãi hôm nay. "
            "Rồi cứ vài phút, tiếng chuông lại reo. Chúc mừng anh Hưng chốt lô B năm. Chúc mừng chị Lan chốt hai lô dãy C. Cả rạp vỗ tay. "
            "Bạn không biết rằng trong những cái tên được xướng lên, có bao nhiêu người là khách thật.")),
