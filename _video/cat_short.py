@@ -55,7 +55,7 @@ def lop(hook, cta, out):
     im.save(out)
 
 def cat(src, out, a, dmax, hook, cta):
-    d = ngat(src, a, dmax); png = out + ".png"; lop(hook, cta, png)
+    d = ngat(src, a, dmax, float(os.environ.get("DMIN", 30))); png = out + ".png"; lop(hook, cta, png)
     fc = ("[0:v]split=2[b][f];[b]scale=-2:1920,crop=1080:1920,boxblur=28:2,eq=brightness=-0.18[bg];"
           "[f]scale=1080:-2[fg];[bg][fg]overlay=0:(H-h)/2+40[v1];[v1][1:v]overlay=0:0,format=yuv420p[v]")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", str(a), "-t", "%.2f" % d, "-i", src, "-i", png,
