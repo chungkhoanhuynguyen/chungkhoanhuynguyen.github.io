@@ -1,7 +1,7 @@
 {
  "CH0112A": {
   "kenh": "@chungkhoanhuynguyen",
-  "seri": "Tiền của bạn đi đâu",
+  "seri": "Tiền của mình đi đâu",
   "ngay": "2026-12-01",
   "gio_goi_y": "19:30",
   "gio": "19:30",
@@ -23,7 +23,7 @@
    "TRẢ 6,8%",
    "VẪN LÃI 41.000 TỶ?"
   ],
-  "badge": "TIỀN CỦA BẠN ĐI ĐÂU",
+  "badge": "BÍ MẬT NGÂN HÀNG",
   "fb_post": "Gửi 1 tỷ, ngân hàng trả mình 68 triệu/năm. Cũng 12 tháng đó, riêng Vietcombank lãi khoảng 41.000 tỷ. Tiền đó từ đâu ra? 🤔\n\n👉 Lãi thu trên tài sản của VCB chỉ ~5,48%/năm, thấp hơn cả lãi tiết kiệm 6,8%\n👉 Nhưng giá vốn bình quân chỉ ~2,84% – vì ~32% tiền gửi là tiền không kỳ hạn, lãi gần 0\n👉 Tức là số dư trong tài khoản thanh toán của chúng ta là nguồn tiền rẻ nhất của ngân hàng\n👉 Ngân hàng lãi biên cao nhất (VPBank 5,15%) cũng là nơi nợ xấu cao hơn hẳn (~3,1% dư nợ)\n\nGửi tiền để được chắc chắn, hay làm chủ ngân hàng để được chia phần chênh lệch? Video đầy đủ có cả hai mặt bằng số.\n\n🎬 Xem đầy đủ: {LINK}\nGửi cho người bạn đang để cả đống tiền trong tài khoản thanh toán 😄",
   "chuong": [
    "Mở đầu",
@@ -31,13 +31,48 @@
    "Chương 2 – Tiệm mua tiền rẻ, bán tiền đắt",
    "Chương 3 – Con số ngân hàng không dán lên bảng",
    "Chương 4 – Bí mật trong tài khoản thanh toán",
-   "Chương 4 – Bí mật trong tài khoản thanh toán",
    "Chương 5 – Ai bán tiền đắt nhất?",
    "Chương 6 – Lãi cao luôn có giá của nó",
    "Chương 7 – Đổi phía: từ người gửi thành người chủ",
-   "Chương 7 – Đổi phía: từ người gửi thành người chủ",
    "Chương 8 – Cái giá của việc làm chủ",
    "Chương 9 – Bốn câu hỏi trước khi để tiền"
+  ]
+ },
+ "CH0212A": {
+  "kenh": "@chungkhoanhuynguyen",
+  "seri": "Doanh nghiệp kiếm tiền thế nào",
+  "ngay": "2026-12-02",
+  "gio_goi_y": "19:30",
+  "gio": "19:30",
+  "nhac": "lofi",
+  "tieu_de": "Vinamilk Bán 10.000 Đồng Sữa Lãi Bao Nhiêu? Lãi Tăng 30% Mà Cổ Phiếu GIẢM 17% – Vì Sao?",
+  "title": "Vinamilk Bán 10.000 Đồng Sữa Lãi Bao Nhiêu? Lãi Tăng 30% Mà Cổ Phiếu GIẢM 17% – Vì Sao?",
+  "mo_ta": "Mổ xẻ cỗ máy kiếm tiền của Vinamilk bằng báo cáo tài chính 12 tháng đến quý 3/2026: 10.000 đồng doanh thu đi đâu, vì sao chi phí bán hàng lớn gấp 7 lần chi phí quản lý, và vì sao lợi nhuận mỗi cổ phiếu tăng mà giá cổ phiếu giảm sau 3 năm. Tính cả cổ tức tiền mặt, người giữ 3 năm lãi hay lỗ?\n\nBảng P/E, cổ tức, lợi nhuận 400+ mã cập nhật mỗi phiên: https://chungkhoanhuynguyen.com\n📂 Thư viện bài học: https://chungkhoanhuynguyen.com/hoc/\n\nNguồn số liệu: BCTC Vinamilk, giá đóng cửa chưa điều chỉnh 10/11/2023 và giá hiện tại, lịch sử cổ tức tiền mặt (GDKHQ 11/2023–10/11/2026).\nCần trao đổi riêng về danh mục: Zalo 0365.188.286\nChia sẻ góc nhìn, không phải khuyến nghị mua bán.",
+  "tags": [
+   "Vinamilk",
+   "VNM",
+   "doanh nghiệp kiếm tiền như thế nào",
+   "P/E là gì",
+   "cổ tức Vinamilk",
+   "đầu tư giá trị",
+   "đọc báo cáo tài chính",
+   "cổ phiếu tốt"
+  ],
+  "bia_hook": [
+   "LÃI TĂNG 30%",
+   "GIÁ GIẢM 17%?"
+  ],
+  "badge": "DOANH NGHIỆP KIẾM TIỀN THẾ NÀO",
+  "fb_post": "Ba năm trước mua Vinamilk giá 69.090 đồng. Ba năm sau, lợi nhuận mỗi cổ phiếu tăng ~30%… mà giá còn ~57.400 đồng 🤯\n\n👉 Mỗi 10.000đ doanh thu: ~4.200đ lãi gộp, ~2.110đ chi cho bán hàng, còn ~1.620đ lợi nhuận ròng\n👉 Lợi nhuận 9 tháng 2026 +30,3%, nhưng P/E co từ ~16,3 lần xuống ~10,4 lần\n👉 Tính cả 10.550đ cổ tức tiền mặt, người giữ 3 năm vẫn chỉ quanh hòa vốn (~-1,7%)\n\nDoanh nghiệp tốt chưa chắc là khoản đầu tư tốt, nếu mua ở giá kỳ vọng quá cao.\n\n🎬 Xem đầy đủ: {LINK}\nGửi cho người bạn đang ôm cổ phiếu \"tốt\" mà mãi không lên 😅",
+  "chuong": [
+   "Mở đầu",
+   "Chương 1 – Mười nghìn đồng doanh thu đi đâu?",
+   "Chương 2 – Cái giá để làm vua sữa",
+   "Chương 3 – Cỗ máy chạy nhanh hơn",
+   "Chương 4 – Lãi tăng, giá giảm: chuyện gì đã xảy ra?",
+   "Chương 5 – Người giữ ba năm lãi hay lỗ?",
+   "Chương 6 – Bức tranh bây giờ khác gì?",
+   "Chương 7 – Ba câu hỏi trước khi mua cổ phiếu tốt"
   ]
  }
 }
