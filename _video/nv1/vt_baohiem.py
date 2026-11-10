@@ -27,7 +27,7 @@ S = [
         ('Huỷ hợp đồng trước hạn: nhận giá trị hoàn lại sau khi trừ các khoản phí.', '')]),
       say=("Tối đó, con gái bạn lục tủ, tìm ra một tập giấy bạn ký ở ngân hàng năm ngoái. Trên cùng là dòng chữ: hợp đồng bảo hiểm nhân thọ liên kết đầu tư. "
            "Thời hạn ba mươi lăm năm. Phí chín mươi triệu mỗi năm. Năm ký, bạn sáu mươi sáu tuổi. Nghĩa là hợp đồng kéo dài đến khi bạn một trăm linh một tuổi.")),
- dict(k='text', cap=('VÌ SAO THẬT TỆ KHI', 'GỬI TIẾT KIỆM MÀ RA VỀ VỚI BẢO HIỂM'), cols=CC, anh='Vietcombank||Ho Chi Minh City skyline',
+ dict(k='text', cap=('VÌ SAO THẬT TỆ KHI', 'GỬI TIẾT KIỆM MÀ RA VỀ VỚI BẢO HIỂM'), cols=CC, anh='Ho Chi Minh City skyline',
       say=("Bạn chưa từng định mua bảo hiểm. Bạn chỉ đến ngân hàng quen, gặp cô nhân viên quen, để gửi lại sổ tiết kiệm như mười năm nay vẫn làm. "
            "Hôm nay mình sẽ cùng bạn đi lại buổi sáng hôm đó: vì sao thật tệ khi gửi tiết kiệm mà ra về với một hợp đồng bảo hiểm. "
            "Nhân vật là giả định, nhưng chuyện này đã xảy ra với hàng nghìn người thật, và cuối video mình sẽ cho bạn xem con số.")),
