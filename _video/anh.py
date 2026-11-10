@@ -23,16 +23,19 @@ NEN = ["Ho Chi Minh City skyline", "Hanoi skyline", "Bitexco Financial Tower", "
 
 import time
 _LAST = [0.0]
+HAN = [0.0]   # QL1 11/11: hạn chót cả bước ảnh (render đặt = now + 20 phút). VT5DATNEN bị huỷ vì bước ảnh chạy 72 phút > giới hạn 90 phút.
+class HetGio(Exception): pass
 def _get(u, t=20):
     """Tải có giãn cách + thử lại khi Wikimedia báo 429 (quá nhiều yêu cầu) – lỗi 7/11 làm cảnh trống ảnh."""
     for k in range(6):
+        if HAN[0] and time.time() > HAN[0]: raise HetGio("het gio buoc anh")
         dt = time.time() - _LAST[0]
         if dt < 0.8: time.sleep(0.8 - dt)
         _LAST[0] = time.time()
         try: return urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=t).read()
         except urllib.error.HTTPError as e:
             if e.code in (429, 503) and k < 5:
-                w = float(e.headers.get("Retry-After") or 0) or 4 * 2 ** k; print("anh: 429, cho %.0fs" % w, flush=True); time.sleep(min(w, 60)); continue
+                w = float(e.headers.get("Retry-After") or 0) or 4 * 2 ** k; print("anh: 429, cho %.0fs" % w, flush=True); time.sleep(min(w, 30, max(0, (HAN[0] or 9e18) - time.time()))); continue
             raise
 
 NGUOI = re.compile(r"confederate|counterfeit|people|person|portrait|men of|women of|businesspeople|business people|politician|chairman|ceo|founder|births|living people|selfie|headshot|ông |bà |chân dung|doanh nhân|chủ tịch|giám đốc|lãnh đạo|_em\\.|nguyen|nguyễn|tran |trần |le van|lê văn|pham|phạm|hoang|hoàng|võ |đỗ |doan|đoàn")
@@ -102,13 +105,14 @@ class Kho:
         if sc.get("chat") and not isinstance(sc["chat"], dict): qs = [q.strip() for q in str(sc.get("anh") or "").split("||") if q.strip()]   # reel: chỉ đúng từ khoá cảnh
         else: qs += NEN
         for q in [q for q in qs if q]:
+            if HAN[0] and time.time() > HAN[0]: return None
             for it in s._ds(q):
                 if it["u"] in s.dung:
                     # 11/11 NV1: ảnh chỉ định đích danh (File:) được dùng lại cho cảnh sau, thay vì rơi xuống từ khoá chung lạc đề
                     if q.startswith("File:") and q == sc.get("anh") and it["u"] in s.img: return s.img[it["u"]].copy()
                     continue
                 try:
-                    im = Image.open(io.BytesIO(_get(it["u"], 30))); im = (Image.alpha_composite(Image.new("RGBA", im.size, (255, 255, 255, 255)), im.convert("RGBA")) if im.mode in ("RGBA", "LA", "P") else im).convert("RGB")
+                    im = Image.open(io.BytesIO(_get(it["u"], 15))); im = (Image.alpha_composite(Image.new("RGBA", im.size, (255, 255, 255, 255)), im.convert("RGBA")) if im.mode in ("RGBA", "LA", "P") else im).convert("RGB")
                 except Exception as e: print("anh: loi tai", e); s.dung.add(it["u"]); continue
                 s.dung.add(it["u"]); s.img[it["u"]] = im; s.credit.append("%s – %s (%s) %s" % (q, it["tg"], it["lic"], it["trang"]))
                 return im
