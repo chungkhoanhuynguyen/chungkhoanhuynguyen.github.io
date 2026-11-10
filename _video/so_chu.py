@@ -27,13 +27,23 @@ def doi(s):
             if w == "năm":   # "năm" là số chỉ khi đứng sau từ số hoặc trước đơn vị số
                 prv = toks[j-1].lower().strip(",.") if j > i else ""
                 nxt = toks[j+1].lower().strip(",.") if j + 1 < len(toks) else ""
-                if not (prv in ("mươi", "mười", "trăm", "nghìn", "ngàn", "triệu", "tỷ", "tỉ", "linh", "lẻ") or nxt in ("mươi", "trăm", "nghìn", "ngàn", "triệu", "tỷ", "tỉ", "phẩy", "phần")): break
+                # QL1 11/11: sau "mười/mươi" số 5 đọc là "lăm", nên "tháng mười năm hai nghìn…" / "hai mươi năm" là NĂM (thời gian), không phải 15/25
+                if not (prv in ("linh", "lẻ") or nxt in ("mươi", "trăm", "nghìn", "ngàn", "triệu", "tỷ", "tỉ", "phẩy", "phần")): break
             if j > i and toks[j-1].lower().strip(",.") in D and w in D: break   # 2 chữ số liền nhau = 2 số khác nhau
             j += 1
         if j > i:
             seg = [t.lower().strip(",.") for t in toks[i:j]]
             # bỏ đơn vị lớn đứng cuối để giữ chữ (vd "hai trăm tỷ" -> "200 tỷ")
             unit = ""
+            # QL1 11/11: "một tỷ một trăm triệu" -> "1 tỷ 100 triệu" (trước bị thành "1.000.000.100 triệu")
+            if len(seg) > 2 and seg[-1] in M and any(w in M and M[w] > M[seg[-1]] for w in seg[:-1]):
+                parts = []; grp = []
+                for w in seg:
+                    if w in M and grp:
+                        v = _num(grp); parts.append(("%s %s" % (_fmt(v), w)) if v is not None else None); grp = []
+                    else: grp.append(w)
+                if all(parts) and not grp:
+                    out.append(" ".join(parts) + (toks[j-1][-1] if toks[j-1][-1:] in ",." else "")); i = j; continue
             if len(seg) > 1 and seg[-1] in M and seg[-2] not in M: unit = " " + toks[j-1].strip(",."); seg = seg[:-1]
             n = _num(seg)
             nxt = toks[j].lower() if j < len(toks) else ""
