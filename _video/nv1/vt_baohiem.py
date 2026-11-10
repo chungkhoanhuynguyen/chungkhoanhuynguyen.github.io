@@ -49,7 +49,7 @@ S = [
         ('My', 'Dạ vẫn là tiết kiệm cô ạ, chỉ là gói đặc biệt cho khách quen thôi')]),
       say=("Sáng hôm đó, My niềm nở như mọi lần. Cô ơi, sổ của cô đáo hạn rồi, mà lãi tiết kiệm giờ thấp lắm. Bên con có gói tiết kiệm an tâm, lãi khoảng mười phần trăm mỗi năm, lại tặng kèm bảo hiểm sức khoẻ. "
            "Bạn hỏi đúng một câu: thế vẫn là gửi tiết kiệm phải không cháu? My cười: dạ vẫn là tiết kiệm cô ạ, chỉ là gói đặc biệt cho khách quen thôi.")),
- dict(k='text', cap=('"CÔ KÝ VÀO ĐÂY,', 'ĐÂY, VÀ ĐÂY Ạ"'), cols=CR, anh='ov:signing tablet||File:Sở GDCK TPHCM (HOSE).JPG',
+ dict(k='text', cap=('"CÔ KÝ VÀO ĐÂY,', 'ĐÂY, VÀ ĐÂY Ạ"'), cols=CR, anh='ov:pen signing contract document||signature pen paper',
       say=("My đưa bạn một chiếc máy tính bảng, lướt rất nhanh qua nhiều trang chữ nhỏ. Cô ký vào đây, đây, và đây ạ. Rồi một tờ uỷ nhiệm chi chuyển hai trăm triệu. "
            "Mắt bạn kém, kính để quên ở nhà. Nhưng đây là ngân hàng, là cô cháu quen mười năm. Bạn ký. "
            "Lúc ra về, bạn không được cầm bản hợp đồng nào. My nói: hồ sơ bên con lưu, vài hôm gửi về nhà cô.")),
