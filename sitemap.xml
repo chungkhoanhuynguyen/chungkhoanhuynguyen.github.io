@@ -194,6 +194,9 @@
 <url><loc>https://chungkhoanhuynguyen.com/f0/chung-khoan-kinh-doanh-la-gi.html</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/f0/thue-va-cac-khoan-phai-nop-nha-nuoc-la-gi.html</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/f0/du-phong-phai-tra-la-gi.html</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://chungkhoanhuynguyen.com/f0/chung-khoan-dau-tu-ngan-hang-la-gi.html</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://chungkhoanhuynguyen.com/f0/tien-gui-cua-khach-hang-la-gi.html</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://chungkhoanhuynguyen.com/f0/phat-hanh-giay-to-co-gia-la-gi.html</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/f0/phan-tich-co-ban-va-ky-thuat.html</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/f0/duong-ma-la-gi.html</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/f0/rsi-la-gi.html</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -493,6 +496,7 @@
 <url><loc>https://chungkhoanhuynguyen.com/ma/HSG.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/HSL.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/HT1.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://chungkhoanhuynguyen.com/ma/HTG.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/HTN.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/HVH.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/HVN.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
@@ -516,7 +520,6 @@
 <url><loc>https://chungkhoanhuynguyen.com/ma/LSS.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/MBB.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/MCH.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chungkhoanhuynguyen.com/ma/MCM.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/MCP.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/MIG.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/MSB.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
@@ -559,7 +562,6 @@
 <url><loc>https://chungkhoanhuynguyen.com/ma/PVT.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/QCG.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/REE.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chungkhoanhuynguyen.com/ma/RYG.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/SAB.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/SAM.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/SBG.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
@@ -599,6 +601,7 @@
 <url><loc>https://chungkhoanhuynguyen.com/ma/TLG.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/TLH.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/TNH.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://chungkhoanhuynguyen.com/ma/TNI.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/TNT.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/TPB.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/TRC.html</loc><lastmod>2026-11-10</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
