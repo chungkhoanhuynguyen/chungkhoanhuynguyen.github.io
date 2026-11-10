@@ -1,0 +1,157 @@
+[
+ {
+  "key": "CM1111A",
+  "tieu_de": "Vietjet doanh thu tăng 35% mà tiền vé giảm: mỗi khách chỉ lãi 48 nghìn, máy bay gánh cả hãng?",
+  "hook": [
+   "BAY 1 KHÁCH",
+   "LÃI 48 NGHÌN?"
+  ],
+  "nhan": "CHUYỆN MÃ HÔM NAY",
+  "short_caption": "Quý 3/2026 Vietjet chở gần 7,3 triệu lượt khách, lãi 348 tỷ – khoảng 48 nghìn đồng mỗi khách. Doanh thu +35% nhưng tiền vé −9,6%; mảng mua bán tàu bay lãi gộp ~2.850 tỷ, phần còn lại lỗ gộp ~813 tỷ. Quan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "VÉ RẺ HAY ĐẮT?",
+   "loi": "Lần gần nhất đi máy bay, anh chị thấy giá vé rẻ đi hay đắt lên?",
+   "loi_doc": "Lần gần nhất đi máy bay, anh chị thấy giá vé rẻ đi hay đắt lên?",
+   "anh": [
+    "File:Tan Son Nhat International Terminal (08.2026).jpg"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "BAY 1 KHÁCH LÃI 48 NGHÌN?",
+    "loi": "Quý 3, Vietjet chở gần 7,3 triệu lượt khách, lãi 348 tỷ đồng. Chia ra, mỗi khách hãng chỉ lãi khoảng 48 nghìn, chưa bằng bát phở với ly cà phê ở sân bay.",
+    "the": {
+     "loai": "lon",
+     "tieu": "VIETJET QUÝ 3/2026",
+     "nguon": "BCTC hợp nhất Q3/2026 Vietjet",
+     "dong": [
+      [
+       "7,3 TRIỆU KHÁCH",
+       56,
+       "trang"
+      ],
+      [
+       "LÃI 348 TỶ",
+       70,
+       "vang"
+      ],
+      [
+       "≈ 48 NGHÌN/KHÁCH",
+       52,
+       "trang"
+      ]
+     ]
+    },
+    "loi_doc": "Quý ba, Vietjet chở gần bảy phẩy ba triệu lượt khách, lãi ba trăm bốn mươi tám tỷ đồng. Chia ra, mỗi khách hãng chỉ lãi khoảng bốn mươi tám nghìn, chưa bằng bát phở với ly cà phê ở sân bay."
+   },
+   {
+    "chu_to": "DOANH THU +35%",
+    "loi": "Lạ ở chỗ doanh thu tăng 35%, trong khi số khách chỉ nhích 3,3%. Khách đứng yên mà tiền tăng vọt, vậy tiền ở đâu ra?",
+    "the": {
+     "loai": "cot",
+     "tieu": "TĂNG SO VỚI CÙNG KỲ",
+     "nguon": "Giải trình KQKD Vietjet 2/11/2026",
+     "hang": [
+      [
+       "Doanh thu",
+       35
+      ],
+      [
+       "Lượt khách",
+       3.3
+      ]
+     ],
+     "noi": [
+      0
+     ],
+     "dv": "%",
+     "max": 40
+    },
+    "loi_doc": "Lạ ở chỗ doanh thu tăng ba mươi lăm phần trăm, trong khi số khách chỉ nhích ba phẩy ba phần trăm. Khách đứng yên mà tiền tăng vọt, vậy tiền ở đâu ra?"
+   },
+   {
+    "chu_to": "TIỀN VÉ LẠI GIẢM",
+    "loi": "Mở thuyết minh ra mới thấy tiền vé còn giảm 9,6%. Phần tăng mạnh nhất là mua bán tàu bay, động cơ: 4.356 tỷ, gấp khoảng 10 lần cùng kỳ.",
+    "the": {
+     "loai": "lon",
+     "tieu": "DOANH THU QUÝ 3/2026",
+     "nguon": "Thuyết minh 26 BCTC Q3/2026",
+     "dong": [
+      [
+       "TIỀN VÉ −9,6%",
+       60,
+       "do"
+      ],
+      [
+       "MUA BÁN TÀU BAY ×10",
+       56,
+       "xanh"
+      ]
+     ]
+    },
+    "loi_doc": "Mở thuyết minh ra mới thấy tiền vé còn giảm chín phẩy sáu phần trăm. Phần tăng mạnh nhất là mua bán tàu bay, động cơ: bốn nghìn ba trăm năm mươi sáu tỷ, gấp khoảng mười lần cùng kỳ."
+   },
+   {
+    "chu_to": "MÁY BAY GÁNH CẢ HÃNG",
+    "loi": "Mảng tàu bay lãi gộp khoảng 2.850 tỷ, nhiều hơn cả lãi gộp toàn công ty 2.037 tỷ. Tách mảng này ra, phần chở khách và các mảng còn lại lỗ gộp khoảng 813 tỷ.",
+    "the": {
+     "loai": "lon",
+     "tieu": "LÃI GỘP QUÝ 3/2026",
+     "nguon": "Thuyết minh 26, 27 – em tính",
+     "dong": [
+      [
+       "TÀU BAY: +2.850 TỶ",
+       54,
+       "xanh"
+      ],
+      [
+       "CÒN LẠI: −813 TỶ",
+       60,
+       "do"
+      ]
+     ]
+    },
+    "loi_doc": "Mảng tàu bay lãi gộp khoảng hai nghìn tám trăm năm mươi tỷ, nhiều hơn cả lãi gộp toàn công ty hai nghìn không trăm ba mươi bảy tỷ. Tách mảng này ra, phần chở khách và các mảng còn lại lỗ gộp khoảng tám trăm mười ba tỷ."
+   },
+   {
+    "chu_to": "VÌ SAO BAY LẠI LỖ?",
+    "loi": "Hãng giải trình giá nhiên liệu bay ở mức cao vì căng thẳng Trung Đông. Chi phí khai thác tăng 24,5%, trong khi số chuyến chỉ tăng 2,4%.",
+    "the": {
+     "loai": "cot",
+     "tieu": "TĂNG SO VỚI CÙNG KỲ",
+     "nguon": "BCTC Q3/2026 Vietjet",
+     "hang": [
+      [
+       "Chi phí bay",
+       24.5
+      ],
+      [
+       "Số chuyến",
+       2.4
+      ]
+     ],
+     "noi": [
+      0
+     ],
+     "dv": "%",
+     "max": 30
+    },
+    "loi_doc": "Hãng giải trình giá nhiên liệu bay ở mức cao vì căng thẳng Trung Đông. Chi phí khai thác tăng hai mươi bốn phẩy năm phần trăm, trong khi số chuyến chỉ tăng hai phẩy bốn phần trăm."
+   },
+   {
+    "chu_to": "KHÔNG PHẢI ĂN GIAN",
+    "loi": "Bán máy bay rồi thuê lại là mô hình lâu năm, tiền thật và hợp pháp. Nhưng khoản này không đều như tiền bán vé, nên anh chị nên tách riêng khi đọc lợi nhuận.",
+    "anh": [
+     "File:Vietjet Air Airbus A321-211(WL) VN-A657.jpg"
+    ],
+    "chat": 1,
+    "loi_doc": "Bán máy bay rồi thuê lại là mô hình lâu năm, tiền thật và hợp pháp. Nhưng khoản này không đều như tiền bán vé, nên anh chị nên tách riêng khi đọc lợi nhuận."
+   }
+  ]
+ }
+]
