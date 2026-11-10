@@ -50,7 +50,7 @@ S = [
            "Thứ thay đổi chính là hệ số P trên E, tức là thị trường sẵn sàng trả bao nhiêu đồng cho một đồng lợi nhuận. "
            "Ba năm trước là khoảng 16,3 lần, bây giờ chỉ khoảng 10,4 lần. "
            "Nói cách khác, Vinamilk kiếm được nhiều hơn, nhưng người mua chỉ chịu trả ít hơn cho mỗi đồng lợi nhuận đó.") % (v(EPS0), v(EPS1), v(tang_eps), v(G0), v(gia))),
- dict(k='text', ch='Chương 4 – Lãi tăng, giá giảm: chuyện gì đã xảy ra?', cap=('VÌ SAO NGƯỜI MUA', 'TRẢ ÍT HƠN?'), cols=CC, anh='stock market screen',
+ dict(k='text', ch='Chương 4 – Lãi tăng, giá giảm: chuyện gì đã xảy ra?', cap=('VÌ SAO NGƯỜI MUA', 'TRẢ ÍT HƠN?'), cols=CC, anh='File:Sở GDCK TPHCM (HOSE).JPG', anh2='File:Sở GDCK TPHCM (HOSE).JPG',
       say=("Vì sao người mua trả ít hơn? Thị trường thường trả giá cao cho doanh nghiệp tăng trưởng nhanh. "
            "Ba năm trước, nhiều người vẫn kỳ vọng Vinamilk tăng trưởng mạnh trở lại. Thực tế, doanh thu mười hai tháng chỉ tăng khoảng 14% sau hai năm, chậm hơn nhiều doanh nghiệp khác. "
            "Khi kỳ vọng giảm, hệ số P trên E co lại, và phần co lại đó ăn mất toàn bộ phần tăng của lợi nhuận. "
