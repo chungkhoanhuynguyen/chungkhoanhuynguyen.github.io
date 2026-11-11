@@ -128,10 +128,10 @@ def chay(ten, g0, g1=None, bo=0.0, tr=0.001, seed=0):
         con = []
         for p in pos:   # bán: mở cửa phiên sau tín hiệu; nếu đó là phiên T+2 thì bán chiều (giá đóng cửa) khi hàng về
             a = A[p["s"]]
-            if p.get("ban") and a["o"][g] is not None and g >= p["g"] + 2:
+            if p.get("ban") and a["o"][g] is not None and g >= p["g"] + 3:   # anh Huy 11/11: bán sớm nhất phiên T+3
                 lim = 0.069 if a["fl"] == "HOSE" else 0.099
                 if a["h"][g] == a["l"][g] and a["prevc"][g] and a["o"][g] <= a["prevc"][g] * (1 - lim + 0.003): con.append(p); continue   # sàn trắng
-                px = (a["c"][g] if g == p["g"] + 2 else a["o"][g]) * (1 - tr)
+                px = a["o"][g] * (1 - tr)
                 tien += p["sl"] * px * (1 - FS); L.append((p["s"], CAL[p["g"]], CAL[g], px * (1 - FS) / p["von"] - 1, p["ban"]))
             else: con.append(p)
         pos = con
@@ -217,8 +217,8 @@ for t in ("V306TM", "C"):
     kiem(1, f"{t}: không nhìn trước tương lai (chạy tới giữa kỳ = cả kỳ ở nửa đầu)", a1 == b1, f"{len(a1)} lệnh khớp")
 e1, _ = chay("C", G0, bo=0.1, seed=7); e2, _ = chay("C", G0, bo=0.1, seed=7)
 kiem(2, "chạy lại cùng tham số ra cùng kết quả", e1 == e2)
-bad = [x for t in BASE for x in BASE[t][1] if IX[x[2]] - IX[x[1]] < 2]
-kiem(3, "không bán trước khi hàng về (T+2 chiều)", not bad, f"{len(bad)} vi phạm")
+bad = [x for t in BASE for x in BASE[t][1] if IX[x[2]] - IX[x[1]] < 3 and x[4] != "ngung GD"]
+kiem(3, "không bán trước phiên T+3", not bad, f"{len(bad)} vi phạm")
 viol = 0
 for t in BASE:
     ev = []
