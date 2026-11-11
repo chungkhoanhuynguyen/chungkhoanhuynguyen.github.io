@@ -46,3 +46,12 @@ if __name__ == "__main__":
             kq.append(dict(file=os.path.basename(o), start=s["a"], dai=round(d, 1), hook=hook)); print(o, round(d, 1), hook, flush=True)
         except Exception as e: print("short loi", n, e, flush=True)
     json.dump(kq, open(os.path.join(od, key + "_shorts.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    # QL1 11/11: thêm 1 REEL DỌC 2–3 phút (khuôn câu hỏi to cố định + phụ đề to) cho Facebook – xem reel_dai.py
+    try:
+        import reel_dai
+        M = json.load(open(os.path.join(HERE, "queue", lo, "meta.json"), encoding="utf-8")).get(key, {})
+        hk = M.get("reel_hook") or "|".join(M.get("bia_hook_b") or M.get("bia_hook") or [ten.upper()])
+        if "?" not in hk: hk += "???"
+        a0, d0 = reel_dai.cat(src, os.environ["SRT"], os.path.join(od, key + "_R1.mp4"), 0.0, hk)
+        print("reel dai", key, round(d0, 1), hk, flush=True)
+    except Exception as e: print("reel dai loi", e, flush=True)
