@@ -25,7 +25,7 @@ CW = os.environ.get('CW', '/tmp/cw')
 LO = CW + '/_video/queue/20261112_0039'
 KEY = 'CH1411NO'; CC = (WHITE, GOLD); CR = (WHITE, RED)
 R_, V_, X_, G_ = (239, 68, 68), (255, 196, 0), (56, 189, 248), (34, 197, 94)
-NGAN = 'ov:bank loan contract signing||loan document'
+NGAN = 'Hanoi apartment buildings||Ho Chi Minh City apartment buildings'
 S = [
  # ---------------- MỞ ĐẦU ----------------
  dict(k='noti', ch='Mở đầu', cap=('"NƯỚC MÌNH NỢ NGẬP ĐẦU', 'RÚT TIỀN ĐI CON"'), cols=CR, noti=dict(gio='23:10', ngay='Thứ Ba', items=[
@@ -34,7 +34,7 @@ S = [
         ('Tin nhắn', 'Ngân hàng', 'Lãi suất khoản vay của quý khách sẽ được điều chỉnh từ kỳ tới', V_)]),
       say=("Mười một giờ đêm, anh Tuấn vừa ru con ngủ thì điện thoại rung liên tục. Mẹ anh gửi một đường link, kèm hai dòng: con xem cái này đi, nước mình nợ ngập đầu rồi. Mai mẹ ra rút hết sổ tiết kiệm mua vàng. "
            "Ngay bên dưới là tin nhắn của ngân hàng nơi anh đang vay mua nhà: lãi suất khoản vay của quý khách sẽ được điều chỉnh từ kỳ tới. Hai tin nhắn, hai nỗi sợ, cùng một câu hỏi: Việt Nam đang nợ bao nhiêu, và khoản nợ đó có chạm vào túi mình không?")),
- dict(k='bignum', anh='ov:hanoi city skyline night||vietnam city skyline', cap=('NỢ CÔNG VIỆT NAM 2025', 'NHƯNG ĐÂY CHƯA PHẢI CHUYỆN LỚN'), cols=CC, value=33.3, fmt='{:,.1f}', unit='% GDP', top='NỢ CÔNG / GDP NĂM 2025', sub='Khoảng 4,27 triệu tỷ đồng', col=GOLD,
+ dict(k='bignum', anh='Hanoi skyline night||Hanoi skyline', cap=('NỢ CÔNG VIỆT NAM 2025', 'NHƯNG ĐÂY CHƯA PHẢI CHUYỆN LỚN'), cols=CC, value=33.3, fmt='{:,.1f}', unit='% GDP', top='NỢ CÔNG / GDP NĂM 2025', sub='Khoảng 4,27 triệu tỷ đồng', col=GOLD,
       say=("Em nói luôn kết quả để anh chị đỡ hồi hộp. Nợ công của Việt Nam năm 2025 vào khoảng ba mươi ba phần trăm GDP, thấp hơn rất nhiều so với những gì mẹ anh Tuấn đang lo. "
            "Nhưng trong lúc lục số liệu, anh Tuấn tìm ra một khoản nợ khác lớn gần gấp năm lần nợ công, lớn hơn cả GDP cả nước. Và khoản nợ đó nằm ngay trong tờ hợp đồng vay đang để trong ngăn kéo nhà anh.")),
  # ---------------- CHƯƠNG 1 ----------------
@@ -45,28 +45,28 @@ S = [
         ('Mẹ', 'Thế sao người ta bảo sắp vỡ nợ?')]),
       say=("Anh Tuấn nhắn lại cho mẹ: mẹ ơi, nợ công mình khoảng ba mươi ba phần trăm GDP thôi. Mẹ hỏi: thế là nhiều hay ít hả con? Anh trả lời: nhiều nước giàu còn cao hơn mình mấy lần mẹ ạ. "
            "Mẹ vẫn chưa yên: thế sao người ta bảo sắp vỡ nợ? Câu hỏi đó hợp lý, nên mình cùng xem con số thật.")),
- dict(k='cards', anh='ov:government building vietnam||hanoi city', cap=('NỢ CÔNG NĂM 2025', 'TỶ ĐỒNG'), cols=CC, moc=True,
+ dict(k='cards', anh='Hanoi skyline||Ho Chi Minh City skyline', cap=('NỢ CÔNG NĂM 2025', 'TỶ ĐỒNG'), cols=CC, moc=True,
       cards=[('4.072.002', 'Nợ Chính phủ vay trực tiếp', '31,7% GDP'), ('202.105', 'Nợ Chính phủ bảo lãnh', 'giảm hơn một nửa từ 2018'), ('41,8 triệu', 'Chia đều mỗi người dân', '102,3 triệu dân, tự tính')],
-      say=("Theo số liệu Bộ Tài chính tổng hợp trên WiData, năm 2025, Chính phủ vay trực tiếp khoảng bốn triệu không trăm bảy mươi hai nghìn tỷ đồng. Thêm khoảng hai trăm lẻ hai nghìn tỷ nợ do Chính phủ đứng ra bảo lãnh. "
+      say=("Theo số liệu Bộ Tài chính tổng hợp trên WiData, năm 2025, Chính phủ vay trực tiếp khoảng bốn phẩy không bảy triệu tỷ đồng. Thêm khoảng hai trăm lẻ hai nghìn tỷ nợ do Chính phủ đứng ra bảo lãnh. "
            "Cộng lại, nợ công khoảng bốn phẩy hai bảy triệu tỷ đồng. Chia đều cho hơn một trăm lẻ hai triệu dân, mỗi người khoảng bốn mươi mốt phẩy tám triệu đồng. Nghe thì giật mình, nhưng phải đặt cạnh quy mô nền kinh tế mới hiểu.")),
- dict(k='bars', anh='ov:hanoi city skyline||vietnam city', cap=('NỢ CÔNG / GDP', 'ĐANG GIẢM, KHÔNG PHẢI TĂNG'), cols=CC, moc=True,
+ dict(k='bars', anh='Ho Chi Minh City skyline night||Hanoi skyline', cap=('NỢ CÔNG / GDP', 'ĐANG GIẢM, KHÔNG PHẢI TĂNG'), cols=CC, moc=True,
       bars=[('2018', 45.7, GOLD, '45,7%'), ('2025', 33.3, GREEN, '33,3%')],
       say=("Và đây là cú lật đầu tiên. Năm 2018, nợ công bằng khoảng bốn mươi lăm phẩy bảy phần trăm GDP. Đến năm 2025 chỉ còn khoảng ba mươi ba phẩy ba phần trăm. "
            "Nợ Chính phủ vẫn tăng khoảng bốn mươi bảy phần trăm trong bảy năm. Nhưng GDP danh nghĩa tăng tới tám mươi ba phần trăm, nên gánh nợ so với sức kiếm tiền của đất nước nhẹ đi chứ không nặng lên. Đây là số em tự tính, nguồn có trong mô tả.")),
- dict(k='cards', anh='ov:world map finance||globe economy', cap=('NỢ NƯỚC NGOÀI QUỐC GIA', 'CẢ NHÀ NƯỚC VÀ TƯ NHÂN'), cols=CC, moc=True,
+ dict(k='cards', anh='World map||Blue Marble', cap=('NỢ NƯỚC NGOÀI QUỐC GIA', 'CẢ NHÀ NƯỚC VÀ TƯ NHÂN'), cols=CC, moc=True,
       cards=[('25,6% GDP', 'Nợ nước ngoài năm 2025', 'khoảng 3,29 triệu tỷ đồng'), ('80 NĂM', 'Mỹ: nợ công / GDP cao nhất', 'VnEconomy 2/11/2026')],
       say=("Còn nợ nước ngoài, tức tiền cả Nhà nước lẫn doanh nghiệp vay từ bên ngoài. Năm 2025, con số này khoảng ba phẩy hai chín triệu tỷ đồng, chừng hai mươi lăm phẩy sáu phần trăm GDP. "
            "Trong khi đó, báo VnEconomy ngày hai tháng mười một vừa đưa tin tỷ lệ nợ công so với GDP của Mỹ đã lên mức cao nhất tám mươi năm. Nên nếu chỉ nhìn nợ công, Việt Nam chưa phải nước đáng lo. Mẹ anh Tuấn có thể ngủ yên. Nhưng anh Tuấn thì không.")),
  # ---------------- CHƯƠNG 2 ----------------
- dict(k='bignum', ch='Chương 2 – Khoản nợ lớn hơn cả GDP', anh='ov:bank vault money||banknotes stack', cap=('TỔNG DƯ NỢ CHO VAY', 'THÁNG 8/2026'), cols=CR, moc=True, value=20.49, fmt='{:,.2f}', unit=' triệu tỷ', top='TÍN DỤNG TOÀN NỀN KINH TẾ', sub='Gấp 4,8 lần nợ công', col=RED,
+ dict(k='bignum', ch='Chương 2 – Khoản nợ lớn hơn cả GDP', anh='Bitexco Financial Tower||Ho Chi Minh City skyline night', cap=('TỔNG DƯ NỢ CHO VAY', 'THÁNG 8/2026'), cols=CR, moc=True, value=20.49, fmt='{:,.2f}', unit=' triệu tỷ', top='TÍN DỤNG TOÀN NỀN KINH TẾ', sub='Gấp 4,8 lần nợ công', col=RED,
       say=("Khoản nợ khiến anh Tuấn mất ngủ không nằm ở Chính phủ, mà nằm ở ngân hàng. Đó là tiền ngân hàng cho doanh nghiệp và người dân vay. Đến tháng tám năm 2026, tổng dư nợ cho vay của cả nền kinh tế là khoảng hai mươi phẩy bốn chín triệu tỷ đồng. "
            "Quy ra đô la theo tỷ giá hôm nay, khoảng bảy trăm chín mươi ba tỷ đô la, gấp khoảng bốn phẩy tám lần toàn bộ nợ công.")),
- dict(k='bars', anh='ov:bank vault money||banknotes stack', cap=('DƯ NỢ CHO VAY / GDP', 'TỰ TÍNH TỪ SỐ NHNN, TCTK'), cols=CR, moc=True,
+ dict(k='bars', anh='Bitexco Financial Tower||Ho Chi Minh City skyline night', cap=('DƯ NỢ CHO VAY / GDP', 'TỰ TÍNH TỪ SỐ NHNN, TCTK'), cols=CR, moc=True,
       bars=[('2016', 97.6, GOLD, '97,6%'), ('2020', 114.3, GOLD, '114,3%'), ('2022', 123.9, RED, '123,9%'), ('2024', 135.7, RED, '135,7%'), ('2025', 144.7, RED, '144,7%'), ('8/2026', 145.8, RED, '145,8%')],
       say=("So với quy mô nền kinh tế, cuối năm 2016 dư nợ cho vay bằng khoảng chín mươi bảy phẩy sáu phần trăm GDP. Năm 2020 lên một trăm mười bốn phần trăm. Năm 2024 khoảng một trăm ba mươi sáu phần trăm. "
            "Và đến tháng tám năm nay là khoảng một trăm bốn mươi sáu phần trăm. Tức là cứ nền kinh tế làm ra một trăm đồng mỗi năm, thì đang có khoảng một trăm bốn mươi sáu đồng là tiền đi vay ngân hàng. Mười năm, dư nợ tăng gần gấp bốn, còn GDP danh nghĩa chỉ tăng khoảng hai phẩy năm lần.")),
- dict(k='cards', anh='ov:bank vault money||banknotes stack', cap=('TRONG 12 THÁNG QUA', 'TIỀN VAY CHẠY NHANH HƠN'), cols=CR, moc=True,
-      cards=[('+17,4%', 'Dư nợ cho vay', 'so với tháng 8/2025'), ('+12,9%', 'GDP danh nghĩa 4 quý', 'em tự tính'), ('200 triệu', 'Chia đều mỗi người dân', 'gồm cả nợ doanh nghiệp')],
+ dict(k='cards', anh='Bitexco Financial Tower||Ho Chi Minh City skyline night', cap=('TRONG 12 THÁNG QUA', 'TIỀN VAY CHẠY NHANH HƠN'), cols=CR, moc=True,
+      cards=[('+17,4%', 'Dư nợ cho vay', 'so với tháng 8/2025'), ('+12,9%', 'Em tự tính', 'GDP danh nghĩa 4 quý'), ('200 triệu', 'Chia đều mỗi người dân', 'gồm cả nợ doanh nghiệp')],
       say=("Trong mười hai tháng qua, dư nợ cho vay tăng khoảng mười bảy phẩy bốn phần trăm, trong khi GDP danh nghĩa chỉ tăng khoảng mười hai phẩy chín phần trăm. Nợ đang lớn nhanh hơn thu nhập. "
            "Nếu chia đều dư nợ đó cho mỗi người dân, kể cả em bé mới sinh, con số là khoảng hai trăm triệu đồng một người. Dĩ nhiên phần lớn là nợ của doanh nghiệp, nhưng nó cho anh chị thấy nền kinh tế đang chạy bằng tiền vay nhiều đến mức nào.")),
  # ---------------- CHƯƠNG 3 ----------------
@@ -75,10 +75,10 @@ S = [
         ('Lãi suất 2 năm đầu: 8%/năm, cố định.', '8%'),
         ('Sau đó: lãi suất cơ sở cộng biên độ, điều chỉnh 3 tháng một lần.', 'THẢ NỔI')]),
       say=("Anh Tuấn mở ngăn kéo, lấy hợp đồng vay ra đọc lại. Vay một phẩy hai tỷ đồng, hai mươi năm, để mua căn hộ chung cư. Hai năm đầu lãi suất tám phần trăm cố định. "
-           "Sau đó là dòng chữ nhỏ mà lúc ký anh không để ý: lãi suất cơ sở cộng biên độ, điều chỉnh ba tháng một lần. Anh chợt hiểu, mình chính là một phần trong con số hai mươi triệu tỷ kia.")),
- dict(k='cards', anh='ov:apartment buildings construction||apartment building', cap=('TIỀN VAY DỒN VÀO ĐÂU?', 'THÁNG 8/2026'), cols=CR, moc=True,
+           "Sau đó là dòng chữ nhỏ mà lúc ký anh không để ý: lãi suất cơ sở cộng biên độ, điều chỉnh ba tháng một lần. Anh chợt hiểu, khoản vay của mình cũng nằm trong con số hai mươi phẩy năm triệu tỷ kia.")),
+ dict(k='cards', anh='Hanoi apartment buildings||Ho Chi Minh City apartment buildings', cap=('TIỀN VAY DỒN VÀO ĐÂU?', 'THÁNG 8/2026'), cols=CR, moc=True,
       cards=[('45%', 'Nhóm "dịch vụ khác" trong tổng dư nợ', 'khoảng 9,24 triệu tỷ'), ('+24,4%', 'Nhóm này tăng trong 1 năm', 'tổng dư nợ chỉ +17,4%')],
-      say=("Vậy hai mươi triệu tỷ đó chảy vào đâu? Trong số liệu của Ngân hàng Nhà nước có một nhóm tên khô khan là các hoạt động dịch vụ khác. Phần lớn nhóm này là cho vay kinh doanh bất động sản và cho vay tiêu dùng, mà chủ yếu là vay mua nhà như anh Tuấn. "
+      say=("Vậy hai mươi phẩy năm triệu tỷ đó chảy vào đâu? Trong số liệu của Ngân hàng Nhà nước có một nhóm tên khô khan là các hoạt động dịch vụ khác. Phần lớn nhóm này là cho vay kinh doanh bất động sản và cho vay tiêu dùng, mà chủ yếu là vay mua nhà như anh Tuấn. "
            "Nhóm này chiếm khoảng bốn mươi lăm phần trăm tổng dư nợ, khoảng chín phẩy hai bốn triệu tỷ đồng. Nó tăng hai mươi bốn phẩy bốn phần trăm chỉ trong một năm, nhanh hơn hẳn mức tăng chung. Tiền vay đang dồn về nhà đất.")),
  dict(k='call', cap=('"ANH ĐANG ĐỨNG', 'Ở PHÍA RỦI RO"'), cols=CC, call=dict(ten='Bạn thân Hải', phu='Làm tín dụng 10 năm', mau=G_, loi=[
         'Ngân hàng cho vay nhanh hơn huy động', 'Thiếu vốn thì lãi suất khó mà giảm']),
@@ -90,7 +90,7 @@ S = [
         ('Zalo', 'Hải', 'Ông xem số này: cho vay tăng 17,4%, tiền gửi chỉ 13,6%', X_)]),
       say=("Cúp máy, Hải gửi ngay cho anh Tuấn một bài báo. Cuối tháng mười, VietnamFinance đưa tin nhiều ngân hàng có thể cạn hạn mức tín dụng sau quy định mới của Ngân hàng Nhà nước. "
            "Kèm theo là một dòng tin nhắn: ông xem số này, cho vay tăng mười bảy phẩy bốn phần trăm, tiền gửi chỉ tăng mười ba phẩy sáu phần trăm.")),
- dict(k='cards', anh='ov:bank counter customers||bank interior', cap=('CHO VAY VƯỢT TIỀN GỬI', 'TỶ ĐỒNG – EM TỰ TÍNH'), cols=CR, moc=True,
+ dict(k='cards', anh='Bitexco Financial Tower||Ho Chi Minh City skyline night', cap=('CHO VAY VƯỢT TIỀN GỬI', 'TỶ ĐỒNG – EM TỰ TÍNH'), cols=CR, moc=True,
       cards=[('1.495.911', 'Tháng 8/2025', 'dư nợ trừ tổng tiền gửi'), ('2.717.982', 'Tháng 8/2026', 'gấp 1,8 lần sau 1 năm'), ('+13,6%', 'Tổng tiền gửi tăng', 'dư nợ +17,4%')],
       say=("Hải nói đúng. Em lấy tổng dư nợ trừ đi tổng tiền gửi trong hệ thống ngân hàng. Tháng tám năm 2025, phần cho vay vượt tiền gửi khoảng một phẩy năm triệu tỷ đồng. Tháng tám năm 2026, con số này là khoảng hai phẩy bảy hai triệu tỷ, gấp một phẩy tám lần chỉ sau một năm. "
            "Khi tiền cho vay lớn nhanh hơn tiền gửi, ngân hàng phải đi tìm nguồn vốn khác, thường là đắt hơn.")),
@@ -98,13 +98,13 @@ S = [
         ('Lãi suất 12 tháng, nhóm ngân hàng Nhà nước: 5,4%/năm', '5,4%'),
         ('Lạm phát tháng 10/2026 so với cùng kỳ: 5,09%', '5,09%'),
         ('Lãi thật sau lạm phát: khoảng 0,3 điểm %', 'GẦN ĐỨNG YÊN')]),
-      say=("Còn sổ tiết kiệm của mẹ anh Tuấn thì sao? Lãi suất mười hai tháng ở nhóm ngân hàng thương mại Nhà nước hôm nay là năm phẩy bốn phần trăm một năm. Lạm phát tháng mười so với cùng kỳ là năm phẩy không chín phần trăm. "
+      say=("Còn sổ tiết kiệm của mẹ anh Tuấn thì sao? Lãi suất mười hai tháng ở nhóm ngân hàng thương mại Nhà nước hôm nay là năm phẩy bốn phần trăm mỗi năm. Lạm phát tháng mười so với cùng kỳ là năm phẩy không chín phần trăm. "
            "Trừ đi, lãi thật chỉ còn khoảng không phẩy ba điểm phần trăm. Gửi tiền không lỗ, nhưng gần như đứng yên. Và chính vì tiền gửi kém hấp dẫn, ngân hàng càng khó huy động, áp lực lại dồn sang phía người đi vay.")),
  # ---------------- CHƯƠNG 5 ----------------
  dict(k='cards', ch='Chương 5 – Lịch sử từng lặp lại', anh='ov:old banknotes inflation||money inflation', cap=('VIỆT NAM 2007 – 2008', 'KHI TIỀN VAY CHẠY QUÁ NHANH'), cols=CR, moc=True,
       cards=[('+53,89%', 'Tín dụng năm 2007', 'Ngân hàng Nhà nước'), ('22,97%', 'Lạm phát bình quân 2008', 'Tổng cục Thống kê')],
       say=("Chuyện tiền vay chạy nhanh hơn nền kinh tế, Việt Nam đã trải qua. Năm 2007, tín dụng tăng năm mươi ba phẩy tám chín phần trăm. Một năm sau, lạm phát bình quân năm 2008 lên hai mươi hai phẩy chín bảy phần trăm. "
-           "Ngân hàng Nhà nước buộc phải siết mạnh, lãi suất cho vay có lúc vượt hai mươi phần trăm một năm. Những người vay lãi thả nổi để mua nhà, mua đất lúc đó là những người chịu trận đầu tiên.")),
+           "Ngân hàng Nhà nước buộc phải siết mạnh, lãi suất cho vay có lúc vượt hai mươi phần trăm mỗi năm. Những người vay lãi thả nổi để mua nhà, mua đất lúc đó là những người chịu trận đầu tiên.")),
  dict(k='text', cap=('BÂY GIỜ KHÔNG PHẢI 2008', 'NHƯNG BÀI HỌC VẪN CÒN'), cols=CC, anh='ov:stock chart monitor||candlestick chart',
       say=("Em nói công bằng: hôm nay không giống năm 2008. Tín dụng tăng mười bảy phần trăm chứ không phải năm mươi ba phần trăm, lạm phát khoảng năm phần trăm chứ không phải hai mươi ba. "
            "Nhưng bài học vẫn nguyên giá trị: khi tiền vay lớn nhanh hơn thu nhập nhiều năm liền, người trả giá thường không phải Nhà nước, mà là người vay với lãi suất thả nổi.")),
@@ -114,9 +114,9 @@ S = [
       say=("Anh Tuấn ngồi tính lại khoản vay của mình. Vay một phẩy hai tỷ, trả đều trong hai mươi năm. Lãi tám phần trăm, mỗi tháng trả khoảng mười phẩy không bốn triệu đồng. "
            "Nếu lãi lên mười phần trăm, con số thành mười một phẩy năm tám triệu mỗi tháng. Lên mười một phần trăm là mười hai phẩy ba chín triệu mỗi tháng.")),
  dict(k='cards', anh=NGAN, cap=('CHỈ 2 ĐIỂM % LÃI SUẤT', 'CÁI GIÁ CỦA DÒNG CHỮ NHỎ'), cols=CR, moc=True,
-      cards=[('1,54 triệu', 'Trả thêm mỗi tháng', 'lãi từ 8% lên 10%'), ('371 triệu', 'Trả thêm sau 20 năm', 'em tự tính'), ('9,18 triệu', 'Thu nhập bình quân lao động', 'mỗi tháng, quý 3/2026')],
+      cards=[('1,54 triệu', 'Trả thêm mỗi tháng', 'lãi từ 8% lên 10%'), ('371 triệu', 'Em tự tính, trả đều 240 tháng', 'trả thêm sau 20 năm'), ('9,18 triệu', 'Thu nhập bình quân lao động', 'mỗi tháng, quý 3/2026')],
       say=("Chỉ hai điểm phần trăm lãi suất thôi, anh Tuấn trả thêm khoảng một phẩy năm tư triệu đồng mỗi tháng, gần mười tám phẩy năm triệu mỗi năm. Cộng cả hai mươi năm là thêm khoảng ba trăm bảy mươi mốt triệu đồng. "
-           "Để dễ hình dung, thu nhập bình quân của người lao động quý ba năm nay là chín phẩy một tám triệu đồng mỗi tháng. Một phẩy năm tư triệu là gần một phần sáu số đó.")),
+           "Để dễ hình dung, thu nhập bình quân của người lao động quý ba năm nay là chín phẩy một tám triệu đồng mỗi tháng. Một phẩy năm tư triệu bằng khoảng mười bảy phần trăm số đó.")),
  dict(k='chat', cap=('PHƯƠNG ÁN KHÁC', 'HAI VỢ CHỒNG TỰ VẠCH RA'), cols=CC, moc=True, chat=dict(ten='Vợ', tv='Đang hoạt động', gio='00:40', mau=G_, msgs=[
         ('me', 'Mình trả bớt 200 triệu gốc trước khi hết ưu đãi nhé'),
         ('me', 'Còn 1 tỷ thì lãi 10% cũng chỉ 9,65 triệu mỗi tháng'),
@@ -126,9 +126,9 @@ S = [
            "Hai: giữ tổng tiền trả nợ không quá bốn mươi phần trăm thu nhập cả nhà. Ba, vợ anh nhắc thêm: luôn để sẵn quỹ dự phòng đủ sáu tháng trả nợ, thay vì rút hết đi mua vàng theo lời đồn. Đây là cách anh Tuấn tự tính cho nhà mình, không phải lời khuyên chung cho mọi người.")),
  # ---------------- CHƯƠNG 7 ----------------
  dict(k='checklist', ch='Chương 7 – Nhà đầu tư đọc con số này thế nào?', anh='ov:stock chart monitor||candlestick chart', cap=('3 CÂU HỎI', 'KHI NGHE "VIỆT NAM NỢ NHIỀU"'), cols=CC, moc=True,
-      items=[('Nợ của ai: Nhà nước, doanh nghiệp hay hộ gia đình?', GREEN),
-             ('Doanh nghiệp mình nắm giữ vay nhiều không, lãi vay ăn mất bao nhiêu lợi nhuận?', GREEN),
-             ('Cho vay chạy nhanh hơn tiền gửi: lãi suất 6–12 tháng tới sẽ đi đâu?', GOLD)],
+      items=[('Nợ của ai: Nhà nước hay tư nhân?', GREEN),
+             ('Doanh nghiệp mình giữ vay nhiều không?', GREEN),
+             ('Lãi suất 6–12 tháng tới đi đâu?', GOLD)],
       say=("Với nhà đầu tư chứng khoán, em gợi ý ba câu hỏi mỗi khi nghe ai đó nói Việt Nam nợ nhiều. Một: nợ của ai, Nhà nước, doanh nghiệp hay hộ gia đình? Mỗi loại có rủi ro rất khác nhau. "
            "Hai: doanh nghiệp mình đang nắm giữ vay nhiều không, và chi phí lãi vay đang ăn mất bao nhiêu phần lợi nhuận? Ba: khi cho vay chạy nhanh hơn tiền gửi, lãi suất sáu đến mười hai tháng tới sẽ đi về đâu? "
            "Anh chị có thể tra nợ vay, chi phí lãi vay và lợi nhuận từng quý của hơn bốn trăm mã miễn phí trên chứng khoán Huy Nguyễn chấm com.")),
@@ -167,7 +167,7 @@ META = {KEY: dict(kenh='@chungkhoanhuynguyen', seri='Câu hỏi lớn', ngay='20
     tieu_de=TIEU, title=TIEU, mo_ta=MT,
     tags=['nợ công Việt Nam', 'Việt Nam nợ bao nhiêu', 'tín dụng', 'lãi suất vay mua nhà', 'kinh tế Việt Nam', 'nợ công', 'vĩ mô', 'lãi suất thả nổi', 'tín dụng bất động sản'],
     bia_hook=['NỢ 146% GDP', 'AI ĐANG VAY?'], badge='NỢ CÔNG CHỈ 33% GDP',
-    bia_anh='ov:bank vault money||banknotes stack',
+    bia_anh='Bitexco Financial Tower||Ho Chi Minh City skyline night',
     bia_hook_b=['VAY 793 TỶ USD', 'ĐI ĐÂU HẾT?'], badge_b='CÂU HỎI LỚN',
     bia_hook_c=['NỢ CÔNG 33%', 'SAO VẪN LO?'], badge_c='THÁNG 8/2026',
     reel_hook='VIỆT NAM NỢ BAO NHIÊU|NỢ THẬT NẰM Ở ĐÂU???',
