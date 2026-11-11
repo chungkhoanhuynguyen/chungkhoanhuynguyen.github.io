@@ -18,14 +18,14 @@
    "loi": "Theo anh chị, doanh nghiệp Việt cần gì để giành lại phần lớn hơn trong 500 tỷ USD đó?",
    "loi_doc": "Theo anh chị, doanh nghiệp Việt cần gì để giành lại phần lớn hơn trong năm trăm tỷ đô la đó?",
    "anh": [
-    "Vietnam factory workers assembly line"
+    "ov:factory workers shift change||factory workers"
    ]
   },
   "canh": [
    {
     "chu_to": "KỶ LỤC MÀ SAO KHÔNG THẤY?",
-    "loi": "Báo đưa tin xuất khẩu lại kỷ lục. Vậy mà lương nhiều người đứng yên, đơn hàng của xưởng nhỏ vẫn èo uột. Tiền xuất khẩu rốt cuộc chảy về đâu?",
-    "loi_doc": "Báo đưa tin xuất khẩu lại kỷ lục. Vậy mà lương nhiều người đứng yên, đơn hàng của xưởng nhỏ vẫn èo uột. Tiền xuất khẩu rốt cuộc chảy về đâu?",
+    "loi": "Hải quan vừa công bố: mười tháng năm 2026, Việt Nam xuất khẩu kỷ lục, tăng hơn 27%. Vậy mà lương nhiều người đứng yên, xưởng nhỏ vẫn èo uột. Tiền đó chảy về đâu?",
+    "loi_doc": "Hải quan vừa công bố: mười tháng năm 2026, Việt Nam xuất khẩu kỷ lục, tăng hơn hai mươi bảy phần trăm. Vậy mà lương nhiều người đứng yên, xưởng nhỏ vẫn èo uột. Tiền đó chảy về đâu?",
     "anh": [
      "container port Vietnam",
      "Cat Lai port container"
@@ -141,8 +141,8 @@
     "loi": "Em không nói FDI xấu. Họ tạo hàng triệu việc làm, kéo theo cảng, khu công nghiệp, điện nước. Nhưng phần mình giữ lại chủ yếu là tiền lương, tiền thuê đất và dịch vụ.",
     "loi_doc": "Em không nói FDI xấu. Họ tạo hàng triệu việc làm, kéo theo cảng, khu công nghiệp, điện nước. Nhưng phần mình giữ lại chủ yếu là tiền lương, tiền thuê đất và dịch vụ.",
     "anh": [
-     "industrial park Vietnam aerial",
-     "Vietnam electronics factory"
+     "ov:factory workers assembly line||factory workers",
+     "ov:industrial park aerial||industrial park"
     ],
     "chat": 1
    },
