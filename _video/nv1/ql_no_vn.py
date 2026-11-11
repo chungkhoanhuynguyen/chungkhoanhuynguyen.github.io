@@ -58,7 +58,7 @@ S = [
       say=("Còn nợ nước ngoài, tức tiền cả Nhà nước lẫn doanh nghiệp vay từ bên ngoài. Năm 2025, con số này khoảng ba phẩy hai chín triệu tỷ đồng, chừng hai mươi lăm phẩy sáu phần trăm GDP. "
            "Trong khi đó, báo VnEconomy ngày hai tháng mười một vừa đưa tin tỷ lệ nợ công so với GDP của Mỹ đã lên mức cao nhất tám mươi năm. Nên nếu chỉ nhìn nợ công, Việt Nam chưa phải nước đáng lo. Mẹ anh Tuấn có thể ngủ yên. Nhưng anh Tuấn thì không.")),
  # ---------------- CHƯƠNG 2 ----------------
- dict(k='bignum', ch='Chương 2 – Khoản nợ lớn hơn cả GDP', anh='Bitexco Financial Tower||Ho Chi Minh City skyline night', cap=('TỔNG DƯ NỢ CHO VAY', 'THÁNG 8/2026'), cols=CR, moc=True, value=20.49, fmt='{:,.2f}', unit=' triệu tỷ', top='TÍN DỤNG TOÀN NỀN KINH TẾ', sub='Gấp 4,8 lần nợ công', col=RED,
+ dict(k='bignum', ch='Chương 2 – Khoản nợ lớn hơn cả GDP', anh='Bitexco Financial Tower||Ho Chi Minh City skyline night', cap=('KHOẢN NỢ GẤP 4,8 LẦN', 'KHÔNG PHẢI NỢ CÔNG'), cols=CR, moc=True, value=20.49, fmt='{:,.2f}', unit=' triệu tỷ', top='TÍN DỤNG TOÀN NỀN KINH TẾ', sub='Gấp 4,8 lần nợ công', col=RED,
       say=("Khoản nợ khiến anh Tuấn mất ngủ không nằm ở Chính phủ, mà nằm ở ngân hàng. Đó là tiền ngân hàng cho doanh nghiệp và người dân vay. Đến tháng tám năm 2026, tổng dư nợ cho vay của cả nền kinh tế là khoảng hai mươi phẩy bốn chín triệu tỷ đồng. "
            "Quy ra đô la theo tỷ giá hôm nay, khoảng bảy trăm chín mươi ba tỷ đô la, gấp khoảng bốn phẩy tám lần toàn bộ nợ công.")),
  dict(k='bars', anh='Bitexco Financial Tower||Ho Chi Minh City skyline night', cap=('DƯ NỢ CHO VAY / GDP', 'TỰ TÍNH TỪ SỐ NHNN, TCTK'), cols=CR, moc=True,
@@ -70,7 +70,7 @@ S = [
       say=("Trong mười hai tháng qua, dư nợ cho vay tăng khoảng mười bảy phẩy bốn phần trăm, trong khi GDP danh nghĩa chỉ tăng khoảng mười hai phẩy chín phần trăm. Nợ đang lớn nhanh hơn thu nhập. "
            "Nếu chia đều dư nợ đó cho mỗi người dân, kể cả em bé mới sinh, con số là khoảng hai trăm triệu đồng một người. Dĩ nhiên phần lớn là nợ của doanh nghiệp, nhưng nó cho anh chị thấy nền kinh tế đang chạy bằng tiền vay nhiều đến mức nào.")),
  # ---------------- CHƯƠNG 3 ----------------
- dict(k='giay', ch='Chương 3 – Tiền vay đi đâu?', cap=('HỢP ĐỒNG VAY', 'MUA NHÀ CỦA ANH TUẤN'), cols=CC, moc=True, giay=dict(tieu_de='HỢP ĐỒNG TÍN DỤNG', so='Khách hàng: Nguyễn Văn Tuấn – vay mua căn hộ', dau='ĐÃ KÝ', dieu=[
+ dict(k='giay', ch='Chương 3 – Tiền vay đi đâu?', cap=('DÒNG CHỮ NHỎ', 'TRONG HỢP ĐỒNG VAY NHÀ'), cols=CC, moc=True, giay=dict(tieu_de='HỢP ĐỒNG TÍN DỤNG', so='Khách hàng: Nguyễn Văn Tuấn – vay mua căn hộ', dau='ĐÃ KÝ', dieu=[
         ('Số tiền vay: 1.200.000.000 đồng, thời hạn 20 năm.', '1,2 TỶ'),
         ('Lãi suất 2 năm đầu: 8%/năm, cố định.', '8%'),
         ('Sau đó: lãi suất cơ sở cộng biên độ, điều chỉnh 3 tháng một lần.', 'THẢ NỔI')]),
