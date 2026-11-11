@@ -1,0 +1,201 @@
+[
+ {
+  "key": "RV1211NO",
+  "tieu_de": "Việt Nam đang nợ bao nhiêu? Nợ công chỉ 33% GDP, nhưng dư nợ cho vay đã 146% GDP",
+  "hook": [
+   "NỢ CÔNG CHỈ 33% GDP",
+   "NỢ THẬT NẰM Ở ĐÂU???"
+  ],
+  "nhan": "VĨ MÔ · HỎI THẬT",
+  "short_caption": "Nợ công Việt Nam năm 2025 chỉ khoảng 33% GDP và đang giảm. Nhưng dư nợ cho vay của cả nền kinh tế đã khoảng 20,5 triệu tỷ đồng, bằng 146% GDP, tăng 17,4% trong khi tiền gửi chỉ tăng 13,6%. Người vay lãi thả nổi mới là người cần để ý. Quan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "LÃI LÊN 11% THÌ SAO?",
+   "loi": "Nếu lãi vay nhà mình lên 11%, anh chị sẽ trả bớt nợ, bán bớt tài sản hay cứ giữ nguyên?",
+   "loi_doc": "Nếu lãi vay nhà mình lên mười một phần trăm, anh chị sẽ trả bớt nợ, bán bớt tài sản hay cứ giữ nguyên?",
+   "anh": [
+    "ov:apartment building night||apartment building"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "VIỆT NAM NỢ BAO NHIÊU?",
+    "loi": "Ngày 2/11/2026, VnEconomy vừa đưa tin nợ công của Mỹ so với GDP lên mức cao nhất 80 năm. Còn Việt Nam đang nợ bao nhiêu? Em kiểm tra bằng số liệu thật, và kết quả bất ngờ.",
+    "loi_doc": "Ngày ngày hai tháng mười một năm hai nghìn không trăm hai mươi sáu, VnEconomy vừa đưa tin nợ công của Mỹ so với GDP lên mức cao nhất tám mươi năm. Còn Việt Nam đang nợ bao nhiêu? Em kiểm tra bằng số liệu thật, và kết quả bất ngờ.",
+    "anh": [
+     "ov:newspaper finance headline||newspaper"
+    ],
+    "chat": 1
+   },
+   {
+    "chu_to": "NỢ CÔNG CHỈ 33% GDP",
+    "loi": "Năm 2025, nợ công khoảng 4,27 triệu tỷ đồng, chỉ khoảng 33% GDP. Năm 2018 con số này còn là 45,7%. Gánh nợ của Nhà nước đang nhẹ đi.",
+    "loi_doc": "Năm hai nghìn không trăm hai mươi lăm, nợ công khoảng bốn phẩy hai mươi bảy triệu tỷ đồng, chỉ khoảng ba mươi ba phần trăm GDP. Năm hai nghìn không trăm mười tám con số này còn là bốn mươi lăm phẩy bảy phần trăm. Gánh nợ của Nhà nước đang nhẹ đi.",
+    "the": {
+     "loai": "cot",
+     "tieu": "NỢ CÔNG / GDP",
+     "nguon": "Bộ Tài chính, TCTK – em tự tính",
+     "hang": [
+      [
+       "2018",
+       45.7
+      ],
+      [
+       "2025",
+       33.3
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "%",
+     "max": 50
+    }
+   },
+   {
+    "chu_to": "NHƯNG CÓ KHOẢN NỢ KHÁC",
+    "loi": "Khoản nợ đáng để ý nằm ở ngân hàng. Tháng 8/2026, dư nợ cho vay cả nền kinh tế khoảng 20,5 triệu tỷ đồng, gấp 4,8 lần nợ công.",
+    "loi_doc": "Khoản nợ đáng để ý nằm ở ngân hàng. Tháng tám/hai nghìn không trăm hai mươi sáu, dư nợ cho vay cả nền kinh tế khoảng hai mươi phẩy năm triệu tỷ đồng, gấp bốn phẩy tám lần nợ công.",
+    "the": {
+     "loai": "lon",
+     "tieu": "DƯ NỢ CHO VAY THÁNG 8/2026",
+     "nguon": "NHNN, Bộ Tài chính, TCTK – tổng hợp WiData",
+     "dong": [
+      [
+       "20,49 TRIỆU TỶ",
+       76,
+       "do"
+      ],
+      [
+       "GẤP 4,8 LẦN NỢ CÔNG",
+       52,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "146% GDP",
+    "loi": "So với nền kinh tế, năm 2016 dư nợ bằng khoảng 98% GDP. Tháng 8/2026 đã khoảng 146%. Mười năm, dư nợ tăng gần gấp 4, GDP chỉ gấp 2,5.",
+    "loi_doc": "So với nền kinh tế, năm hai nghìn không trăm mười sáu dư nợ bằng khoảng chín mươi tám phần trăm GDP. Tháng tám/hai nghìn không trăm hai mươi sáu đã khoảng một trăm bốn mươi sáu phần trăm. Mười năm, dư nợ tăng gần gấp bốn, GDP chỉ gấp hai phẩy năm.",
+    "the": {
+     "loai": "cot",
+     "tieu": "DƯ NỢ CHO VAY / GDP (%)",
+     "nguon": "NHNN, TCTK – em tự tính",
+     "hang": [
+      [
+       "2016",
+       97.6
+      ],
+      [
+       "2020",
+       114.3
+      ],
+      [
+       "2024",
+       135.7
+      ],
+      [
+       "8/2026",
+       145.8
+      ]
+     ],
+     "noi": [
+      3
+     ],
+     "dv": "%",
+     "max": 160
+    }
+   },
+   {
+    "chu_to": "DỒN VỀ NHÀ ĐẤT",
+    "loi": "Khoảng 45% dư nợ nằm ở nhóm phần lớn là cho vay bất động sản và tiêu dùng, chủ yếu vay mua nhà. Nhóm này tăng 24,4% trong một năm.",
+    "loi_doc": "Khoảng bốn mươi lăm phần trăm dư nợ nằm ở nhóm phần lớn là cho vay bất động sản và tiêu dùng, chủ yếu vay mua nhà. Nhóm này tăng hai mươi bốn phẩy bốn phần trăm trong một năm.",
+    "the": {
+     "loai": "lon",
+     "tieu": "NHÓM BẤT ĐỘNG SẢN, TIÊU DÙNG",
+     "nguon": "NHNN, Bộ Tài chính, TCTK – tổng hợp WiData",
+     "dong": [
+      [
+       "45% TỔNG DƯ NỢ",
+       64,
+       "vang"
+      ],
+      [
+       "+24,4% TRONG 1 NĂM",
+       58,
+       "do"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "CHO VAY NHANH HƠN GỬI",
+    "loi": "Cho vay tăng 17,4%, tiền gửi chỉ tăng 13,6%. Ngân hàng thiếu vốn thì phải trả lãi cao hơn, và người vay lãi thả nổi gánh phần chênh đó.",
+    "loi_doc": "Cho vay tăng mười bảy phẩy bốn phần trăm, tiền gửi chỉ tăng mười ba phẩy sáu phần trăm. Ngân hàng thiếu vốn thì phải trả lãi cao hơn, và người vay lãi thả nổi gánh phần chênh đó.",
+    "the": {
+     "loai": "cot",
+     "tieu": "TĂNG TRONG 12 THÁNG (%)",
+     "nguon": "NHNN, Bộ Tài chính, TCTK – tổng hợp WiData",
+     "hang": [
+      [
+       "Cho vay",
+       17.4
+      ],
+      [
+       "Tiền gửi",
+       13.6
+      ]
+     ],
+     "noi": [
+      0
+     ],
+     "dv": "%",
+     "max": 20
+    }
+   },
+   {
+    "chu_to": "VAY 1,2 TỶ MUA NHÀ",
+    "loi": "Vay 1,2 tỷ trong 20 năm: lãi 8% trả khoảng 10,04 triệu mỗi tháng. Lên 10% là 11,58 triệu mỗi tháng, thêm khoảng 371 triệu sau 20 năm.",
+    "loi_doc": "Vay một phẩy hai tỷ trong hai mươi năm: lãi tám phần trăm trả khoảng mười phẩy không bốn triệu mỗi tháng. Lên mười phần trăm là mười một phẩy năm mươi tám triệu mỗi tháng, thêm khoảng ba trăm bảy mươi mốt triệu sau hai mươi năm.",
+    "the": {
+     "loai": "cot",
+     "tieu": "TRẢ MỖI THÁNG (TRIỆU ĐỒNG)",
+     "nguon": "Em tự tính: trả đều gốc và lãi 240 tháng",
+     "hang": [
+      [
+       "Lãi 8%",
+       10.04
+      ],
+      [
+       "Lãi 10%",
+       11.58
+      ],
+      [
+       "Lãi 11%",
+       12.39
+      ]
+     ],
+     "noi": [
+      2
+     ],
+     "dv": "",
+     "max": 14
+    }
+   },
+   {
+    "chu_to": "ĐỪNG SỢ SAI CHỖ",
+    "loi": "Nước mình chưa đến mức vỡ nợ. Điều đáng lo là khoản vay của chính gia đình mình khi lãi suất đổi chiều.",
+    "loi_doc": "Nước mình chưa đến mức vỡ nợ. Điều đáng lo là khoản vay của chính gia đình mình khi lãi suất đổi chiều.",
+    "anh": [
+     "ov:family apartment living room||family home"
+    ],
+    "chat": 1
+   }
+  ]
+ }
+]
