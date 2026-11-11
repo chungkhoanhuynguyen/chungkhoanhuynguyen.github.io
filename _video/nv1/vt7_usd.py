@@ -39,8 +39,8 @@ S = [
       say=("Con số anh Khoa nói là thật. Theo số liệu tổng hợp trên WiData, ngày ba mươi mốt tháng ba năm 2026, giá đô la tự do bán ra là hai mươi tám nghìn không trăm tám mươi đồng. Đó là mức cao nhất trong các tháng gần đây. "
            "Cả khu phố bàn chuyện tiền đồng mất giá. Không khí y như lúc cả xóm xếp hàng mua vàng. Mà đúng là vậy: giữa tháng ba năm đó, vàng miếng cũng lên đỉnh gần một trăm tám mươi lăm triệu đồng một lượng. "
            "Khi vàng sốt, người ta cần đô la tiền mặt, và giá đô ngoài chợ bị kéo lên theo.")),
- dict(k='cards', anh='ov:bank exchange rate board||currency exchange', cap=('CÙNG NGÀY 31/3/2026', 'GIÁ BÁN 1 USD'), cols=CR, moc=True,
-      cards=[('26.357', 'Ngân hàng bán ra', 'đồng'), ('28.080', 'Thị trường tự do', 'đồng'), ('1.723', 'Bạn trả thêm mỗi đô', 'đắt hơn 6,5%')],
+ dict(k='cards', anh=TIEN, cap=('CÙNG NGÀY 31/3/2026', 'GIÁ BÁN 1 USD'), cols=CR, moc=True,
+      cards=[('26.357', 'Đồng một đô la', 'Ngân hàng bán ra'), ('28.080', 'Đồng một đô la', 'Thị trường tự do'), ('1.723', 'Bạn trả thêm mỗi đô', 'đắt hơn 6,5%')],
       say=("Nhưng có một chi tiết bạn bỏ qua. Cùng ngày hôm đó, giá ngân hàng bán ra chỉ hai mươi sáu nghìn ba trăm năm mươi bảy đồng. Tức là mỗi đô la ở tiệm, bạn đã trả thêm một nghìn bảy trăm hai mươi ba đồng, đắt hơn khoảng sáu phẩy năm phần trăm. "
            "Bạn chưa kịp lời đồng nào, đã thua ngay sáu phẩy năm phần trăm từ lúc cầm tờ đô la lên tay.")),
  dict(k='giay', cap=('TỜ GIẤY VIẾT TAY', 'Ở TIỆM QUEN'), cols=CR, moc=True, giay=dict(tieu_de='GIẤY GHI NHẬN ĐỔI TIỀN', so='Ngày 31/3/2026 – không hoá đơn, không con dấu', dau='ĐÃ GIAO', dieu=[
@@ -71,16 +71,16 @@ S = [
         ('Tin tức', 'VnEconomy 2/11/2026', 'VND vào nhóm 3 đồng tiền châu Á tăng giá mạnh nhất so với USD', G_)]),
       say=("Trong lúc bạn yên tâm giữ đô, báo chí vẫn đưa tin đều đặn. Tháng tám, VnEconomy viết: đô la tự do lao dốc xuống dưới hai mươi sáu nghìn đồng. "
            "Ngày hai tháng mười một, cũng VnEconomy: tiền đồng vào nhóm ba đồng tiền châu Á tăng giá mạnh nhất so với đô la. Thứ bạn sợ mất giá, lại là thứ tăng giá.")),
- dict(k='cards', anh='ov:bank exchange rate board||currency exchange', cap=('VÌ SAO TIỀN ĐỒNG', 'LẠI KHỎE LÊN?'), cols=CC, moc=True,
-      cards=[('25.840', 'Ngân hàng bán ra 11/11/2026', 'đồng một đô la'), ('50', 'Chênh tự do với ngân hàng', 'đồng, từ 1.723 hồi tháng 3')],
-      say=("Vì sao tiền đồng lại khỏe lên? Theo VnEconomy, một phần là do cơ quan chức năng siết các đường dây chuyển tiền qua tiền ảo. Chênh lệch giá vàng trong nước với thế giới cũng thu hẹp, nên nhu cầu đô la tiền mặt ngoài chợ giảm hẳn. "
+ dict(k='cards', anh=TIEN, cap=('VÌ SAO TIỀN ĐỒNG', 'LẠI KHỎE LÊN?'), cols=CC, moc=True,
+      cards=[('25.840', 'Đồng một đô la, 11/11/2026', 'ngân hàng bán ra'), ('50 đồng', 'Tháng 3 là 1.723 đồng', 'chênh tự do với ngân hàng')],
+      say=("Vì sao tiền đồng lại khỏe lên? Theo VnEconomy, cơ quan chức năng đã siết các đường dây chuyển tiền qua tiền ảo. Chênh lệch giá vàng trong nước với thế giới cũng thu hẹp, nên nhu cầu đô la tiền mặt ngoài chợ giảm hẳn. "
            "Hôm nay, giá đô ngân hàng bán ra là hai mươi lăm nghìn tám trăm bốn mươi đồng, giá tự do chỉ cao hơn năm mươi đồng. Khoản chênh một nghìn bảy trăm đồng mà bạn trả hồi tháng ba gần như đã biến mất.")),
  dict(k='cards', anh=TIEN, cap=('1 TỶ ĐỔI ĐÔ NGÀY 31/3', 'ĐẾN NGÀY 11/11/2026'), cols=CR, moc=True,
-      cards=[('922 triệu', 'Giá trị nếu bán đúng 25.890', 'mất khoảng 78 triệu'), ('+33 triệu', 'Nếu cứ để gửi tiết kiệm 5,4%', '225 ngày, tự tính'), ('111 triệu', 'Chênh giữa hai lựa chọn', 'tự tính')],
+      cards=[('922 triệu', 'Giá trị nếu bán đúng 25.890', 'mất khoảng 78 triệu'), ('+33 triệu', '225 ngày, lãi 5,4%, tự tính', 'nếu cứ gửi tiết kiệm'), ('111 triệu', 'Tự tính', 'chênh giữa hai lựa chọn')],
       say=("Làm phép tính. Ba mươi lăm nghìn sáu trăm mười hai đô la, nhân với hai mươi lăm nghìn tám trăm chín mươi, còn khoảng chín trăm hai mươi hai triệu đồng. Mà đó là giá bán ra, tiệm mua lại của bạn còn thấp hơn. "
            "Nếu bạn cứ để một tỷ trong sổ tiết kiệm lãi năm phẩy bốn phần trăm, sau hai trăm hai mươi lăm ngày bạn có thêm khoảng ba mươi ba triệu. Khoảng cách giữa hai lựa chọn là khoảng một trăm mười một triệu đồng.")),
  # ---------------- CHƯƠNG 3 ----------------
- dict(k='checklist', ch='Chương 3 – Vì sao người cẩn thận lại mua đúng đỉnh?', anh='ov:crowd queue shop||people waiting in line', cap=('3 CÁI BẪY', 'CỦA ĐÔ LA TỰ DO'), cols=CC, moc=True,
+ dict(k='checklist', ch='Chương 3 – Vì sao người cẩn thận lại mua đúng đỉnh?', anh=TIEN, cap=('3 CÁI BẪY', 'CỦA ĐÔ LA TỰ DO'), cols=CC, moc=True,
       items=[('Mua khi chênh với ngân hàng đang lớn nhất', RED), ('Tiền gửi đô la ở Việt Nam lãi 0%', RED), ('Không hoá đơn, không bảo vệ khi tranh chấp', RED)],
       say=("Vì sao một người cẩn thận như bạn lại mua đúng đỉnh? Bẫy thứ nhất: bạn mua đúng lúc chênh lệch giữa giá tự do và giá ngân hàng lớn nhất. Chênh lệch đó thường nới rộng khi người ta đổ xô mua đô, nhất là lúc giá vàng trong nước cao hơn thế giới nhiều. "
            "Bẫy thứ hai: giữ đô la ở Việt Nam gần như không sinh lời, vì lãi suất tiền gửi đô la tại ngân hàng là không phần trăm. Bẫy thứ ba: tờ giấy viết tay không bảo vệ bạn nếu có tranh chấp.")),
@@ -90,7 +90,7 @@ S = [
            "Không ai lừa ai cả. Hai người chỉ cùng làm theo nỗi sợ của cả khu phố.")),
  # ---------------- CHƯƠNG 4 ----------------
  dict(k='cards', ch='Chương 4 – Lịch sử từng lặp lại', anh=TIEN, cap=('ĐỢT SỐT TRƯỚC', 'ĐÔ LA TỰ DO BÁN RA'), cols=CR, moc=True,
-      cards=[('27.850', 'Cuối tháng 10/2025', 'đồng'), ('26.500', 'Cuối tháng 1/2026', 'giảm khoảng 4,8%')],
+      cards=[('27.850', 'Đồng một đô la', 'cuối tháng 10/2025'), ('26.500', 'Cuối tháng 1/2026', 'giảm khoảng 4,8%')],
       say=("Đây không phải lần đầu. Cuối tháng mười năm 2025, đô la tự do cũng sốt lên hai mươi bảy nghìn tám trăm năm mươi đồng. Ba tháng sau, cuối tháng một năm 2026, giá về hai mươi sáu nghìn rưỡi, giảm khoảng bốn phẩy tám phần trăm. "
            "Chỉ trong một năm, đô la tự do sốt hai lần, và cả hai lần, người mua lúc đang sốt đều phải chịu lỗ.")),
  dict(k='giay', cap=('ĐIỀU BẠN CHƯA BIẾT', 'VỀ ĐỔI TIỀN Ở TIỆM'), cols=CR, moc=True, giay=dict(tieu_de='NGHỊ ĐỊNH 88/2019/NĐ-CP', so='Xử phạt vi phạm hành chính trong lĩnh vực tiền tệ, ngân hàng', dau='QUY ĐỊNH', dieu=[
@@ -99,8 +99,8 @@ S = [
       say=("Và còn một rủi ro bạn chưa từng nghĩ tới. Theo Nghị định tám mươi tám năm 2019 của Chính phủ, mua bán ngoại tệ tại nơi không được phép có thể bị phạt tiền. Số ngoại tệ đó cũng có thể bị tịch thu. "
            "Nghĩa là xấp đô la trong két không chỉ mất giá, mà còn có thể mất trắng nếu không may bị kiểm tra.")),
  # ---------------- CHƯƠNG 5 ----------------
- dict(k='checklist', ch='Chương 5 – Nếu thật sự cần đô la', anh='ov:bank counter customers||bank interior', cap=('LÀM LẠI TỪ ĐẦU', 'BẠN SẼ LÀM GÌ?'), cols=CC, moc=True,
-      items=[('Chỉ đổi khi có nhu cầu thật: du học, chữa bệnh, trả nợ ngoại tệ', GREEN), ('Mua ở ngân hàng, theo giấy tờ hợp lệ', GREEN), ('Chia nhỏ nhiều lần, không dồn một lúc', GREEN), ('Còn lại: để tiền đồng sinh lời', GOLD)],
+ dict(k='checklist', ch='Chương 5 – Nếu thật sự cần đô la', anh='Ho Chi Minh City skyline', cap=('LÀM LẠI TỪ ĐẦU', 'BẠN SẼ LÀM GÌ?'), cols=CC, moc=True,
+      items=[('Chỉ đổi khi có nhu cầu thật', GREEN), ('Mua ở ngân hàng, theo giấy tờ hợp lệ', GREEN), ('Chia nhỏ nhiều lần, không dồn một lúc', GREEN), ('Còn lại: để tiền đồng sinh lời', GOLD)],
       say=("Nếu được làm lại, bạn sẽ làm khác. Chỉ đổi đô la khi có nhu cầu thật, như cho con đi du học, chữa bệnh hay trả khoản nợ bằng ngoại tệ. Khi đó, mua ở ngân hàng với giấy tờ hợp lệ, giá rẻ hơn và được pháp luật bảo vệ. "
            "Nếu nhu cầu còn xa, chia nhỏ ra mua nhiều lần thay vì dồn một lúc đúng đỉnh. Phần tiền không có nhu cầu đô la, để nó sinh lời bằng tiền đồng. "
            "Ví dụ, nếu năm sau con bạn đi du học và cần hai mươi nghìn đô, bạn có thể chia ra bốn quý, mỗi quý đổi năm nghìn đô ở ngân hàng. Giá lên hay xuống, bạn cũng chỉ mua được giá trung bình, chứ không bao giờ dồn hết vào đúng đỉnh.")),
