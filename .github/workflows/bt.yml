@@ -1,0 +1,13 @@
+name: Kiem thu phuong phap (backtest)
+on:
+  workflow_dispatch:
+jobs:
+  bt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 1}
+      - run: python3 -u _kiem/bt.py | tee _kiem/bt_ketqua.txt
+      - uses: actions/upload-artifact@v4
+        with: {name: bt, path: _kiem/bt_ketqua.txt}
