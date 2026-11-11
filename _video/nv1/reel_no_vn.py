@@ -15,7 +15,7 @@ R = dict(key='RV1211NO', tieu_de='Việt Nam đang nợ bao nhiêu? Nợ công c
               loi_doc=lib.doc('Nếu lãi vay nhà mình lên 11%, anh chị sẽ trả bớt nợ, bán bớt tài sản hay cứ giữ nguyên?'), anh=['ov:apartment building night||apartment building']),
  canh=[
   C('VIỆT NAM NỢ BAO NHIÊU?', 'Ngày 2/11/2026, VnEconomy vừa đưa tin nợ công của Mỹ so với GDP lên mức cao nhất 80 năm. Còn Việt Nam đang nợ bao nhiêu? Em kiểm tra bằng số liệu thật, và kết quả bất ngờ.',
-    anh=['ov:newspaper finance headline||newspaper'], chat=1),
+    anh=['ov:newspaper finance headline', 'newspaper'], chat=1),
   C('NỢ CÔNG CHỈ 33% GDP', 'Năm 2025, nợ công khoảng 4,27 triệu tỷ đồng, chỉ khoảng 33% GDP. Năm 2018 con số này còn là 45,7%. Gánh nợ của Nhà nước đang nhẹ đi.',
     the=dict(loai='cot', tieu='NỢ CÔNG / GDP', nguon='Bộ Tài chính, TCTK – em tự tính', hang=[['2018', 45.7], ['2025', 33.3]], noi=[1], dv='%', max=50)),
   C('NHƯNG CÓ KHOẢN NỢ KHÁC', 'Khoản nợ đáng để ý nằm ở ngân hàng. Tháng 8/2026, dư nợ cho vay cả nền kinh tế khoảng 20,5 triệu tỷ đồng, gấp 4,8 lần nợ công.',
@@ -29,7 +29,7 @@ R = dict(key='RV1211NO', tieu_de='Việt Nam đang nợ bao nhiêu? Nợ công c
   C('VAY 1,2 TỶ MUA NHÀ', 'Vay 1,2 tỷ trong 20 năm: lãi 8% trả khoảng 10,04 triệu mỗi tháng. Lên 10% là 11,58 triệu mỗi tháng, thêm khoảng 371 triệu sau 20 năm.',
     the=dict(loai='cot', tieu='TRẢ MỖI THÁNG (TRIỆU ĐỒNG)', nguon='Em tự tính: trả đều gốc và lãi 240 tháng', hang=[['Lãi 8%', 10.04], ['Lãi 10%', 11.58], ['Lãi 11%', 12.39]], noi=[2], dv='', max=14)),
   C('ĐỪNG SỢ SAI CHỖ', 'Nước mình chưa đến mức vỡ nợ. Điều đáng lo là khoản vay của chính gia đình mình khi lãi suất đổi chiều.',
-    anh=['ov:family apartment living room||family home'], chat=1),
+    anh=['Hanoi apartment buildings', 'Ho Chi Minh City apartment buildings'], chat=1),
  ])
 os.makedirs(LO, exist_ok=True)
 json.dump([R], open(LO + '/reel.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
