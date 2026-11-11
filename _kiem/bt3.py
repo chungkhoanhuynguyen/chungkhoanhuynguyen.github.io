@@ -83,9 +83,15 @@ for s, b in D.items():
     a["mc"] = [None] * N
     if s in MC:
         r = MC[s]; ri = 0; last = None
+        sh0 = None
+        for g in range(N):   # soát lỗi lần 3: trước 12/2017 nguồn chưa có vốn hoá -> lùi bằng số CP của ngày đầu có dữ liệu × giá
+            if a["c"][g] is not None and r and r[0][0][:10] <= CAL[g] and sh0 is None: sh0 = r[0][1] / a["c"][g]
+        if sh0 is None and r:
+            g1 = next((g for g in range(N) if a["c"][g] is not None and CAL[g] >= r[0][0][:10]), None)
+            sh0 = r[0][1] / a["c"][g1] if g1 is not None else None
         for g in range(N):
             while ri < len(r) and r[ri][0][:10] <= CAL[g]: last = r[ri][1]; ri += 1
-            a["mc"][g] = last
+            a["mc"][g] = last if last is not None else ((a["c"][g] * sh0) if (sh0 and a["c"][g] is not None) else None)
     else:
         a["mc"] = [x * 1e9 if x is not None else None for x in a["c"]]   # không có dữ liệu: coi như nhỏ (xếp sau)
     a["fl"] = FL.get(s, "HOSE"); A[s] = a
