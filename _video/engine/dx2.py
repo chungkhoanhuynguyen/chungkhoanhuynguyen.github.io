@@ -366,9 +366,10 @@ def bignum(im, d, sc, t, box=BX):
     v = sc["value"]; a = ease(max(0, t - sc.get("t0", 0))/sc.get("dur", 0.9)); cur = sc.get("v0", 0) + (v - sc.get("v0", 0))*a
     s = sc.get("fmt", "{:+,.0f}").format(cur).translate(str.maketrans({",": ".", ".": ","})) + sc.get("unit", "")
     col = sc.get("col") or (RED if v < 0 else GREEN)
-    f = fit(d, s, "Black", box[2]-box[0]-80, 200); ct(d, (box[1]+box[3])/2 - f.size*0.75, s, f, col)
-    if sc.get("top"): ct(d, (box[1]+box[3])/2 - f.size*0.75 - 90, sc["top"], F("ExtraBold", 44), CREAM)
-    if sc.get("sub"): ct(d, (box[1]+box[3])/2 + f.size*0.45, sc["sub"], F("Bold", 36), DIM)
+    cx = (box[0]+box[2])/2; mw = box[2]-box[0]-80
+    f = fit(d, s, "Black", mw, 200); ct(d, (box[1]+box[3])/2 - f.size*0.75, s, f, col, cx)
+    if sc.get("top"): ct(d, (box[1]+box[3])/2 - f.size*0.75 - 90, sc["top"], fit(d, sc["top"], "ExtraBold", mw, 44), CREAM, cx)
+    if sc.get("sub"): ct(d, (box[1]+box[3])/2 + f.size*0.45, sc["sub"], fit(d, sc["sub"], "Bold", mw, 36), DIM, cx)
 
 def bars(im, d, sc, t, box=BX):
     # biểu đồ thanh ngang: sc["bars"] = [(nhãn, giá trị, màu, chữ hiển thị), ...]

@@ -6,6 +6,8 @@
 #  - Xuất khẩu khu vực FDI = nhập khẩu FDI + cán cân FDI = 404.038 (81%); trong nước = 94.766 (19%) – số tự tính.
 #  - Cán cân 10T/2026: FDI +25.052; trong nước −36.867; tổng −11.816 (10T/2025: +19.492).
 #  - Xuất sang Hoa Kỳ 10T/2026: 159.498 (32% tổng xuất khẩu).
+#  - FDI xuất = 92730+255713: 2017 71% · 2023 72,5% · 2025 77,7% · 10T/26 81%; 10T/25 FDI 303,9 tỷ, DN Việt 87,7 tỷ -> +33% / +8%. FDI nhập 10T/26 378,99 tỷ.
+#  - Mặt hàng 10T/26 (bảng 86 ytd): điện tử 149,4 · máy móc 63,3 · điện thoại 57,6 · gỗ 15,0 tỷ USD.
 #  - Cán cân thanh toán NHNN, 4 quý Q3/2025–Q2/2026: chi thu nhập đầu tư (lãi, lợi nhuận trả ra nước ngoài) 17.861; FDI vào 23.070.
 import os, sys, json
 sys.path.insert(0, os.path.dirname(__file__)); import lib
@@ -21,7 +23,7 @@ S = [
         ('Zalo', 'Tổ trưởng chuyền 3', 'Tháng này chuyền mình không tăng ca nhé mọi người', R_)]),
       say=("Sáu giờ bốn mươi sáng, chị Mai đứng chờ xe đưa đón ở cổng khu công nghiệp. Điện thoại hiện hai thông báo liền nhau. Tin thứ nhất: xuất khẩu mười tháng đạt gần năm trăm tỷ đô la, tăng hơn hai mươi bảy phần trăm. "
            "Tin thứ hai, từ tổ trưởng: tháng này chuyền mình không tăng ca nhé mọi người. Chị Mai nhìn hai dòng chữ, tự hỏi: đất nước xuất khẩu kỷ lục, sao túi mình vẫn thế?")),
- dict(k='bignum', cap=('10 THÁNG NĂM 2026', 'TĂNG 27,4% SO VỚI CÙNG KỲ'), cols=CC, value=498.8, fmt='{:,.1f}', unit=' tỷ USD', top='XUẤT KHẨU CỦA VIỆT NAM', sub='Khoảng 50 tỷ USD mỗi tháng', col=GOLD,
+ dict(k='bignum', anh='ov:container port aerial||container port', cap=('10 THÁNG NĂM 2026', 'TĂNG 27,4% SO VỚI CÙNG KỲ'), cols=CC, value=498.8, fmt='{:,.1f}', unit=' tỷ USD', top='XUẤT KHẨU CỦA VIỆT NAM', sub='Khoảng 50 tỷ USD mỗi tháng', col=GOLD,
       say=("Con số trên báo là thật. Theo số liệu hải quan, mười tháng năm 2026, Việt Nam xuất khẩu bốn trăm chín mươi tám phẩy tám tỷ đô la, tăng hai mươi bảy phẩy bốn phần trăm so với cùng kỳ, trung bình gần năm mươi tỷ đô la mỗi tháng. "
            "Nhưng hôm nay em muốn cùng anh chị trả lời câu hỏi của chị Mai: gần năm trăm tỷ đô la đó, cuối cùng về túi ai?")),
  # ---------------- CHƯƠNG 1 ----------------
@@ -32,20 +34,35 @@ S = [
         ('Vợ', 'Vậy ai xuất khẩu nhiều thế?')]),
       say=("Cách đó hơn một nghìn cây số, ở Bình Dương, anh Hùng chủ một xưởng gỗ nhỏ chuyên làm hàng xuất khẩu. Tối đó vợ anh nhắn: báo nói xuất khẩu tăng hai mươi bảy phần trăm mà anh. "
            "Anh Hùng trả lời: xưởng mình đơn hàng vẫn chưa về em ạ, tháng này lại phải vay thêm để mua gỗ nhập. Vợ anh hỏi lại một câu rất đơn giản: vậy ai xuất khẩu nhiều thế?")),
- dict(k='cards', cap=('XUẤT KHẨU 10T/2026', 'CỦA AI?'), cols=CC, moc=True,
-      cards=[('81%', 'Doanh nghiệp vốn nước ngoài (FDI)', 'khoảng 404 tỷ USD'), ('19%', 'Doanh nghiệp Việt', 'khoảng 95 tỷ USD'), ('', 'Em tính từ số liệu hải quan theo khu vực', '')],
+ dict(k='cards', anh='ov:factory workers||factory assembly line', cap=('XUẤT KHẨU 10T/2026', 'CỦA AI?'), cols=CC, moc=True,
+      cards=[('81%', 'Doanh nghiệp vốn nước ngoài (FDI)', 'khoảng 404 tỷ USD'), ('19%', 'Doanh nghiệp Việt', 'khoảng 95 tỷ USD'), ('5 : 1', 'Cứ 5 đô la xuất khẩu', 'chỉ 1 đô của DN Việt')],
       say=("Câu trả lời nằm ở bảng số liệu theo khu vực. Em tách xuất khẩu mười tháng ra hai phần. Khoảng tám mươi mốt phần trăm, tức hơn bốn trăm tỷ đô la, là hàng của doanh nghiệp có vốn nước ngoài, những nhà máy như nơi chị Mai đang làm. "
            "Doanh nghiệp Việt, như xưởng của anh Hùng, chỉ chiếm khoảng mười chín phần trăm. Tức là cứ năm đô la xuất khẩu, chỉ khoảng một đô la là của doanh nghiệp trong nước.")),
+ dict(k='cards', anh='ov:factory assembly line electronics||factory workers', cap=('10 THÁNG 2026', 'SO VỚI CÙNG KỲ 2025'), cols=CC, moc=True,
+      cards=[('+33%', 'Xuất khẩu khu vực FDI', '~304 lên ~404 tỷ USD'), ('+8%', 'Xuất khẩu doanh nghiệp Việt', '~88 lên ~95 tỷ USD', (196, 120, 20))],
+      say=("Và đây là chi tiết khiến em giật mình. So với mười tháng năm ngoái, xuất khẩu của khu vực FDI tăng khoảng ba mươi ba phần trăm, từ khoảng ba trăm lẻ bốn lên khoảng bốn trăm lẻ bốn tỷ đô la. "
+           "Còn xuất khẩu của doanh nghiệp Việt chỉ tăng khoảng tám phần trăm, từ tám mươi tám lên chín mươi lăm tỷ. Nói cách khác, gần như toàn bộ phần tăng trưởng kỷ lục năm nay đến từ các nhà máy vốn nước ngoài.")),
+ dict(k='cards', anh='ov:container port aerial||container port', cap=('PHẦN CỦA DOANH NGHIỆP VIỆT', 'TRONG TỔNG XUẤT KHẨU'), cols=CR, moc=True,
+      cards=[('29%', 'Năm 2017', '~62 / 215 tỷ USD'), ('27,5%', 'Năm 2023', '~98 / 355 tỷ USD'), ('22%', 'Năm 2025', '~106 / 475 tỷ USD'), ('19%', '10 tháng 2026', '~95 / 499 tỷ USD')],
+      say=("Nếu nhìn xa hơn, xu hướng còn rõ. Năm 2017, doanh nghiệp Việt chiếm khoảng hai mươi chín phần trăm xuất khẩu. Năm 2023, hai mươi bảy phẩy năm phần trăm. Năm 2025 còn khoảng hai mươi hai phần trăm, và mười tháng năm nay chỉ còn mười chín phần trăm. "
+           "Doanh nghiệp Việt vẫn lớn lên về số tuyệt đối, nhưng chiếc bánh FDI lớn nhanh hơn rất nhiều. Đây là số em tự tính từ số liệu hải quan theo khu vực, anh chị xem nguồn ở phần mô tả.")),
  # ---------------- CHƯƠNG 2 ----------------
- dict(k='cards', ch='Chương 2 – Người dư, người thiếu', cap=('CÁN CÂN THƯƠNG MẠI', '10 THÁNG 2026'), cols=CR, moc=True,
+ dict(k='cards', ch='Chương 2 – Người dư, người thiếu', anh='ov:cargo ship containers port||container port', cap=('CÁN CÂN THƯƠNG MẠI', '10 THÁNG 2026'), cols=CR, moc=True,
       cards=[('+25,1 tỷ USD', 'Khu vực FDI: bán ra nhiều hơn mua vào', ''), ('−36,9 tỷ USD', 'Doanh nghiệp Việt: mua vào nhiều hơn bán ra', ''), ('−11,8 tỷ USD', 'Cả nước (cùng kỳ 2025: +19,5 tỷ)', '')],
       say=("Chưa hết. Khu vực FDI bán ra nhiều hơn mua vào hai mươi lăm phẩy một tỷ đô la. Doanh nghiệp Việt thì ngược lại: mua vào nhiều hơn bán ra ba mươi sáu phẩy chín tỷ đô la. "
            "Cộng lại, mười tháng năm nay cả nước nhập siêu mười một phẩy tám tỷ đô la, trong khi cùng kỳ năm ngoái còn xuất siêu mười chín phẩy năm tỷ. Xuất khẩu tăng kỷ lục, mà cán cân lại đảo chiều.")),
  dict(k='text', cap=('MÌNH NHẬP NHỮNG GÌ?', 'MÁY MÓC, NGUYÊN LIỆU, XĂNG DẦU'), cols=CC, anh='ov:cargo ship containers port||container port',
       say=("Doanh nghiệp trong nước nhập về máy móc, nguyên liệu, xăng dầu và cả hàng tiêu dùng. Như xưởng anh Hùng, gỗ tốt phải nhập, keo và sơn cũng nhập. "
            "Điều quan trọng: doanh nghiệp Việt phải mua đô la ngay trong nước để thanh toán. Còn doanh nghiệp FDI thường giữ ngoại tệ ở nước ngoài. Vì vậy phần nhập siêu của khu vực trong nước mới là áp lực thật lên tỷ giá, lên giá hàng hóa mà chị Mai mua mỗi ngày.")),
+ dict(k='cards', ch='Chương 3 – Mình xuất khẩu cái gì?', anh='ov:circuit board electronics||electronics factory', cap=('XUẤT KHẨU 10T/2026', 'TỶ USD – THEO MẶT HÀNG'), cols=CC, moc=True,
+      cards=[('149,4', 'Máy tính, điện tử, linh kiện', ''), ('63,3', 'Máy móc, thiết bị, phụ tùng', ''), ('57,6', 'Điện thoại và linh kiện', ''), ('15,0', 'Gỗ và sản phẩm gỗ', 'như xưởng anh Hùng', (196, 120, 20))],
+      say=("Vậy năm trăm tỷ đô la đó là những mặt hàng gì? Đứng đầu là máy tính, sản phẩm điện tử và linh kiện, một trăm bốn mươi chín phẩy bốn tỷ đô la. Tiếp theo là máy móc, thiết bị, sáu mươi ba phẩy ba tỷ. Rồi điện thoại và linh kiện, năm mươi bảy phẩy sáu tỷ. "
+           "Ba nhóm này cộng lại khoảng hai trăm bảy mươi tỷ, hơn một nửa tổng xuất khẩu, và phần lớn do các tập đoàn nước ngoài làm ra. Còn gỗ và sản phẩm gỗ, ngành của anh Hùng, cả nước xuất mười lăm tỷ đô la, chưa bằng một phần mười nhóm điện tử.")),
+ dict(k='bignum', anh='ov:cargo ship containers port||container port', cap=('MỖI 100 ĐÔ FDI XUẤT ĐI', 'CÓ 94 ĐÔ ĐẦU VÀO NHẬP VỀ'), cols=CR, moc=True, value=94, fmt='{:,.0f}', unit=' USD', top='NHẬP KHẨU / XUẤT KHẨU KHU VỰC FDI 10T/2026', sub='Nhập ~379 tỷ USD · xuất ~404 tỷ USD', col=RED,
+      say=("Vì sao điện tử xuất nhiều mà giá trị ở lại ít? Câu trả lời nằm ở chiều nhập. Mười tháng năm nay, khu vực FDI nhập về khoảng ba trăm bảy mươi chín tỷ đô la linh kiện, nguyên liệu, máy móc. "
+           "Tức là cứ một trăm đô la hàng FDI xuất đi, có khoảng chín mươi bốn đô la là đầu vào nhập từ nước ngoài. Phần chênh còn lại mới gồm tiền công, tiền điện, tiền thuê đất, và cả lợi nhuận của chủ đầu tư.")),
  # ---------------- CHƯƠNG 3 ----------------
- dict(k='bignum', ch='Chương 3 – Lợi nhuận đi đâu?', cap=('LÃI CHUYỂN RA NƯỚC NGOÀI', '4 QUÝ GẦN NHẤT'), cols=CR, moc=True, value=17.9, fmt='{:,.1f}', unit=' tỷ USD', top='LÃI VÀ LỢI NHUẬN TRẢ RA NƯỚC NGOÀI', sub='Bằng gần 80% vốn FDI chảy vào cùng kỳ (23,1 tỷ USD)', col=RED,
+ dict(k='bignum', ch='Chương 4 – Lợi nhuận đi đâu?', anh='ov:industrial park aerial||factory', cap=('LÃI CHUYỂN RA NƯỚC NGOÀI', '4 QUÝ GẦN NHẤT'), cols=CR, moc=True, value=17.9, fmt='{:,.1f}', unit=' tỷ USD', top='LÃI VÀ LỢI NHUẬN TRẢ RA NƯỚC NGOÀI', sub='Bằng gần 80% vốn FDI chảy vào cùng kỳ (23,1 tỷ USD)', col=RED,
       say=("Vậy còn lợi nhuận? Theo cán cân thanh toán của Ngân hàng Nhà nước, trong bốn quý gần nhất, từ quý ba năm 2025 đến quý hai năm 2026, khoảng mười bảy phẩy chín tỷ đô la lãi và lợi nhuận đã được trả ra nước ngoài. "
            "Cùng thời gian đó, vốn FDI chảy vào là hai mươi ba phẩy một tỷ đô la. Nghĩa là cứ một đô la vốn mới vào, có gần tám mươi xu lợi nhuận đi ra.")),
  dict(k='call', cap=('"CHỊ NHÌN', 'PHIẾU LƯƠNG ĐI"'), cols=CC, call=dict(ten='Em trai Long', phu='Kỹ sư sản xuất', mau=G_, loi=[
@@ -53,15 +70,15 @@ S = [
       say=("Tối đó chị Mai gọi cho Long, em trai làm kỹ sư sản xuất. Long giải thích bằng chính công việc của chị: một chiếc điện thoại xuất đi có giá vài trăm đô la. Linh kiện chủ yếu nhập từ nước ngoài, thiết kế và thương hiệu của nước ngoài. "
            "Phần ở lại Việt Nam chủ yếu là tiền công lắp ráp, tiền thuê đất, điện, nước và vận chuyển. Chị cứ nhìn phiếu lương của mình là thấy mình đang đứng ở khâu nào.")),
  # ---------------- CHƯƠNG 4 ----------------
- dict(k='bignum', ch='Chương 4 – Một phần ba giỏ hàng đi Mỹ', cap=('XUẤT SANG HOA KỲ', '10 THÁNG 2026'), cols=CC, moc=True, value=159.5, fmt='{:,.1f}', unit=' tỷ USD', top='KHOẢNG 32% TỔNG XUẤT KHẨU', sub='Mỹ mua chủ yếu hàng gia công và điện tử', col=GOLD,
+ dict(k='bignum', ch='Chương 5 – Một phần ba giỏ hàng đi Mỹ', anh='ov:cargo ship||container ship', cap=('XUẤT SANG HOA KỲ', '10 THÁNG 2026'), cols=CC, moc=True, value=159.5, fmt='{:,.1f}', unit=' tỷ USD', top='KHOẢNG 32% TỔNG XUẤT KHẨU', sub='Mỹ mua chủ yếu hàng gia công và điện tử', col=GOLD,
       say=("Còn một con số nữa. Mười tháng năm 2026, Việt Nam xuất sang Hoa Kỳ một trăm năm mươi chín phẩy năm tỷ đô la, khoảng ba mươi hai phần trăm tổng xuất khẩu. "
            "Mỹ mua chủ yếu hàng tiêu dùng đã gia công và hàng điện tử. Nghĩa là nếu Mỹ thay đổi chính sách thuế, một phần ba giỏ hàng xuất khẩu chịu ảnh hưởng, và người chịu đầu tiên là những chuyền sản xuất như của chị Mai.")),
- dict(k='checklist', cap=('FDI MANG LẠI GÌ', 'CHO NGƯỜI VIỆT?'), cols=CC,
+ dict(k='checklist', anh='ov:factory workers||industrial park', cap=('FDI MANG LẠI GÌ', 'CHO NGƯỜI VIỆT?'), cols=CC,
       items=[('Hàng triệu việc làm, thu nhập ổn định', GREEN), ('Kéo theo khu công nghiệp, cảng, điện, logistics', GREEN), ('Nhưng phần giá trị cao nhất: thiết kế, linh kiện, thương hiệu, phần lớn ở nước ngoài', RED)],
       say=("Em nói công bằng: FDI không xấu. Họ tạo ra hàng triệu việc làm, kéo theo khu công nghiệp, cảng biển, điện và logistics. Không có FDI thì cũng không có con số năm trăm tỷ đô la. "
            "Nhưng phần giá trị cao nhất của chuỗi, thiết kế, linh kiện lõi và thương hiệu, phần lớn vẫn ở nước ngoài. Doanh nghiệp Việt còn đứng ở khâu thấp nhất, và đó là bài toán lớn nhất của mười năm tới.")),
  # ---------------- CHƯƠNG 5 ----------------
- dict(k='checklist', ch='Chương 5 – Nhà đầu tư đọc con số này thế nào?', cap=('3 CÂU HỎI', 'KHI NGHE "XUẤT KHẨU KỶ LỤC"'), cols=CC, moc=True,
+ dict(k='checklist', ch='Chương 6 – Nhà đầu tư đọc con số này thế nào?', anh='ov:stock market screen||stock trading', cap=('3 CÂU HỎI', 'KHI NGHE "XUẤT KHẨU KỶ LỤC"'), cols=CC, moc=True,
       items=[('Kỷ lục của ai: khu vực FDI hay doanh nghiệp Việt?', GREEN),
              ('Doanh nghiệp mình đầu tư hưởng lợi từ FDI, hay đang cạnh tranh với FDI?', GREEN),
              ('Nhập siêu khu vực trong nước tăng: tỷ giá, chi phí đầu vào sẽ ra sao?', GOLD)],
@@ -89,6 +106,8 @@ MT = ("10 tháng 2026 Việt Nam xuất khẩu 498,8 tỷ USD (+27,4%). Nhưng k
       "• Xuất khẩu theo khu vực = nhập khẩu + cán cân của từng khu vực (số tự tính): FDI ~404 tỷ (81%), trong nước ~95 tỷ (19%)\n"
       "• Cán cân 10T/2026: FDI +25,1; trong nước −36,9; tổng −11,8 tỷ USD (10T/2025: +19,5)\n"
       "• Xuất sang Hoa Kỳ 10T/2026: 159,5 tỷ USD (~32%)\n"
+      "• Xuất khẩu theo khu vực 10T/2025 → 10T/2026 (tự tính): FDI ~304 → ~404 tỷ (+33%); DN Việt ~88 → ~95 tỷ (+8%). Tỷ trọng DN Việt: 2017 ~29% · 2023 ~27,5% · 2025 ~22% · 10T/2026 ~19%\n"
+      "• Mặt hàng 10T/2026: máy tính, điện tử, linh kiện 149,4 · máy móc thiết bị 63,3 · điện thoại 57,6 · gỗ 15,0 tỷ USD; nhập khẩu khu vực FDI ~379 tỷ USD\n"
       "• Cán cân thanh toán Q3/2025–Q2/2026: chi thu nhập đầu tư ra nước ngoài 17,9 tỷ USD; FDI vào 23,1 tỷ USD\n\n"
       "Soi P/E, lợi nhuận từng quý 400+ mã: https://chungkhoanhuynguyen.com\n"
       "Cần trao đổi riêng về danh mục: Zalo 0365.188.286\n\n"
