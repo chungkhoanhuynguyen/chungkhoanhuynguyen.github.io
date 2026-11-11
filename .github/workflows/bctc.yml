@@ -21,6 +21,7 @@ jobs:
       - run: python ma.py
       - run: python tim.py
       - run: python _kiem/kiem_web.py
+      - run: python _ads.py
       - run: |
           git config user.name "hn-bot"
           git config user.email "hn-bot@users.noreply.github.com"
