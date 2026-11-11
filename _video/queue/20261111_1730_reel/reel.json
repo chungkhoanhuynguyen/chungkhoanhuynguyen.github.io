@@ -1,0 +1,160 @@
+[
+ {
+  "key": "RV1111A",
+  "tieu_de": "Việt Nam xuất khẩu gần 500 tỷ USD: 81% là của doanh nghiệp FDI, tiền về túi ai?",
+  "hook": [
+   "XUẤT KHẨU 500 TỶ USD",
+   "TIỀN VỀ TÚI AI???"
+  ],
+  "nhan": "VĨ MÔ · HỎI THẬT",
+  "short_caption": "10 tháng 2026 Việt Nam xuất khẩu 498,8 tỷ USD, nhưng khoảng 81% thuộc khu vực FDI. FDI xuất siêu 25 tỷ USD, doanh nghiệp Việt nhập siêu 37 tỷ USD. Tiền thật sự về túi ai? Quan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "VIỆT NAM CẦN GÌ?",
+   "loi": "Theo anh chị, doanh nghiệp Việt cần gì để giành lại phần lớn hơn trong 500 tỷ USD đó?",
+   "loi_doc": "Theo anh chị, doanh nghiệp Việt cần gì để giành lại phần lớn hơn trong năm trăm tỷ đô la đó?",
+   "anh": [
+    "Vietnam factory workers assembly line"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "KỶ LỤC MÀ SAO KHÔNG THẤY?",
+    "loi": "Báo đưa tin xuất khẩu lại kỷ lục. Vậy mà lương nhiều người đứng yên, đơn hàng của xưởng nhỏ vẫn èo uột. Tiền xuất khẩu rốt cuộc chảy về đâu?",
+    "loi_doc": "Báo đưa tin xuất khẩu lại kỷ lục. Vậy mà lương nhiều người đứng yên, đơn hàng của xưởng nhỏ vẫn èo uột. Tiền xuất khẩu rốt cuộc chảy về đâu?",
+    "anh": [
+     "container port Vietnam",
+     "Cat Lai port container"
+    ],
+    "chat": 1
+   },
+   {
+    "chu_to": "GẦN 500 TỶ USD",
+    "loi": "Mười tháng năm 2026, Việt Nam xuất khẩu 498,8 tỷ USD, tức khoảng 50 tỷ USD mỗi tháng.",
+    "loi_doc": "Mười tháng năm 2026, Việt Nam xuất khẩu bốn trăm chín mươi tám phẩy tám tỷ đô la, tức khoảng năm mươi tỷ đô la mỗi tháng.",
+    "the": {
+     "loai": "lon",
+     "tieu": "XUẤT KHẨU 10 THÁNG 2026",
+     "nguon": "Cục Hải quan, tổng hợp WiData",
+     "dong": [
+      [
+       "498,8 TỶ USD",
+       76,
+       "vang"
+      ],
+      [
+       "≈ 50 TỶ USD/THÁNG",
+       52,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "81% LÀ CỦA FDI",
+    "loi": "Nhưng tách ra mới thấy: khoảng 81% là hàng của doanh nghiệp vốn nước ngoài. Doanh nghiệp Việt chỉ chiếm khoảng 19%.",
+    "loi_doc": "Nhưng tách ra mới thấy: khoảng tám mươi mốt phần trăm là hàng của doanh nghiệp vốn nước ngoài. Doanh nghiệp Việt chỉ chiếm khoảng mười chín phần trăm.",
+    "the": {
+     "loai": "cot",
+     "tieu": "TỶ TRỌNG XUẤT KHẨU 10T/2026",
+     "nguon": "Em tính từ số Hải quan: xuất khẩu = nhập khẩu + cán cân từng khu vực",
+     "hang": [
+      [
+       "Khu vực FDI",
+       81
+      ],
+      [
+       "Doanh nghiệp Việt",
+       19
+      ]
+     ],
+     "noi": [
+      0
+     ],
+     "dv": "%",
+     "max": 100
+    }
+   },
+   {
+    "chu_to": "FDI DƯ, MÌNH THIẾU",
+    "loi": "Khu vực FDI bán ra nhiều hơn mua vào 25 tỷ USD. Doanh nghiệp Việt thì ngược lại, mua vào nhiều hơn bán ra gần 37 tỷ USD.",
+    "loi_doc": "Khu vực FDI bán ra nhiều hơn mua vào hai mươi lăm tỷ đô la. Doanh nghiệp Việt thì ngược lại, mua vào nhiều hơn bán ra gần ba mươi bảy tỷ đô la.",
+    "the": {
+     "loai": "lon",
+     "tieu": "CÁN CÂN THƯƠNG MẠI 10T/2026",
+     "nguon": "Cục Hải quan, tổng hợp WiData",
+     "dong": [
+      [
+       "FDI: +25,1 TỶ USD",
+       58,
+       "xanh"
+      ],
+      [
+       "DN VIỆT: −36,9 TỶ USD",
+       58,
+       "do"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "MÌNH NHẬP NHỮNG GÌ?",
+    "loi": "Doanh nghiệp trong nước phải nhập máy móc, nguyên liệu, xăng dầu, cả hàng tiêu dùng. Và phải mua đô la trong nước để trả, nên đây mới là áp lực thật lên tỷ giá.",
+    "loi_doc": "Doanh nghiệp trong nước phải nhập máy móc, nguyên liệu, xăng dầu, cả hàng tiêu dùng. Và phải mua đô la trong nước để trả, nên đây mới là áp lực thật lên tỷ giá.",
+    "anh": [
+     "cargo ship unloading containers",
+     "machinery import warehouse"
+    ],
+    "chat": 1
+   },
+   {
+    "chu_to": "LÃI CHUYỂN VỀ NƯỚC",
+    "loi": "Còn lợi nhuận? Bốn quý gần nhất, khoảng 17,9 tỷ USD lãi và lợi nhuận được chuyển ra nước ngoài, bằng gần 80% vốn FDI chảy vào cùng kỳ.",
+    "loi_doc": "Còn lợi nhuận? Bốn quý gần nhất, khoảng mười bảy phẩy chín tỷ đô la lãi và lợi nhuận được chuyển ra nước ngoài, bằng gần tám mươi phần trăm vốn FDI chảy vào cùng kỳ.",
+    "the": {
+     "loai": "cot",
+     "tieu": "4 QUÝ: Q3/2025 – Q2/2026 (TỶ USD)",
+     "nguon": "NHNN – cán cân thanh toán, tổng hợp WiData",
+     "hang": [
+      [
+       "FDI chảy vào",
+       23.1
+      ],
+      [
+       "Lãi chuyển ra",
+       17.9
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 25
+    }
+   },
+   {
+    "chu_to": "FDI CÓ XẤU KHÔNG?",
+    "loi": "Em không nói FDI xấu. Họ tạo hàng triệu việc làm, kéo theo cảng, khu công nghiệp, điện nước. Nhưng phần mình giữ lại chủ yếu là tiền lương, tiền thuê đất và dịch vụ.",
+    "loi_doc": "Em không nói FDI xấu. Họ tạo hàng triệu việc làm, kéo theo cảng, khu công nghiệp, điện nước. Nhưng phần mình giữ lại chủ yếu là tiền lương, tiền thuê đất và dịch vụ.",
+    "anh": [
+     "industrial park Vietnam aerial",
+     "Vietnam electronics factory"
+    ],
+    "chat": 1
+   },
+   {
+    "chu_to": "CON SỐ NÓI GÌ?",
+    "loi": "Nên khi nghe xuất khẩu kỷ lục, hãy hỏi thêm một câu: kỷ lục của ai? Doanh nghiệp Việt còn đang đứng ở khâu thấp nhất của chuỗi giá trị, và đó là bài toán lớn nhất của 10 năm tới.",
+    "loi_doc": "Nên khi nghe xuất khẩu kỷ lục, hãy hỏi thêm một câu: kỷ lục của ai? Doanh nghiệp Việt còn đang đứng ở khâu thấp nhất của chuỗi giá trị, và đó là bài toán lớn nhất của mười năm tới.",
+    "anh": [
+     "Ho Chi Minh City skyline night"
+    ],
+    "chat": 1
+   }
+  ]
+ }
+]
