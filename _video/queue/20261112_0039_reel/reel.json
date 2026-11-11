@@ -27,7 +27,8 @@
     "loi": "Ngày 2/11/2026, VnEconomy vừa đưa tin nợ công của Mỹ so với GDP lên mức cao nhất 80 năm. Còn Việt Nam đang nợ bao nhiêu? Em kiểm tra bằng số liệu thật, và kết quả bất ngờ.",
     "loi_doc": "Ngày ngày hai tháng mười một năm hai nghìn không trăm hai mươi sáu, VnEconomy vừa đưa tin nợ công của Mỹ so với GDP lên mức cao nhất tám mươi năm. Còn Việt Nam đang nợ bao nhiêu? Em kiểm tra bằng số liệu thật, và kết quả bất ngờ.",
     "anh": [
-     "ov:newspaper finance headline||newspaper"
+     "ov:newspaper finance headline",
+     "newspaper"
     ],
     "chat": 1
    },
@@ -192,7 +193,8 @@
     "loi": "Nước mình chưa đến mức vỡ nợ. Điều đáng lo là khoản vay của chính gia đình mình khi lãi suất đổi chiều.",
     "loi_doc": "Nước mình chưa đến mức vỡ nợ. Điều đáng lo là khoản vay của chính gia đình mình khi lãi suất đổi chiều.",
     "anh": [
-     "ov:family apartment living room||family home"
+     "Hanoi apartment buildings",
+     "Ho Chi Minh City apartment buildings"
     ],
     "chat": 1
    }
