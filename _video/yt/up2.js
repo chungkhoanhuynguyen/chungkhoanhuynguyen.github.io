@@ -45,3 +45,4 @@ window.__done=async()=>{const S=ms=>new Promise(r=>setTimeout(r,ms));
 // 11/11 tối: ĐANG TẢI LÊN thì KHÔNG location.href / navigate (mất upload). Đăng tiếp video thứ 2 trên cùng trang: __new() (bấm Đóng -> Tạo -> Tải video lên), giữ nguyên __parts.
 // window.__new=async()=>{...} xem phiên 11/11: Đóng -> nút 'Tạo' -> tp-yt-paper-item 'Tải video lên'.
 // Kênh @6 Đầu Tư Tích Sản: UCGImFAPw_IG_Ov7yomYn84g (meta: kenh6.json). Đổi kênh: youtube.com/channel_switcher -> click ytd-account-item-renderer có handle.
+// FB Reel 11/11 (giao diện mới, 1 trang): reels/create -> input HNCHUNK ghép File -> gán vào input[type=file] của FB + change -> insertText caption vào [contenteditable][role=textbox] -> 'Tiếp' -> 'Đăng' (hoặc 'Lên lịch'). Trang về facebook.com + "Bài viết của bạn đang được xử lý" là xong. "Đang kiểm tra bản quyền" treo lâu, không cần chờ.
