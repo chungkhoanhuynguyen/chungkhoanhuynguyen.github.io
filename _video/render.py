@@ -28,7 +28,7 @@ if prev: raw = raw[:prev]
 import re as _re
 def _bo_nga(v, k=None):
     if k == "say": return v
-    if isinstance(v, str): return _re.sub(r"~\s*(?=\d)", "khoảng ", v).replace("~", "≈")
+    if isinstance(v, str): return _re.sub(r"~\s*(?=\d)", "khoảng ", v).replace("~", "≈").replace("→", "–")   # font Be Vietnam không có "→" (hiện ô trống)
     if isinstance(v, dict): return {kk: _bo_nga(vv, kk) for kk, vv in v.items()}
     if isinstance(v, (list, tuple)): return type(v)(_bo_nga(x) for x in v)
     return v
