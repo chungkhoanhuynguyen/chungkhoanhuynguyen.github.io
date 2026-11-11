@@ -78,7 +78,7 @@ S = [
       say=("Em nói công bằng: FDI không xấu. Họ tạo ra hàng triệu việc làm, kéo theo khu công nghiệp, cảng biển, điện và logistics. Không có FDI thì cũng không có con số năm trăm tỷ đô la. "
            "Nhưng phần giá trị cao nhất của chuỗi, thiết kế, linh kiện lõi và thương hiệu, phần lớn vẫn ở nước ngoài. Doanh nghiệp Việt còn đứng ở khâu thấp nhất, và đó là bài toán lớn nhất của mười năm tới.")),
  # ---------------- CHƯƠNG 5 ----------------
- dict(k='checklist', ch='Chương 6 – Nhà đầu tư đọc con số này thế nào?', anh='ov:stock market screen||stock trading', cap=('3 CÂU HỎI', 'KHI NGHE "XUẤT KHẨU KỶ LỤC"'), cols=CC, moc=True,
+ dict(k='checklist', ch='Chương 6 – Nhà đầu tư đọc con số này thế nào?', anh='ov:stock chart monitor||candlestick chart', cap=('3 CÂU HỎI', 'KHI NGHE "XUẤT KHẨU KỶ LỤC"'), cols=CC, moc=True,
       items=[('Kỷ lục của ai: khu vực FDI hay doanh nghiệp Việt?', GREEN),
              ('Doanh nghiệp mình đầu tư hưởng lợi từ FDI, hay đang cạnh tranh với FDI?', GREEN),
              ('Nhập siêu khu vực trong nước tăng: tỷ giá, chi phí đầu vào sẽ ra sao?', GOLD)],
