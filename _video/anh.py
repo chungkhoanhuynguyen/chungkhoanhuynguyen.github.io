@@ -51,7 +51,7 @@ def tim_ov(q, n=20):
         if rs: break
     out = []
     for r in rs:
-        if (r.get("width") or 0) < 1200 or XAU.search((r.get("title") or "") + " " + " ".join(t.get("name", "") for t in r.get("tags") or [])): continue
+        if (r.get("width") or 0) < 1200 or XAU.search((r.get("title") or "") + " " + (r.get("creator") or "") + " " + " ".join(t.get("name", "") for t in r.get("tags") or [])): continue
         lic = ("CC " + (r.get("license") or "").upper() + " " + (r.get("license_version") or "")).replace("CC CC0", "CC0").replace("CC PDM", "Public domain").strip()
         out.append({"u": r["url"], "tg": (r.get("creator") or "không rõ")[:60], "lic": lic, "trang": r.get("foreign_landing_url") or r.get("url")})
     print("anh: openverse", q, len(out), flush=True)
@@ -83,7 +83,7 @@ def tim(q, n=12):
         out.append({"u": ii.get("thumburl") or ii["url"], "tg": tg or "không rõ", "lic": lic, "trang": ii.get("descriptionurl", "")})
     return out
 
-XAU = re.compile(r"efta\d|epstein|nara|evidence|court|crime|police|prison|\.tif|ceremony|Stake_acquisition|signing|wordpress|wordcamp|mascot|plush|logo|sticker|state.bank|bank_of|ngân.hàng|vietcombank|bidv|techcombank|agribank|politician|press.conference|congress|senator|president|minister|portrait|damaged|wreck|accident|protest", re.I)
+XAU = re.compile(r"efta\d|epstein|nara|evidence|court|crime|police|prison|\.tif|ceremony|Stake_acquisition|signing|wordpress|wordcamp|mascot|plush|logo|sticker|state.bank|bank_of|ngân.hàng|vietcombank|bidv|techcombank|agribank|politician|press.conference|congress|senator|president|minister|portrait|damaged|wreck|accident|protest|nymphaea|water.lily|theat(?:er|re)|kips?\b|war.loan|argentin|azerbaijan|presidential|锤|錘|成功", re.I)   # 12/11 NV1: ảnh lạc đề lọt ở CH1411NO/VT7USD
 
 class Kho:
     def __init__(s, wd): s.wd = wd; os.makedirs(wd, exist_ok=True); s.cache = {}; s.dung = set(); s.credit = []; s.img = {}
