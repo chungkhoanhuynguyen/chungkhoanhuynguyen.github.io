@@ -83,7 +83,7 @@ def tim(q, n=12):
         out.append({"u": ii.get("thumburl") or ii["url"], "tg": tg or "không rõ", "lic": lic, "trang": ii.get("descriptionurl", "")})
     return out
 
-XAU = re.compile(r"efta\d|epstein|nara|evidence|court|crime|police|prison|\.tif|ceremony|Stake_acquisition|signing|wordpress|wordcamp|mascot|plush|logo|sticker", re.I)
+XAU = re.compile(r"efta\d|epstein|nara|evidence|court|crime|police|prison|\.tif|ceremony|Stake_acquisition|signing|wordpress|wordcamp|mascot|plush|logo|sticker|state.bank|bank_of|ngân.hàng|vietcombank|bidv|techcombank|agribank", re.I)
 
 class Kho:
     def __init__(s, wd): s.wd = wd; os.makedirs(wd, exist_ok=True); s.cache = {}; s.dung = set(); s.credit = []; s.img = {}
