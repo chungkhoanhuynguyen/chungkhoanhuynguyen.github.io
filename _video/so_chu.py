@@ -46,7 +46,9 @@ def doi(s):
                     else: grp.append(w)
                 if all(parts) and not grp:
                     out.append(" ".join(parts) + (toks[j-1][-1] if toks[j-1][-1:] in ",." else "")); i = j; continue
-            if len(seg) > 1 and seg[-1] in M and seg[-2] not in M: unit = " " + toks[j-1].strip(",."); seg = seg[:-1]
+            # QL1 11/11: "sáu mươi nghìn tỷ" -> "60.000 tỷ" (trước mất chữ "tỷ" thành "60.000")
+            if len(seg) > 2 and seg[-1] in M and seg[-2] in M and M[seg[-2]] < M[seg[-1]]: unit = " " + toks[j-1].strip(",."); seg = seg[:-1]
+            elif len(seg) > 1 and seg[-1] in M and seg[-2] not in M: unit = " " + toks[j-1].strip(",."); seg = seg[:-1]
             n = _num(seg)
             nxt = toks[j].lower() if j < len(toks) else ""
             if n is not None and not (n < 10 and len(seg) == 1 and not unit and nxt not in ("phẩy", "phần")):
