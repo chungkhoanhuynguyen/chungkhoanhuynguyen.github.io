@@ -24,7 +24,7 @@ S = [
         ('Chứng khoán', 'Ứng dụng giao dịch', 'Danh mục: BSR −13,9%. Lãi/lỗ: −55.000.000đ', R_)]),
       say=("Tối ba mươi tháng mười, điện thoại anh Tú rung hai lần liền. Tin thứ nhất: Lọc hóa dầu Bình Sơn báo lãi quý ba gần chín nghìn tỷ đồng, tăng tám trăm tám mươi tám phần trăm so với cùng kỳ. "
            "Tin thứ hai, từ chính ứng dụng chứng khoán của anh: cổ phiếu BSR trong danh mục đang lỗ gần mười bốn phần trăm. Công ty lãi kỷ lục, mà người cầm cổ phiếu lại đang mất tiền. Chuyện này là sao?")),
- dict(k='bignum', cap=('BSR: LÃI 9 THÁNG 2026', 'GẤP 11,5 LẦN KẾ HOẠCH NĂM'), cols=CC, value=24899, fmt='{:,.0f}', unit=' tỷ', top='LỢI NHUẬN 9 THÁNG – TĂNG 1.057%', sub='Cùng lúc giá cổ phiếu giảm gần 14% từ cuối tháng 5', col=GOLD,
+ dict(k='bignum', anh='ov:oil refinery||oil refinery', cap=('BSR: LÃI 9 THÁNG 2026', 'GẤP 11,5 LẦN KẾ HOẠCH NĂM'), cols=CC, value=24899, fmt='{:,.0f}', unit=' tỷ', top='LỢI NHUẬN 9 THÁNG – TĂNG 1.057%', sub='Cùng lúc giá cổ phiếu giảm gần 14% từ cuối tháng 5', col=GOLD,
       say=("Con số không hề nhỏ. Chín tháng đầu năm 2026, BSR lãi hai mươi bốn nghìn tám trăm chín mươi chín tỷ đồng, gấp mười một lần rưỡi kế hoạch cả năm mà chính công ty đặt ra. "
            "Vậy mà từ cuối tháng năm đến nay, cổ phiếu từ khoảng hai mươi chín nghìn bốn trăm đồng còn hai mươi lăm nghìn ba trăm. "
            "Hôm nay em kể câu chuyện của anh Tú để trả lời một câu hỏi mà rất nhiều nhà đầu tư đang thắc mắc: vì sao có những công ty lãi kỷ lục mà cổ phiếu không tăng, còn có công ty lại tăng hơn năm mươi phần trăm?")),
@@ -36,8 +36,8 @@ S = [
         ('me', 'MSR P/E cao hơn nhiều, mua đắt làm gì')]),
       say=("Quay lại cuối tháng năm. Anh Tú, kỹ sư cơ khí ba mươi tư tuổi, nhắn cho Quân, bạn thân thời đại học. BSR quý một lãi hơn tám nghìn hai trăm tỷ, gấp hai mươi lần cùng kỳ mày ạ. P trên E có hơn bốn, rẻ như cho, tao vào bốn trăm triệu. "
            "Quân trả lời: tao thì đang để ý MSR, Masan High-Tech Materials, giá vonfram đang sốt. Anh Tú gạt đi: MSR P trên E cao hơn nhiều, mua đắt làm gì.")),
- dict(k='cards', cap=('CUỐI THÁNG 5/2026', 'HAI LỰA CHỌN'), cols=CC, moc=True,
-      cards=[('BSR', '400 triệu – giá khoảng 29.400', 'lãi tăng gấp 20 lần'), ('MSR', '200 triệu – giá khoảng 37.600', 'lãi mới bắt đầu tăng'), ('', 'Cùng một ngày mua', '')],
+ dict(k='cards', anh='ov:stock market screen||stock trading', cap=('CUỐI THÁNG 5/2026', 'HAI LỰA CHỌN'), cols=CC, moc=True,
+      cards=[('BSR', '400 triệu – giá khoảng 29.400', 'lãi tăng gấp 20 lần'), ('MSR', '200 triệu – giá khoảng 37.600', 'lãi mới bắt đầu tăng'), ('T5/2026', 'Cùng một ngày mua', 'hai lựa chọn')],
       say=("Cùng một tuần, hai người bạn đưa ra hai lựa chọn. Anh Tú dồn bốn trăm triệu vào BSR, giá khoảng hai mươi chín nghìn bốn trăm đồng, một công ty mà lợi nhuận vừa tăng gấp hai mươi lần. "
            "Quân bỏ hai trăm triệu vào MSR, giá khoảng ba mươi bảy nghìn sáu trăm. Lợi nhuận của MSR lúc đó mới bắt đầu nhích lên sau nhiều năm thua lỗ. Theo logic thông thường, anh Tú đã chọn đúng: rẻ hơn, lãi nhiều hơn.")),
  # ---------------- CHƯƠNG 2 ----------------
@@ -46,7 +46,7 @@ S = [
         ('Zalo', QUAN, 'MSR lãi hơn trăm triệu rồi mày ơi', G_)]),
       say=("Sáu tháng sau, phiên mười một tháng mười một. BSR đóng cửa hai mươi lăm nghìn ba trăm đồng, giảm gần mười bốn phần trăm. Bốn trăm triệu của anh Tú còn khoảng ba trăm bốn mươi lăm triệu. "
            "MSR đóng cửa năm mươi tám nghìn bảy trăm, tăng năm mươi sáu phần trăm. Hai trăm triệu của Quân thành hơn ba trăm mười triệu. Quân nhắn đúng một câu: MSR lãi hơn trăm triệu rồi mày ơi.")),
- dict(k='cards', cap=('LÃI QUÝ 3/2026 KỶ LỤC', 'GIÁ CỔ PHIẾU THÌ KHÔNG'), cols=CR, moc=True,
+ dict(k='cards', anh='ov:power plant||oil refinery', cap=('LÃI QUÝ 3/2026 KỶ LỤC', 'GIÁ CỔ PHIẾU THÌ KHÔNG'), cols=CR, moc=True,
       cards=[('BSR +888%', 'lãi quý 3: 8.968 tỷ', 'giá 6 tháng −14%'), ('POW +130%', 'lãi quý 3: 1.860 tỷ', 'giá 6 tháng −7%'), ('PGV +638%', 'lãi quý 3: 1.221 tỷ', 'giá 6 tháng đi ngang')],
       say=("Và BSR không phải trường hợp duy nhất. Điện lực Dầu khí, mã POW, quý ba lãi một nghìn tám trăm sáu mươi tỷ, tăng một trăm ba mươi phần trăm, chín tháng đã vượt sáu lần kế hoạch năm. Cổ phiếu sáu tháng giảm khoảng bảy phần trăm. "
            "Phát điện ba, mã PGV, lãi quý ba tăng sáu trăm ba mươi tám phần trăm. Cổ phiếu đi ngang. Ba công ty lãi kỷ lục, P trên E chỉ bốn đến sáu lần, mà dòng tiền không mặn mà.")),
@@ -56,25 +56,25 @@ S = [
       say=("Không hiểu nổi, anh Tú nhờ Quân gọi cho chị Ngân, một chuyên viên phân tích. Chị Ngân nghe xong, nói một câu mà anh Tú nhớ mãi: thị trường không trả tiền cho lợi nhuận đã qua. Nó trả tiền cho lợi nhuận của những năm tới. "
            "Câu hỏi không phải là quý này lãi bao nhiêu. Câu hỏi là năm sau, năm sau nữa, công ty còn lãi được như vậy không.")),
  # ---------------- CHƯƠNG 3 ----------------
- dict(k='cards', ch='Chương 3 – P/E thấp có phải là rẻ?', cap=('LỢI NHUẬN BSR', 'TỪNG QUÝ'), cols=CC, moc=True,
-      cards=[('908 tỷ', 'Quý 3/2025', ''), ('3.062 tỷ', 'Quý 4/2025', ''), ('8.265 – 7.666 – 8.968 tỷ', 'Quý 1, 2, 3/2026', '')],
+ dict(k='cards', ch='Chương 3 – P/E thấp có phải là rẻ?', anh='ov:oil refinery||oil tanker', cap=('LỢI NHUẬN BSR', 'TỪNG QUÝ'), cols=CC, moc=True,
+      cards=[('908 tỷ', 'Quý 3/2025', ''), ('3.062 tỷ', 'Quý 4/2025', ''), ('8.968 tỷ', 'Quý 3/2026', 'Q1: 8.265 · Q2: 7.666')],
       say=("Chị Ngân mở báo cáo tài chính của BSR. Quý ba năm ngoái, lãi chín trăm lẻ tám tỷ. Quý bốn, ba nghìn không trăm sáu mươi hai tỷ. Ba quý năm nay, lần lượt tám nghìn hai trăm sáu mươi lăm, bảy nghìn sáu trăm sáu mươi sáu và tám nghìn chín trăm sáu mươi tám tỷ. "
            "Chị chỉ vào một dòng: kế hoạch năm của chính công ty chỉ khoảng hai nghìn một trăm tỷ. Tức là ban lãnh đạo cũng không coi mức lãi này là bình thường.")),
  dict(k='text', cap=('LÃI ĐẾN TỪ ĐÂU?', 'CHÊNH LỆCH GIÁ, KHÔNG PHẢI SẢN LƯỢNG'), cols=CC, anh='ov:oil refinery night||oil refinery',
       say=("Nhà máy lọc dầu kiếm tiền từ chênh lệch giữa giá xăng dầu thành phẩm và giá dầu thô. Khi chênh lệch này nới rộng, lợi nhuận tăng vọt dù sản lượng gần như không đổi. Khi nó thu hẹp lại, lợi nhuận cũng rơi nhanh như lúc tăng. "
            "Nhà máy không bán được gấp mười lần xăng dầu. Nó chỉ đang hưởng một giai đoạn biên lợi nhuận rất cao, do thị trường thế giới quyết định, không phải do riêng công ty tạo ra.")),
- dict(k='bignum', cap=('P/E THẤP Ở ĐỈNH LỢI NHUẬN', 'CÓ THỂ LÀ CÁI BẪY'), cols=CR, value=4.5, fmt='{:,.1f}', unit=' lần', top='P/E CỦA BSR NGÀY 11/11/2026', sub='Tính trên lợi nhuận 4 quý gần nhất – quý cao nhất trong lịch sử', col=RED,
+ dict(k='bignum', anh='ov:oil refinery night||oil refinery', cap=('P/E THẤP Ở ĐỈNH LỢI NHUẬN', 'CÓ THỂ LÀ CÁI BẪY'), cols=CR, value=4.5, fmt='{:,.1f}', unit=' lần', top='P/E CỦA BSR NGÀY 11/11/2026', sub='Tính trên lợi nhuận 4 quý gần nhất – quý cao nhất trong lịch sử', col=RED,
       say=("Đây là chỗ anh Tú hiểu sai. P trên E của BSR chỉ khoảng bốn phẩy năm lần, nhưng con số này được tính trên bốn quý lãi cao nhất lịch sử công ty. "
            "Nếu lợi nhuận năm sau chỉ còn một nửa, P trên E thật sẽ là chín lần. Nếu chỉ còn một phần tư, nó là mười tám lần. Với doanh nghiệp chu kỳ, P trên E thấp nhất thường xuất hiện đúng lúc lợi nhuận ở đỉnh, và đó lại thường là lúc rủi ro nhất để mua.")),
- dict(k='checklist', cap=('THỊ TRƯỜNG ĐANG NGHĨ GÌ?', 'THEO VNDIRECT RESEARCH'), cols=CC,
+ dict(k='checklist', anh='ov:stock market screen||stock trading', cap=('THỊ TRƯỜNG ĐANG NGHĨ GÌ?', 'THEO VNDIRECT RESEARCH'), cols=CC,
       items=[('Quý 3/2026: lợi nhuận DN trên HOSE tăng 52%', GREEN), ('Phần đột biến chủ yếu từ VIC, VHM và BSR', GOLD), ('Dự báo quý 4: chỉ tăng khoảng 6%', RED)],
       say=("Không chỉ chị Ngân nghĩ vậy. Theo báo cáo chiến lược tháng mười một của VNDirect Research, lợi nhuận doanh nghiệp trên HOSE quý ba tăng năm mươi hai phần trăm, chủ yếu nhờ đóng góp đột biến từ VIC, VHM và BSR. "
            "Nhưng đà tăng được dự báo chậm lại rõ trong quý bốn, chỉ khoảng sáu phần trăm so với cùng kỳ. Thị trường đã nhìn thấy điều đó từ trước, và giá cổ phiếu phản ánh trước.")),
  # ---------------- CHƯƠNG 4 ----------------
- dict(k='bignum', ch='Chương 4 – Vì sao MSR khác?', cap=('GIÁ VONFRAM PHƯƠNG TÂY', 'GẤP 3,74 LẦN TRUNG QUỐC'), cols=CC, moc=True, value=278.22, fmt='{:,.2f}', unit=' USD/kg', top='GIÁ APT TẠI ROTTERDAM, THÁNG 10/2026', sub='Trung Quốc chỉ 74,43 USD/kg. Trước 6/2025 chênh bình quân 1,24 lần', col=GOLD,
+ dict(k='bignum', ch='Chương 4 – Vì sao MSR khác?', anh='ov:tungsten||metal ore mining', cap=('GIÁ VONFRAM PHƯƠNG TÂY', 'GẤP 3,74 LẦN TRUNG QUỐC'), cols=CC, moc=True, value=278.22, fmt='{:,.2f}', unit=' USD/kg', top='GIÁ APT TẠI ROTTERDAM, THÁNG 10/2026', sub='Trung Quốc chỉ 74,43 USD/kg. Trước 6/2025 chênh bình quân 1,24 lần', col=GOLD,
       say=("Vậy tại sao MSR khác? Lợi nhuận MSR cũng tăng nhờ giá hàng hóa, nhưng là một loại giá rất đặc biệt. Theo MetalMiner, tháng mười năm 2026, giá vonfram trung gian tại Rotterdam, Hà Lan, là hai trăm bảy mươi tám đô la một ký, gấp ba phẩy bảy tư lần giá xuất xưởng ở Trung Quốc. "
            "Từ năm 2021 đến giữa năm 2025, chênh lệch này bình quân chỉ một phẩy hai tư lần. Thay đổi lớn đến từ tháng hai năm 2025, khi Trung Quốc bắt đầu cấp phép xuất khẩu, khiến phương Tây thiếu nguồn cung đạt chuẩn.")),
- dict(k='checklist', cap=('ĐIỀU THỊ TRƯỜNG THẤY Ở MSR', 'MÀ KHÔNG THẤY Ở NHÓM KIA'), cols=CC,
+ dict(k='checklist', anh='ov:metal ore mining||mining', cap=('ĐIỀU THỊ TRƯỜNG THẤY Ở MSR', 'MÀ KHÔNG THẤY Ở NHÓM KIA'), cols=CC,
       items=[('Lợi thế đến từ thay đổi cấu trúc nguồn cung, không chỉ một chu kỳ giá', GREEN),
              ('Đối tác lớn tìm đến: Elmet (Mỹ) thành cổ đông, Sojitz (Nhật) ký ghi nhớ mua 5%', GREEN),
              ('Lợi nhuận vẫn đang tăng qua từng quý: 537 – 1.666 – 2.148 tỷ', GOLD)],
@@ -84,7 +84,7 @@ S = [
       say=("Em nói công bằng: MSR cũng là doanh nghiệp hàng hóa. Nếu nguồn cung ngoài Trung Quốc tăng lên, hoặc chính sách xuất khẩu thay đổi, chênh lệch giá có thể thu hẹp, và cổ phiếu sẽ phản ứng rất mạnh. "
            "P trên E của MSR hiện khoảng mười bốn lần, đã phản ánh nhiều kỳ vọng. Bài học ở đây không phải là MSR tốt, BSR xấu. Bài học là: phải hiểu lợi nhuận đến từ đâu, và kéo dài được bao lâu.")),
  # ---------------- CHƯƠNG 5 ----------------
- dict(k='checklist', ch='Chương 5 – Ba câu hỏi trước khi mua theo lợi nhuận', cap=('3 CÂU HỎI', 'TRƯỚC KHI MUA VÌ LÃI KỶ LỤC'), cols=CC, moc=True,
+ dict(k='checklist', ch='Chương 5 – Ba câu hỏi trước khi mua theo lợi nhuận', anh='ov:stock market screen||stock trading', cap=('3 CÂU HỎI', 'TRƯỚC KHI MUA VÌ LÃI KỶ LỤC'), cols=CC, moc=True,
       items=[('Lãi tăng nhờ giá bán của thị trường, hay nhờ năng lực riêng của công ty?', GREEN),
              ('Điều tạo ra mức lãi này có thể kéo dài mấy năm? Ai có thể làm theo?', GREEN),
              ('P/E thấp vì cổ phiếu rẻ, hay vì lợi nhuận đang ở đỉnh?', GOLD)],
