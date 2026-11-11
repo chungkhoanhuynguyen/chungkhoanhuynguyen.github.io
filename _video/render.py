@@ -207,7 +207,8 @@ def _thanh_chuong(im, scenes, i, frac):
     _tt = frac * (scenes[i].get("_T") or 10)
     if ch and ((0.36 < _tt < 2.8) if HU2[0] else frac < 0.12):   # nhãn chương hiện 1–2s đầu chương (HU2: sau khi chuyển cảnh xong)
         f = dx2.F("Bold", 26); tw = d.textlength(ch, font=f)
-        d.rounded_rectangle([24, 18, 24 + tw + 32, 18 + 46], 23, fill=(255, 196, 0, 235)); d.text((40, 26), ch, font=f, fill=(10, 12, 17))
+        x0 = int((LW - tw - 32) / 2)   # QL1 11/11: giữa trên cùng – không đè logo HUY NGUYỄN góc trái
+        d.rounded_rectangle([x0, 18, x0 + tw + 32, 18 + 46], 23, fill=(255, 196, 0, 235)); d.text((x0 + 16, 26), ch, font=f, fill=(10, 12, 17))
 AV = [None, None, 0]
 def _av_init(wav):
     if os.environ.get('CHAN_DUNG') != '1': return
