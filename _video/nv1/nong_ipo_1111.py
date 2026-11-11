@@ -22,7 +22,7 @@ S = [
         ('Zalo', NHOM, 'Hôm nay có mã mới chào sàn, ai đăng ký thêm không?', V_)]),
       say=("Chiều mười tháng mười một, phiên vừa đóng cửa, chị Hà mở ứng dụng chứng khoán. Ba trăm triệu chị mua cổ phiếu LPS trong đợt IPO tháng sáu, giá ba mươi nghìn đồng, giờ chỉ còn một trăm năm mươi tám triệu. "
            "Cùng lúc, nhóm Zalo săn IPO lại rung: có mã mới sắp chào sàn, ai đăng ký thêm không?")),
- dict(k='bignum', cap=('10 THƯƠNG VỤ IPO', 'CUỐI 2025 → 10/2026'), cols=CC, value=60900, fmt='{:,.0f}', unit=' tỷ', top='TIỀN NHÀ ĐẦU TƯ ĐÃ BỎ VÀO', sub='Gấp ~9 lần cả giai đoạn 2021–2024', col=GOLD,
+ dict(k='bignum', cap=('10 THƯƠNG VỤ IPO', 'CUỐI 2025 → 10/2026'), cols=CC, value=60900, fmt='{:,.0f}', unit=' tỷ', top='TIỀN NHÀ ĐẦU TƯ ĐÃ BỎ VÀO', sub='Gấp khoảng 9 lần cả giai đoạn 2021–2024', col=GOLD,
       say=("Chị Hà không phải người duy nhất. Theo Ủy ban Chứng khoán Nhà nước, từ cuối năm 2025 đến tháng mười năm nay, mười doanh nghiệp IPO đã huy động sáu mươi nghìn chín trăm tỷ đồng. "
            "Con số này gấp khoảng chín lần cả bốn năm 2021 đến 2024 cộng lại. Báo Nhà Đầu Tư sáng nay đặt một câu hỏi rất thẳng: IPO thành công, sao cổ phiếu lại lao dốc? "
            "Sáu mươi nghìn tỷ đó đã đi đâu, ai hưởng lợi, và ai đang ôm lỗ?")),

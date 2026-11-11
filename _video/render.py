@@ -24,6 +24,15 @@ import dx2, music
 g = {}; exec(open(os.path.join(QD, "video_dai.py"), encoding="utf-8").read(), g)
 raw = g["S"][key]
 if prev: raw = raw[:prev]
+# QL1 11/11: font hiển thị "~" giống dấu trừ ("Gấp -9 lần") -> chữ trên màn dùng "khoảng"
+import re as _re
+def _bo_nga(v, k=None):
+    if k == "say": return v
+    if isinstance(v, str): return _re.sub(r"~\s*(?=\d)", "khoảng ", v).replace("~", "≈")
+    if isinstance(v, dict): return {kk: _bo_nga(vv, kk) for kk, vv in v.items()}
+    if isinstance(v, (list, tuple)): return type(v)(_bo_nga(x) for x in v)
+    return v
+raw = [_bo_nga(sc) for sc in raw]
 
 # 2b) đọc đúng tên web + chèn lời mời về nhóm tư vấn (giữa video và trước cảnh kết) — áp cho mọi video dài
 _WEB = "chứng khoán Huy Nguyễn chấm com"
