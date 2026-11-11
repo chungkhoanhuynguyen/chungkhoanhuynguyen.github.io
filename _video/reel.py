@@ -41,8 +41,13 @@ def ve_dau(im, hook, nhan, a=1.0):
     y = 176
     for i, s in enumerate((hook or ["", ""])[:2]):
         if not s: continue
+        if i == 1 and s.rstrip().endswith("?"):   # QL1 11/11: khuôn câu hỏi (học trang reel 28K–228K view): dòng 2 trong ô vàng, chữ tối
+            f = fit(d, s, "Black", W - 130, 92); tw = d.textlength(s, font=f); h = int(f.size * 1.22)
+            d.rounded_rectangle([W/2 - tw/2 - 26, y + 4, W/2 + tw/2 + 26, y + h + 8], 18, fill=VANG)
+            d.text((W/2 - tw/2, y + 6), s, font=f, fill=(24, 10, 40))
+            y += h + 22; continue
         f = fit(d, s, "Black", W - 90, 104 if i == 0 else 88); tw = d.textlength(s, font=f)
-        c = VANG if i == 0 else TRANG
+        c = TRANG if (len(hook) > 1 and str(hook[1]).rstrip().endswith("?")) else (VANG if i == 0 else TRANG)
         d.text((W/2 - tw/2, y), s, font=f, fill=c, stroke_width=7, stroke_fill=(12, 4, 24))
         y += int(f.size * 1.16)
     return y
