@@ -111,7 +111,7 @@ MT = ("NÓNG 11/11/2026: 10 thương vụ IPO từ cuối 2025 đến 10/2026 hu
       "Cần trao đổi riêng về danh mục: Zalo 0365.188.286\n\n"
       "Nhân vật chị Hà, anh Long, Thảo, Tuấn là hư cấu; số liệu là thật. Video không đánh giá trách nhiệm của bất kỳ doanh nghiệp hay đơn vị tư vấn nào.\n"
       "Chia sẻ góc nhìn, không phải khuyến nghị mua bán.")
-META = {KEY: dict(kenh='@chungkhoanhuynguyen', seri='Tin nóng trong ngày', ngay='2026-11-11', gio_goi_y='19:30', gio='19:30', nhac='lofi',
+META = {KEY: dict(kenh='@chungkhoanhuynguyen', seri='Tin nóng trong ngày', ngay='2026-11-11', gio_goi_y='12:00', gio='12:00', nhac='lofi',
     tieu_de=TIEU, title=TIEU, mo_ta=MT,
     tags=['cổ phiếu IPO', 'IPO 2026', 'LPS', 'cổ phiếu LPS', 'TCX', 'VPX', 'DVV', 'IPO lao dốc', 'có nên mua IPO', 'chứng khoán hôm nay', 'tin nóng chứng khoán'],
     bia_hook=['MUA 30.000', 'CÒN 15.800'], badge='NÓNG: CỔ PHIẾU IPO LAO DỐC',
