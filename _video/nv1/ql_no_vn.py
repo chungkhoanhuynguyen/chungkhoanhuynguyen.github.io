@@ -105,7 +105,7 @@ S = [
       cards=[('+53,89%', 'Tín dụng năm 2007', 'Ngân hàng Nhà nước'), ('22,97%', 'Lạm phát bình quân 2008', 'Tổng cục Thống kê')],
       say=("Chuyện tiền vay chạy nhanh hơn nền kinh tế, Việt Nam đã trải qua. Năm 2007, tín dụng tăng năm mươi ba phẩy tám chín phần trăm. Một năm sau, lạm phát bình quân năm 2008 lên hai mươi hai phẩy chín bảy phần trăm. "
            "Ngân hàng Nhà nước buộc phải siết mạnh, lãi suất cho vay có lúc vượt hai mươi phần trăm mỗi năm. Những người vay lãi thả nổi để mua nhà, mua đất lúc đó là những người chịu trận đầu tiên.")),
- dict(k='text', cap=('BÂY GIỜ KHÔNG PHẢI 2008', 'NHƯNG BÀI HỌC VẪN CÒN'), cols=CC, anh='ov:stock chart monitor||candlestick chart',
+ dict(k='text', cap=('BÂY GIỜ KHÔNG PHẢI 2008', 'NHƯNG BÀI HỌC VẪN CÒN'), cols=CC, anh='ov:stock chart monitor||Ho Chi Minh City Stock Exchange',
       say=("Em nói công bằng: hôm nay không giống năm 2008. Tín dụng tăng mười bảy phần trăm chứ không phải năm mươi ba phần trăm, lạm phát khoảng năm phần trăm chứ không phải hai mươi ba. "
            "Nhưng bài học vẫn nguyên giá trị: khi tiền vay lớn nhanh hơn thu nhập nhiều năm liền, người trả giá thường không phải Nhà nước, mà là người vay với lãi suất thả nổi.")),
  # ---------------- CHƯƠNG 6 ----------------
@@ -125,7 +125,7 @@ S = [
       say=("Anh Tuấn không hoảng như mẹ. Anh nhắn cho vợ một phương án khác. Một: dồn khoản tiết kiệm trả bớt hai trăm triệu nợ gốc trước khi hết ưu đãi. Vay còn một tỷ, kể cả lãi mười phần trăm cũng chỉ trả khoảng chín phẩy sáu lăm triệu mỗi tháng, thấp hơn mức hiện tại. "
            "Hai: giữ tổng tiền trả nợ không quá bốn mươi phần trăm thu nhập cả nhà. Ba, vợ anh nhắc thêm: luôn để sẵn quỹ dự phòng đủ sáu tháng trả nợ, thay vì rút hết đi mua vàng theo lời đồn. Đây là cách anh Tuấn tự tính cho nhà mình, không phải lời khuyên chung cho mọi người.")),
  # ---------------- CHƯƠNG 7 ----------------
- dict(k='checklist', ch='Chương 7 – Nhà đầu tư đọc con số này thế nào?', anh='ov:stock chart monitor||candlestick chart', cap=('3 CÂU HỎI', 'KHI NGHE "VIỆT NAM NỢ NHIỀU"'), cols=CC, moc=True,
+ dict(k='checklist', ch='Chương 7 – Nhà đầu tư đọc con số này thế nào?', anh='ov:stock chart monitor||Ho Chi Minh City Stock Exchange', cap=('3 CÂU HỎI', 'KHI NGHE "VIỆT NAM NỢ NHIỀU"'), cols=CC, moc=True,
       items=[('Nợ của ai: Nhà nước hay tư nhân?', GREEN),
              ('Doanh nghiệp mình giữ vay nhiều không?', GREEN),
              ('Lãi suất 6–12 tháng tới đi đâu?', GOLD)],
