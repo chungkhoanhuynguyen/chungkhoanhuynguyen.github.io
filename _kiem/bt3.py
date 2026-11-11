@@ -35,6 +35,14 @@ for i, s in enumerate(sorted(FL)):
     if j and j.get("c") and len(j["c"]) >= 150:
         D[s] = dict(d=[datetime.datetime.utcfromtimestamp(t).strftime("%Y-%m-%d") for t in j["t"]], o=j["o"], h=j["h"], l=j["l"], c=j["c"], v=j["v"])
     if i % 100 == 0: print(i, s, len(D), flush=True)
+# Vốn hoá lịch sử (VNDirect ratios MARKETCAP theo ngày); thiếu thì dùng giá điều chỉnh × số CP hiện tại
+MC = {}; co_mc = 0
+for i, s in enumerate(sorted(D)):
+    j = get(f"{S3}ratios?q=code:{s}~ratioCode:MARKETCAP&sort=reportDate:asc&size=5000&fields=reportDate,value") or {}
+    r = [(x["reportDate"], x["value"]) for x in j.get("data", []) if isinstance(x.get("value"), (int, float)) and x.get("reportDate")]
+    if len(r) > 20: MC[s] = r; co_mc += 1
+    if i == 0: print("mau MARKETCAP", s, r[:2], r[-2:], len(r), flush=True)
+print("co von hoa lich su:", co_mc, "/", len(D), flush=True)
 huy = [s for s in D if D[s]["d"][-1] < (datetime.date.today() - datetime.timedelta(days=20)).isoformat()]
 print("co du lieu", len(D), "| da ngung giao dich:", len(huy), flush=True)
 cnt = Counter(d for b in D.values() for d in b["d"])
@@ -72,8 +80,17 @@ for s, b in D.items():
         if k >= 126: a["r126"][g] = c[k] / c[k - 126] - 1
         if k >= 221: a["ma200_21"][g] = m["ma200"][k - 21]
         if k >= 1: a["prevc"][g] = c[k - 1]; a["hh120y"][g] = m["hh120"][k - 1]
+    a["mc"] = [None] * N
+    if s in MC:
+        r = MC[s]; ri = 0; last = None
+        for g in range(N):
+            while ri < len(r) and r[ri][0][:10] <= CAL[g]: last = r[ri][1]; ri += 1
+            a["mc"][g] = last
+    else:
+        a["mc"] = [x * 1e9 if x is not None else None for x in a["c"]]   # không có dữ liệu: coi như nhỏ (xếp sau)
     a["fl"] = FL.get(s, "HOSE"); A[s] = a
 print("chi bao xong", flush=True)
+print("mau ro 2016-06:", sorted(next(set() for _ in [0])) if False else "", flush=True)
 # chỉ số cân bằng 200 mã -> bộ lọc thị trường
 idx = [100.0] * N
 for g in range(1, N):
@@ -88,7 +105,7 @@ print("bo loc thi truong mo cua %.0f%% so phien (tu 2014-07)" % (100*sum(MKT[g] 
 RO = []
 for g in range(N):
     sc = sorted(((A[s]["gt20"][g], s) for s in A if A[s]["c"][g] is not None and A[s]["k"][g] >= 280 and A[s]["gt20"][g]), reverse=True)[:100]
-    RO.append(set(sorted((s for _, s in sc), key=lambda s: -(A[s]["gt120"][g] or 0))[:30]))
+    RO.append(set(sorted((s for _, s in sc), key=lambda s: -(A[s]["mc"][g] or 0))[:30]))   # 30 mã vốn hoá lớn nhất trong top100 thanh khoản
 def sig_v306(s, g):
     a = A[s]; c = a["c"][g]
     if None in (a["ma50"][g], a["ma150"][g], a["ma200"][g], a["ma200_21"][g], a["hh120"][g], a["hh120y"][g], a["vavg20"][g], a["prevc"][g]): return False
@@ -105,6 +122,8 @@ for g in range(N):
         if sig_c(s, g): SIG["C"][g].append(s)
     for k in SIG: SIG[k][g].sort(key=lambda s: -(A[s]["r126"][g] if A[s]["r126"][g] is not None else -9))
 SIG["C+locTT"] = SIG["C"]
+for dd in ("2016-06-01","2020-06-01","2026-11-03"):
+    g = next((g for g in range(N) if CAL[g] >= dd), N - 1); print("ro", CAL[g], sorted(RO[g]), flush=True)
 print("so tin hieu:", {k: sum(len(x) for x in v) for k, v in SIG.items()}, flush=True)
 def ban_v306(p, g):
     c = A[p["s"]]["c"][g]; p["mx"] = max(p["mx"], c); n = g - p["g"] + 1
