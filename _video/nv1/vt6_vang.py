@@ -90,7 +90,7 @@ S = [
            "Rồi giá rơi. Cuối năm 2013, vàng miếng còn khoảng ba mươi lăm triệu. Người mua đúng đỉnh năm 2011 phải chờ đến tháng bảy năm 2020, gần chín năm sau, giá mới vượt lại mốc năm mươi triệu. "
            "Chín năm. Đủ để một đứa trẻ vào lớp một rồi lên cấp hai. Vàng giữ giá về lâu dài là đúng, nhưng lâu dài có thể dài hơn rất nhiều so với điều bạn chờ được.")),
  # ---------------- CHƯƠNG 4 ----------------
- dict(k='checklist', ch='Chương 6 – Vì sao người cẩn thận vẫn mua đỉnh?', anh='ov:crowd queue||people waiting line', cap=('3 CÁI BẪY', 'KHI MUA THEO ĐÁM ĐÔNG'), cols=CC, moc=True,
+ dict(k='checklist', ch='Chương 6 – Vì sao người cẩn thận vẫn mua đỉnh?', anh='ov:queue of people||crowd waiting', cap=('3 CÁI BẪY', 'KHI MUA THEO ĐÁM ĐÔNG'), cols=CC, moc=True,
       items=[('Thấy giá tăng nhanh nên nghĩ còn tăng tiếp – mua vì sợ lỡ', RED),
              ('Rút tiền tiết kiệm, dồn hết một lần, không chia nhỏ', RED),
              ('Không có kế hoạch nếu giá giảm 20%: bán, giữ hay mua thêm?', RED)],

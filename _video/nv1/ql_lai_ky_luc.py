@@ -36,7 +36,7 @@ S = [
         ('me', 'MSR P/E cao hơn nhiều, mua đắt làm gì')]),
       say=("Quay lại cuối tháng năm. Anh Tú, kỹ sư cơ khí ba mươi tư tuổi, nhắn cho Quân, bạn thân thời đại học. BSR quý một lãi hơn tám nghìn hai trăm tỷ, gấp hai mươi lần cùng kỳ mày ạ. P trên E có hơn bốn, rẻ như cho, tao vào bốn trăm triệu. "
            "Quân trả lời: tao thì đang để ý MSR, Masan High-Tech Materials, giá vonfram đang sốt. Anh Tú gạt đi: MSR P trên E cao hơn nhiều, mua đắt làm gì.")),
- dict(k='cards', anh='ov:stock market screen||stock trading', cap=('CUỐI THÁNG 5/2026', 'HAI LỰA CHỌN'), cols=CC, moc=True,
+ dict(k='cards', anh='ov:stock chart monitor||candlestick chart', cap=('CUỐI THÁNG 5/2026', 'HAI LỰA CHỌN'), cols=CC, moc=True,
       cards=[('BSR', '400 triệu – giá khoảng 29.400', 'lãi tăng gấp 20 lần'), ('MSR', '200 triệu – giá khoảng 37.600', 'lãi mới bắt đầu tăng'), ('T5/2026', 'Cùng một ngày mua', 'hai lựa chọn')],
       say=("Cùng một tuần, hai người bạn đưa ra hai lựa chọn. Anh Tú dồn bốn trăm triệu vào BSR, giá khoảng hai mươi chín nghìn bốn trăm đồng, một công ty mà lợi nhuận vừa tăng gấp hai mươi lần. "
            "Quân bỏ hai trăm triệu vào MSR, giá khoảng ba mươi bảy nghìn sáu trăm. Lợi nhuận của MSR lúc đó mới bắt đầu nhích lên sau nhiều năm thua lỗ. Theo logic thông thường, anh Tú đã chọn đúng: rẻ hơn, lãi nhiều hơn.")),
@@ -66,7 +66,7 @@ S = [
  dict(k='bignum', anh='ov:oil refinery night||oil refinery', cap=('P/E THẤP Ở ĐỈNH LỢI NHUẬN', 'CÓ THỂ LÀ CÁI BẪY'), cols=CR, value=4.5, fmt='{:,.1f}', unit=' lần', top='P/E CỦA BSR NGÀY 11/11/2026', sub='Tính trên lợi nhuận 4 quý gần nhất – quý cao nhất trong lịch sử', col=RED,
       say=("Đây là chỗ anh Tú hiểu sai. P trên E của BSR chỉ khoảng bốn phẩy năm lần, nhưng con số này được tính trên bốn quý lãi cao nhất lịch sử công ty. "
            "Nếu lợi nhuận năm sau chỉ còn một nửa, P trên E thật sẽ là chín lần. Nếu chỉ còn một phần tư, nó là mười tám lần. Với doanh nghiệp chu kỳ, P trên E thấp nhất thường xuất hiện đúng lúc lợi nhuận ở đỉnh, và đó lại thường là lúc rủi ro nhất để mua.")),
- dict(k='checklist', anh='ov:stock market screen||stock trading', cap=('THỊ TRƯỜNG ĐANG NGHĨ GÌ?', 'THEO VNDIRECT RESEARCH'), cols=CC,
+ dict(k='checklist', anh='ov:stock chart monitor||candlestick chart', cap=('THỊ TRƯỜNG ĐANG NGHĨ GÌ?', 'THEO VNDIRECT RESEARCH'), cols=CC,
       items=[('Quý 3/2026: lợi nhuận DN trên HOSE tăng 52%', GREEN), ('Phần đột biến chủ yếu từ VIC, VHM và BSR', GOLD), ('Dự báo quý 4: chỉ tăng khoảng 6%', RED)],
       say=("Không chỉ chị Ngân nghĩ vậy. Theo báo cáo chiến lược tháng mười một của VNDirect Research, lợi nhuận doanh nghiệp trên HOSE quý ba tăng năm mươi hai phần trăm, chủ yếu nhờ đóng góp đột biến từ VIC, VHM và BSR. "
            "Nhưng đà tăng được dự báo chậm lại rõ trong quý bốn, chỉ khoảng sáu phần trăm so với cùng kỳ. Thị trường đã nhìn thấy điều đó từ trước, và giá cổ phiếu phản ánh trước.")),
@@ -84,7 +84,7 @@ S = [
       say=("Em nói công bằng: MSR cũng là doanh nghiệp hàng hóa. Nếu nguồn cung ngoài Trung Quốc tăng lên, hoặc chính sách xuất khẩu thay đổi, chênh lệch giá có thể thu hẹp, và cổ phiếu sẽ phản ứng rất mạnh. "
            "P trên E của MSR hiện khoảng mười bốn lần, đã phản ánh nhiều kỳ vọng. Bài học ở đây không phải là MSR tốt, BSR xấu. Bài học là: phải hiểu lợi nhuận đến từ đâu, và kéo dài được bao lâu.")),
  # ---------------- CHƯƠNG 5 ----------------
- dict(k='checklist', ch='Chương 5 – Ba câu hỏi trước khi mua theo lợi nhuận', anh='ov:stock market screen||stock trading', cap=('3 CÂU HỎI', 'TRƯỚC KHI MUA VÌ LÃI KỶ LỤC'), cols=CC, moc=True,
+ dict(k='checklist', ch='Chương 5 – Ba câu hỏi trước khi mua theo lợi nhuận', anh='ov:stock chart monitor||candlestick chart', cap=('3 CÂU HỎI', 'TRƯỚC KHI MUA VÌ LÃI KỶ LỤC'), cols=CC, moc=True,
       items=[('Lãi tăng nhờ giá bán của thị trường, hay nhờ năng lực riêng của công ty?', GREEN),
              ('Điều tạo ra mức lãi này có thể kéo dài mấy năm? Ai có thể làm theo?', GREEN),
              ('P/E thấp vì cổ phiếu rẻ, hay vì lợi nhuận đang ở đỉnh?', GOLD)],
@@ -122,7 +122,7 @@ MT = ("BSR lãi quý 3/2026 gần 9.000 tỷ (+888%), 9 tháng gấp 11,5 lần 
 META = {KEY: dict(kenh='@chungkhoanhuynguyen', seri='Chuyện gì đã xảy ra?', ngay='2026-11-15', gio_goi_y='12:00', gio='12:00', nhac='lofi',
     tieu_de=TIEU, title=TIEU, mo_ta=MT,
     tags=['BSR', 'cổ phiếu BSR', 'MSR', 'POW', 'PGV', 'lãi kỷ lục', 'P/E thấp', 'cổ phiếu chu kỳ', 'vonfram', 'kết quả kinh doanh quý 3 2026', 'đọc báo cáo tài chính'],
-    bia_hook=['LÃI +888%', 'GIÁ VẪN GIẢM?'], badge='VÌ SAO LÃI KỶ LỤC MÀ CỔ PHIẾU KHÔNG TĂNG?',
+    bia_hook=['LÃI +888%', 'GIÁ VẪN GIẢM?'], badge='BSR – LÃI KỶ LỤC 2026',
     bia_anh='ov:oil refinery night||oil refinery',
     bia_hook_b=['P/E 4,5', 'RẺ HAY BẪY?'], badge_b='BSR – POW – PGV – MSR',
     bia_hook_c=['BSR −14%', 'MSR +56%'], badge_c='CÙNG LÃI KỶ LỤC, VÌ SAO KHÁC?',
