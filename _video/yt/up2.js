@@ -41,3 +41,7 @@ window.__done=async()=>{const S=ms=>new Promise(r=>setTimeout(r,ms));
  const ok=[...document.querySelectorAll('ytcp-button, tp-yt-paper-button, button')].find(b=>b.innerText.trim()==='Đã hiểu' && b.offsetParent); if(ok){ok.click(); await S(3000);}
  window.__want=null; return document.body.innerText.match(/công khai vào lúc [^\n]{0,30}/)?.[0];};
 // Kênh @5 (UCbeiGmJ1yZL4kLE5bwf471g): nếu Studio báo "Rất tiếc" -> youtube.com/account -> chọn kênh "Vĩ Mô Nóng" rồi mở lại.
+
+// 11/11 tối: ĐANG TẢI LÊN thì KHÔNG location.href / navigate (mất upload). Đăng tiếp video thứ 2 trên cùng trang: __new() (bấm Đóng -> Tạo -> Tải video lên), giữ nguyên __parts.
+// window.__new=async()=>{...} xem phiên 11/11: Đóng -> nút 'Tạo' -> tp-yt-paper-item 'Tải video lên'.
+// Kênh @6 Đầu Tư Tích Sản: UCGImFAPw_IG_Ov7yomYn84g (meta: kenh6.json). Đổi kênh: youtube.com/channel_switcher -> click ytd-account-item-renderer có handle.
