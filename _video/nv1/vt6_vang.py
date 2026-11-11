@@ -32,7 +32,7 @@ S = [
         ('me', 'Vàng chỉ có lên chứ không có xuống đúng không chị?')]),
       say=("Tháng ba năm 2026. Nhóm Zalo khu phố của bạn sôi lên. Chị Thu nhắn: vàng lên một trăm tám mươi tư triệu rồi, đầu năm mới một trăm năm mươi tám. Mai năm giờ chị đi xếp hàng, ai đi cùng không? "
            "Lan nhảy vào: em đi, gửi tiết kiệm lãi có năm phần trăm một năm, vàng hai tháng lên mười bảy phần trăm. Bạn gõ một câu mà chính bạn cũng muốn tin: vàng chỉ có lên chứ không có xuống đúng không chị?")),
- dict(k='cards', cap=('GIÁ VÀNG MIẾNG BÁN RA', 'TRIỆU ĐỒNG/LƯỢNG'), cols=CC, moc=True,
+ dict(k='cards', anh='ov:gold bars||gold bullion', cap=('GIÁ VÀNG MIẾNG BÁN RA', 'TRIỆU ĐỒNG/LƯỢNG'), cols=CC, moc=True,
       cards=[('84,2', 'Cuối năm 2024', ''), ('152,8', 'Cuối năm 2025', ''), ('184,8', 'Tuần 13/3/2026 – cao nhất', '')],
       say=("Nhìn lại, cũng dễ hiểu vì sao cả xóm tin. Cuối năm 2024, một lượng vàng miếng giá khoảng tám mươi tư triệu. Cuối năm 2025, một trăm năm mươi hai triệu. "
            "Đến tuần mười ba tháng ba năm 2026, một trăm tám mươi tư phẩy tám triệu. Chỉ hơn một năm, giá đã hơn gấp đôi. Ai đứng ngoài cũng thấy mình đang lỡ tàu.")),
@@ -64,45 +64,45 @@ S = [
       say=("Rồi đến cuộc nói chuyện bạn sợ nhất. Chồng bạn nhắn: sổ tiết kiệm đâu rồi em, sao ngân hàng báo tất toán trước hạn? Bạn đành kể thật: em mua vàng rồi anh, hồi tháng ba, cả xóm cùng mua. "
            "Anh nhắn lại đúng một câu: một tỷ? Sao em không hỏi anh trước? Khoản lỗ không chỉ nằm trên bảng giá. Nó nằm cả trong bữa cơm tối hôm đó.")),
  # ---------------- CHƯƠNG 3 ----------------
- dict(k='bignum', ch='Chương 3 – Con số thật', cap=('TỪ ĐỈNH 13/3', 'ĐẾN 11/11/2026'), cols=CR, moc=True, value=-24.2, fmt='{:,.1f}', unit='%', top='GIÁ VÀNG MIẾNG BÁN RA', sub='184,82 xuống 140,02 triệu đồng/lượng', col=RED,
+ dict(k='bignum', ch='Chương 3 – Con số thật', anh='ov:gold bars||gold bullion', cap=('TỪ ĐỈNH 13/3', 'ĐẾN 11/11/2026'), cols=CR, moc=True, value=-24.2, fmt='{:,.1f}', unit='%', top='GIÁ VÀNG MIẾNG BÁN RA', sub='184,82 xuống 140,02 triệu đồng/lượng', col=RED,
       say=("Đây là con số thật. Tuần cao nhất là ngày mười ba tháng ba, giá vàng miếng bán ra một trăm tám mươi tư phẩy tám triệu đồng một lượng. Đến ngày mười một tháng mười một, còn một trăm bốn mươi triệu. Tức là giảm hai mươi bốn phẩy hai phần trăm. "
            "Một tỷ mua ở đỉnh, tính theo giá bán ra hôm nay chỉ còn khoảng bảy trăm năm mươi bảy triệu. Nếu bán lại cho tiệm theo giá mua vào, còn thấp hơn nữa.")),
- dict(k='cards', cap=('CÙNG LÀ VÀNG', 'MUA LÚC NÀO MỚI QUAN TRỌNG'), cols=CC, moc=True,
+ dict(k='cards', anh='ov:gold bars||gold bullion', cap=('CÙNG LÀ VÀNG', 'MUA LÚC NÀO MỚI QUAN TRỌNG'), cols=CC, moc=True,
       cards=[('+66%', 'Mua cuối 2024 (84,2 triệu)', 'vẫn lãi lớn'), ('−8%', 'Mua cuối 2025 (152,8 triệu)', 'đang lỗ'), ('−24%', 'Mua đỉnh tháng 3/2026', 'lỗ nặng nhất')],
       say=("Nhưng khoan vội trách vàng. Người mua cuối năm 2024 với giá tám mươi tư triệu, hôm nay vẫn lãi khoảng sáu mươi sáu phần trăm. Người mua cuối năm 2025, đang lỗ khoảng tám phần trăm. "
            "Còn người mua đúng tuần đỉnh, lỗ hai mươi tư phần trăm. Cùng một tài sản, cùng một năm, kết quả khác nhau hoàn toàn chỉ vì thời điểm mua. Và thời điểm tệ nhất thường là lúc cả xóm cùng xếp hàng.")),
- dict(k='cards', ch='Chương 4 – Vàng lên xuống vì ai?', cap=('VÀNG THẾ GIỚI', 'QUY ĐỔI – TRIỆU ĐỒNG/LƯỢNG'), cols=CC, moc=True,
+ dict(k='cards', ch='Chương 4 – Vàng lên xuống vì ai?', anh='ov:gold bullion||gold bars', cap=('VÀNG THẾ GIỚI', 'QUY ĐỔI – TRIỆU ĐỒNG/LƯỢNG'), cols=CC, moc=True,
       cards=[('82,3', 'Cuối năm 2024', ''), ('169,0', 'Cuối tháng 2/2026 – đỉnh', ''), ('126,6', 'Ngày 11/11/2026', '−25% từ đỉnh')],
       say=("Vậy vì sao giá vàng lên rồi lại xuống? Câu trả lời không nằm ở tiệm vàng đầu ngõ, mà ở thị trường thế giới. Giá vàng thế giới quy ra tiền Việt, cuối năm 2024 chỉ khoảng tám mươi hai triệu một lượng. "
            "Cuối tháng hai năm 2026, nó lên đỉnh khoảng một trăm sáu mươi chín triệu, tức khoảng năm nghìn hai trăm bảy mươi tám đô la một ounce. Đến hôm nay, mười một tháng mười một, còn khoảng một trăm hai mươi sáu triệu, giảm chừng một phần tư. "
            "Vàng trong nước đi theo đúng nhịp đó. Bạn và chị Thu, dù xếp hàng sớm đến đâu, cũng không quyết được giá vàng ngày mai.")),
- dict(k='cards', cap=('TIỀN CHÊNH', 'BẠN TRẢ MÀ KHÔNG THẤY'), cols=CR, moc=True,
+ dict(k='cards', anh='ov:gold jewelry shop||gold bars', cap=('TIỀN CHÊNH', 'BẠN TRẢ MÀ KHÔNG THẤY'), cols=CR, moc=True,
       cards=[('~2 tr', 'Cuối 2024: SJC cao hơn thế giới', 'mỗi lượng'), ('~19 tr', 'Ngày 13/3/2026', 'mỗi lượng'), ('~3 tr', 'Chênh giá mua – bán tại tiệm', 'mỗi lượng')],
       say=("Còn một khoản nữa ít ai để ý. Cuối năm 2024, vàng miếng trong nước chỉ đắt hơn giá thế giới quy đổi khoảng hai triệu một lượng. Nhưng đúng ngày mười ba tháng ba, khi cả xóm xếp hàng, khoảng chênh đó lên tới khoảng mười chín triệu một lượng. "
            "Nghĩa là trong một tỷ bạn bỏ ra, khoảng một phần mười là tiền trả thêm cho cơn sốt, chứ không phải cho vàng. Chưa kể khi bán lại, tiệm mua vào thấp hơn giá bán ra khoảng ba triệu một lượng. "
            "Lúc đám đông càng hăng, cái giá phụ này càng đắt.")),
- dict(k='bignum', cap=('NẾU ĐỂ YÊN', 'TRONG SỔ TIẾT KIỆM'), cols=CR, moc=True, value=295, fmt='{:,.0f}', unit=' triệu', top='CHÊNH LỆCH SAU 8 THÁNG', sub='Sổ tiết kiệm ~1,036 tỷ – vàng bán lại ~741 triệu', col=RED,
+ dict(k='bignum', anh='ov:piggy bank coins||savings coins', cap=('NẾU ĐỂ YÊN', 'TRONG SỔ TIẾT KIỆM'), cols=CR, moc=True, value=295, fmt='{:,.0f}', unit=' triệu', top='CHÊNH LỆCH SAU 8 THÁNG', sub='Tiết kiệm ~1.036 tr · Vàng ~741 tr', col=RED,
       say=("Thử làm một phép so sánh. Nếu một tỷ đó cứ nằm yên trong sổ tiết kiệm mười hai tháng, lãi khoảng năm phẩy bốn phần trăm một năm, sau tám tháng bạn có khoảng một tỷ không trăm ba mươi sáu triệu. "
            "Còn năm phẩy bốn lượng vàng, nếu bán lại cho tiệm hôm nay theo giá mua vào khoảng một trăm ba mươi bảy triệu, bạn nhận về khoảng bảy trăm bốn mươi mốt triệu. Hai con đường, chênh nhau gần ba trăm triệu, chỉ vì một buổi sáng xếp hàng.")),
- dict(k='cards', ch='Chương 5 – Năm 2011 từng như thế', cap=('CƠN SỐT VÀNG 2011', 'TRIỆU ĐỒNG/LƯỢNG'), cols=CC, moc=True,
+ dict(k='cards', ch='Chương 5 – Năm 2011 từng như thế', anh='ov:gold bars||gold bullion', cap=('CƠN SỐT VÀNG 2011', 'TRIỆU ĐỒNG/LƯỢNG'), cols=CC, moc=True,
       cards=[('~49', 'Tháng 9/2011 – đỉnh cơn sốt', ''), ('35,1', 'Cuối năm 2013', ''), ('>50', 'Tháng 7/2020', 'gần 9 năm sau')],
       say=("Chuyện này không mới. Tháng chín năm 2011, cả nước cũng sốt vàng. Vàng miếng lên gần năm mươi triệu một lượng, vàng thế giới lập kỷ lục hơn một nghìn chín trăm hai mươi đô la một ounce. "
            "Rồi giá rơi. Cuối năm 2013, vàng miếng còn khoảng ba mươi lăm triệu. Người mua đúng đỉnh năm 2011 phải chờ đến tháng bảy năm 2020, gần chín năm sau, giá mới vượt lại mốc năm mươi triệu. "
            "Chín năm. Đủ để một đứa trẻ vào lớp một rồi lên cấp hai. Vàng giữ giá về lâu dài là đúng, nhưng lâu dài có thể dài hơn rất nhiều so với điều bạn chờ được.")),
  # ---------------- CHƯƠNG 4 ----------------
- dict(k='checklist', ch='Chương 6 – Vì sao người cẩn thận vẫn mua đỉnh?', cap=('3 CÁI BẪY', 'KHI MUA THEO ĐÁM ĐÔNG'), cols=CC, moc=True,
+ dict(k='checklist', ch='Chương 6 – Vì sao người cẩn thận vẫn mua đỉnh?', anh='ov:crowd queue||people waiting line', cap=('3 CÁI BẪY', 'KHI MUA THEO ĐÁM ĐÔNG'), cols=CC, moc=True,
       items=[('Thấy giá tăng nhanh nên nghĩ còn tăng tiếp – mua vì sợ lỡ', RED),
              ('Rút tiền tiết kiệm, dồn hết một lần, không chia nhỏ', RED),
              ('Không có kế hoạch nếu giá giảm 20%: bán, giữ hay mua thêm?', RED)],
       say=("Vì sao một người vốn cẩn thận, cả đời gửi tiết kiệm, lại mua đúng đỉnh? Mình thấy có ba cái bẫy. Một: thấy giá tăng nhanh nên tin nó còn tăng tiếp, mua vì sợ lỡ chứ không vì cần. "
            "Hai: rút hết tiết kiệm, dồn một lần, không chia nhỏ theo thời gian. Ba: không có kế hoạch cho tình huống giá giảm hai mươi phần trăm, nên đến lúc cần tiền thì phải bán đúng lúc thấp.")),
  # ---------------- CHƯƠNG 5 ----------------
- dict(k='cards', ch='Chương 7 – Tích sản đúng cách', cap=('CÙNG 1 TỶ, CÙNG NĂM 2026', 'GIÁ TRỊ HÔM NAY'), cols=CC, moc=True,
+ dict(k='cards', ch='Chương 7 – Tích sản đúng cách', anh='ov:calendar coins||coins stack', cap=('CÙNG 1 TỶ, CÙNG NĂM 2026', 'GIÁ TRỊ HÔM NAY'), cols=CC, moc=True,
       cards=[('~741 tr', 'Mua 1 lần ngày 13/3', 'lỗ ~26%'), ('~876 tr', 'Chia đều 10 tháng, T1–T10', 'lỗ ~12%'), ('~1.036 tr', 'Để trong sổ tiết kiệm', 'lãi ~4%')],
       say=("Giờ thử nhìn một người hàng xóm khác, chị Hạnh. Chị cũng có một tỷ, nhưng không xếp hàng. Chị chia đều, mỗi tháng mua một ít, từ tháng một đến tháng mười năm 2026. "
            "Em ước tính theo giá vàng miếng cuối mỗi tháng: đến hôm nay, số vàng của chị Hạnh bán lại được khoảng tám trăm bảy mươi sáu triệu. Chị vẫn lỗ khoảng mười hai phần trăm, vì cả năm nay vàng đi xuống. "
            "Nhưng lỗ chỉ bằng một nửa so với người mua một lần đúng đỉnh. Chia nhỏ không giúp bạn luôn có lãi. Nó giúp bạn không bao giờ dồn hết tiền vào đúng ngày tệ nhất.")),
- dict(k='checklist', cap=('4 NGUYÊN TẮC', 'TRƯỚC KHI MUA VÀNG TÍCH SẢN'), cols=CC, moc=True,
+ dict(k='checklist', anh='ov:gold coins||coins stack', cap=('4 NGUYÊN TẮC', 'TRƯỚC KHI MUA VÀNG TÍCH SẢN'), cols=CC, moc=True,
       items=[('Chia nhỏ, mua đều mỗi tháng – không dồn một lần', GREEN),
              ('Chỉ dùng tiền nhàn rỗi 3–5 năm, giữ riêng quỹ dự phòng', GREEN),
              ('Vàng là một phần, không phải toàn bộ tài sản', GREEN),
