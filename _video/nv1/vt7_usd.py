@@ -104,7 +104,7 @@ S = [
       say=("Nếu được làm lại, bạn sẽ làm khác. Chỉ đổi đô la khi có nhu cầu thật, như cho con đi du học, chữa bệnh hay trả khoản nợ bằng ngoại tệ. Khi đó, mua ở ngân hàng với giấy tờ hợp lệ, giá rẻ hơn và được pháp luật bảo vệ. "
            "Nếu nhu cầu còn xa, chia nhỏ ra mua nhiều lần thay vì dồn một lúc đúng đỉnh. Phần tiền không có nhu cầu đô la, để nó sinh lời bằng tiền đồng. "
            "Ví dụ, nếu năm sau con bạn đi du học và cần hai mươi nghìn đô, bạn có thể chia ra bốn quý, mỗi quý đổi năm nghìn đô ở ngân hàng. Giá lên hay xuống, bạn cũng chỉ mua được giá trung bình, chứ không bao giờ dồn hết vào đúng đỉnh.")),
- dict(k='text', cap=('NỖI SỢ', 'LÀ THỨ ĐẮT NHẤT'), cols=CC, anh='ov:man thinking window||man looking out window',
+ dict(k='text', cap=('NỖI SỢ', 'LÀ THỨ ĐẮT NHẤT'), cols=CC, anh='Ho Chi Minh City skyline night||Hanoi skyline night',
       say=("Bài học lớn nhất không nằm ở tỷ giá. Nó nằm ở việc bạn ra quyết định lúc cả khu phố đang sợ. Khi ai cũng muốn mua một thứ, người bán luôn là người có lợi. "
            "Giữ tiền đồng không phải lúc nào cũng đúng, giữ đô la cũng vậy. Thứ đắt nhất là quyết định vội vàng vì sợ.")),
  # ---------------- KẾT ----------------
