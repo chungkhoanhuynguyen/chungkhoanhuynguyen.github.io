@@ -34554,5 +34554,477 @@
    "cac-khoan-giam-tru-doanh-thu-la-gi",
    "doanh-thu-chua-thuc-hien-la-gi"
   ]
+ },
+ {
+  "slug": "cho-vay-khach-hang-ngan-hang-la-gi",
+  "kw": "cho vay khách hàng ngân hàng",
+  "grp": 3,
+  "title": "Cho vay khách hàng ngân hàng là gì? Đọc dư nợ và dự phòng",
+  "desc": "9 tháng 2026 HDB tăng cho vay 31,8%, VPB 28,4%, VCB 8,5%. Cách đọc dòng cho vay khách hàng, dự phòng và tỷ lệ dự phòng/cho vay trên BCTC ngân hàng.",
+  "body": [
+   [
+    "p",
+    "Chín tháng đầu 2026, dư nợ cho vay gộp của HDBank tăng từ 546.371 lên <b>719.896 tỷ đồng, tức +31,8%</b>. Cùng lúc, Vietcombank chỉ tăng 8,5%. Ngân hàng tăng nhanh có phải ngân hàng tốt hơn? Chưa chắc. Muốn trả lời, anh chị cần đọc đúng dòng \"Cho vay khách hàng\" trên bảng cân đối kế toán và dòng dự phòng đi kèm ngay bên dưới."
+   ],
+   [
+    "h2",
+    "Dòng \"Cho vay khách hàng\" gồm những gì?"
+   ],
+   [
+    "p",
+    "Đây là tài sản lớn nhất của hầu hết ngân hàng thương mại: tiền ngân hàng đã cho cá nhân và doanh nghiệp vay. Trên báo cáo có ba con số cần phân biệt:"
+   ],
+   [
+    "ul",
+    [
+     "<b>Cho vay khách hàng (gộp)</b>: tổng dư nợ gốc còn phải thu.",
+     "<b>Dự phòng rủi ro cho vay khách hàng</b>: số âm, phần ngân hàng đã trích trước cho khả năng không thu hồi được.",
+     "<b>Cho vay khách hàng (thuần)</b>: gộp trừ dự phòng, là con số được cộng vào tổng tài sản."
+    ]
+   ],
+   [
+    "p",
+    "Ví dụ Vietcombank tại 30/9/2026: cho vay gộp 1.816.093,3 tỷ, dự phòng 31.168,1 tỷ, nên cho vay thuần = 1.816.093,3 − 31.168,1 = <b>1.784.925,2 tỷ</b>, chiếm 67,7% tổng tài sản 2.682.408,9 tỷ."
+   ],
+   [
+    "h2",
+    "Tỷ lệ dự phòng trên cho vay nói lên điều gì?"
+   ],
+   [
+    "p",
+    "Lấy dự phòng chia cho vay gộp. Vietcombank: 31.168,1 / 1.816.093,3 = <b>1,72%</b>, cao hơn mức 1,49% cuối 2025. Nghĩa là trong 9 tháng, quỹ dự phòng tăng thêm khoảng 6.192 tỷ, nhanh hơn tốc độ tăng dư nợ. Ngân hàng đang \"để dành\" nhiều hơn cho mỗi đồng cho vay."
+   ],
+   [
+    "p",
+    "Chiều ngược lại cũng cần đọc kỹ. VPBank có tỷ lệ giảm từ 1,85% xuống 1,68%. Không phải vì nợ xấu biến mất: quỹ dự phòng vẫn tăng 17,1% (17.429 → 20.407 tỷ), nhưng dư nợ tăng 28,4% nên mẫu số phình nhanh hơn. Tỷ lệ giảm vì cho vay tăng nhanh, không hẳn vì chất lượng tốt lên."
+   ],
+   [
+    "h2",
+    "So sánh 5 ngân hàng: ai tăng nhanh, ai trích dày?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Mã",
+      "Cho vay gộp 30/9/2026 (tỷ)",
+      "Tăng 9 tháng",
+      "Dự phòng/cho vay 31/12/25 → 30/9/26",
+      "Cho vay thuần/Tổng TS"
+     ],
+     [
+      "VCB",
+      "1.816.093",
+      "+8,5%",
+      "1,49% → 1,72%",
+      "67,7%"
+     ],
+     [
+      "BID",
+      "2.561.795",
+      "+8,0%",
+      "1,47% → 1,36%",
+      "73,3%"
+     ],
+     [
+      "MBB",
+      "1.288.128",
+      "+18,8%",
+      "1,21% → 1,41%",
+      "70,1%"
+     ],
+     [
+      "VPB",
+      "1.212.144",
+      "+28,4%",
+      "1,85% → 1,68%",
+      "75,3%"
+     ],
+     [
+      "HDB",
+      "719.896",
+      "+31,8%",
+      "1,34% → 1,57%",
+      "63,0%"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: BCTC hợp nhất quý 3/2026. Đọc bảng theo hai chiều: tốc độ tăng dư nợ cho biết ngân hàng mở rộng mạnh đến đâu; tỷ lệ dự phòng cho biết họ chuẩn bị bao nhiêu cho rủi ro. HDB và MBB vừa tăng nhanh vừa nâng tỷ lệ dự phòng. BIDV tăng chậm nhưng tỷ lệ dự phòng đi xuống vì quỹ dự phòng gần như đứng yên (34.946 → 34.871 tỷ)."
+   ],
+   [
+    "h2",
+    "Tăng trưởng cho vay nhanh tốt hay xấu?"
+   ],
+   [
+    "p",
+    "Cho vay tăng thì thu nhập lãi thường tăng theo, nhưng nợ xấu thường đến sau 1–2 năm, khi các khoản vay mới bắt đầu đến hạn trả. Vì vậy dư nợ tăng nhanh nên đi kèm ba điều: tiền gửi tăng tương ứng (xem <a href=\"/f0/ldr-la-gi.html\">LDR</a>), vốn đủ dày (xem <a href=\"/f0/car-ngan-hang-la-gi.html\">CAR</a>) và chi phí dự phòng trên báo cáo kết quả kinh doanh không bị \"ép\" xuống để làm đẹp lợi nhuận."
+   ],
+   [
+    "p",
+    "Ví dụ Vietcombank quý 3/2026: chi phí dự phòng rủi ro tín dụng 6.184,1 tỷ, gấp hơn 12 lần quý 2 (502,6 tỷ). Lợi nhuận trước thuế vì thế giảm từ 17.419,7 xuống 11.217,7 tỷ. Một ngân hàng chấp nhận trích lớn khi cần thường đáng tin hơn ngân hàng giữ chi phí dự phòng thấp bất thường."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>Lấy cho vay thuần để tính tăng trưởng.</b> Dự phòng thay đổi làm số thuần lệch; nên dùng số gộp. VCB gộp +8,5% nhưng thuần +8,3%.",
+     "<b>Thấy tỷ lệ dự phòng giảm là mừng.</b> VPB giảm từ 1,85% xuống 1,68% chủ yếu do mẫu số tăng 28,4%.",
+     "<b>Nhầm cho vay khách hàng với cho vay các tổ chức tín dụng khác.</b> Đó là dòng riêng (liên ngân hàng), VCB chỉ 16.477 tỷ, rất nhỏ so với 1,8 triệu tỷ cho vay khách hàng."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist đọc dòng cho vay khách hàng"
+   ],
+   [
+    "ul",
+    [
+     "Lấy cho vay gộp đầu năm và cuối kỳ, tính % tăng.",
+     "Tính dự phòng/cho vay gộp ở hai thời điểm, xem tăng hay giảm và vì sao.",
+     "Đặt cạnh tăng trưởng tiền gửi khách hàng cùng kỳ.",
+     "Xem chi phí dự phòng từng quý trên báo cáo kết quả kinh doanh.",
+     "Đọc thuyết minh: cơ cấu nợ theo nhóm (nhóm 3–5 là nợ xấu) và theo ngành."
+    ]
+   ],
+   [
+    "p",
+    "Danh mục tích sản cổ phiếu ngân hàng tham khảo nằm trong <a href=\"/bao-cao-2026.html#tichsan\">báo cáo 2026</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị đầu tư."
+   ]
+  ],
+  "faq": [
+   [
+    "Cho vay khách hàng trên BCTC ngân hàng là gì?",
+    "Là tổng dư nợ ngân hàng cho cá nhân và doanh nghiệp vay. Số gộp là dư nợ gốc; số thuần là gộp trừ dự phòng rủi ro, được cộng vào tổng tài sản."
+   ],
+   [
+    "Tỷ lệ dự phòng trên cho vay bao nhiêu là cao?",
+    "Không có mức chuẩn chung. Nên so cùng ngân hàng qua các kỳ và so với tỷ lệ nợ xấu: dự phòng lớn hơn nợ xấu (bao phủ trên 100%) là đệm an toàn dày."
+   ],
+   [
+    "Vì sao tỷ lệ dự phòng giảm dù quỹ dự phòng tăng?",
+    "Vì dư nợ (mẫu số) tăng nhanh hơn quỹ dự phòng. Ví dụ VPB 9 tháng 2026: dự phòng +17,1%, cho vay +28,4%, tỷ lệ giảm từ 1,85% xuống 1,68%."
+   ]
+  ],
+  "rel": [
+   "no-xau-ngan-hang-la-gi",
+   "bao-phu-no-xau-la-gi",
+   "ldr-la-gi",
+   "chi-phi-du-phong-la-gi",
+   "doc-bctc-ngan-hang"
+  ]
+ },
+ {
+  "slug": "cam-ket-ngoai-bang-ngan-hang-la-gi",
+  "kw": "cam kết ngoại bảng ngân hàng",
+  "grp": 3,
+  "title": "Cam kết ngoại bảng ngân hàng là gì? Bảo lãnh, L/C đọc sao",
+  "desc": "TPBank bảo lãnh 112.035 tỷ, gấp 2,15 lần vốn chủ; TCB tăng bảo lãnh 54,9% trong 9 tháng 2026. Cách đọc nghĩa vụ nợ tiềm ẩn, L/C, hoán đổi ngoại tệ.",
+  "body": [
+   [
+    "p",
+    "Tại 30/9/2026, TPBank có vốn chủ sở hữu 52.133 tỷ đồng, nhưng đang đứng ra <b>bảo lãnh 112.035 tỷ</b> cho khách hàng, gấp 2,15 lần vốn chủ. Con số này không nằm trong tổng tài sản. Nó nằm ở phần cuối bảng cân đối, gọi là các khoản cam kết ngoại bảng. Nhiều người đọc BCTC ngân hàng bỏ qua phần này."
+   ],
+   [
+    "h2",
+    "Cam kết ngoại bảng là gì?"
+   ],
+   [
+    "p",
+    "Là những nghĩa vụ ngân hàng đã ký nhưng chưa phát sinh tiền ra, nên chưa ghi vào tài sản hay nợ phải trả. Nếu khách hàng không thực hiện được nghĩa vụ, ngân hàng phải trả thay và khoản đó trở thành khoản cho vay bắt buộc. Trên BCTC thường có các nhóm:"
+   ],
+   [
+    "ul",
+    [
+     "<b>Bảo lãnh</b> (bảo lãnh vay vốn, bảo lãnh thanh toán, dự thầu, thực hiện hợp đồng): ngân hàng cam kết trả thay nếu khách hàng vi phạm.",
+     "<b>Cam kết trong nghiệp vụ L/C</b> (thư tín dụng): ngân hàng thanh toán cho bên bán hàng nhập khẩu khi bộ chứng từ hợp lệ.",
+     "<b>Cam kết trong giao dịch hối đoái</b>: mua, bán, hoán đổi ngoại tệ kỳ hạn.",
+     "<b>Cam kết khác</b>, gồm hạn mức tín dụng chưa giải ngân."
+    ]
+   ],
+   [
+    "h2",
+    "Ví dụ: đọc phần ngoại bảng của Vietcombank"
+   ],
+   [
+    "p",
+    "Tại 30/9/2026, Vietcombank có bảo lãnh 138.448,9 tỷ (bảo lãnh vay vốn 9.549,1 + bảo lãnh khác 128.899,8), tăng 39,7% so với cuối 2025 (99.093,7 tỷ). L/C 75.278,5 tỷ. Cộng bảo lãnh và L/C: 213.727,4 tỷ, bằng 0,84 lần vốn chủ 253.761,1 tỷ."
+   ],
+   [
+    "p",
+    "Phần hối đoái lớn hơn nhiều: hoán đổi ngoại tệ 379.604,4 tỷ. Nhưng cam kết mua ngoại tệ 4.158,2 tỷ và bán 4.159,0 tỷ gần như bằng nhau: phần lớn các giao dịch này đi theo cặp mua – bán, rủi ro thật nằm ở chênh lệch tỷ giá và khả năng đối tác không thực hiện, không phải toàn bộ giá trị danh nghĩa."
+   ],
+   [
+    "h2",
+    "So sánh 6 ngân hàng: bảo lãnh lớn cỡ nào so với vốn?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Mã",
+      "Bảo lãnh 30/9/2026 (tỷ)",
+      "Tăng 9 tháng",
+      "Bảo lãnh/Vốn chủ",
+      "L/C (tỷ)"
+     ],
+     [
+      "TPB",
+      "112.035",
+      "+39,5%",
+      "2,15 lần",
+      "28.163"
+     ],
+     [
+      "MBB",
+      "240.463",
+      "+25,2%",
+      "1,46 lần",
+      "80.667"
+     ],
+     [
+      "BID",
+      "296.825",
+      "+17,8%",
+      "1,46 lần",
+      "81.649"
+     ],
+     [
+      "TCB",
+      "212.450",
+      "+54,9%",
+      "1,08 lần",
+      "66.071"
+     ],
+     [
+      "VCB",
+      "138.449",
+      "+39,7%",
+      "0,55 lần",
+      "75.279"
+     ],
+     [
+      "ACB",
+      "26.040",
+      "+31,1%",
+      "0,25 lần",
+      "8.688"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: BCTC hợp nhất quý 3/2026. Cùng là ngân hàng lớn nhưng mô hình rất khác: ACB gần như chỉ cho vay bán lẻ nên bảo lãnh nhỏ; TPB, MBB, BID phục vụ nhiều doanh nghiệp nên bảo lãnh lớn so với vốn. HDBank đi ngược xu hướng: bảo lãnh giảm 20,6% (21.921 → 17.400 tỷ)."
+   ],
+   [
+    "h2",
+    "Vì sao nhà đầu tư cần để ý phần này?"
+   ],
+   [
+    "p",
+    "Bảo lãnh mang lại phí dịch vụ đều đặn mà không cần bỏ vốn ngay, nên là nguồn thu nhập ngoài lãi tốt (xem <a href=\"/f0/thu-nhap-ngoai-lai-ngan-hang.html\">thu nhập ngoài lãi</a>). Nhưng khi kinh tế xấu, khách hàng gặp khó cùng lúc thì các bảo lãnh biến thành khoản phải trả thay, rồi thành nợ cần trích dự phòng. Bảo lãnh tăng nhanh hơn nhiều so với cho vay là điểm nên hỏi thêm: TCB bảo lãnh +54,9% trong khi cho vay gộp +13,1%."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>Cộng tất cả cam kết rồi so với vốn.</b> CTG có hoán đổi ngoại tệ 1.347.764 tỷ, gấp 6,5 lần vốn chủ, nhưng phần lớn là cặp mua – bán; con số danh nghĩa không phải khoản lỗ tiềm năng.",
+     "<b>Nhầm tên nhóm trên ứng dụng dữ liệu.</b> Một số ứng dụng gộp hối đoái, L/C và cam kết khác dưới tiêu đề \"Cam kết tín dụng\" (VCB: 523.957,6 tỷ = 387.921,6 + 75.278,5 + 60.757,4). Đọc thuyết minh để tách đúng.",
+     "<b>Nghĩ ngoại bảng là không có rủi ro.</b> Bảo lãnh của TPB gấp 2,15 lần vốn chủ; chỉ một phần nhỏ phải trả thay cũng tác động đáng kể đến lợi nhuận."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist đọc cam kết ngoại bảng"
+   ],
+   [
+    "ul",
+    [
+     "Tìm phần \"Các chỉ tiêu ngoài bảng\" cuối bảng cân đối.",
+     "Lấy bảo lãnh + L/C, chia cho vốn chủ sở hữu.",
+     "So tốc độ tăng bảo lãnh với tốc độ tăng cho vay cùng kỳ.",
+     "Với hối đoái: so cam kết mua và bán, đừng lấy giá trị danh nghĩa làm rủi ro.",
+     "Đọc thuyết minh về khoản phải trả thay (nếu có) và dự phòng cho cam kết ngoại bảng."
+    ]
+   ],
+   [
+    "p",
+    "Danh mục tích sản cổ phiếu ngân hàng tham khảo nằm trong <a href=\"/bao-cao-2026.html#tichsan\">báo cáo 2026</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị đầu tư."
+   ]
+  ],
+  "faq": [
+   [
+    "Cam kết ngoại bảng của ngân hàng là gì?",
+    "Là các nghĩa vụ ngân hàng đã ký như bảo lãnh, L/C, cam kết mua bán ngoại tệ, hạn mức tín dụng chưa giải ngân. Chưa phát sinh tiền nên chưa ghi vào tài sản, nợ phải trả."
+   ],
+   [
+    "Bảo lãnh ngân hàng có rủi ro gì?",
+    "Nếu khách hàng được bảo lãnh vi phạm nghĩa vụ, ngân hàng phải trả thay. Khoản trả thay trở thành khoản cho vay, có thể thành nợ xấu và phải trích dự phòng."
+   ],
+   [
+    "Vì sao giá trị hoán đổi ngoại tệ của ngân hàng rất lớn?",
+    "Vì đây là giá trị danh nghĩa của các hợp đồng mua – bán ngoại tệ kỳ hạn, phần lớn đi theo cặp đối ứng. Rủi ro thật là chênh lệch tỷ giá và đối tác không thực hiện."
+   ]
+  ],
+  "rel": [
+   "thu-nhap-ngoai-lai-ngan-hang",
+   "doc-bctc-ngan-hang",
+   "car-ngan-hang-la-gi",
+   "cho-vay-khach-hang-ngan-hang-la-gi",
+   "no-xau-ngan-hang-la-gi"
+  ]
+ },
+ {
+  "slug": "vay-cac-to-chuc-tin-dung-khac-la-gi",
+  "kw": "vay các tổ chức tín dụng khác",
+  "grp": 3,
+  "title": "Vay các tổ chức tín dụng khác là gì? Ngân hàng nào đi vay nhiều?",
+  "desc": "VPBank vay các TCTD khác 226.088 tỷ, +46,4% trong 9 tháng 2026; VCB cho vay ròng liên ngân hàng 212.822 tỷ. Cách đọc tiền gửi và vay các TCTD khác.",
+  "body": [
+   [
+    "p",
+    "Chín tháng đầu 2026, khoản <b>vay các tổ chức tín dụng khác</b> của VPBank tăng từ 154.421 lên 226.088 tỷ đồng (+46,4%), bằng 14,0% tổng tài sản. Cùng thời điểm, Vietcombank gửi và cho các ngân hàng khác vay nhiều hơn số mình nhận về tới 212.822 tỷ. Một bên đi vay, một bên cho vay. Bài này giúp anh chị đọc hai dòng liên ngân hàng trên BCTC."
+   ],
+   [
+    "h2",
+    "Hai phía của thị trường liên ngân hàng"
+   ],
+   [
+    "p",
+    "Ngân hàng thừa vốn ngắn hạn sẽ gửi hoặc cho ngân hàng khác vay; ngân hàng thiếu thì nhận tiền gửi hoặc đi vay. Trên bảng cân đối:"
+   ],
+   [
+    "ul",
+    [
+     "<b>Bên tài sản</b>: \"Tiền gửi tại các TCTD khác\" và \"Cho vay các TCTD khác\" (tiền mình đưa đi).",
+     "<b>Bên nợ phải trả</b>: \"Tiền gửi của các TCTD khác\" và \"Vay các TCTD khác\" (tiền mình nhận về), gộp dưới tiêu đề \"Tiền gửi và vay các TCTD khác\"."
+    ]
+   ],
+   [
+    "p",
+    "Lấy bên tài sản trừ bên nợ ra <b>vị thế ròng</b>. Ví dụ Vietcombank 30/9/2026: bên tài sản 566.328,0 + 16.477,1 = 582.805,1 tỷ; bên nợ 353.629,4 + 16.353,4 = 369.982,8 tỷ; ròng <b>+212.822,3 tỷ</b>. VCB là bên cung vốn cho hệ thống."
+   ],
+   [
+    "h2",
+    "So sánh 5 ngân hàng: ai cho vay, ai đi vay ròng?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Mã",
+      "Gửi + cho vay TCTD khác (tỷ)",
+      "Nhận gửi + vay của TCTD khác (tỷ)",
+      "Ròng (tỷ)",
+      "Phần nhận/Tổng TS"
+     ],
+     [
+      "VCB",
+      "582.805",
+      "369.983",
+      "+212.822",
+      "13,8%"
+     ],
+     [
+      "BID",
+      "403.826",
+      "305.793",
+      "+98.033",
+      "8,8%"
+     ],
+     [
+      "MBB",
+      "183.839",
+      "265.848",
+      "−82.009",
+      "14,5%"
+     ],
+     [
+      "VPB",
+      "211.414",
+      "365.616",
+      "−154.202",
+      "22,7%"
+     ],
+     [
+      "TPB",
+      "123.386",
+      "170.611",
+      "−47.225",
+      "28,6%"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: BCTC hợp nhất quý 3/2026. Ngân hàng quốc doanh lớn có nền tiền gửi dồi dào nên cho vay ròng. Nhóm tư nhân tăng cho vay nhanh thì bù vốn qua liên ngân hàng: VPB cho vay khách hàng gộp tăng 28,4% trong 9 tháng, MBB tăng 18,8%, và khoản vay TCTD của MBB tăng 59,1% (64.382 → 102.412 tỷ)."
+   ],
+   [
+    "h2",
+    "Vì sao vốn liên ngân hàng là nguồn \"mỏng\"?"
+   ],
+   [
+    "p",
+    "Tiền gửi của dân cư và doanh nghiệp phân tán, ít khi rút cùng lúc. Vốn liên ngân hàng thì kỳ hạn ngắn (qua đêm, 1 tuần, 1 tháng), lãi suất biến động theo thanh khoản hệ thống. Khi thị trường căng, lãi suất liên ngân hàng có thể tăng vọt trong vài ngày và ngân hàng phụ thuộc nhiều vào nguồn này chịu chi phí vốn tăng nhanh, ảnh hưởng tới <a href=\"/f0/nim-la-gi.html\">NIM</a>. Đây cũng là một dạng <a href=\"/f0/rui-ro-ky-han-ngan-hang-la-gi.html\">rủi ro kỳ hạn</a>: vay ngắn để cho vay dài."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>Chỉ nhìn dòng \"Vay các TCTD khác\".</b> TPB vay chỉ 39.901 tỷ, nhưng nhận tiền gửi của TCTD khác 130.710 tỷ; tổng phần nhận chiếm 28,6% tài sản.",
+     "<b>Coi tiền gửi tại TCTD khác như tiền mặt.</b> Một phần có kỳ hạn hoặc là tiền gửi cho các TCTD nhỏ, rủi ro không bằng 0.",
+     "<b>Kết luận từ một thời điểm.</b> Số dư liên ngân hàng dao động mạnh giữa các quý; BID nhận gửi của TCTD khác 392.473 tỷ cuối 2025 nhưng 271.681 tỷ tại 30/9/2026."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist đọc liên ngân hàng"
+   ],
+   [
+    "ul",
+    [
+     "Cộng hai dòng bên tài sản, hai dòng bên nợ, tính vị thế ròng.",
+     "Tính phần nhận từ TCTD khác trên tổng tài sản; so qua 3–4 quý.",
+     "So tốc độ tăng vay liên ngân hàng với tăng trưởng tiền gửi khách hàng.",
+     "Đặt cạnh <a href=\"/f0/ldr-la-gi.html\">LDR</a> và chi phí lãi từng quý.",
+     "Đọc thuyết minh kỳ hạn còn lại của các khoản vay."
+    ]
+   ],
+   [
+    "p",
+    "Danh mục tích sản cổ phiếu ngân hàng tham khảo nằm trong <a href=\"/bao-cao-2026.html#tichsan\">báo cáo 2026</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị đầu tư."
+   ]
+  ],
+  "faq": [
+   [
+    "Vay các tổ chức tín dụng khác là gì?",
+    "Là khoản ngân hàng vay của ngân hàng hoặc tổ chức tín dụng khác, thường kỳ hạn ngắn, để bù thiếu hụt vốn hoặc thanh khoản. Nằm bên nợ phải trả, trong nhóm \"Tiền gửi và vay các TCTD khác\"."
+   ],
+   [
+    "Ngân hàng vay liên ngân hàng nhiều có xấu không?",
+    "Không hẳn xấu, nhưng nguồn vốn này ngắn hạn và lãi suất biến động. Phụ thuộc nhiều thì chi phí vốn dễ tăng khi thanh khoản hệ thống căng."
+   ],
+   [
+    "Vị thế ròng liên ngân hàng tính thế nào?",
+    "Lấy tiền gửi tại và cho vay các TCTD khác trừ tiền gửi của và vay các TCTD khác. Dương là ngân hàng cho vay ròng, âm là đi vay ròng."
+   ]
+  ],
+  "rel": [
+   "tien-gui-cua-khach-hang-la-gi",
+   "ldr-la-gi",
+   "rui-ro-ky-han-ngan-hang-la-gi",
+   "nim-la-gi",
+   "phat-hanh-giay-to-co-gia-la-gi"
+  ]
  }
 ]
