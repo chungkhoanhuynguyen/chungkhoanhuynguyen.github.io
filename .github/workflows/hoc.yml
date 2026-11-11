@@ -23,6 +23,6 @@ jobs:
       - run: |
           git config user.name "hn-bot"
           git config user.email "hn-bot@users.noreply.github.com"
-          git add -A hoc f0 ma _hoc _video/queue sitemap.xml mo-tai-khoan-chung-khoan.html dinh-gia-co-phieu.html tu-van-dau-tu-chung-khoan.html the-gioi-hang-hoa.html ket-qua-kinh-doanh-quy.html tim.json
+          git add -A index.html hoc f0 ma _hoc _video/queue sitemap.xml mo-tai-khoan-chung-khoan.html dinh-gia-co-phieu.html tu-van-dau-tu-chung-khoan.html the-gioi-hang-hoa.html ket-qua-kinh-doanh-quy.html tim.json
           git diff --cached --quiet || git commit -m "Mo bai hoc $(date -u +%F)"
           for i in 1 2 3 4 5; do git pull --rebase --autostash -X theirs -q && git push && break; git rebase --abort 2>/dev/null; sleep 10; done

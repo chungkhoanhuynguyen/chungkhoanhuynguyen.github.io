@@ -18,9 +18,10 @@ jobs:
           python-version: "3.12"
       - run: pip install -q -U yt-dlp
       - run: python _kiem/do_view.py
+      - run: python _hoc/dien_id.py && python hoc.py
       - run: |
           git config user.name "hn-bot"
           git config user.email "hn-bot@users.noreply.github.com"
-          git add data/view
-          git diff --cached --quiet || git commit -m "Do view $(date -u +%F) [skip ci]"
+          git add data/view _hoc/videos.json hoc index.html sitemap.xml
+          git diff --cached --quiet || git commit -m "Do view + mo bai hoc $(date -u +%F)"
           for i in 1 2 3 4 5; do git pull --rebase --autostash -X theirs -q && git push && break; sleep 5; done

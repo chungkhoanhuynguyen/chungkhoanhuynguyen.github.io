@@ -93,6 +93,9 @@ for v in R:
     fn = f"hoc/{v['slug']}.html"; keep.add(fn)
     open(os.path.join(ROOT, fn), "w", encoding="utf-8").write("\n".join(p))
 
+def anh(v):
+    return f"/img/yt/{v['k']}.jpg" if os.path.exists(os.path.join(ROOT, 'img/yt', v['k'] + '.jpg')) else f"https://i.ytimg.com/vi/{v['id']}/hqdefault.jpg"
+
 # Trang mục lục
 NAME = {"LS": "Lịch sử chứng khoán Việt Nam", "TG": "Lịch sử chứng khoán thế giới", "BF": "Tư duy nhà đầu tư huyền thoại", "KT": "Kiến thức đầu tư nền tảng"}
 url = B + "/hoc/"
@@ -111,7 +114,7 @@ for sn in _SO + sorted({v["series"] for v in R} - set(_SO)):
     L = [v for v in R if (v.get("series") or NAME.get(v["k"][:2])) == sn]
     if not L: continue
     p.append(f"<h2>{e(sn)}</h2><div class=\"grid\">" + "".join(
-        f'<a class="card" href="/hoc/{v["slug"]}.html"><img src="/img/yt/{v["k"]}.jpg" alt="{e(v["h1"])}" width="480" height="270" loading="lazy"><span>{e(v["h1"])}</span></a>' for v in L) + "</div>")
+        f'<a class="card" href="/hoc/{v["slug"]}.html"><img src="{anh(v)}" alt="{e(v["h1"])}" width="480" height="270" loading="lazy"><span>{e(v["h1"])}</span></a>' for v in L) + "</div>")
 p.append(f'<div class="cta"><a class="btn b1" href="{YT}?sub_confirmation=1" rel="noopener">Đăng ký kênh để không lỡ bài mới</a></div></main>' + FOOT)
 open(os.path.join(ROOT, "hoc/index.html"), "w", encoding="utf-8").write("\n".join(p))
 
@@ -262,3 +265,18 @@ U += [(B + "/f0/", today, "weekly", "0.9"), (B + "/f0/tu-dien-thuat-ngu-chung-kh
 open(os.path.join(ROOT, "sitemap.xml"), "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     "".join(f"<url><loc>{u}</loc><lastmod>{d}</lastmod><changefreq>{c}</changefreq><priority>{pr}</priority></url>\n" for u, d, c, pr in U) + "</urlset>\n")
 print("hoc:", len(R), "bai")
+
+
+# Trang chủ: khối "Video mới nhất" tự cập nhật (6 bài mới nhất đã ra mắt), giữa <!--VIDEO_MOI--> ... <!--/VIDEO_MOI-->
+import re as _re
+_ip = os.path.join(ROOT, "index.html"); _s = open(_ip, encoding="utf-8").read()
+if "<!--VIDEO_MOI-->" in _s:
+    _L = sorted(R, key=lambda v: v["d"], reverse=True)[:6]
+    _c = "".join(f'<a class="vm-c" href="/hoc/{v["slug"]}.html"><small>{e(v["series"])} · {dmy(v["d"])}</small><b>{e(_ngan(v["h1"], 90))}</b><span>Xem video + bài viết »</span></a>' for v in _L)
+    _blk = ('<!--VIDEO_MOI--><section id="videomoi"><style>#videomoi .vm-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin-top:14px}'
+            '#videomoi .vm-c{font-family:var(--body,system-ui,sans-serif);text-align:left;display:flex;flex-direction:column;gap:6px;background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:14px;padding:14px 16px;color:var(--fg);text-decoration:none;min-height:44px}'
+            '#videomoi .vm-c small{color:var(--mute);font-size:12.5px}#videomoi .vm-c b{font-size:16px;line-height:1.4}#videomoi .vm-c span{color:var(--gold);font-size:13.5px;font-weight:600}#videomoi .vm-c:hover{border-color:var(--gold)}#videomoi .vm-c *{text-align:left}@media(max-width:560px){#videomoi .vm-c:nth-child(n+5){display:none}}</style>'
+            '<div class="wrap"><h2>Video mới nhất</h2><p class="sub">Mỗi video kèm bài viết, số liệu có nguồn. Tự cập nhật mỗi ngày.</p>'
+            f'<div class="vm-g">{_c}</div><p class="sub" style="margin-top:10px"><a href="/hoc/">Xem toàn bộ thư viện bài học »</a></p></div></section><!--/VIDEO_MOI-->')
+    _s = _re.sub(r"<!--VIDEO_MOI-->.*?<!--/VIDEO_MOI-->", lambda m: _blk, _s, flags=_re.S)
+    open(_ip, "w", encoding="utf-8").write(_s)
