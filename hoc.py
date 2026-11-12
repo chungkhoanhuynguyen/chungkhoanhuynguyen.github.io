@@ -10,6 +10,10 @@ def live(v):
     # chỉ xuất bản khi đã có id YouTube và đã tới ngày ra mắt (video từ hàng chờ có id rỗng)
     return bool(v.get("id")) and bool(v.get("d")) and now >= datetime.datetime.fromisoformat(v["d"] + "T20:00:00")
 R = [v for v in V if live(v)]
+# Nối 2 chiều video ↔ bài F0 (NV2 12/11): _f0/noi_video.json {KEY video: slug bài F0}
+try: _NV = json.load(open(os.path.join(ROOT, "_f0/noi_video.json"), encoding="utf-8"))
+except Exception: _NV = {}
+_F0T = {x["slug"]: x["title"] for x in json.load(open(os.path.join(ROOT, "_f0/bai.json"), encoding="utf-8"))}
 e = lambda s: html.escape(s or "", quote=True)
 def dmy(d): y, m, dd = d.split("-"); return "%s/%s/%s" % (int(dd), int(m), y)
 SER = ["LS", "TG", "BF", "KT"]
@@ -35,7 +39,7 @@ blockquote{margin:18px 0;padding:10px 16px;border-left:4px solid var(--acc);back
 .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;text-decoration:none;color:var(--fg)}.card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}.card span{display:block;padding:10px 12px;font-weight:600;font-size:15px;line-height:1.45}
 footer{text-align:center;color:var(--mute);font-size:13px;padding:24px 16px;border-top:1px solid var(--line)}
 @media(max-width:560px){.pn{grid-template-columns:1fr}.nav a.hide{display:none}.brand{min-width:0;overflow:hidden;text-overflow:ellipsis}.brand{font-size:13px}.nav{gap:10px;font-size:13px}.top .in{gap:8px}}
-.tb{overflow-x:auto;margin:14px 0}.tb table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.5}.tb th,.tb td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:right;white-space:nowrap}.tb th:first-child,.tb td:first-child{text-align:left;white-space:normal}.tb th{color:var(--mute);font-weight:600}"""
+.tb{overflow-x:auto;margin:14px 0}.tb table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.5}.tb th,.tb td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:right;white-space:nowrap}.tb th:first-child,.tb td:first-child{text-align:left;white-space:normal;min-width:7.5em}.nav a{display:inline-flex;align-items:center;min-height:24px}.bc a,.step a{display:inline-block;padding:4px 0}.toc li{padding:3px 0}article ul li a,article ol li a,footer a{display:inline-block;padding:2px 0;min-height:24px}@media(max-width:480px){.tb table{font-size:14px}.tb th,.tb td{padding:7px 8px}}.tb th{color:var(--mute);font-weight:600}"""
 
 def _ngan(t, n=64):
     t = t.strip()
@@ -80,6 +84,7 @@ for v in R:
          f'<h1>{e(v["h1"])}</h1><div class="meta">{e(v["series"])} · {dmy(v["d"])} · Video + bài viết</div>',
          f'<div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/{v["id"]}?rel=0" title="{e(v["h1"])}" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>',
          f'<div class="sum"><b>Tóm tắt:</b> {e(v["sum"])}</div>']
+    if _NV.get(v["k"]) in _F0T: p.append(f'<div class="sum">📖 <b>Bài viết chi tiết cùng chủ đề:</b> <a href="/f0/{_NV[v["k"]]}.html">{e(_F0T[_NV[v["k"]]])}</a></div>')
     if v["intro"]: p.append(f"<p>{e(v['intro'])}</p>")
     for t, s in v["body"]:
         p.append({"h2": "<h2>%s</h2>", "h3": "<h3>%s</h3>", "q": "<blockquote>%s</blockquote>"}.get(t, "<p>%s</p>") % e(s))
@@ -151,6 +156,8 @@ fkeep = set()
 FDATE = "2026-10-30"
 try: YTM = json.load(open(os.path.join(ROOT, "_f0/yt.json"), encoding="utf-8"))
 except Exception: YTM = {}
+for _v in R:
+    if _NV.get(_v["k"]) and not any(y[0] == _v["id"] for y in YTM.get(_NV[_v["k"]], [])): YTM.setdefault(_NV[_v["k"]], []).insert(0, [_v["id"], _v["title"], _v["d"]])
 def ytblk(vs):
     if not vs: return ""
     h = ['<h2>Video giải thích chi tiết</h2>']
