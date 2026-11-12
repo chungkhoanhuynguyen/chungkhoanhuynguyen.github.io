@@ -85,8 +85,32 @@ def tim(q, n=12):
 
 XAU = re.compile(r"efta\d|epstein|nara|evidence|court|crime|police|prison|\.tif|ceremony|Stake_acquisition|signing|wordpress|wordcamp|mascot|plush|logo|sticker|state.bank|bank_of|ngân.hàng|vietcombank|bidv|techcombank|agribank|politician|press.conference|congress|senator|president|minister|portrait|damaged|wreck|accident|protest|nymphaea|water.lily|theat(?:er|re)|kips?(?:\b|_)|laos|war.loan|argentin|azerbaijan|presidential|锤|錘|成功", re.I)   # 12/11 NV1: ảnh lạc đề lọt ở CH1411NO/VT7USD
 
+# 13/11 NV1 (R&D tuần rd_tuan_loc_mat_nguoi_1211): bỏ ảnh có khuôn mặt người thật lạ chiếm > 0,3% diện tích ảnh (ảnh File: chỉ định đích danh không lọc).
+# YuNet (opencv_zoo, MIT, _video/mo_hinh/yunet.onnx); không có cv2/mô hình thì Haar có sẵn trong OpenCV; lỗi thì bỏ qua (không chặn).
+MAT_NGUONG = 0.003; _FD = [None]   # 13/11 thử: ảnh "Old man alone" (ông cụ ghế đá) mặt chỉ 0,33% khung → ngưỡng 1,5% lọt; 0,3% chặn, skyline/chợ Bến Thành 0%
+def ty_le_mat(im):
+    try:
+        import cv2, numpy as np
+    except Exception: return 0.0
+    try:
+        a = np.asarray(im.convert("RGB"))[:, :, ::-1].copy(); h, w = a.shape[:2]; k = 960.0 / max(h, w)
+        if k < 1: a = cv2.resize(a, (int(w * k), int(h * k))); h, w = a.shape[:2]
+        if _FD[0] is None:
+            p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "mo_hinh", "yunet.onnx")
+            try: _FD[0] = ("yn", cv2.FaceDetectorYN.create(p, "", (w, h), 0.8, 0.3, 50)) if os.path.getsize(p) > 100000 else None
+            except Exception: _FD[0] = None
+            if _FD[0] is None: _FD[0] = ("haar", cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml"))
+        loai, d = _FD[0]
+        if loai == "yn":
+            d.setInputSize((w, h)); _, f = d.detect(a); fs = [] if f is None else [(r[2], r[3]) for r in f]
+        else:
+            fs = [(r[2], r[3]) for r in d.detectMultiScale(cv2.cvtColor(a, cv2.COLOR_BGR2GRAY), 1.1, 6, minSize=(max(24, w // 40),) * 2)]
+        return max([float(fw) * float(fh) for fw, fh in fs] or [0.0]) / float(w * h)
+    except Exception as e:
+        print("anh: loc mat loi", e); return 0.0
+
 class Kho:
-    def __init__(s, wd): s.wd = wd; os.makedirs(wd, exist_ok=True); s.cache = {}; s.dung = set(); s.credit = []; s.img = {}
+    def __init__(s, wd): s.wd = wd; os.makedirs(wd, exist_ok=True); s.cache = {}; s.dung = set(); s.credit = []; s.img = {}; s.chan_mat = []
     def _ds(s, q):
         if q not in s.cache:
             r = tim(q)
@@ -114,6 +138,9 @@ class Kho:
                 try:
                     im = Image.open(io.BytesIO(_get(it["u"], 15))); im = (Image.alpha_composite(Image.new("RGBA", im.size, (255, 255, 255, 255)), im.convert("RGBA")) if im.mode in ("RGBA", "LA", "P") else im).convert("RGB")
                 except Exception as e: print("anh: loi tai", e); s.dung.add(it["u"]); continue
+                if not q.startswith("File:"):
+                    tl = ty_le_mat(im)
+                    if tl > MAT_NGUONG: print("anh: bo anh co mat nguoi %.1f%%" % (tl * 100), it["u"]); s.dung.add(it["u"]); s.chan_mat.append("%s (%.1f%%)" % (it["trang"], tl * 100)); continue
                 s.dung.add(it["u"]); s.img[it["u"]] = im; s.credit.append("%s – %s (%s) %s" % (q, it["tg"], it["lic"], it["trang"]))
                 return im
         return None

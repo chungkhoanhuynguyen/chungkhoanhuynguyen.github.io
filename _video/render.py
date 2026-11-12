@@ -483,6 +483,9 @@ open(os.path.join(OUT, key + "_chuong.txt"), "w", encoding="utf-8").write("\n".j
 # 7) TỰ KIỂM CHẤT LƯỢNG (ghi KEY_qc.txt; NV3 không đăng nếu có dòng LỖI)
 qc = list(_QCV)
 try:
+    if getattr(kho, 'chan_mat', None): qc.append('THÔNG TIN lọc mặt người: đã bỏ %d ảnh – %s' % (len(kho.chan_mat), '; '.join(kho.chan_mat)[:300]))
+except Exception: pass
+try:
     fr = "/tmp/qc_%s.png" % key
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", "0.3", "-i", out, "-frames:v", "1", fr])
     br = np.asarray(Image.open(fr).convert("L")).mean()
