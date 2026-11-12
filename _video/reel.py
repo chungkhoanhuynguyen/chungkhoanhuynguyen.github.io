@@ -357,7 +357,7 @@ def main():
         cap + "\n\n📌 Huy Nguyễn Chứng Khoán\n🌐 chungkhoanhuynguyen.com\n💬 Zalo tư vấn: 0365 188 286\n" +
         (" ".join("#" + t.lstrip("#") for t in R.get("tags", [])) + "\n"))
     if kho is not None and getattr(kho, "credit", None):
-        open(os.path.join(OUT, key + "_anh.txt"), "w", encoding="utf-8").write("Ảnh minh hoạ (Wikimedia Commons):\n" + "\n".join(kho.credit) + "\n")
+        open(os.path.join(OUT, key + "_anh.txt"), "w", encoding="utf-8").write("Ảnh minh hoạ (Wikimedia Commons):\n" + "\n".join(kho.credit) + "\n" + ("Đã bỏ %d ảnh có mặt người: %s\n" % (len(kho.chan_mat), "; ".join(kho.chan_mat)) if getattr(kho, "chan_mat", None) else ""))
     print(key, "xong", out, "%.1fs" % b[-1], flush=True)
 
 if __name__ == "__main__":
