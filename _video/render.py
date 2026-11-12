@@ -92,9 +92,35 @@ else:
     import hncodec; v = hncodec.load(os.path.join(HERE, "engine", "giong.bin"))
 VOICE = {"speaker_emb": np.asarray(v["speaker_emb"], dtype=np.float32), "codes": np.asarray(v["codes"], dtype=v.get("codes_dtype", "int64"))}
 tts = Vieneu(); wd = WORK + "/wav"; os.makedirs(wd, exist_ok=True); t0 = time.time()
+# KỂ CHUYỆN (QL1 12/11): đọc TỪNG CÂU thay vì cả đoạn (ngữ điệu không bị đều đều),
+# ngắt nghỉ theo dấu câu, câu ngắn/câu hỏi được dừng lâu hơn + nhấn nhẹ âm lượng để tạo kịch tính.
+import re as _re, wave as _wv
+def _cau(t):
+    t = _re.sub(r"\s+", " ", t.strip())
+    xs = [x.strip() for x in _re.findall(r"[^.!?…]+[.!?…]*", t) if x.strip()]
+    return xs or ["."]
+def _nghi(c):
+    n = len(c.split())
+    if c.endswith("…"): return 0.62
+    if c.endswith("?"): return 0.50
+    if n <= 6: return 0.55          # câu đắt, ngắn: dừng để thấm
+    return 0.30
+def _doc(say, path):
+    sr = tts.sample_rate; out = []; xs = _cau(say)
+    for j, c in enumerate(xs):
+        n = len(c.split()); temp = 0.78 if (n <= 8 or c.endswith("?")) else 0.7
+        a = np.asarray(tts.infer(c, voice=VOICE, temperature=temp), dtype=np.float32).reshape(-1)
+        if n <= 6 or c.endswith("?"): a = a * 1.12               # nhấn nhẹ câu ngắn / câu hỏi
+        out.append(a)
+        if j < len(xs) - 1: out.append(np.zeros(int(sr * _nghi(c)), dtype=np.float32))
+    tts.save(np.clip(np.concatenate(out), -1.0, 1.0), path)
 for i, sc in enumerate(raw):
     say = sc.get("say", "").strip() or "."
-    tts.save(np.asarray(tts.infer(say, voice=VOICE, temperature=0.7), dtype=np.float32), "%s/%02d.wav" % (wd, i))
+    try:
+        _doc(say, "%s/%02d.wav" % (wd, i))
+    except Exception as _e:
+        print("doc tung cau loi, doc ca doan:", _e, flush=True)
+        tts.save(np.asarray(tts.infer(say, voice=VOICE, temperature=0.7), dtype=np.float32), "%s/%02d.wav" % (wd, i))
 print(key, "giong %.0fs" % (time.time() - t0), flush=True)
 
 
