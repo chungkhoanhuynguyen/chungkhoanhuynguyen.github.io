@@ -87,6 +87,10 @@ for v in R:
     if prv or nxt:
         p.append('<nav class="pn">' + (f'<a href="/hoc/{prv["slug"]}.html"><small>← Bài trước</small>{e(prv["h1"])}</a>' if prv else "<span></span>") +
                  (f'<a href="/hoc/{nxt["slug"]}.html"><small>Bài tiếp →</small>{e(nxt["h1"])}</a>' if nxt else "<span></span>") + "</nav>")
+    tv = set(t.lower() for t in v["tags"])
+    rel = sorted([x for x in R if x is not v and x not in (prv, nxt)], key=lambda x: (-len(tv & set(t.lower() for t in x["tags"])), x["d"]))[:5]
+    if rel:
+        p.append('<h2>Xem thêm</h2><ul>' + "".join(f'<li><a href="/hoc/{x["slug"]}.html">{e(x["h1"])}</a></li>' for x in rel) + '<li><a href="/f0/">Cẩm nang chứng khoán cho người mới</a></li><li><a href="/hoc/">Toàn bộ thư viện bài học có video</a></li></ul>')
     if v["src"] or v["img"]:
         p.append('<div class="src">' + (f"<b>Nguồn số liệu:</b> {e(v['src'])}<br>" if v["src"] else "") + (f"<b>Ảnh trong video:</b> {e(v['img'])}" if v["img"] else "") + "</div>")
     p.append("</article></main>" + FOOT)
