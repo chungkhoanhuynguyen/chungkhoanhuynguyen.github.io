@@ -2,7 +2,10 @@
  {
   "key": "MN1211FPT",
   "tieu_de": "Khối ngoại xả 2.525 tỷ FPT trong 30 phiên: đáy hay bẫy?",
-  "hook": ["NGOẠI XẢ 2.525 TỶ FPT", "ĐÁY HAY BẪY?"],
+  "hook": [
+   "NGOẠI XẢ 2.525 TỶ FPT",
+   "ĐÁY HAY BẪY?"
+  ],
   "nhan": "MÃ NÓNG · FPT",
   "short_caption": "Khối ngoại bán ròng FPT hơn 2.500 tỷ đồng trong 30 phiên tới 12/11, trong khi đầu tháng 10 họ còn mua ròng hơn 1.300 tỷ. Giá hôm nay quanh 49.900, thấp hơn khoảng 10% so với giá bán bình quân của họ. Đáy hay bẫy? Bình luận phe của anh chị nhé. Quan điểm cá nhân, không phải khuyến nghị đầu tư. #FPT #chungkhoan #khoingoai #codau",
   "tags": [],
@@ -14,32 +17,95 @@
    "chu_to": "ĐÁY HAY BẪY?",
    "loi": "FPT quanh 50 nghìn: với anh chị là đáy để tích lũy hay bẫy để đứng ngoài? Bình luận phe của mình nhé.",
    "loi_doc": "FPT quanh năm mươi nghìn: với anh chị là đáy để tích lũy hay bẫy để đứng ngoài? Bình luận phe của mình nhé.",
-   "anh": ["ov:stock market trading screen||stock exchange screen"]
+   "anh": [
+    "Ho Chi Minh City skyline night||Saigon night skyline"
+   ]
   },
   "canh": [
    {
     "chu_to": "NGOẠI XẢ 2.525 TỶ",
     "loi": "30 phiên gần nhất, khối ngoại bán ròng FPT hơn 2.500 tỷ đồng. Sáng nay họ bán thêm hơn 150 tỷ, giá lùi về quanh 49.900.",
     "loi_doc": "Ba mươi phiên gần nhất, khối ngoại bán ròng FPT hơn hai nghìn năm trăm tỷ đồng. Sáng nay họ bán thêm hơn một trăm năm mươi tỷ, giá lùi về quanh bốn mươi chín nghìn chín trăm.",
-    "the": {"loai": "lon", "tieu": "KHỐI NGOẠI RÒNG FPT · 30 PHIÊN TỚI 12/11", "nguon": "WiData; Vietstock 12/11/2026", "dong": [["-2.525 TỶ", 84, "do"], ["SÁNG 12/11: BÁN THÊM >150 TỶ", 40, "trang"]]}
+    "the": {
+     "loai": "lon",
+     "tieu": "KHỐI NGOẠI RÒNG FPT",
+     "nguon": "WiData; Vietstock 12/11/2026",
+     "dong": [
+      [
+       "-2.525 TỶ",
+       150,
+       "do"
+      ],
+      [
+       "30 PHIÊN TỚI 12/11",
+       54,
+       "trang"
+      ],
+      [
+       "SÁNG 12/11: BÁN THÊM >150 TỶ",
+       44,
+       "vang"
+      ]
+     ]
+    }
    },
    {
     "chu_to": "ĐẢO CHIỀU TRONG 1 THÁNG",
     "loi": "Đầu tháng 10, tính cùng 30 phiên, khối ngoại còn mua ròng hơn 1.300 tỷ. Chỉ sau một tháng, họ quay sang bán gần gấp đôi.",
     "loi_doc": "Đầu tháng mười, tính cùng ba mươi phiên, khối ngoại còn mua ròng hơn một nghìn ba trăm tỷ. Chỉ sau một tháng, họ quay sang bán gần gấp đôi.",
-    "the": {"loai": "lon", "tieu": "KHỐI NGOẠI RÒNG FPT · 30 PHIÊN", "nguon": "WiData, giao dịch khớp lệnh", "dong": [["TỚI 1/10: +1.335 TỶ", 56, "vang"], ["TỚI 12/11: -2.525 TỶ", 56, "do"]]}
+    "the": {
+     "loai": "cot",
+     "tieu": "KHỐI NGOẠI RÒNG FPT · 30 PHIÊN (TỶ)",
+     "nguon": "WiData, giao dịch khớp lệnh",
+     "hang": [
+      [
+       "Tới 1/10",
+       1335
+      ],
+      [
+       "Tới 12/11",
+       -2525
+      ]
+     ],
+     "noi": [
+      0
+     ],
+     "dv": ""
+    }
    },
    {
     "chu_to": "HỌ BÁN Ở GIÁ NÀO?",
     "loi": "Em lấy tổng tiền bán chia số cổ phiếu: khối ngoại bán ở giá bình quân khoảng 55.200. Giá hôm nay thấp hơn khoảng 10%.",
     "loi_doc": "Em lấy tổng tiền bán chia số cổ phiếu: khối ngoại bán ở giá bình quân khoảng năm mươi lăm nghìn hai trăm. Giá hôm nay thấp hơn khoảng mười phần trăm.",
-    "the": {"loai": "lon", "tieu": "GIÁ BÁN BÌNH QUÂN CỦA KHỐI NGOẠI", "nguon": "Em tự tính: 4.350 tỷ / 78,8 triệu cp (WiData)", "dong": [["~55.200Đ", 80, "vang"], ["HÔM NAY ~49.900Đ", 52, "do"]]}
+    "the": {
+     "loai": "cot",
+     "tieu": "GIÁ FPT (ĐỒNG/CP)",
+     "nguon": "Em tự tính: 4.350 tỷ / 78,8 triệu cp (WiData); giá 12/11 Vietstock",
+     "hang": [
+      [
+       "Ngoại bán bình quân",
+       55200
+      ],
+      [
+       "Hôm nay",
+       49900
+      ]
+     ],
+     "noi": [
+      0
+     ],
+     "dv": "",
+     "max": 62000
+    }
    },
    {
     "chu_to": "BÁN CHƯA CHẮC LÀ XẤU",
     "loi": "Khối ngoại bán có khi chỉ để hạ tỷ trọng, không phải vì doanh nghiệp xấu đi. Nhưng chừng nào họ còn bán dồn dập, giá khó bật mạnh. Mốc em theo dõi là ngày họ ngừng bán ròng.",
     "loi_doc": "Khối ngoại bán có khi chỉ để hạ tỷ trọng, không phải vì doanh nghiệp xấu đi. Nhưng chừng nào họ còn bán dồn dập, giá khó bật mạnh. Mốc em theo dõi là ngày họ ngừng bán ròng.",
-    "anh": ["ov:stock market chart screen||trading desk monitors", "Ho Chi Minh City skyline"],
+    "anh": [
+     "Ho Chi Minh City skyline||Saigon skyline",
+     "Ho Chi Minh City financial district"
+    ],
     "chat": 1
    }
   ]
