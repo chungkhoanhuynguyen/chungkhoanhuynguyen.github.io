@@ -29,6 +29,10 @@ def cot(sp, t):
     im, d = nen(sp, t); rows = sp["hang"]; n = len(rows)
     mxp = max([v for _, v in rows] + [0]); mxn = -min([v for _, v in rows] + [0]); mx = sp.get("max") or (mxp + mxn) * 1.15 or 1
     x0, x1 = 110, W - 110; bw = (x1 - x0) / n; top = 200; bot = H - 150; hl = set(sp.get("noi", []))
+    # 13/11 NV1: giữ đúng số chữ số thập phân của số liệu gốc (RV1311GDP V1: 9,95 hiện "9,9%", 9,85 hiện "9,8%" – lệch lời đọc)
+    def _nd(v):
+        if sp.get("nd") is not None: return sp["nd"]
+        return 0 if abs(v) >= 100 else min(2, max(1, len(("%r" % float(v)).split(".")[1].rstrip("0"))))
     yb = top + (bot - top) * (mxp * 1.08 / ((mxp + mxn) * 1.08 or 1)) if mxn else bot   # trục 0 (có số âm thì trục nâng lên)
     for i, (lab, v) in enumerate(rows):
         a = ease((t - 0.3 - i * 0.35) / 0.9)
@@ -38,7 +42,7 @@ def cot(sp, t):
             y_a, y_b = (yb - max(h, 4), yb) if v >= 0 else (yb, yb - h)
             d.rounded_rectangle([cx - bw * 0.32, y_a, cx + bw * 0.32, max(y_b, y_a + 4)], 14, fill=c)
         d.text((cx, (yb + 16) if v >= 0 else (yb - 56)), lab, font=F("Bold", 32), fill=MO, anchor="ma")
-        if a > 0.05: d.text((cx, (yb - h - 62) if v >= 0 else (yb - h + 14)), so(v * a, sp.get("dv", "")), font=F("Black", 46), fill=MAU["trang"], anchor="ma")
+        if a > 0.05: d.text((cx, (yb - h - 62) if v >= 0 else (yb - h + 14)), so(v * a, sp.get("dv", ""), _nd(v)), font=F("Black", 46), fill=MAU["trang"], anchor="ma")
     return im
 
 def thang(sp, t):
@@ -57,8 +61,13 @@ def thang(sp, t):
     return im
 
 def lon(sp, t):
-    im, d = nen(sp, t); y = 220
-    for i, (s, sz, c) in enumerate(sp["dong"]):
+    # 13/11 NV1: canh giữa theo chiều dọc + tự co chữ khi tràn ngang (RV1311GDP V1: chữ dồn mép trên, nửa dưới thẻ trống)
+    im, d = nen(sp, t); dong = []
+    for s, sz, c in sp["dong"]:
+        while sz > 30 and d.textlength(s, font=F("Black", sz)) > W - 90: sz -= 4
+        dong.append((s, sz, c))
+    tong = sum(int(sz * 1.35) for _, sz, _ in dong); y = max(200, int(200 + (H - 150 - 200 - tong) / 2))
+    for i, (s, sz, c) in enumerate(dong):
         a = ease((t - 0.3 - i * 0.55) / 0.5)
         if a > 0:
             col = tuple(int(x * a + 24 * (1 - a)) for x in MAU.get(c, MAU["trang"]))
