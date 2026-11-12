@@ -197,7 +197,7 @@ def snap(k):
         if not f: continue
         n_pb = sum(1 for v in PB[s][max(0, k - 1250):k] if v)
         x = tb5(s, CAL[k])
-        if x and n_pb >= 480: out.append((math.log(f["mn"]), dict(x, lroe=math.log(max(0.03, x["roe"]))), s))
+        if x and n_pb >= (480 if PBS == "vnd" else 300): out.append((math.log(f["mn"]), dict(x, lroe=math.log(max(0.03, x["roe"]))), s))
     return out
 DEC = [k for i_, k in enumerate(ME) if CAL[k][5:7] == "12" and CAL[k] >= "2019-12-01" and (i_ + 1 == len(ME) or CAL[ME[i_ + 1]][5:7] != "12")]
 MODEL = {}
@@ -228,7 +228,7 @@ def snap_med(k):
         f = F[k][s]
         if not f: continue
         x = tb5(s, CAL[k])
-        if x and sum(1 for v in PB[s][max(0, k - 1250):k] if v) >= 480: out.append((math.log(f["med"]), dict(lroe=math.log(max(0.03, x["roe"]))), s))
+        if x and sum(1 for v in PB[s][max(0, k - 1250):k] if v) >= (480 if PBS == "vnd" else 300): out.append((math.log(f["med"]), dict(lroe=math.log(max(0.03, x["roe"]))), s))
     return out
 MM = {}
 for k in ME + [N - 1]:
