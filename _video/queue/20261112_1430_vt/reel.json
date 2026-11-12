@@ -1,0 +1,546 @@
+[
+ {
+  "key": "VTTC1211",
+  "tieu_de": "NHNN mua USD giá 25.500: vì sao mua đô lại là bơm tiền?",
+  "hook": [
+   "NHNN MUA ĐÔ LA",
+   "SAO LẠI LÀ BƠM TIỀN?"
+  ],
+  "nhan": "HỎI NGÂY THƠ · VĨ MÔ",
+  "short_caption": "Từ 11/11, Ngân hàng Nhà nước mua USD giá 25.500 vào thứ Hai và thứ Tư. Mua đô mà lại gọi là bơm tiền? Em giải thích bằng số thật, kèm 1 mẹo theo dõi mỗi tuần. #NHNN #tygia #chungkhoan Quan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [],
+  "toc": 1.12,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "TIỀN RẺ CHẢY VỀ ĐÂU?",
+   "loi": "Nếu tiền rẻ thật sự về, anh chị nghĩ nó chảy vào chứng khoán, nhà đất hay vàng trước? Bình luận nhé.",
+   "loi_doc": "Nếu tiền rẻ thật sự về, anh chị nghĩ nó chảy vào chứng khoán, nhà đất hay vàng trước? Bình luận nhé.",
+   "anh": [
+    "Ho Chi Minh City skyline night||Saigon night skyline"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "MUA ĐÔ = BƠM TIỀN?",
+    "loi": "Từ 11/11, Ngân hàng Nhà nước mua đô la vào thứ Hai và thứ Tư, giá 25.500 đồng. Nghe như mua ngoại tệ, sao báo chí lại gọi là bơm tiền?",
+    "loi_doc": "Từ ngày mười một tháng mười một, Ngân hàng Nhà nước mua đô la vào thứ Hai và thứ Tư, giá hai mươi lăm nghìn năm trăm đồng. Nghe như mua ngoại tệ, sao báo chí lại gọi là bơm tiền?",
+    "the": {
+     "loai": "lon",
+     "tieu": "NHNN MUA USD GIAO NGAY",
+     "nguon": "NHNN; CafeF 11/11/2026",
+     "dong": [
+      [
+       "25.500Đ/USD",
+       120,
+       "vang"
+      ],
+      [
+       "THỨ HAI + THỨ TƯ, TỪ 11/11",
+       44,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "TRẢ BẰNG TIỀN ĐỒNG MỚI",
+    "loi": "Mua 1 đô, Nhà nước trả cho ngân hàng 25.500 đồng. Số tiền đồng đó đi vào hệ thống, ngân hàng có thêm vốn cho vay. Và khoản này không phải trả lại như kênh OMO.",
+    "loi_doc": "Mua một đô, Nhà nước trả cho ngân hàng hai mươi lăm nghìn năm trăm đồng. Số tiền đồng đó đi vào hệ thống, ngân hàng có thêm vốn cho vay. Và khoản này không phải trả lại như kênh ô em ô.",
+    "anh": [
+     "ov:vietnamese dong banknotes||Vietnamese dong",
+     "State Bank of Vietnam"
+    ],
+    "chat": 1
+   },
+   {
+    "chu_to": "CÓ THỂ TỚI 255 NGHÌN TỶ",
+    "loi": "Chứng khoán An Bình ước tính đến hết tháng 3/2027, Nhà nước có thể mua 2 đến 10 tỷ đô, tương đương 51 nghìn đến 255 nghìn tỷ đồng. Đây là dự báo, không phải cam kết.",
+    "loi_doc": "Chứng khoán An Bình ước tính đến hết tháng ba năm hai nghìn không trăm hai mươi bảy, Nhà nước có thể mua hai đến mười tỷ đô, tương đương năm mươi mốt nghìn đến hai trăm năm mươi lăm nghìn tỷ đồng. Đây là dự báo, không phải cam kết.",
+    "the": {
+     "loai": "cot",
+     "tieu": "ƯỚC TÍNH ABS ĐẾN 31/3/2027 (NGHÌN TỶ)",
+     "nguon": "ABS, Người Quan Sát 11/2026",
+     "hang": [
+      [
+       "2 tỷ USD",
+       51
+      ],
+      [
+       "6 tỷ USD",
+       153
+      ],
+      [
+       "10 tỷ USD",
+       255
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": ""
+    }
+   },
+   {
+    "chu_to": "SAO CHƯA THẤY TIỀN?",
+    "loi": "Vì giá đô liên ngân hàng đang khoảng 25.547, cao hơn giá Nhà nước mua. Ngân hàng bán ra ngoài còn lời hơn. Chỉ khi đô về quanh 25.500, kênh này mới thật sự chạy.",
+    "loi_doc": "Vì giá đô liên ngân hàng đang khoảng hai mươi lăm nghìn năm trăm bốn mươi bảy, cao hơn giá Nhà nước mua. Ngân hàng bán ra ngoài còn lời hơn. Chỉ khi đô về quanh hai mươi lăm nghìn năm trăm, kênh này mới thật sự chạy.",
+    "the": {
+     "loai": "lon",
+     "tieu": "GIÁ USD (ĐỒNG)",
+     "nguon": "Báo chí tổng hợp 10–11/11/2026",
+     "dong": [
+      [
+       "LIÊN NH ~25.547",
+       76,
+       "trang"
+      ],
+      [
+       "NHNN MUA 25.500",
+       76,
+       "vang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "MẸO: XEM 2 CON SỐ",
+    "loi": "Mẹo cho anh chị: mỗi tuần nhìn hai con số, giá đô liên ngân hàng và lượng đô Nhà nước mua được. Đô về 25.500 mà Nhà nước mua nhiều, tiền rẻ đang tới.",
+    "loi_doc": "Mẹo cho anh chị: mỗi tuần nhìn hai con số, giá đô liên ngân hàng và lượng đô Nhà nước mua được. Đô về hai mươi lăm nghìn năm trăm mà Nhà nước mua nhiều, tiền rẻ đang tới.",
+    "anh": [
+     "ov:stock market trading screen||trading desk monitors"
+    ],
+    "chat": 1
+   }
+  ]
+ },
+ {
+  "key": "VTTT1211",
+  "tieu_de": "KLB lãi tăng 32% mà giá gần đáy 1 năm: bị bỏ quên hay có lý do?",
+  "hook": [
+   "KLB LÃI +32%",
+   "SAO GIÁ NẰM ĐÁY?"
+  ],
+  "nhan": "MÃ NÓNG · KLB",
+  "short_caption": "Kiên Long Bank lãi 4 quý gần nhất tăng 32%, ROE gần 23%, nhưng giá chỉ quanh 10.300, thấp hơn đỉnh 1 năm khoảng 27%. Bị bỏ quên hay có lý do? #KLB #nganhang #chungkhoan Quan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [],
+  "toc": 1.12,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "BỊ BỎ QUÊN?",
+   "loi": "KLB lãi tăng mà giá nằm đáy: bị thị trường bỏ quên, hay có lý do chưa thấy? Bình luận phe của mình nhé.",
+   "loi_doc": "KLB lãi tăng mà giá nằm đáy: bị thị trường bỏ quên, hay có lý do chưa thấy? Bình luận phe của mình nhé.",
+   "anh": [
+    "Ho Chi Minh City skyline||Saigon skyline"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "LÃI TĂNG 32%",
+    "loi": "Kiên Long Bank, mã KLB, lãi bốn quý gần nhất tăng 32% so với cùng kỳ. ROE gần 23%, cao nhất trong bốn ngân hàng nhỏ em so: SHB, NAB, VAB và KLB.",
+    "loi_doc": "Kiên Long Bank, mã KLB, lãi bốn quý gần nhất tăng ba mươi hai phần trăm so với cùng kỳ. ROE gần hai mươi ba phần trăm, cao nhất trong bốn ngân hàng nhỏ em so: SHB, NAB, VAB và KLB.",
+    "the": {
+     "loai": "lon",
+     "tieu": "KLB · LÃI 4 QUÝ GẦN NHẤT",
+     "nguon": "WiData, BCTC quý 3/2026",
+     "dong": [
+      [
+       "+32%",
+       150,
+       "vang"
+      ],
+      [
+       "ROE ~22,9%",
+       56,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "GIÁ GẦN ĐÁY 1 NĂM",
+    "loi": "Nhưng giá chỉ khoảng 10.300, thấp hơn đỉnh một năm 14.020 khoảng 27%, nằm sát vùng thấp nhất của năm.",
+    "loi_doc": "Nhưng giá chỉ khoảng mười nghìn ba trăm, thấp hơn đỉnh một năm mười bốn nghìn không trăm hai mươi khoảng hai mươi bảy phần trăm, nằm sát vùng thấp nhất của năm.",
+    "the": {
+     "loai": "cot",
+     "tieu": "GIÁ KLB (ĐỒNG/CP)",
+     "nguon": "WiData, giá đến 11/11/2026",
+     "hang": [
+      [
+       "Đỉnh 1 năm",
+       14020
+      ],
+      [
+       "11/11",
+       10300
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 16000
+    }
+   },
+   {
+    "chu_to": "RẺ HƠN LỊCH SỬ",
+    "loi": "P/B khoảng 0,86 lần, dưới mức trung vị 5 năm là 0,97 lần.",
+    "loi_doc": "P B khoảng không phẩy tám mươi sáu lần, dưới mức trung vị năm năm là không phẩy chín mươi bảy lần.",
+    "the": {
+     "loai": "lon",
+     "tieu": "ĐỊNH GIÁ KLB",
+     "nguon": "WiData, P/B theo ngày 2021–2026",
+     "dong": [
+      [
+       "P/B 0,86",
+       120,
+       "vang"
+      ],
+      [
+       "TRUNG VỊ 5 NĂM 0,97",
+       50,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "VẬY VƯỚNG Ở ĐÂU?",
+    "loi": "Điểm trừ: vốn hóa chỉ khoảng 8.800 tỷ, mỗi phiên giao dịch vài tỷ đồng nên ít tiền lớn để ý. Nợ xấu khoảng 2%, chi phí vận hành cũng cao hơn nhiều ngân hàng khác.",
+    "loi_doc": "Điểm trừ: vốn hóa chỉ khoảng tám nghìn tám trăm tỷ, mỗi phiên giao dịch vài tỷ đồng nên ít tiền lớn để ý. Nợ xấu khoảng hai phần trăm, chi phí vận hành cũng cao hơn nhiều ngân hàng khác.",
+    "the": {
+     "loai": "lon",
+     "tieu": "ĐIỂM CẦN SOI",
+     "nguon": "WiData, quý 3/2026",
+     "dong": [
+      [
+       "NỢ XẤU ~2,0%",
+       76,
+       "do"
+      ],
+      [
+       "THANH KHOẢN THẤP",
+       60,
+       "trang"
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "key": "VTST1211",
+  "tieu_de": "7 phiên tăng trần rồi mất 36%: bài học đuổi cổ phiếu tin đồn",
+  "hook": [
+   "7 PHIÊN TÍM TRẦN",
+   "RỒI MẤT 36% – AI GÁNH?"
+  ],
+  "nhan": "CHUYỆN THỊ TRƯỜNG",
+  "short_caption": "Một mã HNX từ 3.300 lên 10.500 đồng, có lúc tăng trần 7 phiên liền. Đúng đỉnh, cổ đông lớn bán ra. Giờ còn 6.700 và lãi 4 quý vẫn âm. Anh chị từng đuổi mã tăng trần chưa? #SHN #chungkhoan #baihoc Quan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [],
+  "toc": 1.12,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "ANH CHỊ TỪNG ĐUỔI?",
+   "loi": "Anh chị đã từng đuổi một mã tăng trần chưa, kết quả ra sao? Kể em nghe nhé.",
+   "loi_doc": "Anh chị đã từng đuổi một mã tăng trần chưa, kết quả ra sao? Kể em nghe nhé.",
+   "anh": [
+    "Ho Chi Minh City skyline night||Saigon night skyline"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "3.300 → 10.500",
+    "loi": "Mã SHN trên sàn HNX, từ khoảng 3.300 đồng tháng 6 lên 10.500 đồng ngày 21/7, có lúc tăng trần 7 phiên liền nhờ tin liên quan một tập đoàn lớn.",
+    "loi_doc": "Mã SHN trên sàn HNX, từ khoảng ba nghìn ba trăm đồng tháng sáu lên mười nghìn năm trăm đồng ngày hai mươi mốt tháng bảy, có lúc tăng trần bảy phiên liền nhờ tin liên quan một tập đoàn lớn.",
+    "the": {
+     "loai": "cot",
+     "tieu": "GIÁ SHN (ĐỒNG/CP)",
+     "nguon": "WiData, giá năm 2026",
+     "hang": [
+      [
+       "Tháng 6",
+       3300
+      ],
+      [
+       "21/7",
+       10500
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 12000
+    }
+   },
+   {
+    "chu_to": "AI BÁN Ở ĐỈNH?",
+    "loi": "Đúng đỉnh, ngày 21/7, một công ty chứng khoán là cổ đông lớn báo đã bán hơn 6 triệu cổ phiếu và không còn là cổ đông lớn.",
+    "loi_doc": "Đúng đỉnh, ngày hai mươi mốt tháng bảy, một công ty chứng khoán là cổ đông lớn báo đã bán hơn sáu triệu cổ phiếu và không còn là cổ đông lớn.",
+    "the": {
+     "loai": "lon",
+     "tieu": "CÔNG BỐ THÔNG TIN 21/7/2026",
+     "nguon": "HNX; Tin nhanh Chứng khoán 21/7/2026",
+     "dong": [
+      [
+       "BÁN >6 TRIỆU CP",
+       90,
+       "do"
+      ],
+      [
+       "NGAY VÙNG ĐỈNH",
+       56,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "GIỜ CÒN 6.700",
+    "loi": "Đến 11/11, giá còn 6.700, mất khoảng 36% từ đỉnh. Lãi bốn quý gần nhất là âm khoảng 3 tỷ đồng, và từ quý 4 mã này bị cắt margin.",
+    "loi_doc": "Đến ngày mười một tháng mười một, giá còn sáu nghìn bảy trăm, mất khoảng ba mươi sáu phần trăm từ đỉnh. Lãi bốn quý gần nhất là âm khoảng ba tỷ đồng, và từ quý bốn mã này bị cắt margin.",
+    "the": {
+     "loai": "cot",
+     "tieu": "GIÁ SHN (ĐỒNG/CP)",
+     "nguon": "WiData; HNX danh sách cắt margin quý 4/2026",
+     "hang": [
+      [
+       "Đỉnh 21/7",
+       10500
+      ],
+      [
+       "11/11",
+       6700
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 12000
+    }
+   },
+   {
+    "chu_to": "MẸO: HỎI 1 CÂU",
+    "loi": "Mẹo trước khi đuổi một mã tăng trần: hỏi xem lợi nhuận có tăng theo không. Giá gấp ba mà lãi không tăng, người mua sau thường là người gánh.",
+    "loi_doc": "Mẹo trước khi đuổi một mã tăng trần: hỏi xem lợi nhuận có tăng theo không. Giá gấp ba mà lãi không tăng, người mua sau thường là người gánh.",
+    "anh": [
+     "ov:stock market chart screen||trading desk monitors"
+    ],
+    "chat": 1
+   }
+  ]
+ },
+ {
+  "key": "VTHS1211",
+  "tieu_de": "SHB lãi tăng 15% mà giá giảm 35%: đáy hay bẫy?",
+  "hook": [
+   "SHB LÃI +15%",
+   "GIÁ -35%: ĐÁY HAY BẪY?"
+  ],
+  "nhan": "MÃ NÓNG · SHB",
+  "short_caption": "SHB từ đỉnh 17.100 về khoảng 11.150, giảm 35%, trong khi lãi 4 quý gần nhất vẫn tăng khoảng 15%. P/B 0,81 dưới trung vị 5 năm. Đáy hay bẫy? Bình luận phe của anh chị nhé. #SHB #nganhang #chungkhoan Quan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [],
+  "toc": 1.12,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "ĐÁY HAY BẪY?",
+   "loi": "SHB quanh 11 nghìn: đáy để tích sản hay bẫy để chờ? Bình luận phe của mình nhé.",
+   "loi_doc": "SHB quanh mười một nghìn: đáy để tích sản hay bẫy để chờ? Bình luận phe của mình nhé.",
+   "anh": [
+    "Ho Chi Minh City skyline||Saigon skyline"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "GIẢM 35% TỪ ĐỈNH",
+    "loi": "SHB từ đỉnh một năm 17.100 đồng, nay còn khoảng 11.150, giảm 35%.",
+    "loi_doc": "SHB từ đỉnh một năm mười bảy nghìn một trăm đồng, nay còn khoảng mười một nghìn một trăm năm mươi, giảm ba mươi lăm phần trăm.",
+    "the": {
+     "loai": "cot",
+     "tieu": "GIÁ SHB (ĐỒNG/CP)",
+     "nguon": "WiData, giá đến 11/11/2026",
+     "hang": [
+      [
+       "Đỉnh 1 năm",
+       17100
+      ],
+      [
+       "11/11",
+       11150
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 19000
+    }
+   },
+   {
+    "chu_to": "MÀ LÃI VẪN TĂNG",
+    "loi": "Trong khi đó, lãi bốn quý gần nhất vẫn tăng khoảng 15%, ROE gần 19%.",
+    "loi_doc": "Trong khi đó, lãi bốn quý gần nhất vẫn tăng khoảng mười lăm phần trăm, ROE gần mười chín phần trăm.",
+    "the": {
+     "loai": "lon",
+     "tieu": "SHB · LÃI 4 QUÝ GẦN NHẤT",
+     "nguon": "WiData, BCTC quý 3/2026",
+     "dong": [
+      [
+       "+15%",
+       150,
+       "vang"
+      ],
+      [
+       "ROE ~18,8%",
+       56,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "RẺ HƠN LỊCH SỬ",
+    "loi": "P/B khoảng 0,81 lần, dưới mức trung vị 5 năm 0,87 lần, rẻ hơn khoảng 70% số phiên trong 5 năm.",
+    "loi_doc": "P B khoảng không phẩy tám mươi mốt lần, dưới mức trung vị năm năm không phẩy tám mươi bảy lần, rẻ hơn khoảng bảy mươi phần trăm số phiên trong năm năm.",
+    "the": {
+     "loai": "lon",
+     "tieu": "ĐỊNH GIÁ SHB",
+     "nguon": "WiData, P/B theo ngày 2021–2026",
+     "dong": [
+      [
+       "P/B 0,81",
+       120,
+       "vang"
+      ],
+      [
+       "TRUNG VỊ 5 NĂM 0,87",
+       50,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "ĐIỂM CẦN SOI",
+    "loi": "Điểm cần soi: nợ xấu khoảng 2,2%, cao nhất trong nhóm em so, và tự doanh các công ty chứng khoán vừa bán ròng SHB những phiên gần đây.",
+    "loi_doc": "Điểm cần soi: nợ xấu khoảng hai phẩy hai phần trăm, cao nhất trong nhóm em so, và tự doanh các công ty chứng khoán vừa bán ròng SHB những phiên gần đây.",
+    "the": {
+     "loai": "lon",
+     "tieu": "RỦI RO",
+     "nguon": "WiData quý 3/2026; báo chí 11/11/2026",
+     "dong": [
+      [
+       "NỢ XẤU ~2,2%",
+       76,
+       "do"
+      ],
+      [
+       "TỰ DOANH ĐANG BÁN",
+       60,
+       "trang"
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "key": "VTF01211",
+  "tieu_de": "Cổ phiếu 6 nghìn có rẻ hơn cổ phiếu 12 nghìn không?",
+  "hook": [
+   "CỔ PHIẾU 6 NGHÌN",
+   "CÓ RẺ HƠN 12 NGHÌN?"
+  ],
+  "nhan": "HỎI NGÂY THƠ · F0",
+  "short_caption": "Nhiều bạn mới nghĩ cổ phiếu giá thấp là rẻ. Em so 2 mã thật: một mã 6.700 đồng đang lỗ, một mã 12.800 đồng lãi gần 20 đồng trên mỗi 100 đồng vốn. Kèm mẹo nhìn P/E và ROE. #F0 #chungkhoan #hocchungkhoan Quan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [],
+  "toc": 1.12,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "TỪNG MUA VÌ GIÁ THẤP?",
+   "loi": "Anh chị đã từng mua một mã chỉ vì giá thấp chưa? Bình luận nhé, em giải đáp từng bạn.",
+   "loi_doc": "Anh chị đã từng mua một mã chỉ vì giá thấp chưa? Bình luận nhé, em giải đáp từng bạn.",
+   "anh": [
+    "Ho Chi Minh City skyline||Saigon skyline"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "GIÁ THẤP = RẺ?",
+    "loi": "Nhiều bạn mới nghĩ cổ phiếu 6 nghìn rẻ hơn cổ phiếu 12 nghìn. Em lấy hai mã thật để so.",
+    "loi_doc": "Nhiều bạn mới nghĩ cổ phiếu sáu nghìn rẻ hơn cổ phiếu mười hai nghìn. Em lấy hai mã thật để so.",
+    "anh": [
+     "ov:smartphone stock app||person looking at smartphone"
+    ],
+    "chat": 1
+   },
+   {
+    "chu_to": "6.700 VÀ 12.800",
+    "loi": "SHN giá 6.700 đồng. NAB, Ngân hàng Nam Á, giá 12.800 đồng, gần gấp đôi.",
+    "loi_doc": "SHN giá sáu nghìn bảy trăm đồng. NAB, Ngân hàng Nam Á, giá mười hai nghìn tám trăm đồng, gần gấp đôi.",
+    "the": {
+     "loai": "cot",
+     "tieu": "GIÁ CỔ PHIẾU 11/11 (ĐỒNG)",
+     "nguon": "WiData, giá đóng cửa 11/11/2026",
+     "hang": [
+      [
+       "SHN",
+       6700
+      ],
+      [
+       "NAB",
+       12800
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 15000
+    }
+   },
+   {
+    "chu_to": "MÃ RẺ ĐANG LỖ",
+    "loi": "Nhưng bốn quý gần nhất, SHN lỗ khoảng 3 tỷ đồng. NAB làm ra gần 20 đồng lãi trên mỗi 100 đồng vốn mỗi năm.",
+    "loi_doc": "Nhưng bốn quý gần nhất, SHN lỗ khoảng ba tỷ đồng. NAB làm ra gần hai mươi đồng lãi trên mỗi một trăm đồng vốn mỗi năm.",
+    "the": {
+     "loai": "lon",
+     "tieu": "LÃI 4 QUÝ GẦN NHẤT",
+     "nguon": "WiData, BCTC quý 3/2026",
+     "dong": [
+      [
+       "SHN: LỖ ~3 TỶ",
+       76,
+       "do"
+      ],
+      [
+       "NAB: ROE ~19,6%",
+       76,
+       "vang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "MẸO: NHÌN P/E, ROE",
+    "loi": "Mẹo: giá một cổ phiếu chỉ là con số chia nhỏ. Muốn biết rẻ hay đắt, hãy nhìn giá so với lãi, tức P/E, và lãi trên vốn, tức ROE.",
+    "loi_doc": "Mẹo: giá một cổ phiếu chỉ là con số chia nhỏ. Muốn biết rẻ hay đắt, hãy nhìn giá so với lãi, tức P E, và lãi trên vốn, tức ROE.",
+    "anh": [
+     "ov:financial report reading||notebook calculator"
+    ],
+    "chat": 1
+   }
+  ]
+ }
+]
