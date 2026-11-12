@@ -27,7 +27,7 @@ CW = os.environ.get('CW', '/tmp/cw')
 LO = CW + '/_video/queue/20261112_0815_nong'
 KEY = 'NONG1211A'; CC = (WHITE, GOLD); CR = (WHITE, RED)
 R_, V_, X_, G_ = (239, 68, 68), (255, 196, 0), (56, 189, 248), (34, 197, 94)
-USD = 'ov:us dollar banknotes||us dollar'
+USD = 'us dollar||US hundred dollar bill'  # v2: 'ov:us dollar banknotes' ra biểu đồ rúp Nga/DXY (Wikideas1) – bỏ
 SAN = 'Ho Chi Minh City Stock Exchange||Bitexco Financial Tower'
 NHOM = 'Hội chứng sĩ'
 S = [
@@ -89,7 +89,7 @@ S = [
       say=("Nhóm thứ hai là ngân hàng. Lãi suất qua đêm liên ngân hàng đã tăng từ ba phẩy bảy phần trăm ngày ba tháng mười một lên bốn phẩy sáu phần trăm ngày chín tháng mười một. Có thêm tiền không kỳ hạn, An Bình cho rằng lãi suất qua đêm có thể về vùng ba đến bốn phần trăm. "
            "Người đi vay có cơ hội được hưởng lãi thấp hơn. Còn người gửi tiết kiệm thì khó vui: đầu tháng mười một, phần lớn ngân hàng đã đưa lãi mười hai tháng xuống dưới bảy phần trăm, nhiều nơi giảm khoảng nửa điểm phần trăm.")),
  # ---------------- CHƯƠNG 4 ----------------
- dict(k='bignum', ch='Chương 4 – Nửa còn lại: lạm phát', anh='ov:supermarket shopping cart||grocery store', cap=('LẠM PHÁT THÁNG 10', 'ĐÃ VƯỢT MỤC TIÊU'), cols=CR, moc=True, value=5.09, fmt='{:,.2f}', unit='%', top='CPI THÁNG 10/2026 SO VỚI CÙNG KỲ', sub='Mục tiêu khoảng 4,5%', col=RED,
+ dict(k='bignum', ch='Chương 4 – Nửa còn lại: lạm phát', anh='Ben Thanh Market||Ho Chi Minh City skyline', cap=('LẠM PHÁT THÁNG 10', 'ĐÃ VƯỢT MỤC TIÊU'), cols=CR, moc=True, value=5.09, fmt='{:,.2f}', unit='%', top='CPI THÁNG 10/2026 SO VỚI CÙNG KỲ', sub='Mục tiêu khoảng 4,5%', col=RED,
       say=("Và đây là nửa còn lại mà anh Khoa chưa nghĩ tới. Tháng mười vừa rồi, chỉ số giá tiêu dùng tăng năm phẩy không chín phần trăm so với cùng kỳ, cao hơn mục tiêu khoảng bốn phẩy năm phần trăm. "
            "Tiền đưa ra nhiều hơn trong lúc giá cả đang lên là con dao hai lưỡi. Chính An Bình cảnh báo: lạm phát có thể buộc Ngân hàng Nhà nước phải hút bớt tiền về, làm giảm tác dụng của đợt bơm này.")),
  dict(k='call', cap=('"TIỀN BƠM RA', 'CŨNG CÓ THỂ BỊ HÚT VỀ"'), cols=CR, call=dict(ten='Anh Tùng', phu='Làm nguồn vốn ngân hàng', mau=X_, loi=[
@@ -99,7 +99,7 @@ S = [
  # ---------------- CHƯƠNG 5 ----------------
  dict(k='bars', ch='Chương 5 – Lịch sử từng lặp lại', anh=SAN, cap=('13 LẦN NHNN MUA ĐÔ LA', 'VN-INDEX 1 THÁNG SAU'), cols=CC, moc=True,
       bars=[('Sau khi mua USD', 4.35, GREEN, '+4,35%'), ('Tháng bình thường', 0.7, GOLD, '+0,7%')],
-      say=("Nhưng lịch sử thì sao? An Bình thống kê mười ba lần Ngân hàng Nhà nước mua đô la từ năm 2016 đến 2023. Một tháng sau, VN-Index tăng điểm mười một trên mười ba lần, bình quân tăng bốn phẩy ba lăm phần trăm. "
+      say=("Nhưng lịch sử thì sao? An Bình thống kê mười ba lần Ngân hàng Nhà nước mua đô la từ năm 2016 đến năm 2023. Một tháng sau, VN-Index tăng điểm mười một trên mười ba lần, bình quân tăng bốn phẩy ba lăm phần trăm. "
            "Trong khi đó, một tháng bình thường cả giai đoạn chỉ tăng khoảng không phẩy bảy phần trăm. Nghe rất hấp dẫn, và đó chính là lúc cần đọc tiếp dòng chữ nhỏ.")),
  dict(k='giay', cap=('DÒNG CHỮ NHỎ', 'TRONG CÙNG BÁO CÁO'), cols=CR, moc=True, giay=dict(tieu_de='GHI CHÚ CỦA BÁO CÁO', so='Chứng khoán An Bình, 10/11/2026', dau='LƯU Ý', dieu=[
         ('11/13 lần tăng chỉ là tương quan, chưa phải nhân quả.', 'TƯƠNG QUAN'),
@@ -117,7 +117,7 @@ S = [
  dict(k='checklist', anh=SAN, cap=('3 CÂU HỎI', 'KHI NGHE "NHÀ NƯỚC BƠM TIỀN"'), cols=CC, moc=True,
       items=[('Tiền phải trả lại hay ở lại?', GREEN), ('Con số là cam kết hay dự báo?', GREEN), ('Lạm phát có buộc hút tiền về?', GOLD)],
       say=("Nên lần sau nghe tin Nhà nước bơm tiền, em gợi ý anh chị hỏi ba câu. Một, tiền đó phải trả lại sau vài tháng, hay ở lại hệ thống? Hai, con số đang được chia sẻ là cam kết của cơ quan quản lý, hay chỉ là dự báo của một tổ chức? "
-           "Ba, lạm phát đang ở đâu, có buộc Ngân hàng Nhà nước hút tiền về không? Ba câu này giúp anh chị phân biệt tin chính sách với lời hô hào trong nhóm.")),
+           "Ba, lạm phát đang ở đâu, có buộc Ngân hàng Nhà nước hút tiền về không?")),
  dict(k='text', cap=('THEO DÕI THỨ HAI, THỨ TƯ', 'XEM MUA ĐƯỢC BAO NHIÊU'), cols=CC, anh=USD,
       say=("Điều đáng theo dõi tiếp theo rất cụ thể: khối lượng đô la Ngân hàng Nhà nước mua được ở các phiên thứ Hai và thứ Tư. Tỷ giá có giữ quanh hai mươi lăm nghìn năm trăm hay không. Và chỉ số giá tháng mười một. "
            "Muốn xem lợi nhuận, chi phí vốn của các ngân hàng và công ty chứng khoán qua từng quý, anh chị có thể tra miễn phí trên chứng khoán Huy Nguyễn chấm com.")),
