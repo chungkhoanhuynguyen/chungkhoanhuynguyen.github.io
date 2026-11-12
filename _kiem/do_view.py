@@ -12,6 +12,7 @@ KENH = {
     "@4 Lướt Sóng Thần": "https://www.youtube.com/@chungkhoanhuynguyen4",
     "@7 Y3 Vĩ Mô": "https://www.youtube.com/@chungkhoanhuynguyen7",
     "@8 Y2 Soi BCTC": "https://www.youtube.com/@chungkhoanhuynguyen8",
+    "@9 Đầu Tư Cổ Phiếu": "https://www.youtube.com/channel/UCh1Tk4kBO6q4FhVg9t-bR2Q",
 }
 TU_KHOA = ["chứng khoán", "vĩ mô việt nam", "giá vàng", "lãi suất ngân hàng", "kinh tế việt nam", "bất động sản", "cổ phiếu"]
 D = "data/view"
