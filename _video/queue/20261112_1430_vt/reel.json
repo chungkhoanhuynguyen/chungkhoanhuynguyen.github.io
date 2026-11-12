@@ -48,11 +48,28 @@
     "chu_to": "TRẢ BẰNG TIỀN ĐỒNG MỚI",
     "loi": "Mua 1 đô, Nhà nước trả cho ngân hàng 25.500 đồng. Số tiền đồng đó đi vào hệ thống, ngân hàng có thêm vốn cho vay. Và khoản này không phải trả lại như kênh OMO.",
     "loi_doc": "Mua một đô, Nhà nước trả cho ngân hàng hai mươi lăm nghìn năm trăm đồng. Số tiền đồng đó đi vào hệ thống, ngân hàng có thêm vốn cho vay. Và khoản này không phải trả lại như kênh ô em ô.",
-    "anh": [
-     "ov:vietnamese dong banknotes||Vietnamese dong",
-     "State Bank of Vietnam"
-    ],
-    "chat": 1
+    "the": {
+     "loai": "lon",
+     "tieu": "MUA 1 USD",
+     "nguon": "Em minh hoạ theo giá mua 25.500",
+     "dong": [
+      [
+       "NHNN TRẢ 25.500Đ",
+       84,
+       "vang"
+      ],
+      [
+       "TIỀN ĐỒNG VÀO NGÂN HÀNG",
+       50,
+       "trang"
+      ],
+      [
+       "KHÔNG PHẢI HOÀN LẠI",
+       50,
+       "tim2"
+      ]
+     ]
+    }
    },
    {
     "chu_to": "CÓ THỂ TỚI 255 NGHÌN TỶ",
@@ -108,10 +125,33 @@
     "chu_to": "MẸO: XEM 2 CON SỐ",
     "loi": "Mẹo cho anh chị: mỗi tuần nhìn hai con số, giá đô liên ngân hàng và lượng đô Nhà nước mua được. Đô về 25.500 mà Nhà nước mua nhiều, tiền rẻ đang tới.",
     "loi_doc": "Mẹo cho anh chị: mỗi tuần nhìn hai con số, giá đô liên ngân hàng và lượng đô Nhà nước mua được. Đô về hai mươi lăm nghìn năm trăm mà Nhà nước mua nhiều, tiền rẻ đang tới.",
-    "anh": [
-     "ov:stock market trading screen||trading desk monitors"
-    ],
-    "chat": 1
+    "the": {
+     "loai": "lon",
+     "tieu": "MẸO THEO DÕI MỖI TUẦN",
+     "nguon": "Em tổng hợp",
+     "dong": [
+      [
+       "1. GIÁ USD LIÊN NH",
+       64,
+       "trang"
+      ],
+      [
+       "2. LƯỢNG USD NHNN MUA",
+       64,
+       "trang"
+      ],
+      [
+       "VỀ 25.500 + MUA NHIỀU",
+       56,
+       "vang"
+      ],
+      [
+       "= TIỀN RẺ ĐANG TỚI",
+       56,
+       "vang"
+      ]
+     ]
+    }
    }
   ]
  },
@@ -330,10 +370,28 @@
     "chu_to": "MẸO: HỎI 1 CÂU",
     "loi": "Mẹo trước khi đuổi một mã tăng trần: hỏi xem lợi nhuận có tăng theo không. Giá gấp ba mà lãi không tăng, người mua sau thường là người gánh.",
     "loi_doc": "Mẹo trước khi đuổi một mã tăng trần: hỏi xem lợi nhuận có tăng theo không. Giá gấp ba mà lãi không tăng, người mua sau thường là người gánh.",
-    "anh": [
-     "ov:stock market chart screen||trading desk monitors"
-    ],
-    "chat": 1
+    "the": {
+     "loai": "lon",
+     "tieu": "MẸO TRƯỚC KHI ĐUỔI TRẦN",
+     "nguon": "Em tổng hợp",
+     "dong": [
+      [
+       "GIÁ GẤP 3",
+       90,
+       "do"
+      ],
+      [
+       "LÃI CÓ TĂNG THEO KHÔNG?",
+       56,
+       "vang"
+      ],
+      [
+       "KHÔNG → NGƯỜI MUA SAU GÁNH",
+       46,
+       "trang"
+      ]
+     ]
+    }
    }
   ]
  },
@@ -480,10 +538,23 @@
     "chu_to": "GIÁ THẤP = RẺ?",
     "loi": "Nhiều bạn mới nghĩ cổ phiếu 6 nghìn rẻ hơn cổ phiếu 12 nghìn. Em lấy hai mã thật để so.",
     "loi_doc": "Nhiều bạn mới nghĩ cổ phiếu sáu nghìn rẻ hơn cổ phiếu mười hai nghìn. Em lấy hai mã thật để so.",
-    "anh": [
-     "ov:smartphone stock app||person looking at smartphone"
-    ],
-    "chat": 1
+    "the": {
+     "loai": "lon",
+     "tieu": "F0 HAY NGHĨ",
+     "nguon": "Em minh hoạ",
+     "dong": [
+      [
+       "6 NGHÌN",
+       110,
+       "vang"
+      ],
+      [
+       "RẺ HƠN 12 NGHÌN?",
+       70,
+       "trang"
+      ]
+     ]
+    }
    },
    {
     "chu_to": "6.700 VÀ 12.800",
@@ -536,10 +607,28 @@
     "chu_to": "MẸO: NHÌN P/E, ROE",
     "loi": "Mẹo: giá một cổ phiếu chỉ là con số chia nhỏ. Muốn biết rẻ hay đắt, hãy nhìn giá so với lãi, tức P/E, và lãi trên vốn, tức ROE.",
     "loi_doc": "Mẹo: giá một cổ phiếu chỉ là con số chia nhỏ. Muốn biết rẻ hay đắt, hãy nhìn giá so với lãi, tức P E, và lãi trên vốn, tức ROE.",
-    "anh": [
-     "ov:financial report reading||notebook calculator"
-    ],
-    "chat": 1
+    "the": {
+     "loai": "lon",
+     "tieu": "MẸO XEM RẺ HAY ĐẮT",
+     "nguon": "Em tổng hợp",
+     "dong": [
+      [
+       "P/E = GIÁ / LÃI",
+       76,
+       "vang"
+      ],
+      [
+       "ROE = LÃI / VỐN",
+       76,
+       "vang"
+      ],
+      [
+       "ĐỪNG NHÌN GIÁ 1 CỔ PHIẾU",
+       46,
+       "trang"
+      ]
+     ]
+    }
    }
   ]
  }
