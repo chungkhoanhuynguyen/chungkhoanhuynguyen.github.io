@@ -26,6 +26,11 @@ S['VTA2HZ'] = [
  {'k': 'call', 'cap': ('"BAO PHÂN TĂNG', 'MÀ GIÁ LÚA CHƯA TĂNG"'), 'cols': (WHITE, RED),
   'call': {'ten': 'Bố', 'phu': 'Ở quê', 'mau': GOLD, 'loi': ['Bao phân tăng mà giá lúa chưa thấy tăng con ạ', 'Vụ này chắc làm không có lãi']},
   'say': 'Tối đó bố ở quê gọi lên: bao phân tăng mà giá lúa chưa thấy tăng con ạ. Vụ này chắc làm không có lãi. Đó là cách một eo biển cách nhà bạn bảy nghìn cây số đi thẳng vào túi tiền của cả gia đình. Không cần một quả tên lửa nào rơi xuống Việt Nam.'},
+ {'k': 'bars', 'ch': 'Lịch sử từng lặp lại: cú sốc dầu 1973', 'anh': 'ov:1970s gas line cars||vintage gas station', 'cap': ('CẤM VẬN DẦU 1973', 'GIÁ DẦU, USD MỘT THÙNG'), 'cols': (WHITE, RED), 'moc': True,
+  'bars': [('Trước 10/1973', 3, GOLD, '~3'), ('Đầu 1974', 12, RED, '~12')],
+  'say': 'Thế giới đã từng sống qua cảnh này. Tháng mười năm một nghìn chín trăm bảy mươi ba, các nước xuất khẩu dầu Ả Rập cấm vận dầu với Mỹ và một số nước phương Tây. Chỉ trong vài tháng, giá dầu tăng gấp bốn lần, từ khoảng ba đô lên khoảng mười hai đô la một thùng. Ở Mỹ, người ta xếp hàng hàng giờ để đổ xăng. Ở Hà Lan, chính phủ cấm chạy ô tô vào ngày Chủ nhật.'},
+ {'k': 'text', 'anh': 'ov:1970s gas line cars||vintage gas station', 'cap': ('SAU CÚ SỐC DẦU', 'LÀ LẠM PHÁT VÀ SUY THOÁI'), 'cols': (WHITE, GOLD),
+  'say': 'Cái đáng sợ không dừng ở cây xăng. Sau cú sốc dầu năm đó, nhiều nền kinh tế lớn rơi vào cảnh vừa lạm phát cao, vừa suy thoái. Giá cả tăng, nhưng việc làm giảm. Người ta gọi đó là lạm phát đình trệ. Và chứng khoán Mỹ khi đó đã trải qua một trong những đợt giảm sâu nhất kể từ sau Đại khủng hoảng. Một eo biển, một lệnh cấm vận, có thể kéo cả thế giới đi xuống nhiều năm.'},
  {'k': 'bars', 'ch': 'Chương 4 – Ngày thứ bảy: tài khoản chứng khoán', 'anh': 'ov:stock market screen red||stock exchange board', 'cap': ('VN-INDEX', 'THÁNG 3/2026, ĐIỂM'), 'cols': (WHITE, RED), 'moc': True,
   'bars': [('27/2', 1880.73, GOLD, '1.880,7'), ('2/3', 1846.50, RED, '1.846,5'), ('27/3', 1672.80, RED, '1.672,8')],
   'say': 'Ngày thứ bảy, bạn mở tài khoản chứng khoán. Nhìn lại tháng ba năm nay để hình dung: phiên đầu tiên sau xung đột, VN-Index mất ba mươi tư điểm. Đến cuối tháng, chỉ số còn một nghìn sáu trăm bảy mươi hai điểm, mất khoảng mười một phần trăm so với trước xung đột. Nhưng có một điều lạ: không phải cổ phiếu nào cũng đỏ.'},
@@ -35,7 +40,10 @@ S['VTA2HZ'] = [
  {'k': 'cards', 'anh': 'ov:gold bars||gold bullion', 'cap': ('NHƯNG ĐỪNG VỘI', 'ĐUỔI THEO CỔ PHIẾU DẦU'), 'cols': (WHITE, RED), 'moc': True,
   'cards': [('Nhanh', 'Giá dầu tăng', 'Ngay khi có tin'), ('Nhanh hơn', 'Giá dầu giảm', 'Khi căng thẳng hạ nhiệt'), ('Người đến muộn', 'Thường mua đỉnh', 'Bài học lặp lại')],
   'say': 'Nhưng đây là cái bẫy. Giá dầu tăng rất nhanh khi có tin xấu, và giảm còn nhanh hơn khi căng thẳng hạ nhiệt. Ngày một tháng tư năm nay, chỉ một tin hoà hoãn, giá dầu sụt mạnh và chứng khoán Mỹ tăng vọt hơn một nghìn điểm. Ai lao vào mua cổ phiếu dầu ở đỉnh cơn sốt, thường là người đến muộn nhất.'},
- {'k': 'checklist', 'ch': 'Chương 5 – Bạn nên chuẩn bị gì?', 'anh': 'ov:savings piggy bank coins||piggy bank', 'cap': ('KHI THẾ GIỚI CĂNG', 'GIỮ CHO MÌNH 3 ĐIỀU'), 'cols': (WHITE, GREEN), 'moc': True,
+ {'k': 'cards', 'ch': 'Chương 5 – Bạn nên chuẩn bị gì?', 'anh': 'ov:motorbike traffic vietnam||motorcycles street', 'cap': ('NẾU XĂNG LÊN 40 NGHÌN', 'MỖI THÁNG BẠN MẤT THÊM'), 'cols': (WHITE, RED), 'moc': True,
+  'cards': [('2 lít', 'Mỗi ngày', 'Đi làm, đưa đón con'), ('12.960', 'Đồng mỗi lít', '40.000 so với 27.040'), ('~777 nghìn', 'Mỗi tháng', 'Chỉ riêng tiền xăng')],
+  'say': 'Hãy làm một phép tính nhỏ. Nếu mỗi ngày bạn đổ hai lít xăng để đi làm và đưa đón con, và giá xăng lên bốn mươi nghìn đồng một lít, thì so với hai mươi bảy nghìn trước đây, mỗi lít bạn trả thêm gần mười ba nghìn đồng. Một tháng, chỉ riêng tiền xăng, bạn mất thêm khoảng bảy trăm bảy mươi bảy nghìn đồng. Chưa kể tiền chợ, tiền điện, tiền ship đều tăng theo.'},
+ {'k': 'checklist', 'anh': 'ov:savings piggy bank coins||piggy bank', 'cap': ('KHI THẾ GIỚI CĂNG', 'GIỮ CHO MÌNH 3 ĐIỀU'), 'cols': (WHITE, GREEN), 'moc': True,
   'items': [('Quỹ dự phòng 3–6 tháng chi tiêu, vì giá cả sẽ tăng trước lương', GREEN), ('Không vay ký quỹ đuổi theo tin nóng', RED), ('Danh mục có cả nhóm được lợi và nhóm chịu thiệt', GOLD)],
   'say': 'Vậy nếu chuyện đó xảy ra, bạn nên chuẩn bị gì? Một, một khoản dự phòng đủ sống ba đến sáu tháng, vì giá cả luôn tăng trước lương. Hai, đừng vay ký quỹ để đuổi theo tin nóng. Thị trường lúc đó lên xuống từng giờ. Và ba, một danh mục không dồn hết vào một nhóm ngành, để khi nhóm này đỏ, vẫn có nhóm khác đỡ cho bạn.'},
  {'k': 'chat', 'ch': 'Kết – Câu hỏi cho bạn', 'cap': ('"NẾU XĂNG LÊN 40 NGHÌN', 'MÌNH LÀM SAO?"'), 'cols': (WHITE, GOLD),
@@ -50,7 +58,7 @@ _MOTA = ('Nếu eo biển Hormuz bị đóng, khoảng 1/5 lượng dầu thế 
  '• Xăng RON 95-III: 29.120 đồng/lít từ 23:45 ngày 10/3/2026 (+2.080 đồng); vượt 30.000 đồng/lít từ 23:00 ngày 19/3/2026; kỷ lục 32.873 đồng/lít kỳ 21/6/2022 (VOH; Lao Động)\n'
  '• Brent ~110 USD/thùng ngày 30/3/2026 (Tuổi Trẻ); kịch bản VPBankS: 90–150 USD nếu Hormuz gián đoạn, cực đoan 130–200 USD (The Leader)\n'
  '• VN-Index 2/3/2026 −34,23 điểm còn 1.846,50; 27/3/2026 đóng cửa 1.672,80 (The Leader; Tuổi Trẻ)\n'
- '• 1/4/2026: giá dầu sụt mạnh, chứng khoán Mỹ tăng hơn 1.125 điểm (Tuổi Trẻ)\n\n'
+ '• 1/4/2026: giá dầu sụt mạnh, chứng khoán Mỹ tăng hơn 1.125 điểm (Tuổi Trẻ)\n• Cấm vận dầu 10/1973: giá dầu tăng khoảng 4 lần (~3 lên ~12 USD/thùng)\n• Tự tính: (40.000 − 27.040) × 2 lít × 30 ngày ≈ 777.600 đồng/tháng\n\n'
  'Chương:\n{CHUONG}\n\n'
  'Kênh chính: https://www.youtube.com/@chungkhoanhuynguyen\nTìm hiểu thêm: https://chungkhoanhuynguyen.com\n\n'
  'Nhân vật là hư cấu. Chia sẻ góc nhìn, không phải tư vấn tài chính.\n\n#Hormuz #giaxang #giadau')
@@ -63,4 +71,4 @@ META = {'VTA2HZ': {
  'bia_hook': ('XĂNG 40 NGHÌN?', 'NẾU HORMUZ ĐÓNG'), 'badge': 'THẬT TỆ KHI…', 'bia_anh': 'ov:oil tanker ship||oil tanker at sea',
  'bia_hook_b': ('1/5 DẦU', 'THẾ GIỚI KẸT'), 'badge_b': 'EO HORMUZ',
  'bia_hook_c': ('BẠN MẤT GÌ', 'ĐẦU TIÊN?'), 'badge_c': 'THẬT TỆ KHI…',
- 'chuong': ['Mở đầu', 'Chương 1 – Ngày thứ nhất', 'Chương 2 – Ngày thứ ba', 'Chương 3 – Ngày thứ năm', 'Chương 4 – Ngày thứ bảy: tài khoản chứng khoán', 'Chương 5 – Bạn nên chuẩn bị gì?', 'Kết – Câu hỏi cho bạn']}}
+ 'chuong': ['Mở đầu', 'Chương 1 – Ngày thứ nhất', 'Chương 2 – Ngày thứ ba', 'Chương 3 – Ngày thứ năm', 'Lịch sử từng lặp lại: cú sốc dầu 1973', 'Chương 4 – Ngày thứ bảy: tài khoản chứng khoán', 'Chương 5 – Bạn nên chuẩn bị gì?', 'Kết – Câu hỏi cho bạn']}}
