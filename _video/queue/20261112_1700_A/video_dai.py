@@ -3,7 +3,10 @@ XH_BAN = True; NO_CTA = True
 GOLD=(255, 196, 0); RED=(239, 68, 68); GREEN=(34, 197, 94); BLUE=(56, 189, 248); WHITE=(255, 255, 255)
 S = {}
 S['VTA1HN'] = [
- {'k': 'noti', 'ch': 'Mở đầu', 'cap': ('SÁNG HÔM ĐÓ', 'ĐIỆN THOẠI MẤT SÓNG'), 'cols': (WHITE, RED),
+ {'k': 'bignum', 'ch': 'Mở đầu', 'anh': 'ov:nuclear test mushroom cloud||atomic bomb test', 'cap': ('NẾU CHIẾN TRANH HẠT NHÂN NỔ RA', 'KHÔNG CHẾT VÌ BOM, MÀ VÌ ĐÓI'), 'cols': (WHITE, RED),
+  'value': 5, 'fmt': '{:,.0f}', 'unit': ' tỷ người', 'top': 'CÓ THỂ CHẾT ĐÓI', 'sub': 'Nghiên cứu trên tạp chí Nature Food, 2022', 'col': RED,
+  'say': 'Năm tỷ người có thể chết đói. Không phải vì bom. Mà vì sau đó, bầu trời tối lại, và mùa màng mất trắng. Đó là kết luận của một nghiên cứu khoa học. Và mới hai tuần trước, một quốc gia đã phát video dạy dân mình cách sống sót qua bom hạt nhân. Còn bạn, ở cách đó hàng nghìn cây số, sẽ mất gì trước tiên? Xăng? Gạo? Hay tài khoản chứng khoán?'},
+ {'k': 'noti', 'cap': ('SÁNG HÔM ĐÓ', 'ĐIỆN THOẠI MẤT SÓNG'), 'cols': (WHITE, RED),
   'noti': {'gio': '06:12', 'ngay': 'Thứ Hai', 'items': [('Cảnh báo khẩn', 'Thông báo', 'Mất kết nối mạng di động', RED), ('Zalo', 'Mẹ', 'Con ơi, siêu thị dưới nhà hết sạch mì rồi', GOLD)]},
   'say': 'Sáu giờ mười hai phút sáng thứ Hai, bạn tỉnh dậy vì điện thoại rung liên tục. Mạng di động chập chờn, rồi mất hẳn. Tin nhắn cuối cùng kịp đến là của mẹ: con ơi, siêu thị dưới nhà hết sạch mì rồi. Bạn mở cửa sổ. Dưới đường, người ta xếp hàng dài trước cây xăng từ lúc trời còn tối. Không ai nói to. Ai cũng cầm điện thoại, và không điện thoại nào có sóng. Đó là buổi sáng đầu tiên sau khi chiến tranh hạt nhân nổ ra, ở một nơi cách bạn hàng nghìn cây số.'},
  {'k': 'text', 'cap': ('THẬT TỆ KHI', 'CHIẾN TRANH HẠT NHÂN NỔ RA'), 'cols': (WHITE, GOLD), 'anh': 'ov:nuclear test mushroom cloud||atomic bomb test',
@@ -74,7 +77,7 @@ META = {'VTA1HN': {
  'title': 'Nếu Chiến Tranh Hạt Nhân Nổ Ra: Thật Tệ Khi Kệ Siêu Thị Trống Trơn, VN-Index Mất 11% Và 5 Tỷ Người Thiếu Ăn',
  'mo_ta': _MOTA,
  'tags': ['chiến tranh hạt nhân', 'nếu chiến tranh hạt nhân xảy ra', 'Iran hướng dẫn tránh bom hạt nhân', 'tích trữ lương thực', 'mùa đông hạt nhân', 'giá dầu tăng', 'VN-Index giảm', 'tiền của bạn khi chiến tranh', 'thật tệ khi', 'Chứng Khoán Huy Nguyễn'],
- 'bia_hook': ('NẾU CHIẾN TRANH', 'HẠT NHÂN NỔ RA'), 'badge': 'THẬT TỆ KHI…', 'bia_anh': 'ov:nuclear test mushroom cloud||atomic bomb test',
- 'bia_hook_b': ('5 TỶ NGƯỜI', 'THIẾU ĂN'), 'badge_b': 'MÙA ĐÔNG HẠT NHÂN',
- 'bia_hook_c': ('TIỀN CỦA BẠN', 'SẼ RA SAO?'), 'badge_c': 'THẬT TỆ KHI…',
+ 'bia_hook': ('5 TỶ NGƯỜI', 'CHẾT ĐÓI?'), 'badge': 'NẾU HẠT NHÂN NỔ RA', 'bia_anh': 'ov:nuclear test mushroom cloud||atomic bomb test',
+ 'bia_hook_b': ('HẠT NHÂN NỔ', 'BẠN MẤT GÌ?'), 'badge_b': 'THẬT TỆ KHI…',
+ 'bia_hook_c': ('KỆ SIÊU THỊ', 'TRỐNG TRƠN'), 'badge_c': 'THẬT TỆ KHI…',
  'chuong': ['Mở đầu', 'Chương 1 – Hai mươi bốn giờ đầu', 'Chương 2 – Kệ siêu thị trống trơn', 'Chương 3 – Bản xem trước năm 2026', 'Chương 4 – Mùa đông hạt nhân', 'Chương 5 – Tiền của bạn sẽ ra sao?', 'Kết – Câu hỏi cho bạn']}}
