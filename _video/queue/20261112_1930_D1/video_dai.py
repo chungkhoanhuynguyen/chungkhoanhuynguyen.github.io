@@ -69,7 +69,7 @@ META = {'VTD1F0': {
  'title': 'Vì Sao Thật Tệ Khi Là F0 Vào Đỉnh Năm 2021? Tưởng Nghỉ Việc Được, Ai Ngờ Bán Cả Xe Máy',
  'mo_ta': _MOTA,
  'tags': ['F0 chứng khoán', 'F0 2021', 'vì sao thật tệ khi', 'margin chứng khoán', 'bán giải chấp', 'call margin', 'VN-Index 2022', 'bài học đầu tư', 'chứng khoán cho người mới', 'Chứng Khoán Huy Nguyễn'],
- 'bia_hook': ('F0 VÀO ĐỈNH', 'BÁN CẢ XE MÁY'), 'badge': 'VÌ SAO THẬT TỆ KHI…', 'bia_anh': 'ov:stock market screen red||stock exchange board',
+ 'bia_hook': ('F0 VÀO ĐỈNH', 'BÁN CẢ XE MÁY'), 'badge': 'VÌ SAO THẬT TỆ KHI…', 'bia_anh': 'Ho Chi Minh City skyline night||Hanoi skyline night',
  'bia_hook_b': ('LÃI 3 THÁNG', 'MẤT 270 TRIỆU'), 'badge_b': 'F0 2021',
  'bia_hook_c': ('"NGHỈ VIỆC', 'THÔI!"'), 'badge_c': 'VÌ SAO THẬT TỆ KHI…',
  'chuong': ['Mở đầu', 'Chương 1 – Năm ai cũng là thiên tài', 'Chương 2 – Thiên tài của thị trường tăng', 'Chương 3 – Cái hợp đồng ký trong năm phút', 'Chương 4 – Năm 2022: cú quay đầu', 'Chương 5 – Sĩ diện là thứ cuối cùng bị bán giải chấp', 'Chương 6 – Bài học tiền bạc', 'Kết – Câu hỏi cho bạn']}}
