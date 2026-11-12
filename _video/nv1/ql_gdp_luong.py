@@ -1,0 +1,180 @@
+# -*- coding: utf-8 -*-
+# NV1 13/11/2026 00:37 – VIDEO DÀI kênh chính, "câu hỏi lớn": GDP tăng gần 10%, lương thật tăng bao nhiêu? (cặp với reel RV1311GDP).
+# Lý do chọn: data/view/xu_huong.md tuần tới 12/11: "Tăng trưởng trên 10% suốt 5 năm: VN thành Hàn Quốc hay Thái Lan thứ hai?" ~93 nghìn view,
+#   "Double-digit GDP growth… jobs and personal income" (VTC) ~141 nghìn, "Vietnam's 2026 GDP growth leads the world, but at what cost" ~53 nghìn,
+#   "Kinh tế VN vs Thái Lan: vì sao Thái Lan vẫn giàu hơn" ~54 nghìn → GDP/thu nhập đang nóng; kênh mình 7 ngày chưa làm.
+# Nguồn (WiData – Tổng cục Thống kê, NHNN). SỐ TỰ TÍNH ghi rõ:
+#  - GDP thực Q3/2026 +9,95% so cùng kỳ (80042), 9 tháng +9,01% (80126); cả năm 2025 +8,02%; 2022 +8,54%; 2023 +4,98% (281279); mục tiêu 2026: 10% (75697).
+#  - GDP danh nghĩa 4 quý tới Q3/2026: 14.056.614 tỷ; tới Q3/2025: 12.445.620 tỷ → +12,9% (tự tính); tới Q3/2024: 11.158.552 → 2 năm +26,0% (tự tính).
+#  - Dân số 2025: 102.345 nghìn → GDP 4 quý / dân số / 12 = 11,45 triệu đồng mỗi người mỗi tháng (tự tính, chia đều).
+#  - Thu nhập bình quân tháng của lao động (280708): Q3/2026 9.184.891 đ; Q3/2025 8.361.114 đ (+9,85%, tự tính; chênh 823.780 đ); Q3/2024 7.626.500 đ (2 năm +20,4%).
+#  - CPI so cùng kỳ: 9/2026 +5,08%, 10/2026 +5,09% (75701); thu nhập thực Q3 = 1,0985/1,0508 − 1 = +4,5% (tự tính).
+#  - CPI nhóm 10/2026 so 10/2025 (tự tính từ chỉ số TCTK): giao thông 110,51/95,62 = +15,6%; nhà ở-điện nước-chất đốt-VLXD 113,53/106,61 = +6,5%;
+#    hàng ăn và dịch vụ ăn uống 107,05/103,35 = +3,6%; giáo dục 113,95/110,91 = +2,7%; thuốc và y tế 108,08/106,22 = +1,7%.
+#  - Lãi suất huy động 12 tháng NHTM Nhà nước 12/11/2026: 5,4% (202886). Thất nghiệp Q3/2026: 2,22% (82444).
+#  - Rổ chi tiêu minh hoạ nhà anh Minh (EM TỰ GIẢ ĐỊNH, áp mức tăng giá từng nhóm ở trên): ăn uống 3,5 tr (+125 nghìn), nhà trọ-điện nước 2,5 tr (+162 nghìn),
+#    xăng đi lại 0,8 tr (+125 nghìn), học của con 0,7 tr (+19 nghìn) → giá ăn mất 432 nghìn; lương tăng 820 nghìn (8,36 → 9,18 tr) → còn khoảng 390 nghìn.
+#  - Tin: Báo Thanh Hóa 4/11/2026 – từ 1/1/2027 lương tối thiểu vùng tăng 310.000–390.000 đ/tháng tùy vùng (Nghị định 399/2026/NĐ-CP).
+import os, sys, json
+sys.path.insert(0, os.path.dirname(__file__)); import lib
+from lib import GOLD, RED, GREEN, BLUE, WHITE
+CW = os.environ.get('CW', '/tmp/cw')
+LO = CW + '/_video/queue/20261113_0037'
+KEY = 'CH1611GDP'; CC = (WHITE, GOLD); CR = (WHITE, RED)
+R_, V_, X_, G_ = (239, 68, 68), (255, 196, 0), (56, 189, 248), (34, 197, 94)
+TP = 'Ho Chi Minh City skyline night||Hanoi skyline night'
+CHO = 'Ben Thanh Market||Ben Thanh Market interior'
+CANG = 'container port Vietnam||Cat Lai port'
+S = [
+ # ---------------- MỞ ĐẦU ----------------
+ dict(k='noti', ch='Mở đầu', cap=('GDP TĂNG GẦN 10%', 'LƯƠNG MÌNH TĂNG BAO NHIÊU?'), cols=CR, noti=dict(gio='21:40', ngay='Thứ Sáu', items=[
+        ('Tin tức', 'Thời sự tối', 'GDP quý 3 tăng 9,95%, cao nhất nhiều năm', G_),
+        ('Ngân hàng', 'Tài khoản lương', '+9.184.000 đ. Lương tháng 9', X_),
+        ('Zalo', 'Vợ', 'Anh ơi tiền nhà trọ, tiền điện tháng này lại tăng', R_)]),
+      say=("Chín giờ tối, anh Minh vừa tan ca ở khu công nghiệp. Ti vi trong phòng trọ đang đọc tin: GDP quý ba tăng chín phẩy chín lăm phần trăm, cao nhất nhiều năm. "
+           "Cùng lúc đó, điện thoại báo tiền lương về: chín triệu một trăm tám mươi tư nghìn đồng. Rồi tin nhắn của vợ: anh ơi, tiền nhà trọ với tiền điện tháng này lại tăng. "
+           "Anh Minh tự hỏi một câu mà chắc nhiều anh chị cũng từng hỏi: đất nước tăng trưởng gần mười phần trăm, vậy túi mình thật sự dày thêm bao nhiêu?")),
+ dict(k='bignum', anh=TP, cap=('LƯƠNG THẬT CHỈ TĂNG 4,5%', 'CHƯA BẰNG MỘT NỬA GDP'), cols=CR, value=4.5, fmt='{:,.1f}', unit='%', top='THU NHẬP THẬT QUÝ 3/2026', sub='Sau khi trừ giá cả tăng', col=RED,
+      say=("Em nói luôn kết quả. Nếu tính đúng như cách Tổng cục Thống kê đo, thu nhập của người lao động có tăng gần mười phần trăm thật. "
+           "Nhưng trừ đi phần giá cả tăng, thu nhập thật chỉ tăng khoảng bốn phẩy năm phần trăm, chưa bằng một nửa tốc độ GDP. Vậy phần còn lại của chiếc bánh đi đâu? Và vì sao nhà anh Minh còn thấy ít hơn cả con số đó?")),
+ # ---------------- CHƯƠNG 1 ----------------
+ dict(k='cards', ch='Chương 1 – Chiếc bánh lớn cỡ nào?', anh=CANG, cap=('KINH TẾ ĐANG CHẠY NHANH', 'TỔNG CỤC THỐNG KÊ'), cols=CC, moc=True,
+      cards=[('+9,95%', 'GDP quý 3/2026 so cùng kỳ', 'Cao nhất nhiều năm'), ('+9,01%', '9 tháng đầu năm 2026', 'Mục tiêu cả năm 10%'), ('+8,02%', 'Cả năm 2025', 'Năm trước đã cao')],
+      say=("Trước hết, con số trên ti vi là thật. Theo Tổng cục Thống kê tổng hợp trên WiData, GDP quý ba năm 2026 tăng chín phẩy chín lăm phần trăm so với cùng kỳ. Chín tháng đầu năm tăng chín phẩy không một phần trăm, "
+           "trong khi mục tiêu cả năm là mười phần trăm. Năm 2025 cũng đã tăng tám phẩy không hai phần trăm. Hiếm có nền kinh tế nào trên thế giới chạy nhanh như vậy.")),
+ dict(k='cards', anh=TP, cap=('NẾU CHIA ĐỀU CHIẾC BÁNH', 'EM TỰ TÍNH'), cols=CC, moc=True,
+      cards=[('14,06 triệu tỷ', 'GDP 4 quý tới quý 3/2026', 'Chiếc bánh cả nước'), ('11,45 triệu', 'Mỗi người, mỗi tháng', 'Kể cả em bé, cụ già'), ('9,18 triệu', 'Thu nhập một người đi làm', 'Quý 3/2026')],
+      say=("Chiếc bánh đó lớn cỡ nào? Cộng bốn quý gần nhất, GDP danh nghĩa khoảng mười bốn phẩy không sáu triệu tỷ đồng. Chia đều cho hơn một trăm lẻ hai triệu dân, kể cả em bé mới sinh và cụ già, "
+           "mỗi người được khoảng mười một phẩy bốn lăm triệu đồng mỗi tháng. Trong khi đó, một người đi làm, nuôi cả gia đình, thu nhập bình quân chỉ khoảng chín phẩy một tám triệu đồng mỗi tháng. Đây là số em tự tính, nguồn có trong mô tả.")),
+ dict(k='chat', cap=('"VẬY TIỀN', 'ĐI ĐÂU HẾT HẢ ANH?"'), cols=CC, moc=True, chat=dict(ten='Vợ', tv='Đang hoạt động', gio='21:55', mau=X_, msgs=[
+        ('me', 'Em ơi, chia đều GDP mỗi người được hơn 11 triệu'),
+        ('Vợ', 'Còn lương anh có 9,18 triệu, mà nuôi 3 người'),
+        ('Vợ', 'Vậy tiền đi đâu hết hả anh?')]),
+      say=("Anh Minh nhắn cho vợ con số vừa tính. Vợ anh trả lời rất nhanh: còn lương anh có chín phẩy một tám triệu, mà nuôi ba người. Rồi thêm một câu: vậy tiền đi đâu hết hả anh? "
+           "GDP không chỉ là tiền lương. Nó còn gồm lợi nhuận của doanh nghiệp, tiền thuế, phần hao mòn máy móc nhà xưởng, và cả lợi nhuận mà nhà đầu tư nước ngoài mang về nước họ. Người chỉ có lương nhận một lát của chiếc bánh, không phải cả chiếc.")),
+ # ---------------- CHƯƠNG 2 ----------------
+ dict(k='bars', ch='Chương 2 – Bánh lớn nhanh hơn lát của mình', anh=TP, cap=('TĂNG TRONG 12 THÁNG', 'BÁNH LỚN NHANH HƠN LƯƠNG'), cols=CR, moc=True,
+      bars=[('GDP danh nghĩa', 12.9, GOLD, '+12,9%'), ('Thu nhập lao động', 9.85, RED, '+9,85%')],
+      say=("Và đây là cú lật thứ nhất. Trong mười hai tháng tính đến quý ba, chiếc bánh GDP danh nghĩa lớn thêm khoảng mười hai phẩy chín phần trăm. "
+           "Còn thu nhập bình quân của người lao động tăng chín phẩy tám lăm phần trăm, từ tám phẩy ba sáu triệu lên chín phẩy một tám triệu đồng mỗi tháng. Lương có tăng, nhưng chiếc bánh tăng nhanh hơn.")),
+ dict(k='cards', anh=TP, cap=('SAU 2 NĂM', 'KHOẢNG CÁCH DOÃNG RA'), cols=CR, moc=True,
+      cards=[('+26%', 'GDP danh nghĩa, quý 3/2024 tới nay', 'Bánh lớn thêm một phần tư'), ('+20,4%', 'Thu nhập lao động cùng kỳ', 'Từ 7,63 lên 9,18 triệu')],
+      say=("Kéo dài ra hai năm, khoảng cách còn rõ hơn. Từ quý ba năm 2024 tới quý ba năm 2026, GDP danh nghĩa tăng khoảng hai mươi sáu phần trăm. "
+           "Thu nhập bình quân của người lao động tăng hai mươi phẩy bốn phần trăm, từ bảy phẩy sáu ba triệu lên chín phẩy một tám triệu. Mỗi năm, phần của người làm công trong chiếc bánh lại mỏng đi một chút.")),
+ dict(k='giay', cap=('PHIẾU LƯƠNG THÁNG 9', 'TĂNG 820 NGHÌN'), cols=CC, moc=True, giay=dict(tieu_de='PHIẾU LƯƠNG THÁNG 9/2026', so='Nhân viên: Nguyễn Văn Minh – tổ đóng gói', dau='ĐÃ NHẬN', dieu=[
+        ('Thực nhận tháng 9/2025: 8.360.000 đồng', '8,36 TR'),
+        ('Thực nhận tháng 9/2026: 9.180.000 đồng', '9,18 TR'),
+        ('Tăng thêm sau một năm: khoảng 820.000 đồng', '+820K')]),
+      say=("Anh Minh lật lại phiếu lương. Tháng chín năm ngoái anh thực nhận tám phẩy ba sáu triệu đồng, đúng bằng mức bình quân cả nước lúc đó. "
+           "Tháng này là chín phẩy một tám triệu. Tăng thêm khoảng tám trăm hai mươi nghìn đồng mỗi tháng. Nghe cũng được. Cho tới khi anh mở cuốn sổ chi tiêu của vợ.")),
+ # ---------------- CHƯƠNG 3 ----------------
+ dict(k='cards', ch='Chương 3 – Giá cả ăn mất bao nhiêu?', anh=CHO, cap=('GIÁ TĂNG TRONG 12 THÁNG', 'THÁNG 10/2026, TCTK'), cols=CR, moc=True,
+      cards=[('+15,6%', 'Nhóm giao thông, xăng dầu', 'Tăng mạnh nhất'), ('+6,5%', 'Nhà ở, điện nước, chất đốt', 'Tiền trọ, tiền điện'), ('+3,6%', 'Hàng ăn và ăn uống', 'Nhóm lớn nhất rổ hàng')],
+      say=("Lạm phát chung tháng mười là năm phẩy không chín phần trăm. Nhưng con số chung đó che đi một điều: những thứ người đi làm phải trả mỗi ngày lại tăng nhanh nhất. "
+           "Em tính từ chỉ số giá của Tổng cục Thống kê, nhóm giao thông, chủ yếu là xăng dầu, tăng khoảng mười lăm phẩy sáu phần trăm so với cùng kỳ. Nhà ở, điện nước, chất đốt tăng sáu phẩy năm phần trăm. Hàng ăn tăng ba phẩy sáu phần trăm.")),
+ dict(k='giay', cap=('SỔ CHI TIÊU CỦA VỢ', 'GIÁ ĂN MẤT 432 NGHÌN'), cols=CR, moc=True, giay=dict(tieu_de='SỔ CHI TIÊU – THÁNG NÀY SO VỚI NĂM NGOÁI', so='Vợ anh Minh ghi, em áp mức tăng giá từng nhóm', dau='ĐÃ CỘNG', dieu=[
+        ('Ăn uống 3,5 triệu: tăng 3,6%', '+125K'),
+        ('Nhà trọ, điện nước 2,5 triệu: tăng 6,5%', '+162K'),
+        ('Xăng đi làm 800 nghìn: tăng 15,6%', '+125K'),
+        ('Học của con 700 nghìn: tăng 2,7%', '+19K')]),
+      say=("Đây là cuốn sổ của vợ anh Minh. Mỗi tháng nhà anh tiêu khoảng ba phẩy năm triệu cho ăn uống, hai phẩy năm triệu tiền trọ và điện nước, tám trăm nghìn tiền xăng, bảy trăm nghìn tiền học của con. "
+           "Em áp đúng mức tăng giá từng nhóm vào. Ăn uống đắt thêm khoảng một trăm hai mươi lăm nghìn. Nhà trọ, điện nước thêm một trăm sáu mươi hai nghìn. Xăng thêm một trăm hai mươi lăm nghìn. Tiền học thêm mười chín nghìn. "
+           "Cộng lại, giá cả đã ăn mất khoảng bốn trăm ba mươi hai nghìn đồng mỗi tháng.")),
+ dict(k='bignum', anh=CHO, cap=('TĂNG 820 NGHÌN', 'CÒN LẠI 390 NGHÌN'), cols=CR, moc=True, value=390, fmt='{:,.0f}', unit=' nghìn', top='PHẦN LƯƠNG TĂNG CÒN LẠI', sub='Sau khi trừ giá cả tăng, mỗi tháng', col=RED,
+      say=("Tám trăm hai mươi nghìn tiền lương tăng thêm, trừ đi bốn trăm ba mươi hai nghìn giá cả ăn mất, nhà anh Minh còn lại khoảng ba trăm chín mươi nghìn đồng mỗi tháng. "
+           "Chưa bằng một nửa phần lương tăng. Đó chính là cái mẩu nhỏ còn lại trong túi, sau một năm mà đất nước tăng trưởng gần mười phần trăm. Rổ chi tiêu này là em giả định để minh hoạ, mỗi nhà sẽ khác.")),
+ dict(k='noti', cap=('LƯƠNG TỐI THIỂU 2027', 'TĂNG 310 ĐẾN 390 NGHÌN'), cols=CC, noti=dict(gio='22:30', ngay='Thứ Sáu', items=[
+        ('Tin tức', 'Báo Thanh Hóa 4/11', 'Từ 1/1/2027 lương tối thiểu vùng tăng 310.000 đến 390.000 đồng', G_),
+        ('Zalo', 'Vợ', 'Vừa đủ bù tiền xăng với tiền điện thôi anh', V_)]),
+      say=("Đúng lúc đó, anh Minh lướt thấy tin báo Thanh Hóa đưa hôm bốn tháng mười một. Từ ngày một tháng một năm 2027, lương tối thiểu vùng tăng thêm từ ba trăm mười nghìn đến ba trăm chín mươi nghìn đồng mỗi tháng, tùy vùng. "
+           "Vợ anh nhắn một câu nghe mà chạnh lòng: vừa đủ bù tiền xăng với tiền điện thôi anh.")),
+ # ---------------- CHƯƠNG 4 ----------------
+ dict(k='cards', ch='Chương 4 – Tiền để dành có lớn lên không?', anh=TP, cap=('TIỀN GỬI TIẾT KIỆM', 'GẦN NHƯ ĐỨNG YÊN'), cols=CC, moc=True,
+      cards=[('5,4%', 'Lãi 12 tháng, ngân hàng Nhà nước', 'Lãi danh nghĩa'), ('5,09%', 'Lạm phát tháng 10/2026', 'Giá cả ăn vào'), ('0,3 điểm %', 'Lãi thật sau lạm phát', 'Gần như đứng yên')],
+      say=("Còn ba trăm chín mươi nghìn để dành mỗi tháng, gửi tiết kiệm thì sao? Lãi suất mười hai tháng ở nhóm ngân hàng thương mại Nhà nước hôm nay là năm phẩy bốn phần trăm mỗi năm. "
+           "Lạm phát là năm phẩy không chín phần trăm. Trừ đi, tiền gửi chỉ lớn lên khoảng không phẩy ba điểm phần trăm. Không mất, nhưng gần như đứng yên trong khi chiếc bánh cả nước lớn thêm gần mười ba phần trăm.")),
+ dict(k='call', cap=('"PHẦN BÁNH TO NHẤT', 'NẰM Ở LỢI NHUẬN"'), cols=CC, call=dict(ten='Anh Tùng', phu='Tổ trưởng, 15 năm trong khu công nghiệp', mau=G_, loi=[
+        'Đơn hàng tăng thì công ty lãi trước', 'Lương thường tăng sau, chậm hơn']),
+      say=("Anh Minh gọi cho anh Tùng, tổ trưởng đã làm mười lăm năm trong khu công nghiệp. Anh Tùng cười: chú để ý mà xem, đơn hàng tăng thì công ty lãi trước, lương anh em mình thường tăng sau và chậm hơn. "
+           "Kinh tế chạy nhanh thì người sở hữu doanh nghiệp, nhà xưởng, đất đai thường được chia phần bánh lớn trước. Người chỉ có sức lao động đứng cuối hàng.")),
+ # ---------------- CHƯƠNG 5 ----------------
+ dict(k='bars', ch='Chương 5 – Lịch sử từng lặp lại', anh=CANG, cap=('TĂNG TRƯỞNG GDP THỰC', 'KHÔNG ĐI MỘT ĐƯỜNG THẲNG'), cols=CR, moc=True,
+      bars=[('2022', 8.54, GOLD, '8,54%'), ('2023', 4.98, RED, '4,98%'), ('2025', 8.02, GOLD, '8,02%'), ('9T/2026', 9.01, GREEN, '9,01%')],
+      say=("Có một điều lịch sử từng dạy. Năm 2022, GDP Việt Nam tăng tám phẩy năm tư phần trăm, cao nhất trong hơn một thập kỷ khi đó. Ai cũng nghĩ năm sau sẽ còn tốt hơn. "
+           "Nhưng năm 2023, tăng trưởng chỉ còn bốn phẩy chín tám phần trăm. Đơn hàng xuất khẩu giảm, nhiều công nhân khu công nghiệp bị cắt giờ làm, có người mất việc. Tăng trưởng không đi một đường thẳng.")),
+ dict(k='text', cap=('KHI KINH TẾ CHẬM LẠI', 'LƯƠNG THƯỜNG CHỊU TRƯỚC'), cols=CR, anh=CANG,
+      say=("Và anh chị để ý: lúc kinh tế tăng tốc, lương tăng sau. Lúc kinh tế chậm lại, người làm công lại thường chịu trước, bằng giờ làm thêm bị cắt, thưởng Tết mỏng đi. "
+           "Nên câu hỏi không chỉ là GDP năm nay tăng bao nhiêu, mà là khi chu kỳ đổi chiều, gia đình mình có một tấm đệm nào hay chưa.")),
+ # ---------------- CHƯƠNG 6 ----------------
+ dict(k='chat', ch='Chương 6 – Phương án của nhà anh Minh', cap=('KẾ HOẠCH 3 BƯỚC', 'HAI VỢ CHỒNG TỰ VẠCH RA'), cols=CC, moc=True, chat=dict(ten='Vợ', tv='Đang hoạt động', gio='23:10', mau=G_, msgs=[
+        ('me', 'Tiền lương tăng thêm, mình để riêng một tài khoản'),
+        ('Vợ', 'Ừ, đủ 6 tháng chi tiêu rồi hãy tính chuyện khác'),
+        ('me', 'Năm sau anh đi học thêm nghề vận hành máy'),
+        ('Vợ', 'Tổ máy lương cao hơn tổ đóng gói mà anh')]),
+      say=("Anh Minh không than nữa. Anh nhắn cho vợ một kế hoạch. Một: phần lương tăng thêm mỗi tháng, để riêng một tài khoản, coi như không có. Vợ anh thêm: phải đủ sáu tháng chi tiêu rồi hãy tính chuyện khác. "
+           "Hai: năm sau anh đi học thêm nghề vận hành máy, vì tổ máy lương cao hơn tổ đóng gói. Thu nhập tăng nhanh nhất thường đến từ tay nghề, không đến từ GDP.")),
+ dict(k='checklist', anh='Ho Chi Minh City Stock Exchange||Bitexco Financial Tower', cap=('LƯƠNG ANH CHỊ NĂM NAY', 'TĂNG BAO NHIÊU PHẦN TRĂM?'), cols=CC, moc=True,
+      items=[('Dưới 5,1%: đang nghèo đi', RED),
+             ('5,1 đến 9,85%: giàu lên chậm', GOLD),
+             ('Trên 9,85%: theo kịp cả nước', GREEN)],
+      say=("Và đây là phép thử em muốn anh chị tự làm. Lấy lương tháng này chia lương cùng tháng năm ngoái. Nếu tăng dưới khoảng năm phẩy một phần trăm, tức là thấp hơn giá cả, sức mua của anh chị đang giảm. "
+           "Nếu tăng từ năm phẩy một đến chín phẩy tám lăm phần trăm, anh chị vẫn giàu lên, nhưng chậm hơn người lao động bình quân. Trên chín phẩy tám lăm phần trăm thì anh chị đang theo kịp cả nước.")),
+ dict(k='checklist', ch='Chương 7 – Nhà đầu tư nhìn GDP thế nào?', anh='Ho Chi Minh City Stock Exchange||Bitexco Financial Tower', cap=('3 CÂU HỎI', 'KHI NGHE "GDP TĂNG MẠNH"'), cols=CC, moc=True,
+      items=[('Tăng trưởng chảy vào ngành nào?', GREEN),
+             ('Lợi nhuận có tăng nhanh hơn GDP?', GREEN),
+             ('Chu kỳ đang ở đầu hay cuối?', GOLD)],
+      say=("Với người có thêm khoản đầu tư, em gợi ý ba câu hỏi mỗi khi nghe GDP tăng mạnh. Một: tăng trưởng đang chảy vào ngành nào, xuất khẩu, xây dựng hay tiêu dùng? "
+           "Hai: lợi nhuận của doanh nghiệp mình quan tâm có thật sự tăng nhanh hơn GDP không, hay chỉ có doanh thu tăng? Ba: chu kỳ đang ở đầu hay ở cuối, như năm 2022 so với năm 2023? "
+           "Anh chị có thể tra lợi nhuận từng quý của hơn bốn trăm mã miễn phí trên chứng khoán Huy Nguyễn chấm com.")),
+ # ---------------- KẾT ----------------
+ dict(k='chat', ch='Kết – Tin nhắn lúc nửa đêm', cap=('"TĂNG TRƯỞNG CỦA NHÀ MÌNH', 'MÌNH TỰ LO"'), cols=CC, moc=True, chat=dict(ten='Vợ', tv='Đang hoạt động', gio='23:45', mau=X_, msgs=[
+        ('me', 'GDP tăng gần 10%, nhà mình tăng được khoảng 4%'),
+        ('me', 'Không sao, tăng trưởng của nhà mình thì mình tự lo'),
+        ('Vợ', 'Ngủ đi anh, mai còn đi ca sớm')]),
+      say=("Gần nửa đêm, anh Minh nhắn cho vợ: GDP tăng gần mười phần trăm, nhà mình tăng được khoảng bốn phần trăm. Không sao, tăng trưởng của nhà mình thì mình tự lo. Vợ anh trả lời: ngủ đi anh, mai còn đi ca sớm. "
+           "Con số GDP cho biết đất nước đang chạy nhanh cỡ nào. Còn mình ngồi ở toa nào trên chuyến tàu đó, là chuyện mỗi gia đình phải tự tính.")),
+ dict(k='end', cap=('LƯƠNG ANH CHỊ NĂM NAY', 'TĂNG BAO NHIÊU?'), cols=CC,
+      say=("Còn anh chị, lương năm nay của anh chị tăng bao nhiêu phần trăm, và có theo kịp giá xăng, giá điện, tiền nhà không? Kể cho em và mọi người ở phần bình luận nhé. "
+           "Nếu thấy video hữu ích, anh chị đăng ký kênh để xem những câu hỏi lớn tiếp theo.")),
+]
+import ql_post; S = ql_post.tach(S, max_tu=100)
+for c in S: c['say'] = lib.doc(c['say'])
+TIEU = 'GDP Tăng Gần 10% Nhưng Lương Thật Chỉ Tăng 4,5%: Phần Còn Lại Của Chiếc Bánh Đi Đâu?'
+MT = ("GDP quý 3/2026 tăng 9,95%, cao nhất nhiều năm. Thu nhập bình quân người lao động cũng tăng 9,85%, nhưng trừ giá cả, thu nhập thật chỉ tăng khoảng 4,5%. "
+      "Câu chuyện của anh Minh, công nhân khu công nghiệp: lương tăng 820 nghìn, giá xăng, tiền trọ, điện nước ăn mất khoảng 432 nghìn, còn lại một mẩu.\n\n"
+      "Nguồn số liệu (Tổng cục Thống kê, NHNN – tổng hợp WiData):\n"
+      "• GDP thực: quý 3/2026 +9,95% so cùng kỳ; 9 tháng 2026 +9,01%; năm 2025 +8,02%; 2022 +8,54%; 2023 +4,98%; mục tiêu 2026: 10%\n"
+      "• GDP danh nghĩa 4 quý tới Q3/2026: 14.056.614 tỷ đồng (+12,9% so 4 quý tới Q3/2025, +26,0% so 4 quý tới Q3/2024 – tự tính); dân số 2025: 102,3 triệu → 11,45 triệu đồng mỗi người mỗi tháng (tự tính, chia đều)\n"
+      "• Thu nhập bình quân tháng của lao động: Q3/2026 9,18 triệu; Q3/2025 8,36 triệu (+9,85%); Q3/2024 7,63 triệu (2 năm +20,4%)\n"
+      "• CPI so cùng kỳ: 9/2026 +5,08%; 10/2026 +5,09% → thu nhập thật quý 3 = 1,0985/1,0508 − 1 ≈ +4,5% (tự tính)\n"
+      "• Chỉ số giá nhóm 10/2026 so 10/2025 (tự tính từ chỉ số TCTK): giao thông +15,6%; nhà ở, điện nước, chất đốt, VLXD +6,5%; hàng ăn và dịch vụ ăn uống +3,6%; giáo dục +2,7%; thuốc và dịch vụ y tế +1,7%\n"
+      "• Rổ chi tiêu nhà anh Minh là giả định minh hoạ: ăn uống 3,5 triệu, nhà trọ-điện nước 2,5 triệu, xăng 0,8 triệu, học 0,7 triệu → tăng thêm khoảng 432 nghìn mỗi tháng\n"
+      "• Lãi suất huy động 12 tháng NHTM Nhà nước 12/11/2026: 5,4%\n"
+      "• Tin: Báo Thanh Hóa 4/11/2026 – từ 1/1/2027 lương tối thiểu vùng tăng 310.000–390.000 đồng mỗi tháng (Nghị định 399/2026/NĐ-CP)\n\n"
+      "Tra lợi nhuận từng quý 400+ mã: https://chungkhoanhuynguyen.com\n"
+      "Cần trao đổi riêng: Zalo 0365.188.286\n\n"
+      "Nhân vật anh Minh, vợ anh và anh Tùng là hư cấu; số liệu là thật.\n"
+      "Chia sẻ góc nhìn, không phải khuyến nghị mua bán.")
+META = {KEY: dict(kenh='@chungkhoanhuynguyen', seri='Câu hỏi lớn', ngay='2026-11-16', gio_goi_y='12:00', gio='12:00', nhac='lofi',
+    tieu_de=TIEU, title=TIEU, mo_ta=MT,
+    tags=['GDP Việt Nam', 'tăng trưởng GDP 2026', 'thu nhập người lao động', 'lương thực tế', 'lạm phát', 'giá xăng', 'lương tối thiểu vùng 2027', 'kinh tế Việt Nam', 'vĩ mô'],
+    bia_hook=['GDP +9,95%', 'LƯƠNG +4,5%?'], badge='QUÝ 3/2026 · TCTK',
+    bia_anh='Ho Chi Minh City skyline night||Hanoi skyline night',
+    bia_hook_b=['TĂNG 820K', 'CÒN 390K???'], badge_b='PHIẾU LƯƠNG THÁNG 9',
+    bia_hook_c=['BÁNH TO 12,9%', 'LƯƠNG 9,85%'], badge_c='CÂU HỎI LỚN',
+    reel_hook='GDP TĂNG GẦN 10%|LƯƠNG THẬT TĂNG MẤY???',
+    fb_post=("GDP tăng gần 10%, lương thật tăng bao nhiêu? 💸\n\n👉 GDP quý 3/2026: +9,95%\n👉 Thu nhập lao động: +9,85%, trừ giá cả chỉ còn khoảng +4,5%\n"
+             "👉 Xăng +15,6%, tiền nhà điện nước +6,5% so cùng kỳ\n\nLương năm nay của anh chị tăng bao nhiêu?\n🎬 Xem đầy đủ: {LINK}"),
+    chuong=[c['ch'] for c in S if c.get('ch')])}
+os.makedirs(LO, exist_ok=True)
+open(LO + '/video_dai.py', 'w', encoding='utf-8').write(
+    "# VIDEO DÀI kênh chính – câu hỏi lớn: GDP tăng gần 10 phần trăm, lương thật tăng bao nhiêu (NV1 13/11/2026).\n"
+    "CHI_CTA_CUOI = True\nGOLD=%r; RED=%r; GREEN=%r; BLUE=%r; WHITE=%r\nS = {}\n" % (GOLD, RED, GREEN, BLUE, WHITE) + "S[%r] = %r\n" % (KEY, S) + "META = %r\n" % META)
+json.dump(META, open(LO + '/meta.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+json.dump({}, open(LO + '/px_tuan.json', 'w'))
+from collections import Counter
+cnt = Counter(c['k'] for c in S); dt = sum(cnt[k] for k in ('chat', 'noti', 'call', 'giay'))
+print('so chu', lib.dem(S), 'canh', len(S), dict(cnt), 'dien thoai/giay %d/%d' % (dt, len(S)), len(TIEU))
+sys.path.insert(0, CW + '/_video'); import kiem_loi
+for q in kiem_loi.kiem([{"loi": c['say']} for c in S], None, False):
+    if 'câu cụt' not in q: print(q)
