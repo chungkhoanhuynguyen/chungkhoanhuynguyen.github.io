@@ -101,7 +101,8 @@ jobs:
           # giữ 12 lô gần nhất; đẩy lại dạng orphan (1 commit) để repo không phình; thử lại nếu đụng lô khác
           for i in 1 2 3 4 5 6; do
             git fetch -q --depth 1 origin video-out 2>/dev/null && git reset -q --hard FETCH_HEAD || true
-            ls -1d */ 2>/dev/null | sort | head -n -11 | xargs -r rm -rf
+            rm -rf tuan_*/ 2>/dev/null || true   # lô tuần 3/11 cũ đã đăng hết (còn trong Release) – trước đây chiếm chỗ làm lô mới bị xoá
+            ls -1d 20*/ 2>/dev/null | sort | head -n -11 | xargs -r rm -rf
             rm -rf "$B" && cp -r "/tmp/vo/$B" .
             git checkout -q --orphan tmp_$i && git add -A && git commit -qm "video $B" && git push -qf origin tmp_$i:video-out && break
             sleep $((RANDOM % 20 + 5))
