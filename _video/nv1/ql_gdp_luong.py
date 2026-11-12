@@ -60,13 +60,13 @@ S = [
  dict(k='cards', anh=TP, cap=('SAU 2 NĂM', 'KHOẢNG CÁCH DOÃNG RA'), cols=CR, moc=True,
       cards=[('+26%', 'GDP danh nghĩa, quý 3/2024 tới nay', 'Bánh lớn thêm một phần tư'), ('+20,4%', 'Thu nhập lao động cùng kỳ', 'Từ 7,63 lên 9,18 triệu')],
       say=("Kéo dài ra hai năm, khoảng cách còn rõ hơn. Từ quý ba năm 2024 tới quý ba năm 2026, GDP danh nghĩa tăng khoảng hai mươi sáu phần trăm. "
-           "Thu nhập bình quân của người lao động tăng hai mươi phẩy bốn phần trăm, từ bảy phẩy sáu ba triệu lên chín phẩy một tám triệu. Mỗi năm, phần của người làm công trong chiếc bánh lại mỏng đi một chút.")),
+           "Thu nhập bình quân của người lao động tăng hai mươi phẩy bốn phần trăm, từ bảy phẩy sáu ba triệu lên chín phẩy một tám triệu. Cứ thế, phần của người làm công trong chiếc bánh lại mỏng đi một chút.")),
  dict(k='giay', cap=('PHIẾU LƯƠNG THÁNG 9', 'TĂNG 820 NGHÌN'), cols=CC, moc=True, giay=dict(tieu_de='PHIẾU LƯƠNG THÁNG 9/2026', so='Nhân viên: Nguyễn Văn Minh – tổ đóng gói', dau='ĐÃ NHẬN', dieu=[
         ('Thực nhận tháng 9/2025: 8.360.000 đồng', '8,36 TR'),
         ('Thực nhận tháng 9/2026: 9.180.000 đồng', '9,18 TR'),
         ('Tăng thêm sau một năm: khoảng 820.000 đồng', '+820K')]),
       say=("Anh Minh lật lại phiếu lương. Tháng chín năm ngoái anh thực nhận tám phẩy ba sáu triệu đồng, đúng bằng mức bình quân cả nước lúc đó. "
-           "Tháng này là chín phẩy một tám triệu. Tăng thêm khoảng tám trăm hai mươi nghìn đồng mỗi tháng. Nghe cũng được. Cho tới khi anh mở cuốn sổ chi tiêu của vợ.")),
+           "Tháng này là chín phẩy một tám triệu. Tăng thêm khoảng tám trăm hai mươi nghìn đồng mỗi tháng. Nghe qua thì con số này cũng được. Cho tới khi anh mở cuốn sổ chi tiêu của vợ.")),
  # ---------------- CHƯƠNG 3 ----------------
  dict(k='cards', ch='Chương 3 – Giá cả ăn mất bao nhiêu?', anh=CHO, cap=('GIÁ TĂNG TRONG 12 THÁNG', 'THÁNG 10/2026, TCTK'), cols=CR, moc=True,
       cards=[('+15,6%', 'Nhóm giao thông, xăng dầu', 'Tăng mạnh nhất'), ('+6,5%', 'Nhà ở, điện nước, chất đốt', 'Tiền trọ, tiền điện'), ('+3,6%', 'Hàng ăn và ăn uống', 'Nhóm lớn nhất rổ hàng')],
@@ -95,14 +95,14 @@ S = [
            "Lạm phát là năm phẩy không chín phần trăm. Trừ đi, tiền gửi chỉ lớn lên khoảng không phẩy ba điểm phần trăm. Không mất, nhưng gần như đứng yên trong khi chiếc bánh cả nước lớn thêm gần mười ba phần trăm.")),
  dict(k='call', cap=('"PHẦN BÁNH TO NHẤT', 'NẰM Ở LỢI NHUẬN"'), cols=CC, call=dict(ten='Anh Tùng', phu='Tổ trưởng, 15 năm trong khu công nghiệp', mau=G_, loi=[
         'Đơn hàng tăng thì công ty lãi trước', 'Lương thường tăng sau, chậm hơn']),
-      say=("Anh Minh gọi cho anh Tùng, tổ trưởng đã làm mười lăm năm trong khu công nghiệp. Anh Tùng cười: chú để ý mà xem, đơn hàng tăng thì công ty lãi trước, lương anh em mình thường tăng sau và chậm hơn. "
+      say=("Anh Minh gọi cho anh Tùng, tổ trưởng đã làm mười lăm năm trong khu công nghiệp. Anh Tùng cười: chú để ý mà xem, đơn hàng tăng thì công ty lãi trước, lương công nhân thường tăng sau và chậm hơn. "
            "Kinh tế chạy nhanh thì người sở hữu doanh nghiệp, nhà xưởng, đất đai thường được chia phần bánh lớn trước. Người chỉ có sức lao động đứng cuối hàng.")),
  # ---------------- CHƯƠNG 5 ----------------
  dict(k='bars', ch='Chương 5 – Lịch sử từng lặp lại', anh=CANG, cap=('TĂNG TRƯỞNG GDP THỰC', 'KHÔNG ĐI MỘT ĐƯỜNG THẲNG'), cols=CR, moc=True,
       bars=[('2022', 8.54, GOLD, '8,54%'), ('2023', 4.98, RED, '4,98%'), ('2025', 8.02, GOLD, '8,02%'), ('9T/2026', 9.01, GREEN, '9,01%')],
       say=("Có một điều lịch sử từng dạy. Năm 2022, GDP Việt Nam tăng tám phẩy năm tư phần trăm, cao nhất trong hơn một thập kỷ khi đó. Ai cũng nghĩ năm sau sẽ còn tốt hơn. "
            "Nhưng năm 2023, tăng trưởng chỉ còn bốn phẩy chín tám phần trăm. Đơn hàng xuất khẩu giảm, nhiều công nhân khu công nghiệp bị cắt giờ làm, có người mất việc. Tăng trưởng không đi một đường thẳng.")),
- dict(k='text', cap=('KHI KINH TẾ CHẬM LẠI', 'LƯƠNG THƯỜNG CHỊU TRƯỚC'), cols=CR, anh=CANG,
+ dict(k='text', cap=('KHI KINH TẾ CHẬM LẠI', 'LƯƠNG THƯỜNG CHỊU TRƯỚC'), cols=CR, anh='Hanoi skyline night||Hanoi skyline',
       say=("Và anh chị để ý: lúc kinh tế tăng tốc, lương tăng sau. Lúc kinh tế chậm lại, người làm công lại thường chịu trước, bằng giờ làm thêm bị cắt, thưởng Tết mỏng đi. "
            "Nên câu hỏi không chỉ là GDP năm nay tăng bao nhiêu, mà là khi chu kỳ đổi chiều, gia đình mình có một tấm đệm nào hay chưa.")),
  # ---------------- CHƯƠNG 6 ----------------
@@ -124,7 +124,7 @@ S = [
              ('Lợi nhuận có tăng nhanh hơn GDP?', GREEN),
              ('Chu kỳ đang ở đầu hay cuối?', GOLD)],
       say=("Với người có thêm khoản đầu tư, em gợi ý ba câu hỏi mỗi khi nghe GDP tăng mạnh. Một: tăng trưởng đang chảy vào ngành nào, xuất khẩu, xây dựng hay tiêu dùng? "
-           "Hai: lợi nhuận của doanh nghiệp mình quan tâm có thật sự tăng nhanh hơn GDP không, hay chỉ có doanh thu tăng? Ba: chu kỳ đang ở đầu hay ở cuối, như năm 2022 so với năm 2023? "
+           "Hai: lợi nhuận của doanh nghiệp mình quan tâm có thật sự tăng nhanh hơn GDP không, hay chỉ có doanh thu tăng? Ba: chu kỳ đang ở đầu hay ở cuối, như năm 2022, ngay trước một năm tăng trưởng chậm lại? "
            "Anh chị có thể tra lợi nhuận từng quý của hơn bốn trăm mã miễn phí trên chứng khoán Huy Nguyễn chấm com.")),
  # ---------------- KẾT ----------------
  dict(k='chat', ch='Kết – Tin nhắn lúc nửa đêm', cap=('"TĂNG TRƯỞNG CỦA NHÀ MÌNH', 'MÌNH TỰ LO"'), cols=CC, moc=True, chat=dict(ten='Vợ', tv='Đang hoạt động', gio='23:45', mau=X_, msgs=[
