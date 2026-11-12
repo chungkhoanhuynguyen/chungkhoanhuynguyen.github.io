@@ -10,6 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with: {fetch-depth: 1}
-      - run: python3 -u _kiem/${{ inputs.tep }} | tee _kiem/ketqua.txt
+      - run: python3 -u _kiem/${{ inputs.tep }} 2>&1 | tee _kiem/ketqua.txt
       - uses: actions/upload-artifact@v4
         with: {name: bt, path: _kiem/ketqua.txt}

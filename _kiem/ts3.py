@@ -163,7 +163,7 @@ def snap(k):
         if not f: continue
         n_pb = sum(1 for v in PB[s][max(0, k - 1250):k] if v)
         x = tb5(s, CAL[k])
-        if x and n_pb >= 750: out.append((math.log(f["mn"]), dict(x, lroe=math.log(max(0.03, x["roe"]))), s))
+        if x and n_pb >= 480: out.append((math.log(f["mn"]), dict(x, lroe=math.log(max(0.03, x["roe"]))), s))
     return out
 DEC = [k for k in ME if CAL[k][5:7] == "12"]
 MODEL = {}
