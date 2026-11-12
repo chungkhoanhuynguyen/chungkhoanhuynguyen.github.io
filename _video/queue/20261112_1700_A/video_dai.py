@@ -1,4 +1,4 @@
-# VIDEO DÀI kênh phụ @chungkhoanhuynguyen4 (LST) – THỬ KÊNH A 'Thật tệ khi… thảm hoạ thế giới', tập 1/5 (QL1 12/11/2026).
+# VIDEO DÀI kênh phụ @chungkhoanhuynguyen3 (Huy Invest – đã xác minh, gắn được bìa) – THỬ KÊNH A 'Thật tệ khi… thảm hoạ thế giới', tập 1/5 (QL1 12/11/2026).
 XH_BAN = True; NO_CTA = True
 GOLD=(255, 196, 0); RED=(239, 68, 68); GREEN=(34, 197, 94); BLUE=(56, 189, 248); WHITE=(255, 255, 255)
 S = {}
@@ -72,7 +72,7 @@ _MOTA = ('Nếu chiến tranh hạt nhân nổ ra ở nơi cách bạn hàng ngh
  'Kênh chính: https://www.youtube.com/@chungkhoanhuynguyen\nTìm hiểu thêm: https://chungkhoanhuynguyen.com\n\n'
  'Nhân vật là hư cấu. Chia sẻ góc nhìn, không phải tư vấn tài chính.\n\n#chientranhhatnhan #thattekhi #taichinh')
 META = {'VTA1HN': {
- 'kenh': '@chungkhoanhuynguyen4', 'seri': 'Thật tệ khi… (thử kênh A)', 'ngay': '2026-11-16', 'gio_goi_y': '19:00', 'gio': '19:00', 'nhac': 'lofi',
+ 'kenh': 'Huy Invest (@chungkhoanhuynguyen3)', 'seri': 'Thật tệ khi… (thử kênh A)', 'ngay': '2026-11-16', 'gio_goi_y': '19:00', 'gio': '19:00', 'nhac': 'lofi',
  'tieu_de': 'Nếu Chiến Tranh Hạt Nhân Nổ Ra: Thật Tệ Khi Kệ Siêu Thị Trống Trơn, VN-Index Mất 11% Và 5 Tỷ Người Thiếu Ăn',
  'title': 'Nếu Chiến Tranh Hạt Nhân Nổ Ra: Thật Tệ Khi Kệ Siêu Thị Trống Trơn, VN-Index Mất 11% Và 5 Tỷ Người Thiếu Ăn',
  'mo_ta': _MOTA,
