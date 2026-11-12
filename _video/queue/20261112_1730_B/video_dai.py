@@ -5,7 +5,7 @@ S = {}
 S['VTB1USD'] = [
  {'k': 'noti', 'ch': 'Mở đầu', 'cap': ('LƯƠNG 15 TRIỆU', 'BỖNG THÀNH 15 TRIỆU ĐÔ?'), 'cols': (WHITE, GOLD),
   'noti': {'gio': '07:05', 'ngay': 'Thứ Hai', 'items': [('Ngân hàng', 'Biến động số dư', 'Số dư: 15.000.000 VND = 15.000.000 USD', GREEN), ('Zalo', 'Nhóm gia đình', 'Thật không? Mình giàu rồi à?', GOLD)]},
-  'say': 'Bảy giờ sáng thứ Hai, bạn mở ứng dụng ngân hàng và đứng hình. Từ hôm nay, một đồng Việt Nam bằng đúng một đô la Mỹ. Mười lăm triệu đồng tiền lương trong tài khoản, nếu đổi ra, bằng mười lăm triệu đô la. Nhóm gia đình nổ tung: thật không? Mình giàu rồi à? Bạn cũng nghĩ vậy. Trong khoảng mười phút.'},
+  'say': 'Bảy giờ sáng thứ Hai, bạn mở ứng dụng ngân hàng và đứng hình. Từ hôm nay, một đồng Việt Nam bằng đúng một đô la Mỹ. Mười lăm triệu đồng tiền lương trong tài khoản, nếu đổi ra, bằng mười lăm triệu đô la. Nhóm gia đình nổ tung: thật không? Mình giàu rồi à? Bạn cũng nghĩ vậy. Trong khoảng mười phút. Vì đến trưa, lương của bạn chỉ còn năm trăm bảy mươi chín đồng. Và chiếc áo bạn may ở xưởng, bán sang Mỹ, có giá hai trăm nghìn đô la. Không ai mua.'},
  {'k': 'text', 'cap': ('THẬT TỆ KHI', '1 VND BẰNG 1 USD'), 'cols': (WHITE, GOLD), 'anh': 'ov:vietnamese dong banknotes||vietnam money',
   'say': 'Nghe như giấc mơ của cả nước: tiền mình mạnh ngang đô la, đi du lịch Mỹ như đi chợ, mua iPhone bằng vài chục đồng. Nhưng có đúng hai cách để một đồng bằng một đô la. Và cả hai cách đều tệ hơn bạn nghĩ rất nhiều.'},
  {'k': 'bignum', 'ch': 'Chương 1 – Cách thứ nhất: xoá bớt số không', 'anh': 'ov:vietnamese dong banknotes||vietnam money', 'cap': ('HÔM NAY', '1 USD BẰNG BAO NHIÊU ĐỒNG?'), 'cols': (WHITE, GOLD), 'moc': True,
@@ -59,7 +59,7 @@ META = {'VTB1USD': {
  'title': 'Nếu 1 VND = 1 USD: Thật Tệ Khi Lương 15 Triệu Thành 579 Đồng Và Chiếc Áo Xuất Khẩu Giá 200.000 Đô',
  'mo_ta': _MOTA,
  'tags': ['1 VND bằng 1 USD', 'đổi tiền', 'đổi tiền 1985', 'xoá số 0 tiền Việt', 'tỷ giá USD', 'đồng tiền mạnh', 'Indonesia đổi tiền rupiah', 'lạm phát', 'thật tệ khi', 'Chứng Khoán Huy Nguyễn'],
- 'bia_hook': ('NẾU 1 VND', '= 1 USD'), 'badge': 'THẬT TỆ KHI…', 'bia_anh': 'ov:vietnamese dong banknotes||vietnam money',
- 'bia_hook_b': ('LƯƠNG 15 TRIỆU', 'CÒN 579 ĐỒNG'), 'badge_b': 'ĐỔI TIỀN',
- 'bia_hook_c': ('MÌNH GIÀU', 'HAY NGHÈO ĐI?'), 'badge_c': 'THẬT TỆ KHI…',
+ 'bia_hook': ('1 VND', '= 1 USD?'), 'badge': 'THẬT TỆ KHI…', 'bia_anh': 'ov:vietnamese dong banknotes||vietnam money',
+ 'bia_hook_b': ('LƯƠNG 15TR', 'CÒN 579 Đ'), 'badge_b': 'ĐỔI TIỀN',
+ 'bia_hook_c': ('GIÀU HAY', 'NGHÈO ĐI?'), 'badge_c': 'THẬT TỆ KHI…',
  'chuong': ['Mở đầu', 'Chương 1 – Cách thứ nhất: xoá bớt số không', 'Chương 2 – Việt Nam đã từng làm thật', 'Chương 3 – Cách thứ hai: đồng tiền mạnh thật', 'Chương 4 – Tiền của bạn sẽ ra sao?', 'Kết – Câu hỏi cho bạn']}}
