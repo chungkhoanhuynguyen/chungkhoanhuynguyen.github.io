@@ -161,7 +161,7 @@ MT = ("NÓNG: 46/46 ngân hàng đồng loạt giảm lãi huy động, mở đ�
       "Cần trao đổi riêng về danh mục: Zalo 0365.188.286\n\n"
       "Nhân vật anh Tuấn, chị Hạnh, anh Long và các điều khoản hợp đồng là hư cấu; số liệu thị trường là thật.\n"
       "Chia sẻ góc nhìn, không phải khuyến nghị mua bán.")
-META = {KEY: dict(kenh='@chungkhoanhuynguyen', seri='Tin nóng trong ngày', ngay='2026-11-13', gio_goi_y='12:00', gio='12:00', nhac='lofi',
+META = {KEY: dict(kenh='@chungkhoanhuynguyen', seri='Tin nóng trong ngày', ngay='2026-11-13', gio_goi_y='19:30', gio='19:30', nhac='lofi',
     tieu_de=TIEU, title=TIEU, mo_ta=MT,
     tags=['lãi suất ngân hàng', 'giảm lãi suất', 'lãi suất vay mua nhà', 'lãi suất thả nổi', 'lãi suất tiết kiệm', '46 ngân hàng giảm lãi suất', 'lạm phát', 'vay mua nhà', 'tin nóng tài chính', 'vĩ mô Việt Nam'],
     bia_hook=['GIẢM LÃI 2%', 'SAO VẪN 13%?'], badge='NÓNG: 46 NGÂN HÀNG',
