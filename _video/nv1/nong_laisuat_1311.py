@@ -74,7 +74,7 @@ S = [
            "Hết ưu đãi, lãi thả nổi có thể lên mười ba đến mười lăm phần trăm, tùy từng nơi. Anh Tuấn ở mức mười ba, chưa phải tệ nhất.")),
  # ---------------- CHƯƠNG 3 ----------------
  dict(k='bignum', ch='Chương 3 – Vì sao lãi vay khó giảm sâu?', anh=HN, cap=('NĂM 2027 CẦN', '6,4 TRIỆU TỶ VỐN'), cols=CC, moc=True, value=6.4, fmt='{:,.1f}', unit=' triệu tỷ', top='VỐN ĐẦU TƯ TOÀN XÃ HỘI 2027', sub='Khoảng 36 đến 38% GDP', col=GOLD,
-      say=("Vì sao ngân hàng không giảm đều cho tất cả? Chiều mười hai tháng mười một, Thủ tướng báo cáo trước Quốc hội. Theo đó, năm 2027 cần huy động khoảng sáu triệu tỷ đến sáu phẩy bốn triệu tỷ đồng vốn đầu tư toàn xã hội. Con số đó tương đương ba mươi sáu đến ba mươi tám phần trăm GDP. "
+      say=("Vì sao ngân hàng không giảm đều cho tất cả? Chiều mười hai tháng mười một, Thủ tướng báo cáo trước Quốc hội. Theo đó, năm 2027 cần huy động tới sáu phẩy bốn triệu tỷ đồng vốn đầu tư toàn xã hội. Con số đó tương đương ba mươi sáu đến ba mươi tám phần trăm GDP. "
            "Nhu cầu vốn khổng lồ như vậy, mà phần lớn vốn trung và dài hạn vẫn đang đi qua ngân hàng.")),
  dict(k='cards', anh=HN, cap=('CHO VAY CHẠY NHANH HƠN', 'TIỀN GỬI'), cols=CR, moc=True,
       cards=[('11%', 'Tín dụng 10 tháng 2026', 'TĂNG HƠN 11%'), ('10%', 'Huy động 10 tháng 2026', 'TĂNG GẦN 10%'), ('19%', 'Định hướng tín dụng cả năm', 'NÂNG TỪ 15 ĐẾN 16%')],
