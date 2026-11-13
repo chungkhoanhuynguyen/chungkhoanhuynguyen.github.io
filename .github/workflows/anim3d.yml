@@ -1,0 +1,43 @@
+name: Dung hoat hinh 3D (demo)
+on:
+  workflow_dispatch:
+    inputs:
+      comp: {default: "PhoDemo"}
+      frames: {default: "636"}
+      tag: {default: "anim3d-demo"}
+jobs:
+  part:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix: {i: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]}
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 1, sparse-checkout: _video/anim3d}
+      - uses: actions/setup-node@v4
+        with: {node-version: 20}
+      - run: sudo apt-get -qq install -y fonts-dejavu-core >/dev/null || true
+      - working-directory: _video/anim3d
+        run: |
+          npm i --no-audit --no-fund -s
+          N=${{ inputs.frames }}; i=${{ matrix.i }}; per=$(( (N + 19) / 20 )); a=$(( i * per )); b=$(( a + per - 1 )); [ $b -ge $N ] && b=$((N-1))
+          printf -v pad "%02d" $i
+          node render.mjs ${{ inputs.comp }} $a $b part_$pad.mp4
+      - uses: actions/upload-artifact@v4
+        with: {name: "part_${{ matrix.i }}", path: _video/anim3d/part_*.mp4, retention-days: 3}
+  join:
+    needs: part
+    runs-on: ubuntu-latest
+    permissions: {contents: write}
+    steps:
+      - uses: actions/download-artifact@v4
+        with: {path: parts, merge-multiple: true}
+      - run: |
+          sudo apt-get -qq install -y ffmpeg >/dev/null
+          ls parts | sort | sed "s#^#file 'parts/#; s#\$#'#" > list.txt
+          ffmpeg -v error -f concat -safe 0 -i list.txt -c copy video.mp4
+          curl -sSL -o voice.mp4 https://github.com/${{ github.repository }}/releases/download/video-20261112_1930_D1/VTD1F0.mp4
+          ffmpeg -v error -i video.mp4 -t 21.2 -i voice.mp4 -map 0:v -map 1:a -c:v copy -c:a aac -b:a 160k -shortest ${{ inputs.comp }}.mp4
+          gh release create ${{ inputs.tag }} -R ${{ github.repository }} -t "${{ inputs.tag }}" -n "demo 3D" ${{ inputs.comp }}.mp4 || gh release upload ${{ inputs.tag }} -R ${{ github.repository }} ${{ inputs.comp }}.mp4 --clobber
+        env: {GH_TOKEN: "${{ github.token }}"}
