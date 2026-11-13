@@ -227,7 +227,7 @@ const DEF_LIGHT = rad(-120);
 
 // ---------------- faces ----------------
 export type Expr = "neutral" | "stern" | "grin" | "laugh" | "whistle" | "nervous" | "shock" | "relief" | "relief_open" | "dazed"
-  | "pained" | "smile" | "smile_closed" | "lick";
+  | "pained" | "smile" | "smile_closed" | "lick" | "sad" | "cry" | "smug" | "sleepy" | "worried";
 type EyeK = "dot" | "small" | "lid" | "slit" | "happy" | "dash" | "squeeze" | "shock" | "shockHalf" | "spiral";
 type MouthK = "dash" | "frown" | "smirk" | "smile" | "smileWide" | "grin" | "laugh" | "o" | "O" | "wave" | "teeth" | "lick";
 /** eyes [back, front], brows [inner, outer] offsets in u (+ = down), mouth kind */
@@ -246,6 +246,11 @@ const FACE: Record<Expr, { eye: [EyeK, EyeK]; brow: [number, number]; mouth: Mou
   smile: { eye: ["dot", "dot"], brow: [0, -1], mouth: "smirk" },
   smile_closed: { eye: ["happy", "happy"], brow: [0, -1], mouth: "smile" },
   lick: { eye: ["dot", "dot"], brow: [0, -1], mouth: "lick" },
+  sad: { eye: ["small", "small"], brow: [-5, 4], mouth: "frown" },
+  cry: { eye: ["squeeze", "squeeze"], brow: [-6, 4], mouth: "O" },
+  smug: { eye: ["lid", "lid"], brow: [-1, -4], mouth: "smirk" },
+  sleepy: { eye: ["dash", "dash"], brow: [0, 1], mouth: "dash" },
+  worried: { eye: ["dot", "dot"], brow: [-5, 3], mouth: "wave" },
 };
 const halfLid = (k: EyeK): EyeK => (k === "dot" || k === "small" ? "lid" : k === "lid" ? "slit" : k === "shock" ? "shockHalf" : k);
 const eyeKind = (k: EyeK, lid: number): EyeK =>
@@ -424,7 +429,7 @@ const hatOn = (p: Pen, o: Outfit, hp: P2[], H: Blob, cx: number, hc: number, lig
 // ---------------- bodies ----------------
 export type Arms = [P2[], P2[]];
 /** held prop; for the hammer the number is the strike 0 (raised) .. 1 (struck) */
-export type Prop = null | "icecream" | "shako" | ["hammer", number];
+export type Prop = null | "icecream" | "shako" | ["hammer", number] | "hold" | "hold2" | "face" | "up" | "type";
 
 const BUILD: Record<Build, { a: number; torso: number; legs: number; tw: number }> = {
   adult: { a: 118, torso: 1.1, legs: 1.4, tw: 0.8 },
@@ -520,6 +525,19 @@ export const bodyFront = (p: Pen, o: Outfit, opts: FrontOpts) => {
     } else if (wave !== undefined) {
       const S = sh(1);
       arms.push({ pts: [S, [tcx + 1.1 * T.a + 10 * u + 3 * u * wave, S[1] - 0.22 * HH], [tcx + 1.18 * T.a + 16 * u + 12 * u * wave, S[1] - 0.6 * HH]], front: false });
+    } else if (prop === "hold" || prop === "hold2" || prop === "up" || prop === "face" || prop === "type") {
+      const S = sh(1), L0 = sh(-1);
+      if (prop === "face") { arms.length = 0;
+        arms.push({ pts: [L0, [tcx - 1.0 * T.a, L0[1] + 0.2 * HH], [tcx - 0.42 * T.a, chin - 0.08 * HH]], front: true });
+        arms.push({ pts: [S, [tcx + 1.0 * T.a, S[1] + 0.2 * HH], [tcx + 0.42 * T.a, chin - 0.08 * HH]], front: true });
+      } else if (prop === "type") { arms.length = 0;
+        arms.push({ pts: [L0, [tcx - 1.05 * T.a, L0[1] + 0.42 * HH], [tcx - 0.55 * T.a, L0[1] + 0.5 * HH]], front: true });
+        arms.push({ pts: [S, [tcx + 1.05 * T.a, S[1] + 0.42 * HH], [tcx + 0.55 * T.a, S[1] + 0.5 * HH]], front: true });
+      } else if (prop === "up") arms.push({ pts: [S, [tcx + 1.1 * T.a + 6 * u, S[1] + 0.3 * HH], [tcx + 0.7 * T.a, S[1] - 0.05 * HH]], front: true });
+      else {
+        arms.push({ pts: [S, [tcx + 1.05 * T.a + 4 * u, S[1] + 0.45 * HH], [tcx + 0.42 * T.a, S[1] + 0.36 * HH]], front: true });
+        if (prop === "hold2") { arms.shift(); arms.unshift({ pts: [L0, [tcx - 1.05 * T.a - 4 * u, L0[1] + 0.45 * HH], [tcx - 0.42 * T.a, L0[1] + 0.36 * HH]], front: true }); }
+      }
     } else if (prop === "icecream") {
       const S = sh(1);
       arms.push({ pts: [S, [tcx + 1.05 * T.a + 4 * u, S[1] + 0.45 * HH], [tcx + 0.5 * T.a, S[1] + 0.4 * HH]], front: true });
@@ -602,6 +620,7 @@ export const bodyFront = (p: Pen, o: Outfit, opts: FrontOpts) => {
   const brim = !!o.hat && o.hat !== "hair" && o.hat !== "bonnet" && o.hat !== "cap";
   faceFront(p, 300, hc, W, expr, facing, look, lid, brim, skin, o.moustache, o.build === "stout");
   p.rot = null;
+  return { hc, crown, chin, W, HH, u, sole, torsoBot, tcx, Ta: T.a, hands: arms.map((a) => a.pts[2]) };
 };
 
 export type SideOpts = {

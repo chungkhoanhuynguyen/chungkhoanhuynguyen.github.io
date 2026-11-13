@@ -1,0 +1,54 @@
+name: Dung video ke chuyen 3D (vang dinh)
+on:
+  workflow_dispatch:
+    inputs:
+      comp: {default: "Vang"}
+      tag: {default: "vang-video"}
+      voice: {default: "vang-voice"}
+jobs:
+  part:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      matrix: {i: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]}
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 1, sparse-checkout: _video/anim3d}
+      - uses: actions/setup-node@v4
+        with: {node-version: 20}
+      - uses: actions/cache@v4
+        with: {path: _video/anim3d/node_modules, key: anim3d-nm-${{ hashFiles('_video/anim3d/package.json') }}}
+      - run: sudo apt-get -qq install -y fonts-dejavu-core >/dev/null || true
+      - working-directory: _video/anim3d
+        run: |
+          npm i --no-audit --no-fund -s
+          python3 vang/cuts.py src/videos/vang/timing.json src/videos/vang/Vang.tsx /tmp/cuts.json ranges.json 20
+          R=$(python3 -c "import json;r=json.load(open('ranges.json'))[${{ matrix.i }}];print(r[0],r[1])")
+          printf -v pad "%02d" ${{ matrix.i }}
+          node render.mjs ${{ inputs.comp }} $R part_$pad.mp4 1
+      - uses: actions/upload-artifact@v4
+        with: {name: "part_${{ matrix.i }}", path: _video/anim3d/part_*.mp4, retention-days: 3}
+  join:
+    needs: part
+    runs-on: ubuntu-latest
+    permissions: {contents: write}
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 1, sparse-checkout: _video}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - uses: actions/download-artifact@v4
+        with: {path: parts, merge-multiple: true}
+      - run: |
+          sudo apt-get -qq install -y ffmpeg >/dev/null; pip install -q numpy
+          ls parts | sort | sed "s#^#file 'parts/#; s#\$#'#" > list.txt
+          ffmpeg -v error -f concat -safe 0 -i list.txt -c copy video.mp4
+          R=${{ github.repository }}
+          gh api repos/$R/releases/tags/${{ inputs.voice }} --jq '.assets[]|select(.name=="voice.wav")|.id' | xargs -I{} gh api -H "Accept: application/octet-stream" repos/$R/releases/assets/{} > voice.wav
+          A=_video/anim3d; python3 $A/vang/cuts.py $A/src/videos/vang/timing.json $A/src/videos/vang/Vang.tsx cuts.json
+          python3 $A/vang/am_thanh.py $A/src/videos/vang/timing.json voice.wav cuts.json mix.wav
+          ffmpeg -v error -i video.mp4 -i mix.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -shortest -movflags +faststart ${{ inputs.comp }}.mp4
+          ls -la *.mp4
+          gh release create ${{ inputs.tag }} -R $R -t "${{ inputs.tag }}" -n "video ke chuyen 3D" ${{ inputs.comp }}.mp4 || gh release upload ${{ inputs.tag }} -R $R ${{ inputs.comp }}.mp4 --clobber
+        env: {GH_TOKEN: "${{ github.token }}"}
