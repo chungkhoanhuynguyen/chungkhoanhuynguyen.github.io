@@ -44,7 +44,7 @@ S = [
         ('me', 'Ngân hàng giảm lãi 2% rồi mà sao khoản vay của anh lên 13%?'),
         ('Vợ', 'Anh đọc kỹ chưa? Giảm cho ai?'),
         ('Vợ', 'Sổ tiết kiệm 500 triệu của em tuần sau đáo hạn đấy')]),
-      say=("Anh nhắn cho vợ: ngân hàng giảm lãi hai phần trăm rồi, sao khoản vay của anh lại lên mười ba? Chị Hạnh, vợ anh, làm kế toán, trả lời gọn: anh đọc kỹ chưa, giảm cho ai? "
+      say=("Anh nhắn cho vợ: ngân hàng giảm lãi hai phần trăm rồi, sao khoản vay của anh lại lên mười ba phần trăm? Chị Hạnh, vợ anh, làm kế toán, trả lời gọn: anh đọc kỹ chưa, giảm cho ai? "
            "Rồi chị nhắn thêm: sổ tiết kiệm năm trăm triệu của em tuần sau đáo hạn đấy.")),
  dict(k='giay', cap=('ĐỌC KỸ TIN GỐC', 'NGƯỜI GỬI TIỀN GIẢM TRƯỚC'), cols=CC, moc=True, giay=dict(tieu_de='GIẢM LÃI SUẤT THÁNG 11/2026', so='Tóm tắt theo báo chí ngày 11/11/2026', dau='ĐÃ ĐỌC', dieu=[
         ('46/46 ngân hàng giảm ít nhất 0,5 điểm lãi huy động.', 'NGƯỜI GỬI GIẢM'),
@@ -58,10 +58,10 @@ S = [
       say=("Nghĩa là hai phần trăm trên tiêu đề là mức giảm tối đa, cho một nhóm khách hàng cụ thể. Còn khoản vay cũ đang thả nổi như của anh Tuấn thì không nằm trong dòng nào cả.")),
  # ---------------- CHƯƠNG 2 ----------------
  dict(k='checklist', ch='Chương 2 – Ai được giảm, ai chưa?', anh=TP, cap=('AI ĐƯỢC GIẢM', 'AI CHƯA TỚI LƯỢT'), cols=CC, moc=True,
-      items=[('Nông nghiệp, nông thôn', GREEN), ('Doanh nghiệp xuất khẩu', GREEN), ('Doanh nghiệp nhỏ và vừa', GREEN), ('Công nghiệp hỗ trợ, công nghệ cao', GREEN), ('Vay mua nhà, vay tiêu dùng: chưa', RED)],
+      items=[('Nông nghiệp, hàng xuất khẩu', GREEN), ('DN nhỏ và vừa, công nghệ cao', GREEN), ('Công nghiệp hỗ trợ', GREEN), ('Vay mua nhà, tiêu dùng: chưa', RED)],
       say=("Một ngân hàng cổ phần lớn giảm một phẩy năm điểm cho năm lĩnh vực ưu tiên. Đó là nông nghiệp, hàng xuất khẩu, doanh nghiệp nhỏ và vừa, công nghiệp hỗ trợ và công nghệ cao. Vay mua nhà để ở, vay tiêu dùng, chưa phải đối tượng được ưu tiên ở đợt này.")),
  dict(k='bars', anh=NHA, cap=('VỐN CHẢY VỀ CHỦ ĐẦU TƯ', 'NGƯỜI MUA NHÀ ĐỨNG NGOÀI'), cols=CR, moc=True,
-      bars=[('Cho vay kinh doanh bất động sản', 19.59, GOLD, '+19,59%'), ('Cho vay mua nhà để ở', 1.02, RED, '+1,02%')],
+      bars=[('KD bất động sản', 19.59, GOLD, '+19,59%'), ('Mua nhà để ở', 1.02, RED, '+1,02%')],
       say=("Tính đến ba mươi mốt tháng tám, tín dụng cho kinh doanh bất động sản, tức là cho chủ đầu tư, tăng mười chín phẩy năm chín phần trăm. "
            "Trong khi cho vay mua nhà để ở chỉ tăng một phẩy không hai phần trăm. Tiền vẫn chảy vào bất động sản, nhưng chủ yếu vào phía người xây, chưa phải phía người mua để ở.")),
  dict(k='call', cap=('"KHOẢN CŨ CỦA ÔNG', 'CHỈ ĐỔI Ở KỲ ĐIỀU CHỈNH"'), cols=CC, moc=True, call=dict(ten='Anh Long', phu='Làm tín dụng ngân hàng', mau=X_, loi=[
@@ -74,7 +74,7 @@ S = [
            "Hết ưu đãi, lãi thả nổi có thể lên mười ba đến mười lăm phần trăm, tùy từng nơi. Anh Tuấn ở mức mười ba, chưa phải tệ nhất.")),
  # ---------------- CHƯƠNG 3 ----------------
  dict(k='bignum', ch='Chương 3 – Vì sao lãi vay khó giảm sâu?', anh=HN, cap=('NĂM 2027 CẦN', '6,4 TRIỆU TỶ VỐN'), cols=CC, moc=True, value=6.4, fmt='{:,.1f}', unit=' triệu tỷ', top='VỐN ĐẦU TƯ TOÀN XÃ HỘI 2027', sub='Khoảng 36 đến 38% GDP', col=GOLD,
-      say=("Vì sao ngân hàng không giảm đều cho tất cả? Chiều mười hai tháng mười một, Thủ tướng báo cáo trước Quốc hội. Theo đó, năm 2027 cần huy động khoảng sáu đến sáu phẩy bốn triệu tỷ đồng vốn đầu tư toàn xã hội. Con số đó tương đương ba mươi sáu đến ba mươi tám phần trăm GDP. "
+      say=("Vì sao ngân hàng không giảm đều cho tất cả? Chiều mười hai tháng mười một, Thủ tướng báo cáo trước Quốc hội. Theo đó, năm 2027 cần huy động khoảng sáu triệu tỷ đến sáu phẩy bốn triệu tỷ đồng vốn đầu tư toàn xã hội. Con số đó tương đương ba mươi sáu đến ba mươi tám phần trăm GDP. "
            "Nhu cầu vốn khổng lồ như vậy, mà phần lớn vốn trung và dài hạn vẫn đang đi qua ngân hàng.")),
  dict(k='cards', anh=HN, cap=('CHO VAY CHẠY NHANH HƠN', 'TIỀN GỬI'), cols=CR, moc=True,
       cards=[('11%', 'Tín dụng 10 tháng 2026', 'TĂNG HƠN 11%'), ('10%', 'Huy động 10 tháng 2026', 'TĂNG GẦN 10%'), ('19%', 'Định hướng tín dụng cả năm', 'NÂNG TỪ 15 ĐẾN 16%')],
@@ -97,7 +97,7 @@ S = [
       say=("Tối đó đến lượt chị Hạnh lo. Sổ năm trăm triệu của chị đáo hạn ngày hai mươi tháng mười một. Gửi lại là tiền gửi mới, đúng nhóm bị giảm lãi. "
            "Người gửi tiền chính là người góp phần trả cho đợt giảm lãi lần này.")),
  dict(k='bars', anh=CHO, cap=('LÃI TIẾT KIỆM', 'ĐANG SÁT LẠM PHÁT'), cols=CR, moc=True,
-      bars=[('Lãi 12 tháng, NH nhà nước', 5.4, GREEN, '5,4%'), ('Lạm phát tháng 10/2026', 5.09, RED, '5,09%'), ('Nếu giảm thêm 0,5 điểm', 4.9, GOLD, '4,9%')],
+      bars=[('Lãi gửi 12 tháng', 5.4, GREEN, '5,4%'), ('Lạm phát T10', 5.09, RED, '5,09%'), ('Nếu giảm 0,5', 4.9, GOLD, '4,9%')],
       say=("Theo dữ liệu WiData, lãi huy động mười hai tháng bình quân nhóm ngân hàng nhà nước đang là năm phẩy bốn phần trăm. Trong khi chỉ số giá tiêu dùng tháng mười tăng năm phẩy không chín phần trăm so với cùng kỳ. "
            "Nếu lãi giảm thêm không phẩy năm điểm, còn bốn phẩy chín phần trăm, thấp hơn tốc độ tăng giá.")),
  dict(k='giay', cap=('NẾU LÃI CÒN 4,9%', 'TIỀN GỬI THUA TRƯỢT GIÁ'), cols=CR, moc=True, giay=dict(tieu_de='SỔ CHI TIÊU CỦA CHỊ HẠNH', so='Sổ tiết kiệm 500 triệu, em giả định', dau='ĐÃ TÍNH', dieu=[
@@ -115,7 +115,7 @@ S = [
         ('NHNN sẽ xử lý ngân hàng không thực hiện chỉ đạo.', 'CÓ GIÁM SÁT'),
         ('Lãi qua đêm 6,07% ngày 6/11, về 4,33% ngày 11/11.', 'ĐÃ HẠ NHIỆT')]),
       say=("Và đây là ba dòng chữ nhỏ. Một, cuộc đua gom tiền gửi vẫn âm ỉ: qua các gói cộng thêm, có kỳ hạn người gửi thực nhận cao hơn biểu công bố tới hai phẩy chín điểm. "
-           "Hai, Ngân hàng Nhà nước nói sẽ xử lý nghiêm ngân hàng không thực hiện đúng chỉ đạo. Ba, lãi qua đêm liên ngân hàng từng lên sáu phẩy không bảy phần trăm ngày sáu tháng mười một, rồi về bốn phẩy ba mươi ba phần trăm ngày mười một. Áp lực đã dịu, nhưng chưa biến mất.")),
+           "Hai, Ngân hàng Nhà nước nói sẽ xử lý nghiêm ngân hàng không thực hiện đúng chỉ đạo. Ba, lãi qua đêm liên ngân hàng từng lên sáu phẩy không bảy phần trăm ngày sáu tháng mười một, rồi về khoảng bốn phẩy ba phần trăm ngày mười một. Áp lực đã dịu, nhưng chưa biến mất.")),
  # ---------------- CHƯƠNG 6 ----------------
  dict(k='giay', ch='Chương 6 – Phép thử của anh chị', cap=('HỢP ĐỒNG VAY', 'ĐỌC ĐÚNG 3 DÒNG'), cols=CC, moc=True, giay=dict(tieu_de='HỢP ĐỒNG TÍN DỤNG CỦA ANH TUẤN', so='Các điều khoản em giả định', dau='ĐÃ ĐỌC', dieu=[
         ('Lãi thả nổi: lãi cơ sở cộng biên độ 3,5 điểm.', 'BIÊN ĐỘ 3,5'),
@@ -129,7 +129,7 @@ S = [
            "Lấy hợp đồng vay ra: lãi trên hay dưới mười phần trăm, kỳ điều chỉnh tới là khi nào, biên độ là bao nhiêu. Biên độ là phần ngân hàng không giảm cho mình.")),
  dict(k='checklist', anh=HN, cap=('3 ĐIỀU CẦN THEO DÕI', 'TỪ NAY TỚI CUỐI NĂM'), cols=CC, moc=True,
       items=[('Lãi cơ sở có hạ ở kỳ tới?', GREEN), ('Lạm phát tháng 11 bao nhiêu?', GOLD), ('Qua đêm có vọt lại trên 6%?', GOLD)],
-      say=("Từ nay tới cuối năm, có ba điều đáng theo dõi. Ngân hàng của anh chị có hạ lãi cơ sở ở kỳ tới không. Chỉ số giá tháng mười một có vượt lãi tiết kiệm không. Và lãi qua đêm có vọt lại trên sáu phần trăm không. Muốn xem biên lãi và nợ xấu của từng ngân hàng qua các quý, anh chị có thể tra miễn phí trên chứng khoán Huy Nguyễn chấm com.")),
+      say=("Từ nay tới cuối năm, có ba điều đáng theo dõi. Ngân hàng của anh chị có hạ lãi cơ sở ở kỳ tới không. Chỉ số giá tháng mười một có vượt lãi tiết kiệm không. Và liệu lãi qua đêm có vọt lại trên mức sáu phần trăm lần nữa. Muốn xem biên lãi và nợ xấu của từng ngân hàng qua các quý, anh chị có thể tra miễn phí trên chứng khoán Huy Nguyễn chấm com.")),
  # ---------------- KẾT ----------------
  dict(k='chat', ch='Kết – Tin nhắn cuối ngày', cap=('"GIẢM LÃI CÓ THẬT', 'CHỈ CHƯA TỚI LƯỢT MÌNH"'), cols=CC, moc=True, chat=dict(ten='Vợ', tv='Đang hoạt động', gio='22:10', mau=G_, msgs=[
         ('me', 'Mai anh gọi ngân hàng hỏi kỳ điều chỉnh tới'),
@@ -138,7 +138,7 @@ S = [
       say=("Mười giờ tối, anh Tuấn nhắn cho vợ: mai anh gọi ngân hàng hỏi kỳ điều chỉnh tới. Chị Hạnh trả lời: sổ năm trăm triệu em chưa gửi lại vội, so lãi ba nơi đã. "
            "Anh gõ thêm một dòng: giảm lãi là có thật, chỉ là chưa tới lượt nhà mình.")),
  dict(k='end', cap=('LÃI CỦA ANH CHỊ', 'TRÊN HAY DƯỚI 5,09%?'), cols=CC,
-      say=("Còn anh chị, lãi khoản vay hoặc sổ tiết kiệm của anh chị đang là bao nhiêu, cao hơn hay thấp hơn mức lạm phát năm phẩy không chín? Kể cho em và mọi người ở phần bình luận nhé.")),
+      say=("Còn anh chị, lãi khoản vay hoặc sổ tiết kiệm của anh chị đang là bao nhiêu, cao hơn hay thấp hơn mức lạm phát năm phẩy không chín phần trăm? Kể cho em và mọi người ở phần bình luận nhé.")),
 ]
 import ql_post; S = ql_post.tach(S, max_tu=100, anh_mac_dinh='Ho Chi Minh City skyline night')
 for c in S: c['say'] = lib.doc(c['say'])
@@ -166,7 +166,7 @@ META = {KEY: dict(kenh='@chungkhoanhuynguyen', seri='Tin nóng trong ngày', nga
     tags=['lãi suất ngân hàng', 'giảm lãi suất', 'lãi suất vay mua nhà', 'lãi suất thả nổi', 'lãi suất tiết kiệm', '46 ngân hàng giảm lãi suất', 'lạm phát', 'vay mua nhà', 'tin nóng tài chính', 'vĩ mô Việt Nam'],
     bia_hook=['GIẢM LÃI 2%', 'SAO VẪN 13%?'], badge='NÓNG: 46 NGÂN HÀNG',
     bia_anh=NHA,
-    bia_hook_b=['TIẾT KIỆM 4,9%', 'GIÁ TĂNG 5,09%'], badge_b='AI TRẢ TIỀN GIẢM LÃI?',
+    bia_hook_b=['TIẾT KIỆM 5,4%', 'GIÁ TĂNG 5,09%'], badge_b='AI TRẢ TIỀN GIẢM LÃI?',
     bia_hook_c=['TRẢ THÊM 3,9TR', 'MỖI THÁNG???'], badge_c='VAY MUA NHÀ THẢ NỔI',
     fb_post=("46 ngân hàng giảm lãi suất – nhưng khoản vay mua nhà vẫn 13% 😳\n\n"
              "👉 Giảm 2% chỉ dành cho sản xuất kinh doanh ưu tiên\n👉 Vay mới bình quân mới giảm 0,2–0,5 điểm\n👉 Lãi tiết kiệm 12 tháng 5,4% đã sát lạm phát 5,09%\n\n"
