@@ -1,5 +1,6 @@
 // Vietnamese street textures painted with Canvas2D: tube-house facades, shop signs, roller shutters, tiles, asphalt.
 import * as THREE from "three";
+import { VNI } from "./vni";
 
 export const rng = (seed: number) => { let s = seed * 9301 + 49297; return () => { s = (s * 16807) % 2147483647; return s / 2147483647; }; };
 const tex = (c: HTMLCanvasElement, rep = false) => {
@@ -91,15 +92,18 @@ export function asphalt() {
 
 /** price board / phone screen: VN-Index chart, green rally (t<0) or crash progress 0..1 */
 export function chartCanvas(w = 512, h = 320) { return cv(w, h); }
-export function drawChart(g: CanvasRenderingContext2D, w: number, h: number, crash: number, title: string) {
+export function drawChart(g: CanvasRenderingContext2D, w: number, h: number, n: number, title: string) {
+  // real VN-Index daily closes; shows the first n sessions, green up to the 6/1/2022 peak, red after it
+  n = Math.max(2, Math.min(VNI.length, Math.round(n)));
   g.fillStyle = "#0e1726"; g.fillRect(0, 0, w, h);
-  g.fillStyle = "#e9eef5"; g.font = `800 ${Math.round(h * 0.09)}px 'DejaVu Sans', Arial`; g.textAlign = "left"; g.fillText(title, w * 0.05, h * 0.13);
-  const r = rng(11), N = 60, P: number[] = []; let v = 1100;
-  for (let i = 0; i < N; i++) { v *= i < 30 ? 1.011 + (r() - 0.5) * 0.02 : 0.985 + (r() - 0.5) * 0.02; P.push(v); }
-  const n = Math.round(30 + 30 * Math.max(0, Math.min(1, crash))), mx = Math.max(...P), mn = Math.min(...P) * 0.98;
-  const X = (i: number) => w * 0.05 + (i / N) * w * 0.9, Y = (p: number) => h * 0.92 - ((p - mn) / (mx - mn)) * h * 0.72;
-  for (let i = 1; i < n; i++) { const up = P[i] >= P[i - 1]; g.fillStyle = up ? "#2bd17e" : "#ff4d5e"; g.fillRect(X(i), Math.min(Y(P[i]), Y(P[i - 1])), w * 0.011, Math.max(3, Math.abs(Y(P[i]) - Y(P[i - 1])))); }
-  const last = P[n - 1];
-  g.font = `900 ${Math.round(h * 0.12)}px 'DejaVu Sans', Arial`; g.textAlign = "right"; g.fillStyle = crash > 0.05 ? "#ff4d5e" : "#2bd17e";
-  g.fillText(Math.round(last).toLocaleString("vi-VN"), w * 0.95, h * 0.14);
+  const N = VNI.length, mx = 1560, mn = 880, pk = VNI.findIndex((d) => d[0] === "2022-01-06");
+  const X = (i: number) => w * 0.05 + (i / (N - 1)) * w * 0.9, Y = (p: number) => h * 0.93 - ((p - mn) / (mx - mn)) * h * 0.7;
+  g.lineWidth = Math.max(3, w * 0.008); g.lineJoin = "round";
+  const seg = (a: number, b: number, col: string) => { if (b <= a) return; g.strokeStyle = col; g.beginPath(); for (let i = a; i <= b; i++) { if (i === a) g.moveTo(X(i), Y(VNI[i][1])); else g.lineTo(X(i), Y(VNI[i][1])); } g.stroke(); };
+  seg(0, Math.min(n - 1, pk), "#2bd17e"); seg(pk, n - 1, "#ff4d5e");
+  const last = VNI[n - 1], dd = last[0].split("-");
+  g.fillStyle = "#e9eef5"; g.font = `800 ${Math.round(h * 0.085)}px 'DejaVu Sans', Arial`; g.textAlign = "left"; g.fillText(title, w * 0.05, h * 0.13);
+  g.fillStyle = "#9aa6b8"; g.font = `600 ${Math.round(h * 0.06)}px 'DejaVu Sans', Arial`; g.fillText(`${dd[2]}/${dd[1]}/${dd[0]}`, w * 0.05, h * 0.215);
+  g.font = `900 ${Math.round(h * 0.12)}px 'DejaVu Sans', Arial`; g.textAlign = "right"; g.fillStyle = n - 1 > pk ? "#ff4d5e" : "#2bd17e";
+  g.fillText(last[1].toLocaleString("vi-VN", { minimumFractionDigits: 1, maximumFractionDigits: 1 }), w * 0.95, h * 0.14);
 }

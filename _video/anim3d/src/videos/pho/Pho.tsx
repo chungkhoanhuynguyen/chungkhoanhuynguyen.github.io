@@ -11,6 +11,8 @@ import { InkPass, noInkFallback } from "./ink";
 import { LensBlur } from "./lensblur";
 import { GradeEffect, GRADES, gradeFor } from "./grade";
 import { drawChart } from "./paint";
+import { VNI } from "./vni";
+const I_NOV21 = VNI.findIndex((d) => d[0] === "2021-11-25"), I_PEAK = VNI.findIndex((d) => d[0] === "2022-01-06"), I_LOW = VNI.findIndex((d) => d[0] === "2022-11-15");
 import { Pose } from "./cast";
 
 export const PHO_FRAMES = 636;
@@ -26,8 +28,8 @@ const SHOTS: Shot[] = [
   { a: 318, b: 367, light: "day", from: [[-3.0, 1.15, 1.0], [-3.2, 1.6, 5], 46], to: [[-2.9, 1.15, 1.6], [-3.2, 1.55, 5], 41], cInf: 9, focus: [-3.2, 1, 5] },
   { a: 367, b: 403, light: "day", from: [[0.6, 1.15, 1.4], [0.5, 1.6, 5], 44], to: [[0.6, 1.15, 1.9], [0.5, 1.55, 5], 40], cInf: 10, focus: [0.5, 1.3, 5] },
   { a: 403, b: 466, light: "day", from: [[-0.6, 0.9, 3.0], [0.0, 1.0, 5.5], 40], to: [[-0.5, 0.9, 3.4], [0.0, 1.0, 5.5], 35], cInf: 11, focus: [0.6, 0.85, 5.3] },
-  { a: 466, b: 608, light: "day", from: [[2.6, 2.0, 4.9], [2.6, 2.05, 7], 40], to: [[0.4, 1.5, 2.0], [1.7, 1.4, 6.0], 50], cInf: 7, focus: [2.6, 2.05, 6.9] },
-  { a: 608, b: 636, light: "day", from: [[-0.4, 1.05, 3.6], [0.0, 1.05, 5.5], 32], to: [[-0.4, 1.05, 3.8], [0.0, 1.05, 5.5], 28], cInf: 12, focus: [0.6, 1.4, 5.3] },
+  { a: 466, b: 608, light: "day", from: [[2.6, 2.0, 4.4], [3.5, 2.05, 7], 40], to: [[0.6, 1.5, 2.0], [2.5, 1.4, 6.0], 52], cInf: 7, focus: [2.6, 2.05, 6.9] },
+  { a: 608, b: 636, light: "day", from: [[-0.4, 1.05, 3.6], [0.45, 1.05, 5.5], 32], to: [[-0.4, 1.05, 3.8], [0.45, 1.05, 5.5], 28], cInf: 12, focus: [0.6, 1.4, 5.3] },
 ];
 const KICK = 608;
 const sm = (t: number) => { t = Math.max(0, Math.min(1, t)); return t * t * t * (t * (t * 6 - 15) + 10); };
@@ -38,7 +40,7 @@ const fbScreen = (g: CanvasRenderingContext2D, f: number) => {
   const W = 360, H = 720; g.fillStyle = "#f0f2f5"; g.fillRect(0, 0, W, H);
   g.fillStyle = "#1877f2"; g.fillRect(0, 0, W, 64); g.fillStyle = "#fff"; g.font = "800 30px 'DejaVu Sans', Arial"; g.textAlign = "left"; g.fillText("Trang cá nhân", 16, 44);
   // cover = green board
-  g.save(); g.translate(0, 64); drawChart(g, W, 200, -1, "VN-INDEX 1.528"); g.restore();
+  g.save(); g.translate(0, 64); drawChart(g, W, 200, I_NOV21 + 1, "VN-INDEX"); g.restore();
   // avatar circle with green arrow
   g.save(); g.beginPath(); g.arc(90, 270, 62, 0, 7); g.fillStyle = "#fff"; g.fill(); g.beginPath(); g.arc(90, 270, 56, 0, 7); g.clip(); g.fillStyle = "#0e1726"; g.fillRect(20, 200, 140, 140);
   g.strokeStyle = "#2bd17e"; g.lineWidth = 10; g.beginPath(); g.moveTo(50, 300); g.lineTo(80, 275); g.lineTo(100, 285); g.lineTo(132, 240); g.stroke(); g.restore();
@@ -95,10 +97,10 @@ const Inner: React.FC = () => {
     show(W.tuan, [0.0, 0.15, 5.5], { expr: "shock", mode: "sit" });
   }
   // TV board: crash progresses through shot 8
-  drawChart(W.tv.g, 640, 400, f < 466 ? 0 : (f - 480) / 120, "VN-INDEX");
+  drawChart(W.tv.g, 640, 400, f < 281 ? I_NOV21 + 1 : f < 466 ? I_LOW + 1 : I_PEAK + 1 + (I_LOW - I_PEAK) * sm((f - 500) / 100), "VN-INDEX");
   W.tv.t.needsUpdate = true;
   // phone insert
-  const ph = W.phone.mesh; ph.visible = s.focus === "phone";
+  const ph = W.phone.mesh; ph.visible = false;
   if (ph.visible) {
     const fwd = new THREE.Vector3(); cam.getWorldDirection(fwd);
     ph.position.copy(cam.position).addScaledVector(fwd, 1.35).add(new THREE.Vector3(0.22, -0.04, 0));
@@ -107,7 +109,7 @@ const Inner: React.FC = () => {
   }
   noInkFallback(world.root);
   const fwd = new THREE.Vector3(); cam.getWorldDirection(fwd);
-  const fp = s.focus === "phone" ? ph.position.clone() : s.focus ? new THREE.Vector3(...s.focus) : look;
+  const fp = s.focus === "phone" ? new THREE.Vector3(0, 1.4, 5) : s.focus ? new THREE.Vector3(...s.focus) : look;
   fx.lens.focus = Math.max(0.3, fp.clone().sub(cam.position).dot(fwd));
   fx.lens.cInf = s.cInf;
   return (
@@ -125,6 +127,7 @@ const Inner: React.FC = () => {
   );
 };
 
+const smo = sm;
 export const PhoDemo: React.FC = () => {
   const f = useCurrentFrame();
   const audio = (getInputProps() as { audio?: boolean }).audio;
@@ -137,8 +140,8 @@ export const PhoDemo: React.FC = () => {
       </ThreeCanvas>
       {flash > 0 && <AbsoluteFill style={{ background: "#000", opacity: flash }} />}
       {big > 0 && (
-        <AbsoluteFill style={{ justifyContent: "center", alignItems: "flex-start", paddingLeft: 140 }}>
-          <div style={{ fontFamily: "DejaVu Sans, Arial", fontWeight: 900, fontSize: 260 * (1.3 - 0.3 * big), color: "#ff3b4e", WebkitTextStroke: "10px #1a0b10", transform: `rotate(-6deg)`, opacity: big }}>-40%</div>
+        <AbsoluteFill style={{ justifyContent: "center", alignItems: "flex-start", paddingLeft: 760, paddingBottom: 520 }}>
+          <div style={{ fontFamily: "DejaVu Sans, Arial", fontWeight: 900, fontSize: 200 * (1.3 - 0.3 * big), color: "#ff3b4e", WebkitTextStroke: "10px #1a0b10", transform: `rotate(-6deg)`, opacity: big }}>-40%</div>
         </AbsoluteFill>
       )}
       {f >= 281 && f < 318 && (
@@ -146,6 +149,35 @@ export const PhoDemo: React.FC = () => {
           <div style={{ fontFamily: "DejaVu Sans, Arial", fontWeight: 900, fontSize: 84, color: "#fff", WebkitTextStroke: "6px #1a1a2a", opacity: Math.min(1, (f - 281) / 6) }}>MỘT NĂM SAU…</div>
         </AbsoluteFill>
       )}
+      {f >= 110 && f < 281 && (() => { const k = sm((f - 110) / 10), n = sm((f - 122) / 8), q = sm((f - 208) / 8); const F = "DejaVu Sans, Arial"; return (
+        <AbsoluteFill style={{ opacity: k }}>
+          <AbsoluteFill style={{ background: "linear-gradient(90deg, rgba(10,14,24,.92) 0%, rgba(10,14,24,.8) 60%, rgba(10,14,24,.45) 100%)" }} />
+          <div style={{ position: "absolute", left: 130, top: 60 + (1 - k) * 80, width: 470, height: 960, borderRadius: 64, background: "linear-gradient(180deg,#141a2c,#2b2238)", border: "6px solid #3b4058", boxShadow: "0 30px 80px rgba(0,0,0,.6)", fontFamily: F, color: "#fff", textAlign: "center" }}>
+            <div style={{ marginTop: 110, fontSize: 124, fontWeight: 900 }}>21:47</div>
+            <div style={{ fontSize: 34, opacity: 0.85 }}>Thứ Bảy, 20 tháng 11</div>
+            <div style={{ margin: "70px 24px 0", padding: 22, borderRadius: 28, background: "rgba(236,239,246,.96)", color: "#15181f", textAlign: "left", opacity: n, transform: `scale(${0.9 + 0.1 * n})` }}>
+              <div style={{ display: "flex", alignItems: "center", fontSize: 22, color: "#5b6272", fontWeight: 700 }}><span style={{ width: 30, height: 30, borderRadius: 8, background: "#1877f2", color: "#fff", fontWeight: 900, textAlign: "center", lineHeight: "30px", marginRight: 10 }}>f</span>FACEBOOK<span style={{ marginLeft: "auto", fontWeight: 500 }}>bây giờ</span></div>
+              <div style={{ fontSize: 29, fontWeight: 800, marginTop: 10 }}>Tuấn Nguyễn</div>
+              <div style={{ fontSize: 25, lineHeight: 1.3 }}>đã đổi ảnh đại diện thành ảnh bảng điện xanh</div>
+              <svg viewBox="0 0 380 110" style={{ marginTop: 12, borderRadius: 14, background: "#0e1726", display: "block" }}><polyline points={VNI.slice(0, I_NOV21 + 1).filter((_, i) => i % 4 === 0).map((d, i, A) => `${10 + (360 * i) / (A.length - 1)},${100 - ((d[1] - 1000) / 520) * 90}`).join(" ")} fill="none" stroke="#2bd17e" strokeWidth="6" /></svg>
+            </div>
+          </div>
+          <div style={{ position: "absolute", left: 700, top: 360, fontFamily: F, fontWeight: 900, fontSize: 104, lineHeight: 1.12, opacity: q, transform: `translateY(${(1 - q) * 30}px)`, textShadow: "0 6px 0 rgba(0,0,0,.45)" }}>
+            <div style={{ color: "#fff" }}>“NGHỈ VIỆC THÔI</div>
+            <div style={{ color: "#ff4d3d" }}>ĐI LÀM CHI NỮA”</div>
+            <div style={{ width: 130, height: 9, background: "#f5c518", marginTop: 22 }} />
+          </div>
+        </AbsoluteFill>); })()}
+      {f >= 466 && (() => { const k = sm((f - 466) / 10), l1 = sm((f - 538) / 6), l2 = sm((f - 578) / 6), st = sm((f - 608) / 5); const F = "DejaVu Sans, Arial"; return (
+        <div style={{ position: "absolute", left: 100, top: 46 + (1 - k) * 120, width: 580, height: 990, background: "linear-gradient(180deg,#f6f0e1,#ece4d2)", transform: "rotate(-2deg)", boxShadow: "0 30px 70px rgba(0,0,0,.55)", opacity: k, fontFamily: F, color: "#1c1b19", padding: "54px 44px", boxSizing: "border-box" }}>
+          <div style={{ fontSize: 46, fontWeight: 900, textAlign: "center" }}>SỔ TAY CỦA TUẤN</div>
+          <div style={{ fontSize: 26, textAlign: "center", color: "#6b665c", marginTop: 6 }}>VN-Index đóng cửa</div>
+          <div style={{ marginTop: 70, fontSize: 38, fontWeight: 700, opacity: l1 }}><span style={{ borderBottom: "5px solid #e23b2e", paddingBottom: 4 }}>Đỉnh 6/1/2022: 1.528,6</span></div>
+          <div style={{ marginTop: 60, fontSize: 38, fontWeight: 700, opacity: l2 }}><span style={{ borderBottom: "5px solid #e23b2e", paddingBottom: 4 }}>Đáy 15/11/2022: 911,9</span></div>
+          <div style={{ marginTop: 56, display: "inline-block", fontSize: 34, fontWeight: 900, color: "#e23b2e", border: "4px solid #e23b2e", borderRadius: 10, padding: "6px 16px", opacity: st }}>MẤT HƠN 40%</div>
+          <div style={{ position: "absolute", left: 44, bottom: 70, width: 220, borderTop: "3px solid #8b857a", fontSize: 22, color: "#6b665c", paddingTop: 8, textAlign: "center" }}>Người ghi: Tuấn</div>
+          <div style={{ position: "absolute", right: 50, bottom: 60, width: 190, height: 190, borderRadius: "50%", border: "7px solid #d8372b", color: "#d8372b", fontSize: 36, fontWeight: 900, display: "flex", alignItems: "center", justifyContent: "center", opacity: st * 0.9, transform: `rotate(-12deg) scale(${1.6 - 0.6 * st})` }}>ĐÃ MẤT</div>
+        </div>); })()}
       {audio ? <Audio src={staticFile("pho/voice.mp3")} /> : null}
     </AbsoluteFill>
   );
