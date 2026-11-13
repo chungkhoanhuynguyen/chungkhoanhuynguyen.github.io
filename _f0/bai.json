@@ -4231,21 +4231,33 @@
  {
   "slug": "mua-trung-binh-gia-dca",
   "kw": "mua trung bình giá DCA",
-  "title": "Mua trung bình giá (DCA) là gì? Ví dụ mua đều mỗi tháng",
-  "desc": "Mua trung bình giá DCA là gì, vì sao mua đều mỗi tháng giúp giá vốn thấp hơn giá trung bình, ví dụ 12 tháng có số liệu và khi nào DCA không hiệu quả.",
+  "title": "Mua trung bình giá (DCA) là gì? Số thật góp đều 38 tháng 5 mã",
+  "desc": "Mua trung bình giá DCA là gì, ví dụ góp 3 triệu mỗi tháng từ 10/2023 vào MBB, ACB, GAS, REE, VCB: lãi 32%, cũng có mã lỗ. Khi nào DCA hiệu quả.",
   "grp": 7,
   "body": [
    [
     "p",
-    "<b>DCA</b> (mua trung bình giá) là mỗi kỳ bỏ ra <b>một số tiền cố định</b> để mua cổ phiếu, bất kể giá lên hay xuống. Giống như mỗi tháng đổ xăng 500 nghìn: xăng rẻ thì được nhiều lít, xăng đắt thì được ít lít."
-   ],
-   [
-    "h2",
-    "Ví dụ 12 tháng"
+    "Tháng 10/2023, hai đồng nghiệp cùng quyết định mỗi tháng để riêng 3 triệu đồng mua cổ phiếu. Người thứ nhất chọn MBB, người thứ hai chọn VCB vì \"ngân hàng lớn nhất thì chắc ăn\". Ba năm sau, cùng bỏ ra 114 triệu, một người có khoảng <b>151 triệu</b>, người kia còn <b>103 triệu</b>."
    ],
    [
     "p",
-    "Ví dụ: mỗi tháng mua 2 triệu đồng một cổ phiếu, giá lần lượt 20.000, 18.000, 16.000, 15.000, 17.000, 14.000, 13.000, 15.000, 18.000, 19.000, 21.000, 22.000 đồng."
+    "Cả hai cùng làm đúng một việc: <b>mua trung bình giá (DCA)</b>. Kết quả khác nhau cho thấy DCA mạnh ở đâu và hở ở đâu. Em dùng giá đóng cửa thật trên sàn để anh chị thấy rõ."
+   ],
+   [
+    "h2",
+    "DCA là gì?"
+   ],
+   [
+    "p",
+    "DCA (Dollar Cost Averaging) là mỗi kỳ bỏ ra <b>một số tiền cố định</b> để mua, bất kể giá lên hay xuống. Giống như mỗi tháng đổ xăng 500 nghìn: xăng rẻ được nhiều lít, xăng đắt được ít lít. Không cần đoán đáy, chỉ cần đều."
+   ],
+   [
+    "h2",
+    "Vì sao giá vốn DCA thường thấp hơn giá trung bình?"
+   ],
+   [
+    "p",
+    "Ví dụ mỗi tháng mua 2 triệu, giá 12 tháng lần lượt 20.000, 18.000, 16.000, 15.000, 17.000, 14.000, 13.000, 15.000, 18.000, 19.000, 21.000, 22.000 đồng."
    ],
    [
     "img",
@@ -4257,88 +4269,123 @@
     "ul",
     [
      "Tổng tiền bỏ ra: 24 triệu đồng.",
-     "Giá trung bình của 12 tháng: khoảng 17.333 đồng.",
-     "Giá vốn thực tế sau 12 tháng: khoảng 16.906 đồng, thấp hơn giá trung bình.",
+     "Giá trung bình 12 tháng: khoảng 17.333 đồng.",
+     "Giá vốn thực tế: khoảng 16.906 đồng, thấp hơn giá trung bình vì tháng rẻ mua được nhiều cổ phiếu hơn.",
      "Cuối kỳ giá 22.000 đồng thì tài khoản lãi khoảng 30%."
     ]
    ],
    [
     "h2",
-    "Vì sao DCA hợp với người mới?"
-   ],
-   [
-    "ul",
-    [
-     "Không phải đoán đáy, đoán đỉnh.",
-     "Biến lúc thị trường giảm thành cơ hội mua được nhiều hơn, bớt sợ hãi.",
-     "Tạo thói quen để dành đều, hợp với người có lương hằng tháng."
-    ]
-   ],
-   [
-    "h2",
-    "Khi nào DCA không hiệu quả?"
+    "Số thật: góp 3 triệu mỗi tháng vào 5 mã trong 38 tháng"
    ],
    [
     "p",
-    "DCA chỉ hiệu quả với <b>doanh nghiệp tốt, còn lớn lên</b>. Nếu doanh nghiệp suy yếu và giá giảm mãi không hồi, mua đều chỉ làm khoản lỗ lớn hơn. Vì vậy phải <a href=\"/f0/chon-co-phieu-tich-san.html\">chọn đúng doanh nghiệp</a> trước, rồi mới DCA."
+    "Cách tính: mua 3 triệu ở phiên đầu mỗi tháng, từ 27/10/2023 đến 11/2026 (38 lần, 114 triệu vốn), định giá theo giá đóng cửa điều chỉnh ngày 13/11/2026, chưa tính cổ tức tiền mặt, thuế và phí."
    ],
    [
-    "h2",
-    "Tóm lại"
-   ],
-   [
-    "ul",
+    "table",
     [
-     "DCA là mua đều một số tiền cố định mỗi kỳ, không đoán giá.",
-     "Tháng giá thấp mua được nhiều hơn nên giá vốn thường thấp hơn giá trung bình.",
-     "Chỉ DCA vào doanh nghiệp tốt; doanh nghiệp xấu thì càng mua càng lỗ."
+     [
+      "Mã",
+      "DCA<br>38 tháng",
+      "Mua 1 lần<br>đầu kỳ",
+      "Lãi DCA<br>cao nhất"
+     ],
+     [
+      "MBB",
+      "150,9 tr<br>(+32,4%)",
+      "244,5 tr",
+      "+86,1%<br><small>15/8/2025</small>"
+     ],
+     [
+      "ACB",
+      "126,3 tr<br>(+10,8%)",
+      "178,0 tr",
+      "+50,7%<br><small>21/8/2025</small>"
+     ],
+     [
+      "GAS",
+      "123,0 tr<br>(+7,9%)",
+      "128,3 tr",
+      "+92,0%<br><small>4/3/2026</small>"
+     ],
+     [
+      "REE",
+      "120,6 tr<br>(+5,8%)",
+      "164,6 tr",
+      "+42,1%<br><small>16/7/2024</small>"
+     ],
+     [
+      "VCB",
+      "102,9 tr<br>(−9,7%)",
+      "109,6 tr",
+      "+27,1%<br><small>14/1/2026</small>"
+     ]
     ]
-   ],
-   [
-    "h2",
-    "Số liệu thật: góp đều 38 tháng, ba kết quả khác nhau"
    ],
    [
     "p",
-    "Góp 3 triệu đồng vào phiên đầu mỗi tháng từ 10/2023 đến 11/2026 (38 tháng, 114 triệu vốn), tính theo giá đóng cửa và chưa tính cổ tức:"
+    "Ba điều đọc ra từ bảng. Một, cả 5 mã mua một lần từ đầu đều thắng DCA, vì giá 10/2023 đang thấp: DCA thua khi thị trường đi lên đều. Hai, DCA không chống được việc chọn sai thời điểm định giá: VCB đã lãi 27% vào đầu năm 2026 rồi quay về lỗ gần 10%. Ba, lợi nhuận DCA dao động rất mạnh: GAS từng lãi 92% nay còn 7,9%."
+   ],
+   [
+    "p",
+    "Muốn xem góp đều cổ phiếu ngân hàng qua cả chu kỳ dài hơn, từ 2018 đến nay, anh chị có thể tham khảo <a href=\"/bao-cao-2026.html#tichsan\">bảng tích sản cổ phiếu ngân hàng</a>."
+   ],
+   [
+    "h2",
+    "Khi nào DCA hiệu quả, khi nào không?"
    ],
    [
     "ul",
     [
-     "MBB: giá trị khoảng 151,7 triệu, lãi khoảng 33%. Nếu mua một lần từ đầu: khoảng 245,7 triệu.",
-     "GAS: khoảng 125,4 triệu, lãi khoảng 10%, dù có lúc lãi khoảng 92% (4/3/2026).",
-     "REE: khoảng 113,8 triệu, gần hòa vốn; mua một lần từ đầu: khoảng 155,4 triệu."
+     "<b>Hiệu quả</b>: người có lương đều, không có cục tiền lớn, thị trường đi ngang hoặc giảm rồi hồi; doanh nghiệp lợi nhuận vẫn tăng.",
+     "<b>Kém</b>: có sẵn tiền mà thị trường đang rẻ và đi lên đều; lúc đó chia nhỏ quá lâu sẽ mua ngày càng đắt.",
+     "<b>Nguy hiểm</b>: doanh nghiệp suy yếu, giá giảm mãi không hồi. Mua đều chỉ làm khoản lỗ lớn hơn. Phải <a href=\"/f0/chon-co-phieu-tich-san.html\">chọn đúng doanh nghiệp</a> trước, rồi mới DCA."
+    ]
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp khi mua trung bình giá"
+   ],
+   [
+    "ol",
+    [
+     "<b>Nhầm DCA với bình quân giá xuống</b>: DCA là số tiền cố định theo lịch. Thấy giá giảm rồi mua gấp đôi, gấp ba để \"gỡ\" là chuyện khác, rủi ro hơn nhiều.",
+     "<b>Dồn hết vào một mã</b>: cùng 38 tháng, cùng là ngân hàng, MBB lãi 32,4% còn VCB lỗ 9,7%. Chia 3–5 mã hoặc quỹ chỉ số giúp kết quả bớt phụ thuộc may rủi.",
+     "<b>Quên chốt khi giá chạy quá xa</b>: GAS từng lãi 92% rồi về 7,9%. Khi giá tăng nhanh hơn lợi nhuận, người góp đều nên cân nhắc tái cân bằng hoặc chốt từng phần."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist bắt đầu DCA"
+   ],
+   [
+    "ul",
+    [
+     "Chọn số tiền mỗi tháng mà mất cả năm vẫn không ảnh hưởng sinh hoạt.",
+     "Chọn ngày cố định (ví dụ ngày nhận lương) và giữ đúng lịch.",
+     "Chia 3–5 mã khác nhau hoặc một quỹ chỉ số.",
+     "Mỗi quý đọc lại lợi nhuận doanh nghiệp: còn tăng thì góp tiếp, đi xuống nhiều quý thì dừng và xem lại.",
+     "Ghi lại giá vốn, lãi/lỗ mỗi tháng để không bị cảm xúc dẫn đường."
     ]
    ],
    [
     "p",
-    "Bài học: DCA giúp không phải đoán thời điểm, nhưng khi cổ phiếu tăng mạnh ở đầu kỳ, DCA sẽ kém mua một lần. Khi giá tăng nhanh hơn lợi nhuận, người góp đều nên cân nhắc tái cân bằng hoặc chốt từng phần."
-   ],
-   [
-    "h2",
-    "Ba nguyên tắc để DCA hiệu quả hơn"
-   ],
-   [
-    "ul",
-    [
-     "Góp đều vào nhiều mã hoặc quỹ chỉ số, không dồn một mã.",
-     "Đặt tỷ trọng mục tiêu, dồn tiền góp mới vào mã đang thấp hơn mục tiêu.",
-     "Xem lại doanh nghiệp mỗi quý: DCA chỉ đúng khi lợi nhuận vẫn đi lên."
-    ]
+    "<small>Nguồn giá: dữ liệu giá đóng cửa điều chỉnh của web, ngày 13/11/2026; số liệu DCA là số tự tính, chưa gồm cổ tức tiền mặt, thuế, phí. Kết quả quá khứ không bảo đảm tương lai. Bài chia sẻ kiến thức, không phải khuyến nghị đầu tư.</small>"
    ]
   ],
   "faq": [
    [
     "DCA mỗi tháng hay mỗi tuần tốt hơn?",
-    "Mỗi tháng là đủ với người mới, vừa đỡ phí vừa dễ duy trì."
-   ],
-   [
-    "Giá giảm mạnh có nên mua gấp đôi?",
-    "Có thể mua thêm nếu doanh nghiệp vẫn tốt và còn tiền nhàn rỗi, nhưng không vay tiền để mua."
+    "Mỗi tháng là đủ với người mới, vừa đỡ phí vừa dễ duy trì theo ngày nhận lương."
    ],
    [
     "DCA có lỗ được không?",
-    "Có, nếu chọn sai doanh nghiệp hoặc bán ra trong lúc thị trường đang giảm sâu."
+    "Có. Góp 3 triệu mỗi tháng vào VCB từ 10/2023 đến 11/2026 đang lỗ khoảng 9,7% theo giá 13/11/2026, dù có lúc lãi 27%."
+   ],
+   [
+    "Có tiền sẵn thì nên mua một lần hay DCA?",
+    "Trong 5 mã thống kê từ 10/2023, mua một lần đều cho kết quả cao hơn vì thị trường đi lên. DCA phù hợp khi không chắc thời điểm và muốn giảm rủi ro mua ngay đỉnh."
    ]
   ],
   "rel": [
@@ -4346,7 +4393,8 @@
    "huong-dan-tich-san-co-phieu-tu-a-den-z",
    "lai-kep-trong-dau-tu",
    "chon-co-phieu-tich-san"
-  ]
+  ],
+  "mod": "2026-11-13"
  },
  {
   "slug": "lai-kep-trong-dau-tu",
@@ -9978,21 +10026,25 @@
   "slug": "ky-luat-dau-tu",
   "kw": "kỷ luật trong đầu tư chứng khoán",
   "grp": 5,
-  "title": "Kỷ luật đầu tư chứng khoán: 7 nguyên tắc giữ tài khoản",
-  "desc": "Kỷ luật đầu tư chứng khoán là gì, 7 nguyên tắc cụ thể về cắt lỗ, tỷ trọng, margin, nhật ký giao dịch giúp nhà đầu tư cá nhân tồn tại lâu dài.",
+  "title": "Kỷ luật đầu tư chứng khoán: 7 nguyên tắc và 4 ví dụ giá thật",
+  "desc": "Kỷ luật trong đầu tư chứng khoán là gì, 7 nguyên tắc cắt lỗ, tỷ trọng, margin, nhật ký; ví dụ thật DXG, SSI giảm 42–55% từ đỉnh và khi cắt lỗ sai.",
   "body": [
    [
     "p",
-    "Phương pháp tốt đến đâu cũng thất bại nếu không có kỷ luật. Kỷ luật là làm đúng kế hoạch đã đặt ra, kể cả khi cảm xúc muốn làm khác. Phần lớn nhà đầu tư cá nhân không thua vì chọn sai mã một lần, mà vì để một lần sai trở thành khoản lỗ lớn (xem <a href='/f0/vi-sao-nha-dau-tu-ca-nhan-thua-lo.html'>vì sao nhà đầu tư cá nhân thua lỗ</a>)."
+    "Tháng 9/2025, cổ phiếu DXG chạm đỉnh khoảng 21.230 đồng (giá điều chỉnh). Hai tuần sau, giá đã xuống 19.170, tức giảm gần 10%. Ai mua ở đỉnh và cắt lỗ 8% thì mất khoảng 8 triệu trên 100 triệu. Ai giữ vì \"chắc sắp hồi\" thì đến 8/10/2026 thấy giá còn <b>9.610 đồng</b>, mất <b>54,7%</b>."
+   ],
+   [
+    "p",
+    "Phần lớn nhà đầu tư cá nhân không thua vì chọn sai một mã. Họ thua vì để một lần sai trở thành khoản lỗ không gỡ được. <b>Kỷ luật đầu tư</b> là làm đúng kế hoạch đã viết sẵn, kể cả khi cảm xúc muốn làm khác (xem thêm <a href='/f0/vi-sao-nha-dau-tu-ca-nhan-thua-lo.html'>vì sao nhà đầu tư cá nhân thua lỗ</a>)."
    ],
    [
     "h2",
-    "7 nguyên tắc kỷ luật"
+    "7 nguyên tắc kỷ luật cụ thể"
    ],
    [
     "ol",
     [
-     "<b>Viết kế hoạch trước khi mua:</b> lý do mua, điểm cắt lỗ, mục tiêu, thời gian nắm giữ dự kiến.",
+     "<b>Viết kế hoạch trước khi mua:</b> lý do mua, điểm cắt lỗ, mục tiêu, thời gian nắm giữ (mẫu ở bài <a href='/f0/ke-hoach-giao-dich-truoc-khi-mua.html'>kế hoạch giao dịch trước khi mua</a>).",
      "<b>Cắt lỗ đúng điểm đã định:</b> không dời điểm cắt lỗ xuống thấp hơn (xem <a href='/f0/cat-lo-la-gi.html'>cắt lỗ là gì</a>).",
      "<b>Giới hạn tỷ trọng:</b> không mã nào chiếm quá lớn trong danh mục (xem <a href='/f0/phan-bo-von-va-quan-tri-danh-muc.html'>phân bổ vốn</a>).",
      "<b>Hạn chế margin:</b> chỉ dùng khi hiểu rõ rủi ro, không vay tối đa (xem <a href='/f0/margin-la-gi.html'>margin là gì</a>).",
@@ -10003,56 +10055,119 @@
    ],
    [
     "h2",
-    "Ví dụ: kỷ luật cứu tài khoản thế nào"
+    "Không cắt lỗ thì mất bao nhiêu? 4 ví dụ giá thật"
    ],
    [
     "p",
-    "Hai nhà đầu tư cùng mua một cổ phiếu giá 20.000 đồng với 100 triệu. Người A đặt cắt lỗ 8%, giá xuống 18.400 thì bán, mất khoảng 8 triệu. Người B không có kế hoạch, giữ và mua thêm khi giá xuống, đến khi giá còn 12.000 thì lỗ 40% trên số vốn ban đầu và còn kẹt thêm phần mua sau. Để gỡ 8%, A chỉ cần lãi khoảng 8,7%; để gỡ 40%, B cần lãi khoảng 67% (xem <a href='/f0/lo-bao-nhieu-phan-tram-thi-hoa-von.html'>lỗ bao nhiêu phần trăm thì hòa vốn</a>). Ví dụ minh họa, không phải dự báo."
+    "Giả sử mua đúng đỉnh gần nhất (từ 2025 đến nay) và đặt cắt lỗ 8%. Bảng dưới là đường đi của giá sau đỉnh (giá đóng cửa điều chỉnh, đơn vị đồng):"
+   ],
+   [
+    "table",
+    [
+     [
+      "Mã",
+      "Đỉnh",
+      "Đáy<br>sau đó",
+      "Ngày<br>13/11"
+     ],
+     [
+      "DXG",
+      "21.230<br><small>15/9/2025</small>",
+      "9.610<br>(−54,7%)",
+      "11.100<br>(−47,7%)"
+     ],
+     [
+      "SSI",
+      "30.180<br><small>15/10/2025</small>",
+      "17.580<br>(−41,7%)",
+      "20.200<br>(−33,1%)"
+     ],
+     [
+      "VND",
+      "26.050<br><small>3/9/2025</small>",
+      "12.900<br>(−50,5%)",
+      "14.500<br>(−44,3%)"
+     ],
+     [
+      "STB",
+      "78.200<br><small>18/9/2026</small>",
+      "61.800<br>(−21,0%)",
+      "71.200<br>(−9,0%)"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Cả bốn mã đều chạm mốc −8% chỉ 5–14 ngày sau đỉnh (DXG 29/9/2025, SSI 20/10/2025, VND 8/9/2025, STB 1/10/2026). Người cắt lỗ đúng kế hoạch dừng ở −8%; người giữ phải đi qua cả cột \"Đáy sau đó\"."
+   ],
+   [
+    "p",
+    "Lỗ càng sâu càng khó gỡ: lỗ 8% cần lãi 8,7% để về vốn; lỗ 41,7% cần lãi <b>71,5%</b>; lỗ 54,7% cần lãi <b>120,8%</b> (xem <a href='/f0/lo-bao-nhieu-phan-tram-thi-hoa-von.html'>lỗ bao nhiêu phần trăm thì hòa vốn</a>)."
+   ],
+   [
+    "p",
+    "Dòng STB cho thấy mặt còn lại: cắt lỗ ở 70.300 rồi giá hồi lên 71.200. Kỷ luật không phải lần nào cũng đúng; nó chỉ bảo đảm không có lần sai nào làm tài khoản mất một nửa. Ví dụ dùng để minh họa nguyên tắc, không phải nhận định về các mã."
    ],
    [
     "h2",
-    "Vì sao khó giữ kỷ luật?"
+    "Vì sao biết mà vẫn không làm được?"
    ],
    [
     "ul",
     [
-     "Sợ mất cơ hội (FOMO) khiến mua đuổi (xem <a href='/f0/tam-ly-fomo-va-hoang-loan.html'>tâm lý FOMO và hoảng loạn</a>).",
-     "Không chấp nhận sai nên không cắt lỗ.",
-     "Thấy người khác lãi nhanh nên phá kế hoạch.",
-     "Giao dịch quá nhiều để \"gỡ\" (xem <a href='/f0/overtrading-la-gi.html'>overtrading</a>)."
+     "Sợ mất cơ hội (FOMO) nên mua đuổi khi giá đã chạy xa (xem <a href='/f0/tam-ly-fomo-va-hoang-loan.html'>tâm lý FOMO và hoảng loạn</a>).",
+     "Không chấp nhận mình sai nên dời điểm cắt lỗ, tự nhủ \"đợi về giá mua rồi bán\".",
+     "Thấy người khác lãi nhanh nên phá kế hoạch của mình.",
+     "Giao dịch liên tục để gỡ, phí và thuế ăn dần vốn (xem <a href='/f0/overtrading-la-gi.html'>overtrading</a>)."
     ]
    ],
    [
     "h2",
-    "Cách rèn kỷ luật"
+    "Bẫy hay gặp"
    ],
    [
     "ol",
     [
+     "<b>Kế hoạch trong đầu, không trên giấy</b>: lúc giá giảm 8%, kế hoạch \"trong đầu\" luôn tự sửa thành 15%, rồi 30%.",
+     "<b>Bình quân giá xuống bằng tiền vay</b>: mua thêm DXG từ 19.000 xuống 15.000 bằng margin, đến 9.610 thì khoản lỗ và tiền lãi vay cùng lớn lên, dễ bị bán giải chấp.",
+     "<b>Chỉ cắt lỗ, không xem lại lý do</b>: cắt lỗ xong lại mua mã khác cùng kiểu, lặp lỗi cũ. Nhật ký là nơi tìm ra lỗi lặp."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist rèn kỷ luật mỗi tháng"
+   ],
+   [
+    "ul",
+    [
      "Bắt đầu với số vốn nhỏ để sai lầm còn rẻ.",
-     "Viết quy tắc ngắn trên một trang giấy và dán cạnh màn hình.",
+     "Viết quy tắc trên một trang giấy, dán cạnh màn hình.",
      "Đặt lệnh cắt lỗ ngay sau khi mua thay vì \"để mai tính\".",
-     "Đo kết quả theo quý thay vì theo ngày; tách tiền tiêu dùng khỏi tiền đầu tư.",
-     "Mỗi tháng tự chấm: bao nhiêu lệnh làm đúng kế hoạch, bao nhiêu lệnh phá kế hoạch."
+     "Đo kết quả theo quý, tách tiền tiêu dùng khỏi tiền đầu tư.",
+     "Cuối tháng tự chấm: bao nhiêu lệnh làm đúng kế hoạch, bao nhiêu lệnh phá kế hoạch."
     ]
    ],
    [
     "p",
-    "Kỷ luật được hình thành từ thói quen, không phải từ ý chí nhất thời. Một bộ quy tắc đơn giản được làm đều đặn tốt hơn một hệ thống phức tạp bị bỏ dở. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+    "Kỷ luật đến từ thói quen, không phải ý chí nhất thời. Một bộ quy tắc đơn giản làm đều đặn tốt hơn hệ thống phức tạp bị bỏ dở."
+   ],
+   [
+    "p",
+    "<small>Nguồn giá: dữ liệu giá đóng cửa điều chỉnh của web, cập nhật 13/11/2026; tỷ lệ % là số tự tính. Bài chia sẻ kiến thức, không phải khuyến nghị mua bán.</small>"
    ]
   ],
   "faq": [
    [
     "Kỷ luật quan trọng hơn chọn mã đúng không?",
-    "Với nhà đầu tư cá nhân, kỷ luật quản trị vốn thường quyết định việc tồn tại lâu dài nhiều hơn việc chọn đúng từng mã."
+    "Với nhà đầu tư cá nhân, kỷ luật quản trị vốn thường quyết định việc tồn tại lâu dài nhiều hơn việc chọn đúng từng mã. Lỗ 54,7% cần lãi 120,8% mới về vốn."
    ],
    [
     "Làm sao không dời điểm cắt lỗ?",
     "Đặt lệnh cắt lỗ ngay khi mua và ghi lý do vào nhật ký; chỉ thay đổi khi kế hoạch được viết lại lúc thị trường đóng cửa."
    ],
    [
-    "Sau chuỗi lỗ nên làm gì?",
-    "Tạm dừng giao dịch, giảm quy mô lệnh và xem lại nhật ký để tìm lỗi lặp lại."
+    "Cắt lỗ xong giá tăng lại thì sao?",
+    "Chuyện đó sẽ xảy ra, như STB tháng 10/2026. Cắt lỗ là chi phí bảo hiểm cho tài khoản; nếu doanh nghiệp vẫn tốt, có thể lập kế hoạch mua lại ở điều kiện mới."
    ]
   ],
   "rel": [
@@ -10063,7 +10178,8 @@
    "nhat-ky-giao-dich-la-gi",
    "ke-hoach-giao-dich-truoc-khi-mua"
   ],
-  "viet_day": true
+  "viet_day": true,
+  "mod": "2026-11-13"
  },
  {
   "slug": "mo-hinh-hai-dinh-hai-day",
@@ -35472,6 +35588,257 @@
    "tich-san-co-phieu-hay-gui-tiet-kiem",
    "lai-suat-tang-anh-huong-chung-khoan",
    "lam-phat-va-chung-khoan",
+   "tich-san-cho-nguoi-luong-10-trieu"
+  ]
+ },
+ {
+  "slug": "luong-thuc-te-la-gi",
+  "kw": "lương thực tế là gì",
+  "grp": 8,
+  "date": "2026-11-13",
+  "title": "Lương thực tế là gì? GDP tăng 9,95%, lương thật tăng bao nhiêu?",
+  "desc": "GDP quý 3/2026 tăng 9,95%, thu nhập lao động tăng 9,85%, nhưng trừ lạm phát chỉ còn khoảng 4,5%. Cách tự tính lương thực tế của anh chị.",
+  "body": [
+   [
+    "p",
+    "Chín giờ tối, anh Minh tan ca ở khu công nghiệp. Ti vi trong phòng trọ đọc tin GDP quý 3 tăng <b>9,95%</b>, cao nhất nhiều năm. Cùng lúc, điện thoại báo lương về: <b>9.184.000 đồng</b>. Rồi tin nhắn của vợ: <i>\"Anh ơi, tiền nhà trọ với tiền điện tháng này lại tăng.\"</i>"
+   ],
+   [
+    "p",
+    "Đất nước tăng trưởng gần 10%, vậy túi anh Minh thật sự dày thêm bao nhiêu? Em tính từng bước bằng số của Tổng cục Thống kê (tổng hợp qua WiData) để anh chị tự áp vào lương của mình."
+   ],
+   [
+    "h2",
+    "GDP tăng 9,95% nghĩa là gì?"
+   ],
+   [
+    "p",
+    "9,95% là <b>GDP thực</b> quý 3/2026 so với cùng kỳ, tức đã loại phần giá tăng. Chín tháng đầu năm tăng 9,01%; cả năm 2025 tăng 8,02%; mục tiêu năm 2026 là 10%. Tính theo giá hiện hành, GDP 4 quý gần nhất đạt khoảng <b>14.056.614 tỷ đồng</b>, tăng 12,9% sau một năm và 26% sau hai năm (em tự tính)."
+   ],
+   [
+    "p",
+    "Chia đều cho 102,3 triệu dân, mỗi người \"làm ra\" khoảng 11,45 triệu đồng mỗi tháng. Con số này không phải lương: GDP còn gồm lợi nhuận doanh nghiệp, thuế, khấu hao, và chia cho cả trẻ em, người già. Muốn biết túi mình, phải nhìn vào thu nhập."
+   ],
+   [
+    "h2",
+    "Thu nhập người lao động tăng bao nhiêu?"
+   ],
+   [
+    "ul",
+    [
+     "Thu nhập bình quân tháng của lao động quý 3/2026: <b>9.184.891 đồng</b>.",
+     "Quý 3/2025: 8.361.114 đồng. Chênh khoảng 824 nghìn, tức <b>+9,85%</b>.",
+     "Quý 3/2024: 7.626.500 đồng. Hai năm tăng khoảng 20,4%."
+    ]
+   ],
+   [
+    "p",
+    "Đến đây nghe khá ổn: thu nhập tăng gần bằng GDP thực. Nhưng 9,85% là <b>lương danh nghĩa</b>, chưa trừ giá cả. Chỉ số giá tiêu dùng (CPI) tháng 9/2026 tăng 5,08%, tháng 10/2026 tăng 5,09% so với cùng kỳ."
+   ],
+   [
+    "h2",
+    "Lương thực tế là gì, tính thế nào?"
+   ],
+   [
+    "p",
+    "<b>Lương thực tế</b> là lương sau khi trừ phần giá tăng, đo xem cùng số tiền đó mua được nhiều hơn hay ít hơn năm ngoái. Công thức đúng là chia, không phải trừ:"
+   ],
+   [
+    "p",
+    "<b>Tăng thực = (1 + tăng lương danh nghĩa) ÷ (1 + lạm phát) − 1</b><br>= 1,0985 ÷ 1,0508 − 1 ≈ <b>+4,5%</b>"
+   ],
+   [
+    "p",
+    "Nghĩa là người lao động trung bình giàu lên thật khoảng 4,5% trong một năm, chưa bằng một nửa con số 9,95% trên ti vi. Phép trừ nhanh 9,85 − 5,08 = 4,77% cho kết quả gần đúng khi số nhỏ, nhưng lệch dần khi lạm phát cao."
+   ],
+   [
+    "h2",
+    "Vì sao nhà anh Minh thấy còn ít hơn 4,5%?"
+   ],
+   [
+    "p",
+    "CPI là giỏ hàng trung bình cả nước. Giỏ của mỗi nhà khác nhau. Tháng 10/2026 so với cùng kỳ, giá từng nhóm tăng rất lệch nhau (em tự tính từ chỉ số TCTK): giao thông <b>+15,6%</b>, nhà ở – điện nước +6,5%, hàng ăn và dịch vụ ăn uống +3,6%, giáo dục +2,7%, thuốc và y tế +1,7%."
+   ],
+   [
+    "p",
+    "Giả định nhà anh Minh chi 7,5 triệu mỗi tháng như bảng dưới (ví dụ minh họa, áp mức tăng giá từng nhóm):"
+   ],
+   [
+    "table",
+    [
+     [
+      "Khoản chi",
+      "Mỗi tháng",
+      "Giá tăng",
+      "Tốn thêm"
+     ],
+     [
+      "Ăn uống",
+      "3,5 triệu",
+      "+3,6%",
+      "126 nghìn"
+     ],
+     [
+      "Nhà trọ, điện nước",
+      "2,5 triệu",
+      "+6,5%",
+      "163 nghìn"
+     ],
+     [
+      "Xăng, đi lại",
+      "0,8 triệu",
+      "+15,6%",
+      "125 nghìn"
+     ],
+     [
+      "Học của con",
+      "0,7 triệu",
+      "+2,7%",
+      "19 nghìn"
+     ],
+     [
+      "Cộng",
+      "7,5 triệu",
+      "+5,8%",
+      "432 nghìn"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Lương tăng khoảng 824 nghìn, giá ăn mất 432 nghìn, còn lại khoảng <b>392 nghìn</b>. Lạm phát riêng của nhà anh Minh là 5,8%, cao hơn CPI chung, nên lương thực tế chỉ tăng khoảng <b>3,9%</b>. Nhà nào chạy xe nhiều, thuê nhà ở thành phố thì càng thấy ví mỏng hơn tin tức."
+   ],
+   [
+    "h2",
+    "Lương của anh chị đang ở mức nào?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Lương tăng dưới 5,1%</b>: sức mua giảm. Rà lại chi tiêu, tìm thêm nguồn thu nhập.",
+     "<b>Từ 5,1% đến 9,85%</b>: giàu lên nhưng chậm hơn mặt bằng. Cho phần tiền dư sinh lời, đừng để đứng yên.",
+     "<b>Trên 9,85%</b>: theo kịp hoặc vượt mặt bằng. Giữ nhịp, tăng tỷ lệ để dành."
+    ]
+   ],
+   [
+    "p",
+    "<b>Bảng tra nhanh</b>: tìm mức lương anh chị tăng trong một năm, cột giữa là lương thực tế (đã chia cho lạm phát 5,09%). Muốn tính đúng số của mình: lấy lương năm nay chia lương năm ngoái, chia tiếp cho 1,0509, trừ 1."
+   ],
+   [
+    "table",
+    [
+     [
+      "Lương tăng<br>1 năm",
+      "Lương<br>thực tế",
+      "Nghĩa là"
+     ],
+     [
+      "0%",
+      "−4,8%",
+      "Mất sức mua"
+     ],
+     [
+      "3%",
+      "−2,0%",
+      "Nghèo đi"
+     ],
+     [
+      "5%",
+      "−0,1%",
+      "Đứng yên"
+     ],
+     [
+      "7%",
+      "+1,8%",
+      "Giàu chậm"
+     ],
+     [
+      "9,85%",
+      "+4,5%",
+      "Bằng bình quân"
+     ],
+     [
+      "12%",
+      "+6,6%",
+      "Vượt"
+     ],
+     [
+      "15%",
+      "+9,4%",
+      "Vượt rõ"
+     ]
+    ]
+   ],
+   [
+    "h2",
+    "Phần tăng trưởng còn lại đi đâu?"
+   ],
+   [
+    "p",
+    "GDP danh nghĩa tăng 12,9% trong khi thu nhập lao động tăng 9,85%. Phần chênh nằm ở lợi nhuận doanh nghiệp, thuế và tài sản (đất, cổ phiếu, tiền gửi). Người chỉ sống bằng lương nhận phần tăng trưởng qua tiền công; người sở hữu một phần doanh nghiệp nhận thêm qua lợi nhuận."
+   ],
+   [
+    "p",
+    "Còn tiền để dành thì sao? Lãi tiết kiệm 12 tháng của nhóm ngân hàng thương mại Nhà nước khoảng <b>5,4%/năm</b>, CPI 5,09%: lãi thật chỉ khoảng 0,3%. Gửi tiết kiệm giữ được giá trị, nhưng gần như không lớn thêm. Ai muốn xem góp đều cổ phiếu ngân hàng qua nhiều năm khác gửi tiết kiệm ra sao có thể tham khảo <a href=\"/bao-cao-2026.html#tichsan\">bảng tích sản cổ phiếu ngân hàng 2018–2026</a>."
+   ],
+   [
+    "p",
+    "Lương tối thiểu vùng từ 1/1/2027 tăng thêm 310–390 nghìn đồng/tháng tùy vùng (Báo Thanh Hóa 4/11/2026). Mức tăng này giúp người lương thấp, nhưng chỉ đủ bù một phần giá cả nếu giá xăng và nhà ở còn tăng nhanh."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp khi đọc tin GDP"
+   ],
+   [
+    "ol",
+    [
+     "<b>Lấy GDP thay cho lương</b>: GDP 9,95% là cả nền kinh tế; lương thực tế trung bình chỉ khoảng 4,5%.",
+     "<b>Trừ thay vì chia</b>: lạm phát càng cao, phép trừ càng lệch. Dùng công thức (1 + lương) ÷ (1 + lạm phát) − 1.",
+     "<b>Dùng CPI chung cho nhà mình</b>: nhà chi nhiều cho xăng, nhà ở thì lạm phát riêng có thể 6–7%, cao hơn hẳn 5,09%."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist: tự tính trong 5 phút"
+   ],
+   [
+    "ul",
+    [
+     "Lấy lương tháng này và lương cùng tháng năm ngoái (cả thưởng chia đều nếu có).",
+     "Ghi 4–5 khoản chi lớn nhất và giá mỗi khoản tăng bao nhiêu.",
+     "Tính lạm phát riêng = tổng tiền tốn thêm ÷ tổng chi.",
+     "Tính lương thực tế bằng công thức hoặc bảng tra ở trên, so với mốc 0% và 9,85%.",
+     "Xem tiền để dành đang ở đâu, lãi thật sau lạm phát là bao nhiêu."
+    ]
+   ],
+   [
+    "p",
+    "Đọc thêm: <a href=\"/f0/lam-phat-va-chung-khoan.html\">lạm phát ảnh hưởng chứng khoán thế nào</a> và <a href=\"/f0/viet-nam-dang-no-bao-nhieu.html\">Việt Nam đang nợ bao nhiêu</a>."
+   ],
+   [
+    "p",
+    "<small>Nguồn: Tổng cục Thống kê, NHNN (tổng hợp WiData); Báo Thanh Hóa 4/11/2026. Tỷ lệ %, số chia đầu người và rổ chi tiêu minh họa là số tự tính. Bài chia sẻ kiến thức, không phải khuyến nghị đầu tư.</small>"
+   ]
+  ],
+  "faq": [
+   [
+    "Lương thực tế là gì?",
+    "Là lương sau khi loại phần giá cả tăng, cho biết sức mua tăng hay giảm. Tính bằng (1 + tăng lương) ÷ (1 + lạm phát) − 1."
+   ],
+   [
+    "Thu nhập người lao động Việt Nam quý 3/2026 là bao nhiêu?",
+    "Khoảng 9.184.891 đồng/tháng theo Tổng cục Thống kê, tăng 9,85% so với quý 3/2025. Trừ lạm phát khoảng 5,08%, thu nhập thực tăng khoảng 4,5%."
+   ],
+   [
+    "GDP tăng thì lương có tăng theo không?",
+    "Có liên quan nhưng không bằng nhau. Quý 3/2026 GDP thực tăng 9,95% còn thu nhập thực của lao động chỉ tăng khoảng 4,5%; phần còn lại nằm ở lợi nhuận doanh nghiệp, thuế và tài sản."
+   ]
+  ],
+  "rel": [
+   "lam-phat-va-chung-khoan",
+   "viet-nam-dang-no-bao-nhieu",
+   "tich-san-co-phieu-hay-gui-tiet-kiem",
+   "lai-kep-trong-dau-tu",
    "tich-san-cho-nguoi-luong-10-trieu"
   ]
  }
