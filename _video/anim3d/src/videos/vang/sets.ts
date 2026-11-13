@@ -13,7 +13,7 @@ const cvs = (w: number, h: number) => { const c = document.createElement("canvas
 const ctex = (c: HTMLCanvasElement, rep = false) => { const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 4; if (rep) t.wrapS = t.wrapT = THREE.RepeatWrapping; return t; };
 const F = "'Be Vietnam Pro', 'DejaVu Sans', Arial, sans-serif";
 
-export const RX = -400, SX = 0, IX = 400, HX = 800, BX = 1300, GX = 1800;
+export const RX = -400, SX = 0, IX = 400, HX = 800, BX = 1300, GX = 1800, VX = 2300;
 
 // ---------- shared pieces ----------
 export type BikeK = "wave" | "sh" | "vision";
@@ -367,7 +367,7 @@ export function buildHoGuom() {
   const walk = new THREE.Mesh(new THREE.PlaneGeometry(200, 5), lam("#ffffff", tiles())); walk.rotation.x = -Math.PI / 2; walk.position.set(0, 0.11, 11.5); ((walk.material as THREE.MeshLambertMaterial).map!).repeat.set(100, 2.5); g.add(walk);
   for (let k = 0; k < 16; k++) { const w = willow(r); w.position.set(-70 + k * 9 + r() * 3, 0.1, 9.6 + r() * 1.5); g.add(w); }
   for (let k = 0; k < 12; k++) { const t = treeV(r, k % 2 ? "bang" : "sau", true); t.position.set(-66 + k * 11 + r() * 3, 0.1, 16 + r() * 3); g.add(t); }
-  for (let k = 0; k < 14; k++) { const lp = lampPost([2.8, 2.1, 1.2], 3.6); lp.position.set(-60 + k * 9, 0.1, 13.8); lp.rotation.y = -Math.PI / 2; g.add(lp); }
+  for (let k = 0; k < 14; k++) { const lp = lampPost([2.8, 2.1, 1.2], 3.6); lp.position.set(-64.5 + k * 9, 0.1, 13.8); lp.rotation.y = -Math.PI / 2; g.add(lp); }
   // bench for the couple
   const bench = new THREE.Group(); const bs = box(1.8, 0.08, 0.45, lam("#6b4a2e")); bs.position.y = 0.45; bench.add(bs); const bb = box(1.8, 0.4, 0.06, lam("#6b4a2e")); bb.position.set(0, 0.75, -0.22); bench.add(bb);
   for (const x of [-0.8, 0.8]) { const l = box(0.06, 0.45, 0.4, lam("#222")); l.position.set(x, 0.22, 0); bench.add(l); } bench.position.set(-6, 0.1, 12.4); g.add(bench);
@@ -404,4 +404,40 @@ export function buildHoGuom() {
   for (let i = 0; i < 70; i++) { const bw = 20 + r() * 60, bh = 40 + r() * 170, bxx = r() * 2048; sg.fillStyle = "#121733"; sg.fillRect(bxx, 256 - bh, bw, bh); sg.fillStyle = "rgba(255,200,120,.9)"; for (let k = 0; k < 8; k++) if (r() < 0.6) sg.fillRect(bxx + 3 + r() * (bw - 8), 256 - bh + r() * bh, 4, 5); }
   const sky = new THREE.Mesh(new THREE.PlaneGeometry(300, 37), new THREE.MeshBasicMaterial({ map: ctex(sc), transparent: true })); sky.position.set(0, 16, -110); sky.layers.set(NOINK); g.add(sky);
   return { g };
+}
+
+// ---------- KHU BIỆT THỰ "CIPUCHACHA": mưa là ngập, đại gia chèo thuyền ----------
+export function boat(col = "#8a8f96") {
+  const g = new THREE.Group(), m = lam(col), inner = lam("#5a5f66");
+  const hull = box(1.1, 0.32, 2.8, m); hull.position.y = 0.16; g.add(hull);
+  const bow = new THREE.Mesh(new THREE.ConeGeometry(0.55, 0.8, 4), m); bow.rotation.x = Math.PI / 2; bow.rotation.y = Math.PI / 4; bow.scale.set(1, 1, 0.45); bow.position.set(0, 0.16, 1.8); g.add(bow);
+  const fl = box(0.9, 0.04, 2.6, inner); fl.position.y = 0.3; g.add(fl);
+  const oar = box(0.05, 0.05, 2.4, lam("#7a5638")); oar.position.set(0.5, 0.55, 0); oar.rotation.z = 0.5; oar.rotation.y = 0.3; g.add(oar);
+  return g;
+}
+export function buildVilla() {
+  const g = new THREE.Group(); g.position.x = VX; const r = rng(55);
+  const water = new THREE.Mesh(new THREE.PlaneGeometry(220, 26), new THREE.MeshBasicMaterial({ map: waterTex("#3d4a3a", "rgba(255,210,150,.45)", 21), transparent: true, opacity: 0.93 }));
+  water.rotation.x = -Math.PI / 2; water.position.y = 0.42; ((water.material as THREE.MeshBasicMaterial).map!).repeat.set(18, 3); g.add(water);
+  const ground = new THREE.Mesh(new THREE.PlaneGeometry(220, 26), lam("#4a4f55")); ground.rotation.x = -Math.PI / 2; g.add(ground);
+  const [vc, vg] = cvs(512, 512); vg.fillStyle = "#f3efe6"; vg.fillRect(0, 0, 512, 512);
+  for (const y of [40, 210]) for (const x of [50, 210, 370]) { vg.fillStyle = "rgba(255,214,140,.95)"; vg.fillRect(x, y, 90, 130); vg.strokeStyle = "#cbbfa8"; vg.lineWidth = 10; vg.strokeRect(x, y, 90, 130); }
+  vg.fillStyle = "#3b2a22"; vg.fillRect(206, 380, 100, 132); const vt = ctex(vc);
+  for (const s of [1, -1]) for (let k = 0; k < 9; k++) {
+    const x = -48 + k * 12 + (s > 0 ? 0 : 5), h = new THREE.Group();
+    const wallM = new THREE.MeshBasicMaterial({ map: vt }); wallM.color.setRGB(0.95, 0.92, 0.9);
+    const body = new THREE.Mesh(new THREE.BoxGeometry(9, 7.5, 9), [lam("#ece6d8"), lam("#ece6d8"), lam("#ece6d8"), lam("#ece6d8"), s < 0 ? wallM : lam("#ece6d8"), s > 0 ? wallM : lam("#ece6d8")]);
+    body.position.set(0, 3.75, s * 4.5); body.castShadow = true; h.add(body);
+    const roof = new THREE.Mesh(new THREE.ConeGeometry(7.2, 2.6, 4), lam(["#a8432c", "#5b6470", "#8a3a2a"][k % 3])); roof.rotation.y = Math.PI / 4; roof.position.set(0, 8.8, s * 4.5); roof.castShadow = true; h.add(roof);
+    for (const cx of [-3, -1, 1, 3]) { const col = cyl(0.18, 0.2, 3.2, lam("#faf7ef"), 10); col.position.set(cx, 1.6, -s * 0.4 + s * 0); h.add(col); }
+    const porch = box(9, 0.25, 1.2, lam("#faf7ef")); porch.position.set(0, 3.3, -s * 0.2); h.add(porch);
+    const fence = box(10, 1.1, 0.12, lam("#222428")); fence.position.set(0, 0.55, -s * 1.6); h.add(fence);
+    for (let fx = -4.8; fx <= 4.8; fx += 0.4) { const sp = box(0.05, 1.5, 0.05, lam("#c9a64a"), false); sp.position.set(fx, 0.75, -s * 1.6); h.add(sp); }
+    const t = treeV(r, "cau", true); t.position.set(4, 0, -s * 2.4); h.add(t);
+    h.position.set(x, 0, s * 8); g.add(h);
+    if (k % 3 === 1) { const c = car(["#f4f4f2", "#111216", "#8a1c22"][k % 3], k % 2 ? "suv" : "sedan"); c.position.set(x + 2, -0.15, s * 5.2); c.rotation.y = Math.PI / 2; g.add(c); }
+  }
+  for (let px = -46; px <= 50; px += 12) for (const s of [1, -1]) { const lp = lampPost([2.6, 2.0, 1.1], 4.5); lp.position.set(px, 0, s * 5.8); lp.rotation.y = s > 0 ? -Math.PI / 2 : Math.PI / 2; g.add(lp); }
+  const hero = boat("#d0482a"); hero.rotation.y = Math.PI / 2; hero.position.set(0, 0.3, 0); g.add(hero);
+  return { g, hero };
 }

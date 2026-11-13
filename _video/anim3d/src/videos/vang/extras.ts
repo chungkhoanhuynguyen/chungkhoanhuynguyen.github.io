@@ -1,12 +1,12 @@
 // "Sự sống" nền cho từng bối cảnh: xe máy có người lái chạy qua (đêm bật đèn pha), người đi bộ / chạy bộ, chó, mèo, chim bay.
 // Tất cả chạy tự động theo thời gian, đặt ngoài vùng diễn của nhân vật chính để không che mặt.
 import * as THREE from "three";
-import { motorbike, car, stool, box, cyl, lam, glow, RX, SX, HX, BX, GX, GOLD_X, HOME_X } from "./sets";
+import { motorbike, car, stool, box, cyl, lam, glow, boat, RX, SX, HX, BX, GX, VX, GOLD_X, HOME_X } from "./sets";
 import { Actor, crowd } from "./cast2";
 import { NOINK } from "../pho/ink";
 import { rng } from "../pho/paint";
 
-type Upd = (t: number, cam: THREE.Camera, tint: THREE.Color) => void;
+type Upd = (t: number, cam: THREE.Camera, tint: THREE.Color, jam?: boolean) => void;
 const cv = (w: number, h: number) => { const c = document.createElement("canvas"); c.width = w; c.height = h; return [c, c.getContext("2d")!] as const; };
 
 /** animal card (side view) that billboards around Y like the cast */
@@ -106,6 +106,16 @@ export function buildExtras(set: string, root: THREE.Group): Upd {
         ups.push((t, cam, tint) => { a.root.position.set(X + x + dx, 0.48, z + dz - 0.18 * sign); a.pose({ expr: ex, mode: "sit", acc: cup ? ["cup"] : [], blink: Math.floor((t + j) * 30) % 83 < 4, t: cup ? Math.round(t * 6) / 6 : 0 }, cam, tint); }); }
     }
   };
+  /** quần chúng "ngứa mắt": anh tập boxing múa đấm trên vỉa hè, anh gym cơ bắp áo ba lỗ */
+  const boxer = (X: number, x: number, z: number) => { const a = new Actor({ jacket: "#e23b2e", pants: "#1f2430", boots: "#f4f4f2", hat: "cap", cap: "#111", belt: null, buttons: "#e23b2e", skin: "#d9a77e", build: "stout" }, 1.72, 150); root.add(a.root);
+    ups.push((t, cam, tint) => { const k = Math.floor(t * 4) % 2; a.root.position.set(X + x + Math.sin(t * 2) * 0.15, 0.15, z); a.pose({ expr: k ? "stern" : "grin", prop: k ? "type" : "hold2", acc: ["gloves"], tilt: k ? 4 : -4 }, cam, tint); }); };
+  const gym = (X: number, z: number, a0: number, b0: number) => { const a = new Actor({ jacket: "#2b2b2b", pants: "#3a4a6a", boots: "#f4f4f2", hat: "hair", hair: "#111", belt: null, buttons: "#2b2b2b", skin: "#c98a5a", build: "stout" }, 1.8, 151); root.add(a.root);
+    const L = b0 - a0; ups.push((t, cam, tint) => { const s2 = (t * 1.0) % (2 * L), x = s2 < L ? a0 + s2 : b0 - (s2 - L); a.root.position.set(X + x, 0.15, z); a.pose({ expr: "smug", mode: "stroll", phase: Math.round(((t * 1.0) % 1) * 12) / 12, acc: ["muscle"] }, cam, tint); }); };
+  /** tắc đường: xe đứng im, đèn pha, còi (âm thanh làm riêng) – chỉ hiện ở cảnh có jam */
+  const jamGroup = (X: number) => { const jg = new THREE.Group(); root.add(jg);
+    for (let k = 0; k < 7; k++) { const c = car(["#f4f4f2", "#111216", "#8a1c22", "#2c3e50", "#9aa3ab", "#1f4e8a", "#c0392b"][k], k % 2 ? "suv" : "sedan"); c.position.set(X - 40 + k * 5.2, 0, k % 2 ? -2.2 : 2.0); c.rotation.y = Math.PI / 2 * (k % 2 ? 1 : -1); jg.add(c); }
+    for (let k = 0; k < 9; k++) { const b = motorbike(["#c0392b", "#2c3e50", "#f4f4f2"][k % 3], (["sh", "vision", "wave"] as const)[k % 3]); b.position.set(X - 41 + k * 3.7, 0, k % 2 ? -0.6 : 0.6); b.rotation.y = Math.PI / 2; jg.add(b); }
+    jg.visible = false; ups.push((_t, _c, _ti, jam) => { jg.visible = !!jam; }); };
   const sky = (n: number) => { const b = birds(n, set.length); root.add(b.m); ups.push((t, cam) => b.up(t, cam.position)); };
 
   if (set === "street" || set === "streetday") {
@@ -117,7 +127,8 @@ export function buildExtras(set: string, root: THREE.Group): Upd {
     pet("cat", "#e8a050", SX, new THREE.Vector3(-4.5, 0.15, 6.5));
     // quán xá: bờ bên kia đường (z âm) và vài cụm bên này, tránh chỗ diễn của nhân vật chính
     cafe(SX, -40, -5.6, 6, !night, -1); cafe(SX, 8, -5.6, 7, !night, -1); cafe(SX, 34, -5.6, 5, !night, -1);
-    if (!night) { cafe(SX, HOME_X - 9.5, 5.95, 3, true); cafe(SX, GOLD_X + 16, 5.95, 5, true); }
+    if (!night) { cafe(SX, HOME_X - 9.5, 5.95, 3, true); cafe(SX, GOLD_X + 16, 5.95, 5, true); boxer(SX, -26, -5.0); gym(SX, -4.6, -30, 20); boxer(SX, GOLD_X + 30, 5.4); }
+    else jamGroup(SX);
     if (!night) sky(9);
   } else if (set === "lake") {
     walkers(GX, 10.1, 3, -45, 25, [2.2, 2.8], true);
@@ -126,14 +137,19 @@ export function buildExtras(set: string, root: THREE.Group): Upd {
   } else if (set === "bt") {
     traffic(BX, [[4, 1], [7, 1], [12, -1], [15, -1]], 15, -70, 70, false);
     walkers(BX, -2.5, 6, -40, 40, [0.8, 1.3]);
-    cafe(BX, -30, -6.5, 6, true); cafe(BX, 24, -6.5, 5, true);
+    cafe(BX, -30, -6.5, 6, true); cafe(BX, 24, -6.5, 5, true); boxer(BX, -12, -3.2); gym(BX, -2.0, -30, 30);
     sky(10);
   } else if (set === "hue") {
     sky(12);
     const boat = new THREE.Group(); const hull = new THREE.Mesh(new THREE.CapsuleGeometry(0.5, 3, 4, 8), new THREE.MeshLambertMaterial({ color: "#5a3b22" })); hull.rotation.x = Math.PI / 2; hull.scale.set(1, 1, 0.4); boat.add(hull); root.add(boat);
     ups.push((t) => { boat.position.set(HX - 24 + Math.sin(t * 0.05) * 3, -1.0, -20 + t * 0.6); });
+  } else if (set === "villa") {
+    for (let i = 0; i < 4; i++) { const b = boat(["#9aa0a8", "#c0392b", "#2f6fd1", "#d8d3c8"][i]); const rw = new Actor(crowd(i + 140), 1.6, 170 + i); root.add(b, rw.root); const v = 0.9 + r() * 0.5, off = r() * 80, z = (i % 2 ? -2.2 : 2.4);
+      ups.push((t, cam, tint) => { const x = -40 + ((off + t * v) % 80); b.position.set(VX + x, 0.3 + Math.sin(t * 1.3 + i) * 0.04, z); b.rotation.y = Math.PI / 2 + Math.sin(t * 0.7 + i) * 0.05;
+        rw.root.position.set(VX + x, 0.38, z); rw.pose({ expr: i % 2 ? "smug" : "neutral", mode: "sit", acc: i % 2 ? ["raincoat"] : ["umbrella"], umb: "#2b4f8a" }, cam, tint); }); }
+    pet("dog", "#c98a4a", VX, new THREE.Vector3(6, 3.45, 7.4));
   } else if (set === "room") {
     pet("catsleep", "#e8a050", RX, new THREE.Vector3(2.75, 0.58, 1.55));
   }
-  return (t, cam, tint) => { for (const u of ups) u(t, cam, tint); };
+  return (t, cam, tint, jam) => { for (const u of ups) u(t, cam, tint, jam); };
 }

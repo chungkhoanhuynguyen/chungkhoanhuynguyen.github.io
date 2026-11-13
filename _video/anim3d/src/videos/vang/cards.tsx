@@ -194,7 +194,7 @@ export const LessonCard: React.FC<{ t: number; items: { n: string; head: string;
     <Bg t={t} hue="navy" />
     <div style={{ position: "absolute", left: 160, top: 90, fontSize: 64, fontWeight: 900, color: "#fff", opacity: sm((t - tAt) / 0.4) }}>{title}</div>
     {items.map((it, i) => { const a = pop((t - it.at) / 0.4); if (t < it.at) return null;
-      return <div key={i} style={{ position: "absolute", left: 160, top: 230 + i * 230, width: 1600, height: 200, borderRadius: 30, background: "rgba(255,255,255,.07)", border: "3px solid rgba(245,197,24,.6)", display: "flex", alignItems: "center", opacity: Math.min(1, a), transform: `translateY(${(1 - Math.min(1, a)) * 40}px)` }}>
+      return <div key={i} style={{ position: "absolute", left: 160, top: (items.length > 3 ? 190 : 230) + i * (items.length > 3 ? 172 : 230), width: 1600, height: items.length > 3 ? 155 : 200, borderRadius: 30, background: "rgba(255,255,255,.07)", border: "3px solid rgba(245,197,24,.6)", display: "flex", alignItems: "center", opacity: Math.min(1, a), transform: `translateY(${(1 - Math.min(1, a)) * 40}px)` }}>
         <div style={{ width: 160, fontSize: 110, fontWeight: 900, color: "#f5c518", textAlign: "center" }}>{it.n}</div>
         <div style={{ fontSize: 80, width: 120, textAlign: "center" }}>{it.icon}</div>
         <div style={{ marginLeft: 20 }}><div style={{ fontSize: 52, fontWeight: 900, color: "#fff" }}>{it.head}</div><div style={{ fontSize: 32, fontWeight: 500, color: "#c5cde0", marginTop: 6 }}>{it.body}</div></div></div>; })}

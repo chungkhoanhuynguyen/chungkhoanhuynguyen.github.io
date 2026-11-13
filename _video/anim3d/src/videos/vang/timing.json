@@ -1,872 +1,972 @@
 {
- "total": 537.204,
+ "total": 626.72,
  "scenes": [
   {
    "id": "S01",
    "a": 0.0,
-   "b": 27.373,
+   "b": 27.731,
    "sens": [
     {
      "text": "Chín giờ tối.",
      "a": 1.263,
-     "b": 2.032
+     "b": 1.958
     },
     {
      "text": "Anh Tân đang livestream Lửa Chùa, hai nghìn người đang xem.",
-     "a": 2.789,
-     "b": 5.879
+     "a": 2.716,
+     "b": 5.882
     },
     {
      "text": "Điện thoại khẽ rung.",
-     "a": 6.321,
-     "b": 7.333
+     "a": 6.324,
+     "b": 7.407
     },
     {
      "text": "Một dòng thông báo hiện lên: giá vàng lại giảm.",
-     "a": 8.091,
-     "b": 10.329
+     "a": 8.165,
+     "b": 10.885
     },
     {
      "text": "Anh Tân im bặt.",
-     "a": 10.772,
-     "b": 11.546
+     "a": 11.327,
+     "b": 12.102
     },
     {
      "text": "Khung chat chạy liên tục: anh ơi, sao anh im thế?",
-     "a": 12.304,
-     "b": 15.271
+     "a": 12.86,
+     "b": 15.964
     },
     {
      "text": "Anh không trả lời.",
-     "a": 15.955,
-     "b": 16.982
+     "a": 16.648,
+     "b": 17.468
     },
     {
      "text": "Vì dưới gầm giường, trong chiếc két sắt nhỏ, có năm lượng vàng.",
-     "a": 17.74,
-     "b": 20.96
+     "a": 18.226,
+     "b": 21.413
     },
     {
      "text": "Và trong năm lượng vàng ấy, có cả cuốn sổ tiết kiệm của mẹ anh ở quê.",
-     "a": 21.402,
-     "b": 25.109
+     "a": 21.855,
+     "b": 25.467
     }
    ]
   },
   {
    "id": "S02",
-   "a": 27.373,
-   "b": 38.755,
+   "a": 27.731,
+   "b": 38.444,
    "sens": [
     {
      "text": "Đây là câu chuyện về năm lượng vàng mua đúng đỉnh.",
-     "a": 28.004,
-     "b": 30.78
+     "a": 28.362,
+     "b": 30.643
     },
     {
      "text": "Và một bài học mà nhiều người phải trả bằng vài trăm triệu đồng, và cả nước mắt, mới hiểu.",
-     "a": 31.222,
-     "b": 35.86
+     "a": 31.085,
+     "b": 35.549
     }
    ]
   },
   {
    "id": "S03",
-   "a": 38.755,
-   "b": 71.011,
+   "a": 38.444,
+   "b": 79.159,
    "sens": [
     {
      "text": "Anh Tân là hàng xóm nhà em.",
-     "a": 38.755,
-     "b": 40.314
+     "a": 38.444,
+     "b": 39.772
     },
     {
      "text": "Cả xóm quen gọi anh là Tân Mông To, vì anh ngồi livestream nhiều quá.",
-     "a": 40.756,
-     "b": 44.655
+     "a": 40.214,
+     "b": 43.954
     },
     {
      "text": "Anh ở ẩn trên căn gác tầng năm, ngày ngủ, đêm cày game.",
-     "a": 45.097,
-     "b": 48.284
+     "a": 44.396,
+     "b": 47.611
     },
     {
      "text": "Câu cửa miệng của anh là: anh em ơi, lương anh có bảy triệu thôi.",
-     "a": 48.726,
-     "b": 52.784
+     "a": 48.053,
+     "b": 51.731
     },
     {
      "text": "Nói cho vui vậy thôi, chứ anh sống rất tằn tiện.",
-     "a": 53.226,
-     "b": 55.66
+     "a": 52.173,
+     "b": 54.671
     },
     {
      "text": "Ăn mì tôm, đi chiếc xe máy cũ tám năm, không dám mua cái gì đắt tiền.",
-     "a": 56.102,
-     "b": 60.256
+     "a": 55.113,
+     "b": 59.725
     },
     {
      "text": "Mười năm, anh để dành được sáu trăm triệu.",
-     "a": 60.698,
-     "b": 63.361
+     "a": 60.167,
+     "b": 62.507
+    },
+    {
+     "text": "Năm ngoái, nghe quảng cáo tập trọn đời, anh còn ký luôn thẻ tập gym ba năm ở chuỗi California, ba mươi sáu triệu đồng, trả góp mỗi tháng.",
+     "a": 62.949,
+     "b": 71.171
     },
     {
      "text": "Giấu kỹ đến mức vợ anh là chị Ngân cũng không biết hết.",
-     "a": 63.803,
-     "b": 66.206
+     "a": 71.613,
+     "b": 74.094
     },
     {
      "text": "Ước mơ lớn nhất của anh, là xây lại căn nhà cấp bốn cho mẹ ở quê.",
-     "a": 66.648,
-     "b": 70.221
+     "a": 74.536,
+     "b": 78.369
     }
    ]
   },
   {
    "id": "S04",
-   "a": 71.011,
-   "b": 86.796,
+   "a": 79.159,
+   "b": 95.706,
    "sens": [
     {
      "text": "Mẹ anh Tân ở Nam Định, một mình nuôi anh từ năm anh mười tuổi.",
-     "a": 71.011,
-     "b": 74.324
+     "a": 79.159,
+     "b": 82.521
     },
     {
      "text": "Cả đời mẹ bán rau ngoài chợ huyện.",
-     "a": 74.766,
-     "b": 76.336
+     "a": 82.963,
+     "b": 84.872
     },
     {
      "text": "Mẹ có một cuốn sổ tiết kiệm một trăm hai mươi triệu, gom từng đồng lẻ trong mấy chục năm.",
-     "a": 76.778,
-     "b": 81.237
+     "a": 85.314,
+     "b": 90.211
     },
     {
      "text": "Mẹ vẫn dặn: tiền này để dành lúc ốm đau, không phiền đến con.",
-     "a": 81.679,
-     "b": 85.164
+     "a": 90.653,
+     "b": 94.075
     }
    ]
   },
   {
    "id": "S05",
-   "a": 86.796,
-   "b": 111.178,
+   "a": 95.706,
+   "b": 120.988,
    "sens": [
     {
      "text": "Tết năm nay, đi đâu cũng nghe chuyện vàng.",
-     "a": 86.796,
-     "b": 88.674
+     "a": 95.706,
+     "b": 98.324
     },
     {
      "text": "Chỉ trong hơn một năm, giá vàng nhẫn tăng gấp đôi, từ tám mươi tám triệu lên một trăm tám mươi tư triệu đồng một lượng.",
-     "a": 89.116,
-     "b": 95.589
+     "a": 98.766,
+     "b": 104.455
     },
     {
      "text": "Ở quán trà đá đầu ngõ, bác xe ôm khoe: tao mua từ đầu năm, giờ lãi gấp đôi.",
-     "a": 96.032,
-     "b": 100.261
+     "a": 104.897,
+     "b": 109.784
     },
     {
      "text": "Cô bán xôi bảo: vàng thì cứ mua, có bao giờ mất đâu.",
-     "a": 100.703,
-     "b": 103.684
+     "a": 110.226,
+     "b": 113.293
     },
     {
      "text": "Ai cũng nói: vàng là của để dành, lúc nào cũng giữ giá.",
-     "a": 104.126,
-     "b": 107.351
+     "a": 113.735,
+     "b": 117.039
     },
     {
      "text": "Mỗi câu nói, như một cú đẩy nhẹ sau lưng anh Tân.",
-     "a": 107.793,
-     "b": 110.388
+     "a": 117.481,
+     "b": 120.199
     }
    ]
   },
   {
    "id": "S06",
-   "a": 111.178,
-   "b": 129.206,
+   "a": 120.988,
+   "b": 139.059,
    "sens": [
     {
      "text": "Tối mùng tám tháng Giêng, anh gọi điện về quê.",
-     "a": 111.178,
-     "b": 113.614
+     "a": 120.988,
+     "b": 123.906
     },
     {
      "text": "Anh nói dối mẹ là cần tiền sửa lại căn gác.",
-     "a": 114.056,
-     "b": 116.519
+     "a": 124.348,
+     "b": 126.634
     },
     {
      "text": "Mẹ không hỏi thêm một câu nào.",
-     "a": 116.961,
-     "b": 118.669
+     "a": 127.076,
+     "b": 128.489
     },
     {
      "text": "Sáng hôm sau, mẹ đội nón ra bưu điện, chuyển cho anh cả một trăm hai mươi triệu, kèm một tin nhắn: con cứ cầm mà lo, khi nào có thì trả mẹ.",
-     "a": 119.112,
-     "b": 127.154
+     "a": 128.932,
+     "b": 137.006
     }
    ]
   },
   {
    "id": "S07",
-   "a": 129.206,
-   "b": 142.52,
+   "a": 139.059,
+   "b": 152.342,
    "sens": [
     {
      "text": "Đêm mùng chín, trước ngày vía Thần Tài.",
-     "a": 129.206,
-     "b": 131.16
+     "a": 139.059,
+     "b": 141.064
     },
     {
      "text": "Anh Tân báo với anh em trong kênh: mai anh nghỉ live một buổi.",
-     "a": 131.602,
-     "b": 134.806
+     "a": 141.506,
+     "b": 144.666
     },
     {
      "text": "Ba giờ sáng, anh rón rén dắt xe ra khỏi nhà.",
-     "a": 135.248,
-     "b": 138.086
+     "a": 145.108,
+     "b": 147.471
     },
     {
      "text": "Lời nhắn để lại cho vợ chỉ có một dòng: anh đi tập thể dục.",
-     "a": 138.528,
-     "b": 141.731
+     "a": 147.913,
+     "b": 151.553
     }
    ]
   },
   {
    "id": "S08",
-   "a": 142.52,
-   "b": 172.356,
+   "a": 152.342,
+   "b": 198.728,
    "sens": [
     {
      "text": "Bốn giờ sáng, phố Trần Nhân Tông, Hà Nội.",
-     "a": 144.204,
-     "b": 146.561
+     "a": 154.026,
+     "b": 156.599
     },
     {
      "text": "Trời mưa phùn, lạnh buốt.",
-     "a": 147.003,
-     "b": 148.555
+     "a": 157.041,
+     "b": 158.525
     },
     {
      "text": "Trước cửa những tiệm vàng quen thuộc như Bảo Tín Minh Châu, Bảo Tín Mạnh Hải, hàng người đã dài cả trăm mét.",
-     "a": 149.313,
-     "b": 154.952
+     "a": 159.283,
+     "b": 164.686
     },
     {
      "text": "Có người mang ghế nhựa, có người trùm áo mưa ngồi chờ từ tối hôm trước.",
-     "a": 155.394,
-     "b": 159.149
+     "a": 165.128,
+     "b": 168.918
+    },
+    {
+     "text": "Đầu phố, xe cộ tắc cứng.",
+     "a": 169.36,
+     "b": 170.876
+    },
+    {
+     "text": "Hai ông tài xế cãi nhau um xùm, chỉ vì một chỗ đỗ xe trước cửa tiệm vàng.",
+     "a": 171.634,
+     "b": 175.741
+    },
+    {
+     "text": "Ở khu biệt thự Xi pu cha cha gần đó, dân mạng gọi vui là làng chài, vì cứ mưa là ngập, đại gia phải chèo thuyền ra khỏi nhà.",
+     "a": 176.183,
+     "b": 182.98
+    },
+    {
+     "text": "Vậy mà sáng ấy, thuyền vẫn nối đuôi nhau đi mua vàng.",
+     "a": 183.422,
+     "b": 186.022
     },
     {
      "text": "Tiếng mưa lộp độp trên mái hiên, tiếng người hỏi nhau: số mấy rồi?",
-     "a": 159.592,
-     "b": 163.445
+     "a": 186.464,
+     "b": 189.704
     },
     {
      "text": "Anh Tân đứng cuối hàng, tay ôm cốc trà nóng, trong đầu nhẩm tính: mua xong, lên vài giá là đủ tiền xây nhà cho mẹ.",
-     "a": 164.129,
-     "b": 170.514
+     "a": 190.388,
+     "b": 196.886
     }
    ]
   },
   {
    "id": "S09",
-   "a": 172.356,
-   "b": 186.257,
+   "a": 198.728,
+   "b": 213.668,
    "sens": [
     {
      "text": "Không chỉ Hà Nội.",
-     "a": 172.356,
-     "b": 173.186
+     "a": 198.728,
+     "b": 199.524
     },
     {
      "text": "Ở Huế, người ta đạp xe qua cầu Trường Tiền từ lúc trời còn tối để kịp xếp hàng.",
-     "a": 173.944,
-     "b": 178.117
+     "a": 200.282,
+     "b": 204.776
     },
     {
      "text": "Ở Sài Gòn, quanh chợ Bến Thành, dòng người chờ mua vàng cũng nối dài.",
-     "a": 178.559,
-     "b": 182.351
+     "a": 205.218,
+     "b": 209.466
     },
     {
      "text": "Cả nước như cùng chung một ý nghĩ: phải có vàng, kẻo lỡ.",
-     "a": 182.793,
-     "b": 185.467
+     "a": 209.908,
+     "b": 212.879
     }
    ]
   },
   {
    "id": "S10",
-   "a": 186.257,
-   "b": 203.594,
+   "a": 213.668,
+   "b": 229.966,
    "sens": [
     {
      "text": "Đứng được hai tiếng, một người đàn ông mặc vest lại gần.",
-     "a": 186.257,
-     "b": 189.183
+     "a": 213.668,
+     "b": 216.339
     },
     {
      "text": "Anh ta mở chiếc hộp nhung đỏ, bên trong là ba viên kim cương lấp lánh.",
-     "a": 189.625,
-     "b": 193.327
+     "a": 216.781,
+     "b": 220.292
     },
     {
      "text": "Anh ta thì thầm: xếp hàng làm gì cho khổ.",
-     "a": 193.769,
-     "b": 196.215
+     "a": 220.734,
+     "b": 222.98
     },
     {
      "text": "Ba viên này có giấy kiểm định của Mỹ, để lâu còn lên giá hơn vàng.",
-     "a": 196.657,
-     "b": 200.201
+     "a": 223.422,
+     "b": 227.061
     },
     {
      "text": "Anh Tân suýt nữa thì gật đầu.",
-     "a": 200.643,
-     "b": 202.804
+     "a": 227.503,
+     "b": 229.177
     }
    ]
   },
   {
    "id": "S11",
-   "a": 203.594,
-   "b": 227.994,
+   "a": 229.966,
+   "b": 254.018,
    "sens": [
     {
      "text": "Đúng lúc ấy, anh nhớ tới một cảnh trong bộ phim truyền hình về mẹ chồng nàng dâu mà vợ anh xem mỗi tối.",
-     "a": 203.594,
-     "b": 208.684
+     "a": 229.966,
+     "b": 235.515
     },
     {
      "text": "Bà mẹ chồng trong phim nói đại ý: mua vàng thì còn biết đường mà giữ, chứ đá quý với tờ giấy kiểm định nước ngoài, mình biết đâu mà lần.",
-     "a": 209.126,
-     "b": 216.396
+     "a": 235.957,
+     "b": 242.855
     },
     {
      "text": "Anh Tân lắc đầu, cất ví, tự khen mình tỉnh táo.",
-     "a": 216.838,
-     "b": 219.938
+     "a": 243.297,
+     "b": 245.858
     },
     {
      "text": "Nhưng anh không biết, cái bẫy thật sự không nằm trong chiếc hộp nhung đỏ.",
-     "a": 220.38,
-     "b": 223.861
+     "a": 246.3,
+     "b": 249.782
     },
     {
      "text": "Nó nằm ngay trong hàng người anh đang đứng.",
-     "a": 224.303,
-     "b": 226.152
+     "a": 250.224,
+     "b": 252.176
     }
    ]
   },
   {
    "id": "S12",
-   "a": 227.994,
-   "b": 252.901,
+   "a": 254.018,
+   "b": 277.845,
    "sens": [
     {
      "text": "Tám giờ sáng, đến lượt anh.",
-     "a": 227.994,
-     "b": 229.513
+     "a": 254.018,
+     "b": 255.552
     },
     {
      "text": "Giá vàng nhẫn hôm ấy khoảng một trăm tám mươi tư triệu đồng một lượng.",
-     "a": 230.271,
-     "b": 233.301
+     "a": 256.309,
+     "b": 259.397
     },
     {
      "text": "Anh mua năm lượng.",
-     "a": 233.743,
-     "b": 234.604
+     "a": 259.839,
+     "b": 260.627
     },
     {
      "text": "Tổng cộng chín trăm hai mươi triệu.",
-     "a": 235.362,
-     "b": 236.843
+     "a": 261.385,
+     "b": 262.941
     },
     {
      "text": "Sáu trăm triệu là tiền tiết kiệm mười năm.",
-     "a": 237.285,
-     "b": 239.96
+     "a": 263.383,
+     "b": 265.426
     },
     {
      "text": "Hai trăm triệu anh vay mấy người bạn, hứa hai tháng sẽ trả.",
-     "a": 240.402,
-     "b": 243.127
+     "a": 265.868,
+     "b": 268.574
     },
     {
      "text": "Và một trăm hai mươi triệu, là cuốn sổ tiết kiệm cả đời của mẹ.",
-     "a": 243.569,
-     "b": 247.292
+     "a": 269.016,
+     "b": 272.113
     },
     {
      "text": "Cầm túi vàng trên tay, anh Tân thấy mình như vừa nắm được cả tương lai.",
-     "a": 247.734,
-     "b": 251.269
+     "a": 272.555,
+     "b": 276.214
     }
    ]
   },
   {
    "id": "S13",
-   "a": 252.901,
-   "b": 279.387,
+   "a": 277.845,
+   "b": 303.826,
    "sens": [
     {
      "text": "Bốn ngày sau, mùng hai tháng Ba, giá vàng lập đỉnh.",
-     "a": 252.901,
-     "b": 255.102
+     "a": 277.845,
+     "b": 280.681
     },
     {
      "text": "Vàng miếng bán ra gần một trăm chín mươi mốt triệu một lượng.",
-     "a": 255.544,
-     "b": 258.716
+     "a": 281.123,
+     "b": 283.764
     },
     {
      "text": "Tối đó anh Tân lên live, cười không khép được miệng: anh em ơi, lương anh bảy triệu, mà một tuần anh lãi mấy chục triệu.",
-     "a": 259.158,
-     "b": 265.937
+     "a": 284.206,
+     "b": 290.466
     },
     {
      "text": "Khung chat nổ tung.",
-     "a": 266.379,
-     "b": 267.368
+     "a": 290.908,
+     "b": 291.967
     },
     {
      "text": "Có người còn hỏi: mai em đi mua có kịp không anh?",
-     "a": 268.126,
-     "b": 271.349
+     "a": 292.725,
+     "b": 295.407
     },
     {
      "text": "Anh định mua tặng vợ một chiếc nhẫn, rồi thú nhận tất cả.",
-     "a": 272.034,
-     "b": 275.015
+     "a": 296.092,
+     "b": 299.469
     },
     {
      "text": "Nhưng rồi anh lại thôi.",
-     "a": 275.457,
-     "b": 276.428
+     "a": 299.912,
+     "b": 300.923
     },
     {
      "text": "Để lãi thêm chút nữa đã.",
-     "a": 277.186,
-     "b": 278.598
+     "a": 301.681,
+     "b": 303.037
     }
    ]
   },
   {
    "id": "S14",
-   "a": 279.387,
-   "b": 293.687,
+   "a": 303.826,
+   "b": 324.118,
    "sens": [
     {
      "text": "Nhưng có một điều anh Tân không để ý.",
-     "a": 279.387,
-     "b": 281.263
+     "a": 303.826,
+     "b": 305.702
     },
     {
      "text": "Khi cả quán trà đá, cả khung chat, cả những người chưa từng đầu tư cũng đi xếp hàng mua vàng, thì người cuối cùng muốn mua cũng đã mua rồi.",
-     "a": 281.705,
-     "b": 288.54
+     "a": 306.144,
+     "b": 313.439
+    },
+    {
+     "text": "Giới đầu tư có một câu nói vui: khi cả cô bán xôi cũng khuyên mua, đó là lúc nên dè chừng.",
+     "a": 313.881,
+     "b": 319.044
     },
     {
      "text": "Đỉnh giá thường được tạo ra đúng vào lúc mọi người chắc chắn nhất.",
-     "a": 288.982,
-     "b": 291.845
+     "a": 319.486,
+     "b": 322.276
     }
    ]
   },
   {
    "id": "S15",
-   "a": 293.687,
-   "b": 311.543,
+   "a": 324.118,
+   "b": 353.669,
    "sens": [
     {
      "text": "Chỉ hai tuần sau, giá bắt đầu trượt.",
-     "a": 293.687,
-     "b": 295.603
+     "a": 324.118,
+     "b": 325.785
     },
     {
      "text": "Từ ngày mười tám đến ngày hai mươi ba tháng Ba, chỉ trong ba phiên, vàng miếng mất mười bảy triệu đồng mỗi lượng.",
-     "a": 296.045,
-     "b": 301.576
+     "a": 326.227,
+     "b": 331.88
+    },
+    {
+     "text": "Không chỉ vàng.",
+     "a": 332.322,
+     "b": 333.142
+    },
+    {
+     "text": "Chứng khoán cũng rơi theo: VN-Index từ khoảng một nghìn tám trăm tám mươi điểm ngày vía Thần Tài, xuống còn một nghìn năm trăm chín mươi mốt điểm ngày hai mươi ba tháng Ba.",
+     "a": 333.9,
+     "b": 343.228
     },
     {
      "text": "Anh Tân nhắn vào nhóm bạn: chỉnh tí thôi, vàng là phải giữ dài.",
-     "a": 302.018,
-     "b": 305.462
+     "a": 343.671,
+     "b": 347.153
     },
     {
      "text": "Nhưng đêm nào anh cũng mở bảng giá trước khi ngủ.",
-     "a": 305.904,
-     "b": 308.235
+     "a": 347.595,
+     "b": 349.894
     },
     {
      "text": "Sáng dậy, việc đầu tiên vẫn là mở bảng giá.",
-     "a": 308.677,
-     "b": 310.754
+     "a": 350.336,
+     "b": 352.88
     }
    ]
   },
   {
    "id": "S16",
-   "a": 311.543,
-   "b": 338.564,
+   "a": 353.669,
+   "b": 380.369,
    "sens": [
     {
      "text": "Rồi một tối, chị Ngân dọn tủ, tìm thấy tờ hóa đơn mua vàng.",
-     "a": 311.543,
-     "b": 315.287
+     "a": 353.669,
+     "b": 357.256
     },
     {
      "text": "Chín trăm hai mươi triệu.",
-     "a": 315.729,
-     "b": 316.805
+     "a": 357.698,
+     "b": 358.672
     },
     {
      "text": "Chị ngồi lặng đi rất lâu.",
-     "a": 317.563,
-     "b": 318.744
+     "a": 359.429,
+     "b": 360.896
     },
     {
      "text": "Rồi chị hỏi anh đúng một câu: tiền của mẹ cũng ở trong đó, phải không anh?",
-     "a": 319.502,
-     "b": 323.137
+     "a": 361.654,
+     "b": 365.769
     },
     {
      "text": "Anh Tân cúi mặt, không dám trả lời.",
-     "a": 323.821,
-     "b": 325.812
+     "a": 366.454,
+     "b": 368.743
     },
     {
      "text": "Chị không giận vì anh mua vàng.",
-     "a": 326.254,
-     "b": 327.792
+     "a": 369.185,
+     "b": 370.555
     },
     {
      "text": "Chị giận vì anh giấu.",
-     "a": 328.234,
-     "b": 329.489
+     "a": 370.997,
+     "b": 371.989
     },
     {
      "text": "Đêm ấy, căn gác tầng năm không có livestream.",
-     "a": 330.247,
-     "b": 332.904
+     "a": 372.747,
+     "b": 374.982
     },
     {
      "text": "Chỉ có tiếng mưa, và hai người ngồi ở hai đầu giường.",
-     "a": 333.346,
-     "b": 336.301
+     "a": 375.424,
+     "b": 378.106
     }
    ]
   },
   {
    "id": "S17",
-   "a": 338.564,
-   "b": 378.698,
+   "a": 380.369,
+   "b": 422.004,
    "sens": [
     {
      "text": "Mùa hè, giá vàng hồi lên một chút.",
-     "a": 338.564,
-     "b": 340.173
+     "a": 380.369,
+     "b": 382.318
     },
     {
      "text": "Cuối tháng Tám, vàng nhẫn quay lại khoảng một trăm bốn mươi tám triệu.",
-     "a": 340.615,
-     "b": 343.614
+     "a": 382.76,
+     "b": 386.085
     },
     {
      "text": "Đúng lúc ấy, điện thoại reo.",
-     "a": 344.056,
-     "b": 345.521
+     "a": 386.527,
+     "b": 387.833
     },
     {
      "text": "Mẹ ở quê đi khám, bác sĩ bảo phải mổ sớm.",
-     "a": 346.279,
-     "b": 348.832
+     "a": 388.591,
+     "b": 391.271
     },
     {
      "text": "Anh Tân lặng người.",
-     "a": 349.274,
-     "b": 350.198
+     "a": 391.713,
+     "b": 392.648
     },
     {
      "text": "Cuốn sổ tiết kiệm của mẹ, giờ đang nằm trong két sắt của anh, dưới dạng vàng, và đang lỗ.",
-     "a": 350.956,
-     "b": 356.114
+     "a": 393.406,
+     "b": 398.487
     },
     {
      "text": "Bạn bè khuyên anh bán bớt.",
-     "a": 356.556,
-     "b": 357.76
+     "a": 398.929,
+     "b": 400.16
     },
     {
      "text": "Anh bảo: chờ về bờ đã, giờ bán là lỗ.",
-     "a": 358.518,
-     "b": 360.653
+     "a": 400.918,
+     "b": 402.955
     },
     {
      "text": "Thế là anh dắt chiếc xe máy đã theo mình tám năm ra cửa hàng xe cũ, bán được hai mươi tư triệu, gửi về cho mẹ đi mổ.",
-     "a": 361.095,
-     "b": 367.644
+     "a": 403.397,
+     "b": 410.114
     },
     {
      "text": "Mẹ không trách anh một câu.",
-     "a": 368.086,
-     "b": 369.305
+     "a": 410.556,
+     "b": 412.243
     },
     {
      "text": "Mẹ chỉ nhắn: con nhớ ăn uống đầy đủ.",
-     "a": 370.063,
-     "b": 372.299
+     "a": 413.001,
+     "b": 415.323
     },
     {
      "text": "Và câu chờ về bờ ấy, chính là câu nói đắt giá nhất trong câu chuyện này.",
-     "a": 372.741,
-     "b": 376.435
+     "a": 415.765,
+     "b": 419.741
     }
    ]
   },
   {
    "id": "S18",
-   "a": 378.698,
-   "b": 396.992,
+   "a": 422.004,
+   "b": 459.593,
    "sens": [
     {
-     "text": "Tháng Mười Một.",
-     "a": 378.698,
-     "b": 379.296
+     "text": "Cuối tháng Mười, chuỗi phòng tập California tạm dừng toàn bộ cơ sở ở Hà Nội, hội viên chưa biết bao giờ được hoàn tiền.",
+     "a": 422.004,
+     "b": 428.44
     },
     {
-     "text": "Ông Trump tuyên bố Mỹ không cần thỏa thuận với Iran.",
-     "a": 380.054,
-     "b": 382.557
+     "text": "Tấm thẻ ba năm anh Tân vẫn đang trả góp, giờ không còn chỗ mà tập.",
+     "a": 428.882,
+     "b": 432.84
+    },
+    {
+     "text": "Anh em gym trong xóm kéo nhau ra vỉa hè, người khoe cơ bắp, người múa đấm, nhìn mà ngứa mắt.",
+     "a": 433.282,
+     "b": 438.517
+    },
+    {
+     "text": "Rồi tháng Mười Một.",
+     "a": 438.959,
+     "b": 439.698
+    },
+    {
+     "text": "Lạm phát Mỹ cao hơn dự kiến, ông Trump tuyên bố Mỹ không cần thỏa thuận với Iran.",
+     "a": 440.456,
+     "b": 444.864
     },
     {
      "text": "Đồng đô la Mỹ lên cao nhất mười chín tháng.",
-     "a": 382.999,
-     "b": 385.626
+     "a": 445.306,
+     "b": 448.022
     },
     {
      "text": "Giá vàng thế giới rơi xuống dưới ba nghìn chín trăm đô la một ounce, thấp nhất hơn một năm.",
-     "a": 386.068,
-     "b": 390.709
+     "a": 448.464,
+     "b": 453.111
     },
     {
      "text": "Ở trong nước, chỉ bốn phiên gần nhất, vàng miếng mất thêm hơn ba triệu đồng mỗi lượng.",
-     "a": 391.152,
-     "b": 395.36
+     "a": 453.553,
+     "b": 457.961
     }
    ]
   },
   {
    "id": "S19",
-   "a": 396.992,
-   "b": 430.315,
+   "a": 459.593,
+   "b": 493.04,
    "sens": [
     {
      "text": "Tối nay, người bạn cho anh vay nhắn tin: Tân ơi, vợ tao sắp sinh, mày xoay được ít nào không?",
-     "a": 397.623,
-     "b": 402.803
+     "a": 460.224,
+     "b": 465.396
     },
     {
      "text": "Không còn xe, anh Tân đi bộ, mang năm lượng vàng ra tiệm.",
-     "a": 403.487,
-     "b": 406.829
+     "a": 466.08,
+     "b": 469.013
     },
     {
      "text": "Tiệm chỉ mua lại một trăm ba mươi ba triệu tám trăm nghìn đồng một lượng.",
-     "a": 407.272,
-     "b": 410.559
+     "a": 469.455,
+     "b": 472.758
     },
     {
      "text": "Anh ngồi xuống bậc thềm, lấy giấy bút ra tính.",
-     "a": 411.001,
-     "b": 413.572
+     "a": 473.2,
+     "b": 475.904
     },
     {
      "text": "Mua vào: chín trăm hai mươi triệu.",
-     "a": 414.014,
-     "b": 415.788
+     "a": 476.346,
+     "b": 478.075
     },
     {
      "text": "Bán lại hôm nay: sáu trăm sáu mươi chín triệu.",
-     "a": 416.231,
-     "b": 418.467
+     "a": 478.517,
+     "b": 480.575
     },
     {
      "text": "Mất hai trăm năm mươi mốt triệu đồng.",
-     "a": 418.909,
-     "b": 420.515
+     "a": 481.017,
+     "b": 482.787
     },
     {
      "text": "Trả bạn hai trăm triệu, trả mẹ một trăm hai mươi triệu, mười năm tiết kiệm của anh, giờ chỉ còn ba trăm bốn mươi chín triệu.",
-     "a": 420.957,
-     "b": 427.209
+     "a": 483.229,
+     "b": 489.935
     }
    ]
   },
   {
    "id": "S20",
-   "a": 430.315,
-   "b": 467.624,
+   "a": 493.04,
+   "b": 532.838,
    "sens": [
     {
      "text": "Chuyện của anh Tân không phải vì vàng xấu.",
-     "a": 430.315,
-     "b": 432.2
+     "a": 493.04,
+     "b": 495.098
     },
     {
      "text": "Vàng vẫn là một tài sản tốt.",
-     "a": 432.642,
-     "b": 434.114
+     "a": 495.54,
+     "b": 497.065
     },
     {
-     "text": "Cái sai nằm ở ba chỗ.",
-     "a": 434.556,
-     "b": 435.867
+     "text": "Cái sai nằm ở bốn chỗ.",
+     "a": 497.507,
+     "b": 498.783
     },
     {
      "text": "Thứ nhất: mua khi cả xã hội đang phát sốt.",
-     "a": 436.625,
-     "b": 439.502
+     "a": 499.541,
+     "b": 501.827
     },
     {
      "text": "Lúc phải đội mưa xếp hàng mới mua được, thường là lúc giá đã chạy rất xa.",
-     "a": 439.944,
-     "b": 443.865
+     "a": 502.269,
+     "b": 506.011
     },
     {
-     "text": "Thứ hai: dùng tiền vay, dùng cả tiền dưỡng già của người thân, cho một thứ không sinh ra dòng tiền.",
-     "a": 444.307,
-     "b": 449.82
+     "text": "Thứ hai: dùng tiền vay, dùng cả tiền dưỡng già của người thân.",
+     "a": 506.453,
+     "b": 510.104
     },
     {
      "text": "Vàng không trả lãi, nhưng khoản nợ thì vẫn đến hạn, và người thân thì vẫn có lúc ốm đau.",
-     "a": 450.262,
-     "b": 455.159
+     "a": 510.546,
+     "b": 515.143
     },
     {
      "text": "Thứ ba: nhầm giá giữ với giá bán.",
-     "a": 455.601,
-     "b": 457.428
+     "a": 515.585,
+     "b": 517.598
     },
     {
-     "text": "Bảng giá ghi giá bán ra, còn khi mình cần bán, tiệm chỉ mua lại thấp hơn vài triệu mỗi lượng.",
-     "a": 457.871,
-     "b": 462.795
+     "text": "Khi mình cần bán, tiệm chỉ mua lại thấp hơn giá niêm yết vài triệu mỗi lượng.",
+     "a": 518.04,
+     "b": 522.213
     },
     {
-     "text": "Giữ giá, chỉ đúng khi mình không bị buộc phải bán.",
-     "a": 463.237,
-     "b": 465.782
+     "text": "Thứ tư: trả trước cho những lời hứa.",
+     "a": 522.655,
+     "b": 524.665
+    },
+    {
+     "text": "Vàng thì hứa giữ giá, phòng tập thì hứa tập trọn đời.",
+     "a": 525.107,
+     "b": 527.728
+    },
+    {
+     "text": "Lời hứa nào cũng đẹp, cho đến ngày mình cần đến nó.",
+     "a": 528.171,
+     "b": 530.996
     }
    ]
   },
   {
    "id": "S21",
-   "a": 467.624,
-   "b": 509.633,
+   "a": 532.838,
+   "b": 599.415,
    "sens": [
     {
      "text": "Cuối tuần đó, anh Tân rủ chị Ngân ra Hồ Gươm.",
-     "a": 468.887,
-     "b": 471.142
+     "a": 534.101,
+     "b": 536.255
     },
     {
      "text": "Hai vợ chồng ngồi nhìn cầu Thê Húc đỏ rực dưới ánh đèn.",
-     "a": 471.584,
-     "b": 474.38
+     "a": 536.697,
+     "b": 539.612
     },
     {
      "text": "Anh gọi về quê, kể thật với mẹ mọi chuyện.",
-     "a": 474.822,
-     "b": 477.107
+     "a": 540.054,
+     "b": 542.365
     },
     {
      "text": "Đầu dây bên kia im lặng rất lâu.",
-     "a": 477.549,
-     "b": 479.556
+     "a": 542.807,
+     "b": 544.699
     },
     {
      "text": "Rồi mẹ nói: con biết sai là được rồi.",
-     "a": 479.998,
-     "b": 481.826
+     "a": 545.141,
+     "b": 547.804
     },
     {
      "text": "Tiền thì mẹ con mình làm lại.",
-     "a": 482.268,
-     "b": 483.651
+     "a": 548.246,
+     "b": 549.621
     },
     {
      "text": "Anh Tân bật khóc.",
-     "a": 484.093,
-     "b": 484.936
+     "a": 550.063,
+     "b": 551.015
     },
     {
      "text": "Lần đầu tiên sau nhiều năm, anh khóc như một đứa trẻ.",
-     "a": 485.694,
-     "b": 488.663
+     "a": 551.773,
+     "b": 554.823
     },
     {
      "text": "Chị Ngân nắm tay anh: từ nay, nhà mình có kế hoạch, và không giấu nhau nữa.",
-     "a": 489.105,
-     "b": 493.795
+     "a": 555.265,
+     "b": 559.884
+    },
+    {
+     "text": "Rồi chị kể một bí mật.",
+     "a": 560.326,
+     "b": 561.444
+    },
+    {
+     "text": "Từ đầu năm ngoái, mỗi tháng chị để ra năm triệu, mua đều đặn cổ phiếu theo chỉ số, không đoán đỉnh, không xếp hàng.",
+     "a": 562.202,
+     "b": 568.461
+    },
+    {
+     "text": "Tháng Ba thị trường rơi, chị vẫn mua tiếp.",
+     "a": 568.903,
+     "b": 571.303
+    },
+    {
+     "text": "Đến giờ, khoản ấy lãi khoảng mười phần trăm.",
+     "a": 571.745,
+     "b": 574.032
+    },
+    {
+     "text": "Chị bảo: không phải chứng khoán thần kỳ đâu anh.",
+     "a": 574.474,
+     "b": 577.062
+    },
+    {
+     "text": "Nếu anh mua vàng đều đặn như thế, giờ cũng chẳng lỗ.",
+     "a": 577.504,
+     "b": 580.557
+    },
+    {
+     "text": "Cái khác nhau là có kế hoạch, và không dồn hết tiền vào một ngày.",
+     "a": 580.999,
+     "b": 584.34
     },
     {
      "text": "Hôm ấy anh Tân mất hai trăm năm mươi mốt triệu.",
-     "a": 494.237,
-     "b": 496.709
+     "a": 584.782,
+     "b": 586.882
     },
     {
      "text": "Nhưng anh hiểu ra một điều mà nhiều người cả đời chưa hiểu: tài sản giữ giá thật sự, là thứ mình hiểu rõ, mua có kế hoạch, và không làm người mình thương phải lo lắng.",
-     "a": 497.152,
-     "b": 506.317
+     "a": 587.324,
+     "b": 596.099
     }
    ]
   },
   {
    "id": "S22",
-   "a": 509.633,
-   "b": 537.204,
+   "a": 599.415,
+   "b": 626.72,
    "sens": [
     {
      "text": "Còn anh chị thì sao?",
-     "a": 509.633,
-     "b": 510.795
+     "a": 599.415,
+     "b": 601.003
     },
     {
      "text": "Nhà mình đã từng xếp hàng mua vàng chưa, và bây giờ đang lãi hay lỗ?",
-     "a": 511.479,
-     "b": 514.938
+     "a": 601.687,
+     "b": 605.251
     },
     {
      "text": "Kể cho em nghe ở phần bình luận nhé.",
-     "a": 515.622,
-     "b": 517.184
+     "a": 605.935,
+     "b": 607.453
     },
     {
      "text": "Nếu anh chị muốn có một kế hoạch tích sản rõ ràng, không phải đoán, không chạy theo đám đông, hãy ghé chứng khoán huy nguyễn chấm com, và theo dõi kênh Chứng Khoán Huy Nguyễn.",
-     "a": 517.626,
-     "b": 527.221
+     "a": 607.895,
+     "b": 616.953
     },
     {
      "text": "Trải qua rồi mới hiểu.",
-     "a": 527.663,
-     "b": 528.739
+     "a": 617.395,
+     "b": 618.512
     },
     {
      "text": "Nhưng nếu hiểu sớm hơn một chút, mình sẽ đỡ phải trả giá đắt.",
-     "a": 529.497,
-     "b": 532.731
+     "a": 619.269,
+     "b": 622.246
     }
    ]
   }

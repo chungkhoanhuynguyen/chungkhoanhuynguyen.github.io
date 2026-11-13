@@ -98,6 +98,19 @@ def clock(d):
     return x
 def tvhiss(n): return bp(noise(n), 1, 4) * 0.12
 def bike_bell(): return mixs(N.bell(3520, 0.5) * 0.3, N.bell(4186, 0.4) * 0.2)
+def horn(d=0.6, f=420):
+    n = int(SR * d); t = np.arange(n) / SR; x = (np.sign(np.sin(2 * np.pi * f * t)) * 0.5 + np.sign(np.sin(2 * np.pi * f * 1.26 * t)) * 0.4)
+    return lp(x, 4) * fade(n, 0.01, 0.06) * 0.35
+def argue(d=4.0):
+    # tiếng cãi nhau um xùm: hai "giọng" formant giật cục, to nhỏ thất thường (không có lời thật)
+    n = int(SR * d); t = np.arange(n) / SR; x = np.zeros(n)
+    for f0, f1, rate, ph in ((140, 900, 5.5, 0), (210, 1300, 6.5, 1.7)):
+        pitch = f0 * (1 + 0.25 * np.sin(2 * np.pi * 1.3 * t + ph) + 0.15 * np.sin(2 * np.pi * 3.1 * t))
+        src = np.sign(np.sin(2 * np.pi * np.cumsum(pitch) / SR)) * 0.5 + bp(noise(n), 2, 8) * 0.3
+        syl = (0.5 + 0.5 * np.sin(2 * np.pi * rate * t + ph)) ** 3 * (np.sin(2 * np.pi * 0.45 * t + ph) > -0.4)
+        x += bp(src, 3, 40) * syl
+    return x * 0.6
+def splash(d=1.0): n = int(SR * d); return bp(noise(n), 2, 12) * np.exp(-np.arange(n) / SR * 4) * 0.5
 def temple(): return mixs(N.bell(196, 5.0) * 0.5, N.bell(392, 3.0) * 0.2)
 
 # ---------- ambience map ----------
@@ -108,12 +121,13 @@ amb(at("S04"), end("S04"), birds, -26); amb(at("S05"), end("S05"), street_day, -
 amb(at("S06"), at("S06", 2), room, -28); amb(at("S06", 2), at("S06", 3), birds, -27)
 amb(at("S07"), at("S07", 2), room, -27); amb(at("S07", 2), end("S07"), lambda n: lp(noise(n), 50) * 0.3, -26)
 amb(at("S08"), end("S11"), rain, -20); amb(at("S08", 2), end("S11"), crowd, -27)
-amb(at("S08", 4), at("S08", 5), lambda n: bp(noise(n), 1, 3) * 0.9, -22)  # mưa lộp độp mái hiên
+amb(at("S08", 8), at("S08", 9), lambda n: bp(noise(n), 1, 3) * 0.9, -22)  # mưa lộp độp mái hiên
+amb(at("S08", 6), at("S08", 8), water, -18)
 amb(at("S09", 1), at("S09", 2), birds, -24); amb(at("S09", 2), at("S09", 3), street_day, -22)
 amb(at("S11", 0), at("S11", 2), tvhiss, -20)
 amb(at("S12"), at("S12", 2), crowd, -30); amb(at("S13", 2), end("S13"), room, -28)
 amb(at("S15", 3), end("S15"), room, -30); amb(at("S16"), end("S16"), rain, -27)
-amb(at("S17", 6), at("S17", 9), street_day, -26); amb(at("S19", 1), at("S19", 4), lambda n: lp(noise(n), 50) * 0.3, -25)
+amb(at("S17", 6), at("S17", 9), street_day, -26); amb(at("S18", 2), at("S18", 3), street_day, -24); amb(at("S19", 1), at("S19", 4), lambda n: lp(noise(n), 50) * 0.3, -25)
 amb(at("S21"), end("S21"), crickets, -23); amb(at("S21"), end("S21"), water, -27)
 
 # ---------- one-shot cues ----------
@@ -122,18 +136,20 @@ C = [
     (at("S01", 7, 1.3), boom(), -10), (at("S01", 8, 2.5), stamp(), -8), (at("S02"), boom(3.0), -8),
     (at("S03", 1, 0.8), coin(), -16), (at("S06", 3, 0.5), ting(), -13), (at("S06", 3, 2.6), ting(), -13),
     (at("S07", 0), keys(3.0), -20), (at("S07", 2), steps(end("S07") - at("S07", 2), 1.6, 0.6), -20), (at("S07", 2), wheel_tick(end("S07") - at("S07", 2) - 0.5), -22),
-    (at("S08", 4, 0.9), pop(), -30), (at("S09", 1, 0.6), bike_bell(), -16), (at("S09", 2, 0.3), moto(3.2, 42), -14), (at("S09", 2, 1.8), moto(3.0, 36), -16),
+    (at("S08", 8, 0.9), pop(), -30), (at("S08", 4, 0.2), horn(0.7, 420), -13), (at("S08", 4, 0.9), horn(0.4, 520), -15), (at("S08", 4, 1.6), horn(1.0, 380), -13),
+    (at("S08", 5, 0.0), argue(at("S08", 6) - at("S08", 5) + 0.3), -11), (at("S08", 5, 0.6), horn(0.5, 470), -16),
+    (at("S08", 6, 0.8), splash(), -18), (at("S08", 7, 0.3), splash(), -16), (at("S08", 7, 1.5), splash(), -17), (at("S09", 1, 0.6), bike_bell(), -16), (at("S09", 2, 0.3), moto(3.2, 42), -14), (at("S09", 2, 1.8), moto(3.0, 36), -16),
     (at("S09", 0, 0.1), whoosh(0.9), -14), (at("S09", 3, 0.5), boom(1.8), -14),
     (at("S10", 1, 0.3), N.bell(3800, 1.6) * 0.3, -18), (at("S11", 3), whoosh(1.4), -16), (at("S11", 4, 0.0), boom(), -9),
     (at("S12", 3, 0.0), kaching(), -12), (at("S12", 3, 1.0), stamp(), -9), (at("S12", 7, 0.3), coin(), -14), (at("S12", 7, 0.6), coin(), -15),
     (at("S13", 0, 1.2), N.bell(1760, 1.5) * 0.4, -16), (at("S13", 4), np.concatenate([pop() if k % 2 == 0 else np.zeros(int(SR * 0.08)) for k in range(60)]), -18),
-    (at("S14", 1, 0.3), whoosh(0.8), -16), (at("S15", 1, 1.0), boom(1.6), -12), (at("S15", 2, 0.3), pop(), -16), (at("S15", 2, 1.3), pop(), -16),
-    (at("S15", 3), clock(end("S15") - at("S15", 3)), -20), (at("S16", 1, 1.0), stamp(), -8), (at("S16", 2), heart(8, 64), -14),
+    (at("S14", 1, 0.3), whoosh(0.8), -16), (at("S15", 1, 1.0), boom(1.6), -12), (at("S15", 4, 0.3), pop(), -16), (at("S15", 4, 1.3), pop(), -16), (at("S15", 3, 2.0), boom(1.4), -13),
+    (at("S15", 5), clock(end("S15") - at("S15", 5)), -20), (at("S16", 1, 1.0), stamp(), -8), (at("S16", 2), heart(8, 64), -14),
     (at("S17", 2, 0.2), ringtone(), -14), (at("S17", 4), heart(4, 72), -14), (at("S17", 8), steps(at("S17", 9) - at("S17", 8), 1.4, 0.7), -20), (at("S17", 8), wheel_tick(at("S17", 9) - at("S17", 8) - 0.6), -22),
     (at("S17", 9, 0.5), ting(), -14), (at("S17", 11), boom(2.0), -12),
-    (at("S18"), boom(1.6), -14), (at("S18", 1), whoosh(0.6), -16), (at("S18", 2), whoosh(0.6), -16), (at("S19", 0, 0.4), ting(), -13),
+    (at("S18"), boom(1.6), -14), (at("S18", 0, 2.4), whoosh(0.6), -16), (at("S18", 1, 0.4), ting(), -13), (at("S18", 3), boom(1.4), -14), (at("S18", 4), whoosh(0.6), -16), (at("S18", 5), whoosh(0.6), -16), (at("S19", 0, 0.4), ting(), -13),
     (at("S19", 1), steps(at("S19", 2) - at("S19", 1), 1.5, 0.8), -18), (at("S19", 6, 0.9), stamp(), -6), (at("S19", 6, 0.9), boom(2.6), -12), (at("S19", 5), heart(6, 76), -16),
-    (at("S21", 3), heart(4, 60), -20), (at("S21", 10, 0.4), temple(), -14), (at("S22", 3, 1.4), pop(), -12),
+    (at("S21", 3), heart(4, 60), -20), (at("S21", 17, 0.4), temple(), -14), (at("S21", 10, 0.6), coin(), -16), (at("S21", 12, 0.3), coin(), -15), (at("S22", 3, 1.4), pop(), -12),
 ]
 for t0, x, g in C: put(x, t0, g, float(R.uniform(-0.15, 0.15)))
 for t0 in cuts: put(whoosh(0.38), t0 - 0.19, -27, float(R.uniform(-0.3, 0.3)))

@@ -9,16 +9,16 @@ import { BlendFunction, BloomEffect, ToneMappingEffect, ToneMappingMode } from "
 import { InkPass, noInkFallback, NOINK } from "../pho/ink";
 import { GradeEffect } from "../pho/grade";
 import { Actor, Pose, DO, NGAN, VEST, CLERK, ME2, crowd } from "./cast2";
-import { buildRoom, buildStreet, buildShop, buildHue, buildBenThanh, buildHoGuom, rainStreaks, RX, SX, IX, HX, BX, GX, Screen } from "./sets";
+import { buildRoom, buildStreet, buildShop, buildHue, buildBenThanh, buildHoGuom, buildVilla, rainStreaks, RX, SX, IX, HX, BX, GX, VX, Screen } from "./sets";
 import { applyLight, GR, LK, L } from "./look";
 import { F } from "./cards";
 import { buildExtras } from "./extras";
 
 export type V = [number, number, number];
-export type SetKey = "room" | "street" | "streetday" | "shop" | "hue" | "bt" | "lake";
-export const OFF: Record<SetKey, number> = { room: RX, street: SX, streetday: SX, shop: IX, hue: HX, bt: BX, lake: GX };
+export type SetKey = "room" | "street" | "streetday" | "shop" | "hue" | "bt" | "lake" | "villa";
+export const OFF: Record<SetKey, number> = { room: RX, street: SX, streetday: SX, shop: IX, hue: HX, bt: BX, lake: GX, villa: VX };
 export type Cast = { a: string; p: V; to?: V; pose: (t: number, d: number) => Pose };
-export type Shot3D = { set: SetKey; light: LK; from: [V, V, number]; to: [V, V, number]; cast: Cast[]; rain?: boolean; shake?: number; chat?: "calm" | "fast" | "off" | "boom"; game?: boolean; board?: "buy" | "sell"; ease?: "sm" | "lin" | "out"; walkers?: boolean };
+export type Shot3D = { set: SetKey; light: LK; from: [V, V, number]; to: [V, V, number]; cast: Cast[]; rain?: boolean; shake?: number; chat?: "calm" | "fast" | "off" | "boom"; game?: boolean; board?: "buy" | "sell"; ease?: "sm" | "lin" | "out"; walkers?: boolean; jam?: boolean };
 export type Run = { a: number; b: number; s: Shot3D }; // frames, relative to the Stage sequence
 
 const sm = (t: number) => { t = Math.max(0, Math.min(1, t)); return t * t * t * (t * (t * 6 - 15) + 10); };
@@ -77,11 +77,12 @@ const Inner: React.FC<{ set: SetKey; runs: Run[] }> = ({ set, runs }) => {
     else if (set === "shop") { shop = buildShop(); root.add(shop.g); }
     else if (set === "hue") root.add(buildHue().g);
     else if (set === "bt") root.add(buildBenThanh().g);
+    else if (set === "villa") { const v = buildVilla(); root.add(v.g); bike = v.hero; }
     else root.add(buildHoGuom().g);
     const rain = rainStreaks(); root.add(rain.m);
     const keys = new Set<string>(); runs.forEach((r) => r.s.cast.forEach((c) => keys.add(c.a)));
     const actors: Record<string, Actor> = {};
-    keys.delete("bike");
+    keys.delete("bike"); keys.delete("boat");
     for (const k of keys) {
       const o = k === "tan" ? DO : k === "ngan" ? NGAN : k === "vest" ? VEST : k === "clerk" ? CLERK : k === "me" ? ME2 : crowd(parseInt(k.slice(1)) || 0);
       const h = k === "tan" ? 1.7 : k === "ngan" ? 1.58 : k === "vest" ? 1.76 : k === "me" ? 1.48 : 1.55 + ((parseInt(k.slice(1)) || 0) % 5) * 0.05;
@@ -112,10 +113,10 @@ const Inner: React.FC<{ set: SetKey; runs: Run[] }> = ({ set, runs }) => {
   if (W.room) { drawChat(W.room.chat, t, s.chat ?? "calm"); drawGame(W.room.game, f / 30, s.game ?? true); }
   if (W.shop) drawBoard(W.shop.board, s.board ?? "buy");
   const tint = new THREE.Color(L[s.light].tint);
-  W.extras(f / 30, cam, tint);
+  W.extras(f / 30, cam, tint, !!s.jam);
   for (const a of Object.values(W.actors)) a.root.visible = false;
   if (W.bike && W.bike0) W.bike.position.copy(W.bike0);
-  for (const c of s.cast) { if (c.a === "bike" && W.bike) { const p = c.to ? lerpV(c.p, c.to, Math.min(1, t / d)) : new THREE.Vector3(...c.p); W.bike.position.set(p.x + X, p.y, p.z); continue; }
+  for (const c of s.cast) { if ((c.a === "bike" || c.a === "boat") && W.bike) { const p = c.to ? lerpV(c.p, c.to, Math.min(1, t / d)) : new THREE.Vector3(...c.p); W.bike.position.set(p.x, p.y, p.z); continue; }
     const a = W.actors[c.a]; if (!a) continue; a.root.visible = true; const p = c.to ? lerpV(c.p, c.to, Math.min(1, t / d)) : new THREE.Vector3(...c.p); a.root.position.set(p.x + X, p.y, p.z); a.pose(c.pose(t, d), cam, tint); }
   return (
     <>

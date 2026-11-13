@@ -14,7 +14,7 @@ export const crowd = (i: number): Outfit => ({ jacket: CROWD_J[i % CROWD_J.lengt
   hat: i % 5 === 3 ? "cap" : "hair", cap: ["#c0392b", "#2f6fd1", "#2f8a52"][i % 3], hair: HAIR[(i * 3) % HAIR.length], belt: null, buttons: "#d8dde4",
   skin: ["#ffe2c2", "#f5c9a0", "#ecd0b6", "#e3b48c"][i % 4], build: i % 4 === 1 ? "stout" : "adult" });
 
-export type Acc = "headset" | "nonla" | "umbrella" | "raincoat" | "tears" | "phone" | "goldbag" | "gembox" | "cup" | "paper" | "sweat" | "zzz" | "glow" | "ring";
+export type Acc = "gloves" | "muscle" | "headset" | "nonla" | "umbrella" | "raincoat" | "tears" | "phone" | "goldbag" | "gembox" | "cup" | "paper" | "sweat" | "zzz" | "glow" | "ring";
 export type Pose = { expr: Expr; blink?: boolean; mode?: "stand" | "sit" | "stroll" | "march"; phase?: number; tilt?: number; headTilt?: number; wave?: number; prop?: Prop; acc?: Acc[]; t?: number; umb?: string };
 
 export class Actor {
@@ -108,5 +108,9 @@ function drawAcc(g: CanvasRenderingContext2D, p: Pen, G: G, acc: Acc[], t: numbe
   if (acc.includes("paper")) { const x = (L[0] + R[0]) / 2, y = (L[1] + R[1]) / 2; g.save(); g.translate(x, y - 20 * u); g.rotate(-0.05); g.fillStyle = "#fbf6e8"; g.strokeStyle = INK; g.lineWidth = 3; g.fillRect(-30 * u, -36 * u, 60 * u, 64 * u); g.strokeRect(-30 * u, -36 * u, 60 * u, 64 * u);
     g.strokeStyle = "#8b857a"; g.lineWidth = 2; for (let i = 0; i < 5; i++) { g.beginPath(); g.moveTo(-22 * u, (-22 + i * 10) * u); g.lineTo(22 * u, (-22 + i * 10) * u); g.stroke(); } g.strokeStyle = "#d8372b"; g.lineWidth = 3; g.beginPath(); g.arc(14 * u, 14 * u, 9 * u, 0, 7); g.stroke(); g.restore();
     p.dot(L[0], L[1], 5.5 * u); p.dot(R[0], R[1], 5.5 * u); }
+  if (acc.includes("gloves")) for (const [x, y] of G.hands) { g.save(); g.fillStyle = "#d8212f"; g.strokeStyle = INK; g.lineWidth = 4; g.beginPath(); g.ellipse(x, y, 13 * u, 11 * u, 0, 0, 7); g.fill(); g.stroke(); g.fillStyle = "#fff"; g.fillRect(x - 10 * u, y + 7 * u, 20 * u, 4 * u); g.restore(); }
+  if (acc.includes("muscle")) { g.save(); g.fillStyle = "#c98a5a"; g.strokeStyle = INK; g.lineWidth = 4;
+    for (const s2 of [-1, 1]) { g.beginPath(); g.ellipse(tcx + s2 * Ta * 1.12, chin + 0.32 * HH, 15 * u, 22 * u, s2 * 0.3, 0, 7); g.fill(); g.stroke(); }
+    g.strokeStyle = "rgba(60,30,20,.45)"; g.lineWidth = 3; g.beginPath(); g.moveTo(tcx - Ta * 0.5, chin + 0.25 * HH); g.quadraticCurveTo(tcx, chin + 0.35 * HH, tcx + Ta * 0.5, chin + 0.25 * HH); g.stroke(); g.restore(); }
   if (acc.includes("ring")) { const [x, y] = R; g.save(); g.strokeStyle = "#f5c518"; g.lineWidth = 5 * u; g.beginPath(); g.arc(x, y - 12 * u, 9 * u, 0, 7); g.stroke(); g.restore(); }
 }

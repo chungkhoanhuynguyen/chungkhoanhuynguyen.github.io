@@ -6,7 +6,7 @@ import { Stage, Shot3D, Run, SetKey, Cast, V } from "./stage";
 import { Pose, Acc } from "./cast2";
 import { Expr } from "../pho/toon";
 import { GOLD_X, XECU_X, HOME_X } from "./sets";
-import { TIMING, FPS, TOTAL_F, TAIL, sc, subText, BAD, GOOD, RING_M, SJC_D, RING_26, SJC_NOW, WORLD } from "./data";
+import { TIMING, FPS, TOTAL_F, TAIL, sc, subText, BAD, GOOD, RING_M, SJC_D, RING_26, SJC_NOW, WORLD, VNI_26 } from "./data";
 import { F, sm, PhoneCard, ChartCard, PaperCard, SideText, ChatCard, TvCard, TitleCard, NewsCard, LessonCard, SplitCard, SavingsCard, LastBuyerCard, CtaCard, EndCard, Bubble, LocTag, LiveHud, BigText, ClockTag, Vignette, Bg } from "./cards";
 
 // ---------- pose helpers ----------
@@ -62,8 +62,9 @@ const PLAN: Plan[] = [
     [3, () => D3(S("room", "room", [[0.35, 1.4, 1.1], [-0.2, 1.27, -0.66], 38], [[0.28, 1.37, 0.85], [-0.2, 1.27, -0.66], 34], [tanDesk(P("laugh", { mode: "sit", acc: ["headset"], wave: 0.6 }))], { chat: "calm" }), (t) => <><LiveHud t={t} viewers={1980} /><Bubble t={t} at={0.9} x={1080} y={180} w={700} text="Anh em ơi, lương anh có 7 triệu thôi!" /></>)],
     [4, () => D3(S("streetday", "morning", [[HOME_X - 2.5, 1.4, 2.2], [HOME_X + 0.6, 1.0, 5.3], 42], [[HOME_X - 1.6, 1.3, 2.9], [HOME_X + 0.6, 1.0, 5.3], 38], [C("tan", [HOME_X - 0.2, 0.15, 5.3], P("smile_closed", { acc: ["cup"], anim: true }))]), (t) => <BigText t={t} at={rel("S03", 5, sc("S03").sens[4].a) - 0.1} text="MÌ TÔM · XE CŨ 8 NĂM" col="#fff" y={130} size={90} />)],
     [6, () => CD((t) => <SavingsCard t={t} />)],
-    [7, () => D3(S("room", "room", [[-1.2, 1.5, 2.4], [0.6, 1.0, -0.6], 44], [[-0.7, 1.4, 1.9], [0.6, 1.0, -0.6], 40], [tanDesk("nervous", ["headset", "sweat"], { anim: true }), C("ngan", [1.0, 0, 0.1], P("stern"))], { chat: "calm" }))],
-    [8, () => CD((t) => <DreamCard t={t} />)],
+    [7, () => CD((t) => <PaperCard t={t} kind="receipt" hue="navy" title="HỢP ĐỒNG HỘI VIÊN" sub="Phòng tập thể hình · gói 3 năm" lines={[{ text: "Giá trị: 36.000.000 đ", at: 0.5, big: true }, { text: "Trả góp: 3.000.000 đ/tháng × 12", at: 1.2 }, { text: "Quyền lợi: “tập trọn đời”", at: 2.0, col: "#b3131f" }]} stamp={{ text: "ĐÃ KÝ", at: 2.6, col: "#1f4e8a" }} side={<SideText t={t} at={1.6} l1="“TẬP" l2="TRỌN ĐỜI”" c2="#f5c518" />} />)],
+    [8, () => D3(S("room", "room", [[-1.2, 1.5, 2.4], [0.6, 1.0, -0.6], 44], [[-0.7, 1.4, 1.9], [0.6, 1.0, -0.6], 40], [tanDesk("nervous", ["headset", "sweat"], { anim: true }), C("ngan", [1.0, 0, 0.1], P("stern"))], { chat: "calm" }))],
+    [9, () => CD((t) => <DreamCard t={t} />)],
   ] },
   { id: "S04", shots: [
     [0, () => D3(S("streetday", "golden", [[-36, 3.8, 0.5], [-30, 1.4, 5.85], 46], meCam(2.0)[0], [me("smile_closed")]), (t) => <LocTag t={t} l1="NAM ĐỊNH" l2="Quê mẹ anh Tân" />)],
@@ -96,8 +97,12 @@ const PLAN: Plan[] = [
     [1, () => D3(S("street", "night", [[qx(4), 1.35, 3.2], [qx(4), 1.3, 5.4], 40], [[qx(4.6), 1.35, 3.5], [qx(4.6), 1.3, 5.4], 36], queue(), { rain: true, shake: 0.4 }))],
     [2, () => D3(S("street", "night", [[GOLD_X - 1, 1.6, 1.8], [GOLD_X + 3, 1.3, 5.4], 46], [[qx(18), 1.6, 1.8], [qx(22), 1.3, 5.4], 46], queue(), { rain: true, ease: "lin" }))],
     [3, () => D3(S("street", "night", [[qx(11), 1.35, 3.6], [qx(12), 1.15, 5.8], 40], [[qx(12.5), 1.35, 3.9], [qx(12.5), 1.15, 5.8], 38], queue(), { rain: true }))],
-    [4, () => D3(S("street", "night", [[qx(15.5), 1.35, 3.4], [qx(16), 1.3, 5.4], 38], [[qx(16), 1.35, 3.7], [qx(16), 1.3, 5.4], 34], queue(), { rain: true }), (t) => <><Bubble t={t} at={1.0} x={420} y={170} w={430} text="Số mấy rồi?" /><Bubble t={t} at={1.9} x={1060} y={200} w={430} tail="r" text="Số 87!" /></>)],
-    [5, () => D3(S("street", "night", [[TQ[0] + 2.2, 1.45, 2.8], [TQ[0], 1.35, 5.35], 40], [[TQ[0] + 1.4, 1.4, 3.3], [TQ[0], 1.35, 5.35], 34], [...queue(6, 18), tanQ(seq([[0, "smile"], [2.2, "grin"]]), ["umbrella", "cup"])], { rain: true }), (t, d) => <Bubble t={t} at={Math.min(2.6, d * 0.45)} x={1040} y={150} w={700} kind="think" text="Lên vài giá là đủ tiền xây nhà cho mẹ…" />)],
+    [4, () => D3(S("street", "night", [[-19.5, 2.8, 7.6], [-28, 0.8, 0.5], 48], [[-21, 2.2, 6.8], [-28, 0.9, 0.5], 46], [C("c30", [-27.5, 0, 3.4], P("stern")), C("c31", [-25.9, 0, 3.45], P("shock"))], { rain: true, jam: true }), (t) => <BigText t={t} at={0.6} text="TẮC CỨNG!" col="#ff4d5e" y={110} size={110} />)],
+    [5, () => D3(S("street", "night", [[-26.7, 1.45, 6.4], [-26.7, 1.35, 3.4], 40], [[-26.7, 1.42, 5.9], [-26.7, 1.35, 3.4], 36], [C("c30", [-27.5, 0, 3.4], seq([[0, "stern"], [1.2, "shock"]])), C("c31", [-25.9, 0, 3.45], seq([[0, "shock"], [0.9, "stern"]]))], { rain: true, jam: true, shake: 1.0 }), (t) => <><Bubble t={t} at={0.2} x={180} y={150} w={620} text="Lùi xe ra! Ai cho ông đỗ đây?!" /><Bubble t={t} at={1.1} x={1100} y={190} w={620} tail="r" text="Đường nhà ông à?!" /></>)],
+    [6, () => D3(S("villa", "night", [[-26, 10, -4], [0, 1, 0], 52], [[-15, 5, -2], [0, 1, 0], 48], [], { rain: true }), (t) => <LocTag t={t} l1="KHU BIỆT THỰ CIPUCHACHA" l2="dân mạng gọi vui: “làng chài”" d={4.5} />)],
+    [7, () => D3(S("villa", "night", [[-9.5, 1.6, 4.2], [-9, 0.9, 0.3], 42], [[-4, 1.6, 4.2], [-3.5, 0.9, 0.3], 42], [C("boat", [-10, 0.42, 0.3], () => P("neutral")(0), [-4, 0.42, 0.3]), C("vest", [-10, 0.52, 0.3], P("smug", { mode: "sit", acc: ["raincoat"] }), [-4, 0.52, 0.3])], { rain: true, ease: "lin" }), (t) => <BigText t={t} at={0.8} text="ĐẠI GIA CHÈO THUYỀN ĐI MUA VÀNG" col="#ffcf3a" y={110} size={84} />)],
+    [8, () => D3(S("street", "night", [[qx(15.5), 1.35, 3.4], [qx(16), 1.3, 5.4], 38], [[qx(16), 1.35, 3.7], [qx(16), 1.3, 5.4], 34], queue(), { rain: true }), (t) => <><Bubble t={t} at={1.0} x={420} y={170} w={430} text="Số mấy rồi?" /><Bubble t={t} at={1.9} x={1060} y={200} w={430} tail="r" text="Số 87!" /></>)],
+    [9, () => D3(S("street", "night", [[TQ[0] + 2.2, 1.45, 2.8], [TQ[0], 1.35, 5.35], 40], [[TQ[0] + 1.4, 1.4, 3.3], [TQ[0], 1.35, 5.35], 34], [...queue(6, 18), tanQ(seq([[0, "smile"], [2.2, "grin"]]), ["umbrella", "cup"])], { rain: true }), (t, d) => <Bubble t={t} at={Math.min(2.6, d * 0.45)} x={1040} y={150} w={700} kind="think" text="Lên vài giá là đủ tiền xây nhà cho mẹ…" />)],
   ] },
   { id: "S09", shots: [
     [0, () => D3(S("street", "night", [[TQ[0] + 2, 2, 2], [qx(16), 1.2, 5.3], 46], [[qx(14), 22, -4], [qx(10), 0, 5.3], 54], queue(), { rain: true, ease: "out" }))],
@@ -133,12 +138,14 @@ const PLAN: Plan[] = [
   { id: "S14", shots: [
     [0, () => D3(S("room", "room", [[0.4, 1.4, 1.0], [-0.2, 1.29, -0.66], 36], [[0.3, 1.37, 0.75], [-0.2, 1.29, -0.66], 32], [tanDesk("laugh")], { chat: "boom" }), (t) => <AbsoluteFill style={{ background: `rgba(30,30,40,${0.35 * sm(t / 1.5)})`, mixBlendMode: "saturation" } as React.CSSProperties} />)],
     [1, () => CD((t, d) => <LastBuyerCard t={t} d={d} />)],
-    [2, () => CD((t) => <TitleCard t={t} hue="navy" kicker="QUY LUẬT CŨ" l1="ĐỈNH GIÁ ĐẾN" l2="KHI AI CŨNG CHẮC CHẮN" />)],
+    [2, () => D3(S("streetday", "day", [[GOLD_X + 9.0, 1.4, 3.7], [GOLD_X + 8.6, 1.25, 5.8], 34], [[GOLD_X + 8.8, 1.4, 4.0], [GOLD_X + 8.6, 1.25, 5.8], 30], teaStall("grin")), (t) => <Meme t={t} top="KHI CẢ CÔ BÁN XÔI" bot="CŨNG KHUYÊN MUA VÀNG" />)],
+    [3, () => CD((t) => <TitleCard t={t} hue="navy" kicker="QUY LUẬT CŨ" l1="ĐỈNH GIÁ ĐẾN" l2="KHI AI CŨNG CHẮC CHẮN" />)],
   ] },
   { id: "S15", shots: [
     [0, () => CD((t, d) => <ChartCard t={t} d={d} title="Vàng miếng SJC trượt dốc" sub="Giá bán ra từng ngày · 10/2 → 25/3/2026" data={SJC_D} unit="triệu đồng/lượng" mode="down" marks={[{ i: 10, label: "ĐỈNH 190,9", col: "#f5c518" }]} bracket={{ a: 22, b: 25, label: "−17 TRIỆU / 3 PHIÊN", at: rel("S15", 1, sc("S15").a) + 1.0 }} src="Nguồn: SJC (dữ liệu WiData), giá bán ra" />)],
-    [2, () => CD((t) => <ChatCard t={t} title="Hội anh em xóm trọ" msgs={[{ who: "Hùng", text: "Vàng giảm ghê quá ông ơi 😨", at: 0.3 }, { who: "Tân", text: "Chỉnh tí thôi, vàng là phải giữ dài 😎", at: 1.3, me: true }]} side={<SideText t={t} at={1.8} l1="“CHỈNH" l2="TÍ THÔI”" />} />)],
-    [3, () => D3(S("room", "roomdim", [[-0.4, 1.5, 3.0], [1.56, 1.2, 0.9], 40], [[0.0, 1.4, 2.6], [1.56, 1.2, 0.9], 34], [C("tan", BED1, P("worried", { mode: "sit", acc: ["phone", "glow"] })), C("ngan", BED_B, P("sleepy", { mode: "sit" }))], { chat: "off", game: false }), (t) => <ClockTag t={t} text={t < rel("S15", 4, sc("S15").sens[3].a) ? "02:14" : "06:00"} />)],
+    [2, () => CD((t, d) => <><ChartCard t={t} d={d} title="Không chỉ vàng: VN-Index cũng rơi" sub="Điểm đóng cửa · 10/2 → 13/11/2026" data={VNI_26} unit="điểm" scale={1} dec={1} mode="down" reveal={0.9} marks={[{ i: 7, label: "Vía Thần Tài 1.879,6", col: "#8fd3ff" }, { i: 24, label: "23/3: 1.591,2", col: "#ff4d5e", up: false, at: 2.2 }]} src="Nguồn: VN-Index đóng cửa (HOSE, dữ liệu WiData; 13/11 theo Vietstock)" /><Meme t={t} at={rel("S15", 3, sc("S15").sens[2].a) + 2.0} top="" bot="ÉT O ÉT!" small /></>)],
+    [4, () => CD((t) => <ChatCard t={t} title="Hội anh em xóm trọ" msgs={[{ who: "Hùng", text: "Vàng giảm ghê quá ông ơi 😨", at: 0.3 }, { who: "Tân", text: "Chỉnh tí thôi, vàng là phải giữ dài 😎", at: 1.3, me: true }]} side={<SideText t={t} at={1.8} l1="“CHỈNH" l2="TÍ THÔI”" />} />)],
+    [5, () => D3(S("room", "roomdim", [[-0.4, 1.5, 3.0], [1.56, 1.2, 0.9], 40], [[0.0, 1.4, 2.6], [1.56, 1.2, 0.9], 34], [C("tan", BED1, P("worried", { mode: "sit", acc: ["phone", "glow"] })), C("ngan", BED_B, P("sleepy", { mode: "sit" }))], { chat: "off", game: false }), (t) => <ClockTag t={t} text={t < rel("S15", 6, sc("S15").sens[5].a) ? "02:14" : "06:00"} />)],
   ] },
   { id: "S16", shots: [
     [0, () => D3(S("room", "roomdim", [[1.2, 1.5, 0.8], [2.7, 1.2, -1.3], 42], [[1.6, 1.45, 0.4], [2.7, 1.2, -1.3], 36], [C("ngan", [2.6, 0, -1.1], seq([[0, "neutral"], [1.4, "shock"]], { acc: ["paper"] }))], { chat: "off", game: false }))],
@@ -157,18 +164,21 @@ const PLAN: Plan[] = [
     [6, () => D3(S("streetday", "day", [[GOLD_X + 4.4, 1.4, 3.0], [GOLD_X + 5.0, 1.2, 5.6], 38], [[GOLD_X + 4.6, 1.4, 3.4], [GOLD_X + 5.0, 1.2, 5.6], 34], [C("c3", [GOLD_X + 4.4, 0.15, 5.6], P("worried")), C("tan", [GOLD_X + 5.6, 0.15, 5.6], seq([[0, "neutral"], [1.0, "stern"]]))]), (t) => <><Bubble t={t} at={0.3} x={1040} y={170} w={600} tail="r" text="Bán bớt đi mà trả nợ, ông ơi!" /><Bubble t={t} at={rel("S17", 7, sc("S17").sens[6].a)} x={300} y={170} w={600} text="Chờ về bờ đã, giờ bán là lỗ!" /></>)],
     [8, () => D3(S("streetday", "golden", [[XECU_X + 7, 1.4, 2.0], [XECU_X + 4, 1.0, 5.2], 44], [[XECU_X + 2.5, 1.4, 2.4], [XECU_X, 1.0, 5.2], 44], [C("tan", [XECU_X + 5, 0.15, 5.2], walk("sad"), [XECU_X + 0.6, 0.15, 5.2]), C("bike", [XECU_X + 4.1, 0.15, 5.0], () => P("neutral")(0), [XECU_X - 0.3, 0.15, 5.0])], { ease: "lin" }), (t, d) => <BigText t={t} at={d * 0.6} text="BÁN XE: 24 TRIỆU" col="#fff" y={120} size={96} />)],
     [9, () => CD((t) => <PhoneCard t={t} hue="warm" time="20:15" date="Thứ Năm, 3 tháng 9" notifs={[{ app: "Tin nhắn", col: "#2f6fd1", title: "Mẹ", body: "Con nhớ ăn uống đầy đủ.", at: 0.5 }]} quote={["MẸ KHÔNG TRÁCH", "MỘT CÂU"]} qAt={0.2} />)],
-    [11, () => CD((t) => <TitleCard t={t} hue="red" kicker="CÂU NÓI ĐẮT GIÁ NHẤT" l1="“CHỜ VỀ BỜ" l2="ĐÃ…”" />)],
+    [11, () => CD((t, d) => <><TitleCard t={t} hue="red" kicker="CÂU NÓI ĐẮT GIÁ NHẤT" l1="“CHỜ VỀ BỜ" l2="ĐÃ…”" /><Meme t={t} at={Math.max(1.6, d * 0.55)} top="" bot="…BỜ ĐÂU?" small /></>)],
   ] },
   { id: "S18", shots: [
-    [0, () => CD((t) => <NewsCard t={t} tag="TIN NÓNG · 12–13/11/2026" items={[{ src: "VNEXPRESS · 13/11", head: "Ông Trump: Mỹ “không cần thỏa thuận” với Iran", at: rel("S18", 1, sc("S18").a) }, { src: "TUỔI TRẺ · 13/11", head: "USD lên cao nhất 19 tháng, vàng thế giới mất hơn 100 USD", at: rel("S18", 2, sc("S18").a) }]} />)],
-    [3, () => CD((t, d) => <ChartCard t={t} d={d} title="Vàng thế giới" sub="Giá cuối tuần · 2026" data={WORLD} unit="USD/ounce" scale={1} dec={0} mode="down" marks={[{ i: 2, label: "ĐỈNH 5.387", col: "#f5c518" }, { i: WORLD.length - 1, label: "3.892", col: "#ff4d5e", up: false }]} src="Nguồn: CME (dữ liệu WiData)" />)],
-    [4, () => CD((t, d) => <ChartCard t={t} d={d} title="Vàng miếng SJC 4 phiên gần nhất" sub="Giá bán ra · 9/11 → 13/11/2026" data={SJC_NOW} unit="triệu đồng/lượng" mode="down" reveal={0.5} bracket={{ a: 0, b: 4, label: "−3,2 TRIỆU", at: 1.6 }} src="Nguồn: SJC (dữ liệu WiData), giá bán ra" />)],
+    [0, () => CD((t) => <NewsCard t={t} tag="DRAMA PHÒNG TẬP · 26/10/2026" items={[{ src: "BÁO VĂN HÓA · 26/10", head: "California Fitness tạm dừng toàn bộ cơ sở tại Hà Nội", at: 0.4 }, { src: "HỘI VIÊN", head: "Đã trả tiền thẻ nhiều năm, vẫn trả góp ngân hàng – chưa có phương án hoàn tiền", at: 2.4, col: "#1f4e8a" }]} />)],
+    [1, () => CD((t) => <PhoneCard t={t} hue="red" time="08:00" date="Ngày 5 tháng 11" notifs={[{ app: "Ngân hàng", col: "#b3131f", title: "Nhắc thanh toán trả góp", body: "Kỳ 9/12: 3.000.000 đ · Hợp đồng hội viên phòng tập", at: 0.4 }]} quote={["VẪN TRẢ GÓP", "MÀ HẾT CHỖ TẬP"]} qAt={1.2} />)],
+    [2, () => D3(S("streetday", "day", [[-21.5, 1.5, -1.4], [-26, 1.3, -5.0], 42], [[-23.0, 1.45, -2.0], [-26, 1.3, -5.0], 38], [], { shake: 0.4 }), (t) => <Meme t={t} top="PHÒNG GYM ĐÓNG CỬA" bot="TẬP LUÔN TRÊN VỈA HÈ" />)],
+    [3, () => CD((t) => <NewsCard t={t} tag="TIN NÓNG · 11–13/11/2026" items={[{ src: "VNEXPRESS · 11/11", head: "Lạm phát Mỹ cao hơn dự kiến, vàng mất gần 130 USD", at: rel("S18", 4, sc("S18").sens[3].a) - 0.6 }, { src: "VNEXPRESS · 13/11", head: "Ông Trump: Mỹ “không cần thỏa thuận” với Iran", at: rel("S18", 4, sc("S18").sens[3].a) + 1.2 }, { src: "TUỔI TRẺ · 13/11", head: "USD lên cao nhất 19 tháng, vàng thế giới mất hơn 100 USD", at: rel("S18", 5, sc("S18").sens[3].a) }]} />)],
+    [6, () => CD((t, d) => <ChartCard t={t} d={d} title="Vàng thế giới" sub="Giá cuối tuần · 2026" data={WORLD} unit="USD/ounce" scale={1} dec={0} mode="down" marks={[{ i: 2, label: "ĐỈNH 5.387", col: "#f5c518" }, { i: WORLD.length - 1, label: "3.892", col: "#ff4d5e", up: false }]} src="Nguồn: CME (dữ liệu WiData)" />)],
+    [7, () => CD((t, d) => <ChartCard t={t} d={d} title="Vàng miếng SJC 4 phiên gần nhất" sub="Giá bán ra · 9/11 → 13/11/2026" data={SJC_NOW} unit="triệu đồng/lượng" mode="down" reveal={0.5} bracket={{ a: 0, b: 4, label: "−3,2 TRIỆU", at: 1.6 }} src="Nguồn: SJC (dữ liệu WiData), giá bán ra" />)],
   ] },
   { id: "S19", shots: [
     [0, () => CD((t) => <ChatCard t={t} title="Hùng" msgs={[{ who: "Hùng", text: "Tân ơi, vợ tao sắp sinh, mày xoay được ít nào không?", at: 0.4 }]} side={<SideText t={t} at={1.6} l1="ĐẾN HẠN" l2="TRẢ NỢ" />} />)],
     [1, () => D3(S("street", "night", [[GOLD_X + 12, 1.4, 2.2], [GOLD_X + 8, 1.1, 5.2], 44], [[GOLD_X + 5, 1.4, 2.2], [GOLD_X + 1.5, 1.1, 5.2], 44], [C("tan", [GOLD_X + 9, 0.15, 5.2], walk("sad", { acc: ["goldbag"] }), [GOLD_X + 1.6, 0.15, 5.2])], { ease: "lin" }))],
     [2, () => D3(S("shop", "day", [[-3.1, 2.1, -0.7], [-3.2, 2.1, -2.9], 46], [[-3.15, 2.1, -1.0], [-3.2, 2.1, -2.9], 42], [], { board: "sell" }))],
-    [3, () => D3(S("street", "night", [[GOLD_X - 1.2, 1.0, 2.6], [GOLD_X, 0.8, 5.6], 40], [[GOLD_X - 0.7, 0.95, 3.2], [GOLD_X, 0.8, 5.6], 34], [C("tan", [GOLD_X, 0.15, 5.6], P("sad", { mode: "sit", acc: ["paper"] }))]), (t) => <Vignette k={0.6} />)],
+    [3, () => D3(S("street", "night", [[GOLD_X - 2.9, 1.0, 2.8], [GOLD_X - 1.7, 0.8, 5.6], 40], [[GOLD_X - 2.4, 0.95, 3.3], [GOLD_X - 1.7, 0.8, 5.6], 34], [C("tan", [GOLD_X - 1.7, 0.15, 5.6], P("sad", { mode: "sit", acc: ["paper"] }))]), (t) => <><Vignette k={0.6} /><Meme t={t} at={0.4} top="KỲ VỌNG: XÂY NHÀ CHO MẸ" bot="" /><Meme t={t} at={1.4} top="" bot="THỰC TẾ: NGỒI BẬC THỀM" noSubGap /></>)],
     [4, () => CD((t) => <PaperCard t={t} kind="note" hue="night" title="SỔ TAY CỦA TÂN" sub="13/11/2026" lines={[
       { text: "Mua 26/2: 5 lượng × 184 = 920 triệu", at: 0.4 },
       { text: "Bán 13/11: 5 lượng × 133,8 = 669 triệu", at: rel("S19", 5, sc("S19").sens[4].a) },
@@ -180,12 +190,13 @@ const PLAN: Plan[] = [
   ] },
   { id: "S20", shots: [
     [0, () => CD((t) => <TitleCard t={t} hue="navy" kicker="BÀI HỌC" l1="KHÔNG PHẢI VÌ" l2="VÀNG XẤU" sub="Vàng vẫn là một tài sản tốt" />)],
-    [2, () => CD((t) => { const a = sc("S20").sens[2].a; return <><LessonCard t={t} title="Cái sai nằm ở 3 chỗ" items={[
+    [2, () => CD((t) => { const a = sc("S20").sens[2].a; return <><LessonCard t={t} title="Cái sai nằm ở 4 chỗ" items={[
       { n: "1", icon: "🔥", head: "Mua khi cả xã hội phát sốt", body: "Phải đội mưa xếp hàng = giá đã chạy rất xa", at: rel("S20", 3, a) },
       { n: "2", icon: "💸", head: "Dùng tiền vay, tiền dưỡng già của người thân", body: "Vàng không trả lãi, nhưng nợ vẫn đến hạn", at: rel("S20", 5, a) },
-      { n: "3", icon: "🏷️", head: "Nhầm giá giữ với giá bán", body: "Tiệm mua lại thấp hơn giá niêm yết vài triệu mỗi lượng", at: rel("S20", 7, a) }]} />
-      {t > rel("S20", 9, a) && <AbsoluteFill style={{ background: `rgba(5,8,20,${0.78 * sm((t - rel("S20", 9, a)) / 0.4)})` }} />}
-      <BigText t={t} at={rel("S20", 9, a)} text="GIỮ GIÁ – CHỈ KHI KHÔNG BỊ BUỘC PHẢI BÁN" col="#ffcf3a" y={430} size={76} /></>; })],
+      { n: "3", icon: "🏷️", head: "Nhầm giá giữ với giá bán", body: "Tiệm mua lại thấp hơn giá niêm yết vài triệu mỗi lượng", at: rel("S20", 7, a) },
+      { n: "4", icon: "📜", head: "Trả trước cho những lời hứa", body: "“Giữ giá”, “tập trọn đời” – đẹp cho đến ngày mình cần", at: rel("S20", 9, a) }]} />
+      {t > rel("S20", 11, a) && <AbsoluteFill style={{ background: `rgba(5,8,20,${0.78 * sm((t - rel("S20", 11, a)) / 0.4)})` }} />}
+      <BigText t={t} at={rel("S20", 11, a)} text="LỜI HỨA NÀO CŨNG ĐẸP…" col="#ffcf3a" y={430} size={96} /></>; })],
   ] },
   { id: "S21", shots: [
     [0, () => D3(S("lake", "lake", [[-30, 12, 30], [0, 1, -10], 52], [[-14, 3.0, 20], [2, 1.2, -6], 46], [C("tan", LAKE_T, P("sad", { mode: "sit" })), C("ngan", LAKE_N, P("neutral", { mode: "sit" }))]), (t) => <LocTag t={t} l1="HỒ GƯƠM" l2="Hà Nội · cầu Thê Húc" />)],
@@ -195,7 +206,10 @@ const PLAN: Plan[] = [
     [4, () => D3(S("streetday", "golden", [[-31.2, 1.3, 3.8], [-30, 1.35, 5.85], 30], [[-31.0, 1.3, 4.2], [-30, 1.35, 5.85], 26], [me("smile_closed", ["nonla", "phone"])]), (t) => <><Bubble t={t} at={0.4} x={1060} y={180} w={700} text="Con biết sai là được rồi." />{t > rel("S21", 5, sc("S21").sens[4].a) && <Bubble t={t} at={rel("S21", 5, sc("S21").sens[4].a)} x={1060} y={420} w={700} text="Tiền thì mẹ con mình làm lại." />}</>)],
     [6, () => D3(S("lake", "lake", [[-6.7, 1.35, 13.8], [-6.2, 1.35, 12.4], 30], [[-6.6, 1.35, 13.5], [-6.2, 1.35, 12.4], 26], [C("tan", LAKE_T, P("cry", { mode: "sit", acc: ["tears"], anim: true })), C("ngan", LAKE_N, P("sad", { mode: "sit" }))]))],
     [8, () => D3(S("lake", "lake", [[-6.0, 1.4, 14.6], [-6.0, 1.35, 12.4], 36], [[-6.0, 1.4, 14.2], [-6.0, 1.35, 12.4], 32], [C("tan", LAKE_T, P("relief", { mode: "sit" })), C("ngan", LAKE_N, P("smile_closed", { mode: "sit" }))]), (t) => <Bubble t={t} at={0.6} x={1060} y={170} w={720} text="Từ nay nhà mình có kế hoạch, và không giấu nhau nữa." />)],
-    [9, () => D3(S("lake", "lake", [[-8.6, 1.3, 15.6], [-1.5, 1.2, 6], 42], [[-26, 16, 34], [-20, 2, -30], 50], [C("tan", LAKE_T, P("smile_closed", { mode: "sit" })), C("ngan", LAKE_N, P("smile_closed", { mode: "sit" }))], { ease: "sm" }), (t) => <QuoteOv t={t} at={rel("S21", 10, sc("S21").sens[9].a) + 0.6} />)],
+    [9, () => D3(S("lake", "lake", [[-5.5, 1.45, 14.4], [-5.6, 1.35, 12.6], 32], [[-5.55, 1.45, 14.0], [-5.6, 1.35, 12.6], 28], [C("ngan", LAKE_N, P("smile", { mode: "sit", acc: ["phone", "glow"] }))]), (t) => <Bubble t={t} at={0.4} x={1060} y={170} w={600} text="Em kể anh nghe một bí mật…" />)],
+    [10, () => CD((t, d) => <DcaCard t={t} d={d} a2={rel("S21", 12, sc("S21").sens[10].a)} a3={rel("S21", 14, sc("S21").sens[10].a)} />)],
+    [13, () => D3(S("lake", "lake", [[-6.0, 1.5, 14.6], [-6.0, 1.35, 12.6], 36], [[-6.0, 1.5, 14.2], [-6.0, 1.35, 12.6], 32], [C("tan", LAKE_T, P("dazed", { mode: "sit" })), C("ngan", LAKE_N, P("smile_closed", { mode: "sit" }))]), (t) => <><Bubble t={t} at={0.3} x={1060} y={150} w={700} text="Không phải chứng khoán thần kỳ đâu anh." />{t > rel("S21", 15, sc("S21").sens[13].a) && <Bubble t={t} at={rel("S21", 15, sc("S21").sens[13].a)} x={1060} y={400} w={700} text="Khác nhau là có kế hoạch, và không dồn hết tiền vào một ngày." />}</>)],
+    [16, () => D3(S("lake", "lake", [[-8.6, 1.3, 15.6], [-1.5, 1.2, 6], 42], [[-26, 16, 34], [-20, 2, -30], 50], [C("tan", LAKE_T, P("smile_closed", { mode: "sit" })), C("ngan", LAKE_N, P("smile_closed", { mode: "sit" }))], { ease: "sm" }), (t) => <QuoteOv t={t} at={rel("S21", 17, sc("S21").sens[16].a) + 0.6} />)],
   ] },
   { id: "S22", shots: [[0, () => CD((t) => <CtaCard t={t} webAt={rel("S22", 3, sc("S22").a)} />)]] },
 ];
@@ -207,6 +221,23 @@ function teaStall(e: Expr = "grin"): Cast[] {
 function hueWalkers(): Cast[] { return Array.from({ length: 8 }, (_, i) => C("c" + i, [(i % 2 ? 1.6 : -1.6), 1.38, -30 + i * 7], walk(i % 3 ? "neutral" : "smile", { acc: ["nonla"], phase: i * 0.3 }), [(i % 2 ? 1.6 : -1.6), 1.38, -30 + i * 7 + (i % 2 ? -6 : 6)])); }
 function btCrowd(): Cast[] { return Array.from({ length: 14 }, (_, i) => C("c" + i, [5 + i * 1.1, 0.02, -4.5 + (i % 2) * 0.3], P(i % 4 === 1 ? "worried" : "neutral", { acc: i % 3 === 0 ? ["nonla"] : [], phase: i * 0.4 }))); }
 
+const Meme: React.FC<{ t: number; at?: number; top: string; bot: string; small?: boolean; noSubGap?: boolean }> = ({ t, at = 0, top, bot, small, noSubGap }) => { if (t < at) return null; const a = Math.min(1, (t - at) / 0.18), sz = small ? 150 : 92;
+  const st = { position: "absolute", left: 0, width: 1920, textAlign: "center", fontFamily: F, fontWeight: 900, fontSize: sz, color: "#fff", WebkitTextStroke: "10px #000", paintOrder: "stroke fill", letterSpacing: 1, transform: `scale(${1.25 - 0.25 * a})`, opacity: a } as React.CSSProperties;
+  return <>{top && <div style={{ ...st, top: 40 }}>{top}</div>}{bot && <div style={{ ...st, top: small ? 690 : noSubGap ? 150 : 690, color: small ? "#ffe14d" : "#fff", fontSize: small ? 130 : sz }}>{bot}</div>}</>; };
+const DcaCard: React.FC<{ t: number; d: number; a2: number; a3: number }> = ({ t, a2, a3 }) => {
+  const rows = [{ l: "Anh Tân: dồn hết vào đỉnh vàng 26/2", v: -27.3, at: 0.6 }, { l: "Mua vàng nhẫn đều mỗi tháng từ 1/2025", v: 1.2, at: a3 }, { l: "Chị Ngân: mua cổ phiếu theo chỉ số đều mỗi tháng từ 1/2025", v: 10.4, at: a2 }];
+  return <AbsoluteFill style={{ fontFamily: F }}><Bg t={t} hue="navy" />
+    <div style={{ position: "absolute", left: 160, top: 90, fontSize: 60, fontWeight: 900, color: "#fff", opacity: sm(t / 0.4) }}>Cùng một khoảng thời gian, khác nhau ở cách làm</div>
+    {rows.map((r, i) => { const k = sm((t - r.at) / 0.8), w = Math.abs(r.v) / 27.3 * 620 * k, pos = r.v >= 0; if (t < r.at) return null;
+      return <div key={i} style={{ position: "absolute", left: 160, top: 250 + i * 190, width: 1600 }}>
+        <div style={{ fontSize: 36, fontWeight: 700, color: "#dfe5f2" }}>{r.l}</div>
+        <div style={{ position: "relative", height: 80, marginTop: 14 }}>
+          <div style={{ position: "absolute", left: 800, top: 0, width: 4, height: 80, background: "#8f9ab3" }} />
+          <div style={{ position: "absolute", top: 8, height: 64, borderRadius: 12, background: pos ? "#2bd17e" : "#ff4d5e", left: pos ? 804 : 800 - w, width: w }} />
+          <div style={{ position: "absolute", top: 4, fontSize: 60, fontWeight: 900, color: pos ? "#2bd17e" : "#ff4d5e", left: pos ? 820 + w : 780 - w - 260, width: 260, textAlign: pos ? "left" : "right", opacity: k }}>{(r.v > 0 ? "+" : "") + r.v.toLocaleString("vi-VN", { maximumFractionDigits: 1 })}%</div>
+        </div></div>; })}
+    <div style={{ position: "absolute", left: 160, bottom: 200, width: 1600, fontSize: 22, color: "#8f9ab3", lineHeight: 1.4 }}>Minh hoạ tính theo VN-Index và giá vàng nhẫn SJC (mua đầu/cuối mỗi tháng, định giá 13/11/2026 theo giá tiệm mua lại / điểm đóng cửa), chưa gồm cổ tức, phí, thuế. Kết quả quá khứ không đảm bảo tương lai, không phải khuyến nghị đầu tư.</div>
+  </AbsoluteFill>; };
 const DreamCard: React.FC<{ t: number }> = ({ t }) => { const a = sm(t / 0.5), b = sm((t - 1.2) / 0.8);
   return <AbsoluteFill style={{ fontFamily: F }}><Bg t={t} hue="warm" />
     <div style={{ position: "absolute", left: 220, top: 300, opacity: a * (1 - b * 0.6) }}><House w={520} old /></div>
