@@ -429,7 +429,7 @@ const hatOn = (p: Pen, o: Outfit, hp: P2[], H: Blob, cx: number, hc: number, lig
 // ---------------- bodies ----------------
 export type Arms = [P2[], P2[]];
 /** held prop; for the hammer the number is the strike 0 (raised) .. 1 (struck) */
-export type Prop = null | "icecream" | "shako" | ["hammer", number] | "hold" | "hold2" | "face" | "up" | "type";
+export type Prop = null | "icecream" | "shako" | ["hammer", number] | "hold" | "hold2" | "face" | "up" | "type" | "none";
 
 const BUILD: Record<Build, { a: number; torso: number; legs: number; tw: number }> = {
   adult: { a: 118, torso: 1.1, legs: 1.4, tw: 0.8 },
@@ -525,6 +525,7 @@ export const bodyFront = (p: Pen, o: Outfit, opts: FrontOpts) => {
     } else if (wave !== undefined) {
       const S = sh(1);
       arms.push({ pts: [S, [tcx + 1.1 * T.a + 10 * u + 3 * u * wave, S[1] - 0.22 * HH], [tcx + 1.18 * T.a + 16 * u + 12 * u * wave, S[1] - 0.6 * HH]], front: false });
+    } else if (prop === "none") { arms.length = 0;
     } else if (prop === "hold" || prop === "hold2" || prop === "up" || prop === "face" || prop === "type") {
       const S = sh(1), L0 = sh(-1);
       if (prop === "face") { arms.length = 0;
@@ -624,7 +625,7 @@ export const bodyFront = (p: Pen, o: Outfit, opts: FrontOpts) => {
 };
 
 export type SideOpts = {
-  phase?: number; expr?: Expr; mode?: "march" | "stand" | "swing" | "push"; blink?: boolean | number; stomp?: number; pose?: number;
+  phase?: number; expr?: Expr; mode?: "march" | "stand" | "swing" | "push"; blink?: boolean | number; stomp?: number; pose?: number; reach?: boolean;
   /** step length as a multiple of 0.8 m (370 units): matches 1.6 m/s at 2 steps/s; scale by the view's foreshortening */
   stride?: number; light?: number; seed?: number;
   /** push mode: where the hands land at pose 1, in final canvas units (e.g. the swing kid's back) */
@@ -708,7 +709,7 @@ export const bodySide = (p: Pen, o: Outfit, opts: SideOpts) => {
   const B0: P2 = [tcx + 0.72 * T.a, chin + 0.58 * HH], B1: P2 = [tcx - 0.95 * T.a - 22 * u, crown - 0.4 * HH];
   let near: [P2, P2, P2], far: [P2, P2, P2] | null;
   if (mode === "swing") { near = [S, [S[0] + 12 * u, S[1] - 0.16 * HH], [300 + 6 * u, chin - 0.3 * HH]]; far = [S, [S[0] + 8 * u, S[1] - 0.18 * HH], [300 + 2 * u, chin - 0.36 * HH]]; }
-  else if (mode === "push") {
+  else if (mode === "push" || opts.reach) {
     const reach = 0.55 * HH + 0.45 * HH * pose;
     let hN: P2 = [S[0] + reach, S[1] + 0.06 * HH];
     if (opts.hand) {

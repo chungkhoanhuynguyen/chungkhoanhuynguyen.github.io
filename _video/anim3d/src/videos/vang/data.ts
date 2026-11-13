@@ -21,6 +21,7 @@ export const WORLD: [string, number][] = [["4/1", 4372.5], ["1/2", 4740.37], ["1
 
 /** tiêu đề phụ đề: đổi chữ số đọc thành con số cho dễ nhìn */
 const REP: [RegExp, string][] = [
+  [/số một trăm linh hai/g, "số 102"], [/mời số tám mươi bảy/g, "mời số 87"], [/một trăm ba mươi ba triệu tám/g, "133,8 triệu"], [/một trăm ba mươi bảy triệu tám/g, "137,8 triệu"], [/In đi a vi a/g, "Indiavia"],
   [/một nghìn tám trăm tám mươi điểm/g, "1.880 điểm"], [/một nghìn năm trăm chín mươi mốt điểm/g, "1.591 điểm"], [/ngày hai mươi ba tháng Ba/g, "ngày 23/3"],
   [/ba mươi sáu triệu đồng/g, "36 triệu đồng"], [/thẻ tập gym ba năm/g, "thẻ tập gym 3 năm"], [/Tấm thẻ ba năm/g, "Tấm thẻ 3 năm"], [/năm triệu/g, "5 triệu"],
   [/mười phần trăm/g, "10%"], [/Cuối tháng Mười,/g, "Cuối tháng 10,"], [/bốn chỗ/g, "4 chỗ"],

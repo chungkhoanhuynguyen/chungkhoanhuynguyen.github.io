@@ -108,9 +108,9 @@ export function buildExtras(set: string, root: THREE.Group): Upd {
   };
   /** quần chúng "ngứa mắt": anh tập boxing múa đấm trên vỉa hè, anh gym cơ bắp áo ba lỗ */
   const boxer = (X: number, x: number, z: number) => { const a = new Actor({ jacket: "#e23b2e", pants: "#1f2430", boots: "#f4f4f2", hat: "cap", cap: "#111", belt: null, buttons: "#e23b2e", skin: "#d9a77e", build: "stout" }, 1.72, 150); root.add(a.root);
-    ups.push((t, cam, tint) => { const k = Math.floor(t * 4) % 2; a.root.position.set(X + x + Math.sin(t * 2) * 0.15, 0.15, z); a.pose({ expr: k ? "stern" : "grin", prop: k ? "type" : "hold2", acc: ["gloves"], tilt: k ? 4 : -4 }, cam, tint); }); };
+    ups.push((t, cam, tint) => { const k = Math.floor(t * 4) % 2; a.root.position.set(X + x + Math.sin(t * 2) * 0.15, 0.15, z); a.pose({ expr: k ? "stern" : "grin", acc: ["box"], tilt: Math.round(Math.sin(t * 10) * 5), t: Math.round(t * 15) / 15 }, cam, tint); }); };
   const gym = (X: number, z: number, a0: number, b0: number) => { const a = new Actor({ jacket: "#2b2b2b", pants: "#3a4a6a", boots: "#f4f4f2", hat: "hair", hair: "#111", belt: null, buttons: "#2b2b2b", skin: "#c98a5a", build: "stout" }, 1.8, 151); root.add(a.root);
-    const L = b0 - a0; ups.push((t, cam, tint) => { const s2 = (t * 1.0) % (2 * L), x = s2 < L ? a0 + s2 : b0 - (s2 - L); a.root.position.set(X + x, 0.15, z); a.pose({ expr: "smug", mode: "stroll", phase: Math.round(((t * 1.0) % 1) * 12) / 12, acc: ["muscle"] }, cam, tint); }); };
+    const L = b0 - a0; ups.push((t, cam, tint) => { const tw = Math.floor(t / 6) * 3 + Math.min(3, t % 6), s2 = (tw * 1.0) % (2 * L), x = s2 < L ? a0 + s2 : b0 - (s2 - L); a.root.position.set(X + x, 0.15, z); const stop = t % 6 >= 3; a.pose(stop ? { expr: "smug", acc: ["flex"], t: Math.round(t * 15) / 15 } : { expr: "smug", mode: "stroll", phase: Math.round(((t * 1.0) % 1) * 12) / 12, acc: ["muscle"] }, cam, tint); }); };
   /** tắc đường: xe đứng im, đèn pha, còi (âm thanh làm riêng) – chỉ hiện ở cảnh có jam */
   const jamGroup = (X: number) => { const jg = new THREE.Group(); root.add(jg);
     for (let k = 0; k < 7; k++) { const c = car(["#f4f4f2", "#111216", "#8a1c22", "#2c3e50", "#9aa3ab", "#1f4e8a", "#c0392b"][k], k % 2 ? "suv" : "sedan"); c.position.set(X - 40 + k * 5.2, 0, k % 2 ? -2.2 : 2.0); c.rotation.y = Math.PI / 2 * (k % 2 ? 1 : -1); jg.add(c); }

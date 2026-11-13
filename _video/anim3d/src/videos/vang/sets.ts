@@ -260,12 +260,27 @@ export function buildStreet(night = true) {
     for (let k = 0; k < 8; k++) { const m = motorbike(["#c0392b", "#2c3e50", "#ecf0f1", "#2980b9", "#16a085"][Math.floor(r() * 5)], (["wave", "sh", "vision"] as const)[k % 3]); m.position.set(-38 + k * 11 + r() * 3, 0.15, -s * 0 + s * 6.4); m.rotation.y = Math.PI / 2 + (r() - 0.5) * 0.4; if (s > 0 && k >= 3 && k <= 5) continue; g.add(m); }
   }
   // queue props: plastic stools along the line
-  const stoolX = [2, 7, 12, 17, 22].map((i) => GOLD_X + 1.4 + i * 1.15).concat([2.0, 5.2, 8.6, 11.8].map((d) => GOLD_X + d));
+  const stoolX = [2, 7, 12, 17, 22, 23].map((i) => GOLD_X + 1.4 + i * 1.15).concat([2.0, 5.2, 8.6, 11.8].map((d) => GOLD_X + d));
   stoolX.forEach((x, k) => { const st = stool(["#d93636", "#2f6fd1"][k % 2]); st.position.set(x, 0.15, 5.92); g.add(st); });
   // chỗ mẹ ngồi bán rau (phố huyện): ghế nhựa + thúng rau
   const ms = stool("#2f6fd1"); ms.position.set(-30, 0.15, 6.05); g.add(ms);
   for (const [bx, bz] of [[-29.1, 5.75], [-30.9, 5.8]]) { const bk = cyl(0.34, 0.26, 0.26, lam("#a8793e"), 14); bk.position.set(bx, 0.28, bz); g.add(bk);
     for (let k = 0; k < 6; k++) { const v = new THREE.Mesh(new THREE.IcosahedronGeometry(0.11, 0), lam(["#3f9a4a", "#6bb04a", "#e0532e"][k % 3])); v.position.set(bx + (k % 3 - 1) * 0.14, 0.45, bz + (k < 3 ? -0.08 : 0.08)); g.add(v); } }
+  // gánh xôi của cô Ba: đòn gánh + 2 thúng xôi + biển hiệu
+  { const X0 = GOLD_X + 8.6, wood = lam("#a8793e"), pole = cyl(0.025, 0.025, 1.7, lam("#6b4a2a"), 6); pole.rotation.z = Math.PI / 2; pole.position.set(X0 + 0.0, 0.98, 5.35); g.add(pole);
+    for (const dx of [-0.75, 0.75]) { const bk = cyl(0.36, 0.28, 0.3, wood, 16); bk.position.set(X0 + dx, 0.31, 5.35); g.add(bk);
+      const xo = new THREE.Mesh(new THREE.SphereGeometry(0.31, 16, 10, 0, Math.PI * 2, 0, Math.PI / 2), lam(dx < 0 ? "#f6d24a" : "#f3ead2")); xo.scale.y = 0.55; xo.position.set(X0 + dx, 0.46, 5.35); g.add(xo);
+      const leaf = cyl(0.39, 0.39, 0.02, lam("#3f8a3a"), 16); leaf.position.set(X0 + dx, 0.45, 5.35); g.add(leaf);
+      for (const a2 of [-0.22, 0.22]) { const rope = cyl(0.008, 0.008, 0.6, lam("#3a2a1a"), 4); rope.position.set(X0 + dx + a2 * 0.5, 0.72, 5.35); rope.rotation.z = -a2 * 1.2; g.add(rope); } }
+    const cv = document.createElement("canvas"); cv.width = 512; cv.height = 256; const c2 = cv.getContext("2d")!; c2.fillStyle = "#ffe14d"; c2.fillRect(0, 0, 512, 256); c2.strokeStyle = "#c8202f"; c2.lineWidth = 14; c2.strokeRect(7, 7, 498, 242);
+    c2.fillStyle = "#c8202f"; c2.textAlign = "center"; c2.font = "900 92px 'Be Vietnam Pro', 'DejaVu Sans'"; c2.fillText("XÔI CÔ BA", 256, 112); c2.fillStyle = "#1d1616"; c2.font = "800 52px 'Be Vietnam Pro', 'DejaVu Sans'"; c2.fillText("xôi xéo · xôi lạc · 10K", 256, 196);
+    const tx = new THREE.CanvasTexture(cv); tx.colorSpace = THREE.SRGBColorSpace; const sg = new THREE.Mesh(new THREE.PlaneGeometry(1.5, 0.75), new THREE.MeshBasicMaterial({ map: tx, side: THREE.DoubleSide })); sg.position.set(X0 + 0.0, 2.05, 5.95); sg.rotation.y = Math.PI; g.add(sg);
+    for (const dx of [-0.7, 0.7]) { const pl = cyl(0.025, 0.025, 1.6, lam("#4a4a52"), 6); pl.position.set(X0 + dx, 0.95, 5.97); g.add(pl); } }
+  // biển trà đá
+  { const X0 = GOLD_X + 5.2; const cv = document.createElement("canvas"); cv.width = 512; cv.height = 200; const c2 = cv.getContext("2d")!; c2.fillStyle = "#1f4e8a"; c2.fillRect(0, 0, 512, 200); c2.fillStyle = "#fff"; c2.textAlign = "center"; c2.font = "900 96px 'Be Vietnam Pro', 'DejaVu Sans'"; c2.fillText("TRÀ ĐÁ 5K", 256, 134);
+    const tx = new THREE.CanvasTexture(cv); tx.colorSpace = THREE.SRGBColorSpace; const sg = new THREE.Mesh(new THREE.PlaneGeometry(1.3, 0.5), new THREE.MeshBasicMaterial({ map: tx, side: THREE.DoubleSide })); sg.position.set(X0, 2.0, 5.95); sg.rotation.y = Math.PI; g.add(sg);
+    const tb = new THREE.Mesh(new THREE.BoxGeometry(0.7, 0.04, 0.5), lam("#c9cdd3")); tb.position.set(X0 + 0.75, 0.55, 5.6); g.add(tb); for (const [ax, az] of [[-0.3, -0.2], [0.3, -0.2], [-0.3, 0.2], [0.3, 0.2]]) { const lg = cyl(0.02, 0.02, 0.4, lam("#8f9ab3"), 5); lg.position.set(X0 + 0.75 + ax, 0.35, 5.6 + az); g.add(lg); }
+    const pot = cyl(0.1, 0.12, 0.2, lam("#d9d2c0"), 10); pot.position.set(X0 + 0.6, 0.67, 5.6); g.add(pot); for (const k of [0, 1, 2]) { const gl = cyl(0.035, 0.03, 0.09, lam("#bfe3ef"), 8); gl.position.set(X0 + 0.8 + k * 0.09, 0.62, 5.55 + (k % 2) * 0.1); g.add(gl); } }
   // own bike of Đô (to wheel out)
   const bikeDo = motorbike("#8e2c2c", "wave"); bikeDo.position.set(HOME_X + 1.2, 0.15, 5.0); bikeDo.rotation.y = Math.PI / 2; g.add(bikeDo);
   return { g, bikeDo };

@@ -1,21 +1,27 @@
 // Nhân vật video "Vàng đỉnh": thẻ hoạt hình 2D đứng trong cảnh 3D (billboard trụ) + phụ kiện vẽ tay (tai nghe, nón lá, ô, áo mưa, nước mắt, điện thoại, túi vàng, hộp kim cương, cốc trà, tờ giấy).
 import * as THREE from "three";
-import { Pen, bodyFront, Outfit, Expr, Prop, INK } from "../pho/toon";
+import { Pen, bodyFront, bodySide, Outfit as Outfit0, Expr, Prop, INK } from "../pho/toon";
+export type Outfit = Outfit0 & { long?: boolean };
 import { NOINK } from "../pho/ink";
 
 export const DO: Outfit = { jacket: "#2b2d38", pants: "#3a3f52", boots: "#e9e6df", hat: "hair", hair: "#141215", belt: null, buttons: "#565b6e", build: "stout", skin: "#f3cfa8" };
-export const NGAN: Outfit = { jacket: "#f39bb5", pants: "#5b4a6e", boots: "#f3e8dc", hat: "hair", hair: "#2a1d1b", belt: null, buttons: "#ffffff", skin: "#ffe0c6" };
+export const NGAN: Outfit = { jacket: "#f39bb5", pants: "#5b4a6e", boots: "#f3e8dc", hat: "hair", hair: "#2a1d1b", belt: null, buttons: "#ffffff", skin: "#ffe0c6", long: true };
 export const VEST: Outfit = { jacket: "#1f2430", pants: "#1f2430", boots: "#111", hat: "hair", hair: "#3a2a20", belt: null, buttons: "#c9a64a", skin: "#e8c39e", moustache: "#2a1d18" };
 export const ME2: Outfit = { jacket: "#7a5a3c", pants: "#2e2c30", boots: "#5a3b2a", hat: "hair", hair: "#cfcac4", belt: null, buttons: "#d8c7a8", build: "stout", skin: "#eec39a" };
-export const CLERK: Outfit = { jacket: "#c8202f", pants: "#2b2b33", boots: "#222", hat: "hair", hair: "#1d1616", belt: null, buttons: "#f2d36b", skin: "#ffdcc0" };
+export const CLERK: Outfit = { jacket: "#c8202f", pants: "#2b2b33", boots: "#222", hat: "hair", hair: "#1d1616", belt: null, buttons: "#f2d36b", skin: "#ffdcc0", long: true };
+export const GYM: Outfit = { jacket: "#2b2b2b", pants: "#3a4a6a", boots: "#f4f4f2", hat: "hair", hair: "#111", belt: null, buttons: "#2b2b2b", skin: "#c98a5a", build: "stout" };
+export const BOXER: Outfit = { jacket: "#e23b2e", pants: "#1f2430", boots: "#f4f4f2", hat: "cap", cap: "#111", belt: null, buttons: "#e23b2e", skin: "#d9a77e", build: "stout" };
+export const XOI: Outfit = { jacket: "#8a3fa0", pants: "#2e2c30", boots: "#5a3b2a", hat: "hair", hair: "#241a18", belt: null, buttons: "#e8d8f0", build: "stout", skin: "#f1c9a0", long: true };
 const CROWD_J = ["#3a78c2", "#2f8a52", "#8a5a3a", "#6b4fa0", "#c9572e", "#4a4a52", "#9c2f45", "#2e6f7a", "#7a7f3a", "#d08a2a"];
 const HAIR = ["#1c1719", "#2a1d1b", "#4a3426", "#b9b6b2", "#151515"];
 export const crowd = (i: number): Outfit => ({ jacket: CROWD_J[i % CROWD_J.length], pants: ["#2f3546", "#3d3a36", "#26262b", "#4a4a42"][i % 4], boots: ["#2a2a2a", "#5a3b2a", "#e9e6df"][i % 3],
   hat: i % 5 === 3 ? "cap" : "hair", cap: ["#c0392b", "#2f6fd1", "#2f8a52"][i % 3], hair: HAIR[(i * 3) % HAIR.length], belt: null, buttons: "#d8dde4",
-  skin: ["#ffe2c2", "#f5c9a0", "#ecd0b6", "#e3b48c"][i % 4], build: i % 4 === 1 ? "stout" : "adult" });
+  skin: ["#ffe2c2", "#f5c9a0", "#ecd0b6", "#e3b48c"][i % 4], build: i % 4 === 1 ? "stout" : "adult", long: FEM(i) });
+/** nhân vật quần chúng nữ (tóc dài, áo màu tươi) */
+export const FEM = (i: number) => i % 5 !== 3 && (i % 3 === 1 || i % 7 === 4);
 
-export type Acc = "gloves" | "muscle" | "headset" | "nonla" | "umbrella" | "raincoat" | "tears" | "phone" | "goldbag" | "gembox" | "cup" | "paper" | "sweat" | "zzz" | "glow" | "ring";
-export type Pose = { expr: Expr; blink?: boolean; mode?: "stand" | "sit" | "stroll" | "march"; phase?: number; tilt?: number; headTilt?: number; wave?: number; prop?: Prop; acc?: Acc[]; t?: number; umb?: string };
+export type Acc = "gloves" | "muscle" | "headset" | "nonla" | "umbrella" | "raincoat" | "tears" | "phone" | "goldbag" | "gembox" | "cup" | "paper" | "sweat" | "zzz" | "glow" | "ring" | "flex" | "box" | "ticket" | "mega" | "xoi";
+export type Pose = { expr: Expr; blink?: boolean; mode?: "stand" | "sit" | "stroll" | "march"; phase?: number; tilt?: number; headTilt?: number; wave?: number; prop?: Prop; acc?: Acc[]; t?: number; umb?: string; side?: 1 | -1; reach?: [number, number]; num?: string };
 
 export class Actor {
   root = new THREE.Group();
@@ -40,11 +46,22 @@ export class Actor {
     if (k !== this.key) {
       this.key = k; const g = this.g; g.setTransform(1, 0, 0, 1, 0, 0); g.clearRect(0, 0, 600, 1000);
       const pen = new Pen(g), acc = p.acc ?? [];
+      const long = !!this.o.long && !acc.includes("raincoat");
+      if (p.side) { // nhìn nghiêng (quay mặt về phải; side = -1 thì lật gương): dùng cho cảnh hai người đối thoại, dắt xe
+        if (p.side < 0) { g.translate(600, 0); g.scale(-1, 1); }
+        if (long) { const G0 = bodyFront(pen, this.o, { expr: "neutral", mode: "stand", seed: this.seed }) as G; g.clearRect(0, 0, 600, 1000); const { hc, crown, chin, W, HH } = G0, hx = 304;
+          g.fillStyle = this.o.hair ?? "#1c1719"; g.strokeStyle = INK; g.lineWidth = 6; g.lineJoin = "round"; g.beginPath(); g.moveTo(hx - W * 0.1, crown + 6); g.quadraticCurveTo(hx - W * 0.72, hc - (hc - crown) * 0.5, hx - W * 0.62, chin); g.quadraticCurveTo(hx - W * 0.66, chin + 0.42 * HH, hx - W * 0.3, chin + 0.5 * HH); g.quadraticCurveTo(hx - W * 0.02, chin + 0.3 * HH, hx - W * 0.05, hc); g.closePath(); g.fill(); g.stroke(); }
+        bodySide(pen, this.o, { expr: p.expr, blink: p.blink ? 1 : 0, mode: p.mode === "stroll" || p.mode === "march" ? "march" : "stand", phase: p.phase ?? 0, stomp: 0.35, stride: 0.55, seed: this.seed, ...(p.reach ? { reach: true, pose: 1, hand: p.reach } : {}) });
+        g.setTransform(1, 0, 0, 1, 0, 0); this.t.needsUpdate = true;
+      } else {
+      const fo = { expr: p.expr, blink: p.blink ? 1 : 0, mode: p.mode ?? "stand", seed: this.seed, wave: p.wave, phase: p.phase ?? 0, tilt: p.tilt ?? 0, headTilt: p.headTilt ?? 0,
+        prop: p.prop ?? (acc.includes("flex") || acc.includes("box") ? "none" : acc.some((a) => a === "phone" || a === "goldbag" || a === "cup" || a === "gembox" || a === "paper" || a === "xoi") ? (acc.includes("gembox") || acc.includes("paper") ? "hold2" : "hold") : acc.includes("umbrella") || acc.includes("ticket") || acc.includes("mega") ? "up" : null) } as const;
+      if (long) { const G0 = bodyFront(pen, this.o, fo as never); g.clearRect(0, 0, 600, 1000); if (G0) longHair(g, G0 as G, this.o.hair ?? "#1c1719", p.mode === "sit"); }
       if (acc.includes("umbrella")) umbrellaTop(g, p.umb ?? "#2b4f8a", -1);
       const G = bodyFront(pen, this.o, { expr: p.expr, blink: p.blink ? 1 : 0, mode: p.mode ?? "stand", seed: this.seed, wave: p.wave, phase: p.phase ?? 0, tilt: p.tilt ?? 0, headTilt: p.headTilt ?? 0,
         prop: p.prop ?? (acc.some((a) => a === "phone" || a === "goldbag" || a === "cup" || a === "gembox" || a === "paper") ? (acc.includes("gembox") || acc.includes("paper") ? "hold2" : "hold") : acc.includes("umbrella") ? "up" : null) });
-      if (G) drawAcc(g, pen, G, acc, p.t ?? 0, p.umb);
-      this.t.needsUpdate = true;
+      if (G) { drawAcc(g, pen, G, acc, p.t ?? 0, p.umb, p.num, this.o.skin ?? "#f3cfa8"); }
+      this.t.needsUpdate = true; }
     }
     (this.card.material as THREE.MeshBasicMaterial).color.copy(tint);
     const wp = this.root.getWorldPosition(new THREE.Vector3());
@@ -62,7 +79,37 @@ function umbrellaTop(g: CanvasRenderingContext2D, col: string, _s: number) {
   g.strokeStyle = "rgba(255,255,255,.35)"; g.lineWidth = 5; for (const x of [170, 300, 430]) { g.beginPath(); g.moveTo(300, 52); g.quadraticCurveTo(x, 90, x, 146); g.stroke(); }
   g.restore();
 }
-function drawAcc(g: CanvasRenderingContext2D, p: Pen, G: G, acc: Acc[], t: number, _umb?: string) {
+/** tóc dài nữ: mảng tóc sau lưng xoã qua vai (vẽ trước thân) + hai lọn ôm má (vẽ sau thân) */
+function longHair(g: CanvasRenderingContext2D, G: G, col: string, sit: boolean) { const { hc, crown, chin, W, HH } = G, bot = chin + (sit ? 0.42 : 0.55) * HH;
+  g.save(); g.lineJoin = "round"; g.fillStyle = col; g.strokeStyle = INK; g.lineWidth = 6; g.beginPath(); g.moveTo(300 - W * 0.56, hc - (hc - crown) * 0.3);
+  g.quadraticCurveTo(300 - W * 0.82, chin, 300 - W * 0.7, bot); g.quadraticCurveTo(300, bot + 0.07 * HH, 300 + W * 0.7, bot); g.quadraticCurveTo(300 + W * 0.82, chin, 300 + W * 0.56, hc - (hc - crown) * 0.3); g.closePath(); g.fill(); g.stroke(); g.restore(); }
+function longLocks(g: CanvasRenderingContext2D, G: G, col: string) { const { hc, chin, W, HH, u } = G;
+  g.save(); g.lineJoin = "round"; g.fillStyle = col; g.strokeStyle = INK; g.lineWidth = 4;
+  for (const s of [-1, 1]) { g.beginPath(); g.moveTo(300 + s * W * 0.5, hc - 14 * u); g.quadraticCurveTo(300 + s * W * 0.62, chin, 300 + s * W * 0.5, chin + 0.3 * HH); g.quadraticCurveTo(300 + s * W * 0.45, chin + 0.16 * HH, 300 + s * W * 0.475, hc + 4 * u); g.closePath(); g.fill(); g.stroke(); }
+  g.restore(); }
+function drawAcc(g: CanvasRenderingContext2D, p: Pen, G: G, acc: Acc[], t: number, _umb?: string, num?: string, skin = "#f3cfa8") {
+  if (acc.includes("flex")) { // dân gym khoe cơ: hai tay gồng, bắp tay to phồng theo nhịp
+    const { chin, tcx, Ta, HH, u } = G, k = 0.5 + 0.5 * Math.sin(t * 5); g.save(); g.lineCap = "round"; g.lineJoin = "round";
+    for (const s of [-1, 1]) { const S = [tcx + s * Ta * 0.92, chin + 0.13 * HH], E = [tcx + s * Ta * 2.05, chin + (0.1 - 0.05 * k) * HH], Fz = [tcx + s * Ta * 1.6, chin - (0.32 + 0.05 * k) * HH];
+      for (const [w, c] of [[30 * u, INK], [24 * u, skin]] as const) { g.strokeStyle = c; g.lineWidth = w; g.beginPath(); g.moveTo(S[0], S[1]); g.lineTo(E[0], E[1]); g.lineTo(Fz[0], Fz[1]); g.stroke(); }
+      g.fillStyle = skin; g.strokeStyle = INK; g.lineWidth = 4; g.beginPath(); g.ellipse((S[0] + E[0]) / 2, (S[1] + E[1]) / 2 - (10 + 8 * k) * u, 26 * u, (17 + 7 * k) * u, s * 0.1, 0, 7); g.fill(); g.stroke();
+      g.beginPath(); g.arc(Fz[0], Fz[1], 13 * u, 0, 7); g.fill(); g.stroke();
+      g.strokeStyle = "rgba(255,255,255,.75)"; g.lineWidth = 3; g.beginPath(); g.arc((S[0] + E[0]) / 2 - s * 4 * u, (S[1] + E[1]) / 2 - (14 + 8 * k) * u, 12 * u, Math.PI * 1.1, Math.PI * 1.6); g.stroke(); }
+    g.restore(); }
+  if (acc.includes("box")) { // dân boxing đấm gió: tay thủ che cằm, tay kia tung thẳng, đổi tay liên tục + vệt gió
+    const { chin, tcx, Ta, HH, u } = G, ph = (t * 3.2) % 2, s = ph < 1 ? 1 : -1, e = Math.sin(Math.PI * (ph % 1)); g.save(); g.lineCap = "round"; g.lineJoin = "round";
+    const arm = (S: number[], E: number[], Fz: number[], big: boolean) => { for (const [w, c] of [[24 * u, INK], [18 * u, skin]] as const) { g.strokeStyle = c; g.lineWidth = w; g.beginPath(); g.moveTo(S[0], S[1]); g.lineTo(E[0], E[1]); g.lineTo(Fz[0], Fz[1]); g.stroke(); }
+      g.fillStyle = "#d8212f"; g.strokeStyle = INK; g.lineWidth = 4; g.beginPath(); g.ellipse(Fz[0], Fz[1], (big ? 21 : 17) * u, (big ? 18 : 15) * u, 0, 0, 7); g.fill(); g.stroke(); g.fillStyle = "#fff"; g.fillRect(Fz[0] - 9 * u, Fz[1] - 3 * u, 18 * u, 5 * u); };
+    arm([tcx - s * Ta * 0.9, chin + 0.13 * HH], [tcx - s * Ta * 1.35, chin + 0.36 * HH], [tcx - s * Ta * 0.55, chin + 0.04 * HH], false);
+    const fx = tcx + s * Ta * (1.2 + 1.9 * e); arm([tcx + s * Ta * 0.9, chin + 0.13 * HH], [tcx + s * Ta * (1.3 + 0.7 * e), chin + (0.3 - 0.14 * e) * HH], [fx, chin + (0.08 + 0.06 * e) * HH], true);
+    if (e > 0.45) { g.strokeStyle = "rgba(255,255,255,.9)"; g.lineWidth = 5; for (const dy of [-22, 0, 22]) { g.beginPath(); g.moveTo(fx + s * 30 * u, chin + 0.12 * HH + dy * u); g.lineTo(fx + s * (52 + (dy ? 0 : 14)) * u, chin + 0.12 * HH + dy * u * 1.3); g.stroke(); } }
+    g.restore(); }
+  if (acc.includes("ticket")) { const R2 = G.hands[G.hands.length - 1], x = R2[0], y = R2[1], u = G.u; g.save(); g.translate(x, y - 22 * u); g.rotate(0.08); g.fillStyle = "#fffbe8"; g.strokeStyle = INK; g.lineWidth = 4; g.fillRect(-26 * u, -24 * u, 52 * u, 40 * u); g.strokeRect(-26 * u, -24 * u, 52 * u, 40 * u);
+    g.fillStyle = "#c8202f"; g.font = `900 ${Math.round(26 * u)}px 'DejaVu Sans'`; g.textAlign = "center"; g.fillText(num ?? "102", 0, 8 * u); g.restore(); p.dot(x, y, 5.5 * u); }
+  if (acc.includes("mega")) { const R2 = G.hands[G.hands.length - 1], x = R2[0], y = R2[1], u = G.u; g.save(); g.fillStyle = "#e9e6df"; g.strokeStyle = INK; g.lineWidth = 4; g.beginPath(); g.moveTo(x - 6 * u, y - 10 * u); g.lineTo(x + 46 * u, y - 30 * u); g.lineTo(x + 46 * u, y + 14 * u); g.lineTo(x - 6 * u, y - 2 * u); g.closePath(); g.fill(); g.stroke();
+    g.fillStyle = "#c8202f"; g.fillRect(x - 14 * u, y - 12 * u, 10 * u, 14 * u); g.strokeRect(x - 14 * u, y - 12 * u, 10 * u, 14 * u);
+    const k = (t * 3) % 1; g.strokeStyle = `rgba(255,255,255,${1 - k})`; g.lineWidth = 4; for (const r of [14, 26]) { g.beginPath(); g.arc(x + 50 * u, y - 8 * u, (r + k * 12) * u, -0.7, 0.7); g.stroke(); } g.restore(); p.dot(x, y, 5.5 * u); }
+  if (acc.includes("xoi")) { const R2 = G.hands[G.hands.length - 1], x = R2[0], y = R2[1], u = G.u; g.save(); g.fillStyle = "#3f8a3a"; g.strokeStyle = INK; g.lineWidth = 4; g.beginPath(); g.ellipse(x, y - 6 * u, 22 * u, 13 * u, 0, 0, 7); g.fill(); g.stroke(); g.fillStyle = "#f6d24a"; g.beginPath(); g.ellipse(x, y - 11 * u, 15 * u, 9 * u, 0, Math.PI, 0); g.fill(); g.stroke(); g.restore(); p.dot(x, y, 5.5 * u); }
   const { hc, crown, W, u, chin, tcx, Ta, HH } = G; const R = G.hands[G.hands.length - 1] ?? [tcx + 40, chin + 60], L = G.hands[0] ?? R;
   if (acc.includes("umbrella")) { g.save(); g.strokeStyle = INK; g.lineWidth = 7; g.beginPath(); g.moveTo(300, 60); g.lineTo(R[0] - 6, R[1]); g.stroke(); g.restore(); p.dot(R[0], R[1], 5.5 * u); }
   if (acc.includes("raincoat")) { // áo mưa: thân áo trong suốt có khoá kéo + mũ trùm ôm sát đầu, dây rút dưới cằm

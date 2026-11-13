@@ -8,7 +8,7 @@ import { EffectComposer } from "@react-three/postprocessing";
 import { BlendFunction, BloomEffect, ToneMappingEffect, ToneMappingMode } from "postprocessing";
 import { InkPass, noInkFallback, NOINK } from "../pho/ink";
 import { GradeEffect } from "../pho/grade";
-import { Actor, Pose, DO, NGAN, VEST, CLERK, ME2, crowd } from "./cast2";
+import { Actor, Pose, DO, NGAN, VEST, CLERK, ME2, GYM, BOXER, XOI, crowd } from "./cast2";
 import { buildRoom, buildStreet, buildShop, buildHue, buildBenThanh, buildHoGuom, buildVilla, rainStreaks, RX, SX, IX, HX, BX, GX, VX, Screen } from "./sets";
 import { applyLight, GR, LK, L } from "./look";
 import { F } from "./cards";
@@ -84,13 +84,13 @@ const Inner: React.FC<{ set: SetKey; runs: Run[] }> = ({ set, runs }) => {
     const actors: Record<string, Actor> = {};
     keys.delete("bike"); keys.delete("boat");
     for (const k of keys) {
-      const o = k === "tan" ? DO : k === "ngan" ? NGAN : k === "vest" ? VEST : k === "clerk" ? CLERK : k === "me" ? ME2 : crowd(parseInt(k.slice(1)) || 0);
-      const h = k === "tan" ? 1.7 : k === "ngan" ? 1.58 : k === "vest" ? 1.76 : k === "me" ? 1.48 : 1.55 + ((parseInt(k.slice(1)) || 0) % 5) * 0.05;
+      const o = k === "tan" ? DO : k === "ngan" ? NGAN : k === "vest" ? VEST : k === "clerk" ? CLERK : k === "me" ? ME2 : k === "gym" ? GYM : k === "gym2" ? { ...GYM, jacket: "#f4f4f2", skin: "#d9a77e", hair: "#3a2a20" } : k === "boxer" ? BOXER : k === "xoi" ? XOI : crowd(parseInt(k.slice(1)) || 0);
+      const h = k === "gym" || k === "gym2" ? 1.82 : k === "tan" ? 1.7 : k === "ngan" ? 1.58 : k === "vest" ? 1.76 : k === "me" ? 1.48 : 1.55 + ((parseInt(k.slice(1)) || 0) % 5) * 0.05;
       const a = new Actor(o, h, k === "tan" ? 3 : k === "ngan" ? 9 : 5 + (parseInt(k.slice(1)) || 0) * 3); actors[k] = a; root.add(a.root); a.root.visible = false;
     }
     const extras = buildExtras(set, root);
     noInkFallback(root);
-    return { extras, root, sun, skyMat, sky, room, shop, rain, actors, bike, bike0: bike ? bike.position.clone() : null };
+    return { extras, root, sun, skyMat, sky, room, shop, rain, actors, bike, bike0: bike ? bike.position.clone() : null, bikeR: bike ? bike.rotation.y : 0 };
   }, [set]);
   const fx = useMemo(() => ({
     ink: new InkPass(scene, camera as THREE.PerspectiveCamera),
@@ -115,8 +115,8 @@ const Inner: React.FC<{ set: SetKey; runs: Run[] }> = ({ set, runs }) => {
   const tint = new THREE.Color(L[s.light].tint);
   W.extras(f / 30, cam, tint, !!s.jam);
   for (const a of Object.values(W.actors)) a.root.visible = false;
-  if (W.bike && W.bike0) W.bike.position.copy(W.bike0);
-  for (const c of s.cast) { if ((c.a === "bike" || c.a === "boat") && W.bike) { const p = c.to ? lerpV(c.p, c.to, Math.min(1, t / d)) : new THREE.Vector3(...c.p); W.bike.position.set(p.x, p.y, p.z); continue; }
+  if (W.bike && W.bike0) { W.bike.position.copy(W.bike0); W.bike.rotation.y = W.bikeR; }
+  for (const c of s.cast) { if ((c.a === "bike" || c.a === "boat") && W.bike) { const p = c.to ? lerpV(c.p, c.to, Math.min(1, t / d)) : new THREE.Vector3(...c.p); W.bike.position.set(p.x, p.y, p.z); if (c.a === "bike" && c.to) W.bike.rotation.y = c.to[0] < c.p[0] ? -Math.PI / 2 : Math.PI / 2; continue; }
     const a = W.actors[c.a]; if (!a) continue; a.root.visible = true; const p = c.to ? lerpV(c.p, c.to, Math.min(1, t / d)) : new THREE.Vector3(...c.p); a.root.position.set(p.x + X, p.y, p.z); a.pose(c.pose(t, d), cam, tint); }
   return (
     <>
