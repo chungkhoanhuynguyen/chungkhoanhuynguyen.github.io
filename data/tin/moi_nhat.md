@@ -1,8 +1,11 @@
-# Tin nóng 2026-11-13 (tự động, 270 tin từ 6 nguồn) – NV1B chọn 1–2 tin điểm cao làm kênh C
+# Tin nóng 2026-11-14 (tự động, 270 tin từ 6 nguồn) – NV1B chọn 1–2 tin điểm cao làm kênh C
 
-- **[7] Ngoại trưởng Rubio nêu lý do Mỹ không nối lại chiến dịch tấn công Iran** – VnExpress Thế giới · Wed, 11 Nov 2026
-  Ngoại trưởng Rubio nói đòn trừng phạt và lệnh phong tỏa cảng với Iran đang phát huy hiệu quả tốt đến mức không cần tiến hành chiến dịch quân sự quy mô lớn.
-  https://vnexpress.net/ngoai-truong-rubio-neu-ly-do-my-khong-noi-lai-chien-dich-tan-cong-iran-5143553.html
+- **[6] Mỹ lên tiếng trước tin Iran tấn công trạm radar cảnh báo sớm ở Bahrain** – Tuổi Trẻ Thế giới · 11/13/2026 10:07
+  Quân đội Mỹ bác bỏ tuyên bố của Lực lượng Vệ binh Cách mạng Hồi giáo Iran (IRGC) về việc đã tấn công một trạm radar cảnh báo sớm của Mỹ tại Bahrain.
+  https://tuoitre.vn/my-len-tieng-truoc-tin-iran-tan-cong-tram-radar-canh-bao-som-o-bahrain-100261113214803178.htm
+- **[6] Fed cảnh báo AI có thể gây cú sốc lớn cho thị trường việc làm Mỹ** – Tuổi Trẻ Thế giới · 11/13/2026 6:28:
+  Thống đốc Fed cảnh báo AI có thể thay thế lao động trên diện rộng, xáo trộn thị trường việc làm, tăng bất bình đẳng.
+  https://tuoitre.vn/fed-canh-bao-ai-co-the-gay-cu-soc-lon-cho-thi-truong-viec-lam-my-100261113155136535.htm
 - **[6] Giá vàng hôm nay 13-11: USD tăng vọt, vàng thế giới giảm xuống dưới 3.900 USD/ounce** – Tuổi Trẻ Kinh doanh · 11/13/2026 9:26:
   Đồng USD tăng lên mức cao nhất trong 19 tháng, cùng kỳ vọng Fed tiếp tục nâng lãi suất đã đẩy giá vàng thế giới giảm hơn 100 USD/ounce, về vùng 3.885 USD/ounce trong phiên sáng 13-11.
   https://tuoitre.vn/gia-vang-hom-nay-13-11-usd-tang-vot-vang-the-gioi-giam-xuong-duoi-3900-usd-ounce-100261113075510428.htm
@@ -18,12 +21,15 @@
 - **[5] Ngân hàng tìm cách ngăn trợ lý AI can thiệp tài khoản** – VnExpress Kinh doanh · Thu, 12 Nov 2026
   Các ngân hàng lớn ở Anh, Mỹ bắt đầu chặn hoặc siết quyền truy cập tài khoản khách hàng của các trợ lý AI do lo ngại chúng vượt kiểm soát.
   https://vnexpress.net/ngan-hang-tim-cach-ngan-tro-ly-ai-can-thiep-tai-khoan-5143403.html
+- **[5] Trung Quốc cảnh báo Mỹ không siết chặt kiểm soát xuất khẩu sau vụ ông Jensen Huang** – Tuổi Trẻ Thế giới · 11/13/2026 4:23:
+  Ngày 13-11, Trung Quốc cảnh báo Mỹ không áp thêm các biện pháp kiểm soát xuất khẩu chất bán dẫn sau vụ bê bối liên quan đến Nvidia, tập đoàn hàng đầu trong lĩnh vực chip trí tuệ nhân tạo (AI).
+  https://tuoitre.vn/trung-quoc-canh-bao-my-khong-siet-chat-kiem-soat-xuat-khau-sau-vu-ong-jensen-huang-100261113155206518.htm
 - **[5] Iran tấn công đảo của Oman, tung cảnh báo trả đũa nhằm vào Mỹ** – Thanh Niên Thế giới · Thu, 12 Nov 26 1
   Iran tuyên bố đã tấn công một đảo nhỏ thuộc Oman, đồng thời cảnh báo mở rộng các mục tiêu trả đũa nhằm vào căn cứ Mỹ ở châu Âu và lên án việc Washington treo thưởng tiền cho thông tin về chương trình hạt nhân nước này.
   https://thanhnien.vn/iran-tan-cong-dao-cua-oman-tung-canh-bao-tra-dua-nham-vao-my-185261112111002768.htm
-- **[5] Iran tuyên bố không để vật liệu hạt nhân làm giàu rời khỏi đất nước** – Thanh Niên Thế giới · Wed, 11 Nov 26 2
-  Iran tuyên bố sẽ không chuyển vật liệu hạt nhân đã làm giàu ra nước ngoài, đồng thời cảnh báo sẽ đáp trả nhằm vào các căn cứ của Mỹ ở xa nếu bị tấn công.
-  https://thanhnien.vn/iran-tuyen-bo-khong-de-vat-lieu-hat-nhan-lam-giau-roi-khoi-dat-nuoc-185261111194258867.htm
+- **[4] Con đường cấm xe hai lần một năm để phục vụ rắn** – VnExpress Thế giới · Fri, 13 Nov 2026
+  Xe cộ bị cấm lưu thông qua tuyến đường Snake Road tại bang Illinois hai lần mỗi năm nhằm bảo vệ loài rắn và bò sát trong mùa di cư.
+  https://vnexpress.net/con-duong-cam-xe-hai-lan-mot-nam-de-phuc-vu-ran-5144325.html
 - **[4] Hai bộ trưởng Mỹ 'bất đồng' vì công ty của Alice Huang** – VnExpress Thế giới · Fri, 13 Nov 2026
   Truyền thông Mỹ cho hay Bộ trưởng Tài chính Bessent đã chất vấn Bộ trưởng Thương mại Lutnick vì không đưa công ty Megaspeed của Alice Huang vào diện tiềm ẩn rủi ro.
   https://vnexpress.net/hai-bo-truong-my-bat-dong-vi-cong-ty-cua-alice-huang-5143976.html
@@ -48,30 +54,24 @@
 - **[4] Iran dọa tấn công căn cứ Mỹ ở châu Âu** – VnExpress Thế giới · Thu, 12 Nov 2026
   Quan chức an ninh hàng đầu Iran Mohsen Rezaei đe dọa tập kích căn cứ Mỹ ngoài Trung Đông, kể cả ở châu Âu, nếu chúng được dùng để tấn công nước này.
   https://vnexpress.net/iran-doa-tan-cong-can-cu-my-o-chau-au-5143612.html
-- **[4] Biệt đội 'Cổng Sắt' của Mỹ tìm cách bóp nghẹt Iran** – VnExpress Thế giới · Thu, 12 Nov 2026
-  Quân đội Mỹ lập biệt đội Cổng Sắt nhằm phong tỏa hoàn toàn Iran, nhưng mục tiêu này được cho là khó thành vì những rào cản chính trị và thực địa.
-  https://vnexpress.net/biet-doi-cong-sat-cua-my-tim-cach-bop-nghet-iran-5142969.html
 - **[4] LPBank vào top 2 ngân hàng niêm yết hiệu quả 2026** – VnExpress Kinh doanh · Thu, 12 Nov 2026
   LPBank xếp thứ hai nhóm ngành ngân hàng trong Top 50 Công ty niêm yết kinh doanh hiệu quả nhất Việt Nam 2026, với lợi nhuận trước thuế năm 2025 đạt 14.269 tỷ đồng và ROE 25,2%.
   https://vnexpress.net/lpbank-vao-top-2-ngan-hang-niem-yet-hieu-qua-2026-5143845.html
-- **[4] Giá vàng thế giới giảm mạnh, về sát 4.000 USD** – VnExpress Kinh doanh · Wed, 11 Nov 2026
-  Mỗi ounce vàng có thời điểm mất gần 130 USD, sau khi Mỹ công bố số liệu lạm phát cao hơn dự kiến.
-  https://vnexpress.net/gia-vang-the-gioi-giam-manh-ve-sat-4-000-usd-5143168.html
+- **[4] Đến Trung Quốc dự APEC: Chuyến công du khó khăn của bà Takaichi kể từ khi nhậm chức** – Tuổi Trẻ Thế giới · 11/13/2026 7:46:
+  Sau một năm căng thẳng, liệu chuyến đi Thâm Quyến có giúp bà Takaichi mở ra cơ hội đối thoại với ông Tập?
+  https://tuoitre.vn/den-trung-quoc-du-apec-chuyen-cong-du-kho-khan-cua-ba-takaichi-ke-tu-khi-nham-chuc-10026111319310778.htm
+- **[4] Iran tuyên bố có tên lửa đánh xa 1.500km, gọi Mỹ là 'con hổ giấy'** – Tuổi Trẻ Thế giới · 11/13/2026 5:50:
+  Iran cảnh báo sẽ đối đầu với các mối đe dọa ở mọi cấp độ và không giới hạn địa lý.
+  https://tuoitre.vn/iran-tuyen-bo-co-ten-lua-danh-xa-1500km-goi-my-la-con-ho-giay-100261113171743474.htm
+- **[4] Iran tuyên bố nối lại tấn công cơ sở quân sự Mỹ ở vùng Vịnh sau hơn 2 tháng** – Tuổi Trẻ Thế giới · 11/13/2026 12:30
+  Vụ tấn công nhằm trả đũa việc Mỹ không kích vào một tháp viễn thông ở miền Nam Iran hôm 12-11.
+  https://tuoitre.vn/iran-tuyen-bo-noi-lai-tan-cong-co-so-quan-su-my-o-vung-vinh-sau-hon-2-thang-100261113115532907.htm
 - **[4] Ông Trump nói Mỹ không cần thỏa thuận với Iran, yêu cầu ông Vance lo việc khác** – Tuổi Trẻ Thế giới · 11/13/2026 8:52:
   Ông Trump nói Mỹ không cần đạt thỏa thuận với Iran, đồng thời chỉ đạo ông Vance ‘dồn sự chú ý’ qua các vấn đề khác.
   https://tuoitre.vn/ong-trump-noi-my-khong-can-thoa-thuan-voi-iran-yeu-cau-ong-vance-lo-viec-khac-100261113075707681.htm
 - **[4] Lộ diện 'Con đường Tơ lụa trong không gian' với 20 vệ tinh AI của Trung Quốc** – Tuổi Trẻ Thế giới · 11/12/2026 7:09:
   Các vệ tinh có thể tự nhận diện tàu thuyền, công trình và phát hiện lũ lụt, giúp rút ngắn thời gian xử lý dữ liệu.
   https://tuoitre.vn/lo-dien-con-duong-to-lua-trong-khong-gian-voi-20-ve-tinh-ai-cua-trung-quoc-100261112162755493.htm
-- **[4] Trung Quốc nhắn nhủ Mỹ vụ CEO Nvidia Jensen Huang** – Tuổi Trẻ Thế giới · 11/12/2026 3:40:
-  Trung Quốc nói Mỹ nên ngừng bịa đặt những câu chuyện 'gián điệp' như vụ CEO Nvidia Jensen Huang để lấy cớ áp lệnh phong tỏa công nghệ.
-  https://tuoitre.vn/trung-quoc-nhan-nhu-my-vu-ceo-nvidia-jensen-huang-100261112145742288.htm
-- **[4] Bộ trưởng Chiến tranh Mỹ khen thưởng cho tiêu binh từng 'chấn chỉnh' tác phong của mình** – Thanh Niên Thế giới · Fri, 13 Nov 26 1
-  Một binh sĩ Mỹ được Bộ trưởng Chiến tranh Pete Hegseth được tặng huân chương tuyên dương, sau khi người này 'chấn chỉnh' ông và những người đi cùng vì cười nói gần Mộ Chiến sĩ vô danh.
-  https://thanhnien.vn/bo-truong-chien-tranh-my-khen-thuong-cho-tieu-binh-tung-chan-chinh-tac-phong-cua-minh-18526111310295238.htm
-- **[4] Tổng thống Putin nói gì khi gặp hai đặc phái viên Mỹ?** – Thanh Niên Thế giới · Thu, 12 Nov 26 2
-  Tổng thống Nga Vladimir Putin ngày 12.11 đã có cuộc gặp với hai đặc phái viên Mỹ Steve Witkoff và Jared Kushner tại Điện Kremlin, tiếp nối hai ngày đàm phán giữa Nga, Ukraine với sự trung gian của Mỹ tại Abu Dhabi (UAE) 
-  https://thanhnien.vn/tong-thong-putin-noi-gi-khi-gap-hai-dac-phai-vien-my-185261112223126322.htm
-- **[4] Quân đội Đức cấm dùng máy bay không người lái do Trung Quốc sản xuất** – Thanh Niên Thế giới · Thu, 12 Nov 26 1
-  Quân đội Đức đã cấm sử dụng máy bay không người lái (UAV) do Trung Quốc sản xuất, kể cả cho mục đích huấn luyện, và đang thay thế chúng bằng các mẫu UAV của châu Âu.
-  https://thanhnien.vn/quan-doi-duc-cam-dung-may-bay-khong-nguoi-lai-do-trung-quoc-san-xuat-185261112132537245.htm
+- **[4] Doanh nghiệp bán hàng online 'sợ sai' vì hóa đơn, thuế** – Tuổi Trẻ Kinh doanh · 11/13/2026 5:07:
+  Buổi đối thoại giữa gần 300 doanh nghiệp và chính quyền TP.HCM sáng 13-11 trở thành diễn đàn "hỏi thẳng - đáp thật" đầy sôi nổi.
+  https://tuoitre.vn/doanh-nghiep-ban-hang-online-so-sai-vi-hoa-don-thue-100261113143448559.htm
