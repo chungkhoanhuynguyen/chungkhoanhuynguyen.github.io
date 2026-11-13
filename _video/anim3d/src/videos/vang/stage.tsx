@@ -98,7 +98,7 @@ const Inner: React.FC<{ set: SetKey; runs: Run[] }> = ({ set, runs }) => {
     tone: new ToneMappingEffect({ mode: ToneMappingMode.NEUTRAL }),
     grade: new GradeEffect(GR.day, 1),
   }), [camera, scene]);
-  useEffect(() => () => fx.ink.dispose(), [fx]);
+  useEffect(() => () => { const k = fx.ink as unknown as { dispose?: () => void }; if (typeof k.dispose === "function") k.dispose(); }, [fx]);
   const run = runs.find((r) => f >= r.a && f < r.b) ?? runs[runs.length - 1];
   const s = run.s, X = OFF[set], d = (run.b - run.a) / 30, t = (f - run.a) / 30, u = s.ease === "lin" ? Math.min(1, t / d) : s.ease === "out" ? outE(t / d) : sm(t / d);
   const cam = camera as THREE.PerspectiveCamera;
