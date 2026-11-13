@@ -1,0 +1,29 @@
+name: Giong doc video ke chuyen 3D
+on:
+  workflow_dispatch:
+    inputs:
+      kb: {default: "_video/anim3d/vang/kich_ban.json"}
+      tag: {default: "vang-voice"}
+jobs:
+  tts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    permissions: {contents: write}
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 1}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/huggingface
+            ~/.cache/pip
+          key: vieneu-v1
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+      - run: pip install -q vieneu "onnxruntime==1.22.1" numpy
+      - run: python _video/anim3d/vang/tts.py "${{ inputs.kb }}" out
+        env: {HN_VOICE_JSON: "${{ secrets.HN_VOICE_JSON }}"}
+      - run: |
+          gh release create ${{ inputs.tag }} -R ${{ github.repository }} -t "${{ inputs.tag }}" -n "giong doc" out/voice.wav out/timing.json || gh release upload ${{ inputs.tag }} -R ${{ github.repository }} out/voice.wav out/timing.json --clobber
+        env: {GH_TOKEN: "${{ github.token }}"}
