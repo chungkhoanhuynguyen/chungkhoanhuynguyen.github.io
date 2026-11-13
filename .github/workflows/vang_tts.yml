@@ -22,8 +22,14 @@ jobs:
           key: vieneu-v1
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
       - run: pip install -q vieneu "onnxruntime==1.22.1" numpy
+      - name: Lay kho cau da doc
+        run: gh release download tts-cache -R ${{ github.repository }} -p tts_cache.npz || echo "chua co kho"
+        env: {GH_TOKEN: "${{ github.token }}"}
       - run: python _video/anim3d/vang/tts.py "${{ inputs.kb }}" out
-        env: {HN_VOICE_JSON: "${{ secrets.HN_VOICE_JSON }}"}
+        env: {HN_VOICE_JSON: "${{ secrets.HN_VOICE_JSON }}", TTS_CACHE: tts_cache.npz}
+      - name: Cat kho cau da doc
+        run: gh release create tts-cache -R ${{ github.repository }} -t tts-cache -n "kho cau giong doc da doc (dung lai khi sua kich ban)" tts_cache.npz || gh release upload tts-cache -R ${{ github.repository }} tts_cache.npz --clobber
+        env: {GH_TOKEN: "${{ github.token }}"}
       - run: |
           gh release create ${{ inputs.tag }} -R ${{ github.repository }} -t "${{ inputs.tag }}" -n "giong doc" out/voice.wav out/timing.json || gh release upload ${{ inputs.tag }} -R ${{ github.repository }} out/voice.wav out/timing.json --clobber
         env: {GH_TOKEN: "${{ github.token }}"}

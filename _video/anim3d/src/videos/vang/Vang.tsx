@@ -288,11 +288,11 @@ const QuoteOv: React.FC<{ t: number; at: number }> = ({ t, at }) => { const a = 
       <div style={{ fontSize: 66, color: "#fff", fontWeight: 800, lineHeight: 1.3, marginTop: 24 }}>là thứ mình hiểu rõ, mua có kế hoạch,<br />và không làm người mình thương phải lo lắng.</div></div></AbsoluteFill>; };
 
 // ---------- build segments from the plan + timing ----------
-type GSeg = Seg & { a: number; b: number; id: string };
+type GSeg = Seg & { a: number; b: number; id: string; n: number };
 export const SEGS: GSeg[] = (() => {
   const out: GSeg[] = [];
   for (const p of PLAN) { const S0 = sc(p.id);
-    p.shots.forEach(([j, mk], k) => { const a = k === 0 ? S0.a : S0.sens[j].a - 0.12, nb = k + 1 < p.shots.length ? S0.sens[p.shots[k + 1][0]].a - 0.12 : S0.b; out.push({ ...mk(a), a, b: nb, id: p.id }); }); }
+    p.shots.forEach(([j, mk], k) => { const a = k === 0 ? S0.a : S0.sens[j].a - 0.12, nb = k + 1 < p.shots.length ? S0.sens[p.shots[k + 1][0]].a - 0.12 : S0.b; out.push({ ...mk(a), a, b: nb, id: p.id, n: k }); }); }
   return out;
 })();
 const fr = (s: number) => Math.round(s * FPS);
@@ -355,7 +355,7 @@ export const VangVideo: React.FC = () => {
   );
 };
 // ---------- chuyển cảnh: mỗi lần cắt có lực (đẩy vào / lia ngang kèm nhoè), sang cảnh mới thì chìm tối rồi mở ra ----------
-const CUTF = SEGS.map((x, i) => ({ f: fr(x.a), scene: i > 0 && SEGS[i - 1].id !== x.id, v: i % 3, end: fr(x.b), last: i + 1 >= SEGS.length || SEGS[i + 1].id !== x.id }));
+const CUTF = SEGS.map((x, i) => ({ f: fr(x.a), scene: i > 0 && SEGS[i - 1].id !== x.id, v: (parseInt(x.id.slice(1)) + x.n) % 3, end: fr(x.b), last: i + 1 >= SEGS.length || SEGS[i + 1].id !== x.id }));
 const curCut = (f: number) => { let c = CUTF[0]; for (const x of CUTF) { if (x.f <= f) c = x; else break; } return c; };
 const FX: React.FC<{ children: React.ReactNode }> = ({ children }) => { const f = useCurrentFrame(), c = curCut(f), dt = (f - c.f) / FPS;
   const e = 1 - Math.pow(1 - Math.min(1, dt / (c.scene ? 0.55 : 0.32)), 3), r = 1 - e;

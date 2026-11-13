@@ -1,59 +1,86 @@
 name: Dung video ke chuyen 3D (vang dinh)
+# Dựng theo từng cảnh, có kho lưu: cảnh nào nội dung không đổi (mã băm giống) thì lấy bản đã dựng ở release <tag>-cache,
+# chỉ cảnh mới/sửa mới phải dựng lại -> sửa vài cảnh mất ~15 phút thay vì dựng cả video.
 on:
   workflow_dispatch:
     inputs:
       comp: {default: "Vang"}
       tag: {default: "vang-video"}
       voice: {default: "vang-voice"}
+permissions: {contents: write}
 jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      groups: ${{ steps.p.outputs.groups }}
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 1, sparse-checkout: _video/anim3d}
+      - id: p
+        working-directory: _video/anim3d
+        run: |
+          gh release view ${{ inputs.tag }}-cache -R ${{ github.repository }} >/dev/null 2>&1 || gh release create ${{ inputs.tag }}-cache -R ${{ github.repository }} -t "${{ inputs.tag }}-cache" -n "kho canh da dung"
+          gh api --paginate "repos/${{ github.repository }}/releases/tags/${{ inputs.tag }}-cache" --jq '.assets[].name' > have.txt || true
+          gh api --paginate "repos/${{ github.repository }}/releases/$(gh api repos/${{ github.repository }}/releases/tags/${{ inputs.tag }}-cache --jq .id)/assets?per_page=100" --jq '.[].name' >> have.txt || true
+          python3 vang/plan_units.py . ${{ inputs.comp }} have.txt 20 plan.json | tee log.txt
+          grep '^GROUPS=' log.txt | sed 's/^GROUPS=/groups=/' >> "$GITHUB_OUTPUT"
+        env: {GH_TOKEN: "${{ github.token }}"}
+      - uses: actions/upload-artifact@v4
+        with: {name: plan, path: _video/anim3d/plan.json, retention-days: 3}
   part:
+    needs: plan
     runs-on: ubuntu-latest
     timeout-minutes: 300
     strategy:
       fail-fast: false
-      matrix: {i: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]}
+      matrix: {i: "${{ fromJSON(needs.plan.outputs.groups) }}"}
     steps:
       - uses: actions/checkout@v4
         with: {fetch-depth: 1, sparse-checkout: _video/anim3d}
-      - uses: actions/setup-node@v4
+      - uses: actions/download-artifact@v4
+        with: {name: plan, path: _video/anim3d}
+      - id: n
+        working-directory: _video/anim3d
+        run: python3 -c "import json;print('n=%d'%len(json.load(open('plan.json'))['groups'][${{ matrix.i }}]))" >> "$GITHUB_OUTPUT"
+      - if: steps.n.outputs.n != '0'
+        uses: actions/setup-node@v4
         with: {node-version: 20}
-      - uses: actions/cache@v4
+      - if: steps.n.outputs.n != '0'
+        uses: actions/cache@v4
         with:
           path: _video/anim3d/node_modules
           key: anim3d-nm-${{ hashFiles('_video/anim3d/package.json') }}
-      - run: sudo apt-get -qq install -y fonts-dejavu-core >/dev/null || true
-      - working-directory: _video/anim3d
+      - if: steps.n.outputs.n != '0'
+        working-directory: _video/anim3d
         run: |
+          sudo apt-get -qq install -y fonts-dejavu-core >/dev/null || true
           npm i --no-audit --no-fund -s
-          python3 vang/cuts.py src/videos/vang/timing.json src/videos/vang/Vang.tsx /tmp/cuts.json ranges.json 20
-          R=$(python3 -c "import json;r=json.load(open('ranges.json'))[${{ matrix.i }}];print(r[0],r[1])")
-          printf -v pad "%02d" ${{ matrix.i }}
-          node render.mjs ${{ inputs.comp }} $R part_$pad.mp4 1
-      - uses: actions/upload-artifact@v4
-        with:
-          name: "part_${{ matrix.i }}"
-          path: _video/anim3d/part_*.mp4
-          retention-days: 3
+          node render_units.mjs plan.json ${{ matrix.i }} units
+          for f in units/*.mp4; do for k in 1 2 3; do gh release upload ${{ inputs.tag }}-cache -R ${{ github.repository }} "$f" --clobber && break; sleep 5; done; done
+        env: {GH_TOKEN: "${{ github.token }}"}
   join:
-    needs: part
+    needs: [plan, part]
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
-    permissions: {contents: write}
     steps:
       - uses: actions/checkout@v4
         with: {fetch-depth: 1, sparse-checkout: _video}
       - uses: actions/setup-python@v5
         with: {python-version: "3.12"}
       - uses: actions/download-artifact@v4
-        with: {path: parts, merge-multiple: true}
+        with: {name: plan, path: .}
       - run: |
           sudo apt-get -qq install -y ffmpeg >/dev/null; pip install -q numpy
-          ls parts | sort | sed "s#^#file 'parts/#; s#\$#'#" > list.txt
+          R=${{ github.repository }}; mkdir -p u
+          python3 -c "import json;[print(u['name']) for u in json.load(open('plan.json'))['units']]" > names.txt
+          gh release download ${{ inputs.tag }}-cache -R $R -D u $(sed 's/^/-p /' names.txt | tr '\n' ' ')
+          miss=0; while read n; do [ -s "u/$n" ] || { echo "THIEU $n"; miss=1; }; done < names.txt; [ $miss = 0 ]
+          sed "s#^#file 'u/#; s#\$#'#" names.txt > list.txt
           ffmpeg -v error -f concat -safe 0 -i list.txt -c copy video.mp4
-          R=${{ github.repository }}
           gh api repos/$R/releases/tags/${{ inputs.voice }} --jq '.assets[]|select(.name=="voice.wav")|.id' | xargs -I{} gh api -H "Accept: application/octet-stream" repos/$R/releases/assets/{} > voice.wav
           A=_video/anim3d; python3 $A/vang/cuts.py $A/src/videos/vang/timing.json $A/src/videos/vang/Vang.tsx cuts.json
           python3 $A/vang/am_thanh.py $A/src/videos/vang/timing.json voice.wav cuts.json mix.wav
           ffmpeg -v error -i video.mp4 -i mix.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -shortest -movflags +faststart ${{ inputs.comp }}.mp4
-          ls -la *.mp4
+          ffprobe -v error -show_entries format=duration -of csv=p=0 ${{ inputs.comp }}.mp4
           gh release create ${{ inputs.tag }} -R $R -t "${{ inputs.tag }}" -n "video ke chuyen 3D" ${{ inputs.comp }}.mp4 || gh release upload ${{ inputs.tag }} -R $R ${{ inputs.comp }}.mp4 --clobber
         env: {GH_TOKEN: "${{ github.token }}"}
