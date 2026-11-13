@@ -13,12 +13,13 @@ def cau(t):
     t = re.sub(r"\s+", " ", t.strip()); return [x.strip() for x in re.findall(r"[^.!?…]+[.!?…]*", t) if x.strip()]
 def nghi(c):
     n = len(c.split())
-    if c.endswith("…"): return 0.62
-    if c.endswith("?"): return 0.55
-    if n <= 6: return 0.6
-    return 0.32
-HOLD = {"S01": 1.2, "S02": 1.6, "S09": 0.9, "S12": 0.9, "S16": 0.8, "S17": 1.6, "S18": 1.0, "S19": 1.4}
-LEAD = {"S01": 1.0, "S02": 0.6, "S17": 0.4}
+    if c.endswith("…"): return 0.7
+    if c.endswith("?"): return 0.65
+    if n <= 6: return 0.72
+    return 0.42
+HOLD = {"S01": 1.4, "S02": 2.0, "S04": 0.8, "S06": 1.2, "S08": 1.0, "S11": 1.0, "S12": 0.8, "S14": 1.0, "S16": 1.4, "S17": 1.4, "S18": 0.8, "S19": 2.2, "S20": 1.0, "S21": 2.4, "S22": 3.5}
+LEAD = {"S01": 1.2, "S02": 0.6, "S08": 1.6, "S19": 0.6, "S21": 1.2}
+TEMPO = 0.95  # đọc chậm lại 5% cho giọng kể chuyện (giữ cao độ)
 parts = []; t = 0.0; tim = []; t0 = time.time()
 for sc in kb["scenes"]:
     lead = LEAD.get(sc["id"], 0.0); parts.append(np.zeros(int(SR * lead), np.float32)); t += lead
@@ -39,6 +40,12 @@ for sc in kb["scenes"]:
     parts.append(np.zeros(int(SR * hold), np.float32)); t += hold
     tim.append({"id": sc["id"], "a": round(s0 - lead, 3), "b": round(t, 3), "sens": sens})
     print(sc["id"], "%.1fs" % (t - s0), "tong %.0fs" % t, "may %.0fs" % (time.time() - t0), flush=True)
-tts.save(np.clip(np.concatenate(parts), -1, 1), os.path.join(out, "voice.wav"))
+tts.save(np.clip(np.concatenate(parts), -1, 1), os.path.join(out, "raw.wav"))
+import subprocess
+subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", os.path.join(out, "raw.wav"), "-af", "atempo=%.3f" % TEMPO, os.path.join(out, "voice.wav")], check=True)
+k = 1 / TEMPO; t *= k
+for sc in tim:
+    sc["a"] = round(sc["a"] * k, 3); sc["b"] = round(sc["b"] * k, 3)
+    for z in sc["sens"]: z["a"] = round(z["a"] * k, 3); z["b"] = round(z["b"] * k, 3)
 json.dump({"total": round(t, 3), "scenes": tim}, open(os.path.join(out, "timing.json"), "w"), ensure_ascii=False, indent=1)
 print("XONG", round(t, 1))
