@@ -70,7 +70,7 @@ export function buildExtras(set: string, root: THREE.Group): Upd {
       const [z0, dir] = lanes[i % lanes.length], isCar = i % 3 === 2, z = isCar ? z0 * 1.25 : z0;
       const veh = isCar ? car(CC[i % CC.length], i % 2 ? "suv" : "sedan") : motorbike(BC[i % BC.length], (["sh", "vision", "wave"] as const)[i % 3]);
       const rd = isCar ? null : rider(i); const grp = new THREE.Group(); grp.add(veh); root.add(grp); if (rd) root.add(rd.root);
-      if (night) { const beam = new THREE.Mesh(new THREE.ConeGeometry(isCar ? 1.6 : 0.9, isCar ? 6 : 4, 16, 1, true), new THREE.MeshBasicMaterial({ color: new THREE.Color(1.2, 1.1, 0.8), transparent: true, opacity: 0.12, depthWrite: false, side: THREE.DoubleSide }));
+      if (false && night) { const beam = new THREE.Mesh(new THREE.ConeGeometry(isCar ? 1.6 : 0.9, isCar ? 6 : 4, 16, 1, true), new THREE.MeshBasicMaterial({ color: new THREE.Color(1.2, 1.1, 0.8), transparent: true, opacity: 0.12, depthWrite: false, side: THREE.DoubleSide }));
         beam.rotation.x = -Math.PI / 2; beam.position.set(0, isCar ? 0.6 : 0.9, isCar ? 5.2 : 2.6); beam.layers.set(NOINK); veh.add(beam); }
       veh.rotation.y = dir > 0 ? Math.PI / 2 : -Math.PI / 2;
       const v = (isCar ? 7 : 6) + r() * 4, off = r() * (spanB - spanA), L = spanB - spanA;

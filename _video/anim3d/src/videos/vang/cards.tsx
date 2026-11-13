@@ -62,15 +62,15 @@ export const ChartCard: React.FC<{ t: number; d: number; title: string; sub: str
   return (
     <AbsoluteFill>
       <Bg t={t} hue={up ? "navy" : "red"} />
-      <div style={{ position: "absolute", left: 160, top: 70, fontFamily: F, color: "#fff", opacity: k, transform: `translateY(${(1 - k) * 20}px)` }}>
+      <div style={{ position: "absolute", left: 160, top: 110, fontFamily: F, color: "#fff", opacity: k, transform: `translateY(${(1 - k) * 20}px)` }}>
         <div style={{ fontSize: 58, fontWeight: 900 }}>{title}</div>
         <div style={{ fontSize: 30, fontWeight: 500, color: "#b8c2d8", marginTop: 4 }}>{sub}</div>
       </div>
-      <div style={{ position: "absolute", right: 170, top: 74, fontFamily: F, textAlign: "right", opacity: k }}>
+      <div style={{ position: "absolute", right: 170, top: 110, fontFamily: F, textAlign: "right", opacity: k }}>
         <div style={{ fontSize: 96, fontWeight: 900, color: col, lineHeight: 1 }}>{vn(last, dec)}</div>
         <div style={{ fontSize: 26, color: "#b8c2d8", fontWeight: 600 }}>{unit}</div>
       </div>
-      <svg width={W} height={H} style={{ position: "absolute", left: 210, top: 280, opacity: k, overflow: "visible" }}>
+      <svg width={W} height={H} style={{ position: "absolute", left: 210, top: 300, opacity: k, overflow: "visible" }}>
         {ticks.map((v, i) => <g key={i}><line x1={P.l} x2={W - P.r} y1={Y(v)} y2={Y(v)} stroke="rgba(255,255,255,.09)" strokeWidth={2} /><text x={P.l - 16} y={Y(v) + 9} fill="#8f9ab3" fontSize={24} fontFamily={F} textAnchor="end">{vn(v, 0)}</text></g>)}
         {data.map((x, i) => (i % Math.ceil(data.length / 8) === 0 || i === data.length - 1) && <text key={i} x={X(i)} y={H - P.b + 42} fill="#8f9ab3" fontSize={24} fontFamily={F} textAnchor="middle">{x[0]}</text>)}
         <polyline points={pts.join(" ") + ` ${hx},${H - P.b} ${X(0)},${H - P.b}`} fill={up ? "rgba(43,209,126,.12)" : "rgba(255,77,94,.12)"} stroke="none" />
@@ -78,7 +78,7 @@ export const ChartCard: React.FC<{ t: number; d: number; title: string; sub: str
         <circle cx={hx} cy={hy} r={13} fill={col} stroke="#fff" strokeWidth={4} />
         {bracket && t > bracket.at && (() => { const a = sm((t - bracket.at) / 0.4), x1 = X(bracket.a), x2 = X(bracket.b), y1 = Y(vals[bracket.a]), y2 = Y(vals[bracket.b]);
           return <g opacity={a}><line x1={x2 + 40} x2={x2 + 40} y1={y1} y2={y2} stroke="#ff4d5e" strokeWidth={6} /><line x1={x1} x2={x2 + 52} y1={y1} y2={y1} stroke="#ff4d5e" strokeWidth={3} strokeDasharray="10 8" />
-            <text x={x2 + 64} y={(y1 + y2) / 2 + 20} fill="#ff4d5e" fontSize={58} fontWeight={900} fontFamily={F}>{bracket.label}</text></g>; })()}
+            <text x={x2 > W - 500 ? x2 - 30 : x2 + 64} y={(y1 + y2) / 2 + 20} textAnchor={x2 > W - 500 ? "end" : "start"} fill="#ff4d5e" fontSize={58} fontWeight={900} fontFamily={F} stroke="#1a0608" strokeWidth={8} paintOrder="stroke">{bracket.label}</text></g>; })()}
         {marks.map((m, j) => { const at = m.at ?? 0; if (n < m.i - 0.01 || t < at) return null; const a = pop((t - Math.max(at, 0.35 + (m.i / (data.length - 1)) * 0)) / 0.35), mx2 = X(m.i), my = Y(vals[m.i]), c = m.col ?? "#f5c518", upL = m.up ?? true;
           return <g key={j} opacity={Math.min(1, a)}><circle cx={mx2} cy={my} r={16 * Math.min(1.2, a)} fill="none" stroke={c} strokeWidth={6} />
             <rect x={mx2 - 150} y={upL ? my - 110 : my + 34} width={300} height={70} rx={16} fill={c} /><text x={mx2} y={upL ? my - 62 : my + 82} textAnchor="middle" fontSize={34} fontWeight={900} fill="#111" fontFamily={F}>{m.label}</text></g>; })}
@@ -244,7 +244,7 @@ export const LastBuyerCard: React.FC<{ t: number; d: number }> = ({ t, d }) => {
         {Array.from({ length: N }).map((_, i) => <div key={i} style={{ width: 120, height: 150, opacity: i < fill ? 1 : 0.18, transform: `scale(${i === fill - 1 ? 1.15 : 1})` }}>
           <div style={{ width: 54, height: 54, borderRadius: "50%", background: i < fill ? "#f5c518" : "#8890a8", margin: "0 auto" }} /><div style={{ width: 90, height: 80, borderRadius: "40px 40px 12px 12px", background: i < fill ? "#f5c518" : "#8890a8", margin: "6px auto 0" }} /></div>)}
       </div>
-      {full && <div style={{ position: "absolute", right: 160, bottom: 230, fontSize: 84, fontWeight: 900, color: "#ff4d5e", transform: `rotate(-4deg) scale(${pop((t - 0.3 - d * 0.55) / 0.35)})` }}>HẾT NGƯỜI MUA MỚI</div>}
+      {full && <div style={{ position: "absolute", right: 160, top: 100, fontSize: 84, fontWeight: 900, color: "#ff4d5e", transform: `rotate(-4deg) scale(${pop((t - 0.3 - d * 0.55) / 0.35)})` }}>HẾT NGƯỜI MUA MỚI</div>}
     </AbsoluteFill>
   );
 };
@@ -270,10 +270,11 @@ export const CtaCard: React.FC<{ t: number; webAt: number }> = ({ t, webAt }) =>
 };
 export const EndCard: React.FC<{ t: number }> = ({ t }) => (
   <AbsoluteFill style={{ background: "#0b1124", justifyContent: "center", alignItems: "center", fontFamily: F, textAlign: "center" }}>
+    <div style={{ position: "absolute", right: 40, bottom: 28, fontSize: 18, color: "#5f6a85", opacity: sm((t - 1.5) / 0.5) }}>Quan điểm cá nhân, không phải khuyến nghị đầu tư</div>
     <div style={{ opacity: sm(t / 0.6), transform: `scale(${0.95 + 0.05 * sm(t / 1.5)})` }}>
       <div style={{ fontSize: 120, fontWeight: 900, color: "#fff", letterSpacing: 2 }}>TRẢI QUA RỒI MỚI HIỂU</div>
       <div style={{ fontSize: 46, fontWeight: 700, color: "#f5c518", marginTop: 26, letterSpacing: 6 }}>CHỨNG KHOÁN HUY NGUYỄN</div>
-      <div style={{ fontSize: 30, color: "#8f9ab3", marginTop: 40 }}>Nội dung chia sẻ kiến thức, không phải khuyến nghị đầu tư</div>
+      
     </div>
   </AbsoluteFill>
 );
