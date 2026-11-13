@@ -436,6 +436,7 @@
 <url><loc>https://chungkhoanhuynguyen.com/f0/co-phieu-ngan-hang-la-gi.html</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/f0/chung-khoan-my-giam-vn-index-co-giam-theo.html</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/f0/viet-nam-dang-no-bao-nhieu.html</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://chungkhoanhuynguyen.com/f0/luong-thuc-te-la-gi.html</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/dinh-gia-co-phieu.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/tu-van-dau-tu-chung-khoan.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/gioi-thieu.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
@@ -446,7 +447,6 @@
 <url><loc>https://chungkhoanhuynguyen.com/ma/</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/AAA.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/AAN.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chungkhoanhuynguyen.com/ma/AAT.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/ABS.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/ACB.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/ACC.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
@@ -588,6 +588,7 @@
 <url><loc>https://chungkhoanhuynguyen.com/ma/NAF.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/NCT.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/NHA.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://chungkhoanhuynguyen.com/ma/NHH.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/NKG.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/NLG.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/NNC.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
@@ -602,7 +603,6 @@
 <url><loc>https://chungkhoanhuynguyen.com/ma/PAN.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/PC1.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/PDR.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chungkhoanhuynguyen.com/ma/PDV.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/PET.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/PGV.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/PHC.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
@@ -647,13 +647,14 @@
 <url><loc>https://chungkhoanhuynguyen.com/ma/TCB.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/TCH.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/TCI.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://chungkhoanhuynguyen.com/ma/TCL.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/TCM.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/TCO.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/TCX.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/TDC.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/TDG.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://chungkhoanhuynguyen.com/ma/TDH.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/TDP.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://chungkhoanhuynguyen.com/ma/TIP.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/TLD.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/TLG.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 <url><loc>https://chungkhoanhuynguyen.com/ma/TLH.html</loc><lastmod>2026-11-13</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
