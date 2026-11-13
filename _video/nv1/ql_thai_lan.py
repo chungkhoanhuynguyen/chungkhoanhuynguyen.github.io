@@ -30,7 +30,7 @@ HN = 'ov:Hanoi skyline night||Hanoi skyline night'
 # v2: 'ov:Bangkok skyline' ra ảnh Singapore (Esplanade) và Hong Kong (IFC) – dùng đích danh file Commons đã soát là Bangkok
 BK1 = 'File:Bangkok_Skyline_from_Movenpick_Hotel,_Asok,_Bangkok_at_night.jpg'
 BK2 = 'File:Bangkok_-_City_skyline_at_sunset.JPG'
-BK3 = 'File:Bangkok_Panorama_(211522205).jpeg'
+BK3 = BK2   # v3: Bangkok_Panorama có biển AIA (logo DN) ở cảnh tiêu cực – bỏ
 BK4 = 'File:Twilight_over_the_modern_city_skyline_in_Ratchadamri_district,_Bangkok,_Thailand,_July_2019_-_Flickr_-_sergei.gussev.jpg'
 BK5 = 'File:Bangkok,_Thailand,_Benjakitti_Park,_2024.jpg'
 NHA = 'ov:Hanoi apartment buildings||Hanoi apartment buildings'
@@ -75,7 +75,7 @@ S = [
         'Bố tôi làm cho một công ty xây dựng', 'Công ty vay đô la, baht mất giá là sập']),
       say=("Somchai gọi video, giọng chậm hẳn lại. Bố anh ấy hồi đó làm cho một công ty xây dựng ở Bangkok, công ty vay đô la để xây chung cư. Baht mất một nửa giá trị, món nợ tính ra tiền baht gần như tăng gấp đôi. "
            "Công ty đóng cửa, bố anh ấy mất việc, căn nhà trả góp cũng không giữ được. Cả nhà làm lại từ đầu.")),
- dict(k='text', cap=('TĂNG NHANH BẰNG TIỀN VAY', 'THÌ NGÃ CŨNG RẤT ĐAU'), cols=CR, anh=BK3,
+ dict(k='text', cap=('TĂNG NHANH BẰNG TIỀN VAY', 'THÌ NGÃ CŨNG RẤT ĐAU'), cols=CR, anh=BK2,
       say=("Anh chị thấy đấy, khi kinh tế tăng quá nóng bằng tiền đi vay, nhất là vay ngoại tệ ngắn hạn đổ vào bất động sản, chỉ cần dòng tiền quay đầu một lần là mọi thứ sụp rất nhanh. "
            "Nhưng cú sập chưa phải phần đáng sợ nhất. Đáng sợ nhất là chuyện xảy ra trong hai mươi lăm năm sau đó.")),
  # ---------------- CHƯƠNG 3 ----------------
