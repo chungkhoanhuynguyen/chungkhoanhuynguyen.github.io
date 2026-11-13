@@ -27,7 +27,12 @@ KEY = 'CH1811TL'; CC = (WHITE, GOLD); CR = (WHITE, RED)
 R_, V_, X_, G_ = (239, 68, 68), (255, 196, 0), (56, 189, 248), (34, 197, 94)
 TP = 'ov:Ho Chi Minh City skyline night||Ho Chi Minh City skyline night'
 HN = 'ov:Hanoi skyline night||Hanoi skyline night'
-BK = 'ov:Bangkok skyline||Bangkok skyline night'
+# v2: 'ov:Bangkok skyline' ra ảnh Singapore (Esplanade) và Hong Kong (IFC) – dùng đích danh file Commons đã soát là Bangkok
+BK1 = 'File:Bangkok_Skyline_from_Movenpick_Hotel,_Asok,_Bangkok_at_night.jpg'
+BK2 = 'File:Bangkok_-_City_skyline_at_sunset.JPG'
+BK3 = 'File:Bangkok_Panorama_(211522205).jpeg'
+BK4 = 'File:Twilight_over_the_modern_city_skyline_in_Ratchadamri_district,_Bangkok,_Thailand,_July_2019_-_Flickr_-_sergei.gussev.jpg'
+BK5 = 'File:Bangkok,_Thailand,_Benjakitti_Park,_2024.jpg'
 NHA = 'ov:Hanoi apartment buildings||Hanoi apartment buildings'
 SGD = 'ov:Ho Chi Minh City Stock Exchange||Bitexco Financial Tower'
 S = [
@@ -39,11 +44,11 @@ S = [
       say=("Năm 1988, Thái Lan tăng trưởng mười ba phẩy ba phần trăm. Gần bốn mươi năm sau, họ vẫn chưa thành nước giàu. "
            "Tối nay anh Hưng, kỹ sư một nhà máy Nhật ở Bình Dương, đọc tin: năm nay Việt Nam được dự báo tăng tám phẩy bốn phần trăm, Thái Lan chỉ hai phẩy một phần trăm. "
            "Anh gửi tin cho Somchai, người bạn Thái học cùng khóa đào tạo. Somchai trả lời: hồi bố anh ấy còn trẻ, Thái Lan cũng tăng như vậy. Rồi cả nhà mất gần hết chỉ trong một năm.")),
- dict(k='bignum', anh=BK, cap=('NHANH HƠN CẢ VIỆT NAM', 'RỒI KẸT GẦN 40 NĂM'), cols=CR, value=13.3, fmt='{:,.1f}', unit='%', top='THÁI LAN NĂM 1988', sub='Nay còn khoảng 2% mỗi năm', col=RED,
+ dict(k='bignum', anh=BK1, cap=('NHANH HƠN CẢ VIỆT NAM', 'RỒI KẸT GẦN 40 NĂM'), cols=CR, value=13.3, fmt='{:,.1f}', unit='%', top='THÁI LAN NĂM 1988', sub='Nay còn khoảng 2% mỗi năm', col=RED,
       say=("Mười ba phẩy ba phần trăm. Nhanh hơn cả Việt Nam bây giờ. Vậy mà đến hôm nay, Thái Lan vẫn đứng ngoài cửa nhóm nước thu nhập cao, tăng trưởng chỉ còn khoảng hai phần trăm, "
            "các gia đình Thái gánh khoản nợ gần chín mươi phần trăm GDP. Việt Nam sẽ thành Hàn Quốc, hay thành Thái Lan thứ hai? Và chuyện đó liên quan gì tới túi tiền nhà mình?")),
  # ---------------- CHƯƠNG 1 ----------------
- dict(k='cards', ch='Chương 1 – Con hổ từng chạy nhanh nhất châu Á', anh=BK, cap=('THÁI LAN THỜI HOÀNG KIM', 'TIỀN PHONG, SỐ NGÂN HÀNG THẾ GIỚI'), cols=CC, moc=True,
+ dict(k='cards', ch='Chương 1 – Con hổ từng chạy nhanh nhất châu Á', anh=BK2, cap=('THÁI LAN THỜI HOÀNG KIM', 'TIỀN PHONG, SỐ NGÂN HÀNG THẾ GIỚI'), cols=CC, moc=True,
       cards=[('+13,3%', 'GDP Thái Lan năm 1988', 'Cao nhất thời hoàng kim'), ('Trên 10%', 'Liên tục từ 1987 tới 1990', 'Bốn năm hai chữ số'), ('7.690 USD', 'Thu nhập mỗi người năm 2025', 'Vẫn chưa thành nước giàu')],
       say=("Cuối những năm tám mươi, Thái Lan là ngôi sao của châu Á. Theo số Ngân hàng Thế giới mà báo Tiền Phong tổng hợp, từ năm 1987 đến năm 1990, kinh tế Thái tăng trên mười phần trăm liên tục. Đỉnh là mười ba phẩy ba phần trăm vào năm 1988. "
            "Nhà máy Nhật đổ vào Bangkok, giống nhà máy nước ngoài đổ vào Bắc Ninh, Bình Dương bây giờ. "
@@ -70,15 +75,15 @@ S = [
         'Bố tôi làm cho một công ty xây dựng', 'Công ty vay đô la, baht mất giá là sập']),
       say=("Somchai gọi video, giọng chậm hẳn lại. Bố anh ấy hồi đó làm cho một công ty xây dựng ở Bangkok, công ty vay đô la để xây chung cư. Baht mất một nửa giá trị, món nợ tính ra tiền baht gần như tăng gấp đôi. "
            "Công ty đóng cửa, bố anh ấy mất việc, căn nhà trả góp cũng không giữ được. Cả nhà làm lại từ đầu.")),
- dict(k='text', cap=('TĂNG NHANH BẰNG TIỀN VAY', 'THÌ NGÃ CŨNG RẤT ĐAU'), cols=CR, anh=BK,
+ dict(k='text', cap=('TĂNG NHANH BẰNG TIỀN VAY', 'THÌ NGÃ CŨNG RẤT ĐAU'), cols=CR, anh=BK3,
       say=("Anh chị thấy đấy, khi kinh tế tăng quá nóng bằng tiền đi vay, nhất là vay ngoại tệ ngắn hạn đổ vào bất động sản, chỉ cần dòng tiền quay đầu một lần là mọi thứ sụp rất nhanh. "
            "Nhưng cú sập chưa phải phần đáng sợ nhất. Đáng sợ nhất là chuyện xảy ra trong hai mươi lăm năm sau đó.")),
  # ---------------- CHƯƠNG 3 ----------------
- dict(k='bars', ch='Chương 3 – Kẹt ở hai phần trăm', anh=BK, cap=('DỰ BÁO TĂNG TRƯỞNG 2026', 'IMF THÁNG 10/2026'), cols=CR, moc=True,
+ dict(k='bars', ch='Chương 3 – Kẹt ở hai phần trăm', anh=BK4, cap=('DỰ BÁO TĂNG TRƯỞNG 2026', 'IMF THÁNG 10/2026'), cols=CR, moc=True,
       bars=[('Việt Nam', 8.4, GREEN, '8,4%'), ('Malaysia', 5.2, GOLD, '5,2%'), ('Thái Lan', 2.1, RED, '2,1%')],
       say=("Thái Lan hồi phục sau khủng hoảng, nhưng không chạy nhanh lại được nữa. Báo cáo tháng mười năm nay của Quỹ Tiền tệ Quốc tế dự báo: Việt Nam tăng tám phẩy bốn phần trăm, "
            "Malaysia năm phẩy hai phần trăm, còn Thái Lan chỉ hai phẩy một phần trăm, thuộc nhóm chậm nhất Đông Nam Á. Báo chí khu vực gọi Thái Lan là người bệnh của châu Á.")),
- dict(k='bignum', anh=BK, cap=('NỢ CỦA CÁC GIA ĐÌNH THÁI', 'BẰNG 86,7% GDP'), cols=CR, moc=True, value=86.7, fmt='{:,.1f}', unit='%', top='NỢ HỘ GIA ĐÌNH / GDP', sub='Thái Lan quý 4/2025, SCB EIC', col=RED,
+ dict(k='bignum', anh=BK5, cap=('NỢ CỦA CÁC GIA ĐÌNH THÁI', 'BẰNG 86,7% GDP'), cols=CR, moc=True, value=86.7, fmt='{:,.1f}', unit='%', top='NỢ HỘ GIA ĐÌNH / GDP', sub='Thái Lan quý 4/2025, SCB EIC', col=RED,
       say=("Và đây là cú lật thứ hai. Cuối năm 2025, tổng nợ của các hộ gia đình Thái Lan bằng tám mươi sáu phẩy bảy phần trăm GDP cả năm, theo trung tâm nghiên cứu kinh tế SCB E I C. "
            "Đáng lo hơn, phần nợ tăng thêm chủ yếu là vay tiêu dùng, tức là vay để trang trải chi tiêu hằng ngày, không phải để làm ăn.")),
  dict(k='giay', cap=('BẢNG LƯƠNG CỦA SOMCHAI', 'MỘT NỬA ĐÃ LÀ TRẢ NỢ'), cols=CR, moc=True, giay=dict(tieu_de='BẢNG LƯƠNG THÁNG 10 – SOMCHAI', so='Em giả định để minh hoạ, đơn vị baht', dau='ĐÃ TRỪ', dieu=[
@@ -88,7 +93,7 @@ S = [
         ('Trả nợ chiếm bao nhiêu phần lương', '50%')]),
       say=("Somchai chụp bảng lương gửi anh Hưng, số này em giả định để minh hoạ. Lương thực nhận hai mươi lăm nghìn baht. "
            "Trả góp xe bán tải tám nghìn. Thẻ tín dụng bốn nghìn rưỡi. Đúng một nửa tiền lương đã đi trả nợ trước khi kịp mua bất cứ thứ gì. Phần còn lại lo ăn ở, và gửi về cho bố mẹ đã già.")),
- dict(k='cards', anh=BK, cap=('GIÀ TRƯỚC KHI GIÀU', 'THE NATION 9/2025'), cols=CR, moc=True,
+ dict(k='cards', anh=BK1, cap=('GIÀ TRƯỚC KHI GIÀU', 'THE NATION 9/2025'), cols=CR, moc=True,
       cards=[('Hơn 20%', 'Dân số từ 60 tuổi, năm 2023', 'Đã thành xã hội già'), ('28%', 'Dự báo cho năm 2033', 'Già đi rất nhanh'), ('Gần 1/2', 'Người già không có tiết kiệm', 'Con cái phải gánh')],
       say=("Vì sao phải gửi tiền về cho bố mẹ? Vì Thái Lan đã già trước khi kịp giàu. Từ năm 2023, hơn hai mươi phần trăm dân số Thái từ sáu mươi tuổi trở lên, và được dự báo lên hai mươi tám phần trăm vào năm 2033. "
            "Báo The Nation dẫn ý kiến chuyên gia: gần một nửa người cao tuổi Thái không có tiền tiết kiệm. Người trẻ vừa trả nợ của mình, vừa gánh tuổi già của cha mẹ.")),
@@ -144,7 +149,7 @@ S = [
         ('Somchai', 'Đừng già trước khi giàu như bọn tôi nhé'),
         ('me', 'Cảm ơn ông. Tôi bắt đầu từ nhà mình trước')]),
       say=("Gần nửa đêm, Somchai nhắn thêm: nước Việt Nam đang chạy nhanh như Thái Lan ngày xưa, đừng già trước khi giàu nhé. Anh Hưng trả lời: cảm ơn, mình bắt đầu từ nhà mình trước. "
-           "Tăng trưởng tám, chín phần trăm là cơ hội của cả một thế hệ. Nhưng Thái Lan cho thấy, cơ hội đó có hạn dùng.")),
+           "Tăng trưởng tám đến chín phần trăm là cơ hội của cả một thế hệ. Nhưng Thái Lan cho thấy, cơ hội đó có hạn dùng.")),
  dict(k='end', cap=('HÀN QUỐC HAY THÁI LAN', 'THỨ HAI?'), cols=CC,
       say=("Còn anh chị nghĩ sao: Việt Nam sẽ thành Hàn Quốc, hay thành Thái Lan thứ hai? Và khoản trả nợ mỗi tháng của nhà mình đang chiếm bao nhiêu phần thu nhập? Kể cho em và mọi người ở phần bình luận nhé. "
            "Nếu thấy video hữu ích, anh chị đăng ký kênh để xem những câu hỏi lớn tiếp theo.")),
