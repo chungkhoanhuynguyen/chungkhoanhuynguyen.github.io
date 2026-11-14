@@ -14,7 +14,13 @@ jobs:
           mkdir out
           python3 - <<'PY'
           import json, urllib.request
-          for ten, u in json.loads('''${{ inputs.ds }}'''):
+          import re
+          ds = json.loads('''${{ inputs.ds }}''')
+          if ds and ds[0][0] == "@zips":
+              h = urllib.request.urlopen(urllib.request.Request(ds[0][1], headers={"User-Agent": "Mozilla/5.0"}), timeout=60).read().decode("utf8", "ignore")
+              ds = [[u.split("/")[-1], u if u.startswith("http") else "https://opengameart.org" + u] for u in dict.fromkeys(re.findall(r'href="([^"]+\.zip)"', h))]
+              print(ds)
+          for ten, u in ds:
               d = urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0"}), timeout=120).read()
               open(f"out/{ten}", "wb").write(d); print("OK", ten, len(d))
           PY
