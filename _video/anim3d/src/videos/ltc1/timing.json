@@ -1,0 +1,709 @@
+{
+ "total": 330.467,
+ "scenes": [
+  {
+   "id": "S01",
+   "a": 0.0,
+   "b": 24.16632,
+   "fa": 0,
+   "fb": 725,
+   "sens": [
+    {
+     "text": "Ngày đầu tiên của lớp Lý thuyết trò chơi.",
+     "a": 1.26632,
+     "b": 3.36842,
+     "fa": 38,
+     "ns": 95836
+    },
+    {
+     "text": "Thầy giáo không chào, chỉ cầm phấn viết lên bảng sáu chữ: phú không quá ba đời.",
+     "a": 3.83368,
+     "b": 8.85789,
+     "fa": 115,
+     "ns": 229124
+    },
+    {
+     "text": "Cả lớp im phăng phắc.",
+     "a": 9.33368,
+     "b": 10.36316,
+     "fa": 280,
+     "ns": 46969
+    },
+    {
+     "text": "Vì sáu học trò ngồi đây đều là con cháu những gia tộc giàu nhất thế giới.",
+     "a": 11.13368,
+     "b": 15.68105,
+     "fa": 334,
+     "ns": 207374
+    },
+    {
+     "text": "Thầy quay lại: bài đầu tiên của các em là trả lời câu hỏi này.",
+     "a": 16.13368,
+     "b": 19.36421,
+     "fa": 484,
+     "ns": 147343
+    },
+    {
+     "text": "Vì sao gia tộc của các em, rồi sẽ thua?",
+     "a": 19.83368,
+     "b": 21.89368,
+     "fa": 595,
+     "ns": 93949
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "a": 24.16632,
+   "b": 33.43368,
+   "fa": 725,
+   "fb": 1003,
+   "sens": [
+    {
+     "text": "Lớp học Lý thuyết trò chơi.",
+     "a": 24.8,
+     "b": 26.28632,
+     "fa": 744,
+     "ns": 67781
+    },
+    {
+     "text": "Bài một: ván cờ thế giới, vì sao kẻ nghèo hay thắng kẻ giàu?",
+     "a": 27.06632,
+     "b": 30.52947,
+     "fa": 812,
+     "ns": 157922
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "a": 33.43368,
+   "b": 64.4,
+   "fa": 1003,
+   "fb": 1932,
+   "sens": [
+    {
+     "text": "Ngồi bàn đầu là Ha na, con gái một gia tộc ngân hàng ở Thụy Sĩ, ba trăm năm chưa từng vỡ nợ.",
+     "a": 33.43368,
+     "b": 38.66211,
+     "fa": 1003,
+     "ns": 238449
+    },
+    {
+     "text": "Cạnh cô là Chi Hô, cháu đích tôn một tập đoàn ở Hàn Quốc.",
+     "a": 39.13368,
+     "b": 42.30737,
+     "fa": 1174,
+     "ns": 144749
+    },
+    {
+     "text": "Kha lít, gia đình anh sở hữu mỏ dầu.",
+     "a": 42.76632,
+     "b": 44.90211,
+     "fa": 1283,
+     "ns": 97394
+    },
+    {
+     "text": "Xô phi a, bố cô lập ra một công ty công nghệ ở thung lũng Xi li côn.",
+     "a": 45.36632,
+     "b": 48.64947,
+     "fa": 1361,
+     "ns": 149692
+    },
+    {
+     "text": "Ken chi, gia tộc làm ô tô ở Nhật.",
+     "a": 49.1,
+     "b": 51.30842,
+     "fa": 1473,
+     "ns": 100703
+    },
+    {
+     "text": "Và Bảo Nam, con trai một ông trùm bất động sản Việt Nam, người duy nhất trong lớp đến muộn.",
+     "a": 51.76632,
+     "b": 56.69053,
+     "fa": 1553,
+     "ns": 224538
+    },
+    {
+     "text": "Bảo Nam giơ tay: thưa thầy, nhà em giàu ba đời rồi, vẫn đang giàu mà.",
+     "a": 57.13368,
+     "b": 61.20421,
+     "fa": 1714,
+     "ns": 185629
+    },
+    {
+     "text": "Thầy cười: thế còn đời thứ tư?",
+     "a": 61.66632,
+     "b": 63.60526,
+     "fa": 1850,
+     "ns": 88409
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "a": 64.4,
+   "b": 83.63368,
+   "fa": 1932,
+   "fb": 2509,
+   "sens": [
+    {
+     "text": "Thầy đặt luật cho lớp: ở đây, mọi chuyện trên đời đều là một ván cờ.",
+     "a": 64.4,
+     "b": 68.35053,
+     "fa": 1932,
+     "ns": 180128
+    },
+    {
+     "text": "Muốn hiểu ván cờ, phải trả lời ba câu.",
+     "a": 68.8,
+     "b": 70.77895,
+     "fa": 2064,
+     "ns": 90258
+    },
+    {
+     "text": "Ai là người chơi?",
+     "a": 71.23368,
+     "b": 72.05579,
+     "fa": 2137,
+     "ns": 37518
+    },
+    {
+     "text": "Luật chơi là gì?",
+     "a": 72.76632,
+     "b": 73.68105,
+     "fa": 2183,
+     "ns": 41687
+    },
+    {
+     "text": "Và thắng thì được gì, thua thì mất gì?",
+     "a": 74.36632,
+     "b": 77.01263,
+     "fa": 2231,
+     "ns": 120666
+    },
+    {
+     "text": "Hôm nay, ván cờ của chúng ta là ván cờ lớn nhất: các quốc gia.",
+     "a": 77.7,
+     "b": 81.99579,
+     "fa": 2331,
+     "ns": 195881
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "a": 83.63368,
+   "b": 101.0,
+   "fa": 2509,
+   "fb": 3030,
+   "sens": [
+    {
+     "text": "Thầy hỏi: giữa một nước giàu, đông dân, quân đội mạnh, và một nước nghèo, nhỏ, ở rìa bản đồ, ai thắng?",
+     "a": 83.63368,
+     "b": 89.61474,
+     "fa": 2509,
+     "ns": 272769
+    },
+    {
+     "text": "Kha lít đáp ngay: nước giàu, thưa thầy, tiền mua được mọi thứ.",
+     "a": 90.3,
+     "b": 94.23158,
+     "fa": 2709,
+     "ns": 179266
+    },
+    {
+     "text": "Xô phi a gật đầu: và có công nghệ tốt hơn.",
+     "a": 94.7,
+     "b": 97.33684,
+     "fa": 2841,
+     "ns": 120259
+    },
+    {
+     "text": "Thầy lắc đầu: lịch sử thường nói ngược lại.",
+     "a": 97.8,
+     "b": 100.2,
+     "fa": 2934,
+     "ns": 109455
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "a": 101.0,
+   "b": 119.16632,
+   "fa": 3030,
+   "fb": 3575,
+   "sens": [
+    {
+     "text": "Ví dụ thứ nhất.",
+     "a": 101.0,
+     "b": 101.82632,
+     "fa": 3030,
+     "ns": 37669
+    },
+    {
+     "text": "Thời Chiến Quốc ở Trung Hoa, nước Tần nằm ở rìa phía tây, đất khô cằn, bị các nước phía đông coi là man di.",
+     "a": 102.6,
+     "b": 108.59789,
+     "fa": 3078,
+     "ns": 273498
+    },
+    {
+     "text": "Vậy mà năm hai trăm hai mươi mốt trước Công nguyên, chính nước Tần thống nhất cả Trung Hoa.",
+     "a": 109.06632,
+     "b": 113.21579,
+     "fa": 3272,
+     "ns": 189214
+    },
+    {
+     "text": "Các nước giàu có, văn hoa ở phía đông, lần lượt bị nuốt.",
+     "a": 113.66632,
+     "b": 117.09053,
+     "fa": 3410,
+     "ns": 156125
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "a": 119.16632,
+   "b": 141.0,
+   "fa": 3575,
+   "fb": 4230,
+   "sens": [
+    {
+     "text": "Ví dụ thứ hai.",
+     "a": 119.16632,
+     "b": 119.99158,
+     "fa": 3575,
+     "ns": 37600
+    },
+    {
+     "text": "Athens là thành phố giàu nhất, văn minh nhất Hy Lạp.",
+     "a": 120.76632,
+     "b": 123.95368,
+     "fa": 3623,
+     "ns": 145325
+    },
+    {
+     "text": "Ma xê đô ni a ở phía bắc, bị người Athens chê là quê mùa.",
+     "a": 124.4,
+     "b": 127.69053,
+     "fa": 3732,
+     "ns": 150066
+    },
+    {
+     "text": "Năm ba trăm ba mươi tám trước Công nguyên, Ma xê đô ni a đánh bại Athens.",
+     "a": 128.13368,
+     "b": 132.20737,
+     "fa": 3844,
+     "ns": 185791
+    },
+    {
+     "text": "Vài năm sau, con trai vua Ma xê đô ni a là A lếch xan đơ đánh sập cả đế quốc Ba Tư, đế quốc lớn nhất thế giới lúc bấy giờ.",
+     "a": 132.66632,
+     "b": 140.21053,
+     "fa": 3980,
+     "ns": 343988
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "a": 141.0,
+   "b": 169.43368,
+   "fa": 4230,
+   "fb": 5083,
+   "sens": [
+    {
+     "text": "Ví dụ thứ ba.",
+     "a": 142.7,
+     "b": 143.54947,
+     "fa": 4281,
+     "ns": 38737
+    },
+    {
+     "text": "Năm một nghìn năm trăm mười chín, khoảng năm trăm lính Tây Ban Nha đổ bộ lên Mê hi cô.",
+     "a": 144.33368,
+     "b": 148.77158,
+     "fa": 4330,
+     "ns": 202362
+    },
+    {
+     "text": "Hai năm sau, đế quốc A dơ tếch với thủ đô hàng trăm nghìn dân sụp đổ.",
+     "a": 149.23368,
+     "b": 153.17158,
+     "fa": 4477,
+     "ns": 179601
+    },
+    {
+     "text": "Công bằng mà nói, họ không thắng một mình: hàng chục nghìn đồng minh bản địa ghét A dơ tếch đã theo họ, và bệnh đậu mùa đã giết rất nhiều người A dơ tếch.",
+     "a": 153.63368,
+     "b": 162.19474,
+     "fa": 4609,
+     "ns": 390404
+    },
+    {
+     "text": "Nhưng câu hỏi vẫn còn đó: vì sao một đế quốc giàu có lại để kẻ thù tìm được nhiều đồng minh đến thế?",
+     "a": 162.66632,
+     "b": 167.56,
+     "fa": 4880,
+     "ns": 223126
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "a": 169.43368,
+   "b": 189.46632,
+   "fa": 5083,
+   "fb": 5684,
+   "sens": [
+    {
+     "text": "Chi Hô hỏi: vậy có quy luật nào không, thưa thầy?",
+     "a": 169.43368,
+     "b": 172.39579,
+     "fa": 5083,
+     "ns": 135084
+    },
+    {
+     "text": "Thầy viết lên bảng một cái tên: I bơn Khan đun.",
+     "a": 173.1,
+     "b": 175.83684,
+     "fa": 5193,
+     "ns": 124807
+    },
+    {
+     "text": "Đây là một học giả Bắc Phi, sống cách đây hơn sáu trăm năm.",
+     "a": 176.3,
+     "b": 179.70947,
+     "fa": 5289,
+     "ns": 155492
+    },
+    {
+     "text": "Năm một nghìn ba trăm bảy mươi bảy, ông viết một cuốn sách về sự hưng vong của các triều đại.",
+     "a": 180.16632,
+     "b": 184.60105,
+     "fa": 5405,
+     "ns": 202205
+    },
+    {
+     "text": "Ông nhận ra: một triều đại thường chỉ giữ được ba đến bốn thế hệ.",
+     "a": 185.06632,
+     "b": 188.66947,
+     "fa": 5552,
+     "ns": 164289
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "a": 189.46632,
+   "b": 208.7,
+   "fa": 5684,
+   "fb": 6261,
+   "sens": [
+    {
+     "text": "Từ ý của I bơn Khan đun, thầy rút ra ba thước đo sức mạnh của một nhóm người.",
+     "a": 189.46632,
+     "b": 193.57263,
+     "fa": 5684,
+     "ns": 187227
+    },
+    {
+     "text": "Một là năng lượng: khát khao muốn đi lên.",
+     "a": 194.03368,
+     "b": 196.14105,
+     "fa": 5821,
+     "ns": 96112
+    },
+    {
+     "text": "Hai là cởi mở: chịu học cái mới, chịu nhận mình sai.",
+     "a": 196.6,
+     "b": 199.59158,
+     "fa": 5898,
+     "ns": 136421
+    },
+    {
+     "text": "Ba là gắn kết: sẵn sàng hy sinh cho nhau.",
+     "a": 200.06632,
+     "b": 202.44526,
+     "fa": 6002,
+     "ns": 108477
+    },
+    {
+     "text": "Kẻ nghèo thường có cả ba, vì họ không có gì để mất.",
+     "a": 202.9,
+     "b": 205.67789,
+     "fa": 6087,
+     "ns": 126660
+    },
+    {
+     "text": "Kẻ giàu thường đánh rơi cả ba.",
+     "a": 206.13368,
+     "b": 207.89684,
+     "fa": 6184,
+     "ns": 80398
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "a": 208.7,
+   "b": 229.8,
+   "fa": 6261,
+   "fb": 6894,
+   "sens": [
+    {
+     "text": "Vì sao giàu lại đánh rơi?",
+     "a": 208.7,
+     "b": 209.96316,
+     "fa": 6261,
+     "ns": 57586
+    },
+    {
+     "text": "Có tiền thì ít ai còn muốn chịu khổ, năng lượng mất dần.",
+     "a": 210.66632,
+     "b": 213.90842,
+     "fa": 6320,
+     "ns": 147806
+    },
+    {
+     "text": "Có tiền thì nghĩ mình đúng, không chịu học ai, cởi mở mất dần.",
+     "a": 214.36632,
+     "b": 218.05053,
+     "fa": 6431,
+     "ns": 167986
+    },
+    {
+     "text": "Có tiền thì bắt đầu chia nhau, anh em tranh tài sản, gắn kết mất dần.",
+     "a": 218.5,
+     "b": 222.45789,
+     "fa": 6555,
+     "ns": 180487
+    },
+    {
+     "text": "Đời thứ nhất gây dựng, đời thứ hai giữ, đời thứ ba hưởng, và đời thứ tư, thường là đời bán.",
+     "a": 222.93368,
+     "b": 227.95789,
+     "fa": 6688,
+     "ns": 229102
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "a": 229.8,
+   "b": 252.06632,
+   "fa": 6894,
+   "fb": 7562,
+   "sens": [
+    {
+     "text": "Ha na giơ tay: nhưng gia tộc em đã giàu ba trăm năm, thưa thầy.",
+     "a": 229.8,
+     "b": 232.96,
+     "fa": 6894,
+     "ns": 144078
+    },
+    {
+     "text": "Thầy gật đầu: đúng, có những gia tộc vượt được quy luật.",
+     "a": 233.43368,
+     "b": 236.37684,
+     "fa": 7003,
+     "ns": 134233
+    },
+    {
+     "text": "Họ có điểm chung: dạy con như thể nhà nghèo, luôn mở cửa đón người tài từ bên ngoài, và có luật lệ giữ cả nhà đứng chung một phía.",
+     "a": 236.83368,
+     "b": 244.56211,
+     "fa": 7105,
+     "ns": 352426
+    },
+    {
+     "text": "Nghĩa là họ cố giữ cả ba thước đo.",
+     "a": 245.03368,
+     "b": 246.77789,
+     "fa": 7351,
+     "ns": 79550
+    },
+    {
+     "text": "Quy luật không phải định mệnh, nó là lời cảnh báo.",
+     "a": 247.23368,
+     "b": 250.40842,
+     "fa": 7417,
+     "ns": 144787
+    }
+   ]
+  },
+  {
+   "id": "S13",
+   "a": 252.06632,
+   "b": 278.43368,
+   "fa": 7562,
+   "fb": 8353,
+   "sens": [
+    {
+     "text": "Quy luật này không chỉ đúng với quốc gia.",
+     "a": 252.06632,
+     "b": 254.07684,
+     "fa": 7562,
+     "ns": 91682
+    },
+    {
+     "text": "Năm một nghìn chín trăm bảy mươi lăm, chính một kỹ sư của Cô đắc làm ra chiếc máy ảnh kỹ thuật số đầu tiên.",
+     "a": 254.53368,
+     "b": 260.30737,
+     "fa": 7636,
+     "ns": 263275
+    },
+    {
+     "text": "Nhưng Cô đắc đang kiếm bộn tiền từ phim ảnh, nên không muốn tự phá mình.",
+     "a": 260.76632,
+     "b": 264.45474,
+     "fa": 7823,
+     "ns": 168158
+    },
+    {
+     "text": "Năm hai nghìn không trăm mười hai, Cô đắc nộp đơn phá sản.",
+     "a": 264.9,
+     "b": 268.04632,
+     "fa": 7947,
+     "ns": 143456
+    },
+    {
+     "text": "Nô ki a từng là vua điện thoại, rồi năm hai nghìn không trăm mười ba phải bán mảng điện thoại.",
+     "a": 268.5,
+     "b": 273.40421,
+     "fa": 8055,
+     "ns": 223621
+    },
+    {
+     "text": "Kẻ thắng là những công ty nhỏ hơn, đói khát hơn, chịu học nhanh hơn.",
+     "a": 273.86632,
+     "b": 277.63158,
+     "fa": 8216,
+     "ns": 171690
+    }
+   ]
+  },
+  {
+   "id": "S14",
+   "a": 278.43368,
+   "b": 301.73368,
+   "fa": 8353,
+   "fb": 9052,
+   "sens": [
+    {
+     "text": "Bảo Nam hỏi: vậy đi đầu tư chứng khoán thì sao hả thầy?",
+     "a": 278.43368,
+     "b": 281.37579,
+     "fa": 8353,
+     "ns": 134184
+    },
+    {
+     "text": "Thầy đáp: trước khi mua cổ phiếu, đừng chỉ hỏi công ty này to không.",
+     "a": 282.06632,
+     "b": 285.50947,
+     "fa": 8462,
+     "ns": 157007
+    },
+    {
+     "text": "Hãy hỏi ba câu.",
+     "a": 285.96632,
+     "b": 286.87158,
+     "fa": 8579,
+     "ns": 41264
+    },
+    {
+     "text": "Ban lãnh đạo còn đói khát không?",
+     "a": 287.63368,
+     "b": 289.12737,
+     "fa": 8629,
+     "ns": 68119
+    },
+    {
+     "text": "Công ty có chịu thay đổi khi thị trường đổi không?",
+     "a": 289.83368,
+     "b": 292.22526,
+     "fa": 8695,
+     "ns": 109069
+    },
+    {
+     "text": "Và người trong công ty có cùng một phía không?",
+     "a": 292.93368,
+     "b": 294.76316,
+     "fa": 8788,
+     "ns": 83448
+    },
+    {
+     "text": "Công ty đầu ngành mà mất cả ba, thì cái to của nó chỉ là cái bóng của quá khứ.",
+     "a": 295.46632,
+     "b": 299.88211,
+     "fa": 8864,
+     "ns": 201363
+    }
+   ]
+  },
+  {
+   "id": "S15",
+   "a": 301.73368,
+   "b": 320.26632,
+   "fa": 9052,
+   "fb": 9608,
+   "sens": [
+    {
+     "text": "Cuối giờ, thầy giao bài tập: mỗi em về chấm điểm gia tộc mình theo ba thước đo, thang mười điểm.",
+     "a": 301.73368,
+     "b": 306.55368,
+     "fa": 9052,
+     "ns": 219795
+    },
+    {
+     "text": "Ken chi khẽ nói: nhà em chắc chỉ được năng lượng ba điểm.",
+     "a": 307.0,
+     "b": 310.35158,
+     "fa": 9210,
+     "ns": 152821
+    },
+    {
+     "text": "Thầy cười: biết mình được ba điểm, là em đã cởi mở được mười điểm rồi.",
+     "a": 310.8,
+     "b": 314.45579,
+     "fa": 9324,
+     "ns": 166715
+    },
+    {
+     "text": "Tuần sau, chúng ta học ván cờ tiếp theo: ai đang làm ngân hàng cho cả thế giới.",
+     "a": 314.9,
+     "b": 319.46421,
+     "fa": 9447,
+     "ns": 208148
+    }
+   ]
+  },
+  {
+   "id": "S16",
+   "a": 320.26632,
+   "b": 330.46632,
+   "fa": 9608,
+   "fb": 9914,
+   "sens": [
+    {
+     "text": "Còn anh chị, nếu chấm gia đình mình theo ba thước đo năng lượng, cởi mở và gắn kết, được bao nhiêu điểm?",
+     "a": 320.26632,
+     "b": 325.80421,
+     "fa": 9608,
+     "ns": 252530
+    },
+    {
+     "text": "Kể cho em nghe ở phần bình luận nhé.",
+     "a": 326.5,
+     "b": 328.18421,
+     "fa": 9795,
+     "ns": 76792
+    }
+   ]
+  }
+ ]
+}
