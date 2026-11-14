@@ -90,9 +90,17 @@ const Ask: React.FC<{ t: number }> = ({ t }) => { const a = sm(t / 0.5), clickT 
     <div style={{ position: "absolute", right: 40, bottom: 20, fontSize: 22, color: "rgba(255,255,255,.5)" }}>Quan điểm cá nhân, không phải khuyến nghị đầu tư · Ảnh: Wikimedia Commons (CC BY / CC BY-SA)</div></AbsoluteFill>; };
 
 
-const Photo: React.FC<{ t: number; img: string; d?: number; dir?: number }> = ({ t, img, d = 7, dir = 1 }) => { const k = Math.min(1, t / Math.max(d, 1)); const z = 1.06 + 0.08 * k;
-  return <AbsoluteFill style={{ background: "#000" }}><img src={staticFile(`ltc1/${img}.jpg`)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${z}) translateX(${dir * (k - 0.5) * 30}px)`, filter: "brightness(.82) saturate(1.05)" }} />
-    <AbsoluteFill style={{ background: "linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 28%,rgba(0,0,0,0) 62%,rgba(0,0,0,.55) 100%)" }} /></AbsoluteFill>; };
+// ===== Nâng cấp motion (học từ awesome-opus5-5-videos 14/11): lò xo đóng, mờ khi cắt, hạt phim, vệt sáng, tối viền =====
+const spr = (t: number, w = 14, z = 0.62) => t <= 0 ? 0 : 1 - Math.exp(-z * w * t) * Math.cos(w * Math.sqrt(1 - z * z) * t);   // lò xo đóng, vượt nhẹ
+const Grain: React.FC<{ t: number; o?: number }> = ({ t, o = 0.09 }) => <AbsoluteFill style={{ opacity: o, mixBlendMode: "overlay", pointerEvents: "none" }}>
+  <svg width="100%" height="100%"><filter id={"g" + (Math.floor(t * 24) % 6)}><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves={2} seed={Math.floor(t * 24) % 6} /></filter><rect width="100%" height="100%" filter={`url(#g${Math.floor(t * 24) % 6})`} /></svg></AbsoluteFill>;
+const Leak: React.FC<{ t: number; dir: number }> = ({ t, dir }) => <AbsoluteFill style={{ pointerEvents: "none", mixBlendMode: "screen", opacity: 0.22, background: `radial-gradient(circle at ${50 + dir * (20 + 12 * Math.sin(t * 0.5))}% ${30 + 8 * Math.cos(t * 0.4)}%, rgba(255,170,90,.55), rgba(255,120,60,0) 45%)` }} />;
+const Photo: React.FC<{ t: number; img: string; d?: number; dir?: number }> = ({ t, img, d = 7, dir = 1 }) => { const k = Math.min(1, t / Math.max(d, 1)); const e = k * k * (3 - 2 * k); const z = 1.05 + 0.09 * e;
+  const cut = Math.max(0, 1 - t / 0.28); const punch = 1 + 0.035 * cut;   // mờ + đẩy nhẹ khi vào cảnh, không fade đen
+  return <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}><img src={staticFile(`ltc1/${img}.jpg`)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${z * punch}) translate(${dir * (e - 0.5) * 34}px, ${(0.5 - e) * 10}px)`, filter: `brightness(.8) saturate(1.08) contrast(1.06) blur(${(cut * 9).toFixed(2)}px)` }} />
+    <Leak t={t} dir={dir} />
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 45%, rgba(0,0,0,0) 55%, rgba(0,0,0,.55) 100%)" }} />
+    <AbsoluteFill style={{ background: "linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 28%,rgba(0,0,0,0) 62%,rgba(0,0,0,.55) 100%)" }} /><Grain t={t} /></AbsoluteFill>; };
 const PR = (img: string, ov?: (t: number) => React.ReactNode, dir = 1) => (t: number) => <><Photo t={t} img={img} dir={dir} />{ov?.(t)}</>;
 // ---------- dàn cảnh ----------
 // Phòng (room): máy nhìn −z → +x bên PHẢI màn. Long đứng trái màn (side +1), Ngân phải màn (side −1).
@@ -106,8 +114,8 @@ const pcam = (x = 0, z = 2.2): [[V, V, number], [V, V, number]] => [[[x, 1.45, -
 const BL = (x: number, y: number, text: string, at0: number, tail: "l" | "r" = "l") => (t: number) => <Bubble t={t} at={at0} text={text} x={x} y={y} tail={tail} w={620} />;
 
 // ===== LỚP HỌC LÝ THUYẾT TRÒ CHƠI – BÀI 1 (kể + ảnh thật, lớp học bằng ảnh + thẻ tên + bóng thoại) =====
-const NameCard: React.FC<{ t: number; name: string; sub: string }> = ({ t, name, sub }) => { const a = sm(t / 0.4);
-  return <div style={{ position: "absolute", left: 90, bottom: 300, fontFamily: F, opacity: a, transform: `translateX(${(1 - a) * -40}px)` }}>
+const NameCard: React.FC<{ t: number; name: string; sub: string }> = ({ t, name, sub }) => { const a = Math.min(1.08, spr(t - 0.15));
+  return <div style={{ position: "absolute", left: 90, bottom: 300, fontFamily: F, opacity: Math.min(1, a * 1.4), transform: `translateX(${(1 - a) * -120}px)` }}>
     <div style={{ display: "inline-block", fontSize: 92, fontWeight: 900, color: "#fff", background: "#e62117", padding: "6px 28px", borderRadius: 12 }}>{name}</div>
     <div style={{ marginTop: 14, fontSize: 46, fontWeight: 800, color: "#ffe14d", textShadow: "0 3px 10px #000" }}>{sub}</div></div>; };
 const Chalk: React.FC<{ t: number; text: string; at?: number; size?: number }> = ({ t, text, at: a0 = 0.2, size = 110 }) => { const a = sm((t - a0) / 0.6); if (t < a0) return null;
