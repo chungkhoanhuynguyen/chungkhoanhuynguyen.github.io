@@ -130,7 +130,9 @@ const AskL: React.FC<{ t: number }> = ({ t }) => <AbsoluteFill style={{ fontFami
   <div style={{ position: "relative", textAlign: "center", opacity: sm(t / 0.5) }}><div style={{ fontSize: 44, color: "#f5c518", fontWeight: 800 }}>BÀI TẬP CHO BẠN</div>
     <div style={{ fontSize: 96, color: "#fff", fontWeight: 900, marginTop: 20 }}>Gia đình bạn được mấy điểm?</div>
     <div style={{ fontSize: 60, color: "#ffe14d", fontWeight: 800, marginTop: 30 }}>⚡ Năng lượng · 🚪 Cởi mở · 🤝 Gắn kết</div>
-    <div style={{ fontSize: 40, color: "#c5cde0", marginTop: 30 }}>Kể cho mình nghe ở phần bình luận nhé</div></div></AbsoluteFill>;
+    <div style={{ fontSize: 40, color: "#c5cde0", marginTop: 30 }}>Kể cho mình nghe ở phần bình luận nhé</div>
+    <div style={{ marginTop: 60, fontSize: 40, color: "#fff", opacity: sm((t - at("S16", 0, 2)) / 0.5) }}>📄 Bài tóm tắt miễn phí: <b style={{ color: "#ffe14d" }}>chungkhoanhuynguyen.com</b></div>
+    <div style={{ marginTop: 18, fontSize: 40, color: "#fff", opacity: sm((t - at("S16", 0, 3)) / 0.5) }}>👥 Cùng học mỗi tuần: <b style={{ color: "#5dff9b" }}>nhóm cộng đồng – link ở phần mô tả</b></div></div></AbsoluteFill>;
 
 // ===== LỚP HỌC 3D trên ảnh thật: thầy + 6 học trò, hội thoại =====
 const Board: React.FC<{ t: number; text: string }> = ({ t, text }) => { const a = sm((t - 0.3) / 0.9); if (t < 0.3) return null;
@@ -141,13 +143,13 @@ const camW: [[V, V, number], [V, V, number]] = [[[0.0, 1.55, -4.6], [0.0, 1.2, 3
 const THAY = (e: Expr, o: PO = {}, x = 1.0) => C("thay", [x, 0, 0.7], P(e, { side: 1, mode: "stand", acc: ["paper"], ...o }));
 const HS = ["hana", "jiho", "khalid", "sophia", "kenji", "baonam"];
 const LOP = (e: Expr, te: Expr = "neutral", sp?: string, se?: Expr) => [THAY(te, {}, 1.9), ...HS.map((a, i) => C(a, [-0.2 - i * 0.55, 0, 0.6 + (i % 2) * 0.5] as V, P(a === sp && se ? se : e, { side: -1, mode: "stand", phase: i * 0.3 })))];
-const D2 = (who: string, we: Expr, te: Expr, text: string, a0: number, teacherTalks = false) => D3(PHL("lop_ve", [THAY(te), C(who, [-0.2, 0, 0.7], P(we, { side: -1, mode: "stand" }))], cam2()), (t) => <>{teacherTalks ? BL(140, 120, text, a0)(t) : BL(1080, 110, text, a0, "r")(t)}</>);
-const DW = (e: Expr, te: Expr, ov?: (t: number) => React.ReactNode, sp?: string, se?: Expr) => D3(PHL("lop_ve", LOP(e, te, sp, se), camW), ov ? (t) => <>{ov(t)}</> : undefined);
+const D2 = (who: string, we: Expr, te: Expr, text: string, a0: number, teacherTalks = false) => D3(PHL("lop_qt", [THAY(te), C(who, [-0.2, 0, 0.7], P(we, { side: -1, mode: "stand" }))], cam2()), (t) => <>{teacherTalks ? BL(140, 120, text, a0)(t) : BL(1080, 110, text, a0, "r")(t)}</>);
+const DW = (e: Expr, te: Expr, ov?: (t: number) => React.ReactNode, sp?: string, se?: Expr) => D3(PHL("lop_qt", LOP(e, te, sp, se), camW), ov ? (t) => <>{ov(t)}</> : undefined);
 const PLAN: Plan[] = [
   { id: "S01", shots: [
-    [0, () => DW("neutral", "neutral", (t) => <LocTag t={t} l1="LỚP HỌC LÝ THUYẾT TRÒ CHƠI" l2="Buổi 1" d={6} />)],
-    [1, () => DW("neutral", "stern", (t) => <Board t={t} text="PHÚ KHÔNG QUÁ BA ĐỜI" />)],
-    [2, () => DW("shock", "stern", (t) => <Board t={t} text="6 HỌC TRÒ · 6 GIA TỘC GIÀU NHẤT" />)],
+    [0, () => CD(PR("truong_co", (t) => <LocTag t={t} l1="HỌC VIỆN ST. ALDEN" l2="Lớp học của những gia tộc giàu nhất thế giới" d={6} />))],
+    [1, () => DW("neutral", "stern", (t) => <><LocTag t={t} l1="LỚP HỌC LÝ THUYẾT TRÒ CHƠI" l2="Buổi 1" d={4} /><Board t={t} text="PHÚ KHÔNG QUÁ BA ĐỜI" /></>)],
+    [3, () => DW("shock", "stern", (t) => <Board t={t} text="6 HỌC TRÒ · 6 GIA TỘC GIÀU NHẤT" />)],
     [4, () => D2("hana", "worried", "stern", "Bài đầu tiên: vì sao gia tộc các em rồi sẽ thua?", at("S01", 4, 4) + 0.3, true)]] },
   { id: "S02", shots: [
     [0, () => CD((t) => <TitleCard t={t} kicker="LỚP HỌC LÝ THUYẾT TRÒ CHƠI" l1="BÀI 1: VÁN CỜ THẾ GIỚI" l2="VÌ SAO KẺ NGHÈO HAY THẮNG KẺ GIÀU?" sub="Phú không quá ba đời" hue="night" />)]] },

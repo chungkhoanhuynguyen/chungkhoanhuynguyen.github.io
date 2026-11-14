@@ -1,5 +1,5 @@
 {
- "total": 330.467,
+ "total": 342.633,
  "scenes": [
   {
    "id": "S01",
@@ -685,9 +685,9 @@
   {
    "id": "S16",
    "a": 320.26632,
-   "b": 330.46632,
+   "b": 342.63368,
    "fa": 9608,
-   "fb": 9914,
+   "fb": 10279,
    "sens": [
     {
      "text": "Còn anh chị, nếu chấm gia đình mình theo ba thước đo năng lượng, cởi mở và gắn kết, được bao nhiêu điểm?",
@@ -702,6 +702,20 @@
      "b": 328.18421,
      "fa": 9795,
      "ns": 76792
+    },
+    {
+     "text": "Bài tóm tắt lý thuyết trò chơi cho nhà đầu tư, em để miễn phí trên web chứng khoán Huy Nguyễn.",
+     "a": 328.63368,
+     "b": 334.04737,
+     "fa": 9859,
+     "ns": 246862
+    },
+    {
+     "text": "Còn nếu muốn cùng học và cùng thảo luận mỗi tuần, anh chị vào nhóm cộng đồng của kênh, đường dẫn ở phần mô tả.",
+     "a": 334.5,
+     "b": 340.33684,
+     "fa": 10035,
+     "ns": 266162
     }
    ]
   }
