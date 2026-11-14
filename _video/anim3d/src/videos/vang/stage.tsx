@@ -1,7 +1,7 @@
 // Một "sân khấu" 3D: dựng đúng một bối cảnh + các nhân vật cần dùng, chạy danh sách cảnh quay (camera, nhân vật, màn hình) theo khung hình.
 import React, { useEffect, useMemo } from "react";
 import * as THREE from "three";
-import { useCurrentFrame } from "remotion";
+import { useCurrentFrame, staticFile, delayRender, continueRender } from "remotion";
 import { ThreeCanvas } from "@remotion/three";
 import { useThree } from "@react-three/fiber";
 import { EffectComposer } from "@react-three/postprocessing";
@@ -15,10 +15,10 @@ import { F } from "./cards";
 import { buildExtras } from "./extras";
 
 export type V = [number, number, number];
-export type SetKey = "room" | "street" | "streetday" | "shop" | "hue" | "bt" | "lake" | "villa" | "field" | "fieldfever" | "korea" | "bank";
-export const OFF: Record<SetKey, number> = { room: RX, street: SX, streetday: SX, shop: IX, hue: HX, bt: BX, lake: GX, villa: VX, field: FX, fieldfever: FX, korea: KX, bank: NX };
+export type SetKey = "room" | "street" | "streetday" | "shop" | "hue" | "bt" | "lake" | "villa" | "field" | "fieldfever" | "korea" | "bank" | "photo";
+export const OFF: Record<SetKey, number> = { room: RX, street: SX, streetday: SX, shop: IX, hue: HX, bt: BX, lake: GX, villa: VX, field: FX, fieldfever: FX, korea: KX, bank: NX, photo: 0 };
 export type Cast = { a: string; p: V; to?: V; pose: (t: number, d: number) => Pose };
-export type Shot3D = { set: SetKey; light: LK; from: [V, V, number]; to: [V, V, number]; cast: Cast[]; rain?: boolean; shake?: number; chat?: "calm" | "fast" | "off" | "boom"; game?: boolean; board?: "buy" | "sell"; ease?: "sm" | "lin" | "out"; walkers?: boolean; jam?: boolean };
+export type Shot3D = { bg?: string; bgFit?: [number, number]; set: SetKey; light: LK; from: [V, V, number]; to: [V, V, number]; cast: Cast[]; rain?: boolean; shake?: number; chat?: "calm" | "fast" | "off" | "boom"; game?: boolean; board?: "buy" | "sell"; ease?: "sm" | "lin" | "out"; walkers?: boolean; jam?: boolean };
 export type Run = { a: number; b: number; s: Shot3D }; // frames, relative to the Stage sequence
 
 const sm = (t: number) => { t = Math.max(0, Math.min(1, t)); return t * t * t * (t * (t * 6 - 15) + 10); };
@@ -81,8 +81,13 @@ const Inner: React.FC<{ set: SetKey; runs: Run[] }> = ({ set, runs }) => {
     else if (set === "field" || set === "fieldfever") root.add(buildField(set === "fieldfever").g);
     else if (set === "korea") root.add(buildKorea().g);
     else if (set === "bank") root.add(buildBank().g);
+    else if (set === "photo") { // ẢNH NỀN THẬT + nhân vật 3D: chỉ có mặt đất hứng bóng; ảnh dán vào tấm nền luôn quay theo máy
+      const gr = new THREE.Mesh(new THREE.PlaneGeometry(200, 200), new THREE.ShadowMaterial({ opacity: 0.38 })); gr.rotation.x = -Math.PI / 2; gr.receiveShadow = true; gr.layers.set(NOINK); root.add(gr); }
     else root.add(buildHoGuom().g);
     const rain = rainStreaks(); root.add(rain.m);
+    const bgs: Record<string, THREE.Texture> = {};
+    const bgPlane = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), new THREE.MeshBasicMaterial({ toneMapped: false, depthWrite: false })); bgPlane.layers.set(NOINK); bgPlane.renderOrder = -10; bgPlane.visible = false; root.add(bgPlane);
+    for (const r of runs) if (r.s.bg && !bgs[r.s.bg]) { const h = delayRender("bg " + r.s.bg); const src = r.s.bg; bgs[src] = new THREE.TextureLoader().load(staticFile(src), (tx) => { tx.colorSpace = THREE.SRGBColorSpace; continueRender(h); }, undefined, () => continueRender(h)); }
     const keys = new Set<string>(); runs.forEach((r) => r.s.cast.forEach((c) => keys.add(c.a)));
     const actors: Record<string, Actor> = {};
     keys.delete("bike"); keys.delete("boat");
@@ -94,7 +99,7 @@ const Inner: React.FC<{ set: SetKey; runs: Run[] }> = ({ set, runs }) => {
     }
     const extras = buildExtras(set, root);
     noInkFallback(root);
-    return { extras, root, sun, skyMat, sky, room, shop, rain, actors, bike, bike0: bike ? bike.position.clone() : null, bikeR: bike ? bike.rotation.y : 0 };
+    return { bgs, bgPlane, extras, root, sun, skyMat, sky, room, shop, rain, actors, bike, bike0: bike ? bike.position.clone() : null, bikeR: bike ? bike.rotation.y : 0 };
   }, [set]);
   const fx = useMemo(() => ({
     ink: new InkPass(scene, camera as THREE.PerspectiveCamera),
@@ -111,6 +116,13 @@ const Inner: React.FC<{ set: SetKey; runs: Run[] }> = ({ set, runs }) => {
   let fov = s.from[2] + (s.to[2] - s.from[2]) * u; fov *= 1 + 0.05 * (1 - sm((f - run.a) / 10));
   cam.position.copy(pos); cam.lookAt(look); cam.fov = fov; cam.aspect = 16 / 9; cam.near = 0.05; cam.far = 800; cam.updateProjectionMatrix();
   W.sky.position.copy(pos);
+  W.sky.visible = !s.bg; W.bgPlane.visible = !!s.bg;
+  if (s.bg) { const tx = W.bgs[s.bg], D = 60, hh = 2 * D * Math.tan((fov * Math.PI) / 360), ww = hh * (16 / 9), m = W.bgPlane.material as THREE.MeshBasicMaterial;
+    if (m.map !== tx) { m.map = tx; m.needsUpdate = true; }
+    const img = tx.image as { width?: number; height?: number } | undefined, ia = img && img.width ? img.width / (img.height || 1) : 16 / 9, fa = 16 / 9;
+    const [fx0, fy0] = s.bgFit ?? [0.5, 0.5]; // điểm neo khi cắt ảnh cho vừa khung
+    if (ia > fa) { tx.repeat.set(fa / ia, 1); tx.offset.set((1 - fa / ia) * fx0, 0); } else { tx.repeat.set(1, ia / fa); tx.offset.set(0, (1 - ia / fa) * (1 - fy0)); }
+    const dir = new THREE.Vector3(); cam.getWorldDirection(dir); W.bgPlane.position.copy(cam.position).addScaledVector(dir, D); W.bgPlane.quaternion.copy(cam.quaternion); W.bgPlane.scale.set(ww * 1.02, hh * 1.02, 1); }
   applyLight(s.light, W.sun, pos, W.skyMat);
   const tag = fx.grade as unknown as { _k?: string }; if (tag._k !== s.light) { fx.grade.set(GR[s.light]); tag._k = s.light; }
   W.rain.update(f / 30, pos, !!s.rain);
