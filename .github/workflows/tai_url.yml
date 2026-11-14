@@ -1,0 +1,24 @@
+name: Tai anh theo URL
+on:
+  workflow_dispatch:
+    inputs:
+      ds: {description: "JSON [[ten, url], ...]", required: true}
+      tag: {description: "release", required: true}
+permissions:
+  contents: write
+jobs:
+  get:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          mkdir out
+          python3 - <<'PY'
+          import json, urllib.request
+          for ten, u in json.loads('''${{ inputs.ds }}'''):
+              d = urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0"}), timeout=120).read()
+              open(f"out/{ten}", "wb").write(d); print("OK", ten, len(d))
+          PY
+      - env: {GH_TOKEN: "${{ github.token }}", GH_REPO: "${{ github.repository }}"}
+        run: |
+          gh release view "${{ inputs.tag }}" >/dev/null 2>&1 || gh release create "${{ inputs.tag }}" -t "${{ inputs.tag }}" -n anh
+          gh release upload "${{ inputs.tag }}" out/* --clobber
