@@ -184,12 +184,8 @@ import random
 print("\n##### KIEM THU 1000 LAN: manh (suc manh tuong doi chinh ve MA10), loc thi truong tt3, ro 30 ma #####", flush=True)
 RT = ro
 # 1) 27 bo tham so lan can
-for tp in (0.06, 0.07, 0.08):
-    for sl in (0.06, 0.07, 0.08):
-        for tm in (12, 15, 18):
-            chay2(f"manh tt3 chot{int(tp*100)} cat{int(sl*100)} giu{tm}", t_manh, 3, tp, sl, tm)
-for mk in (1, 2):
-    chay2(f"manh tt{mk} chot7 cat7 giu15", t_manh, mk, 0.07, 0.07, 15)
+for mkx in (1, 2):
+    chay2(f"manh tt{mkx} chot7 cat7 giu15", t_manh, mkx, 0.07, 0.07, 15)
 # 2) 1000 lan rut ngau nhien chuoi lenh (bootstrap) cho bo goc chot3 cat6 giu8, moi lenh 20% von, 78 lenh/nam
 L2 = chay2("GOC manh tt3 chot7 cat7 giu15", t_manh, 3, 0.07, 0.07, 15, in_ct=True)
 r = [x[3] for x in L2]; random.seed(7); yrs = []; dds = []; pos = 0
