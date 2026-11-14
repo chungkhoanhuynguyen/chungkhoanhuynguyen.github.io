@@ -8,6 +8,7 @@ export const TAIL = 4.0;
 export const TOTAL_F = Math.ceil((TIMING.total + TAIL) * FPS);
 export const sc = (id: string) => TIMING.scenes.find((s) => s.id === id)!;
 const REP: [RegExp, string][] = [
+  [/Vi ét com banh/g, "Vietcombank"], [/Vi na min/g, "Vinamilk"], [/Tích Tóc/g, "TikTok"], 
   [/Cường Sô xiu/g, "Cường Sociu"], [/ép pê tê/gi, "FPT"], [/vê xê bê/gi, "VCB"], [/hát pê giê/gi, "HPG"], [/vê en em/gi, "VNM"], [/pích bôn/g, "pickleball"],
   [/chứng khoán huy nguyễn chấm com/g, "chungkhoanhuynguyen.com"], [/viên i ốt/g, "viên i-ốt"], [/Ucraina/g, "Ukraine"], [/sô pha/g, "sofa"],
   [/một trăm bốn mươi triệu/g, "140 triệu"], [/ba trăm triệu/g, "300 triệu"], [/một tỷ một lượng/g, "1 tỷ một lượng"], [/ba mươi nghìn/g, "30 nghìn"], [/ba trăm nghìn/g, "300 nghìn"], [/ba triệu/g, "3 triệu"],

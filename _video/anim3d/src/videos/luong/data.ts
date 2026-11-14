@@ -8,6 +8,7 @@ export const TAIL = 4.0;
 export const TOTAL_F = Math.ceil((TIMING.total + TAIL) * FPS);
 export const sc = (id: string) => TIMING.scenes.find((s) => s.id === id)!;
 const REP: [RegExp, string][] = [
+  [/ma két tinh/g, "marketing"], [/Ngân Săn Seo/g, "Ngân Săn Sale"], 
   [/hai mươi lăm tháng mười/g, "25/10"], [/mười tám triệu/g, "18 triệu"], [/mười hai triệu/g, "12 triệu"], [/Mười một ngày sau, mười một giờ đêm ngày năm tháng mười một/g, "11 ngày sau, 23 giờ ngày 5/11"],
   [/ba trăm mười hai nghìn đồng/g, "312.000 đồng"], [/ba trăm mười hai nghìn/g, "312 nghìn"], [/hai mươi triệu/g, "20 triệu"], [/ba mươi triệu/g, "30 triệu"], [/ba mươi lăm tuổi/g, "35 tuổi"], [/mười lăm triệu/g, "15 triệu"],
   [/hộp thứ mười hai/g, "hộp thứ 12"], [/không giờ/g, "0 giờ"], [/năm mươi phần trăm/g, "50%"], [/chín phẩy hai triệu/g, "9,2 triệu"], [/mười một phẩy hai triệu/g, "11,2 triệu"], [/quý ba/g, "quý III"],
