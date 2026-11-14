@@ -1,5 +1,5 @@
 {
- "total": 475.133,
+ "total": 464.3,
  "scenes": [
   {
    "id": "S01",
@@ -1022,22 +1022,15 @@
   {
    "id": "S20",
    "a": 459.63368,
-   "b": 475.13368,
+   "b": 464.3,
    "fa": 13789,
-   "fb": 14254,
+   "fb": 13929,
    "sens": [
     {
-     "text": "Nếu muốn tự lập kế hoạch tài chính cho gia đình khi có khủng hoảng: quỹ dự phòng bao nhiêu là đủ, chia vốn thế nào, khi nào không được bán, bạn có thể học miễn phí tại chứng khoán huy nguyễn chấm com.",
-     "a": 459.63368,
-     "b": 470.01579,
-     "fa": 13789,
-     "ns": 473423
-    },
-    {
      "text": "Hãy theo dõi kênh để xem những câu chuyện tiền bạc tiếp theo.",
-     "a": 470.46632,
-     "b": 473.27474,
-     "fa": 14114,
+     "a": 459.63368,
+     "b": 462.44105,
+     "fa": 13789,
      "ns": 128028
     }
    ]

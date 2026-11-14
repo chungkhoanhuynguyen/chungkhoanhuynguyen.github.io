@@ -38,7 +38,7 @@ const fixed = (c: V, l: V, f: number): [[V, V, number], [V, V, number]] => [[c, 
 const DREAM: React.FC<{ t: number }> = ({ t }) => <><Vignette k={0.9} col="70,0,0" /><div style={{ position: "absolute", left: 60, top: 50, fontFamily: F, fontWeight: 900, fontSize: 34, color: "#ffd0d0", background: "rgba(80,0,0,.55)", padding: "8px 20px", borderRadius: 10, opacity: Math.min(1, t / 0.4) }}>GIẤC MƠ CỦA QUANG</div></>;
 const Flash: React.FC<{ t: number; at?: number }> = ({ t, at: a0 = 0.2 }) => { const x = t - a0; if (x < 0 || x > 2.2) return null; const k = x < 0.12 ? x / 0.12 : Math.exp(-(x - 0.12) * 2.4); return <AbsoluteFill style={{ background: `rgba(255,250,235,${0.92 * k})` }} />; };
 const runners = (n: number, x0: number, x1: number, z: number, acc: Acc[] = ["box"]): Cast[] => Array.from({ length: n }, (_, i) => C("c" + (30 + i), [x0 + (i % 4) * 0.7, 0, z + (i % 3) * 0.55], (t: number) => ({ ...P(i % 2 ? "shock" : "worried", { acc: i % 3 ? acc : [] })(t), mode: "stroll", phase: (t * 1.6 + i * 0.37) % 1, side: x1 < x0 ? 1 : -1 }), [x1 + (i % 4) * 0.7, 0, z + (i % 3) * 0.55]));
-const queue = (n: number): Cast[] => Array.from({ length: n }, (_, i) => C("c" + (40 + i), [-3.6 + i * 0.85, 0, 2.6 + (i % 2) * 0.35], P(i % 3 === 0 ? "worried" : i % 3 === 1 ? "nervous" : "neutral", { acc: i % 4 === 0 ? ["phone"] : [], phase: i * 0.3, anim: true })));
+const queue = (n: number): Cast[] => Array.from({ length: n }, (_, i) => C("c" + (40 + i), [1.7 + (i + 1) * 0.42, 0, 0.2 + (i + 1) * 0.7], P(i % 3 === 0 ? "worried" : i % 3 === 1 ? "nervous" : "neutral", { acc: i % 4 === 0 ? ["phone"] : [], phase: i * 0.3, anim: true })));
 const AtmCard: React.FC<{ t: number }> = ({ t }) => <AbsoluteFill style={{ background: "radial-gradient(circle,#2a0606,#070101)", fontFamily: F, justifyContent: "center", alignItems: "center" }}><DREAM t={t} />
   <div style={{ width: 1000, height: 640, borderRadius: 30, background: "#1b2a3a", border: "14px solid #5a6b7d", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", gap: 30 }}>
     <div style={{ fontSize: 44, color: "#9fc3e6", fontWeight: 800 }}>MÁY RÚT TIỀN TỰ ĐỘNG</div>
@@ -57,7 +57,7 @@ const PlanCard: React.FC<{ t: number }> = ({ t }) => <PaperCard t={t} kind="note
 const PLAN: Plan[] = [
   { id: "S01", shots: [
     [0, () => D3(S("photo", "night", ...fixed([0, 1.6, -8], [0, 1.9, 6], 46), [], { bg: "hn/hanoi_night.jpg", bgFit: [0.6, 0.45], shake: 0.6 }), (t) => <><Flash t={t} at={0.9} /><DREAM t={t} /></>)],
-    [1, () => D3(S("photo", "night", [[0, 1.4, -7], [0, 1.3, 4], 46], [[0.6, 1.4, -6.4], [0, 1.3, 4], 44], runners(10, 6, -6, 0.4, ["box", "phone"]), { bg: "hn/street_night.jpg", bgFit: [0.5, 0.55], shake: 0.9, ease: "lin" }), (t) => <><DREAM t={t} /><BigText t={t} at={0.2} text="🚨 BÁO ĐỘNG" col="#ff4d5e" y={90} size={96} /></>)],
+    [1, () => D3(S("photo", "night", [[0, 1.5, -6], [0, 3.7, 10], 46], [[0.4, 1.5, -5.6], [0, 3.7, 10], 45], runners(12, -2.2, -11, 8.5, ["box", "phone"]), { bg: "hn/street_night.jpg", bgFit: [0.5, 0.55], shake: 0.9, ease: "lin" }), (t) => <><DREAM t={t} /><BigText t={t} at={0.2} text="🚨 BÁO ĐỘNG" col="#ff4d5e" y={90} size={96} /></>)],
     [4, () => CD((t) => <AtmCard t={t} />)],
     [5, () => CD((t) => <BreadCard t={t} a={at("S01", 5, 5) + 1.4} b={at("S01", 5, 5) + 2.7} />)],
     [6, () => CD((t) => <DreamGold t={t} a={1.9} b={3.0} />)],
@@ -131,7 +131,7 @@ const PLAN: Plan[] = [
     [10, () => D3(S("street", "night", [[HX - 4, 1.4, 2.0], [HX + 1, 1.0, 5.2], 44], [[HX + 2, 1.4, 2.0], [HX + 5, 1.0, 5.2], 44], [C("quang", [HX - 2, 0.15, 5.2], (t: number) => ({ ...P("worried", { acc: ["sweat"] })(t), mode: "stroll", phase: (t * 1.4) % 1, side: -1 }), [HX + 4, 0.15, 5.2])], { ease: "lin" }), (t) => <ClockTag t={t} text="00:00" />)],
   ] },
   { id: "S11", shots: [
-    [0, () => D3(S("photo", "dawn", [[0.4, 1.5, -5.6], [0.4, 1.3, 2.2], 44], [[0.2, 1.48, -5.0], [0.4, 1.3, 2.2], 42], [...queue(9), C("quang", [3.9, 0, 2.9], P("worried", { acc: ["sweat"] }))], { bg: "hn/gold_shop.jpg", bgFit: [0.35, 0.55] }), (t) => <LocTag t={t} l1="6 GIỜ SÁNG · 13/11" l2="Xếp hàng trước tiệm vàng" />)],
+    [0, () => D3(S("photo", "dawn", [[0.4, 1.5, -5.6], [0.4, 1.3, 2.2], 44], [[0.2, 1.48, -5.0], [0.4, 1.3, 2.2], 42], [...queue(9), C("quang", [1.7, 0, 0.2], P("worried", { acc: ["sweat"] }))], { bg: "hn/gold_shop.jpg", bgFit: [0.35, 0.55] }), (t) => <LocTag t={t} l1="6 GIỜ SÁNG · 13/11" l2="Xếp hàng trước tiệm vàng" />)],
     [2, () => CD((t) => <GoldBoard t={t} date="Sáng 13/11/2026" rows={[{ name: "Vàng miếng SJC", buy: "135", sell: "138", at: 0.3 }]} spread={"Mua 2 lượng: 276 triệu · Bán lại ngay: mất 6 triệu"} spreadAt={at("S11", 2, 4) - 0.2} />)],
   ] },
   { id: "S12", shots: [
@@ -173,17 +173,14 @@ const Meme: React.FC<{ t: number; at?: number; top: string; bot: string; small?:
   return <>{top && <div style={{ ...st, top: 70 }}>{top}</div>}{bot && <div style={{ ...st, top: y ?? (small ? 690 : noSubGap ? 175 : 620), color: small ? "#ffe14d" : "#fff", fontSize: small ? 130 : sz }}>{bot}</div>}</>; };
 
 
-const HnCta: React.FC<{ t: number; webAt: number }> = ({ t, webAt }) => { const a = sm(t / 0.5), w = sm((t - webAt) / 0.45), clickT = t - webAt - 7.2, sub = clickT > 0.35;
+const HnCta: React.FC<{ t: number; webAt: number }> = ({ t }) => { const a = sm(t / 0.5), clickT = t - 1.6, sub = clickT > 0.35;
   return <AbsoluteFill style={{ fontFamily: F, justifyContent: "center", alignItems: "center", textAlign: "center" }}><Bg t={t} hue="navy" />
     <div style={{ position: "relative", opacity: a }}>
-      <div style={{ fontSize: 58, fontWeight: 800, color: "#fff" }}>Kế hoạch tài chính cho gia đình khi có khủng hoảng</div>
-      <div style={{ marginTop: 50, opacity: w, transform: `scale(${0.9 + 0.1 * w})` }}>
-        <div style={{ fontSize: 40, fontWeight: 800, color: "#f5c518", letterSpacing: 4 }}>HỌC MIỄN PHÍ TẠI</div>
-        <div style={{ fontSize: 96, fontWeight: 900, color: "#fff", marginTop: 8 }}>chungkhoanhuynguyen.com</div>
-        <div style={{ display: "flex", gap: 30, justifyContent: "center", marginTop: 34 }}>{["Quỹ dự phòng bao nhiêu là đủ?", "Chia vốn thế nào?", "Khi nào KHÔNG được bán?"].map((s, i) => <div key={i} style={{ padding: "18px 30px", borderRadius: 18, background: "rgba(255,255,255,.1)", border: "2px solid rgba(255,255,255,.25)", color: "#dfe5f2", fontSize: 36, fontWeight: 700, opacity: sm((t - webAt - 0.6 - i * 0.35) / 0.4) }}>{s}</div>)}</div>
-        <div style={{ display: "inline-block", marginTop: 44, padding: "22px 60px", borderRadius: 60, background: sub ? "#3a3f52" : "#e62117", color: "#fff", fontSize: 46, fontWeight: 900 }}>{sub ? "✓ ĐÃ THEO DÕI" : "+ THEO DÕI KÊNH"}</div>
-      </div></div>
-    {clickT > -0.6 && clickT < 1.2 && <div style={{ position: "absolute", left: 1080 - Math.min(1, (clickT + 0.6) / 0.6) * 60, top: 900 - Math.min(1, (clickT + 0.6) / 0.6) * 40, fontSize: 70 }}>👆</div>}
+      <div style={{ fontSize: 64, fontWeight: 900, color: "#fff" }}>Những câu chuyện tiền bạc tiếp theo</div>
+      <div style={{ display: "inline-block", marginTop: 50, padding: "24px 70px", borderRadius: 60, background: sub ? "#3a3f52" : "#e62117", color: "#fff", fontSize: 52, fontWeight: 900 }}>{sub ? "✓ ĐÃ THEO DÕI" : "+ THEO DÕI KÊNH"}</div>
+    </div>
+    {clickT > -0.6 && clickT < 1.2 && <div style={{ position: "absolute", left: 1080 - Math.min(1, (clickT + 0.6) / 0.6) * 60, top: 640 - Math.min(1, (clickT + 0.6) / 0.6) * 40, fontSize: 70 }}>👆</div>}
+    <div style={{ position: "absolute", left: 40, bottom: 22, fontSize: 30, fontWeight: 700, color: "rgba(255,255,255,.6)" }}>chungkhoanhuynguyen.com</div>
     <div style={{ position: "absolute", right: 40, bottom: 20, fontSize: 22, color: "rgba(255,255,255,.55)" }}>Quan điểm cá nhân, không phải khuyến nghị đầu tư · Ảnh: Wikimedia Commons (CC BY / CC BY-SA)</div>
   </AbsoluteFill>; };
 type GSeg = Seg & { a: number; b: number; id: string; n: number };
