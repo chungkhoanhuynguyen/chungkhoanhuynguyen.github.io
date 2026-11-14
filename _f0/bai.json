@@ -36314,5 +36314,54 @@
    "lai-suat-tang-anh-huong-chung-khoan",
    "gia-vang-va-chung-khoan"
   ]
+ },
+ {
+  "slug": "ke-hoach-tai-chinh-gia-dinh-khi-co-bien",
+  "kw": "kế hoạch tài chính gia đình khi khủng hoảng",
+  "grp": 7,
+  "title": "Mẫu kế hoạch tài chính gia đình khi có biến: 4 dòng viết sẵn trước khủng hoảng",
+  "desc": "Mẫu kế hoạch tài chính gia đình khi có tin xấu, chiến tranh, khủng hoảng: quỹ dự phòng 3–6 tháng, không vay chạy theo tin đồn, việc cần làm và việc không được làm.",
+  "body": [
+   [
+    "p",
+    "Khủng hoảng thật hiếm khi đến, nhưng tin đồn về khủng hoảng thì đến thường xuyên. Người mất tiền nhiều nhất thường là người <b>bán hoảng loạn vào lúc tin đồn lên đỉnh</b> rồi mua lại ở giá cao hơn. Cách phòng hiệu quả nhất là viết sẵn kế hoạch khi đầu còn lạnh."
+   ],
+   [
+    "h2",
+    "4 dòng nên viết sẵn và dán lên tủ lạnh"
+   ],
+   [
+    "p",
+    "<b>1. Quỹ dự phòng 3–6 tháng chi tiêu</b>, gửi nơi rút nhanh, có một phần tiền mặt ở nhà. <b>2. Không bao giờ vay tiền để chạy theo tin đồn</b> (mua vàng, tích trữ hàng). <b>3. Danh sách việc cần làm</b> khi có biến: nước, thuốc, đèn pin, liên lạc người thân. <b>4. Muốn bán tài sản: kiểm tin từ nguồn chính thức và chờ ít nhất một đêm</b> rồi mới quyết."
+   ],
+   [
+    "h2",
+    "Vì sao không nên bán tháo khi có tin xấu?"
+   ],
+   [
+    "p",
+    "Lịch sử cho thấy chứng khoán thường giảm mạnh lúc có biến lớn (khủng hoảng tên lửa Cuba 1962, sự kiện 11/9/2001, xung đột Nga – Ukraine 2022) rồi hồi lại sau một thời gian. Đây là quan sát lịch sử, không đảm bảo lần sau giống vậy; vì thế quỹ dự phòng mới là thứ giúp gia đình không phải bán tài sản đúng lúc rẻ nhất."
+   ],
+   [
+    "h2",
+    "Mẫu để chép"
+   ],
+   [
+    "p",
+    "KẾ HOẠCH NHÀ MÌNH KHI CÓ BIẾN – Quỹ dự phòng: ____ triệu (đủ __ tháng). Tiền mặt ở nhà: ____. Không vay để chạy theo tin. Khi muốn bán: kiểm tin chính thức + chờ 1 đêm. Người liên lạc khẩn cấp: ____. Ký tên: ____."
+   ]
+  ],
+  "faq": [
+   [
+    "Có nên bán hết cổ phiếu khi có tin chiến tranh?",
+    "Không nên quyết định trong lúc hoảng loạn. Hãy kiểm tin từ nguồn chính thức, xem quỹ dự phòng có đủ không, và chờ ít nhất một đêm."
+   ]
+  ],
+  "rel": [
+   "quy-du-phong-truoc-khi-dau-tu",
+   "co-nen-mua-co-phieu-khi-thi-truong-giam",
+   "tam-ly-fomo-va-hoang-loan",
+   "gia-vang-va-chung-khoan"
+  ]
  }
 ]
