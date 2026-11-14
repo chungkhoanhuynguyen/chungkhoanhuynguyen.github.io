@@ -46,8 +46,8 @@ S = [
         ('Tổng tiền', '100 TRIỆU')]),
       say=("Sáng 19/1/2022, bạn đặt lệnh. Một trăm triệu, giá mười ba nghìn, được khoảng bảy nghìn sáu trăm chín mươi hai cổ phiếu. "
            "Hai tháng sau, giá hồi lên mười bốn nghìn chín trăm năm mươi, bạn lãi mười lăm phần trăm. Bạn chụp màn hình gửi Hùng: thấy chưa, bắt đáy là phải dứt khoát.")),
- dict(k='bignum', anh=SGD, cap=('ĐỈNH 22.550 NGÀY 7/1/2022', 'BA TUẦN SAU CÒN 11.200'), cols=CR, moc=True, value=-50, fmt='{:+,.0f}', unit='%', top='TRONG 13 PHIÊN', sub='22.550 xuống 11.200, giá điều chỉnh – WiData', col=RED,
-      say=("Nhưng bạn không biết vì sao giá rơi. Phiên 7/1/2022, mã này đóng cửa ở hai mươi hai nghìn năm trăm năm mươi đồng. Chỉ mười ba phiên sau, phiên 25/1/2022, còn mười một nghìn hai trăm. Mất một nửa. "
+ dict(k='bignum', anh=SGD, cap=('ĐỈNH 22.550 NGÀY 7/1/2022', 'BA TUẦN SAU CÒN 11.200'), cols=CR, moc=True, value=-50, fmt='{:+,.0f}', unit='%', top='TRONG 12 PHIÊN', sub='22.550 xuống 11.200, giá điều chỉnh – WiData', col=RED,
+      say=("Nhưng bạn không biết vì sao giá rơi. Phiên 7/1/2022, mã này đóng cửa ở hai mươi hai nghìn năm trăm năm mươi đồng. Chỉ mười hai phiên sau, phiên 25/1/2022, còn mười một nghìn hai trăm. Mất một nửa. "
            "Và người bán đầu tiên, trước khi bạn kịp hiểu chuyện gì, lại là người hiểu doanh nghiệp này rõ nhất.")),
  # ---------------- CHƯƠNG 2 ----------------
  dict(k='giay', ch='Chương 2 – Người bán là ai?', cap=('NGƯỜI BÁN ĐẦU TIÊN', 'LÀ CHÍNH CHỦ TỊCH'), cols=CR, moc=True, giay=dict(tieu_de='CHUYỆN NÀY CÓ THẬT – THÁNG 1/2022', so='VnEconomy 1/2022, giá WiData', dau='ĐÃ XẢY RA', dieu=[
