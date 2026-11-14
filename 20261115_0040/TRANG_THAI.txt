@@ -1,0 +1,20 @@
+total 74008
+drwxr-xr-x 2 runner runner     4096 Nov 14 19:26 .
+drwxr-xr-x 3 runner runner     4096 Nov 14 19:26 ..
+-rw-r--r-- 1 runner runner 53328016 Nov 14 19:26 CH1911ND.mp4
+-rw-r--r-- 1 runner runner    16347 Nov 14 19:26 CH1911ND.srt
+-rw-r--r-- 1 runner runner 10452906 Nov 14 19:26 CH1911ND_R1.mp4
+-rw-r--r-- 1 runner runner  2495080 Nov 14 19:26 CH1911ND_S1.mp4
+-rw-r--r-- 1 runner runner  4114077 Nov 14 19:26 CH1911ND_S2.mp4
+-rw-r--r-- 1 runner runner  3489419 Nov 14 19:26 CH1911ND_S3.mp4
+-rw-r--r-- 1 runner runner     3533 Nov 14 19:26 CH1911ND_anh.txt
+-rw-r--r-- 1 runner runner   611141 Nov 14 19:26 CH1911ND_bia.png
+-rw-r--r-- 1 runner runner   614063 Nov 14 19:26 CH1911ND_bia_b.png
+-rw-r--r-- 1 runner runner   613233 Nov 14 19:26 CH1911ND_bia_c.png
+-rw-r--r-- 1 runner runner     2837 Nov 14 19:26 CH1911ND_canh.json
+-rw-r--r-- 1 runner runner      349 Nov 14 19:26 CH1911ND_chuong.txt
+-rw-r--r-- 1 runner runner      174 Nov 14 19:26 CH1911ND_qc.txt
+-rw-r--r-- 1 runner runner      408 Nov 14 19:26 CH1911ND_shorts.json
+-rw-r--r-- 1 runner runner        0 Nov 14 19:26 TRANG_THAI.txt
+-rw-r--r-- 1 runner runner     5317 Nov 14 19:26 meta.json
+run: https://github.com/chungkhoanhuynguyen/chungkhoanhuynguyen.github.io/actions/runs/43628723314

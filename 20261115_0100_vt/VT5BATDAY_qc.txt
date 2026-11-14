@@ -1,0 +1,7 @@
+CẢNH BÁO cảnh 5: câu cụt thiếu chủ ngữ – "Mất một nửa."
+CẢNH BÁO cảnh 6: câu cụt thiếu chủ ngữ – "Chuyện này có thật."
+CẢNH BÁO cảnh 7: câu cụt thiếu chủ ngữ – "Nghe rất hợp lý."
+CẢNH BÁO cảnh 10: câu cụt thiếu chủ ngữ – "Bạn không còn nút bán."
+CẢNH BÁO cảnh 12: câu cụt thiếu chủ ngữ – "Mình làm một phép tính."
+CẢNH BÁO cảnh 14: câu cụt thiếu chủ ngữ – "Hùng gửi một bài báo."
+CẢNH BÁO cảnh 16: câu cụt thiếu chủ ngữ – "Đó là lời cảnh báo."

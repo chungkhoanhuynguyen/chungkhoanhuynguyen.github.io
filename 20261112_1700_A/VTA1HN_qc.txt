@@ -1,0 +1,13 @@
+CẢNH BÁO cảnh 1: câu cụt thiếu chủ ngữ – "Xăng?"
+CẢNH BÁO cảnh 1: câu cụt thiếu chủ ngữ – "Gạo?"
+CẢNH BÁO cảnh 2: câu cụt thiếu chủ ngữ – "Bạn mở cửa sổ."
+CẢNH BÁO cảnh 4: câu quá dài (40 từ) – tách đôi
+CẢNH BÁO cảnh 4: câu cụt thiếu chủ ngữ – "Không phải phim."
+CẢNH BÁO cảnh 5: câu cụt thiếu chủ ngữ – "Hướng dẫn rất cụ thể."
+CẢNH BÁO cảnh 6: câu cụt thiếu chủ ngữ – "Ba ngày."
+CẢNH BÁO cảnh 7: câu cụt thiếu chủ ngữ – "Đức khuyên tới mười ngày."
+CẢNH BÁO cảnh 8: câu cụt thiếu chủ ngữ – "Rồi đến xăng."
+LỖI cảnh 10: từ giật gân/thiếu chuẩn mực
+CẢNH BÁO cảnh 11: câu quá dài (39 từ) – tách đôi
+CẢNH BÁO cảnh 13: câu quá dài (49 từ) – tách đôi
+CẢNH BÁO cảnh 14: lặp từ liền nhau

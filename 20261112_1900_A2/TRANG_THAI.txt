@@ -1,0 +1,20 @@
+total 53736
+drwxr-xr-x 2 runner runner     4096 Nov 12 13:38 .
+drwxr-xr-x 3 runner runner     4096 Nov 12 13:38 ..
+-rw-r--r-- 1 runner runner        0 Nov 12 13:38 TRANG_THAI.txt
+-rw-r--r-- 1 runner runner 33041536 Nov 12 13:38 VTA2HZ.mp4
+-rw-r--r-- 1 runner runner    11117 Nov 12 13:38 VTA2HZ.srt
+-rw-r--r-- 1 runner runner  9801211 Nov 12 13:38 VTA2HZ_R1.mp4
+-rw-r--r-- 1 runner runner  3473315 Nov 12 13:38 VTA2HZ_S1.mp4
+-rw-r--r-- 1 runner runner  3824214 Nov 12 13:38 VTA2HZ_S2.mp4
+-rw-r--r-- 1 runner runner  3424106 Nov 12 13:38 VTA2HZ_S3.mp4
+-rw-r--r-- 1 runner runner     3016 Nov 12 13:38 VTA2HZ_anh.txt
+-rw-r--r-- 1 runner runner   470817 Nov 12 13:38 VTA2HZ_bia.png
+-rw-r--r-- 1 runner runner   466848 Nov 12 13:38 VTA2HZ_bia_b.png
+-rw-r--r-- 1 runner runner   472329 Nov 12 13:38 VTA2HZ_bia_c.png
+-rw-r--r-- 1 runner runner     2225 Nov 12 13:38 VTA2HZ_canh.json
+-rw-r--r-- 1 runner runner      338 Nov 12 13:38 VTA2HZ_chuong.txt
+-rw-r--r-- 1 runner runner      314 Nov 12 13:38 VTA2HZ_qc.txt
+-rw-r--r-- 1 runner runner      414 Nov 12 13:38 VTA2HZ_shorts.json
+-rw-r--r-- 1 runner runner     3359 Nov 12 13:38 meta.json
+run: https://github.com/chungkhoanhuynguyen/chungkhoanhuynguyen.github.io/actions/runs/43224578423

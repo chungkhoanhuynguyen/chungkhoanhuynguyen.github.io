@@ -1,0 +1,20 @@
+total 61452
+drwxr-xr-x 2 runner runner     4096 Nov 12 13:52 .
+drwxr-xr-x 3 runner runner     4096 Nov 12 13:52 ..
+-rw-r--r-- 1 runner runner        0 Nov 12 13:52 TRANG_THAI.txt
+-rw-r--r-- 1 runner runner 37349623 Nov 12 13:52 VTB1USD.mp4
+-rw-r--r-- 1 runner runner    12438 Nov 12 13:52 VTB1USD.srt
+-rw-r--r-- 1 runner runner 10976160 Nov 12 13:52 VTB1USD_R1.mp4
+-rw-r--r-- 1 runner runner  3987472 Nov 12 13:52 VTB1USD_S1.mp4
+-rw-r--r-- 1 runner runner  5501440 Nov 12 13:52 VTB1USD_S2.mp4
+-rw-r--r-- 1 runner runner  3539700 Nov 12 13:52 VTB1USD_S3.mp4
+-rw-r--r-- 1 runner runner     2022 Nov 12 13:52 VTB1USD_anh.txt
+-rw-r--r-- 1 runner runner   493191 Nov 12 13:52 VTB1USD_bia.png
+-rw-r--r-- 1 runner runner   512686 Nov 12 13:52 VTB1USD_bia_b.png
+-rw-r--r-- 1 runner runner   498522 Nov 12 13:52 VTB1USD_bia_c.png
+-rw-r--r-- 1 runner runner     2289 Nov 12 13:52 VTB1USD_canh.json
+-rw-r--r-- 1 runner runner      289 Nov 12 13:52 VTB1USD_chuong.txt
+-rw-r--r-- 1 runner runner      464 Nov 12 13:52 VTB1USD_qc.txt
+-rw-r--r-- 1 runner runner      371 Nov 12 13:52 VTB1USD_shorts.json
+-rw-r--r-- 1 runner runner     3342 Nov 12 13:52 meta.json
+run: https://github.com/chungkhoanhuynguyen/chungkhoanhuynguyen.github.io/actions/runs/43224573074

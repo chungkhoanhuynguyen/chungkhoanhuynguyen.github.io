@@ -1,0 +1,20 @@
+total 70304
+drwxr-xr-x 2 runner runner     4096 Nov 12 18:56 .
+drwxr-xr-x 3 runner runner     4096 Nov 12 18:56 ..
+-rw-r--r-- 1 runner runner        0 Nov 12 18:56 TRANG_THAI.txt
+-rw-r--r-- 1 runner runner 45374916 Nov 12 18:56 VTD1F0.mp4
+-rw-r--r-- 1 runner runner    13603 Nov 12 18:56 VTD1F0.srt
+-rw-r--r-- 1 runner runner 12125083 Nov 12 18:56 VTD1F0_R1.mp4
+-rw-r--r-- 1 runner runner  4949439 Nov 12 18:56 VTD1F0_S1.mp4
+-rw-r--r-- 1 runner runner  4111095 Nov 12 18:56 VTD1F0_S2.mp4
+-rw-r--r-- 1 runner runner  3656378 Nov 12 18:56 VTD1F0_S3.mp4
+-rw-r--r-- 1 runner runner     3730 Nov 12 18:56 VTD1F0_anh.txt
+-rw-r--r-- 1 runner runner   576269 Nov 12 18:56 VTD1F0_bia.png
+-rw-r--r-- 1 runner runner   562044 Nov 12 18:56 VTD1F0_bia_b.png
+-rw-r--r-- 1 runner runner   573413 Nov 12 18:56 VTD1F0_bia_c.png
+-rw-r--r-- 1 runner runner     2380 Nov 12 18:56 VTD1F0_canh.json
+-rw-r--r-- 1 runner runner      392 Nov 12 18:56 VTD1F0_chuong.txt
+-rw-r--r-- 1 runner runner      325 Nov 12 18:56 VTD1F0_qc.txt
+-rw-r--r-- 1 runner runner      381 Nov 12 18:56 VTD1F0_shorts.json
+-rw-r--r-- 1 runner runner     3304 Nov 12 18:56 meta.json
+run: https://github.com/chungkhoanhuynguyen/chungkhoanhuynguyen.github.io/actions/runs/43279028153

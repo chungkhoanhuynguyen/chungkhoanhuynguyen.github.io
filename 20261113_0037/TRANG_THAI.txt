@@ -1,0 +1,20 @@
+total 70480
+drwxr-xr-x 2 runner runner     4096 Nov 12 19:04 .
+drwxr-xr-x 3 runner runner     4096 Nov 12 19:04 ..
+-rw-r--r-- 1 runner runner 50959923 Nov 12 19:04 CH1611GDP.mp4
+-rw-r--r-- 1 runner runner    16427 Nov 12 19:04 CH1611GDP.srt
+-rw-r--r-- 1 runner runner  9329196 Nov 12 19:04 CH1611GDP_R1.mp4
+-rw-r--r-- 1 runner runner  2539718 Nov 12 19:04 CH1611GDP_S1.mp4
+-rw-r--r-- 1 runner runner  2574759 Nov 12 19:04 CH1611GDP_S2.mp4
+-rw-r--r-- 1 runner runner  4625029 Nov 12 19:04 CH1611GDP_S3.mp4
+-rw-r--r-- 1 runner runner     3758 Nov 12 19:04 CH1611GDP_anh.txt
+-rw-r--r-- 1 runner runner   691876 Nov 12 19:04 CH1611GDP_bia.png
+-rw-r--r-- 1 runner runner   678695 Nov 12 19:04 CH1611GDP_bia_b.png
+-rw-r--r-- 1 runner runner   702448 Nov 12 19:04 CH1611GDP_bia_c.png
+-rw-r--r-- 1 runner runner     3062 Nov 12 19:04 CH1611GDP_canh.json
+-rw-r--r-- 1 runner runner      447 Nov 12 19:04 CH1611GDP_chuong.txt
+-rw-r--r-- 1 runner runner       60 Nov 12 19:04 CH1611GDP_qc.txt
+-rw-r--r-- 1 runner runner      397 Nov 12 19:04 CH1611GDP_shorts.json
+-rw-r--r-- 1 runner runner        0 Nov 12 19:04 TRANG_THAI.txt
+-rw-r--r-- 1 runner runner     4009 Nov 12 19:04 meta.json
+run: https://github.com/chungkhoanhuynguyen/chungkhoanhuynguyen.github.io/actions/runs/43278807019

@@ -1,0 +1,6 @@
+CẢNH BÁO cảnh 1: câu cụt thiếu chủ ngữ – "Mình giàu rồi à?"
+CẢNH BÁO cảnh 1: câu cụt thiếu chủ ngữ – "Bạn cũng nghĩ vậy."
+CẢNH BÁO cảnh 5: câu cụt thiếu chủ ngữ – "Rồi chuyện nhỏ bắt đầu."
+CẢNH BÁO cảnh 6: câu cụt thiếu chủ ngữ – "Thử làm phép tính nhé."
+CẢNH BÁO cảnh 6: lặp từ liền nhau
+CẢNH BÁO cảnh 8: câu cụt thiếu chủ ngữ – "Kết quả?"
