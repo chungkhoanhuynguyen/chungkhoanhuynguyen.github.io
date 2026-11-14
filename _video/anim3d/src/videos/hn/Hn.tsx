@@ -174,9 +174,10 @@ const Meme: React.FC<{ t: number; at?: number; top: string; bot: string; small?:
   return <>{top && <div style={{ ...st, top: 70 }}>{top}</div>}{bot && <div style={{ ...st, top: y ?? (small ? 690 : noSubGap ? 175 : 620), color: small ? "#ffe14d" : "#fff", fontSize: small ? 130 : sz }}>{bot}</div>}</>; };
 
 
-const HnCta: React.FC<{ t: number; webAt: number }> = ({ t }) => { const a = sm(t / 0.5), clickT = t - 1.6, sub = clickT > 0.35;
+const HnCta: React.FC<{ t: number; webAt: number }> = ({ t }) => { const a = sm(t / 0.5), clickT = t - 9.5, sub = clickT > 0.35;
   return <AbsoluteFill style={{ fontFamily: F, justifyContent: "center", alignItems: "center", textAlign: "center" }}><Bg t={t} hue="navy" />
     <div style={{ position: "relative", opacity: a }}>
+      <div style={{ fontSize: 40, fontWeight: 800, color: "#f5c518", marginBottom: 18, opacity: sm((t - 0.6) / 0.4) }}>📄 Mẫu kế hoạch tài chính gia đình khi có biến – miễn phí tại chungkhoanhuynguyen.com</div>
       <div style={{ fontSize: 64, fontWeight: 900, color: "#fff" }}>Những câu chuyện tiền bạc tiếp theo</div>
       <div style={{ display: "inline-block", marginTop: 50, padding: "24px 70px", borderRadius: 60, background: sub ? "#3a3f52" : "#e62117", color: "#fff", fontSize: 52, fontWeight: 900 }}>{sub ? "✓ ĐÃ THEO DÕI" : "+ THEO DÕI KÊNH"}</div>
     </div>
