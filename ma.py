@@ -73,6 +73,7 @@ except Exception: pass
 try: SECM.update((D("data/sec.bin") or {}).get("m", {}))
 except Exception: pass
 SYMS = sorted(s for s, x in S.items() if x[1] in EXN and s in FD and (FD[s].get("v10") or 0) >= 20000 and os.path.exists(os.path.join(ROOT, "data/c", s + ".bin")))
+SYMS = [s for s in SYMS if len(bars(s)) >= 30]  # NV2 14/11: bỏ mã mới niêm yết <30 phiên (vd DVV) để không sinh link /ma/ tới trang chưa có
 
 def head(title, desc, url, ld):
     return f"""<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests"><meta name="referrer" content="strict-origin-when-cross-origin">
@@ -340,7 +341,8 @@ if len(TOM) >= 20:
     tot = sum(v["ln"] for v in L.values()); up = sum(1 for v in L.values() if (v.get("yoy") or 0) > 0); dn = sum(1 for v in L.values() if v.get("yoy") is not None and v["yoy"] < 0)
     lo = sum(1 for v in L.values() if v["ln"] < 0)
     def nm(t): return e(S[t][2]) if t in S and S[t][2] and S[t][2] != t else ""
-    def row(t, v): return (f"<tr><td><a href='/ma/{t}.html'><b>{t}</b></a><br><small class='n'>{nm(t)}</small></td><td class='r'>{_nt(v['ln'])}</td>"
+    _MADE = set(made)
+    def row(t, v): return (f"<tr><td>{(chr(60)+'a href=\'/ma/'+t+'.html\'>'+chr(60)+'b>'+t+chr(60)+'/b>'+chr(60)+'/a>') if t in _MADE else (chr(60)+'b>'+t+chr(60)+'/b>')}<br><small class='n'>{nm(t)}</small></td><td class='r'>{_nt(v['ln'])}</td>"
                            f"<td class='r {'up' if (v.get('yoy') or 0) >= 0 else 'dn'}'>{'–' if v.get('yoy') is None else (('+' if v['yoy'] >= 0 else '−') + f'{abs(v[chr(121)+chr(111)+chr(121)]):.1f}'.replace('.', ',') + '%')}</td>"
                            f"<td class='r'>{_nt(v.get('ln4'))}</td><td class='r'>{'–' if v.get('roe') is None else f'{v[chr(114)+chr(111)+chr(101)]:.1f}'.replace('.', ',') + '%'}</td></tr>")
     HD = "<tr><td><b>Mã</b></td><td class='r'><b>LNST quý (tỷ)</b></td><td class='r'><b>So cùng kỳ</b></td><td class='r'><b>LNST 4 quý</b></td><td class='r'><b>ROE</b></td></tr>"
