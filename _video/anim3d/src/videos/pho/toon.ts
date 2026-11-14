@@ -17,7 +17,7 @@ export type Build = "adult" | "stout" | "kid";
 export type Outfit = {
   jacket: string; pants: string; boots: string; hat?: string | null; belt?: string | null; buttons?: string; rifle?: boolean;
   sash?: string; sword?: boolean; moustache?: string; skin?: string; head?: number; cap?: string; hair?: string; dress?: string;
-  build?: Build;
+  build?: Build; tie?: string; collar?: string; crest?: string; bow?: string;
 };
 type P2 = [number, number];
 
@@ -579,7 +579,12 @@ export const bodyFront = (p: Pen, o: Outfit, opts: FrontOpts) => {
         p.poly([[xc - 3.5 * u, yc - 3.5 * u], [xc + 3.5 * u, yc - 3.5 * u], [xc + 3.5 * u, yc + 3.5 * u], [xc - 3.5 * u, yc + 3.5 * u]], "#d9dde0", 1.5 * u);
       }
       if (o.sash) p.band([[tcx - 1.3 * T.a, torsoBot - 0.32 * HH], [tcx + 1.3 * T.a, torsoBot - 0.32 * HH]], o.sash, 0.13 * HH, 1.8 * u);
-      for (let i = 0; i < 4; i++) {
+      if (o.collar || o.tie) {   // đồng phục quý tộc: cổ áo sơ mi chữ V + cà vạt + huy hiệu
+        p.poly([[tcx - 0.6 * T.a, chin - 0.04 * HH], [tcx + 0.6 * T.a, chin - 0.04 * HH], [tcx + 2 * u * facing, chin + 0.5 * HH]], o.collar ?? "#f6f4ee", 1.6 * u);
+        if (o.tie) p.poly([[tcx - 4 * u + 2 * u * facing, chin + 0.02 * HH], [tcx + 4 * u + 2 * u * facing, chin + 0.02 * HH], [tcx + 6.5 * u + 2 * u * facing, chin + 0.44 * HH], [tcx + 2 * u * facing, chin + 0.56 * HH], [tcx - 6.5 * u + 2 * u * facing, chin + 0.44 * HH]], o.tie, 1.4 * u);
+      }
+      if (o.crest) { const cx = tcx - 0.55 * T.a, cy = chin + 0.32 * HH; p.poly([[cx - 8 * u, cy - 8 * u], [cx + 8 * u, cy - 8 * u], [cx + 8 * u, cy + 3 * u], [cx, cy + 11 * u], [cx - 8 * u, cy + 3 * u]], o.crest, 1.3 * u); p.dot(cx, cy - 1 * u, 2.2 * u, "#7a1424"); }
+      for (let i = 0; i < (o.tie ? 0 : 4); i++) {
         const y = chin + 0.12 * HH + i * 0.2 * HH;
         if (o.sash && Math.abs(y - (torsoBot - 0.32 * HH)) < 0.08 * HH) continue;
         p.dot(tcx + 2 * u * facing, y, 2.2 * u + 0.8 * u, INK); p.dot(tcx + 2 * u * facing, y, 2.2 * u, o.buttons ?? shade(o.jacket, 0.7));
@@ -727,7 +732,10 @@ export const bodySide = (p: Pen, o: Outfit, opts: SideOpts) => {
   p.clip(tp, () => {
     if (o.belt) p.band([[tcx - 0.65 * T.a, chin - 0.05 * HH], [tcx + 0.75 * T.a, torsoBot - 0.1 * HH]], o.belt!, 5.5 * u, 1.8 * u);
     if (o.sash) p.band([[tcx - 1.3 * T.a, torsoBot - 0.32 * HH], [tcx + 1.3 * T.a, torsoBot - 0.32 * HH]], o.sash, 0.13 * HH, 1.8 * u);
-    if (!o.dress) for (let i = 0; i < 3; i++) { const y = chin + 0.16 * HH + i * 0.24 * HH; p.dot(tcx + 0.8 * T.a, y, 3 * u, INK); p.dot(tcx + 0.8 * T.a, y, 2.2 * u, o.buttons ?? shade(o.jacket, 0.7)); }
+    if (o.collar || o.tie) { p.poly([[tcx + 1.0 * T.a, chin - 0.04 * HH], [tcx + 0.45 * T.a, chin - 0.04 * HH], [tcx + 0.9 * T.a, chin + 0.4 * HH]], o.collar ?? "#f6f4ee", 1.5 * u);
+      if (o.tie) p.poly([[tcx + 0.72 * T.a, chin + 0.02 * HH], [tcx + 0.97 * T.a, chin + 0.02 * HH], [tcx + 1.02 * T.a, chin + 0.5 * HH], [tcx + 0.8 * T.a, chin + 0.44 * HH]], o.tie, 1.3 * u); }
+    if (o.crest) { const cx = tcx + 0.2 * T.a, cy = chin + 0.32 * HH; p.poly([[cx - 8 * u, cy - 8 * u], [cx + 8 * u, cy - 8 * u], [cx + 8 * u, cy + 3 * u], [cx, cy + 11 * u], [cx - 8 * u, cy + 3 * u]], o.crest, 1.2 * u); }
+    if (!o.dress && !o.tie) for (let i = 0; i < 3; i++) { const y = chin + 0.16 * HH + i * 0.24 * HH; p.dot(tcx + 0.8 * T.a, y, 3 * u, INK); p.dot(tcx + 0.8 * T.a, y, 2.2 * u, o.buttons ?? shade(o.jacket, 0.7)); }
   });
   p.inkRing(tp, ow, thick);
   if (rifle) {
