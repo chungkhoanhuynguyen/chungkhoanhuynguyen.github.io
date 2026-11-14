@@ -22,7 +22,7 @@ R = dict(key='RV1511ND', tieu_de='87% tài sản người Việt nằm ở nhà 
   C('GIÁ GIẢM 20 ĐẾN 40%', 'Giá nhà giảm 20 đến 40% từ đỉnh, tuỳ cách đo. Evergrande, tập đoàn lớn nhất nhì ngành, bị toà ra lệnh thanh lý với khoảng 300 tỷ đô la nợ.',
     the=dict(loai='lon', tieu='GIÁ NHÀ TRUNG QUỐC TỪ ĐỈNH 2021', nguon='Người Quan Sát 12/2025, The Real Deal 7/2026', dong=[['GIẢM 20 ĐẾN 40%', 92, 'do'], ['EVERGRANDE NỢ 300 TỶ USD', 54, 'trang']])),
   C('VAY KINH DOANH NHÀ +19,59%', 'Còn Việt Nam, tới cuối tháng 8, vay để kinh doanh nhà đất tăng 19,59%, còn vay mua nhà để ở chỉ tăng 1,02%.',
-    the=dict(loai='cot', tieu='TÍN DỤNG BẤT ĐỘNG SẢN, 8 THÁNG 2026 (%)', nguon='Ngân hàng Nhà nước, 31/8/2026', hang=[['Kinh doanh nhà đất', 19.59], ['Mua nhà để ở', 1.02]], noi=[0], dv='%', max=25)),
+    the=dict(loai='cot', tieu='TÍN DỤNG NHÀ ĐẤT, 8 THÁNG 2026 (%)', nguon='Ngân hàng Nhà nước, 31/8/2026', hang=[['Kinh doanh nhà đất', 19.59], ['Mua nhà để ở', 1.02]], noi=[0], dv='%', max=25)),
   C('CĂN 6 TỶ = 27 NĂM LƯƠNG', 'Thu nhập bình quân một người lao động khoảng 9,2 triệu mỗi tháng. Em tự tính, một căn hộ 6 tỷ ở Hà Nội bằng khoảng 27 năm lương của cả hai vợ chồng, nếu không tiêu một đồng nào.',
     the=dict(loai='lon', tieu='CĂN HỘ 6 TỶ Ở HÀ NỘI BẰNG', nguon='Em tự tính, thu nhập lao động quý 3/2026', dong=[['27 NĂM', 130, 'vang'], ['LƯƠNG HAI VỢ CHỒNG', 58, 'trang']])),
   C('GIAO DỊCH CHẬM LẠI', 'Quý 3, cả nước có khoảng 92 nghìn giao dịch nhà đất, chỉ bằng 92% quý trước. Chưa phải cú sập như Trung Quốc, nhưng thị trường đã chậm lại.',

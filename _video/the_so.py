@@ -21,7 +21,9 @@ def nen(sp, t):
     im = Image.new("RGB", (W, H), BG); d = ImageDraw.Draw(im)
     d.rounded_rectangle([6, 6, W - 6, H - 6], 36, outline=(90, 50, 150), width=4)
     a = ease(t / 0.4)
-    d.text((W / 2, 50 + (1 - a) * 20), sp.get("tieu", ""), font=F("ExtraBold", 44), fill=tuple(int(c * a + 24 * (1 - a)) for c in MAU["tim2"]), anchor="ma")
+    tv = sp.get("tieu", ""); ft = 44
+    while ft > 26 and d.textlength(tv, font=F("ExtraBold", ft)) > W - 80: ft -= 2   # (15/11 NV1, RV1511ND: tiêu đề dài tràn 2 mép) tự co chữ
+    d.text((W / 2, 50 + (1 - a) * 20), tv, font=F("ExtraBold", ft), fill=tuple(int(c * a + 24 * (1 - a)) for c in MAU["tim2"]), anchor="ma")
     if sp.get("nguon"): d.text((W / 2, H - 58), "Nguồn: " + sp["nguon"], font=F("Medium", 26), fill=MO, anchor="ma")
     return im, d
 
