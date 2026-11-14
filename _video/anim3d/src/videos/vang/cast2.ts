@@ -1,7 +1,8 @@
 // Nhân vật video "Vàng đỉnh": thẻ hoạt hình 2D đứng trong cảnh 3D (billboard trụ) + phụ kiện vẽ tay (tai nghe, nón lá, ô, áo mưa, nước mắt, điện thoại, túi vàng, hộp kim cương, cốc trà, tờ giấy).
 import * as THREE from "three";
+import { drawAnime, AnimeLook } from "./anime";
 import { Pen, bodyFront, bodySide, Outfit as Outfit0, Expr, Prop, INK } from "../pho/toon";
-export type Outfit = Outfit0 & { long?: boolean };
+export type Outfit = Outfit0 & { long?: boolean; anime?: AnimeLook };
 import { NOINK } from "../pho/ink";
 
 export const DO: Outfit = { jacket: "#2b2d38", pants: "#3a3f52", boots: "#e9e6df", hat: "hair", hair: "#141215", belt: null, buttons: "#565b6e", build: "stout", skin: "#f3cfa8" };
@@ -38,13 +39,13 @@ export const OUT: Record<string, { o: Outfit; h: number; seed: number }> = {
   baove: { o: { jacket: "#3b4f3a", pants: "#2e2c30", boots: "#222", hat: "cap", cap: "#2f3a2a", belt: null, buttons: "#d8c7a8", skin: "#d9a77e" }, h: 1.66, seed: 107 },
   tronghau: { o: { jacket: "#f08a1c", pants: "#2b3346", boots: "#f4f4f2", hat: "cap", cap: "#1f6f3a", belt: null, buttons: "#ffffff", skin: "#e9bf96" }, h: 1.72, seed: 109 },
   toanbop: { o: { jacket: "#2a5aa8", pants: "#2a3a5a", boots: "#2a2a2a", hat: "hair", hair: "#121212", belt: null, buttons: "#f2d36b", skin: "#d9a77e", build: "stout" }, h: 1.7, seed: 113 },
-  thay: { o: { jacket: "#5a4632", pants: "#2e2c30", boots: "#3a2a20", hat: "hair", hair: "#e8e4dc", belt: null, buttons: "#d8c7a8", skin: "#e8c39e", moustache: "#d8d2c8", collar: "#f8f6f0", tie: "#7a1424" }, h: 1.74, seed: 131 },
-  hana: { o: { jacket: "#1b2f5e", collar: "#f8f6f0", tie: "#7a1424", crest: "#e0b54a", pants: "#1b2f5e", boots: "#2a1d1b", hat: "hair", hair: "#e9c46a", belt: null, buttons: "#e0b54a", skin: "#ffe6d2", long: true }, h: 1.66, seed: 137 },
-  jiho: { o: { jacket: "#1b2f5e", collar: "#f8f6f0", tie: "#1f6f4a", crest: "#e0b54a", pants: "#2b2f3a", boots: "#111", hat: "hair", hair: "#121212", belt: null, buttons: "#e0b54a", skin: "#f6d8bc" }, h: 1.76, seed: 139 },
-  khalid: { o: { jacket: "#1b2f5e", collar: "#f8f6f0", tie: "#c9a64a", crest: "#e0b54a", pants: "#2b2f3a", boots: "#3a2a20", hat: "hair", hair: "#141215", belt: null, buttons: "#e0b54a", skin: "#c99064", moustache: "#1a1414" }, h: 1.78, seed: 149 },
-  sophia: { o: { jacket: "#6b1424", collar: "#f8f6f0", tie: "#1b2f5e", crest: "#e0b54a", pants: "#6b1424", boots: "#2a1d1b", hat: "hair", hair: "#7a4a2a", belt: null, buttons: "#e0b54a", skin: "#ffe0c6", long: true }, h: 1.68, seed: 151 },
-  kenji: { o: { jacket: "#1b2f5e", collar: "#f8f6f0", tie: "#3a3f8a", crest: "#e0b54a", pants: "#2b2f3a", boots: "#111", hat: "hair", hair: "#141215", belt: null, buttons: "#e0b54a", skin: "#f3d4b4" }, h: 1.7, seed: 157 },
-  baonam: { o: { jacket: "#6b1424", collar: "#f8f6f0", tie: "#c9a64a", crest: "#e0b54a", pants: "#2b2f3a", boots: "#3a2a20", hat: "hair", hair: "#121212", belt: null, buttons: "#e0b54a", skin: "#e9bf96" }, h: 1.74, seed: 163 },
+  thay: { o: { jacket: "#5a4632", pants: "#2e2c30", boots: "#3a2a20", hat: "hair", hair: "#e8e4dc", belt: null, buttons: "#d8c7a8", skin: "#e8c39e", moustache: "#d8d2c8", collar: "#f8f6f0", tie: "#7a1424", anime: { skin: "#f1cfae", hair: "#dcd6cc", eye: "#5a3a22", jacket: "#5a4632", pants: "#3a3430", shoes: "#3a2418", collar: "#f8f6f0", tie: "#7a1424", style: "old", moustache: "#e4ded4", glasses: true, h: 1.78 } }, h: 1.74, seed: 131 },
+  hana: { o: { jacket: "#1b2f5e", collar: "#f8f6f0", tie: "#7a1424", crest: "#e0b54a", pants: "#1b2f5e", boots: "#2a1d1b", hat: "hair", hair: "#e9c46a", belt: null, buttons: "#e0b54a", skin: "#ffe6d2", long: true, anime: { skin: "#ffe9da", hair: "#f0cf7a", eye: "#2f7fd8", jacket: "#1b2f5e", pants: "#3a2a4a", shoes: "#2a1d1b", collar: "#f8f6f0", tie: "#7a1424", crest: "#e0b54a", girl: true, style: "long", h: 1.64 } }, h: 1.66, seed: 137 },
+  jiho: { o: { jacket: "#1b2f5e", collar: "#f8f6f0", tie: "#1f6f4a", crest: "#e0b54a", pants: "#2b2f3a", boots: "#111", hat: "hair", hair: "#121212", belt: null, buttons: "#e0b54a", skin: "#f6d8bc", anime: { skin: "#f8dcc2", hair: "#1a1a22", eye: "#4a3020", jacket: "#1b2f5e", pants: "#2b2f3a", shoes: "#141414", collar: "#f8f6f0", tie: "#1f6f4a", crest: "#e0b54a", style: "neat", h: 1.74 } }, h: 1.76, seed: 139 },
+  khalid: { o: { jacket: "#1b2f5e", collar: "#f8f6f0", tie: "#c9a64a", crest: "#e0b54a", pants: "#2b2f3a", boots: "#3a2a20", hat: "hair", hair: "#141215", belt: null, buttons: "#e0b54a", skin: "#c99064", moustache: "#1a1414", anime: { skin: "#c99064", hair: "#16121a", eye: "#3a2a12", jacket: "#1b2f5e", pants: "#2b2f3a", shoes: "#3a2418", collar: "#f8f6f0", tie: "#c9a64a", crest: "#e0b54a", style: "spiky", h: 1.76 } }, h: 1.78, seed: 149 },
+  sophia: { o: { jacket: "#6b1424", collar: "#f8f6f0", tie: "#1b2f5e", crest: "#e0b54a", pants: "#6b1424", boots: "#2a1d1b", hat: "hair", hair: "#7a4a2a", belt: null, buttons: "#e0b54a", skin: "#ffe0c6", long: true, anime: { skin: "#ffe3cc", hair: "#8a4a24", eye: "#2f8a52", jacket: "#6b1424", pants: "#3a1a2a", shoes: "#2a1d1b", collar: "#f8f6f0", tie: "#1b2f5e", crest: "#e0b54a", girl: true, style: "pony", h: 1.66 } }, h: 1.68, seed: 151 },
+  kenji: { o: { jacket: "#1b2f5e", collar: "#f8f6f0", tie: "#3a3f8a", crest: "#e0b54a", pants: "#2b2f3a", boots: "#111", hat: "hair", hair: "#141215", belt: null, buttons: "#e0b54a", skin: "#f3d4b4", anime: { skin: "#f6dcc0", hair: "#22222c", eye: "#3a2a20", jacket: "#1b2f5e", pants: "#2b2f3a", shoes: "#141414", collar: "#f8f6f0", tie: "#3a3f8a", crest: "#e0b54a", style: "bob", glasses: true, h: 1.7 } }, h: 1.7, seed: 157 },
+  baonam: { o: { jacket: "#6b1424", collar: "#f8f6f0", tie: "#c9a64a", crest: "#e0b54a", pants: "#2b2f3a", boots: "#3a2a20", hat: "hair", hair: "#121212", belt: null, buttons: "#e0b54a", skin: "#e9bf96", anime: { skin: "#eec39c", hair: "#121216", eye: "#3a2210", jacket: "#6b1424", pants: "#2b2f3a", shoes: "#3a2418", collar: "#f8f6f0", tie: "#c9a64a", crest: "#e0b54a", style: "spiky", h: 1.74 } }, h: 1.74, seed: 163 },
   ninhkoi: { o: { jacket: "#3a3f52", pants: "#1f2430", boots: "#111", hat: "hair", hair: "#141215", belt: null, buttons: "#d8dde4", skin: "#efc9a2" }, h: 1.8, seed: 127 },
 };
 const CROWD_J = ["#3a78c2", "#2f8a52", "#8a5a3a", "#6b4fa0", "#c9572e", "#4a4a52", "#9c2f45", "#2e6f7a", "#7a7f3a", "#d08a2a"];
@@ -80,6 +81,13 @@ export class Actor {
     const k = JSON.stringify(p);
     if (k !== this.key) {
       this.key = k; const g = this.g; g.setTransform(1, 0, 0, 1, 0, 0); g.clearRect(0, 0, 600, 1000);
+      if (this.o.anime) {   // nhân vật anime (phim mới): vẽ riêng, lật gương khi quay mặt trái
+        if (p.side && p.side < 0) { g.translate(600, 0); g.scale(-1, 1); }
+        drawAnime(g, this.o.anime, { expr: p.expr, blink: !!p.blink, side: p.side, t: p.t, wave: p.wave, book: (p.acc ?? []).includes("paper"), talk: (p.acc ?? []).includes("mic") });
+        g.setTransform(1, 0, 0, 1, 0, 0); this.t.needsUpdate = true;
+        (this.card.material as THREE.MeshBasicMaterial).color.copy(tint); const wp0 = this.root.getWorldPosition(new THREE.Vector3());
+        this.card.rotation.y = Math.atan2(cam.position.x - wp0.x, cam.position.z - wp0.z) - this.root.rotation.y; return;
+      }
       const pen = new Pen(g), acc = p.acc ?? [];
       const long = !!this.o.long && !acc.includes("raincoat");
       if (p.side) { // nhìn nghiêng (quay mặt về phải; side = -1 thì lật gương): dùng cho cảnh hai người đối thoại, dắt xe
