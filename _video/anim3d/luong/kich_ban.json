@@ -65,7 +65,7 @@
   {
    "id": "S13",
    "say": "Hai tháng sau, Long tìm được việc mới. Tối nhận lương đầu tiên, hai vợ chồng ngồi viết lại ba mươi triệu. Chuyển sang căn hộ nhỏ hơn: tiền nhà còn sáu triệu. Đồ ăn giao giảm một nửa: còn ba triệu. Không mua trả góp món mới nào nữa. Và lương về, để riêng ngay sáu triệu, đúng hai mươi phần trăm. Long bán bớt mấy món đồ công nghệ còn nguyên hộp.",
-   "hinh": "KỂ + THẺ SO SÁNH TRƯỚC/SAU (cột): ăn ngoài 6→3, trả góp mới 0, chuyển căn hộ 9→6, để riêng 0→6 triệu."
+   "hinh": "KỂ + THẺ SO SÁNH TRƯỚC/SAU (cột): ăn ngoài 6→3, trả góp mới 0, chuyển căn hộ 9→6, để riêng 0→6 triệu. Cảnh 3D: hai vợ chồng ngồi trước laptop, màn hình laptop là trang chungkhoanhuynguyen.com mục 'Quỹ dự phòng cho người mới' (chỉ hiện trong khung hình, không đọc tên web)."
   },
   {
    "id": "S14",
@@ -79,8 +79,8 @@
   },
   {
    "id": "S16",
-   "say": "Còn nhà mình, lương về được mấy ngày thì hết? Cách lập quỹ dự phòng và tích lũy cho người mới, em để miễn phí trên chứng khoán Huy Nguyễn chấm com.",
-   "hinh": "CÂU HỎI + CTA (chữ to, nút theo dõi)."
+   "say": "Còn nhà mình, lương về được mấy ngày thì hết? Kể cho em nghe ở phần bình luận nhé.",
+   "hinh": "CÂU HỎI chữ to + nút theo dõi. Web chỉ hiện chữ nhỏ góc dưới, KHÔNG đọc."
   }
  ]
 }
