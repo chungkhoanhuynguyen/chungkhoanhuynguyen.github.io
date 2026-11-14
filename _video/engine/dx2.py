@@ -374,17 +374,22 @@ def bignum(im, d, sc, t, box=BX):
 def bars(im, d, sc, t, box=BX):
     # biểu đồ thanh ngang: sc["bars"] = [(nhãn, giá trị, màu, chữ hiển thị), ...]
     bs = sc["bars"]; n = len(bs); x0, y0, x1, y1 = box[0]+36, box[1]+60, box[2]-36, box[3]-30
-    vmax = max(b[1] for b in bs); rh = (y1-y0)/n; lw = 210
+    vmax = max(b[1] for b in bs); rh = (y1-y0)/n
+    # (15/11 NV1, lỗi CH1811TL "14.375 US" bị cắt): đo chữ thật – nhãn cùng 1 cỡ, số + đơn vị luôn nằm trọn trong khung
+    fv = F("Black", 34); tw = max(d.textlength(b[3] if len(b) > 3 else fmtp(b[1]), font=fv) for b in bs)
+    lw = int(min((x1-x0)*0.36, max(d.textlength(b[0], font=F("ExtraBold", 34)) for b in bs) + 20)); lw = max(lw, 150)
+    fl = F("ExtraBold", min(fit(d, b[0], "ExtraBold", lw-16, 34).size for b in bs))
+    avail = max(60, x1 - x0 - lw - 14 - tw - 6)
     if sc.get("tag"): d.text((box[0]+28, box[1]+14), sc["tag"], font=F("Bold", 24), fill=DIM)
     for i, b in enumerate(bs):
         lab, v, col = b[0], b[1], b[2]; txt = b[3] if len(b) > 3 else fmtp(v)
         a = ease((t - 0.2 - i*0.18)/0.6)
         if a <= 0: continue
         yc = y0 + rh*(i+0.5); bh = min(46, rh*0.62)
-        f = fit(d, lab, "ExtraBold", lw-16, 34); d.text((x0, yc - f.size*0.62), lab, font=f, fill=mix(CREAM, a, PANEL))
-        w = (x1 - x0 - lw - 150)*(v/vmax)*a
+        f = fl; d.text((x0, yc - f.size*0.62), lab, font=f, fill=mix(CREAM, a, PANEL))
+        w = avail*(v/vmax)*a
         d.rounded_rectangle([x0+lw, yc-bh/2, x0+lw+max(6, w), yc+bh/2], 8, fill=mix(col, a, PANEL))
-        fv = F("Black", 34); d.text((x0+lw+w+14, yc - 22), txt, font=fv, fill=mix(col, a, PANEL))
+        d.text((x0+lw+w+14, yc - 22), txt, font=fv, fill=mix(col, a, PANEL))
     return d
 
 _IM = {}
