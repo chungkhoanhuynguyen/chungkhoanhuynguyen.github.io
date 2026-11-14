@@ -3946,98 +3946,308 @@
  },
  {
   "slug": "tich-san-chung-khoan-la-gi",
-  "kw": "tích sản chứng khoán là gì",
-  "title": "Tích sản chứng khoán là gì? Khác đầu cơ thế nào, ai nên tích sản",
-  "desc": "Tích sản chứng khoán là gì, khác đầu cơ ở đâu, ai hợp với cách đầu tư này và cần chuẩn bị gì trước khi bắt đầu. Giải thích dễ hiểu cho người mới.",
+  "kw": "tích sản là gì, đầu tư tích sản là gì, tích sản cổ phiếu, đầu tư tích sản cổ phiếu, nên tích sản cổ phiếu nào",
+  "title": "Tích sản là gì? Cách đầu tư tích sản cổ phiếu cho người mới",
+  "desc": "Tích sản là gì, khác đầu cơ ra sao, nên tích sản cổ phiếu nào, mỗi tháng bao nhiêu tiền là đủ và 7 bước bắt đầu đầu tư tích sản cổ phiếu cho người mới.",
   "grp": 7,
   "body": [
    [
     "p",
-    "<b>Tích sản</b> là mua dần cổ phiếu của những doanh nghiệp tốt và giữ nhiều năm, để tài sản lớn lên cùng doanh nghiệp. Giống như mua dần một mảnh đất tốt mỗi năm, không cần ngày nào cũng hỏi giá."
+    "<b>Tích sản là gì?</b> Tích sản (tích lũy tài sản) là cách <b>đều đặn dành một phần thu nhập để mua dần tài sản tốt và giữ nhiều năm</b>, để tiền tự lớn lên nhờ lãi kép. Trong chứng khoán, <b>đầu tư tích sản cổ phiếu</b> là mỗi tháng (hoặc mỗi quý) mua thêm cổ phiếu của những doanh nghiệp làm ăn tốt, nhận cổ tức rồi mua tiếp, và chỉ bán khi giá đã quá đắt hoặc doanh nghiệp xấu đi."
    ],
    [
     "p",
-    "<b>Đầu cơ</b> thì khác: mua để bán lại sau vài tuần hoặc vài tháng, kiếm lời từ biến động giá. Đầu cơ cần điểm mua, điểm cắt lỗ rõ ràng và theo dõi thị trường sát."
+    "Nói gọn: tích sản là <b>mua đều – giữ lâu – để doanh nghiệp làm việc thay mình</b>. Nó ngược với đầu cơ, nơi người chơi cố đoán giá lên xuống trong vài tuần. Bài này giải thích tích sản từ gốc, có ví dụ tính bằng số, bảng so sánh với gửi tiết kiệm và vàng, cách chọn cổ phiếu, các sai lầm hay gặp và kế hoạch 7 bước để bắt đầu ngay tháng này."
    ],
    [
     "img",
     "/img/f0/tich-san-vs-dau-co.jpg",
-    "So sánh tích sản và đầu cơ chứng khoán",
-    "Hai cách kiếm tiền khác nhau thì cách quản trị vốn cũng khác nhau."
+    "Tích sản là gì – so sánh tích sản và đầu cơ chứng khoán",
+    "Tích sản và đầu cơ: hai cách kiếm tiền khác nhau, cách quản trị vốn cũng khác nhau."
    ],
    [
     "h2",
-    "Lợi nhuận tích sản đến từ đâu?"
+    "Tích sản khác đầu cơ, lướt sóng thế nào?"
    ],
    [
-    "ul",
+    "table",
     [
-     "<b>Doanh nghiệp lớn lên:</b> lợi nhuận tăng đều thì giá trị cổ phiếu tăng theo thời gian.",
-     "<b>Cổ tức:</b> tiền mặt hoặc cổ phiếu chia thêm hằng năm, đem mua tiếp sẽ tạo <a href=\"/f0/lai-kep-trong-dau-tu.html\">lãi kép</a>.",
-     "<b>Mua được giá rẻ:</b> những năm thị trường xấu là lúc gom được nhiều cổ phiếu tốt với giá thấp."
+     [
+      "Tiêu chí",
+      "Tích sản",
+      "Đầu cơ / lướt sóng"
+     ],
+     [
+      "Thời gian giữ",
+      "Nhiều năm (3–10 năm trở lên)",
+      "Vài ngày đến vài tháng"
+     ],
+     [
+      "Lợi nhuận đến từ",
+      "Doanh nghiệp lớn lên + cổ tức + lãi kép",
+      "Chênh lệch giá ngắn hạn"
+     ],
+     [
+      "Thời gian theo dõi",
+      "Vài giờ mỗi tháng",
+      "Hằng ngày, sát bảng giá"
+     ],
+     [
+      "Điểm mua",
+      "Mua đều, mua thêm khi giá rẻ",
+      "Theo tín hiệu, có điểm cắt lỗ"
+     ],
+     [
+      "Rủi ro lớn nhất",
+      "Chọn sai doanh nghiệp, bỏ cuộc giữa chừng",
+      "Thua lỗ liên tiếp, dùng margin quá tay"
+     ],
+     [
+      "Hợp với ai",
+      "Người đi làm, thu nhập đều, kiên nhẫn",
+      "Người có thời gian, chịu được biến động mạnh"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Hai cách không loại trừ nhau. Nhiều người chia vốn làm hai phần tách biệt: phần lớn để tích sản, phần nhỏ để lướt sóng. Điều quan trọng là <b>không lấy tiền tích sản đi lướt sóng</b> khi thị trường hưng phấn."
+   ],
+   [
+    "h2",
+    "Vì sao tích sản cổ phiếu sinh lời? 3 nguồn lợi nhuận"
+   ],
+   [
+    "ol",
+    [
+     "<b>Doanh nghiệp lớn lên:</b> lợi nhuận mỗi cổ phiếu (<a href=\"/f0/roe-eps-la-gi.html\">EPS</a>) tăng đều thì giá trị cổ phiếu tăng theo thời gian. Giữ cổ phiếu là giữ một phần doanh nghiệp.",
+     "<b>Cổ tức:</b> tiền mặt hoặc cổ phiếu chia thêm hằng năm. Đem cổ tức mua tiếp là cách tạo <a href=\"/f0/lai-kep-trong-dau-tu.html\">lãi kép</a> đơn giản nhất.",
+     "<b>Mua được giá rẻ khi thị trường xấu:</b> người mua đều tự động mua được nhiều cổ phiếu hơn lúc giá thấp, nên giá vốn bình quân hạ xuống (<a href=\"/f0/mua-trung-binh-gia-dca.html\">phương pháp DCA</a>)."
     ]
    ],
    [
     "h2",
-    "Ai hợp với tích sản?"
+    "Ví dụ bằng số: mỗi tháng 5 triệu, sau 10 và 20 năm có bao nhiêu?"
+   ],
+   [
+    "p",
+    "Giả sử mỗi tháng anh chị bỏ 5 triệu vào tích sản, không rút ra, cổ tức mua tiếp. Bảng dưới tính theo các mức lợi nhuận bình quân năm <b>giả định</b> (để so sánh, không phải cam kết):"
+   ],
+   [
+    "table",
+    [
+     [
+      "Lợi nhuận bình quân/năm",
+      "Sau 10 năm (góp 600 triệu)",
+      "Sau 20 năm (góp 1,2 tỷ)"
+     ],
+     [
+      "5% (tương đương gửi tiết kiệm)",
+      "≈ 775 triệu",
+      "≈ 2,04 tỷ"
+     ],
+     [
+      "10%",
+      "≈ 1,01 tỷ",
+      "≈ 3,62 tỷ"
+     ],
+     [
+      "15%",
+      "≈ 1,32 tỷ",
+      "≈ 6,64 tỷ"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Cùng một số tiền góp, chênh vài phần trăm mỗi năm tạo khác biệt rất lớn sau 20 năm. Đó là sức mạnh của lãi kép, và cũng là lý do tích sản cần <b>bắt đầu sớm</b> (<a href=\"/f0/bat-dau-dau-tu-som.html\">vì sao nên bắt đầu đầu tư sớm</a>)."
+   ],
+   [
+    "p",
+    "Lưu ý thật lòng: lợi nhuận cổ phiếu không đều như gửi tiết kiệm. Có năm tài khoản tích sản giảm 20–40%, ví dụ năm 2022 VN-Index giảm khoảng 33%. Người tích sản thành công là người <b>vẫn mua đều trong những năm như thế</b>."
+   ],
+   [
+    "h2",
+    "Tích sản cổ phiếu, gửi tiết kiệm hay mua vàng?"
+   ],
+   [
+    "table",
+    [
+     [
+      "",
+      "Gửi tiết kiệm",
+      "Vàng",
+      "Tích sản cổ phiếu"
+     ],
+     [
+      "Lợi nhuận dài hạn",
+      "Thấp, ổn định",
+      "Theo chu kỳ, không sinh dòng tiền",
+      "Cao hơn nếu chọn đúng doanh nghiệp"
+     ],
+     [
+      "Biến động",
+      "Gần như không",
+      "Mạnh, có lúc giảm sâu sau đỉnh",
+      "Mạnh trong ngắn hạn"
+     ],
+     [
+      "Dòng tiền định kỳ",
+      "Lãi kỳ hạn",
+      "Không",
+      "Cổ tức"
+     ],
+     [
+      "Chi phí mua bán",
+      "Gần như không",
+      "Chênh lệch mua – bán lớn",
+      "Phí giao dịch nhỏ"
+     ],
+     [
+      "Vai trò hợp lý",
+      "Quỹ dự phòng",
+      "Một phần nhỏ phòng thủ",
+      "Tài sản tăng trưởng chính"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Cách làm hợp lý cho đa số gia đình: <b>quỹ dự phòng 3–6 tháng chi tiêu để ở tiết kiệm</b>, phần tiền dài hạn mới đem tích sản. Xem thêm <a href=\"/f0/tich-san-co-phieu-hay-gui-tiet-kiem.html\">tích sản cổ phiếu hay gửi tiết kiệm</a> và <a href=\"/f0/gia-vang-va-chung-khoan.html\">giá vàng và chứng khoán</a>."
+   ],
+   [
+    "h2",
+    "Ai nên đầu tư tích sản?"
    ],
    [
     "ul",
     [
      "Người đi làm, có thu nhập đều, không có thời gian xem bảng giá cả ngày.",
      "Có tiền nhàn rỗi ít nhất 3–5 năm không cần dùng tới.",
-     "Chịu được cảnh tài khoản âm 20–40% trong một thời gian mà không hoảng loạn bán ra."
+     "Chịu được cảnh tài khoản âm 20–40% một thời gian mà không hoảng loạn bán ra.",
+     "Muốn có tài sản cho các mục tiêu dài: mua nhà, học cho con (<a href=\"/f0/tich-san-cho-con.html\">tích sản cho con</a>), nghỉ hưu."
+    ]
+   ],
+   [
+    "p",
+    "Không nên tích sản bằng tiền vay, tiền sắp phải dùng, hoặc khi chưa có quỹ dự phòng. Thu nhập thấp vẫn tích sản được: xem <a href=\"/f0/tich-san-cho-nguoi-luong-10-trieu.html\">tích sản cho người lương 10 triệu</a> và <a href=\"/f0/tich-san-cho-sinh-vien.html\">tích sản cho sinh viên</a>."
+   ],
+   [
+    "h2",
+    "Nên tích sản cổ phiếu nào? 5 tiêu chí chọn doanh nghiệp"
+   ],
+   [
+    "ol",
+    [
+     "<b>Ngành thiết yếu, sống lâu:</b> ngân hàng, tiêu dùng, điện, công nghệ đầu ngành. Tránh ngành chỉ thịnh một chu kỳ.",
+     "<b>Hiệu quả cao và bền:</b> ROE ổn định nhiều năm (ngân hàng thường cần từ 12–15% trở lên), lợi nhuận tăng đều chứ không thất thường.",
+     "<b>Tài chính lành mạnh:</b> nợ vay hợp lý; với ngân hàng thì nợ xấu thấp, bao phủ nợ xấu tốt.",
+     "<b>Định giá không quá đắt:</b> so <a href=\"/f0/so-sanh-pe-pb-khi-nao-dung.html\">P/E, P/B</a> với lịch sử của chính nó và với các doanh nghiệp cùng ngành.",
+     "<b>Thanh khoản tốt:</b> giao dịch đủ lớn để mua bán dễ, tránh mã ít người mua."
+    ]
+   ],
+   [
+    "p",
+    "Cổ phiếu ngân hàng là lựa chọn phổ biến của người tích sản vì dễ so sánh bằng P/B và ROE. Đọc thêm <a href=\"/f0/tich-san-co-phieu-ngan-hang.html\">tích sản cổ phiếu ngân hàng</a>, <a href=\"/f0/dinh-gia-co-phieu-ngan-hang-pb-roe.html\">định giá cổ phiếu ngân hàng bằng P/B và ROE</a> và <a href=\"/f0/chon-co-phieu-tich-san.html\">cách chọn cổ phiếu tích sản</a>. Số liệu BCTC từng mã cập nhật mỗi quý ở mục <a href=\"/ma/\">tra cứu mã cổ phiếu</a>."
+   ],
+   [
+    "h2",
+    "Kế hoạch 7 bước bắt đầu đầu tư tích sản"
+   ],
+   [
+    "ol",
+    [
+     "<b>Lập quỹ dự phòng</b> 3–6 tháng chi tiêu trước tiên (<a href=\"/f0/quy-du-phong-truoc-khi-dau-tu.html\">quỹ dự phòng là gì</a>).",
+     "<b>Đặt mục tiêu và thời hạn:</b> ví dụ 1 tỷ sau 12 năm. Mục tiêu rõ giúp không bỏ cuộc.",
+     "<b>Chọn số tiền cố định mỗi tháng:</b> 10–20% thu nhập, chuyển ngay khi nhận lương (trả cho mình trước).",
+     "<b>Mở tài khoản chứng khoán</b> và chuyển tiền đều đặn (<a href=\"/f0/cach-mo-tai-khoan-chung-khoan.html\">cách mở tài khoản chứng khoán</a>).",
+     "<b>Chọn 3–5 doanh nghiệp</b> theo 5 tiêu chí trên, chia đều vốn, không dồn một mã.",
+     "<b>Mua đều và tái đầu tư cổ tức;</b> mua nhiều hơn khi giá về vùng rẻ so với giá trị.",
+     "<b>Rà soát mỗi quý khi có BCTC:</b> doanh nghiệp còn đạt tiêu chí thì giữ; xấu đi rõ thì bán (<a href=\"/f0/khi-nao-ban-co-phieu-tich-san.html\">khi nào bán cổ phiếu tích sản</a>)."
     ]
    ],
    [
     "h2",
-    "Ví dụ dễ hiểu"
-   ],
-   [
-    "p",
-    "Anh A mỗi tháng để dành 5 triệu mua cổ phiếu một ngân hàng lớn, cổ tức nhận về mua tiếp. Có năm giá giảm, anh vẫn mua đều nên mua được nhiều cổ phiếu hơn. Sau nhiều năm, phần lớn tài sản đến từ việc doanh nghiệp lớn lên và cổ tức tái đầu tư, chứ không phải từ việc đoán đúng giá từng ngày."
-   ],
-   [
-    "h2",
-    "Tích sản không phải là “mua rồi quên”"
-   ],
-   [
-    "p",
-    "Vẫn phải đọc báo cáo tài chính mỗi quý, xem doanh nghiệp còn tốt không, và giữ tỉ trọng hợp lý. Doanh nghiệp suy yếu thì giữ càng lâu càng lỗ. Đọc thêm <a href=\"/f0/rui-ro-khi-tich-san.html\">các rủi ro khi tích sản</a>."
-   ],
-   [
-    "h2",
-    "Tóm lại"
+    "6 sai lầm khiến tích sản thất bại"
    ],
    [
     "ul",
     [
-     "Tích sản là mua dần doanh nghiệp tốt và giữ nhiều năm, khác đầu cơ ngắn hạn.",
-     "Lợi nhuận đến từ doanh nghiệp lớn lên, cổ tức và mua được giá rẻ lúc thị trường xấu.",
-     "Chỉ dùng tiền nhàn rỗi dài hạn và vẫn phải theo dõi doanh nghiệp định kỳ."
+     "<b>Bỏ cuộc khi thị trường giảm</b> – đúng lúc mua được rẻ nhất.",
+     "<b>Đuổi theo cổ phiếu đang nóng</b> thay vì doanh nghiệp tốt ở giá hợp lý.",
+     "<b>Dùng margin để tích sản:</b> một nhịp giảm sâu có thể bị bán giải chấp (<a href=\"/f0/margin-va-tien-mat-khi-tich-san.html\">margin và tiền mặt khi tích sản</a>).",
+     "<b>Dồn hết vào 1 mã</b> – một tin xấu là mất nhiều năm công sức.",
+     "<b>Không bao giờ bán:</b> tích sản không có nghĩa là ôm mãi; doanh nghiệp xấu đi hoặc giá quá đắt thì phải chốt.",
+     "<b>Xem tài khoản mỗi ngày:</b> dễ bị cảm xúc kéo đi; mỗi tháng xem một lần là đủ."
     ]
+   ],
+   [
+    "h2",
+    "Tích sản cổ phiếu có rủi ro gì?"
+   ],
+   [
+    "p",
+    "Rủi ro chính là <b>chọn sai doanh nghiệp</b> và <b>giữ quá lâu khi doanh nghiệp đã xấu</b>. Tiếp theo là rủi ro thị trường: có giai đoạn nhiều năm giá đi ngang hoặc giảm, cần kiên nhẫn. Cuối cùng là rủi ro hành vi: hoảng loạn bán đáy hoặc hưng phấn mua đỉnh. Xem chi tiết <a href=\"/f0/rui-ro-khi-tich-san.html\">rủi ro khi tích sản</a> và <a href=\"/f0/danh-muc-tich-san-mau.html\">danh mục tích sản mẫu</a>."
+   ],
+   [
+    "h2",
+    "Tóm tắt"
+   ],
+   [
+    "ul",
+    [
+     "Tích sản = mua đều doanh nghiệp tốt, giữ nhiều năm, tái đầu tư cổ tức.",
+     "Có quỹ dự phòng trước, chỉ dùng tiền nhàn rỗi dài hạn, không dùng margin.",
+     "Chọn 3–5 doanh nghiệp theo hiệu quả, sức khỏe tài chính, định giá và thanh khoản.",
+     "Rà soát mỗi quý, kiên trì qua những năm thị trường xấu – đó là lúc tích sản tạo khác biệt."
+    ]
+   ],
+   [
+    "cta",
+    "Muốn có bảng giá mua – giá bán tích sản cổ phiếu ngân hàng cập nhật mỗi quý? Hỏi trực tiếp, miễn phí.",
+    "https://zalo.me/0365188286",
+    "Hỏi qua Zalo"
    ]
   ],
   "faq": [
+   [
+    "Đầu tư tích sản là gì?",
+    "Là đều đặn dành một phần thu nhập mua dần tài sản tốt (cổ phiếu doanh nghiệp tốt, chứng chỉ quỹ…) và giữ nhiều năm để tài sản lớn lên nhờ lãi kép và cổ tức."
+   ],
+   [
+    "Tích sản cổ phiếu cần bao nhiêu tiền?",
+    "Bắt đầu từ 1–2 triệu mỗi tháng cũng được. Đều đặn và kỷ luật quan trọng hơn số tiền ban đầu; nên để khoảng 10–20% thu nhập."
+   ],
+   [
+    "Nên tích sản cổ phiếu nào?",
+    "Doanh nghiệp đầu ngành ở ngành thiết yếu, ROE cao và ổn định, tài chính lành mạnh, định giá hợp lý và thanh khoản tốt. Cổ phiếu ngân hàng là lựa chọn phổ biến."
+   ],
    [
     "Tích sản bao lâu thì có kết quả?",
     "Thường cần ít nhất 3–5 năm. Những năm đầu tài khoản có thể lỗ, đó là chuyện bình thường của tích sản."
    ],
    [
-    "Có nên vừa tích sản vừa đầu cơ?",
-    "Có thể, nhưng nên tách riêng hai phần vốn, mỗi phần một kỷ luật riêng, để không lấy tiền tích sản đi lướt sóng."
+    "Tích sản có cần bán không?",
+    "Có. Bán khi doanh nghiệp xấu đi rõ (lợi nhuận, nợ xấu, quản trị) hoặc khi giá đã quá đắt so với giá trị, rồi chuyển sang doanh nghiệp tốt hơn."
    ],
    [
-    "Tích sản cần bao nhiêu tiền?",
-    "Bắt đầu từ vài triệu mỗi tháng cũng được. Quan trọng là đều đặn và kỷ luật hơn số tiền ban đầu."
+    "Tích sản tiếng Anh là gì?",
+    "Thường gọi là long-term investing hoặc wealth accumulation; cách mua đều mỗi tháng gọi là DCA (dollar-cost averaging)."
+   ],
+   [
+    "Có nên vừa tích sản vừa lướt sóng?",
+    "Có thể, nhưng tách riêng hai phần vốn, mỗi phần một kỷ luật riêng, không lấy tiền tích sản đi lướt sóng."
    ]
   ],
   "rel": [
    "tich-san-co-phieu-ngan-hang",
    "huong-dan-tich-san-co-phieu-tu-a-den-z",
    "chon-co-phieu-tich-san",
-   "rui-ro-khi-tich-san"
-  ]
+   "rui-ro-khi-tich-san",
+   "tich-san-co-phieu-hay-gui-tiet-kiem",
+   "khi-nao-ban-co-phieu-tich-san"
+  ],
+  "mod": "2026-11-14"
  },
  {
   "slug": "huong-dan-tich-san-co-phieu-tu-a-den-z",
