@@ -131,12 +131,24 @@ const AskL: React.FC<{ t: number }> = ({ t }) => <AbsoluteFill style={{ fontFami
     <div style={{ fontSize: 96, color: "#fff", fontWeight: 900, marginTop: 20 }}>Gia đình bạn được mấy điểm?</div>
     <div style={{ fontSize: 60, color: "#ffe14d", fontWeight: 800, marginTop: 30 }}>⚡ Năng lượng · 🚪 Cởi mở · 🤝 Gắn kết</div>
     <div style={{ fontSize: 40, color: "#c5cde0", marginTop: 30 }}>Kể cho mình nghe ở phần bình luận nhé</div></div></AbsoluteFill>;
+
+// ===== LỚP HỌC 3D trên ảnh thật: thầy + 6 học trò, hội thoại =====
+const Board: React.FC<{ t: number; text: string }> = ({ t, text }) => { const a = sm((t - 0.3) / 0.9); if (t < 0.3) return null;
+  return <div style={{ position: "absolute", left: 470, top: 120, width: 980, height: 300, display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center", fontFamily: F, fontWeight: 900, fontSize: Math.min(96, Math.floor(2300 / Math.max(12, text.length))), lineHeight: 1.12, color: "#f2f0e6", textShadow: "0 0 8px rgba(255,255,255,.35)", clipPath: `inset(0 ${100 - a * 100}% 0 0)` }}>{text}</div>; };
+const PHL = (bg: string, cast: Cast[], cam: [[V, V, number], [V, V, number]]) => S("photo", "room", cam[0], cam[1], cast, { bg: `ltc1/${bg}.jpg`, bgFit: [0.5, 0.55] });
+const cam2 = (x = 0.4): [[V, V, number], [V, V, number]] => [[[x, 1.45, -3.0], [x, 1.25, 3], 42], [[x, 1.42, -2.7], [x, 1.25, 3], 40]];
+const camW: [[V, V, number], [V, V, number]] = [[[0.0, 1.55, -4.6], [0.0, 1.2, 3], 46], [[-0.1, 1.52, -4.3], [-0.1, 1.2, 3], 44]];
+const THAY = (e: Expr, o: PO = {}, x = 1.0) => C("thay", [x, 0, 0.7], P(e, { side: 1, mode: "stand", acc: ["paper"], ...o }));
+const HS = ["hana", "jiho", "khalid", "sophia", "kenji", "baonam"];
+const LOP = (e: Expr, te: Expr = "neutral", sp?: string, se?: Expr) => [THAY(te, {}, 1.9), ...HS.map((a, i) => C(a, [-0.2 - i * 0.55, 0, 0.6 + (i % 2) * 0.5] as V, P(a === sp && se ? se : e, { side: -1, mode: "stand", phase: i * 0.3 })))];
+const D2 = (who: string, we: Expr, te: Expr, text: string, a0: number, teacherTalks = false) => D3(PHL("lop_ve", [THAY(te), C(who, [-0.2, 0, 0.7], P(we, { side: -1, mode: "stand" }))], cam2()), (t) => <>{teacherTalks ? BL(140, 120, text, a0)(t) : BL(1080, 110, text, a0, "r")(t)}</>);
+const DW = (e: Expr, te: Expr, ov?: (t: number) => React.ReactNode, sp?: string, se?: Expr) => D3(PHL("lop_ve", LOP(e, te, sp, se), camW), ov ? (t) => <>{ov(t)}</> : undefined);
 const PLAN: Plan[] = [
   { id: "S01", shots: [
-    [0, () => CDLT("lop_hoc", "LỚP HỌC LÝ THUYẾT TRÒ CHƠI", "Buổi 1")],
-    [1, () => CDCH("bang_phan", "PHÚ KHÔNG QUÁ BA ĐỜI", 130, 0.6)],
-    [3, () => CDBT("lop_hoc", "6 HỌC TRÒ · 6 GIA TỘC GIÀU NHẤT", "#ffd23f", 86, -1)],
-    [4, () => CDCH("bang_phan", "VÌ SAO GIA TỘC CÁC EM RỒI SẼ THUA?", 88)]] },
+    [0, () => DW("neutral", "neutral", (t) => <LocTag t={t} l1="LỚP HỌC LÝ THUYẾT TRÒ CHƠI" l2="Buổi 1" d={6} />)],
+    [1, () => DW("neutral", "stern", (t) => <Board t={t} text="PHÚ KHÔNG QUÁ BA ĐỜI" />)],
+    [2, () => DW("shock", "stern", (t) => <Board t={t} text="6 HỌC TRÒ · 6 GIA TỘC GIÀU NHẤT" />)],
+    [4, () => D2("hana", "worried", "stern", "Bài đầu tiên: vì sao gia tộc các em rồi sẽ thua?", at("S01", 4, 4) + 0.3, true)]] },
   { id: "S02", shots: [
     [0, () => CD((t) => <TitleCard t={t} kicker="LỚP HỌC LÝ THUYẾT TRÒ CHƠI" l1="BÀI 1: VÁN CỜ THẾ GIỚI" l2="VÌ SAO KẺ NGHÈO HAY THẮNG KẺ GIÀU?" sub="Phú không quá ba đời" hue="night" />)]] },
   { id: "S03", shots: [
@@ -146,17 +158,17 @@ const PLAN: Plan[] = [
     [3, () => CDNC("silicon", "SOPHIA", "💻 Bố lập công ty công nghệ ở Thung lũng Silicon", -1)],
     [4, () => CDNC("xe_nhat", "KENJI", "🚗 Gia tộc làm ô tô ở Nhật")],
     [5, () => CDNC("saigon", "BẢO NAM", "🏙 Con trai ông trùm bất động sản Việt Nam", -1)],
-    [6, () => CDSAY("lop_hoc", "Thưa thầy, nhà em giàu ba đời rồi, vẫn đang giàu mà!", at("S03", 6, 6) + 0.6)],
-    [7, () => CDCH("bang_phan", "THẾ CÒN ĐỜI THỨ TƯ?", 120)]] },
+    [6, () => D2("baonam", "smug", "neutral", "Thưa thầy, nhà em giàu ba đời rồi, vẫn đang giàu mà!", at("S03", 6, 6) + 0.6)],
+    [7, () => D2("baonam", "shock", "grin", "Thế còn đời thứ tư?", at("S03", 7, 7) + 0.4, true)]] },
   { id: "S04", shots: [
     [0, () => CDBT("co_vua", "MỌI CHUYỆN TRÊN ĐỜI LÀ MỘT VÁN CỜ", "#ffd23f", 80)],
     [1, () => CDLS("LUẬT CỦA LỚP: 3 CÂU HỎI", "S04", 1, [[2, "👥", "NGƯỜI CHƠI", "Ai đang ngồi vào bàn cờ?"], [3, "📜", "LUẬT CHƠI", "Được làm gì, không được làm gì?"], [4, "🏆", "PHẦN THƯỞNG", "Thắng được gì, thua mất gì?"]])],
-    [5, () => CDBT("ban_co_vua", "VÁN CỜ GIỮA CÁC QUỐC GIA", "#ffd23f", 96, -1)]] },
+    [5, () => DW("neutral", "smile", (t) => <Board t={t} text="VÁN CỜ GIỮA CÁC QUỐC GIA" />)]] },
   { id: "S05", shots: [
-    [0, () => CDCH("bang_phan", "GIÀU · ĐÔNG · MẠNH\nhay NGHÈO · NHỎ · Ở RÌA?", 92)],
-    [1, () => CDSAY("lop_hoc", "Nước giàu, thưa thầy! Tiền mua được mọi thứ.", at("S05", 1, 1) + 0.5)],
-    [2, () => CDSAY("lop_hoc", "Và có công nghệ tốt hơn nữa.", at("S05", 2, 2) + 0.5, -1)],
-    [3, () => CDCH("bang_phan", "LỊCH SỬ THƯỜNG NÓI NGƯỢC", 110)]] },
+    [0, () => DW("worried", "neutral", (t) => <>{BL(140, 120, "Nước giàu, đông, mạnh hay nước nghèo, nhỏ, ở rìa: ai thắng?", 0.6)(t)}</>)],
+    [1, () => D2("khalid", "smug", "neutral", "Nước giàu, thưa thầy! Tiền mua được mọi thứ.", at("S05", 1, 1) + 0.5)],
+    [2, () => D2("sophia", "smile", "neutral", "Và có công nghệ tốt hơn nữa ạ.", at("S05", 2, 2) + 0.5)],
+    [3, () => DW("shock", "stern", (t) => <Board t={t} text="LỊCH SỬ THƯỜNG NÓI NGƯỢC" />, "khalid", "dazed")]] },
   { id: "S06", shots: [
     [0, () => CDLT("chien_quoc", "VÍ DỤ 1", "Trung Hoa thời Chiến Quốc")],
     [2, () => CDBT("binh_ma", "221 TCN: NƯỚC TẦN Ở RÌA THỐNG NHẤT TRUNG HOA", "#ffd23f", 70)]] },
@@ -167,36 +179,38 @@ const PLAN: Plan[] = [
     [0, () => CDLT("tenochtitlan", "VÍ DỤ 3", "Mexico, năm 1519")],
     [2, () => CDBT("tenochtitlan", "500 LÍNH · 2 NĂM · ĐẾ QUỐC AZTEC SỤP ĐỔ", "#ffd23f", 70, -1)],
     [3, () => CDBT("chinh_phuc", "+ HÀNG CHỤC NGHÌN ĐỒNG MINH BẢN ĐỊA + ĐẬU MÙA", "#ff8a8a", 64)],
-    [4, () => CDCH("bang_phan", "VÌ SAO KẺ THÙ TÌM ĐƯỢC NHIỀU ĐỒNG MINH?", 84)]] },
+    [4, () => D2("jiho", "worried", "stern", "Vì sao một đế quốc giàu lại để kẻ thù có nhiều đồng minh đến thế?", at("S08", 4, 4) + 0.3, true)]] },
   { id: "S09", shots: [
-    [0, () => CDSAY("lop_hoc", "Vậy có quy luật nào không, thưa thầy?", at("S09", 0, 0) + 0.4)],
+    [0, () => D2("jiho", "worried", "neutral", "Vậy có quy luật nào không, thưa thầy?", at("S09", 0, 0) + 0.4)],
     [1, () => CDNC("ibn_khaldun", "IBN KHALDUN", "Học giả Bắc Phi, thế kỷ 14")],
-    [3, () => CDBT("ibn_khaldun", "1377: SÁCH VỀ HƯNG VONG CÁC TRIỀU ĐẠI", "#ffd23f", 72)],
-    [4, () => CDCH("bang_phan", "MỘT TRIỀU ĐẠI: 3–4 THẾ HỆ", 110)]] },
+    [3, () => DW("neutral", "neutral", (t) => <Board t={t} text="1377 · SÁCH VỀ HƯNG VONG CÁC TRIỀU ĐẠI" />)],
+    [4, () => DW("shock", "stern", (t) => <Board t={t} text="MỘT TRIỀU ĐẠI: 3–4 THẾ HỆ" />)]] },
   { id: "S10", shots: [
     [0, () => CDLS("3 THƯỚC ĐO SỨC MẠNH CỦA MỘT NHÓM NGƯỜI", "S10", 0, [[1, "⚡", "NĂNG LƯỢNG", "Khát khao muốn đi lên"], [2, "🚪", "CỞI MỞ", "Chịu học cái mới, chịu nhận người giỏi"], [3, "🤝", "GẮN KẾT", "Sẵn sàng hy sinh cho nhau"]])],
-    [4, () => CDCH("bang_phan", "KẺ NGHÈO CÓ CẢ BA · KẺ GIÀU ĐÁNH RƠI CẢ BA", 84)]] },
+    [4, () => DW("worried", "stern", (t) => <Board t={t} text="KẺ NGHÈO CÓ CẢ BA · KẺ GIÀU ĐÁNH RƠI CẢ BA" />, "baonam", "nervous")]] },
   { id: "S11", shots: [
     [0, () => CDLS("VÌ SAO GIÀU LẠI ĐÁNH RƠI?", "S11", 0, [[1, "😴", "LƯỜI", "Có tiền thì ít ai muốn chịu khổ"], [2, "😤", "KIÊU", "Nghĩ mình đúng, không chịu học ai"], [3, "⚔️", "CHIA RẼ", "Anh em bắt đầu chia nhau"]])],
     [4, () => CDCH("gia_dinh", "PHÚ KHÔNG QUÁ BA ĐỜI", 120)]] },
   { id: "S12", shots: [
-    [0, () => CDSAY("lop_hoc", "Nhưng gia tộc em giàu 300 năm rồi, thưa thầy!", at("S12", 0, 0) + 0.5, -1)],
+    [0, () => D2("hana", "smug", "neutral", "Nhưng gia tộc em giàu 300 năm rồi, thưa thầy!", at("S12", 0, 0) + 0.5)],
+    [1, () => D2("hana", "neutral", "smile", "Đúng. Có những gia tộc vượt được quy luật.", at("S12", 1, 1) + 0.3, true)],
     [2, () => CDBT("zurich", "DẠY CON NHƯ THỂ NHÀ VẪN NGHÈO", "#ffd23f", 90)],
-    [4, () => CDCH("bang_phan", "QUY LUẬT KHÔNG PHẢI ĐỊNH MỆNH", 104)]] },
+    [4, () => DW("relief", "smile", (t) => <Board t={t} text="QUY LUẬT KHÔNG PHẢI ĐỊNH MỆNH" />)]] },
   { id: "S13", shots: [
-    [0, () => CDCH("bang_phan", "KHÔNG CHỈ QUỐC GIA – CẢ DOANH NGHIỆP", 90)],
+    [0, () => DW("neutral", "neutral", (t) => <Board t={t} text="KHÔNG CHỈ QUỐC GIA – CẢ DOANH NGHIỆP" />)],
     [1, () => CDNC("kodak_cam", "KODAK", "Ông vua phim ảnh · 1975: kỹ sư Kodak làm ra máy ảnh số đầu tiên")],
     [3, () => CDBT("kodak", "2012: KODAK NỘP ĐƠN PHÁ SẢN", "#ff8a8a", 90)],
     [4, () => CDBT("nokia", "2013: NOKIA BÁN MẢNG ĐIỆN THOẠI", "#ff8a8a", 90, -1)],
     [5, () => CDCH("bang_phan", "KẺ THẮNG: NHỎ HƠN · ĐÓI HƠN · HỌC NHANH HƠN", 80)]] },
   { id: "S14", shots: [
-    [0, () => CDSAY("lop_hoc", "Vậy đầu tư chứng khoán thì sao hả thầy?", at("S14", 0, 0) + 0.4)],
+    [0, () => D2("baonam", "worried", "neutral", "Vậy đi đầu tư chứng khoán thì sao hả thầy?", at("S14", 0, 0) + 0.4)],
     [2, () => CDLS("3 CÂU HỎI TRƯỚC KHI MUA CỔ PHIẾU", "S14", 2, [[3, "⚡", "Lãnh đạo còn đói khát không?", "Năng lượng"], [4, "🔄", "Có chịu thay đổi khi thị trường đổi?", "Cởi mở"], [5, "🤝", "Người trong công ty có cùng một phía?", "Gắn kết"]])],
     [6, () => CDBT("san_ck", "TO MÀ MẤT CẢ BA = CÁI BÓNG CỦA QUÁ KHỨ", "#ffd23f", 74)]] },
   { id: "S15", shots: [
-    [0, () => CDCH("bang_phan", "BÀI TẬP: CHẤM ĐIỂM GIA TỘC MÌNH · THANG 10", 84)],
-    [1, () => CDSAY("lop_hoc", "Nhà em chắc năng lượng chỉ được 3 điểm…", at("S15", 1, 1) + 0.5, -1)],
-    [3, () => CDCH("bang_phan", "TUẦN SAU: VÁN CỜ TIẾP THEO", 110)]] },
+    [0, () => DW("worried", "smile", (t) => <Board t={t} text="BÀI TẬP: CHẤM ĐIỂM GIA TỘC MÌNH · THANG 10" />)],
+    [1, () => D2("kenji", "sad", "neutral", "Nhà em chắc năng lượng chỉ được 3 điểm…", at("S15", 1, 1) + 0.5)],
+    [2, () => D2("kenji", "relief", "smile", "Biết mình được 3 điểm là đã hơn nhiều người rồi.", at("S15", 2, 2) + 0.3, true)],
+    [3, () => DW("smile", "smile", (t) => <Board t={t} text="TUẦN SAU: VÁN CỜ TIẾP THEO" />)]] },
   { id: "S16", shots: [
     [0, () => CD((t) => <AskL t={t} />)]] },
 ];
