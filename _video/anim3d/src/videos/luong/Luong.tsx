@@ -189,6 +189,8 @@ const PLAN: Plan[] = [
   ] },
   { id: "S16", shots: [[0, () => CD((t) => <Ask t={t} />)]] },
 ];
+function teaStall() { return [] as Cast[]; }
+
 
 
 const Meme: React.FC<{ t: number; at?: number; top: string; bot: string; small?: boolean; noSubGap?: boolean; y?: number }> = ({ t, at = 0, top, bot, small, noSubGap, y }) => { if (t < at) return null; const a = Math.min(1, (t - at) / 0.18), sz = small ? 150 : 92;
