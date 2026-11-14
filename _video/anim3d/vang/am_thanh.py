@@ -195,9 +195,9 @@ def readwav(p):
     return x
 v = readwav(sys.argv[2]); vv = np.zeros(NT); vv[: min(NT, len(v))] = v[: NT]
 # giọng kể là chính: đưa đỉnh về chuẩn, nén mềm cho dày tiếng (to hơn bản cũ ~3 lần), nền/nhạc lùi hẳn ra sau
-pk0 = np.percentile(np.abs(vv[np.abs(vv) > 0.01]), 99.7) + 1e-9; vv = np.tanh(vv / pk0 * 1.45) / np.tanh(1.45) * 0.93
+pk0 = np.percentile(np.abs(vv[np.abs(vv) > 0.01]), 99.7) + 1e-9; vv = np.tanh(vv / pk0 * 2.4) / np.tanh(2.4) * 0.95
 envv = lp(np.abs(vv), 2205); envv = envv / (envv.max() + 1e-9); duck = 1 - 0.7 * np.clip(envv * 6, 0, 1)
-mus *= lp(duck, 4410); BG = 0.55; sfx_duck = 1 - 0.35 * np.clip(lp(envv, 2205) * 6, 0, 1)
+mus *= lp(duck, 4410); BG = 0.28; sfx_duck = 1 - 0.35 * np.clip(lp(envv, 2205) * 6, 0, 1)
 Lf = vv + (L * sfx_duck + mus) * BG; Rf = vv + (Rr * sfx_duck + mus) * BG
 st = np.stack([np.tanh(Lf * 1.02) , np.tanh(Rf * 1.02)], 1) * 0.97
 rms = lambda x: 20 * np.log10(np.sqrt(np.mean(x ** 2)) + 1e-9); print("voice rms dB", round(rms(vv[np.abs(vv) > 0.02]), 1), "| nen rms dB", round(rms((L + mus) * BG), 1))
