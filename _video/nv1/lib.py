@@ -41,7 +41,7 @@ REP = [(r"P/E", "P trên E"), (r"P/B", "P trên B"), (r"P/S", "P trên S"), (r"\
 def doc(t):
     t = re.sub(r"\bQ(\d)/(\d{4})", lambda m: "quý %s năm %s" % (so(m.group(1)), m.group(2)), t)
     t = re.sub(r"\bQ(\d)/(\d{2})\b", lambda m: "quý %s năm 20%s" % (so(m.group(1)), m.group(2)), t)
-    t = re.sub(r"(?:ngày )?\b(\d{1,2})/(\d{1,2})/(\d{4})\b", lambda m: "ngày %s tháng %s năm %s" % (m.group(1), m.group(2), m.group(3)), t)
+    t = re.sub(r"(?:([Nn])gày )?\b(\d{1,2})/(\d{1,2})/(\d{4})\b", lambda m: "%sgày %s tháng %s năm %s" % (m.group(1) or "n", m.group(2), m.group(3), m.group(4)), t)   # 15/11 NV1: "Ngày 19/1/2022" từng ra "Ngày ngày"
     t = re.sub(r"(?:ngày )?\b(\d{1,2})/(\d{1,2})\b(?!/)", lambda m: "ngày %s tháng %s" % (m.group(1), m.group(2)), t)
     for a, b in REP: t = re.sub(a, b, t)
     t = re.sub(r"[−-](?=\d)", "âm ", t); t = re.sub(r"\+(?=\d)", "", t)
