@@ -1,0 +1,1046 @@
+{
+ "total": 475.133,
+ "scenes": [
+  {
+   "id": "S01",
+   "a": 0.0,
+   "b": 52.06632,
+   "fa": 0,
+   "fb": 1562,
+   "sens": [
+    {
+     "text": "Một vệt sáng trắng lóe lên ở chân trời.",
+     "a": 1.26632,
+     "b": 3.25895,
+     "fa": 38,
+     "ns": 90847
+    },
+    {
+     "text": "Còi báo động hú khắp phố.",
+     "a": 3.73368,
+     "b": 5.06,
+     "fa": 112,
+     "ns": 60511
+    },
+    {
+     "text": "Điện tắt phụt.",
+     "a": 5.83368,
+     "b": 6.67474,
+     "fa": 175,
+     "ns": 38391
+    },
+    {
+     "text": "Người ta kéo vali, bế con, chen nhau trên cầu.",
+     "a": 7.43368,
+     "b": 10.31474,
+     "fa": 223,
+     "ns": 131404
+    },
+    {
+     "text": "Cây rút tiền hiện dòng chữ: hết tiền.",
+     "a": 10.76632,
+     "b": 12.83368,
+     "fa": 323,
+     "ns": 94263
+    },
+    {
+     "text": "Ổ bánh mì ba mươi nghìn, chiều lên ba trăm nghìn, tối lên ba triệu.",
+     "a": 13.3,
+     "b": 16.78632,
+     "fa": 399,
+     "ns": 158962
+    },
+    {
+     "text": "Bảng giá vàng nhảy liên tục: một trăm bốn mươi triệu, ba trăm triệu, một tỷ một lượng.",
+     "a": 17.23368,
+     "b": 21.96737,
+     "fa": 517,
+     "ns": 215872
+    },
+    {
+     "text": "Quang Hà ôm ba lượng vàng chạy đến sạp gạo.",
+     "a": 22.43368,
+     "b": 24.64421,
+     "fa": 673,
+     "ns": 100812
+    },
+    {
+     "text": "Bà chủ sạp lắc đầu: vàng không ăn được, tôi chỉ đổi gạo lấy thuốc thôi.",
+     "a": 25.1,
+     "b": 29.22632,
+     "fa": 753,
+     "ns": 188178
+    },
+    {
+     "text": "Quang hét lên, rồi choàng tỉnh.",
+     "a": 29.7,
+     "b": 30.99579,
+     "fa": 891,
+     "ns": 59087
+    },
+    {
+     "text": "Mười một giờ đêm, ngày mười hai tháng mười một.",
+     "a": 31.76632,
+     "b": 33.79579,
+     "fa": 953,
+     "ns": 92546
+    },
+    {
+     "text": "Áo ướt đẫm mồ hôi.",
+     "a": 34.26632,
+     "b": 35.40105,
+     "fa": 1028,
+     "ns": 51723
+    },
+    {
+     "text": "Đúng lúc ấy, điện thoại cả xóm cùng hú: cảnh báo hạt nhân.",
+     "a": 36.16632,
+     "b": 39.07789,
+     "fa": 1085,
+     "ns": 132751
+    },
+    {
+     "text": "Quang bấm bán sạch một tỷ hai cổ phiếu, rồi lao ra tiệm vàng.",
+     "a": 39.53368,
+     "b": 43.26,
+     "fa": 1186,
+     "ns": 169940
+    },
+    {
+     "text": "Chiến tranh chỉ có trong giấc mơ.",
+     "a": 43.73368,
+     "b": 45.42947,
+     "fa": 1312,
+     "ns": 77344
+    },
+    {
+     "text": "Cảnh báo cũng là giả.",
+     "a": 45.9,
+     "b": 46.93158,
+     "fa": 1377,
+     "ns": 47062
+    },
+    {
+     "text": "Nhưng lệnh bán của anh, là thật.",
+     "a": 47.7,
+     "b": 49.79263,
+     "fa": 1431,
+     "ns": 95404
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "a": 52.06632,
+   "b": 59.86632,
+   "fa": 1562,
+   "fb": 1796,
+   "sens": [
+    {
+     "text": "Thế giới đang chuẩn bị cho chiến tranh hạt nhân?",
+     "a": 52.7,
+     "b": 54.89895,
+     "fa": 1581,
+     "ns": 100267
+    },
+    {
+     "text": "Và tiền của bạn nên làm gì.",
+     "a": 55.6,
+     "b": 56.97158,
+     "fa": 1668,
+     "ns": 62528
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "a": 59.86632,
+   "b": 95.03368,
+   "fa": 1796,
+   "fb": 2851,
+   "sens": [
+    {
+     "text": "Lùi lại một tuần.",
+     "a": 59.86632,
+     "b": 60.75053,
+     "fa": 1796,
+     "ns": 40295
+    },
+    {
+     "text": "Ở phố Lò Đúc, ai cũng gọi anh là Quang Hà, vì bố anh tên Hà, và vì anh đi đâu cũng hỏi đúng một câu: có sao không em?",
+     "a": 61.53368,
+     "b": 68.75895,
+     "fa": 1846,
+     "ns": 329469
+    },
+    {
+     "text": "Quang làm kế toán, tính cẩn thận đến từng đồng.",
+     "a": 69.46632,
+     "b": 71.64947,
+     "fa": 2084,
+     "ns": 99544
+    },
+    {
+     "text": "Năm năm nay, tháng nào lĩnh lương anh cũng mua đều một ít cổ phiếu, không vay một đồng.",
+     "a": 72.1,
+     "b": 76.67895,
+     "fa": 2163,
+     "ns": 208809
+    },
+    {
+     "text": "Danh mục giờ được một tỷ hai: sáu trăm triệu ép pê tê, ba trăm triệu vê xê bê, một trăm năm mươi triệu hát pê giê, một trăm năm mươi triệu vê en em.",
+     "a": 77.13368,
+     "b": 86.41684,
+     "fa": 2314,
+     "ns": 423337
+    },
+    {
+     "text": "Vợ anh, Trang Trâu, quê Bình Ngọc, Móng Cái, cao một mét bốn bảy, buôn hàng biên giới.",
+     "a": 86.86632,
+     "b": 91.36632,
+     "fa": 2606,
+     "ns": 205176
+    },
+    {
+     "text": "Chị bảo: số tiền này là để mua nhà cho con.",
+     "a": 91.83368,
+     "b": 94.22842,
+     "fa": 2755,
+     "ns": 109193
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "a": 95.03368,
+   "b": 112.26632,
+   "fa": 2851,
+   "fb": 3368,
+   "sens": [
+    {
+     "text": "Tối thứ Năm, Ân Hữu Tài, cậu em họ mê game và tin TikTok nhất xóm, chạy sang, giơ điện thoại: anh ơi, ngày mười ba tháng mười một là tận thế, có bài báo khoa học đàng hoàng!",
+     "a": 95.03368,
+     "b": 104.61158,
+     "fa": 2851,
+     "ns": 436779
+    },
+    {
+     "text": "Quang tái mặt: có sao không em?",
+     "a": 105.06632,
+     "b": 106.85895,
+     "fa": 3152,
+     "ns": 81726
+    },
+    {
+     "text": "Tài gật lia lịa: video này một triệu lượt xem rồi anh ạ!",
+     "a": 107.56632,
+     "b": 110.63368,
+     "fa": 3227,
+     "ns": 139878
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "a": 112.26632,
+   "b": 145.56632,
+   "fa": 3368,
+   "fb": 4367,
+   "sens": [
+    {
+     "text": "Quang mở báo đọc.",
+     "a": 112.26632,
+     "b": 113.00947,
+     "fa": 3368,
+     "ns": 33873
+    },
+    {
+     "text": "Và lần này, không phải tin đồn.",
+     "a": 113.8,
+     "b": 115.34632,
+     "fa": 3414,
+     "ns": 70496
+    },
+    {
+     "text": "Tháng Một, các nhà khoa học nguyên tử chỉnh đồng hồ tận thế về tám mươi lăm giây trước nửa đêm, gần nhất trong lịch sử.",
+     "a": 115.8,
+     "b": 121.9,
+     "fa": 3474,
+     "ns": 278149
+    },
+    {
+     "text": "Tháng Hai, hiệp ước hạt nhân cuối cùng giữa Mỹ và Nga hết hạn.",
+     "a": 122.36632,
+     "b": 125.64211,
+     "fa": 3671,
+     "ns": 149377
+    },
+    {
+     "text": "Lần đầu sau mấy chục năm, kho vũ khí hạt nhân của hai nước không còn giới hạn.",
+     "a": 126.1,
+     "b": 130.28421,
+     "fa": 3783,
+     "ns": 190819
+    },
+    {
+     "text": "Tháng Mười, chính phủ Anh khuyên mỗi gia đình trữ sẵn nước, đồ ăn và tiền mặt đủ dùng ba ngày.",
+     "a": 130.73368,
+     "b": 135.69474,
+     "fa": 3922,
+     "ns": 226246
+    },
+    {
+     "text": "Cùng tuần, báo Mỹ đưa tin Lầu Năm Góc yêu cầu các căn cứ lớn tự sống được chín mươi ngày không cần tiếp tế.",
+     "a": 136.16632,
+     "b": 141.87263,
+     "fa": 4085,
+     "ns": 260201
+    },
+    {
+     "text": "Quang đọc đến đâu, tim đập nhanh đến đấy.",
+     "a": 142.33368,
+     "b": 144.75579,
+     "fa": 4270,
+     "ns": 110464
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "a": 145.56632,
+   "b": 168.06632,
+   "fa": 4367,
+   "fb": 5042,
+   "sens": [
+    {
+     "text": "Sáng hôm sau ở quán trà đá, Cường Sô xiu, chín mươi tám ký, vừa đánh pích bôn về, gọi to: tận thế thì phải ăn cho sướng, hôm nay anh bao cả quán!",
+     "a": 145.56632,
+     "b": 154.61579,
+     "fa": 4367,
+     "ns": 412622
+    },
+    {
+     "text": "Bác Tư rót trà, cười khà khà: năm sáu hai bác cũng nghe bảo sắp tận thế rồi đấy.",
+     "a": 155.06632,
+     "b": 159.45158,
+     "fa": 4652,
+     "ns": 199968
+    },
+    {
+     "text": "Quang hỏi nhỏ: thế hồi đấy có sao không bác?",
+     "a": 159.9,
+     "b": 162.08316,
+     "fa": 4797,
+     "ns": 99571
+    },
+    {
+     "text": "Bác Tư đáp: có, cả xóm hoảng, bán cả trâu đi mua muối.",
+     "a": 162.8,
+     "b": 166.01158,
+     "fa": 4884,
+     "ns": 146429
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "a": 168.06632,
+   "b": 187.7,
+   "fa": 5042,
+   "fb": 5631,
+   "sens": [
+    {
+     "text": "Tối đó, Linh Livestream lên sóng, bán combo sinh tồn chín triệu chín: mì tôm, nước, đèn pin, đài, và một vỉ viên i ốt.",
+     "a": 168.06632,
+     "b": 175.30737,
+     "fa": 5042,
+     "ns": 330171
+    },
+    {
+     "text": "Chỉ còn mười suất cuối, ai nhanh thì sống!",
+     "a": 175.76632,
+     "b": 178.00316,
+     "fa": 5273,
+     "ns": 101989
+    },
+    {
+     "text": "Quang đặt luôn ba combo.",
+     "a": 178.46632,
+     "b": 179.88632,
+     "fa": 5354,
+     "ns": 64737
+    },
+    {
+     "text": "Viên i ốt là thuốc, chỉ được uống khi cơ quan y tế hướng dẫn.",
+     "a": 180.66632,
+     "b": 184.11789,
+     "fa": 5420,
+     "ns": 157379
+    },
+    {
+     "text": "Nhưng trên livestream, không ai nói điều đó.",
+     "a": 184.56632,
+     "b": 186.88842,
+     "fa": 5537,
+     "ns": 105879
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "a": 187.7,
+   "b": 205.43368,
+   "fa": 5631,
+   "fb": 6163,
+   "sens": [
+    {
+     "text": "Trang Trâu đi hàng về, nhìn chồng thùng giữa nhà.",
+     "a": 189.4,
+     "b": 191.97368,
+     "fa": 5682,
+     "ns": 117359
+    },
+    {
+     "text": "Anh mua ba thùng mì gần ba mươi triệu à?",
+     "a": 192.43368,
+     "b": 194.32947,
+     "fa": 5773,
+     "ns": 86486
+    },
+    {
+     "text": "Quang gãi đầu: phòng thân thôi em.",
+     "a": 195.03368,
+     "b": 196.88105,
+     "fa": 5851,
+     "ns": 84256
+    },
+    {
+     "text": "Trang thở dài: ở Móng Cái, tuần nào chẳng có tin đồn đóng cửa khẩu.",
+     "a": 197.33368,
+     "b": 200.89789,
+     "fa": 5920,
+     "ns": 162522
+    },
+    {
+     "text": "Ai hoảng là người đầu tiên bán rẻ hàng của mình.",
+     "a": 201.36632,
+     "b": 203.58211,
+     "fa": 6041,
+     "ns": 101000
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "a": 205.43368,
+   "b": 239.53368,
+   "fa": 6163,
+   "fb": 7186,
+   "sens": [
+    {
+     "text": "Huy Nguyễn ngồi bàn bên, nãy giờ chỉ nghe.",
+     "a": 205.43368,
+     "b": 207.67368,
+     "fa": 6163,
+     "ns": 102180
+    },
+    {
+     "text": "Anh hỏi Quang đúng một câu: nếu không có chiến tranh, anh bán cổ phiếu rồi định mua lại ở đâu?",
+     "a": 208.13368,
+     "b": 212.91684,
+     "fa": 6244,
+     "ns": 218112
+    },
+    {
+     "text": "Quang im lặng.",
+     "a": 213.63368,
+     "b": 214.23053,
+     "fa": 6409,
+     "ns": 27237
+    },
+    {
+     "text": "Huy mở điện thoại cho Quang xem.",
+     "a": 215.0,
+     "b": 216.50316,
+     "fa": 6450,
+     "ns": 68550
+    },
+    {
+     "text": "Năm sáu hai, khủng hoảng tên lửa Cu Ba, chứng khoán Mỹ giảm mạnh rồi hồi lại chỉ sau vài tháng.",
+     "a": 216.96632,
+     "b": 221.26,
+     "fa": 6509,
+     "ns": 195783
+    },
+    {
+     "text": "Năm hai nghìn không trăm linh một, sau sự kiện mười một tháng chín, thị trường đóng cửa bốn ngày, giảm sâu, rồi cũng hồi lại.",
+     "a": 221.73368,
+     "b": 228.26632,
+     "fa": 6652,
+     "ns": 297912
+    },
+    {
+     "text": "Năm hai nghìn không trăm hai mươi hai, xung đột Nga Ukraina nổ ra, giá dầu, giá vàng tăng vọt, rồi lại hạ nhiệt.",
+     "a": 228.73368,
+     "b": 235.29684,
+     "fa": 6862,
+     "ns": 299282
+    },
+    {
+     "text": "Người mất tiền nhiều nhất, thường là người bán trong cơn hoảng loạn.",
+     "a": 235.76632,
+     "b": 238.73579,
+     "fa": 7073,
+     "ns": 135398
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "a": 239.53368,
+   "b": 281.53368,
+   "fa": 7186,
+   "fb": 8446,
+   "sens": [
+    {
+     "text": "Đêm mười hai tháng mười một.",
+     "a": 239.53368,
+     "b": 240.72526,
+     "fa": 7186,
+     "ns": 54366
+    },
+    {
+     "text": "Quang đọc tin đến khuya rồi ngủ gục trên sô pha.",
+     "a": 241.5,
+     "b": 243.93368,
+     "fa": 7245,
+     "ns": 110978
+    },
+    {
+     "text": "Anh lại mơ thấy vệt sáng, thấy bảng giá vàng.",
+     "a": 244.4,
+     "b": 247.16632,
+     "fa": 7332,
+     "ns": 126165
+    },
+    {
+     "text": "Mười một giờ đêm, điện thoại hú.",
+     "a": 247.63368,
+     "b": 249.53474,
+     "fa": 7429,
+     "ns": 86700
+    },
+    {
+     "text": "Màn hình đỏ rực: cảnh báo hạt nhân, hãy tìm nơi trú ẩn.",
+     "a": 250.0,
+     "b": 253.03789,
+     "fa": 7500,
+     "ns": 138520
+    },
+    {
+     "text": "Quang run tay soạn sẵn lệnh bán toàn bộ danh mục, chờ sáng mai thị trường mở cửa.",
+     "a": 253.5,
+     "b": 258.16211,
+     "fa": 7605,
+     "ns": 212572
+    },
+    {
+     "text": "Rồi anh gọi cho em trai: cho anh vay ba trăm triệu, mai trả, anh cần mua vàng gấp.",
+     "a": 258.63368,
+     "b": 263.73789,
+     "fa": 7759,
+     "ns": 232792
+    },
+    {
+     "text": "Hai mươi phút sau, nhà mạng nhắn tin: cảnh báo vừa rồi là giả, do kẻ xấu phát tán.",
+     "a": 264.2,
+     "b": 268.83053,
+     "fa": 7926,
+     "ns": 211171
+    },
+    {
+     "text": "Chuyện này không phải không có thật.",
+     "a": 269.3,
+     "b": 270.95895,
+     "fa": 8079,
+     "ns": 75643
+    },
+    {
+     "text": "Mới đây, ứng dụng báo động ở Ucraina và Nga bị hack, gửi cả cảnh báo hạt nhân giả cho người dân.",
+     "a": 271.43368,
+     "b": 276.48632,
+     "fa": 8143,
+     "ns": 230399
+    },
+    {
+     "text": "Nhưng Quang đã tắt máy, ôm ba lô ra tiệm vàng xếp hàng từ lúc nửa đêm.",
+     "a": 276.93368,
+     "b": 280.73053,
+     "fa": 8308,
+     "ns": 173149
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "a": 281.53368,
+   "b": 302.36632,
+   "fa": 8446,
+   "fb": 9071,
+   "sens": [
+    {
+     "text": "Sáu giờ sáng, trước tiệm vàng đã có hàng dài.",
+     "a": 281.53368,
+     "b": 284.03053,
+     "fa": 8446,
+     "ns": 113881
+    },
+    {
+     "text": "Tám giờ, cửa mở.",
+     "a": 284.5,
+     "b": 285.40211,
+     "fa": 8535,
+     "ns": 41143
+    },
+    {
+     "text": "Giá vàng miếng hôm ấy: mua vào một trăm ba mươi lăm triệu, bán ra một trăm ba mươi tám triệu một lượng.",
+     "a": 286.16632,
+     "b": 291.50211,
+     "fa": 8585,
+     "ns": 243294
+    },
+    {
+     "text": "Quang mua hai lượng, hết hai trăm bảy mươi sáu triệu tiền vay.",
+     "a": 291.96632,
+     "b": 294.89684,
+     "fa": 8759,
+     "ns": 133621
+    },
+    {
+     "text": "Cầm hai lượng vàng trên tay, nếu bán lại ngay, anh đã mất sáu triệu, chỉ vì chênh lệch mua bán.",
+     "a": 295.36632,
+     "b": 300.51158,
+     "fa": 8861,
+     "ns": 234596
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "a": 302.36632,
+   "b": 334.26632,
+   "fa": 9071,
+   "fb": 10028,
+   "sens": [
+    {
+     "text": "Chín giờ sáng, bảng điện mở cửa trong sắc đỏ.",
+     "a": 302.36632,
+     "b": 304.53263,
+     "fa": 9071,
+     "ns": 98775
+    },
+    {
+     "text": "Quang bấm bán toàn bộ bằng lệnh thị trường, khớp đúng vùng giá thấp nhất phiên.",
+     "a": 305.0,
+     "b": 309.16211,
+     "fa": 9150,
+     "ns": 189800
+    },
+    {
+     "text": "Ép pê tê bốn mươi chín nghìn một trăm đồng.",
+     "a": 309.63368,
+     "b": 311.88526,
+     "fa": 9289,
+     "ns": 102710
+    },
+    {
+     "text": "Vê xê bê năm mươi ba nghìn sáu.",
+     "a": 312.33368,
+     "b": 313.87053,
+     "fa": 9370,
+     "ns": 70077
+    },
+    {
+     "text": "Hát pê giê hai mươi mốt nghìn.",
+     "a": 314.33368,
+     "b": 315.59053,
+     "fa": 9430,
+     "ns": 57331
+    },
+    {
+     "text": "Vê en em năm mươi ba nghìn năm.",
+     "a": 316.03368,
+     "b": 317.62211,
+     "fa": 9481,
+     "ns": 72458
+    },
+    {
+     "text": "Buổi chiều, tiền bắt đáy vào.",
+     "a": 318.06632,
+     "b": 319.66947,
+     "fa": 9542,
+     "ns": 73074
+    },
+    {
+     "text": "Ép pê tê đóng cửa năm mươi nghìn một trăm.",
+     "a": 320.43368,
+     "b": 322.59895,
+     "fa": 9613,
+     "ns": 98775
+    },
+    {
+     "text": "Chỉ trong một buổi sáng, tính cả phí và thuế, Quang mất gần mười bảy triệu so với giá đóng cửa.",
+     "a": 323.06632,
+     "b": 327.63684,
+     "fa": 9692,
+     "ns": 208377
+    },
+    {
+     "text": "Và năm năm tích sản, giờ nằm im dưới dạng tiền mặt, chờ một ngày tận thế.",
+     "a": 328.1,
+     "b": 332.62211,
+     "fa": 9843,
+     "ns": 206228
+    }
+   ]
+  },
+  {
+   "id": "S13",
+   "a": 334.26632,
+   "b": 352.4,
+   "fa": 10028,
+   "fb": 10572,
+   "sens": [
+    {
+     "text": "Tối mười ba tháng mười một, cả xóm kéo ra quán Cường Sô xiu ngồi đếm ngược.",
+     "a": 334.26632,
+     "b": 337.93684,
+     "fa": 10028,
+     "ns": 167372
+    },
+    {
+     "text": "Mười, chín, ba, hai, một.",
+     "a": 338.4,
+     "b": 339.57368,
+     "fa": 10152,
+     "ns": 53504
+    },
+    {
+     "text": "Không gì xảy ra.",
+     "a": 340.33368,
+     "b": 341.25263,
+     "fa": 10210,
+     "ns": 41929
+    },
+    {
+     "text": "Đèn đường vẫn sáng.",
+     "a": 342.03368,
+     "b": 342.98421,
+     "fa": 10261,
+     "ns": 43365
+    },
+    {
+     "text": "Con chó nhà bên vẫn sủa.",
+     "a": 343.76632,
+     "b": 345.14211,
+     "fa": 10313,
+     "ns": 62702
+    },
+    {
+     "text": "Tài gãi đầu: chắc lệch múi giờ anh ạ.",
+     "a": 345.9,
+     "b": 348.01263,
+     "fa": 10377,
+     "ns": 96359
+    },
+    {
+     "text": "Cả quán cười ồ.",
+     "a": 348.46632,
+     "b": 349.34211,
+     "fa": 10454,
+     "ns": 39921
+    },
+    {
+     "text": "Chỉ có Quang là không cười.",
+     "a": 350.13368,
+     "b": 351.58526,
+     "fa": 10504,
+     "ns": 66226
+    }
+   ]
+  },
+  {
+   "id": "S14",
+   "a": 352.4,
+   "b": 374.7,
+   "fa": 10572,
+   "fb": 11241,
+   "sens": [
+    {
+     "text": "Sáng mười bốn, Trang mở sổ ghi chép của nhà mình.",
+     "a": 352.4,
+     "b": 354.95789,
+     "fa": 10572,
+     "ns": 116655
+    },
+    {
+     "text": "Bán cổ phiếu ở giá thấp nhất phiên: mất gần mười bảy triệu.",
+     "a": 355.43368,
+     "b": 358.62316,
+     "fa": 10663,
+     "ns": 145459
+    },
+    {
+     "text": "Chênh lệch vàng: sáu triệu.",
+     "a": 359.06632,
+     "b": 360.32947,
+     "fa": 10772,
+     "ns": 57562
+    },
+    {
+     "text": "Ba combo sinh tồn: hai mươi chín triệu bảy.",
+     "a": 361.1,
+     "b": 363.43368,
+     "fa": 10833,
+     "ns": 106411
+    },
+    {
+     "text": "Nợ em trai ba trăm triệu.",
+     "a": 363.9,
+     "b": 365.06947,
+     "fa": 10917,
+     "ns": 53340
+    },
+    {
+     "text": "Trang không mắng.",
+     "a": 365.83368,
+     "b": 366.54737,
+     "fa": 10975,
+     "ns": 32579
+    },
+    {
+     "text": "Chị chỉ nói nhỏ: anh sợ chiến tranh.",
+     "a": 367.33368,
+     "b": 369.43053,
+     "fa": 11020,
+     "ns": 95652
+    },
+    {
+     "text": "Nhưng anh làm nhà mình thiệt trước cả chiến tranh.",
+     "a": 369.9,
+     "b": 372.83895,
+     "fa": 11097,
+     "ns": 134006
+    }
+   ]
+  },
+  {
+   "id": "S15",
+   "a": 374.7,
+   "b": 401.8,
+   "fa": 11241,
+   "fb": 12054,
+   "sens": [
+    {
+     "text": "Chiều đó, Huy ghé qua.",
+     "a": 374.7,
+     "b": 376.10737,
+     "fa": 11241,
+     "ns": 64194
+    },
+    {
+     "text": "Quang hỏi: em ơi, anh sai ở đâu?",
+     "a": 376.86632,
+     "b": 378.75579,
+     "fa": 11306,
+     "ns": 86156
+    },
+    {
+     "text": "Huy đáp: chuẩn bị không sai.",
+     "a": 379.46632,
+     "b": 381.04526,
+     "fa": 11384,
+     "ns": 71969
+    },
+    {
+     "text": "Chính phủ Anh khuyên dân trữ đồ ba ngày, để phòng mất điện, tấn công mạng, thời tiết cực đoan.",
+     "a": 381.83368,
+     "b": 386.92316,
+     "fa": 11455,
+     "ns": 232095
+    },
+    {
+     "text": "Không ai khuyên bán sạch tài sản lúc nửa đêm.",
+     "a": 387.36632,
+     "b": 389.36947,
+     "fa": 11621,
+     "ns": 91337
+    },
+    {
+     "text": "Anh nhớ giấc mơ của anh không?",
+     "a": 389.83368,
+     "b": 391.24421,
+     "fa": 11695,
+     "ns": 64330
+    },
+    {
+     "text": "Vàng tăng lên một tỷ, mà vẫn không đổi được bao gạo.",
+     "a": 391.93368,
+     "b": 394.56105,
+     "fa": 11758,
+     "ns": 119814
+    },
+    {
+     "text": "Lúc thật sự có biến, thứ cứu nhà mình là nước, là thuốc, là chút tiền mặt, và hàng xóm còn tin nhau.",
+     "a": 395.03368,
+     "b": 400.99263,
+     "fa": 11851,
+     "ns": 271730
+    }
+   ]
+  },
+  {
+   "id": "S16",
+   "a": 401.8,
+   "b": 424.16632,
+   "fa": 12054,
+   "fb": 12725,
+   "sens": [
+    {
+     "text": "Huy lấy giấy ra, viết bốn dòng.",
+     "a": 401.8,
+     "b": 403.62,
+     "fa": 12054,
+     "ns": 82991
+    },
+    {
+     "text": "Một, quỹ dự phòng từ ba đến sáu tháng chi tiêu, có một phần tiền mặt để ở nhà.",
+     "a": 404.06632,
+     "b": 408.70421,
+     "fa": 12122,
+     "ns": 211451
+    },
+    {
+     "text": "Hai, không bao giờ vay tiền để chạy theo tin đồn.",
+     "a": 409.16632,
+     "b": 411.36316,
+     "fa": 12275,
+     "ns": 100138
+    },
+    {
+     "text": "Ba, viết sẵn kế hoạch cho ngày thị trường hoảng loạn, khi đầu còn lạnh, rồi đến lúc ấy chỉ việc làm theo.",
+     "a": 411.83368,
+     "b": 417.37684,
+     "fa": 12355,
+     "ns": 252775
+    },
+    {
+     "text": "Bốn, trước khi bấm bán, kiểm tin ở nguồn chính thức, chờ ít nhất một đêm.",
+     "a": 417.83368,
+     "b": 421.87474,
+     "fa": 12535,
+     "ns": 184287
+    }
+   ]
+  },
+  {
+   "id": "S17",
+   "a": 424.16632,
+   "b": 442.9,
+   "fa": 12725,
+   "fb": 13287,
+   "sens": [
+    {
+     "text": "Tuần sau, Quang bán hai lượng vàng, trả em trai, chịu mất phần chênh lệch.",
+     "a": 424.16632,
+     "b": 428.19368,
+     "fa": 12725,
+     "ns": 183652
+    },
+    {
+     "text": "Ba thùng combo, anh đem tặng trường mầm non đầu ngõ, làm góc dạy kỹ năng cho các cháu.",
+     "a": 428.66632,
+     "b": 433.69474,
+     "fa": 12860,
+     "ns": 229277
+    },
+    {
+     "text": "Còn tối hôm ấy, hai vợ chồng ngồi viết một trang giấy, đặt tên: kế hoạch nhà mình khi có biến.",
+     "a": 434.16632,
+     "b": 440.61053,
+     "fa": 13025,
+     "ns": 293822
+    }
+   ]
+  },
+  {
+   "id": "S18",
+   "a": 442.9,
+   "b": 449.76632,
+   "fa": 13287,
+   "fb": 13493,
+   "sens": [
+    {
+     "text": "Thế giới có thể đang chuẩn bị cho chiến tranh.",
+     "a": 442.9,
+     "b": 444.93684,
+     "fa": 13287,
+     "ns": 92877
+    },
+    {
+     "text": "Còn mỗi gia đình, hãy chuẩn bị cho mình một cái đầu lạnh.",
+     "a": 445.4,
+     "b": 448.12526,
+     "fa": 13362,
+     "ns": 124269
+    }
+   ]
+  },
+  {
+   "id": "S19",
+   "a": 449.76632,
+   "b": 459.63368,
+   "fa": 13493,
+   "fb": 13789,
+   "sens": [
+    {
+     "text": "Đêm mười hai tháng mười một vừa rồi, bạn có nhận được tin đồn tận thế không?",
+     "a": 450.4,
+     "b": 454.17158,
+     "fa": 13512,
+     "ns": 171969
+    },
+    {
+     "text": "Kể cho mình nghe ở phần bình luận nhé.",
+     "a": 454.86632,
+     "b": 456.50421,
+     "fa": 13646,
+     "ns": 74659
+    }
+   ]
+  },
+  {
+   "id": "S20",
+   "a": 459.63368,
+   "b": 475.13368,
+   "fa": 13789,
+   "fb": 14254,
+   "sens": [
+    {
+     "text": "Nếu muốn tự lập kế hoạch tài chính cho gia đình khi có khủng hoảng: quỹ dự phòng bao nhiêu là đủ, chia vốn thế nào, khi nào không được bán, bạn có thể học miễn phí tại chứng khoán huy nguyễn chấm com.",
+     "a": 459.63368,
+     "b": 470.01579,
+     "fa": 13789,
+     "ns": 473423
+    },
+    {
+     "text": "Hãy theo dõi kênh để xem những câu chuyện tiền bạc tiếp theo.",
+     "a": 470.46632,
+     "b": 473.27474,
+     "fa": 14114,
+     "ns": 128028
+    }
+   ]
+  }
+ ]
+}
