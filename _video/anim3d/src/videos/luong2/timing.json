@@ -1,0 +1,758 @@
+{
+ "total": 312.067,
+ "scenes": [
+  {
+   "id": "S01",
+   "a": 0.0,
+   "b": 27.73368,
+   "fa": 0,
+   "fb": 832,
+   "sens": [
+    {
+     "text": "Ngày hai mươi lăm tháng mười.",
+     "a": 1.26632,
+     "b": 2.45263,
+     "fa": 38,
+     "ns": 54083
+    },
+    {
+     "text": "Điện thoại kêu ting ting hai lần: mười tám triệu, rồi mười hai triệu.",
+     "a": 3.23368,
+     "b": 6.58316,
+     "fa": 97,
+     "ns": 152735
+    },
+    {
+     "text": "Lương về.",
+     "a": 7.03368,
+     "b": 7.56947,
+     "fa": 211,
+     "ns": 24438
+    },
+    {
+     "text": "Long hô: tối nay đi ăn nướng!",
+     "a": 8.33368,
+     "b": 10.17474,
+     "fa": 250,
+     "ns": 83956
+    },
+    {
+     "text": "Mười một ngày sau, mười một giờ đêm ngày năm tháng mười một.",
+     "a": 10.63368,
+     "b": 13.19684,
+     "fa": 319,
+     "ns": 116913
+    },
+    {
+     "text": "Ngân mở ứng dụng ngân hàng.",
+     "a": 13.66632,
+     "b": 14.97579,
+     "fa": 410,
+     "ns": 59677
+    },
+    {
+     "text": "Số dư: ba trăm mười hai nghìn đồng.",
+     "a": 15.73368,
+     "b": 17.50842,
+     "fa": 472,
+     "ns": 80962
+    },
+    {
+     "text": "Đúng lúc ấy, mẹ ở quê gọi lên: con ơi, bố nằm viện rồi, con có hai mươi triệu không?",
+     "a": 17.96632,
+     "b": 23.00211,
+     "fa": 539,
+     "ns": 229632
+    },
+    {
+     "text": "Ngân cầm máy, không nói được câu nào.",
+     "a": 23.7,
+     "b": 25.44211,
+     "fa": 711,
+     "ns": 79450
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "a": 27.73368,
+   "b": 34.46632,
+   "fa": 832,
+   "fb": 1034,
+   "sens": [
+    {
+     "text": "Hai vợ chồng lương ba mươi triệu một tháng.",
+     "a": 28.36632,
+     "b": 30.19579,
+     "fa": 851,
+     "ns": 83411
+    },
+    {
+     "text": "Vậy tiền đã đi đâu?",
+     "a": 30.66632,
+     "b": 31.56737,
+     "fa": 920,
+     "ns": 41087
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "a": 34.46632,
+   "b": 60.53368,
+   "fa": 1034,
+   "fb": 1816,
+   "sens": [
+    {
+     "text": "Ở chung cư này, ai cũng gọi anh là Long Bóc Hộp.",
+     "a": 34.46632,
+     "b": 37.37053,
+     "fa": 1034,
+     "ns": 132435
+    },
+    {
+     "text": "Máy gì mới ra, anh cũng mua đầu tiên, rồi quay clip bóc hộp.",
+     "a": 37.83368,
+     "b": 41.44632,
+     "fa": 1135,
+     "ns": 164756
+    },
+    {
+     "text": "Bác bảo vệ bê hộp lên, lắc đầu: lại hàng của anh Long à, tháng này là hộp thứ mười hai rồi đấy.",
+     "a": 41.9,
+     "b": 46.74632,
+     "fa": 1257,
+     "ns": 221005
+    },
+    {
+     "text": "Vợ anh là Ngân Săn Seo, làm ma két tinh.",
+     "a": 47.2,
+     "b": 49.74842,
+     "fa": 1416,
+     "ns": 116197
+    },
+    {
+     "text": "Đêm nào đúng không giờ, chị cũng canh mã giảm giá.",
+     "a": 50.2,
+     "b": 52.73789,
+     "fa": 1506,
+     "ns": 115726
+    },
+    {
+     "text": "Anh ơi, mã giảm năm mươi phần trăm, chỉ đến không giờ thôi!",
+     "a": 53.2,
+     "b": 56.54211,
+     "fa": 1596,
+     "ns": 152410
+    },
+    {
+     "text": "Long cười: mua đi em, mình làm ra tiền mà.",
+     "a": 57.0,
+     "b": 59.73684,
+     "fa": 1710,
+     "ns": 124817
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "a": 60.53368,
+   "b": 81.2,
+   "fa": 1816,
+   "fb": 2436,
+   "sens": [
+    {
+     "text": "Ba mươi triệu là bao nhiêu?",
+     "a": 60.53368,
+     "b": 61.62737,
+     "fa": 1816,
+     "ns": 49906
+    },
+    {
+     "text": "Theo Cục Thống kê, quý ba năm nay, thu nhập bình quân của người lao động cả nước là chín phẩy hai triệu đồng một tháng.",
+     "a": 62.33368,
+     "b": 68.68632,
+     "fa": 1870,
+     "ns": 289690
+    },
+    {
+     "text": "Tính chín tháng, người làm công ăn lương ở thành thị được khoảng mười một phẩy hai triệu.",
+     "a": 69.13368,
+     "b": 73.67474,
+     "fa": 2074,
+     "ns": 207076
+    },
+    {
+     "text": "Nhà Long gấp hơn ba lần mức bình quân.",
+     "a": 74.13368,
+     "b": 75.98316,
+     "fa": 2224,
+     "ns": 84348
+    },
+    {
+     "text": "Vậy mà ngày năm, tài khoản chỉ còn ba trăm mười hai nghìn.",
+     "a": 76.43368,
+     "b": 79.56526,
+     "fa": 2293,
+     "ns": 142818
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "a": 81.2,
+   "b": 105.0,
+   "fa": 2436,
+   "fb": 3150,
+   "sens": [
+    {
+     "text": "Em thử cộng giúp hai vợ chồng.",
+     "a": 81.2,
+     "b": 82.88842,
+     "fa": 2436,
+     "ns": 76980
+    },
+    {
+     "text": "Thuê căn hộ: chín triệu.",
+     "a": 83.33368,
+     "b": 84.78421,
+     "fa": 2500,
+     "ns": 66175
+    },
+    {
+     "text": "Trả góp điện thoại mới: ba triệu rưỡi.",
+     "a": 85.56632,
+     "b": 87.62842,
+     "fa": 2567,
+     "ns": 94034
+    },
+    {
+     "text": "Trả góp xe máy: ba triệu.",
+     "a": 88.1,
+     "b": 89.44,
+     "fa": 2643,
+     "ns": 61087
+    },
+    {
+     "text": "Thẻ tín dụng, trả tối thiểu: hai triệu rưỡi.",
+     "a": 90.2,
+     "b": 92.85789,
+     "fa": 2706,
+     "ns": 121213
+    },
+    {
+     "text": "Đồ ăn giao tận nơi và cà phê: sáu triệu.",
+     "a": 93.33368,
+     "b": 95.40632,
+     "fa": 2800,
+     "ns": 94548
+    },
+    {
+     "text": "Đi chợ, điện, nước, xăng: bốn triệu.",
+     "a": 95.86632,
+     "b": 98.07684,
+     "fa": 2876,
+     "ns": 100802
+    },
+    {
+     "text": "Các khoản mua trước trả sau: hai triệu.",
+     "a": 98.53368,
+     "b": 100.21263,
+     "fa": 2956,
+     "ns": 76584
+    },
+    {
+     "text": "Cộng lại: ba mươi triệu.",
+     "a": 100.66632,
+     "b": 102.05368,
+     "fa": 3020,
+     "ns": 63232
+    },
+    {
+     "text": "Lương vừa về, đã có chủ.",
+     "a": 102.83368,
+     "b": 104.19053,
+     "fa": 3085,
+     "ns": 61900
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "a": 105.0,
+   "b": 126.6,
+   "fa": 3150,
+   "fb": 3798,
+   "sens": [
+    {
+     "text": "Ở công ty, Ngân ngồi cạnh chị Hoa, ba mươi lăm tuổi, lương mười lăm triệu.",
+     "a": 105.0,
+     "b": 108.81895,
+     "fa": 3150,
+     "ns": 174138
+    },
+    {
+     "text": "Cả phòng gọi chị là Hoa Sổ Tay, vì tiêu đồng nào chị cũng ghi vào một cuốn sổ nhỏ.",
+     "a": 109.26632,
+     "b": 113.64316,
+     "fa": 3278,
+     "ns": 199545
+    },
+    {
+     "text": "Chị Hoa ơi, lương chị ít hơn nhà em, sao chị chẳng bao giờ hết tiền?",
+     "a": 114.1,
+     "b": 118.02737,
+     "fa": 3423,
+     "ns": 179082
+    },
+    {
+     "text": "Chị Hoa cười: vì lương về, chị trả cho chị trước, em ạ.",
+     "a": 118.73368,
+     "b": 121.66842,
+     "fa": 3562,
+     "ns": 133834
+    },
+    {
+     "text": "Ngân bĩu môi: chị nói như trong sách ấy.",
+     "a": 122.13368,
+     "b": 124.53474,
+     "fa": 3664,
+     "ns": 109488
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "a": 126.6,
+   "b": 153.86632,
+   "fa": 3798,
+   "fb": 4616,
+   "sens": [
+    {
+     "text": "Cái bẫy của nhà Long không nằm ở một món to.",
+     "a": 126.6,
+     "b": 128.82526,
+     "fa": 3798,
+     "ns": 101453
+    },
+    {
+     "text": "Nó nằm ở chữ trả góp và chữ mua trước trả sau.",
+     "a": 129.3,
+     "b": 132.43895,
+     "fa": 3879,
+     "ns": 143128
+    },
+    {
+     "text": "Mỗi khoản nhìn rất nhỏ, vài trăm nghìn một tháng, nên mua rất dễ.",
+     "a": 132.9,
+     "b": 136.35158,
+     "fa": 3987,
+     "ns": 157405
+    },
+    {
+     "text": "Còn thẻ tín dụng, nếu chỉ trả tối thiểu, phần còn lại bị tính lãi.",
+     "a": 136.8,
+     "b": 140.78211,
+     "fa": 4104,
+     "ns": 181579
+    },
+    {
+     "text": "Theo báo Đầu tư cuối năm ngoái, lãi thẻ ở một số ngân hàng đã lên tới ba mươi tám phẩy tám phần trăm một năm, có loại thẻ ba phẩy chín chín phần trăm một tháng.",
+     "a": 141.23368,
+     "b": 149.74316,
+     "fa": 4237,
+     "ns": 388059
+    },
+    {
+     "text": "Trễ hạn còn bị phạt, và bị ghi vào lịch sử tín dụng.",
+     "a": 150.2,
+     "b": 153.06316,
+     "fa": 4506,
+     "ns": 130579
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "a": 153.86632,
+   "b": 172.73368,
+   "fa": 4616,
+   "fb": 5182,
+   "sens": [
+    {
+     "text": "Ngày tám tháng mười một, công ty Long cắt giảm.",
+     "a": 155.56632,
+     "b": 158.14737,
+     "fa": 4667,
+     "ns": 117696
+    },
+    {
+     "text": "Em ơi, phòng anh cắt ba mươi phần trăm, có anh.",
+     "a": 158.6,
+     "b": 161.78,
+     "fa": 4758,
+     "ns": 145018
+    },
+    {
+     "text": "Ngân hỏi đúng một câu: thế tiền nhà tháng sau thì sao anh?",
+     "a": 162.23368,
+     "b": 164.76526,
+     "fa": 4867,
+     "ns": 115473
+    },
+    {
+     "text": "Long không trả lời.",
+     "a": 165.46632,
+     "b": 166.36737,
+     "fa": 4964,
+     "ns": 41083
+    },
+    {
+     "text": "Hai vợ chồng lương ba mươi triệu, nhưng không có nổi một tháng tiền dự phòng.",
+     "a": 167.13368,
+     "b": 170.86,
+     "fa": 5014,
+     "ns": 169951
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "a": 172.73368,
+   "b": 195.9,
+   "fa": 5182,
+   "fb": 5877,
+   "sens": [
+    {
+     "text": "Đêm đó, Long lướt thấy một quảng cáo: duyệt vay trong năm phút, không cần thẩm định.",
+     "a": 172.73368,
+     "b": 177.26737,
+     "fa": 5182,
+     "ns": 206775
+    },
+    {
+     "text": "Anh bấm vay mười triệu để gửi về cho bố vợ.",
+     "a": 177.73368,
+     "b": 180.40316,
+     "fa": 5332,
+     "ns": 121765
+    },
+    {
+     "text": "Tiền về tài khoản chỉ có bảy triệu, ba triệu là phí hồ sơ.",
+     "a": 180.86632,
+     "b": 184.54842,
+     "fa": 5426,
+     "ns": 167871
+    },
+    {
+     "text": "Bảy ngày sau phải trả mười hai triệu.",
+     "a": 185.0,
+     "b": 186.79789,
+     "fa": 5550,
+     "ns": 81981
+    },
+    {
+     "text": "Bộ luật Dân sự chỉ cho phép lãi tối đa hai mươi phần trăm một năm.",
+     "a": 187.26632,
+     "b": 190.35684,
+     "fa": 5618,
+     "ns": 140932
+    },
+    {
+     "text": "Còn khoản này, em tính theo lãi đơn, quy ra một năm là gần bốn nghìn phần trăm.",
+     "a": 190.8,
+     "b": 195.10316,
+     "fa": 5724,
+     "ns": 196237
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "a": 195.9,
+   "b": 212.6,
+   "fa": 5877,
+   "fb": 6378,
+   "sens": [
+    {
+     "text": "Ngày thứ tám, Long chưa trả được.",
+     "a": 195.9,
+     "b": 197.76,
+     "fa": 5877,
+     "ns": 84818
+    },
+    {
+     "text": "Tin nhắn đòi nợ bắt đầu gửi đến cả danh bạ của anh: sếp cũ, đồng nghiệp, và cả mẹ vợ.",
+     "a": 198.23368,
+     "b": 202.92737,
+     "fa": 5947,
+     "ns": 214041
+    },
+    {
+     "text": "Mẹ Ngân gọi lên, giọng run run: thằng Long nó nợ ai hả con?",
+     "a": 203.4,
+     "b": 207.02842,
+     "fa": 6102,
+     "ns": 165437
+    },
+    {
+     "text": "Ngân quay sang chồng: sao anh không nói với em?",
+     "a": 207.73368,
+     "b": 209.59368,
+     "fa": 6232,
+     "ns": 84853
+    },
+    {
+     "text": "Long cúi đầu: anh sợ em lo.",
+     "a": 210.3,
+     "b": 211.79579,
+     "fa": 6309,
+     "ns": 68203
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "a": 212.6,
+   "b": 232.8,
+   "fa": 6378,
+   "fb": 6984,
+   "sens": [
+    {
+     "text": "Sáng hôm sau, Ngân sang nhà chị Hoa.",
+     "a": 212.6,
+     "b": 214.64526,
+     "fa": 6378,
+     "ns": 93255
+    },
+    {
+     "text": "Chị Hoa mở cuốn sổ tay: năm năm nay, lương về chị chuyển ngay ba triệu sang một tài khoản riêng, rồi mới tiêu.",
+     "a": 215.1,
+     "b": 220.88526,
+     "fa": 6453,
+     "ns": 263811
+    },
+    {
+     "text": "Giờ chị có quỹ dự phòng đủ sáu tháng, và một khoản tích lũy cho con.",
+     "a": 221.33368,
+     "b": 225.33368,
+     "fa": 6640,
+     "ns": 182412
+    },
+    {
+     "text": "Chị cho em mượn mười triệu, trả dứt khoản vay kia ngay hôm nay.",
+     "a": 225.8,
+     "b": 228.85789,
+     "fa": 6774,
+     "ns": 139452
+    },
+    {
+     "text": "Nhưng em phải hứa với chị ba điều.",
+     "a": 229.33368,
+     "b": 230.95053,
+     "fa": 6880,
+     "ns": 73767
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "a": 232.8,
+   "b": 256.36632,
+   "fa": 6984,
+   "fb": 7691,
+   "sens": [
+    {
+     "text": "Một: lương về, trả cho mình trước.",
+     "a": 232.8,
+     "b": 234.76,
+     "fa": 6984,
+     "ns": 89389
+    },
+    {
+     "text": "Chuyển ngay mười đến hai mươi phần trăm sang tài khoản riêng, rồi mới tiêu phần còn lại.",
+     "a": 235.23368,
+     "b": 240.32737,
+     "fa": 7057,
+     "ns": 232298
+    },
+    {
+     "text": "Hai: quỹ dự phòng ba đến sáu tháng chi tiêu, làm trước mọi khoản đầu tư.",
+     "a": 240.8,
+     "b": 245.01474,
+     "fa": 7224,
+     "ns": 192202
+    },
+    {
+     "text": "Mất việc, ốm đau, đó là cái phao.",
+     "a": 245.46632,
+     "b": 247.04,
+     "fa": 7364,
+     "ns": 71757
+    },
+    {
+     "text": "Ba: tích lũy đều mỗi tháng vào tài sản sinh ra tiền, và không bao giờ vay để tiêu, nhất là vay qua ứng dụng không rõ nguồn gốc.",
+     "a": 247.5,
+     "b": 254.70947,
+     "fa": 7425,
+     "ns": 328742
+    }
+   ]
+  },
+  {
+   "id": "S13",
+   "a": 256.36632,
+   "b": 277.9,
+   "fa": 7691,
+   "fb": 8337,
+   "sens": [
+    {
+     "text": "Hai tháng sau, Long tìm được việc mới.",
+     "a": 256.36632,
+     "b": 258.73579,
+     "fa": 7691,
+     "ns": 108046
+    },
+    {
+     "text": "Tối nhận lương đầu tiên, hai vợ chồng ngồi viết lại ba mươi triệu.",
+     "a": 259.2,
+     "b": 262.44211,
+     "fa": 7776,
+     "ns": 147844
+    },
+    {
+     "text": "Chuyển sang căn hộ nhỏ hơn: tiền nhà còn sáu triệu.",
+     "a": 262.9,
+     "b": 265.46,
+     "fa": 7887,
+     "ns": 116749
+    },
+    {
+     "text": "Đồ ăn giao giảm một nửa: còn ba triệu.",
+     "a": 265.93368,
+     "b": 268.16947,
+     "fa": 7978,
+     "ns": 101982
+    },
+    {
+     "text": "Không mua trả góp món mới nào nữa.",
+     "a": 268.63368,
+     "b": 270.25263,
+     "fa": 8059,
+     "ns": 73836
+    },
+    {
+     "text": "Và lương về, để riêng ngay sáu triệu, đúng hai mươi phần trăm.",
+     "a": 270.7,
+     "b": 274.09474,
+     "fa": 8121,
+     "ns": 154788
+    },
+    {
+     "text": "Long bán bớt mấy món đồ công nghệ còn nguyên hộp.",
+     "a": 274.56632,
+     "b": 277.08842,
+     "fa": 8237,
+     "ns": 115004
+    }
+   ]
+  },
+  {
+   "id": "S14",
+   "a": 277.9,
+   "b": 296.23368,
+   "fa": 8337,
+   "fb": 8887,
+   "sens": [
+    {
+     "text": "Ba năm sau.",
+     "a": 277.9,
+     "b": 278.64632,
+     "fa": 8337,
+     "ns": 34043
+    },
+    {
+     "text": "Mỗi tháng sáu triệu, ba mươi sáu tháng, riêng tiền gốc đã là hai trăm mười sáu triệu, chưa tính tiền lời.",
+     "a": 279.43368,
+     "b": 285.09684,
+     "fa": 8383,
+     "ns": 258279
+    },
+    {
+     "text": "Tối nay Long lại quay clip bóc hộp.",
+     "a": 285.56632,
+     "b": 287.42421,
+     "fa": 8567,
+     "ns": 84713
+    },
+    {
+     "text": "Lần này, trong hộp là một cuốn sổ tay mới.",
+     "a": 287.86632,
+     "b": 290.27684,
+     "fa": 8636,
+     "ns": 109907
+    },
+    {
+     "text": "Còn ngày năm mỗi tháng, tài khoản không còn ba trăm mười hai nghìn nữa.",
+     "a": 290.73368,
+     "b": 294.37368,
+     "fa": 8722,
+     "ns": 165993
+    }
+   ]
+  },
+  {
+   "id": "S15",
+   "a": 296.23368,
+   "b": 305.16632,
+   "fa": 8887,
+   "fb": 9155,
+   "sens": [
+    {
+     "text": "Lần này mẹ gọi lên chỉ để hỏi: tết này các con có về không?",
+     "a": 296.23368,
+     "b": 299.47053,
+     "fa": 8887,
+     "ns": 147620
+    },
+    {
+     "text": "Ngân cười: con về mẹ ạ.",
+     "a": 300.16632,
+     "b": 301.47263,
+     "fa": 9005,
+     "ns": 59563
+    },
+    {
+     "text": "Và lần này, con có quà cho bố mẹ.",
+     "a": 302.23368,
+     "b": 304.35579,
+     "fa": 9067,
+     "ns": 96783
+    }
+   ]
+  },
+  {
+   "id": "S16",
+   "a": 305.16632,
+   "b": 312.06632,
+   "fa": 9155,
+   "fb": 9362,
+   "sens": [
+    {
+     "text": "Còn nhà mình, lương về được mấy ngày thì hết?",
+     "a": 305.16632,
+     "b": 307.29158,
+     "fa": 9155,
+     "ns": 96908
+    },
+    {
+     "text": "Kể cho em nghe ở phần bình luận nhé.",
+     "a": 308.0,
+     "b": 309.78,
+     "fa": 9240,
+     "ns": 81181
+    }
+   ]
+  }
+ ]
+}
