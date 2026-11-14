@@ -1,0 +1,19 @@
+name: Lay anh Wikimedia
+on:
+  workflow_dispatch:
+    inputs:
+      ds: {description: "file json danh sach", required: true}
+      tag: {description: "release", required: true}
+permissions:
+  contents: write
+jobs:
+  get:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 1}
+      - run: python3 _video/lay_anh.py "${{ inputs.ds }}" out
+      - env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          gh release view "${{ inputs.tag }}" >/dev/null 2>&1 || gh release create "${{ inputs.tag }}" -t "${{ inputs.tag }}" -n anh
+          gh release upload "${{ inputs.tag }}" out/* --clobber
