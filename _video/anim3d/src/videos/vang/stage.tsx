@@ -8,15 +8,15 @@ import { EffectComposer } from "@react-three/postprocessing";
 import { BlendFunction, BloomEffect, ToneMappingEffect, ToneMappingMode } from "postprocessing";
 import { InkPass, noInkFallback, NOINK } from "../pho/ink";
 import { GradeEffect } from "../pho/grade";
-import { Actor, Pose, DO, NGAN, VEST, CLERK, ME2, GYM, BOXER, XOI, crowd } from "./cast2";
-import { buildRoom, buildStreet, buildShop, buildHue, buildBenThanh, buildHoGuom, buildVilla, rainStreaks, RX, SX, IX, HX, BX, GX, VX, Screen } from "./sets";
+import { Actor, Pose, DO, NGAN, VEST, CLERK, ME2, GYM, BOXER, XOI, OUT, crowd } from "./cast2";
+import { buildRoom, buildStreet, buildShop, buildHue, buildBenThanh, buildHoGuom, buildVilla, buildField, buildKorea, buildBank, rainStreaks, RX, SX, IX, HX, BX, GX, VX, FX, KX, NX, Screen } from "./sets";
 import { applyLight, GR, LK, L } from "./look";
 import { F } from "./cards";
 import { buildExtras } from "./extras";
 
 export type V = [number, number, number];
-export type SetKey = "room" | "street" | "streetday" | "shop" | "hue" | "bt" | "lake" | "villa";
-export const OFF: Record<SetKey, number> = { room: RX, street: SX, streetday: SX, shop: IX, hue: HX, bt: BX, lake: GX, villa: VX };
+export type SetKey = "room" | "street" | "streetday" | "shop" | "hue" | "bt" | "lake" | "villa" | "field" | "fieldfever" | "korea" | "bank";
+export const OFF: Record<SetKey, number> = { room: RX, street: SX, streetday: SX, shop: IX, hue: HX, bt: BX, lake: GX, villa: VX, field: FX, fieldfever: FX, korea: KX, bank: NX };
 export type Cast = { a: string; p: V; to?: V; pose: (t: number, d: number) => Pose };
 export type Shot3D = { set: SetKey; light: LK; from: [V, V, number]; to: [V, V, number]; cast: Cast[]; rain?: boolean; shake?: number; chat?: "calm" | "fast" | "off" | "boom"; game?: boolean; board?: "buy" | "sell"; ease?: "sm" | "lin" | "out"; walkers?: boolean; jam?: boolean };
 export type Run = { a: number; b: number; s: Shot3D }; // frames, relative to the Stage sequence
@@ -78,12 +78,16 @@ const Inner: React.FC<{ set: SetKey; runs: Run[] }> = ({ set, runs }) => {
     else if (set === "hue") root.add(buildHue().g);
     else if (set === "bt") root.add(buildBenThanh().g);
     else if (set === "villa") { const v = buildVilla(); root.add(v.g); bike = v.hero; }
+    else if (set === "field" || set === "fieldfever") root.add(buildField(set === "fieldfever").g);
+    else if (set === "korea") root.add(buildKorea().g);
+    else if (set === "bank") root.add(buildBank().g);
     else root.add(buildHoGuom().g);
     const rain = rainStreaks(); root.add(rain.m);
     const keys = new Set<string>(); runs.forEach((r) => r.s.cast.forEach((c) => keys.add(c.a)));
     const actors: Record<string, Actor> = {};
     keys.delete("bike"); keys.delete("boat");
     for (const k of keys) {
+      if (OUT[k]) { const a = new Actor(OUT[k].o, OUT[k].h, OUT[k].seed); actors[k] = a; root.add(a.root); a.root.visible = false; continue; }
       const o = k === "tan" ? DO : k === "ngan" ? NGAN : k === "vest" ? VEST : k === "clerk" ? CLERK : k === "me" ? ME2 : k === "gym" ? GYM : k === "gym2" ? { ...GYM, jacket: "#f4f4f2", skin: "#d9a77e", hair: "#3a2a20" } : k === "boxer" ? BOXER : k === "xoi" ? XOI : crowd(parseInt(k.slice(1)) || 0);
       const h = k === "gym" || k === "gym2" ? 1.82 : k === "tan" ? 1.7 : k === "ngan" ? 1.58 : k === "vest" ? 1.76 : k === "me" ? 1.48 : 1.55 + ((parseInt(k.slice(1)) || 0) % 5) * 0.05;
       const a = new Actor(o, h, k === "tan" ? 3 : k === "ngan" ? 9 : 5 + (parseInt(k.slice(1)) || 0) * 3); actors[k] = a; root.add(a.root); a.root.visible = false;

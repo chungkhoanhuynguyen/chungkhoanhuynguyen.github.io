@@ -456,3 +456,71 @@ export function buildVilla() {
   const hero = boat("#d0482a"); hero.rotation.y = Math.PI / 2; hero.position.set(0, 0.3, 0); g.add(hero);
   return { g, hero };
 }
+
+// ================= PHIM #2 "Hùng Xa Lộ – đất nền" =================
+export const FX = 2800, KX = 3300, NX = 3800;
+/** bãi đất nền vùng ven: cỏ cao, cọc mốc sơn đỏ, cờ phân lô, đường bê tông làng, ô tô đỗ (khi sốt), biển "BÁN GẤP" */
+export function buildField(fever = false) {
+  const g = new THREE.Group(); g.position.x = FX; const r = rng(71);
+  const [dc, dg] = cvs(256, 256); dg.fillStyle = "#6b5a3a"; dg.fillRect(0, 0, 256, 256); for (let i = 0; i < 1400; i++) { dg.fillStyle = ["#5a4a30", "#7a6646", "#4f6a35"][i % 3]; dg.fillRect(r() * 256, r() * 256, 3, 3); }
+  const dt = ctex(dc, true); dt.repeat.set(30, 8); const ground = new THREE.Mesh(new THREE.PlaneGeometry(160, 40), lam("#ffffff", dt)); ground.rotation.x = -Math.PI / 2; ground.receiveShadow = true; g.add(ground);
+  const road = box(160, 0.06, 4.2, lam("#9ea3a6"), false); road.position.set(0, 0.03, -4.5); g.add(road);
+  // ô lô đất: viền gạch thấp + cọc mốc + cờ
+  for (let i = -6; i <= 6; i++) for (const z of [2.5, 9.5]) {
+    const x = i * 9; const curb = box(8.6, 0.12, 0.12, lam("#c9c2b4"), false); curb.position.set(x, 0.06, z - 3); g.add(curb);
+    for (const [cx, cz] of [[-4.3, -3], [4.3, -3], [-4.3, 3], [4.3, 3]]) { const st = cyl(0.06, 0.06, 0.7, lam("#d8212f"), 6); st.position.set(x + cx, 0.35, z + cz); g.add(st); }
+    if (fever && (i + Math.round(z)) % 2 === 0) { const pole = cyl(0.025, 0.025, 2.2, lam("#d8d8d8"), 6); pole.position.set(x - 4.3, 1.1, z - 3); g.add(pole);
+      const fl = new THREE.Mesh(new THREE.PlaneGeometry(0.9, 0.55), new THREE.MeshLambertMaterial({ color: "#d8212f", side: THREE.DoubleSide })); fl.position.set(x - 3.83, 1.95, z - 3); g.add(fl); }
+  }
+  // cỏ cao (bụi nón dài) – rậm ở lô của Hùng (quanh x=0,z=2.5)
+  const grassM = lam("#6f8f3a"), grassM2 = lam("#8aa84a");
+  for (let k = 0; k < 900; k++) { const x = (r() - 0.5) * 140, z = r() * 26 - 1; if (Math.abs(z + 4.5) < 2.4) continue; const tall = Math.abs(x) < 6 && z > -0.5 && z < 6 ? 1.3 : 0.45;
+    const h = (0.3 + r() * 0.8) * tall * (fever ? 0.45 : 1); const c = new THREE.Mesh(new THREE.ConeGeometry(0.12 + r() * 0.1, h, 4), k % 2 ? grassM : grassM2); c.position.set(x, h / 2, z); c.rotation.y = r() * 3; g.add(c); }
+  for (let k = 0; k < 10; k++) { const t = treeV(r, (["bang", "bui", "cau"] as const)[k % 3]); t.position.set(-70 + k * 15 + r() * 4, 0, 22 + r() * 4); g.add(t); }
+  // nhà dân xa xa + cột điện
+  for (let k = 0; k < 7; k++) { const h = box(5, 4 + r() * 4, 5, lam(["#e8dcc6", "#d6c3a8", "#c9d3dd"][k % 3])); h.position.set(-60 + k * 20, 3, 30); g.add(h); }
+  for (let px = -70; px <= 70; px += 14) { const p = cyl(0.12, 0.15, 7, lam("#9a9a96"), 8); p.position.set(px, 3.5, -7.2); g.add(p); }
+  // biển cò "ĐẤT NỀN SỔ ĐỎ – SẮP LÊN THÀNH PHỐ" / "BÁN GẤP – CẮT LỖ"
+  const mk = (t1: string, t2: string, col: string) => { const [c, gg] = cvs(1024, 512); gg.fillStyle = col; gg.fillRect(0, 0, 1024, 512); gg.fillStyle = "#fff"; gg.textAlign = "center"; gg.font = `900 120px ${F}`; gg.fillText(t1, 512, 210, 980); gg.fillStyle = "#ffe14d"; gg.font = `800 86px ${F}`; gg.fillText(t2, 512, 380, 980); return ctex(c); };
+  const signT = fever ? mk("ĐẤT NỀN ĐẤU GIÁ", "SẮP LÊN THÀNH PHỐ", "#c8202f") : mk("BÁN GẤP – CẮT LỖ", "LH: 09xx xxx xxx", "#1f4e8a");
+  const sg = new THREE.Mesh(new THREE.PlaneGeometry(3.2, 1.6), new THREE.MeshBasicMaterial({ map: signT, side: THREE.DoubleSide })); sg.position.set(1.6, 2.4, -1.8); sg.rotation.y = Math.PI; sg.layers.set(NOINK); g.add(sg);
+  for (const dx of [0.3, 2.9]) { const p = cyl(0.05, 0.05, 2.4, lam("#555"), 6); p.position.set(dx, 1.2, -1.82); g.add(p); }
+  // ô tô đỗ kín đường làng khi sốt
+  if (fever) for (let k = 0; k < 12; k++) { const c = car(["#f4f4f2", "#111216", "#8a1c22", "#2c3e50", "#9aa3ab", "#1f4e8a"][k % 6], k % 3 ? "sedan" : "suv"); c.position.set(-50 + k * 8.5, 0, -5.6 + (k % 2) * 2.2); c.rotation.y = Math.PI / 2; g.add(c); }
+  return { g };
+}
+/** xưởng ép nhựa ở Hàn Quốc: nền bê tông, máy ép, đèn huỳnh quang, cửa cuốn mở ra trời tuyết, phòng container */
+export function buildKorea() {
+  const g = new THREE.Group(); g.position.x = KX; const r = rng(81);
+  const floor = new THREE.Mesh(new THREE.PlaneGeometry(40, 30), lam("#8d9196")); floor.rotation.x = -Math.PI / 2; floor.receiveShadow = true; g.add(floor);
+  const back = box(40, 7, 0.3, lam("#c4cbd2"), false); back.position.set(0, 3.5, -6); g.add(back);
+  for (const s of [-1, 1]) { const w = box(0.3, 7, 14, lam("#b8c0c8"), false); w.position.set(s * 12, 3.5, 1); g.add(w); }
+  for (let k = 0; k < 4; k++) { const m = new THREE.Group(); const body = box(2.4, 2.2, 1.6, lam(["#2f6fd1", "#e0832a"][k % 2])); body.position.y = 1.1; m.add(body);
+    const hop = cyl(0.35, 0.2, 0.9, lam("#d8d8d8"), 10); hop.position.set(0.5, 2.65, 0); m.add(hop); const pnl = box(0.6, 0.4, 0.05, glow(0.4, 1.2, 0.6), false); pnl.position.set(-0.6, 1.6, 0.81); pnl.layers.set(NOINK); m.add(pnl);
+    m.position.set(-8 + k * 5.2, 0, -3.6); g.add(m); }
+  for (let k = 0; k < 6; k++) { const L = box(2.4, 0.06, 0.2, glow(2.2, 2.2, 2.0), false); L.position.set(-9 + k * 3.6, 6.5, 0); L.layers.set(NOINK); g.add(L); }
+  for (let k = 0; k < 14; k++) { const b = box(0.6, 0.5, 0.5, lam(["#d6b46a", "#c99c4a"][k % 2])); b.position.set(7 + (k % 3) * 0.65, 0.25 + Math.floor(k / 3) * 0.5, 1 + (k % 2) * 0.6); g.add(b); }
+  // biển chữ Hàn giả (ô chữ) + "안전 제일" -> tránh chữ thật: dùng biển vàng sọc
+  const sb = box(3, 0.8, 0.05, lam("#f5c518"), false); sb.position.set(0, 5.6, -5.8); g.add(sb);
+  // ngoài cửa: tuyết + container ở
+  const snow = new THREE.Mesh(new THREE.PlaneGeometry(40, 20), lam("#eef3f7")); snow.rotation.x = -Math.PI / 2; snow.position.set(0, 0.01, 18); g.add(snow);
+  for (let k = 0; k < 3; k++) { const c = box(5, 2.6, 2.4, lam(["#4a6a8a", "#8a4a3a", "#5a7a4a"][k])); c.position.set(-6 + k * 6, 1.3, 16); g.add(c); const roof = box(5.2, 0.15, 2.6, lam("#f4f7fa"), false); roof.position.set(-6 + k * 6, 2.7, 16); g.add(roof);
+    const win = box(0.9, 0.6, 0.05, glow(1.6, 1.3, 0.8), false); win.position.set(-6 + k * 6, 1.6, 14.78); win.layers.set(NOINK); g.add(win); }
+  for (let k = 0; k < 8; k++) { const t = treeV(r, "sau", true); t.position.set(-14 + k * 4, 0, 24); g.add(t); }
+  return { g };
+}
+/** phòng giao dịch ngân hàng: quầy, ghế chờ, máy lấy số, logo chung (không tên ngân hàng thật) */
+export function buildBank() {
+  const g = new THREE.Group(); g.position.x = NX;
+  const floor = new THREE.Mesh(new THREE.PlaneGeometry(14, 10), lam("#e9e6df")); floor.rotation.x = -Math.PI / 2; floor.receiveShadow = true; g.add(floor);
+  const back = box(14, 3.6, 0.15, lam("#1f4e8a"), false); back.position.set(0, 1.8, -3.2); g.add(back);
+  for (const s of [-1, 1]) { const w = box(0.15, 3.6, 10, lam("#dfe6ee"), false); w.position.set(s * 7, 1.8, 1.8); g.add(w); }
+  const [lc, lg] = cvs(1024, 200); lg.fillStyle = "#ffffff"; lg.font = `900 110px ${F}`; lg.textAlign = "center"; lg.textBaseline = "middle"; lg.fillText("NGÂN HÀNG THƯƠNG MẠI", 512, 104, 990);
+  const lm = new THREE.MeshBasicMaterial({ map: ctex(lc), transparent: true }); const letters = new THREE.Mesh(new THREE.PlaneGeometry(6, 1.2), lm); letters.position.set(0, 2.85, -3.1); letters.layers.set(NOINK); g.add(letters);
+  const cnt = box(9, 1.05, 0.8, lam("#f4f4f2")); cnt.position.set(0, 0.52, -1.2); g.add(cnt); const top = box(9.1, 0.06, 0.9, lam("#c9a64a"), false); top.position.set(0, 1.07, -1.2); g.add(top);
+  for (const x of [-3, 0, 3]) { const sc = box(0.5, 0.35, 0.04, glow(0.6, 0.9, 1.4), false); sc.position.set(x, 1.32, -1.35); sc.layers.set(NOINK); g.add(sc); const n = box(0.6, 0.25, 0.05, glow(1.8, 0.3, 0.3), false); n.position.set(x, 2.1, -3.05); n.layers.set(NOINK); g.add(n); }
+  for (let k = 0; k < 2; k++) { const bench = box(3.2, 0.12, 0.6, lam("#2b4f8a")); bench.position.set(-2 + k * 4, 0.45, 2.4); g.add(bench); for (const lx of [-1.4, 1.4]) { const l = box(0.08, 0.45, 0.5, lam("#888"), false); l.position.set(-2 + k * 4 + lx, 0.22, 2.4); g.add(l); } }
+  const kiosk = box(0.6, 1.4, 0.4, lam("#d8212f")); kiosk.position.set(5.6, 0.7, 1.5); g.add(kiosk);
+  const plant = cyl(0.3, 0.25, 0.5, lam("#8a5a3a"), 10); plant.position.set(-6.2, 0.25, 2.5); g.add(plant); const lf = new THREE.Mesh(new THREE.IcosahedronGeometry(0.6, 0), lam("#3f8a3a")); lf.position.set(-6.2, 1.0, 2.5); g.add(lf);
+  return { g };
+}

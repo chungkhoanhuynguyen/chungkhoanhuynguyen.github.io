@@ -1,4 +1,4 @@
-name: Dung video ke chuyen 3D (vang dinh)
+name: Dung video ke chuyen 3D (theo canh)
 # Dựng theo từng cảnh, có kho lưu: cảnh nào nội dung không đổi (mã băm giống) thì lấy bản đã dựng ở release <tag>-cache,
 # chỉ cảnh mới/sửa mới phải dựng lại -> sửa vài cảnh mất ~15 phút thay vì dựng cả video.
 on:
@@ -78,8 +78,9 @@ jobs:
           sed "s#^#file 'u/#; s#\$#'#" names.txt > list.txt
           ffmpeg -v error -f concat -safe 0 -i list.txt -c copy video.mp4
           gh api repos/$R/releases/tags/${{ inputs.voice }} --jq '.assets[]|select(.name=="voice.wav")|.id' | xargs -I{} gh api -H "Accept: application/octet-stream" repos/$R/releases/assets/{} > voice.wav
-          A=_video/anim3d; python3 $A/vang/cuts.py $A/src/videos/vang/timing.json $A/src/videos/vang/Vang.tsx cuts.json
-          python3 $A/vang/am_thanh.py $A/src/videos/vang/timing.json voice.wav cuts.json mix.wav
+          A=_video/anim3d; C=${{ inputs.comp }}; D=$(echo $C | tr A-Z a-z); SND=$A/vang/am_thanh.py; [ -f $A/$D/am_thanh.py ] && SND=$A/$D/am_thanh.py
+          python3 $A/vang/cuts.py $A/src/videos/$D/timing.json $A/src/videos/$D/$C.tsx cuts.json
+          python3 $SND $A/src/videos/$D/timing.json voice.wav cuts.json mix.wav
           ffmpeg -v error -i video.mp4 -i mix.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -shortest -movflags +faststart ${{ inputs.comp }}.mp4
           ffprobe -v error -show_entries format=duration -of csv=p=0 ${{ inputs.comp }}.mp4
           gh release create ${{ inputs.tag }} -R $R -t "${{ inputs.tag }}" -n "video ke chuyen 3D" ${{ inputs.comp }}.mp4 || gh release upload ${{ inputs.tag }} -R $R ${{ inputs.comp }}.mp4 --clobber

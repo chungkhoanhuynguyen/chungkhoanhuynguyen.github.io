@@ -1,0 +1,1102 @@
+{
+ "total": 515.7,
+ "scenes": [
+  {
+   "id": "S01",
+   "a": 0.0,
+   "b": 29.73368,
+   "fa": 0,
+   "fb": 892,
+   "sens": [
+    {
+     "text": "Hai giờ sáng.",
+     "a": 1.26632,
+     "b": 2.01789,
+     "fa": 38,
+     "ns": 34267
+    },
+    {
+     "text": "Giữa một bãi đất cỏ mọc cao ngang ngực ở Hiệp Hòa, Bắc Giang cũ, một người đàn ông ngồi bệt xuống đất.",
+     "a": 2.8,
+     "b": 8.16842,
+     "fa": 84,
+     "ns": 244818
+    },
+    {
+     "text": "Anh gọi lần thứ mười bảy cho một số điện thoại quen thuộc.",
+     "a": 8.63368,
+     "b": 11.34632,
+     "fa": 259,
+     "ns": 123689
+    },
+    {
+     "text": "Thuê bao quý khách vừa gọi tạm thời không liên lạc được.",
+     "a": 11.8,
+     "b": 14.27263,
+     "fa": 354,
+     "ns": 112751
+    },
+    {
+     "text": "Người đàn ông ấy là Hùng Xa Lộ.",
+     "a": 14.73368,
+     "b": 16.22421,
+     "fa": 442,
+     "ns": 67991
+    },
+    {
+     "text": "Năm năm làm thuê bên Hàn Quốc, giờ chỉ còn lại lô đất chín mươi mét vuông này, và một khoản nợ ba tỷ đồng.",
+     "a": 16.66632,
+     "b": 22.36737,
+     "fa": 500,
+     "ns": 259972
+    },
+    {
+     "text": "Còn cuốn sổ đỏ căn nhà của bố mẹ anh ở Hải Phòng, đang nằm trong két sắt ngân hàng.",
+     "a": 22.83368,
+     "b": 27.45684,
+     "fa": 685,
+     "ns": 210846
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "a": 29.73368,
+   "b": 39.83368,
+   "fa": 892,
+   "fb": 1195,
+   "sens": [
+    {
+     "text": "Đây là câu chuyện về một lô đất mua đúng đỉnh.",
+     "a": 30.36632,
+     "b": 32.61789,
+     "fa": 911,
+     "ns": 102665
+    },
+    {
+     "text": "Và vì sao một đêm chênh ba trăm triệu, có khi phải trả bằng cả chục năm.",
+     "a": 33.06632,
+     "b": 36.91474,
+     "fa": 992,
+     "ns": 175484
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "a": 39.83368,
+   "b": 86.36632,
+   "fa": 1195,
+   "fb": 2591,
+   "sens": [
+    {
+     "text": "Hùng là người Thủy Nguyên, Hải Phòng.",
+     "a": 39.83368,
+     "b": 41.82316,
+     "fa": 1195,
+     "ns": 90739
+    },
+    {
+     "text": "Cả xóm gọi anh là Hùng Xa Lộ, vì câu cửa miệng của anh: đời là xa lộ, cứ thế mà phi.",
+     "a": 42.26632,
+     "b": 46.87263,
+     "fa": 1268,
+     "ns": 210045
+    },
+    {
+     "text": "Tính anh hâm hấp, nói to, nửa đêm còn hát karaoke, nhưng thương bố mẹ nhất xóm.",
+     "a": 47.33368,
+     "b": 52.10632,
+     "fa": 1420,
+     "ns": 217664
+    },
+    {
+     "text": "Năm hai mươi sáu tuổi, anh sang Hàn Quốc làm công nhân xưởng ép nhựa.",
+     "a": 52.56632,
+     "b": 56.65158,
+     "fa": 1577,
+     "ns": 186275
+    },
+    {
+     "text": "Năm năm, mười hai tiếng một ngày, ăn mì gói, ngủ phòng container.",
+     "a": 57.1,
+     "b": 61.08842,
+     "fa": 1713,
+     "ns": 181852
+    },
+    {
+     "text": "Mùa đông âm mười độ, tay nứt nẻ vẫn đứng máy.",
+     "a": 61.53368,
+     "b": 63.76632,
+     "fa": 1846,
+     "ns": 101810
+    },
+    {
+     "text": "Tháng nào lương về, anh cũng gửi một nửa cho bố mẹ, một nửa bỏ ống, tối gọi video về nhà, cười hề hề: con khỏe lắm, bên này sướng lắm.",
+     "a": 64.23368,
+     "b": 73.00316,
+     "fa": 1927,
+     "ns": 399887
+    },
+    {
+     "text": "Anh gom được một tỷ rưỡi.",
+     "a": 73.46632,
+     "b": 74.88526,
+     "fa": 2204,
+     "ns": 64680
+    },
+    {
+     "text": "Tháng Mười năm ngoái, anh về nước.",
+     "a": 75.66632,
+     "b": 77.21684,
+     "fa": 2270,
+     "ns": 70708
+    },
+    {
+     "text": "Mẹ anh nắm tay dặn: về rồi thì kiếm việc gần nhà, gửi tiết kiệm cho chắc con ạ.",
+     "a": 77.66632,
+     "b": 82.36,
+     "fa": 2330,
+     "ns": 213998
+    },
+    {
+     "text": "Hùng cười: gửi tiết kiệm thì bao giờ mới giàu hả mẹ!",
+     "a": 82.83368,
+     "b": 85.55368,
+     "fa": 2485,
+     "ns": 124034
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "a": 86.36632,
+   "b": 128.23368,
+   "fa": 2591,
+   "fb": 3847,
+   "sens": [
+    {
+     "text": "Cuối năm ấy, đi đâu cũng nghe chuyện đất.",
+     "a": 86.36632,
+     "b": 88.14632,
+     "fa": 2591,
+     "ns": 81154
+    },
+    {
+     "text": "Tin đồn sáp nhập, lên thành phố, sắp làm đường vành đai.",
+     "a": 88.6,
+     "b": 92.30421,
+     "fa": 2658,
+     "ns": 168931
+    },
+    {
+     "text": "Ở quán trà đá đầu ngõ, bác Tư khoe: thằng cháu tao mua lô đất ở Hiệp Hòa, một tuần chênh ba trăm triệu.",
+     "a": 92.76632,
+     "b": 98.39474,
+     "fa": 2783,
+     "ns": 256656
+    },
+    {
+     "text": "Phú Dê Già lái con Bây jing ích bảy về khu tập thể Nhà hát Tuồng, hạ kính xe nói với mấy em gái: anh vừa chốt hai lô, Tết đổi Mẹc.",
+     "a": 98.86632,
+     "b": 106.45579,
+     "fa": 2966,
+     "ns": 346067
+    },
+    {
+     "text": "Thấy Hùng đi qua, Phú gọi giật: Hùng Xa Lộ!",
+     "a": 106.9,
+     "b": 109.35368,
+     "fa": 3207,
+     "ns": 111903
+    },
+    {
+     "text": "Cầm tiền Hàn về mà để ngân hàng à?",
+     "a": 109.8,
+     "b": 111.49684,
+     "fa": 3294,
+     "ns": 77362
+    },
+    {
+     "text": "Đất nó chạy như xe trên xa lộ đấy, chậm chân là ăn bụi!",
+     "a": 112.2,
+     "b": 115.70737,
+     "fa": 3366,
+     "ns": 159932
+    },
+    {
+     "text": "Hùng gãi đầu cười, nhưng đêm ấy anh không ngủ được.",
+     "a": 116.16632,
+     "b": 118.47263,
+     "fa": 3485,
+     "ns": 105165
+    },
+    {
+     "text": "Trong nhóm Zalo \"Đất nền tăng trưởng\", ngày nào cũng có ảnh sổ đỏ, ảnh cọc tiền, và một câu: đất không đẻ thêm, chỉ có người đẻ thêm.",
+     "a": 118.93368,
+     "b": 126.57053,
+     "fa": 3568,
+     "ns": 348280
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "a": 128.23368,
+   "b": 145.6,
+   "fa": 3847,
+   "fb": 4368,
+   "sens": [
+    {
+     "text": "Theo giá rao trên các trang mua bán bất động sản được báo chí dẫn lại, nhiều khu đất nền vùng ven phía Bắc lên đỉnh vào quý bốn năm hai nghìn không trăm hai mươi lăm.",
+     "a": 128.23368,
+     "b": 137.08842,
+     "fa": 3847,
+     "ns": 403792
+    },
+    {
+     "text": "Ở Mê Linh, có khu đô thị lên sáu mươi triệu đồng một mét vuông.",
+     "a": 137.53368,
+     "b": 141.01474,
+     "fa": 4126,
+     "ns": 158734
+    },
+    {
+     "text": "Một lô chín mươi mét vuông ở Hiệp Hòa khi ấy được rao khoảng năm tỷ rưỡi.",
+     "a": 141.46632,
+     "b": 144.78947,
+     "fa": 4244,
+     "ns": 151522
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "a": 145.6,
+   "b": 181.93368,
+   "fa": 4368,
+   "fb": 5458,
+   "sens": [
+    {
+     "text": "Một tối tháng Mười Hai, cò đất tên Thắng rủ Hùng đi xem.",
+     "a": 145.6,
+     "b": 148.50632,
+     "fa": 4368,
+     "ns": 132540
+    },
+    {
+     "text": "Bãi đất trống cắm cờ đỏ, ô tô đỗ kín đường làng.",
+     "a": 148.96632,
+     "b": 152.00316,
+     "fa": 4469,
+     "ns": 138452
+    },
+    {
+     "text": "Thắng ghé tai: anh Hùng chốt luôn đi, mai là người khác cọc rồi.",
+     "a": 152.46632,
+     "b": 155.98632,
+     "fa": 4574,
+     "ns": 160497
+    },
+    {
+     "text": "Năm tỷ rưỡi, ba tháng nữa bảy tỷ.",
+     "a": 156.43368,
+     "b": 158.45263,
+     "fa": 4693,
+     "ns": 92100
+    },
+    {
+     "text": "Hùng nhìn quanh.",
+     "a": 158.9,
+     "b": 159.59895,
+     "fa": 4767,
+     "ns": 31850
+    },
+    {
+     "text": "Ai cũng đang gọi điện, ai cũng đang chuyển khoản.",
+     "a": 160.36632,
+     "b": 162.94316,
+     "fa": 4811,
+     "ns": 117499
+    },
+    {
+     "text": "Cái cảm giác sợ lỡ tàu bóp chặt lấy ngực anh.",
+     "a": 163.4,
+     "b": 165.87789,
+     "fa": 4902,
+     "ns": 112982
+    },
+    {
+     "text": "Anh hỏi: sổ đỏ có chưa em?",
+     "a": 166.33368,
+     "b": 168.04421,
+     "fa": 4990,
+     "ns": 77997
+    },
+    {
+     "text": "Thắng xua tay: đang làm, sắp có, cả làng này ai chả mua thế.",
+     "a": 168.73368,
+     "b": 171.89053,
+     "fa": 5062,
+     "ns": 143955
+    },
+    {
+     "text": "Anh hỏi tiếp: xung quanh có đường, có trường, có chợ không?",
+     "a": 172.33368,
+     "b": 175.49474,
+     "fa": 5170,
+     "ns": 144155
+    },
+    {
+     "text": "Thắng cười: anh mua đất là mua tương lai, ai mua hiện tại!",
+     "a": 176.2,
+     "b": 179.85158,
+     "fa": 5286,
+     "ns": 166533
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "a": 181.93368,
+   "b": 214.5,
+   "fa": 5458,
+   "fb": 6435,
+   "sens": [
+    {
+     "text": "Hùng có một tỷ rưỡi.",
+     "a": 181.93368,
+     "b": 183.00526,
+     "fa": 5458,
+     "ns": 48880
+    },
+    {
+     "text": "Còn thiếu bốn tỷ.",
+     "a": 183.76632,
+     "b": 184.53895,
+     "fa": 5513,
+     "ns": 35206
+    },
+    {
+     "text": "Anh vay ngân hàng ba tỷ, thế chấp chính lô đất và cuốn sổ đỏ căn nhà của bố mẹ.",
+     "a": 185.3,
+     "b": 189.80947,
+     "fa": 5559,
+     "ns": 205620
+    },
+    {
+     "text": "Bố anh cầm cuốn sổ, im lặng rất lâu, rồi hỏi: con chắc chứ?",
+     "a": 190.26632,
+     "b": 193.80421,
+     "fa": 5708,
+     "ns": 161324
+    },
+    {
+     "text": "Hùng cười: bố cứ yên tâm, đời là xa lộ.",
+     "a": 194.5,
+     "b": 196.81579,
+     "fa": 5835,
+     "ns": 105615
+    },
+    {
+     "text": "Một tỷ còn lại, anh vay bạn bè.",
+     "a": 197.26632,
+     "b": 199.05474,
+     "fa": 5918,
+     "ns": 81538
+    },
+    {
+     "text": "Dũng Gym mơ, bạn cùng đi lao động, sống theo đúng quy tắc bàn tay phải, cho vay tám trăm triệu, chỉ dặn: đúng hạn là phải trả.",
+     "a": 199.5,
+     "b": 206.21053,
+     "fa": 5985,
+     "ns": 305979
+    },
+    {
+     "text": "Vy Kim Khâu, cô em họ được cả họ gọi là Băng Bi Gơn vì sòng phẳng nhất nhà, góp hai trăm triệu, kèm một tờ giấy vay viết tay.",
+     "a": 206.66632,
+     "b": 213.68421,
+     "fa": 6200,
+     "ns": 319981
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "a": 214.5,
+   "b": 226.83368,
+   "fa": 6435,
+   "fb": 6805,
+   "sens": [
+    {
+     "text": "Ngày hai mươi tháng Mười Hai, Hùng ký hợp đồng.",
+     "a": 216.2,
+     "b": 218.32947,
+     "fa": 6486,
+     "ns": 97102
+    },
+    {
+     "text": "Năm tỷ rưỡi cho chín mươi mét vuông đất trống.",
+     "a": 218.8,
+     "b": 221.14526,
+     "fa": 6564,
+     "ns": 106965
+    },
+    {
+     "text": "Tối đó anh đãi cả xóm một chầu karaoke, hát đến hai giờ sáng.",
+     "a": 221.6,
+     "b": 224.96,
+     "fa": 6648,
+     "ns": 153216
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "a": 226.83368,
+   "b": 246.93368,
+   "fa": 6805,
+   "fb": 7408,
+   "sens": [
+    {
+     "text": "Hôm ấy em cũng ngồi ở quán trà đá.",
+     "a": 226.83368,
+     "b": 228.53579,
+     "fa": 6805,
+     "ns": 77616
+    },
+    {
+     "text": "Hùng khoe hợp đồng.",
+     "a": 229.0,
+     "b": 229.85368,
+     "fa": 6870,
+     "ns": 38912
+    },
+    {
+     "text": "Em hỏi anh đúng một câu: nếu giá đất đứng im ba năm, mỗi tháng anh lấy đâu ra tiền trả lãi?",
+     "a": 230.63368,
+     "b": 235.73895,
+     "fa": 6919,
+     "ns": 232801
+    },
+    {
+     "text": "Ba tỷ vay với lãi khoảng mười ba phần trăm một năm, mỗi tháng là hơn ba mươi hai triệu tiền lãi, chưa tính gốc.",
+     "a": 236.43368,
+     "b": 242.50211,
+     "fa": 7093,
+     "ns": 276739
+    },
+    {
+     "text": "Hùng cười phá lên: đứng im thế nào được, đất chỉ có lên!",
+     "a": 242.96632,
+     "b": 246.13368,
+     "fa": 7289,
+     "ns": 144412
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "a": 246.93368,
+   "b": 260.76632,
+   "fa": 7408,
+   "fb": 7823,
+   "sens": [
+    {
+     "text": "Tết qua đi.",
+     "a": 246.93368,
+     "b": 247.6,
+     "fa": 7408,
+     "ns": 30379
+    },
+    {
+     "text": "Ba tháng, giá rao chưa lên đồng nào.",
+     "a": 248.36632,
+     "b": 250.45579,
+     "fa": 7451,
+     "ns": 95253
+    },
+    {
+     "text": "Rồi tin nhắn trong nhóm Zalo thưa dần.",
+     "a": 250.9,
+     "b": 252.85579,
+     "fa": 7527,
+     "ns": 89196
+    },
+    {
+     "text": "Quý hai năm nay, cả nước chỉ có hơn bảy mươi ba nghìn giao dịch đất thành công, chưa bằng sáu mươi phần trăm cùng kỳ năm trước.",
+     "a": 253.3,
+     "b": 259.97263,
+     "fa": 7599,
+     "ns": 304257
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "a": 260.76632,
+   "b": 292.2,
+   "fa": 7823,
+   "fb": 8766,
+   "sens": [
+    {
+     "text": "Ngày mười lăm hằng tháng, điện thoại Hùng lại rung: tài khoản bị trừ ba mươi hai triệu năm trăm nghìn đồng tiền lãi.",
+     "a": 260.76632,
+     "b": 266.33158,
+     "fa": 7823,
+     "ns": 253743
+    },
+    {
+     "text": "Tiền mang từ Hàn về, anh đã đổ hết vào lô đất.",
+     "a": 266.8,
+     "b": 269.89474,
+     "fa": 8004,
+     "ns": 141097
+    },
+    {
+     "text": "Hùng đi chạy xe công nghệ từ sáng đến đêm.",
+     "a": 270.36632,
+     "b": 272.44842,
+     "fa": 8111,
+     "ns": 94932
+    },
+    {
+     "text": "Một ngày được bốn trăm nghìn, một tháng mười hai triệu.",
+     "a": 272.9,
+     "b": 275.56,
+     "fa": 8187,
+     "ns": 121287
+    },
+    {
+     "text": "Chưa bằng một phần ba tiền lãi.",
+     "a": 276.03368,
+     "b": 277.57684,
+     "fa": 8281,
+     "ns": 70387
+    },
+    {
+     "text": "Một tối mưa, anh chở một ông khách ra Mê Linh.",
+     "a": 278.03368,
+     "b": 280.97158,
+     "fa": 8341,
+     "ns": 133993
+    },
+    {
+     "text": "Ông khách nhìn ra cửa sổ, thở dài: chú ơi, chỗ này năm ngoái anh mua sáu mươi triệu một mét, giờ rao ba mươi không ai hỏi.",
+     "a": 281.43368,
+     "b": 287.75053,
+     "fa": 8443,
+     "ns": 288046
+    },
+    {
+     "text": "Hùng im lặng, tay siết chặt tay ga.",
+     "a": 288.2,
+     "b": 290.34316,
+     "fa": 8646,
+     "ns": 97706
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "a": 292.2,
+   "b": 308.0,
+   "fa": 8766,
+   "fb": 9240,
+   "sens": [
+    {
+     "text": "Ở quán trà đá, Lâm Chốt Non vỗ vai Hùng: em mua đất thì lãi hai phần trăm là em bán rồi anh ạ.",
+     "a": 292.2,
+     "b": 297.27789,
+     "fa": 8766,
+     "ns": 231551
+    },
+    {
+     "text": "Cả quán cười.",
+     "a": 297.73368,
+     "b": 298.45789,
+     "fa": 8932,
+     "ns": 33016
+    },
+    {
+     "text": "Hùng không cười.",
+     "a": 299.23368,
+     "b": 299.97474,
+     "fa": 8977,
+     "ns": 33787
+    },
+    {
+     "text": "Tối ấy Dũng Gym mơ nhắn: tháng Bảy đến hạn.",
+     "a": 300.73368,
+     "b": 303.28947,
+     "fa": 9022,
+     "ns": 116572
+    },
+    {
+     "text": "Quy tắc bàn tay phải: vay thì trả, không có ngoại lệ.",
+     "a": 303.73368,
+     "b": 306.33895,
+     "fa": 9112,
+     "ns": 118826
+    }
+   ]
+  },
+  {
+   "id": "S13",
+   "a": 308.0,
+   "b": 326.03368,
+   "fa": 9240,
+   "fb": 9781,
+   "sens": [
+    {
+     "text": "Tháng Sáu, Hùng rao bốn tỷ rưỡi.",
+     "a": 308.0,
+     "b": 310.02211,
+     "fa": 9240,
+     "ns": 92210
+    },
+    {
+     "text": "Không ai gọi.",
+     "a": 310.46632,
+     "b": 311.15895,
+     "fa": 9314,
+     "ns": 31557
+    },
+    {
+     "text": "Tháng Tám, rao ba tỷ rưỡi.",
+     "a": 311.93368,
+     "b": 313.62632,
+     "fa": 9358,
+     "ns": 77176
+    },
+    {
+     "text": "Có một người gọi, hỏi xong thì chặn số.",
+     "a": 314.4,
+     "b": 316.65053,
+     "fa": 9432,
+     "ns": 102638
+    },
+    {
+     "text": "Ở Mê Linh, có khu từ sáu mươi triệu một mét vuông, giờ rao ba mươi triệu.",
+     "a": 317.1,
+     "b": 320.93053,
+     "fa": 9513,
+     "ns": 174660
+    },
+    {
+     "text": "Ở Kim Bôi, có nơi từ hai mươi triệu, giờ chỉ còn năm triệu một mét vuông.",
+     "a": 321.4,
+     "b": 325.22526,
+     "fa": 9642,
+     "ns": 174420
+    }
+   ]
+  },
+  {
+   "id": "S14",
+   "a": 326.03368,
+   "b": 347.0,
+   "fa": 9781,
+   "fb": 10410,
+   "sens": [
+    {
+     "text": "Tháng Mười, ngân hàng gửi thư nhắc nợ lần thứ hai về tận nhà ở Thủy Nguyên.",
+     "a": 326.03368,
+     "b": 330.06105,
+     "fa": 9781,
+     "ns": 183645
+    },
+    {
+     "text": "Mẹ Hùng mở thư, đọc không hết chữ, chỉ nhìn thấy ba chữ: nợ quá hạn.",
+     "a": 330.53368,
+     "b": 334.17895,
+     "fa": 9916,
+     "ns": 166244
+    },
+    {
+     "text": "Tối hôm ấy bố gọi cho Hùng.",
+     "a": 334.63368,
+     "b": 335.95684,
+     "fa": 10039,
+     "ns": 60336
+    },
+    {
+     "text": "Ông không mắng.",
+     "a": 336.4,
+     "b": 337.04105,
+     "fa": 10092,
+     "ns": 29209
+    },
+    {
+     "text": "Ông chỉ hỏi: con ơi, bố mẹ già rồi, còn nhà để ở không con?",
+     "a": 337.8,
+     "b": 341.01263,
+     "fa": 10134,
+     "ns": 146474
+    },
+    {
+     "text": "Hùng cầm điện thoại, ngồi sụp xuống vỉa hè, khóc như một đứa trẻ.",
+     "a": 341.7,
+     "b": 345.12842,
+     "fa": 10251,
+     "ns": 156350
+    }
+   ]
+  },
+  {
+   "id": "S15",
+   "a": 347.0,
+   "b": 360.16632,
+   "fa": 10410,
+   "fb": 10805,
+   "sens": [
+    {
+     "text": "Hôm sau, Vy Kim Khâu đến.",
+     "a": 347.0,
+     "b": 348.68,
+     "fa": 10410,
+     "ns": 76604
+    },
+    {
+     "text": "Em không đòi anh ngay, nhưng anh phải nói thật: anh định làm gì với lô đất đó?",
+     "a": 349.46632,
+     "b": 353.89684,
+     "fa": 10484,
+     "ns": 201998
+    },
+    {
+     "text": "Hùng lí nhí: chờ về bờ đã em.",
+     "a": 354.6,
+     "b": 356.32,
+     "fa": 10638,
+     "ns": 78423
+    },
+    {
+     "text": "Vy nhìn thẳng vào anh: về bờ, hay về đồi cỏ?",
+     "a": 356.76632,
+     "b": 359.34842,
+     "fa": 10703,
+     "ns": 117724
+    }
+   ]
+  },
+  {
+   "id": "S16",
+   "a": 360.16632,
+   "b": 398.63368,
+   "fa": 10805,
+   "fb": 11959,
+   "sens": [
+    {
+     "text": "Và thế là đêm hôm ấy, Hùng ra lại lô đất, gọi cho Thắng mười bảy cuộc không ai bắt máy.",
+     "a": 360.16632,
+     "b": 364.69158,
+     "fa": 10805,
+     "ns": 206352
+    },
+    {
+     "text": "Sáng hôm sau, một người lạ gọi đến, trả một tỷ tám.",
+     "a": 365.16632,
+     "b": 368.18421,
+     "fa": 10955,
+     "ns": 137610
+    },
+    {
+     "text": "Người ấy nói nhanh: em mua để ở thật, nhưng chỉ một tỷ tám thôi anh, đường chưa có, sổ còn chưa tách.",
+     "a": 368.63368,
+     "b": 373.72,
+     "fa": 11059,
+     "ns": 231960
+    },
+    {
+     "text": "Hùng hỏi lại: em biết anh mua bao nhiêu không?",
+     "a": 374.16632,
+     "b": 376.57263,
+     "fa": 11225,
+     "ns": 109707
+    },
+    {
+     "text": "Đầu dây bên kia im lặng một chút: em biết, nhưng giá đất là giá người mua trả anh ạ.",
+     "a": 377.26632,
+     "b": 381.58526,
+     "fa": 11318,
+     "ns": 196950
+    },
+    {
+     "text": "Năm tỷ rưỡi mua vào.",
+     "a": 382.03368,
+     "b": 383.17579,
+     "fa": 11461,
+     "ns": 52075
+    },
+    {
+     "text": "Gần mười một tháng đã trả khoảng ba trăm năm mươi bảy triệu tiền lãi.",
+     "a": 383.93368,
+     "b": 386.96632,
+     "fa": 11518,
+     "ns": 138280
+    },
+    {
+     "text": "Bán ra một tỷ tám.",
+     "a": 387.43368,
+     "b": 388.47895,
+     "fa": 11623,
+     "ns": 47686
+    },
+    {
+     "text": "Hùng mất gần bốn tỷ.",
+     "a": 389.26632,
+     "b": 390.37158,
+     "fa": 11678,
+     "ns": 50360
+    },
+    {
+     "text": "Bán xong vẫn còn nợ ngân hàng một tỷ hai, nợ Dũng tám trăm triệu, nợ Vy hai trăm triệu.",
+     "a": 391.13368,
+     "b": 396.36947,
+     "fa": 11734,
+     "ns": 238787
+    }
+   ]
+  },
+  {
+   "id": "S17",
+   "a": 398.63368,
+   "b": 444.4,
+   "fa": 11959,
+   "fb": 13332,
+   "sens": [
+    {
+     "text": "Đất không có lỗi.",
+     "a": 398.63368,
+     "b": 399.54105,
+     "fa": 11959,
+     "ns": 41399
+    },
+    {
+     "text": "Đất vẫn là tài sản tốt với người mua để ở, mua bằng tiền nhàn rỗi.",
+     "a": 400.3,
+     "b": 403.98105,
+     "fa": 12009,
+     "ns": 167848
+    },
+    {
+     "text": "Cái sai của Hùng nằm ở bốn chỗ.",
+     "a": 404.43368,
+     "b": 406.02316,
+     "fa": 12133,
+     "ns": 72479
+    },
+    {
+     "text": "Thứ nhất: vay quá sức.",
+     "a": 406.46632,
+     "b": 407.46842,
+     "fa": 12194,
+     "ns": 45674
+    },
+    {
+     "text": "Khi tiền lãi mỗi tháng lớn hơn thu nhập ổn định, đó không còn là đầu tư, mà là đặt cược cả gia đình.",
+     "a": 408.23368,
+     "b": 413.46947,
+     "fa": 12247,
+     "ns": 238771
+    },
+    {
+     "text": "Tiền trả nợ mỗi tháng không nên vượt khoảng một phần ba thu nhập ổn định.",
+     "a": 413.93368,
+     "b": 417.42316,
+     "fa": 12418,
+     "ns": 159159
+    },
+    {
+     "text": "Thứ hai: mua tài sản không tạo ra dòng tiền.",
+     "a": 417.86632,
+     "b": 420.42105,
+     "fa": 12536,
+     "ns": 116457
+    },
+    {
+     "text": "Đất trống không cho thuê, không sinh lời, chỉ chờ người sau trả giá cao hơn.",
+     "a": 420.86632,
+     "b": 425.18737,
+     "fa": 12626,
+     "ns": 197011
+    },
+    {
+     "text": "Khi không còn người sau, anh chỉ còn lãi ngân hàng.",
+     "a": 425.63368,
+     "b": 428.33895,
+     "fa": 12769,
+     "ns": 123376
+    },
+    {
+     "text": "Thứ ba: mua theo đám đông và tin đồn.",
+     "a": 428.8,
+     "b": 430.65158,
+     "fa": 12864,
+     "ns": 84431
+    },
+    {
+     "text": "Khi cả nhóm Zalo khoe chênh, người vào cuối thường là người trả giá.",
+     "a": 431.1,
+     "b": 434.55368,
+     "fa": 12933,
+     "ns": 157494
+    },
+    {
+     "text": "Thứ tư: không có điểm dừng.",
+     "a": 435.0,
+     "b": 436.58316,
+     "fa": 13050,
+     "ns": 72170
+    },
+    {
+     "text": "Không viết trước \"sai đến đâu thì bán\", nên cứ chờ về bờ, trong khi lãi chồng lên lãi.",
+     "a": 437.36632,
+     "b": 442.11684,
+     "fa": 13121,
+     "ns": 216600
+    }
+   ]
+  },
+  {
+   "id": "S18",
+   "a": 444.4,
+   "b": 474.56632,
+   "fa": 13332,
+   "fb": 14237,
+   "sens": [
+    {
+     "text": "Hùng bán lô đất, lên ngân hàng xin giãn nợ phần còn lại để giữ căn nhà của bố mẹ.",
+     "a": 444.4,
+     "b": 448.54632,
+     "fa": 13332,
+     "ns": 189074
+    },
+    {
+     "text": "Dũng Gym mơ đồng ý cho anh trả dần mỗi tháng, đúng quy tắc bàn tay phải: chậm cũng được, nhưng không được trốn.",
+     "a": 449.0,
+     "b": 454.94105,
+     "fa": 13470,
+     "ns": 270935
+    },
+    {
+     "text": "Tháng sau, Hùng đăng ký đi làm lại.",
+     "a": 455.4,
+     "b": 457.08632,
+     "fa": 13662,
+     "ns": 76916
+    },
+    {
+     "text": "Bố anh tiễn ra đầu ngõ: nhà còn thì người còn, tiền mất thì mình làm lại con ạ.",
+     "a": 457.53368,
+     "b": 461.92,
+     "fa": 13726,
+     "ns": 200024
+    },
+    {
+     "text": "Hùng gật đầu: lần này con làm có kế hoạch.",
+     "a": 462.36632,
+     "b": 464.76947,
+     "fa": 13871,
+     "ns": 109568
+    },
+    {
+     "text": "Mẹ dúi vào tay anh hộp cơm nắm, dặn: đi đường cẩn thận, đời không phải xa lộ đâu con.",
+     "a": 465.23368,
+     "b": 469.56421,
+     "fa": 13957,
+     "ns": 197470
+    },
+    {
+     "text": "Hùng cười, lần đầu tiên sau một năm, nụ cười nhẹ tênh.",
+     "a": 470.03368,
+     "b": 472.92421,
+     "fa": 14101,
+     "ns": 131826
+    }
+   ]
+  },
+  {
+   "id": "S19",
+   "a": 474.56632,
+   "b": 485.93368,
+   "fa": 14237,
+   "fb": 14578,
+   "sens": [
+    {
+     "text": "Đời là xa lộ thật.",
+     "a": 475.2,
+     "b": 476.12421,
+     "fa": 14256,
+     "ns": 42148
+    },
+    {
+     "text": "Nhưng xa lộ nào cũng có làn dừng khẩn cấp.",
+     "a": 476.9,
+     "b": 479.08632,
+     "fa": 14307,
+     "ns": 99717
+    },
+    {
+     "text": "Người khôn không phải người phóng nhanh nhất, mà là người biết phanh ở đâu.",
+     "a": 479.53368,
+     "b": 482.81789,
+     "fa": 14386,
+     "ns": 149777
+    }
+   ]
+  },
+  {
+   "id": "S20",
+   "a": 485.93368,
+   "b": 515.7,
+   "fa": 14578,
+   "fb": 15471,
+   "sens": [
+    {
+     "text": "Còn anh chị thì sao?",
+     "a": 485.93368,
+     "b": 486.95895,
+     "fa": 14578,
+     "ns": 46762
+    },
+    {
+     "text": "Anh chị đang giữ đất, giữ vàng, hay cổ phiếu, mà không biết nên giữ hay nên bán?",
+     "a": 487.66632,
+     "b": 492.33158,
+     "fa": 14630,
+     "ns": 212723
+    },
+    {
+     "text": "Trên chứng khoán huy nguyễn chấm com, em để sẵn bài học quản trị rủi ro miễn phí cho người mới: vay bao nhiêu là vừa, chia vốn thế nào, khi nào phải cắt lỗ, kèm một máy tính nhỏ để anh chị tự kiểm tra khoản vay của mình.",
+     "a": 493.03368,
+     "b": 505.27684,
+     "fa": 14791,
+     "ns": 558312
+    },
+    {
+     "text": "Đọc năm phút trước khi xuống tiền, có khi giữ được cả căn nhà.",
+     "a": 505.73368,
+     "b": 509.35263,
+     "fa": 15172,
+     "ns": 165055
+    },
+    {
+     "text": "Và anh chị đã từng đu đỉnh đất chưa?",
+     "a": 509.8,
+     "b": 511.69474,
+     "fa": 15294,
+     "ns": 86401
+    },
+    {
+     "text": "Kể em nghe ở phần bình luận nhé.",
+     "a": 512.4,
+     "b": 513.83368,
+     "fa": 15372,
+     "ns": 65389
+    }
+   ]
+  }
+ ]
+}

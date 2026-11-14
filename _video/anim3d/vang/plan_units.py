@@ -3,9 +3,9 @@
 # Dùng: python plan_units.py <src_dir_anim3d> <comp> <cache_names.txt|-> <N_may> <out_plan.json>
 import json, re, sys, os, hashlib, math
 A, comp, have_f, N, OUT = sys.argv[1], sys.argv[2], sys.argv[3], int(sys.argv[4]), sys.argv[5]
-V = os.path.join(A, "src", "videos", "vang"); FPS = 30; TAIL = 4.0
+D = comp.lower(); V = os.path.join(A, "src", "videos", D); FPS = 30; TAIL = 4.0
 tim = json.load(open(os.path.join(V, "timing.json"))); S = {s["id"]: s for s in tim["scenes"]}
-src = open(os.path.join(V, "Vang.tsx")).read(); i0, i1 = src.index("const PLAN"), src.index("function teaStall"); plan = src[i0:i1]
+src = open(os.path.join(V, comp + ".tsx")).read(); i0, i1 = src.index("const PLAN"), src.index("function teaStall"); plan = src[i0:i1]
 fr = lambda x: int(math.floor(x * FPS + 0.5))
 # mã chung: mọi mã nguồn ngoài phần PLAN + công cụ dựng; sửa phần chung thì dựng lại tất cả (chắc ăn)
 h = hashlib.sha1()
@@ -14,7 +14,7 @@ for root, _, fs in sorted(os.walk(os.path.join(A, "src"))):
         p = os.path.join(root, f)
         if p.endswith("timing.json"): continue
         b = open(p, "rb").read()
-        if p.endswith(os.path.join("vang", "Vang.tsx")): b = (src[:i0] + src[i1:]).encode()
+        if p.endswith(os.path.join(D, comp + ".tsx")): b = (src[:i0] + src[i1:]).encode()
         h.update(p[len(A):].encode()); h.update(b)
 for f in ["render_units.mjs", "package.json"]: h.update(open(os.path.join(A, f), "rb").read())
 COMMON = h.hexdigest()

@@ -12,6 +12,22 @@ export const CLERK: Outfit = { jacket: "#c8202f", pants: "#2b2b33", boots: "#222
 export const GYM: Outfit = { jacket: "#2b2b2b", pants: "#3a4a6a", boots: "#f4f4f2", hat: "hair", hair: "#111", belt: null, buttons: "#2b2b2b", skin: "#c98a5a", build: "stout" };
 export const BOXER: Outfit = { jacket: "#e23b2e", pants: "#1f2430", boots: "#f4f4f2", hat: "cap", cap: "#111", belt: null, buttons: "#e23b2e", skin: "#d9a77e", build: "stout" };
 export const XOI: Outfit = { jacket: "#8a3fa0", pants: "#2e2c30", boots: "#5a3b2a", hat: "hair", hair: "#241a18", belt: null, buttons: "#e8d8f0", build: "stout", skin: "#f1c9a0", long: true };
+/** nhân vật phim #2 (Hùng Xa Lộ) – tra theo khoá cast */
+export const OUT: Record<string, { o: Outfit; h: number; seed: number }> = {
+  hung: { o: { jacket: "#3a6ea5", pants: "#3a3f52", boots: "#e9e6df", hat: "hair", hair: "#161214", belt: null, buttons: "#d8dde4", skin: "#e6b98e", build: "stout" }, h: 1.72, seed: 17 },
+  huy: { o: { jacket: "#f4f6f8", pants: "#2b3346", boots: "#3a2a20", hat: "hair", hair: "#141215", belt: null, buttons: "#9aa3ab", skin: "#f1cfa8" }, h: 1.72, seed: 21 },
+  dung: { o: { jacket: "#2b2b2b", pants: "#3a4a6a", boots: "#f4f4f2", hat: "hair", hair: "#111", belt: null, buttons: "#2b2b2b", skin: "#c98a5a", build: "stout" }, h: 1.8, seed: 23 },
+  vy: { o: { jacket: "#c8202f", pants: "#1f2430", boots: "#f3e8dc", hat: "hair", hair: "#1c1416", belt: null, buttons: "#ffffff", skin: "#ffe0c6", long: true }, h: 1.6, seed: 29 },
+  phu: { o: { jacket: "#6b4fa0", pants: "#1f2430", boots: "#111", hat: "hair", hair: "#3a2a20", belt: null, buttons: "#f2d36b", skin: "#e8c39e", moustache: "#2a1d18", build: "stout" }, h: 1.7, seed: 31 },
+  thang: { o: { jacket: "#e0832a", pants: "#2f3546", boots: "#2a2a2a", hat: "cap", cap: "#111", belt: null, buttons: "#d8dde4", skin: "#ecd0b6" }, h: 1.68, seed: 37 },
+  bohung: { o: { jacket: "#5a6a4a", pants: "#2e2c30", boots: "#5a3b2a", hat: "hair", hair: "#cfcac4", belt: null, buttons: "#d8c7a8", skin: "#e3b48c" }, h: 1.62, seed: 41 },
+  mehung: { o: { jacket: "#8a5a3a", pants: "#2e2c30", boots: "#5a3b2a", hat: "hair", hair: "#6b625c", belt: null, buttons: "#d8c7a8", build: "stout", skin: "#eec39a", long: true }, h: 1.5, seed: 43 },
+  lam: { o: { jacket: "#2f8a52", pants: "#3d3a36", boots: "#e9e6df", hat: "hair", hair: "#2a1d1b", belt: null, buttons: "#d8dde4", skin: "#ffe2c2" }, h: 1.66, seed: 47 },
+  tu: { o: { jacket: "#9c2f45", pants: "#2e2c30", boots: "#5a3b2a", hat: "hair", hair: "#b9b6b2", belt: null, buttons: "#d8c7a8", skin: "#e3b48c", build: "stout" }, h: 1.6, seed: 53 },
+  ba: { o: { jacket: "#8a3fa0", pants: "#2e2c30", boots: "#5a3b2a", hat: "hair", hair: "#241a18", belt: null, buttons: "#e8d8f0", build: "stout", skin: "#f1c9a0", long: true }, h: 1.55, seed: 59 },
+  khach: { o: { jacket: "#4a4a52", pants: "#2f3546", boots: "#2a2a2a", hat: "hair", hair: "#151515", belt: null, buttons: "#d8dde4", skin: "#ecd0b6" }, h: 1.7, seed: 61 },
+  nv: { o: { jacket: "#1f4e8a", pants: "#2b2b33", boots: "#222", hat: "hair", hair: "#1d1616", belt: null, buttons: "#f2d36b", skin: "#ffdcc0", long: true }, h: 1.58, seed: 67 },
+};
 const CROWD_J = ["#3a78c2", "#2f8a52", "#8a5a3a", "#6b4fa0", "#c9572e", "#4a4a52", "#9c2f45", "#2e6f7a", "#7a7f3a", "#d08a2a"];
 const HAIR = ["#1c1719", "#2a1d1b", "#4a3426", "#b9b6b2", "#151515"];
 export const crowd = (i: number): Outfit => ({ jacket: CROWD_J[i % CROWD_J.length], pants: ["#2f3546", "#3d3a36", "#26262b", "#4a4a42"][i % 4], boots: ["#2a2a2a", "#5a3b2a", "#e9e6df"][i % 3],
@@ -20,7 +36,7 @@ export const crowd = (i: number): Outfit => ({ jacket: CROWD_J[i % CROWD_J.lengt
 /** nhân vật quần chúng nữ (tóc dài, áo màu tươi) */
 export const FEM = (i: number) => i % 5 !== 3 && (i % 3 === 1 || i % 7 === 4);
 
-export type Acc = "gloves" | "muscle" | "headset" | "nonla" | "umbrella" | "raincoat" | "tears" | "phone" | "goldbag" | "gembox" | "cup" | "paper" | "sweat" | "zzz" | "glow" | "ring" | "flex" | "box" | "ticket" | "mega" | "xoi";
+export type Acc = "gloves" | "muscle" | "headset" | "nonla" | "umbrella" | "raincoat" | "tears" | "phone" | "goldbag" | "gembox" | "cup" | "paper" | "sweat" | "zzz" | "glow" | "ring" | "flex" | "box" | "ticket" | "mega" | "xoi" | "glasses" | "mic" | "helmet" | "redbook";
 export type Pose = { expr: Expr; blink?: boolean; mode?: "stand" | "sit" | "stroll" | "march"; phase?: number; tilt?: number; headTilt?: number; wave?: number; prop?: Prop; acc?: Acc[]; t?: number; umb?: string; side?: 1 | -1; reach?: [number, number]; num?: string };
 
 export class Actor {
@@ -55,11 +71,11 @@ export class Actor {
         g.setTransform(1, 0, 0, 1, 0, 0); this.t.needsUpdate = true;
       } else {
       const fo = { expr: p.expr, blink: p.blink ? 1 : 0, mode: p.mode ?? "stand", seed: this.seed, wave: p.wave, phase: p.phase ?? 0, tilt: p.tilt ?? 0, headTilt: p.headTilt ?? 0,
-        prop: p.prop ?? (acc.includes("flex") || acc.includes("box") ? "none" : acc.some((a) => a === "phone" || a === "goldbag" || a === "cup" || a === "gembox" || a === "paper" || a === "xoi") ? (acc.includes("gembox") || acc.includes("paper") ? "hold2" : "hold") : acc.includes("umbrella") || acc.includes("ticket") || acc.includes("mega") ? "up" : null) } as const;
+        prop: p.prop ?? (acc.includes("flex") || acc.includes("box") ? "none" : acc.some((a) => a === "phone" || a === "goldbag" || a === "cup" || a === "gembox" || a === "paper" || a === "xoi" || a === "mic" || a === "redbook") ? (acc.includes("gembox") || acc.includes("paper") || acc.includes("redbook") ? "hold2" : "hold") : acc.includes("umbrella") || acc.includes("ticket") || acc.includes("mega") ? "up" : null) } as const;
       if (long) { const G0 = bodyFront(pen, this.o, fo as never); g.clearRect(0, 0, 600, 1000); if (G0) longHair(g, G0 as G, this.o.hair ?? "#1c1719", p.mode === "sit"); }
       if (acc.includes("umbrella")) umbrellaTop(g, p.umb ?? "#2b4f8a", -1);
       const G = bodyFront(pen, this.o, { expr: p.expr, blink: p.blink ? 1 : 0, mode: p.mode ?? "stand", seed: this.seed, wave: p.wave, phase: p.phase ?? 0, tilt: p.tilt ?? 0, headTilt: p.headTilt ?? 0,
-        prop: p.prop ?? (acc.some((a) => a === "phone" || a === "goldbag" || a === "cup" || a === "gembox" || a === "paper") ? (acc.includes("gembox") || acc.includes("paper") ? "hold2" : "hold") : acc.includes("umbrella") ? "up" : null) });
+        prop: p.prop ?? (acc.some((a) => a === "phone" || a === "goldbag" || a === "cup" || a === "gembox" || a === "paper") ? (acc.includes("gembox") || acc.includes("paper") || acc.includes("redbook") ? "hold2" : "hold") : acc.includes("umbrella") ? "up" : null) });
       if (G) { drawAcc(g, pen, G, acc, p.t ?? 0, p.umb, p.num, this.o.skin ?? "#f3cfa8"); }
       this.t.needsUpdate = true; }
     }
@@ -88,6 +104,10 @@ function longLocks(g: CanvasRenderingContext2D, G: G, col: string) { const { hc,
   for (const s of [-1, 1]) { g.beginPath(); g.moveTo(300 + s * W * 0.5, hc - 14 * u); g.quadraticCurveTo(300 + s * W * 0.62, chin, 300 + s * W * 0.5, chin + 0.3 * HH); g.quadraticCurveTo(300 + s * W * 0.45, chin + 0.16 * HH, 300 + s * W * 0.475, hc + 4 * u); g.closePath(); g.fill(); g.stroke(); }
   g.restore(); }
 function drawAcc(g: CanvasRenderingContext2D, p: Pen, G: G, acc: Acc[], t: number, _umb?: string, num?: string, skin = "#f3cfa8") {
+  if (acc.includes("glasses")) { const { hc, W, u } = G; g.save(); g.strokeStyle = INK; g.lineWidth = 3.5 * u; for (const sx of [-1, 1]) { g.beginPath(); g.ellipse(300 + sx * W * 0.2, hc - 1 * u, 12 * u, 10 * u, 0, 0, 7); g.stroke(); } g.beginPath(); g.moveTo(300 - W * 0.08, hc - 2 * u); g.lineTo(300 + W * 0.08, hc - 2 * u); g.stroke(); g.restore(); }
+  if (acc.includes("helmet")) { const { hc, crown, W, u } = G; g.save(); g.fillStyle = "#2fa84a"; g.strokeStyle = INK; g.lineWidth = 5; g.beginPath(); g.ellipse(300, crown + (hc - crown) * 0.35, W * 0.6, (hc - crown) * 0.75, 0, Math.PI, 0); g.closePath(); g.fill(); g.stroke(); g.fillStyle = "#1d6b2e"; g.fillRect(300 - W * 0.62, crown + (hc - crown) * 0.3, W * 1.24, 6 * u); g.restore(); }
+  if (acc.includes("mic")) { const R2 = G.hands[G.hands.length - 1], u = G.u; g.save(); g.strokeStyle = INK; g.lineWidth = 7 * u; g.beginPath(); g.moveTo(R2[0], R2[1]); g.lineTo(R2[0] - 8 * u, R2[1] - 30 * u); g.stroke(); g.fillStyle = "#222"; g.beginPath(); g.arc(R2[0] - 10 * u, R2[1] - 36 * u, 9 * u, 0, 7); g.fill(); g.restore(); p.dot(R2[0], R2[1], 5.5 * u); }
+  if (acc.includes("redbook")) { const x = (G.hands[0][0] + G.hands[G.hands.length - 1][0]) / 2, y = (G.hands[0][1] + G.hands[G.hands.length - 1][1]) / 2, u = G.u; g.save(); g.fillStyle = "#c8202f"; g.strokeStyle = INK; g.lineWidth = 4; g.fillRect(x - 26 * u, y - 36 * u, 52 * u, 40 * u); g.strokeRect(x - 26 * u, y - 36 * u, 52 * u, 40 * u); g.fillStyle = "#f5c518"; g.beginPath(); g.arc(x, y - 18 * u, 8 * u, 0, 7); g.fill(); g.restore(); }
   if (acc.includes("flex")) { // dân gym khoe cơ: hai tay gồng, bắp tay to phồng theo nhịp
     const { chin, tcx, Ta, HH, u } = G, k = 0.5 + 0.5 * Math.sin(t * 5); g.save(); g.lineCap = "round"; g.lineJoin = "round";
     for (const s of [-1, 1]) { const S = [tcx + s * Ta * 0.92, chin + 0.13 * HH], E = [tcx + s * Ta * 2.05, chin + (0.1 - 0.05 * k) * HH], Fz = [tcx + s * Ta * 1.6, chin - (0.32 + 0.05 * k) * HH];
