@@ -21,8 +21,10 @@ jobs:
               ds = [[u.split("/")[-1], u if u.startswith("http") else "https://opengameart.org" + u] for u in dict.fromkeys(re.findall(r'href="([^"]+\.zip)"', h))]
               print(ds)
           for ten, u in ds:
-              d = urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0"}), timeout=120).read()
-              open(f"out/{ten}", "wb").write(d); print("OK", ten, len(d))
+              try:
+                  d = urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0"}), timeout=120).read()
+                  open(f"out/{ten}", "wb").write(d); print("OK", ten, len(d))
+              except Exception as e: print("FAIL", ten, e)
           PY
       - env: {GH_TOKEN: "${{ github.token }}", GH_REPO: "${{ github.repository }}"}
         run: |
