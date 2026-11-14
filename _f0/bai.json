@@ -7102,82 +7102,208 @@
   "slug": "san-hose-hnx-upcom-la-gi",
   "kw": "sàn HOSE HNX UPCoM khác nhau thế nào",
   "grp": 1,
-  "title": "Sàn HOSE, HNX, UPCoM là gì? Khác nhau thế nào?",
-  "desc": "Ba sàn chứng khoán Việt Nam HOSE, HNX, UPCoM khác nhau về điều kiện niêm yết, biên độ giá trần sàn và mức độ rủi ro. Người mới nên chọn cổ phiếu sàn nào.",
+  "title": "Sàn HOSE, HNX, UPCoM khác nhau thế nào? Giờ giao dịch, biên độ",
+  "desc": "HOSE chiếm 83% vốn hóa, cổ phiếu UPCoM trung vị chỉ 210 cp khớp mỗi phiên. So sánh 3 sàn: giờ giao dịch, biên độ ±7/10/15%, thanh khoản, rủi ro.",
   "body": [
    [
     "p",
-    "Việt Nam có ba nơi giao dịch cổ phiếu chính: <b>HOSE</b> (Sở Giao dịch Chứng khoán TP.HCM), <b>HNX</b> (Sở Giao dịch Chứng khoán Hà Nội) và <b>UPCoM</b> (thị trường đăng ký giao dịch của công ty đại chúng chưa niêm yết, do HNX vận hành)."
+    "Anh Tuấn mới mở tài khoản, thấy một mã UPCoM tăng 15% trong một phiên nên đặt mua 2.000 cổ phiếu. Ba ngày sau muốn bán thì cả phiên chỉ có vài trăm cổ phiếu được khớp. Vấn đề không nằm ở doanh nghiệp, mà ở <b>cái sàn</b> mã đó đang giao dịch."
+   ],
+   [
+    "p",
+    "Việt Nam có ba nơi giao dịch cổ phiếu: <b>HOSE</b> (Sở Giao dịch Chứng khoán TP.HCM), <b>HNX</b> (Sở Giao dịch Chứng khoán Hà Nội) và <b>UPCoM</b> (thị trường của công ty đại chúng chưa niêm yết, do HNX vận hành). Em so sánh bằng số liệu thật của hơn 1.500 mã để anh chị thấy khác biệt rõ nhất."
    ],
    [
     "h2",
-    "1. Biên độ giá trong ngày"
+    "Ba sàn khác nhau bao nhiêu, nhìn bằng số?"
    ],
    [
-    "ul",
+    "table",
     [
-     "HOSE: ±7% so với giá tham chiếu",
-     "HNX: ±10%",
-     "UPCoM: ±15%"
+     [
+      "Tiêu chí",
+      "HOSE",
+      "HNX",
+      "UPCoM"
+     ],
+     [
+      "Số mã",
+      "439",
+      "299",
+      "810"
+     ],
+     [
+      "Tỷ trọng vốn hóa",
+      "83%",
+      "4%",
+      "12%"
+     ],
+     [
+      "Vốn hóa trung vị<br>(tỷ đồng)",
+      "1.408",
+      "220",
+      "115"
+     ],
+     [
+      "Mã vốn hóa<br>≥10.000 tỷ",
+      "84",
+      "12",
+      "20"
+     ],
+     [
+      "KL khớp trung vị<br>(cp/phiên)",
+      "69.661",
+      "2.106",
+      "210"
+     ],
+     [
+      "Biên độ giá",
+      "±7%",
+      "±10%",
+      "±15%"
+     ]
     ]
    ],
    [
     "p",
-    "Biên độ càng rộng thì giá trong một phiên dao động càng mạnh, lãi nhanh nhưng lỗ cũng nhanh."
-   ],
-   [
-    "h2",
-    "2. Điều kiện niêm yết"
+    "<small>Số mã theo danh sách mã của web; vốn hóa và khối lượng khớp bình quân 10 phiên từ dữ liệu cơ bản cập nhật 14/11/2026; tỷ trọng vốn hóa em tự tính trên tổng ba sàn.</small>"
    ],
    [
     "p",
-    "HOSE yêu cầu cao nhất về vốn điều lệ, số năm có lãi và số cổ đông, nên tập trung các doanh nghiệp lớn. HNX yêu cầu thấp hơn. UPCoM gần như không có điều kiện về lợi nhuận, nhiều doanh nghiệp nhỏ hoặc mới cổ phần hóa."
+    "Đọc bảng: một nửa số mã trên UPCoM khớp <b>dưới 210 cổ phiếu mỗi phiên</b>, và khoảng 220 mã không có giao dịch nào trong 10 phiên gần nhất. Trên HOSE, mã ở giữa danh sách vẫn khớp gần 70 nghìn cổ phiếu mỗi phiên. Đó là lý do anh Tuấn mua được mà khó bán."
    ],
    [
     "h2",
-    "3. Chỉ số đại diện"
+    "Biên độ giá ±7%, ±10%, ±15% nghĩa là gì?"
+   ],
+   [
+    "p",
+    "Biên độ là mức giá được phép tăng/giảm tối đa trong một phiên so với giá tham chiếu (xem <a href=\"/f0/bien-do-gia-tran-san.html\">giá trần, giá sàn</a>). Ví dụ giá tham chiếu 20.000 đồng:"
    ],
    [
     "ul",
     [
-     "HOSE: VN-Index, VN30",
-     "HNX: HNX-Index, HNX30",
-     "UPCoM: UPCoM-Index"
+     "HOSE: trần 21.400 – sàn 18.600 đồng (±7%).",
+     "HNX: trần 22.000 – sàn 18.000 đồng (±10%).",
+     "UPCoM: trần 23.000 – sàn 17.000 đồng (±15%)."
+    ]
+   ],
+   [
+    "p",
+    "Biên độ có thật sự chặn giá? Một năm qua (14/11/2025 – 13/11/2026), VCB, FPT, HPG trên HOSE có phiên tăng mạnh nhất <b>+6,9%</b> và giảm mạnh nhất <b>−7,0%</b>, đúng sát trần sàn (giá đóng cửa điều chỉnh, em tự tính). Với UPCoM, một phiên mất 15% là chuyện có thể xảy ra, ba phiên liền sàn là mất gần 39%."
+   ],
+   [
+    "h2",
+    "Giờ giao dịch từng sàn có khác nhau không?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Phiên",
+      "HOSE",
+      "HNX",
+      "UPCoM"
+     ],
+     [
+      "Mở cửa (ATO)",
+      "9:00–9:15",
+      "Không",
+      "Không"
+     ],
+     [
+      "Liên tục sáng",
+      "9:15–11:30",
+      "9:00–11:30",
+      "9:00–11:30"
+     ],
+     [
+      "Nghỉ trưa",
+      "11:30–13:00",
+      "11:30–13:00",
+      "11:30–13:00"
+     ],
+     [
+      "Liên tục chiều",
+      "13:00–14:30",
+      "13:00–14:30",
+      "13:00–15:00"
+     ],
+     [
+      "Đóng cửa (ATC)",
+      "14:30–14:45",
+      "14:30–14:45",
+      "Không"
+     ],
+     [
+      "Sau giờ / thỏa thuận",
+      "tới 15:00",
+      "PLO 14:45–15:00",
+      "–"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Cả ba sàn giao dịch thứ Hai đến thứ Sáu, nghỉ cuối tuần và ngày lễ. Giá tham chiếu UPCoM hôm sau là giá bình quân gia quyền trong ngày, không phải giá đóng cửa. Chi tiết từng phiên ở bài <a href=\"/f0/gio-giao-dich-chung-khoan.html\">giờ giao dịch chứng khoán</a>; Sở Giao dịch có thể điều chỉnh, anh chị xem thông báo trên ứng dụng giao dịch."
+   ],
+   [
+    "h2",
+    "Điều kiện lên sàn khác nhau thế nào?"
+   ],
+   [
+    "p",
+    "HOSE yêu cầu cao nhất về vốn điều lệ, số năm có lãi và số cổ đông, nên tập trung doanh nghiệp lớn: 5 mã vốn hóa lớn nhất là VIC, VHM, VCB, BID, CTG. HNX yêu cầu thấp hơn, phần lớn là doanh nghiệp vừa và nhỏ (205/299 mã vốn hóa dưới 500 tỷ). UPCoM gần như không yêu cầu lợi nhuận, nhưng không phải toàn mã nhỏ: ACV, VGI, MSR, VEA đều trên 40.000 tỷ đồng."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>Mua mã thanh khoản thấp vì thấy tăng mạnh.</b> Mã UPCoM khớp vài trăm cổ phiếu mỗi phiên có thể tăng trần chỉ với một lệnh nhỏ, nhưng lúc cần bán thì không có người mua.",
+     "<b>Quên biên độ khi đặt cắt lỗ.</b> Mức cắt lỗ 8% vô nghĩa nếu mã UPCoM giảm 15% ngay phiên đầu; tính kích thước vị thế theo biên độ của sàn (xem <a href=\"/f0/cat-lo-la-gi.html\">cắt lỗ là gì</a>).",
+     "<b>Nghĩ \"lên HOSE là tốt\".</b> Chuyển sàn chỉ cho biết doanh nghiệp đủ điều kiện niêm yết, không bảo đảm giá tăng hay lợi nhuận tốt; vẫn phải đọc báo cáo tài chính."
     ]
    ],
    [
     "h2",
-    "4. Người mới nên chọn sàn nào?"
+    "Checklist trước khi mua một mã"
    ],
    [
-    "p",
-    "Người mới thường bắt đầu với cổ phiếu trên HOSE, đặc biệt nhóm VN30, vì doanh nghiệp lớn, thông tin minh bạch hơn và thanh khoản tốt. Cổ phiếu UPCoM có thể có cơ hội nhưng rủi ro thông tin và thanh khoản cao hơn nhiều."
-   ],
-   [
-    "h2",
-    "5. Cách nhận biết cổ phiếu thuộc sàn nào"
-   ],
-   [
-    "p",
-    "Trên bảng giá các app chứng khoán đều có tab riêng cho từng sàn. Khi tra cứu một mã, thông tin sàn luôn hiển thị cạnh tên doanh nghiệp."
+    "ul",
+    [
+     "Mã đang ở sàn nào? (bảng giá ghi rõ, hoặc tra ở <a href=\"/ma/\">danh sách mã</a>).",
+     "Khối lượng khớp trung bình 10 phiên có đủ lớn so với số cổ phiếu định mua không (gợi ý: lệnh của mình dưới 10% khối lượng một phiên).",
+     "Biên độ của sàn: chuẩn bị tinh thần cho 1–3 phiên đi ngược.",
+     "Doanh nghiệp có lãi đều các quý gần đây không.",
+     "Người mới nên bắt đầu với nhóm thanh khoản cao như <a href=\"/f0/vn30-la-gi.html\">VN30</a>."
+    ]
    ]
   ],
   "faq": [
    [
     "Giờ giao dịch các sàn có khác nhau không?",
-    "Cả ba sàn giao dịch từ 9h đến 15h, nghỉ trưa 11h30–13h. HOSE và HNX có phiên ATO/ATC, UPCoM khớp liên tục."
+    "Cả ba sàn giao dịch 9:00–15:00, nghỉ trưa 11:30–13:00. HOSE có phiên ATO 9:00–9:15 và ATC 14:30–14:45; HNX có ATC và phiên sau giờ PLO; UPCoM khớp liên tục tới 15:00, không có ATO/ATC."
+   ],
+   [
+    "Cổ phiếu sàn nào rủi ro nhất?",
+    "UPCoM có biên độ rộng nhất (±15%) và thanh khoản thấp nhất: một nửa số mã khớp dưới 210 cổ phiếu mỗi phiên, nên rủi ro mua được mà khó bán cao hơn HOSE nhiều."
    ],
    [
     "Cổ phiếu có thể chuyển sàn không?",
-    "Có. Doanh nghiệp đủ điều kiện có thể chuyển từ UPCoM lên HNX hoặc HOSE, và có thể bị hủy niêm yết nếu vi phạm."
+    "Có. Doanh nghiệp đủ điều kiện có thể chuyển từ UPCoM lên HNX hoặc HOSE, và có thể bị hủy niêm yết, chuyển xuống UPCoM nếu vi phạm điều kiện."
    ]
   ],
   "rel": [
-   "co-phieu-la-gi",
+   "gio-giao-dich-chung-khoan",
    "bien-do-gia-tran-san",
    "vn30-la-gi",
-   "gio-giao-dich-chung-khoan"
-  ]
+   "co-phieu-la-gi",
+   "cat-lo-la-gi"
+  ],
+  "mod": "2026-11-14"
  },
  {
   "slug": "macd-la-gi",
@@ -35847,7 +35973,7 @@
   "kw": "tỷ lệ trả nợ trên thu nhập",
   "grp": 7,
   "date": "2026-11-14",
-  "title": "Tỷ lệ trả nợ trên thu nhập là gì? Cách tự tính để không thành \"người Thái mắc nợ\"",
+  "title": "Tỷ lệ trả nợ trên thu nhập là gì? Cách tự tính và mốc tự soi",
   "desc": "Tỷ lệ trả nợ trên thu nhập cho biết mỗi tháng bao nhiêu phần lương đã đi trả nợ. Cách tính, mốc tự soi và ví dụ trước khi vay hay bắt đầu đầu tư.",
   "body": [
    [
@@ -35985,7 +36111,7 @@
   "kw": "dân số vàng là gì",
   "grp": 8,
   "date": "2026-11-14",
-  "title": "Dân số vàng là gì? Việt Nam còn khoảng 10 năm trước khi thành dân số già",
+  "title": "Dân số vàng là gì? Việt Nam còn khoảng 10 năm trước khi già",
   "desc": "Dân số vàng là thời kỳ người trong tuổi lao động đông hơn hẳn người phụ thuộc. Việt Nam dự kiến hết dân số vàng khoảng 2036, thành dân số già năm 2034.",
   "body": [
    [
@@ -36270,7 +36396,7 @@
   "slug": "ly-thuyet-tro-choi-la-gi",
   "kw": "lý thuyết trò chơi là gì",
   "grp": 7,
-  "title": "Lý thuyết trò chơi là gì? Người chơi, luật chơi, phần thưởng và bài học đầu tư",
+  "title": "Lý thuyết trò chơi là gì? Luật chơi và bài học cho nhà đầu tư",
   "desc": "Lý thuyết trò chơi giải thích dễ hiểu: ba câu hỏi người chơi – luật chơi – phần thưởng, thế lưỡng nan tù nhân, cân bằng Nash và cách áp dụng khi đầu tư.",
   "body": [
    [
@@ -36319,7 +36445,7 @@
   "slug": "ke-hoach-tai-chinh-gia-dinh-khi-co-bien",
   "kw": "kế hoạch tài chính gia đình khi khủng hoảng",
   "grp": 7,
-  "title": "Mẫu kế hoạch tài chính gia đình khi có biến: 4 dòng viết sẵn trước khủng hoảng",
+  "title": "Kế hoạch tài chính gia đình khi có biến: 4 dòng viết sẵn",
   "desc": "Mẫu kế hoạch tài chính gia đình khi có tin xấu, chiến tranh, khủng hoảng: quỹ dự phòng 3–6 tháng, không vay chạy theo tin đồn, việc cần làm và việc không được làm.",
   "body": [
    [
@@ -36362,6 +36488,216 @@
    "co-nen-mua-co-phieu-khi-thi-truong-giam",
    "tam-ly-fomo-va-hoang-loan",
    "gia-vang-va-chung-khoan"
+  ]
+ },
+ {
+  "slug": "bay-thu-nhap-trung-binh-la-gi",
+  "kw": "bẫy thu nhập trung bình là gì",
+  "grp": 8,
+  "date": "2026-11-14",
+  "title": "Bẫy thu nhập trung bình là gì? Việt Nam có thành Thái Lan thứ hai",
+  "desc": "Thái Lan từng tăng 13,3% năm 1988, nay còn khoảng 2% và nợ hộ gia đình 86,7% GDP. Bẫy thu nhập trung bình là gì, Việt Nam cần tăng bao nhiêu để thoát.",
+  "body": [
+   [
+    "p",
+    "Năm 1988, kinh tế Thái Lan tăng <b>13,3%</b>, nhanh hơn cả Việt Nam bây giờ. Nhà máy Nhật đổ vào Bangkok giống như đang đổ vào Bắc Ninh, Bình Dương. Gần 40 năm sau, Thái Lan vẫn chưa thành nước giàu: năm 2026 Quỹ Tiền tệ Quốc tế (IMF) dự báo họ chỉ tăng <b>2,1%</b>, còn Việt Nam <b>8,4%</b>."
+   ],
+   [
+    "p",
+    "Một nước từng chạy nhanh nhất châu Á mà bị kẹt lại giữa đường. Các nhà kinh tế gọi hiện tượng đó là <b>bẫy thu nhập trung bình</b>. Em giải thích bằng số thật, rồi tính xem Việt Nam phải chạy nhanh cỡ nào để không đi lại con đường ấy."
+   ],
+   [
+    "h2",
+    "Bẫy thu nhập trung bình là gì?"
+   ],
+   [
+    "p",
+    "Là khi một nước thoát nghèo nhờ lao động rẻ và nhà máy nước ngoài, lên được mức thu nhập trung bình, rồi <b>dừng lại ở đó hàng chục năm</b>. Lương đã cao hơn nên không còn rẻ để cạnh tranh với nước nghèo hơn, nhưng công nghệ, năng suất chưa đủ để cạnh tranh với nước giàu."
+   ],
+   [
+    "p",
+    "Ngân hàng Thế giới dùng thu nhập bình quân đầu người (GNI) để xếp hạng. Ngưỡng thành nước thu nhập cao hiện là <b>14.375 USD</b> một người mỗi năm. Năm 2025, Thái Lan khoảng <b>7.690 USD</b>, Việt Nam <b>4.970 USD</b> và vừa vào nhóm thu nhập trung bình cao (số Ngân hàng Thế giới, báo Tiền Phong tổng hợp 9/7/2026)."
+   ],
+   [
+    "p",
+    "Thái Lan cao hơn Việt Nam khoảng 55% (7.690 ÷ 4.970 = 1,55, em tự tính), nhưng cũng mới đi được khoảng một nửa quãng đường tới ngưỡng nước giàu."
+   ],
+   [
+    "h2",
+    "Thái Lan bị kẹt như thế nào?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Thời hoàng kim:</b> tăng trên 10% liên tục từ 1987 đến 1990, đỉnh 13,3% năm 1988.",
+     "<b>Cú sập 1997:</b> ngày 2/7/1997 Thái Lan thả nổi đồng baht. Tới tháng 1/1998 baht mất khoảng một nửa giá trị so với USD, giá cổ phiếu đã giảm hơn 60% từ đỉnh đầu 1994 (Ngân hàng Trung ương Úc, 1998). GDP giảm 2,8% năm 1997 và 7,6% năm 1998.",
+     "<b>Sau đó:</b> hồi phục nhưng không chạy nhanh lại được. Nay tăng khoảng 2% mỗi năm, thuộc nhóm chậm nhất Đông Nam Á."
+    ]
+   ],
+   [
+    "p",
+    "Nguyên nhân cú sập là tăng trưởng nóng bằng tiền vay, nhất là vay USD ngắn hạn đổ vào bất động sản. Khi baht mất giá một nửa, một công ty nợ 1 triệu USD bỗng thấy món nợ tính ra tiền baht <b>tăng gần gấp đôi</b>, dù chưa vay thêm đồng nào."
+   ],
+   [
+    "h2",
+    "Hai cái bẫy nhỏ bên trong cái bẫy lớn"
+   ],
+   [
+    "p",
+    "<b>Nợ hộ gia đình.</b> Cuối năm 2025, nợ của các hộ gia đình Thái bằng <b>86,7% GDP</b>, khoảng 12,72 nghìn tỷ baht, phần tăng thêm chủ yếu là vay tiêu dùng cá nhân (SCB EIC, The Nation 15/4/2026). Vay để tiêu thì không sinh ra thu nhập để trả nợ."
+   ],
+   [
+    "p",
+    "<b>Già trước khi giàu.</b> Từ năm 2023, hơn 20% dân số Thái từ 60 tuổi trở lên, dự báo lên 28% vào năm 2033; gần một nửa người cao tuổi không có tiết kiệm (The Nation 28/9/2025). Người trẻ vừa trả nợ của mình, vừa nuôi cha mẹ."
+   ],
+   [
+    "p",
+    "Một ví dụ minh họa (giả định): anh Somchai lương 25.000 baht, trả góp xe 8.000, thẻ tín dụng 4.500. Tổng trả nợ 12.500 baht, đúng <b>50%</b> lương đi trả nợ trước khi mua bất cứ thứ gì."
+   ],
+   [
+    "h2",
+    "Việt Nam giống và khác Thái Lan ở đâu?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Chỉ tiêu",
+      "Việt Nam",
+      "Thái Lan"
+     ],
+     [
+      "Thu nhập/người 2025",
+      "4.970 USD",
+      "7.690 USD"
+     ],
+     [
+      "Tăng trưởng 2026<br>(IMF 10/2026)",
+      "8,4%",
+      "2,1%"
+     ],
+     [
+      "Thời hoàng kim",
+      "Đang diễn ra<br>(Q3/2026 +9,95%)",
+      "1987–1990<br>(đỉnh 13,3%)"
+     ],
+     [
+      "Dân số già",
+      "Dự kiến 2034",
+      "Từ 2023<br>(>20% từ 60 tuổi)"
+     ],
+     [
+      "Động cơ chính",
+      "FDI, xuất khẩu",
+      "FDI, xuất khẩu"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Ba điểm giống đến giật mình: tăng nhanh nhờ nhà máy nước ngoài, xuất khẩu là động cơ chính, và cửa sổ dân số vàng đang khép. Theo dự báo của Cục Thống kê và Quỹ Dân số Liên hợp quốc, năm 2024 Việt Nam có 14,2 triệu người từ 60 tuổi, sẽ thành nước dân số già năm 2034 và hết <a href=\"/f0/dan-so-vang-la-gi.html\">dân số vàng</a> khoảng năm 2036."
+   ],
+   [
+    "p",
+    "Điểm khác: Việt Nam còn khoảng 10 năm, và đang tăng nhanh (GDP 2025 +8,02%, quý 3/2026 +9,95% theo Tổng cục Thống kê). Mười năm đó dùng thế nào sẽ quyết định mình thành Hàn Quốc hay thành Thái Lan thứ hai."
+   ],
+   [
+    "h2",
+    "Việt Nam cần tăng bao nhiêu để thoát bẫy?"
+   ],
+   [
+    "p",
+    "Em tính số năm để thu nhập bình quân đi từ 4.970 lên 14.375 USD, giả định ngưỡng đứng yên và thu nhập tính bằng USD tăng đều: <b>số năm = ln(14.375 ÷ 4.970) ÷ ln(1 + tốc độ tăng)</b>."
+   ],
+   [
+    "table",
+    [
+     [
+      "Tăng mỗi năm<br>(tính bằng USD)",
+      "Số năm cần",
+      "Chạm ngưỡng<br>khoảng năm"
+     ],
+     [
+      "7%",
+      "15,7",
+      "2041"
+     ],
+     [
+      "5,5%",
+      "19,8",
+      "2045"
+     ],
+     [
+      "5%",
+      "21,8",
+      "2047"
+     ],
+     [
+      "2% (như Thái Lan nay)",
+      "53,6",
+      "sau 2075"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Muốn kịp mục tiêu thu nhập cao năm 2045, thu nhập bình quân tính bằng USD phải tăng khoảng <b>5,5% mỗi năm, liên tục 20 năm</b>. Thái Lan với 2% mỗi năm cần thêm khoảng 31,6 năm nữa. Hàn Quốc làm được vì giữ tốc độ 7–10% gần như mỗi năm từ 1970 đến 1996, đi từ lắp ráp lên làm công nghệ, và vào khối OECD năm 1996."
+   ],
+   [
+    "p",
+    "Lưu ý: tăng trưởng GDP thực khác thu nhập tính bằng USD (còn chịu lạm phát, tỷ giá). Bảng trên là phép thử đơn giản để thấy khoảng cách, không phải dự báo."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp khi đọc chuyện này"
+   ],
+   [
+    "ul",
+    [
+     "<b>Thấy GDP tăng nhanh là nghĩ ai cũng giàu nhanh.</b> Thái Lan năm 1988 tăng 13,3% nhưng gia đình nào vay USD, vay tiêu dùng vẫn mất gần hết năm 1997. Lương thật của người lao động cũng tăng chậm hơn GDP nhiều (xem <a href=\"/f0/luong-thuc-te-la-gi.html\">lương thực tế là gì</a>).",
+     "<b>Lấy thu nhập tăng để vay tiêu dùng nhiều hơn.</b> Đây đúng là con đường nợ hộ gia đình 86,7% GDP của Thái Lan.",
+     "<b>Nghĩ chuyện vĩ mô không liên quan túi tiền.</b> Khi tăng trưởng chậm lại, lương, việc làm và lợi nhuận doanh nghiệp niêm yết đều chậm theo; cổ phiếu Thái giảm hơn 60% trong cú sập là ví dụ rõ nhất."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist cho gia đình anh chị"
+   ],
+   [
+    "ul",
+    [
+     "Cộng mọi khoản trả nợ mỗi tháng rồi chia cho thu nhập (<a href=\"/f0/ty-le-tra-no-tren-thu-nhap-la-gi.html\">tỷ lệ trả nợ trên thu nhập</a>): dưới 30% còn thở được, trên 50% là đang sống giống Somchai.",
+     "Phần lương tăng thêm mỗi năm, để riêng một phần cho quỹ dự phòng và tuổi già của bố mẹ.",
+     "Tránh vay ngoại tệ, vay tiêu dùng cho thứ không tạo ra thu nhập.",
+     "Đầu tư vào tay nghề: thu nhập tăng nhanh nhất vẫn đến từ kỹ năng.",
+     "Nếu có khoản đầu tư: theo dõi lợi nhuận doanh nghiệp có lớn lên cùng nền kinh tế không – tra lợi nhuận từng quý tại <a href=\"/ket-qua-kinh-doanh-quy.html\">kết quả kinh doanh quý</a>."
+    ]
+   ],
+   [
+    "p",
+    "<small>Nguồn: Tiền Phong 9/7/2026 (số Ngân hàng Thế giới); Ngân hàng Trung ương Úc RDP 9805 (1998); IMF WEO 10/2026; SCB EIC – The Nation 15/4/2026; The Nation 28/9/2025; Cục Thống kê – UNFPA (Tuổi Trẻ 27/1/2026); Tổng cục Thống kê. Phép tính số năm do em tự tính. Bài chia sẻ kiến thức, không phải khuyến nghị đầu tư.</small>"
+   ]
+  ],
+  "faq": [
+   [
+    "Bẫy thu nhập trung bình là gì?",
+    "Là khi một nước lên được mức thu nhập trung bình nhờ lao động rẻ và vốn nước ngoài rồi dừng lại hàng chục năm, không lên được nhóm thu nhập cao (ngưỡng hiện khoảng 14.375 USD/người/năm)."
+   ],
+   [
+    "Việt Nam có rơi vào bẫy thu nhập trung bình không?",
+    "Chưa thể kết luận. Năm 2025 Việt Nam đạt khoảng 4.970 USD/người và đang tăng 8–10%. Muốn thành nước thu nhập cao năm 2045, thu nhập tính bằng USD cần tăng khoảng 5,5% mỗi năm liên tục 20 năm."
+   ],
+   [
+    "Vì sao Thái Lan chưa thành nước giàu?",
+    "Sau khủng hoảng 1997 Thái Lan không lấy lại tốc độ tăng cao, nay còn khoảng 2%/năm; nợ hộ gia đình 86,7% GDP và dân số già hóa từ năm 2023 khiến tiêu dùng và đầu tư khó tăng."
+   ]
+  ],
+  "rel": [
+   "dan-so-vang-la-gi",
+   "ty-le-tra-no-tren-thu-nhap-la-gi",
+   "luong-thuc-te-la-gi",
+   "viet-nam-dang-no-bao-nhieu",
+   "lam-phat-va-chung-khoan"
   ]
  }
 ]
