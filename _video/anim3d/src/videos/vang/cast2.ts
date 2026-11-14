@@ -32,6 +32,10 @@ export const OUT: Record<string, { o: Outfit; h: number; seed: number }> = {
   cuong: { o: { jacket: "#e8c22a", pants: "#1f2430", boots: "#f4f4f2", hat: "hair", hair: "#121212", belt: null, buttons: "#1f2430", skin: "#d9a77e", build: "stout" }, h: 1.74, seed: 79 },
   tai: { o: { jacket: "#2fa39a", pants: "#3a3f52", boots: "#e9e6df", hat: "cap", cap: "#d8212f", belt: null, buttons: "#d8dde4", skin: "#f2cfae" }, h: 1.66, seed: 83 },
   linh: { o: { jacket: "#b03ad0", pants: "#1f2430", boots: "#f3e8dc", hat: "hair", hair: "#3a1f16", belt: null, buttons: "#ffffff", skin: "#ffe0c6", long: true }, h: 1.6, seed: 89 },
+  longbh: { o: { jacket: "#2f4f7a", pants: "#2b3346", boots: "#f4f4f2", hat: "hair", hair: "#141215", belt: null, buttons: "#e6ebf0", skin: "#efc9a2" }, h: 1.72, seed: 97 },
+  ngans: { o: { jacket: "#f39bb5", pants: "#5b4a6e", boots: "#f3e8dc", hat: "hair", hair: "#2a1d1b", belt: null, buttons: "#ffffff", skin: "#ffe0c6", long: true }, h: 1.58, seed: 101 },
+  hoast: { o: { jacket: "#3f8f6f", pants: "#2b2b33", boots: "#3a2a20", hat: "hair", hair: "#1c1416", belt: null, buttons: "#f2d36b", skin: "#f1c9a0", long: true }, h: 1.6, seed: 103 },
+  baove: { o: { jacket: "#3b4f3a", pants: "#2e2c30", boots: "#222", hat: "cap", cap: "#2f3a2a", belt: null, buttons: "#d8c7a8", skin: "#d9a77e" }, h: 1.66, seed: 107 },
 };
 const CROWD_J = ["#3a78c2", "#2f8a52", "#8a5a3a", "#6b4fa0", "#c9572e", "#4a4a52", "#9c2f45", "#2e6f7a", "#7a7f3a", "#d08a2a"];
 const HAIR = ["#1c1719", "#2a1d1b", "#4a3426", "#b9b6b2", "#151515"];

@@ -1,0 +1,76 @@
+{
+ "key": "LTC1",
+ "title": "Lớp học của những người viết luật: Ngân hàng Thế giới và đồng đô la | Lý thuyết trò chơi #1",
+ "scenes": [
+  {
+   "id": "S01",
+   "say": "Thầy giáo viết lên bảng một con số: bảy trăm bốn mươi mốt tỷ đô la. Ba năm qua, các nước đang phát triển trả nợ nhiều hơn số tiền họ vay mới đúng chừng ấy. Ai trong lớp biết tiền đó chảy về đâu? Jack Rockwell, con nhà ngân hàng lớn nhất lớp, giơ tay: về nhà em ạ. Cả lớp cười ồ. Chỉ có một cậu học trò ngồi bàn cuối là không cười.",
+   "hinh": "Phòng học sang trọng, bảng trắng. Thầy viết to 741 TỶ ĐÔ. Jack giơ tay cười. Cả lớp cười, riêng Minh không cười."
+  },
+  {
+   "id": "S02",
+   "say": "Lý thuyết trò chơi, bài một: ai viết luật cho đồng tiền của thế giới?",
+   "hinh": "THẺ TIÊU ĐỀ: LỚP HỌC CỦA NHỮNG NGƯỜI VIẾT LUẬT – Lý thuyết trò chơi #1: Ngân hàng Thế giới."
+  },
+  {
+   "id": "S03",
+   "say": "Đây là lớp học đặc biệt nhất trường. Jack, nhà làm ngân hàng ba đời. Kenji, gia tộc ô tô. Khalid, nhà có giếng dầu. Charlotte, dòng họ bảo hiểm hai trăm năm. Và Lâm Minh, cậu học trò học bổng duy nhất, bố mẹ bán hàng ở chợ Đồng Xuân. Cả lớp gọi thầy là thầy Bàn Cờ, vì thầy chỉ dạy một điều: muốn thắng, phải biết ai viết luật.",
+   "hinh": "Giới thiệu từng học trò, thẻ tên dưới chân: Jack (Mỹ – ngân hàng), Kenji Takeda (Nhật – ô tô), Khalid (vùng Vịnh – dầu mỏ), Charlotte Ashford (Anh – bảo hiểm), Lâm Minh (Việt Nam – học bổng)."
+  },
+  {
+   "id": "S04",
+   "say": "Thầy kể: tháng bảy năm một nghìn chín trăm bốn mươi tư, Thế chiến hai còn chưa kết thúc, bốn mươi bốn nước họp ở Bretton Woods, nước Mỹ. Họ lập ra hai tổ chức: Quỹ Tiền tệ Quốc tế và Ngân hàng Thế giới. Nói nôm na, đây là ngân hàng của các quốc gia, nước nào khó khăn thì đến vay. Đô la đổi được ra vàng, còn tiền các nước khác thì đổi theo đô la. Bàn cờ được dựng từ hôm đó.",
+   "hinh": "KỂ + ẢNH THẬT: hội nghị Bretton Woods 1944, khách sạn Mount Washington; THẺ: 44 nước, 1944, IMF + Ngân hàng Thế giới."
+  },
+  {
+   "id": "S05",
+   "say": "Kenji hỏi: thưa thầy, ai được quyền quyết ở ngân hàng ấy? Thầy chỉ lên bảng: góp càng nhiều vốn thì càng nhiều phiếu, giống cổ đông lớn trong một công ty. Mỹ giữ mười sáu phẩy không bảy phần trăm số phiếu. Mà quyết định lớn cần tám mươi lăm phần trăm đồng ý. Jack nhún vai: tức là nhà em không gật thì không ai qua được. Thầy gật đầu: đó gọi là quyền phủ quyết.",
+   "hinh": "Thoại: Kenji hỏi, thầy chỉ thẻ số. THẺ: 16,07% phiếu Mỹ, quyết định lớn cần 85%."
+  },
+  {
+   "id": "S06",
+   "say": "Luật thứ nhất, thầy viết: nợ quốc tế phần lớn tính bằng đô la. Nước đi vay kiếm tiền bằng đồng tiền của mình, nhưng trả nợ phải bằng đô la. Minh giơ tay: thưa thầy, giống như nhà em bán hàng thu tiền Việt, mà nợ lại tính bằng đô. Đô lên giá một cái, nợ tự phình to dù không vay thêm đồng nào. Thầy mỉm cười: em hiểu nhanh hơn cả lớp.",
+   "hinh": "Thầy vẽ sơ đồ: thu tiền bằng nội tệ → trả nợ bằng đô. Minh giơ tay, ví dụ đời thường."
+  },
+  {
+   "id": "S07",
+   "say": "Rồi thầy kể một ván cờ có thật. Đầu những năm một nghìn chín trăm tám mươi, Mỹ đẩy lãi suất lên gần hai mươi phần trăm để dập lạm phát. Đô la tăng vọt. Tháng tám năm một nghìn chín trăm tám mươi hai, Mexico tuyên bố không trả nổi nợ. Cả khu vực Mỹ Latinh kéo theo, mất gần mười năm. Người ta gọi đó là thập kỷ mất mát.",
+   "hinh": "KỂ + ẢNH THẬT: Paul Volcker, Mexico City 1980s; THẺ: lãi suất Mỹ gần 20%, 8/1982 Mexico tuyên bố không trả nổi nợ."
+  },
+  {
+   "id": "S08",
+   "say": "Luật thứ hai: khi vỡ nợ, các tổ chức này cho vay cứu, nhưng kèm điều kiện. Cắt chi tiêu, bỏ trợ giá, bán doanh nghiệp nhà nước, mở cửa cho vốn ngoại. Charlotte nói: em thấy đó là thuốc đắng, không uống thì bệnh nặng hơn. Khalid lắc đầu: nhưng người phải uống thuốc là dân nghèo, không phải người kê đơn. Thầy chỉ nói: cả hai em đều đúng một nửa. Và ai kê đơn, người đó viết luật.",
+   "hinh": "Thoại tranh luận: Charlotte ủng hộ, Khalid phản biện, thầy tóm. THẺ: cắt chi tiêu · bỏ trợ giá · bán doanh nghiệp nhà nước · mở cửa vốn ngoại."
+  },
+  {
+   "id": "S09",
+   "say": "Tám mươi năm sau, bàn cờ ấy vẫn còn. Trong số tiền dự trữ của ngân hàng trung ương các nước, đô la vẫn chiếm năm mươi bảy phẩy mười ba phần trăm. Đã giảm so với khoảng bảy mươi mốt phần trăm hồi năm hai nghìn, nhưng vẫn đứng đầu rất xa.",
+   "hinh": "THẺ CỘT: tỷ trọng đô la trong dự trữ: năm 2000 ~71% → quý I/2026 57,13% (IMF)."
+  },
+  {
+   "id": "S10",
+   "say": "Thầy hỏi: biết rủi ro như thế, sao các nước vẫn vay bằng đô? Kenji đáp: vì vay đô lãi rẻ hơn, nước nào không vay thì chậm hơn nước bên cạnh. Thầy gật đầu: đó chính là lý thuyết trò chơi. Mỗi người chơi chọn điều có lợi nhất cho mình, nhưng khi tất cả cùng chọn như thế, cả bàn cờ cùng chịu rủi ro. Và người hưởng lợi, là người in ra đồng đô la.",
+   "hinh": "Thầy vẽ ma trận 2x2 trên bảng (vay đô / vay nội tệ). Kenji trả lời. Giải thích đơn giản."
+  },
+  {
+   "id": "S11",
+   "say": "Minh hỏi: thế Việt Nam có thua ván này không thầy? Thầy lắc đầu: không hẳn. Từ năm một nghìn chín trăm chín mươi ba đến năm hai nghìn không trăm mười chín, Ngân hàng Thế giới cam kết khoảng hai mươi tư tỷ đô la cho Việt Nam, nhiều nhất là đường, điện, nước. Tỷ lệ nghèo giảm từ gần sáu mươi phần trăm xuống mười ba phẩy năm phần trăm năm hai nghìn không trăm mười bốn. Vay đúng chỗ, nợ là đòn bẩy. Vay sai chỗ, nợ là cái bẫy.",
+   "hinh": "Minh hỏi về Việt Nam. KỂ + ẢNH THẬT: đường nông thôn, điện; THẺ CỘT tỷ lệ nghèo 58% (1993) → 13,5% (2014), Ngân hàng Thế giới."
+  },
+  {
+   "id": "S12",
+   "say": "Với nhà đầu tư nhỏ, ván cờ này hiện ngay trên bảng điện. Năm hai nghìn không trăm hai mươi hai, Mỹ tăng lãi suất nhanh nhất bốn mươi năm, đô la lên đỉnh hai mươi năm. VN-Index năm đó giảm ba mươi hai phẩy tám phần trăm, từ một nghìn bốn trăm chín mươi tám xuống một nghìn không trăm linh bảy điểm.",
+   "hinh": "KỂ + THẺ: 2022 Mỹ tăng lãi suất nhanh nhất 40 năm, đô la đỉnh 20 năm; VN-Index -32,8% (1.498 → 1.007). ẢNH bảng điện."
+  },
+  {
+   "id": "S13",
+   "say": "Cuối giờ, thầy hỏi Minh: em không có ngân hàng, không có giếng dầu. Em chơi ván này thế nào? Minh đứng dậy: thưa thầy, em không vay quá sức. Em giữ một khoản dự phòng. Và trước khi bỏ tiền vào đâu, em xem lãi suất Mỹ và đồng đô la đang đi về phía nào. Cả lớp im lặng. Lần này, Jack là người không cười.",
+   "hinh": "Thầy hỏi Minh, Minh đứng lên trả lời; bảng trắng ghi 3 dòng."
+  },
+  {
+   "id": "S14",
+   "say": "Chuông reo. Thầy gấp sách lại: bài sau, chúng ta học vì sao người viết luật hiếm khi thua. Còn anh chị, theo anh chị, Ngân hàng Thế giới là người cứu các nước nghèo, hay là chủ nợ viết luật chơi?",
+   "hinh": "Chuông reo, thầy gấp sách. Câu hỏi cho khán giả."
+  }
+ ]
+}
