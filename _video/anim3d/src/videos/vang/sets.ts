@@ -98,7 +98,7 @@ function willow(r: () => number) {
   for (let k = 0; k < 7; k++) { const c = new THREE.Mesh(new THREE.ConeGeometry(1.1 + r() * 0.5, 3.6, 7, 1, true), lam(["#2f6e3a", "#3c8048", "#28603a"][k % 3])); c.position.set((r() - 0.5) * 2.4, 3.2 + r() * 0.8, (r() - 0.5) * 2.0); c.castShadow = true; (c.material as THREE.Material).side = THREE.DoubleSide; g.add(c); }
   return g;
 }
-function lampPost(head = [2.6, 2.0, 1.1] as [number, number, number], h = 4.5) {
+export function lampPost(head = [2.6, 2.0, 1.1] as [number, number, number], h = 4.5) {
   const g = new THREE.Group(); const p = cyl(0.07, 0.1, h, lam("#2a2d33"), 8); p.position.y = h / 2; g.add(p);
   const arm = box(0.9, 0.06, 0.06, lam("#2a2d33")); arm.position.set(0.4, h - 0.05, 0); g.add(arm);
   const bulb = new THREE.Mesh(new THREE.SphereGeometry(0.2, 12, 8), glow(...head)); bulb.position.set(0.8, h - 0.2, 0); bulb.layers.set(NOINK); g.add(bulb);
@@ -166,7 +166,7 @@ export function rainStreaks(n = 1600) {
   };
   return { m, update };
 }
-function waterTex(base: string, streak: string, seed: number) {
+export function waterTex(base: string, streak: string, seed: number) {
   const [c, g] = cvs(512, 512), r = rng(seed); g.fillStyle = base; g.fillRect(0, 0, 512, 512);
   for (let i = 0; i < 260; i++) { g.fillStyle = `rgba(255,255,255,${0.03 + r() * 0.06})`; g.fillRect(r() * 512, r() * 512, 20 + r() * 90, 2); }
   g.fillStyle = streak; for (let i = 0; i < 40; i++) g.fillRect(r() * 512, r() * 512, 30 + r() * 60, 3);

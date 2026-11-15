@@ -13,12 +13,13 @@ import { buildRoom, buildStreet, buildShop, buildHue, buildBenThanh, buildHoGuom
 import { applyLight, GR, LK, L } from "./look";
 import { F } from "./cards";
 import { buildExtras } from "./extras";
+import { buildLop, buildTan, buildSo, buildSa, buildAthens, buildUruk, buildTenoch, buildThao, buildPlaza, buildXuong, drawBoard as drawChalk, drawScore, Board } from "../ltc5/sets_ltc";
 
 export type V = [number, number, number];
-export type SetKey = "room" | "street" | "streetday" | "shop" | "hue" | "bt" | "lake" | "villa" | "field" | "fieldfever" | "korea" | "bank" | "photo";
-export const OFF: Record<SetKey, number> = { room: RX, street: SX, streetday: SX, shop: IX, hue: HX, bt: BX, lake: GX, villa: VX, field: FX, fieldfever: FX, korea: KX, bank: NX, photo: 0 };
+export type SetKey = "room" | "street" | "streetday" | "shop" | "hue" | "bt" | "lake" | "villa" | "field" | "fieldfever" | "korea" | "bank" | "photo" | "lop" | "tan" | "so" | "sa" | "athens" | "uruk" | "tenoch" | "thao" | "plaza" | "xuong";
+export const OFF: Record<SetKey, number> = { room: RX, street: SX, streetday: SX, shop: IX, hue: HX, bt: BX, lake: GX, villa: VX, field: FX, fieldfever: FX, korea: KX, bank: NX, photo: 0, lop: 0, tan: 0, so: 0, sa: 0, athens: 0, uruk: 0, tenoch: 0, thao: 0, plaza: 0, xuong: 0 };
 export type Cast = { a: string; p: V; to?: V; pose: (t: number, d: number) => Pose };
-export type Shot3D = { bg?: string; bgFit?: [number, number]; set: SetKey; light: LK; from: [V, V, number]; to: [V, V, number]; cast: Cast[]; rain?: boolean; shake?: number; chat?: "calm" | "fast" | "off" | "boom"; game?: boolean; board?: "buy" | "sell"; ease?: "sm" | "lin" | "out"; walkers?: boolean; jam?: boolean };
+export type Shot3D = { bg?: string; bgFit?: [number, number]; set: SetKey; light: LK; from: [V, V, number]; to: [V, V, number]; cast: Cast[]; rain?: boolean; shake?: number; chat?: "calm" | "fast" | "off" | "boom"; game?: boolean; board?: "buy" | "sell"; ease?: "sm" | "lin" | "out"; walkers?: boolean; jam?: boolean; chalk?: string[]; chalkT?: number; score?: 1 | 2 };
 export type Run = { a: number; b: number; s: Shot3D }; // frames, relative to the Stage sequence
 
 const sm = (t: number) => { t = Math.max(0, Math.min(1, t)); return t * t * t * (t * (t * 6 - 15) + 10); };
@@ -64,14 +65,14 @@ const Inner: React.FC<{ set: SetKey; runs: Run[] }> = ({ set, runs }) => {
   const f = useCurrentFrame(), { camera, scene } = useThree();
   const W = useMemo(() => {
     const root = new THREE.Group();
-    const sun = new THREE.DirectionalLight("#ffffff", 2.8); sun.castShadow = true; sun.shadow.mapSize.set(2048, 2048);
+    const sun = new THREE.DirectionalLight("#ffffff", 2.8); sun.castShadow = true; sun.shadow.mapSize.set(2048, 2048); sun.shadow.radius = 4;
     const scm = sun.shadow.camera as THREE.OrthographicCamera; scm.left = -26; scm.right = 26; scm.top = 26; scm.bottom = -26; scm.near = 1; scm.far = 200; sun.shadow.bias = -0.0004; sun.shadow.normalBias = 0.02;
-    root.add(sun, sun.target, new THREE.HemisphereLight("#dcecff", "#b49a78", 0.4));
+    root.add(sun, sun.target, new THREE.HemisphereLight("#e8f0ff", "#c4a682", 0.6));
     const skyMat = new THREE.ShaderMaterial({ side: THREE.BackSide, depthWrite: false, uniforms: { top: { value: new THREE.Color() }, hor: { value: new THREE.Color() } },
       vertexShader: "varying vec3 p; void main(){ p = normalize(position); gl_Position = projectionMatrix*modelViewMatrix*vec4(position,1.0);}",
       fragmentShader: "uniform vec3 top; uniform vec3 hor; varying vec3 p; void main(){ float t = smoothstep(-0.05, 0.6, p.y); gl_FragColor = vec4(mix(hor, top, t), 1.0); }" });
     const sky = new THREE.Mesh(new THREE.SphereGeometry(380, 32, 16), skyMat); sky.layers.set(NOINK); root.add(sky);
-    let room: ReturnType<typeof buildRoom> | null = null, shop: ReturnType<typeof buildShop> | null = null, bike: THREE.Group | null = null;
+    let chalkB: Board | null = null, scoreB: Board | null = null; let room: ReturnType<typeof buildRoom> | null = null, shop: ReturnType<typeof buildShop> | null = null, bike: THREE.Group | null = null;
     if (set === "room") { room = buildRoom(); root.add(room.g); }
     else if (set === "street" || set === "streetday") { const st = buildStreet(set === "street"); root.add(st.g); bike = st.bikeDo; }
     else if (set === "shop") { shop = buildShop(); root.add(shop.g); }
@@ -81,6 +82,11 @@ const Inner: React.FC<{ set: SetKey; runs: Run[] }> = ({ set, runs }) => {
     else if (set === "field" || set === "fieldfever") root.add(buildField(set === "fieldfever").g);
     else if (set === "korea") root.add(buildKorea().g);
     else if (set === "bank") root.add(buildBank().g);
+    else if (set === "lop") { const L0 = buildLop(); root.add(L0.g); chalkB = L0.board; }
+    else if (set === "xuong") { const X0 = buildXuong(); root.add(X0.g); scoreB = X0.score; }
+    else if (set === "tan") root.add(buildTan().g); else if (set === "so") root.add(buildSo().g); else if (set === "sa") root.add(buildSa().g);
+    else if (set === "athens") root.add(buildAthens().g); else if (set === "uruk") root.add(buildUruk().g); else if (set === "tenoch") root.add(buildTenoch().g);
+    else if (set === "thao") root.add(buildThao().g); else if (set === "plaza") root.add(buildPlaza().g);
     else if (set === "photo") { // ẢNH NỀN THẬT + nhân vật 3D: chỉ có mặt đất hứng bóng; ảnh dán vào tấm nền luôn quay theo máy
       const gr = new THREE.Mesh(new THREE.PlaneGeometry(200, 200), new THREE.ShadowMaterial({ opacity: 0.38 })); gr.rotation.x = -Math.PI / 2; gr.receiveShadow = true; gr.layers.set(NOINK); root.add(gr); }
     else root.add(buildHoGuom().g);
@@ -99,7 +105,7 @@ const Inner: React.FC<{ set: SetKey; runs: Run[] }> = ({ set, runs }) => {
     }
     const extras = buildExtras(set, root);
     noInkFallback(root);
-    return { bgs, bgPlane, extras, root, sun, skyMat, sky, room, shop, rain, actors, bike, bike0: bike ? bike.position.clone() : null, bikeR: bike ? bike.rotation.y : 0 };
+    return { chalkB, scoreB, bgs, bgPlane, extras, root, sun, skyMat, sky, room, shop, rain, actors, bike, bike0: bike ? bike.position.clone() : null, bikeR: bike ? bike.rotation.y : 0 };
   }, [set]);
   const fx = useMemo(() => ({
     ink: new InkPass(scene, camera as THREE.PerspectiveCamera),
@@ -128,6 +134,8 @@ const Inner: React.FC<{ set: SetKey; runs: Run[] }> = ({ set, runs }) => {
   W.rain.update(f / 30, pos, !!s.rain);
   if (W.room) { drawChat(W.room.chat, t, s.chat ?? "calm"); drawGame(W.room.game, f / 30, s.game ?? true); }
   if (W.shop) drawBoard(W.shop.board, s.board ?? "buy");
+  if (W.chalkB) drawChalk(W.chalkB, s.chalk ?? [], s.chalkT ? Math.min(1, t / s.chalkT) : 1);
+  if (W.scoreB) drawScore(W.scoreB, s.score ?? 1);
   const tint = new THREE.Color(L[s.light].tint);
   W.extras(f / 30, cam, tint, !!s.jam);
   for (const a of Object.values(W.actors)) a.root.visible = false;
@@ -149,7 +157,7 @@ const Inner: React.FC<{ set: SetKey; runs: Run[] }> = ({ set, runs }) => {
 
 export const Stage: React.FC<{ set: SetKey; runs: Run[] }> = ({ set, runs }) => (
   <div style={{ position: "absolute", left: 0, top: 0, width: 1280, height: 720, transform: "scale(1.5)", transformOrigin: "0 0" }}>
-    <ThreeCanvas width={1280} height={720} shadows gl={{ antialias: false, stencil: false }} camera={{ fov: 40, near: 0.05, far: 800 }}>
+    <ThreeCanvas width={1280} height={720} shadows="soft" gl={{ antialias: false, stencil: false }} camera={{ fov: 40, near: 0.05, far: 800 }}>
       <Inner set={set} runs={runs} />
     </ThreeCanvas>
   </div>

@@ -15,6 +15,13 @@ export const BOXER: Outfit = { jacket: "#e23b2e", pants: "#1f2430", boots: "#f4f
 export const XOI: Outfit = { jacket: "#8a3fa0", pants: "#2e2c30", boots: "#5a3b2a", hat: "hair", hair: "#241a18", belt: null, buttons: "#e8d8f0", build: "stout", skin: "#f1c9a0", long: true };
 /** nhân vật phim #2 (Hùng Xa Lộ) – tra theo khoá cast */
 export const OUT: Record<string, { o: Outfit; h: number; seed: number }> = {
+  thay5: { o: { jacket: "#f4f6f8", pants: "#1f2a44", boots: "#3a2a20", hat: "hair", hair: "#141215", belt: null, buttons: "#1f2a44", skin: "#f1cfa8" }, h: 1.74, seed: 211 },
+  phu5: { o: { jacket: "#6b4fa0", pants: "#1f2430", boots: "#111", hat: "hair", hair: "#3a2a20", belt: null, buttons: "#f2d36b", skin: "#e8c39e", moustache: "#2a1d18", build: "stout" }, h: 1.7, seed: 31 },
+  qha5: { o: { jacket: "#4f6d8f", pants: "#2b3346", boots: "#3a2a20", hat: "cap", cap: "#d8212f", belt: null, buttons: "#e6ebf0", skin: "#efc9a2" }, h: 1.68, seed: 71 },
+  vy5: { o: { jacket: "#c8202f", pants: "#1f2430", boots: "#f3e8dc", hat: "hair", hair: "#1c1416", belt: null, buttons: "#ffffff", skin: "#ffe0c6", long: true }, h: 1.6, seed: 29 },
+  trang5: { o: { jacket: "#e86a92", pants: "#2b2b33", boots: "#f3e8dc", hat: "hair", hair: "#1c1416", belt: null, buttons: "#ffffff", skin: "#f6d2b2", long: true }, h: 1.47, seed: 73 },
+  hung5: { o: { jacket: "#3a6ea5", pants: "#3a3f52", boots: "#e9e6df", hat: "hair", hair: "#161214", belt: null, buttons: "#d8dde4", skin: "#e6b98e", build: "stout" }, h: 1.72, seed: 17 },
+  linh5: { o: { jacket: "#b03ad0", pants: "#1f2430", boots: "#f3e8dc", hat: "hair", hair: "#3a1f16", belt: null, buttons: "#ffffff", skin: "#ffe0c6", long: true }, h: 1.6, seed: 89 },
   hung: { o: { jacket: "#3a6ea5", pants: "#3a3f52", boots: "#e9e6df", hat: "hair", hair: "#161214", belt: null, buttons: "#d8dde4", skin: "#e6b98e", build: "stout" }, h: 1.72, seed: 17 },
   huy: { o: { jacket: "#f4f6f8", pants: "#2b3346", boots: "#3a2a20", hat: "hair", hair: "#141215", belt: null, buttons: "#9aa3ab", skin: "#f1cfa8" }, h: 1.72, seed: 21 },
   dung: { o: { jacket: "#2b2b2b", pants: "#3a4a6a", boots: "#f4f4f2", hat: "hair", hair: "#111", belt: null, buttons: "#2b2b2b", skin: "#c98a5a", build: "stout" }, h: 1.8, seed: 23 },
