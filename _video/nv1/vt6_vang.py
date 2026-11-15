@@ -31,7 +31,7 @@ S = [
         ('Lan', 'Em đi! Gửi tiết kiệm lãi có 5%, vàng 2 tháng lên 17%'),
         ('me', 'Vàng chỉ có lên chứ không có xuống đúng không chị?')]),
       say=("Tháng ba năm 2026. Nhóm Zalo khu phố của bạn sôi lên. Chị Thu nhắn: vàng lên một trăm tám mươi tư triệu rồi, đầu năm mới một trăm năm mươi tám. Mai năm giờ chị đi xếp hàng, ai đi cùng không? "
-           "Lan nhảy vào: em đi, gửi tiết kiệm lãi có năm phần trăm một năm, vàng hai tháng lên mười bảy phần trăm. Bạn gõ một câu mà chính bạn cũng muốn tin: vàng chỉ có lên chứ không có xuống đúng không chị?")),
+           "Lan nhảy vào: em đi, gửi tiết kiệm lãi có năm phần trăm mỗi năm, vàng hai tháng lên mười bảy phần trăm. Bạn gõ một câu mà chính bạn cũng muốn tin: vàng chỉ có lên chứ không có xuống đúng không chị?")),
  dict(k='cards', anh='ov:gold bars||gold bullion', cap=('GIÁ VÀNG MIẾNG BÁN RA', 'TRIỆU ĐỒNG/LƯỢNG'), cols=CC, moc=True,
       cards=[('84,2', 'Cuối năm 2024', ''), ('152,8', 'Cuối năm 2025', ''), ('184,8', 'Tuần 13/3/2026 – cao nhất', '')],
       say=("Nhìn lại, cũng dễ hiểu vì sao cả xóm tin. Cuối năm 2024, một lượng vàng miếng giá khoảng tám mươi tư triệu. Cuối năm 2025, một trăm năm mươi hai triệu. "
@@ -82,7 +82,7 @@ S = [
            "Nghĩa là trong một tỷ bạn bỏ ra, khoảng một phần mười là tiền trả thêm cho cơn sốt, chứ không phải cho vàng. Chưa kể khi bán lại, tiệm mua vào thấp hơn giá bán ra khoảng ba triệu một lượng. "
            "Lúc đám đông càng hăng, cái giá phụ này càng đắt.")),
  dict(k='bignum', anh='ov:piggy bank coins||savings coins', cap=('NẾU ĐỂ YÊN', 'TRONG SỔ TIẾT KIỆM'), cols=CR, moc=True, value=295, fmt='{:,.0f}', unit=' triệu', top='CHÊNH LỆCH SAU 8 THÁNG', sub='Tiết kiệm ~1.036 tr · Vàng ~741 tr', col=RED,
-      say=("Thử làm một phép so sánh. Nếu một tỷ đó cứ nằm yên trong sổ tiết kiệm mười hai tháng, lãi khoảng năm phẩy bốn phần trăm một năm, sau tám tháng bạn có khoảng một tỷ không trăm ba mươi sáu triệu. "
+      say=("Thử làm một phép so sánh. Nếu một tỷ đó cứ nằm yên trong sổ tiết kiệm mười hai tháng, lãi khoảng năm phẩy bốn phần trăm mỗi năm, sau tám tháng bạn có khoảng một tỷ không trăm ba mươi sáu triệu. "
            "Còn năm phẩy bốn lượng vàng, nếu bán lại cho tiệm hôm nay theo giá mua vào khoảng một trăm ba mươi bảy triệu, bạn nhận về khoảng bảy trăm bốn mươi mốt triệu. Hai con đường, chênh nhau gần ba trăm triệu, chỉ vì một buổi sáng xếp hàng.")),
  dict(k='cards', ch='Chương 5 – Năm 2011 từng như thế', anh='ov:gold bars||gold bullion', cap=('CƠN SỐT VÀNG 2011', 'TRIỆU ĐỒNG/LƯỢNG'), cols=CC, moc=True,
       cards=[('~49', 'Tháng 9/2011 – đỉnh cơn sốt', ''), ('35,1', 'Cuối năm 2013', ''), ('>50', 'Tháng 7/2020', 'gần 9 năm sau')],

@@ -499,6 +499,8 @@ try:
         _tx = open(os.path.join(OUT, key + ".srt"), encoding="utf-8").read()
         for _m in re.findall(r"[^\n]*(?:\d{1,3}(?:\.\d{3}){2,}\d*\s*(?:triệu|tỷ|nghìn|tháng|năm)|tháng 1[3-9]\b|tháng [2-9]\d\b|\d[a-zA-ZÀ-ỹ]{2,})[^\n]*", _tx)[:5]:
             qc.append("LỖI phụ đề số nghi sai: " + _m.strip()[:80])
+        for _m in re.findall(r"[^\n]*(?:phần 1\d\d\s*năm|\d+\s*%\s*1\s*năm|phần trăm\s+(?:một|1)\s+năm)[^\n]*", _tx)[:5]:   # NV1 16/11: VT6VANG "5 phần 101 năm"
+            qc.append("LỖI phụ đề phần trăm bị tách: " + _m.strip()[:80])
     except Exception: pass
     if not os.path.exists(os.path.join(OUT, key + "_bia.png")): qc.append("LỖI thiếu ảnh bìa")
 except Exception as ex:
