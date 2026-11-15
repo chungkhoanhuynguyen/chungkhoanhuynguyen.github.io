@@ -30,7 +30,7 @@ WM = 'Blue Marble||World map'     # cảnh số nước Mỹ: không dùng ảnh
 SGD = 'ov:Ho Chi Minh City Stock Exchange||Bitexco Financial Tower'
 S = [
  # ---------------- MỞ ĐẦU ----------------
- dict(k='noti', ch='Mở đầu', cap=('MỸ SẮP TĂNG LÃI SUẤT', 'LẦN TRƯỚC VN-INDEX MẤT 33%'), cols=CR, noti=dict(gio='21:10', ngay='Thứ Sáu', items=[
+ dict(k='noti', ch='Mở đầu', cap=('MỸ SẮP TĂNG LÃI SUẤT', 'LẦN TRƯỚC VN-INDEX MẤT 32,8%'), cols=CR, noti=dict(gio='21:10', ngay='Thứ Sáu', items=[
         ('Tin tức', 'Vietnam+', 'Khả năng Fed tăng lãi suất tháng 12 trên 80%', V_),
         ('Zalo', 'Linh (Mỹ)', 'Cổ phiếu chip bên này giảm 6 tuần liền rồi', R_),
         ('Ngân hàng', 'Nhắc nợ', 'Khoản vay nhà kỳ tới áp lãi suất thả nổi', X_)]),
@@ -137,7 +137,7 @@ S = [
         ('Linh (Mỹ)', 'Bên này hắt hơi thì bên đó đừng để bị cảm nhé'),
         ('me', 'Ừ, mình vừa trả bớt nợ rồi'),
         ('Linh (Mỹ)', 'Vậy là yên tâm hơn năm 2022 rồi')]),
-      say=("Gần nửa đêm, Linh nhắn: nước Mỹ hắt hơi thì bên đó đừng để bị cảm nhé. Anh Khoa trả lời: mình vừa quyết định trả bớt nợ rồi. "
+      say=("Gần nửa đêm, Linh nhắn: nước Mỹ hắt hơi thì bên đó đừng để bị cảm nhé. Anh Khoa trả lời rằng anh vừa quyết định trả bớt nợ. "
            "Không ai biết chắc thị trường sẽ đi đâu, nhưng người bị tổn thương nhất năm 2022 không phải người cầm cổ phiếu, mà là người cầm cổ phiếu bằng tiền vay.")),
  dict(k='end', cap=('MỸ TĂNG LÃI SUẤT', 'NĂM 2022 CÓ LẶP LẠI?'), cols=CC,
       say=("Còn anh chị thì sao: nếu cổ phiếu giảm hai mươi phần trăm và lãi vay tăng một điểm, nhà mình vẫn ngủ ngon, phải cắt chi tiêu, hay phải bán gấp? Kể cho em và mọi người ở phần bình luận nhé. "

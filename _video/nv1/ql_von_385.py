@@ -53,8 +53,8 @@ S = [
         ('Đầu tư công trung hạn đã duyệt', '8,22 TRIỆU TỶ'),
         ('Phần đầu tư công gánh được', 'KHOẢNG 1/5'),
         ('Còn lại phải huy động', 'GẦN 30 TRIỆU TỶ')]),
-      say=("Tại phiên chất vấn, một đại biểu chỉ ra: kế hoạch đầu tư công trung hạn đã duyệt khoảng tám phẩy hai triệu tỷ, chỉ bằng khoảng một phần năm tổng nhu cầu. "
-           "Gần ba mươi triệu tỷ còn lại phải huy động từ nơi khác. Và đại biểu nói thêm một câu rất quan trọng: nguồn vốn trung và dài hạn của nền kinh tế vẫn phụ thuộc chủ yếu vào ngân hàng.")),
+      say=("Tại phiên chất vấn, một đại biểu chỉ ra: kế hoạch đầu tư công trung hạn đã duyệt khoảng tám phẩy hai triệu tỷ, chỉ bằng khoảng hai mươi mốt phần trăm tổng nhu cầu. "
+           "Khoảng ba mươi phẩy ba triệu tỷ còn lại phải huy động từ nơi khác. Và đại biểu nói thêm một câu rất quan trọng: nguồn vốn trung và dài hạn của nền kinh tế vẫn phụ thuộc chủ yếu vào ngân hàng.")),
  # ---------------- CHƯƠNG 2 ----------------
  dict(k='chat', ch='Chương 2 – Tiền xây cao tốc đến từ đâu?', cap=('"TIỀN XÂY CAO TỐC', 'CÓ PHẦN SỔ TIẾT KIỆM CỦA EM?"'), cols=CR, moc=True, chat=dict(ten='Anh Phong', tv='Đang hoạt động', gio='20:40', mau=G_, msgs=[
         ('Anh Phong', 'Nhà thầu bên anh vay ngân hàng để làm gói này'),
@@ -62,7 +62,7 @@ S = [
         ('Anh Phong', 'Thì từ tiền gửi của những người như em'),
         ('me', 'Vậy cao tốc có phần sổ tiết kiệm của em à?')]),
       say=("Chị Hạnh hỏi chồng gói thầu cao tốc lấy tiền đâu ra. Anh Phong kể nhà thầu của anh vay ngân hàng để làm. Chị hỏi tiếp: vậy ngân hàng lấy tiền đâu cho vay. "
-           "Anh trả lời gọn: thì từ tiền gửi của những người như em. Chị Hạnh khựng lại: vậy con đường anh đang làm có một phần là sổ tiết kiệm của em sao?")),
+           "Anh trả lời gọn: thì từ tiền gửi của những người như em. Chị Hạnh khựng lại: vậy con đường anh đang làm có cả tiền trong sổ tiết kiệm của em sao?")),
  dict(k='cards', anh=HN, cap=('NGÂN HÀNG GÁNH HƠN 50%', 'CỔ PHIẾU, TRÁI PHIẾU CHỈ 15%'), cols=CR, moc=True,
       cards=[('Trên 50%', 'Vốn nền kinh tế từ ngân hàng', 'Từ năm 2020 tới nay'), ('14 đến 15%', 'Từ cổ phiếu và trái phiếu', 'Chưa tính trái phiếu Chính phủ'), ('28 đến 30%', 'Mục tiêu thị trường vốn', 'Đến năm 2030')],
       say=("Đúng là như vậy. Theo chuyên gia kinh tế trưởng một ngân hàng lớn, từ năm 2020 tới nay, hơn năm mươi phần trăm nguồn vốn của nền kinh tế đi qua ngân hàng. "
@@ -111,7 +111,7 @@ S = [
              ('Giá cả 5%, không phải 20%', GREEN),
              ('Có mục tiêu thị trường vốn', GREEN)],
       say=("Đặt hai thời điểm cạnh nhau cho công bằng. Giống thứ nhất: tín dụng tăng nhanh hơn tiền gửi và nhanh hơn kinh tế. Giống thứ hai: tiền ngắn hạn vẫn đang nuôi dự án dài hạn. "
-           "Khác thứ nhất: giá cả hiện tăng khoảng năm phần trăm, chưa phải hai mươi phần trăm. Khác thứ hai: lần này có mục tiêu rõ là kéo thị trường vốn lên gánh một phần ba. "
+           "Khác thứ nhất: giá cả hiện tăng khoảng năm phần trăm, chưa phải hai mươi phần trăm. Khác thứ hai: lần này có mục tiêu rõ là kéo thị trường vốn lên gánh khoảng ba mươi phần trăm. "
            "Nghĩa là rủi ro đã được gọi tên. Chưa thành cơn bão, nhưng chưa, không có nghĩa là không thể.")),
  # ---------------- CHƯƠNG 5 ----------------
  dict(k='chat', ch='Chương 5 – Tiền nhà mình nên đứng ở đâu?', cap=('"MÌNH GÓP VỐN CHO CẢ NƯỚC', 'THÌ CŨNG PHẢI ĐƯỢC TRẢ CÔNG"'), cols=CC, moc=True, chat=dict(ten='Anh Phong', tv='Đang hoạt động', gio='22:10', mau=G_, msgs=[
@@ -124,7 +124,7 @@ S = [
  dict(k='cards', anh=SGD, cap=('3 CON ĐƯỜNG CỦA ĐỒNG TIỀN', 'MỖI ĐƯỜNG MỘT RỦI RO'), cols=CC, moc=True,
       cards=[('5,4%', 'Gửi ngân hàng 12 tháng', 'An toàn, lãi thật thấp'), ('Cổ phiếu', 'Làm chủ một phần doanh nghiệp', 'Lời lỗ theo doanh nghiệp'), ('Trái phiếu', 'Cho doanh nghiệp vay', 'Phải xem kỹ ai vay')],
       say=("Có ba con đường chính để đồng tiền nhà mình tham gia vào ba mươi tám phẩy năm triệu tỷ kia. Một: gửi ngân hàng như hiện nay, an toàn nhất nhưng lãi thật thấp. "
-           "Hai: cổ phiếu, tức là làm chủ một phần doanh nghiệp đang hưởng lợi từ làn sóng đầu tư, lời lỗ đi theo kết quả kinh doanh của doanh nghiệp đó. "
+           "Hai: cổ phiếu, tức là trở thành đồng sở hữu doanh nghiệp đang hưởng lợi từ làn sóng đầu tư, lời lỗ đi theo kết quả kinh doanh của doanh nghiệp đó. "
            "Ba: trái phiếu, tức là cho doanh nghiệp vay, lãi cao hơn nhưng phải xem kỹ ai đang vay và lấy gì trả. Không có con đường nào vừa lãi cao vừa không rủi ro.")),
  dict(k='chat', cap=('KẾ HOẠCH NHÀ CHỊ HẠNH', 'CHIA KỲ HẠN, CHIA KÊNH'), cols=CC, moc=True, chat=dict(ten='Anh Phong', tv='Đang hoạt động', gio='22:35', mau=G_, msgs=[
         ('me', 'Giữ 6 tháng chi tiêu ở sổ ngắn hạn'),
@@ -132,7 +132,7 @@ S = [
         ('me', 'Một phần nhỏ học dần kênh khác'),
         ('Anh Phong', 'Mỗi năm xem lại lãi thật một lần')]),
       say=("Cuối cùng hai vợ chồng thống nhất: giữ đủ sáu tháng chi tiêu ở sổ ngắn hạn để không bao giờ phải rút gấp. Phần còn lại chia ra vài kỳ hạn khác nhau. "
-           "Một phần nhỏ, chị dành để học dần một kênh khác, không dồn hết một lần. Và mỗi năm, hai vợ chồng ngồi lại tính lãi thật một lần.")),
+           "Một khoản nhỏ, chị dành để học dần một kênh khác, không dồn hết một lần. Và mỗi năm, hai vợ chồng ngồi lại tính lãi thật một lần.")),
  dict(k='checklist', anh=TP, cap=('PHÉP THỬ CỦA ANH CHỊ', 'LÃI THẬT NHÀ MÌNH BAO NHIÊU?'), cols=CC, moc=True,
       items=[('Âm: tiền đang nghèo đi', RED),
              ('Từ 0 đến 2 điểm: giữ được giá', GOLD),
@@ -152,8 +152,8 @@ S = [
         ('Anh Phong', 'Đường anh làm có một phần tiền của em đấy'),
         ('me', 'Thì em cũng phải được lợi từ nó chứ'),
         ('Anh Phong', 'Ừ, từ giờ mình để tiền làm việc cho mình')]),
-      say=("Gần nửa đêm, anh Phong nhắn từ công trường: con đường anh làm có một phần tiền của em đấy. Chị Hạnh trả lời: thì em cũng phải được lợi từ nó chứ. "
-           "Ba mươi tám phẩy năm triệu tỷ không phải con số xa xôi trên báo. Một phần trong đó là tiền tiết kiệm của rất nhiều gia đình như nhà chị Hạnh. Câu hỏi chỉ là: mình góp vốn một cách thụ động, hay có tính toán.")),
+      say=("Gần nửa đêm, anh Phong nhắn từ công trường: con đường anh làm có cả tiền của em trong đó đấy. Chị Hạnh trả lời: thì em cũng phải được lợi từ nó chứ. "
+           "Con số ba mươi tám phẩy năm triệu tỷ trên báo nghe rất xa xôi. Nhưng trong đó có tiền tiết kiệm của rất nhiều gia đình như nhà chị Hạnh. Câu hỏi chỉ là: mình góp vốn một cách thụ động, hay có tính toán.")),
  dict(k='end', cap=('38,5 TRIỆU TỶ', 'TIỀN NHÀ ANH CHỊ Ở ĐÂU?'), cols=CC,
       say=("Còn anh chị thì sao: lãi thật của tiền nhà mình đang âm, đang hòa, hay đang được trả công? Kể cho em và mọi người ở phần bình luận nhé. "
            "Nếu thấy video hữu ích, anh chị đăng ký kênh để xem những câu hỏi lớn tiếp theo.")),

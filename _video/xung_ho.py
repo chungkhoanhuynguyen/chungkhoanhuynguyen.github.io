@@ -10,7 +10,7 @@ QUY = [
     (r"\btôi\b", "em"), (r"\bTôi\b", "Em"),
     (r"\bchúng mình\b", "chúng em"), (r"\bChúng mình\b", "Chúng em"),
     # "mình" tự xưng -> "em"; giữ nghĩa phản thân ("của mình", "riêng mình", "tự mình", "bản thân mình", "một mình")
-    (r"(?<!của )(?<!riêng )(?<!tự )(?<!thân )(?<!một )(?<!cho )(?<!biết )(?<!nghĩ )(?<!hỏi )(?<!ra )(?<!thấy )(?<!cứu )(?<!giúp )(?<!với )(?<!về )(?<!tin )(?<!khi )(?<!nếu )(?<!Nếu )(?<!lúc )(?<!để )(?<!rằng )(?<!là )\bmình\b(?=\s+(sẽ|đã|đang|vừa|cùng|đi|nói|kể|chọn|giải thích|mổ xẻ|đọc|phân tích|xem|làm|tóm|tổng|luôn|chỉ|có|muốn|gửi|để|hay|thường|nhấn|so|nhắc|tính|lấy|dùng|bắt|ghi|thấy|tin|nghĩ|cho|hỏi|trả|nhìn|lật|mở|đếm|liệt|dừng|quay|thử|thêm|bàn|đưa|rút|trình bày|tổng hợp))", "em"),
+    (r"(?<!của )(?<!riêng )(?<!tự )(?<!thân )(?<!một )(?<!cho )(?<!biết )(?<!nghĩ )(?<!hỏi )(?<!ra )(?<!thấy )(?<!cứu )(?<!giúp )(?<!với )(?<!về )(?<!tin )(?<!khi )(?<!nếu )(?<!Nếu )(?<!lúc )(?<!để )(?<!rằng )(?<!là )(?<!nhà )(?<!Nhà )(?<!túi )(?<!nước )(?<!tiền )\bmình\b(?=\s+(sẽ|đã|đang|vừa|cùng|đi|nói|kể|chọn|giải thích|mổ xẻ|đọc|phân tích|xem|làm|tóm|tổng|luôn|chỉ|có|muốn|gửi|để|hay|thường|nhấn|so|nhắc|tính|lấy|dùng|bắt|ghi|thấy|tin|nghĩ|cho|hỏi|trả|nhìn|lật|mở|đếm|liệt|dừng|quay|thử|thêm|bàn|đưa|rút|trình bày|tổng hợp))", "em"),
     (r"(?<![\w])Mình\b(?=\s+(sẽ|đã|đang|vừa|cùng|đi|nói|kể|chọn|giải thích|mổ xẻ|đọc|phân tích|xem|làm|tóm|tổng|luôn|chỉ|có|muốn|gửi|để|hay|thường|nhấn|so|nhắc|tính|lấy|dùng|bắt|ghi|thấy|tin|nghĩ|cho|hỏi|trả|nhìn|lật|mở|đếm|liệt|dừng|quay|thử|thêm|bàn|đưa|rút|trình bày|tổng hợp))", "Em"),
     (r"\b(video này|bài này|phần này|hôm nay) mình\b", r"\1 em"),
     (r"\banh chị anh chị\b", "anh chị"),

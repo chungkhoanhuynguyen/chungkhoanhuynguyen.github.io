@@ -1,7 +1,7 @@
 | # | loại | hình (thẻ form cũ) | cảm xúc | tiếng động |
 |---|---|---|---|---|
-| 1 | the/noti | MỸ SẮP TĂNG LÃI SUẤT / LẦN TRƯỚC VN-INDEX MẤT 33% | tò mò | chuông thông báo |
-| 2 | the/noti | MỸ SẮP TĂNG LÃI SUẤT / LẦN TRƯỚC VN-INDEX MẤT 33% | tò mò | chuông thông báo |
+| 1 | the/noti | MỸ SẮP TĂNG LÃI SUẤT / LẦN TRƯỚC VN-INDEX MẤT 32,8% | tò mò | chuông thông báo |
+| 2 | the/noti | MỸ SẮP TĂNG LÃI SUẤT / LẦN TRƯỚC VN-INDEX MẤT 32,8% | tò mò | chuông thông báo |
 | 3 | the/bignum | NĂM 2022 MỸ TĂNG LÃI SUẤT / VN-INDEX MẤT 32,8% | sốc | trống nhấn |
 | 4 | the/chat | "XĂNG BÊN NÀY ĐẮT HƠN / NĂM NGOÁI HƠN 1/3" | tâm sự | tiếng gõ phím |
 | 5 | the/giay | LẠM PHÁT MỸ / CHƯA CHỊU HẠ | căng | lật giấy |
