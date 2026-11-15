@@ -5195,143 +5195,262 @@
   "slug": "gio-giao-dich-chung-khoan",
   "kw": "giờ giao dịch chứng khoán",
   "grp": 2,
-  "title": "Giờ giao dịch chứng khoán Việt Nam: lịch phiên HOSE, HNX, UPCoM",
-  "desc": "Giờ giao dịch chứng khoán Việt Nam trên HOSE, HNX, UPCoM: phiên ATO, khớp lệnh liên tục, nghỉ trưa, ATC, thỏa thuận. Ngày nào thị trường nghỉ.",
+  "title": "Giờ giao dịch chứng khoán: lịch phiên và ngày nghỉ 2026–2027",
+  "desc": "Giờ giao dịch HOSE, HNX, UPCoM từng phiên ATO, liên tục, ATC; lịch nghỉ 24/11/2026, Tết 2027; cổ phiếu HNX chuyển sang HOSE từ 28/12/2026.",
   "body": [
    [
     "p",
-    "Thị trường chứng khoán Việt Nam giao dịch từ <b>thứ Hai đến thứ Sáu</b>, nghỉ thứ Bảy, Chủ nhật và các ngày lễ theo quy định. Mỗi ngày chia thành nhiều phiên với cách khớp lệnh khác nhau."
+    "Chiều thứ Sáu 13/2/2026, chị Hạnh đặt mua cổ phiếu lúc 14:50 vì nghĩ \"vẫn còn trong giờ\". Lệnh không khớp. Hôm đó là phiên cuối trước Tết, và thị trường nghỉ liền <b>10 ngày</b>, tới thứ Hai 23/2 mới mở lại. Chị lỡ mất phiên mình muốn, chỉ vì nhầm 5 phút."
+   ],
+   [
+    "p",
+    "Giờ giao dịch nghe đơn giản, nhưng mỗi sàn mỗi phiên khớp lệnh một kiểu, và cuối năm 2026 còn có hai thay đổi lớn: thị trường nghỉ thêm ngày <b>24/11</b>, và cổ phiếu niêm yết trên HNX <b>chuyển sang HOSE từ 28/12/2026</b>. Em gom hết vào một bài để anh chị tra nhanh."
    ],
    [
     "h2",
-    "Sàn HOSE"
+    "Mỗi ngày thị trường chạy những phiên nào?"
    ],
    [
-    "ul",
+    "table",
     [
-     "9:00 – 9:15: phiên mở cửa (ATO), khớp lệnh định kỳ một lần để ra giá mở cửa.",
-     "9:15 – 11:30: khớp lệnh liên tục buổi sáng.",
-     "11:30 – 13:00: nghỉ trưa, vẫn đặt lệnh chờ được.",
-     "13:00 – 14:30: khớp lệnh liên tục buổi chiều.",
-     "14:30 – 14:45: phiên đóng cửa (ATC), ra giá đóng cửa.",
-     "14:45 – 15:00: giao dịch thỏa thuận."
-    ]
-   ],
-   [
-    "h2",
-    "Sàn HNX"
-   ],
-   [
-    "ul",
-    [
-     "9:00 – 11:30: khớp lệnh liên tục buổi sáng (không có phiên ATO).",
-     "13:00 – 14:30: khớp lệnh liên tục buổi chiều.",
-     "14:30 – 14:45: phiên đóng cửa (ATC).",
-     "14:45 – 15:00: phiên sau giờ (lệnh PLO) và thỏa thuận."
-    ]
-   ],
-   [
-    "h2",
-    "Sàn UPCoM"
-   ],
-   [
-    "ul",
-    [
-     "9:00 – 11:30 và 13:00 – 15:00: khớp lệnh liên tục.",
-     "Giá tham chiếu ngày hôm sau là giá bình quân gia quyền trong ngày."
+     [
+      "Phiên",
+      "HOSE",
+      "HNX",
+      "UPCoM"
+     ],
+     [
+      "Mở cửa (ATO)",
+      "9:00–9:15",
+      "Không có",
+      "Không có"
+     ],
+     [
+      "Liên tục sáng",
+      "9:15–11:30",
+      "9:00–11:30",
+      "9:00–11:30"
+     ],
+     [
+      "Nghỉ trưa",
+      "11:30–13:00",
+      "11:30–13:00",
+      "11:30–13:00"
+     ],
+     [
+      "Liên tục chiều",
+      "13:00–14:30",
+      "13:00–14:30",
+      "13:00–15:00"
+     ],
+     [
+      "Đóng cửa (ATC)",
+      "14:30–14:45",
+      "14:30–14:45",
+      "Không có"
+     ],
+     [
+      "Sau 14:45",
+      "Thỏa thuận<br>tới 15:00",
+      "Sau giờ<br>tới 15:00",
+      "—"
+     ]
     ]
    ],
    [
     "p",
-    "Lịch trên là lịch phổ biến; Sở Giao dịch có thể điều chỉnh khi thay đổi hệ thống, anh chị nên xem thông báo trên ứng dụng của công ty chứng khoán."
+    "Thị trường mở <b>thứ Hai đến thứ Sáu</b>. Giao dịch thỏa thuận (lô lớn giữa hai bên) chạy song song trong giờ. Trên HNX, phiên sau giờ 14:45–15:00 chỉ nhận lệnh giới hạn LO từ khi chạy hệ thống KRX. Lệnh đặt lúc nghỉ trưa vẫn được nhận và chờ tới 13:00."
+   ],
+   [
+    "h2",
+    "ATO, liên tục, ATC khác nhau thế nào?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Khớp lệnh liên tục:</b> lệnh mua gặp lệnh bán phù hợp là khớp ngay, giá nhảy từng giây. Đây là lúc anh chị nhìn thấy giá thật để đặt lệnh giới hạn (LO).",
+     "<b>ATO (mở cửa) và ATC (đóng cửa):</b> gom mọi lệnh trong 15 phút rồi khớp <b>một lần</b> ở một mức giá, mức giá khớp được nhiều cổ phiếu nhất. Giá đóng cửa của HOSE và HNX chính là giá ATC.",
+     "<b>UPCoM không có ATO/ATC:</b> giá tham chiếu hôm sau là giá bình quân gia quyền cả ngày, nên một lệnh lớn lúc 14:59 không kéo được giá tham chiếu như trên HOSE."
+    ]
+   ],
+   [
+    "h2",
+    "Thay đổi lớn: cổ phiếu HNX chuyển sang HOSE từ 28/12/2026"
+   ],
+   [
+    "p",
+    "Theo thông báo của Sở Giao dịch Chứng khoán Việt Nam ngày 1/10/2026 (căn cứ Thông tư 139/2025/TT-BTC):"
+   ],
+   [
+    "ul",
+    [
+     "<b>23/12/2026</b> (thứ Tư): phiên cuối cùng cổ phiếu niêm yết giao dịch trên HNX.",
+     "<b>24–25/12/2026</b>: các cổ phiếu này tạm ngừng giao dịch để chuyển giao. Các thị trường khác do HNX tổ chức vẫn chạy bình thường.",
+     "<b>28/12/2026</b> (thứ Hai): giao dịch chính thức tại HOSE, nghĩa là có phiên ATO, theo giờ và biên độ của HOSE."
+    ]
+   ],
+   [
+    "p",
+    "Nếu anh chị đang giữ mã niêm yết trên HNX, cần nhớ hai điều: không bán được trong hai ngày 24–25/12, và từ 28/12 biên độ dao động trong phiên đổi từ ±10% (HNX) sang ±7% (HOSE). So sánh ba sàn bằng số có ở bài <a href=\"/f0/san-hose-hnx-upcom-la-gi.html\">sàn HOSE, HNX, UPCoM khác nhau thế nào</a>."
+   ],
+   [
+    "h2",
+    "Thị trường nghỉ những ngày nào cuối 2026 và năm 2027?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Dịp",
+      "Ngày nghỉ",
+      "Giao dịch lại"
+     ],
+     [
+      "Ngày Văn hóa Việt Nam",
+      "Thứ Ba<br>24/11/2026",
+      "Thứ Tư<br>25/11/2026"
+     ],
+     [
+      "Cổ phiếu HNX<br>chuyển sàn",
+      "24–25/12/2026<br>(chỉ mã HNX)",
+      "28/12/2026<br>tại HOSE"
+     ],
+     [
+      "Tết Nguyên đán<br>Đinh Mùi",
+      "Dự kiến 4/2 –<br>10/2/2027",
+      "Dự kiến<br>11/2/2027"
+     ],
+     [
+      "Quốc khánh 2027",
+      "Dự kiến 2/9 –<br>3/9/2027",
+      "Dự kiến<br>6/9/2027"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "<small>Ngày 24/11/2026: HNX thông báo 10/11 và HOSE thông báo 11/11/2026 (CafeF 11/11/2026). Tết và Quốc khánh 2027: lịch nghỉ của cán bộ, công chức theo công văn 10065/VPCP-KGVX (Vietnamplus 2/10/2026); thị trường thường nghỉ theo lịch này nhưng ngày chính thức do Sở Giao dịch công bố trước kỳ nghỉ. Tết Dương lịch, Giỗ Tổ, 30/4–1/5 năm 2027: chờ thông báo.</small>"
+   ],
+   [
+    "h2",
+    "Nghỉ dài thì T+2 bị đẩy lùi bao lâu?"
+   ],
+   [
+    "p",
+    "Cổ phiếu mua ngày T về tài khoản và bán được vào chiều <b>T+2</b>, tính theo <b>ngày giao dịch</b>, không tính ngày nghỉ (xem <a href=\"/f0/t-2-la-gi.html\">T+2 là gì</a>). Ví dụ nếu Tết 2027 nghỉ đúng như dự kiến: mua thứ Tư 3/2/2027 → T+1 là thứ Năm 11/2 → T+2 là <b>thứ Sáu 12/2/2027</b>. Tiền và cổ phiếu \"nằm im\" 9 ngày lịch. Ai cần tiền cho Tết thì phải bán sớm hơn ít nhất hai phiên."
+   ],
+   [
+    "h2",
+    "Phiên đầu sau Tết có hay tăng không?"
+   ],
+   [
+    "p",
+    "Nhiều người tin \"phiên khai xuân luôn xanh\". Em kiểm bằng giá thật của 6 mã lớn trên HOSE, so giá đóng cửa phiên cuối trước Tết với phiên đầu sau Tết:"
+   ],
+   [
+    "table",
+    [
+     [
+      "Mã",
+      "Tết 2024<br>(7/2→15/2)",
+      "Tết 2025<br>(24/1→3/2)",
+      "Tết 2026<br>(13/2→23/2)"
+     ],
+     [
+      "VCB",
+      "−0,1%",
+      "−1,1%",
+      "+3,1%"
+     ],
+     [
+      "FPT",
+      "−0,9%",
+      "−5,1%",
+      "−1,9%"
+     ],
+     [
+      "HPG",
+      "+1,9%",
+      "−0,6%",
+      "+2,4%"
+     ],
+     [
+      "MWG",
+      "−1,6%",
+      "−0,8%",
+      "−0,9%"
+     ],
+     [
+      "SSI",
+      "0,0%",
+      "−1,8%",
+      "+0,6%"
+     ],
+     [
+      "VNM",
+      "0,0%",
+      "−2,7%",
+      "+1,6%"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Kết quả: 18 lần đo thì 5 lần tăng, 11 lần giảm, 2 lần đứng giá. Không có quy luật \"lì xì đầu năm\" nào đủ chắc để đặt cược. <small>Giá đóng cửa điều chỉnh, chưa gồm cổ tức, thuế, phí; em tự tính; quá khứ không bảo đảm tương lai.</small>"
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>Đặt lệnh sau 14:45 trên HOSE rồi tưởng đã mua.</b> Sau ATC chỉ còn giao dịch thỏa thuận; lệnh thường chỉ là lệnh chờ phiên hôm sau (nếu công ty chứng khoán cho đặt trước).",
+     "<b>Đặt lệnh ATC để \"chắc khớp\" rồi mua đúng giá cao nhất ngày.</b> ATC khớp một lần ở một giá, anh chị không biết trước giá đó là bao nhiêu.",
+     "<b>Quên ngày nghỉ khi cần tiền.</b> Bán thứ Sáu trước kỳ nghỉ dài, tiền về T+2 có thể rơi vào sau kỳ nghỉ cả tuần."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist giờ giao dịch cho người mới"
+   ],
+   [
+    "ul",
+    [
+     "Mua bán trong phiên liên tục bằng lệnh giới hạn LO, khi đã nhìn thấy giá khớp.",
+     "Muốn chắc bán được trong ngày: đặt trước 14:30 trên HOSE/HNX, trước 15:00 trên UPCoM.",
+     "Trước kỳ nghỉ dài: đếm ngày T+2 theo phiên giao dịch, không theo ngày lịch.",
+     "Đang giữ mã HNX: ghi lịch 23/12 (phiên cuối ở HNX) và 28/12/2026 (bắt đầu ở HOSE, biên độ ±7%).",
+     "Tra giá, lợi nhuận từng quý của mã trước khi đặt lệnh tại <a href=\"/ma/\">trang tra mã</a> và <a href=\"/ket-qua-kinh-doanh-quy.html\">kết quả kinh doanh quý</a>."
+    ]
+   ],
+   [
+    "p",
+    "<small>Nguồn: Sở Giao dịch Chứng khoán Việt Nam (Thị trường Tài chính Tiền tệ 1/10/2026); CafeF 11/11/2026; Vietnamplus 2/10/2026; giá cổ phiếu từ dữ liệu giá điều chỉnh của web. Bài chia sẻ kiến thức, không phải khuyến nghị mua bán.</small>"
    ]
   ],
   "faq": [
    [
-    "Thứ Bảy có giao dịch chứng khoán không?",
-    "Không. Thị trường chỉ giao dịch từ thứ Hai đến thứ Sáu, trừ ngày lễ."
+    "Ngày 24/11/2026 chứng khoán có nghỉ không?",
+    "Có. HOSE và HNX nghỉ giao dịch thứ Ba 24/11/2026 dịp Ngày Văn hóa Việt Nam, giao dịch lại thứ Tư 25/11/2026."
+   ],
+   [
+    "Cổ phiếu HNX chuyển sang HOSE khi nào?",
+    "Phiên cuối trên HNX là 23/12/2026, tạm ngừng 24–25/12, giao dịch tại HOSE từ 28/12/2026 theo thông báo của Sở Giao dịch Chứng khoán Việt Nam."
    ],
    [
     "Đặt lệnh lúc nghỉ trưa có được không?",
-    "Được. Lệnh sẽ chờ và tham gia khớp khi phiên chiều bắt đầu lúc 13:00."
-   ],
-   [
-    "Phiên ATC là gì?",
-    "Là phiên khớp lệnh định kỳ cuối ngày để xác định giá đóng cửa, từ 14:30 đến 14:45 trên HOSE và HNX."
+    "Được. Lệnh được nhận và chờ, tham gia khớp khi phiên chiều bắt đầu lúc 13:00."
    ]
   ],
   "rel": [
-   "cac-loai-lenh-chung-khoan",
+   "san-hose-hnx-upcom-la-gi",
    "t-2-la-gi",
+   "cac-loai-lenh-chung-khoan",
    "cach-doc-bang-gia-chung-khoan"
   ],
-  "add": [
-   [
-    "h2",
-    "Mẹo cho người mới"
-   ],
-   [
-    "ul",
-    [
-     "Phiên ATO và ATC giá có thể nhảy mạnh, người mới nên dùng lệnh giới hạn (LO) để không mua đắt.",
-     "15 phút đầu phiên sáng thường biến động nhiều nhất, không nhất thiết phải vào lệnh ngay.",
-     "Muốn bán chắc chắn trong ngày thì nên đặt trước 14:30."
-    ]
-   ],
-   [
-    "h2",
-    "Bảng tóm tắt giờ giao dịch chứng khoán Việt Nam"
-   ],
-   [
-    "ul",
-    [
-     "HOSE: ATO 9:00–9:15 · liên tục 9:15–11:30 và 13:00–14:30 · ATC 14:30–14:45 · thỏa thuận tới 15:00.",
-     "HNX: liên tục 9:00–11:30 và 13:00–14:30 · ATC 14:30–14:45 · sau giờ (PLO) 14:45–15:00.",
-     "UPCoM: liên tục 9:00–11:30 và 13:00–15:00, không có ATO/ATC.",
-     "Nghỉ trưa 11:30–13:00 ở cả ba sàn; lệnh đặt lúc nghỉ trưa sẽ chờ phiên chiều."
-    ]
-   ],
-   [
-    "h2",
-    "Khi nào đặt lệnh để dễ khớp nhất?"
-   ],
-   [
-    "p",
-    "Muốn <b>mua giá tốt</b>, người mới thường đặt lệnh giới hạn (LO) trong phiên liên tục, khi đã thấy giá giao dịch thực tế. Đặt lệnh ATO/ATC thì chắc khớp hơn nhưng không kiểm soát được giá. Muốn <b>bán chắc chắn trong ngày</b>, hãy đặt trước 14:30 trên HOSE/HNX vì sau đó chỉ còn phiên định kỳ cuối ngày."
-   ],
-   [
-    "h2",
-    "Những ngày thị trường chứng khoán nghỉ"
-   ],
-   [
-    "ul",
-    [
-     "Thứ Bảy, Chủ nhật.",
-     "Tết Dương lịch, Tết Nguyên đán, Giỗ Tổ Hùng Vương, 30/4 – 1/5, Quốc khánh 2/9 và các ngày nghỉ bù theo lịch của Bộ Lao động.",
-     "Lịch nghỉ cụ thể từng năm do Sở Giao dịch Chứng khoán công bố trước kỳ nghỉ; ứng dụng của công ty chứng khoán sẽ thông báo."
-    ]
-   ],
-   [
-    "h2",
-    "Giờ giao dịch và thời gian tiền về (T+2)"
-   ],
-   [
-    "p",
-    "Mua cổ phiếu hôm nay (ngày T) thì cổ phiếu về tài khoản chiều ngày làm việc thứ hai sau đó (T+2) và mới bán được từ lúc đó. Bán cổ phiếu ngày T thì tiền về tài khoản ngày T+2. Ngày nghỉ lễ không tính vào T+2, nên mua trước kỳ nghỉ dài cần tính thêm số ngày chờ."
-   ],
-   [
-    "h2",
-    "Lỗi người mới hay gặp về giờ giao dịch"
-   ],
-   [
-    "ul",
-    [
-     "Đặt lệnh sau 15:00 rồi tưởng đã mua: lệnh chỉ là lệnh chờ cho phiên hôm sau (nếu công ty chứng khoán cho đặt trước).",
-     "Đặt lệnh ATC rồi mua đúng giá cao nhất ngày vì phiên cuối biến động mạnh.",
-     "Quên UPCoM khớp đến 15:00 và không có ATC như HOSE."
-    ]
-   ]
-  ]
+  "add": [],
+  "mod": "2026-11-15"
  },
  {
   "slug": "vn30-la-gi",
@@ -7324,6 +7443,10 @@
     "Việt Nam có ba nơi giao dịch cổ phiếu: <b>HOSE</b> (Sở Giao dịch Chứng khoán TP.HCM), <b>HNX</b> (Sở Giao dịch Chứng khoán Hà Nội) và <b>UPCoM</b> (thị trường của công ty đại chúng chưa niêm yết, do HNX vận hành). Em so sánh bằng số liệu thật của hơn 1.500 mã để anh chị thấy khác biệt rõ nhất."
    ],
    [
+    "p",
+    "<b>Cập nhật quan trọng:</b> theo Sở Giao dịch Chứng khoán Việt Nam (thông báo 1/10/2026), toàn bộ cổ phiếu niêm yết trên HNX giao dịch phiên cuối tại HNX ngày <b>23/12/2026</b>, tạm ngừng 24–25/12 và chuyển sang giao dịch tại <b>HOSE từ 28/12/2026</b> (căn cứ Thông tư 139/2025/TT-BTC). Bảng dưới là số liệu trước khi chuyển; giờ giao dịch mới xem tại <a href=\"/f0/gio-giao-dich-chung-khoan.html\">giờ giao dịch chứng khoán</a>."
+   ],
+   [
     "h2",
     "Ba sàn khác nhau bao nhiêu, nhìn bằng số?"
    ],
@@ -7513,7 +7636,7 @@
    "co-phieu-la-gi",
    "cat-lo-la-gi"
   ],
-  "mod": "2026-11-14"
+  "mod": "2026-11-15"
  },
  {
   "slug": "macd-la-gi",
@@ -10963,6 +11086,10 @@
     "<b>Bắt đáy cổ phiếu</b> là mua vào khi giá đã giảm sâu, với kỳ vọng mua được gần mức thấp nhất trước khi giá đảo chiều đi lên. Ai cũng muốn mua ở đáy, nhưng đáy chỉ được xác nhận <b>sau khi</b> giá đã tăng trở lại; lúc đang giảm, không ai biết chắc mức nào là đáy. Vì vậy với người mới, bắt đáy không phải là đoán đúng một con số, mà là cách mua khi giá thấp nhưng vẫn kiểm soát được khoản lỗ nếu đoán sai."
    ],
    [
+    "p",
+    "Ví dụ thật: tháng 1/2022, FLC giảm từ 22.550 xuống 13.000 đồng chỉ sau 8 phiên, nhiều người gọi là \"đáy\". Tháng 9/2022 giá còn 3.570 đồng và cổ phiếu bị đình chỉ giao dịch. Em kể chi tiết trong bài <a href=\"/f0/neo-gia-la-gi.html\">neo giá: vì sao cổ phiếu giảm 40% chưa chắc đã rẻ</a>."
+   ],
+   [
     "h2",
     "1. Vì sao bắt đáy hấp dẫn nhưng nguy hiểm?"
    ],
@@ -11103,10 +11230,12 @@
    ]
   ],
   "rel": [
+   "neo-gia-la-gi",
    "cat-lo-la-gi",
    "mua-trung-binh-gia-dca",
    "mo-hinh-hai-day-la-gi"
-  ]
+  ],
+  "mod": "2026-11-15"
  },
  {
   "slug": "fibonacci-thoai-lui-la-gi",
@@ -18936,6 +19065,10 @@
    ],
    [
     "p",
+    "Một trường hợp đã xảy ra: FLC bị đình chỉ giao dịch từ tháng 9/2022 và gần 710 triệu cổ phiếu bị huỷ niêm yết bắt buộc từ 20/2/2023, sau khi nhiều người \"bắt đáy\" vì thấy giá đã giảm hơn 40%. Diễn biến từng mốc giá có trong bài <a href=\"/f0/neo-gia-la-gi.html\">neo giá: vì sao cổ phiếu giảm 40% chưa chắc đã rẻ</a>."
+   ],
+   [
+    "p",
     "Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
    ]
   ],
@@ -18954,12 +19087,13 @@
    ]
   ],
   "rel": [
+   "neo-gia-la-gi",
    "co-phieu-bi-canh-bao-kiem-soat-han-che",
    "cach-doc-bao-cao-tai-chinh",
-   "dau-hieu-co-phieu-bi-lam-gia",
-   "ipo-va-niem-yet-la-gi"
+   "dau-hieu-co-phieu-bi-lam-gia"
   ],
-  "add": []
+  "add": [],
+  "mod": "2026-11-15"
  },
  {
   "slug": "cach-nhan-biet-tin-don-chung-khoan",
@@ -23402,6 +23536,10 @@
    ],
    [
     "p",
+    "Trước khi chọn kênh, anh chị nên biết mình đang tập trung đến đâu: theo khảo sát được Vietnambiz đưa tin 13/11/2026, khoảng 87% tài sản gia đình Việt đã nằm ở nhà đất. Phép thử tự soi cho gia đình có trong bài <a href=\"/f0/87-phan-tram-tai-san-nam-o-nha-dat.html\">87% tài sản gia đình Việt nằm ở nhà đất</a>."
+   ],
+   [
+    "p",
     "Nhiều gia đình giữ nhà để ở, dùng tiền tiết kiệm hằng tháng tích lũy cổ phiếu, rồi cân nhắc bất động sản đầu tư khi tài sản đủ lớn. Điều quan trọng là hiểu kênh mình chọn và giữ kỷ luật. Danh mục tích sản cổ phiếu ngân hàng tham khảo nằm trong <a href=\"/bao-cao-2026.html#tichsan\">báo cáo 2026</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
    ]
   ],
@@ -23420,13 +23558,14 @@
    ]
   ],
   "rel": [
+   "87-phan-tram-tai-san-nam-o-nha-dat",
    "tich-san-co-phieu-hay-gui-tiet-kiem",
    "gia-vang-va-chung-khoan",
-   "doc-bctc-cong-ty-bat-dong-san",
-   "margin-la-gi"
+   "doc-bctc-cong-ty-bat-dong-san"
   ],
   "add": [],
-  "grp": 7
+  "grp": 7,
+  "mod": "2026-11-15"
  },
  {
   "slug": "chi-phi-lai-vay-la-gi",
@@ -23978,7 +24117,7 @@
    ],
    [
     "p",
-    "Xem thêm <a href=\"/f0/ac-cam-thua-lo-la-gi.html\">ác cảm thua lỗ</a>, <a href=\"/f0/tam-ly-fomo-va-hoang-loan.html\">tâm lý FOMO và hoảng loạn</a> và <a href=\"/f0/stop-loss-bao-nhieu-phan-tram.html\">cắt lỗ</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+    "Bài này nói về cái neo là <b>giá vốn của chính mình</b>. Cái neo là <b>giá đỉnh cũ</b> (cổ phiếu \"đã giảm 40%\" nên tưởng rẻ) có ví dụ thật FLC 2022 trong bài <a href=\"/f0/neo-gia-la-gi.html\">neo giá: vì sao cổ phiếu giảm 40% chưa chắc đã rẻ</a>. Xem thêm <a href=\"/f0/ac-cam-thua-lo-la-gi.html\">ác cảm thua lỗ</a>, <a href=\"/f0/tam-ly-fomo-va-hoang-loan.html\">tâm lý FOMO và hoảng loạn</a> và <a href=\"/f0/stop-loss-bao-nhieu-phan-tram.html\">cắt lỗ</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
    ]
   ],
   "faq": [
@@ -23996,12 +24135,14 @@
    ]
   ],
   "rel": [
+   "neo-gia-la-gi",
    "ac-cam-thua-lo-la-gi",
    "tam-ly-fomo-va-hoang-loan",
    "nhat-ky-giao-dich"
   ],
   "add": [],
-  "grp": 5
+  "grp": 5,
+  "mod": "2026-11-15"
  },
  {
   "slug": "ac-cam-thua-lo-la-gi",
@@ -33150,6 +33291,10 @@
    ],
    [
     "p",
+    "Ba lằn ranh đỏ là chuyện của doanh nghiệp. Còn phía hộ gia đình: khảo sát được Vietnambiz đưa tin 13/11/2026 cho thấy khoảng 87% tài sản gia đình Việt nằm ở bất động sản, cao hơn Trung Quốc (khoảng 70%). Em so sánh hai nước bằng số thật trong bài <a href=\"/f0/87-phan-tram-tai-san-nam-o-nha-dat.html\">87% tài sản gia đình Việt nằm ở nhà đất</a>."
+   ],
+   [
+    "p",
     "Bài viết chỉ minh họa cách đọc số liệu, không phải khuyến nghị mua bán. Video kể lại câu chuyện Evergrande có trên kênh YouTube phụ Lịch sử & bài học thị trường."
    ]
   ],
@@ -33168,11 +33313,13 @@
    ]
   ],
   "rel": [
+   "87-phan-tram-tai-san-nam-o-nha-dat",
    "doc-bctc-cong-ty-bat-dong-san",
    "no-vay-tren-von-chu-so-huu",
    "vay-ngan-han-va-dai-han-la-gi",
    "dong-tien-kinh-doanh-la-gi"
-  ]
+  ],
+  "mod": "2026-11-15"
  },
  {
   "slug": "phien-giam-manh-nhat-vn-index-nen-lam-gi",
@@ -36915,7 +37062,7 @@
   "kw": "tài sản gia đình nằm ở bất động sản",
   "grp": 8,
   "date": "2026-11-15",
-  "title": "87% tài sản gia đình Việt nằm ở nhà đất: rủi ro gì, Trung Quốc đã ra sao?",
+  "title": "87% tài sản gia đình Việt ở nhà đất: có đi vết xe Trung Quốc?",
   "desc": "Khoảng 87% tài sản gia đình Việt nằm ở bất động sản, cao hơn Trung Quốc (khoảng 70%). Doanh số bán nhà Trung Quốc mất 60% so với 2021. Phép thử cho gia đình anh chị.",
   "body": [
    [
@@ -37225,7 +37372,7 @@
      "Ban lãnh đạo, cổ đông lớn đang mua vào hay bán ra?",
      "Báo cáo tài chính kiểm toán có công bố đúng hạn không? Chậm nộp là cờ đỏ lớn.",
      "Một lệnh bắt đáy không quá 10% số tiền đầu tư; viết ra mức chấp nhận sai trước khi mua (mốc tự đặt, không phải quy định).",
-     "Đọc thêm: <a href=\"/f0/bat-day-co-phieu-la-gi.html\">bắt đáy cổ phiếu là gì</a>, <a href=\"/f0/co-phieu-bi-huy-niem-yet-la-gi.html\">cổ phiếu bị huỷ niêm yết là gì</a>."
+     "Đọc thêm: <a href=\"/f0/bat-day-co-phieu-la-gi.html\">bắt đáy cổ phiếu là gì</a>, <a href=\"/f0/co-phieu-bi-huy-niem-yet-la-gi.html\">cổ phiếu bị huỷ niêm yết là gì</a>, và <a href=\"/f0/thien-kien-neo-gia-la-gi.html\">neo vào giá vốn của chính mình</a>."
     ]
    ],
    [
