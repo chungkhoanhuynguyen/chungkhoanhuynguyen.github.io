@@ -160,7 +160,7 @@ S = [
 ]
 import ql_post; S = ql_post.tach(S, max_tu=100)
 for c in S: c['say'] = lib.doc(c['say'])
-TIEU = 'Cần 38,5 Triệu Tỷ Cho 5 Năm: Tiền Ở Đâu Ra? Sổ Tiết Kiệm Của Bạn Đang Góp Vốn – Mà Lãi Thật Chỉ 0,3%'
+TIEU = 'Cần 38,5 Triệu Tỷ Cho 5 Năm: Tiền Ở Đâu Ra? Sổ Tiết Kiệm Đang Góp Vốn – Mà Lãi Thật Chỉ Còn 0,3%'
 MT = ("Việt Nam cần khoảng 38,5 triệu tỷ đồng vốn đầu tư cho 2026–2030, mỗi năm khoảng 7,7 triệu tỷ, bằng 55% GDP. Đầu tư công chỉ gánh khoảng 1/5, phần còn lại phần lớn đi qua ngân hàng – tức là từ tiền gửi tiết kiệm của người dân. "
       "Lãi gửi 12 tháng 5,4%, giá cả tăng 5,09%: lãi thật chỉ còn khoảng 0,3%. Lịch sử 2007–2011 cho thấy điều gì khi tín dụng chạy nhanh hơn tiền gửi? Câu chuyện của chị Hạnh, anh Phong và phép thử lãi thật cho chính gia đình anh chị.\n\n"
       "Nguồn số liệu:\n"
@@ -179,8 +179,8 @@ META = {KEY: dict(kenh='@chungkhoanhuynguyen', seri='Câu hỏi lớn', ngay='20
     tags=['38,5 triệu tỷ', 'vốn đầu tư', 'đầu tư công', 'hạ tầng Việt Nam', 'lãi suất tiết kiệm', 'lãi suất thực', 'tín dụng', 'lạm phát', 'kinh tế Việt Nam', 'vĩ mô'],
     bia_hook=['CẦN 38,5', 'TRIỆU TỶ???'], badge='VỐN CHO 5 NĂM TỚI',
     bia_anh='Ho Chi Minh City skyline night||Hanoi skyline night',
-    bia_hook_b=['LÃI 5,4%', 'THẬT CÒN 0,3%'], badge_b='SỔ TIẾT KIỆM CỦA BẠN',
-    bia_hook_c=['TÍN DỤNG', '146% GDP'], badge_c='TÍN DỤNG SO VỚI GDP',
+    bia_hook_b=['LÃI 5,4%', 'THẬT CÒN 0,3%'], badge_b='SỔ TIẾT KIỆM 12 THÁNG',
+    bia_hook_c=['TÍN DỤNG', '146% GDP'], badge_c='CUỐI NĂM 2024 LÀ 134%',
     reel_hook='CẦN 38,5 TRIỆU TỶ|TIỀN Ở ĐÂU RA???',
     fb_post=("Việt Nam cần 38,5 triệu tỷ đồng vốn cho 5 năm tới 🏗️\n\n👉 Đầu tư công chỉ gánh khoảng 1/5\n👉 Hơn 50% vốn nền kinh tế đi qua ngân hàng – tức là từ sổ tiết kiệm của chúng ta\n"
              "👉 Lãi gửi 12 tháng 5,4%, giá cả tăng 5,09%: lãi thật chỉ còn 0,3%\n\nTiền nhà anh chị đang được trả công hay đang nghèo đi?\n🎬 Xem đầy đủ: {LINK}"),
