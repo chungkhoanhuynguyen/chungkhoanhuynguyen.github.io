@@ -19,7 +19,7 @@ R = dict(key='RV1611FED', tieu_de='Mỹ quay lại tăng lãi suất: năm 2022 
     the=dict(loai='cot', tieu='NƯỚC MỸ, THÁNG 10/2026 (%)', nguon='Vietnam+ 11/11 và 14/11/2026', hang=[['Giá xăng', 37], ['Giá sản xuất', 6.5]], noi=[0], dv='%', max=40)),
   C('NVIDIA GIẢM 6 TUẦN', 'Cổ phiếu trí tuệ nhân tạo chao đảo. Giám đốc điều hành Nvidia từ chức, cổ phiếu có lúc giảm 13% trong phiên, giảm 6 tuần liền, chuỗi dài nhất từ năm 2012.',
     the=dict(loai='lon', tieu='NVIDIA', nguon='Vietnam+ 14/11/2026', dong=[['6 TUẦN', 130, 'do'], ['GIẢM LIÊN TIẾP', 60, 'trang']])),
-  C('ĐÔ LA MẠNH NHẤT', 'Đồng đô la mạnh lên. Chỉ số DXY lên 103,41 điểm, cao nhất từ tháng 4 năm 2025. Giá bán đô la ở một ngân hàng lớn tăng 130 đồng chỉ trong một tuần.',
+  C('ĐÔ LA MẠNH NHẤT', 'Kéo theo đó, đồng đô la mạnh lên rõ rệt. Chỉ số DXY lên 103,41 điểm, cao nhất từ tháng 4 năm 2025. Giá bán đô la ở một ngân hàng lớn tăng 130 đồng chỉ trong một tuần.',
     the=dict(loai='lon', tieu='CHỈ SỐ ĐÔ LA DXY', nguon='Hà Nội Mới 14/11/2026', dong=[['103,41', 130, 'vang'], ['CAO NHẤT TỪ 4/2025', 56, 'trang']])),
   C('MỸ TĂNG, VIỆT NAM GIẢM', 'Trong khi Mỹ tăng lãi suất, Ngân hàng Nhà nước lại đang thanh tra việc giảm lãi suất trong tháng 11. Hai hướng ngược nhau, áp lực dồn vào tỷ giá.',
     the=dict(loai='lon', tieu='HAI HƯỚNG NGƯỢC NHAU', nguon='Người Quan Sát 13/11/2026', dong=[['MỸ TĂNG', 100, 'do'], ['VIỆT NAM MUỐN GIẢM', 60, 'trang']])),
