@@ -73,27 +73,23 @@
     "loi_doc": "Đầu tư công đã duyệt khoảng tám phẩy hai mươi hai triệu tỷ, chỉ bằng một phần năm. Gần ba mươi triệu tỷ còn lại phải huy động từ nơi khác.",
     "the": {
      "loai": "cot",
-     "tieu": "38,5 TRIỆU TỶ GỒM (TRIỆU TỶ)",
-     "nguon": "VnBusiness 22/10/2026",
+     "tieu": "VỐN 2026 ĐẾN 2030 (TRIỆU TỶ)",
+     "nguon": "VietnamFinance 12/11/2026",
      "hang": [
       [
-       "Ngoài nhà nước",
-       20.4
+       "Tổng nhu cầu",
+       38.5
       ],
       [
-       "Nhà nước",
-       12.5
-      ],
-      [
-       "FDI",
-       5.6
+       "Đầu tư công",
+       8.22
       ]
      ],
      "noi": [
-      0
+      1
      ],
      "dv": "",
-     "max": 25
+     "max": 40
     }
    },
    {

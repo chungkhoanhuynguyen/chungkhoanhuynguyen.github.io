@@ -18,7 +18,7 @@ R = dict(key='RV1611VON', tieu_de='Cần 38,5 triệu tỷ cho 5 năm: hơn nử
   C('MỖI NĂM 55% GDP', 'Chia đều ra, mỗi năm khoảng 7,7 triệu tỷ, bằng 55% giá trị cả nền kinh tế làm ra trong một năm. Em tự tính.',
     the=dict(loai='lon', tieu='MỖI NĂM CẦN KHOẢNG', nguon='Em tự tính, GDP 4 quý tới quý 3/2026', dong=[['7,7 TRIỆU TỶ', 104, 'vang'], ['BẰNG 55% GDP', 60, 'trang']])),
   C('ĐẦU TƯ CÔNG CHỈ 1/5', 'Đầu tư công đã duyệt khoảng 8,22 triệu tỷ, chỉ bằng một phần năm. Gần 30 triệu tỷ còn lại phải huy động từ nơi khác.',
-    the=dict(loai='cot', tieu='38,5 TRIỆU TỶ GỒM (TRIỆU TỶ)', nguon='VnBusiness 22/10/2026', hang=[['Ngoài nhà nước', 20.4], ['Nhà nước', 12.5], ['FDI', 5.6]], noi=[0], dv='', max=25)),
+    the=dict(loai='cot', tieu='VỐN 2026 ĐẾN 2030 (TRIỆU TỶ)', nguon='VietnamFinance 12/11/2026', hang=[['Tổng nhu cầu', 38.5], ['Đầu tư công', 8.22]], noi=[1], dv='', max=40)),
   C('HƠN 50% QUA NGÂN HÀNG', 'Mà hơn một nửa vốn của nền kinh tế đang đi qua ngân hàng. Tức là phần lớn đến từ chính sổ tiết kiệm của người dân, được cho vay lại.',
     the=dict(loai='cot', tieu='NGUỒN VỐN NỀN KINH TẾ (%)', nguon='TS Cấn Văn Lực, VnBusiness 22/10/2026', hang=[['Ngân hàng', 50], ['Cổ phiếu, trái phiếu', 15]], noi=[0], dv='%', max=60)),
   C('80% LÀ TIỀN GỬI NGẮN HẠN', 'Khoảng 80% tiền gửi có kỳ hạn dưới 12 tháng, nhưng lại đang nuôi những dự án cần vốn mười, hai mươi năm.',
