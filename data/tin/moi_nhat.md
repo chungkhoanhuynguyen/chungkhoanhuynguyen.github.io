@@ -1,26 +1,29 @@
-# Tin nóng 2026-11-15 (tự động, 270 tin từ 6 nguồn) – NV1B chọn 1–2 tin điểm cao làm kênh C
+# Tin nóng 2026-11-16 (tự động, 270 tin từ 6 nguồn) – NV1B chọn 1–2 tin điểm cao làm kênh C
 
-- **[7] Thượng đỉnh Mỹ - Nga - Trung: Ông Trump muốn bàn hạt nhân, né vấn đề Ukraine và bê bối Nvidia** – Tuổi Trẻ Thế giới · 11/14/2026 12:40
-  Ông Trump sẽ thảo luận về việc cắt giảm vũ khí hạt nhân trong cuộc gặp với Nga và Trung Quốc ngày 19-11.
-  https://tuoitre.vn/thuong-dinh-my-nga-trung-ong-trump-muon-ban-hat-nhan-ne-van-de-ukraine-va-be-boi-nvidia-100261114122311683.htm
 - **[7] Mỹ bắn hạ 2 UAV tự sát của Iran, Tehran phát thông điệp mới về hạt nhân?** – Thanh Niên Thế giới · Sat, 14 Nov 26 0
   Quân đội Mỹ ngày 13.11 tuyên bố đã bắn hạ 2 máy bay không người lái (UAV) tấn công của Iran đang hướng về phía Bahrain.
   https://thanhnien.vn/my-ban-ha-2-uav-tu-sat-cua-iran-tehran-phat-thong-diep-moi-ve-hat-nhan-185261114073414402.htm
-- **[6] Mỹ lên tiếng trước tin Iran tấn công trạm radar cảnh báo sớm ở Bahrain** – Tuổi Trẻ Thế giới · 11/13/2026 10:07
-  Quân đội Mỹ bác bỏ tuyên bố của Lực lượng Vệ binh Cách mạng Hồi giáo Iran (IRGC) về việc đã tấn công một trạm radar cảnh báo sớm của Mỹ tại Bahrain.
-  https://tuoitre.vn/my-len-tieng-truoc-tin-iran-tan-cong-tram-radar-canh-bao-som-o-bahrain-100261113214803178.htm
+- **[6] Loạt vụ nổ vang lên ở Bahrain khi Iran 'tập kích radar Mỹ'** – VnExpress Thế giới · Sun, 15 Nov 2026
+  Iran thông báo triển khai UAV tự sát nhằm vào radar phòng không Mỹ bố trí tại căn cứ ở Bahrain để trả đũa đối phương.
+  https://vnexpress.net/loat-vu-no-vang-len-o-bahrain-khi-iran-tap-kich-radar-my-5144935.html
+- **[6] Iran tuyên bố tấn công hệ thống radar của Mỹ tại Bahrain** – Tuổi Trẻ Thế giới · 11/15/2026 1:52:
+  IRGC tuyên bố tấn công radar phòng không Mỹ tại Bahrain bằng 6 drone, cảnh báo về đòn đáp trả khốc liệt hơn.
+  https://tuoitre.vn/iran-tuyen-bo-tan-cong-he-thong-radar-cua-my-tai-bahrain-100261115124733252.htm
+- **[6] Hé lộ cách Iran khai thác 'dấu vết số' để tấn công căn cứ Mỹ** – Thanh Niên Thế giới · Sun, 15 Nov 26 2
+  Dữ liệu từ mạng xã hội, ứng dụng thể dục và thiết bị cá nhân bị cho là đã giúp Iran xác định mục tiêu tấn công các căn cứ Mỹ ở Trung Đông, làm lộ những lỗ hổng an ninh nghiêm trọng.
+  https://thanhnien.vn/he-lo-cach-iran-khai-thac-dau-vet-so-de-tan-cong-can-cu-my-18526111519545061.htm
 - **[5] Iran tuyên bố tập kích, phá hủy radar cảnh báo sớm của Mỹ** – VnExpress Thế giới · Fri, 13 Nov 2026
   Vệ binh Hồi giáo Iran cho biết đã phá hủy một radar cảnh báo sớm Mỹ bố trí tại Bahrain để trả đũa cuộc tấn công của đối phương.
   https://vnexpress.net/iran-tuyen-bo-tap-kich-pha-huy-radar-canh-bao-som-cua-my-5144197.html
-- **[5] Singapore chỉ trích Mỹ 'thiếu hợp tác' khi điều tra Alice Huang** – VnExpress Thế giới · Fri, 13 Nov 2026
-  Singapore công bố thông tin cuộc điều tra Alice Huang, doanh nhân có quan hệ tình cảm với Jensen Huang và bị Mỹ nghi là "điệp viên Trung Quốc".
-  https://vnexpress.net/singapore-chi-trich-my-thieu-hop-tac-khi-dieu-tra-alice-huang-5144085.html
 - **[5] Giá vàng thế giới lao dốc, xuống thấp nhất hơn một năm** – VnExpress Kinh doanh · Thu, 12 Nov 2026
   Tuyên bố "không cần thỏa thuận với Iran" của ông Trump khiến mỗi ounce vàng giảm hơn 130 USD.
   https://vnexpress.net/gia-vang-the-gioi-lao-doc-xuong-thap-nhat-hon-mot-nam-5144060.html
-- **[5] Ngân hàng tìm cách ngăn trợ lý AI can thiệp tài khoản** – VnExpress Kinh doanh · Thu, 12 Nov 2026
-  Các ngân hàng lớn ở Anh, Mỹ bắt đầu chặn hoặc siết quyền truy cập tài khoản khách hàng của các trợ lý AI do lo ngại chúng vượt kiểm soát.
-  https://vnexpress.net/ngan-hang-tim-cach-ngan-tro-ly-ai-can-thiep-tai-khoan-5143403.html
+- **[5] Nagakawa - hãng máy lạnh duy nhất trên sàn bất ngờ lỗ sau hai quý lãi kỷ lục** – Tuổi Trẻ Kinh doanh · 11/15/2026 7:23:
+  Sau hai quý liên tiếp ghi nhận lợi nhuận ở mức cao, Tập đoàn Nagakawa bất ngờ lỗ trước thuế gần 450 triệu đồng trong quý 3-2026, dù doanh thu vẫn tăng trưởng.
+  https://tuoitre.vn/nagakawa-hang-may-lanh-duy-nhat-tren-san-bat-ngo-lo-sau-hai-quy-lai-ky-luc-100261115182932766.htm
+- **[5] Tiền gửi vào ngân hàng lập kỷ lục, vì sao tỉ trọng trong tổng nguồn vốn lại giảm?** – Tuổi Trẻ Kinh doanh · 11/15/2026 4:47:
+  Đâu là cách ngân hàng "xoay" vốn khi áp lực thanh khoản gia tăng, lãi suất biến động?
+  https://tuoitre.vn/tien-gui-vao-ngan-hang-lap-ky-luc-vi-sao-ti-trong-trong-tong-nguon-von-lai-giam-100261115095738299.htm
 - **[5] Lộ giao dịch cổ phiếu NVIDIA của ông Trump trước quyết định bán chip sang Trung Quốc** – Thanh Niên Thế giới · Sat, 14 Nov 26 0
   Các giao dịch cổ phiếu NVIDIA của Tổng thống Mỹ Donald Trump đang thu hút sự chú ý, khi nhiều thương vụ diễn ra gần thời điểm Washington điều chỉnh chính sách xuất khẩu chip tiên tiến sang Trung Quốc.
   https://thanhnien.vn/lo-giao-dich-co-phieu-nvidia-cua-ong-trump-truoc-quyet-dinh-ban-chip-sang-trung-quoc-185261114070932811.htm
@@ -39,18 +42,30 @@
 - **[4] Hai bộ trưởng Mỹ 'bất đồng' vì công ty của Alice Huang** – VnExpress Thế giới · Fri, 13 Nov 2026
   Truyền thông Mỹ cho hay Bộ trưởng Tài chính Bessent đã chất vấn Bộ trưởng Thương mại Lutnick vì không đưa công ty Megaspeed của Alice Huang vào diện tiềm ẩn rủi ro.
   https://vnexpress.net/hai-bo-truong-my-bat-dong-vi-cong-ty-cua-alice-huang-5143976.html
+- **[4] Lãi suất trái phiếu ngân hàng neo cao dù tiết kiệm hạ nhiệt** – VnExpress Kinh doanh · Mon, 16 Nov 2026
+  Các ngân hàng trả lãi bình quân gần 9% một năm cho trái phiếu mới phát hành từ cuối tháng 10 đến nay, chưa có dấu hiệu giảm như lãi suất tiết kiệm.
+  https://vnexpress.net/lai-suat-trai-phieu-ngan-hang-neo-cao-du-tiet-kiem-ha-nhiet-5144973.html
+- **[4] Tình báo Mỹ nói Iran sở hữu từ 1.500 - 2.500 tên lửa trong kho vũ khí** – Tuổi Trẻ Thế giới · 11/15/2026 5:18:
+  Cộng đồng tình báo Mỹ đánh giá Iran hiện sở hữu từ 1.500 - 2.500 tên lửa trong kho vũ khí.
+  https://tuoitre.vn/tinh-bao-my-noi-iran-so-huu-tu-1500-2500-ten-lua-trong-kho-vu-khi-100261115160409715.htm
+- **[4] Hai máy bay Boeing va chạm tại Mỹ, chỉ một ngày sau lệnh ngừng bay toàn quốc** – Tuổi Trẻ Thế giới · 11/15/2026 3:02:
+  Hai máy bay của Copa Airlines và UPS va chạm khi đang lăn bánh tại sân bay ở Miami, hai người bị thương.
+  https://tuoitre.vn/hai-may-bay-boeing-va-cham-tai-my-chi-mot-ngay-sau-lenh-ngung-bay-toan-quoc-100261115140112641.htm
+- **[4] Thí sinh Hàn Quốc thi chứng chỉ nghề tư vấn thuế đạt điểm cao nhất thừa nhận dùng AI** – Tuổi Trẻ Thế giới · 11/15/2026 1:59:
+  Ngày 15-11, cảnh sát Hàn Quốc thông báo họ đã mở cuộc điều tra sau khi thí sinh đạt điểm cao nhất trong kỳ thi cấp chứng chỉ hành nghề tư vấn thuế thừa nhận sử dụng trí tuệ nhân tạo (AI) để gian lận.
+  https://tuoitre.vn/thi-sinh-han-quoc-thi-chung-chi-nghe-tu-van-thue-dat-diem-cao-nhat-thua-nhan-dung-ai-10026111512351666.htm
+- **[4] Lầu Năm Góc: Viện trợ cho Ukraine gây tổn thất cho quân đội Mỹ** – Tuổi Trẻ Thế giới · 11/15/2026 12:24
+  Báo cáo của Tổng Thanh tra Lầu Năm Góc cho biết việc hỗ trợ Ukraine đang làm cạn kiệt nguồn lực của binh sĩ Mỹ.
+  https://tuoitre.vn/lau-nam-goc-vien-tro-cho-ukraine-gay-ton-that-cho-quan-doi-my-100261115110420513.htm
 - **[4] Trung Đông sáng 15-11: Iran tuyên bố hạ drone MQ-1 của Mỹ trên đảo Qeshm; Israel tiêu diệt chỉ huy Hamas** – Tuổi Trẻ Thế giới · 11/15/2026 9:26:
   Iran nói 3 tàu chở dầu va phải thủy lôi ở eo biển Hormuz; Iran tuyên bố hạ drone MQ-1 thứ 17 của Mỹ trên đảo Qeshm... là một số tin tức đáng chú ý về Trung Đông sáng 15-11.
   https://tuoitre.vn/trung-dong-sang-15-11-iran-tuyen-bo-ha-drone-mq-1-cua-my-tren-dao-qeshm-israel-tieu-diet-chi-huy-hamas-100261115075440585.htm
-- **[4] Ngoại trưởng Rubio hòa giọng với ông Trump: Iran đã suy yếu, Mỹ chưa cần đánh tiếp** – Tuổi Trẻ Thế giới · 11/14/2026 5:02:
-  Ngoại trưởng Marco Rubio cho rằng Mỹ chưa cần tấn công thêm vì sức ép kinh tế đã khiến Iran suy yếu đáng kể.
-  https://tuoitre.vn/ngoai-truong-rubio-hoa-giong-voi-ong-trump-iran-da-suy-yeu-my-chua-can-danh-tiep-100261114163832555.htm
-- **[4] Ukraine tiếp tục bị hạn chế mạng vệ tinh Starshield, cảm thấy mất ủng hộ từ Mỹ** – Tuổi Trẻ Thế giới · 11/14/2026 7:23:
-  Ông Zelensky cho biết hệ thống liên lạc vệ tinh Starshield của Mỹ tiếp tục bị hạn chế tốc độ ở Ukraine.
-  https://tuoitre.vn/ukraine-tiep-tuc-bi-han-che-mang-ve-tinh-starshield-cam-thay-mat-ung-ho-tu-my-10026111407193366.htm
-- **[4] Đến Trung Quốc dự APEC: Chuyến công du khó khăn của bà Takaichi kể từ khi nhậm chức** – Tuổi Trẻ Thế giới · 11/13/2026 7:46:
-  Sau một năm căng thẳng, liệu chuyến đi Thâm Quyến có giúp bà Takaichi mở ra cơ hội đối thoại với ông Tập?
-  https://tuoitre.vn/den-trung-quoc-du-apec-chuyen-cong-du-kho-khan-cua-ba-takaichi-ke-tu-khi-nham-chuc-10026111319310778.htm
+- **[4] Hai máy bay va chạm tại sân bay Mỹ, hé lộ đoạn ghi âm không lưu** – Thanh Niên Thế giới · Sun, 15 Nov 26 2
+  Một máy bay chở khách của Copa Airlines va chạm với máy bay chở hàng UPS tại sân bay quốc tế Miami (Mỹ) tối 14.11, khiến 2 người bị thương nhẹ.
+  https://thanhnien.vn/hai-may-bay-va-cham-tai-san-bay-my-he-lo-doan-ghi-am-khong-luu-18526111521454368.htm
+- **[4] Ngựa làm 'hành khách' xe buýt tại Mỹ gây bão mạng** – Thanh Niên Thế giới · Sun, 15 Nov 26 1
+  Một đoạn video ghi lại cảnh 2 người đàn ông dắt ngựa lên một chiếc xe buýt ở thành phố Detroit (bang Michigan, Mỹ) thu hút sự chú ý trên mạng xã hội.
+  https://thanhnien.vn/ngua-lam-hanh-khach-xe-buyt-tai-my-gay-bao-mang-185261115161843902.htm
 - **[4] Mỹ lần đầu nêu khả năng Ukraine rút khỏi Donbass để gia nhập NATO** – Thanh Niên Thế giới · Sat, 14 Nov 26 2
   Trong phát biểu được công bố hôm 14.11, Tổng thống Ukraine Volodymyr Zelensky cho biết Mỹ lần đầu nêu lên khả năng Ukraine rút khỏi Donbass để đổi lấy cơ hội gia nhập Tổ chức Hiệp ước Bắc Đại Tây Dương (NATO).
   https://thanhnien.vn/my-lan-dau-neu-kha-nang-ukraine-rut-khoi-donbass-de-gia-nhap-nato-185261114190657929.htm
@@ -60,18 +75,3 @@
 - **[4] Mỹ - Iran - Qatar lo ngại ông Netanyahu có thể phá hỏng đàm phán?** – Thanh Niên Thế giới · Sat, 14 Nov 26 1
   Các nhà đàm phán từ Mỹ, Iran và Qatar bày tỏ lo ngại rằng những cuộc thảo luận nhằm đạt thỏa thuận chấm dứt xung đột Mỹ-Iran có thể bị phá hỏng bởi nỗ lực của Thủ tướng Israel Benjamin Netanyahu trong việc tái khởi động 
   https://thanhnien.vn/my-iran-qatar-lo-ngai-ong-netanyahu-co-the-pha-hong-dam-phan-185261114164204005.htm
-- **[4] Bộ trưởng Chiến tranh Mỹ khen thưởng cho tiêu binh từng 'chấn chỉnh' tác phong của mình** – Thanh Niên Thế giới · Fri, 13 Nov 26 1
-  Một binh sĩ Mỹ được Bộ trưởng Chiến tranh Pete Hegseth được tặng huân chương tuyên dương, sau khi người này 'chấn chỉnh' ông và những người đi cùng vì cười nói gần Mộ Chiến sĩ vô danh.
-  https://thanhnien.vn/bo-truong-chien-tranh-my-khen-thuong-cho-tieu-binh-tung-chan-chinh-tac-phong-cua-minh-18526111310295238.htm
-- **[3] Sự cố khi thay cáp khiến Mỹ phải đình chỉ bay toàn quốc** – VnExpress Thế giới · Sun, 15 Nov 2026
-  Bộ trưởng Giao thông Mỹ cho biết việc thay thế cáp đồng bằng cáp quang trong hệ thống liên lạc đã gây sự cố, buộc giới chức ban bố lệnh cấm bay toàn quốc.
-  https://vnexpress.net/su-co-khi-thay-cap-khien-my-phai-dinh-chi-bay-toan-quoc-5144796.html
-- **[3] Nghị sĩ Mỹ đặt hạn chót cho Elon Musk về hồ sơ Starlink** – VnExpress Thế giới · Sat, 14 Nov 2026
-  Các nghị sĩ Dân chủ ấn định hạn chót để Elon Musk phản hồi yêu cầu bảo toàn hồ sơ liên quan việc Starlink và Starshield bị hạn chế ở Ukraine.
-  https://vnexpress.net/nghi-si-my-dat-han-chot-cho-elon-musk-ve-ho-so-starlink-5144684.html
-- **[3] Hỗn loạn tại loạt sân bay Mỹ vì lệnh đình chỉ bay toàn quốc** – VnExpress Thế giới · Sat, 14 Nov 2026
-  Hàng nghìn chuyến bay tại Mỹ bị hủy hoặc hoãn sau lệnh cấm cất cánh toàn quốc, khiến nhiều hành khách rơi vào cảnh mắc kẹt, hoang mang.
-  https://vnexpress.net/hon-loan-tai-loat-san-bay-my-vi-lenh-dinh-chi-bay-toan-quoc-5144543.html
-- **[3] Nga chưa đồng ý để châu Âu tham gia đàm phán về Ukraine** – VnExpress Thế giới · Fri, 13 Nov 2026
-  Moskva tuyên bố chưa nhất trí về việc mở rộng bàn đàm phán hòa bình Ukraine cho các nước châu Âu, bất chấp kỳ vọng từ phía Kiev và đặc phái viên Mỹ.
-  https://vnexpress.net/nga-chua-dong-y-de-chau-au-tham-gia-dam-phan-ve-ukraine-5144443.html
