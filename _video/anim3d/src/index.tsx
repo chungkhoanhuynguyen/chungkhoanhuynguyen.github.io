@@ -11,6 +11,7 @@ import { Ltc1Video, LTC1_FRAMES } from "./videos/ltc1/Ltc1";
 import { LopQT } from "./videos/ltc1/LopQT";
 import { HnVideo, HN_FRAMES } from "./videos/hn/Hn";
 import { Ltc5Video, LTC5_FRAMES } from "./videos/ltc5/Ltc5";
+import { Ltc6Video, LTC6_FRAMES } from "./videos/ltc6/Ltc6";
 import { LuongVideo, LUONG_FRAMES } from "./videos/luong/Luong";
 import { Luong2Video, LUONG2_FRAMES } from "./videos/luong2/Luong2";
 const Root: React.FC = () => <>
@@ -18,6 +19,7 @@ const Root: React.FC = () => <>
   <Composition id="Vang" component={VangVideo} durationInFrames={VANG_FRAMES} fps={30} width={1920} height={1080} />
   <Composition id="Dat" component={DatVideo} durationInFrames={DAT_FRAMES} fps={30} width={1920} height={1080} />
   <Composition id="Ltc5" component={Ltc5Video} durationInFrames={LTC5_FRAMES} fps={30} width={1920} height={1080} />
+      <Composition id="Ltc6" component={Ltc6Video} durationInFrames={LTC6_FRAMES} fps={30} width={1920} height={1080} />
   <Composition id="Hn" component={HnVideo} durationInFrames={HN_FRAMES} fps={30} width={1920} height={1080} />
   <Composition id="Luong" component={LuongVideo} durationInFrames={LUONG_FRAMES} fps={30} width={1920} height={1080} />
   <Composition id="Luong2" component={Luong2Video} durationInFrames={LUONG2_FRAMES} fps={30} width={1920} height={1080} />

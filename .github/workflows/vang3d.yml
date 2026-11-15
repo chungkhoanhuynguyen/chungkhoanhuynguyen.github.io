@@ -78,6 +78,7 @@ jobs:
           sed "s#^#file 'u/#; s#\$#'#" names.txt > list.txt
           ffmpeg -v error -f concat -safe 0 -i list.txt -c copy video.mp4
           gh api repos/$R/releases/tags/${{ inputs.voice }} --jq '.assets[]|select(.name=="voice.wav")|.id' | xargs -I{} gh api -H "Accept: application/octet-stream" repos/$R/releases/assets/{} > voice.wav
+          T=_video/anim3d/$(echo ${{ inputs.comp }} | tr A-Z a-z)/tempo.txt; if [ -f $T ]; then ffmpeg -v error -i voice.wav -af atempo=$(cat $T) -ar 44100 v2.wav && mv v2.wav voice.wav; fi
           A=_video/anim3d; C=${{ inputs.comp }}; D=$(echo $C | tr A-Z a-z); SND=$A/vang/am_thanh.py; [ -f $A/$D/am_thanh.py ] && SND=$A/$D/am_thanh.py
           python3 $A/vang/cuts.py $A/src/videos/$D/timing.json $A/src/videos/$D/$C.tsx cuts.json
           python3 $SND $A/src/videos/$D/timing.json voice.wav cuts.json mix.wav
