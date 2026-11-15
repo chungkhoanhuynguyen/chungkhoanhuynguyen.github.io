@@ -9,9 +9,6 @@
 - **[6] Mỹ lên tiếng trước tin Iran tấn công trạm radar cảnh báo sớm ở Bahrain** – Tuổi Trẻ Thế giới · 11/13/2026 10:07
   Quân đội Mỹ bác bỏ tuyên bố của Lực lượng Vệ binh Cách mạng Hồi giáo Iran (IRGC) về việc đã tấn công một trạm radar cảnh báo sớm của Mỹ tại Bahrain.
   https://tuoitre.vn/my-len-tieng-truoc-tin-iran-tan-cong-tram-radar-canh-bao-som-o-bahrain-100261113214803178.htm
-- **[6] Fed cảnh báo AI có thể gây cú sốc lớn cho thị trường việc làm Mỹ** – Tuổi Trẻ Thế giới · 11/13/2026 6:28:
-  Thống đốc Fed cảnh báo AI có thể thay thế lao động trên diện rộng, xáo trộn thị trường việc làm, tăng bất bình đẳng.
-  https://tuoitre.vn/fed-canh-bao-ai-co-the-gay-cu-soc-lon-cho-thi-truong-viec-lam-my-100261113155136535.htm
 - **[5] Iran tuyên bố tập kích, phá hủy radar cảnh báo sớm của Mỹ** – VnExpress Thế giới · Fri, 13 Nov 2026
   Vệ binh Hồi giáo Iran cho biết đã phá hủy một radar cảnh báo sớm Mỹ bố trí tại Bahrain để trả đũa cuộc tấn công của đối phương.
   https://vnexpress.net/iran-tuyen-bo-tap-kich-pha-huy-radar-canh-bao-som-cua-my-5144197.html
@@ -24,12 +21,12 @@
 - **[5] Ngân hàng tìm cách ngăn trợ lý AI can thiệp tài khoản** – VnExpress Kinh doanh · Thu, 12 Nov 2026
   Các ngân hàng lớn ở Anh, Mỹ bắt đầu chặn hoặc siết quyền truy cập tài khoản khách hàng của các trợ lý AI do lo ngại chúng vượt kiểm soát.
   https://vnexpress.net/ngan-hang-tim-cach-ngan-tro-ly-ai-can-thiep-tai-khoan-5143403.html
-- **[5] Trung Quốc cảnh báo Mỹ không siết chặt kiểm soát xuất khẩu sau vụ ông Jensen Huang** – Tuổi Trẻ Thế giới · 11/13/2026 4:23:
-  Ngày 13-11, Trung Quốc cảnh báo Mỹ không áp thêm các biện pháp kiểm soát xuất khẩu chất bán dẫn sau vụ bê bối liên quan đến Nvidia, tập đoàn hàng đầu trong lĩnh vực chip trí tuệ nhân tạo (AI).
-  https://tuoitre.vn/trung-quoc-canh-bao-my-khong-siet-chat-kiem-soat-xuat-khau-sau-vu-ong-jensen-huang-100261113155206518.htm
 - **[5] Lộ giao dịch cổ phiếu NVIDIA của ông Trump trước quyết định bán chip sang Trung Quốc** – Thanh Niên Thế giới · Sat, 14 Nov 26 0
   Các giao dịch cổ phiếu NVIDIA của Tổng thống Mỹ Donald Trump đang thu hút sự chú ý, khi nhiều thương vụ diễn ra gần thời điểm Washington điều chỉnh chính sách xuất khẩu chip tiên tiến sang Trung Quốc.
   https://thanhnien.vn/lo-giao-dich-co-phieu-nvidia-cua-ong-trump-truoc-quyet-dinh-ban-chip-sang-trung-quoc-185261114070932811.htm
+- **[4] Tehran cáo buộc Ngoại trưởng Mỹ 'dọa bỏ đói người dân Iran'** – VnExpress Thế giới · Sun, 15 Nov 2026
+  Tehran cho rằng phát biểu của Ngoại trưởng Rubio về lệnh phong tỏa toàn diện chính là lời đe dọa bỏ đói người dân Iran.
+  https://vnexpress.net/tehran-cao-buoc-ngoai-truong-my-doa-bo-doi-nguoi-dan-iran-5144823.html
 - **[4] Ông Zelensky: 'Mỹ nêu ý tưởng Ukraine từ bỏ Donbass để gia nhập NATO'** – VnExpress Thế giới · Sat, 14 Nov 2026
   Tổng thống Zelensky cho biết các nhà đàm phán Mỹ đã đề cập khả năng Ukraine rút khỏi khu vực Donbass ở miền đông để đổi lấy việc gia nhập NATO.
   https://vnexpress.net/ong-zelensky-my-neu-y-tuong-ukraine-tu-bo-donbass-de-gia-nhap-nato-5144717.html
@@ -42,9 +39,9 @@
 - **[4] Hai bộ trưởng Mỹ 'bất đồng' vì công ty của Alice Huang** – VnExpress Thế giới · Fri, 13 Nov 2026
   Truyền thông Mỹ cho hay Bộ trưởng Tài chính Bessent đã chất vấn Bộ trưởng Thương mại Lutnick vì không đưa công ty Megaspeed của Alice Huang vào diện tiềm ẩn rủi ro.
   https://vnexpress.net/hai-bo-truong-my-bat-dong-vi-cong-ty-cua-alice-huang-5143976.html
-- **[4] Ông Trump: Mỹ không cần thỏa thuận với Iran** – VnExpress Thế giới · Fri, 13 Nov 2026
-  Tổng thống Trump chỉ đạo Phó tổng thống Vance tập trung vào nỗ lực chống tham nhũng thay vì đàm phán với Iran, tuyên bố Mỹ "không cần thỏa thuận".
-  https://vnexpress.net/ong-trump-my-khong-can-thoa-thuan-voi-iran-5144039.html
+- **[4] Trung Đông sáng 15-11: Iran tuyên bố hạ drone MQ-1 của Mỹ trên đảo Qeshm; Israel tiêu diệt chỉ huy Hamas** – Tuổi Trẻ Thế giới · 11/15/2026 9:26:
+  Iran nói 3 tàu chở dầu va phải thủy lôi ở eo biển Hormuz; Iran tuyên bố hạ drone MQ-1 thứ 17 của Mỹ trên đảo Qeshm... là một số tin tức đáng chú ý về Trung Đông sáng 15-11.
+  https://tuoitre.vn/trung-dong-sang-15-11-iran-tuyen-bo-ha-drone-mq-1-cua-my-tren-dao-qeshm-israel-tieu-diet-chi-huy-hamas-100261115075440585.htm
 - **[4] Ngoại trưởng Rubio hòa giọng với ông Trump: Iran đã suy yếu, Mỹ chưa cần đánh tiếp** – Tuổi Trẻ Thế giới · 11/14/2026 5:02:
   Ngoại trưởng Marco Rubio cho rằng Mỹ chưa cần tấn công thêm vì sức ép kinh tế đã khiến Iran suy yếu đáng kể.
   https://tuoitre.vn/ngoai-truong-rubio-hoa-giong-voi-ong-trump-iran-da-suy-yeu-my-chua-can-danh-tiep-100261114163832555.htm
@@ -54,9 +51,6 @@
 - **[4] Đến Trung Quốc dự APEC: Chuyến công du khó khăn của bà Takaichi kể từ khi nhậm chức** – Tuổi Trẻ Thế giới · 11/13/2026 7:46:
   Sau một năm căng thẳng, liệu chuyến đi Thâm Quyến có giúp bà Takaichi mở ra cơ hội đối thoại với ông Tập?
   https://tuoitre.vn/den-trung-quoc-du-apec-chuyen-cong-du-kho-khan-cua-ba-takaichi-ke-tu-khi-nham-chuc-10026111319310778.htm
-- **[4] Iran tuyên bố có tên lửa đánh xa 1.500km, gọi Mỹ là 'con hổ giấy'** – Tuổi Trẻ Thế giới · 11/13/2026 5:50:
-  Iran cảnh báo sẽ đối đầu với các mối đe dọa ở mọi cấp độ và không giới hạn địa lý.
-  https://tuoitre.vn/iran-tuyen-bo-co-ten-lua-danh-xa-1500km-goi-my-la-con-ho-giay-100261113171743474.htm
 - **[4] Mỹ lần đầu nêu khả năng Ukraine rút khỏi Donbass để gia nhập NATO** – Thanh Niên Thế giới · Sat, 14 Nov 26 2
   Trong phát biểu được công bố hôm 14.11, Tổng thống Ukraine Volodymyr Zelensky cho biết Mỹ lần đầu nêu lên khả năng Ukraine rút khỏi Donbass để đổi lấy cơ hội gia nhập Tổ chức Hiệp ước Bắc Đại Tây Dương (NATO).
   https://thanhnien.vn/my-lan-dau-neu-kha-nang-ukraine-rut-khoi-donbass-de-gia-nhap-nato-185261114190657929.htm
@@ -69,9 +63,15 @@
 - **[4] Bộ trưởng Chiến tranh Mỹ khen thưởng cho tiêu binh từng 'chấn chỉnh' tác phong của mình** – Thanh Niên Thế giới · Fri, 13 Nov 26 1
   Một binh sĩ Mỹ được Bộ trưởng Chiến tranh Pete Hegseth được tặng huân chương tuyên dương, sau khi người này 'chấn chỉnh' ông và những người đi cùng vì cười nói gần Mộ Chiến sĩ vô danh.
   https://thanhnien.vn/bo-truong-chien-tranh-my-khen-thuong-cho-tieu-binh-tung-chan-chinh-tac-phong-cua-minh-18526111310295238.htm
-- **[4] Tổng thống Putin nói gì khi gặp hai đặc phái viên Mỹ?** – Thanh Niên Thế giới · Thu, 12 Nov 26 2
-  Tổng thống Nga Vladimir Putin ngày 12.11 đã có cuộc gặp với hai đặc phái viên Mỹ Steve Witkoff và Jared Kushner tại Điện Kremlin, tiếp nối hai ngày đàm phán giữa Nga, Ukraine với sự trung gian của Mỹ tại Abu Dhabi (UAE) 
-  https://thanhnien.vn/tong-thong-putin-noi-gi-khi-gap-hai-dac-phai-vien-my-185261112223126322.htm
+- **[3] Sự cố khi thay cáp khiến Mỹ phải đình chỉ bay toàn quốc** – VnExpress Thế giới · Sun, 15 Nov 2026
+  Bộ trưởng Giao thông Mỹ cho biết việc thay thế cáp đồng bằng cáp quang trong hệ thống liên lạc đã gây sự cố, buộc giới chức ban bố lệnh cấm bay toàn quốc.
+  https://vnexpress.net/su-co-khi-thay-cap-khien-my-phai-dinh-chi-bay-toan-quoc-5144796.html
 - **[3] Nghị sĩ Mỹ đặt hạn chót cho Elon Musk về hồ sơ Starlink** – VnExpress Thế giới · Sat, 14 Nov 2026
   Các nghị sĩ Dân chủ ấn định hạn chót để Elon Musk phản hồi yêu cầu bảo toàn hồ sơ liên quan việc Starlink và Starshield bị hạn chế ở Ukraine.
   https://vnexpress.net/nghi-si-my-dat-han-chot-cho-elon-musk-ve-ho-so-starlink-5144684.html
+- **[3] Hỗn loạn tại loạt sân bay Mỹ vì lệnh đình chỉ bay toàn quốc** – VnExpress Thế giới · Sat, 14 Nov 2026
+  Hàng nghìn chuyến bay tại Mỹ bị hủy hoặc hoãn sau lệnh cấm cất cánh toàn quốc, khiến nhiều hành khách rơi vào cảnh mắc kẹt, hoang mang.
+  https://vnexpress.net/hon-loan-tai-loat-san-bay-my-vi-lenh-dinh-chi-bay-toan-quoc-5144543.html
+- **[3] Nga chưa đồng ý để châu Âu tham gia đàm phán về Ukraine** – VnExpress Thế giới · Fri, 13 Nov 2026
+  Moskva tuyên bố chưa nhất trí về việc mở rộng bàn đàm phán hòa bình Ukraine cho các nước châu Âu, bất chấp kỳ vọng từ phía Kiev và đặc phái viên Mỹ.
+  https://vnexpress.net/nga-chua-dong-y-de-chau-au-tham-gia-dam-phan-ve-ukraine-5144443.html
