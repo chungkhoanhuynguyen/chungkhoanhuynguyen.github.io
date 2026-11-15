@@ -13,6 +13,9 @@ import { HnVideo, HN_FRAMES } from "./videos/hn/Hn";
 import { Ltc5Video, LTC5_FRAMES } from "./videos/ltc5/Ltc5";
 import { Ltc6Video, LTC6_FRAMES } from "./videos/ltc6/Ltc6";
 import { Ltc7Video, LTC7_FRAMES } from "./videos/ltc7/Ltc7";
+import { Ltc12Video, LTC12_FRAMES } from "./videos/ltc12/Ltc12";
+import { Ltc11Video, LTC11_FRAMES } from "./videos/ltc11/Ltc11";
+import { Ltc10Video, LTC10_FRAMES } from "./videos/ltc10/Ltc10";
 import { Ltc9Video, LTC9_FRAMES } from "./videos/ltc9/Ltc9";
 import { Ltc8Video, LTC8_FRAMES } from "./videos/ltc8/Ltc8";
 import { LuongVideo, LUONG_FRAMES } from "./videos/luong/Luong";
@@ -24,6 +27,9 @@ const Root: React.FC = () => <>
   <Composition id="Ltc5" component={Ltc5Video} durationInFrames={LTC5_FRAMES} fps={30} width={1920} height={1080} />
       <Composition id="Ltc6" component={Ltc6Video} durationInFrames={LTC6_FRAMES} fps={30} width={1920} height={1080} />
       <Composition id="Ltc7" component={Ltc7Video} durationInFrames={LTC7_FRAMES} fps={30} width={1920} height={1080} />
+      <Composition id="Ltc12" component={Ltc12Video} durationInFrames={LTC12_FRAMES} fps={30} width={1920} height={1080} />
+      <Composition id="Ltc11" component={Ltc11Video} durationInFrames={LTC11_FRAMES} fps={30} width={1920} height={1080} />
+      <Composition id="Ltc10" component={Ltc10Video} durationInFrames={LTC10_FRAMES} fps={30} width={1920} height={1080} />
       <Composition id="Ltc9" component={Ltc9Video} durationInFrames={LTC9_FRAMES} fps={30} width={1920} height={1080} />
       <Composition id="Ltc8" component={Ltc8Video} durationInFrames={LTC8_FRAMES} fps={30} width={1920} height={1080} />
   <Composition id="Hn" component={HnVideo} durationInFrames={HN_FRAMES} fps={30} width={1920} height={1080} />

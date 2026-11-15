@@ -24,7 +24,7 @@ def parse(ws):
         if i < len(ws) and ws[i] in D and (ws[i-1] in ("mươi", "mười")): last += D[ws[i]]; i += 1
         if i < len(ws) and ws[i] in D and i >= 2 and ws[i-1] in D and ws[i-2] == "linh": pass
     return tot + cur + last
-def fmt(n): return f"{n:,}".replace(",", ".") if n >= 10000 else str(n)
+def fmt(n): return f"{n:,}".replace(",", ".") if n >= 1000 and not (1000 <= n <= 2100) else str(n)
 def rep(text):
     out = {}
     toks = re.findall(r"\w+|[^\w\s]", text)
