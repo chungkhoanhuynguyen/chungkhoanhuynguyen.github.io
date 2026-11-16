@@ -110,6 +110,10 @@ function followKing(){const k=myKing(),pl=P0();if(!k){toast(isMyKing()?'Bạn ch
 const isMyKing=()=>{const f=G.F[P0().fac];return f&&f.king===0};
 const myGens=()=>G.L.filter(q=>q.kind=='lord'&&!q.dead&&q.fac==P0().fac);
 const genCost=()=>1500+Math.min(myGens().length,30)*500;
+const GCAP=120,genFull=()=>myGens().length>=GCAP;
+function mySlim(quiet){if(!G||!G.L)return 0;const pl=P0(),f=pl.fac,own=new Set(S.filter(s=>s.fac==f).map(s=>s.own)),vo=new Set(V.filter(v=>v.own!=null).map(v=>v.own));const all=myGens();if(all.length<=GCAP)return 0;
+ const fixed=all.filter(q=>own.has(q.id)||vo.has(q.id)||q.vuong||q.inv),fr=all.filter(q=>!fixed.includes(q)).sort((a,b)=>tot(b.t)-tot(a.t)),keep=Math.max(0,GCAP-fixed.length),cut=fr.slice(keep);if(!cut.length)return 0;const ids=new Set(cut.map(q=>q.id));
+ for(const q of cut){q.dead=-1;q.inF=0;q.t=Z3();q.goS=q.goP=null}for(const f of G.fights||[]){f.A=f.A.filter(i=>!ids.has(i));f.D=f.D.filter(i=>!ids.has(i))}for(const q of G.L)if(!q.dead&&ids.has(q.lieg))q.lieg=null;const g=cut.length*5000;G.gold+=g;G.ngen=myGens().length;if(quiet&&cut.length<50)return cut.length;addLog(`🧹 Giải tán ${cut.length} tướng thừa (giới hạn ${GCAP} tướng không đất) để giảm giật — hoàn ${fmt(g)} vàng.`,'#9cf');setTimeout(()=>toast(`🧹 Bạn có quá nhiều tướng (${all.length}) làm game giật.<br>Đã giải tán ${cut.length} tướng không đất, hoàn lại ${fmt(g)} vàng.<br><small>Giới hạn: ${GCAP} tướng không có thái ấp</small>`,'#9cf',1),1800);return cut.length}
 const contsHeld=()=>{const f=P0().fac;let n=0;for(let c=0;c<5;c++){const ss=S.filter(s=>s.race==c);if(ss.filter(s=>s.fac==f).length>=ss.length*.6)n++}return n};
 function crown(id){const g=G.L[id],pl=P0();if(!g||g.dead||!isMyKing())return;if(G.gold<5000){toast('Cần 5.000 vàng để phong Vương','#f88');return}G.gold-=5000;g.vuong=1;g.gold=g.gold||0;g.loy=Math.min(100,(g.loy??70)+15);
  toast(`🏯 Bạn phong ${g.name} làm VƯƠNG!`,'#ff8a3a',1);addLog(`Phong ${g.name} làm Vương.`,'#ffb070');panel('tg')}
@@ -122,15 +126,15 @@ function vassalDay(){const pl=P0(),king=isMyKing(),pp=facPow(pl.fac),held=contsH
  for(const g of G.L){if(g.dead||g.kind!='lord'||g.fac!=pl.fac)continue;if(g.loy==null)g.loy=ri(60,80);
   const tg=55+4*fiefs(g)+(G.gold>0?8:-25)-(g.vuong?12:0)+(G.call?3:0)-(vPow(g)>pp*.15?10:0);g.loy=cl(g.loy+(tg>g.loy?.6:-.6)+rnd(-.3,.3),0,100);
   if(g.vuong){g.gold=(g.gold||0)+S.filter(s=>s.own===g.id).length*150+60;const sub=G.L.filter(q=>!q.dead&&q.lieg===g.id).length;
-   if(G.day%6==g.id%6&&g.gold>=2500&&sub<5){g.gold-=2500;const n=pushP({kind:'lord',name:newName(G.F[pl.fac]),fac:pl.fac,x:g.x+rnd(-30,30),y:g.y+30,t:mix(700),loy:ri(55,75),lieg:g.id,merc:1});if(contOf(g.x,g.y)==ACT&&Math.random()<.5)addLog(`🏯 Vương ${g.name} chiêu mộ tướng ${n.name}.`,'#ffb070')}
+   if(G.day%6==g.id%6&&g.gold>=2500&&sub<5&&!genFull()){g.gold-=2500;const n=pushP({kind:'lord',name:newName(G.F[pl.fac]),fac:pl.fac,x:g.x+rnd(-30,30),y:g.y+30,t:mix(700),loy:ri(55,75),lieg:g.id,merc:1});if(contOf(g.x,g.y)==ACT&&Math.random()<.5)addLog(`🏯 Vương ${g.name} chiêu mộ tướng ${n.name}.`,'#ffb070')}
    if(king&&held>=4&&G.day%5==0&&g.loy<55&&vPow(g)>=pp/4){rebel(g);break}}}
- if(king&&G.autoGen&&G.day%3==0&&G.gold>=genCost()+2000){const g=hireGen(1);if(g){g.x=pl.x+rnd(-30,30);g.y=pl.y+30;g.tx=g.x;g.ty=g.y;toast(`🤖 Tự động chiêu mộ tướng ${g.name} (-${fmt(genCost())} vàng)`,'#9cf')}}}
+ if(king&&G.autoGen&&G.day%3==0&&!genFull()&&G.gold>=genCost()+2000){const g=hireGen(1);if(g){g.x=pl.x+rnd(-30,30);g.y=pl.y+30;g.tx=g.x;g.ty=g.y;toast(`🤖 Tự động chiêu mộ tướng ${g.name} (-${fmt(genCost())} vàng)`,'#9cf')}}}
 function aiRecruit(){if(G.L.length>1800)return;for(let i=0;i<G.F.length;i++){const f=G.F[i];if(f.dead||i==P0().fac||f.king<0)continue;const ss=S.filter(s=>s.fac==i);if(!ss.length)continue;
  f.gold=(f.gold||0)+ss.length*60;const n=G.L.filter(q=>!q.dead&&q.fac==i&&q.kind=='lord').length,cost=2500+n*150;
  if(f.gold>=cost&&n<ss.length+2&&G.day%6==i%6){f.gold-=cost;const cap=ss.find(s=>s.type==0)||ss[0];pushP({kind:'lord',name:newName(f),fac:i,x:cap.x+rnd(-30,30),y:cap.y+rnd(25,45),t:mix(f.race>=9?ri(15000,30000):ri(500,900))})}}}
-function hireMaxN(){let g=G.gold,n=myGens().length,k=0;while(k<200){const c=1500+Math.min(n,30)*500;if(g<c)break;g-=c;n++;k++}return k}
+function hireMaxN(){let g=G.gold,n=myGens().length,k=0;while(k<200&&n<GCAP){const c=1500+Math.min(n,30)*500;if(g<c)break;g-=c;n++;k++}return k}
 function hireMax(){const pl=P0(),k=hireMaxN();for(let i=0;i<k;i++){const g=hireGen(1);if(g){g.x=pl.x+rnd(-40,40);g.y=pl.y+rnd(20,50);g.tx=g.x;g.ty=g.y}}addLog(`Chiêu mộ ${k} tướng.`,'#8f8');save();return k}
-function hireGen(q){const pl=P0(),cost=genCost();if(G.gold<cost){toast(`Cần ${fmt(cost)} vàng để chiêu mộ tướng`,'#f88');return}
+function hireGen(q){const pl=P0(),cost=genCost();if(genFull()){if(!q)toast(`Đã đủ ${GCAP} tướng — phong thái ấp cho tướng hoặc chờ tướng tử trận`,'#f88');return}if(G.gold<cost){toast(`Cần ${fmt(cost)} vàng để chiêu mộ tướng`,'#f88');return}
  const s=pl;G.gold-=cost;
  const g=pushP({kind:'lord',name:SUR[ri(0,SUR.length-1)]+' '+GIV[ri(0,GIV.length-1)],fac:pl.fac,x:s.x+rnd(-20,20),y:s.y+30,t:mix(800),ren:0,merc:1,loy:ri(60,80)});if(q)return g;
  toast(`🧑‍✈️ Tướng ${g.name} cùng 800 quân gia nhập dưới trướng bạn!`,'#7dff8a');addLog(`Chiêu mộ tướng ${g.name} (-${fmt(cost)} vàng).`,'#8f8');save()}
