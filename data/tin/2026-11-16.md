@@ -12,12 +12,15 @@
 - **[6] Hé lộ cách Iran khai thác 'dấu vết số' để tấn công căn cứ Mỹ** – Thanh Niên Thế giới · Sun, 15 Nov 26 2
   Dữ liệu từ mạng xã hội, ứng dụng thể dục và thiết bị cá nhân bị cho là đã giúp Iran xác định mục tiêu tấn công các căn cứ Mỹ ở Trung Đông, làm lộ những lỗ hổng an ninh nghiêm trọng.
   https://thanhnien.vn/he-lo-cach-iran-khai-thac-dau-vet-so-de-tan-cong-can-cu-my-18526111519545061.htm
-- **[5] Iran tuyên bố tập kích, phá hủy radar cảnh báo sớm của Mỹ** – VnExpress Thế giới · Fri, 13 Nov 2026
-  Vệ binh Hồi giáo Iran cho biết đã phá hủy một radar cảnh báo sớm Mỹ bố trí tại Bahrain để trả đũa cuộc tấn công của đối phương.
-  https://vnexpress.net/iran-tuyen-bo-tap-kich-pha-huy-radar-canh-bao-som-cua-my-5144197.html
+- **[5] 'Tàu sân bay thứ ba của Mỹ đến Trung Đông' giữa căng thẳng với Iran** – VnExpress Thế giới · Mon, 16 Nov 2026
+  USS Theodore Roosevelt đến Trung Đông và dự kiến hoạt động cùng hai tàu sân bay tại khu vực, theo quan chức Mỹ.
+  https://vnexpress.net/tau-san-bay-thu-ba-cua-my-den-trung-dong-giua-cang-thang-voi-iran-5145174.html
 - **[5] Giá vàng thế giới lao dốc, xuống thấp nhất hơn một năm** – VnExpress Kinh doanh · Thu, 12 Nov 2026
   Tuyên bố "không cần thỏa thuận với Iran" của ông Trump khiến mỗi ounce vàng giảm hơn 130 USD.
   https://vnexpress.net/gia-vang-the-gioi-lao-doc-xuong-thap-nhat-hon-mot-nam-5144060.html
+- **[5] Giá vàng hôm nay 16-11: Vàng thế giới giằng co quanh 3.900 USD, chờ tin Fed** – Tuổi Trẻ Kinh doanh · 11/16/2026 8:59:
+  Giá vàng thế giới sáng 16-11 nhích tăng nhưng vẫn giằng co quanh mốc 3.900 USD/ounce, trong khi thị trường chờ thêm tín hiệu từ Fed về lộ trình lãi suất.
+  https://tuoitre.vn/gia-vang-hom-nay-16-11-vang-the-gioi-giang-co-quanh-3900-usd-cho-tin-fed-100261116080337788.htm
 - **[5] Nagakawa - hãng máy lạnh duy nhất trên sàn bất ngờ lỗ sau hai quý lãi kỷ lục** – Tuổi Trẻ Kinh doanh · 11/15/2026 7:23:
   Sau hai quý liên tiếp ghi nhận lợi nhuận ở mức cao, Tập đoàn Nagakawa bất ngờ lỗ trước thuế gần 450 triệu đồng trong quý 3-2026, dù doanh thu vẫn tăng trưởng.
   https://tuoitre.vn/nagakawa-hang-may-lanh-duy-nhat-tren-san-bat-ngo-lo-sau-hai-quy-lai-ky-luc-100261115182932766.htm
@@ -36,15 +39,15 @@
 - **[4] Bộ trưởng Tài chính Mỹ công khai chỉ trích Bộ Thương mại vì vụ Nvidia** – VnExpress Thế giới · Sat, 14 Nov 2026
   Bộ trưởng Tài chính Bessent cho rằng Bộ Thương mại Mỹ đã trì hoãn đưa Megaspeed, bên nhập nhiều chip của Nvidia, vào danh sách hạn chế xuất khẩu.
   https://vnexpress.net/bo-truong-tai-chinh-my-cong-khai-chi-trich-bo-thuong-mai-vi-vu-nvidia-5144561.html
-- **[4] Con đường cấm xe hai lần một năm để phục vụ rắn** – VnExpress Thế giới · Fri, 13 Nov 2026
-  Xe cộ bị cấm lưu thông qua tuyến đường Snake Road tại bang Illinois hai lần mỗi năm nhằm bảo vệ loài rắn và bò sát trong mùa di cư.
-  https://vnexpress.net/con-duong-cam-xe-hai-lan-mot-nam-de-phuc-vu-ran-5144325.html
-- **[4] Hai bộ trưởng Mỹ 'bất đồng' vì công ty của Alice Huang** – VnExpress Thế giới · Fri, 13 Nov 2026
-  Truyền thông Mỹ cho hay Bộ trưởng Tài chính Bessent đã chất vấn Bộ trưởng Thương mại Lutnick vì không đưa công ty Megaspeed của Alice Huang vào diện tiềm ẩn rủi ro.
-  https://vnexpress.net/hai-bo-truong-my-bat-dong-vi-cong-ty-cua-alice-huang-5143976.html
 - **[4] Lãi suất trái phiếu ngân hàng neo cao dù tiết kiệm hạ nhiệt** – VnExpress Kinh doanh · Mon, 16 Nov 2026
   Các ngân hàng trả lãi bình quân gần 9% một năm cho trái phiếu mới phát hành từ cuối tháng 10 đến nay, chưa có dấu hiệu giảm như lãi suất tiết kiệm.
   https://vnexpress.net/lai-suat-trai-phieu-ngan-hang-neo-cao-du-tiet-kiem-ha-nhiet-5144973.html
+- **[4] Iran cảnh báo tên lửa Khorramshahr có tầm bắn vươn tới căn cứ Mỹ ở châu Âu** – Tuổi Trẻ Thế giới · 11/16/2026 11:51
+  Iran đã cải tiến đầu đạn của tên lửa đạn đạo Khorramshahr-4, với tầm bắn lên tới 3.000 - 4.000km.
+  https://tuoitre.vn/iran-canh-bao-ten-lua-khorramshahr-co-tam-ban-vuon-toi-can-cu-my-o-chau-au-100261116114420092.htm
+- **[4] Mỹ muốn câu trả lời từ Nvidia về một chuyện còn quan trọng hơn vụ ngoại tình của Jensen Huang** – Tuổi Trẻ Thế giới · 11/16/2026 7:02:
+  Ngày 15-11, Bộ trưởng Tài chính Mỹ Scott Bessent yêu cầu Tập đoàn Nvidia giải thích liệu công ty này có cố ý để những dòng chip trí tuệ nhân tạo (AI) tiên tiến nhất của mình được đưa sang Trung Quốc hay không.
+  https://tuoitre.vn/my-muon-cau-tra-loi-tu-nvidia-ve-mot-chuyen-con-quan-trong-hon-vu-ngoai-tinh-cua-jensen-huang-100261116065943732.htm
 - **[4] Tình báo Mỹ nói Iran sở hữu từ 1.500 - 2.500 tên lửa trong kho vũ khí** – Tuổi Trẻ Thế giới · 11/15/2026 5:18:
   Cộng đồng tình báo Mỹ đánh giá Iran hiện sở hữu từ 1.500 - 2.500 tên lửa trong kho vũ khí.
   https://tuoitre.vn/tinh-bao-my-noi-iran-so-huu-tu-1500-2500-ten-lua-trong-kho-vu-khi-100261115160409715.htm
@@ -72,6 +75,3 @@
 - **[4] Tổng thống Trump lại đổi ý không muốn tấn công Iran?** – Thanh Niên Thế giới · Sat, 14 Nov 26 1
   Tổng thống Mỹ Donald Trump gần đây nói với các cố vấn cấp cao rằng có lẽ ông sẽ tạm hoãn chiến dịch tấn công Iran nếu Tehran không đưa ra thêm bất kỳ hành động khiêu khích mới nào đối với Washington.
   https://thanhnien.vn/tong-thong-trump-lai-doi-y-khong-muon-tan-cong-iran-185261114181926613.htm
-- **[4] Mỹ - Iran - Qatar lo ngại ông Netanyahu có thể phá hỏng đàm phán?** – Thanh Niên Thế giới · Sat, 14 Nov 26 1
-  Các nhà đàm phán từ Mỹ, Iran và Qatar bày tỏ lo ngại rằng những cuộc thảo luận nhằm đạt thỏa thuận chấm dứt xung đột Mỹ-Iran có thể bị phá hỏng bởi nỗ lực của Thủ tướng Israel Benjamin Netanyahu trong việc tái khởi động 
-  https://thanhnien.vn/my-iran-qatar-lo-ngai-ong-netanyahu-co-the-pha-hong-dam-phan-185261114164204005.htm
