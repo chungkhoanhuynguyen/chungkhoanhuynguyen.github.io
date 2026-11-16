@@ -130,7 +130,7 @@ S = [
         ('me', 'Phần lương tăng thêm, mình để dành cho lúc bố mẹ già'),
         ('Vợ', 'Còn anh đi học tiếng Nhật cho lên tổ trưởng')]),
       say=("Anh Hưng nhắn cho vợ: thôi, anh chưa đổi xe trả góp nữa. Vợ anh đáp: ừ, tiền trả nợ đừng quá ba mươi ba phần trăm tiền lương. "
-           "Anh nhắn tiếp: phần lương tăng thêm, mình để riêng cho lúc bố mẹ già. Vợ anh thêm: còn anh đi học tiếng Nhật cho lên tổ trưởng. Thu nhập tăng nhanh nhất vẫn đến từ tay nghề.")),
+           "Anh nhắn tiếp: phần lương tăng thêm, hai vợ chồng để riêng cho lúc bố mẹ già. Vợ anh thêm: còn anh đi học tiếng Nhật cho lên tổ trưởng. Thu nhập tăng nhanh nhất vẫn đến từ tay nghề.")),
  dict(k='checklist', anh=NHA, cap=('PHÉP THỬ CỦA ANH CHỊ', 'TRẢ NỢ CHIẾM BAO NHIÊU LƯƠNG?'), cols=CC, moc=True,
       items=[('Dưới 30%: còn thở được', GREEN),
              ('30 đến 50%: bắt đầu căng', GOLD),
@@ -148,7 +148,7 @@ S = [
         ('Somchai', 'Nước ông đang chạy nhanh như nước tôi ngày xưa'),
         ('Somchai', 'Đừng già trước khi giàu như bọn tôi nhé'),
         ('me', 'Cảm ơn ông. Tôi bắt đầu từ nhà mình trước')]),
-      say=("Gần nửa đêm, Somchai nhắn thêm: nước Việt Nam đang chạy nhanh như Thái Lan ngày xưa, đừng già trước khi giàu nhé. Anh Hưng trả lời: cảm ơn, mình bắt đầu từ nhà mình trước. "
+      say=("Gần nửa đêm, Somchai nhắn thêm: nước Việt Nam đang chạy nhanh như Thái Lan ngày xưa, đừng già trước khi giàu nhé. Anh Hưng trả lời rằng anh sẽ bắt đầu từ nhà mình trước. "
            "Tăng trưởng tám đến chín phần trăm là cơ hội của cả một thế hệ. Nhưng Thái Lan cho thấy, cơ hội đó có hạn dùng.")),
  dict(k='end', cap=('HÀN QUỐC HAY THÁI LAN', 'THỨ HAI?'), cols=CC,
       say=("Còn anh chị nghĩ sao: Việt Nam sẽ thành Hàn Quốc, hay thành Thái Lan thứ hai? Và khoản trả nợ mỗi tháng của nhà mình đang chiếm bao nhiêu phần thu nhập? Kể cho em và mọi người ở phần bình luận nhé. "
