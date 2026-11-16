@@ -82,7 +82,7 @@ S = [
         ('Nhẫn trơn: tiệm bán ra', '137,3')]),
       say=("Chị Thu chụp bảng giá sáng nay. Vàng miếng tiệm mua vào một trăm ba mươi tư phẩy năm, bán ra một trăm ba mươi bảy phẩy năm. "
            "Nhẫn trơn mua vào một trăm ba mươi ba phẩy ba, bán ra một trăm ba mươi bảy phẩy ba. "
-           "Tức là ai mua hôm nay rồi bán ngay, đã mất ba đến bốn triệu đồng mỗi lượng. Vàng phải tăng ít nhất chừng đó mới hoà vốn.")),
+           "Tức là ai mua hôm nay rồi bán ngay, đã mất từ ba triệu đến bốn triệu đồng mỗi lượng. Vàng phải tăng ít nhất chừng đó mới hoà vốn.")),
  # ---------------- CHƯƠNG 3 ----------------
  dict(k='call', ch='Chương 3 – Lần trước: năm 2011', cap=('"MẸ MUA 49 TRIỆU', 'CHỜ 9 NĂM MỚI HẾT LỖ"'), cols=CR, moc=True, call=dict(ten='Mẹ', phu='Gọi thoại', mau=V_, loi=[
         'Năm 2011 mẹ cũng mua đúng đỉnh 49 triệu',
@@ -96,15 +96,15 @@ S = [
         ('Năm vượt lại đỉnh cũ', '2020')]),
       say=("Đây là những con số của lần trước. Cuối tháng tám năm hai nghìn không trăm mười một, vàng miếng lập đỉnh bốn mươi chín triệu đồng. Năm hai nghìn không trăm mười sáu, giá còn khoảng ba mươi ba triệu, mất khoảng ba mươi ba phần trăm, em tự tính. "
            "Trên thế giới, vàng đi từ một nghìn chín trăm hai mươi đô la một ounce. Tới cuối năm hai nghìn không trăm mười lăm, giá chỉ còn khoảng một nghìn không trăm năm mươi đô la, mất bốn mươi lăm phần trăm. "
-           "Phải tới năm hai nghìn không trăm hai mươi, giá mới vượt lại đỉnh cũ. Gần chín năm.")),
+           "Phải tới năm hai nghìn không trăm hai mươi, giá mới vượt lại đỉnh cũ. Người mua đỉnh đã phải chờ gần chín năm.")),
  dict(k='bars', anh=WM, cap=('ĐỈNH VÀNG VÀ CÚ RƠI', 'NĂM 1980, 2011 VÀ 2026'), cols=CR, moc=True,
       bars=[('Năm 1980', 70, R_, 'Mất 70%'), ('Năm 2011', 45, V_, 'Mất 45%'), ('Năm 2026', 30.7, X_, 'Đã mất 30,7%')],
-      say=("Lùi xa hơn nữa. Tháng một năm một nghìn chín trăm tám mươi, vàng thế giới lên tám trăm năm mươi đô la một ounce. Sau đó giá rơi dần. Tới năm một nghìn chín trăm chín mươi chín, vàng chỉ còn khoảng hai trăm năm mươi đô la, mất bảy mươi phần trăm sau mười chín năm. "
+      say=("Em lùi xa hơn nữa. Tháng một năm một nghìn chín trăm tám mươi, vàng thế giới lên tám trăm năm mươi đô la một ounce. Sau đó giá rơi dần. Tới năm một nghìn chín trăm chín mươi chín, vàng chỉ còn khoảng hai trăm năm mươi đô la, mất bảy mươi phần trăm sau mười chín năm. "
            "Năm hai nghìn không trăm mười một mất bốn mươi lăm phần trăm. Còn lần này, mới mười tháng, đã mất ba mươi phẩy bảy phần trăm.")),
  dict(k='checklist', anh=HN, cap=('LẦN NÀY VÀ NĂM 2011', 'GIỐNG 2, KHÁC 2'), cols=CR, moc=True,
       items=[('Giống: người dân xếp hàng ở đỉnh', R_), ('Giống: Mỹ đổi hướng lãi suất', R_), ('Khác: lần này rơi nhanh hơn', V_), ('Khác: giá trong nước chênh lớn', V_)],
       say=("Đặt hai lần cạnh nhau, có hai điểm giống. Một: đỉnh giá đều đến lúc người dân xếp hàng mua vì sợ tiền mất giá. Hai: vàng quay đầu khi nước Mỹ không còn hạ lãi suất. "
-           "Và hai điểm khác. Lần này giá rơi nhanh hơn nhiều, mười tháng đã mất gần một phần ba. Và giá trong nước đang cao hơn thế giới khoảng mười hai phần trăm. "
+           "Và hai điểm khác. Lần này giá rơi nhanh hơn nhiều, mười tháng đã mất khoảng ba mươi mốt phần trăm. Và giá trong nước đang cao hơn thế giới khoảng mười hai phần trăm. "
            "Lịch sử chưa lặp lại, nhưng chưa, không có nghĩa là không thể.")),
  # ---------------- CHƯƠNG 4 ----------------
  dict(k='chat', ch='Chương 4 – Bán, giữ hay mua thêm?', cap=('"HAY MÌNH MUA THÊM', 'CHO GIÁ TRUNG BÌNH THẤP?"'), cols=CR, moc=True, chat=dict(ten='Chồng', tv='Đang hoạt động', gio='12:15', mau=G_, msgs=[
@@ -144,7 +144,7 @@ S = [
       say=("Gần khuya, mẹ nhắn thêm: vàng không có lỗi đâu con, lỗi là mua lúc ai cũng mua, bằng tiền mình sắp cần dùng. Chị Thu trả lời rằng chị sẽ giữ, nhưng không vay thêm đồng nào. "
            "Năm hai nghìn không trăm mười một, người mất nhiều nhất không phải người mua vàng, mà là người phải bán vàng đúng lúc giá thấp nhất.")),
  dict(k='end', cap=('VÀNG MẤT 30%', 'ANH CHỊ BÁN HAY GIỮ?'), cols=CC,
-      say=("Còn anh chị thì sao: vàng đang chiếm bao nhiêu phần tài sản của nhà mình, dưới hai mươi phần trăm, từ hai mươi đến năm mươi, hay trên năm mươi phần trăm? Và anh chị đang giữ, bán, hay chờ mua thêm? "
+      say=("Còn anh chị thì sao: vàng đang chiếm bao nhiêu phần tài sản của nhà mình, dưới hai mươi phần trăm, từ hai mươi đến năm mươi phần trăm, hay trên năm mươi phần trăm? Và anh chị đang giữ, bán, hay chờ mua thêm? "
            "Kể cho em và mọi người ở phần bình luận nhé. Nếu thấy video hữu ích, anh chị đăng ký kênh để xem những câu hỏi lớn tiếp theo.")),
 ]
 import ql_post; S = ql_post.tach(S, max_tu=100)
