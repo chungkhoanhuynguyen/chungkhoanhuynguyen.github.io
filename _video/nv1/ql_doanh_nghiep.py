@@ -93,7 +93,7 @@ S = [
            "Nhưng số lao động đăng ký chỉ bảy trăm chín mươi chín nghìn bốn trăm người, giảm mười bảy phẩy bốn phần trăm. Riêng tháng mười, số công ty mới giảm gần ba mươi phần trăm so với cùng kỳ. "
            "Công ty mới to hơn, nhiều tiền hơn, nhưng tuyển ít người hơn.")),
  # ---------------- CHƯƠNG 4 ----------------
- dict(k='call', ch='Chương 4 – Lần trước: năm 2024', cap=('"NĂM 2024 ANH NHẬN', '20 BỘ HỒ SƠ GIẢI THỂ"'), cols=CR, moc=True, call=dict(ten='Anh Hải', phu='Gọi thoại', mau=V_, loi=[
+ dict(k='call', ch='Chương 4 – Lần trước: năm 2024', cap=('"HỒ SƠ CHỜ GIẢI THỂ', 'TỪ NĂM 2024 VẪN ĐẦY TỦ"'), cols=CR, moc=True, call=dict(ten='Anh Hải', phu='Gọi thoại', mau=V_, loi=[
         'Hồ sơ chờ giải thể từ năm 2024 vẫn còn đầy tủ',
         'Năm nay thủ tục nhanh hơn nên mới dồn một lúc']),
       say=("Anh Tuấn gọi cho anh Hải, đồng nghiệp làm dịch vụ giải thể doanh nghiệp. Anh Hải kể: hồ sơ chờ giải thể từ năm hai nghìn không trăm hai mươi tư vẫn còn đầy tủ. "

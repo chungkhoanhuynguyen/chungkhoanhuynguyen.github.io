@@ -10,7 +10,7 @@
 | 8 | the/bars | GIẢI THỂ NHIỀU NHẤT / BÁN BUÔN, BÁN LẺ, XE CỘ | so sánh | nền phố |
 | 9 | the/giay | ÁP LỰC THẬT / DỒN VÀO DOANH NGHIỆP NHỎ | căng | lật giấy |
 | 10 | the/cards | CÔNG TY TO LÊN / NHƯNG ÍT TUYỂN NGƯỜI HƠN | suy nghĩ | nền phố |
-| 11 | the/call | "NĂM 2024 ANH NHẬN / 20 BỘ HỒ SƠ GIẢI THỂ" | trầm, lo | chuông gọi |
+| 11 | the/call | "HỒ SƠ CHỜ GIẢI THỂ / TỪ NĂM 2024 VẪN ĐẦY TỦ" | trầm, lo | chuông gọi |
 | 12 | the/giay | LẦN TRƯỚC: NĂM 2024 / 76.200 CÔNG TY XẾP HÀNG CHỜ | căng | lật giấy |
 | 13 | the/checklist | NĂM NAY VÀ NĂM 2024 / GIỐNG 2, KHÁC 2 | quyết tâm | tick |
 | 14 | the/giay | 15 KHÁCH CÒN 11 / MẤT 8 TRIỆU MỖI THÁNG | căng | lật giấy |
