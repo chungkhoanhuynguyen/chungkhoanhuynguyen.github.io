@@ -1,0 +1,49 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Loạn Thế Lãnh Chúa</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none}
+html,body{width:100%;height:100%;overflow:hidden;background:#141008;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#f3e6c4}
+canvas{position:fixed;inset:0;width:100%;height:100%;touch-action:none}
+.ui{position:fixed;pointer-events:none;z-index:2}.ui>*{pointer-events:auto}
+#top{left:6px;top:6px;right:60px;display:none;gap:5px;flex-wrap:wrap;align-items:center}
+.chip{background:rgba(28,20,12,.86);border:1px solid #a8823e;border-radius:8px;padding:4px 8px;font-size:12.5px;font-weight:600;color:#f3e6c4;white-space:nowrap;font-family:inherit}
+#log{left:6px;bottom:6px;width:min(400px,56vw);font-size:12px;line-height:1.4;text-shadow:0 0 3px #000,0 0 3px #000;pointer-events:none}
+#zb{right:6px;top:6px;display:none;flex-direction:column;gap:5px}
+#zb button{width:42px;height:38px;font-size:18px;padding:0}
+#menu{left:50%;top:50%;transform:translate(-50%,-50%);width:min(480px,94vw);max-height:92vh;overflow:auto;background:linear-gradient(#3b2b19,#21170c);border:2px solid #c9a052;border-radius:12px;padding:14px;display:none;box-shadow:0 10px 40px rgba(0,0,0,.6);z-index:5}
+#menu h2{font-size:19px;color:#ffd77a;margin-bottom:6px}#menu h3{font-size:14px;color:#ffd77a;margin:10px 0 2px}
+#menu p{font-size:14px;margin:4px 0;line-height:1.45}
+#menu table{width:100%;font-size:12.5px;border-collapse:collapse;margin-top:4px}#menu td{padding:3px 4px;border-bottom:1px solid #5a4528}
+button.b{display:block;width:100%;margin-top:7px;padding:10px;border-radius:8px;border:1px solid #c9a052;background:linear-gradient(#6a4a22,#4a3216);color:#fff;font-weight:700;font-size:15px;font-family:inherit}
+button.b:disabled{opacity:.35}
+#bbar{left:50%;bottom:6px;transform:translateX(-50%);display:none;gap:5px;flex-wrap:wrap;justify-content:center;width:max-content;max-width:96vw}
+#bbar button{padding:9px 11px;border-radius:8px;border:1px solid #c9a052;background:rgba(74,50,22,.92);color:#fff;font-weight:700;font-size:13.5px;font-family:inherit;white-space:nowrap}
+#bbar button.on{background:#b9741a;box-shadow:0 0 10px #ffb030}
+#binfo{left:50%;top:6px;transform:translateX(-50%);display:none;max-width:84vw}
+
+.bdg{display:inline-block;padding:1px 8px;border-radius:10px;color:#1a1208;font-weight:800;font-size:12px;box-shadow:0 0 8px rgba(255,220,120,.55)}
+#toast{left:50%;top:46px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:6px;pointer-events:none;width:min(560px,92vw);z-index:6}
+.tst{background:linear-gradient(#3b2b19,#1f150b);border:2px solid #ffd77a;border-radius:10px;padding:7px 14px;font-size:14px;font-weight:700;text-align:center;box-shadow:0 6px 24px rgba(0,0,0,.6);animation:tin .35s}
+.tst.big{font-size:18px;padding:12px 22px;line-height:1.55;background:radial-gradient(#6a4612,#1f150b)}
+@keyframes tin{from{transform:translateY(-14px) scale(.9);opacity:0}}
+@media (max-height:500px),(max-width:700px){#toast{top:auto;bottom:58px;left:6px;transform:none;width:calc(100vw - 62px);align-items:flex-start}.tst{max-width:100%}.chip{font-size:11px;padding:3px 6px}#top{gap:4px;right:52px}#cLeg{display:none}#log{font-size:10.5px;width:50vw;max-height:3em;overflow:hidden;opacity:.85}#zb{gap:4px}#zb button{width:40px;height:34px;font-size:16px}
+ #menu{padding:10px}#menu h2{font-size:16px}#menu p{font-size:12.5px}button.b{padding:9px;font-size:13.5px;margin-top:5px}#bbar button{padding:9px 9px;font-size:12.5px}.tst{font-size:12.5px;padding:5px 10px}.tst.big{font-size:15px;padding:9px 14px}#binfo .chip{font-size:10.5px}}
+#rot{position:fixed;left:0;right:0;top:auto;bottom:110px;z-index:8;animation:rotf 7s forwards;background:rgba(20,14,8,.9);color:#ffd77a;text-align:center;font-size:13px;padding:6px;display:none;pointer-events:none}
+@media (orientation:portrait) and (pointer:coarse){#rot{display:block}}@keyframes rotf{0%,80%{opacity:1}100%{opacity:0;visibility:hidden}}
+.tabs{display:flex;gap:4px;flex-wrap:wrap;margin:-4px 0 8px}.tabs button{flex:1;min-width:0;padding:7px 4px;border-radius:7px;border:1px solid #8a6a32;background:#3a2a16;color:#e8d8b0;font-weight:700;font-size:12.5px;font-family:inherit;white-space:nowrap}
+.tabs button.on{background:#b9741a;color:#fff;border-color:#ffd77a}.tabs.sm button{font-size:11.5px;padding:5px 3px}
+.sb{padding:3px 7px;border-radius:6px;border:1px solid #8a6a32;background:#4a3216;color:#fff;font-size:11.5px;font-weight:700;font-family:inherit;margin:1px}.sb.war{background:#8a2a1a;border-color:#ff8a6a}
+#menu{display:none}#menu td{vertical-align:middle}.gt td{padding:2px 3px;font-size:11.5px;white-space:nowrap}.gt td:first-child{white-space:normal}.gt .sb{padding:2px 5px}#chatBox{max-height:40vh;min-height:90px;overflow:auto;background:rgba(0,0,0,.3);border-radius:8px;padding:8px;font-size:13.5px;line-height:1.45}.cm{margin:4px 0}.cm.u{color:#cfe8ff}.crow{display:flex;gap:6px;margin-top:6px}#chatIn{flex:1;min-width:0;padding:9px;border-radius:8px;border:1px solid #8a6a32;background:#1a120a;color:#fff;font-size:14px;font-family:inherit}#menu{z-index:7}
+@media (max-width:520px){.tabs button{flex:1 1 30%;font-size:12px}.tabs.sm button{flex:1 1 45%}#menu table{font-size:11.5px}}
+#load{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;font-size:18px;color:#ffd77a;background:#141008;z-index:9}
+</style></head><body>
+<div id="load">⚔ Đang tạo thế giới...</div>
+<canvas id="c"></canvas>
+<div class="ui" id="top"><span class="chip" id="cDay"></span><span class="chip" id="cGold"></span><span class="chip" id="cArmy"></span><span class="chip" id="cRank"></span><span class="chip" id="cLeg"><span style="color:#7dff8a">■ ta</span> <span style="color:#ff6a5a">■ thù</span> <span style="color:#fff">■ hòa</span></span><button class="chip" id="bFac">📜 Thế cục</button></div>
+<div class="ui" id="zb"><button class="chip" id="zIn">＋</button><button class="chip" id="zOut">－</button><button class="chip" id="zMe">📍</button><button class="chip" id="zTp">🌐</button><button class="chip" id="zAc">🤖</button><button class="chip" id="zKg">👑</button><button class="chip" id="zCo">🧭</button><button class="chip" id="zMu">🔊</button><button class="chip" id="zMap" style="font-size:13px">🗺</button><button class="chip" id="zQ" style="font-size:12px">⚙</button><button class="chip" id="zFs" style="font-size:15px">⛶</button></div>
+<div class="ui" id="log"></div>
+<div class="ui" id="binfo"><span class="chip" id="bInfoT" style="white-space:normal;display:block;text-align:center"></span></div>
+<div class="ui" id="bbar"><button data-o="hold">🛡 Giữ trận</button><button data-o="charge">⚔ Xung phong</button><button id="bSpd">⏩ x4</button><button id="bAuto">🤖 Tự động</button><button id="bSkip">⏭ Xem kết quả</button><button id="bRet">🏳 Rút</button></div>
+<div class="ui" id="menu"></div><div class="ui" id="toast"></div><div id="rot">📱 Xoay ngang điện thoại để chơi tốt hơn · bấm ⛶ để toàn màn hình</div>
+<script>

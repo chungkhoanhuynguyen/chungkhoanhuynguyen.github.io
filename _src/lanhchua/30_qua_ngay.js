@@ -1,0 +1,40 @@
+function newDay(){G.day++;const pl=P0(),cnt={};for(const s of S)cnt[s.fac]=(cnt[s.fac]||0)+1;
+ for(const s of S){const base=[40,25,12][s.type]*(1+.05*(cnt[s.fac]||0));s.pool=Math.min(base*25|0,s.pool+Math.round(base));if(s.fac==pl.fac&&G.divine){const T=myGarT(s);if(tot(s.gar)<T){const k=Math.ceil(T*.05);s.gar.inf+=Math.ceil(k*.55);s.gar.arc+=Math.ceil(k*.3);s.gar.cav+=Math.ceil(k*.15)}continue}if(s.race>=9&&G.F[s.fac]&&G.F[s.fac].race>=9){if(tot(s.gar)<[120000,80000,55000][s.type]){s.gar.inf+=300;s.gar.arc+=150}}else if(tot(s.gar)<[4000,2500,1500][s.type]){s.gar.inf+=9;s.gar.arc+=6}}
+ if(G.rev&&G.day==G.rev[0]){const o=G.rev[1];G.war[o][pl.fac]=G.war[pl.fac][o]=1;G.rev=null;terr();toast(`⚔ ${facN(o)} tuyên chiến với bạn — kẻ phản loạn!`,'#ff6a5a',1);SFX.war()}
+ if(G.day%4==0){const INC=new Map();for(const p of G.L)if(p.kind=='rf'&&!p.dead)INC.set(p.to,(INC.get(p.to)||0)+tot(p.t));for(const s of S){const o=G.L[s.own];if(o&&o.kind!='pl'&&s.race!=ACT)continue;if(!o||o.dead||o.fac!=s.fac||s.pool<40||dist(o,s)<60)continue;if(o.kind=='pl'&&!G.rf)continue;
+  const room=rank(o)[1]-tot(o.t)-(INC.get(o.id)||0);if(room<40)continue;const n=Math.min(s.pool,room);s.pool-=n;INC.set(o.id,(INC.get(o.id)||0)+n);
+  pushP({kind:'rf',fac:s.fac,x:s.x,y:s.y+14,t:mix(n),to:o.id,name:'Viện binh '+s.name});if(o.kind=='pl'){addLog(`${s.name} gửi ${fmt(n)} viện binh tới bạn.`,'#9cf');toast(`📯 ${s.name} gửi ${fmt(n)} viện binh — đang hành quân tới bạn`,'#9cf')}}}
+ if(G.day%5==0&&G.rf){const f=G.F[pl.fac],k=f&&G.L[f.king];if(k&&k!==pl&&!k.dead){const src=S.filter(s=>s.fac==pl.fac&&s.own===k.id).sort((a,b)=>b.pool-a.pool)[0],room=rank(pl)[1]-tot(pl.t)-incoming(pl);
+  if(src&&room>20){const n=Math.min(Math.floor(src.pool*.4),room,120+Math.floor((pl.ren||0)/8));if(n>=20){src.pool-=n;pushP({kind:'rf',fac:pl.fac,x:src.x,y:src.y+14,t:mix(n),to:0,name:'Quân Vua ban'});toast(`👑 ${pname(k)} ban cho bạn ${fmt(n)} quân — đang hành quân tới`,'#ffd23a');addLog(`${pname(k)} ban ${fmt(n)} quân cho bạn.`,'#ffd23a')}}}}
+ if(G.day%2==0){const L=[0,1,2,3,4,4,...(G.divine?[5,6,7,8]:[]),...(G.xian?[9,10,11]:[])];for(const c of L)JQ.push(()=>absWar([c]))}
+ G.ngen=myGens().length;if(G.day%8==0)JQ.push(invade);JQ.push(vassalDay,aiRecruit,()=>{for(const f of G.F){if(f.dead||f.king<0)continue;const k=G.L[f.king];if(!k||k.dead||k.kind=='pl')continue;const r=rank(k);if(r[1]>=20000&&tot(k.t)<r[1])add(k.t,mix(Math.min(r[1]-tot(k.t),Math.ceil(r[1]*.04))))}});if(G.day%10==3)JQ.push(slim);for(const f of G.F){if(f.dead||f.king<0)continue;f.heirs=f.heirs==null?ri(1,4):f.heirs;if(f.heirs<9&&Math.random()<.025){f.heirs++;const k=G.L[f.king];if(k&&!k.dead&&f===G.F[P0().fac]&&k.kind!='pl')addLog(`👶 ${pname(k)} có thêm một hoàng tử (${f.heirs} người kế vị).`,'#ffe9a8')}}if(G.day%10==5)xWar();calcMV();sanitize();
+if(G.day%7==0)JQ.push(()=>{const pl=P0();{const al=G.F.map((f,i)=>i).filter(i=>G.F[i].race&&G.F[i].race!=4&&!G.F[i].dead&&S.some(s=>s.fac==i)&&i!=pl.fac);if(al.length>1){const a=al[ri(0,al.length-1)],bl=al.filter(i=>G.F[i].race==G.F[a].race&&i!=a),b=bl[ri(0,bl.length-1)];if(b!=null&&!G.war[a][b]&&Math.random()<.8){G.war[a][b]=G.war[b][a]=1;if(Math.random()<.5)addLog(`⚔ ${facN(a)} tuyên chiến với ${facN(b)}!`,'#ffb070');terr()}}}})
+if(G.day%20==0)JQ.push(()=>{const pl=P0();{const al=G.F.map((f,i)=>i).filter(i=>!G.F[i].dead&&G.F[i].race!=4&&S.some(s=>s.fac==i));const a=al[ri(0,al.length-1)],bl=al.filter(i=>G.F[i].race==G.F[a].race),b=bl[ri(0,bl.length-1)];
+  if(a!=b&&G.war[a]&&G.war[b]){const w=G.war[a][b]?0:(Math.random()<.7?1:0);G.war[a][b]=G.war[b][a]=w;terr();if(a==pl.fac||b==pl.fac){toast(w?`⚔ ${facN(a)} TUYÊN CHIẾN với ${facN(b)}!`:`🕊 ${facN(a)} và ${facN(b)} GIẢNG HÒA`,w?'#ff6a5a':'#7dff8a');if(w)SFX.war()}if(a==pl.fac||b==pl.fac||Math.random()<.4)addLog(w?`⚔ ${facN(a)} tuyên chiến với ${facN(b)}!`:`🕊 ${facN(a)} và ${facN(b)} giảng hòa.`,'#ffb070')}}})
+ for(const v of V){if(v.burn>0){v.burn--;continue}v.pool=Math.min(80,v.pool+6);if(v.own===0)mfx.push({x:v.x,y:v.y-30,t:2,s:'+'+VINC+'💰',c:'#ffd77a'})}
+ if(G.day%3==0){let n=0;for(const v of V){if(v.own!==0||v.burn||v.pool<5)continue;const room=rank(pl)[1]-tot(pl.t)-incoming(pl);const k=Math.min(v.pool,room);if(k<5)continue;v.pool-=k;n+=k;pushP({kind:'rf',fac:pl.fac,x:v.x,y:v.y,t:mix(k),to:0,name:'Tân binh '+v.name})}if(n)toast(`🌾 Làng của bạn gửi ${fmt(n)} tân binh tới`,'#9be36b')}
+ if(G.auto&&G.day%2==0){const room=rank(pl)[1]-tot(pl.t)-incoming(pl);const s=S.filter(s=>s.fac==pl.fac&&s.pool>=20).sort((a,b)=>dist(a,pl)-dist(b,pl))[0];
+  if(s&&room>=30){const n=Math.min(s.pool,room,400,Math.floor((G.gold-300)*.3/7));if(n>=20){s.pool-=n;G.gold-=n*7;pushP({kind:'rf',fac:pl.fac,x:s.x,y:s.y+14,t:mix(n),to:0,name:'Mộ binh '+s.name});toast(`🪖 Tự động chiêu mộ ${fmt(n)} lính tại ${s.name} (-${fmt(n*7)} vàng)`,'#9cf')}}}
+ if(G.day%3==0)JQ.push(save)}
+function playerDown(){const pl=P0();G.gold=Math.floor(G.gold*.6);const own=S.filter(s=>s.fac==pl.fac);const s=own.length?nearestOf(own,pl):nearestOf(S.filter(s=>!atWar(pl.fac,s.fac))||S,pl)||S[0];
+ pl.x=s.x+18;pl.y=s.y+30;pl.tx=pl.x;pl.ty=pl.y;pl.t={inf:30,arc:10,cav:0};pl.safe=6;addLog(`Bạn bị đánh bại, rút về ${s.name} với 40 tàn quân.`,'#f77')}
+function income(){const pl=P0();return S.filter(s=>s.own===0).reduce((a,s)=>a+[500,300,150][s.type],0)+V.filter(v=>v.own===0&&!v.burn).length*VINC+(G.F[pl.fac]&&!G.F[pl.fac].dead?60:0)}
+const wages=()=>{const t=P0().t;return Math.round(t.inf*.08+t.arc*.12+t.cav*.25)};
+let ACT=0,ARW=0;const PC=()=>G&&G.L?contOf(P0().x,P0().y):-1;const showArrows=s=>{ARW=performance.now()+(s||6)*1000};const LBL=[],SMALL=()=>W<720||H<480;
+let UF=0;function upMap(dt){ACT=contOf(P0().x,P0().y);G.dayT+=dt;if(G.dayT>=4){G.dayT-=4;newDay()}
+ if(G.xian){mkPortals();const pl=P0();if(pl.safe<=0)for(const q of G.portals)if(Math.abs(q.x-pl.x)<26&&Math.abs(q.y-pl.y)<20){usePortal(q);break}}
+ G.et=(G.et||0)+dt;if(G.et>=1){G.et-=1;acTick();const pl=P0();G.gold+=(income()-wages())/4;if(G.gold<0){G.gold=0;if(Math.random()<.25){const k=Math.ceil(tot(pl.t)*.03);kill(pl.t,k);addLog(`Hết vàng trả lương, ${fmt(k)} lính bỏ trốn!`,'#f77')}}}
+ for(let i=mfx.length-1;i>=0;i--){mfx[i].t-=dt;mfx[i].y-=dt*14;if(mfx[i].t<=0)mfx.splice(i,1)}
+ const L=G.L,pl=L[0];UF++;
+ for(const p of L){if(p.dead){if(p.dead>0){p.dead-=dt;if(p.dead<=0)respawn(p)}continue}if(p.inF)continue;let ddt=dt;if(p.kind!='pl'&&(Math.abs(p.x-pl.x)>2200||Math.abs(p.y-pl.y)>2200)){if((UF+p.id)%3)continue;ddt=dt*3}p._c=contOf(p.x,p.y);if(p.kind!='pl'&&p._c!=ACT&&!(p.kind=='rf'&&p.to===0)&&!(p.fac==pl.fac&&p.kind=='lord'&&isMyKing())&&!p.inv)continue;
+  if(p.kind!='pl'){p.th-=ddt;if(p.th<=0){p.th=rnd(1,2);think(p)}}
+  if(p.safe>0)p.safe-=ddt;move(p,ddt);if(paused||mode!='map')return}
+ upFights(dt);if(paused||mode!='map')return;
+ const AL=L.filter(p=>!p.dead&&!p.inF&&(p._c==ACT||p.inv)),GR=new Map();AL.forEach((p,i)=>{p._i=i;const k=(p.x/20|0)*2000+(p.y/20|0);let c=GR.get(k);if(!c)GR.set(k,c=new Map());let a=c.get(p.fac);if(!a)c.set(p.fac,a=[]);a.push(p)});
+ for(const a of AL){if(a.dead||a.inF)continue;const cx=a.x/20|0,cy=a.y/20|0;for(let dx=-1;dx<=1;dx++)for(let dy=-1;dy<=1;dy++){const cc=GR.get((cx+dx)*2000+cy+dy);if(!cc)continue;for(const [f,arr] of cc){if(f===a.fac||!atWar(a.fac,f))continue;for(const b of arr){if(b._i<=a._i)continue;
+  if(b.dead||a.dead||a.inF||b.inF||Math.abs(a.x-b.x)>18||Math.abs(a.y-b.y)>18||(a.kind=='rf'&&b.kind=='rf'))continue;
+  if(a.kind=='pl'||b.kind=='pl'){if(pl.safe<=0&&tot(pl.t)>0){encounter(a.kind=='pl'?b:a);return}continue}startFight(a,b,null)}}}}
+ if(G.mk&&(G.mk.t-=dt)<0)G.mk=null;
+ for(const c of clouds){c.x+=c.v*dt;if(c.x>WW+250)c.x=-250}}
+
+/* ================= MENU ================= */
