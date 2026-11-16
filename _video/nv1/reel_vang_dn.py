@@ -38,7 +38,7 @@ R2 = dict(key='RV1711DN', tieu_de='182.000 doanh nghiệp rút lui trong 10 thá
  canh=[
   C('182.000 DOANH NGHIỆP', 'Cục Thống kê vừa công bố: 10 tháng đầu năm nay, cộng lại có 182.000 doanh nghiệp rút lui khỏi thị trường. Gần 600 công ty mỗi ngày, em tự tính.',
     the=dict(loai='lon', tieu='RÚT LUI 10 THÁNG 2026', nguon='Cục Thống kê, báo Thị trường Tài chính Tiền tệ 3/11/2026', dong=[['182.000', 130, 'do'], ['GẦN 600 MỖI NGÀY', 60, 'trang']])),
-  C('GIẢI THỂ GẤP ĐÔI', 'Trong đó 56.300 doanh nghiệp đã giải thể hẳn, tăng 109,8% so với cùng kỳ. Nghe rất đáng sợ.',
+  C('GIẢI THỂ GẤP ĐÔI', 'Trong đó 56.300 doanh nghiệp đã giải thể hẳn, tăng 109,8% so với cùng kỳ. Con số này nghe rất đáng sợ.',
     the=dict(loai='lon', tieu='HOÀN TẤT GIẢI THỂ 10 THÁNG', nguon='Cục Thống kê, 3/11/2026', dong=[['56.300', 130, 'do'], ['TĂNG 109,8%', 60, 'trang']])),
   C('NHƯNG CHỜ GIẢI THỂ GIẢM', 'Nhưng số tạm ngừng lại giảm 12,7%, số chờ giải thể giảm 42,3%. Nếu kinh tế tệ đi đều, lẽ ra cả ba nhóm phải cùng tăng.',
     the=dict(loai='cot', tieu='SO VỚI CÙNG KỲ (%)', nguon='Cục Thống kê, 3/11/2026', hang=[['Tạm ngừng', -12.7], ['Chờ giải thể', -42.3], ['Đã giải thể', 109.8]], noi=[2], dv='%')),
@@ -46,7 +46,7 @@ R2 = dict(key='RV1711DN', tieu_de='182.000 doanh nghiệp rút lui trong 10 thá
     the=dict(loai='lon', tieu='VÌ SAO GIẢI THỂ TĂNG VỌT?', nguon='Nhà đầu tư, VCCI 9/11/2026', dong=[['DỌN SỔ', 120, 'vang'], ['LÀM SẠCH MÃ SỐ THUẾ 2026', 52, 'trang']])),
   C('VÀO VẪN NHIỀU HƠN RA', 'Cũng trong 10 tháng, hơn 243.600 doanh nghiệp thành lập mới và quay lại. Số vào vẫn nhiều hơn số ra khoảng 61.600, em tự tính.',
     the=dict(loai='cot', tieu='10 THÁNG 2026 (NGHÌN DOANH NGHIỆP)', nguon='Cục Thống kê; em tự tính', hang=[['Vào thị trường', 243.6], ['Rút lui', 182.0]], noi=[0], dv='', max=260)),
-  C('CỬA HÀNG NHỎ ĐAU NHẤT', 'Nhưng chỗ đau là thật. Riêng bán buôn, bán lẻ và sửa chữa xe đã có 21.673 doanh nghiệp giải thể. Áp lực dồn vào doanh nghiệp nhỏ: thiếu đơn hàng, sức mua yếu, lãi vay cao.',
+  C('CỬA HÀNG NHỎ ĐAU NHẤT', 'Nhưng chỗ đau ở doanh nghiệp nhỏ là thật. Riêng bán buôn, bán lẻ và sửa chữa xe đã có 21.673 doanh nghiệp giải thể. Áp lực dồn vào doanh nghiệp nhỏ: thiếu đơn hàng, sức mua yếu, lãi vay cao.',
     the=dict(loai='lon', tieu='GIẢI THỂ NHIỀU NHẤT', nguon='Nhà đầu tư, VCCI 9/11/2026', dong=[['21.673', 120, 'do'], ['BÁN BUÔN, BÁN LẺ, XE CỘ', 54, 'trang']])),
   C('CÔNG TY TO HƠN, ÍT NGƯỜI HƠN', 'Còn công ty mới thì to hơn nhưng tuyển ít người hơn. Vốn bình quân tăng 34,8%, nhưng lao động đăng ký giảm 17,4%.',
     the=dict(loai='cot', tieu='DOANH NGHIỆP MỚI, SO CÙNG KỲ (%)', nguon='Cục Thống kê, 3/11/2026', hang=[['Vốn mỗi công ty', 34.8], ['Lao động', -17.4]], noi=[1], dv='%')),

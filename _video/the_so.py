@@ -34,7 +34,7 @@ def cot(sp, t):
     # 13/11 NV1: giữ đúng số chữ số thập phân của số liệu gốc (RV1311GDP V1: 9,95 hiện "9,9%", 9,85 hiện "9,8%" – lệch lời đọc)
     def _nd(v):
         if sp.get("nd") is not None: return sp["nd"]
-        return 0 if abs(v) >= 100 else min(2, max(1, len(("%r" % float(v)).split(".")[1].rstrip("0"))))
+        return min(2, len(("%r" % float(v)).split(".")[1].rstrip("0")))   # (17/11 NV1, RV1711VANG V1: 134,5 hiện "134", 49 hiện "49,0") giữ đúng số lẻ gốc, số nguyên không thêm ",0"
     yb = top + (bot - top) * (mxp * 1.08 / ((mxp + mxn) * 1.08 or 1)) if mxn else bot   # trục 0 (có số âm thì trục nâng lên)
     for i, (lab, v) in enumerate(rows):
         a = ease((t - 0.3 - i * 0.35) / 0.9)
