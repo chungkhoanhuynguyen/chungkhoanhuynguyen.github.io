@@ -59,7 +59,7 @@ S = [
         ('Tin tức', 'Sở Tài chính', 'Tạm ngừng chưa đồng nghĩa rời thị trường vĩnh viễn', G_),
         ('Tin tức', 'Bộ Tài chính', 'Năm 2026: chiến dịch làm sạch mã số thuế', V_),
         ('Tin tức', 'Viện nghiên cứu', 'Nhiều doanh nghiệp ngừng hoạt động từ lâu, nay mới giải thể', X_)]),
-      say=("Câu trả lời nằm trong lời giải thích của chính các cơ quan quản lý. Giám đốc Sở Tài chính Đà Nẵng cho biết số giải thể tăng một phần do rà soát dữ liệu và xử lý hồ sơ tồn đọng. Việc này gắn với chiến dịch làm sạch mã số thuế của Bộ Tài chính năm nay. "
+      say=("Câu trả lời nằm trong lời giải thích của chính các cơ quan quản lý. Giám đốc Sở Tài chính Đà Nẵng cho biết số giải thể tăng mạnh có nguyên nhân từ việc rà soát dữ liệu và xử lý hồ sơ tồn đọng. Việc này gắn với chiến dịch làm sạch mã số thuế của Bộ Tài chính năm nay. "
            "Nhiều công ty đã ngừng hoạt động từ những năm trước, giờ mới hoàn tất thủ tục. "
            "Nói cách khác, có những doanh nghiệp đã chết từ lâu, năm nay mới làm giấy khai tử.")),
  dict(k='bignum', anh=TP, cap=('VÀO VẪN NHIỀU HƠN RA', 'HƠN 61.600 DOANH NGHIỆP'), cols=CC, moc=True, value=243600, fmt='{:,.0f}', unit='', top='MỚI THÀNH LẬP VÀ QUAY LẠI', sub='so với 182.000 rút lui – chênh 61.600, em tự tính', col=GREEN,
@@ -104,12 +104,12 @@ S = [
         ('Hoàn tất giải thể', '21.600'),
         ('Bình quân rút lui mỗi tháng', '16.500')]),
       say=("Số liệu năm hai nghìn không trăm hai mươi tư cho thấy đúng như vậy. Cả năm đó có khoảng một trăm nghìn doanh nghiệp tạm ngừng và bảy mươi sáu nghìn hai trăm doanh nghiệp ngừng hoạt động chờ giải thể. Nhưng chỉ hai mươi mốt nghìn sáu trăm doanh nghiệp hoàn tất giải thể. "
-           "Bình quân mỗi tháng mười sáu nghìn năm trăm doanh nghiệp rút lui. Năm nay con số đó là mười tám nghìn hai trăm, cao hơn, nhưng không phải gấp đôi.")),
+           "Bình quân, mỗi tháng có mười sáu nghìn năm trăm doanh nghiệp rút lui. Năm nay con số đó là mười tám nghìn hai trăm, cao hơn, nhưng không phải gấp đôi.")),
  dict(k='checklist', anh=TP, cap=('NĂM NAY VÀ NĂM 2024', 'GIỐNG 2, KHÁC 2'), cols=CR, moc=True,
       items=[('Giống: cửa hàng nhỏ đau nhất', R_), ('Giống: lãi vay, sức mua là gánh', R_), ('Khác: hồ sơ cũ được dọn', G_), ('Khác: công ty mới to hơn', V_)],
       say=("Đặt hai năm cạnh nhau, có hai điểm giống. Một: doanh nghiệp nhỏ, cửa hàng nhỏ vẫn chịu đòn nặng nhất. Hai: lãi vay và sức mua yếu vẫn là gánh nặng chính. "
            "Và hai điểm khác. Năm nay hồ sơ tồn đọng được dọn nhanh, nên số giải thể nhìn đáng sợ hơn thực tế. Và tiền đang dồn vào ít công ty hơn, to hơn. "
-           "Kinh tế chưa bệnh nặng. Nhưng chưa, không có nghĩa là không thể, nhất là với từng gia đình làm ở doanh nghiệp nhỏ.")),
+           "Nhìn chung, nền kinh tế chưa bệnh nặng. Nhưng chưa, không có nghĩa là không thể, nhất là với từng gia đình làm ở doanh nghiệp nhỏ.")),
  # ---------------- CHƯƠNG 5 ----------------
  dict(k='giay', ch='Chương 5 – Phiếu thu nhập của anh Tuấn', cap=('15 KHÁCH CÒN 11', 'MẤT 8 TRIỆU MỖI THÁNG'), cols=CR, moc=True, giay=dict(tieu_de='THU NHẬP DỊCH VỤ – ANH TUẤN', so='Em giả định để minh hoạ', dau='TỰ KÊ', dieu=[
         ('Đầu năm: 15 khách, 2 triệu mỗi khách', '30 TR'),
@@ -141,8 +141,8 @@ S = [
            "Một: số công ty thành lập mới so với cùng kỳ, tháng mười đang giảm gần ba mươi phần trăm. Hai: số tạm ngừng kinh doanh có tăng trở lại không, vì đó mới là nhóm phản ánh khó khăn mới. "
            "Ba: số lao động đăng ký mới. Còn sức khoẻ thật của các doanh nghiệp lớn trên sàn, lợi nhuận từng quý của hơn bốn trăm mã có miễn phí trên chứng khoán Huy Nguyễn chấm com.")),
  # ---------------- KẾT ----------------
- dict(k='chat', ch='Kết – Tin nhắn của khách hàng cũ', cap=('"CẢM ƠN ANH 5 NĂM QUA', 'KHI NÀO MỞ LẠI EM GỌI"'), cols=CC, moc=True, chat=dict(ten='Chị Mai (Minh Phát)', tv='Đang hoạt động', gio='23:00', mau=V_, msgs=[
-        ('Chị Mai (Minh Phát)', 'Cảm ơn anh 5 năm qua đã giữ sổ sách cho em'),
+ dict(k='chat', ch='Kết – Tin nhắn của khách hàng cũ', cap=('"CẢM ƠN ANH NHỮNG NĂM QUA', 'KHI NÀO MỞ LẠI EM GỌI"'), cols=CC, moc=True, chat=dict(ten='Chị Mai (Minh Phát)', tv='Đang hoạt động', gio='23:00', mau=V_, msgs=[
+        ('Chị Mai (Minh Phát)', 'Cảm ơn anh những năm qua đã giữ sổ sách cho em'),
         ('Chị Mai (Minh Phát)', 'Khi nào mở lại, em gọi anh đầu tiên'),
         ('me', 'Chúc chị sớm làm lại. Tôi vẫn ở đây')]),
       say=("Gần nửa đêm, chị Mai, chủ công ty Minh Phát, nhắn: cảm ơn anh suốt những năm qua đã giữ sổ sách cho em, khi nào mở lại, em gọi anh đầu tiên. "

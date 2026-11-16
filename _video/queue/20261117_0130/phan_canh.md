@@ -19,5 +19,5 @@
 | 17 | the/checklist | PHÉP THỬ CỦA ANH CHỊ / TIỀN DỰ PHÒNG ĐỦ MẤY THÁNG? | quyết tâm | tick |
 | 18 | the/checklist | 3 CON SỐ CẦN THEO DÕI / MỖI ĐẦU THÁNG | quyết tâm | tick |
 | 19 | the/checklist | 3 CON SỐ CẦN THEO DÕI / MỖI ĐẦU THÁNG | quyết tâm | tick |
-| 20 | the/chat | "CẢM ƠN ANH 5 NĂM QUA / KHI NÀO MỞ LẠI EM GỌI" | tâm sự | tiếng gõ phím |
+| 20 | the/chat | "CẢM ƠN ANH NHỮNG NĂM QUA / KHI NÀO MỞ LẠI EM GỌI" | tâm sự | tiếng gõ phím |
 | 21 | the/end | 182.000 DOANH NGHIỆP RÚT LUI / NHÀ MÌNH ĐỦ MẤY THÁNG? | mở | nhạc kết |
