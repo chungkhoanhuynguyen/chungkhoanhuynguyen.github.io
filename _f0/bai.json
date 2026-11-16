@@ -38085,5 +38085,293 @@
    "cac-loai-lenh-chung-khoan",
    "lai-suat-margin"
   ]
+ },
+ {
+  "slug": "chenh-lech-gia-vang-trong-nuoc-va-the-gioi",
+  "kw": "chênh lệch giá vàng trong nước và thế giới",
+  "grp": 8,
+  "date": "2026-11-17",
+  "title": "Chênh lệch giá vàng trong nước và thế giới: cách tính, rủi ro",
+  "desc": "Sáng 16/11/2026 vàng miếng bán 137,5 triệu/lượng, giá thế giới quy đổi chỉ khoảng 121,1 triệu. Cách tự tính khoản chênh và vì sao người mua chịu thiệt 2 lần.",
+  "body": [
+   [
+    "p",
+    "Sáng 16/11/2026, tiệm bán vàng miếng giá <b>137,5 triệu đồng/lượng</b> và mua lại <b>134,5 triệu</b>. Cùng lúc, vàng thế giới khoảng <b>3.875,65 USD/ounce</b>. Quy ra tiền Việt, một lượng vàng thế giới chỉ khoảng <b>121,1 triệu đồng</b>. Người mua vàng miếng hôm đó trả thêm khoảng <b>16,4 triệu đồng mỗi lượng</b> so với giá thế giới – phần này nhiều người không để ý."
+   ],
+   [
+    "h2",
+    "Chênh lệch giá vàng trong nước và thế giới tính thế nào?"
+   ],
+   [
+    "p",
+    "Một lượng vàng nặng 37,5 gram, một ounce nặng 31,1035 gram, nên <b>1 lượng ≈ 1,2057 ounce</b>. Công thức tự tính:"
+   ],
+   [
+    "ul",
+    [
+     "<b>Giá thế giới quy đổi</b> = giá vàng (USD/ounce) × 1,2057 × tỷ giá bán USD của ngân hàng.",
+     "Ví dụ 16/11/2026: 3.875,65 × 1,2057 × 25.910 ≈ <b>121,1 triệu đồng/lượng</b> (chưa tính thuế, phí nhập khẩu, gia công).",
+     "<b>Chênh lệch</b> = giá bán vàng miếng − giá thế giới quy đổi = 137,5 − 121,1 ≈ <b>16,4 triệu</b>, khoảng 12% giá bán."
+    ]
+   ],
+   [
+    "h2",
+    "Hai khoản chênh người mua vàng phải trả"
+   ],
+   [
+    "table",
+    [
+     [
+      "Khoản chênh",
+      "Sáng 16/11/2026",
+      "Ý nghĩa"
+     ],
+     [
+      "Giá bán − giá mua lại ở tiệm",
+      "3 triệu/lượng (vàng miếng), 4 triệu (nhẫn SJC)",
+      "Mua xong bán ngay đã lỗ chừng đó"
+     ],
+     [
+      "Giá trong nước − giá thế giới quy đổi",
+      "Khoảng 16,4 triệu/lượng",
+      "Có thể co lại khi nguồn cung tăng, kể cả khi giá thế giới đứng yên"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Khoản thứ hai là rủi ro ẩn: nếu chênh lệch co từ 16 triệu về vài triệu, người cầm vàng miếng lỗ thêm dù giá thế giới không giảm. Ngược lại, khi chênh lệch nới rộng, giá trong nước có thể tăng nhanh hơn thế giới."
+   ],
+   [
+    "h2",
+    "Năm 2026 vàng đã đi bao xa?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Mốc",
+      "Vàng thế giới (USD/ounce)",
+      "Vàng miếng (triệu đồng/lượng)"
+     ],
+     [
+      "Đỉnh cuối tháng 1/2026",
+      "5.594,82 (29/1)",
+      "191,3"
+     ],
+     [
+      "Sáng 16/11/2026",
+      "3.875,65",
+      "134,5 mua – 137,5 bán"
+     ],
+     [
+      "Thay đổi",
+      "−30,7%",
+      "Bán ra −53,8 triệu (−28,1%)"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Lần trước, vàng miếng lập đỉnh <b>49 triệu</b> cuối tháng 8/2011, rồi về khoảng <b>33 triệu</b> năm 2016; vàng thế giới từ 1.920 USD (9/2011) về khoảng 1.050 USD cuối 2015 (−45%) và tới năm 2020 mới vượt đỉnh cũ. Xem thêm <a href=\"/f0/gia-vang-va-chung-khoan.html\">giá vàng và chứng khoán</a>."
+   ],
+   [
+    "h2",
+    "Sai lầm thường gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>Chỉ so giá hôm nay với hôm qua.</b> Nên so thêm với giá thế giới quy đổi để biết mình đang trả thêm bao nhiêu.",
+     "<b>Tính lãi lỗ theo giá bán ra.</b> Khi bán, anh chị nhận giá mua vào của tiệm, thấp hơn 3–4 triệu/lượng.",
+     "<b>Vay tiền mua vàng.</b> Vàng không sinh lãi; lãi vay cộng với hai khoản chênh khiến khoản lỗ khó chờ được."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist trước khi mua vàng"
+   ],
+   [
+    "ul",
+    [
+     "Tự tính giá thế giới quy đổi theo công thức trên, ghi lại khoản chênh.",
+     "Xem chênh giá mua – bán ở tiệm; chênh nới rộng thường là lúc tiệm cũng không chắc giá.",
+     "Giữ vàng dưới khoảng 20% tổng tài sản nếu chưa có quỹ dự phòng đủ dày (mốc tự soi, không phải quy định) – xem <a href=\"/f0/ty-trong-vang-bitcoin-trong-danh-muc.html\">tỷ trọng vàng trong danh mục</a>.",
+     "Không dùng tiền sắp cần chi hoặc tiền vay."
+    ]
+   ],
+   [
+    "p",
+    "<small>Nguồn: MarketTimes 16/11/2026 (giá thế giới, SJC, nhẫn); 1thegioi 16/11/2026 (SJC giảm 53,8 triệu, 28,1%); Znews 28/5/2026 (đỉnh 191,3 triệu); Stockbiz 7/2026 (đỉnh 5.594,82 USD ngày 29/1/2026); Hà Nội Mới 14/11/2026 (Vietcombank bán USD 25.910); Tinnhanhchungkhoan 2/6/2016; USAGOLD. Giá quy đổi và chênh lệch là số tự tính, chưa tính thuế phí. Bài chia sẻ kiến thức, không phải khuyến nghị.</small>"
+   ]
+  ],
+  "faq": [
+   [
+    "Chênh lệch giá vàng trong nước và thế giới là gì?",
+    "Là phần giá vàng miếng bán ra cao hơn giá vàng thế giới quy đổi theo tỷ giá. Sáng 16/11/2026 khoảng 16,4 triệu đồng/lượng (137,5 so với 121,1 triệu)."
+   ],
+   [
+    "Quy đổi giá vàng thế giới ra triệu đồng/lượng thế nào?",
+    "Lấy giá USD/ounce × 1,2057 (số ounce trong 1 lượng) × tỷ giá bán USD. Ví dụ 3.875,65 × 1,2057 × 25.910 ≈ 121,1 triệu."
+   ],
+   [
+    "Chênh lệch lớn có rủi ro gì?",
+    "Nếu chênh lệch co lại, người cầm vàng miếng lỗ thêm dù giá thế giới không giảm."
+   ]
+  ],
+  "rel": [
+   "gia-vang-va-chung-khoan",
+   "ty-trong-vang-bitcoin-trong-danh-muc",
+   "lai-suat-thuc-la-gi"
+  ]
+ },
+ {
+  "slug": "doanh-nghiep-rut-lui-khoi-thi-truong-la-gi",
+  "kw": "doanh nghiệp rút lui khỏi thị trường là gì",
+  "grp": 8,
+  "date": "2026-11-17",
+  "title": "Doanh nghiệp rút lui khỏi thị trường là gì? Đọc đúng số 182.000",
+  "desc": "10 tháng 2026 có 182.000 doanh nghiệp rút lui, giải thể tăng 109,8%. Con số gồm 3 nhóm nào, vì sao giải thể gấp đôi, và nhà đầu tư nên theo dõi chỉ số nào.",
+  "body": [
+   [
+    "p",
+    "Mười tháng đầu năm 2026, cộng số liệu Cục Thống kê, có khoảng <b>182.000 doanh nghiệp rút lui khỏi thị trường</b> – gần 600 doanh nghiệp mỗi ngày. Con số nghe rất đáng sợ. Nhưng “rút lui” không có nghĩa là 182.000 công ty đã đóng cửa vĩnh viễn."
+   ],
+   [
+    "h2",
+    "Doanh nghiệp rút lui khỏi thị trường gồm những nhóm nào?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Nhóm",
+      "10 tháng 2026",
+      "So cùng kỳ",
+      "Ý nghĩa"
+     ],
+     [
+      "Tạm ngừng kinh doanh có thời hạn",
+      "Gần 92.000",
+      "−12,7%",
+      "Có thể quay lại hoạt động"
+     ],
+     [
+      "Ngừng hoạt động, chờ giải thể",
+      "Hơn 33.700",
+      "−42,3%",
+      "Đang làm thủ tục"
+     ],
+     [
+      "Hoàn tất giải thể",
+      "Gần 56.300",
+      "+109,8%",
+      "Đóng cửa hẳn"
+     ],
+     [
+      "Cộng (tự tính)",
+      "182.000",
+      "",
+      "Bình quân 18.200 mỗi tháng"
+     ]
+    ]
+   ],
+   [
+    "h2",
+    "Vì sao số giải thể tăng gấp đôi?"
+   ],
+   [
+    "p",
+    "Theo ý kiến được báo Nhà đầu tư (VCCI đăng lại 9/11/2026) dẫn, một phần do rà soát dữ liệu, xử lý hồ sơ tồn đọng gắn với chiến dịch làm sạch mã số thuế năm 2026: nhiều công ty ngừng từ những năm trước, nay mới hoàn tất thủ tục. Năm 2024 có tới <b>76.200</b> doanh nghiệp chờ giải thể nhưng chỉ <b>21.600</b> hoàn tất – “hàng chờ” đó năm nay được giải quyết nhanh hơn."
+   ],
+   [
+    "p",
+    "Áp lực thật vẫn có: thiếu đơn hàng, sức mua yếu, chi phí vận chuyển và lãi vay cao, tập trung ở doanh nghiệp nhỏ và vừa. Ngành giải thể nhiều nhất là bán buôn, bán lẻ, sửa chữa ô tô xe máy (<b>21.673</b>, +120,1%), rồi chế biến chế tạo (6.085), xây dựng (4.159), bất động sản (3.192)."
+   ],
+   [
+    "h2",
+    "Đặt cạnh số doanh nghiệp vào thị trường"
+   ],
+   [
+    "table",
+    [
+     [
+      "Chỉ tiêu (10 tháng 2026)",
+      "Số liệu"
+     ],
+     [
+      "Thành lập mới",
+      "Gần 162.300 (−0,4%)"
+     ],
+     [
+      "Quay lại hoạt động",
+      "Gần 81.400 (−12,5%)"
+     ],
+     [
+      "Vào thị trường",
+      "Hơn 243.600"
+     ],
+     [
+      "Vốn đăng ký bình quân mỗi doanh nghiệp mới",
+      "13,2 tỷ đồng (+34,8%)"
+     ],
+     [
+      "Lao động đăng ký mới",
+      "799.400 người (−17,4%)"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Số vào vẫn nhiều hơn số ra khoảng 61.600 doanh nghiệp (tự tính). Nhưng công ty mới to hơn và tuyển ít người hơn – người làm ở doanh nghiệp nhỏ cần chuẩn bị kỹ hơn."
+   ],
+   [
+    "h2",
+    "Sai lầm thường gặp khi đọc con số này"
+   ],
+   [
+    "ul",
+    [
+     "<b>Coi “rút lui” là “phá sản”.</b> Hơn một nửa là tạm ngừng có thời hạn.",
+     "<b>Chỉ nhìn số ra, bỏ qua số vào.</b> Phải đặt cạnh số thành lập mới và quay lại.",
+     "<b>Chỉ nhìn % tăng của giải thể.</b> Nhóm tạm ngừng mới phản ánh khó khăn mới phát sinh."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist cho nhà đầu tư và người làm công"
+   ],
+   [
+    "ul",
+    [
+     "Đầu mỗi tháng xem 3 số Cục Thống kê công bố: thành lập mới so cùng kỳ, tạm ngừng, lao động đăng ký.",
+     "Doanh nghiệp niêm yết: xem lợi nhuận từng quý thay vì đoán theo số doanh nghiệp rút lui – tra miễn phí trên trang chủ.",
+     "Gia đình: giữ quỹ dự phòng 3–6 tháng chi tiêu; xem <a href=\"/f0/quy-du-phong-truoc-khi-dau-tu.html\">quỹ dự phòng trước khi đầu tư</a>."
+    ]
+   ],
+   [
+    "p",
+    "<small>Nguồn: Cục Thống kê, báo Thị trường Tài chính Tiền tệ 3/11/2026; Nhà đầu tư/VCCI 9/11/2026; VCCI 7/1/2025 (số năm 2024). Tổng 182.000 và chênh 61.600 là số tự tính. Bài chia sẻ kiến thức, không phải khuyến nghị.</small>"
+   ]
+  ],
+  "faq": [
+   [
+    "Doanh nghiệp rút lui khỏi thị trường là gì?",
+    "Là tổng 3 nhóm Cục Thống kê công bố: tạm ngừng kinh doanh có thời hạn, ngừng hoạt động chờ giải thể và hoàn tất giải thể. 10 tháng 2026 cộng lại khoảng 182.000."
+   ],
+   [
+    "Tạm ngừng kinh doanh có phải đóng cửa không?",
+    "Không. Doanh nghiệp tạm ngừng có thời hạn có thể quay lại; 10 tháng 2026 có gần 81.400 doanh nghiệp quay lại hoạt động."
+   ],
+   [
+    "Vì sao giải thể năm 2026 tăng mạnh?",
+    "Một phần do xử lý hồ sơ tồn đọng và chiến dịch làm sạch mã số thuế 2026; áp lực thật tập trung ở doanh nghiệp nhỏ và vừa."
+   ]
+  ],
+  "rel": [
+   "quy-du-phong-truoc-khi-dau-tu",
+   "lai-suat-thuc-la-gi",
+   "von-dau-tu-38-5-trieu-ty-tien-o-dau-ra"
+  ]
  }
 ]
