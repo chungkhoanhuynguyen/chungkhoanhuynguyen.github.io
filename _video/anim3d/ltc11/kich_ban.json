@@ -1,27 +1,106 @@
-{"key": "LTC5", "title": "Lớp học Lý thuyết trò chơi – Bài 5", "scenes": [
-{"id": "S01", "say": "Nếu cổ phiếu anh chị đang cầm giảm hai mươi phần trăm, anh chị sẽ bán, hay mua thêm cho giá vốn thấp xuống? Có một đêm năm một nghìn chín trăm sáu mươi hai, cả thế giới đứng trước đúng câu hỏi đó, chỉ khác là thứ đặt lên bàn không phải tiền, mà là bom hạt nhân. Và người cứu thế giới đêm ấy, lại là người biết dừng lại."},
-{"id": "S02", "say": "Tối thứ Sáu, Hùng Xa Lộ vào lớp, mặt bơ phờ. Em kể: cổ phiếu em mua giảm mãi, em mua thêm ba lần để bình quân giá, giờ hết tiền rồi mà nó vẫn giảm. Thầy Huy gật gù: vậy hôm nay em nghe kỹ. Thầy kể chuyện mười ba ngày nghẹt thở nhất thế kỷ hai mươi."},
-{"id": "S03", "say": "Thầy kể. Tháng mười năm một nghìn chín trăm sáu mươi hai, máy bay do thám của Mỹ chụp được những bãi phóng tên lửa đang được xây trên đảo Cu ba, chỉ cách bờ biển nước Mỹ khoảng một trăm năm mươi cây số. Tên lửa ấy do Liên Xô đưa sang, có thể mang đầu đạn hạt nhân."},
-{"id": "S04", "say": "Các tướng lĩnh Mỹ muốn ném bom ngay, rồi đổ bộ lên đảo. Nhưng Tổng thống Mỹ chọn một nước đi khác: phong tỏa đường biển, không cho thêm tàu chở vũ khí tới Cu ba. Một bước leo thang, nhưng chừa lại đường lui."},
-{"id": "S05", "say": "Ngày hai mươi bốn tháng mười, những con tàu Liên Xô tiến dần tới vòng phong tỏa. Cả thế giới nín thở. Rồi tin báo về: các con tàu dừng lại, có chiếc quay đầu. Một quan chức Mỹ nói đại ý rằng: hai bên nhìn thẳng vào mắt nhau, và bên kia đã chớp mắt trước."},
-{"id": "S06", "say": "Nhưng chuyện đáng sợ nhất xảy ra ba ngày sau, dưới đáy biển. Ngày hai mươi bảy tháng mười, tàu Mỹ thả những quả bom chìm loại nhỏ để ép một tàu ngầm Liên Xô nổi lên. Trên tàu ngầm, nóng hầm hập, mất liên lạc với Mát xcơ va, viên chỉ huy tưởng chiến tranh đã nổ ra và muốn phóng ngư lôi hạt nhân."},
-{"id": "S07", "say": "Theo quy định trên con tàu ấy, cần cả ba sĩ quan đồng ý. Một người tên là A khíp pốp đã nói không. Nhờ một lời không ấy, ngư lôi không được phóng. Nhiều sử gia sau này gọi ông là người đã cứu thế giới."},
-{"id": "S08", "say": "Thầy hỏi: các em đoán xem, khủng hoảng kết thúc thế nào? Phú Dê Già đáp: chắc bên nào mạnh hơn thì bên kia phải chịu thua ạ. Vy Kim Khâu lắc đầu: em đoán cả hai cùng lùi."},
-{"id": "S09", "say": "Thầy cười: Vy đúng. Liên Xô rút tên lửa khỏi Cu ba. Đổi lại, Mỹ hứa không đánh Cu ba, và bí mật đồng ý rút tên lửa của mình khỏi Thổ Nhĩ Kỳ vài tháng sau. Phần bí mật ấy rất quan trọng: nó cho bên kia một cái bậc thang để bước xuống mà không mất mặt."},
-{"id": "S10", "say": "Lớp học Lý thuyết trò chơi. Bài năm: Luật leo thang."},
-{"id": "S11", "say": "Thầy vẽ lên bảng hai chiếc xe lao thẳng vào nhau. Ai bẻ lái trước là kẻ nhát gan, nhưng nếu không ai bẻ lái, cả hai cùng chết. Các nhà lý thuyết trò chơi gọi đây là trò chơi kẻ nhát gan. Trong trò này, mạnh hơn chưa chắc thắng. Người thắng là người kiểm soát được mức leo thang, và luôn chừa đường lui cho cả hai."},
-{"id": "S12", "say": "Quang Hà hỏi: sao không leo thang thật mạnh cho bên kia sợ luôn ạ? Thầy đáp: vì khi leo thang quá mạnh, em tự đốt luôn đường lui của mình. Lúc đó em không còn điều khiển được trò chơi nữa, mà trò chơi điều khiển em."},
-{"id": "S13", "say": "Thầy kể một chuyện ở sân trường. Hai cậu bé cãi nhau. Một đứa xô, đứa kia xô lại mạnh hơn. Rồi đấm. Rồi gọi anh em tới. Không đứa nào muốn đánh to, nhưng mỗi bước đều có vẻ hợp lý, vì lùi lại thì mất mặt. Leo thang sinh ra leo thang."},
-{"id": "S14", "say": "Trang Trâu hỏi: vậy nó liên quan gì đến chuyện Hùng mua thêm cổ phiếu ạ? Thầy quay sang Hùng: em thấy không, em cũng đang chơi trò leo thang, nhưng là với chính thị trường."},
-{"id": "S15", "say": "Lần đầu em mua, cổ phiếu giảm. Em không muốn nhận mình sai, nên mua thêm. Nó giảm tiếp, em mua thêm nữa, vì đã lỡ bỏ vào nhiều quá rồi. Mỗi bước đều có vẻ hợp lý, nhưng em đang đốt dần đường lui của mình. Các nhà tâm lý gọi đó là bẫy leo thang cam kết."},
-{"id": "S16", "say": "Có một ví dụ nổi tiếng. Anh và Pháp cùng làm máy bay chở khách siêu thanh Công cót. Chi phí đội lên gấp nhiều lần dự tính, ai cũng biết khó thu hồi vốn, nhưng hai chính phủ vẫn rót tiền, vì đã bỏ vào quá nhiều. Đến nay, người ta vẫn gọi kiểu sai lầm này là sai lầm Công cót."},
-{"id": "S17", "say": "Linh Livestream hỏi: thế thị trường thì có bom chìm như tàu ngầm không thầy? Thầy đáp: có, đó là vay ký quỹ. Khi em vay để mua thêm, đến một mức giảm, công ty chứng khoán sẽ bán hàng của em mà không cần hỏi. Em không còn quyền quyết định nữa."},
-{"id": "S18", "say": "Năm hai nghìn không trăm hai mươi hai ở Việt Nam, nhiều người bị bán giải chấp hàng loạt. Người này bị bán làm giá giảm, giá giảm lại làm người khác bị bán. Một chuỗi leo thang mà không ai điều khiển được."},
-{"id": "S19", "say": "Hùng Xa Lộ hỏi nhỏ: vậy em phải làm sao hả thầy? Thầy đáp: học người chỉ huy tàu ngầm và học cách kết thúc khủng hoảng Cu ba. Thứ nhất, trước khi vào trận, phải biết mình sẽ dừng ở đâu. Quyết định lúc bình tĩnh, chứ đừng quyết định lúc đang nóng."},
-{"id": "S20", "say": "Thứ hai: mỗi bước leo thang phải chừa một bậc để lùi. Đừng dồn hết tiền vào một lần, đừng vay đến mức thị trường có thể quyết định thay mình. Thứ ba: chấp nhận mất mặt một chút. Bán một cổ phiếu sai không phải là thua, nó là cách giữ lại quyền chơi ván sau."},
-{"id": "S21", "say": "Vy Kim Khâu phản biện: nhưng có người mua thêm khi giá giảm mà vẫn giàu đó thầy. Thầy gật đầu: đúng. Mua thêm một công ty tốt khi giá rẻ, theo kế hoạch đã định trước, bằng tiền nhàn rỗi, là chiến lược. Còn mua thêm vì không chịu nhận sai, bằng tiền vay, là leo thang. Bề ngoài giống nhau, bên trong khác hẳn."},
-{"id": "S22", "say": "Phú Dê Già hỏi: làm sao biết mình đang chiến lược hay đang leo thang ạ? Thầy đáp: tự hỏi một câu. Nếu hôm nay em chưa có cổ phiếu này, em có mua nó ở giá này không? Nếu câu trả lời là không, thì em đang leo thang rồi."},
-{"id": "S23", "say": "Thầy nhắc: lịch sử khủng hoảng Cu ba có nhiều cách kể, nhiều chi tiết đến nay vẫn còn tranh luận. Bài học thầy rút ra là một cách nhìn, không phải công thức thắng chắc."},
-{"id": "S24", "say": "Cuối giờ thầy giao bài: mỗi em viết ra, với mỗi cổ phiếu đang cầm, mức giảm nào thì mình sẽ dừng, và viết trước khi thị trường mở cửa. Hùng Xa Lộ lấy bút ghi ngay. Thầy nói: em vừa làm điều mà viên sĩ quan tàu ngầm đã làm: giữ cái đầu lạnh khi xung quanh đang nóng."},
-{"id": "S25", "say": "Còn anh chị, đã bao giờ anh chị mua thêm chỉ vì không muốn nhận mình sai chưa? Kể em nghe ở phần bình luận nhé. Bài tóm tắt lý thuyết trò chơi cho nhà đầu tư em để miễn phí trên web chứng khoán Huy Nguyễn, còn nhóm cộng đồng cùng thảo luận mỗi tuần, đường dẫn ở phần mô tả."}
-]}
+{
+ "key": "LTC5",
+ "title": "Lớp học Lý thuyết trò chơi – Bài 5",
+ "scenes": [
+  {
+   "id": "S01",
+   "say": "Nếu cổ phiếu anh chị đang cầm giảm hai mươi phần trăm, anh chị sẽ bán, hay mua thêm cho giá vốn thấp xuống? Có một đêm năm một nghìn chín trăm sáu mươi hai, cả thế giới đứng trước đúng câu hỏi đó, chỉ khác là thứ đặt lên bàn không phải tiền, mà là bom hạt nhân. Và người cứu thế giới đêm ấy, lại là người biết dừng lại."
+  },
+  {
+   "id": "S02",
+   "say": "Tối thứ Sáu, Hùng Xa Lộ vào lớp, mặt bơ phờ. Em kể: cổ phiếu em mua giảm mãi, em mua thêm ba lần để bình quân giá, giờ hết tiền rồi mà nó vẫn giảm. Thầy Huy nói: chuyện của em giống hệt một đêm năm một nghìn chín trăm sáu mươi hai, khi thế giới suýt có chiến tranh hạt nhân. Cứ nghe hết đã, rồi em sẽ thấy mình trong câu chuyện ấy."
+  },
+  {
+   "id": "S03",
+   "say": "Hồi ấy có hai ông lớn đang gờm nhau: nước Mỹ và Liên Xô. Liên Xô lén đặt tên lửa hạt nhân trên đảo Cu ba, cách bờ biển nước Mỹ chỉ khoảng một trăm năm mươi cây số. Hiểu nôm na, giống như hàng xóm đặt một khẩu súng ngay trước cửa nhà mình. Đó là nấc thang đầu tiên."
+  },
+  {
+   "id": "S04",
+   "say": "Các tướng Mỹ muốn ném bom ngay. Nhưng Tổng thống Mỹ chọn cách mềm hơn: cho tàu chặn đường biển, không để thêm vũ khí tới Cu ba. Tức là có đáp trả, nhưng chưa nổ súng, vẫn chừa một đường lui. Đó là nấc thang thứ hai."
+  },
+  {
+   "id": "S05",
+   "say": "Tàu Liên Xô tiến dần tới vòng chặn, cả thế giới nín thở. Rồi tin báo về: các con tàu dừng lại, có chiếc quay đầu. Lần này, bên kia đã lùi trước một bước."
+  },
+  {
+   "id": "S06",
+   "say": "Nhưng lúc nguy hiểm nhất lại ở dưới đáy biển. Tàu Mỹ thả những quả bom nhỏ để ép một tàu ngầm Liên Xô nổi lên. Trong tàu ngầm nóng như lò, lại mất liên lạc với nhà, viên chỉ huy tưởng chiến tranh đã nổ ra. Ông muốn bắn quả ngư lôi mang đầu đạn hạt nhân, đó là nấc thang thứ ba, và là nấc nguy hiểm nhất."
+  },
+  {
+   "id": "S07",
+   "say": "Muốn bắn phải có ba sĩ quan cùng đồng ý. Hai người gật đầu, chỉ một người tên là A khíp pốp nói không. Chỉ một chữ không ấy, quả ngư lôi nằm yên, và nhiều sử gia gọi ông là người đã cứu thế giới."
+  },
+  {
+   "id": "S08",
+   "say": "Thầy hỏi: các em đoán xem, khủng hoảng kết thúc thế nào? Phú Dê Già đáp: chắc bên nào mạnh hơn thì bên kia phải chịu thua ạ. Vy Kim Khâu lắc đầu: em đoán cả hai cùng lùi."
+  },
+  {
+   "id": "S09",
+   "say": "Thầy cười: Vy đúng. Liên Xô mang tên lửa về, còn Mỹ hứa không đánh Cu ba, và lặng lẽ rút tên lửa của mình ở Thổ Nhĩ Kỳ. Phần lặng lẽ ấy rất quan trọng: nó cho bên kia một bậc thang để bước xuống mà không mất mặt. Đó là nấc cuối cùng: cả hai cùng lùi, và thế giới được cứu."
+  },
+  {
+   "id": "S10",
+   "say": "Lớp học Lý thuyết trò chơi. Bài năm: Luật leo thang."
+  },
+  {
+   "id": "S11",
+   "say": "Thầy vẽ lên bảng hai chiếc xe lao thẳng vào nhau. Ai bẻ lái trước là kẻ nhát gan, nhưng nếu không ai bẻ lái, cả hai cùng chết. Các nhà lý thuyết trò chơi gọi đây là trò chơi kẻ nhát gan. Trong trò này, mạnh hơn chưa chắc thắng. Người thắng là người kiểm soát được mức leo thang, và luôn chừa đường lui cho cả hai."
+  },
+  {
+   "id": "S12",
+   "say": "Quang Hà hỏi: sao không leo thang thật mạnh cho bên kia sợ luôn ạ? Thầy đáp: vì khi leo thang quá mạnh, em tự đốt luôn đường lui của mình. Lúc đó em không còn điều khiển được trò chơi nữa, mà trò chơi điều khiển em."
+  },
+  {
+   "id": "S13",
+   "say": "Thầy kể một chuyện ở sân trường. Hai cậu bé cãi nhau. Một đứa xô, đứa kia xô lại mạnh hơn. Rồi đấm. Rồi gọi anh em tới. Không đứa nào muốn đánh to, nhưng mỗi bước đều có vẻ hợp lý, vì lùi lại thì mất mặt. Leo thang sinh ra leo thang."
+  },
+  {
+   "id": "S14",
+   "say": "Trang Trâu hỏi: vậy nó liên quan gì đến chuyện Hùng mua thêm cổ phiếu ạ? Thầy quay sang Hùng: em thấy không, em cũng đang chơi trò leo thang, nhưng là với chính thị trường."
+  },
+  {
+   "id": "S15",
+   "say": "Lần đầu em mua, cổ phiếu giảm. Em không muốn nhận mình sai, nên mua thêm. Nó giảm tiếp, em mua thêm nữa, vì đã lỡ bỏ vào nhiều quá rồi. Mỗi bước đều có vẻ hợp lý, nhưng em đang đốt dần đường lui của mình. Các nhà tâm lý gọi đó là bẫy leo thang cam kết."
+  },
+  {
+   "id": "S16",
+   "say": "Có một ví dụ nổi tiếng. Anh và Pháp cùng làm máy bay chở khách siêu thanh Công cót. Chi phí đội lên gấp nhiều lần dự tính, ai cũng biết khó thu hồi vốn, nhưng hai chính phủ vẫn rót tiền, vì đã bỏ vào quá nhiều. Đến nay, người ta vẫn gọi kiểu sai lầm này là sai lầm Công cót."
+  },
+  {
+   "id": "S17",
+   "say": "Linh Livestream hỏi: thế thị trường thì có bom chìm như tàu ngầm không thầy? Thầy đáp: có, đó là vay ký quỹ. Khi em vay để mua thêm, đến một mức giảm, công ty chứng khoán sẽ bán hàng của em mà không cần hỏi. Em không còn quyền quyết định nữa."
+  },
+  {
+   "id": "S18",
+   "say": "Năm hai nghìn không trăm hai mươi hai ở Việt Nam, nhiều người bị bán giải chấp hàng loạt. Người này bị bán làm giá giảm, giá giảm lại làm người khác bị bán. Một chuỗi leo thang mà không ai điều khiển được."
+  },
+  {
+   "id": "S19",
+   "say": "Hùng Xa Lộ hỏi nhỏ: vậy em phải làm sao hả thầy? Thầy đáp: học người chỉ huy tàu ngầm và học cách kết thúc khủng hoảng Cu ba. Thứ nhất, trước khi vào trận, phải biết mình sẽ dừng ở đâu. Quyết định lúc bình tĩnh, chứ đừng quyết định lúc đang nóng."
+  },
+  {
+   "id": "S20",
+   "say": "Thứ hai: mỗi bước leo thang phải chừa một bậc để lùi. Đừng dồn hết tiền vào một lần, đừng vay đến mức thị trường có thể quyết định thay mình. Thứ ba: chấp nhận mất mặt một chút. Bán một cổ phiếu sai không phải là thua, nó là cách giữ lại quyền chơi ván sau."
+  },
+  {
+   "id": "S21",
+   "say": "Vy Kim Khâu phản biện: nhưng có người mua thêm khi giá giảm mà vẫn giàu đó thầy. Thầy gật đầu: đúng. Mua thêm một công ty tốt khi giá rẻ, theo kế hoạch đã định trước, bằng tiền nhàn rỗi, là chiến lược. Còn mua thêm vì không chịu nhận sai, bằng tiền vay, là leo thang. Bề ngoài giống nhau, bên trong khác hẳn."
+  },
+  {
+   "id": "S22",
+   "say": "Phú Dê Già hỏi: làm sao biết mình đang chiến lược hay đang leo thang ạ? Thầy đáp: tự hỏi một câu. Nếu hôm nay em chưa có cổ phiếu này, em có mua nó ở giá này không? Nếu câu trả lời là không, thì em đang leo thang rồi."
+  },
+  {
+   "id": "S23",
+   "say": "Thầy nhắc: lịch sử khủng hoảng Cu ba có nhiều cách kể, nhiều chi tiết đến nay vẫn còn tranh luận. Bài học thầy rút ra là một cách nhìn, không phải công thức thắng chắc."
+  },
+  {
+   "id": "S24",
+   "say": "Cuối giờ thầy giao bài: mỗi em viết ra, với mỗi cổ phiếu đang cầm, mức giảm nào thì mình sẽ dừng, và viết trước khi thị trường mở cửa. Hùng Xa Lộ lấy bút ghi ngay. Thầy nói: em vừa làm điều mà viên sĩ quan tàu ngầm đã làm: giữ cái đầu lạnh khi xung quanh đang nóng."
+  },
+  {
+   "id": "S25",
+   "say": "Còn anh chị, đã bao giờ anh chị mua thêm chỉ vì không muốn nhận mình sai chưa? Kể em nghe ở phần bình luận nhé. Bài tóm tắt lý thuyết trò chơi cho nhà đầu tư em để miễn phí trên web chứng khoán Huy Nguyễn, còn nhóm cộng đồng cùng thảo luận mỗi tuần, đường dẫn ở phần mô tả."
+  }
+ ]
+}

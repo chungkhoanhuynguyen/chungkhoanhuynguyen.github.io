@@ -152,6 +152,8 @@ const TQ = (e: Expr, l: string[], c?: string, title?: string) => D3(lop(TEACH(),
 const ESC: [string, string][] = [["🛒", "Mua lần 1 → giảm"], ["🙈", "Không muốn nhận sai → mua thêm"], ["💸", "Đã bỏ nhiều quá → mua thêm nữa"], ["🔥", "Đốt dần đường lui"]];
 const RULE: [string, string][] = [["🧊", "Biết mình dừng ở đâu TRƯỚC khi vào"], ["🪜", "Mỗi bước chừa 1 bậc để lùi · không vay quá sức"], ["🙇", "Chấp nhận mất mặt · giữ quyền chơi ván sau"]];
 
+const LADI: [string, string][] = [["1️⃣", "Liên Xô đặt tên lửa ở Cuba"], ["2️⃣", "Mỹ chặn đường biển"], ["3️⃣", "Đáy biển: suýt bắn ngư lôi hạt nhân"], ["4️⃣", "Cả hai cùng lùi một bước"]];
+const LAD = (n: number) => CD((t) => <List t={t} title="CÁC NẤC LEO THANG · 1962" items={LADI} cur={n} />);
 const PLAN: Plan[] = [
   { id: "S01", shots: [
     [0, () => PH("ltc10/san_gd", (t) => <Label t={t} at={0.5} l1="CỔ PHIẾU GIẢM 20%" l2="Bán · hay mua thêm cho giá vốn thấp?" col="#ff6a6a" />)],
@@ -161,35 +163,36 @@ const PLAN: Plan[] = [
   { id: "S02", shots: [
     [0, () => FQ("hung5", "cry", ["Tối thứ Sáu", "Hùng Xa Lộ bơ phờ"], "#1565c0")],
     [1, () => FQ("hung5", "nervous", ["“Mua thêm 3 lần bình quân giá", "hết tiền mà nó vẫn giảm”"], "#1565c0")],
-    [2, () => TQ("stern", ["Hôm nay em", "nghe kỹ nhé"])],
-    [3, () => PH("ltc11/cuba", (t) => <Place t={t} l1="13 NGÀY NGHẸT THỞ" l2="Thế kỷ 20" />)],
+    [2, () => PH("ltc11/cuba", (t) => <Place t={t} l1="MỘT ĐÊM NĂM 1962" l2="Thế giới suýt có chiến tranh hạt nhân" />)],
+    [3, () => TQ("smile", ["Nghe hết đã,", "em sẽ thấy mình trong đó"])],
   ] },
   { id: "S03", shots: [
-    [0, () => TQ("smile", ["Thầy kể…"])],
-    [1, () => PH("ltc11/u2_anh", (t) => <Place t={t} l1="THÁNG 10/1962" l2="Ảnh do thám: bãi phóng tên lửa trên đảo Cuba" />)],
-    [2, () => PH("ltc11/ten_lua", (t) => <Label t={t} at={0.4} l1="~150 KM TỚI BỜ BIỂN MỸ" l2="Tên lửa có thể mang đầu đạn hạt nhân" col="#ff6a6a" />)],
+    [0, () => CD((t) => <Two t={t} L={["MỸ", "#4aa3ff", ["Ông lớn thứ nhất"]]} R={["LIÊN XÔ", "#ff9f3a", ["Ông lớn thứ hai", "Đang gờm nhau với Mỹ"]]} cur={2} />)],
+    [1, () => PH("ltc11/u2_anh", (t) => <Place t={t} l1="THÁNG 10/1962" l2="Ảnh chụp từ máy bay: bãi tên lửa trên đảo Cuba" />)],
+    [2, () => PH("ltc11/ten_lua", (t) => <Label t={t} at={0.4} l1="~150 KM TỚI NƯỚC MỸ" l2="Như đặt súng trước cửa nhà hàng xóm" col="#ff6a6a" />)],
+    [3, () => LAD(1)],
   ] },
   { id: "S04", shots: [
-    [0, () => PH("ltc11/phong_hop", (t) => <Label t={t} at={0.4} l1="TƯỚNG LĨNH: NÉM BOM NGAY" col="#ff6a6a" />)],
-    [1, () => PH("ltc11/cuba", (t) => <Label t={t} at={0.4} l1="NƯỚC ĐI KHÁC: PHONG TỎA ĐƯỜNG BIỂN" col="#f5c518" />)],
-    [2, () => PH("ltc11/cuba", (t) => <Label t={t} at={0.3} l1="LEO THANG · NHƯNG CHỪA ĐƯỜNG LUI" col="#3ddc84" />, -1)],
+    [0, () => PH("ltc11/phong_hop", (t) => <Label t={t} at={0.4} l1="TƯỚNG LĨNH: ĐÁNH NGAY" col="#ff6a6a" />)],
+    [1, () => PH("ltc11/cuba", (t) => <Label t={t} at={0.4} l1="TỔNG THỐNG: CHẶN ĐƯỜNG BIỂN" col="#f5c518" />)],
+    [2, () => PH("ltc11/cuba", (t) => <Label t={t} at={0.3} l1="ĐÁP TRẢ · CHƯA NỔ SÚNG" l2="Vẫn chừa đường lui" col="#3ddc84" />, -1)],
+    [3, () => LAD(2)],
   ] },
   { id: "S05", shots: [
-    [0, () => PH("ltc11/havana", (t) => <Place t={t} l1="24/10/1962" l2="Tàu Liên Xô tiến tới vòng phong tỏa" />)],
-    [1, () => PH("ltc11/havana", (t) => <Label t={t} at={0.2} l1="CẢ THẾ GIỚI NÍN THỞ" />, -1, 0.3)],
-    [2, () => PH("ltc11/havana", (t) => <Label t={t} at={0.4} l1="CÁC CON TÀU DỪNG LẠI" l2="Có chiếc quay đầu" col="#3ddc84" />)],
-    [3, () => PH("ltc11/phong_hop", (t) => <Label t={t} at={0.4} l1="“BÊN KIA ĐÃ CHỚP MẮT TRƯỚC”" l2="Đại ý lời một quan chức Mỹ" />)],
+    [0, () => PH("ltc11/havana", (t) => <Place t={t} l1="24/10/1962" l2="Tàu Liên Xô tiến tới vòng chặn" />)],
+    [1, () => PH("ltc11/havana", (t) => <Label t={t} at={0.4} l1="CÁC CON TÀU DỪNG LẠI" l2="Có chiếc quay đầu" col="#3ddc84" />, -1, 0.3)],
+    [2, () => PH("ltc11/phong_hop", (t) => <Label t={t} at={0.4} l1="BÊN KIA LÙI TRƯỚC MỘT BƯỚC" col="#3ddc84" />)],
   ] },
   { id: "S06", shots: [
-    [0, () => PH("ltc11/tau_ngam", (t) => <Label t={t} at={0.3} l1="CHUYỆN ĐÁNG SỢ NHẤT: DƯỚI ĐÁY BIỂN" col="#ff6a6a" />, 1, 0.3)],
-    [1, () => PH("ltc11/tau_ngam", (t) => <Place t={t} l1="27/10/1962" l2="Bom chìm loại nhỏ ép tàu ngầm nổi lên" />)],
-    [2, () => PH("ltc11/tau_ngam", (t) => <Label t={t} at={0.4} l1="MẤT LIÊN LẠC · TƯỞNG CHIẾN TRANH ĐÃ NỔ" l2="Chỉ huy muốn phóng ngư lôi hạt nhân" col="#ff6a6a" />, -1, 0.35)],
+    [0, () => PH("ltc11/tau_ngam", (t) => <Label t={t} at={0.3} l1="NGUY HIỂM NHẤT: DƯỚI ĐÁY BIỂN" col="#ff6a6a" />, 1, 0.3)],
+    [1, () => PH("ltc11/tau_ngam", (t) => <Place t={t} l1="27/10/1962" l2="Bom nhỏ ép tàu ngầm nổi lên" />)],
+    [2, () => PH("ltc11/tau_ngam", (t) => <Label t={t} at={0.4} l1="MẤT LIÊN LẠC" l2="Tưởng chiến tranh đã nổ ra" col="#ff6a6a" />, -1, 0.35)],
+    [3, () => LAD(3)],
   ] },
   { id: "S07", shots: [
-    [0, () => CD((t) => <List t={t} title="CẦN CẢ 3 SĨ QUAN ĐỒNG Ý" items={[["✅", "Sĩ quan 1: đồng ý"], ["✅", "Sĩ quan 2: đồng ý"], ["❌", "Arkhipov: KHÔNG"]]} cur={2} bg="ltc11/tau_ngam" />)],
+    [0, () => PH("ltc11/tau_ngam", (t) => <Label t={t} at={0.3} l1="MUỐN BẮN: CẦN 3 SĨ QUAN ĐỒNG Ý" col="#f5c518" />)],
     [1, () => CD((t) => <List t={t} title="CẦN CẢ 3 SĨ QUAN ĐỒNG Ý" items={[["✅", "Sĩ quan 1: đồng ý"], ["✅", "Sĩ quan 2: đồng ý"], ["❌", "Arkhipov: KHÔNG"]]} cur={3} bg="ltc11/tau_ngam" />)],
-    [2, () => PH("ltc11/tau_ngam", (t) => <Label t={t} at={0.3} l1="NGƯ LÔI KHÔNG ĐƯỢC PHÓNG" col="#3ddc84" />)],
-    [3, () => PH("ltc11/havana", (t) => <Label t={t} at={0.4} l1="“NGƯỜI ĐÃ CỨU THẾ GIỚI”" l2="Theo nhiều sử gia" col="#3ddc84" />)],
+    [2, () => PH("ltc11/havana", (t) => <Label t={t} at={0.4} l1="NGƯ LÔI NẰM YÊN" l2="“Người đã cứu thế giới” – theo nhiều sử gia" col="#3ddc84" />)],
   ] },
   { id: "S08", shots: [
     [0, () => TQ("grin", ["Khủng hoảng", "kết thúc thế nào?"], "#e62117")],
@@ -198,9 +201,9 @@ const PLAN: Plan[] = [
   ] },
   { id: "S09", shots: [
     [0, () => TQ("laugh", ["Vy đúng."], "#1b8a4c")],
-    [1, () => CD((t) => <Two t={t} L={["LIÊN XÔ", "#ff9f3a", ["Rút tên lửa khỏi Cuba"]]} R={["MỸ", "#4aa3ff", ["Hứa không đánh Cuba", "BÍ MẬT rút tên lửa khỏi Thổ Nhĩ Kỳ"]]} cur={1} />)],
-    [2, () => CD((t) => <Two t={t} L={["LIÊN XÔ", "#ff9f3a", ["Rút tên lửa khỏi Cuba"]]} R={["MỸ", "#4aa3ff", ["Hứa không đánh Cuba", "BÍ MẬT rút tên lửa khỏi Thổ Nhĩ Kỳ"]]} cur={2} />)],
-    [3, () => PH("ltc11/ten_lua", (t) => <Label t={t} at={0.4} l1="MỘT BẬC THANG ĐỂ BƯỚC XUỐNG" l2="Mà không mất mặt" col="#3ddc84" />)],
+    [1, () => CD((t) => <Two t={t} L={["LIÊN XÔ", "#ff9f3a", ["Mang tên lửa về"]]} R={["MỸ", "#4aa3ff", ["Hứa không đánh Cuba", "Lặng lẽ rút tên lửa ở Thổ Nhĩ Kỳ"]]} cur={2} />)],
+    [2, () => PH("ltc11/ten_lua", (t) => <Label t={t} at={0.4} l1="MỘT BẬC THANG ĐỂ BƯỚC XUỐNG" l2="Mà không mất mặt" col="#3ddc84" />)],
+    [3, () => LAD(4)],
   ] },
   { id: "S10", shots: [[0, () => CD((t) => <TitleCard t={t} kicker="LỚP HỌC LÝ THUYẾT TRÒ CHƠI" l1="BÀI 5" l2="LUẬT LEO THANG" hue="night" />)]] },
   { id: "S11", shots: [
