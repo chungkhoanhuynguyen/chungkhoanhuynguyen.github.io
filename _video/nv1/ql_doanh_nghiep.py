@@ -52,7 +52,7 @@ S = [
  dict(k='cards', anh=HN, cap=('NHÓM GIẢI THỂ', 'TĂNG GẤP ĐÔI'), cols=CR, moc=True,
       cards=[('92.000', 'Tạm ngừng, so cùng kỳ', 'Giảm 12,7%'), ('33.700', 'Chờ giải thể, so cùng kỳ', 'Giảm 42,3%'), ('56.300', 'Đã giải thể, so cùng kỳ', 'Tăng 109,8%')],
       say=("Nhưng điều lạ nằm ở cột so sánh. Số tạm ngừng giảm mười hai phẩy bảy phần trăm so với cùng kỳ. Số chờ giải thể giảm tới bốn mươi hai phẩy ba phần trăm. "
-           "Chỉ riêng số đã giải thể tăng một trăm lẻ chín phẩy tám phần trăm, tức là gấp đôi. "
+           "Chỉ riêng số đã giải thể tăng gần một trăm mười phần trăm, tức là hơn gấp đôi. "
            "Nếu kinh tế đang tệ đi đều, lẽ ra cả ba nhóm phải cùng tăng. Vậy chuyện gì đang xảy ra?")),
  # ---------------- CHƯƠNG 2 ----------------
  dict(k='noti', ch='Chương 2 – Cú lật: dọn sổ hay đổ vỡ?', cap=('NHIỀU CÔNG TY ĐÃ CHẾT TỪ LÂU', 'GIỜ MỚI LÀM GIẤY KHAI TỬ'), cols=CC, moc=True, noti=dict(gio='09:30', ngay='Thứ Hai', items=[
