@@ -52,7 +52,7 @@ S = [
       say=("Chị Thu mở cuốn sổ tài sản, số này em giả định để minh hoạ. Hai lượng vàng mua hết ba trăm tám mươi triệu đồng, gần như toàn bộ tiền tiết kiệm sáu năm đi làm. "
            "Bán hôm nay, chị nhận về hai trăm sáu mươi chín triệu. Mất một trăm mười một triệu. "
            "Nếu ngày đó chị để ba trăm tám mươi triệu trong sổ tiết kiệm lãi năm phẩy bốn phần trăm mỗi năm, tới hôm nay chị đã có thêm khoảng mười sáu phẩy năm triệu tiền lãi.")),
- dict(k='chat', cap=('"HỒI THÁNG 1 AI CŨNG MUA', 'MÀ EM CHẲNG HỎI AI"'), cols=CR, moc=True, chat=dict(ten='Chồng', tv='Đang hoạt động', gio='07:55', mau=G_, msgs=[
+ dict(k='chat', cap=('"LÚC ĐÓ CẢ CƠ QUAN', 'AI CŨNG MUA VÀNG MÀ"'), cols=CR, moc=True, chat=dict(ten='Chồng', tv='Đang hoạt động', gio='07:55', mau=G_, msgs=[
         ('Chồng', 'Lúc đó cả cơ quan em ai cũng mua mà'),
         ('me', 'Ừ, em sợ để tiền trong sổ bị mất giá'),
         ('Chồng', 'Giờ bán thì mất hơn trăm triệu, giữ thì không biết đến bao giờ')]),
@@ -84,7 +84,7 @@ S = [
            "Nhẫn trơn mua vào một trăm ba mươi ba phẩy ba, bán ra một trăm ba mươi bảy phẩy ba. "
            "Tức là ai mua hôm nay rồi bán ngay, đã mất từ ba triệu đến bốn triệu đồng mỗi lượng. Vàng phải tăng ít nhất chừng đó mới hoà vốn.")),
  # ---------------- CHƯƠNG 3 ----------------
- dict(k='call', ch='Chương 3 – Lần trước: năm 2011', cap=('"MẸ MUA 49 TRIỆU', 'CHỜ 9 NĂM MỚI HẾT LỖ"'), cols=CR, moc=True, call=dict(ten='Mẹ', phu='Gọi thoại', mau=V_, loi=[
+ dict(k='call', ch='Chương 3 – Lần trước: năm 2011', cap=('MẸ MUA ĐỈNH 49 TRIỆU', 'CHỜ GẦN 9 NĂM'), cols=CR, moc=True, call=dict(ten='Mẹ', phu='Gọi thoại', mau=V_, loi=[
         'Năm 2011 mẹ cũng mua đúng đỉnh 49 triệu',
         'Mấy năm sau xuống còn 33 triệu']),
       say=("Mẹ chị Thu gọi điện. Bà kể năm hai nghìn không trăm mười một, bà cũng mua vàng đúng đỉnh, khoảng bốn mươi chín triệu đồng một lượng. "
