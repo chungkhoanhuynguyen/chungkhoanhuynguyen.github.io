@@ -1,0 +1,144 @@
+[
+ {
+  "key": "TS1611TPB",
+  "tieu_de": "Lệnh tích sản TPB 16/11/2026: mua vùng 12,7 – hẹn 5 năm nữa nhìn lại",
+  "hook": [
+   "LỆNH TÍCH SẢN TPB",
+   "VÌ SAO MUA Ở 12,7???"
+  ],
+  "nhan": "TÍCH SẢN · NHẬT KÝ LỆNH",
+  "short_caption": "Lệnh tích sản dài hạn 16/11/2026: TPB tỉ trọng 20%, vùng giá ≤ 12,7 (đóng cửa 12,65). Giá điều chỉnh, đỉnh tuần ~18,2 (8/2025). KQKD Q3/2026 TPBank: LNST 2.394 tỷ (+57,4%), nợ xấu 2,10% (BCTC hợp nhất Q3/2026). Kết quả tài khoản tích sản ngân hàng từ 01/2018: +731,1%, VN-Index +79,5%, sụt sâu nhất −42,5% (chungkhoanhuynguyen.com, kết quả quá khứ). Quan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [],
+  "toc": 1.0,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "keo_web": null,
+  "cau_hoi": {
+   "chu_to": "ANH CHỊ ĐANG TÍCH SẢN GÌ?",
+   "loi": "Anh chị đang tích sản mã nào, mua ở giá bao nhiêu? Muốn biết mã nào đang ở vùng mua lúc này, anh chị nhắn em để em tư vấn riêng nhé.",
+   "loi_doc": "Anh chị đang tích sản mã nào, mua ở giá bao nhiêu? Muốn biết mã nào đang ở vùng mua lúc này, anh chị nhắn em để em tư vấn riêng nhé.",
+   "anh": [
+    "Ho Chi Minh City Stock Exchange"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "LỆNH TÍCH SẢN 16/11",
+    "loi": "Ngày 16/11/2026, em vừa báo một lệnh tích sản dài hạn: TPB, tỉ trọng 20%, vùng giá từ 12,7 trở xuống. Phiên hôm đó TPB đóng cửa ở 12,65.",
+    "loi_doc": "Ngày mười sáu tháng mười một năm hai nghìn không trăm hai mươi sáu, em vừa báo một lệnh tích sản dài hạn: Ti Pi Bank, tỉ trọng hai mươi phần trăm, vùng giá từ mười hai phẩy bảy trở xuống. Phiên hôm đó Ti Pi Bank đóng cửa ở mười hai phẩy sáu mươi lăm.",
+    "the": {
+     "loai": "lon",
+     "tieu": "📌 LỆNH TÍCH SẢN DÀI HẠN 16/11/2026",
+     "nguon": "Chứng Khoán Huy Nguyễn",
+     "dong": [
+      [
+       "TPB ≤ 12,7",
+       130,
+       "vang"
+      ],
+      [
+       "TỈ TRỌNG 20%",
+       64,
+       "trang"
+      ],
+      [
+       "NẮM GIỮ DÀI HẠN",
+       50,
+       "tim2"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "LÙI 30% TỪ ĐỈNH",
+    "loi": "Nhìn biểu đồ hai năm: tháng 8/2025, TPB từng lên khoảng 18,2. Từ đó giá lùi dần, đến nay thấp hơn đỉnh khoảng 30%.",
+    "loi_doc": "Nhìn biểu đồ hai năm: tháng tám năm hai nghìn không trăm hai mươi lăm, Ti Pi Bank từng lên khoảng mười tám phẩy hai. Từ đó giá lùi dần, đến nay thấp hơn đỉnh khoảng ba mươi phần trăm.",
+    "hinh": "bd_2nam.png"
+   },
+   {
+    "chu_to": "LÃI QUÝ 3 +57,4%",
+    "loi": "Trong khi giá lùi, kinh doanh lại tăng. Quý 3/2026, TPBank lãi sau thuế 2.394 tỷ, tăng 57,4% so với cùng kỳ. Điểm cần theo dõi là nợ xấu nhích lên 2,10%.",
+    "loi_doc": "Trong khi giá lùi, kinh doanh lại tăng. Quý ba năm hai nghìn không trăm hai mươi sáu, Ti Pi Bank lãi sau thuế hai nghìn ba trăm chín mươi tư tỷ, tăng năm mươi bảy phẩy bốn phần trăm so với cùng kỳ. Điểm cần theo dõi là nợ xấu nhích lên hai phẩy một phần trăm.",
+    "the": {
+     "loai": "lon",
+     "tieu": "TPBANK QUÝ 3/2026",
+     "nguon": "BCTC hợp nhất Q3/2026",
+     "dong": [
+      [
+       "LÃI +57,4%",
+       110,
+       "vang"
+      ],
+      [
+       "2.394 TỶ SAU THUẾ",
+       56,
+       "trang"
+      ],
+      [
+       "NỢ XẤU 2,10% – CẦN THEO DÕI",
+       42,
+       "do"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "VÀO VÙNG MUA",
+    "loi": "Sau khi các ngân hàng công bố báo cáo tài chính quý 3, em cập nhật giá mua tích sản của TPB là 12,7. Ngày 16/11, giá đóng cửa 12,65, nằm trong vùng mua.",
+    "loi_doc": "Sau khi các ngân hàng công bố báo cáo tài chính quý ba, em cập nhật giá mua tích sản của Ti Pi Bank là mười hai phẩy bảy. Ngày mười sáu tháng mười một, giá đóng cửa mười hai phẩy sáu mươi lăm, nằm trong vùng mua.",
+    "hinh": "bd_60.png"
+   },
+   {
+    "chu_to": "KHÔNG ĐOÁN ĐÁY",
+    "loi": "Tích sản không đoán đáy. Em chỉ mua khi giá đã về vùng rẻ so với giá trị của ngân hàng, rồi nắm giữ nhiều năm, đến khi giá về vùng hợp lý mới bán. Mua xong giá vẫn có thể giảm tiếp, nên mỗi mã chỉ khoảng 20% danh mục và không dùng vốn vay.",
+    "loi_doc": "Tích sản không đoán đáy. Em chỉ mua khi giá đã về vùng rẻ so với giá trị của ngân hàng, rồi nắm giữ nhiều năm, đến khi giá về vùng hợp lý mới bán. Mua xong giá vẫn có thể giảm tiếp, nên mỗi mã chỉ khoảng hai mươi phần trăm danh mục và không dùng vốn vay.",
+    "the": {
+     "loai": "lon",
+     "tieu": "NGUYÊN TẮC TÍCH SẢN",
+     "nguon": "Chứng Khoán Huy Nguyễn",
+     "dong": [
+      [
+       "MUA VÙNG RẺ",
+       80,
+       "vang"
+      ],
+      [
+       "NẮM GIỮ NHIỀU NĂM",
+       56,
+       "trang"
+      ],
+      [
+       "MỖI MÃ ~20%",
+       56,
+       "tim2"
+      ],
+      [
+       "KHÔNG VAY",
+       56,
+       "do"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "+731,1% TỪ 2018",
+    "loi": "Kết quả thật của tài khoản tích sản ngân hàng em ghi công khai trên web: từ tháng 1/2018 đến nay tăng 731,1%, lãi kép bình quân 27,2% mỗi năm, trong khi VN-Index cùng kỳ tăng 79,5%.",
+    "loi_doc": "Kết quả thật của tài khoản tích sản ngân hàng em ghi công khai trên web: từ tháng một năm hai nghìn không trăm mười tám đến nay tăng bảy trăm ba mươi mốt phẩy một phần trăm, lãi kép bình quân hai mươi bảy phẩy hai phần trăm mỗi năm, trong khi Vi En In đéc cùng kỳ tăng bảy mươi chín phẩy năm phần trăm.",
+    "hinh": "web_tong.png"
+   },
+   {
+    "chu_to": "CÓ NĂM LỖ",
+    "loi": "Em cũng ghi rõ nhược điểm: năm 2018 và 2019 tài khoản lỗ hai năm liền, có lúc sụt sâu nhất 42,5%. Tích sản chỉ hợp với người chịu cầm đủ lâu.",
+    "loi_doc": "Em cũng ghi rõ nhược điểm: năm hai nghìn không trăm mười tám và hai nghìn không trăm mười chín tài khoản lỗ hai năm liền, có lúc sụt sâu nhất bốn mươi hai phẩy năm phần trăm. Tích sản chỉ hợp với người chịu cầm đủ lâu.",
+    "hinh": "web_nam.png"
+   },
+   {
+    "chu_to": "HẸN 5 NĂM NỮA",
+    "loi": "Lệnh TPB hôm nay cũng sẽ nằm trong sổ lệnh đó. Một năm, hai năm hay năm năm nữa, anh chị cứ mở lại bảng tích sản trên web Chứng Khoán Huy Nguyễn mà đối chiếu. Phương pháp tốt hay không, để số liệu trả lời.",
+    "loi_doc": "Lệnh Ti Pi Bank hôm nay cũng sẽ nằm trong sổ lệnh đó. Một năm, hai năm hay năm năm nữa, anh chị cứ mở lại bảng tích sản trên web Chứng Khoán Huy Nguyễn mà đối chiếu. Phương pháp tốt hay không, để số liệu trả lời.",
+    "hinh": "web_bd.png"
+   }
+  ]
+ }
+]
