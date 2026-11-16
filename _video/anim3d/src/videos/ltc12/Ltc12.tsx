@@ -1,4 +1,4 @@
-// Lớp học Lý thuyết trò chơi – Bài 6 (16/11/2026), khung 1920x1080, 30 fps.
+// Lớp học Lý thuyết trò chơi – Bài 5 (đổi từ bài 6, 17/11/2026), khung 1920x1080, 30 fps.
 // Lời kể là xương sống; mỗi ví dụ lịch sử có bối cảnh riêng (núi Tần, cung Sở, sa mạc, Athens, Uruk, Tenochtitlan, thảo nguyên, Plaza, hội thảo).
 import React, { useEffect, useState } from "react";
 import { AbsoluteFill, Sequence, useCurrentFrame, staticFile, delayRender, continueRender, Audio, getInputProps } from "remotion";
@@ -167,7 +167,7 @@ const PLAN: Plan[] = [
   { id: "S01", shots: [
     [0, () => PH("ltc12/danh_giay", (t) => <Label t={t} at={0.5} l1="CẬU BÉ ĐÁNH GIÀY MÁCH CỔ PHIẾU" l2="Nên mua thêm, hay nên chạy?" />)],
     [1, () => PH("ltc12/pho_wall29", (t) => <Label t={t} at={0.4} l1="NGAY TRƯỚC CƠN SẬP LỚN NHẤT LỊCH SỬ" col="#ff6a6a" />)],
-    [2, () => D3(lop(WIDE(), [thay("smile", true, [-0.5, 0, -1.2]), ...allStu()]), (t) => <Place t={t} l1="LỚP HỌC LÝ THUYẾT TRÒ CHƠI" l2="Bài 6 · Bí mật của những cơn sập" />)],
+    [2, () => D3(lop(WIDE(), [thay("smile", true, [-0.5, 0, -1.2]), ...allStu()]), (t) => <Place t={t} l1="LỚP HỌC LÝ THUYẾT TRÒ CHƠI" l2="Bài 5 · Bí mật của những cơn sập" />)],
   ] },
   { id: "S02", shots: [
     [0, () => FQ("trang5", "grin", ["“Bác bảo vệ công ty em", "cũng khoe lãi gấp đôi!”"], "#2e7d32")],
@@ -215,7 +215,7 @@ const PLAN: Plan[] = [
     [1, () => PH("ltc9/fed", (t) => <Label t={t} at={0.4} l1="SIẾT TIỀN ĐÚNG LÚC KINH TẾ KHÁT TIỀN" l2="Theo nhiều nhà kinh tế" col="#ff6a6a" />, -1)],
     [2, () => PH("ltc12/rut_tien", (t) => <Label t={t} at={0.3} l1="VÒI TIỀN KHÓA → ĐẠI SUY THOÁI" col="#ff6a6a" />)],
   ] },
-  { id: "S10", shots: [[0, () => CD((t) => <TitleCard t={t} kicker="LỚP HỌC LÝ THUYẾT TRÒ CHƠI" l1="BÀI 6" l2="BÍ MẬT CỦA NHỮNG CƠN SẬP" hue="night" />)]] },
+  { id: "S10", shots: [[0, () => CD((t) => <TitleCard t={t} kicker="LỚP HỌC LÝ THUYẾT TRÒ CHƠI" l1="BÀI 5" l2="BÍ MẬT CỦA NHỮNG CƠN SẬP" hue="night" />)]] },
   { id: "S11", shots: [
     [0, () => CD((t) => <List t={t} title="CHU KỲ CỦA TIỀN" items={CYC} cur={1} />)],
     [2, () => CD((t) => <List t={t} title="CHU KỲ CỦA TIỀN" items={CYC} cur={2} />)],
