@@ -8,7 +8,7 @@ export const TAIL = 4.0;
 export const TOTAL_F = Math.ceil((TIMING.total + TAIL) * FPS);
 export const sc = (id: string) => TIMING.scenes.find((s) => s.id === id)!;
 const REP: [RegExp, string][] = [
-  [/Bài sáu/g, "Bài 6"],
+  [/Bài năm/g, "Bài 5"],
   [/Đao Giôn/g, "Dow Jones"],
   [/phố Uôn/g, "phố Wall"],
   [/Niu tơn/g, "Newton"],
