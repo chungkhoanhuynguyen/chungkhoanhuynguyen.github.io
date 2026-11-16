@@ -42,7 +42,7 @@ const FACE = (k: string): [[V, V, number], [V, V, number]] => { const [x, , z] =
 const FACE2 = (k: string): [[V, V, number], [V, V, number]] => { const [x, , z] = seatP(k); return [[[x - 0.95, 1.2, z - 1.9], [x, 1.15, z], 33], [[x - 0.7, 1.25, z - 1.7], [x, 1.15, z], 30]]; };
 const OTS = (k: string): [[V, V, number], [V, V, number]] => { const [x, , z] = seatP(k); return [[[-2.55, 2.05, -4.0], [x, 1.1, z], 30], [[-2.45, 2.0, -3.85], [x, 1.1, z], 27]]; };
 const TEACH2 = (): [[V, V, number], [V, V, number]] => [[[0.9, 1.65, 4.6], [-2.1, 1.5, -3.0], 36], [[0.5, 1.6, 4.2], [-2.1, 1.5, -3.0], 33]];
-const TEACH3 = (): [[V, V, number], [V, V, number]] => [[[1.4, 1.35, -1.4], [-2.1, 1.55, -3.0], 32], [[1.1, 1.4, -1.7], [-2.1, 1.55, -3.0], 29]];
+const TEACH3 = (): [[V, V, number], [V, V, number]] => [[[1.0, 1.35, -0.4], [-2.1, 1.1, -3.0], 34], [[0.7, 1.35, -0.7], [-2.1, 1.1, -3.0], 31]];
 const TOP = (): [[V, V, number], [V, V, number]] => [[[0.5, 6.3, 9.4], [0, 0.8, 1.8], 50], [[-0.5, 6.0, 9.0], [0, 0.8, 1.8], 47]];
 const SIDE = (): [[V, V, number], [V, V, number]] => [[[6.6, 2.2, 6.8], [-1.0, 1.0, 1.8], 46], [[6.4, 2.1, 5.6], [-1.0, 1.0, 1.8], 43]];
 const CLASS = (): [[V, V, number], [V, V, number]] => [[[-2.0, 2.4, -3.6], [0.3, 0.9, 2.2], 52], [[-1.2, 2.3, -3.8], [0.3, 0.9, 2.2], 49]];
@@ -154,7 +154,7 @@ const CtaLtc: React.FC<{ t: number }> = ({ t }) => <AbsoluteFill style={{ backgr
   <div style={{ fontSize: 40, fontWeight: 700, color: "#cfc3ff", marginTop: 40, opacity: sm((t - 4) / 0.4) }}>Bài tóm tắt miễn phí: chungkhoanhuynguyen.com · Nhóm cộng đồng: link ở mô tả</div>
 </AbsoluteFill>;
 const hsh = (x: string) => { let h = 7; for (let i = 0; i < x.length; i++) h = (h * 31 + x.charCodeAt(i)) >>> 0; return h; };
-const FQ = (k: string, e: Expr, l: string[], c: string) => { const m = hsh(k + l.join("")) % 3; return D3(lop(m === 0 ? FACE(k) : m === 1 ? FACE2(k) : OTS(k), [...allStu(k, e), ...(m === 2 ? [thay("smile", false, TP)] : [])]), (t) => <><NameTag t={t} k={k} /><Note t={t} lines={l} col={c} /></>); };
+const FQ = (k: string, e: Expr, l: string[], c: string) => { const m0 = hsh(k + l.join("")) % 3; const m = m0 === 2 && seatP(k)[2] > 4 ? 1 : m0; return D3(lop(m === 0 ? FACE(k) : m === 1 ? FACE2(k) : OTS(k), [...allStu(k, e), ...(m === 2 ? [thay("smile", false, TP)] : [])]), (t) => <><NameTag t={t} k={k} /><Note t={t} lines={l} col={c} /></>); };
 const TQ = (e: Expr, l: string[], c?: string, title?: string) => { const m = hsh(l.join("")) % 3; return D3(lop(m === 0 ? TEACH() : m === 1 ? TEACH2() : TEACH3(), [thay(e), ...(m === 1 ? allStu(undefined, "neutral", "neutral") : [])]), (t) => <Note t={t} lines={l} col={c} title={title} />); };
 const ESC: [string, string][] = [["🛒", "Mua lần 1 → giảm"], ["🙈", "Không muốn nhận sai → mua thêm"], ["💸", "Đã bỏ nhiều quá → mua thêm nữa"], ["🔥", "Đốt dần đường lui"]];
 const RULE: [string, string][] = [["🧊", "Biết mình dừng ở đâu TRƯỚC khi vào"], ["🪜", "Mỗi bước chừa 1 bậc để lùi · không vay quá sức"], ["🙇", "Chấp nhận mất mặt · giữ quyền chơi ván sau"]];
