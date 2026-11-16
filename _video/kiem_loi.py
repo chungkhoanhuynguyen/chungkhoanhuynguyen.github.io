@@ -6,7 +6,7 @@ CAM = [(r"\btôi\b|(?<!\d )(?<!người )\bbạn\b(?!\s*(bè|nào|học|đồng 
        (r"em là Huy|môi giới chứng khoán\.", "tự giới thiệu 'em là môi giới' – không cần"),
        (r"bình luận giúp em|để lại (giúp em )?một chữ", "câu cuối phải là câu hỏi mở thuần, không xin bình luận"),
        (r"phần trăm (một|1) năm", "viết 'X phần trăm mỗi năm' – 'một năm' làm phụ đề ra '5 phần 101 năm' (VT6VANG)"),
-       (r"\bmột phần\b", "'một phần …' ra phụ đề '1 phần' (CH2011VON, CH2211VANG, CH2311DN V1) – nói 'khoảng X phần trăm' hoặc 'có nguyên nhân từ'"),
+       (r"\bmột phần\b(?! trăm)", "'một phần …' ra phụ đề '1 phần' (CH2011VON, CH2211VANG, CH2311DN V1) – nói 'khoảng X phần trăm' hoặc 'có nguyên nhân từ'"),
        (r"\b(OK|ok|wow|(?<!nhập )(?<!xuất )siêu(?! thị)(?! âm)(?! xe)|cực kỳ khủng|bùng nổ|x\d+ tài khoản)\b", "từ giật gân/thiếu chuẩn mực")]
 CHU_NGU = r"\b(em|anh chị|ngân hàng|nhà nước|NHNN|thị trường|cổ phiếu|doanh nghiệp|công ty|giá|lãi suất|đây|điều|số tiền|khoản|kỳ hạn|tin|mốc|hợp đồng|hai bên|nhà đầu tư|dòng tiền|lợi nhuận|vốn|họ|nó|các|mỗi|như vậy|vì vậy|tuy nhiên|theo|nếu|khi|trong|sau|từ|với|hạn mức|quy mô|chênh|đợt|cơ chế|hoán đổi|[A-Z]{3}\b)"
 def kiem(canh, cau_hoi=None, tin_nong=True):
