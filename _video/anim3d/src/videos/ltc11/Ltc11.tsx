@@ -22,10 +22,10 @@ type Plan = { id: string; shots: [number, (a: number) => Seg][] };
 // ---------- dàn nhân vật: mỗi người 2 điểm nhận dạng cố định ----------
 // Thầy Huy: kính + sơ mi trắng · Phú Dê Già: ria + nhẫn vàng (áo tím) · Quang Hà: mũ lưỡi trai đỏ + áo xanh · Vy Kim Khâu: kính + áo đỏ tóc dài
 // Trang Trâu: nhỏ nhất lớp + tai nghe (áo hồng) · Hùng Xa Lộ: mũ bảo hiểm xanh + người to · Linh Livestream: điện thoại + áo tím tóc dài
-const ACC: Record<string, Acc[]> = { thay5: ["glasses"], phu5: ["ring"], qha5: [], vy5: ["glasses"], trang5: ["headset"], hung5: ["helmet"], linh5: ["phone"] };
-const NAME: Record<string, string> = { thay5: "Thầy Huy", phu5: "Phú Dê Già", qha5: "Quang Hà", vy5: "Vy Kim Khâu", trang5: "Trang Trâu", hung5: "Hùng Xa Lộ", linh5: "Linh Livestream" };
-const SEAT: Record<string, string> = { phu5: "phu", qha5: "qha", vy5: "vy", trang5: "trang", hung5: "hung", linh5: "linh" };
-const ST = ["phu5", "qha5", "vy5", "trang5", "hung5", "linh5"];
+const ACC: Record<string, Acc[]> = { thay5: ["glasses"], phu5: ["ring"], qha5: [], vy5: ["glasses"], trang5: ["headset"], hung5: ["helmet"], linh5: ["phone"], cuong: ["cup"], ninhkoi: [], tronghau: [] };
+const NAME: Record<string, string> = { thay5: "Thầy Huy", phu5: "Phú Dê Già", qha5: "Quang Hà", vy5: "Vy Kim Khâu", trang5: "Trang Trâu", hung5: "Hùng Xa Lộ", linh5: "Linh Livestream", cuong: "Cường Sociu", ninhkoi: "Ninh Kòi", tronghau: "Trọng Hậu" };
+const SEAT: Record<string, string> = { phu5: "phu", qha5: "qha", vy5: "vy", trang5: "trang", hung5: "hung", linh5: "linh", cuong: "cuong", ninhkoi: "ninh", tronghau: "hau" };
+const ST = ["phu5", "qha5", "vy5", "trang5", "hung5", "linh5", "cuong", "ninhkoi", "tronghau"];
 const seatP = (k: string): V => { const [x, z] = LOP_SEATS[SEAT[k]]; return [x, 0.45, z + 0.05]; };
 const TP: V = [-2.1, 0, -3.0]; // chỗ thầy đứng (trái bảng nhìn từ cuối lớp)
 // lớp: máy nhìn về −z (về phía bảng) nên +x nằm bên PHẢI màn
@@ -39,6 +39,12 @@ const WIDE = (): [[V, V, number], [V, V, number]] => [[[3.2, 3.4, 9.6], [0, 2.0,
 const BOARD = (): [[V, V, number], [V, V, number]] => [[[0.3, 3.35, 2.4], [0, 3.35, -4.3], 36], [[-0.2, 3.35, 1.9], [0, 3.35, -4.3], 34]];
 const TEACH = (): [[V, V, number], [V, V, number]] => [[[-0.6, 1.75, -0.4], [-2.1, 1.45, -3.0], 36], [[-0.9, 1.7, -0.7], [-2.1, 1.45, -3.0], 33]];
 const FACE = (k: string): [[V, V, number], [V, V, number]] => { const [x, , z] = seatP(k); return [[[x + 0.75, 1.45, z - 2.4], [x, 1.05, z], 36], [[x + 0.5, 1.4, z - 2.1], [x, 1.05, z], 33]]; };
+const FACE2 = (k: string): [[V, V, number], [V, V, number]] => { const [x, , z] = seatP(k); return [[[x - 0.95, 1.2, z - 1.9], [x, 1.15, z], 33], [[x - 0.7, 1.25, z - 1.7], [x, 1.15, z], 30]]; };
+const OTS = (k: string): [[V, V, number], [V, V, number]] => { const [x, , z] = seatP(k); return [[[-2.55, 2.05, -4.0], [x, 1.1, z], 30], [[-2.45, 2.0, -3.85], [x, 1.1, z], 27]]; };
+const TEACH2 = (): [[V, V, number], [V, V, number]] => [[[0.9, 1.65, 4.6], [-2.1, 1.5, -3.0], 36], [[0.5, 1.6, 4.2], [-2.1, 1.5, -3.0], 33]];
+const TEACH3 = (): [[V, V, number], [V, V, number]] => [[[1.4, 1.35, -1.4], [-2.1, 1.55, -3.0], 32], [[1.1, 1.4, -1.7], [-2.1, 1.55, -3.0], 29]];
+const TOP = (): [[V, V, number], [V, V, number]] => [[[0.5, 6.3, 9.4], [0, 0.8, 1.8], 50], [[-0.5, 6.0, 9.0], [0, 0.8, 1.8], 47]];
+const SIDE = (): [[V, V, number], [V, V, number]] => [[[6.6, 2.2, 6.8], [-1.0, 1.0, 1.8], 46], [[6.4, 2.1, 5.6], [-1.0, 1.0, 1.8], 43]];
 const CLASS = (): [[V, V, number], [V, V, number]] => [[[-2.0, 2.4, -3.6], [0.3, 0.9, 2.2], 52], [[-1.2, 2.3, -3.8], [0.3, 0.9, 2.2], 49]];
 const lop = (cam: [[V, V, number], [V, V, number]], cast: Cast[], chalk: string[] = [], chalkT = 0, light: Shot3D["light"] = "morning") => S("lop", light, cam[0], cam[1], cast, { chalk, chalkT });
 
@@ -147,8 +153,9 @@ const CtaLtc: React.FC<{ t: number }> = ({ t }) => <AbsoluteFill style={{ backgr
   <div style={{ fontSize: 76, fontWeight: 900, color: "#fff", marginTop: 16, padding: "0 120px", opacity: sm((t - 0.4) / 0.4) }}>Đã bao giờ mua thêm chỉ vì không muốn nhận sai?</div>
   <div style={{ fontSize: 40, fontWeight: 700, color: "#cfc3ff", marginTop: 40, opacity: sm((t - 4) / 0.4) }}>Bài tóm tắt miễn phí: chungkhoanhuynguyen.com · Nhóm cộng đồng: link ở mô tả</div>
 </AbsoluteFill>;
-const FQ = (k: string, e: Expr, l: string[], c: string) => D3(lop(FACE(k), [...allStu(k, e)]), (t) => <><NameTag t={t} k={k} /><Note t={t} lines={l} col={c} /></>);
-const TQ = (e: Expr, l: string[], c?: string, title?: string) => D3(lop(TEACH(), [thay(e)]), (t) => <Note t={t} lines={l} col={c} title={title} />);
+const hsh = (x: string) => { let h = 7; for (let i = 0; i < x.length; i++) h = (h * 31 + x.charCodeAt(i)) >>> 0; return h; };
+const FQ = (k: string, e: Expr, l: string[], c: string) => { const m = hsh(k + l.join("")) % 3; return D3(lop(m === 0 ? FACE(k) : m === 1 ? FACE2(k) : OTS(k), [...allStu(k, e), ...(m === 2 ? [thay("smile", false, TP)] : [])]), (t) => <><NameTag t={t} k={k} /><Note t={t} lines={l} col={c} /></>); };
+const TQ = (e: Expr, l: string[], c?: string, title?: string) => { const m = hsh(l.join("")) % 3; return D3(lop(m === 0 ? TEACH() : m === 1 ? TEACH2() : TEACH3(), [thay(e), ...(m === 1 ? allStu(undefined, "neutral", "neutral") : [])]), (t) => <Note t={t} lines={l} col={c} title={title} />); };
 const ESC: [string, string][] = [["🛒", "Mua lần 1 → giảm"], ["🙈", "Không muốn nhận sai → mua thêm"], ["💸", "Đã bỏ nhiều quá → mua thêm nữa"], ["🔥", "Đốt dần đường lui"]];
 const RULE: [string, string][] = [["🧊", "Biết mình dừng ở đâu TRƯỚC khi vào"], ["🪜", "Mỗi bước chừa 1 bậc để lùi · không vay quá sức"], ["🙇", "Chấp nhận mất mặt · giữ quyền chơi ván sau"]];
 
@@ -214,9 +221,9 @@ const PLAN: Plan[] = [
     [4, () => TQ("smile", ["Kiểm soát mức leo thang", "+ chừa đường lui cho CẢ HAI"], "#1b8a4c", "NGƯỜI THẮNG")],
   ] },
   { id: "S12", shots: [
-    [0, () => FQ("qha5", "grin", ["“Sao không leo thang", "thật mạnh cho sợ luôn?”"], "#00838f")],
+    [0, () => FQ("cuong", "grin", ["“Sao không leo thang", "thật mạnh cho sợ luôn?”"], "#00838f")],
     [1, () => TQ("stern", ["Leo quá mạnh =", "tự đốt đường lui"], "#e62117")],
-    [2, () => TQ("stern", ["Trò chơi sẽ", "điều khiển em"])],
+    [2, () => D3(lop(SIDE(), [thay("stern"), ...allStu("cuong", "dazed")]), (t) => <Note t={t} lines={["Trò chơi sẽ", "điều khiển em"]} />)],
   ] },
   { id: "S13", shots: [
     [0, () => PH("ltc11/san_choi", (t) => <Place t={t} l1="Ở SÂN TRƯỜNG" l2="Hai cậu bé cãi nhau" />)],
@@ -227,7 +234,7 @@ const PLAN: Plan[] = [
     [6, () => PH("ltc11/san_choi", (t) => <Label t={t} at={0.2} l1="LEO THANG SINH RA LEO THANG" col="#ff6a6a" />)],
   ] },
   { id: "S14", shots: [
-    [0, () => FQ("trang5", "nervous", ["“Liên quan gì chuyện", "Hùng mua thêm ạ?”"], "#2e7d32")],
+    [0, () => FQ("ninhkoi", "nervous", ["“Liên quan gì chuyện", "Hùng mua thêm ạ?”"], "#2e7d32")],
     [1, () => FQ("hung5", "dazed", ["Thầy: em đang chơi trò", "leo thang với thị trường"], "#1565c0")],
   ] },
   { id: "S15", shots: [
@@ -269,14 +276,14 @@ const PLAN: Plan[] = [
     [3, () => CD((t) => <Two t={t} L={["CHIẾN LƯỢC", "#3ddc84", ["Công ty tốt, giá rẻ", "Kế hoạch định trước", "Tiền nhàn rỗi"]]} R={["LEO THANG", "#ff6a6a", ["Không chịu nhận sai", "Quyết lúc đang nóng", "Tiền đi vay"]]} cur={2} />)],
   ] },
   { id: "S22", shots: [
-    [0, () => FQ("phu5", "dazed", ["“Sao biết mình chiến lược", "hay đang leo thang?”"], "#7b3fbf")],
+    [0, () => FQ("tronghau", "dazed", ["“Sao biết mình chiến lược", "hay đang leo thang?”"], "#7b3fbf")],
     [1, () => TQ("smile", ["Tự hỏi một câu…"])],
     [2, () => PH("ltc10/san_gd", (t) => <Label t={t} at={0.4} l1="HÔM NAY CHƯA CÓ MÃ NÀY" l2="Có mua ở giá này không?" col="#f5c518" />)],
     [3, () => PH("ltc10/san_gd", (t) => <Label t={t} at={0.3} l1="KHÔNG → ĐANG LEO THANG" col="#ff6a6a" />, -1)],
   ] },
   { id: "S23", shots: [
     [0, () => TQ("smile", ["Nhiều chi tiết khủng hoảng Cuba", "vẫn còn tranh luận"], undefined, "LƯU Ý")],
-    [1, () => D3(lop(CLASS(), [...allStu(undefined, "neutral", "smile")]), (t) => <Note t={t} lines={["Một cách nhìn,", "không phải công thức thắng chắc"]} />)],
+    [1, () => D3(lop(TOP(), [thay("smile"), ...allStu(undefined, "neutral", "smile")]), (t) => <Note t={t} lines={["Một cách nhìn,", "không phải công thức thắng chắc"]} />)],
   ] },
   { id: "S24", shots: [
     [0, () => TQ("smile", ["Mỗi mã đang cầm: giảm tới đâu thì dừng?", "Viết TRƯỚC giờ mở cửa"], "#1b8a4c", "BÀI VỀ NHÀ")],

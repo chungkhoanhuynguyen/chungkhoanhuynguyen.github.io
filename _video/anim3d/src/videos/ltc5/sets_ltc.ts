@@ -90,12 +90,12 @@ function galleon() {
 export type Board = { c: HTMLCanvasElement; g: CanvasRenderingContext2D; t: THREE.CanvasTexture; last: string };
 
 // ---------- LỚP HỌC QUÝ TỘC (Học viện St. Alden) ----------
-export const LOP_SEATS: Record<string, [number, number]> = { phu: [-2.6, 0.6], qha: [0, 0.6], vy: [2.6, 0.6], trang: [-2.6, 3.0], hung: [0, 3.0], linh: [2.6, 3.0] };
+export const LOP_SEATS: Record<string, [number, number]> = { phu: [-2.6, 0.6], qha: [0, 0.6], vy: [2.6, 0.6], trang: [-2.6, 3.0], hung: [0, 3.0], linh: [2.6, 3.0], cuong: [-2.6, 5.4], ninh: [0, 5.4], hau: [2.6, 5.4] };
 export function buildLop() {
   const g = new THREE.Group(), r = rng(5);
   const [fc, fx] = cvs(512, 512); fx.fillStyle = "#7a4a2a"; fx.fillRect(0, 0, 512, 512); for (let i = 0; i < 16; i++) { fx.fillStyle = i % 2 ? "#6e4226" : "#83522f"; fx.fillRect(0, i * 32, 512, 30); for (let k = 0; k < 4; k++) { fx.fillStyle = "rgba(0,0,0,.25)"; fx.fillRect((k * 131 + i * 57) % 512, i * 32, 2, 30); } }
   const ft = ctex(fc, true); ft.repeat.set(4, 4); const floor = new THREE.Mesh(new THREE.PlaneGeometry(22, 22), lam("#ffffff", ft)); floor.rotation.x = -Math.PI / 2; floor.receiveShadow = true; g.add(floor);
-  const rug = box(8.6, 0.02, 7, lam("#8e1d24")); rug.position.set(0, 0.01, 1.8); g.add(rug); const rugB = box(9, 0.015, 7.4, lam("#c9a64a")); rugB.position.set(0, 0.005, 1.8); g.add(rugB);
+  const rug = box(8.6, 0.02, 9.4, lam("#8e1d24")); rug.position.set(0, 0.01, 3.0); g.add(rug); const rugB = box(9, 0.015, 9.8, lam("#c9a64a")); rugB.position.set(0, 0.005, 3.0); g.add(rugB);
   const wallM = lam("#efe2c6"), wood = lam("#5a2e1c");
   const back = box(22, 7, 0.3, wallM); back.position.set(0, 3.5, -4.5); back.userData.nc = 1; g.add(back);
   for (const s of [-1, 1]) { const side = box(0.3, 7, 22, wallM); side.position.set(s * 8, 3.5, 4); side.userData.nc = 1; g.add(side); const wain = box(0.1, 1.3, 22, wood); wain.position.set(s * 7.82, 0.65, 4); g.add(wain); }
@@ -129,6 +129,14 @@ export function buildLop() {
     const bk = box(0.4, 0.05, 0.3, lam("#f4ecd8")); bk.position.set(x - 0.3, 0.84, z - 0.6); g.add(bk);
     const seat = box(0.55, 0.12, 0.5, lam("#8e1d24")); seat.position.set(x, 0.47, z + 0.05); g.add(seat); const back2 = box(0.55, 0.7, 0.08, lam("#8e1d24")); back2.position.set(x, 0.85, z + 0.33); g.add(back2);
     for (const sx of [-0.22, 0.22]) for (const sz of [-0.18, 0.28]) { const l = cyl(0.03, 0.03, 0.42, wood, 5); l.position.set(x + sx, 0.21, z + sz); g.add(l); } }
+  // chi tiết thêm (16/11): đồng hồ, poster, chậu cây, quả địa cầu, cặp sách, chai nước
+  { const [cc, cx] = cvs(256, 256); cx.fillStyle = "#fffaf0"; cx.beginPath(); cx.arc(128, 128, 120, 0, 7); cx.fill(); cx.strokeStyle = "#5a2e1c"; cx.lineWidth = 14; cx.stroke(); cx.fillStyle = "#222"; for (let i = 0; i < 12; i++) { const a = i / 12 * Math.PI * 2; cx.fillRect(128 + Math.cos(a) * 95 - 5, 128 + Math.sin(a) * 95 - 5, 10, 10); } cx.lineWidth = 9; cx.beginPath(); cx.moveTo(128, 128); cx.lineTo(128, 60); cx.moveTo(128, 128); cx.lineTo(180, 140); cx.stroke();
+    const clk = new THREE.Mesh(new THREE.CircleGeometry(0.45, 24), new THREE.MeshLambertMaterial({ map: ctex(cc) })); clk.position.set(4.9, 5.0, -4.33); g.add(clk); }
+  for (const [x, t1, t2, col] of [[-5.3, "TIỀN", "& LÒNG TIN", "#2b4f8a"], [5.0, "BÌNH TĨNH", "LÀ LỢI THẾ", "#8e1d24"]] as [number, string, string, string][]) { const [pc, px] = cvs(256, 360); px.fillStyle = col; px.fillRect(0, 0, 256, 360); px.fillStyle = "#f5c518"; px.fillRect(18, 18, 220, 8); px.fillStyle = "#fff"; px.font = "bold 40px sans-serif"; px.textAlign = "center"; px.fillText(t1, 128, 170); px.font = "bold 28px sans-serif"; px.fillText(t2, 128, 215); px.fillStyle = "#f5c518"; px.fillRect(18, 330, 220, 8);
+    const po = new THREE.Mesh(new THREE.PlaneGeometry(1.2, 1.7), new THREE.MeshLambertMaterial({ map: ctex(pc) })); po.position.set(x, x < 0 ? 3.6 : 3.1, -4.33); g.add(po); }
+  for (const [x, z] of [[-6.9, -3.6], [6.6, 9.8], [-6.9, 9.8], [6.6, 1.6]] as number[][]) { const pot = cyl(0.3, 0.22, 0.5, lam("#b5652b"), 12); pot.position.set(x, 0.25, z); g.add(pot); for (let k = 0; k < 9; k++) { const lf = new THREE.Mesh(new THREE.SphereGeometry(0.28, 8, 6), lam(k % 2 ? "#3f8a3a" : "#2f6d2c")); lf.position.set(x + (r() - 0.5) * 0.5, 0.75 + r() * 0.9, z + (r() - 0.5) * 0.5); lf.scale.y = 1.4; g.add(lf); } }
+  { const gl = new THREE.Mesh(new THREE.SphereGeometry(0.22, 16, 12), lam("#3a7bd5")); gl.position.set(3.5, 1.35, -2.75); g.add(gl); const st = cyl(0.03, 0.12, 0.25, lam("#c9a24a"), 8); st.position.set(3.5, 1.02, -2.75); g.add(st); }
+  for (const [x, z] of Object.values(LOP_SEATS)) { const bag = box(0.32, 0.4, 0.18, lam(["#2b4f8a", "#3f6b3a", "#6b2fa0", "#c9a24a"][Math.floor(r() * 4)])); bag.position.set(x + 0.55, 0.2, z + 0.15); g.add(bag); const bt2 = cyl(0.05, 0.05, 0.24, lam("#7fc8e8"), 8); bt2.position.set(x + 0.45, 0.94, z - 0.75); g.add(bt2); }
   // đèn chùm
   for (const z of [0.2, 4.6]) { const ch = new THREE.Group(); const rod = cyl(0.03, 0.03, 1.2, lam("#c9a24a"), 6); rod.position.y = 6.3; ch.add(rod); const ring = new THREE.Mesh(new THREE.TorusGeometry(0.8, 0.05, 6, 24), lam("#c9a24a")); ring.rotation.x = Math.PI / 2; ring.position.y = 5.7; ch.add(ring);
     for (let k = 0; k < 8; k++) { const a = k / 8 * Math.PI * 2; const b = new THREE.Mesh(new THREE.SphereGeometry(0.09, 8, 6), glow(2.6, 2.1, 1.3)); b.position.set(Math.cos(a) * 0.8, 5.85, Math.sin(a) * 0.8); ch.add(b); } ch.position.z = z; g.add(ch); }

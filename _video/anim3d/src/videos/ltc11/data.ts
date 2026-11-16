@@ -10,6 +10,7 @@ export const sc = (id: string) => TIMING.scenes.find((s) => s.id === id)!;
 const REP: [RegExp, string][] = [
   [/Bài năm/g, "Bài 5"],
   [/Cu ba/g, "Cuba"],
+  [/Cường Sô xiu/g, "Cường Sociu"],
   [/Mát xcơ va/g, "Moscow"],
   [/A khíp pốp/g, "Arkhipov"],
   [/Công cót/g, "Concorde"],
