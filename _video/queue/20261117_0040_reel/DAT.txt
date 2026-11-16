@@ -1,2 +1,2 @@
-RV1711VANG | 1:9 2:9 3:9 4:9 5:9 6:9 7:9 8:9 9:9 10:9 | đã soát V1 V2 (V2: engine the_so cột giữ số lẻ 134,5/191,3/121,1/137,5) | reel 71s · -15,4 LUFS · Release reel-20261117_0040_reel · cặp CH2211VANG
-RV1711DN | 1:9 2:9 3:9 4:9 5:9 6:9 7:9 8:9 9:9 10:9 | đã soát V1 V2 (V2: 2 câu cụt QC) | reel 72s · -15,3 LUFS · Release reel-20261117_0040_reel · cặp CH2311DN
+RV1711VANG | 1:9 2:9 3:9 4:9 5:9 6:9 7:9 8:9 9:9 10:9 | đã soát V1 V2 (V2: engine the_so cột giữ số lẻ 134,5/191,3/121,1/137,5) | reel 72s · -15,1 LUFS · Release reel-20261117_0040_reel · cặp CH2211VANG
+RV1711DN | 1:9 2:9 3:9 4:9 5:9 6:9 7:9 8:9 9:9 10:9 | đã soát V1 V2 (V2: 2 câu cụt QC) | reel 72s · -15,6 LUFS · Release reel-20261117_0040_reel · cặp CH2311DN
