@@ -7,7 +7,7 @@
    "VÌ SAO MUA Ở 12,7???"
   ],
   "nhan": "TÍCH SẢN · NHẬT KÝ LỆNH",
-  "short_caption": "Lệnh tích sản dài hạn 16/11/2026: TPB tỉ trọng 20%, vùng giá ≤ 12,7 (đóng cửa 12,65). Giá điều chỉnh, đỉnh tuần ~18,2 (8/2025). KQKD Q3/2026 TPBank: LNST 2.394 tỷ (+57,4%), nợ xấu 2,10% (BCTC hợp nhất Q3/2026). Kết quả tài khoản tích sản ngân hàng từ 01/2018: +731,1%, VN-Index +79,5%, sụt sâu nhất −42,5% (chungkhoanhuynguyen.com, kết quả quá khứ). Quan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "short_caption": "Lệnh tích sản dài hạn 16/11/2026: TPB tỉ trọng 20%, vùng giá ≤ 12,7 (đóng cửa 12,65). Giá điều chỉnh, đỉnh tuần ~18,2 (8/2025). KQKD Q3/2026 TPBank: LNST 2.394 tỷ (+57,4%), nợ xấu 2,10% (BCTC hợp nhất Q3/2026). ROE ~17,9%, P/B ~0,87 (dữ liệu tổng hợp 5/11/2026); mô hình thu nhập thặng dư P/B = (ROE − g)/(r − g). Kết quả tài khoản tích sản ngân hàng từ 01/2018: +731,1%, VN-Index +79,5%, sụt sâu nhất −42,5% (chungkhoanhuynguyen.com, kết quả quá khứ). Quan điểm cá nhân, không phải khuyến nghị đầu tư.",
   "tags": [],
   "toc": 1.0,
   "nhac": "lofi",
@@ -88,6 +88,38 @@
     "loi": "Sau khi các ngân hàng công bố báo cáo tài chính quý 3, em cập nhật giá mua tích sản của TPB là 12,7. Ngày 16/11, giá đóng cửa 12,65, nằm trong vùng mua.",
     "loi_doc": "Sau khi các ngân hàng công bố báo cáo tài chính quý ba, em cập nhật giá mua tích sản của Ti Pi Bank là mười hai phẩy bảy. Ngày mười sáu tháng mười một, giá đóng cửa mười hai phẩy sáu mươi lăm, nằm trong vùng mua.",
     "hinh": "bd_60.png"
+   },
+   {
+    "chu_to": "ĐỊNH GIÁ NGÂN HÀNG",
+    "loi": "Về mặt học thuật, ngân hàng thường được định giá bằng mô hình thu nhập thặng dư. Mức P/B hợp lý bằng ROE trừ tốc độ tăng trưởng dài hạn, chia cho chi phí vốn chủ sở hữu trừ đi chính tốc độ tăng trưởng ấy. Hiểu đơn giản: ngân hàng nào tạo ra lợi nhuận trên vốn cao hơn mức lợi nhuận nhà đầu tư đòi hỏi, thì đáng giá cao hơn giá trị sổ sách. TPBank có ROE khoảng 17,9%, nhưng thị trường đang trả khoảng 0,87 lần giá trị sổ sách. Khoảng chênh đó chính là thứ nhà đầu tư dài hạn tìm kiếm, với điều kiện chất lượng tài sản không xấu đi.",
+    "loi_doc": "Về mặt học thuật, ngân hàng thường được định giá bằng mô hình thu nhập thặng dư. Mức P trên B hợp lý bằng ROE trừ tốc độ tăng trưởng dài hạn, chia cho chi phí vốn chủ sở hữu trừ đi chính tốc độ tăng trưởng ấy. Hiểu đơn giản: ngân hàng nào tạo ra lợi nhuận trên vốn cao hơn mức lợi nhuận nhà đầu tư đòi hỏi, thì đáng giá cao hơn giá trị sổ sách. Ti Pi Bank có ROE khoảng mười bảy phẩy chín phần trăm, nhưng thị trường đang trả khoảng không phẩy tám mươi bảy lần giá trị sổ sách. Khoảng chênh đó chính là thứ nhà đầu tư dài hạn tìm kiếm, với điều kiện chất lượng tài sản không xấu đi.",
+    "the": {
+     "loai": "lon",
+     "tieu": "MÔ HÌNH THU NHẬP THẶNG DƯ",
+     "nguon": "ROE, P/B: dữ liệu tổng hợp 5/11/2026",
+     "dong": [
+      [
+       "P/B hợp lý = (ROE − g) / (r − g)",
+       50,
+       "vang"
+      ],
+      [
+       "ROE > r  →  P/B > 1",
+       56,
+       "trang"
+      ],
+      [
+       "TPB: ROE ~17,9%",
+       56,
+       "tim2"
+      ],
+      [
+       "P/B thị trường ~0,87",
+       56,
+       "do"
+      ]
+     ]
+    }
    },
    {
     "chu_to": "KHÔNG ĐOÁN ĐÁY",
