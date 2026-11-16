@@ -5426,6 +5426,10 @@
    ],
    [
     "p",
+    "Cổ phiếu niêm yết HNX ngừng giao dịch 24–25/12/2026 để chuyển sang HOSE – xem <a href=\"/f0/co-phieu-hnx-chuyen-sang-hose.html\">lịch chuyển sàn và checklist</a>."
+   ],
+   [
+    "p",
     "<small>Nguồn: Sở Giao dịch Chứng khoán Việt Nam (Thị trường Tài chính Tiền tệ 1/10/2026); CafeF 11/11/2026; Vietnamplus 2/10/2026; giá cổ phiếu từ dữ liệu giá điều chỉnh của web. Bài chia sẻ kiến thức, không phải khuyến nghị mua bán.</small>"
    ]
   ],
@@ -5444,13 +5448,14 @@
    ]
   ],
   "rel": [
+   "co-phieu-hnx-chuyen-sang-hose",
    "san-hose-hnx-upcom-la-gi",
    "t-2-la-gi",
    "cac-loai-lenh-chung-khoan",
    "cach-doc-bang-gia-chung-khoan"
   ],
   "add": [],
-  "mod": "2026-11-15"
+  "mod": "2026-11-16"
  },
  {
   "slug": "vn30-la-gi",
@@ -7613,6 +7618,10 @@
      "Doanh nghiệp có lãi đều các quý gần đây không.",
      "Người mới nên bắt đầu với nhóm thanh khoản cao như <a href=\"/f0/vn30-la-gi.html\">VN30</a>."
     ]
+   ],
+   [
+    "p",
+    "Lịch chuyển sàn chi tiết và việc cần làm trước 23/12/2026: <a href=\"/f0/co-phieu-hnx-chuyen-sang-hose.html\">cổ phiếu HNX chuyển sang HOSE – cần làm gì</a>."
    ]
   ],
   "faq": [
@@ -7630,13 +7639,14 @@
    ]
   ],
   "rel": [
+   "co-phieu-hnx-chuyen-sang-hose",
    "gio-giao-dich-chung-khoan",
    "bien-do-gia-tran-san",
    "vn30-la-gi",
    "co-phieu-la-gi",
    "cat-lo-la-gi"
   ],
-  "mod": "2026-11-15"
+  "mod": "2026-11-16"
  },
  {
   "slug": "macd-la-gi",
@@ -10012,6 +10022,10 @@
    [
     "p",
     "Muốn xem một tài khoản tích sản ngân hàng thực tế qua từng năm, kể cả những năm lỗ, có thể tham khảo <a href=\"/bao-cao-2026.html#tichsan\">bảng tích sản cổ phiếu ngân hàng 2018–2026</a>."
+   ],
+   [
+    "p",
+    "Trước khi so, anh chị nên biết sổ tiết kiệm đang thật sự lãi bao nhiêu sau khi trừ giá cả: tháng 11/2026 lãi 5,4% trừ lạm phát 5,09% chỉ còn khoảng 0,3 điểm. Cách tự tính ở bài <a href=\"/f0/lai-suat-thuc-la-gi.html\">lãi suất thực là gì</a>."
    ]
   ],
   "faq": [
@@ -10025,11 +10039,13 @@
    ]
   ],
   "rel": [
+   "lai-suat-thuc-la-gi",
    "tich-san-chung-khoan-la-gi",
    "lai-suat-tang-anh-huong-chung-khoan",
    "co-phieu-ngan-hang-co-tuc-cao",
    "rui-ro-khi-tich-san"
-  ]
+  ],
+  "mod": "2026-11-16"
  },
  {
   "slug": "quyen-mua-co-phieu-la-gi",
@@ -10764,6 +10780,10 @@
      "Chỉ số DXY (sức mạnh đồng USD) và quyết định lãi suất của Fed.",
      "Chênh lệch lỗ, lãi tỷ giá trong báo cáo tài chính doanh nghiệp."
     ]
+   ],
+   [
+    "p",
+    "Muốn đọc sớm hướng đi của tỷ giá, nhiều người theo dõi chỉ số sức mạnh đồng USD – xem <a href=\"/f0/chi-so-dxy-la-gi.html\">chỉ số DXY là gì</a> (tuần 9–13/11/2026 DXY lên 103,41, cao nhất từ 4/2025)."
    ]
   ],
   "faq": [
@@ -10777,6 +10797,7 @@
    ]
   ],
   "rel": [
+   "chi-so-dxy-la-gi",
    "lai-suat-tang-anh-huong-chung-khoan",
    "khoi-ngoai-mua-rong-ban-rong-la-gi",
    "gia-hat-nhua-hdpe-pvc-tang-co-phieu-nganh-nhua",
@@ -10827,7 +10848,8 @@
     "Không cần đoán tỷ giá. Hãy biết danh mục nghiêng về phía nào, cộng tỷ trọng các mã nhạy với tỷ giá, và tự hỏi: nếu tỷ giá quay lại vùng 26.400, phần danh mục bị ảnh hưởng là bao nhiêu? Ba yếu tố có thể làm tỷ giá đảo chiều: Fed tăng lãi suất thêm (họp 8–9/12/2026), lợi suất Mỹ trên 5%, thặng dư thương mại thu hẹp."
    ]
   ],
-  "viet_day": true
+  "viet_day": true,
+  "mod": "2026-11-16"
  },
  {
   "slug": "casa-la-gi",
@@ -11674,113 +11696,148 @@
   "kw": "Fed tăng lãi suất ảnh hưởng chứng khoán Việt Nam",
   "grp": 8,
   "title": "Fed tăng, giảm lãi suất ảnh hưởng gì đến chứng khoán Việt Nam?",
-  "desc": "Quyết định lãi suất của Fed tác động tới chứng khoán Việt Nam qua tỷ giá, dòng vốn ngoại và chính sách tiền tệ trong nước. Cách theo dõi lịch họp Fed.",
+  "desc": "Fed tăng lãi suất 9/2026 lên 3,75–4%, khả năng tăng tiếp 12/2026 trên 80%. Năm 2022 VN-Index mất 32,8%. Fed tác động chứng khoán Việt Nam qua 3 kênh.",
   "body": [
    [
     "p",
-    "<b>Fed</b> (Cục Dự trữ Liên bang Mỹ) quyết định lãi suất đồng USD. Dù ở xa, quyết định của Fed vẫn ảnh hưởng tới thị trường Việt Nam qua nhiều kênh."
-   ],
-   [
-    "h2",
-    "1. Khi Fed tăng lãi suất"
-   ],
-   [
-    "ul",
-    [
-     "Đồng USD mạnh lên, tỷ giá USD/VND chịu áp lực tăng.",
-     "Dòng vốn rút khỏi thị trường mới nổi, khối ngoại có xu hướng bán ròng.",
-     "Ngân hàng Nhà nước có thể phải hút tiền hoặc giữ lãi suất cao để ổn định tỷ giá, gây áp lực lên chứng khoán."
-    ]
-   ],
-   [
-    "h2",
-    "2. Khi Fed giảm lãi suất"
-   ],
-   [
-    "ul",
-    [
-     "Áp lực tỷ giá giảm, Ngân hàng Nhà nước có thêm dư địa nới lỏng.",
-     "Dòng vốn quay lại thị trường mới nổi.",
-     "Thường hỗ trợ tâm lý và định giá cổ phiếu."
-    ]
-   ],
-   [
-    "h2",
-    "3. Không phải lúc nào cũng tác động ngay"
+    "Rạng sáng 17/9/2026 (giờ Việt Nam), Fed tăng lãi suất thêm 0,25 điểm phần trăm lên <b>3,75–4,00%</b> – lần tăng đầu tiên kể từ tháng 7/2023. Phiên hôm đó VN-Index lại <b>tăng 0,7%</b> (1.810,11 → 1.822,77 điểm). Một tuần sau, chỉ số về 1.775,09, thấp hơn 1,9% so với trước cuộc họp. Tới phiên 16/11/2026 là 1.736,89 điểm."
    ],
    [
     "p",
-    "Thị trường thường phản ánh trước kỳ vọng. Nếu Fed làm đúng như dự đoán, phản ứng có thể nhỏ. Điều quan trọng hơn là thông điệp về lộ trình lãi suất các kỳ sau."
+    "Tin Fed không đánh ngay một cú, mà ngấm dần qua tỷ giá, lãi suất và dòng vốn ngoại. Bây giờ thị trường lại đang đếm ngày tới cuộc họp <b>8–9/12/2026</b>, khi công cụ CME FedWatch cho khả năng tăng tiếp trên 80% (Vietnam+ 11/11/2026)."
    ],
    [
     "h2",
-    "4. Theo dõi thế nào?"
+    "Fed là ai, vì sao quyết định ở Mỹ lại chạm tới Việt Nam?"
+   ],
+   [
+    "p",
+    "<b>Fed</b> (Cục Dự trữ Liên bang Mỹ) quyết định lãi suất đồng USD qua Ủy ban Thị trường Mở (FOMC), khoảng 8 kỳ họp mỗi năm. Lãi USD tăng thì gửi tiền, mua trái phiếu bằng USD hấp dẫn hơn, tiền toàn cầu có xu hướng chảy về Mỹ. Việt Nam chịu tác động qua 3 kênh:"
+   ],
+   [
+    "table",
+    [
+     [
+      "Kênh",
+      "Khi Fed tăng",
+      "Ai chịu trước"
+     ],
+     [
+      "Tỷ giá",
+      "USD mạnh lên, VND chịu áp lực",
+      "Doanh nghiệp nợ USD, nhập khẩu nhiều"
+     ],
+     [
+      "Lãi suất trong nước",
+      "NHNN khó giảm lãi suất, có lúc phải tăng",
+      "Người vay thả nổi, vay ký quỹ"
+     ],
+     [
+      "Dòng vốn ngoại",
+      "Khối ngoại có xu hướng bán ròng ở thị trường mới nổi",
+      "Cổ phiếu vốn hóa lớn, nhiều khối ngoại"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Fed giảm lãi suất thì chiều ngược lại: áp lực tỷ giá nhẹ đi, NHNN có thêm dư địa nới lỏng, dòng vốn có thể quay lại."
+   ],
+   [
+    "h2",
+    "Lần này có giống năm 2022 không?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Chỉ tiêu",
+      "Năm 2022",
+      "Từ 9/2026 tới nay"
+     ],
+     [
+      "Lãi suất Fed",
+      "0–0,25% → 4,25–4,5% (7 lần tăng)",
+      "3,5–3,75% → 3,75–4,0% (1 lần)"
+     ],
+     [
+      "Lạm phát Mỹ",
+      "Có lúc trên 9%",
+      "CPI tháng 10/2026 +0,4% so tháng trước"
+     ],
+     [
+      "DXY (chỉ số USD)",
+      "Lên mạnh",
+      "100,22 → 103,55 (+3,3%)"
+     ],
+     [
+      "VN-Index",
+      "1.498,28 → 1.007,09 (−32,8%)",
+      "1.810,11 → 1.736,89 (−4,0%)"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Chu kỳ 2022 dồn dập hơn nhiều: 7 lần tăng trong một năm, NHNN cũng tăng lãi suất điều hành 2 lần (9 và 10/2022). Lần này mới 1 lần tăng, và dự báo của thị trường là tăng 0,25 điểm ở các cuộc họp 12/2026, 1/2027, 3/2027 (MoneyF 14/11/2026). Pimco nhận định chưa phải lặp lại 2022 (CafeF 12/11/2026). Em so để anh chị thấy quy mô, không để đoán VN-Index sẽ đi đâu."
+   ],
+   [
+    "p",
+    "Một điểm ngược trực giác: từ 16/9 đến 16/11/2026, DXY tăng 3,3% nhưng tỷ giá USD/VND trên thị trường quốc tế lại giảm từ 25.990 xuống 25.711 đồng. DXY là “hướng gió” toàn cầu, tỷ giá trong nước còn do cán cân thương mại, dự trữ và điều hành của NHNN. Xem thêm <a href=\"/f0/chi-so-dxy-la-gi.html\">chỉ số DXY là gì</a>."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
    ],
    [
     "ul",
     [
-     "Lịch họp FOMC (khoảng 8 kỳ mỗi năm).",
-     "Chỉ số DXY và tỷ giá USD/VND.",
-     "Diễn biến giao dịch khối ngoại sau các kỳ họp."
+     "<b>Bán vội ngay sau tin Fed.</b> Ngày 17/9/2026 Fed tăng mà VN-Index vẫn xanh 0,7%; thị trường thường đã phản ánh trước kỳ vọng.",
+     "<b>Nghĩ Fed giảm là VN-Index chắc tăng.</b> Cuối 2024–2025 Fed giảm nhiều lần nhưng giá cổ phiếu vẫn phụ thuộc lợi nhuận doanh nghiệp và chính sách trong nước.",
+     "<b>Quên khoản vay của chính mình.</b> Lãi suất cao kéo dài làm chi phí vay ký quỹ, vay nhà thả nổi đắt lên trước khi giá cổ phiếu kịp phản ứng (xem <a href=\"/f0/lai-suat-margin.html\">lãi suất margin</a>)."
     ]
+   ],
+   [
+    "h2",
+    "Checklist trước kỳ họp Fed 8–9/12/2026"
+   ],
+   [
+    "ul",
+    [
+     "Ghi giờ công bố: khoảng 02:00 sáng 10/12/2026 (giờ Việt Nam), kèm dự báo kinh tế.",
+     "Xem lại tỷ lệ vay ký quỹ: nếu cổ phiếu giảm 20%, tài khoản có bị <a href=\"/f0/ban-giai-chap-la-gi.html\">bán giải chấp</a> không?",
+     "Tính trước khoản vay nhà thả nổi: lãi tăng 1 điểm % trên 2 tỷ là thêm 20 triệu mỗi năm.",
+     "Theo dõi DXY, giá bán USD ở ngân hàng và giao dịch khối ngoại sau kỳ họp.",
+     "So lãi tiết kiệm với lạm phát (<a href=\"/f0/lai-suat-thuc-la-gi.html\">lãi suất thực</a>) trước khi quyết định giữ tiền mặt hay đầu tư."
+    ]
+   ],
+   [
+    "p",
+    "<small>Nguồn: lịch và quyết định FOMC; Vietnam+ 11/11/2026; CafeF 12/11/2026; MoneyF 14/11/2026; BSC Daily Review 30/12/2022 (VN-Index 2021–2022, em tự tính); VN-Index, DXY, USD/VND: dữ liệu chungkhoanhuynguyen.com (đóng cửa 16/9, 17/9, 24/9, 16/11/2026). Bài chia sẻ kiến thức, không phải khuyến nghị.</small>"
    ]
   ],
   "faq": [
    [
-    "Fed giảm lãi suất thì chứng khoán Việt Nam có chắc tăng?",
-    "Không chắc. Còn phụ thuộc lợi nhuận doanh nghiệp, chính sách trong nước và tâm lý thị trường."
+    "Fed tăng lãi suất thì chứng khoán Việt Nam có giảm không?",
+    "Không chắc chắn. Ngày 17/9/2026 Fed tăng 0,25 điểm mà VN-Index vẫn tăng 0,7%; tác động thường ngấm dần qua tỷ giá, lãi suất và khối ngoại."
+   ],
+   [
+    "Lãi suất Fed hiện nay là bao nhiêu?",
+    "3,75–4,00% sau lần tăng tháng 9/2026; cuộc họp 29/10/2026 giữ nguyên. Kỳ họp tiếp theo 8–9/12/2026."
    ],
    [
     "FOMC là gì?",
-    "Ủy ban Thị trường Mở Liên bang của Fed, nơi ra quyết định lãi suất điều hành."
+    "Ủy ban Thị trường Mở Liên bang của Fed, nơi ra quyết định lãi suất điều hành, họp khoảng 8 lần mỗi năm."
    ]
   ],
   "rel": [
+   "chi-so-dxy-la-gi",
+   "lai-suat-thuc-la-gi",
    "ty-gia-tang-anh-huong-co-phieu",
    "lai-suat-tang-anh-huong-chung-khoan",
-   "khoi-ngoai-mua-rong-ban-rong-la-gi",
-   "chu-ky-co-phieu-ngan-hang"
+   "khoi-ngoai-mua-rong-ban-rong-la-gi"
   ],
-  "add": [
-   [
-    "h2",
-    "Diễn biến lãi suất Fed gần đây"
-   ],
-   [
-    "ul",
-    [
-     "Biên trên lãi suất điều hành từng ở 5,5%, sau đó Fed giảm dần qua nhiều đợt xuống 3,75%.",
-     "Tháng 9/2026, Fed tăng trở lại 0,25 điểm %, lên 3,75–4,00%.",
-     "Cuộc họp kết thúc ngày 29/10/2026 (giờ Việt Nam): giữ nguyên 3,75–4,00%, biểu quyết 10–2, hai thành viên muốn tăng thêm 0,25 điểm %.",
-     "Cuộc họp tiếp theo: 8–9/12/2026, kèm dự báo kinh tế."
-    ]
-   ],
-   [
-    "p",
-    "Nguồn: thông báo FOMC; cập nhật tại mục Lịch sự kiện trên chungkhoanhuynguyen.com."
-   ],
-   [
-    "h2",
-    "Nhìn lại năm 2022"
-   ],
-   [
-    "p",
-    "Năm 2022 Fed nâng lãi suất từ gần 0% lên 4,25–4,50%, một trong những chu kỳ tăng nhanh nhất nhiều thập kỷ. Đồng USD mạnh lên, tỷ giá trong nước chịu áp lực, lãi suất huy động trong nước tăng và VN-Index giảm khoảng một phần ba trong cả năm. Đây là ví dụ rõ nhất về cách lãi suất Mỹ lan sang thị trường Việt Nam."
-   ],
-   [
-    "h2",
-    "Nhà đầu tư nên làm gì trước kỳ họp Fed?"
-   ],
-   [
-    "ol",
-    [
-     "Kiểm tra tỷ lệ vay ký quỹ: lãi suất cao kéo dài làm chi phí vay đắt hơn.",
-     "Xem danh mục có bao nhiêu doanh nghiệp nợ USD hoặc nhập khẩu nhiều nguyên liệu.",
-     "Giữ một phần tiền mặt để không bị động.",
-     "Chuẩn bị cho nhiều kịch bản thay vì đoán quyết định của Fed."
-    ]
-   ]
-  ]
+  "mod": "2026-11-16"
  },
  {
   "slug": "tai-dau-tu-co-tuc",
@@ -12290,6 +12347,10 @@
    [
     "p",
     "Muốn xem một tài khoản góp đều cổ phiếu ngân hàng qua các chu kỳ tín dụng, có thể tham khảo <a href=\"/bao-cao-2026.html#tichsan\">bảng tích sản cổ phiếu ngân hàng 2018–2026</a>."
+   ],
+   [
+    "p",
+    "Vì sao tín dụng còn phải tăng nhanh trong 5 năm tới? Vì nhu cầu vốn 38,5 triệu tỷ cho 2026–2030 mà ngân hàng gánh hơn một nửa – xem <a href=\"/f0/von-dau-tu-38-5-trieu-ty-tien-o-dau-ra.html\">bài phân tích nguồn vốn</a> (có bảng cho vay/tiền gửi 6 ngân hàng 9T/2026)."
    ]
   ],
   "faq": [
@@ -12307,13 +12368,14 @@
    ]
   ],
   "rel": [
+   "von-dau-tu-38-5-trieu-ty-tien-o-dau-ra",
    "viet-nam-dang-no-bao-nhieu",
    "nim-la-gi",
    "doc-bctc-ngan-hang",
    "chu-ky-co-phieu-ngan-hang",
    "lai-suat-tang-anh-huong-chung-khoan"
   ],
-  "mod": "2026-11-12"
+  "mod": "2026-11-16"
  },
  {
   "slug": "ban-giai-chap-la-gi",
@@ -13671,6 +13733,10 @@
    [
     "p",
     "Quan trọng không phải con số tuyệt đối mà là <b>so với kỳ vọng</b> và <b>xu hướng</b>. CPI tăng nhưng thấp hơn dự báo có thể là tin tốt cho thị trường; CPI tăng liên tục nhiều tháng vượt mục tiêu thường khiến thị trường lo ngại chính sách tiền tệ thắt chặt. Đọc thêm <a href=\"/f0/fed-tang-giam-lai-suat-tac-dong.html\">Fed tăng giảm lãi suất tác động thế nào</a> để thấy kênh ảnh hưởng từ bên ngoài."
+   ],
+   [
+    "p",
+    "Muốn biết lạm phát đang “ăn” bao nhiêu tiền gửi của mình, xem bài <a href=\"/f0/lai-suat-thuc-la-gi.html\">lãi suất thực là gì</a> (ví dụ năm 2011: lãi 14% nhưng CPI 18,6%)."
    ]
   ],
   "faq": [
@@ -13684,11 +13750,13 @@
    ]
   ],
   "rel": [
+   "lai-suat-thuc-la-gi",
    "lai-suat-tang-anh-huong-chung-khoan",
    "fed-tang-giam-lai-suat-tac-dong",
    "ty-gia-tang-anh-huong-co-phieu",
    "co-phieu-phong-thu-la-gi"
-  ]
+  ],
+  "mod": "2026-11-16"
  },
  {
   "slug": "khi-nao-ban-co-phieu-tich-san",
@@ -35875,6 +35943,10 @@
    ],
    [
     "p",
+    "Nợ là một nửa câu chuyện; nửa còn lại là nhu cầu vốn sắp tới: Việt Nam cần khoảng 38,5 triệu tỷ cho 2026–2030 – xem <a href=\"/f0/von-dau-tu-38-5-trieu-ty-tien-o-dau-ra.html\">38,5 triệu tỷ vốn đầu tư: tiền ở đâu ra</a>."
+   ],
+   [
+    "p",
     "<small>Nguồn: Bộ Tài chính, NHNN, TCTK (tổng hợp WiData); VnEconomy 2/11/2026; VietnamFinance 29/10/2026. Tỷ lệ % và số chia đầu người là số tự tính. Bài chia sẻ kiến thức, không phải khuyến nghị đầu tư.</small>"
    ]
   ],
@@ -35893,12 +35965,14 @@
    ]
   ],
   "rel": [
+   "von-dau-tu-38-5-trieu-ty-tien-o-dau-ra",
    "tinh-tien-tra-gop-vay-mua-nha",
    "tang-truong-tin-dung-la-gi",
    "lam-phat-va-chung-khoan",
    "lai-suat-tang-anh-huong-chung-khoan",
    "tich-san-co-phieu-hay-gui-tiet-kiem"
-  ]
+  ],
+  "mod": "2026-11-16"
  },
  {
   "slug": "tinh-tien-tra-gop-vay-mua-nha",
@@ -37653,6 +37727,363 @@
    "fed-tang-giam-lai-suat-tac-dong",
    "chung-khoan-my-giam-vn-index-co-giam-theo",
    "ban-giai-chap-la-gi"
+  ]
+ },
+ {
+  "slug": "von-dau-tu-38-5-trieu-ty-tien-o-dau-ra",
+  "kw": "vốn đầu tư 2026-2030 38,5 triệu tỷ",
+  "grp": 8,
+  "date": "2026-11-16",
+  "title": "Cần 38,5 triệu tỷ vốn đầu tư 2026–2030: tiền ở đâu ra?",
+  "desc": "Việt Nam cần 38,5 triệu tỷ vốn 2026–2030, mỗi năm 7,7 triệu tỷ ≈ 55% GDP. Ngân hàng gánh hơn nửa, tín dụng/GDP 146%. Số thật từ BCTC 6 ngân hàng.",
+  "body": [
+   [
+    "p",
+    "Phiên chất vấn tại Quốc hội ngày 12/11/2026 có một con số khiến nhiều người phải đọc lại: Việt Nam cần khoảng <b>38,5 triệu tỷ đồng</b> vốn đầu tư cho 5 năm 2026–2030 để theo đuổi tăng trưởng hai con số. Chia đều, mỗi năm là <b>7,7 triệu tỷ</b>."
+   ],
+   [
+    "p",
+    "Để dễ hình dung: tổng GDP danh nghĩa 4 quý gần nhất (tới quý 3/2026) khoảng <b>14,06 triệu tỷ</b>. Tức là mỗi năm phải bỏ vào đầu tư số tiền bằng hơn một nửa (55%) toàn bộ giá trị nền kinh tế làm ra. Câu hỏi của em trong bài này rất đời thường: tiền đó lấy ở đâu, và cuốn sổ tiết kiệm của anh chị nằm ở chỗ nào trong bức tranh ấy?"
+   ],
+   [
+    "h2",
+    "38,5 triệu tỷ được chia cho ai?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Nguồn vốn",
+      "Số tiền (triệu tỷ)",
+      "Tỷ trọng (em tự tính)"
+     ],
+     [
+      "Khu vực Nhà nước",
+      "12,5",
+      "32,5%"
+     ],
+     [
+      "Khu vực ngoài Nhà nước",
+      "20,4",
+      "53,0%"
+     ],
+     [
+      "FDI",
+      "5,6",
+      "14,5%"
+     ],
+     [
+      "Tổng",
+      "38,5",
+      "100%"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Phần Nhà nước 12,5 triệu tỷ, nhưng kế hoạch đầu tư công trung hạn 2026–2030 chỉ khoảng <b>8,22 triệu tỷ</b>, chừng 1/5 tổng nhu cầu. Gần <b>30 triệu tỷ</b> còn lại phải đến từ doanh nghiệp, người dân và nhà đầu tư nước ngoài (VietnamFinance 12/11/2026)."
+   ],
+   [
+    "h2",
+    "7,7 triệu tỷ mỗi năm lớn cỡ nào?"
+   ],
+   [
+    "p",
+    "Vốn đầu tư toàn xã hội 4 quý gần nhất (quý 4/2025 đến quý 3/2026) cộng lại khoảng <b>4,56 triệu tỷ</b>. Muốn đạt 7,7 triệu tỷ mỗi năm, nền kinh tế phải bỏ vốn gấp khoảng <b>1,69 lần</b> mức hiện tại. Đó là lý do câu hỏi “tiền ở đâu ra” được đưa lên tận nghị trường."
+   ],
+   [
+    "h2",
+    "Vì sao ngân hàng phải gánh nhiều nhất?"
+   ],
+   [
+    "p",
+    "Từ năm 2020, tín dụng ngân hàng chiếm <b>hơn 50%</b> nguồn vốn của nền kinh tế, còn cổ phiếu và trái phiếu cộng lại chỉ khoảng 14–15% (TS Cấn Văn Lực, VnBusiness 22/10/2026). Tổng dư nợ tín dụng tháng 8/2026 khoảng 20,49 triệu tỷ, bằng <b>146% GDP</b> 4 quý (em tự tính). Nếu tín dụng tiếp tục tăng 15–16% mỗi năm, tỷ lệ này có thể lên khoảng 180% vào năm 2030."
+   ],
+   [
+    "p",
+    "Vấn đề nằm ở nguồn tiền của ngân hàng: khoảng <b>80%</b> vốn huy động có kỳ hạn dưới 12 tháng, trong khi dự án hạ tầng cần vốn 10–20 năm. Và tiền gửi đang chạy chậm hơn tiền cho vay. Em lấy báo cáo tài chính 6 ngân hàng lớn để anh chị thấy tận mắt:"
+   ],
+   [
+    "table",
+    [
+     [
+      "Ngân hàng",
+      "Cho vay KH 9T/2026",
+      "Tiền gửi KH 9T/2026",
+      "Cho vay / tiền gửi 30/9/2026"
+     ],
+     [
+      "VCB",
+      "+8,5%",
+      "+6,5%",
+      "102%"
+     ],
+     [
+      "BID",
+      "+8,0%",
+      "+6,2%",
+      "109%"
+     ],
+     [
+      "CTG",
+      "+7,5%",
+      "+8,4%",
+      "110%"
+     ],
+     [
+      "TCB",
+      "+13,1%",
+      "+6,9%",
+      "131%"
+     ],
+     [
+      "MBB",
+      "+18,8%",
+      "+7,9%",
+      "130%"
+     ],
+     [
+      "ACB",
+      "+11,5%",
+      "+1,9%",
+      "128%"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Năm trên sáu ngân hàng có cho vay tăng nhanh hơn tiền gửi trong 9 tháng. Ở MBB, cho vay tăng 18,8% còn tiền gửi chỉ tăng 7,9%. Toàn hệ thống cũng vậy: tháng 8/2026 tín dụng tăng 17,38% so với cùng kỳ, tổng tiền gửi tăng 13,65% (WiData). Phần chênh lệch ngân hàng phải bù bằng phát hành giấy tờ có giá, vay liên ngân hàng hoặc trả lãi cao hơn để giữ tiền gửi."
+   ],
+   [
+    "h2",
+    "Cuốn sổ tiết kiệm của anh chị nằm ở đâu?"
+   ],
+   [
+    "p",
+    "Mỗi đồng anh chị gửi ngân hàng chính là một viên gạch trong 38,5 triệu tỷ đó. Nhưng tiền công trả cho viên gạch ấy đang mỏng: lãi gửi 12 tháng ở ngân hàng thương mại Nhà nước 5,4%, giá cả tháng 10/2026 tăng 5,09%, lãi thật chỉ còn khoảng <b>0,3 điểm phần trăm</b>. Em giải thích cách tự tính trong bài <a href=\"/f0/lai-suat-thuc-la-gi.html\">lãi suất thực là gì</a>."
+   ],
+   [
+    "p",
+    "Vì thế mục tiêu được đặt ra là đưa thị trường vốn (cổ phiếu, trái phiếu) lên khoảng <b>28–30%</b> nguồn vốn nền kinh tế vào năm 2030, để bớt dồn hết lên vai ngân hàng. Với người đi làm, điều đó có nghĩa là sẽ có nhiều kênh hơn ngoài sổ tiết kiệm – kèm theo rủi ro khác nhau mà mình phải hiểu trước khi bỏ tiền."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>“Có 38,5 triệu tỷ thì cổ phiếu xây dựng chắc chắn tăng.”</b> Tiền đi qua dự án trong nhiều năm, giải ngân thường chậm; giá cổ phiếu còn phụ thuộc lợi nhuận thật từng quý. Xem <a href=\"/f0/dau-tu-cong-co-phieu-huong-loi.html\">đầu tư công: cổ phiếu nào hưởng lợi</a>.",
+     "<b>Thấy ngân hàng cho vay mạnh là nghĩ chỉ có lợi.</b> ACB cho vay +11,5% nhưng tiền gửi chỉ +1,9% trong 9 tháng; cho vay chạy xa nguồn vốn thì chi phí vốn dễ tăng, biên lãi có thể bị ép.",
+     "<b>Chạy theo lãi cao ngoài ngân hàng.</b> Trái phiếu doanh nghiệp trả 9–10% thường đi kèm rủi ro chậm trả; đọc <a href=\"/f0/trai-phieu-doanh-nghiep-rui-ro.html\">rủi ro trái phiếu doanh nghiệp</a> trước khi chọn."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist cho nhà mình"
+   ],
+   [
+    "ul",
+    [
+     "Tính lãi thật của các khoản gửi: lãi suất trừ CPI so cùng kỳ tháng gần nhất.",
+     "Giữ 6 tháng chi tiêu ở khoản dễ rút, phần còn lại mới tính chuyện đa dạng kênh.",
+     "Nếu đang vay lãi thả nổi: tính trước khi lãi suất tăng 1–2 điểm phần trăm.",
+     "Theo dõi tăng trưởng tín dụng và tiền gửi mỗi quý (WiData, báo cáo tài chính ngân hàng) để biết áp lực lãi suất.",
+     "Muốn tìm hiểu cổ phiếu, bắt đầu từ doanh nghiệp đọc được báo cáo tài chính, không từ tin đồn “hưởng lợi”."
+    ]
+   ],
+   [
+    "p",
+    "Anh chị quan tâm tích sản cổ phiếu ngân hàng dài hạn có thể xem thêm <a href=\"/bao-cao-2026.html#tichsan\">bảng tích sản 2026</a>."
+   ],
+   [
+    "p",
+    "<small>Nguồn: VnBusiness 22/10/2026 (cơ cấu 38,5 triệu tỷ, tỷ trọng tín dụng, 80% vốn huy động dưới 12 tháng); VietnamFinance 12/11/2026 (đầu tư công 8,22 triệu tỷ); WiData – Cục Thống kê, NHNN (GDP danh nghĩa 4 quý tới Q3/2026 14.056.614 tỷ; vốn đầu tư toàn xã hội theo quý; tín dụng và tiền gửi tháng 8/2026; lãi huy động 13/11/2026; CPI 10/2026); báo cáo tài chính hợp nhất quý 3/2026 của VCB, BID, CTG, TCB, MBB, ACB (cho vay khách hàng gộp, tiền gửi khách hàng, so với 31/12/2025, em tự tính – tỷ lệ cho vay/tiền gửi tự tính, không phải LDR theo quy định). Bài chia sẻ kiến thức, không phải khuyến nghị.</small>"
+   ]
+  ],
+  "faq": [
+   [
+    "Việt Nam cần bao nhiêu vốn đầu tư giai đoạn 2026–2030?",
+    "Khoảng 38,5 triệu tỷ đồng: khu vực Nhà nước 12,5 triệu tỷ, ngoài Nhà nước 20,4 triệu tỷ, FDI 5,6 triệu tỷ (VnBusiness 22/10/2026). Bình quân 7,7 triệu tỷ mỗi năm."
+   ],
+   [
+    "Vốn đầu tư 38,5 triệu tỷ lấy từ đâu?",
+    "Đầu tư công trung hạn chỉ khoảng 8,22 triệu tỷ; gần 30 triệu tỷ còn lại đến từ doanh nghiệp, người dân, FDI, trong đó tín dụng ngân hàng chiếm hơn một nửa nguồn vốn nền kinh tế."
+   ],
+   [
+    "Tín dụng/GDP của Việt Nam là bao nhiêu?",
+    "Tổng tín dụng tháng 8/2026 khoảng 20,49 triệu tỷ so với GDP danh nghĩa 4 quý 14,06 triệu tỷ, tức khoảng 146% (tự tính)."
+   ]
+  ],
+  "rel": [
+   "lai-suat-thuc-la-gi",
+   "tang-truong-tin-dung-la-gi",
+   "viet-nam-dang-no-bao-nhieu",
+   "tien-gui-cua-khach-hang-la-gi",
+   "cho-vay-khach-hang-ngan-hang-la-gi"
+  ]
+ },
+ {
+  "slug": "co-phieu-hnx-chuyen-sang-hose",
+  "kw": "cổ phiếu HNX chuyển sang HOSE",
+  "grp": 1,
+  "date": "2026-11-16",
+  "title": "Cổ phiếu HNX chuyển sang HOSE từ 28/12/2026: cần làm gì?",
+  "desc": "299 cổ phiếu niêm yết HNX (vốn hóa ~446.000 tỷ) chuyển sang HOSE: phiên cuối 23/12, ngừng 24–25/12, giao dịch lại 28/12/2026. Lịch, khác biệt, checklist.",
+  "body": [
+   [
+    "p",
+    "Giả sử anh chị đang cầm cổ phiếu PVS hay IDC, có dùng vay ký quỹ. Thứ Tư 23/12/2026 là phiên cuối mã này khớp lệnh trên HNX. Thứ Năm, thứ Sáu ngừng giao dịch để chuyển sàn, cộng thêm cuối tuần: <b>4 ngày liền</b> không mua không bán được. Sáng thứ Hai 28/12, mã đó mở cửa ở một “nhà” mới là HOSE."
+   ],
+   [
+    "p",
+    "Đây không phải chuyện của vài mã. Theo Thông tư 139/2025/TT-BTC sửa đổi Thông tư 57/2021 về tái cấu trúc thị trường, <b>toàn bộ cổ phiếu niêm yết trên HNX</b> chuyển sang HOSE. Theo dữ liệu trên web, HNX hiện có <b>299 mã</b> cổ phiếu niêm yết, tổng vốn hóa khoảng <b>446.000 tỷ đồng</b> – chỉ bằng khoảng 5% vốn hóa HOSE (8,4 triệu tỷ), nhưng rất nhiều nhà đầu tư nhỏ đang cầm."
+   ],
+   [
+    "h2",
+    "Lịch chuyển sàn diễn ra thế nào?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Ngày",
+      "Chuyện gì xảy ra"
+     ],
+     [
+      "Thứ Tư 23/12/2026",
+      "Phiên giao dịch cuối của cổ phiếu niêm yết trên HNX"
+     ],
+     [
+      "Thứ Năm–Sáu 24–25/12",
+      "Tạm ngừng giao dịch để chuyển; các mã HOSE và thị trường khác vẫn giao dịch"
+     ],
+     [
+      "Thứ Hai 28/12/2026",
+      "Phiên đầu tiên trên HOSE"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Lịch do Tập đoàn Sở Giao dịch Chứng khoán Việt Nam (VNX) công bố ngày 30/9–1/10/2026 (Vietnam+, Dân trí). Lưu ý thêm: thứ Ba 24/11/2026 cả thị trường nghỉ giao dịch (xem <a href=\"/f0/gio-giao-dich-chung-khoan.html\">giờ giao dịch chứng khoán</a>)."
+   ],
+   [
+    "h2",
+    "Những mã HNX lớn nhất là mã nào?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Mã",
+      "Vốn hóa (tỷ đồng)",
+      "KL khớp BQ 10 phiên (cp)"
+     ],
+     [
+      "KSF",
+      "61.186",
+      "79.346"
+     ],
+     [
+      "NVB",
+      "46.209",
+      "1.127.707"
+     ],
+     [
+      "PVS",
+      "17.613",
+      "2.020.024"
+     ],
+     [
+      "IDC",
+      "14.611",
+      "703.297"
+     ],
+     [
+      "HUT",
+      "13.460",
+      "2.274.662"
+     ],
+     [
+      "SHS",
+      "11.873",
+      "13.177.398"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Vốn hóa lớn chưa chắc giao dịch nhiều: KSF lớn nhất sàn nhưng mỗi phiên chỉ khớp khoảng 79 nghìn cổ phiếu, trong khi SHS khớp hơn 13 triệu. Trên cả 299 mã, trung vị chỉ khoảng <b>2.261 cổ phiếu/phiên</b>, có <b>117 mã</b> khớp dưới 1.000 cổ phiếu/phiên và chỉ 8 mã trên 1 triệu. Chuyển sang HOSE không tự làm mã ít thanh khoản thành mã nhiều thanh khoản."
+   ],
+   [
+    "h2",
+    "Sang HOSE, cái gì có thể khác?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Biên độ giá:</b> HNX hiện ±10%, HOSE ±7% (xem <a href=\"/f0/bien-do-gia-tran-san.html\">biên độ giá trần sàn</a>). Biên độ phiên đầu trên HOSE phải chờ thông báo chính thức – đừng tự mặc định.",
+     "<b>Bước giá:</b> HOSE dùng 10 đồng (giá dưới 10.000), 50 đồng (10.000–dưới 50.000), 100 đồng (từ 50.000) (Vietstock 10/2026).",
+     "<b>Loại lệnh:</b> HOSE có phiên mở cửa ATO, dùng lệnh MTL thay cho MP; một số lệnh quen dùng trên HNX có thể không còn. Xem <a href=\"/f0/cac-loai-lenh-chung-khoan.html\">các loại lệnh chứng khoán</a>.",
+     "<b>Lệnh chờ, lệnh điều kiện:</b> không nên mặc định được chuyển nguyên trạng sang HOSE – kiểm tra lại trên ứng dụng trước 28/12."
+    ]
+   ],
+   [
+    "p",
+    "Số cổ phiếu anh chị đang sở hữu không thay đổi; việc lưu ký vẫn do Tổng công ty Lưu ký (VSDC) quản lý. Những giao dịch chưa thanh toán xong trước ngày chuyển nên đối chiếu theo hướng dẫn của VSDC và công ty chứng khoán."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>Quên rằng khoản vay vẫn chạy.</b> Cổ phiếu tạm ngừng giao dịch không có nghĩa nghĩa vụ vay ký quỹ tạm ngừng; lãi vẫn tính theo ngày (xem <a href=\"/f0/lai-suat-margin.html\">lãi suất margin</a>). Nếu thị trường giảm trong 24–25/12, tỷ lệ ký quỹ vẫn có thể bị tính lại.",
+     "<b>Đặt lệnh theo thói quen ±10%.</b> Trên HOSE trần/sàn hẹp hơn; giá đặt ngoài biên độ sẽ bị từ chối.",
+     "<b>Nghĩ “lên HOSE là cổ phiếu tốt hơn”.</b> Chuyển sàn là quyết định tổ chức thị trường, không phải doanh nghiệp vừa đạt chuẩn cao hơn; lợi nhuận và thanh khoản mới là thứ quyết định giá."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist trước 23/12/2026"
+   ],
+   [
+    "ul",
+    [
+     "Liệt kê các mã HNX trong danh mục, đánh dấu mã có dùng vay ký quỹ.",
+     "Kiểm tra tỷ lệ ký quỹ: nếu giá giảm 7–10% trong phiên đầu trên HOSE, tài khoản có bị gọi bổ sung không? (xem <a href=\"/f0/ty-le-ky-quy-la-gi.html\">tỷ lệ ký quỹ</a>).",
+     "Huỷ hoặc đặt lại lệnh chờ, lệnh điều kiện sau thông báo chính thức của công ty chứng khoán.",
+     "Ghi nhớ 4 ngày không giao dịch (24–27/12) khi tính chuyện cần tiền cuối năm.",
+     "Sáng 28/12 xem giá tham chiếu và biên độ trên bảng giá trước khi đặt lệnh."
+    ]
+   ],
+   [
+    "p",
+    "<small>Nguồn: Thông tư 139/2025/TT-BTC (30/12/2025); thông báo VNX qua Vietnam+ 30/9/2026, Dân trí 30/9/2026, Market Times 20/10/2026, Vietstock 10/2026; số mã, vốn hóa, khối lượng khớp bình quân 10 phiên: dữ liệu chungkhoanhuynguyen.com ngày 16/11/2026 (em tự tính). Ví dụ PVS, IDC chỉ để minh hoạ lịch. Bài chia sẻ kiến thức, không phải khuyến nghị.</small>"
+   ]
+  ],
+  "faq": [
+   [
+    "Khi nào cổ phiếu HNX chuyển sang HOSE?",
+    "Phiên cuối trên HNX là 23/12/2026, ngừng giao dịch 24–25/12, giao dịch trên HOSE từ 28/12/2026."
+   ],
+   [
+    "Chuyển sàn có mất cổ phiếu hay phải làm thủ tục gì không?",
+    "Không mất cổ phiếu; số lượng sở hữu giữ nguyên, lưu ký vẫn tại VSDC. Nhà đầu tư nên kiểm tra lại lệnh chờ và khoản vay ký quỹ theo hướng dẫn của công ty chứng khoán."
+   ],
+   [
+    "Sang HOSE biên độ giá là bao nhiêu?",
+    "Biên độ HOSE hiện là ±7% (HNX ±10%). Biên độ và giá tham chiếu phiên đầu 28/12 theo thông báo chính thức của Sở."
+   ]
+  ],
+  "rel": [
+   "san-hose-hnx-upcom-la-gi",
+   "gio-giao-dich-chung-khoan",
+   "bien-do-gia-tran-san",
+   "cac-loai-lenh-chung-khoan",
+   "lai-suat-margin"
   ]
  }
 ]
