@@ -47,7 +47,7 @@ for sc in kb["scenes"]:
         t = push(a)
         p = nghi(c) if j < len(xs) - 1 else 0.0
         t = push(np.zeros(int(round(SR * p)), np.float32))
-    hold = 0.75 + HOLD.get(sc["id"], 0.0)
+    hold = sc.get("hold", 0.75 + HOLD.get(sc["id"], 0.0))  # (NV1 17/11) kịch bản tự đặt "hold" để giữ mốc các cảnh sau khi sửa 1 câu
     hold = snap(t + hold) - t; t = push(np.zeros(int(round(SR * hold)), np.float32))
     tim.append({"id": sc["id"], "a": round(sa, 3), "b": round(t, 3), "fa": int(round(sa / GRID)), "fb": int(round(t / GRID)), "sens": sens})
     print(sc["id"], "%.1fs" % (t - s0), "tong %.0fs" % t, "may %.0fs" % (time.time() - t0), flush=True)
