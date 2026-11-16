@@ -2,7 +2,7 @@
 |---|---|---|---|---|
 | 1 | the/noti | MARGIN KỶ LỤC 457.500 TỶ / TÀI KHOẢN ANH CÓ TRONG ĐÓ? | tò mò | chuông thông báo |
 | 2 | the/bignum | 143 TỶ TIỀN LÃI / MỖI NGÀY | sốc | trống nhấn |
-| 3 | the/chat | "457 NGHÌN TỶ / LÀ NHIỀU HAY ÍT?" | tâm sự | tiếng gõ phím |
+| 3 | the/chat | "NỢ KỶ LỤC NÀY / LÀ NHIỀU HAY ÍT?" | tâm sự | tiếng gõ phím |
 | 4 | the/giay | BÁO CÁO THÁNG 11 / NỢ TĂNG, TIỀN MẶT GIẢM | căng | lật giấy |
 | 5 | the/bignum | TIỀN VAY GẤP 6,4 LẦN / TIỀN MẶT CHỜ MUA | sốc | trống nhấn |
 | 6 | the/cards | NỢ TĂNG / NGƯỜI MUA THƯA DẦN | suy nghĩ | nền phố |
@@ -16,7 +16,7 @@
 | 14 | the/cards | CHỈ SỐ XANH / MÃ NHỎ GIẢM SÀN CẢ TUẦN | suy nghĩ | nền phố |
 | 15 | the/call | "NĂM 2022 CHÚ BỊ / BÁN GIẢI CHẤP 2 LẦN" | trầm, lo | chuông gọi |
 | 16 | the/giay | NĂM 2022 VÀ HÔM NAY / KHÁC NHAU Ở ĐÂU? | căng | lật giấy |
-| 17 | the/checklist | GIỐNG 2, KHÁC 2 / CHƯA CÓ NGHĨA LÀ SẼ SẬP | quyết tâm | tick |
+| 17 | the/checklist | GIỐNG 2, KHÁC 2 / CHƯA XẢY RA, VẪN CÓ THỂ | quyết tâm | tick |
 | 18 | the/bignum | GIẢM 20% / MẤT 33,3% VỐN | sốc | trống nhấn |
 | 19 | the/chat | "GIẢM 33% LÀ BỊ GỌI / KÝ QUỸ À ANH?" | tâm sự | tiếng gõ phím |
 | 20 | the/cards | TRẢ NỬA NỢ / NGƯỠNG GỌI XA GẤP ĐÔI | suy nghĩ | nền phố |

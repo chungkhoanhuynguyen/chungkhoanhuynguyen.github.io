@@ -41,11 +41,11 @@ S = [
       say=("Theo SGI Capital, người vay ký quỹ đang trả khoảng mười ba nghìn tỷ đồng tiền lãi mỗi quý. Em chia cho chín mươi mốt ngày, ra khoảng một trăm bốn mươi ba tỷ đồng mỗi ngày, kể cả thứ Bảy, Chủ nhật. "
            "Vậy tiền vay đang nằm ở đâu, ai hưởng lợi, và ai đang ngồi gần ngưỡng bị bán giải chấp?")),
  # ---------------- CHƯƠNG 1 ----------------
- dict(k='chat', ch='Chương 1 – Con số kỷ lục nói gì?', cap=('"457 NGHÌN TỶ', 'LÀ NHIỀU HAY ÍT?"'), cols=CC, moc=True, chat=dict(ten='Hải', tv='Đang hoạt động', gio='08:20', mau=G_, msgs=[
-        ('me', 'Margin kỷ lục 457 nghìn tỷ, nhiều hay ít hả ông?'),
+ dict(k='chat', ch='Chương 1 – Con số kỷ lục nói gì?', cap=('"NỢ KỶ LỤC NÀY', 'LÀ NHIỀU HAY ÍT?"'), cols=CC, moc=True, chat=dict(ten='Hải', tv='Đang hoạt động', gio='08:20', mau=G_, msgs=[
+        ('me', 'Margin kỷ lục 457.500 tỷ, nhiều hay ít hả ông?'),
         ('Hải', 'So với tiền mặt nhà đầu tư đang để chờ mua thì gấp hơn 6 lần'),
         ('Hải', 'Ông đang vay bao nhiêu?')]),
-      say=("Anh Dũng nhắn cho Hải, người quen làm kế toán: bốn trăm năm mươi bảy nghìn tỷ là nhiều hay ít? Hải trả lời gọn: so với tiền mặt nhà đầu tư đang để chờ mua, thì gấp hơn sáu lần. Rồi Hải hỏi lại: ông đang vay bao nhiêu?")),
+      say=("Anh Dũng nhắn cho Hải, người quen làm kế toán: con số kỷ lục đó là nhiều hay ít? Hải trả lời gọn: so với tiền mặt nhà đầu tư đang để chờ mua, thì gấp hơn sáu lần. Rồi Hải hỏi lại: ông đang vay bao nhiêu?")),
  dict(k='giay', cap=('BÁO CÁO THÁNG 11', 'NỢ TĂNG, TIỀN MẶT GIẢM'), cols=CR, moc=True, giay=dict(tieu_de='NHỮNG CON SỐ VAY KÝ QUỸ', so='Theo SGI Capital, dữ liệu FiinTrade, cuối quý 3/2026', dau='ĐÃ ĐỌC', dieu=[
         ('Dư nợ vay ký quỹ: 457.500 tỷ đồng.', 'KỶ LỤC'),
         ('Bằng 14,2% giá trị cổ phiếu tự do chuyển nhượng.', '14,2%'),
@@ -91,7 +91,7 @@ S = [
            "Giá giảm tiếp, kéo tài khoản của người khác đang cầm cùng mã xuống dưới ngưỡng. Thanh khoản càng mỏng, vòng này càng quay nhanh.")),
  dict(k='cards', anh=TP, cap=('CHỈ SỐ XANH', 'MÃ NHỎ GIẢM SÀN CẢ TUẦN'), cols=CR, moc=True,
       cards=[('10 điểm', 'VN-Index tuần 9 đến 13/11', 'VẪN TĂNG NHẸ'), ('5 phiên', 'Một mã trên sàn HNX', 'GIẢM SÀN CẢ TUẦN'), ('67%', 'Mã đó từ đầu năm', '8.500 CÒN 2.800 ĐỒNG')],
-      say=("Tuần trước là ví dụ. Theo Vietstock, VN-Index cả tuần vẫn tăng gần mười điểm. Nhưng một mã trên sàn HNX, có người liên quan lãnh đạo bị bán giải chấp, đã giảm sàn toàn bộ các phiên. "
+      say=("Tuần trước có một ví dụ rõ. Theo Vietstock, VN-Index cả tuần vẫn tăng gần mười điểm. Nhưng một mã trên sàn HNX, có người liên quan lãnh đạo bị bán giải chấp, đã giảm sàn toàn bộ các phiên. "
            "Mã đó từ khoảng tám nghìn năm trăm đồng đầu năm còn hai nghìn tám trăm đồng. Nhìn chỉ số xanh, nhiều người không biết tài khoản bên cạnh đang cháy.")),
  # ---------------- CHƯƠNG 4 ----------------
  dict(k='call', ch='Chương 4 – Lần trước là năm 2022', cap=('"NĂM 2022 CHÚ BỊ', 'BÁN GIẢI CHẤP 2 LẦN"'), cols=CC, moc=True, call=dict(ten='Chú Bảy', phu='Đầu tư chứng khoán từ 2007', mau=V_, loi=[
@@ -104,7 +104,7 @@ S = [
         ('Cuối quý 3/2026: nợ gấp 2,5 lần đỉnh cũ.', 'GẤP 2,5 LẦN')]),
       say=("Quý một năm 2022, nợ ký quỹ lên đỉnh. Cả năm đó, VN-Index đi từ một nghìn bốn trăm chín mươi tám phẩy hai tám điểm xuống một nghìn không trăm linh bảy phẩy không chín điểm, mất ba mươi hai phẩy tám phần trăm. "
            "Còn hôm nay, theo SGI, dư nợ đã gấp hai phẩy năm lần đỉnh cũ.")),
- dict(k='checklist', anh=TP, cap=('GIỐNG 2, KHÁC 2', 'CHƯA CÓ NGHĨA LÀ SẼ SẬP'), cols=CC, moc=True,
+ dict(k='checklist', anh=TP, cap=('GIỐNG 2, KHÁC 2', 'CHƯA XẢY RA, VẪN CÓ THỂ'), cols=CC, moc=True,
       items=[('Giống: nợ vay lên đỉnh', RED), ('Giống: giao dịch teo lại', RED), ('Khác: trần vay 2 lần vốn chủ', GREEN), ('Khác: giá đã giảm khá lâu', GREEN)],
       say=("Có hai điểm giống và hai điểm khác. Giống ở chỗ nợ vay lên đỉnh và giao dịch teo lại. Khác ở chỗ có trần cho vay gấp hai lần vốn chủ, và theo SGI, nhiều cổ phiếu đã giảm khá lâu nên định giá hấp dẫn hơn. "
            "Nhưng SGI cũng cảnh báo: một tin xấu bất ngờ có thể kích hoạt làn bán giải chấp vượt sức mua của thị trường. Chưa xảy ra, không có nghĩa là không thể.")),
@@ -168,7 +168,7 @@ META = {KEY: dict(kenh='@chungkhoanhuynguyen', seri='Tin nóng trong ngày', nga
     tags=['margin', 'dư nợ margin', 'vay ký quỹ', 'bán giải chấp', 'call margin', 'chứng khoán hôm nay', 'VN-Index', 'đòn bẩy chứng khoán', 'tin nóng tài chính', 'SGI Capital'],
     bia_hook=['MARGIN KỶ LỤC', '457.500 TỶ'], badge='NÓNG: BÁN GIẢI CHẤP',
     bia_anh='Ho Chi Minh City skyline night||Ho Chi Minh City skyline night',
-    bia_hook_b=['NỢ 457.500 TỶ', 'TIỀN 71.500 TỶ'], badge_b='GẤP 2,5 LẦN NĂM 2022',
+    bia_hook_b=['NỢ 457.500 TỶ', 'TIỀN 71.500 TỶ'], badge_b='NỢ GẤP 6,4 LẦN TIỀN',
     bia_hook_c=['LÃI 143 TỶ', 'MỖI NGÀY???'], badge_c='AI ĐANG HƯỞNG LỢI?',
     reel_hook='MARGIN KỶ LỤC 457.500 TỶ|AI ĐANG BỊ GIẢI CHẤP???',
     fb_post=("Dư nợ margin lập kỷ lục 457.500 tỷ 😳\n\n👉 Người vay trả khoảng 13.000 tỷ tiền lãi mỗi quý\n👉 Tiền mặt chờ mua chỉ còn 71.500 tỷ\n"
