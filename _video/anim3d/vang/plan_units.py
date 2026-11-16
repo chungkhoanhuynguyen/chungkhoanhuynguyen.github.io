@@ -21,12 +21,12 @@ COMMON = h.hexdigest()
 segs = []
 for m in re.finditer(r'\{ id: "(S\d+)", shots: \[(.*?)\] \},?\n', plan, re.S):
     sid, body = m.group(1), m.group(2)
-    shots = [(int(x.group(1)), x.start()) for x in re.finditer(r'^\s*\[(\d+), \(\) => (?:D3|CD)', body, re.M)]
+    shots = [(int(x.group(1)), x.start()) for x in re.finditer(r'^\s*\[(\d+), \(\) => (?:D3|CD|FQ|TQ|PH|SH|LAD)\b', body, re.M)]
     for k, (j, st) in enumerate(shots):
         txt = body[st: shots[k + 1][1] if k + 1 < len(shots) else len(body)].strip()
         a = S[sid]["a"] if k == 0 else S[sid]["sens"][j]["a"] - 0.12
         b = S[sid]["sens"][shots[k + 1][0]]["a"] - 0.12 if k + 1 < len(shots) else S[sid]["b"]
-        segs.append({"id": f"{sid}.{j}", "sid": sid, "k": k, "first": k == 0, "txt": txt, "d3": "D3(" in txt, "a": a, "b": b})
+        segs.append({"id": f"{sid}.{j}", "sid": sid, "k": k, "first": k == 0, "txt": txt, "d3": any(x in txt for x in ("D3(", "FQ(", "TQ(")), "a": a, "b": b})
 TOTAL_F = math.ceil((tim["total"] + TAIL) * FPS)
 units = []
 for i, s in enumerate(segs):
