@@ -16,8 +16,8 @@
   "keo_web": null,
   "cau_hoi": {
    "chu_to": "ANH CHỊ ĐANG TÍCH SẢN GÌ?",
-   "loi": "Anh chị đang tích sản mã nào, mua ở giá bao nhiêu? Muốn biết mã nào đang ở vùng mua lúc này, anh chị nhắn em để em tư vấn riêng nhé.",
-   "loi_doc": "Anh chị đang tích sản mã nào, mua ở giá bao nhiêu? Muốn biết mã nào đang ở vùng mua lúc này, anh chị nhắn em để em tư vấn riêng nhé.",
+   "loi": "Muốn biết mã nào đang ở vùng mua lúc này, anh chị nhắn em để em tư vấn riêng. Còn anh chị, đang tích sản mã nào và mua ở giá bao nhiêu?",
+   "loi_doc": "Muốn biết mã nào đang ở vùng mua lúc này, anh chị nhắn em để em tư vấn riêng. Còn anh chị, đang tích sản mã nào và mua ở giá bao nhiêu?",
    "anh": [
     "Ho Chi Minh City Stock Exchange"
    ]
@@ -109,12 +109,12 @@
        "trang"
       ],
       [
-       "TPB: ROE ~17,9%",
+       "TPB: ROE khoảng 17,9%",
        56,
        "tim2"
       ],
       [
-       "P/B thị trường ~0,87",
+       "P/B thị trường khoảng 0,87",
        56,
        "do"
       ]
@@ -141,7 +141,7 @@
        "trang"
       ],
       [
-       "MỖI MÃ ~20%",
+       "MỖI MÃ khoảng 20%",
        56,
        "tim2"
       ],
