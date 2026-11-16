@@ -1,0 +1,86 @@
+{
+ "key": "LTC7",
+ "title": "Lớp học Lý thuyết trò chơi – Bài 7",
+ "scenes": [
+  {
+   "id": "S01",
+   "say": "Mảnh đất ông nội để lại, năm hai nghìn mười sáu có người trả mười tỷ. Bốn anh em không ai chịu bán, vì ai cũng nghĩ phần mình phải hơn. Mười năm sau, mảnh đất vướng quy hoạch, cỏ mọc ngang người, người hỏi mua chỉ còn trả bảy tỷ. Và bốn anh em đã không còn ngồi chung một mâm cơm ngày giỗ."
+  },
+  {
+   "id": "S02",
+   "say": "Tối thứ Năm, Cường Sô xiu vào lớp, không pha trò như mọi khi. Hùng Xa Lộ huých vai: sao hôm nay im thế ông? Cường kể: hôm qua giỗ ông nội, bác cả với cô ba lại cãi nhau to vì mảnh đất, bố em đứng giữa, không biết bênh ai."
+  },
+  {
+   "id": "S03",
+   "say": "Linh Lai Trym hỏi: sao không chia đều bốn phần là xong hả anh? Cường lắc đầu: không chia được. Bác cả bảo bác thờ cúng nên phải hơn. Cô ba bảo cô chăm ông những năm cuối. Bố em bảo bố đã bỏ tiền xây tường rào. Ai cũng có lý."
+  },
+  {
+   "id": "S04",
+   "say": "Thầy Huy kể một thí nghiệm nổi tiếng, gọi là trò chơi tối hậu thư. Người A được cầm một trăm nghìn, A đề nghị chia cho B bao nhiêu tùy ý. Nếu B đồng ý, hai người nhận đúng như thế. Nếu B từ chối, cả hai không ai được đồng nào."
+  },
+  {
+   "id": "S05",
+   "say": "Tính toán lạnh lùng thì B nên nhận, dù chỉ một nghìn, vì có còn hơn không. Nhưng thí nghiệm ở rất nhiều nước cho thấy: hễ A chia dưới khoảng hai mươi phần trăm, rất nhiều người B từ chối thẳng. Họ thà mất trắng, còn hơn nhận một cách chia mà họ thấy bất công."
+  },
+  {
+   "id": "S06",
+   "say": "Trang Trâu à lên: vậy nhà Cường đang chơi trò tối hậu thư rồi! Thầy gật đầu: còn khó hơn. Ở đây có bốn người, ai cũng có quyền phủ quyết. Chỉ cần một người lắc đầu, cả bốn cùng ngồi nhìn mảnh đất."
+  },
+  {
+   "id": "S07",
+   "say": "Và có một người chơi thứ năm mà không ai để ý, đó là thời gian. Mười năm chờ, nếu bán từ đầu rồi gửi tiết kiệm lãi khoảng năm phần trăm một năm, mười tỷ đã thành hơn mười sáu tỷ. Còn mảnh đất thì rơi xuống bảy tỷ. Không ai thắng ai, nhưng cả bốn cùng thua thời gian."
+  },
+  {
+   "id": "S08",
+   "say": "Hùng hỏi: sao không ra tòa cho nhanh thầy? Thầy nói: ra tòa thì có phán quyết, nhưng mất thêm vài năm, tốn thêm án phí, và tình anh em thì gần như chắc chắn không còn."
+  },
+  {
+   "id": "S09",
+   "say": "Thầy chỉ lên bảng điện: trên sàn chứng khoán, chuyện mảnh đất hương hỏa xảy ra suốt, chỉ đổi tên thành tranh chấp nội bộ. Khi các cổ đông lớn, có khi là anh em, vợ chồng, đối tác cũ, giành nhau quyền điều hành, đại hội cổ đông họp không thành, kế hoạch kinh doanh bị treo, lãnh đạo lo đánh nhau hơn lo bán hàng."
+  },
+  {
+   "id": "S10",
+   "say": "Và người chịu thiệt nhất là cổ đông nhỏ. Họ không có ghế trong phòng họp, không có quyền phủ quyết, chỉ biết nhìn giá cổ phiếu đi xuống sau mỗi lần hai phe kiện nhau."
+  },
+  {
+   "id": "S11",
+   "say": "Vy Kim Khâu hỏi: nhưng có người bảo cổ phiếu đang tranh chấp là cơ hội bắt đáy mà thầy? Thầy đáp: có khi đúng, nhưng phần nhiều là sai. Tranh chấp nội bộ giống hệt mảnh đất nhà Cường: không ai biết bao giờ xong, và mỗi năm chờ đều có giá của nó."
+  },
+  {
+   "id": "S12",
+   "say": "Quy tắc thứ nhất: tránh doanh nghiệp đang tranh giành quyền điều hành, cổ đông lớn kiện nhau, hoặc đại hội cổ đông liên tục không đủ người. Trên sàn còn hàng trăm mã khác yên ổn hơn để chọn."
+  },
+  {
+   "id": "S13",
+   "say": "Quy tắc thứ hai đến từ chính bốn anh em nhà Cường. Họ không bán vì ai cũng nhớ con số mười tỷ năm xưa. Nhà đầu tư cũng hay mắc y như vậy: cầm một mã đã giảm năm mươi phần trăm, nhất định không bán vì nhớ giá đỉnh cũ. Đỉnh cũ là quá khứ, còn giá trị là hiện tại."
+  },
+  {
+   "id": "S14",
+   "say": "Quy tắc thứ ba: chia trước khi có tiền. Nếu ông nội viết di chúc rõ ràng, nếu bốn anh em thống nhất cách chia khi đất còn chưa có giá, thì đã không có mười năm này. Góp vốn đầu tư với người thân cũng vậy: ai góp bao nhiêu, ai quyết, lúc nào bán, lãi lỗ chia ra sao, viết ra giấy trước khi xuống tiền."
+  },
+  {
+   "id": "S15",
+   "say": "Ninh Kòi gãi đầu: nhưng nói chuyện tiền với người nhà ngại lắm thầy ạ. Thầy cười: ngại một buổi, còn hơn mất nhau mười năm."
+  },
+  {
+   "id": "S16",
+   "say": "Cường im một lúc rồi kể thêm: tuần trước, bố em gọi cả ba anh chị về, đề nghị một cách chia mới. Bán đất, chia bốn phần đều, riêng bác cả giữ ban thờ và được thêm một phần nhỏ để lo hương khói. Cô ba khóc. Bác cả lặng đi một lúc, rồi gật đầu."
+  },
+  {
+   "id": "S17",
+   "say": "Thầy Huy nói: bố em đã làm đúng điều mà trò chơi tối hậu thư dạy. Một cách chia được chấp nhận không phải vì nó chính xác đến từng đồng, mà vì mọi người thấy mình được tôn trọng. Và người chịu nhường một bước trước, thường là người cứu cả ván cờ."
+  },
+  {
+   "id": "S18",
+   "say": "Bài hôm nay có ba ý. Một, khi ai cũng có quyền phủ quyết, cảm giác công bằng quan trọng hơn con số. Hai, trên sàn chứng khoán, tránh doanh nghiệp tranh chấp nội bộ, và đừng giữ cổ phiếu chỉ vì nhớ giá đỉnh cũ. Ba, góp tiền với người thân thì viết luật chơi trước khi có tiền."
+  },
+  {
+   "id": "S19",
+   "say": "Bài về nhà: xem lại danh mục, có mã nào anh chị đang giữ chỉ vì nhớ giá đỉnh cũ không? Tự hỏi một câu: nếu hôm nay chưa có mã đó, mình có mua ở giá này không?"
+  },
+  {
+   "id": "S20",
+   "say": "Còn nhà anh chị, có mảnh đất hay khoản tiền chung nào đang bị treo vì không ai chịu nhường không? Kể em nghe ở phần bình luận nhé. Bài tóm tắt lý thuyết trò chơi cho nhà đầu tư em để miễn phí trên web chứng khoán Huy Nguyễn, còn nhóm cộng đồng cùng thảo luận mỗi tuần, đường dẫn ở phần mô tả."
+  }
+ ]
+}

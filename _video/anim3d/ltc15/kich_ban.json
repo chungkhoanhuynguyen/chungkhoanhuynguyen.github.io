@@ -1,0 +1,86 @@
+{
+ "key": "LTC8",
+ "title": "Lớp học Lý thuyết trò chơi – Bài 8",
+ "scenes": [
+  {
+   "id": "S01",
+   "say": "Ninh Kòi cho anh họ vay hai trăm triệu, không giấy tờ, không lãi, chỉ một câu: anh em với nhau cả. Anh họ hứa ba tháng trả, vì đã vào được một nhóm chuyên gia phím mã chắc thắng. Ba tháng sau, nhóm chát biến mất, tài khoản anh họ còn hai mươi triệu. Còn Ninh thì mất luôn một người anh."
+  },
+  {
+   "id": "S02",
+   "say": "Tối thứ Ba, Ninh Kòi vào lớp, đặt điện thoại lên bàn, màn hình là tin nhắn anh họ đã đọc mà không trả lời suốt hai tuần. Trọng Hậu ghé mắt nhìn: lại vay tiền à? Ninh gật: em không tiếc tiền bằng tiếc người."
+  },
+  {
+   "id": "S03",
+   "say": "Phú Dê Già lắc đầu: tôi có nguyên tắc rồi, cho vay là coi như cho luôn. Quang Hà cãi: thế thì ai dám giúp ai nữa hả bác? Hai người cãi nhau một hồi, thầy Huy mới lên tiếng: cả hai đều đúng một nửa. Hôm nay mình học trò chơi lòng tin."
+  },
+  {
+   "id": "S04",
+   "say": "Năm một nghìn chín trăm chín mươi lăm, ba nhà kinh tế ở Mỹ làm một thí nghiệm. Người A được mười đô la, muốn gửi cho người B bao nhiêu thì gửi, số gửi đi sẽ được nhân ba. Sau đó B tự quyết trả lại cho A bao nhiêu, hoặc không trả đồng nào. Hai người không biết mặt nhau, và không có gì ràng buộc."
+  },
+  {
+   "id": "S05",
+   "say": "Tính toán lạnh lùng thì B chẳng cần trả, nên A chẳng nên gửi. Nhưng thực tế phần lớn người A vẫn gửi đi khoảng một nửa, và nhiều người B có trả lại. Con người tin nhau nhiều hơn sách vở tưởng. Chỉ có điều, trung bình số tiền nhận về chỉ xấp xỉ số đã gửi, và có không ít người A mất trắng."
+  },
+  {
+   "id": "S06",
+   "say": "Linh Livestream hỏi: vậy làm sao biết ai đáng tin hả thầy? Thầy đáp: trong một lần chơi thì gần như không biết được. Nhưng nếu chơi nhiều lần, mọi chuyện khác hẳn. Nhà khoa học A xen rót từng mở giải đấu cho các chương trình máy tính chơi trò lòng tin lặp lại nhiều vòng."
+  },
+  {
+   "id": "S07",
+   "say": "Chương trình vô địch đơn giản đến bất ngờ, tên là ăn miếng trả miếng. Vòng đầu nó tin đối phương. Vòng sau, đối phương tốt thì nó tốt lại, đối phương lừa thì nó thôi hợp tác. Tin từng bước nhỏ, và phản ứng ngay khi bị phụ lòng."
+  },
+  {
+   "id": "S08",
+   "say": "Thầy quay sang Ninh: em đã làm ngược lại. Lần đầu tiên đã tin hai trăm triệu, không giấy tờ, không mốc kiểm tra. Còn anh họ em thì cũng làm ngược lại với nhóm phím hàng: tin một nhóm người lạ chỉ vì họ cho thắng vài lệnh nhỏ."
+  },
+  {
+   "id": "S09",
+   "say": "Và đó chính là cách những nhóm phím hàng lừa đảo làm. Họ hiểu trò chơi lặp lại rất rõ. Vài tuần đầu, họ cho anh chị thắng vài lệnh nhỏ, có khi còn tự bù tiền để anh chị thấy lãi. Lòng tin được xây từng bậc. Đến khi anh chị dồn một khoản lớn, họ chơi đúng một ván cuối, rồi biến mất."
+  },
+  {
+   "id": "S10",
+   "say": "Trang Trâu rùng mình: thế làm sao nhận ra ạ? Thầy giơ bốn ngón tay. Một, hứa lãi cao và chắc chắn. Hai, đòi nạp tiền vào tài khoản cá nhân hay một ứng dụng lạ, không phải tài khoản đứng tên mình ở công ty chứng khoán được cấp phép. Ba, giục làm ngay kẻo lỡ. Bốn, xin mật khẩu hay mã xác thực. Gặp một dấu hiệu là dừng lại."
+  },
+  {
+   "id": "S11",
+   "say": "Hùng Xa Lộ hỏi: thế tiền của anh họ Ninh mất ở đâu thầy? Thầy nói: nhiều khả năng ở dấu hiệu thứ hai. Tiền rời khỏi tài khoản đứng tên mình, là gần như rời khỏi tay mình."
+  },
+  {
+   "id": "S12",
+   "say": "Rồi thầy nói về chuyện cho người thân vay. Quy tắc thứ nhất: chỉ cho vay số tiền mà nếu mất, mình vẫn ngủ ngon và vẫn giữ được tình cảm. Quá số đó, hãy giúp bằng cách khác."
+  },
+  {
+   "id": "S13",
+   "say": "Quy tắc thứ hai: tin từng bước như ăn miếng trả miếng. Cho vay khoản nhỏ trước, có giấy tờ đơn giản, có mốc trả rõ ràng. Người ta trả đúng hẹn, lần sau mới tính tiếp. Giấy tờ không phải vì nghi ngờ, mà để cả hai cùng nhớ đã hứa gì."
+  },
+  {
+   "id": "S14",
+   "say": "Quy tắc thứ ba: không bao giờ cho vay để người khác đi đầu tư, nhất là đầu tư theo nhóm phím hàng. Vì lúc ấy anh chị không chỉ đặt cược vào người thân, mà còn đặt cược vào cả những người lạ mà người thân ấy đang tin."
+  },
+  {
+   "id": "S15",
+   "say": "Vy Kim Khâu hỏi: còn nếu đã lỡ rồi, như Ninh thì sao ạ? Thầy nói: trò chơi lặp lại có một bí mật nữa. Chương trình vô địch không thù dai. Đối phương quay lại hợp tác, nó cũng hợp tác lại. Biết tha thứ đúng lúc là một chiến lược, không phải sự yếu đuối."
+  },
+  {
+   "id": "S16",
+   "say": "Cuối buổi, điện thoại của Ninh rung lên. Anh họ nhắn: anh xin lỗi, anh không dám nhìn mặt em. Tháng này anh mới gom được năm triệu, anh trả dần, mỗi tháng một ít. Ninh đọc to cho cả lớp nghe, giọng run run."
+  },
+  {
+   "id": "S17",
+   "say": "Cường Sô xiu vỗ vai bạn: thế là ăn miếng trả miếng phiên bản tử tế rồi. Ninh cười, nhắn lại: em nhận, anh cứ trả dần, nhưng hứa với em đừng vào mấy nhóm đó nữa. Thầy Huy gật đầu: tiền có thể mất một nửa, nhưng nếu giữ được người, ván này vẫn chưa thua hết."
+  },
+  {
+   "id": "S18",
+   "say": "Bài hôm nay có ba ý. Một, lòng tin nên được xây từng bước, và phản ứng ngay khi bị phụ. Hai, nhóm phím hàng lừa đảo lợi dụng chính trò chơi lặp lại: cho thắng nhỏ để lấy khoản lớn. Ba, tiền đầu tư luôn phải nằm trong tài khoản đứng tên mình, và chỉ cho người thân vay số tiền mình sẵn sàng mất."
+  },
+  {
+   "id": "S19",
+   "say": "Bài về nhà: mở danh sách nhóm chát đầu tư anh chị đang tham gia, đánh dấu những nhóm từng hứa lãi chắc chắn, hay từng rủ nạp tiền ra ngoài tài khoản của mình. Rời nhóm đó ngay hôm nay."
+  },
+  {
+   "id": "S20",
+   "say": "Còn anh chị, đã bao giờ cho người thân vay tiền rồi mất cả tiền lẫn tình chưa? Kể em nghe ở phần bình luận nhé. Bài tóm tắt lý thuyết trò chơi cho nhà đầu tư em để miễn phí trên web chứng khoán Huy Nguyễn, còn nhóm cộng đồng cùng thảo luận mỗi tuần, đường dẫn ở phần mô tả."
+  }
+ ]
+}

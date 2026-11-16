@@ -1,0 +1,90 @@
+{
+ "key": "LTC6",
+ "title": "Lớp học Lý thuyết trò chơi – Bài 6",
+ "scenes": [
+  {
+   "id": "S01",
+   "say": "Mười một giờ đêm, mẹ của Trang nhận một tin nhắn lạ từ công ty chứng khoán: tài khoản của chồng chị cần nộp thêm hai trăm triệu, nếu không sáng mai sẽ bị bán. Chị chưa bao giờ biết chồng mình có tài khoản chứng khoán. Và cuốn sổ đỏ của căn nhà đang ở, đã bị đem đi thế chấp từ ba tháng trước."
+  },
+  {
+   "id": "S02",
+   "say": "Sáng hôm sau, Trang Trâu vào lớp, mắt sưng đỏ. Cường Sô xiu hỏi nhỏ: bà Trâu, có chuyện gì thế? Trang kể: bố em chơi chứng khoán vay ký quỹ suốt một năm, giấu cả nhà. Lãi thì không ai thấy, lỗ thì cả nhà gánh."
+  },
+  {
+   "id": "S03",
+   "say": "Phú Dê Già thở dài: chuyện này đầy ra, hội bạn tôi có ba ông y hệt. Vy Kim Khâu hỏi lại: nhưng sao bác ấy phải giấu? Lãi thì khoe với vợ có phải hay hơn không?"
+  },
+  {
+   "id": "S04",
+   "say": "Thầy Huy đặt cốc trà xuống: Vy vừa hỏi đúng câu hỏi của bài hôm nay. Lý thuyết trò chơi gọi đây là thông tin lệch: một người biết rất nhiều, người kia gần như không biết gì. Và người biết nhiều thường chẳng có lý do gì để nói ra."
+  },
+  {
+   "id": "S05",
+   "say": "Năm một nghìn chín trăm bảy mươi, nhà kinh tế A cơ lốp viết về chợ xe cũ ở Mỹ. Người bán biết xe mình có hỏng hay không, người mua thì chịu. Thế là người mua chỉ dám trả giá trung bình, xe tốt bỏ chợ, chợ chỉ còn lại xe dở. Bài viết ấy từng bị nhiều tạp chí từ chối, ba mươi mốt năm sau lại đoạt giải Nô ben kinh tế."
+  },
+  {
+   "id": "S06",
+   "say": "Trong nhà Trang, bố là người bán xe cũ. Bố biết mình đang lãi hay lỗ, mẹ thì không. Khi lãi, bố thấy chẳng cần nói, vì nói ra mẹ sẽ đòi rút về. Khi lỗ, bố càng không dám nói, vì nói ra là nhận mình sai. Cả năm trời, im lặng luôn là lựa chọn có lợi nhất cho bố, cho tới ngày hết đường."
+  },
+  {
+   "id": "S07",
+   "say": "Hùng Xa Lộ gãi đầu: em cũng đang giấu người yêu một mã lỗ ba mươi phần trăm. Cả lớp cười ồ. Thầy cười theo, nhưng nói: em cười được vì số tiền còn nhỏ. Thông tin lệch nguy hiểm ở chỗ nó cứ tích lại, mỗi ngày giấu thêm là mỗi ngày khó nói hơn."
+  },
+  {
+   "id": "S08",
+   "say": "Trang kể tiếp. Lúc đầu bố chỉ có ba trăm triệu tiền thưởng. Lãi được vài tháng, bố vay ký quỹ gấp đôi. Thị trường giảm, bố đem sổ đỏ đi vay thêm để giữ hàng, mong gỡ lại trước khi mẹ biết. Nhưng thị trường không chờ ai. Đến lúc tin nhắn đòi nộp tiền bay về, khoản lỗ đã gần bằng giá căn nhà."
+  },
+  {
+   "id": "S09",
+   "say": "Thầy Huy viết lên bảng một câu: nơi nào có thông tin lệch, người biết ít nhất sẽ trả giá. Trong nhà Trang, người trả giá là mẹ và hai chị em. Thầy hỏi: còn trên thị trường chứng khoán, ai là người biết ít nhất? Linh Livestream đáp ngay: là bọn em, nhà đầu tư nhỏ ạ."
+  },
+  {
+   "id": "S10",
+   "say": "Đúng. Ban lãnh đạo doanh nghiệp biết đơn hàng, biết nợ, biết khoản nào sắp phải trích lập, trước nhà đầu tư nhỏ cả quý. Quỹ lớn có người đi thăm nhà máy, ngồi uống trà với giám đốc. Còn nhà đầu tư nhỏ thường chỉ có tin đồn trong nhóm chát và một cái biểu đồ."
+  },
+  {
+   "id": "S11",
+   "say": "Quang Hà hỏi: vậy bọn em chịu thua sao thầy? Thầy lắc đầu: không. Người mua xe cũ khôn ngoan có ba cách: nhìn tín hiệu khó làm giả, đòi bảo hành, và không mua của người giấu giấy tờ. Đầu tư cũng y như vậy."
+  },
+  {
+   "id": "S12",
+   "say": "Cách thứ nhất, nhìn tín hiệu khó làm giả. Lời hứa thì ai cũng nói được. Nhưng trả cổ tức tiền mặt đều đặn nhiều năm, dòng tiền kinh doanh dương, lãnh đạo bỏ tiền túi ra mua thêm cổ phiếu, đó là những thứ tốn tiền thật, rất khó làm giả."
+  },
+  {
+   "id": "S13",
+   "say": "Cách thứ hai, đòi bảo hành. Trên thị trường, bảo hành chính là biên an toàn: chỉ mua khi giá rẻ hơn hẳn giá trị, để lỡ mình có đánh giá sai một chút thì vẫn còn đệm đỡ."
+  },
+  {
+   "id": "S14",
+   "say": "Cách thứ ba, không mua của người giấu giấy tờ. Doanh nghiệp nộp báo cáo tài chính chậm, kiểm toán từ chối hoặc ngoại trừ ý kiến, lãnh đạo bán chui cổ phiếu, đó là người bán xe đã tua lại đồng hồ công tơ mét. Gặp là tránh."
+  },
+  {
+   "id": "S15",
+   "say": "Ninh Kòi giơ tay: thầy ơi, vậy còn trong nhà thì sao, chẳng lẽ vợ chồng cũng phải đòi bảo hành nhau? Cả lớp lại cười. Thầy nói: trong nhà còn đơn giản hơn, chỉ cần làm cho việc nói thật trở thành lựa chọn có lợi."
+  },
+  {
+   "id": "S16",
+   "say": "Thầy gợi ý ba điều. Một, tiền đầu tư là tiền nhàn rỗi, cả nhà cùng biết con số ấy. Hai, không bao giờ đem nhà đang ở hay tiền học của con đi vay đầu tư. Ba, mỗi tháng cùng xem tài khoản một lần, lãi cũng xem, lỗ cũng xem. Khi xem chung thành thói quen, không ai cần giấu, và cũng chẳng còn chỗ để giấu."
+  },
+  {
+   "id": "S17",
+   "say": "Trọng Hậu hỏi khẽ: thế bây giờ bố Trang thế nào rồi ạ? Trang im một lúc rồi nói: tối qua bố ngồi ngoài hiên đến sáng. Sáng nay bố đưa mẹ toàn bộ mật khẩu, kể hết từng khoản vay. Mẹ khóc, nhưng mẹ bảo: còn người là còn làm lại được."
+  },
+  {
+   "id": "S18",
+   "say": "Thầy Huy nói chậm: đó là lúc khó nhất, cũng là lúc bố em dũng cảm nhất. Khi thông tin được đặt lên bàn, hai người mới cùng chơi một ván. Còn khi một người giấu, thì dù thắng hay thua, gia đình ấy đã thua từ trước."
+  },
+  {
+   "id": "S19",
+   "say": "Bài hôm nay có ba ý. Một, nơi nào có thông tin lệch, người biết ít nhất sẽ trả giá. Hai, trên thị trường hãy tin vào tín hiệu tốn tiền thật, đòi biên an toàn, và tránh người giấu giấy tờ. Ba, trong nhà, hãy làm cho việc nói thật trở nên dễ dàng."
+  },
+  {
+   "id": "S20",
+   "say": "Bài về nhà: chọn một mã đang cầm, xem năm năm gần nhất họ có trả cổ tức tiền mặt không, dòng tiền kinh doanh có dương không, ý kiến kiểm toán có sạch không. Ba câu hỏi, mười lăm phút, có khi giữ được cả một căn nhà."
+  },
+  {
+   "id": "S21",
+   "say": "Còn anh chị, tài khoản đầu tư của mình, trong nhà có ai khác biết không? Kể em nghe ở phần bình luận nhé. Bài tóm tắt lý thuyết trò chơi cho nhà đầu tư em để miễn phí trên web chứng khoán Huy Nguyễn, còn nhóm cộng đồng cùng thảo luận mỗi tuần, đường dẫn ở phần mô tả."
+  }
+ ]
+}
