@@ -103,14 +103,14 @@ const closeL = (set: Shot3D["set"], a: string, e: Expr, o: PO = {}, light: Shot3
 const closeR = (set: Shot3D["set"], a: string, e: Expr, o: PO = {}, light: Shot3D["light"] = "room") => S(set, light, [[1.3, 1.35, 2.3], [NX, 1.05, RZ], 34], [[1.3, 1.32, 2.0], [NX, 1.05, RZ], 30], [C(a, [NX, 0, RZ], P(e, { side: -1, mode: "stand", ...o }))], RM);
 const BL = (x: number, y: number, text: string, at0: number, tail: "l" | "r" = "l") => (t: number) => <Bubble t={t} at={at0} text={text} x={x} y={y} tail={tail} w={640} />;
 // Ngân hàng (set bank): quầy z=-1.2, nhân viên sau quầy, khách đứng trước quầy; khách xếp hàng trên ghế chờ.
-const crowdB = (n = 6): Cast[] => Array.from({ length: n }, (_, i) => C("c" + (60 + i), [-2.6 + (i % 3) * 0.9 + (i > 2 ? 3.6 : 0), 0, 2.2 + (i % 2) * 0.3], P(i % 2 ? "neutral" : "worried", { mode: "stand", acc: i % 2 ? ["phone"] : ["paper"], phase: i * 0.4, side: 1 })));
+const crowdB = (n = 6): Cast[] => Array.from({ length: n }, (_, i) => C("c" + (60 + i), [0.8 + (i % 3) * 0.9 + (i > 2 ? 0.45 : 0), 0, 1.0 + (i > 2 ? 0.9 : 0)], P(i % 2 ? "neutral" : "worried", { mode: "stand", acc: i % 2 ? ["phone"] : ["paper"], phase: i * 0.4, side: 1 })));
 const bank = (cast: Cast[], from: [V, V, number], to: [V, V, number], x: Partial<Shot3D> = {}) => S("bank", "day", from, to, [...cast, ...crowdB()], x);
-const bWide: [[V, V, number], [V, V, number]] = [[[-2.6, 1.7, 3.2], [0, 1.2, -1.2], 48], [[-1.8, 1.55, 2.4], [0, 1.2, -1.2], 42]];
-const bClerk: [[V, V, number], [V, V, number]] = [[[0.9, 1.45, 0.6], [0, 1.35, -2.0], 34], [[0.75, 1.42, 0.3], [0, 1.35, -2.0], 30]];
-const bCust: [[V, V, number], [V, V, number]] = [[[-1.2, 1.4, -1.0], [0.1, 1.2, -0.2], 36], [[-1.0, 1.38, -0.8], [0.1, 1.2, -0.2], 32]];
-const NV = (e: Expr, o: PO = {}) => C("nv", [0, 0, -2.0], P(e, o));
-const BA = (e: Expr, o: PO = {}, x = 0.1) => C("mehung", [x, 0, -0.2], P(e, { side: -1, ...o }));
-const THb = (e: Expr, o: PO = {}) => C("thuong", [-0.6, 0, -0.25], P(e, { side: 1, ...o }));
+const bWide: [[V, V, number], [V, V, number]] = [[[-3.4, 1.7, 3.0], [-1.3, 1.2, -1.0], 46], [[-2.8, 1.6, 2.3], [-1.3, 1.2, -1.0], 40]];
+const bClerk: [[V, V, number], [V, V, number]] = [[[-0.7, 1.75, 1.0], [-1.5, 1.35, -2.0], 34], [[-0.8, 1.72, 0.7], [-1.5, 1.35, -2.0], 30]];
+const bCust: [[V, V, number], [V, V, number]] = [[[-2.9, 1.5, 1.7], [-1.5, 1.1, -0.3], 36], [[-2.7, 1.48, 1.4], [-1.5, 1.1, -0.3], 32]];
+const NV = (e: Expr, o: PO = {}) => C("nv", [-1.5, 0, -2.0], P(e, o));
+const BA = (e: Expr, o: PO = {}, x = -1.4) => C("mehung", [x, 0, -0.2], P(e, { side: -1, ...o }));
+const THb = (e: Expr, o: PO = {}) => C("thuong", [-2.1, 0, -0.25], P(e, { side: 1, ...o }));
 // ảnh thật + nhân vật
 const PH = (bg: string, fit: [number, number], cast: Cast[], cam: [[V, V, number], [V, V, number]], x: Partial<Shot3D> = {}) => S("photo", "room", cam[0], cam[1], cast, { bg: `tp1/${bg}.jpg`, bgFit: fit, ...x });
 const pcam = (x = 0): [[V, V, number], [V, V, number]] => [[[x, 1.45, -3.2], [x, 1.25, 3], 42], [[x, 1.42, -2.8], [x, 1.25, 3], 40]];
@@ -125,13 +125,13 @@ const Compare: React.FC<{ t: number; rAt: number }> = ({ t, rAt }) => { const co
     <div style={{ position: "absolute", bottom: 175, width: "100%", textAlign: "center", fontSize: 26, color: "rgba(255,255,255,.55)" }}>Hạn mức bảo hiểm tiền gửi: Quyết định 32/2021/QĐ-TTg</div></AbsoluteFill>; };
 const PLAN: Plan[] = [
   { id: "S01", shots: [
-    [0, () => D3(bank([NV("smile"), BA("neutral", { acc: ["paper"] })], ...bWide), (t) => <BigText t={t} at={0.4} text="THẬT TỆ KHI…" col="#ffd23f" y={90} size={120} />)],
+    [0, () => D3(bank([NV("smile"), BA("neutral", { acc: ["paper"] })], ...bWide), (t) => <BigText t={t} at={0.4} text="THẬT TỆ KHI…" col="#ffd23f" y={300} size={120} />)],
     [1, () => D3(bank([NV("smile"), BA("neutral", { acc: ["paper"] })], ...bWide), (t) => <><ClockTag t={t} text="9:00" /><LocTag t={t} l1="QUẦY GIAO DỊCH · HÀ NỘI" l2="Một chi nhánh ngân hàng" /></>)],
-    [2, () => D3(bank([BA("worried", { acc: ["paper"] }), NV("smile")], ...bCust), (t) => <><BigText t={t} at={0.3} text="700 TRIỆU · TIỀN DÀNH DỤM CẢ ĐỜI" col="#ffd23f" y={90} size={84} /><LocTag t={t} l1="BÀ TÂM" l2="Mẹ của Thương Thật Thà" /></>)],
+    [2, () => D3(bank([BA("worried", { acc: ["paper"] }), NV("smile")], ...bCust), (t) => <><BigText t={t} at={0.3} text="700 TRIỆU · TIỀN DÀNH DỤM CẢ ĐỜI" col="#ffd23f" y={300} size={84} /><LocTag t={t} l1="BÀ TÂM" l2="Mẹ của Thương Thật Thà" /></>)],
     [3, () => D3(bank([NV("laugh", { wave: 1 }), BA("neutral")], ...bClerk), (t) => <>{BL(120, 110, "Bác ơi, gói này lãi 9%! Bác ký luôn đi kẻo hết suất.", 0.2)(t)}</>)],
   ] },
   { id: "S02", shots: [
-    [0, () => D3(bank([BA("smile", { acc: ["paper"] }), NV("smile")], ...bCust), (t) => <BigText t={t} at={0.3} text="BÀ TÂM ĐẶT BÚT" col="#fff" y={90} size={110} />)],
+    [0, () => D3(bank([BA("smile", { acc: ["paper"] }), NV("smile")], ...bCust), (t) => <BigText t={t} at={0.3} text="BÀ TÂM ĐẶT BÚT" col="#fff" y={300} size={110} />)],
     [1, () => D3(S(HOME, "roomdim", ...roomTwo2, [TH("neutral", { acc: ["paper"] }), ME("smile")], RM), (t) => <ClockTag t={t} text="TỐI HÔM ĐÓ" />)],
     [2, () => CD((t) => PAPER(t))],
     [3, () => D3(closeL(HOME, "thuong", "shock", { acc: ["paper"] }, "roomdim"), (t) => <BigText t={t} at={0.2} text="HỢP ĐỒNG MUA BÁN TRÁI PHIẾU" col="#ff4d5e" y={90} size={86} />)],
@@ -162,7 +162,7 @@ const PLAN: Plan[] = [
   { id: "S08", shots: [
     [0, () => CD(PR("nhnn", (t) => <><LocTag t={t} l1="NGÂN HÀNG NHÀ NƯỚC" l2="Yêu cầu các ngân hàng giảm lãi suất huy động" /><BigText t={t} at={1.2} text="TIẾT KIỆM −0,5 ĐẾN −1 ĐIỂM %" col="#ff4d5e" y={240} size={86} /></>))],
     [1, () => CD((t) => <Big2 t={t} head="Khoảng cách ngày càng xa" src="Lãi tiết kiệm niêm yết giảm 0,5–1 điểm % – VnExpress 16/11/2026" items={[{ a: "↓", b: "lãi tiết kiệm", at: 0.3, col: "#ff4d5e" }, { a: "~9%", b: "lãi trái phiếu ngân hàng", at: 1.2, col: "#ffd23f" }]} />)],
-    [2, () => D3(bank([NV("smile", { acc: ["paper"], wave: 1 }), BA("neutral")], ...bClerk), (t) => <BigText t={t} at={0.4} text="TỜ GIẤY ĐƯỢC ĐẨY VỀ PHÍA BÀ TÂM" col="#ffd23f" y={90} size={84} />)],
+    [2, () => D3(bank([NV("smile", { acc: ["paper"], wave: 1 }), BA("neutral")], ...bClerk), (t) => <BigText t={t} at={0.4} text="TỜ GIẤY ĐƯỢC ĐẨY VỀ PHÍA BÀ TÂM" col="#ffd23f" y={300} size={84} />)],
   ] },
   { id: "S09", shots: [
     [0, () => CD(PR("sotay", (t) => <ClockTag t={t} text="1:30 SÁNG" />))],
@@ -183,7 +183,7 @@ const PLAN: Plan[] = [
     [1, () => CD((t) => <Big2 t={t} head="Vụ án Vạn Thịnh Phát (phần trái phiếu)" src="Theo cáo trạng, qua VOH" items={[{ a: "35.824", b: "người mua trái phiếu", at: 0.2, col: "#ffd23f" }, { a: ">30.000 tỷ", b: "bị chiếm đoạt", at: 1.3, col: "#ff4d5e" }]} />)],
   ] },
   { id: "S13", shots: [
-    [0, () => D3(bank([BA("neutral", { acc: ["paper"] }, -0.5), C("c70", [0.7, 0, -0.2], P("smile", { side: -1, acc: ["paper"] })), NV("smile")], ...bWide), (t) => <LocTag t={t} l1="Nhiều người về hưu" l2="Mua ngay tại quầy quen thuộc" />)],
+    [0, () => D3(bank([BA("neutral", { acc: ["paper"] }, -1.9), C("c70", [-0.8, 0, -0.2], P("smile", { side: -1, acc: ["paper"] })), NV("smile")], ...bWide), (t) => <LocTag t={t} l1="Nhiều người về hưu" l2="Mua ngay tại quầy quen thuộc" />)],
     [1, () => CD((t) => <Big2 t={t} items={[{ a: "KHÔNG THAM", b: "", at: 0.1, col: "#fff" }, { a: "CHỈ TIN", b: "", at: at("S13", 1, 2), col: "#ffd23f" }]} />)],
     [3, () => CD(PR("heodat", (t) => <BigText t={t} at={0.3} text="“Ở NGÂN HÀNG THÌ CÁI GÌ CŨNG LÀ TIẾT KIỆM”" col="#fff" y={90} size={70} />))],
   ] },
@@ -198,13 +198,13 @@ const PLAN: Plan[] = [
     [2, () => D3(PH("hn_pho", [0.5, 0.6], [C("chien", [-0.15, 0, 0.7], P("shock", { side: -1, mode: "stand" })), C("hanhdo", [0.95, 0, 0.7], P("stern", { side: 1, mode: "stand" })), ...walkers(2)], pcam(0.4)), (t) => <><LocTag t={t} l1="NGÃ TƯ" l2="Hạnh Tóc Đỏ – người yêu cũ" />{BL(120, 110, "Ơ… đèn xanh rồi!", 1.4)(t)}</>)],
   ] },
   { id: "S16", shots: [
-    [0, () => D3(bank([THb("stern", { acc: ["paper"] }), BA("neutral", {}, 0.5), NV("neutral")], ...bWide), (t) => <BigText t={t} at={0.3} text="4 CÂU HỎI" col="#ffd23f" y={90} size={130} />)],
+    [0, () => D3(bank([THb("stern", { acc: ["paper"] }), BA("neutral", {}, -0.8), NV("neutral")], ...bWide), (t) => <BigText t={t} at={0.3} text="4 CÂU HỎI" col="#ffd23f" y={300} size={130} />)],
     [1, () => CD((t) => <LessonCard t={t} title="4 câu Thương hỏi ở quầy" items={[{ n: "1", icon: "🏢", head: "Bên phát hành là ai?", body: "báo cáo tài chính ở đâu", at: 0.2 }, { n: "2", icon: "⏳", head: "Kỳ hạn bao lâu?", body: "bán lại trước hạn thì ai mua", at: at("S16", 1, 2) }, { n: "3", icon: "🛡", head: "Có bảo hiểm tiền gửi không?", body: "", at: at("S16", 1, 3) }, { n: "4", icon: "✍", head: "Ghi lên giấy:", body: "“sản phẩm này không phải tiền gửi”", at: at("S16", 1, 4) }]} />)],
   ] },
   { id: "S17", shots: [
-    [0, () => D3(bank([NV("nervous"), THb("stern", { acc: ["paper"] })], ...bClerk), (t) => <BigText t={t} at={0.3} text="NGẬP NGỪNG…" col="#fff" y={90} size={120} />)],
+    [0, () => D3(bank([NV("nervous"), THb("stern", { acc: ["paper"] })], ...bClerk), (t) => <BigText t={t} at={0.3} text="NGẬP NGỪNG…" col="#fff" y={300} size={120} />)],
     [2, () => CD((t) => PAPER(t, 0.8))],
-    [3, () => D3(bank([BA("smile", { acc: ["paper"] }), THb("smile"), NV("neutral")], ...bCust), (t) => <BigText t={t} at={0.4} text="TIỀN VỀ LẠI SỔ TIẾT KIỆM" col="#5dff9b" y={90} size={100} />)],
+    [3, () => D3(bank([BA("smile", { acc: ["paper"] }), THb("smile"), NV("neutral")], ...bCust), (t) => <BigText t={t} at={0.4} text="TIỀN VỀ LẠI SỔ TIẾT KIỆM" col="#5dff9b" y={300} size={100} />)],
   ] },
   { id: "S18", shots: [
     [0, () => D3(PH("dem", [0.5, 0.6], [C("thuong", [-0.15, 0, 0.7], P("sad", { side: -1, mode: "stand" })), C("mehung", [0.95, 0, 0.7], P("cry", { side: 1, mode: "stand", acc: ["tears"] }))], pcam(0.4)), (t) => <>{BL(1000, 110, "Mẹ già rồi, mẹ chỉ sợ làm mất tiền của các con.", rel("S18", 1, sc("S18").a), "r")(t)}</>)],
@@ -216,16 +216,16 @@ const PLAN: Plan[] = [
     [2, () => D3(closeR("cafe", "huy", "neutral", { acc: ["cup"] }), (t) => <>{BL(120, 110, "Không ai trả lãi cao hơn mà không có lý do.", 0.2)(t)}</>)],
     [3, () => CD((t) => <Big2 t={t} items={[{ a: "LÃI ✕", b: "không phải câu hỏi đúng", at: 0.2, col: "#ff4d5e" }, { a: "RỦI RO ✓", b: "nằm ở đâu?", at: 1.6, col: "#5dff9b" }]} />)],
   ] },
-  { id: "S20", shots: [[0, () => CD((t) => <LessonCard t={t} title="1. Đọc dòng đầu tiên trước con số lãi" items={[{ n: "📄", icon: "📄", head: "Tiền gửi ≠ trái phiếu ≠ bảo hiểm liên kết đầu tư", body: "", at: at("S20", 0, 2) }, { n: "✋", icon: "✋", head: "Không hiểu thì chưa ký", body: "", at: at("S20", 0, 3) }, { n: "⏸", icon: "⏸", head: "Bị hối thúc “kẻo hết suất”", body: "đó là lúc phải chậm lại", at: at("S20", 0, 4) }]} />)]] },
-  { id: "S21", shots: [[0, () => CD((t) => <LessonCard t={t} title="2. Tiền không được phép mất" items={[{ n: "🏥", icon: "🏥", head: "Tiền dưỡng già, chữa bệnh, cần trong 1–2 năm", body: "để nơi an toàn, rút được", at: at("S21", 0, 1) }, { n: "⚠", icon: "⚠", head: "Đừng đổi lấy vài phần trăm lãi", body: "", at: at("S21", 0, 2) }]} />)]] },
-  { id: "S22", shots: [[0, () => CD((t) => <LessonCard t={t} title="3. Chia vốn, biết trước mức mất tối đa" items={[{ n: "🧺", icon: "🧺", head: "Không dồn vào một chỗ", body: "một sản phẩm, một tổ chức phát hành", at: at("S22", 0, 2) }, { n: "📏", icon: "📏", head: "Nếu sai thì mất tối đa bao nhiêu?", body: "trả lời trước khi xuống tiền", at: at("S22", 0, 3) }]} />)]] },
+  { id: "S20", shots: [[0, () => CD((t) => <LessonCard t={t} title="1. Đọc dòng đầu tiên trước con số lãi" items={[{ n: "1", icon: "📄", head: "Tiền gửi ≠ trái phiếu ≠ bảo hiểm liên kết đầu tư", body: "", at: at("S20", 0, 2) }, { n: "2", icon: "✋", head: "Không hiểu thì chưa ký", body: "", at: at("S20", 0, 3) }, { n: "3", icon: "⏸", head: "Bị hối thúc “kẻo hết suất”", body: "đó là lúc phải chậm lại", at: at("S20", 0, 4) }]} />)]] },
+  { id: "S21", shots: [[0, () => CD((t) => <LessonCard t={t} title="2. Tiền không được phép mất" items={[{ n: "1", icon: "🏥", head: "Tiền dưỡng già, chữa bệnh, cần trong 1–2 năm", body: "để nơi an toàn, rút được", at: at("S21", 0, 1) }, { n: "2", icon: "⚠", head: "Đừng đổi lấy vài phần trăm lãi", body: "", at: at("S21", 0, 2) }]} />)]] },
+  { id: "S22", shots: [[0, () => CD((t) => <LessonCard t={t} title="3. Chia vốn, biết trước mức mất tối đa" items={[{ n: "1", icon: "🧺", head: "Không dồn vào một chỗ", body: "một sản phẩm, một tổ chức phát hành", at: at("S22", 0, 2) }, { n: "2", icon: "📏", head: "Nếu sai thì mất tối đa bao nhiêu?", body: "trả lời trước khi xuống tiền", at: at("S22", 0, 3) }]} />)]] },
   { id: "S23", shots: [
-    [0, () => CD((t) => <LessonCard t={t} title="4. Hỏi người trong nhà" items={[{ n: "📞", icon: "📞", head: "Tối nay gọi bố mẹ một cuộc", body: "“Sổ của bố mẹ đang là sổ gì?”", at: at("S23", 0, 3) }]} />)],
+    [0, () => CD((t) => <LessonCard t={t} title="4. Hỏi người trong nhà" items={[{ n: "1", icon: "📞", head: "Tối nay gọi bố mẹ một cuộc", body: "“Sổ của bố mẹ đang là sổ gì?”", at: at("S23", 0, 3) }]} />)],
     [2, () => D3(closeR(HOME, "mehung", "smile", { acc: ["phone", "glow"] }), (t) => <BigText t={t} at={0.3} text="SỔ CỦA BỐ MẸ LÀ SỔ GÌ?" col="#ffd23f" y={90} size={100} />)],
   ] },
   { id: "S24", shots: [
     [0, () => D3(closeL("cafe", "thuong", "smile", { acc: ["phone", "glow"] }), (t) => <BigText t={t} at={0.4} text="VẪN MUA ĐỀU MỖI THÁNG" col="#5dff9b" y={90} size={100} />)],
-    [2, () => D3(bank([C("chien", [0.1, 0, -0.2], P("grin", { side: -1, acc: ["paper"] })), NV("smile")], ...bCust), (t) => <BigText t={t} at={0.5} text="ĐỌC HẾT TRANG ĐẦU TRƯỚC KHI KÝ" col="#ffd23f" y={90} size={90} />)],
+    [2, () => D3(bank([C("chien", [-1.4, 0, -0.2], P("grin", { side: -1, acc: ["paper"] })), NV("smile")], ...bCust), (t) => <BigText t={t} at={0.5} text="ĐỌC HẾT TRANG ĐẦU TRƯỚC KHI KÝ" col="#ffd23f" y={300} size={90} />)],
   ] },
   { id: "S25", shots: [[0, () => CD((t) => <Ask t={t} />)]] },
 ];
