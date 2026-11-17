@@ -74,7 +74,7 @@ const Big2: React.FC<{ t: number; items: { a: string; b: string; at: number; col
 // ---------- thẻ riêng phim PNJ1 ----------
 const Img: React.FC<{ t: number; img: string; head?: string; foot?: string }> = ({ t, img, head, foot }) => { const a = sm(t / 0.5);
   return <AbsoluteFill style={{ background: "#160c2e", fontFamily: F, justifyContent: "center", alignItems: "center" }}>
-    <img src={staticFile(`pnj1/${img}.jpg`)} style={{ width: 1720, height: 968, objectFit: "contain", opacity: a, transform: `scale(${0.97 + 0.03 * a + t * 0.002})` }} />
+    <img src={staticFile(`pnj1/${img}.jpg`)} style={{ width: 1600, height: 900, marginTop: -110, objectFit: "contain", opacity: a, transform: `scale(${0.97 + 0.03 * a + t * 0.002})` }} />
     {head && <div style={{ position: "absolute", top: 40, right: 80, padding: "10px 26px", borderRadius: 12, background: "#ffd23f", color: "#1a0f33", fontSize: 40, fontWeight: 900, opacity: sm((t - 0.6) / 0.3) }}>{head}</div>}
     {foot && <div style={{ position: "absolute", bottom: 175, width: "100%", textAlign: "center", fontSize: 26, color: "rgba(255,255,255,.6)" }}>{foot}</div>}</AbsoluteFill>; };
 const Ask: React.FC<{ t: number }> = ({ t }) => { const a = sm(t / 0.5), clickT = t - 3.6, sub = clickT > 0.35;
@@ -227,7 +227,7 @@ const PLAN: Plan[] = [
     [1, () => CD((t) => <BankCard t={t} clock="Tài khoản chứng khoán · 25/9" amt="≈ 80 triệu" at={0.3} note="200 triệu ban đầu" />)],
     [2, () => D3(night([C("toanbop", [HOME_X + 3.6, 0.48, 5.6], P("sad", { mode: "sit" }))], [[[HOME_X + 4, 1.5, 2.4], [HOME_X + 3.6, 1.0, 5.6], 42], [[HOME_X + 3.8, 1.3, 3.2], [HOME_X + 3.6, 1.0, 5.6], 34]], { rain: true }))],
   ] },
-  { id: "S16B", shots: [[0, () => CD((t) => <Img t={t} img="bd_2026" head="PNJ · nến tuần" foot="Giá điều chỉnh, nghìn đồng · dữ liệu HOSE đến 16/11/2026" />)]] },
+  { id: "S16B", shots: [[0, () => CD((t) => <Img t={t} img="bd_2026" head="PNJ · nến tuần" />)]] },
   { id: "S17", shots: [
     [0, () => D3(night([bt("neutral"), guest("nv", "nervous")], hx2), (t) => <>{BL(1060, 110, "Thằng Toàn đâu, sao không qua?", 0.4, "r")(t)}</>)],
     [1, () => D3(night([bt("neutral"), guest("nv", "nervous")], hxT(HX + 0.55)), (t) => <>{BL(120, 110, "Anh ấy trực điện mẹ ạ.", 0.2)(t)}</>)],
@@ -255,7 +255,7 @@ const PLAN: Plan[] = [
   ] },
   { id: "S20B", shots: [
     [0, () => D3(S("room", "roomdim", [[0.65, 1.32, 2.25], [LX, 1.05, RZ], 32], [[2.0, 2.0, 3.2], [LX, 1.0, RZ], 46], [toan("nervous", { acc: ["phone", "glow"] })], { ...RM, ease: "out" }), (t) => <BigText t={t} at={0.1} text="NẾU BẤM?" col="#ffd23f" y={90} size={130} />)],
-    [1, () => CD((t) => <Img t={t} img="bd_tran" head="Sau phiên kịch trần" foot="Giá điều chỉnh, nghìn đồng · dữ liệu HOSE đến 16/11/2026" />)],
+    [1, () => CD((t) => <Img t={t} img="bd_tran" head="Sau phiên kịch trần" />)],
     [5, () => CD((t) => <Big2 t={t} head="Nếu mua ở giá trần 20/10" items={[{ a: "−27%", b: "đến 16/11/2026", at: 0.3, col: "#ff4d5e" }, { a: "~146 TR", b: "còn lại của 200 triệu", at: at("S20B", 5, 6) - at("S20B", 5, 5), col: "#ff4d5e" }]} />)],
   ] },
   { id: "S21", shots: [

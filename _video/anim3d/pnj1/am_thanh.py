@@ -1,4 +1,4 @@
-# Âm thanh "Lớp học Lý thuyết trò chơi – Bài 6" (bản 6 ảnh thật + 3D, giọng x1.15): nền theo bối cảnh + nhạc theo cảm xúc, giọng là chính.
+# Âm thanh video "Vàng đỉnh": tự tổng hợp (không bản quyền) tiếng môi trường + hiệu ứng khớp cảnh + nhạc nền theo cảm xúc,
 # trộn với giọng đọc (nhạc tự hạ khi có lời). Dùng: python am_thanh.py timing.json voice.wav cuts.json out.wav
 import json, sys, os, wave, numpy as np
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, os.path.join(HERE, "..", "..", "engine"))
@@ -114,12 +114,21 @@ def temple(): return mixs(N.bell(196, 5.0) * 0.5, N.bell(392, 3.0) * 0.2)
 
 # ---------- ambience map ----------
 def amb(a, b, gen, g): bed(a, b, gen, g)
-def wind(n): return lp(noise(n), 30) * 0.5
-LOP = ['S02', 'S08', 'S09', 'S11', 'S12', 'S13', 'S14', 'S15', 'S18', 'S19', 'S21', 'S22']
-for s in LOP: amb(at(s), end(s), room, -31)
-amb(at("S01"), end("S01"), street_day, -31); amb(at("S03"), end("S07"), street_day, -31); amb(at("S10"), end("S10"), water, -30); amb(at("S16"), end("S17"), room, -31); amb(at("S20"), end("S20"), crickets, -30)
-C = [(at("S01", 0, 0.2), temple(), -18), (at("S05", 2), clock(3.0), -21), (at("S06", 1), heart(6, 96), -18), (at("S07"), ting(), -18), (at("S11", 1), ting(), -19), (at("S18", 1), stamp(), -17)]
+amb(at("S01"), end("S01"), room, -28); amb(at("S03"), end("S03"), room, -28); amb(at("S06"), end("S06"), crowd, -32)
+amb(at("S08"), end("S08"), rain, -28); amb(at("S10", 3), end("S10"), room, -30); amb(at("S11"), end("S11"), birds, -30)
+amb(at("S13"), end("S13"), room, -30); amb(at("S14"), end("S14"), room, -30); amb(at("S15"), end("S15"), room, -30)
+C = [
+    (at("S01", 1, 0.9), ting(), -12), (at("S01", 1, 2.4), ting(), -12), (at("S01", 6, 0.2), boom(1.4), -14), (at("S01", 7, 0.2), ringtone(), -16),
+    (at("S02"), boom(2.0), -12), (at("S03", 1, 0.3), pop(), -16), (at("S04", 3), stamp(), -12),
+    (at("S05", 1), pop(), -18), (at("S05", 2), pop(), -18), (at("S05", 3), pop(), -18), (at("S05", 4), pop(), -18), (at("S05", 5), pop(), -18), (at("S05", 6), pop(), -18), (at("S05", 7), pop(), -18),
+    (at("S05", 8), kaching(), -12), (at("S05", 9), stamp(), -10), (at("S07", 4, 1.5), boom(1.2), -16), (at("S08", 0, 0.2), boom(1.6), -14),
+    (at("S09", 0, 0.5), ting(), -14), (at("S09", 3), stamp(), -10), (at("S09", 5, 0.4), boom(1.4), -13),
+    (at("S10", 1), ting(), -14), (at("S10", 1, 1.6), ting(), -14), (at("S10", 1, 3.0), ting(), -14), (at("S10", 2), ringtone(), -16), (at("S10", 3), heart(4, 76), -16),
+    (at("S12", 0), pop(), -14), (at("S12", 2), pop(), -14), (at("S12", 4), pop(), -14), (at("S14", 1, 2.4), kaching(), -12), (at("S14", 3), coin(), -14), (at("S15", 0), ringtone(), -18),
+]
 for t0, x, g in C: put(x, t0, g, float(R.uniform(-0.15, 0.15)))
+SCN = sorted(x["a"] for x in tim["scenes"])
+for t0 in SCN[1:]: put(whoosh(0.7), t0 - 0.35, -30, 0.0)  # chỉ một làn gió rất nhẹ khi sang cảnh lớn
 
 # ---------- music beds by mood ----------
 def chords_bed(n, prog, inst, bpm, arp=True, padg=0.25, ig=0.35, oct=0):
@@ -137,12 +146,14 @@ def chords_bed(n, prog, inst, bpm, arp=True, padg=0.25, ig=0.35, oct=0):
 Am = [[57, 60, 64], [53, 57, 60], [48, 52, 55], [55, 59, 62]]; F = [[53, 57, 60], [48, 52, 55], [50, 53, 57], [46, 50, 53]]
 C_ = [[48, 52, 55], [55, 59, 62], [57, 60, 64], [53, 57, 60]]; Dm = [[50, 53, 57], [46, 50, 53], [53, 57, 60], [52, 55, 59]]
 MOOD = [
-    ("S01", "S04", lambda n: chords_bed(n, F, N.piano, 66, ig=0.38, padg=0.3), -23),
-    ("S05", "S07", lambda n: chords_bed(n, Dm, N.piano, 72, ig=0.36, padg=0.3), -23),
-    ("S08", "S12", lambda n: chords_bed(n, C_, N.rhodes, 76, ig=0.32), -23),
-    ("S13", "S17", lambda n: chords_bed(n, C_, N.piano, 70, ig=0.3), -23),
-    ("S18", "S20", lambda n: chords_bed(n, F, N.piano, 64, ig=0.4, padg=0.32), -23),
-    ("S21", None, lambda n: chords_bed(n, F, N.rhodes, 70, ig=0.35, padg=0.3), -23),
+    ("S01", "S02", lambda n: chords_bed(n, Am, None, 60, padg=0.32), -22),
+    ("S03", "S03", lambda n: chords_bed(n, C_, N.marimba, 100, ig=0.3), -24),
+    ("S04", "S05", lambda n: chords_bed(n, F, N.piano, 70, ig=0.4), -23),
+    ("S06", "S07", lambda n: chords_bed(n, C_, N.rhodes, 90, ig=0.3), -24),
+    ("S08", "S10", lambda n: chords_bed(n, Dm, N.piano, 60, ig=0.38, padg=0.3), -21),
+    ("S11", "S12", lambda n: chords_bed(n, F, N.piano, 66, ig=0.4), -22),
+    ("S13", "S14", lambda n: chords_bed(n, C_, N.marimba, 96, ig=0.3), -24),
+    ("S15", None, lambda n: chords_bed(n, F, N.piano, 70, ig=0.4, padg=0.32), -22),
 ]
 mus = np.zeros(NT)
 for a, b, gen, g in MOOD:
