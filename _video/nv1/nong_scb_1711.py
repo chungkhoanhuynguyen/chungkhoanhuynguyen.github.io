@@ -50,7 +50,7 @@ S = [
  dict(k='bars', anh=TP, cap=('TỪ 9,5% VỀ 0%', 'TRONG HƠN 2 NĂM'), cols=CR, moc=True,
       bars=[('Trước 2024', 9.5, GREEN, '9,5%'), ('2024 đến T9/2026', 3.9, GOLD, '3,9%'), ('Cuối T10/2026', 0.7, RED, '0,7%'), ('Từ 16/11/2026', 0.05, RED, '0%')],
       say=("Nhìn lại lãi suất cao nhất SCB từng trả, theo báo MotTheGioi. Trước năm 2024, có lúc lên tới chín phẩy năm phần trăm. Từ năm 2024 đến trước tháng mười năm nay, còn ba phẩy chín phần trăm. "
-           "Cuối tháng mười còn không phẩy bảy. Và từ hôm qua, về không. Đây là lần điều chỉnh mạnh thứ hai chỉ trong khoảng một tháng.")),
+           "Cuối tháng mười còn không phẩy bảy phần trăm. Và từ hôm qua, về không. Đây là lần điều chỉnh mạnh thứ hai chỉ trong khoảng một tháng.")),
  dict(k='cards', anh=BT, cap=('CÙNG 200 TRIỆU, 6 THÁNG', 'NƠI 0 ĐỒNG, NƠI 6,6 TRIỆU'), cols=CC, moc=True,
       cards=[('0 đồng', 'SCB, 6 tháng, biểu mới', 'KHÔNG CÓ LÃI'), ('700 nghìn', 'SCB, biểu cuối tháng 10', 'LÃI 0,7%'), ('6,6 triệu', 'Ngân hàng khác, 6,6% mỗi năm', 'MỨC NIÊM YẾT ONLINE')],
       say=("Em tính thử với hai trăm triệu, kỳ hạn sáu tháng. Theo biểu mới của SCB, lãi là không đồng. Theo biểu cuối tháng mười, khoảng bảy trăm nghìn đồng. "
@@ -75,7 +75,7 @@ S = [
            "Ngân hàng đang thu nhỏ lại, giảm chi phí, xử lý nợ xấu. Trong bối cảnh đó, lãi suất bằng không là một cách để dòng tiền gửi mới tự đi nơi khác.")),
  dict(k='cards', anh=TP, cap=('CẢ NGÀNH CŨNG GIẢM', 'NHƯNG KHÔNG VỀ 0'), cols=CC, moc=True,
       cards=[('4,15 đến 6,9%', 'Lãi online 6 tháng phổ biến', 'NGÂN HÀNG KHÁC'), ('6 đến 7%', 'Lãi online 12 tháng phổ biến', 'NGÂN HÀNG KHÁC'), ('8 đến 10%', 'Trái phiếu ngân hàng', 'VẪN HUY ĐỘNG')],
-      say=("Có phải cả ngành đang về không? Không. Theo Dân trí, lãi tiết kiệm online kỳ hạn sáu tháng ở các ngân hàng khác phổ biến từ bốn phẩy mười lăm đến sáu phẩy chín phần trăm. Kỳ hạn mười hai tháng từ sáu đến bảy phần trăm. "
+      say=("Có phải cả ngành đang về không? Không. Theo Dân trí, lãi tiết kiệm online kỳ hạn sáu tháng ở các ngân hàng khác phổ biến từ hơn bốn phần trăm đến sáu phẩy chín phần trăm. Kỳ hạn mười hai tháng từ sáu đến bảy phần trăm. "
            "Đúng là lãi đang giảm dần. Nhưng theo Vietstock, ngân hàng vẫn huy động qua trái phiếu ở mức tám đến mười phần trăm. Trường hợp SCB là cá biệt, không phải xu hướng chung.")),
  # ---------------- CHƯƠNG 3 ----------------
  dict(k='call', ch='Chương 3 – Lần trước là tháng 10/2022', cap=('"ĐÊM ĐÓ BÁC XẾP HÀNG', 'RÚT HẾT, MẤT SẠCH LÃI"'), cols=CC, moc=True, call=dict(ten='Bác Tư', phu='Hàng xóm, gửi tiết kiệm 20 năm', mau=V_, loi=[
@@ -164,7 +164,7 @@ MT = ("NÓNG: từ 16/11/2026, SCB đưa lãi suất tiết kiệm online về 0
 META = {KEY: dict(kenh='@chungkhoanhuynguyen', seri='Tin nóng trong ngày', ngay='2026-11-17', gio_goi_y='19:30', gio='19:30', nhac='lofi',
     tieu_de=TIEU, title=TIEU, mo_ta=MT,
     tags=['lãi suất tiết kiệm', 'lãi suất 0%', 'SCB', 'lãi suất ngân hàng hôm nay', 'gửi tiết kiệm', 'bảo hiểm tiền gửi', '350 triệu', 'tiền gửi an toàn', 'tin nóng tài chính', 'lãi suất tháng 11'],
-    bia_hook=['LÃI SUẤT 0%', 'TỪ 16/11'], badge='NÓNG: TIỀN GỬI CÓ AN TOÀN?',
+    bia_hook=['LÃI SUẤT 0%', 'TỪ 16/11'], badge='TIỀN GỬI CÒN AN TOÀN?',
     bia_anh='Ho Chi Minh City skyline night||Ho Chi Minh City skyline night',
     bia_hook_b=['GỬI 200 TRIỆU', 'LÃI 0 ĐỒNG'], badge_b='NƠI KHÁC: 6,6 TRIỆU',
     bia_hook_c=['TỪ 9,5%', 'VỀ 0%???'], badge_c='BẢO HIỂM TỐI ĐA 350 TR',
