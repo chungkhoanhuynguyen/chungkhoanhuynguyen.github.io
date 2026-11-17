@@ -1,6 +1,9 @@
 // Thẻ "form cũ" (điện thoại, biểu đồ giá thật, hoá đơn, sổ tay đóng dấu, chat, TV, tin nóng, bài học, kêu gọi) + lớp phủ trên cảnh 3D.
 import React from "react";
 import { AbsoluteFill } from "remotion";
+import { fitText } from "@remotion/layout-utils";
+// QL1 18/11 (học remotion-dev/skills measuring-text): tự thu cỡ chữ to cho vừa khung, chống chữ tràn.
+export const fitSize = (text: string, max: number, w: number): number => { try { return Math.min(max, Math.floor(fitText({ text, withinWidth: w, fontFamily: F, fontWeight: "900" }).fontSize)); } catch { return max; } };
 export const F = "'Be Vietnam Pro', 'DejaVu Sans', Arial, sans-serif";
 export const sm = (t: number) => { t = Math.max(0, Math.min(1, t)); return t * t * t * (t * (t * 6 - 15) + 10); };
 const pop = (t: number) => { t = Math.max(0, Math.min(1, t)); const c = 1.7; return 1 + (c + 1) * (t - 1) ** 3 + c * (t - 1) ** 2; };
@@ -168,8 +171,8 @@ export const TitleCard: React.FC<{ t: number; kicker?: string; l1: string; l2: s
       {Array.from({ length: 16 }).map((_, i) => { const y = ((t * (120 + i * 13) + i * 97) % 1300) - 150; return <div key={i} style={{ position: "absolute", left: (i * 121) % 1920, top: y, width: 70, height: 34, borderRadius: 6, background: "linear-gradient(180deg,#ffe27a,#d59a1e)", transform: `rotate(${i * 23 + t * 40}deg)`, opacity: 0.35, boxShadow: "0 0 20px rgba(255,200,80,.5)" }} />; })}
       <div style={{ position: "relative" }}>
         {kicker && <div style={{ fontSize: 40, fontWeight: 700, color: "#f5c518", letterSpacing: 6, opacity: a }}>{kicker}</div>}
-        <div style={{ fontSize: 128, fontWeight: 900, color: "#fff", lineHeight: 1.05, marginTop: 14, opacity: a, transform: `scale(${1.15 - 0.15 * a})`, textShadow: "0 8px 0 rgba(0,0,0,.5)" }}>{l1}</div>
-        <div style={{ fontSize: 140, fontWeight: 900, color: "#ffcf3a", lineHeight: 1.05, opacity: b, transform: `scale(${1.2 - 0.2 * b})`, textShadow: "0 8px 0 rgba(0,0,0,.5)" }}>{l2}</div>
+        <div style={{ fontSize: fitSize(l1, 128, 1700), fontWeight: 900, color: "#fff", lineHeight: 1.05, marginTop: 14, opacity: a, transform: `scale(${1.15 - 0.15 * a})`, textShadow: "0 8px 0 rgba(0,0,0,.5)" }}>{l1}</div>
+        <div style={{ fontSize: fitSize(l2, 140, 1680), fontWeight: 900, color: "#ffcf3a", lineHeight: 1.05, opacity: b, transform: `scale(${1.2 - 0.2 * b})`, textShadow: "0 8px 0 rgba(0,0,0,.5)" }}>{l2}</div>
         {sub && <div style={{ fontSize: 40, color: "#e8dfe0", fontWeight: 600, marginTop: 30, opacity: c }}>{sub}</div>}
       </div>
     </AbsoluteFill>
@@ -297,6 +300,6 @@ export const LiveHud: React.FC<{ t: number; viewers: number }> = ({ t, viewers }
   <div style={{ background: "#e62117", color: "#fff", fontWeight: 900, fontSize: 34, padding: "8px 20px", borderRadius: 10 }}>● LIVE</div>
   <div style={{ background: "rgba(0,0,0,.6)", color: "#fff", fontWeight: 800, fontSize: 34, padding: "8px 20px", borderRadius: 10 }}>👁 {vn(viewers)}</div></div>;
 export const BigText: React.FC<{ t: number; at?: number; text: string; col?: string; y?: number; size?: number }> = ({ t, at = 0, text, col = "#fff", y = 380, size = 130 }) => { const a = pop((t - at) / 0.35); if (t < at) return null;
-  return <div style={{ position: "absolute", left: 0, top: y, width: 1920, textAlign: "center", fontFamily: F, fontWeight: 900, fontSize: size, color: col, WebkitTextStroke: "8px #120a10", paintOrder: "stroke fill", transform: `scale(${Math.min(1.1, a)}) rotate(-3deg)`, opacity: Math.min(1, a) } as React.CSSProperties}>{text}</div>; };
+  return <div style={{ position: "absolute", left: 0, top: y, width: 1920, textAlign: "center", fontFamily: F, fontWeight: 900, fontSize: fitSize(text, size, 1600), color: col, WebkitTextStroke: "8px #120a10", paintOrder: "stroke fill", transform: `scale(${Math.min(1.1, a)}) rotate(-3deg)`, opacity: Math.min(1, a) } as React.CSSProperties}>{text}</div>; };
 export const ClockTag: React.FC<{ t: number; text: string }> = ({ t, text }) => <div style={{ position: "absolute", left: 110, top: 90, fontFamily: F, fontWeight: 900, fontSize: 64, color: "#fff", background: "rgba(10,12,30,.7)", padding: "8px 26px", borderRadius: 14, opacity: sm(t / 0.3) }}>🕒 {text}</div>;
 export const Vignette: React.FC<{ k: number; col?: string }> = ({ k, col = "0,0,0" }) => <AbsoluteFill style={{ background: `radial-gradient(ellipse at center, rgba(${col},0) 45%, rgba(${col},${0.75 * k}) 100%)`, pointerEvents: "none" }} />;
