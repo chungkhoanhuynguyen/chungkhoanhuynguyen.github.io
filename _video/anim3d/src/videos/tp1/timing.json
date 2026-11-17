@@ -1,0 +1,916 @@
+{
+ "total": 379.133,
+ "scenes": [
+  {
+   "id": "S01",
+   "a": 0.0,
+   "b": 23.5,
+   "fa": 0,
+   "fb": 705,
+   "sens": [
+    {
+     "text": "Thật tệ khi tờ giấy mình ký ở quầy ngân hàng lại không phải là sổ tiết kiệm.",
+     "a": 1.26632,
+     "b": 5.08,
+     "fa": 38,
+     "ns": 173889
+    },
+    {
+     "text": "Chín giờ sáng, quầy giao dịch đông nghịt.",
+     "a": 5.53368,
+     "b": 7.35789,
+     "fa": 166,
+     "ns": 83209
+    },
+    {
+     "text": "Bà Tâm, mẹ của Thương Thật Thà, cầm cuốn sổ hưu bảy trăm triệu, tiền dành dụm cả đời.",
+     "a": 7.83368,
+     "b": 13.55263,
+     "fa": 235,
+     "ns": 260799
+    },
+    {
+     "text": "Cô nhân viên cười rất tươi: bác ơi, gói này lãi chín phần trăm, cao hơn gửi tiết kiệm gần gấp đôi, bác ký luôn đi kẻo hết suất.",
+     "a": 14.0,
+     "b": 21.20526,
+     "fa": 420,
+     "ns": 328554
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "a": 23.5,
+   "b": 37.96632,
+   "fa": 705,
+   "fb": 1139,
+   "sens": [
+    {
+     "text": "Bà Tâm đặt bút.",
+     "a": 24.13368,
+     "b": 25.05474,
+     "fa": 724,
+     "ns": 42015
+    },
+    {
+     "text": "Tối hôm đó, Thương về nhà, nhìn tờ giấy mẹ mang về, và đứng sững lại.",
+     "a": 25.83368,
+     "b": 30.05053,
+     "fa": 775,
+     "ns": 192311
+    },
+    {
+     "text": "Trên đầu tờ giấy không ghi chữ sổ tiết kiệm.",
+     "a": 30.5,
+     "b": 32.61263,
+     "fa": 915,
+     "ns": 96357
+    },
+    {
+     "text": "Nó ghi: hợp đồng mua bán trái phiếu.",
+     "a": 33.06632,
+     "b": 35.05579,
+     "fa": 992,
+     "ns": 90723
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "a": 37.96632,
+   "b": 55.23368,
+   "fa": 1139,
+   "fb": 1657,
+   "sens": [
+    {
+     "text": "Để em kể lại từ đầu.",
+     "a": 37.96632,
+     "b": 39.21895,
+     "fa": 1139,
+     "ns": 57087
+    },
+    {
+     "text": "Thương Thật Thà, hai mươi chín tuổi, nhân viên marketing một hãng mỹ phẩm.",
+     "a": 40.0,
+     "b": 43.96211,
+     "fa": 1200,
+     "ns": 180696
+    },
+    {
+     "text": "Cả phòng gọi là Thật Thà vì cô chưa bao giờ nói dối, kể cả khi sếp hỏi bài đăng có ai xem không.",
+     "a": 44.43368,
+     "b": 49.87579,
+     "fa": 1333,
+     "ns": 248170
+    },
+    {
+     "text": "Lương đều, tháng nào cũng để riêng một phần, mua đều đặn, không vay một đồng.",
+     "a": 50.33368,
+     "b": 54.43789,
+     "fa": 1510,
+     "ns": 187167
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "a": 55.23368,
+   "b": 71.16632,
+   "fa": 1657,
+   "fb": 2135,
+   "sens": [
+    {
+     "text": "Bạn thân của cô thì ngược lại.",
+     "a": 55.23368,
+     "b": 56.62,
+     "fa": 1657,
+     "ns": 63219
+    },
+    {
+     "text": "Chiến Lăng Nhăng, làm chạy quảng cáo thuê, tháng thì cầm trăm triệu, tháng thì ăn mì tôm.",
+     "a": 57.06632,
+     "b": 62.26526,
+     "fa": 1712,
+     "ns": 237067
+    },
+    {
+     "text": "Chiến gọi điện: Thương ơi, mẹ mày được lãi chín phần trăm à?",
+     "a": 62.73368,
+     "b": 65.80421,
+     "fa": 1882,
+     "ns": 140012
+    },
+    {
+     "text": "Ngon thế!",
+     "a": 66.5,
+     "b": 67.03579,
+     "fa": 1995,
+     "ns": 24430
+    },
+    {
+     "text": "Bảo bác lấy cho tao một suất với.",
+     "a": 67.8,
+     "b": 69.50316,
+     "fa": 2034,
+     "ns": 77655
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "a": 71.16632,
+   "b": 83.23368,
+   "fa": 2135,
+   "fb": 2497,
+   "sens": [
+    {
+     "text": "Thương không cười.",
+     "a": 71.16632,
+     "b": 71.91474,
+     "fa": 2135,
+     "ns": 34089
+    },
+    {
+     "text": "Cô hỏi lại: Chiến, mày có biết trái phiếu với tiền gửi khác nhau ở đâu không?",
+     "a": 72.7,
+     "b": 76.71158,
+     "fa": 2181,
+     "ns": 182930
+    },
+    {
+     "text": "Đầu dây bên kia im lặng mấy giây.",
+     "a": 77.4,
+     "b": 79.37263,
+     "fa": 2322,
+     "ns": 89945
+    },
+    {
+     "text": "Rồi Chiến nói: thì cũng là gửi tiền lấy lãi thôi mà.",
+     "a": 79.83368,
+     "b": 82.43579,
+     "fa": 2395,
+     "ns": 118679
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "a": 83.23368,
+   "b": 105.7,
+   "fa": 2497,
+   "fb": 3171,
+   "sens": [
+    {
+     "text": "Không, anh chị ạ.",
+     "a": 83.23368,
+     "b": 84.11579,
+     "fa": 2497,
+     "ns": 40231
+    },
+    {
+     "text": "Đây chính là chỗ rất nhiều người nhầm.",
+     "a": 84.9,
+     "b": 86.61474,
+     "fa": 2547,
+     "ns": 78204
+    },
+    {
+     "text": "Gửi tiết kiệm là anh chị cho ngân hàng vay, và khoản đó được bảo hiểm tiền gửi, tối đa một trăm hai mươi lăm triệu đồng mỗi người ở mỗi ngân hàng.",
+     "a": 87.06632,
+     "b": 94.51263,
+     "fa": 2612,
+     "ns": 339517
+    },
+    {
+     "text": "Còn mua trái phiếu là anh chị cho chính tổ chức phát hành vay.",
+     "a": 94.96632,
+     "b": 98.47053,
+     "fa": 2849,
+     "ns": 159756
+    },
+    {
+     "text": "Không có bảo hiểm tiền gửi.",
+     "a": 98.93368,
+     "b": 100.38,
+     "fa": 2968,
+     "ns": 65958
+    },
+    {
+     "text": "Và thường không rút ra trước hạn như sổ tiết kiệm được.",
+     "a": 101.16632,
+     "b": 103.62105,
+     "fa": 3035,
+     "ns": 111924
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "a": 105.7,
+   "b": 121.26632,
+   "fa": 3171,
+   "fb": 3638,
+   "sens": [
+    {
+     "text": "Vì sao lúc này người ta mời mua trái phiếu nhiều thế?",
+     "a": 105.7,
+     "b": 108.17053,
+     "fa": 3171,
+     "ns": 112656
+    },
+    {
+     "text": "Từ cuối tháng mười đến giữa tháng mười một năm nay, các ngân hàng phát hành mười ba lô trái phiếu, huy động hơn mười lăm nghìn sáu trăm tỷ đồng.",
+     "a": 108.86632,
+     "b": 115.88211,
+     "fa": 3266,
+     "ns": 319907
+    },
+    {
+     "text": "Lãi bình quân khoảng tám phẩy bảy phần trăm một năm, có lô lên chín phẩy chín.",
+     "a": 116.33368,
+     "b": 120.45579,
+     "fa": 3490,
+     "ns": 187984
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "a": 121.26632,
+   "b": 138.0,
+   "fa": 3638,
+   "fb": 4140,
+   "sens": [
+    {
+     "text": "Trong khi đó, lãi tiết kiệm niêm yết vừa giảm từ nửa đến một điểm phần trăm, sau khi Ngân hàng Nhà nước yêu cầu hạ lãi suất.",
+     "a": 122.96632,
+     "b": 129.24316,
+     "fa": 3689,
+     "ns": 286220
+    },
+    {
+     "text": "Khoảng cách giữa hai con số ngày càng xa.",
+     "a": 129.7,
+     "b": 131.87789,
+     "fa": 3891,
+     "ns": 99334
+    },
+    {
+     "text": "Và khoảng cách đó, chính là lý do tờ giấy kia được đẩy về phía bà Tâm.",
+     "a": 132.33368,
+     "b": 136.13789,
+     "fa": 3970,
+     "ns": 173494
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "a": 138.0,
+   "b": 153.26632,
+   "fa": 4140,
+   "fb": 4598,
+   "sens": [
+    {
+     "text": "Thương ngồi cả đêm đọc từng trang hợp đồng.",
+     "a": 138.0,
+     "b": 140.02526,
+     "fa": 4140,
+     "ns": 92336
+    },
+    {
+     "text": "Bên phát hành là ai?",
+     "a": 140.5,
+     "b": 141.56947,
+     "fa": 4215,
+     "ns": 48772
+    },
+    {
+     "text": "Kỳ hạn mấy năm?",
+     "a": 142.26632,
+     "b": 143.09263,
+     "fa": 4268,
+     "ns": 37670
+    },
+    {
+     "text": "Có tài sản bảo đảm không?",
+     "a": 143.8,
+     "b": 145.21579,
+     "fa": 4314,
+     "ns": 64566
+    },
+    {
+     "text": "Muốn rút sớm thì bán lại cho ai?",
+     "a": 145.93368,
+     "b": 147.37158,
+     "fa": 4378,
+     "ns": 65594
+    },
+    {
+     "text": "Đến trang mười hai, cô dừng lại ở một dòng chữ rất nhỏ: nhà đầu tư tự chịu rủi ro.",
+     "a": 148.06632,
+     "b": 152.46105,
+     "fa": 4442,
+     "ns": 200364
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "a": 153.26632,
+   "b": 165.56632,
+   "fa": 4598,
+   "fb": 4967,
+   "sens": [
+    {
+     "text": "Mẹ ơi, lúc ký có ai giải thích dòng này cho mẹ không?",
+     "a": 153.26632,
+     "b": 156.09579,
+     "fa": 4598,
+     "ns": 129013
+    },
+    {
+     "text": "Bà Tâm lắc đầu.",
+     "a": 156.8,
+     "b": 157.72526,
+     "fa": 4704,
+     "ns": 42180
+    },
+    {
+     "text": "Cô ấy bảo giống gửi tiết kiệm, chỉ là lãi cao hơn thôi con.",
+     "a": 158.5,
+     "b": 162.21158,
+     "fa": 4755,
+     "ns": 169248
+    },
+    {
+     "text": "Mẹ tin vì mẹ gửi ở đây hai mươi năm rồi.",
+     "a": 162.66632,
+     "b": 164.77579,
+     "fa": 4880,
+     "ns": 96200
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "a": 165.56632,
+   "b": 173.56632,
+   "fa": 4967,
+   "fb": 5207,
+   "sens": [
+    {
+     "text": "Câu nói đó làm Thương lạnh người.",
+     "a": 165.56632,
+     "b": 167.14842,
+     "fa": 4967,
+     "ns": 72148
+    },
+    {
+     "text": "Vì nó giống hệt câu chuyện đã xảy ra với hàng chục nghìn người, cách đây chưa lâu.",
+     "a": 167.6,
+     "b": 171.71579,
+     "fa": 5028,
+     "ns": 187688
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "a": 173.56632,
+   "b": 187.86632,
+   "fa": 5207,
+   "fb": 5636,
+   "sens": [
+    {
+     "text": "Từ năm hai nghìn không trăm mười tám đến năm hai nghìn không trăm hai mươi hai, theo cáo trạng vụ án Vạn Thịnh Phát, hơn ba mươi lăm nghìn tám trăm người đã mua trái phiếu, nhiều người mua ngay tại quầy ngân hàng quen thuộc.",
+     "a": 173.56632,
+     "b": 183.51684,
+     "fa": 5207,
+     "ns": 453712
+    },
+    {
+     "text": "Số tiền bị chiếm đoạt hơn ba mươi nghìn tỷ đồng.",
+     "a": 183.96632,
+     "b": 186.20526,
+     "fa": 5519,
+     "ns": 102095
+    }
+   ]
+  },
+  {
+   "id": "S13",
+   "a": 187.86632,
+   "b": 200.7,
+   "fa": 5636,
+   "fb": 6021,
+   "sens": [
+    {
+     "text": "Rất nhiều người trong số đó là các cô, các bác về hưu.",
+     "a": 187.86632,
+     "b": 191.08526,
+     "fa": 5636,
+     "ns": 146779
+    },
+    {
+     "text": "Họ không tham.",
+     "a": 191.53368,
+     "b": 192.30737,
+     "fa": 5746,
+     "ns": 35276
+    },
+    {
+     "text": "Họ chỉ tin.",
+     "a": 193.06632,
+     "b": 193.93684,
+     "fa": 5792,
+     "ns": 39668
+    },
+    {
+     "text": "Tin quầy giao dịch quen, tin nụ cười quen, tin rằng ở trong ngân hàng thì cái gì cũng là tiết kiệm.",
+     "a": 194.7,
+     "b": 199.90842,
+     "fa": 5841,
+     "ns": 237495
+    }
+   ]
+  },
+  {
+   "id": "S14",
+   "a": 200.7,
+   "b": 215.56632,
+   "fa": 6021,
+   "fb": 6467,
+   "sens": [
+    {
+     "text": "Em nói rõ điều này để anh chị khỏi hiểu lầm.",
+     "a": 200.7,
+     "b": 203.16947,
+     "fa": 6021,
+     "ns": 112618
+    },
+    {
+     "text": "Trái phiếu không phải là xấu.",
+     "a": 203.63368,
+     "b": 204.83263,
+     "fa": 6109,
+     "ns": 54700
+    },
+    {
+     "text": "Trái phiếu của tổ chức phát hành tốt, minh bạch, là một kênh đầu tư bình thường trên thế giới.",
+     "a": 205.6,
+     "b": 210.35684,
+     "fa": 6168,
+     "ns": 216913
+    },
+    {
+     "text": "Cái nguy hiểm là mua một thứ mà mình không biết mình đang mua.",
+     "a": 210.8,
+     "b": 213.71053,
+     "fa": 6324,
+     "ns": 132720
+    }
+   ]
+  },
+  {
+   "id": "S15",
+   "a": 215.56632,
+   "b": 230.06632,
+   "fa": 6467,
+   "fb": 6902,
+   "sens": [
+    {
+     "text": "Sáng hôm sau, Thương xin nghỉ nửa ngày, đưa mẹ quay lại ngân hàng.",
+     "a": 215.56632,
+     "b": 219.17895,
+     "fa": 6467,
+     "ns": 164713
+    },
+    {
+     "text": "Chiến Lăng Nhăng cũng đi theo, lần này không phải để xin suất, mà để làm tài xế.",
+     "a": 219.63368,
+     "b": 223.93895,
+     "fa": 6589,
+     "ns": 196313
+    },
+    {
+     "text": "Trên đường, Chiến còn gặp lại Hạnh Tóc Đỏ ở ngã tư, và quay mặt đi nhanh hơn cả đèn xanh.",
+     "a": 224.4,
+     "b": 229.26316,
+     "fa": 6732,
+     "ns": 221768
+    }
+   ]
+  },
+  {
+   "id": "S16",
+   "a": 230.06632,
+   "b": 248.36632,
+   "fa": 6902,
+   "fb": 7451,
+   "sens": [
+    {
+     "text": "Ở quầy, Thương hỏi bốn câu.",
+     "a": 230.06632,
+     "b": 231.92737,
+     "fa": 6902,
+     "ns": 84849
+    },
+    {
+     "text": "Một, bên phát hành là ai, báo cáo tài chính ở đâu?",
+     "a": 232.7,
+     "b": 235.70421,
+     "fa": 6981,
+     "ns": 136993
+    },
+    {
+     "text": "Hai, kỳ hạn bao lâu, muốn bán lại trước hạn thì ai mua?",
+     "a": 236.4,
+     "b": 239.23789,
+     "fa": 7092,
+     "ns": 129410
+    },
+    {
+     "text": "Ba, khoản này có bảo hiểm tiền gửi không?",
+     "a": 239.93368,
+     "b": 242.24842,
+     "fa": 7198,
+     "ns": 105559
+    },
+    {
+     "text": "Bốn, ghi giúp em lên giấy là sản phẩm này không phải tiền gửi.",
+     "a": 242.93368,
+     "b": 246.07789,
+     "fa": 7288,
+     "ns": 143377
+    }
+   ]
+  },
+  {
+   "id": "S17",
+   "a": 248.36632,
+   "b": 264.76632,
+   "fa": 7451,
+   "fb": 7943,
+   "sens": [
+    {
+     "text": "Cô nhân viên ngập ngừng.",
+     "a": 248.36632,
+     "b": 249.49789,
+     "fa": 7451,
+     "ns": 51589
+    },
+    {
+     "text": "Đến câu thứ tư thì cô gọi quản lý.",
+     "a": 250.26632,
+     "b": 252.23579,
+     "fa": 7508,
+     "ns": 89801
+    },
+    {
+     "text": "May mắn, lô trái phiếu đó chưa đến ngày phát hành, phiếu đăng ký mua vẫn còn hủy được.",
+     "a": 252.7,
+     "b": 257.65684,
+     "fa": 7581,
+     "ns": 226040
+    },
+    {
+     "text": "Bà Tâm được hướng dẫn làm thủ tục, và chuyển phần lớn tiền về lại sổ tiết kiệm.",
+     "a": 258.1,
+     "b": 262.47474,
+     "fa": 7743,
+     "ns": 199508
+    }
+   ]
+  },
+  {
+   "id": "S18",
+   "a": 264.76632,
+   "b": 278.26632,
+   "fa": 7943,
+   "fb": 8348,
+   "sens": [
+    {
+     "text": "Ra khỏi ngân hàng, bà Tâm nắm tay con gái, mắt đỏ hoe.",
+     "a": 264.76632,
+     "b": 267.74105,
+     "fa": 7943,
+     "ns": 135633
+    },
+    {
+     "text": "Mẹ già rồi, mẹ chỉ sợ làm mất tiền của các con.",
+     "a": 268.2,
+     "b": 271.20947,
+     "fa": 8046,
+     "ns": 137236
+    },
+    {
+     "text": "Thương ôm mẹ.",
+     "a": 271.66632,
+     "b": 272.22632,
+     "fa": 8150,
+     "ns": 25527
+    },
+    {
+     "text": "Mẹ không mất gì cả.",
+     "a": 273.0,
+     "b": 274.02947,
+     "fa": 8190,
+     "ns": 46953
+    },
+    {
+     "text": "Mình chỉ cần đọc kỹ hơn thôi mẹ ạ.",
+     "a": 274.8,
+     "b": 276.63263,
+     "fa": 8244,
+     "ns": 83565
+    }
+   ]
+  },
+  {
+   "id": "S19",
+   "a": 278.26632,
+   "b": 296.2,
+   "fa": 8348,
+   "fb": 8886,
+   "sens": [
+    {
+     "text": "Tối đó, cả nhóm ngồi ở quán cà phê vỉa hè.",
+     "a": 278.9,
+     "b": 281.49158,
+     "fa": 8367,
+     "ns": 118167
+    },
+    {
+     "text": "Chiến hỏi em: Huy ơi, thế rốt cuộc lãi chín phần trăm có nên mua không?",
+     "a": 281.96632,
+     "b": 285.56526,
+     "fa": 8459,
+     "ns": 164105
+    },
+    {
+     "text": "Em trả lời: không ai trả lãi cao hơn mà không có lý do.",
+     "a": 286.26632,
+     "b": 289.21053,
+     "fa": 8588,
+     "ns": 134236
+    },
+    {
+     "text": "Câu hỏi đúng không phải là lãi bao nhiêu, mà là rủi ro nằm ở đâu.",
+     "a": 289.66632,
+     "b": 293.07895,
+     "fa": 8690,
+     "ns": 155624
+    }
+   ]
+  },
+  {
+   "id": "S20",
+   "a": 296.2,
+   "b": 312.63368,
+   "fa": 8886,
+   "fb": 9379,
+   "sens": [
+    {
+     "text": "Bài học thứ nhất.",
+     "a": 296.2,
+     "b": 296.92421,
+     "fa": 8886,
+     "ns": 33020
+    },
+    {
+     "text": "Đọc dòng đầu tiên của tờ giấy trước khi đọc con số lãi suất.",
+     "a": 297.7,
+     "b": 300.92211,
+     "fa": 8931,
+     "ns": 146950
+    },
+    {
+     "text": "Hợp đồng tiền gửi khác hợp đồng mua trái phiếu, khác bảo hiểm liên kết đầu tư.",
+     "a": 301.36632,
+     "b": 305.42421,
+     "fa": 9041,
+     "ns": 185022
+    },
+    {
+     "text": "Không hiểu thì chưa ký.",
+     "a": 305.86632,
+     "b": 306.91789,
+     "fa": 9176,
+     "ns": 47960
+    },
+    {
+     "text": "Ai hối thúc ký luôn kẻo hết suất, đó là lúc phải chậm lại.",
+     "a": 307.7,
+     "b": 310.76737,
+     "fa": 9231,
+     "ns": 139880
+    }
+   ]
+  },
+  {
+   "id": "S21",
+   "a": 312.63368,
+   "b": 328.36632,
+   "fa": 9379,
+   "fb": 9851,
+   "sens": [
+    {
+     "text": "Bài học thứ hai.",
+     "a": 313.9,
+     "b": 314.83053,
+     "fa": 9417,
+     "ns": 42452
+    },
+    {
+     "text": "Tiền dưỡng già, tiền chữa bệnh, tiền phải dùng trong vòng một hai năm thì để ở nơi an toàn và rút được.",
+     "a": 315.6,
+     "b": 321.02211,
+     "fa": 9468,
+     "ns": 247240
+    },
+    {
+     "text": "Đừng đem tiền không được phép mất đi đổi lấy vài phần trăm lãi.",
+     "a": 321.46632,
+     "b": 325.03368,
+     "fa": 9644,
+     "ns": 162651
+    }
+   ]
+  },
+  {
+   "id": "S22",
+   "a": 328.36632,
+   "b": 344.26632,
+   "fa": 9851,
+   "fb": 10328,
+   "sens": [
+    {
+     "text": "Bài học thứ ba.",
+     "a": 328.36632,
+     "b": 329.17053,
+     "fa": 9851,
+     "ns": 36666
+    },
+    {
+     "text": "Muốn đầu tư để có lợi nhuận cao hơn, hãy chia vốn.",
+     "a": 329.93368,
+     "b": 332.47895,
+     "fa": 9898,
+     "ns": 116069
+    },
+    {
+     "text": "Không dồn hết vào một chỗ, một sản phẩm, một tổ chức phát hành.",
+     "a": 332.93368,
+     "b": 336.12632,
+     "fa": 9988,
+     "ns": 145608
+    },
+    {
+     "text": "Mỗi khoản đều phải biết trước: nếu sai thì mất tối đa bao nhiêu.",
+     "a": 336.6,
+     "b": 339.78316,
+     "fa": 10098,
+     "ns": 145145
+    }
+   ]
+  },
+  {
+   "id": "S23",
+   "a": 344.26632,
+   "b": 357.16632,
+   "fa": 10328,
+   "fb": 10715,
+   "sens": [
+    {
+     "text": "Bài học thứ tư.",
+     "a": 344.26632,
+     "b": 345.17158,
+     "fa": 10328,
+     "ns": 41262
+    },
+    {
+     "text": "Hỏi người trong nhà.",
+     "a": 345.93368,
+     "b": 346.80947,
+     "fa": 10378,
+     "ns": 39965
+    },
+    {
+     "text": "Rất nhiều bố mẹ ngại hỏi con vì sợ bị chê.",
+     "a": 347.6,
+     "b": 350.03474,
+     "fa": 10428,
+     "ns": 111041
+    },
+    {
+     "text": "Anh chị nào có bố mẹ hay đi gửi tiền một mình, tối nay hãy gọi một cuộc, hỏi thử: sổ của bố mẹ đang là sổ gì.",
+     "a": 350.5,
+     "b": 356.36947,
+     "fa": 10515,
+     "ns": 267667
+    }
+   ]
+  },
+  {
+   "id": "S24",
+   "a": 357.16632,
+   "b": 367.36632,
+   "fa": 10715,
+   "fb": 11021,
+   "sens": [
+    {
+     "text": "Còn Thương?",
+     "a": 357.16632,
+     "b": 357.68211,
+     "fa": 10715,
+     "ns": 23527
+    },
+    {
+     "text": "Cô vẫn mua đều mỗi tháng như cũ.",
+     "a": 358.4,
+     "b": 360.08211,
+     "fa": 10752,
+     "ns": 76697
+    },
+    {
+     "text": "Còn Chiến Lăng Nhăng, lần đầu tiên trong đời, mở một cuốn sổ tiết kiệm, và đọc hết trang đầu trước khi ký.",
+     "a": 360.53368,
+     "b": 366.57579,
+     "fa": 10816,
+     "ns": 275513
+    }
+   ]
+  },
+  {
+   "id": "S25",
+   "a": 367.36632,
+   "b": 379.13368,
+   "fa": 11021,
+   "fb": 11374,
+   "sens": [
+    {
+     "text": "Còn anh chị, đã bao giờ được mời mua một sản phẩm lãi cao ngay tại quầy chưa?",
+     "a": 367.36632,
+     "b": 371.00316,
+     "fa": 11021,
+     "ns": 165814
+    },
+    {
+     "text": "Bình luận cho em biết nhé.",
+     "a": 371.7,
+     "b": 372.71579,
+     "fa": 11151,
+     "ns": 46321
+    },
+    {
+     "text": "Ai muốn học cách quản trị rủi ro cho tiền của mình, cứ vào web Chứng Khoán Huy Nguyễn.",
+     "a": 373.5,
+     "b": 378.32947,
+     "fa": 11205,
+     "ns": 220237
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "nhnn": {
+  "title": "File:State bank of Vietnam 2016 new year's decorations.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Cookie_Nguyen&amp;action=edit&amp;redlink=1\" class=\"new\" title=\""
+ },
+ "toa": {
+  "title": "File:Ho Chi Minh City People's Court 01.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Thomas1313\" title=\"User:Thomas1313\">Thomas1313</a>"
+ },
+ "hn_pho": {
+  "title": "File:Hanoi Traffic (174818911).jpeg",
+  "license": "CC BY 3.0",
+  "artist": "<div class=\"fn value\">\n<a rel=\"nofollow\" class=\"external text\" href=\"https://500px.com/banjipark\">Benjamin Arnold</a></d"
+ },
+ "sotay": {
+  "title": "File:Pen-writing-notes-studying.jpg",
+  "license": "CC0",
+  "artist": "Tookapic"
+ },
+ "toanha": {
+  "title": "File:Vietnamese flags being flown from an apartment building 02.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Vuong_Tri_Binh\" title=\"User:Vuong Tri Binh\">Vuong Tri Binh</a>"
+ },
+ "heodat": {
+  "title": "File:Colorful-plastic-chicken-piggy-bank-indonesia.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Undeka_11\" title=\"User:Undeka 11\">Undeka 11</a>"
+ },
+ "dem": {
+  "note": "dùng lại ảnh hn/street_night.jpg",
+  "src": [
+   {
+    "file": "hanoi_night.jpg",
+    "title": "Night in Hanoi, Vietnam",
+    "lic": "CC BY 2.0",
+    "artist": "cloud.shepherd",
+    "url": "https://commons.wikimedia.org/wiki/File:Night_in_Hanoi,_Vietnam.jpg"
+   },
+   {
+    "file": "street_night.jpg",
+    "title": "Tú Mỡ Street by night 23-02-2026. Cars",
+    "lic": "CC BY-SA 4.0",
+    "artist": "Bohdan Phúc Đan",
+    "url": "https://commons.wikimedia.org/wiki/File:T%C3%BA_M%E1%BB%A1_Street_by_night_23-02-2026._Cars.jpg"
+   },
+   {
+    "file": "gold_shop.jpg",
+    "title": "Trung Kính Street by night 23-02-2026. Trung Kiên Gold Shop",
+    "lic": "CC BY-SA 4.0",
+    "artist": "Bohdan Phúc Đan",
+    "url": "https://commons.wikimedia.org/wiki/File:Trung_K%C3%ADnh_Street_by_night_23-02-2026._Trung_Ki%C3%AAn_Gold_Shop.jpg"
+   }
+  ]
+ }
+}
