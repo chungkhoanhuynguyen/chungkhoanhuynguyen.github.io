@@ -132,6 +132,9 @@ const D_ = (e: Expr, o: PO = {}) => C("quang", [LX, 0, RZ], P(e, { side: 1, mode
 const T_ = (e: Expr, o: PO = {}) => C("trang", [NX, 0, RZ], P(e, { side: -1, mode: "stand", ...o }));
 const doi = (cast: Cast[], from: [V, V, number], to: [V, V, number], x: Partial<Shot3D> = {}) => S("street", "night", from, to, cast, x);
 const trangRun = (e: Expr = "nervous") => C("trang", [GOLD_X + 8, 0.15, 4.6], walk(e, { side: -1, acc: ["box"] }), [GOLD_X + 1.5, 0.15, 4.6]);
+const walkers = (n: number, z = 1.6): Cast[] => Array.from({ length: n }, (_, i) => C("c" + (40 + i), [i % 2 ? 2.6 : -2.2, 0, z + i * 0.35], (t: number) => ({ ...P(i % 3 ? "neutral" : "smile", { acc: i % 2 ? ["box"] : ["phone"] })(t), mode: "stroll", phase: (t * 1.4 + i * 0.3) % 1, side: i % 2 ? -1 : 1 }), [i % 2 ? -2.4 : 2.8, 0, z + i * 0.35]));
+const MC = (bg: string, cast: Cast[], cam: [[V, V, number], [V, V, number]] = pcam(0.4)) => PH(bg, [0.5, 0.6], [...cast, ...walkers(3)], cam);
+const trangAt = (e: Expr, o: PO = {}, x = 0.4) => C("trang", [x, 0, 0.7], P(e, { side: 1, mode: "stand", ...o }));
 const PLAN: Plan[] = [
   { id: "S01", shots: [
     [0, () => D3(doi([trangRun(), ...queue(4, "neutral")], [[GOLD_X + 10, 2.2, 1.4], [GOLD_X + 5, 1.2, 5], 46], [[GOLD_X + 6, 1.6, 2.2], [GOLD_X + 2, 1.2, 5], 42], { rain: true, ease: "lin" }), (t) => <BigText t={t} at={0.4} text="THẬT TỆ KHI…" col="#ffd23f" y={90} size={120} />)],
@@ -144,10 +147,10 @@ const PLAN: Plan[] = [
     [2, () => CD((t) => <Big2 t={t} items={[{ a: "$", b: "đồng đô la", at: 0.2, col: "#5dff9b" }]} head="Hai vợ chồng, hai thành phố, cùng mất ngủ vì…" />)],
   ] },
   { id: "S03", shots: [
-    [0, () => D3(shopDay([...queue(20, "neutral")], ...qWide), (t) => <LocTag t={t} l1="MÓNG CÁI" l2="Chợ biên giới" />)],
-    [1, () => D3(shopDay([C("trang", [GOLD_X + 3.0, 0.15, 5.0], P("grin", { side: 1, acc: ["box"] })), ...queue(4, "smile")], [[GOLD_X + 4.6, 1.5, 2.4], [GOLD_X + 3.0, 1.3, 5.0], 40], [[GOLD_X + 4.2, 1.45, 2.9], [GOLD_X + 3.0, 1.3, 5.0], 36]), (t) => <><BigText t={t} at={0.3} text="TRANG TRÂU" col="#ffd23f" y={170} size={120} /><LocTag t={t} l1="34 tuổi · 1m47 · buôn hàng biên giới" /></>)],
-    [2, () => D3(shopDay([C("trang", [GOLD_X + 3.0, 0.15, 5.0], walk("laugh", { side: -1, acc: ["box"] }), [GOLD_X + 0.5, 0.15, 5.0]), ...queue(6, "smile")], [[GOLD_X + 5, 1.6, 2.2], [GOLD_X + 2, 1.2, 5], 44], [[GOLD_X + 3, 1.5, 2.6], [GOLD_X + 1, 1.2, 5], 40], { ease: "lin" }), (t) => <>{BL(1060, 110, "Trang ơi, một mình bốc cả xe à?", 0.3, "r")(t)}</>)],
-    [3, () => CD((t) => <PaperCard t={t} kind="receipt" hue="navy" title="HÓA ĐƠN NHẬP HÀNG" sub="Tình huống trong phim" lines={[{ text: "Lô hàng tháng 10", at: 0.3 }, { text: "Thanh toán: 40.000 USD", at: 0.9, big: true }]} />)],
+    [0, () => CD(PR("mc_toancanh", (t) => <LocTag t={t} l1="MÓNG CÁI · QUẢNG NINH" l2="Thành phố cửa khẩu, nơi địa đầu Tổ quốc" />))],
+    [1, () => D3(MC("mc_cho", [trangAt("grin", { acc: ["box"] })]), (t) => <><BigText t={t} at={0.3} text="TRANG TRÂU" col="#ffd23f" y={240} size={120} /><LocTag t={t} l1="CHỢ TRUNG TÂM MÓNG CÁI" l2="34 tuổi · 1m47 · 10 năm buôn hàng biên giới" /></>)],
+    [2, () => D3(MC("mc_bacluan", [C("trang", [-1.2, 0, 0.9], walk("laugh", { side: 1, acc: ["box"] }), [1.6, 0, 0.9])], pcam(0.3)), (t) => <><LocTag t={t} l1="CẦU BẮC LUÂN II" l2="Ngày nào cũng chở hàng qua biên giới" />{BL(1060, 300, "Trang ơi, một mình bốc cả xe à?", 0.6, "r")(t)}</>)],
+    [3, () => D3(MC("mc_cuakhau", [trangAt("neutral", { acc: ["paper"] })]), (t) => <><LocTag t={t} l1="CỬA KHẨU MÓNG CÁI" />{BL(1060, 110, "Lô này thanh toán 40.000 đô la.", 0.4, "r")(t)}</>)],
   ] },
   { id: "S04", shots: [
     [0, () => D3(PH("hn_vanphong", [0.5, 0.6], [C("quang", [0.4, 0, 0.7], P("smug", { side: 1, mode: "stand", acc: ["phone"] }))], pcam(0.4)), (t) => <><BigText t={t} at={0.3} text="ĐỨC ĐÔ LA" col="#ffd23f" y={170} size={120} /><LocTag t={t} l1="Nhân viên văn phòng · Hà Nội" /></>)],
@@ -157,7 +160,7 @@ const PLAN: Plan[] = [
   { id: "S05", shots: [
     [0, () => CD((t) => <Big2 t={t} head="Đầu năm 2022" src="VN-Index đầu năm 2022 lập đỉnh 1.528,6 điểm – Người Quan Sát" items={[{ a: "~1.500", b: "điểm chứng khoán", at: 0.4, col: "#5dff9b" }]} />)],
     [1, () => D3(S("room", "room", ...roomTwo2, [D_("laugh", { acc: ["phone"] }), T_("laugh")], RM), (t) => <>{BL(120, 110, "Năm nay anh mua nhà cho mẹ!", 0.2)(t)}</>)],
-    [2, () => D3(shopDay([hangShop("laugh"), ...queue(10, "smile")], ...qWide), (t) => <LocTag t={t} l1="Hàng kín cả tháng" />)],
+    [2, () => D3(MC("mc_pho", [trangAt("laugh", { acc: ["box"] }), C("c50", [1.3, 0, 0.8], P("smile", { side: -1, mode: "stand", acc: ["phone"] }))]), (t) => <LocTag t={t} l1="PHỐ MÓNG CÁI" l2="Hàng kín cả tháng" />)],
   ] },
   { id: "S06", shots: [
     [0, () => CD(PR("eccles", (t) => <LocTag t={t} l1="WASHINGTON · THÁNG 3/2022" l2="Cục Dự trữ Liên bang Mỹ (Fed)" />))],
@@ -177,7 +180,7 @@ const PLAN: Plan[] = [
     [0, () => CD((t) => <Rows t={t} title="Đến giữa tháng 10/2022" foot="Nguồn: VnBusiness 13/10/2022 (ước tính VinaCapital, ACBS)" rows={[{ l: "Giá USD tại ngân hàng so với cuối 2021", v: "+4,7%", at: 0.4, col: "#ff4d5e" }, { l: "NHNN bán ra (ước tính)", v: "~21 tỷ USD", at: at("S09", 0, 1) + 0.4, big: true }, { l: "Dự trữ ngoại hối còn", v: "~89–90 tỷ USD", at: at("S09", 0, 1) + 2.4 }]} />)],
   ] },
   { id: "S10", shots: [
-    [0, () => D3(shopDay([hangShop("worried", { acc: ["paper"] }), ...queue(3, "stern")], [[GOLD_X + 3.4, 1.5, 2.4], [GOLD_X + 1.0, 1.3, 5.2], 40], [[GOLD_X + 3.0, 1.45, 2.9], [GOLD_X + 1.0, 1.3, 5.2], 36]), (t) => <BigText t={t} at={0.4} text="4–5% = TIỀN LỜI CẢ LÔ" col="#ff4d5e" y={90} size={100} />)],
+    [0, () => D3(MC("mc_cho", [trangAt("worried", { acc: ["paper"] })]), (t) => <BigText t={t} at={0.4} text="4–5% = TIỀN LỜI CẢ LÔ" col="#ff4d5e" y={90} size={100} />)],
     [1, () => D3(shopDay([hangShop("sad"), C("c1", [GOLD_X + 1.6, 0.15, 4.6], P("stern", { side: -1, wave: 1 }))], ...hqT), (t) => <>{BL(120, 110, "Tăng giá à? Thôi chị để tôi lấy chỗ khác.", 0.2)(t)}</>)],
     [2, () => D3(S("room", "roomdim", [[1.3, 1.35, 2.3], [NX, 1.05, RZ], 34], [[1.3, 1.32, 2.0], [NX, 1.05, RZ], 30], [T_("sad", { acc: ["paper"] })], RM), (t) => <BigText t={t} at={0.3} text="BÁN HẾT HÀNG VẪN LỖ" col="#ff4d5e" y={90} size={110} />)],
   ] },
@@ -193,16 +196,16 @@ const PLAN: Plan[] = [
   ] },
   { id: "S13", shots: [
     [0, () => D3(S("room", "roomdim", [[1.3, 1.35, 2.3], [NX, 1.05, RZ], 34], [[1.25, 1.32, 1.8], [NX, 1.05, RZ], 26], [T_("nervous", { acc: ["phone", "glow"] })], RM), (t) => <BigText t={t} at={0.3} text="SAI LẦM CỦA TRANG" col="#ff4d5e" y={90} size={110} />)],
-    [1, () => D3(shopDay([...queue(8, "grin")], [[qx(3), 1.35, 3.2], [qx(3), 1.3, 5.4], 40], [[qx(4), 1.35, 3.5], [qx(4), 1.3, 5.4], 36]), (t) => <>{BL(120, 110, "Đô còn lên nữa! Ai giữ đô người ấy thắng!", 0.2)(t)}</>)],
+    [1, () => D3(MC("dh_pho", [trangAt("nervous", { acc: ["box"] }), C("c51", [1.3, 0, 0.8], P("grin", { side: -1, mode: "stand", acc: ["phone"], wave: 1 }))]), (t) => <><LocTag t={t} l1="ĐÔNG HƯNG · BÊN KIA CẦU" />{BL(1060, 110, "Đô còn lên nữa! Ai giữ đô người ấy thắng!", 0.2, "r")(t)}</>)],
     [2, () => D3(doi([trangRun("worried"), ...queue(4, "neutral")], [[GOLD_X + 10, 2.2, 1.4], [GOLD_X + 5, 1.2, 5], 46], [[GOLD_X + 6, 1.6, 2.2], [GOLD_X + 2, 1.2, 5], 42], { rain: true, ease: "lin" }), (t) => <BigText t={t} at={0.4} text="MUA ĐÔ Ở GIÁ CAO NHẤT NĂM" col="#ff4d5e" y={90} size={96} />)],
   ] },
   { id: "S14", shots: [
-    [0, () => CD(PR("mong_cai_dem", (t) => <BigText t={t} at={0.3} text="TIỀN CHẠY THEO TIN ĐỒN…" col="#fff" y={90} size={96} />))],
+    [0, () => CD(PR("mc_kalong", (t) => <BigText t={t} at={0.3} text="TIỀN CHẠY THEO TIN ĐỒN…" col="#fff" y={90} size={96} />))],
     [1, () => CD((t) => <Big2 t={t} head="Giá USD bán ra tại một ngân hàng lớn" src="VnExpress International, 3/1/2023: 23.660 đồng" items={[{ a: "~23.660", b: "đầu tháng 1/2023", at: 0.4, col: "#5dff9b" }]} />)],
     [3, () => D3(S("room", "roomdim", [[1.3, 1.35, 2.3], [NX, 1.05, RZ], 34], [[1.3, 1.32, 2.0], [NX, 1.05, RZ], 30], [T_("cry", { acc: ["tears"] })], RM), (t) => <BigText t={t} at={0.5} text="LỖ THÊM LẦN NỮA" col="#ff4d5e" y={90} size={110} />)],
   ] },
   { id: "S15", shots: [
-    [0, () => D3(S("room", "roomdim", ...roomTwo2, [D_("sad"), T_("sad", { acc: ["paper"] })], RM), (t) => <LocTag t={t} l1="MÓNG CÁI · TẾT 2023" />)],
+    [0, () => D3(S("room", "roomdim", ...roomTwo2, [D_("sad"), T_("sad", { acc: ["paper"] })], RM), (t) => <LocTag t={t} l1="NHÀ TRANG · MÓNG CÁI · TẾT 2023" l2="Cộng lại thiệt hại của một năm" />)],
     [1, () => D3(S("room", "roomdim", [[1.0, 1.35, 2.4], [LX, 1.05, RZ], 34], [[0.9, 1.32, 2.0], [LX, 1.05, RZ], 30], [D_("sad"), T_("neutral")], RM), (t) => <>{BL(120, 110, "Mình không thua thị trường. Mình thua vì không hiểu một cuộc họp ở Mỹ.", 0.2)(t)}</>)],
   ] },
   { id: "S16", shots: [
@@ -227,8 +230,9 @@ const PLAN: Plan[] = [
   { id: "S24", shots: [[0, () => CD((t) => <LessonCard t={t} title="4. Doanh nghiệp đứng ở đầu nào?" items={[{ n: "+", icon: "🚢", head: "Xuất khẩu thu đô", body: "thường được lợi về tỷ giá", at: at("S24", 0, 1) }, { n: "−", icon: "📦", head: "Vay nợ / nhập nguyên liệu bằng đô", body: "chịu thiệt", at: at("S24", 0, 2) }, { n: "?", icon: "📑", head: "Đọc báo cáo tài chính", body: "tìm nợ vay ngoại tệ, doanh thu xuất khẩu", at: at("S24", 0, 3) }]} />)]] },
   { id: "S25", shots: [
     [0, () => D3(S("room", "room", ...roomTwo2, [D_("smile", { acc: ["phone"] }), T_("smile")], RM), (t) => <BigText t={t} at={0.4} text="KHÔNG VAY" col="#5dff9b" y={90} size={130} />)],
-    [2, () => D3(shopDay([hangShop("laugh", { acc: ["paper"] }), ...queue(6, "smile")], [[GOLD_X + 3.4, 1.5, 2.4], [GOLD_X + 1.0, 1.3, 5.2], 40], [[GOLD_X + 3.0, 1.45, 2.9], [GOLD_X + 1.0, 1.3, 5.2], 36]), (t) => <BigText t={t} at={0.3} text="CHỐT TỶ GIÁ LÔ HÀNG TẾT" col="#5dff9b" y={90} size={100} />)],
-    [3, () => D3(S("room", "room", ...roomTwo2, [D_("laugh"), T_("laugh")], RM), (t) => <BigText t={t} at={0.3} text="NGỦ NGON" col="#ffd23f" y={90} size={130} />)],
+    [2, () => D3(closeT("smile", { acc: ["phone", "glow"] }, "room"), (t) => <BigText t={t} at={0.4} text="MUA ĐỀU BẰNG TIỀN NHÀN RỖI" col="#5dff9b" y={90} size={92} />)],
+    [3, () => D3(MC("mc_cuakhau2", [trangAt("laugh", { acc: ["paper"] })]), (t) => <BigText t={t} at={0.3} text="CHỐT TỶ GIÁ LÔ HÀNG TẾT" col="#5dff9b" y={90} size={100} />)],
+    [4, () => D3(PH("mc_savi", [0.5, 0.6], [C("quang", [-0.15, 0, 0.7], P("laugh", { side: -1, mode: "stand" })), C("trang", [0.95, 0, 0.7], P("laugh", { side: 1, mode: "stand", wave: 1 }))], pcam(0.4)), (t) => <><LocTag t={t} l1="MŨI SA VĨ · ĐỊA ĐẦU TỔ QUỐC" /><BigText t={t} at={0.6} text="NGỦ NGON" col="#ffd23f" y={240} size={130} /></>)],
   ] },
   { id: "S26", shots: [[0, () => CD((t) => <Ask t={t} />)]] },
 ];
