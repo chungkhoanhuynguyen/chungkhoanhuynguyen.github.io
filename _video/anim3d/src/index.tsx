@@ -22,6 +22,8 @@ import { Ltc16Video, LTC16_FRAMES } from "./videos/ltc16/Ltc16";
 import { Pnj1Video, PNJ1_FRAMES } from "./videos/pnj1/Pnj1";
 import { Dola1Video, DOLA1_FRAMES } from "./videos/dola1/Dola1";
 import { Tp1Video, TP1_FRAMES } from "./videos/tp1/Tp1";
+import { Rac1Video, RAC1_FRAMES } from "./videos/rac1/Rac1";
+import { Gd1Video, GD1_FRAMES } from "./videos/gd1/Gd1";
 import { Ltc10Video, LTC10_FRAMES } from "./videos/ltc10/Ltc10";
 import { Ltc9Video, LTC9_FRAMES } from "./videos/ltc9/Ltc9";
 import { Ltc8Video, LTC8_FRAMES } from "./videos/ltc8/Ltc8";
@@ -38,6 +40,8 @@ const Root: React.FC = () => <>
       <Composition id="Ltc11" component={Ltc11Video} durationInFrames={LTC11_FRAMES} fps={30} width={1920} height={1080} />
       <Composition id="Ltc15" component={Ltc15Video} durationInFrames={LTC15_FRAMES} fps={30} width={1920} height={1080} />
       <Composition id="Ltc16" component={Ltc16Video} durationInFrames={LTC16_FRAMES} fps={30} width={1920} height={1080} />
+      <Composition id="Gd1" component={Gd1Video} durationInFrames={GD1_FRAMES} fps={30} width={1920} height={1080} />
+      <Composition id="Rac1" component={Rac1Video} durationInFrames={RAC1_FRAMES} fps={30} width={1920} height={1080} />
       <Composition id="Tp1" component={Tp1Video} durationInFrames={TP1_FRAMES} fps={30} width={1920} height={1080} />
       <Composition id="Dola1" component={Dola1Video} durationInFrames={DOLA1_FRAMES} fps={30} width={1920} height={1080} />
       <Composition id="Pnj1" component={Pnj1Video} durationInFrames={PNJ1_FRAMES} fps={30} width={1920} height={1080} />

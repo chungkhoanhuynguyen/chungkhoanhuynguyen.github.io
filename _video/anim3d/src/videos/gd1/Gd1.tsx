@@ -186,7 +186,7 @@ const PLAN: Plan[] = [
   ] },
   { id: "S12", shots: [
     [0, () => D3(closeR("canhovip", "bohung", "relief", {}, "roomdim"), (t) => <BigText t={t} at={0.6} text="50 TRIỆU = 3 THÁNG LƯƠNG HƯU" col="#5dff9b" y={90} size={90} />)],
-    [2, () => CD(PR("cong_an", (t) => <LocTag t={t} l1="Báo ngay" l2="Công an phường và ngân hàng" />))],
+    [2, () => CD((t) => <Rows t={t} title="Dũng làm ngay" rows={[{ l: "Chụp lại số tài khoản lạ", v: "📸", at: 0.4 }, { l: "Báo công an phường", v: "🚓", at: 1.6, big: true }, { l: "Báo ngân hàng", v: "🏦", at: 2.8 }]} />)],
   ] },
   { id: "S13", shots: [
     [0, () => D3(closeL("canho", "kieu", "sad", { acc: ["phone", "glow"] }, "roomdim"), (t) => <BigText t={t} at={0.4} text="XÓA TỪNG VIDEO CŨ" col="#fff" y={90} size={110} />)],

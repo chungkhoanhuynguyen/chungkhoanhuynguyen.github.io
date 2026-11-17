@@ -140,7 +140,7 @@ const PLAN: Plan[] = [
   { id: "S05", shots: [
     [0, () => CD((t) => <Big2 t={t} items={[{ a: "?", b: "vì sao bãi rác kiếm nhiều tiền", at: 0.2, col: "#ffd23f" }]} />)],
     [1, () => CD((t) => <Big2 t={t} items={[{ a: "📱 ✈ ✕", b: "có thể ngừng mua", at: 0.2, col: "#ff4d5e" }, { a: "🗑 ✓", b: "không ai ngừng vứt rác", at: 2.2, col: "#5dff9b" }]} />)],
-    [2, () => CD(PR("rac_vn", (t) => <BigText t={t} at={0.3} text="XE RÁC VẪN CHẠY MỖI SÁNG" col="#ffd23f" y={90} size={100} />))],
+    [2, () => CD(PR("xe_rac", (t) => <BigText t={t} at={0.3} text="XE RÁC VẪN CHẠY MỖI SÁNG" col="#ffd23f" y={90} size={100} />))],
   ] },
   { id: "S06", shots: [
     [0, () => CD(PR("bai_rac", (t) => <BigText t={t} at={0.3} text="“CỖ MÁY KIẾM TIỀN”" col="#ffd23f" y={90} size={120} />))],
@@ -164,7 +164,7 @@ const PLAN: Plan[] = [
     [1, () => CD((t) => <Big2 t={t} items={[{ a: "✕", b: "không phải cứ mua cổ phiếu ngành rác là giàu", at: 0.2, col: "#ff4d5e" }, { a: "✕", b: "doanh nghiệp đó không hoàn hảo", at: at("S10", 1, 2), col: "#ff4d5e" }]} />)],
   ] },
   { id: "S11", shots: [
-    [0, () => CD(PR("khi_ga", (t) => <LocTag t={t} l1="NHỮNG TRANH CÃI" l2="Chính bài báo cũng nêu" />))],
+    [0, () => CD(PR("bai_rac", (t) => <LocTag t={t} l1="NHỮNG TRANH CÃI" l2="Chính bài báo cũng nêu" />))],
     [1, () => CD((t) => <Big2 t={t} head="Khí thải tại một bãi chôn lấp" src="Ước tính độc lập, theo ProPublica qua VnExpress" items={[{ a: "×2", b: "so với số công ty tự báo cáo", at: 0.3, col: "#ff4d5e" }]} />)],
     [2, () => CD((t) => <Big2 t={t} items={[{ a: "👀", b: "dài hạn vẫn phải theo dõi, không phải mua rồi quên", at: 0.2, col: "#ffd23f" }]} />)],
   ] },
@@ -184,7 +184,7 @@ const PLAN: Plan[] = [
   { id: "S15", shots: [[0, () => CD((t) => <LessonCard t={t} title="Câu 1. Người ta vẫn phải dùng?" items={[{ n: "1", icon: "🔌", head: "Kinh tế tốt hay xấu vẫn cần", body: "điện, nước, rác, thuốc, đồ ăn hằng ngày", at: at("S15", 0, 1) }]} />)]] },
   { id: "S16", shots: [[0, () => CD((t) => <LessonCard t={t} title="Câu 2. Tiền thật về đều đặn?" items={[{ n: "2", icon: "💵", head: "Dòng tiền từ hoạt động kinh doanh", body: "không chỉ lợi nhuận trên giấy, năm này qua năm khác", at: at("S16", 0, 1) }]} />)]] },
   { id: "S17", shots: [
-    [0, () => CD((t) => <LessonCard t={t} title="Câu 3. Có dễ bị cạnh tranh?" items={[{ n: "1", icon: "🗑", head: "Bãi rác: giấy phép, đất, nhiều năm", body: "khó mở thêm", at: at("S17", 0, 2) }]} />)],
+    [0, () => CD((t) => <LessonCard t={t} title="Câu 3. Có dễ bị cạnh tranh?" items={[{ n: ""3", icon: "🗑", head: "Bãi rác: giấy phép, đất, nhiều năm", body: "khó mở thêm", at: at("S17", 0, 2) }]} />)],
     [3, () => CD(PR("tra_sua", (t) => <BigText t={t} at={0.3} text="CẢ CHỤC QUÁN MỘT CON PHỐ" col="#ff4d5e" y={90} size={96} />))],
   ] },
   { id: "S18", shots: [[0, () => CD((t) => <LessonCard t={t} title="Câu 4. Mình giữ được đủ lâu không?" items={[{ n: "1", icon: "💰", head: "Chỉ tiền nhàn rỗi, không vay", body: "", at: at("S18", 0, 2) }, { n: "2", icon: "🧺", head: "Chia vốn nhiều doanh nghiệp", body: "", at: at("S18", 0, 2) + 2 }, { n: "3", icon: "📏", head: "Có kế hoạch nếu mình sai", body: "", at: at("S18", 0, 2) + 3.6 }]} />)]] },

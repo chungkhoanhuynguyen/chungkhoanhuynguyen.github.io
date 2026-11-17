@@ -1,0 +1,691 @@
+{
+ "total": 278.633,
+ "scenes": [
+  {
+   "id": "S01",
+   "a": 0.0,
+   "b": 16.96632,
+   "fa": 0,
+   "fb": 509,
+   "sens": [
+    {
+     "text": "Thật tệ khi khoản đầu tư sinh lời nhất đời mình lại là thứ mình chê là nhàm chán nhất.",
+     "a": 1.26632,
+     "b": 6.06947,
+     "fa": 38,
+     "ns": 219006
+    },
+    {
+     "text": "Một trăm mười bốn triệu đô la.",
+     "a": 6.53368,
+     "b": 8.03895,
+     "fa": 196,
+     "ns": 68656
+    },
+    {
+     "text": "Gần ba mươi năm sau, thành khoảng hai mươi chín tỷ đô.",
+     "a": 8.5,
+     "b": 11.06211,
+     "fa": 255,
+     "ns": 116816
+    },
+    {
+     "text": "Không phải công nghệ, không phải tiền mã hóa.",
+     "a": 11.53368,
+     "b": 13.66526,
+     "fa": 346,
+     "ns": 97219
+    },
+    {
+     "text": "Mà là rác.",
+     "a": 14.13368,
+     "b": 14.68632,
+     "fa": 424,
+     "ns": 25195
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "a": 16.96632,
+   "b": 32.5,
+   "fa": 509,
+   "fb": 975,
+   "sens": [
+    {
+     "text": "Chiến Lăng Nhăng đọc tin này trên điện thoại, cười phá lên: Bill Gates mà đi buôn rác à?",
+     "a": 17.6,
+     "b": 22.02737,
+     "fa": 528,
+     "ns": 201869
+    },
+    {
+     "text": "Dũng Gymmer ngồi bên cạnh, đang uống nước sau buổi tập, chỉ nói một câu: ông ấy không buôn rác, ông ấy mua một cái máy in tiền.",
+     "a": 22.73368,
+     "b": 29.57789,
+     "fa": 682,
+     "ns": 312118
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "a": 32.5,
+   "b": 49.63368,
+   "fa": 975,
+   "fb": 1489,
+   "sens": [
+    {
+     "text": "Để em kể lại từ đầu.",
+     "a": 32.5,
+     "b": 33.75158,
+     "fa": 975,
+     "ns": 57087
+    },
+    {
+     "text": "Theo báo ProPublica và CNN, được VnExpress đăng ngày mười sáu tháng mười một, Bill Gates bỏ một trăm mười bốn triệu đô la mua năm phẩy hai phần trăm cổ phần của Republic Services, công ty vận hành bãi chôn lấp rác lớn thứ hai nước Mỹ.",
+     "a": 34.53368,
+     "b": 48.83789,
+     "fa": 1036,
+     "ns": 652285
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "a": 49.63368,
+   "b": 62.73368,
+   "fa": 1489,
+   "fb": 1882,
+   "sens": [
+    {
+     "text": "Đến giữa tháng mười một năm nay, giá cổ phiếu công ty đã tăng khoảng ba mươi lần.",
+     "a": 49.63368,
+     "b": 53.66526,
+     "fa": 1489,
+     "ns": 183869
+    },
+    {
+     "text": "Vốn hóa hơn bảy mươi bảy tỷ đô la.",
+     "a": 54.13368,
+     "b": 56.06,
+     "fa": 1624,
+     "ns": 87843
+    },
+    {
+     "text": "Phần của Bill Gates trị giá khoảng hai mươi chín tỷ đô, chiếm khoảng một phần năm tài sản của ông.",
+     "a": 56.53368,
+     "b": 61.06947,
+     "fa": 1696,
+     "ns": 206866
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "a": 62.73368,
+   "b": 75.46632,
+   "fa": 1882,
+   "fb": 2264,
+   "sens": [
+    {
+     "text": "Vì sao một bãi rác lại kiếm được nhiều tiền như vậy?",
+     "a": 62.73368,
+     "b": 65.02842,
+     "fa": 1882,
+     "ns": 104656
+    },
+    {
+     "text": "Vì người ta có thể ngừng mua điện thoại mới, ngừng đi du lịch, nhưng không ai ngừng vứt rác.",
+     "a": 65.73368,
+     "b": 69.95684,
+     "fa": 1972,
+     "ns": 192585
+    },
+    {
+     "text": "Kinh tế tốt hay xấu, xe rác vẫn chạy mỗi sáng, và hóa đơn vẫn được trả mỗi tháng.",
+     "a": 70.4,
+     "b": 74.64526,
+     "fa": 2112,
+     "ns": 193565
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "a": 75.46632,
+   "b": 85.76632,
+   "fa": 2264,
+   "fb": 2573,
+   "sens": [
+    {
+     "text": "Một giáo sư ở Texas gọi khoản đầu tư này là một cỗ máy kiếm tiền.",
+     "a": 75.46632,
+     "b": 78.93053,
+     "fa": 2264,
+     "ns": 157966
+    },
+    {
+     "text": "Dòng tiền đều, ít đối thủ, vì chẳng mấy ai được phép mở thêm một bãi rác cạnh nhà mình.",
+     "a": 79.4,
+     "b": 83.68737,
+     "fa": 2382,
+     "ns": 195495
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "a": 85.76632,
+   "b": 101.96632,
+   "fa": 2573,
+   "fb": 3059,
+   "sens": [
+    {
+     "text": "Chiến vẫn chưa phục.",
+     "a": 85.76632,
+     "b": 86.61368,
+     "fa": 2573,
+     "ns": 38631
+    },
+    {
+     "text": "Chiến mở danh mục của mình ra.",
+     "a": 87.4,
+     "b": 88.79368,
+     "fa": 2622,
+     "ns": 63557
+    },
+    {
+     "text": "Năm nay Chiến mua bảy mã, mã nào cũng đang có tin nóng.",
+     "a": 89.26632,
+     "b": 92.27053,
+     "fa": 2678,
+     "ns": 136959
+    },
+    {
+     "text": "Tháng ba lãi hai mươi phần trăm.",
+     "a": 92.73368,
+     "b": 94.12211,
+     "fa": 2782,
+     "ns": 63327
+    },
+    {
+     "text": "Tháng sáu lỗ ba mươi.",
+     "a": 94.56632,
+     "b": 95.56632,
+     "fa": 2837,
+     "ns": 45576
+    },
+    {
+     "text": "Tháng chín gỡ lại được một nửa.",
+     "a": 96.33368,
+     "b": 97.87158,
+     "fa": 2890,
+     "ns": 70124
+    },
+    {
+     "text": "Chiến bảo: tao thà thế còn hơn ngồi chờ ba mươi năm.",
+     "a": 98.33368,
+     "b": 101.15684,
+     "fa": 2950,
+     "ns": 128764
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "a": 101.96632,
+   "b": 121.1,
+   "fa": 3059,
+   "fb": 3633,
+   "sens": [
+    {
+     "text": "Dũng Gymmer không cãi.",
+     "a": 103.66632,
+     "b": 104.88,
+     "fa": 3110,
+     "ns": 55332
+    },
+    {
+     "text": "Dũng mở điện thoại, đưa cho Chiến xem một bức ảnh.",
+     "a": 105.66632,
+     "b": 108.47684,
+     "fa": 3170,
+     "ns": 128139
+    },
+    {
+     "text": "Ảnh Dũng năm hai mươi tuổi, gầy nhom, nặng năm mươi hai cân.",
+     "a": 108.93368,
+     "b": 111.95579,
+     "fa": 3268,
+     "ns": 137830
+    },
+    {
+     "text": "Mười năm, ba buổi một tuần, không bỏ buổi nào.",
+     "a": 112.4,
+     "b": 114.97474,
+     "fa": 3372,
+     "ns": 117404
+    },
+    {
+     "text": "Mày thấy đấy, cơ bắp với tiền giống nhau.",
+     "a": 115.43368,
+     "b": 117.37368,
+     "fa": 3463,
+     "ns": 88502
+    },
+    {
+     "text": "Không ai lớn lên sau một đêm.",
+     "a": 117.83368,
+     "b": 119.22947,
+     "fa": 3535,
+     "ns": 63649
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "a": 121.1,
+   "b": 129.53368,
+   "fa": 3633,
+   "fb": 3886,
+   "sens": [
+    {
+     "text": "Kiều Sociu, vợ Dũng, chen vào: nhưng anh ơi, ba mươi năm thì lâu quá, em già mất rồi.",
+     "a": 121.1,
+     "b": 125.89684,
+     "fa": 3633,
+     "ns": 218721
+    },
+    {
+     "text": "Dũng cười: thế nên mới phải bắt đầu từ hôm nay.",
+     "a": 126.36632,
+     "b": 128.72421,
+     "fa": 3791,
+     "ns": 107483
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "a": 129.53368,
+   "b": 138.6,
+   "fa": 3886,
+   "fb": 4158,
+   "sens": [
+    {
+     "text": "Em muốn nói rõ một điều để anh chị khỏi hiểu lầm.",
+     "a": 129.53368,
+     "b": 131.71895,
+     "fa": 3886,
+     "ns": 99678
+    },
+    {
+     "text": "Câu chuyện này không có nghĩa là cứ mua cổ phiếu ngành rác là giàu.",
+     "a": 132.16632,
+     "b": 135.20105,
+     "fa": 3965,
+     "ns": 138363
+    },
+    {
+     "text": "Và cũng không có nghĩa doanh nghiệp đó hoàn hảo.",
+     "a": 135.66632,
+     "b": 137.79579,
+     "fa": 4070,
+     "ns": 97106
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "a": 138.6,
+   "b": 153.3,
+   "fa": 4158,
+   "fb": 4599,
+   "sens": [
+    {
+     "text": "Chính bài báo cũng nêu những tranh cãi.",
+     "a": 138.6,
+     "b": 140.64211,
+     "fa": 4158,
+     "ns": 93138
+    },
+    {
+     "text": "Một ước tính độc lập cho thấy lượng khí thải ở một bãi chôn lấp của công ty cao gấp đôi con số công ty tự báo cáo.",
+     "a": 141.1,
+     "b": 147.16526,
+     "fa": 4233,
+     "ns": 276583
+    },
+    {
+     "text": "Nhà đầu tư dài hạn cũng phải theo dõi những rủi ro như vậy, không phải mua rồi quên.",
+     "a": 147.63368,
+     "b": 151.43474,
+     "fa": 4429,
+     "ns": 173324
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "a": 153.3,
+   "b": 164.5,
+   "fa": 4599,
+   "fb": 4935,
+   "sens": [
+    {
+     "text": "Cái đáng học ở đây là cách nghĩ.",
+     "a": 153.3,
+     "b": 154.69158,
+     "fa": 4599,
+     "ns": 63473
+    },
+    {
+     "text": "Bill Gates không đoán xem tháng sau cổ phiếu nào sẽ có tin nóng.",
+     "a": 155.16632,
+     "b": 158.02632,
+     "fa": 4655,
+     "ns": 130390
+    },
+    {
+     "text": "Ông hỏi một câu khác: doanh nghiệp này, mười năm nữa, người ta có còn cần đến nó không?",
+     "a": 158.5,
+     "b": 162.85263,
+     "fa": 4755,
+     "ns": 198500
+    }
+   ]
+  },
+  {
+   "id": "S13",
+   "a": 164.5,
+   "b": 174.83368,
+   "fa": 4935,
+   "fb": 5245,
+   "sens": [
+    {
+     "text": "Chiến im lặng một lúc.",
+     "a": 164.5,
+     "b": 165.55158,
+     "fa": 4935,
+     "ns": 47963
+    },
+    {
+     "text": "Rồi Chiến hỏi: thế ở Việt Nam, có cái bãi rác nào như thế không?",
+     "a": 166.33368,
+     "b": 169.94947,
+     "fa": 4990,
+     "ns": 164910
+    },
+    {
+     "text": "Dũng lắc đầu: tao không biết mã nào.",
+     "a": 170.66632,
+     "b": 172.43263,
+     "fa": 5120,
+     "ns": 80522
+    },
+    {
+     "text": "Nhưng tao biết cách tìm.",
+     "a": 172.9,
+     "b": 174.01579,
+     "fa": 5187,
+     "ns": 50880
+    }
+   ]
+  },
+  {
+   "id": "S14",
+   "a": 174.83368,
+   "b": 187.26632,
+   "fa": 5245,
+   "fb": 5618,
+   "sens": [
+    {
+     "text": "Tối hôm đó, cả nhóm ngồi ở quán cà phê.",
+     "a": 174.83368,
+     "b": 177.14947,
+     "fa": 5245,
+     "ns": 105598
+    },
+    {
+     "text": "Chiến hỏi em: Huy ơi, thế làm sao tìm được doanh nghiệp nhàm chán mà tốt?",
+     "a": 177.6,
+     "b": 181.1,
+     "fa": 5328,
+     "ns": 159622
+    },
+    {
+     "text": "Em nói: anh đừng hỏi mã nào đang lên.",
+     "a": 181.8,
+     "b": 184.08105,
+     "fa": 5454,
+     "ns": 104039
+    },
+    {
+     "text": "Hãy hỏi bốn câu.",
+     "a": 184.53368,
+     "b": 185.41684,
+     "fa": 5536,
+     "ns": 40273
+    }
+   ]
+  },
+  {
+   "id": "S15",
+   "a": 187.26632,
+   "b": 196.36632,
+   "fa": 5618,
+   "fb": 5891,
+   "sens": [
+    {
+     "text": "Câu thứ nhất.",
+     "a": 187.26632,
+     "b": 187.83684,
+     "fa": 5618,
+     "ns": 26007
+    },
+    {
+     "text": "Sản phẩm của doanh nghiệp có phải thứ người ta vẫn phải dùng, dù kinh tế tốt hay xấu không?",
+     "a": 188.6,
+     "b": 192.78421,
+     "fa": 5658,
+     "ns": 190797
+    },
+    {
+     "text": "Điện, nước, rác, thuốc, đồ ăn hằng ngày.",
+     "a": 193.5,
+     "b": 195.57053,
+     "fa": 5805,
+     "ns": 94413
+    }
+   ]
+  },
+  {
+   "id": "S16",
+   "a": 196.36632,
+   "b": 208.23368,
+   "fa": 5891,
+   "fb": 6247,
+   "sens": [
+    {
+     "text": "Câu thứ hai.",
+     "a": 196.36632,
+     "b": 197.02632,
+     "fa": 5891,
+     "ns": 30067
+    },
+    {
+     "text": "Doanh nghiệp có thu được tiền thật đều đặn không?",
+     "a": 197.8,
+     "b": 200.04105,
+     "fa": 5934,
+     "ns": 102179
+    },
+    {
+     "text": "Không chỉ lợi nhuận trên giấy, mà là dòng tiền từ hoạt động kinh doanh, năm này qua năm khác.",
+     "a": 200.73368,
+     "b": 205.96316,
+     "fa": 6022,
+     "ns": 238490
+    }
+   ]
+  },
+  {
+   "id": "S17",
+   "a": 208.23368,
+   "b": 221.53368,
+   "fa": 6247,
+   "fb": 6646,
+   "sens": [
+    {
+     "text": "Câu thứ ba.",
+     "a": 208.23368,
+     "b": 209.04737,
+     "fa": 6247,
+     "ns": 37104
+    },
+    {
+     "text": "Có dễ bị người khác cạnh tranh không?",
+     "a": 209.83368,
+     "b": 211.75895,
+     "fa": 6295,
+     "ns": 87801
+    },
+    {
+     "text": "Một bãi rác cần giấy phép, cần đất, cần nhiều năm.",
+     "a": 212.46632,
+     "b": 215.34,
+     "fa": 6374,
+     "ns": 131037
+    },
+    {
+     "text": "Một quán trà sữa thì mở cạnh nhau cả chục quán trong một con phố.",
+     "a": 215.8,
+     "b": 219.24105,
+     "fa": 6474,
+     "ns": 156907
+    }
+   ]
+  },
+  {
+   "id": "S18",
+   "a": 221.53368,
+   "b": 233.3,
+   "fa": 6646,
+   "fb": 6999,
+   "sens": [
+    {
+     "text": "Câu thứ tư, quan trọng nhất.",
+     "a": 221.53368,
+     "b": 222.86316,
+     "fa": 6646,
+     "ns": 60645
+    },
+    {
+     "text": "Mình có giữ được đủ lâu không?",
+     "a": 223.63368,
+     "b": 225.24421,
+     "fa": 6709,
+     "ns": 73463
+    },
+    {
+     "text": "Nghĩa là chỉ dùng tiền nhàn rỗi, không vay, chia vốn ra nhiều doanh nghiệp, và có kế hoạch nếu mình sai.",
+     "a": 225.93368,
+     "b": 231.64632,
+     "fa": 6778,
+     "ns": 260512
+    }
+   ]
+  },
+  {
+   "id": "S19",
+   "a": 233.3,
+   "b": 249.26632,
+   "fa": 6999,
+   "fb": 7478,
+   "sens": [
+    {
+     "text": "Ba tháng sau, Chiến vẫn chưa trở thành Bill Gates.",
+     "a": 233.93368,
+     "b": 236.65053,
+     "fa": 7018,
+     "ns": 123908
+    },
+    {
+     "text": "Nhưng danh mục của Chiến từ bảy mã nóng, còn lại ba doanh nghiệp mà Chiến hiểu họ kiếm tiền thế nào.",
+     "a": 237.1,
+     "b": 242.47895,
+     "fa": 7113,
+     "ns": 245269
+    },
+    {
+     "text": "Và lần đầu tiên, Chiến tắt thông báo giá cổ phiếu trên điện thoại.",
+     "a": 242.93368,
+     "b": 246.16105,
+     "fa": 7288,
+     "ns": 147190
+    }
+   ]
+  },
+  {
+   "id": "S20",
+   "a": 249.26632,
+   "b": 261.36632,
+   "fa": 7478,
+   "fb": 7841,
+   "sens": [
+    {
+     "text": "Dũng Gymmer thì vẫn ba buổi một tuần, như mười năm nay.",
+     "a": 249.26632,
+     "b": 252.37684,
+     "fa": 7478,
+     "ns": 141830
+    },
+    {
+     "text": "Kiều Sociu mở một tài khoản riêng, mỗi tháng bỏ vào một khoản nhỏ.",
+     "a": 252.83368,
+     "b": 256.59684,
+     "fa": 7585,
+     "ns": 171615
+    },
+    {
+     "text": "Cô đặt tên tài khoản là: bãi rác của em.",
+     "a": 257.06632,
+     "b": 259.52,
+     "fa": 7712,
+     "ns": 111870
+    }
+   ]
+  },
+  {
+   "id": "S21",
+   "a": 261.36632,
+   "b": 278.63368,
+   "fa": 7841,
+   "fb": 8359,
+   "sens": [
+    {
+     "text": "Còn anh chị, trong danh mục của mình, có doanh nghiệp nào nhàm chán mà anh chị sẵn sàng giữ mười năm không?",
+     "a": 262.63368,
+     "b": 267.98,
+     "fa": 7879,
+     "ns": 243813
+    },
+    {
+     "text": "Bình luận cho em biết nhé.",
+     "a": 268.66632,
+     "b": 269.68211,
+     "fa": 8060,
+     "ns": 46321
+    },
+    {
+     "text": "Ai muốn học cách xây danh mục dài hạn và quản trị rủi ro, cứ vào web Chứng Khoán Huy Nguyễn.",
+     "a": 270.46632,
+     "b": 275.30947,
+     "fa": 8114,
+     "ns": 220844
+    }
+   ]
+  }
+ ]
+}

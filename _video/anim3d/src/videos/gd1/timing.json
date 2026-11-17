@@ -1,0 +1,719 @@
+{
+ "total": 289.967,
+ "scenes": [
+  {
+   "id": "S01",
+   "a": 0.0,
+   "b": 22.23368,
+   "fa": 0,
+   "fb": 667,
+   "sens": [
+    {
+     "text": "Thật tệ khi khuôn mặt và giọng nói của con mình lại trở thành công cụ để lừa chính bố mẹ mình.",
+     "a": 1.26632,
+     "b": 6.52737,
+     "fa": 38,
+     "ns": 239892
+    },
+    {
+     "text": "Mười giờ tối, điện thoại của ông Hùng rung lên.",
+     "a": 7.0,
+     "b": 9.22105,
+     "fa": 210,
+     "ns": 101257
+    },
+    {
+     "text": "Cuộc gọi video.",
+     "a": 9.66632,
+     "b": 10.54,
+     "fa": 290,
+     "ns": 39808
+    },
+    {
+     "text": "Trên màn hình là con gái ông, Kiều Sociu, mặt đầy nước mắt: bố ơi, con đâm xe, người ta giữ con ở đây, bố chuyển gấp cho con năm mươi triệu.",
+     "a": 11.3,
+     "b": 19.93895,
+     "fa": 339,
+     "ns": 393942
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "a": 22.23368,
+   "b": 37.26632,
+   "fa": 667,
+   "fb": 1118,
+   "sens": [
+    {
+     "text": "Hình hơi nhòe, tiếng hơi rè, cuộc gọi tắt sau mười giây.",
+     "a": 22.86632,
+     "b": 25.70526,
+     "fa": 686,
+     "ns": 129425
+    },
+    {
+     "text": "Rồi một tin nhắn hiện lên, kèm số tài khoản của một người lạ.",
+     "a": 26.16632,
+     "b": 29.22211,
+     "fa": 785,
+     "ns": 139324
+    },
+    {
+     "text": "Ông Hùng run tay mở ứng dụng ngân hàng.",
+     "a": 29.66632,
+     "b": 31.50842,
+     "fa": 890,
+     "ns": 83998
+    },
+    {
+     "text": "Bốn phút sau, mọi chuyện đã có thể khác hẳn.",
+     "a": 31.96632,
+     "b": 34.36947,
+     "fa": 959,
+     "ns": 109574
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "a": 37.26632,
+   "b": 54.26632,
+   "fa": 1118,
+   "fb": 1628,
+   "sens": [
+    {
+     "text": "Để em kể lại từ đầu.",
+     "a": 37.26632,
+     "b": 38.51895,
+     "fa": 1118,
+     "ns": 57087
+    },
+    {
+     "text": "Kiều Sociu, ba mươi mốt tuổi, cả khu gọi là Kiều Sociu vì cô quen nửa thành phố.",
+     "a": 39.3,
+     "b": 44.05263,
+     "fa": 1179,
+     "ns": 216731
+    },
+    {
+     "text": "Mỗi ngày Kiều đăng ba video: đi cà phê, đi tập, quay cảnh hai vợ chồng đùa nhau.",
+     "a": 44.5,
+     "b": 49.07579,
+     "fa": 1335,
+     "ns": 208677
+    },
+    {
+     "text": "Mặt Kiều, giọng Kiều, tên bố mẹ Kiều, quê Kiều, tất cả đều có trên mạng.",
+     "a": 49.53368,
+     "b": 53.46211,
+     "fa": 1486,
+     "ns": 179144
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "a": 54.26632,
+   "b": 66.9,
+   "fa": 1628,
+   "fb": 2007,
+   "sens": [
+    {
+     "text": "Chồng cô, Dũng Gymmer, huấn luyện viên phòng tập, ít nói, cẩn thận.",
+     "a": 54.26632,
+     "b": 57.81474,
+     "fa": 1628,
+     "ns": 161781
+    },
+    {
+     "text": "Có lần Dũng nhắc: em đăng ít thôi, kẻ gian nó lấy giọng em đi lừa đấy.",
+     "a": 58.26632,
+     "b": 62.07895,
+     "fa": 1748,
+     "ns": 173848
+    },
+    {
+     "text": "Kiều cười: anh lại lo xa rồi, ai rảnh mà làm thế.",
+     "a": 62.53368,
+     "b": 65.26,
+     "fa": 1876,
+     "ns": 124315
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "a": 66.9,
+   "b": 84.63368,
+   "fa": 2007,
+   "fb": 2539,
+   "sens": [
+    {
+     "text": "Có người rảnh, anh chị ạ.",
+     "a": 66.9,
+     "b": 68.46316,
+     "fa": 2007,
+     "ns": 71298
+    },
+    {
+     "text": "Theo số liệu của Bộ Công an, chỉ trong mười một tháng năm hai nghìn không trăm hai mươi lăm, thiệt hại do lừa đảo trên mạng ở Việt Nam ước tính hơn sáu nghìn tỷ đồng.",
+     "a": 69.23368,
+     "b": 76.86947,
+     "fa": 2077,
+     "ns": 348214
+    },
+    {
+     "text": "Và các chuyên gia an ninh mạng cảnh báo: năm nay, kẻ gian sẽ dùng giả mặt, giả giọng bằng trí tuệ nhân tạo nhiều hơn.",
+     "a": 77.33368,
+     "b": 83.84316,
+     "fa": 2320,
+     "ns": 296869
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "a": 84.63368,
+   "b": 102.46632,
+   "fa": 2539,
+   "fb": 3074,
+   "sens": [
+    {
+     "text": "Làm thế nào mà họ có được mặt và giọng của Kiều?",
+     "a": 84.63368,
+     "b": 86.96737,
+     "fa": 2539,
+     "ns": 106436
+    },
+    {
+     "text": "Rất đơn giản.",
+     "a": 87.66632,
+     "b": 88.46316,
+     "fa": 2630,
+     "ns": 36325
+    },
+    {
+     "text": "Chỉ cần vài chục giây video có tiếng nói, phần mềm có thể bắt chước giọng.",
+     "a": 89.23368,
+     "b": 93.36632,
+     "fa": 2677,
+     "ns": 188488
+    },
+    {
+     "text": "Vài tấm ảnh rõ mặt, phần mềm có thể ghép vào một cuộc gọi video ngắn, hình hơi mờ, đủ để người đang hoảng loạn tin là thật.",
+     "a": 93.83368,
+     "b": 100.40211,
+     "fa": 2815,
+     "ns": 299560
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "a": 102.46632,
+   "b": 111.16632,
+   "fa": 3074,
+   "fb": 3335,
+   "sens": [
+    {
+     "text": "Quay lại với ông Hùng.",
+     "a": 102.46632,
+     "b": 103.35368,
+     "fa": 3074,
+     "ns": 40441
+    },
+    {
+     "text": "Ông gõ số tiền, năm mươi triệu.",
+     "a": 104.13368,
+     "b": 105.68632,
+     "fa": 3124,
+     "ns": 70830
+    },
+    {
+     "text": "Ông bấm chuyển.",
+     "a": 106.13368,
+     "b": 106.92842,
+     "fa": 3184,
+     "ns": 36260
+    },
+    {
+     "text": "Ứng dụng hiện lên một dòng: vui lòng xác thực khuôn mặt.",
+     "a": 107.7,
+     "b": 110.37263,
+     "fa": 3231,
+     "ns": 121871
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "a": 111.16632,
+   "b": 128.06632,
+   "fa": 3335,
+   "fb": 3842,
+   "sens": [
+    {
+     "text": "Từ tháng bảy năm hai nghìn không trăm hai mươi bốn, chuyển khoản trên mười triệu đồng một lần, hoặc tổng trên hai mươi triệu một ngày, phải xác thực sinh trắc học.",
+     "a": 112.86632,
+     "b": 120.74842,
+     "fa": 3386,
+     "ns": 359417
+    },
+    {
+     "text": "Chính bước này làm ông Hùng khựng lại.",
+     "a": 121.2,
+     "b": 122.84842,
+     "fa": 3636,
+     "ns": 75148
+    },
+    {
+     "text": "Ông đưa mặt lên camera, rồi tay dừng giữa chừng.",
+     "a": 123.3,
+     "b": 126.19579,
+     "fa": 3699,
+     "ns": 132041
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "a": 128.06632,
+   "b": 139.63368,
+   "fa": 3842,
+   "fb": 4189,
+   "sens": [
+    {
+     "text": "Ông nhớ ra một chuyện.",
+     "a": 128.06632,
+     "b": 129.10316,
+     "fa": 3842,
+     "ns": 47259
+    },
+    {
+     "text": "Hồi Tết, Dũng Gymmer có dặn cả nhà một câu.",
+     "a": 129.86632,
+     "b": 132.58842,
+     "fa": 3896,
+     "ns": 124120
+    },
+    {
+     "text": "Ai gọi xin tiền gấp, dù là ai, thì cúp máy, gọi lại số cũ.",
+     "a": 133.03368,
+     "b": 136.67368,
+     "fa": 3991,
+     "ns": 165992
+    },
+    {
+     "text": "Và hỏi câu mật khẩu của nhà mình.",
+     "a": 137.13368,
+     "b": 138.84,
+     "fa": 4114,
+     "ns": 77816
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "a": 139.63368,
+   "b": 151.9,
+   "fa": 4189,
+   "fb": 4557,
+   "sens": [
+    {
+     "text": "Ông gọi cho Dũng.",
+     "a": 139.63368,
+     "b": 140.52316,
+     "fa": 4189,
+     "ns": 40587
+    },
+    {
+     "text": "Dũng ơi, Kiều đâm xe à?",
+     "a": 141.3,
+     "b": 142.81684,
+     "fa": 4239,
+     "ns": 69168
+    },
+    {
+     "text": "Đầu dây bên kia, tiếng tạ va vào giá sắt.",
+     "a": 143.53368,
+     "b": 146.11053,
+     "fa": 4306,
+     "ns": 117521
+    },
+    {
+     "text": "Dạ không bố ơi, Kiều đang ngồi cạnh con ở phòng tập.",
+     "a": 146.56632,
+     "b": 149.32316,
+     "fa": 4397,
+     "ns": 125699
+    },
+    {
+     "text": "Để con đưa máy cho Kiều.",
+     "a": 149.76632,
+     "b": 151.08632,
+     "fa": 4493,
+     "ns": 60190
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "a": 151.9,
+   "b": 165.06632,
+   "fa": 4557,
+   "fb": 4952,
+   "sens": [
+    {
+     "text": "Bố ơi, con đây.",
+     "a": 151.9,
+     "b": 152.80526,
+     "fa": 4557,
+     "ns": 41298
+    },
+    {
+     "text": "Ông Hùng không trả lời ngay.",
+     "a": 153.56632,
+     "b": 154.89263,
+     "fa": 4607,
+     "ns": 60471
+    },
+    {
+     "text": "Ông hỏi: con mèo nhà mình hồi bé tên gì?",
+     "a": 155.66632,
+     "b": 158.17263,
+     "fa": 4670,
+     "ns": 114286
+    },
+    {
+     "text": "Kiều bật cười giữa hai hàng nước mắt: Bánh Bao, bố ơi.",
+     "a": 158.86632,
+     "b": 161.63158,
+     "fa": 4766,
+     "ns": 126082
+    },
+    {
+     "text": "Con mèo tên Bánh Bao.",
+     "a": 162.1,
+     "b": 163.19789,
+     "fa": 4863,
+     "ns": 50053
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "a": 165.06632,
+   "b": 176.8,
+   "fa": 4952,
+   "fb": 5304,
+   "sens": [
+    {
+     "text": "Ông Hùng ngồi phịch xuống ghế.",
+     "a": 165.06632,
+     "b": 166.27895,
+     "fa": 4952,
+     "ns": 55261
+    },
+    {
+     "text": "Năm mươi triệu, là ba tháng lương hưu của ông, vẫn còn nguyên trong tài khoản.",
+     "a": 167.06632,
+     "b": 170.40316,
+     "fa": 5012,
+     "ns": 152125
+    },
+    {
+     "text": "Còn số tài khoản lạ kia, Dũng chụp lại, gửi ngay cho công an phường và ngân hàng.",
+     "a": 170.86632,
+     "b": 175.14526,
+     "fa": 5126,
+     "ns": 195093
+    }
+   ]
+  },
+  {
+   "id": "S13",
+   "a": 176.8,
+   "b": 186.86632,
+   "fa": 5304,
+   "fb": 5606,
+   "sens": [
+    {
+     "text": "Tối đó, Kiều ngồi xóa từng video cũ.",
+     "a": 176.8,
+     "b": 178.79684,
+     "fa": 5304,
+     "ns": 91040
+    },
+    {
+     "text": "Không phải vì xấu hổ.",
+     "a": 179.26632,
+     "b": 180.42105,
+     "fa": 5378,
+     "ns": 52657
+    },
+    {
+     "text": "Mà vì cô nhận ra, mỗi video cô đăng là một mảnh ghép để người khác dựng lên một Kiều giả.",
+     "a": 181.2,
+     "b": 186.07474,
+     "fa": 5436,
+     "ns": 222300
+    }
+   ]
+  },
+  {
+   "id": "S14",
+   "a": 186.86632,
+   "b": 202.06632,
+   "fa": 5606,
+   "fb": 6062,
+   "sens": [
+    {
+     "text": "Anh chị đừng nghĩ chuyện này chỉ có ở cuộc gọi xin tiền.",
+     "a": 186.86632,
+     "b": 189.69579,
+     "fa": 5606,
+     "ns": 129009
+    },
+    {
+     "text": "Trong đầu tư cũng vậy.",
+     "a": 190.16632,
+     "b": 191.21474,
+     "fa": 5705,
+     "ns": 47804
+    },
+    {
+     "text": "Video giả một chuyên gia nổi tiếng mời vào nhóm kín, cam kết lợi nhuận mỗi tháng mười phần trăm.",
+     "a": 192.0,
+     "b": 197.09684,
+     "fa": 5760,
+     "ns": 232406
+    },
+    {
+     "text": "Giọng thật, mặt thật, chỉ có lời mời là giả.",
+     "a": 197.56632,
+     "b": 200.21158,
+     "fa": 5927,
+     "ns": 120621
+    }
+   ]
+  },
+  {
+   "id": "S15",
+   "a": 202.06632,
+   "b": 211.03368,
+   "fa": 6062,
+   "fb": 6331,
+   "sens": [
+    {
+     "text": "Dũng Gymmer nói một câu em rất thích: tập gym thì không có đường tắt, kiếm tiền cũng vậy.",
+     "a": 202.06632,
+     "b": 206.58105,
+     "fa": 6062,
+     "ns": 205839
+    },
+    {
+     "text": "Ai hứa đường tắt, người đó đang đi đường tắt vào túi mình.",
+     "a": 207.03368,
+     "b": 210.21895,
+     "fa": 6211,
+     "ns": 145270
+    }
+   ]
+  },
+  {
+   "id": "S16",
+   "a": 211.03368,
+   "b": 222.6,
+   "fa": 6331,
+   "fb": 6678,
+   "sens": [
+    {
+     "text": "Bài học thứ nhất.",
+     "a": 211.03368,
+     "b": 211.75789,
+     "fa": 6331,
+     "ns": 33020
+    },
+    {
+     "text": "Mọi cuộc gọi xin tiền gấp đều phải được kiểm tra lại bằng một kênh khác.",
+     "a": 212.53368,
+     "b": 216.19263,
+     "fa": 6376,
+     "ns": 166883
+    },
+    {
+     "text": "Cúp máy, gọi lại số cũ đã lưu, không gọi lại số vừa gọi đến.",
+     "a": 216.66632,
+     "b": 220.33579,
+     "fa": 6500,
+     "ns": 167330
+    }
+   ]
+  },
+  {
+   "id": "S17",
+   "a": 222.6,
+   "b": 235.53368,
+   "fa": 6678,
+   "fb": 7066,
+   "sens": [
+    {
+     "text": "Bài học thứ hai.",
+     "a": 222.6,
+     "b": 223.53053,
+     "fa": 6678,
+     "ns": 42452
+    },
+    {
+     "text": "Đặt một câu mật khẩu cho cả nhà.",
+     "a": 224.3,
+     "b": 226.05579,
+     "fa": 6729,
+     "ns": 80061
+    },
+    {
+     "text": "Một câu hỏi chỉ người trong nhà mới biết, không bao giờ đăng lên mạng.",
+     "a": 226.5,
+     "b": 229.55263,
+     "fa": 6795,
+     "ns": 139214
+    },
+    {
+     "text": "Tên con mèo, món ăn hồi bé, chuyện chỉ nhà mình nhớ.",
+     "a": 230.0,
+     "b": 233.24316,
+     "fa": 6900,
+     "ns": 147898
+    }
+   ]
+  },
+  {
+   "id": "S18",
+   "a": 235.53368,
+   "b": 248.23368,
+   "fa": 7066,
+   "fb": 7447,
+   "sens": [
+    {
+     "text": "Bài học thứ ba.",
+     "a": 235.53368,
+     "b": 236.33789,
+     "fa": 7066,
+     "ns": 36666
+    },
+    {
+     "text": "Bớt đăng giọng nói và khuôn mặt rõ nét kèm thông tin gia đình.",
+     "a": 237.1,
+     "b": 240.88105,
+     "fa": 7113,
+     "ns": 172428
+    },
+    {
+     "text": "Đặt chế độ riêng tư cho những gì không cần công khai.",
+     "a": 241.33368,
+     "b": 243.89474,
+     "fa": 7240,
+     "ns": 116786
+    },
+    {
+     "text": "Càng ít mảnh ghép, kẻ gian càng khó dựng.",
+     "a": 244.36632,
+     "b": 246.58316,
+     "fa": 7331,
+     "ns": 101062
+    }
+   ]
+  },
+  {
+   "id": "S19",
+   "a": 248.23368,
+   "b": 262.73368,
+   "fa": 7447,
+   "fb": 7882,
+   "sens": [
+    {
+     "text": "Bài học thứ tư.",
+     "a": 248.86632,
+     "b": 249.77158,
+     "fa": 7466,
+     "ns": 41262
+    },
+    {
+     "text": "Với bố mẹ lớn tuổi, đặt hạn mức chuyển khoản thấp trong ứng dụng, và dặn trước: ngân hàng, công an, hay con cái thật, không ai bắt chuyển tiền trong vài phút.",
+     "a": 250.53368,
+     "b": 259.61368,
+     "fa": 7516,
+     "ns": 414083
+    }
+   ]
+  },
+  {
+   "id": "S20",
+   "a": 262.73368,
+   "b": 275.83368,
+   "fa": 7882,
+   "fb": 8275,
+   "sens": [
+    {
+     "text": "Còn ông Hùng?",
+     "a": 262.73368,
+     "b": 263.36737,
+     "fa": 7882,
+     "ns": 28927
+    },
+    {
+     "text": "Tối nào ông cũng xem video của con gái.",
+     "a": 264.06632,
+     "b": 266.30526,
+     "fa": 7922,
+     "ns": 102092
+    },
+    {
+     "text": "Bây giờ ông xem ít hơn, gọi điện nhiều hơn.",
+     "a": 266.76632,
+     "b": 269.29158,
+     "fa": 8003,
+     "ns": 115142
+    },
+    {
+     "text": "Và con mèo Bánh Bao, lần đầu tiên, trở thành bí mật quan trọng nhất của cả nhà.",
+     "a": 269.76632,
+     "b": 273.98737,
+     "fa": 8093,
+     "ns": 192466
+    }
+   ]
+  },
+  {
+   "id": "S21",
+   "a": 275.83368,
+   "b": 289.96632,
+   "fa": 8275,
+   "fb": 8699,
+   "sens": [
+    {
+     "text": "Còn anh chị, nhà mình đã có câu mật khẩu chưa?",
+     "a": 277.1,
+     "b": 279.75474,
+     "fa": 8313,
+     "ns": 121074
+    },
+    {
+     "text": "Bình luận cho em biết nhé.",
+     "a": 280.46632,
+     "b": 281.48211,
+     "fa": 8414,
+     "ns": 46321
+    },
+    {
+     "text": "Ai muốn học cách giữ tiền và quản trị rủi ro, cứ vào web Chứng Khoán Huy Nguyễn.",
+     "a": 282.26632,
+     "b": 286.62316,
+     "fa": 8468,
+     "ns": 198642
+    }
+   ]
+  }
+ ]
+}
