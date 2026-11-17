@@ -177,14 +177,14 @@ const Shot: React.FC<{ t: number; img: string; cap?: string }> = ({ t, img, cap 
     {cap ? <div style={{ position: "absolute", left: 70, top: 56, fontFamily: F, fontSize: 56, fontWeight: 900, color: "#111", background: "#f5c518", padding: "8px 26px", borderRadius: 14, opacity: a }}>{cap}</div> : null}
   </AbsoluteFill>; };
 const SH = (img: string, cap?: string) => CD((t) => <Shot t={t} img={img} cap={cap} />);
-const MT: [string, string, string[]] = ["O MẬN", "#3ddc84", ["Mua ngân hàng lúc giá rẻ", "Cất đó, về bán bún", "Ngủ lúc 9 giờ tối"]];
+const MT: [string, string, string[]] = ["CÔ MẬN", "#3ddc84", ["Mua ngân hàng lúc giá rẻ", "Cất đó, về bán bún", "Ngủ lúc 9 giờ tối"]];
 const TU: [string, string, string[]] = ["CHÚ TƯ", "#ff6a6a", ["3 ứng dụng · 5 nhóm chát", "7–8 lệnh mỗi tuần", "Xem biểu đồ đến 1 giờ sáng"]];
 const SUM16: [string, string][] = [["😵", "Giao dịch dày + tâm lý căng = càng đánh càng thua"], ["🏦", "ROE cao mà giá < giá trị sổ sách: vùng để ý"], ["⏳", "Kỷ luật tỉ trọng + đủ thời gian 3–5 năm"]];
 const RI: [string, string][] = [["🏛️", "Định giá ngân hàng: mô hình thu nhập thặng dư"], ["📐", "P/B hợp lý = (ROE − g) / (r − g)"], ["📈", "g: tăng trưởng dài hạn"], ["💰", "r: chi phí vốn chủ sở hữu"]];
 const _UNUSED13: [string, string][] = [["⚖️", "Thông tin lệch: người biết ít trả giá"], ["🔍", "Tín hiệu thật · biên an toàn · tránh người giấu"], ["🏠", "Trong nhà: làm cho nói thật dễ dàng"]];
 const PLAN: Plan[] = [
   { id: "S01", shots: [
-    [0, () => PH("ltc16/trang_tien", (t) => <Label t={t} at={0.4} l1="MỘT CON KIỆT Ở HUẾ" l2="2 người hàng xóm · cùng bắt đầu năm 2023" col="#f5c518" />)],
+    [0, () => PH("ltc16/trang_tien", (t) => <Label t={t} at={0.4} l1="MỘT CON HẺM Ở HUẾ" l2="2 người hàng xóm · cùng bắt đầu năm 2023" col="#f5c518" />)],
     [1, () => PH("ltc16/song_huong", (t) => <Label t={t} at={0.4} l1="3 NĂM SAU: TÀI KHOẢN GẤP ĐÔI" l2="Tối nào cũng ngủ lúc 9 giờ" col="#3ddc84" />)],
     [2, () => PH("luong/dem_hn", (t) => <Label t={t} at={0.4} l1="7–8 LỆNH MỖI TUẦN" l2="Mắt thâm quầng · tài khoản vẫn đỏ" col="#ff6a6a" />)],
   ] },
@@ -195,11 +195,11 @@ const PLAN: Plan[] = [
   ] },
   { id: "S03", shots: [
     [0, () => FQ("linh5", "smile", ["“Quê ngoại em", "ở Huế…”"], "#7b1fa2")],
-    [1, () => PH("ltc16/dong_ba", (t) => <Place t={t} l1="HUẾ · GẦN CHỢ ĐÔNG BA" l2="O Mận bán bún bò · chú Tư làm thợ điện" />)],
+    [1, () => PH("ltc16/dong_ba", (t) => <Place t={t} l1="HUẾ · GẦN CHỢ ĐÔNG BA" l2="Cô Mận bán bún bò · chú Tư làm thợ điện" />)],
     [2, () => PH("ltc16/bun_bo", (t) => <Label t={t} at={0.4} l1="NĂM 2023" l2="Cả hai cùng mở tài khoản chứng khoán" col="#f5c518" />)],
   ] },
   { id: "S04", shots: [
-    [0, () => PH("ltc16/bun_bo", (t) => <Label t={t} at={0.3} l1="“O KHÔNG RÀNH CHI MÔ”" l2="Mua ngân hàng lúc giá rẻ, cất đó" col="#3ddc84" />, -1)],
+    [0, () => PH("ltc16/bun_bo", (t) => <Label t={t} at={0.3} l1="“CÔ KHÔNG RÀNH GÌ ĐÂU”" l2="Mua ngân hàng lúc giá rẻ, cất đó" col="#3ddc84" />, -1)],
     [1, () => PH("ltc16/dai_noi", (t) => <Label t={t} at={0.4} l1="THÁNG 8/2023: MUA MSB" l2="Theo lệnh tích sản dài hạn" col="#3ddc84" />)],
   ] },
   { id: "S05", shots: [
@@ -208,18 +208,18 @@ const PLAN: Plan[] = [
     [2, () => PH("luong/dem_hn", (t) => <Label t={t} at={0.4} l1="SÁNG BẢNG ĐIỆN · TỐI BIỂU ĐỒ" l2="đến 1 giờ sáng" col="#ff9f3a" />)],
   ] },
   { id: "S06", shots: [
-    [0, () => PH("ltc9/san_hcm", (t) => <Label t={t} at={0.4} l1="TUẦN LÃI: KHOE KHẮP KIỆT" col="#3ddc84" />)],
+    [0, () => PH("ltc9/san_hcm", (t) => <Label t={t} at={0.4} l1="TUẦN LÃI: KHOE KHẮP HẺM" col="#3ddc84" />)],
     [1, () => CD((t) => <List t={t} title="VÒNG XOÁY CỦA CHÚ TƯ" items={[["❌", "Một lệnh sai"], ["😬", "Gồng"], ["🔁", "Gỡ"], ["⚡", "Đánh nhanh hơn để lấy lại"]]} cur={4} bg="luong/dem_hn" />)],
     [2, () => PH("luong/dt_nganhang", (t) => <Label t={t} at={0.4} l1="ĐI LÀM MẮT DÁN VÀO ĐIỆN THOẠI" col="#ff9f3a" />)],
-    [3, () => PH("ltc16/trang_tien", (t) => <Label t={t} at={0.4} l1="“TIỀN CHƯA THẤY MÔ" l2="MÀ NGƯỜI THÌ RẠC RỒI”" col="#ff6a6a" />, -1)],
+    [3, () => PH("ltc16/trang_tien", (t) => <Label t={t} at={0.4} l1="“TIỀN CHƯA THẤY ĐÂU" l2="MÀ NGƯỜI THÌ RẠC RỒI”" col="#ff6a6a" />, -1)],
   ] },
   { id: "S07", shots: [
-    [0, () => PH("ltc16/dai_noi", (t) => <Label t={t} at={0.4} l1="MSB CỦA O MẬN: +124,4%" l2="Mua 22/8/2023 · ghi công khai trên bảng tích sản" col="#3ddc84" />)],
+    [0, () => PH("ltc16/dai_noi", (t) => <Label t={t} at={0.4} l1="MSB CỦA CÔ MẬN: +124,4%" l2="Mua 22/8/2023 · ghi công khai trên bảng tích sản" col="#3ddc84" />)],
     [1, () => PH("luong/dem_hn", (t) => <Label t={t} at={0.4} l1="CHÚ TƯ: HƠN 1.000 LỆNH" l2="Tài khoản vẫn âm · đêm nào cũng trằn trọc" col="#ff6a6a" />)],
   ] },
   { id: "S08", shots: [
-    [0, () => FQ("tronghau", "shock", ["“Răng rứa?”"], "#7b3fbf")],
-    [1, () => FQ("tronghau", "dazed", ["“Chú Tư chăm hơn mà thua o Mận,", "là cấy chi rứa thầy?”"], "#7b3fbf")],
+    [0, () => FQ("tronghau", "shock", ["“Sao lạ vậy?”"], "#7b3fbf")],
+    [1, () => FQ("tronghau", "dazed", ["“Chú Tư chăm hơn mà thua cô Mận,", "là vì sao hả thầy?”"], "#7b3fbf")],
   ] },
   { id: "S09", shots: [
     [0, () => TQ("smile", ["Không phải chú Tư kém"])],
@@ -228,11 +228,11 @@ const PLAN: Plan[] = [
     [4, () => TQ("stern", ["Càng đánh", "càng lỗ"], "#c62828")],
   ] },
   { id: "S10", shots: [
-    [0, () => PH("ltc16/bun_bo", (t) => <Label t={t} at={0.4} l1="O MẬN: VÀI QUYẾT ĐỊNH MỖI NĂM" col="#3ddc84" />)],
+    [0, () => PH("ltc16/bun_bo", (t) => <Label t={t} at={0.4} l1="CÔ MẬN: VÀI QUYẾT ĐỊNH MỖI NĂM" col="#3ddc84" />)],
     [1, () => PH("ltc16/song_huong", (t) => <Label t={t} at={0.4} l1="BÁN BÚN · NGỦ NGON" l2="Để doanh nghiệp làm việc thay mình" col="#3ddc84" />, -1)],
   ] },
   { id: "S11", shots: [
-    [0, () => FQ("tronghau", "grin", ["“Thầy chỉ tui mần chứng khoán", "mần răng cho nác no vầy?”"], "#7b3fbf")],
+    [0, () => FQ("tronghau", "grin", ["“Thầy chỉ em làm chứng khoán", "sao cho no lâu đi ạ?”"], "#7b3fbf")],
     [1, () => D3(lop(WIDE(), [thay("laugh"), ...allStu("tronghau", "grin", "laugh")]), (t) => <Note t={t} lines={["Cả lớp cười ồ"]} />)],
   ] },
   { id: "S12", shots: [
@@ -273,7 +273,7 @@ const PLAN: Plan[] = [
   ] },
   { id: "S20", shots: [
     [0, () => FQ("linh5", "smile", ["Linh gọi video", "về Huế"], "#7b1fa2")],
-    [1, () => PH("ltc16/bun_bo", (t) => <Label t={t} at={0.4} l1="“O CHỈ BIẾT MUA RẺ RỒI CHỜ”" col="#3ddc84" />)],
+    [1, () => PH("ltc16/bun_bo", (t) => <Label t={t} at={0.4} l1="“CÔ CHỈ BIẾT MUA RẺ RỒI CHỜ”" col="#3ddc84" />)],
     [2, () => PH("luong/dem_hn", (t) => <Label t={t} at={0.4} l1="NHÀ CHÚ TƯ: ĐÈN VẪN SÁNG" l2="Màn hình vẫn nhấp nháy xanh đỏ" col="#ff6a6a" />)],
   ] },
   { id: "S21", shots: [

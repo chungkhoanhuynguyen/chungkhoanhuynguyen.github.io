@@ -4,7 +4,7 @@
  "scenes": [
   {
    "id": "S01",
-   "say": "Cùng một con kiệt nhỏ ở Huế, hai người hàng xóm cùng bắt đầu chơi chứng khoán năm hai nghìn không trăm hai mươi ba. Ba năm sau, một người tài khoản tăng hơn gấp đôi, tối nào cũng ngủ lúc chín giờ. Người kia mỗi tuần đặt bảy, tám lệnh, mắt thâm quầng, mà tài khoản vẫn đỏ."
+   "say": "Cùng một con hẻm nhỏ ở Huế, hai người hàng xóm cùng bắt đầu chơi chứng khoán năm hai nghìn không trăm hai mươi ba. Ba năm sau, một người tài khoản tăng hơn gấp đôi, tối nào cũng ngủ lúc chín giờ. Người kia mỗi tuần đặt bảy, tám lệnh, mắt thâm quầng, mà tài khoản vẫn đỏ."
   },
   {
    "id": "S02",
@@ -12,11 +12,11 @@
   },
   {
    "id": "S03",
-   "say": "Rồi Linh kể chuyện quê ngoại ở Huế. Trong một con kiệt gần chợ Đông Ba, o Mận bán bún bò đầu kiệt, chú Tư nhà đối diện làm thợ điện. Năm hai nghìn không trăm hai mươi ba, cả hai cùng mở tài khoản chứng khoán."
+   "say": "Rồi Linh kể chuyện quê ngoại ở Huế. Trong một con hẻm gần chợ Đông Ba, cô Mận bán bún bò đầu hẻm, chú Tư nhà đối diện làm thợ điện. Năm hai nghìn không trăm hai mươi ba, cả hai cùng mở tài khoản chứng khoán."
   },
   {
    "id": "S04",
-   "say": "O Mận nói giọng Huế nhẹ tênh: o không rành chi mô, o chỉ mua cổ phiếu ngân hàng lúc giá rẻ, rồi cất đó, có chi mô mà lo. Tháng tám năm đó, o mua MSB theo một lệnh tích sản dài hạn, rồi quay về với nồi bún."
+   "say": "Cô Mận nói nhẹ tênh: cô không rành gì đâu, cô chỉ mua cổ phiếu ngân hàng lúc giá rẻ, rồi cất đó, có gì mà lo. Tháng tám năm đó, cô mua MSB theo một lệnh tích sản dài hạn, rồi quay về với nồi bún."
   },
   {
    "id": "S05",
@@ -24,15 +24,15 @@
   },
   {
    "id": "S06",
-   "say": "Có tuần chú lãi mấy lệnh liền, khoe khắp kiệt. Nhưng rồi một lệnh sai, chú gồng, rồi gỡ, rồi đánh nhanh hơn để lấy lại. Đi làm mà mắt cứ dán vào điện thoại. Vợ chú than: ông ơi, tiền chưa thấy mô mà người thì rạc rồi."
+   "say": "Có tuần chú lãi mấy lệnh liền, khoe khắp hẻm. Nhưng rồi một lệnh sai, chú gồng, rồi gỡ, rồi đánh nhanh hơn để lấy lại. Đi làm mà mắt cứ dán vào điện thoại. Vợ chú than: ông ơi, tiền chưa thấy đâu mà người thì rạc rồi."
   },
   {
    "id": "S07",
-   "say": "Ba năm sau, tức là bây giờ, lệnh MSB của o Mận đang lãi một trăm hai mươi bốn phẩy bốn phần trăm, con số ghi công khai trên bảng tích sản. Còn chú Tư, sau hơn một nghìn lệnh, tài khoản vẫn âm, và đêm nào cũng trằn trọc."
+   "say": "Ba năm sau, tức là bây giờ, lệnh MSB của cô Mận đang lãi một trăm hai mươi bốn phẩy bốn phần trăm, con số ghi công khai trên bảng tích sản. Còn chú Tư, sau hơn một nghìn lệnh, tài khoản vẫn âm, và đêm nào cũng trằn trọc."
   },
   {
    "id": "S08",
-   "say": "Trọng Hậu, quê Nghệ An, nghe xong vỗ đùi: răng rứa? Chú Tư chăm hơn mà lại thua o Mận, là cấy chi rứa thầy?"
+   "say": "Trọng Hậu nghe xong vỗ đùi: sao lạ vậy? Chú Tư chăm hơn mà lại thua cô Mận, là vì sao hả thầy?"
   },
   {
    "id": "S09",
@@ -40,11 +40,11 @@
   },
   {
    "id": "S10",
-   "say": "Còn o Mận, mỗi năm chỉ quyết định vài lần. Thời gian còn lại, o bán bún, ngủ ngon, và để doanh nghiệp làm việc thay mình."
+   "say": "Còn cô Mận, mỗi năm chỉ quyết định vài lần. Thời gian còn lại, cô bán bún, ngủ ngon, và để doanh nghiệp làm việc thay mình."
   },
   {
    "id": "S11",
-   "say": "Trọng Hậu gãi đầu: rứa thì thầy chỉ tui mần chứng khoán mần răng cho nác no vầy? Cả lớp cười ồ."
+   "say": "Trọng Hậu gãi đầu: vậy thầy chỉ em làm chứng khoán sao cho no lâu đi ạ? Cả lớp cười ồ."
   },
   {
    "id": "S12",
@@ -80,7 +80,7 @@
   },
   {
    "id": "S20",
-   "say": "Cuối buổi, Linh gọi video về Huế. O Mận đang dọn hàng bún, cười: o có biết chi mô, o chỉ biết mua rẻ rồi chờ. Phía bên kia kiệt, đèn nhà chú Tư vẫn sáng, màn hình điện thoại vẫn nhấp nháy xanh đỏ."
+   "say": "Cuối buổi, Linh gọi video về Huế. Cô Mận đang dọn hàng bún, cười: cô có biết gì đâu, cô chỉ biết mua rẻ rồi chờ. Phía bên kia hẻm, đèn nhà chú Tư vẫn sáng, màn hình điện thoại vẫn nhấp nháy xanh đỏ."
   },
   {
    "id": "S21",
