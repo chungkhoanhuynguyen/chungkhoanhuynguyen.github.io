@@ -105,7 +105,7 @@ const closeT = (e: Expr, o: PO = {}, light: Shot3D["light"] = "roomdim") => S("r
 const thumb = (e: Expr, o: PO = {}) => S("room", "roomdim", [[0.75, 1.35, 2.7], [LX, 1.05, RZ], 36], [[0.65, 1.32, 2.25], [LX, 1.05, RZ], 32], [toan(e, { acc: ["phone", "glow"], ...o })], { ...RM, shake: 0.2 });
 // tiệm vàng chỗ Hằng (phố ban ngày) + hàng người bán lại nhẫn
 const qx = (i: number) => GOLD_X + 1.4 + i * 1.15;
-const queue = (n = 20, e: Expr = "worried"): Cast[] => Array.from({ length: n }, (_, i) => C("c" + i, [qx(i), 0.15, 5.25 + (i % 2) * 0.25], P(i % 3 === 1 ? "shock" : e, { mode: "stand", acc: i % 2 ? ["box"] : ["phone"], phase: i * 0.37, side: -1 })));
+const queue = (n = 20, e: Expr = "worried"): Cast[] => Array.from({ length: n }, (_, i) => C("c" + i, [qx(i), 0.15, 5.25 + (i % 2) * 0.25], P(i % 3 === 1 ? "shock" : e, { mode: "stand", acc: i % 2 ? ["box"] : ["phone"], phase: i * 0.37, side: 1 })));
 const shopDay = (cast: Cast[], from: [V, V, number], to: [V, V, number], x: Partial<Shot3D> = {}) => S("streetday", "day", from, to, cast, x);
 const qWide: [[V, V, number], [V, V, number]] = [[[qx(14), 9, -4], [qx(8), 1.4, 5.3], 50], [[qx(7), 3.5, 0], [qx(6), 1.3, 5.3], 46]];
 const qPan: [[V, V, number], [V, V, number]] = [[[GOLD_X - 1, 1.6, 1.8], [GOLD_X + 3, 1.3, 5.4], 46], [[qx(16), 1.6, 1.8], [qx(20), 1.3, 5.4], 46]];
@@ -115,7 +115,7 @@ const shopIn = (te: Expr, he: Expr, ce: Expr = "smile", x: Partial<Shot3D> = {})
 
 // quán trà đá đầu hẻm (phố ban ngày, cạnh tiệm vàng): +x bên TRÁI màn
 const TT: V = [GOLD_X + 6.3, 0.15, 5.45], TH: V = [GOLD_X + 7.45, 0.15, 5.3];
-const tea = (te: Expr, he: Expr, ot: PO = {}, oh: PO = {}): Cast[] => [C("trang", TT, P(te, { side: 1, ...ot })), C("huy", TH, P(he, { side: -1, acc: ["cup"], ...oh })), ...queue(3, "neutral").map((c, i) => ({ ...c, p: [GOLD_X - 2 - i * 1.2, 0.15, 5.4] as V }))];
+const tea = (te: Expr, he: Expr, ot: PO = {}, oh: PO = {}): Cast[] => [C("trang", TT, P(te, { side: -1, ...ot })), C("huy", TH, P(he, { side: 1, acc: ["cup"], ...oh })), ...queue(3, "neutral").map((c, i) => ({ ...c, p: [GOLD_X - 2 - i * 1.2, 0.15, 5.4] as V }))];
 const teaW: [[V, V, number], [V, V, number]] = [[[GOLD_X + 9.4, 1.5, 2.6], [GOLD_X + 6.9, 1.15, 5.5], 44], [[GOLD_X + 8.8, 1.45, 3.1], [GOLD_X + 6.9, 1.15, 5.5], 40]];
 const teaT: [[V, V, number], [V, V, number]] = [[[GOLD_X + 5.6, 1.4, 3.4], [GOLD_X + 6.3, 1.3, 5.45], 36], [[GOLD_X + 5.8, 1.4, 3.8], [GOLD_X + 6.3, 1.32, 5.45], 32]];
 const teaH: [[V, V, number], [V, V, number]] = [[[GOLD_X + 8.2, 1.4, 3.4], [GOLD_X + 7.45, 1.3, 5.3], 36], [[GOLD_X + 8.0, 1.4, 3.8], [GOLD_X + 7.45, 1.32, 5.3], 32]];
@@ -124,22 +124,22 @@ const bt = (e: Expr, o: PO = {}) => C("mehung", [HX - 0.55, 0.15, 5.3], P(e, { s
 const guest = (a: string, e: Expr, o: PO = {}) => C(a, [HX + 0.55, 0.15, 5.3], P(e, { side: 1, ...o }));
 const hx2 = two(HX), hxT = (x: number): [[V, V, number], [V, V, number]] => [[[x - 0.3, 1.45, 3.4], [x, 1.3, 5.3], 34], [[x - 0.2, 1.42, 3.8], [x, 1.32, 5.3], 30]];
 // Hằng trong tiệm (cạnh quầy)
-const hangShop = (e: Expr, o: PO = {}) => C("trang", HQ, P(e, { side: 1, ...o }));
+const hangShop = (e: Expr, o: PO = {}) => C("trang", HQ, P(e, { side: -1, ...o }));
 const hqT: [[V, V, number], [V, V, number]] = [[[GOLD_X + 0.9, 1.45, 3.4], [GOLD_X + 0.3, 1.3, 5.1], 34], [[GOLD_X + 0.7, 1.42, 3.8], [GOLD_X + 0.3, 1.32, 5.1], 30]];
 const night = (cast: Cast[], cam: [[V, V, number], [V, V, number]], x: Partial<Shot3D> = {}) => S("street", "night", cam[0], cam[1], cast, x);
 
 const D_ = (e: Expr, o: PO = {}) => C("quang", [LX, 0, RZ], P(e, { side: 1, mode: "stand", ...o }));
 const T_ = (e: Expr, o: PO = {}) => C("trang", [NX, 0, RZ], P(e, { side: -1, mode: "stand", ...o }));
 const doi = (cast: Cast[], from: [V, V, number], to: [V, V, number], x: Partial<Shot3D> = {}) => S("street", "night", from, to, cast, x);
-const trangRun = (e: Expr = "nervous") => C("trang", [GOLD_X + 8, 0.15, 4.6], walk(e, { side: -1, acc: ["box"] }), [GOLD_X + 1.5, 0.15, 4.6]);
-const walkers = (n: number, z = 1.6): Cast[] => Array.from({ length: n }, (_, i) => C("c" + (40 + i), [i % 2 ? 2.6 : -2.2, 0, z + i * 0.35], (t: number) => ({ ...P(i % 3 ? "neutral" : "smile", { acc: i % 2 ? ["box"] : ["phone"] })(t), mode: "stroll", phase: (t * 1.4 + i * 0.3) % 1, side: i % 2 ? -1 : 1 }), [i % 2 ? -2.4 : 2.8, 0, z + i * 0.35]));
+const trangRun = (e: Expr = "nervous") => C("trang", [GOLD_X + 8, 0.15, 4.6], walk(e, { side: 1, acc: ["box"] }), [GOLD_X + 1.5, 0.15, 4.6]);
+const walkers = (n: number, z = 1.6): Cast[] => Array.from({ length: n }, (_, i) => C("c" + (40 + i), [i % 2 ? 2.6 : -2.2, 0, z + i * 0.35], (t: number) => ({ ...P(i % 3 ? "neutral" : "smile", { acc: i % 2 ? ["box"] : ["phone"] })(t), mode: "stroll", phase: (t * 1.4 + i * 0.3) % 1, side: i % 2 ? 1 : -1 }), [i % 2 ? -2.4 : 2.8, 0, z + i * 0.35]));
 const MC = (bg: string, cast: Cast[], cam: [[V, V, number], [V, V, number]] = pcam(0.4)) => PH(bg, [0.5, 0.6], [...cast, ...walkers(3)], cam);
-const trangAt = (e: Expr, o: PO = {}, x = 0.4) => C("trang", [x, 0, 0.7], P(e, { side: 1, mode: "stand", ...o }));
+const trangAt = (e: Expr, o: PO = {}, x = 0.4) => C("trang", [x, 0, 0.7], P(e, { side: -1, mode: "stand", ...o }));
 const PLAN: Plan[] = [
   { id: "S01", shots: [
     [0, () => D3(doi([trangRun(), ...queue(4, "neutral")], [[GOLD_X + 10, 2.2, 1.4], [GOLD_X + 5, 1.2, 5], 46], [[GOLD_X + 6, 1.6, 2.2], [GOLD_X + 2, 1.2, 5], 42], { rain: true, ease: "lin" }), (t) => <BigText t={t} at={0.4} text="THẬT TỆ KHI…" col="#ffd23f" y={90} size={120} />)],
-    [1, () => D3(doi([C("trang", [GOLD_X + 1.4, 0.15, 4.8], P("nervous", { side: 1, acc: ["box", "sweat"] })), hangShop("neutral")].slice(0, 1).concat([C("clerk", HQ, P("neutral", { side: 1 }))]), [[GOLD_X + 3.2, 1.5, 2.4], [GOLD_X + 1.0, 1.3, 5.0], 40], [[GOLD_X + 2.8, 1.45, 2.9], [GOLD_X + 1.0, 1.3, 5.0], 36], { rain: true }), (t) => <><ClockTag t={t} text="22:00 · 10/2022" /><LocTag t={t} l1="MÓNG CÁI · QUẢNG NINH" l2="Tiệm đổi tiền thứ ba trong đêm" /></>)],
-    [3, () => D3(doi([C("trang", [GOLD_X + 1.4, 0.15, 4.8], P("shock", { side: 1, acc: ["box"] })), C("clerk", HQ, P("stern", { side: 1, wave: 1 }))], [[GOLD_X + 1.9, 1.45, 3.4], [GOLD_X + 0.6, 1.3, 5.0], 34], [[GOLD_X + 1.8, 1.42, 3.8], [GOLD_X + 0.6, 1.32, 5.0], 30], { rain: true }), (t) => <>{BL(1060, 110, "Hết đô rồi chị ơi! Mai quay lại, giá lại khác.", 0.2, "r")(t)}</>)],
+    [1, () => D3(doi([C("trang", [GOLD_X + 1.4, 0.15, 4.8], P("nervous", { side: 1, acc: ["box", "sweat"] })), hangShop("neutral")].slice(0, 1).concat([C("clerk", HQ, P("neutral", { side: -1 }))]), [[GOLD_X + 3.2, 1.5, 2.4], [GOLD_X + 1.0, 1.3, 5.0], 40], [[GOLD_X + 2.8, 1.45, 2.9], [GOLD_X + 1.0, 1.3, 5.0], 36], { rain: true }), (t) => <><ClockTag t={t} text="22:00 · 10/2022" /><LocTag t={t} l1="MÓNG CÁI · QUẢNG NINH" l2="Tiệm đổi tiền thứ ba trong đêm" /></>)],
+    [3, () => D3(doi([C("trang", [GOLD_X + 1.4, 0.15, 4.8], P("shock", { side: 1, acc: ["box"] })), C("clerk", HQ, P("stern", { side: -1, wave: 1 }))], [[GOLD_X + 1.9, 1.45, 3.4], [GOLD_X + 0.6, 1.3, 5.0], 34], [[GOLD_X + 1.8, 1.42, 3.8], [GOLD_X + 0.6, 1.32, 5.0], 30], { rain: true }), (t) => <>{BL(1060, 110, "Hết đô rồi chị ơi! Mai quay lại, giá lại khác.", 0.2, "r")(t)}</>)],
   ] },
   { id: "S02", shots: [
     [0, () => D3(S("room", "roomdim", [[0.6, 1.3, 2.2], [LX, 1.0, RZ], 34], [[0.6, 1.28, 1.9], [LX, 1.0, RZ], 30], [D_("shock", { acc: ["phone", "glow", "sweat"] })], RM), (t) => <LocTag t={t} l1="CÙNG LÚC · HÀ NỘI" l2="Đức Đô La" />)],
@@ -149,7 +149,7 @@ const PLAN: Plan[] = [
   { id: "S03", shots: [
     [0, () => CD(PR("mc_toancanh", (t) => <LocTag t={t} l1="MÓNG CÁI · QUẢNG NINH" l2="Thành phố cửa khẩu, nơi địa đầu Tổ quốc" />))],
     [1, () => D3(MC("mc_cho", [trangAt("grin", { acc: ["box"] })]), (t) => <><BigText t={t} at={0.3} text="TRANG TRÂU" col="#ffd23f" y={240} size={120} /><LocTag t={t} l1="CHỢ TRUNG TÂM MÓNG CÁI" l2="34 tuổi · 1m47 · 10 năm buôn hàng biên giới" /></>)],
-    [2, () => D3(MC("mc_bacluan", [C("trang", [-1.2, 0, 0.9], walk("laugh", { side: 1, acc: ["box"] }), [1.6, 0, 0.9])], pcam(0.3)), (t) => <><LocTag t={t} l1="CẦU BẮC LUÂN II" l2="Ngày nào cũng chở hàng qua biên giới" />{BL(1060, 300, "Trang ơi, một mình bốc cả xe à?", 0.6, "r")(t)}</>)],
+    [2, () => D3(MC("mc_bacluan", [C("trang", [-1.2, 0, 0.9], walk("laugh", { side: -1, acc: ["box"] }), [1.6, 0, 0.9])], pcam(0.3)), (t) => <><LocTag t={t} l1="CẦU BẮC LUÂN II" l2="Ngày nào cũng chở hàng qua biên giới" />{BL(1060, 300, "Trang ơi, một mình bốc cả xe à?", 0.6, "r")(t)}</>)],
     [3, () => D3(MC("mc_cuakhau", [trangAt("neutral", { acc: ["paper"] })]), (t) => <><LocTag t={t} l1="CỬA KHẨU MÓNG CÁI" />{BL(1060, 110, "Lô này thanh toán 40.000 đô la.", 0.4, "r")(t)}</>)],
   ] },
   { id: "S04", shots: [
@@ -160,7 +160,7 @@ const PLAN: Plan[] = [
   { id: "S05", shots: [
     [0, () => CD((t) => <Big2 t={t} head="Đầu năm 2022" src="VN-Index đầu năm 2022 lập đỉnh 1.528,6 điểm – Người Quan Sát" items={[{ a: "~1.500", b: "điểm chứng khoán", at: 0.4, col: "#5dff9b" }]} />)],
     [1, () => D3(S("room", "room", ...roomTwo2, [D_("laugh", { acc: ["phone"] }), T_("laugh")], RM), (t) => <>{BL(120, 110, "Năm nay anh mua nhà cho mẹ!", 0.2)(t)}</>)],
-    [2, () => D3(MC("mc_pho", [trangAt("laugh", { acc: ["box"] }), C("c50", [1.3, 0, 0.8], P("smile", { side: -1, mode: "stand", acc: ["phone"] }))]), (t) => <LocTag t={t} l1="PHỐ MÓNG CÁI" l2="Hàng kín cả tháng" />)],
+    [2, () => D3(MC("mc_pho", [trangAt("laugh", { acc: ["box"] }), C("c50", [1.3, 0, 0.8], P("smile", { side: 1, mode: "stand", acc: ["phone"] }))]), (t) => <LocTag t={t} l1="PHỐ MÓNG CÁI" l2="Hàng kín cả tháng" />)],
   ] },
   { id: "S06", shots: [
     [0, () => CD(PR("eccles", (t) => <LocTag t={t} l1="WASHINGTON · THÁNG 3/2022" l2="Cục Dự trữ Liên bang Mỹ (Fed)" />))],
@@ -181,7 +181,7 @@ const PLAN: Plan[] = [
   ] },
   { id: "S10", shots: [
     [0, () => D3(MC("mc_cho", [trangAt("worried", { acc: ["paper"] })]), (t) => <BigText t={t} at={0.4} text="4–5% = TIỀN LỜI CẢ LÔ" col="#ff4d5e" y={90} size={100} />)],
-    [1, () => D3(shopDay([hangShop("sad"), C("c1", [GOLD_X + 1.6, 0.15, 4.6], P("stern", { side: -1, wave: 1 }))], ...hqT), (t) => <>{BL(120, 110, "Tăng giá à? Thôi chị để tôi lấy chỗ khác.", 0.2)(t)}</>)],
+    [1, () => D3(shopDay([hangShop("sad"), C("c1", [GOLD_X + 1.6, 0.15, 4.6], P("stern", { side: 1, wave: 1 }))], ...hqT), (t) => <>{BL(120, 110, "Tăng giá à? Thôi chị để tôi lấy chỗ khác.", 0.2)(t)}</>)],
     [2, () => D3(S("room", "roomdim", [[1.3, 1.35, 2.3], [NX, 1.05, RZ], 34], [[1.3, 1.32, 2.0], [NX, 1.05, RZ], 30], [T_("sad", { acc: ["paper"] })], RM), (t) => <BigText t={t} at={0.3} text="BÁN HẾT HÀNG VẪN LỖ" col="#ff4d5e" y={90} size={110} />)],
   ] },
   { id: "S11", shots: [
@@ -196,7 +196,7 @@ const PLAN: Plan[] = [
   ] },
   { id: "S13", shots: [
     [0, () => D3(S("room", "roomdim", [[1.3, 1.35, 2.3], [NX, 1.05, RZ], 34], [[1.25, 1.32, 1.8], [NX, 1.05, RZ], 26], [T_("nervous", { acc: ["phone", "glow"] })], RM), (t) => <BigText t={t} at={0.3} text="SAI LẦM CỦA TRANG" col="#ff4d5e" y={90} size={110} />)],
-    [1, () => D3(MC("dh_pho", [trangAt("nervous", { acc: ["box"] }), C("c51", [1.3, 0, 0.8], P("grin", { side: -1, mode: "stand", acc: ["phone"], wave: 1 }))]), (t) => <><LocTag t={t} l1="ĐÔNG HƯNG · BÊN KIA CẦU" />{BL(1060, 110, "Đô còn lên nữa! Ai giữ đô người ấy thắng!", 0.2, "r")(t)}</>)],
+    [1, () => D3(MC("dh_pho", [trangAt("nervous", { acc: ["box"] }), C("c51", [1.3, 0, 0.8], P("grin", { side: 1, mode: "stand", acc: ["phone"], wave: 1 }))]), (t) => <><LocTag t={t} l1="ĐÔNG HƯNG · BÊN KIA CẦU" />{BL(1060, 110, "Đô còn lên nữa! Ai giữ đô người ấy thắng!", 0.2, "r")(t)}</>)],
     [2, () => D3(doi([trangRun("worried"), ...queue(4, "neutral")], [[GOLD_X + 10, 2.2, 1.4], [GOLD_X + 5, 1.2, 5], 46], [[GOLD_X + 6, 1.6, 2.2], [GOLD_X + 2, 1.2, 5], 42], { rain: true, ease: "lin" }), (t) => <BigText t={t} at={0.4} text="MUA ĐÔ Ở GIÁ CAO NHẤT NĂM" col="#ff4d5e" y={90} size={96} />)],
   ] },
   { id: "S14", shots: [
@@ -223,7 +223,7 @@ const PLAN: Plan[] = [
     [1, () => D3(S("room", "room", [[-0.6, 1.5, 2.4], [-0.3, 1.1, 0.6], 40], [[-0.5, 1.45, 2.0], [-0.3, 1.1, 0.6], 34], [C("cuong", [-0.3, 0, 0.6], P("laugh", { side: 1, acc: ["phone", "glow"], wave: 1 }))], RM), (t) => <>{BL(1060, 110, "Vay ký quỹ gấp đôi mà bắt đáy đi!", 0.2, "r")(t)}<LocTag t={t} l1="BÌNH BẮT ĐÁY" /></>)],
     [2, () => D3(S("room", "room", ...roomTwo2, [D_("nervous", { acc: ["phone"] }), T_("stern", { acc: ["paper"], wave: 1 })], RM), (t) => <BigText t={t} at={rel("S19", 3, sc("S19").sens[2].a)} text="TỜ GIẤY CÓ SỢI DÂY" col="#ffd23f" y={90} size={100} />)],
   ] },
-  { id: "S20", shots: [[0, () => D3(S("streetday", "day", ...teaH, [C("huy", TH, P("smile", { side: -1, acc: ["cup"] }))]), (t) => <LocTag t={t} l1="HUY NGUYỄN" l2="4 điều rút ra" />)], [1, () => D3(S("streetday", "day", ...teaW, tea("neutral", "smile", {}, { wave: 1 })))]] },
+  { id: "S20", shots: [[0, () => D3(S("streetday", "day", ...teaH, [C("huy", TH, P("smile", { side: 1, acc: ["cup"] }))]), (t) => <LocTag t={t} l1="HUY NGUYỄN" l2="4 điều rút ra" />)], [1, () => D3(S("streetday", "day", ...teaW, tea("neutral", "smile", {}, { wave: 1 })))]] },
   { id: "S21", shots: [[0, () => CD((t) => <LessonCard t={t} title="1. Nhìn lãi suất Mỹ trước khi nhìn mã" items={[{ n: "1", icon: "🇺🇸", head: "Mỹ đang tăng lãi suất?", body: "tiền có xu hướng rút khỏi thị trường như Việt Nam", at: at("S21", 0, 1) }]} />)]] },
   { id: "S22", shots: [[0, () => CD((t) => <LessonCard t={t} title="2. Không vay ký quỹ khi dây đang bị kéo" items={[{ n: "2", icon: "⚠", head: "Thị trường giảm 20%", body: "tài khoản vay ký quỹ có thể mất gần hết", at: at("S22", 0, 1) }]} />)], [1, () => D3(closeT("sad", { acc: ["phone"] }))]] },
   { id: "S23", shots: [[0, () => CD((t) => <LessonCard t={t} title="3. Chốt tỷ giá qua ngân hàng" items={[{ n: "3", icon: "🚫", head: "Không mua đô ở kênh không chính thức", body: "rủi ro pháp lý, thường mua đúng đỉnh", at: at("S23", 0, 1) }, { n: "✓", icon: "🏦", head: "Hợp đồng mua ngoại tệ kỳ hạn", body: "chốt trước tỷ giá cho lô hàng", at: at("S23", 0, 2) }]} />)]] },

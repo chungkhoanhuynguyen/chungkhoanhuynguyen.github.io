@@ -105,7 +105,7 @@ const closeT = (e: Expr, o: PO = {}, light: Shot3D["light"] = "roomdim") => S("r
 const thumb = (e: Expr, o: PO = {}) => S("room", "roomdim", [[0.75, 1.35, 2.7], [LX, 1.05, RZ], 36], [[0.65, 1.32, 2.25], [LX, 1.05, RZ], 32], [toan(e, { acc: ["phone", "glow"], ...o })], { ...RM, shake: 0.2 });
 // tiệm vàng chỗ Hằng (phố ban ngày) + hàng người bán lại nhẫn
 const qx = (i: number) => GOLD_X + 1.4 + i * 1.15;
-const queue = (n = 20, e: Expr = "worried"): Cast[] => Array.from({ length: n }, (_, i) => C("c" + i, [qx(i), 0.15, 5.25 + (i % 2) * 0.25], P(i % 3 === 1 ? "shock" : e, { mode: "stand", acc: i % 2 ? ["box"] : ["phone"], phase: i * 0.37, side: -1 })));
+const queue = (n = 20, e: Expr = "worried"): Cast[] => Array.from({ length: n }, (_, i) => C("c" + i, [qx(i), 0.15, 5.25 + (i % 2) * 0.25], P(i % 3 === 1 ? "shock" : e, { mode: "stand", acc: i % 2 ? ["box"] : ["phone"], phase: i * 0.37, side: 1 })));
 const shopDay = (cast: Cast[], from: [V, V, number], to: [V, V, number], x: Partial<Shot3D> = {}) => S("streetday", "day", from, to, cast, x);
 const qWide: [[V, V, number], [V, V, number]] = [[[qx(14), 9, -4], [qx(8), 1.4, 5.3], 50], [[qx(7), 3.5, 0], [qx(6), 1.3, 5.3], 46]];
 const qPan: [[V, V, number], [V, V, number]] = [[[GOLD_X - 1, 1.6, 1.8], [GOLD_X + 3, 1.3, 5.4], 46], [[qx(16), 1.6, 1.8], [qx(20), 1.3, 5.4], 46]];
@@ -115,7 +115,7 @@ const shopIn = (te: Expr, he: Expr, ce: Expr = "smile", x: Partial<Shot3D> = {})
 
 // quán trà đá đầu hẻm (phố ban ngày, cạnh tiệm vàng): +x bên TRÁI màn
 const TT: V = [GOLD_X + 6.3, 0.15, 5.45], TH: V = [GOLD_X + 7.45, 0.15, 5.3];
-const tea = (te: Expr, he: Expr, ot: PO = {}, oh: PO = {}): Cast[] => [C("toanbop", TT, P(te, { side: 1, ...ot })), C("huy", TH, P(he, { side: -1, acc: ["cup"], ...oh })), ...queue(3, "neutral").map((c, i) => ({ ...c, p: [GOLD_X - 2 - i * 1.2, 0.15, 5.4] as V }))];
+const tea = (te: Expr, he: Expr, ot: PO = {}, oh: PO = {}): Cast[] => [C("toanbop", TT, P(te, { side: -1, ...ot })), C("huy", TH, P(he, { side: 1, acc: ["cup"], ...oh })), ...queue(3, "neutral").map((c, i) => ({ ...c, p: [GOLD_X - 2 - i * 1.2, 0.15, 5.4] as V }))];
 const teaW: [[V, V, number], [V, V, number]] = [[[GOLD_X + 9.4, 1.5, 2.6], [GOLD_X + 6.9, 1.15, 5.5], 44], [[GOLD_X + 8.8, 1.45, 3.1], [GOLD_X + 6.9, 1.15, 5.5], 40]];
 const teaT: [[V, V, number], [V, V, number]] = [[[GOLD_X + 5.6, 1.4, 3.4], [GOLD_X + 6.3, 1.3, 5.45], 36], [[GOLD_X + 5.8, 1.4, 3.8], [GOLD_X + 6.3, 1.32, 5.45], 32]];
 const teaH: [[V, V, number], [V, V, number]] = [[[GOLD_X + 8.2, 1.4, 3.4], [GOLD_X + 7.45, 1.3, 5.3], 36], [[GOLD_X + 8.0, 1.4, 3.8], [GOLD_X + 7.45, 1.32, 5.3], 32]];
@@ -124,7 +124,7 @@ const bt = (e: Expr, o: PO = {}) => C("mehung", [HX - 0.55, 0.15, 5.3], P(e, { s
 const guest = (a: string, e: Expr, o: PO = {}) => C(a, [HX + 0.55, 0.15, 5.3], P(e, { side: 1, ...o }));
 const hx2 = two(HX), hxT = (x: number): [[V, V, number], [V, V, number]] => [[[x - 0.3, 1.45, 3.4], [x, 1.3, 5.3], 34], [[x - 0.2, 1.42, 3.8], [x, 1.32, 5.3], 30]];
 // Hằng trong tiệm (cạnh quầy)
-const hangShop = (e: Expr, o: PO = {}) => C("nv", HQ, P(e, { side: 1, ...o }));
+const hangShop = (e: Expr, o: PO = {}) => C("nv", HQ, P(e, { side: -1, ...o }));
 const hqT: [[V, V, number], [V, V, number]] = [[[GOLD_X + 0.9, 1.45, 3.4], [GOLD_X + 0.3, 1.3, 5.1], 34], [[GOLD_X + 0.7, 1.42, 3.8], [GOLD_X + 0.3, 1.32, 5.1], 30]];
 const night = (cast: Cast[], cam: [[V, V, number], [V, V, number]], x: Partial<Shot3D> = {}) => S("street", "night", cam[0], cam[1], cast, x);
 
@@ -137,7 +137,7 @@ const PLAN: Plan[] = [
     [5, () => D3(S("room", "roomdim", [[0.65, 1.32, 2.25], [LX, 1.05, RZ], 32], [[0.5, 1.25, 1.5], [LX, 1.1, RZ], 22], [toan("shock", { acc: ["phone", "glow", "sweat"], anim: true })], { ...RM, shake: 0.4 }))],
   ] },
   { id: "S02", shots: [[0, () => D3(S("room", "roomdim", [[0.55, 1.26, 1.6], [LX, 1.05, RZ], 26], [[2.2, 2.2, 3.4], [LX, 1.0, RZ], 50], [toan("nervous", { acc: ["phone", "glow"] })], { ...RM, ease: "out" }), (t) => <BigText t={t} at={0.1} text="KHOAN ĐÃ…" col="#fff" y={100} size={120} />)],
-    [1, () => D3(S("streetday", "day", [[HX + 12, 6, -2], [HX + 2, 1.2, 5.3], 50], [[HX + 4, 2.2, 1.5], [HX, 1.2, 5.3], 44], [C("toanbop", [HX + 5, 0.15, 5.0], walk("grin", { side: -1 }), [HX + 1.5, 0.15, 5.0]), ...runners(3, HX + 8, HX - 4, 4.4)], { ease: "sm" }), (t) => <LocTag t={t} l1="8 THÁNG TRƯỚC" l2="Một con hẻm ở Phú Nhuận, Sài Gòn" />)]] },
+    [1, () => D3(S("streetday", "day", [[HX + 12, 6, -2], [HX + 2, 1.2, 5.3], 50], [[HX + 4, 2.2, 1.5], [HX, 1.2, 5.3], 44], [C("toanbop", [HX + 5, 0.15, 5.0], walk("grin", { side: 1 }), [HX + 1.5, 0.15, 5.0]), ...runners(3, HX + 8, HX - 4, 4.4)], { ease: "sm" }), (t) => <LocTag t={t} l1="8 THÁNG TRƯỚC" l2="Một con hẻm ở Phú Nhuận, Sài Gòn" />)]] },
   { id: "S03", shots: [
     [0, () => D3(S("streetday", "day", [[HX + 1.2, 1.45, 3.2], [HX + 0.55, 1.25, 5.3], 36], [[HX + 1.0, 1.42, 3.7], [HX + 0.55, 1.28, 5.3], 32], [guest("toanbop", "grin", { acc: ["box"] })]), (t) => <><BigText t={t} at={0.3} text="TOÀN BỚP" col="#ffd23f" y={170} size={120} /><LocTag t={t} l1="31 tuổi · thợ điện" /></>)],
     [1, () => D3(S("streetday", "day", ...hx2, [guest("toanbop", "stern", { wave: 1 }), C("bohung", [HX - 0.55, 0.15, 5.3], P("worried", { side: -1 }))]), (t) => <>{BL(1060, 110, "Láo nháo anh cắt điện cả khu!", 0.2, "r")(t)}</>)],
@@ -272,12 +272,12 @@ const PLAN: Plan[] = [
     [3, () => D3(S("streetday", "day", ...hxT(HX - 0.55), [bt("stern", { wave: 1 }), guest("toanbop", "sad")]), (t) => <>{BL(1060, 110, "Cái sai không nằm ở viên đá.", 0.2, "r")(t)}</>)],
     [4, () => D3(S("streetday", "day", ...hx2, [bt("stern"), guest("toanbop", "cry")]), (t) => <BigText t={t} at={0.8} text="SỐNG BẰNG LÒNG TIN CỦA NGƯỜI KHÁC" col="#ffd23f" y={90} size={80} />)],
   ] },
-  { id: "S23", shots: [[0, () => D3(S("streetday", "day", ...teaH, [C("huy", TH, P("smile", { side: -1, acc: ["cup"] }))]), (t) => <LocTag t={t} l1="HUY NGUYỄN" l2="4 điều rút ra" />)], [1, () => D3(S("streetday", "day", ...teaW, tea("neutral", "smile", {}, { wave: 1 })))]] },
+  { id: "S23", shots: [[0, () => D3(S("streetday", "day", ...teaH, [C("huy", TH, P("smile", { side: 1, acc: ["cup"] }))]), (t) => <LocTag t={t} l1="HUY NGUYỄN" l2="4 điều rút ra" />)], [1, () => D3(S("streetday", "day", ...teaW, tea("neutral", "smile", {}, { wave: 1 })))]] },
   { id: "S24", shots: [[0, () => CD((t) => <LessonCard t={t} title="1. Tiền có hạn dùng" items={[{ n: "1", icon: "💍", head: "Tiền cưới, tiền học, tiền nhà trong 1–2 năm", body: "Không đặt vào cổ phiếu", at: 0.3 }, { n: "!", icon: "📉", head: "Cổ phiếu có thể giảm 60–70% trong vài tháng", body: "Kể cả công ty lớn", at: at("S24", 0, 2) }, { n: "✓", icon: "🏦", head: "Để ở chỗ chắc chắn còn nguyên", body: "đến đúng ngày cần", at: at("S24", 0, 3) }]} />)]] },
   { id: "S25", shots: [[0, () => CD((t) => <LessonCard t={t} title="2. Không dồn một mã" items={[{ n: "2", icon: "🧺", head: "Chia nhiều mã, nhiều ngành", body: "mỗi mã một phần nhỏ", at: at("S25", 0, 2) }, { n: "✓", icon: "🛡", head: "Một mã gặp sự cố", body: "cả danh mục vẫn đứng được", at: at("S25", 0, 3) }]} />)]] },
   { id: "S26", shots: [[0, () => CD((t) => <LessonCard t={t} title="3. Doanh nghiệp tốt ≠ cổ phiếu an toàn" items={[{ n: "3", icon: "💎", head: "Ngành bán lòng tin", body: "vàng, kim cương, ngân hàng, bảo hiểm", at: at("S26", 0, 2) }, { n: "?", icon: "💧", head: "Nếu niềm tin mất", body: "dòng tiền sẽ ra sao?", at: at("S26", 0, 3) }]} />)], [2, () => D3(shopDay([hangShop("worried"), ...queue(20)], ...qWide), (t) => <BigText t={t} at={0.2} text="NIỀM TIN MẤT NHANH HƠN BÁO CÁO" col="#ff4d5e" y={90} size={84} />)]] },
   { id: "S27", shots: [
-    [0, () => D3(S("streetday", "day", ...teaH, [C("huy", TH, P("neutral", { side: -1, acc: ["cup"], wave: 1 }))]), (t) => <BigText t={t} at={0.1} text="4. TRƯỚC KHI BẮT ĐÁY" col="#ffd23f" y={90} size={100} />)],
+    [0, () => D3(S("streetday", "day", ...teaH, [C("huy", TH, P("neutral", { side: 1, acc: ["cup"], wave: 1 }))]), (t) => <BigText t={t} at={0.1} text="4. TRƯỚC KHI BẮT ĐÁY" col="#ffd23f" y={90} size={100} />)],
     [2, () => CD((t) => <LessonCard t={t} title="Mình đang chờ điều gì?" items={[{ n: "1", icon: "💵", head: "Phát hành ~8.000 tỷ", body: "chốt giá bao nhiêu, ai mua?", at: at("S27", 2, 3) - at("S27", 2, 2) }, { n: "2", icon: "↩", head: "Tỷ lệ khách trả hàng thực tế", body: "thấp hơn giả định 80%? → hoàn nhập dự phòng", at: at("S27", 2, 4) - at("S27", 2, 2) }, { n: "3", icon: "📊", head: "Biên lợi nhuận gộp", body: "từ 18,5% xuống ~10% – có quay lại?", at: at("S27", 2, 5) - at("S27", 2, 2) }]} />)],
     [6, () => CD((t) => <Img t={t} img="bd_tran" head="1 phiên trần ≠ câu trả lời" />)],
   ] },
