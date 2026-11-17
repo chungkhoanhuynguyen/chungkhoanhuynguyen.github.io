@@ -86,7 +86,7 @@ function drawBattle(t){const b=B,z=BC.z;X.setTransform(DPR,0,0,DPR,0,0);X.fillSt
    if(ty[i]!=2){X.moveTo(px-2*k+sw*.5,by);X.lineTo(px,by-3.5*v);X.lineTo(px+2*k-sw*.5,by)}
    X.moveTo(px,by-3.5*v);X.lineTo(px,by-7.5*v);
    X.moveTo(px,by-6.6*v);X.lineTo(px+3*k*f,by-5*v);X.moveTo(px,by-6.6*v);X.lineTo(px-2*k*f,by-4.6*v)});
-  X.strokeStyle=BODY[rc];X.lineWidth=1.6*LS;X.stroke();
+  X.strokeStyle=BODY[rc]||RACE[rc].bd||'#222';X.lineWidth=1.6*LS;X.stroke();
   // vũ khí
   P((i,px,py,k,v,f)=>{const by=ty[i]==2?py-5*k:py;
    if(ty[i]==0){if(rc==3){X.moveTo(px+3*k*f,by-5*v);X.lineTo(px+5*k*f,by-6.5*v);X.moveTo(px+3*k*f,by-5*v);X.lineTo(px+5.3*k*f,by-4.6*v)}
@@ -102,7 +102,7 @@ function drawBattle(t){const b=B,z=BC.z;X.setTransform(DPR,0,0,DPR,0,0);X.fillSt
    else if(ty[i]==1){X.rect(px-2.6*k*f-.8*k,b2-8*v,1.6*k,3.6*v)}else if(ty[i]==2){X.moveTo(px+11*k*f,b2-8*v);X.lineTo(px+8*k*f,b2-9.4*v);X.lineTo(px+8.4*k*f,b2-7.2*v)}});
   X.fillStyle=col;X.fill();X.strokeStyle='#111';X.lineWidth=.8*LS;X.stroke();
   // đầu tròn
-  P((i,px,py,k,v)=>{const hy=(ty[i]==2?py-5*k:py)-9.2*v,r=1.9*k;X.moveTo(px+r,hy);X.arc(px,hy,r,0,7)});X.fillStyle=HC[rc];X.fill();
+  P((i,px,py,k,v)=>{const hy=(ty[i]==2?py-5*k:py)-9.2*v,r=1.9*k;X.moveTo(px+r,hy);X.arc(px,hy,r,0,7)});X.fillStyle=HC[rc]||RACE[rc].hc||'#222';X.fill();
   // nhận dạng tộc
   if(rc==4){P((i,px,py,k,v)=>{const hy=(ty[i]==2?py-5*k:py)-9.2*v;X.rect(px-1.1*k,hy-.5*k,.8*k,.8*k);X.rect(px+.3*k,hy-.5*k,.8*k,.8*k);X.rect(px-.4*k,hy+.9*k,.8*k,.4*k)});X.fillStyle='#111';X.fill()}
   if(rc==0){P((i,px,py,k,v)=>{const hy=(ty[i]==2?py-5*k:py)-9.2*v;X.moveTo(px-2.2*k,hy-.3*k);X.lineTo(px+2.2*k,hy-.3*k);X.lineTo(px,hy-3.2*k)});X.fillStyle='#8a9099';X.fill()}

@@ -1,10 +1,10 @@
-const CW=6400,CH=4000,GAP=900,C0W=WMAP?2*CW+GAP:CW,C0H=WMAP?2*CH+GAP:CH,CWc=[C0W,CW,CW,CW,CW,CW,CW,CW,CW,CW,CW,CW],CHc=[C0H,CH,CH,CH,CH,CH,CH,CH,CH,CH,CH,CH],
- OX=WMAP?[0,2*(CW+GAP),2*(CW+GAP),3*(CW+GAP),3*(CW+GAP),4*(CW+GAP),5*(CW+GAP),4*(CW+GAP),5*(CW+GAP),0,CW+GAP,2*(CW+GAP)]:[0,CW+GAP,0,CW+GAP,2*(CW+GAP),3*(CW+GAP),4*(CW+GAP),3*(CW+GAP),4*(CW+GAP),0,CW+GAP,2*(CW+GAP)],
- OY=WMAP?[0,0,CH+GAP,0,CH+GAP,0,0,CH+GAP,CH+GAP,2*(CH+GAP),2*(CH+GAP),2*(CH+GAP)]:[0,0,CH+GAP,CH+GAP,(CH+GAP)/2,0,0,CH+GAP,CH+GAP,2*(CH+GAP),2*(CH+GAP),2*(CH+GAP)],WW=WMAP?CW*6+GAP*5:CW*5+GAP*4,WH=CH*3+GAP*2,BS=5,T=32,GW=Math.ceil(WW/T),GH=Math.ceil(WH/T),TER=new Uint8Array(GW*GH),TSP=[.75,1,.75,.5,.9];
+const CW=6400,CH=4000,GAP=900,C0W=WMAP?2*CW+GAP:CW,C0H=WMAP?2*CH+GAP:CH,CWc=[C0W,CW,CW,CW,CW,CW,CW,CW,CW,CW,CW,CW,0],CHc=[C0H,CH,CH,CH,CH,CH,CH,CH,CH,CH,CH,CH,0],
+ OX=WMAP?[0,2*(CW+GAP),2*(CW+GAP),3*(CW+GAP),3*(CW+GAP),4*(CW+GAP),5*(CW+GAP),4*(CW+GAP),5*(CW+GAP),0,CW+GAP,2*(CW+GAP),0]:[0,CW+GAP,0,CW+GAP,2*(CW+GAP),3*(CW+GAP),4*(CW+GAP),3*(CW+GAP),4*(CW+GAP),0,CW+GAP,2*(CW+GAP),0],
+ OY=WMAP?[0,0,CH+GAP,0,CH+GAP,0,0,CH+GAP,CH+GAP,2*(CH+GAP),2*(CH+GAP),2*(CH+GAP),3*(CH+GAP)]:[0,0,CH+GAP,CH+GAP,(CH+GAP)/2,0,0,CH+GAP,CH+GAP,2*(CH+GAP),2*(CH+GAP),2*(CH+GAP),3*(CH+GAP)],WW=WMAP?CW*6+GAP*5:CW*5+GAP*4,WH=CH*5+GAP*4,BS=5,T=32,GW=Math.ceil(WW/T),GH=Math.ceil(WH/T),TER=new Uint8Array(GW*GH),TSP=[.75,1,.75,.5,.9];
 function noise(gx,gy){const g=new Float32Array((gx+1)*(gy+1));for(let i=0;i<g.length;i++)g[i]=R();
  return(u,v)=>{const x=cl(u,0,.9999)*gx,y=cl(v,0,.9999)*gy,i=x|0,j=y|0,fx=x-i,fy=y-j,sx=fx*fx*(3-2*fx),sy=fy*fy*(3-2*fy),w=gx+1,a=g[j*w+i],b=g[j*w+i+1],c=g[(j+1)*w+i],d=g[(j+1)*w+i+1];return a+(b-a)*sx+(c-a)*sy+(a-b-c+d)*sx*sy}}
 const NZ=[[noise(7,5),noise(19,12),noise(55,35),noise(30,19)]];
-const contOf=(x,y)=>{for(let c=0;c<12;c++)if(x>=OX[c]-GAP/2&&x<OX[c]+CWc[c]+GAP/2&&y>=OY[c]-GAP/2&&y<OY[c]+CHc[c]+GAP/2)return c;return x<2*CW+1.5*GAP?0:4};
+const contOf=(x,y)=>{if(y>3*CH+2.5*GAP)return 12;for(let c=0;c<12;c++)if(x>=OX[c]-GAP/2&&x<OX[c]+CWc[c]+GAP/2&&y>=OY[c]-GAP/2&&y<OY[c]+CHc[c]+GAP/2)return c;return x<2*CW+1.5*GAP?0:4};
 let WMB=null,WMF=null,WKS=[];
 if(WMAP){const W=WMD.W,H=WMD.H,R0=WMD.R;WMB=new Uint16Array(W*H);let p=0;for(let i=0;i<R0.length;i+=2){WMB.fill(R0[i],p,p+R0[i+1]);p+=R0[i+1]}
  const INF=1e4,A=new Float32Array(W*H),B=new Float32Array(W*H);for(let i=0;i<W*H;i++){A[i]=WMB[i]?0:INF;B[i]=WMB[i]?INF:0}

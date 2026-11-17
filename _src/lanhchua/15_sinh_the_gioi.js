@@ -8,11 +8,11 @@ function genWorld(){const RC=RACE[0],ox=OX[0],oy=OY[0],s0=S.length,cc0=CC.length
  return s0}
 function genCont(c){const ox=OX[c],oy=OY[c],RC=RACE[c],cs=[],f00=F0.length,s0=c==0&&WMAP?genWorld():S.length,CWx=CWc[c],CHx=CHc[c],WMx=c==0&&WMAP;
  if(!WMx){
- for(let tr=0;cs.length<5&&tr<40000;tr++){const x=ox+700+R()*(CWx-1400),y=oy+600+R()*(CHx-1200);if(okLand(x,y)&&cs.every(q=>Math.hypot(q.x-x,q.y-y)>(tr<20000?2100:1500)))cs.push({x,y,n:RC.cn[cs.length],race:c})}
+ for(let tr=0;cs.length<RC.cn.length&&tr<40000;tr++){const x=ox+700+R()*(CWx-1400),y=oy+600+R()*(CHx-1200);if(okLand(x,y)&&cs.every(q=>Math.hypot(q.x-x,q.y-y)>(tr<20000?2100:1500)))cs.push({x,y,n:RC.cn[cs.length],race:c})}
  const cc0=CC.length;CC.push(...cs);
  cs.forEach((q,k0)=>{const ci=cc0+k0;for(let k=0;k<3;k++){const a=k*2.094+R(),sx=q.x+Math.cos(a)*520,sy=q.y+Math.sin(a)*420,fi=F0.length,sur=RC.sur[(fi-f00)%RC.sur.length];
   F0.push({sur,n:RC.pre+sur,cn:ci,race:c,c:`hsl(${RC.hue[k0]+(k-1)*14},${[70,60,75][k]}%,${[46,60,36][k]}%)`});
-  for(let m=0;m<4;m++)for(let tr=0;tr<6000;tr++){const sp=300+tr*.25,x=sx+(R()-.5)*sp,y=sy+(R()-.5)*sp;
+  for(let m=0;m<(RC.cpf||4);m++)for(let tr=0;tr<6000;tr++){const sp=300+tr*.25,x=sx+(R()-.5)*sp,y=sy+(R()-.5)*sp;
    if(x-ox<150||y-oy<150||x-ox>CWx-150||y-oy>CHx-150||!okLand(x,y))continue;if(S.some(s=>Math.hypot(s.x-x,s.y-y)<(tr>4000?120:180)))continue;
    S.push({id:S.length,name:unameR(c),x,y,type:m==0?0:m==1?1:2,f0:fi,cn:ci,race:c,fac:fi,own:-1,gar:null,pool:0});break}}});}
  const VN=['Thôn','Trang','Điền','Khê','Ấp','Hòa'];
@@ -24,19 +24,19 @@ const SN0=S.length,VN0=V.length,CN0=CC.length,FN0=F0.length,RN0=ROADS.length;for
 const SN1=S.length,VN1=V.length,CN1=CC.length,FN1=F0.length,RN1=ROADS.length;for(let c=9;c<12;c++){NZ[c]=[noise(7,5),noise(19,12),noise(55,35),noise(30,19)];genCont(c)}
 const DS2=S.splice(SN1),DV2=V.splice(VN1),DCC2=CC.splice(CN1),DF02=F0.splice(FN1),DR2=ROADS.splice(RN1);
 const DS=S.splice(SN0),DV=V.splice(VN0),DCC=CC.splice(CN0),DF0=F0.splice(FN0),DR=ROADS.splice(RN0);
-const WB=[{x0:0,y0:0,w:WW,h:2*CH+GAP},{x0:0,y0:2*(CH+GAP),w:3*CW+2*GAP,h:CH}],WRLD=y=>y>2*CH+1.5*GAP?1:0,CWB=()=>WB[G&&G.L?WRLD(P0().y):0];
+const WB=[{x0:0,y0:0,w:WW,h:2*CH+GAP},{x0:0,y0:2*(CH+GAP),w:3*CW+2*GAP,h:CH},{x0:0,y0:3*(CH+GAP),w:3*CW+2*GAP,h:CH}],WRLD=y=>y>3*CH+2.5*GAP?2:y>2*CH+1.5*GAP?1:0,CW_OF=c=>c>=12?2:c>=9?1:0,CWB=()=>WB[G&&G.L?WRLD(P0().y):0];
 const LKM=()=>G&&G.lk?5:1;
-const NC=()=>G&&G.xian?12:G&&G.divine?9:5;
-const OPEN=c=>!G||!G.open?true:c>=9?!!G.xian:c>=5?!!G.divine:G.open.includes(c);
+const NC=()=>G&&G.tang?13:G&&G.xian?12:G&&G.divine?9:5;
+const OPEN=c=>!G||!G.open?c<12:c>=12?!!G.tang:c>=9?!!G.xian:c>=5?!!G.divine:G.open.includes(c);
 function unlockWorld2(){if(S.length>SN0+DS.length)return;unlockWorld();S.push(...DS2);V.push(...DV2);CC.push(...DCC2);F0.push(...DF02);ROADS.push(...DR2);nearFor(9)}
 function unlockWorld(){if(S.length>SN0)return;S.push(...DS);V.push(...DV);CC.push(...DCC);F0.push(...DF0);ROADS.push(...DR);nearFor(5)}
 const raceOf=p=>p.fac>=0&&G&&G.F[p.fac]?G.F[p.fac].race||0:contOf(p.x,p.y);
 const BGC=[],BGP=300;
 const DET=[];const BKX=Math.ceil(WW/512),BKY=Math.ceil(WH/512);for(let i=0;i<BKX*BKY;i++)DET.push([]);
 const TCS=40,TC=document.createElement('canvas');TC.width=Math.ceil(WW/TCS);TC.height=Math.ceil(WH/TCS);const NEAR=new Int16Array(TC.width*TC.height).fill(-1);
-const LOW=document.createElement('canvas');LOW.width=Math.ceil(WW/40);LOW.height=Math.ceil(WH/40);const baked=new Array(12).fill(0);
+const LOW=document.createElement('canvas');LOW.width=Math.ceil(WW/40);LOW.height=Math.ceil(WH/40);const baked=new Array(13).fill(0);
 function pix(wx,wy,P){const hh=hW(wx,wy);let r,g,b;
- if(hh<.36){const k=cl((hh-.15)/.21,0,1);r=24+44*k;g=62+72*k;b=112+56*k;{const oc=contOf(wx,wy);if(oc==4&&(WMAP||wx>2*CW+1.5*GAP+250)){r=r*.55+18;g=g*.4;b=b*.6+10}else if(oc==7){r=r*.5+70;g=g*.35;b=b*.4+10}else if(oc==6){r=r*.6+60;g=g*.75+50;b=b*.8+50}}}
+ if(hh<.36){const k=cl((hh-.15)/.21,0,1);r=24+44*k;g=62+72*k;b=112+56*k;{const oc=contOf(wx,wy);if(oc==4&&(WMAP||wx>2*CW+1.5*GAP+250)){r=r*.55+18;g=g*.4;b=b*.6+10}else if(oc==7){r=r*.5+70;g=g*.35;b=b*.4+10}else if(oc==6){r=r*.6+60;g=g*.75+50;b=b*.8+50}else if(oc==12&&RACE[12]&&RACE[12].sea){const q=RACE[12].sea;r*=q[0];g*=q[1];b*=q[2]}}}
  else{const c=contOf(wx,wy),Q=P[c],f=fW(wx,wy);
   if(hh<.372){r=214;g=198;b=146}else if(hh>.68){if(hh>.78){r=236;g=238;b=242}else{const k=(hh-.68)/.1;r=128+40*k;g=118+38*k;b=104+42*k}}
   else{const k=(hh-.372)/.31;r=Q[0]-Q[3]*k;g=Q[1]-Q[4]*k;b=Q[2]-Q[5]*k;if(f>.6){r-=32;g-=28;b-=20}}
@@ -60,7 +60,7 @@ function bake(){bakeLow()}
 let baking=0;function ensureCont(){if(!G||baking)return;const c=contOf(P0().x,P0().y);if(baked[c])return;baking=1;const L=document.createElement('div');L.id='load2';L.style.cssText='position:fixed;inset:0;display:flex;align-items:center;justify-content:center;font-size:18px;color:#ffd77a;background:rgba(20,16,8,.85);z-index:9';
  L.textContent=`🌍 Đang tải châu lục ${RACE[c].n}...`;document.body.appendChild(L);const first=!baked.some(x=>x);setTimeout(()=>{bakeCont(c);L.remove();baking=0;if(!first)toast(`🌍 Bạn đã đặt chân tới châu lục ${RACE[c].n}`,'#5cc9ff');showArrows(7)},40)}
 const tAt=(x,y)=>TER[cl(y/T|0,0,GH-1)*GW+cl(x/T|0,0,GW-1)];
-const MMW=[0,1].map(w=>{const c=document.createElement('canvas');c.width=300;c.height=w?Math.round(300*CH/(3*CW+2*GAP)):Math.round(300*(2*CH+GAP)/WW);return c}),MM=MMW[0];MM.height=Math.round(240*WH/WW);
+const MMW=[0,1,2].map(w=>{const c=document.createElement('canvas');c.width=300;c.height=w?Math.round(300*CH/(3*CW+2*GAP)):Math.round(300*(2*CH+GAP)/WW);return c}),MM=MMW[0];MM.height=Math.round(240*WH/WW);
 let TD=0,tdT=0;function terr(){TD=1}
 const CRGB=new Map(),CCX=document.createElement('canvas').getContext('2d');function rgbOf(c){let v=CRGB.get(c);if(!v){CCX.fillStyle='#000';CCX.fillStyle=c;const h=CCX.fillStyle;if(h[0]=='#')v=[parseInt(h.slice(1,3),16),parseInt(h.slice(3,5),16),parseInt(h.slice(5,7),16)];else{const m=h.match(/[\d.]+/g)||[0,0,0];v=[+m[0],+m[1],+m[2]]}CRGB.set(c,v)}return v}
 function terrNow(){TD=0;const g=TC.getContext('2d'),w=TC.width,h=TC.height,own=NEAR;
@@ -73,7 +73,7 @@ function terrNow(){TD=0;const g=TC.getContext('2d'),w=TC.width,h=TC.height,own=N
   let col,al;if(fb){col=colOf(f);al=.9}else if(ob){col=WHT;al=.4}else{al=mine?.5:rm?.3:.2;col=mine?GOLD:colOf(f)}
   const p=q*4;d[p]=col[0];d[p+1]=col[1];d[p+2]=col[2];d[p+3]=al*255|0}
  g.putImageData(im,0,0);
- g.globalAlpha=1;for(let w=0;w<2;w++){const b=WB[w],cv=MMW[w],m=cv.getContext('2d');m.clearRect(0,0,cv.width,cv.height);m.drawImage(LOW,b.x0/40,b.y0/40,b.w/40,b.h/40,0,0,cv.width,cv.height);m.globalAlpha=.8;m.drawImage(TC,b.x0/40,b.y0/40,b.w/40,b.h/40,0,0,cv.width,cv.height);m.globalAlpha=1}}
+ g.globalAlpha=1;for(let w=0;w<3;w++){const b=WB[w],cv=MMW[w];if(w==2&&!(G&&G.tang))continue;const m=cv.getContext('2d');m.clearRect(0,0,cv.width,cv.height);m.drawImage(LOW,b.x0/40,b.y0/40,b.w/40,b.h/40,0,0,cv.width,cv.height);m.globalAlpha=.8;m.drawImage(TC,b.x0/40,b.y0/40,b.w/40,b.h/40,0,0,cv.width,cv.height);m.globalAlpha=1}}
 const clouds=Array.from({length:70},()=>({x:Math.random()*WW,y:Math.random()*WH,r:rnd(110,230),v:rnd(8,16)}));
 
 /* ================= TRẠNG THÁI ================= */
@@ -89,17 +89,19 @@ const DIVT=[['Nhân Thần Đế','🌟','#fff07a'],['Sơn Thần Đế','💎',
 const RK=['Lính đánh thuê','Hoàng tử vong quốc','Hiệp sĩ','Nam tước','Tử tước','Bá tước','Hầu tước','Công tước','Vương','Vua','Tử Vương','Hoàng đế','Ma Vương','Nhân Hoàng','Thạch Hoàng','Tinh Hoàng','Lang Hoàng','Minh Hoàng','Titan Thần','Thiên Thần Vương','Quỷ Thần','Yêu Thần','Titan Chí Tôn','Thánh Chủ','Ma Thần Chí Tôn','Vạn Yêu Chi Chủ','Nhân Thần Đế','Sơn Thần Đế','Tinh Linh Thần Đế','Lang Thần Đế','Minh Thần Đế','Trúc Cơ','Nguyên Anh','Địa Tiên','Nhân Tiên'];
 function vills(p){let n=0;for(const v of V)if(v.own===p.id)n++;return n}
 function fiefs(p){let n=0;for(const s of S)if(s.own===p.id)n++;return n}
-const LKN={'Hiệp sĩ':'Luyện Khí','Nam tước':'Trúc Cơ','Tử tước':'Kim Đan','Bá tước':'Nguyên Anh','Hầu tước':'Hóa Thần','Công tước':'Luyện Hư','Vương':'Đại Thừa','Lính đánh thuê':'Tán tu','Vua':'Tiên Vương','Hoàng đế':'Tiên Đế','Thủ lĩnh phỉ':'Ma tu','Trúc Cơ':'Kim Đan Chân Nhân','Nguyên Anh':'Hóa Thần Lão Tổ','Địa Tiên':'Thiên Tiên','Nhân Tiên':'Kim Tiên'};
+const LKN={'Hiệp sĩ':'Luyện Khí','Nam tước':'Trúc Cơ','Tử tước':'Kim Đan','Bá tước':'Nguyên Anh','Hầu tước':'Hóa Thần','Công tước':'Luyện Hư','Vương':'Đại Thừa','Lính đánh thuê':'Tán tu','Vua':'Tiên Vương','Hoàng đế':'Tiên Đế','Thủ lĩnh phỉ':'Ma tu','Trúc Cơ':'Kim Đan Chân Nhân','Nguyên Anh':'Hóa Thần Lão Tổ','Địa Tiên':'Thiên Tiên','Nhân Tiên':'Kim Tiên','Thiên Vương':'Thiên Vương','Thiên Tôn':'Thiên Tôn'};
 function rank(p){const r=rank0(p);if(!G||!G.lk||p.kind=='rf')return r;return[LKN[r[0]]||r[0].replace('Thần Đế','Chuẩn Đế'),r[1]*5,r[2],r[3]]}
 function rank0(p){if(p.kind=='bandit')return['Thủ lĩnh phỉ',700,'☠','#999'];if(p.kind=='rf')return['Viện binh',1e9,'➕','#9cf'];const f=G.F[p.fac];
   if(p.kind=='exile')return['Hoàng tử vong quốc',800,'🥀','#c9a8e0'];
+ if(p.kind=='pl'&&G.tang&&isMyKing())return G.dd?['Đại Đế',200000*TMv(),'🐲','#ffe066']:['Cửu Ngũ Chí Tôn',100000*TMv(),'🐉','#ffd23a'];
+ if(f&&f.race==12&&p.kind!='pl'){const R=RACE[12],m=TMv();if(f.king===p.id)return[R.kt,30000*m,R.ic,'#fff2a8'];return fiefs(p)?[R.ft,8000*m,R.ic,'#d8c8ff']:[R.lt,3000*m,R.ic,'#b8c8e8']}
  if(p.kind=='pl'&&G.divine&&isMyKing()){const r=DIVT[Math.min(4,(G.F[p.fac]&&G.F[p.fac].race)||0)];return[r[0],100000,r[1],r[2]]}
  if(f&&f.race>=9&&p.kind!='pl'){if(f.king===p.id){const n=S.filter(s=>s.fac==p.fac).length;return n>=5?['Nhân Tiên',30000,'☯️','#9ff0ff']:['Địa Tiên',20000,'🌄','#ffd27a']}return fiefs(p)?['Nguyên Anh',8000,'🔆','#c9a0ff']:['Trúc Cơ',3000,'🌱','#8fe08a']}
  if(f&&f.king===p.id&&f.race>=5){const r=GODT[f.race-5];return[r[0],12000,r[1],r[2]]}
  if(p.vuong&&p.kind=='lord')return['Vương',10000,'🏯','#ff8a3a'];
  if(f&&f.king===p.id&&G.ch){const c=G.ch.indexOf(p.fac);if(c>=0)return[CHT[c][0],40000,CHT[c][1],CHT[c][2]]}
  if(f&&f.king===p.id&&f.race==4)return G.mv===p.fac?['Ma Vương',20000,'😈','#c04cff']:['Tử Vương',12000,'💀','#9aa3b5'];
- if(f&&f.king===p.id)return f.emp?['Hoàng đế',20000,'🐉','#ff6a4a']:['Vua',12000,'👑','#ffd23a'];const n=fiefs(p)+Math.floor(vills(p)/2),rn=p.ren||0;if(p.merc&&!n&&rn<100)return['Lính đánh thuê',800,'🗡','#9aa0a8'];let r=TT[0];for(const t of TT)if(n>=t[4]||rn>=t[5])r=t;return r}
+ if(f&&f.king===p.id)return f.emp?['Hoàng đế',20000,'🐉','#ff6a4a']:['Vua',12000,'👑','#ffd23a'];const n=fiefs(p)+Math.floor(vills(p)/2),rn=p.ren||0;if(G.tang&&p.kind=='lord'&&p.fac==P0().fac){if(n>=20||rn>=80000)return['Thiên Tôn',25000*TMv(),'🌟','#ffe9a0'];if(n>=12||rn>=40000)return['Thiên Vương',15000*TMv(),'⭐','#ffd27a']}const hg=G.tang&&p.kind=='lord'&&p.fac==P0().fac;if(p.merc&&!n&&rn<100)return hg?['Thiên Tướng',10000*TMv(),'🎖','#cfe0ff']:['Lính đánh thuê',800,'🗡','#9aa0a8'];let r=TT[0];for(const t of TT)if(n>=t[4]||rn>=t[5])r=t;return hg?[r[0],Math.max(r[1],10000*TMv()),r[2],r[3]]:r}
 const badge=p=>{const r=rank(p);return`<span class="bdg" style="background:${r[3]}">${r[2]} ${r[0]}</span>`};
 const pname=p=>p.kind=='exile'?`Hoàng tử ${p.name}`:p.kind=='pl'?`${rank(p)[0]} (Bạn)`:p.kind=='bandit'?'Thổ phỉ':p.kind=='rf'?p.name:`${rank(p)[0]} ${p.name}`;
 const rel=f=>!G?'#fff':f==P0().fac?'#7dff8a':atWar(P0().fac,f)?'#ff6a5a':'#f2f2f2';
@@ -130,11 +132,11 @@ function vassalDay(){const pl=P0(),king=isMyKing(),pp=facPow(pl.fac),held=contsH
   const tg=55+4*fiefs(g)+(G.gold>0?8:-25)-(g.vuong?12:0)+(G.call?3:0)-(vPow(g)>pp*.15?10:0);g.loy=cl(g.loy+(tg>g.loy?.6:-.6)+rnd(-.3,.3),0,100);
   if(g.vuong){g.gold=(g.gold||0)+S.filter(s=>s.own===g.id).length*150+60;const sub=G.L.filter(q=>!q.dead&&q.lieg===g.id).length;
    if(G.day%6==g.id%6&&g.gold>=2500&&sub<5&&!genFull()){g.gold-=2500;const n=pushP({kind:'lord',name:newName(G.F[pl.fac]),fac:pl.fac,x:g.x+rnd(-30,30),y:g.y+30,t:mix(700),loy:ri(55,75),lieg:g.id,merc:1});if(contOf(g.x,g.y)==ACT&&Math.random()<.5)addLog(`🏯 Vương ${g.name} chiêu mộ tướng ${n.name}.`,'#ffb070')}
-   if(king&&held>=4&&G.day%5==0&&g.loy<55&&vPow(g)>=pp/4){rebel(g);break}}}
+   if(king&&!G.tang&&held>=4&&G.day%5==0&&g.loy<55&&vPow(g)>=pp/4){rebel(g);break}}}
  if(king&&G.autoGen&&G.day%3==0&&!genFull()&&G.gold>=genCost()+2000){const g=hireGen(1);if(g){g.x=pl.x+rnd(-30,30);g.y=pl.y+30;g.tx=g.x;g.ty=g.y;toast(`🤖 Tự động chiêu mộ tướng ${g.name} (-${fmt(genCost())} vàng)`,'#9cf')}}}
 function aiRecruit(){if(G.L.length>1800)return;for(let i=0;i<G.F.length;i++){const f=G.F[i];if(f.dead||i==P0().fac||f.king<0)continue;const ss=S.filter(s=>s.fac==i);if(!ss.length)continue;
  f.gold=(f.gold||0)+ss.length*60;const n=G.L.filter(q=>!q.dead&&q.fac==i&&q.kind=='lord').length,cost=2500+n*150;
- if(f.gold>=cost&&n<ss.length+2&&G.day%6==i%6){f.gold-=cost;const cap=ss.find(s=>s.type==0)||ss[0];pushP({kind:'lord',name:newName(f),fac:i,x:cap.x+rnd(-30,30),y:cap.y+rnd(25,45),t:mix((f.race>=9?ri(2000,4000):ri(500,900))*LKM())})}}}
+ if(f.gold>=cost&&n<ss.length+2&&G.day%6==i%6){f.gold-=cost;const cap=ss.find(s=>s.type==0)||ss[0];pushP({kind:'lord',name:newName(f),fac:i,x:cap.x+rnd(-30,30),y:cap.y+rnd(25,45),t:mix((f.race>=9?ri(2000,4000):ri(500,900))*PW(f.race))})}}}
 function hireMaxN(){let g=G.gold,n=myGens().length,k=0;while(k<200&&n<GCAP){const c=1500+Math.min(n,30)*500;if(g<c)break;g-=c;n++;k++}return k}
 function hireMax(){const pl=P0(),k=hireMaxN();for(let i=0;i<k;i++){const g=hireGen(1);if(g){g.x=pl.x+rnd(-40,40);g.y=pl.y+rnd(20,50);g.tx=g.x;g.ty=g.y}}addLog(`Chiêu mộ ${k} tướng.`,'#8f8');save();return k}
 function hireGen(q){const pl=P0(),cost=genCost();if(genFull()){if(!q)toast(`Đã đủ ${GCAP} tướng — phong thái ấp cho tướng hoặc chờ tướng tử trận`,'#f88');return}if(G.gold<cost){toast(`Cần ${fmt(cost)} vàng để chiêu mộ tướng`,'#f88');return}

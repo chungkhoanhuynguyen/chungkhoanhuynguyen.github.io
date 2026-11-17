@@ -1,8 +1,8 @@
-function absWar(CL){const pl=P0();for(const c of CL||[0,1,2,3,4,4,...(G.divine?[5,6,7,8]:[]),...(G.xian?[9,10,11]:[])]){if(c==ACT||Math.random()<.4)continue;
+function absWar(CL){const pl=P0();for(const c of CL||[0,1,2,3,4,4,...(G.divine?[5,6,7,8]:[]),...(G.xian?[9,10,11]:[]),...(G.tang?[12]:[])]){if(c==ACT||Math.random()<.4)continue;
  const fs=G.F.map((f,i)=>i).filter(i=>(G.F[i].race||0)==c&&!G.F[i].dead&&i!=pl.fac&&S.some(s=>s.fac==i));if(!fs.length)continue;
  for(const p of G.L)if(!p.dead&&(p.kind=='lord'||p.kind=='king')&&p.fac>=0&&((G.F[p.fac]&&G.F[p.fac].race)||0)==c&&contOf(p.x,p.y)==c){const cap=rank(p)[1];if(tot(p.t)<cap)add(p.t,mix(Math.min(cap-tot(p.t),Math.ceil(cap*.03))))}
  const a=fs[ri(0,fs.length-1)],ls=G.L.filter(p=>!p.dead&&p.fac==a&&(p.kind=='lord'||p.kind=='king')),pw=ls.reduce((x,p)=>x+str(p.t),0)*.6+(c>=4?S.filter(s=>s.fac==a).reduce((x,s)=>x+str(s.gar)*.45,0):0),own=S.filter(s=>s.fac==a),xc=Math.random()<.2;
- const tg=S.filter(s=>(xc?s.race!=c&&s.race!=ACT&&OPEN(s.race)&&OPEN(c):s.race==c)&&s.fac!=a&&atWar(a,s.fac)&&s.fac!=pl.fac).map(x=>{let m=1e12;for(const o of own){const dx=o.x-x.x,dy=o.y-x.y,q=dx*dx+dy*dy;if(q<m)m=q}x._d=m;return x}).sort((x,y)=>x._d-y._d)[0];
+ const tg=S.filter(s=>(xc?s.race!=c&&s.race!=ACT&&OPEN(s.race)&&OPEN(c)&&(s.race==12)==(c==12):s.race==c)&&s.fac!=a&&atWar(a,s.fac)&&s.fac!=pl.fac).map(x=>{let m=1e12;for(const o of own){const dx=o.x-x.x,dy=o.y-x.y,q=dx*dx+dy*dy;if(q<m)m=q}x._d=m;return x}).sort((x,y)=>x._d-y._d)[0];
  if(!tg||!ls.length||pw<str(tg.gar)*(xc?2:c==4?.85:1.5))continue;if(xc)addLog(`⛵ ${facN(a)} (${RACE[c].n}) vượt biển chiếm ${tg.name} của ${RACE[tg.race].n}!`,'#ffb070');const lead=ls.sort((x,y)=>tot(y.t)-tot(x.t))[0];ls.forEach(p=>kill(p.t,Math.round(tot(p.t)*.15)));kill(tg.gar,tot(tg.gar));lead.x=tg.x+15;lead.y=tg.y+25;lead.tx=lead.x;lead.ty=lead.y;capture(tg,lead)}}
 function addConts(){G.cmap=G.cmap||{};const nw=[];
  F0.forEach((f,k)=>{if(!f.race||G.cmap[k]!=null)return;const ni=G.F.length;G.cmap[k]=ni;G.F.push({...f,king:-1,dead:0,emp:0});nw.push([ni,k])});
@@ -25,7 +25,7 @@ const ordN=n=>['','cả','thứ 2','thứ 3','thứ 4','thứ 5','thứ 6','th�
 function respawn(p){p.goS=p.goP=null;p.dead=0;p.inF=0;
  if(p.kind=='king'&&G.F[p.fac]){const f=G.F[p.fac];f.heirs=f.heirs==null?ri(1,4):f.heirs;if(f.heirs>0){f.heirs--;f.gen=(f.gen||1)+1;p.name=newName(f);p.ren=0;const m=`👑 Thái tử ${p.name} kế vị ngai vàng ${f.n} (đời thứ ${f.gen}).`;addLog(m,'#ffd77a');if(p.fac==P0().fac||contOf(p.x,p.y)==ACT)toast(m,'#ffd77a')}}
  if(p.kind=='bandit'){const q=landPt();p.x=q.x;p.y=q.y;p.t=mix(ri(40,220))}
- else{const own=S.filter(s=>s.fac==p.fac);if(!own.length){p.dead=-1;return}const mine=own.filter(s=>s.own===p.id),s=(mine.length?mine:own)[0];p.x=s.x+rnd(-25,25);p.y=s.y+rnd(20,40);p.t=mix(Math.max(100,rank(p)[1]*.15|0))}
+ else{if(G.tang&&p.kind=='lord'&&p.fac==P0().fac&&!S.some(s=>s.own===p.id&&s.race!=12)){const o12=S.filter(s=>s.fac==p.fac&&s.race==12),pl=P0(),b=o12.length?o12[ri(0,o12.length-1)]:contOf(pl.x,pl.y)==12?pl:tangLand();p.x=b.x+rnd(-40,40);p.y=b.y+rnd(25,50);p.tx=p.x;p.ty=p.y;p.t=mix(rank(p)[1]*.3|0);p.safe=3;return}const own=S.filter(s=>s.fac==p.fac);if(!own.length){p.dead=-1;return}const mine=own.filter(s=>s.own===p.id),s=(mine.length?mine:own)[0];p.x=s.x+rnd(-25,25);p.y=s.y+rnd(20,40);p.t=mix(Math.max(100,rank(p)[1]*.15|0))}
  p.tx=p.x;p.ty=p.y}
 function addLog(m,c='#ddd'){if(!G)return;G.log.push({m:`Ngày ${G.day}: ${m}`,c});if(G.log.length>6)G.log.shift();rlog()}
 const rlog=()=>{$('#log').innerHTML=G?G.log.map(l=>`<div style="color:${l.c}">${l.m}</div>`).join(''):''};
@@ -34,7 +34,7 @@ const SVX=new Set(['_c','_i','mv','face','goF','goV','th','goP','goS']),SVR=new 
 function svP(p){if(p.dead<0&&p.kind!='pl')return{id:p.id,kind:p.kind,name:p.name,fac:p.fac,x:p.x|0,y:p.y|0,dead:-1};const o={};for(const k in p){if(SVX.has(k))continue;let v=p[k];if(v==null||v===false)continue;if((k=='dead'||k=='inF')&&!v)continue;if(k=='safe'&&!(v>0))continue;if(typeof v=='number')v=SVR.has(k)?Math.round(v):Number.isInteger(v)?v:Math.round(v*10)/10;o[k]=v}if(p.goP)o.goP=p.goP.id;if(p.goS)o.goS=p.goS.id;return o}
 function save(){try{localStorage.setItem('ltlc-map',WMAP?'2':'1');localStorage.setItem(KEY,JSON.stringify({...G,L:G.L.map(svP),war:G.war.map(r=>r.map(v=>v?1:0).join('')),SS:S.map(s=>[s.fac,s.own,s.gar,s.pool]),VV:V.map(v=>[v.own,v.pool,v.burn])}))}catch(e){}}
 addEventListener('visibilitychange',()=>{if(document.hidden&&G&&G.L&&mode!='title')save()});addEventListener('pagehide',()=>{if(G&&G.L&&mode!='title')save()});
-function load(){JQ.length=0;try{if(WMAP&&localStorage.getItem('ltlc-map')!='2')return 0;const d=JSON.parse(localStorage.getItem(KEY));if(!d||!d.SS)return 0;if(d.divine)unlockWorld();if(d.xian)unlockWorld2();d.SS.forEach((a,i)=>{if(S[i]){S[i].fac=a[0];S[i].own=a[1];S[i].gar=a[2];S[i].pool=a[3]}});delete d.SS;(d.VV||[]).forEach((a,i)=>{if(V[i]){V[i].own=a[0];V[i].pool=a[1];V[i].burn=a[2]}});delete d.VV;
+function load(){JQ.length=0;try{if(WMAP&&localStorage.getItem('ltlc-map')!='2')return 0;const d=JSON.parse(localStorage.getItem(KEY));if(!d||!d.SS)return 0;if(d.divine)unlockWorld();if(d.xian)unlockWorld2();if(d.tang)genTangWorld(d.tang);d.SS.forEach((a,i)=>{if(S[i]){S[i].fac=a[0];S[i].own=a[1];S[i].gar=a[2];S[i].pool=a[3]}});delete d.SS;(d.VV||[]).forEach((a,i)=>{if(V[i]){V[i].own=a[0];V[i].pool=a[1];V[i].burn=a[2]}});delete d.VV;
  if(d.war)d.war=d.war.map(r=>typeof r=='string'?r.split('').map(Number):r);d.L.forEach(p=>{if(p.th==null)p.th=Math.random()*2;if(!p.t)p.t={inf:0,arc:0,cav:0};if(p.goP==null)p.goP=-1;if(p.goS==null)p.goS=-1;if(p.face==null)p.face=1;if(p.tx==null){p.tx=p.x;p.ty=p.y}if(p.dead==null)p.dead=0;if(p.to==null)p.to=-1;p.goS=p.goS>=0?S[p.goS]:null});d.L.forEach(p=>{p.goP=p.goP>=0?d.L[p.goP]:null});d.fights=d.fights||[];G=d;if(G.cmap&&!G.xw){G.xw=1;extraWar(G.F.map((f,i)=>i).filter(i=>G.F[i].race))}{const na=addConts();if(na){G.won=0;setTimeout(()=>toast(na>15?'🌊 CÁC CHÂU LỤC MỚI xuất hiện bên kia biển!':'💀 VÙNG ĐẤT CHẾT trỗi dậy ở tận cùng phía Đông!<br>Quân đoàn xương bất tử thù địch với mọi tộc<br><small>Chúng sẽ vượt biển xâm lược — hãy phòng thủ!</small>','#c58cff',1),1500)}}sanitize();if(G.cmap&&!G.split)splitDark();slim();mySlim();terr();MC.z=.7;MC.follow=1;rlog();return 1}catch(e){return 0}}
 const clearSave=()=>{try{localStorage.removeItem(KEY)}catch(e){}};
 
@@ -46,7 +46,7 @@ function think(p){if(p.inF)return;if(p.kind=='exile'){if(Math.hypot(p.tx-p.x,p.t
  if(p.kind=='bandit'){const v=G.L.find(e=>!e.dead&&e.kind!='bandit'&&e.kind!='pl'&&dist(e,p)<260&&str(e.t)*1.4<st);if(v){p.goP=v;return}
   if(p.goP&&(p.goP.dead||dist(p.goP,p)>400))p.goP=null;
   if(!p.goP&&(Math.hypot(p.tx-p.x,p.ty-p.y)<10||Math.random()<.08)){p.tx=cl(p.x+rnd(-300,300),100,WW-100);p.ty=cl(p.y+rnd(-300,300),100,WH-100)}return}
- const own=S.filter(s=>s.fac==p.fac),mine=own.filter(s=>s.own===p.id),cap=rank(p)[1];
+ const hv=G.tang&&p.kind=='lord'&&p.fac==P0().fac&&!G.call&&contOf(p.x,p.y)==12,own=hv?S.filter(s=>s.fac==p.fac&&s.race==12):S.filter(s=>s.fac==p.fac),mine=own.filter(s=>s.own===p.id),cap=rank(p)[1];
 if(p.kind=='lord'&&isMyKing()&&p.fac==P0().fac&&!G.call){const pl=P0(),pc=contOf(pl.x,pl.y);if(contOf(p.x,p.y)!=pc&&!S.some(s=>s.own===p.id&&s.race==contOf(p.x,p.y))){const ts=S.filter(s=>s.fac==p.fac&&s.race==pc);if(ts.length){p.goP=null;p.goS=nearestOf(ts,p);return}}}
  const fh=G.fights.find(f=>(f.af==p.fac||f.df==p.fac)&&dist(f,p)<650);if(fh&&tot(p.t)>100){p.goP=null;p.goS=null;p.tx=fh.x;p.ty=fh.y;return}
  if(G.call&&p.kind=='lord'&&isMyKing()&&p.fac==P0().fac){const pl=P0();if(dist(p,pl)>80){p.goS=p.goP=null;p.tx=pl.x+rnd(-60,60);p.ty=pl.y+rnd(-60,60)}return}
@@ -61,7 +61,7 @@ if(p.kind=='lord'&&isMyKing()&&p.fac==P0().fac&&!G.call){const pl=P0(),pc=contOf
  const k=G.F[p.fac]&&G.L[G.F[p.fac].king];
  if(p.kind=='lord'&&k&&!k.dead&&k.goS&&atWar(p.fac,k.goS.fac)&&tot(p.t)>120){if(dist(p,k)>60){p.goP=null;p.goS=null;p.tx=k.x+rnd(-40,40);p.ty=k.y+rnd(-40,40)}return}
  const sa=st+allies(p,420).reduce((a,q)=>a+str(q.t),0);
- const tg=(p.kind=='lord'&&Math.random()<.85)?null:S.filter(s=>OPEN(s.race)&&s.race==contOf(p.x,p.y)&&atWar(p.fac,s.fac)&&dist(s,p)<(p.kind=="king"?2200:1500)&&sa>str(s.gar)*AGR(p)).sort((a,b)=>dist(a,p)-dist(b,p))[0];
+ const tg=(p.kind=='lord'&&!hv&&Math.random()<.85)?null:S.filter(s=>OPEN(s.race)&&s.race==contOf(p.x,p.y)&&atWar(p.fac,s.fac)&&dist(s,p)<(hv?6000:p.kind=="king"?2200:1500)&&sa>str(s.gar)*AGR(p)).sort((a,b)=>dist(a,p)-dist(b,p))[0];
  if(tg){p.goS=tg;return}
  if(!p.goS&&Math.hypot(p.tx-p.x,p.ty-p.y)<10){const b=own.length?own[ri(0,own.length-1)]:p;p.tx=cl(b.x+rnd(-260,260),100,WW-100);p.ty=cl(b.y+rnd(-260,260),100,WH-100)}}
 function move(p,dt){let tx=p.tx,ty=p.ty;
@@ -138,4 +138,4 @@ function endFight(f,res){const P=fightPow(f),W=res=='A'?P.A:P.D,L=res=='A'?P.D:P
  else if(!s&&(f.af==pl.fac||f.df==pl.fac)){const wf=res=='A'?f.af:f.df;addLog(`${wf==pl.fac?'Quân ta':facN(wf)} thắng một trận (${fmt(f.n0)} quân tham chiến)`,wf==pl.fac?'#8f8':'#f99')}}
 const allies=(p,r)=>G.L.filter(q=>q!==p&&!q.dead&&!q.inF&&q.fac==p.fac&&(q.kind=='lord'||q.kind=='king')&&dist(q,p)<r);
 function incoming(o){let n=0;for(const p of G.L)if(p.kind=='rf'&&!p.dead&&p.to===o.id)n+=tot(p.t);return n}
-const myGarT=s=>(G.xian?[15000,10000,6000]:[6000,4000,2500])[s.type]*LKM();
+const myGarT=s=>(G.xian?[15000,10000,6000]:[6000,4000,2500])[s.type]*PW(s.race);
