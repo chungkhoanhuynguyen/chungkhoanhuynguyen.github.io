@@ -3,7 +3,7 @@ const $=s=>document.querySelector(s);
 const C=$('#c');let X=C.getContext('2d');
 let W=0,H=0,DPR=1;
 const MOB=matchMedia('(pointer:coarse)').matches;let QL=(()=>{try{const v=localStorage.getItem('ltlc-q');if(v)return +v||0}catch(e){}return matchMedia('(pointer:coarse)').matches?1:0})(),LOWQ=QL>=1,ULQ=QL==2,VG=null;
-let DSR=1;function rs(){DPR=(ULQ?.75:LOWQ?1:Math.min(2,devicePixelRatio||1))*DSR;VG=null;W=innerWidth;H=innerHeight;C.width=W*DPR|0;C.height=H*DPR|0}
+let DSR=1;function rs(){DPR=(ULQ?.75:LOWQ?1:Math.min(2,devicePixelRatio||1))*DSR;VG=null;W=innerWidth;H=innerHeight;C.width=W*DPR|0;C.height=H*DPR|0;document.body.classList.toggle('sm',W<720||H<520)}
 addEventListener('resize',rs);rs();
 let sd=7771;const R=()=>(sd=sd*16807%2147483647)/2147483647;
 const rnd=(a,b)=>a+Math.random()*(b-a),ri=(a,b)=>Math.floor(rnd(a,b+1)),dist=(a,b)=>Math.hypot(a.x-b.x,a.y-b.y),cl=(v,a,b)=>v<a?a:v>b?b:v;
@@ -17,6 +17,7 @@ function take(t,n){const o=Z3(),T=tot(t);n=Math.min(Math.round(n),T);if(!T||!(n>
  for(const k of KS){const c=Math.min(t[k],rem);t[k]-=c;o[k]+=c;rem-=c}return o}
 const kill=(t,n)=>{take(t,n)};
 const mix=n=>{n=Math.max(0,Math.round(n)||0);const a=Math.round(n*.55),b=Math.round(n*.3);return{inf:a,arc:b,cav:n-a-b}};
+const fk=n=>{n=Math.round(n)||0;const a=Math.abs(n),s=n<0?'-':'';return a>=1e9?s+(a/1e9).toFixed(a>=1e10?0:1)+'tỷ':a>=1e6?s+(a/1e6).toFixed(a>=1e7?0:1)+'tr':a>=1e4?s+Math.round(a/1e3)+'k':fmt(n)};
 const tt=t=>`🗡${fmt(t.inf)} 🏹${fmt(t.arc)} 🐎${fmt(t.cav)} <b>(${fmt(tot(t))})</b>`;
 function auto(a,b,bb){for(let r=0;r<120&&tot(a)&&tot(b);r++){const sa=str(a),sb=str(b)*bb;kill(b,Math.max(1,Math.round(sa*rnd(.03,.06)/bb)));kill(a,Math.max(1,Math.round(sb*rnd(.03,.06))))}
  if(!tot(b))return 1;if(!tot(a))return 0;return str(a)>str(b)*bb?1:0}
