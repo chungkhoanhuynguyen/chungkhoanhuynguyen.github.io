@@ -140,16 +140,17 @@ const Clues: React.FC<{ t: number; title: string; items: { text: string; at: num
         <div style={{ fontSize: 64, fontWeight: 900, color: "#ffd23f", width: 70 }}>{i + 1}</div><div style={{ fontSize: 48, fontWeight: 800, color: "#fff", flex: 1 }}>{x.text}</div>
         {ok && <div style={{ fontSize: 40, fontWeight: 900, color: "#5dff9b" }}>{x.ok}</div>}</div>; })}
       {src && <div style={{ marginTop: 24, fontSize: 26, color: "rgba(255,255,255,.55)" }}>{src}</div>}</div></AbsoluteFill>;
+const wideB = (set: Shot3D["set"], a: string, e: Expr, o: PO = {}, light: Shot3D["light"] = "room") => S(set, light, [[1.9, 1.5, 3.4], [NX, 1.0, RZ], 34], [[1.75, 1.47, 3.0], [NX, 1.0, RZ], 32], [C(a, [NX, 0, RZ], P(e, { side: -1, mode: "stand", ...o }))], RM);
 const PLAN: Plan[] = [
   { id: "S01", shots: [
     [0, () => CD((t) => <VCall t={t} name="Kiều 💕" lines={[]} />)],
-    [1, () => D3(closeR("canhovip", "bohung", "neutral", { acc: ["phone", "glow"] }, "roomdim"), (t) => <><ClockTag t={t} text="22:00" /><BigText t={t} at={0.3} text="THẬT TỆ KHI…" col="#ffd23f" y={90} size={110} /></>)],
+    [1, () => D3(wideB("canhovip", "bohung", "neutral", { acc: ["phone", "glow"] }, "roomdim"), (t) => <><ClockTag t={t} text="22:00" /><BigText t={t} at={0.3} text="THẬT TỆ KHI…" col="#ffd23f" y={90} size={110} /></>)],
     [3, () => CD((t) => <VCall t={t} name="Kiều 💕" lines={["Bố ơi, con đâm xe…", "Người ta giữ con ở đây", "Bố chuyển gấp cho con 50 triệu!"]} />)],
   ] },
   { id: "S02", shots: [
     [0, () => CD((t) => <VCall t={t} name="Kiều 💕" lines={["…"]} end={1.2} />)],
     [1, () => CD((t) => <PhoneCard t={t} time="22:01" date="Tin nhắn" notifs={[{ app: "Tin nhắn", col: "#ff4d5e", title: "Bố chuyển vào tài khoản này giúp con", body: "STK 0xxx xxx · NGUYEN VAN X", at: 0.3 }]} hue="red" />)],
-    [2, () => D3(closeR("canhovip", "bohung", "nervous", { acc: ["phone", "glow", "sweat"] }, "roomdim"))],
+    [2, () => D3(wideB("canhovip", "bohung", "nervous", { acc: ["phone", "glow", "sweat"] }, "roomdim"))],
     [3, () => CD((t) => <Clues t={t} title="NHỚ 3 CHI TIẾT" items={[{ text: "Con gọi bằng “BỐ”", at: 1.4 }, { text: "Cuộc gọi chỉ 10 giây", at: 2.8 }, { text: "Tài khoản đứng tên người lạ", at: 4.0 }]} />)],
   ] },
   { id: "S03", shots: [
@@ -172,29 +173,29 @@ const PLAN: Plan[] = [
     [2, () => CD((t) => <LessonCard t={t} title="Kẻ gian cần gì?" items={[{ n: "1", icon: "🎙", head: "Vài chục giây video có tiếng", body: "đủ để bắt chước giọng", at: 0.2 }, { n: "2", icon: "📷", head: "Vài tấm ảnh rõ mặt", body: "ghép vào cuộc gọi video ngắn, hình hơi mờ", at: at("S06", 2, 3) }, { n: "3", icon: "😰", head: "Người nghe đang hoảng loạn", body: "là đủ để tin", at: at("S06", 2, 3) + 3 }]} />)],
   ] },
   { id: "S07", shots: [
-    [0, () => D3(closeR("canhovip", "bohung", "nervous", { acc: ["phone", "glow"] }, "roomdim"), (t) => <LocTag t={t} l1="ÔNG HÙNG" l2="Bố của Kiều" />)],
+    [0, () => D3(wideB("canhovip", "bohung", "nervous", { acc: ["phone", "glow"] }, "roomdim"), (t) => <LocTag t={t} l1="ÔNG HÙNG" l2="Bố của Kiều" />)],
     [1, () => CD((t) => <BankCard t={t} clock="22:03" amt="50.000.000 đ" note="Đang chuyển…" />)],
     [3, () => CD((t) => <Bio t={t} />)],
   ] },
   { id: "S08", shots: [
     [0, () => CD((t) => <Rows t={t} title="Từ 1/7/2024: phải xác thực khuôn mặt khi" foot="Quyết định 2345/QĐ-NHNN" rows={[{ l: "Chuyển trên 10 triệu đồng/lần", v: "✓", at: 0.6, big: true }, { l: "Tổng trên 20 triệu đồng/ngày", v: "✓", at: 2.0 }]} />)],
-    [1, () => D3(closeR("canhovip", "bohung", "dazed", { acc: ["phone", "glow"] }, "roomdim"), (t) => <BigText t={t} at={0.3} text="KHỰNG LẠI" col="#4dd2ff" y={90} size={130} />)],
+    [1, () => D3(wideB("canhovip", "bohung", "dazed", { acc: ["phone", "glow"] }, "roomdim"), (t) => <BigText t={t} at={0.3} text="KHỰNG LẠI" col="#4dd2ff" y={90} size={130} />)],
   ] },
   { id: "S09", shots: [
     [0, () => D3(S("canhovip", "room", ...roomTwo2, [C("dung", [LX, 0, RZ], P("stern", { side: 1, mode: "stand", wave: 1 })), C("bohung", [NX, 0, RZ], P("neutral", { side: -1, mode: "stand" }))], RM), (t) => <ClockTag t={t} text="HỒI TẾT" />)],
     [2, () => CD((t) => <LessonCard t={t} title="Lời dặn của Dũng" items={[{ n: "1", icon: "📵", head: "Ai gọi xin tiền gấp, dù là ai", body: "cúp máy, gọi lại số cũ", at: 0.2 }, { n: "2", icon: "🔑", head: "Hỏi câu mật khẩu của nhà mình", body: "", at: at("S09", 2, 3) }]} />)],
   ] },
   { id: "S10", shots: [
-    [0, () => D3(closeR("canhovip", "bohung", "worried", { acc: ["phone", "glow"] }, "roomdim"), (t) => <>{BL(1000, 110, "Dũng ơi, Kiều đâm xe à?", rel("S10", 1, sc("S10").a), "r")(t)}</>)],
+    [0, () => D3(wideB("canhovip", "bohung", "worried", { acc: ["phone", "glow"] }, "roomdim"), (t) => <>{BL(1000, 110, "Dũng ơi, Kiều đâm xe à?", rel("S10", 1, sc("S10").a), "r")(t)}</>)],
     [2, () => D3(PH("gym", [0.5, 0.6], [C("dung", [-0.15, 0, 0.7], P("neutral", { side: -1, mode: "stand", acc: ["phone"] })), C("kieu", [0.95, 0, 0.7], P("smile", { side: 1, mode: "stand" }))], pcam(0.4)), (t) => <><LocTag t={t} l1="PHÒNG TẬP" l2="Cùng lúc đó" />{BL(120, 110, "Dạ không bố ơi, Kiều đang ngồi cạnh con đây.", rel("S10", 3, sc("S10").sens[2].a))(t)}</>)],
   ] },
   { id: "S11", shots: [
     [0, () => D3(PH("gym", [0.5, 0.6], [C("kieu", [0.4, 0, 0.7], P("worried", { side: -1, mode: "stand", acc: ["phone"] }))], pcam(0.4)), (t) => <>{BL(1000, 110, "Ba ơi, con đây.", 0.2, "r")(t)}</>)],
-    [2, () => D3(closeR("canhovip", "bohung", "stern", { acc: ["phone", "glow"] }, "roomdim"), (t) => <>{BL(1000, 110, "Con mèo nhà mình hồi bé tên gì?", 0.3, "r")(t)}</>)],
+    [2, () => D3(wideB("canhovip", "bohung", "stern", { acc: ["phone", "glow"] }, "roomdim"), (t) => <>{BL(1000, 110, "Con mèo nhà mình hồi bé tên gì?", 0.3, "r")(t)}</>)],
     [3, () => D3(PH("gym", [0.5, 0.6], [C("kieu", [0.4, 0, 0.7], P("laugh", { side: -1, mode: "stand", acc: ["phone", "tears"] }))], pcam(0.4)), (t) => <BigText t={t} at={0.5} text="🐱 BÁNH BAO" col="#ffd23f" y={90} size={140} />)],
   ] },
   { id: "S12", shots: [
-    [0, () => D3(closeR("canhovip", "bohung", "relief", {}, "roomdim"), (t) => <BigText t={t} at={0.6} text="50 TRIỆU = 3 THÁNG LƯƠNG HƯU" col="#5dff9b" y={90} size={90} />)],
+    [0, () => D3(wideB("canhovip", "bohung", "relief", {}, "roomdim"), (t) => <BigText t={t} at={0.6} text="50 TRIỆU = 3 THÁNG LƯƠNG HƯU" col="#5dff9b" y={90} size={90} />)],
     [2, () => CD((t) => <Rows t={t} title="Dũng làm ngay" rows={[{ l: "Chụp lại số tài khoản lạ", v: "📸", at: 0.4 }, { l: "Báo công an phường", v: "🚓", at: 1.6, big: true }, { l: "Báo ngân hàng", v: "🏦", at: 2.8 }]} />)],
   ] },
   { id: "S13", shots: [
@@ -217,7 +218,7 @@ const PLAN: Plan[] = [
   { id: "S18", shots: [[0, () => CD((t) => <LessonCard t={t} title="3. Bớt mảnh ghép trên mạng" items={[{ n: "1", icon: "🎙", head: "Bớt đăng giọng + mặt rõ + thông tin gia đình", body: "", at: at("S18", 0, 1) }, { n: "2", icon: "🔒", head: "Chế độ riêng tư", body: "cho những gì không cần công khai", at: at("S18", 0, 2) }]} />)]] },
   { id: "S19", shots: [[0, () => CD((t) => <LessonCard t={t} title="4. Bảo vệ bố mẹ lớn tuổi" items={[{ n: "1", icon: "📉", head: "Đặt hạn mức chuyển khoản thấp", body: "", at: at("S19", 0, 1) }, { n: "2", icon: "⏳", head: "Không ai thật bắt chuyển tiền trong vài phút", body: "ngân hàng, công an hay con cái", at: at("S19", 0, 1) + 3 }]} />)]] },
   { id: "S20", shots: [
-    [0, () => D3(closeR("canhovip", "bohung", "smile", { acc: ["phone", "glow"] }), (t) => <BigText t={t} at={0.4} text="XEM ÍT HƠN, GỌI NHIỀU HƠN" col="#5dff9b" y={90} size={96} />)],
+    [0, () => D3(wideB("canhovip", "bohung", "smile", { acc: ["phone", "glow"] }), (t) => <BigText t={t} at={0.4} text="XEM ÍT HƠN, GỌI NHIỀU HƠN" col="#5dff9b" y={90} size={96} />)],
     [3, () => CD((t) => <Big2 t={t} items={[{ a: "🐱", b: "bí mật quan trọng nhất của cả nhà", at: 0.3, col: "#ffd23f" }]} />)],
   ] },
   { id: "S21", shots: [[0, () => CD((t) => <Ask t={t} />)]] },
