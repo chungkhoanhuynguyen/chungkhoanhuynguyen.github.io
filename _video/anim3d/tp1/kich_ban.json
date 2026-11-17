@@ -1,27 +1,106 @@
-{"key": "TP1811", "title": "Lãi chín phần trăm ở quầy ngân hàng: sổ tiết kiệm hay trái phiếu?", "scenes": [
-{"id": "S01", "say": "Thật tệ khi tờ giấy mình ký ở quầy ngân hàng lại không phải là sổ tiết kiệm. Chín giờ sáng, quầy giao dịch đông nghịt. Bà Tâm, mẹ của Thương Thật Thà, cầm cuốn sổ hưu bảy trăm triệu, tiền dành dụm cả đời. Cô nhân viên cười rất tươi: bác ơi, gói này lãi chín phần trăm, cao hơn gửi tiết kiệm gần gấp đôi, bác ký luôn đi kẻo hết suất."},
-{"id": "S02", "say": "Bà Tâm đặt bút. Tối hôm đó, Thương về nhà, nhìn tờ giấy mẹ mang về, và đứng sững lại. Trên đầu tờ giấy không ghi chữ sổ tiết kiệm. Nó ghi: hợp đồng mua bán trái phiếu."},
-{"id": "S03", "say": "Để em kể lại từ đầu. Thương Thật Thà, hai mươi chín tuổi, nhân viên marketing một hãng mỹ phẩm. Cả phòng gọi là Thật Thà vì cô chưa bao giờ nói dối, kể cả khi sếp hỏi bài đăng có ai xem không. Lương đều, tháng nào cũng để riêng một phần, mua đều đặn, không vay một đồng."},
-{"id": "S04", "say": "Bạn thân của cô thì ngược lại. Chiến Lăng Nhăng, làm chạy quảng cáo thuê, tháng thì cầm trăm triệu, tháng thì ăn mì tôm. Chiến gọi điện: Thương ơi, mẹ mày được lãi chín phần trăm à? Ngon thế! Bảo bác lấy cho tao một suất với."},
-{"id": "S05", "say": "Thương không cười. Cô hỏi lại: Chiến, mày có biết trái phiếu với tiền gửi khác nhau ở đâu không? Đầu dây bên kia im lặng mấy giây. Rồi Chiến nói: thì cũng là gửi tiền lấy lãi thôi mà."},
-{"id": "S06", "say": "Không, anh chị ạ. Đây chính là chỗ rất nhiều người nhầm. Gửi tiết kiệm là anh chị cho ngân hàng vay, và khoản đó được bảo hiểm tiền gửi, tối đa một trăm hai mươi lăm triệu đồng mỗi người ở mỗi ngân hàng. Còn mua trái phiếu là anh chị cho chính tổ chức phát hành vay. Không có bảo hiểm tiền gửi. Và thường không rút ra trước hạn như sổ tiết kiệm được."},
-{"id": "S07", "say": "Vì sao lúc này người ta mời mua trái phiếu nhiều thế? Từ cuối tháng mười đến giữa tháng mười một năm nay, các ngân hàng phát hành mười ba lô trái phiếu, huy động hơn mười lăm nghìn sáu trăm tỷ đồng. Lãi bình quân khoảng tám phẩy bảy phần trăm một năm, có lô lên chín phẩy chín."},
-{"id": "S08", "say": "Trong khi đó, lãi tiết kiệm niêm yết vừa giảm từ nửa đến một điểm phần trăm, sau khi Ngân hàng Nhà nước yêu cầu hạ lãi suất. Khoảng cách giữa hai con số ngày càng xa. Và khoảng cách đó, chính là lý do tờ giấy kia được đẩy về phía bà Tâm."},
-{"id": "S09", "say": "Thương ngồi cả đêm đọc từng trang hợp đồng. Bên phát hành là ai? Kỳ hạn mấy năm? Có tài sản bảo đảm không? Muốn rút sớm thì bán lại cho ai? Đến trang mười hai, cô dừng lại ở một dòng chữ rất nhỏ: nhà đầu tư tự chịu rủi ro."},
-{"id": "S10", "say": "Mẹ ơi, lúc ký có ai giải thích dòng này cho mẹ không? Bà Tâm lắc đầu. Cô ấy bảo giống gửi tiết kiệm, chỉ là lãi cao hơn thôi con. Mẹ tin vì mẹ gửi ở đây hai mươi năm rồi."},
-{"id": "S11", "say": "Câu nói đó làm Thương lạnh người. Vì nó giống hệt câu chuyện đã xảy ra với hàng chục nghìn người, cách đây chưa lâu."},
-{"id": "S12", "say": "Từ năm hai nghìn không trăm mười tám đến năm hai nghìn không trăm hai mươi hai, theo cáo trạng vụ án Vạn Thịnh Phát, hơn ba mươi lăm nghìn tám trăm người đã mua trái phiếu, nhiều người mua ngay tại quầy ngân hàng quen thuộc. Số tiền bị chiếm đoạt hơn ba mươi nghìn tỷ đồng."},
-{"id": "S13", "say": "Rất nhiều người trong số đó là các cô, các bác về hưu. Họ không tham. Họ chỉ tin. Tin quầy giao dịch quen, tin nụ cười quen, tin rằng ở trong ngân hàng thì cái gì cũng là tiết kiệm."},
-{"id": "S14", "say": "Em nói rõ điều này để anh chị khỏi hiểu lầm. Trái phiếu không phải là xấu. Trái phiếu của tổ chức phát hành tốt, minh bạch, là một kênh đầu tư bình thường trên thế giới. Cái nguy hiểm là mua một thứ mà mình không biết mình đang mua."},
-{"id": "S15", "say": "Sáng hôm sau, Thương xin nghỉ nửa ngày, đưa mẹ quay lại ngân hàng. Chiến Lăng Nhăng cũng đi theo, lần này không phải để xin suất, mà để làm tài xế. Trên đường, Chiến còn gặp lại Hạnh Tóc Đỏ ở ngã tư, và quay mặt đi nhanh hơn cả đèn xanh."},
-{"id": "S16", "say": "Ở quầy, Thương hỏi bốn câu. Một, bên phát hành là ai, báo cáo tài chính ở đâu? Hai, kỳ hạn bao lâu, muốn bán lại trước hạn thì ai mua? Ba, khoản này có bảo hiểm tiền gửi không? Bốn, ghi giúp em lên giấy là sản phẩm này không phải tiền gửi."},
-{"id": "S17", "say": "Cô nhân viên ngập ngừng. Đến câu thứ tư thì cô gọi quản lý. May mắn, lô trái phiếu đó chưa đến ngày phát hành, phiếu đăng ký mua vẫn còn hủy được. Bà Tâm được hướng dẫn làm thủ tục, và chuyển phần lớn tiền về lại sổ tiết kiệm."},
-{"id": "S18", "say": "Ra khỏi ngân hàng, bà Tâm nắm tay con gái, mắt đỏ hoe. Mẹ già rồi, mẹ chỉ sợ làm mất tiền của các con. Thương ôm mẹ. Mẹ không mất gì cả. Mình chỉ cần đọc kỹ hơn thôi mẹ ạ."},
-{"id": "S19", "say": "Tối đó, cả nhóm ngồi ở quán cà phê vỉa hè. Chiến hỏi em: Huy ơi, thế rốt cuộc lãi chín phần trăm có nên mua không? Em trả lời: không ai trả lãi cao hơn mà không có lý do. Câu hỏi đúng không phải là lãi bao nhiêu, mà là rủi ro nằm ở đâu."},
-{"id": "S20", "say": "Bài học thứ nhất. Đọc dòng đầu tiên của tờ giấy trước khi đọc con số lãi suất. Hợp đồng tiền gửi khác hợp đồng mua trái phiếu, khác bảo hiểm liên kết đầu tư. Không hiểu thì chưa ký. Ai hối thúc ký luôn kẻo hết suất, đó là lúc phải chậm lại."},
-{"id": "S21", "say": "Bài học thứ hai. Tiền dưỡng già, tiền chữa bệnh, tiền phải dùng trong vòng một hai năm thì để ở nơi an toàn và rút được. Đừng đem tiền không được phép mất đi đổi lấy vài phần trăm lãi."},
-{"id": "S22", "say": "Bài học thứ ba. Muốn đầu tư để có lợi nhuận cao hơn, hãy chia vốn. Không dồn hết vào một chỗ, một sản phẩm, một tổ chức phát hành. Mỗi khoản đều phải biết trước: nếu sai thì mất tối đa bao nhiêu."},
-{"id": "S23", "say": "Bài học thứ tư. Hỏi người trong nhà. Rất nhiều bố mẹ ngại hỏi con vì sợ bị chê. Anh chị nào có bố mẹ hay đi gửi tiền một mình, tối nay hãy gọi một cuộc, hỏi thử: sổ của bố mẹ đang là sổ gì."},
-{"id": "S24", "say": "Còn Thương? Cô vẫn mua đều mỗi tháng như cũ. Còn Chiến Lăng Nhăng, lần đầu tiên trong đời, mở một cuốn sổ tiết kiệm, và đọc hết trang đầu trước khi ký."},
-{"id": "S25", "say": "Còn anh chị, đã bao giờ được mời mua một sản phẩm lãi cao ngay tại quầy chưa? Bình luận cho em biết nhé. Ai muốn học cách quản trị rủi ro cho tiền của mình, cứ vào web Chứng Khoán Huy Nguyễn."}
-]}
+{
+"key": "TP1811",
+"title": "Lãi chín phần trăm ở quầy ngân hàng: sổ tiết kiệm hay trái phiếu?",
+"scenes": [
+{
+"id": "S01",
+"say": "Thật tệ khi tờ giấy mình ký ở quầy ngân hàng lại không phải là sổ tiết kiệm. Chín giờ sáng, quầy giao dịch đông nghịt. Bà Tâm, mẹ của Thương Thật Thà, cầm cuốn sổ hưu bảy trăm triệu, tiền dành dụm cả đời. Cô nhân viên cười rất tươi: bác ơi, gói này lãi chín phần trăm, cao hơn gửi tiết kiệm gần gấp đôi, bác ký luôn đi kẻo hết suất."
+},
+{
+"id": "S02",
+"say": "Bà Tâm đặt bút. Tối hôm đó, Thương về nhà, nhìn tờ giấy mẹ mang về, và đứng sững lại. Trên đầu tờ giấy không ghi chữ sổ tiết kiệm. Nó ghi: hợp đồng mua bán trái phiếu. Anh chị nhớ giúp em ba chi tiết: câu ký luôn kẻo hết suất, dòng chữ trên đầu tờ giấy, và một dòng nhỏ ở góc: ngày phát hành, hai mươi lăm tháng mười một. Cuối phim, cả ba sẽ có ích."
+},
+{
+"id": "S03",
+"say": "Để em kể lại từ đầu. Thương Thật Thà, hai mươi chín tuổi, nhân viên marketing một hãng mỹ phẩm. Cả phòng gọi là Thật Thà vì cô chưa bao giờ nói dối, kể cả khi sếp hỏi bài đăng có ai xem không. Lương đều, tháng nào cũng để riêng một phần, mua đều đặn, không vay một đồng."
+},
+{
+"id": "S04",
+"say": "Bạn thân của cô thì ngược lại. Chiến Lăng Nhăng, làm chạy quảng cáo thuê, tháng thì cầm trăm triệu, tháng thì ăn mì tôm. Chiến gọi điện: Thương ơi, mẹ mày được lãi chín phần trăm à? Ngon thế! Bảo bác lấy cho tao một suất với."
+},
+{
+"id": "S05",
+"say": "Thương không cười. Cô hỏi lại: Chiến, mày có biết trái phiếu với tiền gửi khác nhau ở đâu không? Đầu dây bên kia im lặng mấy giây. Rồi Chiến nói: thì cũng là gửi tiền lấy lãi thôi mà."
+},
+{
+"id": "S06",
+"say": "Không, anh chị ạ. Đây chính là chỗ rất nhiều người nhầm. Gửi tiết kiệm là anh chị cho ngân hàng vay, và khoản đó được bảo hiểm tiền gửi, tối đa một trăm hai mươi lăm triệu đồng mỗi người ở mỗi ngân hàng. Còn mua trái phiếu là anh chị cho chính tổ chức phát hành vay. Không có bảo hiểm tiền gửi. Và thường không rút ra trước hạn như sổ tiết kiệm được."
+},
+{
+"id": "S07",
+"say": "Vì sao lúc này người ta mời mua trái phiếu nhiều thế? Từ cuối tháng mười đến giữa tháng mười một năm nay, các ngân hàng phát hành mười ba lô trái phiếu, huy động hơn mười lăm nghìn sáu trăm tỷ đồng. Lãi bình quân khoảng tám phẩy bảy phần trăm một năm, có lô lên chín phẩy chín."
+},
+{
+"id": "S08",
+"say": "Trong khi đó, lãi tiết kiệm niêm yết vừa giảm từ nửa đến một điểm phần trăm, sau khi Ngân hàng Nhà nước yêu cầu hạ lãi suất. Khoảng cách giữa hai con số ngày càng xa. Và khoảng cách đó, chính là lý do tờ giấy kia được đẩy về phía bà Tâm."
+},
+{
+"id": "S09",
+"say": "Thương ngồi cả đêm đọc từng trang hợp đồng. Bên phát hành là ai? Kỳ hạn mấy năm? Có tài sản bảo đảm không? Muốn rút sớm thì bán lại cho ai? Đến trang mười hai, cô dừng lại ở một dòng chữ rất nhỏ: nhà đầu tư tự chịu rủi ro."
+},
+{
+"id": "S10",
+"say": "Mẹ ơi, lúc ký có ai giải thích dòng này cho mẹ không? Bà Tâm lắc đầu. Cô ấy bảo giống gửi tiết kiệm, chỉ là lãi cao hơn thôi con. Mẹ tin vì mẹ gửi ở đây hai mươi năm rồi."
+},
+{
+"id": "S11",
+"say": "Câu nói đó làm Thương lạnh người. Vì nó giống hệt câu chuyện đã xảy ra với hàng chục nghìn người, cách đây chưa lâu."
+},
+{
+"id": "S12",
+"say": "Từ năm hai nghìn không trăm mười tám đến năm hai nghìn không trăm hai mươi hai, theo cáo trạng vụ án Vạn Thịnh Phát, hơn ba mươi lăm nghìn tám trăm người đã mua trái phiếu, nhiều người mua ngay tại quầy ngân hàng quen thuộc. Số tiền bị chiếm đoạt hơn ba mươi nghìn tỷ đồng."
+},
+{
+"id": "S13",
+"say": "Rất nhiều người trong số đó là các cô, các bác về hưu. Họ không tham. Họ chỉ tin. Tin quầy giao dịch quen, tin nụ cười quen, tin rằng ở trong ngân hàng thì cái gì cũng là tiết kiệm."
+},
+{
+"id": "S14",
+"say": "Em nói rõ điều này để anh chị khỏi hiểu lầm. Trái phiếu không phải là xấu. Trái phiếu của tổ chức phát hành tốt, minh bạch, là một kênh đầu tư bình thường trên thế giới. Cái nguy hiểm là mua một thứ mà mình không biết mình đang mua."
+},
+{
+"id": "S15",
+"say": "Sáng hôm sau, Thương xin nghỉ nửa ngày, đưa mẹ quay lại ngân hàng. Chiến Lăng Nhăng cũng đi theo, lần này không phải để xin suất, mà để làm tài xế. Trên đường, Chiến còn gặp lại Hạnh Tóc Đỏ ở ngã tư, và quay mặt đi nhanh hơn cả đèn xanh."
+},
+{
+"id": "S16",
+"say": "Ở quầy, Thương hỏi bốn câu. Một, bên phát hành là ai, báo cáo tài chính ở đâu? Hai, kỳ hạn bao lâu, muốn bán lại trước hạn thì ai mua? Ba, khoản này có bảo hiểm tiền gửi không? Bốn, ghi giúp em lên giấy là sản phẩm này không phải tiền gửi."
+},
+{
+"id": "S17",
+"say": "Cô nhân viên ngập ngừng. Đến câu thứ tư thì cô gọi quản lý. Thương chỉ vào chi tiết thứ ba: ngày phát hành là hai mươi lăm tháng mười một, hôm nay mới mười tám. Nghĩa là tiền của mẹ mới là tiền đặt mua, chưa thành trái phiếu, nên phiếu đăng ký vẫn còn hủy được. Quản lý kiểm tra lại, và gật đầu. Bà Tâm làm thủ tục, chuyển toàn bộ tiền về lại sổ tiết kiệm."
+},
+{
+"id": "S18",
+"say": "Ra khỏi ngân hàng, bà Tâm nắm tay con gái, mắt đỏ hoe. Mẹ già rồi, mẹ chỉ sợ làm mất tiền của các con. Thương ôm mẹ. Mẹ không mất gì cả. Mình chỉ cần đọc kỹ hơn thôi mẹ ạ."
+},
+{
+"id": "S19",
+"say": "Tối đó, cả nhóm ngồi ở quán cà phê vỉa hè. Chiến hỏi em: Huy ơi, thế rốt cuộc lãi chín phần trăm có nên mua không? Em chỉ lại ba chi tiết từ đầu phim. Câu kẻo hết suất là dấu hiệu bị hối thúc. Dòng chữ trên đầu tờ giấy cho biết mình đang mua cái gì. Còn ngày phát hành cho biết mình còn bao nhiêu thời gian để sửa sai. Và một điều nữa: không ai trả lãi cao hơn mà không có lý do. Câu hỏi đúng không phải là lãi bao nhiêu, mà là rủi ro nằm ở đâu."
+},
+{
+"id": "S20",
+"say": "Bài học thứ nhất. Đọc dòng đầu tiên của tờ giấy trước khi đọc con số lãi suất. Hợp đồng tiền gửi khác hợp đồng mua trái phiếu, khác bảo hiểm liên kết đầu tư. Không hiểu thì chưa ký. Ai hối thúc ký luôn kẻo hết suất, đó là lúc phải chậm lại."
+},
+{
+"id": "S21",
+"say": "Bài học thứ hai. Tiền dưỡng già, tiền chữa bệnh, tiền phải dùng trong vòng một hai năm thì để ở nơi an toàn và rút được. Đừng đem tiền không được phép mất đi đổi lấy vài phần trăm lãi."
+},
+{
+"id": "S22",
+"say": "Bài học thứ ba. Muốn đầu tư để có lợi nhuận cao hơn, hãy chia vốn. Không dồn hết vào một chỗ, một sản phẩm, một tổ chức phát hành. Mỗi khoản đều phải biết trước: nếu sai thì mất tối đa bao nhiêu."
+},
+{
+"id": "S23",
+"say": "Bài học thứ tư. Hỏi người trong nhà. Rất nhiều bố mẹ ngại hỏi con vì sợ bị chê. Anh chị nào có bố mẹ hay đi gửi tiền một mình, tối nay hãy gọi một cuộc, hỏi thử: sổ của bố mẹ đang là sổ gì."
+},
+{
+"id": "S24",
+"say": "Còn Thương? Cô vẫn mua đều mỗi tháng như cũ. Còn Chiến Lăng Nhăng, lần đầu tiên trong đời, mở một cuốn sổ tiết kiệm, và đọc hết trang đầu trước khi ký."
+},
+{
+"id": "S25",
+"say": "Còn anh chị, đã bao giờ được mời mua một sản phẩm lãi cao ngay tại quầy chưa? Bình luận cho em biết nhé. Ai muốn học cách quản trị rủi ro cho tiền của mình, cứ vào web Chứng Khoán Huy Nguyễn."
+}
+]
+}

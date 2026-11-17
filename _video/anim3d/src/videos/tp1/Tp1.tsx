@@ -123,6 +123,13 @@ const Compare: React.FC<{ t: number; rAt: number }> = ({ t, rAt }) => { const co
   return <AbsoluteFill style={{ fontFamily: F, justifyContent: "center", alignItems: "center" }}><Bg t={t} hue="navy" />
     <div style={{ display: "flex", gap: 70, marginTop: -80 }}>{col("GỬI TIẾT KIỆM", ["Cho ngân hàng vay", "Có bảo hiểm tiền gửi", "Tối đa 125 triệu/người/ngân hàng", "Rút trước hạn được"], "#5dff9b", 0.2)}{col("MUA TRÁI PHIẾU", ["Cho tổ chức phát hành vay", "KHÔNG có bảo hiểm tiền gửi", "Thường không rút trước hạn", "Muốn thoát phải có người mua lại"], "#ff4d5e", rAt)}</div>
     <div style={{ position: "absolute", bottom: 175, width: "100%", textAlign: "center", fontSize: 26, color: "rgba(255,255,255,.55)" }}>Hạn mức bảo hiểm tiền gửi: Quyết định 32/2021/QĐ-TTg</div></AbsoluteFill>; };
+const Clues: React.FC<{ t: number; title: string; items: { text: string; at: number; ok?: string }[]; src?: string }> = ({ t, title, items, src }) =>
+  <AbsoluteFill style={{ fontFamily: F, justifyContent: "center", alignItems: "center" }}><Bg t={t} hue="night" />
+    <div style={{ width: 1400 }}><div style={{ fontSize: 46, fontWeight: 900, color: "#ffd23f", letterSpacing: 3, marginBottom: 30, opacity: sm(t / 0.3) }}>🔍 {title}</div>
+      {items.map((x, i) => { const a = sm((t - x.at) / 0.35), ok = x.ok && t > x.at + 1.2; return <div key={i} style={{ display: "flex", alignItems: "center", gap: 30, marginTop: 24, padding: "22px 34px", borderRadius: 20, background: "rgba(255,210,63,.08)", border: "3px solid " + (ok ? "#5dff9b" : "rgba(255,210,63,.6)"), opacity: a, transform: `translateX(${(1 - a) * 80}px)` }}>
+        <div style={{ fontSize: 64, fontWeight: 900, color: "#ffd23f", width: 70 }}>{i + 1}</div><div style={{ fontSize: 48, fontWeight: 800, color: "#fff", flex: 1 }}>{x.text}</div>
+        {ok && <div style={{ fontSize: 40, fontWeight: 900, color: "#5dff9b" }}>{x.ok}</div>}</div>; })}
+      {src && <div style={{ marginTop: 24, fontSize: 26, color: "rgba(255,255,255,.55)" }}>{src}</div>}</div></AbsoluteFill>;
 const PLAN: Plan[] = [
   { id: "S01", shots: [
     [0, () => D3(bank([NV("smile"), BA("neutral", { acc: ["paper"] })], ...bWide), (t) => <BigText t={t} at={0.4} text="THẬT TỆ KHI…" col="#ffd23f" y={300} size={120} />)],
@@ -135,6 +142,7 @@ const PLAN: Plan[] = [
     [1, () => D3(S(HOME, "roomdim", ...roomTwo2, [TH("neutral", { acc: ["paper"] }), ME("smile")], RM), (t) => <ClockTag t={t} text="TỐI HÔM ĐÓ" />)],
     [2, () => CD((t) => PAPER(t))],
     [3, () => D3(closeL(HOME, "thuong", "shock", { acc: ["paper"] }, "roomdim"), (t) => <BigText t={t} at={0.2} text="HỢP ĐỒNG MUA BÁN TRÁI PHIẾU" col="#ff4d5e" y={90} size={86} />)],
+    [4, () => CD((t) => <Clues t={t} title="NHỚ 3 CHI TIẾT" items={[{ text: "“Ký luôn kẻo hết suất”", at: 1.2 }, { text: "Dòng chữ trên đầu tờ giấy", at: 2.6 }, { text: "Ngày phát hành: 25/11", at: 3.8 }]} />)],
   ] },
   { id: "S03", shots: [
     [0, () => CD(PR("toanha", (t) => <LocTag t={t} l1="HÀ NỘI" l2="Để em kể lại từ đầu" />))],
@@ -203,8 +211,9 @@ const PLAN: Plan[] = [
   ] },
   { id: "S17", shots: [
     [0, () => D3(bank([NV("nervous"), THb("stern", { acc: ["paper"] })], ...bClerk), (t) => <BigText t={t} at={0.3} text="NGẬP NGỪNG…" col="#fff" y={300} size={120} />)],
-    [2, () => CD((t) => PAPER(t, 0.8))],
-    [3, () => D3(bank([BA("smile", { acc: ["paper"] }), THb("smile"), NV("neutral")], ...bCust), (t) => <BigText t={t} at={0.4} text="TIỀN VỀ LẠI SỔ TIẾT KIỆM" col="#5dff9b" y={300} size={100} />)],
+    [2, () => CD((t) => <Clues t={t} title="CHI TIẾT THỨ 3" items={[{ text: "Ngày phát hành: 25/11", at: 0.3 }, { text: "Hôm nay: 18/11", at: 1.6 }, { text: "Mới là tiền ĐẶT MUA → còn hủy được", at: at("S17", 2, 3), ok: "✓" }]} />)],
+    [4, () => D3(bank([NV("smile"), THb("smile", { acc: ["paper"] })], ...bClerk), (t) => <BigText t={t} at={0.3} text="QUẢN LÝ GẬT ĐẦU" col="#5dff9b" y={300} size={110} />)],
+    [5, () => D3(bank([BA("smile", { acc: ["paper"] }), THb("smile"), NV("neutral")], ...bCust), (t) => <BigText t={t} at={0.4} text="TIỀN VỀ LẠI SỔ TIẾT KIỆM" col="#5dff9b" y={300} size={100} />)],
   ] },
   { id: "S18", shots: [
     [0, () => D3(PH("dem", [0.5, 0.6], [C("thuong", [-0.15, 0, 0.7], P("sad", { side: -1, mode: "stand" })), C("mehung", [0.95, 0, 0.7], P("cry", { side: 1, mode: "stand", acc: ["tears"] }))], pcam(0.4)), (t) => <>{BL(1000, 110, "Mẹ già rồi, mẹ chỉ sợ làm mất tiền của các con.", rel("S18", 1, sc("S18").a), "r")(t)}</>)],
@@ -213,8 +222,10 @@ const PLAN: Plan[] = [
   { id: "S19", shots: [
     [0, () => D3(S("cafe", "room", ...roomTwo2, [CH("neutral", { acc: ["cup"] }), HU("smile", { acc: ["cup"] })], RM), (t) => <LocTag t={t} l1="QUÁN CÀ PHÊ VỈA HÈ" l2="Tối đó" />)],
     [1, () => D3(closeL("cafe", "chien", "dazed", { acc: ["cup"] }), (t) => <>{BL(1060, 110, "Huy ơi, rốt cuộc lãi 9% có nên mua không?", 0.2, "r")(t)}</>)],
-    [2, () => D3(closeR("cafe", "huy", "neutral", { acc: ["cup"] }), (t) => <>{BL(120, 110, "Không ai trả lãi cao hơn mà không có lý do.", 0.2)(t)}</>)],
-    [3, () => CD((t) => <Big2 t={t} items={[{ a: "LÃI ✕", b: "không phải câu hỏi đúng", at: 0.2, col: "#ff4d5e" }, { a: "RỦI RO ✓", b: "nằm ở đâu?", at: 1.6, col: "#5dff9b" }]} />)],
+    [2, () => D3(closeR("cafe", "huy", "neutral", { acc: ["cup"] }), (t) => <LocTag t={t} l1="HUY NGUYỄN" l2="Nhìn lại 3 chi tiết đầu phim" />)],
+    [3, () => CD((t) => <Clues t={t} title="3 CHI TIẾT ĐẦU PHIM" items={[{ text: "“Kẻo hết suất” → bị hối thúc", at: 0.2, ok: "✓" }, { text: "Dòng đầu tờ giấy → đang mua gì", at: at("S19", 3, 4), ok: "✓" }, { text: "Ngày phát hành → còn thời gian sửa sai", at: at("S19", 3, 5), ok: "✓" }]} />)],
+    [6, () => D3(closeR("cafe", "huy", "neutral", { acc: ["cup"] }), (t) => <>{BL(120, 110, "Không ai trả lãi cao hơn mà không có lý do.", 0.4)(t)}</>)],
+    [7, () => CD((t) => <Big2 t={t} items={[{ a: "LÃI ✕", b: "không phải câu hỏi đúng", at: 0.2, col: "#ff4d5e" }, { a: "RỦI RO ✓", b: "nằm ở đâu?", at: 1.6, col: "#5dff9b" }]} />)],
   ] },
   { id: "S20", shots: [[0, () => CD((t) => <LessonCard t={t} title="1. Đọc dòng đầu tiên trước con số lãi" items={[{ n: "1", icon: "📄", head: "Tiền gửi ≠ trái phiếu ≠ bảo hiểm liên kết đầu tư", body: "", at: at("S20", 0, 2) }, { n: "2", icon: "✋", head: "Không hiểu thì chưa ký", body: "", at: at("S20", 0, 3) }, { n: "3", icon: "⏸", head: "Bị hối thúc “kẻo hết suất”", body: "đó là lúc phải chậm lại", at: at("S20", 0, 4) }]} />)]] },
   { id: "S21", shots: [[0, () => CD((t) => <LessonCard t={t} title="2. Tiền không được phép mất" items={[{ n: "1", icon: "🏥", head: "Tiền dưỡng già, chữa bệnh, cần trong 1–2 năm", body: "để nơi an toàn, rút được", at: at("S21", 0, 1) }, { n: "2", icon: "⚠", head: "Đừng đổi lấy vài phần trăm lãi", body: "", at: at("S21", 0, 2) }]} />)]] },

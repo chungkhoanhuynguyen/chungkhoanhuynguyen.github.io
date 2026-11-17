@@ -121,6 +121,13 @@ const Port: React.FC<{ t: number; rows: { m: string; v: string; col: string; at:
       <div style={{ display: "flex", gap: 30, justifyContent: "space-between" }}>{rows.map((r, i) => { const a = sm((t - r.at) / 0.35);
         return <div key={i} style={{ flex: 1, padding: "40px 10px", borderRadius: 24, background: "rgba(255,255,255,.07)", border: `4px solid ${r.col}`, textAlign: "center", opacity: a, transform: `scale(${1.2 - 0.2 * a})` }}><div style={{ fontSize: 40, color: "#dfe6f8", fontWeight: 800 }}>{r.m}</div><div style={{ fontSize: 96, fontWeight: 900, color: r.col }}>{r.v}</div></div>; })}</div></div></AbsoluteFill>;
 const CF = (a: string, ea: Expr, b: string, eb: Expr, oa: PO = {}, ob: PO = {}) => S("cafe", "room", ...roomTwo2, [C(a, [LX, 0, RZ], P(ea, { side: 1, mode: "stand", ...oa })), C(b, [NX, 0, RZ], P(eb, { side: -1, mode: "stand", ...ob }))], RM);
+const Clues: React.FC<{ t: number; title: string; items: { text: string; at: number; ok?: string }[]; src?: string }> = ({ t, title, items, src }) =>
+  <AbsoluteFill style={{ fontFamily: F, justifyContent: "center", alignItems: "center" }}><Bg t={t} hue="night" />
+    <div style={{ width: 1400 }}><div style={{ fontSize: 46, fontWeight: 900, color: "#ffd23f", letterSpacing: 3, marginBottom: 30, opacity: sm(t / 0.3) }}>🔍 {title}</div>
+      {items.map((x, i) => { const a = sm((t - x.at) / 0.35), ok = x.ok && t > x.at + 1.2; return <div key={i} style={{ display: "flex", alignItems: "center", gap: 30, marginTop: 24, padding: "22px 34px", borderRadius: 20, background: "rgba(255,210,63,.08)", border: "3px solid " + (ok ? "#5dff9b" : "rgba(255,210,63,.6)"), opacity: a, transform: `translateX(${(1 - a) * 80}px)` }}>
+        <div style={{ fontSize: 64, fontWeight: 900, color: "#ffd23f", width: 70 }}>{i + 1}</div><div style={{ fontSize: 48, fontWeight: 800, color: "#fff", flex: 1 }}>{x.text}</div>
+        {ok && <div style={{ fontSize: 40, fontWeight: 900, color: "#5dff9b" }}>{x.ok}</div>}</div>; })}
+      {src && <div style={{ marginTop: 24, fontSize: 26, color: "rgba(255,255,255,.55)" }}>{src}</div>}</div></AbsoluteFill>;
 const PLAN: Plan[] = [
   { id: "S01", shots: [
     [0, () => CD(PR("bai_rac", (t) => <BigText t={t} at={0.4} text="THẬT TỆ KHI…" col="#ffd23f" y={90} size={120} />))],
@@ -148,8 +155,9 @@ const PLAN: Plan[] = [
   ] },
   { id: "S07", shots: [
     [0, () => D3(S("netsp", "room", [[-0.6, 1.5, 2.4], [-0.3, 1.1, 0.6], 40], [[-0.5, 1.45, 2.0], [-0.3, 1.1, 0.6], 34], [C("chien", [-0.3, 0, 0.6], P("smug", { side: 1, acc: ["phone", "glow"] }))], RM), (t) => <LocTag t={t} l1="CHIẾN LĂNG NHĂNG" l2="Danh mục năm nay: 7 mã, mã nào cũng có tin nóng" />)],
-    [3, () => CD((t) => <Port t={t} title="Danh mục của Chiến năm nay" rows={[{ m: "Tháng 3", v: "+20%", col: "#5dff9b", at: 0.2 }, { m: "Tháng 6", v: "−30%", col: "#ff4d5e", at: at("S07", 3, 4) }, { m: "Tháng 9", v: "gỡ ½", col: "#ffd23f", at: at("S07", 3, 5) }]} />)],
-    [6, () => D3(closeL("cafe", "chien", "grin", { acc: ["phone"] }), (t) => <>{BL(1060, 110, "Tao thà thế còn hơn ngồi chờ 30 năm!", 0.3, "r")(t)}</>)],
+    [3, () => CD((t) => <PhoneCard t={t} time="20:30" date="Nhóm Zalo “Kèo thơm”" notifs={[{ app: "Nhóm Zalo", col: "#ff4d5e", title: "7 mã – sắp có tin lớn!", body: "Cùng một tuần · cùng một câu chuyện", at: 0.3 }]} hue="red" />)],
+    [4, () => CD((t) => <Port t={t} title="Danh mục của Chiến năm nay" rows={[{ m: "Tháng 3", v: "+20%", col: "#5dff9b", at: 0.2 }, { m: "Tháng 6", v: "−30%", col: "#ff4d5e", at: at("S07", 4, 5) }, { m: "Tháng 9", v: "gỡ ½", col: "#ffd23f", at: at("S07", 4, 6) }]} />)],
+    [7, () => D3(closeL("cafe", "chien", "grin", { acc: ["phone"] }), (t) => <>{BL(1060, 110, "Tao thà thế còn hơn ngồi chờ 30 năm!", 0.3, "r")(t)}</>)],
   ] },
   { id: "S08", shots: [
     [0, () => D3(CF("chien", "neutral", "dung", "smile", {}, { acc: ["phone", "glow"], wave: 1 }))],
@@ -179,18 +187,22 @@ const PLAN: Plan[] = [
   { id: "S14", shots: [
     [0, () => D3(CF("chien", "neutral", "huy", "smile", { acc: ["cup"] }, { acc: ["cup"] }), (t) => <LocTag t={t} l1="QUÁN CÀ PHÊ" l2="Tối hôm đó" />)],
     [1, () => D3(closeL("cafe", "chien", "dazed", { acc: ["cup"] }), (t) => <>{BL(1060, 110, "Huy ơi, tìm doanh nghiệp nhàm chán mà tốt kiểu gì?", 0.2, "r")(t)}</>)],
-    [2, () => D3(closeR("cafe", "huy", "neutral", { acc: ["cup"] }), (t) => <BigText t={t} at={rel("S14", 3, sc("S14").sens[2].a)} text="4 CÂU HỎI" col="#ffd23f" y={90} size={130} />)],
+    [2, () => D3(closeR("cafe", "huy", "neutral", { acc: ["cup"] }), (t) => <>{BL(120, 110, "7 mã của anh lên cùng nhau, xuống cùng nhau, đúng không?", 0.3)(t)}</>)],
+    [3, () => D3(closeL("cafe", "chien", "dazed", { acc: ["cup"] }), (t) => <BigText t={t} at={0.2} text="GẬT ĐẦU" col="#fff" y={90} size={110} />)],
+    [4, () => CD((t) => <Clues t={t} title="CHI TIẾT ĐẦU PHIM" items={[{ text: "Cùng một nhóm Zalo", at: 0.2, ok: "✓" }, { text: "Cùng một tuần", at: 0.9, ok: "✓" }, { text: "Cùng một câu chuyện: “sắp có tin lớn”", at: 1.6, ok: "✓" }]} />)],
+    [5, () => CD((t) => <Big2 t={t} items={[{ a: "7 MÃ", b: "", at: 0.1, col: "#ff4d5e" }, { a: "= 1 CƯỢC", b: "đặt bảy lần", at: at("S14", 5, 6), col: "#ffd23f" }]} />)],
+    [7, () => D3(closeR("cafe", "huy", "neutral", { acc: ["cup"] }), (t) => <BigText t={t} at={rel("S14", 8, sc("S14").sens[7].a)} text="4 CÂU HỎI" col="#ffd23f" y={90} size={130} />)],
   ] },
   { id: "S15", shots: [[0, () => CD((t) => <LessonCard t={t} title="Câu 1. Người ta vẫn phải dùng?" items={[{ n: "1", icon: "🔌", head: "Kinh tế tốt hay xấu vẫn cần", body: "điện, nước, rác, thuốc, đồ ăn hằng ngày", at: at("S15", 0, 1) }]} />)]] },
   { id: "S16", shots: [[0, () => CD((t) => <LessonCard t={t} title="Câu 2. Tiền thật về đều đặn?" items={[{ n: "2", icon: "💵", head: "Dòng tiền từ hoạt động kinh doanh", body: "không chỉ lợi nhuận trên giấy, năm này qua năm khác", at: at("S16", 0, 1) }]} />)]] },
   { id: "S17", shots: [
-    [0, () => CD((t) => <LessonCard t={t} title="Câu 3. Có dễ bị cạnh tranh?" items={[{ n: ""3", icon: "🗑", head: "Bãi rác: giấy phép, đất, nhiều năm", body: "khó mở thêm", at: at("S17", 0, 2) }]} />)],
+    [0, () => CD((t) => <LessonCard t={t} title="Câu 3. Có dễ bị cạnh tranh?" items={[{ n: "3", icon: "🗑", head: "Bãi rác: giấy phép, đất, nhiều năm", body: "khó mở thêm", at: at("S17", 0, 2) }]} />)],
     [3, () => CD(PR("tra_sua", (t) => <BigText t={t} at={0.3} text="CẢ CHỤC QUÁN MỘT CON PHỐ" col="#ff4d5e" y={90} size={96} />))],
   ] },
   { id: "S18", shots: [[0, () => CD((t) => <LessonCard t={t} title="Câu 4. Mình giữ được đủ lâu không?" items={[{ n: "1", icon: "💰", head: "Chỉ tiền nhàn rỗi, không vay", body: "", at: at("S18", 0, 2) }, { n: "2", icon: "🧺", head: "Chia vốn nhiều doanh nghiệp", body: "", at: at("S18", 0, 2) + 2 }, { n: "3", icon: "📏", head: "Có kế hoạch nếu mình sai", body: "", at: at("S18", 0, 2) + 3.6 }]} />)]] },
   { id: "S19", shots: [
     [0, () => D3(closeL("cafe", "chien", "smile", { acc: ["phone", "glow"] }), (t) => <ClockTag t={t} text="3 THÁNG SAU" />)],
-    [1, () => CD((t) => <Port t={t} title="Danh mục của Chiến" rows={[{ m: "Trước", v: "7 mã nóng", col: "#ff4d5e", at: 0.2 }, { m: "Bây giờ", v: "3 DN hiểu rõ", col: "#5dff9b", at: 1.4 }]} />)],
+    [1, () => CD((t) => <Port t={t} title="Danh mục của Chiến" rows={[{ m: "Trước", v: "7 mã · 1 câu chuyện", col: "#ff4d5e", at: 0.2 }, { m: "Bây giờ", v: "3 DN · 3 cách kiếm tiền", col: "#5dff9b", at: 1.4 }]} />)],
     [2, () => D3(closeL("cafe", "chien", "relief", { acc: ["phone"] }), (t) => <BigText t={t} at={0.4} text="TẮT THÔNG BÁO GIÁ" col="#5dff9b" y={90} size={120} />)],
   ] },
   { id: "S20", shots: [

@@ -133,6 +133,13 @@ const Bio: React.FC<{ t: number; at0?: number }> = ({ t, at0 = 0.6 }) => { const
       <div style={{ margin: "70px auto 0", width: r * 2, height: r * 2.4, borderRadius: "50%", border: "8px dashed #4dd2ff", opacity: a }} />
       <div style={{ marginTop: 50, fontSize: 40, color: "#4dd2ff", fontWeight: 800, opacity: a }}>Vui lòng xác thực khuôn mặt</div>
     </div></AbsoluteFill>; };
+const Clues: React.FC<{ t: number; title: string; items: { text: string; at: number; ok?: string }[]; src?: string }> = ({ t, title, items, src }) =>
+  <AbsoluteFill style={{ fontFamily: F, justifyContent: "center", alignItems: "center" }}><Bg t={t} hue="night" />
+    <div style={{ width: 1400 }}><div style={{ fontSize: 46, fontWeight: 900, color: "#ffd23f", letterSpacing: 3, marginBottom: 30, opacity: sm(t / 0.3) }}>🔍 {title}</div>
+      {items.map((x, i) => { const a = sm((t - x.at) / 0.35), ok = x.ok && t > x.at + 1.2; return <div key={i} style={{ display: "flex", alignItems: "center", gap: 30, marginTop: 24, padding: "22px 34px", borderRadius: 20, background: "rgba(255,210,63,.08)", border: "3px solid " + (ok ? "#5dff9b" : "rgba(255,210,63,.6)"), opacity: a, transform: `translateX(${(1 - a) * 80}px)` }}>
+        <div style={{ fontSize: 64, fontWeight: 900, color: "#ffd23f", width: 70 }}>{i + 1}</div><div style={{ fontSize: 48, fontWeight: 800, color: "#fff", flex: 1 }}>{x.text}</div>
+        {ok && <div style={{ fontSize: 40, fontWeight: 900, color: "#5dff9b" }}>{x.ok}</div>}</div>; })}
+      {src && <div style={{ marginTop: 24, fontSize: 26, color: "rgba(255,255,255,.55)" }}>{src}</div>}</div></AbsoluteFill>;
 const PLAN: Plan[] = [
   { id: "S01", shots: [
     [0, () => CD((t) => <VCall t={t} name="Kiều 💕" lines={[]} />)],
@@ -142,12 +149,14 @@ const PLAN: Plan[] = [
   { id: "S02", shots: [
     [0, () => CD((t) => <VCall t={t} name="Kiều 💕" lines={["…"]} end={1.2} />)],
     [1, () => CD((t) => <PhoneCard t={t} time="22:01" date="Tin nhắn" notifs={[{ app: "Tin nhắn", col: "#ff4d5e", title: "Bố chuyển vào tài khoản này giúp con", body: "STK 0xxx xxx · NGUYEN VAN X", at: 0.3 }]} hue="red" />)],
-    [2, () => D3(closeR("canhovip", "bohung", "nervous", { acc: ["phone", "glow", "sweat"] }, "roomdim"), (t) => <BigText t={t} at={rel("S02", 3, sc("S02").sens[2].a)} text="4 PHÚT" col="#ff4d5e" y={90} size={140} />)],
+    [2, () => D3(closeR("canhovip", "bohung", "nervous", { acc: ["phone", "glow", "sweat"] }, "roomdim"))],
+    [3, () => CD((t) => <Clues t={t} title="NHỚ 3 CHI TIẾT" items={[{ text: "Con gọi bằng “BỐ”", at: 1.4 }, { text: "Cuộc gọi chỉ 10 giây", at: 2.8 }, { text: "Tài khoản đứng tên người lạ", at: 4.0 }]} />)],
   ] },
   { id: "S03", shots: [
     [0, () => D3(closeL("cafe", "kieu", "laugh", { acc: ["phone", "glow"] }), (t) => <><BigText t={t} at={0.3} text="KIỀU SOCIU" col="#ffd23f" y={90} size={120} /><LocTag t={t} l1="31 tuổi · quen nửa thành phố" /></>)],
     [2, () => CD(PR("cafe", (t) => <BigText t={t} at={0.3} text="3 VIDEO MỖI NGÀY" col="#fff" y={90} size={110} />))],
-    [3, () => CD((t) => <Big2 t={t} head="Tất cả đều có trên mạng" items={[{ a: "😀", b: "mặt", at: 0.2, col: "#ffd23f" }, { a: "🎙", b: "giọng", at: 0.8, col: "#ffd23f" }, { a: "👨‍👩‍👧", b: "bố mẹ, quê", at: 1.6, col: "#ff4d5e" }]} />)],
+    [3, () => CD((t) => <Big2 t={t} head="Tất cả đều có trên mạng" items={[{ a: "😀", b: "mặt", at: 0.2, col: "#ffd23f" }, { a: "🎙", b: "giọng", at: 0.8, col: "#ffd23f" }, { a: "👨‍👩‍👧", b: "tên bố mẹ", at: 1.6, col: "#ff4d5e" }]} />)],
+    [4, () => D3(closeL("cafe", "kieu", "laugh", { acc: ["phone"] }), (t) => <BigText t={t} at={rel("S03", 5, sc("S03").sens[4].a)} text="“BA”, KHÔNG BAO GIỜ “BỐ”" col="#ffd23f" y={90} size={100} />)],
   ] },
   { id: "S04", shots: [
     [0, () => D3(PH("gym", [0.5, 0.6], [C("dung", [0.4, 0, 0.7], P("stern", { side: -1, mode: "stand", acc: ["muscle"] }))], pcam(0.4)), (t) => <><BigText t={t} at={0.3} text="DŨNG GYMMER" col="#ffd23f" y={90} size={120} /><LocTag t={t} l1="Huấn luyện viên phòng tập" l2="Ít nói, cẩn thận" /></>)],
@@ -180,7 +189,7 @@ const PLAN: Plan[] = [
     [2, () => D3(PH("gym", [0.5, 0.6], [C("dung", [-0.15, 0, 0.7], P("neutral", { side: -1, mode: "stand", acc: ["phone"] })), C("kieu", [0.95, 0, 0.7], P("smile", { side: 1, mode: "stand" }))], pcam(0.4)), (t) => <><LocTag t={t} l1="PHÒNG TẬP" l2="Cùng lúc đó" />{BL(120, 110, "Dạ không bố ơi, Kiều đang ngồi cạnh con đây.", rel("S10", 3, sc("S10").sens[2].a))(t)}</>)],
   ] },
   { id: "S11", shots: [
-    [0, () => D3(PH("gym", [0.5, 0.6], [C("kieu", [0.4, 0, 0.7], P("worried", { side: -1, mode: "stand", acc: ["phone"] }))], pcam(0.4)), (t) => <>{BL(1000, 110, "Bố ơi, con đây.", 0.2, "r")(t)}</>)],
+    [0, () => D3(PH("gym", [0.5, 0.6], [C("kieu", [0.4, 0, 0.7], P("worried", { side: -1, mode: "stand", acc: ["phone"] }))], pcam(0.4)), (t) => <>{BL(1000, 110, "Ba ơi, con đây.", 0.2, "r")(t)}</>)],
     [2, () => D3(closeR("canhovip", "bohung", "stern", { acc: ["phone", "glow"] }, "roomdim"), (t) => <>{BL(1000, 110, "Con mèo nhà mình hồi bé tên gì?", 0.3, "r")(t)}</>)],
     [3, () => D3(PH("gym", [0.5, 0.6], [C("kieu", [0.4, 0, 0.7], P("laugh", { side: -1, mode: "stand", acc: ["phone", "tears"] }))], pcam(0.4)), (t) => <BigText t={t} at={0.5} text="🐱 BÁNH BAO" col="#ffd23f" y={90} size={140} />)],
   ] },
@@ -196,10 +205,12 @@ const PLAN: Plan[] = [
     [0, () => D3(closeR("cafe", "huy", "neutral"), (t) => <LocTag t={t} l1="HUY NGUYỄN" l2="Trong đầu tư cũng vậy" />)],
     [2, () => CD((t) => <PhoneCard t={t} time="20:15" date="Nhóm kín" notifs={[{ app: "Video quảng cáo", col: "#ff4d5e", title: "“Chuyên gia” mời vào nhóm VIP", body: "Cam kết lợi nhuận 10%/tháng", at: 0.3 }]} hue="red" />)],
     [3, () => CD((t) => <Big2 t={t} items={[{ a: "MẶT THẬT", b: "", at: 0.1, col: "#5dff9b" }, { a: "LỜI MỜI GIẢ", b: "", at: 1.2, col: "#ff4d5e" }]} />)],
+    [4, () => D3(PH("gym", [0.5, 0.6], [C("dung", [0.4, 0, 0.7], P("smile", { side: -1, mode: "stand", acc: ["muscle"] }))], pcam(0.4)), (t) => <BigText t={t} at={0.6} text="KHÔNG CÓ ĐƯỜNG TẮT" col="#ffd23f" y={90} size={120} />)],
   ] },
   { id: "S15", shots: [
-    [0, () => D3(PH("gym", [0.5, 0.6], [C("dung", [0.4, 0, 0.7], P("smile", { side: -1, mode: "stand", acc: ["muscle"] }))], pcam(0.4)), (t) => <BigText t={t} at={0.4} text="KHÔNG CÓ ĐƯỜNG TẮT" col="#ffd23f" y={90} size={120} />)],
-    [1, () => CD((t) => <Big2 t={t} items={[{ a: "⚠", b: "ai hứa đường tắt, người đó đang đi đường tắt vào túi mình", at: 0.2, col: "#ff4d5e" }]} />)],
+    [0, () => D3(closeR("cafe", "huy", "neutral"), (t) => <LocTag t={t} l1="HUY NGUYỄN" l2="Nhìn lại 3 chi tiết đầu phim" />)],
+    [1, () => CD((t) => <Clues t={t} title="3 CHI TIẾT ĐẦU PHIM" items={[{ text: "Gọi “bố” – Kiều chỉ gọi “ba”", at: 0.2, ok: "GIẢ" }, { text: "Chỉ 10 giây – giả lâu là lộ", at: at("S15", 1, 2), ok: "GIẢ" }, { text: "Tài khoản người lạ – con thật không làm thế", at: at("S15", 1, 3), ok: "GIẢ" }]} />)],
+    [4, () => CD((t) => <Big2 t={t} items={[{ a: "10 GIÂY", b: "bình tĩnh, không cần công nghệ nào", at: 0.2, col: "#5dff9b" }]} />)],
   ] },
   { id: "S16", shots: [[0, () => CD((t) => <LessonCard t={t} title="1. Kiểm tra lại bằng kênh khác" items={[{ n: "1", icon: "📵", head: "Cúp máy", body: "", at: at("S16", 0, 2) }, { n: "2", icon: "📞", head: "Gọi lại số cũ đã lưu", body: "không gọi lại số vừa gọi đến", at: at("S16", 0, 2) + 1.2 }]} />)]] },
   { id: "S17", shots: [[0, () => CD((t) => <LessonCard t={t} title="2. Câu mật khẩu của cả nhà" items={[{ n: "1", icon: "🔑", head: "Chỉ người trong nhà mới biết", body: "không bao giờ đăng lên mạng", at: at("S17", 0, 2) }, { n: "2", icon: "🐱", head: "Tên con mèo, món ăn hồi bé…", body: "", at: at("S17", 0, 3) }]} />)]] },
