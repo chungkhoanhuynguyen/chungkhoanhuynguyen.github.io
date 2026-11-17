@@ -60,7 +60,7 @@ S = [
         ('Kỳ trả khi lãi 14%', '29,33 TR'),
         ('Phần thu nhập trả nợ, trước', '42%'),
         ('Phần thu nhập trả nợ, bây giờ', '59%')]),
-      say=("Chị Hạnh ngồi tính lại. Thu nhập hai vợ chồng khoảng năm mươi triệu mỗi tháng. Khi lãi tám phẩy năm phần trăm, kỳ trả khoảng hai mươi mốt triệu, bằng bốn mươi hai phần trăm thu nhập. "
+      say=("Chị Hạnh ngồi tính lại từng khoản. Thu nhập hai vợ chồng khoảng năm mươi triệu mỗi tháng. Khi lãi tám phẩy năm phần trăm, kỳ trả khoảng hai mươi mốt triệu, bằng bốn mươi hai phần trăm thu nhập. "
            "Bây giờ là hai mươi chín triệu ba trăm nghìn, bằng năm mươi chín phần trăm. Các chuyên gia thường khuyên tổng tiền trả nợ không nên quá bốn mươi phần trăm thu nhập. "
            "Phần còn lại cho cả nhà ăn, học, đi lại chỉ còn khoảng hai mươi triệu bảy trăm nghìn.")),
  dict(k='chat', cap=('"THÁNG NÀY THIẾU', 'HAY MÌNH TRẢ CHẬM VÀI NGÀY?"'), cols=CR, moc=True, chat=dict(ten='Hạnh', tv='Đang hoạt động', gio='12:10', mau=X_, msgs=[
@@ -86,7 +86,7 @@ S = [
            "Tăng năm mươi hai phẩy bốn phần trăm chỉ sau chín tháng. Đây là cửa trước của nợ xấu: những khoản hôm nay trễ, nếu không trả kịp, vài tháng sau sẽ thành nợ xấu.")),
  dict(k='cards', anh=HN, cap=('NỢ XẤU 28 NGÂN HÀNG', 'TĂNG 26,9% TỪ ĐẦU NĂM'), cols=CR, moc=True,
       cards=[('340.816 tỷ', 'Nợ xấu nội bảng 30/9', 'Tăng 26,9%'), ('2,12%', 'Tỷ lệ nợ xấu', 'Đầu năm 2,02%'), ('80%', 'Tỷ lệ bao phủ nợ xấu', 'Thấp nhất 5 năm')],
-      say=("Còn nợ xấu thật sự, nhóm ba đến nhóm năm, ở hai mươi tám ngân hàng này là khoảng ba trăm bốn mươi nghìn tỷ đồng, tăng hai mươi sáu phẩy chín phần trăm so với đầu năm. "
+      say=("Còn nợ xấu thật sự, nhóm ba đến nhóm năm, ở hai mươi tám ngân hàng này là gần ba trăm bốn mươi mốt nghìn tỷ đồng, tăng hai mươi sáu phẩy chín phần trăm so với đầu năm. "
            "Và khoản tiền ngân hàng để sẵn phòng mất vốn chỉ còn bằng khoảng tám mươi phần trăm nợ xấu, mức thấp nhất trong năm năm.")),
  # ---------------- CHƯƠNG 3 ----------------
  dict(k='noti', ch='Chương 3 – Cú lật: ngân hàng vẫn lãi kỷ lục', cap=('NGÂN HÀNG LÃI 311.100 TỶ', 'NGƯỜI VAY THÌ TRỄ HẠN'), cols=CC, moc=True, noti=dict(gio='20:30', ngay='Thứ Hai', items=[
@@ -110,7 +110,7 @@ S = [
  # ---------------- CHƯƠNG 4 ----------------
  dict(k='call', ch='Chương 4 – Năm 2012 từng như thế nào?', cap=('"NĂM 2011 BỐ VAY', 'LÃI GẦN 20% MỖI NĂM"'), cols=CR, moc=True, call=dict(ten='Bố vợ', phu='Đang gọi', mau=V_, loi=[
         'Năm 2011 lãi vay có lúc gần 20%', 'Bố phải bán mảnh đất để trả nợ']),
-      say=("Cuối tuần, bố chị Hạnh gọi điện. Nghe chuyện, ông kể: năm hai nghìn không trăm mười một, ông cũng vay ngân hàng, lãi có lúc gần hai mươi phần trăm mỗi năm. "
+      say=("Cuối tuần, bố chị Hạnh gọi điện, kể: năm hai nghìn không trăm mười một, ông cũng vay ngân hàng, lãi có lúc gần hai mươi phần trăm mỗi năm. "
            "Theo số liệu Ngân hàng Nhà nước Thành phố Hồ Chí Minh hồi đầu năm đó, lãi vay tiêu dùng có nơi lên tới hai mươi mốt phần trăm. "
            "Để không trễ ngày nào, ông phải bán mảnh đất ở quê. Ông bảo: hồi đó người ta cũng nói nợ xấu chỉ vài phần trăm thôi.")),
  dict(k='giay', cap=('NĂM 2012: BÁO CÁO 4,9%', 'NHNN GIÁM SÁT 8,82%'), cols=CR, moc=True, giay=dict(tieu_de='NHỮNG CON SỐ CỦA LẦN TRƯỚC', so='VnEconomy 1/1/2013, Pháp luật Việt Nam 11/2/2011', dau='ĐÃ XẢY RA', dieu=[
@@ -118,12 +118,12 @@ S = [
         ('Nợ xấu ngân hàng tự báo cáo, 9/2012', '4,9%'),
         ('Nợ xấu NHNN giám sát, 9/2012', '8,82%'),
         ('Tín dụng cả năm 2012 chỉ tăng', '7%')]),
-      say=("Và ông nói đúng. Cuối tháng chín năm hai nghìn không trăm mười hai, theo báo cáo của chính các ngân hàng, nợ xấu là bốn phẩy chín phần trăm. "
+      say=("Cuối tháng chín năm hai nghìn không trăm mười hai, theo báo cáo của chính các ngân hàng, nợ xấu là bốn phẩy chín phần trăm. "
            "Nhưng theo giám sát từ xa của Ngân hàng Nhà nước, con số thật là khoảng tám phẩy tám phần trăm, gần gấp đôi. "
            "Năm đó tín dụng chỉ tăng khoảng bảy phần trăm, bằng nửa kế hoạch, và phải mất nhiều năm mới dọn xong đống nợ xấu.")),
  dict(k='bars', anh=TP, cap=('NỢ XẤU GỘP HÔM NAY', 'VẪN THẤP HƠN 2012'), cols=CC, moc=True, top='NỢ XẤU – CON SỐ RỘNG NHẤT TỪNG CÔNG BỐ (%)',
       bars=[('NHNN 9/2012', 8.82, R_, '8,82%'), ('Gộp 8/2026', 3.9, V_, '3,9%'), ('28 NH 9/2026', 2.12, G_, '2,12%')],
-      say=("Đặt cạnh nhau cho dễ hình dung. Năm hai nghìn không trăm mười hai, con số giám sát là khoảng tám phẩy tám phần trăm. "
+      say=("Năm hai nghìn không trăm mười hai, con số giám sát là khoảng tám phẩy tám phần trăm. "
            "Hôm nay, nợ xấu gộp toàn hệ thống là ba phẩy chín phần trăm, và ở hai mươi tám ngân hàng niêm yết là khoảng hai phần trăm. "
            "Tức là hệ thống vẫn khoẻ hơn lần trước rất nhiều. Nhưng hướng đi của những con số thì đang đi lên.")),
  dict(k='checklist', anh=HN, cap=('2012 VÀ HÔM NAY', 'GIỐNG 2, KHÁC 2'), cols=CC, moc=True,
