@@ -1,0 +1,34 @@
+/* ================= MỤC LƯU (5 ô) + XUẤT / NHẬP SAVE BẰNG FILE =================
+ Ô đang chơi nằm ở khóa KEY (như cũ, tải nhanh). Các ô khác được nén gzip (base64) ở 'ltlc-sz-<ô>'.
+ Thông tin từng ô ở 'ltlc-slots'. Đổi ô = nén ô hiện tại cất đi, giải nén ô mới vào KEY, tải lại trang. */
+let NOSAVE=0;const SLN=5,curSlot=()=>{try{return +localStorage.getItem('ltlc-slot')||1}catch(e){return 1}};
+const slMeta=()=>{try{return JSON.parse(localStorage.getItem('ltlc-slots'))||{}}catch(e){return {}}};
+const slMetaSet=(k,v)=>{try{const m=slMeta();if(v)m[k]=v;else delete m[k];localStorage.setItem('ltlc-slots',JSON.stringify(m))}catch(e){}};
+function slNote(){if(!G||!G.L)return;try{const pl=P0(),f=G.F[pl.fac];slMetaSet(curSlot(),{d:G.day,r:rank(pl)[0],n:f&&!f.dead?f.n:'',c:S.filter(s=>s.fac==pl.fac).length,m:WMAP?'2':'1',t:Date.now(),tg:G.tang||0})}catch(e){}}
+async function gzB64(str){const cs=new Blob([str]).stream().pipeThrough(new CompressionStream('gzip'));const buf=new Uint8Array(await new Response(cs).arrayBuffer());let s='';for(let i=0;i<buf.length;i+=32768)s+=String.fromCharCode.apply(null,buf.subarray(i,i+32768));return btoa(s)}
+async function unGzB64(b64){const bin=atob(b64),u=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)u[i]=bin.charCodeAt(i);const ds=new Blob([u]).stream().pipeThrough(new DecompressionStream('gzip'));return await new Response(ds).text()}
+const slHas=k=>{try{return k==curSlot()?!!localStorage.getItem(KEY):!!localStorage.getItem('ltlc-sz-'+k)}catch(e){return false}};
+const slDesc=k=>{const m=slMeta()[k];if(!slHas(k))return 'trống — bấm để bắt đầu ván mới';if(!m)return 'ván đã lưu';const dt=new Date(m.t);return `Ngày ${m.d} · ${m.r}${m.n?' · '+m.n:''} · ${m.c} thành${m.tg?` · Tầng ${m.tg>=24?'Tiên Giới':m.tg}`:''}${m.m=='1'?' · bản đồ cũ':''}<br><small style="opacity:.7">lưu lúc ${dt.getHours()}:${String(dt.getMinutes()).padStart(2,'0')} ${dt.getDate()}/${dt.getMonth()+1}</small>`};
+let SLBUSY=0;function slBusy(t){let e=$('#slbz');if(!t){if(e)e.remove();SLBUSY=0;return}SLBUSY=1;if(!e){e=document.createElement('div');e.id='slbz';e.style.cssText='position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(8,10,20,.85);color:#ffe9a8;font-size:17px;z-index:40;text-align:center;padding:20px';document.body.appendChild(e)}e.innerHTML=t}
+async function slSwitch(k){const cur=curSlot();if(k==cur||SLBUSY)return;if(typeof CompressionStream=='undefined'){toast('Trình duyệt này quá cũ, chưa hỗ trợ nhiều mục lưu','#f88');return}
+ slBusy(`💾 Đang chuyển sang ô ${k}...`);try{if(G&&G.L&&mode!='title')save();
+  NOSAVE=1;const raw=localStorage.getItem(KEY);if(raw){const z=await gzB64(raw);localStorage.setItem('ltlc-sz-'+cur,z);const m=slMeta()[cur]||{};m.m=localStorage.getItem('ltlc-map')||m.m||'2';slMetaSet(cur,m)}
+  const z2=localStorage.getItem('ltlc-sz-'+k);let raw2=null;if(z2)raw2=await unGzB64(z2);
+  localStorage.removeItem(KEY);if(raw2){localStorage.setItem(KEY,raw2);localStorage.setItem('ltlc-map',(slMeta()[k]||{}).m||'2');localStorage.removeItem('ltlc-sz-'+k)}else{localStorage.setItem('ltlc-map','2');try{sessionStorage.setItem('ltlc-newmap','1')}catch(e){}}
+  localStorage.setItem('ltlc-slot',''+k);NOSAVE=1;location.reload()}catch(e){console.error(e);NOSAVE=0;slBusy(0);toast('Không chuyển được ô lưu (bộ nhớ máy đầy?) — ván hiện tại vẫn an toàn','#f88')}}
+async function slExport(){if(SLBUSY)return;if(G&&G.L&&mode!='title')save();const raw=localStorage.getItem(KEY);if(!raw){toast('Ô này chưa có ván để xuất','#f88');return}
+ slBusy('📤 Đang nén save...');try{const z=typeof CompressionStream=='undefined'?null:await gzB64(raw),m=slMeta()[curSlot()]||{},d=m.d||'',body=JSON.stringify({app:'loanthelanhchua',v:1,map:localStorage.getItem('ltlc-map')||'2',day:d,z:z,raw:z?undefined:raw});
+  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([body],{type:'application/octet-stream'}));a.download=`LoanTheLanhChua_Ngay${d||'x'}.ltlc`;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},4000);
+  slBusy(0);toast(`📤 Đã xuất save (${fmt(Math.round(body.length/1024))} KB).<br>Sang máy khác: mở game → 💾 Mục lưu → 📥 Nhập save → chọn file này.`,'#9cf',1)}catch(e){console.error(e);slBusy(0);toast('Xuất save bị lỗi','#f88')}}
+function slImport(){if(SLBUSY)return;const inp=document.createElement('input');inp.type='file';inp.accept='.ltlc,.json,.txt,application/octet-stream';inp.onchange=async()=>{const f=inp.files&&inp.files[0];if(!f)return;slBusy('📥 Đang đọc save...');
+  try{const o=JSON.parse(await f.text());let raw=null,map='2';if(o&&o.app=='loanthelanhchua'){raw=o.z?await unGzB64(o.z):o.raw;map=o.map||'2'}else if(o&&o.SS){raw=JSON.stringify(o)}const d=raw&&JSON.parse(raw);if(!d||!d.SS)throw 0;slBusy(0);
+   const go=()=>{try{NOSAVE=1;localStorage.setItem(KEY,raw);localStorage.setItem('ltlc-map',map);slMetaSet(curSlot(),{d:d.day,r:'đã nhập từ file',n:'',c:'?',m:map,t:Date.now(),tg:d.tang||0});location.reload()}catch(e){NOSAVE=0;toast('Bộ nhớ máy đầy — hãy xóa bớt ô lưu khác rồi nhập lại','#f88')}};
+   if(localStorage.getItem(KEY))menu('📥 Nhập save',`<p>File save: <b>Ngày ${d.day}</b>.</p><p>Ô ${curSlot()} đang có ván — nhập sẽ <b>ghi đè</b> ván này. Muốn giữ ván cũ, hãy chuyển sang một ô trống trước rồi nhập.</p>`,[['📥 Ghi đè và chơi tiếp',go],['Hủy',()=>slMenu()]]);else go()}catch(e){slBusy(0);toast('File không phải save của Loạn Thế Lãnh Chúa','#f88')}};inp.click()}
+function slDel(k){menu('🗑 Xóa ô lưu',`<p>Xóa vĩnh viễn ván ở <b>ô ${k}</b>?</p><p>${slDesc(k)}</p>`,[['🗑 Xóa',()=>{try{localStorage.removeItem('ltlc-sz-'+k)}catch(e){}slMetaSet(k,null);slMenu()}],['Hủy',()=>slMenu()]])}
+function slMenu(){const cur=curSlot(),inG=G&&G.L&&mode!='title';if(inG)slNote();const b=[];
+ for(let k=1;k<=SLN;k++){if(k==cur)b.push([`▶ <b>Ô ${k} — đang chơi</b><br><small>${slDesc(k)}</small>`,()=>{if(inG)close();else if(load()){close();startMap()}else{close();titleMenu()}}]);
+  else b.push([`💾 Ô ${k}<br><small>${slDesc(k)}</small>`,()=>menu(`Chuyển sang ô ${k}?`,`<p>${slDesc(k)}</p><p style="font-size:12.5px;color:#cdb">Ván ở ô ${cur} được lưu lại an toàn, lúc nào cũng quay về được.</p>`,[[slHas(k)?'▶ Chơi ô này':'🆕 Bắt đầu ván mới ở ô này',()=>slSwitch(k)],['Hủy',()=>slMenu()]])])}
+ b.push(['📤 Xuất save ra file (mang sang máy khác)',slExport],['📥 Nhập save từ file',slImport]);
+ const del=[];for(let k=1;k<=SLN;k++)if(k!=cur&&slHas(k))del.push(k);if(del.length)b.push([`🗑 Xóa ô lưu khác (${del.join(', ')})`,()=>menu('🗑 Chọn ô để xóa','',del.map(k=>[`Ô ${k} — ${slDesc(k)}`,()=>slDel(k)]).concat([['Hủy',()=>slMenu()]]))]);
+ b.push([inG?'Đóng':'⬅ Quay lại',()=>{if(inG)close();else{close();titleMenu()}}]);
+ menu('💾 Mục lưu',`<p style="font-size:12.5px">Có ${SLN} ô lưu riêng trên máy này. Game tự lưu vào ô đang chơi. Muốn chơi trên máy khác: <b>📤 Xuất save</b> → gửi file sang máy kia (Zalo, Drive…) → mở game → <b>📥 Nhập save</b>.</p>`,b)}

@@ -37,6 +37,7 @@ function tsBtn(){const cg=$('#zCg');if(cg)cg.style.display=G&&G.lsOn&&mode!='tit
 $('#cGold').onclick=$('#cArmy').onclick=()=>{if(!paused&&G&&G.lsOn)cgMenu()};$('#zCg').onclick=()=>{if(!paused&&G)cgMenu()};
 $('#cRank').onclick=()=>{if(!paused&&G)dhMenu()};
 $('#zMore').onclick=()=>{document.body.classList.toggle('more')};
+$('#zSv').onclick=()=>{if(!paused&&G)slMenu()};
 $('#zTl').onclick=()=>{if(!paused&&G)thienLo()};
 $('#zAc').onclick=()=>{if(!paused&&G)acToggle()};
 $('#zCo').onclick=()=>{showArrows(6);toast('🧭 Mũi tên chỉ hướng các nước gần nhất (6 giây)','#ffd77a')};
@@ -47,6 +48,7 @@ function titleMenu(){mode='title';G=null;B=null;$('#top').style.display='none';$
  S.forEach(s=>s.fac=s.f0);G={F:F0};terrNow();G=null;
  let has=0;try{has=!!localStorage.getItem(KEY)&&(!WMAP||localStorage.getItem('ltlc-map')=='2')}catch(e){}
  const btn=[];if(has)btn.push([WMAP?'▶ Chơi tiếp ván đã lưu':'▶ Chơi tiếp ván đã lưu (bản đồ cũ)',()=>{if(load()){close();startMap()}}]);
+ btn.push(['💾 Mục lưu (5 ô) · 📤 Xuất / 📥 Nhập save',()=>slMenu()]);
  if(!WMAP){btn.push([`Đồ họa: <b>${QN[QL]}</b> — bấm để đổi`,()=>{setQ((QL+1)%3);close();titleMenu()}],['🌍 VÁN MỚI — Nhân tộc là bản đồ Trái Đất (201 quốc gia)<br><small>Ván cũ vẫn giữ tới khi ván mới được lưu</small>',()=>{try{sessionStorage.setItem('ltlc-newmap','1')}catch(e){}location.reload()}]);
   menu('⚔ Loạn Thế Lãnh Chúa','<p>Bản cập nhật mới: <b>lục địa Nhân tộc giờ là bản đồ Trái Đất thật</b> với 201 quốc gia và hơn 340 thành trì.</p><p>Ván đang chơi của bạn vẫn dùng bản đồ cũ.</p>',btn);return}
  btn.push([`Đồ họa: <b>${QN[QL]}</b> — bấm để đổi (máy giật chọn ⚡)`,()=>{setQ((QL+1)%3);close();titleMenu()}]);
@@ -67,4 +69,4 @@ let LAGON=(()=>{try{return localStorage.getItem('ltlc-lag')!='0'}catch(e){return
 function lagTick(now){const g=LF.last?now-LF.last:0;LF.last=now;LF.n++;if(g>LF.mx||now-LF.mxT>5000){LF.mx=g;LF.mxT=now}if(now-LF.t0>=1000){LF.fps=Math.round(LF.n*1000/(now-LF.t0));LF.n=0;LF.t0=now;if(MOB&&G&&!paused&&!document.hidden){const tg=ULQ?24:29;if(LF.fps<tg*.75){LF.lo=(LF.lo||0)+1;LF.hi=0}else if(LF.fps>=tg){LF.hi=(LF.hi||0)+1;LF.lo=0}else LF.lo=LF.hi=0;if(LF.lo>=2&&DSR>.55){DSR=+(DSR-.1).toFixed(2);LF.lo=0;rs()}else if(LF.hi>=8&&DSR<1){DSR=Math.min(1,+(DSR+.1).toFixed(2));LF.hi=0;rs()}}tsBtn();const e=$('#lag');if(!e)return;const show=LAGON&&G&&mode!='title';e.style.display=show?'block':'none';if(!show)return;const tp=$('#top');e.style.top=((tp&&tp.offsetHeight?tp.getBoundingClientRect().bottom:40)+4)+'px';const mx=Math.round(LF.mx);e.innerHTML=SMALL()?`📶${LF.fps} ${mx>250?'🔴':mx>100?'🟡':'🟢'}`:`📶 ${LF.fps} hình/giây · giật lớn nhất ${mx}ms ${mx>250?'🔴':mx>100?'🟡':'🟢'}${DSR<1?` · nét ${Math.round(DSR*100)}%`:''}`}}
 let lfr=0;function loop(now){const cap=paused&&mode!='battle'?(ULQ?250:120):!MOB?0:ULQ?40:(LOWQ||mode=='map')?32:0;if(now-lfr<cap){requestAnimationFrame(loop);return}lfr=now;lagTick(now);try{if(JQ.length)runJobs(JQ.length>120?60:JQ.length>40?14:6);else if(TD&&G&&now-tdT>400){tdT=now;terrNow()}if(mode=='map')ensureCont();step(now)}catch(e){console.error(e)}requestAnimationFrame(loop)}
 setTimeout(()=>{bake();$('#load').remove();titleMenu();requestAnimationFrame(loop)},30);
-window.__T={dhMenu,dhUpdate,cgMenu,cgUp,lsInit,fmtLS,tangGo,thienLo,tangCheck,held,genTangWorld,rank,wmAt:(x,y)=>WMAP?wmAt(x,y):-1,save:()=>save(),acToggle,acTick,JQ,runJobs,slim,newDay:()=>newDay(),drawMap:t=>drawMap(t),drawBattle:t=>drawBattle(t),setQ,QL:()=>QL,crown,rebel,contsHeld,vassalDay,chat,exileMenu,partyMenu,calcCH,diplo,hireGen,myGens,V,villageMenu,grantVillage,income,startFight,joinFight,encounter,toast,G:()=>G,S,B:()=>B,newGame,startMap,startBattle,endBattle,upMap,upBattle,quick,townMenu,setOrder,close,panel,getMode:()=>mode,MC,BC,rank,fiefs,indep};
+window.__T={slMenu,slSwitch,slExport,curSlot,slMeta,dhUpdate,cgMenu,cgUp,lsInit,fmtLS,tangGo,thienLo,tangCheck,held,genTangWorld,rank,wmAt:(x,y)=>WMAP?wmAt(x,y):-1,save:()=>save(),acToggle,acTick,JQ,runJobs,slim,newDay:()=>newDay(),drawMap:t=>drawMap(t),drawBattle:t=>drawBattle(t),setQ,QL:()=>QL,crown,rebel,contsHeld,vassalDay,chat,exileMenu,partyMenu,calcCH,diplo,hireGen,myGens,V,villageMenu,grantVillage,income,startFight,joinFight,encounter,toast,G:()=>G,S,B:()=>B,newGame,startMap,startBattle,endBattle,upMap,upBattle,quick,townMenu,setOrder,close,panel,getMode:()=>mode,MC,BC,rank,fiefs,indep};
