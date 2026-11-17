@@ -5,7 +5,7 @@ on:
     paths: ["_video/voice_ab/**", ".github/workflows/voice_ab.yml"]
 jobs:
   ab:
-    strategy: {fail-fast: false, matrix: {m: [A, B]}}
+    strategy: {fail-fast: false, matrix: {m: [C]}}
     runs-on: ubuntu-latest
     timeout-minutes: 120
     steps:
@@ -14,7 +14,7 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: "3.12"}
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
-      - if: matrix.m == 'A'
+      - if: matrix.m != 'B'
         run: pip install -q vieneu "onnxruntime==1.22.1" numpy soundfile
       - if: matrix.m == 'B'
         run: |

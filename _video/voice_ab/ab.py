@@ -24,6 +24,21 @@ if mode == "A":
         tts.save(a, "t.wav")
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", "t.wav", "-af", "atempo=0.95", "t2.wav"], check=True)
         norm("t2.wav", f"{OUT}/A_vieneu_{i}.wav"); print("A", i, flush=True)
+elif mode == "C":
+    # VieNeu nhân bản 100% từ mẫu thật của anh Huy (thư viện tự cắt ≤8s): thử 2 khúc mẫu
+    from vieneu import Vieneu
+    tts = Vieneu()
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", "ref.wav", "-t", "8", "r1.wav"], check=True)
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", "6", "-i", "ref.wav", "-t", "8", "r2.wav"], check=True)
+    for tag, r in [("dau", "r1.wav"), ("cuoi", "r2.wav")]:
+        for i, c in enumerate(CAU, 1):
+            try:
+                a = np.asarray(tts.infer(c, ref_audio=r, denoise=True), np.float32).reshape(-1)
+            except TypeError:
+                a = np.asarray(tts.infer(c, ref_audio=r), np.float32).reshape(-1)
+            tts.save(a, "t.wav")
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", "t.wav", "-af", "atempo=0.95", "t2.wav"], check=True)
+            norm("t2.wav", f"{OUT}/C_vieneu100_{tag}_{i}.wav"); print("C", tag, i, flush=True)
 else:
     from faster_whisper import WhisperModel
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", "ref.ogg", "-ac", "1", "-ar", "16000", "ref16.wav"], check=True)
