@@ -139,13 +139,13 @@ const PLAN: Plan[] = [
   { id: "S02", shots: [[0, () => D3(S("room", "roomdim", [[0.55, 1.26, 1.6], [LX, 1.05, RZ], 26], [[2.2, 2.2, 3.4], [LX, 1.0, RZ], 50], [toan("nervous", { acc: ["phone", "glow"] })], { ...RM, ease: "out" }), (t) => <BigText t={t} at={0.1} text="KHOAN ĐÃ…" col="#fff" y={100} size={120} />)],
     [1, () => D3(S("streetday", "day", [[HX + 12, 6, -2], [HX + 2, 1.2, 5.3], 50], [[HX + 4, 2.2, 1.5], [HX, 1.2, 5.3], 44], [C("toanbop", [HX + 5, 0.15, 5.0], walk("grin", { side: -1 }), [HX + 1.5, 0.15, 5.0]), ...runners(3, HX + 8, HX - 4, 4.4)], { ease: "sm" }), (t) => <LocTag t={t} l1="8 THÁNG TRƯỚC" l2="Một con hẻm ở Phú Nhuận, Sài Gòn" />)]] },
   { id: "S03", shots: [
-    [0, () => D3(S("streetday", "day", [[HX + 1.2, 1.45, 3.2], [HX + 0.55, 1.25, 5.3], 36], [[HX + 1.0, 1.42, 3.7], [HX + 0.55, 1.28, 5.3], 32], [guest("toanbop", "grin", { acc: ["box"] })]), (t) => <><BigText t={t} at={0.3} text="TOÀN BỚP" col="#ffd23f" y={90} size={120} /><LocTag t={t} l1="31 tuổi · thợ điện" /></>)],
+    [0, () => D3(S("streetday", "day", [[HX + 1.2, 1.45, 3.2], [HX + 0.55, 1.25, 5.3], 36], [[HX + 1.0, 1.42, 3.7], [HX + 0.55, 1.28, 5.3], 32], [guest("toanbop", "grin", { acc: ["box"] })]), (t) => <><BigText t={t} at={0.3} text="TOÀN BỚP" col="#ffd23f" y={170} size={120} /><LocTag t={t} l1="31 tuổi · thợ điện" /></>)],
     [1, () => D3(S("streetday", "day", ...hx2, [guest("toanbop", "stern", { wave: 1 }), C("bohung", [HX - 0.55, 0.15, 5.3], P("worried", { side: -1 }))]), (t) => <>{BL(1060, 110, "Láo nháo anh cắt điện cả khu!", 0.2, "r")(t)}</>)],
     [2, () => D3(night([C("toanbop", [HOME_X + 3.6, 0.15, 5.3], walk("smile", { side: 1, acc: ["box"] }), [HOME_X + 2.2, 0.15, 5.3])], [[[HOME_X + 4, 1.5, 2.4], [HOME_X + 3.6, 1.2, 5.3], 42], [[HOME_X + 3.8, 1.45, 2.9], [HOME_X + 3.0, 1.2, 5.3], 38]]), (t) => <><ClockTag t={t} text="00:30" />{BL(120, 120, "Có anh đây, đừng lo!", 0.8)(t)}</>)],
     [3, () => D3(closeT("smile", { acc: ["paper"] }, "room"), (t) => <BigText t={t} at={0.5} text="400 TRIỆU ĐỂ CƯỚI" col="#5dff9b" y={90} size={110} />)],
   ] },
   { id: "S04", shots: [
-    [0, () => D3(shopDay([hangShop("smile"), ...queue(3, "smile")], [GOLD_X + 3.4, 1.5, 2.4], [GOLD_X + 1.0, 1.3, 5.2], 40), (t) => <><BigText t={t} at={0.4} text="HẰNG HỘT XOÀN" col="#ffd23f" y={90} size={110} /><LocTag t={t} l1="TIỆM VÀNG ĐẦU CHỢ BÀ CHIỂU" /></>)],
+    [0, () => D3(shopDay([hangShop("smile"), ...queue(3, "smile")], [[GOLD_X + 3.4, 1.5, 2.4], [GOLD_X + 1.0, 1.3, 5.2], 40], [[GOLD_X + 3.0, 1.45, 2.9], [GOLD_X + 1.0, 1.3, 5.2], 36]), (t) => <><BigText t={t} at={0.4} text="HẰNG HỘT XOÀN" col="#ffd23f" y={170} size={110} /><LocTag t={t} l1="TIỆM VÀNG ĐẦU CHỢ BÀ CHIỂU" /></>)],
     [1, () => D3(S("streetday", "day", ...hx2, [bt("stern", { wave: 1 }), guest("nv", "smile")]), (t) => <>{BL(1060, 110, "Con lấy ai cũng được, miễn đừng có nợ.", 0.5, "r")(t)}</>)],
   ] },
   { id: "S05", shots: [
@@ -177,7 +177,7 @@ const PLAN: Plan[] = [
     [3, () => D3(shopDay([hangShop("worried"), ...queue(20)], ...qPan, { ease: "lin" }), (t) => <BigText t={t} at={0.2} text="AI CŨNG ĐÒI BÁN LẠI" col="#ff4d5e" y={90} size={110} />)],
   ] },
   { id: "S08C", shots: [
-    [0, () => D3(shopDay([hangShop("sad", { acc: ["paper"] }), ...queue(6, "stern")], [GOLD_X + 3.4, 1.5, 2.4], [GOLD_X + 1.0, 1.3, 5.2], 40), (t) => <BigText t={t} at={0.6} text="TẠM NGƯNG THU ĐỔI" col="#ff4d5e" y={90} size={110} />)],
+    [0, () => D3(shopDay([hangShop("sad", { acc: ["paper"] }), ...queue(6, "stern")], [[GOLD_X + 3.4, 1.5, 2.4], [GOLD_X + 1.0, 1.3, 5.2], 40], [[GOLD_X + 3.0, 1.45, 2.9], [GOLD_X + 1.0, 1.3, 5.2], 36]), (t) => <BigText t={t} at={0.6} text="TẠM NGƯNG THU ĐỔI" col="#ff4d5e" y={90} size={110} />)],
     [1, () => CD((t) => <NewsCard t={t} tag="BÁO CHÍ ĐƯA TIN" items={[{ src: "Báo Đầu tư · 17/6/2026", head: "Ngành kim cương chao đảo vì làn sóng bán lại", at: 0.3 }, { src: "Người Quan Sát · 2026", head: "Có tiệm hơn 90% khách mang kim cương đến bán lại", at: 1.6, col: "#ff4d5e" }]} />)],
     [2, () => D3(S("room", "room", ...roomTwo2, [toan("laugh"), hang("worried")], RM), (t) => <>{BL(120, 110, "Tiệm nhỏ thôi em, công ty anh mua là công ty lớn, khác!", 0.6)(t)}</>)],
   ] },
@@ -208,7 +208,7 @@ const PLAN: Plan[] = [
     [4, () => D3(S("room", "roomdim", [[1.3, 1.35, 2.3], [0.8, 1.05, RZ], 36], [[1.2, 1.32, 2.0], [0.8, 1.05, RZ], 32], [toan("shock"), hang("stern", { wave: 1 })], RM), (t) => <>{BL(1060, 110, "Mẹ em dặn rồi: không có nợ.", 0.3, "r")(t)}</>)],
   ] },
   { id: "S13", shots: [
-    [0, () => D3(shopDay([hangShop("worried", { acc: ["paper"] }), ...queue(12, "stern")], [GOLD_X + 3.4, 1.5, 2.4], [GOLD_X + 1.0, 1.3, 5.2], 40), (t) => <LocTag t={t} l1="CHÍNH SÁCH THU ĐỔI" l2="Để giữ khách" />)],
+    [0, () => D3(shopDay([hangShop("worried", { acc: ["paper"] }), ...queue(12, "stern")], [[GOLD_X + 3.4, 1.5, 2.4], [GOLD_X + 1.0, 1.3, 5.2], 40], [[GOLD_X + 3.0, 1.45, 2.9], [GOLD_X + 1.0, 1.3, 5.2], 36]), (t) => <LocTag t={t} l1="CHÍNH SÁCH THU ĐỔI" l2="Để giữ khách" />)],
     [2, () => CD((t) => <Big2 t={t} head="Riêng tháng 7/2026, hàng khách mang trả lại" src="Nguồn: tài liệu ĐHCĐ bất thường 21/10/2026, theo VnBusiness" items={[{ a: "~6.000 TỶ", b: "đồng", at: 0.5, col: "#ff4d5e" }]} />)],
     [3, () => D3(shopDay([hangShop("sad"), ...queue(20, "neutral")], ...qPan, { ease: "lin" }), (t) => <BigText t={t} at={0.2} text="QUAY VỀ KHO + KHOẢN LỖ" col="#ff4d5e" y={90} size={96} />)],
   ] },
