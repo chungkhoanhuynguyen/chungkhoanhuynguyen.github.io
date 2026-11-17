@@ -206,7 +206,7 @@
   "root": true,
   "kw": "mở tài khoản chứng khoán",
   "title": "Mở tài khoản chứng khoán online 2026: hướng dẫn từng bước",
-  "desc": "Mở tài khoản chứng khoán online bằng CCCD trên điện thoại: điều kiện, 6 bước eKYC, phí, nạp tiền và chọn VPS hoặc VPBankS.",
+  "desc": "Mở tài khoản chứng khoán online bằng CCCD trên điện thoại: điều kiện, 6 bước eKYC, phí, nạp tiền và chọn VPS, VPBankS hoặc MBS.",
   "body": [
    [
     "p",
@@ -214,7 +214,7 @@
    ],
    [
     "html",
-    "<section id=\"chon\" style=\"margin:22px 0\"><h2 style=\"margin-bottom:6px\">Chọn công ty chứng khoán để mở tài khoản cùng Huy Nguyễn</h2><p>Cả hai lựa chọn đều mở online bằng CCCD, miễn phí, và đều được Huy Nguyễn hỗ trợ 1:1 như nhau. Anh chị chọn công ty nào tiện cho mình.</p><div style=\"display:block;padding:16px;border-radius:14px;border:1px solid #6b21a840;background:#6b21a80d;margin:10px 0\"><b style=\"font-size:18px\">Chứng khoán VPS</b><br>Mở qua link, người hỗ trợ Huy Nguyễn đã gắn sẵn, không cần nhập mã.<br><a href=\"https://openaccount.vps.com.vn/?MKTID=BJIE\" target=\"_blank\" rel=\"noopener nofollow\" style=\"display:inline-block;margin-top:10px;padding:10px 18px;border-radius:999px;font-weight:700;text-decoration:none;color:#fff;background:#6b21a8\">Mở tài khoản VPS</a></div><div style=\"display:block;padding:16px;border-radius:14px;border:1px solid #6b21a840;background:#6b21a80d;margin:10px 0\"><b style=\"font-size:18px\">Chứng khoán VPBank (VPBankS)</b><br>Tải ứng dụng <b>Chứng khoán VPBank</b>, đăng ký eKYC. Ở mục <b>“Có nhân viên chăm sóc?”</b> chọn <b>Có</b> và nhập mã môi giới <b>116C511997</b> – Nguyễn Huy Anh. <a href=\"#vpbanks\">Xem hướng dẫn chi tiết bên dưới</a>.<br><a href=\"https://zalo.me/0365188286\" target=\"_blank\" rel=\"noopener\" style=\"display:inline-block;margin-top:10px;padding:10px 18px;border-radius:999px;font-weight:700;text-decoration:none;color:#fff;background:#15803d\">Nhắn Zalo để được hướng dẫn mở VPBankS</a></div></section>"
+    "<section id=\"chon\" style=\"margin:22px 0\"><h2 style=\"margin-bottom:6px\">Chọn công ty chứng khoán để mở tài khoản cùng Huy Nguyễn</h2><p>Cả ba lựa chọn đều mở online bằng CCCD, miễn phí, và đều được Huy Nguyễn hỗ trợ 1:1 như nhau. Anh chị chọn công ty nào tiện cho mình.</p><div style=\"display:block;padding:16px;border-radius:14px;border:1px solid #6b21a840;background:#6b21a80d;margin:10px 0\"><b style=\"font-size:18px\">Chứng khoán VPS</b><br>Mở qua link, người hỗ trợ Huy Nguyễn đã gắn sẵn, không cần nhập mã.<br><a href=\"https://openaccount.vps.com.vn/?MKTID=BJIE\" target=\"_blank\" rel=\"noopener nofollow\" style=\"display:inline-block;margin-top:10px;padding:10px 18px;border-radius:999px;font-weight:700;text-decoration:none;color:#fff;background:#6b21a8\">Mở tài khoản VPS</a></div><div style=\"display:block;padding:16px;border-radius:14px;border:1px solid #6b21a840;background:#6b21a80d;margin:10px 0\"><b style=\"font-size:18px\">Chứng khoán VPBank (VPBankS)</b><br>Tải ứng dụng <b>Chứng khoán VPBank</b>, đăng ký eKYC. Ở mục <b>“Có nhân viên chăm sóc?”</b> chọn <b>Có</b> và nhập mã môi giới <b>116C511997</b> – Nguyễn Huy Anh. <a href=\"#vpbanks\">Xem hướng dẫn chi tiết bên dưới</a>.<br><a href=\"https://zalo.me/0365188286\" target=\"_blank\" rel=\"noopener\" style=\"display:inline-block;margin-top:10px;padding:10px 18px;border-radius:999px;font-weight:700;text-decoration:none;color:#fff;background:#15803d\">Nhắn Zalo để được hướng dẫn mở VPBankS</a></div><div style=\"display:block;padding:16px;border-radius:14px;border:1px solid #6b21a840;background:#6b21a80d;margin:10px 0\"><b style=\"font-size:18px\">Chứng khoán MB (MBS)</b><br>Tải ứng dụng <b>MBS Mobile</b>, bấm <b>“Mở tài khoản eKYC”</b> ở màn hình đăng nhập. Ở bước dịch vụ chọn <b>Dịch vụ có Môi giới chăm sóc (có Broker)</b> và nhập ID <b>B169</b> – Nguyễn Huy Anh. <a href=\"#mbs\">Xem hướng dẫn chi tiết bên dưới</a>.<br><a href=\"https://zalo.me/0365188286\" target=\"_blank\" rel=\"noopener\" style=\"display:inline-block;margin-top:10px;padding:10px 18px;border-radius:999px;font-weight:700;text-decoration:none;color:#fff;background:#1d4ed8\">Nhắn Zalo để được hướng dẫn mở MBS</a></div></section>"
    ],
    [
     "h2",
@@ -336,6 +336,24 @@
     1123
    ],
    [
+    "h2",
+    "Mở tài khoản Chứng khoán MB (MBS)"
+   ],
+   [
+    "html",
+    "<span id=\"mbs\"></span>"
+   ],
+   [
+    "ol",
+    [
+     "Tải ứng dụng <b>MBS Mobile</b>, bấm <b>“Mở tài khoản eKYC”</b> trên màn hình đăng nhập.",
+     "Nhập số điện thoại và email.",
+     "Chụp ảnh căn cước công dân.",
+     "Ở mục Dịch vụ quản lý tài khoản chọn <b>Dịch vụ có Môi giới chăm sóc (có Broker)</b>, nhập ID nhân viên chăm sóc <b>B169</b> (hiện tên Nguyễn Huy Anh).",
+     "Xác thực eKYC theo hướng dẫn trên ứng dụng là xong."
+    ]
+   ],
+   [
     "cta",
     "Mở tài khoản xong, nhắn Zalo 0365.188.286 để nhận mã kích hoạt khách hàng PRO trên web.",
     "https://openaccount.vps.com.vn/?MKTID=BJIE",
@@ -366,6 +384,10 @@
    [
     "Mở tài khoản Chứng khoán VPBank cùng Huy Nguyễn thế nào?",
     "Tải ứng dụng Chứng khoán VPBank, đăng ký eKYC, ở mục \"Có nhân viên chăm sóc?\" chọn Có và nhập mã 116C511997 – Nguyễn Huy Anh."
+   ],
+   [
+    "Mở tài khoản Chứng khoán MBS cùng Huy Nguyễn thế nào?",
+    "Tải ứng dụng MBS Mobile, chọn Mở tài khoản eKYC, ở mục dịch vụ chọn Có Broker và nhập ID B169 – Nguyễn Huy Anh."
    ]
   ],
   "rel": [
