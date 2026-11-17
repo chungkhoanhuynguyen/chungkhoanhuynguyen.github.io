@@ -25,6 +25,7 @@ const SN1=S.length,VN1=V.length,CN1=CC.length,FN1=F0.length,RN1=ROADS.length;for
 const DS2=S.splice(SN1),DV2=V.splice(VN1),DCC2=CC.splice(CN1),DF02=F0.splice(FN1),DR2=ROADS.splice(RN1);
 const DS=S.splice(SN0),DV=V.splice(VN0),DCC=CC.splice(CN0),DF0=F0.splice(FN0),DR=ROADS.splice(RN0);
 const WB=[{x0:0,y0:0,w:WW,h:2*CH+GAP},{x0:0,y0:2*(CH+GAP),w:3*CW+2*GAP,h:CH}],WRLD=y=>y>2*CH+1.5*GAP?1:0,CWB=()=>WB[G&&G.L?WRLD(P0().y):0];
+const LKM=()=>G&&G.lk?5:1;
 const NC=()=>G&&G.xian?12:G&&G.divine?9:5;
 const OPEN=c=>!G||!G.open?true:c>=9?!!G.xian:c>=5?!!G.divine:G.open.includes(c);
 function unlockWorld2(){if(S.length>SN0+DS.length)return;unlockWorld();S.push(...DS2);V.push(...DV2);CC.push(...DCC2);F0.push(...DF02);ROADS.push(...DR2);nearFor(9)}
@@ -82,16 +83,18 @@ const BAN=-1;
 const P0=()=>G.L[0];
 const atWar=(a,b)=>a==b?false:(a<0||b<0)?true:!!(G.war[a]&&G.war[a][b]);
 const TT=[['Hiệp sĩ',400,'🛡','#a9b4bf',0,0],['Nam tước',1000,'🎖','#d08a43',1,300],['Tử tước',2000,'🏅','#d6dbe2',2,1000],['Bá tước',3500,'🥇','#ffcf3a',3,3000],['Hầu tước',6000,'💠','#5cc9ff',5,8000],['Công tước',9000,'⚜️','#ff86dd',8,20000]];
-const CHT=[['Nhân Hoàng','☀️','#ffcf3a'],['Thạch Hoàng','⛰️','#ff9a4a'],['Tinh Hoàng','🌙','#7fe3ff'],['Lang Hoàng','🐺','#ff5a5a'],['Minh Hoàng','☠️','#d06cff'],['Titan Chí Tôn','🗿','#e8c27a'],['Thánh Chủ','👼','#fff6b0'],['Ma Thần Chí Tôn','👹','#ff3030'],['Vạn Yêu Chi Chủ','🦊','#8dff6a']];
+const CHT=[['Nhân Hoàng','☀️','#ffcf3a'],['Thạch Hoàng','⛰️','#ff9a4a'],['Tinh Hoàng','🌙','#7fe3ff'],['Lang Hoàng','🐺','#ff5a5a'],['Minh Hoàng','☠️','#d06cff'],['Titan Chí Tôn','🗿','#e8c27a'],['Thánh Chủ','👼','#fff6b0'],['Ma Thần Chí Tôn','👹','#ff3030'],['Vạn Yêu Chi Chủ','🦊','#8dff6a'],['Thiên Nguyên Tiên Tôn','☁️','#bfefff'],['Huyền Hoang Tiên Tôn','☀️','#ffe08a'],['Cửu U Tiên Tôn','🌑','#c9a0ff']];
 const GODT=[['Titan Thần','🗿','#e0b878'],['Thiên Thần Vương','👼','#fff3a0'],['Quỷ Thần','👹','#ff4a3a'],['Yêu Thần','🦊','#7dff6a']];
 const DIVT=[['Nhân Thần Đế','🌟','#fff07a'],['Sơn Thần Đế','💎','#ffb070'],['Tinh Linh Thần Đế','✨','#9ff0ff'],['Lang Thần Đế','🌕','#ff8080'],['Minh Thần Đế','🔮','#e090ff']];
 const RK=['Lính đánh thuê','Hoàng tử vong quốc','Hiệp sĩ','Nam tước','Tử tước','Bá tước','Hầu tước','Công tước','Vương','Vua','Tử Vương','Hoàng đế','Ma Vương','Nhân Hoàng','Thạch Hoàng','Tinh Hoàng','Lang Hoàng','Minh Hoàng','Titan Thần','Thiên Thần Vương','Quỷ Thần','Yêu Thần','Titan Chí Tôn','Thánh Chủ','Ma Thần Chí Tôn','Vạn Yêu Chi Chủ','Nhân Thần Đế','Sơn Thần Đế','Tinh Linh Thần Đế','Lang Thần Đế','Minh Thần Đế','Trúc Cơ','Nguyên Anh','Địa Tiên','Nhân Tiên'];
 function vills(p){let n=0;for(const v of V)if(v.own===p.id)n++;return n}
 function fiefs(p){let n=0;for(const s of S)if(s.own===p.id)n++;return n}
-function rank(p){if(p.kind=='bandit')return['Thủ lĩnh phỉ',700,'☠','#999'];if(p.kind=='rf')return['Viện binh',1e9,'➕','#9cf'];const f=G.F[p.fac];
+const LKN={'Hiệp sĩ':'Luyện Khí','Nam tước':'Trúc Cơ','Tử tước':'Kim Đan','Bá tước':'Nguyên Anh','Hầu tước':'Hóa Thần','Công tước':'Luyện Hư','Vương':'Đại Thừa','Lính đánh thuê':'Tán tu','Vua':'Tiên Vương','Hoàng đế':'Tiên Đế','Thủ lĩnh phỉ':'Ma tu','Trúc Cơ':'Kim Đan Chân Nhân','Nguyên Anh':'Hóa Thần Lão Tổ','Địa Tiên':'Thiên Tiên','Nhân Tiên':'Kim Tiên'};
+function rank(p){const r=rank0(p);if(!G||!G.lk||p.kind=='rf')return r;return[LKN[r[0]]||r[0].replace('Thần Đế','Chuẩn Đế'),r[1]*5,r[2],r[3]]}
+function rank0(p){if(p.kind=='bandit')return['Thủ lĩnh phỉ',700,'☠','#999'];if(p.kind=='rf')return['Viện binh',1e9,'➕','#9cf'];const f=G.F[p.fac];
   if(p.kind=='exile')return['Hoàng tử vong quốc',800,'🥀','#c9a8e0'];
  if(p.kind=='pl'&&G.divine&&isMyKing()){const r=DIVT[Math.min(4,(G.F[p.fac]&&G.F[p.fac].race)||0)];return[r[0],100000,r[1],r[2]]}
- if(f&&f.race>=9&&p.kind!='pl'){if(f.king===p.id){const n=S.filter(s=>s.fac==p.fac).length;return n>=5?['Nhân Tiên',150000,'☯️','#9ff0ff']:['Địa Tiên',100000,'🌄','#ffd27a']}return fiefs(p)?['Nguyên Anh',40000,'🔆','#c9a0ff']:['Trúc Cơ',20000,'🌱','#8fe08a']}
+ if(f&&f.race>=9&&p.kind!='pl'){if(f.king===p.id){const n=S.filter(s=>s.fac==p.fac).length;return n>=5?['Nhân Tiên',30000,'☯️','#9ff0ff']:['Địa Tiên',20000,'🌄','#ffd27a']}return fiefs(p)?['Nguyên Anh',8000,'🔆','#c9a0ff']:['Trúc Cơ',3000,'🌱','#8fe08a']}
  if(f&&f.king===p.id&&f.race>=5){const r=GODT[f.race-5];return[r[0],12000,r[1],r[2]]}
  if(p.vuong&&p.kind=='lord')return['Vương',10000,'🏯','#ff8a3a'];
  if(f&&f.king===p.id&&G.ch){const c=G.ch.indexOf(p.fac);if(c>=0)return[CHT[c][0],40000,CHT[c][1],CHT[c][2]]}
@@ -131,7 +134,7 @@ function vassalDay(){const pl=P0(),king=isMyKing(),pp=facPow(pl.fac),held=contsH
  if(king&&G.autoGen&&G.day%3==0&&!genFull()&&G.gold>=genCost()+2000){const g=hireGen(1);if(g){g.x=pl.x+rnd(-30,30);g.y=pl.y+30;g.tx=g.x;g.ty=g.y;toast(`🤖 Tự động chiêu mộ tướng ${g.name} (-${fmt(genCost())} vàng)`,'#9cf')}}}
 function aiRecruit(){if(G.L.length>1800)return;for(let i=0;i<G.F.length;i++){const f=G.F[i];if(f.dead||i==P0().fac||f.king<0)continue;const ss=S.filter(s=>s.fac==i);if(!ss.length)continue;
  f.gold=(f.gold||0)+ss.length*60;const n=G.L.filter(q=>!q.dead&&q.fac==i&&q.kind=='lord').length,cost=2500+n*150;
- if(f.gold>=cost&&n<ss.length+2&&G.day%6==i%6){f.gold-=cost;const cap=ss.find(s=>s.type==0)||ss[0];pushP({kind:'lord',name:newName(f),fac:i,x:cap.x+rnd(-30,30),y:cap.y+rnd(25,45),t:mix(f.race>=9?ri(15000,30000):ri(500,900))})}}}
+ if(f.gold>=cost&&n<ss.length+2&&G.day%6==i%6){f.gold-=cost;const cap=ss.find(s=>s.type==0)||ss[0];pushP({kind:'lord',name:newName(f),fac:i,x:cap.x+rnd(-30,30),y:cap.y+rnd(25,45),t:mix((f.race>=9?ri(2000,4000):ri(500,900))*LKM())})}}}
 function hireMaxN(){let g=G.gold,n=myGens().length,k=0;while(k<200&&n<GCAP){const c=1500+Math.min(n,30)*500;if(g<c)break;g-=c;n++;k++}return k}
 function hireMax(){const pl=P0(),k=hireMaxN();for(let i=0;i<k;i++){const g=hireGen(1);if(g){g.x=pl.x+rnd(-40,40);g.y=pl.y+rnd(20,50);g.tx=g.x;g.ty=g.y}}addLog(`Chiêu mộ ${k} tướng.`,'#8f8');save();return k}
 function hireGen(q){const pl=P0(),cost=genCost();if(genFull()){if(!q)toast(`Đã đủ ${GCAP} tướng — phong thái ấp cho tướng hoặc chờ tướng tử trận`,'#f88');return}if(G.gold<cost){toast(`Cần ${fmt(cost)} vàng để chiêu mộ tướng`,'#f88');return}

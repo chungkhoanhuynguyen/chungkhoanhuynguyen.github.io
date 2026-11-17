@@ -138,4 +138,4 @@ function endFight(f,res){const P=fightPow(f),W=res=='A'?P.A:P.D,L=res=='A'?P.D:P
  else if(!s&&(f.af==pl.fac||f.df==pl.fac)){const wf=res=='A'?f.af:f.df;addLog(`${wf==pl.fac?'Quân ta':facN(wf)} thắng một trận (${fmt(f.n0)} quân tham chiến)`,wf==pl.fac?'#8f8':'#f99')}}
 const allies=(p,r)=>G.L.filter(q=>q!==p&&!q.dead&&!q.inF&&q.fac==p.fac&&(q.kind=='lord'||q.kind=='king')&&dist(q,p)<r);
 function incoming(o){let n=0;for(const p of G.L)if(p.kind=='rf'&&!p.dead&&p.to===o.id)n+=tot(p.t);return n}
-const myGarT=s=>G.xian?[90000,60000,36000][s.type]:[6000,4000,2500][s.type];
+const myGarT=s=>(G.xian?[15000,10000,6000]:[6000,4000,2500])[s.type]*LKM();
