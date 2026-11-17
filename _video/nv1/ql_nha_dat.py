@@ -122,15 +122,15 @@ S = [
            "Vợ chồng bỏ vào hai tỷ tiền thật, vậy là mất bốn mươi phần trăm vốn, dù giá nhà chỉ giảm hai mươi phần trăm. Đòn bẩy làm khoản lỗ to gấp đôi. Mà nếu phải bán gấp, giá còn thấp hơn nữa.")),
  dict(k='cards', anh=SGD, cap=('PHƯƠNG ÁN KHÁC', 'ĐỂ TÀI SẢN CÓ CHÂN THỨ HAI'), cols=CC, moc=True,
       cards=[('4,7 triệu', 'Tiền bù căn hộ mỗi tháng', 'Có thể để dành đều'), ('6 tháng', 'Quỹ dự phòng chi tiêu', 'Không phải bán gấp'), ('Dưới 70%', 'Mốc nhà đất em tự đặt', 'Giảm dần qua từng năm')],
-      say=("Có một con đường khác, không cần bán nhà ngay. Thay vì mua thêm căn thứ ba, khoản bốn triệu bảy trăm nghìn mỗi tháng đang bù cho căn hộ có thể dần chuyển thành một phần tiết kiệm và đầu tư có thể rút ra nhanh. "
+      say=("Có một con đường khác, không cần bán nhà ngay. Thay vì mua thêm căn thứ ba, khoản bốn triệu bảy trăm nghìn mỗi tháng đang bù cho căn hộ có thể dần chuyển sang tiết kiệm và đầu tư có thể rút ra nhanh. "
            "Trước hết là quỹ dự phòng đủ sáu tháng chi tiêu, để không bao giờ phải bán nhà gấp. Sau đó giảm dần phần nhà đất trong tài sản, em tự đặt mốc dưới bảy mươi phần trăm, qua nhiều năm chứ không làm một lần.")),
  dict(k='chat', cap=('KẾ HOẠCH CỦA NHÀ LAN', 'KHÔNG MUA CĂN THỨ BA'), cols=CC, moc=True, chat=dict(ten='Minh', tv='Đang hoạt động', gio='23:05', mau=G_, msgs=[
         ('Minh', 'Thôi, mình dừng ý định mua căn thứ ba'),
         ('me', 'Ừ, trả bớt nợ căn hộ trước'),
         ('Minh', 'Để riêng 6 tháng chi tiêu cho chắc'),
-        ('me', 'Rồi mỗi tháng để dành một phần ra kênh khác')]),
+        ('me', 'Rồi mỗi tháng để dành một ít ra kênh khác')]),
       say=("Anh Minh nhắn lại: thôi, mình dừng ý định mua căn thứ ba. Chị Lan đáp: ừ, trả bớt nợ căn hộ trước để tiền lãi nhẹ đi. "
-           "Anh thêm: để riêng sáu tháng chi tiêu cho chắc. Chị nhắn tiếp: rồi mỗi tháng để dành một phần ra kênh khác. Không ai biết giá nhà sẽ đi đâu, nhưng nhà mình không còn phải đặt cược tất cả vào một hướng.")),
+           "Anh thêm: để riêng sáu tháng chi tiêu cho chắc. Chị nhắn tiếp: rồi mỗi tháng để dành một ít ra kênh khác. Không ai biết giá nhà sẽ đi đâu, nhưng nhà mình không còn phải đặt cược tất cả vào một hướng.")),
  dict(k='checklist', anh=NHA, cap=('PHÉP THỬ CỦA ANH CHỊ', 'NHÀ ĐẤT CHIẾM BAO NHIÊU?'), cols=CC, moc=True,
       items=[('Dưới 50%: còn linh hoạt', GREEN),
              ('50 đến 80%: nên có quỹ dự phòng', GOLD),
