@@ -31,7 +31,7 @@ R_, V_, X_, G_ = (239, 68, 68), (255, 196, 0), (56, 189, 248), (34, 197, 94)
 TP = 'ov:Ho Chi Minh City skyline night||Ho Chi Minh City skyline night'
 HN = 'ov:Hanoi skyline night||Hanoi skyline night'
 HA = 'ov:Hanoi apartment buildings||Hanoi apartment buildings'
-BX = 'ov:Bitexco Financial Tower||Ho Chi Minh City skyline night'
+BX = 'ov:Ho Chi Minh City skyline night||Hanoi skyline night'
 S = [
  # ---------------- MỞ ĐẦU ----------------
  dict(k='noti', ch='Mở đầu', cap=('KỲ TRẢ GÓP THÁNG NÀY', '29.330.000 ĐỒNG'), cols=CR, noti=dict(gio='07:45', ngay='Thứ Hai', items=[
@@ -96,9 +96,10 @@ S = [
       say=("Tối đó, anh Khoa đọc thêm một tin làm anh khó hiểu. Hai mươi bảy ngân hàng niêm yết báo lãi trước thuế ba trăm mười một nghìn một trăm tỷ đồng sau chín tháng, tăng hai mươi phần trăm. "
            "Chị Hạnh hỏi: ngân hàng lãi to vậy, sao vẫn tăng lãi nhà mình? "
            "Câu trả lời nằm ở hai phía của cùng một chuyện.")),
- dict(k='text', anh=BX, cap=('NỢ XẤU KHOẢNG 2%', 'NGHE NHỎ, NHƯNG CHƯA ĐỦ'), cols=CC,
-      say=("Phía thứ nhất, con số nợ xấu khoảng hai phần trăm nghe rất nhỏ. Nhưng nó chưa tính những khoản đang trễ ở nhóm hai. "
-           "Ngân hàng Nhà nước còn có con số rộng hơn, nợ xấu gộp, tính cả nợ đã bán cho công ty quản lý tài sản và nợ tiềm ẩn. Cuối tháng tám, con số này là ba phẩy chín phần trăm. "
+ dict(k='text', anh=TP, cap=('NỢ XẤU KHOẢNG 2%', 'NGHE NHỎ, NHƯNG CHƯA ĐỦ'), cols=CC,
+      say=("Phía thứ nhất, con số nợ xấu khoảng hai phần trăm nghe rất nhỏ. Nhưng nó chưa tính những khoản đang trễ ở nhóm hai. ")),
+ dict(k='bignum', anh=HN, cap=('NỢ XẤU GỘP TOÀN HỆ THỐNG', 'CUỐI THÁNG 8/2026: 3,9%'), cols=CC, moc=True, value=3.9, fmt='{:,.1f}', unit='%', top='NỢ XẤU GỘP TOÀN HỆ THỐNG', sub='cuối tháng 8/2026 – Ngân hàng Nhà nước, Báo Đấu thầu 9/11', col=GOLD,
+      say=("Ngân hàng Nhà nước còn có con số rộng hơn, nợ xấu gộp, tính cả nợ đã bán cho công ty quản lý tài sản và nợ tiềm ẩn. Cuối tháng tám, con số này là ba phẩy chín phần trăm. "
            "Phía thứ hai, khi nợ xấu tăng, ngân hàng phải trích thêm tiền dự phòng, và lãi suất cho vay khó hạ. Người đang vay thả nổi là người cảm nhận đầu tiên.")),
  dict(k='chat', cap=('"AI ĐANG TRỄ NHIỀU NHẤT?"', 'NGƯỜI VAY ĐẦU TƯ NHÀ ĐẤT'), cols=CC, moc=True, chat=dict(ten='Anh Tùng (đồng nghiệp)', tv='Đang hoạt động', gio='21:15', mau=G_, msgs=[
         ('me', 'Ông làm ngân hàng, giờ ai trễ hạn nhiều nhất?'),
