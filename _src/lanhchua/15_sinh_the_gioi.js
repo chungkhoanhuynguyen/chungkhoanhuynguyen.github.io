@@ -69,8 +69,8 @@ function terrNow(){TD=0;const g=TC.getContext('2d'),w=TC.width,h=TC.height,own=N
  const colOf=f=>{let c=COL[f];if(!c){c=COL[f]=rgbOf(rm?(f==me?'#36d65a':atWar(me,f)?'#ff2d2d':'#c9c9c9'):FF[f].c)}return c},GOLD=[255,210,58],WHT=[255,255,255];
  for(let j=0;j<h;j++)for(let i=0;i<w;i++){const q=j*w+i,o=own[q];if(o<0)continue;const f=SF[o];if(!FF[f])continue;
   const a=i>0?own[q-1]:-1,b=i<w-1?own[q+1]:-1,c=j>0?own[q-w]:-1,e=j<h-1?own[q+w]:-1;
-  const fb=a<0||SF[a]!=f||b<0||SF[b]!=f||c<0||SF[c]!=f||e<0||SF[e]!=f,so=SO[o],ob=(a>=0&&a!=o&&SO[a]!=so)||(b>=0&&b!=o&&SO[b]!=so)||(c>=0&&c!=o&&SO[c]!=so)||(e>=0&&e!=o&&SO[e]!=so),mine=MN[o];
-  let col,al;if(fb){col=colOf(f);al=.9}else if(ob){col=WHT;al=.4}else{al=mine?.5:rm?.3:.2;col=mine?GOLD:colOf(f)}
+  const fb=(a>=0&&SF[a]!=f)||(b>=0&&SF[b]!=f)||(c>=0&&SF[c]!=f)||(e>=0&&SF[e]!=f),so=SO[o],ob=(a>=0&&a!=o&&SO[a]!=so)||(b>=0&&b!=o&&SO[b]!=so)||(c>=0&&c!=o&&SO[c]!=so)||(e>=0&&e!=o&&SO[e]!=so),mine=MN[o];
+  let col,al;if(fb){col=colOf(f);al=.68}else if(ob){col=WHT;al=.22}else{al=mine?.3:rm?.15:.13;col=mine?GOLD:colOf(f)}
   const p=q*4;d[p]=col[0];d[p+1]=col[1];d[p+2]=col[2];d[p+3]=al*255|0}
  g.putImageData(im,0,0);
  g.globalAlpha=1;for(let w=0;w<3;w++){const b=WB[w],cv=MMW[w];if(w==2&&!(G&&G.tang))continue;const m=cv.getContext('2d');m.clearRect(0,0,cv.width,cv.height);m.drawImage(LOW,b.x0/40,b.y0/40,b.w/40,b.h/40,0,0,cv.width,cv.height);m.globalAlpha=.8;m.drawImage(TC,b.x0/40,b.y0/40,b.w/40,b.h/40,0,0,cv.width,cv.height);m.globalAlpha=1}}

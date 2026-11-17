@@ -88,11 +88,12 @@ let TGO=0;function tangGo(n){if(TGO)return;TGO=1;const pl=P0(),me=pl.fac,inSlot=
   if(!up)toast(`↩ ${I.ic} Trở lại <b>${n>=24?'Tiên Giới':'Tầng '+n+' · '+I.n}</b> — lãnh thổ cũ vẫn còn nguyên (bạn giữ ${Math.round(held(12)*100)}%).`,'#c9b8ff',1);else toast(`${I.ic} ${n>=24?'<b>TIÊN GIỚI</b> HIỆN RA!':(first?'⚡ PHI THĂNG! 23 TẦNG TRỜI MỞ RA<br>':'')+`<b>TẦNG ${n} · ${I.n.toUpperCase()}</b>`}<br>${I.r} cai quản. ${I.rm}<br><small>${n<24?`Chiếm 2/3 thành để lên tầng ${n+1}. Phía trên chỉ toàn mây mù… chiếm 1/2 để dò thám.`:'Chiếm 2/3 Tiên Giới để đăng cơ ĐẠI ĐẾ.'}${G.tdone?` · ${G.tdone} tầng đã bình định nộp cống ${fmt(tribute())} vàng/ngày`:''}</small>`,'#d8c8ff',1);
   addLog(`${I.ic} ${up?'':'Trở lại '}${n>=24?'Tiên Giới':'Tầng '+n+' · '+I.n}.`,'#d8c8ff');SFX.fan();setTimeout(()=>SFX.war(),900)}catch(e){console.error(e)}
   L.remove();paused=pp;TGO=0;save()},60)}
+function tkGo(n){const I=TINFO(n);thienKiep(n==1?9:n>=24?9:6,n==1?'⚡ CỬU CỬU LÔI KIẾP ⚡':n>=24?'⚡ TIÊN KIẾP GIÁNG LÂM ⚡':`⚡ THIÊN KIẾP TẦNG ${n} ⚡`,n==1?'PHI THĂNG!':n>=24?'TIẾN NHẬP TIÊN GIỚI!':`LÊN ${I.n.toUpperCase()}!`,()=>tangGo(n),1)}
 const tribute=()=>(G&&G.tdone||0)*800*LKM();
 const canUp=()=>G.lk&&(!G.tang?[9,10,11].filter(c=>held(c)>=.67).length>=2:G.tang<24&&(G.tang<(G.tmax||0)||held(12)>=2/3));
 function askUp(){const n=(G.tang||0)+1,I=TINFO(n);G.askD=G.day;G.askN=n;SFX.fan();
  menu(n==1?'⚡ Thiên kiếp giáng xuống — Phi thăng?':n>=24?'🏯 Cổng Tiên Giới đã mở':`⚡ Lối lên Tầng ${n} đã mở`,`<p>${n==1?'Bạn đã làm chủ Cửu Thiên Huyền Giới. Linh khí trên người cuộn trào, thiên kiếp giáng xuống — cánh cửa <b>23 Tầng Trời</b> mở ra trên đỉnh mây.':`Bạn đã bình định 2/3 ${G.tang>=24?'':'Tầng '+G.tang}. Mây mù phía trên tan bớt…`}</p><p>${I.ic} Phía trên: <b>${n>=24?'TIÊN GIỚI':'Tầng '+n+' · '+I.n}</b> — ${I.r}<br><small>${I.rm}</small></p><p style="font-size:12.5px;color:#cdb">Bạn và các tướng không giữ thái ấp sẽ được đưa lên. Tầng hiện tại khóa lại, nộp cống hằng ngày — muốn quay về chơi tiếp lúc nào cũng được qua 🌌 Thiên Lộ.</p>`,
- [[n==1?'⚡ Phi thăng ngay':n>=24?'🏯 Tiến vào Tiên Giới':`⚡ Lên Tầng ${n}`,()=>{close();tangGo(n)}],['⏳ Chưa, ở lại củng cố thêm',()=>{G.ask=n;close();toast('Khi sẵn sàng, bấm 🌌 Thiên Lộ để phi thăng','#c9b8ff')}]])}
+ [[n==1?'⚡ Phi thăng ngay':n>=24?'🏯 Tiến vào Tiên Giới':`⚡ Lên Tầng ${n}`,()=>{close();tkGo(n)}],['⏳ Chưa, ở lại củng cố thêm',()=>{G.ask=n;close();toast('Khi sẵn sàng, bấm 🌌 Thiên Lộ để phi thăng','#c9b8ff')}]])}
 function tangCheck(){if(!G.lk||TGO)return;
  if(G.tang&&!G.tmax)G.tmax=G.tang;
  if(canUp()&&G.ask!=(G.tang||0)+1&&(G.askN!=(G.tang||0)+1||G.day-(G.askD||-99)>=8)&&!paused&&mode=='map'&&(!G.tang||G.tang==G.tmax)){askUp();return}
@@ -113,7 +114,7 @@ function thienLo(){const n=G.tang||0,b=[];let h='<p style="font-size:12.5px">Con
   else if(i==9||i==18)h+=`<div style="color:#889">☁️ Tầng ${i} · ??? <small>${i==9?'— nghe đồn có tiếng rồng gầm':'— mây nhuộm đỏ máu'}</small></div>`;
   else h+=`<div style="color:#667">☁️ Tầng ${i} · ???</div>`}
  h+='</div>';if(G.tdone)h+=`<p>💰 Cống nạp từ ${G.tdone} tầng đã bình định: <b>${fmt(tribute())}</b> vàng/ngày</p>`;if(G.dd)h+='<p style="color:#ffe066">👑 Bạn đã là ĐẠI ĐẾ vạn giới.</p>';
- if(canUp())b.push([n?`⚡ Lên ${n+1>=24?'Tiên Giới':'Tầng '+(n+1)}`:'⚡ Phi thăng lên 23 Tầng Trời',()=>{close();tangGo(n+1)}]);
+ if(canUp())b.push([n?`⚡ Lên ${n+1>=24?'Tiên Giới':'Tầng '+(n+1)}`:'⚡ Phi thăng lên 23 Tầng Trời',()=>{close();tkGo(n+1)}]);
  for(let i=1;i<=(G.tmax||0);i++)if(i!=n)b.push([`${i<n?'↩ Về':'⏩ Tới'} ${i>=24?'Tiên Giới':'Tầng '+i+' · '+TINFO(i).n}`,()=>{close();tangGo(i)}]);
  if(n&&contOf(P0().x,P0().y)!=12)b.push([`🌌 Về Tầng ${n<24?n:'Tiên Giới'} (miễn phí)`,()=>{close();const p=tangLand(),pl=P0();stopPl();pl.x=p.x;pl.y=p.y;pl.tx=pl.x;pl.ty=pl.y;pl.safe=6;MC.follow=1;if(G.call)for(const g of myGens()){g.x=pl.x+rnd(-90,90);g.y=pl.y+rnd(-60,60);g.tx=g.x;g.ty=g.y;g.goS=g.goP=null}}]);
  b.push(['Đóng',close]);menu('🌌 Thiên Lộ — 23 Tầng Trời',h,b)}
