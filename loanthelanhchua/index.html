@@ -251,7 +251,7 @@ const RK=['Lính đánh thuê','Hoàng tử vong quốc','Hiệp sĩ','Nam tư�
 function vills(p){let n=0;for(const v of V)if(v.own===p.id)n++;return n}
 function fiefs(p){let n=0;for(const s of S)if(s.own===p.id)n++;return n}
 const LKN={'Hiệp sĩ':'Luyện Khí','Nam tước':'Trúc Cơ','Tử tước':'Kim Đan','Bá tước':'Nguyên Anh','Hầu tước':'Hóa Thần','Công tước':'Luyện Hư','Vương':'Đại Thừa','Lính đánh thuê':'Tán tu','Vua':'Tiên Vương','Hoàng đế':'Tiên Đế','Thủ lĩnh phỉ':'Ma tu','Trúc Cơ':'Kim Đan Chân Nhân','Nguyên Anh':'Hóa Thần Lão Tổ','Địa Tiên':'Thiên Tiên','Nhân Tiên':'Kim Tiên','Thiên Vương':'Thiên Vương','Thiên Tôn':'Thiên Tôn'};
-function rank(p){let r=rank0(p);if(!G||p.kind=='rf')return r;if(G.lk)r=[LKN[r[0]]||r[0].replace('Thần Đế','Chuẩn Đế'),r[1]*5,r[2],r[3]];if(p.kind=='pl'&&G.cg)r=[r[0],Math.round(r[1]*cgM()),r[2],r[3]];return r}
+function rank(p){let r=rank0(p);if(!G||p.kind=='rf')return r;if(G.lk)r=[LKN[r[0]]||r[0].replace('Thần Đế','Chuẩn Đế'),r[1]*5,r[2],r[3]];if(p.kind=='pl'&&(G.cg||G.dhm>1))r=[r[0],Math.round(r[1]*cgM()*dhM()),r[2],r[3]];return r}
 function rank0(p){if(p.kind=='bandit')return['Thủ lĩnh phỉ',700,'☠','#999'];if(p.kind=='rf')return['Viện binh',1e9,'➕','#9cf'];const f=G.F[p.fac];
   if(p.kind=='exile')return['Hoàng tử vong quốc',800,'🥀','#c9a8e0'];
  if(p.kind=='pl'&&G.tang&&isMyKing())return G.dd?['Đại Đế',200000*TMv(),'🐲','#ffe066']:['Cửu Ngũ Chí Tôn',100000*TMv(),'🐉','#ffd23a'];
@@ -576,6 +576,37 @@ function calcCH(){G.ch=G.ch||[];for(let c=0;c<NC();c++){const ss=S.filter(s=>s.r
 function calcMV(q){calcCH();progress();const ds=G.F.map((f,i)=>i).filter(i=>G.F[i].race==4&&!G.F[i].dead&&S.some(s=>s.fac==i));if(!ds.length){G.mv=-1;return}
  const SCv=new Map(ds.map(i=>[i,0]));for(const s of S)if(SCv.has(s.fac))SCv.set(s.fac,SCv.get(s.fac)+1e6+tot(s.gar));for(const p of G.L)if(!p.dead&&SCv.has(p.fac))SCv.set(p.fac,SCv.get(p.fac)+tot(p.t));const b=ds.sort((x,y)=>SCv.get(y)-SCv.get(x))[0];if(b===G.mv)return;const old=G.mv;G.mv=b;const k=G.L[G.F[b].king];
  if(!q&&k){const me=k.kind=='pl';if(me||ACT==4)toast(me?'😈 BẠN đã trở thành MA VƯƠNG — kẻ mạnh nhất Vùng Đất Chết!':`😈 ${k.name} của ${facN(b)} trở thành MA VƯƠNG Vùng Đất Chết!`,'#c04cff',me);addLog(`😈 ${me?'Bạn':k.name} (${facN(b)}) trở thành Ma Vương.`,'#d58cff')}}
+/* ================= DANH HIỆU (chứng minh thực lực, mỗi danh hiệu tăng giới hạn quân) ================= */
+const DHL=[
+ ['ch4','Bá Chủ Tứ Châu','🗺','#7fe3ff',.10,()=>G.open&&G.open.includes(4),'Mở Vùng Đất Chết'],
+ ['tv','Diệt Tử Vực Ma','💀','#c58cff',.12,()=>G.divine,'Chiếm 1/2 Vùng Đất Chết'],
+ ['tg','Chinh Phạt Thần Giới','⚡','#fff07a',.15,()=>G.xian,'Chiếm 2/4 lục địa Thần linh'],
+ ['lk','Linh Khí Chi Chủ','✨','#bfffd8',.15,()=>G.lk,'Mở Thời đại Linh khí'],
+ ['pt','Phi Thăng Giả','🌌','#d8c8ff',.20,()=>G.tang,'Phi thăng lên Tầng Trời'],
+ ...[1,5,10,15,20,23].map(n=>['t'+n,`Chinh Phạt ${n} Tầng Trời`,'☁️','#c9e6ff',.10,()=>(G.tdone||0)>=n,`Bình định ${n} tầng trời`]),
+ ['dd','Đại Đế Vạn Giới','🐲','#ffe066',.50,()=>G.dd,'Thống nhất Tiên Giới'],
+ ...[[50,'Lãnh Chúa Ngũ Thập Thành'],[150,'Bá Chủ Bách Thành'],[300,'Vương Giả Tam Bách Thành'],[600,'Hoàng Giả Lục Bách Thành'],[1000,'Đế Quân Thiên Thành']].map(([n,s])=>['s'+n,s,'🏯','#ffcf3a',.08,()=>dhS()>=n,`Giữ ${n} thành`]),
+ ...[[1e4,'Thanh Danh Lừng Lẫy'],[1e5,'Danh Chấn Thiên Hạ'],[1e6,'Vạn Cổ Lưu Danh'],[1e7,'Thiên Địa Đồng Tôn']].map(([n,s])=>['r'+n,s,'⭐','#ffd27a',.08,()=>(P0().ren||0)>=n,`Đạt ${fmt(n)} danh vọng`]),
+ ...[[30,'Chủ Soái Tam Thập Tướng'],[100,'Bách Tướng Triều Bái']].map(([n,s])=>['g'+n,s,'🎖','#ff9a6a',.06,()=>myGens().length>=n,`Có ${n} tướng`]),
+ ...[[1000,'Thiên Niên Bá Nghiệp'],[3000,'Vạn Thế Trường Tồn']].map(([n,s])=>['d'+n,s,'⏳','#c9b8a0',.05,()=>G.day>=n,`Sống tới ngày ${n}`]),
+ ...[[100,'Linh Thạch Phú Hộ'],[10000,'Phú Khả Địch Thiên']].map(([n,s])=>['l'+n,s,'💎','#9ff0ff',.05,()=>(G.ls||0)>=n,`Có ${fmtLS(n)} linh thạch`])];
+let DHS=-1;const dhS=()=>DHS>=0?DHS:(DHS=S.filter(s=>s.fac==P0().fac).length);
+function dhList(){const me=P0().fac,o=[];for(const d of DHL){try{if(d[5]())o.push({id:d[0],n:d[1],ic:d[2],c:d[3],b:d[4]})}catch(e){}}
+ if(G.ch)G.ch.forEach((f,c)=>{if(f===me&&CHT[c])o.push({id:'ch'+c,n:CHT[c][0],ic:CHT[c][1],c:CHT[c][2],b:.10})});return o}
+function dhUpdate(quiet){if(!G||!G.L)return;DHS=-1;const L=dhList();G.dhm=1+L.reduce((a,d)=>a+d.b,0);G.dhv=L.sort((a,b)=>b.b-a.b).map(d=>[d.n,d.ic,d.c]);
+ const old=new Set(G.dhid||[]),nw=L.filter(d=>!old.has(d.id));G.dhid=L.map(d=>d.id);
+ if(!quiet&&old.size&&nw.length)for(const d of nw.slice(0,3)){toast(`🏅 Đạt danh hiệu <b style="color:${d.c}">${d.ic} ${d.n}</b><br>Giới hạn quân +${Math.round(d.b*100)}% (tổng ×${G.dhm.toFixed(2)})`,d.c,1);addLog(`🏅 Đạt danh hiệu ${d.n}.`,d.c)}}
+const dhM=()=>G&&G.dhm||1;
+function dhMenu(){if(!G)return;dhUpdate(1);const L=dhList(),have=new Set(L.map(d=>d.id));let h=`<p>Mỗi danh hiệu tăng giới hạn quân dẫn theo. Hiện có <b>${L.length}</b> danh hiệu → giới hạn quân <b>×${dhM().toFixed(2)}</b>${G.cg?` · cảnh giới ×${cgM()}`:''}</p><div style="max-height:52vh;overflow:auto;font-size:13px;line-height:1.6">`;
+ h+=L.sort((a,b)=>b.b-a.b).map(d=>`<div><span style="color:${d.c}">${d.ic} <b>${d.n}</b></span> <small style="color:#9c9">+${Math.round(d.b*100)}%</small></div>`).join('');
+ const lock=DHL.filter(d=>!have.has(d[0]));if(lock.length){h+='<div style="margin-top:6px;color:#889">— Chưa đạt —</div>';let shown=0;const seen=new Set();for(const d of lock){const g=d[0].replace(/\d+$/,'');if(seen.has(g))continue;seen.add(g);if(shown++>8)break;h+=`<div style="color:#778">🔒 ??? <small>(${d[6]} · +${Math.round(d[4]*100)}%)</small></div>`}}
+ h+='</div>';menu('🏅 Danh hiệu',h,[['Đóng',close]])}
+function dhPlates(x,y,t){const v=G&&G.dhv;if(!v||!v.length)return;const mx=SMALL()?3:6,n=Math.min(mx,v.length);X.textAlign='center';X.font='800 9.5px system-ui,sans-serif';
+ for(let i=0;i<n;i++){const [s,ic,c]=v[i],yy=y-i*15,l=ic+' '+s,tw=X.measureText(l).width+12,gl=.6+Math.sin(t*2.5+i)*.4;
+  X.fillStyle='rgba(14,10,24,.82)';X.beginPath();X.moveTo(x-tw/2,yy-10);X.lineTo(x+tw/2,yy-10);X.lineTo(x+tw/2+5,yy-4.5);X.lineTo(x+tw/2,yy+1);X.lineTo(x-tw/2,yy+1);X.lineTo(x-tw/2-5,yy-4.5);X.closePath();X.fill();
+  X.strokeStyle=c;X.globalAlpha=.55+.45*gl;X.lineWidth=1.2;X.stroke();X.globalAlpha=1;X.fillStyle=c;X.fillText(l,x,yy-1.5)}
+ if(v.length>n){X.font='700 9px system-ui';X.fillStyle='#ffe9a8';X.fillText(`+${v.length-n} danh hiệu`,x,y-n*15)}}
+const dhN=()=>{const v=G&&G.dhv;if(!v||!v.length)return 0;const mx=SMALL()?3:6;return Math.min(mx,v.length)+(v.length>mx?1:0)};
 function absWar(CL){const pl=P0();for(const c of CL||[0,1,2,3,4,4,...(G.divine?[5,6,7,8]:[]),...(G.xian?[9,10,11]:[]),...(G.tang?[12]:[])]){if(c==ACT||Math.random()<.4)continue;
  const fs=G.F.map((f,i)=>i).filter(i=>(G.F[i].race||0)==c&&!G.F[i].dead&&i!=pl.fac&&S.some(s=>s.fac==i));if(!fs.length)continue;
  for(const p of G.L)if(!p.dead&&(p.kind=='lord'||p.kind=='king')&&p.fac>=0&&((G.F[p.fac]&&G.F[p.fac].race)||0)==c&&contOf(p.x,p.y)==c){const cap=rank(p)[1];if(tot(p.t)<cap)add(p.t,mix(Math.min(cap-tot(p.t),Math.ceil(cap*.03))))}
@@ -613,7 +644,7 @@ function svP(p){if(p.dead<0&&p.kind!='pl')return{id:p.id,kind:p.kind,name:p.name
 function save(){try{localStorage.setItem('ltlc-map',WMAP?'2':'1');localStorage.setItem(KEY,JSON.stringify({...G,L:G.L.map(svP),war:G.war.map(r=>r.map(v=>v?1:0).join('')),SS:S.map(s=>[s.fac,s.own,s.gar,s.pool]),VV:V.map(v=>[v.own,v.pool,v.burn])}))}catch(e){}}
 addEventListener('visibilitychange',()=>{if(document.hidden&&G&&G.L&&mode!='title')save()});addEventListener('pagehide',()=>{if(G&&G.L&&mode!='title')save()});
 function load(){JQ.length=0;try{if(WMAP&&localStorage.getItem('ltlc-map')!='2')return 0;const d=JSON.parse(localStorage.getItem(KEY));if(!d||!d.SS)return 0;if(d.divine)unlockWorld();if(d.xian)unlockWorld2();if(d.tang)genTangWorld(d.tang);d.SS.forEach((a,i)=>{if(S[i]){S[i].fac=a[0];S[i].own=a[1];S[i].gar=a[2];S[i].pool=a[3]}});delete d.SS;(d.VV||[]).forEach((a,i)=>{if(V[i]){V[i].own=a[0];V[i].pool=a[1];V[i].burn=a[2]}});delete d.VV;
- if(d.war)d.war=d.war.map(r=>typeof r=='string'?r.split('').map(Number):r);d.L.forEach(p=>{if(p.th==null)p.th=Math.random()*2;if(!p.t)p.t={inf:0,arc:0,cav:0};if(p.goP==null)p.goP=-1;if(p.goS==null)p.goS=-1;if(p.face==null)p.face=1;if(p.tx==null){p.tx=p.x;p.ty=p.y}if(p.dead==null)p.dead=0;if(p.to==null)p.to=-1;p.goS=p.goS>=0?S[p.goS]:null});d.L.forEach(p=>{p.goP=p.goP>=0?d.L[p.goP]:null});d.fights=d.fights||[];G=d;if(G.cmap&&!G.xw){G.xw=1;extraWar(G.F.map((f,i)=>i).filter(i=>G.F[i].race))}{const na=addConts();if(na){G.won=0;setTimeout(()=>toast(na>15?'🌊 CÁC CHÂU LỤC MỚI xuất hiện bên kia biển!':'💀 VÙNG ĐẤT CHẾT trỗi dậy ở tận cùng phía Đông!<br>Quân đoàn xương bất tử thù địch với mọi tộc<br><small>Chúng sẽ vượt biển xâm lược — hãy phòng thủ!</small>','#c58cff',1),1500)}}sanitize();if(G.cmap&&!G.split)splitDark();slim();mySlim();terr();MC.z=.7;MC.follow=1;rlog();return 1}catch(e){return 0}}
+ if(d.war)d.war=d.war.map(r=>typeof r=='string'?r.split('').map(Number):r);d.L.forEach(p=>{if(p.th==null)p.th=Math.random()*2;if(!p.t)p.t={inf:0,arc:0,cav:0};if(p.goP==null)p.goP=-1;if(p.goS==null)p.goS=-1;if(p.face==null)p.face=1;if(p.tx==null){p.tx=p.x;p.ty=p.y}if(p.dead==null)p.dead=0;if(p.to==null)p.to=-1;p.goS=p.goS>=0?S[p.goS]:null});d.L.forEach(p=>{p.goP=p.goP>=0?d.L[p.goP]:null});d.fights=d.fights||[];G=d;if(G.cmap&&!G.xw){G.xw=1;extraWar(G.F.map((f,i)=>i).filter(i=>G.F[i].race))}{const na=addConts();if(na){G.won=0;setTimeout(()=>toast(na>15?'🌊 CÁC CHÂU LỤC MỚI xuất hiện bên kia biển!':'💀 VÙNG ĐẤT CHẾT trỗi dậy ở tận cùng phía Đông!<br>Quân đoàn xương bất tử thù địch với mọi tộc<br><small>Chúng sẽ vượt biển xâm lược — hãy phòng thủ!</small>','#c58cff',1),1500)}}sanitize();if(G.cmap&&!G.split)splitDark();slim();mySlim();dhUpdate(1);terr();MC.z=.7;MC.follow=1;rlog();return 1}catch(e){return 0}}
 const clearSave=()=>{try{localStorage.removeItem(KEY)}catch(e){}};
 
 /* ================= AI BẢN ĐỒ ================= */
@@ -717,7 +748,7 @@ function endFight(f,res){const P=fightPow(f),W=res=='A'?P.A:P.D,L=res=='A'?P.D:P
 const allies=(p,r)=>G.L.filter(q=>q!==p&&!q.dead&&!q.inF&&q.fac==p.fac&&(q.kind=='lord'||q.kind=='king')&&dist(q,p)<r);
 function incoming(o){let n=0;for(const p of G.L)if(p.kind=='rf'&&!p.dead&&p.to===o.id)n+=tot(p.t);return n}
 const myGarT=s=>(G.xian?[15000,10000,6000]:[6000,4000,2500])[s.type]*PW(s.race);
-function newDay(){G.day++;lsDay();if(mode=='map')mySlim(1);const pl=P0(),cnt={};for(const s of S)cnt[s.fac]=(cnt[s.fac]||0)+1;
+function newDay(){G.day++;lsDay();dhUpdate();if(mode=='map')mySlim(1);const pl=P0(),cnt={};for(const s of S)cnt[s.fac]=(cnt[s.fac]||0)+1;
  for(const s of S){const M=LKM(),base=[40,25,12][s.type]*(1+.05*(cnt[s.fac]||0))*M;s.pool=Math.min(base*25|0,s.pool+Math.round(base));if(s.fac==pl.fac&&G.divine){const T=myGarT(s);if(tot(s.gar)<T){const k=Math.ceil(T*.05);s.gar.inf+=Math.ceil(k*.55);s.gar.arc+=Math.ceil(k*.3);s.gar.cav+=Math.ceil(k*.15)}continue}if(s.race>=9&&G.F[s.fac]&&G.F[s.fac].race>=9){const M2=PW(s.race);if(tot(s.gar)<[10000,6000,4000][s.type]*M2){s.gar.inf+=40*M2;s.gar.arc+=20*M2}}else if(tot(s.gar)<[4000,2500,1500][s.type]*M){s.gar.inf+=9*M;s.gar.arc+=6*M}}
  if(G.rev&&G.day==G.rev[0]){const o=G.rev[1];G.war[o][pl.fac]=G.war[pl.fac][o]=1;G.rev=null;terr();toast(`⚔ ${facN(o)} tuyên chiến với bạn — kẻ phản loạn!`,'#ff6a5a',1);SFX.war()}
  if(G.day%4==0){const INC=new Map();for(const p of G.L)if(p.kind=='rf'&&!p.dead)INC.set(p.to,(INC.get(p.to)||0)+tot(p.t));for(const s of S){const o=G.L[s.own];if(o&&o.kind!='pl'&&s.race!=ACT)continue;if(!o||o.dead||o.fac!=s.fac||s.pool<40||dist(o,s)<60)continue;if(o.kind=='pl'&&!G.rf)continue;
@@ -1134,7 +1165,7 @@ function party(p,t,z){const c=facC(p.fac),x=p.x,y=p.y,n=tot(p.t);
   if(p.kind=='king'){X.fillStyle='#ffd23a';TRI(X,x-10,y-41,x-6,y-41,x-8,y-46)}}
  if(p.kind=='rf'&&SMALL())return;if(p.kind!='pl'&&contOf(x,y)!=PC())return;X.font='bold 10px system-ui,sans-serif';const full=p.kind=='pl'||p.kind=='king'||(z>(SMALL()?.95:.6)),lb=(p.kind=='lord'||p.kind=='king'||p.kind=='pl'?rank(p)[2]+' ':'')+(full||p.kind!='lord'?pname(p)+' · ':'')+fmt(n),tw=X.measureText(lb).width;
  const rk=rank(p),ri0=RK.indexOf(rk[0]),plate=(p.kind=='pl'||p.kind=='king'||p.kind=='exile'||ri0>=4)&&p.kind!='rf'&&p.kind!='bandit';
- LBL.push({p:p.kind=='pl'?0:p.kind=='king'?5:atWar(P0().fac,p.fac)?6:p.kind=='rf'?9:7,x:x-tw/2-4,y:y+5,w:tw+8,h:13,d:()=>{if(plate)titlePlate(x,y-50,rk,t);X.textAlign='center';X.font='bold 10px system-ui,sans-serif';X.fillStyle='rgba(15,10,6,.74)';X.fillRect(x-tw/2-4,y+5,tw+8,13);X.fillStyle=p.kind=='pl'?'#ffd65a':p.kind=='rf'?'#9cf':rel(p.fac);X.fillText(lb,x,y+15)}})}
+ LBL.push({p:p.kind=='pl'?0:p.kind=='king'?5:atWar(P0().fac,p.fac)?6:p.kind=='rf'?9:7,x:x-tw/2-4,y:y+5,w:tw+8,h:13,d:()=>{if(plate)titlePlate(x,y-50,rk,t);if(p.kind=='pl')dhPlates(x,y-72,t);X.textAlign='center';X.font='bold 10px system-ui,sans-serif';X.fillStyle='rgba(15,10,6,.74)';X.fillRect(x-tw/2-4,y+5,tw+8,13);X.fillStyle=p.kind=='pl'?'#ffd65a':p.kind=='rf'?'#9cf':rel(p.fac);X.fillText(lb,x,y+15)}})}
 function titlePlate(x,y,rk,t){const txt=rk[0].toUpperCase(),hi=RK.indexOf(rk[0]),big=hi>=9,ic=rk[2],col=rk[3],gl=.55+Math.sin(t*3+x*.01)*.45;
  X.font='800 8.5px system-ui,sans-serif';const tw=X.measureText(txt).width,w=tw+26,h=13;X.save();X.translate(x,y);
  if(!LOWQ){X.shadowColor=col;X.shadowBlur=(big?18:hi>=7?12:7)*gl}
@@ -1196,7 +1227,7 @@ function drawMap(t){const c=MC;if(G&&c.follow){c.x=P0().x;c.y=P0().y}if(!G)c.x+=
  if(G){const kg=myKing();if(kg&&contOf(kg.x,kg.y)==PC()){const k=1/Math.min(1,z),pu=1+Math.sin(t*4)*.15;X.strokeStyle='#c58cff';X.lineWidth=3*k;X.beginPath();X.ellipse(kg.x,kg.y+1,24*k*pu,10*k*pu,0,0,7);X.stroke();
   const ay=kg.y-(z<.42?22:80)*k;X.font=`${22*k}px system-ui`;X.textAlign='center';X.fillText('👑',kg.x,ay);X.font=`900 ${11*k}px system-ui`;X.lineWidth=3*k;X.strokeStyle='#000';X.strokeText('VUA '+fmt(tot(kg.t)),kg.x,ay-22*k);X.fillStyle='#e6c8ff';X.fillText('VUA '+fmt(tot(kg.t)),kg.x,ay-22*k)}}
  if(G){const p=P0(),k=1/Math.min(1,z),pu=1+Math.sin(t*5)*.18;X.strokeStyle='#ffd23a';X.lineWidth=3*k;X.beginPath();X.ellipse(p.x,p.y+1,22*k*pu,9*k*pu,0,0,7);X.stroke();X.strokeStyle='rgba(255,210,58,.35)';X.lineWidth=8*k;X.stroke();
-  const ay=p.y-(z<.42?22:74)*k-Math.abs(Math.sin(t*4))*6*k;X.fillStyle='#ffd23a';X.strokeStyle='#000';X.lineWidth=2*k;X.beginPath();X.moveTo(p.x-9*k,ay-12*k);X.lineTo(p.x+9*k,ay-12*k);X.lineTo(p.x,ay);X.closePath();X.fill();X.stroke();
+  const ay=p.y-(z<.42?22:74+(dhN()?dhN()*15+30:0))*k-Math.abs(Math.sin(t*4))*6*k;X.fillStyle='#ffd23a';X.strokeStyle='#000';X.lineWidth=2*k;X.beginPath();X.moveTo(p.x-9*k,ay-12*k);X.lineTo(p.x+9*k,ay-12*k);X.lineTo(p.x,ay);X.closePath();X.fill();X.stroke();
   X.font=`900 ${12*k}px system-ui`;X.textAlign='center';X.lineWidth=3*k;X.strokeText('BẠN',p.x,ay-16*k);X.fillText('BẠN',p.x,ay-16*k)}
  X.textAlign='center';for(const m of mfx){if(!vis(m))continue;X.globalAlpha=cl(m.t,0,1);X.font=`bold ${Math.max(14,12/z)}px system-ui`;X.lineWidth=3/Math.min(1,z);X.strokeStyle='#000';X.strokeText(m.s,m.x,m.y);X.fillStyle=m.c;X.fillText(m.s,m.x,m.y);X.globalAlpha=1}
  if(!LOWQ&&z>.38)for(const cd of clouds){if(!vis({x:cd.x,y:cd.y}))continue;X.fillStyle='rgba(0,0,0,.07)';E(X,cd.x+40,cd.y+60,cd.r,cd.r*.45);X.fillStyle='rgba(255,255,255,.08)';E(X,cd.x,cd.y,cd.r,cd.r*.45);E(X,cd.x+cd.r*.4,cd.y-cd.r*.15,cd.r*.6,cd.r*.35)}
@@ -1256,6 +1287,7 @@ $('#zTp').onclick=()=>{if(!paused&&G)tpMenu()};
 $('#zTs').onclick=()=>{if(!G)return;G.ts=({1:2,2:4,4:1})[G.ts||2];tsBtn();toast(`⏩ Tốc độ thời gian ×${G.ts}`,'#9cf')};
 function tsBtn(){const cg=$('#zCg');if(cg)cg.style.display=G&&G.lsOn&&mode!='title'?'':'none';const l=$('#zTl');if(l)l.style.display=G&&G.lk&&mode!='title'?'':'none';const e=$('#zTs');if(!e)return;const on=G&&G.xian&&mode!='title';e.style.display=on?'':'none';if(on)e.textContent='⏩'+(G.ts||2)}
 $('#cGold').onclick=$('#cArmy').onclick=()=>{if(!paused&&G&&G.lsOn)cgMenu()};$('#zCg').onclick=()=>{if(!paused&&G)cgMenu()};
+$('#cRank').onclick=()=>{if(!paused&&G)dhMenu()};
 $('#zTl').onclick=()=>{if(!paused&&G)thienLo()};
 $('#zAc').onclick=()=>{if(!paused&&G)acToggle()};
 $('#zCo').onclick=()=>{showArrows(6);toast('🧭 Mũi tên chỉ hướng các nước gần nhất (6 giây)','#ffd77a')};
@@ -1286,6 +1318,6 @@ let LAGON=(()=>{try{return localStorage.getItem('ltlc-lag')!='0'}catch(e){return
 function lagTick(now){const g=LF.last?now-LF.last:0;LF.last=now;LF.n++;if(g>LF.mx||now-LF.mxT>5000){LF.mx=g;LF.mxT=now}if(now-LF.t0>=1000){LF.fps=Math.round(LF.n*1000/(now-LF.t0));LF.n=0;LF.t0=now;if(MOB&&G&&!paused&&!document.hidden){const tg=ULQ?24:29;if(LF.fps<tg*.75){LF.lo=(LF.lo||0)+1;LF.hi=0}else if(LF.fps>=tg){LF.hi=(LF.hi||0)+1;LF.lo=0}else LF.lo=LF.hi=0;if(LF.lo>=2&&DSR>.55){DSR=+(DSR-.1).toFixed(2);LF.lo=0;rs()}else if(LF.hi>=8&&DSR<1){DSR=Math.min(1,+(DSR+.1).toFixed(2));LF.hi=0;rs()}}tsBtn();const e=$('#lag');if(!e)return;const show=LAGON&&G&&mode!='title';e.style.display=show?'block':'none';if(!show)return;const tp=$('#top');e.style.top=((tp&&tp.offsetHeight?tp.getBoundingClientRect().bottom:40)+4)+'px';const mx=Math.round(LF.mx);e.innerHTML=`📶 ${LF.fps} hình/giây · giật lớn nhất ${mx}ms ${mx>250?'🔴':mx>100?'🟡':'🟢'}${DSR<1?` · nét ${Math.round(DSR*100)}%`:''}`}}
 let lfr=0;function loop(now){const cap=paused&&mode!='battle'?(ULQ?250:120):!MOB?0:ULQ?40:(LOWQ||mode=='map')?32:0;if(now-lfr<cap){requestAnimationFrame(loop);return}lfr=now;lagTick(now);try{if(JQ.length)runJobs(JQ.length>120?60:JQ.length>40?14:6);else if(TD&&G&&now-tdT>400){tdT=now;terrNow()}if(mode=='map')ensureCont();step(now)}catch(e){console.error(e)}requestAnimationFrame(loop)}
 setTimeout(()=>{bake();$('#load').remove();titleMenu();requestAnimationFrame(loop)},30);
-window.__T={cgMenu,cgUp,lsInit,fmtLS,tangGo,thienLo,tangCheck,held,genTangWorld,rank,wmAt:(x,y)=>WMAP?wmAt(x,y):-1,save:()=>save(),acToggle,acTick,JQ,runJobs,slim,newDay:()=>newDay(),drawMap:t=>drawMap(t),drawBattle:t=>drawBattle(t),setQ,QL:()=>QL,crown,rebel,contsHeld,vassalDay,chat,exileMenu,partyMenu,calcCH,diplo,hireGen,myGens,V,villageMenu,grantVillage,income,startFight,joinFight,encounter,toast,G:()=>G,S,B:()=>B,newGame,startMap,startBattle,endBattle,upMap,upBattle,quick,townMenu,setOrder,close,panel,getMode:()=>mode,MC,BC,rank,fiefs,indep};
+window.__T={dhMenu,dhUpdate,cgUp,lsInit,fmtLS,tangGo,thienLo,tangCheck,held,genTangWorld,rank,wmAt:(x,y)=>WMAP?wmAt(x,y):-1,save:()=>save(),acToggle,acTick,JQ,runJobs,slim,newDay:()=>newDay(),drawMap:t=>drawMap(t),drawBattle:t=>drawBattle(t),setQ,QL:()=>QL,crown,rebel,contsHeld,vassalDay,chat,exileMenu,partyMenu,calcCH,diplo,hireGen,myGens,V,villageMenu,grantVillage,income,startFight,joinFight,encounter,toast,G:()=>G,S,B:()=>B,newGame,startMap,startBattle,endBattle,upMap,upBattle,quick,townMenu,setOrder,close,panel,getMode:()=>mode,MC,BC,rank,fiefs,indep};
 </script><div id="lag" style="position:fixed;left:6px;z-index:5;pointer-events:none;font:600 10px system-ui;color:#cfe;background:rgba(0,0,0,.45);padding:1px 6px;border-radius:6px;display:none"></div>
 </body></html>
