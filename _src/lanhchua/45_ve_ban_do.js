@@ -40,7 +40,7 @@ function party(p,t,z){const c=facC(p.fac),x=p.x,y=p.y,n=tot(p.t);
   X.fillStyle='#3a2a1a';X.fillRect(x-13,y-38,1.6,36);X.fillStyle=c;const wv=Math.sin(t*4+x)*1.5;X.beginPath();X.moveTo(x-11.5,y-38);X.lineTo(x+1,y-37+wv);X.lineTo(x+1,y-28+wv);X.lineTo(x-11.5,y-29);X.fill();
   if(p.kind=='king'){X.fillStyle='#ffd23a';TRI(X,x-10,y-41,x-6,y-41,x-8,y-46)}}
  if(p.kind=='rf'&&SMALL())return;if(p.kind!='pl'&&contOf(x,y)!=PC())return;X.font='bold 10px system-ui,sans-serif';const full=p.kind=='pl'||p.kind=='king'||(z>(SMALL()?.95:.6)),lb=(p.kind=='lord'||p.kind=='king'||p.kind=='pl'?rank(p)[2]+' ':'')+(full||p.kind!='lord'?pname(p)+' · ':'')+fmt(n),tw=X.measureText(lb).width;
- const rk=rank(p),ri0=RK.indexOf(rk[0]),plate=(p.kind=='pl'||p.kind=='king'||p.kind=='exile'||ri0>=4)&&p.kind!='rf'&&p.kind!='bandit';
+ const rk=rank(p),ri0=RK.indexOf(rk[0]),plate=(p.kind=='pl'||p.kind=='king'||p.kind=='exile'||ri0>=4||(p._gl||0)>=3)&&p.kind!='rf'&&p.kind!='bandit';
  LBL.push({p:p.kind=='pl'?0:p.kind=='king'?5:atWar(P0().fac,p.fac)?6:p.kind=='rf'?9:7,x:x-tw/2-4,y:y+5,w:tw+8,h:13,d:()=>{if(plate)titlePlate(x,y-50,rk,t);if(p.kind=='pl')dhPlates(x,y-72,t);X.textAlign='center';X.font='bold 10px system-ui,sans-serif';X.fillStyle='rgba(15,10,6,.74)';X.fillRect(x-tw/2-4,y+5,tw+8,13);X.fillStyle=p.kind=='pl'?'#ffd65a':p.kind=='rf'?'#9cf':rel(p.fac);X.fillText(lb,x,y+15)}})}
 function titlePlate(x,y,rk,t){const txt=rk[0].toUpperCase(),hi=RK.indexOf(rk[0]),big=hi>=9,ic=rk[2],col=rk[3],gl=.55+Math.sin(t*3+x*.01)*.45;
  X.font='800 8.5px system-ui,sans-serif';const tw=X.measureText(txt).width,w=tw+26,h=13;X.save();X.translate(x,y);

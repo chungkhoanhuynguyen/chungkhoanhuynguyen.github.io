@@ -30,7 +30,7 @@ function respawn(p){p.goS=p.goP=null;p.dead=0;p.inF=0;
 function addLog(m,c='#ddd'){if(!G)return;G.log.push({m:`Ngày ${G.day}: ${m}`,c});if(G.log.length>6)G.log.shift();rlog()}
 const rlog=()=>{$('#log').innerHTML=G?G.log.map(l=>`<div style="color:${l.c}">${l.m}</div>`).join(''):''};
 const KEY='loan-the-lanh-chua-v3';
-const SVX=new Set(['_c','_i','mv','face','goF','goV','th','goP','goS']),SVR=new Set(['x','y','tx','ty']);
+const SVX=new Set(['_gc','_gl','_c','_i','mv','face','goF','goV','th','goP','goS']),SVR=new Set(['x','y','tx','ty']);
 function svP(p){if(p.dead<0&&p.kind!='pl')return{id:p.id,kind:p.kind,name:p.name,fac:p.fac,x:p.x|0,y:p.y|0,dead:-1};const o={};for(const k in p){if(SVX.has(k))continue;let v=p[k];if(v==null||v===false)continue;if((k=='dead'||k=='inF')&&!v)continue;if(k=='safe'&&!(v>0))continue;if(typeof v=='number')v=SVR.has(k)?Math.round(v):Number.isInteger(v)?v:Math.round(v*10)/10;o[k]=v}if(p.goP)o.goP=p.goP.id;if(p.goS)o.goS=p.goS.id;return o}
 function save(){try{localStorage.setItem('ltlc-map',WMAP?'2':'1');localStorage.setItem(KEY,JSON.stringify({...G,L:G.L.map(svP),war:G.war.map(r=>r.map(v=>v?1:0).join('')),SS:S.map(s=>[s.fac,s.own,s.gar,s.pool]),VV:V.map(v=>[v.own,v.pool,v.burn])}))}catch(e){}}
 addEventListener('visibilitychange',()=>{if(document.hidden&&G&&G.L&&mode!='title')save()});addEventListener('pagehide',()=>{if(G&&G.L&&mode!='title')save()});
@@ -99,7 +99,7 @@ function arrive(p,s){if(p.kind=='pl'){if(G.ac){if(s.fac==p.fac){acRecruit(s);ret
  if(s.fac==p.fac){const n=Math.min(s.pool,Math.max(0,rank(p)[1]-tot(p.t)));if(n>0){s.pool-=n;add(p.t,mix(n))}
   if(tot(s.gar)<[300,200,120][s.type]&&tot(p.t)>300)add(s.gar,take(p.t,100));return}
  if(!atWar(p.fac,s.fac))return;const f=G.fights.find(f=>f.s==s.id);if(f){if(f.af==p.fac){f.A.push(p.id);p.inF=1}return}startFight(p,null,s)}
-function capture(s,p){const old=s.fac,pl=P0(),me=p.kind=='pl';if(old!=p.fac)lsGain(s,p);s.fac=p.fac;s.own=p.id;V.forEach(v=>{if(v.p==s.id){if(v.own===0&&!me)toast(`💔 Mất đất phong ${v.name}`,'#ff6a5a');v.own=p.id}});s.gar=take(p.t,Math.ceil(tot(p.t)*.25));s.pool=Math.floor(s.pool/2);
+function capture(s,p){const old=s.fac,pl=P0(),me=p.kind=='pl';if(old!=p.fac){lsGain(s,p);if(p.kind=='lord')p.ren=(p.ren||0)+[3000,1500,800][s.type]}s.fac=p.fac;s.own=p.id;V.forEach(v=>{if(v.p==s.id){if(v.own===0&&!me)toast(`💔 Mất đất phong ${v.name}`,'#ff6a5a');v.own=p.id}});s.gar=take(p.t,Math.ceil(tot(p.t)*.25));s.pool=Math.floor(s.pool/2);
  if(me)toast(`🏰 Bạn chiếm được <b>${s.name}</b>! Đây là lãnh địa riêng của bạn.`,'#7dff8a');
  else if(p.fac==pl.fac)toast(`🏰 ${pname(p)} chiếm ${s.name} cho phe ta`,'#7dff8a');
  else if(old==pl.fac)toast(`💔 Phe ta mất ${s.name} vào tay ${facN(p.fac)}`,'#ff6a5a');
@@ -131,7 +131,7 @@ function upFights(dt){for(let i=G.fights.length-1;i>=0;i--){const f=G.fights[i];
  if(res){G.fights.splice(i,1);endFight(f,res)}}}
 function endFight(f,res){const P=fightPow(f),W=res=='A'?P.A:P.D,L=res=='A'?P.D:P.A,pl=P0(),s=P.s;
  for(const id of[...f.A,...f.D]){const p=G.L[id];if(p){p.inF=0;p.safe=3;if(!p.dead&&!tot(p.t))defeat(p)}}
- const lead=W[0];if(lead)lead.ren=(lead.ren||0)+Math.max(0,f.n0-P.ta-P.td)/6;
+ const lead=W[0];{const k=Math.max(0,f.n0-P.ta-P.td)/(G.lk?5:1)/(G.tang?TMv():1);W.forEach((p,i)=>{if(p.kind!='rf')p.ren=(p.ren||0)+(i?k/12/Math.max(1,W.length-1):k/6)})}
  L.forEach(p=>{if(!p.dead)defeat(p)});
  if(s&&res=='A'&&lead)capture(s,lead);
  else if(s&&res=='D'&&s.fac==pl.fac)toast(`🛡 ${s.name} đã đẩy lui quân vây thành!`,'#7dff8a');
