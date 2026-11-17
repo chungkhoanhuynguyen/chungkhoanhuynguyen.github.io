@@ -1,0 +1,377 @@
+[
+ {
+  "key": "TT1811NHA",
+  "tieu_de": "Căn hộ 6 tỷ bằng 27 năm lương hai vợ chồng: vì sao giá nhà tăng nhanh hơn lương?",
+  "hook": [
+   "CĂN HỘ 6 TỶ = 27 NĂM LƯƠNG",
+   "NHÀ TĂNG NHANH HƠN LƯƠNG???"
+  ],
+  "nhan": "NHÀ ĐẤT · HỎI THẬT",
+  "short_caption": "Căn hộ hạng C Hà Nội: nguồn cung giảm 27% mỗi năm từ 2022, giá tăng 17% mỗi năm (Savills, VnBusiness 15/10/2026); thu nhập lao động +9,85% (TCTK). 6 tỷ = 27 năm lương 2 người (tự tính). Quý 3/2026 giá sơ cấp toàn Hà Nội giảm 6% so cùng kỳ (CBRE, 16/10/2026). Quan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "NHÀ MÌNH CẦN MẤY NĂM?",
+   "loi": "Với thu nhập hiện tại, nhà anh chị cần bao nhiêu năm để mua được căn nhà mình muốn? Anh chị nghĩ giá nhà năm tới sẽ đi đâu?",
+   "loi_doc": "Với thu nhập hiện tại, nhà anh chị cần bao nhiêu năm để mua được căn nhà mình muốn? Anh chị nghĩ giá nhà năm tới sẽ đi đâu?",
+   "anh": [
+    "Hanoi apartment buildings",
+    "Hanoi skyline night"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "27 NĂM LƯƠNG",
+    "loi": "Cục Thống kê vừa công bố thu nhập bình quân của người lao động khoảng 9,2 triệu mỗi tháng. Với mức đó, một căn hộ 6 tỷ ở Hà Nội bằng khoảng 27 năm lương của cả hai vợ chồng, nếu không tiêu một đồng nào.",
+    "loi_doc": "Cục Thống kê vừa công bố thu nhập bình quân của người lao động khoảng chín phẩy hai triệu mỗi tháng. Với mức đó, một căn hộ sáu tỷ ở Hà Nội bằng khoảng hai mươi bảy năm lương của cả hai vợ chồng, nếu không tiêu một đồng nào.",
+    "the": {
+     "loai": "lon",
+     "tieu": "CĂN HỘ 6 TỶ BẰNG",
+     "nguon": "TCTK quý 3/2026; em tự tính",
+     "dong": [
+      [
+       "27 NĂM",
+       130,
+       "do"
+      ],
+      [
+       "LƯƠNG HAI NGƯỜI, KHÔNG TIÊU GÌ",
+       50,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "NHÀ +17%, LƯƠNG +9,85%",
+    "loi": "Từ năm 2022, giá căn hộ bình dân ở Hà Nội tăng khoảng 17% mỗi năm. Còn thu nhập của người lao động năm nay tăng 9,85%.",
+    "loi_doc": "Từ năm hai nghìn không trăm hai mươi hai, giá căn hộ bình dân ở Hà Nội tăng khoảng mười bảy phần trăm mỗi năm. Còn thu nhập của người lao động năm nay tăng chín phẩy tám mươi lăm phần trăm.",
+    "the": {
+     "loai": "cot",
+     "tieu": "TĂNG MỖI NĂM (%)",
+     "nguon": "Savills 15/10/2026; TCTK quý 3/2026",
+     "hang": [
+      [
+       "Căn hộ hạng C",
+       17
+      ],
+      [
+       "Thu nhập lao động",
+       9.85
+      ]
+     ],
+     "noi": [
+      0
+     ],
+     "dv": "%",
+     "max": 20
+    }
+   },
+   {
+    "chu_to": "NHÀ RẺ NGÀY CÀNG ÍT",
+    "loi": "Lý do đầu tiên là nhà giá rẻ ngày càng ít. Nguồn cung căn hộ bình dân mới giảm khoảng 27% mỗi năm kể từ năm 2022.",
+    "loi_doc": "Lý do đầu tiên là nhà giá rẻ ngày càng ít. Nguồn cung căn hộ bình dân mới giảm khoảng hai mươi bảy phần trăm mỗi năm kể từ năm hai nghìn không trăm hai mươi hai.",
+    "the": {
+     "loai": "lon",
+     "tieu": "CĂN HỘ HẠNG C MỞ BÁN MỚI",
+     "nguon": "Savills, VnBusiness 15/10/2026",
+     "dong": [
+      [
+       "GIẢM 27%",
+       124,
+       "do"
+      ],
+      [
+       "MỖI NĂM TỪ 2022",
+       58,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "70% TRÊN 6 TỶ",
+    "loi": "Lý do thứ hai là dự án mới đa số là hàng đắt. Quý 3 năm nay, 70% số căn bán được ở Hà Nội có giá trên 6 tỷ đồng.",
+    "loi_doc": "Lý do thứ hai là dự án mới đa số là hàng đắt. Quý ba năm nay, bảy mươi phần trăm số căn bán được ở Hà Nội có giá trên sáu tỷ đồng.",
+    "the": {
+     "loai": "lon",
+     "tieu": "CĂN BÁN ĐƯỢC Ở HÀ NỘI QUÝ 3/2026",
+     "nguon": "Savills, VietnamFinance 16/10/2026",
+     "dong": [
+      [
+       "70%",
+       130,
+       "vang"
+      ],
+      [
+       "CÓ GIÁ TRÊN 6 TỶ",
+       58,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "NĂM NAY GIÁ ĐÃ GIẢM",
+    "loi": "Nhưng có một cú lật. Quý 3 năm nay, giá chào bán bình quân toàn Hà Nội giảm 6% so với cùng kỳ, giá căn hộ cũ giảm 8%.",
+    "loi_doc": "Nhưng có một cú lật. Quý ba năm nay, giá chào bán bình quân toàn Hà Nội giảm sáu phần trăm so với cùng kỳ, giá căn hộ cũ giảm tám phần trăm.",
+    "the": {
+     "loai": "cot",
+     "tieu": "GIÁ CĂN HỘ HÀ NỘI, SO CÙNG KỲ (%)",
+     "nguon": "CBRE, Doanh nhân Pháp luật 16/10/2026",
+     "hang": [
+      [
+       "Bán mới",
+       -6
+      ],
+      [
+       "Căn hộ cũ",
+       -8
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "%"
+    }
+   },
+   {
+    "chu_to": "LÃI VAY 12 ĐẾN 15%",
+    "loi": "Lý do là lãi vay mua nhà đã lên 12 đến 15%. Người mua chậm lại, số căn bán được giảm gần một nửa so với cùng kỳ.",
+    "loi_doc": "Lý do là lãi vay mua nhà đã lên mười hai đến mười lăm phần trăm. Người mua chậm lại, số căn bán được giảm gần một nửa so với cùng kỳ.",
+    "the": {
+     "loai": "lon",
+     "tieu": "LÃI THẢ NỔI VAY MUA NHÀ",
+     "nguon": "SSI Research, Công Luận 6/11/2026",
+     "dong": [
+      [
+       "12 ĐẾN 15%",
+       120,
+       "do"
+      ],
+      [
+       "CĂN BÁN ĐƯỢC GIẢM 48%",
+       56,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "NHÀ ĐỂ Ở, LƯƠNG ĐỂ TRẢ",
+    "loi": "Nhà để ở thì nên mua bằng khả năng trả nợ của chính mình, không phải bằng kỳ vọng giá sẽ tăng. Tiền trả góp nên dưới 40% thu nhập.",
+    "loi_doc": "Nhà để ở thì nên mua bằng khả năng trả nợ của chính mình, không phải bằng kỳ vọng giá sẽ tăng. Tiền trả góp nên dưới bốn mươi phần trăm thu nhập.",
+    "the": {
+     "loai": "lon",
+     "tieu": "MỐC AN TOÀN KHI VAY MUA NHÀ",
+     "nguon": "Báo Đấu thầu 17/11/2026",
+     "dong": [
+      [
+       "DƯỚI 40%",
+       124,
+       "vang"
+      ],
+      [
+       "THU NHẬP CHO TRẢ GÓP",
+       56,
+       "trang"
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "key": "TT1811TK",
+  "tieu_de": "Gửi 1 tỷ, lãi 54 triệu – nhưng giá cả ăn mất 50,9 triệu: lãi thật chỉ còn khoảng 3 triệu?",
+  "hook": [
+   "GỬI 1 TỶ, LÃI 54 TRIỆU",
+   "LÃI THẬT CÒN BAO NHIÊU???"
+  ],
+  "nhan": "TIẾT KIỆM · HỎI THẬT",
+  "short_caption": "Lãi tiết kiệm 12 tháng NHTM Nhà nước 5,4% (12/11/2026); CPI 10/2026 +5,09% so cùng kỳ (Cục Thống kê). Tự tính: 1 tỷ × (1,054/1,0509 − 1) ≈ 2,95 triệu lãi thật. Bảo hiểm tiền gửi tối đa 350 triệu từ 13/7/2026. Quan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "TIỀN GỬI CÓ THẮNG GIÁ?",
+   "loi": "Tiền gửi tiết kiệm của anh chị đang thắng giá cả bao nhiêu? Anh chị để bao nhiêu phần tài sản trong tiết kiệm?",
+   "loi_doc": "Tiền gửi tiết kiệm của anh chị đang thắng giá cả bao nhiêu? Anh chị để bao nhiêu phần tài sản trong tiết kiệm?",
+   "anh": [
+    "Ho Chi Minh City skyline night",
+    "Hanoi skyline night"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "GIÁ CẢ TĂNG 5,09%",
+    "loi": "Cục Thống kê vừa công bố: tháng 10 năm nay, giá cả tăng 5,09% so với cùng kỳ. Với 1 tỷ đồng tiền gửi, đó là khoảng 50,9 triệu sức mua bị mất đi.",
+    "loi_doc": "Cục Thống kê vừa công bố: tháng mười năm nay, giá cả tăng năm phẩy không chín phần trăm so với cùng kỳ. Với một tỷ đồng tiền gửi, đó là khoảng năm mươi phẩy chín triệu sức mua bị mất đi.",
+    "the": {
+     "loai": "lon",
+     "tieu": "CHỈ SỐ GIÁ TIÊU DÙNG 10/2026",
+     "nguon": "Cục Thống kê",
+     "dong": [
+      [
+       "+5,09%",
+       130,
+       "do"
+      ],
+      [
+       "SO VỚI CÙNG KỲ",
+       58,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "GỬI 1 TỶ, LÃI 54 TRIỆU",
+    "loi": "Còn gửi 1 tỷ kỳ hạn 12 tháng ở ngân hàng thương mại nhà nước, lãi khoảng 5,4%. Một năm anh chị nhận về 54 triệu đồng.",
+    "loi_doc": "Còn gửi một tỷ kỳ hạn mười hai tháng ở ngân hàng thương mại nhà nước, lãi khoảng năm phẩy bốn phần trăm. Một năm anh chị nhận về năm mươi bốn triệu đồng.",
+    "the": {
+     "loai": "lon",
+     "tieu": "LÃI TIẾT KIỆM 12 THÁNG",
+     "nguon": "NHTM Nhà nước, 12/11/2026",
+     "dong": [
+      [
+       "54 TRIỆU",
+       130,
+       "vang"
+      ],
+      [
+       "TIỀN LÃI MỘT NĂM CỦA 1 TỶ",
+       52,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "LÃI THẬT KHOẢNG 3 TRIỆU",
+    "loi": "Trừ phần giá cả đi, tiền lãi thật của 1 tỷ chỉ còn khoảng 3 triệu đồng một năm. Em tự tính.",
+    "loi_doc": "Trừ phần giá cả đi, tiền lãi thật của một tỷ chỉ còn khoảng ba triệu đồng một năm. Em tự tính.",
+    "the": {
+     "loai": "cot",
+     "tieu": "TIỀN LÃI CỦA 1 TỶ MỘT NĂM (TRIỆU)",
+     "nguon": "Em tự tính",
+     "hang": [
+      [
+       "Lãi nhận về",
+       54
+      ],
+      [
+       "Lãi thật",
+       2.95
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 60
+    }
+   },
+   {
+    "chu_to": "LƯƠNG VẪN THẮNG GIÁ",
+    "loi": "Trong khi đó, thu nhập của người lao động năm nay tăng 9,85%. Lương vẫn thắng giá cả, còn tiền gửi thì gần như chỉ hòa.",
+    "loi_doc": "Trong khi đó, thu nhập của người lao động năm nay tăng chín phẩy tám mươi lăm phần trăm. Lương vẫn thắng giá cả, còn tiền gửi thì gần như chỉ hòa.",
+    "the": {
+     "loai": "cot",
+     "tieu": "TĂNG MỘT NĂM (%)",
+     "nguon": "Cục Thống kê; lãi 12 tháng 12/11/2026",
+     "hang": [
+      [
+       "Thu nhập",
+       9.85
+      ],
+      [
+       "Lãi gửi",
+       5.4
+      ],
+      [
+       "Giá cả",
+       5.09
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "%",
+     "max": 12
+    }
+   },
+   {
+    "chu_to": "KHÔNG PHẢI MẤT TIỀN",
+    "loi": "Điều này không có nghĩa gửi tiết kiệm là mất tiền. Tiết kiệm là để giữ giá trị và để có tiền khi cần, chứ không phải để giàu nhanh.",
+    "loi_doc": "Điều này không có nghĩa gửi tiết kiệm là mất tiền. Tiết kiệm là để giữ giá trị và để có tiền khi cần, chứ không phải để giàu nhanh.",
+    "the": {
+     "loai": "lon",
+     "tieu": "TIỀN GỬI ĐỂ LÀM GÌ?",
+     "nguon": "Quan điểm cá nhân",
+     "dong": [
+      [
+       "GIỮ GIÁ TRỊ",
+       116,
+       "vang"
+      ],
+      [
+       "KHÔNG PHẢI ĐỂ GIÀU NHANH",
+       54,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "350 TRIỆU MỖI NƠI",
+    "loi": "Nếu gửi nhiều, anh chị nên nhớ mức bảo hiểm tiền gửi hiện là 350 triệu đồng mỗi người ở mỗi ngân hàng, áp dụng từ tháng 7 năm nay.",
+    "loi_doc": "Nếu gửi nhiều, anh chị nên nhớ mức bảo hiểm tiền gửi hiện là ba trăm năm mươi triệu đồng mỗi người ở mỗi ngân hàng, áp dụng từ tháng bảy năm nay.",
+    "the": {
+     "loai": "lon",
+     "tieu": "BẢO HIỂM TIỀN GỬI TỐI ĐA",
+     "nguon": "VietnamPlus, Báo Đầu tư; từ 13/7/2026",
+     "dong": [
+      [
+       "350 TRIỆU",
+       124,
+       "vang"
+      ],
+      [
+       "MỖI NGƯỜI, MỖI NGÂN HÀNG",
+       54,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "PHẦN MUỐN TĂNG",
+    "loi": "Còn phần tiền muốn tăng nhanh hơn giá cả, anh chị cần kênh khác, và phải chấp nhận rủi ro đi kèm. Đừng dồn tất cả vào một chỗ.",
+    "loi_doc": "Còn phần tiền muốn tăng nhanh hơn giá cả, anh chị cần kênh khác, và phải chấp nhận rủi ro đi kèm. Đừng dồn tất cả vào một chỗ.",
+    "the": {
+     "loai": "lon",
+     "tieu": "CHIA TIỀN THEO MỤC ĐÍCH",
+     "nguon": "Quan điểm cá nhân",
+     "dong": [
+      [
+       "CHIA ĐỂ GIỮ",
+       116,
+       "vang"
+      ],
+      [
+       "KHÔNG DỒN MỘT CHỖ",
+       56,
+       "trang"
+      ]
+     ]
+    }
+   }
+  ]
+ }
+]
