@@ -419,6 +419,10 @@
     "Đã có tài khoản VPS: vào SmartOne → biểu tượng cá nhân → Quản lý dịch vụ → Đổi chuyên gia tư vấn → nhập ID BJIE – Nguyễn Huy Anh, tích cả 3 mục → Gửi yêu cầu.",
     907,
     873
+   ],
+   [
+    "p",
+    "Cần bao nhiêu tiền cho lô cổ phiếu đầu tiên và các lỗi eKYC hay gặp, xem bài <a href=\"/f0/cach-mo-tai-khoan-chung-khoan.html\">cách mở (tạo, đăng ký) tài khoản chứng khoán online</a>."
    ]
   ],
   "faq": [
@@ -432,6 +436,7 @@
    ]
   ],
   "rel": [
+   "cach-mo-tai-khoan-chung-khoan",
    "mo-tai-khoan-chung-khoan",
    "cach-nap-tien-vao-tai-khoan-chung-khoan",
    "cach-mua-co-phieu-lan-dau"
@@ -492,6 +497,10 @@
     "Cần người hướng dẫn qua điện thoại? Mở tài khoản cùng Huy Nguyễn.",
     "https://openaccount.vps.com.vn/?MKTID=BJIE",
     "Mở tài khoản"
+   ],
+   [
+    "p",
+    "Cần bao nhiêu tiền cho lô cổ phiếu đầu tiên và các lỗi eKYC hay gặp, xem bài <a href=\"/f0/cach-mo-tai-khoan-chung-khoan.html\">cách mở (tạo, đăng ký) tài khoản chứng khoán online</a>."
    ]
   ],
   "faq": [
@@ -505,6 +514,7 @@
    ]
   ],
   "rel": [
+   "cach-mo-tai-khoan-chung-khoan",
    "mo-tai-khoan-chung-khoan",
    "cach-mo-tai-khoan-chung-khoan-vps",
    "cach-nap-tien-vao-tai-khoan-chung-khoan"
@@ -709,6 +719,10 @@
     "Có người hướng dẫn từ đầu sẽ đỡ mất tiền học phí thị trường.",
     "https://openaccount.vps.com.vn/?MKTID=BJIE",
     "Mở tài khoản cùng Huy Nguyễn"
+   ],
+   [
+    "p",
+    "Cần bao nhiêu tiền cho lô cổ phiếu đầu tiên và các lỗi eKYC hay gặp, xem bài <a href=\"/f0/cach-mo-tai-khoan-chung-khoan.html\">cách mở (tạo, đăng ký) tài khoản chứng khoán online</a>."
    ]
   ],
   "faq": [
@@ -726,6 +740,7 @@
    ]
   ],
   "rel": [
+   "cach-mo-tai-khoan-chung-khoan",
    "mo-tai-khoan-chung-khoan",
    "dau-tu-chung-khoan-voi-10-trieu",
    "sai-lam-cua-f0"
@@ -733,86 +748,17 @@
  },
  {
   "slug": "cach-mo-tai-khoan-chung-khoan",
-  "kw": "mở tài khoản chứng khoán",
-  "title": "Cách mở (tạo, đăng ký) tài khoản chứng khoán online trong 5 phút",
-  "desc": "Cách tạo và đăng ký tài khoản chứng khoán online bằng CCCD trên điện thoại trong 5 phút: chuẩn bị gì, các bước eKYC, chọn công ty chứng khoán, phí và lỗi thường gặp.",
+  "kw": "cách mở tài khoản chứng khoán",
+  "title": "Cách mở (tạo, đăng ký) tài khoản chứng khoán online: 6 bước 2026",
+  "desc": "Cách tạo, đăng ký tài khoản chứng khoán bằng CCCD trên điện thoại: chuẩn bị gì, 6 bước eKYC, cần bao nhiêu tiền cho lô cổ phiếu đầu tiên và các lỗi hay gặp.",
   "body": [
    [
     "p",
-    "Xem bản hướng dẫn đầy đủ, cập nhật 2026 ở trang <a href=\"/mo-tai-khoan-chung-khoan.html\">mở tài khoản chứng khoán online</a>."
+    "Chị Lan (ví dụ giả định) mới đi làm, có 5 triệu muốn thử mua cổ phiếu. Tối đó chị tải ứng dụng, chụp căn cước… rồi kẹt ở bước quay khuôn mặt ba lần liền vì ngồi ngược sáng. Chị bỏ dở, tưởng mở tài khoản phức tạp."
    ],
    [
     "p",
-    "Hiện nay hầu hết công ty chứng khoán cho mở tài khoản online bằng định danh điện tử (eKYC): chụp căn cước công dân, quay khuôn mặt, ký hợp đồng điện tử. Toàn bộ mất khoảng 5–10 phút và miễn phí."
-   ],
-   [
-    "h2",
-    "Cần chuẩn bị gì?"
-   ],
-   [
-    "ul",
-    [
-     "Căn cước công dân còn hạn.",
-     "Số điện thoại và email chính chủ.",
-     "Tài khoản ngân hàng cùng tên để nộp và rút tiền."
-    ]
-   ],
-   [
-    "h2",
-    "Các bước mở tài khoản"
-   ],
-   [
-    "ol",
-    [
-     "Tải ứng dụng hoặc vào trang mở tài khoản của công ty chứng khoán.",
-     "Nhập số điện thoại, email, nhận mã OTP.",
-     "Chụp hai mặt CCCD và quay khuôn mặt để xác thực.",
-     "Ký hợp đồng điện tử, nhận số tài khoản và mật khẩu đăng nhập."
-    ]
-   ],
-   [
-    "h2",
-    "Chọn công ty chứng khoán thế nào?"
-   ],
-   [
-    "p",
-    "Nên xem 3 thứ: ứng dụng đặt lệnh ổn định, phí giao dịch hợp lý và có người hỗ trợ khi cần. Với người mới, có người hướng dẫn trong vài tháng đầu quan trọng hơn chênh lệch vài phần nghìn phí."
-   ],
-   [
-    "cta",
-    "Mở tài khoản cùng Huy Nguyễn để được hỗ trợ 1:1 trong giai đoạn đầu.",
-    "https://openaccount.vps.com.vn/?MKTID=BJIE",
-    "Mở tài khoản VPS"
-   ]
-  ],
-  "faq": [
-   [
-    "Mở tài khoản chứng khoán có mất phí không?",
-    "Thông thường miễn phí. Phí chỉ phát sinh khi giao dịch mua bán."
-   ],
-   [
-    "Có cần nộp tiền ngay sau khi mở không?",
-    "Không bắt buộc. Anh chị nộp tiền khi sẵn sàng mua cổ phiếu đầu tiên."
-   ]
-  ],
-  "rel": [
-   "cach-mua-co-phieu-lan-dau",
-   "phi-giao-dich-va-thue-chung-khoan",
-   "chung-khoan-la-gi"
-  ],
-  "grp": 1,
-  "add": [
-   [
-    "h2",
-    "Tóm lại"
-   ],
-   [
-    "ul",
-    [
-     "Chuẩn bị CCCD, số điện thoại, email, tài khoản ngân hàng chính chủ.",
-     "Mở online khoảng 5 phút, miễn phí.",
-     "Chọn công ty có ứng dụng ổn định và có người hướng dẫn trong thời gian đầu."
-    ]
+    "Thật ra toàn bộ chỉ mất <b>5–10 phút, miễn phí</b>, nếu chuẩn bị đúng 4 thứ. Và 5 triệu đủ mua lô đầu tiên: phiên 17/11/2026, 100 cổ phiếu HPG chỉ khoảng <b>2,1 triệu đồng</b>."
    ],
    [
     "h2",
@@ -821,52 +767,181 @@
    [
     "ul",
     [
-     "Căn cước công dân gắn chip còn hạn (người từ đủ 18 tuổi).",
+     "Căn cước công dân gắn chip còn hạn (thường cần đủ 18 tuổi để tự mở online).",
      "Số điện thoại và email chính chủ để nhận mã OTP.",
-     "Một tài khoản ngân hàng đứng tên mình để nạp, rút tiền.",
-     "Điện thoại có camera để chụp CCCD và quay khuôn mặt (eKYC)."
+     "Tài khoản ngân hàng đứng tên mình để nạp, rút tiền.",
+     "Điện thoại có camera, chỗ ngồi đủ sáng để chụp CCCD và quay khuôn mặt (eKYC)."
     ]
    ],
    [
     "h2",
-    "Các bước đăng ký tài khoản chứng khoán online"
+    "6 bước đăng ký tài khoản chứng khoán online"
    ],
    [
     "ol",
     [
-     "Tải ứng dụng của công ty chứng khoán đã chọn, bấm Mở tài khoản.",
-     "Chụp hai mặt CCCD, kiểm tra thông tin tự điền có đúng không.",
+     "Tải ứng dụng hoặc vào trang mở tài khoản của công ty chứng khoán, bấm Mở tài khoản.",
+     "Nhập số điện thoại, email, điền mã OTP.",
+     "Chụp hai mặt CCCD, kiểm tra thông tin máy tự điền (họ tên, ngày sinh, địa chỉ).",
      "Quay khuôn mặt theo hướng dẫn để xác thực.",
-     "Chọn số tài khoản, liên kết ngân hàng, ký hợp đồng điện tử bằng OTP.",
-     "Nhận thông tin đăng nhập; thường dùng được ngay hoặc trong ngày làm việc."
+     "Liên kết tài khoản ngân hàng chính chủ, chọn số tài khoản nếu có.",
+     "Ký hợp đồng điện tử bằng OTP, nhận tên đăng nhập và mật khẩu qua tin nhắn hoặc email."
     ]
    ],
    [
     "h2",
-    "Chọn công ty chứng khoán nào?"
+    "Mở xong bao lâu thì mua được cổ phiếu?"
    ],
    [
     "p",
-    "Nên so sánh 4 điểm: phí giao dịch, ứng dụng dễ dùng, có người hỗ trợ khi cần và lãi suất vay ký quỹ (nếu sau này dùng). Người mới nên ưu tiên công ty có ứng dụng ổn định và có người tư vấn trả lời được câu hỏi cơ bản."
+    "Nhiều công ty kích hoạt ngay hoặc trong ngày làm việc. Nạp tiền qua ngân hàng liên kết thường vào tài khoản sau vài phút. Cổ phiếu mua hôm nay (ngày T) về tài khoản sau 2 ngày làm việc (T+2); trước đó chưa bán được. Giờ đặt lệnh xem ở bài <a href=\"/f0/gio-giao-dich-chung-khoan.html\">giờ giao dịch chứng khoán</a>."
    ],
    [
     "h2",
-    "Lỗi thường gặp khi mở tài khoản"
+    "Cần bao nhiêu tiền để mua lô cổ phiếu đầu tiên?"
+   ],
+   [
+    "p",
+    "Trên sàn HOSE, lô chẵn là <b>100 cổ phiếu</b>; muốn mua ít hơn (1–99 cổ phiếu) thì đặt lệnh lô lẻ. Giá đóng cửa phiên 17/11/2026:"
+   ],
+   [
+    "table",
+    [
+     [
+      "Mã",
+      "Giá đóng cửa 17/11/2026",
+      "Tiền mua 100 cổ phiếu"
+     ],
+     [
+      "MBB",
+      "18.950 đ",
+      "Khoảng 1,9 triệu"
+     ],
+     [
+      "ACB",
+      "20.350 đ",
+      "Khoảng 2,04 triệu"
+     ],
+     [
+      "HPG",
+      "21.000 đ",
+      "Khoảng 2,1 triệu"
+     ],
+     [
+      "VCB",
+      "52.100 đ",
+      "Khoảng 5,21 triệu"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Cộng thêm phí giao dịch theo biểu phí từng công ty (thường khoảng 0,1%–0,35% mỗi chiều) và thuế 0,1% khi bán. Bảng chỉ để hình dung số tiền, không phải gợi ý mã nên mua. Chi tiết: <a href=\"/f0/phi-giao-dich-va-thue-chung-khoan.html\">phí giao dịch và thuế chứng khoán</a>, <a href=\"/f0/lo-chan-lo-le.html\">lô chẵn, lô lẻ</a>."
+   ],
+   [
+    "h2",
+    "Chọn công ty chứng khoán thế nào?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Tiêu chí",
+      "Vì sao quan trọng",
+      "Kiểm nhanh"
+     ],
+     [
+      "Ứng dụng ổn định",
+      "Phiên thị trường biến động mạnh, ứng dụng treo là mất cơ hội hoặc không bán được",
+      "Đọc đánh giá trên kho ứng dụng"
+     ],
+     [
+      "Phí giao dịch",
+      "Giao dịch nhiều thì phí cộng dồn lớn",
+      "Xem biểu phí công khai"
+     ],
+     [
+      "Người hỗ trợ",
+      "Người mới dễ đặt nhầm lệnh, nhầm giá",
+      "Hỏi thử 1 câu xem có ai trả lời"
+     ],
+     [
+      "Lãi vay ký quỹ",
+      "Chỉ quan trọng nếu sau này vay",
+      "Xem lãi suất công bố"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Với người mới, có người hướng dẫn trong vài tháng đầu thường quan trọng hơn chênh lệch vài phần nghìn phí – một lệnh sai giá có thể mất nhiều hơn cả năm tiền phí."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp khi mở tài khoản"
    ],
    [
     "ul",
     [
-     "Ảnh CCCD lóa sáng hoặc mất góc: chụp lại trên nền tối, đủ ánh sáng.",
-     "eKYC báo không khớp khuôn mặt: bỏ kính, đứng nơi đủ sáng, giữ điện thoại ngang mặt.",
-     "Tên tài khoản ngân hàng không trùng tên trên CCCD: phải dùng tài khoản chính chủ.",
-     "Mở nhiều tài khoản cùng một công ty: mỗi người chỉ có một tài khoản giao dịch tại một công ty chứng khoán."
+     "<b>Ảnh CCCD lóa hoặc mất góc</b> → máy đọc sai tên, ngày sinh. Chụp trên nền tối, đủ sáng, kiểm lại từng dòng trước khi bấm tiếp.",
+     "<b>eKYC báo không khớp khuôn mặt</b> → bỏ kính, quay mặt về phía nguồn sáng, giữ điện thoại ngang mặt.",
+     "<b>Liên kết tài khoản ngân hàng không cùng tên</b> → không rút được tiền. Phải là tài khoản chính chủ.",
+     "<b>Mở thêm tài khoản ở cùng công ty</b> → mỗi người chỉ có một tài khoản giao dịch tại một công ty chứng khoán.",
+     "<b>Đưa mật khẩu, mã OTP cho người khác \"mở hộ\"</b> → không bao giờ làm, kể cả người tự nhận là nhân viên."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist sau khi mở tài khoản"
+   ],
+   [
+    "ul",
+    [
+     "Đổi mật khẩu đăng nhập và mã PIN đặt lệnh.",
+     "Nạp thử một khoản nhỏ, rút thử về ngân hàng để chắc liên kết đúng.",
+     "Đọc <a href=\"/f0/cach-mua-co-phieu-lan-dau.html\">cách mua cổ phiếu lần đầu</a> trước khi đặt lệnh.",
+     "Tra kết quả kinh doanh doanh nghiệp trước khi mua ở trang mã cổ phiếu.",
+     "Có <a href=\"/f0/quy-du-phong-truoc-khi-dau-tu.html\">quỹ dự phòng</a> rồi mới đưa tiền vào chứng khoán."
     ]
    ],
    [
     "p",
-    "Muốn được hướng dẫn trực tiếp từng bước, anh chị xem trang <a href=\"/mo-tai-khoan-chung-khoan.html\">mở tài khoản chứng khoán online</a> hoặc nhắn Zalo để được hỗ trợ."
+    "Bản hướng dẫn có ảnh từng bước ở trang <a href=\"/mo-tai-khoan-chung-khoan.html\">mở tài khoản chứng khoán online</a>. Kẹt ở bước nào, anh chị nhắn Zalo để em hướng dẫn."
+   ],
+   [
+    "cta",
+    "Mở tài khoản cùng Huy Nguyễn để được hỗ trợ 1:1 trong giai đoạn đầu.",
+    "https://openaccount.vps.com.vn/?MKTID=BJIE",
+    "Mở tài khoản VPS"
+   ],
+   [
+    "p",
+    "<small>Giá đóng cửa 17/11/2026 từ dữ liệu bảng giá của web. Ví dụ chị Lan là giả định minh hoạ. Bài chia sẻ kiến thức, không phải khuyến nghị mua bán.</small>"
    ]
-  ]
+  ],
+  "faq": [
+   [
+    "Mở tài khoản chứng khoán có mất phí không?",
+    "Thông thường miễn phí. Phí chỉ phát sinh khi mua bán, kèm thuế 0,1% trên giá trị bán."
+   ],
+   [
+    "Mở tài khoản chứng khoán online mất bao lâu?",
+    "Khoảng 5–10 phút nếu có sẵn CCCD gắn chip, số điện thoại, email và tài khoản ngân hàng chính chủ; nhiều nơi kích hoạt ngay trong ngày."
+   ],
+   [
+    "Cần bao nhiêu tiền để bắt đầu mua cổ phiếu?",
+    "Lô chẵn trên HOSE là 100 cổ phiếu; phiên 17/11/2026, 100 cổ phiếu MBB hay HPG chỉ khoảng 1,9–2,1 triệu đồng. Muốn ít hơn có thể mua lô lẻ."
+   ]
+  ],
+  "rel": [
+   "cach-mua-co-phieu-lan-dau",
+   "phi-giao-dich-va-thue-chung-khoan",
+   "lo-chan-lo-le",
+   "cach-nap-tien-vao-tai-khoan-chung-khoan",
+   "mo-tai-khoan-chung-khoan-tren-dien-thoai"
+  ],
+  "grp": 1,
+  "mod": "2026-11-17"
  },
  {
   "slug": "cach-mua-co-phieu-lan-dau",
@@ -2280,6 +2355,7 @@
    ]
   ],
   "rel": [
+   "cach-mo-tai-khoan-chung-khoan",
    "cac-loai-lenh-chung-khoan",
    "bien-do-gia-tran-san",
    "dau-tu-chung-khoan-voi-10-trieu"
@@ -21860,6 +21936,10 @@
    [
     "p",
     "Số liệu: giá vàng thế giới và VN-Index từ dữ liệu tổng hợp đến 4/11/2026. Kết quả quá khứ, không phải cam kết lợi nhuận. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ],
+   [
+    "p",
+    "Năm 2026 là ví dụ mới nhất: vàng miếng từ đỉnh 191,3 triệu/lượng (cuối tháng 1) về 134,5 triệu giá mua vào sáng 16/11, mất 29,7%. Phải tăng lại 42% mới hoà vốn – chi tiết ở bài <a href=\"/f0/mua-vang-dinh-lo-bao-nhieu.html\">mua vàng đỉnh lỗ bao nhiêu</a>."
    ]
   ],
   "faq": [
@@ -21877,6 +21957,7 @@
    ]
   ],
   "rel": [
+   "mua-vang-dinh-lo-bao-nhieu",
    "lam-phat-va-chung-khoan",
    "vn-index-la-gi",
    "phan-bo-von-va-quan-tri-danh-muc",
@@ -27326,14 +27407,18 @@
  },
  {
   "slug": "quy-du-phong-truoc-khi-dau-tu",
-  "kw": "quỹ dự phòng trước khi đầu tư chứng khoán",
+  "kw": "quỹ dự phòng bao nhiêu tháng là đủ",
   "grp": 7,
-  "title": "Quỹ dự phòng: lớp bảo vệ đầu tiên trước khi đầu tư chứng khoán",
-  "desc": "Vì sao cần quỹ dự phòng 3–6 tháng chi tiêu trước khi đầu tư, tiền nào được đưa vào chứng khoán, tiền nào không, và thứ tự ưu tiên tài chính cho người mới.",
+  "title": "Quỹ dự phòng bao nhiêu tháng là đủ? Cách tính cho từng gia đình",
+  "desc": "10 tháng 2026 có 182.000 doanh nghiệp rút lui. Quỹ dự phòng 3, 6 hay 12 tháng chi tiêu là đủ, tính thế nào, gửi ở đâu, và vì sao phải có trước khi đầu tư.",
   "body": [
    [
     "p",
-    "Quản trị rủi ro không bắt đầu từ điểm cắt lỗ, mà bắt đầu từ <b>số tiền nào được phép đưa vào chứng khoán</b>. Người không có quỹ dự phòng sẽ bị buộc phải bán cổ phiếu đúng lúc cần tiền, mà lúc cần tiền thường lại là lúc thị trường đang giảm."
+    "Đầu năm 2026, anh Tuấn (ví dụ giả định), kế toán dịch vụ, nhận sổ sách cho 15 công ty nhỏ, mỗi nơi 2 triệu/tháng. Tới tháng 11 còn 11 khách. Thu nhập từ <b>30 triệu xuống 22 triệu</b>, hụt 8 triệu mỗi tháng – trong khi tiền nhà, học phí con không giảm đồng nào."
+   ],
+   [
+    "p",
+    "Anh Tuấn không cá biệt. Mười tháng 2026, cộng số liệu Cục Thống kê, có khoảng <b>182.000 doanh nghiệp rút lui khỏi thị trường</b>, gần 600 doanh nghiệp mỗi ngày; lao động đăng ký ở doanh nghiệp mới giảm 17,4%. Khi thu nhập hụt bất ngờ, thứ đứng giữa gia đình và một quyết định bán vội chính là <b>quỹ dự phòng</b>."
    ],
    [
     "h2",
@@ -27341,78 +27426,194 @@
    ],
    [
     "p",
-    "Là khoản tiền đủ cho <b>3–6 tháng chi tiêu thiết yếu</b> (ăn ở, đi lại, học phí, trả nợ đến hạn), gửi ở nơi rút được nhanh và an toàn như tài khoản tiết kiệm. Khoản này không đầu tư, không dùng để bắt đáy."
-   ],
-   [
-    "p",
-    "Ví dụ giả định: chi tiêu thiết yếu 15 triệu đồng mỗi tháng thì quỹ dự phòng khoảng 45–90 triệu đồng. Người có thu nhập không đều, như tự kinh doanh hay làm hoa hồng, nên giữ gần mức 6 tháng."
+    "Là khoản tiền đủ trả <b>chi tiêu thiết yếu</b> trong vài tháng (ăn, ở, đi lại, điện nước, học phí, nợ đến hạn), gửi ở nơi an toàn và rút được nhanh. Khoản này không đầu tư, không bắt đáy, không cho vay."
    ],
    [
     "h2",
-    "Thứ tự ưu tiên tài chính"
+    "Số doanh nghiệp vào – ra nói gì với gia đình?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Chỉ tiêu",
+      "Cả năm 2024",
+      "10 tháng 2026"
+     ],
+     [
+      "Doanh nghiệp rút lui",
+      "197.900<br>(16.500/tháng)",
+      "182.000<br>(18.200/tháng)"
+     ],
+     [
+      "Trong đó hoàn tất giải thể",
+      "21.600",
+      "56.300<br>(+109,8% cùng kỳ)"
+     ],
+     [
+      "Doanh nghiệp vào thị trường",
+      "–",
+      "243.600<br>(24.400/tháng)"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Số vào vẫn nhiều hơn số ra, và một phần giải thể tăng là do xử lý hồ sơ tồn đọng (chi tiết ở bài <a href=\"/f0/doanh-nghiep-rut-lui-khoi-thi-truong-la-gi.html\">doanh nghiệp rút lui khỏi thị trường là gì</a>). Nhưng áp lực thật dồn vào doanh nghiệp nhỏ và người làm ở đó: bán buôn, bán lẻ, sửa chữa xe là ngành giải thể nhiều nhất (21.673, +120,1%)."
+   ],
+   [
+    "h2",
+    "Quỹ dự phòng bao nhiêu tháng là đủ?"
+   ],
+   [
+    "p",
+    "Không có con số chung cho mọi nhà. Thu nhập càng bấp bênh, quỹ càng phải dày. Mốc tham khảo (kinh nghiệm, không phải quy định):"
+   ],
+   [
+    "table",
+    [
+     [
+      "Hoàn cảnh",
+      "Nên có"
+     ],
+     [
+      "Hai vợ chồng cùng có lương ổn định",
+      "3–4 tháng chi tiêu"
+     ],
+     [
+      "Một người kiếm tiền chính, có con nhỏ",
+      "6 tháng"
+     ],
+     [
+      "Làm ở doanh nghiệp nhỏ, ngành đang khó (bán lẻ, xây dựng, bất động sản)",
+      "6–9 tháng"
+     ],
+     [
+      "Tự kinh doanh, hưởng hoa hồng, làm tự do",
+      "9–12 tháng"
+     ]
+    ]
+   ],
+   [
+    "h2",
+    "Cách tính quỹ dự phòng cho nhà mình"
+   ],
+   [
+    "p",
+    "Công thức: <b>chi tiêu thiết yếu mỗi tháng × số tháng cần giữ</b>. Tính theo chi tiêu, không theo thu nhập."
+   ],
+   [
+    "p",
+    "Ví dụ nhà anh Tuấn: ăn uống 7 triệu, tiền nhà 5 triệu, đi lại và điện nước 3 triệu, học phí con 3 triệu = <b>18 triệu/tháng</b>. Thu nhập bấp bênh nên giữ 6 tháng: 18 × 6 = <b>108 triệu</b>. Nếu chưa có ngay, mỗi tháng để riêng phần dư, ưu tiên đủ 1 tháng trước, rồi 3 tháng, rồi 6 tháng."
+   ],
+   [
+    "h2",
+    "Gửi quỹ dự phòng ở đâu?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Tầng",
+      "Bao nhiêu",
+      "Để ở đâu"
+     ],
+     [
+      "Tiền dùng ngay",
+      "Khoảng 1 tháng",
+      "Tài khoản thanh toán"
+     ],
+     [
+      "Tiền rút trong vài ngày",
+      "Khoảng 2 tháng",
+      "Tiết kiệm online kỳ hạn ngắn<br>(rút trước hạn chỉ mất phần lãi)"
+     ],
+     [
+      "Phần còn lại",
+      "3 tháng trở lên",
+      "Tiết kiệm kỳ hạn 6–12 tháng<br>(lãi 12 tháng NHTM nhà nước khoảng 5,4%, 13/11/2026)"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Không để quỹ dự phòng trong cổ phiếu, vàng hay bất động sản. Vàng miếng có thể giảm gần 30% trong 10 tháng như năm 2026 – xem <a href=\"/f0/mua-vang-dinh-lo-bao-nhieu.html\">mua vàng đỉnh lỗ bao nhiêu</a>."
+   ],
+   [
+    "h2",
+    "Vì sao phải có quỹ dự phòng trước khi đầu tư?"
+   ],
+   [
+    "p",
+    "Từ 17/3/2025 tới 9/4/2025, VN-Index giảm từ 1.336 xuống 1.094 điểm, mất <b>18,1%</b> chỉ trong ba tuần. Người không có quỹ dự phòng mà đúng lúc đó cần tiền sẽ phải bán cổ phiếu ở vùng thấp nhất, không phải vì doanh nghiệp xấu, mà vì hết tiền chi tiêu. Người có quỹ thì giữ được kế hoạch của mình."
    ],
    [
     "ol",
     [
-     "Trả hết nợ lãi suất cao (thẻ tín dụng, vay tiêu dùng).",
-     "Lập quỹ dự phòng 3–6 tháng.",
-     "Mua bảo hiểm sức khỏe cơ bản cho bản thân và người phụ thuộc.",
-     "Đầu tư phần tiền nhàn rỗi, bắt đầu từ <a href=\"/f0/tich-san-chung-khoan-la-gi.html\">tích sản</a> định kỳ."
+     "Trả hết nợ lãi cao (thẻ tín dụng, vay tiêu dùng).",
+     "Lập quỹ dự phòng theo bảng trên.",
+     "Mua bảo hiểm sức khỏe cơ bản cho người kiếm tiền chính.",
+     "Phần tiền nhàn rỗi còn lại mới đầu tư, bắt đầu từ <a href=\"/f0/tich-san-chung-khoan-la-gi.html\">tích sản</a> định kỳ."
     ]
    ],
    [
     "h2",
-    "Tiền nào không được đưa vào chứng khoán"
+    "Bẫy hay gặp"
    ],
    [
     "ul",
     [
-     "Tiền sẽ cần trong 12 tháng tới: đặt cọc nhà, học phí, cưới hỏi.",
-     "Tiền vay mượn người thân hoặc vay tiêu dùng.",
-     "Tiền mà nếu mất 30% thì anh chị mất ngủ hoặc ảnh hưởng gia đình."
+     "<b>Lấy quỹ dự phòng đi bắt đáy.</b> Đã dùng để mua cổ phiếu thì nó không còn là quỹ dự phòng.",
+     "<b>Tính theo thu nhập.</b> Mất việc thì thu nhập về 0; thứ cần giữ là chi tiêu tối thiểu.",
+     "<b>Coi hạn mức thẻ tín dụng là quỹ dự phòng.</b> Đó là khoản vay lãi cao, càng dùng càng nặng.",
+     "<b>Quên cập nhật.</b> Có thêm con, đổi việc, vay mua nhà thì phải tính lại số tháng."
     ]
    ],
    [
     "h2",
-    "Vì sao điều này giúp đầu tư tốt hơn?"
+    "Checklist 10 phút"
+   ],
+   [
+    "ul",
+    [
+     "Cộng chi tiêu thiết yếu 3 tháng gần nhất, chia 3.",
+     "Chọn số tháng theo bảng hoàn cảnh.",
+     "Đếm tiền gửi hiện có, ra số còn thiếu.",
+     "Chia 3 tầng: thanh toán – kỳ hạn ngắn – kỳ hạn 6–12 tháng.",
+     "Đặt lịch xem lại mỗi 6 tháng hoặc khi gia đình có thay đổi lớn."
+    ]
    ],
    [
     "p",
-    "Khi biết chắc mình không bị ép bán, anh chị có thể giữ kỷ luật trong những đợt <a href=\"/f0/sut-giam-tai-khoan-drawdown-la-gi.html\">sụt giảm</a> sâu, thậm chí mua thêm theo kế hoạch tích sản. Người không có quỹ dự phòng thường bán ở đáy, không phải vì sai về doanh nghiệp, mà vì hết tiền chi tiêu."
+    "Đủ quỹ dự phòng rồi, anh chị có thể xem cách em theo dõi danh mục tích sản dài hạn ở <a href=\"/bao-cao-2026.html#tichsan\">báo cáo tích sản 2026</a>."
    ],
    [
-    "h2",
-    "Tóm lại"
-   ],
-   [
-    "ul",
-    [
-     "Quỹ dự phòng 3–6 tháng chi tiêu là lớp bảo vệ đầu tiên.",
-     "Chỉ đầu tư tiền nhàn rỗi, không dùng tiền sẽ cần trong 12 tháng.",
-     "Không bị ép bán là lợi thế lớn nhất của nhà đầu tư cá nhân."
-    ]
+    "p",
+    "<small>Nguồn: Cục Thống kê qua báo Thị trường Tài chính Tiền tệ 3/11/2026; Nhà đầu tư/VCCI 9/11/2026; VCCI 7/1/2025 (số năm 2024); lãi huy động 12 tháng NHTM nhà nước 5,4% (WiData 13/11/2026); VN-Index đóng cửa từ dữ liệu web. Tổng 182.000, bình quân tháng và ví dụ anh Tuấn là số tự tính/giả định. Bài chia sẻ kiến thức, không phải khuyến nghị.</small>"
    ]
   ],
   "faq": [
    [
+    "Quỹ dự phòng bao nhiêu tháng là đủ?",
+    "Thường 3–6 tháng chi tiêu thiết yếu; người có thu nhập bấp bênh như tự kinh doanh, hưởng hoa hồng nên giữ 9–12 tháng."
+   ],
+   [
     "Quỹ dự phòng nên gửi ở đâu?",
-    "Ở nơi an toàn và rút nhanh: tiết kiệm ngân hàng kỳ hạn ngắn hoặc tài khoản có thể rút trong 1–2 ngày. Không đặt trong cổ phiếu."
+    "Ở nơi an toàn và rút nhanh: tài khoản thanh toán cho khoảng 1 tháng, phần còn lại gửi tiết kiệm kỳ hạn ngắn và 6–12 tháng. Không để trong cổ phiếu hay vàng."
    ],
    [
-    "Đã có quỹ dự phòng có được dùng để bắt đáy?",
-    "Không. Nếu dùng quỹ dự phòng để mua cổ phiếu thì nó không còn là quỹ dự phòng."
-   ],
-   [
-    "Người mới chỉ có ít tiền thì sao?",
-    "Vẫn ưu tiên quỹ dự phòng trước, có thể song song tích sản số tiền nhỏ hằng tháng để học và tạo thói quen."
+    "Có quỹ dự phòng rồi có được dùng để bắt đáy cổ phiếu?",
+    "Không. Nếu dùng quỹ dự phòng để mua cổ phiếu thì nó không còn bảo vệ được gia đình khi thu nhập hụt."
    ]
   ],
   "rel": [
+   "doanh-nghiep-rut-lui-khoi-thi-truong-la-gi",
+   "mua-vang-dinh-lo-bao-nhieu",
    "rui-ro-khi-tich-san",
    "quan-tri-von-la-gi",
-   "danh-muc-tich-san-mau",
    "margin-va-tien-mat-khi-tich-san"
-  ]
+  ],
+  "mod": "2026-11-17"
  },
  {
   "slug": "rui-ro-he-thong-va-phi-he-thong",
@@ -29030,7 +29231,7 @@
   "slug": "cach-tinh-khoi-luong-mua-theo-diem-cat-lo",
   "kw": "cách tính khối lượng mua cổ phiếu",
   "grp": 5,
-  "title": "Cách tính khối lượng mua cổ phiếu theo điểm cắt lỗ (công thức 1 dòng)",
+  "title": "Cách tính khối lượng mua cổ phiếu theo điểm cắt lỗ: 1 công thức",
   "desc": "Công thức tính khối lượng mua cổ phiếu theo số tiền rủi ro và điểm cắt lỗ, ví dụ tài khoản 500 triệu, các lỗi hay gặp và cách áp dụng với mã thanh khoản thấp.",
   "body": [
    [
@@ -29548,7 +29749,7 @@
   "slug": "tai-can-bang-danh-muc-la-gi",
   "kw": "tái cân bằng danh mục",
   "grp": 7,
-  "title": "Tái cân bằng danh mục là gì? Ví dụ góp đều GAS từng lãi 92% còn 10%",
+  "title": "Tái cân bằng danh mục là gì? Ví dụ GAS từng lãi 92% còn 10%",
   "desc": "Tái cân bằng danh mục là gì, khi nào nên làm, ví dụ thật góp đều GAS 38 tháng từng lãi 92% rồi còn khoảng 10%, và quy tắc tái cân bằng đơn giản cho người tích sản.",
   "body": [
    [
@@ -32313,6 +32514,7 @@
    ]
   ],
   "rel": [
+   "mua-vang-dinh-lo-bao-nhieu",
    "gia-vang-va-chung-khoan",
    "tai-can-bang-danh-muc-la-gi",
    "phan-bo-von-va-quan-tri-danh-muc"
@@ -36717,7 +36919,7 @@
   "slug": "mua-truoc-tra-sau-va-vay-qua-ung-dung",
   "kw": "mua trước trả sau vay qua ứng dụng lãi thật",
   "grp": 7,
-  "title": "Mua trước trả sau, thẻ tín dụng, vay qua ứng dụng: cách tính lãi thật",
+  "title": "Mua trước trả sau, thẻ tín dụng, vay qua app: cách tính lãi thật",
   "desc": "Cách tính chi phí thật của mua trước trả sau, trả tối thiểu thẻ tín dụng và vay qua ứng dụng; mức lãi tối đa luật cho phép và dấu hiệu khoản vay nguy hiểm.",
   "body": [
    [
@@ -36770,7 +36972,7 @@
   "slug": "vay-mua-dat-nen-rui-ro",
   "kw": "vay mua đất nền rủi ro",
   "grp": 7,
-  "title": "Vay tiền mua đất nền lúc sốt: rủi ro đòn bẩy, lãi vay và thanh khoản",
+  "title": "Vay mua đất nền lúc sốt: rủi ro đòn bẩy, lãi vay, thanh khoản",
   "desc": "Ba rủi ro khi vay tiền mua đất nền lúc thị trường sốt: lãi vay chạy mỗi tháng, đất không có người mua lại, và giá rao không phải giá giao dịch thật.",
   "body": [
    [
@@ -38173,7 +38375,7 @@
    ],
    [
     "p",
-    "Lần trước, vàng miếng lập đỉnh <b>49 triệu</b> cuối tháng 8/2011, rồi về khoảng <b>33 triệu</b> năm 2016; vàng thế giới từ 1.920 USD (9/2011) về khoảng 1.050 USD cuối 2015 (−45%) và tới năm 2020 mới vượt đỉnh cũ. Xem thêm <a href=\"/f0/gia-vang-va-chung-khoan.html\">giá vàng và chứng khoán</a>."
+    "Lần trước, vàng miếng lập đỉnh <b>49 triệu</b> cuối tháng 8/2011, rồi về khoảng <b>33 triệu</b> năm 2016; vàng thế giới từ 1.920 USD (9/2011) về khoảng 1.050 USD cuối 2015 (−45%) và tới năm 2020 mới vượt đỉnh cũ. Người mua đỉnh lỗ bao nhiêu và phải chờ bao lâu, xem <a href=\"/f0/mua-vang-dinh-lo-bao-nhieu.html\">mua vàng đỉnh lỗ bao nhiêu</a>; so với cổ phiếu, xem <a href=\"/f0/gia-vang-va-chung-khoan.html\">giá vàng và chứng khoán</a>."
    ],
    [
     "h2",
@@ -38220,6 +38422,7 @@
    ]
   ],
   "rel": [
+   "mua-vang-dinh-lo-bao-nhieu",
    "gia-vang-va-chung-khoan",
    "ty-trong-vang-bitcoin-trong-danh-muc",
    "lai-suat-thuc-la-gi"
@@ -38346,7 +38549,7 @@
     [
      "Đầu mỗi tháng xem 3 số Cục Thống kê công bố: thành lập mới so cùng kỳ, tạm ngừng, lao động đăng ký.",
      "Doanh nghiệp niêm yết: xem lợi nhuận từng quý thay vì đoán theo số doanh nghiệp rút lui – tra miễn phí trên trang chủ.",
-     "Gia đình: giữ quỹ dự phòng 3–6 tháng chi tiêu; xem <a href=\"/f0/quy-du-phong-truoc-khi-dau-tu.html\">quỹ dự phòng trước khi đầu tư</a>."
+     "Gia đình: giữ quỹ dự phòng 3–6 tháng chi tiêu; xem <a href=\"/f0/quy-du-phong-truoc-khi-dau-tu.html\">quỹ dự phòng bao nhiêu tháng là đủ</a>."
     ]
    ],
    [
@@ -38372,6 +38575,274 @@
    "quy-du-phong-truoc-khi-dau-tu",
    "lai-suat-thuc-la-gi",
    "von-dau-tu-38-5-trieu-ty-tien-o-dau-ra"
+  ]
+ },
+ {
+  "slug": "mua-vang-dinh-lo-bao-nhieu",
+  "kw": "mua vàng đỉnh lỗ bao nhiêu",
+  "grp": 8,
+  "date": "2026-11-17",
+  "title": "Mua vàng đỉnh lỗ bao nhiêu? Vàng 2011 mất 9 năm mới về bờ",
+  "desc": "Mua vàng miếng 191,3 triệu, nay tiệm mua lại 134,5: mất 29,7%. Cần tăng bao nhiêu để hoà vốn, các đỉnh 1980, 2011 mất bao lâu để về bờ và phép thử tỷ trọng vàng.",
+  "body": [
+   [
+    "p",
+    "Ngày 29/1/2026, chị Thu (ví dụ giả định) mua 2 lượng vàng miếng giá 190 triệu, hết <b>380 triệu đồng</b>. Sáng 16/11/2026, tiệm chỉ mua lại <b>134,5 triệu</b> một lượng. Hai lượng còn <b>269 triệu</b>. Mười tháng, mất 111 triệu."
+   ],
+   [
+    "p",
+    "Nếu cùng ngày đó chị gửi 380 triệu vào sổ tiết kiệm 12 tháng lãi 5,4%, tới 16/11 chị có thêm khoảng <b>16,5 triệu</b> tiền lãi. Khoảng cách giữa hai lựa chọn là gần 128 triệu."
+   ],
+   [
+    "h2",
+    "Mua vàng đúng đỉnh 2026 thì lỗ bao nhiêu?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Mốc",
+      "Vàng miếng (triệu/lượng)",
+      "Vàng thế giới (USD/ounce)"
+     ],
+     [
+      "Đỉnh cuối tháng 1/2026",
+      "191,3",
+      "5.594,82 (29/1, trong phiên)"
+     ],
+     [
+      "Sáng 16/11/2026",
+      "134,5 mua vào<br>137,5 bán ra",
+      "3.875,65"
+     ],
+     [
+      "Mất từ đỉnh",
+      "56,8 triệu<br>(−29,7%)",
+      "−30,7%"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Tính theo <b>giá tiệm mua lại</b>, vì đó là số tiền anh chị thật sự cầm về khi bán. Theo giá chốt ngày trong dữ liệu của web, vàng thế giới đi từ 5.318,4 USD (29/1) về 3.858,7 USD (17/11/2026), giảm 27,4%."
+   ],
+   [
+    "h2",
+    "Giảm 30% thì phải tăng bao nhiêu để hoà vốn?"
+   ],
+   [
+    "p",
+    "Đây là chỗ nhiều người tính nhầm. Mất 30% không cần tăng 30% để về bờ, mà cần tăng nhiều hơn, vì gốc đã nhỏ đi."
+   ],
+   [
+    "table",
+    [
+     [
+      "Giảm từ đỉnh",
+      "Cần tăng lại để hoà vốn"
+     ],
+     [
+      "−30% (vàng miếng 2026)",
+      "+42,9%"
+     ],
+     [
+      "−45% (vàng thế giới 2011–2015)",
+      "+81,8%"
+     ],
+     [
+      "−70% (vàng thế giới 1980–1999)",
+      "+233%"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Với vàng miếng: từ 134,5 triệu phải lên lại 191,3 triệu, tức tăng <b>42,2%</b>, chưa tính chênh lệch mua – bán ở tiệm."
+   ],
+   [
+    "h2",
+    "Lần trước vàng mất bao lâu để về bờ?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Đợt",
+      "Đỉnh → đáy",
+      "Vượt lại đỉnh"
+     ],
+     [
+      "1980 (thế giới)",
+      "850 USD → khoảng 250 USD năm 1999<br>(−70%)",
+      "Đầu năm 2008<br>khoảng 28 năm"
+     ],
+     [
+      "2011 (thế giới)",
+      "1.920 USD (9/2011) → khoảng 1.050 USD cuối 2015<br>(−45%)",
+      "Năm 2020<br>khoảng 9 năm"
+     ],
+     [
+      "2011 (vàng miếng)",
+      "49 triệu (8/2011) → khoảng 33 triệu năm 2016<br>(−32,7%)",
+      "Năm 2020<br>khoảng 9 năm"
+     ],
+     [
+      "2026",
+      "191,3 → 134,5 triệu<br>(−29,7%)",
+      "Chưa biết"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Lịch sử không lặp lại y hệt, và lần này có thể nhanh hay chậm hơn. Nhưng nó cho thấy một điều: người mua vàng ở đỉnh phải chuẩn bị cho khả năng chờ <b>nhiều năm</b>, không phải vài tháng."
+   ],
+   [
+    "h2",
+    "Chờ 9 năm để hoà vốn thì mất gì?"
+   ],
+   [
+    "p",
+    "Mất <b>chi phí cơ hội</b>. Cùng số tiền gửi tiết kiệm 5,4%/năm, lãi nhập gốc 9 năm thì tăng khoảng <b>60%</b> (1,054 mũ 9 ≈ 1,605). Người cầm vàng chờ 9 năm để \"về bờ\" thực chất là đã thua khoản 60% đó – chưa kể lạm phát."
+   ],
+   [
+    "h2",
+    "Lãi hay lỗ phụ thuộc mua lúc nào"
+   ],
+   [
+    "p",
+    "Cùng là người cầm vàng ngày 17/11/2026, kết quả rất khác nhau tùy ngày mua (giá vàng thế giới chốt ngày, chưa tính chênh lệch trong nước):"
+   ],
+   [
+    "table",
+    [
+     [
+      "Ngày mua",
+      "Giá mua (USD/ounce)",
+      "Lãi/lỗ tới 17/11/2026"
+     ],
+     [
+      "17/11/2023",
+      "1.984,7",
+      "+94%"
+     ],
+     [
+      "15/11/2024",
+      "2.570,1",
+      "+50%"
+     ],
+     [
+      "17/11/2025",
+      "4.074,5",
+      "−5%"
+     ],
+     [
+      "2/1/2026",
+      "4.329,6",
+      "−11%"
+     ],
+     [
+      "29/1/2026",
+      "5.318,4",
+      "−27%"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Người mua 2–3 năm trước vẫn lãi lớn. Người mua theo đám đông cuối tháng 1/2026 đang lỗ nặng nhất. Thời điểm mua quan trọng ngang loại tài sản."
+   ],
+   [
+    "h2",
+    "Phép thử: vàng chiếm bao nhiêu phần tài sản nhà mình?"
+   ],
+   [
+    "p",
+    "Giả định gia đình có tổng tài sản <b>1 tỷ đồng</b>, vàng giảm 30%:"
+   ],
+   [
+    "table",
+    [
+     [
+      "Vàng chiếm",
+      "Mất bao nhiêu",
+      "Tổng tài sản giảm"
+     ],
+     [
+      "10% (100 triệu)",
+      "30 triệu",
+      "−3%"
+     ],
+     [
+      "30% (300 triệu)",
+      "90 triệu",
+      "−9%"
+     ],
+     [
+      "50% (500 triệu)",
+      "150 triệu",
+      "−15%"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Mất 3% thì ngủ yên. Mất 15% mà đó lại là tiền sắp cần (sửa nhà, học phí) thì buộc phải bán ở giá thấp. Vì vậy câu hỏi đúng không phải \"vàng còn giảm không\", mà là \"nếu giảm thêm, nhà mình có phải bán không\". Xem thêm <a href=\"/f0/ty-trong-vang-bitcoin-trong-danh-muc.html\">tỷ trọng vàng trong danh mục</a>."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp khi đang lỗ vàng"
+   ],
+   [
+    "ul",
+    [
+     "<b>Tính lãi lỗ theo giá bán ra.</b> Sáng 16/11 bán ra 137,5 nhưng tiệm mua lại 134,5 – mỗi lượng chênh 3 triệu.",
+     "<b>Vay tiền mua thêm để bình quân giá.</b> Vàng không sinh lãi; tiền vay thì có lãi mỗi ngày. Chờ 9 năm với khoản vay là không chịu nổi.",
+     "<b>Chỉ nhìn giá thế giới.</b> Vàng miếng trong nước đang cao hơn thế giới quy đổi khoảng 16,4 triệu/lượng; nếu khoảng chênh co lại, vàng miếng có thể giảm thêm dù giá thế giới đứng yên – xem <a href=\"/f0/chenh-lech-gia-vang-trong-nuoc-va-the-gioi.html\">chênh lệch giá vàng trong nước và thế giới</a>."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist 5 phút cho người đang cầm vàng"
+   ],
+   [
+    "ul",
+    [
+     "Ghi giá mua thật của từng lượng và giá tiệm mua lại hôm nay.",
+     "Tính phần trăm cần tăng để hoà vốn theo bảng trên.",
+     "Tính tỷ trọng vàng trên tổng tài sản; trên 30% thì cân nhắc kỹ trước khi mua thêm.",
+     "Tách riêng <a href=\"/f0/quy-du-phong-truoc-khi-dau-tu.html\">quỹ dự phòng</a> 3–6 tháng chi tiêu bằng tiền gửi, không để trong vàng.",
+     "Không dùng tiền vay hoặc tiền sắp cần chi để mua vàng."
+    ]
+   ],
+   [
+    "p",
+    "Video \"Vàng mất 30% từ đỉnh\" trên kênh YouTube Chứng Khoán Huy Nguyễn kể lại chuyện chị Thu và hai lần vàng sập trước. Muốn trao đổi về tỷ trọng tài sản của riêng nhà mình, anh chị nhắn Zalo cho em."
+   ],
+   [
+    "p",
+    "<small>Nguồn: Znews 28/5/2026 (vàng miếng đỉnh 191,3 triệu/lượng cuối tháng 1/2026); MarketTimes 16/11/2026 (thế giới 3.875,65 USD/ounce, SJC 134,5 – 137,5 triệu); Stockbiz 7/2026 (đỉnh 5.594,82 USD ngày 29/1/2026); Tinnhanhchungkhoan 2/6/2016 (SJC 49 triệu cuối 8/2011, về khoảng 33 triệu); USAGOLD (lịch sử giá vàng 1980, 1999, 2011, 2015); giá chốt ngày vàng thế giới từ dữ liệu thế giới & hàng hóa của web (17/11/2023–17/11/2026). Phần trăm, lãi kép và ví dụ chị Thu là số tự tính/giả định minh hoạ. Quá khứ không bảo đảm tương lai. Bài chia sẻ kiến thức, không phải khuyến nghị.</small>"
+   ]
+  ],
+  "faq": [
+   [
+    "Mua vàng đỉnh tháng 1/2026 giờ lỗ bao nhiêu?",
+    "Vàng miếng đỉnh 191,3 triệu/lượng; sáng 16/11/2026 tiệm mua lại 134,5 triệu, tức mất 56,8 triệu mỗi lượng (−29,7%)."
+   ],
+   [
+    "Vàng giảm 30% thì cần tăng bao nhiêu để hoà vốn?",
+    "Khoảng 42,9%. Riêng vàng miếng từ 134,5 lên 191,3 triệu cần tăng 42,2%, chưa tính chênh mua – bán."
+   ],
+   [
+    "Lần trước vàng mất bao lâu để vượt lại đỉnh?",
+    "Đỉnh 2011 (1.920 USD, vàng miếng 49 triệu) mất khoảng 9 năm, tới năm 2020; đỉnh 1980 (850 USD) mất khoảng 28 năm."
+   ]
+  ],
+  "rel": [
+   "chenh-lech-gia-vang-trong-nuoc-va-the-gioi",
+   "gia-vang-va-chung-khoan",
+   "ty-trong-vang-bitcoin-trong-danh-muc",
+   "quy-du-phong-truoc-khi-dau-tu"
   ]
  }
 ]
