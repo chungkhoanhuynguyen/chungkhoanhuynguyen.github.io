@@ -614,13 +614,15 @@ const dhM=()=>G&&G.dhm||1;
 function dhMenu(){if(!G)return;dhUpdate(1);const L=dhList(),have=new Set(L.map(d=>d.id));let h=`<p>Mỗi danh hiệu tăng giới hạn quân dẫn theo. Hiện có <b>${L.length}</b> danh hiệu → ${G.lk?`giới hạn quân <b>${Math.round(plPct()*100)}%</b> sức mạnh chuẩn của tiên nhân (200% gốc + ${Math.round((dhM()-1)*100)}% danh hiệu + ${Math.round(cgP()*100)}% cảnh giới)`:`giới hạn quân <b>×${dhM().toFixed(2)}</b>${G.cg?` · cảnh giới ×${cgM()}`:''}`}</p><div style="max-height:52vh;overflow:auto;font-size:13px;line-height:1.6">`;
  h+=L.sort((a,b)=>b.b-a.b).map(d=>`<div><span style="color:${d.c}">${d.ic} <b>${d.n}</b></span> <small style="color:#9c9">+${Math.round(d.b*100)}%</small></div>`).join('');
  const lock=DHL.filter(d=>!have.has(d[0]));if(lock.length){h+='<div style="margin-top:6px;color:#889">— Chưa đạt —</div>';let shown=0;const seen=new Set();for(const d of lock){const g=d[0].replace(/\d+$/,'');if(seen.has(g))continue;seen.add(g);if(shown++>8)break;h+=`<div style="color:#778">🔒 ??? <small>(${d[6]} · +${Math.round(d[4]*100)}%)</small></div>`}}
- h+='</div>';menu('🏅 Danh hiệu',h,[[`👁 Hiện trên đầu: ${G.dhAll?'TẤT CẢ danh hiệu':'chỉ '+(SMALL()?3:6)+' danh hiệu mạnh nhất'} (bấm để đổi)`,()=>{G.dhAll=G.dhAll?0:1;dhMenu()}],['Đóng',close]])}
-function dhPlates(x,y,t){const v=G&&G.dhv;if(!v||!v.length)return;const mx=G.dhAll?99:SMALL()?3:6,n=Math.min(mx,v.length);X.textAlign='center';X.font='800 9.5px system-ui,sans-serif';
+ h+='</div>';menu('🏅 Danh hiệu',h,[[`👁 Hiện trên đầu: ${G.dhAll==2?'chỉ danh hiệu CAO NHẤT':G.dhAll?'TẤT CẢ danh hiệu':(SMALL()?3:6)+' danh hiệu mạnh nhất'} (bấm để đổi)`,()=>{G.dhAll=G.dhAll==2?0:G.dhAll?2:1;dhMenu()}],['Đóng',close]])}
+function dhPlates(x,y,t){const v=G&&G.dhv;if(!v||!v.length)return;const mx=dhMx(),n=Math.min(mx,v.length);X.textAlign='center';X.font='800 9.5px system-ui,sans-serif';
  for(let i=0;i<n;i++){const [s,ic,c,bp]=v[i],yy=y-i*15,l=ic+' '+s+(bp?' +'+bp+'%':''),tw=X.measureText(l).width+12,gl=.6+Math.sin(t*2.5+i)*.4;
   X.fillStyle='rgba(14,10,24,.82)';X.beginPath();X.moveTo(x-tw/2,yy-10);X.lineTo(x+tw/2,yy-10);X.lineTo(x+tw/2+5,yy-4.5);X.lineTo(x+tw/2,yy+1);X.lineTo(x-tw/2,yy+1);X.lineTo(x-tw/2-5,yy-4.5);X.closePath();X.fill();
   X.strokeStyle=c;X.globalAlpha=.55+.45*gl;X.lineWidth=1.2;X.stroke();X.globalAlpha=1;X.fillStyle=c;X.fillText(l,x,yy-1.5)}
- if(v.length>n){X.font='700 9px system-ui';X.fillStyle='#ffe9a8';X.fillText(`+${v.length-n} danh hiệu`,x,y-n*15)}}
-const dhN=()=>{const v=G&&G.dhv;if(!v||!v.length)return 0;const mx=G.dhAll?99:SMALL()?3:6;return Math.min(mx,v.length)+(v.length>mx?1:0)};
+ if(v.length>n&&G.dhAll!=2){X.font='700 9px system-ui';X.fillStyle='#ffe9a8';X.fillText(`+${v.length-n} danh hiệu`,x,y-n*15)}}
+const dhMx=()=>G.dhAll==2?1:G.dhAll?99:SMALL()?3:6;
+const dhN=()=>{const v=G&&G.dhv;if(!v||!v.length)return 0;const mx=dhMx();return Math.min(mx,v.length)+(v.length>mx&&G.dhAll!=2?1:0)};
+function dhTog(){if(G.dhAll==2){G.dhAll=G.dhPrev||0;toast('🏅 Hiện lại danh hiệu','#ffe9a8')}else{G.dhPrev=G.dhAll||0;G.dhAll=2;toast('🏅 Chỉ hiện danh hiệu cao nhất — chạm lần nữa để hiện lại','#ffe9a8')}}
 /* ================= MỤC LƯU (5 ô) + XUẤT / NHẬP SAVE BẰNG FILE =================
  Ô đang chơi nằm ở khóa KEY (như cũ, tải nhanh). Các ô khác được nén gzip (base64) ở 'ltlc-sz-<ô>'.
  Thông tin từng ô ở 'ltlc-slots'. Đổi ô = nén ô hiện tại cất đi, giải nén ô mới vào KEY, tải lại trang. */
@@ -1393,7 +1395,7 @@ C.addEventListener('pointerup',pu);C.addEventListener('pointercancel',pu);
 C.addEventListener('wheel',e=>{e.preventDefault();setZoom(cam().z*(e.deltaY<0?1.15:.87),e.clientX,e.clientY)},{passive:false});
 function tap(sx,sy){if(mode!='map'||paused||!G)return;const pl=P0(),m=mmRect();MC.follow=1;
  if(sx>=m.x&&sy>=m.y&&sx<=m.x+m.w&&sy<=m.y+m.h){const wb=CWB(),mx=wb.x0+(sx-m.x)/m.w*wb.w,my=wb.y0+(sy-m.y)/m.h*wb.h;if(!OPEN(contOf(mx,my))){toast('🔒 '+LOCKT(contOf(mx,my)),'#d9c2ff');return}pl.goS=pl.goP=null;pl.tx=mx;pl.ty=my;G.mk={x:pl.tx,y:pl.ty,t:2};return}
- const z=MC.z,q={x:MC.x+(sx-W/2)/z,y:MC.y+(sy-H/2)/z},rs=Math.max(1,.45/z);pl.goF=null;if(G.ac){G.ac=0;acBtn();toast('🤖 Đã tắt tự chinh phạt — bạn tự điều khiển','#fc8')}
+ const z=MC.z,q={x:MC.x+(sx-W/2)/z,y:MC.y+(sy-H/2)/z},rs=Math.max(1,.45/z);{const n=dhN();if(n&&z>=.42&&Math.abs(q.x-pl.x)<95&&q.y<pl.y-60&&q.y>pl.y-72-n*15-14){dhTog();return}}pl.goF=null;if(G.ac){G.ac=0;acBtn();toast('🤖 Đã tắt tự chinh phạt — bạn tự điều khiển','#fc8')}
  if(WRLD(q.y)!=WRLD(pl.y)){toast('🌀 Muốn sang thế giới khác phải đi qua Thông đạo','#9ff0ff');return}
  if(!OPEN(contOf(q.x,q.y))){toast('🔒 '+LOCKT(contOf(q.x,q.y)),'#d9c2ff');return}
  const fg=G.fights.find(f=>Math.hypot(f.x-q.x,f.y-q.y)<45*rs);if(fg){pl.goS=pl.goP=null;pl.goF=fg;if(dist(pl,fg)<40)joinFight(fg);return}

@@ -17,7 +17,7 @@ C.addEventListener('pointerup',pu);C.addEventListener('pointercancel',pu);
 C.addEventListener('wheel',e=>{e.preventDefault();setZoom(cam().z*(e.deltaY<0?1.15:.87),e.clientX,e.clientY)},{passive:false});
 function tap(sx,sy){if(mode!='map'||paused||!G)return;const pl=P0(),m=mmRect();MC.follow=1;
  if(sx>=m.x&&sy>=m.y&&sx<=m.x+m.w&&sy<=m.y+m.h){const wb=CWB(),mx=wb.x0+(sx-m.x)/m.w*wb.w,my=wb.y0+(sy-m.y)/m.h*wb.h;if(!OPEN(contOf(mx,my))){toast('🔒 '+LOCKT(contOf(mx,my)),'#d9c2ff');return}pl.goS=pl.goP=null;pl.tx=mx;pl.ty=my;G.mk={x:pl.tx,y:pl.ty,t:2};return}
- const z=MC.z,q={x:MC.x+(sx-W/2)/z,y:MC.y+(sy-H/2)/z},rs=Math.max(1,.45/z);pl.goF=null;if(G.ac){G.ac=0;acBtn();toast('🤖 Đã tắt tự chinh phạt — bạn tự điều khiển','#fc8')}
+ const z=MC.z,q={x:MC.x+(sx-W/2)/z,y:MC.y+(sy-H/2)/z},rs=Math.max(1,.45/z);{const n=dhN();if(n&&z>=.42&&Math.abs(q.x-pl.x)<95&&q.y<pl.y-60&&q.y>pl.y-72-n*15-14){dhTog();return}}pl.goF=null;if(G.ac){G.ac=0;acBtn();toast('🤖 Đã tắt tự chinh phạt — bạn tự điều khiển','#fc8')}
  if(WRLD(q.y)!=WRLD(pl.y)){toast('🌀 Muốn sang thế giới khác phải đi qua Thông đạo','#9ff0ff');return}
  if(!OPEN(contOf(q.x,q.y))){toast('🔒 '+LOCKT(contOf(q.x,q.y)),'#d9c2ff');return}
  const fg=G.fights.find(f=>Math.hypot(f.x-q.x,f.y-q.y)<45*rs);if(fg){pl.goS=pl.goP=null;pl.goF=fg;if(dist(pl,fg)<40)joinFight(fg);return}
