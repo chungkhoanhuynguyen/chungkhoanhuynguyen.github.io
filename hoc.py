@@ -208,6 +208,10 @@ for x in F:
             p.append(blk(b[0], b[1]))
     i = F.index(x); pv = F[i - 1] if i else None; nx = F[i + 1] if i + 1 < len(F) else None
     p.append(ytblk(YTM.get(x["slug"], [])))
+    _g = x.get("grp", 1)
+    _t = ("Đọc tới đây là anh chị đã nắm phần nền. Cách học nhanh nhất là thực hành với một khoản nhỏ, có người soát giúp lệnh đầu tiên. " if _g <= 2 else "Kiến thức trong bài dùng tốt nhất khi áp vào chính danh mục của mình. ")
+    if x["slug"] != "mo-tai-khoan-chung-khoan":
+        p.append(f'<div style="margin:22px 0;padding:14px 16px;border-left:4px solid #6b21a8;background:#6b21a80a;border-radius:8px">{_t}Anh chị mở tài khoản cùng Huy Nguyễn (VPS, VPBankS hoặc MBS) sẽ được hướng dẫn 1:1 qua Zalo và nhận nhận định thị trường mỗi ngày. <a href="/mo-tai-khoan-chung-khoan.html#chon">Xem cách mở tài khoản</a></div>')
     p.append("<h2>Câu hỏi thường gặp</h2>" + "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in x["faq"]))
     p.append('<div class="pn">' + (f'<a href="{FP(pv)}"><small>← Bài trước</small>{e(pv["title"])}</a>' if pv else '<span></span>') + (f'<a href="{FP(nx)}" style="text-align:right"><small>Bài tiếp theo →</small>{e(nx["title"])}</a>' if nx else '<a href="/f0/" style="text-align:right"><small>Hoàn thành lộ trình →</small>Về mục lục cẩm nang</a>') + '</div>')
     p.append('<h2>Đọc tiếp</h2><ul>' + "".join(f'<li><a href="{FP(FM[r])}">{e(FM[r]["title"])}</a></li>' for r in x["rel"] if r in FM) + f'<li><a href="{HP(x.get("grp", 1))}">Tất cả bài chủ đề {e(GN[x.get("grp", 1)])}</a></li><li><a href="/f0/tu-dien-thuat-ngu-chung-khoan.html">Từ điển thuật ngữ chứng khoán A–Z</a></li><li><a href="/hoc/">Thư viện bài học có video</a></li></ul>')

@@ -196,6 +196,7 @@ for s in SYMS:
     if nx: P.append(f"<h2>Nhận định của Huy Nguyễn về {e(s)}</h2><blockquote>{e(nx)}</blockquote>")
     P.append(ZBOX.format(s=e(s)))
     P.append(f'<div class="cta"><a class="btn b1" href="/#ma={e(s)}">Xem biểu đồ {e(s)}</a><a class="btn b2" href="/#hoidap">Hỏi đáp chuyên sâu về {e(s)}</a><a class="btn b2" href="https://zalo.me/0365188286" rel="noopener">Tư vấn 1:1</a></div>')
+    P.append(f'<div class="soft" style="margin:18px 0;padding:14px 16px;border-left:4px solid #6b21a8;background:#6b21a80a;border-radius:8px">Đang cầm {e(s)} hay đang cân nhắc mua? Số liệu ở trên giống nhau cho mọi người, nhưng quyết định thì phụ thuộc giá vốn và tỷ trọng của từng người. Anh chị mở tài khoản cùng Huy Nguyễn sẽ được trao đổi riêng về {e(s)} theo đúng danh mục của mình, và được hỗ trợ đặt lệnh 1:1. <a href="/mo-tai-khoan-chung-khoan.html#chon">Xem cách mở tài khoản (VPS, VPBankS, MBS)</a></div>')
     P.append("<h2>Câu hỏi thường gặp về cổ phiếu " + e(s) + "</h2>" + "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in faq))
     ng = SECM.get(s)
     if ng and ng not in ("Khác", "Tài chính"):
