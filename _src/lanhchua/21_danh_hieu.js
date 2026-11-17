@@ -17,9 +17,9 @@ function dhList(){const me=P0().fac,o=[];for(const d of DHL){try{if(d[5]())o.pus
  if(G.ch)G.ch.forEach((f,c)=>{if(f===me&&CHT[c])o.push({id:'ch'+c,n:CHT[c][0],ic:CHT[c][1],c:CHT[c][2],b:.10})});return o}
 function dhUpdate(quiet){if(!G||!G.L)return;DHS=-1;const L=dhList();G.dhm=1+L.reduce((a,d)=>a+d.b,0);G.dhv=L.sort((a,b)=>b.b-a.b).map(d=>[d.n,d.ic,d.c]);
  const old=new Set(G.dhid||[]),nw=L.filter(d=>!old.has(d.id));G.dhid=L.map(d=>d.id);
- if(!quiet&&old.size&&nw.length)for(const d of nw.slice(0,3)){toast(`🏅 Đạt danh hiệu <b style="color:${d.c}">${d.ic} ${d.n}</b><br>Giới hạn quân +${Math.round(d.b*100)}% (tổng ×${G.dhm.toFixed(2)})`,d.c,1);addLog(`🏅 Đạt danh hiệu ${d.n}.`,d.c)}}
+ if(!quiet&&old.size&&nw.length)for(const d of nw.slice(0,3)){toast(`🏅 Đạt danh hiệu <b style="color:${d.c}">${d.ic} ${d.n}</b><br>Giới hạn quân +${Math.round(d.b*100)}%`,d.c,1);addLog(`🏅 Đạt danh hiệu ${d.n}.`,d.c)}}
 const dhM=()=>G&&G.dhm||1;
-function dhMenu(){if(!G)return;dhUpdate(1);const L=dhList(),have=new Set(L.map(d=>d.id));let h=`<p>Mỗi danh hiệu tăng giới hạn quân dẫn theo. Hiện có <b>${L.length}</b> danh hiệu → giới hạn quân <b>×${dhM().toFixed(2)}</b>${G.cg?` · cảnh giới ×${cgM()}`:''}</p><div style="max-height:52vh;overflow:auto;font-size:13px;line-height:1.6">`;
+function dhMenu(){if(!G)return;dhUpdate(1);const L=dhList(),have=new Set(L.map(d=>d.id));let h=`<p>Mỗi danh hiệu tăng giới hạn quân dẫn theo. Hiện có <b>${L.length}</b> danh hiệu → ${G.lk?`giới hạn quân <b>${Math.round(plPct()*100)}%</b> sức mạnh chuẩn của tiên nhân (200% gốc + ${Math.round((dhM()-1)*100)}% danh hiệu + ${(G.cg||0)*10}% cảnh giới)`:`giới hạn quân <b>×${dhM().toFixed(2)}</b>${G.cg?` · cảnh giới ×${cgM()}`:''}`}</p><div style="max-height:52vh;overflow:auto;font-size:13px;line-height:1.6">`;
  h+=L.sort((a,b)=>b.b-a.b).map(d=>`<div><span style="color:${d.c}">${d.ic} <b>${d.n}</b></span> <small style="color:#9c9">+${Math.round(d.b*100)}%</small></div>`).join('');
  const lock=DHL.filter(d=>!have.has(d[0]));if(lock.length){h+='<div style="margin-top:6px;color:#889">— Chưa đạt —</div>';let shown=0;const seen=new Set();for(const d of lock){const g=d[0].replace(/\d+$/,'');if(seen.has(g))continue;seen.add(g);if(shown++>8)break;h+=`<div style="color:#778">🔒 ??? <small>(${d[6]} · +${Math.round(d[4]*100)}%)</small></div>`}}
  h+='</div>';menu('🏅 Danh hiệu',h,[['Đóng',close]])}

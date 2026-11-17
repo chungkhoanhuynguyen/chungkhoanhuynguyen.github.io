@@ -1,4 +1,4 @@
-function newDay(){G.day++;lsDay();dhUpdate();if(mode=='map')mySlim(1);const pl=P0(),cnt={};for(const s of S)cnt[s.fac]=(cnt[s.fac]||0)+1;
+function newDay(){G.day++;lsDay();dhUpdate();if(G.day%2==0)rfMerge();if(mode=='map')mySlim(1);const pl=P0(),cnt={};for(const s of S)cnt[s.fac]=(cnt[s.fac]||0)+1;
  for(const s of S){const M=LKM(),base=[40,25,12][s.type]*(1+.05*(cnt[s.fac]||0))*M;s.pool=Math.min(base*25|0,s.pool+Math.round(base));if(s.fac==pl.fac&&G.divine){const T=myGarT(s);if(tot(s.gar)<T){const k=Math.ceil(T*.05);s.gar.inf+=Math.ceil(k*.55);s.gar.arc+=Math.ceil(k*.3);s.gar.cav+=Math.ceil(k*.15)}continue}if(s.race>=9&&G.F[s.fac]&&G.F[s.fac].race>=9){const M2=PW(s.race);if(tot(s.gar)<[10000,6000,4000][s.type]*M2){s.gar.inf+=40*M2;s.gar.arc+=20*M2}}else if(tot(s.gar)<[4000,2500,1500][s.type]*M){s.gar.inf+=9*M;s.gar.arc+=6*M}}
  if(G.rev&&G.day==G.rev[0]){const o=G.rev[1];G.war[o][pl.fac]=G.war[pl.fac][o]=1;G.rev=null;terr();toast(`⚔ ${facN(o)} tuyên chiến với bạn — kẻ phản loạn!`,'#ff6a5a',1);SFX.war()}
  if(G.day%4==0){const INC=new Map();for(const p of G.L)if(p.kind=='rf'&&!p.dead)INC.set(p.to,(INC.get(p.to)||0)+tot(p.t));const pw=WRLD(pl.y),PLS=new Set(S.filter(s=>s.own===0&&s.pool>=40&&WRLD(s.y)==pw&&dist(s,pl)>=60).sort((a,b)=>dist(a,pl)-dist(b,pl)).slice(0,5));let BUD=rank(pl)[1]*.2;
@@ -21,7 +21,7 @@ if(G.day%20==0)JQ.push(()=>{const pl=P0();{const al=G.F.map((f,i)=>i).filter(i=>
 function playerDown(){const pl=P0();G.gold=Math.floor(G.gold*.6);const own=S.filter(s=>s.fac==pl.fac);const s=own.length?nearestOf(own,pl):nearestOf(S.filter(s=>!atWar(pl.fac,s.fac))||S,pl)||S[0];
  pl.x=s.x+18;pl.y=s.y+30;pl.tx=pl.x;pl.ty=pl.y;pl.t={inf:30,arc:10,cav:0};pl.safe=6;addLog(`Bạn bị đánh bại, rút về ${s.name} với 40 tàn quân.`,'#f77')}
 function income(){const pl=P0();return (S.filter(s=>s.own===0).reduce((a,s)=>a+[500,300,150][s.type],0)+V.filter(v=>v.own===0&&!v.burn).length*VINC+(G.F[pl.fac]&&!G.F[pl.fac].dead?60:0))*LKM()+tribute()}
-const wages=()=>{const t=P0().t;return Math.round(t.inf*.08+t.arc*.12+t.cav*.25)};
+const wages=()=>{const t=P0().t;return Math.round((t.inf*.08+t.arc*.12+t.cav*.25)/(G&&G.tang?TMv():1))};
 let ACT=0,ARW=0;const PC=()=>G&&G.L?contOf(P0().x,P0().y):-1;const showArrows=s=>{ARW=performance.now()+(s||6)*1000};const LBL=[],SMALL=()=>W<720||H<480;
 let UF=0;function upMap(dt){ACT=contOf(P0().x,P0().y);G.dayT+=dt;if(G.dayT>=4){G.dayT-=4;newDay()}
  if(G.xian){mkPortals();const pl=P0();if(pl.safe<=0)for(const q of G.portals)if(Math.abs(q.x-pl.x)<26&&Math.abs(q.y-pl.y)<20){usePortal(q);break}}
