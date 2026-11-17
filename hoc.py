@@ -200,6 +200,8 @@ for x in F:
             p.append(f'<h2 id="m{hi}">{e(b[1])}</h2>'); hi += 1; continue
         if b[0] == "cta":
             p.append(f'<div class="cta"><p>{e(b[1])}</p><a class="btn b1" href="{e(b[2])}" target="_blank" rel="noopener nofollow">{e(b[3])}</a></div>')
+        elif b[0] == "html":
+            p.append(b[1])
         elif b[0] == "img":
             p.append(f'<figure class="fimg"><img src="{e(b[1])}" alt="{e(b[2])}" loading="lazy" width="{b[4] if len(b)>4 else 1200}" height="{b[5] if len(b)>5 else 675}"><figcaption>{e(b[3])}</figcaption></figure>')
         else:

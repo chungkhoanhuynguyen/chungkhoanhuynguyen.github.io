@@ -206,17 +206,15 @@
   "root": true,
   "kw": "mở tài khoản chứng khoán",
   "title": "Mở tài khoản chứng khoán online 2026: hướng dẫn từng bước",
-  "desc": "Mở tài khoản chứng khoán online bằng CCCD trên điện thoại: điều kiện, 6 bước eKYC, phí, nạp tiền và cách chọn công ty chứng khoán.",
+  "desc": "Mở tài khoản chứng khoán online bằng CCCD trên điện thoại: điều kiện, 6 bước eKYC, phí, nạp tiền và chọn VPS hoặc VPBankS.",
   "body": [
    [
     "p",
     "<b>Mở tài khoản chứng khoán</b> là bước đầu tiên để mua bán cổ phiếu, chứng chỉ quỹ hay trái phiếu tại Việt Nam. Hiện nay anh chị có thể mở hoàn toàn online trên điện thoại bằng căn cước công dân, miễn phí, mất khoảng 5–10 phút, không cần đến quầy."
    ],
    [
-    "cta",
-    "Mở tài khoản cùng Huy Nguyễn để được hướng dẫn đặt lệnh đầu tiên và hỗ trợ 1:1 trong 3 tháng đầu.",
-    "https://openaccount.vps.com.vn/?MKTID=BJIE",
-    "Mở tài khoản chứng khoán ngay"
+    "html",
+    "<section id=\"chon\" style=\"margin:22px 0\"><h2 style=\"margin-bottom:6px\">Chọn công ty chứng khoán để mở tài khoản cùng Huy Nguyễn</h2><p>Cả hai lựa chọn đều mở online bằng CCCD, miễn phí, và đều được Huy Nguyễn hỗ trợ 1:1 như nhau. Anh chị chọn công ty nào tiện cho mình.</p><div style=\"display:block;padding:16px;border-radius:14px;border:1px solid #6b21a840;background:#6b21a80d;margin:10px 0\"><b style=\"font-size:18px\">Chứng khoán VPS</b><br>Mở qua link, người hỗ trợ Huy Nguyễn đã gắn sẵn, không cần nhập mã.<br><a href=\"https://openaccount.vps.com.vn/?MKTID=BJIE\" target=\"_blank\" rel=\"noopener nofollow\" style=\"display:inline-block;margin-top:10px;padding:10px 18px;border-radius:999px;font-weight:700;text-decoration:none;color:#fff;background:#6b21a8\">Mở tài khoản VPS</a></div><div style=\"display:block;padding:16px;border-radius:14px;border:1px solid #6b21a840;background:#6b21a80d;margin:10px 0\"><b style=\"font-size:18px\">Chứng khoán VPBank (VPBankS)</b><br>Tải ứng dụng <b>Chứng khoán VPBank</b>, đăng ký eKYC. Ở mục <b>“Có nhân viên chăm sóc?”</b> chọn <b>Có</b> và nhập mã môi giới <b>116C511997</b> – Nguyễn Huy Anh. <a href=\"#vpbanks\">Xem hướng dẫn chi tiết bên dưới</a>.<br><a href=\"https://zalo.me/0365188286\" target=\"_blank\" rel=\"noopener\" style=\"display:inline-block;margin-top:10px;padding:10px 18px;border-radius:999px;font-weight:700;text-decoration:none;color:#fff;background:#15803d\">Nhắn Zalo để được hướng dẫn mở VPBankS</a></div></section>"
    ],
    [
     "h2",
@@ -309,6 +307,35 @@
     873
    ],
    [
+    "h2",
+    "Mở tài khoản Chứng khoán VPBank (VPBankS) và nạp tiền"
+   ],
+   [
+    "html",
+    "<span id=\"vpbanks\"></span>"
+   ],
+   [
+    "ol",
+    [
+     "Tải ứng dụng <b>Chứng khoán VPBank</b> trên điện thoại.",
+     "Đăng ký tài khoản eKYC, nhập thông tin. Lưu ý chụp CCCD <b>ngang và rõ nét</b>.",
+     "Ở câu hỏi <b>“Có nhân viên chăm sóc?”</b> chọn <b>Có</b>, nhập mã <b>116C511997</b> – Nguyễn Huy Anh.",
+     "Hoàn tất và đăng nhập vào hệ thống."
+    ]
+   ],
+   [
+    "p",
+    "<b>Nạp tiền vào tài khoản VPBankS:</b> chuyển khoản tới <b>ngân hàng VPBank</b>, số tài khoản nhận = số 0 + số tài khoản chứng khoán + đuôi 1 (không margin) hoặc 6 (có margin). Ví dụ tài khoản chứng khoán 116C666888 thì chuyển vào 0116C6668881 hoặc 0116C6668886, rồi quay lại ứng dụng đặt lệnh như bình thường."
+   ],
+   [
+    "img",
+    "/img/mo-tai-khoan-vpbanks.jpg",
+    "Hướng dẫn mở tài khoản Chứng khoán VPBank (VPBankS) nhập mã môi giới 116C511997 Nguyễn Huy Anh và nạp tiền",
+    "Mở VPBankS: chọn “Có” nhân viên chăm sóc, nhập mã 116C511997 – Nguyễn Huy Anh. Nạp tiền: 0 + số tài khoản + 1 hoặc 6.",
+    900,
+    1123
+   ],
+   [
     "cta",
     "Mở tài khoản xong, nhắn Zalo 0365.188.286 để nhận mã kích hoạt khách hàng PRO trên web.",
     "https://openaccount.vps.com.vn/?MKTID=BJIE",
@@ -335,6 +362,10 @@
    [
     "Mở tài khoản qua link của Huy Nguyễn có cần nhập mã giới thiệu không?",
     "Không cần. Link đã gắn sẵn người hỗ trợ là Huy Nguyễn. Nếu anh chị đã có tài khoản VPS, có thể đổi người tư vấn trong ứng dụng SmartOne theo hướng dẫn ở trên."
+   ],
+   [
+    "Mở tài khoản Chứng khoán VPBank cùng Huy Nguyễn thế nào?",
+    "Tải ứng dụng Chứng khoán VPBank, đăng ký eKYC, ở mục \"Có nhân viên chăm sóc?\" chọn Có và nhập mã 116C511997 – Nguyễn Huy Anh."
    ]
   ],
   "rel": [
