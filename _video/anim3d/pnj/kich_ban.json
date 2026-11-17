@@ -1,0 +1,142 @@
+{
+"key": "PNJ1",
+"title": "Thật tệ khi chiếc nhẫn cầu hôn kéo theo nửa tiền cưới",
+"scenes": [
+{
+"id": "S01",
+"say": "Thật tệ khi chiếc nhẫn cầu hôn còn nguyên giá trị, mà nửa tiền cưới đã bay mất. Đêm hai mươi tháng mười, trong căn nhà trọ ở Phú Nhuận, Toàn Bớp ngồi trước màn hình điện thoại. Cổ phiếu anh ôm từ tháng ba vừa kịch trần, dư mua bốn triệu cổ. Thằng bạn nhắn: có người đang gom, vào nốt đi mày. Còn đúng hai trăm triệu cuối cùng. Toàn đặt ngón tay lên nút mua."
+},
+{
+"id": "S02",
+"say": "Khoan đã. Để em kể lại từ đầu, vì câu chuyện này bắt đầu từ một ngày rất vui."
+},
+{
+"id": "S03",
+"say": "Toàn Bớp, ba mươi mốt tuổi, thợ điện. Cả hẻm gọi là Toàn Bớp vì cái tật hay dọa: láo nháo anh cắt điện cả khu. Dọa vậy thôi, chứ nhà ai chập điện lúc nửa đêm, Toàn đều xách đồ nghề chạy sang. Bảy năm leo cột điện, Toàn dành dụm được bốn trăm triệu, đủ cưới Hằng."
+},
+{
+"id": "S04",
+"say": "Hằng làm ở một tiệm vàng đầu chợ Bà Chiểu, cả xóm gọi là Hằng Hột Xoàn, vì cô nhìn viên đá là đoán được bao nhiêu ly. Mẹ Hằng, bà Tư, chỉ dặn đúng một câu: con lấy ai cũng được, miễn đừng có nợ."
+},
+{
+"id": "S05",
+"say": "Đầu tháng ba năm hai nghìn không trăm hai mươi sáu, Toàn dắt Hằng vào một cửa hàng trang sức lớn mua nhẫn. Cửa hàng đông nghịt, khách xếp hàng chờ. Toàn nhìn quanh rồi nghĩ: bán đắt như tôm tươi thế này, mua nhẫn thì mua một lần, sao không mua luôn cổ phiếu của nó."
+},
+{
+"id": "S06",
+"say": "Tối đó, Toàn mở tài khoản, chuyển hai trăm triệu, mua cổ phiếu PNJ. Giá lúc ấy quanh tám mươi ba nghìn. Đỉnh cao nhất là tám mươi tư nghìn sáu, mới từ cuối tháng một. Toàn tính nhẩm: đến ngày cưới, lãi đủ trả tiền tiệc, còn dư đi trăng mật."
+},
+{
+"id": "S07",
+"say": "Hằng hỏi: anh bỏ nửa tiền cưới vào một mã thôi à? Toàn cười: em yên tâm, công ty bán vàng bán kim cương, doanh thu mấy chục nghìn tỷ, năm nào cũng lãi, chia cổ tức đều. Có sập thì cả thị trường sập trước."
+},
+{
+"id": "S08",
+"say": "Hai tháng đầu, đúng là yên tâm thật. Doanh thu sáu tháng đầu năm của công ty tăng gần năm mươi phần trăm. Toàn khoe khắp hẻm. Nhưng Toàn chưa biết, có một thứ còn quan trọng hơn doanh thu với một cửa hàng kim cương. Đó là niềm tin."
+},
+{
+"id": "S08B",
+"say": "Cuối tháng năm, một nữ đại gia rất nổi tiếng trên mạng mở livestream, nói kim cương mua ở vài tiệm không khớp mã số kiểm định. Video lan khắp nơi. Ngay sáng hôm sau, tiệm vàng chỗ Hằng làm đông nghẹt người, nhưng không ai mua. Ai cũng cầm nhẫn đến đòi bán lại."
+},
+{
+"id": "S08C",
+"say": "Ông chủ tiệm của Hằng mua lại được mười ngày thì hết tiền mặt, phải treo biển tạm ngưng thu đổi. Theo báo chí, nhiều tiệm nhỏ ở Sài Gòn cũng đóng cửa hoặc ngưng thu mua, có nơi hơn chín mươi phần trăm khách mang kim cương đến bán lại. Hằng về kể, Toàn chỉ cười: tiệm nhỏ thôi em, công ty anh mua là công ty lớn, khác."
+},
+{
+"id": "S08D",
+"say": "Ngày hai mươi tháng sáu, công an triệt phá một đường dây buôn lậu hơn hai mươi tám nghìn viên kim cương vào Việt Nam, khởi tố hai mươi hai người. Cổ phiếu của Toàn bắt đầu đỏ. Toàn vẫn tự nhủ: không liên quan."
+},
+{
+"id": "S09",
+"say": "Đầu tháng bảy, tin trên báo: giám đốc đơn vị giám định kim cương thuộc chính công ty Toàn đang cầm cổ phiếu bị bắt, liên quan đúng đường dây ấy. Công ty khẳng định lô kim cương đó không liên quan hệ thống bán hàng. Nhưng người mua nhẫn thì không đọc kỹ đến dòng ấy."
+},
+{
+"id": "S10",
+"say": "Sáng hôm sau, bà Tư gọi điện, giọng run: con ơi, cái nhẫn của con Hằng có sao không? Cả xóm đang rủ nhau ra cửa hàng bán lại kìa. Toàn chạy ra xem. Hàng người xếp dài, ai cũng cầm hộp nhẫn, hộp bông tai, hỏi đúng một câu: thật hay giả?"
+},
+{
+"id": "S11",
+"say": "Cổ phiếu giảm sàn hai phiên liên tiếp. Đến phiên sáu tháng bảy, giá còn năm mươi tư nghìn sáu, dư bán hơn mười một triệu cổ phiếu mà không ai mua. Hai trăm triệu của Toàn còn khoảng một trăm ba mươi triệu."
+},
+{
+"id": "S12",
+"say": "Hằng nói nhỏ: hay mình bán đi anh, giữ lại chừng nào hay chừng ấy. Toàn gạt đi: bán lúc này là bán đáy. Công ty lớn thế, tin xấu nhất thời thôi. Thậm chí Toàn còn tính vay thêm để mua bình quân giá. Hằng giữ tay anh lại: mẹ em dặn rồi, không có nợ."
+},
+{
+"id": "S13",
+"say": "Rồi những con số thật bắt đầu hiện ra. Để giữ khách, công ty mở chính sách thu đổi. Chỉ riêng tháng bảy, giá trị hàng khách mang trả lại gần sáu nghìn tỷ đồng. Hàng bán ra rồi, giờ quay về kho, kèm theo khoản lỗ."
+},
+{
+"id": "S14",
+"say": "Bạn thấy đấy, giống như anh bán bánh mì cả ngày, tối khách mang hết bánh quay lại đòi tiền. Doanh thu trên giấy vẫn còn, nhưng tiền trong két thì chảy ngược ra."
+},
+{
+"id": "S15",
+"say": "Cuối tháng chín, công ty trình kế hoạch mới. Giả định tám mươi phần trăm hàng đã bán có thể bị khách bán lại hoặc đổi, nên dự kiến trích lập dự phòng khoảng bảy nghìn không trăm bảy mươi mốt tỷ đồng. Cả năm hai nghìn không trăm hai mươi sáu, kế hoạch lỗ sau thuế khoảng sáu nghìn hai trăm bảy mươi tỷ, mức lỗ kỷ lục. Cổ tức tiền mặt còn lại của năm: không đồng."
+},
+{
+"id": "S16",
+"say": "Giá cổ phiếu xuống ba mươi ba nghìn, thấp nhất kể từ cuối năm hai nghìn không trăm hai mươi. Hai trăm triệu của Toàn còn khoảng tám mươi triệu. Tối đó, Toàn không dám về nhà bà Tư ăn cơm."
+},
+{
+"id": "S16B",
+"say": "Anh chị nhìn biểu đồ này cho dễ hình dung. Từ đỉnh tám mươi tư nghìn sáu cuối tháng một, qua livestream cuối tháng năm, sự cố giám định đầu tháng bảy, kế hoạch lỗ cuối tháng chín. Đến giữa tháng mười một, giá chỉ còn khoảng mười bốn nghìn rưỡi, mất khoảng tám mươi ba phần trăm."
+},
+{
+"id": "S17",
+"say": "Bà Tư vẫn hỏi, như mọi lần: thằng Toàn đâu, sao không qua? Hằng nói dối: anh ấy trực điện mẹ ạ. Rồi cô ra hiên ngồi một mình, xoay xoay chiếc nhẫn trên tay."
+},
+{
+"id": "S18",
+"say": "Ngày hai mươi mốt tháng mười, đại hội cổ đông bất thường. Quý ba, công ty lỗ hai trăm năm mươi tám tỷ đồng, đấy là chưa tính khoản dự phòng bảy nghìn tỷ. Tiền và tiền gửi từ khoảng ba nghìn bảy trăm tỷ cuối tháng sáu, xuống còn bảy trăm bảy mươi tỷ cuối tháng chín. Để tái cấu trúc, công ty cần huy động khoảng tám nghìn tỷ, dự kiến phát hành riêng lẻ tối đa năm trăm năm mươi triệu cổ phiếu mới."
+},
+{
+"id": "S19",
+"say": "Toàn hỏi Huy, cậu bạn cùng hẻm làm trong ngành chứng khoán: phát hành thêm thì sao? Huy rót cho Toàn cốc trà đá, rồi nói: hình dung cái bánh pizza nhà ông chia tám miếng, ông giữ một miếng. Giờ nhà cần tiền, cắt thêm thành mười sáu miếng để bán cho người mới. Miếng của ông vẫn đấy, nhưng nhỏ đi một nửa. Người ta gọi là pha loãng."
+},
+{
+"id": "S20",
+"say": "Và đến đây, mình quay lại đêm hai mươi tháng mười, trước hôm đại hội. Cổ phiếu đã về quanh mười tám nghìn, bỗng kịch trần lên mười chín nghìn bảy trăm năm mươi. Dư mua bốn triệu cổ, khối ngoại mua ròng khoảng ba triệu rưỡi cổ. Thằng bạn Phú Dê Già nhắn liên tục: đáy rồi, có tay to gom, all in đi. Hai trăm triệu ban đầu của Toàn giờ chỉ còn khoảng bốn mươi tám triệu. Toàn đặt ngón tay lên nút mua. Hai trăm triệu cuối cùng, tiền đặt tiệc cưới."
+},
+{
+"id": "S20B",
+"say": "Nếu Toàn bấm nút đêm ấy thì sao? Anh chị nhìn biểu đồ. Sau phiên kịch trần, giá giảm tiếp gần như mỗi tuần. Ngày mười tháng mười một xuống thấp nhất mười ba nghìn ba. Phiên mười sáu tháng mười một đóng cửa mười bốn nghìn bốn trăm năm mươi. Mua ở giá trần hôm đó, đến nay lỗ thêm khoảng hai mươi bảy phần trăm. Hai trăm triệu tiền tiệc sẽ còn khoảng một trăm bốn mươi sáu triệu."
+},
+{
+"id": "S21",
+"say": "Đúng lúc ấy, điện thoại rung. Hằng nhắn một tấm ảnh: tờ giấy kiểm định của chiếc nhẫn. Kèm một dòng: anh ơi, nhẫn em mang đi kiểm lại rồi, kim cương thật. Báo cũng đăng: mẫu lấy ngẫu nhiên, gửi kiểm định độc lập, một trăm phần trăm là kim cương thiên nhiên. Toàn nhìn tấm ảnh rất lâu."
+},
+{
+"id": "S22",
+"say": "Hôm sau, Toàn sang nhà bà Tư, kể hết. Bà Tư im lặng một lúc, rồi hỏi: thế viên đá có lỗi gì không con? Toàn lắc đầu. Bà nói: vậy là cái sai không nằm ở viên đá. Nó nằm ở chỗ con bỏ nửa tiền cưới vào một chỗ, mà chỗ đó lại sống bằng lòng tin của người khác."
+},
+{
+"id": "S23",
+"say": "Em là Huy. Câu chuyện của Toàn là minh hoạ, còn mọi con số về doanh nghiệp trong phim đều lấy từ báo chí và tài liệu công bố. Em rút ra bốn điều, nói kỹ một chút."
+},
+{
+"id": "S24",
+"say": "Một. Tiền có hạn dùng, như tiền cưới, tiền học, tiền nhà trong một đến hai năm tới, không đặt vào cổ phiếu. Cổ phiếu có thể giảm sáu mươi, bảy mươi phần trăm trong vài tháng, kể cả công ty lớn. Tiền đó phải nằm ở chỗ chắc chắn còn nguyên đến ngày cần."
+},
+{
+"id": "S25",
+"say": "Hai. Không dồn một mã. Với số vốn đầu tư thật sự, chia ra nhiều mã ở các ngành khác nhau, mỗi mã một phần nhỏ. Một mã gặp sự cố, cả danh mục vẫn đứng được."
+},
+{
+"id": "S26",
+"say": "Ba. Doanh nghiệp tốt chưa chắc là cổ phiếu an toàn. Với ngành bán lòng tin như vàng, kim cương, ngân hàng, bảo hiểm, chỉ một tin xấu cũng có thể làm khách quay lưng, nhanh hơn mọi báo cáo tài chính. Ngoài doanh thu, hãy hỏi: nếu niềm tin mất, chuyện gì xảy ra với dòng tiền?"
+},
+{
+"id": "S27",
+"say": "Bốn. Trước khi bắt đáy, phải biết mình đang chờ điều gì. Với trường hợp này, ít nhất có ba câu hỏi chưa có lời giải. Đợt phát hành tám nghìn tỷ chốt giá bao nhiêu, ai mua. Tỷ lệ khách trả hàng thực tế có thấp hơn giả định tám mươi phần trăm không, để khoản dự phòng được hoàn lại. Và biên lợi nhuận gộp, đang từ mười tám phẩy năm phần trăm xuống khoảng mười phần trăm, có quay lại hay không. Một phiên kịch trần chưa trả lời được câu nào trong ba câu đó, và biểu đồ sau ngày hai mươi tháng mười đã cho thấy điều ấy."
+},
+{
+"id": "S28",
+"say": "Còn Toàn? Toàn không bấm nút mua. Anh bán phần cổ phiếu còn lại, gộp với hai trăm triệu cuối, làm một đám cưới nhỏ ở quê Hằng. Chiếc nhẫn vẫn trên tay cô dâu, kim cương thật. Chỉ có bài học là đắt hơn giá chiếc nhẫn."
+},
+{
+"id": "S29",
+"say": "Còn anh chị, nếu đang cầm một mã giảm sâu, anh chị đang chờ điều gì để giữ tiếp, hay để mua thêm? Bình luận cho em biết nhé. Ai muốn em xem giúp danh mục, cứ nhắn em qua web chungkhoanhuynguyen.com."
+}
+]
+}
