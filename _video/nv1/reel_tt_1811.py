@@ -32,7 +32,7 @@ R1 = dict(key='TT1811NHA', tieu_de='Căn hộ 6 tỷ bằng 27 năm lương hai 
     the=dict(loai='lon', tieu='CĂN HỘ HẠNG C MỞ BÁN MỚI', nguon='Savills, VnBusiness 15/10/2026', dong=[['GIẢM 27%', 124, 'do'], ['MỖI NĂM TỪ 2022', 58, 'trang']])),
   C('70% TRÊN 6 TỶ', 'Lý do thứ hai là dự án mới đa số là hàng đắt. Quý 3 năm nay, 70% số căn bán được ở Hà Nội có giá trên 6 tỷ đồng.',
     the=dict(loai='lon', tieu='CĂN BÁN ĐƯỢC Ở HÀ NỘI QUÝ 3/2026', nguon='Savills, VietnamFinance 16/10/2026', dong=[['70%', 130, 'vang'], ['CÓ GIÁ TRÊN 6 TỶ', 58, 'trang']])),
-  C('NĂM NAY GIÁ ĐÃ GIẢM', 'Nhưng có một cú lật. Quý 3 năm nay, giá chào bán bình quân toàn Hà Nội giảm 6% so với cùng kỳ, giá căn hộ cũ giảm 8%.',
+  C('NĂM NAY GIÁ ĐÃ GIẢM', 'Nhưng năm nay lại có một cú lật bất ngờ. Quý 3 năm nay, giá chào bán bình quân toàn Hà Nội giảm 6% so với cùng kỳ, giá căn hộ cũ giảm 8%.',
     the=dict(loai='cot', tieu='GIÁ CĂN HỘ HÀ NỘI, SO CÙNG KỲ (%)', nguon='CBRE, Doanh nhân Pháp luật 16/10/2026', hang=[['Bán mới', -6], ['Căn hộ cũ', -8]], noi=[1], dv='%')),
   C('LÃI VAY 12 ĐẾN 15%', 'Lý do là lãi vay mua nhà đã lên 12 đến 15%. Người mua chậm lại, số căn bán được giảm gần một nửa so với cùng kỳ.',
     the=dict(loai='lon', tieu='LÃI THẢ NỔI VAY MUA NHÀ', nguon='SSI Research, Công Luận 6/11/2026', dong=[['12 ĐẾN 15%', 120, 'do'], ['CĂN BÁN ĐƯỢC GIẢM 48%', 56, 'trang']])),
