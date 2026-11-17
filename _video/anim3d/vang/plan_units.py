@@ -19,7 +19,7 @@ for root, _, fs in sorted(os.walk(os.path.join(A, "src"))):
 for f in ["render_units.mjs", "package.json"]: h.update(open(os.path.join(A, f), "rb").read())
 COMMON = h.hexdigest()
 segs = []
-for m in re.finditer(r'\{ id: "(S\d+)", shots: \[(.*?)\] \},?\n', plan, re.S):
+for m in re.finditer(r'\{ id: "(S\d+[A-Z]?)", shots: \[(.*?)\] \},?\n', plan, re.S):
     sid, body = m.group(1), m.group(2)
     shots = [(int(x.group(1)), x.start()) for x in re.finditer(r'^\s*\[(\d+), \(\) => (?:D3|CD|FQ|TQ|PH|SH|LAD)\b', body, re.M)]
     for k, (j, st) in enumerate(shots):
