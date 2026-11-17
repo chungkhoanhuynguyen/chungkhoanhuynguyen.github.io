@@ -28,7 +28,7 @@ const rel = (id: string, j: number, ref: number) => sc(id).sens[Math.min(j, sc(i
 type Plan = { id: string; shots: [number, (a: number) => Seg][] };
 
 // thời điểm (giây, tính từ đầu cảnh quay bắt đầu ở câu k) khi câu j của cảnh id bắt đầu
-const at = (id: string, k: number, j: number) => { const s = sc(id); return s.sens[j].a - (k === 0 ? s.a : s.sens[k].a - 0.12); };
+const at = (id: string, k: number, j: number) => { const s = sc(id), q = (i: number) => s.sens[Math.min(i, s.sens.length - 1)]; return q(j).a - (k === 0 ? s.a : q(k).a - 0.12); };
 // ---------- blocking ----------
 // Phố: máy nhìn về +z nên +x nằm bên TRÁI màn. Phòng (room): máy nhìn về −z nên +x nằm bên PHẢI màn. side = hướng mặt trên MÀN (+1 quay phải).
 const HX = HOME_X + 3.6;                                   // vỉa hè trước nhà Quang (phố Lò Đúc), tránh xe máy dựng cửa
@@ -125,7 +125,7 @@ const Compare: React.FC<{ t: number; rAt: number }> = ({ t, rAt }) => { const co
     <div style={{ position: "absolute", bottom: 175, width: "100%", textAlign: "center", fontSize: 26, color: "rgba(255,255,255,.55)" }}>Hạn mức bảo hiểm tiền gửi: Quyết định 32/2021/QĐ-TTg</div></AbsoluteFill>; };
 const Clues: React.FC<{ t: number; title: string; items: { text: string; at: number; ok?: string }[]; src?: string }> = ({ t, title, items, src }) =>
   <AbsoluteFill style={{ fontFamily: F, justifyContent: "center", alignItems: "center" }}><Bg t={t} hue="night" />
-    <div style={{ width: 1400 }}><div style={{ fontSize: 46, fontWeight: 900, color: "#ffd23f", letterSpacing: 3, marginBottom: 30, opacity: sm(t / 0.3) }}>🔍 {title}</div>
+    <div style={{ width: 1400, position: "relative" }}><div style={{ fontSize: 46, fontWeight: 900, color: "#ffd23f", letterSpacing: 3, marginBottom: 30, opacity: sm(t / 0.3) }}>{title}</div>
       {items.map((x, i) => { const a = sm((t - x.at) / 0.35), ok = x.ok && t > x.at + 1.2; return <div key={i} style={{ display: "flex", alignItems: "center", gap: 30, marginTop: 24, padding: "22px 34px", borderRadius: 20, background: "rgba(255,210,63,.08)", border: "3px solid " + (ok ? "#5dff9b" : "rgba(255,210,63,.6)"), opacity: a, transform: `translateX(${(1 - a) * 80}px)` }}>
         <div style={{ fontSize: 64, fontWeight: 900, color: "#ffd23f", width: 70 }}>{i + 1}</div><div style={{ fontSize: 48, fontWeight: 800, color: "#fff", flex: 1 }}>{x.text}</div>
         {ok && <div style={{ fontSize: 40, fontWeight: 900, color: "#5dff9b" }}>{x.ok}</div>}</div>; })}
@@ -254,7 +254,8 @@ type GSeg = Seg & { a: number; b: number; id: string; n: number };
 export const SEGS: GSeg[] = (() => {
   const out: GSeg[] = [];
   for (const p of PLAN) { const S0 = sc(p.id);
-    p.shots.forEach(([j, mk], k) => { const a = k === 0 ? S0.a : S0.sens[j].a - 0.12, nb = k + 1 < p.shots.length ? S0.sens[p.shots[k + 1][0]].a - 0.12 : S0.b; out.push({ ...mk(a), a, b: nb, id: p.id, n: k }); }); }
+    const q = (i: number) => S0.sens[Math.min(i, S0.sens.length - 1)];
+    p.shots.forEach(([j, mk], k) => { const a = k === 0 ? S0.a : q(j).a - 0.12, nb = k + 1 < p.shots.length ? q(p.shots[k + 1][0]).a - 0.12 : S0.b; out.push({ ...mk(a), a, b: nb, id: p.id, n: k }); }); }
   return out;
 })();
 const fr = (s: number) => Math.round(s * FPS);

@@ -28,7 +28,7 @@ const rel = (id: string, j: number, ref: number) => sc(id).sens[Math.min(j, sc(i
 type Plan = { id: string; shots: [number, (a: number) => Seg][] };
 
 // thời điểm (giây, tính từ đầu cảnh quay bắt đầu ở câu k) khi câu j của cảnh id bắt đầu
-const at = (id: string, k: number, j: number) => { const s = sc(id); return s.sens[j].a - (k === 0 ? s.a : s.sens[k].a - 0.12); };
+const at = (id: string, k: number, j: number) => { const s = sc(id), q = (i: number) => s.sens[Math.min(i, s.sens.length - 1)]; return q(j).a - (k === 0 ? s.a : q(k).a - 0.12); };
 // ---------- blocking ----------
 // Phố: máy nhìn về +z nên +x nằm bên TRÁI màn. Phòng (room): máy nhìn về −z nên +x nằm bên PHẢI màn. side = hướng mặt trên MÀN (+1 quay phải).
 const HX = HOME_X + 3.6;                                   // vỉa hè trước nhà Quang (phố Lò Đúc), tránh xe máy dựng cửa
@@ -117,13 +117,13 @@ const pcam = (x = 0): [[V, V, number], [V, V, number]] => [[[x, 1.45, -3.2], [x,
 const walkers = (n: number, z = 1.6): Cast[] => Array.from({ length: n }, (_, i) => C("c" + (40 + i), [i % 2 ? 2.6 : -2.2, 0, z + i * 0.35], (t: number) => ({ ...P(i % 3 ? "neutral" : "smile", { acc: i % 2 ? ["box"] : ["phone"] })(t), mode: "stroll", phase: (t * 1.4 + i * 0.3) % 1, side: i % 2 ? 1 : -1 }), [i % 2 ? -2.4 : 2.8, 0, z + i * 0.35]));
 const Port: React.FC<{ t: number; rows: { m: string; v: string; col: string; at: number }[]; title: string }> = ({ t, rows, title }) =>
   <AbsoluteFill style={{ fontFamily: F, justifyContent: "center", alignItems: "center" }}><Bg t={t} hue="navy" />
-    <div style={{ width: 1200 }}><div style={{ fontSize: 56, fontWeight: 900, color: "#fff", marginBottom: 30 }}>{title}</div>
+    <div style={{ width: 1200, position: "relative" }}><div style={{ fontSize: 56, fontWeight: 900, color: "#fff", marginBottom: 30 }}>{title}</div>
       <div style={{ display: "flex", gap: 30, justifyContent: "space-between" }}>{rows.map((r, i) => { const a = sm((t - r.at) / 0.35);
         return <div key={i} style={{ flex: 1, padding: "40px 10px", borderRadius: 24, background: "rgba(255,255,255,.07)", border: `4px solid ${r.col}`, textAlign: "center", opacity: a, transform: `scale(${1.2 - 0.2 * a})` }}><div style={{ fontSize: 40, color: "#dfe6f8", fontWeight: 800 }}>{r.m}</div><div style={{ fontSize: 96, fontWeight: 900, color: r.col }}>{r.v}</div></div>; })}</div></div></AbsoluteFill>;
 const CF = (a: string, ea: Expr, b: string, eb: Expr, oa: PO = {}, ob: PO = {}) => S("cafe", "room", ...roomTwo2, [C(a, [LX, 0, RZ], P(ea, { side: 1, mode: "stand", ...oa })), C(b, [NX, 0, RZ], P(eb, { side: -1, mode: "stand", ...ob }))], RM);
 const Clues: React.FC<{ t: number; title: string; items: { text: string; at: number; ok?: string }[]; src?: string }> = ({ t, title, items, src }) =>
   <AbsoluteFill style={{ fontFamily: F, justifyContent: "center", alignItems: "center" }}><Bg t={t} hue="night" />
-    <div style={{ width: 1400 }}><div style={{ fontSize: 46, fontWeight: 900, color: "#ffd23f", letterSpacing: 3, marginBottom: 30, opacity: sm(t / 0.3) }}>🔍 {title}</div>
+    <div style={{ width: 1400, position: "relative" }}><div style={{ fontSize: 46, fontWeight: 900, color: "#ffd23f", letterSpacing: 3, marginBottom: 30, opacity: sm(t / 0.3) }}>{title}</div>
       {items.map((x, i) => { const a = sm((t - x.at) / 0.35), ok = x.ok && t > x.at + 1.2; return <div key={i} style={{ display: "flex", alignItems: "center", gap: 30, marginTop: 24, padding: "22px 34px", borderRadius: 20, background: "rgba(255,210,63,.08)", border: "3px solid " + (ok ? "#5dff9b" : "rgba(255,210,63,.6)"), opacity: a, transform: `translateX(${(1 - a) * 80}px)` }}>
         <div style={{ fontSize: 64, fontWeight: 900, color: "#ffd23f", width: 70 }}>{i + 1}</div><div style={{ fontSize: 48, fontWeight: 800, color: "#fff", flex: 1 }}>{x.text}</div>
         {ok && <div style={{ fontSize: 40, fontWeight: 900, color: "#5dff9b" }}>{x.ok}</div>}</div>; })}
@@ -225,7 +225,8 @@ type GSeg = Seg & { a: number; b: number; id: string; n: number };
 export const SEGS: GSeg[] = (() => {
   const out: GSeg[] = [];
   for (const p of PLAN) { const S0 = sc(p.id);
-    p.shots.forEach(([j, mk], k) => { const a = k === 0 ? S0.a : S0.sens[j].a - 0.12, nb = k + 1 < p.shots.length ? S0.sens[p.shots[k + 1][0]].a - 0.12 : S0.b; out.push({ ...mk(a), a, b: nb, id: p.id, n: k }); }); }
+    const q = (i: number) => S0.sens[Math.min(i, S0.sens.length - 1)];
+    p.shots.forEach(([j, mk], k) => { const a = k === 0 ? S0.a : q(j).a - 0.12, nb = k + 1 < p.shots.length ? q(p.shots[k + 1][0]).a - 0.12 : S0.b; out.push({ ...mk(a), a, b: nb, id: p.id, n: k }); }); }
   return out;
 })();
 const fr = (s: number) => Math.round(s * FPS);
