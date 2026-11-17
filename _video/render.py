@@ -494,6 +494,13 @@ try:
     m = re.findall(r"I:\s+(-?[\d.]+) LUFS", lu); lv = float(m[-1]) if m else -99
     if lv < -24 or lv > -9: qc.append("LỖI âm lượng tổng %.1f LUFS (chuẩn -16 đến -12)" % lv)
     if b[-1] < 300: qc.append("CẢNH BÁO video chỉ %.0f giây (kênh chính nên 8–12 phút)" % b[-1])
+    try:  # QL1 18/11 (học OpenMontage): khung đen giữa video + rủi ro "trình chiếu PowerPoint" (quá nhiều đoạn hình đứng yên)
+        _bd = subprocess.run(["ffmpeg", "-hide_banner", "-i", out, "-vf", "blackdetect=d=0.4:pix_th=0.08,freezedetect=n=0.003:d=2", "-an", "-f", "null", "-"], capture_output=True, text=True).stderr
+        for _st, _du in re.findall(r"black_start:([\d.]+) black_end:[\d.]+ black_duration:([\d.]+)", _bd):
+            if 1.0 < float(_st) < b[-1] - 2: qc.append("LỖI khung đen giữa video tại %.1fs (%.1fs)" % (float(_st), float(_du)))
+        _fz = sum(float(x) for x in re.findall(r"freeze_duration: ([\d.]+)", _bd))
+        if b[-1] and _fz / b[-1] > 0.4: qc.append("CẢNH BÁO rủi ro trình chiếu: %.0f%% thời lượng hình đứng yên ≥2s – thêm chuyển động/thẻ số/nhân vật" % (100 * _fz / b[-1]))
+    except Exception as _e: qc.append("CẢNH BÁO không đo được khung đen/đứng hình: %s" % _e)
     if not os.path.exists(os.path.join(OUT, key + ".srt")): qc.append("LỖI thiếu file phụ đề .srt")
     try:  # QL1 11/11: tự bắt lỗi số trên phụ đề (vd "6.000.001 tháng", "tháng 15", chữ số dính chữ)
         _tx = open(os.path.join(OUT, key + ".srt"), encoding="utf-8").read()
