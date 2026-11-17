@@ -257,7 +257,8 @@ const GLV=[[0,0,800],[1,300,1000],[2,1000,2000],[3,3000,3500],[5,8000,6000],[8,2
 function genLv(p){const c=p._gc;if(c&&c[0]==G.day&&c[1]==(p.ren|0))return c;const n=fiefs(p)+Math.floor(vills(p)/2),rn=p.ren||0;let l=0;for(let i=0;i<GLV.length;i++)if(n>=GLV[i][0]||rn>=GLV[i][1])l=i;if(p.vuong)l=Math.max(l,6);return p._gc=[G.day,p.ren|0,l,n]}
 function genRank(p){const q=genLv(p),l=q[2],n=q[3],era=G.tang?2:G.lk?1:0;p._gl=l;
  if(!era&&l==0&&p.merc&&!n&&(p.ren||0)<100)return['Lính đánh thuê',800,'🗡','#9aa0a8'];
- let cap=GLV[l][2]*(G.lk?5:1);if(G.tang)cap=Math.max(cap*TMv(),10000*TMv()*5);return[GLN[era][l],Math.round(cap),GLI[l],GLC[l]]}
+ const cap=era?genBase()*(.5+.15*l):GLV[l][2];return[GLN[era][l],Math.round(cap),GLI[l],GLC[l]]}
+const genBase=()=>8000*(G.lk?5:1)*(G.tang?TMv():1);
 function rank(p){if(p.kind=='lord'&&G&&G.L&&G.L[0]&&p.fac==G.L[0].fac&&isMyKing())return genRank(p);let r=rank0(p);if(!G||p.kind=='rf')return r;if(G.lk)r=[LKN[r[0]]||r[0].replace('Thần Đế','Chuẩn Đế'),r[1]*5,r[2],r[3]];if(p.kind=='pl'&&(G.cg||G.dhm>1))r=[r[0],Math.round(r[1]*cgM()*dhM()),r[2],r[3]];return r}
 function rank0(p){if(p.kind=='bandit')return['Thủ lĩnh phỉ',700,'☠','#999'];if(p.kind=='rf')return['Viện binh',1e9,'➕','#9cf'];const f=G.F[p.fac];
   if(p.kind=='exile')return['Hoàng tử vong quốc',800,'🥀','#c9a8e0'];
