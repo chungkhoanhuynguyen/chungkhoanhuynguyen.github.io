@@ -1,0 +1,26 @@
+name: Thu A-B giong (VieNeu vs OmniVoice)
+on:
+  workflow_dispatch:
+  push:
+    paths: ["_video/voice_ab/**", ".github/workflows/voice_ab.yml"]
+jobs:
+  ab:
+    strategy: {fail-fast: false, matrix: {m: [A, B]}}
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 1}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+      - if: matrix.m == 'A'
+        run: pip install -q vieneu "onnxruntime==1.22.1" numpy soundfile
+      - if: matrix.m == 'B'
+        run: |
+          pip install -q torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+          pip install -q omnivoice faster-whisper soundfile
+      - run: python _video/voice_ab/ab.py ${{ matrix.m }}
+        env: {HN_VOICE_JSON: "${{ secrets.HN_VOICE_JSON }}"}
+      - uses: actions/upload-artifact@v4
+        with: {name: "ab_${{ matrix.m }}", path: ab_out, retention-days: 7}
