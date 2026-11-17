@@ -1,5 +1,6 @@
 function mkP(o){return Object.assign({id:G.L.length,name:'',fac:0,kind:'lord',x:0,y:0,t:Z3(),tx:0,ty:0,goS:null,goP:null,to:-1,th:rnd(0,2),dead:0,safe:2,face:1,mv:0},o)}
-let PSC=1;function pushP(o){let slot=-1;const N=G.L.length;for(let k=0;k<Math.min(N,400);k++){const i=1+(PSC+k)%Math.max(1,N-1),p=G.L[i];if(p&&p.kind=='rf'&&p.dead==-1&&p.id>0){slot=i;PSC=i+1;break}}if(slot<0)PSC=(PSC+400)%Math.max(1,N);const p=mkP(o);if(slot>0){p.id=slot;G.L[slot]=p}else{p.id=G.L.length;G.L.push(p)}p.tx=p.x;p.ty=p.y;if(G.xian&&p.kind=='rf'&&G.L[0]&&p.fac==G.L[0].fac){const o=G.L[p.to];if(o&&!o.dead&&o.fac==p.fac){add(o.t,p.t);p.t=Z3();p.dead=-1;p.goS=p.goP=null}}return p}
+let PSC=1;function pushP(o){let slot=-1;const N=G.L.length;for(let k=0;k<Math.min(N,400);k++){const i=1+(PSC+k)%Math.max(1,N-1),p=G.L[i];if(p&&p.kind=='rf'&&p.dead==-1&&p.id>0){slot=i;PSC=i+1;break}}if(slot<0)PSC=(PSC+400)%Math.max(1,N);const p=mkP(o);if(slot>0){p.id=slot;G.L[slot]=p}else{p.id=G.L.length;G.L.push(p)}p.tx=p.x;p.ty=p.y;if(G.xian&&p.kind=='rf'&&G.L[0]&&p.fac==G.L[0].fac){const o=G.L[p.to];if(o&&!o.dead&&o.fac==p.fac)rfTp(p,o,1600)}return p}
+function rfTp(p,o,lim){if(dist(o,p)<=lim&&contOf(o.x,o.y)==contOf(p.x,p.y))return;const a=Math.random()*6.283,r=rnd(1800,2600);p.x=cl(o.x+Math.cos(a)*r,60,WW-60);p.y=cl(o.y+Math.sin(a)*r*.7,60,WH-60);if(contOf(p.x,p.y)!=contOf(o.x,o.y)){p.x=o.x-r*.8;p.y=o.y}p.tx=p.x;p.ty=p.y;p.tp=1}
 function landPt(){for(let i=0;i<800;i++){const x=rnd(200,WW-200),y=rnd(200,WH-200);if(OPEN(contOf(x,y))&&okLand(x,y)&&(!G.L[0]||Math.hypot(G.L[0].x-x,G.L[0].y-y)>500)&&S.every(s=>dist(s,{x,y})>150))return{x,y}}return{x:WW/2,y:WH/2}}
 function setupFac(fi2,k){const f=G.F[fi2];let gi=ri(0,40);const RC=RACE[f.race||0],gn=()=>f.wm!=null?wmName(f):f.race?RC.giv[(gi++)%RC.giv.length]+' '+f.sur:f.sur+' '+RC.giv[(gi++)%RC.giv.length];
  const DK=f.race==4,DV=f.race>=5&&f.race<9,DX=f.race>=9;S.filter(s=>s.f0==k).forEach(s=>{s.fac=fi2;s.pool=[300,200,100][s.type];s.gar=mix((DX?[ri(7000,9000),ri(4500,5500),ri(2800,3500)][s.type]:[1800,1000,600][s.type])*PW(f.race));
@@ -45,6 +46,7 @@ function progress(){if(!G.open)G.open=[0,1,2,3,4];
  if(!G.open.includes(4)&&[0,1,2,3].filter(c=>held(c)>=.75).length>=2){G.open.push(4);terr();toast('💀 VÙNG ĐẤT CHẾT hiện ra ở phía Đông!<br>Bạn đã làm chủ 2 châu lục.','#c58cff',1);addLog('💀 Mở Vùng Đất Chết.','#c58cff')}
  if(!G.divine&&G.open.includes(4)&&held(4)>=.5)unlockDivine();
  if(G.divine&&!G.xian&&[5,6,7,8].filter(c=>held(c)>=.75).length>=2)unlockXian();
+ if(G.xian&&!G.lsOn)lsInit();
  if(G.xian&&!G.lk&&[9,10,11].some(c=>held(c)>=.75))unlockLK();
  tangCheck()}
 function unlockLK(){G.lk=1;const m=t=>{if(t)KS.forEach(k=>t[k]=Math.round(t[k]*5))};for(const p of G.L)if(!p.dead)m(p.t);for(const s of S){m(s.gar);s.pool=Math.round((s.pool||0)*5)}for(const v of V)v.pool=Math.round((v.pool||0)*5);SFX.fan();

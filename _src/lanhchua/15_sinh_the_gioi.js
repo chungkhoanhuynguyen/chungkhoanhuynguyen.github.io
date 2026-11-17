@@ -90,7 +90,7 @@ const RK=['Lính đánh thuê','Hoàng tử vong quốc','Hiệp sĩ','Nam tư�
 function vills(p){let n=0;for(const v of V)if(v.own===p.id)n++;return n}
 function fiefs(p){let n=0;for(const s of S)if(s.own===p.id)n++;return n}
 const LKN={'Hiệp sĩ':'Luyện Khí','Nam tước':'Trúc Cơ','Tử tước':'Kim Đan','Bá tước':'Nguyên Anh','Hầu tước':'Hóa Thần','Công tước':'Luyện Hư','Vương':'Đại Thừa','Lính đánh thuê':'Tán tu','Vua':'Tiên Vương','Hoàng đế':'Tiên Đế','Thủ lĩnh phỉ':'Ma tu','Trúc Cơ':'Kim Đan Chân Nhân','Nguyên Anh':'Hóa Thần Lão Tổ','Địa Tiên':'Thiên Tiên','Nhân Tiên':'Kim Tiên','Thiên Vương':'Thiên Vương','Thiên Tôn':'Thiên Tôn'};
-function rank(p){const r=rank0(p);if(!G||!G.lk||p.kind=='rf')return r;return[LKN[r[0]]||r[0].replace('Thần Đế','Chuẩn Đế'),r[1]*5,r[2],r[3]]}
+function rank(p){let r=rank0(p);if(!G||p.kind=='rf')return r;if(G.lk)r=[LKN[r[0]]||r[0].replace('Thần Đế','Chuẩn Đế'),r[1]*5,r[2],r[3]];if(p.kind=='pl'&&G.cg)r=[r[0],Math.round(r[1]*cgM()),r[2],r[3]];return r}
 function rank0(p){if(p.kind=='bandit')return['Thủ lĩnh phỉ',700,'☠','#999'];if(p.kind=='rf')return['Viện binh',1e9,'➕','#9cf'];const f=G.F[p.fac];
   if(p.kind=='exile')return['Hoàng tử vong quốc',800,'🥀','#c9a8e0'];
  if(p.kind=='pl'&&G.tang&&isMyKing())return G.dd?['Đại Đế',200000*TMv(),'🐲','#ffe066']:['Cửu Ngũ Chí Tôn',100000*TMv(),'🐉','#ffd23a'];

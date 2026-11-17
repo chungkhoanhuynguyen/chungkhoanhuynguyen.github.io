@@ -42,7 +42,7 @@ const clearSave=()=>{try{localStorage.removeItem(KEY)}catch(e){}};
 function speed(p){const n=tot(p.t)||1;let s=p.kind=='bandit'?64:p.kind=='rf'?115:(54+p.t.cav/n*36)*(1-Math.min(.45,n/22000));if(p.kind=='pl')s*=1.2;return s*TSP[tAt(p.x,p.y)]}
 const nearestOf=(a,p)=>a.slice().sort((x,y)=>dist(x,p)-dist(y,p))[0];
 function think(p){if(p.inF)return;if(p.kind=='exile'){if(Math.hypot(p.tx-p.x,p.ty-p.y)<10){const h=p.home||p;p.tx=cl(h.x+rnd(-320,320),60,WW-60);p.ty=cl(h.y+rnd(-260,260),60,WH-60);if(hW(p.tx,p.ty)<.36){p.tx=p.x;p.ty=p.y}}return}const st=str(p.t);
- if(p.kind=='rf'){const o=G.L[p.to];if(!o||o.dead||o.fac!=p.fac){const own=S.filter(s=>s.fac==p.fac);if(!own.length){p.dead=-1;return}p.goP=null;p.goS=nearestOf(own,p)}else{p.goP=o;p.goS=null}return}
+ if(p.kind=='rf'){const o=G.L[p.to];if(!o||o.dead||o.fac!=p.fac){const own=S.filter(s=>s.fac==p.fac);if(!own.length){p.dead=-1;return}p.goP=null;p.goS=nearestOf(own,p)}else{if(G.xian&&p.fac==P0().fac)rfTp(p,o,4500);p.goP=o;p.goS=null}return}
  if(p.kind=='bandit'){const v=G.L.find(e=>!e.dead&&e.kind!='bandit'&&e.kind!='pl'&&dist(e,p)<260&&str(e.t)*1.4<st);if(v){p.goP=v;return}
   if(p.goP&&(p.goP.dead||dist(p.goP,p)>400))p.goP=null;
   if(!p.goP&&(Math.hypot(p.tx-p.x,p.ty-p.y)<10||Math.random()<.08)){p.tx=cl(p.x+rnd(-300,300),100,WW-100);p.ty=cl(p.y+rnd(-300,300),100,WH-100)}return}
@@ -99,7 +99,7 @@ function arrive(p,s){if(p.kind=='pl'){if(G.ac){if(s.fac==p.fac){acRecruit(s);ret
  if(s.fac==p.fac){const n=Math.min(s.pool,Math.max(0,rank(p)[1]-tot(p.t)));if(n>0){s.pool-=n;add(p.t,mix(n))}
   if(tot(s.gar)<[300,200,120][s.type]&&tot(p.t)>300)add(s.gar,take(p.t,100));return}
  if(!atWar(p.fac,s.fac))return;const f=G.fights.find(f=>f.s==s.id);if(f){if(f.af==p.fac){f.A.push(p.id);p.inF=1}return}startFight(p,null,s)}
-function capture(s,p){const old=s.fac,pl=P0(),me=p.kind=='pl';s.fac=p.fac;s.own=p.id;V.forEach(v=>{if(v.p==s.id){if(v.own===0&&!me)toast(`💔 Mất đất phong ${v.name}`,'#ff6a5a');v.own=p.id}});s.gar=take(p.t,Math.ceil(tot(p.t)*.25));s.pool=Math.floor(s.pool/2);
+function capture(s,p){const old=s.fac,pl=P0(),me=p.kind=='pl';if(old!=p.fac)lsGain(s,p);s.fac=p.fac;s.own=p.id;V.forEach(v=>{if(v.p==s.id){if(v.own===0&&!me)toast(`💔 Mất đất phong ${v.name}`,'#ff6a5a');v.own=p.id}});s.gar=take(p.t,Math.ceil(tot(p.t)*.25));s.pool=Math.floor(s.pool/2);
  if(me)toast(`🏰 Bạn chiếm được <b>${s.name}</b>! Đây là lãnh địa riêng của bạn.`,'#7dff8a');
  else if(p.fac==pl.fac)toast(`🏰 ${pname(p)} chiếm ${s.name} cho phe ta`,'#7dff8a');
  else if(old==pl.fac)toast(`💔 Phe ta mất ${s.name} vào tay ${facN(p.fac)}`,'#ff6a5a');
