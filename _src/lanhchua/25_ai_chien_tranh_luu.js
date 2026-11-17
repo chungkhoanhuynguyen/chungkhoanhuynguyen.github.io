@@ -42,7 +42,7 @@ const clearSave=()=>{try{localStorage.removeItem(KEY)}catch(e){}};
 function speed(p){const n=tot(p.t)||1;let s=p.kind=='bandit'?64:p.kind=='rf'?115:(54+p.t.cav/n*36)*(1-Math.min(.45,n/22000));if(p.kind=='pl')s*=1.2;return s*TSP[tAt(p.x,p.y)]}
 const nearestOf=(a,p)=>a.slice().sort((x,y)=>dist(x,p)-dist(y,p))[0];
 function think(p){if(p.inF)return;if(p.kind=='exile'){if(Math.hypot(p.tx-p.x,p.ty-p.y)<10){const h=p.home||p;p.tx=cl(h.x+rnd(-320,320),60,WW-60);p.ty=cl(h.y+rnd(-260,260),60,WH-60);if(hW(p.tx,p.ty)<.36){p.tx=p.x;p.ty=p.y}}return}const st=str(p.t);
- if(p.kind=='rf'){const o=G.L[p.to];if(!o||o.dead||o.fac!=p.fac){const own=S.filter(s=>s.fac==p.fac);if(!own.length){p.dead=-1;return}p.goP=null;p.goS=nearestOf(own,p)}else{if(G.xian&&p.fac==P0().fac)rfTp(p,o,4500);p.goP=o;p.goS=null}return}
+ if(p.kind=='rf'){const o=G.L[p.to];if(!o||o.dead||o.fac!=p.fac){const own=S.filter(s=>s.fac==p.fac);if(!own.length){p.dead=-1;return}p.goP=null;p.goS=nearestOf(own,p)}else{p.goP=o;p.goS=null}return}
  if(p.kind=='bandit'){const v=G.L.find(e=>!e.dead&&e.kind!='bandit'&&e.kind!='pl'&&dist(e,p)<260&&str(e.t)*1.4<st);if(v){p.goP=v;return}
   if(p.goP&&(p.goP.dead||dist(p.goP,p)>400))p.goP=null;
   if(!p.goP&&(Math.hypot(p.tx-p.x,p.ty-p.y)<10||Math.random()<.08)){p.tx=cl(p.x+rnd(-300,300),100,WW-100);p.ty=cl(p.y+rnd(-300,300),100,WH-100)}return}
