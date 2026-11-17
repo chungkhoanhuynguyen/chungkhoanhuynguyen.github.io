@@ -15,6 +15,13 @@ export const BOXER: Outfit = { jacket: "#e23b2e", pants: "#1f2430", boots: "#f4f
 export const XOI: Outfit = { jacket: "#8a3fa0", pants: "#2e2c30", boots: "#5a3b2a", hat: "hair", hair: "#241a18", belt: null, buttons: "#e8d8f0", build: "stout", skin: "#f1c9a0", long: true };
 /** nhân vật phim #2 (Hùng Xa Lộ) – tra theo khoá cast */
 export const OUT: Record<string, { o: Outfit; h: number; seed: number }> = {
+  kieu: { o: { jacket: "#ff7eb6", pants: "#f4f1e6", boots: "#f3e8dc", hat: "hair", hair: "#5a3322", belt: null, buttons: "#ffffff", skin: "#ffe0c6", long: true }, h: 1.6, seed: 131 },
+  chien: { o: { jacket: "#ff7a1a", pants: "#2b2b33", boots: "#f4f4f2", hat: "hair", hair: "#7a3e1c", belt: null, buttons: "#2b2b33", skin: "#edc29c" }, h: 1.72, seed: 137 },
+  thuong: { o: { jacket: "#f4f6f8", pants: "#2b4f8a", boots: "#3a2a20", hat: "hair", hair: "#141215", belt: null, buttons: "#2b4f8a", skin: "#f6d2b2", long: true }, h: 1.58, seed: 139 },
+  thuyto: { o: { jacket: "#9b59b6", pants: "#1f2430", boots: "#f3e8dc", hat: "hair", hair: "#2a1d18", belt: null, buttons: "#ffffff", skin: "#e9c29a", long: true, build: "stout" }, h: 1.6, seed: 149 },
+  lannhi: { o: { jacket: "#7fd3ff", pants: "#f4f1e6", boots: "#f3e8dc", hat: "hair", hair: "#1c1416", belt: null, buttons: "#ffffff", skin: "#ffe0c6", long: true }, h: 1.45, seed: 151 },
+  hanhdo: { o: { jacket: "#2b2b2b", pants: "#1f2430", boots: "#c8202f", hat: "hair", hair: "#c8202f", belt: null, buttons: "#c8202f", skin: "#f6d2b2", long: true }, h: 1.62, seed: 157 },
+  oanh: { o: { jacket: "#f2d36b", pants: "#111111", boots: "#111111", hat: "hair", hair: "#1c1416", belt: null, buttons: "#111111", skin: "#f1cfa8", long: true }, h: 1.78, seed: 163 },
   thay5: { o: { jacket: "#f4f6f8", pants: "#1f2a44", boots: "#3a2a20", hat: "hair", hair: "#141215", belt: null, buttons: "#1f2a44", skin: "#f1cfa8" }, h: 1.74, seed: 211 },
   phu5: { o: { jacket: "#6b4fa0", pants: "#1f2430", boots: "#111", hat: "hair", hair: "#3a2a20", belt: null, buttons: "#f2d36b", skin: "#e8c39e", moustache: "#2a1d18", build: "stout" }, h: 1.7, seed: 31 },
   qha5: { o: { jacket: "#4f6d8f", pants: "#2b3346", boots: "#3a2a20", hat: "cap", cap: "#d8212f", belt: null, buttons: "#e6ebf0", skin: "#efc9a2" }, h: 1.68, seed: 71 },
