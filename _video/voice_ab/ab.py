@@ -15,7 +15,8 @@ def norm(i, o):
 mode = sys.argv[1]
 if mode == "A":
     from vieneu import Vieneu
-    v = json.loads(os.environ["HN_VOICE_JSON"])
+    vj = os.environ.get("HN_VOICE_JSON")
+    v = json.loads(vj) if vj else hncodec.load(os.path.join(ROOT, "_video", "engine", "giong.bin"))
     V = {"speaker_emb": np.asarray(v["speaker_emb"], np.float32), "codes": np.asarray(v["codes"], dtype=v.get("codes_dtype", "int64"))}
     tts = Vieneu()
     for i, c in enumerate(CAU, 1):
@@ -25,7 +26,9 @@ if mode == "A":
         norm("t2.wav", f"{OUT}/A_vieneu_{i}.wav"); print("A", i, flush=True)
 else:
     from faster_whisper import WhisperModel
-    seg, _ = WhisperModel("medium", device="cpu", compute_type="int8").transcribe("ref.wav", language="vi", beam_size=5)
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", "ref.ogg", "-ac", "1", "-ar", "16000", "ref16.wav"], check=True)
+    w16, _ = sf.read("ref16.wav", dtype="float32")
+    seg, _ = WhisperModel("medium", device="cpu", compute_type="int8").transcribe(w16, language="vi", beam_size=5)
     rt = " ".join(s.text.strip() for s in seg).strip(); print("REF_TEXT:", rt, flush=True)
     open(f"{OUT}/ref_text.txt", "w").write(rt)
     import torch
