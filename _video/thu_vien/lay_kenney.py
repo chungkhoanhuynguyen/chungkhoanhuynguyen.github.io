@@ -15,7 +15,9 @@ for loai in ("kenney_3d", "kenney_audio"):
     for slug in NG[loai]:
         try:
             h = get(f"https://kenney.nl/assets/{slug}")
-            z = re.findall(r'href="([^"]+\.zip)"', h) or re.findall(r'(https?://[^"\' <>]+\.zip)', h) or re.findall(r'(/media/[^"\' <>]+\.zip)', h)
+            di = re.findall(r"data-download-id='([0-9a-f]+)'", h)
+            z = [json.loads(get(f"https://kenney.nl/download-link/{di[0]}"))["url"]] if di else []
+            z = z or re.findall(r'href="([^"]+\.zip)"', h) or re.findall(r'(https?://[^"\' <>]+\.zip)', h) or re.findall(r'(/media/[^"\' <>]+\.zip)', h)
             if not z:
                 bao.append(dict(goi=slug, loi="khong thay zip")); print("KHONG ZIP", slug, len(h))
                 if slug == NG[loai][0]:
