@@ -9,20 +9,30 @@
 h1{font-size:22px;margin:0 0 4px}.sub{color:var(--mo);font-size:14px;margin:0 0 20px}
 .the{background:var(--tim2);border-radius:16px;padding:20px;margin-bottom:16px}
 .ngay{color:var(--vang);font-weight:800;font-size:15px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.mn{color:var(--mo);font-weight:800;font-size:15px;margin:28px 0 10px}
 pre{white-space:pre-wrap;font:500 16px/1.6 'Be Vietnam Pro',system-ui,sans-serif;margin:0}
 button{min-height:44px;padding:0 18px;border:0;border-radius:12px;background:var(--vang);color:var(--tim);font:800 15px 'Be Vietnam Pro',sans-serif;cursor:pointer;transition:transform .12s ease}
 button:active{transform:scale(.97)}button.ok{background:#5dff9b}
-details summary{cursor:pointer;color:var(--mo);margin:24px 0 12px;font-weight:700}
-.cu pre{font-size:15px;color:#e2dcf5}
+form{display:flex;gap:10px;flex-wrap:wrap}input{flex:1;min-width:180px;min-height:44px;border-radius:12px;border:2px solid #5a3fa0;background:#1f0f45;color:#fff;padding:0 14px;font:600 16px 'Be Vietnam Pro',sans-serif}
+.loi{color:#ff8a8a;margin-top:10px;font-size:14px;min-height:20px}
 </style></head><body><div class="wrap">
-<h1>Nhận định thị trường</h1><p class="sub">Tin sáng khoảng 8h30 · Kết phiên khoảng 15h30 · Trang riêng</p>
-<div id="moi"><div class="the">Đang tải…</div></div>
-<details><summary>Các phiên trước</summary><div id="cu" class="cu"></div></details>
+<h1>Nhận định thị trường</h1><p class="sub">Tin sáng khoảng 8h30 · Kết phiên khoảng 15h30 · 15 phiên gần nhất · Trang riêng</p>
+<div id="khoa" class="the"><form id="f"><input id="mk" type="password" placeholder="Mật khẩu" autocomplete="current-password"><button>Mở</button></form><div class="loi" id="loi"></div></div>
+<div id="nd"></div>
 </div>
 <script>
-const the=(x,nut)=>{const d=document.createElement('div');d.className='the';const h=document.createElement('div');h.className='ngay';h.textContent=((x.buoi||'chieu')==='sang'?'Sáng ':'Kết phiên ')+x.phien.split('-').reverse().join('/');
-if(nut){const b=document.createElement('button');b.textContent='Sao chép';b.onclick=async()=>{try{await navigator.clipboard.writeText(x.tin);b.textContent='Đã chép ✓';b.classList.add('ok');setTimeout(()=>{b.textContent='Sao chép';b.classList.remove('ok')},1800)}catch(e){b.textContent='Không chép được'}};h.appendChild(b)}
-const p=document.createElement('pre');p.textContent=x.tin;d.append(h,p);return d};
-fetch('data.json?'+Date.now()).then(r=>r.json()).then(ds=>{const m=document.getElementById('moi');m.innerHTML='';if(!ds.length){m.textContent='Chưa có dữ liệu';return}
-const n=ds.length>1&&ds[1].phien===ds[0].phien?2:1;ds.slice(0,n).forEach(x=>m.appendChild(the(x,true)));const c=document.getElementById('cu');ds.slice(n).forEach(x=>c.appendChild(the(x,true)))}).catch(()=>{document.getElementById('moi').innerHTML='<div class="the">Chưa tải được dữ liệu.</div>'});
+const b64=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
+async function giai(mk){const r=await fetch('data.enc.json?'+Date.now());const e=await r.json();
+ const k0=await crypto.subtle.importKey('raw',new TextEncoder().encode(mk),'PBKDF2',false,['deriveKey']);
+ const k=await crypto.subtle.deriveKey({name:'PBKDF2',salt:b64(e.salt),iterations:e.vong,hash:'SHA-256'},k0,{name:'AES-GCM',length:256},false,['decrypt']);
+ const p=await crypto.subtle.decrypt({name:'AES-GCM',iv:b64(e.iv)},k,b64(e.ct));return JSON.parse(new TextDecoder().decode(p))}
+const ngay=p=>p.split('-').reverse().join('/');
+function the(x){const d=document.createElement('div');d.className='the';const h=document.createElement('div');h.className='ngay';h.textContent=(x.buoi==='sang'?'Sáng ':'Kết phiên ')+ngay(x.phien);
+ const b=document.createElement('button');b.textContent='Sao chép';b.onclick=async()=>{try{await navigator.clipboard.writeText(x.tin);b.textContent='Đã chép ✓';b.classList.add('ok');setTimeout(()=>{b.textContent='Sao chép';b.classList.remove('ok')},1800)}catch(e){b.textContent='Không chép được'}};
+ h.appendChild(b);const p=document.createElement('pre');p.textContent=x.tin;d.append(h,p);return d}
+function hien(ds){document.getElementById('khoa').style.display='none';const nd=document.getElementById('nd');nd.innerHTML='';let cu=null;
+ ds.forEach((x,i)=>{if(x.phien!==cu){if(i){const m=document.createElement('div');m.className='mn';m.textContent='Ngày '+ngay(x.phien);nd.appendChild(m)}cu=x.phien}nd.appendChild(the(x))})}
+async function mo(mk,luu){try{const ds=await giai(mk);if(luu)try{localStorage.setItem('nd_mk',mk)}catch(e){}hien(ds)}catch(e){document.getElementById('loi').textContent='Sai mật khẩu hoặc chưa tải được dữ liệu'}}
+document.getElementById('f').onsubmit=e=>{e.preventDefault();mo(document.getElementById('mk').value,true)};
+let s=null;try{s=localStorage.getItem('nd_mk')}catch(e){}if(s)mo(s,false);
 </script></body></html>
