@@ -4,7 +4,7 @@
 // Chỗ đứng nói chuyện chuẩn: người trái màn x = -0.7, người phải màn x = 0.7, z = 0.8.
 import * as THREE from "three";
 import { rng } from "../pho/paint";
-import { lam, glow, box, cyl, stool } from "./sets";
+import { lam, glow, box, cyl, stool, motorbike } from "./sets";
 import { NOINK } from "../pho/ink";
 
 const F = "'Be Vietnam Pro', 'DejaVu Sans', Arial, sans-serif";
@@ -149,4 +149,47 @@ export function buildCanHo(kind: "tragop" | "vip", night = true) {
     const ao = box(1.4, 0.02, 0.02, lam("#888"), false); ao.position.set(-0.5, 2.3, -2.8); g.add(ao); for (let k = 0; k < 4; k++) { const sh2 = box(0.3, 0.45, 0.02, lam(SHIRT[k + 2]), false); sh2.position.set(-1 + k * 0.35, 2.05, -2.78); g.add(sh2); } }
   const pl = new THREE.PointLight(vip ? "#fff1d8" : "#ffe6b8", vip ? 6 : 4.5, 10, 1.6); pl.position.set(0, 2.5, 1); g.add(pl);
   return { g: sh(g) };
+}
+
+// ---------- TIỆM SỬA XE MÁY HÀ NỘI (DN1811 – tiệm của Hùng Xa Lộ) ----------
+// Dựng xoay 180°: tường sau nằm ở z = +3 để dùng chung máy quay kiểu ảnh nền (máy ở -z nhìn về +z). Chừa trống giữa tiệm cho nhân vật (x -1..1, z 0..1.5).
+export function buildSuaXe() {
+  const g = new THREE.Group(), r = rng(31); shell(g, 11, 8, 4.4, "#f1e6c8", "#9a958d", "#e8dcbc");
+  // vạch gạch men xanh chân tường + vết dầu trên sàn
+  const tile = box(11, 1.1, 0.04, lam("#5f8f7a")); tile.position.set(0, 0.55, -2.88); g.add(tile);
+  for (let i = 0; i < 9; i++) { const st = new THREE.Mesh(new THREE.CircleGeometry(0.15 + r() * 0.3, 14), new THREE.MeshLambertMaterial({ color: "#5d5953", transparent: true, opacity: 0.55 })); st.rotation.x = -Math.PI / 2; st.position.set(-4.5 + r() * 9, 0.006, -2.4 + r() * 5); g.add(st); }
+  g.add(at(signBoard("SỬA XE HÙNG XA LỘ", 5.2, 1.0, "#1f5fae", "#ffffff", "Sửa chữa · Bảo dưỡng · Thay dầu · Vá lốp · Mua bán xe cũ", true), 0, 3.15, -2.85));
+  // bảng treo dụng cụ
+  const peg = box(2.4, 1.3, 0.05, lam("#3b3f46")); peg.position.set(3, 2.1, -2.84); g.add(peg);
+  for (let i = 0; i < 14; i++) { const tl = box(0.06, 0.32 + r() * 0.25, 0.03, lam(["#c9cdd3", "#d8212f", "#f2c230", "#2b6cc4"][i % 4])); tl.position.set(2 + (i % 7) * 0.32, 2.35 - Math.floor(i / 7) * 0.55, -2.8); tl.rotation.z = (r() - 0.5) * 0.4; g.add(tl); }
+  // bàn thợ + hộp đồ đỏ + máy nén khí
+  const bench = box(2.4, 0.9, 0.8, lam("#6b5a48")); bench.position.set(3, 0.45, -2.35); g.add(bench);
+  const tb = box(0.7, 0.35, 0.35, lam("#c8202f")); tb.position.set(2.4, 1.08, -2.35); g.add(tb);
+  const vise = box(0.25, 0.2, 0.2, lam("#2b6cc4")); vise.position.set(3.7, 1.0, -2.2); g.add(vise);
+  const comp = cyl(0.28, 0.28, 0.9, lam("#d8212f"), 14); comp.rotation.z = Math.PI / 2; comp.position.set(4.6, 0.35, -1.6); g.add(comp);
+  // kệ dầu nhớt
+  const shelf = box(1.8, 0.05, 0.4, lam("#9aa3ad")); for (const y of [1.3, 1.9]) { const sh0 = shelf.clone(); sh0.position.set(-1.6, y, -2.7); g.add(sh0);
+    for (let k = 0; k < 8; k++) { const can = cyl(0.08, 0.08, 0.3, lam(["#1d8a4a", "#d8212f", "#f2c230", "#1f2a44"][(k + Math.round(y)) % 4]), 10); can.position.set(-2.35 + k * 0.21, y + 0.17, -2.7); g.add(can); } }
+  // lốp xe: chồng lốp + lốp treo tường
+  const tyre = (x: number, y: number, z: number, rr = 0.3, stand = false) => { const t = new THREE.Mesh(new THREE.TorusGeometry(rr, 0.1, 8, 20), lam("#1d1d22")); if (!stand) t.rotation.x = Math.PI / 2; t.position.set(x, y, z); t.castShadow = true; g.add(t); };
+  for (const [x, z, n] of [[-4.4, -2.3, 6], [-3.7, -2.4, 5], [-4.5, -1.5, 4]] as [number, number, number][]) for (let k = 0; k < n; k++) tyre(x, 0.1 + k * 0.2, z);
+  for (let k = 0; k < 5; k++) tyre(-4.6 + k * 0.62, 2.2, -2.75, 0.24, true);
+  // 2 xe đang sửa: 1 xe số trên bục nâng, 1 xe ga dựng bên trái
+  const lift = box(1.0, 0.25, 2.0, lam("#f2c230")); lift.position.set(3.3, 0.12, -0.6); g.add(lift);
+  const b1 = motorbike("#c8202f", "wave"); b1.position.set(3.3, 0.25, -0.6); g.add(b1);
+  const b2 = motorbike("#f4f4f2", "vision"); b2.position.set(-3.4, 0, 0.6); b2.rotation.y = 0.5; g.add(b2);
+  const b3 = motorbike("#1f2a44", "wave"); b3.position.set(-4.4, 0, 1.9); b3.rotation.y = -0.3; g.add(b3);
+  // bàn trà nhỏ + ghế nhựa + ấm chén (chỗ Hùng rót nước)
+  const tt = box(0.7, 0.04, 0.5, lam("#c9a46a")); tt.position.set(1.9, 0.45, 0.4); g.add(tt);
+  for (const [a, b] of [[-0.3, -0.2], [0.3, -0.2], [-0.3, 0.2], [0.3, 0.2]]) { const l = box(0.04, 0.45, 0.04, lam("#8a6a48")); l.position.set(1.9 + a, 0.22, 0.4 + b); g.add(l); }
+  const pot = new THREE.Mesh(new THREE.SphereGeometry(0.1, 12, 10), lam("#e9e6df")); pot.position.set(1.8, 0.56, 0.4); g.add(pot);
+  for (const x of [1.98, 2.1]) { const c = cyl(0.035, 0.03, 0.06, lam("#f4f1e6"), 8); c.position.set(x, 0.5, 0.48); g.add(c); }
+  for (const [x, z, c] of [[2.6, 0.5, "#2b6cc4"], [1.3, 1.1, "#d8212f"]] as [number, number, string][]) { const st = stool(c); st.position.set(x, 0, z); g.add(st); }
+  // giấy SANG NHƯỢNG dán ở cột cửa (chi tiết thứ nhất)
+  const paper = signBoard("SANG NHƯỢNG", 0.9, 0.6, "#fffbe8", "#c8202f", "Liên hệ chủ tiệm"); paper.position.set(5.38, 1.7, 2.2); paper.rotation.y = -Math.PI / 2; g.add(paper);
+  // đèn tuýp + quạt treo tường
+  for (const x of [-2.5, 0, 2.5]) { const tube = box(1.2, 0.05, 0.08, glow(2.2, 2.3, 2.4), false); tube.position.set(x, 4.25, -2.7); g.add(tube); }
+  const fan = cyl(0.35, 0.35, 0.05, lam("#e9e6df"), 12); fan.position.set(-5.3, 3.0, -0.5); fan.rotation.z = Math.PI / 2; g.add(fan);
+  const pl = new THREE.PointLight("#fff4dc", 7, 13, 1.5); pl.position.set(0, 3.6, 0.5); g.add(pl);
+  sh(g); g.rotation.y = Math.PI; return { g };
 }

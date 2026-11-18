@@ -13,12 +13,12 @@ import { buildRoom, buildStreet, buildShop, buildHue, buildBenThanh, buildHoGuom
 import { applyLight, GR, LK, L } from "./look";
 import { F } from "./cards";
 import { buildExtras } from "./extras";
-import { buildCafe, buildPho, buildNet, buildCanHo } from "./sets2";
+import { buildCafe, buildPho, buildNet, buildCanHo, buildSuaXe } from "./sets2";
 import { buildLop, buildTan, buildSo, buildSa, buildAthens, buildUruk, buildTenoch, buildThao, buildPlaza, buildXuong, drawBoard as drawChalk, drawScore, Board } from "../ltc5/sets_ltc";
 
 export type V = [number, number, number];
-export type SetKey = "room" | "street" | "streetday" | "shop" | "hue" | "bt" | "lake" | "villa" | "field" | "fieldfever" | "korea" | "bank" | "photo" | "lop" | "tan" | "so" | "sa" | "athens" | "uruk" | "tenoch" | "thao" | "plaza" | "xuong" | "cafe" | "pho" | "net" | "netsp" | "canho" | "canhovip";
-export const OFF: Record<SetKey, number> = { room: RX, street: SX, streetday: SX, shop: IX, hue: HX, bt: BX, lake: GX, villa: VX, field: FX, fieldfever: FX, korea: KX, bank: NX, photo: 0, lop: 0, tan: 0, so: 0, sa: 0, athens: 0, uruk: 0, tenoch: 0, thao: 0, plaza: 0, xuong: 0, cafe: 0, pho: 0, net: 0, netsp: 0, canho: 0, canhovip: 0 };
+export type SetKey = "room" | "street" | "streetday" | "shop" | "hue" | "bt" | "lake" | "villa" | "field" | "fieldfever" | "korea" | "bank" | "photo" | "lop" | "tan" | "so" | "sa" | "athens" | "uruk" | "tenoch" | "thao" | "plaza" | "xuong" | "cafe" | "pho" | "net" | "netsp" | "canho" | "canhovip" | "suaxe";
+export const OFF: Record<SetKey, number> = { room: RX, street: SX, streetday: SX, shop: IX, hue: HX, bt: BX, lake: GX, villa: VX, field: FX, fieldfever: FX, korea: KX, bank: NX, photo: 0, lop: 0, tan: 0, so: 0, sa: 0, athens: 0, uruk: 0, tenoch: 0, thao: 0, plaza: 0, xuong: 0, cafe: 0, pho: 0, net: 0, netsp: 0, canho: 0, canhovip: 0, suaxe: 0 };
 export type Cast = { a: string; p: V; to?: V; pose: (t: number, d: number) => Pose };
 export type Shot3D = { bg?: string; bgFit?: [number, number]; set: SetKey; light: LK; from: [V, V, number]; to: [V, V, number]; cast: Cast[]; rain?: boolean; shake?: number; chat?: "calm" | "fast" | "off" | "boom"; game?: boolean; board?: "buy" | "sell"; ease?: "sm" | "lin" | "out"; walkers?: boolean; jam?: boolean; chalk?: string[]; chalkT?: number; score?: 1 | 2 };
 export type Run = { a: number; b: number; s: Shot3D }; // frames, relative to the Stage sequence
@@ -88,6 +88,7 @@ const Inner: React.FC<{ set: SetKey; runs: Run[] }> = ({ set, runs }) => {
     else if (set === "tan") root.add(buildTan().g); else if (set === "so") root.add(buildSo().g); else if (set === "sa") root.add(buildSa().g);
     else if (set === "athens") root.add(buildAthens().g); else if (set === "uruk") root.add(buildUruk().g); else if (set === "tenoch") root.add(buildTenoch().g);
     else if (set === "thao") root.add(buildThao().g); else if (set === "plaza") root.add(buildPlaza().g);
+    else if (set === "suaxe") root.add(buildSuaXe().g);
     else if (set === "cafe") root.add(buildCafe().g); else if (set === "pho") root.add(buildPho().g);
     else if (set === "net" || set === "netsp") root.add(buildNet(set === "netsp" ? "sparta" : "home").g);
     else if (set === "canho" || set === "canhovip") root.add(buildCanHo(set === "canhovip" ? "vip" : "tragop").g);
