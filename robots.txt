@@ -27,3 +27,4 @@ User-agent: ImagesiftBot
 Disallow: /bao-cao-2026.html
 
 Sitemap: https://chungkhoanhuynguyen.com/sitemap.xml
+Disallow: /nhandinhthitruong/
