@@ -1,3 +1,4 @@
+import os
 # Nhạc nền tự tổng hợp, kịch tính (không bản quyền): braam + boom ở hook, ostinato dây staccato, trống trận, impact chuyển cảnh
 import numpy as np, wave, subprocess
 SR = 44100; BPM = 104; rng = np.random.default_rng(7)
@@ -105,6 +106,36 @@ def mix(video, bounds, out, music_db=-8, lofi=False, whoosh_on=None, whoosh=0, c
     fc = ("[1:a]volume=%ddB,aresample=44100[m];[0:a]highpass=f=75,acompressor=threshold=-20dB:ratio=2.5:attack=8:release=120:makeup=2,"
           "equalizer=f=3200:t=q:w=1.2:g=2,equalizer=f=250:t=q:w=1:g=-1.5,asplit=2[v][sc];"
           "[m][sc]sidechaincompress=threshold=%s:ratio=%s:attack=60:release=600[md];"
-          "[v][md]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11,aresample=44100[a]") % (music_db, th, ra)
+          "[v][md]amix=inputs=2:duration=first:normalize=0,aresample=44100[a]") % (music_db, th, ra)
+    _wv = "/tmp/mix_%d.wav" % os.getpid()
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", video, "-i", "/tmp/bgm.wav", "-filter_complex", fc,
-                    "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", out])
+                    "-map", "[a]", "-c:a", "pcm_s16le", _wv], check=True)
+    chuan_am(video, out, wav=_wv)   # NV1 19/11: chuẩn -11 LUFS / TP -1 (TGĐ 18/11 10:27), đo 2 lượt
+    try: os.remove(_wv)
+    except Exception: pass
+
+def _do(src):
+    import re as _re, json as _js
+    e = subprocess.run(["ffmpeg", "-hide_banner", "-i", src, "-af", "loudnorm=I=-11:TP=-1:LRA=11:print_format=json", "-vn", "-f", "null", "-"],
+                       capture_output=True, text=True).stderr
+    return _js.loads(e[e.rindex("{"):e.rindex("}") + 1])
+
+def chuan_am(video, out, wav=None, I=-11.0, TP=-1.0):
+    """Đưa tiếng về I LUFS, đỉnh TP dBTP: lượt 1 đo -> tăng mức tuyến tính + limiter đỉnh -> lượt 2 đo bù phần lệch nhỏ.
+    Không nén lại giọng (giọng đã làm sạch ở mix). Video giữ nguyên (-c:v copy). Dùng được cho mp4 cũ: chuan_am(a.mp4, b.mp4)."""
+    src = wav or video
+    d0 = _do(src); g = I - float(d0["input_i"])
+    lim = 10 ** ((TP - 0.5) / 20)
+    t1 = "/tmp/am1_%d.wav" % os.getpid()
+    for _ in range(4):   # limiter ăn bớt mức -> đo lại, cộng dồn phần thiếu (tối đa 4 lượt)
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", src, "-vn", "-af",
+                        "volume=%.2fdB,alimiter=limit=%.4f:attack=2:release=60:level=false" % (g, lim), "-ar", "48000", "-c:a", "pcm_s16le", t1], check=True)
+        dl = I - float(_do(t1)["input_i"])
+        if abs(dl) < 0.3: break
+        g += dl
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", video, "-i", t1, "-map", "0:v?", "-map", "1:a", "-c:v", "copy",
+                    "-c:a", "aac", "-b:a", "192k", "-ar", "44100", "-shortest", "-movflags", "+faststart", out], check=True)
+    try: os.remove(t1)
+    except Exception: pass
+    d = d0
+    print("chuan_am", d["input_i"], "->", _do(out)["input_i"], "LUFS", flush=True)

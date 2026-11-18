@@ -1,0 +1,25 @@
+name: Chuan am -11 LUFS (video da dung)
+on:
+  workflow_dispatch:
+    inputs:
+      tag: {description: "release tag", required: true}
+      files: {description: "ten file mp4 cach dau cach", required: true}
+permissions:
+  contents: write
+jobs:
+  am:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {sparse-checkout: _video/engine}
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+      - env: {GH_TOKEN: "${{ github.token }}", GH_REPO: "${{ github.repository }}"}
+        run: |
+          mkdir -p in out
+          for f in ${{ inputs.files }}; do gh release download "${{ inputs.tag }}" -p "$f" -D in --clobber; done
+          cd _video/engine
+          for f in ../../in/*.mp4; do n=$(basename $f); python3 -c "import music,sys; music.chuan_am(sys.argv[1], sys.argv[2])" "$f" "../../out/$n"; done
+          cd ../..
+          for f in out/*.mp4; do echo "$(basename $f) $(ffmpeg -hide_banner -i $f -af ebur128=peak=true -f null - 2>&1 | grep -E '^\s+I:' | tail -1)" | tee -a out/lufs_${{ github.run_id }}.txt; done
+          gh release upload "${{ inputs.tag }}" out/*.mp4 --clobber
+          cat out/lufs_*.txt

@@ -350,6 +350,13 @@ def main():
         import music; music.mix(tmp, b, out, music_db=R.get("music_db", -17), lofi=(R.get("nhac") == "lofi"), whoosh=R.get("hieu_ung", 1))
     except Exception as e:
         print("nhac: bo qua", e, flush=True); os.replace(tmp, out)
+    try:  # NV1 19/11: cổng âm lượng -11 LUFS (TGĐ 18/11) – dưới -12 là LỖI
+        _lu = subprocess.run(["ffmpeg", "-hide_banner", "-i", out, "-af", "ebur128", "-f", "null", "-"], capture_output=True, text=True).stderr
+        _m = re.findall(r"I:\s+(-?[\d.]+) LUFS", _lu); _lv = float(_m[-1]) if _m else -99
+        if _lv < -12 or _lv > -9.5:
+            open(os.path.join(OUT, key + "_qc.txt"), "a", encoding="utf-8").write("LỖI âm lượng %.1f LUFS (chuẩn -11)\n" % _lv)
+        print(key, "LUFS", _lv, flush=True)
+    except Exception as _e: print("lufs: bo qua", _e, flush=True)
     khung(R, 0, 1.5, 4, phs[0], 1.5, b[-1]).resize((540, 960), Image.LANCZOS).save(os.path.join(OUT, key + "_bia.png"))
     cap = bo_mien_tru(R.get("short_caption") or R.get("tieu_de", ""))
     if R.get("cau_hoi"): cap = "💬 " + R["cau_hoi"].get("loi", "") + "\n\n" + cap

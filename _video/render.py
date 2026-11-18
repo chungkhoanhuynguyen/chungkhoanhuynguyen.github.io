@@ -492,7 +492,7 @@ try:
     if br < 22: qc.append("LỖI khung đầu quá tối (%.0f) – ảnh bìa tự động sẽ đen" % br)
     lu = subprocess.run(["ffmpeg", "-hide_banner", "-i", out, "-af", "ebur128", "-f", "null", "-"], capture_output=True, text=True).stderr
     m = re.findall(r"I:\s+(-?[\d.]+) LUFS", lu); lv = float(m[-1]) if m else -99
-    if lv < -24 or lv > -9: qc.append("LỖI âm lượng tổng %.1f LUFS (chuẩn -16 đến -12)" % lv)
+    if lv < -12 or lv > -9.5: qc.append("LỖI âm lượng tổng %.1f LUFS (chuẩn -11, chấp nhận -12 đến -9,5 – TGĐ 18/11)" % lv)
     if b[-1] < 300: qc.append("CẢNH BÁO video chỉ %.0f giây (kênh chính nên 8–12 phút)" % b[-1])
     try:  # QL1 18/11 (học OpenMontage): khung đen giữa video + rủi ro "trình chiếu PowerPoint" (quá nhiều đoạn hình đứng yên)
         _bd = subprocess.run(["ffmpeg", "-hide_banner", "-i", out, "-vf", "blackdetect=d=0.4:pix_th=0.08,freezedetect=n=0.003:d=2", "-an", "-f", "null", "-"], capture_output=True, text=True).stderr
