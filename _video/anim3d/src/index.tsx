@@ -7,6 +7,7 @@ import { DatVideo, DAT_FRAMES } from "./videos/dat/Dat";
 import { BiaDat } from "./videos/dat/BiaDat";
 import { BiaHn } from "./videos/hn/BiaHn";
 import { BiaLuong2 } from "./videos/luong2/BiaLuong2";
+import { BiaPhim } from "./videos/bia/BiaPhim";
 import { Ltc1Video, LTC1_FRAMES } from "./videos/ltc1/Ltc1";
 import { LopQT } from "./videos/ltc1/LopQT";
 import { HnVideo, HN_FRAMES } from "./videos/hn/Hn";
@@ -56,6 +57,7 @@ const Root: React.FC = () => <>
 
   <Composition id="Ltc1" component={Ltc1Video} durationInFrames={LTC1_FRAMES} fps={30} width={1920} height={1080} />
   <Composition id="LopQT" component={LopQT} durationInFrames={1} fps={30} width={1920} height={1080} />
+  <Composition id="BiaPhim" component={BiaPhim} durationInFrames={1} fps={30} width={1920} height={1080} />
   <Composition id="BiaLuong2" component={BiaLuong2} durationInFrames={1} fps={30} width={1920} height={1080} />
   <Composition id="BiaHn" component={BiaHn} durationInFrames={1} fps={30} width={1920} height={1080} />
   <Composition id="BiaDat" component={BiaDat} durationInFrames={1} fps={30} width={1920} height={1080} />
