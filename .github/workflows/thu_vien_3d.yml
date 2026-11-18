@@ -24,10 +24,22 @@ jobs:
         name: Dong goi len release thu-vien-3d
         env: {GH_TOKEN: "${{ github.token }}"}
         run: |
-          cd W && for g in kenney_3d kenney_audio; do [ -d $g ] && zip -qr ../$g.zip $g; done; zip -qr ../polyhaven_models.zip polyhaven/models; zip -qr ../polyhaven_hdris.zip polyhaven/hdris; zip -qr ../polyhaven_textures.zip polyhaven/textures; cd ..
+          cd W && for g in kenney_3d kenney_audio; do [ -d $g ] && zip -qr ../$g.zip $g; done; python3 - <<'PY'
+import os, subprocess
+ds = sorted(os.listdir("polyhaven/models")); nhom, cur, sz = [], [], 0
+for d in ds:
+    t = sum(os.path.getsize(os.path.join(r, f)) for r, _, fs in os.walk(os.path.join("polyhaven/models", d)) for f in fs)
+    if cur and sz + t > 1.6e9: nhom.append(cur); cur, sz = [], 0
+    cur.append(d); sz += t
+if cur: nhom.append(cur)
+for i, g in enumerate(nhom): subprocess.run(["zip", "-qr", f"../polyhaven_models_{i+1}.zip"] + [os.path.join("polyhaven/models", d) for d in g], check=True)
+print("so phan", len(nhom))
+PY
+ zip -qr ../polyhaven_hdris.zip polyhaven/hdris; zip -qr ../polyhaven_textures.zip polyhaven/textures; cd ..
           zip -qr anh_xem.zip ANH; ls -la *.zip
           gh release view thu-vien-3d >/dev/null 2>&1 || gh release create thu-vien-3d -t "Thu vien 3D CC0" -n "Tai nguyen CC0 (Kenney, Poly Haven) + anh xem truoc + danh muc"
-          gh release upload thu-vien-3d *.zip OUT/catalog.json OUT/tom_tat.json OUT/*.jpg --clobber
+          gh release upload thu-vien-3d OUT/catalog.json OUT/tom_tat.json OUT/*.jpg anh_xem.zip --clobber
+          for z in polyhaven_*.zip kenney_*.zip; do [ -f "$z" ] && gh release upload thu-vien-3d "$z" --clobber; done
       - if: env.NHANH == ''
         name: Luu danh muc vao repo
         run: |
