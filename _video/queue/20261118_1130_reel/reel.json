@@ -1,28 +1,243 @@
 [
-{"key": "RV1811MY", "tieu_de": "Nước Mỹ chao đảo: 4 sự cố trong 5 ngày, ngân hàng tê liệt – tiền trong app của mình có an toàn?", "hook": ["NGÂN HÀNG MỸ TÊ LIỆT", "TIỀN TRONG APP CÒN AN TOÀN???"], "nhan": "NƯỚC MỸ · HỎI THẬT",
- "short_caption": "Ngày 16/11/2026 khách hàng JPMorgan Chase, Wells Fargo, Bank of America, U.S. Bank và Zelle không đăng nhập, không chuyển được tiền; Chase gần 5.000 báo lỗi trên Downdetector, ngân hàng nói do lỗi phần mềm, không phải tấn công mạng (VnExpress 17/11/2026, theo AP, BBC). Microsoft gián đoạn Outlook, Teams 13/11; FAA dừng bay toàn quốc hơn 4 giờ 14/11. Phó tổng thống JD Vance trên Fox News 16/11: chính phủ không thấy khủng hoảng sắp tới (Thanh Niên 17/11/2026). Bảo hiểm tiền gửi tại Việt Nam tối đa 125 triệu đồng/người/tổ chức (QĐ 32/2021/QĐ-TTg). Quan điểm cá nhân, không phải khuyến nghị đầu tư.",
- "tags": [], "toc": 1.1, "nhac": "lofi", "music_db": -2, "hieu_ung": 1,
- "canh": [
-  {"chu_to": "KHÔNG ĐĂNG NHẬP ĐƯỢC", "loi": "Sáng 16/11, hàng nghìn người Mỹ mở app ngân hàng và không đăng nhập được, không xem được số dư, không chuyển được tiền.", "loi_doc": "Sáng mười sáu tháng mười một, hàng nghìn người Mỹ mở app ngân hàng và không đăng nhập được, không xem được số dư, không chuyển được tiền.", "anh": ["person frustrated smartphone banking app", "JPMorgan Chase bank branch"]},
-  {"chu_to": "GẦN 5.000 BÁO LỖI", "loi": "JPMorgan Chase, Wells Fargo, Bank of America, U.S. Bank, cả ví Zelle đều gặp sự cố. Riêng Chase có gần 5.000 báo lỗi.", "loi_doc": "JPMorgan Chase, Wells Fargo, Bank of America, U.S. Bank, cả ví Zelle đều gặp sự cố. Riêng Chase có gần năm nghìn báo lỗi.", "the": {"loai": "lon", "tieu": "NGÂN HÀNG MỸ, 16/11/2026", "nguon": "Downdetector, VnExpress 17/11/2026 theo AP, BBC", "dong": [["GẦN 5.000", 120, "do"], ["BÁO LỖI RIÊNG JPMORGAN CHASE", 52, "trang"]]}},
-  {"chu_to": "4 SỰ CỐ TRONG 5 NGÀY", "loi": "Đó không phải chuyện đầu tiên. Ngày 13/11, Outlook và Teams của Microsoft gián đoạn. Ngày 14/11, Cơ quan Hàng không Mỹ dừng bay toàn quốc hơn 4 giờ. Ngày 16/11, United Airlines chậm hàng trăm chuyến.", "loi_doc": "Đó không phải chuyện đầu tiên. Ngày mười ba tháng mười một, Outlook và Teams của Microsoft gián đoạn. Ngày mười bốn, Cơ quan Hàng không Mỹ dừng bay toàn quốc hơn bốn giờ. Ngày mười sáu, United Airlines chậm hàng trăm chuyến.", "anh": ["airport departure board delayed flights", "Microsoft office building"]},
-  {"chu_to": "ĐỪNG TÍCH TRỮ", "loi": "Đến mức Phó tổng thống JD Vance phải lên truyền hình trấn an: chính phủ không thấy khủng hoảng nào sắp tới, người dân không cần hoảng loạn.", "loi_doc": "Đến mức Phó tổng thống JD Vance phải lên truyền hình trấn an: chính phủ không thấy khủng hoảng nào sắp tới, người dân không cần hoảng loạn.", "anh": ["United States Capitol"]},
-  {"chu_to": "KHÔNG PHẢI TẤN CÔNG MẠNG", "loi": "Chase nói nguyên nhân là lỗi phần mềm, không phải tấn công mạng. Tiền của khách vẫn còn. Nhưng có vài giờ, người ta có tiền mà không dùng được.", "loi_doc": "Chase nói nguyên nhân là lỗi phần mềm, không phải tấn công mạng. Tiền của khách vẫn còn. Nhưng có vài giờ, người ta có tiền mà không dùng được.", "anh": ["server room data center"]},
-  {"chu_to": "MÌNH HỌC ĐƯỢC GÌ?", "loi": "Bài học cho mình rất đơn giản. Đừng để toàn bộ tiền chi tiêu trong một ngân hàng, một ứng dụng. Giữ một ít tiền mặt dự phòng cho vài ngày.", "loi_doc": "Bài học cho mình rất đơn giản. Đừng để toàn bộ tiền chi tiêu trong một ngân hàng, một ứng dụng. Giữ một ít tiền mặt dự phòng cho vài ngày.", "anh": ["Vietnamese dong banknotes wallet"]},
-  {"chu_to": "BẢO HIỂM TIỀN GỬI 125 TRIỆU", "loi": "Và nhớ rằng ở Việt Nam, bảo hiểm tiền gửi chi trả tối đa 125 triệu đồng mỗi người ở mỗi ngân hàng. Khoản lớn hơn thì nên chia ra.", "loi_doc": "Và nhớ rằng ở Việt Nam, bảo hiểm tiền gửi chi trả tối đa một trăm hai mươi lăm triệu đồng mỗi người ở mỗi ngân hàng. Khoản lớn hơn thì nên chia ra.", "the": {"loai": "lon", "tieu": "BẢO HIỂM TIỀN GỬI TẠI VIỆT NAM", "nguon": "Quyết định 32/2021/QĐ-TTg", "dong": [["125 TRIỆU", 120, "vang"], ["MỖI NGƯỜI, MỖI NGÂN HÀNG", 54, "trang"]]}}
- ],
- "cau_hoi": {"chu_to": "APP NGÂN HÀNG SẬP 1 NGÀY?", "loi": "Nếu app ngân hàng của anh chị sập một ngày, anh chị còn xoay xở được không? Anh chị đang để tiền ở mấy ngân hàng?", "loi_doc": "Nếu app ngân hàng của anh chị sập một ngày, anh chị còn xoay xở được không? Anh chị đang để tiền ở mấy ngân hàng?", "anh": ["Hanoi street night", "smartphone banking app"]}},
-{"key": "RV1811IR", "tieu_de": "Iran tấn công căn cứ Mỹ 3 lần trong 5 ngày – sao xăng lại giảm, vàng lại giảm?", "hook": ["IRAN BẮN VÀO CĂN CỨ MỸ", "SAO XĂNG, VÀNG LẠI GIẢM???"], "nhan": "VÙNG VỊNH · HỎI THẬT",
- "short_caption": "IRGC tuyên bố tấn công radar Mỹ tại căn cứ Sheikh Isa (Bahrain) sáng 17/11/2026, lần thứ ba trong 5 ngày (14/11, 15/11, 17/11); Bahrain nói đã đánh chặn (VnExpress 17/11/2026). Giá bán lẻ tối đa từ 15h 12/11/2026: xăng E10 RON95-III 19.845 đồng/lít (−1.311), E5 RON92 19.399 đồng/lít (−1.499); giá RON95 thế giới bình quân kỳ 106,028 USD/thùng, −6,88% (Bộ Công Thương). Dầu Brent ~92,8 USD/thùng, vàng thế giới ~3.811 USD/oz (−1,1%), lợi suất trái phiếu Mỹ 10 năm ~5,1% sáng 18/11/2026 (dữ liệu tổng hợp trên chungkhoanhuynguyen.com). Quan điểm cá nhân, không phải khuyến nghị đầu tư.",
- "tags": [], "toc": 1.1, "nhac": "lofi", "music_db": -2, "hieu_ung": 1,
- "canh": [
-  {"chu_to": "3 LẦN TRONG 5 NGÀY", "loi": "Sáng 17/11, Vệ binh Cách mạng Iran tuyên bố phóng UAV vào trạm radar Mỹ ở căn cứ Sheikh Isa, Bahrain. Đây là lần thứ ba chỉ trong 5 ngày.", "loi_doc": "Sáng mười bảy tháng mười một, Vệ binh Cách mạng Iran tuyên bố phóng UAV vào trạm radar Mỹ ở căn cứ Sheikh Isa, Bahrain. Đây là lần thứ ba chỉ trong năm ngày.", "anh": ["Bahrain Manama skyline", "military radar station"]},
-  {"chu_to": "BAHRAIN: ĐÃ ĐÁNH CHẶN", "loi": "Bahrain nói đã đánh chặn, người dân ở thủ đô Manama được báo động trú ẩn rồi mới gỡ lệnh. Căn cứ này có trụ sở Hạm đội 5 của Hải quân Mỹ.", "loi_doc": "Bahrain nói đã đánh chặn, người dân ở thủ đô Manama được báo động trú ẩn rồi mới gỡ lệnh. Căn cứ này có trụ sở Hạm đội năm của Hải quân Mỹ.", "anh": ["US Navy Fifth Fleet ship Persian Gulf"]},
-  {"chu_to": "VẬY MÀ XĂNG GIẢM", "loi": "Chiến sự căng như vậy, nhưng kỳ điều hành ngày 12/11, xăng RON95 ở Việt Nam lại giảm hơn 1.300 đồng, còn 19.845 đồng một lít.", "loi_doc": "Chiến sự căng như vậy, nhưng kỳ điều hành ngày mười hai tháng mười một, xăng RON chín lăm ở Việt Nam lại giảm hơn một nghìn ba trăm đồng, còn mười chín nghìn tám trăm bốn lăm đồng một lít.", "the": {"loai": "cot", "tieu": "XĂNG RON95 (ĐỒNG/LÍT)", "nguon": "Bộ Công Thương, kỳ điều hành 12/11/2026", "hang": [["Kỳ trước", 21156], ["12/11", 19845]], "noi": [1], "dv": "", "max": 22000}},
-  {"chu_to": "VÀNG CŨNG GIẢM", "loi": "Vàng thế giới, thứ người ta hay mua khi có chiến tranh, sáng nay cũng giảm hơn 1%, quanh 3.811 đô một ounce.", "loi_doc": "Vàng thế giới, thứ người ta hay mua khi có chiến tranh, sáng nay cũng giảm hơn một phần trăm, quanh ba nghìn tám trăm mười một đô một ounce.", "the": {"loai": "lon", "tieu": "VÀNG THẾ GIỚI SÁNG 18/11/2026", "nguon": "Dữ liệu tổng hợp chungkhoanhuynguyen.com", "dong": [["−1,1%", 120, "do"], ["QUANH 3.811 USD/OUNCE", 54, "trang"]]}},
-  {"chu_to": "VÌ SAO?", "loi": "Một cách giải thích: chiến sự đã kéo dài nhiều tháng, thị trường đã quen. Trong khi đồng đô la đang mạnh và lợi suất trái phiếu Mỹ quanh 5,1%, giữ tiền đô có lãi, nên vàng kém hấp dẫn hơn.", "loi_doc": "Một cách giải thích: chiến sự đã kéo dài nhiều tháng, thị trường đã quen. Trong khi đồng đô la đang mạnh và lợi suất trái phiếu Mỹ quanh năm phẩy một phần trăm, giữ tiền đô có lãi, nên vàng kém hấp dẫn hơn.", "anh": ["US dollar banknotes", "gold bars"]},
-  {"chu_to": "NGUY HIỂM LÀ LÚC QUEN", "loi": "Nhưng chính lúc thị trường quen tin xấu lại là lúc dễ chủ quan nhất. Chỉ cần một đòn trúng vào tàu dầu hay eo Hormuz, giá dầu có thể đổi chiều rất nhanh.", "loi_doc": "Nhưng chính lúc thị trường quen tin xấu lại là lúc dễ chủ quan nhất. Chỉ cần một đòn trúng vào tàu dầu hay eo Hormuz, giá dầu có thể đổi chiều rất nhanh.", "anh": ["oil tanker Strait of Hormuz"]},
-  {"chu_to": "ĐỪNG ĐẶT CƯỢC VÀO TIN", "loi": "Với nhà đầu tư, đừng mua bán theo từng bản tin chiến sự. Giữ tỷ trọng vừa phải, có tiền mặt dự phòng, để tin xấu đến cũng không phải bán tháo.", "loi_doc": "Với nhà đầu tư, đừng mua bán theo từng bản tin chiến sự. Giữ tỷ trọng vừa phải, có tiền mặt dự phòng, để tin xấu đến cũng không phải bán tháo.", "anh": ["stock market screen red"]}
- ],
- "cau_hoi": {"chu_to": "TIN CHIẾN SỰ, ANH CHỊ LÀM GÌ?", "loi": "Mỗi lần có tin chiến sự, anh chị bán bớt, mua thêm, hay đứng yên? Bình luận cho em biết nhé.", "loi_doc": "Mỗi lần có tin chiến sự, anh chị bán bớt, mua thêm, hay đứng yên? Bình luận cho em biết nhé.", "anh": ["oil refinery night"]}}
+ {
+  "key": "RV1811MY",
+  "tieu_de": "Nước Mỹ chao đảo: 4 sự cố trong 5 ngày, ngân hàng tê liệt – tiền trong app của mình có an toàn?",
+  "hook": [
+   "NGÂN HÀNG MỸ TÊ LIỆT",
+   "TIỀN TRONG APP CÒN AN TOÀN???"
+  ],
+  "nhan": "NƯỚC MỸ · HỎI THẬT",
+  "short_caption": "Ngày 16/11/2026 khách hàng JPMorgan Chase, Wells Fargo, Bank of America, U.S. Bank và Zelle không đăng nhập, không chuyển được tiền; Chase gần 5.000 báo lỗi trên Downdetector, ngân hàng nói do lỗi phần mềm, không phải tấn công mạng (VnExpress 17/11/2026, theo AP, BBC). Microsoft gián đoạn Outlook, Teams 13/11; FAA dừng bay toàn quốc hơn 4 giờ 14/11. Phó tổng thống JD Vance trên Fox News 16/11: chính phủ không thấy khủng hoảng sắp tới (Thanh Niên 17/11/2026). Bảo hiểm tiền gửi tại Việt Nam tối đa 125 triệu đồng/người/tổ chức (QĐ 32/2021/QĐ-TTg). Quan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "canh": [
+   {
+    "chu_to": "KHÔNG ĐĂNG NHẬP ĐƯỢC",
+    "loi": "Sáng 16/11, hàng nghìn người Mỹ mở app ngân hàng và không đăng nhập được, không xem được số dư, không chuyển được tiền.",
+    "loi_doc": "Sáng mười sáu tháng mười một, hàng nghìn người Mỹ mở app ngân hàng và không đăng nhập được, không xem được số dư, không chuyển được tiền.",
+    "anh": [
+     "person frustrated smartphone banking app",
+     "JPMorgan Chase bank branch"
+    ]
+   },
+   {
+    "chu_to": "GẦN 5.000 BÁO LỖI",
+    "loi": "JPMorgan Chase, Wells Fargo, Bank of America, U.S. Bank, cả ví Zelle đều gặp sự cố. Riêng Chase có gần 5.000 báo lỗi.",
+    "loi_doc": "JPMorgan Chase, Wells Fargo, Bank of America, U.S. Bank, cả ví Zelle đều gặp sự cố. Riêng Chase có gần năm nghìn báo lỗi.",
+    "the": {
+     "loai": "lon",
+     "tieu": "NGÂN HÀNG MỸ, 16/11/2026",
+     "nguon": "Downdetector, VnExpress 17/11/2026 theo AP, BBC",
+     "dong": [
+      [
+       "GẦN 5.000",
+       120,
+       "do"
+      ],
+      [
+       "BÁO LỖI RIÊNG JPMORGAN CHASE",
+       52,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "4 SỰ CỐ TRONG 5 NGÀY",
+    "loi": "Đó không phải chuyện đầu tiên. Ngày 13/11, Outlook và Teams của Microsoft gián đoạn. Ngày 14/11, Cơ quan Hàng không Mỹ dừng bay toàn quốc hơn 4 giờ. Ngày 16/11, United Airlines chậm hàng trăm chuyến.",
+    "loi_doc": "Đó không phải chuyện đầu tiên. Ngày mười ba tháng mười một, Outlook và Teams của Microsoft gián đoạn. Ngày mười bốn, Cơ quan Hàng không Mỹ dừng bay toàn quốc hơn bốn giờ. Ngày mười sáu, United Airlines chậm hàng trăm chuyến.",
+    "anh": [
+     "airport departure board delayed flights",
+     "Microsoft office building"
+    ]
+   },
+   {
+    "chu_to": "ĐỪNG TÍCH TRỮ",
+    "loi": "Đến mức Phó tổng thống JD Vance phải lên truyền hình trấn an: chính phủ không thấy khủng hoảng nào sắp tới, người dân không cần hoảng loạn.",
+    "loi_doc": "Đến mức Phó tổng thống JD Vance phải lên truyền hình trấn an: chính phủ không thấy khủng hoảng nào sắp tới, người dân không cần hoảng loạn.",
+    "anh": [
+     "United States Capitol"
+    ]
+   },
+   {
+    "chu_to": "KHÔNG PHẢI TẤN CÔNG MẠNG",
+    "loi": "Chase nói nguyên nhân là lỗi phần mềm, không phải tấn công mạng. Tiền của khách vẫn còn. Nhưng có vài giờ, người ta có tiền mà không dùng được.",
+    "loi_doc": "Chase nói nguyên nhân là lỗi phần mềm, không phải tấn công mạng. Tiền của khách vẫn còn. Nhưng có vài giờ, người ta có tiền mà không dùng được.",
+    "anh": [
+     "server room data center"
+    ]
+   },
+   {
+    "chu_to": "MÌNH HỌC ĐƯỢC GÌ?",
+    "loi": "Bài học cho mình rất đơn giản. Đừng để toàn bộ tiền chi tiêu trong một ngân hàng, một ứng dụng. Giữ một ít tiền mặt dự phòng cho vài ngày.",
+    "loi_doc": "Bài học cho mình rất đơn giản. Đừng để toàn bộ tiền chi tiêu trong một ngân hàng, một ứng dụng. Giữ một ít tiền mặt dự phòng cho vài ngày.",
+    "anh": [
+     "Vietnamese dong banknotes wallet"
+    ]
+   },
+   {
+    "chu_to": "BẢO HIỂM TIỀN GỬI 125 TRIỆU",
+    "loi": "Và nhớ rằng ở Việt Nam, bảo hiểm tiền gửi chi trả tối đa 125 triệu đồng mỗi người ở mỗi ngân hàng. Khoản lớn hơn thì nên chia ra.",
+    "loi_doc": "Và nhớ rằng ở Việt Nam, bảo hiểm tiền gửi chi trả tối đa một trăm hai mươi lăm triệu đồng mỗi người ở mỗi ngân hàng. Khoản lớn hơn thì nên chia ra.",
+    "the": {
+     "loai": "lon",
+     "tieu": "BẢO HIỂM TIỀN GỬI TẠI VIỆT NAM",
+     "nguon": "Quyết định 32/2021/QĐ-TTg",
+     "dong": [
+      [
+       "125 TRIỆU",
+       120,
+       "vang"
+      ],
+      [
+       "MỖI NGƯỜI, MỖI NGÂN HÀNG",
+       54,
+       "trang"
+      ]
+     ]
+    }
+   }
+  ],
+  "cau_hoi": {
+   "chu_to": "APP NGÂN HÀNG SẬP 1 NGÀY?",
+   "loi": "Nếu app ngân hàng của anh chị sập một ngày, anh chị còn xoay xở được không? Anh chị đang để tiền ở mấy ngân hàng?",
+   "loi_doc": "Nếu app ngân hàng của anh chị sập một ngày, anh chị còn xoay xở được không? Anh chị đang để tiền ở mấy ngân hàng?",
+   "anh": [
+    "Hanoi street night",
+    "smartphone banking app"
+   ]
+  }
+ },
+ {
+  "key": "RV1811IR",
+  "tieu_de": "Iran tấn công căn cứ Mỹ 3 lần trong 5 ngày – sao xăng lại giảm, vàng lại giảm?",
+  "hook": [
+   "IRAN BẮN VÀO CĂN CỨ MỸ",
+   "SAO XĂNG, VÀNG LẠI GIẢM???"
+  ],
+  "nhan": "VÙNG VỊNH · HỎI THẬT",
+  "short_caption": "IRGC tuyên bố tấn công radar Mỹ tại căn cứ Sheikh Isa (Bahrain) sáng 17/11/2026, lần thứ ba trong 5 ngày (14/11, 15/11, 17/11); Bahrain nói đã đánh chặn (VnExpress 17/11/2026). Giá bán lẻ tối đa từ 15h 12/11/2026: xăng E10 RON95-III 19.845 đồng/lít (−1.311), E5 RON92 19.399 đồng/lít (−1.499); giá RON95 thế giới bình quân kỳ 106,028 USD/thùng, −6,88% (Bộ Công Thương). Dầu Brent ~92,8 USD/thùng, vàng thế giới ~3.811 USD/oz (−1,1%), lợi suất trái phiếu Mỹ 10 năm ~5,1% sáng 18/11/2026 (dữ liệu tổng hợp trên chungkhoanhuynguyen.com). Quan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "canh": [
+   {
+    "chu_to": "3 LẦN TRONG 5 NGÀY",
+    "loi": "Sáng 17/11, Vệ binh Cách mạng Iran tuyên bố phóng UAV vào trạm radar Mỹ ở căn cứ Sheikh Isa, Bahrain. Đây là lần thứ ba chỉ trong 5 ngày.",
+    "loi_doc": "Sáng mười bảy tháng mười một, Vệ binh Cách mạng Iran tuyên bố phóng UAV vào trạm radar Mỹ ở căn cứ Sheikh Isa, Bahrain. Đây là lần thứ ba chỉ trong năm ngày.",
+    "anh": [
+     "Bahrain Manama skyline",
+     "military radar station"
+    ]
+   },
+   {
+    "chu_to": "BAHRAIN: ĐÃ ĐÁNH CHẶN",
+    "loi": "Bahrain nói đã đánh chặn, người dân ở thủ đô Manama được báo động trú ẩn rồi mới gỡ lệnh. Căn cứ này có trụ sở Hạm đội 5 của Hải quân Mỹ.",
+    "loi_doc": "Bahrain nói đã đánh chặn, người dân ở thủ đô Manama được báo động trú ẩn rồi mới gỡ lệnh. Căn cứ này có trụ sở Hạm đội năm của Hải quân Mỹ.",
+    "anh": [
+     "US Navy Fifth Fleet ship Persian Gulf"
+    ]
+   },
+   {
+    "chu_to": "VẬY MÀ XĂNG GIẢM",
+    "loi": "Chiến sự căng như vậy, nhưng kỳ điều hành ngày 12/11, xăng RON95 ở Việt Nam lại giảm hơn 1.300 đồng, còn 19.845 đồng một lít.",
+    "loi_doc": "Chiến sự căng như vậy, nhưng kỳ điều hành ngày mười hai tháng mười một, xăng RON chín lăm ở Việt Nam lại giảm hơn một nghìn ba trăm đồng, còn mười chín nghìn tám trăm bốn lăm đồng một lít.",
+    "the": {
+     "loai": "cot",
+     "tieu": "XĂNG RON95 (ĐỒNG/LÍT)",
+     "nguon": "Bộ Công Thương, kỳ điều hành 12/11/2026",
+     "hang": [
+      [
+       "Kỳ trước",
+       21156
+      ],
+      [
+       "12/11",
+       19845
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 22000
+    }
+   },
+   {
+    "chu_to": "VÀNG CŨNG GIẢM",
+    "loi": "Vàng thế giới, thứ người ta hay mua khi có chiến tranh, sáng nay cũng giảm hơn 1%, quanh 3.811 đô một ounce.",
+    "loi_doc": "Vàng thế giới, thứ người ta hay mua khi có chiến tranh, sáng nay cũng giảm hơn một phần trăm, quanh ba nghìn tám trăm mười một đô một ounce.",
+    "the": {
+     "loai": "lon",
+     "tieu": "VÀNG THẾ GIỚI SÁNG 18/11/2026",
+     "nguon": "Dữ liệu tổng hợp chungkhoanhuynguyen.com",
+     "dong": [
+      [
+       "−1,1%",
+       120,
+       "do"
+      ],
+      [
+       "QUANH 3.811 USD/OUNCE",
+       54,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "VÌ SAO?",
+    "loi": "Một cách giải thích: chiến sự đã kéo dài nhiều tháng, thị trường đã quen. Trong khi đồng đô la đang mạnh và lợi suất trái phiếu Mỹ quanh 5,1%, giữ tiền đô có lãi, nên vàng kém hấp dẫn hơn.",
+    "loi_doc": "Một cách giải thích: chiến sự đã kéo dài nhiều tháng, thị trường đã quen. Trong khi đồng đô la đang mạnh và lợi suất trái phiếu Mỹ quanh năm phẩy một phần trăm, giữ tiền đô có lãi, nên vàng kém hấp dẫn hơn.",
+    "anh": [
+     "US dollar banknotes",
+     "gold bars"
+    ]
+   },
+   {
+    "chu_to": "NGUY HIỂM LÀ LÚC QUEN",
+    "loi": "Nhưng chính lúc thị trường quen tin xấu lại là lúc dễ chủ quan nhất. Chỉ cần một đòn trúng vào tàu dầu hay eo Hormuz, giá dầu có thể đổi chiều rất nhanh.",
+    "loi_doc": "Nhưng chính lúc thị trường quen tin xấu lại là lúc dễ chủ quan nhất. Chỉ cần một đòn trúng vào tàu dầu hay eo Hormuz, giá dầu có thể đổi chiều rất nhanh.",
+    "anh": [
+     "oil tanker ship at sea",
+     "crude oil tanker"
+    ]
+   },
+   {
+    "chu_to": "ĐỪNG ĐẶT CƯỢC VÀO TIN",
+    "loi": "Với nhà đầu tư, đừng mua bán theo từng bản tin chiến sự. Giữ tỷ trọng vừa phải, có tiền mặt dự phòng, để tin xấu đến cũng không phải bán tháo.",
+    "loi_doc": "Với nhà đầu tư, đừng mua bán theo từng bản tin chiến sự. Giữ tỷ trọng vừa phải, có tiền mặt dự phòng, để tin xấu đến cũng không phải bán tháo.",
+    "the": {
+     "loai": "lon",
+     "tieu": "KHI CÓ TIN CHIẾN SỰ",
+     "nguon": "Quan điểm cá nhân",
+     "dong": [
+      [
+       "ĐỪNG MUA BÁN THEO TIN",
+       88,
+       "vang"
+      ],
+      [
+       "TỶ TRỌNG VỪA PHẢI + TIỀN MẶT DỰ PHÒNG",
+       44,
+       "trang"
+      ]
+     ]
+    }
+   }
+  ],
+  "cau_hoi": {
+   "chu_to": "TIN CHIẾN SỰ, ANH CHỊ LÀM GÌ?",
+   "loi": "Mỗi lần có tin chiến sự, anh chị bán bớt, mua thêm, hay đứng yên? Bình luận cho em biết nhé.",
+   "loi_doc": "Mỗi lần có tin chiến sự, anh chị bán bớt, mua thêm, hay đứng yên? Bình luận cho em biết nhé.",
+   "anh": [
+    "oil refinery night"
+   ]
+  }
+ }
 ]
