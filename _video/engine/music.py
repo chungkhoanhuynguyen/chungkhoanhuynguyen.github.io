@@ -130,8 +130,8 @@ def chuan_am(video, out, wav=None, I=-11.0, TP=-1.0):
     for _ in range(4):   # limiter ăn bớt mức -> đo lại, cộng dồn phần thiếu (tối đa 4 lượt)
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", src, "-vn", "-af",
                         "volume=%.2fdB,alimiter=limit=%.4f:attack=2:release=60:level=false" % (g, lim), "-ar", "48000", "-c:a", "pcm_s16le", t1], check=True)
-        dl = I - float(_do(t1)["input_i"])
-        if abs(dl) < 0.3: break
+        dl = (I + 0.4) - float(_do(t1)["input_i"])   # đo sau AAC thường thấp hơn wav 0,3–0,5 dB (am11 19/11: -11,7 đến -12,0)
+        if abs(dl) < 0.2: break
         g += dl
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", video, "-i", t1, "-map", "0:v?", "-map", "1:a", "-c:v", "copy",
                     "-c:a", "aac", "-b:a", "192k", "-ar", "44100", "-shortest", "-movflags", "+faststart", out], check=True)
