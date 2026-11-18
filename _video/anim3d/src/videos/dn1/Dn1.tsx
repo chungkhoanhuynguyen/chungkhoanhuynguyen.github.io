@@ -149,9 +149,9 @@ const PLAN: Plan[] = [
     [2, () => D3(PH("shop_ngoai", [0.5, 0.6], [CH_("smug", { wave: 1 }, 0.2), C("huy", [0.95, 0, 0.7], P("neutral", { side: 1, mode: "stand" }))], pcam(0.4)), (t) => <>{BL(1000, 110, "Đấy, tao nói rồi mà!", 0.3, "r")(t)}</>)],
   ] },
   { id: "S05", shots: [
-    [0, () => D3(PH("shop_trong", [0.5, 0.6], [HG_("sad", { acc: ["cup"] }, 0.4)], pcam(0.4)), (t) => <LocTag t={t} l1="TIỆM CỦA HÙNG" l2="Sửa xe, bán xe đầu ngõ" />)],
+    [0, () => D3(PH("tiem_hn", [0.5, 0.6], [HG_("sad", { acc: ["cup"] }, 0.4)], pcam(0.4)), (t) => <LocTag t={t} l1="TIỆM CỦA HÙNG" l2="Sửa xe, bán xe đầu ngõ" />)],
     [2, () => CD((t) => <LessonCard t={t} title="Vì sao tiệm của Hùng vắng khách" items={[{ n: "1", icon: "⚡", head: "Khách chuyển sang xe điện", body: "", at: 0.2 }, { n: "2", icon: "📦", head: "Mua phụ tùng trên mạng", body: "", at: 1.4 }, { n: "3", icon: "🏠", head: "Tiền thuê mặt bằng tăng mỗi năm", body: "", at: 2.8 }]} />)],
-    [3, () => D3(PH("shop_trong", [0.5, 0.6], [HG_("sad", {}, 0.4)], pcam(0.4)), (t) => <BigText t={t} at={0.3} text="CẢ THÁNG BÁN 2 CHIẾC XE" col="#ff4d5e" y={90} size={100} />)],
+    [3, () => D3(PH("tiem_hn", [0.5, 0.6], [HG_("sad", {}, 0.4)], pcam(0.4)), (t) => <BigText t={t} at={0.3} text="CẢ THÁNG BÁN 2 CHIẾC XE" col="#ff4d5e" y={90} size={100} />)],
   ] },
   { id: "S06", shots: [
     [0, () => CD(PR("pho", (t) => <BigText t={t} at={0.3} text="KHÔNG HIẾM" col="#fff" y={90} size={120} />))],
@@ -159,12 +159,12 @@ const PLAN: Plan[] = [
   ] },
   { id: "S07", shots: [[0, () => CD((t) => <Rows t={t} title="182.000 doanh nghiệp “rời cuộc chơi” gồm" foot="Cục Thống kê, 10 tháng 2026" rows={[{ l: "Tạm ngừng kinh doanh có thời hạn", v: "gần 92.000", at: 0.4 }, { l: "Ngừng hoạt động chờ giải thể", v: "hơn 33.700", at: 1.6 }, { l: "Hoàn tất giải thể", v: "gần 56.300", at: 2.8 }, { l: "Bình quân mỗi tháng", v: "khoảng 18.200", at: at("S07", 0, 1), big: true, col: "#ffd23f" }]} />)]] },
   { id: "S08", shots: [
-    [0, () => D3(PH("shop_trong", [0.5, 0.6], [CH_("smug", {}, 0.2), HG_("neutral", {}, 0.95)], pcam(0.4)), (t) => <>{BL(120, 110, "Thấy chưa, sập thật rồi!", 0.3)(t)}</>)],
-    [1, () => D3(PH("shop_trong", [0.5, 0.6], [CH_("dazed", {}, 0.2), HG_("stern", { acc: ["paper"], wave: 1 }, 0.95)], pcam(0.4)))],
+    [0, () => D3(PH("tiem_hn", [0.5, 0.6], [CH_("smug", {}, 0.2), HG_("neutral", {}, 0.95)], pcam(0.4)), (t) => <>{BL(120, 110, "Thấy chưa, sập thật rồi!", 0.3)(t)}</>)],
+    [1, () => D3(PH("tiem_hn", [0.5, 0.6], [CH_("dazed", {}, 0.2), HG_("stern", { acc: ["paper"], wave: 1 }, 0.95)], pcam(0.4)))],
     [2, () => CD((t) => <PaperCard t={t} title="THÔNG BÁO CỦA CƠ QUAN THUẾ" sub="V/v rà soát, làm sạch mã số thuế" lines={[{ text: "Doanh nghiệp đã ngừng hoạt động", at: 0.6 }, { text: "đề nghị hoàn tất thủ tục giải thể", at: 1.2, under: true, col: "#c8202f" }]} stamp={{ text: "CHI TIẾT THỨ HAI", at: 2.0 }} />)],
   ] },
   { id: "S09", shots: [
-    [0, () => D3(PH("shop_trong", [0.5, 0.6], [CH_("neutral", {}, 0.2), HG_("neutral", { acc: ["paper"] }, 0.95)], pcam(0.4)), (t) => <>{BL(1000, 110, "Công ty ông anh họ tôi đóng cửa từ 2023, năm nay mới giải thể xong.", 0.3, "r")(t)}</>)],
+    [0, () => D3(PH("tiem_hn", [0.5, 0.6], [CH_("neutral", {}, 0.2), HG_("neutral", { acc: ["paper"] }, 0.95)], pcam(0.4)), (t) => <>{BL(1000, 110, "Công ty ông anh họ tôi đóng cửa từ 2023, năm nay mới giải thể xong.", 0.3, "r")(t)}</>)],
     [2, () => CD((t) => <Big2 t={t} items={[{ a: "2023", b: "đã ngừng hoạt động", at: 0.2, col: "#dfe6f8" }, { a: "2026", b: "mới được đếm là giải thể", at: 1.4, col: "#ffd23f" }]} />)],
   ] },
   { id: "S10", shots: [
@@ -196,7 +196,7 @@ const PLAN: Plan[] = [
     [1, () => CD((t) => <Big2 t={t} head="Doanh nghiệp anh đang cầm thuộc phía nào?" items={[{ a: "🔧", b: "phía đang MẤT khách", at: at("S16", 1, 2), col: "#ff4d5e" }, { a: "⚡", b: "phía đang GIÀNH khách", at: at("S16", 1, 2) + 1.6, col: "#5dff9b" }]} />)],
   ] },
   { id: "S17", shots: [
-    [0, () => D3(PH("shop_trong", [0.5, 0.6], [C("huy", [0.2, 0, 0.7], P("smile", { side: -1, mode: "stand" })), HG_("sad", {}, 0.95)], pcam(0.4)), (t) => <>{BL(120, 110, "Anh không thất bại, anh chỉ đứng ở phía bị thay.", rel("S17", 1, sc("S17").sens[0].a))(t)}</>)],
+    [0, () => D3(PH("tiem_hn", [0.5, 0.6], [C("huy", [0.2, 0, 0.7], P("smile", { side: -1, mode: "stand" })), HG_("sad", {}, 0.95)], pcam(0.4)), (t) => <>{BL(120, 110, "Anh không thất bại, anh chỉ đứng ở phía bị thay.", rel("S17", 1, sc("S17").sens[0].a))(t)}</>)],
     [2, () => CD((t) => <Big2 t={t} items={[{ a: "10 + 5 NĂM", b: "lái xe, sửa xe – tay nghề vẫn có giá", at: 0.2, col: "#ffd23f" }]} />)],
   ] },
   { id: "S18", shots: [
