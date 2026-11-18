@@ -1,0 +1,21 @@
+name: Cat lai Shorts tu video dai da dung
+on:
+  workflow_dispatch:
+    inputs:
+      batch: {description: "lo (_video/queue)", required: true}
+      key: {description: "KEY", required: true}
+permissions:
+  contents: write
+jobs:
+  cat:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core >/dev/null && pip install -q numpy pillow opencv-python-headless
+      - env: {GH_TOKEN: "${{ github.token }}", GH_REPO: "${{ github.repository }}"}
+        run: |
+          B="${{ inputs.batch }}"; K="${{ inputs.key }}"; T="video-$B"; mkdir -p _video/out
+          for f in $K.mp4 $K.srt ${K}_canh.json; do gh release download "$T" -p "$f" -D _video/out --clobber; done
+          export HN_PX="_video/queue/$B/px_tuan.json"
+          timeout 900 python _video/tu_cat_short.py _video/out "$K" "$B"
+          cd _video/out && ls -la && gh release upload "$T" ${K}_S*.mp4 ${K}_R1.mp4 ${K}_shorts.json --clobber
