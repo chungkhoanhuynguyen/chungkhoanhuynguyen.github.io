@@ -444,8 +444,8 @@ function thienLo(){const n=G.tang||0,b=[];let h='<p style="font-size:12.5px">Con
 /* ================= LINH THẠCH & CẢNH GIỚI (từ Cửu Thiên Huyền Giới) =================
  1.000.000 vàng = 1 linh thạch hạ phẩm · 100 hạ = 1 trung · 100 trung = 1 thượng phẩm.
  Linh thạch dùng để đột phá cảnh giới; cảnh giới nhân giới hạn quân dẫn theo (quân = tu vi). */
-const LSR=1e6,LSKEEP=2e6,CGR=.3;
-const CGL=[['Phàm Thể',0,1],['Luyện Khí',1,1.2],['Trúc Cơ',3,1.4],['Kim Đan',8,1.7],['Nguyên Anh',20,2],['Hóa Thần',50,2.4],['Luyện Hư',100,2.8],['Hợp Thể',200,3.3],['Đại Thừa',400,3.9],['Độ Kiếp',800,4.6],['Chân Tiên',1500,5.4],['Kim Tiên',3000,6.3],['Thái Ất Kim Tiên',5000,7.4],['Đại La Kim Tiên',8000,8.7],['Chuẩn Thánh',12000,10],['Thánh Nhân',20000,12]];
+const CGX=4,LSR=1e6,LSKEEP=2e6,CGR=.3;
+const CGL=[['Phàm Thể',0,1],['Luyện Khí',4,1.2],['Trúc Cơ',12,1.4],['Kim Đan',32,1.7],['Nguyên Anh',80,2],['Hóa Thần',200,2.4],['Luyện Hư',400,2.8],['Hợp Thể',800,3.3],['Đại Thừa',1600,3.9],['Độ Kiếp',3200,4.6],['Chân Tiên',6000,5.4],['Kim Tiên',12000,6.3],['Thái Ất Kim Tiên',20000,7.4],['Đại La Kim Tiên',32000,8.7],['Chuẩn Thánh',48000,10],['Thánh Nhân',80000,12]];
 const CGP=[0,.2,.45,.75,1.1,1.5,1.95,2.45,3,3.6,4.3,5.1,6,7,8.2,9.5],cgP=g=>CGP[Math.min(g==null?((G&&G.cg)||0):g,CGP.length-1)];
 const cgM=()=>G&&G.cg?CGL[Math.min(G.cg,CGL.length-1)][2]:1;
 const cgN=()=>CGL[Math.min((G&&G.cg)||0,CGL.length-1)][0];
@@ -455,14 +455,14 @@ function lsInit(){if(!G||!G.xian||G.lsOn)return;G.lsOn=1;G.ls=G.ls||0;G.cg=G.cg|
 function lsDay(){if(!G.lsOn)return;if(G.lsAuto){const k=Math.floor(Math.max(0,G.gold-LSKEEP)/LSR);if(k>0){G.ls+=k;G.gold-=k*LSR}}}
 function lsGain(s,p){if(!G.lsOn||s.race<9||!G.L[0]||p.fac!=G.L[0].fac)return;const k=Math.max(1,Math.round([5,2,1][s.type]*(s.race==12?TMv():1)));G.ls+=k;if(p.kind=='pl')mfx.push({x:s.x,y:s.y-40,s:`+${k} 💎`,c:'#9ff0ff',t:2})}
 function cgUp(){const n=(G.cg||0)+1;if(n>=CGL.length)return;const c=CGL[n][1],pl=P0(),cap=rank(pl)[1];if(G.ls<c){toast(`Cần ${fmtLS(c)} linh thạch`,'#f88');return}if(tot(pl.t)<cap*CGR){toast(`Tu vi chưa đủ — cần quân đạt ${CGR*100}% giới hạn (${fmt(Math.ceil(cap*CGR))}) mới đột phá được`,'#f88');return}
- const ch=cgCh(),ok=Math.random()<ch;G.ls-=c;if(ok){G.cg=n;G.cgf=0}else{G.cgf=(G.cgf||0)+1;const k=.9;pl.t={inf:Math.floor(pl.t.inf*k),arc:Math.floor(pl.t.arc*k),cav:Math.floor(pl.t.cav*k)}}close();save();
+ const ch=cgCh(),ok=Math.random()<ch;G.ls-=c;if(ok){G.cg=n;G.cgf=0}else{G.cgf=(G.cgf||0)+1;var lose=.2+Math.random()*.2;const k=1-lose;pl.t={inf:Math.floor(pl.t.inf*k),arc:Math.floor(pl.t.arc*k),cav:Math.floor(pl.t.cav*k)}}close();save();
  thienKiep(n>=10?6:3,`☯ ĐỘT PHÁ ${CGL[n][0].toUpperCase()}`,ok?`${CGL[n][0].toUpperCase()}!`:'ĐỘT PHÁ THẤT BẠI',()=>{if(ok){toast(`☯ <b>ĐỘT PHÁ ${CGL[n][0].toUpperCase()}!</b><br>Thiên địa linh khí cuồn cuộn đổ về — giới hạn quân dẫn theo ${G.lk?'+'+Math.round(cgP(n)*100)+'%':'×'+CGL[n][2]} (tối đa ${fmt(rank(pl)[1])})`,'#bfffd8',1);addLog(`☯ Đột phá cảnh giới ${CGL[n][0]}.`,'#bfffd8')}
-  else{toast(`💥 <b>ĐỘT PHÁ THẤT BẠI!</b><br>Lôi kiếp đánh tan linh khí — mất ${fmtLS(c)} linh thạch, tu vi hao 10%.<br><small>Lần sau cơ hội thành công tăng lên ${Math.round(cgCh()*100)}%</small>`,'#ff9a8a',1);addLog(`💥 Đột phá ${CGL[n][0]} thất bại.`,'#ff9a8a')}},ok?1:0)}
+  else{toast(`💥 <b>ĐỘT PHÁ THẤT BẠI!</b><br>Lôi kiếp đánh tan linh khí — mất ${fmtLS(c)} linh thạch, binh lực tổn thất ${Math.round(lose*100)}%.<br><small>Lần sau cơ hội thành công tăng lên ${Math.round(cgCh()*100)}%</small>`,'#ff9a8a',1);addLog(`💥 Đột phá ${CGL[n][0]} thất bại.`,'#ff9a8a')}},ok?1:0)}
 const cgCh=()=>Math.min(.95,.5+(G&&G.cgf||0)*.1);
 function cgMenu(){if(!G||!G.lsOn)return;const pl=P0(),cap=rank(pl)[1],n=G.cg||0,nx=CGL[n+1],tv=tot(pl.t);
  let h=`<p>💎 Linh thạch: <b>${fmtLS(G.ls)}</b> · 💰 ${fmt(G.gold)} vàng</p><p>☯ Cảnh giới: <b>${cgN()}</b> · Tu vi (quân dẫn theo): <b>${fmt(tv)}</b> / ${fmt(cap)}</p>`;
  h+='<div style="max-height:34vh;overflow:auto;font-size:12.5px;line-height:1.5">'+CGL.map((c,i)=>`<div style="color:${i<n?'#9c9':i==n?'#ffe066':i==n+1?'#c9b8ff':'#778'}">${i<n?'✅':i==n?'☯':i==n+1?'🔮':'·'} ${c[0]} — giới hạn quân ${G.lk?'+'+Math.round(cgP(i)*100)+'%':'×'+c[2]}${i>0?` · ${fmtLS(c[1])}`:''}</div>`).join('')+'</div>';
- h+=`<p style="font-size:12px;color:#cdb">Linh thạch có được khi đổi vàng (tự đổi phần vàng vượt ${fmt(LSKEEP)} mỗi ngày nếu bật) và khi chiếm thành ở Cửu Thiên / Tầng Trời. Đột phá cần tu vi (quân dẫn theo) đạt ${CGR*100}% giới hạn, tỉ lệ thành công 50% (mỗi lần thất bại +10% cho lần sau). Thất bại mất linh thạch và hao 10% tu vi.</p>`;
+ h+=`<p style="font-size:12px;color:#cdb">Linh thạch có được khi đổi vàng (tự đổi phần vàng vượt ${fmt(LSKEEP)} mỗi ngày nếu bật) và khi chiếm thành ở Cửu Thiên / Tầng Trời. Đột phá cần tu vi (quân dẫn theo) đạt ${CGR*100}% giới hạn, tỉ lệ thành công 50% (mỗi lần thất bại +10% cho lần sau). Thất bại mất linh thạch và tổn thất 20–40% binh lực.</p>`;
  const b=[];if(nx){const okL=G.ls>=nx[1],okT=tv>=cap*CGR;b.push([`☯ Đột phá ${nx[0]} (${fmtLS(nx[1])}) · thành công ${Math.round(cgCh()*100)}%${okL&&okT?'':`<br><small style="color:#f99">${!okL?'thiếu linh thạch':''}${!okL&&!okT?' · ':''}${!okT?`cần tu vi ${fmt(Math.ceil(cap*CGR))} (${CGR*100}% giới hạn) — đang ${fmt(tv)}`:''}</small>`}`,cgUp])}
  const k=Math.floor(G.gold/LSR);b.push([`💱 Đổi ${fmt(k*LSR)} vàng → ${fmtLS(k)}`,()=>{G.ls+=k;G.gold-=k*LSR;cgMenu()},k<1]);
  b.push([`🔁 Tự đổi vàng thừa mỗi ngày: ${G.lsAuto?'BẬT':'TẮT'}`,()=>{G.lsAuto=G.lsAuto?0:1;cgMenu()}],['Đóng',close]);menu('☯ Cảnh giới & 💎 Linh thạch',h,b)}
@@ -595,7 +595,7 @@ function calcMV(q){calcCH();progress();const ds=G.F.map((f,i)=>i).filter(i=>G.F[
  const SCv=new Map(ds.map(i=>[i,0]));for(const s of S)if(SCv.has(s.fac))SCv.set(s.fac,SCv.get(s.fac)+1e6+tot(s.gar));for(const p of G.L)if(!p.dead&&SCv.has(p.fac))SCv.set(p.fac,SCv.get(p.fac)+tot(p.t));const b=ds.sort((x,y)=>SCv.get(y)-SCv.get(x))[0];if(b===G.mv)return;const old=G.mv;G.mv=b;const k=G.L[G.F[b].king];
  if(!q&&k){const me=k.kind=='pl';if(me||ACT==4)toast(me?'😈 BẠN đã trở thành MA VƯƠNG — kẻ mạnh nhất Vùng Đất Chết!':`😈 ${k.name} của ${facN(b)} trở thành MA VƯƠNG Vùng Đất Chết!`,'#c04cff',me);addLog(`😈 ${me?'Bạn':k.name} (${facN(b)}) trở thành Ma Vương.`,'#d58cff')}}
 /* ================= DANH HIỆU (chứng minh thực lực, mỗi danh hiệu tăng giới hạn quân) ================= */
-const DHL=[
+const DHK=.35;const DHL=[
  ['ch4','Bá Chủ Tứ Châu','🗺','#7fe3ff',.10,()=>G.open&&G.open.includes(4),'Mở Vùng Đất Chết'],
  ['tv','Diệt Tử Vực Ma','💀','#c58cff',.12,()=>G.divine,'Chiếm 1/2 Vùng Đất Chết'],
  ['tg','Chinh Phạt Thần Giới','⚡','#fff07a',.15,()=>G.xian,'Chiếm 2/4 lục địa Thần linh'],
@@ -610,15 +610,15 @@ const DHL=[
  ...[[1000,'Thiên Niên Bá Nghiệp'],[3000,'Vạn Thế Trường Tồn']].map(([n,s])=>['d'+n,s,'⏳','#c9b8a0',.05,()=>G.day>=n,`Sống tới ngày ${n}`]),
  ...[[100,'Linh Thạch Phú Hộ'],[10000,'Phú Khả Địch Thiên']].map(([n,s])=>['l'+n,s,'💎','#9ff0ff',.05,()=>(G.ls||0)>=n,`Có ${fmtLS(n)} linh thạch`])];
 let DHS=-1;const dhS=()=>DHS>=0?DHS:(DHS=S.filter(s=>s.fac==P0().fac).length);
-function dhList(){const me=P0().fac,o=[];for(const d of DHL){try{if(d[5]())o.push({id:d[0],n:d[1],ic:d[2],c:d[3],b:d[4]})}catch(e){}}
- if(G.ch)G.ch.forEach((f,c)=>{if(f===me&&CHT[c])o.push({id:'ch'+c,n:CHT[c][0],ic:CHT[c][1],c:CHT[c][2],b:.10})});return o}
+function dhList(){const me=P0().fac,o=[];for(const d of DHL){try{if(d[5]())o.push({id:d[0],n:d[1],ic:d[2],c:d[3],b:Math.round(d[4]*DHK*100)/100})}catch(e){}}
+ if(G.ch)G.ch.forEach((f,c)=>{if(f===me&&CHT[c])o.push({id:'ch'+c,n:CHT[c][0],ic:CHT[c][1],c:CHT[c][2],b:Math.round(.10*DHK*100)/100})});return o}
 function dhUpdate(quiet){if(!G||!G.L)return;DHS=-1;const L=dhList();G.dhm=1+L.reduce((a,d)=>a+d.b,0);G.dhv=L.sort((a,b)=>b.b-a.b).map(d=>[d.n,d.ic,d.c,Math.round(d.b*100)]);
  const old=new Set(G.dhid||[]),nw=L.filter(d=>!old.has(d.id));G.dhid=L.map(d=>d.id);
  if(!quiet&&old.size&&nw.length)for(const d of nw.slice(0,3)){toast(`🏅 Đạt danh hiệu <b style="color:${d.c}">${d.ic} ${d.n}</b><br>Giới hạn quân +${Math.round(d.b*100)}%`,d.c,1);addLog(`🏅 Đạt danh hiệu ${d.n}.`,d.c)}}
 const dhM=()=>G&&G.dhm||1;
 function dhMenu(){if(!G)return;dhUpdate(1);const L=dhList(),have=new Set(L.map(d=>d.id));let h=`<p>Mỗi danh hiệu tăng giới hạn quân dẫn theo. Hiện có <b>${L.length}</b> danh hiệu → ${G.lk?`giới hạn quân <b>${Math.round(plPct()*100)}%</b> sức mạnh chuẩn của tiên nhân (200% gốc + ${Math.round((dhM()-1)*100)}% danh hiệu + ${Math.round(cgP()*100)}% cảnh giới)`:`giới hạn quân <b>×${dhM().toFixed(2)}</b>${G.cg?` · cảnh giới ×${cgM()}`:''}`}</p><div style="max-height:52vh;overflow:auto;font-size:13px;line-height:1.6">`;
  h+=L.sort((a,b)=>b.b-a.b).map(d=>`<div><span style="color:${d.c}">${d.ic} <b>${d.n}</b></span> <small style="color:#9c9">+${Math.round(d.b*100)}%</small></div>`).join('');
- const lock=DHL.filter(d=>!have.has(d[0]));if(lock.length){h+='<div style="margin-top:6px;color:#889">— Chưa đạt —</div>';let shown=0;const seen=new Set();for(const d of lock){const g=d[0].replace(/\d+$/,'');if(seen.has(g))continue;seen.add(g);if(shown++>8)break;h+=`<div style="color:#778">🔒 ??? <small>(${d[6]} · +${Math.round(d[4]*100)}%)</small></div>`}}
+ const lock=DHL.filter(d=>!have.has(d[0]));if(lock.length){h+='<div style="margin-top:6px;color:#889">— Chưa đạt —</div>';let shown=0;const seen=new Set();for(const d of lock){const g=d[0].replace(/\d+$/,'');if(seen.has(g))continue;seen.add(g);if(shown++>8)break;h+=`<div style="color:#778">🔒 ??? <small>(${d[6]} · +${Math.round(d[4]*DHK*100)}%)</small></div>`}}
  h+='</div>';menu('🏅 Danh hiệu',h,[[`👁 Hiện trên đầu: ${G.dhAll==2?'chỉ danh hiệu CAO NHẤT':G.dhAll?'TẤT CẢ danh hiệu':(SMALL()?3:6)+' danh hiệu mạnh nhất'} (bấm để đổi)`,()=>{G.dhAll=G.dhAll==2?0:G.dhAll?2:1;dhMenu()}],['Đóng',close]])}
 function dhPlates(x,y,t){const v=G&&G.dhv;if(!v||!v.length)return;const mx=dhMx(),n=Math.min(mx,v.length);X.textAlign='center';X.font='800 9.5px system-ui,sans-serif';
  for(let i=0;i<n;i++){const [s,ic,c,bp]=v[i],yy=y-i*15,l=ic+' '+s+(bp?' +'+bp+'%':''),tw=X.measureText(l).width+12,gl=.6+Math.sin(t*2.5+i)*.4;
