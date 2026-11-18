@@ -1,1 +1,2 @@
 RV1811NX | 1:9 2:9 3:9 4:9 5:9 6:9 7:9 8:9 9:9 10:9 | đã soát V1 (QC ĐẠT, khung 5s toàn reel, whisper khớp mọi số) | reel cặp CH2411NX · 71,6s · -15,5 LUFS · Release reel-20261118_0040_reel
+ÂM 19/11 (NV1, am11.yml): RV1811NX -11,5 LUFS – Release reel-20261118_0040_reel đã thay file (trước -15,5)

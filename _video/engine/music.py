@@ -127,12 +127,12 @@ def chuan_am(video, out, wav=None, I=-11.0, TP=-1.0):
     d0 = _do(src); g = I - float(d0["input_i"])
     lim = 10 ** ((TP - 1.5) / 20)   # AAC vượt đỉnh 1–1,5 dB (CH2511MY V1 peak +0,1 dBFS) -> chừa 1,5 dB
     t1 = "/tmp/am1_%d.wav" % os.getpid()
-    for _ in range(4):   # limiter ăn bớt mức -> đo lại, cộng dồn phần thiếu (tối đa 4 lượt)
+    for _ in range(8):   # limiter ăn bớt mức -> đo lại, cộng dồn phần thiếu (NV1 19/11: 4 lượt chưa đủ cho giọng + nhạc, CH2511MY V2 -12,3)
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", src, "-vn", "-af",
                         "volume=%.2fdB,alimiter=limit=%.4f:attack=2:release=60:level=false" % (g, lim), "-ar", "48000", "-c:a", "pcm_s16le", t1], check=True)
         dl = (I + 0.4) - float(_do(t1)["input_i"])   # đo sau AAC thường thấp hơn wav 0,3–0,5 dB (am11 19/11: -11,7 đến -12,0)
         if abs(dl) < 0.2: break
-        g += dl
+        g += dl * 1.4
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", video, "-i", t1, "-map", "0:v?", "-map", "1:a", "-c:v", "copy",
                     "-c:a", "aac", "-b:a", "192k", "-ar", "44100", "-shortest", "-movflags", "+faststart", out], check=True)
     try: os.remove(t1)
