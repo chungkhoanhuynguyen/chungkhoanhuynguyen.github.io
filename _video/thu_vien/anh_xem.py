@@ -30,6 +30,7 @@ for i, p in enumerate(tep):
         sc.render.filepath = os.path.join(ANH, ten + ".jpg"); bpy.ops.render.render(write_still=True)
         tri = sum(sum(len(pg.vertices) - 2 for pg in o.data.polygons) for o in ms)
         cat.append(dict(tep=rel, anh=ten + ".jpg", tam_giac=tri, kich_thuoc_m=[round(kt.x, 2), round(kt.y, 2), round(kt.z, 2)], hoat_hinh=len(bpy.data.actions)))
-    except Exception as e: print("LOI", p, e)
+    except Exception as e:
+        import traceback; print("LOI", p, traceback.format_exc()[-600:].replace("\n", " | "))
     if i % 50 == 0: print("anh", i, "/", len(tep), flush=True)
 json.dump(cat, open(os.path.join(ANH, "_catalog.json"), "w"), ensure_ascii=False, indent=1); print("XONG", len(cat))

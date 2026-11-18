@@ -1,5 +1,6 @@
 name: Thu vien 3D (tai CC0 + anh xem truoc + danh muc)
-on: {workflow_dispatch: {}}
+on: {workflow_dispatch: {inputs: {nhanh: {default: "", description: "1 = chay thu nhanh"}}}}
+env: {NHANH: "${{ inputs.nhanh }}"}
 permissions: {contents: write}
 jobs:
   tv:
@@ -14,19 +15,21 @@ jobs:
           du -sh W/*
       - name: Blender anh xem truoc
         run: |
-          sudo apt-get update -q && sudo apt-get install -y -q blender xvfb > /dev/null
+          sudo apt-get update -q && sudo apt-get install -y -q blender xvfb python3-numpy > /dev/null
           blender --version | head -1
           xvfb-run -a blender -b -P _video/thu_vien/anh_xem.py -- W ANH 2>&1 | grep -E "anh |XONG|LOI" | tail -40
       - name: Danh muc + bang anh
         run: pip install -q pillow && python3 _video/thu_vien/tong_hop.py W ANH OUT
-      - name: Dong goi len release thu-vien-3d
+      - if: env.NHANH == ''
+        name: Dong goi len release thu-vien-3d
         env: {GH_TOKEN: "${{ github.token }}"}
         run: |
-          cd W && for g in kenney_3d kenney_audio; do zip -qr ../$g.zip $g; done; zip -qr ../polyhaven_models.zip polyhaven/models; zip -qr ../polyhaven_hdris.zip polyhaven/hdris; zip -qr ../polyhaven_textures.zip polyhaven/textures; cd ..
+          cd W && for g in kenney_3d kenney_audio; do [ -d $g ] && zip -qr ../$g.zip $g; done; zip -qr ../polyhaven_models.zip polyhaven/models; zip -qr ../polyhaven_hdris.zip polyhaven/hdris; zip -qr ../polyhaven_textures.zip polyhaven/textures; cd ..
           zip -qr anh_xem.zip ANH; ls -la *.zip
           gh release view thu-vien-3d >/dev/null 2>&1 || gh release create thu-vien-3d -t "Thu vien 3D CC0" -n "Tai nguyen CC0 (Kenney, Poly Haven) + anh xem truoc + danh muc"
           gh release upload thu-vien-3d *.zip OUT/catalog.json OUT/tom_tat.json OUT/*.jpg --clobber
-      - name: Luu danh muc vao repo
+      - if: env.NHANH == ''
+        name: Luu danh muc vao repo
         run: |
           cp OUT/catalog.json OUT/tom_tat.json _video/thu_vien/
           git config user.name chungkhoanhuynguyen; git config user.email noreply@github.com

@@ -10,12 +10,17 @@ def get(u, raw=False):
         except Exception as e: err = e; time.sleep(3)
     raise err
 bao = []
+if os.environ.get("NHANH"): NG = {"kenney_3d": NG["kenney_3d"][:2], "kenney_audio": NG["kenney_audio"][:1]}
 for loai in ("kenney_3d", "kenney_audio"):
     for slug in NG[loai]:
         try:
             h = get(f"https://kenney.nl/assets/{slug}")
-            z = re.findall(r'href="([^"]+\.zip)"', h)
-            if not z: bao.append(dict(goi=slug, loi="khong thay zip")); print("KHONG ZIP", slug); continue
+            z = re.findall(r'href="([^"]+\.zip)"', h) or re.findall(r'(https?://[^"\' <>]+\.zip)', h) or re.findall(r'(/media/[^"\' <>]+\.zip)', h)
+            if not z:
+                bao.append(dict(goi=slug, loi="khong thay zip")); print("KHONG ZIP", slug, len(h))
+                if slug == NG[loai][0]:
+                    for m in re.finditer(r"(?i)download", h): print("  ...", h[max(0, m.start()-200):m.start()+200].replace("\n", " "))
+                continue
             u = z[0] if z[0].startswith("http") else "https://kenney.nl" + z[0]
             b = get(u, raw=True); d = os.path.join(OUT, loai, slug); os.makedirs(d, exist_ok=True)
             zipfile.ZipFile(io.BytesIO(b)).extractall(d)

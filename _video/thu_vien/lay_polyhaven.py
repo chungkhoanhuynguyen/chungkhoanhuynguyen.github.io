@@ -13,6 +13,7 @@ def luu(u, p):
     os.makedirs(os.path.dirname(p), exist_ok=True)
     if not os.path.exists(p): open(p, "wb").write(get(u, raw=True))
 bao = []
+if os.environ.get("NHANH"): NG = {"hdris": 2, "models": 5, "textures": 2}
 for t, n in (("hdris", NG["hdris"]), ("models", NG["models"]), ("textures", NG["textures"])):
     A = get(f"https://api.polyhaven.com/assets?t={t}")
     ds = sorted(A.items(), key=lambda kv: -kv[1].get("download_count", 0))[:n]
