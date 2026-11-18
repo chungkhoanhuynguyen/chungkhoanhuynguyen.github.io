@@ -149,7 +149,7 @@ const PLAN: Plan[] = [
     [2, () => D3(PH("shop_ngoai", [0.5, 0.6], [CH_("smug", { wave: 1 }, 0.2), C("huy", [0.95, 0, 0.7], P("neutral", { side: 1, mode: "stand" }))], pcam(0.4)), (t) => <>{BL(1000, 110, "Đấy, tao nói rồi mà!", 0.3, "r")(t)}</>)],
   ] },
   { id: "S05", shots: [
-    [0, () => D3(PH("shop_trong", [0.5, 0.6], [HG_("sad", { acc: ["cup"] }, 0.4)], pcam(0.4)), (t) => <LocTag t={t} l1="BÊN TRONG TIỆM" l2="Giữa đống lốp xe" />)],
+    [0, () => D3(PH("shop_trong", [0.5, 0.6], [HG_("sad", { acc: ["cup"] }, 0.4)], pcam(0.4)), (t) => <LocTag t={t} l1="TIỆM CỦA HÙNG" l2="Sửa xe, bán xe đầu ngõ" />)],
     [2, () => CD((t) => <LessonCard t={t} title="Vì sao tiệm của Hùng vắng khách" items={[{ n: "1", icon: "⚡", head: "Khách chuyển sang xe điện", body: "", at: 0.2 }, { n: "2", icon: "📦", head: "Mua phụ tùng trên mạng", body: "", at: 1.4 }, { n: "3", icon: "🏠", head: "Tiền thuê mặt bằng tăng mỗi năm", body: "", at: 2.8 }]} />)],
     [3, () => D3(PH("shop_trong", [0.5, 0.6], [HG_("sad", {}, 0.4)], pcam(0.4)), (t) => <BigText t={t} at={0.3} text="CẢ THÁNG BÁN 2 CHIẾC XE" col="#ff4d5e" y={90} size={100} />)],
   ] },
