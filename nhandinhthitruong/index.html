@@ -38,19 +38,21 @@ input:focus{outline:2px solid var(--vang);outline-offset:1px}.an{position:absolu
 <header><div class="logo">HN</div><div><h1>Nhận định thị trường</h1><p class="sub" id="cn"></p></div><button class="thoat" id="thoat">Thoát</button></header>
 <h2>Tin hôm nay</h2><div id="moi"></div>
 <h2>Tin nóng trong nước &amp; thế giới</h2><div class="tab"><button class="on" data-g="vn">Trong nước</button><button data-g="tg">Thế giới</button></div><div id="tt"></div>
+<h2>Khách hàng VIP</h2><div id="vipk" class="the"><form id="fv" autocomplete="on"><input class="an" type="text" name="username" autocomplete="username" value="huynguyen-vip" tabindex="-1" aria-hidden="true"><input id="mkv" name="password" type="password" placeholder="Mật khẩu mục VIP" autocomplete="current-password" required><button type="submit">Mở mục VIP</button><div class="loi" id="loiv"></div></form></div><div id="vip"></div>
 <h2>Các phiên trước</h2><div id="cu"></div>
 </div></div>
 <script>
 const b64=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
-async function giai(mk){const r=await fetch('data.enc.json?'+Date.now());const e=await r.json();
+async function giai(mk,f){const r=await fetch((f||'data.enc.json')+'?'+Date.now());const e=await r.json();
  const k0=await crypto.subtle.importKey('raw',new TextEncoder().encode(mk),'PBKDF2',false,['deriveKey']);
  const k=await crypto.subtle.deriveKey({name:'PBKDF2',salt:b64(e.salt),iterations:e.vong,hash:'SHA-256'},k0,{name:'AES-GCM',length:256},false,['decrypt']);
  const p=await crypto.subtle.decrypt({name:'AES-GCM',iv:b64(e.iv)},k,b64(e.ct));const g=JSON.parse(new TextDecoder().decode(p));return Array.isArray(g)?{ds:g,tin_tuc:[]}:g}
+function oTin(nhan,sub,txt,lop){return the({buoi:lop,phien:'',tin:txt,_n:nhan,_s:sub})}
 const ngay=p=>p.split('-').reverse().join('/'), THU=['Chủ nhật','Thứ Hai','Thứ Ba','Thứ Tư','Thứ Năm','Thứ Sáu','Thứ Bảy'];
 const thu=p=>THU[new Date(p+'T00:00:00').getDay()];
 function the(x){const d=document.createElement('div');d.className='the '+(x.buoi==='sang'?'sang':'chieu');
- const h=document.createElement('div');h.className='dau';const n=document.createElement('div');n.className='nhan';n.textContent=x.buoi==='sang'?'Tin sáng 8h30':'Kết phiên';
- const sm=document.createElement('small');sm.textContent=thu(x.phien)+', '+ngay(x.phien);n.appendChild(sm);
+ const h=document.createElement('div');h.className='dau';const n=document.createElement('div');n.className='nhan';n.textContent=x._n||(x.buoi==='sang'?'Tin sáng 8h30':'Kết phiên');
+ const sm=document.createElement('small');sm.textContent=x._s!==undefined?x._s:thu(x.phien)+', '+ngay(x.phien);n.appendChild(sm);
  const b=document.createElement('button');b.textContent='Sao chép';b.onclick=async()=>{try{await navigator.clipboard.writeText(x.tin);b.textContent='Đã chép ✓';b.classList.add('ok');setTimeout(()=>{b.textContent='Sao chép';b.classList.remove('ok')},1800)}catch(e){b.textContent='Không chép được'}};
  h.append(n,b);const p=document.createElement('pre');p.textContent=x.tin;d.append(h,p);return d}
 function tinTuc(ds,g){const o=document.getElementById('tt');o.innerHTML='';const l=ds.filter(x=>x.g===g);if(!l.length){o.innerHTML='<div class="the">Chưa có tin nóng mục này.</div>';return}
@@ -63,6 +65,16 @@ function hien(g){document.getElementById('khoa').style.display='none';document.g
  const tt=g.tin_tuc||[];document.querySelectorAll('.tab button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab button').forEach(x=>x.classList.toggle('on',x===b));tinTuc(tt,b.dataset.g)});tinTuc(tt,'vn')}
 async function mo(mk,luu){try{const g=await giai(mk);if(luu)try{localStorage.setItem('nd_mk',mk)}catch(e){}hien(g)}catch(e){document.getElementById('loi').textContent='Sai mật khẩu hoặc chưa tải được dữ liệu';try{localStorage.removeItem('nd_mk')}catch(x){}}}
 document.getElementById('f').onsubmit=e=>{e.preventDefault();mo(document.getElementById('mk').value,true)};
-document.getElementById('thoat').onclick=()=>{try{localStorage.removeItem('nd_mk')}catch(e){}location.reload()};
+document.getElementById('thoat').onclick=()=>{try{localStorage.removeItem('nd_mk');localStorage.removeItem('nd_vip')}catch(e){}location.reload()};
+function hienVip(g){document.getElementById('vipk').style.display='none';const o=document.getElementById('vip');o.innerHTML='';
+ (g.ds||[]).forEach((x,i)=>{const box=i?document.createElement('details'):document.createElement('div');const nd=thu(x.phien)+', '+ngay(x.phien);
+  if(i){const sm=document.createElement('summary');sm.textContent='VIP · '+nd;box.appendChild(sm)}
+  (x.v306||[]).forEach(t=>box.appendChild(oTin('VIP7 · Lướt sóng',nd,t,'chieu')));
+  if((x.ts||[]).length)(x.ts||[]).forEach(t=>box.appendChild(oTin('Tích sản ngân hàng',nd,t,'sang')));else box.appendChild(oTin('Tích sản ngân hàng',nd,'Hôm nay chưa có điểm tích sản mới','sang'));
+  if((x.ts_bang||[]).length){const d=document.createElement('details');const sm=document.createElement('summary');sm.textContent='Bảng tích sản nội bộ – không gửi khách';d.appendChild(sm);const c=document.createElement('div');c.className='the';const p=document.createElement('pre');p.textContent=x.ts_bang.join('\n');c.appendChild(p);d.appendChild(c);box.appendChild(d)}
+  o.appendChild(box)})}
+async function moVip(mk,luu){try{const g=await giai(mk,'data.vip.enc.json');if(luu)try{localStorage.setItem('nd_vip',mk)}catch(e){}hienVip(g)}catch(e){document.getElementById('loiv').textContent='Sai mật khẩu mục VIP';try{localStorage.removeItem('nd_vip')}catch(x){}}}
+document.getElementById('fv').onsubmit=e=>{e.preventDefault();moVip(document.getElementById('mkv').value,true)};
 let s=null;try{s=localStorage.getItem('nd_mk')}catch(e){}if(s)mo(s,false);
+let sv=null;try{sv=localStorage.getItem('nd_vip')}catch(e){}if(sv)moVip(sv,false);
 </script></body></html>
