@@ -15,14 +15,14 @@ button:active{transform:scale(.97)}button.ok{background:#5dff9b}
 details summary{cursor:pointer;color:var(--mo);margin:24px 0 12px;font-weight:700}
 .cu pre{font-size:15px;color:#e2dcf5}
 </style></head><body><div class="wrap">
-<h1>Nhận định thị trường</h1><p class="sub">Tự cập nhật khoảng 16h–17h30 mỗi ngày giao dịch · Trang riêng</p>
+<h1>Nhận định thị trường</h1><p class="sub">Tin sáng khoảng 8h30 · Kết phiên khoảng 15h30 · Trang riêng</p>
 <div id="moi"><div class="the">Đang tải…</div></div>
 <details><summary>Các phiên trước</summary><div id="cu" class="cu"></div></details>
 </div>
 <script>
-const the=(x,nut)=>{const d=document.createElement('div');d.className='the';const h=document.createElement('div');h.className='ngay';h.textContent='Phiên '+x.phien.split('-').reverse().join('/');
+const the=(x,nut)=>{const d=document.createElement('div');d.className='the';const h=document.createElement('div');h.className='ngay';h.textContent=((x.buoi||'chieu')==='sang'?'Sáng ':'Kết phiên ')+x.phien.split('-').reverse().join('/');
 if(nut){const b=document.createElement('button');b.textContent='Sao chép';b.onclick=async()=>{try{await navigator.clipboard.writeText(x.tin);b.textContent='Đã chép ✓';b.classList.add('ok');setTimeout(()=>{b.textContent='Sao chép';b.classList.remove('ok')},1800)}catch(e){b.textContent='Không chép được'}};h.appendChild(b)}
 const p=document.createElement('pre');p.textContent=x.tin;d.append(h,p);return d};
 fetch('data.json?'+Date.now()).then(r=>r.json()).then(ds=>{const m=document.getElementById('moi');m.innerHTML='';if(!ds.length){m.textContent='Chưa có dữ liệu';return}
-m.appendChild(the(ds[0],true));const c=document.getElementById('cu');ds.slice(1).forEach(x=>c.appendChild(the(x,true)))}).catch(()=>{document.getElementById('moi').innerHTML='<div class="the">Chưa tải được dữ liệu.</div>'});
+const n=ds.length>1&&ds[1].phien===ds[0].phien?2:1;ds.slice(0,n).forEach(x=>m.appendChild(the(x,true)));const c=document.getElementById('cu');ds.slice(n).forEach(x=>c.appendChild(the(x,true)))}).catch(()=>{document.getElementById('moi').innerHTML='<div class="the">Chưa tải được dữ liệu.</div>'});
 </script></body></html>
