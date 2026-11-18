@@ -11,7 +11,7 @@ jobs:
         with: {sparse-checkout: _video/thu_vien}
       - name: Tai Kenney + Poly Haven
         run: |
-          mkdir -p W && python3 -u _video/thu_vien/lay_kenney.py W && python3 -u _video/thu_vien/lay_polyhaven.py W
+          mkdir -p W && echo "[]" > W/kenney_bao_cao.json && python3 -u _video/thu_vien/lay_polyhaven.py W
           du -sh W/*
       - name: Blender anh xem truoc
         run: |
