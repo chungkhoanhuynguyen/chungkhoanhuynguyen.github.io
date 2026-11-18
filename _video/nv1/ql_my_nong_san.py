@@ -36,7 +36,7 @@ TP = 'ov:Ho Chi Minh City skyline night||Ho Chi Minh City skyline night'
 BX = 'ov:Bitexco Financial Tower||Ho Chi Minh City skyline night'
 GA = 'ov:Broiler chickens||Broiler chickens'
 CT = 'ov:Container ship||Container ship'
-QT = 'ov:Blue Marble||World map'
+QT = 'ov:Ho Chi Minh City skyline night||Hanoi skyline night'   # V2: 'Blue Marble' không ra, rơi về bản đồ 1689/1681 (cấm)
 TAO = 'ov:Red apples||Red apples'
 HS = 'ov:Ho Chi Minh City Stock Exchange||Ho Chi Minh City skyline night'
 S = [
@@ -148,7 +148,7 @@ S = [
            "Ba: nghỉ một lứa để giữ tiền, nhưng có thể mất khách quen.")),
  dict(k='checklist', ch='Chương 6 – Huy Nguyễn ghép ba chi tiết', anh=GA, cap=('3 CHI TIẾT ĐẦU PHIM', 'GHÉP LẠI THÀNH LỜI GIẢI'), cols=CC, moc=True,
       items=[('1. Đùi gà Mỹ: đụng gà công nghiệp', V_), ('2. Thùng USA: lương đến từ Mỹ', X_), ('3. Gà ta: hàng đông lạnh không có', G_)],
-      say=("Giờ quay lại ba chi tiết đầu phim. Chi tiết thứ nhất, túi đùi gà ghi xuất xứ Hoa Kỳ: trong thịt gà nhập khẩu, hơn sáu phần mười đến từ Mỹ. Và chủ yếu là đùi góc tư đông lạnh, đụng thẳng gà công nghiệp trong nước. Tức là chỗ bị ép không phải cả ngành chăn nuôi, mà đúng trại gà trắng của anh Tâm. "
+      say=("Giờ quay lại ba chi tiết đầu phim. Chi tiết thứ nhất, túi đùi gà ghi xuất xứ Hoa Kỳ: trong thịt gà nhập khẩu, hơn sáu mươi phần trăm đến từ Mỹ. Và chủ yếu là đùi góc tư đông lạnh, đụng thẳng gà công nghiệp trong nước. Tức là chỗ bị ép không phải cả ngành chăn nuôi, mà đúng trại gà trắng của anh Tâm. "
            "Chi tiết thứ hai, thùng hàng in U S A: lương tăng ca của chị Thu đến từ hàng bán sang Mỹ. Mà muốn giữ cửa bán đó, Việt Nam phải mua thêm hàng Mỹ. Hai chuyện đi cùng nhau, nên đừng chờ hàng Mỹ ngừng về. ")),
  dict(k='checklist', anh=GA, cap=('LỜI GIẢI', 'KHÔNG PHẢI MAY MẮN'), cols=CC, moc=True,
       items=[('Rời đúng chỗ hàng Mỹ đổ vào', R_), ('Giữ chặt nguồn lương từ hàng bán sang Mỹ', X_), ('Đi vào chỗ hàng đông lạnh không có', G_)],

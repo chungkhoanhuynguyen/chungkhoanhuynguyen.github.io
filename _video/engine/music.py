@@ -125,7 +125,7 @@ def chuan_am(video, out, wav=None, I=-11.0, TP=-1.0):
     Không nén lại giọng (giọng đã làm sạch ở mix). Video giữ nguyên (-c:v copy). Dùng được cho mp4 cũ: chuan_am(a.mp4, b.mp4)."""
     src = wav or video
     d0 = _do(src); g = I - float(d0["input_i"])
-    lim = 10 ** ((TP - 0.5) / 20)
+    lim = 10 ** ((TP - 1.5) / 20)   # AAC vượt đỉnh 1–1,5 dB (CH2511MY V1 peak +0,1 dBFS) -> chừa 1,5 dB
     t1 = "/tmp/am1_%d.wav" % os.getpid()
     for _ in range(4):   # limiter ăn bớt mức -> đo lại, cộng dồn phần thiếu (tối đa 4 lượt)
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", src, "-vn", "-af",
