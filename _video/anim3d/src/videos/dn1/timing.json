@@ -1,0 +1,589 @@
+{
+ "total": 292.433,
+ "scenes": [
+  {
+   "id": "S01",
+   "a": 0.0,
+   "b": 17.56632,
+   "fa": 0,
+   "fb": 527,
+   "sens": [
+    {
+     "text": "Thật tệ khi một con số trên báo làm mình bán sạch cổ phiếu, mà không đọc đến dòng thứ hai.",
+     "a": 1.26632,
+     "b": 6.00211,
+     "fa": 38,
+     "ns": 215956
+    },
+    {
+     "text": "Tám giờ sáng, Chiến Lăng Nhăng gọi cho em, giọng run run: Huy ơi, một trăm tám mươi hai nghìn doanh nghiệp rời cuộc chơi, kinh tế sắp sập rồi, tao bán hết đây.",
+     "a": 6.46632,
+     "b": 15.29895,
+     "fa": 194,
+     "ns": 402770
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "a": 17.56632,
+   "b": 39.2,
+   "fa": 527,
+   "fb": 1176,
+   "sens": [
+    {
+     "text": "Em bảo Chiến khoan bấm.",
+     "a": 18.2,
+     "b": 19.23789,
+     "fa": 546,
+     "ns": 47314
+    },
+    {
+     "text": "Chiều nay ra tiệm xe của Hùng Xa Lộ, rồi hãy quyết.",
+     "a": 20.0,
+     "b": 22.82211,
+     "fa": 600,
+     "ns": 128675
+    },
+    {
+     "text": "Anh chị nhớ giúp em ba chi tiết trong phim này: một tờ giấy dán trên cửa tiệm, một lá thư của cơ quan thuế, và một cửa hàng mới khai trương bên kia đường.",
+     "a": 23.26632,
+     "b": 32.47263,
+     "fa": 698,
+     "ns": 419802
+    },
+    {
+     "text": "Cuối phim, ba chi tiết đó sẽ trả lời câu hỏi của Chiến.",
+     "a": 32.93368,
+     "b": 36.28632,
+     "fa": 988,
+     "ns": 152874
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "a": 39.2,
+   "b": 50.1,
+   "fa": 1176,
+   "fb": 1503,
+   "sens": [
+    {
+     "text": "Hùng Xa Lộ, bốn mươi hai tuổi, mười năm chạy xe tải đường dài, nên cả phố gọi là Hùng Xa Lộ.",
+     "a": 39.2,
+     "b": 44.30421,
+     "fa": 1176,
+     "ns": 232728
+    },
+    {
+     "text": "Năm năm trước, anh dồn hết tiền dành dụm mở một tiệm bán và sửa xe máy ở đầu ngõ.",
+     "a": 44.76632,
+     "b": 49.28211,
+     "fa": 1343,
+     "ns": 205912
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "a": 50.1,
+   "b": 62.03368,
+   "fa": 1503,
+   "fb": 1861,
+   "sens": [
+    {
+     "text": "Chiều đó, Chiến đến nơi thì thấy chi tiết thứ nhất.",
+     "a": 50.1,
+     "b": 52.81263,
+     "fa": 1503,
+     "ns": 123673
+    },
+    {
+     "text": "Trên cửa cuốn, một tờ giấy dán vội: sang nhượng cửa hàng, thanh lý toàn bộ phụ tùng.",
+     "a": 53.26632,
+     "b": 57.55158,
+     "fa": 1598,
+     "ns": 195377
+    },
+    {
+     "text": "Chiến quay sang em: đấy, tao nói rồi mà.",
+     "a": 58.0,
+     "b": 60.38947,
+     "fa": 1740,
+     "ns": 108958
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "a": 62.03368,
+   "b": 76.66632,
+   "fa": 1861,
+   "fb": 2300,
+   "sens": [
+    {
+     "text": "Bên trong, Hùng ngồi giữa đống lốp xe.",
+     "a": 62.03368,
+     "b": 64.06105,
+     "fa": 1861,
+     "ns": 92461
+    },
+    {
+     "text": "Anh rót nước, cười buồn: ba năm nay khách mua xe giảm dần.",
+     "a": 64.53368,
+     "b": 67.51895,
+     "fa": 1936,
+     "ns": 136159
+    },
+    {
+     "text": "Người ta chuyển sang xe điện, mua phụ tùng trên mạng, tiền thuê mặt bằng thì năm nào cũng tăng.",
+     "a": 67.96632,
+     "b": 73.10737,
+     "fa": 2039,
+     "ns": 234418
+    },
+    {
+     "text": "Tháng trước anh chỉ bán được hai chiếc xe.",
+     "a": 73.56632,
+     "b": 75.87263,
+     "fa": 2207,
+     "ns": 105171
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "a": 76.66632,
+   "b": 95.5,
+   "fa": 2300,
+   "fb": 2865,
+   "sens": [
+    {
+     "text": "Câu chuyện của Hùng không hiếm.",
+     "a": 76.66632,
+     "b": 78.11789,
+     "fa": 2300,
+     "ns": 66163
+    },
+    {
+     "text": "Theo Cục Thống kê, mười tháng năm nay, khoảng năm mươi sáu nghìn ba trăm doanh nghiệp đã hoàn tất giải thể, tăng gấp hơn hai lần cùng kỳ.",
+     "a": 78.9,
+     "b": 85.33053,
+     "fa": 2367,
+     "ns": 293215
+    },
+    {
+     "text": "Nhóm nhiều nhất chính là bán buôn, bán lẻ, sửa chữa ô tô, xe máy: hơn hai mươi mốt nghìn sáu trăm doanh nghiệp, tăng một trăm hai mươi phần trăm.",
+     "a": 85.8,
+     "b": 93.42526,
+     "fa": 2574,
+     "ns": 347719
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "a": 95.5,
+   "b": 108.23368,
+   "fa": 2865,
+   "fb": 3247,
+   "sens": [
+    {
+     "text": "Cộng thêm chín mươi hai nghìn doanh nghiệp tạm ngừng kinh doanh và ba mươi ba nghìn bảy trăm doanh nghiệp chờ giải thể, ta có con số một trăm tám mươi hai nghìn trên báo.",
+     "a": 95.5,
+     "b": 104.45158,
+     "fa": 2865,
+     "ns": 408175
+    },
+    {
+     "text": "Trung bình mỗi tháng hơn mười tám nghìn doanh nghiệp rút lui.",
+     "a": 104.9,
+     "b": 107.42,
+     "fa": 3147,
+     "ns": 114905
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "a": 108.23368,
+   "b": 123.2,
+   "fa": 3247,
+   "fb": 3696,
+   "sens": [
+    {
+     "text": "Chiến đọc đến đây thì gật gù: thấy chưa, sập thật rồi.",
+     "a": 109.93368,
+     "b": 112.94632,
+     "fa": 3298,
+     "ns": 137411
+    },
+    {
+     "text": "Nhưng Hùng đứng dậy, mở ngăn kéo, đưa cho Chiến chi tiết thứ hai.",
+     "a": 113.4,
+     "b": 116.90632,
+     "fa": 3402,
+     "ns": 159899
+    },
+    {
+     "text": "Một lá thư của cơ quan thuế, về việc rà soát, làm sạch mã số thuế.",
+     "a": 117.36632,
+     "b": 121.33895,
+     "fa": 3521,
+     "ns": 181131
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "a": 123.2,
+   "b": 139.76632,
+   "fa": 3696,
+   "fb": 4193,
+   "sens": [
+    {
+     "text": "Hùng kể: ông anh họ tôi có cái công ty đóng cửa từ năm hai nghìn không trăm hai mươi ba, mà giờ mới làm xong thủ tục giải thể, vì năm nay thuế rà soát, bắt phải làm cho dứt điểm.",
+     "a": 123.2,
+     "b": 133.52632,
+     "fa": 3696,
+     "ns": 470887
+    },
+    {
+     "text": "Chiến im lặng.",
+     "a": 134.0,
+     "b": 134.70105,
+     "fa": 4020,
+     "ns": 31988
+    },
+    {
+     "text": "Công ty đó đã chết từ ba năm trước, nhưng năm nay mới được đếm.",
+     "a": 135.46632,
+     "b": 138.96211,
+     "fa": 4064,
+     "ns": 159407
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "a": 139.76632,
+   "b": 157.9,
+   "fa": 4193,
+   "fb": 4737,
+   "sens": [
+    {
+     "text": "Đây là chỗ ít ai đọc kỹ.",
+     "a": 139.76632,
+     "b": 141.25895,
+     "fa": 4193,
+     "ns": 68056
+    },
+    {
+     "text": "Năm nay Bộ Tài chính có chiến dịch làm sạch mã số thuế, nên nhiều doanh nghiệp ngừng hoạt động từ các năm trước nay mới hoàn tất giải thể.",
+     "a": 141.73368,
+     "b": 148.38947,
+     "fa": 4252,
+     "ns": 303496
+    },
+    {
+     "text": "Một chuyên gia ở Viện Nghiên cứu phát triển Thành phố Hồ Chí Minh nhận xét: con số tăng mạnh có yếu tố kỹ thuật và hành chính, không hoàn toàn phản ánh sức khỏe thật của doanh nghiệp.",
+     "a": 148.83368,
+     "b": 157.08737,
+     "fa": 4465,
+     "ns": 376376
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "a": 157.9,
+   "b": 173.1,
+   "fa": 4737,
+   "fb": 5193,
+   "sens": [
+    {
+     "text": "Và có hai con số đi ngược chiều mà ít ai nhắc.",
+     "a": 157.9,
+     "b": 160.20842,
+     "fa": 4737,
+     "ns": 105261
+    },
+    {
+     "text": "Số doanh nghiệp tạm ngừng kinh doanh giảm mười hai phẩy bảy phần trăm.",
+     "a": 160.66632,
+     "b": 164.29789,
+     "fa": 4820,
+     "ns": 165579
+    },
+    {
+     "text": "Số chờ giải thể giảm tới bốn mươi hai phần trăm.",
+     "a": 164.76632,
+     "b": 167.06737,
+     "fa": 4943,
+     "ns": 104935
+    },
+    {
+     "text": "Nếu kinh tế đang sập thật, hai con số này phải tăng, chứ không giảm.",
+     "a": 167.53368,
+     "b": 171.24316,
+     "fa": 5026,
+     "ns": 169162
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "a": 173.1,
+   "b": 186.93368,
+   "fa": 5193,
+   "fb": 5608,
+   "sens": [
+    {
+     "text": "Ra khỏi tiệm, Chiến đứng sững trước chi tiết thứ ba.",
+     "a": 173.1,
+     "b": 176.02947,
+     "fa": 5193,
+     "ns": 133593
+    },
+    {
+     "text": "Bên kia đường, một chuỗi cửa hàng xe điện vừa khai trương, bóng bay, loa nhạc, khách xếp hàng lái thử.",
+     "a": 176.5,
+     "b": 182.18105,
+     "fa": 5295,
+     "ns": 259042
+    },
+    {
+     "text": "Chiến hỏi: thế rốt cuộc là kinh tế xấu hay tốt?",
+     "a": 182.63368,
+     "b": 185.28316,
+     "fa": 5479,
+     "ns": 120850
+    }
+   ]
+  },
+  {
+   "id": "S13",
+   "a": 186.93368,
+   "b": 205.43368,
+   "fa": 5608,
+   "fb": 6163,
+   "sens": [
+    {
+     "text": "Em trả lời bằng hai con số nữa.",
+     "a": 186.93368,
+     "b": 188.54737,
+     "fa": 5608,
+     "ns": 73624
+    },
+    {
+     "text": "Mười tháng qua vẫn có hơn một trăm sáu mươi hai nghìn doanh nghiệp thành lập mới, gần như bằng năm ngoái.",
+     "a": 189.0,
+     "b": 194.08737,
+     "fa": 5670,
+     "ns": 231989
+    },
+    {
+     "text": "Nhưng vốn đăng ký bình quân mỗi doanh nghiệp mới tăng ba mươi tư phẩy tám phần trăm, lên mười ba phẩy hai tỷ đồng.",
+     "a": 194.53368,
+     "b": 200.54632,
+     "fa": 5836,
+     "ns": 274173
+    },
+    {
+     "text": "Còn số lao động đăng ký ở các doanh nghiệp mới thì giảm mười bảy phần trăm.",
+     "a": 201.0,
+     "b": 204.63684,
+     "fa": 6030,
+     "ns": 165852
+    }
+   ]
+  },
+  {
+   "id": "S14",
+   "a": 205.43368,
+   "b": 229.13368,
+   "fa": 6163,
+   "fb": 6874,
+   "sens": [
+    {
+     "text": "Ghép ba chi tiết lại, câu trả lời hiện ra.",
+     "a": 205.43368,
+     "b": 208.03474,
+     "fa": 6163,
+     "ns": 118644
+    },
+    {
+     "text": "Tờ giấy sang nhượng cho thấy nỗi đau là thật, những tiệm nhỏ như của Hùng đang bị ép rất mạnh.",
+     "a": 208.5,
+     "b": 213.51684,
+     "fa": 6255,
+     "ns": 228774
+    },
+    {
+     "text": "Lá thư thuế cho thấy con số trên báo bị đẩy lên một phần vì dọn sổ sách cũ.",
+     "a": 213.96632,
+     "b": 218.97368,
+     "fa": 6419,
+     "ns": 228327
+    },
+    {
+     "text": "Còn cửa hàng bên kia đường cho thấy tiền không biến mất, nó đang chảy sang những doanh nghiệp lớn hơn, nhiều vốn hơn, theo kịp thay đổi.",
+     "a": 219.43368,
+     "b": 227.26316,
+     "fa": 6583,
+     "ns": 357041
+    }
+   ]
+  },
+  {
+   "id": "S15",
+   "a": 229.13368,
+   "b": 236.0,
+   "fa": 6874,
+   "fb": 7080,
+   "sens": [
+    {
+     "text": "Kinh tế không sập, anh ạ.",
+     "a": 229.13368,
+     "b": 230.62211,
+     "fa": 6874,
+     "ns": 67876
+    },
+    {
+     "text": "Kinh tế đang thay máu.",
+     "a": 231.4,
+     "b": 232.57474,
+     "fa": 6942,
+     "ns": 53557
+    },
+    {
+     "text": "Và thay máu thì luôn có người đau.",
+     "a": 233.33368,
+     "b": 235.17789,
+     "fa": 7000,
+     "ns": 84125
+    }
+   ]
+  },
+  {
+   "id": "S16",
+   "a": 236.0,
+   "b": 250.63368,
+   "fa": 7080,
+   "fb": 7519,
+   "sens": [
+    {
+     "text": "Chiến hỏi: thế tao có nên bán cổ phiếu không?",
+     "a": 236.0,
+     "b": 238.27368,
+     "fa": 7080,
+     "ns": 103681
+    },
+    {
+     "text": "Em nói: anh đừng bán vì một tiêu đề.",
+     "a": 238.96632,
+     "b": 241.23684,
+     "fa": 7169,
+     "ns": 103523
+    },
+    {
+     "text": "Hãy hỏi doanh nghiệp anh đang cầm thuộc phía nào: phía đang mất khách như tiệm của Hùng, hay phía đang giành khách như cửa hàng bên kia đường.",
+     "a": 241.7,
+     "b": 248.35684,
+     "fa": 7251,
+     "ns": 303566
+    }
+   ]
+  },
+  {
+   "id": "S17",
+   "a": 250.63368,
+   "b": 265.1,
+   "fa": 7519,
+   "fb": 7953,
+   "sens": [
+    {
+     "text": "Rồi em nói thêm với Hùng.",
+     "a": 250.63368,
+     "b": 252.00842,
+     "fa": 7519,
+     "ns": 62697
+    },
+    {
+     "text": "Anh không thất bại, anh chỉ đứng ở phía bị thay.",
+     "a": 252.76632,
+     "b": 255.44737,
+     "fa": 7583,
+     "ns": 122220
+    },
+    {
+     "text": "Mười năm lái xe, năm năm sửa xe, tay nghề đó vẫn có giá.",
+     "a": 255.9,
+     "b": 259.80632,
+     "fa": 7677,
+     "ns": 178115
+    },
+    {
+     "text": "Nhiều chuỗi xe điện đang cần thợ kỹ thuật lành nghề.",
+     "a": 260.26632,
+     "b": 262.82632,
+     "fa": 7808,
+     "ns": 116736
+    }
+   ]
+  },
+  {
+   "id": "S18",
+   "a": 265.1,
+   "b": 276.8,
+   "fa": 7953,
+   "fb": 8304,
+   "sens": [
+    {
+     "text": "Hai tuần sau, Hùng nhận lời làm trưởng xưởng kỹ thuật cho chính cửa hàng xe điện bên kia đường.",
+     "a": 265.1,
+     "b": 269.60526,
+     "fa": 7953,
+     "ns": 205460
+    },
+    {
+     "text": "Còn Chiến, lần đầu tiên, giữ nguyên danh mục, và ngồi đọc hết một bài báo, đến tận dòng cuối.",
+     "a": 270.06632,
+     "b": 275.14211,
+     "fa": 8102,
+     "ns": 231455
+    }
+   ]
+  },
+  {
+   "id": "S19",
+   "a": 276.8,
+   "b": 292.43368,
+   "fa": 8304,
+   "fb": 8773,
+   "sens": [
+    {
+     "text": "Còn anh chị, mỗi lần đọc một con số giật mình trên báo, anh chị có đọc tiếp dòng thứ hai không?",
+     "a": 277.43368,
+     "b": 282.53895,
+     "fa": 8323,
+     "ns": 232818
+    },
+    {
+     "text": "Bình luận cho em biết nhé.",
+     "a": 283.23368,
+     "b": 284.24947,
+     "fa": 8497,
+     "ns": 46321
+    },
+    {
+     "text": "Ai muốn học cách đọc số liệu và quản trị rủi ro, cứ vào web Chứng Khoán Huy Nguyễn.",
+     "a": 285.03368,
+     "b": 289.29789,
+     "fa": 8551,
+     "ns": 194456
+    }
+   ]
+  }
+ ]
+}
