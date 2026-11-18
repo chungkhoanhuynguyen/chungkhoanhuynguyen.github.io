@@ -1,0 +1,5 @@
+{
+ "kenney_3d": ["city-kit-commercial","city-kit-suburban","city-kit-roads","city-kit-industrial","car-kit","nature-kit","furniture-kit","food-kit","survival-kit","holiday-kit","mini-characters","blocky-characters","animated-characters-1","animated-characters-2","animated-characters-3","modular-buildings","watercraft-pack","pirate-kit","train-kit","fantasy-town-kit","mini-market","building-kit","platformer-kit","minigolf-kit","coaster-kit","mini-arena","prototype-kit","space-station-kit","racing-kit","retro-urban-kit"],
+ "kenney_audio": ["impact-sounds","interface-sounds","ui-audio","rpg-audio","casino-audio","digital-audio","music-jingles","voiceover-pack","sci-fi-sounds"],
+ "polyhaven": {"hdris": 40, "models": 400, "textures": 60}
+}
