@@ -29,7 +29,18 @@ def ngat(src, a, dmax=58.0, dmin=30.0):
     try:
         srt = os.environ.get("SRT") or os.path.splitext(src)[0] + ".srt"
         e = ngat_cau(srt, a, dmax, dmin) if os.path.exists(srt) else None
-        if e: return e
+        if e:
+            # NV1 19/11: mốc .srt có thể lệch giọng thật ~1–1,5s (CH2511MY_S2 lọt "Và Việt Nam..." ở cuối) -> chốt vào khoảng lặng thật gần nhất trước mốc
+            try:
+                st = []
+                for nn in (-30, -26, -22, -20):   # tiếng -11 LUFS + nhạc nền: khoảng lặng giữa câu chỉ còn quanh -22 dB
+                    r = subprocess.run(["ffmpeg", "-hide_banner", "-ss", str(a + e - 3.2), "-t", "3.4", "-i", src, "-af",
+                                        "highpass=f=200,lowpass=f=3500,silencedetect=n=%ddB:d=0.2" % nn, "-f", "null", "-"], capture_output=True, text=True).stderr
+                    st = [float(x) for x in re.findall(r"silence_start: ([\d.]+)", r)]
+                    if st: break
+                if st: e2 = e - 3.2 + st[-1] + 0.12; print("chot khoang lang:", round(e, 2), "->", round(e2, 2), flush=True); return max(dmin, e2)
+            except Exception as ex: print("lang bo qua:", ex, flush=True)
+            return e
     except Exception as ex: print("srt bo qua:", ex, flush=True)
     st = [t for t in _lang(src, a, dmax) if dmin <= t <= dmax - 0.3]
     return (st[-1] + 0.25) if st else dmax
