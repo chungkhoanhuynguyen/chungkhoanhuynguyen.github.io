@@ -25,6 +25,26 @@ def ngat_cau(srt, a, dmax=58.0, dmin=30.0):
     hoi = [(e, t) for e, t in ok if t.endswith("?") and e >= dmax - 18]
     e, t = (hoi or ok)[-1]; print("cat sau cau:", t, flush=True); return e + 0.35
 
+def _khoang_lang(src, t0, dur):
+    """NV1 19/11: tìm chỗ ngắt giọng theo năng lượng tương đối (giọng -11 LUFS + nhạc nền làm silencedetect tuyệt đối trượt).
+    Trả danh sách mốc bắt đầu (giây, tính từ t0) của các đoạn ≥0,2s thấp hơn trung vị ≥7 dB."""
+    import numpy as np
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-ss", str(max(0, t0)), "-t", str(dur), "-i", src, "-ac", "1", "-ar", "16000",
+                          "-af", "highpass=f=250,lowpass=f=3500", "-f", "s16le", "-"], capture_output=True).stdout
+    x = np.frombuffer(raw, np.int16).astype(np.float32) / 32768
+    n = 400; k = len(x) // n
+    if k < 10: return []
+    db = 20 * np.log10(np.sqrt((x[:k * n].reshape(k, n) ** 2).mean(1)) + 1e-6)
+    thr = np.median(db) - 7; low = db < thr; out = []; i = 0
+    while i < k:
+        if low[i]:
+            j = i
+            while j < k and low[j]: j += 1
+            if (j - i) * 0.025 >= 0.2: out.append(i * 0.025)
+            i = j
+        else: i += 1
+    return out
+
 def ngat(src, a, dmax=58.0, dmin=30.0):
     try:
         srt = os.environ.get("SRT") or os.path.splitext(src)[0] + ".srt"
@@ -32,12 +52,7 @@ def ngat(src, a, dmax=58.0, dmin=30.0):
         if e:
             # NV1 19/11: mốc .srt có thể lệch giọng thật ~1–1,5s (CH2511MY_S2 lọt "Và Việt Nam..." ở cuối) -> chốt vào khoảng lặng thật gần nhất trước mốc
             try:
-                st = []
-                for nn in (-30, -26, -22, -20):   # tiếng -11 LUFS + nhạc nền: khoảng lặng giữa câu chỉ còn quanh -22 dB
-                    r = subprocess.run(["ffmpeg", "-hide_banner", "-ss", str(a + e - 3.2), "-t", "3.4", "-i", src, "-af",
-                                        "highpass=f=200,lowpass=f=3500,silencedetect=n=%ddB:d=0.2" % nn, "-f", "null", "-"], capture_output=True, text=True).stderr
-                    st = [float(x) for x in re.findall(r"silence_start: ([\d.]+)", r)]
-                    if st: break
+                st = _khoang_lang(src, a + e - 3.2, 3.4)
                 if st: e2 = e - 3.2 + st[-1] + 0.12; print("chot khoang lang:", round(e, 2), "->", round(e2, 2), flush=True); return max(dmin, e2)
             except Exception as ex: print("lang bo qua:", ex, flush=True)
             return e
