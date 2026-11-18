@@ -17,6 +17,7 @@
 #  - VnEconomy 3/11/2022: tháng 10/2022 giá trị giao dịch bình quân HOSE hơn 11.449 tỷ/phiên, giảm 14,53%; VN-Index cuối tháng 10/2022 1.027,94.
 #  - BSC 30/12/2022: VN-Index cuối 2022 1.007,09. Viettimes/VnExpress: VN-Index chốt năm 2023 1.129,93 (tăng hơn 12%).
 #  - Vietstock 18/11/2026: tự doanh và khối ngoại bán ròng gần 1.100 tỷ phiên 17/11.
+# V2 (whisper V1: 'một trăm hai mươi mốt nghìn tỷ' nghe ra 124.000 cả beam 1 và 5) → lời đọc nói tỷ lệ 121.000 ÷ 125.000 ≈ 97%, số đủ trên thẻ.
 # SỐ TỰ TÍNH: 15.602 ÷ 50.000 = 31,2% → giảm khoảng 68,8% ("gần 70%"). 1.726,72 ÷ 1.829 = 94,4% → giảm 5,6%.
 #   1.129,93 ÷ 1.027,94 = 1,099 → cao hơn khoảng 9,9% ("gần 10%"). 121.000 ÷ 125.000 = 96,8%.
 #   Nhân vật (GIẢ ĐỊNH): tài khoản 400 triệu = 300 triệu vốn + 100 triệu vay ký quỹ; giảm 8% → mất 32 triệu = 10,7% vốn tự có ("gần 11%").
@@ -65,7 +66,7 @@ S = [
  dict(k='cards', ch='Chương 2 – Vì sao tiền đứng ngoài?', anh=TP, cap=('3 LÝ DO', 'TIỀN ĐỨNG NGOÀI'), cols=CC, moc=True,
       cards=[('6 đến 7%', 'Lãi tiết kiệm 12 tháng', 'GỬI LÀ CÓ LÃI'), ('121.000 tỷ', 'Khối ngoại bán ròng đến 3/11', 'GẦN KỶ LỤC 2025'), ('30.000 tỷ', 'Bán ròng 1,5 tháng sau nâng hạng', 'NGƯỢC KỲ VỌNG')],
       say=("Báo chí nêu ba lý do. Một, lãi tiết kiệm kỳ hạn mười hai tháng phổ biến sáu đến bảy phần trăm mỗi năm. Gửi là có lãi, còn cổ phiếu thì có rủi ro giá. "
-           "Hai, khối ngoại bán ròng trên sàn HOSE từ đầu năm tới ngày ba tháng mười một gần một trăm hai mươi mốt nghìn tỷ, sát kỷ lục một trăm hai mươi lăm nghìn tỷ của năm ngoái. "
+           "Hai, khối ngoại bán ròng trên sàn HOSE từ đầu năm tới ngày ba tháng mười một đã bằng khoảng chín mươi bảy phần trăm kỷ lục của cả năm ngoái. Kỷ lục đó là một trăm hai mươi lăm nghìn tỷ đồng. "
            "Ba, Việt Nam được FTSE Russell nâng hạng ngày hai mươi mốt tháng chín, nhưng chỉ khoảng một tháng rưỡi sau đó, khối ngoại bán ròng thêm gần ba mươi nghìn tỷ.")),
  dict(k='chat', cap=('"NÂNG HẠNG RỒI', 'SAO VẪN BÁN?"'), cols=CC, moc=True, chat=dict(ten='Anh Quân', tv='Đồng nghiệp', gio='09:10', mau=G_, msgs=[
         ('me', 'Nâng hạng rồi sao khối ngoại vẫn bán?'),
@@ -159,7 +160,7 @@ MT = ("NÓNG: tiền vào chứng khoán rơi xuống mức thấp nhất 21 th�
       "• Dân trí 16/11/2026: lãi tiết kiệm online kỳ hạn 12 tháng phổ biến 6–7%/năm\n"
       "• Vietstock 18/11/2026: tự doanh và khối ngoại bán ròng gần 1.100 tỷ phiên 17/11\n"
       "• VnEconomy 3/11/2022: tháng 10/2022 giá trị giao dịch bình quân HOSE hơn 11.449 tỷ/phiên, giảm 14,53%; VN-Index cuối tháng 10/2022: 1.027,94. BSC 30/12/2022: VN-Index cuối 2022: 1.007,09. Viettimes/VnExpress: VN-Index chốt năm 2023: 1.129,93\n"
-      "• Tự tính: 15.602 ÷ 50.000 ≈ 31% → giảm gần 70%; 1.726,72 so với 1.829 → giảm khoảng 5,6%; 1.129,93 so với 1.027,94 → cao hơn khoảng 9,9%. "
+      "• Tự tính: 15.602 ÷ 50.000 ≈ 31% → giảm gần 70%; 1.726,72 so với 1.829 → giảm khoảng 5,6%; 1.129,93 so với 1.027,94 → cao hơn khoảng 9,9%; 121.000 ÷ 125.000 ≈ 97%. "
       "Tài khoản anh Tùng là GIẢ ĐỊNH: 400 triệu cổ phiếu = 300 triệu vốn + 100 triệu vay ký quỹ; giảm 8% = 32 triệu ≈ 10,7% vốn tự có\n\n"
       "P/E thấp có rẻ không: https://chungkhoanhuynguyen.com/hoc/dinh-gia-p-e-thap-co-re-khong-mot-quy-loi-nhuan-co-the-lam-meo-p-e.html\n"
       "Margin – con dao hai lưỡi: https://chungkhoanhuynguyen.com/hoc/margin-con-dao-hai-luoi-giam-30-mat-60-von-khi-nao-bi-call.html\n"
