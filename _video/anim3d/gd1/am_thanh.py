@@ -170,8 +170,8 @@ with wave.open(OUT, "w") as w:
 print("xong am thanh", round(TOTAL, 1), "s")
 # (18/11) đưa độ to về chuẩn YouTube -14 LUFS bằng loudnorm 2 lượt, chế độ tuyến tính (không nén giọng)
 import subprocess, json as _j, re as _re
-_m = subprocess.run(["ffmpeg", "-hide_banner", "-i", OUT, "-af", "loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json", "-f", "null", "-"], capture_output=True, text=True).stderr
+_m = subprocess.run(["ffmpeg", "-hide_banner", "-i", OUT, "-af", "loudnorm=I=-11:TP=-1.0:LRA=9:print_format=json", "-f", "null", "-"], capture_output=True, text=True).stderr
 _d = _j.loads(_re.findall(r"\{[^{}]*\}", _m)[-1])
-_af = "loudnorm=I=-14:TP=-1.5:LRA=11:linear=true:measured_I=%s:measured_TP=%s:measured_LRA=%s:measured_thresh=%s:offset=%s" % (_d["input_i"], _d["input_tp"], _d["input_lra"], _d["input_thresh"], _d["target_offset"])
+_af = "loudnorm=I=-11:TP=-1.0:LRA=9:linear=true:measured_I=%s:measured_TP=%s:measured_LRA=%s:measured_thresh=%s:offset=%s" % (_d["input_i"], _d["input_tp"], _d["input_lra"], _d["input_thresh"], _d["target_offset"])
 subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", OUT, "-af", _af, "-ar", "44100", OUT + ".n.wav"], check=True); os.replace(OUT + ".n.wav", OUT)
-print("loudnorm", _d["input_i"], "->", -14)
+print("loudnorm", _d["input_i"], "->", -11)
