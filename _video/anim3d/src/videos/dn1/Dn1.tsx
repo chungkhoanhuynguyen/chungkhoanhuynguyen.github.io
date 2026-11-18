@@ -81,9 +81,9 @@ const Ask: React.FC<{ t: number }> = ({ t }) => { const a = sm(t / 0.5), clickT 
   return <AbsoluteFill style={{ fontFamily: F, justifyContent: "center", alignItems: "center", textAlign: "center" }}><Bg t={t} hue="navy" />
     <div style={{ opacity: a, position: "relative" }}><div style={{ fontSize: 40, fontWeight: 800, color: "#f5c518", letterSpacing: 4 }}>CÂU HỎI CHO ANH CHỊ</div>
       <div style={{ fontSize: 88, fontWeight: 900, color: "#fff", marginTop: 20, lineHeight: 1.15 }}>ANH CHỊ CÓ ĐỌC TIẾP<br />DÒNG THỨ HAI KHÔNG?</div>
-      <div style={{ display: "inline-block", marginTop: 50, padding: "22px 64px", borderRadius: 60, background: sub ? "#3a3f52" : "#e62117", color: "#fff", fontSize: 48, fontWeight: 900 }}>{sub ? "✓ ĐÃ THEO DÕI" : "+ THEO DÕI KÊNH"}</div></div>
+      <div style={{ display: "inline-block", marginTop: 50, padding: "22px 64px", borderRadius: 60, background: sub ? "#3a3f52" : "#e62117", color: "#fff", fontSize: 48, fontWeight: 900 }}>{sub ? "✓ ĐÃ THEO DÕI" : "+ THEO DÕI KÊNH"}</div><div style={{ marginTop: 44 }}><span style={{ display: "inline-block", padding: "18px 52px", borderRadius: 18, background: "#ffd23f", color: "#1a1040", fontSize: 64, fontWeight: 900, letterSpacing: 1, boxShadow: "0 8px 30px rgba(0,0,0,.45)" }}>chungkhoanhuynguyen.com</span></div></div>
     {clickT > -0.6 && clickT < 1.2 && <div style={{ position: "absolute", left: 1060 - Math.min(1, (clickT + 0.6) / 0.6) * 60, top: 820 - Math.min(1, (clickT + 0.6) / 0.6) * 40, fontSize: 70 }}>👆</div>}
-    <div style={{ position: "absolute", left: 0, right: 0, bottom: 150, textAlign: "center" }}><span style={{ display: "inline-block", padding: "14px 40px", borderRadius: 18, background: "#ffd23f", color: "#1a1040", fontSize: 56, fontWeight: 900, letterSpacing: 1, boxShadow: "0 8px 30px rgba(0,0,0,.45)" }}>chungkhoanhuynguyen.com</span></div>
+    
     <div style={{ position: "absolute", right: 40, bottom: 20, fontSize: 22, color: "rgba(255,255,255,.5)" }}>Quan điểm cá nhân, không phải khuyến nghị đầu tư · Ảnh: Wikimedia Commons (CC BY / CC BY-SA)</div></AbsoluteFill>; };
 const Photo: React.FC<{ t: number; img: string; d?: number; dir?: number }> = ({ t, img, d = 7, dir = 1 }) => { const k = Math.min(1, t / Math.max(d, 1)); const z = 1.06 + 0.08 * k;
   return <AbsoluteFill style={{ background: "#000" }}><img src={staticFile(`dn1/${img}.jpg`)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${z}) translateX(${dir * (k - 0.5) * 30}px)`, filter: "brightness(.82) saturate(1.05)" }} />
@@ -178,9 +178,9 @@ const PLAN: Plan[] = [
     [3, () => CD((t) => <Big2 t={t} items={[{ a: "SẬP THẬT", b: "thì 2 con số này phải TĂNG", at: 0.2, col: "#ff4d5e" }]} />)],
   ] },
   { id: "S12", shots: [
-    [0, () => D3(PH("pho", [0.5, 0.6], [CH_("shock", {}, 0.2), ...walkers(3)], pcam(0.2)), (t) => <LocTag t={t} l1="RA KHỎI TIỆM" l2="Bên kia đường" />)],
+    [0, () => D3(PH("shop_ngoai", [0.5, 0.6], [CH_("shock", {}, 0.2)], pcam(0.2)), (t) => <LocTag t={t} l1="RA KHỎI TIỆM" l2="Bên kia đường" />)],
     [1, () => CD((t) => <Sign t={t} title="KHAI TRƯƠNG" lines={["Chuỗi cửa hàng xe điện", "🎈 Lái thử miễn phí 🎈", "Khách xếp hàng kín vỉa hè"]} foot="🔍 Chi tiết thứ ba" />)],
-    [2, () => D3(PH("pho", [0.5, 0.6], [CH_("dazed", {}, 0.2), C("huy", [0.95, 0, 0.7], P("neutral", { side: 1, mode: "stand" }))], pcam(0.4)), (t) => <>{BL(120, 110, "Thế rốt cuộc kinh tế xấu hay tốt?", 0.3)(t)}</>)],
+    [2, () => D3(PH("shop_ngoai", [0.5, 0.6], [CH_("dazed", {}, 0.2), C("huy", [0.95, 0, 0.7], P("neutral", { side: 1, mode: "stand" }))], pcam(0.4)), (t) => <>{BL(120, 110, "Thế rốt cuộc kinh tế xấu hay tốt?", 0.3)(t)}</>)],
   ] },
   { id: "S13", shots: [
     [0, () => D3(closeR("cafe", "huy", "neutral"), (t) => <LocTag t={t} l1="HUY NGUYỄN" l2="Thêm 2 con số" />)],
@@ -200,7 +200,7 @@ const PLAN: Plan[] = [
     [2, () => CD((t) => <Big2 t={t} items={[{ a: "10 + 5 NĂM", b: "lái xe, sửa xe – tay nghề vẫn có giá", at: 0.2, col: "#ffd23f" }]} />)],
   ] },
   { id: "S18", shots: [
-    [0, () => D3(PH("pho", [0.5, 0.6], [HG_("laugh", { acc: ["helmet"] }, 0.4)], pcam(0.4)), (t) => <><ClockTag t={t} text="2 TUẦN SAU" /><BigText t={t} at={0.6} text="TRƯỞNG XƯỞNG KỸ THUẬT" col="#5dff9b" y={200} size={96} /></>)],
+    [0, () => CD(PR("pho", (t) => <><ClockTag t={t} text="2 TUẦN SAU" /><BigText t={t} at={0.6} text="TRƯỞNG XƯỞNG KỸ THUẬT" col="#5dff9b" y={200} size={96} /></>))],
     [1, () => D3(closeL("canho", "chien", "smile", { acc: ["phone", "glow"] }), (t) => <BigText t={t} at={0.4} text="ĐỌC ĐẾN DÒNG CUỐI" col="#ffd23f" y={90} size={110} />)],
   ] },
   { id: "S19", shots: [[0, () => CD((t) => <Ask t={t} />)]] },
@@ -246,7 +246,7 @@ const Subs: React.FC = () => {
   // two-word phrases coloured as one
   const words = c.text.split(" "); const spans: React.ReactNode[] = []; for (let i = 0; i < words.length; i++) { const two = (words[i] + " " + (words[i + 1] ?? "")).toLowerCase(); const ph = [...BAD, ...GOOD].find((p) => p.includes(" ") && two.startsWith(p));
     if (ph) { const col = BAD.includes(ph) ? "#ff6a6a" : "#5dff9b"; spans.push(<span key={i} style={{ color: col }}>{words[i]} {words[i + 1]} </span>); i++; } else spans.push(<span key={i} style={{ color: hl(words[i]) }}>{words[i]} </span>); }
-  return <div style={{ position: "absolute", left: 160, right: 160, bottom: 64, textAlign: "center", fontFamily: F, fontWeight: 800, fontSize: 54, lineHeight: 1.22, WebkitTextStroke: "9px rgba(12,10,20,.92)", paintOrder: "stroke fill", transform: `scale(${s})`, transformOrigin: "50% 100%", textShadow: "0 4px 14px rgba(0,0,0,.6)" } as React.CSSProperties}>{spans}</div>;
+  return <div style={{ position: "absolute", left: 140, right: 140, bottom: 48, textAlign: "center", transform: `scale(${s})`, transformOrigin: "50% 100%" }}><span style={{ display: "inline-block", padding: "10px 30px 14px", borderRadius: 18, background: "rgba(10,8,22,.78)", fontFamily: F, fontWeight: 800, fontSize: 52, lineHeight: 1.25, color: "#fff", textShadow: "0 2px 4px rgba(0,0,0,.5)" } as React.CSSProperties}>{spans}</span></div>;
 };
 
 // ---------- fonts gate ----------
