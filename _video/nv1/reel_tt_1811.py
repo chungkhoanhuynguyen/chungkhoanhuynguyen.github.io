@@ -9,7 +9,7 @@
 #  - SSI Research (Công Luận 6/11/2026): lãi thả nổi vay mua nhà 12–15%.
 # TT1811TK "Gửi 1 tỷ, lãi thật còn bao nhiêu?":
 #  - Lãi huy động 12 tháng NHTM Nhà nước 5,4% (WiData 202886, 12/11/2026); CPI 10/2026 +5,09% so cùng kỳ (TCTK, WiData 75701); thu nhập lao động +9,85% (TCTK).
-#  - Tự tính: 1 tỷ × 5,4% = 54 triệu; giá cả 1 tỷ × 5,09% = 50,9 triệu; lãi thật 1 tỷ × (1,054/1,0509 − 1) = 2,95 triệu (khoảng 3 triệu).
+#  - Tự tính: 1 tỷ × 5,4% = 54 triệu; giá cả 1 tỷ × 5,09% = 50,9 triệu; lãi thật (cách tính thống nhất với lời đọc, NV1 19/11 theo QL1) = 54 − 50,9 = 3,1 triệu (khoảng 3 triệu).
 #  - Bảo hiểm tiền gửi tối đa 350 triệu/người/tổ chức từ 13/7/2026 (VietnamPlus, Báo Đầu tư).
 import json, os, sys
 sys.path.insert(0, os.path.dirname(__file__)); import lib
@@ -42,7 +42,7 @@ R1 = dict(key='TT1811NHA', tieu_de='Căn hộ 6 tỷ bằng 27 năm lương hai 
 Q2 = 'Tiền gửi tiết kiệm của anh chị đang thắng giá cả bao nhiêu? Anh chị để bao nhiêu phần tài sản trong tiết kiệm?'
 R2 = dict(key='TT1811TK', tieu_de='Gửi 1 tỷ, lãi 54 triệu – nhưng giá cả ăn mất 50,9 triệu: lãi thật chỉ còn khoảng 3 triệu?',
  hook=['GỬI 1 TỶ, LÃI 54 TRIỆU', 'LÃI THẬT CÒN BAO NHIÊU???'], nhan='TIẾT KIỆM · HỎI THẬT',
- short_caption=('Lãi tiết kiệm 12 tháng NHTM Nhà nước 5,4% (12/11/2026); CPI 10/2026 +5,09% so cùng kỳ (Cục Thống kê). Tự tính: 1 tỷ × (1,054/1,0509 − 1) ≈ 2,95 triệu lãi thật. '
+ short_caption=('Lãi tiết kiệm 12 tháng NHTM Nhà nước 5,4% (12/11/2026); CPI 10/2026 +5,09% so cùng kỳ (Cục Thống kê). Tự tính: lãi 54 triệu trừ phần giá cả 50,9 triệu = khoảng 3,1 triệu lãi thật. '
                 'Bảo hiểm tiền gửi tối đa 350 triệu từ 13/7/2026. Quan điểm cá nhân, không phải khuyến nghị đầu tư.'),
  tags=[], toc=1.1, nhac='lofi', music_db=-2, hieu_ung=1,
  cau_hoi=dict(chu_to='TIỀN GỬI CÓ THẮNG GIÁ?', loi=Q2, loi_doc=lib.doc(Q2), anh=['Ho Chi Minh City skyline night', 'Hanoi skyline night']),
@@ -51,8 +51,8 @@ R2 = dict(key='TT1811TK', tieu_de='Gửi 1 tỷ, lãi 54 triệu – nhưng giá
     the=dict(loai='lon', tieu='CHỈ SỐ GIÁ TIÊU DÙNG 10/2026', nguon='Cục Thống kê', dong=[['+5,09%', 130, 'do'], ['SO VỚI CÙNG KỲ', 58, 'trang']])),
   C('GỬI 1 TỶ, LÃI 54 TRIỆU', 'Còn gửi 1 tỷ kỳ hạn 12 tháng ở ngân hàng thương mại nhà nước, lãi khoảng 5,4%. Một năm anh chị nhận về 54 triệu đồng.',
     the=dict(loai='lon', tieu='LÃI TIẾT KIỆM 12 THÁNG', nguon='NHTM Nhà nước, 12/11/2026', dong=[['54 TRIỆU', 130, 'vang'], ['TIỀN LÃI MỘT NĂM CỦA 1 TỶ', 52, 'trang']])),
-  C('LÃI THẬT KHOẢNG 3 TRIỆU', 'Trừ phần giá cả đi, tiền lãi thật của 1 tỷ chỉ còn khoảng 3 triệu đồng một năm. Em tự tính.',
-    the=dict(loai='cot', tieu='TIỀN LÃI CỦA 1 TỶ MỘT NĂM (TRIỆU)', nguon='Em tự tính', hang=[['Lãi nhận về', 54], ['Lãi thật', 2.95]], noi=[1], dv='', max=60)),
+  C('LÃI THẬT KHOẢNG 3 TRIỆU', 'Lấy 54 triệu trừ 50,9 triệu, tiền lãi thật của 1 tỷ chỉ còn khoảng 3 triệu đồng một năm. Em tự tính.',
+    the=dict(loai='cot', tieu='TIỀN LÃI CỦA 1 TỶ MỘT NĂM (TRIỆU)', nguon='Em tự tính', hang=[['Lãi nhận về', 54], ['Giá cả ăn mất', 50.9], ['Lãi thật', 3.1]], noi=[2], dv='', max=60)),
   C('LƯƠNG VẪN THẮNG GIÁ', 'Trong khi đó, thu nhập của người lao động năm nay tăng 9,85%. Lương vẫn thắng giá cả, còn tiền gửi thì gần như chỉ hòa.',
     the=dict(loai='cot', tieu='TĂNG MỘT NĂM (%)', nguon='Cục Thống kê; lãi 12 tháng 12/11/2026', hang=[['Thu nhập', 9.85], ['Lãi gửi', 5.4], ['Giá cả', 5.09]], noi=[1], dv='%', max=12)),
   C('KHÔNG PHẢI MẤT TIỀN', 'Điều này không có nghĩa gửi tiết kiệm là mất tiền. Tiết kiệm là để giữ giá trị và để có tiền khi cần, chứ không phải để giàu nhanh.',

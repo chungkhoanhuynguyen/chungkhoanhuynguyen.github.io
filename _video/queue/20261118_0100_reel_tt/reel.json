@@ -192,7 +192,7 @@
    "LÃI THẬT CÒN BAO NHIÊU???"
   ],
   "nhan": "TIẾT KIỆM · HỎI THẬT",
-  "short_caption": "Lãi tiết kiệm 12 tháng NHTM Nhà nước 5,4% (12/11/2026); CPI 10/2026 +5,09% so cùng kỳ (Cục Thống kê). Tự tính: 1 tỷ × (1,054/1,0509 − 1) ≈ 2,95 triệu lãi thật. Bảo hiểm tiền gửi tối đa 350 triệu từ 13/7/2026. Quan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "short_caption": "Lãi tiết kiệm 12 tháng NHTM Nhà nước 5,4% (12/11/2026); CPI 10/2026 +5,09% so cùng kỳ (Cục Thống kê). Tự tính: lãi 54 triệu trừ phần giá cả 50,9 triệu = khoảng 3,1 triệu lãi thật. Bảo hiểm tiền gửi tối đa 350 triệu từ 13/7/2026. Quan điểm cá nhân, không phải khuyến nghị đầu tư.",
   "tags": [],
   "toc": 1.1,
   "nhac": "lofi",
@@ -254,24 +254,28 @@
    },
    {
     "chu_to": "LÃI THẬT KHOẢNG 3 TRIỆU",
-    "loi": "Trừ phần giá cả đi, tiền lãi thật của 1 tỷ chỉ còn khoảng 3 triệu đồng một năm. Em tự tính.",
-    "loi_doc": "Trừ phần giá cả đi, tiền lãi thật của một tỷ chỉ còn khoảng ba triệu đồng một năm. Em tự tính.",
+    "loi": "Lấy 54 triệu trừ 50,9 triệu, tiền lãi thật của 1 tỷ chỉ còn khoảng 3 triệu đồng một năm. Em tự tính.",
+    "loi_doc": "Lấy năm mươi bốn triệu trừ năm mươi phẩy chín triệu, tiền lãi thật của một tỷ chỉ còn khoảng ba triệu đồng một năm. Em tự tính.",
     "the": {
      "loai": "cot",
      "tieu": "TIỀN LÃI CỦA 1 TỶ MỘT NĂM (TRIỆU)",
-     "nguon": "Em tự tính",
+     "nguon": "Em tự tính: 54 trừ 50,9",
      "hang": [
       [
        "Lãi nhận về",
        54
       ],
       [
+       "Giá cả ăn mất",
+       50.9
+      ],
+      [
        "Lãi thật",
-       2.95
+       3.1
       ]
      ],
      "noi": [
-      1
+      2
      ],
      "dv": "",
      "max": 60
