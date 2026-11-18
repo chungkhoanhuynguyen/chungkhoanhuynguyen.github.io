@@ -8832,90 +8832,200 @@
   "slug": "no-xau-ngan-hang-la-gi",
   "kw": "nợ xấu ngân hàng là gì",
   "grp": 3,
-  "title": "Nợ xấu ngân hàng là gì? Cách đọc tỷ lệ nợ xấu và tỷ lệ bao phủ",
-  "desc": "Nợ xấu là khoản vay khó thu hồi. Cách đọc tỷ lệ nợ xấu, tỷ lệ bao phủ và chi phí dự phòng trong BCTC ngân hàng, kèm ví dụ quý 3/2026.",
+  "title": "Nợ xấu ngân hàng là gì? Tỷ lệ nợ xấu 2026 và cách đọc đúng",
+  "desc": "Nợ xấu 28 ngân hàng niêm yết 340.816 tỷ, tăng 26,9% sau 9 tháng 2026. Cách đọc tỷ lệ nợ xấu, nợ xấu gộp 3,9%, bao phủ và bài học năm 2012.",
   "body": [
    [
     "p",
-    "<b>Nợ xấu</b> là các khoản cho vay mà ngân hàng khó thu hồi đúng hạn, theo quy định là nợ nhóm 3, 4 và 5 (quá hạn từ 91 ngày trở lên hoặc bị đánh giá có khả năng mất vốn). Với cổ phiếu ngân hàng, nợ xấu là chỉ số rủi ro quan trọng nhất, quan trọng không kém lợi nhuận."
+    "Tháng 9/2012, theo báo cáo của chính các ngân hàng, nợ xấu toàn hệ thống là <b>4,9%</b>. Cùng thời điểm, giám sát từ xa của Ngân hàng Nhà nước ra con số <b>8,82%</b>, gần gấp đôi (VnEconomy 1/1/2013). Năm đó tín dụng chỉ tăng khoảng 7%, và phải mất nhiều năm mới dọn xong."
+   ],
+   [
+    "p",
+    "Năm 2026, con số nợ xấu thường được nhắc chỉ khoảng 2%. Nhưng nợ xấu của 28 ngân hàng niêm yết đã tăng <b>26,9%</b> sau 9 tháng, lên <b>340.816 tỷ đồng</b>. Bài này giúp anh chị đọc đúng con số nợ xấu: nó gồm gì, có mấy loại, và nhìn ở đâu cho đủ."
    ],
    [
     "h2",
-    "Tỷ lệ nợ xấu là gì?"
+    "Nợ xấu ngân hàng là gì?"
    ],
    [
-    "ul",
+    "p",
+    "Nợ xấu là các khoản vay thuộc <b>nhóm 3, 4 và 5</b>, tức quá hạn từ <b>91 ngày</b> trở lên hoặc bị đánh giá khó thu hồi (Thông tư 31/2024/TT-NHNN). Trước đó là <a href='/f0/no-nhom-2-la-gi.html'>nợ nhóm 2</a>, quá hạn 10–90 ngày, chưa tính vào nợ xấu."
+   ],
+   [
+    "p",
+    "<b>Tỷ lệ nợ xấu = nợ nhóm 3–5 ÷ tổng dư nợ cho vay khách hàng.</b> Ví dụ 28 ngân hàng niêm yết ngày 30/9/2026: 340.816 tỷ ÷ khoảng 16,1 triệu tỷ dư nợ = <b>2,12%</b> (đầu năm 2,02%)."
+   ],
+   [
+    "h2",
+    "Vì sao nợ xấu tăng 26,9% mà tỷ lệ chỉ nhích 0,1 điểm?"
+   ],
+   [
+    "p",
+    "Vì mẫu số cũng tăng. Dư nợ cho vay tăng nhanh làm tỷ lệ trông gần như đứng yên, trong khi số tiền nợ xấu tăng thêm khoảng <b>72.235 tỷ</b>. Đọc nợ xấu cần xem cả <b>số tuyệt đối</b> và <b>tốc độ tăng</b>, không chỉ tỷ lệ. Theo SSI Research, 24/28 ngân hàng có nợ xấu tăng trong 9 tháng."
+   ],
+   [
+    "h2",
+    "Nợ xấu nội bảng, nợ xấu gộp khác gì nhau?"
+   ],
+   [
+    "table",
     [
-     "Công thức: Tỷ lệ nợ xấu = Nợ nhóm 3–5 ÷ Tổng dư nợ cho vay.",
-     "Dưới 2% thường được xem là kiểm soát tốt; trên 3% cần theo dõi kỹ.",
-     "Quan trọng hơn con số là <b>xu hướng</b>: tăng liên tục qua nhiều quý là tín hiệu cần chú ý."
+     [
+      "Con số",
+      "Phạm vi",
+      "Mức"
+     ],
+     [
+      "Nội bảng 28 ngân hàng niêm yết",
+      "Nợ nhóm 3–5 trên sổ, 30/9/2026",
+      "2,12%"
+     ],
+     [
+      "Nội bảng toàn hệ thống",
+      "Không gồm 5 ngân hàng kiểm soát đặc biệt, cuối 8/2026",
+      "1,66%"
+     ],
+     [
+      "Nợ xấu gộp toàn hệ thống",
+      "Cộng nợ đã bán cho công ty quản lý tài sản, nợ tiềm ẩn, cuối 8/2026",
+      "3,9%"
+     ],
+     [
+      "Nhóm 2–5 của 28 ngân hàng",
+      "Tính cả nợ cần chú ý, 30/9/2026",
+      "3,69%"
+     ],
+     [
+      "Năm 2012 (để so)",
+      "Tự báo cáo / NHNN giám sát, 9/2012",
+      "4,9% / 8,82%"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "<small>Nguồn: VietnamFinance 11/11/2026, Thời báo Tài chính Việt Nam 10/11/2026 (SSI Research); Báo Đấu thầu 9/11/2026 (số liệu NHNN); VnEconomy 1/1/2013.</small> Con số rộng nhất hôm nay (gộp 3,9%) vẫn thấp hơn nhiều so với 8,82% năm 2012. Nhưng hướng đi đang là đi lên."
+   ],
+   [
+    "h2",
+    "Ngân hàng nào nợ xấu tăng nhanh trong quý 3/2026?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Mã",
+      "Nợ xấu<br>quý 2",
+      "Nợ xấu<br>quý 3",
+      "Bao phủ<br>quý 3"
+     ],
+     [
+      "VCB",
+      "–",
+      "0,71%",
+      "243%"
+     ],
+     [
+      "CTG",
+      "–",
+      "1,20%",
+      "160%"
+     ],
+     [
+      "ACB",
+      "1,03%",
+      "1,19%",
+      "91%"
+     ],
+     [
+      "TCB",
+      "1,08%",
+      "1,27%",
+      "107%"
+     ],
+     [
+      "MBB",
+      "1,45%",
+      "1,67%",
+      "85%"
+     ],
+     [
+      "VPB",
+      "3,28%",
+      "3,12%",
+      "54%"
+     ],
+     [
+      "HDB",
+      "2,79%",
+      "3,42%",
+      "46%"
+     ],
+     [
+      "VIB",
+      "2,93%",
+      "3,20%",
+      "42%"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "<small>Số liệu tổng hợp từ báo cáo tài chính quý 3/2026 trên trang <a href='/ket-qua-kinh-doanh-quy.html'>kết quả kinh doanh quý</a>; \"–\" là chưa có số quý trước trong dữ liệu.</small> Hai nhóm hiện rõ: VCB, CTG, TCB có nợ xấu thấp và <a href='/f0/bao-phu-no-xau-la-gi.html'>bao phủ</a> trên 100%; HDB, VIB nợ xấu trên 3% và bao phủ dưới 50%. HDB tăng 0,63 điểm % chỉ trong một quý. VPB là trường hợp ngược chiều: tỷ lệ nợ xấu giảm nhưng nợ nhóm 2 tăng khoảng 17,5% so với quý trước."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
+   ],
+   [
+    "ol",
+    [
+     "<b>Chỉ nhìn tỷ lệ:</b> nợ xấu 28 ngân hàng tăng 26,9% mà tỷ lệ chỉ từ 2,02% lên 2,12%, vì cho vay cũng tăng.",
+     "<b>Lợi nhuận tăng nhờ trích lập ít:</b> quý 3/2026, chi phí dự phòng của TCB giảm 38,8%, BID giảm 25% so với cùng kỳ. Lợi nhuận tăng một phần vì để dành ít hơn, cần đọc cùng <a href='/f0/chi-phi-du-phong-la-gi.html'>chi phí dự phòng</a>.",
+     "<b>Tin hoàn toàn vào số tự báo cáo:</b> năm 2012, số tự báo cáo 4,9% so với 8,82% của giám sát NHNN. Theo dõi thêm nợ nhóm 2 và nợ xấu gộp để có bức tranh rộng hơn."
     ]
    ],
    [
     "h2",
-    "Tỷ lệ bao phủ nợ xấu: tấm đệm của ngân hàng"
-   ],
-   [
-    "p",
-    "Tỷ lệ bao phủ = Dự phòng rủi ro tín dụng ÷ Nợ xấu. Bao phủ 100% nghĩa là ngân hàng đã trích đủ tiền dự phòng tương đương toàn bộ nợ xấu. Bao phủ càng thấp, nếu nợ xấu không thu hồi được thì lợi nhuận tương lai càng dễ bị ăn mòn."
-   ],
-   [
-    "h2",
-    "Ví dụ thật quý 3/2026"
+    "Checklist đọc nợ xấu một ngân hàng"
    ],
    [
     "ul",
     [
-     "Vietcombank (VCB): nợ xấu 0,71%, bao phủ khoảng 243% – bộ đệm rất dày.",
-     "VPBank (VPB): nợ xấu 3,12% (quý trước 3,28%), bao phủ khoảng 54%.",
-     "VIB: nợ xấu 3,20% (quý trước 2,93%), bao phủ khoảng 42%."
+     "Tỷ lệ nợ xấu quý này so với quý trước và đầu năm.",
+     "Số tuyệt đối nợ xấu tăng bao nhiêu phần trăm, so với tốc độ tăng cho vay.",
+     "Nợ nhóm 2 trong thuyết minh: tăng nhanh là dấu hiệu sớm.",
+     "Bao phủ nợ xấu: trên 100% là túi đệm dày, dưới 50% là mỏng.",
+     "Chi phí dự phòng: lợi nhuận tăng có phải nhờ trích lập ít đi không."
     ]
    ],
    [
     "p",
-    "Cùng là ngân hàng có lãi, nhưng mức độ “an toàn” của lợi nhuận rất khác nhau. Xem số liệu từng mã tại trang <a href=\"/ma/VCB.html\">VCB</a>, <a href=\"/ma/VPB.html\">VPB</a>, <a href=\"/ma/VIB.html\">VIB</a>."
-   ],
-   [
-    "h2",
-    "Chi phí dự phòng ảnh hưởng lợi nhuận thế nào?"
-   ],
-   [
-    "p",
-    "Mỗi đồng trích dự phòng làm lợi nhuận kỳ đó giảm một đồng. Ví dụ quý 3/2026, Vietcombank trích dự phòng tăng khoảng 697% so với cùng kỳ nên lãi chỉ tăng 0,1% dù thu nhập lãi thuần tăng 39,1%. Ngược lại, ngân hàng giảm trích lập có thể báo lãi đẹp hơn, nhưng một phần lợi nhuận đó không đến từ kinh doanh cốt lõi."
-   ],
-   [
-    "h2",
-    "Checklist đọc nhanh cho người mới"
-   ],
-   [
-    "ul",
-    [
-     "Tỷ lệ nợ xấu đang tăng hay giảm so với quý trước?",
-     "Tỷ lệ bao phủ trên hay dưới 100%?",
-     "Lợi nhuận tăng nhờ thu nhập lãi thuần hay nhờ giảm dự phòng?"
-    ]
+    "Với người đang vay mua nhà, nợ xấu tăng thường đi cùng lãi cho vay khó giảm, xem <a href='/f0/het-uu-dai-lai-suat-vay-mua-nha.html'>hết ưu đãi lãi vay mua nhà nên làm gì</a>. Số liệu ngân hàng theo từng quý có thêm ở <a href='/bao-cao-2026.html#tichsan'>bảng tích sản ngân hàng</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
    ]
   ],
   "faq": [
    [
-    "Nợ xấu là nợ nhóm mấy?",
-    "Nợ xấu gồm nợ nhóm 3 (dưới tiêu chuẩn), nhóm 4 (nghi ngờ) và nhóm 5 (có khả năng mất vốn)."
+    "Nợ xấu ngân hàng gồm những nhóm nào?",
+    "Nợ xấu gồm nợ nhóm 3 (dưới tiêu chuẩn), nhóm 4 (nghi ngờ) và nhóm 5 (có khả năng mất vốn), tức quá hạn từ 91 ngày trở lên theo Thông tư 31/2024/TT-NHNN."
    ],
    [
-    "Tỷ lệ bao phủ nợ xấu bao nhiêu là tốt?",
-    "Trên 100% thường được xem là bộ đệm đủ dày. Dưới 50% nghĩa là dự phòng mới đủ cho chưa tới một nửa số nợ xấu."
+    "Tỷ lệ nợ xấu bao nhiêu là cao?",
+    "Không có một mốc chung, nhưng nhiều người dùng 3% làm mức cần chú ý. Quý 3/2026, tỷ lệ bình quân 28 ngân hàng niêm yết là 2,12%; cần xem kèm bao phủ nợ xấu và nợ nhóm 2."
    ],
    [
-    "Ngân hàng lãi giảm vì trích dự phòng có phải là xấu không?",
-    "Chưa chắc. Trích dự phòng nhiều làm lãi kỳ này thấp nhưng giúp bộ đệm dày hơn; cần xem cùng thu nhập lãi thuần và xu hướng nợ xấu."
+    "Nợ xấu gộp là gì?",
+    "Là con số rộng hơn nợ xấu nội bảng, cộng thêm nợ đã bán cho công ty quản lý tài sản và nợ tiềm ẩn. Cuối tháng 8/2026, nợ xấu gộp toàn hệ thống khoảng 3,9% theo số liệu Ngân hàng Nhà nước."
    ]
   ],
   "rel": [
-   "doc-bctc-ngan-hang",
-   "pb-la-gi",
-   "roe-eps-la-gi",
-   "cach-chon-co-phieu-ngan-hang-de-tich-san"
-  ]
+   "no-nhom-2-la-gi",
+   "bao-phu-no-xau-la-gi",
+   "chi-phi-du-phong-la-gi",
+   "het-uu-dai-lai-suat-vay-mua-nha",
+   "doc-bctc-ngan-hang"
+  ],
+  "mod": "2026-11-18"
  },
  {
   "slug": "nim-la-gi",
@@ -18634,105 +18744,191 @@
   "slug": "no-nhom-2-la-gi",
   "kw": "nợ nhóm 2 là gì",
   "grp": 3,
-  "title": "Nợ nhóm 2 là gì? Khác nợ xấu thế nào, vì sao cần theo dõi",
-  "desc": "Nợ nhóm 2 (nợ cần chú ý) chưa phải nợ xấu nhưng dễ chuyển xấu. Cách phân loại 5 nhóm nợ, vì sao nên theo dõi và số liệu nợ xấu các ngân hàng quý 3/2026.",
+  "title": "Nợ nhóm 2 là gì? Trễ bao nhiêu ngày thì thành nợ xấu",
+  "desc": "Trễ hạn từ 10 ngày là nợ nhóm 2, từ 91 ngày là nợ xấu. Bảng 5 nhóm nợ theo Thông tư 31/2024, CIC lưu 5 năm, nợ nhóm 2 của 28 ngân hàng tăng 52,4%.",
   "body": [
    [
     "p",
-    "Khi đọc báo cáo của ngân hàng, anh chị thường thấy con số <b>nợ xấu</b>. Ít người để ý rằng trước khi một khoản vay thành nợ xấu, nó thường đi qua <b>nợ nhóm 2</b>, còn gọi là nợ cần chú ý. Hiểu nhóm này giúp nhận ra áp lực chất lượng tài sản sớm hơn một nhịp."
-   ],
-   [
-    "h2",
-    "Năm nhóm nợ ở ngân hàng"
+    "Chị Lan (ví dụ giả định) trả góp xe máy, đến hạn ngày 5 thì công ty lùi lương. Chị nghĩ chậm vài hôm không sao, đến ngày 17 mới trả. Khoản vay của chị đã quá hạn <b>12 ngày</b>, và trong hệ thống ngân hàng nó không còn là nợ \"bình thường\" nữa: nó đã là <b>nợ nhóm 2</b>."
    ],
    [
     "p",
-    "Theo quy định của Ngân hàng Nhà nước, các khoản nợ được phân thành năm nhóm dựa chủ yếu vào số ngày quá hạn và khả năng trả nợ của khách hàng:"
+    "Nợ nhóm 2, còn gọi là <b>nợ cần chú ý</b>, chưa phải nợ xấu, nhưng là cửa trước của nợ xấu. Quý 3/2026, con số này ở 28 ngân hàng niêm yết tăng <b>52,4%</b> chỉ sau 9 tháng. Hiểu nó giúp người vay tránh dấu vết không đáng có, và giúp người đọc báo cáo ngân hàng thấy áp lực sớm hơn một nhịp."
    ],
    [
-    "ol",
+    "h2",
+    "Trễ hạn bao nhiêu ngày thì bị nợ xấu?"
+   ],
+   [
+    "p",
+    "Theo Thông tư 31/2024/TT-NHNN (Điều 10), khoản vay được xếp vào 5 nhóm, chủ yếu theo số ngày quá hạn:"
+   ],
+   [
+    "table",
     [
-     "<b>Nhóm 1 – nợ đủ tiêu chuẩn:</b> trả đúng hạn hoặc quá hạn rất ngắn, khách hàng có khả năng trả đầy đủ.",
-     "<b>Nhóm 2 – nợ cần chú ý:</b> quá hạn khoảng từ 10 đến 90 ngày, hoặc khoản nợ được cơ cấu lại thời hạn trả.",
-     "<b>Nhóm 3 – nợ dưới tiêu chuẩn:</b> quá hạn khoảng từ 91 đến 180 ngày.",
-     "<b>Nhóm 4 – nợ nghi ngờ:</b> quá hạn khoảng từ 181 đến 360 ngày.",
-     "<b>Nhóm 5 – nợ có khả năng mất vốn:</b> quá hạn trên 360 ngày hoặc khách hàng mất khả năng trả."
+     [
+      "Nhóm",
+      "Quá hạn",
+      "Tên gọi",
+      "Nợ xấu?"
+     ],
+     [
+      "1",
+      "Trong hạn hoặc dưới 10 ngày",
+      "Đủ tiêu chuẩn",
+      "Không"
+     ],
+     [
+      "2",
+      "10 đến 90 ngày",
+      "Cần chú ý",
+      "Chưa"
+     ],
+     [
+      "3",
+      "91 đến 180 ngày",
+      "Dưới tiêu chuẩn",
+      "Có"
+     ],
+     [
+      "4",
+      "181 đến 360 ngày",
+      "Nghi ngờ",
+      "Có"
+     ],
+     [
+      "5",
+      "Trên 360 ngày",
+      "Có khả năng mất vốn",
+      "Có"
+     ]
     ]
    ],
    [
     "p",
-    "Các mốc ngày ở trên chỉ mang tính tóm tắt; từng khoản vay còn chịu các điều kiện cụ thể trong quy định hiện hành, anh chị nên xem thuyết minh báo cáo tài chính của ngân hàng để biết chi tiết."
+    "Như vậy <b>nợ xấu = nhóm 3 + 4 + 5</b>, tức từ ngày quá hạn thứ 91. Ngoài số ngày, nhóm 2 còn gồm khoản được cơ cấu lại thời hạn trả nợ; ngân hàng cũng có thể xếp khoản vay vào nhóm cao hơn nếu đánh giá khả năng trả nợ giảm. Chi tiết từng trường hợp xem trong quy định và hợp đồng vay."
    ],
    [
     "h2",
-    "Nợ xấu gồm những nhóm nào?"
-   ],
-   [
-    "p",
-    "Nợ xấu là tổng các khoản nợ thuộc nhóm 3, 4 và 5. Nợ nhóm 2 chưa tính vào nợ xấu, nhưng là “vùng đệm” dễ chuyển xấu nếu khách hàng tiếp tục chậm trả. Vì vậy hai ngân hàng có cùng tỷ lệ nợ xấu có thể rất khác nhau nếu một bên có tỷ lệ nợ nhóm 2 cao hơn nhiều."
-   ],
-   [
-    "h2",
-    "Vì sao nên theo dõi nợ nhóm 2?"
+    "Vì sao trễ 10 ngày đã đáng lo với người vay?"
    ],
    [
     "ul",
     [
-     "<b>Dấu hiệu sớm:</b> nợ nhóm 2 tăng nhanh trong vài quý liên tiếp thường báo trước nợ xấu tăng.",
-     "<b>Chi phí dự phòng:</b> khi khoản vay chuyển nhóm, ngân hàng phải trích dự phòng nhiều hơn, làm lợi nhuận giảm. Xem <a href='/f0/chi-phi-du-phong-la-gi.html'>chi phí dự phòng là gì</a>.",
-     "<b>Nợ cơ cấu lại:</b> một phần nợ nhóm 2 đến từ việc cơ cấu thời hạn trả nợ, nên cần đọc thuyết minh để biết khoản nào là cơ cấu."
+     "<b>Dấu vết kéo dài:</b> thông tin tiêu cực được trung tâm tín dụng CIC cung cấp tối đa <b>5 năm</b> kể từ ngày tất toán (Thông tư 15/2023/TT-NHNN). Lần sau vay mua nhà, mua xe ở ngân hàng khác, họ vẫn tra được.",
+     "<b>Tốn thêm tiền:</b> phần quá hạn thường bị tính lãi quá hạn theo hợp đồng, cao hơn lãi thường.",
+     "<b>Khó xin điều chỉnh:</b> khi còn ở nhóm 1, xin kéo dài thời hạn hay giãn kỳ trả dễ hơn nhiều so với khi đã quá hạn."
     ]
    ],
    [
-    "h2",
-    "Số liệu nợ xấu thật quý 3/2026"
-   ],
-   [
     "p",
-    "Dữ liệu tổng hợp web (cập nhật 2/11/2026) hiện có tỷ lệ nợ xấu quý 3/2026 của nhiều ngân hàng, chưa có dòng nợ nhóm 2 riêng. Mức thấp: VCB 0,71%, ACB 1,19%, TCB 1,27%, VAB 1,38%, NAB 1,61%. Mức cao hơn: SHB 2,22%, EIB 2,62%, MSB 2,70%, VPB 3,12%, VIB 3,20%, OCB 3,99%."
-   ],
-   [
-    "p",
-    "Tỷ lệ nợ xấu chỉ là một mặt; cần xem cùng <a href='/f0/bao-phu-no-xau-la-gi.html'>bao phủ nợ xấu</a>. Cùng quý, bao phủ nợ xấu của VCB khoảng 243%, TCB 107%, ACB 91%, trong khi VIB khoảng 42% và EIB khoảng 41%. So sánh hai chỉ số cho thấy ngân hàng nào có “túi đệm” dày hơn khi nợ xấu tăng."
+    "Người vay mua nhà sắp hết ưu đãi là nhóm dễ rơi vào cảnh này nhất, vì kỳ trả có thể tăng 30–40% chỉ trong một tháng. Ví dụ cụ thể và 3 cách xử lý ở bài <a href='/f0/het-uu-dai-lai-suat-vay-mua-nha.html'>hết ưu đãi lãi vay mua nhà: trả thêm bao nhiêu, nên làm gì</a>."
    ],
    [
     "h2",
-    "Cách đọc ngắn gọn khi xem báo cáo ngân hàng"
+    "Nợ nhóm 2 ở các ngân hàng năm 2026 tăng bao nhiêu?"
+   ],
+   [
+    "p",
+    "Theo SSI Research tổng hợp báo cáo tài chính quý 3/2026 của 28 ngân hàng niêm yết (VietnamFinance 11/11, Thời báo Tài chính Việt Nam 10/11/2026):"
+   ],
+   [
+    "table",
+    [
+     [
+      "Chỉ số (28 ngân hàng)",
+      "Đầu năm 2026",
+      "30/9/2026",
+      "Thay đổi"
+     ],
+     [
+      "Nợ nhóm 2",
+      "≈166.000 tỷ*",
+      "253.048 tỷ",
+      "+52,4%"
+     ],
+     [
+      "Nợ xấu (nhóm 3–5)",
+      "≈268.580 tỷ*",
+      "340.816 tỷ",
+      "+26,9%"
+     ],
+     [
+      "Tỷ lệ nợ xấu",
+      "2,02%",
+      "2,12%",
+      "+0,1 điểm %"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "<small>* Em tính ngược từ mức tăng đã công bố.</small> Điểm đáng chú ý: nợ nhóm 2 tăng <b>nhanh gấp đôi</b> nợ xấu. Cộng nhóm 2 đến 5, tổng nợ có vấn đề là <b>593.864 tỷ, bằng 3,69% dư nợ</b>, gần gấp đôi con số nợ xấu 2,12% thường được nhắc. Ở từng ngân hàng, VPB cho biết nợ nhóm 2 quý 3 tăng khoảng 17,5% so với quý trước."
+   ],
+   [
+    "h2",
+    "Cách đọc nợ nhóm 2 khi xem báo cáo ngân hàng"
    ],
    [
     "ol",
     [
-     "Xem nợ xấu và nợ nhóm 2 so với quý trước, không chỉ so với cùng kỳ.",
-     "Xem bao phủ nợ xấu và <a href='/f0/chi-phi-du-phong-la-gi.html'>chi phí dự phòng</a> để biết ngân hàng đang trích mạnh hay nhẹ tay.",
-     "Đọc tăng trưởng tín dụng đi cùng, vì tín dụng tăng nhanh thường cần thêm thời gian mới lộ nợ xấu."
+     "Tìm thuyết minh \"phân loại nợ\" trong báo cáo tài chính quý: có số dư từng nhóm 1–5.",
+     "So nhóm 2 với quý trước. Tăng nhanh 2–3 quý liền thường báo trước nợ xấu tăng.",
+     "Đặt cạnh <a href='/f0/bao-phu-no-xau-la-gi.html'>bao phủ nợ xấu</a> và <a href='/f0/chi-phi-du-phong-la-gi.html'>chi phí dự phòng</a>: nhóm 2 tăng mà dự phòng giảm thì lợi nhuận hôm nay có thể đang \"vay\" của các quý sau."
+    ]
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
+   ],
+   [
+    "ol",
+    [
+     "<b>\"Chậm vài ngày không sao\":</b> mốc là 10 ngày, không phải 1 tháng. Ví dụ chị Lan ở trên chỉ trễ 12 ngày.",
+     "<b>Chỉ nhìn tỷ lệ nợ xấu 2%:</b> quý 3/2026 tỷ lệ nợ xấu 28 ngân hàng là 2,12%, nhưng tính cả nhóm 2 thì là 3,69%.",
+     "<b>Nghĩ trả xong là sạch ngay:</b> thông tin tiêu cực có thể được CIC cung cấp tới 5 năm sau ngày tất toán."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist"
+   ],
+   [
+    "ul",
+    [
+     "Đặt lịch trả nợ trước ngày đến hạn 3 ngày, không để quá 10 ngày.",
+     "Nếu biết sắp thiếu tiền, gọi ngân hàng trước kỳ trả, khi khoản vay còn ở nhóm 1.",
+     "Giữ quỹ dự phòng đủ vài kỳ trả góp (xem <a href='/f0/quy-du-phong-truoc-khi-dau-tu.html'>quỹ dự phòng bao nhiêu tháng là đủ</a>).",
+     "Đọc báo cáo ngân hàng: so nợ nhóm 2 với quý trước, đặt cạnh bao phủ nợ xấu."
     ]
    ],
    [
     "p",
-    "Xem thêm bảng tích sản ngân hàng với số liệu thật tại <a href='/bao-cao-2026.html#tichsan'>Báo cáo 2026 – bảng tích sản</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+    "Muốn xem các ngân hàng trên sàn từng quý cùng tỷ lệ nợ xấu và bao phủ, anh chị xem thêm <a href='/bao-cao-2026.html#tichsan'>bảng tích sản ngân hàng</a> và bài <a href='/f0/no-xau-ngan-hang-la-gi.html'>nợ xấu ngân hàng là gì</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
    ]
   ],
   "faq": [
    [
     "Nợ nhóm 2 có phải nợ xấu không?",
-    "Không. Nợ xấu là nợ nhóm 3, 4 và 5. Nợ nhóm 2 là nợ cần chú ý, có nguy cơ chuyển thành nợ xấu nếu khách hàng tiếp tục chậm trả."
+    "Không. Nợ xấu là nợ nhóm 3, 4 và 5 (quá hạn từ 91 ngày). Nợ nhóm 2 là nợ cần chú ý, quá hạn từ 10 đến 90 ngày, dễ chuyển thành nợ xấu nếu tiếp tục chậm trả."
    ],
    [
-    "Xem nợ nhóm 2 ở đâu?",
-    "Thường nằm trong thuyết minh báo cáo tài chính hoặc báo cáo thường niên của ngân hàng, mục phân loại nợ theo nhóm."
+    "Trễ hạn bao nhiêu ngày thì bị nợ xấu?",
+    "Theo Thông tư 31/2024/TT-NHNN, quá hạn từ 91 ngày là nợ xấu (nhóm 3). Quá hạn từ 10 ngày đã là nợ nhóm 2."
    ],
    [
-    "Nợ xấu thấp có đủ để kết luận ngân hàng an toàn?",
-    "Chưa đủ. Cần xem thêm nợ nhóm 2, bao phủ nợ xấu, nợ được cơ cấu lại và tốc độ tăng tín dụng."
+    "Bị nợ nhóm 2 có vay được ngân hàng khác không?",
+    "Khó hơn. Ngân hàng khác tra lịch sử tín dụng qua CIC; thông tin tiêu cực được cung cấp tối đa 5 năm kể từ ngày tất toán. Mỗi ngân hàng có chính sách xét duyệt riêng."
    ]
   ],
   "rel": [
+   "het-uu-dai-lai-suat-vay-mua-nha",
    "no-xau-ngan-hang-la-gi",
    "bao-phu-no-xau-la-gi",
    "chi-phi-du-phong-la-gi",
    "doc-bctc-ngan-hang"
   ],
-  "add": []
+  "mod": "2026-11-18"
  },
  {
   "slug": "lai-suat-huy-dong-va-loi-nhuan-ngan-hang",
@@ -36339,6 +36535,10 @@
     "Để dễ hình dung, thu nhập bình quân người lao động quý 3/2026 là 9,18 triệu/tháng. Khoản trả thêm 1,54 triệu khi lãi từ 8% lên 10% bằng khoảng 17% số đó."
    ],
    [
+    "p",
+    "Đang vay và sắp hết ưu đãi? Ví dụ khoản 2 tỷ lãi từ 8,5% lên 14% (trả thêm 8,25 triệu/tháng) và 3 cách xử lý có ở bài <a href='/f0/het-uu-dai-lai-suat-vay-mua-nha.html'>hết ưu đãi lãi vay mua nhà: trả thêm bao nhiêu, nên làm gì</a>."
+   ],
+   [
     "h2",
     "Bẫy hay gặp khi vay mua nhà"
    ],
@@ -36396,6 +36596,7 @@
    ]
   ],
   "rel": [
+   "het-uu-dai-lai-suat-vay-mua-nha",
    "viet-nam-dang-no-bao-nhieu",
    "tich-san-co-phieu-hay-gui-tiet-kiem",
    "lai-suat-tang-anh-huong-chung-khoan",
@@ -36767,6 +36968,10 @@
    ],
    [
     "p",
+    "Ví dụ cụ thể: hai vợ chồng thu nhập 50 triệu, khoản vay mua nhà hết ưu đãi từ 8,5% lên 14% đẩy tỷ lệ trả nợ từ 42% lên 59%, xem bài <a href='/f0/het-uu-dai-lai-suat-vay-mua-nha.html'>hết ưu đãi lãi vay mua nhà</a>."
+   ],
+   [
+    "p",
     "<small>Chia sẻ kiến thức, không phải khuyến nghị vay hay đầu tư.</small>"
    ]
   ],
@@ -36785,6 +36990,7 @@
    ]
   ],
   "rel": [
+   "het-uu-dai-lai-suat-vay-mua-nha",
    "quy-du-phong-truoc-khi-dau-tu",
    "cho-vay-tieu-dung-va-cho-vay-doanh-nghiep-khac-gi",
    "tinh-tien-tra-gop-vay-mua-nha",
@@ -38896,6 +39102,202 @@
    "gia-vang-va-chung-khoan",
    "ty-trong-vang-bitcoin-trong-danh-muc",
    "quy-du-phong-truoc-khi-dau-tu"
+  ]
+ },
+ {
+  "slug": "het-uu-dai-lai-suat-vay-mua-nha",
+  "kw": "hết ưu đãi lãi suất vay mua nhà",
+  "grp": 7,
+  "date": "2026-11-18",
+  "title": "Hết ưu đãi lãi vay mua nhà: trả thêm bao nhiêu, nên làm gì?",
+  "desc": "Vay 2 tỷ, hết 2 năm ưu đãi, lãi từ 8,5% lên 14%: kỳ trả tăng 8,25 triệu. Bảng lãi thả nổi 10–15%, 3 cách giảm tiền nhà và mốc trễ hạn 10 ngày.",
+  "body": [
+   [
+    "p",
+    "7 giờ 45 sáng thứ Hai, anh Khoa nhận tin nhắn của ngân hàng: <i>\"Từ kỳ 25/11, lãi suất khoản vay điều chỉnh 14%/năm. Số tiền kỳ này: 29.330.000đ.\"</i> Tháng trước anh chỉ trả <b>21,08 triệu</b>. Không đổi căn hộ, không vay thêm đồng nào, mỗi tháng nhà anh tự nhiên tốn thêm <b>8,25 triệu</b>."
+   ],
+   [
+    "p",
+    "Anh Khoa là nhân vật giả định để em tính cho dễ hình dung, nhưng mức lãi là thật: theo SSI Research (Công Luận 6/11/2026), lãi thả nổi của khoản vay mua nhà quý 3/2026 đang ở <b>12–15%/năm</b>. Bài này giúp anh chị tính trước khoản của mình và chọn cách xử lý trước khi kỳ hết ưu đãi tới."
+   ],
+   [
+    "h2",
+    "Hết ưu đãi, lãi vay mua nhà thả nổi lên bao nhiêu?"
+   ],
+   [
+    "p",
+    "Phần lớn hợp đồng vay mua nhà có 2 giai đoạn. Giai đoạn đầu lãi cố định thấp, thường khoảng <b>9–10,5% trong 12–24 tháng</b> (Báo Đấu thầu 17/11/2026). Hết thời gian đó, lãi chuyển sang <b>thả nổi</b>: bằng <b>lãi cơ sở</b> do ngân hàng công bố (thường bám lãi tiết kiệm 12–13 tháng) cộng một <b>biên độ</b> cố định ghi trong hợp đồng, điều chỉnh 3 hoặc 6 tháng một lần."
+   ],
+   [
+    "p",
+    "Biên độ không đổi, nhưng lãi cơ sở thì đổi. Khi lãi huy động tăng và nợ xấu tăng, ngân hàng khó hạ lãi cho vay, người đang vay thả nổi là người thấy đầu tiên."
+   ],
+   [
+    "h2",
+    "Lãi 10%, 12%, 15% thì mỗi tháng trả bao nhiêu?"
+   ],
+   [
+    "p",
+    "Ví dụ của anh Khoa: vay <b>2 tỷ, 20 năm</b>, trả gốc đều 2.000 ÷ 240 = <b>8,33 triệu/tháng</b>, ưu đãi 8,5% trong 24 tháng. Sau 24 kỳ, dư nợ còn 2.000 − 24 × 8,33 = <b>1,8 tỷ</b>. Tiền lãi tháng = 1.800 triệu × lãi năm ÷ 12."
+   ],
+   [
+    "table",
+    [
+     [
+      "Lãi/năm",
+      "Tiền lãi tháng",
+      "Kỳ trả (gốc + lãi)",
+      "So với thu nhập 50 triệu"
+     ],
+     [
+      "8,5% (ưu đãi)",
+      "12,75 triệu",
+      "21,08 triệu",
+      "42%"
+     ],
+     [
+      "10%",
+      "15,00 triệu",
+      "23,33 triệu",
+      "47%"
+     ],
+     [
+      "12%",
+      "18,00 triệu",
+      "26,33 triệu",
+      "53%"
+     ],
+     [
+      "14%",
+      "21,00 triệu",
+      "29,33 triệu",
+      "59%"
+     ],
+     [
+      "15%",
+      "22,50 triệu",
+      "30,83 triệu",
+      "62%"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Em tính theo kiểu gốc đều, lãi trên dư nợ còn lại, tháng đầu sau ưu đãi; chưa gồm phí bảo hiểm khoản vay. Nếu lãi đứng ở 14% suốt 18 năm còn lại, tổng tiền lãi là khoảng <b>2,28 tỷ</b>, so với <b>1,38 tỷ</b> nếu vẫn 8,5%. Chênh khoảng <b>895 triệu</b>, gần bằng nửa số tiền đã vay."
+   ],
+   [
+    "h2",
+    "Trả góp chiếm bao nhiêu phần thu nhập là quá sức?"
+   ],
+   [
+    "p",
+    "Nhiều người dùng mốc <b>tổng tiền trả nợ không quá 40% thu nhập</b>. Thu nhập hai vợ chồng anh Khoa là 50 triệu: lúc ưu đãi đã là 42%, sát mốc. Lãi 14% đẩy lên 59%, phần còn lại cho ăn, học, đi lại chỉ còn khoảng <b>20,7 triệu</b>. Cách tự tính cho nhà mình có ở bài <a href='/f0/ty-le-tra-no-tren-thu-nhap-la-gi.html'>tỷ lệ trả nợ trên thu nhập</a>."
+   ],
+   [
+    "h2",
+    "Hết ưu đãi lãi suất vay mua nhà thì làm gì?"
+   ],
+   [
+    "p",
+    "Có 3 cách phổ biến, mỗi cách nhẹ tiền tháng nhưng đều có giá phải trả. Em tính trên khoản 1,8 tỷ, lãi 14%:"
+   ],
+   [
+    "table",
+    [
+     [
+      "Cách",
+      "Kỳ trả nhẹ đi",
+      "Cái giá"
+     ],
+     [
+      "Kéo dài thêm 5 năm<br>(216 → 276 tháng)",
+      "≈1,81 triệu<br>(gốc 6,52 thay vì 8,33)",
+      "Tổng lãi tăng khoảng 630 triệu"
+     ],
+     [
+      "Trả bớt 300 triệu gốc",
+      "≈3,5 triệu<br>(kỳ trả còn 25,83 triệu)",
+      "Mỏng quỹ dự phòng; có thể mất phí trả trước hạn"
+     ],
+     [
+      "Chuyển ngân hàng<br>lãi ưu đãi 10%",
+      "≈6 triệu<br>(lãi 15 thay vì 21 triệu)",
+      "Phí trả nợ trước hạn, phí thẩm định; ưu đãi mới cũng chỉ 1–2 năm"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Không có cách nào miễn phí. Kéo dài thời hạn nhẹ nhất cho tháng này nhưng đắt nhất về tổng. Trả bớt gốc hiệu quả nếu sau khi trả vẫn còn đủ quỹ dự phòng 6 tháng chi tiêu (xem <a href='/f0/quy-du-phong-truoc-khi-dau-tu.html'>quỹ dự phòng bao nhiêu tháng là đủ</a>). Chuyển ngân hàng chỉ đáng khi phần tiết kiệm trong thời gian ưu đãi mới lớn hơn tổng phí phải trả."
+   ],
+   [
+    "h2",
+    "Trễ hạn vài ngày có sao không?"
+   ],
+   [
+    "p",
+    "Có. Theo Thông tư 31/2024/TT-NHNN, khoản vay quá hạn <b>từ 10 ngày</b> đã sang <b>nợ nhóm 2</b> (nợ cần chú ý); từ ngày thứ 91 là nợ xấu. Thông tin tiêu cực được trung tâm tín dụng CIC cung cấp tối đa <b>5 năm</b> kể từ ngày tất toán (Thông tư 15/2023/TT-NHNN), lần sau đi vay ngân hàng khác vẫn thấy. Chi tiết 5 nhóm nợ ở bài <a href='/f0/no-nhom-2-la-gi.html'>nợ nhóm 2 là gì</a>."
+   ],
+   [
+    "p",
+    "Đây không còn là chuyện cá biệt: cuối quý 3/2026, nợ nhóm 2 tại 28 ngân hàng niêm yết là <b>253.048 tỷ đồng, tăng 52,4%</b> so với đầu năm (SSI Research, VietnamFinance 11/11/2026). Với khách cá nhân, nợ xấu tăng chủ yếu ở các khoản vay đầu tư bất động sản."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
+   ],
+   [
+    "ol",
+    [
+     "<b>Chỉ nhìn lãi ưu đãi:</b> 8,5% trong 2 năm không nói gì về 18 năm còn lại. Trước khi ký, hỏi rõ lãi cơ sở là gì, biên độ bao nhiêu, bao lâu điều chỉnh một lần.",
+     "<b>\"Chậm vài ngày chắc không sao\":</b> mốc 10 ngày rất ngắn. Một tháng chờ lương, chờ thưởng là đủ để khoản vay sang nhóm 2.",
+     "<b>Đợi trễ rồi mới gặp ngân hàng:</b> xin kéo dài thời hạn khi khoản vay còn ở nhóm 1 dễ hơn nhiều so với khi đã quá hạn."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist trước kỳ hết ưu đãi"
+   ],
+   [
+    "ul",
+    [
+     "Tìm trong hợp đồng: ngày hết ưu đãi, công thức lãi thả nổi (lãi cơ sở + biên độ), phí trả nợ trước hạn từng năm.",
+     "Phép thử 15%: dư nợ còn lại × 15% ÷ 12 + tiền gốc tháng. Thu nhập hiện tại có gánh được không?",
+     "Nếu phải rút tiết kiệm để bù: tiết kiệm đủ bù bao nhiêu tháng? Dưới 12 tháng thì nên gặp ngân hàng ngay (mốc tự soi, không phải quy định).",
+     "Hỏi 2–3 ngân hàng khác về lãi chuyển khoản vay, rồi so với tổng phí phải trả.",
+     "Đặt nhắc trả tiền trước hạn 3 ngày, không để kỳ nào quá 10 ngày.",
+     "Theo dõi lãi tiết kiệm 12 tháng: lãi huy động giảm thì lãi thả nổi mới có chỗ giảm."
+    ]
+   ],
+   [
+    "p",
+    "Muốn tính lại với khoản vay 1–1,2 tỷ trả đều hằng tháng, anh chị dùng bảng ở bài <a href='/f0/tinh-tien-tra-gop-vay-mua-nha.html'>tính tiền trả góp vay mua nhà</a>."
+   ],
+   [
+    "p",
+    "<small>Nguồn: Công Luận 6/11/2026 (SSI Research); Báo Đấu thầu 17/11/2026; VietnamFinance 11/11/2026; Thông tư 31/2024/TT-NHNN, 15/2023/TT-NHNN. Khoản vay của anh Khoa là giả định, em tự tính. Nội dung chỉ để tham khảo, không phải tư vấn vay vốn.</small>"
+   ]
+  ],
+  "faq": [
+   [
+    "Lãi suất thả nổi vay mua nhà tính thế nào?",
+    "Thường bằng lãi suất cơ sở do ngân hàng công bố (bám lãi tiết kiệm 12–13 tháng) cộng biên độ cố định ghi trong hợp đồng, điều chỉnh 3 hoặc 6 tháng một lần. Quý 3/2026 mức thả nổi phổ biến khoảng 12–15%/năm."
+   ],
+   [
+    "Hết ưu đãi có nên chuyển khoản vay sang ngân hàng khác?",
+    "Chỉ khi phần lãi tiết kiệm được trong thời gian ưu đãi mới lớn hơn tổng phí trả nợ trước hạn, phí thẩm định và các chi phí khác. Ví dụ khoản 1,8 tỷ chuyển từ 14% sang 10% nhẹ khoảng 6 triệu mỗi tháng."
+   ],
+   [
+    "Trễ hạn trả góp bao nhiêu ngày thì bị nợ xấu?",
+    "Quá hạn từ 10 ngày đã là nợ nhóm 2 (nợ cần chú ý). Từ ngày thứ 91 khoản vay thành nợ xấu (nhóm 3 trở lên) theo Thông tư 31/2024/TT-NHNN."
+   ]
+  ],
+  "rel": [
+   "tinh-tien-tra-gop-vay-mua-nha",
+   "no-nhom-2-la-gi",
+   "ty-le-tra-no-tren-thu-nhap-la-gi",
+   "quy-du-phong-truoc-khi-dau-tu",
+   "no-xau-ngan-hang-la-gi"
   ]
  }
 ]
