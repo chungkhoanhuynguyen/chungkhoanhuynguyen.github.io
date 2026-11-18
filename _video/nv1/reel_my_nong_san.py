@@ -18,7 +18,7 @@ R = dict(key='RV1911MY', tieu_de='Vì sao Mỹ cử đoàn nông nghiệp lớn 
  tags=[], toc=1.1, nhac='lofi', music_db=-2, hieu_ung=1,
  cau_hoi=dict(chu_to='NHÀ MÌNH Ở CỬA NÀO?', loi=Q, loi_doc=lib.doc(Q), anh=['Ho Chi Minh City skyline night', 'Bitexco Financial Tower']),
  canh=[
-  C('ĐOÀN LỚN NHẤT LỊCH SỬ', 'Từ ngày 9 đến 12/11, Bộ Nông nghiệp Mỹ vừa đưa 43 doanh nghiệp sang Thành phố Hồ Chí Minh. Đây là đoàn xúc tiến nông nghiệp lớn nhất từ trước đến nay. Đoàn này sang để bán hàng.',
+  C('ĐOÀN LỚN NHẤT LỊCH SỬ', 'Giữa tháng 11 này, Bộ Nông nghiệp Mỹ vừa đưa 43 doanh nghiệp sang Thành phố Hồ Chí Minh. Đây là đoàn xúc tiến nông nghiệp lớn nhất từ trước đến nay. Đoàn này sang để bán hàng.',
     the=dict(loai='lon', tieu='ĐOÀN XÚC TIẾN NÔNG NGHIỆP MỸ', nguon='Tuổi Trẻ 8/11/2026', dong=[['43 DOANH NGHIỆP', 112, 'vang'], ['TP.HCM, 9 ĐẾN 12/11', 56, 'trang']])),
   C('BÁN 159,4, MUA 19,3', 'Lý do nằm ở sổ sách. Mười tháng năm nay, Việt Nam bán sang Mỹ 159,4 tỷ đô la, nhưng chỉ mua lại 19,3 tỷ. Em tự tính: bán hơn 8 đồng mới mua về 1 đồng.',
     the=dict(loai='cot', tieu='VIỆT NAM VÀ MỸ, 10 THÁNG 2026 (TỶ USD)', nguon='Thuế & Hải quan Online 13/11/2026', hang=[['Bán sang Mỹ', 159.4], ['Mua từ Mỹ', 19.3]], noi=[0], dv='', max=170)),
@@ -28,7 +28,7 @@ R = dict(key='RV1911MY', tieu_de='Vì sao Mỹ cử đoàn nông nghiệp lớn 
     the=dict(loai='lon', tieu='THỊT GÀ NHẬP KHẨU, NỬA ĐẦU 2026', nguon='Hiệp hội Gia cầm Việt Nam, Znews 2/8/2026', dong=[['61,8% TỪ MỸ', 116, 'do'], ['CHỦ YẾU ĐÙI GÓC TƯ', 56, 'trang']])),
   C('26.500 ĐỒNG MỘT KÝ', 'Giá nhập bình quân của thịt gia cầm chỉ khoảng 26.500 đồng một ký. Người nuôi gà trắng công nghiệp trong nước đang chịu áp lực trực tiếp.',
     the=dict(loai='lon', tieu='GIÁ NHẬP BÌNH QUÂN, 7 THÁNG 2026', nguon='Cục Hải quan, VnBusiness 9/9/2026', dong=[['26.500 Đ/KG', 116, 'do'], ['THỊT GIA CẦM NHẬP KHẨU', 54, 'trang']])),
-  C('NGƯỜI ĐI CHỢ CÓ LỢI', 'Nhưng người đi chợ thì có lợi. Thịt bò Mỹ nhập về tám tháng đầu năm gấp ba lần cùng kỳ. Táo Mỹ bán lẻ rẻ hơn năm ngoái khoảng 5 đến 10%.',
+  C('NGƯỜI ĐI CHỢ CÓ LỢI', 'Nhưng người đi chợ thì có lợi. Thịt bò Mỹ nhập về tám tháng đầu năm gấp ba lần cùng kỳ. Giá táo Mỹ ở siêu thị cũng rẻ hơn năm ngoái khoảng 5 đến 10%.',
     the=dict(loai='lon', tieu='THỊT BÒ MỸ NHẬP, 8 THÁNG 2026', nguon='VnExpress 11/11/2026', dong=[['GẤP 3 LẦN', 120, 'vang'], ['SO VỚI CÙNG KỲ', 58, 'trang']])),
   C('GÀ TA KHÔNG ĐỤNG HÀNG', 'Và không phải cả ngành đều thua. Hồi tháng tám, gà lông màu miền Nam được khoảng 46.000 đồng một ký, gần gấp đôi gà trắng. Gà nguyên con đông lạnh chỉ chiếm khoảng 2% thịt gà nhập.',
     the=dict(loai='cot', tieu='GIÁ GÀ HƠI MIỀN NAM, THÁNG 8 (NGHÌN Đ/KG)', nguon='Bộ NN&MT, VnBusiness 9/9/2026', hang=[['Gà trắng', 25], ['Gà lông màu', 46]], noi=[1], dv='', max=50)),
