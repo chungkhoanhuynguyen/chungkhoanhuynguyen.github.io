@@ -1,38 +1,68 @@
 <!doctype html>
-<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex,nofollow"><title>Nhận định thị trường</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;700;800&display=swap" rel="stylesheet">
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#1c0b3f"><title>Nhận định thị trường · Huy Nguyễn</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-:root{--tim:#2a1458;--tim2:#3b1d7a;--vang:#ffd23f;--chu:#f4f1ff;--mo:#b9b0d6}
-*{box-sizing:border-box}body{margin:0;background:var(--tim);color:var(--chu);font-family:'Be Vietnam Pro',system-ui,sans-serif}
-.wrap{max-width:720px;margin:0 auto;padding:24px 16px 48px}
-h1{font-size:22px;margin:0 0 4px}.sub{color:var(--mo);font-size:14px;margin:0 0 20px}
-.the{background:var(--tim2);border-radius:16px;padding:20px;margin-bottom:16px}
-.ngay{color:var(--vang);font-weight:800;font-size:15px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center;gap:8px}
-.mn{color:var(--mo);font-weight:800;font-size:15px;margin:28px 0 10px}
-pre{white-space:pre-wrap;font:500 16px/1.6 'Be Vietnam Pro',system-ui,sans-serif;margin:0}
-button{min-height:44px;padding:0 18px;border:0;border-radius:12px;background:var(--vang);color:var(--tim);font:800 15px 'Be Vietnam Pro',sans-serif;cursor:pointer;transition:transform .12s ease}
-button:active{transform:scale(.97)}button.ok{background:#5dff9b}
-form{display:flex;gap:10px;flex-wrap:wrap}input{flex:1;min-width:180px;min-height:44px;border-radius:12px;border:2px solid #5a3fa0;background:#1f0f45;color:#fff;padding:0 14px;font:600 16px 'Be Vietnam Pro',sans-serif}
-.loi{color:#ff8a8a;margin-top:10px;font-size:14px;min-height:20px}
+:root{--nen:#160831;--tim:#2a1458;--the:rgba(255,255,255,.06);--vien:rgba(255,255,255,.12);--vang:#ffd23f;--chu:#f4f1ff;--mo:#b9b0d6;--xanh:#5dff9b;--do:#ff7a7a}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;min-height:100vh;color:var(--chu);font-family:'Be Vietnam Pro',system-ui,sans-serif;background:var(--nen);
+ background-image:radial-gradient(1200px 600px at 10% -10%,rgba(124,58,237,.55),transparent 60%),radial-gradient(900px 500px at 110% 10%,rgba(255,210,63,.18),transparent 60%),radial-gradient(700px 700px at 50% 120%,rgba(59,29,122,.9),transparent 70%);background-attachment:fixed}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.07;background-image:linear-gradient(rgba(255,255,255,.6) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.6) 1px,transparent 1px);background-size:40px 40px;mask-image:linear-gradient(180deg,#000,transparent 70%)}
+.wrap{position:relative;max-width:760px;margin:0 auto;padding:max(20px,env(safe-area-inset-top)) 16px 56px}
+header{display:flex;align-items:center;gap:12px;margin:6px 0 22px}
+.logo{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--vang),#ff9d2f);color:var(--tim);display:grid;place-items:center;font-weight:900;font-size:18px;flex:none}
+h1{font-size:21px;margin:0;line-height:1.2}.sub{color:var(--mo);font-size:13px;margin:2px 0 0}
+.thoat{margin-left:auto;background:transparent;color:var(--mo);border:1px solid var(--vien);min-height:36px;padding:0 12px;font-size:13px;display:none}
+h2{font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--vang);margin:28px 0 12px;font-weight:800}
+.the{background:var(--the);border:1px solid var(--vien);border-radius:18px;padding:18px;margin-bottom:14px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.dau{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}
+.nhan{font-weight:800;font-size:15px}.nhan small{display:block;color:var(--mo);font-weight:600;font-size:12px;margin-top:2px}
+.sang .nhan{color:#ffe7a0}.chieu .nhan{color:#c9b6ff}
+pre{white-space:pre-wrap;font:500 15.5px/1.65 'Be Vietnam Pro',system-ui,sans-serif;margin:0;word-break:break-word}
+button{min-height:44px;padding:0 18px;border:0;border-radius:12px;background:var(--vang);color:var(--tim);font:800 15px 'Be Vietnam Pro',sans-serif;cursor:pointer;transition:transform .12s ease,background .15s ease;flex:none}
+button:active{transform:scale(.97)}button.ok{background:var(--xanh)}
+.tin{display:block;text-decoration:none;color:inherit;padding:14px 16px;border-radius:14px;border:1px solid var(--vien);background:rgba(255,255,255,.04);margin-bottom:10px;transition:background .15s ease}
+.tin:hover{background:rgba(255,255,255,.09)}.tin b{display:block;font-size:15px;line-height:1.4}.tin span{display:block;color:var(--mo);font-size:13.5px;line-height:1.5;margin-top:4px}.tin i{font-style:normal;font-size:12px;color:var(--vang);font-weight:700;display:block;margin-top:6px}
+.tab{display:flex;gap:8px;margin-bottom:12px}.tab button{background:rgba(255,255,255,.08);color:var(--chu);min-height:38px;font-size:14px}.tab button.on{background:var(--vang);color:var(--tim)}
+details{border:1px solid var(--vien);border-radius:16px;margin-bottom:10px;background:rgba(255,255,255,.03)}details summary{cursor:pointer;padding:14px 16px;font-weight:700;list-style:none;display:flex;justify-content:space-between}details summary:after{content:"＋";color:var(--mo)}details[open] summary:after{content:"−"}
+details .the{margin:0 10px 10px;background:rgba(255,255,255,.04)}
+.khoa{max-width:420px;margin:12vh auto 0;text-align:center}.khoa .logo{margin:0 auto 14px;width:60px;height:60px;font-size:24px;border-radius:16px}
+.khoa h1{font-size:24px}.khoa p{color:var(--mo);margin:6px 0 20px}
+form{display:flex;flex-direction:column;gap:10px}input{min-height:48px;border-radius:12px;border:1px solid var(--vien);background:rgba(0,0,0,.25);color:#fff;padding:0 14px;font:600 16px 'Be Vietnam Pro',sans-serif}
+input:focus{outline:2px solid var(--vang);outline-offset:1px}.an{position:absolute;left:-9999px}
+.loi{color:var(--do);font-size:14px;min-height:20px}.cn{color:var(--mo);font-size:12px;margin-top:-4px}
 </style></head><body><div class="wrap">
-<h1>Nhận định thị trường</h1><p class="sub">Tin sáng khoảng 8h30 · Kết phiên khoảng 15h30 · 15 phiên gần nhất · Trang riêng</p>
-<div id="khoa" class="the"><form id="f"><input id="mk" type="password" placeholder="Mật khẩu" autocomplete="current-password"><button>Mở</button></form><div class="loi" id="loi"></div></div>
-<div id="nd"></div>
-</div>
+<div id="khoa" class="khoa"><div class="logo">HN</div><h1>Nhận định thị trường</h1><p>Trang riêng của Huy Nguyễn</p>
+<form id="f" autocomplete="on"><input class="an" type="text" name="username" autocomplete="username" value="huynguyen" tabindex="-1" aria-hidden="true"><input id="mk" name="password" type="password" placeholder="Mật khẩu" autocomplete="current-password" required><button type="submit">Mở trang</button><div class="loi" id="loi"></div></form></div>
+<div id="nd" style="display:none">
+<header><div class="logo">HN</div><div><h1>Nhận định thị trường</h1><p class="sub" id="cn"></p></div><button class="thoat" id="thoat">Thoát</button></header>
+<h2>Tin hôm nay</h2><div id="moi"></div>
+<h2>Tin nóng trong nước &amp; thế giới</h2><div class="tab"><button class="on" data-g="vn">Trong nước</button><button data-g="tg">Thế giới</button></div><div id="tt"></div>
+<h2>Các phiên trước</h2><div id="cu"></div>
+</div></div>
 <script>
 const b64=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
 async function giai(mk){const r=await fetch('data.enc.json?'+Date.now());const e=await r.json();
  const k0=await crypto.subtle.importKey('raw',new TextEncoder().encode(mk),'PBKDF2',false,['deriveKey']);
  const k=await crypto.subtle.deriveKey({name:'PBKDF2',salt:b64(e.salt),iterations:e.vong,hash:'SHA-256'},k0,{name:'AES-GCM',length:256},false,['decrypt']);
- const p=await crypto.subtle.decrypt({name:'AES-GCM',iv:b64(e.iv)},k,b64(e.ct));return JSON.parse(new TextDecoder().decode(p))}
-const ngay=p=>p.split('-').reverse().join('/');
-function the(x){const d=document.createElement('div');d.className='the';const h=document.createElement('div');h.className='ngay';h.textContent=(x.buoi==='sang'?'Sáng ':'Kết phiên ')+ngay(x.phien);
+ const p=await crypto.subtle.decrypt({name:'AES-GCM',iv:b64(e.iv)},k,b64(e.ct));const g=JSON.parse(new TextDecoder().decode(p));return Array.isArray(g)?{ds:g,tin_tuc:[]}:g}
+const ngay=p=>p.split('-').reverse().join('/'), THU=['Chủ nhật','Thứ Hai','Thứ Ba','Thứ Tư','Thứ Năm','Thứ Sáu','Thứ Bảy'];
+const thu=p=>THU[new Date(p+'T00:00:00').getDay()];
+function the(x){const d=document.createElement('div');d.className='the '+(x.buoi==='sang'?'sang':'chieu');
+ const h=document.createElement('div');h.className='dau';const n=document.createElement('div');n.className='nhan';n.textContent=x.buoi==='sang'?'Tin sáng 8h30':'Kết phiên';
+ const sm=document.createElement('small');sm.textContent=thu(x.phien)+', '+ngay(x.phien);n.appendChild(sm);
  const b=document.createElement('button');b.textContent='Sao chép';b.onclick=async()=>{try{await navigator.clipboard.writeText(x.tin);b.textContent='Đã chép ✓';b.classList.add('ok');setTimeout(()=>{b.textContent='Sao chép';b.classList.remove('ok')},1800)}catch(e){b.textContent='Không chép được'}};
- h.appendChild(b);const p=document.createElement('pre');p.textContent=x.tin;d.append(h,p);return d}
-function hien(ds){document.getElementById('khoa').style.display='none';const nd=document.getElementById('nd');nd.innerHTML='';let cu=null;
- ds.forEach((x,i)=>{if(x.phien!==cu){if(i){const m=document.createElement('div');m.className='mn';m.textContent='Ngày '+ngay(x.phien);nd.appendChild(m)}cu=x.phien}nd.appendChild(the(x))})}
-async function mo(mk,luu){try{const ds=await giai(mk);if(luu)try{localStorage.setItem('nd_mk',mk)}catch(e){}hien(ds)}catch(e){document.getElementById('loi').textContent='Sai mật khẩu hoặc chưa tải được dữ liệu'}}
+ h.append(n,b);const p=document.createElement('pre');p.textContent=x.tin;d.append(h,p);return d}
+function tinTuc(ds,g){const o=document.getElementById('tt');o.innerHTML='';const l=ds.filter(x=>x.g===g);if(!l.length){o.innerHTML='<div class="the">Chưa có tin nóng mục này.</div>';return}
+ l.forEach(x=>{const a=document.createElement('a');a.className='tin';a.href=x.u;a.target='_blank';a.rel='noopener';const t=document.createElement('b');t.textContent=x.t;const s=document.createElement('span');s.textContent=x.s;const i=document.createElement('i');i.textContent=x.n;a.append(t,s,i);o.appendChild(a)})}
+function hien(g){document.getElementById('khoa').style.display='none';document.getElementById('nd').style.display='block';document.getElementById('thoat').style.display='block';
+ document.getElementById('cn').textContent=g.cap_nhat?'Cập nhật '+g.cap_nhat:'15 phiên gần nhất';
+ const ds=g.ds||[],ngays=[...new Set(ds.map(x=>x.phien))];const moi=document.getElementById('moi'),cu=document.getElementById('cu');moi.innerHTML=cu.innerHTML='';
+ ds.filter(x=>x.phien===ngays[0]).forEach(x=>moi.appendChild(the(x)));
+ ngays.slice(1).forEach(p=>{const d=document.createElement('details');const s=document.createElement('summary');s.textContent=thu(p)+', '+ngay(p);d.appendChild(s);ds.filter(x=>x.phien===p).forEach(x=>d.appendChild(the(x)));cu.appendChild(d)});
+ const tt=g.tin_tuc||[];document.querySelectorAll('.tab button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab button').forEach(x=>x.classList.toggle('on',x===b));tinTuc(tt,b.dataset.g)});tinTuc(tt,'vn')}
+async function mo(mk,luu){try{const g=await giai(mk);if(luu)try{localStorage.setItem('nd_mk',mk)}catch(e){}hien(g)}catch(e){document.getElementById('loi').textContent='Sai mật khẩu hoặc chưa tải được dữ liệu';try{localStorage.removeItem('nd_mk')}catch(x){}}}
 document.getElementById('f').onsubmit=e=>{e.preventDefault();mo(document.getElementById('mk').value,true)};
+document.getElementById('thoat').onclick=()=>{try{localStorage.removeItem('nd_mk')}catch(e){}location.reload()};
 let s=null;try{s=localStorage.getItem('nd_mk')}catch(e){}if(s)mo(s,false);
 </script></body></html>
