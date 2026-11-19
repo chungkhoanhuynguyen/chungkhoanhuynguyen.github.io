@@ -15,7 +15,7 @@ def so(t):
         v = float(m.group(1).replace(',', '.')) * hs[m.group(2)]
         if m.group(3): v += float(m.group(3)) * hs[m.group(4)]
         out.add(round(v))
-    for m in re.finditer(r'(\d+)\s*triệu\s+(\d{1,3})\.000\b', t):     # whisper: "8 triệu 700.000"
+    for m in re.finditer(r'(\d+)\s*triệu,?\s+(\d{1,3})\.000\b', t):     # whisper: "8 triệu 700.000"
         out.add(int(m.group(1)) * 1000000 + int(m.group(2)) * 1000)
     for m in re.finditer(r'\d[\d.,]*\d|\d', t):
         x = m.group(0).rstrip('.,')
