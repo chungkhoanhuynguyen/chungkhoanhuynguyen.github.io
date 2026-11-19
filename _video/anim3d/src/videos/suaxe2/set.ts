@@ -9,63 +9,12 @@ import * as THREE from "three";
 import { staticFile, delayRender, continueRender } from "remotion";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { rng } from "../pho/paint";
-import { LFB } from "../pho/shade";
+import { tm, U, glow } from "./toonmat";
+import { buildCast3 } from "./cast3";
 import { NOINK } from "../pho/ink";
 
 const F = "'Be Vietnam Pro', 'DejaVu Sans', Arial, sans-serif";
 type V3 = [number, number, number];
-
-// ---------------- vật liệu toon riêng của set (2 tông nắng + ánh đèn ấm mềm + ambient bán cầu) ----------------
-const NL = 5; // số đèn ấm tối đa
-const U = {
-  uSun: { value: new THREE.Vector3(1.55, 1.12, 0.72) },        // nắng chiều
-  uAmbHi: { value: new THREE.Vector3(0.62, 0.55, 0.52) },      // trời / trần hắt xuống
-  uAmbLo: { value: new THREE.Vector3(0.36, 0.3, 0.3) },        // sàn hắt lên
-  uSat: { value: 1.08 },
-  uLampP: { value: Array.from({ length: NL }, () => new THREE.Vector3(0, -99, 0)) },
-  uLampC: { value: Array.from({ length: NL }, () => new THREE.Vector3()) },
-  uLampR: { value: Array.from({ length: NL }, () => 1) },
-};
-const DECL = `#include <common>
-uniform vec3 uSun; uniform vec3 uAmbHi; uniform vec3 uAmbLo; uniform float uSat;
-uniform vec3 uLampP[${NL}]; uniform vec3 uLampC[${NL}]; uniform float uLampR[${NL}];`;
-const SHADE = /* glsl */ `
-#if NUM_DIR_LIGHTS > 0
-{
-  vec3 sunV = directionalLights[ 0 ].direction;
-  vec3 upV = normalize( ( viewMatrix * vec4( 0.0, 1.0, 0.0, 0.0 ) ).xyz );
-  float ndl = max( dot( geometryNormal, sunV ), 0.0 );
-  float sunTerm = sunVis * smoothstep( 0.0, 0.22, ndl );
-  float up = 0.5 + 0.5 * dot( geometryNormal, upV );
-  vec3 alb = max( mix( vec3( dot( diffuseColor.rgb, vec3( 0.2126, 0.7152, 0.0722 ) ) ), diffuseColor.rgb, uSat ), 0.0 );
-  vec3 lamp = vec3( 0.0 );
-  for ( int i = 0; i < ${NL}; i ++ ) {
-    vec3 lp = ( viewMatrix * vec4( uLampP[ i ], 1.0 ) ).xyz; vec3 d = lp - geometryPosition; float dist = length( d );
-    float nl = max( dot( geometryNormal, d / dist ), 0.0 ); float att = clamp( 1.0 - dist / uLampR[ i ], 0.0, 1.0 ); att *= att;
-    lamp += uLampC[ i ] * smoothstep( 0.0, 0.45, nl ) * att;
-  }
-  vec3 amb = mix( uAmbLo, uAmbHi, smoothstep( 0.1, 0.9, up ) );
-  reflectedLight.directDiffuse = alb * ( amb + uSun * sunTerm * mix( 1.0, ndl, 0.25 ) + lamp );
-  reflectedLight.indirectDiffuse = vec3( 0.0 );
-}
-#endif
-`;
-const matCache = new Map<string, THREE.MeshLambertMaterial>();
-export function tm(color: THREE.ColorRepresentation = "#ffffff", map: THREE.Texture | null = null, o: { alphaTest?: number; side?: THREE.Side; vc?: boolean } = {}) {
-  const key = map ? "" : `${new THREE.Color(color).getHexString()}_${o.side ?? 0}`;
-  if (key && matCache.has(key)) return matCache.get(key)!;
-  const m = new THREE.MeshLambertMaterial({ color, map, alphaTest: o.alphaTest ?? 0, side: o.side ?? THREE.FrontSide, vertexColors: !!o.vc });
-  m.onBeforeCompile = (sh) => {
-    Object.assign(sh.uniforms, U);
-    sh.fragmentShader = sh.fragmentShader.replace("#include <common>", DECL)
-      .replace("#include <lights_fragment_begin>", "float sunVis = 1.0;\n" + LFB)
-      .replace("#include <lights_fragment_end>", "#include <lights_fragment_end>\n" + SHADE);
-  };
-  m.customProgramCacheKey = () => "sx2toon1";
-  if (key) matCache.set(key, m);
-  return m;
-}
-const glow = (r: number, g: number, b: number) => new THREE.MeshBasicMaterial({ color: new THREE.Color(r, g, b) });
 
 // ---------------- tiện ích hình học ----------------
 const mesh = (geo: THREE.BufferGeometry, m: THREE.Material, x = 0, y = 0, z = 0, cast = true) => { const k = new THREE.Mesh(geo, m); k.position.set(x, y, z); k.castShadow = cast; k.receiveShadow = true; return k; };
@@ -221,7 +170,15 @@ export function xeSo(col: string, plate = "29-B1 168.86", dream = false) {
   const stand = cy(0.012, 0.012, 0.32, dark, -0.16, 0.14, -0.05, 6); stand.rotation.z = 0.55; g.add(stand);
   return g;
 }
-function helmet(col: string) { const g = new THREE.Group(); const s = mesh(new THREE.SphereGeometry(0.15, 16, 10, 0, Math.PI * 2, 0, Math.PI * 0.55), tm(col)); g.add(s); const v = mesh(new THREE.SphereGeometry(0.152, 14, 6, -0.9, 1.8, Math.PI * 0.32, Math.PI * 0.22), tm("#1d2430")); g.add(v); const br = mesh(new THREE.TorusGeometry(0.15, 0.008, 4, 24), tm("#222")); br.rotation.x = Math.PI / 2; br.position.y = 0.02; g.add(br); return g; }
+/** mũ bảo hiểm nửa đầu kiểu VN: vỏ dày có viền cao su, sọc trang trí, kính chắn gió khói, quai cằm buông, khoá */
+function helmet(col: string) { const g = new THREE.Group(), sh = tm(col), blk = tm("#1a1a1e");
+  const shell = mesh(new THREE.SphereGeometry(0.15, 24, 12, 0, Math.PI * 2, 0, Math.PI * 0.52), sh); shell.scale.set(0.92, 0.95, 1.08); g.add(shell);
+  const inner = mesh(new THREE.SphereGeometry(0.138, 20, 10, 0, Math.PI * 2, 0, Math.PI * 0.52), tm("#2a2622", null, { side: THREE.BackSide })); inner.scale.copy(shell.scale); g.add(inner);
+  const rim = mesh(new THREE.TorusGeometry(0.145, 0.012, 6, 28), blk, 0, -0.01, 0); rim.rotation.x = Math.PI / 2; rim.scale.set(0.92, 1.08, 1); g.add(rim);
+  const stripe = mesh(new THREE.SphereGeometry(0.152, 6, 10, Math.PI / 2 - 0.12, 0.24, 0.05, Math.PI * 0.45), tm("#f4f4f2")); stripe.scale.copy(shell.scale); g.add(stripe);
+  const visor = mesh(new THREE.SphereGeometry(0.162, 18, 8, Math.PI / 2 - 0.9, 1.8, Math.PI * 0.3, Math.PI * 0.26), tm("#3a4a5a", null, { side: THREE.DoubleSide })); visor.scale.set(0.95, 1.0, 1.12); g.add(visor);
+  for (const s of [-1, 1]) { const st = wire([s * 0.13, -0.01, 0.02], [s * 0.02, -0.17, 0.05], -0.02, blk, 0.006); g.add(st); g.add(mesh(new THREE.SphereGeometry(0.012, 8, 6), blk, s * 0.13, -0.01, 0.02)); }
+  g.add(bx(0.03, 0.02, 0.012, tm("#c9cdd3"), 0.0, -0.17, 0.05)); return g; }
 function plasticStool(col: string) { const g = new THREE.Group(), m = tm(col); g.add(cy(0.17, 0.17, 0.035, m, 0, 0.43, 0, 18)); const leg = mesh(new THREE.CylinderGeometry(0.15, 0.2, 0.41, 4, 1, true), tm(col, null, { side: THREE.DoubleSide }), 0, 0.205, 0); leg.rotation.y = Math.PI / 4; g.add(leg); return g; }
 
 // ---------------- nạp mô hình Poly Haven → vật liệu toon ----------------
@@ -295,7 +252,7 @@ export function buildSuaXe2() {
   for (const [y, n] of [[0.03, 4], [0.47, 5], [0.93, 5], [1.37, 4]] as [number, number][]) for (let k = 0; k < n; k++) put(g, cans[(k * 3 + Math.round(y * 10)) % cans.length], -2.2 + k * (1.1 / (n - 1)), y + 0.02, -2.7 + (r() - 0.5) * 0.12, r() * 2, { h: 0.18 + r() * 0.14, blob: 0 });
   // lốp treo tường + mũ bảo hiểm treo đinh
   for (let k = 0; k < 5; k++) put(g, "old_tyre", -4.9 + k * 0.62, 1.85, Z0 + 0.13, 0, { h: 0.56, blob: 0 });
-  for (const [x, c] of [[-0.2, "#c8202f"], [0.22, "#f4f4f2"], [0.62, "#2b6cc4"]] as [number, string][]) { const hm = helmet(c); hm.position.set(x, 1.5, Z0 + 0.16); hm.rotation.x = 0.55; hm.rotation.z = (x - 0.2) * 0.4; g.add(hm); }
+  for (const [x, c] of [[-0.2, "#c8202f"], [0.22, "#f4f4f2"], [0.62, "#2b6cc4"]] as [number, string][]) { const hm = helmet(c); hm.position.set(x, 1.62, Z0 + 0.17); hm.rotation.set(0.35, (x - 0.22) * 2.2, (x - 0.22) * 0.25); g.add(mesh(new THREE.CylinderGeometry(0.006, 0.006, 0.06, 6), tm("#888"), x, 1.78, Z0 + 0.03).rotateX(Math.PI / 2)); g.add(hm); }
   // ---- góc phải sau: bàn thợ gỗ, ê-tô, tủ đồ nghề đỏ, bảng treo dụng cụ, hộp điện, đồng hồ ----
   const wood = tm("#ffffff", woodTex(3, "#6b4a32"));
   g.add(bx(2.4, 0.08, 0.8, wood, 3.0, 0.9, -2.5)); for (const [a, b] of [[-1.1, -0.33], [1.1, -0.33], [-1.1, 0.33], [1.1, 0.33]]) g.add(bx(0.07, 0.9, 0.07, tm("#3e3f44"), 3.0 + a, 0.45, -2.5 + b));
@@ -372,11 +329,11 @@ export function buildSuaXe2() {
     const fac = new THREE.Mesh(new THREE.PlaneGeometry(36, 11.25), new THREE.MeshBasicMaterial({ map: ctex(c) })); fac.position.set(0, 5.4, 22); fac.rotation.y = Math.PI; fac.layers.set(NOINK); g.add(fac); }
   { const um = new THREE.Group(); const can = mesh(new THREE.ConeGeometry(1.4, 0.45, 8, 1, true), tm("#2f6fb0", null, { side: THREE.DoubleSide }), 0, 2.3, 0); um.add(can); um.add(cy(0.025, 0.025, 2.3, tm("#ddd"), 0, 1.15, 0, 6)); um.position.set(-4.6, 0, 6.6); g.add(um); }
   // ---- nắng chiều rọi xiên vào tiệm (vệt sáng) + bụi bay ----
-  { const [c, x] = cvs(64, 256); const gr = x.createLinearGradient(0, 0, 0, 256); gr.addColorStop(0, "rgba(255,255,255,0)"); gr.addColorStop(0.3, "rgba(255,255,255,1)"); gr.addColorStop(1, "rgba(255,255,255,0)"); x.fillStyle = gr; x.fillRect(0, 0, 64, 256);
+  { const [c, x] = cvs(64, 256); const gr = x.createLinearGradient(0, 0, 0, 256); gr.addColorStop(0, "rgba(255,255,255,0)"); gr.addColorStop(0.35, "rgba(255,255,255,1)"); gr.addColorStop(0.65, "rgba(255,255,255,1)"); gr.addColorStop(1, "rgba(255,255,255,0)"); x.fillStyle = gr; x.fillRect(0, 0, 64, 256);
     const gx = x.createLinearGradient(0, 0, 64, 0); gx.addColorStop(0, "rgba(0,0,0,1)"); gx.addColorStop(0.5, "rgba(0,0,0,0)"); gx.addColorStop(1, "rgba(0,0,0,1)"); x.globalCompositeOperation = "destination-out"; x.fillStyle = gx; x.fillRect(0, 0, 64, 256);
     const sm = new THREE.MeshBasicMaterial({ color: new THREE.Color(1.0, 0.72, 0.4), alphaMap: new THREE.CanvasTexture(c), transparent: true, opacity: 0.075, depthWrite: false, blending: THREE.AdditiveBlending, side: THREE.DoubleSide });
     // hướng nắng "golden" của xưởng (sau khi xoay 180°): từ cửa vào trong, lệch sang +x của set
-    for (let k = 0; k < 5; k++) { const p = new THREE.Mesh(new THREE.PlaneGeometry(0.5 + r() * 0.6, 7), sm); p.position.set(-1.5 + k * 1.3, 2.0, 2.6); p.rotation.set(-0.95, -0.65, 0.35); p.layers.set(NOINK); p.renderOrder = 5; g.add(p); } }
+    for (let k = 0; k < 4; k++) { const p = new THREE.Mesh(new THREE.PlaneGeometry(0.45 + r() * 0.4, 3.0), sm); p.position.set(-1.2 + k * 1.2, 1.6, 2.4); p.rotation.set(-0.95, -0.65, 0.35); p.layers.set(NOINK); p.renderOrder = 5; g.add(p); } }
   { const N = 420, pos = new Float32Array(N * 3), base = new Float32Array(N * 3); for (let i = 0; i < N; i++) { base[i * 3] = -5 + r() * 10; base[i * 3 + 1] = 0.3 + r() * 3.4; base[i * 3 + 2] = -2.5 + r() * 7; }
     pos.set(base); const geo = new THREE.BufferGeometry(); geo.setAttribute("position", new THREE.BufferAttribute(pos, 3));
     const [c, x] = cvs(32, 32); const gr = x.createRadialGradient(16, 16, 0, 16, 16, 16); gr.addColorStop(0, "rgba(255,255,255,1)"); gr.addColorStop(1, "rgba(255,255,255,0)"); x.fillStyle = gr; x.fillRect(0, 0, 32, 32);
@@ -387,5 +344,6 @@ export function buildSuaXe2() {
   const lamps: [V3, V3, number][] = [[[3.3, 2.5, -0.6], [1.3, 0.95, 0.6], 4.2], [[-2.6, 3.8, 0.6], [0.55, 0.6, 0.55], 6.5], [[0.2, 3.8, 0.2], [0.55, 0.6, 0.55], 6.5], [[-1.2, 2.94, 1.6], [0.9, 0.62, 0.3], 3.2], [[-5.0, 0.9, -0.6], [0.9, 0.08, 0.05], 1.3]];
   lamps.forEach(([p, c, rr], i) => { U.uLampP.value[i].set(-p[0], p[1], -p[2]); U.uLampC.value[i].set(...c); U.uLampR.value[i] = rr; });
   g.traverse((o) => { const k = o as THREE.Mesh; if (k.isMesh && k.userData.nc) k.castShadow = false; });
+  buildCast3(g); // nhân vật 3D toon (chỉ dựng khi CAST3.shots có nội dung)
   g.rotation.y = Math.PI; return { g };
 }
