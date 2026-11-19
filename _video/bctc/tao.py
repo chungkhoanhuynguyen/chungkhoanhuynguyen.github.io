@@ -53,9 +53,13 @@ def mot(key, s, ngay, gio, PX):
                      top='%s – VÙNG GIÁ MUA ≤' % s, sub='giá hiện tại %s' % gen.gia(c), col=GREEN))
         M['bia_hook'] = [s + " MUA ≤ " + g2(X), M['bia_hook'][0]]
         M['title'] = M['tieu_de'] = ("%s %s: %s | vùng giá mua ≤ %s" % (s, x['q'], M['bia_hook'][1].lower(), g2(X)))[:100]
-    q_end = ("Đó là phần đọc báo cáo tài chính %s của %s. Định giá trong video theo quan điểm đầu tư cá nhân của Chứng Khoán Huy Nguyễn. "
-             "Nếu anh chị không đồng tình, hãy bình luận cho em biết anh chị định giá %s ở mức nào và vì sao. Em sẽ đọc hết và trả lời từng bình luận.") % (x['q'], ten, s)
-    end['say'] = doc(q_end); end['cap'] = (end['cap'][0], 'ANH CHỊ NGHĨ SAO?'); sc.append(end)
+    q_end = ("Định giá trong video theo quan điểm đầu tư cá nhân của Chứng Khoán Huy Nguyễn, và em biết chắc sẽ có anh chị không đồng tình. "
+             "Vậy em hỏi thẳng: với giá khoảng %s nghìn đồng hôm nay, anh chị thấy %s đang rẻ hay đắt? "
+             "Anh chị bình luận giúp em đúng một con số: mức giá anh chị sẵn sàng mua %s. Người định giá thấp nhất và cao nhất, em sẽ ghim lên đầu và phân tích lại ở video sau. "
+             "Nếu anh chị đang cầm %s, bình luận chữ cầm, còn đang chờ mua thì bình luận chữ chờ, để em xem mọi người đang đứng ở phía nào.") % (gen.gia(c), s, s, s)
+    end['say'] = doc(q_end); end['cap'] = ('%s RẺ HAY ĐẮT?' % s, 'BÌNH LUẬN 1 CON SỐ'); sc.append(end)
+    M['ghim'] = "Anh chị sẵn sàng mua %s ở giá bao nhiêu? Bình luận 1 con số – em ghim mức thấp nhất và cao nhất, phân tích lại ở video sau. Đang cầm ghi CẦM, đang chờ ghi CHỜ." % s
+    M['mo_ta'] = M['mo_ta'] + "\n\n" + M['ghim']
     M.update(kenh=KENH, seri="Soi BCTC quý", seri_web="Đọc BCTC")
     if not bank: M['title'] = M['tieu_de'] = M['title'].replace("Đọc BCTC 5 phút | ", "")[:100]
     return sc, M
