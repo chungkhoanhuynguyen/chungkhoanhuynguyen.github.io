@@ -213,11 +213,11 @@ META = {KEY: dict(kenh='@chungkhoanhuynguyen', seri='Câu hỏi lớn', ngay='20
     tags=['thương mại Việt Mỹ', 'đoàn nông nghiệp Mỹ', 'thặng dư thương mại', 'nông sản Mỹ', 'đùi gà nhập khẩu', 'giá gà', 'thuế đối ứng', 'xuất khẩu điện tử', 'kinh tế Việt Nam', 'vĩ mô'],
     bia_hook=['BÁN 159 TỶ', 'MUA 19 TỶ???'], badge='VIỆT NAM – MỸ 10 THÁNG',
     bia_anh='Container ship||Ho Chi Minh City skyline night',
-    bia_hook_b=['ĐÙI GÀ MỸ', '26.500Đ/KG???'], badge_b='GIÁ NHẬP BÌNH QUÂN',
+    bia_hook_b=['61,8% GÀ NHẬP', 'ĐẾN TỪ MỸ???'], badge_b='THEO HIỆP HỘI GIA CẦM',
     bia_hook_c=['VƯỢT CẢ', 'TRUNG QUỐC'], badge_c='MỸ THÂM HỤT 114 TỶ USD',
     reel_hook='MỸ CỬ ĐOÀN NÔNG NGHIỆP LỚN NHẤT|SANG VIỆT NAM ĐỂ LÀM GÌ???',
     fb_post=("Mỹ cử đoàn nông nghiệp lớn nhất lịch sử sang Việt Nam 🇺🇸🌾\n\n👉 10 tháng: Việt Nam bán sang Mỹ 159,4 tỷ USD, mua lại 19,3 tỷ\n👉 Mỹ thâm hụt với Việt Nam lớn nhất, vượt cả Trung Quốc\n"
-             "👉 61,8% thịt gà nhập khẩu đến từ Mỹ, giá nhập khoảng 26.500 đồng/kg\n\nThu nhập nhà anh chị đi qua cửa nào?\n🎬 Xem đầy đủ: {LINK}"),
+             "👉 61,8% thịt gà nhập khẩu đến từ Mỹ; giá nhập bình quân thịt gia cầm khoảng 26.500 đồng/kg\n\nThu nhập nhà anh chị đi qua cửa nào?\n🎬 Xem đầy đủ: {LINK}"),
     chuong=[c['ch'] for c in S if c.get('ch')])}
 os.makedirs(LO, exist_ok=True)
 open(LO + '/video_dai.py', 'w', encoding='utf-8').write(

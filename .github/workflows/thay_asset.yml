@@ -1,0 +1,19 @@
+name: Thay file trong Release (bia, chuong, srt da sua)
+on:
+  workflow_dispatch:
+    inputs:
+      tag: {description: "release tag", required: true}
+      dir: {description: "thu muc trong repo chua file thay (ten file = ten asset)", required: true}
+permissions:
+  contents: write
+jobs:
+  thay:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {sparse-checkout: "${{ inputs.dir }}"}
+      - env: {GH_TOKEN: "${{ github.token }}", GH_REPO: "${{ github.repository }}"}
+        run: |
+          ls -la "${{ inputs.dir }}"
+          gh release upload "${{ inputs.tag }}" "${{ inputs.dir }}"/* --clobber
+          gh release view "${{ inputs.tag }}" --json assets -q '.assets[]|.name+" "+(.size|tostring)'
