@@ -10,6 +10,7 @@ import { rng } from "../pho/paint";
 import { tm, U, glow, setLook } from "./toonmat";
 import { putModel, PO } from "./models";
 import { sieuXeCanhChim, envScale } from "./xe_sang";
+import { mau } from "./xe_mau";
 import { NOINK } from "../pho/ink";
 
 const F = "'Be Vietnam Pro', 'DejaVu Sans', Arial, sans-serif";
@@ -184,7 +185,7 @@ function plasticStool(col: string) { const g = new THREE.Group(), m = tm(col); g
 const M_DIR = "suaxe2/m";
 const put = (g: THREE.Group, name: string, x: number, y: number, z: number, ry = 0, o: PO = {}) => putModel(g, M_DIR, name, x, y, z, ry, o, blob);
 // ---------------- BỐI CẢNH ----------------
-export function buildSuaXe2(opt: { sieuxe?: boolean } = {}) {
+export function buildSuaXe2(opt: { sieuxe?: boolean; mau?: boolean } = {}) {
   setLook("warm");
   const g = new THREE.Group(), r = rng(77);
   const W = 11, D = 8, H = 4.0, Z0 = -3; // tường sau z = -3, cửa z = +5
@@ -321,6 +322,7 @@ export function buildSuaXe2(opt: { sieuxe?: boolean } = {}) {
   const lamps: [V3, V3, number][] = [[[3.3, 2.5, -0.6], [1.3, 0.95, 0.6], 4.2], [[-2.6, 3.8, 0.6], [0.55, 0.6, 0.55], 6.5], [[0.2, 3.8, 0.2], [0.55, 0.6, 0.55], 6.5], [[-1.2, 2.94, 1.6], [0.9, 0.62, 0.3], 3.2], [[-5.0, 0.9, -0.6], [0.9, 0.08, 0.05], 1.3]];
   lamps.forEach(([p, c, rr], i) => { U.uLampP.value[i].set(-p[0], p[1], -p[2]); U.uLampC.value[i].set(...c); U.uLampR.value[i] = rr; });
   g.traverse((o) => { const k = o as THREE.Mesh; if (k.isMesh && k.userData.nc) k.castShadow = false; });
-  if (opt.sieuxe) { const car = sieuXeCanhChim(true); car.position.set(0.9, -0.02, 7.6); car.rotation.y = Math.PI / 2 + 0.25; g.add(car); envScale(0.55); } // siêu xe đỗ sát vỉa hè trước tiệm (ngoài phố)
+  if (opt.mau) { const car = mau("goblin"); car.position.set(0.9, -0.02, 7.6); car.rotation.y = Math.PI / 2 + 0.25; g.add(car); envScale(0.55); }
+  else if (opt.sieuxe) { const car = sieuXeCanhChim(true); car.position.set(0.9, -0.02, 7.6); car.rotation.y = Math.PI / 2 + 0.25; g.add(car); envScale(0.55); } // siêu xe đỗ sát vỉa hè trước tiệm (ngoài phố)
   g.rotation.y = Math.PI; return { g };
 }

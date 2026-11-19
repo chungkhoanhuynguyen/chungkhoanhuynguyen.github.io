@@ -204,9 +204,11 @@ export function sportbike(col = "#f5c400", bien = "29-A1 999.99") {
 export function riderLegs(pants: string, shoe: string, hip: [number, number, number], knee: [number, number, number], foot: [number, number, number]) {
   const g = new THREE.Group(), pm = phys({ color: pants, roughness: 0.8 }, 0.2), sm = phys({ color: shoe, roughness: 0.5 }, 0.3);
   const seg = (a: THREE.Vector3, b: THREE.Vector3, r: number, m: THREE.Material) => { const len = a.distanceTo(b); const k = new THREE.Mesh(new THREE.CapsuleGeometry(r, len, 4, 10), m); k.position.copy(a).add(b).multiplyScalar(0.5); k.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), b.clone().sub(a).normalize()); k.castShadow = true; g.add(k); };
-  for (const sx of [-1, 1]) { const H = new THREE.Vector3(sx * hip[0], hip[1], hip[2]), K2 = new THREE.Vector3(sx * knee[0], knee[1], knee[2]), Ft = new THREE.Vector3(sx * foot[0], foot[1], foot[2]); seg(H, K2, 0.065, pm); seg(K2, Ft, 0.055, pm); const sh = new THREE.Mesh(new THREE.BoxGeometry(0.09, 0.07, 0.22), sm); sh.position.set(Ft.x, Ft.y - 0.03, Ft.z + 0.05); g.add(sh); }
+  for (const sx of [-1, 1]) { const H = new THREE.Vector3(sx * hip[0], hip[1], hip[2]), K2 = new THREE.Vector3(sx * knee[0], knee[1], knee[2]), Ft = new THREE.Vector3(sx * foot[0], foot[1], foot[2]); seg(H, K2, 0.05, pm); seg(K2, Ft, 0.042, pm); const sh = new THREE.Mesh(new THREE.BoxGeometry(0.09, 0.07, 0.22), sm); sh.position.set(Ft.x, Ft.y - 0.03, Ft.z + 0.05); g.add(sh); }
   return g;
 }
 export const phys0 = (o: THREE.MeshPhysicalMaterialParameters, envI = 1) => phys(o, envI);
 /** nhân độ phản chiếu môi trường cho mọi vật liệu bóng đã tạo (cảnh tối như showroom cần thấp) */
 export function envScale(k: number) { for (const m of envUsers) { if (m.userData.e0 === undefined) m.userData.e0 = m.envMapIntensity; m.envMapIntensity = m.userData.e0 * k; } }
+/** gắn phản chiếu HDRI cho vật liệu có sẵn (xe mẫu ngoài) */
+export function applyEnv(m: THREE.MeshStandardMaterial, k = 1) { if (!(m as THREE.MeshStandardMaterial).isMeshStandardMaterial) return; needEnv(); m.envMapIntensity = k; if (envTex) m.envMap = envTex; envUsers.push(m as THREE.MeshPhysicalMaterial); m.needsUpdate = true; }
