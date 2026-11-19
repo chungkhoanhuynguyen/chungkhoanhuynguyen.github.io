@@ -8,11 +8,15 @@ tim = json.load(open(os.path.join(V, "timing.json"))); S = {s["id"]: s for s in 
 src = open(os.path.join(V, comp + ".tsx")).read(); i0, i1 = src.index("const PLAN"), src.index("function teaStall"); plan = src[i0:i1]
 fr = lambda x: int(math.floor(x * FPS + 0.5))
 # mã chung: mọi mã nguồn ngoài phần PLAN + công cụ dựng; sửa phần chung thì dựng lại tất cả (chắc ăn)
+# Chuẩn chi tiết 19/11: tệp/thư mục có "chitiet" trong đường dẫn (src/videos/chitiet, src/index_chitiet.tsx) CHỈ tính vào mã băm
+# của phim có dùng nó (mã phim nhắc "chitiet", vd import "../chitiet/stage_ct" + cờ chiTiet) → phim cũ giữ nguyên mã băm và kho cảnh.
+CT = "chitiet" in src
 h = hashlib.sha1()
 for root, _, fs in sorted(os.walk(os.path.join(A, "src"))):
     for f in sorted(fs):
         p = os.path.join(root, f)
         if p.endswith("timing.json"): continue
+        if not CT and "chitiet" in p[len(A):]: continue
         b = open(p, "rb").read()
         if p.endswith(os.path.join(D, comp + ".tsx")): b = (src[:i0] + src[i1:]).encode()
         h.update(p[len(A):].encode()); h.update(b)

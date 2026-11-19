@@ -6,11 +6,9 @@
 // Toạ độ dựng giống buildSuaXe (tường sau z = -3, cửa ra phố z = +5, rồi xoay 180°) → dùng chung góc máy, chỗ đứng nhân vật.
 // Vùng trống cho nhân vật (toạ độ trước khi xoay): x -1.6..0.6, z -1.6..0.6.
 import * as THREE from "three";
-import { staticFile, delayRender, continueRender } from "remotion";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { rng } from "../pho/paint";
 import { tm, U, glow } from "./toonmat";
-import { buildCast2X } from "./cast2x";
+import { putModel, PO } from "./models";
 import { NOINK } from "../pho/ink";
 
 const F = "'Be Vietnam Pro', 'DejaVu Sans', Arial, sans-serif";
@@ -29,7 +27,7 @@ function wire(a: V3, b: V3, sag: number, m: THREE.Material, r = 0.009) {
 }
 /** đốm tối mềm (AO giả / bóng tiếp xúc / vết bẩn) dán trên mặt phẳng */
 let blobTex: THREE.Texture | null = null;
-function blob(w: number, d: number, op = 0.5, col = "#1a1210") {
+export function blob(w: number, d: number, op = 0.5, col = "#1a1210") {
   if (!blobTex) { const [c, x] = cvs(128, 128); const gr = x.createRadialGradient(64, 64, 4, 64, 64, 64); gr.addColorStop(0, "rgba(255,255,255,1)"); gr.addColorStop(0.55, "rgba(255,255,255,.55)"); gr.addColorStop(1, "rgba(255,255,255,0)"); x.fillStyle = gr; x.fillRect(0, 0, 128, 128); blobTex = new THREE.CanvasTexture(c); }
   const k = new THREE.Mesh(new THREE.PlaneGeometry(w, d), new THREE.MeshBasicMaterial({ color: col, alphaMap: blobTex, transparent: true, opacity: op, depthWrite: false, polygonOffset: true, polygonOffsetFactor: -2 }));
   k.rotation.x = -Math.PI / 2; k.layers.set(NOINK); k.renderOrder = 1; return k;
@@ -181,32 +179,9 @@ function helmet(col: string) { const g = new THREE.Group(), sh = tm(col), blk = 
   g.add(bx(0.03, 0.02, 0.012, tm("#c9cdd3"), 0.0, -0.17, 0.05)); return g; }
 function plasticStool(col: string) { const g = new THREE.Group(), m = tm(col); g.add(cy(0.17, 0.17, 0.035, m, 0, 0.43, 0, 18)); const leg = mesh(new THREE.CylinderGeometry(0.15, 0.2, 0.41, 4, 1, true), tm(col, null, { side: THREE.DoubleSide }), 0, 0.205, 0); leg.rotation.y = Math.PI / 4; g.add(leg); return g; }
 
-// ---------------- nạp mô hình Poly Haven → vật liệu toon ----------------
-const loader = new GLTFLoader();
-const mcache = new Map<string, Promise<THREE.Object3D>>();
-function loadM(name: string) {
-  if (!mcache.has(name)) mcache.set(name, loader.loadAsync(staticFile(`suaxe2/m/${name}/${name}.gltf`)).then((gl) => {
-    const conv = new Map<THREE.Material, THREE.Material>();
-    gl.scene.traverse((o) => { const k = o as THREE.Mesh; if (!k.isMesh) return; const old = k.material as THREE.MeshStandardMaterial;
-      if (!conv.has(old)) { if (old.map) old.map.colorSpace = THREE.SRGBColorSpace; conv.set(old, tm(old.color ?? "#fff", old.map ?? null, { alphaTest: old.alphaTest || (old.transparent ? 0.5 : 0), side: old.side })); }
-      k.material = conv.get(old)!; k.castShadow = true; k.receiveShadow = true; });
-    return gl.scene; }));
-  return mcache.get(name)!;
-}
-type PO = { s?: number; h?: number; rx?: number; rz?: number; blob?: number; sy?: number };
-/** đặt mô hình: (x, y đáy, z) toạ độ set trước khi xoay; h = chiều cao mong muốn (m) hoặc s = tỉ lệ */
-function put(g: THREE.Group, name: string, x: number, y: number, z: number, ry = 0, o: PO = {}) {
-  const hd = delayRender("sx2 " + name, { timeoutInMilliseconds: 120000 });
-  loadM(name).then((src) => {
-    const m = src.clone(true); const w = new THREE.Group(); w.add(m); m.rotation.set(o.rx ?? 0, 0, o.rz ?? 0);
-    let bb = new THREE.Box3().setFromObject(m); const sz = bb.getSize(new THREE.Vector3());
-    const s = o.h ? o.h / sz.y : o.s ?? 1; m.scale.setScalar(s); if (o.sy) m.scale.y *= o.sy; bb = new THREE.Box3().setFromObject(m); const c = bb.getCenter(new THREE.Vector3());
-    m.position.set(-c.x, -bb.min.y, -c.z); w.position.set(x, y, z); w.rotation.y = ry; g.add(w);
-    if (o.blob !== 0 && y < 0.05) { const f = bb.getSize(new THREE.Vector3()); const b = blob(f.x * 1.5 + 0.15, f.z * 1.5 + 0.15, o.blob ?? 0.55); b.position.set(x, 0.012, z); b.rotation.z = -ry; g.add(b); }
-    continueRender(hd);
-  }).catch((e) => { console.error("sx2 load fail", name, e); continueRender(hd); });
-}
-
+// ---------------- mô hình Poly Haven (thư mục public/suaxe2/m, nạp qua models.ts) ----------------
+const M_DIR = "suaxe2/m";
+const put = (g: THREE.Group, name: string, x: number, y: number, z: number, ry = 0, o: PO = {}) => putModel(g, M_DIR, name, x, y, z, ry, o, blob);
 // ---------------- BỐI CẢNH ----------------
 export function buildSuaXe2() {
   const g = new THREE.Group(), r = rng(77);
@@ -344,6 +319,5 @@ export function buildSuaXe2() {
   const lamps: [V3, V3, number][] = [[[3.3, 2.5, -0.6], [1.3, 0.95, 0.6], 4.2], [[-2.6, 3.8, 0.6], [0.55, 0.6, 0.55], 6.5], [[0.2, 3.8, 0.2], [0.55, 0.6, 0.55], 6.5], [[-1.2, 2.94, 1.6], [0.9, 0.62, 0.3], 3.2], [[-5.0, 0.9, -0.6], [0.9, 0.08, 0.05], 1.3]];
   lamps.forEach(([p, c, rr], i) => { U.uLampP.value[i].set(-p[0], p[1], -p[2]); U.uLampC.value[i].set(...c); U.uLampR.value[i] = rr; });
   g.traverse((o) => { const k = o as THREE.Mesh; if (k.isMesh && k.userData.nc) k.castShadow = false; });
-  buildCast2X(g); // nhân vật thẻ 2D cast2 bản nâng trang phục (chỉ dựng khi CAST2X.shots có nội dung)
   g.rotation.y = Math.PI; return { g };
 }
