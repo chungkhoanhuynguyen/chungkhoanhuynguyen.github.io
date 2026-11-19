@@ -1,0 +1,670 @@
+[
+ {
+  "key": "SN2011VANG",
+  "tieu_de": "Vàng thế giới rơi 124 USD về đáy 14 tháng: vì sao vàng nhẫn trong nước chỉ giảm nửa triệu?",
+  "hook": [
+   "VÀNG RƠI 124 ĐÔ",
+   "NHẪN CHỈ GIẢM 0,5?"
+  ],
+  "nhan": "TIN NÓNG · 19/11",
+  "short_caption": "Vàng thế giới rơi 124 USD về đáy 14 tháng sau biên bản Fed, nhưng vàng nhẫn SJC sáng 19/11 chỉ giảm 0,5 triệu đồng mỗi lượng. Em tính thử khoảng mua bán 4 triệu và mức chênh 20,3 triệu so với giá thế giới.",
+  "tags": [],
+  "toc": 1.12,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "RẺ RỒI HAY CÒN RẺ NỮA?",
+   "loi": "Vàng về đáy 14 tháng, anh chị A: thấy rẻ rồi, hay B: còn rẻ nữa?",
+   "loi_doc": "Vàng về đáy mười bốn tháng, anh chị A: thấy rẻ rồi, hay B: còn rẻ nữa?",
+   "anh": [
+    "gold jewelry shop Vietnam||gold rings"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "MẤT 124 ĐÔ MỘT ĐÊM",
+    "loi": "Mất 124 đô một ounce sau một đêm, vàng nhẫn nhà mình có rẻ theo không? Sáng 19/11, vàng thế giới vừa về 3.737 đô, thấp nhất 14 tháng.",
+    "loi_doc": "Mất một trăm hai mươi bốn đô một ounce sau một đêm, vàng nhẫn nhà mình có rẻ theo không? Sáng mười chín tháng mười một, vàng thế giới vừa về ba nghìn bảy trăm ba mươi bảy đô, thấp nhất mười bốn tháng.",
+    "anh": [
+     "gold bullion bars||gold bars"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "VÀNG THẾ GIỚI 7H SÁNG 19/11",
+     "nguon": "Tuổi Trẻ 19/11/2026",
+     "dong": [
+      [
+       "3.737 USD/OUNCE",
+       104,
+       "vang"
+      ],
+      [
+       "GIẢM 124 USD, 3,2%",
+       60,
+       "do"
+      ],
+      [
+       "THẤP NHẤT TỪ THÁNG 9/2025",
+       44,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "FED NÓI GÌ?",
+    "loi": "Thủ phạm là biên bản họp của Fed, phần lớn quan chức vẫn lo lạm phát. Thị trường đặt cược khoảng 95% Fed tăng lãi vào tháng 12.",
+    "loi_doc": "Thủ phạm là biên bản họp của Fed, phần lớn quan chức vẫn lo lạm phát. Thị trường đặt cược khoảng chín mươi lăm phần trăm Fed tăng lãi vào tháng mười hai.",
+    "anh": [
+     "Federal Reserve building Washington||Marriner S. Eccles Federal Reserve Board Building"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "KHẢ NĂNG FED TĂNG LÃI THÁNG 12",
+     "nguon": "CME FedWatch, Tuổi Trẻ 19/11/2026",
+     "dong": [
+      [
+       "95%",
+       140,
+       "vang"
+      ],
+      [
+       "TĂNG 0,25 ĐIỂM PHẦN TRĂM",
+       52,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "NHẪN CHỈ GIẢM 0,5 TRIỆU",
+    "loi": "Trong nước, vàng nhẫn SJC sáng 19/11 chỉ giảm 0,5 triệu, bán ra 137 triệu một lượng. Thế giới giảm 3,2%, nhà mình giảm chưa tới 0,4%.",
+    "loi_doc": "Trong nước, vàng nhẫn S J C sáng mười chín tháng mười một chỉ giảm nửa triệu, bán ra một trăm ba mươi bảy triệu một lượng. Thế giới giảm ba phẩy hai phần trăm, nhà mình giảm chưa tới không phẩy bốn phần trăm.",
+    "anh": [
+     "gold rings jewelry||gold ring"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "VÀNG NHẪN SJC SÁNG 19/11 (TRIỆU Đ/LƯỢNG)",
+     "nguon": "Tuổi Trẻ 19/11/2026",
+     "dong": [
+      [
+       "MUA 133",
+       90,
+       "trang"
+      ],
+      [
+       "BÁN 137",
+       90,
+       "vang"
+      ],
+      [
+       "GIẢM 0,5 MỖI CHIỀU",
+       52,
+       "do"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "MUA XONG BÁN NGAY, MẤT 4 TRIỆU",
+    "loi": "Khoảng cách mua bán đang là 4 triệu. Em tự tính: mua theo giá 19/11 rồi bán lại ngay là mất 4 triệu, giá phải tăng khoảng 3% mới hoà vốn.",
+    "loi_doc": "Khoảng cách mua bán đang là bốn triệu. Em tự tính: mua theo giá mười chín tháng mười một rồi bán lại ngay là mất bốn triệu, giá phải tăng khoảng ba phần trăm mới hoà vốn.",
+    "anh": [
+     "gold shop counter||jewellery store"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "MUA RỒI BÁN NGAY, 1 LƯỢNG NHẪN SJC",
+     "nguon": "Em tự tính từ giá Tuổi Trẻ 19/11/2026",
+     "dong": [
+      [
+       "MẤT 4 TRIỆU",
+       112,
+       "do"
+      ],
+      [
+       "CẦN TĂNG KHOẢNG 3% ĐỂ HOÀ VỐN",
+       48,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "ĐẮT HƠN THẾ GIỚI 20 TRIỆU",
+    "loi": "Vàng miếng SJC còn đắt hơn giá thế giới quy đổi khoảng 20,3 triệu mỗi lượng. Khoảng chênh này mới quyết định người mua sau thiệt hay không.",
+    "loi_doc": "Vàng miếng S J C còn đắt hơn giá thế giới quy đổi khoảng hai mươi phẩy ba triệu mỗi lượng. Khoảng chênh này mới quyết định người mua sau thiệt hay không.",
+    "anh": [
+     "gold price board||gold bars stack"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "VÀNG MIẾNG SJC SO VỚI THẾ GIỚI",
+     "nguon": "Tuổi Trẻ 19/11/2026",
+     "dong": [
+      [
+       "CHÊNH 20,3 TRIỆU/LƯỢNG",
+       80,
+       "vang"
+      ],
+      [
+       "SJC BÁN RA 137,2 TRIỆU",
+       52,
+       "trang"
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "key": "SN2011USD",
+  "tieu_de": "Tỷ giá trung tâm lập kỷ lục mới 25.656 đồng: 1.000 USD học phí, du lịch giờ tốn thêm 534 nghìn",
+  "hook": [
+   "1.000 ĐÔ ĐẮT THÊM",
+   "534 NGHÌN ĐỒNG?"
+  ],
+  "nhan": "TIN NÓNG · 19/11",
+  "short_caption": "Sáng 19/11, tỷ giá trung tâm lên kỷ lục mới 25.656 đồng mỗi USD, cao hơn đầu năm khoảng 534 đồng. Em tính thử 1.000 USD học phí hay du lịch giờ tốn thêm bao nhiêu.",
+  "tags": [],
+  "toc": 1.12,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "NHÀ MÌNH ĐƯỢC HAY MẤT?",
+   "loi": "Đô la lên kỷ lục, nhà anh chị đang A: được lợi vì có tiền đô, hay B: thiệt vì phải mua đô?",
+   "loi_doc": "Đô la lên kỷ lục, nhà anh chị đang A: được lợi vì có tiền đô, hay B: thiệt vì phải mua đô?",
+   "anh": [
+    "US dollar banknotes||United States one hundred-dollar bill"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "25.656 ĐỒNG, KỶ LỤC",
+    "loi": "25.656 đồng một đô, chưa bao giờ cao như vậy, túi tiền anh chị chịu gì? Sáng 19/11, Ngân hàng Nhà nước vừa nâng tỷ giá trung tâm thêm 4 đồng, lập kỷ lục mới.",
+    "loi_doc": "Hai mươi lăm nghìn sáu trăm năm mươi sáu đồng một đô, chưa bao giờ cao như vậy, túi tiền anh chị chịu gì? Sáng mười chín tháng mười một, Ngân hàng Nhà nước vừa nâng tỷ giá trung tâm thêm bốn đồng, lập kỷ lục mới.",
+    "anh": [
+     "State Bank of Vietnam headquarters||State Bank of Vietnam"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "TỶ GIÁ TRUNG TÂM 19/11",
+     "nguon": "NHNN; Hà Nội Mới, Index.vn 19/11/2026",
+     "dong": [
+      [
+       "25.656 Đ/USD",
+       112,
+       "vang"
+      ],
+      [
+       "TĂNG 4 ĐỒNG",
+       56,
+       "trang"
+      ],
+      [
+       "KỶ LỤC MỚI",
+       50,
+       "do"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "CAO HƠN ĐẦU NĂM 534 ĐỒNG",
+    "loi": "So với đầu năm, tỷ giá trung tâm đã cao hơn khoảng 534 đồng, tức 2,1%. Cùng ngày, Vietcombank bán đô 25.900 đồng.",
+    "loi_doc": "So với đầu năm, tỷ giá trung tâm đã cao hơn khoảng năm trăm ba mươi tư đồng, tức hai phẩy một phần trăm. Cùng ngày, Vietcombank bán đô hai mươi lăm nghìn chín trăm đồng.",
+    "anh": [
+     "Vietcombank||bank counter Vietnam"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "SO VỚI ĐẦU NĂM 2026",
+     "nguon": "Em tự tính từ VnExpress 17/11; Index.vn 19/11/2026",
+     "dong": [
+      [
+       "TĂNG 534 ĐỒNG",
+       100,
+       "vang"
+      ],
+      [
+       "TƯƠNG ĐƯƠNG 2,1%",
+       58,
+       "trang"
+      ],
+      [
+       "VCB BÁN 25.900 (19/11)",
+       50,
+       "tim2"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "ĐÔ TỰ DO 26.130",
+    "loi": "Đô tự do cùng ngày khoảng 26.130 đồng, còn chỉ số đô la thế giới cao nhất 19 tháng.",
+    "loi_doc": "Đô tự do cùng ngày khoảng hai mươi sáu nghìn một trăm ba mươi đồng, còn chỉ số đô la thế giới cao nhất mười chín tháng.",
+    "anh": [
+     "US dollar exchange money||currency exchange"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "ĐÔ LA TRONG VÀ NGOÀI NƯỚC, 19/11",
+     "nguon": "Index.vn 19/11; Tuổi Trẻ 19/11/2026",
+     "dong": [
+      [
+       "TỰ DO 26.130Đ",
+       92,
+       "vang"
+      ],
+      [
+       "DXY 103,81 ĐIỂM",
+       60,
+       "trang"
+      ],
+      [
+       "CAO NHẤT 19 THÁNG",
+       50,
+       "do"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "1.000 ĐÔ TỐN THÊM 534 NGHÌN",
+    "loi": "Em tính thử: nhà nào cần 1.000 đô cho học phí hay du lịch, giờ tốn thêm khoảng 534 nghìn so với đầu năm. Hàng nhập khẩu tính bằng đô cũng đắt lên.",
+    "loi_doc": "Em tính thử: nhà nào cần một nghìn đô cho học phí hay du lịch, giờ tốn thêm khoảng năm trăm ba mươi tư nghìn so với đầu năm. Hàng nhập khẩu tính bằng đô cũng đắt lên.",
+    "anh": [
+     "airport departure hall||Tan Son Nhat International Airport"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "CẦN 1.000 USD",
+     "nguon": "Em tự tính theo tỷ giá trung tâm 19/11/2026",
+     "dong": [
+      [
+       "TỐN THÊM 534.000Đ",
+       92,
+       "do"
+      ],
+      [
+       "SO VỚI ĐẦU NĂM",
+       56,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "NGƯỜI NHẬN ĐÔ CÓ LỢI",
+    "loi": "Ngược lại, nhà có người thân gửi tiền về hay làm xuất khẩu thì đổi được nhiều tiền đồng hơn.",
+    "loi_doc": "Ngược lại, nhà có người thân gửi tiền về hay làm xuất khẩu thì đổi được nhiều tiền đồng hơn.",
+    "anh": [
+     "container port Vietnam||Cat Lai port"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "NHẬN 1.000 USD KIỀU HỐI",
+     "nguon": "Em tự tính theo tỷ giá trung tâm 19/11/2026",
+     "dong": [
+      [
+       "THÊM 534.000Đ",
+       96,
+       "vang"
+      ],
+      [
+       "SO VỚI ĐẦU NĂM",
+       56,
+       "trang"
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "key": "SN2011IPO",
+  "tieu_de": "Lỗ 104 tỷ USD vẫn huy động kỷ lục 81,3 tỷ USD: IPO Anthropic so với sàn chứng khoán Việt Nam",
+  "hook": [
+   "LỖ 104 TỶ ĐÔ",
+   "VẪN HÚT 81 TỶ?"
+  ],
+  "nhan": "TIN NÓNG · 19/11",
+  "short_caption": "Anthropic chốt IPO 83 USD một cổ phiếu, huy động kỷ lục 81,3 tỷ USD dù lỗ ròng 104 tỷ USD trong 9 tháng đầu 2026. Em quy đổi ra tiền đồng và đặt cạnh phiên 19/11 khối ngoại bán ròng hơn 1.100 tỷ đồng ở sàn Việt Nam.",
+  "tags": [],
+  "toc": 1.12,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "CƠ HỘI HAY BONG BÓNG?",
+   "loi": "Lỗ 104 tỷ mà vẫn hút 81 tỷ đô, anh chị thấy A: cơ hội thật, hay B: bong bóng?",
+   "loi_doc": "Lỗ một trăm lẻ tư tỷ mà vẫn hút tám mươi mốt tỷ đô, anh chị thấy A: cơ hội thật, hay B: bong bóng?",
+   "anh": [
+    "Nasdaq MarketSite Times Square||Nasdaq"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "81,3 TỶ ĐÔ MỘT LẦN BÁN",
+    "loi": "Lỗ 104 tỷ đô trong 9 tháng, sao vẫn hút được 81,3 tỷ đô? Anthropic, công ty mẹ ứng dụng Claude, vừa chốt giá IPO 83 đô một cổ phiếu, chào sàn Nasdaq ngày 19/11.",
+    "loi_doc": "Lỗ một trăm lẻ tư tỷ đô trong chín tháng, sao vẫn hút được tám mươi mốt phẩy ba tỷ đô? Anthropic, công ty mẹ ứng dụng Claude, vừa chốt giá IPO tám mươi ba đô một cổ phiếu, chào sàn Nasdaq ngày mười chín tháng mười một.",
+    "anh": [
+     "Nasdaq MarketSite||Times Square Nasdaq"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "IPO ANTHROPIC, NASDAQ 19/11",
+     "nguon": "VnExpress 19/11/2026",
+     "dong": [
+      [
+       "81,3 TỶ USD",
+       116,
+       "vang"
+      ],
+      [
+       "83 USD MỖI CỔ PHIẾU",
+       56,
+       "trang"
+      ],
+      [
+       "980 TRIỆU CỔ PHIẾU BÁN RA",
+       46,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "VƯỢT KỶ LỤC SPACEX",
+    "loi": "Đây là vụ niêm yết lớn nhất nước Mỹ, vượt SpaceX của Elon Musk với 75 tỷ đô hồi tháng 6.",
+    "loi_doc": "Đây là vụ niêm yết lớn nhất nước Mỹ, vượt SpaceX của Elon Musk với bảy mươi lăm tỷ đô hồi tháng sáu.",
+    "anh": [
+     "New York Stock Exchange trading floor||Wall Street"
+    ],
+    "the": {
+     "loai": "cot",
+     "tieu": "HUY ĐỘNG TỪ IPO Ở MỸ (TỶ USD)",
+     "nguon": "VnExpress 19/11/2026",
+     "hang": [
+      [
+       "SpaceX",
+       75
+      ],
+      [
+       "Anthropic",
+       81.3
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 90
+    }
+   },
+   {
+    "chu_to": "DOANH THU GẤP 13 LẦN",
+    "loi": "Doanh thu 9 tháng đầu năm đạt 33,2 tỷ đô, gấp 13 lần cùng kỳ. Khoản lỗ 104 tỷ cũng tính cho 9 tháng đó, theo bài báo chủ yếu do thay đổi giá trị trái phiếu chuyển đổi.",
+    "loi_doc": "Doanh thu chín tháng đầu năm đạt ba mươi ba phẩy hai tỷ đô, gấp mười ba lần cùng kỳ. Khoản lỗ một trăm lẻ tư tỷ cũng tính cho chín tháng đó, theo bài báo chủ yếu do thay đổi giá trị trái phiếu chuyển đổi.",
+    "anh": [
+     "data center servers||server room"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "ANTHROPIC 9 THÁNG ĐẦU 2026",
+     "nguon": "VnExpress 19/11/2026",
+     "dong": [
+      [
+       "DOANH THU 33,24 TỶ USD",
+       72,
+       "vang"
+      ],
+      [
+       "TĂNG 1.200%",
+       64,
+       "vang"
+      ],
+      [
+       "LỖ RÒNG 104 TỶ USD",
+       64,
+       "do"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "BẰNG GẦN 140 PHIÊN HOSE",
+    "loi": "Em quy đổi: 81,3 tỷ đô là khoảng 2,1 triệu tỷ đồng, bằng gần 140 phiên giao dịch như phiên 19/11 ở sàn HOSE.",
+    "loi_doc": "Em quy đổi: tám mươi mốt phẩy ba tỷ đô là khoảng hai phẩy một triệu tỷ đồng, bằng gần một trăm bốn mươi phiên giao dịch như phiên mười chín tháng mười một ở sàn HOSE.",
+    "anh": [
+     "Ho Chi Minh City Stock Exchange||Bitexco Financial Tower"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "81,3 TỶ USD QUY RA TIỀN ĐỒNG",
+     "nguon": "Em tự tính: tỷ giá trung tâm 25.656; Thanh Niên 19/11/2026",
+     "dong": [
+      [
+       "2,1 TRIỆU TỶ ĐỒNG",
+       92,
+       "vang"
+      ],
+      [
+       "BẰNG GẦN 140 PHIÊN HOSE",
+       54,
+       "trang"
+      ],
+      [
+       "HOSE 19/11: 15.008 TỶ",
+       46,
+       "tim2"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "CÙNG NGÀY, KHỐI NGOẠI BÁN",
+    "loi": "Cùng phiên đó, khối ngoại bán ròng hơn 1.100 tỷ đồng ở sàn Việt Nam. Hai chuyện chưa chắc liên quan, nhưng tiền lớn thế giới vừa có thêm một nơi để chọn.",
+    "loi_doc": "Cùng phiên đó, khối ngoại bán ròng hơn một nghìn một trăm tỷ đồng ở sàn Việt Nam. Hai chuyện chưa chắc liên quan, nhưng tiền lớn thế giới vừa có thêm một nơi để chọn.",
+    "anh": [
+     "Ho Chi Minh City skyline||Saigon skyline"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "CHỨNG KHOÁN VIỆT NAM 19/11",
+     "nguon": "Thanh Niên, SSI 19/11/2026",
+     "dong": [
+      [
+       "BÁN RÒNG 1.101,5 TỶ",
+       84,
+       "do"
+      ],
+      [
+       "VN-INDEX GIẢM 13,39 ĐIỂM",
+       54,
+       "trang"
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "key": "SN2011XANG",
+  "tieu_de": "Xăng giảm lần thứ 5 liên tiếp từ 1/11, E5 còn 18.576 đồng: vì sao dầu diesel vẫn đắt hơn xăng 7.000 đồng?",
+  "hook": [
+   "XĂNG GIẢM 5 LẦN",
+   "DẦU SAO VẪN ĐẮT?"
+  ],
+  "nhan": "TIN NÓNG · 19/11",
+  "short_caption": "Từ 15h ngày 19/11, xăng giảm lần thứ 5 liên tiếp kể từ 1/11, E5 còn 18.576 đồng, E10 còn 19.100 đồng mỗi lít, nhưng diesel vẫn 26.347 đồng. Em tính thử mỗi bình xăng nhà mình bớt được bao nhiêu.",
+  "tags": [],
+  "toc": 1.12,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "KỲ TỚI XĂNG ĐI ĐÂU?",
+   "loi": "Kỳ tới anh chị đoán xăng E10 sẽ A: xuống dưới 19.000 đồng, hay B: tăng trở lại?",
+   "loi_doc": "Kỳ tới anh chị đoán xăng E mười sẽ A: xuống dưới mười chín nghìn đồng, hay B: tăng trở lại?",
+   "anh": [
+    "motorbike traffic Ho Chi Minh City||Saigon motorbikes"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "LẦN GIẢM THỨ 5 TỪ 1/11",
+    "loi": "Đổ 40 lít xăng lúc này rẻ hơn cuối tháng 10 hơn 260 nghìn, anh chị để ý chưa? Từ 15 giờ ngày 19/11, xăng vừa giảm lần thứ 5 liên tiếp kể từ 1/11, E5 còn 18.576 đồng.",
+    "loi_doc": "Đổ bốn mươi lít xăng lúc này rẻ hơn cuối tháng mười hơn hai trăm sáu mươi nghìn, anh chị để ý chưa? Từ mười lăm giờ ngày mười chín tháng mười một, xăng vừa giảm lần thứ năm liên tiếp kể từ mùng một tháng mười một, E năm còn mười tám nghìn năm trăm bảy mươi sáu đồng.",
+    "anh": [
+     "petrol station Vietnam||Petrolimex station"
+    ],
+    "the": {
+     "loai": "thang",
+     "tieu": "GIÁ BÁN LẺ TỪ 15H 19/11 (Đ/LÍT)",
+     "nguon": "Bộ Công Thương, Tạp chí Công Thương; VTV 19/11/2026",
+     "hang": [
+      [
+       "E5 RON92",
+       18576,
+       "vang"
+      ],
+      [
+       "E10 RON95-III",
+       19100,
+       "tim"
+      ],
+      [
+       "Diesel 0,05S",
+       26347,
+       "tim2"
+      ]
+     ],
+     "dv": "đ"
+    }
+   },
+   {
+    "chu_to": "E10 RẺ HƠN 6.630 ĐỒNG",
+    "loi": "Riêng xăng E10 còn 19.100 đồng, rẻ hơn kỳ 29/10 khoảng 6.630 đồng mỗi lít. Em tự tính: xe máy đổ 4 lít bớt khoảng 26.500 đồng.",
+    "loi_doc": "Riêng xăng E mười còn mười chín nghìn một trăm đồng, rẻ hơn kỳ hai mươi chín tháng mười khoảng sáu nghìn sáu trăm ba mươi đồng mỗi lít. Em tự tính: xe máy đổ bốn lít bớt khoảng hai mươi sáu nghìn rưỡi.",
+    "anh": [
+     "motorcycle refueling||fuel nozzle"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "XĂNG E10 TỪ 15H 19/11",
+     "nguon": "VnExpress, Việt Báo, Tạp chí Công Thương 19/11/2026; em tự tính",
+     "dong": [
+      [
+       "E10: 19.100Đ/LÍT",
+       84,
+       "vang"
+      ],
+      [
+       "KỲ 29/10: 25.734Đ/LÍT",
+       50,
+       "trang"
+      ],
+      [
+       "XE MÁY 4 LÍT: BỚT 26.520Đ",
+       50,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "DIESEL VẪN 26.347 ĐỒNG",
+    "loi": "Nhưng dầu diesel chỉ giảm 475 đồng, vẫn 26.347 đồng một lít, đắt hơn xăng E10 hơn 7.000 đồng.",
+    "loi_doc": "Nhưng dầu diesel chỉ giảm bốn trăm bảy mươi lăm đồng, vẫn hai mươi sáu nghìn ba trăm bốn mươi bảy đồng một lít, đắt hơn xăng E mười hơn bảy nghìn đồng.",
+    "anh": [
+     "diesel truck Vietnam||cargo truck highway"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "DIESEL 0,05S TỪ 15H 19/11",
+     "nguon": "VTV 19/11/2026; em tự tính",
+     "dong": [
+      [
+       "26.347Đ/LÍT",
+       100,
+       "do"
+      ],
+      [
+       "CHỈ GIẢM 475 ĐỒNG",
+       56,
+       "trang"
+      ],
+      [
+       "ĐẮT HƠN E10 7.247 ĐỒNG",
+       50,
+       "vang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "VÌ SAO DẦU ĐẮT HƠN XĂNG?",
+    "loi": "Lý do nằm ở giá thế giới: kỳ này diesel bình quân gần 149 đô một thùng, xăng chỉ hơn 103 đô. Xe tải, xe khách chạy dầu, nên cước vận chuyển chưa chắc giảm nhanh.",
+    "loi_doc": "Lý do nằm ở giá thế giới: kỳ này diesel bình quân gần một trăm bốn mươi chín đô một thùng, xăng chỉ hơn một trăm lẻ ba đô. Xe tải, xe khách chạy dầu, nên cước vận chuyển chưa chắc giảm nhanh.",
+    "anh": [
+     "oil refinery||refinery at night"
+    ],
+    "the": {
+     "loai": "cot",
+     "tieu": "GIÁ THẾ GIỚI BÌNH QUÂN 12 ĐẾN 19/11 (USD/THÙNG)",
+     "nguon": "VnExpress 19/11/2026",
+     "hang": [
+      [
+       "Xăng RON95",
+       103.2
+      ],
+      [
+       "Diesel",
+       148.7
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 160
+    }
+   },
+   {
+    "chu_to": "QUỸ BÌNH ỔN TRÍCH LẠI",
+    "loi": "Kỳ này Liên Bộ còn trích lập trở lại quỹ bình ổn 200 đồng mỗi lít xăng sinh học.",
+    "loi_doc": "Kỳ này Liên Bộ còn trích lập trở lại quỹ bình ổn hai trăm đồng mỗi lít xăng sinh học.",
+    "anh": [
+     "petrol pump display||fuel price display"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "QUỸ BÌNH ỔN KỲ 19/11",
+     "nguon": "VnExpress 19/11/2026",
+     "dong": [
+      [
+       "TRÍCH 200Đ/LÍT",
+       100,
+       "vang"
+      ],
+      [
+       "XĂNG SINH HỌC E5, E10",
+       54,
+       "trang"
+      ],
+      [
+       "KHÔNG CHI QUỸ KỲ NÀY",
+       50,
+       "tim2"
+      ]
+     ]
+    }
+   }
+  ],
+  "keo_web": null
+ }
+]
