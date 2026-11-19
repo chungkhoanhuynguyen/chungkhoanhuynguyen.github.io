@@ -1,0 +1,28 @@
+name: Demo 3D (10 anh tu thu vien Poly Haven)
+on: {workflow_dispatch: {inputs: {chi: {default: "", description: "chi dung canh co ten chua chuoi nay"}, mau: {default: "128"}}}}
+permissions: {contents: write}
+jobs:
+  d:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+        with: {sparse-checkout: _video/thu_vien}
+      - name: Tai tai nguyen
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          mkdir -p W Z && cd Z
+          gh release download thu-vien-3d -R ${{ github.repository }} -p 'polyhaven_*.zip'
+          cd ../W && for z in ../Z/*.zip; do unzip -q -o "$z"; rm "$z"; done; du -sh polyhaven/*
+      - name: Dung anh
+        env: {CHI: "${{ inputs.chi }}", MAU: "${{ inputs.mau }}"}
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q blender xvfb python3-numpy > /dev/null
+          blender --version | head -1
+          xvfb-run -a blender -b -P _video/thu_vien/demo/dung.py -- W OUT 2>&1 | grep -E "^anh |XONG|LOI|Error" | tail -60
+          ls -la OUT
+      - name: Len release demo-3d
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          gh release view demo-3d -R ${{ github.repository }} >/dev/null 2>&1 || gh release create demo-3d -R ${{ github.repository }} -t "Demo 3D" -n "Anh demo tu thu vien CC0"
+          gh release upload demo-3d -R ${{ github.repository }} OUT/*.png --clobber
