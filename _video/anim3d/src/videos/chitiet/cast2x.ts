@@ -18,7 +18,7 @@ export type FitX = {
   pockets?: ("chest" | "chest2" | "lower2" | "kangaroo" | "slant")[];
   tag?: string; pen?: boolean; print?: string; logo?: string; stains?: boolean; rag?: boolean; hem?: boolean;
   epaulette?: boolean; badge?: boolean; capBadge?: string; apron?: string; knit?: boolean; tank?: boolean; chain?: boolean; scarf?: string; dots?: boolean; waist?: boolean; stripe?: string;
-  pants?: string; o?: Partial<Outfit>;
+  pants?: string; o?: Partial<Outfit>; muscle?: boolean; jogger?: boolean;
 };
 const SHIRT: FitX = { collar: "shirt", placket: "buttons", pockets: ["chest"] };
 const BLOUSE: FitX = { collar: "v", dots: true, waist: true };
@@ -33,10 +33,10 @@ export const FIT: Record<string, FitX> = {
   ngan: { vai: "Ngân – người yêu Tân (Vàng)", ...BLOUSE },
   vest: { vai: "doanh nhân áo vest", placket: "suit", pockets: ["chest"], o: { collar: "#f6f4ee", tie: "#7a1424" } },
   clerk: { vai: "nhân viên tiệm vàng", ...SHIRT, tag: "NHÂN VIÊN", logo: "VÀNG", scarf: "#f2d36b" },
-  me: { vai: "mẹ (Vàng) – trung niên", collar: "v", placket: "cardigan", knit: true, pockets: ["lower2"] },
-  gym: { vai: "dân gym", tank: true, print: "GYM" },
-  gym2: { vai: "dân gym (áo trắng)", tank: true, print: "FIT" },
-  boxer: { vai: "võ sĩ boxing", tank: true, print: "BOXING", capBadge: "#f2d36b" },
+  me: { vai: "mẹ (Vàng) – nữ trung niên, tóc dài ngang vai, áo bà ba", collar: "baba", pockets: ["lower2"], o: { long: true, hair: "#3b2b26" } },
+  gym: { vai: "dân gym", tank: true, print: "GYM", muscle: true, jogger: true, pants: "#5d6370" },
+  gym2: { vai: "dân gym (áo trắng)", tank: true, print: "FIT", muscle: true, jogger: true, pants: "#5d6370" },
+  boxer: { vai: "võ sĩ boxing", tank: true, print: "BOXING", capBadge: "#f2d36b", muscle: true, jogger: true, pants: "#1f2430" },
   xoi: { vai: "chị bán xôi", ...BLOUSE, apron: "#f4f1e6" },
   kieu: { vai: "Kiều – nữ trẻ", ...BLOUSE },
   thuong: { vai: "Thương – nữ văn phòng", collar: "shirt", placket: "buttons", waist: true },
@@ -52,7 +52,7 @@ export const FIT: Record<string, FitX> = {
   vy5: { vai: "Vy – học viên nữ", ...BLOUSE }, vy: { vai: "Vy Kim Khâu", ...BLOUSE },
   trang5: { vai: "Trang – nữ nhỏ (LTTC)", collar: "round", print: "♥" }, trang: { vai: "Trang Trâu – nữ trẻ", collar: "round", print: "♥" },
   linh5: { vai: "Linh – học viên nữ", ...BLOUSE }, linh: { vai: "Linh – nữ trẻ", ...BLOUSE },
-  dung: { vai: "Dũng Gymmer", tank: true, print: "GYM" },
+  dung: { vai: "Dũng Gymmer", tank: true, print: "GYM", muscle: true, jogger: true, pants: "#5d6370" },
   thang: { vai: "Thắng – shipper, mũ đen", collar: "stand", placket: "zip", stripe: "#f4f1e6", logo: "SHIP", hem: true },
   bohung: { vai: "bố Hùng – ông cụ", collar: "v", placket: "cardigan", knit: true, pockets: ["lower2"] },
   mehung: { vai: "mẹ Hùng – bà cụ, áo bà ba", collar: "baba", pockets: ["lower2"] },
@@ -82,9 +82,8 @@ function mask(src: ImageData, c: string, tol = 26, kLo = 0.35, kHi = 1.25, y0lim
   const W = src.width, H = src.height, d = src.data, col = hex(c), cc = col[0] * col[0] + col[1] * col[1] + col[2] * col[2] || 1; const m = document.createElement("canvas"); m.width = W; m.height = H; const mg = m.getContext("2d")!; const md = mg.createImageData(W, H);
   const dk = lum(c) < 60;
   const ok = (x: number, y: number) => { if (y < y0lim || y >= y1lim) return false; const i = (y * W + x) * 4; if (d[i + 3] < 200) return false;
-    if (Math.abs(d[i] - IK[0]) + Math.abs(d[i + 1] - IK[1]) + Math.abs(d[i + 2] - IK[2]) < 34) return false; // không bao giờ lấy nét mực
-    if (dk) return Math.abs(d[i] - col[0]) + Math.abs(d[i + 1] - col[1]) + Math.abs(d[i + 2] - col[2]) <= 18;
-    if (d[i] + d[i + 1] + d[i + 2] < 120) return false;
+    if (d[i] < 75 && (d[i] + d[i + 2]) / 2 - d[i + 1] > 8 && !(col[1] < (col[0] + col[2]) / 2 - 8)) return false; // nét mực (đen ánh tím) – trừ khi chính màu áo cũng ánh tím
+    if (d[i] + d[i + 1] + d[i + 2] < (dk ? 40 : 90)) return false;
     const k = (d[i] * col[0] + d[i + 1] * col[1] + d[i + 2] * col[2]) / cc; if (k < kLo || k > kHi) return false;
     return Math.abs(d[i] - k * col[0]) + Math.abs(d[i + 1] - k * col[1]) + Math.abs(d[i + 2] - k * col[2]) <= tol * 3; };
   let x0 = W, x1 = -1, y0 = H, y1 = -1; const rowL = new Int32Array(H).fill(-1), rowR = new Int32Array(H).fill(-1); let n = 0;
@@ -119,6 +118,7 @@ function closeMask(J: MK, R = 7) {
   g.putImageData(out, 0, 0); return c;
 }
 /** toạ độ tương đối trên mảng áo: u -1 (lưng / trái màn) → +1 (ngực / phải màn), v 0 (cổ) → 1 (gấu) */
+const W0 = (G: Geo) => G.W;
 class Geo {
   W: number; H: number; cx: number;
   neck: number; // hàng đầu tiên thân áo hiện đủ rộng (phía trên bị cằm/đầu che) – chỗ đặt cổ áo
@@ -136,8 +136,21 @@ export class ActorX extends Actor {
   constructor(o: Outfit, h: number, private seedX: number, key: string) {
     const F = FIT[key] ?? ({ collar: o.long ? "v" : (["shirt", "polo", "round"] as Collar[])[seedX % 3], placket: o.long || seedX % 3 === 2 ? "none" : "buttons", dots: !!o.long && seedX % 2 === 0, waist: !!o.long, pockets: o.long ? [] : ["chest"] } as FitX);
     super({ ...o, ...(F.o ?? {}) } as Outfit, h, seedX); this.F = F;
+    // thẻ bản chi tiết: độ đẩy sâu + mức cắt ngang hông là uniform → ngồi xe (ride): không đẩy sâu, cắt phần dưới hông (chân 3D của xe thay vào)
+    const mat = this.card.material as THREE.MeshBasicMaterial, uB = this.uB, uC = this.uC;
+    mat.onBeforeCompile = (sh) => { sh.uniforms.uBias = uB; sh.uniforms.uCut = uC;
+      sh.vertexShader = "uniform float uBias;\n" + sh.vertexShader.replace("#include <project_vertex>", "#include <project_vertex>\n{ vec4 q = projectionMatrix * ( mvPosition + vec4( 0.0, 0.0, uBias, 0.0 ) ); gl_Position.z = q.z / q.w * gl_Position.w; }");
+      sh.fragmentShader = "uniform float uCut;\n" + sh.fragmentShader.replace("#include <alphatest_fragment>", "#include <alphatest_fragment>\n  if ( vMapUv.y < uCut ) discard;"); };
+    mat.customProgramCacheKey = () => "cardX"; mat.needsUpdate = true;
   }
+  private uB = { value: 0.45 }; private uC = { value: -1 }; private riding = false;
+  /** độ cao (m, theo gốc thẻ) của hông = mép dưới thân áo – để đặt thẻ ngồi lên yên */
+  hipY = 0.85;
+  ride(on: boolean) { this.riding = on; this.uB.value = on ? 0.03 : 0.45; this.uC.value = on ? this.hipCut : -1; }
+  private hipCut = 0.42;
+
   pose(p: Pose, cam: THREE.Camera, tint: THREE.Color) {
+    if (this.F.muscle && !p.side && p.mode !== "sit" && !(p.acc ?? []).includes("raincoat")) p = { ...p, acc: [...(p.acc ?? []), "muscle"] };
     super.pose(p, cam, tint);
     const self = this as unknown as { key: string; g: CanvasRenderingContext2D; t: THREE.CanvasTexture };
     if (self.key === this.xk || this.o.anime) return; this.xk = self.key; this.dress(self.g, p); self.t.needsUpdate = true;
@@ -147,8 +160,14 @@ export class ActorX extends Actor {
     g.setTransform(1, 0, 0, 1, 0, 0); const img = g.getImageData(0, 0, 600, 1000);
     const J = mask(img, o.jacket, 26, 0.35, 1.25, 330, 960, true);
     const okJ = J.n > 1500 && !acc.includes("raincoat");
+    if (J.n > 1500) { const Hc = this.h / 0.95, cyH = J.y1 - 10; this.hipY = (1 - cyH / 1000) * Hc - 0.025 * Hc; this.hipCut = 1 - cyH / 1000; if (this.riding) this.uC.value = this.hipCut; }
     const yLeg = okJ ? J.y1 + 4 : 700, S = mask(img, o.boots ?? "#e9e6df", 14, 0.7, 1.2, Math.max(yLeg + 6, 800), 1000), P = legMask(img, yLeg, S.n > 30 ? S.y0 - 2 : 990);
-    if (okJ) { const G = new Geo(J, p.side ? (p.side > 0 ? 1 : -1) : 0); this.torso(g, G, r); this.over(g, G); }
+    if (okJ) { const G = new Geo(J, p.side ? (p.side > 0 ? 1 : -1) : 0); this.torso(g, G, r); this.over(g, G);
+      if (F.tank) { // tay trần: nét tay cùng màu áo (ngoài thân) → màu da; nhìn nghiêng thêm bắp tay
+        const A = mask(img, o.jacket, 26, 0.35, 1.25, Math.max(0, J.y0 - 80), Math.min(1000, J.y1 + 220)); const am = document.createElement("canvas"); am.width = 600; am.height = 1000; const ag = am.getContext("2d")!; ag.drawImage(A.m, 0, 0); ag.globalCompositeOperation = "destination-out"; ag.drawImage(J.m, 0, 0);
+        clipTo(g, am, (x) => { x.fillStyle = o.skin ?? "#d9a77e"; x.fillRect(0, 0, 600, 1000); });
+        if (F.muscle && G.side) { g.fillStyle = o.skin ?? "#c98a5a"; g.strokeStyle = INK; g.lineWidth = 4; const bx = G.X(-0.05, 0.3), by = G.y(0.3); g.beginPath(); g.ellipse(bx, by, W0(G) * 0.24, G.H * 0.2, G.fr * 0.25, 0, 7); g.fill(); g.stroke();
+          g.strokeStyle = "rgba(255,255,255,.6)"; g.lineWidth = 3; g.beginPath(); g.arc(bx - G.fr * 6, by - 8, 14, Math.PI * 1.1, Math.PI * 1.6); g.stroke(); } } }
     if (o.hat === "cap" && F.capBadge && okJ) this.cap(g, img, J, p.side ?? 0);
     this.legsShoes(g, S, P, r);
   }
@@ -174,7 +193,7 @@ export class ActorX extends Actor {
       if (F.tank) { // áo ba lỗ: khoét nách lộ vai (da) – theo khung bao vì mép trên thân rất hẹp
         x.fillStyle = o.skin ?? "#f1cfa8"; x.strokeStyle = INK; x.lineWidth = 4;
         const holes: [number, number][] = G.side ? [[G.X(-0.25, 0.14), G.y(0.1)]] : [[J.x0 + W * 0.08, J.y0 + H * 0.06], [J.x1 - W * 0.08, J.y0 + H * 0.06]];
-        for (const [hx, hy] of holes) { x.beginPath(); x.ellipse(hx, hy, W * (G.side ? 0.24 : 0.2), H * 0.17, 0, 0, 7); x.fill(); x.stroke(); } }
+        for (const [hx, hy] of holes) { x.beginPath(); x.ellipse(hx, hy, W * (G.side ? 0.3 : 0.26), H * 0.24, 0, 0, 7); x.fill(); x.stroke(); } }
       if (F.placket === "buttons" || F.placket === "cardigan") { x.strokeStyle = inkA(0.5); x.lineWidth = 3; x.beginPath(); for (let v = F.placket === "cardigan" ? 0.3 : 0.12; v <= 1; v += 0.02) x.lineTo(G.X(pu + 0.06, v), G.y(v)); x.stroke();
         if (F.placket === "cardigan") for (let k = 0; k < 4; k++) { const v = 0.4 + k * 0.15; x.fillStyle = "#e8dcc0"; x.beginPath(); x.arc(G.X(pu, v), G.y(v), 5, 0, 7); x.fill(); x.strokeStyle = INK; x.lineWidth = 1.5; x.stroke(); } }
       if (F.placket === "zip") { const uw = G.side ? 0.3 : 0.2; x.beginPath(); for (let v = 0; v <= 0.88; v += 0.02) x.lineTo(G.X(pu - uw, v), G.y(v)); for (let v = 0.88; v >= 0; v -= 0.02) x.lineTo(G.side ? G.X(1.2, v) : G.X(uw, v), G.y(v)); x.closePath(); x.fillStyle = "#f2efe6"; x.fill();
@@ -248,7 +267,8 @@ export class ActorX extends Actor {
     const o = this.o, F = this.F;
     if (P.n > 60) clipTo(g, P.m, (x) => { x.fillStyle = F.pants ?? o.pants; x.fillRect(0, P.y0, 600, P.y1 - P.y0); const gp = x.createLinearGradient(0, P.y0, 0, P.y1); gp.addColorStop(0, "rgba(0,0,0,.25)"); gp.addColorStop(0.3, "rgba(0,0,0,0)"); gp.addColorStop(1, "rgba(0,0,0,.15)"); x.fillStyle = gp; x.fillRect(0, P.y0, 600, P.y1 - P.y0);
       x.strokeStyle = "rgba(20,10,20,.5)"; x.lineWidth = 3; const ky = P.y0 + (P.y1 - P.y0) * 0.45; for (const d of [-6, 6]) { x.beginPath(); x.moveTo(P.x0, ky + d); x.lineTo(P.x1, ky + d + 5); x.stroke(); }
-      if (F.stains) { x.fillStyle = "rgba(20,16,14,.6)"; for (let k = 0; k < 4; k++) { x.beginPath(); x.ellipse(P.x0 + r() * (P.x1 - P.x0), P.y0 + r() * (P.y1 - P.y0), 4, 6, 0, 0, 7); x.fill(); } } });
+      if (F.stains) { x.fillStyle = "rgba(20,16,14,.6)"; for (let k = 0; k < 4; k++) { x.beginPath(); x.ellipse(P.x0 + r() * (P.x1 - P.x0), P.y0 + r() * (P.y1 - P.y0), 4, 6, 0, 0, 7); x.fill(); } }
+      if (F.jogger) { x.fillStyle = "#2a2c33"; x.fillRect(0, P.y1 - 22, 600, 12); x.fillStyle = "rgba(255,255,255,.55)"; x.fillRect(0, P.y1 - 22, 600, 2); } });
     if (S.n > 30) clipTo(g, S.m, (x) => { const h = S.y1 - S.y0; x.fillStyle = "#4a4048"; x.fillRect(0, S.y1 - h * 0.28, 600, h); x.fillStyle = "#c8202f"; x.fillRect(0, S.y0 + h * 0.45, 600, 3); x.fillStyle = "rgba(255,255,255,.35)"; x.fillRect(0, S.y0 + 2, 600, 3); });
   }
 }

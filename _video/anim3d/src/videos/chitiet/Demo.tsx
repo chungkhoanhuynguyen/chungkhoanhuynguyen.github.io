@@ -48,9 +48,9 @@ const NAMED: [string, Outfit, number, number, string][] = [["tan", DO, 1.7, 3, "
 export const ALL: Who[] = [...NAMED.map(([k, o, h, seed, ten]) => ({ k, o, h, seed, ten })), ...Object.entries(OUT).map(([k, v]) => ({ k, o: v.o, h: v.h, seed: v.seed, ten: k })),
   ...Array.from({ length: 10 }, (_, i) => ({ k: "c" + i, o: crowd(i), h: 1.55 + (i % 5) * 0.05, seed: 5 + i * 3, ten: "quần chúng c" + i }))];
 export const PER = 8, PAGES = Math.ceil(ALL.length / PER);
-export const Luoi: React.FC<{ page: number }> = ({ page }) => {
+export const Luoi: React.FC<{ page: number; keys?: string[] }> = ({ page, keys }) => {
   const cam = new THREE.PerspectiveCamera(); cam.position.set(0, 1, 3); const tint = new THREE.Color(1, 1, 1);
-  const rows = ALL.slice(page * PER, page * PER + PER).map((w) => ({ w, imgs: DANG.map(([, p]) => { const a = new ActorX(w.o, w.h, w.seed, w.k); a.pose(p, cam, tint); return ((a as unknown as { c: HTMLCanvasElement }).c).toDataURL(); }) }));
+  const rows = (keys ? ALL.filter((w) => keys.includes(w.k)) : ALL.slice(page * PER, page * PER + PER)).map((w) => ({ w, imgs: DANG.map(([, p]) => { const a = new ActorX(w.o, w.h, w.seed, w.k); a.pose(p, cam, tint); return ((a as unknown as { c: HTMLCanvasElement }).c).toDataURL(); }) }));
   return <AbsoluteFill style={{ background: "#eeeae2", padding: "8px 10px", fontFamily: "DejaVu Sans, Arial" }}>
     <div style={{ display: "flex" }}>{DANG.map(([n]) => <div key={n} style={{ width: 190, textAlign: "center", fontSize: 19, fontWeight: 800, color: "#333" }}>{n}</div>)}</div>
     {rows.map(({ w, imgs }) => <div key={w.k} style={{ borderBottom: "2px solid #d6cfc2" }}><div style={{ display: "flex" }}>{imgs.map((s, i) => <img key={i} src={s} style={{ width: 190, height: 317 }} />)}</div>

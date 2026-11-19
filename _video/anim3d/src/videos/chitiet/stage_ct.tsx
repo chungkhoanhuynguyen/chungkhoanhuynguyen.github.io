@@ -19,13 +19,14 @@ import { F } from "../vang/cards";
 import { buildExtras } from "../vang/extras";
 import { buildCafe, buildPho, buildNet, buildCanHo, buildSuaXe } from "../vang/sets2";
 import { buildSuaXe2 } from "./suaxe2";
+import { buildShowroom, buildPhoXe } from "./canh_xe";
 import { ActorX } from "./cast2x";
 import { buildLop, buildTan, buildSo, buildSa, buildAthens, buildUruk, buildTenoch, buildThao, buildPlaza, buildXuong, drawBoard as drawChalk, drawScore, Board } from "../ltc5/sets_ltc";
 
 export type V = [number, number, number];
-export type SetKey = "room" | "street" | "streetday" | "shop" | "hue" | "bt" | "lake" | "villa" | "field" | "fieldfever" | "korea" | "bank" | "photo" | "lop" | "tan" | "so" | "sa" | "athens" | "uruk" | "tenoch" | "thao" | "plaza" | "xuong" | "cafe" | "pho" | "net" | "netsp" | "canho" | "canhovip" | "suaxe" | "suaxe2";
-export const OFF: Record<SetKey, number> = { room: RX, street: SX, streetday: SX, shop: IX, hue: HX, bt: BX, lake: GX, villa: VX, field: FX, fieldfever: FX, korea: KX, bank: NX, photo: 0, lop: 0, tan: 0, so: 0, sa: 0, athens: 0, uruk: 0, tenoch: 0, thao: 0, plaza: 0, xuong: 0, cafe: 0, pho: 0, net: 0, netsp: 0, canho: 0, canhovip: 0, suaxe: 0, suaxe2: 0 };
-export type Cast = { a: string; p: V; to?: V; pose: (t: number, d: number) => Pose };
+export type SetKey = "room" | "street" | "streetday" | "shop" | "hue" | "bt" | "lake" | "villa" | "field" | "fieldfever" | "korea" | "bank" | "photo" | "lop" | "tan" | "so" | "sa" | "athens" | "uruk" | "tenoch" | "thao" | "plaza" | "xuong" | "cafe" | "pho" | "net" | "netsp" | "canho" | "canhovip" | "suaxe" | "suaxe2" | "suaxe2xe" | "showroom" | "phoxe";
+export const OFF: Record<SetKey, number> = { room: RX, street: SX, streetday: SX, shop: IX, hue: HX, bt: BX, lake: GX, villa: VX, field: FX, fieldfever: FX, korea: KX, bank: NX, photo: 0, lop: 0, tan: 0, so: 0, sa: 0, athens: 0, uruk: 0, tenoch: 0, thao: 0, plaza: 0, xuong: 0, cafe: 0, pho: 0, net: 0, netsp: 0, canho: 0, canhovip: 0, suaxe: 0, suaxe2: 0, suaxe2xe: 0, showroom: 0, phoxe: 0 };
+export type Cast = { a: string; p: V; to?: V; pose: (t: number, d: number) => Pose; ride?: boolean }; // ride: ngồi xe – p.y = độ cao yên, thẻ cắt ngang hông
 export type Shot3D = { bg?: string; bgFit?: [number, number]; set: SetKey; light: LK; from: [V, V, number]; to: [V, V, number]; cast: Cast[]; rain?: boolean; shake?: number; chat?: "calm" | "fast" | "off" | "boom"; game?: boolean; board?: "buy" | "sell"; ease?: "sm" | "lin" | "out"; walkers?: boolean; jam?: boolean; chalk?: string[]; chalkT?: number; score?: 1 | 2 };
 export type Run = { a: number; b: number; s: Shot3D }; // frames, relative to the Stage sequence
 
@@ -95,7 +96,9 @@ const Inner: React.FC<{ set: SetKey; runs: Run[]; chiTiet: boolean }> = ({ set, 
     else if (set === "athens") root.add(buildAthens().g); else if (set === "uruk") root.add(buildUruk().g); else if (set === "tenoch") root.add(buildTenoch().g);
     else if (set === "thao") root.add(buildThao().g); else if (set === "plaza") root.add(buildPlaza().g);
     else if (set === "suaxe") root.add(buildSuaXe().g);
-    else if (set === "suaxe2") { if (!chiTiet) throw new Error("set suaxe2 cần cờ chiTiet"); root.add(buildSuaXe2().g); }
+    else if (set === "suaxe2" || set === "suaxe2xe") { if (!chiTiet) throw new Error("set chi tiết cần cờ chiTiet"); root.add(buildSuaXe2({ sieuxe: set === "suaxe2xe" }).g); }
+    else if (set === "showroom") { if (!chiTiet) throw new Error("set chi tiết cần cờ chiTiet"); root.add(buildShowroom().g); }
+    else if (set === "phoxe") { if (!chiTiet) throw new Error("set chi tiết cần cờ chiTiet"); root.add(buildPhoXe().g); }
     else if (set === "cafe") root.add(buildCafe().g); else if (set === "pho") root.add(buildPho().g);
     else if (set === "net" || set === "netsp") root.add(buildNet(set === "netsp" ? "sparta" : "home").g);
     else if (set === "canho" || set === "canhovip") root.add(buildCanHo(set === "canhovip" ? "vip" : "tragop").g);
@@ -115,7 +118,7 @@ const Inner: React.FC<{ set: SetKey; runs: Run[]; chiTiet: boolean }> = ({ set, 
       const h = k === "gym" || k === "gym2" ? 1.82 : k === "tan" ? 1.7 : k === "ngan" ? 1.58 : k === "vest" ? 1.76 : k === "me" ? 1.48 : 1.55 + ((parseInt(k.slice(1)) || 0) % 5) * 0.05;
       const sd = k === "tan" ? 3 : k === "ngan" ? 9 : 5 + (parseInt(k.slice(1)) || 0) * 3; const a = chiTiet ? new ActorX(o, h, sd, k) : new Actor(o, h, sd); actors[k] = a; root.add(a.root); a.root.visible = false;
     }
-    const extras = buildExtras(set, root);
+    const extras = buildExtras(set === "phoxe" ? "streetday" : set, root);
     noInkFallback(root);
     const ticks: ((t: number) => void)[] = []; if (chiTiet) root.traverse((o) => { if (typeof o.userData.tick === "function") ticks.push(o.userData.tick); });
     return { ticks, chalkB, scoreB, bgs, bgPlane, extras, root, sun, skyMat, sky, room, shop, rain, actors, bike, bike0: bike ? bike.position.clone() : null, bikeR: bike ? bike.rotation.y : 0 };
@@ -155,7 +158,7 @@ const Inner: React.FC<{ set: SetKey; runs: Run[]; chiTiet: boolean }> = ({ set, 
   for (const a of Object.values(W.actors)) a.root.visible = false;
   if (W.bike && W.bike0) { W.bike.position.copy(W.bike0); W.bike.rotation.y = W.bikeR; }
   for (const c of s.cast) { if ((c.a === "bike" || c.a === "boat") && W.bike) { const p = c.to ? lerpV(c.p, c.to, Math.min(1, t / d)) : new THREE.Vector3(...c.p); W.bike.position.set(p.x, p.y, p.z); if (c.a === "bike" && c.to) W.bike.rotation.y = c.to[0] < c.p[0] ? -Math.PI / 2 : Math.PI / 2; continue; }
-    const a = W.actors[c.a]; if (!a) continue; a.root.visible = true; const p = c.to ? lerpV(c.p, c.to, Math.min(1, t / d)) : new THREE.Vector3(...c.p); a.root.position.set(p.x + X, p.y, p.z); a.pose(c.pose(t, d), cam, tint); }
+    const a = W.actors[c.a]; if (!a) continue; a.root.visible = true; const p = c.to ? lerpV(c.p, c.to, Math.min(1, t / d)) : new THREE.Vector3(...c.p); a.root.position.set(p.x + X, p.y, p.z); if (a instanceof ActorX) a.ride(!!c.ride); a.pose(c.pose(t, d), cam, tint); if (c.ride && a instanceof ActorX) a.root.position.y = p.y - a.hipY; }
   return (
     <>
       <primitive object={W.root} dispose={null} />

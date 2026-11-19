@@ -53,3 +53,9 @@ export function tm(color: THREE.ColorRepresentation = "#ffffff", map: THREE.Text
 }
 export const glow = (r: number, g: number, b: number) => new THREE.MeshBasicMaterial({ color: new THREE.Color(r, g, b) });
 
+/** bảng sáng của vật liệu toon chi tiết: "warm" = nắng chiều trong tiệm (suaxe2), "day" = ban ngày ngoài phố / phòng chụp sáng trung tính. Tắt hết đèn ấm. */
+export function setLook(k: "warm" | "day") {
+  if (k === "warm") { U.uSun.value.set(1.55, 1.12, 0.72); U.uAmbHi.value.set(0.62, 0.55, 0.52); U.uAmbLo.value.set(0.36, 0.3, 0.3); U.uSat.value = 1.08; }
+  else { U.uSun.value.set(1.22, 1.18, 1.1); U.uAmbHi.value.set(0.72, 0.74, 0.8); U.uAmbLo.value.set(0.42, 0.4, 0.38); U.uSat.value = 1.05; }
+  for (let i = 0; i < NL; i++) { U.uLampP.value[i].set(0, -99, 0); U.uLampC.value[i].set(0, 0, 0); U.uLampR.value[i] = 1; }
+}
