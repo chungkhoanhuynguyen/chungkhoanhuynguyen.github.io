@@ -17,13 +17,13 @@ const F = "'Be Vietnam Pro', 'DejaVu Sans', Arial, sans-serif";
 type V3 = [number, number, number];
 
 // ---------------- tiện ích hình học ----------------
-const mesh = (geo: THREE.BufferGeometry, m: THREE.Material, x = 0, y = 0, z = 0, cast = true) => { const k = new THREE.Mesh(geo, m); k.position.set(x, y, z); k.castShadow = cast; k.receiveShadow = true; return k; };
-const bx = (w: number, h: number, d: number, m: THREE.Material, x = 0, y = 0, z = 0, cast = true) => mesh(new THREE.BoxGeometry(w, h, d), m, x, y, z, cast);
-const cy = (r1: number, r2: number, h: number, m: THREE.Material, x = 0, y = 0, z = 0, s = 16) => mesh(new THREE.CylinderGeometry(r1, r2, h, s), m, x, y, z);
-const cvs = (w: number, h: number) => { const c = document.createElement("canvas"); c.width = w; c.height = h; return [c, c.getContext("2d")!] as const; };
-const ctex = (c: HTMLCanvasElement, rep?: [number, number]) => { const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8; if (rep) { t.wrapS = t.wrapT = THREE.RepeatWrapping; t.repeat.set(...rep); } return t; };
+export const mesh = (geo: THREE.BufferGeometry, m: THREE.Material, x = 0, y = 0, z = 0, cast = true) => { const k = new THREE.Mesh(geo, m); k.position.set(x, y, z); k.castShadow = cast; k.receiveShadow = true; return k; };
+export const bx = (w: number, h: number, d: number, m: THREE.Material, x = 0, y = 0, z = 0, cast = true) => mesh(new THREE.BoxGeometry(w, h, d), m, x, y, z, cast);
+export const cy = (r1: number, r2: number, h: number, m: THREE.Material, x = 0, y = 0, z = 0, s = 16) => mesh(new THREE.CylinderGeometry(r1, r2, h, s), m, x, y, z);
+export const cvs = (w: number, h: number) => { const c = document.createElement("canvas"); c.width = w; c.height = h; return [c, c.getContext("2d")!] as const; };
+export const ctex = (c: HTMLCanvasElement, rep?: [number, number]) => { const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8; if (rep) { t.wrapS = t.wrapT = THREE.RepeatWrapping; t.repeat.set(...rep); } return t; };
 /** dây điện võng giữa 2 điểm */
-function wire(a: V3, b: V3, sag: number, m: THREE.Material, r = 0.009) {
+export function wire(a: V3, b: V3, sag: number, m: THREE.Material, r = 0.009) {
   const pts: THREE.Vector3[] = []; for (let i = 0; i <= 16; i++) { const t = i / 16; pts.push(new THREE.Vector3(a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t - sag * 4 * t * (1 - t), a[2] + (b[2] - a[2]) * t)); }
   const k = new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts), 24, r, 5), m); k.castShadow = true; return k;
 }
@@ -36,11 +36,11 @@ export function blob(w: number, d: number, op = 0.5, col = "#1a1210") {
 }
 
 // ---------------- texture vẽ tay (canvas) ----------------
-function grime(x: CanvasRenderingContext2D, W: number, H: number, r: () => number, n: number, col: string, rmin: number, rmax: number, a: number) {
+export function grime(x: CanvasRenderingContext2D, W: number, H: number, r: () => number, n: number, col: string, rmin: number, rmax: number, a: number) {
   for (let i = 0; i < n; i++) { const px = r() * W, py = r() * H, rr = rmin + r() * (rmax - rmin); const g = x.createRadialGradient(px, py, 0, px, py, rr); g.addColorStop(0, col.replace("A", String(a * (0.4 + r() * 0.6)))); g.addColorStop(1, col.replace("A", "0")); x.fillStyle = g; x.fillRect(px - rr, py - rr, rr * 2, rr * 2); }
 }
 /** tường vữa vàng cũ: ố nước chảy từ trên, rêu + bẩn chân tường, mảng bong vữa lộ gạch, vết nứt, giấy quảng cáo dán */
-function wallTex(wm: number, hm: number, seed: number, base: string, tileH = 1.1) {
+export function wallTex(wm: number, hm: number, seed: number, base: string, tileH = 1.1) {
   const PX = 170, W = Math.round(wm * PX), H = Math.round(hm * PX), r = rng(seed); const [c, x] = cvs(W, H);
   x.fillStyle = base; x.fillRect(0, 0, W, H);
   grime(x, W, H, r, 260, "rgba(255,245,220,A)", 20, 110, 0.18); grime(x, W, H, r, 220, "rgba(120,90,50,A)", 15, 90, 0.12);
@@ -68,7 +68,7 @@ function wallTex(wm: number, hm: number, seed: number, base: string, tileH = 1.1
   return ctex(c);
 }
 /** sàn xi măng: loang màu, vết dầu đen quanh chỗ sửa, vệt bánh xe, vết nứt, khe co giãn */
-function floorTex(wm: number, dm: number, seed: number, oil: [number, number, number][]) {
+export function floorTex(wm: number, dm: number, seed: number, oil: [number, number, number][]) {
   const PX = 150, W = Math.round(wm * PX), H = Math.round(dm * PX), r = rng(seed); const [c, x] = cvs(W, H);
   x.fillStyle = "#8f8a82"; x.fillRect(0, 0, W, H);
   grime(x, W, H, r, 420, "rgba(170,165,155,A)", 20, 120, 0.25); grime(x, W, H, r, 380, "rgba(60,55,50,A)", 10, 80, 0.16);
@@ -82,17 +82,17 @@ function floorTex(wm: number, dm: number, seed: number, oil: [number, number, nu
   x.strokeStyle = "rgba(45,40,35,.6)"; x.lineWidth = 1.5; for (let i = 0; i < 12; i++) { let px = r() * W, py = r() * H; x.beginPath(); x.moveTo(px, py); for (let k = 0; k < 8; k++) { px += (r() - 0.5) * 50; py += (r() - 0.5) * 50; x.lineTo(px, py); } x.stroke(); }
   return ctex(c);
 }
-function woodTex(seed: number, base = "#7a5236") {
+export function woodTex(seed: number, base = "#7a5236") {
   const [c, x] = cvs(256, 256), r = rng(seed); x.fillStyle = base; x.fillRect(0, 0, 256, 256);
   for (let i = 0; i < 60; i++) { x.strokeStyle = `rgba(${r() < 0.5 ? "40,25,15" : "160,120,80"},${0.15 + r() * 0.2})`; x.lineWidth = 1 + r() * 3; x.beginPath(); const y = r() * 256; x.moveTo(0, y); x.bezierCurveTo(80, y + (r() - 0.5) * 20, 170, y + (r() - 0.5) * 20, 256, y + (r() - 0.5) * 10); x.stroke(); }
   grime(x, 256, 256, r, 30, "rgba(30,20,10,A)", 10, 40, 0.3); return ctex(c);
 }
-function metalTex(seed: number, base: string, rust = 0.5) {
+export function metalTex(seed: number, base: string, rust = 0.5) {
   const [c, x] = cvs(256, 256), r = rng(seed); x.fillStyle = base; x.fillRect(0, 0, 256, 256);
   grime(x, 256, 256, r, 40, "rgba(255,255,255,A)", 10, 60, 0.08); grime(x, 256, 256, r, Math.round(60 * rust), "rgba(130,60,25,A)", 4, 30, 0.55); grime(x, 256, 256, r, 40, "rgba(20,20,20,A)", 8, 40, 0.2); return ctex(c);
 }
 /** biển hiệu tôn sơn: chữ to, viền gỉ, đinh vít */
-function signTex(text: string, sub: string, w: number, h: number, bg: string, fg: string, seed = 5) {
+export function signTex(text: string, sub: string, w: number, h: number, bg: string, fg: string, seed = 5) {
   const [c, x] = cvs(1024, Math.round((1024 * h) / w)), r = rng(seed), H = c.height; x.fillStyle = bg; x.fillRect(0, 0, 1024, H);
   grime(x, 1024, H, r, 60, "rgba(255,255,255,A)", 20, 120, 0.1);
   x.fillStyle = fg; x.textAlign = "center"; x.textBaseline = "middle"; x.font = `900 ${Math.round(H * 0.42)}px ${F}`; x.fillText(text, 512, H * 0.38, 980);
@@ -102,15 +102,15 @@ function signTex(text: string, sub: string, w: number, h: number, bg: string, fg
   x.strokeStyle = "#3a2a20"; x.lineWidth = 10; x.strokeRect(5, 5, 1014, H - 10); x.fillStyle = "#c9cdd3"; for (const [px, py] of [[24, 24], [1000, 24], [24, H - 24], [1000, H - 24]]) { x.beginPath(); x.arc(px, py, 8, 0, 7); x.fill(); }
   return ctex(c);
 }
-function paperTex(lines: [string, string, number][], w: number, h: number, bg = "#fbf6e6", rot = 0) {
+export function paperTex(lines: [string, string, number][], w: number, h: number, bg = "#fbf6e6", rot = 0) {
   const [c, x] = cvs(512, Math.round((512 * h) / w)), H = c.height; x.fillStyle = bg; x.fillRect(0, 0, 512, H); x.textAlign = "center"; x.translate(256, 0); x.rotate(rot);
   let y = 0; for (const [t, col, sz] of lines) { y += sz * 1.25; x.fillStyle = col; x.font = `800 ${sz}px ${F}`; x.fillText(t, 0, y, 480); }
   x.setTransform(1, 0, 0, 1, 0, 0); const g = x.createLinearGradient(0, 0, 512, H); g.addColorStop(0, "rgba(120,90,40,.0)"); g.addColorStop(1, "rgba(120,90,40,.25)"); x.fillStyle = g; x.fillRect(0, 0, 512, H); return ctex(c);
 }
-const plane = (w: number, h: number, map: THREE.Texture, x: number, y: number, z: number, ry = 0) => { const p = mesh(new THREE.PlaneGeometry(w, h), tm("#ffffff", map), x, y, z, false); p.rotation.y = ry; return p; };
+export const plane = (w: number, h: number, map: THREE.Texture, x: number, y: number, z: number, ry = 0) => { const p = mesh(new THREE.PlaneGeometry(w, h), tm("#ffffff", map), x, y, z, false); p.rotation.y = ry; return p; };
 
 // ---------------- tôn sóng (mái hiên, trần) ----------------
-function corrugated(w: number, d: number, m: THREE.Material, pitch = 0.11, amp = 0.018) {
+export function corrugated(w: number, d: number, m: THREE.Material, pitch = 0.11, amp = 0.018) {
   const seg = Math.round(w / (pitch / 6)); const geo = new THREE.PlaneGeometry(w, d, seg, 1); const p = geo.attributes.position;
   for (let i = 0; i < p.count; i++) p.setZ(i, Math.sin((p.getX(i) / pitch) * Math.PI * 2) * amp);
   geo.computeVertexNormals(); const k = new THREE.Mesh(geo, m); k.rotation.x = -Math.PI / 2; k.castShadow = true; k.receiveShadow = true; return k;
@@ -171,7 +171,7 @@ export function xeSo(col: string, plate = "29-B1 168.86", dream = false) {
   return g;
 }
 /** mũ bảo hiểm nửa đầu kiểu VN: vỏ dày có viền cao su, sọc trang trí, kính chắn gió khói, quai cằm buông, khoá */
-function helmet(col: string) { const g = new THREE.Group(), sh = tm(col), blk = tm("#1a1a1e");
+export function helmet(col: string) { const g = new THREE.Group(), sh = tm(col), blk = tm("#1a1a1e");
   const shell = mesh(new THREE.SphereGeometry(0.15, 24, 12, 0, Math.PI * 2, 0, Math.PI * 0.52), sh); shell.scale.set(0.92, 0.95, 1.08); g.add(shell);
   const inner = mesh(new THREE.SphereGeometry(0.138, 20, 10, 0, Math.PI * 2, 0, Math.PI * 0.52), tm("#2a2622", null, { side: THREE.BackSide })); inner.scale.copy(shell.scale); g.add(inner);
   const rim = mesh(new THREE.TorusGeometry(0.145, 0.012, 6, 28), blk, 0, -0.01, 0); rim.rotation.x = Math.PI / 2; rim.scale.set(0.92, 1.08, 1); g.add(rim);
@@ -179,7 +179,7 @@ function helmet(col: string) { const g = new THREE.Group(), sh = tm(col), blk = 
   const visor = mesh(new THREE.SphereGeometry(0.162, 18, 8, Math.PI / 2 - 0.9, 1.8, Math.PI * 0.3, Math.PI * 0.26), tm("#3a4a5a", null, { side: THREE.DoubleSide })); visor.scale.set(0.95, 1.0, 1.12); g.add(visor);
   for (const s of [-1, 1]) { const st = wire([s * 0.13, -0.01, 0.02], [s * 0.02, -0.17, 0.05], -0.02, blk, 0.006); g.add(st); g.add(mesh(new THREE.SphereGeometry(0.012, 8, 6), blk, s * 0.13, -0.01, 0.02)); }
   g.add(bx(0.03, 0.02, 0.012, tm("#c9cdd3"), 0.0, -0.17, 0.05)); return g; }
-function plasticStool(col: string) { const g = new THREE.Group(), m = tm(col); g.add(cy(0.17, 0.17, 0.035, m, 0, 0.43, 0, 18)); const leg = mesh(new THREE.CylinderGeometry(0.15, 0.2, 0.41, 4, 1, true), tm(col, null, { side: THREE.DoubleSide }), 0, 0.205, 0); leg.rotation.y = Math.PI / 4; g.add(leg); return g; }
+export function plasticStool(col: string) { const g = new THREE.Group(), m = tm(col); g.add(cy(0.17, 0.17, 0.035, m, 0, 0.43, 0, 18)); const leg = mesh(new THREE.CylinderGeometry(0.15, 0.2, 0.41, 4, 1, true), tm(col, null, { side: THREE.DoubleSide }), 0, 0.205, 0); leg.rotation.y = Math.PI / 4; g.add(leg); return g; }
 
 // ---------------- mô hình Poly Haven (thư mục public/suaxe2/m, nạp qua models.ts) ----------------
 const M_DIR = "suaxe2/m";

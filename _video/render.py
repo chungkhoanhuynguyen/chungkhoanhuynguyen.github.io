@@ -78,6 +78,7 @@ def conv(sc):
         s["items"] = [it[0] if isinstance(it, (list, tuple)) else it for it in s.get("items", [])]
     elif k == "bars":
         s["bars"] = [(b[0], abs(b[1]) if b[1] else 0.001, b[2], b[3] if len(b) > 3 else str(b[1])) for b in s.get("bars", [])]
+    elif k == "3d": pass   # cảnh 3D kể chuyện (xưởng anim3d) – dựng ở build_land, xem r3d.py
     elif k not in dx2.KINDS and k not in ("text", "end", "chat", "noti", "call", "giay"): s["k"] = "text"
     if s["k"] == "text": s.setdefault("y", 860)
     return s
@@ -257,6 +258,8 @@ def _av_dan(im):
 import land_text
 def land(v, sc, t):
     k = sc["k"]
+    if k == "3d":   # khung 3D đã dựng sẵn (r3d) + nhãn số liệu góc trái + phụ đề
+        import r3d; im = r3d.frame(sc, t); _draw_sub(im, sc, t, LW/2, LW - 200); return im
     if k in ("chat", "noti", "call", "giay"):   # cảnh điện thoại (chat_ui) – phụ đề dưới cột chữ bên phải
         import chat_ui; im = chat_ui.frame(sc, t); _draw_sub(im, sc, t, 1295, 1100); return im
     if k in ("end", "text"):   # cảnh chữ: ảnh tràn khung + Ken Burns + đổi góc máy (bỏ kiểu cột dọc giữa màn hình)
@@ -340,10 +343,15 @@ def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", "%dx%d" % (LW, LH), "-r", str(FPS), "-i", "-",
                           "-pix_fmt", "yuv420p", "-c:v", "libx264", "-crf", "21", "-g", "60", "-preset", "veryfast", tmp], stdin=subprocess.PIPE)
     fr = 0
+    if any(sc.get("k") == "3d" for sc in scenes):   # dựng trước các cảnh 3D đúng số khung (có kho theo mã băm)
+        import r3d; _f0 = 0
+        for i, sc in enumerate(scenes):
+            n_ = int(round(b[i+1]*FPS)) - _f0; _f0 += n_
+            if sc.get("k") == "3d": r3d.prep(sc, n_, FPS, key, i)
     for i, sc in enumerate(scenes):
         n = int(round(b[i+1]*FPS)) - fr; sc["_T"] = n / FPS
         for j in range(n):
-            AV[2] = fr + j; im = land(None if sc["k"] in ("text", "end", "chat", "noti", "call", "giay") else dx2.draw(sc, j/FPS, j/max(1, n)), sc, j/FPS)
+            AV[2] = fr + j; im = land(None if sc["k"] in ("text", "end", "chat", "noti", "call", "giay", "3d") else dx2.draw(sc, j/FPS, j/max(1, n)), sc, j/FPS)
             if HU2[0]:
                 tt = j / FPS
                 if i > 0 and PREV[0] is not None: im = _chuyen(PREV[0], im, tt, _kieu(scenes, i))
@@ -379,6 +387,7 @@ try:
     nph = 0
     for i, sc in enumerate(scenes):
         sc["anh"] = raw[i].get("anh", ""); sc["say"] = raw[i].get("say", ""); sc["ch"] = raw[i].get("ch", "")
+        if sc.get("k") == "3d": continue   # cảnh 3D không cần ảnh minh hoạ
         ph = kho.cho(sc, chu_de)
         if ph is not None:
             _prep_ph(sc, ph); nph += 1

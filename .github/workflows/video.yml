@@ -19,6 +19,7 @@ jobs:
     outputs:
       batch: ${{ steps.p.outputs.batch }}
       keys: ${{ steps.p.outputs.keys }}
+      has3d: ${{ steps.p.outputs.has3d }}
     steps:
       - uses: actions/checkout@v4
         with: {fetch-depth: 2}
@@ -34,15 +35,17 @@ jobs:
           if b and not ks:
               src = open(f"_video/queue/{b}/video_dai.py", encoding="utf-8").read()
               ks = re.findall(r'^S\[["\x27]([A-Za-z0-9_]+)["\x27]\]\s*=', src, re.M)
+          # lô có cảnh 3D kể chuyện ('k': '3d', xem _video/r3d.py) -> bước render cài Remotion + nới giờ
+          h3 = "1" if b and re.search(r"['\x22]k['\x22]\s*:\s*['\x22]3d['\x22]", open(f"_video/queue/{b}/video_dai.py", encoding="utf-8").read()) else "0"
           with open(os.environ["GITHUB_OUTPUT"], "a") as f:
-              f.write(f"batch={b}\nkeys={json.dumps(ks)}\n")
+              f.write(f"batch={b}\nkeys={json.dumps(ks)}\nhas3d={h3}\n")
           print(b, ks)
           PY
   render:
     needs: plan
     if: needs.plan.outputs.batch != ''
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: ${{ needs.plan.outputs.has3d == '1' && 330 || 90 }}
     strategy:
       fail-fast: false
       max-parallel: 8
@@ -60,7 +63,26 @@ jobs:
           key: vieneu-v1
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core >/dev/null
       - run: pip install -q vieneu "onnxruntime==1.22.1" numpy pillow opencv-python-headless
+      # ---- chỉ khi lô có cảnh 'k': '3d': cài xưởng anim3d (Remotion) + kho đoạn 3D đã dựng (theo mã băm) ----
+      - if: needs.plan.outputs.has3d == '1'
+        uses: actions/setup-node@v4
+        with: {node-version: 20}
+      - if: needs.plan.outputs.has3d == '1'
+        uses: actions/cache@v4
+        with:
+          path: _video/anim3d/node_modules
+          key: anim3d-nm-${{ hashFiles('_video/anim3d/package.json') }}
+      - if: needs.plan.outputs.has3d == '1'
+        uses: actions/cache@v4
+        with:
+          path: _video/out/cache3d
+          key: canh3d-${{ matrix.key }}-${{ github.run_id }}
+          restore-keys: canh3d-${{ matrix.key }}-
+      - if: needs.plan.outputs.has3d == '1'
+        working-directory: _video/anim3d
+        run: npm i --no-audit --no-fund -s
       - run: python _video/render.py "${{ needs.plan.outputs.batch }}" "${{ matrix.key }}"
+        env: {CANH3D_CONC: "4", CANH3D_FPS: "10"}
       - name: Tu cat 3 Shorts + bia A/B/C (QL1 11/11)
         continue-on-error: true
         run: |
@@ -76,7 +98,9 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: out-${{ matrix.key }}
-          path: _video/out/
+          path: |
+            _video/out/
+            !_video/out/cache3d/
           retention-days: 7
   publish:
     needs: [plan, render]

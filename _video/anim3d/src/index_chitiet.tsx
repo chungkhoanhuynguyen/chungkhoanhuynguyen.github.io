@@ -5,6 +5,7 @@ import { Composition, registerRoot } from "remotion";
 import { SuaXe2Demo, SUAXE2_FRAMES, Luoi, PAGES } from "./videos/chitiet/Demo";
 import { XeLuoi, XE_N, MAU_N } from "./videos/chitiet/XeLuoi";
 import { XeCanh, XeCanh2 } from "./videos/chitiet/XeCanh";
+import { Canh3D, CANH3D_MAU, Canh3DProps } from "./videos/chitiet/Canh3D";
 const Root: React.FC = () => <>
   <Composition id="SuaXe2Demo" component={SuaXe2Demo} durationInFrames={SUAXE2_FRAMES} fps={30} width={1920} height={1080} />
   {Array.from({ length: PAGES }, (_, p) => <Composition key={p} id={`Luoi${p + 1}`} component={Luoi} defaultProps={{ page: p }} durationInFrames={1} fps={30} width={1350} height={2830} />)}
@@ -13,5 +14,7 @@ const Root: React.FC = () => <>
   <Composition id="XeCanh" component={XeCanh} durationInFrames={120} fps={30} width={1920} height={1080} />
   <Composition id="XeMau" component={XeLuoi} defaultProps={{ bo: "mau" as const }} durationInFrames={MAU_N} fps={30} width={1920} height={410} />
   <Composition id="XeCanh2" component={XeCanh2} durationInFrames={180} fps={30} width={1920} height={1080} />
+  <Composition id="Canh3D" component={Canh3D} defaultProps={CANH3D_MAU} durationInFrames={60} fps={30} width={1920} height={1080}
+    calculateMetadata={({ props }: { props: Canh3DProps }) => ({ durationInFrames: Math.max(1, props.frames), fps: props.fps ?? 30 })} />
 </>;
 registerRoot(Root);

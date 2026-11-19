@@ -20,12 +20,13 @@ import { buildExtras } from "../vang/extras";
 import { buildCafe, buildPho, buildNet, buildCanHo, buildSuaXe } from "../vang/sets2";
 import { buildSuaXe2 } from "./suaxe2";
 import { buildShowroom, buildPhoXe } from "./canh_xe";
+import { buildSapVai, buildPhongKhach, buildVanPhong, buildNganHang, buildCafeVH } from "./sets_tc";
 import { ActorX } from "./cast2x";
 import { buildLop, buildTan, buildSo, buildSa, buildAthens, buildUruk, buildTenoch, buildThao, buildPlaza, buildXuong, drawBoard as drawChalk, drawScore, Board } from "../ltc5/sets_ltc";
 
 export type V = [number, number, number];
-export type SetKey = "room" | "street" | "streetday" | "shop" | "hue" | "bt" | "lake" | "villa" | "field" | "fieldfever" | "korea" | "bank" | "photo" | "lop" | "tan" | "so" | "sa" | "athens" | "uruk" | "tenoch" | "thao" | "plaza" | "xuong" | "cafe" | "pho" | "net" | "netsp" | "canho" | "canhovip" | "suaxe" | "suaxe2" | "suaxe2xe" | "showroom" | "phoxe" | "suaxe2mau" | "showroom2" | "phoxe2";
-export const OFF: Record<SetKey, number> = { room: RX, street: SX, streetday: SX, shop: IX, hue: HX, bt: BX, lake: GX, villa: VX, field: FX, fieldfever: FX, korea: KX, bank: NX, photo: 0, lop: 0, tan: 0, so: 0, sa: 0, athens: 0, uruk: 0, tenoch: 0, thao: 0, plaza: 0, xuong: 0, cafe: 0, pho: 0, net: 0, netsp: 0, canho: 0, canhovip: 0, suaxe: 0, suaxe2: 0, suaxe2xe: 0, showroom: 0, phoxe: 0, suaxe2mau: 0, showroom2: 0, phoxe2: 0 };
+export type SetKey = "room" | "street" | "streetday" | "shop" | "hue" | "bt" | "lake" | "villa" | "field" | "fieldfever" | "korea" | "bank" | "photo" | "lop" | "tan" | "so" | "sa" | "athens" | "uruk" | "tenoch" | "thao" | "plaza" | "xuong" | "cafe" | "pho" | "net" | "netsp" | "canho" | "canhovip" | "suaxe" | "suaxe2" | "suaxe2xe" | "showroom" | "phoxe" | "suaxe2mau" | "showroom2" | "phoxe2" | "sapvai" | "phongkhach" | "vanphong" | "nganhang" | "cafevh";
+export const OFF: Record<SetKey, number> = { room: RX, street: SX, streetday: SX, shop: IX, hue: HX, bt: BX, lake: GX, villa: VX, field: FX, fieldfever: FX, korea: KX, bank: NX, photo: 0, lop: 0, tan: 0, so: 0, sa: 0, athens: 0, uruk: 0, tenoch: 0, thao: 0, plaza: 0, xuong: 0, cafe: 0, pho: 0, net: 0, netsp: 0, canho: 0, canhovip: 0, suaxe: 0, suaxe2: 0, suaxe2xe: 0, showroom: 0, phoxe: 0, suaxe2mau: 0, showroom2: 0, phoxe2: 0, sapvai: 0, phongkhach: 0, vanphong: 0, nganhang: 0, cafevh: 0 };
 export type Cast = { a: string; p: V; to?: V; pose: (t: number, d: number) => Pose; ride?: boolean; lean?: number }; // ride: ngồi xe – p.y = độ cao yên, thẻ cắt ngang hông
 export type Shot3D = { bg?: string; bgFit?: [number, number]; set: SetKey; light: LK; from: [V, V, number]; to: [V, V, number]; cast: Cast[]; rain?: boolean; shake?: number; chat?: "calm" | "fast" | "off" | "boom"; game?: boolean; board?: "buy" | "sell"; ease?: "sm" | "lin" | "out"; walkers?: boolean; jam?: boolean; chalk?: string[]; chalkT?: number; score?: 1 | 2 };
 export type Run = { a: number; b: number; s: Shot3D }; // frames, relative to the Stage sequence
@@ -69,11 +70,12 @@ function drawBoard(s: Screen, mode: "buy" | "sell") {
   s.t.needsUpdate = true;
 }
 
-const Inner: React.FC<{ set: SetKey; runs: Run[]; chiTiet: boolean }> = ({ set, runs, chiTiet }) => {
+const Inner: React.FC<{ set: SetKey; runs: Run[]; chiTiet: boolean; fps?: number; tat?: string[] }> = ({ set, runs, chiTiet, fps, tat }) => {
+  const FR = fps ?? 30; const TAT = tat ?? []; // cảnh 3D tin nóng có thể dựng 12–15 khung/giây cho nhanh
   const f = useCurrentFrame(), { camera, scene } = useThree();
   const W = useMemo(() => {
     const root = new THREE.Group();
-    const sun = new THREE.DirectionalLight("#ffffff", 2.8); sun.castShadow = true; sun.shadow.mapSize.set(2048, 2048); sun.shadow.radius = 4;
+    const sun = new THREE.DirectionalLight("#ffffff", 2.8); sun.castShadow = !TAT.includes("shadow"); const SM = TAT.includes("sm1k") ? 1024 : 2048; sun.shadow.mapSize.set(SM, SM); sun.shadow.radius = 4;
     const scm = sun.shadow.camera as THREE.OrthographicCamera; scm.left = -26; scm.right = 26; scm.top = 26; scm.bottom = -26; scm.near = 1; scm.far = 200; sun.shadow.bias = -0.0004; sun.shadow.normalBias = 0.02;
     root.add(sun, sun.target, new THREE.HemisphereLight("#e8f0ff", "#c4a682", 0.6));
     const skyMat = new THREE.ShaderMaterial({ side: THREE.BackSide, depthWrite: false, uniforms: { top: { value: new THREE.Color() }, hor: { value: new THREE.Color() } },
@@ -97,6 +99,7 @@ const Inner: React.FC<{ set: SetKey; runs: Run[]; chiTiet: boolean }> = ({ set, 
     else if (set === "thao") root.add(buildThao().g); else if (set === "plaza") root.add(buildPlaza().g);
     else if (set === "suaxe") root.add(buildSuaXe().g);
     else if (set === "suaxe2" || set === "suaxe2xe" || set === "suaxe2mau") { if (!chiTiet) throw new Error("set chi tiết cần cờ chiTiet"); root.add(buildSuaXe2({ sieuxe: set === "suaxe2xe", mau: set === "suaxe2mau" }).g); }
+    else if (set === "sapvai" || set === "phongkhach" || set === "vanphong" || set === "nganhang" || set === "cafevh") { if (!chiTiet) throw new Error("set chi tiết cần cờ chiTiet"); root.add({ sapvai: buildSapVai, phongkhach: buildPhongKhach, vanphong: buildVanPhong, nganhang: buildNganHang, cafevh: buildCafeVH }[set]().g); }
     else if (set === "showroom" || set === "showroom2") { if (!chiTiet) throw new Error("set chi tiết cần cờ chiTiet"); root.add(buildShowroom({ mau: set === "showroom2" }).g); }
     else if (set === "phoxe" || set === "phoxe2") { if (!chiTiet) throw new Error("set chi tiết cần cờ chiTiet"); root.add(buildPhoXe(undefined, { mau: set === "phoxe2" }).g); }
     else if (set === "cafe") root.add(buildCafe().g); else if (set === "pho") root.add(buildPho().g);
@@ -118,7 +121,7 @@ const Inner: React.FC<{ set: SetKey; runs: Run[]; chiTiet: boolean }> = ({ set, 
       const h = k === "gym" || k === "gym2" ? 1.82 : k === "tan" ? 1.7 : k === "ngan" ? 1.58 : k === "vest" ? 1.76 : k === "me" ? 1.48 : 1.55 + ((parseInt(k.slice(1)) || 0) % 5) * 0.05;
       const sd = k === "tan" ? 3 : k === "ngan" ? 9 : 5 + (parseInt(k.slice(1)) || 0) * 3; const a = chiTiet ? new ActorX(o, h, sd, k) : new Actor(o, h, sd); actors[k] = a; root.add(a.root); a.root.visible = false;
     }
-    const extras = buildExtras(set === "phoxe" || set === "phoxe2" ? "streetday" : set, root);
+    const extras = buildExtras(set === "phoxe" || set === "phoxe2" || set === "cafevh" ? "streetday" : set, root);
     noInkFallback(root);
     const ticks: ((t: number) => void)[] = []; if (chiTiet) root.traverse((o) => { if (typeof o.userData.tick === "function") ticks.push(o.userData.tick); });
     return { ticks, chalkB, scoreB, bgs, bgPlane, extras, root, sun, skyMat, sky, room, shop, rain, actors, bike, bike0: bike ? bike.position.clone() : null, bikeR: bike ? bike.rotation.y : 0 };
@@ -131,7 +134,7 @@ const Inner: React.FC<{ set: SetKey; runs: Run[]; chiTiet: boolean }> = ({ set, 
   }), [camera, scene]);
   useEffect(() => () => { const k = fx.ink as unknown as { dispose?: () => void }; if (typeof k.dispose === "function") k.dispose(); }, [fx]);
   const run = runs.find((r) => f >= r.a && f < r.b) ?? runs[runs.length - 1];
-  const s = run.s, X = OFF[set], d = (run.b - run.a) / 30, t = (f - run.a) / 30, u = s.ease === "lin" ? Math.min(1, t / d) : s.ease === "out" ? outE(t / d) : sm(t / d);
+  const s = run.s, X = OFF[set], d = (run.b - run.a) / FR, t = (f - run.a) / FR, u = s.ease === "lin" ? Math.min(1, t / d) : s.ease === "out" ? outE(t / d) : sm(t / d);
   const cam = camera as THREE.PerspectiveCamera;
   const pos = lerpV(s.from[0], s.to[0], u).add(new THREE.Vector3(X, 0, 0)), look = lerpV(s.from[1], s.to[1], u).add(new THREE.Vector3(X, 0, 0));
   if (s.shake) { const k = s.shake; pos.x += Math.sin(f * 0.13) * 0.02 * k + Math.sin(f * 0.31) * 0.01 * k; pos.y += Math.sin(f * 0.17 + 1) * 0.015 * k; look.x += Math.sin(f * 0.09 + 2) * 0.02 * k; }
@@ -147,14 +150,14 @@ const Inner: React.FC<{ set: SetKey; runs: Run[]; chiTiet: boolean }> = ({ set, 
     const dir = new THREE.Vector3(); cam.getWorldDirection(dir); W.bgPlane.position.copy(cam.position).addScaledVector(dir, D); W.bgPlane.quaternion.copy(cam.quaternion); W.bgPlane.scale.set(ww * 1.02, hh * 1.02, 1); }
   applyLight(s.light, W.sun, pos, W.skyMat);
   const tag = fx.grade as unknown as { _k?: string }; if (tag._k !== s.light) { fx.grade.set(GR[s.light]); tag._k = s.light; }
-  W.rain.update(f / 30, pos, !!s.rain);
-  if (W.room) { drawChat(W.room.chat, t, s.chat ?? "calm"); drawGame(W.room.game, f / 30, s.game ?? true); }
+  W.rain.update(f / FR, pos, !!s.rain);
+  if (W.room) { drawChat(W.room.chat, t, s.chat ?? "calm"); drawGame(W.room.game, f / FR, s.game ?? true); }
   if (W.shop) drawBoard(W.shop.board, s.board ?? "buy");
   if (W.chalkB) drawChalk(W.chalkB, s.chalk ?? [], s.chalkT ? Math.min(1, t / s.chalkT) : 1);
   if (W.scoreB) drawScore(W.scoreB, s.score ?? 1);
   const tint = new THREE.Color(L[s.light].tint);
-  W.extras(f / 30, cam, tint, !!s.jam);
-  for (const tk of W.ticks) tk(f / 30);
+  W.extras(f / FR, cam, tint, !!s.jam);
+  for (const tk of W.ticks) tk(f / FR);
   for (const a of Object.values(W.actors)) a.root.visible = false;
   if (W.bike && W.bike0) { W.bike.position.copy(W.bike0); W.bike.rotation.y = W.bikeR; }
   for (const c of s.cast) { if ((c.a === "bike" || c.a === "boat") && W.bike) { const p = c.to ? lerpV(c.p, c.to, Math.min(1, t / d)) : new THREE.Vector3(...c.p); W.bike.position.set(p.x, p.y, p.z); if (c.a === "bike" && c.to) W.bike.rotation.y = c.to[0] < c.p[0] ? -Math.PI / 2 : Math.PI / 2; continue; }
@@ -163,8 +166,8 @@ const Inner: React.FC<{ set: SetKey; runs: Run[]; chiTiet: boolean }> = ({ set, 
     <>
       <primitive object={W.root} dispose={null} />
       <EffectComposer multisampling={0}>
-        <primitive object={fx.ink} dispose={null} />
-        <primitive object={fx.bloom} dispose={null} />
+        {!TAT.includes("ink") && <primitive object={fx.ink} dispose={null} />}
+        {!TAT.includes("bloom") && <primitive object={fx.bloom} dispose={null} />}
         <primitive object={fx.tone} dispose={null} />
         <primitive object={fx.grade} dispose={null} />
       </EffectComposer>
@@ -172,10 +175,13 @@ const Inner: React.FC<{ set: SetKey; runs: Run[]; chiTiet: boolean }> = ({ set, 
   );
 };
 
-export const Stage: React.FC<{ set: SetKey; runs: Run[]; chiTiet?: boolean }> = ({ set, runs, chiTiet = false }) => (
-  <div style={{ position: "absolute", left: 0, top: 0, width: 1280, height: 720, transform: "scale(1.5)", transformOrigin: "0 0" }}>
-    <ThreeCanvas width={1280} height={720} shadows="soft" gl={{ antialias: false, stencil: false }} camera={{ fov: 40, near: 0.05, far: 800 }}>
-      <Inner set={set} runs={runs} chiTiet={chiTiet} />
+export const Stage: React.FC<{ set: SetKey; runs: Run[]; chiTiet?: boolean; fps?: number; px?: number; tat?: string[] }> = ({ set, runs, chiTiet = false, fps, px, tat }) => {
+  // px: độ phân giải nội bộ của canvas so với 1920x1080 (cảnh 3D tin nóng dùng 0.5 cho nhanh, rồi phóng lên); mặc định như cũ 1280x720
+  const w = px ? Math.round(1920 * px) : 1280, h = px ? Math.round(1080 * px) : 720, k = 1920 / w;
+  return (
+  <div style={{ position: "absolute", left: 0, top: 0, width: w, height: h, transform: `scale(${k})`, transformOrigin: "0 0" }}>
+    <ThreeCanvas width={w} height={h} shadows="soft" gl={{ antialias: false, stencil: false }} camera={{ fov: 40, near: 0.05, far: 800 }}>
+      <Inner set={set} runs={runs} chiTiet={chiTiet} fps={fps} tat={tat} />
     </ThreeCanvas>
-  </div>
-);
+  </div>);
+};
