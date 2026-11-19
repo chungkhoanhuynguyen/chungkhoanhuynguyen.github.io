@@ -8,5 +8,5 @@ const chromiumOptions = { gl: "swiftshader" };
 const serveUrl = await bundle({ entryPoint: path.resolve("src/index_chitiet.tsx") });
 for (const comp of comps.split(",")) { const composition = await selectComposition({ serveUrl, id: comp, chromiumOptions });
   for (const f of frames.split(",").map(Number)) { const t0 = Date.now();
-    await renderStill({ composition, serveUrl, frame: f, output: `${outdir}/${comp}_f${String(f).padStart(5, "0")}.png`, scale: Number(scale), chromiumOptions, timeoutInMilliseconds: 300000 });
+    await renderStill({ composition, serveUrl, frame: f, output: `${outdir}/${comp}_f${String(f).padStart(5, "0")}.png`, scale: Number(scale), chromiumOptions, timeoutInMilliseconds: 300000, onBrowserLog: (l) => { if (/VA CHẠM|lỗi/.test(l.text)) console.log("[trình duyệt]", l.text); } });
     console.log("still", comp, f, ((Date.now() - t0) / 1000).toFixed(1) + "s"); } }

@@ -146,13 +146,17 @@ export class ActorX extends Actor {
   private uB = { value: 0.45 }; private uC = { value: -1 }; private riding = false;
   /** độ cao (m, theo gốc thẻ) của hông = mép dưới thân áo – để đặt thẻ ngồi lên yên */
   hipY = 0.85;
-  ride(on: boolean) { this.riding = on; this.uB.value = on ? 0.03 : 0.45; this.uC.value = on ? this.hipCut : -1; }
+  private lean = 0;
+  ride(on: boolean, lean = 0) { this.riding = on; this.lean = on ? lean : 0; this.uB.value = on ? 0.03 : 0.45; this.uC.value = on ? this.hipCut : -1; }
   private hipCut = 0.42;
 
   pose(p: Pose, cam: THREE.Camera, tint: THREE.Color) {
     if (this.F.muscle && !p.side && p.mode !== "sit" && !(p.acc ?? []).includes("raincoat")) p = { ...p, acc: [...(p.acc ?? []), "muscle"] };
     super.pose(p, cam, tint);
     const self = this as unknown as { key: string; g: CanvasRenderingContext2D; t: THREE.CanvasTexture };
+    // chồm người khi ngồi xe: xoay thẻ trong mặt phẳng của nó quanh HÔNG (giữ hông trên yên), về phía mặt nhìn
+    const a = this.lean * (p.side === -1 ? -1 : 1), ry = this.card.rotation.y, h = this.hipY; this.card.rotation.z = a;
+    this.card.position.set(h * Math.sin(a) * Math.cos(ry), h * (1 - Math.cos(a)), -h * Math.sin(a) * Math.sin(ry));
     if (self.key === this.xk || this.o.anime) return; this.xk = self.key; this.dress(self.g, p); self.t.needsUpdate = true;
   }
   private dress(g: CanvasRenderingContext2D, p: Pose) {

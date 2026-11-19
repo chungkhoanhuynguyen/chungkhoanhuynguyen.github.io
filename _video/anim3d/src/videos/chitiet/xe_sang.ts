@@ -212,3 +212,14 @@ export const phys0 = (o: THREE.MeshPhysicalMaterialParameters, envI = 1) => phys
 export function envScale(k: number) { for (const m of envUsers) { if (m.userData.e0 === undefined) m.userData.e0 = m.envMapIntensity; m.envMapIntensity = m.userData.e0 * k; } }
 /** gắn phản chiếu HDRI cho vật liệu có sẵn (xe mẫu ngoài) */
 export function applyEnv(m: THREE.MeshStandardMaterial, k = 1) { if (!(m as THREE.MeshStandardMaterial).isMeshStandardMaterial) return; needEnv(); m.envMapIntensity = k; if (envTex) m.envMap = envTex; envUsers.push(m as THREE.MeshPhysicalMaterial); m.needsUpdate = true; }
+
+/** tay người lái 3D (2 tay): vai → khuỷu (hơi chùng xuống, bẻ ra ngoài) → bàn tay nắm ghi-đông / vô-lăng; toạ độ cục bộ của xe, x đối xứng quanh 0 (hoặc quanh x của vai nếu cx) */
+export function riderArms(sleeve: string, skin: string, shoulder: [number, number, number], hand: [number, number, number], spread?: number) {
+  const g = new THREE.Group(), sm = phys({ color: sleeve, roughness: 0.8 }, 0.2), km = phys({ color: skin, roughness: 0.7 }, 0.2);
+  const seg = (a: THREE.Vector3, b: THREE.Vector3, r: number, m: THREE.Material) => { const len = a.distanceTo(b); const k = new THREE.Mesh(new THREE.CapsuleGeometry(r, len, 4, 10), m); k.position.copy(a).add(b).multiplyScalar(0.5); k.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), b.clone().sub(a).normalize()); k.castShadow = true; g.add(k); };
+  const cx = spread !== undefined ? shoulder[0] : 0;
+  for (const s of [-1, 1]) { const ox = spread !== undefined ? spread : 0; const S = new THREE.Vector3(spread !== undefined ? cx + s * ox : s * shoulder[0], shoulder[1], shoulder[2]); const Hn = new THREE.Vector3(spread !== undefined ? hand[0] + s * (ox - 0.02) : s * hand[0], hand[1], hand[2]);
+    const E = S.clone().lerp(Hn, 0.5); E.y -= 0.1; E.x += (spread !== undefined ? s : Math.sign(S.x)) * 0.05;
+    seg(S, E, 0.034, sm); seg(E, Hn, 0.03, sm); const h = new THREE.Mesh(new THREE.SphereGeometry(0.04, 10, 8), km); h.position.copy(Hn); g.add(h); }
+  return g;
+}

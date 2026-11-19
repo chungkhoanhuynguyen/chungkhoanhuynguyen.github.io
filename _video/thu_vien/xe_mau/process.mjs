@@ -12,6 +12,7 @@ console.log(key, "tris trước", Math.round(tris()));
 if (key === "goblin") { setTex(3, "edit/goblin_3.png"); await doc.transform(metalRough()); }
 if (key === "abyss") for (const n of R.listNodes()) if (n.getMesh()?.listPrimitives().some((p) => p.getMaterial()?.getName() === "StickerLabels")) { console.log("  gỡ nhãn dán", n.getName()); n.dispose(); }
 if (key === "roadster") { for (const k of ["Object_7", "Object_13", "Object_44", "Object_54", "Object_20"]) killNode(k); for (const m of R.listMaterials()) if (m.getName() === "gold_ish") { m.setBaseColorFactor([0.09, 0.09, 0.1, 1]).setMetallicFactor(1).setRoughnessFactor(0.28); console.log("  vàng → graphite"); } }
+if (key === "muitran") for (const k of ["Object_6", "Object_10", "Object_18", "Object_20", "Object_26", "Object_28", "Object_30", "Object_32"]) killNode(k);
 if (key === "spy") { setTex(22, "edit/spy_22.png"); setTex(23, "edit/spy_23.png"); setTex(24, "edit/spy_24.png"); }
 await doc.transform(dedup(), prune(), resample(), weld({ tolerance: 0.0001 }));
 const t0 = tris(); if (t0 > 350000) await doc.transform(simplify({ simplifier: MeshoptSimplifier, ratio: 350000 / t0, error: 0.0008, lockBorder: true }));

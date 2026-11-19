@@ -12,6 +12,6 @@ const Root: React.FC = () => <>
   <Composition id="XeLuoi" component={XeLuoi} durationInFrames={XE_N} fps={30} width={1920} height={410} />
   <Composition id="XeCanh" component={XeCanh} durationInFrames={120} fps={30} width={1920} height={1080} />
   <Composition id="XeMau" component={XeLuoi} defaultProps={{ bo: "mau" as const }} durationInFrames={MAU_N} fps={30} width={1920} height={410} />
-  <Composition id="XeCanh2" component={XeCanh2} durationInFrames={150} fps={30} width={1920} height={1080} />
+  <Composition id="XeCanh2" component={XeCanh2} durationInFrames={180} fps={30} width={1920} height={1080} />
 </>;
 registerRoot(Root);
