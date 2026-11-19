@@ -6,9 +6,9 @@ import * as THREE from "three";
 import { AbsoluteFill, Sequence } from "remotion";
 import { Stage as StageOld, Run as RunOld } from "../vang/stage";
 import { Stage, Run, Cast, V } from "./stage_ct";
-import { Actor, OUT, Pose, NGAN } from "../vang/cast2";
+import { OUT, Pose, Outfit, crowd, DO, NGAN, VEST, CLERK, ME2, GYM, BOXER, XOI } from "../vang/cast2";
 import { Expr } from "../pho/toon";
-import { ActorX } from "./cast2x";
+import { ActorX, FIT } from "./cast2x";
 
 type PO = Omit<Pose, "expr">;
 const P = (expr: Expr, o: PO = {}) => (_t: number): Pose => ({ expr, blink: false, ...o });
@@ -32,25 +32,28 @@ export const SuaXe2Demo: React.FC = () => (
   </AbsoluteFill>
 );
 
-// ---------- tờ lưới dáng ----------
+// ---------- tờ lưới dáng: MỌI nhân vật của xưởng (cast2: hằng số + OUT + quần chúng c0..c9), mỗi hàng 1 nhân vật ----------
 export const DANG: [string, Pose][] = [
-  ["đứng nghiêng", { expr: "neutral", side: 1, mode: "stand" }],
-  ["đi", { expr: "smile", side: 1, mode: "stroll", phase: 0.25 }],
-  ["với tay", { expr: "stern", side: 1, mode: "stand", reach: [0.55, 0.15] }],
+  ["nghiêng phải", { expr: "neutral", side: 1, mode: "stand" }],
   ["chính diện", { expr: "neutral", mode: "stand" }],
-  ["giơ tay", { expr: "grin", mode: "stand", wave: 1 }],
-  ["cầm điện thoại", { expr: "nervous", mode: "stand", acc: ["phone"] }],
-  ["cầm giấy", { expr: "shock", mode: "stand", acc: ["paper"] }],
+  ["đi", { expr: "smile", side: 1, mode: "stroll", phase: 0.25 }],
   ["ngồi", { expr: "neutral", mode: "sit" }],
+  ["nghiêng trái", { expr: "stern", side: -1, mode: "stand" }],
+  ["áo mưa", { expr: "neutral", side: 1, mode: "stand", acc: ["raincoat"] }],
+  ["cầm giấy", { expr: "shock", mode: "stand", acc: ["paper"] }],
 ];
-const WHO: [string, string][] = [["hung", "Hùng"], ["chien", "Chiến"], ["ngan", "Ngân (nữ tóc dài)"]];
-const mk = (w: string, x: boolean) => { const o = OUT[w]?.o ?? NGAN, h = OUT[w]?.h ?? 1.58, sd = OUT[w]?.seed ?? 9; return x ? new ActorX(o, h, sd, w) : new Actor(o, h, sd); };
-export const DangGrid: React.FC = () => {
+type Who = { k: string; o: Outfit; h: number; seed: number; ten: string };
+const NAMED: [string, Outfit, number, number, string][] = [["tan", DO, 1.7, 3, "Tân (DO)"], ["ngan", NGAN, 1.58, 9, "Ngân (NGAN)"], ["vest", VEST, 1.76, 5, "Vest"], ["clerk", CLERK, 1.55, 5, "Clerk"], ["me", ME2, 1.48, 5, "Mẹ (ME2)"],
+  ["gym", GYM, 1.82, 5, "Gym"], ["gym2", { ...GYM, jacket: "#f4f4f2", skin: "#d9a77e", hair: "#3a2a20" }, 1.82, 5, "Gym2"], ["boxer", BOXER, 1.55, 5, "Boxer"], ["xoi", XOI, 1.55, 5, "Xôi"]];
+export const ALL: Who[] = [...NAMED.map(([k, o, h, seed, ten]) => ({ k, o, h, seed, ten })), ...Object.entries(OUT).map(([k, v]) => ({ k, o: v.o, h: v.h, seed: v.seed, ten: k })),
+  ...Array.from({ length: 10 }, (_, i) => ({ k: "c" + i, o: crowd(i), h: 1.55 + (i % 5) * 0.05, seed: 5 + i * 3, ten: "quần chúng c" + i }))];
+export const PER = 8, PAGES = Math.ceil(ALL.length / PER);
+export const Luoi: React.FC<{ page: number }> = ({ page }) => {
   const cam = new THREE.PerspectiveCamera(); cam.position.set(0, 1, 3); const tint = new THREE.Color(1, 1, 1);
-  const rows = WHO.flatMap(([w, nm]) => [false, true].map((x) => ({ lab: `${nm} – ${x ? "MỚI" : "cũ"}`, imgs: DANG.map(([, p]) => { const a = mk(w, x); a.pose(p, cam, tint); return ((a as unknown as { c: HTMLCanvasElement }).c).toDataURL(); }) })));
-  return <AbsoluteFill style={{ background: "#e9dcb8", padding: 10, fontFamily: "DejaVu Sans, Arial" }}>
-    <div style={{ display: "flex", marginLeft: 150 }}>{DANG.map(([n]) => <div key={n} style={{ width: 210, textAlign: "center", fontSize: 20, fontWeight: 800 }}>{n}</div>)}</div>
-    {rows.map((r) => <div key={r.lab} style={{ display: "flex", alignItems: "center", background: r.lab.includes("MỚI") ? "rgba(255,255,255,.35)" : "transparent" }}>
-      <div style={{ width: 150, fontSize: 18, fontWeight: 800 }}>{r.lab}</div>{r.imgs.map((s, i) => <img key={i} src={s} style={{ width: 210, height: 350 }} />)}</div>)}
+  const rows = ALL.slice(page * PER, page * PER + PER).map((w) => ({ w, imgs: DANG.map(([, p]) => { const a = new ActorX(w.o, w.h, w.seed, w.k); a.pose(p, cam, tint); return ((a as unknown as { c: HTMLCanvasElement }).c).toDataURL(); }) }));
+  return <AbsoluteFill style={{ background: "#eeeae2", padding: "8px 10px", fontFamily: "DejaVu Sans, Arial" }}>
+    <div style={{ display: "flex" }}>{DANG.map(([n]) => <div key={n} style={{ width: 190, textAlign: "center", fontSize: 19, fontWeight: 800, color: "#333" }}>{n}</div>)}</div>
+    {rows.map(({ w, imgs }) => <div key={w.k} style={{ borderBottom: "2px solid #d6cfc2" }}><div style={{ display: "flex" }}>{imgs.map((s, i) => <img key={i} src={s} style={{ width: 190, height: 317 }} />)}</div>
+      <div style={{ fontSize: 19, fontWeight: 800, color: "#222", margin: "0 0 4px 8px" }}>{w.ten} <span style={{ fontWeight: 500, color: "#555" }}>– {FIT[w.k]?.vai ?? (w.o.anime ? "nhân vật anime (giữ nguyên đồng phục vẽ sẵn)" : w.o.long ? "mặc định: áo nữ cổ V" : "mặc định: sơ mi/polo/phông")}{w.o.anime ? " · anime" : ""}</span></div></div>)}
   </AbsoluteFill>;
 };
