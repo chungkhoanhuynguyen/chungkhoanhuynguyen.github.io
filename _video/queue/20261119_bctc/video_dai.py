@@ -152,9 +152,9 @@ S['BC1911VIC'] = [{'k': 'hook',
             ('Tỷ trọng và điểm sai', (34, 197, 94))]},
  {'k': 'end',
   'label': '',
-  'cap': ('QUÝ 3 LỖ', 'ANH CHỊ NGHĨ SAO?'),
+  'cap': ('VIC RẺ HAY ĐẮT?', 'BÌNH LUẬN 1 CON SỐ'),
   'cols': ((255, 255, 255), (255, 196, 0)),
-  'say': 'Đó là phần đọc báo cáo tài chính quý ba năm hai nghìn không trăm hai mươi sáu của VIC. Định giá trong video theo quan điểm đầu tư cá nhân của Chứng '
-         'Khoán Huy Nguyễn. Nếu anh chị không đồng tình, hãy bình luận cho em biết anh chị định giá VIC ở mức nào và vì sao. Em sẽ đọc hết và trả lời từng '
-         'bình luận.'}]
-
+  'say': 'Định giá trong video theo quan điểm đầu tư cá nhân của Chứng Khoán Huy Nguyễn, và em biết chắc sẽ có anh chị không đồng tình. Vậy em hỏi thẳng: với '
+         'giá khoảng hai trăm bốn mươi nghìn đồng hôm nay, anh chị thấy VIC đang rẻ hay đắt? Anh chị bình luận giúp em đúng một con số: mức giá anh chị sẵn '
+         'sàng mua VIC. Người định giá thấp nhất và cao nhất, em sẽ ghim lên đầu và phân tích lại ở video sau. Nếu anh chị đang cầm VIC, bình luận chữ cầm, '
+         'còn đang chờ mua thì bình luận chữ chờ, để em xem mọi người đang đứng ở phía nào.'}]
