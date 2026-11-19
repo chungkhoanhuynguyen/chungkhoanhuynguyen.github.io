@@ -32,7 +32,7 @@ export function poseOf(c: CastIn, i: number): Cast["pose"] {
 }
 export const Canh3D: React.FC<Canh3DProps> = (p) => {
   const cast: Cast[] = (p.cast ?? []).map((c, i) => ({ a: c.a, p: c.p, to: c.to, pose: poseOf(c, i), ride: c.ride, lean: c.lean }));
-  const runs: Run[] = [{ a: 0, b: p.frames, s: { set: p.set, light: p.light ?? "golden", from: p.cam.from, to: p.cam.to ?? p.cam.from, cast, ease: p.cam.ease ?? "sm" } }];
+  const runs: Run[] = [{ a: 0, b: p.frames, s: { set: p.set, light: p.light ?? "day", from: p.cam.from, to: p.cam.to ?? p.cam.from, cast, ease: p.cam.ease ?? "sm" } }];
   return <AbsoluteFill style={{ background: "#000" }}><Stage set={p.set} runs={runs} chiTiet fps={p.fps ?? 30} px={p.px} tat={p.tat} /></AbsoluteFill>;
 };
 export const CANH3D_MAU: Canh3DProps = { set: "sapvai", light: "golden", cam: { from: [[0.2, 1.55, 4.2], [0.2, 1.0, -1.0], 40], to: [[0.1, 1.45, 3.4], [0.2, 1.0, -1.0], 36] }, cast: [{ a: "thuyto", p: [0.9, 0, -0.4], act: "dienthoai", ngoi: true }], frames: 60, fps: 30 };

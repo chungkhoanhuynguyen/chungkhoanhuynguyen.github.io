@@ -15,6 +15,14 @@ const DIR = "chitiet/m";
 const put = (g: THREE.Group, name: string, x: number, y: number, z: number, ry = 0, o: PO = {}) => putModel(g, DIR, name, x, y, z, ry, o, blob);
 const F = "'Be Vietnam Pro', 'DejaVu Sans', Arial, sans-serif";
 const lamps = (L: [V3, V3, number][]) => { for (let i = 0; i < 5; i++) { const l = L[i]; if (l) { U.uLampP.value[i].set(...l[0]); U.uLampC.value[i].set(...l[1]); U.uLampR.value[i] = l[2]; } else { U.uLampP.value[i].set(0, -99, 0); U.uLampC.value[i].set(0, 0, 0); } } };
+/** PHONG CÁCH SÁNG (anh Huy 20/11): ban ngày trong nhà – nắng dịu + ambient cao, bóng nhạt, đèn trần trắng ấm */
+const sangLook = (k = 1, a = 1) => { setLook("day"); U.uSun.value.set(0.62 * k, 0.6 * k, 0.55 * k); U.uAmbHi.value.set(1.0 * a, 0.98 * a, 0.95 * a); U.uAmbLo.value.set(0.74 * a, 0.72 * a, 0.7 * a); U.uSat.value = 1.04; };
+/** vệt nắng qua cửa sổ trên sàn/tường (cộng sáng, không viền mực) */
+function nang(g: THREE.Group, x: number, y: number, z: number, w: number, d: number, rx = -Math.PI / 2, ry = 0, a = 0.32) {
+  const [c, cx] = cvs(256, 256); const gr = cx.createRadialGradient(128, 128, 20, 128, 128, 128); gr.addColorStop(0, "rgba(255,236,190,1)"); gr.addColorStop(1, "rgba(255,236,190,0)"); cx.fillStyle = gr; cx.fillRect(0, 0, 256, 256);
+  cx.globalCompositeOperation = "destination-out"; cx.fillStyle = "#000"; cx.fillRect(124, 0, 8, 256); cx.fillRect(0, 124, 256, 8);
+  const m = new THREE.Mesh(new THREE.PlaneGeometry(w, d), new THREE.MeshBasicMaterial({ map: ctex(c), transparent: true, opacity: a, blending: THREE.AdditiveBlending, depthWrite: false }));
+  m.rotation.set(rx, ry, 0, "YXZ"); m.position.set(x, y, z); m.layers.set(NOINK); m.renderOrder = 2; g.add(m); }
 const sh = (g: THREE.Group) => { g.traverse((o) => { const m = o as THREE.Mesh; if (m.isMesh && m.layers.mask !== 1 << NOINK) { m.receiveShadow = true; } }); return g; };
 
 /** tường sơn sạch (căn hộ/văn phòng): màu + loang nhẹ + len chân tường */
@@ -23,9 +31,9 @@ function cleanWall(wm: number, hm: number, base: string, skirt: string, seed: nu
   grime(x, W, H, r, 120, "rgba(255,255,255,A)", 30, 140, 0.06); grime(x, W, H, r, 80, "rgba(80,60,40,A)", 20, 100, 0.05);
   x.fillStyle = skirt; x.fillRect(0, H - 14, W, 14); x.fillStyle = "rgba(0,0,0,.25)"; x.fillRect(0, H - 15, W, 2); return ctex(c);
 }
-function woodFloor(wm: number, dm: number, seed: number, base = "#9a6a42") {
+function woodFloor(wm: number, dm: number, seed: number, base = "#9a6a42", light = false) {
   const PX = 110, W = Math.round(wm * PX), H = Math.round(dm * PX), r = rng(seed); const [c, x] = cvs(W, H); x.fillStyle = base; x.fillRect(0, 0, W, H);
-  for (let y = 0; y < H; y += 22) { let xx = -r() * 200; while (xx < W) { const len = 150 + r() * 160; const k = 0.82 + r() * 0.3; x.fillStyle = `rgba(${Math.round(150 * k)},${Math.round(100 * k)},${Math.round(60 * k)},.5)`; x.fillRect(xx, y, len, 21); x.fillStyle = "rgba(40,25,15,.5)"; x.fillRect(xx, y + 21, len, 1.5); x.fillRect(xx + len, y, 1.5, 22); xx += len; } }
+  for (let y = 0; y < H; y += 22) { let xx = -r() * 200; while (xx < W) { const len = 150 + r() * 160; const k = 0.82 + r() * 0.3; x.fillStyle = light ? `rgba(${Math.round(225 * k)},${Math.round(190 * k)},${Math.round(150 * k)},.45)` : `rgba(${Math.round(150 * k)},${Math.round(100 * k)},${Math.round(60 * k)},.5)`; x.fillRect(xx, y, len, 21); x.fillStyle = light ? "rgba(120,90,60,.35)" : "rgba(40,25,15,.5)"; x.fillRect(xx, y + 21, len, 1.5); x.fillRect(xx + len, y, 1.5, 22); xx += len; } }
   grime(x, W, H, r, 60, "rgba(255,230,190,A)", 30, 120, 0.08); return ctex(c);
 }
 function tiles(wm: number, dm: number, seed: number, a = "#d9d6cf", b = "#c9c5bc", cell = 60) {
@@ -66,12 +74,13 @@ function phone(g: THREE.Group, x: number, y: number, z: number) { const p = bx(0
 
 // ======================= SẠP VẢI CHỢ =======================
 export function buildSapVai() {
-  setLook("warm"); const g = new THREE.Group(), r = rng(51);
-  lamps([[[0, 3.2, 0.5], [0.9, 0.85, 0.6], 6.5], [[-3.6, 3.2, -0.5], [0.8, 0.75, 0.55], 5.5], [[3.6, 3.2, -0.5], [0.8, 0.75, 0.55], 5.5], [[0, 3.0, 3.5], [0.6, 0.55, 0.45], 6]]);
-  room(g, 12, 9, 4.2, wallTex(12, 4.2, 81, "#d9cfa8", 0.6), wallTex(9, 4.2, 82, "#d4c79c", 0.6), floorTex(12, 9, 83, [[6, 4, 0.6], [3, 6, 0.4]]), "#8a8f96");
+  sangLook(1.5, 1.25); const g = new THREE.Group(), r = rng(51);
+  lamps([[[0, 3.2, 0.5], [0.55, 0.52, 0.45], 6.5], [[-3.6, 3.2, -0.5], [0.45, 0.43, 0.38], 5.5], [[3.6, 3.2, -0.5], [0.45, 0.43, 0.38], 5.5], [[0, 3.0, 3.5], [0.4, 0.38, 0.34], 6]]);
+  room(g, 12, 9, 4.2, wallTex(12, 4.2, 81, "#f1e9cf", 0.25), wallTex(9, 4.2, 82, "#eee4c6", 0.25), floorTex(12, 9, 83, [[6, 4, 0.25], [3, 6, 0.2]]), "#c9ced4");
+  nang(g, 1.2, 0.012, 1.2, 4.5, 3.0); nang(g, -3.5, 0.012, 1.6, 3.5, 2.6, -Math.PI / 2, 0, 0.25);
   // mái tôn + kèo sắt
   for (let k = 0; k < 6; k++) g.add(bx(12, 0.1, 0.1, tm("#5a5c60"), 0, 4.05, -2.8 + k * 1.6));
-  const roof = corrugated(12, 9, tm("#7a8a96", metalTex(61, "#7a8a96", 0.5), { side: THREE.DoubleSide })); roof.position.set(0, 4.15, 1.5); roof.rotation.x = Math.PI / 2; g.add(roof);
+  const roof = corrugated(12, 9, tm("#b8c4cc", metalTex(61, "#b8c4cc", 0.3), { side: THREE.DoubleSide })); roof.position.set(0, 4.15, 1.5); roof.rotation.x = Math.PI / 2; g.add(roof);
   // vải: cây vải cuộn (trụ có hoa văn) + xấp vải gấp (hộp sọc) + vải treo
   const PC = new Map<string, THREE.Texture>();
   const pat = (seed0: number, base: string) => { const seed = seed0 % 5, kk = base + seed; if (PC.has(kk)) return PC.get(kk)!; const [c, x] = cvs(128, 128), rr = rng(seed + 1); x.fillStyle = base; x.fillRect(0, 0, 128, 128); const k = Math.floor(rr() * 4);
@@ -105,14 +114,15 @@ export function buildSapVai() {
 
 // ======================= PHÒNG KHÁCH CĂN HỘ (tối) =======================
 export function buildPhongKhach(night = true) {
-  setLook("warm"); U.uSun.value.set(0.25, 0.22, 0.2); U.uAmbHi.value.set(0.42, 0.38, 0.36); U.uAmbLo.value.set(0.24, 0.2, 0.2);
-  lamps([[[1.8, 2.4, -1.6], [1.3, 1.0, 0.65], 4.5], [[0, 2.9, 0.4], [0.75, 0.68, 0.55], 6.5], [[-3.2, 1.3, -1.2], [0.25, 0.4, 0.9], 3.0]]);
+  sangLook(0.7, 0.78); night = false;
+  lamps([[[1.8, 2.4, -1.6], [0.5, 0.45, 0.35], 4.5], [[0, 2.9, 0.4], [0.5, 0.48, 0.42], 6.5], [[-2.2, 1.6, -2.4], [0.55, 0.52, 0.45], 4.0]]);
   const g = new THREE.Group();
-  room(g, 10, 8, 3.0, cleanWall(10, 3.0, "#e9dcc4", "#8a6a48", 3), cleanWall(8, 3.0, "#e4d6bc", "#8a6a48", 4), woodFloor(10, 8, 5));
+  room(g, 10, 8, 3.0, cleanWall(10, 3.0, "#f7f0e2", "#c9a882", 3), cleanWall(8, 3.0, "#e4efe6", "#c9a882", 4), woodFloor(10, 8, 5, "#d8b98f", true), "#fbf8f2");
+  nang(g, -1.4, 0.012, -1.2, 3.4, 2.4); nang(g, -2.2, 1.0, -2.96, 3.6, 1.6, 0, 0, 0.12);
   // cửa sổ lớn nhìn thành phố đêm + rèm
   const win = cityWin(3.2, 1.6, night, 9); win.position.set(-2.2, 1.65, -2.98); g.add(win);
   for (const x of [-2.2 - 1.62, -2.2 + 1.62]) g.add(bx(0.06, 1.7, 0.06, tm("#f4f4f2"), x, 1.65, -2.95)); g.add(bx(3.3, 0.06, 0.06, tm("#f4f4f2"), -2.2, 2.5, -2.95)); g.add(bx(3.3, 0.06, 0.06, tm("#f4f4f2"), -2.2, 0.8, -2.95));
-  for (const x of [-4.1, -0.3]) { const cur = mesh(new THREE.BoxGeometry(0.5, 2.5, 0.08), tm("#8a3a2e"), x, 1.6, -2.9); g.add(cur); for (let k = 0; k < 4; k++) g.add(bx(0.02, 2.5, 0.1, tm("#6a2a22"), x - 0.18 + k * 0.12, 1.6, -2.88)); }
+  for (const x of [-4.1, -0.3]) { const cur = mesh(new THREE.BoxGeometry(0.5, 2.5, 0.08), tm("#efe2c2"), x, 1.6, -2.9); g.add(cur); for (let k = 0; k < 4; k++) g.add(bx(0.02, 2.5, 0.1, tm("#dccba4"), x - 0.18 + k * 0.12, 1.6, -2.88)); }
   // sofa + gối + bàn trà + thảm
   put(g, "sofa_03", 1.0, 0, -2.25, 0, { h: 0.9 }); put(g, "throw_pillows_01", 0.3, 0.45, -2.25, 0, { h: 0.4, blob: 0 });
   { const [c, x] = cvs(512, 320); x.fillStyle = "#7a2e24"; x.fillRect(0, 0, 512, 320); x.strokeStyle = "#e8c36a"; x.lineWidth = 10; x.strokeRect(20, 20, 472, 280); x.strokeStyle = "#f4f1e6"; x.lineWidth = 4; x.strokeRect(40, 40, 432, 240);
@@ -133,10 +143,11 @@ export function buildPhongKhach(night = true) {
 
 // ======================= PHÒNG GIAO DỊCH / VĂN PHÒNG QUỸ (bảng điện lớn) =======================
 export function buildVanPhong() {
-  setLook("warm"); U.uSun.value.set(0.6, 0.58, 0.55); U.uAmbHi.value.set(0.66, 0.66, 0.7); U.uAmbLo.value.set(0.3, 0.3, 0.32);
-  lamps([[[0, 1.8, -2.4], [0.5, 0.3, 0.3], 4.5], [[-2.5, 3.1, 0], [0.5, 0.52, 0.55], 6], [[2.5, 3.1, 0], [0.5, 0.52, 0.55], 6]]);
+  sangLook();
+  lamps([[[0, 1.8, -2.2], [0.3, 0.22, 0.2], 4.0], [[-2.5, 3.1, 0], [0.42, 0.42, 0.4], 6], [[2.5, 3.1, 0], [0.42, 0.42, 0.4], 6], [[4.8, 1.8, 0.6], [0.45, 0.42, 0.36], 5]]);
   const g = new THREE.Group();
-  room(g, 11, 8, 3.3, cleanWall(11, 3.3, "#d9dde3", "#3a3f4a", 21), cleanWall(8, 3.3, "#d2d7de", "#3a3f4a", 22), tiles(11, 8, 23, "#7d828c", "#747983", 70), "#eef0f3");
+  room(g, 11, 8, 3.3, cleanWall(11, 3.3, "#f4f1ea", "#9aa6b4", 21), cleanWall(8, 3.3, "#e3edf5", "#9aa6b4", 22), tiles(11, 8, 23, "#e8e6e1", "#dcdad4", 70), "#fbfbf9");
+  nang(g, 3.6, 0.012, 0.6, 3.0, 3.4, -Math.PI / 2, 0, 0.28);
   // bảng điện lớn tường sau + chữ phòng giao dịch
   g.add(bx(6.4, 2.1, 0.12, tm("#111317"), 0, 1.75, -2.95)); const bd = gl(bangDien(1280, 420, 7, "do"), 6.2, 1.95, 1.25); bd.position.set(0, 1.75, -2.88); g.add(bd);
   g.add(plane(3.2, 0.4, signTex("PHÒNG GIAO DỊCH", "Quỹ đầu tư · Tầng 12", 3.2, 0.4, "#13204a", "#f2d36b", 4), 0, 3.0, -2.9));
@@ -156,13 +167,13 @@ export function buildVanPhong() {
 
 // ======================= QUẦY NGÂN HÀNG =======================
 export function buildNganHang() {
-  setLook("warm"); U.uSun.value.set(0.7, 0.68, 0.62); U.uAmbHi.value.set(0.7, 0.7, 0.72); U.uAmbLo.value.set(0.34, 0.33, 0.33);
-  lamps([[[0, 3.0, -1.4], [0.6, 0.6, 0.55], 6], [[-3, 3.0, 1], [0.5, 0.5, 0.48], 6], [[3, 3.0, 1], [0.5, 0.5, 0.48], 6]]);
+  sangLook(0.55, 0.66);
+  lamps([[[0, 3.0, -1.4], [0.42, 0.42, 0.38], 6], [[-3, 3.0, 1], [0.36, 0.36, 0.34], 6], [[3, 3.0, 1], [0.36, 0.36, 0.34], 6]]);
   const g = new THREE.Group();
   room(g, 11, 8, 3.4, cleanWall(11, 3.4, "#e9e4d8", "#1f3d6a", 61), cleanWall(8, 3.4, "#e2ddd0", "#1f3d6a", 62), tiles(11, 8, 63, "#e9e6df", "#d6d2c8", 80), "#f4f2ee");
   g.add(plane(4.0, 0.55, signTex("NGÂN HÀNG PHỐ", "Giao dịch · Tiết kiệm · Cho vay", 4.0, 0.55, "#1f3d6a", "#f2d36b", 7), 0, 2.9, -2.95));
   // quầy dài + kính ngăn + số quầy + máy đếm tiền
-  g.add(bx(7.6, 1.05, 0.7, tm("#ffffff", woodTex(64, "#6b4a32")), 0, 0.52, -1.6)); g.add(bx(7.7, 0.05, 0.8, tm("#e8e4dc"), 0, 1.07, -1.6));
+  g.add(bx(7.6, 1.05, 0.7, tm("#ffffff", woodTex(64, "#b88a5e")), 0, 0.52, -1.6)); g.add(bx(7.7, 0.05, 0.8, tm("#e8e4dc"), 0, 1.07, -1.6));
   const glass = new THREE.MeshPhysicalMaterial({ color: "#cfe3ea", transparent: true, opacity: 0.25, roughness: 0.05 });
   for (let k = 0; k < 4; k++) { const x = -2.85 + k * 1.9; const pnl = new THREE.Mesh(new THREE.PlaneGeometry(1.7, 0.75), glass); pnl.position.set(x, 1.48, -1.3); pnl.layers.set(NOINK); g.add(pnl);
     g.add(bx(0.04, 0.8, 0.04, tm("#9aa3ad"), x - 0.86, 1.48, -1.3)); g.add(plane(0.36, 0.28, paperTex([["QUẦY", "#ffffff", 50], [String(k + 1), "#f2d36b", 150]], 0.36, 0.28, "#1f3d6a"), x, 2.05, -1.32));
@@ -178,7 +189,7 @@ export function buildNganHang() {
 }
 
 // ======================= CÀ PHÊ VỈA HÈ (phố ban ngày) =======================
-export const CAFE_X = -20;
+export const CAFE_X = -26.5;   // giữa 2 cây vỉa hè (x≈-31 và x≈-21), xa quán đông khách có sẵn của phố để không có thân cây che bàn
 export function buildCafeVH() {
   setLook("day"); const st = buildStreet(false); const g = new THREE.Group(); g.add(st.g); const r = rng(91);
   const X = CAFE_X, Z = 5.2, Y = 0.15;

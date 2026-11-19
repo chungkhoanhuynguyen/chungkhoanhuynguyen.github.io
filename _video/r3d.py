@@ -4,7 +4,7 @@
 # frame(sc, t): khung 1920x1080 của cảnh tại thời điểm t + thẻ nhãn/số liệu góc trên trái (cap, label).
 # Cảnh 3D: {'k': '3d', 'set': 'sapvai'|'phongkhach'|'vanphong'|'nganhang'|'cafevh'|'suaxe2'|'showroom2'|'phoxe2',
 #           'cam': [[x,y,z],[nhìn x,y,z],fov] hoặc {'from': [...], 'to': [...]}, 'cast': [{'a': khoá nhân vật, 'p': [x,y,z], 'act': ..., 'side': ±1, 'ngoi': True, 'to': [...]}],
-#           'light': 'golden'|'day'|'room'|..., 'cap': (...), 'label': ..., 'say': ...}
+#           'light': 'day' (mặc định, sáng)|'golden'|'room'|..., 'cap': (...), 'label': ..., 'say': ...}
 import os, json, hashlib, subprocess, math
 from PIL import Image, ImageDraw
 HERE = os.path.dirname(os.path.abspath(__file__)); A3 = os.path.join(HERE, "anim3d")
@@ -28,7 +28,7 @@ def _src_hash():
 def _props(sc, n3):
     cam = sc.get("cam") or [[0, 1.5, 4.2], [0, 1.0, -1.0], 40]
     if isinstance(cam, list): cam = {"from": cam}
-    return {"set": sc.get("set", "sapvai"), "light": sc.get("light", "golden"), "cam": cam, "cast": sc.get("cast", []), "frames": int(n3), "fps": FPS3, "px": PX, "tat": TAT}
+    return {"set": sc.get("set", "sapvai"), "light": sc.get("light", "day"), "cam": cam, "cast": sc.get("cast", []), "frames": int(n3), "fps": FPS3, "px": PX, "tat": TAT}
 def prep(sc, n, FPS, key="", i=0):
     n3 = max(2, int(math.ceil(n * FPS3 / FPS)) + 1); pr = _props(sc, n3)
     hk = hashlib.sha1((json.dumps(pr, sort_keys=True, ensure_ascii=False) + _src_hash() + "s%.2f" % SCALE).encode()).hexdigest()[:20]
