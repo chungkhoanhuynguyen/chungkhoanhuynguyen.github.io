@@ -25,8 +25,8 @@ CW = os.environ.get('CW', '/tmp/cw')
 LO = CW + '/_video/queue/20261120_0200'
 KEY = 'CH2911SR'; CC = (WHITE, GOLD); CR = (WHITE, RED)
 R_, V_, X_, G_ = (239, 68, 68), (255, 196, 0), (56, 189, 248), (34, 197, 94)
-SR = 'ov:Durian fruit||Durian fruit'
-TR = 'ov:Durian tree||Durian fruit'
+SR = 'File:Durian_fruit_singapore.jpg'   # V2: 'ov:Durian fruit' rơi vào ảnh kẹo có nhãn hiệu + ảnh người lạ ở Mandalay
+TR = 'File:Durian_fruit_opened_PJ_DSC_0802.jpg'
 CT = 'ov:Container ship||Container ship'
 TP = 'ov:Ho Chi Minh City skyline night||Ho Chi Minh City skyline night'
 TI = 'ov:Black pepper plant||Black pepper'
@@ -44,7 +44,7 @@ S = [
  dict(k='bignum', anh=SR, cap=('96% SẦU RIÊNG', 'BÁN CHO MỘT KHÁCH HÀNG'), cols=CC, value=96, fmt='{:,.0f}', unit='%', top='TỶ TRỌNG TRUNG QUỐC TRONG XUẤT KHẨU SẦU RIÊNG, 9 THÁNG 2026',
       sub='gần 3,3 tỷ trên 3,45 tỷ USD, cùng kỳ năm ngoái 93,6% – Cục Hải quan, Vietnambiz 5/11', col=GOLD,
       say=("Câu trả lời bắt đầu từ con số này. Trong mỗi trăm đồng tiền sầu riêng bán ra nước ngoài, gần chín mươi sáu đồng đến từ một khách hàng: Trung Quốc. "
-           "Năm ngoái tỷ lệ đó là chín mươi ba phẩy sáu phần trăm. Kỷ lục đi kèm một tỷ trọng còn cao hơn.")),
+           "Năm ngoái tỷ lệ đó là chín mươi ba phẩy sáu phần trăm. Kỷ lục đi kèm với tỷ trọng còn cao hơn.")),
  dict(k='checklist', anh=TR, cap=('3 CHI TIẾT', 'TRẢ LỜI CUỐI PHIM'), cols=CC,
       items=[('1. Cùng một cây: 54 nghìn và 25 nghìn', V_), ('2. Gốc tiêu khô của ông nội', R_), ('3. Thùng hàng ghi Hàn Quốc', X_)],
       say=("Ba chi tiết nhỏ trong vườn nhà anh Phong sẽ trả lời câu hỏi của Linh ở cuối phim, anh chị nhớ giúp em. "
@@ -109,7 +109,7 @@ S = [
         ('Giá xuất khẩu bình quân 4/2020', '2,01 USD/KG'),
         ('So với 12/2016, em tự tính', 'MẤT 73,6%'),
         ('Giá tháng 10/2026', '6,58 USD/KG')]),
-      say=("Số hải quan cho thấy rõ. Tháng mười hai năm hai nghìn mười sáu, giá xuất khẩu bình quân hạt tiêu khoảng hơn bảy phẩy sáu đô la một ký. "
+      say=("Số hải quan cho thấy rõ. Tháng mười hai năm hai nghìn mười sáu, giá xuất khẩu bình quân hạt tiêu hơn bảy phẩy sáu đô la một ký. "
            "Đến tháng tư năm hai nghìn hai mươi, chỉ còn khoảng hai đô la. Em tự tính: mất bảy mươi ba phẩy sáu phần trăm. "
            "Phải đến năm hai nghìn hai mươi tư giá mới hồi lại, giờ quanh sáu phẩy sáu đô la. Mất hơn bốn năm mới hồi được phần lớn.")),
  dict(k='checklist', anh=TR, cap=('TIÊU NGÀY ẤY, SẦU RIÊNG NAY', 'GIỐNG 2, KHÁC 2'), cols=CC, moc=True,
@@ -132,7 +132,7 @@ S = [
            "Anh gửi thử ba tấn hàng xô vào kho cấp đông. Không ai biết chắc giá sầu riêng năm sau, nên hai vợ chồng chọn bớt rủi ro trước khi nghĩ đến lời thêm.")),
  # ---------------- CHƯƠNG 5 ----------------
  dict(k='checklist', ch='Chương 5 – Huy Nguyễn ghép ba chi tiết', anh=SR, cap=('3 CHI TIẾT ĐẦU PHIM', 'GHÉP LẠI THÀNH LỜI GIẢI'), cols=CC, moc=True,
-      items=[('1. 54 và 25 nghìn: chuẩn quyết định giá', V_), ('2. Gốc tiêu khô: giá rơi lúc đang nợ', R_), ('3. Thùng Hàn Quốc: một cửa ra nhỏ', X_)],
+      items=[('1. 54 và 25 nghìn: chuẩn quyết định giá', V_), ('2. Gốc tiêu: giá rơi lúc đang nợ', R_), ('3. Thùng Hàn Quốc: một cửa ra nhỏ', X_)],
       say=("Giờ quay lại ba chi tiết đầu phim. Chi tiết thứ nhất, cùng một cây mà năm mươi tư nghìn và hai mươi lăm nghìn. Khi người mua có nhiều lựa chọn, thứ quyết định giá là trái có đạt chuẩn hay không, không phải là kỷ lục xuất khẩu. "
            "Chi tiết thứ hai, mấy gốc tiêu khô. Giá tiêu từng mất gần ba phần tư. Đêm đó ông nội còn kể thêm một điều: những nhà mất hẳn vườn thường là nhà đang gánh nợ. Giá thì nhà vườn không quyết được, còn nợ thì quyết được.")),
  dict(k='checklist', anh=CT, cap=('LỜI GIẢI CHO CÂU HỎI CỦA LINH', 'KỶ LỤC MÀ VẪN LO'), cols=CC, moc=True,
