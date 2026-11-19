@@ -10,7 +10,7 @@ import { staticFile, delayRender, continueRender } from "remotion";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { rng } from "../pho/paint";
 import { tm, U, glow } from "./toonmat";
-import { buildCast3 } from "./cast3";
+import { buildCast2X } from "./cast2x";
 import { NOINK } from "../pho/ink";
 
 const F = "'Be Vietnam Pro', 'DejaVu Sans', Arial, sans-serif";
@@ -344,6 +344,6 @@ export function buildSuaXe2() {
   const lamps: [V3, V3, number][] = [[[3.3, 2.5, -0.6], [1.3, 0.95, 0.6], 4.2], [[-2.6, 3.8, 0.6], [0.55, 0.6, 0.55], 6.5], [[0.2, 3.8, 0.2], [0.55, 0.6, 0.55], 6.5], [[-1.2, 2.94, 1.6], [0.9, 0.62, 0.3], 3.2], [[-5.0, 0.9, -0.6], [0.9, 0.08, 0.05], 1.3]];
   lamps.forEach(([p, c, rr], i) => { U.uLampP.value[i].set(-p[0], p[1], -p[2]); U.uLampC.value[i].set(...c); U.uLampR.value[i] = rr; });
   g.traverse((o) => { const k = o as THREE.Mesh; if (k.isMesh && k.userData.nc) k.castShadow = false; });
-  buildCast3(g); // nhân vật 3D toon (chỉ dựng khi CAST3.shots có nội dung)
+  buildCast2X(g); // nhân vật thẻ 2D cast2 bản nâng trang phục (chỉ dựng khi CAST2X.shots có nội dung)
   g.rotation.y = Math.PI; return { g };
 }

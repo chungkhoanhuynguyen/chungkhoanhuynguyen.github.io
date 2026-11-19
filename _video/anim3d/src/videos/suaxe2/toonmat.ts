@@ -1,4 +1,4 @@
-// Vật liệu toon riêng của bối cảnh suaxe2 + bộ nhân vật cast3: 2 tông nắng (bóng đổ thật) + ambient bán cầu ấm + tối đa 5 đèn ấm mềm.
+// Vật liệu toon riêng của bối cảnh suaxe2 : 2 tông nắng (bóng đổ thật) + ambient bán cầu ấm + tối đa 5 đèn ấm mềm.
 import * as THREE from "three";
 import { LFB } from "../pho/shade";
 // ---------------- vật liệu toon riêng của set (2 tông nắng + ánh đèn ấm mềm + ambient bán cầu) ----------------
