@@ -68,6 +68,11 @@ jobs:
           export HN_PX="_video/queue/$B/px_tuan.json"
           timeout 900 python _video/tu_cat_short.py _video/out "$K" "$B" || true
           timeout 600 python _video/bia_ab.py "$B" "$K" || true
+      - name: Nghe lai giong bang whisper (QC bat buoc, NV1 20/11)
+        continue-on-error: true
+        run: |
+          pip install -q faster-whisper || true
+          timeout 1500 python _video/tool/wsp_qc.py _video/out "${{ matrix.key }}" || true
       - uses: actions/upload-artifact@v4
         with:
           name: out-${{ matrix.key }}

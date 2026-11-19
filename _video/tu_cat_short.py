@@ -20,6 +20,7 @@ def chon(canh, tong):
     for i, c in enumerate(canh):
         if i == 0 or c["k"] in ("end", "hook") or c["a"] < 35 or c["a"] > tong - 50: continue
         d = DIEM.get(c["k"], 1) + (1 if c.get("ch") else 0) + (1 if any(ch.isdigit() for ch in " ".join(c["cap"])) else 0)
+        if c.get("short"): d += 5   # NV1 20/11: kịch bản đánh dấu short=True cho cảnh có số tiền mất/được (PPC: hook Short phải có số tiền)
         cand.append((d, c["a"], c))
     cand.sort(key=lambda x: (-x[0], x[1]))
     for d, a, c in cand:

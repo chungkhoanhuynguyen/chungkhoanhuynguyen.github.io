@@ -70,7 +70,7 @@ S = [
       say=("Các bậc ở giữa cũng rộng ra. Phần thu nhập tính thuế từ mười đến ba mươi triệu chịu mười phần trăm. "
            "Từ ba mươi đến sáu mươi triệu chịu hai mươi phần trăm. Mức cao nhất ba mươi lăm phần trăm nay chỉ áp cho phần trên một trăm triệu, thay vì trên tám mươi triệu như trước. "
            "Ai đang nộp thuế từ tiền lương cũng được giảm, nhưng rất khác nhau.")),
- dict(k='giay', cap=('THU NHẬP 27 TRIỆU, 1 CON', 'THUẾ 990 NGHÌN CÒN 265'), cols=CC, moc=True, giay=dict(tieu_de='PHIẾU LƯƠNG CỦA ANH MINH', so='Em giả định, em tự tính', dau='TỰ TÍNH', dieu=[
+ dict(k='giay', short=True, cap=('THU NHẬP 27 TRIỆU, 1 CON', 'THUẾ 990 NGHÌN CÒN 265'), cols=CC, moc=True, giay=dict(tieu_de='PHIẾU LƯƠNG CỦA ANH MINH', so='Em giả định, em tự tính', dau='TỰ TÍNH', dieu=[
         ('Thu nhập sau bảo hiểm', '27 TRIỆU'),
         ('Thuế mỗi tháng, năm ngoái', '990.000Đ'),
         ('Thuế mỗi tháng, năm nay', '265.000Đ'),
@@ -118,12 +118,12 @@ S = [
       say=("Giờ đến tờ giấy cũ trên tủ lạnh. Lần nâng giảm trừ trước là tháng bảy năm hai nghìn hai mươi, từ chín lên mười một triệu đồng. "
            "Sau đó, con số mười một triệu đứng yên đến hết năm hai nghìn hai mươi lăm. "
            "Theo luật lúc đó, mức giảm trừ chỉ được xem lại khi giá cả tăng trên hai mươi phần trăm so với lần điều chỉnh trước. "
-           "Trong khi đó, thu nhập bình quân của người lao động đi từ năm triệu tám trăm nghìn lên tám triệu ba trăm sáu mươi nghìn đồng.")),
+           "Trong khi đó, thu nhập bình quân của người lao động đi từ chưa tới sáu triệu lên hơn tám triệu ba trăm nghìn đồng.")),
  dict(k='bars', anh=HN, cap=('5 NĂM GIẢM TRỪ ĐỨNG YÊN', 'THU NHẬP TĂNG 44,4%'), cols=CC, moc=True, top='TỪ 2020 ĐẾN 2025 TĂNG BAO NHIÊU (%, EM TỰ TÍNH)',
       bars=[('Mức giảm trừ', 0, R_, '0'), ('Giá cả', 16.2, V_, '16,2'), ('Thu nhập bình quân', 44.4, G_, '44,4')],
       say=("Em tự tính từ số Cục Thống kê. Trong giai đoạn đó, mức giảm trừ tăng không phần trăm. "
-           "Giá cả cộng dồn tăng khoảng mười sáu phần trăm, chưa chạm ngưỡng hai mươi. "
-           "Còn thu nhập bình quân tăng bốn mươi bốn phẩy bốn phần trăm. "
+           "Giá cả cộng dồn tăng khoảng mười sáu phần trăm, chưa chạm ngưỡng hai mươi phần trăm. "
+           "Còn thu nhập bình quân tăng khoảng bốn mươi bốn phần trăm. "
            "Nghĩa là nhiều người lên lương từng bước rơi vào diện nộp thuế, hoặc nộp ở bậc cao hơn. "
            "Và mức mới mười lăm phẩy năm triệu vẫn chưa đuổi kịp mức tăng thu nhập của chính giai đoạn ấy.")),
  dict(k='checklist', anh=HA, cap=('2020 VÀ HÔM NAY', 'GIỐNG 2, KHÁC 2'), cols=CC, moc=True,
@@ -136,7 +136,7 @@ S = [
       cards=[('725.000đ', 'Để chung tài khoản lương', 'Dễ tan vào chi tiêu'), ('8,7 triệu', 'Để riêng cả năm', 'Thêm vào quỹ dự phòng'), ('Trả nợ', 'Trả bớt khoản vay lãi cao', 'Đỡ tiền lãi mỗi tháng')],
       say=("Hai vợ chồng anh Minh tính xem bảy trăm hai mươi lăm nghìn mỗi tháng nên đi đâu. "
            "Cách thứ nhất: để nguyên trong tài khoản lương, khoản này dễ tan vào tiền chợ. "
-           "Cách thứ hai: chuyển riêng ngay ngày nhận lương, cả năm được khoảng tám triệu bảy, thêm vào quỹ dự phòng. "
+           "Cách thứ hai: chuyển riêng ngay ngày nhận lương, cả năm được khoảng tám triệu bảy trăm nghìn đồng, thêm vào quỹ dự phòng. "
            "Cách thứ ba: trả bớt một khoản vay lãi cao, nếu nhà đang có.")),
  dict(k='chat', cap=('"TIỀN ĐỠ THUẾ', 'CHUYỂN RIÊNG NGAY NGÀY LƯƠNG"'), cols=CC, moc=True, chat=dict(ten='Hằng', tv='Đang hoạt động', gio='21:45', mau=G_, msgs=[
         ('Hằng', 'Phần thuế giảm của anh để riêng sang tài khoản khác nhé'),
@@ -155,7 +155,7 @@ S = [
       say=("Chi tiết thứ ba, câu hỏi của mẹ. Lương hưu của bà không chịu thuế thu nhập. Người đi làm có thu nhập dưới mười một triệu vốn đã không nộp. Thu nhập bình quân cả nước, chín triệu một trăm tám mươi nghìn, cũng nằm dưới mức đó. Với họ, lần giảm thuế này không đổi gì.")),
  dict(k='checklist', anh=HN, cap=('AI ĐƯỢC NHIỀU NHẤT?', '3 ĐÁP ÁN'), cols=CC, moc=True,
       items=[('Theo tiền: thu nhập cao được nhiều nhất', V_), ('Theo phần trăm: thu nhập vừa được nhiều', X_), ('Dưới 11 triệu: không đổi gì', R_)],
-      say=("Ghép ba chi tiết lại, câu hỏi ai được nhiều nhất có ba đáp án. Tính theo số tiền, người thu nhập cao được nhiều nhất. Tính theo phần trăm, người thu nhập vừa được nhiều. Người dưới mười một triệu không được gì. Và với ai đang được, phần đó sẽ mỏng dần.")),
+      say=("Ghép ba chi tiết lại, câu hỏi ai được nhiều nhất có ba đáp án. Tính theo số tiền, người thu nhập cao được nhiều nhất. Tính theo phần trăm, người thu nhập vừa được nhiều. Người dưới mười một triệu thì chẳng được gì. Và với ai đang được, phần đó sẽ mỏng dần.")),
  dict(k='checklist', anh=TP, cap=('PHÉP THỬ CỦA ANH CHỊ', 'TỰ TÍNH LẠI TIỀN THUẾ'), cols=CC, moc=True,
       items=[('Thu nhập sau bảo hiểm, trừ 15,5 triệu', X_), ('Trừ tiếp 6,2 triệu mỗi người phụ thuộc', X_), ('Còn dương thì so với phiếu lương', G_)],
       say=("Phép thử cho anh chị tối nay: lấy thu nhập sau bảo hiểm mỗi tháng, trừ mười lăm phẩy năm triệu cho bản thân, trừ tiếp sáu phẩy hai triệu cho mỗi người phụ thuộc. "
