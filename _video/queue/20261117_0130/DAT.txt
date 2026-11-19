@@ -1,1 +1,2 @@
 CH2311DN | 1:9 2:9 3:9 4:9 5:9 6:9 7:9 8:9 9:9 10:9 | đã soát V1 V2 V3 V4 (V2: QC báo nhầm 'tháng 16.500' – sửa gốc render.py, 'một phần'→'có nguyên nhân từ', câu cụt, cap 'những năm qua'; V3: '109,8%' whisper nghe ra '119,8%' → đọc 'gần 110%, hơn gấp đôi' (thẻ giữ 109,8%); V4: cap Short S2 khớp lời) | kênh chính 23/11/2026 12:00 · 7:06 · -15,0 LUFS · Release video-20261117_0130 (bản V4) · 48% cảnh điện thoại/giấy
+ÂM 20/11 (NV1, am11.yml -c:v copy, ebur128): CH2311DN + R1 + S1–S3 -10,8 LUFS – Release đã thay file (trước -15). NV3 tải bản Release để đăng FB.

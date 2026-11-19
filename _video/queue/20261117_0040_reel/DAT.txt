@@ -1,2 +1,3 @@
 RV1711VANG | 1:9 2:9 3:9 4:9 5:9 6:9 7:9 8:9 9:9 10:9 | đã soát V1 V2 (V2: engine the_so cột giữ số lẻ 134,5/191,3/121,1/137,5) | reel 72s · -15,1 LUFS · Release reel-20261117_0040_reel · cặp CH2211VANG
 RV1711DN | 1:9 2:9 3:9 4:9 5:9 6:9 7:9 8:9 9:9 10:9 | đã soát V1 V2 (V2: 2 câu cụt QC) | reel 72s · -15,6 LUFS · Release reel-20261117_0040_reel · cặp CH2311DN
+ÂM 20/11 (NV1, am11.yml -c:v copy, ebur128): RV1711DN -10,8 · RV1711VANG -10,7 LUFS – Release đã thay file (trước -15). NV3 tải bản Release để đăng FB.
