@@ -53,7 +53,12 @@ def ngat(src, a, dmax=58.0, dmin=30.0):
             # NV1 19/11: mốc .srt có thể lệch giọng thật ~1–1,5s (CH2511MY_S2 lọt "Và Việt Nam..." ở cuối) -> chốt vào khoảng lặng thật gần nhất trước mốc
             try:
                 st = _khoang_lang(src, a + e - 3.2, 3.4)
-                if st: e2 = e - 3.2 + st[-1] + 0.12; print("chot khoang lang:", round(e, 2), "->", round(e2, 2), flush=True); return max(dmin, e2)
+                if st:
+                    e2 = e - 3.2 + st[-1] + 0.12; print("chot khoang lang:", round(e, 2), "->", round(e2, 2), flush=True)
+                    # NV1 20/11: lùi > 1,2s nghĩa là khoảng lặng nằm GIỮA câu (CH2911SR_S1 mất "ghi nơi đến là Hàn Quốc") -> lấy câu trước đó
+                    if e - e2 > 1.2 and e - 1.0 > dmin + 2:
+                        print("lui qua xa, lay cau truoc", flush=True); return ngat(src, a, e - 1.0, dmin)
+                    return max(dmin, e2)
             except Exception as ex: print("lang bo qua:", ex, flush=True)
             return e
     except Exception as ex: print("srt bo qua:", ex, flush=True)

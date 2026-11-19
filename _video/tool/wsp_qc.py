@@ -7,7 +7,7 @@ import os, re, sys, subprocess
 import numpy as np
 
 def so(t):
-    t = t.replace('\u00a0', ' ')
+    t = t.replace('\u00a0', ' ').replace('trệu', 'triệu')
     out = set()
     # quy về đơn vị: "18 triệu 850 nghìn" = 18.850.000; "990 nghìn" = 990.000; "6 triệu" = 6.000.000 (whisper hay viết 990.000, srt viết 990 nghìn)
     for m in re.finditer(r'(\d+(?:,\d+)?)\s*(tỷ|triệu|nghìn)(?:\s+(\d+)\s*(nghìn|triệu))?', t):
