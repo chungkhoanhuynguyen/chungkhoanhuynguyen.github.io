@@ -19,6 +19,12 @@ def _num(ws):
     return tot + grp + cur if seen else None
 def _fmt(n): return "{:,}".format(n).replace(",", ".")
 def doi(s):
+    return _ma_xang(_doi0(s))
+# NV1B 19/11: tên loại xăng đọc 'E năm', 'E mười', 'RON chín mươi lăm' → phụ đề E5, E10, RON95 (V1 NONG1911A ra 'Enăm', 'RONchín 15')
+def _ma_xang(s):
+    s = re.sub(r'\bE năm\b', 'E5', s); s = re.sub(r'\bE 10\b', 'E10', s); s = re.sub(r'\bE mười\b', 'E10', s)
+    s = re.sub(r'\bRON 9([25])\b', r'RON9\1', s); return s
+def _doi0(s):
     toks = s.split(" "); out = []; i = 0
     while i < len(toks):
         j = i

@@ -38,11 +38,11 @@ S = [
  dict(k='noti', ch='Mở đầu', cap=('XĂNG E5 TỪ 30.114 ĐỒNG', 'CÒN 19.399 ĐỒNG'), cols=CC, noti=dict(gio='07:30', ngay='Thứ Năm', items=[
         ('Tin tức', 'Giá xăng', 'Chiều nay giá xăng điều chỉnh kỳ mới', V_),
         ('Vợ', 'Tin nhắn', 'Xăng rẻ vậy sao đi chợ vẫn đắt anh?', X_)]),
-      say=("Bảy giờ rưỡi sáng nay, anh Thắng, người chạy giao hàng ở Thành phố Hồ Chí Minh, đổ đầy bình xăng. Một lít xăng E5 giờ chỉ còn hơn mười chín nghìn ba trăm đồng. "
+      say=("Bảy giờ rưỡi sáng nay, anh Thắng, người chạy giao hàng ở Thành phố Hồ Chí Minh, đổ đầy bình xăng. Một lít xăng E năm giờ chỉ còn hơn mười chín nghìn ba trăm đồng. "
            "Tháng ba năm nay, cùng lít xăng đó có lúc lên tới hơn ba mươi nghìn. Chiều nay giá xăng lại điều chỉnh kỳ mới. "
            "Nhưng tin nhắn của vợ anh mới là câu hỏi đáng nghĩ: xăng rẻ vậy, sao đi chợ vẫn đắt hả anh?")),
  dict(k='bignum', anh=TP, cap=('XĂNG E5 RẺ ĐI', 'GẦN 36% TỪ ĐỈNH'), cols=CC, value=10715, fmt='{:,.0f}', unit=' đồng', top='XĂNG E5 RẺ HƠN MỖI LÍT, SO VỚI ĐỈNH THÁNG 3', sub='Từ 30.114 còn 19.399 đồng (kỳ 12/11/2026)', col=GOLD,
-      say=("Theo báo Ngôi Sao, từ đỉnh tháng ba đến kỳ điều hành tuần trước, mỗi lít xăng E5 đã rẻ đi mười nghìn bảy trăm mười lăm đồng, tức gần ba mươi sáu phần trăm. "
+      say=("Theo báo Ngôi Sao, từ đỉnh tháng ba đến kỳ điều hành tuần trước, mỗi lít xăng E năm đã rẻ đi mười nghìn bảy trăm mười lăm đồng, tức gần ba mươi sáu phần trăm. "
            "Vậy mà theo Cục Thống kê, giá cả nói chung tháng mười vẫn cao hơn năm ngoái năm phần trăm. Tiền xăng rẻ đi đâu? Ai thật sự được lợi? Và lúc nào xăng có thể đắt lại?")),
  # ---------------- CHƯƠNG 1 ----------------
  dict(k='giay', ch='Chương 1 – Giá xăng năm 2026', cap=('GIÁ XĂNG E5 NĂM 2026', 'TỪ ĐỈNH VỀ ĐẾN HÔM NAY'), cols=CC, moc=True, giay=dict(tieu_de='GIÁ XĂNG E5 MỖI LÍT', so='Theo VietnamPlus 31/10, Ngôi Sao 18/11/2026', dau='ĐÃ ĐỌC', dieu=[
@@ -50,7 +50,7 @@ S = [
         ('Trước ngày 1/11: khoảng 26.000 đồng.', 'VẪN CAO'),
         ('Ngày 1/11, thuế về 0%: 24.223 đồng.', 'GIẢM 1.804'),
         ('Kỳ 12/11: 19.399 đồng.', 'GIẢM 6.628')]),
-      say=("Anh Thắng ghi lại đường đi của lít xăng. Tháng ba, khi xung đột quanh Iran làm eo biển Hormuz bị phong toả, xăng E5 lên hơn ba mươi nghìn đồng. "
+      say=("Anh Thắng ghi lại đường đi của lít xăng. Tháng ba, khi xung đột quanh Iran làm eo biển Hormuz bị phong toả, xăng E năm lên hơn ba mươi nghìn đồng. "
            "Cuối tháng mười vẫn còn khoảng hai mươi sáu nghìn. Ngày một tháng mười một, thuế tiêu thụ đặc biệt với xăng về không phần trăm, giá giảm một nghìn tám trăm linh bốn đồng. "
            "Rồi đến kỳ điều hành tuần trước, chỉ còn mười chín nghìn ba trăm chín mươi chín đồng. Chỉ trong nửa tháng, mỗi lít rẻ đi hơn sáu nghìn sáu trăm đồng.")),
  dict(k='chat', cap=('"XĂNG GIẢM RỒI', 'SAO RAU THỊT CHƯA GIẢM?"'), cols=CR, moc=True, chat=dict(ten='Vợ', tv='Đang hoạt động', gio='08:05', mau=X_, msgs=[
@@ -84,19 +84,19 @@ S = [
  # ---------------- CHƯƠNG 3 ----------------
  dict(k='call', ch='Chương 3 – Lần trước là năm 2022', cap=('"NĂM 2022 XĂNG CŨNG', 'GIẢM MỘT MẠCH"'), cols=CC, moc=True, call=dict(ten='Bố', phu='Chạy xe ôm 20 năm', mau=V_, loi=[
         'Năm 2022 xăng gần 33 nghìn', 'Cuối năm còn hơn 21 nghìn']),
-      say=("Trưa đó anh Thắng gọi cho bố, người chạy xe ôm hơn hai mươi năm. Bố kể: năm 2022 cũng y như vậy. Giữa năm xăng gần ba mươi ba nghìn một lít, ai cũng than. "
+      say=("Trưa đó anh Thắng gọi cho bố, người chạy xe ôm hơn hai mươi năm. Bố kể: năm 2022 cũng y như vậy. Giữa năm, mỗi lít xăng gần ba mươi ba nghìn đồng, ai cũng than. "
            "Cuối năm giảm một mạch xuống hơn hai mươi mốt nghìn. Nhưng bát phở đầu ngõ thì không quay về giá cũ.")),
  dict(k='giay', cap=('NĂM 2022', 'NHỮNG CON SỐ CỦA LẦN TRƯỚC'), cols=CC, moc=True, giay=dict(tieu_de='NHỮNG CON SỐ CỦA LẦN TRƯỚC', so='Theo VnExpress 12/12/2022, Tuổi Trẻ 29/12/2022', dau='SO SÁNH', dieu=[
         ('Xăng RON95 tháng 6/2022: 32.870 đồng.', 'ĐỈNH'),
         ('Ngày 12/12/2022: 21.200 đồng.', 'RẺ GẦN 36%'),
         ('CPI tháng 12/2022 so cùng kỳ: 4,55%.', 'VẪN TĂNG'),
         ('CPI bình quân năm 2022: 3,15%.', 'THẤP HƠN')]),
-      say=("Những con số của lần trước. Tháng sáu năm 2022, theo VnExpress, xăng RON95 lên đỉnh ba mươi hai nghìn tám trăm bảy mươi đồng. Đến giữa tháng mười hai, chỉ còn hai mươi mốt nghìn hai trăm, rẻ đi gần ba mươi sáu phần trăm. "
+      say=("Những con số của lần trước. Tháng sáu năm 2022, theo VnExpress, xăng RON chín mươi lăm lên đỉnh ba mươi hai nghìn tám trăm bảy mươi đồng. Đến giữa tháng mười hai, chỉ còn hai mươi mốt nghìn hai trăm, rẻ đi gần ba mươi sáu phần trăm. "
            "Thế nhưng theo Tổng cục Thống kê, giá cả tháng mười hai năm 2022 vẫn cao hơn cùng kỳ khoảng bốn phẩy sáu phần trăm. Cao hơn hẳn mức bình quân chỉ hơn ba phần trăm của cả năm. Xăng xuống nửa năm trời, giá cả chung vẫn đi lên.")),
  dict(k='bars', anh=TP, cap=('XĂNG RON95 RẺ ĐI TỪ ĐỈNH', 'LẦN TRƯỚC VÀ LẦN NÀY'), cols=CC, moc=True,
       bars=[('Năm 2022', 35.5, GOLD, '35,5%'), ('Năm 2026', 36.8, GREEN, '36,8%')],
-      say=("Đặt hai lần cạnh nhau, giống đến bất ngờ. Năm 2022, xăng RON95 rẻ đi khoảng ba mươi lăm phẩy năm phần trăm từ đỉnh. "
-           "Năm nay, xăng RON95 loại E10 lên đỉnh ba mươi mốt nghìn bốn trăm hai mươi đồng ngày hai mươi tư tháng ba. Kỳ tuần trước còn mười chín nghìn tám trăm bốn mươi lăm đồng, rẻ đi khoảng ba mươi sáu phẩy tám phần trăm.")),
+      say=("Đặt hai lần cạnh nhau, giống đến bất ngờ. Năm 2022, xăng RON chín mươi lăm rẻ đi khoảng ba mươi lăm phẩy năm phần trăm từ đỉnh. "
+           "Năm nay, xăng RON chín mươi lăm loại E mười lên đỉnh ba mươi mốt nghìn bốn trăm hai mươi đồng ngày hai mươi tư tháng ba. Kỳ tuần trước còn mười chín nghìn tám trăm bốn mươi lăm đồng, rẻ đi khoảng ba mươi sáu phẩy tám phần trăm.")),
  dict(k='checklist', anh=HN, cap=('GIỐNG 2, KHÁC 2', 'SO VỚI NĂM 2022'), cols=CC, moc=True,
       items=[('Giống: xăng rẻ đi hơn 35%', GOLD), ('Giống: giá cả chung vẫn tăng', RED), ('Khác: nhờ thuế 0% có hạn', RED), ('Khác: đô la cao nhất 19 tháng', RED)],
       say=("So với năm 2022, có hai điểm giống và hai điểm khác. Giống ở chỗ xăng rẻ đi hơn ba mươi lăm phần trăm từ đỉnh, và giá cả chung vẫn tăng. "
@@ -108,7 +108,7 @@ S = [
         ('Tháng 3: gần 2 triệu tiền xăng.', 'GẦN 2 TRIỆU'),
         ('Bây giờ: khoảng 1,26 triệu.', 'BỚT GẦN 700 NGHÌN'),
         ('Tiền chợ 6 triệu, tăng 5,09%.', 'THÊM HƠN 300 NGHÌN')]),
-      say=("Tối đó anh Thắng mở sổ chi tiêu. Em giả định để minh hoạ: anh chạy giao hàng, mỗi tháng đổ khoảng sáu mươi lăm lít xăng E5. "
+      say=("Tối đó anh Thắng mở sổ chi tiêu. Em giả định để minh hoạ: anh chạy giao hàng, mỗi tháng đổ khoảng sáu mươi lăm lít xăng E năm. "
            "Tháng ba, tiền xăng gần hai triệu đồng. Bây giờ còn khoảng một triệu hai trăm sáu mươi nghìn, bớt gần bảy trăm nghìn đồng mỗi tháng. "
            "Nhưng tiền chợ của nhà anh khoảng sáu triệu mỗi tháng, nếu đắt hơn năm ngoái năm phần trăm, là thêm hơn ba trăm nghìn. Phần lợi từ xăng đã bị chợ lấy lại gần một nửa.")),
  dict(k='chat', cap=('"THÁNG NÀY DƯ TIỀN', 'SAO KHÔNG THẤY ĐÂU?"'), cols=CR, moc=True, chat=dict(ten='Chị Mai', tv='Đang hoạt động', gio='21:00', mau=X_, msgs=[
