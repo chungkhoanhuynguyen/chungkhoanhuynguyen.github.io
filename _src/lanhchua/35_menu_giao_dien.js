@@ -1,14 +1,16 @@
 function menu(title,html,btns){paused=true;const m=$('#menu');m.innerHTML=`<h2>${title}</h2>${html}`;
- for(const [l,f,dis] of btns){const b=document.createElement('button');b.className='b';b.innerHTML=l;b.disabled=!!dis;b.onclick=f;m.appendChild(b)}m.style.display='block';m.scrollTop=0}
+ let xb=null;for(const [l,f,dis] of btns){const b=document.createElement('button');b.className='b';b.innerHTML=l;b.disabled=!!dis;b.onclick=f;m.appendChild(b);if(!xb&&!dis&&/^(Đóng|Rời đi|Tiếp tục|Bỏ qua|Chưa|Hủy|Thôi|Để sau|Quay lại|Thoát|Không)/.test(b.textContent.trim()))xb=b}
+ if(xb){const x=document.createElement('button');x.className='mx';x.textContent='✕';x.title='Đóng';x.onclick=()=>xb.click();m.insertBefore(x,m.firstChild)}m.style.display='block';m.scrollTop=0}
 function close(){$('#menu').style.display='none';paused=false}
 function stopPl(){const pl=P0();pl.goS=pl.goP=pl.goF=pl.goV=null;pl.tx=pl.x;pl.ty=pl.y}
 const near=(p,r,fac)=>G.L.filter(q=>q!==p&&!q.dead&&!q.inF&&q.kind!='rf'&&q.kind!='pl'&&q.fac==fac&&fac>=0&&dist(q,p)<r);
 const srcs=(cfg,sd)=>cfg[sd].map(p=>p.t).concat(cfg.gar==sd?[cfg.s.gar]:[]);
 function sideTxt(cfg,sd){return tt(comb(srcs(cfg,sd)))+(cfg[sd].length>1?` <small>(${cfg[sd].length} đạo quân)</small>`:'')+(cfg.gar==sd?' <small>+ quân trấn thành</small>':'')}
 function battleMenu(title,info,cfg){const pl=P0();stopPl();if(G.ac){autoFight(cfg);return}const A=comb(srcs(cfg,'A')),D=comb(srcs(cfg,'D'));
- menu(title,info+`<p>🟦 Phe ta: ${sideTxt(cfg,'A')}</p><p>🟥 Phe địch: ${sideTxt(cfg,'D')}</p><p>Sức mạnh: ta <b>${fmt(str(A))}</b> — địch <b>${fmt(str(D)*(cfg.wall?1.5:1))}</b></p><p style="font-size:12px;color:#cdb">Đạo quân đồng minh ở gần tự động nhập trận cùng hai bên.</p>`,
+ menu(title,info+`<p>🟦 Phe ta: ${sideTxt(cfg,'A')}</p><p>🟥 Phe địch: ${sideTxt(cfg,'D')}</p><p>Sức mạnh: ta <b>${fmt(str(A))}</b> — địch <b>${fmt(str(D)*(cfg.wall?1.5:1))}</b></p>${bVerd(str(A)/Math.max(1,str(D)*(cfg.wall?1.5:1)))}<p style="font-size:12px;color:#cdb">Đạo quân đồng minh ở gần tự động nhập trận cùng hai bên.</p>`,
  [['⚔ Giao chiến (tự chỉ huy, đủ quân)',()=>{close();startBattle(cfg)}],['🎲 Đánh nhanh (tự động)',()=>{close();quick(cfg)}],
   cfg.fight?['Bỏ qua',()=>{close();pl.safe=3}]:['🏃 Rút lui (mất ~15% quân)',()=>{close();retreat(cfg)}]])}
+function bVerd(r){const [t,c,w]=r>=1.6?['🟢 Ưu thế lớn — cứ đánh!','#7dff8a',.85]:r>=1.15?['🟢 Nhỉnh hơn — nên đánh','#b8ff8a',.65]:r>=.85?['🟡 Ngang ngửa — rủi ro, tự chỉ huy sẽ dễ thắng hơn','#ffe066',.5]:r>=.6?['🟠 Bất lợi — cân nhắc rút lui','#ffb066',.32]:['🔴 Quá chênh lệch — nên rút!','#ff6a5a',.15];return`<div style="margin:4px 0 2px;font-size:13px;font-weight:700;color:${c}">${t}</div><div style="height:7px;background:#5a1d10;border-radius:4px;overflow:hidden"><div style="height:100%;width:${Math.round(w*100)}%;background:${c}"></div></div>`}
 const AR=()=>G.call?900:450;
 function retreat(cfg){const pl=P0(),e=cfg.D[0];kill(pl.t,Math.ceil(tot(pl.t)*.15));pl.safe=4;if(e){const a=Math.atan2(pl.y-e.y,pl.x-e.x);pl.tx=cl(pl.x+Math.cos(a)*160,30,WW-30);pl.ty=cl(pl.y+Math.sin(a)*160,30,WH-30)}cfg.D.forEach(q=>{q.goP=null;q.th=4;q.tx=q.x;q.ty=q.y})}
 function encounter(e){const pl=P0();const cfg={A:[pl,...near(pl,AR(),pl.fac)],D:[e,...near(e,450,e.fac)],s:null,gar:null,wall:0};
@@ -130,7 +132,7 @@ function panel(tab){if(!G)return;if(typeof tab=='string')PTAB=tab;const pl=P0(),
   CC.forEach((cc,ci)=>{if(cc.race!=c)return;const fs=G.F.map((f,i)=>i).filter(i=>G.F[i].cn==ci&&!G.F[i].dead&&S.some(s=>s.fac==i));if(!fs.length)return;
    h+=`<h3>${cc.n} <button class="sb" onclick="goSee(${cc.x},${cc.y},.3)">📍 xem</button></h3><table>${fs.map(i=>facRow(i,PTAB=='ng')).join('')}</table>`});
   if(PCON>=0&&PCON!=cur)btn.push([`🌍 Xem châu lục ${RACE[c].n} trên bản đồ`,()=>goSee(OX[c]+CWc[c]/2,OY[c]+CHc[c]/2,.15)])}
- else{h+=GUIDE}
+ else{h+=GUIDE_D()}
  btn.push(['Đóng',()=>{PCON=-1;close()}]);menu('📜 Thế cục',h,btn)}
 function diplo(){PCON=-1;panel('ng')}
 const GUIDE=`<p><b>🎯 Mục tiêu:</b> từ Hiệp sĩ chiếm thành → lên tước → tự lập làm Vua → thống nhất 5 châu lục.</p>

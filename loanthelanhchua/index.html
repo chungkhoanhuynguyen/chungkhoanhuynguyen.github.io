@@ -15,6 +15,11 @@ canvas{position:fixed;inset:0;width:100%;height:100%;touch-action:none}
 #zb button{width:42px;height:38px;font-size:18px;padding:0}
 body.sm #zb button{width:36px;height:32px;font-size:15px}body.sm #zb{gap:4px;top:4px;right:4px}body.sm #zb .xb{display:none}body.sm.more #zb .xb{display:block}#zMore{display:none}body.sm #zMore{display:block}body.sm #top{top:4px;left:4px;right:46px;gap:3px}body.sm .chip{font-size:10.5px;padding:2px 5px;border-radius:6px}body.sm #lag{font-size:9.5px!important;padding:1px 5px!important}
 #menu{left:50%;top:50%;transform:translate(-50%,-50%);width:min(480px,94vw);max-height:92vh;overflow:auto;background:linear-gradient(#3b2b19,#21170c);border:2px solid #c9a052;border-radius:12px;padding:14px;display:none;box-shadow:0 10px 40px rgba(0,0,0,.6);z-index:5}
+#cQ{cursor:pointer;max-width:min(330px,48vw);overflow:hidden;text-overflow:ellipsis;border-color:#ffe08a;color:#ffe9a8;background:rgba(60,40,10,.9);animation:qp 2.4s ease-in-out infinite}#cQ.qh::after{content:'💡';margin-left:4px}@keyframes qp{50%{box-shadow:0 0 8px #ffd23a}}
+body.lbl #zb button[data-l]{position:relative;overflow:visible}body.lbl #zb button[data-l]::before{content:attr(data-l);position:absolute;right:calc(100% + 6px);top:50%;transform:translateY(-50%);background:rgba(0,0,0,.8);color:#ffe9a8;font-size:11px;line-height:1.3;padding:2px 7px;border-radius:5px;white-space:nowrap;pointer-events:none;font-weight:600;border:1px solid #7a5d2a}body:not(.lbl) #zHelp{animation:qp 2.4s ease-in-out 3}
+#menu .mx{position:sticky;top:0;float:right;margin:-6px -6px 0 6px;width:34px;height:34px;border-radius:50%;background:#5a3d1c;border:1px solid #c9a052;color:#ffd77a;font-size:16px;z-index:3;cursor:pointer;font-family:inherit}
+#menu details{background:rgba(0,0,0,.18);border:1px solid #5a4528;border-radius:8px;margin:5px 0;padding:2px 8px}#menu summary{cursor:pointer;font-weight:700;color:#ffd77a;font-size:14px;padding:5px 0}#menu details p{font-size:13px}
+#log{color:#f3ead2}
 #menu h2{font-size:19px;color:#ffd77a;margin-bottom:6px}#menu h3{font-size:14px;color:#ffd77a;margin:10px 0 2px}
 #menu p{font-size:14px;margin:4px 0;line-height:1.45}
 #menu table{width:100%;font-size:12.5px;border-collapse:collapse;margin-top:4px}#menu td{padding:3px 4px;border-bottom:1px solid #5a4528}
@@ -43,8 +48,8 @@ button.b:disabled{opacity:.35}
 </style></head><body>
 <div id="load">⚔ Đang tạo thế giới...</div>
 <canvas id="c"></canvas>
-<div class="ui" id="top"><span class="chip" id="cDay"></span><span class="chip" id="cGold"></span><span class="chip" id="cArmy"></span><span class="chip" id="cRank"></span><span class="chip" id="cLeg"><span style="color:#7dff8a">■ ta</span> <span style="color:#ff6a5a">■ thù</span> <span style="color:#fff">■ hòa</span></span><button class="chip" id="bFac">📜 Thế cục</button></div>
-<div class="ui" id="zb"><button class="chip" id="zIn">＋</button><button class="chip" id="zOut">－</button><button class="chip" id="zMe">📍</button><button class="chip" id="zTp">🌐</button><button class="chip" id="zAc">🤖</button><button class="chip" id="zTs" style="display:none;font-size:13px">⏩2</button><button class="chip" id="zTl" style="display:none">🌌</button><button class="chip xb" id="zSv">💾</button><button class="chip" id="zCg" style="display:none">☯</button><button class="chip xb" id="zKg">👑</button><button class="chip xb" id="zCo">🧭</button><button class="chip xb" id="zMu">🔊</button><button class="chip xb" id="zMap" style="font-size:13px">🗺</button><button class="chip xb" id="zQ" style="font-size:12px">⚙</button><button class="chip xb" id="zFs" style="font-size:15px">⛶</button><button class="chip" id="zMore">⋯</button></div>
+<div class="ui" id="top"><span class="chip" id="cDay"></span><span class="chip" id="cGold"></span><span class="chip" id="cArmy"></span><span class="chip" id="cRank"></span><span class="chip" id="cLeg"><span style="color:#7dff8a">■ ta</span> <span style="color:#ff6a5a">■ thù</span> <span style="color:#fff">■ hòa</span></span><button class="chip" id="bFac">📜 Thế cục</button><span class="chip" id="cQ" style="display:none"></span></div>
+<div class="ui" id="zb"><button class="chip" id="zIn">＋</button><button class="chip" id="zOut">－</button><button class="chip" id="zMe">📍</button><button class="chip" id="zTp">🌐</button><button class="chip" id="zAc">🤖</button><button class="chip" id="zTs" style="display:none;font-size:13px">⏩2</button><button class="chip" id="zTl" style="display:none">🌌</button><button class="chip xb" id="zSv">💾</button><button class="chip" id="zCg" style="display:none">☯</button><button class="chip xb" id="zKg">👑</button><button class="chip xb" id="zCo">🧭</button><button class="chip xb" id="zMu">🔊</button><button class="chip xb" id="zMap" style="font-size:13px">🗺</button><button class="chip xb" id="zQ" style="font-size:12px">⚙</button><button class="chip xb" id="zFs" style="font-size:15px">⛶</button><button class="chip" id="zHelp">❓</button><button class="chip" id="zMore">⋯</button></div>
 <div class="ui" id="log"></div>
 <div class="ui" id="binfo"><span class="chip" id="bInfoT" style="white-space:normal;display:block;text-align:center"></span></div>
 <div class="ui" id="bbar"><button data-o="hold">🛡 Giữ trận</button><button data-o="charge">⚔ Xung phong</button><button id="bSpd">⏩ x4</button><button id="bAuto">🤖 Tự động</button><button id="bSkip">⏭ Xem kết quả</button><button id="bRet">🏳 Rút</button></div>
@@ -803,7 +808,7 @@ function endFight(f,res){const P=fightPow(f),W=res=='A'?P.A:P.D,L=res=='A'?P.D:P
 const allies=(p,r)=>G.L.filter(q=>q!==p&&!q.dead&&!q.inF&&q.fac==p.fac&&(q.kind=='lord'||q.kind=='king')&&dist(q,p)<r);
 function incoming(o){let n=0;for(const p of G.L)if(p.kind=='rf'&&!p.dead&&p.to===o.id)n+=tot(p.t);return n}
 const myGarT=s=>(G.xian?[15000,10000,6000]:[6000,4000,2500])[s.type]*PW(s.race);
-function newDay(){G.day++;lsDay();dhUpdate();if(G.day%2==0)rfMerge();if(mode=='map')mySlim(1);const pl=P0(),cnt={};for(const s of S)cnt[s.fac]=(cnt[s.fac]||0)+1;
+function newDay(){G.day++;if(G.lbl==1&&G.day>=6)lblSet(0,1);lsDay();dhUpdate();if(G.day%2==0)rfMerge();if(mode=='map')mySlim(1);const pl=P0(),cnt={};for(const s of S)cnt[s.fac]=(cnt[s.fac]||0)+1;
  for(const s of S){const M=LKM(),base=[40,25,12][s.type]*(1+.05*(cnt[s.fac]||0))*M;s.pool=Math.min(base*25|0,s.pool+Math.round(base));if(s.fac==pl.fac&&G.divine){const T=myGarT(s);if(tot(s.gar)<T){const k=Math.ceil(T*.05);s.gar.inf+=Math.ceil(k*.55);s.gar.arc+=Math.ceil(k*.3);s.gar.cav+=Math.ceil(k*.15)}continue}if(s.race>=9&&G.F[s.fac]&&G.F[s.fac].race>=9){const M2=PW(s.race);if(tot(s.gar)<[10000,6000,4000][s.type]*M2){s.gar.inf+=40*M2;s.gar.arc+=20*M2}}else if(tot(s.gar)<[4000,2500,1500][s.type]*M){s.gar.inf+=9*M;s.gar.arc+=6*M}}
  if(G.rev&&G.day==G.rev[0]){const o=G.rev[1];G.war[o][pl.fac]=G.war[pl.fac][o]=1;G.rev=null;terr();toast(`⚔ ${facN(o)} tuyên chiến với bạn — kẻ phản loạn!`,'#ff6a5a',1);SFX.war()}
  if(G.day%4==0){const INC=new Map();for(const p of G.L)if(p.kind=='rf'&&!p.dead)INC.set(p.to,(INC.get(p.to)||0)+tot(p.t));const pw=WRLD(pl.y),PLS=new Set(S.filter(s=>s.own===0&&s.pool>=40&&WRLD(s.y)==pw&&dist(s,pl)>=60).sort((a,b)=>dist(a,pl)-dist(b,pl)).slice(0,3));let BUD=G.day%12==0?rank(pl)[1]*.05:0;
@@ -846,16 +851,18 @@ let UF=0;function upMap(dt){ACT=contOf(P0().x,P0().y);G.dayT+=dt;if(G.dayT>=4){G
 
 /* ================= MENU ================= */
 function menu(title,html,btns){paused=true;const m=$('#menu');m.innerHTML=`<h2>${title}</h2>${html}`;
- for(const [l,f,dis] of btns){const b=document.createElement('button');b.className='b';b.innerHTML=l;b.disabled=!!dis;b.onclick=f;m.appendChild(b)}m.style.display='block';m.scrollTop=0}
+ let xb=null;for(const [l,f,dis] of btns){const b=document.createElement('button');b.className='b';b.innerHTML=l;b.disabled=!!dis;b.onclick=f;m.appendChild(b);if(!xb&&!dis&&/^(Đóng|Rời đi|Tiếp tục|Bỏ qua|Chưa|Hủy|Thôi|Để sau|Quay lại|Thoát|Không)/.test(b.textContent.trim()))xb=b}
+ if(xb){const x=document.createElement('button');x.className='mx';x.textContent='✕';x.title='Đóng';x.onclick=()=>xb.click();m.insertBefore(x,m.firstChild)}m.style.display='block';m.scrollTop=0}
 function close(){$('#menu').style.display='none';paused=false}
 function stopPl(){const pl=P0();pl.goS=pl.goP=pl.goF=pl.goV=null;pl.tx=pl.x;pl.ty=pl.y}
 const near=(p,r,fac)=>G.L.filter(q=>q!==p&&!q.dead&&!q.inF&&q.kind!='rf'&&q.kind!='pl'&&q.fac==fac&&fac>=0&&dist(q,p)<r);
 const srcs=(cfg,sd)=>cfg[sd].map(p=>p.t).concat(cfg.gar==sd?[cfg.s.gar]:[]);
 function sideTxt(cfg,sd){return tt(comb(srcs(cfg,sd)))+(cfg[sd].length>1?` <small>(${cfg[sd].length} đạo quân)</small>`:'')+(cfg.gar==sd?' <small>+ quân trấn thành</small>':'')}
 function battleMenu(title,info,cfg){const pl=P0();stopPl();if(G.ac){autoFight(cfg);return}const A=comb(srcs(cfg,'A')),D=comb(srcs(cfg,'D'));
- menu(title,info+`<p>🟦 Phe ta: ${sideTxt(cfg,'A')}</p><p>🟥 Phe địch: ${sideTxt(cfg,'D')}</p><p>Sức mạnh: ta <b>${fmt(str(A))}</b> — địch <b>${fmt(str(D)*(cfg.wall?1.5:1))}</b></p><p style="font-size:12px;color:#cdb">Đạo quân đồng minh ở gần tự động nhập trận cùng hai bên.</p>`,
+ menu(title,info+`<p>🟦 Phe ta: ${sideTxt(cfg,'A')}</p><p>🟥 Phe địch: ${sideTxt(cfg,'D')}</p><p>Sức mạnh: ta <b>${fmt(str(A))}</b> — địch <b>${fmt(str(D)*(cfg.wall?1.5:1))}</b></p>${bVerd(str(A)/Math.max(1,str(D)*(cfg.wall?1.5:1)))}<p style="font-size:12px;color:#cdb">Đạo quân đồng minh ở gần tự động nhập trận cùng hai bên.</p>`,
  [['⚔ Giao chiến (tự chỉ huy, đủ quân)',()=>{close();startBattle(cfg)}],['🎲 Đánh nhanh (tự động)',()=>{close();quick(cfg)}],
   cfg.fight?['Bỏ qua',()=>{close();pl.safe=3}]:['🏃 Rút lui (mất ~15% quân)',()=>{close();retreat(cfg)}]])}
+function bVerd(r){const [t,c,w]=r>=1.6?['🟢 Ưu thế lớn — cứ đánh!','#7dff8a',.85]:r>=1.15?['🟢 Nhỉnh hơn — nên đánh','#b8ff8a',.65]:r>=.85?['🟡 Ngang ngửa — rủi ro, tự chỉ huy sẽ dễ thắng hơn','#ffe066',.5]:r>=.6?['🟠 Bất lợi — cân nhắc rút lui','#ffb066',.32]:['🔴 Quá chênh lệch — nên rút!','#ff6a5a',.15];return`<div style="margin:4px 0 2px;font-size:13px;font-weight:700;color:${c}">${t}</div><div style="height:7px;background:#5a1d10;border-radius:4px;overflow:hidden"><div style="height:100%;width:${Math.round(w*100)}%;background:${c}"></div></div>`}
 const AR=()=>G.call?900:450;
 function retreat(cfg){const pl=P0(),e=cfg.D[0];kill(pl.t,Math.ceil(tot(pl.t)*.15));pl.safe=4;if(e){const a=Math.atan2(pl.y-e.y,pl.x-e.x);pl.tx=cl(pl.x+Math.cos(a)*160,30,WW-30);pl.ty=cl(pl.y+Math.sin(a)*160,30,WH-30)}cfg.D.forEach(q=>{q.goP=null;q.th=4;q.tx=q.x;q.ty=q.y})}
 function encounter(e){const pl=P0();const cfg={A:[pl,...near(pl,AR(),pl.fac)],D:[e,...near(e,450,e.fac)],s:null,gar:null,wall:0};
@@ -977,7 +984,7 @@ function panel(tab){if(!G)return;if(typeof tab=='string')PTAB=tab;const pl=P0(),
   CC.forEach((cc,ci)=>{if(cc.race!=c)return;const fs=G.F.map((f,i)=>i).filter(i=>G.F[i].cn==ci&&!G.F[i].dead&&S.some(s=>s.fac==i));if(!fs.length)return;
    h+=`<h3>${cc.n} <button class="sb" onclick="goSee(${cc.x},${cc.y},.3)">📍 xem</button></h3><table>${fs.map(i=>facRow(i,PTAB=='ng')).join('')}</table>`});
   if(PCON>=0&&PCON!=cur)btn.push([`🌍 Xem châu lục ${RACE[c].n} trên bản đồ`,()=>goSee(OX[c]+CWc[c]/2,OY[c]+CHc[c]/2,.15)])}
- else{h+=GUIDE}
+ else{h+=GUIDE_D()}
  btn.push(['Đóng',()=>{PCON=-1;close()}]);menu('📜 Thế cục',h,btn)}
 function diplo(){PCON=-1;panel('ng')}
 const GUIDE=`<p><b>🎯 Mục tiêu:</b> từ Hiệp sĩ chiếm thành → lên tước → tự lập làm Vua → thống nhất 5 châu lục.</p>
@@ -1381,9 +1388,80 @@ function drawMap(t){const c=MC;if(G&&c.follow){c.x=P0().x;c.y=P0().y}if(!G)c.x+=
   const px=W/2+Math.cos(a)*k-30;let py=H/2+Math.sin(a)*k;if(px>m0.x-70&&py>m0.y-14)py=m0.y-16;if(PL.some(q=>Math.abs(q[1]-py)<24&&Math.abs(q[0]-px)<170))continue;PL.push([px,py]);const ci=CC.indexOf(cc),fs=G.F.filter(f=>(cc.cont?f.race==cc.race:f.cn==ci)&&!f.dead).map(f=>G.F.indexOf(f)),en=fs.some(f=>atWar(P0().fac,f)),my=fs.includes(P0().fac),col=my?'#7dff8a':en?'#ff6a5a':'#f2f2f2';
   const l=SMALL()?cc.n:`${cc.n} ${fmt(Math.hypot(dx,dy)/100)} dặm`,tw=X.measureText(l).width;X.fillStyle='rgba(15,10,6,.85)';X.fillRect(px-tw/2-8,py-10,tw+16,20);X.strokeStyle=col;X.lineWidth=1.5;X.strokeRect(px-tw/2-8,py-10,tw+16,20);X.fillStyle=col;X.fillText(l,px,py+4);
   X.save();X.translate(px+Math.cos(a)*(tw/2+18),py+Math.sin(a)*18);X.rotate(a);TRI(X,9,0,-5,-7,-5,7);X.restore()}X.globalAlpha=1}}
+/* ================= HƯỚNG DẪN NGƯỜI MỚI: 🎯 nhiệm vụ, ❓ chú thích nút, giải thích ô số ================= */
+const WOF=c=>c>=12?2:c>=9?1:0;
+const Z0={inf:0,arc:0,cav:0};
+function qNearS(ok,conts){const pl=P0(),my=Math.max(1,str(pl.t)),pw=WOF(contOf(pl.x,pl.y));let b=null,bd=1e18;
+ for(const s of S){if(!ok(s)||!OPEN(s.race))continue;if(conts&&!conts.includes(s.race))continue;const g=str(s.gar||Z0)*1.5;let d=Math.hypot(s.x-pl.x,s.y-pl.y)*(1+g/my);if(WOF(s.race)!=pw)d*=50;if(d<bd){bd=d;b=s}}return b}
+const qEnemy=c=>{const me=P0().fac;return qNearS(s=>s.fac!=me&&atWar(me,s.fac),c)};
+const qPct=x=>Math.round(cl(x,0,1)*100)+'%';
+function qBest(cs,n,th){const h=cs.map(c=>[c,held(c)]).sort((a,b)=>b[1]-a[1]);const top=h.slice(0,n);return{p:top.reduce((a,x)=>a+Math.min(x[1],th),0)/(n*th),tg:(h.find(x=>x[1]<th)||h[0])[0],h}}
+function qCur(){const pl=P0(),me=pl.fac,king=isMyKing(),nf=fiefs(pl),cap=rank(pl)[1],army=tot(pl.t),gens=myGens().length;
+ const low=army<cap*.4&&G.gold>=400&&!G.lsOn;
+ const rec=()=>({ic:'🪖',t:'Chiêu mộ thêm lính',d:`Quân bạn đang ít (<b>${fmt(army)}</b>/${fmt(cap)}). Vào một thành <span style="color:#7dff8a">phe ta (tên xanh)</span> → bấm <b>Chiêu bộ binh / cung thủ / kỵ binh</b>. Kỵ binh mạnh nhất nhưng đắt nhất.`,tg:qNearS(s=>s.fac==me),go:'Tới thành chiêu mộ'});
+ if(!king&&nf==0&&(pl.ren||0)<300){if(low)return rec();
+  const pr=P0();let bb=null,bd=1e18;for(const q of G.L){if(q.dead||q.kind!='bandit'||q.inF)continue;const d=Math.hypot(q.x-pr.x,q.y-pr.y)*(1+str(q.t)/Math.max(1,str(pr.t)));if(d<bd){bd=d;bb=q}}
+  return{ic:'⭐',t:`Lên Nam tước · ⭐${fmt(pl.ren||0)}/300`,p:(pl.ren||0)/300,d:'Đánh tan các toán <b>☠ Thổ phỉ</b> (đạo quân cờ xám) để lấy ⭐ danh vọng. Đủ <b>300⭐</b> hoặc chiếm được <b>1 thành</b> là lên <b>Nam tước</b> — tước càng cao càng mang được nhiều quân.<br><small>Gặp địch, nếu không muốn tự điều quân thì chọn 🎲 Đánh nhanh.</small>',tgP:bb,go:'Đuổi đánh thổ phỉ gần nhất'}}
+ if(!king&&nf<2){if(low)return rec();const s=qEnemy();
+  return{ic:'🏰',t:`Chiếm thành địch · ${nf}/2`,p:nf/2,d:`Có <b>2 thành</b> là đủ điều kiện <b>xưng Vua</b>. Tìm thành <span style="color:#ff6a5a">tên đỏ</span> có quân trấn giữ ít hơn quân bạn, tới sát rồi bấm <b>⚔ Công thành</b>.${s?`<br>Gợi ý: <b>${s.name}</b> — trấn giữ ${fmt(tot(s.gar||Z0))}, quân bạn ${fmt(army)}${str(s.gar||Z0)*1.5>str(pl.t)?' <span style="color:#f99">(còn mạnh hơn bạn — nên chiêu thêm lính hoặc đợi Vua cùng đánh)</span>':''}.`:''}`,tg:s,go:'Hành quân tới thành này'}}
+ if(!king)return{ic:'👑',t:'Xưng Vua!',d:'Bạn đã có đủ 2 thành. Tự lập vương quốc để được <b>chiêu mộ tướng</b>, <b>tuyên chiến</b>, <b>cầu hòa</b>.<br><small>Nhà cũ sẽ coi bạn là phản tặc và tuyên chiến sau 6 ngày — hãy giữ đủ quân.</small>',act:['👑 Mở bảng tự lập',()=>panel('tq')]};
+ if(gens<3&&G.open.length==1)return{ic:'🧑‍✈️',t:`Chiêu mộ tướng · ${gens}/3`,p:gens/3,d:'Tướng tự dẫn quân đi đánh chiếm cho bạn và tự lên tước. Mở <b>📜 Thế cục → 🧑‍✈️ Tướng</b> để chiêu mộ, ban thành cho tướng.',act:['🧑‍✈️ Mở tab Tướng',()=>panel('tg')]};
+ const st=(ic,t,p,d,c)=>({ic,t:`${t} · ${qPct(p)}`,p,d,tg:qEnemy(c),go:'Đánh thành địch gần nhất'});
+ if(G.open.length==1){const h=held(G.open[0]);return st('🗺','Chinh phục quê nhà',h/.75,`Chiếm <b>75%</b> thành của châu lục quê (đang ${qPct(h)}) để mở bản đồ 4 châu lục.`,[G.open[0]])}
+ if(!G.open.includes(4)){const b=qBest([0,1,2,3],2,.75);return st('🌍','Làm chủ 2 châu lục',b.p,`Chiếm <b>75%</b> thành ở <b>2 châu lục</b> để mở 💀 Vùng Đất Chết.<br>${b.h.map(([c,v])=>`${RACE[c].n}: ${qPct(v)}`).join(' · ')}`,[b.tg])}
+ if(!G.divine)return st('💀','Chinh phục Vùng Đất Chết',held(4)/.5,`Chiếm <b>1/2</b> thành Vùng Đất Chết (đang ${qPct(held(4))}) để mở Thời đại Thần linh.`,[4]);
+ if(!G.xian){const b=qBest([5,6,7,8],2,.75);return st('⚡','Chinh phạt Thần giới',b.p,`Chiếm <b>75%</b> thành ở <b>2 lục địa Thần linh</b> để mở 🌀 Cửu Thiên Huyền Giới.<br>${b.h.map(([c,v])=>`${RACE[c].n}: ${qPct(v)}`).join(' · ')}`,[b.tg])}
+ if(!G.lk){const b=qBest([9,10,11],1,.75);return st('✨','Đánh chiếm một lục địa tu tiên',b.p,`Đi qua 🌀 Thông đạo lên Cửu Thiên, chiếm <b>75%</b> thành của 1 lục địa tu tiên để mở ✨ Linh khí khôi phục.<br><small>Ở Cửu Thiên vàng đổi thành 💎 linh thạch — dùng để ☯ đột phá cảnh giới, tăng số quân dẫn theo.</small>`,[b.tg])}
+ if(canUp()&&(!G.tang||G.tang==(G.tmax||G.tang)))return{ic:'⚡',t:G.tang?`Lên ${G.tang+1>=24?'Tiên Giới':'Tầng '+(G.tang+1)}!`:'Phi thăng!',p:1,d:'Đã đủ điều kiện. Mở 🌌 Thiên Lộ để lên tầng mới (có thể quay về tầng cũ bất cứ lúc nào).',act:['🌌 Mở Thiên Lộ',thienLo]};
+ if(!G.tang){const b=qBest([9,10,11],2,.67);return st('🌌','Chuẩn bị phi thăng',b.p,`Chiếm <b>2/3</b> thành ở <b>2 lục địa Cửu Thiên</b> để phi thăng lên 23 Tầng Trời.<br>${b.h.map(([c,v])=>`${RACE[c].n}: ${qPct(v)}`).join(' · ')}`,[b.tg])}
+ if(G.tang<(G.tmax||0))return{ic:'🌌',t:`Đang ở Tầng ${G.tang} (đã tới ${G.tmax>=24?'Tiên Giới':'Tầng '+G.tmax})`,d:'Tầng này đã bình định. Mở 🌌 Thiên Lộ để trở lại tầng cao nhất và chinh phạt tiếp.',act:['🌌 Mở Thiên Lộ',thienLo]};
+ if(G.tang>=24&&!G.dd)return st('🐲','Thống nhất Tiên Giới',held(12)/(2/3),'Chiếm <b>2/3</b> thành Tiên Giới để đăng cơ <b>Đại Đế</b>.',[12]);
+ if(G.tang<24)return st('☁️',`Bình định Tầng ${G.tang}`,held(12)/(2/3),`Chiếm <b>2/3</b> thành của tầng này để lên tầng tiếp theo (đang ${qPct(held(12))}).`,[12]);
+ return{ic:'🐲',t:'Đại Đế Vạn Giới',d:'Bạn đã đi hết hành trình! Hãy tiếp tục quét sạch thế lực còn lại.',tg:qEnemy([12]),go:'Đánh thành địch gần nhất'}}
+function qHints(){const pl=P0(),o=[],cap=rank(pl)[1],army=tot(pl.t);
+ if(G.lsOn&&G.cg<CGL.length-1){const nx=CGL[G.cg+1];if(G.ls>=nx[1]&&army>=cap*CGR)o.push(['☯',`Đủ linh thạch đột phá <b>${nx[0]}</b> (tăng % quân dẫn theo).`,cgMenu])}
+ if(!G.lsOn&&G.gold>3000&&army<cap*.7)o.push(['💰','Bạn đang dư vàng — vào thành phe ta để chiêu thêm lính.']);
+ if(income()-wages()<0)o.push(['⚠️','Thu không đủ trả lương lính — cần chiếm thêm thành/làng hoặc bớt quân.']);
+ if(isMyKing()&&!G.F.some((f,i)=>i!=pl.fac&&!f.dead&&atWar(pl.fac,i)&&OPEN(f.race==null?0:f.race)))o.push(['🏛','Bạn chưa có kẻ thù nào — tuyên chiến trong 📜 Thế cục → Ngoại giao.',()=>panel('ng')]);
+ if(isMyKing()&&myGens().length<3&&G.open.length>1)o.push(['🧑‍✈️','Bạn có ít tướng — chiêu mộ thêm trong 📜 Thế cục → Tướng để họ đánh chiếm giúp.',()=>panel('tg')]);
+ if(G.ac)o.push(['🤖','Đang bật Tự chinh phạt: nhân vật tự đi đánh. Bấm 🤖 để tắt nếu muốn tự điều khiển.']);
+ return o}
+let QC=null;
+function qGo(q){const pl=P0();close();if(q.tgP){pl.goS=null;pl.goP=q.tgP;G.mk={x:q.tgP.x,y:q.tgP.y,t:3}}
+ else if(q.tg){if(WOF(q.tg.race)!=WOF(contOf(pl.x,pl.y))){toast('🌀 Mục tiêu ở thế giới khác — đi qua Thông đạo 🌀 hoặc dùng 🌐 dịch chuyển.','#9ff0ff',1);tpMenu();return}
+  pl.goP=null;pl.goS=q.tg;G.mk={x:q.tg.x,y:q.tg.y,t:3}}MC.follow=1;if(G.ac)acToggle();toast(`🚶 Đang tiến về <b>${q.tgP?pname(q.tgP):q.tg.name}</b>`,'#9cf')}
+function qMenu(){if(!G||paused||mode!='map')return;const q=qCur();QC=q;const H=qHints();
+ let h=`<p style="font-size:15px"><b>${q.ic} ${q.t}</b></p>${q.p!=null?`<div style="height:8px;background:#2a1d10;border-radius:4px;overflow:hidden;margin:4px 0 6px"><div style="height:100%;width:${qPct(q.p)};background:linear-gradient(90deg,#c9a052,#ffe08a)"></div></div>`:''}<p>${q.d}</p>`;
+ if(H.length)h+=`<h3>💡 Gợi ý</h3>`+H.map((x,i)=>`<p style="font-size:13px">${x[0]} ${x[1]}${x[2]?` <a href="#" onclick="event.preventDefault();qHint(${i})" style="color:#ffd77a">mở ›</a>`:''}</p>`).join('');
+ const b=[];if(q.tg||q.tgP)b.push([`📍 ${q.go||'Dẫn đường'}`,()=>qGo(q)]);if(q.act)b.push([q.act[0],()=>{close();q.act[1]()}]);
+ b.push(['📖 Hướng dẫn đầy đủ',()=>{close();panel('hd')}],['Đóng',close]);menu('🎯 Việc nên làm tiếp',h,b)}
+function qHint(i){const x=qHints()[i];if(x&&x[2]){close();x[2]()}}
+function qTick(){const e=$('#cQ');if(!e||!G)return;if(mode!='map'){e.style.display='none';return}let q;try{q=qCur()}catch(err){e.style.display='none';return}
+ e.style.display='';e.innerHTML=`🎯 ${q.t}`;const hs=qHints().length;e.classList.toggle('qh',hs>0)}
+setInterval(qTick,1200);
+
+/* ❓ chú thích các nút */
+const ZLBL={zIn:'Phóng to',zOut:'Thu nhỏ',zMe:'Về chỗ bạn',zTp:'Dịch chuyển',zAc:'Tự chinh phạt (AI)',zTs:'Tốc độ thời gian',zTl:'Thiên Lộ · tầng trời',zSv:'Lưu ván',zCg:'Cảnh giới · linh thạch',zKg:'Vua của bạn',zCo:'La bàn chỉ hướng',zMu:'Âm thanh',zMap:'Màu bản đồ',zQ:'Đồ họa (máy giật chọn ⚡)',zFs:'Toàn màn hình',zMore:'Thêm nút',zHelp:'Tắt chú thích'};
+for(const k in ZLBL){const e=document.getElementById(k);if(e)e.dataset.l=ZLBL[k]}
+function lblSet(on,quiet){document.body.classList.toggle('lbl',!!on);if(G)G.lbl=on?1:2;if(on&&!quiet)toast('🏷 Đã hiện tên các nút. Bấm <b>❓</b> lần nữa để ẩn.<br><small>Chạm vào các ô số trên cùng (ngày, vàng, quân, tước) để xem giải thích.</small>','#ffe9a8')}
+$('#zHelp').onclick=()=>{if(!G)return;lblSet(!document.body.classList.contains('lbl'))};
+$('#cQ').onclick=()=>qMenu();
+$('#cDay').onclick=()=>{if(!paused&&G)toast(`📅 <b>Ngày ${G.day}</b> trong game. Mỗi ngày làng & thành của bạn nộp vàng, tân binh tự tìm tới.${G.xian?' Nút ⏩ để tua nhanh thời gian.':''}`,'#ffe9a8')};
+$('#cGold').addEventListener('click',()=>{if(paused||!G||G.lsOn)return;toast(`💰 <b>Vàng ${fmt(G.gold)}</b> · thu ${fmt(income())}/ngày · lương lính −${fmt(wages())}/ngày.<br>Dùng vàng để chiêu mộ lính (vào thành phe ta) và chiêu mộ tướng. Càng nhiều thành/làng càng thu nhiều.`,'#ffe9a8')});
+$('#cArmy').addEventListener('click',()=>{if(paused||!G||G.lsOn)return;const pl=P0(),r=rank(pl);toast(`⚔ <b>Quân của bạn</b>: 🗡 bộ ${fmt(pl.t.inf)} · 🏹 cung ${fmt(pl.t.arc)} · 🐎 kỵ ${fmt(pl.t.cav)} = <b>${fmt(tot(pl.t))}</b> / tối đa ${fmt(r[1])}.<br>Tối đa phụ thuộc tước <b>${r[0]}</b> — lên tước để mang nhiều quân hơn.`,'#ffe9a8')});
+const INTRO=`<p>Bạn là một <b>hiệp sĩ vô danh</b>. Hành trình: đánh thổ phỉ → chiếm thành → lên tước → <b>xưng Vua</b> → chinh phục thế giới, rồi tới những cõi bí ẩn hơn…</p>
+<p><b>1. Điều khiển:</b> 👆 chạm đất để đi · chạm <b>thành/làng</b> để vào · chạm <b>đạo quân</b> để đuổi đánh · kéo để xem · chụm 2 ngón (hoặc ＋/－) để phóng to.</p>
+<p><b>2. Không biết làm gì?</b> Nhìn ô <b style="color:#ffe08a">🎯 Nhiệm vụ</b> ở góc trên — chạm vào rồi bấm <b>📍 Dẫn đường</b>, nhân vật sẽ tự đi tới mục tiêu.</p>
+<p><b>3. Màu:</b> <span style="color:#7dff8a">xanh = phe ta</span> · <span style="color:#ff6a5a">đỏ = kẻ thù</span> · trắng = đang hòa.</p>
+<p><b>4. Không hiểu nút nào?</b> Bấm <b>❓</b> ở cột phải để hiện tên tất cả các nút (đang bật sẵn mấy ngày đầu).</p>`;
+const GUIDE_X=`<p><b>💎 Linh thạch & ☯ Cảnh giới:</b> từ Cửu Thiên, vàng đổi thành linh thạch (1 triệu vàng = 1 hạ phẩm). Bấm ☯ để đột phá cảnh giới: tốn linh thạch, cần quân ≥30% giới hạn, thành công 50% (mỗi lần xịt +10%), xịt thì mất linh thạch và 20–40% quân. Cảnh giới càng cao càng dẫn được nhiều quân.</p>
+<p><b>🏅 Danh hiệu:</b> đạt mốc (chiếm châu lục, số thành, danh vọng…) được danh hiệu, mỗi cái cộng thêm chút % quân. Bấm ô tước trên cùng để xem tất cả; chạm vào chồng danh hiệu trên đầu nhân vật để ẩn/hiện.</p>
+<p><b>🌌 Tầng Trời:</b> chiếm 2/3 mỗi tầng thì được hỏi có muốn lên tầng tiếp. Tầng cũ đã chiếm vẫn giữ, quay về qua 🌌 Thiên Lộ. Tướng tự chinh phạt, tự lên tước.</p>
+<p><b>💾 Lưu ván:</b> game tự lưu trên máy. Nút 💾 có 5 ô lưu, xuất file save để chơi tiếp trên máy khác.</p>`;
+function GUIDE_D(){return`<details><summary>🚀 Bắt đầu nhanh</summary>${INTRO}</details>`+(GUIDE+GUIDE_X).split('</p>').filter(x=>x.trim()).map(x=>{const m=x.match(/<p><b>(.*?)<\/b>\s*([\s\S]*)/);return m?`<details><summary>${m[1].replace(/:\s*$/,'')}</summary><p>${m[2]}</p></details>`:x+'</p>'}).join('')}
 function hud(){if(!G)return;const pl=P0(),sm=SMALL(),net=income()-wages(),F=sm?fk:fmt;$('#cDay').textContent=(sm?'📅':'📅 Ngày ')+G.day;
  $('#cGold').innerHTML=`💰${sm?'':' '}${F(G.gold)} <small style="color:${net>=0?'#9f9':'#f88'}">${net>=0?'+':''}${F(net)}${sm?'':'/ngày'}</small>`+(G.lsOn?` · 💎${sm?fk(G.ls)+'h':' '+fmtLS(G.ls)}`:'');
- if(G.lsOn){$('#cArmy').innerHTML=sm?`☯ ${F(tot(pl.t))}/${F(rank(pl)[1])}`:`☯ ${cgN()} · tu vi <b>${fmt(tot(pl.t))}</b>/${fmt(rank(pl)[1])}`;$('#cArmy').title=`${cgN()} · Bộ ${fmt(pl.t.inf)} · Cung ${fmt(pl.t.arc)} · Kỵ ${fmt(pl.t.cav)}`}else $('#cArmy').innerHTML=sm?`⚔ ${F(tot(pl.t))}`:tt(pl.t);
+ if(G.lsOn){$('#cArmy').innerHTML=sm?`☯ ${F(tot(pl.t))}/${F(rank(pl)[1])}`:`☯ ${cgN()} · tu vi <b>${fmt(tot(pl.t))}</b>/${fmt(rank(pl)[1])}`;$('#cArmy').title=`${cgN()} · Bộ ${fmt(pl.t.inf)} · Cung ${fmt(pl.t.arc)} · Kỵ ${fmt(pl.t.cav)}`}else $('#cArmy').innerHTML=sm?`⚔ ${F(tot(pl.t))}/${F(rank(pl)[1])}`:tt(pl.t)+` <small>/ ${fmt(rank(pl)[1])}</small>`;
  const r=rank(pl);$('#cRank').innerHTML=sm?`${r[2]} ${fiefs(pl)}🏰 ⭐${fk(pl.ren||0)}`:`${badge(pl)} ${fiefs(pl)} thành · ⭐${fmt(pl.ren||0)}`;const bf=$('#bFac');if(bf)bf.textContent=sm?'📜':'📜 Thế cục'}
 
 /* ================= ĐIỀU KHIỂN ================= */
@@ -1435,14 +1513,14 @@ function titleMenu(){mode='title';G=null;B=null;$('#top').style.display='none';$
  if(!WMAP){btn.push([`Đồ họa: <b>${QN[QL]}</b> — bấm để đổi`,()=>{setQ((QL+1)%3);close();titleMenu()}],['🌍 VÁN MỚI — Nhân tộc là bản đồ Trái Đất (201 quốc gia)<br><small>Ván cũ vẫn giữ tới khi ván mới được lưu</small>',()=>{try{sessionStorage.setItem('ltlc-newmap','1')}catch(e){}location.reload()}]);
   menu('⚔ Loạn Thế Lãnh Chúa','<p>Bản cập nhật mới: <b>lục địa Nhân tộc giờ là bản đồ Trái Đất thật</b> với 201 quốc gia và hơn 340 thành trì.</p><p>Ván đang chơi của bạn vẫn dùng bản đồ cũ.</p>',btn);return}
  btn.push([`Đồ họa: <b>${QN[QL]}</b> — bấm để đổi (máy giật chọn ⚡)`,()=>{setQ((QL+1)%3);close();titleMenu()}]);
- RACE.slice(0,4).forEach((r,c)=>btn.push([c==0&&WMAP?`${RIC[c]} ${r.n} — <b>bản đồ Trái Đất</b>: 201 quốc gia, ${S.filter(s=>!s.race).length} thành`:`${RIC[c]} ${r.n} — châu lục ${['phía Tây Bắc','phía Đông Bắc','phía Tây Nam','phía Đông Nam','tận cùng phía Đông'][c]}`,()=>pickKing(c)]));
+ RACE.slice(0,4).forEach((r,c)=>btn.push([c==0&&WMAP?`${RIC[c]} ${r.n} — <b>bản đồ Trái Đất</b>: 201 quốc gia, ${S.filter(s=>!s.race).length} thành<br><small style="color:#9f9">★ Khuyên dùng cho người mới</small>`:`${RIC[c]} ${r.n} — châu lục ${['phía Tây Bắc','phía Đông Bắc','phía Tây Nam','phía Đông Nam','tận cùng phía Đông'][c]}`,()=>pickKing(c)]));
  menu('⚔ Loạn Thế Lãnh Chúa',`<p>Bạn khởi đầu là Hiệp sĩ ở châu lục quê nhà. Chinh phục để mở dần thế giới: <b>4 châu lục</b> → <b>Vùng Đất Chết</b> → <b>Thời đại Thần linh</b> (4 lục địa thần) → chiếm 2/4 lục địa Thần linh để mở <b>🌀 Cửu Thiên Huyền Giới</b> (thế giới tu tiên, cực mạnh) qua Cổng truyền tống.</p><p style="color:#ffd77a">Chọn tộc người:</p>`,btn)}
 function pickKing(c,reg){if(c==0&&WMAP&&reg==null){menu('🌍 Nhân tộc — Trái Đất · chọn châu lục',`<p>${F0.filter(f=>!f.race).length} quốc gia, ${S.filter(s=>!s.race).length} thành trì theo bản đồ thế giới thật. Chọn châu lục rồi chọn nước để phụng sự.</p>`,[...WREG.map((n,r)=>[`${['🌏','🏰','🌍','🗽','🌎','🏝'][r]} ${n} — ${F0.filter(f=>f.wm===r).length} nước`,()=>{close();pickKing(0,r)}]),['◀ Quay lại',()=>{close();titleMenu()}]]);return}
  if(c==0&&WMAP){const L=F0.map((f,i)=>[f,i]).filter(([f])=>f.wm===reg).map(([f,i])=>[f,i,S.filter(s=>s.f0==i).length]).sort((a,b)=>b[2]-a[2]||a[0].n.localeCompare(b[0].n,'vi'));
   menu(`🌍 ${WREG[reg]} — chọn nước để phụng sự`,'<p>Nước lớn nhiều thành dễ chơi hơn.</p>',[...L.map(([f,i,n])=>[`<span style="color:${f.c}">■</span> ${f.n} — ${n} thành`,()=>{close();newGame(i);startMap();save()}]),['◀ Quay lại',()=>{close();pickKing(0)}]]);return}
  const btn=F0.map((f,i)=>[f,i]).filter(([f])=>f.race==c).map(([f,i])=>[`<span style="color:${f.c}">■</span> ${CC[f.cn].n} — phụng sự ${f.n}`,()=>{close();newGame(i);startMap();save()}]);
  btn.push(['◀ Quay lại',()=>{close();titleMenu()}]);menu(`${RIC[c]} ${RACE[c].n} — chọn vua để phụng sự`,`<p>${['Cân bằng mọi mặt.','Máu trâu, đánh mạnh nhưng chậm, tầm bắn ngắn.','Cung thủ bắn rất xa, nhanh nhẹn nhưng mỏng máu.','Cực nhanh và hung hãn, cận chiến mạnh, bắn kém.','Đạo quân xương bất tử: thành trì 10.000–20.000 quân, cực hiếu chiến, thù địch với mọi tộc.'][c]}</p>`,btn)}
-function startMap(){mode='map';acBtn();showArrows(8);if(G&&!G.seenGuide){G.seenGuide=1;setTimeout(()=>{if(!paused)menu('❓ Hướng dẫn nhanh',GUIDE,[['Bắt đầu chơi!',close]])},5200)}if(G&&!G.granted){G.granted=1;setTimeout(()=>grantVillage(1),1200)}$('#top').style.display='flex';$('#zb').style.display='flex';G.lastRank=rank(P0())[0]}
+function startMap(){mode='map';acBtn();showArrows(8);if(G&&!G.seenGuide){G.seenGuide=1;G.lbl=1;setTimeout(()=>{if(!paused)menu('⚔ Chào mừng, hiệp sĩ!',INTRO,[['▶ Bắt đầu chơi!',()=>{close();setTimeout(qMenu,600)}],['📖 Xem hướng dẫn đầy đủ',()=>{close();panel('hd')}]])},3500)}if(G&&!G.granted){G.granted=1;setTimeout(()=>grantVillage(1),1200)}$('#top').style.display='flex';$('#zb').style.display='flex';lblSet(G&&G.lbl==1&&G.day<6,1);qTick();G.lastRank=rank(P0())[0]}
 let last=performance.now(),ht=0;
 function step(now){const dt=Math.min(.05,(now-last)/1000);last=now;const t=now/1000;
  if(!document.hidden&&!paused){if(mode=='map'){const n=G&&G.xian?(G.ts||2):1;for(let i=0;i<n;i++)upMap(dt)}else if(mode=='battle'&&B)upBattle(dt*B.spd)}
@@ -1452,6 +1530,6 @@ let LAGON=(()=>{try{return localStorage.getItem('ltlc-lag')!='0'}catch(e){return
 function lagTick(now){const g=LF.last?now-LF.last:0;LF.last=now;LF.n++;if(g>LF.mx||now-LF.mxT>5000){LF.mx=g;LF.mxT=now}if(now-LF.t0>=1000){LF.fps=Math.round(LF.n*1000/(now-LF.t0));LF.n=0;LF.t0=now;if(MOB&&G&&!paused&&!document.hidden){const tg=ULQ?24:29;if(LF.fps<tg*.75){LF.lo=(LF.lo||0)+1;LF.hi=0}else if(LF.fps>=tg){LF.hi=(LF.hi||0)+1;LF.lo=0}else LF.lo=LF.hi=0;if(LF.lo>=2&&DSR>.55){DSR=+(DSR-.1).toFixed(2);LF.lo=0;rs()}else if(LF.hi>=8&&DSR<1){DSR=Math.min(1,+(DSR+.1).toFixed(2));LF.hi=0;rs()}}tsBtn();const e=$('#lag');if(!e)return;const show=LAGON&&G&&mode!='title';e.style.display=show?'block':'none';if(!show)return;const tp=$('#top');e.style.top=((tp&&tp.offsetHeight?tp.getBoundingClientRect().bottom:40)+4)+'px';const mx=Math.round(LF.mx);e.innerHTML=SMALL()?`📶${LF.fps} ${mx>250?'🔴':mx>100?'🟡':'🟢'}`:`📶 ${LF.fps} hình/giây · giật lớn nhất ${mx}ms ${mx>250?'🔴':mx>100?'🟡':'🟢'}${DSR<1?` · nét ${Math.round(DSR*100)}%`:''}`}}
 let lfr=0;function loop(now){const cap=paused&&mode!='battle'?(ULQ?250:120):!MOB?0:ULQ?40:(LOWQ||mode=='map')?32:0;if(now-lfr<cap){requestAnimationFrame(loop);return}lfr=now;lagTick(now);try{if(JQ.length)runJobs(JQ.length>120?60:JQ.length>40?14:6);else if(TD&&G&&now-tdT>400){tdT=now;terrNow()}if(mode=='map')ensureCont();step(now)}catch(e){console.error(e)}requestAnimationFrame(loop)}
 setTimeout(()=>{bake();$('#load').remove();titleMenu();requestAnimationFrame(loop)},30);
-window.__T={slMenu,slSwitch,slExport,curSlot,slMeta,dhUpdate,cgMenu,cgUp,lsInit,fmtLS,tangGo,thienLo,tangCheck,held,genTangWorld,rank,wmAt:(x,y)=>WMAP?wmAt(x,y):-1,save:()=>save(),acToggle,acTick,JQ,runJobs,slim,newDay:()=>newDay(),drawMap:t=>drawMap(t),drawBattle:t=>drawBattle(t),setQ,QL:()=>QL,crown,rebel,contsHeld,vassalDay,chat,exileMenu,partyMenu,calcCH,diplo,hireGen,myGens,V,villageMenu,grantVillage,income,startFight,joinFight,encounter,toast,G:()=>G,S,B:()=>B,newGame,startMap,startBattle,endBattle,upMap,upBattle,quick,townMenu,setOrder,close,panel,getMode:()=>mode,MC,BC,rank,fiefs,indep};
+window.__T={qCur,qMenu,qHints,lblSet,GUIDE_D,slMenu,slSwitch,slExport,curSlot,slMeta,dhUpdate,cgMenu,cgUp,lsInit,fmtLS,tangGo,thienLo,tangCheck,held,genTangWorld,rank,wmAt:(x,y)=>WMAP?wmAt(x,y):-1,save:()=>save(),acToggle,acTick,JQ,runJobs,slim,newDay:()=>newDay(),drawMap:t=>drawMap(t),drawBattle:t=>drawBattle(t),setQ,QL:()=>QL,crown,rebel,contsHeld,vassalDay,chat,exileMenu,partyMenu,calcCH,diplo,hireGen,myGens,V,villageMenu,grantVillage,income,startFight,joinFight,encounter,toast,G:()=>G,S,B:()=>B,newGame,startMap,startBattle,endBattle,upMap,upBattle,quick,townMenu,setOrder,close,panel,getMode:()=>mode,MC,BC,rank,fiefs,indep};
 </script><div id="lag" style="position:fixed;left:6px;z-index:5;pointer-events:none;font:600 10px system-ui;color:#cfe;background:rgba(0,0,0,.45);padding:1px 6px;border-radius:6px;display:none"></div>
 </body></html>
