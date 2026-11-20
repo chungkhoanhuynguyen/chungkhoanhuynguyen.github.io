@@ -591,6 +591,11 @@ try:
         if b[-1] and _fz / b[-1] > 0.25: qc.append(("LỖI" if NHIP[0] else "CẢNH BÁO") + " rủi ro trình chiếu: %.0f%% thời lượng hình đứng yên ≥2s – thêm chuyển động/thẻ số/nhân vật" % (100 * _fz / b[-1]))
     except Exception as _e: qc.append("CẢNH BÁO không đo được khung đen/đứng hình: %s" % _e)
     if not os.path.exists(os.path.join(OUT, key + ".srt")): qc.append("LỖI thiếu file phụ đề .srt")
+    try:   # QL1 20/11: gói tiêu đề + bìa (học youtube-agent-skill yt-package)
+        import kiem_goi
+        _mm = (json.load(open(os.path.join(QD, "meta.json"), encoding="utf-8")).get(key, {}) or {})
+        qc += kiem_goi.kiem(_mm.get("title") or _mm.get("tieu_de"), _mm.get("bia_hook"))
+    except Exception as _e: qc.append("CẢNH BÁO không kiểm được gói/nhạc: %s" % _e)
     try:  # QL1 11/11: tự bắt lỗi số trên phụ đề (vd "6.000.001 tháng", "tháng 15", chữ số dính chữ)
         _tx = open(os.path.join(OUT, key + ".srt"), encoding="utf-8").read()
         for _m in re.findall(r"[^\n]*(?:\d{1,3}(?:\.\d{3}){2,}\d*\s*(?:triệu|tỷ|nghìn|tháng|năm)|tháng 1[3-9]\b(?![.,]\d)|tháng [2-9]\d\b(?![.,]\d)|\d[a-zA-ZÀ-ỹ]{2,})[^\n]*", _tx)[:5]:
