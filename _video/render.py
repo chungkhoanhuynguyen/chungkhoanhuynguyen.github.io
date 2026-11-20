@@ -545,8 +545,8 @@ try: _NH = json.load(open(os.path.join(HERE, "queue", sys.argv[1], "meta.json"),
 except Exception: _NH = ""
 _CANG = re.compile(r"sập|mất trắng|bốc hơi|cháy tài khoản|gọi ký quỹ|bán giải chấp|phá sản|vỡ nợ|lừa|kiện|bắt|trắng tay|nợ nần|hoảng|tháo chạy|lao dốc|thua lỗ", re.I)
 _cg = [(b[i], b[i + 1]) for i, r in enumerate(raw) if i < len(b) - 1 and _CANG.search(r.get("say", ""))]
-try: music.mix(rawmp4, b, out, music_db=-14, lofi=(_NH == "lofi"), cang=_cg or None)  # anh Huy 20/11: nhạc nền át giọng -> -8 xuống -14 dB
-except TypeError: music.mix(rawmp4, b, out, music_db=-14, lofi=(_NH == "lofi"))
+try: music.mix(rawmp4, b, out, music_db=-22, lofi=(_NH == "lofi"), cang=_cg or None)  # anh Huy 20/11: nhạc nền át giọng -> -8 xuống -14 dB
+except TypeError: music.mix(rawmp4, b, out, music_db=-22, lofi=(_NH == "lofi"))
 print(key, "nhac cang", len(_cg), flush=True)
 # 5) ảnh bìa = khung cảnh mở đầu lúc 3 giây
 try:  # ảnh bìa đồng bộ chữ to (bia.py) – anh Huy chốt 5/11
