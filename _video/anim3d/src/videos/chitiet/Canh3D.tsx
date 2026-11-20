@@ -5,27 +5,34 @@
 import React from "react";
 import { AbsoluteFill } from "remotion";
 import { Stage, Run, Cast, V, SetKey } from "./stage_ct";
-import { Pose } from "../vang/cast2";
+import { Pose, Acc } from "../vang/cast2";
 import { Expr } from "../pho/toon";
 import { LK } from "../vang/look";
 
-export type Act = "noi" | "dienthoai" | "omdau" | "di" | "chitay" | "ngoi" | "dung" | "goi";
-export type CastIn = { a: string; p: V; to?: V; act?: Act; side?: 1 | -1; expr?: Expr; ngoi?: boolean; lean?: number; ride?: boolean };
+export type Act = "noi" | "dienthoai" | "omdau" | "di" | "chitay" | "ngoi" | "dung" | "goi" | "giay";
+// acc: đồ cầm thêm (paper, cup, box, sweat...); giay = cầm giấy tờ + nói
+export type CastIn = { a: string; p: V; to?: V; act?: Act; side?: 1 | -1; expr?: Expr; ngoi?: boolean; lean?: number; ride?: boolean; acc?: Acc[] };
 export type Canh3DProps = { set: SetKey; light?: LK; cam: { from: [V, V, number]; to?: [V, V, number]; ease?: "sm" | "lin" | "out" }; cast: CastIn[]; frames: number; fps?: number; px?: number; tat?: string[] };
 
 const bl = (t: number, k = 71) => Math.floor(t * 30) % k < 4;
 const NOI: Expr[] = ["grin", "neutral", "smile", "neutral"];
+// 20/11 (anh Huy: lo lắng thì không cười): có expr thì khi nói chỉ đổi qua lại giữa expr và nét "mở miệng" CÙNG cảm xúc
+const TALK: Partial<Record<Expr, Expr>> = { worried: "nervous", nervous: "worried", stern: "neutral", pained: "worried", sad: "worried", smile: "grin", grin: "smile", relief: "relief_open", relief_open: "relief", neutral: "smile_closed", shock: "nervous", smug: "grin" };
+const VUI = new Set<Expr>(["smile", "grin", "relief", "relief_open", "smug", "laugh"]);
+const noiExpr = (c: CastIn, t: number, ph: number): Expr => { const k = Math.floor(t * 2.6 + ph); return c.expr ? (k % 2 ? TALK[c.expr] ?? c.expr : c.expr) : NOI[k % NOI.length]; };
 export function poseOf(c: CastIn, i: number): Cast["pose"] {
   const side = c.ngoi ? undefined : c.side, ph = i * 0.37;
   return (t: number): Pose => {
-    const base: Pose = { expr: c.expr ?? "neutral", blink: bl(t + ph * 3), side, mode: c.ngoi ? "sit" : "stand" };
+    const base: Pose = { expr: c.expr ?? "neutral", blink: bl(t + ph * 3), side, mode: c.ngoi ? "sit" : "stand", acc: c.acc };
+    const A = (x: Acc[]) => [...x, ...(c.acc ?? [])];
     switch (c.act) {
-      case "noi": return { ...base, expr: c.expr ? (Math.floor(t * 2.6 + ph) % 3 === 0 ? c.expr : NOI[Math.floor(t * 2.6 + ph) % NOI.length]) : NOI[Math.floor(t * 2.6 + ph) % NOI.length], wave: Math.floor(t * 0.7 + ph) % 3 === 0 ? 1 : undefined };
-      case "dienthoai": return { ...base, expr: c.expr ?? "worried", acc: ["phone"], side: undefined };
-      case "goi": return { ...base, expr: c.expr ?? "nervous", acc: ["phone"] };
+      case "noi": return { ...base, expr: noiExpr(c, t, ph), wave: (!c.expr || VUI.has(c.expr)) && !c.acc && Math.floor(t * 0.7 + ph) % 3 === 0 ? 1 : undefined };
+      case "giay": return { ...base, expr: noiExpr(c, t, ph), acc: A(["paper"]) };
+      case "dienthoai": return { ...base, expr: c.expr ?? "worried", acc: A(["phone"]), side: undefined };
+      case "goi": return { ...base, expr: c.expr ?? "nervous", acc: A(["phone"]) };
       case "omdau": return { ...base, expr: c.expr ?? "pained", prop: "face", side: undefined };
       case "di": return { ...base, expr: c.expr ?? "neutral", mode: "stroll", phase: (t * 1.1 + ph) % 1, side: side ?? 1 };
-      case "chitay": return { ...base, expr: c.expr ?? "stern", side: side ?? 1, reach: [0.6, 0.15] };
+      case "chitay": return { ...base, expr: noiExpr({ ...c, expr: c.expr ?? "stern" }, t, ph), side: side ?? 1, reach: [0.6, 0.15 + 0.05 * Math.sin(t * 2 + ph)] };
       default: return base;
     }
   };

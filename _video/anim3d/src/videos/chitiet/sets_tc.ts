@@ -173,19 +173,51 @@ export function buildNganHang() {
   room(g, 11, 8, 3.4, cleanWall(11, 3.4, "#e9e4d8", "#1f3d6a", 61), cleanWall(8, 3.4, "#e2ddd0", "#1f3d6a", 62), tiles(11, 8, 63, "#e9e6df", "#d6d2c8", 80), "#f4f2ee");
   g.add(plane(4.0, 0.55, signTex("NGÂN HÀNG PHỐ", "Giao dịch · Tiết kiệm · Cho vay", 4.0, 0.55, "#1f3d6a", "#f2d36b", 7), 0, 2.9, -2.95));
   // quầy dài + kính ngăn + số quầy + máy đếm tiền
-  g.add(bx(7.6, 1.05, 0.7, tm("#ffffff", woodTex(64, "#b88a5e")), 0, 0.52, -1.6)); g.add(bx(7.7, 0.05, 0.8, tm("#e8e4dc"), 0, 1.07, -1.6));
+  // 20/11: quầy thấp 0,85 m để thấy rõ nửa người nhân viên đứng sau quầy (đặt nhân viên y = 0,45, z ≈ -2,15)
+  g.add(bx(7.6, 0.85, 0.7, tm("#ffffff", woodTex(64, "#b88a5e")), 0, 0.425, -1.6)); g.add(bx(7.7, 0.05, 0.8, tm("#e8e4dc"), 0, 0.87, -1.6));
+  g.add(bx(7.6, 0.45, 0.04, tm("#e8e4dc"), 0, 0.225, -2.6)); g.add(bx(7.6, 0.04, 0.8, tm("#d6d2c8"), 0, 0.44, -2.25));
   const glass = new THREE.MeshPhysicalMaterial({ color: "#cfe3ea", transparent: true, opacity: 0.25, roughness: 0.05 });
-  for (let k = 0; k < 4; k++) { const x = -2.85 + k * 1.9; const pnl = new THREE.Mesh(new THREE.PlaneGeometry(1.7, 0.75), glass); pnl.position.set(x, 1.48, -1.3); pnl.layers.set(NOINK); g.add(pnl);
-    g.add(bx(0.04, 0.8, 0.04, tm("#9aa3ad"), x - 0.86, 1.48, -1.3)); g.add(plane(0.36, 0.28, paperTex([["QUẦY", "#ffffff", 50], [String(k + 1), "#f2d36b", 150]], 0.36, 0.28, "#1f3d6a"), x, 2.05, -1.32));
-    put(g, "CashRegister_01", x + 0.4, 1.1, -1.75, Math.PI, { h: 0.22, blob: 0 }); }
-  g.add(bx(7.7, 0.04, 0.04, tm("#9aa3ad"), 0, 1.88, -1.3));
+  for (let k = 0; k < 4; k++) { const x = -2.85 + k * 1.9; const pnl = new THREE.Mesh(new THREE.PlaneGeometry(1.7, 0.75), glass); pnl.position.set(x, 1.3, -1.3); pnl.layers.set(NOINK); g.add(pnl);
+    g.add(bx(0.04, 0.8, 0.04, tm("#9aa3ad"), x - 0.86, 1.3, -1.3)); g.add(plane(0.36, 0.28, paperTex([["QUẦY", "#ffffff", 50], [String(k + 1), "#f2d36b", 150]], 0.36, 0.28, "#1f3d6a"), x, 2.05, -1.32));
+    put(g, "CashRegister_01", x + 0.55, 0.9, -1.75, Math.PI, { h: 0.22, blob: 0 }); }
+  g.add(bx(7.7, 0.04, 0.04, tm("#9aa3ad"), 0, 1.7, -1.3));
   // bảng số thứ tự phát sáng + ghế chờ + cây + biển thông tin lãi suất
   g.add(bx(1.5, 0.5, 0.08, tm("#111"), 3.8, 2.3, -2.9)); { const [c, x] = cvs(384, 128); x.fillStyle = "#050505"; x.fillRect(0, 0, 384, 128); x.fillStyle = "#ff3b30"; x.font = `900 64px ${F}`; x.fillText("1024 → 3", 20, 88); const s = gl(ctex(c), 1.4, 0.44, 1.5); s.position.set(3.8, 2.3, -2.85); g.add(s); }
   g.add(plane(1.2, 1.5, paperTex([["LÃI SUẤT", "#c8202f", 60], ["TIẾT KIỆM", "#1f3d6a", 48], ["1 tháng ... 2,4%", "#222", 34], ["6 tháng ... 4,2%", "#222", 34], ["12 tháng .. 5,1%", "#222", 34], ["(minh hoạ)", "#888", 26]], 1.2, 1.5, "#fffdf3"), -4.2, 1.6, -2.95));
   for (let k = 0; k < 5; k++) put(g, "dining_chair_02", -3.2 + k * 0.6, 0, 2.6, Math.PI, { h: 0.9 });
   put(g, "potted_plant_02", 4.8, 0, 2.4, 0, { h: 1.0 }); put(g, "potted_plant_02", -5.0, 0, -0.4, 0, { h: 1.0 }); put(g, "security_camera_01", -5.2, 3.0, -2.7, 2.4, { h: 0.25, blob: 0 });
   for (const x of [-3, 0, 3]) g.add(bx(1.2, 0.05, 0.25, glow(2.0, 2.1, 2.2), x, 3.35, 0.2));
-  gopTinh(g); return { g: sh(g), cho: { nhanVien: [0, 0, -2.3] as V3, khach: [0.1, 0, -0.6] as V3 } };
+  gopTinh(g); return { g: sh(g), cho: { nhanVien: [0, 0.45, -2.15] as V3, khach: [0.1, 0, -0.55] as V3 } };
+}
+
+// ======================= XƯỞNG GỖ NHỎ (của anh Tín, 20/11) =======================
+// đứng giữa [0.2,0,0.4]; bàn giấy: ngồi [1.7,0,-0.25] (ghế sau lưng), đứng cạnh bàn [0.9,0,-0.4]; bàn thợ trái x≈-2
+export function buildXuongGo() {
+  sangLook(0.85, 0.92);
+  lamps([[[0, 3.1, -0.5], [0.5, 0.48, 0.42], 6.5], [[-2.6, 3.1, -1.2], [0.42, 0.4, 0.34], 5], [[2.6, 3.1, -0.8], [0.42, 0.4, 0.34], 5]]);
+  const g = new THREE.Group(), r = rng(77);
+  room(g, 11, 8, 3.5, cleanWall(11, 3.5, "#efe2c6", "#8a6a48", 71), cleanWall(8, 3.5, "#e9dcc0", "#8a6a48", 72), tiles(11, 8, 73, "#d2c9b8", "#c8bead", 90), "#d8d2c6");
+  nang(g, 3.2, 1.3, -2.96, 2.4, 1.5, 0, 0, 0.12);
+  for (let k = 0; k < 5; k++) g.add(bx(11, 0.12, 0.12, tm("#6a4a32"), 0, 3.38, -2.6 + k * 1.7));
+  g.add(plane(3.0, 0.55, signTex("XƯỞNG GỖ TÍN", "Bàn ghế · Tủ kệ · Nhận đặt hàng", 3.0, 0.55, "#5a3b2a", "#f2d36b", 11), 0, 2.85, -2.95));
+  // bàn thợ + ván đang làm + dụng cụ
+  put(g, "WoodenTable_01", -2.1, 0, -1.6, 0, { h: 0.86 }); g.add(bx(1.5, 0.05, 0.4, tm("#ffffff", woodTex(74, "#c9965e")), -2.1, 0.9, -1.6));
+  g.add(bx(0.3, 0.06, 0.08, tm("#c8202f"), -1.6, 0.95, -1.45)); g.add(bx(0.04, 0.04, 0.35, tm("#9aa3ad"), -2.6, 0.94, -1.5));
+  // đống ván gỗ xếp tầng (phải, sát tường) + ván dựng tường (trái)
+  for (let k = 0; k < 9; k++) { const y = 0.06 + k * 0.075; for (let j = 0; j < 3; j++) g.add(bx(2.6, 0.07, 0.28, tm("#ffffff", woodTex(80 + ((k + j) % 4), ["#b07a48", "#c9965e", "#9a6a3e", "#d1a26c"][(k + j) % 4])), 3.4, y, -2.55 + j * 0.31)); }
+  for (let k = 0; k < 7; k++) { const p = bx(0.22, 2.4, 0.04, tm("#ffffff", woodTex(90 + (k % 3), ["#c9965e", "#a8743e", "#d6ad78"][k % 3])), -4.6 + k * 0.26, 1.15, -2.82); p.rotation.x = -0.12; g.add(p); }
+  put(g, "wooden_crate_02", -3.9, 0, 0.2, 0.3, { h: 0.55 }); put(g, "wooden_crate_02", -3.85, 0.55, 0.15, -0.2, { h: 0.5 }); put(g, "steel_frame_shelves_02", 5.1, 0, 0.4, -Math.PI / 2, { h: 2.0 });
+  // ghế gỗ thành phẩm chờ giao
+  for (const [x, z, ry] of [[-0.9, -2.3, 0.2], [-0.3, -2.4, -0.3]] as number[][]) put(g, "dining_chair_02", x, 0, z, ry, { h: 0.9 });
+  // bàn giấy: hoá đơn, giấy báo ngân hàng, máy tính
+  put(g, "metal_office_desk", 1.7, 0, -1.0, 0, { h: 0.76 }); put(g, "SchoolChair_01", 1.7, 0, -0.35, Math.PI, { h: 0.85 });
+  for (let k = 0; k < 7; k++) { const pp = plane(0.21, 0.29, paperTex([[k % 3 ? "HOÁ ĐƠN" : "THÔNG BÁO", k % 3 ? "#1f3d6a" : "#c8202f", 46], ["...........", "#888", 40], ["...........", "#888", 40]], 0.21, 0.29, "#fffdf3"), 1.25 + (k % 4) * 0.2 + r() * 0.05, 0.765 + k * 0.002, -1.05 + Math.floor(k / 4) * 0.22); pp.rotation.set(-Math.PI / 2, 0, (r() - 0.5) * 0.6); g.add(pp); }
+  put(g, "classic_laptop", 2.25, 0.76, -1.15, 0.2, { h: 0.25, blob: 0 }); put(g, "stationery_supplies", 2.4, 0.76, -0.85, 0, { h: 0.12, blob: 0 });
+  g.add(plane(0.7, 0.5, paperTex([["LỊCH 11/2026", "#c8202f", 44], ["45", "#c8202f", 150]], 0.7, 0.5, "#ffffff"), 1.7, 1.75, -2.97));
+  g.add(plane(0.9, 0.6, paperTex([["ĐƠN HÀNG", "#1f3d6a", 52], ["Tủ 12 bộ – HUỶ", "#c8202f", 36], ["Bàn 30 bộ – HUỶ", "#c8202f", 36], ["Ghế 40 cái – chờ", "#222", 36]], 0.9, 0.6, "#fffdf3"), 2.8, 1.6, -2.97));
+  // mạt cưa trên sàn + đèn tuýp
+  for (const x of [-2.6, 0, 2.6]) g.add(bx(1.2, 0.05, 0.12, glow(2.1, 2.1, 2.0), x, 3.2, -0.6));
+  gopTinh(g); return { g: sh(g), cho: { dung: [0.2, 0, 0.4] as V3, ngoiBan: [1.7, 0, -0.25] as V3 } };
 }
 
 // ======================= CÀ PHÊ VỈA HÈ (phố ban ngày) =======================

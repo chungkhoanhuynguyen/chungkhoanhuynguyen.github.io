@@ -85,7 +85,13 @@ def conv(sc):
 scenes = [conv(s) for s in raw]
 
 # 3) giọng chốt Huy70_HaiDang30 (JSON từ secret HN_VOICE_JSON hoặc file)
-from vieneu import Vieneu
+_WV = os.environ.get("HN_WAV_DIR", "")   # 20/11: lô có cảnh 3D dựng song song – giọng đọc sẵn ở job "tts" (độ dài câu phải giữ nguyên để khớp khung 3D)
+_DU = bool(_WV) and all(os.path.exists("%s/%02d.wav" % (_WV, i)) for i in range(len(raw)))
+class _KoTTS:
+    sample_rate = 24000
+    def __init__(s): pass
+if _DU: Vieneu = _KoTTS
+else: from vieneu import Vieneu
 vj = os.environ.get("HN_VOICE_JSON")
 if vj: v = json.loads(vj)
 else:
@@ -117,6 +123,8 @@ def _doc(say, path):
     tts.save(np.clip(np.concatenate(out), -1.0, 1.0), path)
 for i, sc in enumerate(raw):
     say = sc.get("say", "").strip() or "."
+    if _WV and os.path.exists("%s/%02d.wav" % (_WV, i)):
+        shutil.copy("%s/%02d.wav" % (_WV, i), "%s/%02d.wav" % (wd, i)); continue
     try:
         _doc(say, "%s/%02d.wav" % (wd, i))
     except Exception as _e:
@@ -322,10 +330,11 @@ def _chuyen(prev, cur, tt, kieu):
     x = int(LW * u); bl = 1 + 22 * (1 - abs(2 * u - 1))
     can = Image.new("RGB", (LW, LH)); can.paste(prev, (-x, 0)); can.paste(cur, (LW - x, 0))
     return _mo_ngang(can, bl)
-def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
-    import wave, re
+def _giong_ghep(key, ns, wav_dir, gap=0.28, tail=1.2, tempo=1.0):
+    """cắt lặng + đệm từng câu đọc -> (mốc b, các đoạn wav, thư mục tạm). Dùng chung cho build_land và --chi-3d."""
+    import wave
     tmpd = "/tmp/hl_%s_parts" % key; os.makedirs(tmpd, exist_ok=True); parts = []; b = [0.0]
-    for i in range(len(scenes)):
+    for i in range(ns):
         src = os.path.join(wav_dir, "%02d.wav" % i); dst = os.path.join(tmpd, "%02d.wav" % i)
         pad = gap + (tail if i == len(scenes)-1 else 0)
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", src, "-af",
@@ -333,6 +342,10 @@ def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
             "-ar", "44100", "-ac", "1", dst])
         with wave.open(dst) as w: dd = w.getnframes()/w.getframerate()
         b.append(b[-1] + dd); parts.append(dst)
+    return b, parts, tmpd
+def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
+    import wave, re
+    b, parts, tmpd = _giong_ghep(key, len(scenes), wav_dir, gap, tail, tempo)
     lst = os.path.join(tmpd, "list.txt"); open(lst, "w").write("".join("file '%s'\n" % p for p in parts))
     A = os.path.join(tmpd, "full.wav")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", A])
@@ -378,6 +391,21 @@ def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
           "loudnorm=I=-14:TP=-1:LRA=7,alimiter=limit=0.95:attack=1:release=40:level=false")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", tmp, "-i", A, "-af", af, "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "44100", "-shortest", out])
     return b
+
+# 3a) --chi-3d (job "tts" của video.yml): chỉ đọc giọng + ghi danh sách cảnh 3D cần dựng (mã băm, số khung) rồi thoát;
+#     các máy r3d dựng song song từng khúc khung, job render ghép lại (r3d.prep) và dùng lại đúng các file giọng này.
+if "--chi-3d" in sys.argv:
+    import r3d
+    _b3, _, _ = _giong_ghep(key, len(scenes), wd); _f0 = 0; _jobs = []
+    for i, sc in enumerate(scenes):
+        n_ = int(round(_b3[i+1]*dx2.FPS)) - _f0; _f0 += n_
+        if sc.get("k") == "3d":
+            hk, pr, mp4 = r3d.plan(sc, n_, dx2.FPS)
+            if not os.path.exists(mp4): _jobs.append({"hk": hk, "props": pr, "key": key, "i": i})
+    _o3 = sys.argv[sys.argv.index("--chi-3d") + 1]; os.makedirs(_o3, exist_ok=True)
+    for i in range(len(scenes)): shutil.copy("%s/%02d.wav" % (wd, i), _o3)
+    json.dump(_jobs, open(os.path.join(_o3, "j3d.json"), "w"), ensure_ascii=False)
+    print(key, "chi-3d:", len(_jobs), "canh can dung,", sum(j["props"]["frames"] for j in _jobs), "khung", flush=True); sys.exit(0)
 
 # 3b) ảnh minh hoạ thật cho từng cảnh (Commons, miễn phí)
 try:

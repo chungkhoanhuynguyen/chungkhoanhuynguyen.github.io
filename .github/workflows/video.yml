@@ -20,6 +20,7 @@ jobs:
       batch: ${{ steps.p.outputs.batch }}
       keys: ${{ steps.p.outputs.keys }}
       has3d: ${{ steps.p.outputs.has3d }}
+      shards: ${{ steps.p.outputs.shards }}
     steps:
       - uses: actions/checkout@v4
         with: {fetch-depth: 2}
@@ -38,12 +39,88 @@ jobs:
           # lô có cảnh 3D kể chuyện ('k': '3d', xem _video/r3d.py) -> bước render cài Remotion + nới giờ
           h3 = "1" if b and re.search(r"['\x22]k['\x22]\s*:\s*['\x22]3d['\x22]", open(f"_video/queue/{b}/video_dai.py", encoding="utf-8").read()) else "0"
           with open(os.environ["GITHUB_OUTPUT"], "a") as f:
-              f.write(f"batch={b}\nkeys={json.dumps(ks)}\nhas3d={h3}\n")
+              # 20/11: cảnh 3D dựng song song – chia đều khung cho NS máy (job r3d), ~8 s/khung trên máy GitHub
+              ns = int(os.environ.get("NS3D", "12")) if h3 == "1" else 1
+              f.write(f"batch={b}\nkeys={json.dumps(ks)}\nhas3d={h3}\nshards={json.dumps(list(range(ns)))}\n")
           print(b, ks)
           PY
-  render:
+  # ---- chỉ lô có cảnh 3D: (1) tts – đọc giọng 1 lần + danh sách cảnh 3D cần dựng; (2) r3d – NS máy dựng song song từng khúc khung;
+  #      (3) render – dùng lại đúng giọng đó, ghép khúc 3D (r3d.prep) rồi dựng video như cũ. Lô không có 3D: bỏ qua 2 job này.
+  tts:
     needs: plan
-    if: needs.plan.outputs.batch != ''
+    if: needs.plan.outputs.batch != '' && needs.plan.outputs.has3d == '1'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        key: ${{ fromJson(needs.plan.outputs.keys) }}
+    env: {CANH3D_FPS: "10"}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/huggingface
+            ~/.cache/pip
+          key: vieneu-v1
+      - uses: actions/cache/restore@v4
+        with:
+          path: _video/out/cache3d
+          key: canh3d-${{ matrix.key }}-${{ github.run_id }}
+          restore-keys: canh3d-${{ matrix.key }}-
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core >/dev/null
+      - run: pip install -q vieneu "onnxruntime==1.22.1" numpy pillow opencv-python-headless
+      - run: python _video/render.py "${{ needs.plan.outputs.batch }}" "${{ matrix.key }}" --chi-3d "/tmp/giong/${{ matrix.key }}"
+      - run: cp /tmp/giong/${{ matrix.key }}/j3d.json /tmp/giong/j3d_${{ matrix.key }}.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: giong-${{ matrix.key }}
+          path: /tmp/giong/
+          retention-days: 3
+  r3d:
+    needs: [plan, tts]
+    if: needs.plan.outputs.has3d == '1'
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: ${{ fromJson(needs.plan.outputs.shards) }}
+    env: {CANH3D_FPS: "10", CANH3D_CONC: "4"}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {path: /tmp/giong, pattern: giong-*, merge-multiple: true}
+      - id: c
+        run: |
+          python3 -c "import json,glob,sys; sys.path.insert(0,'_video'); import r3d; J=[]; [J.extend(json.load(open(f))) for f in sorted(glob.glob('/tmp/giong/j3d_*.json'))]; print('n=%d' % len(r3d.chia(J, ${{ strategy.job-total }})[${{ matrix.shard }}]))" >> $GITHUB_OUTPUT
+      - if: steps.c.outputs.n != '0'
+        uses: actions/setup-node@v4
+        with: {node-version: 20}
+      - if: steps.c.outputs.n != '0'
+        uses: actions/cache@v4
+        with:
+          path: _video/anim3d/node_modules
+          key: anim3d-nm-${{ hashFiles('_video/anim3d/package.json') }}
+      - if: steps.c.outputs.n != '0'
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core >/dev/null
+      - if: steps.c.outputs.n != '0'
+        working-directory: _video/anim3d
+        run: npm i --no-audit --no-fund -s
+      - if: steps.c.outputs.n != '0'
+        run: python3 _video/r3d.py dung ${{ matrix.shard }} ${{ strategy.job-total }} /tmp/giong/j3d_*.json
+      - if: steps.c.outputs.n != '0'
+        uses: actions/upload-artifact@v4
+        with:
+          name: c3-${{ matrix.shard }}
+          path: _video/out/cache3d/c3_*.p*.mp4
+          retention-days: 3
+  render:
+    needs: [plan, tts, r3d]
+    if: always() && needs.plan.outputs.batch != '' && (needs.plan.outputs.has3d != '1' || needs.tts.result == 'success')'
     runs-on: ubuntu-latest
     timeout-minutes: ${{ needs.plan.outputs.has3d == '1' && 330 || 90 }}
     strategy:
@@ -81,8 +158,22 @@ jobs:
       - if: needs.plan.outputs.has3d == '1'
         working-directory: _video/anim3d
         run: npm i --no-audit --no-fund -s
+      # lô 3D: giọng đã đọc ở job tts (giữ đúng độ dài câu) + các khúc 3D từ job r3d -> r3d.prep ghép lại; khúc nào thiếu thì tự dựng tại chỗ
+      - if: needs.plan.outputs.has3d == '1'
+        uses: actions/download-artifact@v4
+        with:
+          path: /tmp/giong
+          pattern: giong-${{ matrix.key }}
+          merge-multiple: true
+      - if: needs.plan.outputs.has3d == '1'
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with: {path: _video/out/cache3d, pattern: c3-*, merge-multiple: true}
       - run: python _video/render.py "${{ needs.plan.outputs.batch }}" "${{ matrix.key }}"
-        env: {CANH3D_CONC: "4", CANH3D_FPS: "10"}
+        env:
+          CANH3D_CONC: "4"
+          CANH3D_FPS: "10"
+          HN_WAV_DIR: ${{ needs.plan.outputs.has3d == '1' && format('/tmp/giong/{0}', matrix.key) || '' }}
       - name: Tu cat 3 Shorts + bia A/B/C (QL1 11/11)
         continue-on-error: true
         run: |
@@ -95,6 +186,8 @@ jobs:
         run: |
           pip install -q faster-whisper || true
           timeout 1500 python _video/tool/wsp_qc.py _video/out "${{ matrix.key }}" || true
+      - if: needs.plan.outputs.has3d == '1'
+        run: rm -f _video/out/cache3d/c3_*.p*.mp4   # khúc đã ghép, không lưu vào cache
       - uses: actions/upload-artifact@v4
         with:
           name: out-${{ matrix.key }}

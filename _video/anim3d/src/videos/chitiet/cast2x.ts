@@ -106,6 +106,14 @@ function legMask(src: ImageData, yA: number, yB: number) {
   mg.putImageData(md, 0, 0); return { m, n, x0, x1, y0: yA, y1: yB };
 }
 type LM = ReturnType<typeof legMask>;
+/** mọi điểm mực của nét chân (kể cả chân que mảnh) dưới gấu áo, trong bề ngang thân áo -> dùng vẽ ống quần dày */
+function legInk(src: ImageData, J: { x0: number; x1: number }, yA: number, yB: number) {
+  const W = src.width, d = src.data, ink = hex(INK), m = document.createElement("canvas"); m.width = W; m.height = src.height; const mg = m.getContext("2d")!, md = mg.createImageData(W, src.height);
+  const xa = Math.max(0, Math.round(J.x0 + (J.x1 - J.x0) * 0.12)), xb = Math.min(W, Math.round(J.x1 - (J.x1 - J.x0) * 0.12)); let n = 0, x0 = W, x1 = -1;
+  for (let y = Math.max(0, yA); y < Math.min(src.height, yB); y++) for (let x = xa; x < xb; x++) { const i = (y * W + x) * 4;
+    if (d[i + 3] > 200 && Math.abs(d[i] - ink[0]) + Math.abs(d[i + 1] - ink[1]) + Math.abs(d[i + 2] - ink[2]) < 70) { md.data[i + 3] = 255; n++; if (x < x0) x0 = x; if (x > x1) x1 = x; } }
+  mg.putImageData(md, 0, 0); return { m, n, x0, x1, y0: yA, y1: yB };
+}
 function clipTo(g: CanvasRenderingContext2D, mk: HTMLCanvasElement, fn: (x: CanvasRenderingContext2D) => void) {
   const l = document.createElement("canvas"); l.width = mk.width; l.height = mk.height; const x = l.getContext("2d")!; fn(x); x.globalCompositeOperation = "destination-in"; x.drawImage(mk, 0, 0); g.drawImage(l, 0, 0);
 }
@@ -173,7 +181,29 @@ export class ActorX extends Actor {
         if (F.muscle && G.side) { g.fillStyle = o.skin ?? "#c98a5a"; g.strokeStyle = INK; g.lineWidth = 4; const bx = G.X(-0.05, 0.3), by = G.y(0.3); g.beginPath(); g.ellipse(bx, by, W0(G) * 0.24, G.H * 0.2, G.fr * 0.25, 0, 7); g.fill(); g.stroke();
           g.strokeStyle = "rgba(255,255,255,.6)"; g.lineWidth = 3; g.beginPath(); g.arc(bx - G.fr * 6, by - 8, 14, Math.PI * 1.1, Math.PI * 1.6); g.stroke(); } } }
     if (o.hat === "cap" && F.capBadge && okJ) this.cap(g, img, J, p.side ?? 0);
+    if (!F.jogger && okJ) this.thickLegs(g, legInk(img, J, yLeg, S.n > 30 ? S.y0 - 1 : 990), J, S);
     this.legsShoes(g, S, P, r);
+  }
+  /** 20/11 (anh Huy: bỏ "chân que"): ống quần dày vẽ PHÍA SAU nét chân que (destination-over: chỉ lấp chỗ trong suốt, không đè áo/giày) */
+  private thickLegs(g: CanvasRenderingContext2D, P: LM, J: MK, S: MK) {
+    if (P.n < 60) return;
+    const d = P.m.getContext("2d")!.getImageData(0, 0, 600, 1000).data, L: [number, number][] = [], R: [number, number][] = [];
+    for (let y = P.y0; y < P.y1; y += 5) { const runs: number[] = []; let a = -1;
+      for (let x = 0; x <= 600; x++) { const on = x < 600 && d[(y * 600 + x) * 4 + 3] > 0; if (on && a < 0) a = x; if (!on && a >= 0) { runs.push((a + x - 1) / 2); a = -1; } }
+      if (!runs.length) continue; L.push([runs[0], y]); R.push([runs[runs.length - 1], y]); }
+    if (L.length < 4) return;
+    const w = Math.max(30, Math.min(52, (J.n > 1500 ? J.x1 - J.x0 : 200) * 0.22)), top = Math.max(0, P.y0 - 26), bot = S.n > 30 ? S.y0 + 4 : P.y1;
+    const pts = (Q: [number, number][]) => [[Q[0][0], top], ...Q, [Q[Q.length - 1][0], bot]] as [number, number][];
+    g.save(); g.globalCompositeOperation = "destination-over"; g.lineCap = "round"; g.lineJoin = "round";
+    for (const [col, lw] of [[this.F.pants ?? this.o.pants, w], [INK, w + 9]] as [string, number][]) for (const Q of [pts(L), pts(R)]) {
+      g.strokeStyle = col; g.lineWidth = lw; g.beginPath(); Q.forEach(([x, y], i) => (i ? g.lineTo(x, y) : g.moveTo(x, y))); g.stroke(); }
+    g.restore();
+    // nét mực que cũ nằm giữa ống quần -> tô màu quần (sẫm nhẹ) cho thành nếp quần mờ
+    const img = g.getImageData(0, 0, 600, 1000), D = img.data, ink = hex(INK), pc = hex(this.F.pants ?? this.o.pants).map((v) => Math.round(v * 0.82));
+    for (let y = P.y0; y < Math.min(1000, bot - 2); y++) for (let x = Math.max(0, P.x0 - 6); x < Math.min(600, P.x1 + 7); x++) { const i = (y * 600 + x) * 4;
+      if (D[i + 3] > 200 && Math.abs(D[i] - ink[0]) + Math.abs(D[i + 1] - ink[1]) + Math.abs(D[i + 2] - ink[2]) < 60) {
+        let k = 0; for (const dx of [-12, 12]) { const j = (y * 600 + x + dx) * 4; if (x + dx >= 0 && x + dx < 600 && D[j + 3] > 200) k++; } if (k === 2) { D[i] = pc[0]; D[i + 1] = pc[1]; D[i + 2] = pc[2]; } } }
+    g.putImageData(img, 0, 0);
   }
   /** các món vẽ TRONG mảng áo */
   private torso(g: CanvasRenderingContext2D, G: Geo, r: () => number) {

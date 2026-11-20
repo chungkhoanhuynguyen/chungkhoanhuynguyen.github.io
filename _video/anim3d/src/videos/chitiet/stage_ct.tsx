@@ -20,13 +20,13 @@ import { buildExtras } from "../vang/extras";
 import { buildCafe, buildPho, buildNet, buildCanHo, buildSuaXe } from "../vang/sets2";
 import { buildSuaXe2 } from "./suaxe2";
 import { buildShowroom, buildPhoXe } from "./canh_xe";
-import { buildSapVai, buildPhongKhach, buildVanPhong, buildNganHang, buildCafeVH } from "./sets_tc";
+import { buildSapVai, buildPhongKhach, buildVanPhong, buildNganHang, buildCafeVH, buildXuongGo } from "./sets_tc";
 import { ActorX } from "./cast2x";
 import { buildLop, buildTan, buildSo, buildSa, buildAthens, buildUruk, buildTenoch, buildThao, buildPlaza, buildXuong, drawBoard as drawChalk, drawScore, Board } from "../ltc5/sets_ltc";
 
 export type V = [number, number, number];
-export type SetKey = "room" | "street" | "streetday" | "shop" | "hue" | "bt" | "lake" | "villa" | "field" | "fieldfever" | "korea" | "bank" | "photo" | "lop" | "tan" | "so" | "sa" | "athens" | "uruk" | "tenoch" | "thao" | "plaza" | "xuong" | "cafe" | "pho" | "net" | "netsp" | "canho" | "canhovip" | "suaxe" | "suaxe2" | "suaxe2xe" | "showroom" | "phoxe" | "suaxe2mau" | "showroom2" | "phoxe2" | "sapvai" | "phongkhach" | "vanphong" | "nganhang" | "cafevh";
-export const OFF: Record<SetKey, number> = { room: RX, street: SX, streetday: SX, shop: IX, hue: HX, bt: BX, lake: GX, villa: VX, field: FX, fieldfever: FX, korea: KX, bank: NX, photo: 0, lop: 0, tan: 0, so: 0, sa: 0, athens: 0, uruk: 0, tenoch: 0, thao: 0, plaza: 0, xuong: 0, cafe: 0, pho: 0, net: 0, netsp: 0, canho: 0, canhovip: 0, suaxe: 0, suaxe2: 0, suaxe2xe: 0, showroom: 0, phoxe: 0, suaxe2mau: 0, showroom2: 0, phoxe2: 0, sapvai: 0, phongkhach: 0, vanphong: 0, nganhang: 0, cafevh: 0 };
+export type SetKey = "room" | "street" | "streetday" | "shop" | "hue" | "bt" | "lake" | "villa" | "field" | "fieldfever" | "korea" | "bank" | "photo" | "lop" | "tan" | "so" | "sa" | "athens" | "uruk" | "tenoch" | "thao" | "plaza" | "xuong" | "cafe" | "pho" | "net" | "netsp" | "canho" | "canhovip" | "suaxe" | "suaxe2" | "suaxe2xe" | "showroom" | "phoxe" | "suaxe2mau" | "showroom2" | "phoxe2" | "sapvai" | "phongkhach" | "vanphong" | "nganhang" | "cafevh" | "xuonggo";
+export const OFF: Record<SetKey, number> = { room: RX, street: SX, streetday: SX, shop: IX, hue: HX, bt: BX, lake: GX, villa: VX, field: FX, fieldfever: FX, korea: KX, bank: NX, photo: 0, lop: 0, tan: 0, so: 0, sa: 0, athens: 0, uruk: 0, tenoch: 0, thao: 0, plaza: 0, xuong: 0, cafe: 0, pho: 0, net: 0, netsp: 0, canho: 0, canhovip: 0, suaxe: 0, suaxe2: 0, suaxe2xe: 0, showroom: 0, phoxe: 0, suaxe2mau: 0, showroom2: 0, phoxe2: 0, sapvai: 0, phongkhach: 0, vanphong: 0, nganhang: 0, cafevh: 0, xuonggo: 0 };
 export type Cast = { a: string; p: V; to?: V; pose: (t: number, d: number) => Pose; ride?: boolean; lean?: number }; // ride: ngồi xe – p.y = độ cao yên, thẻ cắt ngang hông
 export type Shot3D = { bg?: string; bgFit?: [number, number]; set: SetKey; light: LK; from: [V, V, number]; to: [V, V, number]; cast: Cast[]; rain?: boolean; shake?: number; chat?: "calm" | "fast" | "off" | "boom"; game?: boolean; board?: "buy" | "sell"; ease?: "sm" | "lin" | "out"; walkers?: boolean; jam?: boolean; chalk?: string[]; chalkT?: number; score?: 1 | 2 };
 export type Run = { a: number; b: number; s: Shot3D }; // frames, relative to the Stage sequence
@@ -99,7 +99,7 @@ const Inner: React.FC<{ set: SetKey; runs: Run[]; chiTiet: boolean; fps?: number
     else if (set === "thao") root.add(buildThao().g); else if (set === "plaza") root.add(buildPlaza().g);
     else if (set === "suaxe") root.add(buildSuaXe().g);
     else if (set === "suaxe2" || set === "suaxe2xe" || set === "suaxe2mau") { if (!chiTiet) throw new Error("set chi tiết cần cờ chiTiet"); root.add(buildSuaXe2({ sieuxe: set === "suaxe2xe", mau: set === "suaxe2mau" }).g); }
-    else if (set === "sapvai" || set === "phongkhach" || set === "vanphong" || set === "nganhang" || set === "cafevh") { if (!chiTiet) throw new Error("set chi tiết cần cờ chiTiet"); root.add({ sapvai: buildSapVai, phongkhach: buildPhongKhach, vanphong: buildVanPhong, nganhang: buildNganHang, cafevh: buildCafeVH }[set]().g); }
+    else if (set === "sapvai" || set === "phongkhach" || set === "vanphong" || set === "nganhang" || set === "cafevh" || set === "xuonggo") { if (!chiTiet) throw new Error("set chi tiết cần cờ chiTiet"); root.add({ sapvai: buildSapVai, phongkhach: buildPhongKhach, vanphong: buildVanPhong, nganhang: buildNganHang, cafevh: buildCafeVH, xuonggo: buildXuongGo }[set]().g); }
     else if (set === "showroom" || set === "showroom2") { if (!chiTiet) throw new Error("set chi tiết cần cờ chiTiet"); root.add(buildShowroom({ mau: set === "showroom2" }).g); }
     else if (set === "phoxe" || set === "phoxe2") { if (!chiTiet) throw new Error("set chi tiết cần cờ chiTiet"); root.add(buildPhoXe(undefined, { mau: set === "phoxe2" }).g); }
     else if (set === "cafe") root.add(buildCafe().g); else if (set === "pho") root.add(buildPho().g);

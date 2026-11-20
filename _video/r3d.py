@@ -6,7 +6,8 @@
 #           'cam': [[x,y,z],[nhìn x,y,z],fov] hoặc {'from': [...], 'to': [...]}, 'cast': [{'a': khoá nhân vật, 'p': [x,y,z], 'act': ..., 'side': ±1, 'ngoi': True, 'to': [...]}],
 #           'light': 'day' (mặc định, sáng)|'golden'|'room'|..., 'cap': (...), 'label': ..., 'say': ...}
 import os, json, hashlib, subprocess, math
-from PIL import Image, ImageDraw
+try: from PIL import Image, ImageDraw
+except ImportError: Image = ImageDraw = None   # máy r3d chỉ dựng khúc khung, không cần PIL
 HERE = os.path.dirname(os.path.abspath(__file__)); A3 = os.path.join(HERE, "anim3d")
 LW, LH = 1920, 1080
 FPS3 = int(os.environ.get("CANH3D_FPS", "10")); SCALE = float(os.environ.get("CANH3D_SCALE", "1"))
@@ -29,14 +30,37 @@ def _props(sc, n3):
     cam = sc.get("cam") or [[0, 1.5, 4.2], [0, 1.0, -1.0], 40]
     if isinstance(cam, list): cam = {"from": cam}
     return {"set": sc.get("set", "sapvai"), "light": sc.get("light", "day"), "cam": cam, "cast": sc.get("cast", []), "frames": int(n3), "fps": FPS3, "px": PX, "tat": TAT}
-def prep(sc, n, FPS, key="", i=0):
+def plan(sc, n, FPS):
+    """(mã băm, props, đường dẫn mp4 trong kho) của cảnh 3D dài n khung ở FPS video."""
     n3 = max(2, int(math.ceil(n * FPS3 / FPS)) + 1); pr = _props(sc, n3)
     hk = hashlib.sha1((json.dumps(pr, sort_keys=True, ensure_ascii=False) + _src_hash() + "s%.2f" % SCALE).encode()).hexdigest()[:20]
-    mp4 = os.path.join(CACHE, "c3_%s.mp4" % hk)
+    return hk, pr, os.path.join(CACHE, "c3_%s.mp4" % hk)
+def _ghep(hk, n3, mp4):
+    """nối các khúc c3_<hk>.p<a>-<b>.mp4 do các máy r3d dựng song song (đủ liền 0..n3-1) thành mp4 của cảnh."""
+    import glob, re
+    ps = []
+    for f in glob.glob(os.path.join(CACHE, "c3_%s.p*.mp4" % hk)):
+        m = re.search(r"\.p(\d+)-(\d+)\.mp4$", f)
+        if m: ps.append((int(m.group(1)), int(m.group(2)), f))
+    ps.sort(); k = 0
+    for a, b, _ in ps:
+        if a != k: return False
+        k = b + 1
+    if not ps or k != n3: return False
+    lst = mp4 + ".txt"; open(lst, "w").write("".join("file '%s'\n" % f for _, _, f in ps))
+    r = subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", mp4 + ".tmp.mp4"])
+    if r.returncode != 0: return False
+    os.replace(mp4 + ".tmp.mp4", mp4); print("canh 3d ghep", hk, len(ps), "khuc", flush=True); return True
+def _dung(pr, out, rng=None):
+    pj = "/tmp/c3_%d_%s.json" % (os.getpid(), os.path.basename(out)); json.dump(pr, open(pj, "w"), ensure_ascii=False)
+    env = dict(os.environ, CANH3D_BUNDLE=BUNDLE)
+    if rng: env["CANH3D_RANGE"] = "%d-%d" % rng
+    return subprocess.run(["node", "canh3d_render.mjs", pj, out, str(SCALE)], cwd=A3, env=env, capture_output=True, text=True)
+def prep(sc, n, FPS, key="", i=0):
+    hk, pr, mp4 = plan(sc, n, FPS); n3 = pr["frames"]
+    if not os.path.exists(mp4): _ghep(hk, n3, mp4)
     if not os.path.exists(mp4):
-        pj = "/tmp/c3_%s.json" % hk; json.dump(pr, open(pj, "w"), ensure_ascii=False)
-        env = dict(os.environ, CANH3D_BUNDLE=BUNDLE)
-        r = subprocess.run(["node", "canh3d_render.mjs", pj, mp4 + ".tmp.mp4", str(SCALE)], cwd=A3, env=env, capture_output=True, text=True)
+        r = _dung(pr, mp4 + ".tmp.mp4")
         print(key, "canh 3d", i, pr["set"], n3, "khung:", (r.stdout.strip().splitlines() or ["?"])[-1], flush=True)
         if r.returncode != 0 or not os.path.exists(mp4 + ".tmp.mp4"): print(r.stderr[-1500:], flush=True); raise RuntimeError("canh 3d loi: %s" % pr["set"])
         os.replace(mp4 + ".tmp.mp4", mp4)
@@ -84,3 +108,28 @@ def frame(sc, t):
     im = rd.get(k)
     if k >= sc["_r3n"] - 1: rd.close()
     _the(im, sc, t); return im
+
+def chia(jobs, ns):
+    """chia đều KHUNG của mọi cảnh cần dựng cho ns máy: -> [[(job, a, b), ...] cho từng máy] (khúc liền, a..b gồm cả b)."""
+    tot = sum(j["props"]["frames"] for j in jobs); out = [[] for _ in range(ns)]; g0 = 0
+    for j in jobs:
+        n3 = j["props"]["frames"]; a = 0
+        while a < n3:
+            s_ = max(k for k in range(ns) if k * tot // ns <= g0 + a); end_s = (s_ + 1) * tot // ns   # khung toàn cục cuối (không gồm) của máy s_
+            b = min(n3, max(a + 1, end_s - g0)); out[s_].append((j, a, b - 1)); a = b
+        g0 += n3
+    return out
+if __name__ == "__main__" and len(__import__("sys").argv) > 1 and __import__("sys").argv[1] == "dung":
+    # python _video/r3d.py dung <máy thứ> <số máy> <j3d.json ...>: dựng phần khung của máy này vào CACHE (c3_<hk>.p<a>-<b>.mp4)
+    import sys, time
+    me, ns = int(sys.argv[2]), int(sys.argv[3]); jobs = []
+    for f in sys.argv[4:]: jobs += json.load(open(f))
+    seen = set(); jobs = [j for j in jobs if not (j["hk"] in seen or seen.add(j["hk"]))]
+    mine = chia(jobs, ns)[me]; print("may", me, "/", ns, ":", [(j["hk"][:8], a, b) for j, a, b in mine], flush=True)
+    for j, a, b in mine:
+        out = os.path.join(CACHE, "c3_%s.p%05d-%05d.mp4" % (j["hk"], a, b)); t0 = time.time()
+        if os.path.exists(out): continue
+        r = _dung(j["props"], out + ".tmp.mp4", (a, b))
+        print(j.get("key"), "canh", j.get("i"), j["props"]["set"], a, b, "%.0fs" % (time.time() - t0), (r.stdout.strip().splitlines() or ["?"])[-1], flush=True)
+        if r.returncode != 0 or not os.path.exists(out + ".tmp.mp4"): print(r.stderr[-2000:], flush=True); sys.exit(1)
+        os.replace(out + ".tmp.mp4", out)
