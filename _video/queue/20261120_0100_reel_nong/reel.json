@@ -551,7 +551,8 @@
     "loi": "Riêng xăng E10 còn 19.100 đồng, rẻ hơn kỳ 29/10 khoảng 6.630 đồng mỗi lít. Em tự tính: xe máy đổ 4 lít bớt khoảng 26.500 đồng.",
     "loi_doc": "Riêng xăng E mười còn mười chín nghìn một trăm đồng, rẻ hơn kỳ hai mươi chín tháng mười khoảng sáu nghìn sáu trăm ba mươi đồng mỗi lít. Em tự tính: xe máy đổ bốn lít bớt khoảng hai mươi sáu nghìn rưỡi.",
     "anh": [
-     "motorcycle refueling||fuel nozzle"
+     "Vietnam petrol station motorbike||Petrolimex fuel pump",
+     "fuel nozzle"
     ],
     "the": {
      "loai": "lon",
@@ -574,7 +575,8 @@
        "trang"
       ]
      ]
-    }
+    },
+    "chat": 1
    },
    {
     "chu_to": "DIESEL VẪN 26.347 ĐỒNG",
