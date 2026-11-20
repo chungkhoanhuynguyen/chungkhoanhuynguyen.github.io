@@ -263,7 +263,7 @@ def cards(im, d, sc, t, box=BX):
     y = (box[1]+box[3])/2 - tot/2
     for i, cd in enumerate(cs):
         big, small, num = cd[:3]; ncol = cd[3] if len(cd) > 3 else ((28, 140, 78) if num.startswith("+") else RED)
-        a = ease((t - 0.2 - i*0.45)/0.5)
+        a = ease((t - (sc["_nhip"][i] if sc.get("_nhip") else 0.2 + i*0.45))/0.5)   # _nhip: hiện theo câu (video dài 20/11)
         if a > 0:
             x0 = 110 - (1-a)*200; x1 = x0 + 860
             ov = Image.new("RGBA", (W, H), (0, 0, 0, 0)); od = ImageDraw.Draw(ov); al = int(255*a)
@@ -282,10 +282,10 @@ def checklist(im, d, sc, t, box=BX):
     if sc.get("title"):
         d.text((box[0]+50, box[1]+40), sc["title"], font=F("ExtraBold", 32), fill=GOLD); y += 60
     for i, it in enumerate(items):
-        a = ease((t - 0.3 - i*sc.get("gap", 1.1))/0.4)
+        a = ease((t - (sc["_nhip"][i] if sc.get("_nhip") else 0.3 + i*sc.get("gap", 1.1)))/0.4)
         if a <= 0: continue
         bx = box[0]+50; d.rounded_rectangle([bx, y, bx+52, y+52], 8, outline=mix(GOLD, a, PANEL), width=4)
-        ck = ease((t - 0.7 - i*sc.get("gap", 1.1))/0.35)
+        ck = ease((t - (sc["_nhip"][i] + 0.4 if sc.get("_nhip") else 0.7 + i*sc.get("gap", 1.1)))/0.35)
         if ck > 0:
             pts = [(bx+11, y+27), (bx+23, y+40), (bx+44, y+12)]
             d.line(pts[:2] if ck < 0.5 else pts, fill=GOLD, width=7, joint="curve")
@@ -383,7 +383,7 @@ def bars(im, d, sc, t, box=BX):
     if sc.get("tag"): d.text((box[0]+28, box[1]+14), sc["tag"], font=F("Bold", 24), fill=DIM)
     for i, b in enumerate(bs):
         lab, v, col = b[0], b[1], b[2]; txt = b[3] if len(b) > 3 else fmtp(v)
-        a = ease((t - 0.2 - i*0.18)/0.6)
+        a = ease((t - (sc["_nhip"][i] if sc.get("_nhip") else 0.2 + i*0.18))/0.6)
         if a <= 0: continue
         yc = y0 + rh*(i+0.5); bh = min(46, rh*0.62)
         f = fl; d.text((x0, yc - f.size*0.62), lab, font=f, fill=mix(CREAM, a, PANEL))

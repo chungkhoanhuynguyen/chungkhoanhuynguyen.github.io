@@ -49,12 +49,17 @@ def _chu_phai(im, sc, t):
         a = dx2.ease((t - 0.2 - i * 0.18) / 0.45)
         if a <= 0: continue
         f = dx2.fit(d, l, "Black", cw, 96); c = cols[i] if i < len(cols) else (255, 255, 255)
-        d.text((x0, y + (1 - a) * 24), l, font=f, fill=dx2.mix(c, a, DARK), stroke_width=2, stroke_fill=(0, 0, 0)); y += int(f.size * 1.18)
+        if sc.get("_cau"):
+            import nhip; nhip.chu_mau(d, x0, y + (1 - a) * 24, l, f, c, a, DARK, 2)
+        else: d.text((x0, y + (1 - a) * 24), l, font=f, fill=dx2.mix(c, a, DARK), stroke_width=2, stroke_fill=(0, 0, 0))
+        y += int(f.size * 1.18)
     if sc.get("cap") and any(sc["cap"]):
         a = dx2.ease((t - 0.6) / 0.4); d.line([x0, y + 20, x0 + int(140 * a), y + 20], fill=(255, 196, 0), width=6)
 
 def _thoi_diem(sc, n, co_san=0):
     T = max(2.0, sc.get("_T", 8.0)); a, b = 0.35, max(0.8, T - 1.4); m = n - co_san
+    if sc.get("_cau") and m > 0:   # 20/11 nhịp hình: tin/thông báo/dòng hiện theo CÂU đang đọc (nhip.py), chỉ lô mới
+        import nhip; return [-1.0] * co_san + nhip.lich(sc, m, sc.get("_nhan_ui"), t_min=a)
     return [-1.0] * co_san + [a + (b - a) * i / max(1, m) for i in range(m)]
 
 def chat(sc, t):

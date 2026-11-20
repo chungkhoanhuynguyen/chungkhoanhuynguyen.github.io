@@ -212,8 +212,8 @@ NHIP = [HU[0] and nhip.bat(batch, g)]   # 20/11: nhịp hình 3–5s theo lời 
 try: HOOK = (json.load(open(os.path.join(QD, "meta.json"), encoding="utf-8")).get(key, {}) or {}).get("bia_hook") or ""
 except Exception: HOOK = ""
 if not HOOK and isinstance(g.get("META"), dict): HOOK = (g["META"].get(key) or {}).get("bia") or (g["META"].get(key) or {}).get("bia_hook") or ""
-if isinstance(HOOK, (list, tuple)): HOOK = " ".join(str(x) for x in HOOK)
-HOOK = str(HOOK).replace("\n", " ")
+HOOK = [str(x) for x in HOOK] if isinstance(HOOK, (list, tuple)) else str(HOOK).split("\n")   # mỗi phần = 1 dòng (tự xuống dòng nếu dài)
+HOOK = [x for x in HOOK if x.strip()]
 SUBQ = [None]
 _DO = re.compile(r"^(giảm|mất|lỗ|sập|nghèo|khó|âm|bán|tháo|hoảng|đóng|phá|nợ|rơi|bẫy|rủi)", re.I)
 _XANH = re.compile(r"^(tăng|lãi|giàu|lời|dương|hồi|mua|gom|khỏe|bền)", re.I)
