@@ -118,9 +118,9 @@ def _nghi(c):
 def _doc(say, path):
     sr = tts.sample_rate; out = []; xs = _cau(say)
     for j, c in enumerate(xs):
-        n = len(c.split()); temp = 0.78 if (n <= 8 or c.endswith("?")) else 0.7
+        n = len(c.split()); temp = 0.68 if (n <= 8 or c.endswith("?")) else 0.62   # QL1 20/11: hạ nhiệt độ cho giọng ổn định, bớt nhấn lạ
         a = np.asarray(tts.infer(c, voice=VOICE, temperature=temp), dtype=np.float32).reshape(-1)
-        if n <= 6 or c.endswith("?"): a = a * 1.12               # nhấn nhẹ câu ngắn / câu hỏi
+        if n <= 6 or c.endswith("?"): a = a * 1.04               # nhấn nhẹ câu ngắn / câu hỏi
         out.append(a)
         if j < len(xs) - 1: out.append(np.zeros(int(sr * _nghi(c)), dtype=np.float32))
     tts.save(np.clip(np.concatenate(out), -1.0, 1.0), path)
@@ -501,10 +501,8 @@ try:
         elif i < len(b) - 1 and re.search(r"\d+[.,]?\d*\s*(%|tỷ|nghìn tỷ|lần)", r.get("say", "")): ev.append((b[i] + 0.35, "pop"))
     if NHIP[0]:   # 20/11: whoosh MỌI chuyển cảnh + pop ở thẻ/cột/ô ĐẦU TIÊN, rất nhỏ (≈ -28 dB so với giọng); bỏ pop theo số (dày)
         ev = [(e[0], "whoosh_nho" if e[1] == "whoosh" else e[1]) for e in ev if e[1] != "pop"]
-        for i in range(1, len(b) - 1):
-            if not raw[i].get("ch"): ev.append((max(0, b[i] - 0.12), "whoosh_nho"))
         for i, sc in enumerate(scenes):
-            if i < len(b) - 1 and sc.get("_nhip"): ev.append((b[i] + sc["_nhip"][0], "pop_nho"))
+            pass   # QL1 20/11 21:25: bỏ pop + whoosh mỗi cảnh (anh Huy chê tiếng "soạt")
         def _chuan(f, db=-42.0):   # RMS phần có tiếng = giọng (-14 LUFS) - 28 dB, tính cả hệ số 0,28 của track
             x = f(); r = np.sqrt(np.mean(x[np.abs(x) > 1e-3] ** 2)) or 1.0
             return lambda: x * (10 ** (db / 20) / r / 0.28)
