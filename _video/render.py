@@ -489,8 +489,8 @@ try:
     rawmp4 = r2; print(key, "sfx", len(ev), flush=True)
 except Exception as e:
     print("sfx: bo qua", e, flush=True)
-try: _NH = json.load(open(os.path.join(HERE, "queue", sys.argv[1], "meta.json"), encoding="utf-8")).get(key, {}).get("nhac", "")
-except Exception: _NH = ""
+try: _NH = json.load(open(os.path.join(HERE, "queue", sys.argv[1], "meta.json"), encoding="utf-8")).get(key, {}).get("nhac", "") or ("lofi" if str(key).startswith("NONG") else "")
+except Exception: _NH = "lofi" if str(key).startswith("NONG") else ""
 _CANG = re.compile(r"sập|mất trắng|bốc hơi|cháy tài khoản|gọi ký quỹ|bán giải chấp|phá sản|vỡ nợ|lừa|kiện|bắt|trắng tay|nợ nần|hoảng|tháo chạy|lao dốc|thua lỗ", re.I)
 _cg = [(b[i], b[i + 1]) for i, r in enumerate(raw) if i < len(b) - 1 and _CANG.search(r.get("say", ""))]
 try: music.mix(rawmp4, b, out, music_db=-14, lofi=(_NH == "lofi"), cang=_cg or None)  # anh Huy 20/11: nhạc nền át giọng -> -8 xuống -14 dB
