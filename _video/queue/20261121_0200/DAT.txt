@@ -1,0 +1,1 @@
+CH2811TP | 1:9 2:9 3:9 4:9 5:9 6:9 7:9 8:9 9:9 10:9 | đã soát V1 V2 (V1 lỗi phụ đề 2.000.007 + "9 phần 100 sai"; V2 sửa, WHISPER khớp mọi số, LUFS -11,2, đứng hình 32%, Shorts trọn câu; lần dựng V2 đầu runner hỏng, chạy lại 1 lần) – chấm chéo: khán giả 6,5→8, thám tử 7→8,5
