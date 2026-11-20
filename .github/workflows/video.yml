@@ -120,7 +120,7 @@ jobs:
           retention-days: 3
   render:
     needs: [plan, tts, r3d]
-    if: always() && needs.plan.outputs.batch != '' && (needs.plan.outputs.has3d != '1' || needs.tts.result == 'success')'
+    if: always() && needs.plan.outputs.batch != '' && (needs.plan.outputs.has3d != '1' || needs.tts.result == 'success')
     runs-on: ubuntu-latest
     timeout-minutes: ${{ needs.plan.outputs.has3d == '1' && 330 || 90 }}
     strategy:
