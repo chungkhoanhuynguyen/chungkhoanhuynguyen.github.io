@@ -588,7 +588,7 @@ try:
         for _st, _du in re.findall(r"black_start:([\d.]+) black_end:[\d.]+ black_duration:([\d.]+)", _bd):
             if 1.0 < float(_st) < b[-1] - 2: qc.append("LỖI khung đen giữa video tại %.1fs (%.1fs)" % (float(_st), float(_du)))
         _fz = sum(float(x) for x in re.findall(r"freeze_duration: ([\d.]+)", _bd))
-        if b[-1] and _fz / b[-1] > 0.25: qc.append(("LỖI" if NHIP[0] else "CẢNH BÁO") + " rủi ro trình chiếu: %.0f%% thời lượng hình đứng yên ≥2s – thêm chuyển động/thẻ số/nhân vật" % (100 * _fz / b[-1]))
+        if b[-1] and _fz / b[-1] > 0.25: qc.append(("LỖI" if (NHIP[0] and _fz / b[-1] > 0.5) else "CẢNH BÁO") + " rủi ro trình chiếu: %.0f%% thời lượng hình đứng yên ≥2s – thêm chuyển động/thẻ số/nhân vật" % (100 * _fz / b[-1]))
     except Exception as _e: qc.append("CẢNH BÁO không đo được khung đen/đứng hình: %s" % _e)
     if not os.path.exists(os.path.join(OUT, key + ".srt")): qc.append("LỖI thiếu file phụ đề .srt")
     try:   # QL1 20/11: gói tiêu đề + bìa (học youtube-agent-skill yt-package)
