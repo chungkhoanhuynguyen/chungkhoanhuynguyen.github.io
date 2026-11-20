@@ -281,7 +281,7 @@ def land(v, sc, t):
     SUBQ[0] = []
     try: im = _land0(v, sc, t)
     finally: q, SUBQ[0] = SUBQ[0], None
-    if sc["k"] not in ("3d", "text", "end"): im = nhip.cam(im, sc, t)   # cảnh chữ/3D đã có Ken Burns/chuyển động riêng
+    pass   # QL1 20/11 23:52: bỏ máy quay zoom/lia mỗi nhịp (anh Huy: zoom ra vào đau mắt) – giữ thẻ/ô hiện theo câu   # cảnh chữ/3D đã có Ken Burns/chuyển động riêng
     if sc.get("_idx") == 0 and HOOK: im = nhip.hook(im, t, HOOK)
     for a_ in q: _draw_sub(im, *a_)
     return im
@@ -302,7 +302,7 @@ def _land0(v, sc, t):
         im.paste(c, ((LW-c.width)//2, 0)); _draw_sub(im, sc, t, LW/2, LW - 200); return im
     p = v.crop((66, 470, 1014, 1150)); s = 1.32; p = p.resize((int(p.width*s), int(p.height*s)), Image.LANCZOS)
     _pw0 = p.width
-    if NHIP[0] and k == "bignum":   # câu nhắc số -> số nổi: zoom 1,04 + viền sáng
+    if False and NHIP[0] and k == "bignum":   # bỏ zoom số (anh Huy 20/11 23:52)
         _a = nhip.noi_so(sc, t)
         if _a > 0.01:
             _z = 1 + 0.04 * _a; _p2 = p.resize((int(p.width * _z), int(p.height * _z)), Image.BILINEAR)
