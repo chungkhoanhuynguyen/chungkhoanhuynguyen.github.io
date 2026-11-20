@@ -63,7 +63,6 @@
 20261120_nong_a
 20261120_nong_hut
 20261120_nong_td
-20261121_nong_vimo
 test
 tuan_0311_CH_1
 tuan_0311_CH_1b
