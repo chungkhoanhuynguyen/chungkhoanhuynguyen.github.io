@@ -7,6 +7,7 @@ CAM = [(r"\btôi\b|(?<!\d )(?<!người )\bbạn\b(?!\s*(bè|nào|học|đồng 
        (r"bình luận giúp em|để lại (giúp em )?một chữ", "câu cuối phải là câu hỏi mở thuần, không xin bình luận"),
        (r"phần trăm (một|1) năm", "viết 'X phần trăm mỗi năm' – 'một năm' làm phụ đề ra '5 phần 101 năm' (VT6VANG)"),
        (r"\bphẩy (hai|ba|bốn|năm|sáu|bảy|tám|chín) mươi\b|\bphẩy mười\b", "số lẻ 2 chữ số sau dấu phẩy ('tám phẩy tám mươi hai' ra phụ đề '8,8 12%' – CH2411NX V0; 'bốn phẩy mười lăm' NONG1711A) – nói làm tròn 1 chữ số, số chính xác để trên thẻ"),
+       (r"\b(tỷ|triệu) (một|hai|ba|bốn|năm|sáu|bảy|tám|chín)(?! (trăm|mươi|nghìn|triệu|phần|tháng|năm|người|lần|cây|khu|ngân|tuổi|giờ|hai nghìn|một nghìn))\b", "nói tắt 'một tỷ hai', 'hai triệu bảy' – phụ đề ra '1.000.000.002', '2.000.007' (NV1 21/11: CH2611HT V1, CH2811TP V1; lần 4 sau CH2411NX, CH2711TN) – nói đủ 'một tỷ hai trăm triệu', 'hai triệu bảy trăm nghìn'"),
        (r"\bmột phần\b(?! trăm)", "'một phần …' ra phụ đề '1 phần' (CH2011VON, CH2211VANG, CH2311DN V1) – nói 'khoảng X phần trăm' hoặc 'có nguyên nhân từ'"),
        (r"\b(OK|ok|wow|(?<!nhập )(?<!xuất )siêu(?! thị)(?! âm)(?! xe)|cực kỳ khủng|bùng nổ|x\d+ tài khoản)\b", "từ giật gân/thiếu chuẩn mực")]
 CHU_NGU = r"\b(em|anh chị|ngân hàng|nhà nước|NHNN|thị trường|cổ phiếu|doanh nghiệp|công ty|giá|lãi suất|đây|điều|số tiền|khoản|kỳ hạn|tin|mốc|hợp đồng|hai bên|nhà đầu tư|dòng tiền|lợi nhuận|vốn|họ|nó|các|mỗi|như vậy|vì vậy|tuy nhiên|theo|nếu|khi|trong|sau|từ|với|hạn mức|quy mô|chênh|đợt|cơ chế|hoán đổi|[A-Z]{3}\b)"
