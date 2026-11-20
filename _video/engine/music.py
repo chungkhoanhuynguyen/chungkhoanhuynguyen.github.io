@@ -103,7 +103,7 @@ def mix(video, bounds, out, music_db=-8, lofi=False, whoosh_on=None, whoosh=0, c
     write("/tmp/bgm.wav", x)
     th, ra = ("0.06", "4") if lofi else ("0.06", "4")   # QL1 20/11 21:25: ratio 6 làm nhạc "nhấn, bơm" theo giọng – anh Huy chê khó chịu   # kể chuyện: nhạc nền nghe rõ, chỉ hạ nhẹ khi có giọng (anh Huy 7/11 "nhạc không nghe thấy gì")
     # QL1 11/11: làm sạch giọng anh Huy (cắt ù thấp, nén nhẹ cho đều, sáng 3kHz cho rõ chữ) + chuẩn âm lượng YouTube -14 LUFS
-    fc = ("[1:a]volume=%ddB,aresample=44100[m];[0:a]highpass=f=75,acompressor=threshold=-20dB:ratio=2.5:attack=8:release=120:makeup=2,"
+    fc = ("[1:a]volume=%ddB,afade=t=in:st=0:d=8:curve=qsin,aresample=44100[m];[0:a]highpass=f=75,acompressor=threshold=-20dB:ratio=2.5:attack=8:release=120:makeup=2,"
           "equalizer=f=3200:t=q:w=1.2:g=2,equalizer=f=250:t=q:w=1:g=-1.5,asplit=2[v][sc];"
           "[m][sc]sidechaincompress=threshold=%s:ratio=%s:attack=150:release=900[md];"
           "[v][md]amix=inputs=2:duration=first:normalize=0,aresample=44100[a]") % (music_db, th, ra)
