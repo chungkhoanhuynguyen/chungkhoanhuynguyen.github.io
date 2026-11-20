@@ -1,0 +1,1 @@
+CH2611HT | 1:9 2:9 3:9 4:9 5:9 6:9 7:9 8:9 9:9 10:9 | đã soát V1 V2 (V1 lỗi phụ đề 1.000.000.002/1.000.000.008 + whisper 1.865/51; V2 sửa, whisper khớp, LUFS -11,2, đứng hình 34%, Shorts trọn câu) – chấm chéo 2 subagent: khán giả 7→8, thám tử 7,5→9
