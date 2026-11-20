@@ -93,8 +93,8 @@ S = [
         ('Diện tích đất chiếm dụng', '1.865 HA'),
         ('Số khu tái định cư', '51 KHU'),
         ('Tiền giải phóng mặt bằng', '17.379 TỶ')]),
-      say=("Những người có đất như bố Nam. Đoạn tuyến qua Quảng Trị dài khoảng một trăm chín mươi cây số, chiếm khoảng một nghìn tám trăm sáu mươi lăm héc ta. "
-           "Tỉnh bố trí năm mươi mốt khu tái định cư, và hơn mười bảy nghìn ba trăm tỷ đồng phục vụ giải phóng mặt bằng. "
+      say=("Những người có đất như bố Nam. Đoạn tuyến qua Quảng Trị dài khoảng một trăm chín mươi cây số, chiếm gần một nghìn chín trăm héc ta. "
+           "Riêng khu tái định cư, tỉnh bố trí tới năm mươi mốt khu. Tiền phục vụ giải phóng mặt bằng là hơn mười bảy nghìn ba trăm tỷ đồng. "
            "Vườn nhà Nam là một ô rất nhỏ trong đó.")),
  # ---------------- CHƯƠNG 3 ----------------
  dict(k='checklist', ch='Chương 3 – Tiền đi vào túi ai trước?', anh=MT1, cap=('KHOẢN LỚN ĐI VÀO TÚI AI', 'THEO THỨ TỰ'), cols=CC, moc=True,
@@ -145,12 +145,12 @@ S = [
         ('Tiền vay, lãi suất 10%', '1,2 TỶ'),
         ('Tiền lãi mỗi tháng', '10 TRIỆU'),
         ('Lãi từ 2026 đến 2035', '1,08 TỶ')]),
-      say=("Lô đất của anh Hưng là em giả định, còn phép tính thì rất thật. Anh mua hai tỷ đồng, vay một tỷ hai, lãi suất mười phần trăm. "
+      say=("Lô đất của anh Hưng là em giả định, còn phép tính thì rất thật. Anh mua hai tỷ đồng, vay một tỷ hai trăm triệu, lãi suất mười phần trăm. "
            "Mỗi năm tiền lãi là một trăm hai mươi triệu, tức mười triệu đồng mỗi tháng. "
            "Nếu chờ đến lúc tàu chạy, chín năm, tổng tiền lãi là một tỷ không trăm tám mươi triệu, bằng hơn nửa giá lô đất.")),
  dict(k='cards', anh=HA, cap=('NẾU CHẬM NHƯ METRO SỐ 1', 'THÊM 6 NĂM CHỜ'), cols=CR, moc=True,
       cards=[('54%', 'Lãi đến 2035 so với giá mua', 'Chờ 9 năm'), ('90%', 'Nếu trễ thêm 6 năm', 'Chờ 15 năm'), ('0 đồng', 'Lãi nếu mua bằng tiền nhàn rỗi', 'Chỉ mất cơ hội')],
-      say=("Còn nếu chậm như Metro số một, thêm sáu năm nữa, tổng tiền lãi lên khoảng một tỷ tám, bằng khoảng chín mươi phần trăm giá mua. "
+      say=("Còn nếu chậm như Metro số một, thêm sáu năm nữa, tổng tiền lãi lên khoảng một tỷ tám trăm triệu, bằng khoảng chín mươi phần trăm giá mua. "
            "Nghĩa là giá đất phải tăng gần gấp đôi chỉ để anh Hưng hòa vốn. "
            "Ai mua bằng tiền nhàn rỗi thì không mất tiền lãi, chỉ mất cơ hội dùng tiền vào việc khác. Rủi ro nằm ở cách mua, không chỉ ở con đường.")),
  dict(k='cards', anh=TP, cap=('3 CÁCH CỦA ANH HƯNG', 'KHÔNG CÓ CÁCH NÀO MIỄN PHÍ'), cols=CC, moc=True,
@@ -188,7 +188,7 @@ S = [
       say=("Còn anh chị thì sao: trên con đường sáu mươi bảy tỷ đô la này, nhà mình đang đứng ở chỗ nào? "
            "Kể cho em và mọi người ở phần bình luận nhé. Nếu thấy video hữu ích, anh chị đăng ký kênh để xem những câu hỏi lớn tiếp theo.")),
 ]
-import ql_post; S = ql_post.tach(S, max_tu=75)
+import ql_post; S = ql_post.tach(S, max_tu=50)
 for c in S: c['say'] = lib.doc(c['say'])
 TIEU = 'Đường Sắt 67 Tỷ USD: Ai Trả Tiền, Tiền Về Túi Ai?'
 MT = ("Đường sắt tốc độ cao Bắc – Nam: 1.541 km, 350 km/h, sơ bộ 1.713.548 tỷ đồng (khoảng 67 tỷ USD) – nếu chia đều mỗi người dân khoảng 16,7 triệu đồng (để hình dung, chi trong nhiều năm). "
