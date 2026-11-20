@@ -71,7 +71,7 @@ S = [
         ('Chênh mỗi năm', '32 TRIỆU')]),
       say=("Bà Tâm lấy giấy bút tính. Em giả định tiết kiệm mười hai tháng khoảng năm phần trăm: mỗi năm được bốn mươi triệu. "
            "Lãi chín phần trăm: bảy mươi hai triệu. "
-           "Chênh ba mươi hai triệu một năm, tức khoảng hai triệu bảy mỗi tháng, gần nửa tháng lương hưu của bà.")),
+           "Chênh ba mươi hai triệu một năm, tức khoảng hai triệu bảy trăm nghìn mỗi tháng, gần nửa tháng lương hưu của bà.")),
  dict(k='chat', cap=('"TÔI KÝ RỒI', 'LÃI 9% SƯỚNG LẮM"'), cols=CR, moc=True, chat=dict(ten='Chị Hoa', tv='Đang hoạt động', gio='21:40', mau=V_, msgs=[
         ('Chị Hoa', 'Tôi ký cái lãi 9% đó tuần trước rồi'),
         ('Chị Hoa', 'Bà ký đi, để tiết kiệm lãi bèo lắm'),
@@ -167,12 +167,12 @@ S = [
         ('me', 'Dạ, mẹ hỏi thẳng: đây có phải tiền gửi không')]),
       say=("Gần khuya, bà Tâm nhắn cho con: mai mẹ ra chia làm ba sổ, ba ngân hàng. Từ giờ thấy lãi cao, mẹ đọc chữ nhỏ trước. "
            "Khoa dặn thêm một câu: mẹ cứ hỏi thẳng, đây có phải tiền gửi không. "
-           "Chín phần trăm không sai, ba mươi sáu tháng không sai. Chỉ có câu cũng như gửi tiết kiệm là sai.")),
+           "Con số chín phần trăm là thật. Kỳ hạn ba mươi sáu tháng cũng là thật. Chỉ có câu cũng như gửi tiết kiệm là sai.")),
  dict(k='end', cap=('ANH CHỊ ĐÃ TỪNG ĐƯỢC MỜI', 'SẢN PHẨM LÃI CAO Ở QUẦY?'), cols=CC,
       say=("Còn anh chị thì sao: anh chị đã bao giờ được mời một sản phẩm lãi cao hơn tiết kiệm ngay tại quầy, và anh chị đã hỏi câu gì trước khi quyết định? "
            "Kể cho em và mọi người ở phần bình luận nhé. Nếu thấy video hữu ích, anh chị đăng ký kênh để xem những câu chuyện tiếp theo.")),
 ]
-import ql_post; S = ql_post.tach(S, max_tu=75)
+import ql_post; S = ql_post.tach(S, max_tu=50)
 for c in S: c['say'] = lib.doc(c['say'])
 TIEU = 'Sổ 800 Triệu Đáo Hạn, Được Mời Lãi 9%: 3 Chi Tiết Phải Đọc'
 MT = ("Lãi tiết kiệm giảm 0,5–1 điểm % từ giữa tháng 10, trong khi trái phiếu ngân hàng vẫn trả 9 đến hơn 10%/năm. Bà Tâm, giáo viên về hưu, cầm cuốn sổ 800 triệu đáo hạn và một tờ giấy \"lãi 9%, cũng như gửi tiết kiệm thôi cô\". "
