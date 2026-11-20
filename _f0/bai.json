@@ -1836,6 +1836,10 @@
    [
     "p",
     "Biểu phí có thể thay đổi theo từng công ty và quy định hiện hành; các con số trong bài là ví dụ minh họa. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ],
+   [
+    "p",
+    "Thuế trên tiền lương, tiền công thì tính theo biểu lũy tiến riêng: xem <a href='/f0/cach-tinh-thue-thu-nhap-ca-nhan-2026.html'>cách tính thuế thu nhập cá nhân 2026</a>."
    ]
   ],
   "faq": [
@@ -1853,6 +1857,7 @@
    ]
   ],
   "rel": [
+   "cach-tinh-thue-thu-nhap-ca-nhan-2026",
    "cach-mo-tai-khoan-chung-khoan",
    "t-2-la-gi",
    "co-tuc-la-gi"
@@ -9771,6 +9776,10 @@
      "Không đánh giá bằng P/E một năm; dùng EPS bình quân chu kỳ hoặc P/B.",
      "Theo dõi giá sản phẩm, công suất ngành và lãi suất để biết chu kỳ đang ở giai đoạn nào."
     ]
+   ],
+   [
+    "p",
+    "Ví dụ chu kỳ giá hàng hoá ngoài sàn: giá hạt tiêu xuất khẩu mất 73,6% từ 2016 đến 2020, và câu hỏi sầu riêng có lặp lại không ở bài <a href='/f0/xuat-khau-sau-rieng-2026.html'>xuất khẩu sầu riêng 2026</a>."
    ]
   ],
   "faq": [
@@ -9796,6 +9805,7 @@
    ]
   ],
   "rel": [
+   "xuat-khau-sau-rieng-2026",
    "co-phieu-phong-thu-la-gi",
    "pe-la-gi",
    "lai-suat-tang-anh-huong-chung-khoan"
@@ -25440,97 +25450,175 @@
  {
   "slug": "thue-doi-ung-la-gi",
   "kw": "thuế đối ứng là gì",
-  "title": "Thuế đối ứng là gì? Tin thuế quan tác động chứng khoán ra sao",
-  "desc": "Thuế đối ứng là gì, vì sao thông báo thuế quan có thể tác động tới doanh nghiệp xuất khẩu và tâm lý thị trường chứng khoán, nên theo dõi những gì.",
+  "title": "Thuế đối ứng là gì? Tin thuế quan làm VN-Index giảm 17% ra sao",
+  "desc": "Thuế đối ứng là gì, vì sao Mỹ áp 46% rồi 20% với Việt Nam. VN-Index từng mất 17% trong 5 phiên tháng 4/2025: bảng từng phiên và cách đọc tin thuế.",
   "body": [
    [
     "p",
-    "Thuế đối ứng là mức thuế một quốc gia áp lên hàng nhập khẩu từ nước khác, thường được mô tả là để cân bằng với mức thuế hoặc rào cản mà nước kia áp lên hàng của mình. Khi một thị trường lớn thay đổi thuế, chuỗi cung ứng và giá cả có thể thay đổi theo."
+    "Sáng 3/4/2025 nhiều nhà đầu tư mở bảng điện thấy cả sàn xanh lơ: Mỹ vừa công bố thuế đối ứng <b>46%</b> với hàng Việt Nam. Hết phiên, VN-Index mất <b>87,99 điểm (−6,68%)</b>, phiên giảm mạnh nhất trong nhiều năm. 5 phiên sau, chỉ số mất khoảng 17%."
    ],
    [
     "h2",
-    "Vì sao ảnh hưởng chứng khoán"
+    "Thuế đối ứng là gì?"
    ],
    [
-    "ul",
+    "p",
+    "Thuế đối ứng là mức thuế một nước áp lên hàng nhập khẩu từ nước khác, thường được giải thích là để \"cân bằng\" với thuế hoặc rào cản mà nước kia áp lên hàng của mình, hoặc để thu hẹp thâm hụt thương mại. Với Việt Nam, lý do chính là thặng dư rất lớn với Mỹ: 10 tháng 2026 bán sang Mỹ 159,4 tỷ USD, mua về 19,3 tỷ (chi tiết ở bài <a href='/f0/thang-du-thuong-mai-viet-nam-my.html'>thặng dư thương mại Việt Nam – Mỹ 2026</a>)."
+   ],
+   [
+    "h2",
+    "Thuế đối ứng của Mỹ với Việt Nam thay đổi thế nào?"
+   ],
+   [
+    "table",
     [
-     "Doanh nghiệp xuất khẩu có thể bị giảm đơn hàng hoặc phải giảm giá.",
-     "Tâm lý thị trường thay đổi nhanh vì lo ngại về tăng trưởng kinh tế.",
-     "Dòng vốn có thể chuyển hướng, khiến tỷ giá và thanh khoản biến động."
+     [
+      "Thời điểm",
+      "Diễn biến"
+     ],
+     [
+      "2/4/2025",
+      "Mỹ công bố thuế đối ứng 46% với Việt Nam"
+     ],
+     [
+      "9/4/2025",
+      "Mỹ hoãn áp thuế 90 ngày"
+     ],
+     [
+      "8/2025",
+      "Mức thuế với Việt Nam còn 20% (VnExpress 1/8/2025)"
+     ],
+     [
+      "26/10/2025",
+      "Tuyên bố chung về khung hiệp định thương mại đối ứng"
+     ]
     ]
    ],
    [
     "h2",
-    "Ví dụ tháng 4 năm 2025"
+    "Tin thuế quan tháng 4/2025: VN-Index phản ứng từng phiên"
    ],
    [
-    "p",
-    "Đầu tháng 4 năm 2025, thông tin về thuế đối ứng của Mỹ khiến nhiều thị trường châu Á biến động mạnh. Số liệu chỉ số cho thấy VN-Index giảm khoảng 18,5% từ giá đóng cửa tuần 24/3/2025 (khoảng 1.317 điểm) xuống đáy trong phiên 9/4/2025 (1.073,61 điểm). Đây là ví dụ lịch sử về cách một thông tin vĩ mô có thể tác động nhanh tới tâm lý."
-   ],
-   [
-    "h2",
-    "Nhà đầu tư nên theo dõi gì"
-   ],
-   [
-    "ul",
+    "table",
     [
-     "Tỷ trọng xuất khẩu của doanh nghiệp đang quan tâm.",
-     "Thị trường xuất khẩu chính và mức độ phụ thuộc.",
-     "Diễn biến đàm phán và thông báo chính thức, tránh tin đồn.",
-     "Phản ứng của tỷ giá và dòng vốn ngoại."
+     [
+      "Phiên",
+      "VN-Index<br>đóng cửa",
+      "So 2/4/2025"
+     ],
+     [
+      "2/4/2025",
+      "1.317,83",
+      "–"
+     ],
+     [
+      "3/4/2025",
+      "1.229,84",
+      "−6,7%"
+     ],
+     [
+      "4/4/2025",
+      "1.210,67",
+      "−8,1%"
+     ],
+     [
+      "8/4/2025",
+      "1.132,79",
+      "−14,0%"
+     ],
+     [
+      "9/4/2025",
+      "1.094,30",
+      "−17,0%"
+     ],
+     [
+      "10/4/2025",
+      "1.168,34",
+      "−11,3%"
+     ],
+     [
+      "30/6/2025",
+      "1.376,07",
+      "+4,4%"
+     ]
     ]
    ],
    [
     "p",
-    "Nội dung mang tính giải thích kiến thức, không phải dự báo hay khuyến nghị."
-   ]
-  ],
-  "faq": [
-   [
-    "Mọi cổ phiếu đều bị ảnh hưởng như nhau?",
-    "Không. Doanh nghiệp hướng nội địa thường ít chịu tác động trực tiếp hơn doanh nghiệp xuất khẩu."
+    "Số đóng cửa lấy từ dữ liệu giá của web, khớp với báo cùng ngày. Chỉ 1 tin hoãn thuế, phiên 10/4/2025 VN-Index tăng <b>6,77%</b>. Cuối tháng 6/2025 chỉ số đã cao hơn trước cú sốc khoảng 4,4%. Người bán ở đáy 9/4 vì sợ là người chịu thiệt nhiều nhất. Quá khứ không bảo đảm lần sau diễn ra như vậy."
    ],
    [
-    "Ngành nào thường nhạy với thuế quan?",
-    "Các ngành xuất khẩu nhiều như dệt may, thủy sản, gỗ, linh kiện điện tử và một phần khu công nghiệp."
+    "h2",
+    "Vì sao tin thuế quan tác động mạnh tới chứng khoán?"
    ],
    [
-    "Có nên bán hết khi có tin thuế quan?",
-    "Quyết định nên dựa trên kế hoạch và mức chịu rủi ro của mỗi người. Phản ứng theo tin đồn thường dẫn tới bán đúng lúc giá thấp."
-   ]
-  ],
-  "rel": [
-   "lam-phat-va-chung-khoan",
-   "ty-gia-tang-anh-huong-co-phieu",
-   "day-thi-truong-la-gi"
-  ],
-  "add": [
+    "ul",
+    [
+     "Mỹ chiếm gần 32% xuất khẩu của Việt Nam, nên doanh nghiệp xuất khẩu có thể mất đơn hàng hoặc phải giảm giá.",
+     "Khối ngoại thường bán ra khi rủi ro toàn cầu tăng, tỷ giá chịu sức ép (xem <a href='/f0/ty-gia-tang-anh-huong-co-phieu.html'>tỷ giá tăng ảnh hưởng cổ phiếu</a>).",
+     "Người dùng margin bị gọi ký quỹ, phải bán bất kể giá, làm cú giảm sâu hơn."
+    ]
+   ],
    [
     "h2",
     "Phân biệt các loại thuế thương mại"
    ],
    [
     "p",
-    "Ngoài thuế đối ứng còn có thuế chống bán phá giá, thuế chống trợ cấp và hạn ngạch. Mỗi loại áp cho phạm vi khác nhau: có loại áp cho cả quốc gia, có loại chỉ cho một mặt hàng hoặc một doanh nghiệp. Khi đọc tin, nên xem rõ thuế áp cho mặt hàng nào, mức bao nhiêu và từ khi nào."
+    "Ngoài thuế đối ứng còn có thuế chống bán phá giá, thuế chống trợ cấp và hạn ngạch. Có loại áp cho cả quốc gia, có loại chỉ cho một mặt hàng hoặc một doanh nghiệp. Khi đọc tin, xem rõ thuế áp cho mặt hàng nào, mức bao nhiêu và từ ngày nào."
    ],
    [
     "h2",
-    "Tóm lại"
+    "Bẫy hay gặp khi có tin thuế quan"
+   ],
+   [
+    "ol",
+    [
+     "<b>Bán theo phiên hoảng loạn:</b> tháng 4/2025, người bán ở 9/4 bán đúng vùng thấp nhất.",
+     "<b>Đọc tin đồn thay thông báo chính thức:</b> mức thuế, ngày hiệu lực, mặt hàng áp dụng thường đổi qua đàm phán.",
+     "<b>Nghĩ mọi cổ phiếu đều chịu như nhau:</b> doanh nghiệp hướng nội địa ít chịu tác động trực tiếp hơn doanh nghiệp xuất khẩu sang Mỹ."
+    ]
+   ],
+   [
+    "h2",
+    "Nhà đầu tư nên theo dõi gì?"
    ],
    [
     "ul",
     [
-     "Thuế đối ứng là mức thuế áp lên hàng nhập khẩu để cân bằng với nước đối tác.",
-     "Tác động mạnh nhất tới doanh nghiệp xuất khẩu và tâm lý thị trường.",
-     "Nên dựa vào thông báo chính thức thay vì tin đồn."
+     "Tỷ trọng doanh thu xuất khẩu sang Mỹ của doanh nghiệp đang giữ.",
+     "Mức margin đang dùng: một phiên −6,7% có làm tài khoản chạm ngưỡng gọi ký quỹ không?",
+     "Thông báo chính thức và tiến độ đàm phán, không dựa vào tin đồn.",
+     "Diễn biến tỷ giá và giao dịch của khối ngoại."
     ]
    ],
    [
     "p",
-    "Khi tin vĩ mô lớn xuất hiện, thị trường thường biến động mạnh trước khi tác động thực tế lên doanh thu và lợi nhuận kịp lộ ra trong báo cáo. Vì vậy cần tách hai lớp: phản ứng tâm lý trong ngắn hạn và tác động thật lên kết quả kinh doanh, vốn chỉ thấy khi báo cáo các quý tiếp theo được công bố."
+    "<small>Nguồn: dữ liệu giá đóng cửa VN-Index; Thị trường Tài chính Tiền tệ 3/4/2025; CafeLand 10/4/2025; VnExpress 1/8/2025; Cổng Chính phủ 27/10/2025; Thuế & Hải quan Online 13/11/2026. Nội dung giải thích kiến thức, không phải dự báo hay khuyến nghị.</small>"
    ]
   ],
-  "grp": 8
+  "faq": [
+   [
+    "Thuế đối ứng là gì?",
+    "Là mức thuế một nước áp lên hàng nhập khẩu từ nước khác để \"cân bằng\" với thuế, rào cản hoặc thâm hụt thương mại với nước đó."
+   ],
+   [
+    "Thuế đối ứng của Mỹ với Việt Nam là bao nhiêu?",
+    "Mỹ công bố 46% ngày 2/4/2025, hoãn 90 ngày từ 9/4/2025, đến tháng 8/2025 còn 20%."
+   ],
+   [
+    "Tin thuế quan làm VN-Index giảm bao nhiêu?",
+    "Từ đóng cửa 2/4/2025 (1.317,83) đến 9/4/2025 (1.094,30), VN-Index mất khoảng 17%; phiên 3/4 riêng đã −6,68%."
+   ]
+  ],
+  "rel": [
+   "thang-du-thuong-mai-viet-nam-my",
+   "ty-gia-tang-anh-huong-co-phieu",
+   "lam-phat-va-chung-khoan",
+   "day-thi-truong-la-gi"
+  ],
+  "grp": 8,
+  "mod": "2026-11-20"
  },
  {
   "slug": "ebit-la-gi",
@@ -36830,6 +36918,10 @@
    ],
    [
     "p",
+    "Lương tăng nhưng phải nộp thuế nhiều hơn vì mức giảm trừ đứng yên? Từ 2026 giảm trừ đã lên 15,5 triệu, bảng tra thuế cũ – mới em để ở bài <a href='/f0/cach-tinh-thue-thu-nhap-ca-nhan-2026.html'>cách tính thuế thu nhập cá nhân 2026</a>."
+   ],
+   [
+    "p",
     "<small>Nguồn: Tổng cục Thống kê, NHNN (tổng hợp WiData); Báo Thanh Hóa 4/11/2026. Tỷ lệ %, số chia đầu người và rổ chi tiêu minh họa là số tự tính. Bài chia sẻ kiến thức, không phải khuyến nghị đầu tư.</small>"
    ]
   ],
@@ -36848,6 +36940,7 @@
    ]
   ],
   "rel": [
+   "cach-tinh-thue-thu-nhap-ca-nhan-2026",
    "lam-phat-va-chung-khoan",
    "viet-nam-dang-no-bao-nhieu",
    "tich-san-co-phieu-hay-gui-tiet-kiem",
@@ -37585,6 +37678,7 @@
    ]
   ],
   "rel": [
+   "thang-du-thuong-mai-viet-nam-my",
    "dan-so-vang-la-gi",
    "ty-le-tra-no-tren-thu-nhap-la-gi",
    "luong-thuc-te-la-gi",
@@ -39298,6 +39392,740 @@
    "ty-le-tra-no-tren-thu-nhap-la-gi",
    "quy-du-phong-truoc-khi-dau-tu",
    "no-xau-ngan-hang-la-gi"
+  ]
+ },
+ {
+  "slug": "thang-du-thuong-mai-viet-nam-my",
+  "kw": "thặng dư thương mại Việt Nam Mỹ 2026",
+  "grp": 8,
+  "date": "2026-11-20",
+  "title": "Thặng dư thương mại Việt Nam – Mỹ 2026: bán 8 đồng, mua 1 đồng",
+  "desc": "10 tháng 2026 Việt Nam bán sang Mỹ 159,4 tỷ USD, mua về 19,3 tỷ. Vì sao Mỹ cử đoàn nông nghiệp lớn nhất sang, đùi gà Mỹ chạm vào ai, ai được lợi.",
+  "body": [
+   [
+    "p",
+    "Tối thứ Ba ở Đồng Nai, chị Hạnh mua 2 cân đùi gà đông lạnh ở chợ, <b>50.000 đồng/kg</b>, rẻ hơn hẳn gà trong nước. Cùng bữa cơm đó, anh Tâm chồng chị tính sổ lứa 6.000 con gà trắng vừa xuất chuồng: nếu lỗ như mức người nuôi Đồng Nai đang báo, khoảng <b>30.000 đồng/con</b>, cả lứa mất <b>180 triệu</b>."
+   ],
+   [
+    "p",
+    "Hai vợ chồng là nhân vật giả định để em tính cho dễ hình dung. Còn chuyện tuần đó là thật: từ 9 đến 12/11/2026, Bộ Nông nghiệp Mỹ đưa <b>đoàn xúc tiến nông nghiệp lớn nhất từ trước đến nay</b> sang TP.HCM, gồm 43 doanh nghiệp và 37 tổ chức ngành hàng (Tuổi Trẻ 8/11/2026). Họ không sang để mua. Họ sang để <b>bán</b>."
+   ],
+   [
+    "h2",
+    "Việt Nam bán cho Mỹ bao nhiêu, mua lại bao nhiêu?"
+   ],
+   [
+    "p",
+    "Số của Cục Hải quan cho 10 tháng đầu năm 2026 (Thuế & Hải quan Online 13/11/2026):"
+   ],
+   [
+    "table",
+    [
+     [
+      "Chỉ tiêu<br>10T/2026",
+      "Giá trị",
+      "So cùng kỳ"
+     ],
+     [
+      "Xuất khẩu sang Mỹ",
+      "159,4 tỷ USD",
+      "+26,2%"
+     ],
+     [
+      "Nhập khẩu từ Mỹ",
+      "19,3 tỷ USD",
+      "+26,6%"
+     ],
+     [
+      "Thặng dư (em tự tính)",
+      "140,1 tỷ USD",
+      "–"
+     ],
+     [
+      "Bán / mua",
+      "8,26 lần",
+      "–"
+     ],
+     [
+      "Riêng máy tính, điện tử, linh kiện sang Mỹ",
+      "53,47 tỷ USD",
+      "+56,5%"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Nói gọn: cứ <b>bán sang Mỹ hơn 8 đồng thì Việt Nam mua về 1 đồng</b>. Mỹ chiếm gần <b>32%</b> xuất khẩu cả nước, tức gần 1/3 đơn hàng của nhà máy Việt Nam đi về một thị trường."
+   ],
+   [
+    "p",
+    "Phía Mỹ đếm theo cách của họ: nửa đầu 2026, thâm hụt hàng hoá của Mỹ với Việt Nam là <b>114,03 tỷ USD</b> (+40,1%), cao nhất trong các đối tác, vượt cả Đài Loan, Mexico, Trung Quốc (Investing.com 27/8/2026, theo Cục Thống kê Mỹ). Hai bên tính khác nhau (giá hàng, nơi xuất xứ, kỳ số liệu) nên đừng cộng trừ hai con số này với nhau."
+   ],
+   [
+    "h2",
+    "Vì sao Mỹ cử đoàn nông nghiệp lớn nhất sang lúc này?"
+   ],
+   [
+    "p",
+    "Vì con số 140 tỷ ở trên. Tháng 4/2025 Mỹ công bố thuế đối ứng <b>46%</b> với hàng Việt Nam, đến tháng 8/2025 còn <b>20%</b> (VnExpress 1/8/2025). Ngày 26/10/2025 hai nước ra Tuyên bố chung về khung hiệp định thương mại đối ứng; doanh nghiệp Việt Nam ký 20 biên bản ghi nhớ mua nông sản Mỹ ước hơn <b>2,9 tỷ USD</b>, Vietnam Airlines ký mua 50 máy bay Boeing hơn 8 tỷ USD (Cổng Chính phủ 27/10/2025)."
+   ],
+   [
+    "p",
+    "Muốn giữ cửa bán hàng sang Mỹ, Việt Nam phải mua thêm hàng Mỹ. Nông sản là thứ dễ mua nhất: năm 2025 nông sản Mỹ sang Việt Nam gần <b>5,6 tỷ USD</b> (+38%), Việt Nam là thị trường lớn thứ 7 của họ. Đoàn tháng 11 là để đẩy con số đó lên tiếp."
+   ],
+   [
+    "h2",
+    "Hàng Mỹ nào đang vào bếp nhà mình?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Mặt hàng",
+      "Số liệu",
+      "Nguồn"
+     ],
+     [
+      "Thịt gà",
+      "Nửa đầu 2026 nhập 185–195 nghìn tấn; từ Mỹ 115–120 nghìn tấn (61,8%), chủ yếu đùi gà góc tư",
+      "Znews 2/8/2026"
+     ],
+     [
+      "Thịt bò Mỹ",
+      "8 tháng gấp 3 lần cùng kỳ",
+      "VnExpress 11/11/2026"
+     ],
+     [
+      "Đậu tương Mỹ",
+      "352 → 424 triệu USD (9 tháng)",
+      "VnExpress 11/11/2026"
+     ],
+     [
+      "Táo Mỹ",
+      "Nhập bình quân 186 nghìn tấn/năm 2022–2024 (62 nghìn 2016–2018); giá lẻ giảm 5–10%",
+      "Tuổi Trẻ, VnExpress"
+     ],
+     [
+      "Rau quả từ Mỹ",
+      "10 tháng gần 747 triệu USD (+62%)",
+      "Thuế & Hải quan 13/11/2026"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Đùi gà là món đáng nói nhất. Người Mỹ chuộng ức gà, đùi gà góc tư ở Mỹ rẻ nên bán ra nước ngoài được giá thấp. 7 tháng 2026, giá nhập bình quân <b>thịt gia cầm</b> (mọi nguồn) chỉ khoảng 1,02 USD/kg, tức khoảng <b>26.500 đồng/kg</b>, giảm gần 29% (VnBusiness 9/9/2026). Lên đến chợ Hà Nội, đùi gà đông lạnh nhập khẩu bán 45.000–55.000 đồng/kg, trong khi gà công nghiệp trong nước bán lẻ 70.000–100.000."
+   ],
+   [
+    "h2",
+    "Ai lo, ai mừng khi hàng Mỹ vào nhiều hơn?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Nhóm",
+      "Ảnh hưởng",
+      "Vì sao"
+     ],
+     [
+      "Người nuôi gà trắng công nghiệp",
+      "Lo nhất",
+      "Gà trắng miền Nam tháng 8 chỉ 25.000 đ/kg hơi; giá thành ở Mỹ, Brazil 16.000–20.000 đ/kg"
+     ],
+     [
+      "Người nuôi gà lông màu",
+      "Ít đụng hơn",
+      "Thị trường khác, giá 46.000 đ/kg hơi (tháng 8)"
+     ],
+     [
+      "Người đi chợ",
+      "Được lợi",
+      "Đùi gà, táo, bò rẻ hơn"
+     ],
+     [
+      "Công nhân, doanh nghiệp bán sang Mỹ",
+      "Được giữ cửa",
+      "Mua thêm hàng Mỹ giúp giảm sức ép thuế"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Đây là cú lật của câu chuyện: cùng một nhà anh Tâm, chị Hạnh, <b>người chồng lo, người vợ mừng</b>. Áp lực không rơi lên \"nông dân\" chung chung mà rơi đúng vào nhóm hàng cạnh tranh trực tiếp với hàng Mỹ."
+   ],
+   [
+    "h2",
+    "Phép thử: thu nhập nhà mình đi qua cửa nào?"
+   ],
+   [
+    "ol",
+    [
+     "<b>Cửa bán sang Mỹ:</b> làm ở nhà máy điện tử, dệt may, gỗ, thuỷ sản xuất khẩu. Nhà mình hưởng lợi khi quan hệ thương mại êm, chịu rủi ro khi có tin thuế mới.",
+     "<b>Cửa đụng hàng Mỹ:</b> nuôi gà trắng, trồng trái cây ôn đới, chăn nuôi bò. Hàng Mỹ rẻ vào nhiều là sức ép giá trực tiếp.",
+     "<b>Không qua cửa nào:</b> phần đông người làm dịch vụ trong nước. Nhà mình chủ yếu là người mua, được lợi từ giá rẻ hơn."
+    ]
+   ],
+   [
+    "p",
+    "Thu nhập đi qua cửa 1 hay cửa 2 thì nên có quỹ dự phòng dày hơn, vì tin thương mại đổi rất nhanh. Cách dựng quỹ có ở bài <a href='/f0/quy-du-phong-truoc-khi-dau-tu.html'>quỹ dự phòng trước khi đầu tư</a>."
+   ],
+   [
+    "h2",
+    "Lần trước tin thuế quan, chứng khoán phản ứng ra sao?"
+   ],
+   [
+    "p",
+    "Tháng 4/2025, chỉ trong 5 phiên sau tin thuế 46%, VN-Index mất khoảng <b>17%</b>, rồi hồi lại khi Mỹ hoãn thuế 90 ngày. Bảng chi tiết từng phiên và cách đọc tin thuế quan em để ở bài <a href='/f0/thue-doi-ung-la-gi.html'>thuế đối ứng là gì</a>. Con số 140 tỷ USD thặng dư là lý do tin thương mại Việt – Mỹ luôn làm thị trường giật mạnh."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp khi đọc tin thương mại Việt – Mỹ"
+   ],
+   [
+    "ol",
+    [
+     "<b>Cộng hai nguồn số với nhau:</b> 140,1 tỷ (phía Việt Nam, 10 tháng) và 114,03 tỷ (phía Mỹ, 6 tháng) đếm khác nhau, không so trực tiếp được.",
+     "<b>Đọc nhầm giá:</b> 26.500 đồng/kg là giá nhập bình quân thịt gia cầm mọi nguồn, không phải giá đùi gà Mỹ ngoài chợ.",
+     "<b>Nghĩ \"đoàn Mỹ sang mua hàng\":</b> đoàn xúc tiến nông nghiệp sang để bán. Đọc tiêu đề tin cho kỹ trước khi đoán ai hưởng lợi."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist tự soi"
+   ],
+   [
+    "ul",
+    [
+     "Thu nhập chính của nhà mình đi qua cửa nào trong 3 cửa ở trên?",
+     "Nếu ở cửa 1 hoặc 2: quỹ dự phòng đủ mấy tháng chi tiêu?",
+     "Khi đọc tin thuế: thuế áp cho cả nước hay một mặt hàng, mức bao nhiêu, từ ngày nào?",
+     "Cổ phiếu đang giữ: doanh nghiệp bán sang Mỹ bao nhiêu % doanh thu (xem thuyết minh báo cáo tài chính)?",
+     "Ghi lại số liệu kèm nguồn và kỳ, không dùng số \"nghe nói\"."
+    ]
+   ],
+   [
+    "p",
+    "Muốn hiểu thêm vì sao một nền kinh tế thặng dư lớn vẫn có thể đi chậm lại, anh chị đọc bài <a href='/f0/bay-thu-nhap-trung-binh-la-gi.html'>bẫy thu nhập trung bình</a>."
+   ],
+   [
+    "p",
+    "<small>Nguồn: Tuổi Trẻ 8/11/2026; Thuế & Hải quan Online 13/11/2026; Investing.com 27/8/2026; Cổng Chính phủ 27/10/2025; Znews 2/8/2026; VnBusiness 9/9/2026; VnExpress 11/11/2026 và 1/8/2025. Nhân vật anh Tâm, chị Hạnh là giả định, em tự tính. Nội dung chỉ để tham khảo, không phải khuyến nghị đầu tư.</small>"
+   ]
+  ],
+  "faq": [
+   [
+    "Thặng dư thương mại Việt Nam với Mỹ năm 2026 là bao nhiêu?",
+    "10 tháng đầu 2026 Việt Nam xuất sang Mỹ 159,4 tỷ USD, nhập 19,3 tỷ USD, thặng dư khoảng 140,1 tỷ USD (tự tính từ số Cục Hải quan)."
+   ],
+   [
+    "Việt Nam nhập thịt gà Mỹ nhiều không?",
+    "Nửa đầu 2026 nhập 115–120 nghìn tấn thịt gà từ Mỹ, khoảng 61,8% lượng gà nhập khẩu, chủ yếu đùi gà góc tư (Hiệp hội Gia cầm qua Znews 2/8/2026)."
+   ],
+   [
+    "Thuế đối ứng của Mỹ với Việt Nam hiện là bao nhiêu?",
+    "Mức công bố tháng 4/2025 là 46%, đến tháng 8/2025 giảm còn 20% (VnExpress 1/8/2025). Mức áp cho từng mặt hàng có thể khác, nên xem thông báo chính thức."
+   ]
+  ],
+  "rel": [
+   "thue-doi-ung-la-gi",
+   "xuat-khau-sau-rieng-2026",
+   "ty-gia-tang-anh-huong-co-phieu",
+   "bay-thu-nhap-trung-binh-la-gi",
+   "quy-du-phong-truoc-khi-dau-tu"
+  ]
+ },
+ {
+  "slug": "cach-tinh-thue-thu-nhap-ca-nhan-2026",
+  "kw": "cách tính thuế thu nhập cá nhân 2026",
+  "grp": 7,
+  "date": "2026-11-20",
+  "title": "Cách tính thuế thu nhập cá nhân 2026: biểu 5 bậc, bảng tra nhanh",
+  "desc": "Giảm trừ 15,5 triệu, người phụ thuộc 6,2 triệu, biểu 5 bậc từ 1/1/2026. Bảng tra thuế cũ – mới theo thu nhập và lý do thu thuế hụt 33.800 tỷ.",
+  "body": [
+   [
+    "p",
+    "Phiếu lương tháng 1/2026 của anh Minh ghi thu nhập sau bảo hiểm <b>27 triệu</b>, nuôi 1 con. Dòng thuế thu nhập cá nhân năm ngoái là <b>990 nghìn</b>, năm nay còn <b>265 nghìn</b>. Mỗi tháng anh giữ lại thêm 725 nghìn, cả năm <b>8,7 triệu</b>, không cần tăng lương đồng nào."
+   ],
+   [
+    "p",
+    "Cộng hàng triệu phiếu lương như vậy lại, Bộ Tài chính ước thu thuế thu nhập cá nhân năm 2026 khoảng <b>203.200 tỷ</b>, thấp hơn dự toán <b>33.800 tỷ</b> (14,3%) và thấp hơn năm ngoái 13,6% (VnExpress 23/10/2026). Anh Minh là nhân vật giả định, nhưng các con số thuế là tính theo luật thật. Bài này giúp anh chị tự tính khoản của nhà mình."
+   ],
+   [
+    "h2",
+    "Thuế thu nhập cá nhân 2026 thay đổi gì?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Nội dung",
+      "Trước 2026",
+      "Từ 1/1/2026"
+     ],
+     [
+      "Giảm trừ bản thân",
+      "11 triệu/tháng",
+      "15,5 triệu/tháng"
+     ],
+     [
+      "Người phụ thuộc",
+      "4,4 triệu/người",
+      "6,2 triệu/người"
+     ],
+     [
+      "Số bậc thuế",
+      "7 bậc",
+      "5 bậc"
+     ],
+     [
+      "Bậc 5%",
+      "Đến 5 triệu",
+      "Đến 10 triệu"
+     ],
+     [
+      "Bậc 35%",
+      "Trên 80 triệu",
+      "Trên 100 triệu"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Mức 11 triệu và 4,4 triệu áp dụng từ 1/7/2020 (Nghị quyết 954/2020). Quốc hội thông qua mức mới ngày 10/12/2025 (VCCI 26/2/2026)."
+   ],
+   [
+    "h2",
+    "Biểu thuế 5 bậc năm 2026 là gì?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Bậc",
+      "Thu nhập tính thuế/tháng",
+      "Thuế suất"
+     ],
+     [
+      "1",
+      "Đến 10 triệu",
+      "5%"
+     ],
+     [
+      "2",
+      "Trên 10 đến 30 triệu",
+      "10%"
+     ],
+     [
+      "3",
+      "Trên 30 đến 60 triệu",
+      "20%"
+     ],
+     [
+      "4",
+      "Trên 60 đến 100 triệu",
+      "30%"
+     ],
+     [
+      "5",
+      "Trên 100 triệu",
+      "35%"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Lũy tiến <b>từng phần</b>: mỗi khúc thu nhập chịu thuế suất của khúc đó, không phải cả cục chịu mức cao nhất. Lên bậc 3 không có nghĩa toàn bộ thu nhập bị đánh 20%."
+   ],
+   [
+    "h2",
+    "Tính thuế thu nhập cá nhân 2026 thế nào?"
+   ],
+   [
+    "ol",
+    [
+     "Lấy thu nhập chịu thuế trừ các khoản bảo hiểm bắt buộc (gọi tắt là thu nhập sau bảo hiểm).",
+     "Trừ 15,5 triệu cho bản thân và 6,2 triệu cho mỗi người phụ thuộc đã đăng ký. Phần còn lại là thu nhập tính thuế.",
+     "Chia thu nhập tính thuế vào từng bậc, nhân thuế suất từng bậc rồi cộng lại."
+    ]
+   ],
+   [
+    "p",
+    "<b>Anh Minh</b> (27 triệu, 1 con): 27 − 15,5 − 6,2 = 5,3 triệu, nằm trong bậc 1 → 5,3 × 5% = <b>265 nghìn</b>. Cách cũ: 27 − 11 − 4,4 = 11,6 → 5 × 5% + 5 × 10% + 1,6 × 15% = 990 nghìn."
+   ],
+   [
+    "p",
+    "<b>Chị Lan</b> (110 triệu, không người phụ thuộc): 110 − 15,5 = 94,5 → 10 × 5% + 20 × 10% + 30 × 20% + 34,5 × 30% = 0,5 + 2 + 6 + 10,35 = <b>18,85 triệu</b>. Cách cũ ra 24,8 triệu. Chị bớt <b>5,95 triệu mỗi tháng</b>."
+   ],
+   [
+    "h2",
+    "Bảng tra nhanh: thu nhập của mình nộp bao nhiêu?"
+   ],
+   [
+    "p",
+    "Đơn vị triệu đồng/tháng, dạng <b>cũ → mới</b>, em tự tính theo đúng biểu thuế, NPT = người phụ thuộc:"
+   ],
+   [
+    "table",
+    [
+     [
+      "Thu nhập<br>sau BH",
+      "Không NPT",
+      "1 NPT",
+      "2 NPT"
+     ],
+     [
+      "15",
+      "0,2 → 0",
+      "0 → 0",
+      "0 → 0"
+     ],
+     [
+      "20",
+      "0,65 →<br>0,225",
+      "0,23 → 0",
+      "0,01 → 0"
+     ],
+     [
+      "27",
+      "1,65 →<br>0,65",
+      "0,99 →<br>0,265",
+      "0,47 → 0"
+     ],
+     [
+      "30",
+      "2,15 →<br>0,95",
+      "1,44 →<br>0,415",
+      "0,78 →<br>0,105"
+     ],
+     [
+      "40",
+      "4,15 →<br>1,95",
+      "3,27 →<br>1,33",
+      "2,39 →<br>0,71"
+     ],
+     [
+      "50",
+      "6,5 →<br>3,4",
+      "5,4 →<br>2,33",
+      "4,39 →<br>1,71"
+     ],
+     [
+      "70",
+      "11,85 →<br>7,4",
+      "10,53 →<br>6,16",
+      "9,3 →<br>4,92"
+     ],
+     [
+      "110",
+      "24,8 →<br>18,85",
+      "23,26 →<br>16,99",
+      "21,72 →<br>15,13"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Bảng chưa tính các khoản miễn thuế riêng (phụ cấp, tiền ăn ca…) và các khoản giảm trừ khác. Số thật trên phiếu lương có thể lệch một chút."
+   ],
+   [
+    "h2",
+    "Thu thuế hụt 33.800 tỷ: ai được lợi nhiều nhất?"
+   ],
+   [
+    "p",
+    "Câu trả lời phụ thuộc vào cách đo:"
+   ],
+   [
+    "ul",
+    [
+     "<b>Theo số tiền:</b> người thu nhập cao được nhiều nhất. 110 triệu bớt khoảng 6 triệu/tháng, 70 triệu bớt khoảng 4,4 triệu.",
+     "<b>Theo phần trăm:</b> người thu nhập 20–30 triệu được nhiều nhất, thuế giảm 56–100%.",
+     "<b>Người thu nhập quanh mức bình quân:</b> thu nhập bình quân của lao động quý 3/2026 khoảng 9,18 triệu/tháng (Cục Thống kê). Mức này dưới cả 11 triệu lẫn 15,5 triệu, nên năm ngoái lẫn năm nay đều <b>không nộp thuế</b>, tức không được thêm đồng nào."
+    ]
+   ],
+   [
+    "p",
+    "Lưu ý: 33.800 tỷ là phần thu <b>thấp hơn dự toán</b>, do 3 nguyên nhân Bộ Tài chính nêu: nâng giảm trừ, rút từ 7 xuống 5 bậc, và chuyển kỳ kê khai từ tháng sang quý (một phần chỉ là nộp muộn hơn). Không nên hiểu là \"người dân được giảm 34.000 tỷ tiền thuế\". Riêng phần nâng giảm trừ, VCCI ước người lao động đỡ hơn <b>8.700 tỷ</b>."
+   ],
+   [
+    "h2",
+    "Vì sao mức giảm trừ mới vẫn bị chê là chậm?"
+   ],
+   [
+    "p",
+    "Mức 11 triệu đứng yên <b>5 năm rưỡi</b> (7/2020 đến hết 2025). Trong lúc đó thu nhập bình quân của lao động tăng từ 5,79 triệu (quý 3/2020) lên 9,18 triệu (quý 3/2026), khoảng <b>+58,6%</b>; giá cả 2021–2025 cộng dồn khoảng <b>+16%</b> (em nhân 5 năm CPI bình quân). Nhiều người bị kéo vào diện nộp thuế chỉ vì lương tăng theo giá cả. Khác biệt giữa lương danh nghĩa và lương thật em đã viết ở bài <a href='/f0/luong-thuc-te-la-gi.html'>lương thực tế là gì</a>."
+   ],
+   [
+    "h2",
+    "Hộ kinh doanh có được giảm thuế 2026 không?"
+   ],
+   [
+    "p",
+    "Có. Nghị quyết 43/2026/QH16 và Nghị định 398 (hiệu lực 29/10/2026) cho hộ, cá nhân kinh doanh doanh thu không quá <b>10 tỷ/năm</b> giảm <b>30%</b> số thuế thu nhập cá nhân phải nộp, áp dụng kỳ 2026 và 2027 (Doanh Nhân Việt Nam 9/11/2026)."
+   ],
+   [
+    "p",
+    "Thuế khi bán chứng khoán thì tính riêng theo giá trị bán, không theo biểu lũy tiến ở trên: xem bài <a href='/f0/phi-giao-dich-va-thue-chung-khoan.html'>phí giao dịch và thuế chứng khoán</a>."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
+   ],
+   [
+    "ol",
+    [
+     "<b>Tưởng lên bậc là thiệt cả cục:</b> chỉ phần vượt mới chịu thuế suất cao hơn. Tăng lương không bao giờ làm tiền thực nhận giảm vì thuế.",
+     "<b>Quên đăng ký người phụ thuộc:</b> mỗi người phụ thuộc bớt 6,2 triệu thu nhập tính thuế. Với người ở bậc 2, đó là 620 nghìn tiền thuế mỗi tháng.",
+     "<b>Tiêu hết phần thuế được bớt:</b> 725 nghìn/tháng của anh Minh rất dễ tan vào chi tiêu. Để riêng thì sau 12 tháng là 8,7 triệu, đủ mở đầu một quỹ dự phòng."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist tự làm"
+   ],
+   [
+    "ul",
+    [
+     "Lấy phiếu lương: thu nhập trước thuế, các khoản bảo hiểm, số người phụ thuộc đã đăng ký.",
+     "Tính lại theo 3 bước ở trên, so với dòng thuế trên phiếu lương tháng gần nhất.",
+     "Kiểm tra người phụ thuộc (con nhỏ, bố mẹ hết tuổi lao động không có thu nhập) đã đăng ký đủ chưa.",
+     "Có nhiều nguồn thu nhập: chuẩn bị quyết toán cuối năm.",
+     "Phần thuế được bớt: chuyển tự động sang một tài khoản riêng ngay ngày nhận lương."
+    ]
+   ],
+   [
+    "p",
+    "Nếu muốn phần tiền bớt thuế chạy đều mỗi tháng, bài <a href='/f0/tich-san-co-phieu-hay-gui-tiet-kiem.html'>tích sản cổ phiếu hay gửi tiết kiệm</a> so sánh 2 cách bằng số thật; bảng tích sản cổ phiếu ngân hàng cập nhật ở <a href='/bao-cao-2026.html#tichsan'>báo cáo 2026</a>."
+   ],
+   [
+    "p",
+    "<small>Nguồn: VnExpress 23/10/2026 (Bộ Tài chính); Nhân Dân 29/11/2025; Luật Thuế TNCN 2007 sửa đổi 2012 (Điều 19, 22); Nghị quyết 954/2020/UBTVQH14; VCCI 26/2/2026; Doanh Nhân Việt Nam 9/11/2026; Cục Thống kê (thu nhập bình quân, CPI). Nhân vật anh Minh, chị Lan là giả định, em tự tính. Nội dung chỉ để tham khảo, không thay tư vấn thuế.</small>"
+   ]
+  ],
+  "faq": [
+   [
+    "Mức giảm trừ gia cảnh 2026 là bao nhiêu?",
+    "Từ 1/1/2026: 15,5 triệu đồng/tháng cho bản thân và 6,2 triệu đồng/tháng cho mỗi người phụ thuộc (trước đó 11 triệu và 4,4 triệu)."
+   ],
+   [
+    "Lương bao nhiêu thì phải nộp thuế thu nhập cá nhân 2026?",
+    "Thu nhập sau bảo hiểm trên 15,5 triệu/tháng (không người phụ thuộc) mới phát sinh thuế; mỗi người phụ thuộc nâng ngưỡng thêm 6,2 triệu, ví dụ 1 con là 21,7 triệu."
+   ],
+   [
+    "Biểu thuế thu nhập cá nhân 2026 có mấy bậc?",
+    "5 bậc: đến 10 triệu 5%, trên 10–30 triệu 10%, trên 30–60 triệu 20%, trên 60–100 triệu 30%, trên 100 triệu 35% (tính trên thu nhập tính thuế mỗi tháng)."
+   ]
+  ],
+  "rel": [
+   "luong-thuc-te-la-gi",
+   "phi-giao-dich-va-thue-chung-khoan",
+   "quy-du-phong-truoc-khi-dau-tu",
+   "tich-san-co-phieu-hay-gui-tiet-kiem",
+   "ty-le-tra-no-tren-thu-nhap-la-gi"
+  ]
+ },
+ {
+  "slug": "xuat-khau-sau-rieng-2026",
+  "kw": "xuất khẩu sầu riêng 2026",
+  "grp": 8,
+  "date": "2026-11-20",
+  "title": "Xuất khẩu sầu riêng 2026 kỷ lục 3,45 tỷ USD: 96% bán một khách",
+  "desc": "9 tháng 2026 sầu riêng xuất khẩu 3,45 tỷ USD, gần 96% sang Trung Quốc, diện tích 200.000 ha gần gấp đôi quy hoạch. Giá đẹp – xô và bài học hồ tiêu.",
+  "body": [
+   [
+    "p",
+    "Vườn nhà anh Phong ở Đắk Lắk được khoảng <b>30 tấn</b> một vụ. Thương lái tới, chọn được nửa vườn là hàng đẹp, nửa còn lại là <b>hàng xô</b>. Đầu tháng 11, RI6 đẹp lựa ở Tây Nguyên 52.000–54.000 đồng/kg, hàng xô chỉ 25.000–30.000. Chênh khoảng 25.000 đồng/kg trên 15 tấn là <b>375 triệu đồng</b>, đủ biến một vụ lãi thành một vụ hòa vốn."
+   ],
+   [
+    "p",
+    "Cùng lúc đó, sầu riêng Việt Nam lập kỷ lục: 9 tháng đầu 2026 xuất khẩu <b>3,45 tỷ USD</b>. Anh Phong là nhân vật giả định để em tính, còn giá và kim ngạch là số thật. Câu hỏi của bài: tiền tỷ đô về đâu, và vì sao nhà vườn vẫn lo?"
+   ],
+   [
+    "h2",
+    "Xuất khẩu sầu riêng 2026 được bao nhiêu?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Kỳ",
+      "Kim ngạch",
+      "So cùng kỳ",
+      "Nguồn"
+     ],
+     [
+      "8 tháng",
+      "2,72 tỷ USD",
+      "+55%",
+      "Vietnambiz 29/9"
+     ],
+     [
+      "9 tháng",
+      "3,45 tỷ USD",
+      "+25%",
+      "Vietnambiz 3/11"
+     ],
+     [
+      "Riêng tháng 9",
+      "729 triệu USD",
+      "−25%",
+      "Vietnambiz 3/11"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Hai con số tăng trưởng 55% và 25% đến từ hai kỳ, hai bản tin khác nhau nên đừng ghép thành một xu hướng. Điều đáng chú ý là <b>tháng 9 giảm 25% so với cùng kỳ</b> và giảm 23,8% so với tháng 8: đà tăng đã chững lại. Giá xuất khẩu bình quân sầu riêng tươi 8 tháng cũng giảm 3,3%, còn 3.269 USD/tấn."
+   ],
+   [
+    "p",
+    "Sầu riêng chiếm khoảng <b>44%</b> kim ngạch rau quả (8 tháng). Cả ngành rau quả 10 tháng 2026 xuất 8,29 tỷ USD (+17,3%), trong đó 65% sang Trung Quốc (Cục Hải quan)."
+   ],
+   [
+    "h2",
+    "96% bán cho một khách nghĩa là gì?"
+   ],
+   [
+    "p",
+    "9 tháng, sầu riêng sang Trung Quốc gần <b>3,3 tỷ USD</b> (+27,6%), chiếm gần <b>96%</b>, cao hơn mức 93,6% cùng kỳ. Hàn Quốc tăng 129% nhưng nền còn rất nhỏ. Philippines mới có khoảng 15.000 ha, chưa tới 1% thị phần sầu riêng ở Trung Quốc (Vietnambiz 25/9/2026)."
+   ],
+   [
+    "p",
+    "Bán gần hết cho một khách thì khách nói gì cũng là luật. Hiệp hội Rau quả cảnh báo: nếu Trung Quốc siết kiểm tra chất lượng hoặc giảm nhập, hàng sẽ ùn ở kho miền Tây và Tây Nguyên, áp lực bán tháo, vì các thị trường khác chưa đủ sức mua (Vietnambiz 5/11/2026). Chuyện này đã có tiền lệ: tháng 2/2025 rau quả sang Trung Quốc chỉ 132,7 triệu USD, giảm khoảng <b>32%</b> so với tháng 2/2024."
+   ],
+   [
+    "h2",
+    "Diện tích sầu riêng vượt quy hoạch bao nhiêu?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Mốc",
+      "Diện tích"
+     ],
+     [
+      "Quy hoạch ban đầu đến 2030",
+      "65.000–75.000 ha"
+     ],
+     [
+      "Quy hoạch điều chỉnh",
+      "100.000–110.000 ha"
+     ],
+     [
+      "Thực tế 2026",
+      "Khoảng 200.000 ha"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Diện tích thật đã <b>gần gấp đôi</b> mức quy hoạch điều chỉnh (Trung tâm WTO – VCCI, VnEconomy 15/10/2026). Sản lượng dự kiến năm 2026 khoảng 2,08 triệu tấn (Người Đưa Tin 25/10/2026). Nhiều vườn trồng 3–4 năm trước giờ mới cho trái, nên nguồn cung còn tăng tiếp dù giá đã giảm."
+   ],
+   [
+    "h2",
+    "Giá sầu riêng đẹp và xô chênh bao nhiêu?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Loại (9/11/2026)",
+      "Đẹp lựa",
+      "Hàng xô"
+     ],
+     [
+      "RI6 Tây Nguyên",
+      "52.000–54.000",
+      "25.000–30.000"
+     ],
+     [
+      "Thái",
+      "72.000–74.000",
+      "32.000–35.000"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Đơn vị đồng/kg, theo giasaurieng.net qua Doanh Nhân Việt Nam 9/11/2026; giá đổi theo ngày và theo vùng. Hàng xô rẻ hơn một nửa. Khi thị trường chuộng trái tươi chuẩn, vườn có tỷ lệ hàng đẹp cao mới giữ được lãi, còn vườn trồng nhanh, chăm ẩu là bên chịu trước."
+   ],
+   [
+    "h2",
+    "Bài học hồ tiêu có lặp lại với sầu riêng?"
+   ],
+   [
+    "p",
+    "Hồ tiêu từng là \"vàng đen\". Giá xuất khẩu bình quân hạt tiêu tháng 12/2016 là <b>7,63 USD/kg</b>, đến tháng 4/2020 chỉ còn <b>2,01 USD/kg</b>, mất <b>73,6%</b> (em tính từ số Cục Hải quan). Giá cao kéo người trồng ồ ạt, vài năm sau cây cho trái cùng lúc, cung vượt cầu, giá sụp. Phải tới tháng 10/2026 giá mới về 6,58 USD/kg, vẫn dưới đỉnh cũ."
+   ],
+   [
+    "p",
+    "Sầu riêng có 3 điểm giống: giá từng rất cao, diện tích tăng nhanh hơn quy hoạch, và cây cần nhiều năm mới cho trái nên không thể \"dừng\" nguồn cung ngay. Khác ở chỗ sầu riêng vẫn đang có cầu lớn từ Trung Quốc. Chưa ai biết chắc kết cục, nhưng rủi ro thì đã hiện ra."
+   ],
+   [
+    "h2",
+    "Nhà đầu tư chứng khoán học được gì?"
+   ],
+   [
+    "p",
+    "Câu chuyện sầu riêng là bài học <b>tập trung khách hàng</b> và <b>chu kỳ giá hàng hoá</b>. Khi đọc báo cáo tài chính một doanh nghiệp xuất khẩu, hãy tìm trong thuyết minh tỷ trọng doanh thu từ một thị trường. Doanh nghiệp bán phần lớn cho một khách đang tăng trưởng thì lợi nhuận đẹp, nhưng chỉ cần khách đổi ý là lợi nhuận đảo chiều. Cách nhận diện nhóm này có ở bài <a href='/f0/co-phieu-chu-ky-la-gi.html'>cổ phiếu chu kỳ là gì</a> và <a href='/f0/rui-ro-nganh-la-gi.html'>rủi ro ngành</a>."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
+   ],
+   [
+    "ol",
+    [
+     "<b>Nhìn kim ngạch kỷ lục mà quên tháng gần nhất:</b> 9 tháng +25% nhưng tháng 9 −25%. Xu hướng mới nằm ở số tháng.",
+     "<b>Lấy giá đẹp lựa để tính lãi cả vườn:</b> nửa vườn là hàng xô thì doanh thu thấp hơn rất nhiều.",
+     "<b>Nghĩ \"trồng thêm thị trường nào cũng mua\":</b> thị trường ngoài Trung Quốc còn nhỏ, chưa đủ hút phần dư."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist tự soi"
+   ],
+   [
+    "ul",
+    [
+     "Doanh thu của mình (vườn, doanh nghiệp, cổ phiếu đang giữ) phụ thuộc bao nhiêu % vào một khách?",
+     "Tính lãi theo giá hàng xô, không chỉ giá đẹp lựa.",
+     "Theo dõi số xuất khẩu từng tháng, không chỉ số lũy kế.",
+     "Nếu đang vay để mở rộng vườn: thử giá giảm 30% xem còn trả được nợ không.",
+     "Đọc thông báo kiểm dịch, chất lượng từ phía nước nhập khẩu."
+    ]
+   ],
+   [
+    "p",
+    "Ở chiều ngược lại, hàng Mỹ vào Việt Nam tăng nhanh ra sao, em viết ở bài <a href='/f0/thang-du-thuong-mai-viet-nam-my.html'>thặng dư thương mại Việt Nam – Mỹ 2026</a>."
+   ],
+   [
+    "p",
+    "<small>Nguồn: Vietnambiz 29/9, 25/9, 3/11, 5/11/2026 (Cục Hải quan, Cục Xuất nhập khẩu, Hiệp hội Rau quả); Trung tâm WTO – VCCI qua VnEconomy 15/10/2026; Người Đưa Tin 25/10/2026; Doanh Nhân Việt Nam 9/11/2026; Cục Hải quan (rau quả, giá hạt tiêu). Nhân vật anh Phong là giả định, em tự tính. Nội dung chỉ để tham khảo, không phải khuyến nghị đầu tư.</small>"
+   ]
+  ],
+  "faq": [
+   [
+    "Xuất khẩu sầu riêng 2026 được bao nhiêu?",
+    "9 tháng đầu 2026 đạt 3,45 tỷ USD, tăng 25% so với cùng kỳ (Cục Hải quan qua Vietnambiz 3/11/2026); riêng tháng 9 là 729 triệu USD, giảm 25%."
+   ],
+   [
+    "Sầu riêng Việt Nam xuất sang Trung Quốc bao nhiêu phần trăm?",
+    "Khoảng 96% kim ngạch 9 tháng 2026, gần 3,3 tỷ USD, cao hơn mức 93,6% cùng kỳ năm trước."
+   ],
+   [
+    "Diện tích sầu riêng cả nước bao nhiêu ha?",
+    "Khoảng 200.000 ha năm 2026, gần gấp đôi quy hoạch điều chỉnh 100.000–110.000 ha đến 2030 (Trung tâm WTO – VCCI)."
+   ]
+  ],
+  "rel": [
+   "thang-du-thuong-mai-viet-nam-my",
+   "co-phieu-chu-ky-la-gi",
+   "rui-ro-nganh-la-gi",
+   "chenh-lech-gia-vang-trong-nuoc-va-the-gioi",
+   "da-dang-hoa-danh-muc-bao-nhieu-ma"
   ]
  }
 ]
