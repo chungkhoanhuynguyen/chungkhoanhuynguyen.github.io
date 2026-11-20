@@ -73,6 +73,9 @@ def conv(sc):
                      circles=ch.get("circles", []), tag=(lambda t: t if "NẾN TUẦN" in t else t[:40] + " · NẾN TUẦN")((s["label"] or ch["sym"]).upper()), reveal=1.6)
         else: s["k"] = "text"
     elif k == "image":
+        if "||" in str(s.get("img", "")):   # 20/11 nhịp hình: 'a||b' -> cắt sang ảnh thứ 2 giữa cảnh
+            _a, _b = [x.strip() for x in s["img"].split("||", 1)]; s["img"] = s["_img1"] = _a
+            if os.path.exists(os.path.join(HERE, "engine", _b)): s["_img2"] = _b
         if not os.path.exists(os.path.join(HERE, "engine", s.get("img", "?"))): s["k"] = "text"
     elif k == "checklist":
         s["items"] = [it[0] if isinstance(it, (list, tuple)) else it for it in s.get("items", [])]
@@ -204,6 +207,14 @@ HU = [os.environ.get("HIEU_UNG", "1") == "1"]
 # 11/11 NV1: HIỆU ỨNG 2 – chuyển cảnh đa dạng (whip đổi chương / crossfade / zoom xuyên), Ken Burns ảnh nền cảnh số liệu,
 # thanh chương có vạch mốc, whoosh chỉ khi đổi chương. Bật: META/biến HIEU_UNG2=1 hoặc lô >= 20261111 (lô cũ giữ nguyên).
 HU2 = [HU[0] and (os.environ.get("HIEU_UNG2") == "1" or bool(g.get("HIEU_UNG2")) or (os.environ.get("HIEU_UNG2") != "0" and batch[:8] >= "20261111"))]   # 10/11: hiệu ứng video dài (chuyển cảnh, phụ đề màu, thanh chương)
+import nhip
+NHIP = [HU[0] and nhip.bat(batch, g)]   # 20/11: nhịp hình 3–5s theo lời (nhip.py) – chỉ lô mới, lô cũ trong _video/nhip_lo_cu.txt giữ nguyên
+try: HOOK = (json.load(open(os.path.join(QD, "meta.json"), encoding="utf-8")).get(key, {}) or {}).get("bia_hook") or ""
+except Exception: HOOK = ""
+if not HOOK and isinstance(g.get("META"), dict): HOOK = (g["META"].get(key) or {}).get("bia") or (g["META"].get(key) or {}).get("bia_hook") or ""
+if isinstance(HOOK, (list, tuple)): HOOK = " ".join(str(x) for x in HOOK)
+HOOK = str(HOOK).replace("\n", " ")
+SUBQ = [None]
 _DO = re.compile(r"^(giảm|mất|lỗ|sập|nghèo|khó|âm|bán|tháo|hoảng|đóng|phá|nợ|rơi|bẫy|rủi)", re.I)
 _XANH = re.compile(r"^(tăng|lãi|giàu|lời|dương|hồi|mua|gom|khỏe|bền)", re.I)
 def _mau(w):
@@ -213,6 +224,7 @@ def _mau(w):
     return (255, 255, 255)
 def _draw_sub(im, sc, t, cx, wmax):
     if not SUB_ON[0]: return
+    if SUBQ[0] is not None: SUBQ[0].append((sc, t, cx, wmax)); return   # nhịp hình: vẽ phụ đề SAU máy quay
     cur = next(((a, c) for a, e, c in sc.get("_sub", []) if a <= t < e), None)
     if not cur: return
     a0, cur = cur
@@ -265,6 +277,15 @@ def _av_dan(im):
     return im
 import land_text
 def land(v, sc, t):
+    if not NHIP[0]: return _land0(v, sc, t)
+    SUBQ[0] = []
+    try: im = _land0(v, sc, t)
+    finally: q, SUBQ[0] = SUBQ[0], None
+    if sc["k"] not in ("3d", "text", "end"): im = nhip.cam(im, sc, t)   # cảnh chữ/3D đã có Ken Burns/chuyển động riêng
+    if sc.get("_idx") == 0 and HOOK: im = nhip.hook(im, t, HOOK)
+    for a_ in q: _draw_sub(im, *a_)
+    return im
+def _land0(v, sc, t):
     k = sc["k"]
     if k == "3d":   # khung 3D đã dựng sẵn (r3d) + nhãn số liệu góc trái + phụ đề
         import r3d; im = r3d.frame(sc, t); _draw_sub(im, sc, t, LW/2, LW - 200); return im
@@ -280,7 +301,14 @@ def land(v, sc, t):
         c = v.crop((0, 200, 1080, 1720)); s = LH/c.height; c = c.resize((int(c.width*s), LH), Image.LANCZOS)
         im.paste(c, ((LW-c.width)//2, 0)); _draw_sub(im, sc, t, LW/2, LW - 200); return im
     p = v.crop((66, 470, 1014, 1150)); s = 1.32; p = p.resize((int(p.width*s), int(p.height*s)), Image.LANCZOS)
-    im.paste(p, (50, 26)); _px, _pw = 50, p.width          # chừa dải dưới cho phụ đề, không che số liệu
+    _pw0 = p.width
+    if NHIP[0] and k == "bignum":   # câu nhắc số -> số nổi: zoom 1,04 + viền sáng
+        _a = nhip.noi_so(sc, t)
+        if _a > 0.01:
+            _z = 1 + 0.04 * _a; _p2 = p.resize((int(p.width * _z), int(p.height * _z)), Image.BILINEAR)
+            p = _p2.crop(((_p2.width - p.width) // 2, (_p2.height - p.height) // 2, (_p2.width - p.width) // 2 + p.width, (_p2.height - p.height) // 2 + p.height))
+    im.paste(p, (50, 26)); _px, _pw = 50, p.width
+    if NHIP[0] and k == "bignum": nhip.vien(im, (50 + 18, 26 + 18, 50 + p.width - 18, 26 + p.height - 18), nhip.noi_so(sc, t))          # chừa dải dưới cho phụ đề, không che số liệu
     d = ImageDraw.Draw(im); x0 = 50 + p.width + 40; cw = LW - x0 - 50; cx = x0 + cw/2
     dx2.brand(im, d, cx, 70, 0.9, 1.0, (10, 12, 17))
     lab = sc.get("label") or ""
@@ -294,7 +322,10 @@ def land(v, sc, t):
         a = dx2.ease((t - 0.25 - i*0.18)/0.45)
         if a <= 0: continue
         f = dx2.fit(d, l, "Black", cw, 92); c = cols[i] if i < len(cols) else dx2.CREAM
-        tw = d.textlength(l, font=f); d.text((cx - tw/2, y + (1-a)*24), l, font=f, fill=dx2.mix(c, a, (10, 12, 17))); y += int(f.size*1.2)
+        tw = d.textlength(l, font=f)
+        if NHIP[0]: nhip.chu_mau(d, cx - tw/2, y + (1-a)*24, l, f, c, a, (10, 12, 17))
+        else: d.text((cx - tw/2, y + (1-a)*24), l, font=f, fill=dx2.mix(c, a, (10, 12, 17)))
+        y += int(f.size*1.2)
     if "_card" in sc:
         c, m = sc["_card"]; a = dx2.ease((t - 0.5)/0.5)
         if a > 0:
@@ -356,6 +387,18 @@ def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", "%dx%d" % (LW, LH), "-r", str(FPS), "-i", "-",
                           "-pix_fmt", "yuv420p", "-c:v", "libx264", "-crf", "21", "-g", "60", "-preset", "veryfast", tmp], stdin=subprocess.PIPE)
     fr = 0
+    if NHIP[0]:   # mốc câu + nhịp hình từng cảnh; thẻ/ô/cột hiện theo câu nhắc tới nó
+        _f0 = 0
+        for i, sc in enumerate(scenes):
+            n_ = int(round(b[i+1]*FPS)) - _f0; _f0 += n_; nhip.lap(sc, parts[i], n_ / FPS)
+            k_ = sc.get("k")
+            if k_ == "cards": sc["_nhip"] = nhip.lich(sc, len(sc["cards"]), [" ".join(str(x) for x in cd[:3]) for cd in sc["cards"]])
+            elif k_ == "checklist": sc["_nhip"] = nhip.lich(sc, len(sc["items"]), sc["items"])
+            elif k_ == "bars": sc["_nhip"] = nhip.lich(sc, len(sc["bars"]), [str(x[0]) + " " + str(x[3]) for x in sc["bars"]], t_min=0.2)
+            elif k_ == "bignum":
+                _c = next((a for a, c in sc["_cau"] if re.search(r"\d", c)), None)
+                if _c is not None and _c < 4.0: sc.setdefault("t0", _c)
+        print(key, "nhip hinh: %d nhip / %.0fs" % (sum(len(sc.get("_beats", [])) for sc in scenes), b[-1]), flush=True)
     if any(sc.get("k") == "3d" for sc in scenes):   # dựng trước các cảnh 3D đúng số khung (có kho theo mã băm)
         import r3d; _f0 = 0
         for i, sc in enumerate(scenes):
@@ -364,6 +407,7 @@ def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
     for i, sc in enumerate(scenes):
         n = int(round(b[i+1]*FPS)) - fr; sc["_T"] = n / FPS
         for j in range(n):
+            if sc.get("_img2"): sc["img"] = sc["_img2"] if j / FPS > sc["_T"] / 2 else sc["_img1"]
             AV[2] = fr + j; im = land(None if sc["k"] in ("text", "end", "chat", "noti", "call", "giay", "3d") else dx2.draw(sc, j/FPS, j/max(1, n)), sc, j/FPS)
             if HU2[0]:
                 tt = j / FPS
@@ -455,6 +499,16 @@ try:
     for i, r in enumerate(raw):
         if i < len(b) - 1 and r.get("ch"): ev.append((b[i] + 0.25, "ting"))
         elif i < len(b) - 1 and re.search(r"\d+[.,]?\d*\s*(%|tỷ|nghìn tỷ|lần)", r.get("say", "")): ev.append((b[i] + 0.35, "pop"))
+    if NHIP[0]:   # 20/11: whoosh MỌI chuyển cảnh + pop ở thẻ/cột/ô ĐẦU TIÊN, rất nhỏ (≈ -28 dB so với giọng); bỏ pop theo số (dày)
+        ev = [(e[0], "whoosh_nho" if e[1] == "whoosh" else e[1]) for e in ev if e[1] != "pop"]
+        for i in range(1, len(b) - 1):
+            if not raw[i].get("ch"): ev.append((max(0, b[i] - 0.12), "whoosh_nho"))
+        for i, sc in enumerate(scenes):
+            if i < len(b) - 1 and sc.get("_nhip"): ev.append((b[i] + sc["_nhip"][0], "pop_nho"))
+        def _chuan(f, db=-42.0):   # RMS phần có tiếng = giọng (-14 LUFS) - 28 dB, tính cả hệ số 0,28 của track
+            x = f(); r = np.sqrt(np.mean(x[np.abs(x) > 1e-3] ** 2)) or 1.0
+            return lambda: x * (10 ** (db / 20) / r / 0.28)
+        am_thanh.HANH.update(whoosh_nho=_chuan(am_thanh.whoosh), pop_nho=_chuan(am_thanh.pop))
     ev.append((max(0, b[-2] + 0.3), "tada"))
     # QL1 11/11: tiếng theo cảnh điện thoại / giấy tờ, khớp đúng nhịp bật của chat_ui
     try:
@@ -489,8 +543,8 @@ try:
     rawmp4 = r2; print(key, "sfx", len(ev), flush=True)
 except Exception as e:
     print("sfx: bo qua", e, flush=True)
-try: _NH = json.load(open(os.path.join(HERE, "queue", sys.argv[1], "meta.json"), encoding="utf-8")).get(key, {}).get("nhac", "") or ("lofi" if str(key).startswith("NONG") else "")
-except Exception: _NH = "lofi" if str(key).startswith("NONG") else ""
+try: _NH = json.load(open(os.path.join(HERE, "queue", sys.argv[1], "meta.json"), encoding="utf-8")).get(key, {}).get("nhac", "")
+except Exception: _NH = ""
 _CANG = re.compile(r"sập|mất trắng|bốc hơi|cháy tài khoản|gọi ký quỹ|bán giải chấp|phá sản|vỡ nợ|lừa|kiện|bắt|trắng tay|nợ nần|hoảng|tháo chạy|lao dốc|thua lỗ", re.I)
 _cg = [(b[i], b[i + 1]) for i, r in enumerate(raw) if i < len(b) - 1 and _CANG.search(r.get("say", ""))]
 try: music.mix(rawmp4, b, out, music_db=-14, lofi=(_NH == "lofi"), cang=_cg or None)  # anh Huy 20/11: nhạc nền át giọng -> -8 xuống -14 dB
@@ -536,7 +590,7 @@ try:
         for _st, _du in re.findall(r"black_start:([\d.]+) black_end:[\d.]+ black_duration:([\d.]+)", _bd):
             if 1.0 < float(_st) < b[-1] - 2: qc.append("LỖI khung đen giữa video tại %.1fs (%.1fs)" % (float(_st), float(_du)))
         _fz = sum(float(x) for x in re.findall(r"freeze_duration: ([\d.]+)", _bd))
-        if b[-1] and _fz / b[-1] > 0.4: qc.append("CẢNH BÁO rủi ro trình chiếu: %.0f%% thời lượng hình đứng yên ≥2s – thêm chuyển động/thẻ số/nhân vật" % (100 * _fz / b[-1]))
+        if b[-1] and _fz / b[-1] > 0.25: qc.append(("LỖI" if NHIP[0] else "CẢNH BÁO") + " rủi ro trình chiếu: %.0f%% thời lượng hình đứng yên ≥2s – thêm chuyển động/thẻ số/nhân vật" % (100 * _fz / b[-1]))
     except Exception as _e: qc.append("CẢNH BÁO không đo được khung đen/đứng hình: %s" % _e)
     if not os.path.exists(os.path.join(OUT, key + ".srt")): qc.append("LỖI thiếu file phụ đề .srt")
     try:  # QL1 11/11: tự bắt lỗi số trên phụ đề (vd "6.000.001 tháng", "tháng 15", chữ số dính chữ)
