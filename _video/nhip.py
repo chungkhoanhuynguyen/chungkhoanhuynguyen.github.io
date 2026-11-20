@@ -164,7 +164,7 @@ def hook(im, t, title):
             for w in s.split():
                 if not ln[-1] or d.textlength(ln[-1] + " " + w, font=f) <= mw: ln[-1] = (ln[-1] + " " + w).strip()
                 else: ln.append(w)
-        if len(ln) <= 3 or sz <= 96: break
+        if (len(ln) <= len(ps) and len(ln) <= 3) or sz <= 96: break   # mỗi phần 1 dòng nếu được, chữ không dưới 96px
         sz -= 4
     lh = int(sz * 1.16); tw = max(d.textlength(l, font=f) for l in ln); bh = lh * len(ln) + 70
     sc_ = 1.0; bw = (tw + 110) * sc_; bh2 = bh * sc_
