@@ -16,7 +16,7 @@ jobs:
         run: |
           npm i -g lighthouse@12.2.1 >/dev/null 2>&1
           mkdir -p /tmp/lh
-          for u in "" "nhandinh.html" "f0/"; do
+          for u in "" "dinh-gia-co-phieu.html" "f0/"; do
             n=$(echo "trang_${u:-chu}" | tr '/.' '__')
             lighthouse "https://chungkhoanhuynguyen.com/$u" --quiet --chrome-flags="--headless=new --no-sandbox" \
               --only-categories=performance,seo,accessibility,best-practices --output=json --output-path=/tmp/lh/$n.json || true
