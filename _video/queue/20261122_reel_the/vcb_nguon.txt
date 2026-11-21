@@ -1,0 +1,5 @@
+VCB - nguon so lieu (tra 22/11/2026)
+- Gia dong cua 20/11: 50.200 d, thap nhat tu dau 2023; dinh 75.370 d ngay 14/1/2026, -33,4%; von hoa mat >210.000 ty, con ~419.000 ty, xuong hang 3 sau Vingroup, Vinhomes; khoi ngoai ban rong 950,14 ty trong 15 phien 1-20/11 (14 phien ban rong); loi nhuan truoc thue 9 thang 40.440 ty (+22%), quy 3 11.218 ty vs 11.239 ty; phat hanh rieng le toi da 543,1 trieu CP chua cong bo gia; P/B ~1,7 lan (TCBS: thap hon 36% so trung vi 2,8 lan tu 2022): Nguoi Quan Sat 20/11/2026 "Vietcombank mat hon 210.000 ty dong von hoa, khoi ngoai lien tuc ban rong".
+- Mizuho nam 15% von VCB: CafeF 22/11/2026.
+- No xau toan nganh 2,3% 9 thang 2026: VIS Rating qua MarketTimes 21/11/2026.
+- Bieu do: du lieu gia web (data/c/VCB.bin).

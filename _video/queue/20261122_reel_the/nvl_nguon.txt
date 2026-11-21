@@ -1,0 +1,6 @@
+NVL - nguon so lieu (tra 22/11/2026)
+- Chao ban 800,7 trieu CP, ty le 3:1, gia 10.000 d, thu toi da ~8.007 ty, lui han lan 2 (nop tien 26/11 -> 28/12; gia han GCN den 11/1/2027): Vietnambiz 20/11/2026 "Viec Novaland hai lan lui han huy dong 8.007 ty dong..."; Tien Phong/StockBiz 21/11/2026 "NVL: Co phieu Novaland ban cho co dong bi... e"; MarketTimes 19/11/2026.
+- Han ban dau 29/10 (nop tien): Vietnambiz 20/11/2026.
+- Chuyen doi 16 trai phieu quoc te thanh ~2,78 trieu CP, gia chuyen doi 34.000 d, gap 3,4 lan thi gia, NVL dong cua 20/11: 9.980 d: Nguoi Dua Tin 21/11/2026; MarketTimes 21/11/2026.
+- VN-Index tuan -33,79 diem ve 1.688,79: MarketTimes 21/11/2026.
+- Gia dong cua NVL, bieu do: du lieu gia web (data/c/NVL.bin).

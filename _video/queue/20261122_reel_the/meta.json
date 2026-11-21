@@ -1,0 +1,107 @@
+{
+ "_ghi_chu": "Lo reel the 22/11. KHONG tu dang. NV3 hen lich theo kenh/ngay/gio goi y. Shorts 11:30, TikTok 19:30; moi kenh toi da 1 video/ngay; khong trung ma cung ngay tren cung kenh.",
+ "release": "reel-the-20261122",
+ "trang_thai": "CHO_UPLOAD_VIDEO (tao release bi chan 403 trong phien nay; file nam o may dung: /tmp/rl/<key>/<key>.mp4)",
+ "NVL": {
+  "ma": "NVL",
+  "hook": [
+   "NVL CHÀO 10.000",
+   "CỔ ĐÔNG NÉ?"
+  ],
+  "kenh_de_xuat": "YT_CHINH_SHORTS",
+  "gio_goi_y": "2026-11-23T11:30+07:00",
+  "title": "NVL chào bán 10.000 đồng, thị giá 9.980: cổ đông có né? | Chứng Khoán Huy Nguyễn",
+  "mo_ta": "Novaland chào bán hơn 800 triệu cổ phiếu cho cổ đông giá 10.000 đồng, thu tối đa khoảng 8.007 tỷ, đã lùi hạn nộp tiền 2 lần (nay đến 28/12), trong khi thị giá phiên 20/11 là 9.980 đồng.\nCùng tuần, 16 trái phiếu quốc tế đổi cổ phiếu giá 34.000 đồng, gấp 3,4 lần thị giá.\nNguồn: Vietnambiz 20/11, Tiền Phong/StockBiz 21/11, Người Đưa Tin 21/11, MarketTimes 21/11/2026.\nQuan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [
+   "NVL",
+   "Novaland",
+   "cổ phiếu NVL",
+   "chào bán cổ phiếu",
+   "trái phiếu chuyển đổi",
+   "chứng khoán",
+   "tin nóng chứng khoán",
+   "Shorts",
+   "Chứng Khoán Huy Nguyễn"
+  ],
+  "file_video": "nvl.mp4 (1080x1920)",
+  "file_bia": "nvl_bia.jpg",
+  "file_nguon": "nvl_nguon.txt",
+  "reel_the_cfg": "_video/reel_the/nvl.json"
+ },
+ "VCB": {
+  "ma": "VCB",
+  "hook": [
+   "MẤT 210.000 TỶ",
+   "NGOẠI XẢ VCB?"
+  ],
+  "kenh_de_xuat": "TIKTOK_CHINH",
+  "gio_goi_y": "2026-11-23T19:30+07:00",
+  "title": "VCB mất hơn 210.000 tỷ vốn hóa, khối ngoại bán ròng: vì sao? | Chứng Khoán Huy Nguyễn",
+  "mo_ta": "VCB đóng cửa 50.200 đồng ngày 20/11, thấp nhất từ đầu năm 2023 và giảm 33,4% từ đỉnh 14/1; khối ngoại bán ròng hơn 950 tỷ trong 14/15 phiên đầu tháng 11.\nLãi trước thuế 9 tháng 40.440 tỷ (+22%) nhưng quý 3 đi ngang.\nNguồn: Người Quan Sát 20/11, CafeF 22/11, MarketTimes 21/11/2026.\nQuan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [
+   "VCB",
+   "Vietcombank",
+   "khối ngoại",
+   "cổ phiếu ngân hàng",
+   "chứng khoán",
+   "tin nóng chứng khoán",
+   "Chứng Khoán Huy Nguyễn"
+  ],
+  "file_video": "vcb.mp4 (1080x1920)",
+  "file_bia": "vcb_bia.jpg",
+  "file_nguon": "vcb_nguon.txt",
+  "reel_the_cfg": "_video/reel_the/vcb.json",
+  "caption": "VCB mất hơn 210.000 tỷ vốn hóa, khối ngoại bán ròng 14/15 phiên: vì sao? Nguồn: Người Quan Sát 20/11."
+ },
+ "HPG": {
+  "ma": "HPG",
+  "hook": [
+   "VND YẾU 1%",
+   "HPG ĐAU CỠ NÀO?"
+  ],
+  "kenh_de_xuat": "YT_PHU_SHORTS",
+  "gio_goi_y": "2026-11-23T11:30+07:00",
+  "title": "VND yếu 1%, Hòa Phát (HPG) tốn thêm 1.255 tỷ mỗi năm: đau cỡ nào? | Chứng Khoán Huy Nguyễn",
+  "mo_ta": "Theo tính toán của TCBS Research, mỗi 1% VND mất giá làm giá vốn Hòa Phát tăng khoảng 1.255 tỷ đồng/năm, tương đương 3,7% lợi nhuận sau thuế 4 quý gần nhất; quặng và than mỡ chiếm trên 70% giá vốn.\nGiá HRC nội địa bám giá nhập khẩu nên phần lớn chi phí chuyển sang người mua, độ trễ khoảng 93 ngày.\nNguồn: Vietnambiz 20/11/2026 (TCBS Research), Hòa Phát Nông nghiệp 21/11/2026.\nQuan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [
+   "HPG",
+   "Hòa Phát",
+   "tỷ giá",
+   "giá thép",
+   "cổ phiếu thép",
+   "chứng khoán",
+   "tin nóng chứng khoán",
+   "Shorts",
+   "Chứng Khoán Huy Nguyễn"
+  ],
+  "file_video": "hpg.mp4 (1080x1920)",
+  "file_bia": "hpg_bia.jpg",
+  "file_nguon": "hpg_nguon.txt",
+  "reel_the_cfg": "_video/reel_the/hpg.json"
+ },
+ "NGOAI": {
+  "ma": "VNINDEX",
+  "hook": [
+   "RÚT 5 TỶ USD",
+   "NGOẠI ĐI ĐÂU?"
+  ],
+  "kenh_de_xuat": "YT_CHINH_SHORTS",
+  "gio_goi_y": "2026-11-24T11:30+07:00",
+  "title": "Khối ngoại rút gần 5 tỷ USD khỏi HOSE: tiền ngoại đi đâu? | Chứng Khoán Huy Nguyễn",
+  "mo_ta": "Khối ngoại bán ròng hơn 126.000 tỷ đồng (gần 5 tỷ USD) trên HOSE từ đầu năm đến 20/11; VN-Index chốt tuần ở 1.688,79 điểm, giảm 5,36% so với đầu năm. FPT bị bán ròng nhiều nhất tuần (893 tỷ).\nNguồn: Dòng vốn kinh doanh (doanhnhanvn.vn) 19-21/11/2026, MarketTimes 21/11/2026.\nQuan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [
+   "khối ngoại",
+   "bán ròng",
+   "VN-Index",
+   "HOSE",
+   "chứng khoán",
+   "tin nóng chứng khoán",
+   "Shorts",
+   "Chứng Khoán Huy Nguyễn"
+  ],
+  "file_video": "ngoai.mp4 (1080x1920)",
+  "file_bia": "ngoai_bia.jpg",
+  "file_nguon": "ngoai_nguon.txt",
+  "reel_the_cfg": "_video/reel_the/ngoai.json"
+ }
+}

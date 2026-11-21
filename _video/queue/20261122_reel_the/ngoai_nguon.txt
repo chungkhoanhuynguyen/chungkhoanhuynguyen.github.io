@@ -1,0 +1,6 @@
+KHOI NGOAI / VN-INDEX - nguon so lieu (tra 22/11/2026)
+- Khoi ngoai rut gan 5 ty USD khoi HOSE sau >11 thang (ban rong 126.384 ty tu dau nam den 20/11 tren HOSE; tuan 16-20/11 ban rong 3.290 ty tren HOSE); VN-Index 1.688,79, -5,36% tu dau nam; mat moc 1.700 phien 19/11; FPT 893 ty tuan, 9 phien lien tiep dung dau chieu ban, luy ke 1.857 ty; VCB 313 ty; MBB 239 ty: Dong von kinh doanh (doanhnhanvn.vn) 21/11/2026 "Nha dau tu ngoai rut gan 5 ty USD khoi HOSE sau hon 11 thang".
+- Phien 20/11: VN-Index giam ~1 diem, khoi ngoai ban rong 4 phien lien tiep, mua rong POW 152 ty, gia tri GD HOSE 15.933 ty: Dong von kinh doanh 20/11/2026.
+- Tu doanh mua rong 93 ty phien 19/11: Dong von kinh doanh 19/11/2026.
+- 4/5 phien giam trong tuan: MarketTimes 21/11/2026.
+- Bieu do VN-Index: du lieu gia web (data/c/VNINDEX.bin).
