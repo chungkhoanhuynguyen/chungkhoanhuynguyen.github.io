@@ -5,42 +5,42 @@
   {
    "id": "S1",
    "say": "Vingroup vừa trúng gói metro tám trăm bảy mươi ba nghìn tỷ. Vậy mà cổ phiếu VIC gần như đứng im. Vì sao?",
-   "hold": 0.8
+   "hold": 0.3
   },
   {
    "id": "S2",
    "say": "Thứ nhất, tin này không mới. Từ cuối tháng sáu, báo đã đưa tin Vinhomes làm tổng thầu năm tuyến metro. Chỉ trong tuần đó, VIC tăng gần hai mươi phần trăm.",
-   "hold": 0.8
+   "hold": 0.3
   },
   {
    "id": "S3",
    "say": "Đến ngày hai mươi tháng mười một, Hà Nội mới công bố chính thức: tám trăm bảy mươi ba nghìn hai trăm hai mươi bốn tỷ, dài hai trăm năm mươi ba phẩy năm cây số, làm trong năm mươi mốt tháng. Phiên đó VIC chỉ tăng không phẩy bảy chín phần trăm, khối lượng thấp nhất một tháng.",
-   "hold": 0.8
+   "hold": 0.3
   },
   {
    "id": "S4",
    "say": "Thứ hai, nhà Vin đang cần rất nhiều tiền. Xanh SM vừa tăng vốn thêm gần mười bốn nghìn sáu trăm tỷ chỉ trong một tháng. Vinhomes tính huy động thêm ba nghìn tỷ trái phiếu. Và nhớ rằng, tám trăm bảy mươi ba nghìn tỷ là giá trị hợp đồng xây dựng, không phải lãi.",
-   "hold": 0.8
+   "hold": 0.3
   },
   {
    "id": "S5",
    "say": "Về kỹ thuật, đường trung bình hai mươi phiên vừa cắt lên đường năm mươi phiên, đáy sau cao hơn đáy trước. Nhưng vùng hai trăm bốn mươi sáu đến hai trăm năm mươi mốt đã hai lần chạm mà không qua. Hỗ trợ gần là hai trăm hai mươi bảy đến hai trăm ba mươi tư.",
-   "hold": 0.8
+   "hold": 0.3
   },
   {
    "id": "S5A",
    "say": "Phe lạc quan nhìn thấy ba điều. Đường trung bình hai mươi cắt lên đường năm mươi. Đáy sau cao hơn, từ hai trăm linh sáu lên hai trăm hai mươi bảy. Và hợp đồng tám trăm bảy mươi ba nghìn hai trăm hai mươi bốn tỷ.",
-   "hold": 0.8
+   "hold": 0.3
   },
   {
    "id": "S5B",
    "say": "Phe thận trọng cũng thấy ba điều. Vùng hai trăm bốn mươi sáu đến hai trăm năm mươi mốt, hai lần chưa qua. Khối lượng thấp nhất một tháng. Và nhà Vin cần rất nhiều vốn.",
-   "hold": 0.8
+   "hold": 0.3
   },
   {
    "id": "S6",
    "say": "Ông Vượng làm năm tuyến metro. Cổ đông VIC mới làm được một tuyến: tuyến gồng. Anh chị thấy tin đã cũ thì giá còn lý do gì để chạy?",
-   "hold": 2.0
+   "hold": 1.2
   }
  ]
 }

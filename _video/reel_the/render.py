@@ -16,6 +16,7 @@ def chup(a):
             pg.evaluate("setT(%f)" % (f / fps)); pg.screenshot(path=os.path.join(tmp, "f%05d.jpg" % f), type="jpeg", quality=92)
         b.close()
 if __name__ == "__main__":
+    sys.argv[1:4] = [os.path.abspath(a) for a in sys.argv[1:4]]; os.chdir(ROOT)  # lay_gia đọc data/c/*.bin theo gốc repo
     cfg = json.load(open(sys.argv[1], encoding="utf-8")); tm = json.load(open(sys.argv[2])); out = sys.argv[3]
     fps = int(sys.argv[4]) if len(sys.argv) > 4 else 24; W = int(sys.argv[5]) if len(sys.argv) > 5 else 720
     plan = {"cfg": cfg, "timing": tm, "px": lay(cfg["ma"], cfg.get("gia_n", 125))}
