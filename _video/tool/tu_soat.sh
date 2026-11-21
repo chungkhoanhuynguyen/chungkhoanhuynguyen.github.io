@@ -7,9 +7,18 @@
 O=$1; K=$2; cd "$O" || exit 0
 [ -f "$K.mp4" ] || { echo "LỖI: không có $K.mp4 (dựng hỏng)" > ${K}_soat.txt; exit 0; }
 DT="drawtext=text='%{pts\:hms}':x=5:y=5:fontsize=18:fontcolor=yellow:box=1:boxcolor=black"
-ffmpeg -v error -y -i $K.mp4 -vf "fps=1/20,scale=384:-1,$DT,tile=5x5" -frames:v 1 ${K}_khung1.png
-DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 $K.mp4 | cut -d. -f1)
-[ "${DUR:-0}" -gt 500 ] && ffmpeg -v error -y -ss 500 -i $K.mp4 -vf "fps=1/20,scale=384:-1,$DT,tile=5x5" -frames:v 1 ${K}_khung2.png
+# chỉ dùng ffmpeg (máy reel có thể không có ffprobe): lấy thời lượng + chiều khung từ dòng thông tin
+INFO=$(ffmpeg -hide_banner -i $K.mp4 2>&1)
+DUR=$(echo "$INFO" | grep -o "Duration: [0-9:]*" | head -1 | awk -F'[: ]' '{print $3*3600+$4*60+$5}')
+WH=$(echo "$INFO" | grep -o "Video:.* [0-9]\{3,4\}x[0-9]\{3,4\}" | grep -o "[0-9]\{3,4\}x[0-9]\{3,4\}" | head -1)
+W=${WH%x*}; H=${WH#*x}
+if [ "${H:-0}" -gt "${W:-1}" ]; then   # video dọc (reel/Shorts): khung mỗi 4s, lưới 6x2
+  ffmpeg -v error -y -i $K.mp4 -vf "fps=1/4,scale=200:-1,$DT,tile=6x2" -frames:v 1 ${K}_khung1.png
+  [ "${DUR:-0}" -gt 48 ] && ffmpeg -v error -y -ss 48 -i $K.mp4 -vf "fps=1/4,scale=200:-1,$DT,tile=6x2" -frames:v 1 ${K}_khung2.png
+else
+  ffmpeg -v error -y -i $K.mp4 -vf "fps=1/20,scale=384:-1,$DT,tile=5x5" -frames:v 1 ${K}_khung1.png
+  [ "${DUR:-0}" -gt 500 ] && ffmpeg -v error -y -ss 500 -i $K.mp4 -vf "fps=1/20,scale=384:-1,$DT,tile=5x5" -frames:v 1 ${K}_khung2.png
+fi
 B=""; for s in "" _b _c; do [ -f ${K}_bia$s.png ] && B="$B -i ${K}_bia$s.png"; done
 N=$(echo $B | grep -o -- "-i" | wc -l)
 if [ "$N" -ge 2 ]; then
@@ -20,7 +29,7 @@ S=""; for s in 1 2 3; do [ -f ${K}_S$s.mp4 ] && ffmpeg -v error -y -ss 1 -i ${K}
 NS=$(echo $S | grep -o -- "-i" | wc -l); [ "$NS" -ge 1 ] && ffmpeg -v error -y $S -filter_complex "vstack=$NS" ${K}_shorts.png 2>/dev/null || { [ "$NS" = 1 ] && cp /tmp/s1.png ${K}_shorts.png; }
 {
   echo "== SOÁT TỰ ĐỘNG $K ($(date -u +%F' '%H:%M) UTC) – thời lượng ${DUR}s"
-  echo "== QC (dòng LỖI = không được đăng)"; cat ${K}_qc.txt 2>/dev/null || echo "LỖI: thiếu ${K}_qc.txt"
+  echo "== QC (dòng LỖI = không được đăng)"; cat ${K}_qc.txt 2>/dev/null || echo "(xưởng không tạo file QC cho loại video này)"
   echo "== ÂM LƯỢNG"; ffmpeg -nostats -i $K.mp4 -filter_complex ebur128 -f null - 2>&1 | grep -A1 "Integrated loudness" | tail -1
   echo "== PHỤ ĐỀ ĐÁNG NGỜ"
   grep -nE "Mỗi 5|20[0-9]0 [a-zà-ỹ]|phần 100|em em|[0-9] [a-zà-ỹ]+\?|[0-9],[0-9] [0-9]|000\.000 tỷ|[0-9]\.[0-9]{3}\.[0-9]{3}|[0-9] 0 |nhà em|phần 1[0-9]{2}| 1 phần" $K.srt 2>/dev/null | head -20 || true

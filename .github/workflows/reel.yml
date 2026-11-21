@@ -55,6 +55,11 @@ jobs:
           pip install -q imageio-ffmpeg && sudo ln -sf "$(python -c 'import imageio_ffmpeg as f;print(f.get_ffmpeg_exe())')" /usr/local/bin/ffmpeg && ffmpeg -version | head -1
       - run: pip install -q vieneu "onnxruntime==1.22.1" numpy pillow opencv-python-headless
       - run: python _video/reel.py "${{ needs.plan.outputs.batch }}" "${{ matrix.key }}"
+      - name: Soat tu dong (khung hinh, QC, Gemini) – anh Huy 21/11
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: timeout 600 bash _video/tool/tu_soat.sh _video/out "${{ matrix.key }}" || true
       - uses: actions/upload-artifact@v4
         with: {name: "reel-${{ matrix.key }}", path: _video/out/, retention-days: 7}
   publish:
