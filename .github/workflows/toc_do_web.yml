@@ -1,0 +1,40 @@
+name: Do toc do web (Lighthouse, hoc Chrome DevTools)
+on:
+  schedule:
+    - cron: "41 0 * * 1"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  lh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - name: Lighthouse 3 trang (dien thoai)
+        run: |
+          npm i -g lighthouse@12.2.1 >/dev/null 2>&1
+          mkdir -p /tmp/lh
+          for u in "" "nhandinh.html" "f0/"; do
+            n=$(echo "trang_${u:-chu}" | tr '/.' '__')
+            lighthouse "https://chungkhoanhuynguyen.com/$u" --quiet --chrome-flags="--headless=new --no-sandbox" \
+              --only-categories=performance,seo,accessibility,best-practices --output=json --output-path=/tmp/lh/$n.json || true
+          done
+          python3 - <<'PY'
+          import json,glob,datetime
+          out=["# Tốc độ web – Lighthouse điện thoại (%s)"%datetime.date.today(),"","| Trang | Tốc độ | SEO | Dễ dùng | Chuẩn | LCP | CLS | Cần sửa |","|---|---|---|---|---|---|---|---|"]
+          for f in sorted(glob.glob('/tmp/lh/*.json')):
+              try: j=json.load(open(f))
+              except Exception: continue
+              c=j.get('categories',{}); a=j.get('audits',{})
+              s=lambda k:int((c.get(k,{}).get('score') or 0)*100)
+              bad=[v['title'] for v in a.values() if v.get('score') is not None and v.get('score')<0.5 and v.get('details',{}).get('type') in('opportunity','table')][:3]
+              out.append("| %s | %d | %d | %d | %d | %s | %s | %s |"%(j.get('finalUrl','')[-40:],s('performance'),s('seo'),s('accessibility'),s('best-practices'),a.get('largest-contentful-paint',{}).get('displayValue',''),a.get('cumulative-layout-shift',{}).get('displayValue',''),'; '.join(bad)))
+          open('_kiem/toc_do.md','w').write("\n".join(out)+"\n")
+          print("\n".join(out))
+          PY
+      - name: Luu ket qua
+        run: |
+          git config user.name "lighthouse-bot"; git config user.email "bot@users.noreply.github.com"
+          git add _kiem/toc_do.md && git commit -m "Lighthouse $(date +%F)" && git pull --rebase -q && git push || true
