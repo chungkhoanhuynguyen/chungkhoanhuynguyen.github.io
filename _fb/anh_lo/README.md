@@ -47,3 +47,5 @@ Kiểu ảnh anh Huy chọn (FB chính từng lên view nhiều): màn hình app
 - Xưng "Huy" trong bài công khai, gọi "mọi người"/"anh chị". Không "ạ", không lời lẽ kiểu báo chí.
 - Mở "TIN SỐC MỚI NHẬN!!!" khi có tin nóng thật; kết bằng 1 câu đùa tình huống hoặc câu hỏi mở.
 - Caption bài FPT 21/11 theo văn phong này: _fb/anh_lo/out/FPT_2111.txt (dùng bản này khi đăng 20:00).
+- 9 nhóm chọn sẵn (thứ tự checkbox 2–10 trong hộp "Chia sẻ lên nhóm"): Hội Nhà Đầu Tư Chứng Khoán Cá Nhân, Tâm Sự Chứng Khoán, Diễn Đàn Chứng Khoán Việt Nam, Cộng Đồng Chứng Khoán Việt Nam, ĐẦU TƯ CHỨNG KHOÁN CHO NGƯỜI MỚI, Chứng khoán Gen Z, Cafef - CHỨNG KHOÁN, TỰ HỌC CHỨNG KHOÁN CHO NGƯỜI MỚI, CHỨNG KHOÁN VIỆT. Chọn bằng JS input[type=checkbox].click() theo tên → Xong → kiểm "Đã chọn 9 nhóm" + 2 switch (nhãn AI, Quảng bá) false → Đăng. Thành công: toast "Bạn đã gửi bài viết…".
+- 21/11 15:15 đã đăng: ảnh dòng tiền 28/100 (dongtien_2111.jpg) + 9 nhóm.
