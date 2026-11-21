@@ -27,9 +27,10 @@
   "file_bia": "nvl_bia.jpg",
   "file_nguon": "nvl_nguon.txt",
   "reel_the_cfg": "_video/reel_the/nvl.json",
-  "do_dai": "89,4s",
+  "do_dai": "99,1s (gồm outro 3s không lời)",
   "canh_ky_thuat": "MA20 cắt xuống MA50 17/9; cản 10,85–11,0; hỗ trợ 9,6–9,8; KL tăng khi giảm 20/11",
-  "do_to": "-13,1 đến -13,2 LUFS (ebur128)"
+  "do_to": "-13,1 LUFS (ebur128)",
+  "canh_goc_nhin": "Chờ 3 tín hiệu; chốt: CHƯA VỘI / CHỜ KẾT QUẢ 28/12"
  },
  "VCB": {
   "ma": "VCB",
@@ -55,9 +56,10 @@
   "file_nguon": "vcb_nguon.txt",
   "reel_the_cfg": "_video/reel_the/vcb.json",
   "caption": "VCB mất hơn 210.000 tỷ vốn hóa, khối ngoại bán ròng 14/15 phiên: vì sao? Nguồn: Người Quan Sát 20/11.",
-  "do_dai": "84,6s",
+  "do_dai": "94,0s (gồm outro 3s không lời)",
   "canh_ky_thuat": "MA20 cắt xuống MA50 7/10; cản 57,5–58,4; hỗ trợ 50,0–50,8; KL tăng 17–18/11",
-  "do_to": "-13,1 đến -13,2 LUFS (ebur128)"
+  "do_to": "-13,1 LUFS (ebur128)",
+  "canh_goc_nhin": "Chờ 3 tín hiệu; chốt: CHƯA VỘI / CHỜ NGOẠI QUAY ĐẦU"
  },
  "HPG": {
   "ma": "HPG",
@@ -84,9 +86,10 @@
   "file_bia": "hpg_bia.jpg",
   "file_nguon": "hpg_nguon.txt",
   "reel_the_cfg": "_video/reel_the/hpg.json",
-  "do_dai": "88,4s",
+  "do_dai": "97,3s (gồm outro 3s không lời)",
   "canh_ky_thuat": "MA20 cắt lên MA50 10/11; cản 21,5–21,9; hỗ trợ 19,6–20,15; giảm KL tăng 18/11",
-  "do_to": "-13,1 đến -13,2 LUFS (ebur128)"
+  "do_to": "-13,1 LUFS (ebur128)",
+  "canh_goc_nhin": "Chờ 3 tín hiệu; chốt: THÉP KHỎE / KHI TỶ GIÁ ĐỨNG YÊN"
  },
  "NGOAI": {
   "ma": "VNINDEX",
@@ -112,8 +115,9 @@
   "file_bia": "ngoai_bia.jpg",
   "file_nguon": "ngoai_nguon.txt",
   "reel_the_cfg": "_video/reel_the/ngoai.json",
-  "do_dai": "89,4s",
+  "do_dai": "99,2s (gồm outro 3s không lời)",
   "canh_ky_thuat": "VN-Index: MA20 cắt xuống MA50 9/10; cản 1.750–1.781; hỗ trợ 1.666–1.690; -23,7 điểm KL tăng 18/11",
-  "do_to": "-13,1 đến -13,2 LUFS (ebur128)"
+  "do_to": "-13,1 LUFS (ebur128)",
+  "canh_goc_nhin": "Chờ 3 tín hiệu; chốt: CHƯA PHẢI LÚC ALL-IN / CHỜ TIỀN NGOẠI"
  }
 }
