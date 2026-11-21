@@ -8717,121 +8717,171 @@
   "slug": "co-phieu-phong-thu-la-gi",
   "kw": "cổ phiếu phòng thủ là gì",
   "grp": 5,
-  "title": "Cổ phiếu phòng thủ là gì? Ngành nào giữ giá khi thị trường xấu",
-  "desc": "Cổ phiếu phòng thủ là gì, đặc điểm nhận biết, các ngành phòng thủ phổ biến ở Việt Nam và khi nào nên tăng tỷ trọng nhóm này trong danh mục.",
+  "title": "Cổ phiếu phòng thủ là gì? Số thật đợt VN-Index giảm 17% năm 2025",
+  "desc": "Cổ phiếu phòng thủ là gì: đợt 2–9/4/2025 VN-Index −17%, SAB −10,5%, DHG −10,1% nhưng GAS −24,3%, POW −22,4%. Bảng 10 mã, 3 bẫy và checklist.",
   "body": [
    [
     "p",
-    "<b>Cổ phiếu phòng thủ</b> là cổ phiếu của doanh nghiệp có nhu cầu sản phẩm ổn định dù kinh tế tốt hay xấu. Khi thị trường giảm mạnh, nhóm này thường giảm ít hơn mặt bằng chung."
+    "Tuần đầu tháng 4/2025, tin Mỹ áp thuế đối ứng 46% lên hàng Việt Nam khiến VN-Index rơi từ <b>1.317,83</b> (2/4) xuống <b>1.094,30</b> (9/4), mất <b>17%</b> sau 5 phiên. Một nhà đầu tư cầm GAS vì nghĩ \"điện, khí là ngành phòng thủ\" thấy mã của mình mất <b>24,3%</b>, nặng hơn cả thị trường. Trong khi đó SAB chỉ mất 10,5%."
+   ],
+   [
+    "p",
+    "Vậy <b>cổ phiếu phòng thủ</b> là gì, và vì sao cái tên \"phòng thủ\" không tự bảo vệ được tài khoản? Em dùng giá đóng cửa thật của đợt giảm đó để trả lời."
    ],
    [
     "h2",
-    "Đặc điểm nhận biết"
+    "Cổ phiếu phòng thủ là gì?"
+   ],
+   [
+    "p",
+    "Là cổ phiếu của doanh nghiệp bán thứ người dân vẫn phải dùng khi kinh tế xấu: sữa, bia, thuốc, nước sạch, điện. Doanh thu ít đi theo chu kỳ nên khi thị trường giảm, nhóm này <b>thường</b> giảm ít hơn. Chữ quan trọng là \"thường\", không phải \"luôn\"."
+   ],
+   [
+    "h2",
+    "Đợt giảm 17% tháng 4/2025: nhóm phòng thủ giảm bao nhiêu?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Mã",
+      "Nhóm",
+      "2/4→9/4/2025",
+      "2/4→30/6/2025"
+     ],
+     [
+      "VN-Index",
+      "Thị trường",
+      "−17,0%",
+      "+4,4%"
+     ],
+     [
+      "DHG",
+      "Dược",
+      "−10,1%",
+      "+6,0%"
+     ],
+     [
+      "SAB",
+      "Bia",
+      "−10,5%",
+      "+1,3%"
+     ],
+     [
+      "VNM",
+      "Sữa",
+      "−14,0%",
+      "−0,6%"
+     ],
+     [
+      "REE",
+      "Điện, nước, cơ điện",
+      "−14,1%",
+      "+10,3%"
+     ],
+     [
+      "POW",
+      "Điện",
+      "−22,4%",
+      "+1,5%"
+     ],
+     [
+      "GAS",
+      "Khí",
+      "−24,3%",
+      "+1,0%"
+     ],
+     [
+      "HPG",
+      "Thép (chu kỳ)",
+      "−21,9%",
+      "0,0%"
+     ],
+     [
+      "SSI",
+      "Chứng khoán (chu kỳ)",
+      "−22,1%",
+      "−6,6%"
+     ],
+     [
+      "DIG",
+      "Bất động sản (chu kỳ)",
+      "−24,6%",
+      "−5,5%"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Giá đóng cửa điều chỉnh từ dữ liệu web (data/c), chưa gồm cổ tức, thuế, phí; quá khứ không bảo đảm tương lai. Ba điều đọc ra từ bảng: (1) dược, bia, sữa giảm ít hơn thị trường 3–7 điểm %; (2) <b>điện, khí (POW, GAS) giảm ngang nhóm chu kỳ</b> vì giá khí, giá dầu và cổ phiếu vốn hóa lớn bị bán theo chỉ số; (3) đến 30/6 VN-Index đã +4,4% so với 2/4, nhưng VNM, SAB, GAS chỉ quanh mức cũ: phòng thủ đổi lại là hồi chậm."
+   ],
+   [
+    "h2",
+    "Beta thấp có phải là phòng thủ?"
+   ],
+   [
+    "p",
+    "<a href=\"/f0/he-so-beta-la-gi.html\">Beta</a> đo mức giá đi theo thị trường. Dữ liệu web ngày 21/11/2026: DHG beta 0,21, BWE (nước Bình Dương) 0,27, VNM 0,43, REE 0,43, SAB 0,58, POW 0,68, GAS 0,80. Nhưng có beta thấp \"giả\": DHG khớp bình quân chỉ khoảng <b>5.751 cổ phiếu/phiên</b> (10 phiên), TDM (nước Thủ Dầu Một) beta 0,0 và khoảng 5.350 cổ phiếu/phiên. Giá ít đổi vì ít người giao dịch, không phải vì doanh nghiệp vững hơn. Đợt 4/2025, TDM chỉ −0,9%, BWE −2,6%, nhưng cần bán vài trăm triệu đồng thì có thể không có người mua."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp với cổ phiếu phòng thủ"
    ],
    [
     "ul",
     [
-     "Sản phẩm thiết yếu: người dân vẫn phải dùng khi kinh tế khó khăn.",
-     "Doanh thu và lợi nhuận đều đặn qua nhiều năm, ít biến động theo chu kỳ.",
-     "Thường trả <a href=\"/f0/co-tuc-la-gi.html\">cổ tức</a> tiền mặt ổn định.",
-     "Nợ vay thấp, dòng tiền kinh doanh dương đều."
+     "<b>Gọi cả ngành là phòng thủ</b>: điện, khí bị coi là phòng thủ nhưng GAS −24,3%, POW −22,4% trong đợt 4/2025, ngang thép và chứng khoán.",
+     "<b>Tin beta thấp mà không nhìn thanh khoản</b>: DHG, TDM beta rất thấp nhưng mỗi phiên chỉ khớp vài nghìn cổ phiếu.",
+     "<b>Quên rủi ro riêng doanh nghiệp</b>: phòng thủ chỉ che phần rủi ro thị trường. DHG beta thấp nhất nhóm nhưng lợi nhuận quý 3/2026 giảm khoảng 53% so với cùng kỳ."
     ]
    ],
    [
     "h2",
-    "Các ngành phòng thủ phổ biến"
-   ],
-   [
-    "ul",
-    [
-     "Điện, nước sạch: nhu cầu gần như không đổi.",
-     "Thực phẩm, đồ uống thiết yếu.",
-     "Dược phẩm, y tế.",
-     "Một số doanh nghiệp tiện ích, hạ tầng có hợp đồng dài hạn."
-    ]
-   ],
-   [
-    "h2",
-    "Phòng thủ không có nghĩa là không giảm"
+    "Cổ phiếu phòng thủ dùng thế nào trong danh mục?"
    ],
    [
     "p",
-    "Trong các đợt bán tháo mạnh, cổ phiếu phòng thủ vẫn có thể giảm, chỉ là thường ít hơn. Đổi lại, khi thị trường tăng mạnh, nhóm này thường tăng chậm hơn cổ phiếu chu kỳ như chứng khoán, thép, bất động sản."
+    "Nhóm phòng thủ giúp giảm <a href=\"/f0/beta-danh-muc-la-gi.html\">beta danh mục</a>, tức bớt rung lắc, nhưng không thay được tiền mặt khi cả thị trường cùng bị bán. Đổi lại, khi thị trường hồi mạnh, nhóm này thường tăng chậm hơn. Cách chia phần ở bài <a href=\"/f0/cach-phan-bo-ty-trong-co-phieu.html\">phân bổ tỷ trọng cổ phiếu</a>."
    ],
    [
     "h2",
-    "Khi nào nên tăng tỷ trọng?"
-   ],
-   [
-    "p",
-    "Khi vĩ mô xấu đi, lãi suất tăng hoặc thị trường ở vùng định giá cao, nhiều nhà đầu tư chuyển một phần vốn sang nhóm phòng thủ hoặc giữ tiền mặt. Cách <a href=\"/f0/cach-phan-bo-ty-trong-co-phieu.html\">phân bổ tỷ trọng</a> hợp lý giúp danh mục bớt sụt giảm trong giai đoạn khó."
-   ]
-  ],
-  "faq": [
-   [
-    "Cổ phiếu ngân hàng có phải phòng thủ không?",
-    "Thường không, ngân hàng chịu ảnh hưởng mạnh của chu kỳ tín dụng và nợ xấu."
-   ],
-   [
-    "Cổ phiếu phòng thủ có hợp để tích sản không?",
-    "Có thể, nếu doanh nghiệp có lợi nhuận và cổ tức ổn định, mua ở mức định giá hợp lý."
-   ]
-  ],
-  "rel": [
-   "cach-phan-bo-ty-trong-co-phieu",
-   "co-phieu-tot-de-dau-tu-dai-han",
-   "co-tuc-la-gi"
-  ],
-  "add": [
-   [
-    "h2",
-    "Số liệu: 6 mã beta thấp (6/11/2026)"
-   ],
-   [
-    "ul",
-    [
-     "DHG beta khoảng 0,22, ROE khoảng 21,8%.",
-     "DCM beta khoảng 0,39, ROE khoảng 24,2%.",
-     "VNM beta khoảng 0,42, ROE khoảng 31,1%.",
-     "REE beta khoảng 0,43, ROE khoảng 10,9%.",
-     "NAB beta khoảng 0,48, ROE khoảng 19,8%.",
-     "LPB beta khoảng 0,49, ROE khoảng 26,3%."
-    ]
-   ],
-   [
-    "p",
-    "Beta dưới 1 nghĩa là trong giai đoạn đo, giá thường dao động ít hơn thị trường chung (xem <a href=\"/f0/he-so-beta-la-gi.html\">hệ số beta</a>)."
-   ],
-   [
-    "h2",
-    "Phòng thủ không có nghĩa là không giảm"
-   ],
-   [
-    "p",
-    "Beta thấp chỉ đo phần đi theo thị trường. Rủi ro riêng của doanh nghiệp vẫn còn: DHG có beta thấp nhất nhóm nhưng lợi nhuận quý 3/2026 giảm khoảng 53% so với cùng kỳ. Một mã ít giao dịch cũng có thể có beta thấp giả vì giá ít thay đổi do thiếu thanh khoản."
-   ],
-   [
-    "h2",
-    "Ba câu hỏi trước khi gọi một mã là phòng thủ"
+    "Checklist trước khi gọi một mã là phòng thủ"
    ],
    [
     "ol",
     [
-     "Lợi nhuận có ổn định qua nhiều năm, kể cả năm kinh tế khó khăn?",
-     "Nợ vay có thấp, dòng tiền kinh doanh có đều?",
-     "Thanh khoản có đủ để bán khi cần, hay beta thấp chỉ vì ít người giao dịch?"
+     "Lợi nhuận có ổn định qua nhiều năm, kể cả năm kinh tế khó?",
+     "Đợt giảm mạnh gần nhất (như 2–9/4/2025) mã đó giảm ít hơn VN-Index không?",
+     "Khớp bình quân mỗi phiên đủ để mình bán khi cần không?",
+     "Nợ vay thấp, dòng tiền kinh doanh có đều?",
+     "Lợi nhuận quý gần nhất có đột ngột giảm không?"
     ]
-   ],
-   [
-    "h2",
-    "Dùng cổ phiếu phòng thủ trong danh mục"
-   ],
-   [
-    "p",
-    "Một tỷ trọng cổ phiếu phòng thủ giúp giảm <a href=\"/f0/beta-danh-muc-la-gi.html\">beta danh mục</a>, nhưng không thay được tiền mặt khi cả thị trường cùng giảm. Hãy kết hợp: cổ phiếu phòng thủ để giảm rung lắc, tiền mặt để có lựa chọn, và giới hạn tỷ trọng cho từng mã. Số liệu beta, ROE tổng hợp ngày 6/11/2026."
    ]
   ],
-  "viet_day": true
+  "faq": [
+   [
+    "Cổ phiếu phòng thủ là gì?",
+    "Là cổ phiếu của doanh nghiệp bán hàng thiết yếu (sữa, bia, thuốc, nước, điện), doanh thu ít đi theo chu kỳ nên khi thị trường giảm thường giảm ít hơn, nhưng không phải luôn luôn."
+   ],
+   [
+    "Cổ phiếu ngân hàng có phải phòng thủ không?",
+    "Thường không, vì ngân hàng chịu ảnh hưởng mạnh của chu kỳ tín dụng và nợ xấu."
+   ],
+   [
+    "Cổ phiếu điện có phải cổ phiếu phòng thủ không?",
+    "Không chắc. Đợt 2–9/4/2025 VN-Index −17% nhưng POW −22,4%, GAS −24,3%; REE −14,1%. Cần xem từng mã, không gọi chung cả ngành."
+   ]
+  ],
+  "rel": [
+   "he-so-beta-la-gi",
+   "beta-danh-muc-la-gi",
+   "thue-doi-ung-la-gi",
+   "cach-phan-bo-ty-trong-co-phieu",
+   "co-phieu-tot-de-dau-tu-dai-han",
+   "co-tuc-la-gi"
+  ],
+  "viet_day": true,
+  "mod": "2026-11-21"
  },
  {
   "slug": "no-xau-ngan-hang-la-gi",
@@ -10275,6 +10325,10 @@
    [
     "p",
     "Trước khi so, anh chị nên biết sổ tiết kiệm đang thật sự lãi bao nhiêu sau khi trừ giá cả: tháng 11/2026 lãi 5,4% trừ lạm phát 5,09% chỉ còn khoảng 0,3 điểm. Cách tự tính ở bài <a href=\"/f0/lai-suat-thuc-la-gi.html\">lãi suất thực là gì</a>."
+   ],
+   [
+    "p",
+    "Nếu ở quầy được mời \"sản phẩm lãi 9%, cũng như tiết kiệm\", hãy đọc trước bài <a href=\"/f0/trai-phieu-ngan-hang-co-duoc-bao-hiem-tien-gui.html\">trái phiếu ngân hàng khác tiết kiệm ra sao</a>: hạn mức bảo hiểm 350 triệu chỉ áp cho tiền gửi."
    ]
   ],
   "faq": [
@@ -10288,6 +10342,7 @@
    ]
   ],
   "rel": [
+   "trai-phieu-ngan-hang-co-duoc-bao-hiem-tien-gui",
    "lai-suat-thuc-la-gi",
    "tich-san-chung-khoan-la-gi",
    "lai-suat-tang-anh-huong-chung-khoan",
@@ -14807,6 +14862,10 @@
    [
     "p",
     "Bài viết mang tính giáo dục, không phải khuyến nghị đầu tư. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ],
+   [
+    "p",
+    "Tháng 11/2026 trái phiếu do ngân hàng phát hành đang mời 9–10,5%/năm khi lãi tiết kiệm 6 tháng còn 4,47%. Khác tiết kiệm ở đâu, có được bảo hiểm tiền gửi không, xem bài <a href=\"/f0/trai-phieu-ngan-hang-co-duoc-bao-hiem-tien-gui.html\">trái phiếu ngân hàng có được bảo hiểm tiền gửi</a>."
    ]
   ],
   "faq": [
@@ -14824,6 +14883,7 @@
    ]
   ],
   "rel": [
+   "trai-phieu-ngan-hang-co-duoc-bao-hiem-tien-gui",
    "trai-phieu-la-gi",
    "he-so-no-de-la-gi",
    "chung-chi-quy-la-gi",
@@ -21926,6 +21986,10 @@
    [
     "p",
     "Nhóm xây dựng và vật liệu mang tính <a href='/f0/co-phieu-chu-ky-la-gi.html'>chu kỳ</a>, phụ thuộc tiến độ giải ngân, giá vật liệu và lãi suất. Dùng số liệu trên để đặt câu hỏi, không phải để kết luận. Số liệu: dữ liệu tổng hợp 4/11/2026 (4 quý gần nhất). Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ],
+   [
+    "p",
+    "Năm 2026 đầu tư công mới giải ngân 74,1% sau 10 tháng, còn 247.300 tỷ chưa chi; dự án lớn nhất đang chờ là đường sắt tốc độ cao 1.713.548 tỷ. Ai nhận tiền trước, xem bài <a href=\"/f0/duong-sat-toc-do-cao-bac-nam-ai-tra-tien.html\">đường sắt tốc độ cao: ai trả tiền, tiền về túi ai</a>."
    ]
   ],
   "faq": [
@@ -21943,6 +22007,7 @@
    ]
   ],
   "rel": [
+   "duong-sat-toc-do-cao-bac-nam-ai-tra-tien",
    "co-phieu-chu-ky-la-gi",
    "pb-la-gi",
    "dong-tien-kinh-doanh-la-gi",
@@ -25595,6 +25660,10 @@
    [
     "p",
     "<small>Nguồn: dữ liệu giá đóng cửa VN-Index; Thị trường Tài chính Tiền tệ 3/4/2025; CafeLand 10/4/2025; VnExpress 1/8/2025; Cổng Chính phủ 27/10/2025; Thuế & Hải quan Online 13/11/2026. Nội dung giải thích kiến thức, không phải dự báo hay khuyến nghị.</small>"
+   ],
+   [
+    "p",
+    "Trong đợt giảm 17% này, nhóm nào giữ giá tốt hơn? Bảng 10 mã (DHG −10,1%, SAB −10,5%, GAS −24,3%…) ở bài <a href=\"/f0/co-phieu-phong-thu-la-gi.html\">cổ phiếu phòng thủ là gì</a>."
    ]
   ],
   "faq": [
@@ -25612,6 +25681,7 @@
    ]
   ],
   "rel": [
+   "co-phieu-phong-thu-la-gi",
    "thang-du-thuong-mai-viet-nam-my",
    "ty-gia-tang-anh-huong-co-phieu",
    "lam-phat-va-chung-khoan",
@@ -37362,6 +37432,10 @@
    [
     "p",
     "Chỉ dùng tiền nhàn rỗi, không thế chấp tài sản duy nhất của gia đình, giữ quỹ dự phòng, tính trước kịch bản đất đứng im 3 năm mà vẫn trả được lãi."
+   ],
+   [
+    "p",
+    "Ví dụ mới nhất là đất quanh các ga đường sắt tốc độ cao: lô 2 tỷ vay 1,2 tỷ, tiền lãi đến năm 2035 đã bằng 54% giá mua. Phép tính đầy đủ ở bài <a href=\"/f0/duong-sat-toc-do-cao-bac-nam-ai-tra-tien.html\">đường sắt tốc độ cao 67 tỷ USD: ai trả tiền, tiền về túi ai</a>."
    ]
   ],
   "faq": [
@@ -37371,6 +37445,7 @@
    ]
   ],
   "rel": [
+   "duong-sat-toc-do-cao-bac-nam-ai-tra-tien",
    "quy-du-phong-truoc-khi-dau-tu",
    "tinh-tien-tra-gop-vay-mua-nha",
    "bong-bong-tai-san-la-gi",
@@ -40126,6 +40201,444 @@
    "rui-ro-nganh-la-gi",
    "chenh-lech-gia-vang-trong-nuoc-va-the-gioi",
    "da-dang-hoa-danh-muc-bao-nhieu-ma"
+  ]
+ },
+ {
+  "slug": "duong-sat-toc-do-cao-bac-nam-ai-tra-tien",
+  "kw": "đường sắt tốc độ cao Bắc Nam vốn bao nhiêu",
+  "grp": 8,
+  "date": "2026-11-21",
+  "title": "Đường sắt tốc độ cao 67 tỷ USD: ai trả tiền, tiền về túi ai?",
+  "desc": "Đường sắt tốc độ cao Bắc – Nam 1.713.548 tỷ đồng: tiền từ đâu, vì sao đầu tư công còn 247.300 tỷ chưa tiêu, ai nhận tiền trước và phép thử vay mua đất.",
+  "body": [
+   [
+    "p",
+    "6 giờ 30 sáng ở Đà Nẵng, điện thoại của Nam, một kế toán, sáng lên ba lần. Tin tức: <i>Bộ Tài chính lập tổ công tác tìm nguồn vốn cho đường sắt tốc độ cao 67 tỷ USD.</i> Bố anh ở Quảng Trị nhắn: <i>\"Xã họp rồi con, mảnh vườn nhà mình nằm trong hướng tuyến.\"</i> Anh họ Hưng ở Thanh Hóa nhắn: <i>\"Lô đất anh vay tiền mua năm ngoái, giờ người ta trả thấp hơn giá mua.\"</i>"
+   ],
+   [
+    "p",
+    "Cùng một con đường sắt, ba người nhà Nam đứng ở ba chỗ rất khác nhau. Nam, bố Nam và anh Hưng là nhân vật giả định để dễ hình dung; mọi con số về dự án dưới đây lấy từ báo và văn bản có ghi nguồn, phần nào em tự tính thì em ghi rõ."
+   ],
+   [
+    "h2",
+    "Đường sắt tốc độ cao Bắc – Nam vốn bao nhiêu?"
+   ],
+   [
+    "p",
+    "Theo Nghị quyết 172/2024/QH15, Quốc hội đã quyết định chủ trương đầu tư tuyến dài khoảng <b>1.541 km</b>, tốc độ thiết kế <b>350 km/h</b>, <b>23 ga</b>, phấn đấu hoàn thành năm <b>2035</b>. Tổng vốn sơ bộ <b>1.713.548 tỷ đồng</b>, khoảng 67 tỷ USD (Báo Đầu tư 20/11/2026). MarketTimes cho biết dự kiến khởi công tháng 12/2027."
+   ],
+   [
+    "p",
+    "Con số này lớn cỡ nào? Em tự tính để dễ hình dung:"
+   ],
+   [
+    "table",
+    [
+     [
+      "So với",
+      "Con số gốc",
+      "Tỷ lệ"
+     ],
+     [
+      "Dân số 2025",
+      "102,345 triệu người",
+      "≈16,74 triệu đồng/người"
+     ],
+     [
+      "GDP danh nghĩa 2025",
+      "12.847.571 tỷ đồng",
+      "≈13,3%"
+     ],
+     [
+      "Dư nợ Chính phủ cuối 2025",
+      "4.072.002 tỷ đồng",
+      "≈42,1%"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Nguồn dân số, GDP, nợ: Cục Thống kê (qua WiData). Tiền chi dần trong nhiều năm, không ai phải nộp ngay 16,7 triệu, nhưng rốt cuộc vẫn phải có người trả."
+   ],
+   [
+    "h2",
+    "Ai trả tiền cho đường sắt tốc độ cao?"
+   ],
+   [
+    "p",
+    "Bộ Tài chính vừa lập tổ công tác <b>30 thành viên</b> để xây cơ chế huy động vốn cho đường sắt tốc độ cao và đường sắt đô thị. Lý do được nói thẳng: <i>ngân sách nhà nước còn hạn chế, vốn ODA ngày càng khó tiếp cận</i> (Báo Đầu tư, MarketTimes 20/11/2026). Có 3 nguồn chính:"
+   ],
+   [
+    "table",
+    [
+     [
+      "Nguồn",
+      "Là gì",
+      "Ai trả rốt cuộc"
+     ],
+     [
+      "Ngân sách",
+      "Tiền thuế, thu của Nhà nước",
+      "Người nộp thuế hôm nay"
+     ],
+     [
+      "Đi vay",
+      "Trái phiếu Chính phủ, vốn vay nước ngoài",
+      "Người nộp thuế những năm sau"
+     ],
+     [
+      "Tư nhân",
+      "Doanh nghiệp bỏ vốn, thu lại từ vé, dịch vụ",
+      "Người đi tàu, cổ đông doanh nghiệp"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Nguồn thứ ba đã có ví dụ: tuyến tốc độ cao Hà Nội – Quảng Ninh dài 121 km, khoảng <b>5,4 tỷ USD</b>, do nhà đầu tư tư nhân bỏ vốn, dự kiến khai thác 2029 (MarketTimes 3/11/2026). Khi bố Nam hỏi <i>\"vay thì con cháu trả à?\"</i>, câu trả lời ngắn là: phần đi vay sẽ được trả dần bằng thuế của những năm sau. Quy mô nợ hiện nay anh chị xem ở bài <a href=\"/f0/viet-nam-dang-no-bao-nhieu.html\">Việt Nam đang nợ bao nhiêu</a>."
+   ],
+   [
+    "h2",
+    "Có tiền rồi, vì sao vẫn chưa tiêu được?"
+   ],
+   [
+    "p",
+    "Đây là cú lật. Vấn đề không chỉ là thiếu tiền. Ngay năm 2026, vốn đầu tư công đã giao mà chưa chi hết: hết tháng 10 cả nước giải ngân <b>708.567,4 tỷ</b>, mới <b>74,1%</b> kế hoạch, còn phải chi thêm <b>247.300 tỷ</b> (Bộ Tài chính, Hà Nội Mới 10/11/2026). Đến 12/11 lên 75,3% (Vietnambiz 19/11). Em tính ngược: kế hoạch Thủ tướng giao khoảng 708.567,4 ÷ 0,741 ≈ <b>956.000 tỷ</b>."
+   ],
+   [
+    "p",
+    "Nút thắt được nhiều nơi nhắc nhất là <b>mặt bằng</b>. Thanh Hóa vừa phê bình 10 xã, phường giải phóng mặt bằng chưa tới 60% (Báo Thanh Hóa 9/11). Tiền có rồi, nhưng đất chưa giao thì máy chưa chạy, và tiền cũng chưa tới túi người có đất."
+   ],
+   [
+    "p",
+    "Riêng đoạn qua Quảng Trị: dài 190,68 km, chiếm dụng khoảng <b>1.865 ha</b>, bố trí <b>51 khu tái định cư</b>, hơn <b>17.379 tỷ</b> phục vụ giải phóng mặt bằng (Tin nhanh chứng khoán 5/11/2026). Vườn nhà bố Nam là một ô rất nhỏ trong 1.865 ha đó. Góc tổng vốn đầu tư toàn nền kinh tế có ở bài <a href=\"/f0/von-dau-tu-38-5-trieu-ty-tien-o-dau-ra.html\">38,5 triệu tỷ vốn đầu tư: tiền ở đâu ra</a>."
+   ],
+   [
+    "h2",
+    "Tiền đi vào túi ai trước?"
+   ],
+   [
+    "p",
+    "Theo cách em sắp xếp, trong các khoản lớn, tiền đến theo thứ tự:"
+   ],
+   [
+    "ol",
+    [
+     "<b>Người có đất bị thu hồi</b>: bồi thường, hỗ trợ, tái định cư (như bố Nam).",
+     "<b>Nhà thầu, công nhân, xi măng, sắt thép</b>: khi công trình chạy thật. Cách đọc nhóm cổ phiếu này ở bài <a href=\"/f0/dau-tu-cong-co-phieu-huong-loi.html\">đầu tư công và cổ phiếu xây dựng</a>.",
+     "<b>Địa phương có ga, người đi tàu</b>: phần lợi lâu dài, sau khi tàu chạy.",
+     "<b>Người mua đất theo tin</b>: đứng cuối hàng, chỉ có lời khi giá lên nhanh hơn tiền lãi và thời gian chờ."
+    ]
+   ],
+   [
+    "p",
+    "Chuyện anh Hưng không hiếm. VnEconomy (16/8/2025) kể ở phường Đông Sơn, Thanh Hóa, nơi có ga theo quy hoạch, một lô đất 100 m² hơn 1 năm trước rao khoảng <b>3 tỷ</b>, lúc đó được mua <b>5,5 tỷ</b>, tức tăng khoảng 83%. Ngay khi ấy Sở Xây dựng Thanh Hóa đã nói giá tăng cục bộ, chủ yếu do kỳ vọng, khuyến cáo thận trọng. Một năm sau, VietnamFinance (29/8/2026) viết tin rao <i>cắt lỗ, bán ngộp</i> xuất hiện dày đặc ở Thanh Hóa, Nghệ An, Hà Tĩnh."
+   ],
+   [
+    "h2",
+    "Lần trước: Metro số 1 và Cát Linh – Hà Đông chậm bao lâu?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Dự án",
+      "Vốn ban đầu",
+      "Vốn sau điều chỉnh",
+      "Tiến độ"
+     ],
+     [
+      "Metro số 1<br>TP.HCM",
+      "17.387 tỷ<br>(2007)",
+      "43.700 tỷ<br>≈2,51 lần",
+      "Dự kiến 2018<br>chạy 22/12/2024"
+     ],
+     [
+      "Cát Linh –<br>Hà Đông",
+      "552 triệu USD",
+      "868 triệu USD<br>≈+57%",
+      "2017: lùi lần thứ 4"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: VnEconomy 19/1/2025 và 13/12/2017, VietNamNet 22/12/2024; tỷ lệ em tự tính. So hai lần: <b>giống</b> ở chỗ đều là dự án lớn, kỹ thuật mới với Việt Nam, mặt bằng vẫn khó; <b>khác</b> ở chỗ lần này có tổ công tác riêng lo cơ chế vốn và đã có tuyến tốc độ cao do tư nhân bỏ vốn. Chưa chắc sẽ chậm như lần trước, nhưng cũng chưa loại trừ được."
+   ],
+   [
+    "h2",
+    "Vay mua đất chờ đường sắt: tiền lãi đến năm 2035 là bao nhiêu?"
+   ],
+   [
+    "p",
+    "Phép tính của anh Hưng (giả định, em tự tính): lô đất <b>2 tỷ</b>, vay <b>1,2 tỷ</b>, lãi <b>10%/năm</b> → tiền lãi 120 triệu/năm, tức <b>10 triệu/tháng</b>."
+   ],
+   [
+    "table",
+    [
+     [
+      "Kịch bản",
+      "Số năm trả lãi",
+      "Tổng tiền lãi",
+      "So với giá mua"
+     ],
+     [
+      "Tàu chạy đúng 2035",
+      "9 năm",
+      "1,08 tỷ",
+      "54%"
+     ],
+     [
+      "Trễ 6 năm<br>như Metro số 1",
+      "15 năm",
+      "1,8 tỷ",
+      "90%"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Chưa tính trả gốc, thuế, phí. Muốn hòa vốn, giá đất phải tăng nhanh hơn tiền lãi, và mỗi năm chậm tiến độ là thêm 120 triệu. Anh Hưng có 3 cách, không cách nào miễn phí: <b>giữ</b> và trả 10 triệu/tháng (cần thu nhập đủ gánh lâu); <b>bán</b> chấp nhận lỗ để hết áp lực lãi; <b>trả bớt gốc dần</b> để tiền lãi nhỏ lại. Bài <a href=\"/f0/vay-mua-dat-nen-rui-ro.html\">rủi ro vay mua đất nền lúc sốt</a> có thêm cách nhìn đòn bẩy."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp khi đọc tin đường sắt tốc độ cao"
+   ],
+   [
+    "ul",
+    [
+     "<b>Đọc \"đã có chủ trương\" thành \"đã có tiền\"</b>: chủ trương có từ 11/2024, nguồn vốn cụ thể vẫn đang được tổ công tác tìm (11/2026).",
+     "<b>Coi vị trí ga trên bản đồ rao bán là chốt</b>: gói thầu lập báo cáo nghiên cứu khả thi mới mở hồ sơ 6/11/2026, dự kiến chọn nhà thầu sau khoảng 1 tháng (MarketTimes 7/11). Trước báo cáo này, vị trí ga vẫn có thể thay đổi.",
+     "<b>Chỉ nhìn giá đất tăng, quên tiền lãi theo thời gian</b>: lô 2 tỷ vay 1,2 tỷ tốn 10 triệu/tháng dù đất lên hay xuống."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist trước khi xuống tiền theo tin hạ tầng"
+   ],
+   [
+    "ol",
+    [
+     "Dự án đã có báo cáo nghiên cứu khả thi và vị trí ga chính thức chưa?",
+     "Tổng tiền lãi từ nay đến năm tàu dự kiến chạy chiếm bao nhiêu % giá mua? (dưới 30% còn dễ gánh; 30–60% cần kế hoạch trả nợ; trên 60% phụ thuộc rất nhiều vào thời gian – mốc em tự đặt để soi, không phải chuẩn chung)",
+     "Nếu trễ thêm 5–6 năm như Metro số 1, thu nhập nhà mình có gánh nổi không?",
+     "Giá mua hôm nay so với giá 1–2 năm trước tăng bao nhiêu % chỉ vì tin?",
+     "Khi cần bán gấp, khu đó có người mua không, hay đang đầy tin \"bán ngộp\"?"
+    ]
+   ],
+   [
+    "p",
+    "Ba điều em sẽ theo dõi từ nay đến khởi công: tổ công tác chọn cơ chế vốn ra sao; báo cáo nghiên cứu khả thi (chốt vị trí ga, mốc khởi công); con số giải ngân đầu tư công cuối năm. Số liệu vĩ mô hằng tháng có trên chungkhoanhuynguyen.com."
+   ]
+  ],
+  "faq": [
+   [
+    "Đường sắt tốc độ cao Bắc Nam bao giờ khởi công?",
+    "Theo MarketTimes (20/11/2026), dự kiến khởi công tháng 12/2027; Nghị quyết 172/2024/QH15 đặt mục tiêu phấn đấu hoàn thành năm 2035. Mốc cụ thể phụ thuộc báo cáo nghiên cứu khả thi và cơ chế vốn."
+   ],
+   [
+    "Đường sắt tốc độ cao Bắc Nam tổng vốn bao nhiêu?",
+    "Sơ bộ 1.713.548 tỷ đồng, khoảng 67 tỷ USD (Báo Đầu tư 20/11/2026), tương đương khoảng 13,3% GDP năm 2025 nếu tính một lần (em tự tính), nhưng tiền sẽ chi dần nhiều năm."
+   ],
+   [
+    "Có nên vay mua đất gần ga đường sắt tốc độ cao?",
+    "Em không khuyến nghị mua hay không. Anh chị nên tự tính tổng tiền lãi từ nay đến khi tàu chạy so với giá mua, và kịch bản dự án chậm 5–6 năm như Metro số 1, trước khi quyết định."
+   ]
+  ],
+  "rel": [
+   "dau-tu-cong-co-phieu-huong-loi",
+   "vay-mua-dat-nen-rui-ro",
+   "von-dau-tu-38-5-trieu-ty-tien-o-dau-ra",
+   "viet-nam-dang-no-bao-nhieu",
+   "tinh-tien-tra-gop-vay-mua-nha"
+  ]
+ },
+ {
+  "slug": "trai-phieu-ngan-hang-co-duoc-bao-hiem-tien-gui",
+  "kw": "trái phiếu ngân hàng có được bảo hiểm tiền gửi không",
+  "grp": 6,
+  "date": "2026-11-21",
+  "title": "Trái phiếu ngân hàng có được bảo hiểm tiền gửi? So với tiết kiệm",
+  "desc": "Lãi tiết kiệm 6 tháng còn 4,47%, trái phiếu ngân hàng mời 9–10,5%. Trái phiếu không có bảo hiểm tiền gửi 350 triệu: bảng so sánh, phép tính 800 triệu.",
+  "body": [
+   [
+    "p",
+    "8 giờ sáng thứ Hai, bà Tâm, giáo viên về hưu 63 tuổi, ngồi chờ ở quầy. Sổ tiết kiệm <b>800 triệu</b>, tiền dành dụm cả đời, vừa đáo hạn, và lãi kỳ mới thấp hơn kỳ trước. Cô nhân viên trẻ đưa bà một tờ giấy: <i>\"Cô ơi, có sản phẩm lãi 9%, gần gấp đôi, cũng như gửi tiết kiệm thôi cô.\"</i> Bà cầm tờ giấy về nhà, chưa ký."
+   ],
+   [
+    "p",
+    "Bà Tâm là nhân vật giả định, nhưng lời mời đó không lạ. Bài này đặt tiết kiệm và trái phiếu ngân hàng cạnh nhau, có số liệu nguồn rõ, để anh chị tự trả lời câu hỏi bà Tâm đang phân vân."
+   ],
+   [
+    "h2",
+    "Vì sao lãi tiết kiệm giảm mà trái phiếu vẫn 9%?"
+   ],
+   [
+    "p",
+    "Từ giữa tháng 10/2026, sau Công văn 9736/NHNN, lãi huy động đồng loạt giảm <b>0,5–1 điểm %</b>. Theo VCBS, lãi 6 tháng bình quân tháng 10 chỉ còn <b>4,47%</b>. Cùng lúc, trái phiếu do ngân hàng phát hành vẫn trả <b>9–10,5%/năm</b>, kỳ hạn thường 2–10 năm (VietnamFinance 17/11/2026). 10 tháng 2026 các ngân hàng phát hành khoảng <b>260.000 tỷ</b> trái phiếu, 55% thị trường trái phiếu doanh nghiệp (VBMA). NHNN cũng yêu cầu thanh tra việc giảm lãi suất trong tháng 11 (VietnamFinance 15/11)."
+   ],
+   [
+    "p",
+    "Ngân hàng cần vốn dài, và kỳ hạn dài thường phải trả lãi cao hơn. Phần lãi cao không phải món quà, mà là tiền trả cho việc khóa tiền lâu và chịu rủi ro khác. Muốn biết sổ tiết kiệm còn lãi thật bao nhiêu sau lạm phát, xem bài <a href=\"/f0/lai-suat-thuc-la-gi.html\">lãi suất thực</a>."
+   ],
+   [
+    "h2",
+    "800 triệu, lãi 5% hay 9% chênh bao nhiêu?"
+   ],
+   [
+    "p",
+    "Em tự tính, giả định tiết kiệm 12 tháng 5%/năm: 800 triệu × 5% = <b>40 triệu/năm</b>; trái phiếu 9% = <b>72 triệu/năm</b>. Chênh <b>32 triệu/năm</b>, khoảng 2,67 triệu/tháng; 3 năm là 96 triệu. Con số đủ hấp dẫn để nhiều người ký ngay. Nhưng 96 triệu đó đổi lấy 3 điểm khác nhau dưới đây."
+   ],
+   [
+    "h2",
+    "Trái phiếu ngân hàng có được bảo hiểm tiền gửi không?"
+   ],
+   [
+    "p",
+    "<b>Không.</b> Bảo hiểm tiền gửi chỉ áp cho <b>tiền gửi</b>. Hạn mức hiện nay là <b>350 triệu đồng/người/tổ chức tín dụng</b>, gồm cả gốc và lãi, từ 13/7/2026 (Thông tư 05/2026/TT-NHNN). Bảo hiểm tiền gửi Việt Nam (div.gov.vn 27/2/2023) lưu ý: rủi ro của trái phiếu là rủi ro của tổ chức phát hành; việc ngân hàng hay công ty chứng khoán đứng ra phân phối <b>không có nghĩa là bảo lãnh</b>."
+   ],
+   [
+    "table",
+    [
+     [
+      "Tiêu chí",
+      "Tiền gửi tiết kiệm",
+      "Trái phiếu ngân hàng"
+     ],
+     [
+      "Bảo hiểm tiền gửi",
+      "Có, tối đa 350 triệu<br>/người/ngân hàng",
+      "Không có"
+     ],
+     [
+      "Rút trước hạn",
+      "Được, hưởng lãi<br>không kỳ hạn",
+      "Phải bán lại cho người khác<br>(rủi ro thanh khoản)"
+     ],
+     [
+      "Kỳ hạn thường gặp",
+      "Vài tháng – 3 năm",
+      "2–10 năm"
+     ],
+     [
+      "Lãi (11/2026)",
+      "6 tháng BQ 4,47%",
+      "9–10,5%/năm"
+     ],
+     [
+      "Rủi ro thuộc về",
+      "Được bảo hiểm<br>trong hạn mức",
+      "Tổ chức phát hành"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Nguồn: VietnamFinance 17/11/2026, div.gov.vn 27/2 và 27/9/2023, Thông tư 04/2022/TT-NHNN (rút trước hạn). Trái phiếu ngân hàng là sản phẩm hợp pháp; điều quan trọng là người mua biết mình đang mua gì. Kiến thức nền về trái phiếu ở bài <a href=\"/f0/trai-phieu-la-gi.html\">trái phiếu là gì</a>."
+   ],
+   [
+    "h2",
+    "Lần trước người mua trái phiếu ở quầy đã gặp gì?"
+   ],
+   [
+    "p",
+    "Trong vụ án khởi tố năm 2022 liên quan Tập đoàn Vạn Thịnh Phát (giai đoạn 2), cơ quan điều tra kết luận hơn <b>30.081 tỷ</b> của <b>35.824 người</b> mua 25 mã trái phiếu qua 4 công ty bị chiếm đoạt (VnEconomy 28/9/2024). Em tính bình quân mỗi người khoảng <b>840 triệu</b>, gần bằng sổ của bà Tâm. Kết luận điều tra cũng nêu hơn 2.000 nhân viên ở 239 chi nhánh ngân hàng SCB được tập huấn bán trái phiếu, giới thiệu như <i>\"một hình thức tiết kiệm linh hoạt, lãi suất cao\"</i> (Stockbiz/VietNamNet 9/6/2024)."
+   ],
+   [
+    "p",
+    "So hai lần: <b>giống</b> ở lãi cao hơn tiết kiệm nhiều và người mua được mời ngay tại quầy; <b>khác</b> ở chỗ lần này tổ chức phát hành là chính ngân hàng, không phải các công ty như trong vụ án, và hạn mức bảo hiểm tiền gửi đã nâng lên 350 triệu. Rủi ro trái phiếu doanh nghiệp nói chung có ở bài <a href=\"/f0/trai-phieu-doanh-nghiep-rui-ro.html\">rủi ro trái phiếu doanh nghiệp</a>."
+   ],
+   [
+    "h2",
+    "Chia 800 triệu thế nào để nằm trong hạn mức bảo hiểm?"
+   ],
+   [
+    "p",
+    "Để 800 triệu ở một ngân hàng: chỉ 350 triệu được bảo hiểm, <b>450 triệu ngoài hạn mức</b>. Bà Tâm cuối cùng chọn chia (lựa chọn của bà, không phải công thức chung):"
+   ],
+   [
+    "table",
+    [
+     [
+      "Phần",
+      "Số tiền",
+      "Vì sao"
+     ],
+     [
+      "Ngân hàng 1",
+      "300 triệu",
+      "Gốc + lãi dưới 350 triệu"
+     ],
+     [
+      "Ngân hàng 2",
+      "300 triệu",
+      "Gốc + lãi dưới 350 triệu"
+     ],
+     [
+      "Ngân hàng 3,<br>kỳ hạn ngắn",
+      "200 triệu",
+      "Phòng khi ốm đau, rút không mất lãi nhiều"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Bà chấp nhận lãi thấp hơn, đổi lại ngủ ngon hơn. Vì sao cần một khoản dễ rút trước khi nghĩ tới lãi cao, xem bài <a href=\"/f0/quy-du-phong-truoc-khi-dau-tu.html\">quỹ dự phòng trước khi đầu tư</a>."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp ở quầy giao dịch"
+   ],
+   [
+    "ul",
+    [
+     "<b>\"Cũng như gửi tiết kiệm\"</b>: nếu tên sản phẩm là trái phiếu, chứng chỉ quỹ hay bảo hiểm thì không phải tiền gửi, không có bảo hiểm tiền gửi.",
+     "<b>Chỉ nhìn lãi, bỏ qua kỳ hạn</b>: 9% kỳ hạn 36 tháng nghĩa là cần tiền năm thứ 2 thì phải tìm người mua lại, có thể phải bán rẻ.",
+     "<b>Nghĩ \"ngân hàng bán thì ngân hàng chịu\"</b>: người phân phối không bảo lãnh; rủi ro nằm ở tổ chức phát hành."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist 4 câu trước khi ký sản phẩm lãi cao hơn tiết kiệm"
+   ],
+   [
+    "ol",
+    [
+     "Tên sản phẩm trên giấy có chữ \"tiền gửi\"/\"tiết kiệm\" không, hay là trái phiếu, chứng chỉ quỹ, bảo hiểm?",
+     "Rút trước hạn thì mất gì, ai mua lại, giá bao nhiêu?",
+     "Trong suốt kỳ hạn, nhà mình có thể cần số tiền này không?",
+     "Tổng tiền ở mỗi ngân hàng (gốc + lãi) có vượt 350 triệu không?"
+    ]
+   ],
+   [
+    "p",
+    "Có một câu trả lời không chắc chắn, hãy mang giấy về nhà đọc lại. Ba điều em sẽ theo dõi tới Tết: lãi tiết kiệm sau đợt thanh tra tháng 11; lãi các lô trái phiếu ngân hàng mới; hạn mức bảo hiểm tiền gửi."
+   ],
+   [
+    "p",
+    "Với ai muốn so một cách để tiền dài hạn khác, có thể tham khảo <a href=\"/bao-cao-2026.html#tichsan\">bảng tích sản cổ phiếu ngân hàng 2018–2026</a>, kể cả những năm lỗ."
+   ]
+  ],
+  "faq": [
+   [
+    "Trái phiếu ngân hàng có được bảo hiểm tiền gửi không?",
+    "Không. Bảo hiểm tiền gửi chỉ áp cho tiền gửi, hạn mức 350 triệu đồng/người/tổ chức tín dụng gồm gốc và lãi (Thông tư 05/2026/TT-NHNN, từ 13/7/2026). Trái phiếu mang rủi ro của tổ chức phát hành."
+   ],
+   [
+    "Hạn mức bảo hiểm tiền gửi 2026 là bao nhiêu?",
+    "350 triệu đồng cho mỗi người tại mỗi tổ chức tín dụng, tính cả gốc lẫn lãi, áp dụng từ 13/7/2026. Gửi nhiều ngân hàng thì mỗi ngân hàng được tính riêng."
+   ],
+   [
+    "Mua trái phiếu ngân hàng rồi cần tiền gấp có rút được không?",
+    "Không rút như sổ tiết kiệm. Người mua phải chuyển nhượng (bán lại) cho người khác theo điều khoản của lô trái phiếu; giá và thời gian bán phụ thuộc người mua lại."
+   ]
+  ],
+  "rel": [
+   "trai-phieu-doanh-nghiep-rui-ro",
+   "trai-phieu-la-gi",
+   "lai-suat-thuc-la-gi",
+   "tich-san-co-phieu-hay-gui-tiet-kiem",
+   "quy-du-phong-truoc-khi-dau-tu"
   ]
  }
 ]
