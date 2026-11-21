@@ -1,0 +1,36 @@
+{
+ "key": "VIC_THE",
+ "title": "VIC the",
+ "scenes": [
+  {
+   "id": "S1",
+   "say": "Vingroup vừa trúng gói metro tám trăm bảy mươi ba nghìn tỷ. Vậy mà cổ phiếu VIC gần như đứng im. Vì sao?",
+   "hold": 0.5
+  },
+  {
+   "id": "S2",
+   "say": "Thứ nhất, tin này không mới. Từ cuối tháng sáu, báo đã đưa tin Vinhomes làm tổng thầu năm tuyến metro. Chỉ trong tuần đó, VIC tăng gần hai mươi phần trăm.",
+   "hold": 0.5
+  },
+  {
+   "id": "S3",
+   "say": "Đến ngày hai mươi tháng mười một, Hà Nội mới công bố chính thức: tám trăm bảy mươi ba nghìn hai trăm hai mươi bốn tỷ, dài hai trăm năm mươi ba phẩy năm cây số, làm trong năm mươi mốt tháng. Phiên đó VIC chỉ tăng không phẩy bảy chín phần trăm, khối lượng thấp nhất một tháng.",
+   "hold": 0.5
+  },
+  {
+   "id": "S4",
+   "say": "Thứ hai, nhà Vin đang cần rất nhiều tiền. Xanh SM vừa tăng vốn thêm gần mười bốn nghìn sáu trăm tỷ chỉ trong một tháng. Vinhomes tính huy động thêm ba nghìn tỷ trái phiếu. Và nhớ rằng, tám trăm bảy mươi ba nghìn tỷ là giá trị hợp đồng xây dựng, không phải lãi.",
+   "hold": 0.5
+  },
+  {
+   "id": "S5",
+   "say": "Về kỹ thuật, đường trung bình hai mươi phiên vừa cắt lên đường năm mươi phiên, đáy sau cao hơn đáy trước. Nhưng vùng hai trăm bốn mươi sáu đến hai trăm năm mươi mốt đã hai lần chạm mà không qua. Hỗ trợ gần là hai trăm hai mươi bảy đến hai trăm ba mươi tư.",
+   "hold": 0.5
+  },
+  {
+   "id": "S6",
+   "say": "Ông Vượng làm năm tuyến metro. Cổ đông VIC mới làm được một tuyến: tuyến gồng. Anh chị thấy tin đã cũ thì giá còn lý do gì để chạy?",
+   "hold": 0.5
+  }
+ ]
+}
