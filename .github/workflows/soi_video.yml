@@ -4,6 +4,7 @@ on:
     inputs:
       url: {description: "Link video", required: false, default: ""}
       release_asset: {description: "Ten asset mp4 trong release nguon-video (neu YouTube chan)", required: false, default: ""}
+      release_tag: {description: "Release chua asset (mac dinh nguon-video)", required: false, default: "nguon-video"}
 permissions:
   contents: write
 jobs:
@@ -17,7 +18,7 @@ jobs:
       - run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
           pip install -q -U yt-dlp yt-dlp-ejs faster-whisper
-      - env: {GH_TOKEN: "${{ github.token }}", GH_REPO: "${{ github.repository }}"}
+      - env: {GH_TOKEN: "${{ github.token }}", GH_REPO: "${{ github.repository }}", RELEASE_TAG: "${{ inputs.release_tag }}"}
         run: |
           python3 _video/soi_video.py --url "${{ inputs.url }}" --release_asset "${{ inputs.release_asset }}"
           ID=$(cat vid.txt); TAG="soi-$ID"

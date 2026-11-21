@@ -6,6 +6,7 @@ on:
       so_clip: {description: "So clip", required: false, default: "5"}
       release_asset: {description: "Ten asset mp4 trong release nguon-video (thay cho url neu YouTube chan)", required: false, default: ""}
       max_phut: {description: "Chi xu ly N phut dau (sau cat lang)", required: false, default: "45"}
+      release_tag: {description: "Release chua asset (mac dinh nguon-video)", required: false, default: "nguon-video"}
 permissions:
   contents: write
 jobs:
@@ -19,7 +20,7 @@ jobs:
       - run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core >/dev/null
           pip install -q -U yt-dlp yt-dlp-ejs auto-editor faster-whisper
-      - env: {GH_TOKEN: "${{ github.token }}", GH_REPO: "${{ github.repository }}"}
+      - env: {GH_TOKEN: "${{ github.token }}", GH_REPO: "${{ github.repository }}", RELEASE_TAG: "${{ inputs.release_tag }}"}
         run: |
           python3 _video/live_shorts.py --url "${{ inputs.url }}" --so_clip "${{ inputs.so_clip }}" --release_asset "${{ inputs.release_asset }}" --max_phut "${{ inputs.max_phut }}"
           ID=$(cat vid.txt); TAG="live-$ID"

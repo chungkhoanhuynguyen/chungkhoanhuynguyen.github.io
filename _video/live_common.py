@@ -5,9 +5,10 @@ def sh(cmd, check=True):
     return subprocess.run(cmd, check=check)
 
 def tai_video(url, release_asset, out="src.mp4", cao=720):
+    tag = os.environ.get("RELEASE_TAG") or "nguon-video"
     """Tai video: release_asset (asset mp4 trong release nguon-video) hoac yt-dlp. Tra ve (path, id)."""
     if release_asset:
-        sh(["gh", "release", "download", "nguon-video", "-p", release_asset, "-O", out, "--clobber"])
+        sh(["gh", "release", "download", tag, "-p", release_asset, "-O", out, "--clobber"])
         return out, os.path.splitext(os.path.basename(release_asset))[0]
     vid = subprocess.run(["yt-dlp", "--get-id", "--no-playlist", url], capture_output=True, text=True).stdout.strip().split("\n")[0]
     fmt = f"bv*[height<={cao}]+ba/b[height<={cao}]/b"
