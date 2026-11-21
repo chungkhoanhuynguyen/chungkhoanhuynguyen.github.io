@@ -1,7 +1,7 @@
 {
- "_ghi_chu": "Lo reel the 22/11. KHONG tu dang. NV3 hen lich theo kenh/ngay/gio goi y. Shorts 11:30, TikTok 19:30; moi kenh toi da 1 video/ngay; khong trung ma cung ngay tren cung kenh.",
+ "_ghi_chu": "Moi video dang 3 noi: YT chinh Shorts 11:30, TikTok chinh 19:30 (caption 1 dong, khong hashtag/link/Zalo, bia tai anh), FB reel trang ca nhan 21:30 (CHI dang khi anh Huy duyet caption FB). Moi kenh 1 video/ngay.",
  "release": "reel-the-20261122",
- "trang_thai": "CHO_UPLOAD_VIDEO (tao release bi chan 403 trong phien nay; file nam o may dung: /tmp/rl/<key>/<key>.mp4)",
+ "trang_thai": "DA_DUYET_DANG (anh Huy 22/11 03:17: \"Đăng đi ytb tiktok fb\"). File: nhánh video-out, thư mục reel2211/<key>.mp4 + <key>_bia.jpg",
  "NVL": {
   "ma": "NVL",
   "hook": [
@@ -23,14 +23,19 @@
    "Shorts",
    "Chứng Khoán Huy Nguyễn"
   ],
-  "file_video": "nvl.mp4 (1080x1920)",
-  "file_bia": "nvl_bia.jpg",
+  "file_video": "video-out:reel2211/nvl.mp4",
+  "file_bia": "video-out:reel2211/nvl_bia.jpg",
   "file_nguon": "nvl_nguon.txt",
   "reel_the_cfg": "_video/reel_the/nvl.json",
   "do_dai": "99,1s (gồm outro 3s không lời)",
   "canh_ky_thuat": "MA20 cắt xuống MA50 17/9; cản 10,85–11,0; hỗ trợ 9,6–9,8; KL tăng khi giảm 20/11",
   "do_to": "-13,1 LUFS (ebur128)",
-  "canh_goc_nhin": "Chờ 3 tín hiệu; chốt: CHƯA VỘI / CHỜ KẾT QUẢ 28/12"
+  "canh_goc_nhin": "Chờ 3 tín hiệu; chốt: CHƯA VỘI / CHỜ KẾT QUẢ 28/12",
+  "lich": {
+   "yt_chinh_shorts": "2026-11-23T11:30+07:00",
+   "tiktok_chinh": "2026-11-23T19:30+07:00",
+   "fb_reel": "2026-11-23T21:30+07:00 (cho duyet caption)"
+  }
  },
  "VCB": {
   "ma": "VCB",
@@ -51,15 +56,20 @@
    "tin nóng chứng khoán",
    "Chứng Khoán Huy Nguyễn"
   ],
-  "file_video": "vcb.mp4 (1080x1920)",
-  "file_bia": "vcb_bia.jpg",
+  "file_video": "video-out:reel2211/vcb.mp4",
+  "file_bia": "video-out:reel2211/vcb_bia.jpg",
   "file_nguon": "vcb_nguon.txt",
   "reel_the_cfg": "_video/reel_the/vcb.json",
   "caption": "VCB mất hơn 210.000 tỷ vốn hóa, khối ngoại bán ròng 14/15 phiên: vì sao? Nguồn: Người Quan Sát 20/11.",
   "do_dai": "94,0s (gồm outro 3s không lời)",
   "canh_ky_thuat": "MA20 cắt xuống MA50 7/10; cản 57,5–58,4; hỗ trợ 50,0–50,8; KL tăng 17–18/11",
   "do_to": "-13,1 LUFS (ebur128)",
-  "canh_goc_nhin": "Chờ 3 tín hiệu; chốt: CHƯA VỘI / CHỜ NGOẠI QUAY ĐẦU"
+  "canh_goc_nhin": "Chờ 3 tín hiệu; chốt: CHƯA VỘI / CHỜ NGOẠI QUAY ĐẦU",
+  "lich": {
+   "yt_chinh_shorts": "2026-11-24T11:30+07:00",
+   "tiktok_chinh": "2026-11-24T19:30+07:00",
+   "fb_reel": "2026-11-24T21:30+07:00 (cho duyet caption)"
+  }
  },
  "HPG": {
   "ma": "HPG",
@@ -82,14 +92,19 @@
    "Shorts",
    "Chứng Khoán Huy Nguyễn"
   ],
-  "file_video": "hpg.mp4 (1080x1920)",
-  "file_bia": "hpg_bia.jpg",
+  "file_video": "video-out:reel2211/hpg.mp4",
+  "file_bia": "video-out:reel2211/hpg_bia.jpg",
   "file_nguon": "hpg_nguon.txt",
   "reel_the_cfg": "_video/reel_the/hpg.json",
   "do_dai": "97,3s (gồm outro 3s không lời)",
   "canh_ky_thuat": "MA20 cắt lên MA50 10/11; cản 21,5–21,9; hỗ trợ 19,6–20,15; giảm KL tăng 18/11",
   "do_to": "-13,1 LUFS (ebur128)",
-  "canh_goc_nhin": "Chờ 3 tín hiệu; chốt: THÉP KHỎE / KHI TỶ GIÁ ĐỨNG YÊN"
+  "canh_goc_nhin": "Chờ 3 tín hiệu; chốt: THÉP KHỎE / KHI TỶ GIÁ ĐỨNG YÊN",
+  "lich": {
+   "yt_chinh_shorts": "2026-11-25T11:30+07:00",
+   "tiktok_chinh": "2026-11-25T19:30+07:00",
+   "fb_reel": "2026-11-25T21:30+07:00 (cho duyet caption)"
+  }
  },
  "NGOAI": {
   "ma": "VNINDEX",
@@ -111,13 +126,18 @@
    "Shorts",
    "Chứng Khoán Huy Nguyễn"
   ],
-  "file_video": "ngoai.mp4 (1080x1920)",
-  "file_bia": "ngoai_bia.jpg",
+  "file_video": "video-out:reel2211/ngoai.mp4",
+  "file_bia": "video-out:reel2211/ngoai_bia.jpg",
   "file_nguon": "ngoai_nguon.txt",
   "reel_the_cfg": "_video/reel_the/ngoai.json",
   "do_dai": "99,2s (gồm outro 3s không lời)",
   "canh_ky_thuat": "VN-Index: MA20 cắt xuống MA50 9/10; cản 1.750–1.781; hỗ trợ 1.666–1.690; -23,7 điểm KL tăng 18/11",
   "do_to": "-13,1 LUFS (ebur128)",
-  "canh_goc_nhin": "Chờ 3 tín hiệu; chốt: CHƯA PHẢI LÚC ALL-IN / CHỜ TIỀN NGOẠI"
+  "canh_goc_nhin": "Chờ 3 tín hiệu; chốt: CHƯA PHẢI LÚC ALL-IN / CHỜ TIỀN NGOẠI",
+  "lich": {
+   "yt_chinh_shorts": "2026-11-26T11:30+07:00",
+   "tiktok_chinh": "2026-11-26T19:30+07:00",
+   "fb_reel": "2026-11-26T21:30+07:00 (cho duyet caption)"
+  }
  }
 }
