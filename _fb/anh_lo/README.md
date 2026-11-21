@@ -29,3 +29,9 @@ Kiểu ảnh anh Huy chọn (FB chính từng lên view nhiều): màn hình app
 ## Kiểu "so sánh 2 thời điểm" (học mẫu VIC vs vàng SJC của anh Huy)
 - cfg "hop": khung đỏ quanh 2 nến + chữ đỏ to viền trắng ("PNJ: 68.200 đ/cp / Vàng SJC: 147,2 tr/lượng"), số thật (WiData; SJC id 1224211). Hook ngắn đối lập số: "Vàng giảm 9%. Tiệm bán vàng giảm 80%."
 - Mẫu MSR (meme + % tăng to khoanh đỏ): KHÔNG dùng nhân vật có bản quyền (Minion…) và KHÔNG bịa câu nói của người thật; dùng ý tưởng: 1 ý duy nhất, chữ ít, % đổi to.
+
+## Học kênh Phan Linh Stock (bài PNJ 20/11: 1,8K cảm xúc, 298 bình luận)
+- Sức hút nằm ở CAPTION: "Tin sốc mới nhận!!!" + tin NÓNG có báo đăng (nhân sự, kết quả kinh doanh) kể như chuyện, ẩn dụ đời thường, kết bằng 1 câu đùa tình huống ("bao giờ về lại 85 thì gọi tao dậy").
+- Bình luận đầu của tác giả: phân tích cân bằng (vấn đề + điểm sáng), tạo thảo luận.
+- Ảnh: 1 ý, hook nói kiểu đời thường + emoji; gắn TIN lên chart (mốc ngày tin ra).
+- Mình: kiểm tin trên báo trước khi viết, không hashtag/link trong caption, không hô mua bán, không bịa số.
