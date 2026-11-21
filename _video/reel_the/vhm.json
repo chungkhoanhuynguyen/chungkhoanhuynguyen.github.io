@@ -205,8 +205,8 @@
    "chuong": "— NGƯỜI MUA CHƯA VỘI —",
    "muc": [
     {
-     "so": "GIÁ THẤP CHƯA ĐỦ",
-     "t": "Lãi suất vẫn là rào cản",
+     "so": "CHƯA ĐỦ KÉO",
+     "t": "Giá thấp, lãi suất vẫn cao",
      "at": [
       0,
       0.3
@@ -227,6 +227,7 @@
       1,
       0.85
      ],
+     "co": 77,
      "mau": "#c9533e"
     }
    ],

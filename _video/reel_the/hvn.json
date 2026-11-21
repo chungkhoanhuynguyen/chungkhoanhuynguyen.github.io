@@ -211,8 +211,8 @@
      ]
     },
     {
-     "so": "TỚI THÁNG 3/2027",
-     "t": "Dự kiến 226 chuyến mỗi tuần",
+     "so": "226 CHUYẾN",
+     "t": "Mỗi tuần, tới tháng 3/2027",
      "at": [
       1,
       0.45
@@ -225,6 +225,7 @@
       1,
       0.85
      ],
+     "co": 72,
      "mau": "#c9533e"
     }
    ],
@@ -242,8 +243,8 @@
      "vì hạ tầng hiện đại"
     ],
     [
-     "Tới tháng **3/2027**: **226** chuyến/tuần",
-     "các hãng cần **6–12 tháng** chuẩn bị"
+     "Tới tháng **3/2027**:",
+     "**226** chuyến/tuần"
     ]
    ]
   },

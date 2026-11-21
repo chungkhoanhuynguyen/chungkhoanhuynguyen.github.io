@@ -4,47 +4,47 @@
  "scenes": [
   {
    "id": "S1",
-   "say": "Theo Vietcap, chuỗi nhà thuốc Long Châu được định giá bốn mươi bốn nghìn bốn trăm hai mươi chín tỷ, còn FPT Shop chỉ hai nghìn bốn trăm hai mươi bảy tỷ. Gấp mười tám lần?",
+   "say": "Theo Vietcap, chuỗi nhà thuốc Long Châu định giá hơn bốn mươi bốn nghìn tỷ, FPT Shop hơn hai nghìn bốn trăm tỷ. Gấp mười tám lần?",
    "hold": 0.3
   },
   {
    "id": "S2",
-   "say": "Theo báo cáo cập nhật ngày mười bảy tháng mười một của Vietcap, Long Châu được định giá vốn chủ sở hữu bốn mươi bốn nghìn bốn trăm hai mươi chín tỷ, FPT Shop hai nghìn bốn trăm hai mươi bảy tỷ. Gấp khoảng mười tám phẩy ba lần.",
+   "say": "Báo cáo ngày mười bảy tháng mười một của Vietcap: Long Châu bốn mươi bốn nghìn bốn trăm hai mươi chín tỷ, FPT Shop hai nghìn bốn trăm hai mươi bảy tỷ. Gấp khoảng mười tám phẩy ba lần.",
    "hold": 0.3
   },
   {
    "id": "S3",
-   "say": "Phần vốn mười một phẩy không ba phần trăm của nhóm nhân viên, ước khoảng bốn nghìn chín trăm tỷ, đã gấp hơn hai lần cả FPT Shop. FPT Retail nắm bảy mươi lăm phẩy chín bảy phần trăm, quỹ Creador khoảng mười ba phần trăm, và cổ phiếu FRT giảm ba phần trăm từ đỉnh tháng mười.",
+   "say": "Phần mười một phẩy không ba phần trăm của nhân viên, ước khoảng bốn nghìn chín trăm tỷ, gấp hơn hai lần cả FPT Shop. FPT Retail nắm bảy mươi lăm phẩy chín bảy phần trăm, Creador khoảng mười ba, cổ phiếu FRT giảm ba phần trăm từ đỉnh.",
    "hold": 0.3
   },
   {
    "id": "S4",
-   "say": "Đây là định giá ước tính của Vietcap, không phải giá giao dịch. Nếu chương trình ESOP năm phần trăm vốn chia năm đợt như giả định, tỷ lệ của FPT Retail có thể còn khoảng bảy mươi hai phần trăm vào năm hai nghìn không trăm ba mươi.",
+   "say": "Đây là ước tính của Vietcap, không phải giá giao dịch. Nếu ESOP năm phần trăm chia năm đợt như giả định, FPT Retail có thể còn khoảng bảy mươi hai phần trăm năm hai nghìn không trăm ba mươi.",
    "hold": 0.3
   },
   {
    "id": "S5",
-   "say": "Về kỹ thuật, đường trung bình hai mươi cắt lên đường năm mươi ngày mười một tháng tám, hiện vẫn nằm trên. Vùng một trăm năm mươi hai đến một trăm năm mươi bốn phẩy tám là cản gần, vùng một trăm ba mươi tám đến một trăm bốn mươi là hỗ trợ. Ngày hai tháng mười một, giá một trăm ba mươi tám phẩy ba với khối lượng cao nhất mười lăm phiên.",
+   "say": "Về kỹ thuật, đường trung bình hai mươi cắt lên đường năm mươi ngày mười một tháng tám, vẫn nằm trên. Cản gần một trăm năm mươi hai đến một trăm năm mươi bốn phẩy tám, hỗ trợ một trăm ba mươi tám đến một trăm bốn mươi. Ngày hai tháng mười một, khối lượng cao nhất mười lăm phiên.",
    "hold": 0.3
   },
   {
    "id": "S5A",
-   "say": "Vietcap nâng định giá Long Châu thêm bốn phần trăm so với tháng chín. FPT Shop cũng được nâng ba mươi bốn phần trăm. Và đường trung bình hai mươi nằm trên đường năm mươi từ ngày mười một tháng tám.",
+   "say": "Vietcap nâng Long Châu bốn phần trăm so với tháng chín. FPT Shop ba mươi bốn phần trăm. Và đường trung bình hai mươi nằm trên đường năm mươi.",
    "hold": 0.3
   },
   {
    "id": "S5B",
-   "say": "Đây chỉ là ước tính, không phải giá giao dịch. ESOP năm phần trăm làm loãng dần. Và giá đang gặp cản một trăm năm mươi hai, đỉnh ngày hai mươi mốt tháng mười.",
+   "say": "Chỉ là ước tính, không phải giá giao dịch. ESOP năm phần trăm làm loãng dần. Giá đang gặp cản một trăm năm mươi hai.",
    "hold": 0.3
   },
   {
    "id": "S5C",
-   "say": "Góc nhìn của mình: chờ ba tín hiệu. Một, doanh thu Long Châu quý bốn kiểm chứng được định giá. Hai, ESOP đúng lộ trình. Ba, giá vượt được cản một trăm năm mươi bốn phẩy tám.",
+   "say": "Góc nhìn của mình: chờ ba tín hiệu. Một, doanh thu quý bốn kiểm chứng định giá. Hai, ESOP đúng lộ trình. Ba, giá vượt cản một trăm năm mươi bốn phẩy tám.",
    "hold": 0.3
   },
   {
    "id": "S6",
-   "say": "Nhà thuốc bốn mươi bốn nghìn bốn trăm hai mươi chín tỷ. Cửa hàng công nghệ hai nghìn bốn trăm hai mươi bảy tỷ. Anh chị ghé nhà thuốc hay cửa hàng điện thoại nhiều hơn?",
+   "say": "Nhà thuốc hơn bốn mươi bốn nghìn tỷ. Cửa hàng công nghệ hơn hai nghìn bốn trăm tỷ. Anh chị ghé nhà thuốc hay cửa hàng điện thoại nhiều hơn?",
    "hold": 1.2
   }
  ]

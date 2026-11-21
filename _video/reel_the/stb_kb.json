@@ -9,22 +9,22 @@
   },
   {
    "id": "S2",
-   "say": "Báo cáo quý ba cho thấy Sacombank còn mười một nghìn năm trăm sáu mươi nhân viên, giảm bốn nghìn hai trăm chín mươi mốt người, tức hai mươi bảy phần trăm so với cuối năm ngoái. Tỷ lệ chi phí trên thu nhập giảm từ bốn mươi sáu phẩy một xuống ba mươi hai phẩy sáu phần trăm.",
+   "say": "Báo cáo quý ba: Sacombank còn mười một nghìn năm trăm sáu mươi nhân viên, giảm bốn nghìn hai trăm chín mươi mốt người, hai mươi bảy phần trăm. Chi phí trên thu nhập giảm từ bốn mươi sáu phẩy một xuống ba mươi hai phẩy sáu.",
    "hold": 0.3
   },
   {
    "id": "S3",
-   "say": "Lợi nhuận sau thuế chín tháng còn bốn nghìn hai trăm bảy mươi tám tỷ, giảm năm mươi phẩy tám phần trăm, vì chi phí dự phòng tăng từ hai nghìn một trăm năm mươi hai lên mười hai nghìn tám trăm bốn mươi tám tỷ. Nợ xấu tăng lên bảy phẩy ba ba phần trăm, và cổ phiếu STB giảm chín phần trăm từ đỉnh tháng chín.",
+   "say": "Lãi sau thuế chín tháng còn bốn nghìn hai trăm bảy mươi tám tỷ, giảm năm mươi phẩy tám phần trăm, vì dự phòng tăng gần sáu lần, lên mười hai nghìn tám trăm bốn mươi tám tỷ. Nợ xấu bảy phẩy ba ba phần trăm, cổ phiếu STB giảm chín phần trăm từ đỉnh.",
    "hold": 0.3
   },
   {
    "id": "S4",
-   "say": "Nhưng thu nhập không yếu: tổng thu nhập hoạt động tăng mười bốn phẩy một phần trăm, lãi từ dịch vụ gấp ba phẩy năm lần. Lãi rớt vì chi phí dự phòng tăng gần sáu lần, và thu nhập lãi thuần giảm mười bảy phẩy tám phần trăm.",
+   "say": "Nhưng thu nhập không yếu: tổng thu nhập tăng mười bốn phẩy một phần trăm. Lãi rớt vì dự phòng tăng gần sáu lần, và lãi thuần giảm mười bảy phẩy tám phần trăm.",
    "hold": 0.3
   },
   {
    "id": "S5",
-   "say": "Về kỹ thuật, đường trung bình hai mươi cắt xuống đường năm mươi ngày tám tháng mười. Vùng bảy mươi hai đến bảy mươi ba là cản gần, vùng sáu mươi lăm phẩy một đến sáu mươi sáu là hỗ trợ. Ngày hai mươi, giá tăng với khối lượng cao nhất mười lăm phiên.",
+   "say": "Về kỹ thuật, đường trung bình hai mươi cắt xuống đường năm mươi ngày tám tháng mười. Cản gần bảy mươi hai đến bảy mươi ba, hỗ trợ sáu mươi lăm phẩy một đến sáu mươi sáu. Ngày hai mươi, khối lượng cao nhất mười lăm phiên.",
    "hold": 0.3
   },
   {
