@@ -1,0 +1,5 @@
+TCB - nguon so lieu (tra 22/11/2026)
+- Techcombank phat hanh 3 lo trai phieu rieng le ky han 36 thang, moi lo 2.500 ty: 12/11 (TCBL12619, lai co dinh 9%/nam), 17/11 (TCBL12620, 8,9%), 18/11 (TCBL12621, 8,9%); tong 7.500 ty, von phuc vu cho vay: Mekong ASEAN 20/11/2026 "Techcombank lien tiep phat hanh trai phieu lai suat gan 9%/nam" (CBTT gui HNX 19/11).
+- Lai suat cho vay binh quan vuot 11%/nam: VietnamFinance 20/11/2026; no xau toan nganh 9T/2026 2,3%, ap luc von chua ha nhiet: MarketTimes 20/11/2026.
+- Gia TCB: dinh dong cua 22.930 d (21/10/2026), 20/11 21.200 d (-8%): data/c/TCB.bin.
+- Canh ky thuat tu gia dong cua that (data/c/*.bin); chi mo ta, khong phai khuyen nghi.

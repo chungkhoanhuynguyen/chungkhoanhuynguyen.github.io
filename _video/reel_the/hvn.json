@@ -129,10 +129,10 @@
      ]
     },
     {
-     "nhan": "KHAI THÁC TỐI ĐA",
+     "nhan": "TỐI ĐA MỖI TUẦN",
      "so": 366,
      "dec": 0,
-     "dv": "CHUYẾN/TUẦN",
+     "dv": "CHUYẾN",
      "co": 96,
      "y": 740,
      "h": "300px",
@@ -145,10 +145,10 @@
      "tien": ""
     },
     {
-     "nhan": "TRONG ĐÓ QUỐC TẾ",
+     "nhan": "QUỐC TẾ MỖI TUẦN",
      "so": 44,
      "dec": 0,
-     "dv": "CHUYẾN/TUẦN",
+     "dv": "CHUYẾN",
      "co": 96,
      "y": 740,
      "h": "300px",
@@ -208,7 +208,8 @@
      "at": [
       0,
       0.3
-     ]
+     ],
+     "co": 84
     },
     {
      "so": "226 CHUYẾN",
@@ -216,7 +217,8 @@
      "at": [
       1,
       0.45
-     ]
+     ],
+     "co": 84
     },
     {
      "so": "CẦN 6–12 THÁNG",

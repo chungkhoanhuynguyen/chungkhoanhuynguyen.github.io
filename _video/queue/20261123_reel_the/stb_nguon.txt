@@ -1,0 +1,4 @@
+STB - nguon so lieu (tra 22/11/2026)
+- Sacombank con 11.560 nhan vien (30/9), giam 4.291 nguoi (-27% so cuoi 2025), chi phi nhan vien 9T giam 22% con 5.108 ty; CIR 46,1% -> 32,6%, muc tieu 27%; thu nhap hoat dong 27.794 ty (+14,1%); thu nhap lai thuan 17.517 ty (-17,8%); lai dich vu 8.206 ty (gap 3,5 lan); chi phi hoat dong 9.053 ty (-19,3%); du phong 2.152 -> 12.848 ty; LNTT 5.893 ty (-46,4%), LNST 4.278 ty (-50,8%); no xau 51.367 ty, ty le 6,41% -> 7,33%; NHNN khoi dong lai trao doi xu ly 32,5% co phan: VietnamFinance 18/11/2026 "Sacombank cat giam gan 1/3 nhan su, thay loat lanh dao cap cao" (BCTC rieng le quy III/2026).
+- Gia STB: dinh dong cua 78.200 d (18/9/2026), 20/11 70.800 d (-9%): du lieu gia web (data/c/STB.bin).
+- Canh ky thuat: MA20/MA50, can/ho tro, moc ngay, khoi luong tinh tu gia dong cua that trong data/c/*.bin (lay_gia.py, 125 phien). Chi mo ta, khong phai khuyen nghi.

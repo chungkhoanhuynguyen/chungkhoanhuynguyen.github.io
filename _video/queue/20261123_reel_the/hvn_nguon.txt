@@ -1,0 +1,5 @@
+HVN - nguon so lieu (tra 22/11/2026)
+- 34 hang bay quoc te muon lui chuyen tu Tan Son Nhat sang Long Thanh (24 hang tu lich bay mua dong 2027, 10 hang tu mua he 2028 hoac muon hon), can 6-12 thang chuan bi; Long Thanh du kien van hanh thuong mai tu 24/12, giai doan dau toi da 366 chuyen/tuan (322 noi dia + 44 quoc te); cac hang deu ung ho chuyen vi ha tang hien dai: Vietnambiz 19/11/2026 "Hon 30 hang bay quoc te muon lui thoi gian khai thac o Long Thanh" (bao cao gui lanh dao Chinh phu).
+- Du kien toi thang 3/2027 dat 226 chuyen/tuan: Tin nhanh chung khoan 21/11/2026 "Tong san luong khai thac San bay Long Thanh toi thang 3/2027 du kien dat 226 chuyen/tuan".
+- Gia HVN: dinh dong cua 26.300 d (8/7/2026), 20/11 22.950 d (-13%): data/c/HVN.bin.
+- Canh ky thuat tu gia dong cua + khoi luong that (data/c/*.bin); chi mo ta, khong phai khuyen nghi.

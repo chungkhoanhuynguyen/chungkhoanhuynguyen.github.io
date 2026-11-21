@@ -1,0 +1,4 @@
+CTG - nguon so lieu (tra 22/11/2026)
+- Du no lien quan BDS ~415.443 ty = 19,4% tong du no 2,14 trieu ty (30/9/2026; Q2 19,2%, cuoi 2025 20%); thu cam ket tai tro co dieu kien 313.000 ty cho lien danh du an Dai lo Canh quan Song Hong, chua cap han muc/giai ngan/phat sinh du no; tin dung 9T +7,5%, vay mua nha -5,5%, ban le +1,4%; LNTT 9T 39.557 ty (+33,9%); no xau 1,2%, bao phu 160,4%; du phong +22,6% (20.781 ty); muc tieu no xau <=1,8%: Nguoi Quan Sat 19/11/2026 "VietinBank giai ngan moi cho Vingroup, Sun Group va Ecopark trong quy III, du no BDS hon 415.000 ty" (dan bao cao Vietcap).
+- Gia CTG: dinh dong cua 34.810 d (27/5/2026), 20/11 30.100 d (-14%): data/c/CTG.bin.
+- Canh ky thuat tu gia dong cua that (data/c/*.bin, 125 phien); chi mo ta, khong phai khuyen nghi.

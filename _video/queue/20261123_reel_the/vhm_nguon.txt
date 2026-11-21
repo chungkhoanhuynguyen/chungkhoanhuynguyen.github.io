@@ -1,0 +1,4 @@
+VHM - nguon so lieu (tra 22/11/2026)
+- Gia rao chung cu 10 du an noi bat Ha Noi Q3/2026 so Q2 (Batdongsan.com.vn thang 10/2026): The Sapphire - Vinhomes Smart City -14%, Lumi Hanoi -14%, Times City -13%, Greenera -13%, Royal City -12%, Masteri West Heights -12%, Vinhomes Ocean Park -11%, D'Capitale -7%, Hanoi Seasons Garden/Sunshine City -2%; chung cu Ha Noi -4%, dat nen -11%; quan tam chung cu HN thang 10 -9%; CBRE: giao dich so cap 9T Ha Noi + TP.HCM giam ~30%; Vietcap ky vong Q4 cai thien nhung ca nam van giam; mot bo phan nguoi mua gui tiet kiem: Vietnambiz 20/11/2026 "Gia rao chung cu Ha Noi giam tai nhieu du an, co noi mat 14% sau mot quy".
+- Gia VHM: dinh dong cua 78.000 d (26/6/2026), 20/11 60.400 d (-23%): data/c/VHM.bin.
+- Canh ky thuat tu gia dong cua + khoi luong that (data/c/*.bin); chi mo ta, khong phai khuyen nghi.

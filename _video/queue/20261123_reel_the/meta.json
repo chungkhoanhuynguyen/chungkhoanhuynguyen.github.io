@@ -1,0 +1,216 @@
+{
+ "_ghi_chu": "Lô 2 reel thẻ (6 mã). Mỗi video: YT chính Shorts 11:30, TikTok chính 19:30 cùng ngày (caption 1 dòng, không hashtag/link/Zalo, bìa tải ảnh). 1 video/kênh/ngày. Không tự đăng, chờ anh Huy duyệt.",
+ "release": "reel-the-20261123",
+ "trang_thai": "CHO_ANH_DUYET",
+ "file_video_ghi_chu": "Nhánh video-out, thư mục reel2311/<key>.mp4 + <key>_bia.jpg",
+ "STB": {
+  "ma": "STB",
+  "hook": [
+   "BỚT 4.291 NGƯỜI",
+   "LÃI CÒN MỘT NỬA?"
+  ],
+  "kenh_de_xuat": "YT_CHINH_SHORTS",
+  "trang_thai": "CHO_ANH_DUYET",
+  "gio_goi_y": "2026-11-27T11:30+07:00",
+  "title": "Sacombank bớt 4.291 nhân viên mà lãi sau thuế giảm 50,8%: vì sao? | Chứng Khoán Huy Nguyễn",
+  "mo_ta": "Sacombank còn 11.560 nhân viên (giảm 4.291 người, -27% so cuối 2025), chi phí trên thu nhập từ 46,1% xuống 32,6%, nhưng lãi sau thuế 9 tháng chỉ còn 4.278 tỷ (-50,8%) vì dự phòng tăng từ 2.152 lên 12.848 tỷ; nợ xấu 7,33%.\nNguồn: VietnamFinance 18/11/2026 (BCTC riêng lẻ quý III/2026).\nKỹ thuật (MA20/MA50, cản/hỗ trợ) tính từ giá đóng cửa thật 6 tháng, chỉ mô tả, không phải khuyến nghị.\nQuan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [
+   "STB",
+   "Sacombank",
+   "cổ phiếu STB",
+   "nhân sự ngân hàng",
+   "nợ xấu",
+   "tin nóng chứng khoán",
+   "Shorts",
+   "Chứng Khoán Huy Nguyễn"
+  ],
+  "file_video": "video-out:reel2311/stb.mp4",
+  "file_bia": "video-out:reel2311/stb_bia.jpg",
+  "file_nguon": "stb_nguon.txt",
+  "reel_the_cfg": "_video/reel_the/stb.json",
+  "do_dai": "97,0 s (gồm outro 3s không lời)",
+  "canh_ky_thuat": "MA20 cắt xuống MA50 8/10; cản 72–73; hỗ trợ 65,1–66; KL cao nhất 15 phiên 20/11",
+  "do_to": "-13 LUFS (ebur128)",
+  "canh_goc_nhin": "Chờ 3 tín hiệu (nợ xấu ngừng tăng, vượt cản 73, hướng xử lý 32,5% cổ phần); chốt: LÃI PHỤC HỒI / PHẢI ĐI CÙNG NỢ XẤU",
+  "lich": {
+   "yt_chinh_shorts": "2026-11-27T11:30+07:00",
+   "tiktok_chinh": "2026-11-27T19:30+07:00",
+   "fb_reel": null
+  }
+ },
+ "CTG": {
+  "ma": "CTG",
+  "hook": [
+   "CAM KẾT 313.000 TỶ",
+   "CHO MỘT DỰ ÁN?"
+  ],
+  "kenh_de_xuat": "YT_CHINH_SHORTS",
+  "trang_thai": "CHO_ANH_DUYET",
+  "gio_goi_y": "2026-11-28T11:30+07:00",
+  "title": "VietinBank cam kết 313.000 tỷ cho một dự án: đã giải ngân chưa? | Chứng Khoán Huy Nguyễn",
+  "mo_ta": "VietinBank có thư cam kết tài trợ có điều kiện 313.000 tỷ cho dự án Đại lộ Cảnh quan Sông Hồng (chưa cấp hạn mức, chưa giải ngân); dư nợ liên quan bất động sản khoảng 415.443 tỷ, 19,4% tổng dư nợ; lãi trước thuế 9 tháng +33,9%, nợ xấu 1,2%.\nNguồn: Người Quan Sát 19/11/2026 (dẫn báo cáo Vietcap).\nKỹ thuật (MA20/MA50, cản/hỗ trợ) tính từ giá đóng cửa thật 6 tháng, chỉ mô tả, không phải khuyến nghị.\nQuan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [
+   "CTG",
+   "VietinBank",
+   "cổ phiếu CTG",
+   "dư nợ bất động sản",
+   "ngân hàng",
+   "tin nóng chứng khoán",
+   "Shorts",
+   "Chứng Khoán Huy Nguyễn"
+  ],
+  "file_video": "video-out:reel2311/ctg.mp4",
+  "file_bia": "video-out:reel2311/ctg_bia.jpg",
+  "file_nguon": "ctg_nguon.txt",
+  "reel_the_cfg": "_video/reel_the/ctg.json",
+  "do_dai": "99,8 s (gồm outro 3s không lời)",
+  "canh_ky_thuat": "MA20 cắt lên MA50 9/11; cản 31,6–32; hỗ trợ 28,9–29,8; KL đột biến 5/11",
+  "do_to": "-13 LUFS (ebur128)",
+  "canh_goc_nhin": "Chờ 3 tín hiệu (tỷ trọng BĐS không tăng, nợ xấu dưới 1,8%, vượt cản 32); chốt: THEO DÕI TỶ TRỌNG / VÀ CHẤT LƯỢNG NỢ",
+  "lich": {
+   "yt_chinh_shorts": "2026-11-28T11:30+07:00",
+   "tiktok_chinh": "2026-11-28T19:30+07:00",
+   "fb_reel": null
+  }
+ },
+ "FRT": {
+  "ma": "FRT",
+  "hook": [
+   "LONG CHÂU GẤP 18 LẦN",
+   "FPT SHOP?"
+  ],
+  "kenh_de_xuat": "YT_CHINH_SHORTS",
+  "trang_thai": "CHO_ANH_DUYET",
+  "gio_goi_y": "2026-11-29T11:30+07:00",
+  "title": "Long Châu định giá gấp 18 lần FPT Shop? Vietcap nói gì | Chứng Khoán Huy Nguyễn",
+  "mo_ta": "Theo báo cáo Vietcap 17/11/2026, vốn chủ sở hữu Long Châu ước 44.429 tỷ, FPT Shop 2.427 tỷ (gấp khoảng 18,3 lần); nhóm nhân viên nắm 11,03% Long Châu (~4.901 tỷ); ESOP 5% vốn giả định 5 đợt. Đây là định giá ước tính, không phải giá giao dịch.\nNguồn: CafeF 19/11/2026.\nKỹ thuật (MA20/MA50, cản/hỗ trợ) tính từ giá đóng cửa thật 6 tháng, chỉ mô tả, không phải khuyến nghị.\nQuan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [
+   "FRT",
+   "FPT Retail",
+   "Long Châu",
+   "FPT Shop",
+   "cổ phiếu FRT",
+   "tin nóng chứng khoán",
+   "Shorts",
+   "Chứng Khoán Huy Nguyễn"
+  ],
+  "file_video": "video-out:reel2311/frt.mp4",
+  "file_bia": "video-out:reel2311/frt_bia.jpg",
+  "file_nguon": "frt_nguon.txt",
+  "reel_the_cfg": "_video/reel_the/frt.json",
+  "do_dai": "99,0 s (gồm outro 3s không lời)",
+  "canh_ky_thuat": "MA20 cắt lên MA50 11/8; cản 152–154,8; hỗ trợ 138–140; KL cao nhất 15 phiên 2/11",
+  "do_to": "-13 LUFS (ebur128)",
+  "canh_goc_nhin": "Chờ 3 tín hiệu (doanh thu quý IV, ESOP đúng lộ trình, vượt cản 154,8); chốt: ĐỊNH GIÁ CẦN SỐ THẬT",
+  "lich": {
+   "yt_chinh_shorts": "2026-11-29T11:30+07:00",
+   "tiktok_chinh": "2026-11-29T19:30+07:00",
+   "fb_reel": null
+  }
+ },
+ "HVN": {
+  "ma": "HVN",
+  "hook": [
+   "34 HÃNG BAY",
+   "XIN LÙI LONG THÀNH?"
+  ],
+  "kenh_de_xuat": "YT_CHINH_SHORTS",
+  "trang_thai": "CHO_ANH_DUYET",
+  "gio_goi_y": "2026-11-30T11:30+07:00",
+  "title": "34 hãng bay xin lùi chuyển sang Long Thành, cổ phiếu HVN ra sao? | Chứng Khoán Huy Nguyễn",
+  "mo_ta": "34 hãng bay quốc tế muốn lùi thời điểm chuyển từ Tân Sơn Nhất sang Long Thành (24 hãng từ mùa đông 2027, 10 hãng từ mùa hè 2028 hoặc muộn hơn), cần 6–12 tháng chuẩn bị; giai đoạn đầu tối đa 366 chuyến/tuần, quốc tế 44.\nNguồn: Vietnambiz 19/11/2026; Tin nhanh chứng khoán 21/11/2026.\nKỹ thuật (MA20/MA50, cản/hỗ trợ) tính từ giá đóng cửa thật 6 tháng, chỉ mô tả, không phải khuyến nghị.\nQuan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [
+   "HVN",
+   "Vietnam Airlines",
+   "sân bay Long Thành",
+   "cổ phiếu HVN",
+   "hàng không",
+   "tin nóng chứng khoán",
+   "Shorts",
+   "Chứng Khoán Huy Nguyễn"
+  ],
+  "file_video": "video-out:reel2311/hvn.mp4",
+  "file_bia": "video-out:reel2311/hvn_bia.jpg",
+  "file_nguon": "hvn_nguon.txt",
+  "reel_the_cfg": "_video/reel_the/hvn.json",
+  "do_dai": "91,6 s (gồm outro 3s không lời)",
+  "canh_ky_thuat": "MA20 cắt lên MA50 10/11; cản 23,1–23,4; hỗ trợ 20,15–20,25; KL tăng vọt 19/11",
+  "do_to": "-13 LUFS (ebur128)",
+  "canh_goc_nhin": "Chờ 3 tín hiệu (chốt lịch chuyển, vượt cản 23,4, số chuyến tăng dần); chốt: CHỜ LỊCH CHUYỂN / CHỐT CHÍNH THỨC",
+  "lich": {
+   "yt_chinh_shorts": "2026-11-30T11:30+07:00",
+   "tiktok_chinh": "2026-11-30T19:30+07:00",
+   "fb_reel": null
+  }
+ },
+ "VHM": {
+  "ma": "VHM",
+  "hook": [
+   "GIÁ RAO GIẢM 14%",
+   "CHUNG CƯ HÀ NỘI?"
+  ],
+  "kenh_de_xuat": "YT_CHINH_SHORTS",
+  "trang_thai": "CHO_ANH_DUYET",
+  "gio_goi_y": "2026-12-01T11:30+07:00",
+  "title": "Giá rao chung cư Hà Nội giảm tới 14% một quý: người mua đâu? | Chứng Khoán Huy Nguyễn",
+  "mo_ta": "Giá rao 10 dự án chung cư Hà Nội đều giảm quý III/2026, mạnh nhất -14% (The Sapphire, Lumi Hanoi); mặt bằng chung cư -4%, đất nền -11%; CBRE: giao dịch sơ cấp 9 tháng giảm khoảng 30%.\nNguồn: Vietnambiz 20/11/2026 (Batdongsan.com.vn, CBRE, Vietcap).\nKỹ thuật (MA20/MA50, cản/hỗ trợ) tính từ giá đóng cửa thật 6 tháng, chỉ mô tả, không phải khuyến nghị.\nQuan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [
+   "VHM",
+   "Vinhomes",
+   "giá chung cư Hà Nội",
+   "bất động sản",
+   "cổ phiếu VHM",
+   "tin nóng chứng khoán",
+   "Shorts",
+   "Chứng Khoán Huy Nguyễn"
+  ],
+  "file_video": "video-out:reel2311/vhm.mp4",
+  "file_bia": "video-out:reel2311/vhm_bia.jpg",
+  "file_nguon": "vhm_nguon.txt",
+  "reel_the_cfg": "_video/reel_the/vhm.json",
+  "do_dai": "99,4 s (gồm outro 3s không lời)",
+  "canh_ky_thuat": "MA20 cắt xuống MA50 30/9; cản 63,9–64,9; hỗ trợ 57,6–58,9; đáy 57,6 ngày 20/10",
+  "do_to": "-13 LUFS (ebur128)",
+  "canh_goc_nhin": "Chờ 3 tín hiệu (sơ cấp quý IV cải thiện, giá rao ngừng giảm, vượt cản 64,9); chốt: THANH KHOẢN / QUAN TRỌNG HƠN GIÁ RAO",
+  "lich": {
+   "yt_chinh_shorts": "2026-12-01T11:30+07:00",
+   "tiktok_chinh": "2026-12-01T19:30+07:00",
+   "fb_reel": null
+  }
+ },
+ "TCB": {
+  "ma": "TCB",
+  "hook": [
+   "7.500 TỶ TRONG 1 TUẦN",
+   "LÃI GẦN 9%?"
+  ],
+  "kenh_de_xuat": "YT_CHINH_SHORTS",
+  "trang_thai": "CHO_ANH_DUYET",
+  "gio_goi_y": "2026-12-02T11:30+07:00",
+  "title": "Techcombank huy động 7.500 tỷ trái phiếu trong 1 tuần, lãi gần 9% | Chứng Khoán Huy Nguyễn",
+  "mo_ta": "Techcombank phát hành 3 lô trái phiếu riêng lẻ kỳ hạn 36 tháng, mỗi lô 2.500 tỷ (12/11 lãi 9%, 17/11 và 18/11 lãi 8,9%/năm), tổng 7.500 tỷ; lãi suất cho vay bình quân vượt 11%/năm, nợ xấu toàn ngành 9 tháng 2,3%.\nNguồn: Mekong ASEAN 20/11/2026; VietnamFinance 20/11/2026; MarketTimes 20/11/2026.\nKỹ thuật (MA20/MA50, cản/hỗ trợ) tính từ giá đóng cửa thật 6 tháng, chỉ mô tả, không phải khuyến nghị.\nQuan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [
+   "TCB",
+   "Techcombank",
+   "trái phiếu ngân hàng",
+   "cổ phiếu TCB",
+   "lãi suất",
+   "tin nóng chứng khoán",
+   "Shorts",
+   "Chứng Khoán Huy Nguyễn"
+  ],
+  "file_video": "video-out:reel2311/tcb.mp4",
+  "file_bia": "video-out:reel2311/tcb_bia.jpg",
+  "file_nguon": "tcb_nguon.txt",
+  "reel_the_cfg": "_video/reel_the/tcb.json",
+  "do_dai": "98,3 s (gồm outro 3s không lời)",
+  "canh_ky_thuat": "MA20 cắt xuống MA50 19/11; cản 21,8–22,8; hỗ trợ 20,15–20,6; giá hồi 21,2 ngày 20/11",
+  "do_to": "-13 LUFS (ebur128)",
+  "canh_goc_nhin": "Chờ 3 tín hiệu (lãi suất huy động hạ nhiệt, vượt cản 22,8, nợ xấu ngành ngừng tăng); chốt: VỐN RẺ HƠN / LỢI NHUẬN DỄ THỞ",
+  "lich": {
+   "yt_chinh_shorts": "2026-12-02T11:30+07:00",
+   "tiktok_chinh": "2026-12-02T19:30+07:00",
+   "fb_reel": null
+  }
+ }
+}

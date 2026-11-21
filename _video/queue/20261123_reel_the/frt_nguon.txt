@@ -1,0 +1,4 @@
+FRT - nguon so lieu (tra 22/11/2026)
+- Bao cao cap nhat 17/11/2026 cua Vietcap: von chu so huu Long Chau 44.429 ty, FPT Shop 2.427 ty (gap ~18,3 lan); nang dinh gia +4% (Long Chau), +34% (FPT Shop) so voi bao cao thang 9; co cau so huu cuoi Q3/2026: FPT Retail 75,97%, Creador ~13%, nhom nhan vien 11,03% (~4.901 ty); ESOP 5% von gia dinh 5 dot, moi nam 1% giai doan 2026-2030, FPT Retail co the ~72% nam 2030: CafeF 19/11/2026 "Vietcap dinh gia Long Chau hon 44.000 ty dong, gap 18 lan FPT Shop". Day la dinh gia uoc tinh, khong phai gia giao dich.
+- Gia FRT: dinh dong cua 152.000 d (21/10/2026), 20/11 148.000 d (-3%): data/c/FRT.bin.
+- Canh ky thuat tu gia dong cua that (data/c/*.bin); chi mo ta, khong phai khuyen nghi.
