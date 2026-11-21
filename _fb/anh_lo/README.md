@@ -40,3 +40,10 @@ Kiểu ảnh anh Huy chọn (FB chính từng lên view nhiều): màn hình app
 - Viết bài ở facebook.com/post/create?locale=vi_VN → mục "Chia sẻ lên nhóm" → giữ/chọn 9 nhóm chứng khoán (FB giới hạn 9) → Đăng. Đăng NGAY (khi chọn nhóm, nút Lên lịch bị khoá).
 - Ảnh: device_stage_files ảnh từ máy anh (file ai\anh_fb) rồi file_upload đường dẫn /mnt/user-data/uploads/... (đường dẫn D:\ và /mnt/user-data/outputs bị từ chối; fetch raw.githubusercontent bị CSP chặn).
 - Sau khi đăng: bình luận đầu phân tích 2 chiều dưới bài.
+
+## VĂN PHONG ANH HUY (21/11 – anh sửa: "không là ko, được là đc")
+- Viết tắt như anh: ko (không), đc (được), cp (cổ phiếu), cty (công ty), 1 (một) với số đếm.
+- Câu ngắn, nói thẳng, hơi cà khịa, ít văn hoa/ẩn dụ dài. Dùng "???" khi bức xúc/mỉa. Tối đa 1 emoji (🥲) cuối bài.
+- Xưng "Huy" trong bài công khai, gọi "mọi người"/"anh chị". Không "ạ", không lời lẽ kiểu báo chí.
+- Mở "TIN SỐC MỚI NHẬN!!!" khi có tin nóng thật; kết bằng 1 câu đùa tình huống hoặc câu hỏi mở.
+- Caption bài FPT 21/11 theo văn phong này: _fb/anh_lo/out/FPT_2111.txt (dùng bản này khi đăng 20:00).
