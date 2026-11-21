@@ -5,3 +5,8 @@ Kiểu ảnh anh Huy chọn (FB chính từng lên view nhiều): màn hình app
 - Câu meme ≤ 22 ký tự, không hô mua/bán, không dự báo.
 - Chạy: sửa data.py (chuỗi giá đóng cửa, chỉ số phiên mua, số lượng, meme) → python3 data.py && python3 anh_lo.py lo.json
 - Caption FB: dòng đầu IN HOA gây tò mò ("TIN SỐC MỚI NHẬN!!!"), không link/Zalo/hashtag.
+
+## Bản chuẩn (anh Huy 21/11): chart ngày giống chungkhoanhuynguyen.com
+- Dùng _fb/anh_lo/chart_web: nền trắng, nến xanh #1f8a57 / đỏ #c43c32, MA20 cam, MA50 tím, khối lượng dưới (lightweight-charts lwc.js của web).
+- ohlc.txt: "MÃ MM-DD open high low close volume" (WiData eod_adjust ~6 tháng) → python3 lam.py → node shot.js (copy lwc.js từ gốc repo vào cùng thư mục).
+- Bố cục: tên + giá + % đổi, câu meme khung đen, chart ngày. Không thẻ lãi/lỗ, không chú thích cuối, không điểm mua/bán. Ảnh người thật: anh Huy tự chèn khi đăng.
