@@ -6,7 +6,7 @@ body{margin:0;width:1080px;height:1080px;background:#fff;font-family:Inter,sans-
 .r1 b{font:700 40px Inter;display:block}.r1 span{font:500 26px Inter;color:#9aa3b5}
 .gp{text-align:right}.gp .g{font:800 58px/1 Inter}.gp .c{font:700 30px Inter;margin-top:6px}
 .st{display:flex;gap:28px;margin-top:10px;font:500 21px Inter;color:#9aa3b5}.st b{color:#fff;font-weight:700;margin-left:8px}
-.hook{background:#fff;border-bottom:3px solid #1d1726;padding:16px 22px;text-align:center;font:800 46px/1.18 Inter,'Noto Color Emoji';letter-spacing:-.5px}
+.hook{background:#fff;border-bottom:3px solid #1d1726;padding:16px 22px;text-align:center;font:900 60px/1.15 Inter,'Noto Color Emoji';letter-spacing:-1px}.hook span{background:#ffd23f;padding:0 12px;border-radius:8px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 #ch{position:absolute;left:6px;right:392px;top:VAR_TOP;bottom:40px}
 .lg{position:absolute;left:24px;top:calc(VAR_TOP + 8px);z-index:3;font:600 23px Inter;display:flex;gap:24px}
 #ov{position:absolute;left:0;top:0;width:1080px;height:1080px;z-index:4;pointer-events:none}
@@ -32,7 +32,7 @@ ten.textContent=D.ten;sym.textContent=D.ma+':HSX';gia.textContent=D.gia.toFixed(
 chg.textContent=(up?'+':'')+D.ch.toFixed(2)+' / '+(up?'+':'')+D.pct.toFixed(2)+'%';chg.style.color=col;
 var L=D.bars[D.bars.length-1],P=D.bars[D.bars.length-2];
 st.innerHTML='Tham chiếu<b>'+P.close.toFixed(2)+'</b>  Mở cửa<b>'+L.open.toFixed(2)+'</b>  Thấp–Cao<b>'+L.low.toFixed(2)+' – '+L.high.toFixed(2)+'</b>  KL<b>'+(L.volume/1e6).toFixed(2)+' tr</b>';
-hook.textContent=D.hook;var fs=46;while(hook.scrollHeight>80&&fs>30){fs-=2;hook.style.fontSize=fs+'px'}
+var hp=D.hook.split('|');hook.innerHTML=hp[0]+(hp[1]?'<br><span>'+hp[1]+'</span>':'');var fs=60;while(hook.scrollHeight>(hp[1]?190:100)&&fs>34){fs-=2;hook.style.fontSize=fs+'px'}
 function sma(c,n){return c.map(function(_,i){if(i<n-1)return null;var s=0;for(var j=i-n+1;j<=i;j++)s+=c[j];return s/n})}
 var el=document.getElementById('ch');if(!D.pn)el.style.right='6px';var t0=document.querySelector('.top').offsetHeight+document.querySelector('.hook').offsetHeight+10;
 el.style.top=t0+'px';document.querySelector('.lg').style.top=(t0+8)+'px';
@@ -48,7 +48,7 @@ k.setData(b.map(function(x){return{time:x.time,open:x.open,high:x.high,low:x.low
 var v=ch.addSeries(LightweightCharts.HistogramSeries,{priceFormat:{type:'volume'},priceScaleId:'vol',lastValueVisible:false,priceLineVisible:false});
 v.priceScale().applyOptions({scaleMargins:{top:.84,bottom:0},visible:false});
 v.setData(b.map(function(x){return{time:x.time,value:x.volume,color:x.close>=x.open?'rgba(31,138,87,.32)':'rgba(196,60,50,.32)'}}));
-[[20,'#d08a1e','l20'],[50,'#6a2d86','l50']].forEach(function(q){var m=sma(c,q[0]);var s=ch.addSeries(LightweightCharts.LineSeries,{color:q[1],lineWidth:4,priceLineVisible:false,lastValueVisible:false,crosshairMarkerVisible:false});
+[[20,'#d08a1e','l20'],[50,'#6a2d86','l50']].forEach(function(q){var m=sma(c,q[0]);var s=ch.addSeries(LightweightCharts.LineSeries,{color:q[1],lineWidth:3,priceLineVisible:false,lastValueVisible:false,crosshairMarkerVisible:false});
  s.setData(b.map(function(x,i){return m[i]==null?{time:x.time}:{time:x.time,value:m[i]}}));document.getElementById(q[2]).textContent='MA'+q[0]+' '+m[m.length-1].toFixed(2)});
 (D.muc||[]).forEach(function(m){k.createPriceLine({price:m.gia,color:'#5f5a69',lineWidth:1,lineStyle:2,axisLabelVisible:true,title:m.ten})});
 ch.timeScale().fitContent();
@@ -57,15 +57,15 @@ setTimeout(function(){
  h+='<defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#e3242b"/></marker></defs>';
  var W=el.clientWidth-90;
  (D.vung||[]).forEach(function(z){var y1=k.priceToCoordinate(z.tren)+oy,y2=k.priceToCoordinate(z.duoi)+oy;
-  h+='<rect x="'+ox+'" y="'+y1+'" width="'+W+'" height="'+(y2-y1)+'" fill="'+(z.mau||'rgba(196,60,50,.18)')+'"/>';
-  h+='<text x="'+(z.trai?ox+10:ox+W-10)+'" y="'+(z.trai?y2+24:y1-8)+'" text-anchor="'+(z.trai?'start':'end')+'" font-family="Inter" font-weight="800" font-size="26" fill="'+(z.mauChu||'#7a2620')+'">'+z.ten+'</text>'});
+  h+='<rect x="'+ox+'" y="'+y1+'" width="'+W+'" height="'+(y2-y1)+'" fill="'+(z.mau||'rgba(196,60,50,.10)')+'"/>';
+  h+='<text x="'+(z.trai?ox+10:ox+W-10)+'" y="'+(z.trai?y2+24:y1-8)+'" text-anchor="'+(z.trai?'start':'end')+'" font-family="Inter" font-weight="600" font-size="19" fill="'+(z.mauChu||'#7a2620')+'">'+z.ten+'</text>'});
  (D.diem||[]).forEach(function(p){var x=ch.timeScale().timeToCoordinate(p.t)+ox,y=k.priceToCoordinate(p.g)+oy;
-  var lx=x+p.dx,ly=y+p.dy,w=p.chu.length*14.2+30;
-  h+='<line x1="'+x+'" y1="'+y+'" x2="'+lx+'" y2="'+ly+'" stroke="#1d1726" stroke-width="2.5"/>';
-  h+='<circle cx="'+x+'" cy="'+y+'" r="9" fill="#ffd23f" stroke="#1d1726" stroke-width="3.5"/>';
+  var lx=x+p.dx,ly=y+p.dy,w=p.chu.length*10.6+24;
+  h+='<line x1="'+x+'" y1="'+y+'" x2="'+lx+'" y2="'+ly+'" stroke="#1d1726" stroke-width="1.5"/>';
+  h+='<circle cx="'+x+'" cy="'+y+'" r="6" fill="#fff" stroke="#1d1726" stroke-width="2.5"/>';
   var bx=p.dx>=0?lx:lx-w;var mx=ox+el.clientWidth-70-w;if(bx>mx)bx=mx;if(bx<ox+4)bx=ox+4;
-  h+='<rect x="'+bx+'" y="'+(ly-23)+'" width="'+w+'" height="46" rx="23" fill="#1d1726"/>';
-  h+='<text x="'+(bx+15)+'" y="'+(ly+9)+'" font-family="Inter" font-weight="800" font-size="25" fill="#fff">'+p.chu+'</text>'});
+  h+='<rect x="'+bx+'" y="'+(ly-17)+'" width="'+w+'" height="34" rx="17" fill="#1d1726"/>';
+  h+='<text x="'+(bx+12)+'" y="'+(ly+7)+'" font-family="Inter" font-weight="600" font-size="18" fill="#fff">'+p.chu+'</text>'});
  var P=D.pn,Q=D.kq;
  if(P){pn.innerHTML='<h4>Góc nhìn kỹ thuật</h4>'+P.dong.map(function(r){return '<div><b>'+r[0]+'</b><span>'+r[1]+'</span></div>'}).join('');pn.style.left='706px';pn.style.top=(oy)+'px'}
  if(Q){var vc={neg:['#b42318','#fde7e5','#f6c1bc','Tiêu cực'],mid:['#8a6410','#fbf1d9','#ecd59c','Trung tính'],pos:['#0f7a43','#e3f7ea','#b7e6c8','Tích cực']}[Q.v];
@@ -79,7 +79,7 @@ setTimeout(function(){
   p.chu.forEach(function(l,i){h+='<text x="'+tx+'" y="'+(ty+10+i*40)+'" text-anchor="'+(p.dx>0?'start':'end')+'" font-family="Inter" font-weight="800" font-size="32" fill="#d1121b" stroke="#fff" stroke-width="6" paint-order="stroke">'+l+'</text>'})});
  if(D.fib){var a=D.fib[0],z=D.fib[1];[0.236,0.382,0.5,0.618].forEach(function(r){var g=z+(a-z)*r,y=k.priceToCoordinate(g)+oy;
   h+='<line x1="'+ox+'" y1="'+y+'" x2="'+(ox+el.clientWidth-80)+'" y2="'+y+'" stroke="#8a8496" stroke-width="1.2" stroke-dasharray="6 5"/>';
-  h+='<text x="'+(ox+8)+'" y="'+(y-6)+'" font-family="Inter" font-weight="700" font-size="20" fill="#4a4555">Fibo '+r.toFixed(3).replace(/0+$/,'').replace('.',',')+' · '+g.toFixed(1).replace('.',',')+'</text>'})}
+  h+='<text x="'+(ox+8)+'" y="'+(y-6)+'" font-family="Inter" font-weight="600" font-size="17" fill="#6f6a7a">Fibo '+r.toFixed(3).replace(/0+$/,'').replace('.',',')+' · '+g.toFixed(1).replace('.',',')+'</text>'})}
  if(D.emo){h+='<text x="'+D.emo[1]+'" y="'+D.emo[2]+'" font-size="170" font-family="Noto Color Emoji">'+D.emo[0]+'</text>'}
  ov.innerHTML=h;document.title='xong'},500);
 </script></body></html>
