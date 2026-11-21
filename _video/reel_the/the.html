@@ -4,19 +4,19 @@
 @font-face{font-family:BV;font-weight:700;src:url(FONT/BeVietnamPro-Bold.ttf)}
 @font-face{font-family:BV;font-weight:800;src:url(FONT/BeVietnamPro-ExtraBold.ttf)}
 @font-face{font-family:BV;font-weight:900;src:url(FONT/BeVietnamPro-Black.ttf)}
-:root{--bg:#14101f;--card:#f6f1e7;--ink:#1b1630;--y:#ffd23f;--r:#c43c32;--g:#1f8a57;--mut:#8f88a6}
+:root{--bg:#0b1220;--card:#f6f1e7;--ink:#1b1630;--y:#ffd23f;--r:#c43c32;--g:#1f8a57;--mut:#8f88a6}
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{width:1080px;height:1920px;overflow:hidden;background:var(--bg);font-family:BV,sans-serif;color:#f6f1e7}
-#root{position:absolute;left:0;top:0;width:1080px;height:1920px;overflow:hidden;background:radial-gradient(900px 700px at 80% 10%,#241a3d 0,transparent 70%),var(--bg)}
+#root{position:absolute;left:0;top:0;width:1080px;height:1920px;overflow:hidden;background:linear-gradient(180deg,#111827 0,#0b1220 100%)}
 .abs{position:absolute}
-.logo{left:64px;top:56px;width:68px;height:68px;border:4px solid var(--y);border-radius:16px;color:var(--y);font-weight:900;font-size:34px;display:flex;align-items:center;justify-content:center;letter-spacing:1px}
-.handle{left:152px;top:68px;font-size:30px;font-weight:700;letter-spacing:.3px}
-.date{right:64px;top:64px;font-size:30px;font-weight:800;color:var(--ink);background:var(--y);padding:8px 22px;border-radius:40px}
+.logo{left:0;width:1080px;top:50px;display:flex;justify-content:center;align-items:center;gap:20px;color:var(--y);font-weight:900;font-size:40px;letter-spacing:3px}.logo i{width:62px;height:62px;border-radius:50%;background:var(--y);color:#111827;font-style:normal;display:flex;align-items:center;justify-content:center;font-size:32px;letter-spacing:0}
+.handle{left:0;width:1080px;text-align:center;top:122px;font-size:24px;font-weight:700;letter-spacing:.5px;color:#8f9ab3}
+.date{right:48px;top:62px;font-size:26px;font-weight:800;color:var(--y);border:3px solid var(--y);padding:5px 16px;border-radius:30px}
 .pill{left:0;width:1080px;top:168px;display:flex;justify-content:center}
-.pill span{background:var(--y);color:var(--ink);font-weight:900;font-size:32px;letter-spacing:3px;padding:12px 38px;border-radius:50px}
-.card{background:var(--card);color:var(--ink);border-radius:28px;position:absolute;left:64px;width:952px;box-shadow:0 18px 50px rgba(0,0,0,.35);overflow:hidden}
-.web{left:0;width:1080px;top:1800px;text-align:center;font-size:27px;font-weight:700;color:var(--mut);letter-spacing:.6px}
-.disc{right:40px;top:1862px;font-size:17px;font-weight:500;color:#6d6684;text-align:right}
+.pill span{color:var(--y);font-weight:800;font-size:30px;letter-spacing:4px;display:flex;align-items:center;gap:22px}.pill span:before,.pill span:after{content:'';width:90px;height:3px;background:var(--y)}.chot{left:0;width:1080px;top:1660px;text-align:center;font-weight:900;line-height:1.1}
+.card{border:5px solid #ffd23f;background:var(--card);color:var(--ink);border-radius:28px;position:absolute;left:64px;width:952px;box-shadow:0 18px 50px rgba(0,0,0,.35);overflow:hidden}
+.web{left:0;width:1080px;top:1846px;text-align:center;font-size:27px;font-weight:700;color:var(--mut);letter-spacing:.6px}
+.disc{right:40px;top:1886px;font-size:17px;font-weight:500;color:#6d6684;text-align:right}
 .sub{left:60px;width:960px;top:1440px;display:flex;justify-content:center}
 .sub div{background:rgba(8,6,16,.78);border-radius:26px;padding:26px 34px;font-size:50px;line-height:1.28;font-weight:800;text-align:center;max-width:960px;text-wrap:balance}
 .sub b{color:var(--y);font-weight:900}
@@ -24,7 +24,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:var(--bg);font-f
 .lbl{font-size:30px;font-weight:800;letter-spacing:2px;color:#6d6684}
 .big{font-weight:900;line-height:1}
 </style></head><body><div id="root">
-<div class="abs logo">HN</div><div class="abs handle" id="handle"></div><div class="abs date" id="date"></div>
+<div class="abs logo"><i>H</i>HUY NGUYỄN</div><div class="abs handle" id="handle"></div><div class="abs date" id="date"></div>
 <div id="scenes"></div>
 <div class="abs sub" id="sub"></div>
 <div class="abs web" id="web"></div><div class="abs disc" id="disc"></div>
@@ -84,6 +84,10 @@ C.scenes.forEach(cf=>{
       const e=$(`<div class="abs" style="left:0;width:1080px;top:${l.y}px;display:flex;justify-content:center"><div style="font-weight:900;white-space:nowrap;font-size:${l.co}px;line-height:1.05;${l.nen?`background:var(--y);color:var(--ink);padding:6px 36px;border-radius:24px;`:`color:${l.vang?'var(--y)':l.do?'#ff5a4a':'#f6f1e7'};`}">${l.t}</div></div>`,root);
       rev(e,at(l.at),.4,'pop')});
   }
+  if(cf.dau){const e=$(`<div class="abs" style="left:560px;top:1290px;border:10px solid #ff5a4a;border-radius:18px;padding:6px 30px 14px;color:#ff5a4a;font-weight:900;text-align:center;background:rgba(11,18,32,.6)"><div style="font-size:34px;letter-spacing:3px">${cf.dau.nhan}</div><div style="font-size:130px;line-height:1">${cf.dau.t}</div></div>`,root);rev(e,at(cf.dau.at),.35,'stamp')}
+  if(cf.chot){const q=$(`<div class="abs chot"><div style="font-size:54px;color:#fff">${cf.chot.a}</div><div style="font-size:46px;margin-top:6px;color:${cf.chot.do?'#ff5a4a':'#ffd23f'}">${cf.chot.b}</div></div>`,root);rev(q,at(cf.chot.at),.5)}
+  if(cf.kieu==='lk'){const k=$(`<div class="card" style="top:300px;height:1060px;padding:44px 50px"><div style="font-size:50px;font-weight:900;color:${cf.mau||'#1f8a57'};letter-spacing:1px">${cf.tieude}</div><div style="height:5px;background:#ffd23f;margin:22px 0 10px"></div></div>`,root);rev(k,sc.a+.2,.55);
+    cf.muc.forEach((m,i)=>{const e=$(`<div style="display:flex;gap:30px;align-items:center;margin-top:46px"><div style="flex:none;width:96px;height:96px;border:7px solid #1b1630;border-radius:18px;background:#ffd23f;display:flex;align-items:center;justify-content:center"><svg width="64" height="64" viewBox="0 0 64 64"><path d="M10 34 L26 50 L55 14" fill="none" stroke="#1b1630" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div style="font-size:${m.co||56}px;font-weight:900;line-height:1.12;color:${m.mau||'#1b1630'}">${m.t}</div><div style="font-size:34px;font-weight:700;margin-top:8px;color:#4a4463">${m.s||''}</div></div></div>`,k);rev(e,at(m.at),.5)})}
   if(cf.kieu==='tin'){ // tít báo + chart
     const k=$(`<div class="card" style="top:290px;height:320px;padding:38px 48px"><div class="lbl">TÍT BÁO · ${cf.tin.moc}</div><div style="font-size:60px;font-weight:900;line-height:1.12;margin-top:18px">${cf.tin.t}</div></div>`,root);rev(k,at(cf.tin.at),.55);
     const c=$('<div class="card" style="top:650px;height:700px"></div>',root);rev(c,at(cf.chart.at),.55);
@@ -129,7 +133,7 @@ const disc=document.getElementById('disc');disc.textContent=C.disclaimer;disc.st
 const subEl=document.getElementById('sub');
 window.setT=function(t){
   SC.forEach(s=>{const f=.38;const o=Math.min(cl((t-(s.a-.2))/f),cl(((s.b+.2)-t)/f));s.root.style.opacity=o;s.root.style.display=o<=0?'none':'block'});
-  REV.forEach(r=>{const p=eo((t-r.t0)/r.dur);r.el.style.opacity=p;r.el.style.transform=r.kind==='pop'?`scale(${.8+.2*p}) translateY(${(1-p)*30}px)`:`translateY(${(1-p)*26}px)`});
+  REV.forEach(r=>{const p=eo((t-r.t0)/r.dur);r.el.style.opacity=p;r.el.style.transform=r.kind==='stamp'?`rotate(-11deg) scale(${1.7-.7*p})`:r.kind==='pop'?`scale(${.8+.2*p}) translateY(${(1-p)*30}px)`:`translateY(${(1-p)*26}px)`});
   CNT.forEach(c=>{const p=eo((t-c.t0)/c.dur);c.el.textContent=(t<c.t0?fmt(0,c.dec):fmt(c.v*p,c.dec))});
   ANI.forEach(f=>f(t));
   CH.forEach(c=>{c.c.upd(t);if(c.drift)c.drift.style.transform=`translateX(${-t*14}px)`});

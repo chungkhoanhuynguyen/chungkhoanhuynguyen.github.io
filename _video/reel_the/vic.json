@@ -1,47 +1,527 @@
 {
- "ma": "VIC", "gia_n": 125, "kenh": "@chungkhoanhuynguyen", "ngay": "21/11", "web": "chungkhoanhuynguyen.com",
+ "ma": "VIC",
+ "gia_n": 125,
+ "kenh": "@chungkhoanhuynguyen",
+ "ngay": "21/11",
+ "web": "chungkhoanhuynguyen.com",
  "disclaimer": "Quan điểm cá nhân, không phải khuyến nghị đầu tư",
  "scenes": [
-  {"id": "S1", "kieu": "hook",
+  {
+   "id": "S1",
+   "kieu": "hook",
    "dong": [
-    {"t": "VIC", "co": 400, "y": 330, "at": 0.0},
-    {"t": "873.000 TỶ", "co": 118, "y": 790, "at": [0, 0.4], "nen": 1},
-    {"t": "VẪN ĐỨNG GIÁ", "co": 112, "y": 960, "at": [1, 0.3]},
-    {"t": "VÌ SAO?", "co": 150, "y": 1150, "at": [2, 0.0], "do": 1}],
-   "phude": [["Vingroup vừa trúng gói metro", "**873.000 tỷ**"], ["Vậy mà cổ phiếu **VIC**", "gần như **đứng im**"], ["**Vì sao?**"]]},
-  {"id": "S2", "kieu": "tin", "chuong": "TIN ĐÃ CŨ",
-   "tin": {"moc": "CUỐI T6/2026", "t": "Vinhomes làm tổng thầu 5 tuyến metro", "at": [0, 0.3]},
-   "chart": {"at": [0, 0.5], "dur": 4.0, "opt": {"ymin": 180, "ymax": 290, "step": 20},
+    {
+     "t": "VIC",
+     "co": 400,
+     "y": 330,
+     "at": 0.0
+    },
+    {
+     "t": "873.000 TỶ",
+     "co": 118,
+     "y": 790,
+     "at": [
+      0,
+      0.4
+     ],
+     "nen": 1
+    },
+    {
+     "t": "VẪN ĐỨNG GIÁ",
+     "co": 112,
+     "y": 960,
+     "at": [
+      1,
+      0.3
+     ]
+    },
+    {
+     "t": "VÌ SAO?",
+     "co": 150,
+     "y": 1150,
+     "at": [
+      2,
+      0.0
+     ],
+     "do": 1
+    }
+   ],
+   "phude": [
+    [
+     "Vingroup vừa trúng gói metro",
+     "**873.000 tỷ**"
+    ],
+    [
+     "Vậy mà cổ phiếu **VIC**",
+     "gần như **đứng im**"
+    ],
+    [
+     "**Vì sao?**"
+    ]
+   ],
+   "dau": {
+    "nhan": "VIC PHIÊN 20/11",
+    "t": "+0,79%",
+    "at": [
+     2,
+     0.5
+    ]
+   }
+  },
+  {
+   "id": "S2",
+   "kieu": "tin",
+   "chuong": "— TIN ĐÃ CŨ —",
+   "tin": {
+    "moc": "CUỐI T6/2026",
+    "t": "Vinhomes làm tổng thầu 5 tuyến metro",
+    "at": [
+     0,
+     0.3
+    ]
+   },
+   "chart": {
+    "at": [
+     0,
+     0.5
+    ],
+    "dur": 4.0,
+    "opt": {
+     "ymin": 180,
+     "ymax": 290,
+     "step": 20
+    },
     "marks": [
-     {"t": "2026-06-24", "g": 242, "dx": 40, "dy": -60, "chu": "Cuối T6: +20%", "vang": 1, "at": [2, 0.2]},
-     {"t": "2026-11-20", "g": 241.9, "dx": -30, "dy": -190, "chu": "20/11: chính thức", "at": [2, 0.9]}]},
-   "phude": [["Thứ nhất, **tin này không mới**"], ["Từ **cuối tháng 6**, báo đã đưa tin", "Vinhomes làm tổng thầu **5 tuyến metro**"], ["Chỉ trong tuần đó,", "VIC tăng gần **20%**"]]},
-  {"id": "S3", "kieu": "so", "chuong": "CON SỐ THỰC TẾ",
+     {
+      "t": "2026-06-24",
+      "g": 242,
+      "dx": 40,
+      "dy": -60,
+      "chu": "Cuối T6: +20%",
+      "vang": 1,
+      "at": [
+       2,
+       0.2
+      ]
+     },
+     {
+      "t": "2026-11-20",
+      "g": 241.9,
+      "dx": -30,
+      "dy": -190,
+      "chu": "20/11: chính thức",
+      "at": [
+       2,
+       0.9
+      ]
+     }
+    ]
+   },
+   "phude": [
+    [
+     "Thứ nhất, **tin này không mới**"
+    ],
+    [
+     "Từ **cuối tháng 6**, báo đã đưa tin",
+     "Vinhomes làm tổng thầu **5 tuyến metro**"
+    ],
+    [
+     "Chỉ trong tuần đó,",
+     "VIC tăng gần **20%**"
+    ]
+   ],
+   "chot": {
+    "a": "TIN CŨ",
+    "b": "GIÁ ĐÃ CHẠY TRƯỚC",
+    "at": [
+     2,
+     0.5
+    ]
+   }
+  },
+  {
+   "id": "S3",
+   "kieu": "so",
+   "chuong": "— CON SỐ THỰC TẾ —",
    "the": [
-    {"nhan": "TỔNG MỨC ĐẦU TƯ · HÀ NỘI CÔNG BỐ 20/11", "so": 873224, "dec": 0, "dv": "TỶ", "co": 170, "y": 300, "h": "400px", "at": [0, 0.25]},
-    {"nhan": "CHIỀU DÀI", "so": 253.5, "dec": 1, "dv": "KM", "co": 96, "y": 740, "h": "300px", "x": 64, "w": 462, "at": [0, 0.55]},
-    {"nhan": "THI CÔNG", "so": 51, "dec": 0, "dv": "THÁNG", "co": 96, "y": 740, "h": "300px", "x": 554, "w": 462, "at": [0, 0.8]},
-    {"nhan": "VIC PHIÊN 20/11", "so": 0.79, "dec": 2, "tien": "+", "hau": "%", "mau": "#1f8a57", "co": 130, "y": 1080, "h": "290px", "sub": "Khối lượng thấp nhất 1 tháng", "at": [1, 0.1]}],
-   "phude": [["Ngày **20/11**, Hà Nội mới công bố chính thức:", "**873.224 tỷ**, dài **253,5 km**", "làm trong **51 tháng**"], ["Phiên đó VIC chỉ tăng **+0,79%**", "khối lượng **thấp nhất 1 tháng**"]]},
-  {"id": "S4", "kieu": "ds", "chuong": "NHÀ VIN CẦN TIỀN",
-   "ket": {"nhan": "CẦN VỐN", "xu": [{"t": "+14.600 tỷ", "at": [1, 0.0], "tu": "trai"}, {"t": "+3.000 tỷ", "at": [2, 0.0], "tu": "phai"}]},
+    {
+     "nhan": "TỔNG MỨC ĐẦU TƯ · HÀ NỘI CÔNG BỐ 20/11",
+     "so": 873224,
+     "dec": 0,
+     "dv": "TỶ",
+     "co": 170,
+     "y": 300,
+     "h": "400px",
+     "at": [
+      0,
+      0.25
+     ]
+    },
+    {
+     "nhan": "CHIỀU DÀI",
+     "so": 253.5,
+     "dec": 1,
+     "dv": "KM",
+     "co": 96,
+     "y": 740,
+     "h": "300px",
+     "x": 64,
+     "w": 462,
+     "at": [
+      0,
+      0.55
+     ]
+    },
+    {
+     "nhan": "THI CÔNG",
+     "so": 51,
+     "dec": 0,
+     "dv": "THÁNG",
+     "co": 96,
+     "y": 740,
+     "h": "300px",
+     "x": 554,
+     "w": 462,
+     "at": [
+      0,
+      0.8
+     ]
+    },
+    {
+     "nhan": "VIC PHIÊN 20/11",
+     "so": 0.79,
+     "dec": 2,
+     "tien": "+",
+     "hau": "%",
+     "mau": "#1f8a57",
+     "co": 130,
+     "y": 1080,
+     "h": "290px",
+     "sub": "Khối lượng thấp nhất 1 tháng",
+     "at": [
+      1,
+      0.1
+     ]
+    }
+   ],
+   "phude": [
+    [
+     "Ngày **20/11**, Hà Nội mới công bố chính thức:",
+     "**873.224 tỷ**, dài **253,5 km**",
+     "làm trong **51 tháng**"
+    ],
+    [
+     "Phiên đó VIC chỉ tăng **+0,79%**",
+     "khối lượng **thấp nhất 1 tháng**"
+    ]
+   ],
+   "chot": {
+    "a": "CON SỐ KHỔNG LỒ",
+    "b": "GIÁ CHỈ +0,79%",
+    "at": [
+     1,
+     0.5
+    ]
+   }
+  },
+  {
+   "id": "S4",
+   "kieu": "ds",
+   "chuong": "— NHÀ VIN CẦN TIỀN —",
+   "ket": {
+    "nhan": "CẦN VỐN",
+    "xu": [
+     {
+      "t": "+14.600 tỷ",
+      "at": [
+       1,
+       0.0
+      ],
+      "tu": "trai"
+     },
+     {
+      "t": "+3.000 tỷ",
+      "at": [
+       2,
+       0.0
+      ],
+      "tu": "phai"
+     }
+    ]
+   },
    "muc": [
-    {"so": "+14.600 tỷ", "t": "Xanh SM tăng vốn chỉ trong 1 tháng", "at": [1, 0.0]},
-    {"so": "+3.000 tỷ", "t": "Vinhomes tính huy động trái phiếu", "at": [2, 0.0]},
-    {"so": "873.000 tỷ", "t": "= giá trị hợp đồng xây dựng, KHÔNG phải lãi", "mau": "#c43c32", "at": [3, 0.0]}],
-   "phude": [["Thứ hai, nhà Vin đang", "**cần rất nhiều tiền**"], ["Xanh SM tăng vốn thêm", "gần **14.600 tỷ** trong **1 tháng**"], ["Vinhomes tính huy động thêm", "**3.000 tỷ** trái phiếu"], ["Và nhớ: **873.000 tỷ** là giá trị", "hợp đồng xây dựng, **không phải lãi**"]]},
-  {"id": "S5", "kieu": "chart", "chuong": "KỸ THUẬT",
-   "opt": {"from": 45, "ymin": 190, "ymax": 280, "step": 10, "dur": 3.0},
-   "marks": [{"t": "2026-11-13", "g": 239.8, "dx": -40, "dy": 160, "chu": "13/11: MA20 cắt lên MA50", "vang": 1, "at": [0, 0.35]}],
+    {
+     "so": "+14.600 tỷ",
+     "t": "Xanh SM tăng vốn chỉ trong 1 tháng",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "so": "+3.000 tỷ",
+     "t": "Vinhomes tính huy động trái phiếu",
+     "at": [
+      2,
+      0.0
+     ]
+    },
+    {
+     "so": "873.000 tỷ",
+     "t": "= giá trị hợp đồng xây dựng, KHÔNG phải lãi",
+     "mau": "#c43c32",
+     "at": [
+      3,
+      0.0
+     ]
+    }
+   ],
+   "phude": [
+    [
+     "Thứ hai, nhà Vin đang",
+     "**cần rất nhiều tiền**"
+    ],
+    [
+     "Xanh SM tăng vốn thêm",
+     "gần **14.600 tỷ** trong **1 tháng**"
+    ],
+    [
+     "Vinhomes tính huy động thêm",
+     "**3.000 tỷ** trái phiếu"
+    ],
+    [
+     "Và nhớ: **873.000 tỷ** là giá trị",
+     "hợp đồng xây dựng, **không phải lãi**"
+    ]
+   ],
+   "chot": {
+    "a": "873.000 TỶ",
+    "b": "KHÔNG PHẢI LÃI",
+    "do": 1,
+    "at": [
+     3,
+     0.5
+    ]
+   }
+  },
+  {
+   "id": "S5",
+   "kieu": "chart",
+   "chuong": "— KỸ THUẬT —",
+   "opt": {
+    "from": 45,
+    "ymin": 190,
+    "ymax": 280,
+    "step": 10,
+    "dur": 3.0
+   },
+   "marks": [
+    {
+     "t": "2026-11-13",
+     "g": 239.8,
+     "dx": -40,
+     "dy": -210,
+     "chu": "13/11: MA20 cắt lên MA50",
+     "vang": 1,
+     "at": [
+      0,
+      0.35
+     ]
+    }
+   ],
    "vung": [
-    {"lo": 246, "hi": 251, "mau": "#c43c32", "txt": "CẢN 246–251", "at": [1, 0.0]},
-    {"lo": 227, "hi": 234.3, "mau": "#1f8a57", "txt": "HỖ TRỢ 227–234", "at": [2, 0.0], "lbl_below": 1}],
-   "phude": [["Về kỹ thuật, **MA20 cắt lên MA50**", "đáy sau cao hơn đáy trước"], ["Nhưng vùng **246–251**", "đã 2 lần chạm mà không qua"], ["Hỗ trợ gần là **227–234**"]]},
-  {"id": "S6", "kieu": "ket", "chuong": "KẾT",
+    {
+     "lo": 246,
+     "hi": 251,
+     "mau": "#c43c32",
+     "txt": "CẢN 246–251",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "lo": 227,
+     "hi": 234.3,
+     "mau": "#1f8a57",
+     "txt": "HỖ TRỢ 227–234",
+     "at": [
+      2,
+      0.0
+     ],
+     "lbl_below": 1
+    }
+   ],
+   "phude": [
+    [
+     "Về kỹ thuật, **MA20 cắt lên MA50**",
+     "đáy sau cao hơn đáy trước"
+    ],
+    [
+     "Nhưng vùng **246–251**",
+     "đã 2 lần chạm mà không qua"
+    ],
+    [
+     "Hỗ trợ gần là **227–234**"
+    ]
+   ],
+   "chot": {
+    "a": "CẢN 246–251",
+    "b": "2 LẦN CHƯA QUA",
+    "do": 1,
+    "at": [
+     2,
+     0.4
+    ]
+   }
+  },
+  {
+   "id": "S5A",
+   "kieu": "lk",
+   "chuong": "— HAI PHE —",
+   "tieude": "PHE LẠC QUAN NHÌN THẤY",
+   "mau": "#1f8a57",
+   "muc": [
+    {
+     "t": "MA20 cắt lên MA50",
+     "s": "Xu hướng ngắn hạn cải thiện",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "Đáy sau cao hơn: 206 → 227",
+     "s": "Lực bán yếu dần",
+     "at": [
+      2,
+      0.0
+     ]
+    },
+    {
+     "t": "Hợp đồng 873.224 tỷ",
+     "s": "Gói thầu lớn, chính thức",
+     "at": [
+      3,
+      0.0
+     ]
+    }
+   ],
+   "phude": [
+    [
+     "Phe **lạc quan** nhìn thấy 3 điều"
+    ],
+    [
+     "**MA20** cắt lên **MA50**"
+    ],
+    [
+     "Đáy sau cao hơn: **206 → 227**"
+    ],
+    [
+     "Và hợp đồng **873.224 tỷ**"
+    ]
+   ]
+  },
+  {
+   "id": "S5B",
+   "kieu": "lk",
+   "chuong": "— HAI PHE —",
+   "tieude": "PHE THẬN TRỌNG NHÌN THẤY",
+   "mau": "#c43c32",
+   "muc": [
+    {
+     "t": "Cản 246–251: 2 lần chưa qua",
+     "s": "Vùng giá nhiều người chốt",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "Khối lượng thấp nhất 1 tháng",
+     "s": "Tin ra mà dòng tiền không vào",
+     "at": [
+      2,
+      0.0
+     ]
+    },
+    {
+     "t": "Nhà Vin cần rất nhiều vốn",
+     "s": "Xanh SM, trái phiếu Vinhomes",
+     "at": [
+      3,
+      0.0
+     ]
+    }
+   ],
+   "chot": {
+    "a": "HAI PHE ĐỀU CÓ LÝ",
+    "b": "GIÁ SẼ LÀ NGƯỜI CHỌN",
+    "at": [
+     3,
+     0.5
+    ]
+   },
+   "phude": [
+    [
+     "Phe **thận trọng** cũng thấy 3 điều"
+    ],
+    [
+     "Vùng **246–251**, 2 lần chưa qua"
+    ],
+    [
+     "Khối lượng **thấp nhất 1 tháng**"
+    ],
+    [
+     "Và nhà Vin **cần rất nhiều vốn**"
+    ]
+   ]
+  },
+  {
+   "id": "S6",
+   "kieu": "ket",
+   "chuong": "— KẾT —",
    "the": [
-    {"nhan": "ÔNG VƯỢNG LÀM", "t": "5 TUYẾN METRO", "at": [0, 0.2]},
-    {"nhan": "CỔ ĐÔNG VIC MỚI LÀM ĐƯỢC", "t": "1 TUYẾN: GỒNG", "mau": "#c43c32", "at": [1, 0.35]}],
-   "hoi": {"t": "Tin **đã cũ** thì giá còn lý do gì để chạy?", "at": [2, 0.0]},
-   "phude": [["Ông Vượng làm **5 tuyến metro**"], ["Cổ đông VIC mới làm được **1 tuyến**:", "**tuyến gồng**"], ["Anh chị thấy **tin đã cũ**", "thì giá còn lý do gì để chạy?"]]}
+    {
+     "nhan": "ÔNG VƯỢNG LÀM",
+     "t": "5 TUYẾN METRO",
+     "co": 88,
+     "at": [
+      0,
+      0.2
+     ]
+    },
+    {
+     "nhan": "CỔ ĐÔNG VIC MỚI LÀM ĐƯỢC",
+     "t": "1 TUYẾN: GỒNG",
+     "co": 88,
+     "mau": "#c43c32",
+     "at": [
+      1,
+      0.35
+     ]
+    }
+   ],
+   "hoi": {
+    "t": "Tin **đã cũ** thì giá còn lý do gì để chạy?",
+    "at": [
+     2,
+     0.0
+    ]
+   },
+   "phude": [
+    [
+     "Ông Vượng làm **5 tuyến metro**"
+    ],
+    [
+     "Cổ đông VIC mới làm được **1 tuyến**:",
+     "**tuyến gồng**"
+    ],
+    [
+     "Anh chị thấy **tin đã cũ**",
+     "thì giá còn lý do gì để chạy?"
+    ]
+   ]
+  }
  ]
 }
