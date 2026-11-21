@@ -29,12 +29,17 @@
   },
   {
    "id": "S5A",
-   "say": "Phe lạc quan thấy ba điều. Lãi chín tháng tăng hơn hai mươi hai phần trăm. P B còn khoảng một phẩy bảy lần, thấp hơn trung vị hai phẩy tám lần. Giá chưa thủng đáy năm mươi ngày hai mươi.",
+   "say": "Lãi chín tháng tăng hơn hai mươi hai phần trăm. P B còn khoảng một phẩy bảy lần, thấp hơn trung vị hai phẩy tám lần. Giá chưa thủng đáy năm mươi ngày hai mươi.",
    "hold": 0.3
   },
   {
    "id": "S5B",
-   "say": "Phe thận trọng cũng thấy ba điều. Khối ngoại bán ròng mười bốn trên mười lăm phiên. Đường trung bình hai mươi dưới đường năm mươi từ bảy tháng mười. Và nợ xấu toàn ngành lên hai phẩy ba phần trăm.",
+   "say": "Khối ngoại bán ròng mười bốn trên mười lăm phiên. Đường trung bình hai mươi dưới đường năm mươi từ bảy tháng mười. Và nợ xấu toàn ngành lên hai phẩy ba phần trăm.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5C",
+   "say": "Góc nhìn của mình: chờ ba tín hiệu. Một, khối ngoại ngừng bán ròng. Hai, giá giữ được hỗ trợ năm mươi nghìn đồng. Ba, đường trung bình hai mươi cắt lên lại đường năm mươi.",
    "hold": 0.3
   },
   {

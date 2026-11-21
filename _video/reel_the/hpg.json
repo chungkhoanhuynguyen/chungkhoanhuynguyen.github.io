@@ -173,7 +173,7 @@
      ],
      "tien": "-",
      "hau": "%",
-     "mau": "#c43c32",
+     "mau": "#c9533e",
      "sub": "Giá 20/11: 20.450 đ"
     }
    ],
@@ -224,7 +224,7 @@
      "so": "CẢ NGÀNH",
      "t": "Hoa Sen, Nam Kim, Tôn Đông Á cũng chịu rủi ro tỷ giá",
      "co": 84,
-     "mau": "#c43c32",
+     "mau": "#c9533e",
      "at": [
       1,
       0.85
@@ -290,7 +290,7 @@
     {
      "lo": 21.5,
      "hi": 21.9,
-     "mau": "#c43c32",
+     "mau": "#c9533e",
      "txt": "CẢN 21,5–21,9",
      "at": [
       1,
@@ -300,7 +300,7 @@
     {
      "lo": 19.6,
      "hi": 20.15,
-     "mau": "#1f8a57",
+     "mau": "#3fa877",
      "txt": "HỖ TRỢ 19,6–20,15",
      "at": [
       1,
@@ -338,13 +338,13 @@
    "kieu": "lk",
    "chuong": "— HAI PHE —",
    "tieude": "PHE LẠC QUAN NHÌN THẤY",
-   "mau": "#1f8a57",
+   "mau": "#3fa877",
    "muc": [
     {
      "t": "Chi phí chuyển sang giá bán",
      "s": "Phần lớn, theo TCBS Research",
      "at": [
-      1,
+      0,
       0.0
      ]
     },
@@ -352,7 +352,7 @@
      "t": "Độ trễ khoảng 93 ngày",
      "s": "Có thời gian điều chỉnh",
      "at": [
-      2,
+      1,
       0.0
      ]
     },
@@ -360,15 +360,12 @@
      "t": "MA20 cắt lên MA50",
      "s": "Ngày 10/11",
      "at": [
-      3,
+      2,
       0.0
      ]
     }
    ],
    "phude": [
-    [
-     "Phe **lạc quan** nhìn thấy 3 điều"
-    ],
     [
      "Chi phí **chuyển sang giá bán**"
     ],
@@ -385,13 +382,13 @@
    "kieu": "lk",
    "chuong": "— HAI PHE —",
    "tieude": "PHE THẬN TRỌNG NHÌN THẤY",
-   "mau": "#c43c32",
+   "mau": "#c9533e",
    "muc": [
     {
      "t": "Giá giảm, KL tăng 18/11",
      "s": "Cản gần 21,5–21,9",
      "at": [
-      1,
+      0,
       0.0
      ]
     },
@@ -399,7 +396,7 @@
      "t": "VND yếu 1%: LNST giảm 3,7%",
      "s": "Theo tính toán của TCBS",
      "at": [
-      2,
+      1,
       0.0
      ]
     },
@@ -407,7 +404,7 @@
      "t": "Giá HPG giảm 16% từ đỉnh",
      "s": "Đỉnh 24.350 đ, nay 20.450 đ",
      "at": [
-      3,
+      2,
       0.0
      ]
     }
@@ -416,14 +413,11 @@
     "a": "HAI PHE ĐỀU CÓ LÝ",
     "b": "TỶ GIÁ LÀ ẨN SỐ",
     "at": [
-     3,
+     2,
      0.5
     ]
    },
    "phude": [
-    [
-     "Phe **thận trọng** cũng thấy 3 điều"
-    ],
     [
      "Giá giảm, **KL tăng** ngày 18/11"
     ],
@@ -432,6 +426,62 @@
     ],
     [
      "Giá giảm **16%** từ đỉnh"
+    ]
+   ]
+  },
+  {
+   "id": "S5C",
+   "kieu": "lk",
+   "chuong": "— GÓC NHÌN CỦA MÌNH —",
+   "tieude": "CHỜ 3 TÍN HIỆU",
+   "mau": "#a67c1a",
+   "muc": [
+    {
+     "t": "Tỷ giá ổn định lại",
+     "s": "Giảm áp lực giá vốn",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "Giá vượt cản 21,9",
+     "s": "Vùng cản 21,5–21,9",
+     "at": [
+      2,
+      0.0
+     ]
+    },
+    {
+     "t": "Giá thép trong nước tăng",
+     "s": "Chi phí chuyển sang giá bán",
+     "at": [
+      3,
+      0.0
+     ]
+    }
+   ],
+   "chot": {
+    "a": "THÉP KHỎE",
+    "b": "KHI TỶ GIÁ ĐỨNG YÊN",
+    "at": [
+     3,
+     0.5
+    ]
+   },
+   "phude": [
+    [
+     "Góc nhìn của mình:",
+     "chờ **3 tín hiệu**"
+    ],
+    [
+     "**Tỷ giá** ổn định lại"
+    ],
+    [
+     "Giá vượt cản **21,9**"
+    ],
+    [
+     "**Giá thép** trong nước tăng"
     ]
    ]
   },
@@ -453,7 +503,7 @@
      "nhan": "TỶ GIÁ",
      "t": "KHÔNG BÁO TRƯỚC",
      "co": 70,
-     "mau": "#c43c32",
+     "mau": "#c9533e",
      "at": [
       1,
       0.35
@@ -481,6 +531,11 @@
      "cái nào khó đoán hơn?"
     ]
    ]
+  },
+  {
+   "id": "OUT",
+   "kieu": "outro",
+   "phude": []
   }
  ]
 }

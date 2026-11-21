@@ -174,7 +174,7 @@
       1,
       0.1
      ],
-     "mau": "#c43c32",
+     "mau": "#c9533e",
      "hau": " tỷ",
      "sub": "14 phiên bán ròng trong 15 phiên"
     }
@@ -206,7 +206,7 @@
     {
      "so": "+22%",
      "t": "Lãi trước thuế 9 tháng: 40.440 tỷ",
-     "mau": "#1f8a57",
+     "mau": "#3fa877",
      "at": [
       0,
       0.3
@@ -223,7 +223,7 @@
     {
      "so": "543 triệu cp",
      "t": "Kế hoạch phát hành riêng lẻ, chưa công bố giá",
-     "mau": "#c43c32",
+     "mau": "#c9533e",
      "co": 80,
      "at": [
       2,
@@ -295,7 +295,7 @@
     {
      "lo": 57.5,
      "hi": 58.4,
-     "mau": "#c43c32",
+     "mau": "#c9533e",
      "txt": "CẢN 57,5–58,4",
      "at": [
       1,
@@ -305,7 +305,7 @@
     {
      "lo": 50.0,
      "hi": 50.8,
-     "mau": "#1f8a57",
+     "mau": "#3fa877",
      "txt": "HỖ TRỢ 50,0–50,8",
      "at": [
       1,
@@ -343,13 +343,13 @@
    "kieu": "lk",
    "chuong": "— HAI PHE —",
    "tieude": "PHE LẠC QUAN NHÌN THẤY",
-   "mau": "#1f8a57",
+   "mau": "#3fa877",
    "muc": [
     {
      "t": "Lãi 9 tháng tăng hơn 22%",
      "s": "Lợi nhuận trước thuế 40.440 tỷ",
      "at": [
-      1,
+      0,
       0.0
      ]
     },
@@ -357,7 +357,7 @@
      "t": "P/B còn khoảng 1,7 lần",
      "s": "Thấp hơn trung vị 2,8 lần từ 2022",
      "at": [
-      2,
+      1,
       0.0
      ]
     },
@@ -365,15 +365,12 @@
      "t": "Chưa thủng đáy 50,0 (20/11)",
      "s": "Đóng cửa 50,2",
      "at": [
-      3,
+      2,
       0.0
      ]
     }
    ],
    "phude": [
-    [
-     "Phe **lạc quan** nhìn thấy 3 điều"
-    ],
     [
      "Lãi 9 tháng tăng **22%**"
     ],
@@ -392,13 +389,13 @@
    "kieu": "lk",
    "chuong": "— HAI PHE —",
    "tieude": "PHE THẬN TRỌNG NHÌN THẤY",
-   "mau": "#c43c32",
+   "mau": "#c9533e",
    "muc": [
     {
      "t": "Khối ngoại bán ròng 14/15 phiên",
      "s": "Hơn 950 tỷ từ đầu tháng 11",
      "at": [
-      1,
+      0,
       0.0
      ]
     },
@@ -406,7 +403,7 @@
      "t": "MA20 dưới MA50 từ 7/10",
      "s": "Xu hướng ngắn hạn yếu",
      "at": [
-      2,
+      1,
       0.0
      ]
     },
@@ -414,7 +411,7 @@
      "t": "Nợ xấu toàn ngành lên 2,3%",
      "s": "Theo VIS Rating, 9 tháng 2026",
      "at": [
-      3,
+      2,
       0.0
      ]
     }
@@ -423,14 +420,11 @@
     "a": "HAI PHE ĐỀU CÓ LÝ",
     "b": "GIÁ SẼ LÀ NGƯỜI TRẢ LỜI",
     "at": [
-     3,
+     2,
      0.5
     ]
    },
    "phude": [
-    [
-     "Phe **thận trọng** cũng thấy 3 điều"
-    ],
     [
      "Khối ngoại bán ròng **14/15 phiên**"
     ],
@@ -441,6 +435,62 @@
     [
      "Nợ xấu toàn ngành **2,3%**",
      "theo VIS Rating"
+    ]
+   ]
+  },
+  {
+   "id": "S5C",
+   "kieu": "lk",
+   "chuong": "— GÓC NHÌN CỦA MÌNH —",
+   "tieude": "CHỜ 3 TÍN HIỆU",
+   "mau": "#a67c1a",
+   "muc": [
+    {
+     "t": "Khối ngoại ngừng bán ròng",
+     "s": "Sau 14/15 phiên bán ròng",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "Giữ được hỗ trợ 50,0",
+     "s": "Vùng 50,0–50,8",
+     "at": [
+      2,
+      0.0
+     ]
+    },
+    {
+     "t": "MA20 cắt lên lại MA50",
+     "s": "Xu hướng ngắn hạn cải thiện",
+     "at": [
+      3,
+      0.0
+     ]
+    }
+   ],
+   "chot": {
+    "a": "CHƯA VỘI",
+    "b": "CHỜ NGOẠI QUAY ĐẦU",
+    "at": [
+     3,
+     0.5
+    ]
+   },
+   "phude": [
+    [
+     "Góc nhìn của mình:",
+     "chờ **3 tín hiệu**"
+    ],
+    [
+     "Khối ngoại **ngừng bán ròng**"
+    ],
+    [
+     "Giá giữ được hỗ trợ **50,0**"
+    ],
+    [
+     "**MA20** cắt lên lại **MA50**"
     ]
    ]
   },
@@ -462,7 +512,7 @@
      "nhan": "GIÁ CỔ PHIẾU ĐI",
      "t": "CẦU THANG",
      "co": 88,
-     "mau": "#c43c32",
+     "mau": "#c9533e",
      "at": [
       1,
       0.35
@@ -489,6 +539,11 @@
      "thị trường đang trả giá cho điều gì?"
     ]
    ]
+  },
+  {
+   "id": "OUT",
+   "kieu": "outro",
+   "phude": []
   }
  ]
 }

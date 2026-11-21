@@ -176,7 +176,7 @@
       1,
       0.1
      ],
-     "mau": "#c43c32",
+     "mau": "#c9533e",
      "hau": " đ",
      "sub": "Thấp hơn giá chào 20 đồng"
     }
@@ -224,7 +224,7 @@
     {
      "so": "GẤP 3,4 LẦN",
      "t": "So với thị giá 9.980 đ",
-     "mau": "#c43c32",
+     "mau": "#c9533e",
      "at": [
       2,
       0.0
@@ -294,7 +294,7 @@
     {
      "lo": 10.85,
      "hi": 11.0,
-     "mau": "#c43c32",
+     "mau": "#c9533e",
      "txt": "CẢN 10,85–11,0",
      "at": [
       1,
@@ -304,7 +304,7 @@
     {
      "lo": 9.6,
      "hi": 9.8,
-     "mau": "#1f8a57",
+     "mau": "#3fa877",
      "txt": "HỖ TRỢ 9,6–9,8",
      "at": [
       1,
@@ -342,13 +342,13 @@
    "kieu": "lk",
    "chuong": "— HAI PHE —",
    "tieude": "PHE LẠC QUAN NHÌN THẤY",
-   "mau": "#1f8a57",
+   "mau": "#3fa877",
    "muc": [
     {
      "t": "UBCK gia hạn đến 11/1/2027",
      "s": "Thêm thời gian hoàn tất đợt chào bán",
      "at": [
-      1,
+      0,
       0.0
      ]
     },
@@ -356,7 +356,7 @@
      "t": "Bán hết thu về 8.007 tỷ",
      "s": "Chủ yếu để trả nợ trái phiếu",
      "at": [
-      2,
+      1,
       0.0
      ]
     },
@@ -364,15 +364,12 @@
      "t": "Đáy 9,6 (30/9) chưa thủng",
      "s": "Giá thấp nhất gần đây 9,8",
      "at": [
-      3,
+      2,
       0.0
      ]
     }
    ],
    "phude": [
-    [
-     "Phe **lạc quan** nhìn thấy 3 điều"
-    ],
     [
      "UBCK gia hạn đến **11/1/2027**"
     ],
@@ -389,13 +386,13 @@
    "kieu": "lk",
    "chuong": "— HAI PHE —",
    "tieude": "PHE THẬN TRỌNG NHÌN THẤY",
-   "mau": "#c43c32",
+   "mau": "#c9533e",
    "muc": [
     {
      "t": "Đã lùi hạn 2 lần",
      "s": "Từ 29/10 sang 28/12",
      "at": [
-      1,
+      0,
       0.0
      ]
     },
@@ -403,7 +400,7 @@
      "t": "Thị giá dưới giá chào",
      "s": "Phiên 20/11: 9.980 đ",
      "at": [
-      2,
+      1,
       0.0
      ]
     },
@@ -411,7 +408,7 @@
      "t": "MA20 vẫn dưới MA50",
      "s": "Cắt xuống từ 17/9",
      "at": [
-      3,
+      2,
       0.0
      ]
     }
@@ -420,14 +417,11 @@
     "a": "HAI PHE ĐỀU CÓ LÝ",
     "b": "HẠN CUỐI: 28/12",
     "at": [
-     3,
+     2,
      0.5
     ]
    },
    "phude": [
-    [
-     "Phe **thận trọng** cũng thấy 3 điều"
-    ],
     [
      "Đã **lùi hạn 2 lần**"
     ],
@@ -436,6 +430,64 @@
     ],
     [
      "**MA20** vẫn dưới **MA50**"
+    ]
+   ]
+  },
+  {
+   "id": "S5C",
+   "kieu": "lk",
+   "chuong": "— GÓC NHÌN CỦA MÌNH —",
+   "tieude": "CHỜ 3 TÍN HIỆU",
+   "mau": "#a67c1a",
+   "muc": [
+    {
+     "t": "Kết quả đợt chào bán",
+     "s": "Hạn nộp tiền 28/12",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "Giá vượt cản 11,0",
+     "s": "Vùng cản 10,85–11,0",
+     "at": [
+      2,
+      0.0
+     ]
+    },
+    {
+     "t": "Khối lượng tăng khi giá lên",
+     "s": "Dòng tiền xác nhận",
+     "at": [
+      3,
+      0.0
+     ]
+    }
+   ],
+   "chot": {
+    "a": "CHƯA VỘI",
+    "b": "CHỜ KẾT QUẢ 28/12",
+    "at": [
+     3,
+     0.5
+    ]
+   },
+   "phude": [
+    [
+     "Góc nhìn của mình:",
+     "chờ **3 tín hiệu**"
+    ],
+    [
+     "**Kết quả** đợt chào bán",
+     "hạn **28/12**"
+    ],
+    [
+     "Giá vượt cản **11,0**"
+    ],
+    [
+     "**Khối lượng tăng**",
+     "khi giá đi lên"
     ]
    ]
   },
@@ -457,7 +509,7 @@
      "nhan": "VÍ CỔ ĐÔNG",
      "t": "CHƯA AI GIA HẠN",
      "co": 70,
-     "mau": "#c43c32",
+     "mau": "#c9533e",
      "at": [
       1,
       0.35
@@ -485,6 +537,11 @@
      "anh chị nghĩ cổ đông sẽ làm gì?"
     ]
    ]
+  },
+  {
+   "id": "OUT",
+   "kieu": "outro",
+   "phude": []
   }
  ]
 }

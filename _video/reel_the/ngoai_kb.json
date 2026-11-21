@@ -29,12 +29,17 @@
   },
   {
    "id": "S5A",
-   "say": "Phe lạc quan thấy ba điều. Phiên hai mươi, VN-Index chỉ giảm một điểm. Ngoại vẫn mua ròng POW một trăm năm mươi hai tỷ. Chỉ số chưa thủng đáy một nghìn sáu trăm sáu mươi sáu.",
+   "say": "Phiên hai mươi, VN-Index chỉ giảm một điểm. Ngoại vẫn mua ròng POW một trăm năm mươi hai tỷ. Chỉ số chưa thủng đáy một nghìn sáu trăm sáu mươi sáu.",
    "hold": 0.3
   },
   {
    "id": "S5B",
-   "say": "Phe thận trọng cũng thấy ba điều. Khối ngoại bán ròng bốn phiên liên tiếp. VN-Index dưới một nghìn bảy trăm, bốn trên năm phiên trong tuần giảm. Đường trung bình hai mươi dưới đường năm mươi từ ngày chín tháng mười.",
+   "say": "Khối ngoại bán ròng bốn phiên liên tiếp. VN-Index dưới một nghìn bảy trăm, bốn trên năm phiên trong tuần giảm. Đường trung bình hai mươi dưới đường năm mươi từ ngày chín tháng mười.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5C",
+   "say": "Góc nhìn của mình: chờ ba tín hiệu. Một, khối ngoại mua ròng trở lại. Hai, VN-Index giữ được một nghìn sáu trăm sáu mươi sáu. Ba, chỉ số vượt cản một nghìn bảy trăm tám mươi mốt.",
    "hold": 0.3
   },
   {

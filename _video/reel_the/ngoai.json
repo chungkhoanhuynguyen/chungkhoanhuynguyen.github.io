@@ -157,7 +157,7 @@
       0.85
      ],
      "tien": "-",
-     "mau": "#c43c32"
+     "mau": "#c9533e"
     },
     {
      "nhan": "FPT: 9 PHIÊN ĐỨNG ĐẦU CHIỀU BÁN",
@@ -170,7 +170,7 @@
       1,
       0.3
      ],
-     "mau": "#c43c32",
+     "mau": "#c9533e",
      "hau": " tỷ",
      "sub": "Lũy kế bán ròng 9 phiên liên tiếp"
     }
@@ -291,7 +291,7 @@
     {
      "lo": 1750,
      "hi": 1781,
-     "mau": "#c43c32",
+     "mau": "#c9533e",
      "txt": "CẢN 1.750–1.781",
      "at": [
       1,
@@ -301,7 +301,7 @@
     {
      "lo": 1666,
      "hi": 1690,
-     "mau": "#1f8a57",
+     "mau": "#3fa877",
      "txt": "HỖ TRỢ 1.666–1.690",
      "at": [
       1,
@@ -339,13 +339,13 @@
    "kieu": "lk",
    "chuong": "— HAI PHE —",
    "tieude": "PHE LẠC QUAN NHÌN THẤY",
-   "mau": "#1f8a57",
+   "mau": "#3fa877",
    "muc": [
     {
      "t": "Phiên 20/11 VN-Index chỉ −1 điểm",
      "s": "Lực cầu về cuối phiên thu hẹp đà giảm",
      "at": [
-      1,
+      0,
       0.0
      ]
     },
@@ -353,7 +353,7 @@
      "t": "Ngoại mua ròng POW 152 tỷ",
      "s": "Đi ngược xu hướng chung phiên 20/11",
      "at": [
-      2,
+      1,
       0.0
      ]
     },
@@ -361,15 +361,12 @@
      "t": "Chưa thủng đáy 1.666",
      "s": "Đáy trong phiên 20/11",
      "at": [
-      3,
+      2,
       0.0
      ]
     }
    ],
    "phude": [
-    [
-     "Phe **lạc quan** nhìn thấy 3 điều"
-    ],
     [
      "Phiên **20/11**, VN-Index chỉ **−1 điểm**"
     ],
@@ -388,13 +385,13 @@
    "kieu": "lk",
    "chuong": "— HAI PHE —",
    "tieude": "PHE THẬN TRỌNG NHÌN THẤY",
-   "mau": "#c43c32",
+   "mau": "#c9533e",
    "muc": [
     {
      "t": "Ngoại bán ròng 4 phiên liền",
      "s": "Tính đến phiên 20/11",
      "at": [
-      1,
+      0,
       0.0
      ]
     },
@@ -402,7 +399,7 @@
      "t": "VN-Index dưới 1.700",
      "s": "4 trên 5 phiên trong tuần giảm",
      "at": [
-      2,
+      1,
       0.0
      ]
     },
@@ -410,7 +407,7 @@
      "t": "MA20 dưới MA50 từ 9/10",
      "s": "Xu hướng ngắn hạn yếu",
      "at": [
-      3,
+      2,
       0.0
      ]
     }
@@ -419,14 +416,11 @@
     "a": "HAI PHE ĐỀU CÓ LÝ",
     "b": "DÒNG TIỀN SẼ LÊN TIẾNG",
     "at": [
-     3,
+     2,
      0.5
     ]
    },
    "phude": [
-    [
-     "Phe **thận trọng** cũng thấy 3 điều"
-    ],
     [
      "Ngoại bán ròng **4 phiên liền**"
     ],
@@ -437,6 +431,62 @@
     [
      "**MA20** dưới **MA50**",
      "từ **9/10**"
+    ]
+   ]
+  },
+  {
+   "id": "S5C",
+   "kieu": "lk",
+   "chuong": "— GÓC NHÌN CỦA MÌNH —",
+   "tieude": "CHỜ 3 TÍN HIỆU",
+   "mau": "#a67c1a",
+   "muc": [
+    {
+     "t": "Khối ngoại mua ròng trở lại",
+     "s": "Sau hơn 11 tháng bán ròng",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "VN-Index giữ 1.666",
+     "s": "Đáy phiên 20/11",
+     "at": [
+      2,
+      0.0
+     ]
+    },
+    {
+     "t": "Vượt cản 1.781",
+     "s": "Vùng cản 1.750–1.781",
+     "at": [
+      3,
+      0.0
+     ]
+    }
+   ],
+   "chot": {
+    "a": "CHƯA PHẢI LÚC ALL-IN",
+    "b": "CHỜ TIỀN NGOẠI",
+    "at": [
+     3,
+     0.5
+    ]
+   },
+   "phude": [
+    [
+     "Góc nhìn của mình:",
+     "chờ **3 tín hiệu**"
+    ],
+    [
+     "Khối ngoại **mua ròng trở lại**"
+    ],
+    [
+     "VN-Index giữ **1.666**"
+    ],
+    [
+     "Vượt cản **1.781**"
     ]
    ]
   },
@@ -458,7 +508,7 @@
      "nhan": "BẢNG ĐIỆN",
      "t": "VẪN SÁNG ĐÈN",
      "co": 87,
-     "mau": "#c43c32",
+     "mau": "#c9533e",
      "at": [
       1,
       0.35
@@ -486,6 +536,11 @@
      "**dòng tiền nào** sẽ lên tiếng?"
     ]
    ]
+  },
+  {
+   "id": "OUT",
+   "kieu": "outro",
+   "phude": []
   }
  ]
 }
