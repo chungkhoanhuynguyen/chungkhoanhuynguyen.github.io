@@ -1,0 +1,7 @@
+CẢNH BÁO cảnh 4: câu cụt thiếu chủ ngữ – "Câu hỏi đó không nhỏ."
+
+CẢNH BÁO whisper: 4 số trên phụ đề không nghe ra – nghe lại từng đoạn:
+  00:02:28 201 | nhưng cùng nhóm đó Việt Nam nhập về hơn 201 tỷ.
+  00:02:28 201.000.000.000 | nhưng cùng nhóm đó Việt Nam nhập về hơn 201 tỷ.
+  00:04:14 16 | Quán cơm của vợ lãi khoảng 16 triệu,
+  00:04:14 16.000.000 | Quán cơm của vợ lãi khoảng 16 triệu,

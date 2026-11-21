@@ -1,0 +1,19 @@
+total 58420
+drwxr-xr-x 2 runner runner     4096 Nov 20 02:09 .
+drwxr-xr-x 3 runner runner     4096 Nov 20 02:09 ..
+-rw-r--r-- 1 runner runner 43839540 Nov 20 02:09 BC2011VHM.mp4
+-rw-r--r-- 1 runner runner    15260 Nov 20 02:09 BC2011VHM.srt
+-rw-r--r-- 1 runner runner  6208018 Nov 20 02:09 BC2011VHM_R1.mp4
+-rw-r--r-- 1 runner runner  2537211 Nov 20 02:09 BC2011VHM_S1.mp4
+-rw-r--r-- 1 runner runner  3507112 Nov 20 02:09 BC2011VHM_S2.mp4
+-rw-r--r-- 1 runner runner  3106943 Nov 20 02:09 BC2011VHM_S3.mp4
+-rw-r--r-- 1 runner runner     2188 Nov 20 02:09 BC2011VHM_anh.txt
+-rw-r--r-- 1 runner runner   544818 Nov 20 02:09 BC2011VHM_bia.png
+-rw-r--r-- 1 runner runner     1774 Nov 20 02:09 BC2011VHM_canh.json
+-rw-r--r-- 1 runner runner      353 Nov 20 02:09 BC2011VHM_chuong.txt
+-rw-r--r-- 1 runner runner     1945 Nov 20 02:09 BC2011VHM_qc.txt
+-rw-r--r-- 1 runner runner      325 Nov 20 02:09 BC2011VHM_shorts.json
+-rw-r--r-- 1 runner runner     9467 Nov 20 02:09 BC2011VHM_wsp.txt
+-rw-r--r-- 1 runner runner        0 Nov 20 02:09 TRANG_THAI.txt
+-rw-r--r-- 1 runner runner     2895 Nov 20 02:09 meta.json
+run: https://github.com/chungkhoanhuynguyen/chungkhoanhuynguyen.github.io/actions/runs/44653717741

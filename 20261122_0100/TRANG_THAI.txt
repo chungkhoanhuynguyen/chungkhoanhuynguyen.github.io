@@ -1,0 +1,25 @@
+total 73848
+drwxr-xr-x 2 runner runner     4096 Nov 21 18:36 .
+drwxr-xr-x 3 runner runner     4096 Nov 21 18:36 ..
+-rw-r--r-- 1 runner runner 48090286 Nov 21 18:36 CH3011EN.mp4
+-rw-r--r-- 1 runner runner    18200 Nov 21 18:36 CH3011EN.srt
+-rw-r--r-- 1 runner runner 11129378 Nov 21 18:36 CH3011EN_R1.mp4
+-rw-r--r-- 1 runner runner  3428939 Nov 21 18:36 CH3011EN_S1.mp4
+-rw-r--r-- 1 runner runner  4774715 Nov 21 18:36 CH3011EN_S2.mp4
+-rw-r--r-- 1 runner runner  4829909 Nov 21 18:36 CH3011EN_S3.mp4
+-rw-r--r-- 1 runner runner      709 Nov 21 18:36 CH3011EN_anh.txt
+-rw-r--r-- 1 runner runner   489005 Nov 21 18:36 CH3011EN_bia.png
+-rw-r--r-- 1 runner runner   255723 Nov 21 18:36 CH3011EN_bia3.png
+-rw-r--r-- 1 runner runner   494425 Nov 21 18:36 CH3011EN_bia_b.png
+-rw-r--r-- 1 runner runner   480261 Nov 21 18:36 CH3011EN_bia_c.png
+-rw-r--r-- 1 runner runner     7038 Nov 21 18:36 CH3011EN_canh.json
+-rw-r--r-- 1 runner runner      317 Nov 21 18:36 CH3011EN_chuong.txt
+-rw-r--r-- 1 runner runner   925250 Nov 21 18:36 CH3011EN_khung1.png
+-rw-r--r-- 1 runner runner      570 Nov 21 18:36 CH3011EN_qc.txt
+-rw-r--r-- 1 runner runner      434 Nov 21 18:36 CH3011EN_shorts.json
+-rw-r--r-- 1 runner runner   620652 Nov 21 18:36 CH3011EN_shorts.png
+-rw-r--r-- 1 runner runner     2048 Nov 21 18:36 CH3011EN_soat.txt
+-rw-r--r-- 1 runner runner    10911 Nov 21 18:36 CH3011EN_wsp.txt
+-rw-r--r-- 1 runner runner        0 Nov 21 18:36 TRANG_THAI.txt
+-rw-r--r-- 1 runner runner     5904 Nov 21 18:36 meta.json
+run: https://github.com/chungkhoanhuynguyen/chungkhoanhuynguyen.github.io/actions/runs/44932091868

@@ -1,0 +1,21 @@
+total 58436
+drwxr-xr-x 2 runner runner     4096 Nov 20 02:19 .
+drwxr-xr-x 3 runner runner     4096 Nov 20 02:19 ..
+-rw-r--r-- 1 runner runner 40021514 Nov 20 02:19 NONG2011A.mp4
+-rw-r--r-- 1 runner runner    16404 Nov 20 02:19 NONG2011A.srt
+-rw-r--r-- 1 runner runner  9615193 Nov 20 02:19 NONG2011A_R1.mp4
+-rw-r--r-- 1 runner runner  2309397 Nov 20 02:19 NONG2011A_S1.mp4
+-rw-r--r-- 1 runner runner  3849070 Nov 20 02:19 NONG2011A_S2.mp4
+-rw-r--r-- 1 runner runner  2568417 Nov 20 02:19 NONG2011A_S3.mp4
+-rw-r--r-- 1 runner runner      448 Nov 20 02:19 NONG2011A_anh.txt
+-rw-r--r-- 1 runner runner   464067 Nov 20 02:19 NONG2011A_bia.png
+-rw-r--r-- 1 runner runner   460519 Nov 20 02:19 NONG2011A_bia_b.png
+-rw-r--r-- 1 runner runner   465052 Nov 20 02:19 NONG2011A_bia_c.png
+-rw-r--r-- 1 runner runner     3248 Nov 20 02:19 NONG2011A_canh.json
+-rw-r--r-- 1 runner runner      306 Nov 20 02:19 NONG2011A_chuong.txt
+-rw-r--r-- 1 runner runner      383 Nov 20 02:19 NONG2011A_qc.txt
+-rw-r--r-- 1 runner runner      429 Nov 20 02:19 NONG2011A_shorts.json
+-rw-r--r-- 1 runner runner     9187 Nov 20 02:19 NONG2011A_wsp.txt
+-rw-r--r-- 1 runner runner        0 Nov 20 02:19 TRANG_THAI.txt
+-rw-r--r-- 1 runner runner     4182 Nov 20 02:19 meta.json
+run: https://github.com/chungkhoanhuynguyen/chungkhoanhuynguyen.github.io/actions/runs/44652543115

@@ -1,0 +1,16 @@
+total 54804
+drwxr-xr-x 2 runner runner     4096 Nov 21 09:24 .
+drwxr-xr-x 3 runner runner     4096 Nov 21 09:24 ..
+-rw-r--r-- 1 runner runner 54149449 Nov 21 09:24 NONG2611A.mp4
+-rw-r--r-- 1 runner runner    18339 Nov 21 09:24 NONG2611A.srt
+-rw-r--r-- 1 runner runner     4040 Nov 21 09:24 NONG2611A_anh.txt
+-rw-r--r-- 1 runner runner   475625 Nov 21 09:24 NONG2611A_bia.png
+-rw-r--r-- 1 runner runner     3447 Nov 21 09:24 NONG2611A_canh.json
+-rw-r--r-- 1 runner runner      365 Nov 21 09:24 NONG2611A_chuong.txt
+-rw-r--r-- 1 runner runner  1411229 Nov 21 09:24 NONG2611A_khung1.png
+-rw-r--r-- 1 runner runner      577 Nov 21 09:24 NONG2611A_qc.txt
+-rw-r--r-- 1 runner runner     5236 Nov 21 09:24 NONG2611A_soat.txt
+-rw-r--r-- 1 runner runner    11283 Nov 21 09:24 NONG2611A_wsp.txt
+-rw-r--r-- 1 runner runner        0 Nov 21 09:24 TRANG_THAI.txt
+-rw-r--r-- 1 runner runner     7114 Nov 21 09:24 meta.json
+run: https://github.com/chungkhoanhuynguyen/chungkhoanhuynguyen.github.io/actions/runs/44886889256

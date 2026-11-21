@@ -1,0 +1,4 @@
+ĐẠT: khung đầu, âm lượng, phụ đề, ảnh bìa
+
+CẢNH BÁO whisper: 1 số trên phụ đề không nghe ra – nghe lại từng đoạn:
+  00:01:10 2.000.000 | Sản lượng dự kiến hơn 2 triệu tấn.

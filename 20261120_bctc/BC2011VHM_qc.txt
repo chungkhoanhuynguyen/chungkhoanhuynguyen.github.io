@@ -1,0 +1,25 @@
+CẢNH BÁO cảnh 1: câu quá dài (46 từ) – tách đôi
+CẢNH BÁO cảnh 1: câu quá dài (40 từ) – tách đôi
+CẢNH BÁO cảnh 2: câu quá dài (89 từ) – tách đôi
+CẢNH BÁO cảnh 2: câu quá dài (90 từ) – tách đôi
+CẢNH BÁO cảnh 3: câu quá dài (88 từ) – tách đôi
+CẢNH BÁO cảnh 3: câu quá dài (90 từ) – tách đôi
+CẢNH BÁO cảnh 4: câu quá dài (46 từ) – tách đôi
+CẢNH BÁO cảnh 5: câu quá dài (47 từ) – tách đôi
+LỖI cảnh 10: câu cuối phải là câu hỏi mở thuần, không xin bình luận
+LỖI cảnh 10: số lẻ 2 chữ số sau dấu phẩy ('tám phẩy tám mươi hai' ra phụ đề '8,8 12%' – CH2411NX V0; 'bốn phẩy mười lăm' NONG1711A) – nói làm tròn 1 chữ số, số chính xác để trên thẻ
+CẢNH BÁO rủi ro trình chiếu: 48% thời lượng hình đứng yên ≥2s – thêm chuyển động/thẻ số/nhân vật
+
+CẢNH BÁO whisper: 12 số trên phụ đề không nghe ra – nghe lại từng đoạn:
+  00:00:08 71.381 | Lũy kế chín tháng đạt 71.381 tỷ,
+  00:00:08 381.000.000.000 | Lũy kế chín tháng đạt 71.381 tỷ,
+  00:00:12 2.020 | Cổ phiếu đóng cửa ngày 2.020 sáuâm chínâm 30 ở
+  00:00:16 60.400 | khoảng 60,4 nghìn đồng,
+  00:00:46 2.020 | dữ liệu tổng hợp ngày 2.020 sáuâm chínâm 30.
+  00:01:04 689.000.000.000 | thấp nhất ở quý một năm 2025 với khoảng 2.689 tỷ,
+  00:02:22 102.178 | khoảng 102.178 tỷ,
+  00:02:31 102.178 | Bốn quý gần nhất lần lượt là quý bốn năm 2025 đạt 102.178 tỷ,
+  00:03:56 60.400 | Với giá khoảng 60,4 nghìn đồng,
+  00:04:41 42.600 | đáy khoảng 42,6 nghìn đồng.
+  00:04:45 31 | Người mua ở đỉnh cần cổ phiếu tăng khoảng 31% mới hòa vốn.
+  00:06:05 42.600 | nếu giá quay về đáy 52 tuần khoảng 42,6 nghìn đồng,

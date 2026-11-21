@@ -1,0 +1,7 @@
+CẢNH BÁO cảnh 2: câu cụt thiếu chủ ngữ – "Bà có nên ký không?"
+CẢNH BÁO cảnh 3: câu cụt thiếu chủ ngữ – "Lời mời đó không lạ."
+CẢNH BÁO cảnh 15: câu cụt thiếu chủ ngữ – "Giờ đến tờ giấy."
+CẢNH BÁO cảnh 19: câu cụt thiếu chủ ngữ – "Bà Tâm nhớ lần đó."
+CẢNH BÁO rủi ro trình chiếu: 32% thời lượng hình đứng yên ≥2s – thêm chuyển động/thẻ số/nhân vật
+
+WHISPER: khớp mọi con số trên phụ đề.

@@ -1,0 +1,7 @@
+CẢNH BÁO cảnh 11: câu cụt thiếu chủ ngữ – "Chị lo có lý do."
+CẢNH BÁO cảnh 15: câu cụt thiếu chủ ngữ – "Buổi trưa, chị đọc thêm."
+CẢNH BÁO cảnh 21: câu cụt thiếu chủ ngữ – "Còn hóa đơn?"
+CẢNH BÁO rủi ro trình chiếu: 34% thời lượng hình đứng yên ≥2s – thêm chuyển động/thẻ số/nhân vật
+
+CẢNH BÁO whisper: 1 số trên phụ đề không nghe ra – nghe lại từng đoạn:
+  00:02:37 1.000.000.000 | năm và tháng sáu năm đó gây thiệt hại khoảng 1 tỷ

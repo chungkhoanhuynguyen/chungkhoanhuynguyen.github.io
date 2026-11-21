@@ -1,0 +1,819 @@
+1
+00:00:00,000 --> 00:00:01,313
+Năm giờ 40 chiều qua,
+
+2
+00:00:01,313 --> 00:00:04,563
+chị Hằng vừa tắt máy tính ở phòng hồ sơ tín dụng của
+
+3
+00:00:04,563 --> 00:00:07,877
+một ngân hàng tại Hà Nội thì điện thoại hiện một tin.
+
+4
+00:00:07,877 --> 00:00:09,377
+Theo báo Người Quan Sát,
+
+5
+00:00:09,377 --> 00:00:12,315
+28 ngân hàng đã giảm 3.413 nhân sự chỉ sau chín
+
+6
+00:00:12,315 --> 00:00:13,190
+tháng năm nay.
+
+7
+00:00:13,190 --> 00:00:16,128
+Bài báo cũng dẫn lời lãnh đạo một số ngân hàng:
+
+8
+00:00:16,128 --> 00:00:19,567
+những việc mang tính lặp lại đang dần được tự động hoá.
+
+9
+00:00:19,567 --> 00:00:21,942
+Ngay sau đó là tin nhắn của chồng chị:
+
+10
+00:00:21,942 --> 00:00:22,942
+em xem tin chưa,
+
+11
+00:00:22,942 --> 00:00:24,193
+chỗ em có cắt không?
+
+12
+00:00:24,473 --> 00:00:27,721
+Con số làm chị Hằng giật mình nhất là 4.263.
+
+13
+00:00:27,721 --> 00:00:31,190
+Đó là số người Sacombank giảm trong chín tháng,
+
+14
+00:00:31,190 --> 00:00:32,371
+hơn 25% đội ngũ.
+
+15
+00:00:32,371 --> 00:00:34,659
+Chị làm nhập hồ sơ đã chín năm.
+
+16
+00:00:34,659 --> 00:00:38,424
+Việc của chị có nằm trong nhóm bị thay trước không?
+
+17
+00:00:38,424 --> 00:00:40,713
+Và đằng sau con số 3.400 người,
+
+18
+00:00:40,713 --> 00:00:42,632
+thật ra đang có chuyện gì?
+
+19
+00:00:42,912 --> 00:00:44,999
+Tối đó chị Hằng đọc kỹ bài báo.
+
+20
+00:00:44,999 --> 00:00:46,548
+Đến ngày 30 tháng chín,
+
+21
+00:00:46,548 --> 00:00:49,039
+28 ngân hàng còn hơn 278 nghìn người,
+
+22
+00:00:49,039 --> 00:00:51,665
+giảm 3.413 người so với cuối năm ngoái.
+
+23
+00:00:51,665 --> 00:00:53,011
+Mức giảm chỉ hơn 1%.
+
+24
+00:00:53,011 --> 00:00:55,435
+Nhưng dòng tiếp theo mới đáng chú ý.
+
+25
+00:00:55,435 --> 00:00:57,522
+Chỉ có 14 ngân hàng giảm người.
+
+26
+00:00:57,522 --> 00:00:59,744
+13 ngân hàng khác lại tăng người,
+
+27
+00:00:59,744 --> 00:01:01,629
+và một ngân hàng giữ nguyên.
+
+28
+00:01:01,909 --> 00:01:02,496
+Bên giảm,
+
+29
+00:01:02,496 --> 00:01:04,192
+sau Sacombank là Eximbank,
+
+30
+00:01:04,192 --> 00:01:05,170
+giảm 783 người.
+
+31
+00:01:05,170 --> 00:01:08,169
+Ba ngân hàng có vốn nhà nước chi phối là BIDV,
+
+32
+00:01:08,169 --> 00:01:11,430
+VietinBank và Vietcombank cũng giảm nhẹ. Bên tăng,
+
+33
+00:01:11,430 --> 00:01:13,386
+VPBank tăng gần 2 nghìn người,
+
+34
+00:01:13,386 --> 00:01:16,451
+thành ngân hàng duy nhất vượt 30 nghìn nhân sự.
+
+35
+00:01:16,451 --> 00:01:18,929
+HDBank và Techcombank cũng tuyển thêm.
+
+36
+00:01:19,209 --> 00:01:20,876
+Chồng chị, anh Nam, nhắn hỏi:
+
+37
+00:01:20,876 --> 00:01:23,291
+vậy là ngân hàng đang cắt người ồ ạt à em?
+
+38
+00:01:23,291 --> 00:01:25,188
+Chị Hằng ngồi cộng thử từng dòng,
+
+39
+00:01:25,188 --> 00:01:26,970
+rồi trả lời rằng không hẳn vậy.
+
+40
+00:01:26,970 --> 00:01:28,063
+Bên giảm thì nhiều,
+
+41
+00:01:28,063 --> 00:01:30,247
+nhưng bên tăng người cũng không hề ít.
+
+42
+00:01:30,527 --> 00:01:32,289
+Và đây là cú lật đầu tiên.
+
+43
+00:01:32,289 --> 00:01:34,728
+Một mình Sacombank giảm 4.263 người,
+
+44
+00:01:34,728 --> 00:01:37,777
+nhiều hơn cả mức giảm chung của 28 ngân hàng.
+
+45
+00:01:37,777 --> 00:01:39,539
+Bỏ riêng ngân hàng này ra,
+
+46
+00:01:39,539 --> 00:01:42,317
+27 ngân hàng còn lại không hề giảm người,
+
+47
+00:01:42,317 --> 00:01:45,434
+mà còn tăng thêm khoảng 850 người. Theo CafeF,
+
+48
+00:01:45,434 --> 00:01:47,534
+Sacombank đang tinh gọn bộ máy,
+
+49
+00:01:47,534 --> 00:01:50,922
+chuyển sang quản lý theo chín khối nghiệp vụ và bỏ
+
+50
+00:01:50,922 --> 00:01:52,548
+bớt tầng nấc trung gian.
+
+51
+00:01:52,828 --> 00:01:55,713
+Nhưng phần sau của bài báo mới làm chị Hằng lo thật.
+
+52
+00:01:55,713 --> 00:01:58,543
+Tổng giám đốc TPBank cho biết ngân hàng đã cắt giảm
+
+53
+00:01:58,543 --> 00:02:01,261
+nhân sự gián tiếp ở các vị trí mang tính lặp lại,
+
+54
+00:02:01,261 --> 00:02:03,425
+như nhập liệu hay xử lý hồ sơ thủ công.
+
+55
+00:02:03,425 --> 00:02:05,589
+Nhiều quy trình trước đây mất hàng giờ,
+
+56
+00:02:05,589 --> 00:02:08,197
+nay chỉ còn vài phút nhờ tự động hoá. Cùng lúc,
+
+57
+00:02:08,197 --> 00:02:10,416
+ngân hàng tăng người bán hàng trực tiếp,
+
+58
+00:02:10,416 --> 00:02:13,689
+và năm trước đã bổ sung gần 200 nhân sự công nghệ, dữ liệu.
+
+59
+00:02:13,969 --> 00:02:17,658
+Chị Hằng lấy giấy ra ghi lại một tuần làm việc của mình.
+
+60
+00:02:17,658 --> 00:02:19,503
+Em giả định một tuần 40 giờ.
+
+61
+00:02:19,503 --> 00:02:21,808
+18 giờ nhập hồ sơ vay vào hệ thống,
+
+62
+00:02:21,808 --> 00:02:24,114
+tám giờ đối chiếu giấy tờ theo mẫu.
+
+63
+00:02:24,114 --> 00:02:26,551
+Tám giờ gọi khách hàng bổ sung hồ sơ,
+
+64
+00:02:26,551 --> 00:02:28,856
+sáu giờ họp và việc khác. Cộng lại,
+
+65
+00:02:28,856 --> 00:02:29,845
+26 trên 40 giờ,
+
+66
+00:02:29,845 --> 00:02:32,611
+tức 65% thời gian của chị là việc lặp lại.
+
+67
+00:02:32,891 --> 00:02:35,066
+Lãnh đạo các ngân hàng khác nói gì?
+
+68
+00:02:35,066 --> 00:02:38,172
+Phó tổng giám đốc VietinBank nêu khả năng một nhóm
+
+69
+00:02:38,172 --> 00:02:39,539
+dự án khoảng 10 người,
+
+70
+00:02:39,539 --> 00:02:42,459
+trong tương lai có thể chỉ còn khoảng ba người,
+
+71
+00:02:42,459 --> 00:02:45,379
+cùng một chục tác nhân trí tuệ nhân tạo hỗ trợ.
+
+72
+00:02:45,379 --> 00:02:46,249
+Ở Techcombank,
+
+73
+00:02:46,249 --> 00:02:49,417
+phó tổng giám đốc cho biết công cụ hỗ trợ lập trình
+
+74
+00:02:49,417 --> 00:02:51,716
+đã giúp năng suất tăng từ 25 đến 30%.
+
+75
+00:02:51,716 --> 00:02:54,885
+Techcombank đặt mục tiêu 90% nhân viên dùng trí tuệ
+
+76
+00:02:54,885 --> 00:02:57,121
+nhân tạo thường xuyên trong năm nay.
+
+77
+00:02:57,401 --> 00:02:58,890
+Chị Hằng nhắn hỏi chị Lan,
+
+78
+00:02:58,890 --> 00:03:00,321
+trưởng phòng cũ của mình.
+
+79
+00:03:00,321 --> 00:03:02,325
+Chị Lan gửi lại một đoạn trong bài.
+
+80
+00:03:02,325 --> 00:03:05,074
+Phó tổng giám đốc Techcombank nói người lao động
+
+81
+00:03:05,074 --> 00:03:06,963
+không phải lo bị cắt giảm vì máy.
+
+82
+00:03:06,963 --> 00:03:09,311
+Công nghệ sẽ làm phát sinh nghiệp vụ mới,
+
+83
+00:03:09,311 --> 00:03:11,200
+và nhân viên sẽ được đào tạo lại.
+
+84
+00:03:11,200 --> 00:03:12,174
+Chị Hằng hỏi lại:
+
+85
+00:03:12,174 --> 00:03:14,292
+vậy người không chịu học thì sao chị?
+
+86
+00:03:14,292 --> 00:03:15,838
+Chị Lan không trả lời ngay.
+
+87
+00:03:16,118 --> 00:03:17,261
+Rồi cú lật thứ hai.
+
+88
+00:03:17,261 --> 00:03:20,268
+Giảm người không có nghĩa là ngân hàng chi ít tiền
+
+89
+00:03:20,268 --> 00:03:22,072
+hơn cho con người. Theo CafeF,
+
+90
+00:03:22,072 --> 00:03:22,914
+ở Vietcombank,
+
+91
+00:03:22,914 --> 00:03:24,598
+chi phí nhân viên bình quân,
+
+92
+00:03:24,598 --> 00:03:25,860
+tính cả lương thưởng,
+
+93
+00:03:25,860 --> 00:03:27,123
+bảo hiểm và phúc lợi,
+
+94
+00:03:27,123 --> 00:03:30,190
+là hơn 65 triệu đồng mỗi người mỗi tháng trong chín
+
+95
+00:03:30,190 --> 00:03:31,032
+tháng đầu năm.
+
+96
+00:03:31,032 --> 00:03:33,257
+Con số này tăng 30,3% so với cùng kỳ.
+
+97
+00:03:33,257 --> 00:03:34,941
+Đây là tiền ngân hàng bỏ ra,
+
+98
+00:03:34,941 --> 00:03:36,565
+không phải lương thực nhận.
+
+99
+00:03:36,565 --> 00:03:37,407
+Còn Sacombank,
+
+100
+00:03:37,407 --> 00:03:38,970
+nơi giảm người nhiều nhất,
+
+101
+00:03:38,970 --> 00:03:42,037
+nói muốn đưa thu nhập nhân viên lên đứng đầu ngành.
+
+102
+00:03:42,317 --> 00:03:44,563
+Vậy ai chịu sức ép? Theo CafeF,
+
+103
+00:03:44,563 --> 00:03:45,432
+ở Sacombank,
+
+104
+00:03:45,432 --> 00:03:49,561
+tỷ lệ chi phí trên thu nhập đã giảm từ 46,1% xuống 32,6%.
+
+105
+00:03:49,561 --> 00:03:50,792
+Mỗi đồng thu vào,
+
+106
+00:03:50,792 --> 00:03:53,183
+ngân hàng tốn ít hơn để vận hành.
+
+107
+00:03:53,183 --> 00:03:55,718
+Còn theo chính lời lãnh đạo TPBank,
+
+108
+00:03:55,718 --> 00:03:59,050
+vị trí bị cắt trước là những vị trí gián tiếp,
+
+109
+00:03:59,050 --> 00:04:00,281
+làm việc lặp lại.
+
+110
+00:04:00,281 --> 00:04:02,599
+Tức là những người như chị Hằng.
+
+111
+00:04:02,879 --> 00:04:06,240
+Tối qua chị Hằng gọi cho anh Tùng, bạn học cũ. Năm 2023,
+
+112
+00:04:06,240 --> 00:04:09,901
+anh làm ở một công ty tài chính và nằm trong đợt bị cắt giảm.
+
+113
+00:04:09,901 --> 00:04:10,321
+Anh kể:
+
+114
+00:04:10,321 --> 00:04:13,081
+lúc đó anh cũng tưởng cả ngành đang cắt người.
+
+115
+00:04:13,081 --> 00:04:14,402
+Mà hoá ra cùng năm đó,
+
+116
+00:04:14,402 --> 00:04:16,562
+nhiều ngân hàng khác vẫn tuyển thêm.
+
+117
+00:04:16,562 --> 00:04:18,843
+Anh mất nửa năm mới tìm được việc mới,
+
+118
+00:04:18,843 --> 00:04:20,943
+ở một chỗ cần người biết gặp khách.
+
+119
+00:04:21,223 --> 00:04:23,053
+Những con số của lần trước.
+
+120
+00:04:23,053 --> 00:04:24,408
+Theo VietnamFinance,
+
+121
+00:04:24,408 --> 00:04:26,034
+chín tháng đầu năm 2023,
+
+122
+00:04:26,034 --> 00:04:29,490
+VPBank tính cả công ty thành viên giảm 4.400 người,
+
+123
+00:04:29,490 --> 00:04:32,133
+chủ yếu ở công ty thành viên. Cùng lúc,
+
+124
+00:04:32,133 --> 00:04:34,437
+VIB và Vietcombank vẫn tuyển thêm.
+
+125
+00:04:34,437 --> 00:04:35,793
+Theo bài báo khi đó,
+
+126
+00:04:35,793 --> 00:04:38,435
+lý do giảm người là tín dụng tăng chậm,
+
+127
+00:04:38,435 --> 00:04:39,655
+nợ xấu tăng nhanh,
+
+128
+00:04:39,655 --> 00:04:42,027
+bán bảo hiểm qua ngân hàng bị siết.
+
+129
+00:04:42,307 --> 00:04:43,237
+So với năm 2023,
+
+130
+00:04:43,237 --> 00:04:45,272
+có hai điểm giống và hai điểm khác.
+
+131
+00:04:45,272 --> 00:04:46,492
+Giống ở chỗ nơi giảm,
+
+132
+00:04:46,492 --> 00:04:47,539
+nơi tăng cùng lúc.
+
+133
+00:04:47,539 --> 00:04:49,864
+Và con số chung che mất chuyện từng nhà:
+
+134
+00:04:49,864 --> 00:04:53,177
+năm nay riêng Sacombank đã giảm nhiều hơn mức giảm chung,
+
+135
+00:04:53,177 --> 00:04:54,573
+khi tái cấu trúc bộ máy.
+
+136
+00:04:54,573 --> 00:04:55,793
+Khác ở chỗ lần trước,
+
+137
+00:04:55,793 --> 00:04:58,816
+các ngân hàng giảm người vì kinh doanh khó. Lần này,
+
+138
+00:04:58,816 --> 00:05:02,246
+có ngân hàng nói thẳng việc lặp lại đang được máy làm thay.
+
+139
+00:05:02,246 --> 00:05:03,118
+Vị trí như vậy,
+
+140
+00:05:03,118 --> 00:05:05,617
+chờ kinh doanh khá lên chưa chắc đã có lại.
+
+141
+00:05:05,897 --> 00:05:07,924
+Chị Hằng thấy có ba con đường. Một,
+
+142
+00:05:07,924 --> 00:05:09,488
+giữ nguyên cách làm và chờ.
+
+143
+00:05:09,488 --> 00:05:10,993
+Đường này dễ nhất hôm nay,
+
+144
+00:05:10,993 --> 00:05:13,946
+nhưng rủi ro nhất nếu phòng chị đổi quy trình. Hai,
+
+145
+00:05:13,946 --> 00:05:17,536
+học dùng chính công cụ tự động để làm việc của mình nhanh hơn,
+
+146
+00:05:17,536 --> 00:05:19,621
+trở thành người kiểm tra ca khó. Ba,
+
+147
+00:05:19,621 --> 00:05:22,169
+xin chuyển sang gặp khách hàng hoặc dữ liệu,
+
+148
+00:05:22,169 --> 00:05:23,964
+mảng mà TPBank đang tăng người.
+
+149
+00:05:23,964 --> 00:05:26,338
+Nhưng thu nhập bán hàng đi theo chỉ tiêu,
+
+150
+00:05:26,338 --> 00:05:27,727
+có tháng cao tháng thấp.
+
+151
+00:05:28,007 --> 00:05:30,227
+Sáng nay chị Hằng nhắn chồng kế hoạch.
+
+152
+00:05:30,227 --> 00:05:32,739
+Chị sẽ học công cụ tự động mỗi tối một giờ,
+
+153
+00:05:32,739 --> 00:05:36,185
+ba tháng nữa xin chuyển sang khâu kiểm tra những hồ sơ khó,
+
+154
+00:05:36,185 --> 00:05:37,704
+việc máy chưa tự làm được.
+
+155
+00:05:37,704 --> 00:05:41,150
+Anh Nam trả lời rằng anh sẽ trông con buổi tối cho chị học.
+
+156
+00:05:41,150 --> 00:05:43,370
+Đó là lựa chọn riêng của gia đình chị.
+
+157
+00:05:43,650 --> 00:05:45,730
+Em gợi ý một phép thử tự soi,
+
+158
+00:05:45,730 --> 00:05:48,527
+dù anh chị làm ngân hàng hay nghề khác.
+
+159
+00:05:48,527 --> 00:05:50,392
+Ghi lại một tuần làm việc,
+
+160
+00:05:50,392 --> 00:05:53,979
+rồi tính bao nhiêu phần trăm thời gian là việc lặp
+
+161
+00:05:53,979 --> 00:05:57,924
+lại theo mẫu: nhập liệu, sao chép, đối chiếu. Dưới 30%,
+
+162
+00:05:57,924 --> 00:06:00,362
+công việc khá vững. Từ 30 đến 60%,
+
+163
+00:06:00,362 --> 00:06:02,586
+nên học thêm công cụ. Trên 60%,
+
+164
+00:06:02,586 --> 00:06:03,518
+như chị Hằng,
+
+165
+00:06:03,518 --> 00:06:06,531
+là lúc nên tự đặt kế hoạch như chị đã làm.
+
+166
+00:06:06,531 --> 00:06:07,822
+Đây là mốc tự soi,
+
+167
+00:06:07,822 --> 00:06:09,400
+không phải lời khuyên.
+
+168
+00:06:09,680 --> 00:06:11,007
+Ba điều đáng theo dõi.
+
+169
+00:06:11,007 --> 00:06:12,153
+Số nhân sự quý bốn,
+
+170
+00:06:12,153 --> 00:06:15,049
+khi các ngân hàng công bố báo cáo tài chính cuối
+
+171
+00:06:15,049 --> 00:06:16,196
+tháng một năm 2027.
+
+172
+00:06:16,196 --> 00:06:18,005
+Ngân hàng nào đang tuyển thêm,
+
+173
+00:06:18,005 --> 00:06:19,393
+và tuyển cho vị trí gì.
+
+174
+00:06:19,393 --> 00:06:21,324
+Và trong chính chỗ làm của mình,
+
+175
+00:06:21,324 --> 00:06:24,038
+việc nào vừa được đổi sang quy trình tự động.
+
+176
+00:06:24,038 --> 00:06:27,055
+Muốn hiểu ngân hàng kiếm tiền và tiêu tiền ra sao,
+
+177
+00:06:27,055 --> 00:06:30,192
+anh chị có thể đọc bài miễn phí trên chứng khoán Huy
+
+178
+00:06:30,192 --> 00:06:31,157
+Nguyễn chấm com.
+
+179
+00:06:31,437 --> 00:06:32,247
+Tám giờ sáng,
+
+180
+00:06:32,247 --> 00:06:35,986
+chị Lan nhắn lại câu trả lời cho câu hỏi hôm qua. Năm ngoái,
+
+181
+00:06:35,986 --> 00:06:36,982
+phòng chị có Vy,
+
+182
+00:06:36,982 --> 00:06:38,166
+cũng làm nhập liệu,
+
+183
+00:06:38,166 --> 00:06:40,035
+đã chuyển sang khâu thẩm định.
+
+184
+00:06:40,035 --> 00:06:41,468
+Em hỏi Vy đã học gì đi.
+
+185
+00:06:41,468 --> 00:06:42,777
+Chị Hằng trả lời: dạ,
+
+186
+00:06:42,777 --> 00:06:44,397
+trưa nay em hẹn Vy cà phê.
+
+187
+00:06:44,677 --> 00:06:45,789
+Trước khi kết thúc,
+
+188
+00:06:45,789 --> 00:06:47,897
+có hai thứ anh chị nên lưu lại. Một,
+
+189
+00:06:47,897 --> 00:06:50,825
+vào chứng khoán Huy Nguyễn chấm com để xem bảng 10
+
+190
+00:06:50,825 --> 00:06:53,753
+cổ phiếu khỏe nhất thị trường cập nhật liên tục và
+
+191
+00:06:53,753 --> 00:06:56,329
+báo cáo tài chính hơn 400 mã, miễn phí. Hai,
+
+192
+00:06:56,329 --> 00:06:57,852
+nếu anh chị đang kẹt hàng,
+
+193
+00:06:57,852 --> 00:06:59,550
+chưa biết nên giữ hay cơ cấu,
+
+194
+00:06:59,550 --> 00:07:01,248
+hoặc muốn có người đồng hành,
+
+195
+00:07:01,248 --> 00:07:03,005
+nhắn Zalo số không ba sáu năm,
+
+196
+00:07:03,005 --> 00:07:03,708
+một tám tám,
+
+197
+00:07:03,708 --> 00:07:05,523
+hai tám sáu để vào nhóm tư vấn,
+
+198
+00:07:05,523 --> 00:07:07,572
+Huy và đội ngũ sẽ hỗ trợ trực tiếp.
+
+199
+00:07:07,572 --> 00:07:09,153
+Đầu tư một mình rất dễ sai,
+
+200
+00:07:09,153 --> 00:07:10,851
+có người cùng đi sẽ chắc hơn.
+
+201
+00:07:10,851 --> 00:07:14,482
+Nhớ đăng ký kênh và bấm chuông để không bỏ lỡ video tiếp theo.
+
+202
+00:07:14,762 --> 00:07:15,534
+Còn anh chị,
+
+203
+00:07:15,534 --> 00:07:18,815
+một tuần làm việc của mình có khoảng bao nhiêu phần
+
+204
+00:07:18,815 --> 00:07:20,166
+trăm là việc lặp lại?
+
+205
+00:07:20,166 --> 00:07:23,769
+Ghi một con số ở phần bình luận cho em và mọi người nhé.

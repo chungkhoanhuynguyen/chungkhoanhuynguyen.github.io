@@ -1,0 +1,5 @@
+CẢNH BÁO cảnh 12: câu cụt thiếu chủ ngữ – "Vậy ai chịu sức ép?"
+CẢNH BÁO rủi ro trình chiếu: 55% thời lượng hình đứng yên ≥2s – thêm chuyển động/thẻ số/nhân vật
+
+CẢNH BÁO whisper: 1 số trên phụ đề không nghe ra – nghe lại từng đoạn:
+  00:06:53 400 | báo cáo tài chính hơn 400 mã, miễn phí. Hai,

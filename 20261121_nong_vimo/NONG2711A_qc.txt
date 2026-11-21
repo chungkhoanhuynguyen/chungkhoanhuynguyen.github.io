@@ -1,0 +1,6 @@
+CẢNH BÁO cảnh 4: lặp từ liền nhau
+CẢNH BÁO cảnh 7: câu quá dài (39 từ) – tách đôi
+THÔNG TIN lọc mặt người: đã bỏ 1 ảnh – https://commons.wikimedia.org/wiki/File:Bank_Muamalat.JPG (2.0%)
+CẢNH BÁO rủi ro trình chiếu: 39% thời lượng hình đứng yên ≥2s – thêm chuyển động/thẻ số/nhân vật
+
+WHISPER: khớp mọi con số trên phụ đề.

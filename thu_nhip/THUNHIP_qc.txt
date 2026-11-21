@@ -1,0 +1,3 @@
+ĐẠT: khung đầu, âm lượng, phụ đề, ảnh bìa
+
+WHISPER: khớp mọi con số trên phụ đề.
