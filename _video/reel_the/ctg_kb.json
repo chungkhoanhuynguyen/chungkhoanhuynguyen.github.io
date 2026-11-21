@@ -1,0 +1,51 @@
+{
+ "key": "CTG_THE",
+ "title": "ctg the",
+ "scenes": [
+  {
+   "id": "S1",
+   "say": "VietinBank phát hành thư cam kết tài trợ có điều kiện ba trăm mười ba nghìn tỷ cho một dự án. Đã giải ngân chưa?",
+   "hold": 0.3
+  },
+  {
+   "id": "S2",
+   "say": "Theo báo cáo của Vietcap, dư nợ liên quan bất động sản của VietinBank khoảng bốn trăm mười lăm nghìn tỷ, chiếm mười chín phẩy bốn phần trăm tổng dư nợ. Quý hai là mười chín phẩy hai, còn cuối năm ngoái là hai mươi phần trăm.",
+   "hold": 0.3
+  },
+  {
+   "id": "S3",
+   "say": "Thư cam kết tài trợ có điều kiện ba trăm mười ba nghìn tỷ là cho dự án Đại lộ Cảnh quan Sông Hồng, và ngân hàng chưa cấp hạn mức, chưa giải ngân, chưa phát sinh dư nợ. Lợi nhuận trước thuế chín tháng tăng ba mươi ba phẩy chín phần trăm, nợ xấu một phẩy hai, còn cổ phiếu CTG giảm mười bốn phần trăm từ đỉnh tháng năm.",
+   "hold": 0.3
+  },
+  {
+   "id": "S4",
+   "say": "Một lá thư cam kết chưa phải là dư nợ. Tín dụng chín tháng chỉ tăng bảy phẩy năm phần trăm, trong đó cho vay mua nhà giảm năm phẩy năm phần trăm.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5",
+   "say": "Về kỹ thuật, đường trung bình hai mươi cắt lên đường năm mươi ngày chín tháng mười một. Vùng ba mươi mốt phẩy sáu đến ba mươi hai là cản gần, vùng hai mươi tám phẩy chín đến hai mươi chín phẩy tám là hỗ trợ. Ngày năm tháng mười một, khối lượng tăng đột biến.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5A",
+   "say": "Lợi nhuận trước thuế chín tháng tăng ba mươi ba phẩy chín phần trăm. Nợ xấu một phẩy hai, bao phủ một trăm sáu mươi phẩy bốn. Dự án Sông Hồng chưa giải ngân.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5B",
+   "say": "Dư nợ bất động sản bốn trăm mười lăm nghìn tỷ. Chi phí dự phòng tăng hai mươi hai phẩy sáu phần trăm. Cổ phiếu giảm mười bốn phần trăm từ đỉnh.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5C",
+   "say": "Góc nhìn của mình: chờ ba tín hiệu. Một, tỷ trọng bất động sản không tăng thêm. Hai, nợ xấu giữ dưới một phẩy tám phần trăm. Ba, giá vượt được cản ba mươi hai.",
+   "hold": 0.3
+  },
+  {
+   "id": "S6",
+   "say": "Cam kết ba trăm mười ba nghìn tỷ thì chỉ cần một lá thư. Còn giải ngân thì phải đủ điều kiện. Anh chị thấy cam kết hay giải ngân, cái nào khó hơn?",
+   "hold": 1.2
+  }
+ ]
+}

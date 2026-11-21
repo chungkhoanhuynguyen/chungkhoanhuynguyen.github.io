@@ -1,0 +1,539 @@
+{
+ "ma": "CTG",
+ "gia_n": 125,
+ "kenh": "@chungkhoanhuynguyen",
+ "ngay": "22/11",
+ "web": "chungkhoanhuynguyen.com",
+ "disclaimer": "Quan điểm cá nhân, không phải khuyến nghị đầu tư",
+ "scenes": [
+  {
+   "id": "S1",
+   "kieu": "hook",
+   "dong": [
+    {
+     "t": "CAM KẾT 313.000 TỶ",
+     "co": 88,
+     "y": 700,
+     "at": -1
+    },
+    {
+     "t": "CHO MỘT DỰ ÁN?",
+     "co": 81,
+     "y": 820,
+     "at": -1,
+     "do": 1
+    }
+   ],
+   "dau": {
+    "nhan": "CTG TỪ ĐỈNH 27/5",
+    "t": "-14%",
+    "at": -1,
+    "y": 1020
+   },
+   "phude": [
+    [
+     "VietinBank cam kết tài trợ",
+     "**313.000 tỷ**, có điều kiện",
+     "cho một dự án"
+    ],
+    [
+     "**Đã giải ngân chưa?**"
+    ]
+   ]
+  },
+  {
+   "id": "S2",
+   "kieu": "tin",
+   "chuong": "— DƯ NỢ BẤT ĐỘNG SẢN —",
+   "tin": {
+    "moc": "NGƯỜI QUAN SÁT · 19/11",
+    "t": "VietinBank: dư nợ bất động sản hơn 415.000 tỷ",
+    "at": [
+     0,
+     0.3
+    ]
+   },
+   "chart": {
+    "at": [
+     0,
+     0.5
+    ],
+    "dur": 4.0,
+    "opt": {
+     "ymin": 28,
+     "ymax": 36,
+     "step": 2
+    },
+    "marks": [
+     {
+      "t": "2026-05-27",
+      "g": 34.81,
+      "dx": 50,
+      "dy": 70,
+      "chu": "27/5: 34.810",
+      "at": [
+       0,
+       0.9
+      ]
+     },
+     {
+      "t": "2026-11-20",
+      "g": 30.1,
+      "dx": -40,
+      "dy": -160,
+      "chu": "20/11: 30.100",
+      "at": [
+       1,
+       0.4
+      ],
+      "vang": 1
+     }
+    ]
+   },
+   "chot": {
+    "a": "BĐS 19,4% DƯ NỢ",
+    "b": "THẤP HƠN 20% CUỐI 2025",
+    "do": 1,
+    "at": [
+     1,
+     0.7
+    ]
+   },
+   "phude": [
+    [
+     "Dư nợ liên quan bất động sản",
+     "**415.443 tỷ**, chiếm **19,4%**"
+    ],
+    [
+     "Quý hai **19,2%**",
+     "cuối năm ngoái **20%**"
+    ]
+   ]
+  },
+  {
+   "id": "S3",
+   "kieu": "so",
+   "chuong": "— CON SỐ THẬT —",
+   "the": [
+    {
+     "nhan": "THƯ CAM KẾT CÓ ĐIỀU KIỆN",
+     "so": 313000,
+     "dec": 0,
+     "dv": "TỶ",
+     "co": 118,
+     "y": 300,
+     "h": "400px",
+     "at": [
+      0,
+      0.04
+     ]
+    },
+    {
+     "nhan": "LỢI NHUẬN TRƯỚC THUẾ 9T",
+     "so": 33.9,
+     "dec": 1,
+     "dv": "%",
+     "co": 96,
+     "y": 740,
+     "h": "300px",
+     "x": 64,
+     "w": 462,
+     "at": [
+      1,
+      0.1
+     ],
+     "tien": "+"
+    },
+    {
+     "nhan": "NỢ XẤU 30/9",
+     "so": 1.2,
+     "dec": 1,
+     "dv": "%",
+     "co": 96,
+     "y": 740,
+     "h": "300px",
+     "x": 554,
+     "w": 462,
+     "at": [
+      1,
+      0.4
+     ],
+     "tien": ""
+    },
+    {
+     "nhan": "CTG TỪ ĐỈNH 27/5",
+     "so": 14.0,
+     "dec": 0,
+     "co": 130,
+     "y": 1080,
+     "h": "320px",
+     "at": [
+      1,
+      0.7
+     ],
+     "tien": "-",
+     "hau": "%",
+     "mau": "#c9533e",
+     "sub": "Giá 20/11: 30.100 đ"
+    }
+   ],
+   "chot": {
+    "a": "CHƯA CẤP HẠN MỨC",
+    "b": "CHƯA GIẢI NGÂN, CHƯA DƯ NỢ",
+    "do": 1,
+    "at": [
+     0,
+     0.9
+    ]
+   },
+   "phude": [
+    [
+     "Thư cam kết **313.000 tỷ** cho dự án",
+     "Đại lộ Cảnh quan Sông Hồng,",
+     "**chưa** cấp hạn mức, **chưa** giải ngân"
+    ],
+    [
+     "Lãi trước thuế 9 tháng **+33,9%**",
+     "nợ xấu **1,2%**, CTG giảm **14%**"
+    ]
+   ]
+  },
+  {
+   "id": "S4",
+   "kieu": "ds",
+   "chuong": "— CAM KẾT CHƯA LÀ DƯ NỢ —",
+   "muc": [
+    {
+     "so": "CHƯA CÓ DƯ NỢ",
+     "t": "Dự án Sông Hồng: chưa giải ngân",
+     "at": [
+      0,
+      0.3
+     ]
+    },
+    {
+     "so": "TÍN DỤNG +7,5%",
+     "t": "Chủ động điều tiết tốc độ",
+     "at": [
+      1,
+      0.45
+     ]
+    },
+    {
+     "so": "VAY MUA NHÀ −5,5%",
+     "t": "Tín dụng bán lẻ chỉ +1,4%",
+     "at": [
+      1,
+      0.85
+     ],
+     "mau": "#c9533e"
+    }
+   ],
+   "chot": {
+    "a": "CAM KẾT CHƯA LÀ DƯ NỢ",
+    "b": "SÔNG HỒNG CHƯA GIẢI NGÂN",
+    "at": [
+     1,
+     0.9
+    ]
+   },
+   "phude": [
+    [
+     "Một lá thư cam kết",
+     "**chưa phải** dư nợ"
+    ],
+    [
+     "Tín dụng 9 tháng **+7,5%**",
+     "cho vay mua nhà **−5,5%**"
+    ]
+   ]
+  },
+  {
+   "id": "S5",
+   "kieu": "chart",
+   "chuong": "— KỸ THUẬT —",
+   "opt": {
+    "ymin": 28,
+    "ymax": 34,
+    "step": 1,
+    "dur": 3.0,
+    "from": 45
+   },
+   "marks": [
+    {
+     "t": "2026-11-09",
+     "g": 31.65,
+     "dx": -40,
+     "dy": -190,
+     "chu": "9/11: MA20 cắt lên MA50",
+     "at": [
+      0,
+      0.5
+     ],
+     "vang": 1
+    },
+    {
+     "t": "2026-11-05",
+     "g": 31.6,
+     "dx": -40,
+     "dy": -190,
+     "chu": "5/11: KL đột biến",
+     "at": [
+      2,
+      0.3
+     ]
+    }
+   ],
+   "vung": [
+    {
+     "lo": 31.6,
+     "hi": 32.0,
+     "mau": "#c9533e",
+     "txt": "CẢN 31,6–32",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "lo": 28.9,
+     "hi": 29.8,
+     "mau": "#3fa877",
+     "txt": "HỖ TRỢ 28,9–29,8",
+     "at": [
+      1,
+      0.6
+     ],
+     "lbl_below": 1
+    }
+   ],
+   "chot": {
+    "a": "CẢN 31,6–32",
+    "b": "HỖ TRỢ 28,9–29,8",
+    "do": 1,
+    "at": [
+     2,
+     0.6
+    ]
+   },
+   "phude": [
+    [
+     "Về kỹ thuật, **MA20 cắt lên MA50**",
+     "ngày **9/11**"
+    ],
+    [
+     "Cản gần **31,6–32**",
+     "hỗ trợ **28,9–29,8**"
+    ],
+    [
+     "Ngày **5/11**: khối lượng",
+     "**đột biến**"
+    ]
+   ]
+  },
+  {
+   "id": "S5A",
+   "kieu": "lk",
+   "chuong": "— HAI PHE —",
+   "tieude": "PHE LẠC QUAN NHÌN THẤY",
+   "mau": "#3fa877",
+   "muc": [
+    {
+     "t": "Lãi trước thuế 9T +33,9%",
+     "s": "39.557 tỷ đồng",
+     "at": [
+      0,
+      0.0
+     ]
+    },
+    {
+     "t": "Nợ xấu 1,2%",
+     "s": "Bao phủ nợ xấu 160,4%",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "Dự án Sông Hồng chưa giải ngân",
+     "s": "Chưa phát sinh dư nợ",
+     "at": [
+      2,
+      0.0
+     ]
+    }
+   ],
+   "phude": [
+    [
+     "Lãi trước thuế **+33,9%**"
+    ],
+    [
+     "Nợ xấu **1,2%**, bao phủ **160,4%**"
+    ],
+    [
+     "Dự án Sông Hồng **chưa giải ngân**"
+    ]
+   ]
+  },
+  {
+   "id": "S5B",
+   "kieu": "lk",
+   "chuong": "— HAI PHE —",
+   "tieude": "PHE THẬN TRỌNG NHÌN THẤY",
+   "mau": "#c9533e",
+   "muc": [
+    {
+     "t": "Dư nợ BĐS 415.443 tỷ",
+     "s": "19,4% tổng dư nợ",
+     "at": [
+      0,
+      0.0
+     ]
+    },
+    {
+     "t": "Chi phí dự phòng +22,6%",
+     "s": "20.781 tỷ đồng",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "Giá CTG giảm 14% từ đỉnh",
+     "s": "Đỉnh 34.810 đ, nay 30.100 đ",
+     "at": [
+      2,
+      0.0
+     ]
+    }
+   ],
+   "chot": {
+    "a": "HAI PHE ĐỀU CÓ LÝ",
+    "b": "BẤT ĐỘNG SẢN LÀ ẨN SỐ",
+    "at": [
+     2,
+     0.5
+    ]
+   },
+   "phude": [
+    [
+     "Dư nợ BĐS **415.443 tỷ**"
+    ],
+    [
+     "Dự phòng **+22,6%**"
+    ],
+    [
+     "CTG giảm **14%** từ đỉnh"
+    ]
+   ]
+  },
+  {
+   "id": "S5C",
+   "kieu": "lk",
+   "chuong": "— GÓC NHÌN CỦA MÌNH —",
+   "tieude": "CHỜ 3 TÍN HIỆU",
+   "mau": "#a67c1a",
+   "muc": [
+    {
+     "t": "Tỷ trọng BĐS không tăng",
+     "s": "Hiện 19,4% tổng dư nợ",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "Nợ xấu dưới 1,8%",
+     "s": "Mục tiêu năm 2026",
+     "at": [
+      2,
+      0.0
+     ]
+    },
+    {
+     "t": "Giá vượt cản 32",
+     "s": "Vùng cản 31,6–32",
+     "at": [
+      3,
+      0.0
+     ]
+    }
+   ],
+   "chot": {
+    "a": "THEO DÕI TỶ TRỌNG",
+    "b": "VÀ CHẤT LƯỢNG NỢ",
+    "at": [
+     3,
+     0.5
+    ]
+   },
+   "phude": [
+    [
+     "Góc nhìn của mình:",
+     "chờ **3 tín hiệu**"
+    ],
+    [
+     "Tỷ trọng **BĐS** không tăng"
+    ],
+    [
+     "Nợ xấu dưới **1,8%**"
+    ],
+    [
+     "Giá vượt cản **32**"
+    ]
+   ]
+  },
+  {
+   "id": "S6",
+   "kieu": "ket",
+   "chuong": "— KẾT —",
+   "the": [
+    {
+     "nhan": "CAM KẾT 313.000 TỶ",
+     "t": "CHỈ CẦN MỘT LÁ THƯ",
+     "co": 54,
+     "at": [
+      0,
+      0.2
+     ]
+    },
+    {
+     "nhan": "GIẢI NGÂN",
+     "t": "PHẢI ĐỦ ĐIỀU KIỆN",
+     "co": 64,
+     "mau": "#c9533e",
+     "at": [
+      1,
+      0.35
+     ]
+    }
+   ],
+   "hoi": {
+    "t": "Cam kết hay giải ngân, cái nào **khó hơn**?",
+    "at": [
+     2,
+     0.0
+    ]
+   },
+   "phude": [
+    [
+     "Cam kết **313.000 tỷ**",
+     "chỉ cần một lá thư"
+    ],
+    [
+     "Còn **giải ngân**",
+     "phải đủ điều kiện"
+    ],
+    [
+     "Cam kết hay **giải ngân**,",
+     "cái nào khó hơn?"
+    ]
+   ]
+  },
+  {
+   "id": "OUT",
+   "kieu": "outro",
+   "phude": []
+  }
+ ]
+}

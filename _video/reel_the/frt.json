@@ -1,0 +1,537 @@
+{
+ "ma": "FRT",
+ "gia_n": 125,
+ "kenh": "@chungkhoanhuynguyen",
+ "ngay": "22/11",
+ "web": "chungkhoanhuynguyen.com",
+ "disclaimer": "Quan điểm cá nhân, không phải khuyến nghị đầu tư",
+ "scenes": [
+  {
+   "id": "S1",
+   "kieu": "hook",
+   "dong": [
+    {
+     "t": "LONG CHÂU GẤP 18 LẦN",
+     "co": 84,
+     "y": 700,
+     "at": -1
+    },
+    {
+     "t": "FPT SHOP?",
+     "co": 96,
+     "y": 820,
+     "at": -1,
+     "do": 1
+    }
+   ],
+   "dau": {
+    "nhan": "FRT TỪ ĐỈNH 21/10",
+    "t": "-3%",
+    "at": -1,
+    "y": 1020
+   },
+   "phude": [
+    [
+     "Theo Vietcap: Long Châu",
+     "**44.429 tỷ**, FPT Shop",
+     "**2.427 tỷ**"
+    ],
+    [
+     "**Gấp 18 lần?**"
+    ]
+   ]
+  },
+  {
+   "id": "S2",
+   "kieu": "tin",
+   "chuong": "— ĐỊNH GIÁ LỆCH —",
+   "tin": {
+    "moc": "CAFEF · 19/11",
+    "t": "Vietcap: Long Châu 44.429 tỷ, FPT Shop 2.427 tỷ",
+    "at": [
+     0,
+     0.3
+    ]
+   },
+   "chart": {
+    "at": [
+     0,
+     0.5
+    ],
+    "dur": 4.0,
+    "opt": {
+     "ymin": 100,
+     "ymax": 160,
+     "step": 10
+    },
+    "marks": [
+     {
+      "t": "2026-10-21",
+      "g": 152.0,
+      "dx": -70,
+      "dy": -100,
+      "chu": "21/10: 152.000",
+      "at": [
+       0,
+       0.9
+      ]
+     },
+     {
+      "t": "2026-11-20",
+      "g": 148.0,
+      "dx": -40,
+      "dy": 130,
+      "chu": "20/11: 148.000",
+      "at": [
+       1,
+       0.4
+      ],
+      "vang": 1
+     }
+    ]
+   },
+   "chot": {
+    "a": "LONG CHÂU",
+    "b": "GẤP 18,3 LẦN FPT SHOP",
+    "do": 1,
+    "at": [
+     1,
+     0.7
+    ]
+   },
+   "phude": [
+    [
+     "Báo cáo Vietcap **17/11**:",
+     "Long Châu **44.429 tỷ**",
+     "FPT Shop **2.427 tỷ**"
+    ],
+    [
+     "Gấp khoảng **18,3 lần**"
+    ]
+   ]
+  },
+  {
+   "id": "S3",
+   "kieu": "so",
+   "chuong": "— CON SỐ THẬT —",
+   "the": [
+    {
+     "nhan": "NHÓM NHÂN VIÊN NẮM 11,03% LONG CHÂU",
+     "so": 4901,
+     "dec": 0,
+     "dv": "TỶ",
+     "co": 150,
+     "y": 300,
+     "h": "400px",
+     "at": [
+      0,
+      0.04
+     ]
+    },
+    {
+     "nhan": "FPT RETAIL NẮM",
+     "so": 75.97,
+     "dec": 2,
+     "dv": "%",
+     "co": 96,
+     "y": 740,
+     "h": "300px",
+     "x": 64,
+     "w": 462,
+     "at": [
+      1,
+      0.1
+     ],
+     "tien": ""
+    },
+    {
+     "nhan": "QUỸ CREADOR NẮM",
+     "so": 13,
+     "dec": 0,
+     "dv": "%",
+     "co": 96,
+     "y": 740,
+     "h": "300px",
+     "x": 554,
+     "w": 462,
+     "at": [
+      1,
+      0.4
+     ],
+     "tien": "~"
+    },
+    {
+     "nhan": "FRT TỪ ĐỈNH 21/10",
+     "so": 3.0,
+     "dec": 0,
+     "co": 130,
+     "y": 1080,
+     "h": "320px",
+     "at": [
+      1,
+      0.7
+     ],
+     "tien": "-",
+     "hau": "%",
+     "mau": "#c9533e",
+     "sub": "Giá 20/11: 148.000 đ"
+    }
+   ],
+   "chot": {
+    "a": "PHẦN CỦA NHÂN VIÊN",
+    "b": "GẤP 2 LẦN CẢ FPT SHOP",
+    "do": 1,
+    "at": [
+     0,
+     0.9
+    ]
+   },
+   "phude": [
+    [
+     "Phần **11,03%** của nhân viên",
+     "khoảng **4.901 tỷ**",
+     "gấp **hơn 2 lần** cả FPT Shop"
+    ],
+    [
+     "FPT Retail **75,97%**, Creador **~13%**",
+     "FRT giảm **3%** từ đỉnh"
+    ]
+   ]
+  },
+  {
+   "id": "S4",
+   "kieu": "ds",
+   "chuong": "— ĐỊNH GIÁ LÀ ƯỚC TÍNH —",
+   "muc": [
+    {
+     "so": "ƯỚC TÍNH VIETCAP",
+     "t": "Không phải giá giao dịch",
+     "at": [
+      0,
+      0.3
+     ]
+    },
+    {
+     "so": "ESOP 5% VỐN",
+     "t": "Giả định 5 đợt, mỗi năm 1%",
+     "at": [
+      1,
+      0.45
+     ]
+    },
+    {
+     "so": "FPT RETAIL ~72%",
+     "t": "Có thể giảm vào năm 2030",
+     "at": [
+      1,
+      0.85
+     ],
+     "mau": "#c9533e"
+    }
+   ],
+   "chot": {
+    "a": "ĐỊNH GIÁ LÀ GIẢ ĐỊNH",
+    "b": "ESOP LÀM LOÃNG DẦN",
+    "at": [
+     1,
+     0.9
+    ]
+   },
+   "phude": [
+    [
+     "Đây là **ước tính** của Vietcap,",
+     "không phải giá giao dịch"
+    ],
+    [
+     "ESOP **5%** vốn, 5 đợt: FPT Retail",
+     "có thể còn khoảng **72%** năm 2030"
+    ]
+   ]
+  },
+  {
+   "id": "S5",
+   "kieu": "chart",
+   "chuong": "— KỸ THUẬT —",
+   "opt": {
+    "ymin": 100,
+    "ymax": 160,
+    "step": 10,
+    "dur": 3.0,
+    "from": 45
+   },
+   "marks": [
+    {
+     "t": "2026-08-11",
+     "g": 146.5,
+     "dx": -40,
+     "dy": -190,
+     "chu": "11/8: MA20 cắt lên MA50",
+     "at": [
+      0,
+      0.5
+     ],
+     "vang": 1
+    },
+    {
+     "t": "2026-11-02",
+     "g": 138.3,
+     "dx": -40,
+     "dy": 170,
+     "chu": "2/11: giá 138,3, KL cao nhất 15 phiên",
+     "at": [
+      2,
+      0.3
+     ]
+    }
+   ],
+   "vung": [
+    {
+     "lo": 152.0,
+     "hi": 154.8,
+     "mau": "#c9533e",
+     "txt": "CẢN 152–154,8",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "lo": 138.0,
+     "hi": 140.0,
+     "mau": "#3fa877",
+     "txt": "HỖ TRỢ 138–140",
+     "at": [
+      1,
+      0.6
+     ],
+     "lbl_below": 1
+    }
+   ],
+   "chot": {
+    "a": "CẢN 152–154,8",
+    "b": "HỖ TRỢ 138–140",
+    "do": 1,
+    "at": [
+     2,
+     0.6
+    ]
+   },
+   "phude": [
+    [
+     "Về kỹ thuật, **MA20 cắt lên MA50**",
+     "ngày **11/8**, hiện vẫn nằm trên"
+    ],
+    [
+     "Cản gần **152–154,8**",
+     "hỗ trợ **138–140**"
+    ],
+    [
+     "Ngày **2/11**: giá **138,3**,",
+     "khối lượng cao nhất 15 phiên"
+    ]
+   ]
+  },
+  {
+   "id": "S5A",
+   "kieu": "lk",
+   "chuong": "— HAI PHE —",
+   "tieude": "PHE LẠC QUAN NHÌN THẤY",
+   "mau": "#3fa877",
+   "muc": [
+    {
+     "t": "Vietcap nâng Long Châu +4%",
+     "s": "So với báo cáo tháng 9",
+     "at": [
+      0,
+      0.0
+     ]
+    },
+    {
+     "t": "Vietcap nâng FPT Shop +34%",
+     "s": "Cũng được nâng định giá",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "MA20 trên MA50",
+     "s": "Từ ngày 11/8",
+     "at": [
+      2,
+      0.0
+     ]
+    }
+   ],
+   "phude": [
+    [
+     "Long Châu nâng **+4%**"
+    ],
+    [
+     "FPT Shop nâng **+34%**"
+    ],
+    [
+     "**MA20** trên **MA50** từ 11/8"
+    ]
+   ]
+  },
+  {
+   "id": "S5B",
+   "kieu": "lk",
+   "chuong": "— HAI PHE —",
+   "tieude": "PHE THẬN TRỌNG NHÌN THẤY",
+   "mau": "#c9533e",
+   "muc": [
+    {
+     "t": "Chỉ là ước tính",
+     "s": "Không phải giá giao dịch",
+     "at": [
+      0,
+      0.0
+     ]
+    },
+    {
+     "t": "ESOP 5% vốn",
+     "s": "Làm loãng dần FPT Retail",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "Cản 152–154,8",
+     "s": "Đỉnh 21/10: 152.000 đ",
+     "at": [
+      2,
+      0.0
+     ]
+    }
+   ],
+   "chot": {
+    "a": "HAI PHE ĐỀU CÓ LÝ",
+    "b": "SỐ THẬT MỚI KIỂM CHỨNG",
+    "at": [
+     2,
+     0.5
+    ]
+   },
+   "phude": [
+    [
+     "Chỉ là **ước tính**"
+    ],
+    [
+     "**ESOP** 5% làm loãng dần"
+    ],
+    [
+     "Cản **152–154,8**, đỉnh 21/10"
+    ]
+   ]
+  },
+  {
+   "id": "S5C",
+   "kieu": "lk",
+   "chuong": "— GÓC NHÌN CỦA MÌNH —",
+   "tieude": "CHỜ 3 TÍN HIỆU",
+   "mau": "#a67c1a",
+   "muc": [
+    {
+     "t": "Doanh thu Long Châu quý IV",
+     "s": "Kiểm chứng định giá",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "ESOP đúng lộ trình",
+     "s": "Mỗi năm 1% vốn",
+     "at": [
+      2,
+      0.0
+     ]
+    },
+    {
+     "t": "Giá vượt cản 154,8",
+     "s": "Vùng cản 152–154,8",
+     "at": [
+      3,
+      0.0
+     ]
+    }
+   ],
+   "chot": {
+    "a": "ĐỊNH GIÁ CẦN SỐ THẬT",
+    "b": "KHÔNG CHỈ TÊN CHUỖI",
+    "at": [
+     3,
+     0.5
+    ]
+   },
+   "phude": [
+    [
+     "Góc nhìn của mình:",
+     "chờ **3 tín hiệu**"
+    ],
+    [
+     "**Doanh thu** Long Châu quý bốn"
+    ],
+    [
+     "ESOP đúng **lộ trình**"
+    ],
+    [
+     "Giá vượt cản **154,8**"
+    ]
+   ]
+  },
+  {
+   "id": "S6",
+   "kieu": "ket",
+   "chuong": "— KẾT —",
+   "the": [
+    {
+     "nhan": "NHÀ THUỐC",
+     "t": "44.429 TỶ",
+     "co": 70,
+     "at": [
+      0,
+      0.2
+     ]
+    },
+    {
+     "nhan": "CỬA HÀNG CÔNG NGHỆ",
+     "t": "2.427 TỶ",
+     "co": 52,
+     "mau": "#c9533e",
+     "at": [
+      1,
+      0.35
+     ]
+    }
+   ],
+   "hoi": {
+    "t": "Nhà thuốc hay **cửa hàng điện thoại**, anh chị ghé nhiều hơn?",
+    "at": [
+     2,
+     0.0
+    ]
+   },
+   "phude": [
+    [
+     "Nhà thuốc **44.429 tỷ**"
+    ],
+    [
+     "Cửa hàng công nghệ **2.427 tỷ**"
+    ],
+    [
+     "Nhà thuốc hay **cửa hàng điện thoại**,",
+     "anh chị ghé nhiều hơn?"
+    ]
+   ]
+  },
+  {
+   "id": "OUT",
+   "kieu": "outro",
+   "phude": []
+  }
+ ]
+}

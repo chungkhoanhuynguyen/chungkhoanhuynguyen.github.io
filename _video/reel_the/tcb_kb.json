@@ -1,0 +1,51 @@
+{
+ "key": "TCB_THE",
+ "title": "tcb the",
+ "scenes": [
+  {
+   "id": "S1",
+   "say": "Techcombank huy động bảy nghìn năm trăm tỷ trái phiếu trong một tuần, lãi suất gần chín phần trăm một năm. Chuyện gì đây?",
+   "hold": 0.3
+  },
+  {
+   "id": "S2",
+   "say": "Ngày mười hai, mười bảy và mười tám tháng mười một, Techcombank phát hành ba lô trái phiếu riêng lẻ, mỗi lô hai nghìn năm trăm tỷ. Kỳ hạn ba mươi sáu tháng, nguồn vốn dùng cho hoạt động cho vay.",
+   "hold": 0.3
+  },
+  {
+   "id": "S3",
+   "say": "Ba lô trái phiếu, tổng bảy nghìn năm trăm tỷ, kỳ hạn ba mươi sáu tháng. Lô ngày mười hai lãi chín phần trăm, hai lô sau tám phẩy chín, và cổ phiếu TCB giảm tám phần trăm từ đỉnh tháng mười.",
+   "hold": 0.3
+  },
+  {
+   "id": "S4",
+   "say": "Số tiền này dùng để cho vay, trong lúc lãi suất cho vay bình quân vượt mười một phần trăm một năm. Theo MarketTimes, nợ xấu toàn ngành chín tháng lên hai phẩy ba phần trăm, áp lực vốn chưa hạ nhiệt.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5",
+   "say": "Về kỹ thuật, đường trung bình hai mươi cắt xuống đường năm mươi ngày mười chín tháng mười một. Vùng hai mươi mốt phẩy tám đến hai mươi hai phẩy tám là cản gần, vùng hai mươi phẩy mười lăm đến hai mươi phẩy sáu là hỗ trợ. Ngày hai mươi, giá hồi lên hai mươi mốt phẩy hai.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5A",
+   "say": "Huy động được bảy nghìn năm trăm tỷ trong một tuần. Hai lô sau có lãi suất tám phẩy chín, thấp hơn chín phần trăm. Và giá hồi lên hai mươi mốt nghìn hai trăm đồng.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5B",
+   "say": "Chi phí vốn gần chín phần trăm một năm. Nợ xấu ngành hai phẩy ba phần trăm. Và đường trung bình hai mươi cắt xuống đường năm mươi.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5C",
+   "say": "Góc nhìn của mình: chờ ba tín hiệu. Một, lãi suất huy động hạ nhiệt. Hai, giá vượt được cản hai mươi hai phẩy tám. Ba, nợ xấu toàn ngành ngừng tăng.",
+   "hold": 0.3
+  },
+  {
+   "id": "S6",
+   "say": "Ba lô trái phiếu trong một tuần. Lãi suất thì khác từng lô. Anh chị thấy vốn rẻ hay vốn dễ huy động, cái nào quan trọng hơn?",
+   "hold": 1.2
+  }
+ ]
+}

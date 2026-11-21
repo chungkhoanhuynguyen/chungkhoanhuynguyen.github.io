@@ -1,0 +1,51 @@
+{
+ "key": "VHM_THE",
+ "title": "vhm the",
+ "scenes": [
+  {
+   "id": "S1",
+   "say": "Giá rao chung cư tại nhiều dự án Hà Nội giảm tới mười bốn phần trăm chỉ sau một quý. Chuyện gì đang xảy ra?",
+   "hold": 0.3
+  },
+  {
+   "id": "S2",
+   "say": "Theo Batdongsan chấm com, giá rao của mười dự án chung cư nổi bật ở Hà Nội đều giảm trong quý ba, mạnh nhất là mười bốn phần trăm. Mặt bằng chung cư giảm bốn phần trăm, đất nền giảm mười một phần trăm.",
+   "hold": 0.3
+  },
+  {
+   "id": "S3",
+   "say": "Hai dự án giảm mạnh nhất là The Sapphire ở Vinhomes Smart City và Lumi Hanoi, cùng mười bốn phần trăm, Vinhomes Ocean Park giảm mười một. Theo CBRE, giao dịch sơ cấp chín tháng giảm khoảng ba mươi phần trăm, và cổ phiếu VHM giảm hai mươi ba phần trăm từ đỉnh tháng sáu.",
+   "hold": 0.3
+  },
+  {
+   "id": "S4",
+   "say": "Nhưng giá thấp hơn chưa đủ kéo người mua quay lại. Mức quan tâm chung cư Hà Nội tháng mười giảm chín phần trăm, một bộ phận chọn gửi tiết kiệm thay vì mua.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5",
+   "say": "Về kỹ thuật, đường trung bình hai mươi cắt xuống đường năm mươi ngày ba mươi tháng chín. Vùng sáu mươi ba phẩy chín đến sáu mươi tư phẩy chín là cản gần, vùng năm mươi bảy phẩy sáu đến năm mươi tám phẩy chín là hỗ trợ. Ngày hai mươi tháng mười, giá chạm đáy năm mươi bảy phẩy sáu với khối lượng tăng mạnh.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5A",
+   "say": "Vietcap kỳ vọng thị trường sơ cấp quý bốn cải thiện. Nhà nước đã định hướng giảm lãi suất từ tháng mười. Và giá rao thấp hơn quý trước.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5B",
+   "say": "Cả năm hai nghìn không trăm hai mươi sáu, thị trường sơ cấp vẫn dự báo giảm. Chín tháng giảm khoảng ba mươi phần trăm. Cổ phiếu VHM giảm hai mươi ba phần trăm từ đỉnh.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5C",
+   "say": "Góc nhìn của mình: chờ ba tín hiệu. Một, giao dịch sơ cấp quý bốn cải thiện thật. Hai, giá rao ngừng giảm. Ba, giá vượt được cản sáu mươi tư phẩy chín.",
+   "hold": 0.3
+  },
+  {
+   "id": "S6",
+   "say": "Giá rao giảm tới mười bốn phần trăm. Còn người mua thì chưa vội. Anh chị thấy giá rao hay lãi suất, cái nào kéo người mua quay về trước?",
+   "hold": 1.2
+  }
+ ]
+}

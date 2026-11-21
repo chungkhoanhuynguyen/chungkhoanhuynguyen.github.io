@@ -1,0 +1,539 @@
+{
+ "ma": "VHM",
+ "gia_n": 125,
+ "kenh": "@chungkhoanhuynguyen",
+ "ngay": "22/11",
+ "web": "chungkhoanhuynguyen.com",
+ "disclaimer": "Quan điểm cá nhân, không phải khuyến nghị đầu tư",
+ "scenes": [
+  {
+   "id": "S1",
+   "kieu": "hook",
+   "dong": [
+    {
+     "t": "GIÁ RAO GIẢM 14%",
+     "co": 96,
+     "y": 700,
+     "at": -1
+    },
+    {
+     "t": "CHUNG CƯ HÀ NỘI?",
+     "co": 81,
+     "y": 820,
+     "at": -1,
+     "do": 1
+    }
+   ],
+   "dau": {
+    "nhan": "VHM TỪ ĐỈNH 26/6",
+    "t": "-23%",
+    "at": -1,
+    "y": 1020
+   },
+   "phude": [
+    [
+     "Giá rao chung cư Hà Nội",
+     "giảm tới **14%**",
+     "chỉ sau **một quý**"
+    ],
+    [
+     "**Ai đang bán?**"
+    ]
+   ]
+  },
+  {
+   "id": "S2",
+   "kieu": "tin",
+   "chuong": "— GIÁ RAO ĐI XUỐNG —",
+   "tin": {
+    "moc": "VIETNAMBIZ · 20/11",
+    "t": "Giá rao chung cư Hà Nội giảm, có nơi mất 14%",
+    "at": [
+     0,
+     0.3
+    ]
+   },
+   "chart": {
+    "at": [
+     0,
+     0.5
+    ],
+    "dur": 4.0,
+    "opt": {
+     "ymin": 56,
+     "ymax": 84,
+     "step": 4
+    },
+    "marks": [
+     {
+      "t": "2026-06-26",
+      "g": 78.0,
+      "dx": 50,
+      "dy": 70,
+      "chu": "26/6: 78.000",
+      "at": [
+       0,
+       0.9
+      ]
+     },
+     {
+      "t": "2026-11-20",
+      "g": 60.4,
+      "dx": -40,
+      "dy": -160,
+      "chu": "20/11: 60.400",
+      "at": [
+       1,
+       0.4
+      ],
+      "vang": 1
+     }
+    ]
+   },
+   "chot": {
+    "a": "CHUNG CƯ HÀ NỘI −4%",
+    "b": "ĐẤT NỀN −11%",
+    "do": 1,
+    "at": [
+     1,
+     0.7
+    ]
+   },
+   "phude": [
+    [
+     "Batdongsan.com.vn: **10** dự án",
+     "đều giảm giá rao quý ba",
+     "mạnh nhất **−14%**"
+    ],
+    [
+     "Mặt bằng chung cư **−4%**",
+     "đất nền **−11%**"
+    ]
+   ]
+  },
+  {
+   "id": "S3",
+   "kieu": "so",
+   "chuong": "— CON SỐ THẬT —",
+   "the": [
+    {
+     "nhan": "THE SAPPHIRE VÀ LUMI GIẢM",
+     "so": 14,
+     "dec": 0,
+     "dv": "%",
+     "co": 170,
+     "y": 300,
+     "h": "400px",
+     "at": [
+      0,
+      0.04
+     ],
+     "tien": "-"
+    },
+    {
+     "nhan": "OCEAN PARK GIẢM",
+     "so": 11,
+     "dec": 0,
+     "dv": "%",
+     "co": 96,
+     "y": 740,
+     "h": "300px",
+     "x": 64,
+     "w": 462,
+     "at": [
+      0,
+      0.8
+     ],
+     "tien": "-"
+    },
+    {
+     "nhan": "GIAO DỊCH SƠ CẤP 9T",
+     "so": 30,
+     "dec": 0,
+     "dv": "%",
+     "co": 96,
+     "y": 740,
+     "h": "300px",
+     "x": 554,
+     "w": 462,
+     "at": [
+      1,
+      0.1
+     ],
+     "tien": "-"
+    },
+    {
+     "nhan": "VHM TỪ ĐỈNH 26/6",
+     "so": 23.0,
+     "dec": 0,
+     "co": 130,
+     "y": 1080,
+     "h": "320px",
+     "at": [
+      1,
+      0.7
+     ],
+     "tien": "-",
+     "hau": "%",
+     "mau": "#c9533e",
+     "sub": "Giá 20/11: 60.400 đ"
+    }
+   ],
+   "chot": {
+    "a": "GIÁ RAO GIẢM",
+    "b": "THANH KHOẢN CHƯA VỀ",
+    "do": 1,
+    "at": [
+     1,
+     0.9
+    ]
+   },
+   "phude": [
+    [
+     "Sapphire (Smart City) và Lumi",
+     "cùng **−14%**, Ocean Park **−11%**"
+    ],
+    [
+     "CBRE: giao dịch sơ cấp 9 tháng",
+     "giảm khoảng **30%**, VHM giảm **23%**"
+    ]
+   ]
+  },
+  {
+   "id": "S4",
+   "kieu": "ds",
+   "chuong": "— NGƯỜI MUA CHƯA VỘI —",
+   "muc": [
+    {
+     "so": "GIÁ THẤP CHƯA ĐỦ",
+     "t": "Lãi suất vẫn là rào cản",
+     "at": [
+      0,
+      0.3
+     ]
+    },
+    {
+     "so": "QUAN TÂM −9%",
+     "t": "Chung cư Hà Nội, tháng 10",
+     "at": [
+      1,
+      0.45
+     ]
+    },
+    {
+     "so": "GỬI TIẾT KIỆM",
+     "t": "Một bộ phận chọn tiết kiệm",
+     "at": [
+      1,
+      0.85
+     ],
+     "mau": "#c9533e"
+    }
+   ],
+   "chot": {
+    "a": "GIÁ GIẢM CHƯA ĐỦ",
+    "b": "KÉO NGƯỜI MUA QUAY LẠI",
+    "at": [
+     1,
+     0.9
+    ]
+   },
+   "phude": [
+    [
+     "Nhưng giá thấp hơn",
+     "**chưa đủ** kéo người mua về"
+    ],
+    [
+     "Quan tâm chung cư tháng 10 **−9%**",
+     "nhiều người chọn **gửi tiết kiệm**"
+    ]
+   ]
+  },
+  {
+   "id": "S5",
+   "kieu": "chart",
+   "chuong": "— KỸ THUẬT —",
+   "opt": {
+    "ymin": 56,
+    "ymax": 84,
+    "step": 4,
+    "dur": 3.0,
+    "from": 45
+   },
+   "marks": [
+    {
+     "t": "2026-09-30",
+     "g": 68.5,
+     "dx": -40,
+     "dy": -190,
+     "chu": "30/9: MA20 cắt xuống MA50",
+     "at": [
+      0,
+      0.5
+     ],
+     "vang": 1
+    },
+    {
+     "t": "2026-10-20",
+     "g": 57.8,
+     "dx": -40,
+     "dy": 170,
+     "chu": "20/10: đáy 57,6, KL tăng mạnh",
+     "at": [
+      2,
+      0.3
+     ]
+    }
+   ],
+   "vung": [
+    {
+     "lo": 63.9,
+     "hi": 64.9,
+     "mau": "#c9533e",
+     "txt": "CẢN 63,9–64,9",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "lo": 57.6,
+     "hi": 58.9,
+     "mau": "#3fa877",
+     "txt": "HỖ TRỢ 57,6–58,9",
+     "at": [
+      1,
+      0.6
+     ],
+     "lbl_below": 1
+    }
+   ],
+   "chot": {
+    "a": "CẢN 63,9–64,9",
+    "b": "HỖ TRỢ 57,6–58,9",
+    "do": 1,
+    "at": [
+     2,
+     0.6
+    ]
+   },
+   "phude": [
+    [
+     "Về kỹ thuật, **MA20 cắt xuống MA50**",
+     "ngày **30/9**"
+    ],
+    [
+     "Cản gần **63,9–64,9**",
+     "hỗ trợ **57,6–58,9**"
+    ],
+    [
+     "Ngày **20/10**: đáy **57,6**,",
+     "khối lượng tăng mạnh"
+    ]
+   ]
+  },
+  {
+   "id": "S5A",
+   "kieu": "lk",
+   "chuong": "— HAI PHE —",
+   "tieude": "PHE LẠC QUAN NHÌN THẤY",
+   "mau": "#3fa877",
+   "muc": [
+    {
+     "t": "Sơ cấp quý IV dự kiến cải thiện",
+     "s": "Theo Vietcap",
+     "at": [
+      0,
+      0.0
+     ]
+    },
+    {
+     "t": "Định hướng giảm lãi suất từ 10/2026",
+     "s": "Có thể hỗ trợ mở bán",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "Giá rao thấp hơn quý trước",
+     "s": "Nhiều dự án giảm 11–14%",
+     "at": [
+      2,
+      0.0
+     ]
+    }
+   ],
+   "phude": [
+    [
+     "Sơ cấp quý bốn **dự kiến cải thiện**"
+    ],
+    [
+     "Lãi suất **định hướng giảm**"
+    ],
+    [
+     "Giá rao **thấp hơn** quý trước"
+    ]
+   ]
+  },
+  {
+   "id": "S5B",
+   "kieu": "lk",
+   "chuong": "— HAI PHE —",
+   "tieude": "PHE THẬN TRỌNG NHÌN THẤY",
+   "mau": "#c9533e",
+   "muc": [
+    {
+     "t": "Cả năm 2026 sơ cấp vẫn giảm",
+     "s": "Theo CBRE và Vietcap",
+     "at": [
+      0,
+      0.0
+     ]
+    },
+    {
+     "t": "Sơ cấp 9T giảm khoảng 30%",
+     "s": "Hà Nội và TP.HCM",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "Giá VHM giảm 23% từ đỉnh",
+     "s": "Đỉnh 78.000 đ, nay 60.400 đ",
+     "at": [
+      2,
+      0.0
+     ]
+    }
+   ],
+   "chot": {
+    "a": "HAI PHE ĐỀU CÓ LÝ",
+    "b": "THANH KHOẢN LÀ ẨN SỐ",
+    "at": [
+     2,
+     0.5
+    ]
+   },
+   "phude": [
+    [
+     "Cả năm sơ cấp **vẫn giảm**"
+    ],
+    [
+     "Sơ cấp 9 tháng **−30%**"
+    ],
+    [
+     "VHM giảm **23%** từ đỉnh"
+    ]
+   ]
+  },
+  {
+   "id": "S5C",
+   "kieu": "lk",
+   "chuong": "— GÓC NHÌN CỦA MÌNH —",
+   "tieude": "CHỜ 3 TÍN HIỆU",
+   "mau": "#a67c1a",
+   "muc": [
+    {
+     "t": "Sơ cấp quý IV cải thiện thật",
+     "s": "Theo số liệu CBRE",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "Giá rao ngừng giảm",
+     "s": "Báo cáo quý IV",
+     "at": [
+      2,
+      0.0
+     ]
+    },
+    {
+     "t": "Giá vượt cản 64,9",
+     "s": "Vùng cản 63,9–64,9",
+     "at": [
+      3,
+      0.0
+     ]
+    }
+   ],
+   "chot": {
+    "a": "THANH KHOẢN",
+    "b": "QUAN TRỌNG HƠN GIÁ RAO",
+    "at": [
+     3,
+     0.5
+    ]
+   },
+   "phude": [
+    [
+     "Góc nhìn của mình:",
+     "chờ **3 tín hiệu**"
+    ],
+    [
+     "**Sơ cấp** quý bốn cải thiện thật"
+    ],
+    [
+     "**Giá rao** ngừng giảm"
+    ],
+    [
+     "Giá vượt cản **64,9**"
+    ]
+   ]
+  },
+  {
+   "id": "S6",
+   "kieu": "ket",
+   "chuong": "— KẾT —",
+   "the": [
+    {
+     "nhan": "GIÁ RAO",
+     "t": "GIẢM 14%",
+     "co": 70,
+     "at": [
+      0,
+      0.2
+     ]
+    },
+    {
+     "nhan": "NGƯỜI MUA",
+     "t": "CHƯA VỘI",
+     "co": 70,
+     "mau": "#c9533e",
+     "at": [
+      1,
+      0.35
+     ]
+    }
+   ],
+   "hoi": {
+    "t": "Giá rao hay **lãi suất**, cái nào giảm trước kéo người mua về?",
+    "at": [
+     2,
+     0.0
+    ]
+   },
+   "phude": [
+    [
+     "**Giá rao** giảm tới **14%**"
+    ],
+    [
+     "Còn **người mua**",
+     "thì chưa vội"
+    ],
+    [
+     "Giá rao hay **lãi suất**,",
+     "cái nào kéo người mua về trước?"
+    ]
+   ]
+  },
+  {
+   "id": "OUT",
+   "kieu": "outro",
+   "phude": []
+  }
+ ]
+}

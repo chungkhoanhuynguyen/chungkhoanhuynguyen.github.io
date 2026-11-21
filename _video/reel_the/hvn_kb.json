@@ -1,0 +1,51 @@
+{
+ "key": "HVN_THE",
+ "title": "hvn the",
+ "scenes": [
+  {
+   "id": "S1",
+   "say": "Ba mươi bốn hãng bay quốc tế muốn lùi thời điểm chuyển sang sân bay Long Thành. Vì sao?",
+   "hold": 0.3
+  },
+  {
+   "id": "S2",
+   "say": "Theo báo cáo gửi lãnh đạo Chính phủ, ba mươi bốn hãng muốn lùi thời điểm chuyển từ Tân Sơn Nhất sang Long Thành. Hai mươi bốn hãng khai thác từ mùa đông hai nghìn không trăm hai mươi bảy, mười hãng từ mùa hè hai nghìn không trăm hai mươi tám hoặc muộn hơn.",
+   "hold": 0.3
+  },
+  {
+   "id": "S3",
+   "say": "Các hãng cần từ sáu đến mười hai tháng để chuẩn bị đường bay, tàu bay, tổ bay và hệ thống bán vé. Giai đoạn đầu Long Thành khai thác tối đa ba trăm sáu mươi sáu chuyến mỗi tuần, quốc tế chỉ bốn mươi bốn, và cổ phiếu HVN giảm mười ba phần trăm từ đỉnh tháng bảy.",
+   "hold": 0.3
+  },
+  {
+   "id": "S4",
+   "say": "Nhưng các hãng đều ủng hộ chuyển sang Long Thành vì hạ tầng hiện đại, công suất đủ cho tăng trưởng. Kế hoạch tới tháng ba năm hai nghìn không trăm hai mươi bảy là hai trăm hai mươi sáu chuyến mỗi tuần, các hãng cần sáu đến mười hai tháng chuẩn bị.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5",
+   "say": "Về kỹ thuật, đường trung bình hai mươi cắt lên đường năm mươi ngày mười tháng mười một. Vùng hai mươi ba phẩy một đến hai mươi ba phẩy bốn là cản gần, vùng hai mươi phẩy mười lăm đến hai mươi phẩy hai lăm là hỗ trợ. Ngày mười chín, khối lượng tăng vọt hơn năm lần mức trung bình.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5A",
+   "say": "Các hãng đều ủng hộ chuyển sang Long Thành. Khối lượng ngày mười chín tăng vọt. Và đường trung bình hai mươi cắt lên đường năm mươi.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5B",
+   "say": "Ba mươi bốn hãng muốn lùi lịch. Quốc tế chỉ bốn mươi bốn chuyến mỗi tuần giai đoạn đầu. Cổ phiếu giảm mười ba phần trăm từ đỉnh.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5C",
+   "say": "Góc nhìn của mình: chờ ba tín hiệu. Một, chốt lịch chuyển chính thức. Hai, giá vượt được cản hai mươi ba phẩy bốn. Ba, số chuyến khai thác tăng dần.",
+   "hold": 0.3
+  },
+  {
+   "id": "S6",
+   "say": "Lịch bay thì xin lùi được. Còn giá cổ phiếu thì không xin lùi. Anh chị thấy lịch chuyển sân bay hay giá cổ phiếu, cái nào khó đoán hơn?",
+   "hold": 1.2
+  }
+ ]
+}

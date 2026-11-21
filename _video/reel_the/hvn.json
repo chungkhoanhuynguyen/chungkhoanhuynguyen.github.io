@@ -1,0 +1,537 @@
+{
+ "ma": "HVN",
+ "gia_n": 125,
+ "kenh": "@chungkhoanhuynguyen",
+ "ngay": "22/11",
+ "web": "chungkhoanhuynguyen.com",
+ "disclaimer": "Quan điểm cá nhân, không phải khuyến nghị đầu tư",
+ "scenes": [
+  {
+   "id": "S1",
+   "kieu": "hook",
+   "dong": [
+    {
+     "t": "34 HÃNG BAY",
+     "co": 96,
+     "y": 700,
+     "at": -1
+    },
+    {
+     "t": "XIN LÙI LONG THÀNH?",
+     "co": 76,
+     "y": 820,
+     "at": -1,
+     "do": 1
+    }
+   ],
+   "dau": {
+    "nhan": "HVN TỪ ĐỈNH 8/7",
+    "t": "-13%",
+    "at": -1,
+    "y": 1020
+   },
+   "phude": [
+    [
+     "**34** hãng bay quốc tế",
+     "muốn **lùi** chuyển sang",
+     "sân bay Long Thành"
+    ],
+    [
+     "**Vì sao?**"
+    ]
+   ]
+  },
+  {
+   "id": "S2",
+   "kieu": "tin",
+   "chuong": "— XIN LÙI LỊCH —",
+   "tin": {
+    "moc": "VIETNAMBIZ · 19/11",
+    "t": "34 hãng bay quốc tế muốn lùi giờ sang Long Thành",
+    "at": [
+     0,
+     0.3
+    ]
+   },
+   "chart": {
+    "at": [
+     0,
+     0.5
+    ],
+    "dur": 4.0,
+    "opt": {
+     "ymin": 19,
+     "ymax": 27,
+     "step": 1
+    },
+    "marks": [
+     {
+      "t": "2026-07-08",
+      "g": 26.3,
+      "dx": 50,
+      "dy": 70,
+      "chu": "8/7: 26.300",
+      "at": [
+       0,
+       0.9
+      ]
+     },
+     {
+      "t": "2026-11-20",
+      "g": 22.95,
+      "dx": -40,
+      "dy": -160,
+      "chu": "20/11: 22.950",
+      "at": [
+       1,
+       0.4
+      ],
+      "vang": 1
+     }
+    ]
+   },
+   "chot": {
+    "a": "24 HÃNG: MÙA ĐÔNG 2027",
+    "b": "10 HÃNG: MÙA HÈ 2028+",
+    "do": 1,
+    "at": [
+     1,
+     0.7
+    ]
+   },
+   "phude": [
+    [
+     "Báo cáo gửi Chính phủ: **34** hãng",
+     "muốn **lùi** chuyển từ Tân Sơn Nhất"
+    ],
+    [
+     "**24** hãng: mùa đông **2027**",
+     "**10** hãng: mùa hè **2028** hoặc muộn hơn"
+    ]
+   ]
+  },
+  {
+   "id": "S3",
+   "kieu": "so",
+   "chuong": "— CON SỐ THẬT —",
+   "the": [
+    {
+     "nhan": "HÃNG MUỐN LÙI LỊCH",
+     "so": 34,
+     "dec": 0,
+     "dv": "HÃNG",
+     "co": 150,
+     "y": 300,
+     "h": "400px",
+     "at": [
+      0,
+      0.04
+     ]
+    },
+    {
+     "nhan": "KHAI THÁC TỐI ĐA",
+     "so": 366,
+     "dec": 0,
+     "dv": "CHUYẾN/TUẦN",
+     "co": 96,
+     "y": 740,
+     "h": "300px",
+     "x": 64,
+     "w": 462,
+     "at": [
+      1,
+      0.1
+     ],
+     "tien": ""
+    },
+    {
+     "nhan": "TRONG ĐÓ QUỐC TẾ",
+     "so": 44,
+     "dec": 0,
+     "dv": "CHUYẾN/TUẦN",
+     "co": 96,
+     "y": 740,
+     "h": "300px",
+     "x": 554,
+     "w": 462,
+     "at": [
+      1,
+      0.4
+     ],
+     "tien": ""
+    },
+    {
+     "nhan": "HVN TỪ ĐỈNH 8/7",
+     "so": 13.0,
+     "dec": 0,
+     "co": 130,
+     "y": 1080,
+     "h": "320px",
+     "at": [
+      1,
+      0.7
+     ],
+     "tien": "-",
+     "hau": "%",
+     "mau": "#c9533e",
+     "sub": "Giá 20/11: 22.950 đ"
+    }
+   ],
+   "chot": {
+    "a": "QUỐC TẾ CHỈ 44/366",
+    "b": "CHUYẾN MỖI TUẦN",
+    "do": 1,
+    "at": [
+     1,
+     0.9
+    ]
+   },
+   "phude": [
+    [
+     "Các hãng cần **6–12 tháng** chuẩn bị",
+     "đường bay, tàu bay, tổ bay, bán vé"
+    ],
+    [
+     "Giai đoạn đầu tối đa **366** chuyến/tuần",
+     "quốc tế **44**, HVN giảm **13%** từ đỉnh"
+    ]
+   ]
+  },
+  {
+   "id": "S4",
+   "kieu": "ds",
+   "chuong": "— NHƯNG ĐỀU ỦNG HỘ —",
+   "muc": [
+    {
+     "so": "ĐỀU ỦNG HỘ",
+     "t": "Hạ tầng hiện đại, công suất đủ",
+     "at": [
+      0,
+      0.3
+     ]
+    },
+    {
+     "so": "TỚI THÁNG 3/2027",
+     "t": "Dự kiến 226 chuyến mỗi tuần",
+     "at": [
+      1,
+      0.45
+     ]
+    },
+    {
+     "so": "CẦN 6–12 THÁNG",
+     "t": "Để lập kế hoạch khai thác",
+     "at": [
+      1,
+      0.85
+     ],
+     "mau": "#c9533e"
+    }
+   ],
+   "chot": {
+    "a": "ỦNG HỘ CHUYỂN",
+    "b": "NHƯNG CẦN THÊM THỜI GIAN",
+    "at": [
+     1,
+     0.9
+    ]
+   },
+   "phude": [
+    [
+     "Nhưng các hãng **đều ủng hộ** chuyển",
+     "vì hạ tầng hiện đại"
+    ],
+    [
+     "Tới tháng **3/2027**: **226** chuyến/tuần",
+     "các hãng cần **6–12 tháng** chuẩn bị"
+    ]
+   ]
+  },
+  {
+   "id": "S5",
+   "kieu": "chart",
+   "chuong": "— KỸ THUẬT —",
+   "opt": {
+    "ymin": 19,
+    "ymax": 26,
+    "step": 1,
+    "dur": 3.0,
+    "from": 45
+   },
+   "marks": [
+    {
+     "t": "2026-11-10",
+     "g": 22.85,
+     "dx": -40,
+     "dy": -190,
+     "chu": "10/11: MA20 cắt lên MA50",
+     "at": [
+      0,
+      0.5
+     ],
+     "vang": 1
+    },
+    {
+     "t": "2026-11-19",
+     "g": 23.1,
+     "dx": -40,
+     "dy": -170,
+     "chu": "19/11: KL tăng vọt, giá 23,1",
+     "at": [
+      2,
+      0.3
+     ]
+    }
+   ],
+   "vung": [
+    {
+     "lo": 23.1,
+     "hi": 23.4,
+     "mau": "#c9533e",
+     "txt": "CẢN 23,1–23,4",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "lo": 20.15,
+     "hi": 20.25,
+     "mau": "#3fa877",
+     "txt": "HỖ TRỢ 20,15–20,25",
+     "at": [
+      1,
+      0.6
+     ],
+     "lbl_below": 1
+    }
+   ],
+   "chot": {
+    "a": "CẢN 23,1–23,4",
+    "b": "HỖ TRỢ 20,15–20,25",
+    "do": 1,
+    "at": [
+     2,
+     0.6
+    ]
+   },
+   "phude": [
+    [
+     "Về kỹ thuật, **MA20 cắt lên MA50**",
+     "ngày **10/11**"
+    ],
+    [
+     "Cản gần **23,1–23,4**",
+     "hỗ trợ **20,15–20,25**"
+    ],
+    [
+     "Ngày **19/11**: khối lượng",
+     "tăng vọt **hơn 5 lần** trung bình"
+    ]
+   ]
+  },
+  {
+   "id": "S5A",
+   "kieu": "lk",
+   "chuong": "— HAI PHE —",
+   "tieude": "PHE LẠC QUAN NHÌN THẤY",
+   "mau": "#3fa877",
+   "muc": [
+    {
+     "t": "Các hãng đều ủng hộ chuyển",
+     "s": "Hạ tầng hiện đại",
+     "at": [
+      0,
+      0.0
+     ]
+    },
+    {
+     "t": "Khối lượng 19/11 tăng vọt",
+     "s": "Hơn 5 lần trung bình",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "MA20 cắt lên MA50",
+     "s": "Ngày 10/11",
+     "at": [
+      2,
+      0.0
+     ]
+    }
+   ],
+   "phude": [
+    [
+     "Các hãng **đều ủng hộ** chuyển"
+    ],
+    [
+     "Khối lượng **19/11** tăng vọt"
+    ],
+    [
+     "**MA20** cắt lên **MA50**"
+    ]
+   ]
+  },
+  {
+   "id": "S5B",
+   "kieu": "lk",
+   "chuong": "— HAI PHE —",
+   "tieude": "PHE THẬN TRỌNG NHÌN THẤY",
+   "mau": "#c9533e",
+   "muc": [
+    {
+     "t": "34 hãng muốn lùi lịch",
+     "s": "24 hãng: mùa đông 2027",
+     "at": [
+      0,
+      0.0
+     ]
+    },
+    {
+     "t": "Quốc tế chỉ 44 chuyến/tuần",
+     "s": "Giai đoạn đầu",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "Giá HVN giảm 13% từ đỉnh",
+     "s": "Đỉnh 26.300 đ, nay 22.950 đ",
+     "at": [
+      2,
+      0.0
+     ]
+    }
+   ],
+   "chot": {
+    "a": "HAI PHE ĐỀU CÓ LÝ",
+    "b": "LỊCH CHUYỂN LÀ ẨN SỐ",
+    "at": [
+     2,
+     0.5
+    ]
+   },
+   "phude": [
+    [
+     "**34** hãng muốn lùi lịch"
+    ],
+    [
+     "Quốc tế chỉ **44** chuyến/tuần"
+    ],
+    [
+     "HVN giảm **13%** từ đỉnh"
+    ]
+   ]
+  },
+  {
+   "id": "S5C",
+   "kieu": "lk",
+   "chuong": "— GÓC NHÌN CỦA MÌNH —",
+   "tieude": "CHỜ 3 TÍN HIỆU",
+   "mau": "#a67c1a",
+   "muc": [
+    {
+     "t": "Chốt lịch chuyển chính thức",
+     "s": "Hãng và cơ quan quản lý",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "Giá vượt cản 23,4",
+     "s": "Vùng cản 23,1–23,4",
+     "at": [
+      2,
+      0.0
+     ]
+    },
+    {
+     "t": "Số chuyến tăng dần",
+     "s": "Từ mức 226 chuyến/tuần",
+     "at": [
+      3,
+      0.0
+     ]
+    }
+   ],
+   "chot": {
+    "a": "CHỜ LỊCH CHUYỂN",
+    "b": "CHỐT CHÍNH THỨC",
+    "at": [
+     3,
+     0.5
+    ]
+   },
+   "phude": [
+    [
+     "Góc nhìn của mình:",
+     "chờ **3 tín hiệu**"
+    ],
+    [
+     "Chốt **lịch chuyển** chính thức"
+    ],
+    [
+     "Giá vượt cản **23,4**"
+    ],
+    [
+     "Số chuyến **tăng dần**"
+    ]
+   ]
+  },
+  {
+   "id": "S6",
+   "kieu": "ket",
+   "chuong": "— KẾT —",
+   "the": [
+    {
+     "nhan": "LỊCH BAY",
+     "t": "XIN LÙI ĐƯỢC",
+     "co": 70,
+     "at": [
+      0,
+      0.2
+     ]
+    },
+    {
+     "nhan": "GIÁ CỔ PHIẾU",
+     "t": "KHÔNG XIN LÙI",
+     "co": 58,
+     "mau": "#c9533e",
+     "at": [
+      1,
+      0.35
+     ]
+    }
+   ],
+   "hoi": {
+    "t": "Lịch chuyển sân bay hay **giá cổ phiếu**, cái nào khó đoán hơn?",
+    "at": [
+     2,
+     0.0
+    ]
+   },
+   "phude": [
+    [
+     "**Lịch bay** thì xin lùi được"
+    ],
+    [
+     "**Giá cổ phiếu**",
+     "thì không xin lùi"
+    ],
+    [
+     "Lịch chuyển hay **giá cổ phiếu**,",
+     "cái nào khó đoán hơn?"
+    ]
+   ]
+  },
+  {
+   "id": "OUT",
+   "kieu": "outro",
+   "phude": []
+  }
+ ]
+}

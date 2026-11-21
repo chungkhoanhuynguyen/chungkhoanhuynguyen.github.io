@@ -1,0 +1,51 @@
+{
+ "key": "STB_THE",
+ "title": "stb the",
+ "scenes": [
+  {
+   "id": "S1",
+   "say": "Sacombank bớt bốn nghìn hai trăm chín mươi mốt nhân viên trong chín tháng, lợi nhuận sau thuế lại giảm hơn một nửa. Chuyện gì đây?",
+   "hold": 0.3
+  },
+  {
+   "id": "S2",
+   "say": "Báo cáo quý ba cho thấy Sacombank còn mười một nghìn năm trăm sáu mươi nhân viên, giảm bốn nghìn hai trăm chín mươi mốt người, tức hai mươi bảy phần trăm so với cuối năm ngoái. Tỷ lệ chi phí trên thu nhập giảm từ bốn mươi sáu phẩy một xuống ba mươi hai phẩy sáu phần trăm.",
+   "hold": 0.3
+  },
+  {
+   "id": "S3",
+   "say": "Lợi nhuận sau thuế chín tháng còn bốn nghìn hai trăm bảy mươi tám tỷ, giảm năm mươi phẩy tám phần trăm, vì chi phí dự phòng tăng từ hai nghìn một trăm năm mươi hai lên mười hai nghìn tám trăm bốn mươi tám tỷ. Nợ xấu tăng lên bảy phẩy ba ba phần trăm, và cổ phiếu STB giảm chín phần trăm từ đỉnh tháng chín.",
+   "hold": 0.3
+  },
+  {
+   "id": "S4",
+   "say": "Nhưng thu nhập không yếu: tổng thu nhập hoạt động tăng mười bốn phẩy một phần trăm, lãi từ dịch vụ gấp ba phẩy năm lần. Lãi rớt vì chi phí dự phòng tăng gần sáu lần, và thu nhập lãi thuần giảm mười bảy phẩy tám phần trăm.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5",
+   "say": "Về kỹ thuật, đường trung bình hai mươi cắt xuống đường năm mươi ngày tám tháng mười. Vùng bảy mươi hai đến bảy mươi ba là cản gần, vùng sáu mươi lăm phẩy một đến sáu mươi sáu là hỗ trợ. Ngày hai mươi, giá tăng với khối lượng cao nhất mười lăm phiên.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5A",
+   "say": "Chi phí hoạt động giảm mười chín phẩy ba phần trăm. Chi phí trên thu nhập còn ba mươi hai phẩy sáu, mục tiêu hai mươi bảy. Lãi dịch vụ gấp ba phẩy năm lần.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5B",
+   "say": "Nợ xấu tăng lên bảy phẩy ba ba phần trăm, đầu năm sáu phẩy bốn một. Dự phòng gấp gần sáu lần. Cổ phiếu giảm chín phần trăm từ đỉnh.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5C",
+   "say": "Góc nhìn của mình: chờ ba tín hiệu. Một, nợ xấu ngừng tăng. Hai, giá vượt được cản bảy mươi ba. Ba, có hướng xử lý ba mươi hai phẩy năm phần trăm cổ phần.",
+   "hold": 0.3
+  },
+  {
+   "id": "S6",
+   "say": "Bớt bốn nghìn nhân viên thì chín tháng là làm được. Còn nợ xấu thì chưa bớt. Anh chị thấy nhân sự hay nợ xấu, cái nào khó bớt hơn?",
+   "hold": 1.2
+  }
+ ]
+}
