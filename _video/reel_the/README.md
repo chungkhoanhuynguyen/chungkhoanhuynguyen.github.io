@@ -1,0 +1,5 @@
+# Reel dọc "kiểu thẻ" (1080x1920, navy + thẻ kem viền vàng)
+Dùng cho mã khác: copy `vic.json` -> `<MÃ>.json`, `vic_kb.json` -> `<MÃ>_kb.json`.
+1. `<MÃ>_kb.json`: lời đọc từng cảnh (số viết bằng chữ), id cảnh trùng `<MÃ>.json`. Chạy workflow `vang_tts.yml` (kb=đường dẫn, tag=...) -> `voice.wav` + `timing.json` (tải bằng /tmp/dl.sh hoặc `gh release download`).
+2. `<MÃ>.json`: `ma` (giá lấy từ `_fb/anh_lo/lay_gia.py`), cảnh theo `kieu`: hook (dong, dau=con dấu), tin (tít báo + chart nến có mốc), so (thẻ số đếm lên), ds (danh sách 1-2-3, `ket`=két tiền + xu bay), chart (MA20/50, vùng cản/hỗ trợ), lk (checklist), ket. `phude` = phụ đề (số bằng chữ số, `**vàng**`, mỗi câu 1 mảng chunk), `chot` = câu chốt chương, `at` = [chỉ số câu, tỉ lệ trong câu] hoặc giây.
+3. `python3 mix.py voice.wav timing.json mix.wav` (nhạc lo-fi lùi sau giọng, loudnorm -13) rồi `python3 render.py <MÃ>.json timing.json out.mp4 24 720` (đổi 720 -> 1080 để xuất đủ khung). Cần playwright + ffmpeg; chạy từ máy có `data/c/*.bin`.
