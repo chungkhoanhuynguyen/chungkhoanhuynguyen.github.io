@@ -83,8 +83,8 @@
       "dy": -160,
       "chu": "20/11: 20.450",
       "at": [
-       2,
-       0.5
+       1,
+       0.4
       ],
       "vang": 1
      }
@@ -96,16 +96,13 @@
     "do": 1,
     "at": [
      1,
-     0.5
+     0.7
     ]
    },
    "phude": [
     [
-     "Gốc rễ nằm ở **nguyên liệu**"
-    ],
-    [
-     "Quặng và than mỡ gần như",
-     "nhập khẩu hoàn toàn, **>70%** giá vốn"
+     "Gốc rễ là **nguyên liệu**: quặng, than mỡ",
+     "nhập khẩu gần hết, **>70%** giá vốn"
     ],
     [
      "1 tấn HRC lò cao **~451 USD**",
@@ -193,7 +190,7 @@
     [
      "Mỗi **1%** VND mất giá: giá vốn",
      "tăng **1.255 tỷ**/năm",
-     "= **3,7%** LNST 4 quý gần nhất"
+     "= **3,7%** lợi nhuận sau thuế"
     ],
     [
      "HPG giảm khoảng **16%**",
@@ -220,7 +217,7 @@
      "t": "Độ trễ bằng số ngày tồn kho quý 3/2026",
      "at": [
       1,
-      0.0
+      0.45
      ]
     },
     {
@@ -229,8 +226,8 @@
      "co": 84,
      "mau": "#c43c32",
      "at": [
-      2,
-      0.0
+      1,
+      0.85
      ]
     }
    ],
@@ -239,7 +236,7 @@
     "b": "NGƯỜI MUA, CÓ ĐỘ TRỄ",
     "at": [
      1,
-     0.5
+     0.9
     ]
    },
    "phude": [
@@ -248,12 +245,8 @@
     ],
     [
      "Giá thép nội địa bám giá nhập khẩu",
-     "phần lớn chuyển sang người mua",
-     "độ trễ **~93 ngày** tồn kho"
-    ],
-    [
-     "Hoa Sen, Nam Kim, Tôn Đông Á",
-     "cũng chịu **rủi ro tỷ giá**"
+     "chi phí chuyển sang người mua",
+     "độ trễ **~93 ngày**"
     ]
    ]
   },

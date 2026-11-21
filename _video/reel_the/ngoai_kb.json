@@ -9,12 +9,12 @@
   },
   {
    "id": "S2",
-   "say": "Theo báo Dòng vốn kinh doanh, khối ngoại rút gần năm tỷ đô khỏi HOSE sau hơn mười một tháng. Tuần qua, VN-Index mất mốc một nghìn bảy trăm điểm, khép tuần ở một nghìn sáu trăm tám mươi tám phẩy bảy chín.",
+   "say": "Khối ngoại rút gần năm tỷ đô khỏi HOSE sau hơn mười một tháng. VN-Index mất mốc một nghìn bảy trăm, chốt tuần ở một nghìn sáu trăm tám mươi tám phẩy bảy chín.",
    "hold": 0.3
   },
   {
    "id": "S3",
-   "say": "Từ đầu năm đến hai mươi tháng mười một, khối ngoại bán ròng một trăm hai mươi sáu nghìn ba trăm tám mươi tư tỷ trên HOSE, riêng tuần qua là ba nghìn hai trăm chín mươi tỷ. Còn VN-Index giảm năm phẩy ba sáu phần trăm so với đầu năm.",
+   "say": "Từ đầu năm, khối ngoại bán ròng một trăm hai mươi sáu nghìn ba trăm tám mươi tư tỷ trên HOSE, riêng tuần qua ba nghìn hai trăm chín mươi tỷ. VN-Index giảm năm phẩy ba sáu phần trăm từ đầu năm.",
    "hold": 0.3
   },
   {
@@ -24,7 +24,7 @@
   },
   {
    "id": "S5A",
-   "say": "Phe lạc quan nhìn thấy ba điều. Phiên hai mươi tháng mười một, VN-Index chỉ giảm khoảng một điểm. Khối ngoại vẫn mua ròng POW một trăm năm mươi hai tỷ. Và tự doanh mua ròng chín mươi ba tỷ phiên mười chín.",
+   "say": "Phe lạc quan thấy ba điều. Phiên hai mươi, VN-Index chỉ giảm một điểm. Ngoại vẫn mua ròng POW một trăm năm mươi hai tỷ. Tự doanh mua ròng chín mươi ba tỷ ngày mười chín.",
    "hold": 0.3
   },
   {
