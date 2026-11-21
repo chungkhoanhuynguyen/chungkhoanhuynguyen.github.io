@@ -80,7 +80,7 @@ def clip(src, a, b, l1, l2, out, cues):
     fc = (f"[0:v]split[a][b];[a]scale=-2:{H},crop={W}:{H},boxblur=30:2,eq=brightness=-0.25[bg];"
           f"[b]scale={W}:-2[fg];[bg][fg]overlay=0:520[v1];[v1][1:v]overlay=0:0[v2];"
           f"[v2]subtitles={ap}:fontsdir={FD}[v]")
-    af = f"afade=t=in:d=0.3,afade=t=out:st={max(0, b - a - 0.6):.2f}:d=0.6"
+    af = f"afade=t=in:d=0.3,afade=t=out:st={max(0, b - a - 0.6):.2f}:d=0.6,loudnorm=I=-13:TP=-1.0:LRA=9"  # QL1 21/11: TikTok to hon (anh Huy: tieng hoi be)
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{a:.2f}", "-t", f"{b - a:.2f}", "-i", src, "-i", tp,
                     "-filter_complex", fc, "-map", "[v]", "-map", "0:a", "-af", af,
                     "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-pix_fmt", "yuv420p", "-r", "30",

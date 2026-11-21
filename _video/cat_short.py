@@ -105,7 +105,7 @@ def cat(src, out, a, dmax, hook, cta):
     fc = ("[0:v]split=2[b][f];[b]scale=-2:1920,crop=1080:1920,boxblur=28:2,eq=brightness=-0.18[bg];"
           "[f]scale=1080:-2[fg];[bg][fg]overlay=0:(H-h)/2+40[v1];[v1][1:v]overlay=0:0,format=yuv420p[v]")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", str(a), "-t", "%.2f" % d, "-i", src, "-i", png,
-                    "-filter_complex", fc, "-map", "[v]", "-map", "0:a", "-af", "afade=t=out:st=%.2f:d=0.4" % (d - 0.4),
+                    "-filter_complex", fc, "-map", "[v]", "-map", "0:a", "-af", "afade=t=out:st=%.2f:d=0.4,loudnorm=I=-13:TP=-1.0:LRA=9" % (d - 0.4),
                     "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-c:a", "aac", "-b:a", "160k", "-r", "30", out], check=True)
     os.remove(png); return d
 
