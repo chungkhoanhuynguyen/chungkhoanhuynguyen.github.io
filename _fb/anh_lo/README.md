@@ -16,3 +16,7 @@ Kiểu ảnh anh Huy chọn (FB chính từng lên view nhiều): màn hình app
 - HOOK: dải trắng full ngang, chữ IN HOA đậm 1 dòng, kiểu câu chuyện/drama (không phải câu meme lửng).
 - Chart ngày kiểu web + ĐIỂM KỸ THUẬT nhìn thấy: mũi tên đỏ + nhãn vàng viền đỏ (gãy nền, hồi chạm MA50, đỉnh, KL kỷ lục), đường ngang đứt đoạn (đáy/hỗ trợ đã thủng). cfg.json: hook, muc, diem.
 - Chữ nhỏ chungkhoanhuynguyen.com góc phải dưới. Ảnh lãnh đạo: anh Huy tự chèn góc phải dưới khi đăng.
+
+## Bản 4 (21/11): ẢNH VUÔNG 1080x1080
+- HOOK phải hay tuyệt đối, hài hước tinh tế (chơi chữ/tục ngữ, không chế giễu cá nhân), 1 dòng tự co chữ. Vd: "Vàng thật không sợ lửa. Cổ phiếu vàng thì có." / "AI làm được hết, trừ giữ giá FPT."
+- Điểm kỹ thuật kiểu chuyên nghiệp: vùng giá tô mờ (nền/kháng cự, nhãn phải), đường đứt đoạn xám (đáy), chấm tròn + nhãn viên thuốc đen chữ trắng + dây dẫn mảnh. Không mũi tên đỏ to.
