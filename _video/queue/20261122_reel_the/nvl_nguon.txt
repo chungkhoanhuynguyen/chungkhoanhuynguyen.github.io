@@ -4,3 +4,4 @@ NVL - nguon so lieu (tra 22/11/2026)
 - Chuyen doi 16 trai phieu quoc te thanh ~2,78 trieu CP, gia chuyen doi 34.000 d, gap 3,4 lan thi gia, NVL dong cua 20/11: 9.980 d: Nguoi Dua Tin 21/11/2026; MarketTimes 21/11/2026.
 - VN-Index tuan -33,79 diem ve 1.688,79: MarketTimes 21/11/2026.
 - Gia dong cua NVL, bieu do: du lieu gia web (data/c/NVL.bin).
+- Cảnh kỹ thuật: MA20/MA50, cản/hỗ trợ, mốc ngày tính từ giá đóng cửa/đỉnh/đáy thật trong data/c/*.bin (lay_gia.py, 125 phiên); khối lượng từ cùng nguồn.

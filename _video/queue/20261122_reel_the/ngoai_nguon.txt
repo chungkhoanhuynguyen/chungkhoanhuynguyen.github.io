@@ -4,3 +4,4 @@ KHOI NGOAI / VN-INDEX - nguon so lieu (tra 22/11/2026)
 - Tu doanh mua rong 93 ty phien 19/11: Dong von kinh doanh 19/11/2026.
 - 4/5 phien giam trong tuan: MarketTimes 21/11/2026.
 - Bieu do VN-Index: du lieu gia web (data/c/VNINDEX.bin).
+- Cảnh kỹ thuật: MA20/MA50, cản/hỗ trợ, mốc ngày tính từ giá đóng cửa/đỉnh/đáy thật trong data/c/*.bin (lay_gia.py, 125 phiên); khối lượng từ cùng nguồn.

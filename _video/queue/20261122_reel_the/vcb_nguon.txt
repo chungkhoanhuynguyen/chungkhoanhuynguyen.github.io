@@ -3,3 +3,4 @@ VCB - nguon so lieu (tra 22/11/2026)
 - Mizuho nam 15% von VCB: CafeF 22/11/2026.
 - No xau toan nganh 2,3% 9 thang 2026: VIS Rating qua MarketTimes 21/11/2026.
 - Bieu do: du lieu gia web (data/c/VCB.bin).
+- Cảnh kỹ thuật: MA20/MA50, cản/hỗ trợ, mốc ngày tính từ giá đóng cửa/đỉnh/đáy thật trong data/c/*.bin (lay_gia.py, 125 phiên); khối lượng từ cùng nguồn.

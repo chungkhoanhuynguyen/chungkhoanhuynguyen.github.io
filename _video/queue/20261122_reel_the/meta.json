@@ -11,7 +11,7 @@
   "kenh_de_xuat": "YT_CHINH_SHORTS",
   "gio_goi_y": "2026-11-23T11:30+07:00",
   "title": "NVL chào bán 10.000 đồng, thị giá 9.980: cổ đông có né? | Chứng Khoán Huy Nguyễn",
-  "mo_ta": "Novaland chào bán hơn 800 triệu cổ phiếu cho cổ đông giá 10.000 đồng, thu tối đa khoảng 8.007 tỷ, đã lùi hạn nộp tiền 2 lần (nay đến 28/12), trong khi thị giá phiên 20/11 là 9.980 đồng.\nCùng tuần, 16 trái phiếu quốc tế đổi cổ phiếu giá 34.000 đồng, gấp 3,4 lần thị giá.\nNguồn: Vietnambiz 20/11, Tiền Phong/StockBiz 21/11, Người Đưa Tin 21/11, MarketTimes 21/11/2026.\nQuan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "mo_ta": "Novaland chào bán hơn 800 triệu cổ phiếu cho cổ đông giá 10.000 đồng, thu tối đa khoảng 8.007 tỷ, đã lùi hạn nộp tiền 2 lần (nay đến 28/12), trong khi thị giá phiên 20/11 là 9.980 đồng.\nCùng tuần, 16 trái phiếu quốc tế đổi cổ phiếu giá 34.000 đồng, gấp 3,4 lần thị giá.\nNguồn: Vietnambiz 20/11, Tiền Phong/StockBiz 21/11, Người Đưa Tin 21/11, MarketTimes 21/11/2026.\nKỹ thuật (MA20/MA50, cản/hỗ trợ) tính từ giá đóng cửa thật 6 tháng, chỉ mô tả, không phải khuyến nghị.\nQuan điểm cá nhân, không phải khuyến nghị đầu tư.",
   "tags": [
    "NVL",
    "Novaland",
@@ -26,7 +26,10 @@
   "file_video": "nvl.mp4 (1080x1920)",
   "file_bia": "nvl_bia.jpg",
   "file_nguon": "nvl_nguon.txt",
-  "reel_the_cfg": "_video/reel_the/nvl.json"
+  "reel_the_cfg": "_video/reel_the/nvl.json",
+  "do_dai": "89,4s",
+  "canh_ky_thuat": "MA20 cắt xuống MA50 17/9; cản 10,85–11,0; hỗ trợ 9,6–9,8; KL tăng khi giảm 20/11",
+  "do_to": "-13,1 đến -13,2 LUFS (ebur128)"
  },
  "VCB": {
   "ma": "VCB",
@@ -37,7 +40,7 @@
   "kenh_de_xuat": "TIKTOK_CHINH",
   "gio_goi_y": "2026-11-23T19:30+07:00",
   "title": "VCB mất hơn 210.000 tỷ vốn hóa, khối ngoại bán ròng: vì sao? | Chứng Khoán Huy Nguyễn",
-  "mo_ta": "VCB đóng cửa 50.200 đồng ngày 20/11, thấp nhất từ đầu năm 2023 và giảm 33,4% từ đỉnh 14/1; khối ngoại bán ròng hơn 950 tỷ trong 14/15 phiên đầu tháng 11.\nLãi trước thuế 9 tháng 40.440 tỷ (+22%) nhưng quý 3 đi ngang.\nNguồn: Người Quan Sát 20/11, CafeF 22/11, MarketTimes 21/11/2026.\nQuan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "mo_ta": "VCB đóng cửa 50.200 đồng ngày 20/11, thấp nhất từ đầu năm 2023 và giảm 33,4% từ đỉnh 14/1; khối ngoại bán ròng hơn 950 tỷ trong 14/15 phiên đầu tháng 11.\nLãi trước thuế 9 tháng 40.440 tỷ (+22%) nhưng quý 3 đi ngang.\nNguồn: Người Quan Sát 20/11, CafeF 22/11, MarketTimes 21/11/2026.\nKỹ thuật (MA20/MA50, cản/hỗ trợ) tính từ giá đóng cửa thật 6 tháng, chỉ mô tả, không phải khuyến nghị.\nQuan điểm cá nhân, không phải khuyến nghị đầu tư.",
   "tags": [
    "VCB",
    "Vietcombank",
@@ -51,7 +54,10 @@
   "file_bia": "vcb_bia.jpg",
   "file_nguon": "vcb_nguon.txt",
   "reel_the_cfg": "_video/reel_the/vcb.json",
-  "caption": "VCB mất hơn 210.000 tỷ vốn hóa, khối ngoại bán ròng 14/15 phiên: vì sao? Nguồn: Người Quan Sát 20/11."
+  "caption": "VCB mất hơn 210.000 tỷ vốn hóa, khối ngoại bán ròng 14/15 phiên: vì sao? Nguồn: Người Quan Sát 20/11.",
+  "do_dai": "84,6s",
+  "canh_ky_thuat": "MA20 cắt xuống MA50 7/10; cản 57,5–58,4; hỗ trợ 50,0–50,8; KL tăng 17–18/11",
+  "do_to": "-13,1 đến -13,2 LUFS (ebur128)"
  },
  "HPG": {
   "ma": "HPG",
@@ -62,7 +68,7 @@
   "kenh_de_xuat": "YT_PHU_SHORTS",
   "gio_goi_y": "2026-11-23T11:30+07:00",
   "title": "VND yếu 1%, Hòa Phát (HPG) tốn thêm 1.255 tỷ mỗi năm: đau cỡ nào? | Chứng Khoán Huy Nguyễn",
-  "mo_ta": "Theo tính toán của TCBS Research, mỗi 1% VND mất giá làm giá vốn Hòa Phát tăng khoảng 1.255 tỷ đồng/năm, tương đương 3,7% lợi nhuận sau thuế 4 quý gần nhất; quặng và than mỡ chiếm trên 70% giá vốn.\nGiá HRC nội địa bám giá nhập khẩu nên phần lớn chi phí chuyển sang người mua, độ trễ khoảng 93 ngày.\nNguồn: Vietnambiz 20/11/2026 (TCBS Research), Hòa Phát Nông nghiệp 21/11/2026.\nQuan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "mo_ta": "Theo tính toán của TCBS Research, mỗi 1% VND mất giá làm giá vốn Hòa Phát tăng khoảng 1.255 tỷ đồng/năm, tương đương 3,7% lợi nhuận sau thuế 4 quý gần nhất; quặng và than mỡ chiếm trên 70% giá vốn.\nGiá HRC nội địa bám giá nhập khẩu nên phần lớn chi phí chuyển sang người mua, độ trễ khoảng 93 ngày.\nNguồn: Vietnambiz 20/11/2026 (TCBS Research), Hòa Phát Nông nghiệp 21/11/2026.\nKỹ thuật (MA20/MA50, cản/hỗ trợ) tính từ giá đóng cửa thật 6 tháng, chỉ mô tả, không phải khuyến nghị.\nQuan điểm cá nhân, không phải khuyến nghị đầu tư.",
   "tags": [
    "HPG",
    "Hòa Phát",
@@ -77,7 +83,10 @@
   "file_video": "hpg.mp4 (1080x1920)",
   "file_bia": "hpg_bia.jpg",
   "file_nguon": "hpg_nguon.txt",
-  "reel_the_cfg": "_video/reel_the/hpg.json"
+  "reel_the_cfg": "_video/reel_the/hpg.json",
+  "do_dai": "88,4s",
+  "canh_ky_thuat": "MA20 cắt lên MA50 10/11; cản 21,5–21,9; hỗ trợ 19,6–20,15; giảm KL tăng 18/11",
+  "do_to": "-13,1 đến -13,2 LUFS (ebur128)"
  },
  "NGOAI": {
   "ma": "VNINDEX",
@@ -88,7 +97,7 @@
   "kenh_de_xuat": "YT_CHINH_SHORTS",
   "gio_goi_y": "2026-11-24T11:30+07:00",
   "title": "Khối ngoại rút gần 5 tỷ USD khỏi HOSE: tiền ngoại đi đâu? | Chứng Khoán Huy Nguyễn",
-  "mo_ta": "Khối ngoại bán ròng hơn 126.000 tỷ đồng (gần 5 tỷ USD) trên HOSE từ đầu năm đến 20/11; VN-Index chốt tuần ở 1.688,79 điểm, giảm 5,36% so với đầu năm. FPT bị bán ròng nhiều nhất tuần (893 tỷ).\nNguồn: Dòng vốn kinh doanh (doanhnhanvn.vn) 19-21/11/2026, MarketTimes 21/11/2026.\nQuan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "mo_ta": "Khối ngoại bán ròng hơn 126.000 tỷ đồng (gần 5 tỷ USD) trên HOSE từ đầu năm đến 20/11; VN-Index chốt tuần ở 1.688,79 điểm, giảm 5,36% so với đầu năm. FPT bị bán ròng nhiều nhất tuần (893 tỷ).\nNguồn: Dòng vốn kinh doanh (doanhnhanvn.vn) 19-21/11/2026, MarketTimes 21/11/2026.\nKỹ thuật (MA20/MA50, cản/hỗ trợ) tính từ giá đóng cửa thật 6 tháng, chỉ mô tả, không phải khuyến nghị.\nQuan điểm cá nhân, không phải khuyến nghị đầu tư.",
   "tags": [
    "khối ngoại",
    "bán ròng",
@@ -102,6 +111,9 @@
   "file_video": "ngoai.mp4 (1080x1920)",
   "file_bia": "ngoai_bia.jpg",
   "file_nguon": "ngoai_nguon.txt",
-  "reel_the_cfg": "_video/reel_the/ngoai.json"
+  "reel_the_cfg": "_video/reel_the/ngoai.json",
+  "do_dai": "89,4s",
+  "canh_ky_thuat": "VN-Index: MA20 cắt xuống MA50 9/10; cản 1.750–1.781; hỗ trợ 1.666–1.690; -23,7 điểm KL tăng 18/11",
+  "do_to": "-13,1 đến -13,2 LUFS (ebur128)"
  }
 }
