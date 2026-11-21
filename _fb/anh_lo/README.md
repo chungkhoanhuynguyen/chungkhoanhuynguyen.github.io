@@ -25,3 +25,7 @@ Kiểu ảnh anh Huy chọn (FB chính từng lên view nhiều): màn hình app
 - Chart bên trái; cột phải: hộp "GÓC NHÌN KỸ THUẬT" (xu hướng, cấu trúc/mô hình, tín hiệu, dòng tiền, kháng cự/hỗ trợ) + thẻ KQKD THẬT lấy từ data/kqkd.bin của web (giải mã xor+zlib, khoá trong index.html). Không bịa cảnh báo cũ.
 - Bỏ chữ MA20/MA50 góc trái. Chỗ trống cột phải dưới: anh Huy dán ảnh lãnh đạo.
 - Hook: chơi chữ tinh tế gắn với số thật (vd "Tiệm vàng mà cũng lỗ? PNJ làm được." / "Lãi tăng 12%, giá giảm 35%: thị trường chấm bằng AI à?").
+
+## Kiểu "so sánh 2 thời điểm" (học mẫu VIC vs vàng SJC của anh Huy)
+- cfg "hop": khung đỏ quanh 2 nến + chữ đỏ to viền trắng ("PNJ: 68.200 đ/cp / Vàng SJC: 147,2 tr/lượng"), số thật (WiData; SJC id 1224211). Hook ngắn đối lập số: "Vàng giảm 9%. Tiệm bán vàng giảm 80%."
+- Mẫu MSR (meme + % tăng to khoanh đỏ): KHÔNG dùng nhân vật có bản quyền (Minion…) và KHÔNG bịa câu nói của người thật; dùng ý tưởng: 1 ý duy nhất, chữ ít, % đổi to.
