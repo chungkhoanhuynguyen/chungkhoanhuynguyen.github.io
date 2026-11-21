@@ -9,11 +9,7 @@ def lo(ma,ten,san,cl,iv,sl,ngay,meme):
     vao=cl[iv]; gia=cl[-1]; v1=sl*vao; v2=sl*gia
     return dict(ma=ma,ten=ten,san=san,close=cl,gia=gia,thaydoi=cl[-1]-cl[-2],vao=vao,sl=sl,nhan_vao="Giá vốn",
       l1="Tổng vốn",v1=v1,l2="Giá trị thị trường",v2=v2,l3="Lãi / Lỗ",v3=v2-v1,pct=(gia/vao-1)*100,i_vao=iv,nhan_diem="Mua",
-      moc=moc,meme=meme,chu_thich=ct.format(f"mua {ma} ~1 tỷ ngày {ngay}"))
+      moc=moc,meme=meme,chu_thich=ct.format(f"nắm giữ {ma} ~1 tỷ từ ngày {ngay}"))
 A=[lo("PNJ","CTCP Vàng bạc Đá quý Phú Nhuận","HSX",P,13,14700,"18/06","Vàng chưa kịp đeo"),
    lo("FPT","CTCP FPT","HSX",Fp,2,14300,"03/06","Ăn chắc mặc bền?")]
-gia=V[-1]; sl=5000; vao=V[55]
-A.append(dict(ma="VIC",ten="Tập đoàn Vingroup – CTCP",san="HSX",close=V,gia=gia,thaydoi=V[-1]-V[-2],vao=vao,sl=sl,nhan_vao="Giá đã bán",
-  l1="Tiền đã bán",v1=sl*vao,l2="Nếu còn giữ",v2=sl*gia,l3="Bỏ lỡ",v3=sl*(gia-vao),pct=(gia/vao-1)*100,i_vao=55,nhan_diem="Bán",
-  moc=moc,meme="Bán xong mới chạy",chu_thich=ct.format("bán 5.000 VIC ngày 17/08")))
 json.dump(A,open("lo.json","w",encoding="utf-8"),ensure_ascii=False)

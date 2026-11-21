@@ -52,9 +52,6 @@ def ve(c, out):
     d.rounded_rectangle((cx1+8,yl-22,W-8,yl+22),6,fill=MC); d.text(((cx1+8+W-8)/2,yl),f'{cl[-1]/1000:.2f}',font=F("b",26),fill="white",anchor="mm")
     d.text((cx0,cy0-25),f'MA10 {m10[-1]/1000:.2f}',font=F("s",26),fill=ORG); d.text((cx0+190,cy0-25),f'MA50 {m50[-1]/1000:.2f}',font=F("s",26),fill=BLU)
     for i,lb in c["moc"]: d.text((X(i),cy1+18),lb,font=F("r",24),fill=GRY,anchor="ma")
-    # diem mua/ban
-    i=c["i_vao"]; d.ellipse((X(i)-12,Y(cl[i])-12,X(i)+12,Y(cl[i])+12),outline="white",width=4)
-    d.text((X(i)+(40 if Y(cl[i])<cy0+120 else 0),Y(cl[i])+(48 if Y(cl[i])<cy0+120 else -48)),c["nhan_diem"],font=F("b",28),fill="white",anchor="mm")
     # meme bubble
     f=SERIF(64); t=c["meme"]; tw=d.textlength(t,font=f)
     bx=(W-tw)/2-30; d.rounded_rectangle((bx,595,bx+tw+60,685),18,fill="white"); d.text((W/2,640),t,font=f,fill="black",anchor="mm")
