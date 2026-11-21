@@ -35,3 +35,8 @@ Kiểu ảnh anh Huy chọn (FB chính từng lên view nhiều): màn hình app
 - Bình luận đầu của tác giả: phân tích cân bằng (vấn đề + điểm sáng), tạo thảo luận.
 - Ảnh: 1 ý, hook nói kiểu đời thường + emoji; gắn TIN lên chart (mốc ngày tin ra).
 - Mình: kiểm tin trên báo trước khi viết, không hashtag/link trong caption, không hô mua bán, không bịa số.
+
+## Đăng FB chính (anh Huy 21/11 15:05)
+- Viết bài ở facebook.com/post/create?locale=vi_VN → mục "Chia sẻ lên nhóm" → giữ/chọn 9 nhóm chứng khoán (FB giới hạn 9) → Đăng. Đăng NGAY (khi chọn nhóm, nút Lên lịch bị khoá).
+- Ảnh: device_stage_files ảnh từ máy anh (file ai\anh_fb) rồi file_upload đường dẫn /mnt/user-data/uploads/... (đường dẫn D:\ và /mnt/user-data/outputs bị từ chối; fetch raw.githubusercontent bị CSP chặn).
+- Sau khi đăng: bình luận đầu phân tích 2 chiều dưới bài.
