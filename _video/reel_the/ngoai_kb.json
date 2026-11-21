@@ -23,13 +23,18 @@
    "hold": 0.3
   },
   {
+   "id": "S5",
+   "say": "Về kỹ thuật, đường trung bình hai mươi đã cắt xuống đường năm mươi từ ngày chín tháng mười. Vùng một nghìn bảy trăm năm mươi đến một nghìn bảy trăm tám mươi mốt là cản gần, vùng một nghìn sáu trăm sáu mươi sáu đến một nghìn sáu trăm chín mươi là hỗ trợ. Ngày mười tám, chỉ số mất hơn hai mươi ba điểm với khối lượng tăng.",
+   "hold": 0.3
+  },
+  {
    "id": "S5A",
-   "say": "Phe lạc quan thấy ba điều. Phiên hai mươi, VN-Index chỉ giảm một điểm. Ngoại vẫn mua ròng POW một trăm năm mươi hai tỷ. Tự doanh mua ròng chín mươi ba tỷ ngày mười chín.",
+   "say": "Phe lạc quan thấy ba điều. Phiên hai mươi, VN-Index chỉ giảm một điểm. Ngoại vẫn mua ròng POW một trăm năm mươi hai tỷ. Chỉ số chưa thủng đáy một nghìn sáu trăm sáu mươi sáu.",
    "hold": 0.3
   },
   {
    "id": "S5B",
-   "say": "Phe thận trọng cũng thấy ba điều. Khối ngoại bán ròng bốn phiên liên tiếp. VN-Index dưới một nghìn bảy trăm, bốn trên năm phiên trong tuần giảm. Và thanh khoản chỉ hơn mười lăm nghìn tỷ một phiên.",
+   "say": "Phe thận trọng cũng thấy ba điều. Khối ngoại bán ròng bốn phiên liên tiếp. VN-Index dưới một nghìn bảy trăm, bốn trên năm phiên trong tuần giảm. Đường trung bình hai mươi dưới đường năm mươi từ ngày chín tháng mười.",
    "hold": 0.3
   },
   {

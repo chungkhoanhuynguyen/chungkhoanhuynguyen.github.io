@@ -23,13 +23,18 @@
    "hold": 0.3
   },
   {
+   "id": "S5",
+   "say": "Về kỹ thuật, đường trung bình hai mươi vừa cắt lên đường năm mươi ngày mười tháng mười một. Vùng hai mươi mốt phẩy năm đến hai mươi mốt phẩy chín là cản gần, vùng mười chín phẩy sáu đến hai mươi phẩy mười lăm là hỗ trợ. Ngày mười tám, giá giảm với khối lượng tăng.",
+   "hold": 0.3
+  },
+  {
    "id": "S5A",
-   "say": "Phe lạc quan nhìn thấy ba điều. Phần lớn chi phí chuyển sang giá bán. Độ trễ khoảng chín mươi ba ngày. Và cả ngành cùng chịu, không riêng Hòa Phát.",
+   "say": "Phe lạc quan nhìn thấy ba điều. Phần lớn chi phí chuyển sang giá bán. Độ trễ khoảng chín mươi ba ngày. Và đường trung bình hai mươi cắt lên đường năm mươi.",
    "hold": 0.3
   },
   {
    "id": "S5B",
-   "say": "Phe thận trọng cũng thấy ba điều. Quặng và than hơn bảy mươi phần trăm giá vốn. Tỷ giá yếu một phần trăm, lợi nhuận giảm ba phẩy bảy phần trăm. Giá cổ phiếu giảm mười sáu phần trăm từ đỉnh.",
+   "say": "Phe thận trọng cũng thấy ba điều. Giá giảm với khối lượng tăng ngày mười tám. Tỷ giá yếu một phần trăm, lợi nhuận giảm ba phẩy bảy phần trăm. Giá cổ phiếu giảm mười sáu phần trăm từ đỉnh.",
    "hold": 0.3
   },
   {

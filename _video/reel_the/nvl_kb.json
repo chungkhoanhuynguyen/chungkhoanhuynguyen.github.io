@@ -23,13 +23,18 @@
    "hold": 0.3
   },
   {
+   "id": "S5",
+   "say": "Về kỹ thuật, đường trung bình hai mươi đã cắt xuống đường năm mươi từ ngày mười bảy tháng chín. Vùng mười phẩy tám lăm đến mười một là cản gần, vùng chín phẩy sáu đến chín phẩy tám là hỗ trợ. Phiên hai mươi, khối lượng tăng lên trong nhịp giảm.",
+   "hold": 0.3
+  },
+  {
    "id": "S5A",
-   "say": "Phe lạc quan nhìn thấy ba điều. Ủy ban Chứng khoán gia hạn đến ngày mười một tháng một. Bán hết sẽ thu về tám nghìn không trăm lẻ bảy tỷ để trả nợ. Và giá chào chỉ chênh thị giá hai mươi đồng.",
+   "say": "Phe lạc quan nhìn thấy ba điều. Ủy ban Chứng khoán gia hạn đến ngày mười một tháng một. Bán hết sẽ thu về tám nghìn không trăm lẻ bảy tỷ để trả nợ. Và đáy chín phẩy sáu ngày ba mươi tháng chín chưa bị thủng.",
    "hold": 0.3
   },
   {
    "id": "S5B",
-   "say": "Phe thận trọng cũng thấy ba điều. Đã lùi hạn hai lần. Thị giá đang dưới giá chào. Và VN-Index mất ba mươi ba phẩy bảy chín điểm trong tuần.",
+   "say": "Phe thận trọng cũng thấy ba điều. Đã lùi hạn hai lần. Thị giá đang dưới giá chào. Và đường trung bình hai mươi vẫn dưới đường năm mươi.",
    "hold": 0.3
   },
   {

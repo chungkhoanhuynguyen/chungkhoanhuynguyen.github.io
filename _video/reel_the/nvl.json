@@ -255,6 +255,89 @@
    ]
   },
   {
+   "id": "S5",
+   "kieu": "chart",
+   "chuong": "— KỸ THUẬT —",
+   "opt": {
+    "ymin": 9,
+    "ymax": 14,
+    "step": 1,
+    "dur": 3.0,
+    "from": 45
+   },
+   "marks": [
+    {
+     "t": "2026-09-17",
+     "g": 12.41,
+     "dx": 50,
+     "dy": -170,
+     "chu": "17/9: MA20 cắt xuống MA50",
+     "at": [
+      0,
+      0.5
+     ],
+     "vang": 1
+    },
+    {
+     "t": "2026-11-20",
+     "g": 9.98,
+     "dx": -40,
+     "dy": -200,
+     "chu": "20/11: KL tăng khi giảm",
+     "at": [
+      2,
+      0.4
+     ]
+    }
+   ],
+   "vung": [
+    {
+     "lo": 10.85,
+     "hi": 11.0,
+     "mau": "#c43c32",
+     "txt": "CẢN 10,85–11,0",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "lo": 9.6,
+     "hi": 9.8,
+     "mau": "#1f8a57",
+     "txt": "HỖ TRỢ 9,6–9,8",
+     "at": [
+      1,
+      0.55
+     ],
+     "lbl_below": 1
+    }
+   ],
+   "chot": {
+    "a": "MA20 DƯỚI MA50",
+    "b": "CẢN 10,85–11,0",
+    "do": 1,
+    "at": [
+     2,
+     0.6
+    ]
+   },
+   "phude": [
+    [
+     "Về kỹ thuật, **MA20 cắt xuống MA50**",
+     "từ ngày **17/9**"
+    ],
+    [
+     "Cản gần **10,85–11,0**",
+     "hỗ trợ gần **9,6–9,8**"
+    ],
+    [
+     "Phiên **20/11**: khối lượng tăng",
+     "trong nhịp giảm"
+    ]
+   ]
+  },
+  {
    "id": "S5A",
    "kieu": "lk",
    "chuong": "— HAI PHE —",
@@ -278,8 +361,8 @@
      ]
     },
     {
-     "t": "Giá chào sát thị giá",
-     "s": "Chỉ chênh 20 đồng",
+     "t": "Đáy 9,6 (30/9) chưa thủng",
+     "s": "Giá thấp nhất gần đây 9,8",
      "at": [
       3,
       0.0
@@ -297,7 +380,7 @@
      "Bán hết thu về **8.007 tỷ**"
     ],
     [
-     "Giá chào chỉ chênh **20 đồng**"
+     "Đáy **9,6** (30/9) **chưa bị thủng**"
     ]
    ]
   },
@@ -325,8 +408,8 @@
      ]
     },
     {
-     "t": "Thị trường chung yếu",
-     "s": "VN-Index mất 33,79 điểm trong tuần",
+     "t": "MA20 vẫn dưới MA50",
+     "s": "Cắt xuống từ 17/9",
      "at": [
       3,
       0.0
@@ -352,7 +435,7 @@
      "Thị giá **dưới giá chào**"
     ],
     [
-     "VN-Index mất **33,79 điểm** trong tuần"
+     "**MA20** vẫn dưới **MA50**"
     ]
    ]
   },
