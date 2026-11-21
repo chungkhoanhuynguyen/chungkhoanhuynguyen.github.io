@@ -7,15 +7,21 @@ body{margin:0;width:1080px;height:1080px;background:#fff;font-family:Inter,sans-
 .gp{text-align:right}.gp .g{font:800 58px/1 Inter}.gp .c{font:700 30px Inter;margin-top:6px}
 .st{display:flex;gap:28px;margin-top:10px;font:500 21px Inter;color:#9aa3b5}.st b{color:#fff;font-weight:700;margin-left:8px}
 .hook{background:#fff;border-bottom:3px solid #1d1726;padding:16px 22px;text-align:center;font:800 50px/1.15 Inter;letter-spacing:-1px;text-transform:uppercase}
-#ch{position:absolute;left:6px;right:6px;top:VAR_TOP;bottom:40px}
+#ch{position:absolute;left:6px;right:392px;top:VAR_TOP;bottom:40px}
 .lg{position:absolute;left:24px;top:calc(VAR_TOP + 8px);z-index:3;font:600 23px Inter;display:flex;gap:24px}
 #ov{position:absolute;left:0;top:0;width:1080px;height:1080px;z-index:4;pointer-events:none}
 .br{position:absolute;right:22px;bottom:10px;font:600 22px Inter;color:#8a8496;z-index:5}
+.pn{position:absolute;z-index:6;background:rgba(11,18,34,.94);color:#fff;border-radius:14px;padding:14px 18px;width:340px;font:500 18px/1.45 Inter;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.pn h4{margin:0 0 6px;font:800 17px Inter;letter-spacing:.12em;color:#d9b26a;text-transform:uppercase}.pn div{display:block;margin-top:6px}.pn b{display:block;color:#d9b26a;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase}
+.kq{position:absolute;z-index:6;background:#fff;border:1px solid #e1dde8;border-top:5px solid #c43c32;border-radius:14px;padding:14px 18px;width:340px;font:500 17px/1.45 Inter;box-shadow:0 10px 26px rgba(0,0,0,.18)}
+.kq .src{font:600 15px Inter;color:#8a8496;margin-bottom:6px}.kq .h{display:flex;align-items:baseline;gap:10px}.kq .h b{font:800 26px Inter}.kq .h small{color:#8a8496;font:600 16px Inter}
+.kq .v{margin-left:auto;font:700 16px Inter;padding:3px 12px;border-radius:999px;border:1px solid}.kq ul{margin:6px 0 0;padding:0;list-style:none}.kq li{padding-left:20px;position:relative}
+.kq li.b::before{content:"!";position:absolute;left:5px;color:#c43c32;font-weight:900}.kq li.i::before{content:"•";position:absolute;left:4px;color:#8a8496}
 </style></head><body>
 <div class="top"><div class="r1"><div><b id="ten"></b><span id="sym"></span></div><div class="gp"><div class="g" id="gia"></div><div class="c" id="chg"></div></div></div>
 <div class="st" id="st"></div></div>
 <div class="hook" id="hook"></div>
-<div class="lg"><span style="color:#d08a1e" id="l20"></span><span style="color:#6a2d86" id="l50"></span></div>
+<div class="lg" style="display:none"><span id="l20"></span><span id="l50"></span></div><div id="pn" class="pn"></div><div id="kq" class="kq"></div>
 <div id="ch"></div><svg id="ov"></svg>
 <div class="br">chungkhoanhuynguyen.com</div>
 <script>
@@ -54,11 +60,18 @@ setTimeout(function(){
   h+='<rect x="'+ox+'" y="'+y1+'" width="'+W+'" height="'+(y2-y1)+'" fill="'+(z.mau||'rgba(196,60,50,.10)')+'"/>';
   h+='<text x="'+(ox+W-10)+'" y="'+(y1-8)+'" text-anchor="end" font-family="Inter" font-weight="600" font-size="19" fill="#7a2620">'+z.ten+'</text>'});
  (D.diem||[]).forEach(function(p){var x=ch.timeScale().timeToCoordinate(p.t)+ox,y=k.priceToCoordinate(p.g)+oy;
-  var lx=x+p.dx,ly=y+p.dy,w=p.chu.length*11.2+24;
+  var lx=x+p.dx,ly=y+p.dy,w=p.chu.length*10.6+24;
   h+='<line x1="'+x+'" y1="'+y+'" x2="'+lx+'" y2="'+ly+'" stroke="#1d1726" stroke-width="1.5"/>';
   h+='<circle cx="'+x+'" cy="'+y+'" r="6" fill="#fff" stroke="#1d1726" stroke-width="2.5"/>';
-  var bx=p.dx>=0?lx:lx-w;
+  var bx=p.dx>=0?lx:lx-w;var mx=ox+el.clientWidth-70-w;if(bx>mx)bx=mx;if(bx<ox+4)bx=ox+4;
   h+='<rect x="'+bx+'" y="'+(ly-17)+'" width="'+w+'" height="34" rx="17" fill="#1d1726"/>';
-  h+='<text x="'+(bx+12)+'" y="'+(ly+7)+'" font-family="Inter" font-weight="600" font-size="19" fill="#fff">'+p.chu+'</text>'});
+  h+='<text x="'+(bx+12)+'" y="'+(ly+7)+'" font-family="Inter" font-weight="600" font-size="18" fill="#fff">'+p.chu+'</text>'});
+ var P=D.pn,Q=D.kq;
+ if(P){pn.innerHTML='<h4>Góc nhìn kỹ thuật</h4>'+P.dong.map(function(r){return '<div><b>'+r[0]+'</b><span>'+r[1]+'</span></div>'}).join('');pn.style.left='706px';pn.style.top=(oy)+'px'}
+ if(Q){var vc={neg:['#b42318','#fde7e5','#f6c1bc','Tiêu cực'],mid:['#8a6410','#fbf1d9','#ecd59c','Trung tính'],pos:['#0f7a43','#e3f7ea','#b7e6c8','Tích cực']}[Q.v];
+  kq.style.borderTopColor=vc[0];
+  kq.innerHTML='<div class="src">Trên chungkhoanhuynguyen.com</div><div class="h"><b>'+D.ma+'</b><small>'+Q.q+'</small><span class="v" style="color:'+vc[0]+';background:'+vc[1]+';border-color:'+vc[2]+'">'+vc[3]+'</span></div><ul>'+
+   Q.info.map(function(x){return '<li class="i">'+x+'</li>'}).join('')+Q.bad.map(function(x){return '<li class="b">'+x+'</li>'}).join('')+'</ul>';
+  kq.style.left='706px';kq.style.top=(oy+pn.offsetHeight+16)+'px'}
  ov.innerHTML=h;document.title='xong'},500);
 </script></body></html>

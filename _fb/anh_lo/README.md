@@ -20,3 +20,8 @@ Kiểu ảnh anh Huy chọn (FB chính từng lên view nhiều): màn hình app
 ## Bản 4 (21/11): ẢNH VUÔNG 1080x1080
 - HOOK phải hay tuyệt đối, hài hước tinh tế (chơi chữ/tục ngữ, không chế giễu cá nhân), 1 dòng tự co chữ. Vd: "Vàng thật không sợ lửa. Cổ phiếu vàng thì có." / "AI làm được hết, trừ giữ giá FPT."
 - Điểm kỹ thuật kiểu chuyên nghiệp: vùng giá tô mờ (nền/kháng cự, nhãn phải), đường đứt đoạn xám (đáy), chấm tròn + nhãn viên thuốc đen chữ trắng + dây dẫn mảnh. Không mũi tên đỏ to.
+
+## Bản 5 (21/11): phân tích sâu + ảnh minh họa từ web
+- Chart bên trái; cột phải: hộp "GÓC NHÌN KỸ THUẬT" (xu hướng, cấu trúc/mô hình, tín hiệu, dòng tiền, kháng cự/hỗ trợ) + thẻ KQKD THẬT lấy từ data/kqkd.bin của web (giải mã xor+zlib, khoá trong index.html). Không bịa cảnh báo cũ.
+- Bỏ chữ MA20/MA50 góc trái. Chỗ trống cột phải dưới: anh Huy dán ảnh lãnh đạo.
+- Hook: chơi chữ tinh tế gắn với số thật (vd "Tiệm vàng mà cũng lỗ? PNJ làm được." / "Lãi tăng 12%, giá giảm 35%: thị trường chấm bằng AI à?").
