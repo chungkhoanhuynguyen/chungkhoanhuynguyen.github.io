@@ -1,0 +1,652 @@
+[
+ {
+  "key": "SN2111MONBAI",
+  "tieu_de": "Xóa nợ lệ phí môn bài và tiền chậm nộp cho hơn 2,5 triệu người nộp thuế từ 21/11",
+  "hook": [
+   "XÓA NỢ MÔN BÀI",
+   "2,5 TRIỆU NGƯỜI"
+  ],
+  "nhan": "TIN NÓNG · 21/11",
+  "short_caption": "Quốc hội thông qua chiều 21/11 nghị quyết xóa nợ lệ phí môn bài và tiền chậm nộp cho hơn 2,5 triệu người nộp thuế đã ngừng hoạt động, hiệu lực đến hết 30/6/2028. Nguồn: VnExpress, Người Đưa Tin.",
+  "tags": [],
+  "toc": 1.12,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "ĐÃ ĐÓNG MÃ SỐ THUẾ CHƯA?",
+   "loi": "Anh chị từng ngừng kinh doanh, A: đã đóng mã số thuế, hay B: chưa đóng?",
+   "loi_doc": "Anh chị từng ngừng kinh doanh, A: đã đóng mã số thuế, hay B: chưa đóng?",
+   "anh": [
+    "closed shop shutter||small business closed"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "XÓA NỢ TỪ 21/11",
+    "loi": "Từ 21/11, Quốc hội cho xóa nợ lệ phí môn bài và tiền chậm nộp cho hơn 2,5 triệu người nộp thuế đã ngừng hoạt động.",
+    "loi_doc": "Từ hai mươi mốt tháng mười một, Quốc hội cho xóa nợ lệ phí môn bài và tiền chậm nộp cho hơn hai phẩy năm triệu người nộp thuế đã ngừng hoạt động.",
+    "anh": [
+     "National Assembly hall Vietnam||Vietnam parliament session"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "NGƯỜI NỘP THUẾ ĐƯỢC XÓA NỢ",
+     "nguon": "VnExpress 21/11/2026",
+     "dong": [
+      [
+       "HƠN 2,5 TRIỆU NGƯỜI",
+       100,
+       "vang"
+      ],
+      [
+       "HIỆU LỰC ĐẾN 30/6/2028",
+       52,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "NỢ BAO NHIÊU?",
+    "loi": "Khoảng 710.000 người có nợ môn bài được ghi nhận, nợ gốc khoảng 1.250 tỷ đồng, tiền chậm nộp khoảng 438 tỷ đồng.",
+    "loi_doc": "Khoảng bảy trăm mười nghìn người có nợ môn bài được ghi nhận, nợ gốc khoảng một nghìn hai trăm năm mươi tỷ đồng, tiền chậm nộp khoảng bốn trăm ba mươi tám tỷ đồng.",
+    "anh": [
+     "tax payment documents Vietnam||tax office counter"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "NỢ MÔN BÀI THEO BÁO CÁO CHÍNH PHỦ",
+     "nguon": "Người Đưa Tin 21/11/2026",
+     "dong": [
+      [
+       "710.000 NGƯỜI CÓ NỢ",
+       70,
+       "trang"
+      ],
+      [
+       "NỢ GỐC 1.250 TỶ",
+       80,
+       "vang"
+      ],
+      [
+       "CHẬM NỘP 438 TỶ",
+       80,
+       "do"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "AI ĐƯỢC ÁP DỤNG?",
+    "loi": "Người ngừng hoạt động nhưng chưa đóng mã số thuế, hoặc không còn ở địa chỉ đăng ký, tính đến hết 23/10/2026.",
+    "loi_doc": "Người ngừng hoạt động nhưng chưa đóng mã số thuế, hoặc không còn ở địa chỉ đăng ký, tính đến hết hai mươi ba tháng mười năm hai nghìn không trăm hai mươi sáu.",
+    "anh": [
+     "business registration paperwork||business license documents"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "ĐIỀU KIỆN ÁP DỤNG",
+     "nguon": "VnExpress 21/11/2026",
+     "dong": [
+      [
+       "MỐC TÍNH: HẾT 23/10/2026",
+       60,
+       "vang"
+      ],
+      [
+       "NGỪNG HOẠT ĐỘNG, CHƯA ĐÓNG MÃ SỐ THUẾ",
+       44,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "THUẾ KHÁC THÌ SAO?",
+    "loi": "Tiền chậm nộp các khoản thuế khác chỉ được xóa khi đã trả nợ gốc và nộp hồ sơ hợp lệ khôi phục hoặc chấm dứt mã số thuế.",
+    "loi_doc": "Tiền chậm nộp các khoản thuế khác chỉ được xóa khi đã trả nợ gốc và nộp hồ sơ hợp lệ khôi phục hoặc chấm dứt mã số thuế.",
+    "anh": [
+     "tax filing calculator||tax forms desk"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "XÓA TIỀN CHẬM NỘP THUẾ KHÁC",
+     "nguon": "VnExpress 21/11/2026",
+     "dong": [
+      [
+       "PHẢI TRẢ NỢ GỐC TRƯỚC",
+       60,
+       "vang"
+      ],
+      [
+       "NỘP HỒ SƠ HỢP LỆ",
+       50,
+       "trang"
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "key": "SN2111KHOINGOAI",
+  "tieu_de": "Khối ngoại bán ròng 3.419 tỷ đồng trong tuần VN-Index mất mốc 1.700 điểm",
+  "hook": [
+   "KHỐI NGOẠI RÚT",
+   "3.419 TỶ MỘT TUẦN"
+  ],
+  "nhan": "TIN NÓNG · 16–20/11",
+  "short_caption": "Tuần 16–20/11, VN-Index về gần 1.689 điểm sau bốn phiên giảm liên tiếp, khối ngoại bán ròng khoảng 3.419 tỷ đồng, FPT bị bán ròng nhiều nhất 893 tỷ. Nguồn: Dòng vốn kinh doanh 21/11.",
+  "tags": [],
+  "toc": 1.12,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "LO HAY KHÔNG QUAN TÂM?",
+   "loi": "Thấy khối ngoại bán ròng liên tục, anh chị A: lo, hay B: không quan tâm?",
+   "loi_doc": "Thấy khối ngoại bán ròng liên tục, anh chị A: lo, hay B: không quan tâm?",
+   "anh": [
+    "stock trading screen Vietnam||stock board red"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "VN-INDEX MẤT 1.700",
+    "loi": "Tuần 16 đến 20/11, VN-Index đóng cửa gần 1.689 điểm, mất mốc 1.700 từ phiên 19/11 và giảm bốn phiên liên tiếp.",
+    "loi_doc": "Tuần mười sáu đến hai mươi tháng mười một, VN-Index đóng cửa gần một nghìn sáu trăm tám mươi chín điểm, mất mốc một nghìn bảy trăm từ phiên mười chín tháng mười một và giảm bốn phiên liên tiếp.",
+    "anh": [
+     "stock market chart red||stock index falling"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "VN-INDEX KẾT TUẦN 20/11",
+     "nguon": "Dòng vốn kinh doanh 21/11/2026",
+     "dong": [
+      [
+       "GẦN 1.689 ĐIỂM",
+       100,
+       "vang"
+      ],
+      [
+       "GIẢM 4 PHIÊN LIÊN TIẾP",
+       52,
+       "do"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "KHỐI NGOẠI BÁN RÒNG",
+    "loi": "Trong tuần, khối ngoại bán ròng gần 130 triệu cổ phiếu, tương ứng khoảng 3.419 tỷ đồng trên toàn thị trường.",
+    "loi_doc": "Trong tuần, khối ngoại bán ròng gần một trăm ba mươi triệu cổ phiếu, tương ứng khoảng ba nghìn bốn trăm mười chín tỷ đồng trên toàn thị trường.",
+    "anh": [
+     "trading floor screens||stock exchange board"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "KHỐI NGOẠI TUẦN 16–20/11",
+     "nguon": "Dòng vốn kinh doanh 21/11/2026",
+     "dong": [
+      [
+       "BÁN RÒNG 3.419 TỶ",
+       100,
+       "do"
+      ],
+      [
+       "GẦN 130 TRIỆU CỔ PHIẾU",
+       52,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "FPT ĐỨNG ĐẦU",
+    "loi": "FPT bị bán ròng 893 tỷ đồng, chín phiên liên tiếp đứng đầu chiều bán, lũy kế hơn 1.857 tỷ. Sau đó là VCB 313 tỷ.",
+    "loi_doc": "F P T bị bán ròng tám trăm chín mươi ba tỷ đồng, chín phiên liên tiếp đứng đầu chiều bán, lũy kế hơn một nghìn tám trăm năm mươi bảy tỷ. Sau đó là V C B ba trăm mười ba tỷ.",
+    "anh": [
+     "technology company office Vietnam||software office"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "TOP BỊ BÁN RÒNG TUẦN QUA",
+     "nguon": "Dòng vốn kinh doanh 21/11/2026",
+     "dong": [
+      [
+       "FPT 893 TỶ",
+       90,
+       "do"
+      ],
+      [
+       "VCB 313 TỶ",
+       60,
+       "trang"
+      ],
+      [
+       "MBB 239 TỶ",
+       60,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "LŨY KẾ TỪ ĐẦU NĂM",
+    "loi": "Từ đầu năm đến 20/11, khối ngoại bán ròng trên HOSE hơn 126.384 tỷ đồng, gần 5 tỷ đô la.",
+    "loi_doc": "Từ đầu năm đến hai mươi tháng mười một, khối ngoại bán ròng trên sàn HOSE hơn một trăm hai mươi sáu nghìn ba trăm tám mươi bốn tỷ đồng, gần năm tỷ đô la.",
+    "anh": [
+     "money stack Vietnamese dong||vietnamese dong banknotes"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "KHỐI NGOẠI TRÊN HOSE TỪ ĐẦU NĂM",
+     "nguon": "Dòng vốn kinh doanh 21/11/2026",
+     "dong": [
+      [
+       "HƠN 126.384 TỶ",
+       100,
+       "do"
+      ],
+      [
+       "GẦN 5 TỶ USD",
+       52,
+       "trang"
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "key": "SN2111PNJ",
+  "tieu_de": "PNJ công bố trao đổi: tồn kho 17.000 tỷ, dự kiến thay hơn một nửa ban giám đốc",
+  "hook": [
+   "PNJ THỪA NHẬN",
+   "KHÓ KHĂN TÀI CHÍNH"
+  ],
+  "nhan": "TIN NÓNG · 21/11",
+  "short_caption": "Theo Tuổi Trẻ ngày 21/11, Tổng giám đốc PNJ nói công ty tồn kho khoảng 17.000 tỷ đồng, khoảng 21.000 tỷ đồng hàng đã bán thuộc phạm vi tính toán thu đổi, dự kiến thay hơn một nửa ban giám đốc. Nguồn: Tuổi Trẻ, StockBiz.",
+  "tags": [],
+  "toc": 1.12,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "TIN NÀY LÀM BẠN NGHĨ GÌ?",
+   "loi": "Nếu anh chị đang giữ trang sức, A: yên tâm, hay B: theo dõi thêm?",
+   "loi_doc": "Nếu anh chị đang giữ trang sức, A: yên tâm, hay B: theo dõi thêm?",
+   "anh": [
+    "jewelry store display||gold jewelry shop"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "TỒN KHO 17.000 TỶ",
+    "loi": "Theo Tuổi Trẻ, PNJ có khoảng 17.000 tỷ đồng tồn kho, ước tính khoảng 7.000 tỷ đồng là kim cương, trang sức kim cương.",
+    "loi_doc": "Theo Tuổi Trẻ, P N J có khoảng mười bảy nghìn tỷ đồng tồn kho, ước tính khoảng bảy nghìn tỷ đồng là kim cương, trang sức kim cương.",
+    "anh": [
+     "diamond jewelry display||diamond rings"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "PNJ TỒN KHO THEO TUỔI TRẺ",
+     "nguon": "Tuổi Trẻ 21/11/2026",
+     "dong": [
+      [
+       "TỒN KHO 17.000 TỶ",
+       100,
+       "vang"
+      ],
+      [
+       "TRONG ĐÓ KIM CƯƠNG 7.000 TỶ",
+       52,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "21.000 TỶ HÀNG ĐÃ BÁN",
+    "loi": "Khoảng 21.000 tỷ đồng giá trị hàng đã bán thuộc phạm vi tính toán thu đổi, con số có thể tăng khi đối chiếu tiếp.",
+    "loi_doc": "Khoảng hai mươi mốt nghìn tỷ đồng giá trị hàng đã bán thuộc phạm vi tính toán thu đổi, con số có thể tăng khi đối chiếu tiếp.",
+    "anh": [
+     "jewelry shop counter||gold jewelry counter"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "HÀNG ĐÃ BÁN TRONG PHẠM VI THU ĐỔI",
+     "nguon": "Tuổi Trẻ 21/11/2026",
+     "dong": [
+      [
+       "21.000 TỶ ĐỒNG",
+       100,
+       "do"
+      ],
+      [
+       "CÓ THỂ TĂNG KHI ĐỐI CHIẾU",
+       52,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "TÁI CẤU TRÚC",
+    "loi": "PNJ dự kiến thay hơn một nửa ban giám đốc và cắt giảm 30% chi phí nhân sự, theo cuộc trao đổi công ty công bố.",
+    "loi_doc": "P N J dự kiến thay hơn một nửa ban giám đốc và cắt giảm ba mươi phần trăm chi phí nhân sự, theo cuộc trao đổi công ty công bố.",
+    "anh": [
+     "corporate office meeting room||office meeting table"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "PNJ TÁI CẤU TRÚC",
+     "nguon": "StockBiz 21/11/2026",
+     "dong": [
+      [
+       "THAY HƠN 1/2 BAN GIÁM ĐỐC",
+       60,
+       "vang"
+      ],
+      [
+       "CẮT 30% CHI PHÍ NHÂN SỰ",
+       56,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "NGUỒN VỐN",
+    "loi": "Đối tác tín dụng vẫn hỗ trợ đáo hạn, PNJ đang thuyết phục họ tăng hạn mức để bảo đảm nguồn vốn.",
+    "loi_doc": "Đối tác tín dụng vẫn hỗ trợ đáo hạn, P N J đang thuyết phục họ tăng hạn mức để bảo đảm nguồn vốn.",
+    "anh": [
+     "bank loan documents||bank building Vietnam"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "NGUỒN VỐN CỦA PNJ",
+     "nguon": "Tuổi Trẻ 21/11/2026",
+     "dong": [
+      [
+       "ĐỐI TÁC VẪN HỖ TRỢ ĐÁO HẠN",
+       56,
+       "vang"
+      ],
+      [
+       "ĐANG XIN TĂNG HẠN MỨC",
+       56,
+       "trang"
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "key": "SP2111NVL",
+  "tieu_de": "Novaland gia hạn lần hai đợt chào bán hơn 800 triệu cổ phiếu cho cổ đông",
+  "hook": [
+   "NOVALAND LẦN 2",
+   "GIA HẠN CHÀO BÁN"
+  ],
+  "nhan": "TIN NÓNG · 21/11",
+  "short_caption": "Theo Tiền Phong và StockBiz 21/11, Novaland lần hai kéo dài mốc đăng ký nộp tiền mua hơn 800 triệu cổ phiếu chào bán cho cổ đông hiện hữu sang 28/12. Nguồn: StockBiz, Tiền Phong.",
+  "tags": [],
+  "toc": 1.12,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "CỔ PHIẾU CHÀO BÁN CÓ HẤP DẪN?",
+   "loi": "Đợt chào bán này, anh chị A: thấy hấp dẫn, hay B: chưa thấy?",
+   "loi_doc": "Đợt chào bán này, anh chị A: thấy hấp dẫn, hay B: chưa thấy?",
+   "anh": [
+    "real estate apartments Vietnam||apartment towers"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "GIA HẠN LẦN HAI",
+    "loi": "Novaland vừa công bố gia hạn lần thứ hai đợt chào bán hơn 800 triệu cổ phiếu cho cổ đông hiện hữu.",
+    "loi_doc": "Novaland vừa công bố gia hạn lần thứ hai đợt chào bán hơn tám trăm triệu cổ phiếu cho cổ đông hiện hữu.",
+    "anh": [
+     "apartment towers Ho Chi Minh City||residential towers"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "NOVALAND CHÀO BÁN CỔ PHIẾU",
+     "nguon": "StockBiz 21/11/2026",
+     "dong": [
+      [
+       "GIA HẠN LẦN 2",
+       100,
+       "vang"
+      ],
+      [
+       "HƠN 800 TRIỆU CỔ PHIẾU",
+       52,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "DỜI MỐC MỘT THÁNG",
+    "loi": "Chuyển nhượng quyền mua kéo dài đến 23/12 thay vì 23/11, đăng ký nộp tiền đến 28/12 thay vì 26/11.",
+    "loi_doc": "Chuyển nhượng quyền mua kéo dài đến hai mươi ba tháng mười hai thay vì hai mươi ba tháng mười một, đăng ký nộp tiền đến hai mươi tám tháng mười hai thay vì hai mươi sáu tháng mười một.",
+    "anh": [
+     "calendar deadline desk||calendar and documents"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "MỐC THỜI GIAN MỚI",
+     "nguon": "StockBiz 21/11/2026",
+     "dong": [
+      [
+       "QUYỀN MUA ĐẾN 23/12",
+       70,
+       "vang"
+      ],
+      [
+       "NỘP TIỀN ĐẾN 28/12",
+       70,
+       "vang"
+      ],
+      [
+       "TRƯỚC ĐÓ 23/11 VÀ 26/11",
+       44,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "GIẤY CHỨNG NHẬN ĐẾN 11/1",
+    "loi": "Ủy ban Chứng khoán gia hạn giấy chứng nhận chào bán đến hết 11/1/2027 và yêu cầu hoàn thành đợt chào bán.",
+    "loi_doc": "Ủy ban Chứng khoán gia hạn giấy chứng nhận chào bán đến hết mười một tháng một năm hai nghìn không trăm hai mươi bảy và yêu cầu hoàn thành đợt chào bán.",
+    "anh": [
+     "securities commission documents||official stamp documents"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "GIẤY CHỨNG NHẬN CHÀO BÁN",
+     "nguon": "StockBiz 21/11/2026",
+     "dong": [
+      [
+       "CẤP NGÀY 14/9/2026",
+       56,
+       "trang"
+      ],
+      [
+       "GIA HẠN ĐẾN HẾT 11/1/2027",
+       70,
+       "vang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "SMC CŨNG KÉO DÀI",
+    "loi": "Công ty SMC cũng kéo dài gần một tháng đợt chào bán gần 37 triệu cổ phiếu, theo Tiền Phong.",
+    "loi_doc": "Công ty S M C cũng kéo dài gần một tháng đợt chào bán gần ba mươi bảy triệu cổ phiếu, theo Tiền Phong.",
+    "anh": [
+     "stock certificate paper||share certificates"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "SMC KÉO DÀI THỜI GIAN MUA",
+     "nguon": "Tiền Phong 21/11/2026",
+     "dong": [
+      [
+       "GẦN 37 TRIỆU CỔ PHIẾU",
+       80,
+       "vang"
+      ],
+      [
+       "GIA HẠN GẦN 1 THÁNG",
+       56,
+       "trang"
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "key": "SP2111TRAIPHIEU",
+  "tieu_de": "Tiết kiệm giảm 0,5–1 điểm phần trăm nhưng trái phiếu ngân hàng vẫn 9–10% mỗi năm",
+  "hook": [
+   "TIẾT KIỆM GIẢM",
+   "TRÁI PHIẾU 9–10%"
+  ],
+  "nhan": "TIN NÓNG · 21/11",
+  "short_caption": "Theo MarketTimes 21/11, nhiều ngân hàng giảm lãi suất tiết kiệm 0,5–1%/năm nhưng trái phiếu ngân hàng vẫn ở mức 9–10%/năm; VIS Rating nêu nợ xấu toàn ngành 2,3% sau 9 tháng. Nguồn: MarketTimes.",
+  "tags": [],
+  "toc": 1.12,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "CHỌN GỬI TIẾT KIỆM HAY KHÔNG?",
+   "loi": "Lãi tiết kiệm đang giảm, anh chị A: vẫn gửi ngân hàng, hay B: tìm kênh khác?",
+   "loi_doc": "Lãi tiết kiệm đang giảm, anh chị A: vẫn gửi ngân hàng, hay B: tìm kênh khác?",
+   "anh": [
+    "bank savings book||bank counter savings"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "TIẾT KIỆM HẠ NHIỆT",
+    "loi": "Nhiều ngân hàng đã giảm lãi suất tiền gửi tiết kiệm từ 0,5 đến 1 điểm phần trăm mỗi năm.",
+    "loi_doc": "Nhiều ngân hàng đã giảm lãi suất tiền gửi tiết kiệm từ không phẩy năm đến một điểm phần trăm mỗi năm.",
+    "anh": [
+     "bank interest rate board||bank savings counter"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "LÃI SUẤT TIỀN GỬI",
+     "nguon": "MarketTimes 21/11/2026",
+     "dong": [
+      [
+       "GIẢM 0,5–1 ĐIỂM %/NĂM",
+       80,
+       "vang"
+      ],
+      [
+       "NHIỀU NGÂN HÀNG ĐIỀU CHỈNH",
+       52,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "TRÁI PHIẾU VẪN CAO",
+    "loi": "Trái phiếu ngân hàng vẫn 9 đến 10% mỗi năm: BVBank lãi năm đầu 9,5%, LPBank khoảng 9,68%, PVcomBank 9,6 đến 10,5%.",
+    "loi_doc": "Trái phiếu ngân hàng vẫn chín đến mười phần trăm mỗi năm: BVBank lãi năm đầu chín phẩy năm phần trăm, LPBank khoảng chín phẩy sáu mươi tám phần trăm, PVcomBank chín phẩy sáu đến mười phẩy năm phần trăm.",
+    "anh": [
+     "bank bond certificate||financial documents bank"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "LÃI TRÁI PHIẾU NGÂN HÀNG",
+     "nguon": "MarketTimes 21/11/2026",
+     "dong": [
+      [
+       "BVBANK 9,5% NĂM ĐẦU",
+       56,
+       "vang"
+      ],
+      [
+       "LPBANK KHOẢNG 9,68%",
+       56,
+       "trang"
+      ],
+      [
+       "PVCOMBANK 9,6–10,5%",
+       56,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "NỢ XẤU 2,3%",
+    "loi": "VIS Rating cho biết nợ xấu toàn ngành ngân hàng lên 2,3% sau chín tháng, từ 2,2% cuối quý hai.",
+    "loi_doc": "VIS Rating cho biết nợ xấu toàn ngành ngân hàng lên hai phẩy ba phần trăm sau chín tháng, từ hai phẩy hai phần trăm cuối quý hai.",
+    "anh": [
+     "bank loan officer desk||bank office"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "NỢ XẤU TOÀN NGÀNH THEO VIS RATING",
+     "nguon": "MarketTimes 21/11/2026",
+     "dong": [
+      [
+       "2,3% SAU 9 THÁNG 2026",
+       90,
+       "do"
+      ],
+      [
+       "CUỐI QUÝ II: 2,2%",
+       52,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "SỨC ÉP 12–18 THÁNG",
+    "loi": "VIS Rating cảnh báo lãi suất cao làm tăng rủi ro tài sản, chi phí tín dụng và áp lực huy động vốn trong 12 đến 18 tháng tới.",
+    "loi_doc": "VIS Rating cảnh báo lãi suất cao làm tăng rủi ro tài sản, chi phí tín dụng và áp lực huy động vốn trong mười hai đến mười tám tháng tới.",
+    "anh": [
+     "bank headquarters building||bank tower"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "VIS RATING CẢNH BÁO NGÀNH NGÂN HÀNG",
+     "nguon": "MarketTimes 21/11/2026",
+     "dong": [
+      [
+       "RỦI RO TÀI SẢN TĂNG",
+       56,
+       "vang"
+      ],
+      [
+       "CHI PHÍ TÍN DỤNG TĂNG",
+       56,
+       "trang"
+      ],
+      [
+       "ÁP LỰC HUY ĐỘNG VỐN",
+       56,
+       "trang"
+      ]
+     ]
+    }
+   }
+  ]
+ }
+]
