@@ -1,0 +1,191 @@
+[
+ {
+  "key": "RV2211EN",
+  "tieu_de": "El Nino rất mạnh 96%: giá điện vừa giảm 2% nhưng mùa khô 2027 điện, nước, gạo nhà mình ra sao?",
+  "hook": [
+   "EL NINO RẤT MẠNH 96%",
+   "ĐIỆN, NƯỚC, GẠO NHÀ MÌNH???"
+  ],
+  "nhan": "THỜI TIẾT · TÚI TIỀN",
+  "short_caption": "El Nino có khả năng 96% duy trì cường độ rất mạnh tới tháng 1/2027; kịch bản rủi ro rất cao: mưa thiếu 20–40% (Trung tâm Dự báo KTTV quốc gia, Bộ NN&MT – Nhà Đầu Tư 9/11/2026). Nước về hồ thủy điện khoảng 80% trung bình nhiều năm, nhu cầu điện 2027 dự báo +10% (Hội nghị Bộ Công Thương 7/11 – PetroTimes). Giá điện bình quân giảm 2% từ 1/11/2026 (CafeF 31/10). Mùa hè 2023 mất điện thiệt hại khoảng 1,4 tỷ USD (Ngân hàng Thế giới – Báo Đầu tư 11/8/2023). Hạn mặn 2020 gắt hơn 2016 nhưng lúa thiệt hại 58.400 ha so với 405.000 ha bị ảnh hưởng năm 2016 (VietNamNet 22/6/2020). Em tự tính cho xưởng giả định: bớt 180 nghìn tiền điện mỗi tháng, mất tới 10% doanh thu là 18 triệu. Quan điểm cá nhân, không phải khuyến nghị đầu tư.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "NHÀ MÌNH DÍNH MẤY THỨ?",
+   "loi": "Thu nhập nhà anh chị đang dính mấy thứ trong ba thứ: điện ổn định, nước ngọt, mùa màng thuận? Không, một, hai hay ba?",
+   "loi_doc": "Thu nhập nhà anh chị đang dính mấy thứ trong ba thứ: điện ổn định, nước ngọt, mùa màng thuận? Không, một, hai hay ba?",
+   "anh": [
+    "Hoa Binh Dam",
+    "Hanoi skyline night"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "EL NINO 96% RẤT MẠNH",
+    "loi": "Trung tâm Dự báo khí tượng thủy văn quốc gia vừa cho biết El Nino có khả năng 96% duy trì cường độ rất mạnh tới tháng 1 năm sau. Kịch bản rủi ro rất cao là mưa thiếu từ 20 đến 40%.",
+    "loi_doc": "Trung tâm Dự báo khí tượng thủy văn quốc gia vừa cho biết El Nino có khả năng chín mươi sáu phần trăm duy trì cường độ rất mạnh tới tháng một năm sau. Kịch bản rủi ro rất cao là mưa thiếu từ hai mươi đến bốn mươi phần trăm.",
+    "the": {
+     "loai": "lon",
+     "tieu": "KHẢ NĂNG EL NINO RẤT MẠNH ĐẾN 1/2027",
+     "nguon": "Nhà Đầu Tư 9/11/2026",
+     "dong": [
+      [
+       "96%",
+       130,
+       "do"
+      ],
+      [
+       "MƯA CÓ THỂ THIẾU 20 – 40%",
+       56,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "GIÁ ĐIỆN VỪA GIẢM 2%",
+    "loi": "Cùng lúc đó, giá điện bình quân vừa giảm 2% từ ngày 1 tháng 11. Nghe như tin tốt. Nhưng phương án giảm chỉ được yêu cầu đến hết tháng 3, trước cao điểm nắng nóng.",
+    "loi_doc": "Cùng lúc đó, giá điện bình quân vừa giảm hai phần trăm từ ngày một tháng mười một. Nghe như tin tốt. Nhưng phương án giảm chỉ được yêu cầu đến hết tháng ba, trước cao điểm nắng nóng.",
+    "the": {
+     "loai": "cot",
+     "tieu": "GIÁ ĐIỆN BÌNH QUÂN (ĐỒNG/KWH)",
+     "nguon": "CafeF 31/10/2026",
+     "hang": [
+      [
+       "Từ 5/2025",
+       2204
+      ],
+      [
+       "Từ 1/11/2026",
+       2160
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 2400
+    }
+   },
+   {
+    "chu_to": "NƯỚC VỀ HỒ CHỈ 80%",
+    "loi": "Chuyện đáng lo hơn là nước. Nước về các hồ thủy điện chỉ còn khoảng 80% trung bình nhiều năm, trong khi nhu cầu điện năm sau dự báo tăng khoảng 10%.",
+    "loi_doc": "Chuyện đáng lo hơn là nước. Nước về các hồ thủy điện chỉ còn khoảng tám mươi phần trăm trung bình nhiều năm, trong khi nhu cầu điện năm sau dự báo tăng khoảng mười phần trăm.",
+    "the": {
+     "loai": "lon",
+     "tieu": "NƯỚC VỀ HỒ THỦY ĐIỆN SO VỚI TRUNG BÌNH",
+     "nguon": "Hội nghị Bộ Công Thương 7/11/2026",
+     "dong": [
+      [
+       "80%",
+       130,
+       "do"
+      ],
+      [
+       "NHU CẦU ĐIỆN 2027 TĂNG 10%",
+       54,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "HÈ 2023 MẤT 1,4 TỶ USD",
+    "loi": "Lần trước, mùa hè năm 2023, miền Bắc cắt điện luân phiên. Ngân hàng Thế giới ước tính thiệt hại khoảng 1 tỷ 400 triệu đô la.",
+    "loi_doc": "Lần trước, mùa hè năm hai nghìn không trăm hai mươi ba, miền Bắc cắt điện luân phiên. Ngân hàng Thế giới ước tính thiệt hại khoảng một tỷ bốn trăm triệu đô la.",
+    "the": {
+     "loai": "lon",
+     "tieu": "MẤT ĐIỆN THÁNG 5 VÀ 6 NĂM 2023",
+     "nguon": "Ngân hàng Thế giới, Báo Đầu tư 11/8/2023",
+     "dong": [
+      [
+       "1,4 TỶ USD",
+       118,
+       "do"
+      ],
+      [
+       "KHOẢNG 0,3% GDP",
+       56,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "BỚT 180 NGHÌN, MẤT 18 TRIỆU",
+    "loi": "Với một xưởng may giả định trả 9 triệu tiền điện mỗi tháng, giảm 2% là bớt 180 nghìn. Nhưng nếu một tháng thiếu điện làm mất tới 10% doanh thu, xưởng mất 18 triệu, gấp 100 lần.",
+    "loi_doc": "Với một xưởng may giả định trả chín triệu tiền điện mỗi tháng, giảm hai phần trăm là bớt một trăm tám mươi nghìn. Nhưng nếu một tháng thiếu điện làm mất tới mười phần trăm doanh thu, xưởng mất mười tám triệu, gấp một trăm lần.",
+    "the": {
+     "loai": "cot",
+     "tieu": "XƯỞNG MAY GIẢ ĐỊNH (NGHÌN ĐỒNG)",
+     "nguon": "Em tự tính",
+     "hang": [
+      [
+       "Bớt tiền điện",
+       180
+      ],
+      [
+       "Mất 10% doanh thu",
+       18000
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 20000
+    }
+   },
+   {
+    "chu_to": "MẶN GẮT HƠN, THIỆT HẠI ÍT HƠN",
+    "loi": "Nhưng chuẩn bị sớm thì khác. Năm 2020, miền Tây mặn còn gắt hơn năm 2016, vậy mà lúa thiệt hại 58 nghìn 400 héc ta, so với hơn 400 nghìn héc ta bị ảnh hưởng năm 2016. Lần đó có dự báo sớm và xuống giống sớm.",
+    "loi_doc": "Nhưng chuẩn bị sớm thì khác. Năm hai nghìn không trăm hai mươi, miền Tây mặn còn gắt hơn năm hai nghìn không trăm mười sáu, vậy mà lúa thiệt hại năm mươi tám nghìn bốn trăm héc ta, so với hơn bốn trăm nghìn héc ta bị ảnh hưởng năm hai nghìn không trăm mười sáu. Lần đó có dự báo sớm và xuống giống sớm.",
+    "the": {
+     "loai": "cot",
+     "tieu": "LÚA MIỀN TÂY (NGHÌN HA)",
+     "nguon": "VietNamNet 22/6/2020",
+     "hang": [
+      [
+       "2016 bị ảnh hưởng",
+       405
+      ],
+      [
+       "2020 thiệt hại",
+       58.4
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 450
+    }
+   },
+   {
+    "chu_to": "NHÀ MÌNH DÍNH MẤY THỨ?",
+    "loi": "Phép thử của em: đếm xem thu nhập nhà mình dựa vào mấy thứ do thời tiết quyết định. Từ 2 thứ trở lên, nên có quỹ dự phòng trước tháng 4.",
+    "loi_doc": "Phép thử của em: đếm xem thu nhập nhà mình dựa vào mấy thứ do thời tiết quyết định. Từ hai thứ trở lên, nên có quỹ dự phòng trước tháng tư.",
+    "the": {
+     "loai": "lon",
+     "tieu": "ĐIỆN ỔN ĐỊNH · NƯỚC NGỌT · MÙA MÀNG",
+     "nguon": "Mốc em tự đặt, không phải chuẩn chung",
+     "dong": [
+      [
+       "0 · 1 · 2 · 3",
+       110,
+       "vang"
+      ],
+      [
+       "TỪ 2 THỨ: QUỸ TRƯỚC THÁNG 4",
+       50,
+       "trang"
+      ]
+     ]
+    }
+   }
+  ]
+ }
+]
