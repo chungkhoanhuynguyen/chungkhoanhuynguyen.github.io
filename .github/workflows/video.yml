@@ -186,6 +186,11 @@ jobs:
         run: |
           pip install -q faster-whisper || true
           timeout 1500 python _video/tool/wsp_qc.py _video/out "${{ matrix.key }}" || true
+      - name: Soat tu dong (khung hinh, bia, Shorts, QC, Gemini) – anh Huy 21/11 tan dung GitHub, NV1 khong ngoi cho
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: timeout 900 bash _video/tool/tu_soat.sh _video/out "${{ matrix.key }}" || true
       - if: needs.plan.outputs.has3d == '1'
         run: rm -f _video/out/cache3d/c3_*.p*.mp4   # khúc đã ghép, không lưu vào cache
       - uses: actions/upload-artifact@v4
