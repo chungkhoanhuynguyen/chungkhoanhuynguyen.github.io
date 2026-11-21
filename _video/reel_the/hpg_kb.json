@@ -1,0 +1,41 @@
+{
+ "key": "HPG_THE",
+ "title": "hpg the",
+ "scenes": [
+  {
+   "id": "S1",
+   "say": "Theo TCBS Research, đồng Việt Nam yếu đi một phần trăm thì Hòa Phát tốn thêm hơn một nghìn hai trăm tỷ mỗi năm. Đau cỡ nào?",
+   "hold": 0.3
+  },
+  {
+   "id": "S2",
+   "say": "Gốc rễ nằm ở nguyên liệu. Quặng sắt và than mỡ gần như nhập khẩu hoàn toàn, chiếm hơn bảy mươi phần trăm giá vốn của Hòa Phát. Một tấn thép cuộn cán nóng lò cao giá khoảng bốn trăm năm mươi mốt đô, riêng quặng với than đã ba trăm ba mươi mốt đô.",
+   "hold": 0.3
+  },
+  {
+   "id": "S3",
+   "say": "Tính ra, mỗi một phần trăm đồng Việt Nam mất giá, giá vốn Hòa Phát tăng khoảng một nghìn hai trăm năm mươi lăm tỷ một năm, tương đương ba phẩy bốn phần trăm lợi nhuận gộp và ba phẩy bảy phần trăm lợi nhuận sau thuế bốn quý gần nhất. Còn cổ phiếu HPG đã giảm khoảng mười sáu phần trăm từ đỉnh ngày mười lăm tháng sáu.",
+   "hold": 0.3
+  },
+  {
+   "id": "S4",
+   "say": "Nhưng Hòa Phát không gánh hết. Giá thép cuộn nội địa bám theo giá nhập khẩu quy đổi, nên phần lớn chi phí chuyển sang người mua, với độ trễ khoảng chín mươi ba ngày tồn kho. Hoa Sen, Nam Kim hay Tôn Đông Á cũng chịu rủi ro tỷ giá.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5A",
+   "say": "Phe lạc quan nhìn thấy ba điều. Phần lớn chi phí chuyển sang giá bán. Độ trễ khoảng chín mươi ba ngày. Và cả ngành cùng chịu, không riêng Hòa Phát.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5B",
+   "say": "Phe thận trọng cũng thấy ba điều. Quặng và than chiếm hơn bảy mươi phần trăm giá vốn. Đồng Việt Nam yếu một phần trăm, lợi nhuận sau thuế giảm ba phẩy bảy phần trăm. Và giá cổ phiếu đã giảm mười sáu phần trăm từ đỉnh.",
+   "hold": 0.3
+  },
+  {
+   "id": "S6",
+   "say": "Hòa Phát nhập heo cụ kỵ Đan Mạch mỗi năm một lô, theo kế hoạch. Còn tỷ giá thì không báo trước. Anh chị thấy giá thép hay tỷ giá, cái nào khó đoán hơn?",
+   "hold": 1.2
+  }
+ ]
+}

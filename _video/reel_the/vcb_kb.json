@@ -1,0 +1,41 @@
+{
+ "key": "VCB_THE",
+ "title": "vcb the",
+ "scenes": [
+  {
+   "id": "S1",
+   "say": "Vietcombank mất hơn hai trăm mười nghìn tỷ vốn hóa. Khối ngoại bán ròng mười bốn trong mười lăm phiên gần đây. Vì sao?",
+   "hold": 0.3
+  },
+  {
+   "id": "S2",
+   "say": "Phiên hai mươi tháng mười một, VCB đóng cửa năm mươi nghìn hai trăm, thấp nhất từ đầu năm hai nghìn không trăm hai mươi ba. Đỉnh ngày mười bốn tháng một là bảy mươi lăm nghìn ba trăm bảy mươi, đến nay đã giảm ba mươi ba phẩy bốn phần trăm.",
+   "hold": 0.3
+  },
+  {
+   "id": "S3",
+   "say": "Vốn hóa còn khoảng bốn trăm mười chín nghìn tỷ, lùi từ số một xuống số ba, sau Vingroup và Vinhomes. Từ đầu tháng mười một đến ngày hai mươi, khối ngoại bán ròng hơn chín trăm năm mươi tỷ.",
+   "hold": 0.3
+  },
+  {
+   "id": "S4",
+   "say": "Trong khi đó, lãi trước thuế chín tháng đạt bốn mươi nghìn bốn trăm bốn mươi tỷ, tăng hơn hai mươi hai phần trăm. Nhưng quý ba gần như đi ngang, mười một nghìn hai trăm mười tám tỷ so với mười một nghìn hai trăm ba mươi chín tỷ. Ngân hàng còn được duyệt phát hành riêng lẻ tối đa năm trăm bốn mươi ba triệu cổ phiếu, chưa công bố giá.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5A",
+   "say": "Phe lạc quan nhìn thấy ba điều. Lãi chín tháng tăng hơn hai mươi hai phần trăm. P B còn khoảng một phẩy bảy lần, thấp hơn trung vị hai phẩy tám lần từ năm hai nghìn không trăm hai mươi hai. Và Mizuho vẫn nắm mười lăm phần trăm vốn.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5B",
+   "say": "Phe thận trọng cũng thấy ba điều. Khối ngoại bán ròng mười bốn trong mười lăm phiên. Lãi quý ba đi ngang. Và nợ xấu toàn ngành lên hai phẩy ba phần trăm, theo VIS Rating.",
+   "hold": 0.3
+  },
+  {
+   "id": "S6",
+   "say": "Lợi nhuận chín tháng đi thang máy. Giá cổ phiếu cũng đi, nhưng là đi cầu thang xuống. Lãi tăng mà giá giảm, anh chị thấy thị trường đang trả giá cho điều gì?",
+   "hold": 1.2
+  }
+ ]
+}

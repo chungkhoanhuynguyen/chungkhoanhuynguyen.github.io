@@ -1,0 +1,409 @@
+{
+ "ma": "VCB",
+ "gia_n": 125,
+ "kenh": "@chungkhoanhuynguyen",
+ "ngay": "22/11",
+ "web": "chungkhoanhuynguyen.com",
+ "disclaimer": "Quan điểm cá nhân, không phải khuyến nghị đầu tư",
+ "scenes": [
+  {
+   "id": "S1",
+   "kieu": "hook",
+   "dong": [
+    {
+     "t": "MẤT 210.000 TỶ",
+     "co": 96,
+     "y": 700,
+     "at": -1
+    },
+    {
+     "t": "NGOẠI XẢ VCB?",
+     "co": 116,
+     "y": 820,
+     "at": -1,
+     "do": 1
+    }
+   ],
+   "dau": {
+    "nhan": "VCB TỪ ĐỈNH 14/1",
+    "t": "-33,4%",
+    "at": -1,
+    "y": 1020
+   },
+   "phude": [
+    [
+     "Vietcombank mất hơn",
+     "**210.000 tỷ** vốn hóa"
+    ],
+    [
+     "Khối ngoại **bán ròng**",
+     "**14 trong 15 phiên**"
+    ],
+    [
+     "**Vì sao?**"
+    ]
+   ]
+  },
+  {
+   "id": "S2",
+   "kieu": "tin",
+   "chuong": "— GIÁ VỀ ĐÁY 3 NĂM —",
+   "tin": {
+    "moc": "NGƯỜI QUAN SÁT 20/11",
+    "t": "VCB đóng cửa thấp nhất từ đầu năm 2023",
+    "at": [
+     0,
+     0.3
+    ]
+   },
+   "chart": {
+    "at": [
+     0,
+     0.5
+    ],
+    "dur": 4.0,
+    "opt": {
+     "ymin": 48,
+     "ymax": 66,
+     "step": 3
+    },
+    "marks": [
+     {
+      "t": "2026-05-27",
+      "g": 63.67,
+      "dx": 60,
+      "dy": 60,
+      "chu": "27/5: 63.670",
+      "at": [
+       0,
+       0.9
+      ]
+     },
+     {
+      "t": "2026-11-20",
+      "g": 50.2,
+      "dx": -40,
+      "dy": -160,
+      "chu": "20/11: 50.200",
+      "at": [
+       1,
+       0.6
+      ],
+      "vang": 1
+     }
+    ]
+   },
+   "chot": {
+    "a": "50.200 ĐỒNG",
+    "b": "THẤP NHẤT TỪ 2023",
+    "do": 1,
+    "at": [
+     1,
+     0.7
+    ]
+   },
+   "phude": [
+    [
+     "Phiên **20/11**: VCB **50.200 đ**",
+     "thấp nhất từ đầu năm **2023**"
+    ],
+    [
+     "Đỉnh **14/1**: 75.370 đ",
+     "đến nay giảm **33,4%**"
+    ]
+   ]
+  },
+  {
+   "id": "S3",
+   "kieu": "so",
+   "chuong": "— CON SỐ THẬT —",
+   "the": [
+    {
+     "nhan": "VỐN HÓA ĐÃ MẤT HƠN",
+     "so": 210000,
+     "dec": 0,
+     "dv": "TỶ",
+     "co": 170,
+     "y": 300,
+     "h": "400px",
+     "at": [
+      0,
+      0.04
+     ]
+    },
+    {
+     "nhan": "VỐN HÓA CÒN",
+     "so": 419000,
+     "dec": 0,
+     "dv": "TỶ",
+     "co": 80,
+     "y": 740,
+     "h": "300px",
+     "x": 64,
+     "w": 462,
+     "at": [
+      0,
+      0.55
+     ]
+    },
+    {
+     "nhan": "HẠNG VỐN HÓA",
+     "so": 3,
+     "dec": 0,
+     "dv": "",
+     "co": 96,
+     "y": 740,
+     "h": "300px",
+     "x": 554,
+     "w": 462,
+     "at": [
+      0,
+      0.8
+     ],
+     "tien": "#",
+     "sub": "Từ số 1 xuống số 3"
+    },
+    {
+     "nhan": "KHỐI NGOẠI BÁN RÒNG 1–20/11",
+     "so": 950.14,
+     "dec": 2,
+     "co": 120,
+     "y": 1080,
+     "h": "290px",
+     "at": [
+      1,
+      0.1
+     ],
+     "mau": "#c43c32",
+     "hau": " tỷ",
+     "sub": "14 phiên bán ròng trong 15 phiên"
+    }
+   ],
+   "chot": {
+    "a": "TỪ SỐ 1 XUỐNG SỐ 3",
+    "b": "SAU VINGROUP, VINHOMES",
+    "at": [
+     1,
+     0.0
+    ]
+   },
+   "phude": [
+    [
+     "Vốn hóa còn **~419.000 tỷ**",
+     "từ số **1** xuống số **3**"
+    ],
+    [
+     "Khối ngoại bán ròng",
+     "hơn **950 tỷ** từ đầu tháng 11"
+    ]
+   ]
+  },
+  {
+   "id": "S4",
+   "kieu": "ds",
+   "chuong": "— LÃI TĂNG, GIÁ GIẢM —",
+   "muc": [
+    {
+     "so": "+22%",
+     "t": "Lãi trước thuế 9 tháng: 40.440 tỷ",
+     "mau": "#1f8a57",
+     "at": [
+      0,
+      0.3
+     ]
+    },
+    {
+     "so": "11.218 tỷ",
+     "t": "Quý 3, gần như đi ngang cùng kỳ",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "so": "543 triệu cp",
+     "t": "Kế hoạch phát hành riêng lẻ, chưa công bố giá",
+     "mau": "#c43c32",
+     "co": 80,
+     "at": [
+      2,
+      0.0
+     ]
+    }
+   ],
+   "chot": {
+    "a": "LÃI +22%",
+    "b": "GIÁ −33,4% TỪ ĐỈNH",
+    "do": 1,
+    "at": [
+     2,
+     0.6
+    ]
+   },
+   "phude": [
+    [
+     "Lãi trước thuế 9 tháng **40.440 tỷ**",
+     "tăng hơn **22%**"
+    ],
+    [
+     "Quý 3: **11.218 tỷ** so với",
+     "**11.239 tỷ** cùng kỳ"
+    ],
+    [
+     "Được duyệt phát hành riêng lẻ",
+     "tối đa **543 triệu** cổ phiếu"
+    ]
+   ]
+  },
+  {
+   "id": "S5A",
+   "kieu": "lk",
+   "chuong": "— HAI PHE —",
+   "tieude": "PHE LẠC QUAN NHÌN THẤY",
+   "mau": "#1f8a57",
+   "muc": [
+    {
+     "t": "Lãi 9 tháng tăng hơn 22%",
+     "s": "Lợi nhuận trước thuế 40.440 tỷ",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "P/B còn khoảng 1,7 lần",
+     "s": "Thấp hơn trung vị 2,8 lần từ 2022",
+     "at": [
+      2,
+      0.0
+     ]
+    },
+    {
+     "t": "Mizuho vẫn nắm 15% vốn",
+     "s": "Cổ đông chiến lược nước ngoài",
+     "at": [
+      3,
+      0.0
+     ]
+    }
+   ],
+   "phude": [
+    [
+     "Phe **lạc quan** nhìn thấy 3 điều"
+    ],
+    [
+     "Lãi 9 tháng tăng **22%**"
+    ],
+    [
+     "P/B **~1,7 lần**,",
+     "thấp hơn trung vị **2,8 lần**"
+    ],
+    [
+     "Mizuho vẫn nắm **15%** vốn"
+    ]
+   ]
+  },
+  {
+   "id": "S5B",
+   "kieu": "lk",
+   "chuong": "— HAI PHE —",
+   "tieude": "PHE THẬN TRỌNG NHÌN THẤY",
+   "mau": "#c43c32",
+   "muc": [
+    {
+     "t": "Khối ngoại bán ròng 14/15 phiên",
+     "s": "Hơn 950 tỷ từ đầu tháng 11",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "Lãi quý 3 đi ngang",
+     "s": "11.218 tỷ so với 11.239 tỷ",
+     "at": [
+      2,
+      0.0
+     ]
+    },
+    {
+     "t": "Nợ xấu toàn ngành lên 2,3%",
+     "s": "Theo VIS Rating, 9 tháng 2026",
+     "at": [
+      3,
+      0.0
+     ]
+    }
+   ],
+   "chot": {
+    "a": "HAI PHE ĐỀU CÓ LÝ",
+    "b": "GIÁ SẼ LÀ NGƯỜI TRẢ LỜI",
+    "at": [
+     3,
+     0.5
+    ]
+   },
+   "phude": [
+    [
+     "Phe **thận trọng** cũng thấy 3 điều"
+    ],
+    [
+     "Khối ngoại bán ròng **14/15 phiên**"
+    ],
+    [
+     "Lãi **quý 3** đi ngang"
+    ],
+    [
+     "Nợ xấu toàn ngành **2,3%**",
+     "theo VIS Rating"
+    ]
+   ]
+  },
+  {
+   "id": "S6",
+   "kieu": "ket",
+   "chuong": "— KẾT —",
+   "the": [
+    {
+     "nhan": "LỢI NHUẬN ĐI",
+     "t": "THANG MÁY",
+     "co": 88,
+     "at": [
+      0,
+      0.2
+     ]
+    },
+    {
+     "nhan": "GIÁ CỔ PHIẾU ĐI",
+     "t": "CẦU THANG",
+     "co": 88,
+     "mau": "#c43c32",
+     "at": [
+      1,
+      0.35
+     ]
+    }
+   ],
+   "hoi": {
+    "t": "Lãi tăng mà giá giảm, **thị trường** đang trả giá cho điều gì?",
+    "at": [
+     2,
+     0.0
+    ]
+   },
+   "phude": [
+    [
+     "**Lợi nhuận** 9 tháng đi thang máy"
+    ],
+    [
+     "**Giá cổ phiếu** cũng đi,",
+     "nhưng là cầu thang **xuống**"
+    ],
+    [
+     "Lãi tăng mà giá giảm,",
+     "thị trường đang trả giá cho điều gì?"
+    ]
+   ]
+  }
+ ]
+}

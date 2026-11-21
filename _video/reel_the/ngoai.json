@@ -1,0 +1,407 @@
+{
+ "ma": "VNINDEX",
+ "gia_n": 125,
+ "kenh": "@chungkhoanhuynguyen",
+ "ngay": "22/11",
+ "web": "chungkhoanhuynguyen.com",
+ "disclaimer": "Quan điểm cá nhân, không phải khuyến nghị đầu tư",
+ "scenes": [
+  {
+   "id": "S1",
+   "kieu": "hook",
+   "dong": [
+    {
+     "t": "RÚT 5 TỶ USD",
+     "co": 96,
+     "y": 700,
+     "at": -1
+    },
+    {
+     "t": "NGOẠI ĐI ĐÂU?",
+     "co": 116,
+     "y": 820,
+     "at": -1,
+     "do": 1
+    }
+   ],
+   "dau": {
+    "nhan": "VN-INDEX 20/11",
+    "t": "1.688,79",
+    "at": -1,
+    "y": 1020
+   },
+   "phude": [
+    [
+     "Khối ngoại rút gần",
+     "**5 tỷ đô** khỏi HOSE"
+    ],
+    [
+     "**Tiền ngoại** đang đi đâu?"
+    ]
+   ]
+  },
+  {
+   "id": "S2",
+   "kieu": "tin",
+   "chuong": "— HƠN 11 THÁNG BÁN RÒNG —",
+   "tin": {
+    "moc": "DÒNG VỐN KINH DOANH 21/11",
+    "t": "Nhà đầu tư ngoại rút gần 5 tỷ USD khỏi HOSE",
+    "at": [
+     0,
+     0.3
+    ]
+   },
+   "chart": {
+    "at": [
+     0,
+     0.5
+    ],
+    "dur": 4.0,
+    "opt": {
+     "ymin": 1600,
+     "ymax": 1900,
+     "step": 100
+    },
+    "marks": [
+     {
+      "t": "2026-06-24",
+      "g": 1878.02,
+      "dx": 50,
+      "dy": 70,
+      "chu": "24/6: 1.878",
+      "at": [
+       0,
+       0.9
+      ]
+     },
+     {
+      "t": "2026-11-19",
+      "g": 1689.62,
+      "dx": -30,
+      "dy": -130,
+      "chu": "19/11: thủng 1.700",
+      "at": [
+       1,
+       0.5
+      ],
+      "vang": 1
+     }
+    ]
+   },
+   "chot": {
+    "a": "THỦNG 1.700",
+    "b": "CHỐT TUẦN 1.688,79",
+    "do": 1,
+    "at": [
+     1,
+     0.6
+    ]
+   },
+   "phude": [
+    [
+     "Khối ngoại rút gần **5 tỷ USD**",
+     "sau hơn **11 tháng**"
+    ],
+    [
+     "VN-Index mất mốc **1.700**",
+     "chốt tuần **1.688,79**"
+    ]
+   ]
+  },
+  {
+   "id": "S3",
+   "kieu": "so",
+   "chuong": "— CON SỐ THẬT —",
+   "the": [
+    {
+     "nhan": "BÁN RÒNG HOSE TỪ ĐẦU NĂM",
+     "so": 126384,
+     "dec": 0,
+     "dv": "TỶ",
+     "co": 160,
+     "y": 300,
+     "h": "400px",
+     "at": [
+      0,
+      0.04
+     ]
+    },
+    {
+     "nhan": "TUẦN 16–20/11",
+     "so": 3290,
+     "dec": 0,
+     "dv": "TỶ",
+     "co": 80,
+     "y": 740,
+     "h": "300px",
+     "x": 64,
+     "w": 462,
+     "at": [
+      0,
+      0.6
+     ]
+    },
+    {
+     "nhan": "VN-INDEX ĐẦU NĂM",
+     "so": 5.36,
+     "dec": 2,
+     "dv": "%",
+     "co": 80,
+     "y": 740,
+     "h": "300px",
+     "x": 554,
+     "w": 462,
+     "at": [
+      0,
+      0.85
+     ],
+     "tien": "-",
+     "mau": "#c43c32"
+    },
+    {
+     "nhan": "FPT: 9 PHIÊN ĐỨNG ĐẦU CHIỀU BÁN",
+     "so": 1857,
+     "dec": 0,
+     "co": 120,
+     "y": 1080,
+     "h": "290px",
+     "at": [
+      1,
+      0.3
+     ],
+     "mau": "#c43c32",
+     "hau": " tỷ",
+     "sub": "Lũy kế bán ròng 9 phiên liên tiếp"
+    }
+   ],
+   "chot": {
+    "a": "126.384 TỶ",
+    "b": "BÁN RÒNG TỪ ĐẦU NĂM",
+    "do": 1,
+    "at": [
+     1,
+     0.0
+    ]
+   },
+   "phude": [
+    [
+     "Từ đầu năm, ngoại bán ròng",
+     "**126.384 tỷ** trên HOSE",
+     "riêng tuần qua **3.290 tỷ**"
+    ],
+    [
+     "VN-Index giảm **5,36%**",
+     "so với đầu năm"
+    ]
+   ]
+  },
+  {
+   "id": "S4",
+   "kieu": "ds",
+   "chuong": "— AI BỊ BÁN NHIỀU NHẤT? —",
+   "muc": [
+    {
+     "so": "FPT: 893 tỷ",
+     "t": "Bán ròng tuần 16–20/11, đứng đầu 9 phiên liền",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "so": "VCB: 313 tỷ",
+     "t": "Bán ròng tuần 16–20/11",
+     "at": [
+      2,
+      0.0
+     ]
+    },
+    {
+     "so": "MBB: 239 tỷ",
+     "t": "Bán ròng tuần 16–20/11",
+     "at": [
+      3,
+      0.0
+     ]
+    }
+   ],
+   "chot": {
+    "a": "FPT ĐỨNG ĐẦU",
+    "b": "9 PHIÊN LIÊN TIẾP",
+    "do": 1,
+    "at": [
+     1,
+     0.7
+    ]
+   },
+   "phude": [
+    [
+     "**Ai** bị bán nhiều nhất tuần qua?"
+    ],
+    [
+     "**FPT** đứng đầu: **893 tỷ**",
+     "9 phiên liền đứng đầu chiều bán"
+    ],
+    [
+     "Tiếp theo **VCB**: **313 tỷ**"
+    ],
+    [
+     "Rồi **MBB**: **239 tỷ**"
+    ]
+   ]
+  },
+  {
+   "id": "S5A",
+   "kieu": "lk",
+   "chuong": "— HAI PHE —",
+   "tieude": "PHE LẠC QUAN NHÌN THẤY",
+   "mau": "#1f8a57",
+   "muc": [
+    {
+     "t": "Phiên 20/11 VN-Index chỉ −1 điểm",
+     "s": "Lực cầu về cuối phiên thu hẹp đà giảm",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "Ngoại mua ròng POW 152 tỷ",
+     "s": "Đi ngược xu hướng chung phiên 20/11",
+     "at": [
+      2,
+      0.0
+     ]
+    },
+    {
+     "t": "Tự doanh mua ròng 93 tỷ",
+     "s": "Phiên 19/11",
+     "at": [
+      3,
+      0.0
+     ]
+    }
+   ],
+   "phude": [
+    [
+     "Phe **lạc quan** nhìn thấy 3 điều"
+    ],
+    [
+     "Phiên **20/11**, VN-Index chỉ **−1 điểm**"
+    ],
+    [
+     "Ngoại vẫn mua ròng **POW**",
+     "**152 tỷ**"
+    ],
+    [
+     "Tự doanh mua ròng **93 tỷ**",
+     "phiên 19/11"
+    ]
+   ]
+  },
+  {
+   "id": "S5B",
+   "kieu": "lk",
+   "chuong": "— HAI PHE —",
+   "tieude": "PHE THẬN TRỌNG NHÌN THẤY",
+   "mau": "#c43c32",
+   "muc": [
+    {
+     "t": "Ngoại bán ròng 4 phiên liền",
+     "s": "Tính đến phiên 20/11",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "VN-Index dưới 1.700",
+     "s": "4 trên 5 phiên trong tuần giảm",
+     "at": [
+      2,
+      0.0
+     ]
+    },
+    {
+     "t": "Thanh khoản thấp",
+     "s": "HOSE chỉ 15.933 tỷ phiên 20/11",
+     "at": [
+      3,
+      0.0
+     ]
+    }
+   ],
+   "chot": {
+    "a": "HAI PHE ĐỀU CÓ LÝ",
+    "b": "DÒNG TIỀN SẼ LÊN TIẾNG",
+    "at": [
+     3,
+     0.5
+    ]
+   },
+   "phude": [
+    [
+     "Phe **thận trọng** cũng thấy 3 điều"
+    ],
+    [
+     "Ngoại bán ròng **4 phiên liền**"
+    ],
+    [
+     "VN-Index **dưới 1.700**",
+     "4/5 phiên trong tuần giảm"
+    ],
+    [
+     "Thanh khoản chỉ **~15.900 tỷ**/phiên"
+    ]
+   ]
+  },
+  {
+   "id": "S6",
+   "kieu": "ket",
+   "chuong": "— KẾT —",
+   "the": [
+    {
+     "nhan": "KHỐI NGOẠI",
+     "t": "BÁN RÒNG 11 THÁNG",
+     "co": 77,
+     "at": [
+      0,
+      0.2
+     ]
+    },
+    {
+     "nhan": "BẢNG ĐIỆN",
+     "t": "VẪN SÁNG ĐÈN MỖI NGÀY",
+     "co": 62,
+     "mau": "#c43c32",
+     "at": [
+      1,
+      0.35
+     ]
+    }
+   ],
+   "hoi": {
+    "t": "Tiền ngoại rút đi, anh chị nghĩ **dòng tiền nào** sẽ lên tiếng?",
+    "at": [
+     2,
+     0.0
+    ]
+   },
+   "phude": [
+    [
+     "Khối ngoại **bán ròng**",
+     "hơn **11 tháng**"
+    ],
+    [
+     "**Bảng điện** thì vẫn",
+     "sáng đèn mỗi ngày"
+    ],
+    [
+     "Tiền ngoại rút đi, anh chị nghĩ",
+     "**dòng tiền nào** sẽ lên tiếng?"
+    ]
+   ]
+  }
+ ]
+}

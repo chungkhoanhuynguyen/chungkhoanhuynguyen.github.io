@@ -1,0 +1,407 @@
+{
+ "ma": "NVL",
+ "gia_n": 125,
+ "kenh": "@chungkhoanhuynguyen",
+ "ngay": "22/11",
+ "web": "chungkhoanhuynguyen.com",
+ "disclaimer": "Quan điểm cá nhân, không phải khuyến nghị đầu tư",
+ "scenes": [
+  {
+   "id": "S1",
+   "kieu": "hook",
+   "dong": [
+    {
+     "t": "NVL CHÀO 10.000",
+     "co": 96,
+     "y": 700,
+     "at": -1
+    },
+    {
+     "t": "CỔ ĐÔNG NÉ?",
+     "co": 116,
+     "y": 820,
+     "at": -1,
+     "do": 1
+    }
+   ],
+   "dau": {
+    "nhan": "NVL PHIÊN 20/11",
+    "t": "-3,11%",
+    "at": -1,
+    "y": 1020
+   },
+   "phude": [
+    [
+     "Novaland bán thêm cổ phiếu",
+     "cho cổ đông, giá **10.000 đ**"
+    ],
+    [
+     "Phiên 20/11, thị giá chỉ còn",
+     "**9.980 đ**"
+    ],
+    [
+     "**Cổ đông** có đang ngần ngại?"
+    ]
+   ]
+  },
+  {
+   "id": "S2",
+   "kieu": "tin",
+   "chuong": "— LÙI HẠN 2 LẦN —",
+   "tin": {
+    "moc": "THÔNG BÁO 18/11",
+    "t": "Novaland lùi hạn nộp tiền mua cổ phiếu lần 2",
+    "at": [
+     0,
+     0.3
+    ]
+   },
+   "chart": {
+    "at": [
+     0,
+     0.5
+    ],
+    "dur": 4.0,
+    "opt": {
+     "ymin": 9,
+     "ymax": 15,
+     "step": 1
+    },
+    "marks": [
+     {
+      "t": "2026-05-27",
+      "g": 14.22,
+      "dx": 60,
+      "dy": 60,
+      "chu": "27/5: 14.220",
+      "at": [
+       0,
+       0.9
+      ]
+     },
+     {
+      "t": "2026-11-20",
+      "g": 9.98,
+      "dx": -40,
+      "dy": -150,
+      "chu": "20/11: 9.980",
+      "at": [
+       2,
+       0.3
+      ],
+      "vang": 1
+     }
+    ]
+   },
+   "chot": {
+    "a": "LÙI 2 LẦN",
+    "b": "ĐẾN 28/12",
+    "do": 1,
+    "at": [
+     2,
+     0.6
+    ]
+   },
+   "phude": [
+    [
+     "Chào bán **800,7 triệu** cổ phiếu",
+     "tỷ lệ **3:1**, giá **10.000 đ**"
+    ],
+    [
+     "Hạn nộp tiền ban đầu:",
+     "**29/10**"
+    ],
+    [
+     "Nay đã **lùi 2 lần**,",
+     "đến **28/12**"
+    ]
+   ]
+  },
+  {
+   "id": "S3",
+   "kieu": "so",
+   "chuong": "— CON SỐ THẬT —",
+   "the": [
+    {
+     "nhan": "NẾU BÁN HẾT, THU VỀ",
+     "so": 8007,
+     "dec": 0,
+     "dv": "TỶ",
+     "co": 170,
+     "y": 300,
+     "h": "400px",
+     "at": [
+      0,
+      0.04
+     ]
+    },
+    {
+     "nhan": "SỐ CỔ PHIẾU CHÀO",
+     "so": 800.7,
+     "dec": 1,
+     "dv": "TRIỆU",
+     "co": 80,
+     "y": 740,
+     "h": "300px",
+     "x": 64,
+     "w": 462,
+     "at": [
+      0,
+      0.55
+     ]
+    },
+    {
+     "nhan": "GIÁ CHÀO",
+     "so": 10000,
+     "dec": 0,
+     "dv": "Đ",
+     "co": 80,
+     "y": 740,
+     "h": "300px",
+     "x": 554,
+     "w": 462,
+     "at": [
+      0,
+      0.8
+     ]
+    },
+    {
+     "nhan": "NVL PHIÊN 20/11",
+     "so": 9980,
+     "dec": 0,
+     "co": 130,
+     "y": 1080,
+     "h": "290px",
+     "at": [
+      1,
+      0.1
+     ],
+     "mau": "#c43c32",
+     "hau": " đ",
+     "sub": "Thấp hơn giá chào 20 đồng"
+    }
+   ],
+   "chot": {
+    "a": "GIÁ CHÀO 10.000",
+    "b": "THỊ GIÁ 9.980",
+    "at": [
+     1,
+     0.5
+    ]
+   },
+   "phude": [
+    [
+     "Bán hết, thu về **8.007 tỷ**",
+     "chủ yếu để **trả nợ trái phiếu**"
+    ],
+    [
+     "Thị giá **9.980 đ**,",
+     "thấp hơn giá chào **20 đồng**"
+    ]
+   ]
+  },
+  {
+   "id": "S4",
+   "kieu": "ds",
+   "chuong": "— TRÁI PHIẾU ĐỔI CỔ PHIẾU —",
+   "muc": [
+    {
+     "so": "16 TRÁI PHIẾU",
+     "t": "Đổi thành ~2,78 triệu cổ phiếu",
+     "at": [
+      0,
+      0.3
+     ]
+    },
+    {
+     "so": "34.000 đ",
+     "t": "Giá chuyển đổi mỗi cổ phiếu",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "so": "GẤP 3,4 LẦN",
+     "t": "So với thị giá 9.980 đ",
+     "mau": "#c43c32",
+     "at": [
+      2,
+      0.0
+     ]
+    }
+   ],
+   "chot": {
+    "a": "34.000 ĐỒNG",
+    "b": "GẤP 3,4 LẦN THỊ GIÁ",
+    "do": 1,
+    "at": [
+     2,
+     0.5
+    ]
+   },
+   "phude": [
+    [
+     "Novaland đổi **16 trái phiếu** quốc tế",
+     "thành **~2,78 triệu** cổ phiếu"
+    ],
+    [
+     "Giá chuyển đổi",
+     "**34.000 đ** một cổ phiếu"
+    ],
+    [
+     "Gấp **3,4 lần** thị giá"
+    ]
+   ]
+  },
+  {
+   "id": "S5A",
+   "kieu": "lk",
+   "chuong": "— HAI PHE —",
+   "tieude": "PHE LẠC QUAN NHÌN THẤY",
+   "mau": "#1f8a57",
+   "muc": [
+    {
+     "t": "UBCK gia hạn đến 11/1/2027",
+     "s": "Thêm thời gian hoàn tất đợt chào bán",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "Bán hết thu về 8.007 tỷ",
+     "s": "Chủ yếu để trả nợ trái phiếu",
+     "at": [
+      2,
+      0.0
+     ]
+    },
+    {
+     "t": "Giá chào sát thị giá",
+     "s": "Chỉ chênh 20 đồng",
+     "at": [
+      3,
+      0.0
+     ]
+    }
+   ],
+   "phude": [
+    [
+     "Phe **lạc quan** nhìn thấy 3 điều"
+    ],
+    [
+     "UBCK gia hạn đến **11/1/2027**"
+    ],
+    [
+     "Bán hết thu về **8.007 tỷ**"
+    ],
+    [
+     "Giá chào chỉ chênh **20 đồng**"
+    ]
+   ]
+  },
+  {
+   "id": "S5B",
+   "kieu": "lk",
+   "chuong": "— HAI PHE —",
+   "tieude": "PHE THẬN TRỌNG NHÌN THẤY",
+   "mau": "#c43c32",
+   "muc": [
+    {
+     "t": "Đã lùi hạn 2 lần",
+     "s": "Từ 29/10 sang 28/12",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "Thị giá dưới giá chào",
+     "s": "Phiên 20/11: 9.980 đ",
+     "at": [
+      2,
+      0.0
+     ]
+    },
+    {
+     "t": "Thị trường chung yếu",
+     "s": "VN-Index mất 33,79 điểm trong tuần",
+     "at": [
+      3,
+      0.0
+     ]
+    }
+   ],
+   "chot": {
+    "a": "HAI PHE ĐỀU CÓ LÝ",
+    "b": "HẠN CUỐI: 28/12",
+    "at": [
+     3,
+     0.5
+    ]
+   },
+   "phude": [
+    [
+     "Phe **thận trọng** cũng thấy 3 điều"
+    ],
+    [
+     "Đã **lùi hạn 2 lần**"
+    ],
+    [
+     "Thị giá **dưới giá chào**"
+    ],
+    [
+     "VN-Index mất **33,79 điểm** trong tuần"
+    ]
+   ]
+  },
+  {
+   "id": "S6",
+   "kieu": "ket",
+   "chuong": "— KẾT —",
+   "the": [
+    {
+     "nhan": "NOVALAND GIA HẠN",
+     "t": "CHO CỔ ĐÔNG 1 THÁNG",
+     "co": 80,
+     "at": [
+      0,
+      0.2
+     ]
+    },
+    {
+     "nhan": "VÍ CỔ ĐÔNG",
+     "t": "CHƯA AI GIA HẠN",
+     "co": 88,
+     "mau": "#c43c32",
+     "at": [
+      1,
+      0.35
+     ]
+    }
+   ],
+   "hoi": {
+    "t": "Giá chào **cao hơn thị giá**, anh chị nghĩ cổ đông sẽ làm gì?",
+    "at": [
+     2,
+     0.0
+    ]
+   },
+   "phude": [
+    [
+     "Novaland gia hạn cho cổ đông",
+     "thêm **1 tháng**"
+    ],
+    [
+     "Còn **chiếc ví** cổ đông",
+     "thì **chưa ai gia hạn**"
+    ],
+    [
+     "Giá chào **cao hơn thị giá**,",
+     "anh chị nghĩ cổ đông sẽ làm gì?"
+    ]
+   ]
+  }
+ ]
+}

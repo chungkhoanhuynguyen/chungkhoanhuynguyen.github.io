@@ -1,0 +1,41 @@
+{
+ "key": "NGOAI_THE",
+ "title": "ngoai the",
+ "scenes": [
+  {
+   "id": "S1",
+   "say": "Khối ngoại đã rút gần năm tỷ đô khỏi sàn HOSE. Tiền ngoại đang đi đâu?",
+   "hold": 0.3
+  },
+  {
+   "id": "S2",
+   "say": "Theo báo Dòng vốn kinh doanh, khối ngoại rút gần năm tỷ đô khỏi HOSE sau hơn mười một tháng. Tuần qua, VN-Index mất mốc một nghìn bảy trăm điểm, khép tuần ở một nghìn sáu trăm tám mươi tám phẩy bảy chín.",
+   "hold": 0.3
+  },
+  {
+   "id": "S3",
+   "say": "Từ đầu năm đến hai mươi tháng mười một, khối ngoại bán ròng một trăm hai mươi sáu nghìn ba trăm tám mươi tư tỷ trên HOSE, riêng tuần qua là ba nghìn hai trăm chín mươi tỷ. Còn VN-Index giảm năm phẩy ba sáu phần trăm so với đầu năm.",
+   "hold": 0.3
+  },
+  {
+   "id": "S4",
+   "say": "Ai bị bán nhiều nhất tuần qua? FPT đứng đầu, bán ròng tám trăm chín mươi ba tỷ, chín phiên liền đứng đầu chiều bán. Tiếp theo là VCB ba trăm mười ba tỷ. Rồi MBB hai trăm ba mươi chín tỷ.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5A",
+   "say": "Phe lạc quan nhìn thấy ba điều. Phiên hai mươi tháng mười một, VN-Index chỉ giảm khoảng một điểm. Khối ngoại vẫn mua ròng POW một trăm năm mươi hai tỷ. Và tự doanh mua ròng chín mươi ba tỷ phiên mười chín.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5B",
+   "say": "Phe thận trọng cũng thấy ba điều. Khối ngoại bán ròng bốn phiên liên tiếp. VN-Index dưới một nghìn bảy trăm, bốn trên năm phiên trong tuần giảm. Và thanh khoản chỉ hơn mười lăm nghìn tỷ một phiên.",
+   "hold": 0.3
+  },
+  {
+   "id": "S6",
+   "say": "Khối ngoại bán ròng hơn mười một tháng. Bảng điện thì vẫn sáng đèn mỗi ngày. Tiền ngoại rút đi, anh chị nghĩ dòng tiền nào sẽ lên tiếng?",
+   "hold": 1.2
+  }
+ ]
+}

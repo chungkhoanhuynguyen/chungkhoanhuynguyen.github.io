@@ -1,0 +1,410 @@
+{
+ "ma": "HPG",
+ "gia_n": 125,
+ "kenh": "@chungkhoanhuynguyen",
+ "ngay": "22/11",
+ "web": "chungkhoanhuynguyen.com",
+ "disclaimer": "Quan điểm cá nhân, không phải khuyến nghị đầu tư",
+ "scenes": [
+  {
+   "id": "S1",
+   "kieu": "hook",
+   "dong": [
+    {
+     "t": "VND YẾU 1%",
+     "co": 96,
+     "y": 700,
+     "at": -1
+    },
+    {
+     "t": "HPG ĐAU CỠ NÀO?",
+     "co": 102,
+     "y": 820,
+     "at": -1,
+     "do": 1
+    }
+   ],
+   "dau": {
+    "nhan": "HPG TỪ ĐỈNH 15/6",
+    "t": "-16%",
+    "at": -1,
+    "y": 1020
+   },
+   "phude": [
+    [
+     "Theo TCBS: VND yếu **1%**",
+     "Hòa Phát tốn thêm",
+     "**1.255 tỷ**/năm"
+    ],
+    [
+     "**Đau cỡ nào?**"
+    ]
+   ]
+  },
+  {
+   "id": "S2",
+   "kieu": "tin",
+   "chuong": "— GỐC RỄ: NGUYÊN LIỆU —",
+   "tin": {
+    "moc": "TCBS RESEARCH · 19/11",
+    "t": "Quặng và than mỡ nhập khẩu gần 100%",
+    "at": [
+     0,
+     0.3
+    ]
+   },
+   "chart": {
+    "at": [
+     0,
+     0.5
+    ],
+    "dur": 4.0,
+    "opt": {
+     "ymin": 19,
+     "ymax": 26,
+     "step": 1
+    },
+    "marks": [
+     {
+      "t": "2026-06-15",
+      "g": 24.35,
+      "dx": 50,
+      "dy": 70,
+      "chu": "15/6: 24.350",
+      "at": [
+       0,
+       0.9
+      ]
+     },
+     {
+      "t": "2026-11-20",
+      "g": 20.45,
+      "dx": -40,
+      "dy": -160,
+      "chu": "20/11: 20.450",
+      "at": [
+       2,
+       0.5
+      ],
+      "vang": 1
+     }
+    ]
+   },
+   "chot": {
+    "a": "QUẶNG + THAN",
+    "b": "HƠN 70% GIÁ VỐN",
+    "do": 1,
+    "at": [
+     1,
+     0.5
+    ]
+   },
+   "phude": [
+    [
+     "Gốc rễ nằm ở **nguyên liệu**"
+    ],
+    [
+     "Quặng và than mỡ gần như",
+     "nhập khẩu hoàn toàn, **>70%** giá vốn"
+    ],
+    [
+     "1 tấn HRC lò cao **~451 USD**",
+     "riêng quặng + than **331 USD**"
+    ]
+   ]
+  },
+  {
+   "id": "S3",
+   "kieu": "so",
+   "chuong": "— CON SỐ THẬT —",
+   "the": [
+    {
+     "nhan": "MỖI 1% VND YẾU, GIÁ VỐN TĂNG",
+     "so": 1255,
+     "dec": 0,
+     "dv": "TỶ/NĂM",
+     "co": 150,
+     "y": 300,
+     "h": "400px",
+     "at": [
+      0,
+      0.04
+     ]
+    },
+    {
+     "nhan": "LỢI NHUẬN GỘP",
+     "so": 3.4,
+     "dec": 1,
+     "dv": "%",
+     "co": 96,
+     "y": 740,
+     "h": "300px",
+     "x": 64,
+     "w": 462,
+     "at": [
+      0,
+      0.7
+     ],
+     "tien": "-"
+    },
+    {
+     "nhan": "LỢI NHUẬN SAU THUẾ",
+     "so": 3.7,
+     "dec": 1,
+     "dv": "%",
+     "co": 96,
+     "y": 740,
+     "h": "300px",
+     "x": 554,
+     "w": 462,
+     "at": [
+      0,
+      0.9
+     ],
+     "tien": "-"
+    },
+    {
+     "nhan": "HPG TỪ ĐỈNH 15/6",
+     "so": 16.0,
+     "dec": 0,
+     "co": 130,
+     "y": 1080,
+     "h": "290px",
+     "at": [
+      1,
+      0.4
+     ],
+     "tien": "-",
+     "hau": "%",
+     "mau": "#c43c32",
+     "sub": "Giá 20/11: 20.450 đ"
+    }
+   ],
+   "chot": {
+    "a": "1% TỶ GIÁ",
+    "b": "−3,7% LỢI NHUẬN SAU THUẾ",
+    "do": 1,
+    "at": [
+     0,
+     0.9
+    ]
+   },
+   "phude": [
+    [
+     "Mỗi **1%** VND mất giá: giá vốn",
+     "tăng **1.255 tỷ**/năm",
+     "= **3,7%** LNST 4 quý gần nhất"
+    ],
+    [
+     "HPG giảm khoảng **16%**",
+     "từ đỉnh **15/6**"
+    ]
+   ]
+  },
+  {
+   "id": "S4",
+   "kieu": "ds",
+   "chuong": "— KHÔNG GÁNH HẾT —",
+   "muc": [
+    {
+     "so": "BÁM GIÁ NHẬP",
+     "t": "Giá HRC nội địa theo giá nhập khẩu quy đổi",
+     "co": 84,
+     "at": [
+      0,
+      0.3
+     ]
+    },
+    {
+     "so": "~93 NGÀY",
+     "t": "Độ trễ bằng số ngày tồn kho quý 3/2026",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "so": "CẢ NGÀNH",
+     "t": "Hoa Sen, Nam Kim, Tôn Đông Á cũng chịu rủi ro tỷ giá",
+     "co": 84,
+     "mau": "#c43c32",
+     "at": [
+      2,
+      0.0
+     ]
+    }
+   ],
+   "chot": {
+    "a": "CHI PHÍ CHUYỂN SANG",
+    "b": "NGƯỜI MUA, CÓ ĐỘ TRỄ",
+    "at": [
+     1,
+     0.5
+    ]
+   },
+   "phude": [
+    [
+     "Nhưng Hòa Phát **không gánh hết**"
+    ],
+    [
+     "Giá thép nội địa bám giá nhập khẩu",
+     "phần lớn chuyển sang người mua",
+     "độ trễ **~93 ngày** tồn kho"
+    ],
+    [
+     "Hoa Sen, Nam Kim, Tôn Đông Á",
+     "cũng chịu **rủi ro tỷ giá**"
+    ]
+   ]
+  },
+  {
+   "id": "S5A",
+   "kieu": "lk",
+   "chuong": "— HAI PHE —",
+   "tieude": "PHE LẠC QUAN NHÌN THẤY",
+   "mau": "#1f8a57",
+   "muc": [
+    {
+     "t": "Chi phí chuyển sang giá bán",
+     "s": "Phần lớn, theo TCBS Research",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "Độ trễ khoảng 93 ngày",
+     "s": "Có thời gian điều chỉnh",
+     "at": [
+      2,
+      0.0
+     ]
+    },
+    {
+     "t": "Cả ngành cùng chịu",
+     "s": "Không riêng Hòa Phát",
+     "at": [
+      3,
+      0.0
+     ]
+    }
+   ],
+   "phude": [
+    [
+     "Phe **lạc quan** nhìn thấy 3 điều"
+    ],
+    [
+     "Chi phí **chuyển sang giá bán**"
+    ],
+    [
+     "Độ trễ **~93 ngày**"
+    ],
+    [
+     "**Cả ngành** cùng chịu"
+    ]
+   ]
+  },
+  {
+   "id": "S5B",
+   "kieu": "lk",
+   "chuong": "— HAI PHE —",
+   "tieude": "PHE THẬN TRỌNG NHÌN THẤY",
+   "mau": "#c43c32",
+   "muc": [
+    {
+     "t": "Quặng + than hơn 70% giá vốn",
+     "s": "Gần như nhập khẩu 100%",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "VND yếu 1%: LNST giảm 3,7%",
+     "s": "Theo tính toán của TCBS",
+     "at": [
+      2,
+      0.0
+     ]
+    },
+    {
+     "t": "Giá HPG giảm 16% từ đỉnh",
+     "s": "Đỉnh 24.350 đ, nay 20.450 đ",
+     "at": [
+      3,
+      0.0
+     ]
+    }
+   ],
+   "chot": {
+    "a": "HAI PHE ĐỀU CÓ LÝ",
+    "b": "TỶ GIÁ LÀ ẨN SỐ",
+    "at": [
+     3,
+     0.5
+    ]
+   },
+   "phude": [
+    [
+     "Phe **thận trọng** cũng thấy 3 điều"
+    ],
+    [
+     "Quặng + than **>70%** giá vốn"
+    ],
+    [
+     "VND yếu 1%: LNST **−3,7%**"
+    ],
+    [
+     "Giá giảm **16%** từ đỉnh"
+    ]
+   ]
+  },
+  {
+   "id": "S6",
+   "kieu": "ket",
+   "chuong": "— KẾT —",
+   "the": [
+    {
+     "nhan": "HEO CỤ KỴ ĐAN MẠCH",
+     "t": "NHẬP THEO KẾ HOẠCH",
+     "co": 72,
+     "at": [
+      0,
+      0.2
+     ]
+    },
+    {
+     "nhan": "TỶ GIÁ",
+     "t": "KHÔNG BÁO TRƯỚC",
+     "co": 87,
+     "mau": "#c43c32",
+     "at": [
+      1,
+      0.35
+     ]
+    }
+   ],
+   "hoi": {
+    "t": "Giá thép hay **tỷ giá**, cái nào khó đoán hơn?",
+    "at": [
+     2,
+     0.0
+    ]
+   },
+   "phude": [
+    [
+     "Heo cụ kỵ Đan Mạch nhập",
+     "**mỗi năm một lô**, theo kế hoạch"
+    ],
+    [
+     "Còn **tỷ giá**",
+     "thì **không báo trước**"
+    ],
+    [
+     "Giá thép hay **tỷ giá**,",
+     "cái nào khó đoán hơn?"
+    ]
+   ]
+  }
+ ]
+}

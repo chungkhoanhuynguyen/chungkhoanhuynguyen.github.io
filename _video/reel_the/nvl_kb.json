@@ -1,0 +1,41 @@
+{
+ "key": "NVL_THE",
+ "title": "nvl the",
+ "scenes": [
+  {
+   "id": "S1",
+   "say": "Novaland bán thêm cổ phiếu cho cổ đông, giá mười nghìn đồng. Nhưng phiên hai mươi tháng mười một, thị giá chỉ còn chín nghìn chín trăm tám mươi. Cổ đông có đang ngần ngại?",
+   "hold": 0.3
+  },
+  {
+   "id": "S2",
+   "say": "Đợt chào bán hơn tám trăm triệu cổ phiếu, tỷ lệ ba một, giá mười nghìn đồng. Hạn nộp tiền ban đầu là hai mươi chín tháng mười. Nay đã lùi hai lần, đến hai mươi tám tháng mười hai.",
+   "hold": 0.3
+  },
+  {
+   "id": "S3",
+   "say": "Nếu bán hết, Novaland thu về tám nghìn không trăm lẻ bảy tỷ, chủ yếu để trả nợ trái phiếu. Nhưng thị giá chín nghìn chín trăm tám mươi, thấp hơn giá chào hai mươi đồng.",
+   "hold": 0.3
+  },
+  {
+   "id": "S4",
+   "say": "Cùng tuần, Novaland báo đổi mười sáu trái phiếu quốc tế thành gần hai phẩy tám triệu cổ phiếu. Giá chuyển đổi ba mươi tư nghìn đồng một cổ phiếu. Gấp ba phẩy bốn lần thị giá.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5A",
+   "say": "Phe lạc quan nhìn thấy ba điều. Ủy ban Chứng khoán gia hạn đến ngày mười một tháng một năm hai nghìn không trăm hai mươi bảy. Bán hết sẽ thu về tám nghìn không trăm lẻ bảy tỷ để trả nợ. Và giá chào chỉ chênh thị giá hai mươi đồng.",
+   "hold": 0.3
+  },
+  {
+   "id": "S5B",
+   "say": "Phe thận trọng cũng thấy ba điều. Đã lùi hạn hai lần. Thị giá đang dưới giá chào. Và VN-Index mất ba mươi ba phẩy bảy chín điểm trong tuần.",
+   "hold": 0.3
+  },
+  {
+   "id": "S6",
+   "say": "Novaland gia hạn cho cổ đông thêm một tháng. Còn chiếc ví của cổ đông thì chưa ai gia hạn. Giá chào cao hơn thị giá, anh chị nghĩ cổ đông sẽ làm gì?",
+   "hold": 1.2
+  }
+ ]
+}
