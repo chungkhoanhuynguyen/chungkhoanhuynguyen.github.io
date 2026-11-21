@@ -1,0 +1,27 @@
+name: Live to Shorts
+on:
+  workflow_dispatch:
+    inputs:
+      url: {description: "Link video/live YouTube (bo trong neu dung release_asset)", required: false, default: ""}
+      so_clip: {description: "So clip", required: false, default: "5"}
+      release_asset: {description: "Ten asset mp4 trong release nguon-video (thay cho url neu YouTube chan)", required: false, default: ""}
+      max_phut: {description: "Chi xu ly N phut dau (sau cat lang)", required: false, default: "45"}
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: "20"}
+      - run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core >/dev/null
+          pip install -q -U yt-dlp yt-dlp-ejs auto-editor faster-whisper
+      - env: {GH_TOKEN: "${{ github.token }}", GH_REPO: "${{ github.repository }}"}
+        run: |
+          python3 _video/live_shorts.py --url "${{ inputs.url }}" --so_clip "${{ inputs.so_clip }}" --release_asset "${{ inputs.release_asset }}" --max_phut "${{ inputs.max_phut }}"
+          ID=$(cat vid.txt); TAG="live-$ID"
+          gh release view "$TAG" >/dev/null 2>&1 || gh release create "$TAG" -t "$TAG" -n "live shorts"
+          gh release upload "$TAG" out/* --clobber

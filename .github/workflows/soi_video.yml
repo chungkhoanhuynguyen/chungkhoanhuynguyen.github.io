@@ -1,0 +1,29 @@
+name: Soi video doi thu
+on:
+  workflow_dispatch:
+    inputs:
+      url: {description: "Link video", required: false, default: ""}
+      release_asset: {description: "Ten asset mp4 trong release nguon-video (neu YouTube chan)", required: false, default: ""}
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: "20"}
+      - run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+          pip install -q -U yt-dlp yt-dlp-ejs faster-whisper
+      - env: {GH_TOKEN: "${{ github.token }}", GH_REPO: "${{ github.repository }}"}
+        run: |
+          python3 _video/soi_video.py --url "${{ inputs.url }}" --release_asset "${{ inputs.release_asset }}"
+          ID=$(cat vid.txt); TAG="soi-$ID"
+          gh release view "$TAG" >/dev/null 2>&1 || gh release create "$TAG" -t "$TAG" -n "soi video"
+          gh release upload "$TAG" out/* --clobber
+          git config user.name "bot"; git config user.email "bot@users.noreply.github.com"
+          git add _kiem/soi && git commit -m "soi video $ID" -m "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+          Claude-Session: https://claude.ai/code/session_01HdwfrC464x83xNtDevUcBX" || true
+          git pull --rebase -q || true; git push || true
