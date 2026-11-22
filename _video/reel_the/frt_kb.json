@@ -4,22 +4,22 @@
  "scenes": [
   {
    "id": "S1",
-   "say": "Trong cùng một nhà, cậu em bán thuốc được định giá gấp mười tám lần ông anh bán điện thoại. Chuyện gì đang xảy ra ở ép pê tê Ri teo?",
+   "say": "Trong cùng một nhà, cậu em bán thuốc được định giá gấp mười tám lần ông anh bán điện thoại. Chuyện gì đang xảy ra ở ép pi ti Ri teo?",
    "hold": 0.3
   },
   {
    "id": "S2",
-   "say": "ép pê tê Ri teo có hai chuỗi: ép pê tê Sóp bán điện thoại, máy tính, và Long Châu bán thuốc. Báo cáo Việt cáp ngày mười bảy tháng mười một ước Long Châu bốn mươi bốn nghìn bốn trăm hai mươi chín tỷ, ép pê tê Sóp chỉ hai nghìn bốn trăm hai mươi bảy tỷ. Cậu em nặng ký gấp khoảng mười tám phẩy ba lần ông anh.",
+   "say": "ép pi ti Ri teo có hai chuỗi: ép pi ti Sóp bán điện thoại, máy tính, và Long Châu bán thuốc. Báo cáo Việt cáp ngày mười bảy tháng mười một ước Long Châu bốn mươi bốn nghìn bốn trăm hai mươi chín tỷ, ép pi ti Sóp chỉ hai nghìn bốn trăm hai mươi bảy tỷ. Cậu em nặng ký gấp khoảng mười tám phẩy ba lần ông anh.",
    "hold": 0.3
   },
   {
    "id": "S3",
-   "say": "Bất ngờ hơn, nhóm nhân viên đang nắm mười một phẩy không ba phần trăm Long Châu. Phần này ước khoảng bốn nghìn chín trăm tỷ, gấp hơn hai lần cả chuỗi ép pê tê Sóp. ép pê tê Ri teo nắm bảy mươi lăm phẩy chín bảy phần trăm, quỹ Cờ rê a đo khoảng mười ba phần trăm. Còn cổ phiếu ép pê tê Ri teo chỉ lùi ba phần trăm từ đỉnh.",
+   "say": "Bất ngờ hơn, nhóm nhân viên đang nắm mười một phẩy không ba phần trăm Long Châu. Phần này ước khoảng bốn nghìn chín trăm tỷ, gấp hơn hai lần cả chuỗi ép pi ti Sóp. ép pi ti Ri teo nắm bảy mươi lăm phẩy chín bảy phần trăm, quỹ Cờ rê a đo khoảng mười ba phần trăm. Còn cổ phiếu ép pi ti Ri teo chỉ lùi ba phần trăm từ đỉnh.",
    "hold": 0.3
   },
   {
    "id": "S4",
-   "say": "Nhưng đây là định giá ước tính của Việt cáp, không phải giá giao dịch. Kế hoạch ê sóp thêm năm phần trăm vốn, chia năm đợt, mỗi năm một phần trăm. Tới năm hai nghìn không trăm ba mươi, phần của ép pê tê Ri teo có thể lùi về khoảng bảy mươi hai phần trăm. Câu hỏi còn bỏ ngỏ là con số trên giấy có được doanh thu thật kiểm chứng hay không.",
+   "say": "Nhưng đây là định giá ước tính của Việt cáp, không phải giá giao dịch. Kế hoạch ê sóp thêm năm phần trăm vốn, chia năm đợt, mỗi năm một phần trăm. Tới năm hai nghìn không trăm ba mươi, phần của ép pi ti Ri teo có thể lùi về khoảng bảy mươi hai phần trăm. Câu hỏi còn bỏ ngỏ là con số trên giấy có được doanh thu thật kiểm chứng hay không.",
    "hold": 0.3
   },
   {
@@ -34,7 +34,7 @@
   },
   {
    "id": "S6",
-   "say": "Nhà thuốc hơn bốn mươi bốn nghìn tỷ. Cửa hàng điện thoại hơn hai nghìn bốn trăm tỷ. Anh chị nghĩ cầm cổ phiếu ép pê tê Ri teo là cầm chuỗi điện thoại, hay cầm nhà thuốc?",
+   "say": "Nhà thuốc hơn bốn mươi bốn nghìn tỷ. Cửa hàng điện thoại hơn hai nghìn bốn trăm tỷ. Anh chị nghĩ cầm cổ phiếu ép pi ti Ri teo là cầm chuỗi điện thoại, hay cầm nhà thuốc?",
    "hold": 1.2
   }
  ]

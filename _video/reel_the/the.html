@@ -126,7 +126,7 @@ C.scenes.forEach(cf=>{
     rev($(`<div class="abs" style="left:310px;top:350px;width:460px;height:460px;border-radius:230px;border:12px solid var(--y);overflow:hidden;box-shadow:0 18px 60px rgba(0,0,0,.5)"><img src="${av}" style="width:100%;height:100%;object-fit:cover"></div>`,root),sc.a+.25,.6,'pop');
     rev($('<div class="abs" style="left:270px;top:870px;width:540px;height:130px;border-radius:65px;background:var(--y);color:var(--ink);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:66px;letter-spacing:6px;box-shadow:0 12px 36px rgba(0,0,0,.4)">FOLLOW</div>',root),sc.a+.6,.5,'pop');
     rev($('<div class="abs" style="left:0;width:1080px;top:1070px;text-align:center;color:#f1eada;font-weight:900;font-size:80px;line-height:1.1">FOLLOW ĐỂ NHẬN<br><span style="color:var(--y)">GÓC NHÌN SỚM</span></div>',root),sc.a+.9,.5);
-    rev($('<div class="abs" style="left:90px;width:900px;top:1420px;text-align:center;color:#958fa6;font-weight:700;font-size:34px;line-height:1.4">Thị trường thay đổi từng ngày. Xem thêm các video trên kênh.<br>Nội dung chỉ chia sẻ quan điểm cá nhân, không phải khuyến nghị mua bán.</div>',root),sc.a+1.2,.5);
+    rev($('<div class="abs" style="left:90px;width:900px;top:1420px;text-align:center;color:#958fa6;font-weight:700;font-size:34px;line-height:1.4">Thị trường thay đổi từng ngày. Xem thêm các video trên kênh.</div>',root),sc.a+1.2,.5);
   }
   if(cf.kieu==='ket'){
     cf.the.forEach((k,i)=>{const e=$(`<div class="card" style="top:${290+i*370}px;height:330px;padding:40px 52px"><div class="lbl">${k.nhan}</div><div class="big" style="font-size:${k.co||112}px;margin-top:30px;color:${k.mau||'var(--ink)'}">${k.t}</div></div>`,root);rev(e,at(k.at),.55)});
@@ -137,7 +137,7 @@ C.scenes.forEach(cf=>{
   const subs=[];(cf.phude||[]).forEach((chs,j)=>{const s=sc.sens[j];if(!s)return;const tot=chs.reduce((a,c)=>a+c.length,0);let t=s.a-.05;chs.forEach((c,i)=>{const d=(s.b-s.a+.3)*c.length/tot;subs.push({a:t,b:i==chs.length-1?s.b+.35:t+d,h:hl(c)});t+=d})});
   SC.push({a:sc.a,b:sc.b,root,subs,outro:cf.kieu==='outro',last:cf===C.scenes[C.scenes.length-1]});
 });
-const disc=document.getElementById('disc');disc.textContent=C.disclaimer;disc.style.opacity=0;
+const disc=document.getElementById('disc');disc.textContent=C.disclaimer||'';disc.style.opacity=0;
 const subEl=document.getElementById('sub');
 window.setT=function(t){
   SC.forEach((s,i)=>{const f=.38;const o=Math.min(i===0?1:cl((t-(s.a-.2))/f),cl(((s.b+.2)-t)/f));s.root.style.opacity=o;s.root.style.display=o<=0?'none':'block'});

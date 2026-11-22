@@ -240,11 +240,11 @@ L["tcb"] = [
 # Cách đọc cho giọng TTS (anh Huy 22/11: "STB đọc là sa com banh ko phải sa com băng"; "bất động sản chấm com").
 # Chỉ áp vào LỜI ĐỌC, phụ đề giữ chữ gốc. Mã CK đọc thành tên doanh nghiệp.
 PHAT_AM = [
-    ("cổ phiếu CTG", "cổ phiếu Viết tin banh"), ("cổ phiếu FRT", "cổ phiếu ép pê tê Ri teo"),
+    ("cổ phiếu CTG", "cổ phiếu Viết tin banh"), ("cổ phiếu FRT", "cổ phiếu ép pi ti Ri teo"),
     ("cổ phiếu HVN", "cổ phiếu Việt Nam Ê lai"), ("cổ phiếu VHM", "cổ phiếu Vin hôm"),
-    ("cổ phiếu TCB", "cổ phiếu Tếch com banh"), ("Cổ phiếu VHM", "Cổ phiếu Vin hôm"), ("cầm FRT", "cầm cổ phiếu ép pê tê Ri teo"),
+    ("cổ phiếu TCB", "cổ phiếu Tếch com banh"), ("Cổ phiếu VHM", "Cổ phiếu Vin hôm"), ("cầm FRT", "cầm cổ phiếu ép pi ti Ri teo"),
     ("Sacombank", "Sa com banh"), ("VietinBank", "Viết tin banh"), ("Techcombank", "Tếch com banh"),
-    ("FPT Retail", "ép pê tê Ri teo"), ("FPT Shop", "ép pê tê Sóp"), ("Vietcap", "Việt cáp"),
+    ("FPT Retail", "ép pi ti Ri teo"), ("FPT Shop", "ép pi ti Sóp"), ("FPT", "ép pi ti"), ("Vietcap", "Việt cáp"),
     ("ESOP", "ê sóp"), ("Creador", "Cờ rê a đo"), ("Vietnambiz", "Việt Nam bít"),
     ("CBRE", "xi bi a ri"), ("Mekong ASEAN", "Mê Kông A xê an"),
     ("The Sapphire", "Đờ Sa phai a"), ("Vinhomes Smart City", "Vin hôm Sờ mát Xi ti"),
@@ -292,6 +292,7 @@ def build(ma):
         kb.append({"id": sid, "say": doc(" ".join(say for say, _ in sens)), "hold": 1.2 if sid == "S6" else 0.3})
     sc_out.append(old["OUT"])
     cfg["scenes"] = sc_out
+    cfg["disclaimer"] = ""  # anh Huy 22/11: bỏ chữ "không phải khuyến nghị" trên video
     json.dump(cfg, open(os.path.join(HERE, ma + ".json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     json.dump({"key": ma.upper() + "_THE", "title": ma + " the ke chuyen", "scenes": kb},
               open(os.path.join(HERE, ma + "_kb.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
