@@ -4,7 +4,7 @@
 #   KEY_khung1.png, KEY_khung2.png (khung mỗi 20s, lưới 5x5), KEY_bia3.png (3 bìa), KEY_shorts.png (khung 3 Shorts),
 #   KEY_soat.txt: QC + whisper + âm lượng + dò phụ đề lỗi + danh sách ảnh + (nếu có GEMINI_API_KEY) Gemini xem khung tìm lỗi hình.
 # Người soát chỉ cần tải KEY_soat.txt + các ảnh png này (vài trăm KB) thay vì tải cả video.
-O=$1; K=$2; cd "$O" || exit 0
+TD="$(cd "$(dirname "$0")" && pwd)"; O=$1; K=$2; cd "$O" || exit 0; O="$(pwd)"  # 22/11 QL1: đường dẫn tuyệt đối – trước đó gemini_soat.py không chạy được sau cd
 [ -f "$K.mp4" ] || { echo "LỖI: không có $K.mp4 (dựng hỏng)" > ${K}_soat.txt; exit 0; }
 DT="drawtext=text='%{pts\:hms}':x=5:y=5:fontsize=18:fontcolor=yellow:box=1:boxcolor=black"
 # chỉ dùng ffmpeg (máy reel có thể không có ffprobe): lấy thời lượng + chiều khung từ dòng thông tin
@@ -37,7 +37,7 @@ NS=$(echo $S | grep -o -- "-i" | wc -l); [ "$NS" -ge 1 ] && ffmpeg -v error -y $
   echo "== FILE"; ls ${K}* | tr '\n' ' '; echo
 } > ${K}_soat.txt 2>&1
 if [ -n "$GEMINI_API_KEY" ]; then
-  timeout 300 python3 "$(dirname "$0")/gemini_soat.py" "$O" "$K" >> ${K}_soat.txt 2>&1 || echo "== GEMINI: lỗi/hết giờ (bỏ qua)" >> ${K}_soat.txt
+  timeout 300 python3 "$TD/gemini_soat.py" "$O" "$K" >> ${K}_soat.txt 2>&1 || echo "== GEMINI: lỗi/hết giờ (bỏ qua)" >> ${K}_soat.txt
 else
   echo "== GEMINI: chưa có secret GEMINI_API_KEY (bỏ qua bước xem khung bằng AI)" >> ${K}_soat.txt
 fi
