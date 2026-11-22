@@ -19,7 +19,7 @@
   },
   {
    "id": "S4",
-   "say": "Cuộc đua giữ tiền giữa các ngân hàng chưa hạ nhiệt. Lãi cho vay bình quân giờ đã vượt mười một phần trăm một năm. Nợ xấu toàn ngành chín tháng ở mức hai phẩy ba phần trăm.",
+   "say": "Cuộc đua giữ tiền giữa các ngân hàng chưa hạ nhiệt. Lãi cho vay bình quân giờ đã vượt mười một phần trăm một năm. Nợ xấu toàn ngành chín tháng ở mức hai phẩy ba phần trăm. Câu hỏi còn bỏ ngỏ là lãi huy động sẽ còn neo cao bao lâu.",
    "hold": 0.3
   },
   {
@@ -29,7 +29,7 @@
   },
   {
    "id": "S5C",
-   "say": "Câu hỏi còn bỏ ngỏ là lãi huy động sẽ còn neo cao bao lâu. Góc nhìn của em là chờ ba tín hiệu. Một, lãi suất huy động hạ nhiệt. Hai, giá vượt được cản hai mươi hai phẩy tám. Ba, nợ xấu toàn ngành ngừng tăng.",
+   "say": "Góc nhìn của em là chờ ba tín hiệu. Một, lãi suất huy động hạ nhiệt. Hai, giá vượt được cản hai mươi hai phẩy tám. Ba, nợ xấu toàn ngành ngừng tăng.",
    "hold": 0.3
   },
   {

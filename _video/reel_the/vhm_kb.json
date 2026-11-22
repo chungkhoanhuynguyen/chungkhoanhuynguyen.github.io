@@ -19,7 +19,7 @@
   },
   {
    "id": "S4",
-   "say": "Lãi vay vẫn cao, nên giá rao giảm vẫn chưa đủ kéo người mua. Lượng quan tâm chung cư Hà Nội tháng mười còn giảm chín phần trăm. Một bộ phận người mua chọn quay về gửi tiết kiệm, chờ thêm.",
+   "say": "Lãi vay vẫn cao, nên giá rao giảm vẫn chưa đủ kéo người mua. Lượng quan tâm chung cư Hà Nội tháng mười còn giảm chín phần trăm. Một bộ phận người mua chọn quay về gửi tiết kiệm, chờ thêm. Câu hỏi còn bỏ ngỏ là quý bốn người mua có quay lại hay không.",
    "hold": 0.3
   },
   {
@@ -29,7 +29,7 @@
   },
   {
    "id": "S5C",
-   "say": "Câu hỏi còn bỏ ngỏ là quý bốn người mua có quay lại hay không. Góc nhìn của em là chờ ba tín hiệu. Một, giao dịch sơ cấp quý bốn cải thiện thật. Hai, giá rao ngừng giảm. Ba, giá cổ phiếu vượt được cản sáu mươi tư phẩy chín.",
+   "say": "Góc nhìn của em là chờ ba tín hiệu. Một, giao dịch sơ cấp quý bốn cải thiện thật. Hai, giá rao ngừng giảm. Ba, giá cổ phiếu vượt được cản sáu mươi tư phẩy chín.",
    "hold": 0.3
   },
   {

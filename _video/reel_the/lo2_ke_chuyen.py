@@ -236,6 +236,13 @@ L["tcb"] = [
    ("Anh chị đang gửi tiết kiệm bao nhiêu phần trăm, có thấy chín phần trăm hấp dẫn không?", "Anh chị gửi tiết kiệm bao nhiêu %, thấy **9%** có hấp dẫn không?")]),
 ]
 
+def doi_bo_ngo(ma):
+    """Chuyển câu 'bỏ ngỏ' (câu đầu S5C) về cuối S4 để cảnh góc nhìn không trống thẻ (soát STB 22/11)."""
+    sc = {x[0]: x for x in L[ma]}
+    s4, s5c = sc["S4"], sc["S5C"]
+    s4[2].append(s5c[2].pop(0))
+    s5c[1]["_muc_at"] = [[1, 0.0], [2, 0.0], [3, 0.0]]; s5c[1]["_chot_at"] = [3, 0.6]
+
 def build(ma):
     cfg = json.load(open(os.path.join(HERE, ma + ".json"), encoding="utf-8"))
     old = {s["id"]: s for s in cfg["scenes"]}
@@ -274,4 +281,4 @@ def build(ma):
     print(ma, "ky tu loi doc:", n)
 
 if __name__ == "__main__":
-    for ma in L: build(ma)
+    for ma in L: doi_bo_ngo(ma); build(ma)

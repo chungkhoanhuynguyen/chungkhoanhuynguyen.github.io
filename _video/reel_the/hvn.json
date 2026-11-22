@@ -259,6 +259,10 @@
     [
      "Tới tháng 3/2027,",
      "dự kiến mới khoảng **226 chuyến/tuần**"
+    ],
+    [
+     "Còn bỏ ngỏ:",
+     "**lịch chuyển cuối cùng** được chốt ra sao"
     ]
    ]
   },
@@ -352,7 +356,7 @@
      "t": "Chốt lịch chuyển chính thức",
      "s": "Hãng và cơ quan quản lý",
      "at": [
-      2,
+      1,
       0.0
      ]
     },
@@ -360,7 +364,7 @@
      "t": "Giá vượt cản 23,4",
      "s": "Vùng cản 23,1–23,4",
      "at": [
-      3,
+      2,
       0.0
      ]
     },
@@ -368,7 +372,7 @@
      "t": "Số chuyến tăng dần",
      "s": "Từ mức 226 chuyến/tuần",
      "at": [
-      4,
+      3,
       0.0
      ]
     }
@@ -377,15 +381,11 @@
     "a": "CHỜ LỊCH CHUYỂN",
     "b": "CHỐT CHÍNH THỨC",
     "at": [
-     4,
+     3,
      0.6
     ]
    },
    "phude": [
-    [
-     "Còn bỏ ngỏ:",
-     "**lịch chuyển cuối cùng** được chốt ra sao"
-    ],
     [
      "Góc nhìn của em:",
      "chờ **3 tín hiệu**"

@@ -261,6 +261,11 @@
     [
      "Tới **2030**,",
      "phần của FPT Retail có thể lùi về khoảng **72%**"
+    ],
+    [
+     "Còn bỏ ngỏ:",
+     "con số trên giấy có được **doanh thu thật**",
+     "kiểm chứng không"
     ]
    ]
   },
@@ -354,7 +359,7 @@
      "t": "Doanh thu Long Châu quý IV",
      "s": "Kiểm chứng định giá",
      "at": [
-      2,
+      1,
       0.0
      ]
     },
@@ -362,7 +367,7 @@
      "t": "ESOP đúng lộ trình",
      "s": "Mỗi năm 1% vốn",
      "at": [
-      3,
+      2,
       0.0
      ]
     },
@@ -370,7 +375,7 @@
      "t": "Giá vượt cản 154,8",
      "s": "Vùng cản 152–154,8",
      "at": [
-      4,
+      3,
       0.0
      ]
     }
@@ -379,16 +384,11 @@
     "a": "ĐỊNH GIÁ CẦN SỐ THẬT",
     "b": "KHÔNG CHỈ TÊN CHUỖI",
     "at": [
-     4,
+     3,
      0.6
     ]
    },
    "phude": [
-    [
-     "Còn bỏ ngỏ:",
-     "con số trên giấy có được **doanh thu thật**",
-     "kiểm chứng không"
-    ],
     [
      "Góc nhìn của em:",
      "chờ **3 tín hiệu**"

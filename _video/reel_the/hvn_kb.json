@@ -19,7 +19,7 @@
   },
   {
    "id": "S4",
-   "say": "Đổi sân bay với một hãng bay không đơn giản như dọn nhà. Phải sắp lại lịch bay, đường bay, nhân sự mặt đất, và bán vé trước nhiều tháng. Vì vậy tới tháng ba năm sau, Long Thành dự kiến mới đạt khoảng hai trăm hai mươi sáu chuyến mỗi tuần.",
+   "say": "Đổi sân bay với một hãng bay không đơn giản như dọn nhà. Phải sắp lại lịch bay, đường bay, nhân sự mặt đất, và bán vé trước nhiều tháng. Vì vậy tới tháng ba năm sau, Long Thành dự kiến mới đạt khoảng hai trăm hai mươi sáu chuyến mỗi tuần. Câu hỏi còn bỏ ngỏ là lịch chuyển cuối cùng sẽ được chốt ra sao.",
    "hold": 0.3
   },
   {
@@ -29,7 +29,7 @@
   },
   {
    "id": "S5C",
-   "say": "Câu hỏi còn bỏ ngỏ là lịch chuyển cuối cùng sẽ được chốt ra sao. Góc nhìn của em là chờ ba tín hiệu. Một, lịch chuyển được chốt chính thức. Hai, giá vượt được cản hai mươi ba phẩy tư. Ba, số chuyến tăng dần đúng kế hoạch.",
+   "say": "Góc nhìn của em là chờ ba tín hiệu. Một, lịch chuyển được chốt chính thức. Hai, giá vượt được cản hai mươi ba phẩy tư. Ba, số chuyến tăng dần đúng kế hoạch.",
    "hold": 0.3
   },
   {

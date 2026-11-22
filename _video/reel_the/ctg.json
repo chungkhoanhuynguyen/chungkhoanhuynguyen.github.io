@@ -259,6 +259,11 @@
      "Nhưng 9 tháng qua VietinBank đi chậm:",
      "tín dụng chỉ **+7,5%**,",
      "vay mua nhà **−5,5%**"
+    ],
+    [
+     "Còn bỏ ngỏ:",
+     "lá thư có thành **tiền thật** không,",
+     "và **khi nào**"
     ]
    ]
   },
@@ -351,7 +356,7 @@
      "t": "Tỷ trọng BĐS không tăng",
      "s": "Hiện 19,4% tổng dư nợ",
      "at": [
-      2,
+      1,
       0.0
      ]
     },
@@ -359,7 +364,7 @@
      "t": "Nợ xấu dưới 1,8%",
      "s": "Mục tiêu năm 2026",
      "at": [
-      3,
+      2,
       0.0
      ]
     },
@@ -367,7 +372,7 @@
      "t": "Giá vượt cản 32",
      "s": "Vùng cản 31,6–32",
      "at": [
-      4,
+      3,
       0.0
      ]
     }
@@ -376,16 +381,11 @@
     "a": "THEO DÕI TỶ TRỌNG",
     "b": "VÀ CHẤT LƯỢNG NỢ",
     "at": [
-     4,
+     3,
      0.6
     ]
    },
    "phude": [
-    [
-     "Còn bỏ ngỏ:",
-     "lá thư có thành **tiền thật** không,",
-     "và **khi nào**"
-    ],
     [
      "Góc nhìn của em:",
      "chờ **3 tín hiệu**"

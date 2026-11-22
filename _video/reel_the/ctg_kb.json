@@ -19,7 +19,7 @@
   },
   {
    "id": "S4",
-   "say": "Thị trường lo vì bất động sản đã chiếm khoảng bốn trăm mười lăm nghìn tỷ dư nợ, tức mười chín phẩy bốn phần trăm. Nếu lá thư biến thành tiền thật, tỷ trọng này có thể phình lên. Tuy vậy, chín tháng qua VietinBank đi khá chậm: tín dụng chỉ tăng bảy phẩy năm phần trăm, cho vay mua nhà còn giảm năm phẩy năm phần trăm.",
+   "say": "Thị trường lo vì bất động sản đã chiếm khoảng bốn trăm mười lăm nghìn tỷ dư nợ, tức mười chín phẩy bốn phần trăm. Nếu lá thư biến thành tiền thật, tỷ trọng này có thể phình lên. Tuy vậy, chín tháng qua VietinBank đi khá chậm: tín dụng chỉ tăng bảy phẩy năm phần trăm, cho vay mua nhà còn giảm năm phẩy năm phần trăm. Phần còn bỏ ngỏ là lá thư này có trở thành tiền thật hay không, và khi nào.",
    "hold": 0.3
   },
   {
@@ -29,7 +29,7 @@
   },
   {
    "id": "S5C",
-   "say": "Phần còn bỏ ngỏ là lá thư này có trở thành tiền thật hay không, và khi nào. Góc nhìn của em là chờ ba tín hiệu. Một, tỷ trọng bất động sản không tăng thêm. Hai, nợ xấu giữ dưới một phẩy tám phần trăm. Ba, giá vượt được cản ba mươi hai.",
+   "say": "Góc nhìn của em là chờ ba tín hiệu. Một, tỷ trọng bất động sản không tăng thêm. Hai, nợ xấu giữ dưới một phẩy tám phần trăm. Ba, giá vượt được cản ba mươi hai.",
    "hold": 0.3
   },
   {

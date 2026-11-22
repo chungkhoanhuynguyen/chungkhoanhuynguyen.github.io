@@ -256,6 +256,10 @@
     ],
     [
      "Nợ xấu toàn ngành 9 tháng **2,3%**"
+    ],
+    [
+     "Còn bỏ ngỏ:",
+     "lãi huy động **neo cao bao lâu**"
     ]
    ]
   },
@@ -349,7 +353,7 @@
      "t": "Lãi suất huy động hạ nhiệt",
      "s": "Giảm áp lực chi phí vốn",
      "at": [
-      2,
+      1,
       0.0
      ]
     },
@@ -357,7 +361,7 @@
      "t": "Giá vượt cản 22,8",
      "s": "Vùng cản 21,8–22,8",
      "at": [
-      3,
+      2,
       0.0
      ]
     },
@@ -365,7 +369,7 @@
      "t": "Nợ xấu ngành ngừng tăng",
      "s": "Báo cáo quý IV",
      "at": [
-      4,
+      3,
       0.0
      ]
     }
@@ -374,15 +378,11 @@
     "a": "VỐN RẺ HƠN",
     "b": "LỢI NHUẬN DỄ THỞ",
     "at": [
-     4,
+     3,
      0.6
     ]
    },
    "phude": [
-    [
-     "Còn bỏ ngỏ:",
-     "lãi huy động **neo cao bao lâu**"
-    ],
     [
      "Góc nhìn của em:",
      "chờ **3 tín hiệu**"

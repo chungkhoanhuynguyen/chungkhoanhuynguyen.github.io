@@ -19,7 +19,7 @@
   },
   {
    "id": "S4",
-   "say": "Vậy tiền đi đâu? Thu nhập không hề yếu: tổng thu nhập vẫn tăng mười bốn phẩy một phần trăm. Phần lớn được trích ra dự phòng, từ hai nghìn một trăm năm mươi hai lên mười hai nghìn tám trăm bốn mươi tám tỷ, gấp gần sáu lần. Nói dễ hiểu, Sacombank đang dùng lãi để gánh nợ xấu.",
+   "say": "Vậy tiền đi đâu? Thu nhập không hề yếu: tổng thu nhập vẫn tăng mười bốn phẩy một phần trăm. Phần lớn được trích ra dự phòng, từ hai nghìn một trăm năm mươi hai lên mười hai nghìn tám trăm bốn mươi tám tỷ, gấp gần sáu lần. Nói dễ hiểu, Sacombank đang dùng lãi để gánh nợ xấu. Câu chuyện vẫn còn bỏ ngỏ, vì Ngân hàng Nhà nước vừa khởi động lại việc xử lý ba mươi hai phẩy năm phần trăm cổ phần.",
    "hold": 0.3
   },
   {
@@ -29,7 +29,7 @@
   },
   {
    "id": "S5C",
-   "say": "Câu chuyện vẫn còn bỏ ngỏ, vì Ngân hàng Nhà nước vừa khởi động lại việc xử lý ba mươi hai phẩy năm phần trăm cổ phần. Góc nhìn của em là chờ ba tín hiệu. Một, nợ xấu ngừng tăng. Hai, giá vượt được vùng cản bảy mươi ba. Ba, có hướng xử lý rõ cho số cổ phần đó.",
+   "say": "Góc nhìn của em là chờ ba tín hiệu. Một, nợ xấu ngừng tăng. Hai, giá vượt được vùng cản bảy mươi ba. Ba, có hướng xử lý rõ cho số cổ phần đó.",
    "hold": 0.3
   },
   {

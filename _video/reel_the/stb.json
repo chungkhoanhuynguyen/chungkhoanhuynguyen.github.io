@@ -261,6 +261,10 @@
     [
      "Nói dễ hiểu:",
      "Sacombank đang dùng lãi để **gánh nợ xấu**"
+    ],
+    [
+     "Chuyện còn bỏ ngỏ:",
+     "NHNN vừa khởi động lại xử lý **32,5%** cổ phần"
     ]
    ]
   },
@@ -353,7 +357,7 @@
      "t": "Nợ xấu ngừng tăng",
      "s": "Báo cáo quý bốn",
      "at": [
-      2,
+      1,
       0.0
      ]
     },
@@ -361,7 +365,7 @@
      "t": "Giá vượt cản 73",
      "s": "Vùng cản 72–73",
      "at": [
-      3,
+      2,
       0.0
      ]
     },
@@ -369,7 +373,7 @@
      "t": "Hướng xử lý 32,5% cổ phần",
      "s": "Ngân hàng Nhà nước khởi động lại",
      "at": [
-      4,
+      3,
       0.0
      ]
     }
@@ -378,15 +382,11 @@
     "a": "LÃI PHỤC HỒI",
     "b": "PHẢI ĐI CÙNG NỢ XẤU",
     "at": [
-     4,
+     3,
      0.6
     ]
    },
    "phude": [
-    [
-     "Chuyện còn bỏ ngỏ:",
-     "NHNN vừa khởi động lại xử lý **32,5%** cổ phần"
-    ],
     [
      "Góc nhìn của em:",
      "chờ **3 tín hiệu**"

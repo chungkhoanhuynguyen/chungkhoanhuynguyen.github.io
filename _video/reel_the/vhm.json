@@ -258,6 +258,10 @@
     ],
     [
      "Một bộ phận chọn **gửi tiết kiệm**, chờ thêm"
+    ],
+    [
+     "Còn bỏ ngỏ:",
+     "quý 4 **người mua có quay lại** không"
     ]
    ]
   },
@@ -350,7 +354,7 @@
      "t": "Sơ cấp quý IV cải thiện thật",
      "s": "Theo số liệu CBRE",
      "at": [
-      2,
+      1,
       0.0
      ]
     },
@@ -358,7 +362,7 @@
      "t": "Giá rao ngừng giảm",
      "s": "Báo cáo quý IV",
      "at": [
-      3,
+      2,
       0.0
      ]
     },
@@ -366,7 +370,7 @@
      "t": "Giá vượt cản 64,9",
      "s": "Vùng cản 63,9–64,9",
      "at": [
-      4,
+      3,
       0.0
      ]
     }
@@ -375,15 +379,11 @@
     "a": "THANH KHOẢN",
     "b": "QUAN TRỌNG HƠN GIÁ RAO",
     "at": [
-     4,
+     3,
      0.6
     ]
    },
    "phude": [
-    [
-     "Còn bỏ ngỏ:",
-     "quý 4 **người mua có quay lại** không"
-    ],
     [
      "Góc nhìn của em:",
      "chờ **3 tín hiệu**"
