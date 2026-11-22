@@ -10,6 +10,7 @@ PHAT_AM = [
     ("FPT Retail", "ép pi ti Ri teo"), ("FPT Shop", "ép pi ti Sóp"), ("FPT", "ép pi ti"), ("Vietcap", "Việt cáp"),
     ("ESOP", "ê sóp"), ("Creador", "Cờ rê a đo"), ("Vietnambiz", "Việt Nam bít"),
     ("CBRE", "xi bi a ri"), ("Mekong ASEAN", "Mê Kông A xê an"), ("Vietcombank", "Việt com banh"), ("VPBank", "Vê pê banh"), ("MBBank", "em bê banh"), ("Batdongsan.com.vn", "bất động sản chấm com"), ("Batdongsan", "bất động sản chấm com"),
+    ("APEC", "A péc"),
     ("The Sapphire", "Đờ Sa phai a"), ("Vinhomes Smart City", "Vin hôm Sờ mát Xi ti"),
     ("Lumi Hanoi", "Lu mi Hà Nội"), ("Times City", "Tham Xi ti"), ("Ocean Park", "Âu sần Pác"),
 ]

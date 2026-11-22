@@ -23,7 +23,13 @@ def doi(s):
 # NV1B 19/11: tên loại xăng đọc 'E năm', 'E mười', 'RON chín mươi lăm' → phụ đề E5, E10, RON95 (V1 NONG1911A ra 'Enăm', 'RONchín 15')
 def _ma_xang(s):
     s = re.sub(r'\bE năm\b', 'E5', s); s = re.sub(r'\bE 10\b', 'E10', s); s = re.sub(r'\bE mười\b', 'E10', s)
-    s = re.sub(r'\bRON 9([25])\b', r'RON9\1', s); return s
+    s = re.sub(r'\bRON 9([25])\b', r'RON9\1', s)
+    # NV1 23/11: lời đọc qua phat_am.doc ('A péc', 'Sa com banh') → phụ đề trả về chữ gốc (APEC, Sacombank)
+    try:
+        from phat_am import PHAT_AM
+        for a_, b_ in sorted(PHAT_AM, key=lambda x: -len(x[1])): s = s.replace(b_, a_)
+    except Exception: pass
+    return s
 def _doi0(s):
     toks = s.split(" "); out = []; i = 0
     while i < len(toks):

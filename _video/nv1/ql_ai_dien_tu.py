@@ -86,7 +86,7 @@ S = [
         ('Nhập khẩu cùng nhóm', '201,12 TỶ USD'),
         ('Nhập nhiều hơn xuất', '65,81 TỶ USD'),
         ('Cán cân cả nước', 'NHẬP SIÊU 17,66 TỶ')]),
-      say=("Cú lật thứ hai nằm ở tờ số liệu tính đến giữa tháng mười. Nhóm điện tử xuất đi khoảng một trăm ba mươi lăm tỷ đô la, nhưng cùng nhóm đó Việt Nam nhập về hơn hai trăm lẻ một tỷ. "
+      say=("Cú lật thứ hai nằm ở tờ số liệu tính đến giữa tháng mười. Nhóm điện tử xuất đi khoảng một trăm ba mươi lăm tỷ đô la, nhưng cùng nhóm đó Việt Nam nhập về hơn hai trăm tỷ đô la. "
            "Có những linh kiện nhập về được dùng cho nhóm hàng khác như điện thoại, nên không thể nói nhóm này lỗ. Điểm chính là hàng xuất đi rất nhiều, nhưng phần giá trị ở lại Việt Nam không lớn như con số xuất khẩu. Cả nước cũng đã chuyển từ xuất siêu sang nhập siêu.")),
  dict(k='cards', anh=CT, cap=('TIỀN Ở LẠI VIỆT NAM', 'NẰM Ở ĐÂU?'), cols=CC, moc=True,
       cards=[('Nhập về', 'Chip, linh kiện giá trị cao', 'Lắp ráp rồi xuất đi'), ('Ở lại', 'Tiền công, thuê đất, dịch vụ', 'Quanh khu công nghiệp'), ('Còn thấp', 'Giá trị giữ lại trong nước', 'VnEconomy 10/7/2026')],
@@ -120,7 +120,7 @@ S = [
         ('Lãi quán, khách công nhân điện tử', '10 TRIỆU'),
         ('Lãi quán, từ khách khác', '6 TRIỆU')]),
       say=("Giờ là sổ thu nhập nhà anh Tuấn, em giả định. Lương cứng mười triệu, tăng ca thêm bốn triệu mỗi tháng. "
-           "Quán cơm của vợ lãi khoảng mười sáu triệu, trong đó khoảng mười triệu nhờ khách là công nhân các nhà máy điện tử quanh đó. "
+           "Quán cơm của vợ mỗi tháng lãi khoảng mười sáu triệu đồng, trong đó khoảng mười triệu đồng nhờ khách là công nhân các nhà máy điện tử quanh đó. "
            "Cả nhà khoảng ba mươi triệu đồng mỗi tháng.")),
  dict(k='bignum', anh=HA, cap=('14 TRÊN 30 TRIỆU', 'DỰA VÀO MỘT NGÀNH'), cols=CR, moc=True, value=47, fmt='{:,.0f}', unit='%', top='PHẦN THU NHẬP NHÀ ANH TUẤN DỰA VÀO ĐƠN HÀNG ĐIỆN TỬ (EM TỰ TÍNH)',
       sub='Tăng ca 4 triệu + khách công nhân 10 triệu, trên tổng 30 triệu', col=RED,
