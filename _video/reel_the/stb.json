@@ -32,19 +32,18 @@
    },
    "phude": [
     [
-     "Sacombank bớt **4.291** nhân viên",
-     "trong **9 tháng**",
-     "lãi sau thuế **−50,8%**"
+     "Sacombank giảm **4.291** nhân viên chỉ trong **9 tháng**"
     ],
     [
-     "**Chuyện gì đây?**"
+     "Vậy mà lợi nhuận mất **hơn một nửa**,",
+     "chuyện gì đã xảy ra?"
     ]
    ]
   },
   {
    "id": "S2",
    "kieu": "tin",
-   "chuong": "— CẮT GIẢM —",
+   "chuong": "— CHUYỆN BẮT ĐẦU —",
    "tin": {
     "moc": "VIETNAMFINANCE · 18/11",
     "t": "Sacombank bớt gần 1/3 nhân sự",
@@ -95,25 +94,29 @@
     "b": "CIR CÒN 32,6%",
     "do": 1,
     "at": [
-     1,
+     2,
      0.7
     ]
    },
    "phude": [
     [
-     "Còn **11.560** nhân viên",
-     "giảm **4.291** người, **−27%**"
+     "Đầu năm, Sacombank có gần **15.900** người"
     ],
     [
-     "Chi phí trên thu nhập **CIR**",
-     "từ **46,1%** xuống **32,6%**"
+     "Cuối tháng 9 còn **11.560**,",
+     "cứ **4 người** thì gần **1 người** rời đi"
+    ],
+    [
+     "Bộ máy gọn hẳn:",
+     "chi phí nhân viên **−22%**,",
+     "chi phí trên thu nhập từ **46,1%** xuống **32,6%**"
     ]
    ]
   },
   {
    "id": "S3",
    "kieu": "so",
-   "chuong": "— CON SỐ THẬT —",
+   "chuong": "— CÚ BẤT NGỜ —",
    "the": [
     {
      "nhan": "LỢI NHUẬN SAU THUẾ 9 THÁNG",
@@ -124,8 +127,8 @@
      "y": 300,
      "h": "400px",
      "at": [
-      0,
-      0.04
+      1,
+      0.1
      ]
     },
     {
@@ -139,7 +142,7 @@
      "x": 64,
      "w": 462,
      "at": [
-      0,
+      1,
       0.7
      ],
      "tien": "-"
@@ -155,7 +158,7 @@
      "x": 554,
      "w": 462,
      "at": [
-      1,
+      2,
       0.1
      ],
      "tien": ""
@@ -168,7 +171,7 @@
      "y": 1080,
      "h": "320px",
      "at": [
-      1,
+      2,
       0.6
      ],
      "tien": "-",
@@ -178,36 +181,38 @@
     }
    ],
    "chot": {
-    "a": "DỰ PHÒNG GẤP GẦN 6 LẦN",
-    "b": "LÃI SAU THUẾ −50,8%",
+    "a": "CẮT CHI PHÍ",
+    "b": "MÀ LÃI VẪN −50,8%",
     "do": 1,
     "at": [
-     1,
+     2,
      0.9
     ]
    },
    "phude": [
     [
-     "Lãi sau thuế 9 tháng **4.278 tỷ**",
-     "giảm **50,8%**, dự phòng gấp",
-     "gần 6 lần, **12.848 tỷ**"
+     "Ai cũng nghĩ cắt chi phí thì **lãi phải tăng**"
     ],
     [
-     "Nợ xấu **7,33%**",
-     "STB giảm **9%** từ đỉnh"
+     "Nhưng lãi sau thuế 9 tháng chỉ còn **4.278 tỷ**,",
+     "giảm **50,8%**"
+    ],
+    [
+     "Nợ xấu leo lên **7,33%**,",
+     "cổ phiếu lùi **9%** từ đỉnh"
     ]
    ]
   },
   {
    "id": "S4",
    "kieu": "ds",
-   "chuong": "— LÃI RỚT VÌ ĐÂU —",
+   "chuong": "— TIỀN ĐI ĐÂU —",
    "muc": [
     {
      "so": "TĂNG 14,1%",
      "t": "Tổng thu nhập 27.794 tỷ",
      "at": [
-      0,
+      1,
       0.3
      ],
      "co": 84
@@ -216,38 +221,50 @@
      "so": "DỰ PHÒNG ×6",
      "t": "Gấp gần 6 lần: 12.848 tỷ",
      "at": [
-      1,
-      0.3
+      2,
+      0.4
      ],
      "co": 84
     },
     {
-     "so": "LÃI THUẦN −17,8%",
-     "t": "Thu nhập lãi thuần 17.517 tỷ",
+     "so": "NỢ XẤU 7,33%",
+     "t": "Đầu năm 6,41%",
      "at": [
-      1,
-      0.85
+      3,
+      0.3
      ],
-     "co": 63,
+     "co": 84,
      "mau": "#c9533e"
     }
    ],
    "chot": {
     "a": "THU NHẬP VẪN TĂNG",
-    "b": "LÃI RỚT VÌ DỰ PHÒNG",
+    "b": "LÃI DÀNH ĐỂ GÁNH NỢ XẤU",
     "at": [
-     1,
-     0.9
+     3,
+     0.85
     ]
    },
    "phude": [
     [
-     "Nhưng thu nhập **không yếu**:",
-     "tổng thu nhập **+14,1%**"
+     "Vậy **tiền đi đâu?**"
     ],
     [
-     "Lãi rớt vì **dự phòng** gần 6 lần",
-     "và lãi thuần **−17,8%**"
+     "Thu nhập không yếu:",
+     "tổng thu nhập vẫn **+14,1%**"
+    ],
+    [
+     "Phần lớn trích ra **dự phòng**,",
+     "từ **2.152** lên **12.848 tỷ**,",
+     "gấp gần **6 lần**"
+    ],
+    [
+     "Nói dễ hiểu:",
+     "Sacombank đang dùng lãi để **gánh nợ xấu**"
+    ],
+    [
+     "Chuyện còn bỏ ngỏ:",
+     "NHNN vừa khởi động lại xử lý **32,5%** cổ phần"
     ]
    ]
   },
@@ -282,8 +299,8 @@
      "dy": -170,
      "chu": "20/11: KL cao nhất 15 phiên",
      "at": [
-      2,
-      0.3
+      1,
+      0.7
      ]
     }
    ],
@@ -295,7 +312,7 @@
      "txt": "CẢN 72–73",
      "at": [
       1,
-      0.0
+      0.15
      ]
     },
     {
@@ -315,118 +332,17 @@
     "b": "HỖ TRỢ 65,1–66",
     "do": 1,
     "at": [
-     2,
-     0.6
+     1,
+     0.92
     ]
    },
    "phude": [
     [
-     "Về kỹ thuật, **MA20 cắt xuống MA50**",
-     "ngày **8/10**"
+     "Trên biểu đồ,",
+     "**MA20 cắt xuống MA50** từ ngày **8/10**"
     ],
     [
-     "Cản gần **72–73**",
-     "hỗ trợ **65,1–66**"
-    ],
-    [
-     "Ngày **20/11**: khối lượng",
-     "**cao nhất 15 phiên**"
-    ]
-   ]
-  },
-  {
-   "id": "S5A",
-   "kieu": "lk",
-   "chuong": "— HAI PHE —",
-   "tieude": "PHE LẠC QUAN NHÌN THẤY",
-   "mau": "#3fa877",
-   "muc": [
-    {
-     "t": "Chi phí hoạt động −19,3%",
-     "s": "Còn 9.053 tỷ đồng",
-     "at": [
-      0,
-      0.0
-     ]
-    },
-    {
-     "t": "CIR còn 32,6%",
-     "s": "Mục tiêu giảm tiếp 27%",
-     "at": [
-      1,
-      0.0
-     ]
-    },
-    {
-     "t": "Lãi dịch vụ gấp 3,5 lần",
-     "s": "Đạt 8.206 tỷ đồng",
-     "at": [
-      2,
-      0.0
-     ]
-    }
-   ],
-   "phude": [
-    [
-     "Chi phí hoạt động **−19,3%**"
-    ],
-    [
-     "CIR còn **32,6%**, mục tiêu **27%**"
-    ],
-    [
-     "Lãi dịch vụ gấp **3,5** lần"
-    ]
-   ]
-  },
-  {
-   "id": "S5B",
-   "kieu": "lk",
-   "chuong": "— HAI PHE —",
-   "tieude": "PHE THẬN TRỌNG NHÌN THẤY",
-   "mau": "#c9533e",
-   "muc": [
-    {
-     "t": "Nợ xấu 7,33%",
-     "s": "Đầu năm 6,41%",
-     "at": [
-      0,
-      0.0
-     ]
-    },
-    {
-     "t": "Dự phòng gấp gần 6 lần",
-     "s": "12.848 tỷ đồng",
-     "at": [
-      1,
-      0.0
-     ]
-    },
-    {
-     "t": "Giá STB giảm 9% từ đỉnh",
-     "s": "Đỉnh 78.200 đ, nay 70.800 đ",
-     "at": [
-      2,
-      0.0
-     ]
-    }
-   ],
-   "chot": {
-    "a": "HAI PHE ĐỀU CÓ LÝ",
-    "b": "NỢ XẤU LÀ ẨN SỐ",
-    "at": [
-     2,
-     0.5
-    ]
-   },
-   "phude": [
-    [
-     "Nợ xấu **7,33%**, đầu năm 6,41%"
-    ],
-    [
-     "Dự phòng gấp **gần 6** lần"
-    ],
-    [
-     "STB giảm **9%** từ đỉnh"
+     "Giá kẹt giữa cản **72–73** và hỗ trợ **65,1–66**"
     ]
    ]
   },
@@ -454,8 +370,8 @@
      ]
     },
     {
-     "t": "Xử lý xong 32,5% cổ phần",
-     "s": "Ngân hàng Nhà nước trao đổi lại",
+     "t": "Hướng xử lý 32,5% cổ phần",
+     "s": "Ngân hàng Nhà nước khởi động lại",
      "at": [
       3,
       0.0
@@ -467,22 +383,22 @@
     "b": "PHẢI ĐI CÙNG NỢ XẤU",
     "at": [
      3,
-     0.5
+     0.6
     ]
    },
    "phude": [
     [
-     "Góc nhìn của mình:",
+     "Góc nhìn của em:",
      "chờ **3 tín hiệu**"
     ],
     [
-     "**Nợ xấu** ngừng tăng"
+     "**Một**, nợ xấu ngừng tăng"
     ],
     [
-     "Giá vượt cản **73**"
+     "**Hai**, giá vượt cản **73**"
     ],
     [
-     "Có hướng xử lý **32,5%** cổ phần"
+     "**Ba**, có hướng xử lý rõ số cổ phần đó"
     ]
    ]
   },
@@ -492,8 +408,8 @@
    "chuong": "— KẾT —",
    "the": [
     {
-     "nhan": "BỚT 4.291 NHÂN SỰ",
-     "t": "TRONG 9 THÁNG",
+     "nhan": "CẮT 4.291 NGƯỜI",
+     "t": "9 THÁNG LÀ XONG",
      "co": 58,
      "at": [
       0,
@@ -501,9 +417,9 @@
      ]
     },
     {
-     "nhan": "BỚT NỢ XẤU",
-     "t": "CHƯA XONG",
-     "co": 70,
+     "nhan": "GÁNH NỢ XẤU",
+     "t": "CHƯA BIẾT BAO LÂU",
+     "co": 58,
      "mau": "#c9533e",
      "at": [
       1,
@@ -512,7 +428,7 @@
     }
    ],
    "hoi": {
-    "t": "Nhân sự hay **nợ xấu**, cái nào khó bớt hơn?",
+    "t": "Dọn nhà để **bật lên**, hay mới **bắt đầu dọn**?",
     "at": [
      2,
      0.0
@@ -520,16 +436,15 @@
    },
    "phude": [
     [
-     "Bớt **bốn nghìn** nhân viên",
-     "chín tháng là làm được"
+     "Cắt **4.000** người,",
+     "9 tháng là xong"
     ],
     [
-     "Còn **nợ xấu**",
-     "thì chưa bớt"
+     "Còn gánh **nợ xấu** thì chưa biết bao lâu"
     ],
     [
-     "Nhân sự hay **nợ xấu**,",
-     "cái nào khó bớt hơn?"
+     "Dọn nhà để **bật lên**,",
+     "hay mới **bắt đầu dọn**?"
     ]
    ]
   },

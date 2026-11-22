@@ -177,7 +177,7 @@ L["vhm"] = [
  ("S1", {}, [("Có dự án chung cư ở Hà Nội vừa mất mười bốn phần trăm giá rao chỉ sau một quý.", "Chung cư Hà Nội có nơi mất **14% giá rao** chỉ sau **một quý**"),
              ("Giá đã rẻ hơn, vậy người mua đang ở đâu?", "Giá rẻ hơn, vậy **người mua đang ở đâu?**")]),
  ("S2", {"chuong": "— GIÁ RAO ĐI XUỐNG —", "chot": {"a": "CHUNG CƯ HÀ NỘI −4%", "b": "ĐẤT NỀN −11%", "do": 1, "at": [2, 0.6]}},
-  [("Theo số liệu Batdongsan dẫn trên Vietnambiz, cả mười dự án chung cư nổi bật Hà Nội đều giảm giá rao trong quý ba.", "Theo Batdongsan.com.vn: cả **10 dự án** chung cư nổi bật Hà Nội đều giảm giá rao quý 3"),
+  [("Theo số liệu của bất động sản chấm com dẫn trên Vietnambiz, cả mười dự án chung cư nổi bật Hà Nội đều giảm giá rao trong quý ba.", "Theo Batdongsan.com.vn: cả **10 dự án** chung cư nổi bật Hà Nội đều giảm giá rao quý 3"),
    ("The Sapphire ở Vinhomes Smart City và Lumi Hanoi giảm mười bốn phần trăm, Times City mười ba, Ocean Park mười một.", "The Sapphire, Lumi **−14%**, Times City **−13%**, Ocean Park **−11%**"),
    ("Mặt bằng chung cư Hà Nội giảm bốn phần trăm, đất nền giảm mười một phần trăm.", "Chung cư Hà Nội **−4%**, đất nền **−11%**")]),
  ("S3", {"chuong": "— CÚ BẤT NGỜ —", "chot": {"a": "GIÁ RAO GIẢM", "b": "THANH KHOẢN CHƯA VỀ", "do": 1, "at": [2, 0.9]},
