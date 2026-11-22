@@ -1,34 +1,34 @@
-# Xu hướng YouTube tài chính tiếng Việt – tuần tới 2026-11-21 (yt-dlp, miễn phí)
+# Xu hướng YouTube tài chính tiếng Việt – tuần tới 2026-11-22 (yt-dlp, miễn phí)
 
 | view | kênh | tiêu đề | dài (s) | từ khoá |
 |---|---|---|---|---|
-| 465466 | Chú Tư Biết Tuốt | Vì Sao Hà Nội Đập Đi Xây Lại Thần Tốc, Còn Sài Gòn Thì Chậm? | 1573 | bất động sản |
-| 213926 | Vương Triều Review Phim | Vừa Bị Sa Thải, Anh Bất Ngờ Nhìn Thấy Giá Cổ Phiếu Tương Lai, Nhận Về 50 Triệu Tệ Khiến Cả | 8304 | cổ phiếu |
-| 137761 | Tiệm Vàng Ngọc Hạnh MPT | Gold Price Update 11/20/2026 Ngoc Hanh Gold Shop MPT | 26 | giá vàng |
-| 137030 | Minh FAT | Gold price today 11/20/2026 - 9999 gold price, SJC gold, 9999 gold rings,... | 6654 | giá vàng |
-| 128514 | Tiệm Vàng Ngọc Hạnh MPT | Gold Price Update for 11/14/2026 at Ngoc Hanh MPT Jewelry Store | 25 | giá vàng |
-| 126836 | Tiệm Vàng Ngọc Hạnh MPT | Morning Gold Price 11/17/2026 #goldprice #goldpricetoday | 25 | giá vàng |
-| 113249 | Minh FAT | Giá vàng hôm nay ngày 20/11/2026 - giá vàng 9999, vàng sjc, vàng nhẫn 9999,... | 7666 | giá vàng |
-| 107398 | Tiền Phong TV | Bất ngờ kiểm tra toàn diện siêu 'bất động sản' gần 4,4 hecta của Lý Nhã Kỳ tại Đồng Nai | 540 | bất động sản |
-| 74429 | VỰA TIN | Nhà Bỏ Hoang La Liệt: Vì Sao Người Việt Vẫn Không Mua Nổi Nhà? | 560 | bất động sản |
-| 73014 | Nước Úc Channel | TẠI SAO ĐAN NGUYÊN, NGƯỜI TÂY ÚC THẤY VIỆT NAM LÀ THIÊN ĐƯỜNG : CÒN TUẤN HƯNG PHẢI RA ĐI ? | 1157 | vĩ mô việt nam |
-| 70960 | Điểm Tin 365 | [TRỰC TIẾP] Vì Sao Người Dân Ồ Ạt Rút Tiền Vàng, Chứng Khoán Đổ Vào Ngân Hàng Gửi Lãi? | 16167 | lãi suất ngân hàng |
-| 66785 | VTV24 | Nvidia stock plummets following CEO's personal scandal: When the 'hero' becomes a liabilit | 541 | cổ phiếu |
-| 66031 | Nước Úc Channel | ĐAN NGUYÊN VỀ VIỆT NAM : VÌ SAO BÁO CHÍ IM RE ? | 900 | vĩ mô việt nam |
-| 63102 | VTC NEWS | TS Nguyễn Trí Hiếu: Vàng cắm đầu, AI bốc hơi 2.500 tỷ USD, USD trỗi dậy – Ai thao túng dòn | 4082 | vĩ mô việt nam |
-| 62754 | Kênh Đầu Tư | Giá vàng hôm nay 9999 SÁNG ngày 17 tháng 11 năm 2026- GIÁ VÀNG NHẪN 9999- Bảng giá vàng sj | 620 | giá vàng |
-| 61201 | Trí Tuệ - Tiền Tệ | Sự Kiện Thứ Năm Tuần Này Sẽ Định Đoạt Giá Vàng? Kịch Bản Năm 2000 Đang Lặp Lại! | 1052 | giá vàng |
-| 56816 | Hanoi in my eyes | Trực tiếp Giá Vàng Sáng 20/11/2026 / Vàng giảm giá mạnh.  Vàng 99,99, SJC, Phú Quý, BTMC,  | 23756 | giá vàng |
-| 56497 | Trí Tuệ - Tiền Tệ | Giá Vàng Còn GIẢM ĐẾN BAO GIỜ? Tín Hiệu BẤT NGỜ Từ Fed Và Dòng Tiền Lớn Phố Wall | 1074 | giá vàng |
-| 56107 | Báo Quân đội nhân dân | Giá vàng hôm nay (19-11): Tiếp tục giảm ở các thương hiệu | 116 | giá vàng |
-| 53549 | TRANG VINA OFFICIAL | Breaking: Ly Nha Ky's real estate in Dong Nai under urgent inspection by authorities | 4392 | bất động sản |
-| 52074 | Tạp chí Diễn đàn doanh nghiệp | El Nino rất mạnh, miền Tây bị xâm nhập mặn vượt lịch sử? /Tin Tức 24h | 581 | vĩ mô việt nam |
-| 49072 | SuperLife | Cuộc đua năng lượng 3,6 nghìn tỷ USD của ASEAN: Việt Nam xoay sở ra sao để giữ chân FDI ? | 1886 | vĩ mô việt nam |
-| 47972 | HỒ SƠ LỊCH SỬ | 1972 Secret Files: When Nixon Met Mao, How Was Vietnam 'Bargained Away'? | 4477 | vĩ mô việt nam |
-| 47911 | VTC NEWS | Dr. Nguyen Tri Hieu: Market Break, Gold Price Testing Bottoms, What Is the Worst-Case Scen | 3765 | giá vàng |
-| 43272 | 24h News VN | WHAT HAS VINFAST CONTRIBUTED TO VIETNAM IN 2026? REMARKABLE FIGURES! | 1358 | vĩ mô việt nam |
-| 42549 | VTC NEWS | GS Đặng Hùng Võ: BẤT ĐỘNG SẢN ĐẮT ĐỎ, Nhà nước quyết định giá - HẾT THỜI SỐT ẢO, TĂNG NÓNG | 3643 | bất động sản |
-| 38616 | Bank Insights | Lãi Suất Đang Đổi Chiều? 5 Tín Hiệu Quan Trọng Người Gửi Tiền Cần Biết | 950 | lãi suất ngân hàng |
-| 38246 | VTC NEWS | Fed's Sudden Pivot: 3 Consecutive Rate Hikes, Could the USD Surge? / VTC News | 1923 | lãi suất ngân hàng |
-| 33858 | Báo Quân đội nhân dân | Giá vàng hôm nay (18-11): Biến động trái chiều | 116 | giá vàng |
-| 31674 | Quân Talks | A Bank Cuts Interest Rates to 0% - Is This a Sign of Imminent Collapse? | 823 | lãi suất ngân hàng |
+| 236555 | Vương Triều Review Phim | Vừa Bị Sa Thải, Anh Bất Ngờ Nhìn Thấy Giá Cổ Phiếu Tương Lai, Nhận Về 50 Triệu Tệ Khiến Cả | 8304 | cổ phiếu |
+| 164763 | VTC NEWS | TS Bùi Ngọc Sơn: Vàng bị ồ ạt bán tháo, đáy mới ở đâu khi kỳ vọng lãi suất đã thay đổi? /  | 1980 | kinh tế việt nam |
+| 153630 | BATTLECRY - NGƯỜI KỂ SỬ | DIPLOMACY SPEAKS OUT - VIETNAM SURPRISINGLY ACHIEVES WHAT MANY COUNTRIES COULD NOT AT APEC | 716 | kinh tế việt nam |
+| 147419 | Tiệm Vàng Ngọc Hạnh MPT | Gold Price Update for 11/21/2026 at Ngoc Hanh MPT Jewelry Store | 26 | giá vàng |
+| 136207 | VTC NEWS | Dr. Bùi Ngọc Sơn: Out of momentum, will Gold prices fall to a "bottom" of $2000? Despite h | 4097 | kinh tế việt nam |
+| 127933 | Tiệm Vàng Ngọc Hạnh MPT | Morning Gold Price 11/17/2026 #goldprice #goldpricetoday | 25 | giá vàng |
+| 123645 | VTV8 - ĐÀI TRUYỀN HÌNH VIỆT NA | APEC 2026: Thông tin từ Thâm Quyến khoảnh khắc chuyển giao vai trò chủ nhà APEC 2027 cho V | 638 | kinh tế việt nam |
+| 122582 | BATTLECRY - KHÁM PHÁ | VIETNAM'S MIRACULOUS BREAKTHROUGH: FROM AN IMPOVERISHED NATION TO AN EXPORT POWERHOUSE THA | 972 | kinh tế việt nam |
+| 118118 | Tiền Phong TV | Bất ngờ kiểm tra toàn diện siêu 'bất động sản' gần 4,4 hecta của Lý Nhã Kỳ tại Đồng Nai | 540 | bất động sản |
+| 111451 | Tiệm Vàng Ngọc Hạnh MPT | Gold Price Update for 11/18/2026 at Ngoc Hanh MPT Jewelry Store | 26 | giá vàng |
+| 80756 | NEWS TODAY 3.6.5 | Vietnam's Economy in 2026 and Outlook for 2027: Perspectives from Economist Bui Kien Thanh | 1274 | kinh tế việt nam |
+| 79880 | Điểm Tin 365 | [TRỰC TIẾP] Vì Sao Người Dân Ồ Ạt Rút Tiền Vàng, Chứng Khoán Đổ Vào Ngân Hàng Gửi Lãi? | 16167 | lãi suất ngân hàng |
+| 78892 | VỰA TIN | Lãi Suất Chạm Đỉnh: Tiền Gửi Sắp Đảo Chiều, Người Vay Được Lợi? | 543 | lãi suất ngân hàng |
+| 76218 | VỰA TIN | Nhà Bỏ Hoang La Liệt: Vì Sao Người Việt Vẫn Không Mua Nổi Nhà? | 560 | bất động sản |
+| 67306 | Kinh Tế Toàn Cảnh | The Most "Insane" Wave of Return Migration in History: When Intellectuals Leave High-Payin | 1642 | kinh tế việt nam |
+| 63241 | Kênh Đầu Tư | Giá vàng hôm nay 9999 SÁNG ngày 17 tháng 11 năm 2026- GIÁ VÀNG NHẪN 9999- Bảng giá vàng sj | 620 | giá vàng |
+| 61176 | Thai Pham | BOM TẤN $ANT ANTHROPIC IPO, DOMINO HAY CỨU CÁNH CỦA THỊ TRƯỜNG CHỨNG KHOÁN TOÀN CẦU? | 2667 | cổ phiếu |
+| 58668 | VTC NEWS | GS Đặng Hùng Võ: BẤT ĐỘNG SẢN ĐẮT ĐỎ, Nhà nước quyết định giá - HẾT THỜI SỐT ẢO, TĂNG NÓNG | 3643 | bất động sản |
+| 57518 | VTC NEWS | Dr. Nguyen Tri Hieu: Cracking Down on Real Estate Speculation, Massive New Supply: Is the  | 3831 | bất động sản |
+| 57272 | Trí Tuệ - Tiền Tệ | Giá Vàng Còn GIẢM ĐẾN BAO GIỜ? Tín Hiệu BẤT NGỜ Từ Fed Và Dòng Tiền Lớn Phố Wall | 1074 | giá vàng |
+| 56274 | Báo Quân đội nhân dân | Giá vàng hôm nay (19-11): Tiếp tục giảm ở các thương hiệu | 116 | giá vàng |
+| 54564 | Hanoi in my eyes | Trực tiếp Giá Vàng Sáng 19/11/2026 / Vàng lao dốc khủng.  Vàng 99,99, SJC, Phú Quý, BTMC,  | 4233 | giá vàng |
+| 52315 | VTC NEWS | Dr. Nguyen Tri Hieu: Market Break, Gold Price Testing Bottoms, What Is the Worst-Case Scen | 3765 | giá vàng |
+| 49315 | SuperLife | Cuộc đua năng lượng 3,6 nghìn tỷ USD của ASEAN: Việt Nam xoay sở ra sao để giữ chân FDI ? | 1886 | kinh tế việt nam |
+| 49195 | SuperLife | Vì sao Hàn Quốc tái khẳng định Việt Nam là đối tác hàng đầu. Bức tranh hiện tại tương lai  | 1769 | kinh tế việt nam |
+| 48522 | BCNN - BƯỚC CHUYỂN NGHỀ NGHIỆP | Where Will Vietnam Get 8.22 Quadrillion VND for Public Investment in 2026-2030, and Who Is | 875 | kinh tế việt nam |
+| 46394 | BATTLECRY - NGƯỜI KỂ SỬ | THE DEATH KNELL FOR SPECULATORS, SHUTTING THE DOOR ON TRADING SOCIAL HOUSING: WHY IS THE S | 754 | kinh tế việt nam |
+| 44728 | THƯ VIỆN PHÁP LUẬT | Reflecting on the APEC photo: Taking pride in Vietnam's standing / THU VIEN PHAP LUAT | 84 | kinh tế việt nam |
+| 41942 | Người Làm Deal | Việt Nam vượt Thái Lan 500 tỷ USD nhưng THUA 1 điểm CHÍ MẠNG? | 804 | kinh tế việt nam |
+| 41920 | Minh FAT | Gold Price Today 11/17/2026 - 9999 Gold Price, SJC Gold, 9999 Gold Ring,... | 1699 | giá vàng |
