@@ -1,5 +1,5 @@
 {
- "_ghi_chu": "Lô 2 reel thẻ (6 mã). Mỗi video: YT chính Shorts 11:30, TikTok chính 19:30 cùng ngày (caption 1 dòng, không hashtag/link/Zalo, bìa tải ảnh). 1 video/kênh/ngày. Không tự đăng, chờ anh Huy duyệt.",
+ "_ghi_chu": "Lô 2 reel thẻ (6 mã). Mỗi video: YT chính Shorts 11:30, TikTok chính 19:30 cùng ngày (caption 1 dòng, không hashtag/link/Zalo, bìa tải ảnh). 1 video/kênh/ngày. Không tự đăng, chờ anh Huy duyệt. 22/11 16:40 anh Huy chê bản cũ cụt, không có câu chuyện → đã viết lại kể chuyện (lo2_ke_chuyen.py), dựng lại, thay file trên video-out/reel2311. Vẫn CHO_ANH_DUYET.",
  "release": "reel-the-20261123",
  "trang_thai": "CHO_ANH_DUYET",
  "file_video_ghi_chu": "Nhánh video-out, thư mục reel2311/<key>.mp4 + <key>_bia.jpg",
@@ -28,7 +28,7 @@
   "file_bia": "video-out:reel2311/stb_bia.jpg",
   "file_nguon": "stb_nguon.txt",
   "reel_the_cfg": "_video/reel_the/stb.json",
-  "do_dai": "97,0 s (gồm outro 3s không lời)",
+  "do_dai": "96,6 s (gồm giữ bìa 1,2s + outro 3s)",
   "canh_ky_thuat": "MA20 cắt xuống MA50 8/10; cản 72–73; hỗ trợ 65,1–66; KL cao nhất 15 phiên 20/11",
   "do_to": "-13 LUFS (ebur128)",
   "canh_goc_nhin": "Chờ 3 tín hiệu (nợ xấu ngừng tăng, vượt cản 73, hướng xử lý 32,5% cổ phần); chốt: LÃI PHỤC HỒI / PHẢI ĐI CÙNG NỢ XẤU",
@@ -36,7 +36,8 @@
    "yt_chinh_shorts": "2026-11-27T11:30+07:00",
    "tiktok_chinh": "2026-11-27T19:30+07:00",
    "fb_reel": null
-  }
+  },
+  "ban": "KE_CHUYEN_2211 (viết lại theo anh Huy 22/11: tình huống → bất ngờ → lời giải → bỏ ngỏ → góc nhìn)"
  },
  "CTG": {
   "ma": "CTG",
@@ -63,7 +64,7 @@
   "file_bia": "video-out:reel2311/ctg_bia.jpg",
   "file_nguon": "ctg_nguon.txt",
   "reel_the_cfg": "_video/reel_the/ctg.json",
-  "do_dai": "99,8 s (gồm outro 3s không lời)",
+  "do_dai": "97,8 s (gồm giữ bìa 1,2s + outro 3s)",
   "canh_ky_thuat": "MA20 cắt lên MA50 9/11; cản 31,6–32; hỗ trợ 28,9–29,8; KL đột biến 5/11",
   "do_to": "-13 LUFS (ebur128)",
   "canh_goc_nhin": "Chờ 3 tín hiệu (tỷ trọng BĐS không tăng, nợ xấu dưới 1,8%, vượt cản 32); chốt: THEO DÕI TỶ TRỌNG / VÀ CHẤT LƯỢNG NỢ",
@@ -71,7 +72,8 @@
    "yt_chinh_shorts": "2026-11-28T11:30+07:00",
    "tiktok_chinh": "2026-11-28T19:30+07:00",
    "fb_reel": null
-  }
+  },
+  "ban": "KE_CHUYEN_2211 (viết lại theo anh Huy 22/11: tình huống → bất ngờ → lời giải → bỏ ngỏ → góc nhìn)"
  },
  "FRT": {
   "ma": "FRT",
@@ -98,7 +100,7 @@
   "file_bia": "video-out:reel2311/frt_bia.jpg",
   "file_nguon": "frt_nguon.txt",
   "reel_the_cfg": "_video/reel_the/frt.json",
-  "do_dai": "99,0 s (gồm outro 3s không lời)",
+  "do_dai": "100,2 s (gồm giữ bìa 1,2s + outro 3s)",
   "canh_ky_thuat": "MA20 cắt lên MA50 11/8; cản 152–154,8; hỗ trợ 138–140; KL cao nhất 15 phiên 2/11",
   "do_to": "-13 LUFS (ebur128)",
   "canh_goc_nhin": "Chờ 3 tín hiệu (doanh thu quý IV, ESOP đúng lộ trình, vượt cản 154,8); chốt: ĐỊNH GIÁ CẦN SỐ THẬT",
@@ -106,7 +108,8 @@
    "yt_chinh_shorts": "2026-11-29T11:30+07:00",
    "tiktok_chinh": "2026-11-29T19:30+07:00",
    "fb_reel": null
-  }
+  },
+  "ban": "KE_CHUYEN_2211 (viết lại theo anh Huy 22/11: tình huống → bất ngờ → lời giải → bỏ ngỏ → góc nhìn)"
  },
  "HVN": {
   "ma": "HVN",
@@ -133,7 +136,7 @@
   "file_bia": "video-out:reel2311/hvn_bia.jpg",
   "file_nguon": "hvn_nguon.txt",
   "reel_the_cfg": "_video/reel_the/hvn.json",
-  "do_dai": "91,6 s (gồm outro 3s không lời)",
+  "do_dai": "93,9 s (gồm giữ bìa 1,2s + outro 3s)",
   "canh_ky_thuat": "MA20 cắt lên MA50 10/11; cản 23,1–23,4; hỗ trợ 20,15–20,25; KL tăng vọt 19/11",
   "do_to": "-13 LUFS (ebur128)",
   "canh_goc_nhin": "Chờ 3 tín hiệu (chốt lịch chuyển, vượt cản 23,4, số chuyến tăng dần); chốt: CHỜ LỊCH CHUYỂN / CHỐT CHÍNH THỨC",
@@ -141,7 +144,8 @@
    "yt_chinh_shorts": "2026-11-30T11:30+07:00",
    "tiktok_chinh": "2026-11-30T19:30+07:00",
    "fb_reel": null
-  }
+  },
+  "ban": "KE_CHUYEN_2211 (viết lại theo anh Huy 22/11: tình huống → bất ngờ → lời giải → bỏ ngỏ → góc nhìn)"
  },
  "VHM": {
   "ma": "VHM",
@@ -168,7 +172,7 @@
   "file_bia": "video-out:reel2311/vhm_bia.jpg",
   "file_nguon": "vhm_nguon.txt",
   "reel_the_cfg": "_video/reel_the/vhm.json",
-  "do_dai": "99,4 s (gồm outro 3s không lời)",
+  "do_dai": "95,6 s (gồm giữ bìa 1,2s + outro 3s)",
   "canh_ky_thuat": "MA20 cắt xuống MA50 30/9; cản 63,9–64,9; hỗ trợ 57,6–58,9; đáy 57,6 ngày 20/10",
   "do_to": "-13 LUFS (ebur128)",
   "canh_goc_nhin": "Chờ 3 tín hiệu (sơ cấp quý IV cải thiện, giá rao ngừng giảm, vượt cản 64,9); chốt: THANH KHOẢN / QUAN TRỌNG HƠN GIÁ RAO",
@@ -176,7 +180,8 @@
    "yt_chinh_shorts": "2026-12-01T11:30+07:00",
    "tiktok_chinh": "2026-12-01T19:30+07:00",
    "fb_reel": null
-  }
+  },
+  "ban": "KE_CHUYEN_2211 (viết lại theo anh Huy 22/11: tình huống → bất ngờ → lời giải → bỏ ngỏ → góc nhìn)"
  },
  "TCB": {
   "ma": "TCB",
@@ -203,7 +208,7 @@
   "file_bia": "video-out:reel2311/tcb_bia.jpg",
   "file_nguon": "tcb_nguon.txt",
   "reel_the_cfg": "_video/reel_the/tcb.json",
-  "do_dai": "98,3 s (gồm outro 3s không lời)",
+  "do_dai": "90,4 s (gồm giữ bìa 1,2s + outro 3s)",
   "canh_ky_thuat": "MA20 cắt xuống MA50 19/11; cản 21,8–22,8; hỗ trợ 20,15–20,6; giá hồi 21,2 ngày 20/11",
   "do_to": "-13 LUFS (ebur128)",
   "canh_goc_nhin": "Chờ 3 tín hiệu (lãi suất huy động hạ nhiệt, vượt cản 22,8, nợ xấu ngành ngừng tăng); chốt: VỐN RẺ HƠN / LỢI NHUẬN DỄ THỞ",
@@ -211,6 +216,7 @@
    "yt_chinh_shorts": "2026-12-02T11:30+07:00",
    "tiktok_chinh": "2026-12-02T19:30+07:00",
    "fb_reel": null
-  }
+  },
+  "ban": "KE_CHUYEN_2211 (viết lại theo anh Huy 22/11: tình huống → bất ngờ → lời giải → bỏ ngỏ → góc nhìn)"
  }
 }

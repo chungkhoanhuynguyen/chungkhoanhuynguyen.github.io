@@ -32,18 +32,19 @@
    },
    "phude": [
     [
-     "Một lá thư của VietinBank ghi **313.000 tỷ**,",
-     "cho đúng **một dự án**"
+     "VietinBank cam kết tài trợ",
+     "**313.000 tỷ**, có điều kiện",
+     "cho một dự án"
     ],
     [
-     "Số tiền đó **đã chảy ra chưa?**"
+     "**Đã giải ngân chưa?**"
     ]
    ]
   },
   {
    "id": "S2",
    "kieu": "tin",
-   "chuong": "— LÁ THƯ 313.000 TỶ —",
+   "chuong": "— DƯ NỢ BẤT ĐỘNG SẢN —",
    "tin": {
     "moc": "NGƯỜI QUAN SÁT · 19/11",
     "t": "VietinBank: dư nợ bất động sản hơn 415.000 tỷ",
@@ -90,8 +91,8 @@
     ]
    },
    "chot": {
-    "a": "313.000 TỶ",
-    "b": "GẦN 15% TỔNG DƯ NỢ",
+    "a": "BĐS 19,4% DƯ NỢ",
+    "b": "THẤP HƠN 20% CUỐI 2025",
     "do": 1,
     "at": [
      1,
@@ -100,19 +101,19 @@
    },
    "phude": [
     [
-     "VietinBank có thư cam kết tài trợ có",
-     "điều kiện **313.000 tỷ** cho dự án **Đại lộ Cảnh quan Sông Hồng**"
+     "Dư nợ liên quan bất động sản",
+     "**415.443 tỷ**, chiếm **19,4%**"
     ],
     [
-     "Gần bằng **15%** tổng dư nợ **2,14 triệu tỷ**",
-     "của cả ngân hàng"
+     "Quý hai **19,2%**",
+     "cuối năm ngoái **20%**"
     ]
    ]
   },
   {
    "id": "S3",
    "kieu": "so",
-   "chuong": "— ĐỌC KỸ LÁ THƯ —",
+   "chuong": "— CON SỐ THẬT —",
    "the": [
     {
      "nhan": "THƯ CAM KẾT CÓ ĐIỀU KIỆN",
@@ -124,7 +125,7 @@
      "h": "400px",
      "at": [
       0,
-      0.3
+      0.04
      ]
     },
     {
@@ -138,8 +139,8 @@
      "x": 64,
      "w": 462,
      "at": [
-      2,
-      0.4
+      1,
+      0.1
      ],
      "tien": "+"
     },
@@ -154,8 +155,8 @@
      "x": 554,
      "w": 462,
      "at": [
-      2,
-      0.8
+      1,
+      0.4
      ],
      "tien": ""
     },
@@ -167,8 +168,8 @@
      "y": 1080,
      "h": "320px",
      "at": [
-      3,
-      0.4
+      1,
+      0.7
      ],
      "tien": "-",
      "hau": "%",
@@ -181,58 +182,51 @@
     "b": "CHƯA GIẢI NGÂN, CHƯA DƯ NỢ",
     "do": 1,
     "at": [
-     1,
+     0,
      0.9
     ]
    },
    "phude": [
     [
-     "Nhưng đọc kỹ,",
-     "đây mới là **thư cam kết**"
+     "Thư cam kết **313.000 tỷ** cho dự án",
+     "Đại lộ Cảnh quan Sông Hồng,",
+     "**chưa** cấp hạn mức, **chưa** giải ngân"
     ],
     [
-     "Chưa cấp hạn mức,",
-     "**chưa giải ngân**,",
-     "chưa có đồng dư nợ nào"
-    ],
-    [
-     "Lãi trước thuế 9 tháng vẫn **+33,9%**,",
-     "nợ xấu chỉ **1,2%**"
-    ],
-    [
-     "Vậy mà cổ phiếu CTG đã lùi **14%** từ đỉnh"
+     "Lãi trước thuế 9 tháng **+33,9%**",
+     "nợ xấu **1,2%**, CTG giảm **14%**"
     ]
    ]
   },
   {
    "id": "S4",
    "kieu": "ds",
-   "chuong": "— VÌ SAO THỊ TRƯỜNG LO —",
+   "chuong": "— CAM KẾT CHƯA LÀ DƯ NỢ —",
    "muc": [
     {
-     "so": "BĐS 19,4%",
-     "t": "Khoảng 415.443 tỷ dư nợ",
+     "so": "CHƯA CÓ DƯ NỢ",
+     "t": "Dự án Sông Hồng: chưa giải ngân",
      "at": [
       0,
-      0.4
+      0.3
      ],
-     "co": 84
+     "co": 77
     },
     {
      "so": "TÍN DỤNG +7,5%",
-     "t": "9 tháng, đi chậm",
+     "t": "Chủ động điều tiết tốc độ",
      "at": [
-      2,
-      0.4
+      1,
+      0.45
      ],
      "co": 72
     },
     {
      "so": "VAY NHÀ −5,5%",
-     "t": "Bán lẻ chỉ +1,4%",
+     "t": "Tín dụng bán lẻ chỉ +1,4%",
      "at": [
-      2,
-      0.8
+      1,
+      0.85
      ],
      "co": 77,
      "mau": "#c9533e"
@@ -240,30 +234,20 @@
    ],
    "chot": {
     "a": "CAM KẾT CHƯA LÀ DƯ NỢ",
-    "b": "TỶ TRỌNG BĐS LÀ ẨN SỐ",
+    "b": "SÔNG HỒNG CHƯA GIẢI NGÂN",
     "at": [
-     2,
-     0.95
+     1,
+     0.9
     ]
    },
    "phude": [
     [
-     "Thị trường lo vì bất động sản đã chiếm",
-     "khoảng **415.000 tỷ** dư nợ, tức **19,4%**"
+     "Một lá thư cam kết",
+     "**chưa phải** dư nợ"
     ],
     [
-     "Nếu lá thư thành **tiền thật**,",
-     "tỷ trọng này có thể phình lên"
-    ],
-    [
-     "Nhưng 9 tháng qua VietinBank đi chậm:",
-     "tín dụng chỉ **+7,5%**,",
-     "vay mua nhà **−5,5%**"
-    ],
-    [
-     "Còn bỏ ngỏ:",
-     "lá thư có thành **tiền thật** không,",
-     "và **khi nào**"
+     "Tín dụng 9 tháng **+7,5%**",
+     "cho vay mua nhà **−5,5%**"
     ]
    ]
   },
@@ -298,8 +282,8 @@
      "dy": -190,
      "chu": "5/11: KL đột biến",
      "at": [
-      1,
-      0.7
+      2,
+      0.3
      ]
     }
    ],
@@ -311,7 +295,7 @@
      "txt": "CẢN 31,6–32",
      "at": [
       1,
-      0.15
+      0.0
      ]
     },
     {
@@ -331,17 +315,118 @@
     "b": "HỖ TRỢ 28,9–29,8",
     "do": 1,
     "at": [
-     1,
-     0.92
+     2,
+     0.6
     ]
    },
    "phude": [
     [
-     "Trên biểu đồ,",
-     "**MA20 cắt lên MA50** ngày **9/11**"
+     "Về kỹ thuật, **MA20 cắt lên MA50**",
+     "ngày **9/11**"
     ],
     [
-     "Giá nằm giữa cản **31,6–32** và hỗ trợ **28,9–29,8**"
+     "Cản gần **31,6–32**",
+     "hỗ trợ **28,9–29,8**"
+    ],
+    [
+     "Ngày **5/11**: khối lượng",
+     "**đột biến**"
+    ]
+   ]
+  },
+  {
+   "id": "S5A",
+   "kieu": "lk",
+   "chuong": "— HAI PHE —",
+   "tieude": "PHE LẠC QUAN NHÌN THẤY",
+   "mau": "#3fa877",
+   "muc": [
+    {
+     "t": "Lãi trước thuế 9T +33,9%",
+     "s": "39.557 tỷ đồng",
+     "at": [
+      0,
+      0.0
+     ]
+    },
+    {
+     "t": "Nợ xấu 1,2%",
+     "s": "Bao phủ nợ xấu 160,4%",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "Dự án Sông Hồng chưa giải ngân",
+     "s": "Chưa phát sinh dư nợ",
+     "at": [
+      2,
+      0.0
+     ]
+    }
+   ],
+   "phude": [
+    [
+     "Lãi trước thuế **+33,9%**"
+    ],
+    [
+     "Nợ xấu **1,2%**, bao phủ **160,4%**"
+    ],
+    [
+     "Dự án Sông Hồng **chưa giải ngân**"
+    ]
+   ]
+  },
+  {
+   "id": "S5B",
+   "kieu": "lk",
+   "chuong": "— HAI PHE —",
+   "tieude": "PHE THẬN TRỌNG NHÌN THẤY",
+   "mau": "#c9533e",
+   "muc": [
+    {
+     "t": "Dư nợ BĐS 415.443 tỷ",
+     "s": "19,4% tổng dư nợ",
+     "at": [
+      0,
+      0.0
+     ]
+    },
+    {
+     "t": "Chi phí dự phòng +22,6%",
+     "s": "20.781 tỷ đồng",
+     "at": [
+      1,
+      0.0
+     ]
+    },
+    {
+     "t": "Giá CTG giảm 14% từ đỉnh",
+     "s": "Đỉnh 34.810 đ, nay 30.100 đ",
+     "at": [
+      2,
+      0.0
+     ]
+    }
+   ],
+   "chot": {
+    "a": "HAI PHE ĐỀU CÓ LÝ",
+    "b": "BẤT ĐỘNG SẢN LÀ ẨN SỐ",
+    "at": [
+     2,
+     0.5
+    ]
+   },
+   "phude": [
+    [
+     "Dư nợ BĐS **415.443 tỷ**"
+    ],
+    [
+     "Dự phòng **+22,6%**"
+    ],
+    [
+     "CTG giảm **14%** từ đỉnh"
     ]
    ]
   },
@@ -382,22 +467,22 @@
     "b": "VÀ CHẤT LƯỢNG NỢ",
     "at": [
      3,
-     0.6
+     0.5
     ]
    },
    "phude": [
     [
-     "Góc nhìn của em:",
+     "Góc nhìn của mình:",
      "chờ **3 tín hiệu**"
     ],
     [
-     "**Một**, tỷ trọng bất động sản không tăng"
+     "Tỷ trọng **BĐS** không tăng"
     ],
     [
-     "**Hai**, nợ xấu giữ dưới **1,8%**"
+     "Nợ xấu dưới **1,8%**"
     ],
     [
-     "**Ba**, giá vượt cản **32**"
+     "Giá vượt cản **32**"
     ]
    ]
   },
@@ -427,7 +512,7 @@
     }
    ],
    "hoi": {
-    "t": "Mỏ vàng hay **quả tạ** của VietinBank?",
+    "t": "Cam kết hay giải ngân, cái nào **khó hơn**?",
     "at": [
      2,
      0.0
@@ -435,14 +520,16 @@
    },
    "phude": [
     [
-     "Ký lá thư **313.000 tỷ** thì nhanh"
+     "Cam kết **313.000 tỷ**",
+     "chỉ cần một lá thư"
     ],
     [
-     "Còn giải ngân thì phải **đủ điều kiện**"
+     "Còn **giải ngân**",
+     "phải đủ điều kiện"
     ],
     [
-     "Con đường này là **mỏ vàng** hay **quả tạ** của",
-     "VietinBank?"
+     "Cam kết hay **giải ngân**,",
+     "cái nào khó hơn?"
     ]
    ]
   },
