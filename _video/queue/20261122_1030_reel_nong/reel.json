@@ -1,0 +1,502 @@
+[
+ {
+  "key": "SN2211VANGTUAN",
+  "tieu_de": "Vàng nhẫn và SJC giảm tới 6 triệu đồng mỗi lượng chỉ trong một tuần, vàng thế giới mất gần 10%",
+  "hook": [
+   "VÀNG RƠI 6 TRIỆU",
+   "CHỈ TRONG 1 TUẦN"
+  ],
+  "nhan": "TIN NÓNG · 22/11",
+  "short_caption": "Theo CafeF ngày 22/11, vàng SJC và vàng nhẫn 9999 giảm sâu tới 6 triệu đồng mỗi lượng trong tuần, vàng thế giới mất gần 10%. Báo Gia Lai ghi nhận trong nước giảm 8,8 triệu mỗi lượng sau một tháng.",
+  "tags": [],
+  "toc": 1.12,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "CÒN GIẢM NỮA KHÔNG?",
+   "loi": "Vàng giảm cả tuần, anh chị A: đã đủ rẻ để gom, hay B: chờ thêm?",
+   "loi_doc": "Vàng giảm cả tuần, anh chị A: đã đủ rẻ để gom, hay B: chờ thêm?",
+   "anh": [
+    "gold jewelry shop Vietnam||gold rings"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "MẤT 6 TRIỆU MỘT TUẦN",
+    "loi": "Vàng trong nước vừa mất tới sáu triệu đồng mỗi lượng chỉ trong một tuần. Ai mua một lượng đầu tuần, cuối tuần đã âm đậm.",
+    "loi_doc": "Vàng trong nước vừa mất tới sáu triệu đồng mỗi lượng chỉ trong một tuần. Ai mua một lượng đầu tuần, cuối tuần đã âm đậm.",
+    "anh": [
+     "gold bars stack||gold bars"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "VÀNG SJC, NHẪN 9999 TRONG TUẦN",
+     "nguon": "CafeF 22/11/2026",
+     "dong": [
+      [
+       "GIẢM TỚI 6 TRIỆU/LƯỢNG",
+       96,
+       "do"
+      ],
+      [
+       "TÍNH ĐẾN 22/11",
+       48,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "THẾ GIỚI GẦN 10%",
+    "loi": "Nguyên nhân nằm ở giá thế giới. Cả tuần, vàng quốc tế mất gần mười phần trăm, kéo giá trong nước đi xuống theo.",
+    "loi_doc": "Nguyên nhân nằm ở giá thế giới. Cả tuần, vàng quốc tế mất gần mười phần trăm, kéo giá trong nước đi xuống theo.",
+    "anh": [
+     "gold price chart screen||gold price"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "VÀNG THẾ GIỚI CẢ TUẦN",
+     "nguon": "CafeF 22/11/2026",
+     "dong": [
+      [
+       "MẤT GẦN 10%",
+       110,
+       "do"
+      ],
+      [
+       "ĐÁY 3.500 USD BỊ ĐE DỌA",
+       44,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "MỘT THÁNG: 8,8 TRIỆU",
+    "loi": "Kéo dài ra một tháng, vàng trong nước đã giảm 8,8 triệu mỗi lượng. Ngày hai mươi hai tháng mười một, giá giao dịch quanh một trăm ba mươi ba phẩy năm triệu.",
+    "loi_doc": "Kéo dài ra một tháng, vàng trong nước đã giảm tám phẩy tám triệu mỗi lượng. Ngày hai mươi hai tháng mười một, giá giao dịch quanh một trăm ba mươi ba phẩy năm triệu.",
+    "anh": [
+     "gold jewelry store counter||gold jewelry"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "VÀNG TRONG NƯỚC 1 THÁNG",
+     "nguon": "Báo Gia Lai, VOV 22/11/2026",
+     "dong": [
+      [
+       "GIẢM 8,8 TRIỆU/LƯỢNG",
+       96,
+       "do"
+      ],
+      [
+       "SJC QUANH 133,5 TRIỆU",
+       48,
+       "trang"
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "key": "SN2211NGOAI1911",
+  "tieu_de": "Khối ngoại bán ròng hơn 1.000 tỷ đồng phiên 19/11, FPT và ACB bị xả mạnh",
+  "hook": [
+   "KHỐI NGOẠI XẢ",
+   "HƠN 1.000 TỶ"
+  ],
+  "nhan": "TIN NÓNG · 19/11",
+  "short_caption": "Theo Báo Pháp luật & Doanh nhân, phiên 19/11 khối ngoại bán ròng hơn 1.000 tỷ đồng, tâm điểm xả mạnh ở FPT và ACB. Em ghi lại để anh chị theo dõi dòng tiền ngoại.",
+  "tags": [],
+  "toc": 1.12,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "NGOẠI BÁN, TA LÀM GÌ?",
+   "loi": "Khối ngoại xả hơn nghìn tỷ một phiên, anh chị A: bình tĩnh nắm giữ, hay B: lo và giảm bớt?",
+   "loi_doc": "Khối ngoại xả hơn nghìn tỷ một phiên, anh chị A: bình tĩnh nắm giữ, hay B: lo và giảm bớt?",
+   "anh": [
+    "Vietnam stock exchange trading board||stock trading screen"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "1.000 TỶ MỘT PHIÊN",
+    "loi": "Phiên mười chín tháng mười một, khối ngoại bán ròng hơn một nghìn tỷ đồng. Đây là con số khiến cả thị trường phải chú ý.",
+    "loi_doc": "Phiên mười chín tháng mười một, khối ngoại bán ròng hơn một nghìn tỷ đồng. Đây là con số khiến cả thị trường phải chú ý.",
+    "anh": [
+     "stock trading screen red||stock market"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "KHỐI NGOẠI PHIÊN 19/11",
+     "nguon": "Báo Pháp luật & Doanh nhân 19/11/2026",
+     "dong": [
+      [
+       "BÁN RÒNG HƠN 1.000 TỶ",
+       96,
+       "do"
+      ],
+      [
+       "PHIÊN 19/11/2026",
+       48,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "FPT VÀ ACB BỊ XẢ",
+    "loi": "Tâm điểm bán mạnh nằm ở hai mã quen thuộc là FPT và ACB. Khối ngoại rút khỏi cổ phiếu công nghệ lẫn ngân hàng cùng lúc.",
+    "loi_doc": "Tâm điểm bán mạnh nằm ở hai mã quen thuộc là F P T và A C B. Khối ngoại rút khỏi cổ phiếu công nghệ lẫn ngân hàng cùng lúc.",
+    "anh": [
+     "Vietnam bank building||bank building"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "MÃ BỊ BÁN MẠNH NHẤT",
+     "nguon": "Báo Pháp luật & Doanh nhân 19/11/2026",
+     "dong": [
+      [
+       "FPT",
+       120,
+       "do"
+      ],
+      [
+       "ACB",
+       120,
+       "do"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "VÌ SAO NGOẠI BÁN?",
+    "loi": "Bối cảnh là kỳ vọng Fed tăng lãi suất tháng mười hai, dòng vốn quốc tế thường thận trọng hơn với thị trường mới nổi.",
+    "loi_doc": "Bối cảnh là kỳ vọng Fed tăng lãi suất tháng mười hai, dòng vốn quốc tế thường thận trọng hơn với thị trường mới nổi.",
+    "anh": [
+     "Federal Reserve building Washington||Federal Reserve Board Building"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "KỲ VỌNG FED THÁNG 12",
+     "nguon": "CME FedWatch, Tuổi Trẻ 19/11/2026",
+     "dong": [
+      [
+       "95% TĂNG LÃI",
+       120,
+       "vang"
+      ],
+      [
+       "THÁNG 12/2026",
+       48,
+       "trang"
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "key": "SN2211FED",
+  "tieu_de": "Khả năng Fed tăng lãi tháng 12 nhích từ 80% lên 95% trong một tuần: tiền gửi và tỷ giá nhà mình ra sao?",
+  "hook": [
+   "FED TĂNG LÃI",
+   "80% LÊN 95%?"
+  ],
+  "nhan": "TIN NÓNG · 22/11",
+  "short_caption": "Theo Thời báo Tài chính, ngày 11/11 thị trường đặt 80% khả năng Fed tăng lãi tháng 12; theo CME FedWatch ngày 19/11 con số lên khoảng 95%. Em tóm tắt vì sao điều này liên quan tới tỷ giá và lãi suất trong nước.",
+  "tags": [],
+  "toc": 1.12,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "USD SẼ NÓNG LÊN?",
+   "loi": "Fed gần như chắc tăng lãi, anh chị A: USD sẽ còn nóng, hay B: Ngân hàng Nhà nước giữ được?",
+   "loi_doc": "Fed gần như chắc tăng lãi, anh chị A: U S D sẽ còn nóng, hay B: Ngân hàng Nhà nước giữ được?",
+   "anh": [
+    "US dollar banknotes||US dollar"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "TỪ 80% LÊN 95%",
+    "loi": "Ngày mười một tháng mười một, thị trường đặt tám mươi phần trăm khả năng Fed tăng lãi tháng mười hai. Đến mười chín tháng mười một, con số lên khoảng chín mươi lăm phần trăm.",
+    "loi_doc": "Ngày mười một tháng mười một, thị trường đặt tám mươi phần trăm khả năng Fed tăng lãi tháng mười hai. Đến mười chín tháng mười một, con số lên khoảng chín mươi lăm phần trăm.",
+    "anh": [
+     "Federal Reserve building||Federal Reserve Board Building"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "KHẢ NĂNG FED TĂNG LÃI THÁNG 12",
+     "nguon": "Thời báo Tài chính 11/11, CME FedWatch 19/11/2026",
+     "dong": [
+      [
+       "11/11: 80%",
+       72,
+       "trang"
+      ],
+      [
+       "19/11: KHOẢNG 95%",
+       96,
+       "vang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "ĐẶT CƯỢC TỚI THÁNG 3/2027",
+    "loi": "Không chỉ tháng mười hai. Ngày mười tám tháng mười một, thị trường còn đặt cược Fed tăng lãi suất kéo dài đến tháng ba năm hai nghìn không trăm hai mươi bảy.",
+    "loi_doc": "Không chỉ tháng mười hai. Ngày mười tám tháng mười một, thị trường còn đặt cược Fed tăng lãi suất kéo dài đến tháng ba năm hai nghìn không trăm hai mươi bảy.",
+    "anh": [
+     "stock market graph||financial chart"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "FED TĂNG LÃI KÉO DÀI",
+     "nguon": "Thời báo Tài chính 18/11/2026",
+     "dong": [
+      [
+       "ĐẾN THÁNG 3/2027",
+       96,
+       "vang"
+      ],
+      [
+       "USD THẾ GIỚI (DXY) ĐI LÊN",
+       44,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "USD NGÂN HÀNG",
+    "loi": "Cùng ngày, giá USD tại ngân hàng trong nước lại giảm, trong khi chỉ số USD thế giới đi lên. Hai chiều này có thể không kéo dài.",
+    "loi_doc": "Cùng ngày, giá U S D tại ngân hàng trong nước lại giảm, trong khi chỉ số U S D thế giới đi lên. Hai chiều này có thể không kéo dài.",
+    "anh": [
+     "bank currency exchange counter||currency exchange"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "USD NGÀY 18/11",
+     "nguon": "Thời báo Tài chính 18/11/2026",
+     "dong": [
+      [
+       "USD NGÂN HÀNG: GIẢM",
+       96,
+       "trang"
+      ],
+      [
+       "DXY: ĐI LÊN",
+       96,
+       "vang"
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "key": "SP2211VANGTG",
+  "tieu_de": "Vàng thế giới mất gần 10%, đáy 3.500 USD bị đe dọa nhưng nhu cầu mua vào tăng mạnh tại hai thị trường lớn nhất",
+  "hook": [
+   "VÀNG MẤT 10%",
+   "NHƯNG AI ĐANG MUA?"
+  ],
+  "nhan": "TIN NÓNG · 22/11",
+  "short_caption": "Theo Vietnam.vn ngày 22/11, vàng thế giới mất gần 10%, đáy 3.500 USD bị đe dọa, trong khi nhu cầu mua vào bất ngờ tăng mạnh tại hai thị trường lớn nhất thế giới.",
+  "tags": [],
+  "toc": 1.12,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "ĐÁY CHƯA?",
+   "loi": "Giá vàng thế giới sát đáy 3.500 đô, anh chị A: đáy rồi, hay B: chưa thấy đáy?",
+   "loi_doc": "Giá vàng thế giới sát đáy ba nghìn năm trăm đô, anh chị A: đáy rồi, hay B: chưa thấy đáy?",
+   "anh": [
+    "gold bullion bars||gold bars"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "GẦN 10% BỐC HƠI",
+    "loi": "Vàng thế giới vừa mất gần mười phần trăm. Một cú rơi mạnh hiếm thấy chỉ trong thời gian ngắn.",
+    "loi_doc": "Vàng thế giới vừa mất gần mười phần trăm. Một cú rơi mạnh hiếm thấy chỉ trong thời gian ngắn.",
+    "anh": [
+     "gold price chart||gold price"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "VÀNG THẾ GIỚI",
+     "nguon": "Vietnam.vn 22/11/2026",
+     "dong": [
+      [
+       "MẤT GẦN 10%",
+       110,
+       "do"
+      ],
+      [
+       "TÍNH ĐẾN 22/11",
+       48,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "ĐÁY 3.500 USD",
+    "loi": "Báo cáo ghi nhận mốc đáy ba nghìn năm trăm đô một ounce đang bị đe dọa. Nếu thủng, tâm lý thị trường có thể đổi chiều.",
+    "loi_doc": "Báo cáo ghi nhận mốc đáy ba nghìn năm trăm đô một ounce đang bị đe dọa. Nếu thủng, tâm lý thị trường có thể đổi chiều.",
+    "anh": [
+     "gold bars||gold bar"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "MỐC ĐÁY ĐANG BỊ ĐE DỌA",
+     "nguon": "Vietnam.vn 22/11/2026",
+     "dong": [
+      [
+       "3.500 USD/OUNCE",
+       110,
+       "vang"
+      ],
+      [
+       "ĐÁY ĐANG BỊ ĐE DỌA",
+       48,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "AI ĐANG MUA?",
+    "loi": "Trái chiều với giá giảm, nhu cầu mua vào bất ngờ tăng mạnh tại hai thị trường tiêu thụ vàng lớn nhất thế giới.",
+    "loi_doc": "Trái chiều với giá giảm, nhu cầu mua vào bất ngờ tăng mạnh tại hai thị trường tiêu thụ vàng lớn nhất thế giới.",
+    "anh": [
+     "gold jewelry market||gold jewelry"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "NHU CẦU MUA VÀO",
+     "nguon": "Vietnam.vn 22/11/2026",
+     "dong": [
+      [
+       "TĂNG MẠNH",
+       110,
+       "vang"
+      ],
+      [
+       "2 THỊ TRƯỜNG LỚN NHẤT",
+       48,
+       "trang"
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "key": "SP2211VANGNHAN",
+  "tieu_de": "Ngày 22/11 vàng SJC giảm 700.000 đồng, vàng nhẫn giảm tới 1,8 triệu mỗi lượng",
+  "hook": [
+   "NHẪN GIẢM 1,8 TRIỆU",
+   "MỘT NGÀY!"
+  ],
+  "nhan": "TIN NÓNG · 22/11",
+  "short_caption": "Theo Ngôi sao ngày 22/11, vàng SJC giảm 700.000 đồng mỗi lượng, vàng nhẫn giảm tới 1,8 triệu đồng. Báo Nghệ An và VOV ghi nhận giá SJC giao dịch quanh 133,5 triệu đồng mỗi lượng.",
+  "tags": [],
+  "toc": 1.12,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "NHẪN HAY MIẾNG?",
+   "loi": "Nhẫn giảm mạnh hơn miếng, anh chị A: thích nhẫn, hay B: thích miếng?",
+   "loi_doc": "Nhẫn giảm mạnh hơn miếng, anh chị A: thích nhẫn, hay B: thích miếng?",
+   "anh": [
+    "gold rings jewelry||gold ring"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "NHẪN GIẢM 1,8 TRIỆU",
+    "loi": "Ngày hai mươi hai tháng mười một, vàng nhẫn giảm tới một phẩy tám triệu đồng mỗi lượng. Nhẫn đang giảm mạnh hơn vàng miếng.",
+    "loi_doc": "Ngày hai mươi hai tháng mười một, vàng nhẫn giảm tới một phẩy tám triệu đồng mỗi lượng. Nhẫn đang giảm mạnh hơn vàng miếng.",
+    "anh": [
+     "gold rings||gold ring"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "VÀNG NHẪN NGÀY 22/11",
+     "nguon": "Ngôi sao 22/11/2026",
+     "dong": [
+      [
+       "GIẢM TỚI 1,8 TRIỆU",
+       96,
+       "do"
+      ],
+      [
+       "MỘT LƯỢNG",
+       48,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "SJC GIẢM 700.000",
+    "loi": "Vàng miếng SJC giảm bảy trăm nghìn đồng mỗi lượng. Giá giao dịch quanh một trăm ba mươi ba phẩy năm triệu.",
+    "loi_doc": "Vàng miếng S J C giảm bảy trăm nghìn đồng mỗi lượng. Giá giao dịch quanh một trăm ba mươi ba phẩy năm triệu.",
+    "anh": [
+     "gold bars bullion||gold bars"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "VÀNG MIẾNG SJC NGÀY 22/11",
+     "nguon": "Ngôi sao, VOV 22/11/2026",
+     "dong": [
+      [
+       "GIẢM 700.000 Đ/LƯỢNG",
+       96,
+       "do"
+      ],
+      [
+       "QUANH 133,5 TRIỆU",
+       48,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "TRONG TUẦN GIẢM 6 TRIỆU",
+    "loi": "Cộng cả tuần, vàng SJC và nhẫn đã giảm sâu tới sáu triệu đồng mỗi lượng. Người mua gần đỉnh đang chịu lỗ lớn.",
+    "loi_doc": "Cộng cả tuần, vàng S J C và nhẫn đã giảm sâu tới sáu triệu đồng mỗi lượng. Người mua gần đỉnh đang chịu lỗ lớn.",
+    "anh": [
+     "gold jewelry shop||gold jewelry"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "CẢ TUẦN QUA",
+     "nguon": "CafeF 22/11/2026",
+     "dong": [
+      [
+       "GIẢM TỚI 6 TRIỆU/LƯỢNG",
+       96,
+       "do"
+      ],
+      [
+       "TRONG TUẦN",
+       48,
+       "trang"
+      ]
+     ]
+    }
+   }
+  ]
+ }
+]
