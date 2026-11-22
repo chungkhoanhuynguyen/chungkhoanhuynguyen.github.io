@@ -172,6 +172,12 @@ def blk(t, c):
     return ""
 for x in F:
     url = B + FP(x)
+    # Trang thiết kế riêng (QL1 22/11, anh Huy: mục mở tài khoản quan trọng nhất) – dùng nguyên file, không sinh từ mẫu chung
+    _tr = os.path.join(ROOT, "_f0/trang/%s.html" % x["slug"])
+    if os.path.exists(_tr):
+        fn = FP(x)[1:]; fkeep.add(fn)
+        open(os.path.join(ROOT, fn), "w", encoding="utf-8").write(open(_tr, encoding="utf-8").read())
+        continue
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": B + "/"},
