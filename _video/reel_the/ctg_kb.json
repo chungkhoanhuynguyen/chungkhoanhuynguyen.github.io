@@ -4,22 +4,22 @@
  "scenes": [
   {
    "id": "S1",
-   "say": "Một lá thư của Viết tin banh ghi con số ba trăm mười ba nghìn tỷ, cho đúng một dự án. Số tiền đó đã thật sự chảy ra chưa?",
+   "say": "Một lá thư của Việt tin banh ghi con số ba trăm mười ba nghìn tỷ, cho đúng một dự án. Số tiền đó đã thật sự chảy ra chưa?",
    "hold": 0.3
   },
   {
    "id": "S2",
-   "say": "Theo báo cáo Việt cáp dẫn trên báo Người Quan Sát, Viết tin banh có thư cam kết tài trợ có điều kiện ba trăm mười ba nghìn tỷ cho dự án Đại lộ Cảnh quan Sông Hồng. Con số này gần bằng mười lăm phần trăm tổng dư nợ hai triệu một trăm bốn mươi nghìn tỷ của cả ngân hàng.",
+   "say": "Theo báo cáo Việt cáp dẫn trên báo Người Quan Sát, Việt tin banh có thư cam kết tài trợ có điều kiện ba trăm mười ba nghìn tỷ cho dự án Đại lộ Cảnh quan Sông Hồng. Con số này gần bằng mười lăm phần trăm tổng dư nợ hai triệu một trăm bốn mươi nghìn tỷ của cả ngân hàng.",
    "hold": 0.3
   },
   {
    "id": "S3",
-   "say": "Nhưng đọc kỹ thì đây mới là thư cam kết. Chưa cấp hạn mức, chưa giải ngân, chưa phát sinh đồng dư nợ nào. Trong khi đó, lãi trước thuế chín tháng vẫn tăng ba mươi ba phẩy chín phần trăm, nợ xấu chỉ một phẩy hai phần trăm. Vậy mà cổ phiếu Viết tin banh đã lùi mười bốn phần trăm từ đỉnh.",
+   "say": "Nhưng đọc kỹ thì đây mới là thư cam kết. Chưa cấp hạn mức, chưa giải ngân, chưa phát sinh đồng dư nợ nào. Trong khi đó, lãi trước thuế chín tháng vẫn tăng ba mươi ba phẩy chín phần trăm, nợ xấu chỉ một phẩy hai phần trăm. Vậy mà cổ phiếu Việt tin banh đã lùi mười bốn phần trăm từ đỉnh.",
    "hold": 0.3
   },
   {
    "id": "S4",
-   "say": "Thị trường lo vì bất động sản đã chiếm khoảng bốn trăm mười lăm nghìn tỷ dư nợ, tức mười chín phẩy bốn phần trăm. Nếu lá thư biến thành tiền thật, tỷ trọng này có thể phình lên. Tuy vậy, chín tháng qua Viết tin banh đi khá chậm: tín dụng chỉ tăng bảy phẩy năm phần trăm, cho vay mua nhà còn giảm năm phẩy năm phần trăm. Phần còn bỏ ngỏ là lá thư này có trở thành tiền thật hay không, và khi nào.",
+   "say": "Thị trường lo vì bất động sản đã chiếm khoảng bốn trăm mười lăm nghìn tỷ dư nợ, tức mười chín phẩy bốn phần trăm. Nếu lá thư biến thành tiền thật, tỷ trọng này có thể phình lên. Tuy vậy, chín tháng qua Việt tin banh đi khá chậm: tín dụng chỉ tăng bảy phẩy năm phần trăm, cho vay mua nhà còn giảm năm phẩy năm phần trăm. Phần còn bỏ ngỏ là lá thư này có trở thành tiền thật hay không, và khi nào.",
    "hold": 0.3
   },
   {
@@ -34,7 +34,7 @@
   },
   {
    "id": "S6",
-   "say": "Ký một lá thư ba trăm mười ba nghìn tỷ thì nhanh. Còn giải ngân thì phải đủ điều kiện. Anh chị nghĩ con đường này là mỏ vàng hay quả tạ của Viết tin banh?",
+   "say": "Ký một lá thư ba trăm mười ba nghìn tỷ thì nhanh. Còn giải ngân thì phải đủ điều kiện. Anh chị nghĩ con đường này là mỏ vàng hay quả tạ của Việt tin banh?",
    "hold": 1.2
   }
  ]

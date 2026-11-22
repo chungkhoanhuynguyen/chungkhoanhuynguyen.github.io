@@ -237,22 +237,8 @@ L["tcb"] = [
    ("Anh chị đang gửi tiết kiệm bao nhiêu phần trăm, có thấy chín phần trăm hấp dẫn không?", "Anh chị gửi tiết kiệm bao nhiêu %, thấy **9%** có hấp dẫn không?")]),
 ]
 
-# Cách đọc cho giọng TTS (anh Huy 22/11: "STB đọc là sa com banh ko phải sa com băng"; "bất động sản chấm com").
-# Chỉ áp vào LỜI ĐỌC, phụ đề giữ chữ gốc. Mã CK đọc thành tên doanh nghiệp.
-PHAT_AM = [
-    ("cổ phiếu CTG", "cổ phiếu Viết tin banh"), ("cổ phiếu FRT", "cổ phiếu ép pi ti Ri teo"),
-    ("cổ phiếu HVN", "cổ phiếu Việt Nam Ê lai"), ("cổ phiếu VHM", "cổ phiếu Vin hôm"),
-    ("cổ phiếu TCB", "cổ phiếu Tếch com banh"), ("Cổ phiếu VHM", "Cổ phiếu Vin hôm"), ("cầm FRT", "cầm cổ phiếu ép pi ti Ri teo"),
-    ("Sacombank", "Sa com banh"), ("VietinBank", "Viết tin banh"), ("Techcombank", "Tếch com banh"),
-    ("FPT Retail", "ép pi ti Ri teo"), ("FPT Shop", "ép pi ti Sóp"), ("FPT", "ép pi ti"), ("Vietcap", "Việt cáp"),
-    ("ESOP", "ê sóp"), ("Creador", "Cờ rê a đo"), ("Vietnambiz", "Việt Nam bít"),
-    ("CBRE", "xi bi a ri"), ("Mekong ASEAN", "Mê Kông A xê an"),
-    ("The Sapphire", "Đờ Sa phai a"), ("Vinhomes Smart City", "Vin hôm Sờ mát Xi ti"),
-    ("Lumi Hanoi", "Lu mi Hà Nội"), ("Times City", "Tham Xi ti"), ("Ocean Park", "Âu sần Pác"),
-]
-def doc(t):
-    for a_, b_ in PHAT_AM: t = t.replace(a_, b_)
-    return t
+import sys; sys.path.insert(0, os.path.dirname(HERE))
+from phat_am import PHAT_AM, doc  # bảng cách đọc dùng chung (_video/phat_am.py)
 
 def doi_bo_ngo(ma):
     """Chuyển câu 'bỏ ngỏ' (câu đầu S5C) về cuối S4 để cảnh góc nhìn không trống thẻ (soát STB 22/11)."""
