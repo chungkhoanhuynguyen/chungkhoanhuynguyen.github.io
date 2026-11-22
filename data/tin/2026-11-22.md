@@ -1,8 +1,8 @@
 # Tin nóng 2026-11-22 (tự động, 270 tin từ 6 nguồn) – NV1B chọn 1–2 tin điểm cao làm kênh C
 
-- **[6] Israel tính mở chiến dịch không kích Iran, Mỹ cân nhắc nhập cuộc** – Thanh Niên Thế giới · Thu, 19 Nov 26 1
-  Tờ The New York Times đưa tin Mỹ và Israel đang cân nhắc khả năng nối lại chiến dịch quân sự nhằm vào Iran sau khi ghi nhận những cảnh báo tình báo về việc Tehran khôi phục năng lực quân sự.
-  https://thanhnien.vn/israel-tinh-mo-chien-dich-khong-kich-iran-my-can-nhac-nhap-cuoc-185261119113606985.htm
+- **[6] Trung Đông sáng 22-11: Iran tấn công hệ thống Patriot của Mỹ ở Bahrain; Nổ lớn ngoài khơi miền nam Iran** – Tuổi Trẻ Thế giới · 11/22/2026 6:44:
+  Iran tấn công 2 căn cứ có quân Mỹ tại Bahrain; Tiếng nổ lớn từ vùng biển ngoài khơi thành phố Sirik, miền nam Iran; Phái đoàn Qatar tới Tehran đàm phán... là một số tin tức đáng chú ý về Trung Đông sáng 22-11.
+  https://tuoitre.vn/trung-dong-sang-22-11-iran-tan-cong-he-thong-patriot-cua-my-o-bahrain-no-lon-ngoai-khoi-mien-nam-iran-100261122055637854.htm
 - **[5] Chuyên cơ ông Trump lập kỷ lục khi trở về từ Trung Quốc** – VnExpress Thế giới · Fri, 20 Nov 2026
   Chuyên cơ đưa ông Trump từ Trung Quốc về Mỹ sau APEC đã thực hiện hành trình liên tục dài nhất trong lịch sử đội bay Không lực Một.
   https://vnexpress.net/chuyen-co-ong-trump-lap-ky-luc-khi-tro-ve-tu-trung-quoc-5147045.html
@@ -15,12 +15,18 @@
 - **[5] Giá vàng thế giới lao dốc, xuống thấp nhất 14 tháng** – VnExpress Kinh doanh · Thu, 19 Nov 2026
   Mỗi ounce vàng mất hơn 120 USD một phiên, sau khi Fed công bố biên bản cuộc họp tháng 10.
   https://vnexpress.net/gia-vang-the-gioi-lao-doc-xuong-thap-nhat-14-thang-5146332.html
+- **[5] Tin tức thế giới 22-11: Mỹ bác tin tiêm kích F-16 bị Iran bắn trúng; Nvidia bị điều tra** – Tuổi Trẻ Thế giới · 11/22/2026 6:24:
+  Tàu chở hàng Nga bốc cháy sau đòn tấn công của Ukraine trên biển Baltic; Ukraine tái khẳng định quyết tâm gia nhập NATO.
+  https://tuoitre.vn/tin-tuc-the-gioi-22-11-my-bac-tin-tiem-kich-f-16-bi-iran-ban-trung-nvidia-bi-dieu-tra-10026112204310392.htm
 - **[5] Truyền thông Trung Quốc ca ngợi cuộc gặp Trung - Mỹ - Nga 'làm nên lịch sử'** – Tuổi Trẻ Thế giới · 11/21/2026 9:21:
   Truyền thông Trung Quốc đồng thời nhấn mạnh vai trò của ông Tập Cận Bình trong việc thúc đẩy đối thoại.
   https://tuoitre.vn/truyen-thong-trung-quoc-ca-ngoi-cuoc-gap-trung-my-nga-lam-nen-lich-su-100261120150249168.htm
 - **[5] Ông Trump dọa đánh thuế nặng công ty Mỹ xây trung tâm dữ liệu ở nước ngoài** – Thanh Niên Thế giới · Sat, 21 Nov 26 0
   Tổng thống Mỹ Donald Trump cảnh báo các doanh nghiệp Mỹ có ý định xây trung tâm dữ liệu ở nước ngoài, nhằm giữ hạ tầng trí tuệ nhân tạo (AI) trong nước.
   https://thanhnien.vn/ong-trump-doa-danh-thue-nang-cong-ty-my-xay-trung-tam-du-lieu-o-nuoc-ngoai-18526112107142351.htm
+- **[4] Iran công bố video tên lửa phòng không 'phát nổ gần F-16 Mỹ'** – VnExpress Thế giới · Sun, 22 Nov 2026
+  Video mới công bố cho thấy tên lửa Iran phát nổ gần mục tiêu được cho là tiêm kích F-16 Mỹ, nhưng chưa rõ mức độ thiệt hại.
+  https://vnexpress.net/iran-cong-bo-video-ten-lua-phong-khong-phat-no-gan-f-16-my-5147549.html
 - **[4] Iran tuyên bố bắn trúng tiêm kích F-16, Mỹ bác bỏ** – VnExpress Thế giới · Sun, 22 Nov 2026
   Iran tuyên bố phóng tên lửa trúng tiêm kích F-16 Mỹ ở vùng biển phía nam, song CENTCOM bác bỏ thông tin này.
   https://vnexpress.net/iran-tuyen-bo-ban-trung-tiem-kich-f-16-my-bac-bo-5147537.html
@@ -30,9 +36,6 @@
 - **[4] Elon Musk nêu lý do con trai 6 tuổi 'rất yêu Trung Quốc'** – VnExpress Thế giới · Thu, 19 Nov 2026
   Elon Musk cho biết X, cậu con trai của ông rất yêu thích Trung Quốc vì quốc gia này là "thiên đường đồ chơi”.
   https://vnexpress.net/elon-musk-neu-ly-do-con-trai-6-tuoi-rat-yeu-trung-quoc-5146659.html
-- **[4] Mỹ, Nga, Trung ra tuyên bố chung 4 điểm sau thượng đỉnh ba bên** – VnExpress Thế giới · Thu, 19 Nov 2026
-  Mỹ, Nga, Trung ra tuyên bố chung sau hội nghị thượng đỉnh, kêu gọi ngăn chặn chiến tranh hạt nhân, cải cách LHQ và tăng sản lượng dầu tinh chế.
-  https://vnexpress.net/my-nga-trung-ra-tuyen-bo-chung-4-diem-sau-thuong-dinh-ba-ben-5146774.html
 - **[4] Cấm thu tiền giữ chỗ mua nhà hình thành trong tương lai** – VnExpress Kinh doanh · Sat, 21 Nov 2026
   Theo luật mới vừa thông qua, chủ đầu tư không được thu tiền dưới mọi hình thức để bảo đảm việc ký hợp đồng mua trước khi dự án được phép kinh doanh.
   https://vnexpress.net/cam-thu-tien-giu-cho-mua-nha-hinh-thanh-trong-tuong-lai-5147383.html
@@ -60,9 +63,9 @@
 - **[4] Bị cáo buộc phát triển vũ khí sinh học, Iran tố Mỹ lặp lại 'kịch bản Iraq' năm 2003** – Tuổi Trẻ Thế giới · 11/20/2026 6:03:
   Iran bác cáo buộc của Mỹ rằng nước này đang phát triển vũ khí hóa học và sinh học, đồng thời nhận định đây là "thông tin bịa đặt" nhằm biện minh cho hành động gây hấn của Washington.
   https://tuoitre.vn/bi-cao-buoc-phat-trien-vu-khi-sinh-hoc-iran-to-my-lap-lai-kich-ban-iraq-nam-2003-10026112017420885.htm
-- **[4] Bà Takaichi vừa trở về nước, Trung Quốc yêu cầu Nhật Bản sửa phát ngôn về Đài Loan** – Tuổi Trẻ Thế giới · 11/20/2026 5:11:
-  Ngày 20-11, Trung Quốc yêu cầu Nhật Bản phải 'sửa chữa những phát ngôn sai trái' về vấn đề Đài Loan và thay đổi 'thái độ'.
-  https://tuoitre.vn/ba-takaichi-vua-tro-ve-nuoc-trung-quoc-yeu-cau-nhat-ban-sua-phat-ngon-ve-dai-loan-100261120153357366.htm
+- **[4] Mỹ bác tin Iran bắn trúng F-16, vùng Vịnh hứng loạt tấn công mới** – Thanh Niên Thế giới · Sun, 22 Nov 26 0
+  Bộ Tư lệnh Trung tâm Mỹ (CENTCOM) bác bỏ thông tin Iran bắn trúng tiêm kích F-16, trong bối cảnh nhiều mục tiêu tại vùng Vịnh tiếp tục hứng chịu các đợt tập kích.
+  https://thanhnien.vn/my-bac-tin-iran-ban-trung-f-16-vung-vinh-hung-loat-tan-cong-moi-185261122074743694.htm
 - **[4] Hải quân Mỹ quá tải, tham vọng đóng tàu chiến lớp Trump gặp khó** – Thanh Niên Thế giới · Sat, 21 Nov 26 2
   Kế hoạch phát triển hạm đội tàu chiến mới của Mỹ đối mặt nguy cơ đội chi phí hàng tỉ USD, trong khi xung đột Iran đang đẩy hải quân Mỹ vào tình trạng quá tải, ảnh hưởng khả năng triển khai lực lượng trên toàn cầu.
   https://thanhnien.vn/hai-quan-my-qua-tai-tham-vong-dong-tau-chien-lop-trump-gap-kho-185261121203929213.htm
@@ -72,6 +75,3 @@
 - **[4] Mỹ để ngỏ việc bảo vệ Ukraine tương tự cơ chế của NATO** – Thanh Niên Thế giới · Fri, 20 Nov 26 0
   Đặc phái viên Mỹ Jared Kushner cho biết Tổng thống Mỹ Donald Trump sẵn sàng xem xét đảm bảo an ninh cho Ukraine tương tự cơ chế phòng vệ tập thể của NATO.
   https://thanhnien.vn/my-de-ngo-viec-bao-ve-ukraine-tuong-tu-co-che-cua-nato-185261120094107691.htm
-- **[4] Giám đốc An ninh mạng quốc gia Mỹ Sean Cairncross từ chức** – Thanh Niên Thế giới · Fri, 20 Nov 26 0
-  Tờ POLITICO đưa tin Nhà Trắng ngày 19.11 đã xác nhận với báo này rằng Giám đốc An ninh mạng quốc gia Mỹ Sean Cairncross sẽ rời khỏi cương vị của mình.
-  https://thanhnien.vn/giam-doc-an-ninh-mang-quoc-gia-my-sean-cairncross-tu-chuc-185261120070130545.htm
