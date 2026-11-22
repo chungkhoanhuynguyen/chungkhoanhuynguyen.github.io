@@ -4,22 +4,22 @@
  "scenes": [
   {
    "id": "S1",
-   "say": "Trong cùng một nhà, cậu em bán thuốc được định giá gấp mười tám lần ông anh bán điện thoại. Chuyện gì đang xảy ra ở FPT Retail?",
+   "say": "Trong cùng một nhà, cậu em bán thuốc được định giá gấp mười tám lần ông anh bán điện thoại. Chuyện gì đang xảy ra ở ép pê tê Ri teo?",
    "hold": 0.3
   },
   {
    "id": "S2",
-   "say": "FPT Retail có hai chuỗi: FPT Shop bán điện thoại, máy tính, và Long Châu bán thuốc. Báo cáo Vietcap ngày mười bảy tháng mười một ước Long Châu bốn mươi bốn nghìn bốn trăm hai mươi chín tỷ, FPT Shop chỉ hai nghìn bốn trăm hai mươi bảy tỷ. Cậu em nặng ký gấp khoảng mười tám phẩy ba lần ông anh.",
+   "say": "ép pê tê Ri teo có hai chuỗi: ép pê tê Sóp bán điện thoại, máy tính, và Long Châu bán thuốc. Báo cáo Việt cáp ngày mười bảy tháng mười một ước Long Châu bốn mươi bốn nghìn bốn trăm hai mươi chín tỷ, ép pê tê Sóp chỉ hai nghìn bốn trăm hai mươi bảy tỷ. Cậu em nặng ký gấp khoảng mười tám phẩy ba lần ông anh.",
    "hold": 0.3
   },
   {
    "id": "S3",
-   "say": "Bất ngờ hơn, nhóm nhân viên đang nắm mười một phẩy không ba phần trăm Long Châu. Phần này ước khoảng bốn nghìn chín trăm tỷ, gấp hơn hai lần cả chuỗi FPT Shop. FPT Retail nắm bảy mươi lăm phẩy chín bảy phần trăm, quỹ Creador khoảng mười ba phần trăm. Còn cổ phiếu FRT chỉ lùi ba phần trăm từ đỉnh.",
+   "say": "Bất ngờ hơn, nhóm nhân viên đang nắm mười một phẩy không ba phần trăm Long Châu. Phần này ước khoảng bốn nghìn chín trăm tỷ, gấp hơn hai lần cả chuỗi ép pê tê Sóp. ép pê tê Ri teo nắm bảy mươi lăm phẩy chín bảy phần trăm, quỹ Cờ rê a đo khoảng mười ba phần trăm. Còn cổ phiếu ép pê tê Ri teo chỉ lùi ba phần trăm từ đỉnh.",
    "hold": 0.3
   },
   {
    "id": "S4",
-   "say": "Nhưng đây là định giá ước tính của Vietcap, không phải giá giao dịch. Kế hoạch ESOP thêm năm phần trăm vốn, chia năm đợt, mỗi năm một phần trăm. Tới năm hai nghìn không trăm ba mươi, phần của FPT Retail có thể lùi về khoảng bảy mươi hai phần trăm. Câu hỏi còn bỏ ngỏ là con số trên giấy có được doanh thu thật kiểm chứng hay không.",
+   "say": "Nhưng đây là định giá ước tính của Việt cáp, không phải giá giao dịch. Kế hoạch ê sóp thêm năm phần trăm vốn, chia năm đợt, mỗi năm một phần trăm. Tới năm hai nghìn không trăm ba mươi, phần của ép pê tê Ri teo có thể lùi về khoảng bảy mươi hai phần trăm. Câu hỏi còn bỏ ngỏ là con số trên giấy có được doanh thu thật kiểm chứng hay không.",
    "hold": 0.3
   },
   {
@@ -29,12 +29,12 @@
   },
   {
    "id": "S5C",
-   "say": "Góc nhìn của em là chờ ba tín hiệu. Một, doanh thu quý bốn của Long Châu. Hai, ESOP đi đúng lộ trình. Ba, giá vượt được cản một trăm năm mươi bốn phẩy tám.",
+   "say": "Góc nhìn của em là chờ ba tín hiệu. Một, doanh thu quý bốn của Long Châu. Hai, ê sóp đi đúng lộ trình. Ba, giá vượt được cản một trăm năm mươi bốn phẩy tám.",
    "hold": 0.3
   },
   {
    "id": "S6",
-   "say": "Nhà thuốc hơn bốn mươi bốn nghìn tỷ. Cửa hàng điện thoại hơn hai nghìn bốn trăm tỷ. Anh chị nghĩ cầm FRT là cầm chuỗi điện thoại, hay cầm nhà thuốc?",
+   "say": "Nhà thuốc hơn bốn mươi bốn nghìn tỷ. Cửa hàng điện thoại hơn hai nghìn bốn trăm tỷ. Anh chị nghĩ cầm cổ phiếu ép pê tê Ri teo là cầm chuỗi điện thoại, hay cầm nhà thuốc?",
    "hold": 1.2
   }
  ]

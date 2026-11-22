@@ -4,12 +4,12 @@
  "scenes": [
   {
    "id": "S1",
-   "say": "Sacombank giảm bốn nghìn hai trăm chín mươi mốt nhân viên chỉ trong chín tháng. Vậy mà lợi nhuận lại mất hơn một nửa, chuyện gì đã xảy ra?",
+   "say": "Sa com banh giảm bốn nghìn hai trăm chín mươi mốt nhân viên chỉ trong chín tháng. Vậy mà lợi nhuận lại mất hơn một nửa, chuyện gì đã xảy ra?",
    "hold": 0.3
   },
   {
    "id": "S2",
-   "say": "Đầu năm, Sacombank có gần mười lăm nghìn chín trăm người. Tới cuối tháng chín chỉ còn mười một nghìn năm trăm sáu mươi, cứ bốn người thì gần một người đã rời đi. Bộ máy gọn hẳn: chi phí nhân viên giảm hai mươi hai phần trăm, chi phí trên thu nhập từ bốn mươi sáu phẩy một xuống ba mươi hai phẩy sáu phần trăm.",
+   "say": "Đầu năm, Sa com banh có gần mười lăm nghìn chín trăm người. Tới cuối tháng chín chỉ còn mười một nghìn năm trăm sáu mươi, cứ bốn người thì gần một người đã rời đi. Bộ máy gọn hẳn: chi phí nhân viên giảm hai mươi hai phần trăm, chi phí trên thu nhập từ bốn mươi sáu phẩy một xuống ba mươi hai phẩy sáu phần trăm.",
    "hold": 0.3
   },
   {
@@ -19,7 +19,7 @@
   },
   {
    "id": "S4",
-   "say": "Vậy tiền đi đâu? Thu nhập không hề yếu: tổng thu nhập vẫn tăng mười bốn phẩy một phần trăm. Phần lớn được trích ra dự phòng, từ hai nghìn một trăm năm mươi hai lên mười hai nghìn tám trăm bốn mươi tám tỷ, gấp gần sáu lần. Nói dễ hiểu, Sacombank đang dùng lãi để gánh nợ xấu. Câu chuyện vẫn còn bỏ ngỏ, vì Ngân hàng Nhà nước vừa khởi động lại việc xử lý ba mươi hai phẩy năm phần trăm cổ phần.",
+   "say": "Vậy tiền đi đâu? Thu nhập không hề yếu: tổng thu nhập vẫn tăng mười bốn phẩy một phần trăm. Phần lớn được trích ra dự phòng, từ hai nghìn một trăm năm mươi hai lên mười hai nghìn tám trăm bốn mươi tám tỷ, gấp gần sáu lần. Nói dễ hiểu, Sa com banh đang dùng lãi để gánh nợ xấu. Câu chuyện vẫn còn bỏ ngỏ, vì Ngân hàng Nhà nước vừa khởi động lại việc xử lý ba mươi hai phẩy năm phần trăm cổ phần.",
    "hold": 0.3
   },
   {
@@ -34,7 +34,7 @@
   },
   {
    "id": "S6",
-   "say": "Cắt bốn nghìn người, chín tháng là xong. Còn gánh nợ xấu thì chưa biết bao lâu. Anh chị nghĩ Sacombank đang dọn nhà để bật lên, hay mới chỉ bắt đầu dọn?",
+   "say": "Cắt bốn nghìn người, chín tháng là xong. Còn gánh nợ xấu thì chưa biết bao lâu. Anh chị nghĩ Sa com banh đang dọn nhà để bật lên, hay mới chỉ bắt đầu dọn?",
    "hold": 1.2
   }
  ]

@@ -4,17 +4,17 @@
  "scenes": [
   {
    "id": "S1",
-   "say": "Chỉ trong bảy ngày, Techcombank vay bảy nghìn năm trăm tỷ, chấp nhận trả lãi gần chín phần trăm một năm. Vì sao một ngân hàng lớn lại vội như vậy?",
+   "say": "Chỉ trong bảy ngày, Tếch com banh vay bảy nghìn năm trăm tỷ, chấp nhận trả lãi gần chín phần trăm một năm. Vì sao một ngân hàng lớn lại vội như vậy?",
    "hold": 0.3
   },
   {
    "id": "S2",
-   "say": "Theo Mekong ASEAN, Techcombank liên tiếp phát hành ba lô trái phiếu riêng lẻ, mỗi lô hai nghìn năm trăm tỷ. Lô ngày mười hai tháng mười một lãi chín phần trăm, hai lô ngày mười bảy và mười tám lãi tám phẩy chín phần trăm. Kỳ hạn ba năm, tiền dùng để cho vay.",
+   "say": "Theo Mê Kông A xê an, Tếch com banh liên tiếp phát hành ba lô trái phiếu riêng lẻ, mỗi lô hai nghìn năm trăm tỷ. Lô ngày mười hai tháng mười một lãi chín phần trăm, hai lô ngày mười bảy và mười tám lãi tám phẩy chín phần trăm. Kỳ hạn ba năm, tiền dùng để cho vay.",
    "hold": 0.3
   },
   {
    "id": "S3",
-   "say": "Nghĩa là ngân hàng đi vay gần chín phần trăm, để cho vay lại. Lãi suất lô sau thấp hơn lô đầu một chút, từ chín xuống tám phẩy chín. Còn cổ phiếu TCB đã lùi tám phần trăm từ đỉnh ngày hai mươi mốt tháng mười.",
+   "say": "Nghĩa là ngân hàng đi vay gần chín phần trăm, để cho vay lại. Lãi suất lô sau thấp hơn lô đầu một chút, từ chín xuống tám phẩy chín. Còn cổ phiếu Tếch com banh đã lùi tám phần trăm từ đỉnh ngày hai mươi mốt tháng mười.",
    "hold": 0.3
   },
   {
