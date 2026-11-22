@@ -22083,6 +22083,10 @@
    [
     "p",
     "Nhóm điện thường có cổ tức tiền mặt đều và dòng tiền ổn định hơn nhiều ngành, nhưng không phải không có rủi ro. Hãy dùng các con số trên làm điểm bắt đầu để hỏi, không phải để kết luận. Số liệu: BCTC Q3/2026, dữ liệu tổng hợp 4/11/2026. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ],
+   [
+    "p",
+    "Cập nhật 11/2026: El Nino rất mạnh và nước về hồ chỉ khoảng 80% trung bình làm thủy điện cả năm thấp hơn 2025 khoảng 18,5 tỷ kWh. Tác động tới hóa đơn và hộ kinh doanh mùa khô 2027 ở bài <a href=\"/f0/el-nino-2027-mua-kho-thieu-dien-han-man.html\">El Nino 2027: mùa khô thiếu điện, hạn mặn</a>."
    ]
   ],
   "faq": [
@@ -22100,11 +22104,13 @@
    ]
   ],
   "rel": [
+   "el-nino-2027-mua-kho-thieu-dien-han-man",
    "co-phieu-chu-ky-la-gi",
    "dong-tien-kinh-doanh-la-gi",
    "khau-hao-la-gi",
    "co-phieu-dau-khi-khi-gia-dau-tang"
-  ]
+  ],
+  "mod": "2026-11-22"
  },
  {
   "slug": "co-phieu-det-may",
@@ -24389,6 +24395,10 @@
    [
     "p",
     "Xem thêm <a href=\"/f0/tam-ly-fomo-va-hoang-loan.html\">tâm lý FOMO và hoảng loạn</a> và <a href=\"/f0/stop-loss-bao-nhieu-phan-tram.html\">cắt lỗ bao nhiêu phần trăm</a>. Nội dung chỉ mang tính giáo dục, không phải khuyến nghị mua bán."
+   ],
+   [
+    "p",
+    "Ví dụ đang diễn ra tháng 11/2026: lo ngại bong bóng AI làm Nasdaq giảm 5,52% trong phiên 5/11, trong khi hãng chip lớn nhất vẫn báo lãi kỷ lục. Việt Nam chịu tác động qua đường nào, xem bài <a href=\"/f0/xuat-khau-dien-tu-2026-bong-bong-ai.html\">xuất khẩu điện tử 2026 và cơn sốt AI</a>."
    ]
   ],
   "faq": [
@@ -24406,12 +24416,14 @@
    ]
   ],
   "rel": [
+   "xuat-khau-dien-tu-2026-bong-bong-ai",
    "tam-ly-fomo-va-hoang-loan",
    "stop-loss-bao-nhieu-phan-tram",
    "lai-kep-trong-dau-tu"
   ],
   "add": [],
-  "grp": 5
+  "grp": 5,
+  "mod": "2026-11-22"
  },
  {
   "slug": "quy-tac-72-la-gi",
@@ -27996,6 +28008,10 @@
    ],
    [
     "p",
+    "Ví dụ thực tế về lý do giữ quỹ dự phòng trước mùa rủi ro: <a href=\"/f0/el-nino-2027-mua-kho-thieu-dien-han-man.html\">mùa khô 2027 và El Nino</a> (phép thử điện, nước, mùa màng) và <a href=\"/f0/xuat-khau-dien-tu-2026-bong-bong-ai.html\">thu nhập dựa vào đơn hàng điện tử</a>."
+   ],
+   [
+    "p",
     "<small>Nguồn: Cục Thống kê qua báo Thị trường Tài chính Tiền tệ 3/11/2026; Nhà đầu tư/VCCI 9/11/2026; VCCI 7/1/2025 (số năm 2024); lãi huy động 12 tháng NHTM nhà nước 5,4% (WiData 13/11/2026); VN-Index đóng cửa từ dữ liệu web. Tổng 182.000, bình quân tháng và ví dụ anh Tuấn là số tự tính/giả định. Bài chia sẻ kiến thức, không phải khuyến nghị.</small>"
    ]
   ],
@@ -28014,13 +28030,14 @@
    ]
   ],
   "rel": [
+   "el-nino-2027-mua-kho-thieu-dien-han-man",
    "doanh-nghiep-rut-lui-khoi-thi-truong-la-gi",
    "mua-vang-dinh-lo-bao-nhieu",
    "rui-ro-khi-tich-san",
    "quan-tri-von-la-gi",
    "margin-va-tien-mat-khi-tich-san"
   ],
-  "mod": "2026-11-17"
+  "mod": "2026-11-22"
  },
  {
   "slug": "rui-ro-he-thong-va-phi-he-thong",
@@ -34763,6 +34780,10 @@
    [
     "p",
     "Số liệu ba năm là mẫu ngắn, chưa có các giai đoạn như 2008 hay 2022, nên đây là cách nhìn chứ không phải quy luật. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ],
+   [
+    "p",
+    "Ví dụ mới nhất: sau phiên Nasdaq −5,52% ngày 5/11/2026, ngày 6/11 Nikkei −5,96%, KOSPI −6,02% nhưng VN-Index chỉ −0,88%. Giải thích từng chỉ số và giờ giao dịch ở bài <a href=\"/f0/chi-so-chung-khoan-the-gioi.html\">chỉ số chứng khoán thế giới</a>."
    ]
   ],
   "faq": [
@@ -34780,11 +34801,13 @@
    ]
   ],
   "rel": [
+   "chi-so-chung-khoan-the-gioi",
    "fed-tang-giam-lai-suat-tac-dong",
    "ty-gia-tang-anh-huong-co-phieu",
    "khoi-ngoai-mua-rong-ban-rong-la-gi",
    "tuong-quan-co-phieu-trong-danh-muc"
-  ]
+  ],
+  "mod": "2026-11-22"
  },
  {
   "slug": "co-phieu-cham-day-52-tuan-co-nen-mua",
@@ -38336,6 +38359,10 @@
    ],
    [
     "p",
+    "Bên cạnh DXY, các chỉ số S&P 500, Nasdaq, Nikkei, KOSPI cho biết tâm lý thị trường toàn cầu mỗi ngày; xem bài <a href=\"/f0/chi-so-chung-khoan-the-gioi.html\">chỉ số chứng khoán thế giới</a>."
+   ],
+   [
+    "p",
     "<small>Nguồn: Hà Nội Mới 14/11/2026; Vietnam+ 11/11/2026; CafeF 12/11/2026; BSC Daily Review 30/12/2022. Bài chia sẻ kiến thức, không phải khuyến nghị.</small>"
    ]
   ],
@@ -38354,10 +38381,12 @@
    ]
   ],
   "rel": [
+   "chi-so-chung-khoan-the-gioi",
    "fed-tang-giam-lai-suat-tac-dong",
    "chung-khoan-my-giam-vn-index-co-giam-theo",
    "ban-giai-chap-la-gi"
-  ]
+  ],
+  "mod": "2026-11-22"
  },
  {
   "slug": "von-dau-tu-38-5-trieu-ty-tien-o-dau-ra",
@@ -39685,6 +39714,10 @@
    ],
    [
     "p",
+    "Nhóm hàng kéo xuất khẩu năm 2026 là máy tính, điện tử, linh kiện: 149,4 tỷ USD sau 10 tháng, khoảng 30% tổng xuất khẩu, nhưng nhập linh kiện cũng rất lớn. Chi tiết ở bài <a href=\"/f0/xuat-khau-dien-tu-2026-bong-bong-ai.html\">xuất khẩu điện tử 2026 tăng 71% nhờ AI</a>."
+   ],
+   [
+    "p",
     "<small>Nguồn: Tuổi Trẻ 8/11/2026; Thuế & Hải quan Online 13/11/2026; Investing.com 27/8/2026; Cổng Chính phủ 27/10/2025; Znews 2/8/2026; VnBusiness 9/9/2026; VnExpress 11/11/2026 và 1/8/2025. Nhân vật anh Tâm, chị Hạnh là giả định, em tự tính. Nội dung chỉ để tham khảo, không phải khuyến nghị đầu tư.</small>"
    ]
   ],
@@ -39703,12 +39736,14 @@
    ]
   ],
   "rel": [
+   "xuat-khau-dien-tu-2026-bong-bong-ai",
    "thue-doi-ung-la-gi",
    "xuat-khau-sau-rieng-2026",
    "ty-gia-tang-anh-huong-co-phieu",
    "bay-thu-nhap-trung-binh-la-gi",
    "quy-du-phong-truoc-khi-dau-tu"
-  ]
+  ],
+  "mod": "2026-11-22"
  },
  {
   "slug": "cach-tinh-thue-thu-nhap-ca-nhan-2026",
@@ -40639,6 +40674,742 @@
    "lai-suat-thuc-la-gi",
    "tich-san-co-phieu-hay-gui-tiet-kiem",
    "quy-du-phong-truoc-khi-dau-tu"
+  ]
+ },
+ {
+  "slug": "el-nino-2027-mua-kho-thieu-dien-han-man",
+  "kw": "El Nino 2027",
+  "grp": 7,
+  "date": "2026-11-22",
+  "title": "El Nino 2027: mùa khô thiếu điện, hạn mặn – nhà mình chuẩn bị gì?",
+  "desc": "El Nino 96% rất mạnh tới 1/2027, giá điện vừa giảm 2%. Bài học hè 2023 và hạn mặn 2016–2020, phép tính 180 nghìn vs 18 triệu, 5 việc nên làm trước tháng 4.",
+  "body": [
+   [
+    "p",
+    "6 giờ 15 sáng thứ Hai, chị Thảo, chủ xưởng may 12 máy ở Bắc Ninh, đọc hai tin liền nhau. Tin thứ nhất: <b>El Nino có khả năng 96%</b> duy trì cường độ rất mạnh đến tháng 1/2027. Tin thứ hai: <b>giá điện vừa giảm 2%</b>. Nghe như tin tốt. Nhưng đơn hàng hè của xưởng phải giao từ tháng 4 đến tháng 6, đúng lúc nắng nóng lên cao."
+   ],
+   [
+    "p",
+    "Chị Thảo là nhân vật giả định trong video cùng chủ đề của kênh, còn các con số bên dưới đều có nguồn. Bài này trả lời một câu: mùa khô 2027, điện, nước và gạo chạm vào túi tiền nhà mình ra sao, và nên chuẩn bị gì từ bây giờ."
+   ],
+   [
+    "h2",
+    "El Nino 2027 mạnh tới mức nào?"
+   ],
+   [
+    "p",
+    "Trung tâm Dự báo khí tượng thủy văn quốc gia đánh giá El Nino có xác suất 96% duy trì cường độ rất mạnh từ tháng 11/2026 đến tháng 1/2027, sau đó suy yếu nhưng nhiều khả năng vẫn ở mức trung bình đến mạnh (Nhà Đầu Tư 9/11/2026). Kịch bản \"rủi ro rất cao\" của Bộ Nông nghiệp và Môi trường: mưa thiếu hụt phổ biến <b>20–40%</b>, cục bộ trên 50% ở Nam Trung Bộ; dòng chảy nhiều lưu vực giảm 20–40%; mùa mưa 2027 có thể đến muộn."
+   ],
+   [
+    "p",
+    "Với điện, nước về hồ thủy điện từ nửa cuối tháng 10 chỉ còn khoảng <b>80% trung bình nhiều năm</b>; sản lượng thủy điện cả năm dự kiến thấp hơn 2025 khoảng <b>18,5 tỷ kWh</b>, trong khi nhu cầu điện 2027 dự báo tăng khoảng 10% (PetroTimes 7/11/2026, hội nghị Bộ Công Thương). Các hồ được yêu cầu giữ nước tới hết quý I/2027 thay vì chỉ tới 31/12 như mọi năm."
+   ],
+   [
+    "h2",
+    "Giá điện giảm 2% có phải tin tốt?"
+   ],
+   [
+    "p",
+    "Có, nhưng nhỏ hơn mình tưởng. Giá bán lẻ điện bình quân giảm từ 2.204,07 xuống <b>2.159,90 đồng/kWh</b> từ 1/11/2026, phương án giảm được yêu cầu cho giai đoạn tới hết 31/3/2027 (CafeF 31/10, MarketTimes 1/11/2026). Đây là lần giảm đầu tiên sau 4 lần tăng:"
+   ],
+   [
+    "table",
+    [
+     [
+      "Thời điểm",
+      "Thay đổi",
+      "Giá bình quân<br>(đồng/kWh)"
+     ],
+     [
+      "Trước 5/2023",
+      "–",
+      "≈ 1.864"
+     ],
+     [
+      "5/2023",
+      "+3%",
+      "≈ 1.920"
+     ],
+     [
+      "11/2023",
+      "+4,5%",
+      "≈ 2.007"
+     ],
+     [
+      "10/2024",
+      "+4,8%",
+      "≈ 2.103"
+     ],
+     [
+      "5/2025",
+      "+4,8%",
+      "2.204"
+     ],
+     [
+      "1/11/2026",
+      "−2%",
+      "2.160"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Em tự tính các mốc giữa bằng cách nhân lần lượt các mức tăng; ra đúng 2.204 ở lần cuối. Sau khi giảm, giá điện vẫn cao hơn trước mùa hè 2023 khoảng <b>15,9%</b>. Người dùng điện có thêm động lực theo dõi chủ đề này ở bài <a href=\"/f0/gia-dien-va-co-phieu-dien.html\">giá điện và cổ phiếu điện</a>."
+   ],
+   [
+    "h2",
+    "Lần trước thiếu điện, ai mất bao nhiêu?"
+   ],
+   [
+    "p",
+    "Mùa hè 2023, Ngân hàng Thế giới ước tính các đợt mất điện tháng 5–6 gây thiệt hại khoảng <b>1,4 tỷ USD</b>, khoảng 0,3% GDP; tháng 5/2023 thiếu hụt công suất đỉnh tới 5.400 MW. Một khảo sát nhỏ cho thấy có doanh nghiệp công nghiệp miền Bắc mất tới <b>10% doanh thu</b> (Báo Đầu tư 11/8/2023). Tình hình chỉ hết vào tháng 7, khi nước về hồ."
+   ],
+   [
+    "p",
+    "Giờ đặt vào xưởng chị Thảo (giả định, em tự tính): tiền điện 9 triệu/tháng, giảm 2% thì bớt <b>180 nghìn</b>. Doanh thu 180 triệu/tháng, nếu một tháng thiếu điện làm mất 10% như mức cao trong khảo sát 2023 thì mất <b>18 triệu</b>, gấp 100 lần khoản được giảm. Đó là doanh thu, chưa phải lãi, nhưng đủ để thấy câu hỏi quan trọng không phải giá điện bao nhiêu, mà là <b>điện có đủ vào đúng tháng cao điểm không</b>."
+   ],
+   [
+    "h2",
+    "Hạn mặn miền Tây 2027: chuẩn bị sớm thay đổi được gì?"
+   ],
+   [
+    "p",
+    "Mùa khô 2015–2016 được gọi là hạn mặn tồi tệ nhất hơn 100 năm, mặn vào sâu 40–90 km, khoảng <b>405.000 ha</b> lúa bị ảnh hưởng, 210.000 hộ gặp khó. Mùa khô 2019–2020 mặn còn gắt hơn, vậy mà lúa thiệt hại chỉ <b>58.400 ha</b>, bằng khoảng 14% diện tích bị ảnh hưởng mùa 2015–2016; số hộ gặp khó khoảng 96.000 (VietNamNet 22/6/2020)."
+   ],
+   [
+    "p",
+    "Khác biệt nằm ở chuẩn bị: dự báo mặn từ tháng 6/2019, xuống giống sớm 10–20 ngày, chuyển đổi khoảng 50.000 ha lúa có nguy cơ, thủy lợi xong vượt kế hoạch. Lưu ý hai con số đo hai thứ khác nhau (\"bị ảnh hưởng\" và \"thiệt hại\"), nên em không nói thiệt hại giảm 86%; điều chắc chắn là cảnh báo sớm giúp giảm thiệt hại rõ rệt."
+   ],
+   [
+    "p",
+    "Với bát cơm: kế hoạch 2027 diện tích lúa ĐBSCL và Đông Nam Bộ dự kiến 3.987.700 ha, giảm 50.400 ha (Báo Cần Thơ 4/11/2026); Philippines được dự báo nhập 5,6 triệu tấn gạo năm 2027 (Người Đưa Tin 11/11/2026); chỉ số giá lương thực toàn cầu tháng 10 vẫn cao hơn cùng kỳ khoảng 15% (Thời báo Ngân hàng 14/11/2026). Giá gạo có tăng hay không còn tùy Ấn Độ, chưa thể nói chắc."
+   ],
+   [
+    "h2",
+    "Lần trước và lần này giống, khác ở đâu?"
+   ],
+   [
+    "table",
+    [
+     [
+      "",
+      "Hè 2023",
+      "Mùa khô 2027"
+     ],
+     [
+      "Thời tiết",
+      "El Nino, nắng nóng,<br>hồ cạn tháng 5–6",
+      "El Nino 96% rất mạnh,<br>có thể kéo tới tháng 6"
+     ],
+     [
+      "Nhu cầu điện",
+      "Tăng nhanh",
+      "Dự báo +10%"
+     ],
+     [
+      "Cảnh báo",
+      "Muộn, khi đã thiếu",
+      "Sớm nhiều tháng"
+     ],
+     [
+      "Hồ thủy điện",
+      "Xả theo thông lệ",
+      "Giữ nước tới hết quý I"
+     ],
+     [
+      "Nguồn bù",
+      "Ít",
+      "Thêm điện mặt trời mái nhà<br>miền Bắc; nguồn nền<br>mới chưa kịp"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Chưa chắc sẽ thiếu điện như lần trước. Nhưng \"chưa\" không có nghĩa là \"không thể\", và người thiệt nhiều lần trước thường là người chờ đến lúc thiếu mới lo."
+   ],
+   [
+    "h2",
+    "5 việc hộ gia đình, hộ kinh doanh nên làm trước tháng 4/2027"
+   ],
+   [
+    "table",
+    [
+     [
+      "Việc",
+      "Hợp với ai",
+      "Cái giá phải trả"
+     ],
+     [
+      "Làm trước đơn hè,<br>giao sớm trước tháng 4",
+      "Xưởng, hộ sản xuất",
+      "Tốn tăng ca từ tháng 1"
+     ],
+     [
+      "Dự phòng nguồn điện:<br>máy phát, điện mặt trời mái nhà",
+      "Hộ kinh doanh dùng điện nhiều",
+      "Tốn vốn ban đầu"
+     ],
+     [
+      "Quỹ làm ăn đủ 1 tháng<br>lương thợ + điện + mặt bằng",
+      "Mọi hộ kinh doanh",
+      "Tiền nằm yên, ít sinh lời"
+     ],
+     [
+      "Trữ nước ngọt, bồn chứa",
+      "Gia đình ở miền Tây,<br>Nam Trung Bộ",
+      "Vài triệu đồng"
+     ],
+     [
+      "Quỹ gia đình đủ 3 tháng chi tiêu",
+      "Nhà có thu nhập dựa vào<br>điện, nước, mùa màng",
+      "Tạm hoãn khoản đầu tư khác"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Chị Thảo chọn cách 1 và 3: hỏi khách cho giao sớm, chạy bù từ tháng 1, để riêng 120 triệu đủ một tháng lương thợ, tiền điện và tiền xưởng. Không cách nào miễn phí, nên chọn cách nào là quyết định của từng nhà. Vì sao quỹ dự phòng nên đứng trước mọi khoản đầu tư, em viết ở bài <a href=\"/f0/quy-du-phong-truoc-khi-dau-tu.html\">quỹ dự phòng trước khi đầu tư</a>."
+   ],
+   [
+    "h2",
+    "Phép thử: nhà mình dính mấy thứ trong 3 thứ?"
+   ],
+   [
+    "p",
+    "Đếm xem thu nhập nhà mình phụ thuộc vào mấy thứ trong ba thứ: <b>điện ổn định, nước ngọt, mùa màng thuận</b>. Không thứ nào: chủ yếu lo chi tiêu (gạo, hóa đơn). Một thứ: nên có phương án dự phòng ngay từ bây giờ. Hai thứ trở lên: nên có quỹ gia đình đủ 3 tháng chi tiêu trước tháng 4/2027, tách riêng với quỹ làm ăn. Đây là mốc em tự đặt để soi, không phải chuẩn chung."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>Thấy giá điện giảm là yên tâm</b>: 2% giá không bảo hiểm cho rủi ro mất điện; với xưởng chị Thảo, một tháng thiếu điện có thể mất gấp 100 lần khoản được giảm.",
+     "<b>Ghép số khác loại</b>: 405.000 ha \"bị ảnh hưởng\" năm 2016 và 58.400 ha \"thiệt hại\" năm 2020 đo hai thứ khác nhau, đừng trừ thẳng cho nhau.",
+     "<b>Chờ nắng mới lo</b>: máy phát, bồn nước, đơn giao sớm đều cần đặt trước; vào cao điểm thì giá thuê và thời gian chờ đều tăng."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist trước Tết"
+   ],
+   [
+    "ol",
+    [
+     "Làm phép thử 3 thứ cho nhà mình, ghi con số.",
+     "Hộ kinh doanh: tính doanh thu một tháng và 10% của nó.",
+     "Hỏi khách hàng chính về khả năng giao sớm.",
+     "Tách quỹ làm ăn và quỹ gia đình thành hai tài khoản.",
+     "Theo dõi 3 mốc: bản tin El Nino hằng tháng, mực nước hồ cuối quý I, giá điện sau 31/3/2027."
+    ]
+   ],
+   [
+    "p",
+    "Số liệu vĩ mô và thị trường hằng ngày anh chị xem miễn phí tại <a href=\"/the-gioi-hang-hoa.html\">trang thế giới và hàng hóa</a>. Cần trao đổi riêng về kế hoạch tài chính gia đình, anh chị có thể nhắn qua <a href=\"/tu-van-dau-tu-chung-khoan.html\">trang tư vấn</a>."
+   ],
+   [
+    "p",
+    "<small>Nguồn: Nhà Đầu Tư 9/11/2026 (Trung tâm Dự báo KTTV quốc gia, Bộ NN&MT); PetroTimes 7/11/2026; CafeF 31/10/2026, MarketTimes 1/11/2026; Báo Đầu tư 11/8/2023 (Ngân hàng Thế giới); VnExpress 28/2/2016; VietNamNet 22/6/2020; Báo Cần Thơ 4/11/2026; Người Đưa Tin 11/11/2026; Thời báo Ngân hàng 14/11/2026. Nhân vật chị Thảo là giả định, các phép tính em tự tính. Nội dung chỉ để tham khảo.</small>"
+   ]
+  ],
+  "faq": [
+   [
+    "El Nino 2027 kéo dài đến bao giờ?",
+    "Theo Trung tâm Dự báo KTTV quốc gia, xác suất 96% El Nino rất mạnh đến tháng 1/2027, sau đó suy yếu nhưng nhiều khả năng vẫn trung bình đến mạnh; báo cáo tại hội nghị Bộ Công Thương nêu khả năng kéo tới khoảng tháng 6/2027."
+   ],
+   [
+    "Giá điện giảm 2% đến khi nào?",
+    "Giá bán lẻ bình quân giảm từ 1/11/2026 (2.204 xuống khoảng 2.160 đồng/kWh); phương án giảm được yêu cầu cho giai đoạn tới hết 31/3/2027, sau đó chưa có thông báo."
+   ],
+   [
+    "Mùa khô 2027 có thiếu điện như năm 2023 không?",
+    "Chưa chắc. Nước về hồ chỉ khoảng 80% trung bình và nhu cầu dự báo tăng 10%, nhưng lần này cảnh báo sớm hơn và hồ được giữ nước tới hết quý I."
+   ]
+  ],
+  "rel": [
+   "gia-dien-va-co-phieu-dien",
+   "quy-du-phong-truoc-khi-dau-tu",
+   "lam-phat-va-chung-khoan",
+   "xuat-khau-sau-rieng-2026",
+   "ke-hoach-tai-chinh-gia-dinh-khi-co-bien"
+  ]
+ },
+ {
+  "slug": "xuat-khau-dien-tu-2026-bong-bong-ai",
+  "kw": "xuất khẩu điện tử 2026",
+  "grp": 8,
+  "date": "2026-11-22",
+  "title": "Xuất khẩu điện tử 2026 tăng 71% nhờ AI: nếu hạ nhiệt, ai đau?",
+  "desc": "10 tháng 2026 xuất khẩu máy tính, điện tử, linh kiện 149,4 tỷ USD, 30% tổng xuất khẩu. Phiên Mỹ mất 2.500 tỷ USD, bài học 2023 và phép thử thu nhập nhà mình.",
+  "body": [
+   [
+    "p",
+    "5 giờ 50 sáng, anh Tuấn, tổ trưởng chuyền lắp bo mạch ở Bắc Giang, đọc ba tin liền nhau. Cổ phiếu công nghệ Mỹ vừa <b>bốc hơi khoảng 2.500 tỷ USD</b> trong một phiên vì lo bong bóng AI. Nhóm chuyền báo tháng 12 vẫn tăng ca 3 tối mỗi tuần. Và vợ anh, chủ quán cơm trước cổng khu công nghiệp, nhắn: <i>\"TV bảo chứng khoán Mỹ sập, công ty anh có cắt ca không?\"</i>"
+   ],
+   [
+    "p",
+    "Anh Tuấn là nhân vật giả định trong video cùng chủ đề của kênh. Câu hỏi của vợ anh thì rất thật: Việt Nam đang bán ra thế giới rất nhiều hàng điện tử nhờ cơn sốt AI. Nếu cơn sốt hạ nhiệt, túi tiền của ai đau trước?"
+   ],
+   [
+    "h2",
+    "Xuất khẩu điện tử 2026 lớn cỡ nào?"
+   ],
+   [
+    "p",
+    "Theo số hải quan (qua WiData), 10 tháng 2026 Việt Nam xuất khẩu máy vi tính, sản phẩm điện tử và linh kiện <b>149,4 tỷ USD</b>, tăng 71% so với cùng kỳ và gấp 3,2 lần 10 tháng năm 2023. Nhóm này chiếm khoảng <b>30% tổng xuất khẩu</b> (498,8 tỷ USD)."
+   ],
+   [
+    "table",
+    [
+     [
+      "10 tháng",
+      "Xuất khẩu nhóm<br>(tỷ USD)",
+      "So cùng kỳ"
+     ],
+     [
+      "2023",
+      "46,5",
+      "–"
+     ],
+     [
+      "2024",
+      "59,0",
+      "+26,9%"
+     ],
+     [
+      "2025",
+      "87,4",
+      "+48,1%"
+     ],
+     [
+      "2026",
+      "149,4",
+      "+71,0%"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Em tự tính thêm: phần xuất khẩu cả nước tăng thêm trong 10 tháng là 107,2 tỷ USD, riêng nhóm điện tử góp 62,0 tỷ, tức khoảng <b>58%</b>. Hồi tháng 7, Hiệp hội Doanh nghiệp điện tử chỉ dự báo cả năm tăng 15–20% (VnEconomy 10/7/2026). Hàn Quốc còn dốc hơn: tháng 10 xuất khẩu máy tính +496,6%, tức gấp gần 6 lần, chủ yếu nhờ máy chủ AI (Thời báo Ngân hàng 1/11/2026)."
+   ],
+   [
+    "h2",
+    "Phiên 5/11: chứng khoán Mỹ mất 2.500 tỷ USD, châu Á và Việt Nam ra sao?"
+   ],
+   [
+    "p",
+    "Phiên 5/11/2026, Nasdaq 100 giảm 6,4%, xóa khoảng 2.500 tỷ USD vốn hóa; chỉ số bán dẫn giảm hơn 12% (Nhà Đầu Tư 12/11/2026). Em lấy giá đóng cửa trong dữ liệu web để xem các chỉ số khác:"
+   ],
+   [
+    "table",
+    [
+     [
+      "Chỉ số",
+      "Phiên phản ứng",
+      "4/11 → 20/11"
+     ],
+     [
+      "Nasdaq Composite",
+      "5/11: −5,52%",
+      "−12,1%"
+     ],
+     [
+      "S&P 500",
+      "5/11: −4,36%",
+      "−10,1%"
+     ],
+     [
+      "Nikkei 225 (Nhật)",
+      "6/11: −5,96%",
+      "−9,2%"
+     ],
+     [
+      "KOSPI (Hàn)",
+      "6/11: −6,02%",
+      "−14,3%"
+     ],
+     [
+      "VN-Index",
+      "6/11: −0,88%",
+      "−2,6%"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Thị trường Việt Nam giảm nhẹ hơn nhiều, vì sàn Việt Nam ít cổ phiếu chip và công nghệ lớn. Nhưng nhà máy điện tử ở Việt Nam phần lớn là doanh nghiệp vốn nước ngoài, không niêm yết ở HOSE. Nên chỗ chịu tác động nếu đơn hàng chậm lại không nằm nhiều ở bảng điện, mà ở <b>bảng lương và quán xá quanh khu công nghiệp</b>. Vì sao chứng khoán Mỹ và VN-Index không phải lúc nào cũng đi cùng nhau, xem bài <a href=\"/f0/chung-khoan-my-giam-vn-index-co-giam-theo.html\">chứng khoán Mỹ giảm, VN-Index có giảm theo</a>."
+   ],
+   [
+    "h2",
+    "AI có phải bong bóng không?"
+   ],
+   [
+    "p",
+    "Đây là chỗ dễ kết luận vội. Hai tuần sau phiên đó, hãng chip AI lớn nhất thế giới báo quý kết thúc 25/10/2026 lãi ròng <b>65 tỷ USD</b>, cao nhất từ trước tới nay, doanh thu 116 tỷ USD, tăng 103% (Doanh Nhân Việt Nam 18/11/2026). Nhưng cổ phiếu hãng này đã giảm khoảng 1/3 so với đỉnh đầu tháng 10 <i>trước khi</i> báo con số đó (Nhà Đầu Tư 13/11/2026)."
+   ],
+   [
+    "p",
+    "Lãi hôm nay là thật; giá cổ phiếu thì trả tiền cho tương lai. Câu hỏi của nhà đầu tư là các tập đoàn chi hàng trăm tỷ USD xây trung tâm dữ liệu có thu lại được tiền không. Không ai biết chắc. Dấu hiệu chung của bong bóng em đã viết ở bài <a href=\"/f0/bong-bong-tai-san-la-gi.html\">bong bóng tài sản là gì</a>."
+   ],
+   [
+    "h2",
+    "Xuất nhiều, nhưng tiền ở lại Việt Nam bao nhiêu?"
+   ],
+   [
+    "p",
+    "Tính đến 15/10/2026, nhóm điện tử xuất <b>135,31 tỷ USD</b> nhưng nhập <b>201,12 tỷ USD</b>; cả nước chuyển từ xuất siêu 17,55 tỷ sang nhập siêu 17,66 tỷ USD (Trung tâm WTO – VCCI 30/10/2026). Một phần linh kiện nhập về dùng cho nhóm hàng khác như điện thoại, nên không thể nói nhóm này \"lỗ\". Điểm chính: hàng đi rất nhiều, nhưng phần giá trị ở lại không lớn như con số xuất khẩu; Hiệp hội cũng thừa nhận tỷ lệ nội địa hóa còn thấp."
+   ],
+   [
+    "p",
+    "Phần tiền ở lại nằm nhiều ở tiền công, tiền thuê đất và dịch vụ quanh khu công nghiệp. Đó cũng là những phần nhạy nhất khi đơn chậm lại. Câu chuyện xuất – nhập rộng hơn, xem bài <a href=\"/f0/thang-du-thuong-mai-viet-nam-my.html\">thặng dư thương mại Việt Nam – Mỹ</a>."
+   ],
+   [
+    "h2",
+    "Lần trước đơn hàng chậm lại, ai bị cắt trước?"
+   ],
+   [
+    "p",
+    "Sau cơn sốt mua thiết bị thời Covid, xuất khẩu điện thoại và linh kiện năm 2023 giảm từ 58,0 xuống <b>52,4 tỷ USD</b>, khoảng −9,7% (hải quan). Mức giảm không lớn, nhưng với người làm công, phần bị cắt đầu tiên thường là tăng ca, rồi mới đến giờ làm và người. Nhóm máy tính, điện tử năm nay đi lên dốc hơn nhiều, nên một nhịp chững lại sẽ dễ thấy hơn trong bảng lương."
+   ],
+   [
+    "h2",
+    "Phép thử: thu nhập nhà mình dựa vào một ngành bao nhiêu %?"
+   ],
+   [
+    "p",
+    "Nhà anh Tuấn (giả định, em tự tính): lương cứng 10 triệu, tăng ca 4 triệu; quán cơm của vợ lãi 16 triệu, trong đó khoảng 10 triệu nhờ khách công nhân điện tử. Tổng 30 triệu/tháng, phần dựa vào đơn hàng điện tử là 4 + 10 = <b>14 triệu, khoảng 47%</b>."
+   ],
+   [
+    "table",
+    [
+     [
+      "% thu nhập dựa vào<br>1 ngành / 1 nhóm khách",
+      "Mức",
+      "Nên làm"
+     ],
+     [
+      "Dưới 20%",
+      "Khá an toàn",
+      "Giữ thói quen tiết kiệm"
+     ],
+     [
+      "20–50%",
+      "Cần phương án",
+      "Tách khoản phụ thuộc<br>ra sổ riêng"
+     ],
+     [
+      "Trên 50%",
+      "Rủi ro cao",
+      "Dựng quỹ dự phòng<br>trước khi ngành chững"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Đây là mốc em tự đặt để soi, không phải chuẩn chung. Hai vợ chồng anh Tuấn chốt: trả góp xe máy 2 triệu/tháng chuyển sang trả bằng lương cứng, toàn bộ tiền tăng ca vào một sổ riêng coi như không có; quán nhận thêm 20 suất cơm văn phòng; ra Tết anh học lớp bảo trì máy. Mỗi cách đều có giá: chi tiêu chặt hơn, thêm việc, tốn thời gian. Cách dựng khoản đệm trước, em viết ở bài <a href=\"/f0/quy-du-phong-truoc-khi-dau-tu.html\">quỹ dự phòng trước khi đầu tư</a>."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>Trả góp bằng tiền tăng ca</b>: tăng ca là khoản bị cắt đầu tiên; khoản trả cố định nên dựa vào lương cứng.",
+     "<b>Nhìn VN-Index để đoán việc làm</b>: phiên 6/11 VN-Index chỉ −0,88%, nhưng nhà máy điện tử phần lớn không niêm yết; bảng điện xanh chưa nói gì về ca làm.",
+     "<b>Thấy lãi kỷ lục là kết luận \"không có bong bóng\"</b>: cổ phiếu hãng chip giảm 1/3 trước khi báo lãi 65 tỷ USD; lãi hôm nay và kỳ vọng ngày mai là hai chuyện."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist 5 dòng"
+   ],
+   [
+    "ol",
+    [
+     "Làm phép thử % thu nhập dựa vào một ngành.",
+     "Liệt kê khoản trả góp, xem khoản nào đang trả bằng tiền tăng ca.",
+     "Mở sổ riêng cho tiền tăng ca, thưởng.",
+     "Theo dõi số xuất khẩu điện tử đầu mỗi tháng và xuất khẩu chip Hàn Quốc ngày 1 hằng tháng.",
+     "Xem kế hoạch chi cho AI của các tập đoàn Mỹ ở kỳ báo cáo tới."
+    ]
+   ],
+   [
+    "p",
+    "Diễn biến các chỉ số Mỹ, Nhật, Hàn mỗi ngày anh chị xem tại <a href=\"/the-gioi-hang-hoa.html\">trang thế giới và hàng hóa</a>; giải thích từng chỉ số ở bài <a href=\"/f0/chi-so-chung-khoan-the-gioi.html\">chỉ số chứng khoán thế giới</a>."
+   ],
+   [
+    "p",
+    "<small>Nguồn: hải quan qua WiData (xuất khẩu nhóm 2023–2026, điện thoại 2022–2023); Trung tâm WTO – VCCI 30/10/2026; VnEconomy 10/7/2026; Thời báo Ngân hàng 1/11/2026; Nhà Đầu Tư 12/11 và 13/11/2026; Doanh Nhân Việt Nam 18/11/2026; giá đóng cửa chỉ số: dữ liệu chungkhoanhuynguyen.com (4/11–20/11/2026). Nhân vật anh Tuấn là giả định, các phép tính em tự tính. Nội dung chỉ để tham khảo, không phải khuyến nghị.</small>"
+   ]
+  ],
+  "faq": [
+   [
+    "Xuất khẩu điện tử Việt Nam 10 tháng 2026 bao nhiêu?",
+    "Máy vi tính, sản phẩm điện tử và linh kiện đạt khoảng 149,4 tỷ USD, tăng 71% so với cùng kỳ, chiếm khoảng 30% tổng xuất khẩu (số hải quan)."
+   ],
+   [
+    "Vì sao xuất nhiều mà Việt Nam vẫn nhập siêu?",
+    "Nhóm điện tử nhập linh kiện rất lớn: đến 15/10/2026 xuất 135,31 tỷ USD nhưng nhập 201,12 tỷ USD; cả nước chuyển sang nhập siêu 17,66 tỷ USD (VCCI)."
+   ],
+   [
+    "Chứng khoán Mỹ giảm vì AI có làm VN-Index giảm mạnh không?",
+    "Phiên 6/11/2026 VN-Index chỉ giảm 0,88% trong khi Nikkei và KOSPI giảm khoảng 6%. Tác động lớn hơn có thể nằm ở đơn hàng và việc làm nếu cơn sốt AI hạ nhiệt."
+   ]
+  ],
+  "rel": [
+   "thang-du-thuong-mai-viet-nam-my",
+   "bong-bong-tai-san-la-gi",
+   "chung-khoan-my-giam-vn-index-co-giam-theo",
+   "chi-so-chung-khoan-the-gioi",
+   "quy-du-phong-truoc-khi-dau-tu"
+  ]
+ },
+ {
+  "slug": "chi-so-chung-khoan-the-gioi",
+  "kw": "chỉ số chứng khoán thế giới",
+  "grp": 8,
+  "date": "2026-11-22",
+  "title": "Chỉ số chứng khoán thế giới: S&P 500, Nasdaq, Nikkei, KOSPI",
+  "desc": "S&P 500, Dow Jones, Nasdaq, Nikkei 225, KOSPI là gì, giao dịch giờ nào theo giờ Việt Nam. Bảng 1 năm và phiên 5–6/11/2026 so với VN-Index.",
+  "body": [
+   [
+    "p",
+    "Sáng 6/11/2026, nhiều người mở điện thoại thấy tin \"chứng khoán Mỹ mất 2.500 tỷ USD\". Đến trưa, Nikkei của Nhật giảm <b>5,96%</b>, KOSPI của Hàn giảm <b>6,02%</b>. Còn VN-Index đóng cửa chỉ giảm <b>0,88%</b>. Cùng một tin, ba thị trường phản ứng rất khác nhau. Muốn hiểu vì sao, trước hết phải biết mỗi chỉ số chứng khoán thế giới đang đo cái gì."
+   ],
+   [
+    "h2",
+    "5 chỉ số chứng khoán thế giới hay được nhắc là gì?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Chỉ số",
+      "Đo cái gì",
+      "Giờ giao dịch<br>(giờ Việt Nam)"
+     ],
+     [
+      "S&P 500 (Mỹ)",
+      "500 công ty lớn,<br>tính theo vốn hóa",
+      "21:30 – 4:00<br>(mùa hè 20:30 – 3:00)"
+     ],
+     [
+      "Dow Jones (Mỹ)",
+      "30 công ty lớn,<br>tính theo giá cổ phiếu",
+      "Như S&P 500"
+     ],
+     [
+      "Nasdaq Composite (Mỹ)",
+      "Cổ phiếu trên sàn Nasdaq,<br>nặng công nghệ",
+      "Như S&P 500"
+     ],
+     [
+      "Nikkei 225 (Nhật)",
+      "225 công ty,<br>tính theo giá cổ phiếu",
+      "7:00 – 13:30"
+     ],
+     [
+      "KOSPI (Hàn)",
+      "Toàn sàn chính Hàn Quốc,<br>nặng chip, điện tử",
+      "7:00 – 13:30"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Vì lệch múi giờ, phiên Mỹ diễn ra trong đêm theo giờ Việt Nam. Tin xấu ở Mỹ chiều 5/11 (giờ Mỹ) chỉ được châu Á và Việt Nam phản ứng vào phiên ngày 6/11. Đó là lý do người ta hay xem phố Wall đêm qua trước khi vào phiên sáng."
+   ],
+   [
+    "h2",
+    "Tính theo vốn hóa và theo giá khác nhau thế nào?"
+   ],
+   [
+    "p",
+    "S&P 500, KOSPI và VN-Index tính theo vốn hóa: công ty càng lớn càng kéo chỉ số mạnh. Dow Jones và Nikkei 225 tính theo giá: cổ phiếu có giá cao (tính bằng đồng tiền của nước đó) ảnh hưởng nhiều hơn, dù công ty chưa chắc lớn nhất. Vì thế hai chỉ số cùng nước có thể lệch nhau trong một phiên. VN-Index tính thế nào, em giải thích ở bài <a href=\"/f0/vn-index-la-gi.html\">VN-Index là gì</a>."
+   ],
+   [
+    "h2",
+    "Phiên 5–6/11/2026: vì sao Nhật, Hàn giảm mạnh hơn Việt Nam?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Chỉ số",
+      "Đóng cửa 4/11",
+      "Phiên phản ứng",
+      "20/11"
+     ],
+     [
+      "Nasdaq",
+      "25.736,51",
+      "5/11: −5,52%",
+      "22.617,73"
+     ],
+     [
+      "S&P 500",
+      "7.688,62",
+      "5/11: −4,36%",
+      "6.910,39"
+     ],
+     [
+      "Dow Jones",
+      "53.356,12",
+      "5/11: −3,44%",
+      "48.147,33"
+     ],
+     [
+      "Nikkei 225",
+      "62.188,63",
+      "6/11: −5,96%",
+      "56.436,65"
+     ],
+     [
+      "KOSPI",
+      "5.683,80",
+      "6/11: −6,02%",
+      "4.869,96"
+     ],
+     [
+      "VN-Index",
+      "1.733,02",
+      "6/11: −0,88%",
+      "1.688,79"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Nỗi lo hôm đó là bong bóng AI. KOSPI chứa nhiều cổ phiếu chip lớn; Nikkei có nhiều hãng thiết bị bán dẫn, công nghệ; Nasdaq nặng công nghệ. VN-Index thì nặng ngân hàng, bất động sản, ít cổ phiếu chip. Cùng một tin, chỉ số nào chứa nhiều thứ bị lo nhất thì giảm mạnh nhất. Từ 4/11 đến 20/11, KOSPI giảm 14,3%, Nasdaq 12,1%, VN-Index 2,6%."
+   ],
+   [
+    "p",
+    "Nhưng đừng vội kết luận VN-Index \"miễn nhiễm\". Ảnh hưởng lên Việt Nam có thể đi đường khác, qua đơn hàng xuất khẩu điện tử và việc làm (xem bài <a href=\"/f0/xuat-khau-dien-tu-2026-bong-bong-ai.html\">xuất khẩu điện tử 2026 và cơn sốt AI</a>) hoặc qua dòng vốn ngoại. Số liệu 155 tuần về độ đi cùng nhau giữa Mỹ và Việt Nam ở bài <a href=\"/f0/chung-khoan-my-giam-vn-index-co-giam-theo.html\">chứng khoán Mỹ giảm, VN-Index có giảm theo</a>."
+   ],
+   [
+    "h2",
+    "Một năm qua các chỉ số đi được bao xa?"
+   ],
+   [
+    "table",
+    [
+     [
+      "Chỉ số",
+      "20/11/2025",
+      "20/11/2026",
+      "Thay đổi"
+     ],
+     [
+      "KOSPI",
+      "4.004,85",
+      "4.869,96",
+      "+21,6%"
+     ],
+     [
+      "Nikkei 225",
+      "49.823,94",
+      "56.436,65",
+      "+13,3%"
+     ],
+     [
+      "S&P 500",
+      "6.538,76",
+      "6.910,39",
+      "+5,7%"
+     ],
+     [
+      "Dow Jones",
+      "45.752,26",
+      "48.147,33",
+      "+5,2%"
+     ],
+     [
+      "Nasdaq",
+      "22.078,05",
+      "22.617,73",
+      "+2,4%"
+     ],
+     [
+      "VN-Index",
+      "1.655,99",
+      "1.688,79",
+      "+2,0%"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Em tự tính từ giá đóng cửa, chưa gồm cổ tức, chưa quy đổi tỷ giá. Thứ hạng thay đổi rất nhanh: trước phiên 5/11, KOSPI và Nikkei còn cao hơn nhiều; chỉ hai tuần đã kéo phần lớn mức tăng đi. Quá khứ không bảo đảm tương lai."
+   ],
+   [
+    "h2",
+    "Nhà đầu tư Việt nên nhìn chỉ số thế giới thế nào?"
+   ],
+   [
+    "ul",
+    [
+     "Xem chỉ số Mỹ đêm qua để biết <b>tâm lý</b> đầu phiên, không phải để đoán cả phiên.",
+     "Xem chỉ số nào giảm mạnh nhất để biết <b>nỗi lo nằm ở ngành nào</b> (5/11 là chip, công nghệ).",
+     "Ghép thêm chỉ số USD và lợi suất trái phiếu Mỹ, vì chúng tác động tới tỷ giá và dòng vốn (bài <a href=\"/f0/chi-so-dxy-la-gi.html\">chỉ số DXY</a>, <a href=\"/f0/fed-tang-giam-lai-suat-tac-dong.html\">Fed tăng giảm lãi suất</a>)."
+    ]
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>So điểm số giữa các chỉ số</b>: Nikkei 56.000 điểm không có nghĩa \"đắt\" hơn VN-Index 1.700 điểm; chỉ so được phần trăm thay đổi.",
+     "<b>Thấy Mỹ đỏ là bán tháo đầu phiên</b>: ngày 6/11 Nikkei, KOSPI giảm khoảng 6% nhưng VN-Index chỉ −0,88%; phản ứng tùy cơ cấu từng thị trường.",
+     "<b>Nhầm ngày</b>: phiên Mỹ ngày 5/11 kết thúc vào sáng 6/11 giờ Việt Nam; so sai ngày sẽ ra kết luận sai."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist đọc tin chứng khoán thế giới"
+   ],
+   [
+    "ol",
+    [
+     "Tin nói chỉ số nào, giảm bao nhiêu phần trăm?",
+     "Nỗi lo nằm ở ngành nào?",
+     "Ngành đó chiếm bao nhiêu trong VN-Index?",
+     "DXY, lợi suất Mỹ đi cùng chiều hay ngược chiều?",
+     "Đợi phiên Việt Nam mở cửa rồi mới đánh giá."
+    ]
+   ],
+   [
+    "p",
+    "Bảng giá các chỉ số Mỹ, Nhật, Hàn, vàng, dầu, USD cập nhật mỗi ngày tại <a href=\"/the-gioi-hang-hoa.html\">trang thế giới và hàng hóa</a>."
+   ],
+   [
+    "p",
+    "<small>Nguồn: giá đóng cửa chỉ số từ dữ liệu chungkhoanhuynguyen.com (20/11/2025, 4–6/11 và 20/11/2026), em tự tính phần trăm; Nhà Đầu Tư 12/11/2026 (Nasdaq 100 mất khoảng 2.500 tỷ USD). Giờ giao dịch là giờ phiên chính, có thể thay đổi theo lịch nghỉ từng nước. Bài chia sẻ kiến thức, không phải khuyến nghị.</small>"
+   ]
+  ],
+  "faq": [
+   [
+    "Chỉ số chứng khoán thế giới quan trọng nhất là gì?",
+    "Hay được nhắc nhất là S&P 500, Dow Jones, Nasdaq (Mỹ), Nikkei 225 (Nhật), KOSPI (Hàn), ngoài ra còn Hang Seng (Hồng Kông), Shanghai Composite (Trung Quốc), DAX (Đức)."
+   ],
+   [
+    "Chứng khoán Mỹ mở cửa lúc mấy giờ Việt Nam?",
+    "Phiên chính từ 21:30 đến 4:00 sáng hôm sau theo giờ Việt Nam khi Mỹ dùng giờ mùa đông; mùa hè sớm hơn 1 tiếng (20:30 – 3:00)."
+   ],
+   [
+    "Chứng khoán Mỹ giảm thì VN-Index có giảm không?",
+    "Thường có ảnh hưởng tâm lý nhưng không cố định. Phiên 6/11/2026, sau khi Nasdaq giảm 5,52%, VN-Index chỉ giảm 0,88% trong khi Nikkei, KOSPI giảm khoảng 6%."
+   ]
+  ],
+  "rel": [
+   "chung-khoan-my-giam-vn-index-co-giam-theo",
+   "xuat-khau-dien-tu-2026-bong-bong-ai",
+   "chi-so-dxy-la-gi",
+   "fed-tang-giam-lai-suat-tac-dong",
+   "vn-index-la-gi"
   ]
  }
 ]
