@@ -1,50 +1,40 @@
 {
  "key": "STB_THE",
- "title": "stb the",
+ "title": "stb the ke chuyen",
  "scenes": [
   {
    "id": "S1",
-   "say": "Sacombank bớt bốn nghìn hai trăm chín mươi mốt nhân viên trong chín tháng, lợi nhuận sau thuế lại giảm hơn một nửa. Chuyện gì đây?",
+   "say": "Sacombank giảm bốn nghìn hai trăm chín mươi mốt nhân viên chỉ trong chín tháng. Vậy mà lợi nhuận lại mất hơn một nửa, chuyện gì đã xảy ra?",
    "hold": 0.3
   },
   {
    "id": "S2",
-   "say": "Báo cáo quý ba: Sacombank còn mười một nghìn năm trăm sáu mươi nhân viên, giảm bốn nghìn hai trăm chín mươi mốt người, hai mươi bảy phần trăm. Chi phí trên thu nhập giảm từ bốn mươi sáu phẩy một xuống ba mươi hai phẩy sáu.",
+   "say": "Đầu năm, Sacombank có gần mười lăm nghìn chín trăm người. Tới cuối tháng chín chỉ còn mười một nghìn năm trăm sáu mươi, cứ bốn người thì gần một người đã rời đi. Bộ máy gọn hẳn: chi phí nhân viên giảm hai mươi hai phần trăm, chi phí trên thu nhập từ bốn mươi sáu phẩy một xuống ba mươi hai phẩy sáu phần trăm.",
    "hold": 0.3
   },
   {
    "id": "S3",
-   "say": "Lãi sau thuế chín tháng còn bốn nghìn hai trăm bảy mươi tám tỷ, giảm năm mươi phẩy tám phần trăm, vì dự phòng tăng gần sáu lần, lên mười hai nghìn tám trăm bốn mươi tám tỷ. Nợ xấu bảy phẩy ba ba phần trăm, cổ phiếu STB giảm chín phần trăm từ đỉnh.",
+   "say": "Ai cũng nghĩ cắt được chi phí thì lãi phải tăng. Nhưng lãi sau thuế chín tháng chỉ còn bốn nghìn hai trăm bảy mươi tám tỷ, giảm năm mươi phẩy tám phần trăm. Nợ xấu leo lên bảy phẩy ba ba phần trăm, cổ phiếu cũng lùi chín phần trăm từ đỉnh.",
    "hold": 0.3
   },
   {
    "id": "S4",
-   "say": "Nhưng thu nhập không yếu: tổng thu nhập tăng mười bốn phẩy một phần trăm. Lãi rớt vì dự phòng tăng gần sáu lần, và lãi thuần giảm mười bảy phẩy tám phần trăm.",
+   "say": "Vậy tiền đi đâu? Thu nhập không hề yếu: tổng thu nhập vẫn tăng mười bốn phẩy một phần trăm. Phần lớn được trích ra dự phòng, từ hai nghìn một trăm năm mươi hai lên mười hai nghìn tám trăm bốn mươi tám tỷ, gấp gần sáu lần. Nói dễ hiểu, Sacombank đang dùng lãi để gánh nợ xấu.",
    "hold": 0.3
   },
   {
    "id": "S5",
-   "say": "Về kỹ thuật, đường trung bình hai mươi cắt xuống đường năm mươi ngày tám tháng mười. Cản gần bảy mươi hai đến bảy mươi ba, hỗ trợ sáu mươi lăm phẩy một đến sáu mươi sáu. Ngày hai mươi, khối lượng cao nhất mười lăm phiên.",
-   "hold": 0.3
-  },
-  {
-   "id": "S5A",
-   "say": "Chi phí hoạt động giảm mười chín phẩy ba phần trăm. Chi phí trên thu nhập còn ba mươi hai phẩy sáu, mục tiêu hai mươi bảy. Lãi dịch vụ gấp ba phẩy năm lần.",
-   "hold": 0.3
-  },
-  {
-   "id": "S5B",
-   "say": "Nợ xấu tăng lên bảy phẩy ba ba phần trăm, đầu năm sáu phẩy bốn một. Dự phòng gấp gần sáu lần. Cổ phiếu giảm chín phần trăm từ đỉnh.",
+   "say": "Trên biểu đồ, đường trung bình hai mươi đã cắt xuống đường năm mươi từ ngày tám tháng mười. Giá đang kẹt giữa vùng cản bảy mươi hai đến bảy mươi ba và hỗ trợ sáu mươi lăm phẩy một đến sáu mươi sáu.",
    "hold": 0.3
   },
   {
    "id": "S5C",
-   "say": "Góc nhìn của mình: chờ ba tín hiệu. Một, nợ xấu ngừng tăng. Hai, giá vượt được cản bảy mươi ba. Ba, có hướng xử lý ba mươi hai phẩy năm phần trăm cổ phần.",
+   "say": "Câu chuyện vẫn còn bỏ ngỏ, vì Ngân hàng Nhà nước vừa khởi động lại việc xử lý ba mươi hai phẩy năm phần trăm cổ phần. Góc nhìn của em là chờ ba tín hiệu. Một, nợ xấu ngừng tăng. Hai, giá vượt được vùng cản bảy mươi ba. Ba, có hướng xử lý rõ cho số cổ phần đó.",
    "hold": 0.3
   },
   {
    "id": "S6",
-   "say": "Bớt bốn nghìn nhân viên thì chín tháng là làm được. Còn nợ xấu thì chưa bớt. Anh chị thấy nhân sự hay nợ xấu, cái nào khó bớt hơn?",
+   "say": "Cắt bốn nghìn người, chín tháng là xong. Còn gánh nợ xấu thì chưa biết bao lâu. Anh chị nghĩ Sacombank đang dọn nhà để bật lên, hay mới chỉ bắt đầu dọn?",
    "hold": 1.2
   }
  ]

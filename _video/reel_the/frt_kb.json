@@ -1,50 +1,40 @@
 {
  "key": "FRT_THE",
- "title": "frt the",
+ "title": "frt the ke chuyen",
  "scenes": [
   {
    "id": "S1",
-   "say": "Theo Vietcap, chuỗi nhà thuốc Long Châu định giá hơn bốn mươi bốn nghìn tỷ, FPT Shop hơn hai nghìn bốn trăm tỷ. Gấp mười tám lần?",
+   "say": "Trong cùng một nhà, cậu em bán thuốc được định giá gấp mười tám lần ông anh bán điện thoại. Chuyện gì đang xảy ra ở FPT Retail?",
    "hold": 0.3
   },
   {
    "id": "S2",
-   "say": "Báo cáo ngày mười bảy tháng mười một của Vietcap: Long Châu bốn mươi bốn nghìn bốn trăm hai mươi chín tỷ, FPT Shop hai nghìn bốn trăm hai mươi bảy tỷ. Gấp khoảng mười tám phẩy ba lần.",
+   "say": "FPT Retail có hai chuỗi: FPT Shop bán điện thoại, máy tính, và Long Châu bán thuốc. Báo cáo Vietcap ngày mười bảy tháng mười một ước Long Châu bốn mươi bốn nghìn bốn trăm hai mươi chín tỷ, FPT Shop chỉ hai nghìn bốn trăm hai mươi bảy tỷ. Cậu em nặng ký gấp khoảng mười tám phẩy ba lần ông anh.",
    "hold": 0.3
   },
   {
    "id": "S3",
-   "say": "Phần mười một phẩy không ba phần trăm của nhân viên, ước khoảng bốn nghìn chín trăm tỷ, gấp hơn hai lần cả FPT Shop. FPT Retail nắm bảy mươi lăm phẩy chín bảy phần trăm, Creador khoảng mười ba, cổ phiếu FRT giảm ba phần trăm từ đỉnh.",
+   "say": "Bất ngờ hơn, nhóm nhân viên đang nắm mười một phẩy không ba phần trăm Long Châu. Phần này ước khoảng bốn nghìn chín trăm tỷ, gấp hơn hai lần cả chuỗi FPT Shop. FPT Retail nắm bảy mươi lăm phẩy chín bảy phần trăm, quỹ Creador khoảng mười ba phần trăm. Còn cổ phiếu FRT chỉ lùi ba phần trăm từ đỉnh.",
    "hold": 0.3
   },
   {
    "id": "S4",
-   "say": "Đây là ước tính của Vietcap, không phải giá giao dịch. Nếu ESOP năm phần trăm chia năm đợt, FPT Retail có thể còn khoảng bảy mươi hai phần trăm năm hai nghìn không trăm ba mươi.",
+   "say": "Nhưng đây là định giá ước tính của Vietcap, không phải giá giao dịch. Kế hoạch ESOP thêm năm phần trăm vốn, chia năm đợt, mỗi năm một phần trăm. Tới năm hai nghìn không trăm ba mươi, phần của FPT Retail có thể lùi về khoảng bảy mươi hai phần trăm.",
    "hold": 0.3
   },
   {
    "id": "S5",
-   "say": "Về kỹ thuật, đường trung bình hai mươi cắt lên đường năm mươi ngày mười một tháng tám. Cản gần một trăm năm mươi hai đến một trăm năm mươi bốn phẩy tám, hỗ trợ một trăm ba mươi tám đến một trăm bốn mươi. Ngày hai tháng mười một, khối lượng cao nhất mười lăm phiên.",
-   "hold": 0.3
-  },
-  {
-   "id": "S5A",
-   "say": "Vietcap nâng Long Châu bốn phần trăm so với tháng chín. FPT Shop ba mươi bốn phần trăm. Và đường trung bình hai mươi nằm trên đường năm mươi.",
-   "hold": 0.3
-  },
-  {
-   "id": "S5B",
-   "say": "Chỉ là ước tính, không phải giá giao dịch. ESOP năm phần trăm làm loãng dần. Giá đang gặp cản một trăm năm mươi hai.",
+   "say": "Trên biểu đồ, đường trung bình hai mươi nằm trên đường năm mươi từ ngày mười một tháng tám. Giá đang sát vùng cản một trăm năm mươi hai đến một trăm năm mươi bốn phẩy tám, hỗ trợ một trăm ba mươi tám đến một trăm bốn mươi.",
    "hold": 0.3
   },
   {
    "id": "S5C",
-   "say": "Góc nhìn của mình: chờ ba tín hiệu. Một, doanh thu quý bốn kiểm chứng định giá. Hai, ESOP đúng lộ trình. Ba, giá vượt cản một trăm năm mươi bốn phẩy tám.",
+   "say": "Câu hỏi còn bỏ ngỏ là con số trên giấy có được doanh thu thật kiểm chứng hay không. Góc nhìn của em là chờ ba tín hiệu. Một, doanh thu quý bốn của Long Châu. Hai, ESOP đi đúng lộ trình. Ba, giá vượt được cản một trăm năm mươi bốn phẩy tám.",
    "hold": 0.3
   },
   {
    "id": "S6",
-   "say": "Nhà thuốc hơn bốn mươi bốn nghìn tỷ. Cửa hàng công nghệ hơn hai nghìn bốn trăm tỷ. Anh chị ghé nhà thuốc hay cửa hàng điện thoại nhiều hơn?",
+   "say": "Nhà thuốc hơn bốn mươi bốn nghìn tỷ. Cửa hàng điện thoại hơn hai nghìn bốn trăm tỷ. Anh chị nghĩ cầm FRT là cầm chuỗi điện thoại, hay cầm nhà thuốc?",
    "hold": 1.2
   }
  ]

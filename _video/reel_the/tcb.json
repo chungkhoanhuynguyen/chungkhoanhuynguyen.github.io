@@ -32,19 +32,19 @@
    },
    "phude": [
     [
-     "Techcombank huy động",
-     "**7.500 tỷ** trái phiếu",
-     "trong **một tuần**"
+     "Chỉ **7 ngày**,",
+     "Techcombank vay **7.500 tỷ**,",
+     "trả lãi gần **9%/năm**"
     ],
     [
-     "**Lãi gần 9%/năm?**"
+     "Vì sao một ngân hàng lớn **lại vội như vậy?**"
     ]
    ]
   },
   {
    "id": "S2",
    "kieu": "tin",
-   "chuong": "— HUY ĐỘNG TRÁI PHIẾU —",
+   "chuong": "— BẢY NGÀY, BA LÔ —",
    "tin": {
     "moc": "MEKONG ASEAN · 20/11",
     "t": "Techcombank huy động 7.500 tỷ trái phiếu trong một tuần",
@@ -95,26 +95,30 @@
     "b": "KỲ HẠN 36 THÁNG",
     "do": 1,
     "at": [
-     1,
+     2,
      0.7
     ]
    },
    "phude": [
     [
-     "Ngày **12, 17 và 18/11**:",
-     "ba lô trái phiếu riêng lẻ",
+     "Techcombank liên tiếp phát hành **3 lô**",
+     "trái phiếu riêng lẻ,",
      "mỗi lô **2.500 tỷ**"
     ],
     [
-     "Kỳ hạn **36 tháng**,",
-     "vốn dùng để **cho vay**"
+     "Lô **12/11** lãi **9%**,",
+     "hai lô **17/11** và **18/11** lãi **8,9%**"
+    ],
+    [
+     "Kỳ hạn **3 năm**,",
+     "tiền dùng để **cho vay**"
     ]
    ]
   },
   {
    "id": "S3",
    "kieu": "so",
-   "chuong": "— CON SỐ THẬT —",
+   "chuong": "— CÚ BẤT NGỜ —",
    "the": [
     {
      "nhan": "HUY ĐỘNG TRONG 1 TUẦN",
@@ -126,7 +130,7 @@
      "h": "400px",
      "at": [
       0,
-      0.04
+      0.3
      ]
     },
     {
@@ -141,7 +145,7 @@
      "w": 462,
      "at": [
       1,
-      0.1
+      0.3
      ],
      "tien": ""
     },
@@ -157,7 +161,7 @@
      "w": 462,
      "at": [
       1,
-      0.4
+      0.7
      ],
      "tien": ""
     },
@@ -169,8 +173,8 @@
      "y": 1080,
      "h": "320px",
      "at": [
-      1,
-      0.7
+      2,
+      0.4
      ],
      "tien": "-",
      "hau": "%",
@@ -183,32 +187,34 @@
     "b": "LÃI CỐ ĐỊNH 8,9–9%",
     "do": 1,
     "at": [
-     0,
+     2,
      0.9
     ]
    },
    "phude": [
     [
-     "Ba lô, tổng **7.500 tỷ**,",
-     "kỳ hạn **36 tháng**"
+     "Ngân hàng đi vay gần **9%** để **cho vay lại**"
     ],
     [
-     "Lô 12/11 lãi **9%**, hai lô sau **8,9%**",
-     "TCB giảm **8%** từ đỉnh"
+     "Lô sau thấp hơn một chút:",
+     "**9%** xuống **8,9%**"
+    ],
+    [
+     "Cổ phiếu TCB lùi **8%** từ đỉnh **21/10**"
     ]
    ]
   },
   {
    "id": "S4",
    "kieu": "ds",
-   "chuong": "— BỐI CẢNH: VỐN ĐẮT —",
+   "chuong": "— VÌ SAO PHẢI VỘI —",
    "muc": [
     {
      "so": "VỐN CHO VAY",
      "t": "Nguồn vốn phục vụ cho vay",
      "at": [
       0,
-      0.3
+      0.4
      ],
      "co": 84
     },
@@ -216,8 +222,8 @@
      "so": "LÃI VAY >11%",
      "t": "Bình quân tháng 10, VietnamFinance",
      "at": [
-      0,
-      0.85
+      1,
+      0.4
      ],
      "co": 84
     },
@@ -225,8 +231,8 @@
      "so": "NỢ XẤU 2,3%",
      "t": "Toàn ngành 9T, MarketTimes",
      "at": [
-      1,
-      0.85
+      2,
+      0.5
      ],
      "co": 84,
      "mau": "#c9533e"
@@ -236,18 +242,20 @@
     "a": "VỐN ĐẮT",
     "b": "ÁP LỰC CHƯA HẠ NHIỆT",
     "at": [
-     1,
+     2,
      0.9
     ]
    },
    "phude": [
     [
-     "Số tiền dùng để **cho vay**,",
-     "lãi vay bình quân **>11%**/năm"
+     "Cuộc đua **giữ tiền** giữa các ngân hàng",
+     "chưa hạ nhiệt"
     ],
     [
-     "Nợ xấu toàn ngành 9 tháng",
-     "lên **2,3%**"
+     "Lãi cho vay bình quân đã **vượt 11%/năm**"
+    ],
+    [
+     "Nợ xấu toàn ngành 9 tháng **2,3%**"
     ]
    ]
   },
@@ -282,8 +290,8 @@
      "dy": 170,
      "chu": "20/11: giá hồi lên 21,2",
      "at": [
-      2,
-      0.3
+      1,
+      0.7
      ]
     }
    ],
@@ -295,7 +303,7 @@
      "txt": "CẢN 21,8–22,8",
      "at": [
       1,
-      0.0
+      0.15
      ]
     },
     {
@@ -315,118 +323,18 @@
     "b": "HỖ TRỢ 20,15–20,6",
     "do": 1,
     "at": [
-     2,
-     0.6
+     1,
+     0.92
     ]
    },
    "phude": [
     [
-     "Về kỹ thuật, **MA20 cắt xuống MA50**",
-     "ngày **19/11**"
+     "Trên biểu đồ,",
+     "**MA20 cắt xuống MA50** ngày **19/11**"
     ],
     [
-     "Cản gần **21,8–22,8**",
-     "hỗ trợ **20,15–20,6**"
-    ],
-    [
-     "Ngày **20/11**: giá hồi lên",
-     "**21,2**"
-    ]
-   ]
-  },
-  {
-   "id": "S5A",
-   "kieu": "lk",
-   "chuong": "— HAI PHE —",
-   "tieude": "PHE LẠC QUAN NHÌN THẤY",
-   "mau": "#3fa877",
-   "muc": [
-    {
-     "t": "Huy động 7.500 tỷ trong 1 tuần",
-     "s": "Ba lô, kỳ hạn 36 tháng",
-     "at": [
-      0,
-      0.0
-     ]
-    },
-    {
-     "t": "Lãi suất lô sau thấp hơn",
-     "s": "8,9% so với 9%",
-     "at": [
-      1,
-      0.0
-     ]
-    },
-    {
-     "t": "Giá hồi lên ngày 20/11",
-     "s": "Đóng cửa 21.200 đ",
-     "at": [
-      2,
-      0.0
-     ]
-    }
-   ],
-   "phude": [
-    [
-     "Huy động **7.500 tỷ** trong 1 tuần"
-    ],
-    [
-     "Lô sau lãi **8,9%**, thấp hơn **9%**"
-    ],
-    [
-     "Giá hồi lên **21.200 đ**"
-    ]
-   ]
-  },
-  {
-   "id": "S5B",
-   "kieu": "lk",
-   "chuong": "— HAI PHE —",
-   "tieude": "PHE THẬN TRỌNG NHÌN THẤY",
-   "mau": "#c9533e",
-   "muc": [
-    {
-     "t": "Chi phí vốn gần 9%/năm",
-     "s": "Trái phiếu kỳ hạn 36 tháng",
-     "at": [
-      0,
-      0.0
-     ]
-    },
-    {
-     "t": "Nợ xấu ngành 2,3%",
-     "s": "9 tháng 2026",
-     "at": [
-      1,
-      0.0
-     ]
-    },
-    {
-     "t": "MA20 cắt xuống MA50",
-     "s": "Ngày 19/11",
-     "at": [
-      2,
-      0.0
-     ]
-    }
-   ],
-   "chot": {
-    "a": "HAI PHE ĐỀU CÓ LÝ",
-    "b": "CHI PHÍ VỐN LÀ ẨN SỐ",
-    "at": [
-     2,
-     0.5
-    ]
-   },
-   "phude": [
-    [
-     "Chi phí vốn **gần 9%**/năm"
-    ],
-    [
-     "Nợ xấu ngành **2,3%**"
-    ],
-    [
-     "**MA20** cắt xuống **MA50**"
+     "Giá hồi về **21,2**,",
+     "giữa cản **21,8–22,8** và hỗ trợ **20,15–20,6**"
     ]
    ]
   },
@@ -441,7 +349,7 @@
      "t": "Lãi suất huy động hạ nhiệt",
      "s": "Giảm áp lực chi phí vốn",
      "at": [
-      1,
+      2,
       0.0
      ]
     },
@@ -449,7 +357,7 @@
      "t": "Giá vượt cản 22,8",
      "s": "Vùng cản 21,8–22,8",
      "at": [
-      2,
+      3,
       0.0
      ]
     },
@@ -457,7 +365,7 @@
      "t": "Nợ xấu ngành ngừng tăng",
      "s": "Báo cáo quý IV",
      "at": [
-      3,
+      4,
       0.0
      ]
     }
@@ -466,23 +374,27 @@
     "a": "VỐN RẺ HƠN",
     "b": "LỢI NHUẬN DỄ THỞ",
     "at": [
-     3,
-     0.5
+     4,
+     0.6
     ]
    },
    "phude": [
     [
-     "Góc nhìn của mình:",
+     "Còn bỏ ngỏ:",
+     "lãi huy động **neo cao bao lâu**"
+    ],
+    [
+     "Góc nhìn của em:",
      "chờ **3 tín hiệu**"
     ],
     [
-     "Lãi suất huy động **hạ nhiệt**"
+     "**Một**, lãi huy động hạ nhiệt"
     ],
     [
-     "Giá vượt cản **22,8**"
+     "**Hai**, giá vượt cản **22,8**"
     ],
     [
-     "**Nợ xấu** ngành ngừng tăng"
+     "**Ba**, nợ xấu ngành ngừng tăng"
     ]
    ]
   },
@@ -492,8 +404,8 @@
    "chuong": "— KẾT —",
    "the": [
     {
-     "nhan": "BA LÔ",
-     "t": "TRONG MỘT TUẦN",
+     "nhan": "NGÂN HÀNG",
+     "t": "VAY GẦN 9%",
      "co": 70,
      "at": [
       0,
@@ -501,9 +413,9 @@
      ]
     },
     {
-     "nhan": "LÃI SUẤT",
-     "t": "KHÁC TỪNG LÔ",
-     "co": 64,
+     "nhan": "ANH CHỊ GỬI",
+     "t": "ĐƯỢC BAO NHIÊU?",
+     "co": 58,
      "mau": "#c9533e",
      "at": [
       1,
@@ -512,7 +424,7 @@
     }
    ],
    "hoi": {
-    "t": "Vốn rẻ hay vốn **dễ huy động**, cái nào quan trọng hơn?",
+    "t": "Anh chị gửi tiết kiệm bao nhiêu %, thấy **9%** có hấp dẫn không?",
     "at": [
      2,
      0.0
@@ -520,16 +432,14 @@
    },
    "phude": [
     [
-     "**Ba lô** trái phiếu",
-     "trong một tuần"
+     "Ngân hàng chịu vay gần **9%**"
     ],
     [
-     "Lãi suất thì",
-     "**khác từng lô**"
+     "Còn tiền gửi của anh chị **được bao nhiêu?**"
     ],
     [
-     "Vốn rẻ hay vốn **dễ huy động**,",
-     "cái nào quan trọng hơn?"
+     "Anh chị gửi tiết kiệm bao nhiêu %,",
+     "thấy **9%** có hấp dẫn không?"
     ]
    ]
   },

@@ -32,19 +32,19 @@
    },
    "phude": [
     [
-     "Theo Vietcap: Long Châu",
-     "**44.429 tỷ**, FPT Shop",
-     "**2.427 tỷ**"
+     "Cùng một nhà,",
+     "cậu em **bán thuốc** được định giá gấp **18 lần**",
+     "ông anh **bán điện thoại**"
     ],
     [
-     "**Gấp 18 lần?**"
+     "Chuyện gì đang xảy ra ở **FPT Retail?**"
     ]
    ]
   },
   {
    "id": "S2",
    "kieu": "tin",
-   "chuong": "— ĐỊNH GIÁ LỆCH —",
+   "chuong": "— HAI ANH EM —",
    "tin": {
     "moc": "CAFEF · 19/11",
     "t": "Long Châu 44.429 tỷ, FPT Shop 2.427 tỷ",
@@ -72,8 +72,8 @@
       "dy": -100,
       "chu": "21/10: 152.000",
       "at": [
-       0,
-       0.9
+       1,
+       0.5
       ]
      },
      {
@@ -83,8 +83,8 @@
       "dy": 130,
       "chu": "20/11: 148.000",
       "at": [
-       1,
-       0.4
+       2,
+       0.3
       ],
       "vang": 1
      }
@@ -95,25 +95,29 @@
     "b": "GẤP 18,3 LẦN FPT SHOP",
     "do": 1,
     "at": [
-     1,
+     2,
      0.7
     ]
    },
    "phude": [
     [
-     "Báo cáo Vietcap **17/11**:",
-     "Long Châu **44.429 tỷ**",
-     "FPT Shop **2.427 tỷ**"
+     "FPT Retail có 2 chuỗi:",
+     "**FPT Shop** bán điện thoại, máy tính,",
+     "và **Long Châu** bán thuốc"
     ],
     [
-     "Gấp khoảng **18,3 lần**"
+     "Vietcap 17/11 ước Long Châu **44.429 tỷ**,",
+     "FPT Shop chỉ **2.427 tỷ**"
+    ],
+    [
+     "Cậu em nặng ký gấp khoảng **18,3 lần** ông anh"
     ]
    ]
   },
   {
    "id": "S3",
    "kieu": "so",
-   "chuong": "— CON SỐ THẬT —",
+   "chuong": "— CÚ BẤT NGỜ —",
    "the": [
     {
      "nhan": "NHÓM NHÂN VIÊN NẮM 11,03% LONG CHÂU",
@@ -124,8 +128,8 @@
      "y": 300,
      "h": "400px",
      "at": [
-      0,
-      0.04
+      1,
+      0.1
      ]
     },
     {
@@ -139,8 +143,8 @@
      "x": 64,
      "w": 462,
      "at": [
-      1,
-      0.1
+      2,
+      0.3
      ],
      "tien": ""
     },
@@ -155,8 +159,8 @@
      "x": 554,
      "w": 462,
      "at": [
-      1,
-      0.4
+      2,
+      0.8
      ],
      "tien": ""
     },
@@ -168,8 +172,8 @@
      "y": 1080,
      "h": "320px",
      "at": [
-      1,
-      0.7
+      3,
+      0.4
      ],
      "tien": "-",
      "hau": "%",
@@ -182,26 +186,32 @@
     "b": "GẤP 2 LẦN CẢ FPT SHOP",
     "do": 1,
     "at": [
-     0,
+     1,
      0.9
     ]
    },
    "phude": [
     [
-     "Phần **11,03%** của nhân viên",
-     "khoảng **4.901 tỷ**",
-     "gấp **hơn 2 lần** cả FPT Shop"
+     "Bất ngờ hơn:",
+     "nhóm nhân viên đang nắm **11,03%** Long Châu"
     ],
     [
-     "FPT Retail **75,97%**, Creador **13%**",
-     "FRT giảm **3%** từ đỉnh"
+     "Ước khoảng **4.901 tỷ**,",
+     "gấp **hơn 2 lần** cả chuỗi FPT Shop"
+    ],
+    [
+     "FPT Retail nắm **75,97%**,",
+     "quỹ Creador khoảng **13%**"
+    ],
+    [
+     "Cổ phiếu FRT chỉ lùi **3%** từ đỉnh"
     ]
    ]
   },
   {
    "id": "S4",
    "kieu": "ds",
-   "chuong": "— ĐỊNH GIÁ LÀ ƯỚC TÍNH —",
+   "chuong": "— ĐỌC KỸ CON SỐ —",
    "muc": [
     {
      "so": "ƯỚC TÍNH",
@@ -216,7 +226,7 @@
      "t": "Giả định 5 đợt, mỗi năm 1%",
      "at": [
       1,
-      0.45
+      0.4
      ],
      "co": 84
     },
@@ -224,8 +234,8 @@
      "so": "RETAIL ~72%",
      "t": "Có thể giảm vào năm 2030",
      "at": [
-      1,
-      0.85
+      2,
+      0.4
      ],
      "co": 84,
      "mau": "#c9533e"
@@ -235,18 +245,22 @@
     "a": "ĐỊNH GIÁ LÀ GIẢ ĐỊNH",
     "b": "ESOP LÀM LOÃNG DẦN",
     "at": [
-     1,
+     2,
      0.9
     ]
    },
    "phude": [
     [
-     "Đây là **ước tính** của Vietcap,",
+     "Nhưng đây là **ước tính** của Vietcap,",
      "không phải giá giao dịch"
     ],
     [
-     "ESOP **5%** vốn, 5 đợt: FPT Retail",
-     "có thể còn khoảng **72%** năm 2030"
+     "ESOP thêm **5% vốn**,",
+     "chia **5 đợt**, mỗi năm **1%**"
+    ],
+    [
+     "Tới **2030**,",
+     "phần của FPT Retail có thể lùi về khoảng **72%**"
     ]
    ]
   },
@@ -281,8 +295,8 @@
      "dy": 170,
      "chu": "2/11: KL cao nhất 15 phiên",
      "at": [
-      2,
-      0.3
+      1,
+      0.7
      ]
     }
    ],
@@ -294,7 +308,7 @@
      "txt": "CẢN 152–154,8",
      "at": [
       1,
-      0.0
+      0.15
      ]
     },
     {
@@ -314,118 +328,18 @@
     "b": "HỖ TRỢ 138–140",
     "do": 1,
     "at": [
-     2,
-     0.6
+     1,
+     0.92
     ]
    },
    "phude": [
     [
-     "Về kỹ thuật, **MA20 cắt lên MA50**",
-     "ngày **11/8**"
+     "Trên biểu đồ,",
+     "**MA20 nằm trên MA50** từ ngày **11/8**"
     ],
     [
-     "Cản gần **152–154,8**",
+     "Giá sát cản **152–154,8**,",
      "hỗ trợ **138–140**"
-    ],
-    [
-     "Ngày **2/11**: khối lượng",
-     "cao nhất 15 phiên"
-    ]
-   ]
-  },
-  {
-   "id": "S5A",
-   "kieu": "lk",
-   "chuong": "— HAI PHE —",
-   "tieude": "PHE LẠC QUAN NHÌN THẤY",
-   "mau": "#3fa877",
-   "muc": [
-    {
-     "t": "Vietcap nâng Long Châu +4%",
-     "s": "So với báo cáo tháng 9",
-     "at": [
-      0,
-      0.0
-     ]
-    },
-    {
-     "t": "Vietcap nâng FPT Shop +34%",
-     "s": "Cũng được nâng định giá",
-     "at": [
-      1,
-      0.0
-     ]
-    },
-    {
-     "t": "MA20 trên MA50",
-     "s": "Từ ngày 11/8",
-     "at": [
-      2,
-      0.0
-     ]
-    }
-   ],
-   "phude": [
-    [
-     "Long Châu nâng **+4%**"
-    ],
-    [
-     "FPT Shop nâng **+34%**"
-    ],
-    [
-     "**MA20** trên **MA50** từ 11/8"
-    ]
-   ]
-  },
-  {
-   "id": "S5B",
-   "kieu": "lk",
-   "chuong": "— HAI PHE —",
-   "tieude": "PHE THẬN TRỌNG NHÌN THẤY",
-   "mau": "#c9533e",
-   "muc": [
-    {
-     "t": "Chỉ là ước tính",
-     "s": "Không phải giá giao dịch",
-     "at": [
-      0,
-      0.0
-     ]
-    },
-    {
-     "t": "ESOP 5% vốn",
-     "s": "Làm loãng dần FPT Retail",
-     "at": [
-      1,
-      0.0
-     ]
-    },
-    {
-     "t": "Cản 152–154,8",
-     "s": "Đỉnh 21/10: 152.000 đ",
-     "at": [
-      2,
-      0.0
-     ]
-    }
-   ],
-   "chot": {
-    "a": "HAI PHE ĐỀU CÓ LÝ",
-    "b": "SỐ THẬT MỚI KIỂM CHỨNG",
-    "at": [
-     2,
-     0.5
-    ]
-   },
-   "phude": [
-    [
-     "Chỉ là **ước tính**"
-    ],
-    [
-     "**ESOP** 5% làm loãng dần"
-    ],
-    [
-     "Cản **152–154,8**, đỉnh 21/10"
     ]
    ]
   },
@@ -440,7 +354,7 @@
      "t": "Doanh thu Long Châu quý IV",
      "s": "Kiểm chứng định giá",
      "at": [
-      1,
+      2,
       0.0
      ]
     },
@@ -448,7 +362,7 @@
      "t": "ESOP đúng lộ trình",
      "s": "Mỗi năm 1% vốn",
      "at": [
-      2,
+      3,
       0.0
      ]
     },
@@ -456,7 +370,7 @@
      "t": "Giá vượt cản 154,8",
      "s": "Vùng cản 152–154,8",
      "at": [
-      3,
+      4,
       0.0
      ]
     }
@@ -465,23 +379,28 @@
     "a": "ĐỊNH GIÁ CẦN SỐ THẬT",
     "b": "KHÔNG CHỈ TÊN CHUỖI",
     "at": [
-     3,
-     0.5
+     4,
+     0.6
     ]
    },
    "phude": [
     [
-     "Góc nhìn của mình:",
+     "Còn bỏ ngỏ:",
+     "con số trên giấy có được **doanh thu thật**",
+     "kiểm chứng không"
+    ],
+    [
+     "Góc nhìn của em:",
      "chờ **3 tín hiệu**"
     ],
     [
-     "**Doanh thu** Long Châu quý bốn"
+     "**Một**, doanh thu quý 4 của Long Châu"
     ],
     [
-     "ESOP đúng **lộ trình**"
+     "**Hai**, ESOP đúng lộ trình"
     ],
     [
-     "Giá vượt cản **154,8**"
+     "**Ba**, giá vượt cản **154,8**"
     ]
    ]
   },
@@ -511,7 +430,7 @@
     }
    ],
    "hoi": {
-    "t": "Nhà thuốc hay **cửa hàng điện thoại**, anh chị ghé nhiều hơn?",
+    "t": "Cầm FRT là cầm **chuỗi điện thoại** hay **nhà thuốc**?",
     "at": [
      2,
      0.0
@@ -519,14 +438,13 @@
    },
    "phude": [
     [
-     "Nhà thuốc **44.429 tỷ**"
+     "Nhà thuốc hơn **44.000 tỷ**"
     ],
     [
-     "Cửa hàng công nghệ **2.427 tỷ**"
+     "Cửa hàng điện thoại hơn **2.400 tỷ**"
     ],
     [
-     "Nhà thuốc hay **cửa hàng điện thoại**,",
-     "anh chị ghé nhiều hơn?"
+     "Cầm FRT là cầm **chuỗi điện thoại** hay **nhà thuốc**?"
     ]
    ]
   },

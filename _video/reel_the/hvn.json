@@ -32,19 +32,18 @@
    },
    "phude": [
     [
-     "**34** hãng bay quốc tế",
-     "muốn **lùi** chuyển sang",
-     "sân bay Long Thành"
+     "Nhà mới sắp khánh thành,",
+     "**34 hãng bay** xin hẹn **năm sau** mới dọn về"
     ],
     [
-     "**Vì sao?**"
+     "Chuyện gì đang xảy ra với **Long Thành?**"
     ]
    ]
   },
   {
    "id": "S2",
    "kieu": "tin",
-   "chuong": "— XIN LÙI LỊCH —",
+   "chuong": "— XIN KHẤT —",
    "tin": {
     "moc": "VIETNAMBIZ · 19/11",
     "t": "34 hãng bay quốc tế muốn lùi giờ sang Long Thành",
@@ -95,25 +94,28 @@
     "b": "10 HÃNG: MÙA HÈ 2028+",
     "do": 1,
     "at": [
-     1,
-     0.7
+     2,
+     0.6
     ]
    },
    "phude": [
     [
-     "Báo cáo gửi Chính phủ: **34** hãng",
-     "muốn **lùi** chuyển từ Tân Sơn Nhất"
+     "Long Thành dự kiến khai thác thương mại từ **24/12**"
     ],
     [
-     "**24** hãng: mùa đông **2027**",
-     "**10** hãng: mùa hè **2028** hoặc muộn hơn"
+     "Nhưng **34 hãng** quốc tế muốn **lùi ngày chuyển**",
+     "khỏi Tân Sơn Nhất"
+    ],
+    [
+     "**24 hãng** xin từ mùa đông **2027**,",
+     "**10 hãng** từ mùa hè **2028** hoặc muộn hơn"
     ]
    ]
   },
   {
    "id": "S3",
    "kieu": "so",
-   "chuong": "— CON SỐ THẬT —",
+   "chuong": "— CÚ BẤT NGỜ —",
    "the": [
     {
      "nhan": "HÃNG MUỐN LÙI LỊCH",
@@ -125,7 +127,7 @@
      "h": "400px",
      "at": [
       0,
-      0.04
+      0.2
      ]
     },
     {
@@ -139,8 +141,8 @@
      "x": 64,
      "w": 462,
      "at": [
-      1,
-      0.1
+      2,
+      0.2
      ],
      "tien": ""
     },
@@ -155,8 +157,8 @@
      "x": 554,
      "w": 462,
      "at": [
-      1,
-      0.4
+      2,
+      0.6
      ],
      "tien": ""
     },
@@ -168,8 +170,8 @@
      "y": 1080,
      "h": "320px",
      "at": [
-      1,
-      0.7
+      3,
+      0.4
      ],
      "tien": "-",
      "hau": "%",
@@ -182,41 +184,38 @@
     "b": "CHUYẾN MỖI TUẦN",
     "do": 1,
     "at": [
-     1,
+     2,
      0.9
     ]
    },
    "phude": [
     [
-     "Các hãng cần **6–12 tháng** chuẩn bị",
-     "đường bay, tàu bay, tổ bay, bán vé"
+     "Lạ ở chỗ:",
+     "hãng nào cũng **khen hạ tầng mới**"
     ],
     [
-     "Giai đoạn đầu tối đa **366** chuyến/tuần",
-     "quốc tế **44**, HVN giảm **13%** từ đỉnh"
+     "Chỉ là họ cần **6–12 tháng** chuẩn bị"
+    ],
+    [
+     "Giai đoạn đầu tối đa **366 chuyến/tuần**,",
+     "quốc tế chỉ **44**"
+    ],
+    [
+     "Cổ phiếu HVN đã lùi **13%** từ đỉnh tháng 7"
     ]
    ]
   },
   {
    "id": "S4",
    "kieu": "ds",
-   "chuong": "— NHƯNG ĐỀU ỦNG HỘ —",
+   "chuong": "— VÌ SAO CHƯA VỘI —",
    "muc": [
     {
      "so": "ĐỀU ỦNG HỘ",
-     "t": "Hạ tầng hiện đại, công suất đủ",
+     "t": "Hạ tầng hiện đại",
      "at": [
       0,
       0.3
-     ],
-     "co": 84
-    },
-    {
-     "so": "226 CHUYẾN",
-     "t": "Mỗi tuần, tới tháng 3/2027",
-     "at": [
-      1,
-      0.45
      ],
      "co": 84
     },
@@ -225,28 +224,41 @@
      "t": "Để lập kế hoạch khai thác",
      "at": [
       1,
-      0.85
+      0.3
      ],
      "co": 72,
      "mau": "#c9533e"
+    },
+    {
+     "so": "226 CHUYẾN",
+     "t": "Mỗi tuần, tới tháng 3/2027",
+     "at": [
+      2,
+      0.4
+     ],
+     "co": 84
     }
    ],
    "chot": {
     "a": "ỦNG HỘ CHUYỂN",
     "b": "NHƯNG CẦN THÊM THỜI GIAN",
     "at": [
-     1,
+     2,
      0.9
     ]
    },
    "phude": [
     [
-     "Nhưng các hãng **đều ủng hộ** chuyển",
-     "vì hạ tầng hiện đại"
+     "Đổi sân bay với hãng bay **không đơn giản**",
+     "như dọn nhà"
     ],
     [
-     "Tới tháng **3/2027**:",
-     "**226** chuyến/tuần"
+     "Phải sắp lại **lịch bay**, nhân sự,",
+     "và **bán vé trước** nhiều tháng"
+    ],
+    [
+     "Tới tháng 3/2027,",
+     "dự kiến mới khoảng **226 chuyến/tuần**"
     ]
    ]
   },
@@ -281,8 +293,8 @@
      "dy": -170,
      "chu": "19/11: KL tăng vọt, giá 23,1",
      "at": [
-      2,
-      0.3
+      1,
+      0.7
      ]
     }
    ],
@@ -294,7 +306,7 @@
      "txt": "CẢN 23,1–23,4",
      "at": [
       1,
-      0.0
+      0.15
      ]
     },
     {
@@ -314,118 +326,18 @@
     "b": "HỖ TRỢ 20,15–20,25",
     "do": 1,
     "at": [
-     2,
-     0.6
+     1,
+     0.92
     ]
    },
    "phude": [
     [
-     "Về kỹ thuật, **MA20 cắt lên MA50**",
-     "ngày **10/11**"
+     "Trên biểu đồ,",
+     "**MA20 cắt lên MA50** ngày **10/11**"
     ],
     [
-     "Cản gần **23,1–23,4**",
-     "hỗ trợ **20,15–20,25**"
-    ],
-    [
-     "Ngày **19/11**: khối lượng",
-     "tăng vọt **hơn 5 lần** trung bình"
-    ]
-   ]
-  },
-  {
-   "id": "S5A",
-   "kieu": "lk",
-   "chuong": "— HAI PHE —",
-   "tieude": "PHE LẠC QUAN NHÌN THẤY",
-   "mau": "#3fa877",
-   "muc": [
-    {
-     "t": "Các hãng đều ủng hộ chuyển",
-     "s": "Hạ tầng hiện đại",
-     "at": [
-      0,
-      0.0
-     ]
-    },
-    {
-     "t": "Khối lượng 19/11 tăng vọt",
-     "s": "Hơn 5 lần trung bình",
-     "at": [
-      1,
-      0.0
-     ]
-    },
-    {
-     "t": "MA20 cắt lên MA50",
-     "s": "Ngày 10/11",
-     "at": [
-      2,
-      0.0
-     ]
-    }
-   ],
-   "phude": [
-    [
-     "Các hãng **đều ủng hộ** chuyển"
-    ],
-    [
-     "Khối lượng **19/11** tăng vọt"
-    ],
-    [
-     "**MA20** cắt lên **MA50**"
-    ]
-   ]
-  },
-  {
-   "id": "S5B",
-   "kieu": "lk",
-   "chuong": "— HAI PHE —",
-   "tieude": "PHE THẬN TRỌNG NHÌN THẤY",
-   "mau": "#c9533e",
-   "muc": [
-    {
-     "t": "34 hãng muốn lùi lịch",
-     "s": "24 hãng: mùa đông 2027",
-     "at": [
-      0,
-      0.0
-     ]
-    },
-    {
-     "t": "Quốc tế chỉ 44 chuyến/tuần",
-     "s": "Giai đoạn đầu",
-     "at": [
-      1,
-      0.0
-     ]
-    },
-    {
-     "t": "Giá HVN giảm 13% từ đỉnh",
-     "s": "Đỉnh 26.300 đ, nay 22.950 đ",
-     "at": [
-      2,
-      0.0
-     ]
-    }
-   ],
-   "chot": {
-    "a": "HAI PHE ĐỀU CÓ LÝ",
-    "b": "LỊCH CHUYỂN LÀ ẨN SỐ",
-    "at": [
-     2,
-     0.5
-    ]
-   },
-   "phude": [
-    [
-     "**34** hãng muốn lùi lịch"
-    ],
-    [
-     "Quốc tế chỉ **44** chuyến/tuần"
-    ],
-    [
-     "HVN giảm **13%** từ đỉnh"
+     "Giá thử cản **23,1–23,4**,",
+     "hỗ trợ quanh **20,2**"
     ]
    ]
   },
@@ -440,7 +352,7 @@
      "t": "Chốt lịch chuyển chính thức",
      "s": "Hãng và cơ quan quản lý",
      "at": [
-      1,
+      2,
       0.0
      ]
     },
@@ -448,7 +360,7 @@
      "t": "Giá vượt cản 23,4",
      "s": "Vùng cản 23,1–23,4",
      "at": [
-      2,
+      3,
       0.0
      ]
     },
@@ -456,7 +368,7 @@
      "t": "Số chuyến tăng dần",
      "s": "Từ mức 226 chuyến/tuần",
      "at": [
-      3,
+      4,
       0.0
      ]
     }
@@ -465,23 +377,27 @@
     "a": "CHỜ LỊCH CHUYỂN",
     "b": "CHỐT CHÍNH THỨC",
     "at": [
-     3,
-     0.5
+     4,
+     0.6
     ]
    },
    "phude": [
     [
-     "Góc nhìn của mình:",
+     "Còn bỏ ngỏ:",
+     "**lịch chuyển cuối cùng** được chốt ra sao"
+    ],
+    [
+     "Góc nhìn của em:",
      "chờ **3 tín hiệu**"
     ],
     [
-     "Chốt **lịch chuyển** chính thức"
+     "**Một**, lịch chuyển chốt chính thức"
     ],
     [
-     "Giá vượt cản **23,4**"
+     "**Hai**, giá vượt cản **23,4**"
     ],
     [
-     "Số chuyến **tăng dần**"
+     "**Ba**, số chuyến tăng dần đúng kế hoạch"
     ]
    ]
   },
@@ -491,8 +407,8 @@
    "chuong": "— KẾT —",
    "the": [
     {
-     "nhan": "LỊCH BAY",
-     "t": "XIN LÙI ĐƯỢC",
+     "nhan": "NHÀ MỚI",
+     "t": "XÂY XONG",
      "co": 70,
      "at": [
       0,
@@ -500,9 +416,9 @@
      ]
     },
     {
-     "nhan": "GIÁ CỔ PHIẾU",
-     "t": "KHÔNG XIN LÙI",
-     "co": 58,
+     "nhan": "KHÁCH",
+     "t": "HẸN NĂM SAU",
+     "co": 64,
      "mau": "#c9533e",
      "at": [
       1,
@@ -511,7 +427,7 @@
     }
    ],
    "hoi": {
-    "t": "Lịch chuyển sân bay hay **giá cổ phiếu**, cái nào khó đoán hơn?",
+    "t": "Bay **Long Thành ngay**, hay cũng xin **khất** như các hãng?",
     "at": [
      2,
      0.0
@@ -519,15 +435,14 @@
    },
    "phude": [
     [
-     "**Lịch bay** thì xin lùi được"
+     "Nhà mới **xây xong**"
     ],
     [
-     "**Giá cổ phiếu**",
-     "thì không xin lùi"
+     "Khách thì **hẹn năm sau** mới về ở"
     ],
     [
-     "Lịch chuyển hay **giá cổ phiếu**,",
-     "cái nào khó đoán hơn?"
+     "Anh chị muốn bay **Long Thành ngay**,",
+     "hay cũng xin **khất**?"
     ]
    ]
   },

@@ -1,50 +1,40 @@
 {
  "key": "HVN_THE",
- "title": "hvn the",
+ "title": "hvn the ke chuyen",
  "scenes": [
   {
    "id": "S1",
-   "say": "Ba mươi bốn hãng bay quốc tế muốn lùi thời điểm chuyển sang sân bay Long Thành. Vì sao?",
+   "say": "Nhà mới sắp khánh thành, vậy mà ba mươi tư hãng bay quốc tế xin hẹn năm sau mới dọn về. Chuyện gì đang xảy ra với sân bay Long Thành?",
    "hold": 0.3
   },
   {
    "id": "S2",
-   "say": "Theo báo cáo gửi Chính phủ, ba mươi bốn hãng muốn lùi chuyển từ Tân Sơn Nhất sang Long Thành. Hai mươi bốn hãng từ mùa đông hai nghìn không trăm hai mươi bảy, mười hãng từ mùa hè năm hai nghìn không trăm hai mươi tám hoặc muộn hơn.",
+   "say": "Sân bay Long Thành dự kiến khai thác thương mại từ ngày hai mươi tư tháng mười hai. Nhưng theo Vietnambiz, ba mươi tư hãng quốc tế muốn lùi ngày chuyển khỏi Tân Sơn Nhất. Hai mươi tư hãng xin từ lịch bay mùa đông năm hai nghìn không trăm hai mươi bảy, mười hãng xin từ mùa hè năm hai nghìn không trăm hai mươi tám hoặc muộn hơn.",
    "hold": 0.3
   },
   {
    "id": "S3",
-   "say": "Các hãng cần sáu đến mười hai tháng chuẩn bị đường bay, tàu bay, tổ bay và vé. Giai đoạn đầu Long Thành tối đa ba trăm sáu mươi sáu chuyến mỗi tuần, quốc tế bốn mươi bốn, cổ phiếu HVN giảm mười ba phần trăm từ đỉnh tháng bảy.",
+   "say": "Lạ ở chỗ, hãng nào cũng khen hạ tầng mới hiện đại. Chỉ là họ cần sáu đến mười hai tháng để chuẩn bị. Giai đoạn đầu, Long Thành tối đa ba trăm sáu mươi sáu chuyến mỗi tuần, quốc tế chỉ bốn mươi tư chuyến. Trong khi đó, cổ phiếu HVN đã lùi mười ba phần trăm từ đỉnh tháng bảy.",
    "hold": 0.3
   },
   {
    "id": "S4",
-   "say": "Nhưng các hãng đều ủng hộ chuyển vì hạ tầng hiện đại. Kế hoạch tới tháng ba năm hai nghìn không trăm hai mươi bảy là hai trăm hai mươi sáu chuyến mỗi tuần.",
+   "say": "Đổi sân bay với một hãng bay không đơn giản như dọn nhà. Phải sắp lại lịch bay, đường bay, nhân sự mặt đất, và bán vé trước nhiều tháng. Vì vậy tới tháng ba năm sau, Long Thành dự kiến mới đạt khoảng hai trăm hai mươi sáu chuyến mỗi tuần.",
    "hold": 0.3
   },
   {
    "id": "S5",
-   "say": "Về kỹ thuật, đường trung bình hai mươi cắt lên đường năm mươi ngày mười tháng mười một. Vùng hai mươi ba phẩy một đến hai mươi ba phẩy bốn là cản gần, vùng hai mươi phẩy mười lăm đến hai mươi phẩy hai lăm là hỗ trợ. Ngày mười chín, khối lượng tăng vọt hơn năm lần mức trung bình.",
-   "hold": 0.3
-  },
-  {
-   "id": "S5A",
-   "say": "Các hãng đều ủng hộ chuyển sang Long Thành. Khối lượng ngày mười chín tăng vọt. Và đường trung bình hai mươi cắt lên đường năm mươi.",
-   "hold": 0.3
-  },
-  {
-   "id": "S5B",
-   "say": "Ba mươi bốn hãng muốn lùi lịch. Quốc tế chỉ bốn mươi bốn chuyến mỗi tuần giai đoạn đầu. Cổ phiếu giảm mười ba phần trăm từ đỉnh.",
+   "say": "Trên biểu đồ, đường trung bình hai mươi vừa cắt lên đường năm mươi ngày mười tháng mười một. Giá đang thử vùng cản hai mươi ba phẩy một đến hai mươi ba phẩy tư, hỗ trợ quanh hai mươi phẩy hai.",
    "hold": 0.3
   },
   {
    "id": "S5C",
-   "say": "Góc nhìn của mình: chờ ba tín hiệu. Một, chốt lịch chuyển chính thức. Hai, giá vượt được cản hai mươi ba phẩy bốn. Ba, số chuyến khai thác tăng dần.",
+   "say": "Câu hỏi còn bỏ ngỏ là lịch chuyển cuối cùng sẽ được chốt ra sao. Góc nhìn của em là chờ ba tín hiệu. Một, lịch chuyển được chốt chính thức. Hai, giá vượt được cản hai mươi ba phẩy tư. Ba, số chuyến tăng dần đúng kế hoạch.",
    "hold": 0.3
   },
   {
    "id": "S6",
-   "say": "Lịch bay thì xin lùi được. Còn giá cổ phiếu thì không xin lùi. Anh chị thấy lịch chuyển sân bay hay giá cổ phiếu, cái nào khó đoán hơn?",
+   "say": "Nhà mới xây xong. Khách thì hẹn năm sau mới về ở. Còn anh chị, muốn bay Long Thành ngay, hay cũng xin khất như các hãng?",
    "hold": 1.2
   }
  ]

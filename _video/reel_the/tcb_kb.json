@@ -1,50 +1,40 @@
 {
  "key": "TCB_THE",
- "title": "tcb the",
+ "title": "tcb the ke chuyen",
  "scenes": [
   {
    "id": "S1",
-   "say": "Techcombank huy động bảy nghìn năm trăm tỷ trái phiếu trong một tuần, lãi suất gần chín phần trăm một năm. Chuyện gì đây?",
+   "say": "Chỉ trong bảy ngày, Techcombank vay bảy nghìn năm trăm tỷ, chấp nhận trả lãi gần chín phần trăm một năm. Vì sao một ngân hàng lớn lại vội như vậy?",
    "hold": 0.3
   },
   {
    "id": "S2",
-   "say": "Ngày mười hai, mười bảy và mười tám tháng mười một, Techcombank phát hành ba lô trái phiếu riêng lẻ, mỗi lô hai nghìn năm trăm tỷ. Kỳ hạn ba mươi sáu tháng, nguồn vốn dùng cho hoạt động cho vay.",
+   "say": "Theo Mekong ASEAN, Techcombank liên tiếp phát hành ba lô trái phiếu riêng lẻ, mỗi lô hai nghìn năm trăm tỷ. Lô ngày mười hai tháng mười một lãi chín phần trăm, hai lô ngày mười bảy và mười tám lãi tám phẩy chín phần trăm. Kỳ hạn ba năm, tiền dùng để cho vay.",
    "hold": 0.3
   },
   {
    "id": "S3",
-   "say": "Ba lô trái phiếu, tổng bảy nghìn năm trăm tỷ, kỳ hạn ba mươi sáu tháng. Lô ngày mười hai lãi chín phần trăm, hai lô sau tám phẩy chín, và cổ phiếu TCB giảm tám phần trăm từ đỉnh tháng mười.",
+   "say": "Nghĩa là ngân hàng đi vay gần chín phần trăm, để cho vay lại. Lãi suất lô sau thấp hơn lô đầu một chút, từ chín xuống tám phẩy chín. Còn cổ phiếu TCB đã lùi tám phần trăm từ đỉnh ngày hai mươi mốt tháng mười.",
    "hold": 0.3
   },
   {
    "id": "S4",
-   "say": "Số tiền này dùng để cho vay, trong lúc lãi suất cho vay bình quân vượt mười một phần trăm một năm. Theo MarketTimes, nợ xấu toàn ngành chín tháng lên hai phẩy ba phần trăm, áp lực vốn chưa hạ nhiệt.",
+   "say": "Cuộc đua giữ tiền giữa các ngân hàng chưa hạ nhiệt. Lãi cho vay bình quân giờ đã vượt mười một phần trăm một năm. Nợ xấu toàn ngành chín tháng ở mức hai phẩy ba phần trăm.",
    "hold": 0.3
   },
   {
    "id": "S5",
-   "say": "Về kỹ thuật, đường trung bình hai mươi cắt xuống đường năm mươi ngày mười chín tháng mười một. Vùng hai mươi mốt phẩy tám đến hai mươi hai phẩy tám là cản gần, vùng hai mươi phẩy mười lăm đến hai mươi phẩy sáu là hỗ trợ. Ngày hai mươi, giá hồi lên hai mươi mốt phẩy hai.",
-   "hold": 0.3
-  },
-  {
-   "id": "S5A",
-   "say": "Huy động được bảy nghìn năm trăm tỷ trong một tuần. Hai lô sau có lãi suất tám phẩy chín, thấp hơn chín phần trăm. Và giá hồi lên hai mươi mốt nghìn hai trăm đồng.",
-   "hold": 0.3
-  },
-  {
-   "id": "S5B",
-   "say": "Chi phí vốn gần chín phần trăm một năm. Nợ xấu ngành hai phẩy ba phần trăm. Và đường trung bình hai mươi cắt xuống đường năm mươi.",
+   "say": "Trên biểu đồ, đường trung bình hai mươi vừa cắt xuống đường năm mươi ngày mười chín tháng mười một. Giá đang hồi về hai mươi mốt phẩy hai, giữa vùng cản hai mươi mốt phẩy tám đến hai mươi hai phẩy tám và hỗ trợ hai mươi phẩy mười lăm đến hai mươi phẩy sáu.",
    "hold": 0.3
   },
   {
    "id": "S5C",
-   "say": "Góc nhìn của mình: chờ ba tín hiệu. Một, lãi suất huy động hạ nhiệt. Hai, giá vượt được cản hai mươi hai phẩy tám. Ba, nợ xấu toàn ngành ngừng tăng.",
+   "say": "Câu hỏi còn bỏ ngỏ là lãi huy động sẽ còn neo cao bao lâu. Góc nhìn của em là chờ ba tín hiệu. Một, lãi suất huy động hạ nhiệt. Hai, giá vượt được cản hai mươi hai phẩy tám. Ba, nợ xấu toàn ngành ngừng tăng.",
    "hold": 0.3
   },
   {
    "id": "S6",
-   "say": "Ba lô trái phiếu trong một tuần. Lãi suất thì khác từng lô. Anh chị thấy vốn rẻ hay vốn dễ huy động, cái nào quan trọng hơn?",
+   "say": "Ngân hàng chịu vay gần chín phần trăm. Còn tiền gửi của anh chị thì được bao nhiêu? Anh chị đang gửi tiết kiệm bao nhiêu phần trăm, có thấy chín phần trăm hấp dẫn không?",
    "hold": 1.2
   }
  ]

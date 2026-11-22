@@ -1,50 +1,40 @@
 {
  "key": "VHM_THE",
- "title": "vhm the",
+ "title": "vhm the ke chuyen",
  "scenes": [
   {
    "id": "S1",
-   "say": "Giá rao chung cư tại nhiều dự án Hà Nội giảm tới mười bốn phần trăm chỉ sau một quý. Chuyện gì đang xảy ra?",
+   "say": "Có dự án chung cư ở Hà Nội vừa mất mười bốn phần trăm giá rao chỉ sau một quý. Giá đã rẻ hơn, vậy người mua đang ở đâu?",
    "hold": 0.3
   },
   {
    "id": "S2",
-   "say": "Theo Batdongsan chấm com, giá rao của mười dự án chung cư nổi bật ở Hà Nội đều giảm trong quý ba, mạnh nhất là mười bốn phần trăm. Mặt bằng chung cư giảm bốn phần trăm, đất nền giảm mười một phần trăm.",
+   "say": "Theo số liệu Batdongsan dẫn trên Vietnambiz, cả mười dự án chung cư nổi bật Hà Nội đều giảm giá rao trong quý ba. The Sapphire ở Vinhomes Smart City và Lumi Hanoi giảm mười bốn phần trăm, Times City mười ba, Ocean Park mười một. Mặt bằng chung cư Hà Nội giảm bốn phần trăm, đất nền giảm mười một phần trăm.",
    "hold": 0.3
   },
   {
    "id": "S3",
-   "say": "Hai dự án giảm mạnh nhất là The Sapphire ở Smart City và Lumi Hanoi, cùng mười bốn phần trăm, Ocean Park mười một. Theo CBRE, giao dịch sơ cấp chín tháng giảm khoảng ba mươi phần trăm, cổ phiếu VHM giảm hai mươi ba phần trăm từ đỉnh tháng sáu.",
+   "say": "Ai cũng nghĩ giá giảm thì người mua sẽ ùa vào. Nhưng CBRE cho biết giao dịch sơ cấp chín tháng ở Hà Nội và Thành phố Hồ Chí Minh lại giảm khoảng ba mươi phần trăm. Cổ phiếu VHM cũng đi theo, từ đỉnh bảy mươi tám nghìn về sáu mươi nghìn bốn trăm, mất hai mươi ba phần trăm.",
    "hold": 0.3
   },
   {
    "id": "S4",
-   "say": "Nhưng giá thấp hơn chưa đủ kéo người mua quay lại. Mức quan tâm chung cư Hà Nội tháng mười giảm chín phần trăm, một bộ phận chọn gửi tiết kiệm thay vì mua.",
+   "say": "Lãi vay vẫn cao, nên giá rao giảm vẫn chưa đủ kéo người mua. Lượng quan tâm chung cư Hà Nội tháng mười còn giảm chín phần trăm. Một bộ phận người mua chọn quay về gửi tiết kiệm, chờ thêm.",
    "hold": 0.3
   },
   {
    "id": "S5",
-   "say": "Về kỹ thuật, đường trung bình hai mươi cắt xuống đường năm mươi ngày ba mươi tháng chín. Cản gần sáu mươi ba phẩy chín đến sáu mươi tư phẩy chín, hỗ trợ năm mươi bảy phẩy sáu đến năm mươi tám phẩy chín. Ngày hai mươi tháng mười, giá chạm đáy với khối lượng tăng mạnh.",
-   "hold": 0.3
-  },
-  {
-   "id": "S5A",
-   "say": "Vietcap kỳ vọng thị trường sơ cấp quý bốn cải thiện. Nhà nước đã định hướng giảm lãi suất từ tháng mười. Và giá rao thấp hơn quý trước.",
-   "hold": 0.3
-  },
-  {
-   "id": "S5B",
-   "say": "Cả năm hai nghìn không trăm hai mươi sáu, thị trường sơ cấp vẫn dự báo giảm. Chín tháng giảm khoảng ba mươi phần trăm. Cổ phiếu VHM giảm hai mươi ba phần trăm từ đỉnh.",
+   "say": "Trên biểu đồ, đường trung bình hai mươi đã cắt xuống đường năm mươi từ ngày ba mươi tháng chín. Giá đang nằm giữa vùng cản sáu mươi ba phẩy chín đến sáu mươi tư phẩy chín và hỗ trợ năm mươi bảy phẩy sáu đến năm mươi tám phẩy chín.",
    "hold": 0.3
   },
   {
    "id": "S5C",
-   "say": "Góc nhìn của mình: chờ ba tín hiệu. Một, giao dịch sơ cấp quý bốn cải thiện thật. Hai, giá rao ngừng giảm. Ba, giá vượt được cản sáu mươi tư phẩy chín.",
+   "say": "Câu hỏi còn bỏ ngỏ là quý bốn người mua có quay lại hay không. Góc nhìn của em là chờ ba tín hiệu. Một, giao dịch sơ cấp quý bốn cải thiện thật. Hai, giá rao ngừng giảm. Ba, giá cổ phiếu vượt được cản sáu mươi tư phẩy chín.",
    "hold": 0.3
   },
   {
    "id": "S6",
-   "say": "Giá rao giảm tới mười bốn phần trăm. Còn người mua thì chưa vội. Anh chị thấy giá rao hay lãi suất, cái nào kéo người mua quay về trước?",
+   "say": "Giá rao đã giảm mười bốn phần trăm. Người mua vẫn chưa vội. Anh chị đang chờ giá giảm tiếp, hay đã bắt đầu đi xem nhà?",
    "hold": 1.2
   }
  ]
