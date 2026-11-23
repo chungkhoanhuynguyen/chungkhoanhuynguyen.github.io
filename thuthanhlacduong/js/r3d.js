@@ -467,6 +467,45 @@ var V = (function () {
     for (var f = 0; f < 8; f++) { var fg = new T.Sprite(new T.SpriteMaterial({ map: smokeTex, color: '#ffd6c0', transparent: true, opacity: 0.35, depthWrite: false })); fg.scale.set(22, 6, 1); fg.position.set(MX - 56 + f * 16, 2.5, -24 - (f % 2) * 6); scene.add(fg); }
   }
 
+  // ---------- DÂN CHÚNG, LÍNH TUẦN, NGƯỜI BÁN HÀNG ----------
+  var NPC = [];
+  function spawnNPCs() {
+    if (!modelsReady) return;
+    var L0 = -HL - 13, R0 = LCX[1] + HL + 13;
+    var folk = [['Cleric', '#e8d5b0'], ['Rogue', '#c9b28a'], ['Monk', '#bca58a'], ['Ranger', '#9fae7a'], ['Cleric', '#d7b3c0'], ['Monk', '#b0a090']];
+    function add(model, tint, path, speed, h, y) {
+      var v = makeModel(model, tint, h || 1.6); if (!v) return; scene.add(v);
+      var n = { v: v, path: path, i: 0, p: path[0].clone(), sp: speed, wait: Math.random() * 2, y: y || 0 };
+      v.position.copy(n.p); v.position.y = n.y; NPC.push(n);
+    }
+    var P = function (x, z) { return new T.Vector3(x, 0, z); };
+    for (var i = 0; i < 6; i++) {
+      var f = folk[i];
+      add(f[0], f[1], [P(L0 + 0.3, -10 + i * 3), P(L0 + 0.3, 9 - i), P(L0 - 2.4, 9 - i), P(L0 - 2.4, -10 + i * 3)], 0.9 + Math.random() * 0.5);
+      add(folk[(i + 3) % 6][0], folk[(i + 3) % 6][1], [P(R0 - 0.3, 9 - i * 3), P(R0 - 0.3, -10 + i), P(R0 + 2.4, -10 + i), P(R0 + 2.4, 9 - i * 3)], 0.9 + Math.random() * 0.5);
+    }
+    // người bán hàng đứng sau sạp
+    [[-1, -8], [1, -3.5], [-1, 1], [1, 5.5]].forEach(function (p) { add('Cleric', '#f0d9b5', [P(L0 + p[0] * 1.5 - 0.8, p[1]), P(L0 + p[0] * 1.5 - 0.8, p[1] + 0.01)], 0.01, 1.5); add('Monk', '#e0c8a0', [P(R0 - p[0] * 1.5 + 0.8, p[1] + 1), P(R0 - p[0] * 1.5 + 0.8, p[1] + 1.01)], 0.01, 1.5); });
+    // lính tuần trên tường thành
+    for (var g = 0; g < 4; g++) { var x0 = MX - 40 + g * 22; add('Warrior', '#c0392b', [P(x0, -13.4), P(x0 + 14, -13.4)], 1.1, 1.6, 3.2); }
+    // lính gác dọc bờ hồ
+    add('Warrior', '#8e2a20', [P(-HL - 10, 11.3), P(-HL - 2, 11.3)], 0.8, 1.6, 0.2); add('Warrior', '#8e2a20', [P(LCX[1] + HL + 2, 11.3), P(LCX[1] + HL + 10, 11.3)], 0.8, 1.6, 0.2);
+  }
+  function stepNPCs(dt) {
+    NPC.forEach(function (n) {
+      var v = n.v, tgt = n.path[(n.i + 1) % n.path.length], moving = false;
+      if (n.wait > 0) n.wait -= dt;
+      else {
+        var d = _tmpV3.subVectors(tgt, n.p), L = d.length();
+        if (L < 0.1) { n.i = (n.i + 1) % n.path.length; n.wait = n.sp < 0.05 ? 99 : Math.random() < 0.3 ? 1 + Math.random() * 2 : 0; }
+        else { d.multiplyScalar(Math.min(L, n.sp * dt) / L); n.p.add(d); moving = n.sp > 0.05; faceTo(v, 1, Math.atan2(d.x, d.z), dt); }
+      }
+      v.position.set(n.p.x, n.y, n.p.z);
+      var U = v.userData; if (U.model) { var a = moving ? (U.A.walk || U.A.run) : U.A.idle; if (a && U.cur !== a) playA(v, a, 0.25); if (moving && U.cur) U.cur.timeScale = U.A.walk ? 1 : 0.6; U.mixer.update(dt); }
+    });
+  }
+  var _tmpV3 = new T.Vector3();
+
   // ---------- HIỆU ỨNG MÔI TRƯỜNG ----------
   var flies = null, embers = [], rays = [];
   function buildAmbient() {
@@ -509,8 +548,25 @@ var V = (function () {
     // lầu trên cổng 2 tầng
     var tower = hall(0, 0, 5.4, 1.6, 1.1, 1.2, { tiers: 2, wall: '#e6d4b4' }); scene.remove(tower); tower.position.set(0, 2.6, -0.1); grp.add(tower);
     // biển
-    var plaque = canvasTex(256, 80, function (g) { g.fillStyle = '#14234a'; g.fillRect(0, 0, 256, 80); g.strokeStyle = '#e8b04a'; g.lineWidth = 8; g.strokeRect(4, 4, 248, 72); g.fillStyle = '#ffd56a'; g.font = 'bold 40px "Playfair Display", serif'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(lane === 0 ? 'LẠC DƯƠNG' : 'BIỆN KINH', 128, 42); });
-    var pl = mesh(new T.PlaneGeometry(2.2, 0.68), new T.MeshBasicMaterial({ map: plaque }), 0, 2.15, 0.82, false); grp.add(pl);
+    var pc = document.createElement('canvas'); pc.width = 512; pc.height = 200; var plaque = new T.CanvasTexture(pc); plaque.anisotropy = 8;
+    var drawPlaque = function () {
+      var g = pc.getContext('2d'), W2 = 512, H2 = 200; g.clearRect(0, 0, W2, H2);
+      // khung gỗ chạm, viền vàng, nền sơn mài xanh thẫm
+      var fr = g.createLinearGradient(0, 0, 0, H2); fr.addColorStop(0, '#7a1a10'); fr.addColorStop(1, '#3a0a06'); g.fillStyle = fr; g.fillRect(0, 0, W2, H2);
+      g.strokeStyle = '#e8b04a'; g.lineWidth = 6; g.strokeRect(10, 10, W2 - 20, H2 - 20); g.lineWidth = 2; g.strokeRect(22, 22, W2 - 44, H2 - 44);
+      var bgc = g.createLinearGradient(0, 30, 0, H2 - 30); bgc.addColorStop(0, '#16285a'); bgc.addColorStop(1, '#0b1636'); g.fillStyle = bgc; g.fillRect(26, 26, W2 - 52, H2 - 52);
+      for (var c = 0; c < 4; c++) { var cx = c % 2 ? W2 - 26 : 26, cy = c > 1 ? H2 - 26 : 26; g.fillStyle = '#e8b04a'; g.beginPath(); g.arc(cx, cy, 12, 0, 6.3); g.fill(); g.fillStyle = '#7a1a10'; g.beginPath(); g.arc(cx, cy, 5, 0, 6.3); g.fill(); }
+      var han = lane === 0 ? '洛 陽' : '汴 京', vi = lane === 0 ? 'LẠC DƯƠNG' : 'BIỆN KINH';
+      var gold = g.createLinearGradient(0, 40, 0, 150); gold.addColorStop(0, '#fff4c2'); gold.addColorStop(0.5, '#ffd257'); gold.addColorStop(1, '#c07a10');
+      g.textAlign = 'center'; g.textBaseline = 'middle';
+      g.font = '110px "Ma Shan Zheng", "STKaiti", "KaiTi", serif'; g.shadowColor = 'rgba(0,0,0,.6)'; g.shadowBlur = 6; g.shadowOffsetY = 3;
+      g.fillStyle = gold; g.fillText(han, W2 / 2, 92);
+      g.shadowBlur = 0; g.shadowOffsetY = 0; g.font = '600 26px "Playfair Display", serif'; g.fillStyle = '#e8c26a'; g.fillText(vi.split('').join(' '), W2 / 2, 160);
+      plaque.needsUpdate = true;
+    };
+    drawPlaque(); if (document.fonts && document.fonts.load) document.fonts.load('110px "Ma Shan Zheng"', '洛陽汴京').then(drawPlaque).catch(function () {});
+    var pl = mesh(new T.PlaneGeometry(3.2, 1.25), new T.MeshBasicMaterial({ map: plaque }), 0, 2.2, 0.83, false); grp.add(pl);
+    var plGlow = glowSprite('#ffcf7a', 3.6, 0.25); plGlow.position.set(0, 2.2, 0.9); grp.add(plGlow);
     // cờ
     for (var s = -1; s <= 1; s += 2) {
       var pole = mesh(G('pole', function () { return new T.CylinderGeometry(0.04, 0.04, 2.4, 5); }), M('#3a2a1a'), s * 5, 4.1, 0.5); grp.add(pole);
@@ -666,8 +722,8 @@ var V = (function () {
   function makeMascot(key) {
     var Md = MASCOTS[key];
     var mm = MASCOT_MODEL[key];
-    if (window.CARDS && CARDS.ready() && CARDS.has('m_' + key)) {
-      var r3 = CARDS.make('m_' + key, 2.0); CARDS.glowify(r3, Md.aura);
+    if (window.A3 && A3.has('m_' + key)) {
+      var r3 = A3.make('m_' + key, 3.1, { glow: true }); A3.glowify(r3, Md.aura);
       var au3 = new T.Mesh(new T.RingGeometry(0.42, 0.52, 32), new T.MeshBasicMaterial({ color: Md.aura, transparent: true, opacity: 0.8, blending: T.AdditiveBlending, depthWrite: false, side: T.DoubleSide }));
       au3.rotation.x = -Math.PI / 2; au3.position.y = 0.03; au3.scale.setScalar(1.5); r3.add(au3);
       var mo3 = []; for (var q3 = 0; q3 < 6; q3++) { var sp3 = glowSprite(Md.aura, 0.22, 0.95); r3.add(sp3); mo3.push(sp3); }
@@ -747,7 +803,7 @@ var V = (function () {
     Md.clips.forEach(function (c) { acts[c.name] = mixer.clipAction(c); });
     function pick() { for (var i = 0; i < arguments.length; i++) if (acts[arguments[i]]) return acts[arguments[i]]; return null; }
     var findAtk = function () { var k = Object.keys(acts).filter(function (n) { return /Attack/.test(n) && !/Idle/.test(n); }); return k.length ? acts[k[0]] : pick('Punch'); };
-    var A = { idle: pick('Idle_Weapon', 'Idle_Attacking', 'Attacking_Idle', 'Attack_Idle', 'Idle'), run: pick('Run_Weapon', 'Run', 'Walk'), atk: findAtk(), cast: pick('Spell1', 'Staff_Attack', 'Attack2', 'Dagger_Attack2', 'Sword_AttackFast') || findAtk(), die: pick('Death'), hit: pick('RecieveHit_Attacking', 'RecieveHit') };
+    var A = { walk: pick('Walk'), idle: pick('Idle_Weapon', 'Idle_Attacking', 'Attacking_Idle', 'Attack_Idle', 'Idle'), run: pick('Run_Weapon', 'Run', 'Walk'), atk: findAtk(), cast: pick('Spell1', 'Staff_Attack', 'Attack2', 'Dagger_Attack2', 'Sword_AttackFast') || findAtk(), die: pick('Death'), hit: pick('RecieveHit_Attacking', 'RecieveHit') };
     if (A.die) { A.die.setLoop(T.LoopOnce); A.die.clampWhenFinished = true; }
     [A.atk, A.cast, A.hit].forEach(function (a) { if (a) { a.setLoop(T.LoopOnce); a.clampWhenFinished = false; } });
     if (A.idle) { A.idle.play(); A.idle.time = Math.random() * 2; }
@@ -780,7 +836,7 @@ var V = (function () {
     var v = VU[u.id];
     if (!v) {
       var d = S.UNITS[u.type], um = UNIT_MODEL[u.type];
-      var g = (window.CARDS && CARDS.ready() && CARDS.make(u.type, 1.6)) || (modelsReady && makeModel(um[0], um[1], 1.95)) || makeHuman(R.LOOK[u.type], { weapon: d.weapon, wglow: u.type === 'vodang' ? '#7ab8ff' : null });
+      var g = (window.A3 && A3.has(u.type) && A3.make(u.type, 2.5)) || (modelsReady && makeModel(um[0], um[1], 1.95)) || makeHuman(R.LOOK[u.type], { weapon: d.weapon, wglow: u.type === 'vodang' ? '#7ab8ff' : null });
       if (g.userData.model || g.userData.card) { var sg = glowSprite(d.col, 0.9, 0.35); sg.position.y = 0.15; g.add(sg); }
       g.userData.tier = -1; g.userData.pop = 0; g.userData.hidden = 0.0;
       var ring = new T.Mesh(G('uring', function () { return new T.RingGeometry(0.34, 0.44, 24); }), new T.MeshBasicMaterial({ color: d.col, transparent: true, opacity: 0.85, side: T.DoubleSide, depthWrite: false }));
@@ -803,7 +859,7 @@ var V = (function () {
         var au = new T.Mesh(G('tring', function () { return new T.RingGeometry(0.38, 0.5, 32); }), new T.MeshBasicMaterial({ color: '#ffd740', transparent: true, opacity: 0.7, blending: T.AdditiveBlending, side: T.DoubleSide, depthWrite: false }));
         au.rotation.x = -Math.PI / 2; au.position.y = 0.04; v.add(au); v.userData.aura = au;
         var gs = glowSprite(col, 1.2, 0.35); gs.position.y = 0.6; v.add(gs);
-        if (v.userData.card) { CARDS.glowify(v, S.UNITS[u.type].col); } else if (!v.userData.model) { var cp = mesh(G('capeR', null), M(S.UNITS[u.type].col2, { side: T.DoubleSide }), 0, 1.42, -0.17); cp.rotation.x = 0.12; v.userData.body.add(cp); v.userData.cape = cp; } else { var cr = mesh(cone(0.09, 0.2, 5), M('#ffd740', { em: '#ffb300', ei: 1.2 }), 0, 1.95, 0, false); v.add(cr); }
+        if (v.userData.a3) { A3.glowify(v, S.UNITS[u.type].col); } else if (v.userData.card) { CARDS.glowify(v, S.UNITS[u.type].col); } else if (!v.userData.model) { var cp = mesh(G('capeR', null), M(S.UNITS[u.type].col2, { side: T.DoubleSide }), 0, 1.42, -0.17); cp.rotation.x = 0.12; v.userData.body.add(cp); v.userData.cape = cp; } else { var cr = mesh(cone(0.09, 0.2, 5), M('#ffd740', { em: '#ffb300', ei: 1.2 }), 0, 1.95, 0, false); v.add(cr); }
         v.userData.scaleBase = 1.12;
       }
     }
@@ -1109,10 +1165,11 @@ var V = (function () {
     }
     v.position.copy(W(m.lane, m.x, m.y));
     if (m.cheer > 0) { m.cheer -= dt; v.position.y = Math.abs(Math.sin(m.cheer * 10)) * 0.4; }
-    else if (!moving && !v.userData.model) v.position.y = 0.15 + Math.sin(t * 2) * 0.06; // bay lơ lửng
+    else if (!moving && !v.userData.model && !v.userData.a3) v.position.y = 0.15 + Math.sin(t * 2) * 0.06; // bay lơ lửng
     var U = v.userData;
     if (!U.card) faceTo(v, 1, m.face, dt);
-    if (U.card) { CARDS.anim(v, { moving: moving, atk: 0, cast: m.castId || 0, face: Math.sin(m.face) >= 0 ? 1 : -1 }, dt, t, camera); }
+    if (U.a3) { faceTo(v, 1, m.face, dt); A3.anim(v, { moving: moving, atk: 0, cast: m.castId || 0 }, dt, t); }
+    else if (U.card) { CARDS.anim(v, { moving: moving, atk: 0, cast: m.castId || 0, face: Math.sin(m.face) >= 0 ? 1 : -1 }, dt, t, camera); }
     else if (U.model) { animModel(v, { moving: moving, atk: 0, cast: m.castId || 0 }, dt); }
     else { animHuman(v, { moving: moving, atk: m.cast > 0 ? m.cast * 1.2 : 0, ph: m.lane }, t, dt); if (m.cast > 0) U.armL.rotation.x = -2.6; }
     U.rib.forEach(function (r, i) { var a = r.geometry.attributes.position, base = r.geometry.userData.base; for (var k = 0; k < a.count; k++) { var y = base[k * 3 + 1]; a.setZ(k, base[k * 3 + 2] - Math.sin(t * 4 + y * 5 + i) * 0.12 * (-y) - (moving ? -y * 0.5 : 0)); } a.needsUpdate = true; });
@@ -1222,13 +1279,14 @@ var V = (function () {
       if (tgt) ang = Math.atan2(tgt.x - u.x, -(tgt.y - u.y)) + 0; else ang = (u.moving ? Math.atan2((u.cx + 0.5 - u.x), -((u.cy + 0.5) - u.y)) : Math.PI);
       // sim y tăng -> z giảm; atan2(dx, dz) với dz = -(dy)
       if (!v.userData.card) faceTo(v, 1, tgt || u.moving ? ang : 0, dt);
-      if (v.userData.card) { CARDS.anim(v, { dead: u.dead, moving: u.moving && G.phase === 'fight', atk: u.atkAnim, cast: u._castT, face: tgt ? (tgt.x >= u.x ? 1 : -1) : (u.owner === 0 ? 1 : -1) }, dt, t, camera); }
+      if (v.userData.a3) { A3.anim(v, { dead: u.dead, moving: u.moving && G.phase === 'fight', atk: u.atkAnim, cast: u._castT }, dt, t); }
+      else if (v.userData.card) { CARDS.anim(v, { dead: u.dead, moving: u.moving && G.phase === 'fight', atk: u.atkAnim, cast: u._castT, face: tgt ? (tgt.x >= u.x ? 1 : -1) : (u.owner === 0 ? 1 : -1) }, dt, t, camera); }
       else if (v.userData.model) { animModel(v, { dead: u.dead, moving: u.moving && G.phase === 'fight', atk: u.atkAnim, cast: u._castT }, dt); }
       else if (u.dead) { v.userData.body.rotation.z = Math.min(1.5, (v.userData.body.rotation.z || 0) + dt * 6); }
       else v.userData.body.rotation.z = 0;
       v.userData.ring.material.opacity = u.active ? 0.75 : 0.3;
       if (u.moving && G.phase === 'fight' && Math.random() < 0.08) dustAt(v.position);
-      if (!u.dead && !v.userData.model && !v.userData.card) animHuman(v, { moving: u.moving && G.phase === 'fight', atk: u.atkAnim, ph: u.id }, t, dt);
+      if (!u.dead && !v.userData.model && !v.userData.card && !v.userData.a3) animHuman(v, { moving: u.moving && G.phase === 'fight', atk: u.atkAnim, ph: u.id }, t, dt);
       if (v.userData.aura) v.userData.aura.rotation.z = t * 1.5;
       if (v.userData.flag) v.userData.flag.rotation.y = Math.sin(t * 3 + u.id) * 0.35 - (u.moving ? 0.5 : 0);
       v.userData.dead = u.dead;
@@ -1305,7 +1363,7 @@ var V = (function () {
     if (water) { water.material.uniforms.time.value = t * 0.45; }
     TREES.forEach(function (tr, i) { tr.rotation.z = Math.sin(t * 1.4 + i) * 0.025 * wind; tr.rotation.x = Math.cos(t * 1.1 + i) * 0.015 * wind; });
     WILLOWS.forEach(function (w, wi) { w.userData.strands.forEach(function (st, si) { st.rotation.x = Math.sin(t * 1.6 + si * 0.7 + wi) * 0.12 * wind; st.rotation.z = Math.cos(t * 1.2 + si) * 0.08 * wind; }); });
-    stepAmbient(dt, t);
+    stepAmbient(dt, t); stepNPCs(dt);
     SWAY.forEach(function (sw) { sw.o.rotation.x = Math.sin(t * 1.8 + sw.ph) * sw.a * wind; });
     LOTUS.forEach(function (lo, i) { if (lo.userData.drift) { lo.position.x += dt * lo.userData.drift; if (lo.position.x > MX + 36) lo.position.x = MX - 36; lo.position.y = -0.15 + Math.sin(t * 1.5 + i) * 0.03; } else if (lo.userData.boat) { lo.position.x = MX + 9 + Math.sin(t * 0.07) * 14; lo.rotation.z = Math.sin(t * 1.2) * 0.04; lo.position.y = -0.25 + Math.sin(t * 1.6) * 0.04; } else { lo.position.y = -0.27 + Math.sin(t * 1.3 + i * 0.7) * 0.02; lo.rotation.y += Math.sin(t * 0.5 + i) * 0.0008; } });
     updateCam(dt);
@@ -1361,7 +1419,7 @@ var V = (function () {
 
   function screenOf(lane, x, y, h) { return proj(W(lane, x, y, h || 0)); }
 
-  return { weapon3: weapon3, glowSprite: glowSprite, loadModels: loadModels, modelsReady: function () { return modelsReady; }, makeModel: makeModel, UNIT_MODEL: UNIT_MODEL, CREEP_MODEL: CREEP_MODEL, MASCOT_MODEL: MASCOT_MODEL, LW: LW, HL: HL, MX: MX, _VU: VU, init: init, resize: resize, frame: frame, onEvent: onEvent, setView: setView, cam: cam, pick: pick, setGhost: setGhost, setSelected: setSelected, initMascots: initMascots, mascots: mascots,
+  return { spawnNPCs: spawnNPCs, weapon3: weapon3, glowSprite: glowSprite, loadModels: loadModels, modelsReady: function () { return modelsReady; }, makeModel: makeModel, UNIT_MODEL: UNIT_MODEL, CREEP_MODEL: CREEP_MODEL, MASCOT_MODEL: MASCOT_MODEL, LW: LW, HL: HL, MX: MX, _VU: VU, init: init, resize: resize, frame: frame, onEvent: onEvent, setView: setView, cam: cam, pick: pick, setGhost: setGhost, setSelected: setSelected, initMascots: initMascots, mascots: mascots,
     screenOf: screenOf, fitDist: fitDist, W: W, LCX: LCX, renderIcon: null, cheer: function (p) { if (mascots[p]) mascots[p].cheer = 0.8; },
     makeHuman: makeHuman, makeBeast: makeBeast, makeMascot: makeMascot, getRenderer: function () { return renderer; }, getScene: function () { return scene; }, getCamera: function () { return camera; }, M: M, T: T };
 })();

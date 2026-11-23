@@ -23,9 +23,9 @@
     }
     const pose = (o) => { if (o.userData.mixer) o.userData.mixer.update(0.4); return o; };
     const um = (k) => { const m = V.UNIT_MODEL[k]; return (V.modelsReady() && V.makeModel(m[0], m[1], 1.55)) || V.makeHuman(R.LOOK[k], { weapon: S.UNITS[k].weapon }); };
-    S.UNIT_ORDER.forEach((k) => { ICON[k] = CARDS.portrait(k, true) || shot(pose(um(k)), 160, 1.55, 3.6, true); });
+    S.UNIT_ORDER.forEach((k) => { ICON[k] = A3.portrait(k, 160, true) || shot(pose(um(k)), 160, 1.55, 3.6, true); });
     S.SEND_ORDER.forEach((k) => { const m = V.CREEP_MODEL[k]; const o = S.CREEPS[k].beast ? V.makeBeast(k) : ((V.modelsReady() && m && V.makeModel(m[0], m[1], 1.5)) || V.makeHuman(R.CLOOK[k], { weapon: R.CLOOK[k].weapon })); ICON['s_' + k] = shot(pose(o), 128, 1.3, 3.4); });
-    R.MASCOT_ORDER.forEach((k) => { ICON['m_' + k] = CARDS.portrait('m_' + k, false); ICON['f_' + k] = CARDS.portrait('m_' + k, true); if (!ICON['m_' + k]) { const o = V.makeMascot(k); o.scale.setScalar(1); ICON['m_' + k] = shot(pose(o), 256, 1.9, 4.2); ICON['f_' + k] = shot(pose(V.makeMascot(k)), 128, 2.4, 4.2, true); } });
+    R.MASCOT_ORDER.forEach((k) => { ICON['m_' + k] = A3.portrait('m_' + k, 256, false); ICON['f_' + k] = A3.portrait('m_' + k, 128, true); if (!ICON['m_' + k]) { const o = V.makeMascot(k); o.scale.setScalar(1); ICON['m_' + k] = shot(pose(o), 256, 1.9, 4.2); ICON['f_' + k] = shot(pose(V.makeMascot(k)), 128, 2.4, 4.2, true); } });
     rr.dispose();
   }
 
@@ -370,6 +370,6 @@
   document.addEventListener('visibilitychange', () => { last = performance.now(); });
 
   $('mrow').innerHTML = '<div class="tag">Đang tải nhân vật…</div>';
-  V.loadModels(() => CARDS.bake(() => { makeIcons(); buildCards(); showStart(); requestAnimationFrame(loop); }));
+  V.loadModels(() => A3.load(() => { V.spawnNPCs(); makeIcons(); buildCards(); showStart(); requestAnimationFrame(loop); }));
   window.__game = { get G() { return G; }, newGame, tap, setSpeed: (s) => { speed = s; } };
 }
