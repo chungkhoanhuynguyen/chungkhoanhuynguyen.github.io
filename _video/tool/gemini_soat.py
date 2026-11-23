@@ -13,7 +13,19 @@ yeu_cau = ("Bạn là người soát video tài chính tiếng Việt cho kênh 
            "dấu '~' trên màn hình, bìa khó đọc trên điện thoại. Không có lỗi thì ghi đúng 1 dòng: KHÔNG THẤY LỖI HÌNH. "
            "Không chấm điểm, không khen, không bịa lỗi.")
 parts = [{"text": yeu_cau}] + [{"inline_data": {"mime_type": "image/png", "data": base64.b64encode(open(os.path.join(O, f), "rb").read()).decode()}} for f in anh]
-for mo_hinh in [os.environ.get("GEMINI_MODEL", "gemini-2.5-flash"), "gemini-2.0-flash"]:
+# QL1 23/11: 2.5-flash/2.0-flash trả 404 (mô hình đổi tên/ngừng) → hỏi danh sách mô hình, lấy bản flash mới nhất còn generateContent.
+ds = [os.environ.get("GEMINI_MODEL", "")]
+try:
+    rq0 = urllib.request.Request("https://generativelanguage.googleapis.com/v1beta/models?pageSize=200", headers={"x-goog-api-key": os.environ["GEMINI_API_KEY"]})
+    md = json.load(urllib.request.urlopen(rq0, timeout=60)).get("models", [])
+    ten = [m["name"].split("/")[-1] for m in md if "generateContent" in m.get("supportedGenerationMethods", [])]
+    flash = sorted([t for t in ten if "flash" in t and "lite" not in t and "image" not in t and "tts" not in t and "live" not in t and "exp" not in t], reverse=True)
+    ds += flash[:3] + sorted([t for t in ten if "pro" in t and "tts" not in t and "image" not in t], reverse=True)[:1]
+except Exception as e:
+    print(f"== GEMINI không đọc được danh sách mô hình: {type(e).__name__}: {str(e)[:150]}")
+ds += ["gemini-flash-latest", "gemini-2.5-flash"]
+ds = [m for i, m in enumerate(ds) if m and m not in ds[:i]]
+for mo_hinh in ds:
     try:
         rq = urllib.request.Request(
             f"https://generativelanguage.googleapis.com/v1beta/models/{mo_hinh}:generateContent",
