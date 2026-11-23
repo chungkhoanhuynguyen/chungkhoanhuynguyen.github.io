@@ -442,12 +442,12 @@ var Sim = (function () {
     if (u.hp <= 0) { u.hp = 0; u.dead = true; G.ev.push({ e: 'unitDie', p: u.owner, x: u.x, y: u.y, type: u.type }); }
   }
 
-  function creepsInLane(G, lane) { var r = []; for (var i = 0; i < G.creeps.length; i++) { var c = G.creeps[i]; if (c.lane === lane && c.hp > 0 && !c.leaked && c.y > -0.2) r.push(c); } return r; }
+  function creepsInLane(G, lane) { var r = []; for (var i = 0; i < G.creeps.length; i++) { var c = G.creeps[i]; if (c.lane === lane && c.hp > 0 && !c.leaked && c.y > -1.6) r.push(c); } return r; }
   function nearestCreep(G, lane, x, y, maxR, exclude) {
     var best = null, bd = maxR * maxR;
     for (var i = 0; i < G.creeps.length; i++) {
       var c = G.creeps[i];
-      if (c.lane !== lane || c.hp <= 0 || c.leaked || c.y < -0.2) continue;
+      if (c.lane !== lane || c.hp <= 0 || c.leaked || c.y < -1.6) continue; // đánh được cả giặc vừa ra khỏi trận pháp (tránh kẹt)
       if (exclude && exclude.indexOf(c.id) >= 0) continue;
       var dx = c.x - x, dy = c.y - y, dd = dx * dx + dy * dy;
       if (dd < bd) { bd = dd; best = c; }
@@ -690,7 +690,7 @@ var Sim = (function () {
     // đẩy nhẹ cho không chồng lên nhau
     var all = [];
     for (var i = 0; i < G.units.length; i++) { var u = G.units[i]; if (u.active && !u.dead) all.push(u); }
-    for (var j = 0; j < G.creeps.length; j++) { var c = G.creeps[j]; if (c.hp > 0 && !c.leaked && c.y > -0.5) all.push(c); }
+    for (var j = 0; j < G.creeps.length; j++) { var c = G.creeps[j]; if (c.hp > 0 && !c.leaked && c.y > -1.6) all.push(c); }
     for (var a = 0; a < all.length; a++) {
       var A = all[a], la = A.owner !== undefined ? A.owner : A.lane, ra = A.owner !== undefined ? 0.3 : 0.28 * CREEPS[A.type].size;
       for (var b = a + 1; b < all.length; b++) {
@@ -704,6 +704,7 @@ var Sim = (function () {
         }
       }
       if (A.x < 0.2) A.x = 0.2; if (A.x > LANE_W - 0.2) A.x = LANE_W - 0.2;
+      if (A.y < -1.5) A.y = -1.5; // không bị đẩy lùi vào trận pháp (tránh kẹt không đánh được)
     }
   }
 
