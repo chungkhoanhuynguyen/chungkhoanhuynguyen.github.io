@@ -1,6 +1,6 @@
 // ===== ÂM THANH tổng hợp bằng WebAudio (không cần file) =====
 var Sfx = (function () {
-  var ac = null, master, comp, musicGain, sfxGain, noiseBuf, on = true, musicOn = true;
+  var ac = null, master, comp, musicGain, sfxGain, noiseBuf, on = true, musicOn = true, ends = [];
   var last = {}, voices = 0;
   try { var sv = localStorage.getItem('ttld_sound'); if (sv === '0') on = false; var mv = localStorage.getItem('ttld_music'); if (mv === '0') musicOn = false; } catch (e) {}
 
@@ -18,8 +18,9 @@ var Sfx = (function () {
   }
   function ok(name, gap) {
     if (!ac || !on) return false;
+    if (ac.state === 'suspended') { try { ac.resume(); } catch (e) {} }
     var t = ac.currentTime; if (last[name] && t - last[name] < gap) return false;
-    if (voices > 26) return false;
+    var now = ac.currentTime; while (ends.length && ends[0] < now) ends.shift(); if (ends.length > 40) return false;
     last[name] = t; return true;
   }
   function env(g, t, a, peak, dec) { g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(peak, t + a); g.gain.exponentialRampToValueAtTime(0.0001, t + a + dec); }
@@ -27,8 +28,7 @@ var Sfx = (function () {
     var o = ac.createOscillator(), g = ac.createGain(); o.type = type; o.frequency.setValueAtTime(f, t);
     if (f2) o.frequency.exponentialRampToValueAtTime(f2, t + dur);
     env(g, t, a || 0.005, peak, dur); o.connect(g); g.connect(dest || sfxGain); o.start(t); o.stop(t + dur + 0.05);
-    voices++; o.onended = function () { voices--; };
-    return o;
+    ends.push(t + dur + 0.05); ends.sort(); return o;
   }
   function noise(t, dur, peak, ftype, f, q, dest, f2) {
     var s = ac.createBufferSource(); s.buffer = noiseBuf; s.playbackRate.value = 0.7 + Math.random() * 0.6;
@@ -36,7 +36,7 @@ var Sfx = (function () {
     if (f2) fl.frequency.exponentialRampToValueAtTime(f2, t + dur);
     var g = ac.createGain(); env(g, t, 0.003, peak, dur);
     s.connect(fl); fl.connect(g); g.connect(dest || sfxGain); s.start(t, Math.random()); s.stop(t + dur + 0.05);
-    voices++; s.onended = function () { voices--; };
+    ends.push(t + dur + 0.05); ends.sort();
   }
   var P = {
     slash: function () { if (!ok('slash', 0.05)) return; var t = ac.currentTime; noise(t, 0.09, 0.35, 'highpass', 2500, 0.7); osc('triangle', 900 + Math.random() * 500, t, 0.12, 0.08, 400); },
@@ -136,6 +136,6 @@ var Sfx = (function () {
     setFight: function (f) { fightMode = f; },
     toggle: function () { on = !on; if (master) master.gain.value = on ? 0.9 : 0; try { localStorage.setItem('ttld_sound', on ? '1' : '0'); } catch (e) {} return on; },
     toggleMusic: function () { musicOn = !musicOn; if (musicGain) musicGain.gain.value = musicOn ? 0.32 : 0; try { localStorage.setItem('ttld_music', musicOn ? '1' : '0'); } catch (e) {} return musicOn; },
-    isOn: function () { return on; }, isMusic: function () { return musicOn; }
+    dbg: function () { return { st: ac && ac.state, n: ends.length }; }, isOn: function () { return on; }, isMusic: function () { return musicOn; }
   };
 })();
