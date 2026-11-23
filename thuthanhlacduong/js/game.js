@@ -405,7 +405,7 @@
   ];
   let stI = 0, stDone = null, stTyping = null;
   function storyShow() { const [cls, txt] = STORY[stI]; $('stPic').className = cls; const el = $('stTxt'); el.textContent = ''; let k = 0; clearInterval(stTyping); stTyping = setInterval(() => { el.textContent = txt.slice(0, ++k); if (k >= txt.length) clearInterval(stTyping); }, 22); $('stNext').textContent = stI === STORY.length - 1 ? 'Giữ thành!' : 'Tiếp'; }
-  function playStory(cb) { let seen = false; try { seen = localStorage.getItem('ttld_story') === '1'; } catch (e) {} if (seen) { cb(); return; } stI = 0; stDone = cb; $('story').hidden = false; storyShow(); }
+  function playStory(cb) { let seen = false; try { seen = localStorage.getItem('ttld_story') === '1'; } catch (e) {} if (seen) { cb(); return; } try { localStorage.setItem('ttld_story', '1'); } catch (e) {} INTRO.start(cb); }
   function storyEnd() { clearInterval(stTyping); $('story').hidden = true; try { localStorage.setItem('ttld_story', '1'); } catch (e) {} const f = stDone; stDone = null; if (f) f(); }
   $('stNext').addEventListener('click', () => { Sfx.init(); Sfx.play('click'); if (++stI >= STORY.length) storyEnd(); else storyShow(); });
   $('stSkip').addEventListener('click', storyEnd);

@@ -242,7 +242,7 @@ var V = (function () {
       for (var sgn = -1; sgn <= 1; sgn += 2) { var cb = mesh(G('curb', function () { return new T.BoxGeometry(0.22, 0.22, 20); }), M('#a39680'), LCX[lane] + sgn * (HL + 0.12), 0.11, 0); cb.receiveShadow = true; scene.add(cb); }
       // đường vòng đá cuội cho giặc
       var roadM = new T.MeshLambertMaterial({ color: '#7a6450', map: (function () { var t2 = canvasTex(64, 64, function (g) { g.fillStyle = '#7a6450'; g.fillRect(0, 0, 64, 64); for (var i2 = 0; i2 < 50; i2++) { var v2 = 90 + Math.random() * 50 | 0; g.fillStyle = 'rgb(' + (v2 + 20) + ',' + (v2 + 8) + ',' + v2 + ')'; g.beginPath(); g.ellipse(Math.random() * 64, Math.random() * 64, 3 + Math.random() * 4, 2 + Math.random() * 3, Math.random() * 3, 0, 6.3); g.fill(); } }, [1, 4]); return t2; })() });
-      for (var pi = 0; pi < S.PATH.length - 1; pi++) { var A0 = W(lane, S.PATH[pi][0], S.PATH[pi][1], 0.03), B0 = W(lane, S.PATH[pi + 1][0], S.PATH[pi + 1][1], 0.03); var dv = new T.Vector3().subVectors(B0, A0), len = dv.length();
+      for (var pi = 0; pi < 0; pi++) { var A0 = W(lane, S.PATH[pi][0], S.PATH[pi][1], 0.03), B0 = W(lane, S.PATH[pi + 1][0], S.PATH[pi + 1][1], 0.03); var dv = new T.Vector3().subVectors(B0, A0), len = dv.length();
         var rd = new T.Mesh(new T.PlaneGeometry(1.25, len + 1.25), roadM); rd.rotation.x = -Math.PI / 2; rd.rotation.z = Math.atan2(dv.x, -dv.z) * -1; rd.position.copy(A0).add(B0).multiplyScalar(0.5); rd.position.y = 0.03; rd.receiveShadow = true; scene.add(rd);
         for (var ar = 0.3; ar < 0.95; ar += 0.33) { var am = new T.Mesh(G('arrow2', function () { var g = new T.CircleGeometry(0.22, 3); g.rotateX(-Math.PI / 2); return g; }), new T.MeshBasicMaterial({ color: '#ff8a65', transparent: true, opacity: 0.5 })); am.position.copy(A0).lerp(B0, ar); am.position.y = 0.045; am.rotation.y = Math.atan2(dv.x, dv.z) - Math.PI / 2; scene.add(am); } }
       // lưới xây
@@ -265,6 +265,7 @@ var V = (function () {
     buildLake();
     buildGrass();
     buildAmbient();
+    buildChests();
     buildProps();
     buildBackdrop();
     // vườn giữa
@@ -537,6 +538,45 @@ var V = (function () {
     });
   }
   var _tmpV3 = new T.Vector3();
+
+  // ---------- THÙNG VÀNG TÍCH LUỸ (đầy dần theo 5 mốc) ----------
+  var CHESTS = [];
+  function buildChests() {
+    for (var lane = 0; lane < 2; lane++) {
+      var g = new T.Group(); var side = lane === 0 ? 1 : -1; g.position.copy(W(lane, lane === 0 ? LW + 1.3 : -1.3, 9)); g.rotation.y = -side * 0.5;
+      var wood = M('#7a4a22'), band = M('#e8b04a', { em: '#8a5a00', ei: 0.4 });
+      g.add(mesh(new T.BoxGeometry(1.3, 0.7, 0.85), wood, 0, 0.35, 0));
+      [-0.45, 0, 0.45].forEach(function (x) { g.add(mesh(new T.BoxGeometry(0.08, 0.72, 0.88), band, x, 0.36, 0)); });
+      var lid = new T.Group(); lid.position.set(0, 0.7, -0.42); g.add(lid);
+      var lm = mesh(new T.CylinderGeometry(0.43, 0.43, 1.3, 16, 1, false, 0, Math.PI), wood, 0, 0, 0.42); lm.rotation.z = Math.PI / 2; lid.add(lm);
+      var lb = mesh(new T.TorusGeometry(0.44, 0.04, 6, 16, Math.PI), band, 0.45, 0, 0.42); lb.rotation.y = Math.PI / 2; lid.add(lb);
+      // đống vàng bên trong + trên miệng
+      var pile = new T.Group(); pile.position.y = 0.55; g.add(pile);
+      var cg = new T.CylinderGeometry(0.09, 0.09, 0.03, 10), cm = M('#ffcf40', { em: '#ff9d00', ei: 0.7 });
+      var coins = new T.InstancedMesh(cg, cm, 90), m4 = new T.Matrix4();
+      for (var i = 0; i < 90; i++) { var a = Math.random() * 6.28, r = Math.sqrt(Math.random()) * 0.5, h = Math.random() * 0.45 * (1 - r * 1.2); m4.compose(new T.Vector3(Math.cos(a) * r * 1.1, Math.max(0, h), Math.sin(a) * r * 0.65), new T.Quaternion().setFromEuler(new T.Euler(Math.random() - 0.5, 0, Math.random() - 0.5)), new T.Vector3(1, 1, 1)); coins.setMatrixAt(i, m4); }
+      coins.count = 0; pile.add(coins);
+      var gl = glowSprite('#ffd740', 2.2, 0); gl.position.y = 0.9; g.add(gl);
+      var lbl = new T.Sprite(new T.SpriteMaterial({ transparent: true, depthWrite: false })); lbl.position.y = 1.9; lbl.scale.set(2.4, 0.6, 1); g.add(lbl);
+      g.scale.setScalar(1.15); scene.add(g);
+      CHESTS.push({ g: g, lid: lid, coins: coins, glow: gl, lbl: lbl, tier: -1, lane: lane });
+    }
+  }
+  function chestLabel(c, tier, gold) {
+    var cv2 = document.createElement('canvas'); cv2.width = 256; cv2.height = 64; var g = cv2.getContext('2d');
+    g.fillStyle = 'rgba(20,10,4,.75)'; g.beginPath(); g.roundRect ? g.roundRect(4, 6, 248, 52, 14) : g.rect(4, 6, 248, 52); g.fill(); g.strokeStyle = '#e8b04a'; g.lineWidth = 3; g.stroke();
+    g.font = '800 26px "Be Vietnam Pro",sans-serif'; g.textAlign = 'center'; g.fillStyle = '#ffdf8a'; g.fillText('Tích luỹ ' + tier + '/5', 128, 42);
+    for (var i = 0; i < 5; i++) { g.fillStyle = i < tier ? '#ffd740' : 'rgba(255,255,255,.2)'; g.beginPath(); g.arc(40 + i * 44, 56, 0, 0, 6.3); g.fill(); }
+    if (c.lbl.material.map) c.lbl.material.map.dispose(); c.lbl.material.map = new T.CanvasTexture(cv2); c.lbl.material.needsUpdate = true;
+  }
+  function stepChests(G, t) {
+    CHESTS.forEach(function (c) {
+      var P = G.players[c.lane], tier = 0; S.SAVE.forEach(function (m, i) { if (P.gold >= m[0]) tier = i + 1; });
+      if (tier !== c.tier) { if (c.tier >= 0 && tier > c.tier) { coinBurst(c.g.position.clone().setY(1.2), 14); } c.tier = tier; c.coins.count = [0, 14, 30, 50, 70, 90][tier]; c.coins.instanceMatrix.needsUpdate = true; chestLabel(c, tier, P.gold); }
+      var open = tier > 0 ? 1.1 + tier * 0.08 : 0.15; c.lid.rotation.x += (-open - c.lid.rotation.x) * 0.1;
+      c.glow.material.opacity = tier ? 0.15 + tier * 0.09 + Math.sin(t * 3) * 0.05 : 0; c.glow.scale.setScalar(1.6 + tier * 0.35);
+    });
+  }
 
   // ---------- HIỆU ỨNG MÔI TRƯỜNG ----------
   var flies = null, embers = [], rays = [];
@@ -1426,7 +1466,7 @@ var V = (function () {
     if (water) { water.material.uniforms.time.value = t * 0.45; }
     TREES.forEach(function (tr, i) { tr.rotation.z = Math.sin(t * 1.4 + i) * 0.025 * wind; tr.rotation.x = Math.cos(t * 1.1 + i) * 0.015 * wind; });
     WILLOWS.forEach(function (w, wi) { w.userData.strands.forEach(function (st, si) { st.rotation.x = Math.sin(t * 1.6 + si * 0.7 + wi) * 0.12 * wind; st.rotation.z = Math.cos(t * 1.2 + si) * 0.08 * wind; }); });
-    stepAmbient(dt, t); stepNPCs(dt);
+    stepAmbient(dt, t); stepNPCs(dt); stepChests(G, t);
     SWAY.forEach(function (sw) { sw.o.rotation.x = Math.sin(t * 1.8 + sw.ph) * sw.a * wind; });
     LOTUS.forEach(function (lo, i) { if (lo.userData.drift) { lo.position.x += dt * lo.userData.drift; if (lo.position.x > MX + 36) lo.position.x = MX - 36; lo.position.y = -0.15 + Math.sin(t * 1.5 + i) * 0.03; } else if (lo.userData.boat) { lo.position.x = MX + 9 + Math.sin(t * 0.07) * 14; lo.rotation.z = Math.sin(t * 1.2) * 0.04; lo.position.y = -0.25 + Math.sin(t * 1.6) * 0.04; } else { lo.position.y = -0.27 + Math.sin(t * 1.3 + i * 0.7) * 0.02; lo.rotation.y += Math.sin(t * 0.5 + i) * 0.0008; } });
     updateCam(dt);
@@ -1482,7 +1522,7 @@ var V = (function () {
 
   function screenOf(lane, x, y, h) { return proj(W(lane, x, y, h || 0)); }
 
-  return { setCastleNames: function (a) { window.CASTLE_NAMES = a; PLAQUES.forEach(function (f) { if (f) f(); }); }, spawnNPCs: spawnNPCs, weapon3: weapon3, glowSprite: glowSprite, loadModels: loadModels, modelsReady: function () { return modelsReady; }, makeModel: makeModel, UNIT_MODEL: UNIT_MODEL, CREEP_MODEL: CREEP_MODEL, MASCOT_MODEL: MASCOT_MODEL, LW: LW, HL: HL, MX: MX, _VU: VU, init: init, resize: resize, frame: frame, onEvent: onEvent, setView: setView, cam: cam, pick: pick, setGhost: setGhost, setSelected: setSelected, initMascots: initMascots, mascots: mascots,
+  return { animHuman: animHuman, setCastleNames: function (a) { window.CASTLE_NAMES = a; PLAQUES.forEach(function (f) { if (f) f(); }); }, spawnNPCs: spawnNPCs, weapon3: weapon3, glowSprite: glowSprite, loadModels: loadModels, modelsReady: function () { return modelsReady; }, makeModel: makeModel, UNIT_MODEL: UNIT_MODEL, CREEP_MODEL: CREEP_MODEL, MASCOT_MODEL: MASCOT_MODEL, LW: LW, HL: HL, MX: MX, _VU: VU, init: init, resize: resize, frame: frame, onEvent: onEvent, setView: setView, cam: cam, pick: pick, setGhost: setGhost, setSelected: setSelected, initMascots: initMascots, mascots: mascots,
     screenOf: screenOf, fitDist: fitDist, W: W, LCX: LCX, renderIcon: null, cheer: function (p) { if (mascots[p]) mascots[p].cheer = 0.8; },
     makeHuman: makeHuman, makeBeast: makeBeast, makeMascot: makeMascot, getRenderer: function () { return renderer; }, getScene: function () { return scene; }, getCamera: function () { return camera; }, M: M, T: T };
 })();

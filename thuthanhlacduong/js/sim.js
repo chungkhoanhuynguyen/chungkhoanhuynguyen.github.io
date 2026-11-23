@@ -220,8 +220,8 @@ var Sim = (function () {
     var d = CREEPS[k], w = G.wave;
     var hm = hpScale(w), dm = dmgScale(w);
     if (d.send) { hm = 1 + 0.13 * (w - 1); dm = 1 + 0.08 * (w - 1); }
-    var hp = Math.round(d.hp * hm * (d.boss || d.send ? 1 : 1.85));
-    var c = { id: G.nextId++, lane: lane, type: k, x: 4.5 + G.rng() * 2, y: -0.8 - G.rng() * 0.8, wp: 1, hp: hp, max: hp,
+    var hp = Math.round(d.hp * hm * (d.boss || d.send ? 1 : 0.8));
+    var c = { id: G.nextId++, lane: lane, type: k, x: 1.2 + G.rng() * (LANE_W - 2.4), y: -0.6 - G.rng() * 0.8, hp: hp, max: hp,
       dmg: d.dmg * dm, cd: G.rng() * 0.5, tgt: 0, stun: 0, poison: 0, poisonT: 0, leaked: false, slow: 0, from: from, face: 1, atkAnim: 0, wob: G.rng() * 6 };
     G.creeps.push(c);
   }
@@ -473,11 +473,10 @@ var Sim = (function () {
         }
       } else {
         c.tgt = 0;
-        var wp = PATH[c.wp || 1], ox = dsin(c.wob) * 0.6, wx = wp[0] + ox, wy = wp[1];
-        var ddx = wx - c.x, ddy = wy - c.y, dl = Math.sqrt(ddx * ddx + ddy * ddy);
-        if (dl < 0.45) { c.wp = (c.wp || 1) + 1; if (c.wp >= PATH.length) { c.leaked = true; G.ev.push({ e: 'leak', lane: c.lane, x: c.x, y: c.y }); } }
-        else { c.x += ddx / dl * spd * DT; c.y += ddy / dl * spd * DT; }
-        c.moving = true; c.face = ddx >= 0 ? 1 : -1;
+        var tx = Math.max(1, Math.min(LANE_W - 1, c.x + dsin(c.wob + G.time * 0.7) * 0.4));
+        c.x += (tx - c.x) * 0.02;
+        c.y += spd * DT; c.moving = true; c.face = 1;
+        if (c.y >= LEAK_Y) { c.leaked = true; G.ev.push({ e: 'leak', lane: c.lane, x: c.x, y: c.y }); }
       }
     }
   }
