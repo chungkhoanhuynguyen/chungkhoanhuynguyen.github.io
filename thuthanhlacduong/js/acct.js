@@ -1,6 +1,6 @@
 // ===== TÀI KHOẢN: ID + mật khẩu (Firebase Auth), lưu rank trên mạng (Firestore ttld_players) =====
 var ACCT = (function () {
-  var cfg = { apiKey: 'AIzaSyCclpMymMk9lLZcilbntyyjCH3XAP_6My4', authDomain: 'chungkhoanhuynguyen-web.firebaseapp.com', projectId: 'chungkhoanhuynguyen-web', storageBucket: 'chungkhoanhuynguyen-web.firebasestorage.app', messagingSenderId: '495753057756', appId: '1:495753057756:web:7f46fd4224f7b93cb3eb19' };
+  var cfg = { apiKey: 'AIzaSyDuPm6aG0nltOIrTbtKMKMWgzGtQk5k7n8', authDomain: 'thuthanhlacduong.firebaseapp.com', projectId: 'thuthanhlacduong', storageBucket: 'thuthanhlacduong.firebasestorage.app', messagingSenderId: '827806903370', appId: '1:827806903370:web:b7d01cf63f504d000e8ab3' };
   var app = null, auth = null, db = null, user = null, prof = null, listeners = [];
   function ok() { return typeof firebase !== 'undefined'; }
   function init() {
