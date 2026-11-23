@@ -60,9 +60,9 @@
   }
   function showUnit(u) {
     const d = S.UNITS[u.type], p = $('pUnit'), mine = u.owner === ME, P = G.players[ME];
-    const canUp = mine && u.tier === 0 && (G.phase === 'build' || !u.active), refund = u.fresh ? u.spent : Math.floor(u.spent * 0.6);
-    p.innerHTML = `<button class="x" data-x>×</button><h3>${u.tier ? d.up.name : d.name}</h3><div class="sub">${d.name} · ${d.role}${mine ? '' : ' · của đối thủ'}</div>${statBlock(d, u)}${skillDesc(d)}` +
-      (mine ? `<div class="row">${u.tier === 0 ? `<button class="big bUp" data-up ${canUp && P.gold >= d.up.cost ? '' : 'disabled'}>Nâng cấp ${d.up.cost}</button>` : ''}<button class="big bSell" data-sell ${G.phase === 'build' || !u.active ? '' : 'disabled'}>Bán +${refund}</button></div>` : '');
+    const canUp = mine && u.tier < S.MAX_TIER && (G.phase === 'build' || !u.active), uc = S.upCost(u), refund = u.fresh ? u.spent : Math.floor(u.spent * 0.6);
+    p.innerHTML = `<button class="x" data-x>×</button><h3>${u.tier >= S.MAX_TIER ? d.up.name : d.name} <span style="color:#ffd740">${'★'.repeat(u.tier + 1)}${'☆'.repeat(S.MAX_TIER - u.tier)}</span></h3><div class="sub">Cấp ${u.tier + 1}/5 · ${d.role}${mine ? '' : ' · của đối thủ'}</div>${statBlock(d, u)}${skillDesc(d)}` +
+      (mine ? `<div class="row">${u.tier < S.MAX_TIER ? `<button class="big bUp" data-up ${canUp && P.gold >= uc ? '' : 'disabled'}>Lên cấp ${u.tier + 2} · ${uc}</button>` : '<span style="align-self:center;color:#ffd740;font-weight:800">Tối thượng</span>'}<button class="big bSell" data-sell ${G.phase === 'build' || !u.active ? '' : 'disabled'}>Bán +${refund}</button></div>` : '');
     p.hidden = false; p.dataset.id = u.id;
   }
   $('pUnit').addEventListener('click', (e) => {
@@ -125,7 +125,7 @@
     const h = V.pick(x, y); if (!h) return;
     $('quick').hidden = true; $('pSend').hidden = true;
     if (selCard && h.lane === ME) {
-      if (h.cy < S.BUILD_Y0 || h.cy > S.BUILD_Y1 || h.cx < 0 || h.cx > 8) { toast('Chỉ đặt được trong khu xây (ô sáng)'); Sfx.play('deny'); return; }
+      if (h.cy < S.BUILD_Y0 || h.cy > S.BUILD_Y1 || h.cx < 0 || h.cx > S.LANE_W - 1) { toast('Chỉ đặt được trong khu xây (ô sáng)'); Sfx.play('deny'); return; }
       const ex = G.units.find((u) => u.owner === ME && u.cx === h.cx && u.cy === h.cy);
       if (ex) { selectUnit(ex); return; }
       if (G.players[ME].gold < S.UNITS[selCard].cost) { toast('Không đủ vàng'); Sfx.play('deny'); return; }

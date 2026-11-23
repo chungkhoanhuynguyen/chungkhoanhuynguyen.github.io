@@ -133,7 +133,11 @@ var Sim = (function () {
   }
   function mkPlayer() { return { gold: 100, income: 14, hp: 30, value: 0, sendQ: [], ready: false, sentThisWave: 0, kills: 0, leaked: 0 }; }
 
-  function stat(u, k) { var d = UNITS[u.type], v = (u.tier > 0 && d.up[k] !== undefined) ? d.up[k] : d[k]; if (k === 'hp' && u.hpMul) v = Math.round(v * u.hpMul); return v; }
+  var MAX_TIER = 4, TIER_MUL = [1, 2.15, 3.5, 5.3, 7.8], TIER_COST = [1.2, 1.7, 2.4, 3.3];
+  function upCost(u) { return u.tier >= MAX_TIER ? 0 : Math.round(UNITS[u.type].cost * TIER_COST[u.tier]); }
+  function stat(u, k) { var d = UNITS[u.type], v = d[k];
+    if (k === 'amt' && v === undefined) v = d.skill.amt;
+    if (u.tier > 0) { if (k === 'hp' || k === 'dmg' || k === 'heal' || k === 'dot' || k === 'amt') v = v * TIER_MUL[u.tier]; else if (k === 'range' && !d.melee) v = v + 0.15 * u.tier; else if (k === 'chain') v = d.chain + (u.tier >= 3 ? 1 : 0); } if (k === 'hp' && u.hpMul) v = Math.round(v * u.hpMul); return v; }
 
   function cellFree(G, p, cx, cy) {
     for (var i = 0; i < G.units.length; i++) { var u = G.units[i]; if (u.owner === p && u.cx === cx && u.cy === cy) return false; }
@@ -156,10 +160,10 @@ var Sim = (function () {
       return true;
     }
     if (c.t === 'upgrade') {
-      var u2 = findUnit(G, c.id); if (!u2 || u2.owner !== c.p || u2.tier > 0) return false;
+      var u2 = findUnit(G, c.id); if (!u2 || u2.owner !== c.p || u2.tier >= MAX_TIER) return false;
       if (G.phase !== 'build' && u2.active) return false;
-      var up = UNITS[u2.type].up; if (P.gold < up.cost) return false;
-      P.gold -= up.cost; P.value += up.cost; u2.spent += up.cost; u2.tier = 1; u2.hp = stat(u2, 'hp');
+      var uc = upCost(u2); if (P.gold < uc) return false;
+      P.gold -= uc; P.value += uc; u2.spent += uc; u2.tier++; u2.hp = stat(u2, 'hp');
       G.ev.push({ e: 'upgrade', p: c.p, id: u2.id });
       return true;
     }
@@ -307,7 +311,7 @@ var Sim = (function () {
         G.ev.push({ e: 'skill', k: 'fan', lane: lane, x: u.x, y: u.y, id: u.id });
         break;
       case 'cloud':
-        G.zones.push({ lane: lane, x: tgt.x, y: tgt.y, r: s.r, dps: (u.tier ? 2.2 : 1) * s.dps, t: s.dur, dur: s.dur, owner: u.owner });
+        G.zones.push({ lane: lane, x: tgt.x, y: tgt.y, r: s.r, dps: TIER_MUL[u.tier] * s.dps, t: s.dur, dur: s.dur, owner: u.owner });
         G.projs.push({ k: 'poisonbomb', lane: lane, side: 0, x: u.x, y: u.y, sx: u.x, sy: u.y, tx: tgt.x, ty: tgt.y, t: 0, dur: 0.5, owner: u.owner });
         G.ev.push({ e: 'skill', k: 'cloud', lane: lane, x: tgt.x, y: tgt.y, id: u.id });
         break;
@@ -601,9 +605,9 @@ var Sim = (function () {
       mine.forEach(function (u) { var d = UNITS[u.type]; if (d.melee) front += u.spent; else if (d.heal || d.dot) sup += u.spent; else back += u.spent; });
       var avail = P.gold - reserve;
       // nâng cấp nếu có
-      var upCand = mine.filter(function (u) { return u.tier === 0 && UNITS[u.type].up.cost <= avail; });
+      var upCand = mine.filter(function (u) { return u.tier < MAX_TIER && upCost(u) <= avail; });
       if (upCand.length && (mine.length >= 7 || rng() < 0.35)) {
-        upCand.sort(function (a, b) { return UNITS[b.type].cost - UNITS[a.type].cost; });
+        upCand.sort(function (a, b) { return a.tier - b.tier || UNITS[b.type].cost - UNITS[a.type].cost; });
         if (apply(G, { t: 'upgrade', p: p, id: upCand[0].id })) continue;
       }
       var tot = front + back + sup + 1, pick;
@@ -640,7 +644,7 @@ var Sim = (function () {
   }
   var api = { DT: DT, LANE_W: LANE_W, BUILD_Y0: BUILD_Y0, BUILD_Y1: BUILD_Y1, LEAK_Y: LEAK_Y, GATE_Y: GATE_Y, MAX_WAVE: MAX_WAVE,
     UNITS: UNITS, UNIT_ORDER: UNIT_ORDER, CREEPS: CREEPS, SENDS: SENDS, SEND_ORDER: SEND_ORDER, WAVE_PATTERNS: WAVE_PATTERNS,
-    checksum: checksum, dsin: dsin, datan2: datan2, create: create, apply: apply, step: step, aiThink: aiThink, stat: stat, findUnit: findUnit, findCreep: findCreep, hpScale: hpScale };
+    upCost: upCost, MAX_TIER: MAX_TIER, checksum: checksum, dsin: dsin, datan2: datan2, create: create, apply: apply, step: step, aiThink: aiThink, stat: stat, findUnit: findUnit, findCreep: findCreep, hpScale: hpScale };
   if (typeof module !== 'undefined') module.exports = api;
   return api;
 })();
