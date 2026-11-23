@@ -908,13 +908,18 @@ var V = (function () {
   var SECT_CH = { thienvuong: '天', thieulam: '少', duongmon: '唐', ngudoc: '毒', ngamy: '峨', vodang: '武', conlon: '崑', caibang: '丐' };
   function sectBadge(type) {
     if (badgeCache[type]) return badgeCache[type];
-    return badgeCache[type] = canvasTex(64, 64, function (g) { g.fillStyle = '#fff8e1'; g.beginPath(); g.arc(32, 32, 29, 0, 6.3); g.fill(); g.lineWidth = 5; g.strokeStyle = S.UNITS[type].col2; g.stroke(); g.fillStyle = S.UNITS[type].col2; g.font = 'bold 38px serif'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(SECT_CH[type], 32, 34); });
+    return badgeCache[type] = canvasTex(64, 64, function (g) { g.fillStyle = '#fff8e1'; g.beginPath(); g.arc(32, 32, 29, 0, 6.3); g.fill(); g.lineWidth = 5; g.strokeStyle = S.UNITS[type].col2; g.stroke(); g.fillStyle = S.UNITS[type].col2; g.font = 'bold 38px serif'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(SECT_CH[type] || S.UNITS[type].ch, 32, 34); });
   }
   function visualUnit(u) {
     var v = VU[u.id];
+    if (!v && S.UNITS[u.type].hero) { // nhân vật chính = linh vật, chỉ cần khung giữ chỗ cho thanh máu
+      v = VU[u.id] = new T.Group(); v.userData.tier = -1; v.userData.hidden = 0; v.userData.pop = 1; v.userData.scaleBase = 1.25; v.userData.heroPH = true;
+      var hr = new T.Mesh(G('hring', function () { return new T.RingGeometry(0.55, 0.68, 32); }), new T.MeshBasicMaterial({ color: '#ffd740', transparent: true, opacity: 0.8, side: T.DoubleSide, depthWrite: false })); hr.rotation.x = -Math.PI / 2; hr.position.y = 0.04; v.add(hr);
+      scene.add(v); return v;
+    }
     if (!v) {
       var d = S.UNITS[u.type], um = UNIT_MODEL[u.type];
-      var g = makeHuman(R.LOOK[u.type], { weapon: d.weapon, wglow: u.type === 'vodang' ? '#7ab8ff' : null });
+      var g = makeHuman(S.UNITS[u.type].look, { weapon: d.weapon, wglow: d.wglow || null });
       if (g.userData.model || g.userData.card) { var sg = glowSprite(d.col, 0.9, 0.35); sg.position.y = 0.15; g.add(sg); }
       g.userData.tier = -1; g.userData.pop = 0; g.userData.hidden = 0.0;
       var ring = new T.Mesh(G('uring', function () { return new T.RingGeometry(0.34, 0.44, 24); }), new T.MeshBasicMaterial({ color: d.col, transparent: true, opacity: 0.85, side: T.DoubleSide, depthWrite: false }));
@@ -926,10 +931,11 @@ var V = (function () {
       var fl = mesh(G('fbanner', function () { var g2 = new T.PlaneGeometry(0.34, 0.62, 2, 4); g2.translate(0.17, -0.31, 0); return g2; }), M(d.col, { side: T.DoubleSide, em: d.col, ei: 0.25 }), 0.01, 2.45, 0, false);
       flagG.add(fl); flagG.add(mesh(G('ftip', function () { return new T.ConeGeometry(0.035, 0.12, 5); }), M('#ffd54f', { em: '#ffb300', ei: 0.8 }), 0, 2.56, 0, false));
       var emb = new T.Sprite(new T.SpriteMaterial({ map: sectBadge(u.type), transparent: true, depthWrite: false })); emb.scale.set(0.26, 0.26, 1); emb.position.set(0.18, 2.12, 0.02); flagG.add(emb);
-      g.add(flagG); g.userData.flag = fl;
+      if (u.summon) { g.scale.setScalar(0.8); g.userData.scaleBase = 0.8; ring.material.opacity = 0.4; var sp0 = glowSprite(d.fxc || d.col, 1.3, 0.5); sp0.position.y = 0.2; g.add(sp0); } else { g.add(flagG); g.userData.flag = fl; }
       ring.rotation.x = -Math.PI / 2; ring.position.y = 0.03; g.add(ring); g.userData.ring = ring;
       scene.add(g); v = VU[u.id] = g;
     }
+    if (v.userData.heroPH) { if (v.userData.tier !== u.tier) { v.userData.tier = u.tier; v.children[0].material.color.set(TIER_COL[u.tier] || '#ffd740'); v.children[0].scale.setScalar(1 + 0.15 * u.tier); } return v; }
     if (v.userData.tier !== u.tier) { v.userData.tier = u.tier; tierFX(v, u); }
     return v;
   }
@@ -1081,10 +1087,11 @@ var V = (function () {
         var p3 = W(e.lane, e.x, e.y);
         if (e.fx === 'thunder') {
           var top = W(e.lane, e.x + 0.6, e.y - 0.5, 11);
-          boltLine([top, W(e.lane, e.x - 0.3, e.y + 0.2, 6), W(e.lane, e.x + 0.2, e.y, 2.5), W(e.lane, e.x, e.y, 0.05)], '#40c4ff', 0.45, 0.06);
-          ringFX(p3, '#80d8ff', 0.3, e.r * 1.3, 0.6); burst(W(e.lane, e.x, e.y, 0.2), '#e1f5fe', 22, 6, 0.3, 0.6, 8); pillar(p3, '#80d8ff', 5, 0.35, 0.8); shakeCam(0.35);
-          flashLight(p3, '#80d8ff', 0.25);
-        } else { ringFX(p3, '#82b1ff', 0.1, 0.9, 0.35); burst(W(e.lane, e.x, e.y, 0.15), '#bbdefb', 6, 3, 0.18, 0.35, 6); }
+          var tcl = e.c || '#40c4ff'; boltLine([top, W(e.lane, e.x - 0.3, e.y + 0.2, 6), W(e.lane, e.x + 0.2, e.y, 2.5), W(e.lane, e.x, e.y, 0.05)], tcl, 0.45, e.big ? 0.1 : 0.06);
+          if (e.big) boltLine([W(e.lane, e.x - 0.8, e.y + 0.4, 11), W(e.lane, e.x + 0.4, e.y - 0.2, 5), W(e.lane, e.x, e.y, 0.05)], '#ffffff', 0.35, 0.04);
+          ringFX(p3, tcl, 0.3, e.r * 1.3, 0.6); burst(W(e.lane, e.x, e.y, 0.2), '#ffffff', 22, 6, 0.3, 0.6, 8); pillar(p3, tcl, e.big ? 7 : 5, e.big ? 0.6 : 0.35, 0.8); shakeCam(e.big ? 0.45 : 0.35);
+          flashLight(p3, tcl, 0.25);
+        } else { ringFX(p3, e.c || '#82b1ff', 0.1, 0.9, 0.35); burst(W(e.lane, e.x, e.y, 0.15), e.c || '#bbdefb', 6, 3, 0.18, 0.35, 6); }
         break;
       }
       case 'healed': ftext(W(e.lane, e.x, e.y, 1.25), '+' + Math.round(e.v), '#69f0ae', 13, 0.8); burst(W(e.lane, e.x, e.y, 0.5), '#69f0ae', 4, 1, 0.2, 0.6, -1.5); break;
@@ -1131,30 +1138,54 @@ var V = (function () {
   }
   var flashes = [];
   function flashLight(p, col, life) {
-    var l = new T.PointLight(col, 4, 8); l.position.copy(p).setY(2);
-    addFX({ obj: l, t: 0, life: life, up: function (f, dt, k) { f.obj.intensity = 4 * (1 - k); } });
+    // không thêm đèn động (đổi số đèn => biên dịch lại shader => giật); dùng quầng sáng thay thế
+    if (FX.length > 160) return;
+    var l = glowSprite(col, 4, 0.55); l.material = l.material.clone(); l.position.copy(p).setY(1.2);
+    addFX({ obj: l, t: 0, life: life, up: function (f, dt, k) { f.obj.material.opacity = 0.55 * (1 - k); }, dispose: true });
   }
   function skillName(e, G) {
     var u = S.findUnit(G, e.id); if (!u) return;
-    ftext(W(e.lane, u.x, u.y, 2.4), S.UNITS[u.type].skill.name, S.UNITS[u.type].col, 15, 1.3, 0.7, 'serif');
+    var d = S.UNITS[u.type]; if (!d.ult) { var nTl = 0, dup = false; TXT.forEach(function (x) { if (x.tl) { nTl++; if (x.s === d.skill.name) dup = true; } }); if (dup || nTl >= 2) return; }
+    var stack = 0; TXT.forEach(function (x) { if (x.tl && x.t < x.life * 0.8) stack++; });
+    TXT.push({ oy: -stack * 34, p: W(e.lane, u.x, u.y, d.ult ? 3.0 : 2.5), s: d.skill.name, c: d.fxc || d.col, z: d.ult ? 30 : 19, t: 0, life: d.ult ? 1.9 : 1.4, rise: 0.5, tl: true, big: !!d.ult });
   }
   function skillFX(e, G) {
     var p = W(e.lane, e.x, e.y);
-    var cu = S.findUnit(G, e.id); if (cu) cu._castT = (cu._castT || 0) + 1;
+    var cu = S.findUnit(G, e.id); if (cu) { cu._castT = (cu._castT || 0) + 1; if (cu.hero && mascots[cu.owner]) mascots[cu.owner].castId = (mascots[cu.owner].castId || 0) + 1; }
     skillName(e, G);
+    var ec = e.c || '#ffd740', bk = e.big ? 1.6 : 1;
+    if (e.big) { pillar(p, ec, 7, 0.9, 1.0); ringFX(p, ec, 0.3, (e.r || 2) * 1.6, 0.9, runeTex, 0.9); flashLight(p, ec, 0.35); shakeCam(0.3); }
     switch (e.k) {
+      case 'summon':
+        for (var si = 0; si < 3; si++) ringFX(p, ec, 0.1 + si * 0.2, 1.4 + si * 0.4, 0.5 + si * 0.15, runeTex, 0.8);
+        pillar(p, ec, 4, 0.6, 0.8); burst(p.clone().setY(0.4), ec, 26, 4, 0.25, 0.7, -2); flashLight(p, ec, 0.25);
+        break;
+      case 'drain':
+        ringFX(p, ec, e.r * 1.4, 0.2, 0.8, runeTex, 0.9); ringFX(p, '#ffffff', e.r * 1.1, 0.1, 0.6);
+        for (var dj = 0; dj < 30; dj++) (function () { var a = Math.random() * 6.28, r = e.r * (0.6 + Math.random() * 0.6); var sp = glowSprite(dj % 3 ? ec : '#ffffff', 0.35, 1); sp.material = sp.material.clone(); sp.position.set(p.x + Math.cos(a) * r, 0.4 + Math.random(), p.z + Math.sin(a) * r); var o = sp.position.clone();
+          addFX({ obj: sp, t: 0, life: 0.7, up: function (f, dt, k) { f.obj.position.lerpVectors(o, p.clone().setY(1.2), k * k); f.obj.material.opacity = 1 - k * 0.5; }, dispose: true }); })();
+        pillar(p, ec, 5, 0.7, 0.8); shakeCam(0.2);
+        break;
+      case 'lotus':
+        var lt2 = new T.Mesh(G2('plane1', function () { return new T.PlaneGeometry(1, 1); }), new T.MeshBasicMaterial({ map: lotusTex, color: '#ff80ab', transparent: true, blending: T.AdditiveBlending, depthWrite: false }));
+        lt2.rotation.x = -Math.PI / 2; lt2.position.copy(p).setY(0.1);
+        addFX({ obj: lt2, t: 0, life: 1.3, up: function (f, dt, k) { var sc2 = e.r * 2.6 * Math.min(1, k * 3); f.obj.scale.set(sc2, sc2, 1); f.obj.rotation.z -= dt * 1.2; f.obj.material.opacity = k < 0.6 ? 1 : (1 - k) / 0.4; }, dispose: true });
+        for (var lj = 0; lj < 8; lj++) { var la = lj / 8 * 6.28; pillar(p.clone().add(new T.Vector3(Math.cos(la) * e.r * 0.7, 0, Math.sin(la) * e.r * 0.7)), '#ff80ab', 2.5, 0.25, 0.7); }
+        burst(p.clone().setY(0.5), '#ffc1d9', 30, 4, 0.25, 0.9, -1); flashLight(p, '#ff80ab', 0.3);
+        break;
       case 'whirl':
         for (var i = 0; i < 3; i++) (function (i) {
-          var m = new T.Mesh(G2('whirl', function () { return new T.TorusGeometry(1, 0.06, 6, 32, Math.PI * 1.3); }), new T.MeshBasicMaterial({ color: '#ffd740', transparent: true, blending: T.AdditiveBlending, depthWrite: false }));
+          var m = new T.Mesh(G2('whirl', function () { return new T.TorusGeometry(1, 0.06, 6, 32, Math.PI * 1.3); }), new T.MeshBasicMaterial({ color: ec, transparent: true, blending: T.AdditiveBlending, depthWrite: false }));
           m.position.copy(p).setY(0.35 + i * 0.2); m.rotation.x = Math.PI / 2;
           addFX({ obj: m, t: 0, life: 0.55, up: function (f, dt, k) { f.obj.rotation.z += dt * 18; var s = e.r * (0.5 + k * 0.6); f.obj.scale.set(s, s, 1); f.obj.material.opacity = 1 - k; }, dispose: true });
         })(i);
-        burst(p.clone().setY(0.3), '#ffe082', 18, 4, 0.2, 0.5, 2);
+        burst(p.clone().setY(0.3), ec, 18 * bk, 4 * bk, 0.2, 0.5, 2);
+        if (e.sw) for (var wk = 0; wk < 8; wk++) { var swk = swordMesh(ec, 0.9); var wa = wk / 8 * 6.28; swk.position.copy(p).setY(0.8); swk.rotation.z = Math.PI / 2; (function (swk, wa) { addFX({ obj: swk, t: 0, life: 0.6, up: function (f, dt, k) { var rr = e.r * k; f.obj.position.set(p.x + Math.cos(wa + k * 3) * rr, 0.8, p.z + Math.sin(wa + k * 3) * rr); f.obj.rotation.y = -(wa + k * 3); }, disposeGroup: true }); })(swk, wa); }
         break;
       case 'shock':
-        ringFX(p, '#ffc107', 0.2, e.r * 1.2, 0.6); ringFX(p, '#fff59d', 0.1, e.r * 0.8, 0.45);
-        pillar(p, '#ffd740', 3.5, 0.5, 0.7);
-        var palm = new T.Mesh(G2('plane1', function () { return new T.PlaneGeometry(1, 1); }), new T.MeshBasicMaterial({ map: lotusTex, color: '#ffca28', transparent: true, blending: T.AdditiveBlending, depthWrite: false }));
+        ringFX(p, e.toad ? '#aeea00' : ec, 0.2, e.r * 1.2, 0.6); ringFX(p, '#fff59d', 0.1, e.r * 0.8, 0.45);
+        pillar(p, ec, 3.5 * bk, 0.5 * bk, 0.7);
+        var palm = new T.Mesh(G2('plane1', function () { return new T.PlaneGeometry(1, 1); }), new T.MeshBasicMaterial({ map: lotusTex, color: e.toad ? '#aeea00' : ec, transparent: true, blending: T.AdditiveBlending, depthWrite: false }));
         palm.rotation.x = -Math.PI / 2; palm.position.copy(p).setY(0.08);
         addFX({ obj: palm, t: 0, life: 0.7, up: function (f, dt, k) { var s = e.r * 2 * (0.5 + k * 0.6); f.obj.scale.set(s, s, 1); f.obj.material.opacity = 1 - k; }, dispose: true });
         burst(p.clone().setY(0.2), '#ffe082', 20, 5, 0.22, 0.5, 6); shakeCam(0.2);
@@ -1170,17 +1201,19 @@ var V = (function () {
       case 'swordrain':
         G.strikes.forEach(function (s) {
           if (s._v || s.fx !== 'sword' || s.lane !== e.lane) return; s._v = 1;
-          var sw = swordMesh('#7ab8ff', 1.4); var target = W(s.lane, s.x, s.y, 0.15), tt = s.t;
+          var sw = swordMesh(s.col || '#7ab8ff', e.big ? 1.8 : 1.4); var target = W(s.lane, s.x, s.y, 0.15), tt = s.t;
           sw.rotation.set(Math.PI, 0, 0); sw.position.copy(target).setY(9);
-          var gs = glowSprite('#448aff', 1.2, 0.9); sw.add(gs);
+          var gs = glowSprite(s.col || '#448aff', e.big ? 1.6 : 1.2, 0.9); sw.add(gs); if (e.wind) { var gs2 = glowSprite('#b2ebf2', 2.4, 0.5); gs2.position.y = 0.8; sw.add(gs2); }
           addFX({ obj: sw, t: 0, life: tt + 0.15, up: function (f, dt, k) { var kk = Math.min(1, f.t / tt); f.obj.position.y = 9 - 8.85 * kk * kk; f.obj.visible = true; }, disposeGroup: true });
         });
-        ringFX(p, '#448aff', e.r * 1.2, e.r * 1.2, 0.9, runeTex, 0.8);
+        ringFX(p, ec, e.r * 1.2, e.r * 1.2, 0.9, runeTex, 0.8);
+        if (e.wind) for (var wi = 0; wi < 4; wi++) ringFX(p.clone().setY(0.5 + wi * 0.8), wi % 2 ? '#ffffff' : '#80deea', e.r * 1.5, e.r * 0.3, 0.9);
         break;
       case 'thunder':
-        ringFX(p, '#40c4ff', e.r, e.r, 0.5, runeTex, 0.9);
+        ringFX(p, ec, e.r, e.r, 0.5, runeTex, 0.9);
         break;
-      case 'dragon': shakeCam(0.15); break;
+      case 'dragon': shakeCam(e.n > 1 ? 0.5 : 0.15); if (e.n > 1) { flashLight(p, ec, 0.4); burst(p.clone().setY(0.6), ec, 30, 6, 0.3, 0.7, 2); } break;
+      case 'fan': if (e.big) { for (var fi = 0; fi < 3; fi++) ringFX(p.clone().setY(1), ec, 0.1, 1.2 + fi * 0.5, 0.4 + fi * 0.1); } break;
     }
   }
   function G2(k, f) { return G(k, f); }
@@ -1199,12 +1232,14 @@ var V = (function () {
     var g = new T.Group(), col;
     switch (p.k) {
       case 'dart': case 'fandart':
-        col = p.k === 'dart' ? '#b2ff59' : '#ffd740';
+        col = p.col || (p.k === 'dart' ? '#b2ff59' : '#ffd740');
+        if (p.vis === 'sword') { var fsw = swordMesh(col, 0.8); fsw.rotation.z = -Math.PI / 2; g.add(fsw); g.userData.trail = col; g.userData.ts = 0.45; break; }
+        if (p.vis === 'bee') { g.add(mesh(sph(0.07, 8, 6), M('#ffd600', { em: '#ffab00', ei: 1.2 }), 0, 0, 0, false)); g.add(glowSprite('#fff59d', 0.5, 0.9)); g.userData.trail = '#fff59d'; g.userData.ts = 0.2; break; }
         var nd = mesh(G('needle', function () { var c = new T.ConeGeometry(0.03, 0.34, 4); c.rotateZ(-Math.PI / 2); return c; }), new T.MeshBasicMaterial({ color: '#ffffff' }), 0, 0, 0, false);
         g.add(nd); g.add(glowSprite(col, 0.5, 0.9)); g.userData.trail = col; g.userData.ts = 0.26; break;
-      case 'poison': col = '#76ff03'; g.add(mesh(sph(0.1, 10, 8), M('#64dd17', { em: '#76ff03', ei: 1.5 }), 0, 0, 0, false)); g.add(glowSprite(col, 0.8, 0.8)); g.userData.trail = '#33691e'; g.userData.ts = 0.3; g.userData.bub = 1; break;
+      case 'poison': col = p.col || '#76ff03'; g.add(mesh(sph(0.1, 10, 8), M('#64dd17', { em: '#76ff03', ei: 1.5 }), 0, 0, 0, false)); g.add(glowSprite(col, 0.8, 0.8)); g.userData.trail = '#33691e'; g.userData.ts = 0.3; g.userData.bub = 1; break;
       case 'petal': case 'healorb': col = '#ff80ab'; g.add(glowSprite(col, 0.75, 1)); for (var i = 0; i < 3; i++) { var pt = mesh(G('petal', function () { var s = new T.SphereGeometry(0.06, 6, 4); s.scale(1, 0.3, 2); return s; }), M('#ffc1d9', { em: '#ff80ab', ei: 1 }), 0, 0, 0, false); g.add(pt); } g.userData.orbit = 1; g.userData.trail = p.k === 'healorb' ? '#69f0ae' : '#ff80ab'; g.userData.ts = 0.3; break;
-      case 'sword': col = '#7ab8ff'; var sw = swordMesh('#448aff', 0.75); sw.rotation.z = -Math.PI / 2; g.add(sw); g.userData.trail = '#448aff'; g.userData.ts = 0.4; break;
+      case 'sword': col = p.col || '#7ab8ff'; var sw = swordMesh(p.col || '#448aff', 0.75); sw.rotation.z = -Math.PI / 2; g.add(sw); g.userData.trail = p.col || '#448aff'; g.userData.ts = 0.4; break;
       case 'arrow': g.add(mesh(G('arrow', function () { var c = new T.CylinderGeometry(0.012, 0.012, 0.5, 4); c.rotateZ(Math.PI / 2); return c; }), M('#8d6e63'), 0, 0, 0, false)); g.add(mesh(G('ahead', function () { var c = new T.ConeGeometry(0.03, 0.08, 4); c.rotateZ(-Math.PI / 2); c.translate(0.27, 0, 0); return c; }), M('#cfd8dc'), 0, 0, 0, false)); break;
       case 'dragon': return dragonVisual(p);
       case 'poisonbomb': g.add(mesh(sph(0.16, 10, 8), M('#64dd17', { em: '#76ff03', ei: 1.2 }), 0, 0, 0, false)); g.add(glowSprite('#76ff03', 1.1, 0.9)); g.userData.trail = '#76ff03'; g.userData.ts = 0.35; break;
@@ -1214,14 +1249,14 @@ var V = (function () {
   function dragonVisual(p) {
     var g = new T.Group(); g.userData.dragon = true; g.userData.hist = [];
     var segs = [];
-    var mat = M('#ffca28', { em: '#ff8f00', ei: 1.4 }), mat2 = M('#ffe082', { em: '#ffb300', ei: 1.2 });
+    var dc = p.col || '#ffca28', mat = M(dc, { em: shade(dc, -0.35), ei: 1.4 }), mat2 = M(shade(dc, 0.4), { em: dc, ei: 1.2 });
     for (var i = 0; i < 16; i++) { var r = 0.2 * (1 - i / 22); var s = mesh(sph(0.2, 10, 8), i % 2 ? mat : mat2, 0, 0, 0, false); s.scale.setScalar(r / 0.2); g.add(s); segs.push(s);
       if (i % 3 === 1) { var fin = mesh(cone(0.05, 0.2, 4), M('#ff6f00', { em: '#ff3d00', ei: 1 }), 0, 0.18 * (r / 0.2), 0, false); s.add(fin); } }
     var head = new T.Group();
     head.add(mesh(G('dhead', function () { var c = new T.SphereGeometry(0.26, 12, 10); c.scale(1.4, 0.9, 1); return c; }), mat, 0, 0, 0, false));
     head.add(mesh(G('djaw', function () { var c = new T.ConeGeometry(0.16, 0.42, 6); c.rotateZ(-Math.PI / 2); return c; }), mat2, 0.32, -0.04, 0, false));
     for (var s2 = -1; s2 <= 1; s2 += 2) { var horn = mesh(cone(0.04, 0.34, 5), M('#fff8e1', { em: '#ffe082', ei: 0.8 }), -0.12, 0.2, s2 * 0.12, false); horn.rotation.z = 0.9; head.add(horn); head.add(mesh(sph(0.04, 6, 4), M('#ff1744', { em: '#ff1744', ei: 2 }), 0.15, 0.08, s2 * 0.13, false)); var wh = mesh(cyl(0.01, 0.005, 0.5, 3), M('#fff59d', { em: '#fff59d', ei: 1 }), 0.2, -0.05, s2 * 0.15, false); wh.rotation.z = 1.2; wh.rotation.x = s2 * 0.5; head.add(wh); }
-    head.add(glowSprite('#ffab00', 1.8, 0.8));
+    head.add(glowSprite(dc, 1.8, 0.8));
     g.add(head); g.userData.segs = segs; g.userData.head = head;
     scene.add(g); return g;
   }
@@ -1252,14 +1287,22 @@ var V = (function () {
   }
   function U0(v) { return v.userData.model; }
   function stepMascot(m, dt, t, G) {
-    var v = m.v, moving = false;
+    var v = m.v, moving = false, hero = null;
+    for (var hi = 0; hi < G.units.length; hi++) if (G.units[hi].hero && G.units[hi].owner === m.lane) { hero = G.units[hi]; break; }
     if (m.cast > 0) { m.cast -= dt; }
     else if (m.q.length) {
       var q = m.q[0], dx = q.x - m.x, dy = q.y - m.y, dd = Math.hypot(dx, dy), sp = 14 * dt;
       if (dd <= sp + 0.3) { m.x = q.x - (dx / (dd || 1)) * 0.45; m.y = q.y - (dy / (dd || 1)) * 0.45; m.q.shift(); m.cast = 0.25; m.castId = (m.castId || 0) + 1; m.face = Math.atan2(dx, -dy); }
       else { m.x += dx / dd * sp; m.y += dy / dd * sp; moving = true; m.face = Math.atan2(dx, -dy); if (Math.random() < 0.8) trailPuff(W(m.lane, m.x, m.y, 0.7), R.MASCOTS[m.key].aura, 0.7); }
+    } else if (hero && G.phase === 'fight' && hero.active) {
+      v.visible = !hero.dead;
+      var hx0 = hero.x, hy0 = hero.y, dx3 = hx0 - m.x, dy3 = hy0 - m.y, d3 = Math.hypot(dx3, dy3);
+      if (d3 > 0.02) { var s3 = Math.min(d3, Math.max(3, d3 * 8) * dt); m.x += dx3 / d3 * s3; m.y += dy3 / d3 * s3; moving = !!hero.moving; }
+      var tc = hero.tgt && S.findCreep(G, hero.tgt); if (tc) m.face = Math.atan2(tc.x - m.x, -(tc.y - m.y)); else if (moving) m.face = Math.atan2(dx3, -dy3);
+      if (hero.atkAnim > 0.2 && !m._atk) { m._atk = 1; m.castId = (m.castId || 0) + 1; } else if (hero.atkAnim <= 0) m._atk = 0;
     } else {
-      var h = mascotHome(m.lane), dx2 = h.x - m.x, dy2 = h.y - m.y, d2 = Math.hypot(dx2, dy2);
+      v.visible = true;
+      var h = hero ? { x: hero.cx + 0.5, y: hero.cy + 0.5 } : mascotHome(m.lane), dx2 = h.x - m.x, dy2 = h.y - m.y, d2 = Math.hypot(dx2, dy2);
       if (d2 > 0.1) { var s2 = Math.min(d2, 5 * dt); m.x += dx2 / d2 * s2; m.y += dy2 / d2 * s2; moving = true; m.face = Math.atan2(dx2, -dy2); }
       else m.face = 0;
     }
@@ -1347,7 +1390,7 @@ var V = (function () {
     ghost.visible = true;
     if (ghostType !== type) {
       if (ghostMesh) ghost.remove(ghostMesh);
-      ghostMesh = makeHuman(R.LOOK[type], { weapon: S.UNITS[type].weapon });
+      ghostMesh = makeHuman(S.UNITS[type].look, { weapon: S.UNITS[type].weapon });
       ghostMesh.traverse(function (o) { if (o.isMesh) { o.material = o.material.clone(); o.material.transparent = true; o.material.opacity = 0.55; o.castShadow = false; } });
       ghost.add(ghostMesh); ghostType = type;
     }
@@ -1375,6 +1418,7 @@ var V = (function () {
       var pr = lerpPos(u, alpha), pos = W(u.owner, pr[0], pr[1]);
       if (v.userData.hidden > 0) { v.userData.hidden -= dt; v.visible = v.userData.hidden <= 0; if (v.visible) v.userData.pop = 0.0001; }
       v.position.copy(pos);
+      if (v.userData.heroPH) { v.scale.setScalar(1); v.visible = !u.dead; v.children[0].rotation.z = t; continue; }
       var sb = (v.userData.scaleBase || 1) * 1.0;
       if (v.userData.pop > 0 && v.userData.pop < 1) { v.userData.pop = Math.min(1, v.userData.pop + dt * 3); var k = v.userData.pop, el = 1 + Math.sin(k * Math.PI * 2.5) * (1 - k) * 0.5; v.scale.setScalar(sb * k * el); } else v.scale.setScalar(sb);
       var tgt = u.tgt ? S.findCreep(G, u.tgt) : null, ang;
@@ -1433,7 +1477,7 @@ var V = (function () {
       liveZ.add(z); var zv = VZ.get(z);
       if (!zv) {
         zv = new T.Group();
-        var d1 = new T.Mesh(G2('plane1', null), new T.MeshBasicMaterial({ map: smokeTex, color: '#76ff03', transparent: true, opacity: 0.8, blending: T.AdditiveBlending, depthWrite: false })); d1.rotation.x = -Math.PI / 2; d1.position.y = 0.08; zv.add(d1);
+        var d1 = new T.Mesh(G2('plane1', null), new T.MeshBasicMaterial({ map: smokeTex, color: z.col || '#76ff03', transparent: true, opacity: 0.8, blending: T.AdditiveBlending, depthWrite: false })); d1.rotation.x = -Math.PI / 2; d1.position.y = 0.08; zv.add(d1);
         var d2 = new T.Mesh(G2('plane1', null), new T.MeshBasicMaterial({ map: runeTex, color: '#aa00ff', transparent: true, opacity: 0.6, blending: T.AdditiveBlending, depthWrite: false })); d2.rotation.x = -Math.PI / 2; d2.position.y = 0.07; zv.add(d2);
         zv.position.copy(W(z.lane, z.x, z.y)); scene.add(zv); VZ.set(z, zv);
       }
@@ -1503,7 +1547,7 @@ var V = (function () {
       g.fillStyle = v.userData.poison ? '#9ccc65' : '#ff5252'; g.fillRect(s.x - w / 2, s.y, w * Math.max(0, v.userData.hp), 3);
     }
     for (var i = 0; i < G.units.length; i++) {
-      var u = G.units[i]; if (u.dead || !u.active) continue; var mx = S.stat(u, 'hp'); if (u.hp >= mx) continue;
+      var u = G.units[i]; if (u.dead || !u.active) continue; var mx = S.stat(u, 'hp'); if (u.hero) { var vh = VU[u.id]; if (!vh) continue; var sh = proj(tmpV.set(vh.position.x, 2.7, vh.position.z)); g.fillStyle = 'rgba(0,0,0,0.7)'; g.fillRect(sh.x - 26, sh.y - 2, 52, 8); g.fillStyle = '#ffd740'; g.fillRect(sh.x - 25, sh.y - 1, 50 * u.hp / mx, 6); continue; } if (u.hp >= mx) continue;
       var vu = VU[u.id]; if (!vu) continue; var s2 = proj(tmpV.set(vu.position.x, 2.05 * (vu.userData.scaleBase || 1), vu.position.z));
       g.fillStyle = 'rgba(0,0,0,0.6)'; g.fillRect(s2.x - 14, s2.y - 1, 28, 5); g.fillStyle = u.owner === 0 ? '#4fc3ff' : '#ffab40'; g.fillRect(s2.x - 13, s2.y, 26 * u.hp / mx, 3);
     }
@@ -1511,9 +1555,18 @@ var V = (function () {
     // chữ nổi
     for (var k = TXT.length - 1; k >= 0; k--) {
       var tx = TXT[k]; tx.t += 1 / 60; var kk = tx.t / tx.life; if (kk >= 1) { TXT.splice(k, 1); continue; }
-      var sp = proj(tmpV.set(tx.p.x, tx.p.y + tx.rise * kk, tx.p.z)); if (!sp.vis) continue;
+      var sp = proj(tmpV.set(tx.p.x, tx.p.y + tx.rise * kk, tx.p.z)); if (!sp.vis) continue; if (tx.oy) sp = { x: sp.x, y: sp.y + tx.oy, vis: true };
       var sc = kk < 0.15 ? 0.6 + kk / 0.15 * 0.6 : kk < 0.3 ? 1.2 - (kk - 0.15) / 0.15 * 0.2 : 1;
       g.globalAlpha = kk > 0.7 ? (1 - kk) / 0.3 : 1;
+      if (tx.tl) { // chữ tuyệt chiêu kiểu Thiên Long Bát Bộ: phóng to từ lớn về, vàng kim viền màu phái, toả sáng
+        var z0 = Math.round(tx.z * (kk < 0.12 ? 2.2 - kk / 0.12 * 1.2 : 1)); g.font = 'italic 900 ' + z0 + 'px "Playfair Display", serif'; g.textAlign = 'center'; g.textBaseline = 'middle';
+        var w0 = g.measureText(tx.s).width; if (tx.big) { var bg = g.createLinearGradient(sp.x - w0 * 0.7, 0, sp.x + w0 * 0.7, 0); bg.addColorStop(0, 'rgba(0,0,0,0)'); bg.addColorStop(0.5, 'rgba(10,4,0,0.55)'); bg.addColorStop(1, 'rgba(0,0,0,0)'); g.fillStyle = bg; g.fillRect(sp.x - w0 * 0.7, sp.y - z0 * 0.75, w0 * 1.4, z0 * 1.5); }
+        g.shadowColor = tx.c; g.shadowBlur = tx.big ? 22 : 12; g.lineWidth = tx.big ? 6 : 4.5; g.strokeStyle = 'rgba(30,8,0,0.95)'; g.strokeText(tx.s, sp.x, sp.y);
+        var gr = g.createLinearGradient(0, sp.y - z0 / 2, 0, sp.y + z0 / 2); gr.addColorStop(0, '#fffbe6'); gr.addColorStop(0.45, '#ffe082'); gr.addColorStop(0.55, '#ffb300'); gr.addColorStop(1, tx.c);
+        g.fillStyle = gr; g.fillText(tx.s, sp.x, sp.y); g.shadowBlur = 0;
+        if (kk < 0.35) { g.globalAlpha = (0.35 - kk) / 0.35 * 0.8; g.fillStyle = '#fff'; var sx0 = sp.x - w0 / 2 + w0 * (kk / 0.35) * 1.2; g.fillRect(sx0 - 6, sp.y - z0 * 0.5, 12, z0); }
+        g.globalAlpha = 1; g.textBaseline = 'alphabetic'; continue;
+      }
       g.font = (tx.font ? '900 ' : '800 ') + Math.round(tx.z * sc) + 'px ' + (tx.font ? '"Playfair Display", serif' : '"Be Vietnam Pro", sans-serif');
       g.textAlign = 'center'; g.lineWidth = 3.5; g.strokeStyle = 'rgba(20,6,2,0.9)'; g.strokeText(tx.s, sp.x, sp.y); g.fillStyle = tx.c; g.fillText(tx.s, sp.x, sp.y);
       g.globalAlpha = 1;

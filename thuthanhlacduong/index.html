@@ -2,8 +2,6 @@
 <html lang="vi">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="Thủ Thành Lạc Dương – game thủ thành miễn phí trên trình duyệt của Chứng Khoán Huy Nguyễn: giữ thành, leo rank, bảng xếp hạng.">
-<link rel="canonical" href="https://chungkhoanhuynguyen.com/thuthanhlacduong/">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <title>Thủ Thành Lạc Dương</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -121,6 +119,16 @@ button:focus-visible{outline:2px solid var(--gold2);outline-offset:2px}
 .box{width:min(760px,100%);text-align:center}
 .title{margin:0;font:900 clamp(32px,7vw,58px)/1.02 "Playfair Display",serif;background:linear-gradient(180deg,#fff6c8,#ffcc4d 50%,#c0661e);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 3px 0 #4a1206) drop-shadow(0 6px 16px rgba(0,0,0,.6));text-wrap:balance}
 .tag{margin:6px 0 12px;font-size:14px;opacity:.9}
+.srow{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;max-width:620px;margin:0 auto 8px}
+.sc{display:flex;flex-direction:column;align-items:center;gap:2px;padding:6px 2px 5px;border-radius:10px;background:linear-gradient(180deg,rgba(60,22,14,.85),rgba(20,8,5,.92));border:1.5px solid rgba(232,194,106,.28);color:#f3e6c8;transition:transform .12s,border-color .12s}
+.sc b{width:30px;height:30px;display:grid;place-items:center;border-radius:50%;font:700 18px/1 "Ma Shan Zheng",serif;background:var(--c);color:#fff;box-shadow:0 0 10px var(--c);text-shadow:0 1px 2px #0008}
+.sc span{font-size:10.5px;line-height:1.1;text-align:center}
+.sc.sel{border-color:#fff;transform:translateY(-2px);box-shadow:0 0 14px var(--c)}
+.sinfo{max-width:620px;margin:0 auto 12px;padding:8px 12px;text-align:left;font-size:12.5px;border-radius:10px}
+.sinfo .sh{font:900 16px "Playfair Display",serif}.sinfo .st{color:#ffd740;font-size:13px;letter-spacing:1px}
+.sinfo .sm{opacity:.85;margin:2px 0}.sinfo .su b{color:#ffdf8a}
+.sinfo .sl{display:flex;flex-wrap:wrap;gap:4px;margin-top:5px}.sinfo .sl span{background:rgba(255,255,255,.07);border-radius:6px;padding:2px 6px}.sinfo .sl i{font-style:normal;color:#ffd740;margin-left:4px}
+@media (max-width:600px){.srow{grid-template-columns:repeat(4,minmax(0,1fr));max-width:360px}.sinfo{max-width:360px}}
 .mrow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:0 auto 12px}
 .mc{border-radius:12px;padding:6px 6px 8px;background:linear-gradient(180deg,rgba(90,34,22,.85),rgba(30,10,6,.9));border:2px solid rgba(232,194,106,.4);transition:transform .15s,border-color .15s}
 .mc img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px;display:block;background:radial-gradient(circle,#5a2a1a,#1a0806)}
@@ -230,7 +238,7 @@ body.menu #top,body.menu #res,body.menu #bottom,body.menu #tools,body.menu #chat
 <div id="start" class="screen">
   <div class="box">
     <h1 class="title">Thủ Thành Lạc Dương</h1>
-    <div class="tag">Chọn linh vật — vị chưởng môn sẽ chạy ra triệu hồi đệ tử các môn phái giữ thành</div>
+    <div class="tag">Chọn nhân vật chính — tự ra trận đánh giặc, mạnh dần mỗi đợt, chạm ảnh đại diện để nâng cấp</div>
     <div class="acct" id="acctBox">
       <div id="acctOut"><label for="pname">ID tài khoản (cũng là tên thành của bạn)</label><input id="pname" maxlength="16" placeholder="Ví dụ: huynguyen99" autocomplete="username">
         <label for="ppw" style="margin-top:6px">Mật khẩu</label><input id="ppw" type="password" maxlength="40" placeholder="Ít nhất 6 ký tự" autocomplete="current-password">
@@ -240,6 +248,8 @@ body.menu #top,body.menu #res,body.menu #bottom,body.menu #tools,body.menu #chat
     </div>
     <div id="topBox" class="lacq" hidden style="max-width:420px;margin:0 auto 10px;padding:8px 12px;text-align:left;font-size:13px"></div>
     <div class="mrow" id="mrow"></div>
+    <div class="tag">Gia nhập hệ phái — mỗi phái 8 tướng, nâng 5 cấp, có tuyệt kỹ trấn phái riêng</div>
+    <div class="srow" id="srow"></div><div class="sinfo lacq" id="sinfo"></div>
     <div class="seg" id="diff" hidden><button data-d="easy">Dễ</button><button data-d="normal">Thường</button><button data-d="hard">Khó</button></div><div class="tag" id="rankBox"></div>
     <button id="btnPlay">Đấu rank</button>
     <div class="onl">
@@ -266,31 +276,31 @@ body.menu #top,body.menu #res,body.menu #bottom,body.menu #tools,body.menu #chat
     <div class="row"><button class="big bSell" id="btnMenu">Đổi linh vật</button><button class="big" id="btnAgain" style="background:linear-gradient(180deg,#ffdf8a,#c48a22);color:#2a0f0a">Chơi lại</button></div>
   </div>
 </div>
-<script src="js/three.min.js?v=1795442472"></script>
-<script src="js/CopyShader.js?v=1795442472"></script>
-<script src="js/LuminosityHighPassShader.js?v=1795442472"></script>
-<script src="js/EffectComposer.js?v=1795442472"></script>
-<script src="js/ShaderPass.js?v=1795442472"></script>
-<script src="js/RenderPass.js?v=1795442472"></script>
-<script src="js/UnrealBloomPass.js?v=1795442472"></script>
-<script src="js/Water.js?v=1795442472"></script>
-<script src="js/GLTFLoader.js?v=1795442472"></script>
-<script src="js/SkeletonUtils.js?v=1795442472"></script>
-<script src="js/peerjs.min.js?v=1795442472"></script>
-<script src="js/fb-app.js?v=1795442472"></script>
-<script src="js/fb-auth.js?v=1795442472"></script>
-<script src="js/fb-firestore.js?v=1795442472"></script>
-<script src="js/tex.js?v=1795442472"></script>
-<script src="js/vrmbones.js?v=1795442472"></script>
-<script src="js/sim.js?v=1795442472"></script>
-<script src="js/audio.js?v=1795442472"></script>
-<script src="js/render.js?v=1795442472"></script>
-<script src="js/r3d.js?v=1795442472"></script>
-<script src="js/anime3d.js?v=1795442472"></script>
-<script src="js/net.js?v=1795442472"></script>
-<script src="js/intro.js?v=1795442472"></script>
-<script src="js/acct.js?v=1795444071"></script>
-<script src="js/game.js?v=1795442472"></script>
+<script src="js/three.min.js?v=1795446092"></script>
+<script src="js/CopyShader.js?v=1795446092"></script>
+<script src="js/LuminosityHighPassShader.js?v=1795446092"></script>
+<script src="js/EffectComposer.js?v=1795446092"></script>
+<script src="js/ShaderPass.js?v=1795446092"></script>
+<script src="js/RenderPass.js?v=1795446092"></script>
+<script src="js/UnrealBloomPass.js?v=1795446092"></script>
+<script src="js/Water.js?v=1795446092"></script>
+<script src="js/GLTFLoader.js?v=1795446092"></script>
+<script src="js/SkeletonUtils.js?v=1795446092"></script>
+<script src="js/peerjs.min.js?v=1795446092"></script>
+<script src="js/fb-app.js?v=1795446092"></script>
+<script src="js/fb-auth.js?v=1795446092"></script>
+<script src="js/fb-firestore.js?v=1795446092"></script>
+<script src="js/tex.js?v=1795446092"></script>
+<script src="js/vrmbones.js?v=1795446092"></script>
+<script src="js/sim.js?v=1795446092"></script>
+<script src="js/audio.js?v=1795446092"></script>
+<script src="js/render.js?v=1795446092"></script>
+<script src="js/r3d.js?v=1795446092"></script>
+<script src="js/anime3d.js?v=1795446092"></script>
+<script src="js/net.js?v=1795446092"></script>
+<script src="js/intro.js?v=1795446092"></script>
+<script src="js/acct.js?v=1795446092"></script>
+<script src="js/game.js?v=1795446092"></script>
 
 </body>
 </html>
