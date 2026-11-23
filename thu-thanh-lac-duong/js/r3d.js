@@ -1,7 +1,7 @@
 // ===== ĐỒ HOẠ 3D (three.js) — thành Lạc Dương lúc hoàng hôn =====
 var V = (function () {
   var S = Sim, T = THREE, shade = R.shade;
-  var LW = Sim.LANE_W, HL = LW / 2, LCX = [0, LW + 7], MX = LCX[1] / 2;
+  var LW = Sim.LANE_W, HL = LW / 2, LCX = [0, LW + 10], MX = LCX[1] / 2;
   function W(lane, x, y, h) { return new T.Vector3(LCX[lane] + x - HL, h || 0, 9 - y); }
 
   var renderer, scene, camera, composer, bloom, sun, overlay, octx, Wd = 1, Hd = 1, DPR = 1;
@@ -120,15 +120,57 @@ var V = (function () {
     var L = lanternMesh(); L.position.y = 1.35; g.add(L);
     scene.add(g);
   }
+  // Cây chi tiết: thân cong nhiều cành + tán gồm hàng trăm chùm hoa/lá (instanced)
+  var blobG = null;
+  function branchMesh(g, p0, p1, r0, r1, mat) {
+    var d = new T.Vector3().subVectors(p1, p0), len = d.length();
+    var m = new T.Mesh(cyl(r1, r0, 1, 6), mat); m.scale.y = len; m.castShadow = true;
+    m.position.copy(p0).addScaledVector(d, 0.5); m.quaternion.setFromUnitVectors(new T.Vector3(0, 1, 0), d.clone().normalize()); g.add(m);
+  }
   function blossomTree(x, z, s, pink) {
     var g = new T.Group(); g.position.set(x, 0, z); g.scale.setScalar(s);
-    var trunk = mesh(G('trunk', function () { return new T.CylinderGeometry(0.08, 0.16, 1.4, 7); }), M('#4a2a18'), 0, 0.7, 0); trunk.rotation.z = 0.08; g.add(trunk);
-    var b1 = mesh(G('br', function () { return new T.CylinderGeometry(0.04, 0.07, 0.9, 6); }), M('#4a2a18'), -0.3, 1.3, 0); b1.rotation.z = 0.9; g.add(b1);
-    var b2 = mesh(G('br', null), M('#4a2a18'), 0.28, 1.4, 0.1); b2.rotation.z = -0.8; g.add(b2);
-    var cols = pink ? ['#ff6f8e', '#ff9db3', '#e8436a', '#ffc2d1'] : ['#3f8a4a', '#5aa860', '#2e6b3a', '#78c27a'];
-    var cg = G('blob', function () { return new T.IcosahedronGeometry(0.42, 1); });
-    for (var i = 0; i < 9; i++) { var a = i * 2.4, r = 0.2 + (i % 3) * 0.22; var b = mesh(cg, M(cols[i % 4]), Math.cos(a) * r * 1.3, 1.65 + (i % 4) * 0.18, Math.sin(a) * r); b.scale.setScalar(0.8 + (i % 3) * 0.25); g.add(b); }
+    var bark = M('#3e2418'), tips = [];
+    function grow(p, dir, len, r, depth) {
+      var end = p.clone().addScaledVector(dir, len); branchMesh(g, p, end, r, r * 0.68, bark);
+      if (depth === 0) { tips.push(end); return; }
+      var n = depth > 2 ? 2 : 3;
+      for (var i = 0; i < n; i++) { var nd = dir.clone().add(new T.Vector3((Math.random() - 0.5) * 1.3, 0.35 + Math.random() * 0.3, (Math.random() - 0.5) * 1.3)).normalize(); grow(end, nd, len * (0.62 + Math.random() * 0.15), r * 0.66, depth - 1); }
+      if (depth < 3) tips.push(end);
+    }
+    grow(new T.Vector3(0, 0, 0), new T.Vector3(0.1, 1, 0.05).normalize(), 1.05, 0.17, 3);
+    if (!blobG) blobG = new T.IcosahedronGeometry(0.16, 0);
+    var cols = pink ? ['#ff6f8e', '#ff9db3', '#f04d78', '#ffc2d1', '#ffe0ea'] : ['#3f8a4a', '#5aa860', '#2e6b3a', '#78c27a', '#4d9a40'];
+    var per = 22, im = new T.InstancedMesh(blobG, new T.MeshLambertMaterial({ color: '#ffffff' }), tips.length * per), mtx = new T.Matrix4(), q = new T.Quaternion(), sc = new T.Vector3(), pp = new T.Vector3(), c = new T.Color(), k = 0;
+    tips.forEach(function (tp) { for (var j = 0; j < per; j++) { pp.set(tp.x + (Math.random() - 0.5) * 0.75, tp.y + (Math.random() - 0.3) * 0.5, tp.z + (Math.random() - 0.5) * 0.75); q.setFromEuler(new T.Euler(Math.random() * 3, Math.random() * 3, 0)); var ss = 0.7 + Math.random() * 0.9; sc.set(ss, ss, ss); mtx.compose(pp, q, sc); im.setMatrixAt(k, mtx); c.set(cols[(Math.random() * cols.length) | 0]); im.setColorAt(k, c); k++; } });
+    im.castShadow = true; g.add(im);
+    if (pink) { var fg = glowSprite('#ff9db3', 2.6, 0.18); fg.position.y = 2.2; g.add(fg); }
     scene.add(g); TREES.push(g);
+  }
+  // liễu rủ bên hồ
+  var WILLOWS = [];
+  function willow(x, z, s) {
+    var g = new T.Group(); g.position.set(x, 0, z); g.scale.setScalar(s);
+    var bark = M('#4a3322');
+    branchMesh(g, new T.Vector3(0, 0, 0), new T.Vector3(0.3, 2.2, 0), 0.22, 0.14, bark);
+    branchMesh(g, new T.Vector3(0.3, 2.2, 0), new T.Vector3(-0.5, 3.0, 0.3), 0.13, 0.07, bark);
+    branchMesh(g, new T.Vector3(0.3, 2.2, 0), new T.Vector3(1.0, 3.1, -0.3), 0.13, 0.07, bark);
+    var strandG = G('strand', function () { var pg = new T.PlaneGeometry(0.12, 2.0, 1, 8); pg.translate(0, -1, 0); return pg; });
+    var sm = new T.MeshLambertMaterial({ color: '#8ec24a', side: T.DoubleSide, transparent: true, opacity: 0.95 });
+    var strands = [];
+    for (var i = 0; i < 46; i++) { var a = Math.random() * 6.28, r = 0.4 + Math.random() * 1.2; var st = new T.Mesh(strandG, sm); st.position.set(0.2 + Math.cos(a) * r, 3.0 + Math.random() * 0.4, Math.sin(a) * r); st.rotation.y = Math.random() * 3; st.scale.y = 0.7 + Math.random() * 0.6; g.add(st); strands.push(st); }
+    var crown = new T.Mesh(G('wcrown', function () { var gg = new T.SphereGeometry(1.4, 12, 8); gg.scale(1, 0.45, 1); return gg; }), M('#6f9e3a')); crown.position.set(0.2, 3.2, 0); crown.castShadow = true; g.add(crown);
+    g.userData.strands = strands; scene.add(g); WILLOWS.push(g);
+  }
+  // gạch tường thành
+  var brickTex = null;
+  function wallMat(w, h, tint) {
+    if (!brickTex) brickTex = canvasTex(256, 256, function (gg) {
+      gg.fillStyle = '#6f6555'; gg.fillRect(0, 0, 256, 256);
+      for (var y = 0; y < 16; y++) for (var x = -1; x < 9; x++) { var v = 120 + Math.random() * 40 | 0, ox = (y % 2) * 16; gg.fillStyle = 'rgb(' + (v + 10) + ',' + (v - 2) + ',' + (v - 22) + ')'; gg.fillRect(x * 32 + ox + 1, y * 16 + 1, 30, 14); gg.fillStyle = 'rgba(0,0,0,0.12)'; gg.fillRect(x * 32 + ox + 1, y * 16 + 12, 30, 3); }
+      for (var i = 0; i < 40; i++) { gg.fillStyle = 'rgba(60,90,40,' + (Math.random() * 0.25) + ')'; gg.beginPath(); gg.arc(Math.random() * 256, 200 + Math.random() * 56, 6 + Math.random() * 14, 0, 6.3); gg.fill(); }
+    });
+    var t = brickTex.clone(); t.needsUpdate = true; t.wrapS = t.wrapT = T.RepeatWrapping; t.repeat.set(Math.max(1, w / 2.5), Math.max(1, h / 2.5));
+    return new T.MeshLambertMaterial({ color: tint || '#ffffff', map: t });
   }
   var TREES = [];
 
@@ -194,6 +236,7 @@ var V = (function () {
     }
     buildLake();
     buildGrass();
+    buildAmbient();
     // vườn giữa
     var grass = canvasTex(64, 64, function (g) { g.fillStyle = '#5e7f3e'; g.fillRect(0, 0, 64, 64); for (var i = 0; i < 160; i++) { g.fillStyle = Math.random() < 0.5 ? '#6f9448' : '#4f6e32'; g.fillRect(Math.random() * 64, Math.random() * 64, 2, 3); } }, [3, 12]);
     var gm = mesh(new T.PlaneGeometry(LCX[1] - LW - 0.3, 20), M('#ffffff', { map: grass }), MX, 0.015, 0, false); gm.rotation.x = -Math.PI / 2; gm.receiveShadow = true; scene.add(gm);
@@ -209,7 +252,7 @@ var V = (function () {
     hall(MX - 11, -16.5, 5, 3, 1.6, 1.8, {}); hall(MX + 11, -16.5, 5, 3, 1.6, 1.8, {}); hall(MX - 19, -15, 4, 3, 1.4, 1.6, {}); hall(MX + 19, -15, 4, 3, 1.4, 1.6, {});
     // tường thành dài + tháp canh
     var wallM2 = M('#8f8270');
-    var wl = mesh(new T.BoxGeometry(LCX[1] + LW + 34, 3.2, 1.4), wallM2, MX, 1.6, -13.6); wl.receiveShadow = true; scene.add(wl);
+    var wl = mesh(new T.BoxGeometry(LCX[1] + LW + 34, 3.2, 1.4), wallMat(LCX[1] + LW + 34, 3.2), MX, 1.6, -13.6); wl.receiveShadow = true; scene.add(wl);
     for (var cx2 = MX - (LCX[1] + LW + 32) / 2; cx2 < MX + (LCX[1] + LW + 32) / 2; cx2 += 1.1) scene.add(mesh(G('cren2', function () { return new T.BoxGeometry(0.6, 0.5, 0.4); }), wallM2, cx2, 3.45, -12.95));
     [MX - (LCX[1] + LW + 30) / 2, MX + (LCX[1] + LW + 30) / 2].forEach(function (tx) { var tw = mesh(new T.BoxGeometry(3.2, 5, 3.2), M('#857866'), tx, 2.5, -13.6); scene.add(tw); var th = hall(tx, -13.6, 3.4, 3.4, 1.1, 1.3, { tiers: 2 }); th.position.y = 5; });
     // bảo tháp 7 tầng phía xa
@@ -254,7 +297,7 @@ var V = (function () {
     water = new T.Water(geo, { textureWidth: 512, textureHeight: 512, waterNormals: wn, sunDirection: new T.Vector3(-0.5, 0.6, 0.6).normalize(), sunColor: 0xffc88a, waterColor: 0x1c3a44, distortionScale: 2.4, fog: true, alpha: 1 });
     water.rotation.x = -Math.PI / 2; water.position.set(MX, -0.32, 26); scene.add(water);
     // bờ kè đá
-    var bank = mesh(new T.BoxGeometry(110, 0.7, 0.9), M('#8c7d6c'), MX, -0.25, 11.4); bank.receiveShadow = true; scene.add(bank);
+    var bank = mesh(new T.BoxGeometry(110, 0.7, 0.9), wallMat(110, 0.7), MX, -0.25, 11.4); bank.receiveShadow = true; scene.add(bank);
     var cap = mesh(new T.BoxGeometry(110, 0.12, 1.1), M('#b5a891'), MX, 0.12, 11.4); scene.add(cap);
     for (var x = -HL - 10; x < LCX[1] + HL + 10; x += 2.2) { var post = mesh(G('rail', function () { return new T.BoxGeometry(0.16, 0.55, 0.16); }), M('#c9bca4'), x, 0.45, 11.75); scene.add(post); }
     var railTop = mesh(new T.BoxGeometry(110, 0.08, 0.1), M('#c9bca4'), MX, 0.7, 11.75); scene.add(railTop);
@@ -275,6 +318,7 @@ var V = (function () {
       }
       scene.add(g); LOTUS.push(g);
     }
+    [-HL - 13, -HL - 6.5, MX - 1.5, MX + 1.5, LCX[1] + HL + 6.5, LCX[1] + HL + 13].forEach(function (wx, i) { willow(wx, 12.2 + (i % 2) * 0.3, 0.9 + (i % 3) * 0.12); });
     // thuyền nhỏ
     var boat = new T.Group(); boat.position.set(MX + 9, -0.25, 19);
     boat.add(mesh(new T.BoxGeometry(3, 0.35, 0.9), M('#6d4c41'), 0, 0.1, 0));
@@ -319,12 +363,40 @@ var V = (function () {
     }
   }
 
+  // ---------- HIỆU ỨNG MÔI TRƯỜNG ----------
+  var flies = null, embers = [], rays = [];
+  function buildAmbient() {
+    var n = 90, geo = new T.BufferGeometry(), pos = new Float32Array(n * 3), ph = [];
+    for (var i = 0; i < n; i++) { pos[i * 3] = MX - 25 + Math.random() * 50; pos[i * 3 + 1] = 0.4 + Math.random() * 2.2; pos[i * 3 + 2] = -10 + Math.random() * 26; ph.push(Math.random() * 6.28); }
+    geo.setAttribute('position', new T.BufferAttribute(pos, 3));
+    flies = new T.Points(geo, new T.PointsMaterial({ color: '#d4ff7a', size: 0.32, map: glowTex, transparent: true, blending: T.AdditiveBlending, depthWrite: false }));
+    flies.userData.ph = ph; scene.add(flies);
+    // tia nắng hoàng hôn
+    var rayTex = canvasTex(64, 256, function (g, w, h) { var gr = g.createLinearGradient(0, 0, 0, h); gr.addColorStop(0, 'rgba(255,210,150,0)'); gr.addColorStop(0.3, 'rgba(255,200,140,0.5)'); gr.addColorStop(1, 'rgba(255,190,120,0)'); g.fillStyle = gr; g.fillRect(0, 0, w, h); var gx = g.createLinearGradient(0, 0, w, 0); gx.addColorStop(0, 'rgba(0,0,0,1)'); gx.addColorStop(0.5, 'rgba(0,0,0,0)'); gx.addColorStop(1, 'rgba(0,0,0,1)'); g.globalCompositeOperation = 'destination-out'; g.fillStyle = gx; g.fillRect(0, 0, w, h); });
+    for (var r = 0; r < 6; r++) { var m = new T.Mesh(new T.PlaneGeometry(3 + Math.random() * 3, 40), new T.MeshBasicMaterial({ map: rayTex, transparent: true, opacity: 0.12, blending: T.AdditiveBlending, depthWrite: false, side: T.DoubleSide })); m.position.set(MX - 26 + r * 10, 12, -16 + r * 2); m.rotation.set(0.15, 0.4, -0.65); scene.add(m); rays.push(m); }
+  }
+  function stepAmbient(dt, t) {
+    if (!flies) return;
+    var p = flies.geometry.attributes.position, ph = flies.userData.ph;
+    for (var i = 0; i < p.count; i++) { p.setX(i, p.getX(i) + Math.sin(t * 0.7 + ph[i]) * dt * 0.5); p.setY(i, 0.4 + 1.2 + Math.sin(t * 0.9 + ph[i] * 2) * 1.0); p.setZ(i, p.getZ(i) + Math.cos(t * 0.6 + ph[i]) * dt * 0.5); }
+    p.needsUpdate = true; flies.material.opacity = 0.6 + Math.sin(t * 3) * 0.3;
+    rays.forEach(function (r, i) { r.material.opacity = 0.08 + Math.sin(t * 0.4 + i) * 0.05; });
+    // tàn lửa bay lên từ đèn lồng
+    if (Math.random() < 0.35) { var L = LANT[(Math.random() * LANT.length) | 0]; if (L) { var wp2 = new T.Vector3(); L.getWorldPosition(wp2); var e = glowSprite('#ffab40', 0.12, 1); e.position.copy(wp2); addFX({ obj: e, t: 0, life: 1.6, vx: (Math.random() - 0.5) * 0.4, up: function (f, d, k) { f.obj.position.y += d * 0.8; f.obj.position.x += f.vx * d; f.obj.material.opacity = 1 - k; } }); } }
+  }
+  function dustAt(p, col) { var sp = new T.Sprite(spriteMat(col || '#d7c4a8', 0.5, smokeTex)); sp.position.copy(p).setY(0.15); sp.scale.set(0.4, 0.4, 1); sp.material = sp.material.clone(); sp.material.blending = T.NormalBlending; addFX({ obj: sp, t: 0, life: 0.7, up: function (f, d, k) { var s3 = 0.4 + k * 0.9; f.obj.scale.set(s3, s3 * 0.7, 1); f.obj.position.y += d * 0.3; f.obj.material.opacity = 0.5 * (1 - k); }, dispose: true }); }
+  function portalBurst(lane) {
+    var p = W(lane, HL, -0.6);
+    ringFX(p, '#c64dff', 0.5, 3.2, 0.6); pillar(p, '#b03cff', 5, 0.5, 1.2); burst(p.clone().setY(0.6), '#e040fb', 14, 3, 0.25, 0.6, 2);
+    boltLine([W(lane, HL - 1.5, -0.6, 4), W(lane, HL - 0.5, -0.8, 2), W(lane, HL, -0.6, 0.1)], '#ea80fc', 0.25, 0.04);
+  }
+
   function gateFort(lane) {
     var cx = LCX[lane], z = -10.6, grp = new T.Group(); grp.position.set(cx, 0, z); grp.scale.x = LW / 9;
     var wallM = M('#9a8c78');
-    var wl = mesh(new T.BoxGeometry(3.6, 2.6, 1.6), wallM, -3.3, 1.3, 0); wl.receiveShadow = true; grp.add(wl);
-    var wr = mesh(new T.BoxGeometry(3.6, 2.6, 1.6), wallM, 3.3, 1.3, 0); wr.receiveShadow = true; grp.add(wr);
-    var top = mesh(new T.BoxGeometry(10.4, 0.9, 1.6), wallM, 0, 2.15, 0); grp.add(top);
+    var wl = mesh(new T.BoxGeometry(3.6, 2.6, 1.6), wallMat(3.6, 2.6, '#f0e0c8'), -3.3, 1.3, 0); wl.receiveShadow = true; grp.add(wl);
+    var wr = mesh(new T.BoxGeometry(3.6, 2.6, 1.6), wallMat(3.6, 2.6, '#f0e0c8'), 3.3, 1.3, 0); wr.receiveShadow = true; grp.add(wr);
+    var top = mesh(new T.BoxGeometry(10.4, 0.9, 1.6), wallMat(10.4, 0.9, '#f0e0c8'), 0, 2.15, 0); grp.add(top);
     var arch = mesh(new T.BoxGeometry(3, 1.75, 1.7), M('#2a0d08'), 0, 0.85, 0.02, false); grp.add(arch);
     var doorL = mesh(new T.BoxGeometry(1.45, 1.7, 0.12), M('#7a1a10'), -0.73, 0.85, 0.75); grp.add(doorL);
     var doorR = mesh(new T.BoxGeometry(1.45, 1.7, 0.12), M('#7a1a10'), 0.73, 0.85, 0.75); grp.add(doorR);
@@ -961,7 +1033,7 @@ var V = (function () {
 
   // ---------- Camera ----------
   var cam = { x: 0, z: 1, dist: 1, tx: 0, tz: 1, tdist: 1, yaw: 0, orbit: false };
-  function fitDist() { var a = camera.aspect; return a >= 1.3 ? 25 : a >= 0.9 ? 31 : 40; }
+  function fitDist() { var a = camera.aspect; return a >= 1.3 ? 27 : a >= 0.9 ? 33 : 42; }
   function setView(lane, instant) { cam.tx = LCX[lane]; cam.tz = 2.6; cam.tdist = fitDist() * (cam.zoom || 1); if (instant) { cam.x = cam.tx; cam.z = cam.tz; cam.dist = cam.tdist; } }
   function updateCam(dt) {
     var k = Math.min(1, dt * 5);
@@ -1026,6 +1098,7 @@ var V = (function () {
       else if (u.dead) { v.userData.body.rotation.z = Math.min(1.5, (v.userData.body.rotation.z || 0) + dt * 6); }
       else v.userData.body.rotation.z = 0;
       v.userData.ring.material.opacity = u.active ? 0.75 : 0.3;
+      if (u.moving && G.phase === 'fight' && Math.random() < 0.08) dustAt(v.position);
       if (!u.dead && !v.userData.model) animHuman(v, { moving: u.moving && G.phase === 'fight', atk: u.atkAnim, ph: u.id }, t, dt);
       if (v.userData.aura) v.userData.aura.rotation.z = t * 1.5;
       v.userData.dead = u.dead;
@@ -1035,7 +1108,9 @@ var V = (function () {
     var seenC = {};
     for (var j = 0; j < G.creeps.length; j++) {
       var c = G.creeps[j]; if (c.hp <= 0) continue;
-      var cv = visualCreep(c); seenC[c.id] = 1;
+      var isNew = !VC[c.id]; var cv = visualCreep(c); seenC[c.id] = 1;
+      if (isNew && Math.random() < 0.5) portalBurst(c.lane);
+      if (c.moving && Math.random() < 0.06) dustAt(cv.position);
       var pc = lerpPos(c, alpha); cv.position.copy(W(c.lane, pc[0], pc[1]));
       var ut = c.tgt ? S.findUnit(G, c.tgt) : null;
       var ca = ut ? Math.atan2(ut.x - c.x, -(ut.y - c.y)) : (c.leaked ? Math.atan2(HL - c.x, -(17.4 - c.y)) : Math.PI);
@@ -1099,6 +1174,8 @@ var V = (function () {
     windU.value = t * (0.8 + wind * 0.4);
     if (water) { water.material.uniforms.time.value = t * 0.45; }
     TREES.forEach(function (tr, i) { tr.rotation.z = Math.sin(t * 1.4 + i) * 0.025 * wind; tr.rotation.x = Math.cos(t * 1.1 + i) * 0.015 * wind; });
+    WILLOWS.forEach(function (w, wi) { w.userData.strands.forEach(function (st, si) { st.rotation.x = Math.sin(t * 1.6 + si * 0.7 + wi) * 0.12 * wind; st.rotation.z = Math.cos(t * 1.2 + si) * 0.08 * wind; }); });
+    stepAmbient(dt, t);
     SWAY.forEach(function (sw) { sw.o.rotation.x = Math.sin(t * 1.8 + sw.ph) * sw.a * wind; });
     LOTUS.forEach(function (lo, i) { if (lo.userData.drift) { lo.position.x += dt * lo.userData.drift; if (lo.position.x > MX + 36) lo.position.x = MX - 36; lo.position.y = -0.15 + Math.sin(t * 1.5 + i) * 0.03; } else if (lo.userData.boat) { lo.position.x = MX + 9 + Math.sin(t * 0.07) * 14; lo.rotation.z = Math.sin(t * 1.2) * 0.04; lo.position.y = -0.25 + Math.sin(t * 1.6) * 0.04; } else { lo.position.y = -0.27 + Math.sin(t * 1.3 + i * 0.7) * 0.02; lo.rotation.y += Math.sin(t * 0.5 + i) * 0.0008; } });
     updateCam(dt);
