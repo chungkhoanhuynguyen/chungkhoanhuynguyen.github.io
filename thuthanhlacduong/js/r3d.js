@@ -1120,6 +1120,9 @@ var V = (function () {
     addFX({ obj: grp, t: 0, life: life + 0.15, up: function (f, dt, k) { var fl = k < 0.6 ? (Math.random() < 0.25 ? 0.35 : 1) : (1 - k) / 0.4; m1.opacity = 0.9 * fl; m2.opacity = 0.35 * fl; hit.material.opacity = (1 - k); },
       end: function () { grp.children.forEach(function (c) { if (c.geometry && !c.isSprite) c.geometry.dispose(); }); m1.dispose(); m2.dispose(); hit.material.dispose(); } });
   }
+  var _palmT = null, _starT = null;
+  function palmTex() { if (_palmT) return _palmT; _palmT = canvasTex(128, 128, function (g) { g.fillStyle = '#fff'; g.shadowColor = '#fff'; g.shadowBlur = 10; g.beginPath(); g.ellipse(64, 78, 30, 34, 0, 0, 6.3); g.fill(); [[-26, -18, 0.5], [-13, -34, 0.15], [2, -38, 0], [17, -33, -0.15], [34, -6, -0.8]].forEach(function (f) { g.save(); g.translate(64 + f[0], 64 + f[1]); g.rotate(f[2]); g.beginPath(); g.ellipse(0, 0, 8, 20, 0, 0, 6.3); g.fill(); g.restore(); }); g.globalCompositeOperation = 'destination-out'; g.lineWidth = 3; g.strokeStyle = 'rgba(0,0,0,0.5)'; g.beginPath(); g.arc(64, 82, 16, 3.6, 5.8); g.stroke(); }); return _palmT; }
+  function starTex() { if (_starT) return _starT; _starT = canvasTex(64, 64, function (g) { var gr = g.createRadialGradient(32, 32, 0, 32, 32, 30); gr.addColorStop(0, '#fff'); gr.addColorStop(1, 'rgba(255,255,255,0)'); g.fillStyle = gr; g.beginPath(); for (var i = 0; i < 8; i++) { var a = i / 8 * 6.283, r = i % 2 ? 6 : 30; g.lineTo(32 + Math.cos(a) * r, 32 + Math.sin(a) * r); } g.closePath(); g.fill(); }); return _starT; }
   function shakeCam(a) { camShake = Math.max(camShake, a); }
   var camShake = 0;
 
@@ -1161,6 +1164,18 @@ var V = (function () {
           
           ringFX(p3, tcl, 0.3, e.r * 1.3, 0.6); burst(W(e.lane, e.x, e.y, 0.2), tcl, 10, 5, 0.22, 0.5, 8);
           flashLight(p3, tcl, 0.25);
+        } else if (e.fx === 'fire') { // Thánh Hoả: cột lửa nện xuống + than hồng bay lên
+          var fc = e.c || '#ff6d00'; pillar(p3, '#ff3d00', e.big ? 6 : 4, 0.7, e.r * 0.45); pillar(p3, '#ffd180', e.big ? 5 : 3.5, 0.5, e.r * 0.22);
+          ringFX(p3, fc, 0.2, e.r * 1.25, 0.6, runeTex, 0.8); burst(W(e.lane, e.x, e.y, 0.3), '#ff9100', 14, 3, 0.26, 0.9, -3); burst(W(e.lane, e.x, e.y, 0.2), '#ffe0b2', 6, 4, 0.18, 0.4, 4);
+        } else if (e.fx === 'palm') { // chưởng ngọc từ trời giáng xuống
+          var pc = e.c || '#b9f6ca', pm = new T.Mesh(G2('plane1', null), new T.MeshBasicMaterial({ map: palmTex(), color: pc, transparent: true, blending: T.AdditiveBlending, depthWrite: false, side: T.DoubleSide }));
+          pm.position.copy(p3).setY(6); pm.rotation.x = -Math.PI / 2; var ps = e.r * 2.2;
+          addFX({ obj: pm, t: 0, life: 0.55, up: function (f, dt, k) { var kk = Math.min(1, k * 1.6); f.obj.position.y = 6 - 5.9 * kk * kk; var sc = ps * (0.6 + 0.4 * kk); f.obj.scale.set(sc, sc, 1); f.obj.material.opacity = k < 0.7 ? 1 : (1 - k) / 0.3; }, dispose: true });
+          ringFX(p3, pc, 0.3, e.r * 1.4, 0.7); burst(W(e.lane, e.x, e.y, 0.2), pc, 12, 4, 0.22, 0.5, 5);
+        } else if (e.sty === 'ice') { ringFX(p3, '#e0f7fa', 0.1, 1.1, 0.5, runeTex, 0.7); burst(W(e.lane, e.x, e.y, 0.3), '#ffffff', 8, 3, 0.16, 0.6, 2); burst(W(e.lane, e.x, e.y, 0.2), '#80deea', 5, 2, 0.2, 0.9, -0.5);
+        } else if (e.sty === 'star') { ringFX(p3, '#b388ff', 0.1, 1.0, 0.45); for (var si2 = 0; si2 < 4; si2++) { var st2 = new T.Sprite(new T.SpriteMaterial({ map: starTex(), color: si2 % 2 ? '#ffffff' : '#ea80fc', transparent: true, blending: T.AdditiveBlending, depthWrite: false })); st2.position.copy(W(e.lane, e.x + (Math.random() - 0.5) * 0.8, e.y + (Math.random() - 0.5) * 0.8, 0.4 + Math.random())); (function (o) { addFX({ obj: o, t: 0, life: 0.6, up: function (f, dt, k) { var sc = 0.6 * Math.sin(k * Math.PI); f.obj.scale.set(sc, sc, 1); f.obj.material.rotation += dt * 4; }, dispose: true }); })(st2); }
+        } else if (e.sty === 'petal') { ringFX(p3, '#ff80ab', 0.1, 1.0, 0.45); burst(W(e.lane, e.x, e.y, 0.5), '#ffc1d9', 10, 2.5, 0.2, 1.0, -1); burst(W(e.lane, e.x, e.y, 0.3), '#ff4081', 4, 2, 0.16, 0.6, 1);
+        } else if (e.sty === 'wind') { ringFX(p3, '#e0f7fa', 0.1, 1.2, 0.4); ringFX(p3.clone().setY(0.5), '#80deea', 0.2, 0.9, 0.5, runeTex, 0.6); burst(W(e.lane, e.x, e.y, 0.3), '#ffffff', 6, 4, 0.16, 0.4, 6);
         } else { ringFX(p3, e.c || '#82b1ff', 0.1, 0.9, 0.35); burst(W(e.lane, e.x, e.y, 0.15), e.c || '#bbdefb', 6, 3, 0.18, 0.35, 6); }
         break;
       }
@@ -1210,8 +1225,8 @@ var V = (function () {
   function flashLight(p, col, life) {
     // không thêm đèn động (đổi số đèn => biên dịch lại shader => giật); dùng quầng sáng thay thế
     if (FX.length > 160) return;
-    var l = glowSprite(col, 4, 0.55); l.material = l.material.clone(); l.position.copy(p).setY(1.2);
-    addFX({ obj: l, t: 0, life: life, up: function (f, dt, k) { f.obj.material.opacity = 0.55 * (1 - k); }, dispose: true });
+    var l = glowSprite(col, 2.6, 0.3); l.material = l.material.clone(); l.position.copy(p).setY(1.2);
+    addFX({ obj: l, t: 0, life: life, up: function (f, dt, k) { f.obj.material.opacity = 0.3 * (1 - k); }, dispose: true });
   }
   function skillName(e, G) {
     var u = S.findUnit(G, e.id); if (!u) return;
@@ -1224,13 +1239,14 @@ var V = (function () {
     var cu = S.findUnit(G, e.id); if (cu) { cu._castT = (cu._castT || 0) + 1; if (cu.hero && mascots[cu.owner]) mascots[cu.owner].castId = (mascots[cu.owner].castId || 0) + 1; }
     skillName(e, G);
     var ec = e.c || '#ffd740', bk = e.big ? 1.6 : 1;
-    if (e.big) { pillar(p, ec, 7, 0.9, 1.0); ringFX(p, ec, 0.3, (e.r || 2) * 1.6, 0.9, runeTex, 0.9); flashLight(p, ec, 0.35); shakeCam(0.3); }
+    if (e.big) { pillar(p, ec, 5, 0.7, 0.32); ringFX(p, ec, 0.3, (e.r || 2) * 1.6, 0.9, runeTex, 0.9); flashLight(p, ec, 0.3); }
     switch (e.k) {
       case 'summon':
         for (var si = 0; si < 3; si++) ringFX(p, ec, 0.1 + si * 0.2, 1.4 + si * 0.4, 0.5 + si * 0.15, runeTex, 0.8);
         pillar(p, ec, 4, 0.6, 0.8); burst(p.clone().setY(0.4), ec, 26, 4, 0.25, 0.7, -2); flashLight(p, ec, 0.25);
         break;
       case 'drain':
+        if (e.galaxy) { for (var gi = 0; gi < 3; gi++) (function (gi) { var gm = new T.Mesh(G2('plane1', null), new T.MeshBasicMaterial({ map: runeTex, color: gi % 2 ? '#82b1ff' : '#ea80fc', transparent: true, blending: T.AdditiveBlending, depthWrite: false })); gm.rotation.x = -Math.PI / 2; gm.position.copy(p).setY(0.1 + gi * 0.6); addFX({ obj: gm, t: 0, life: 1.1, up: function (f, dt, k) { var sc = e.r * 2.4 * (1 - gi * 0.25) * (0.5 + k * 0.5); f.obj.scale.set(sc, sc, 1); f.obj.rotation.z += dt * (gi % 2 ? -5 : 5); f.obj.material.opacity = 1 - k; }, dispose: true }); })(gi); }
         ringFX(p, ec, e.r * 1.4, 0.2, 0.8, runeTex, 0.9); ringFX(p, '#ffffff', e.r * 1.1, 0.1, 0.6);
         for (var dj = 0; dj < 30; dj++) (function () { var a = Math.random() * 6.28, r = e.r * (0.6 + Math.random() * 0.6); var sp = glowSprite(dj % 3 ? ec : '#ffffff', 0.35, 1); sp.material = sp.material.clone(); sp.position.set(p.x + Math.cos(a) * r, 0.4 + Math.random(), p.z + Math.sin(a) * r); var o = sp.position.clone();
           addFX({ obj: sp, t: 0, life: 0.7, up: function (f, dt, k) { f.obj.position.lerpVectors(o, p.clone().setY(1.2), k * k); f.obj.material.opacity = 1 - k * 0.5; }, dispose: true }); })();
@@ -1569,13 +1585,14 @@ var V = (function () {
       if (!zv) {
         zv = new T.Group();
         var d1 = new T.Mesh(G2('plane1', null), new T.MeshBasicMaterial({ map: smokeTex, color: z.col || '#76ff03', transparent: true, opacity: 0.8, blending: T.AdditiveBlending, depthWrite: false })); d1.rotation.x = -Math.PI / 2; d1.position.y = 0.08; zv.add(d1);
-        var d2 = new T.Mesh(G2('plane1', null), new T.MeshBasicMaterial({ map: runeTex, color: '#aa00ff', transparent: true, opacity: 0.6, blending: T.AdditiveBlending, depthWrite: false })); d2.rotation.x = -Math.PI / 2; d2.position.y = 0.07; zv.add(d2);
+        var d2 = new T.Mesh(G2('plane1', null), new T.MeshBasicMaterial({ map: runeTex, color: z.col ? '#ffab00' : '#aa00ff', transparent: true, opacity: 0.6, blending: T.AdditiveBlending, depthWrite: false })); d2.rotation.x = -Math.PI / 2; d2.position.y = 0.07; zv.add(d2);
         zv.position.copy(W(z.lane, z.x, z.y)); scene.add(zv); VZ.set(z, zv);
       }
       var s = z.r * 2.2, f = Math.min(1, (z.dur - z.t) * 4) * Math.min(1, z.t * 2);
       zv.children[0].scale.set(s, s, 1); zv.children[0].rotation.z = t * 0.7; zv.children[0].material.opacity = 0.8 * f;
       zv.children[1].scale.set(s * 0.95, s * 0.95, 1); zv.children[1].rotation.z = -t * 0.5; zv.children[1].material.opacity = 0.55 * f;
-      if (Math.random() < 0.5) { var a = Math.random() * 6.28, r = Math.random() * z.r; var b = glowSprite('#b2ff59', 0.18, 0.9); b.position.copy(W(z.lane, z.x + Math.cos(a) * r, z.y + Math.sin(a) * r, 0.1)); addFX({ obj: b, t: 0, life: 0.9, up: function (f2, dt2, k) { f2.obj.position.y += dt2 * 0.9; f2.obj.material.opacity = 0.9 * (1 - k); } }); }
+      if (z.col && Math.random() < 0.35) pillar(W(z.lane, z.x + (Math.random() - 0.5) * z.r * 1.4, z.y + (Math.random() - 0.5) * z.r * 1.4), Math.random() < 0.5 ? '#ff6d00' : '#ffab40', 1.6 + Math.random() * 1.4, 0.5, 0.18);
+      if (Math.random() < 0.5) { var a = Math.random() * 6.28, r = Math.random() * z.r; var b = glowSprite(z.col ? '#ffab40' : '#b2ff59', 0.18, 0.9); b.position.copy(W(z.lane, z.x + Math.cos(a) * r, z.y + Math.sin(a) * r, 0.1)); addFX({ obj: b, t: 0, life: 0.9, up: function (f2, dt2, k) { f2.obj.position.y += dt2 * 0.9; f2.obj.material.opacity = 0.9 * (1 - k); } }); }
     });
     VZ.forEach(function (v, z) { if (!liveZ.has(z)) { disposeObj(v); VZ.delete(z); } });
     // linh vật

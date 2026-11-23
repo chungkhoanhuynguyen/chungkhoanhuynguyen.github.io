@@ -483,7 +483,7 @@ var Sim = (function () {
         var pool = hitN * dmg * s.mult * s.heal, al = [];
         for (var q = 0; q < G.units.length; q++) { var w = G.units[q]; if (w.owner === u.owner && !w.dead && w.active && dist2(w, u) <= 16) al.push(w); }
         al.forEach(function (w) { var h = Math.round(pool / al.length), h0 = w.hp; w.hp = Math.min(stat(w, 'hp'), w.hp + h); if (w.hp - h0 >= 1) G.ev.push({ e: 'healed', lane: lane, x: w.x, y: w.y, v: w.hp - h0 }); });
-        G.ev.push({ e: 'skill', k: 'drain', lane: lane, x: u.x, y: u.y, r: s.r, id: u.id, c: col, big: big });
+        G.ev.push({ e: 'skill', k: 'drain', lane: lane, x: u.x, y: u.y, r: s.r, id: u.id, c: col, big: big, galaxy: !!s.reflect });
         break;
       case 'fan':
         var ang = datan2(tgt.y - u.y, tgt.x - u.x), sp = s.sp || 0.13, vis = s.sword ? 'sword' : s.bee ? 'bee' : null;
@@ -509,10 +509,10 @@ var Sim = (function () {
         G.ev.push({ e: 'skill', k: 'massheal', lane: lane, x: u.x, y: u.y, r: s.r, id: u.id, c: col, big: big });
         break;
       case 'swordrain':
-        var scol = s.wind ? '#e0f7fa' : s.petal ? '#ff80ab' : col;
+        var scol = s.wind ? '#e0f7fa' : s.petal ? '#ff80ab' : col, sty = s.wind ? 'wind' : s.petal ? 'petal' : s.slow ? 'ice' : d.sect === 'tinhtuc' ? 'star' : '';
         for (var m = 0; m < s.n; m++) {
           var rr = Math.sqrt(G.rng()) * s.r, aa = G.rng() * 6.283;
-          G.strikes.push({ lane: lane, x: tgt.x + dcos(aa) * rr, y: tgt.y + dsin(aa) * rr, t: 0.25 + m * (big ? 0.045 : 0.07), r: 0.75, dmg: dmg * s.mult, dt: 'magic', owner: u.owner, fx: 'sword', col: scol, stun: s.slow ? 0.35 : 0 });
+          G.strikes.push({ lane: lane, x: tgt.x + dcos(aa) * rr, y: tgt.y + dsin(aa) * rr, t: 0.25 + m * (big ? 0.045 : 0.07), r: 0.75, dmg: dmg * s.mult, dt: 'magic', owner: u.owner, fx: 'sword', col: scol, sty: sty, big: big, stun: s.slow ? 0.35 : 0 });
         }
         G.ev.push({ e: 'skill', k: 'swordrain', lane: lane, x: tgt.x, y: tgt.y, r: s.r, id: u.id, n: s.n, c: scol, big: big, wind: !!s.wind });
         break;
@@ -521,9 +521,9 @@ var Sim = (function () {
         for (var b = 0; b < nb; b++) {
           var tc = b === 0 ? tgt : nearestCreep(G, lane, tgt.x + (G.rng() - 0.5) * 5, tgt.y + (G.rng() - 0.5) * 5, 6, used);
           var tx = tc ? tc.x : tgt.x + (G.rng() - 0.5) * 3, ty = tc ? tc.y : tgt.y + (G.rng() - 0.5) * 3; if (tc) used.push(tc.id);
-          G.strikes.push({ lane: lane, x: tx, y: ty, t: 0.45 + b * 0.12, r: s.r, dmg: dmg * s.mult, dt: 'magic', owner: u.owner, fx: 'thunder', stun: s.stun || 0.6, col: tcol, big: big });
+          G.strikes.push({ lane: lane, x: tx, y: ty, t: 0.45 + b * 0.12, r: s.r, dmg: dmg * s.mult, dt: 'magic', owner: u.owner, fx: s.fire ? 'fire' : s.jade ? 'palm' : 'thunder', stun: s.stun || 0.6, col: tcol, big: big });
         }
-        G.ev.push({ e: 'skill', k: 'thunder', lane: lane, x: tgt.x, y: tgt.y, r: s.r, id: u.id, c: tcol, big: big });
+        G.ev.push({ e: 'skill', k: 'thunder', lane: lane, x: tgt.x, y: tgt.y, r: s.r, id: u.id, c: tcol, big: big, fx: s.fire ? 'fire' : s.jade ? 'palm' : 'thunder' });
         break;
       case 'summon':
         var mine = 0; for (var q2 = 0; q2 < G.units.length; q2++) if (G.units[q2].from === u.id && !G.units[q2].dead) mine++;
@@ -750,7 +750,7 @@ var Sim = (function () {
       var S = G.strikes[s]; S.t -= DT;
       if (S.t <= 0) {
         aoeCreeps(G, S.lane, S.x, S.y, S.r, S.dmg, S.dt, S.owner, S.stun || 0, S.fx);
-        G.ev.push({ e: 'strike', lane: S.lane, x: S.x, y: S.y, r: S.r, fx: S.fx, c: S.col, big: S.big });
+        G.ev.push({ e: 'strike', lane: S.lane, x: S.x, y: S.y, r: S.r, fx: S.fx, c: S.col, big: S.big, sty: S.sty });
         G.strikes.splice(s, 1);
       }
     }

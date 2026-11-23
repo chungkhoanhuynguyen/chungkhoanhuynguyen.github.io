@@ -254,6 +254,7 @@ ul.how{margin:0;padding:12px 12px 12px 30px;border-radius:12px;font-size:13.5px;
   #acts{justify-content:center}
 }
 .chatf{grid-column:1/-1;display:grid;grid-template-columns:1fr auto;gap:6px}.chatf input{min-height:40px;border-radius:8px;border:1px solid rgba(232,194,106,.6);background:rgba(0,0,0,.4);color:#fff;padding:0 10px;font-size:16px}.chatf button{padding:0 14px;border-radius:8px;font-weight:800;background:linear-gradient(180deg,#ffdf8a,#c48a22);color:#2a0f0a}
+#mm{z-index:30;background:rgba(6,2,0,.88)}#mm .mmb{background:#2a120a;max-width:340px;padding:22px;border-radius:14px;display:grid;gap:10px;justify-items:center}.spin.big{width:46px;height:46px;border-width:4px}.mmt{font:900 20px "Playfair Display",serif;color:var(--gold2)}.mmc{font:800 28px "Be Vietnam Pro";letter-spacing:2px}.mmf{font-size:15px;line-height:1.5}.mmf b{color:#ffd740;font-size:18px}
 </style>
 </head>
 <body>
@@ -354,39 +355,40 @@ ul.how{margin:0;padding:12px 12px 12px 30px;border-radius:12px;font-size:13.5px;
     </section>
   </div>
 </div>
+<div id="mm" class="screen" hidden><div class="box lacq mmb"><div class="spin big"></div><div class="mmt">Đang tìm đối thủ…</div><div class="mmc" id="mmTime">00:00</div><div class="mmf" id="mmFound" hidden></div><button class="mbtn ob2" id="mmCancel">Huỷ tìm trận</button></div></div>
 <div id="end" class="screen" hidden>
   <div class="box lacq" style="padding:20px">
     <div class="res" id="endT">Chiến thắng</div>
     <div class="tag" id="endS"></div>
     <div class="estat" id="endStats"></div>
-    <div class="row"><button class="big bSell" id="btnMenu">Đổi linh vật</button><button class="big" id="btnAgain" style="background:linear-gradient(180deg,#ffdf8a,#c48a22);color:#2a0f0a">Chơi lại</button></div>
+    <div class="row"><button class="big bSell" id="btnMenu">Về sảnh</button><button class="big" id="btnAgain" style="background:linear-gradient(180deg,#ffdf8a,#c48a22);color:#2a0f0a">⚔ Tìm trận tiếp</button></div>
   </div>
 </div>
-<script src="js/three.min.js?v=1795449718"></script>
-<script src="js/CopyShader.js?v=1795449718"></script>
-<script src="js/LuminosityHighPassShader.js?v=1795449718"></script>
-<script src="js/EffectComposer.js?v=1795449718"></script>
-<script src="js/ShaderPass.js?v=1795449718"></script>
-<script src="js/RenderPass.js?v=1795449718"></script>
-<script src="js/UnrealBloomPass.js?v=1795449718"></script>
-<script src="js/Water.js?v=1795449718"></script>
-<script src="js/GLTFLoader.js?v=1795449718"></script>
-<script src="js/SkeletonUtils.js?v=1795449718"></script>
-<script src="js/peerjs.min.js?v=1795449718"></script>
-<script src="js/fb-app.js?v=1795449718"></script>
-<script src="js/fb-auth.js?v=1795449718"></script>
-<script src="js/fb-firestore.js?v=1795449718"></script>
-<script src="js/tex.js?v=1795449718"></script>
-<script src="js/vrmbones.js?v=1795449718"></script>
-<script src="js/sim.js?v=1795449718"></script>
-<script src="js/audio.js?v=1795449718"></script>
-<script src="js/render.js?v=1795449718"></script>
-<script src="js/r3d.js?v=1795449718"></script>
-<script src="js/anime3d.js?v=1795449718"></script>
-<script src="js/net.js?v=1795449718"></script>
+<script src="js/three.min.js?v=1795450136"></script>
+<script src="js/CopyShader.js?v=1795450136"></script>
+<script src="js/LuminosityHighPassShader.js?v=1795450136"></script>
+<script src="js/EffectComposer.js?v=1795450136"></script>
+<script src="js/ShaderPass.js?v=1795450136"></script>
+<script src="js/RenderPass.js?v=1795450136"></script>
+<script src="js/UnrealBloomPass.js?v=1795450136"></script>
+<script src="js/Water.js?v=1795450136"></script>
+<script src="js/GLTFLoader.js?v=1795450136"></script>
+<script src="js/SkeletonUtils.js?v=1795450136"></script>
+<script src="js/peerjs.min.js?v=1795450136"></script>
+<script src="js/fb-app.js?v=1795450136"></script>
+<script src="js/fb-auth.js?v=1795450136"></script>
+<script src="js/fb-firestore.js?v=1795450136"></script>
+<script src="js/tex.js?v=1795450136"></script>
+<script src="js/vrmbones.js?v=1795450136"></script>
+<script src="js/sim.js?v=1795450136"></script>
+<script src="js/audio.js?v=1795450136"></script>
+<script src="js/render.js?v=1795450136"></script>
+<script src="js/r3d.js?v=1795450136"></script>
+<script src="js/anime3d.js?v=1795450136"></script>
+<script src="js/net.js?v=1795450136"></script>
 
-<script src="js/acct.js?v=1795449718"></script>
-<script src="js/game.js?v=1795449718"></script>
+<script src="js/acct.js?v=1795450136"></script>
+<script src="js/game.js?v=1795450136"></script>
 
 </body>
 </html>

@@ -223,7 +223,7 @@
     }
     return {
       start(nm) { name = nm || pick(NAMES); per = pick(['k', 'v', 'c']); mood = 0; busy = false; lastT = -99; setTimeout(() => say('greet', true), 2200); return name; },
-      get name() { return name; },
+      get name() { return name; }, randName() { return pick(NAMES); },
       ev(cat, p, vars) { if (Math.random() < p) say(cat, false, vars); },
       force(cat, vars) { say(cat, true, vars); },
       reply(q) { setTimeout(() => say('r_' + q, true), 1800 + Math.random() * 3000); },
@@ -263,8 +263,8 @@
       case 'chain': if (vis(e.lane)) Sfx.play('zap'); break;
       case 'chit': if (vis(e.lane)) Sfx.play(e.boss ? 'boom' : 'thud'); break;
       case 'skill': if (vis(e.lane)) { if (e.big) Sfx.play('ult');
-        Sfx.play(e.k === 'shock' ? (e.toad ? 'toad' : e.big ? 'palm' : 'boom') : e.k === 'fan' ? (e.big ? 'needles' : 'dart') : e.k === 'cloud' ? (e.fire ? 'fire' : 'poison') : e.k === 'swordrain' ? (e.wind ? 'windsword' : e.big && e.c === '#80deea' ? 'ice' : 'swordrain') : e.k === 'dragon' ? (e.n > 1 ? 'roar' : 'dragon') : e.k === 'thunder' ? (e.c === '#ff6d00' ? 'fire' : 'thunder') : e.k === 'whirl' ? (e.sw ? 'windsword' : 'whirl') : e.k === 'massheal' ? 'heal' : e.k); } break;
-      case 'strike': if (vis(e.lane) && e.fx === 'thunder') Sfx.play('thunder'); else if (vis(e.lane)) Sfx.play('sword'); break;
+        Sfx.play(e.k === 'shock' ? (e.toad ? 'toad' : e.big ? 'palm' : 'boom') : e.k === 'fan' ? (e.big ? 'needles' : 'dart') : e.k === 'cloud' ? (e.fire ? 'fire' : 'poison') : e.k === 'swordrain' ? (e.wind ? 'windsword' : e.big && e.c === '#80deea' ? 'ice' : 'swordrain') : e.k === 'dragon' ? (e.n > 1 ? 'roar' : 'dragon') : e.k === 'thunder' ? (e.fx === 'fire' ? 'fire' : e.fx === 'palm' ? 'palm' : 'thunder') : e.k === 'whirl' ? (e.sw ? 'windsword' : 'whirl') : e.k === 'massheal' ? 'heal' : e.k); } break;
+      case 'strike': if (vis(e.lane)) Sfx.play(e.fx === 'thunder' ? 'thunder' : e.fx === 'fire' ? 'fire' : e.fx === 'palm' ? 'boom' : e.sty === 'ice' ? 'ice' : 'sword'); break;
       case 'gateHit':
         if (e.lane === ME) { Sfx.play('gateHit'); $('vig').style.opacity = 1; setTimeout(() => { $('vig').style.opacity = 0; }, 350); botEv('pLeak', 0.3); }
         else { if (vis(OP)) Sfx.play('gateHit'); botEv('bLeak', 0.4); }
@@ -382,7 +382,7 @@
     G.maxHp = [G.players[0].hp, G.players[1].hp];
     V.initMascots(G.mascots); view.lane = 0; V.cam.orbit = false; V.setView(0, true); $('tView').innerHTML = 'Xem<br>địch';
     $('avaMe').style.backgroundImage = `url(${ICON['f_' + myMascot]})`; $('avaOp').style.backgroundImage = `url(${ICON['f_' + opMascot]})`;
-    const bn = Bot.start(rs && rs.bn); matchBn = bn; V.setCastleNames(['Thành ' + PNAME, 'Thành ' + bn]); { const a = RANK.info(RANK.pts), b2 = RANK.info(RANK.botPts); V.setTitles([[a.hero, a.col, a.t], [b2.hero, b2.col, b2.t]]); }
+    const bn = Bot.start(rs ? rs.bn : nextBn); matchBn = bn; nextBn = null; V.setCastleNames(['Thành ' + PNAME, 'Thành ' + bn]); { const a = RANK.info(RANK.pts), b2 = RANK.info(RANK.botPts); V.setTitles([[a.hero, a.col, a.t], [b2.hero, b2.col, b2.t]]); }
     $('nmMe').innerHTML = PNAME.replace(/&/g,'&amp;') + ' <small>' + R.MASCOTS[myMascot].name + '</small>';
     $('nmOp').innerHTML = bn + ' <small>' + S.SECTS[G.sects[1]].name + ' · ' + RANK.title(RANK.botPts) + '</small>';
     $('nmMe').innerHTML = PNAME.replace(/&/g,'&amp;') + ' <small>' + S.SECTS[mySect].name + '</small>';
@@ -390,7 +390,7 @@
     running = true; acc = 0; flushEvents();
     toast('Chạm thẻ tướng ' + S.SECTS[mySect].name + ', rồi chạm ô trên sân để đặt');
   }
-  let matchBn = '', lastSave = 0;
+  let matchBn = '', lastSave = 0, nextBn = null, mmTimer = null;
   function saveMatch() { if (!G || !running || NET || G.over || !matchBn) return; try { const o = {}; for (const k in G) if (k !== 'rng' && k !== 'ev') o[k] = G[k]; localStorage.setItem('ttld_match', JSON.stringify({ G: o, bn: matchBn, diff, botPts: RANK.botPts, name: PNAME, t: Date.now() })); } catch (e) {} }
   function clearMatch() { try { localStorage.removeItem('ttld_match'); } catch (e) {} }
   function loadMatch() { try { const j = JSON.parse(localStorage.getItem('ttld_match') || 'null'); if (j && j.G && Date.now() - j.t < 6 * 3600e3) return j; } catch (e) {} clearMatch(); return null; }
@@ -410,7 +410,7 @@
     $('end').hidden = false; Sfx.play((coop ? okc : w === 0) ? 'win' : 'lose'); rankResult(coop ? (okc ? 0 : 1) : w); Sfx.setFight(false);
     botForce(w === 1 ? 'win' : 'lose');
   }
-  $('btnAgain').addEventListener('click', () => { $('end').hidden = true; newGame(); });
+  $('btnAgain').addEventListener('click', () => { if (NET) { $('end').hidden = true; showStart(); return; } findMatch(); });
   $('btnMenu').addEventListener('click', () => { $('end').hidden = true; showStart(); });
 
   // màn hình chọn linh vật
@@ -437,7 +437,21 @@
   $('srow') && $('srow').addEventListener('click', (e) => { const b = e.target.closest('[data-s]'); if (!b) return; Sfx.init(); Sfx.play('click'); mySect = b.dataset.s; try { localStorage.setItem('ttld_sect', mySect); } catch (x) {} renderSects(); });
   $('mrow').addEventListener('click', (e) => { const b = e.target.closest('[data-m]'); if (!b) return; Sfx.init(); Sfx.play('click'); myMascot = b.dataset.m; try { localStorage.setItem('ttld_mascot', myMascot); } catch (x) {} showStart(true); });
   $('diff').addEventListener('click', (e) => { const b = e.target.closest('[data-d]'); if (!b) return; diff = b.dataset.d; try { localStorage.setItem('ttld_diff', diff); } catch (x) {} Sfx.init(); Sfx.play('click'); document.querySelectorAll('#diff button').forEach((x) => x.classList.toggle('on', x.dataset.d === diff)); });
-  $('btnPlay').addEventListener('click', () => { if (!nameOk()) return; diff = RANK.pickBot(); playStory(() => { Sfx.init(); Sfx.play('gong', true); $('start').hidden = true; document.body.classList.remove('menu'); V.cam.zoom = 1; newGame(); }); });
+  // Tìm trận rank: chờ 8–15 giây như ghép người thật, có thể huỷ
+  function findMatch() {
+    if (!nameOk()) return; Sfx.init(); Sfx.play('click'); $('end').hidden = true; $('mm').hidden = false; $('mmFound').hidden = true; $('mmCancel').hidden = false;
+    const wait = 8 + Math.random() * 7, t0 = Date.now(); clearInterval(mmTimer);
+    mmTimer = setInterval(() => {
+      const el = (Date.now() - t0) / 1000; $('mmTime').textContent = '00:' + String(Math.floor(el)).padStart(2, '0');
+      if (el >= wait) {
+        clearInterval(mmTimer); diff = RANK.pickBot(); nextBn = Bot.randName(); const r = RANK.info(RANK.botPts);
+        $('mmCancel').hidden = true; $('mmFound').hidden = false; $('mmFound').innerHTML = `Đã tìm thấy đối thủ<br><b>${nextBn}</b> · <span style="color:${r.col}">${r.name}</span>`; Sfx.play('gong', true);
+        setTimeout(() => { $('mm').hidden = true; $('start').hidden = true; document.body.classList.remove('menu'); V.cam.zoom = 1; newGame(); }, 1800);
+      }
+    }, 250);
+  }
+  $('mmCancel').addEventListener('click', () => { clearInterval(mmTimer); $('mm').hidden = true; Sfx.play('click'); if ($('start').hidden) showStart(); });
+  $('btnPlay').addEventListener('click', findMatch);
   // ---------- TÀI KHOẢN ----------
   function acctUI(u, pf) {
     $('acctOut').hidden = !!(u && pf); $('acctIn').hidden = !(u && pf);
