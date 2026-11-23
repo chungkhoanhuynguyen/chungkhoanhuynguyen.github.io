@@ -211,10 +211,10 @@
         if (e.lane === 0) {
           totalKills++;
           Sfx.play('kill', e.boss);
-          if (e.fb) { announce('Nhất Huyết!', 'Hạ địch đầu tiên của trận'); Sfx.play('stinger', 2); Sfx.say('Nhất huyết'); V.cheer(0); }
+          if (e.fb) { announce('Nhất Huyết!', 'Hạ địch đầu tiên của trận'); Sfx.play('jackpot', 4); V.cheer(0); }
           const now = G.time;
           streak = now - streakT < 1.4 ? streak + 1 : 1; streakT = now;
-          if (STREAK[streak]) { announce(STREAK[streak] + '!', streak >= 5 ? 'Chưởng môn hài lòng' : ''); Sfx.play('stinger', Math.min(6, streak)); Sfx.say(STREAK[streak]); V.cheer(0); if (streak === 5) Bot.ev('pCombo', 0.6); }
+          if (STREAK[streak]) { announce(STREAK[streak] + '!', streak >= 5 ? 'Chưởng môn hài lòng' : ''); Sfx.play('jackpot', Math.min(14, streak * 2)); V.cheer(0); if (streak === 5) Bot.ev('pCombo', 0.6); }
           if (e.boss) { slow = 0.35; slowT = 0.9; announce('Hạ ' + S.CREEPS[e.type].name + '!', '+' + e.g + ' vàng'); Sfx.play('gong', true); }
         } else if (vis(1)) Sfx.play('kill', e.boss);
         if (e.g && e.lane === 0) coinFly(e, Math.min(e.boss ? 18 : 6, 2 + e.g));

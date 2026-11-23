@@ -77,6 +77,7 @@ var Sfx = (function () {
       [1, 1.5, 2, 2.5, 3].forEach(function (m, i) { var o = osc('sawtooth', base * m, t + 0.3, 1.1, 0.05); });
       osc('triangle', base * 4, t + 0.3, 0.8, 0.07);
     },
+    jackpot: function (n) { if (!ac || !on) return; var t = ac.currentTime; n = n || 6; for (var i = 0; i < n; i++) { var f = 1760 + (i % 4) * 220 + Math.random() * 120, tt = t + i * 0.055; osc('square', f, tt, 0.05, 0.03); osc('square', f * 1.335, tt + 0.03, 0.08, 0.03); osc('sine', f * 2.7, tt, 0.14, 0.025); } },
     perfect: function () { if (!ac || !on) return; var t = ac.currentTime; [659, 784, 988, 1319].forEach(function (f, i) { osc('triangle', f, t + i * 0.09, 0.4, 0.1); }); },
     win: function () { if (!ac) return; var t = ac.currentTime; [392, 440, 523, 587, 659, 784, 1047].forEach(function (f, i) { osc('triangle', f, t + i * 0.13, 0.6, 0.12); osc('sine', f / 2, t + i * 0.13, 0.6, 0.08); }); P.gong(true); },
     lose: function () { if (!ac) return; var t = ac.currentTime; [440, 392, 330, 294, 220].forEach(function (f, i) { osc('triangle', f, t + i * 0.25, 0.8, 0.1); }); },
