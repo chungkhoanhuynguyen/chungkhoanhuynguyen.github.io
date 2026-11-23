@@ -10,7 +10,8 @@ var A3 = (function () {
   };
   var BONES = ['hips', 'spine', 'chest', 'neck', 'head', 'leftUpperArm', 'leftLowerArm', 'rightUpperArm', 'rightLowerArm', 'leftUpperLeg', 'leftLowerLeg', 'rightUpperLeg', 'rightLowerLeg', 'rightHand', 'leftHand'];
 
-  function load(cb) {
+  function load(cb, onProg) {
+    var PR = {}, prog = function () { if (!onProg) return; var l = 0, t = 0; for (var k in PR) { l += PR[k][0]; t += PR[k][1]; } onProg(t ? l / t : 0); };
     if (!T.GLTFLoader || !window.VRM_BONES) { cb(); return; }
     var names = []; Object.keys(HERO).forEach(function (k) { if (k.indexOf('m_') === 0 && names.indexOf(HERO[k][0]) < 0) names.push(HERO[k][0]); }); // chỉ tải model linh vật
     var left = names.length, ld = new T.GLTFLoader();
@@ -19,7 +20,7 @@ var A3 = (function () {
         var o = g.scene; o.traverse(function (m) { if (m.isMesh) { m.frustumCulled = false; m.castShadow = true; } });
         var box = new T.Box3().setFromObject(o); TPL[n] = { scene: o, h: box.max.y - box.min.y, B: VRM_BONES[n] };
         if (--left === 0) { ready = Object.keys(TPL).length > 0; cb(); }
-      }, undefined, function () { if (--left === 0) { ready = Object.keys(TPL).length > 0; cb(); } });
+      }, function (e) { PR[n] = [e.loaded, e.total || 1500000]; prog(); }, function () { if (--left === 0) { ready = Object.keys(TPL).length > 0; cb(); } });
     });
   }
 

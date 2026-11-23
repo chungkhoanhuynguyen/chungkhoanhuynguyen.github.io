@@ -103,6 +103,8 @@
   $('btnQ').textContent = '⚙ Đồ hoạ: ' + QN[V.Q];
   const nextQ = () => { const q = (V.Q + 2) % 3; if (G && running && !confirm('Đổi đồ hoạ sang "' + QN[q] + '" sẽ tải lại trang, thoát trận hiện tại?')) return; V.setQ(q); };
   $('btnQ').addEventListener('click', nextQ); $('tQ').addEventListener('click', nextQ);
+  $('tMenu').addEventListener('click', (e) => { e.stopPropagation(); Sfx.init(); Sfx.play('click'); $('setp').hidden = !$('setp').hidden; });
+  document.addEventListener('pointerdown', (e) => { if (!$('setp').hidden && !e.target.closest('#setp,#tMenu')) $('setp').hidden = true; });
   $('tSpeed').hidden = true; // đấu rank/online: không cho tua nhanh, thời gian mỗi đợt có hạn
   $('tSpeed').addEventListener('click', () => { speed = speed === 1 ? 2 : speed === 2 ? 3 : 1; $('tSpeed').textContent = 'x' + speed; Sfx.play('click'); });
   $('tSound').addEventListener('click', () => { Sfx.init(); const on = Sfx.toggle(); $('tSound').classList.toggle('off', !on); });
@@ -346,8 +348,11 @@
 
   // ---------- vòng lặp ----------
   let last = performance.now();
-  function loop(now) {
+  let loopErr = 0;
+  function loop(now) { try { loopBody(now); } catch (e) { console.error(e); if (loopErr++ < 3) toast('Lỗi: ' + (e && e.message || e), true); } requestAnimationFrame(loop); }
+  function loopBody(now) {
     let dt = Math.min(0.05, (now - last) / 1000); last = now;
+    if (catchN > 0 && G && running && !NET && !G.over) { const m = Math.min(catchN, 240); for (let i = 0; i < m && !G.over; i++) { S.aiThink(G, OP, diff); S.step(G); for (const e of G.ev) if (e.e === 'over') catchOver = e; G.ev.length = 0; } catchN -= m; for (const o of G.units) { o.px = o.x; o.py = o.y; } for (const o of G.creeps) { o.px = o.x; o.py = o.y; } $('phase').textContent = 'Đồng bộ trận… ' + Math.round(catchN * S.DT) + 's'; if (catchN <= 0 || G.over) { catchN = 0; if (catchOver) { G.ev.push(catchOver); catchOver = null; flushEvents(); } else { refreshCards(); updateHUD(true); } } }
     if (G && running && !G.over) {
       if (slowT > 0) { slowT -= dt; if (slowT <= 0) slow = 1; }
       acc += dt * (NET ? 1 : speed) * slow; if (NET && NET.role === 'guest' && NET.frames.length > 4) acc += S.DT * Math.min(6, NET.frames.length - 3);
@@ -370,7 +375,6 @@
       if (now - lastSave > 3000) { lastSave = now; saveMatch(); }
       updateHUD();
     }
-    requestAnimationFrame(loop);
   }
 
   // ---------- bắt đầu / kết thúc ----------
@@ -553,18 +557,19 @@
   $('btnJoin').addEventListener('click', () => { if (!nameOk()) return; if (pend) { try { pend.cancel(); } catch (x) {} pend = null; } const code = ($('roomCode').value || '').trim(); if (!/^\d{4}$/.test(code)) { onlUI(false, 'Nhập mã phòng 4 số'); return; } NETM.me = { name: PNAME, mascot: myMascot, sect: mySect }; onlUI(true, 'Đang vào phòng…'); pend = NETM.join(code, (m) => onlUI(true, m), (N, st) => startNet(N, st), (why) => onlUI(false, why)); });
   $('btnCancel').addEventListener('click', () => { if (pend) pend.cancel(); pend = null; onlUI(false, 'Đã huỷ'); });
   // Rank công bằng: ra ngoài/tắt máy thì trận vẫn chạy — quay lại sẽ tua mô phỏng bù đúng thời gian đã trôi
+  let catchN = 0, catchOver = null;
   function catchUp(sec) {
     if (!G || !running || NET || G.over || !(sec > 0.5)) return;
-    const n = Math.min(Math.floor(Math.min(sec, 1800) / S.DT), 36000); let overEv = null;
-    for (let i = 0; i < n && !G.over; i++) { S.aiThink(G, OP, diff); S.step(G); for (const e of G.ev) if (e.e === 'over') overEv = e; G.ev.length = 0; }
-    for (const o of G.units) { o.px = o.x; o.py = o.y; } for (const o of G.creeps) { o.px = o.x; o.py = o.y; }
-    if (n > 40) toast('Trận vẫn tiếp diễn khi bạn rời đi (' + Math.round(n * S.DT) + ' giây)');
-    if (overEv) { G.ev.push(overEv); flushEvents(); } else { refreshCards(); updateHUD(true); }
+    catchN += Math.min(Math.floor(Math.min(sec, 1800) / S.DT), 36000);
+    if (catchN > 40) toast('Trận vẫn tiếp diễn khi bạn rời đi (' + Math.round(catchN * S.DT) + ' giây) — đang đồng bộ…');
   }
   let hiddenAt = 0;
   document.addEventListener('visibilitychange', () => { last = performance.now(); if (document.hidden) hiddenAt = Date.now(); else if (hiddenAt) { const sec = (Date.now() - hiddenAt) / 1000; hiddenAt = 0; catchUp(sec); } });
 
   $('mrow').innerHTML = '<div class="tag">Đang tải nhân vật…</div>';
-  V.loadModels(() => A3.load(() => { V.spawnNPCs(); makeIcons(); showStart(); const rs = loadMatch(); if (rs) { if (rs.name) PNAME = rs.name; $('start').hidden = true; document.body.classList.remove('menu'); V.cam.zoom = 1; newGame(rs); announce('Tiếp tục trận', 'Trận rank đang dở — muốn thoát phải đầu hàng'); catchUp((Date.now() - rs.t) / 1000); } requestAnimationFrame(loop); }));
+  const setLoad = (f, txt) => { const b = $('lbarI'); if (b) b.style.width = Math.round(5 + f * 90) + '%'; const t = $('ltxt'); if (t) t.textContent = (txt || 'Đang tải nhân vật') + '… ' + Math.round(5 + f * 90) + '%'; };
+  const TIPS = ['Mẹo: nâng cấp tướng mạnh quan trọng hơn rải nhiều lính rẻ', 'Mẹo: để dành vàng qua mốc tích luỹ sẽ được cộng lãi', 'Mẹo: mỗi phái có tuyệt kỹ trấn phái ở tướng 70 vàng', 'Mẹo: phái quân gửi giặc sang đối thủ để tăng thu nhập', 'Mẹo: máy yếu chọn Đồ hoạ "Siêu mượt"'];
+  $('ltip').textContent = TIPS[Math.floor(Math.random() * TIPS.length)]; setLoad(0.02);
+  V.loadModels(() => A3.load(() => { setLoad(1, 'Đang dựng thành'); V.spawnNPCs(); makeIcons(); showStart(); setTimeout(() => document.body.classList.remove('loading'), 200); const rs = loadMatch(); if (rs) { if (rs.name) PNAME = rs.name; $('start').hidden = true; document.body.classList.remove('menu'); V.cam.zoom = 1; newGame(rs); announce('Tiếp tục trận', 'Trận rank đang dở — muốn thoát phải đầu hàng'); catchUp((Date.now() - rs.t) / 1000); } requestAnimationFrame(loop); }, (f) => setLoad(f * 0.9)));
   window.__game = { dbgSave: () => { const o = {}; for (const k in G) if (k !== 'rng' && k !== 'ev') o[k] = G[k]; return [running, !!NET, G.over, matchBn, JSON.stringify(o).length]; }, get G() { return G; }, newGame, tap, setSpeed: (s) => { speed = s; } };
 }
