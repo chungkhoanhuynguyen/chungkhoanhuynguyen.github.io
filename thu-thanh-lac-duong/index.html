@@ -29,7 +29,7 @@ button:focus-visible{outline:2px solid var(--gold2);outline-offset:2px}
 #top{position:fixed;left:0;right:0;top:0;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:8px;padding:6px max(8px,env(safe-area-inset-left)) 0 max(8px,env(safe-area-inset-right));pointer-events:none}
 .side{display:flex;align-items:center;gap:8px;padding:5px 10px 5px 5px;pointer-events:auto;max-width:330px}
 .side.r{justify-self:end;flex-direction:row-reverse;padding:5px 5px 5px 10px}
-.ava{width:36px;height:36px;border-radius:50%;border:2px solid var(--gold);background:#1a0a06 center/cover;flex:none}
+.ava{width:40px;height:40px;border-radius:50%;border:2px solid var(--gold);background:radial-gradient(circle,#7a3a20,#1a0a06) ;background-size:cover;background-position:center;flex:none;box-shadow:0 0 10px rgba(232,194,106,.5)}
 .pinfo{flex:1;min-width:0}
 .pname{font-size:12px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .pname small{font-weight:600;opacity:.7;margin-left:4px}
@@ -52,8 +52,9 @@ button:focus-visible{outline:2px solid var(--gold2);outline-offset:2px}
 #bottom{position:fixed;left:0;right:0;bottom:0;display:flex;align-items:flex-end;gap:8px;padding:0 max(8px,env(safe-area-inset-right)) calc(6px + var(--safeB)) max(8px,env(safe-area-inset-left));pointer-events:none}
 #cards{display:flex;gap:5px;overflow-x:auto;padding:6px;pointer-events:auto;scrollbar-width:none;flex:1 1 auto;max-width:max-content}
 #cards::-webkit-scrollbar{display:none}
-.card{position:relative;flex:none;width:58px;height:66px;border-radius:9px;background:linear-gradient(180deg,#5a2216,#2a0f0a);border:1.5px solid rgba(232,194,106,.55);overflow:hidden;transition:transform .12s,border-color .12s}
-.card img{position:absolute;left:0;top:-2px;width:100%;height:56px;object-fit:cover}
+.card{position:relative;flex:none;width:62px;height:70px;border-radius:9px;background:radial-gradient(circle at 50% 38%,var(--c) 0%,color-mix(in srgb,var(--c) 35%,#2a0f0a) 55%,#1a0806 100%);border:1.5px solid rgba(232,194,106,.55);overflow:hidden;transition:transform .12s,border-color .12s}
+.card img{position:absolute;left:0;top:0;width:100%;height:56px;object-fit:cover;filter:drop-shadow(0 2px 3px rgba(0,0,0,.6))}
+.card .nm{position:absolute;left:0;right:0;top:2px;font:800 9px/1 'Be Vietnam Pro',sans-serif;color:#fff;text-shadow:0 1px 2px #000,0 0 4px #000;white-space:nowrap;overflow:hidden;text-overflow:clip}
 .card .cost{position:absolute;left:0;right:0;bottom:0;height:17px;background:rgba(10,4,2,.82);font-size:11.5px;font-weight:800;color:var(--gold2);display:flex;align-items:center;justify-content:center;gap:3px}
 .card .cost .coin{width:9px;height:9px}
 .card.sel{border-color:#fff;transform:translateY(-6px);box-shadow:0 0 14px rgba(255,223,138,.8)}
@@ -140,6 +141,52 @@ body.menu #top,body.menu #res,body.menu #bottom,body.menu #tools,body.menu #chat
 @media (max-height:430px){.title{font-size:30px}.tag{margin:2px 0 6px;font-size:12.5px}.mc .bn{display:none}.mc img{aspect-ratio:1.25}.screen{align-items:flex-start}#res{top:52px}.card{width:52px;height:60px}.card img{height:50px}#tools{top:84px}.tb{width:40px;height:40px}.big{min-height:40px}.panel{bottom:calc(80px + var(--safeB))!important}.mrow{max-width:560px}}
 @media (max-width:600px){.mrow{grid-template-columns:repeat(2,minmax(0,1fr));max-width:340px}#chat{top:100px}#res{top:56px}.side{padding-right:6px}.pname small{display:none}#mid{min-width:0;padding:4px 8px}}
 @media (prefers-reduced-motion:reduce){#announce .t{animation:none}}
+
+/* ===== Giao diện tinh gọn kiểu MMO Hàn (Lineage W) ===== */
+.lacq{background:linear-gradient(180deg,rgba(10,10,14,.62),rgba(10,10,14,.48));border:1px solid rgba(214,186,120,.38);box-shadow:0 2px 10px rgba(0,0,0,.35);border-radius:6px;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+#top{padding-top:4px}
+.side{padding:3px 8px 3px 3px;gap:6px;max-width:260px}
+.side.r{padding:3px 3px 3px 8px}
+.ava{width:30px;height:30px;border-width:1px;box-shadow:none}
+.pname{font-size:11px;font-weight:700;letter-spacing:.2px}
+.pname small{font-size:10px}
+.hpbar{height:4px;border:0;border-radius:2px;margin-top:3px;background:rgba(255,255,255,.12)}
+.hpnum{font-size:10px;opacity:.7}
+#mid{padding:3px 12px 4px;min-width:120px}
+#wave{font:700 13px/1.2 "Be Vietnam Pro",sans-serif;letter-spacing:.6px;color:#f3dfa6}
+#phase{font-size:11px;opacity:.8}
+#res{top:44px;gap:4px}
+.chip{padding:1px 8px;font-size:12px;background:rgba(10,10,14,.55);border-color:rgba(214,186,120,.3)}
+#bottom{gap:6px}
+#cards{padding:4px;gap:4px}
+.card{width:50px;height:50px;border-radius:6px;border:1px solid rgba(214,186,120,.35);background:radial-gradient(circle at 50% 35%,color-mix(in srgb,var(--c) 55%,#111) 0%,#121216 80%)}
+.card img{height:50px;top:0}
+.card .nm{display:none}
+.card .cost{height:auto;left:auto;right:2px;bottom:2px;padding:0 3px;border-radius:3px;background:rgba(0,0,0,.7);font-size:10px}
+.card .cost .coin{width:7px;height:7px}
+.card.sel{transform:none;border-color:#ffe08a;box-shadow:0 0 0 1px #ffe08a,0 0 12px rgba(255,224,138,.6)}
+#acts{flex-direction:row;align-items:flex-end;gap:8px;padding-bottom:4px}
+.big{min-height:40px;border-radius:6px;font-size:13px;padding:0 12px}
+#btnSend{width:54px;height:54px;padding:0;border-radius:50%;background:radial-gradient(circle at 50% 35%,#7a2a20,#2a0d0a);border:1px solid rgba(255,150,120,.6);font-size:11px;line-height:1.1;white-space:normal}
+#btnReady{width:66px;height:66px;padding:0;border-radius:50%;background:radial-gradient(circle at 50% 35%,#f3d27a,#9a6a1a);border:1px solid #fff0c0;font-size:12px;line-height:1.1;white-space:normal;box-shadow:0 0 16px rgba(243,210,122,.45)}
+#tools{top:70px;gap:5px}
+.tb{width:34px;height:34px;font-size:9.5px;background:rgba(10,10,14,.55);border:1px solid rgba(214,186,120,.35)}
+.panel{padding:10px 12px;width:min(280px,calc(100vw - 20px))}
+#pUnit h3,#pSend h3{font:700 15px/1.2 "Be Vietnam Pro",sans-serif;color:#f3dfa6}
+.sub{font-size:11px}
+.stats div{font-size:10px;padding:3px 2px;border-radius:4px;background:rgba(255,255,255,.06)}
+.stats b{font-size:12px}
+.skill{font-size:11px;padding:5px 7px;border-radius:5px}
+.x{width:30px;height:30px;font-size:16px}
+#pUnit{bottom:calc(72px + var(--safeB))}
+#pSend{bottom:calc(82px + var(--safeB))}
+#chat{top:48px;right:52px}
+.msg{font-size:11.5px;background:rgba(10,10,14,.6);border-color:rgba(214,186,120,.25)}
+#announce .t{font-size:clamp(28px,6vw,54px)}
+#toast{top:68px}
+#toast div{font-size:12px;background:rgba(10,10,14,.7);padding:3px 10px}
+#bossbar{top:66px}
+@media (max-height:430px){.card{width:44px;height:44px}.card img{height:44px}#btnReady{width:56px;height:56px}#btnSend{width:46px;height:46px}.tb{width:32px;height:32px}#tools{top:62px}#res{top:42px}}
 </style>
 </head>
 <body>

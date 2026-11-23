@@ -157,8 +157,7 @@ var V = (function () {
     var strandG = G('strand', function () { var pg = new T.PlaneGeometry(0.12, 2.0, 1, 8); pg.translate(0, -1, 0); return pg; });
     var sm = new T.MeshLambertMaterial({ color: '#8ec24a', side: T.DoubleSide, transparent: true, opacity: 0.95 });
     var strands = [];
-    for (var i = 0; i < 46; i++) { var a = Math.random() * 6.28, r = 0.4 + Math.random() * 1.2; var st = new T.Mesh(strandG, sm); st.position.set(0.2 + Math.cos(a) * r, 3.0 + Math.random() * 0.4, Math.sin(a) * r); st.rotation.y = Math.random() * 3; st.scale.y = 0.7 + Math.random() * 0.6; g.add(st); strands.push(st); }
-    var crown = new T.Mesh(G('wcrown', function () { var gg = new T.SphereGeometry(1.4, 12, 8); gg.scale(1, 0.45, 1); return gg; }), M('#6f9e3a')); crown.position.set(0.2, 3.2, 0); crown.castShadow = true; g.add(crown);
+    for (var i = 0; i < 70; i++) { var a = Math.random() * 6.28, r = 0.2 + Math.random() * 1.3; var st = new T.Mesh(strandG, sm); st.position.set(0.2 + Math.cos(a) * r, 3.0 + Math.random() * 0.4, Math.sin(a) * r); st.rotation.y = Math.random() * 3; st.scale.y = 0.7 + Math.random() * 0.6; g.add(st); strands.push(st); }
     g.userData.strands = strands; scene.add(g); WILLOWS.push(g);
   }
   // gạch tường thành
@@ -194,7 +193,7 @@ var V = (function () {
       for (var y = 0; y < 8; y++) for (var x = 0; x < 8; x++) { var v = 104 + Math.random() * 26 | 0; g.fillStyle = 'rgb(' + (v + 2) + ',' + v + ',' + (v - 6) + ')'; g.fillRect(x * 32 + 1, y * 32 + 1, 30, 30); }
       g.fillStyle = 'rgba(0,0,0,0.05)'; for (var i = 0; i < 300; i++) g.fillRect(Math.random() * 256, Math.random() * 256, 2, 2);
     }, [40, 30]);
-    var ground = mesh(new T.PlaneGeometry(110, 56), M('#ffffff', { map: stone }), MX, 0, -17, false); ground.rotation.x = -Math.PI / 2; ground.receiveShadow = true; scene.add(ground);
+    var ground = mesh(new T.PlaneGeometry(130, 56), M('#ffffff', { map: stone }), MX, 0, -17, false); ground.rotation.x = -Math.PI / 2; ground.receiveShadow = true; scene.add(ground);
 
     for (var lane = 0; lane < 2; lane++) {
       var lt = canvasTex(LW * 20, 400, function (g, w, h) {
@@ -237,6 +236,7 @@ var V = (function () {
     buildLake();
     buildGrass();
     buildAmbient();
+    buildProps();
     // vườn giữa
     var grass = canvasTex(64, 64, function (g) { g.fillStyle = '#5e7f3e'; g.fillRect(0, 0, 64, 64); for (var i = 0; i < 160; i++) { g.fillStyle = Math.random() < 0.5 ? '#6f9448' : '#4f6e32'; g.fillRect(Math.random() * 64, Math.random() * 64, 2, 3); } }, [3, 12]);
     var gm = mesh(new T.PlaneGeometry(LCX[1] - LW - 0.3, 20), M('#ffffff', { map: grass }), MX, 0.015, 0, false); gm.rotation.x = -Math.PI / 2; gm.receiveShadow = true; scene.add(gm);
@@ -361,6 +361,68 @@ var V = (function () {
       }
       scene.add(bam);
     }
+  }
+
+  // ---------- TIỂU CẢNH quanh bản đồ ----------
+  function stoneLantern(x, z, s) {
+    var g = new T.Group(); g.position.set(x, 0, z); g.scale.setScalar(s || 1); var st = M('#a8a294');
+    g.add(mesh(cyl(0.32, 0.38, 0.2, 6), st, 0, 0.1, 0)); g.add(mesh(cyl(0.09, 0.12, 0.8, 6), st, 0, 0.6, 0)); g.add(mesh(cyl(0.3, 0.22, 0.12, 6), st, 0, 1.05, 0));
+    g.add(mesh(box(0.34, 0.3, 0.34), M('#ffd18a', { em: '#ff9d3a', ei: 1.3 }), 0, 1.26, 0)); g.add(mesh(cone(0.42, 0.32, 6), st, 0, 1.58, 0)); g.add(mesh(sph(0.06), st, 0, 1.78, 0));
+    var gl = glowSprite('#ffb15a', 1.2, 0.5); gl.position.y = 1.26; g.add(gl); LANT.push(gl); scene.add(g);
+  }
+  function pine(x, z, s) {
+    var g = new T.Group(); g.position.set(x, 0, z); g.scale.setScalar(s);
+    branchMesh(g, new T.Vector3(0, 0, 0), new T.Vector3(0.25, 1.6, 0.1), 0.16, 0.09, M('#4a3322'));
+    [[0.25, 1.7, 0.1, 1.1], [-0.4, 1.3, 0.2, 0.8], [0.7, 1.25, -0.2, 0.75], [0.2, 2.15, 0, 0.7]].forEach(function (c) { var pad = mesh(G('pinepad', function () { var gg = new T.SphereGeometry(0.6, 10, 6); gg.scale(1.2, 0.35, 1.1); return gg; }), M('#2f5d36'), c[0], c[1], c[2]); pad.scale.setScalar(c[3]); g.add(pad); });
+    scene.add(g); TREES.push(g);
+  }
+  function stall(x, z, rot, col) {
+    var g = new T.Group(); g.position.set(x, 0, z); g.rotation.y = rot || 0; var wood = M('#6d4c41');
+    g.add(mesh(box(2, 0.12, 0.9), wood, 0, 0.8, 0)); g.add(mesh(box(1.9, 0.7, 0.8), M('#8d6e63'), 0, 0.38, 0));
+    [[-0.95, -0.4], [0.95, -0.4], [-0.95, 0.4], [0.95, 0.4]].forEach(function (p2) { g.add(mesh(cyl(0.04, 0.04, 2, 5), wood, p2[0], 1, p2[1])); });
+    var aw = mesh(G('awning', function () { return new T.PlaneGeometry(2.3, 1.3, 1, 1); }), M(col, { side: T.DoubleSide }), 0, 2.0, 0.1); aw.rotation.x = -1.2; g.add(aw);
+    var goods = ['#ff7043', '#ffca28', '#8bc34a', '#e91e63', '#ffffff'];
+    for (var i = 0; i < 9; i++) g.add(mesh(i % 2 ? sph(0.09, 6, 5) : box(0.16, 0.12, 0.16), M(goods[i % 5]), -0.8 + i * 0.2, 0.93, (i % 3 - 1) * 0.2));
+    var L = lanternMesh(); L.position.set(0.95, 1.7, 0.6); L.scale.setScalar(0.7); g.add(L);
+    g.add(mesh(cyl(0.22, 0.22, 0.5, 8), M('#795548'), 1.4, 0.25, 0.3)); g.add(mesh(box(0.45, 0.4, 0.45), M('#a1887f'), -1.4, 0.2, 0.2));
+    scene.add(g);
+  }
+  function pondBridge(x, z, r) {
+    var pm = new T.Mesh(new T.CircleGeometry(r, 32), new T.MeshPhongMaterial({ color: '#2b5560', shininess: 120, specular: '#ffd9a0', transparent: true, opacity: 0.92 }));
+    pm.rotation.x = -Math.PI / 2; pm.position.set(x, 0.03, z); scene.add(pm);
+    var rim = new T.Mesh(new T.TorusGeometry(r, 0.18, 6, 40), M('#9e9384')); rim.rotation.x = Math.PI / 2; rim.position.set(x, 0.05, z); scene.add(rim);
+    var br = new T.Mesh(new T.TorusGeometry(r * 0.85, 0.16, 6, 20, Math.PI), M('#c62828')); br.position.set(x, -r * 0.35, z); br.scale.set(1, 0.6, 3.5); scene.add(br);
+    for (var i = 0; i < 6; i++) { var a = Math.random() * 6.28, rr = Math.random() * r * 0.8; var pad = mesh(G('pad', null), M('#4f9446', { side: T.DoubleSide }), x + Math.cos(a) * rr, 0.06, z + Math.sin(a) * rr, false); scene.add(pad); }
+    for (var k = 0; k < 10; k++) { var a2 = k / 10 * 6.28; var rk = mesh(G('rock', function () { return new T.DodecahedronGeometry(0.35, 0); }), M(k % 2 ? '#8d8a82' : '#a29e94'), x + Math.cos(a2) * (r + 0.4), 0.15, z + Math.sin(a2) * (r + 0.4)); rk.scale.set(1 + Math.random(), 0.6 + Math.random() * 0.5, 1 + Math.random()); scene.add(rk); }
+  }
+  function rockGarden(x, z, n) {
+    for (var i = 0; i < n; i++) { var rk = mesh(G('rock', null), M(['#8d8a82', '#a29e94', '#7b776e'][i % 3]), x + (Math.random() - 0.5) * 2.4, 0.2, z + (Math.random() - 0.5) * 2.4); rk.scale.set(0.8 + Math.random() * 1.4, 0.6 + Math.random() * 1.6, 0.8 + Math.random() * 1.2); rk.rotation.y = Math.random() * 3; rk.receiveShadow = true; scene.add(rk); }
+    var sand = new T.Mesh(new T.CircleGeometry(2, 24), M('#d8ccb4')); sand.rotation.x = -Math.PI / 2; sand.position.set(x, 0.02, z); sand.receiveShadow = true; scene.add(sand);
+  }
+  function planter(x, z, w) {
+    var g = new T.Group(); g.position.set(x, 0, z);
+    g.add(mesh(new T.BoxGeometry(w, 0.45, 0.8), wallMat(w, 0.45, '#e0d0b8'), 0, 0.22, 0));
+    var cols = ['#ff5c8a', '#ffd54f', '#ff8a65', '#ba68c8', '#ffffff'];
+    for (var i = 0; i < w * 6; i++) g.add(mesh(G('flw', function () { return new T.IcosahedronGeometry(0.09, 0); }), M(cols[i % 5]), (Math.random() - 0.5) * (w - 0.2), 0.52 + Math.random() * 0.1, (Math.random() - 0.5) * 0.6, false));
+    for (var j = 0; j < w * 3; j++) g.add(mesh(G('flleaf', function () { return new T.IcosahedronGeometry(0.13, 0); }), M('#4f8a3a'), (Math.random() - 0.5) * (w - 0.2), 0.47, (Math.random() - 0.5) * 0.6, false));
+    scene.add(g);
+  }
+  function buildProps() {
+    var L0 = -HL - 13, R0 = LCX[1] + HL + 13;   // khu phố ngoài cùng hai bên
+    // phố chợ
+    [[-1, -8], [1, -3.5], [-1, 1], [1, 5.5]].forEach(function (p, i) { stall(L0 + p[0] * 1.5, p[1], Math.PI / 2, ['#c62828', '#1565c0', '#2e7d32', '#ef6c00'][i]); stall(R0 - p[0] * 1.5, p[1] + 1, -Math.PI / 2, ['#6a1b9a', '#c62828', '#00838f', '#f9a825'][i]); });
+    // dãy nhà ngoài
+    [-10, -3.5, 3, 9.5].forEach(function (z, i) { hall(L0 - 6, z, 3.6, 4.8, 1.5, 1.6, { rot: Math.PI / 2, tiers: i === 1 ? 2 : 1 }); hall(R0 + 6, z, 3.6, 4.8, 1.5, 1.6, { rot: -Math.PI / 2, tiers: i === 2 ? 2 : 1 }); });
+    // ao + cầu, vườn đá, thông, đèn đá
+    pondBridge(L0 + 4, -18, 3); pondBridge(R0 - 4, -18, 3);
+    rockGarden(-HL - 8, -11, 7); rockGarden(LCX[1] + HL + 8, -11, 7); rockGarden(MX, -11.8, 5);
+    [[-HL - 9, -2], [-HL - 9, 7], [LCX[1] + HL + 9, -2], [LCX[1] + HL + 9, 7], [L0 - 2, -14], [R0 + 2, -14], [MX - 4, -15], [MX + 4, -15]].forEach(function (p, i) { pine(p[0], p[1], 0.9 + (i % 3) * 0.15); });
+    for (var z = -9; z <= 9; z += 3) { stoneLantern(-HL - 3.3, z, 0.9); stoneLantern(LCX[1] + HL + 3.3, z, 0.9); }
+    [[-HL - 4, 10.3], [LCX[1] + HL + 4, 10.3], [MX - 3, 10.4], [MX + 3, 10.4]].forEach(function (p) { planter(p[0], p[1], 3); });
+    // cờ xí dọc đường
+    for (var f = 0; f < 6; f++) { [L0 + 3.2, R0 - 3.2].forEach(function (fx, si) { var pole = mesh(G('pole2', function () { return new T.CylinderGeometry(0.05, 0.05, 4, 5); }), M('#3a2a1a'), fx, 2, -10 + f * 3.8); scene.add(pole); var fl = mesh(G('flag2', function () { return new T.PlaneGeometry(0.7, 1.8, 3, 6); }), M(['#c62828', '#f9a825', '#1565c0'][(f + si) % 3], { side: T.DoubleSide }), fx + 0.36, 3.0, -10 + f * 3.8); scene.add(fl); FLAGS.push(fl); }); }
+    // đá cuội & thùng gỗ rải rác
+    for (var i = 0; i < 40; i++) { var side = i % 2 ? 1 : -1, bx = side < 0 ? L0 + (Math.random() - 0.5) * 8 : R0 + (Math.random() - 0.5) * 8; var o = mesh(i % 4 ? G('rock', null) : box(0.5, 0.5, 0.5), M(i % 4 ? '#8d8a82' : '#8d6e63'), bx, 0.2, -12 + Math.random() * 22); o.scale.multiplyScalar(0.4 + Math.random() * 0.4); o.rotation.y = Math.random() * 3; scene.add(o); }
   }
 
   // ---------- HIỆU ỨNG MÔI TRƯỜNG ----------
@@ -658,6 +720,12 @@ var V = (function () {
   var VU = {}, VC = {}, VP = new Map(), VZ = new Map(), FX = [], mascots = [null, null], ghost = null, ghostCell = null;
   function addFX(o) { FX.push(o); if (o.obj) scene.add(o.obj); return o; }
 
+  var badgeCache = {};
+  var SECT_CH = { thienvuong: '天', thieulam: '少', duongmon: '唐', ngudoc: '毒', ngamy: '峨', vodang: '武', conlon: '崑', caibang: '丐' };
+  function sectBadge(type) {
+    if (badgeCache[type]) return badgeCache[type];
+    return badgeCache[type] = canvasTex(64, 64, function (g) { g.fillStyle = '#fff8e1'; g.beginPath(); g.arc(32, 32, 29, 0, 6.3); g.fill(); g.lineWidth = 5; g.strokeStyle = S.UNITS[type].col2; g.stroke(); g.fillStyle = S.UNITS[type].col2; g.font = 'bold 38px serif'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(SECT_CH[type], 32, 34); });
+  }
   function visualUnit(u) {
     var v = VU[u.id];
     if (!v) {
@@ -665,7 +733,16 @@ var V = (function () {
       var g = (modelsReady && makeModel(um[0], um[1], 1.95)) || makeHuman(R.LOOK[u.type], { weapon: d.weapon, wglow: u.type === 'vodang' ? '#7ab8ff' : null });
       if (g.userData.model) { var sg = glowSprite(d.col, 0.9, 0.35); sg.position.y = 0.15; g.add(sg); }
       g.userData.tier = -1; g.userData.pop = 0; g.userData.hidden = 0.0;
-      var ring = new T.Mesh(G('uring', function () { return new T.RingGeometry(0.3, 0.37, 24); }), new T.MeshBasicMaterial({ color: u.owner === 0 ? '#4fc3ff' : '#ff6b5a', transparent: true, opacity: 0.75, side: T.DoubleSide, depthWrite: false }));
+      var ring = new T.Mesh(G('uring', function () { return new T.RingGeometry(0.34, 0.44, 24); }), new T.MeshBasicMaterial({ color: d.col, transparent: true, opacity: 0.85, side: T.DoubleSide, depthWrite: false }));
+      var tring = new T.Mesh(G('tring2', function () { return new T.RingGeometry(0.46, 0.5, 24); }), new T.MeshBasicMaterial({ color: u.owner === 0 ? '#4fc3ff' : '#ff6b5a', transparent: true, opacity: 0.7, side: T.DoubleSide, depthWrite: false }));
+      tring.rotation.x = -Math.PI / 2; tring.position.y = 0.035; g.add(tring);
+      // cờ lưng môn phái — nhìn là biết phái nào
+      var flagG = new T.Group(); flagG.position.set(-0.16, 0, -0.18);
+      flagG.add(mesh(G('fpole', function () { return new T.CylinderGeometry(0.015, 0.015, 2.5, 4); }), M('#4e342e'), 0, 1.25, 0, false));
+      var fl = mesh(G('fbanner', function () { var g2 = new T.PlaneGeometry(0.34, 0.62, 2, 4); g2.translate(0.17, -0.31, 0); return g2; }), M(d.col, { side: T.DoubleSide, em: d.col, ei: 0.25 }), 0.01, 2.45, 0, false);
+      flagG.add(fl); flagG.add(mesh(G('ftip', function () { return new T.ConeGeometry(0.035, 0.12, 5); }), M('#ffd54f', { em: '#ffb300', ei: 0.8 }), 0, 2.56, 0, false));
+      var emb = new T.Sprite(new T.SpriteMaterial({ map: sectBadge(u.type), transparent: true, depthWrite: false })); emb.scale.set(0.26, 0.26, 1); emb.position.set(0.18, 2.12, 0.02); flagG.add(emb);
+      g.add(flagG); g.userData.flag = fl;
       ring.rotation.x = -Math.PI / 2; ring.position.y = 0.03; g.add(ring); g.userData.ring = ring;
       scene.add(g); v = VU[u.id] = g;
     }
@@ -1101,6 +1178,7 @@ var V = (function () {
       if (u.moving && G.phase === 'fight' && Math.random() < 0.08) dustAt(v.position);
       if (!u.dead && !v.userData.model) animHuman(v, { moving: u.moving && G.phase === 'fight', atk: u.atkAnim, ph: u.id }, t, dt);
       if (v.userData.aura) v.userData.aura.rotation.z = t * 1.5;
+      if (v.userData.flag) v.userData.flag.rotation.y = Math.sin(t * 3 + u.id) * 0.35 - (u.moving ? 0.5 : 0);
       v.userData.dead = u.dead;
     }
     for (var id in VU) if (!seen[id]) { disposeObj(VU[id]); delete VU[id]; }

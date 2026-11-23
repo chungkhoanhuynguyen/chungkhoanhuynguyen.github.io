@@ -16,21 +16,21 @@
     const sc = new T.Scene(); sc.add(new T.HemisphereLight('#ffe0c0', '#40283a', 0.9));
     const dl = new T.DirectionalLight('#ffffff', 0.8); dl.position.set(2, 4, 5); sc.add(dl);
     const cam = new T.PerspectiveCamera(30, 1, 0.1, 50);
-    function shot(obj, size, h, d) {
-      rr.setSize(size, size, false); cam.position.set(0.0, h * 0.62, d); cam.lookAt(0, h * 0.5, 0);
+    function shot(obj, size, h, d, face) {
+      rr.setSize(size, size, false); if (face) { cam.position.set(0, h * 0.82, d * 0.42); cam.lookAt(0, h * 0.74, 0); } else { cam.position.set(0.0, h * 0.62, d); cam.lookAt(0, h * 0.5, 0); }
       obj.rotation.y = 0.35; sc.add(obj); rr.render(sc, cam); const url = rr.domElement.toDataURL(); sc.remove(obj); return url;
     }
     const pose = (o) => { if (o.userData.mixer) o.userData.mixer.update(0.4); return o; };
     const um = (k) => { const m = V.UNIT_MODEL[k]; return (V.modelsReady() && V.makeModel(m[0], m[1], 1.55)) || V.makeHuman(R.LOOK[k], { weapon: S.UNITS[k].weapon }); };
-    S.UNIT_ORDER.forEach((k) => { ICON[k] = shot(pose(um(k)), 128, 1.55, 3.6); });
+    S.UNIT_ORDER.forEach((k) => { ICON[k] = shot(pose(um(k)), 160, 1.55, 3.6, true); });
     S.SEND_ORDER.forEach((k) => { const m = V.CREEP_MODEL[k]; const o = S.CREEPS[k].beast ? V.makeBeast(k) : ((V.modelsReady() && m && V.makeModel(m[0], m[1], 1.5)) || V.makeHuman(R.CLOOK[k], { weapon: R.CLOOK[k].weapon })); ICON['s_' + k] = shot(pose(o), 128, 1.3, 3.4); });
-    R.MASCOT_ORDER.forEach((k) => { const o = V.makeMascot(k); o.scale.setScalar(1); ICON['m_' + k] = shot(pose(o), 256, 1.9, 4.2); });
+    R.MASCOT_ORDER.forEach((k) => { const o = V.makeMascot(k); o.scale.setScalar(1); ICON['m_' + k] = shot(pose(o), 256, 1.9, 4.2); ICON['f_' + k] = shot(pose(V.makeMascot(k)), 128, 2.4, 4.2, true); });
     rr.dispose();
   }
 
   // ---------- thẻ môn phái ----------
   const cardsEl = $('cards');
-  function buildCards() { cardsEl.innerHTML = S.UNIT_ORDER.map((k) => `<button class="card" data-u="${k}" aria-label="${S.UNITS[k].name}"><img src="${ICON[k]}" alt=""><span class="cost"><span class="coin"></span>${S.UNITS[k].cost}</span></button>`).join(''); }
+  function buildCards() { cardsEl.innerHTML = S.UNIT_ORDER.map((k) => `<button class="card" data-u="${k}" aria-label="${S.UNITS[k].name}" style="--c:${S.UNITS[k].col}"><img src="${ICON[k]}" alt=""><span class="nm">${S.UNITS[k].name}</span><span class="cost"><span class="coin"></span>${S.UNITS[k].cost}</span></button>`).join(''); }
   cardsEl.addEventListener('click', (e) => {
     const b = e.target.closest('.card'); if (!b) return; Sfx.init(); Sfx.play('click');
     const k = b.dataset.u; selCard = selCard === k ? null : k; selUnitId = null; hidePanels(); showUnitInfo(k); refreshCards();
@@ -287,7 +287,7 @@
     goldShown += (P.gold - goldShown) * 0.25; if (Math.abs(P.gold - goldShown) < 0.6) goldShown = P.gold; $('gold').textContent = Math.round(goldShown); $('inc').textContent = '+' + P.income + '/đợt';
     $('hpMe').style.width = (100 * P.hp / maxA) + '%'; $('hpOp').style.width = (100 * O.hp / maxB) + '%';
     $('hpMeN').textContent = 'Thành ' + P.hp + '/' + maxA + ' · Lực ' + P.value; $('hpOpN').textContent = 'Thành ' + O.hp + '/' + maxB + ' · Lực ' + O.value;
-    const rb = $('btnReady'); rb.disabled = G.phase !== 'build' || P.ready; rb.textContent = G.phase === 'build' ? (P.ready ? 'Đang chờ…' : 'Sẵn sàng') : 'Giao chiến';
+    const rb = $('btnReady'); rb.disabled = G.phase !== 'build' || P.ready; rb.textContent = G.phase === 'build' ? (P.ready ? 'Chờ…' : 'Sẵn sàng') : 'Chiến';
     // thanh boss
     const boss = G.creeps.find((c) => c.lane === view.lane && S.CREEPS[c.type].boss && c.hp > 0);
     if (boss) { $('bossbar').style.display = 'block'; $('bossN').textContent = S.CREEPS[boss.type].name; $('bossB').style.width = (100 * boss.hp / boss.max) + '%'; } else $('bossbar').style.display = 'none';
@@ -328,7 +328,7 @@
     G = S.create({ seed: (Math.random() * 1e9) | 0, mascots: [myMascot, opMascot] });
     G.maxHp = [G.players[0].hp, G.players[1].hp];
     V.initMascots(G.mascots); view.lane = 0; V.cam.orbit = false; V.setView(0, true); $('tView').innerHTML = 'Xem<br>địch';
-    $('avaMe').style.backgroundImage = `url(${ICON['m_' + myMascot]})`; $('avaOp').style.backgroundImage = `url(${ICON['m_' + opMascot]})`;
+    $('avaMe').style.backgroundImage = `url(${ICON['f_' + myMascot]})`; $('avaOp').style.backgroundImage = `url(${ICON['f_' + opMascot]})`;
     const bn = Bot.start();
     $('nmMe').innerHTML = 'Bạn <small>' + R.MASCOTS[myMascot].name + '</small>';
     $('nmOp').innerHTML = bn + ' <small>Máy · ' + { easy: 'Dễ', normal: 'Thường', hard: 'Khó' }[diff] + '</small>';
