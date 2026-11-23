@@ -214,6 +214,7 @@
     let name = '', per = 'v', busy = false, lastT = -99, mood = 0;
     function pick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
     function say(cat, force, vars) {
+      if (G && G.pve) return;
       const now = performance.now() / 1000;
       if (!force && (busy || now - lastT < 6)) return;
       const set = L[cat]; if (!set) return;
@@ -332,7 +333,7 @@
   function updateHUD(force) {
     if (!G) return; hudT -= 1; if (!force && hudT > 0) return; hudT = 2;
     const P = G.players[ME], O = G.players[OP], maxA = G.maxHp[ME], maxB = G.maxHp[OP];
-    $('wave').textContent = 'Đợt ' + G.wave + '/' + S.MAX_WAVE;
+    $('wave').textContent = 'Đợt ' + G.wave + '/' + (G.maxWave || S.MAX_WAVE);
     $('phase').innerHTML = G.phase === 'build' ? 'Xây dựng <b>' + Math.max(0, Math.ceil(G.phaseT)) + 's</b>' : G.phase === 'fight' ? 'Giao chiến' : 'Kết thúc';
     goldShown += (P.gold - goldShown) * 0.25; if (Math.abs(P.gold - goldShown) < 0.6) goldShown = P.gold; $('gold').textContent = Math.round(goldShown); { let tr = 0; S.SAVE.forEach((m, i) => { if (P.gold >= m[0]) tr = i + 1; }); const nx = S.SAVE[tr]; $('inc').textContent = '+' + P.income + '/đợt · Lãi ' + tr + '/5' + (tr ? ' +' + Math.round(S.SAVE[tr - 1][1] * 100) + '%' : '') + (nx && innerWidth > 700 ? ' · mốc sau ' + nx[0] : '') + ' · Quân ' + S.popOf(G, ME) + '/' + S.popCap(G); }
     $('hpMe').style.width = (100 * P.hp / maxA) + '%'; $('hpOp').style.width = (100 * O.hp / maxB) + '%';
@@ -368,7 +369,7 @@
         S.step(G);
         flushEvents();
       }
-    } else if (G && G.over) { acc = 0; }
+    } else if (G && G.over) { acc = 0; if (running && G.ev.length) flushEvents(); }
     if (G) {
       V.setGhost(selCard && hoverCell && view.lane === ME ? selCard : null, hoverCell, hoverCell && G.players[ME].gold >= (selCard ? S.UNITS[selCard].cost : 0) && hoverCell.cy >= S.BUILD_Y0 && hoverCell.cy <= S.BUILD_Y1 && !G.units.some((u) => u.owner === ME && u.cx === hoverCell.cx && u.cy === hoverCell.cy));
       V.frame(G, Math.min(1, acc / S.DT), dt, view);
@@ -382,7 +383,7 @@
     if (NET) { try { NET.close(); } catch (e) {} } NET = null; ME = 0; OP = 1; $('btnSend').hidden = false;
     const others = R.MASCOT_ORDER.filter((k) => k !== myMascot); opMascot = others[Math.floor(Math.random() * others.length)];
     if (rs) { G = S.revive(rs.G); myMascot = G.mascots[0]; opMascot = G.mascots[1]; mySect = G.sects[0]; diff = rs.diff || diff; RANK.botPts = rs.botPts || 0; }
-    else G = S.create({ seed: (Math.random() * 1e9) | 0, mascots: [myMascot, opMascot], sects: [mySect, rndSect(mySect)] }); buildCards();
+    else { const base = { seed: (Math.random() * 1e9) | 0, mascots: [myMascot, opMascot], sects: [mySect, rndSect(mySect)] }; if (camp) Object.assign(base, campCfg(camp.L, camp.d)); G = S.create(base); } buildCards(); $('btnSend').hidden = !!G.pve;
     G.maxHp = [G.players[0].hp, G.players[1].hp];
     V.initMascots(G.mascots); view.lane = 0; V.cam.orbit = false; V.setView(0, true); $('tView').innerHTML = 'Xem<br>địch';
     $('avaMe').style.backgroundImage = `url(${ICON['f_' + myMascot]})`; $('avaOp').style.backgroundImage = `url(${ICON['f_' + opMascot]})`;
@@ -393,6 +394,7 @@
     $('chat').innerHTML = ''; streak = 0; totalKills = 0; selCard = null; selUnitId = null; hidePanels();
     running = true; acc = 0; flushEvents();
     toast('Chạm thẻ tướng ' + S.SECTS[mySect].name + ', rồi chạm ô trên sân để đặt');
+    if (G.pve) { matchBn = ''; $('nmOp').innerHTML = 'Quân triều đình <small>đồng minh · máy</small>'; V.setCastleNames(['Thành ' + PNAME, 'Đồn triều đình']); announce('Ải ' + camp.L + ': ' + campName(camp.L), DIFFS[camp.d][0] + ' · trụ vững ' + G.maxWave + ' đợt giặc'); }
   }
   let matchBn = '', lastSave = 0, nextBn = null, mmTimer = null;
   function saveMatch() { if (!G || !running || NET || G.over || !matchBn) return; try { const o = {}; for (const k in G) if (k !== 'rng' && k !== 'ev') o[k] = G[k]; localStorage.setItem('ttld_match', JSON.stringify({ G: o, bn: matchBn, diff, botPts: RANK.botPts, name: PNAME, t: Date.now() })); } catch (e) {} }
@@ -401,7 +403,7 @@
   window.addEventListener('pagehide', saveMatch); document.addEventListener('visibilitychange', () => { if (document.hidden) saveMatch(); });
   $('tGiveUp').addEventListener('click', () => {
     if (!G || !running || G.over) return; Sfx.init();
-    if (!confirm('Đầu hàng sẽ tính THUA và bị trừ điểm rank. Bạn chắc chắn?')) return;
+    if (!confirm(G.pve ? 'Bỏ ải này? Sẽ tính là thua ải.' : 'Đầu hàng sẽ tính THUA và bị trừ điểm rank. Bạn chắc chắn?')) return;
     G.players[ME].hp = 0; G.over = true; G.winner = OP; G.phase = 'over'; clearMatch(); if (NET) { try { NET.send({ t: 'chat', s: '(đã đầu hàng)' }); NET.close(); } catch (e) {} } endGame();
   });
   function endGame() {
@@ -411,10 +413,31 @@
     $('endT').style.color = (coop ? okc : w === 0) ? '#ffdf8a' : '#ff7a6a';
     $('endS').textContent = coop ? (okc ? 'Hai thành cùng trụ vững 20 đợt giặc' : 'Một thành đã thất thủ — cùng luyện thêm rồi phục thù') : w === 0 ? 'Thành Lạc Dương vững như bàn thạch' : w === 1 ? 'Thành đã bị phá — luyện thêm rồi phục thù' : 'Hai bên ngang tài ngang sức';
     $('endStats').innerHTML = `<div>Đợt<b>${G.wave}</b></div><div>Hạ giặc<b>${P.kills}</b></div><div>Máu thành<b>${P.hp}</b></div>`;
-    $('end').hidden = false; Sfx.play((coop ? okc : w === 0) ? 'win' : 'lose'); rankResult(coop ? (okc ? 0 : 1) : w); Sfx.setFight(false);
+    document.querySelectorAll('#end .rk,#end .stars,#end .rew').forEach((x) => x.remove());
+    const won = coop ? okc : w === 0;
+    if (G.pve) {
+      const hpF = P.hp / (G.maxHp ? G.maxHp[0] : 30), st = w === 0 ? (hpF >= 0.8 ? 3 : hpF >= 0.4 ? 2 : 1) : 0, k = campKey(camp.L, camp.d), first = !CS[k] && st > 0;
+      if (st > (CS[k] || 0)) { CS[k] = st; try { localStorage.setItem('ttld_camp', JSON.stringify(CS)); } catch (e) {} }
+      $('endT').textContent = w === 0 ? 'Phá Ải Thành Công' : 'Thất Thủ'; $('endS').textContent = 'Ải ' + camp.L + ': ' + campName(camp.L) + ' · ' + DIFFS[camp.d][0];
+      $('endStats').insertAdjacentHTML('beforebegin', `<div class="stars">${[1, 2, 3].map((i) => `<span class="${i <= st ? 'on' : ''}" style="animation-delay:${0.35 * i}s">★</span>`).join('')}</div>`);
+      const nx = camp.L < 15 && campOpen(camp.L + 1, 0);
+      $('endStats').insertAdjacentHTML('afterend', `<div class="rew">${w === 0 ? (first ? '🎉 Lần đầu phá ải! ' : '') + (nx && camp.L < 15 ? 'Đã mở <b>Ải ' + (camp.L + 1) + ': ' + campName(camp.L + 1) + '</b>' : camp.L === 15 ? 'Bạn đã dẹp yên thiên hạ!' : '') + (camp.d < 3 ? ' · Mở độ khó <b>' + DIFFS[camp.d + 1][0] + '</b>' : '') : '3 sao cần giữ ≥ 80% máu thành. Thử nâng cấp tướng mạnh hơn!'}</div>`);
+      $('btnAgain').textContent = w === 0 && camp.L < 15 ? '⚔ Ải tiếp theo' : '↻ Đánh lại ải';
+    } else { $('btnAgain').textContent = '⚔ Tìm trận tiếp'; rankResult(coop ? (okc ? 0 : 1) : w); }
+    $('end').hidden = false; Sfx.play(won ? 'win' : 'lose'); Sfx.setFight(false); if (won) celebrate();
     botForce(w === 1 ? 'win' : 'lose');
   }
-  $('btnAgain').addEventListener('click', () => { if (NET) { $('end').hidden = true; showStart(); return; } findMatch(); });
+  $('btnAgain').addEventListener('click', () => { if (NET) { $('end').hidden = true; showStart(); return; }
+    if (camp) { const won = G.winner === ME; const L = won && camp.L < 15 ? camp.L + 1 : camp.L, d = won && camp.L < 15 ? 0 : camp.d; campSel = { L, d }; startCamp(L, d); return; } findMatch(); });
+  // pháo hoa + mưa vàng khi thắng — cảm giác thành tựu
+  function celebrate() {
+    const c = $('fw'), g = c.getContext('2d'); c.width = innerWidth; c.height = innerHeight; c.hidden = false; const P = [];
+    const boom = (x, y, col) => { for (let i = 0; i < 60; i++) { const a = Math.random() * 6.28, v = 2 + Math.random() * 5; P.push({ x, y, vx: Math.cos(a) * v, vy: Math.sin(a) * v, l: 1, c: col, s: 2 + Math.random() * 2 }); } Sfx.play('coin'); };
+    let n = 0; const iv = setInterval(() => { boom(innerWidth * (0.15 + Math.random() * 0.7), innerHeight * (0.12 + Math.random() * 0.35), ['#ffd740', '#ff5252', '#69f0ae', '#40c4ff', '#ea80fc'][n % 5]); if (++n > 9) clearInterval(iv); }, 320);
+    for (let i = 0; i < 70; i++) P.push({ x: Math.random() * innerWidth, y: -Math.random() * innerHeight * 0.6, vx: 0, vy: 2 + Math.random() * 3, l: 3, c: '#ffd740', s: 4, coin: 1 });
+    const t0 = performance.now(); (function f() { g.clearRect(0, 0, c.width, c.height); for (const p of P) { p.x += p.vx; p.y += p.vy; p.vy += p.coin ? 0.05 : 0.08; p.vx *= 0.98; p.l -= p.coin ? 0.004 : 0.016; if (p.l <= 0) continue; g.globalAlpha = Math.min(1, p.l); g.fillStyle = p.c; g.beginPath(); if (p.coin) g.ellipse(p.x, p.y, p.s, p.s * 0.7, 0, 0, 6.3); else g.arc(p.x, p.y, p.s, 0, 6.3); g.fill(); }
+      if (performance.now() - t0 < 5500) requestAnimationFrame(f); else { c.hidden = true; } })();
+  }
   $('btnMenu').addEventListener('click', () => { $('end').hidden = true; showStart(); });
 
   // màn hình chọn linh vật
@@ -427,7 +450,7 @@
     V.initMascots(G.mascots); V.cam.orbit = true; V.cam.zoom = 0.85; V.setView(0, true);
   }
   function goPage(pg) { document.querySelectorAll('#start .pg').forEach((x) => { x.hidden = x.dataset.pg !== pg; }); const bx = document.querySelector('#start .box'); if (bx) bx.scrollTop = 0; }
-  document.addEventListener('click', (e) => { const b = e.target.closest('[data-go]'); if (!b || $('start').hidden) return; Sfx.init(); Sfx.play('click'); goPage(b.dataset.go); if (b.dataset.go === 'home') updPick(); });
+  document.addEventListener('click', (e) => { const b = e.target.closest('[data-go]'); if (!b || $('start').hidden) return; Sfx.init(); Sfx.play('click'); goPage(b.dataset.go); if (b.dataset.go === 'home') updPick(); if (b.dataset.go === 'camp') renderCamp(); });
   function updPick() { if (!$('pkHero')) return; $('pkImg').src = ICON['f_' + myMascot] || ICON['m_' + myMascot] || ''; $('pkHero').textContent = R.MASCOTS[myMascot].name; $('pkSect').textContent = S.SECTS[mySect].name; $('pkSect').style.color = S.SECTS[mySect].col; }
   let acctTab = 'login';
   document.querySelectorAll('[data-tab]').forEach((b) => b.addEventListener('click', () => { acctTab = b.dataset.tab; document.querySelectorAll('[data-tab]').forEach((x) => x.classList.toggle('on', x === b)); $('btnLogin').hidden = acctTab !== 'login'; $('btnReg').hidden = acctTab !== 'reg'; $('pw2Row').hidden = acctTab !== 'reg'; $('ppw').autocomplete = acctTab === 'reg' ? 'new-password' : 'current-password'; $('acctMsg').textContent = ''; }));
@@ -443,7 +466,7 @@
   $('diff').addEventListener('click', (e) => { const b = e.target.closest('[data-d]'); if (!b) return; diff = b.dataset.d; try { localStorage.setItem('ttld_diff', diff); } catch (x) {} Sfx.init(); Sfx.play('click'); document.querySelectorAll('#diff button').forEach((x) => x.classList.toggle('on', x.dataset.d === diff)); });
   // Tìm trận rank: chờ 8–15 giây như ghép người thật, có thể huỷ
   function findMatch() {
-    if (!nameOk()) return; Sfx.init(); Sfx.play('click'); $('end').hidden = true; $('mm').hidden = false; $('mmFound').hidden = true; $('mmCancel').hidden = false;
+    if (!nameOk()) return; camp = null; Sfx.init(); Sfx.play('click'); $('end').hidden = true; $('mm').hidden = false; $('mmFound').hidden = true; $('mmCancel').hidden = false;
     const wait = 8 + Math.random() * 7, t0 = Date.now(); clearInterval(mmTimer);
     mmTimer = setInterval(() => {
       const el = (Date.now() - t0) / 1000; $('mmTime').textContent = '00:' + String(Math.floor(el)).padStart(2, '0');
@@ -477,6 +500,35 @@
   $('btnTop').addEventListener('click', () => { const b = $('topBox'); if (!b.hidden) { b.hidden = true; return; } b.hidden = false; b.textContent = 'Đang tải…'; ACCT.top(20).then((L) => { b.innerHTML = '<b>Bảng xếp hạng</b><br>' + L.map((p, i) => { const r = RANK.info(p.pts || 0); return `${i + 1}. ${esc(p.name)} — <span style="color:${r.col}">${r.name}</span>`; }).join('<br>'); }).catch((e) => { b.textContent = ACCT.viErr(e); }); });
 
   // ---------- XẾP HẠNG: 7 bậc × 10 mốc ----------
+  // ===== VƯỢT ẢI: 15 ải × 4 độ khó (nhân máu/sát thương giặc) =====
+  const CAMP = [
+    ['Khăn Vàng Khởi Loạn', ['Làng Thượng Thôn', 'Bến Đò Lạc Thuỷ', 'Rừng Trúc Hoàng Cân', 'Đồn Khăn Vàng', 'Hoàng Cân Đại Soái']],
+    ['Biện Kinh Phản Loạn', ['Cửa Ải Hổ Lao', 'Phố Chợ Biện Kinh', 'Thành Bắc Thất Thủ', 'Doanh Trại Phiến Quân', 'Phiến Tướng Biện Kinh']],
+    ['Mông Nguyên Xâm Lăng', ['Thảo Nguyên Biên Giới', 'Thiết Kỵ Tràn Bờ', 'Lửa Đốt Trạm Dịch', 'Vây Thành Lạc Dương', 'Mông Nguyên Đại Hãn']]];
+  const DIFFS = [['Thường', 1, 1, '#a5d6a7'], ['Khó', 1.5, 1.25, '#ffd54f'], ['Cực khó', 2.3, 1.6, '#ff8a65'], ['Địa ngục', 3.5, 2.1, '#ff1744']];
+  let camp = null, campSel = { L: 1, d: 0 }, CS = {};
+  try { CS = JSON.parse(localStorage.getItem('ttld_camp') || '{}'); } catch (e) {}
+  const campKey = (L, d) => L + '_' + d, campStars = (L, d) => CS[campKey(L, d)] || 0;
+  const campOpen = (L, d) => (L === 1 || campStars(L - 1, 0) > 0) && (d === 0 || campStars(L, d - 1) > 0);
+  const campName = (L) => CAMP[Math.floor((L - 1) / 5)][1][(L - 1) % 5];
+  function campCfg(L, d) { return { pve: true, maxWave: Math.min(20, 7 + L), hpM: DIFFS[d][1] * (0.68 + 0.02 * L), dmM: DIFFS[d][2] }; }
+  function renderCamp() {
+    const box = $('campList'); if (!box) return; let h = '';
+    CAMP.forEach((ch, ci) => { h += `<div class="chap">Chương ${ci + 1} · ${ch[0]}</div><div class="lvls">`;
+      ch[1].forEach((nm, li) => { const L = ci * 5 + li + 1, op = campOpen(L, 0), st = Math.max(...DIFFS.map((_, d) => campStars(L, d)));
+        h += `<button class="lv${op ? '' : ' lock'}${campSel.L === L ? ' sel' : ''}" data-l="${L}" ${op ? '' : 'disabled'}><b>${op ? L : '🔒'}</b><span>${nm}</span><i>${'★'.repeat(st)}${'☆'.repeat(3 - st)}</i></button>`; });
+      h += '</div>'; });
+    box.innerHTML = h;
+    $('campDiff').innerHTML = DIFFS.map((d, i) => { const op = campOpen(campSel.L, i); return `<button class="${campSel.d === i ? 'on' : ''}" data-d="${i}" ${op ? '' : 'disabled'} style="--c:${d[3]}">${op ? '' : '🔒 '}${d[0]}<small>×${d[1]} máu</small></button>`; }).join('');
+    const c = campCfg(campSel.L, campSel.d);
+    $('campInfo').innerHTML = `<b>Ải ${campSel.L}: ${campName(campSel.L)}</b> · ${c.maxWave} đợt giặc · độ khó <b style="color:${DIFFS[campSel.d][3]}">${DIFFS[campSel.d][0]}</b> · sao tốt nhất: ${'★'.repeat(campStars(campSel.L, campSel.d)) || 'chưa có'}`;
+  }
+  document.addEventListener('click', (e) => {
+    const l = e.target.closest('#campList [data-l]'); if (l) { campSel.L = +l.dataset.l; if (!campOpen(campSel.L, campSel.d)) campSel.d = 0; Sfx.play('click'); renderCamp(); return; }
+    const d = e.target.closest('#campDiff [data-d]'); if (d) { campSel.d = +d.dataset.d; Sfx.play('click'); renderCamp(); }
+  });
+  function startCamp(L, d) { camp = { L, d }; Sfx.init(); Sfx.play('gong', true); $('end').hidden = true; $('start').hidden = true; document.body.classList.remove('menu'); V.cam.zoom = 1; nameOk(); newGame(null); }
+  $('btnCampGo') && $('btnCampGo').addEventListener('click', () => startCamp(campSel.L, campSel.d));
   const RANK = (() => {
     const TIERS = [['Sắt', '#8d8d8d'], ['Đồng', '#c08457'], ['Nhôm', '#b0bec5'], ['Bạc', '#dfe6ec'], ['Vàng', '#ffd54f'], ['Bạch Kim', '#7fe0d8'], ['Lục Bảo', '#2ee59d'], ['Kim Cương', '#82b1ff'], ['Cao Thủ', '#e040fb'], ['Đại Cao Thủ', '#ff6e40'], ['Thách Đấu', '#ff1744'], ['Cửu Ngũ Chí Tôn', '#ffe57f']];
     const HERO = ['Tân Binh', 'Hương Dũng', 'Hiệp Khách', 'Thiếu Hiệp', 'Đại Hiệp', 'Danh Hiệp', 'Trưởng Lão', 'Chưởng Môn', 'Tông Sư', 'Đại Tông Sư', 'Võ Lâm Minh Chủ', 'Thiên Hạ Đệ Nhất'];
@@ -496,7 +548,9 @@
     const before = RANK.info(RANK.pts), d = w === 0 ? 35 + Math.round(Math.max(0, RANK.botPts - RANK.pts) / 20) : w === 1 ? -22 : 0;
     RANK.add(d); const after = RANK.info(RANK.pts); if (window.ACCT && ACCT.user) ACCT.saveResult(RANK.pts, w === 0 ? 1 : w === 1 ? 0 : -1).catch(() => {});
     const up = after.t > before.t ? ' · Thăng bậc: ' + after.hero + '!' : '';
-    $('endStats').insertAdjacentHTML('afterend', `<div class="tag rk">Rank: <b style="color:${after.col}">${after.name}</b> (${d >= 0 ? '+' : ''}${d} điểm)${up}</div>`);
+    const pr0 = (RANK.pts - d) % 100, pr1 = RANK.pts % 100;
+    $('endStats').insertAdjacentHTML('afterend', `<div class="tag rk">Rank: <b style="color:${after.col}">${after.name}</b> (${d >= 0 ? '+' : ''}${d} điểm)${up}<div class="rkbar"><i style="width:${pr0}%;background:${after.col}"></i></div><small>${pr1}/100 điểm tới mốc kế tiếp</small></div>`);
+    setTimeout(() => { const i = document.querySelector('#end .rkbar i'); if (i) i.style.width = (after.t > before.t || after.m !== before.m ? 100 : pr1) + '%'; }, 400);
     showRank();
   }
   function showRank() { const r = RANK.info(RANK.pts); const h = `Rank: <b style="color:${r.col}">${r.name}</b> · Danh hiệu: <b>${r.hero}</b>`; ['rankBox', 'rankBox2'].forEach((id) => { const el = $(id); if (el) el.innerHTML = h; }); }

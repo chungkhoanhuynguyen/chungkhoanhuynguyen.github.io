@@ -756,6 +756,16 @@ var V = (function () {
     body.add(mesh(box(0.08, 0.07, 0.03), M('#e8b04a', { em: '#8a5a00', ei: 0.4 }), 0, 0.98, 0.16, false));
     var sash = mesh(box(0.07, 0.3, 0.02), M(lk.sash || lk.trim), 0.08, 0.82, 0.17, false); sash.rotation.z = 0.12; body.add(sash);
     // giáp vai
+    // phụ kiện theo phái
+    if (lk.kasaya) { var ks = M(lk.kasaya, { side: T.DoubleSide }), kt = M(lk.trim);
+      var kp = mesh(box(0.2, 0.62, 0.02), ks, 0.02, 1.16, 0.165, false); kp.rotation.z = -0.62; body.add(kp);
+      var kb = mesh(box(0.2, 0.62, 0.02), ks, 0.02, 1.16, -0.165, false); kb.rotation.z = -0.62; body.add(kb);
+      var ksh = mesh(G('kshoulder', function () { var g = new T.SphereGeometry(0.11, 10, 6, 0, Math.PI * 2, 0, Math.PI * 0.5); g.scale(1.1, 0.7, 1.3); return g; }), ks, -0.2, 1.38, 0); body.add(ksh);
+      for (var kq = -1; kq <= 1; kq += 2) { var kl = mesh(box(0.012, 0.6, 0.012), kt, 0.02 + kq * 0.09 * Math.cos(0.62), 1.16 + kq * 0.09 * Math.sin(0.62), 0.178, false); kl.rotation.z = -0.62; body.add(kl); }
+      var kskirt = mesh(G('kskirt', function () { var g = new T.CylinderGeometry(0.215, 0.24, 0.16, 14, 1, true); return g; }), ks, 0, 0.86, 0); kskirt.scale.z = 0.76; body.add(kskirt); }
+    if (lk.beads) { var bm2 = M(lk.beads); for (var bi = 0; bi < 11; bi++) { var ba = -0.4 + bi / 10 * Math.PI * 0.75 - Math.PI * 0.0; var bx = Math.sin((bi / 10 - 0.5) * 2.4) * 0.13, by = 1.37 - Math.cos((bi / 10 - 0.5) * 2.4) * 0.15 + 0.1; body.add(mesh(sph(bi === 5 ? 0.03 : 0.022, 6, 4), bm2, bx, by, 0.17, false)); } }
+    if (lk.collar) { var cm = M(lk.collar); for (var cq = -1; cq <= 1; cq += 2) { var cl = mesh(box(0.05, 0.3, 0.02), cm, cq * 0.06, 1.3, 0.165, false); cl.rotation.z = cq * 0.45; body.add(cl); } }
+    if (lk.gourd) { var gm = M(lk.gourd); var gg = new T.Group(); gg.position.set(-0.22, 0.86, 0.05); gg.add(mesh(sph(0.075, 8, 6), gm, 0, 0, 0, false), mesh(sph(0.05, 8, 6), gm, 0, 0.1, 0, false), mesh(cyl(0.012, 0.012, 0.05, 5), M('#5d4037'), 0, 0.16, 0, false)); body.add(gg); }
     var heavy = lk.armor || o.pads;
     for (var sd = -1; sd <= 1; sd += 2) {
       var pad = mesh(G(heavy ? 'padH' : 'padL', function () { var g = new T.SphereGeometry(heavy ? 0.13 : 0.095, 10, 6, 0, Math.PI * 2, 0, Math.PI * 0.55); g.scale(1.1, 0.75, 1); return g; }), heavy ? M(lk.trim, { em: shade(lk.trim, -0.6), ei: 0.2 }) : robe, sd * 0.23, 1.37, 0);
@@ -832,6 +842,11 @@ var V = (function () {
         g.add(mesh(box(0.14, 0.03, 0.04), M('#e8b04a'), 0, 0, 0));
         var bl = mesh(box(0.045, 0.62, 0.015), M(w === 'saber' ? '#cfd8dc' : '#eef6ff', { em: glw || (w === 'sword' ? '#7ab8ff' : '#000000'), ei: glw ? 1.4 : 0.35 }), 0, -0.32, 0); g.add(bl);
         break;
+      case 'ringstaff': // thiền trượng: cán dài, đầu vòng vàng có khoen
+        g.add(mesh(cyl(0.024, 0.024, 1.3, 6), M('#6d3f1a'), 0, -0.15, 0)); var rgm = M('#f2c14e', { em: glw || '#8a5a00', ei: glw ? 1.2 : 0.3 });
+        var rg = mesh(G('rstorus', function () { return new T.TorusGeometry(0.09, 0.012, 5, 14); }), rgm, 0, 0.58, 0); g.add(rg); g.add(mesh(cone(0.03, 0.12, 5), rgm, 0, 0.72, 0));
+        for (var ri = 0; ri < 4; ri++) { var rr2 = mesh(G('rsring', function () { return new T.TorusGeometry(0.03, 0.007, 4, 8); }), rgm, Math.cos(ri * 1.57) * 0.09, 0.58 + Math.sin(ri * 1.57) * 0.09, 0.0); g.add(rr2); }
+        break;
       case 'staff': g.add(mesh(cyl(0.025, 0.025, 1.1, 6), M('#8d5a2b'), 0, -0.2, 0)); g.add(mesh(sph(0.05), M('#e8b04a'), 0, 0.35, 0)); g.add(mesh(sph(0.05), M('#e8b04a'), 0, -0.75, 0)); break;
       case 'stick': g.add(mesh(cyl(0.028, 0.028, 1.0, 6), M('#7cb342'), 0, -0.15, 0)); break;
       case 'hammer': g.add(mesh(cyl(0.025, 0.025, 0.65, 6), M('#6d4c41'), 0, -0.25, 0)); var hh = mesh(cyl(0.13, 0.13, 0.22, 10), M('#d4a017', { em: '#6a4a00', ei: 0.4 }), 0, -0.58, 0); hh.rotation.z = Math.PI / 2; g.add(hh); break;
@@ -846,8 +861,8 @@ var V = (function () {
       case 'twin': weapon3(g, 'sword', o); break;
     }
   }
-  function makeBeast(type) {
-    var d = S.CREEPS[type], col = d.col, root = new T.Group(), body = new T.Group(); root.add(body);
+  function makeBeast(type, colO) {
+    var d = S.CREEPS[type], col = colO || d.col, root = new T.Group(), body = new T.Group(); root.add(body);
     var bm = M(col), dk = M(shade(col, -0.4));
     var tor = mesh(G('btor', function () { var g = new T.SphereGeometry(0.3, 14, 10); g.scale(0.75, 0.7, 1.35); return g; }), type === 'hovuong' ? M('#ffffff', { map: tigerTex() }) : bm, 0, 0.42, 0); outline(tor, 1.06); body.add(tor);
     var head = new T.Group(); head.position.set(0, 0.6, 0.45); body.add(head);
@@ -1046,7 +1061,11 @@ var V = (function () {
     if (!v) {
       var d = S.CREEPS[c.type];
       var cm = CREEP_MODEL[c.type];
-      v = compact(d.beast ? makeBeast(c.type) : makeHuman(R.CLOOK[c.type], { weapon: R.CLOOK[c.type].weapon }));
+      if (R.CLOOK[c.type] && R.CLOOK[c.type].mount) { // kỵ binh: người cưỡi ngựa đúng như tên
+        v = new T.Group(); var hz = compact(makeBeast(c.type, R.CLOOK[c.type].mount)); hz.scale.set(1.15, 1.25, 1.35); v.add(hz);
+        var rd = compact(makeHuman(R.CLOOK[c.type], { weapon: R.CLOOK[c.type].weapon })); rd.position.set(0, 0.42, -0.05); rd.scale.setScalar(0.82); v.add(rd);
+        rd.userData.legL.rotation.z = 0.9; rd.userData.legR.rotation.z = -0.9; v.userData.horse = hz; v.userData.rider = rd;
+      } else v = compact(d.beast ? makeBeast(c.type) : makeHuman(R.CLOOK[c.type], { weapon: R.CLOOK[c.type].weapon }));
       v.userData.size = d.size; v.traverse(function (o2) { if (o2.isMesh) { o2.castShadow = !LOW && !!d.boss; } });
       if (R.CLOOK[c.type] && R.CLOOK[c.type].aura) { var a = glowSprite(R.CLOOK[c.type].aura, 2.2, 0.5); a.position.y = 0.6; v.add(a); }
       if (d.boss) { var br = new T.Mesh(new T.RingGeometry(0.5, 0.62, 32), new T.MeshBasicMaterial({ color: '#ff1744', transparent: true, opacity: 0.8, side: T.DoubleSide, depthWrite: false, blending: T.AdditiveBlending })); br.rotation.x = -Math.PI / 2; br.position.y = 0.04; v.add(br); }
@@ -1557,7 +1576,8 @@ var V = (function () {
       var ut = c.tgt ? S.findUnit(G, c.tgt) : null;
       var ca = ut ? Math.atan2(ut.x - c.x, -(ut.y - c.y)) : (c.leaked ? Math.atan2(HL - c.x, -(17.4 - c.y)) : Math.PI);
       faceTo(cv, 1, ca, dt);
-      if (cv.userData.beast) animBeast(cv, { moving: c.moving, atk: c.atkAnim }, t + c.id, dt); else if (cv.userData.model) animModel(cv, { moving: c.moving || c.leaked, atk: c.atkAnim }, dt); else animHuman(cv, { moving: c.moving, atk: c.atkAnim, ph: c.id }, t, dt);
+      if (cv.userData.horse) { animBeast(cv.userData.horse, { moving: c.moving, atk: 0 }, t + c.id, dt); animHuman(cv.userData.rider, { moving: false, atk: c.atkAnim, ph: c.id }, t, dt); }
+      else if (cv.userData.beast) animBeast(cv, { moving: c.moving, atk: c.atkAnim }, t + c.id, dt); else if (cv.userData.model) animModel(cv, { moving: c.moving || c.leaked, atk: c.atkAnim }, dt); else animHuman(cv, { moving: c.moving, atk: c.atkAnim, ph: c.id }, t, dt);
       cv.userData.stun = c.stun > 0; cv.userData.poison = c.poisonT > 0; cv.userData.hp = c.hp / c.max; cv.userData.boss = S.CREEPS[c.type].boss;
       if (c.stun > 0 && Math.random() < 0.15) burst(W(c.lane, c.x, c.y, 1.1), '#fff59d', 1, 0.6, 0.12, 0.4, 0);
       if (c.poisonT > 0 && Math.random() < 0.12) burst(W(c.lane, c.x, c.y, 0.6), '#76ff03', 1, 0.6, 0.15, 0.5, -1);

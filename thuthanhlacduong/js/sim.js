@@ -68,17 +68,20 @@ var Sim = (function () {
       if (b.heal) u.heal = Math.round(b.heal * m); if (b.dot) u.dot = Math.round(b.dot * m);
       if (b.skill.amt) u.skill.amt = Math.round(b.skill.amt * m); if (b.skill.dps) u.skill.dps = Math.round(b.skill.dps * m);
       u.skill.name = a[2] || SKN[a[1]]; u.up = { name: a[0] + ' · Đại Thành' };
-      var fem = S.fem.indexOf(i) >= 0, L0 = S.look, robe = shadeHex(S.col, [0, -0.15, 0.1, -0.3, 0.2, -0.05, -0.4, 0.05][i]);
-      // mỗi tướng một dáng riêng: mũ theo vai trò, nam/nữ, tóc bạc cho bậc trưởng lão, chưởng môn đội mũ miện
-      var mh = { thienvuong: L0.hat, thieulam: 'ironhelm', duongmon: 'hood', ngudoc: 'headdress', ngamy: 'taoist', vodang: 'topknot', conlon: 'taoist', caibang: 'plume', summonR: 'crown', summonM: 'helmet' }[a[1]];
-      var fh = { thienvuong: L0.fhat || 'ponytail', thieulam: 'ponytail', duongmon: 'hood', ngudoc: 'headdress', ngamy: 'longhair', vodang: 'ponytail', conlon: 'longhair', caibang: 'ponytail', summonR: 'crown', summonM: 'ponytail' }[a[1]];
-      var hat = fem ? fh : (L0.hat === 'bald' ? 'bald' : mh); if (i === 0 && !fem) hat = L0.hat; if (i === 7) hat = fem ? 'crown' : (L0.hat === 'bald' ? 'bald' : 'crown');
-      if (L0.fhat && fem && i !== 7) hat = L0.fhat;
+      var fem = S.fem.indexOf(i) >= 0, L0 = S.look, C = COSTUME[S.k] || {};
+      // TRANG PHỤC CHUẨN THEO PHÁI: mũ/tóc, màu áo, phụ kiện (cà sa, chuỗi hạt, hồ lô...), vũ khí sở trường
+      var pal = C.robes || [S.col, shadeHex(S.col, -0.15), shadeHex(S.col, 0.12)], robe = pal[i % pal.length];
+      var hat = fem ? (C.fhat || L0.fhat || 'longhair') : (C.hat || L0.hat);
+      if (C.hat7 && i === 7 && !fem) hat = C.hat7; if (C.fhat7 && i === 7 && fem) hat = C.fhat7;
       var skins = ['#f0c8a2', '#e8b890', '#f3d0b0', '#d9a77c', '#efc39e', '#e3b48c', '#f6d5bd', '#eec5a0'];
-      u.look = { skin: fem ? '#f6d5bd' : skins[i], hair: i >= 6 && !fem ? '#d8d2c8' : L0.hair, hat: hat, robe: robe, robe2: i % 2 ? S.col2 : shadeHex(S.col, 0.7), trim: i >= 6 ? '#ffd54f' : L0.trim, female: fem, sash: L0.sash || (i >= 5 ? '#ffd54f' : null), mask: (L0.mask || a[1] === 'duongmon') && !fem, armor: (a[1] === 'thieulam' || L0.armor || a[1] === 'summonM') && !fem, patches: L0.patches };
+      u.look = { skin: fem ? '#f6d5bd' : skins[i], hair: i >= 6 && !fem ? '#d8d2c8' : (C.hair || L0.hair), hat: hat, robe: robe, robe2: C.robe2 || S.col2, trim: i >= 6 ? (C.trim7 || '#ffd54f') : (C.trim || L0.trim), female: fem,
+        sash: C.sash || L0.sash, mask: !fem && (C.mask || L0.mask), armor: !fem && (C.armor === true || (C.armor === 'tank' && (a[1] === 'thieulam' || a[1] === 'summonM'))), patches: C.patches || L0.patches,
+        kasaya: C.kasaya && !(fem && !C.fkasaya) ? C.kasaya : null, beads: C.beads && (i >= 2 || C.beadsAll) ? C.beads : null, gourd: C.gourd || null, collar: C.collar || null };
+      if (fem && /Ni Cô|Nữ Ni|Sư Thái/.test(a[0])) { u.look.hat = 'hood'; u.look.beads = '#6d4c41'; }
       if (hat === 'bald') u.look.hair = null;
-      u.cape = i >= 5 ? shadeHex(S.col, -0.3) : null;
-      u.weapon = (a[3] && a[3].weapon) || (a[1] === 'thieulam' ? (S.wp === 'staff' || S.wp === 'stick' ? S.wp : 'shield') : AW[a[1]]) || S.wp;
+      u.cape = i >= 6 && C.cape !== false ? (C.cape || shadeHex(S.col, -0.3)) : null;
+      var cw = C.wp || {};
+      u.weapon = (a[3] && a[3].weapon) || (i === 7 && C.wp7) || cw[a[1]] || C.w || (a[1] === 'thieulam' ? (S.wp === 'staff' || S.wp === 'stick' ? S.wp : 'shield') : AW[a[1]]) || S.wp;
       u.col = S.col; u.col2 = S.col2; u.ch = S.ch; u.fxc = S.fxc || S.col;
       if (i === 7 && S.ult) { for (var f4 in S.ult) u.skill[f4] = S.ult[f4]; u.ult = true; u.wglow = S.fxc || S.col; u.up = { name: S.ult.title || a[0] }; }
       if (a[3]) for (var f3 in a[3]) if (f3 !== 'weapon') u[f3] = a[3][f3];
@@ -87,6 +90,30 @@ var Sim = (function () {
     S.u.forEach(function (a, i) { var u = UNITS[keys[i]]; if (u.skill.type === 'summon') u.skill.unit = u.skill.tank ? keys[1] : keys[0]; });
     SECTS[S.k] = { name: S.name, motto: S.motto, col: S.col, ch: S.ch, pw: S.pw, units: keys, ult: S.ult && S.ult.name }; SECT_ORDER.push(S.k);
   }
+  // Trang phục theo phái (tham khảo hình tượng kiếm hiệp quen thuộc)
+  var COSTUME = {
+    thieulam: { hat: 'bald', robes: ['#e3a046', '#d68a2e', '#e9b05a'], robe2: '#7a3a10', trim: '#ffd54f', sash: '#b71c1c', kasaya: '#b71c1c', beads: '#4e342e', beadsAll: true, w: 'staff', wp: { thienvuong: 'stick', summonR: 'ringstaff', ngamy: 'ringstaff' }, wp7: 'ringstaff', cape: false, trim7: '#ffd54f' },
+    thienvuong: { hat: 'ironhelm', hat7: 'helmet', robes: ['#b8860b', '#8d6e1a', '#c9a23a'], robe2: '#4a3410', trim: '#ffe08a', armor: true, w: 'hammer', wp: { thienvuong: 'axe', duongmon: 'bow', caibang: 'spear', thieulam: 'shield' } },
+    duongmon: { hat: 'hood', fhat: 'ponytail', robes: ['#2e7d5b', '#1f5a40', '#3d8f6a'], robe2: '#0f3324', trim: '#c9e6b0', mask: true, w: 'dart', wp: { thienvuong: 'saber', thieulam: 'shield' }, cape: '#0f3324' },
+    ngudoc: { hat: 'headdress', fhat: 'headdress', robes: ['#5e2f8e', '#3d1b5e', '#7b4bb0'], robe2: '#1a0a2a', trim: '#c0c0c0', beads: '#c0c0c0', w: 'claw', collar: '#c0c0c0' },
+    ngamy: { hat: 'bald', fhat: 'longhair', fhat7: 'longhair', robes: ['#f8bbd0', '#f06292', '#fff0f5'], robe2: '#ad1457', trim: '#ffd1e3', w: 'sword', wp: { ngamy: 'fan', thieulam: 'staff' }, wp7: 'sword' },
+    thuyyen: { fhat: 'ponytail', robes: ['#4db6ac', '#26a69a', '#b2dfdb'], robe2: '#004d40', trim: '#e0f2f1', w: 'twin', wp: { duongmon: 'fan', ngamy: 'fan', summonR: 'fan' } },
+    caibang: { hat: 'messy', fhat: 'ponytail', robes: ['#8d6e63', '#6d4c41', '#a1887f'], robe2: '#3e2723', trim: '#7cb342', patches: true, gourd: '#c89b3c', w: 'stick', wp: { duongmon: 'dart' }, cape: false },
+    thiennhan: { hat: 'hood', fhat: 'hood', robes: ['#b71c1c', '#7f0000', '#212121'], robe2: '#0a0000', trim: '#ff8a65', mask: true, armor: 'tank', w: 'spear', wp: { ngudoc: 'talisman', conlon: 'talisman' } },
+    vodang: { hat: 'taoist', fhat: 'ponytail', robes: ['#3f7fc6', '#e3eef9', '#2d5f99'], robe2: '#e9f2ff', trim: '#ffffff', collar: '#ffffff', w: 'sword', wp: { conlon: 'talisman' } },
+    conlon: { hat: 'taoist', fhat: 'longhair', robes: ['#0097a7', '#006978', '#4dd0e1'], robe2: '#08333b', trim: '#ffeb3b', collar: '#ffeb3b', w: 'sword', wp: { conlon: 'talisman', summonR: 'talisman' } },
+    tinhtuc: { hat: 'messy', fhat: 'longhair', robes: ['#673ab7', '#4527a0', '#311b92'], robe2: '#12052a', trim: '#e1bee7', w: 'claw', wp: { vodang: 'sword', conlon: 'fan' } },
+    hoason: { hat: 'topknot', fhat: 'ponytail', robes: ['#eceff1', '#90a4ae', '#cfd8dc'], robe2: '#37474f', trim: '#546e7a', w: 'sword' },
+    minhgiao: { hat: 'hood', fhat: 'hood', robes: ['#e65100', '#bf360c', '#ff8f00'], robe2: '#3e1200', trim: '#ffd54f', w: 'saber', wp: { conlon: 'talisman', duongmon: 'bow' }, cape: '#bf360c' },
+    tieudao: { hat: 'topknot', fhat: 'longhair', robes: ['#e8f5e9', '#81c784', '#c8e6c9'], robe2: '#2e7d32', trim: '#fff59d', w: 'fan' },
+    doanthi: { hat: 'topknot', hat7: 'crown', fhat: 'crown', robes: ['#fbc02d', '#f9a825', '#fff176'], robe2: '#6d4c41', trim: '#ffffff', w: 'sword', cape: '#c62828' },
+    comoo: { hat: 'topknot', fhat: 'longhair', robes: ['#fafafa', '#eceff1', '#f5f5f5'], robe2: '#90a4ae', trim: '#b0bec5', w: 'sword' },
+    nhatnguyet: { hat: 'hood', fhat: 'ponytail', robes: ['#880e4f', '#4a0026', '#ad1457'], robe2: '#1a0010', trim: '#ffd54f', w: 'saber', wp: { duongmon: 'dart' } },
+    toanchan: { hat: 'taoist', fhat: 'ponytail', robes: ['#5c6bc0', '#e8eaf6', '#3949ab'], robe2: '#1a237e', trim: '#ffffff', collar: '#ffffff', w: 'sword', wp: { conlon: 'talisman' } },
+    bachda: { hat: 'messy', fhat: 'longhair', robes: ['#f5f5f5', '#d7ccc8', '#efebe9'], robe2: '#5d4037', trim: '#aeea00', w: 'stick', wp: { ngudoc: 'claw' } },
+    daohoa: { hat: 'topknot', fhat: 'longhair', robes: ['#f48fb1', '#a5d6a7', '#fce4ec'], robe2: '#2e7d32', trim: '#ffffff', w: 'sword', wp: { duongmon: 'dart', ngamy: 'fan', conlon: 'fan' } },
+    modung: { hat: 'topknot', fhat: 'longhair', robes: ['#3949ab', '#283593', '#5c6bc0'], robe2: '#0d1240', trim: '#c5cae9', w: 'sword' }
+  };
   var LK = function (skin, hair, hat, trim, x) { var o = { skin: skin, hair: hair, hat: hat, trim: trim }; for (var k in x) o[k] = x[k]; return o; };
   sect({ k: 'thieulam', name: 'Thiếu Lâm', ch: '少', col: '#e8a33d', col2: '#8b3a0e', pw: 1.02, wp: 'staff', fem: [], motto: 'Phật môn chính tông · đỡ đòn cứng, chưởng lực bao trùm',
     look: LK('#f0c49a', null, 'bald', '#c0392b', { sash: '#c0392b' }), fxc: '#ffca28',
@@ -288,6 +315,8 @@ var Sim = (function () {
     G.rs = G.seed | 0;
     G.rng = function () { G.rs = G.rs + 0x6D2B79F5 | 0; var t = Math.imul(G.rs ^ G.rs >>> 15, 1 | G.rs); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; };
     G.mascots = opts.mascots || ['bachy', 'thanhlong'];
+    // Vượt Ải (đánh máy): hệ số độ khó nhân máu/sát thương giặc, số đợt theo ải
+    G.pve = !!opts.pve; G.hpM = opts.hpM || 1; G.dmM = opts.dmM || 1; G.maxWave = opts.maxWave || MAX_WAVE;
     G.sects = (opts.sects || ['thieulam', 'vodang']).map(function (k, i) { return SECTS[k] ? k : SECT_ORDER[i % SECT_ORDER.length]; });
     for (var i = 0; i < 2; i++) {
       var m = G.mascots[i], P = G.players[i];
@@ -349,7 +378,7 @@ var Sim = (function () {
       G.ev.push({ e: 'sell', p: c.p, x: u3.x, y: u3.y, g: refund });
       return true;
     }
-    if (c.t === 'send') {
+    if (c.t === 'send') { if (G.pve) return false;
       var s = SENDS[c.k]; if (!s || P.gold < s.cost) return false;
       if (P.sentThisWave >= 6 + G.wave) return false;
       P.gold -= s.cost; P.income += s.inc; P.sentThisWave++;
@@ -390,7 +419,7 @@ var Sim = (function () {
     var d = CREEPS[k], w = G.wave;
     var hm = hpScale(w), dm = dmgScale(w);
     if (d.send) { hm = 1 + 0.13 * (w - 1); dm = 1 + 0.08 * (w - 1); }
-    var hp = Math.round(d.hp * hm * (d.boss || d.send ? 1 : 0.8));
+    var hp = Math.round(d.hp * hm * (d.boss || d.send ? 1 : 0.8) * (G.hpM || 1)); dm *= (G.dmM || 1);
     var c = { id: G.nextId++, lane: lane, type: k, x: 1.2 + G.rng() * (LANE_W - 2.4), y: -0.6 - G.rng() * 0.8, hp: hp, max: hp,
       dmg: d.dmg * dm, cd: G.rng() * 0.5, tgt: 0, stun: 0, poison: 0, poisonT: 0, leaked: false, slow: 0, from: from, face: 1, atkAnim: 0, wob: G.rng() * 6 };
     G.creeps.push(c);
@@ -409,9 +438,9 @@ var Sim = (function () {
     for (var k = 0; k < G.units.length; k++) { var u = G.units[k]; u.dead = false; u.hp = stat(u, 'hp'); u.x = u.cx + 0.5; u.y = u.cy + 0.5; u.tgt = 0; }
     G.ev.push({ e: 'waveEnd', w: G.wave, leaks: G.waveLeaks.slice() });
     var a = G.players[0].hp, b = G.players[1].hp;
-    if (a <= 0 || b <= 0 || G.wave >= MAX_WAVE) {
+    if (G.pve ? (a <= 0 || G.wave >= G.maxWave) : (a <= 0 || b <= 0 || G.wave >= MAX_WAVE)) {
       G.over = true; G.phase = 'over';
-      G.winner = a > b ? 0 : b > a ? 1 : -1;
+      G.winner = G.pve ? (a > 0 ? 0 : 1) : a > b ? 0 : b > a ? 1 : -1;
       G.ev.push({ e: 'over', winner: G.winner });
       return;
     }

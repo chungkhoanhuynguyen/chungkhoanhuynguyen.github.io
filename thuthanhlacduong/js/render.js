@@ -252,12 +252,12 @@ var R = (function () {
   var CLOOK = {   // quân phản loạn: Khăn Vàng, phiến quân Biện Kinh, Mông Nguyên
     sontac: { skin: '#d9a77c', hair: '#2a1a10', hat: 'yellowband', robe: '#8a6a3a', robe2: '#4a3318', trim: '#f2c400', sash: '#f2c400', weapon: 'saber' },
     cungtac: { skin: '#d9a77c', hair: '#2a1a10', hat: 'yellowband', robe: '#6d6a3a', robe2: '#3a3818', trim: '#f2c400', sash: '#f2c400', weapon: 'bow' },
-    thietgiap: { skin: '#cfa27a', hair: '#222', hat: 'mongol', robe: '#6a4a32', robe2: '#2d2018', trim: '#a9b6c0', weapon: 'saber', armor: true },
+    thietgiap: { skin: '#cfa27a', hair: '#222', hat: 'mongol', robe: '#6a4a32', robe2: '#2d2018', trim: '#a9b6c0', weapon: 'spear', armor: true, mount: '#5d4037' },
     trai_chu: { skin: '#b98a66', hair: '#111', hat: 'yellowband', robe: '#b08a20', robe2: '#4a3300', trim: '#ffe066', weapon: 'axe', armor: true },
     huyetma: { skin: '#c97c6e', hair: '#2a0000', hat: 'helmet', robe: '#5a1010', robe2: '#1a0000', trim: '#ff5252', weapon: 'spear', armor: true, aura: '#ff1744' },
-    mavuong: { skin: '#c8a07a', hair: '#120a00', hat: 'mongol', robe: '#3a2a6a', robe2: '#140a2a', trim: '#e8b04a', weapon: 'axe', armor: true, aura: '#d500f9' },
-    hacy: { skin: '#d9a77c', hair: '#000', hat: 'hood', robe: '#1f1f1f', robe2: '#050505', trim: '#b71c1c', weapon: 'saber', mask: true },
-    matang: { skin: '#d9a07a', hair: null, hat: 'bald', robe: '#880e4f', robe2: '#3a0020', trim: '#ffd54f', weapon: 'staff', sash: '#ffd54f' }
+    mavuong: { skin: '#c8a07a', hair: '#120a00', hat: 'mongol', robe: '#3a2a6a', robe2: '#140a2a', trim: '#e8b04a', weapon: 'axe', armor: true, aura: '#d500f9', mount: '#212121' },
+    hacy: { skin: '#d9a77c', hair: '#000', hat: 'hood', robe: '#1f1f1f', robe2: '#050505', trim: '#b71c1c', weapon: 'twin', mask: true },
+    matang: { skin: '#d9a07a', hair: null, hat: 'bald', robe: '#880e4f', robe2: '#3a0020', trim: '#ffd54f', weapon: 'ringstaff', sash: '#ffd54f', kasaya: '#4a0026', beads: '#ffd54f' }
   };
 
   // vẽ người: (x,y) = điểm chân, sc tỉ lệ, o: tuỳ chọn
