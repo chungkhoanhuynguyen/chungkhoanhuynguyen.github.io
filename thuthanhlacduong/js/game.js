@@ -219,14 +219,14 @@
       line = humanize(line); busy = true; lastT = now;
       const typing = chatMsg(name, 'đang gõ…', false, true);
       const typo = Math.random() < 0.12 && line.length > 6;
-      setTimeout(() => { typing.remove(); if (typo) { const k = 1 + Math.floor(Math.random() * (line.length - 2)); chatMsg(name, line.slice(0, k) + line[k + 1] + line[k] + line.slice(k + 2)); const ws = line.lastIndexOf(' ', k) + 1, we = line.indexOf(' ', k + 1); setTimeout(() => chatMsg(name, '*' + line.slice(ws, we < 0 ? line.length : we)), 900); } else chatMsg(name, line); Sfx.play('msg'); busy = false; }, 900 + line.length * 70 + Math.random() * 1400);
+      setTimeout(() => { typing.remove(); if (typo) { const k = 1 + Math.floor(Math.random() * (line.length - 2)); chatMsg(name, line.slice(0, k) + line[k + 1] + line[k] + line.slice(k + 2)); const ws = line.lastIndexOf(' ', k) + 1, we = line.indexOf(' ', k + 1); setTimeout(() => chatMsg(name, '*' + line.slice(ws, we < 0 ? line.length : we)), 900); } else chatMsg(name, line); Sfx.play('msg'); busy = false; }, 1500 + line.length * 95 + Math.random() * 2000);
     }
     return {
       start(nm) { name = nm || pick(NAMES); per = pick(['k', 'v', 'c']); mood = 0; busy = false; lastT = -99; setTimeout(() => say('greet', true), 2200); return name; },
       get name() { return name; },
       ev(cat, p, vars) { if (Math.random() < p) say(cat, false, vars); },
       force(cat, vars) { say(cat, true, vars); },
-      reply(q) { setTimeout(() => say('r_' + q, true), 400); },
+      reply(q) { setTimeout(() => say('r_' + q, true), 1800 + Math.random() * 3000); },
       replyText(t) {
         const x = t.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
         const has = (...w) => w.some((k) => x.includes(k));
@@ -234,7 +234,7 @@
           : has('hay', 'gioi', 'dinh', 'pro', 'manh', 'ghe') ? 'praise' : has('haha', 'hihi', 'kk', 'lol', '=))', ':))') ? 'haha' : has('cam on', 'thank', 'tks', 'thanks') ? 'thanks'
           : has('phai', 'mon phai', 'he phai') ? 'q_sect' : has('cach', 'meo', 'bi kip', 'lam sao', 'the nao', 'chi', 'huong dan') ? 'q_tip' : has('o dau', 'que', 'ha noi', 'sai gon') ? 'where' : has('tuoi', 'bao nhieu', 'nam sinh') ? 'age'
           : has('cho', 'doi day', 'chet', 'thua', 'de') ? 'taunt' : 'misc';
-        setTimeout(() => say('r_' + q, true), 300 + Math.random() * 900);
+        setTimeout(() => say('r_' + q, true), 2200 + Math.random() * 3500); // đọc tin rồi mới gõ, như người thật
       }
     };
   })();
