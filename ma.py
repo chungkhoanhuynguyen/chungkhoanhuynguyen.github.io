@@ -76,7 +76,7 @@ SYMS = sorted(s for s, x in S.items() if x[1] in EXN and s in FD and (FD[s].get(
 SYMS = [s for s in SYMS if len(bars(s)) >= 30]  # NV2 14/11: bỏ mã mới niêm yết <30 phiên (vd DVV) để không sinh link /ma/ tới trang chưa có
 
 def head(title, desc, url, ld):
-    return f"""<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests"><meta name="referrer" content="strict-origin-when-cross-origin">
+    return f"""<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://bgapidatafeed.vps.com.vn https://eu.i.posthog.com https://eu-assets.i.posthog.com; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests"><meta name="referrer" content="strict-origin-when-cross-origin">
 <title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{url}">
 <meta property="og:type" content="article"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{B}/img/og.png"><meta property="og:locale" content="vi_VN">
 <link rel="icon" href="/img/fav-32.png"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&family=Playfair+Display:wght@800;900&display=swap">
@@ -166,7 +166,7 @@ for s in SYMS:
         {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]}]}
     P = [head(title + " | Chứng Khoán Huy Nguyễn", desc, url, ld), "<main><article>",
          f'<div class="bc"><a href="/">Trang chủ</a> › <a href="/ma/">Mã cổ phiếu</a> › {e(s)}</div>',
-         f'<h1>Cổ phiếu {e(s)}' + (f' – {e(name)}' if name != s else '') + f'</h1><div class="meta">Sàn {ex} · cập nhật {dmy(last)} · giá điều chỉnh, nghìn đồng</div>',
+         f'<h1>Cổ phiếu {e(s)}' + (f' – {e(name)}' if name != s else '') + f'</h1><div class="meta">Sàn {ex} · cập nhật {dmy(last)} · giá điều chỉnh, nghìn đồng</div>'+f'<div id="rtpx" data-s="{e(s)}" hidden style="margin:8px 0 14px;padding:10px 14px;border:1px solid var(--line);border-radius:10px;font-size:16px"></div><script src="/rtma.js" defer></script>',
          f"<p>{intro}</p>"]
     if val: P.append("<p>Về định giá: " + "; ".join(e(v) for v in val) + ".</p>")
     P.append("<h2>Chỉ số chính của " + e(s) + "</h2><table class='mt'>" + "".join(f"<tr><td>{e(a)}</td><td class='r'><b>{e(bv)}</b></td><td class='n'>{e(cv)}</td></tr>" for a, bv, cv in rows) + "</table>")
