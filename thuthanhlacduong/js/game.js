@@ -3,6 +3,7 @@
   const S = Sim, $ = (id) => document.getElementById(id);
   let ME = 0, OP = 1, NET = null;
   let G = null, running = false, acc = 0, speed = 1, slow = 1, slowT = 0, view = { lane: 0 }, diff = 'normal', myMascot = 'honglien', opMascot = 'bachy';
+  let PNAME = ''; try { PNAME = localStorage.getItem('ttld_name') || ''; } catch (e) {}
   let selCard = null, selUnitId = null, hoverCell = null;
   const ICON = {};
   try { const m = localStorage.getItem('ttld_mascot'); if (m && R.MASCOTS[m]) myMascot = m; const d = localStorage.getItem('ttld_diff'); if (d) diff = d; } catch (e) {}
@@ -93,7 +94,7 @@
   $('btnReady').addEventListener('click', () => { Sfx.init(); if (G && G.phase === 'build') { doCmd({ t: 'ready' }); Sfx.play('click'); toast('Đã sẵn sàng — chờ đối thủ'); } });
 
   // công cụ
-  $('tView').addEventListener('click', () => { view.lane = 1 - view.lane; V.setView(view.lane); $('tView').innerHTML = view.lane ? 'Xem<br>ta' : 'Xem<br>địch'; Sfx.play('click'); });
+  $('tView').addEventListener('click', () => { view.lane = 1 - view.lane; V.setView(view.lane); $('tView').innerHTML = view.lane === ME ? 'Xem<br>bên kia' : 'Xem<br>ta'; Sfx.play('click'); });
   $('tSpeed').addEventListener('click', () => { speed = speed === 1 ? 2 : speed === 2 ? 3 : 1; $('tSpeed').textContent = 'x' + speed; Sfx.play('click'); });
   $('tSound').addEventListener('click', () => { Sfx.init(); const on = Sfx.toggle(); $('tSound').classList.toggle('off', !on); });
   $('tMusic').addEventListener('click', () => { Sfx.init(); const on = Sfx.toggleMusic(); $('tMusic').classList.toggle('off', !on); });
@@ -101,7 +102,7 @@
   const QUICK = [['hello', 'Chào nha 👋'], ['gg', 'GG'], ['praise', 'Đỉnh quá!'], ['taunt', 'Chờ đấy!'], ['haha', 'Haha 😂'], ['gift', 'Gửi quà nè 🎁']];
   $('quick').innerHTML = QUICK.map((q) => `<button data-q="${q[0]}">${q[1]}</button>`).join('');
   $('tChat').addEventListener('click', () => { const q = $('quick'); const was = q.hidden; hidePanels(); q.hidden = !was; });
-  $('quick').addEventListener('click', (e) => { const b = e.target.closest('[data-q]'); if (!b) return; $('quick').hidden = true; chatMsg('Bạn', b.textContent, true); Bot.reply(b.dataset.q); });
+  $('quick').addEventListener('click', (e) => { const b = e.target.closest('[data-q]'); if (!b) return; $('quick').hidden = true; chatMsg('Bạn', b.textContent, true); if (NET) NET.send({ t: 'chat', s: b.textContent }); else Bot.reply(b.dataset.q); });
 
   // ---------- chạm / kéo trên sân ----------
   const cv = $('c3d'), ptrs = new Map(); let drag = null, pinch0 = 0, zoom0 = 1;
@@ -110,7 +111,7 @@
     if (ptrs.size === 2) { const [a, b] = [...ptrs.values()]; pinch0 = Math.hypot(a.x - b.x, a.y - b.y); zoom0 = V.cam.zoom; drag = 'pinch'; } else drag = null; Sfx.init(); });
   cv.addEventListener('pointermove', (e) => {
     const p = ptrs.get(e.pointerId);
-    if (!p) { if (e.pointerType === 'mouse' && selCard && G) { const h = V.pick(e.clientX, e.clientY); hoverCell = h && h.lane === 0 ? h : null; } return; }
+    if (!p) { if (e.pointerType === 'mouse' && selCard && G) { const h = V.pick(e.clientX, e.clientY); hoverCell = h && h.lane === ME ? h : null; } return; }
     const dx = e.clientX - p.x, dy = e.clientY - p.y; p.x = e.clientX; p.y = e.clientY;
     if (ptrs.size === 2) { const [a, b] = [...ptrs.values()]; const d = Math.hypot(a.x - b.x, a.y - b.y); V.cam.zoom = Math.max(0.55, Math.min(1.6, zoom0 * pinch0 / d)); V.cam.tdist = V.fitDist() * V.cam.zoom; return; }
     if (drag !== 'pan' && Math.hypot(p.x - p.x0, p.y - p.y0) > 9) drag = 'pan';
@@ -251,7 +252,7 @@
         break;
       }
       case 'send':
-        if (e.p === 1) { toast('Đối thủ phái ' + S.CREEPS[e.k].name + ' sang thành bạn!', true); botEv('bSend', 0.5); }
+        if (e.p === OP) { toast('Đối thủ phái ' + S.CREEPS[e.k].name + ' sang thành bạn!', true); botEv('bSend', 0.5); }
         else { toast('Đã phái ' + S.CREEPS[e.k].name + ' — tới đợt sau'); Sfx.play('send'); botEv('pSend', 0.7); }
         break;
       case 'place': if (e.p === ME) Sfx.play('place'); break;
@@ -266,9 +267,10 @@
   function doCmd(c) {
     c.p = ME;
     if (NET && NET.role === 'guest') { NET.send({ t: 'cmd', c: c }); Sfx.play('click'); return true; }
+    if (NET && NET.role === 'host') { NET.q.push(c); Sfx.play('click'); return true; }
     const ok = S.apply(G, c); if (!ok) Sfx.play('deny'); return ok;
   }
-  function flushEvents() { if (NET && NET.role === 'host' && G.ev.length) NET.evq.push(...G.ev.map(stripEv)); for (const e of G.ev) handle(e); G.ev.length = 0; refreshCards(); updateHUD(true); }
+  function flushEvents() { for (const e of G.ev) handle(e); G.ev.length = 0; refreshCards(); updateHUD(true); }
 
   // ---------- Tiền bay về túi kiểu máy xèng ----------
   let goldShown = 0, coinT = 0;
@@ -292,7 +294,7 @@
     const P = G.players[ME], O = G.players[OP], maxA = G.maxHp[ME], maxB = G.maxHp[OP];
     $('wave').textContent = 'Đợt ' + G.wave + '/' + S.MAX_WAVE;
     $('phase').innerHTML = G.phase === 'build' ? 'Xây dựng <b>' + Math.max(0, Math.ceil(G.phaseT)) + 's</b>' : G.phase === 'fight' ? 'Giao chiến' : 'Kết thúc';
-    goldShown += (P.gold - goldShown) * 0.25; if (Math.abs(P.gold - goldShown) < 0.6) goldShown = P.gold; $('gold').textContent = Math.round(goldShown); $('inc').textContent = '+' + P.income + '/đợt';
+    goldShown += (P.gold - goldShown) * 0.25; if (Math.abs(P.gold - goldShown) < 0.6) goldShown = P.gold; $('gold').textContent = Math.round(goldShown); { let tr = 0; S.SAVE.forEach((m, i) => { if (P.gold >= m[0]) tr = i + 1; }); const nx = S.SAVE[tr]; $('inc').textContent = '+' + P.income + '/đợt · Tích luỹ ' + tr + '/5' + (tr ? ' (+' + Math.round(S.SAVE[tr - 1][1] * 100) + '%)' : '') + (nx ? ' · mốc sau ' + nx[0] : ''); }
     $('hpMe').style.width = (100 * P.hp / maxA) + '%'; $('hpOp').style.width = (100 * O.hp / maxB) + '%';
     $('hpMeN').textContent = 'Thành ' + P.hp + '/' + maxA + ' · Lực ' + P.value; $('hpOpN').textContent = 'Thành ' + O.hp + '/' + maxB + ' · Lực ' + O.value;
     const rb = $('btnReady'); rb.disabled = G.phase !== 'build' || P.ready; rb.textContent = G.phase === 'build' ? (P.ready ? 'Chờ…' : 'Sẵn sàng') : 'Chiến';
@@ -310,14 +312,16 @@
     let dt = Math.min(0.05, (now - last) / 1000); last = now;
     if (G && running && !G.over) {
       if (slowT > 0) { slowT -= dt; if (slowT <= 0) slow = 1; }
-      acc += dt * speed * slow;
+      acc += dt * (NET ? 1 : speed) * slow; if (NET && NET.role === 'guest' && NET.frames.length > 4) acc += S.DT * Math.min(6, NET.frames.length - 3);
       let n = 0;
       while (acc >= S.DT && n < 8) {
         acc -= S.DT; n++;
         for (const o of G.units) { o.px = o.x; o.py = o.y; }
         for (const o of G.creeps) { o.px = o.x; o.py = o.y; }
         for (const o of G.projs) { o.px = o.x; o.py = o.y; }
-        S.aiThink(G, 1, diff);
+        if (NET && NET.role === 'guest') { const f = NET.frames.shift(); if (!f) { acc = 0; break; } f.c.forEach((c) => S.apply(G, c)); }
+        else if (NET && NET.role === 'host') { const cs = NET.q.splice(0); cs.forEach((c) => S.apply(G, c)); NET.send({ t: 'f', k: G.tick, c: cs }); if (NET.lost) S.aiThink(G, OP, 'normal'); }
+        else S.aiThink(G, OP, diff);
         S.step(G);
         flushEvents();
       }
@@ -332,13 +336,14 @@
 
   // ---------- bắt đầu / kết thúc ----------
   function newGame() {
+    if (NET) { try { NET.close(); } catch (e) {} } NET = null; ME = 0; OP = 1; $('btnSend').hidden = false;
     const others = R.MASCOT_ORDER.filter((k) => k !== myMascot); opMascot = others[Math.floor(Math.random() * others.length)];
     G = S.create({ seed: (Math.random() * 1e9) | 0, mascots: [myMascot, opMascot] });
     G.maxHp = [G.players[0].hp, G.players[1].hp];
     V.initMascots(G.mascots); view.lane = 0; V.cam.orbit = false; V.setView(0, true); $('tView').innerHTML = 'Xem<br>địch';
     $('avaMe').style.backgroundImage = `url(${ICON['f_' + myMascot]})`; $('avaOp').style.backgroundImage = `url(${ICON['f_' + opMascot]})`;
-    const bn = Bot.start();
-    $('nmMe').innerHTML = 'Bạn <small>' + R.MASCOTS[myMascot].name + '</small>';
+    const bn = Bot.start(); V.setCastleNames(['Thành ' + PNAME, 'Thành ' + bn]);
+    $('nmMe').innerHTML = PNAME.replace(/&/g,'&amp;') + ' <small>' + R.MASCOTS[myMascot].name + '</small>';
     $('nmOp').innerHTML = bn + ' <small>Máy · ' + { easy: 'Dễ', normal: 'Thường', hard: 'Khó' }[diff] + '</small>';
     $('chat').innerHTML = ''; streak = 0; totalKills = 0; selCard = null; selUnitId = null; hidePanels();
     running = true; acc = 0; flushEvents();
@@ -346,11 +351,11 @@
   }
   function endGame() {
     running = false; const w = G.winner === -1 ? -1 : (G.winner === ME ? 0 : 1), P = G.players[ME];
-    $('endT').textContent = w === 0 ? 'Chiến Thắng' : w === 1 ? 'Thất Thủ' : 'Hoà';
-    $('endT').style.color = w === 0 ? '#ffdf8a' : w === 1 ? '#ff7a6a' : '#fff';
-    $('endS').textContent = w === 0 ? 'Thành Lạc Dương vững như bàn thạch' : w === 1 ? 'Thành đã bị phá — luyện thêm rồi phục thù' : 'Hai bên ngang tài ngang sức';
+    const coop = NET && NET.mode === 'coop', okc = coop && G.players[0].hp > 0 && G.players[1].hp > 0; $('endT').textContent = coop ? (okc ? 'Thủ Thành Thành Công' : 'Thất Thủ') : w === ME ? 'Chiến Thắng' : w === OP ? 'Thất Thủ' : 'Hoà';
+    $('endT').style.color = (coop ? okc : w === ME) ? '#ffdf8a' : '#ff7a6a';
+    $('endS').textContent = coop ? (okc ? 'Hai thành cùng trụ vững 20 đợt giặc' : 'Một thành đã thất thủ — cùng luyện thêm rồi phục thù') : w === ME ? 'Thành Lạc Dương vững như bàn thạch' : w === 1 ? 'Thành đã bị phá — luyện thêm rồi phục thù' : 'Hai bên ngang tài ngang sức';
     $('endStats').innerHTML = `<div>Đợt<b>${G.wave}</b></div><div>Hạ giặc<b>${P.kills}</b></div><div>Máu thành<b>${P.hp}</b></div>`;
-    $('end').hidden = false; Sfx.play(w === 0 ? 'win' : 'lose'); Sfx.setFight(false);
+    $('end').hidden = false; Sfx.play((coop ? okc : w === ME) ? 'win' : 'lose'); Sfx.setFight(false);
     botForce(w === 1 ? 'win' : 'lose');
   }
   $('btnAgain').addEventListener('click', () => { $('end').hidden = true; newGame(); });
@@ -358,7 +363,7 @@
 
   // màn hình chọn linh vật
   function showStart() {
-    $('start').hidden = false; running = false; document.body.classList.add('menu');
+    $('start').hidden = false; running = false; document.body.classList.add('menu'); $('pname').value = PNAME;
     $('mrow').innerHTML = R.MASCOT_ORDER.map((k) => `<button class="mc${k === myMascot ? ' sel' : ''}" data-m="${k}"><img src="${ICON['m_' + k]}" alt=""><div class="nm">${R.MASCOTS[k].name}</div><div class="bn">${R.MASCOTS[k].bonus}</div></button>`).join('');
     document.querySelectorAll('#diff button').forEach((b) => b.classList.toggle('on', b.dataset.d === diff));
     G = S.create({ seed: 1, mascots: [myMascot, R.MASCOT_ORDER.find((k) => k !== myMascot)] }); G.maxHp = [G.players[0].hp, G.players[1].hp];
@@ -366,7 +371,59 @@
   }
   $('mrow').addEventListener('click', (e) => { const b = e.target.closest('[data-m]'); if (!b) return; Sfx.init(); Sfx.play('click'); myMascot = b.dataset.m; try { localStorage.setItem('ttld_mascot', myMascot); } catch (x) {} showStart(); });
   $('diff').addEventListener('click', (e) => { const b = e.target.closest('[data-d]'); if (!b) return; diff = b.dataset.d; try { localStorage.setItem('ttld_diff', diff); } catch (x) {} Sfx.init(); Sfx.play('click'); document.querySelectorAll('#diff button').forEach((x) => x.classList.toggle('on', x.dataset.d === diff)); });
-  $('btnPlay').addEventListener('click', () => { Sfx.init(); Sfx.play('gong', true); $('start').hidden = true; document.body.classList.remove('menu'); V.cam.zoom = 1; newGame(); });
+  $('btnPlay').addEventListener('click', () => { if (!nameOk()) return; playStory(() => { Sfx.init(); Sfx.play('gong', true); $('start').hidden = true; document.body.classList.remove('menu'); V.cam.zoom = 1; newGame(); }); });
+  // ---------- CỐT TRUYỆN MỞ ĐẦU ----------
+  const STORY = [
+    ['p0', 'Hà Nội, 2 giờ sáng. Quán net 24H vắng tanh, chỉ còn tiếng quạt máy và ánh đèn xanh của dàn máy chơi game.'],
+    ['p1', 'Trên tường dán tấm băng rôn đỏ rực: "THỦ THÀNH LẠC DƯƠNG — Ai giữ được thành sẽ đổi được vận mệnh". Bạn ngồi xuống, bấm Vào trận…'],
+    ['p2', 'Màn hình loé sáng. Một vòng trận pháp tím xoáy kéo bạn vào trong. Tai ù đi, mọi thứ quay cuồng…'],
+    ['p3', 'Bạn tỉnh dậy trên tường thành cổ. Khói lửa phía xa — quân Khăn Vàng, phiến quân Biện Kinh và kỵ binh Mông Nguyên đang kéo tới. Các binh sĩ nhìn bạn: "Chưởng môn, xin hạ lệnh!"']
+  ];
+  let stI = 0, stDone = null, stTyping = null;
+  function storyShow() { const [cls, txt] = STORY[stI]; $('stPic').className = cls; const el = $('stTxt'); el.textContent = ''; let k = 0; clearInterval(stTyping); stTyping = setInterval(() => { el.textContent = txt.slice(0, ++k); if (k >= txt.length) clearInterval(stTyping); }, 22); $('stNext').textContent = stI === STORY.length - 1 ? 'Giữ thành!' : 'Tiếp'; }
+  function playStory(cb) { let seen = false; try { seen = localStorage.getItem('ttld_story') === '1'; } catch (e) {} if (seen) { cb(); return; } stI = 0; stDone = cb; $('story').hidden = false; storyShow(); }
+  function storyEnd() { clearInterval(stTyping); $('story').hidden = true; try { localStorage.setItem('ttld_story', '1'); } catch (e) {} const f = stDone; stDone = null; if (f) f(); }
+  $('stNext').addEventListener('click', () => { Sfx.init(); Sfx.play('click'); if (++stI >= STORY.length) storyEnd(); else storyShow(); });
+  $('stSkip').addEventListener('click', storyEnd);
+
+  // ---------- ONLINE ----------
+  let pend = null;
+  function nameOk() { const nm = ($('pname').value || '').trim().replace(/[<>]/g, '').slice(0, 16); if (!nm) { $('pname').focus(); $('pname').placeholder = 'Nhập tên để vào trận'; return false; } PNAME = nm; try { localStorage.setItem('ttld_name', nm); } catch (e) {} return true; }
+  function onlUI(busy, msg) { $('onlStatus').textContent = msg || ''; $('btnCancel').hidden = !busy; ['btnCoop', 'btnVs', 'btnRoom', 'btnJoin', 'btnPlay'].forEach((id) => { $(id).disabled = busy; }); }
+  function startNet(N, st) {
+    pend = null; onlUI(false, '');
+    const go = (st2) => {
+      NET = N; ME = N.role === 'host' ? 0 : 1; OP = 1 - ME;
+      G = S.create({ seed: st2.seed, mascots: st2.mascots }); G.maxHp = [G.players[0].hp, G.players[1].hp];
+      const names = st2.names; V.setCastleNames(['Thành ' + names[0], 'Thành ' + names[1]]);
+      V.initMascots(G.mascots); view.lane = ME; V.cam.orbit = false; V.cam.zoom = 1; V.setView(ME, true); $('tView').innerHTML = 'Xem<br>bạn';
+      $('avaMe').style.backgroundImage = `url(${ICON['f_' + G.mascots[ME]]})`; $('avaOp').style.backgroundImage = `url(${ICON['f_' + G.mascots[OP]]})`;
+      $('nmMe').innerHTML = esc(names[ME]) + ' <small>' + (N.mode === 'coop' ? 'Đồng đội' : 'Online') + '</small>';
+      $('nmOp').innerHTML = esc(names[OP]) + ' <small>' + (N.mode === 'coop' ? 'Đồng đội · online' : 'Đối thủ · online') + '</small>';
+      $('btnSend').hidden = N.mode === 'coop';
+      $('start').hidden = true; document.body.classList.remove('menu'); $('chat').innerHTML = '';
+      streak = 0; selCard = null; selUnitId = null; hidePanels(); running = true; acc = 0; flushEvents();
+      Sfx.init(); Sfx.play('gong', true);
+      announce(N.mode === 'coop' ? 'Cùng Thủ Thành' : 'Đấu Online', names[0] + ' · ' + names[1]);
+      N.onmsg = (m) => { if (m.t === 'chat') chatMsg(names[OP], m.s); };
+      N.onclose = () => { toast((N.mode === 'coop' ? 'Đồng đội' : 'Đối thủ') + ' mất kết nối — máy chơi thay', true); if (N.role === 'guest') { NET = null; } };
+    };
+    if (N.role === 'guest') { go(st); return; }
+    N.onmsg = (m) => { if (m.t !== 'hello') return; const h = m.h || {}; const st2 = { t: 'start', mode: N.mode, seed: (Math.random() * 1e9) | 0, mascots: [myMascot, R.MASCOTS[h.mascot] ? h.mascot : 'bachy'], names: [PNAME, String(h.name || 'Hiệp khách').slice(0, 16)] }; N.send(st2); go(st2); };
+  }
+  function esc(x) { return String(x).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
+  function fallbackBot(mode) { onlUI(false, ''); pend = null; toast('Chưa có người chơi — máy vào thay'); $('start').hidden = true; document.body.classList.remove('menu'); V.cam.zoom = 1; newGame(); if (mode === 'coop') $('btnSend').hidden = true; }
+  function quickMatch(mode) {
+    if (!nameOk()) return; Sfx.init(); Sfx.play('click');
+    if (!NETM.ok()) { onlUI(false, 'Trình duyệt chưa tải được phần online'); return; }
+    NETM.me = { name: PNAME, mascot: myMascot }; onlUI(true, 'Đang tìm trận…');
+    pend = NETM.quick(mode, (m) => onlUI(true, m), (N, st) => startNet(N, st), (why) => { if (why === 'cancel') { onlUI(false, 'Đã huỷ'); return; } fallbackBot(mode); });
+  }
+  $('btnCoop').addEventListener('click', () => quickMatch('coop'));
+  $('btnVs').addEventListener('click', () => quickMatch('vs'));
+  $('btnRoom').addEventListener('click', () => { if (!nameOk()) return; NETM.me = { name: PNAME, mascot: myMascot }; const code = String(1000 + Math.floor(Math.random() * 9000)); onlUI(true, 'Đang tạo phòng…'); pend = NETM.host(code, 'coop', (m) => onlUI(true, m), (N) => startNet(N), (why) => onlUI(false, why)); });
+  $('btnJoin').addEventListener('click', () => { if (!nameOk()) return; const code = ($('roomCode').value || '').trim(); if (!/^\d{4}$/.test(code)) { onlUI(false, 'Nhập mã phòng 4 số'); return; } NETM.me = { name: PNAME, mascot: myMascot }; onlUI(true, 'Đang vào phòng…'); pend = NETM.join(code, (m) => onlUI(true, m), (N, st) => startNet(N, st), (why) => onlUI(false, why)); });
+  $('btnCancel').addEventListener('click', () => { if (pend) pend.cancel(); pend = null; onlUI(false, 'Đã huỷ'); });
   document.addEventListener('visibilitychange', () => { last = performance.now(); });
 
   $('mrow').innerHTML = '<div class="tag">Đang tải nhân vật…</div>';

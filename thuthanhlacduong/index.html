@@ -187,6 +187,13 @@ body.menu #top,body.menu #res,body.menu #bottom,body.menu #tools,body.menu #chat
 #toast div{font-size:12px;background:rgba(10,10,14,.7);padding:3px 10px}
 #bossbar{top:66px}
 @media (max-height:430px){.card{width:44px;height:44px}.card img{height:44px}#btnReady{width:56px;height:56px}#btnSend{width:46px;height:46px}.tb{width:32px;height:32px}#tools{top:62px}#res{top:42px}}
+.acct{max-width:340px;margin:0 auto 10px;text-align:left}.acct label{font-size:12px;opacity:.85;display:block;margin-bottom:4px}.acct input{width:100%;min-height:44px;border-radius:8px;border:1px solid rgba(232,194,106,.6);background:rgba(10,10,14,.6);color:#fff;font:700 16px 'Be Vietnam Pro',sans-serif;padding:0 12px}.acct input:focus{outline:2px solid #ffdf8a}
+.onl{max-width:440px;margin:10px auto 0;display:grid;gap:6px}.ob{background:linear-gradient(180deg,#2f6fd0,#173a7a);border:1px solid #8fc4ff}.ob2{background:rgba(255,255,255,.08);border:1px solid rgba(232,194,106,.5)}.room{display:grid;grid-template-columns:1fr 90px 1fr;gap:6px}.room input{min-height:40px;border-radius:6px;border:1px solid rgba(232,194,106,.6);background:rgba(10,10,14,.6);color:#fff;font:800 16px 'Be Vietnam Pro';text-align:center}#onlStatus{min-height:18px;font-size:13px;color:#ffdf8a}
+#story{background:#05030a;z-index:12}.sb{max-width:560px}#stPic{height:clamp(140px,38vh,300px);border-radius:10px;margin-bottom:14px;position:relative;overflow:hidden;border:1px solid rgba(232,194,106,.4)}#stTxt{font:600 clamp(15px,2.4vw,19px)/1.55 'Be Vietnam Pro';min-height:4.8em;text-align:left;margin:0 0 14px}
+.p0{background:radial-gradient(circle at 70% 30%,#3a7bff 0,transparent 40%),linear-gradient(180deg,#0b0f2a,#1b1030)}.p0::after{content:'NET 24H';position:absolute;right:8%;top:10%;font:900 28px 'Be Vietnam Pro';color:#59f;text-shadow:0 0 12px #39f,0 0 24px #39f}
+.p1{background:linear-gradient(180deg,#140a10,#3a0f0a)}.p1::after{content:'THỦ THÀNH LẠC DƯƠNG';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-3deg);padding:16px 22px;background:linear-gradient(180deg,#b71c1c,#5a0a06);border:3px solid #e8b04a;font:900 clamp(18px,4vw,30px) 'Playfair Display';color:#ffdf8a;white-space:nowrap;box-shadow:0 0 30px rgba(255,120,60,.5)}
+.p2{background:radial-gradient(circle at 50% 50%,#fff 0,#b388ff 12%,#311b92 35%,#05030a 70%);animation:spin 3s linear infinite}@keyframes spin{to{filter:hue-rotate(360deg)}}
+.p3{background:linear-gradient(180deg,#ffb36b 0,#c0392b 45%,#3a1208 100%)}.p3::after{content:'';position:absolute;left:0;right:0;bottom:18%;height:28%;background:repeating-linear-gradient(90deg,#5a3a2a 0 22px,#4a2e20 22px 26px);clip-path:polygon(0 30%,8% 30%,8% 0,14% 0,14% 30%,86% 30%,86% 0,92% 0,92% 30%,100% 30%,100% 100%,0 100%)}
 </style>
 </head>
 <body>
@@ -217,14 +224,22 @@ body.menu #top,body.menu #res,body.menu #bottom,body.menu #tools,body.menu #chat
 <div id="pSend" class="panel lacq" hidden></div>
 <div id="quick" class="panel lacq" hidden></div>
 
+<div id="story" class="screen" hidden><div class="box sb"><div id="stPic"></div><p id="stTxt"></p><div class="row"><button class="big ob2" id="stSkip">Bỏ qua</button><button class="big" id="stNext" style="background:linear-gradient(180deg,#ffdf8a,#c48a22);color:#2a0f0a">Tiếp</button></div></div></div>
 <div id="start" class="screen">
   <div class="box">
     <h1 class="title">Thủ Thành Lạc Dương</h1>
     <div class="tag">Chọn linh vật — vị chưởng môn sẽ chạy ra triệu hồi đệ tử các môn phái giữ thành</div>
+    <div class="acct"><label for="pname">Tên tài khoản (cũng là tên thành của bạn)</label><input id="pname" maxlength="16" placeholder="Ví dụ: Huy Nguyễn" autocomplete="nickname"></div>
     <div class="mrow" id="mrow"></div>
     <div class="seg" id="diff"><button data-d="easy">Dễ</button><button data-d="normal">Thường</button><button data-d="hard">Khó</button></div><br>
-    <button id="btnPlay">Vào trận</button>
-    <div class="note">Đấu online xếp hạng đang được xây dựng — khi chưa ghép được người, máy sẽ vào thay.</div>
+    <button id="btnPlay">Đấu với máy</button>
+    <div class="onl">
+      <button class="big ob" id="btnCoop">Thủ thành cùng nhau · online</button>
+      <button class="big ob" id="btnVs">Đấu online 1 đấu 1</button>
+      <div class="room"><button class="big ob2" id="btnRoom">Tạo phòng rủ bạn</button><input id="roomCode" inputmode="numeric" maxlength="4" placeholder="Mã phòng"><button class="big ob2" id="btnJoin">Vào phòng</button></div>
+      <div id="onlStatus" aria-live="polite"></div><button class="big ob2" id="btnCancel" hidden>Huỷ tìm trận</button>
+    </div>
+    <div class="note">Không tìm được người sau 25 giây thì máy sẽ vào thay.</div>
     <details class="how"><summary>Cách chơi</summary><ul>
       <li>Mỗi đợt có thời gian xây: chạm thẻ môn phái rồi chạm ô trên sân của bạn để đặt đệ tử.</li>
       <li>Hết giờ (hoặc bấm Sẵn sàng), giặc tràn ra từ trận pháp; đệ tử tự đánh. Giặc lọt tới cổng thành sẽ trừ máu thành.</li>
@@ -242,24 +257,26 @@ body.menu #top,body.menu #res,body.menu #bottom,body.menu #tools,body.menu #chat
     <div class="row"><button class="big bSell" id="btnMenu">Đổi linh vật</button><button class="big" id="btnAgain" style="background:linear-gradient(180deg,#ffdf8a,#c48a22);color:#2a0f0a">Chơi lại</button></div>
   </div>
 </div>
-<script src="js/three.min.js?v=1795440265"></script>
-<script src="js/CopyShader.js?v=1795440265"></script>
-<script src="js/LuminosityHighPassShader.js?v=1795440265"></script>
-<script src="js/EffectComposer.js?v=1795440265"></script>
-<script src="js/ShaderPass.js?v=1795440265"></script>
-<script src="js/RenderPass.js?v=1795440265"></script>
-<script src="js/UnrealBloomPass.js?v=1795440265"></script>
-<script src="js/Water.js?v=1795440265"></script>
-<script src="js/GLTFLoader.js?v=1795440265"></script>
-<script src="js/SkeletonUtils.js?v=1795440265"></script>
-<script src="js/tex.js?v=1795440265"></script>
-<script src="js/vrmbones.js?v=1795440265"></script>
-<script src="js/sim.js?v=1795440265"></script>
-<script src="js/audio.js?v=1795440265"></script>
-<script src="js/render.js?v=1795440265"></script>
-<script src="js/r3d.js?v=1795440265"></script>
-<script src="js/anime3d.js?v=1795440265"></script>
-<script src="js/game.js?v=1795440265"></script>
+<script src="js/three.min.js?v=1795441065"></script>
+<script src="js/CopyShader.js?v=1795441065"></script>
+<script src="js/LuminosityHighPassShader.js?v=1795441065"></script>
+<script src="js/EffectComposer.js?v=1795441065"></script>
+<script src="js/ShaderPass.js?v=1795441065"></script>
+<script src="js/RenderPass.js?v=1795441065"></script>
+<script src="js/UnrealBloomPass.js?v=1795441065"></script>
+<script src="js/Water.js?v=1795441065"></script>
+<script src="js/GLTFLoader.js?v=1795441065"></script>
+<script src="js/SkeletonUtils.js?v=1795441065"></script>
+<script src="js/peerjs.min.js?v=1795441065"></script>
+<script src="js/tex.js?v=1795441065"></script>
+<script src="js/vrmbones.js?v=1795441065"></script>
+<script src="js/sim.js?v=1795441065"></script>
+<script src="js/audio.js?v=1795441065"></script>
+<script src="js/render.js?v=1795441065"></script>
+<script src="js/r3d.js?v=1795441065"></script>
+<script src="js/anime3d.js?v=1795441065"></script>
+<script src="js/net.js?v=1795441065"></script>
+<script src="js/game.js?v=1795441065"></script>
 
 </body>
 </html>

@@ -240,6 +240,11 @@ var V = (function () {
       lm.position.z = 0; lm.rotation.x = -Math.PI / 2; lm.receiveShadow = true; scene.add(lm); laneMeshes.push(lm);
       // bờ đá
       for (var sgn = -1; sgn <= 1; sgn += 2) { var cb = mesh(G('curb', function () { return new T.BoxGeometry(0.22, 0.22, 20); }), M('#a39680'), LCX[lane] + sgn * (HL + 0.12), 0.11, 0); cb.receiveShadow = true; scene.add(cb); }
+      // đường vòng đá cuội cho giặc
+      var roadM = new T.MeshLambertMaterial({ color: '#7a6450', map: (function () { var t2 = canvasTex(64, 64, function (g) { g.fillStyle = '#7a6450'; g.fillRect(0, 0, 64, 64); for (var i2 = 0; i2 < 50; i2++) { var v2 = 90 + Math.random() * 50 | 0; g.fillStyle = 'rgb(' + (v2 + 20) + ',' + (v2 + 8) + ',' + v2 + ')'; g.beginPath(); g.ellipse(Math.random() * 64, Math.random() * 64, 3 + Math.random() * 4, 2 + Math.random() * 3, Math.random() * 3, 0, 6.3); g.fill(); } }, [1, 4]); return t2; })() });
+      for (var pi = 0; pi < S.PATH.length - 1; pi++) { var A0 = W(lane, S.PATH[pi][0], S.PATH[pi][1], 0.03), B0 = W(lane, S.PATH[pi + 1][0], S.PATH[pi + 1][1], 0.03); var dv = new T.Vector3().subVectors(B0, A0), len = dv.length();
+        var rd = new T.Mesh(new T.PlaneGeometry(1.25, len + 1.25), roadM); rd.rotation.x = -Math.PI / 2; rd.rotation.z = Math.atan2(dv.x, -dv.z) * -1; rd.position.copy(A0).add(B0).multiplyScalar(0.5); rd.position.y = 0.03; rd.receiveShadow = true; scene.add(rd);
+        for (var ar = 0.3; ar < 0.95; ar += 0.33) { var am = new T.Mesh(G('arrow2', function () { var g = new T.CircleGeometry(0.22, 3); g.rotateX(-Math.PI / 2); return g; }), new T.MeshBasicMaterial({ color: '#ff8a65', transparent: true, opacity: 0.5 })); am.position.copy(A0).lerp(B0, ar); am.position.y = 0.045; am.rotation.y = Math.atan2(dv.x, dv.z) - Math.PI / 2; scene.add(am); } }
       // lưới xây
       var pts = [];
       for (var cx = 0; cx <= LW; cx++) { var a = W(lane, cx, 2, 0.035), b = W(lane, cx, 14, 0.035); pts.push(a, b); }
@@ -505,7 +510,7 @@ var V = (function () {
     ];
     var guard = { skin: '#e0b48c', hair: '#111', hat: 'helmet', robe: '#a3241a', robe2: '#3a0a06', trim: '#e8b04a', armor: true };
     function add(lk, weapon, path, speed, scale, y) {
-      var v = makeHuman(lk, { weapon: weapon }); v.scale.setScalar(scale || 1.05); scene.add(v);
+      var v = makeHuman(lk, { weapon: weapon }); v.scale.setScalar((scale || 1.05) * 0.85); scene.add(v);
       var n = { v: v, path: path, i: 0, p: path[0].clone(), sp: speed, wait: Math.random() * 2, y: y || 0, ph: Math.random() * 6 };
       v.position.copy(n.p); NPC.push(n);
     }
@@ -515,7 +520,7 @@ var V = (function () {
       add(looks[(i + 3) % 6], null, [P(R0 - 0.3, 9 - i * 3), P(R0 - 0.3, -10 + i), P(R0 + 2.4, -10 + i), P(R0 + 2.4, 9 - i * 3)], 0.9 + Math.random() * 0.5);
     }
     [[-1, -8], [1, -3.5], [-1, 1], [1, 5.5]].forEach(function (p, k) { add(looks[(k * 2) % 6], null, [P(L0 + p[0] * 1.5 - 0.8, p[1]), P(L0 + p[0] * 1.5 - 0.8, p[1] + 0.01)], 0.01); add(looks[(k * 2 + 1) % 6], null, [P(R0 - p[0] * 1.5 + 0.8, p[1] + 1), P(R0 - p[0] * 1.5 + 0.8, p[1] + 1.01)], 0.01); });
-    for (var g = 0; g < 4; g++) { var x0 = MX - 40 + g * 22; add(guard, 'spear', [P(x0, -13.4), P(x0 + 14, -13.4)], 1.1, 1.1, 3.2); }
+    [[MX - 3.5, MX + 3.5], [-HL - 12, -HL - 4], [LCX[1] + HL + 4, LCX[1] + HL + 12]].forEach(function (sg) { add(guard, 'spear', [P(sg[0], -13.2), P(sg[1], -13.2)], 0.9, 1.1, 3.2); });
     add(guard, 'spear', [P(-HL - 10, 11.3), P(-HL - 2, 11.3)], 0.8, 1.1, 0.2); add(guard, 'spear', [P(LCX[1] + HL + 2, 11.3), P(LCX[1] + HL + 10, 11.3)], 0.8, 1.1, 0.2);
   }
   function stepNPCs(dt) {
@@ -583,10 +588,10 @@ var V = (function () {
       g.strokeStyle = '#e8b04a'; g.lineWidth = 6; g.strokeRect(10, 10, W2 - 20, H2 - 20); g.lineWidth = 2; g.strokeRect(22, 22, W2 - 44, H2 - 44);
       var bgc = g.createLinearGradient(0, 30, 0, H2 - 30); bgc.addColorStop(0, '#16285a'); bgc.addColorStop(1, '#0b1636'); g.fillStyle = bgc; g.fillRect(26, 26, W2 - 52, H2 - 52);
       for (var c = 0; c < 4; c++) { var cx = c % 2 ? W2 - 26 : 26, cy = c > 1 ? H2 - 26 : 26; g.fillStyle = '#e8b04a'; g.beginPath(); g.arc(cx, cy, 12, 0, 6.3); g.fill(); g.fillStyle = '#7a1a10'; g.beginPath(); g.arc(cx, cy, 5, 0, 6.3); g.fill(); }
-      var vi = lane === 0 ? 'Lạc Dương' : 'Biện Kinh';
+      var vi = (window.CASTLE_NAMES && CASTLE_NAMES[lane]) || (lane === 0 ? 'Lạc Dương' : 'Biện Kinh'); g.font = 'italic 900 96px "Playfair Display", serif'; var fsz = Math.min(96, 96 * (W2 - 80) / Math.max(1, g.measureText(vi).width));
       var gold = g.createLinearGradient(0, 40, 0, 150); gold.addColorStop(0, '#fff4c2'); gold.addColorStop(0.5, '#ffd257'); gold.addColorStop(1, '#c07a10');
       g.textAlign = 'center'; g.textBaseline = 'middle';
-      g.font = 'italic 900 96px "Playfair Display", serif';
+      g.font = 'italic 900 ' + Math.round(fsz) + 'px "Playfair Display", serif';
       g.lineWidth = 8; g.strokeStyle = '#3a1a00'; g.strokeText(vi, W2 / 2, 104);
       g.shadowColor = 'rgba(255,200,90,.55)'; g.shadowBlur = 14; g.fillStyle = gold; g.fillText(vi, W2 / 2, 104); g.shadowBlur = 0;
       g.strokeStyle = 'rgba(255,255,255,.35)'; g.lineWidth = 1.5; g.strokeText(vi, W2 / 2, 100);
@@ -594,6 +599,7 @@ var V = (function () {
       plaque.needsUpdate = true;
     };
     drawPlaque(); if (document.fonts && document.fonts.load) document.fonts.load('italic 900 96px "Playfair Display"', 'Lạc Dương Biện Kinh').then(drawPlaque).catch(function () {});
+    PLAQUES[lane] = drawPlaque;
     var pl = mesh(new T.PlaneGeometry(3.6, 1.4), new T.MeshBasicMaterial({ map: plaque }), 0, 2.2, 0.83, false); pl.scale.x = 9 / LW; grp.add(pl);
     var plGlow = glowSprite('#ffcf7a', 3.6, 0.25); plGlow.position.set(0, 2.2, 0.9); grp.add(plGlow);
     // cờ
@@ -608,7 +614,7 @@ var V = (function () {
     flash.position.set(0, 1.5, 0); grp.add(flash);
     return { g: grp, flash: flash, shake: 0 };
   }
-  var FLAGS = [];
+  var FLAGS = [], PLAQUES = [];
 
   // ---------- NHÂN VẬT 3D (chibi) ----------
   function sph(r, ws, hs) { return G('s' + r + '_' + (ws || 12), function () { return new T.SphereGeometry(r, ws || 12, hs || 10); }); }
@@ -755,7 +761,7 @@ var V = (function () {
     var Md = MASCOTS[key];
     var mm = MASCOT_MODEL[key];
     if (window.A3 && A3.has('m_' + key)) {
-      var r3 = A3.make('m_' + key, 3.1, { glow: true }); A3.glowify(r3, Md.aura);
+      var r3 = A3.make('m_' + key, 2.3, { glow: true }); A3.glowify(r3, Md.aura);
       var au3 = new T.Mesh(new T.RingGeometry(0.42, 0.52, 32), new T.MeshBasicMaterial({ color: Md.aura, transparent: true, opacity: 0.8, blending: T.AdditiveBlending, depthWrite: false, side: T.DoubleSide }));
       au3.rotation.x = -Math.PI / 2; au3.position.y = 0.03; au3.scale.setScalar(1.5); r3.add(au3);
       var mo3 = []; for (var q3 = 0; q3 < 6; q3++) { var sp3 = glowSprite(Md.aura, 0.22, 0.95); r3.add(sp3); mo3.push(sp3); }
@@ -925,11 +931,11 @@ var V = (function () {
       var d = S.CREEPS[c.type];
       var cm = CREEP_MODEL[c.type];
       v = d.beast ? makeBeast(c.type) : makeHuman(R.CLOOK[c.type], { weapon: R.CLOOK[c.type].weapon });
-      v.userData.size = d.size;
+      v.userData.size = d.size; v.traverse(function (o2) { if (o2.isMesh) { o2.castShadow = !LOW && !!d.boss; } });
       if (R.CLOOK[c.type] && R.CLOOK[c.type].aura) { var a = glowSprite(R.CLOOK[c.type].aura, 2.2, 0.5); a.position.y = 0.6; v.add(a); }
       if (d.boss) { var br = new T.Mesh(new T.RingGeometry(0.5, 0.62, 32), new T.MeshBasicMaterial({ color: '#ff1744', transparent: true, opacity: 0.8, side: T.DoubleSide, depthWrite: false, blending: T.AdditiveBlending })); br.rotation.x = -Math.PI / 2; br.position.y = 0.04; v.add(br); }
       if (d.send) { var sr = glowSprite('#ff1744', 1.0, 0.4); sr.position.y = 0.5; v.add(sr); }
-      v.scale.setScalar(d.size * (d.beast ? 1.5 : 1.2));
+      v.scale.setScalar(d.size * (d.beast ? 1.2 : 0.95));
       scene.add(v); VC[c.id] = v;
     }
     return v;
@@ -1329,7 +1335,7 @@ var V = (function () {
       var pr = lerpPos(u, alpha), pos = W(u.owner, pr[0], pr[1]);
       if (v.userData.hidden > 0) { v.userData.hidden -= dt; v.visible = v.userData.hidden <= 0; if (v.visible) v.userData.pop = 0.0001; }
       v.position.copy(pos);
-      var sb = (v.userData.scaleBase || 1) * 1.3;
+      var sb = (v.userData.scaleBase || 1) * 1.0;
       if (v.userData.pop > 0 && v.userData.pop < 1) { v.userData.pop = Math.min(1, v.userData.pop + dt * 3); var k = v.userData.pop, el = 1 + Math.sin(k * Math.PI * 2.5) * (1 - k) * 0.5; v.scale.setScalar(sb * k * el); } else v.scale.setScalar(sb);
       var tgt = u.tgt ? S.findCreep(G, u.tgt) : null, ang;
       if (tgt) ang = Math.atan2(tgt.x - u.x, -(tgt.y - u.y)) + 0; else ang = (u.moving ? Math.atan2((u.cx + 0.5 - u.x), -((u.cy + 0.5) - u.y)) : Math.PI);
@@ -1354,8 +1360,8 @@ var V = (function () {
     for (var j = 0; j < G.creeps.length; j++) {
       var c = G.creeps[j]; if (c.hp <= 0) continue;
       var isNew = !VC[c.id]; var cv = visualCreep(c); seenC[c.id] = 1;
-      if (isNew && Math.random() < 0.5) portalBurst(c.lane);
-      if (c.moving && Math.random() < 0.06) dustAt(cv.position);
+      if (isNew && Math.random() < (LOW ? 0.15 : 0.35)) portalBurst(c.lane);
+      if (!LOW && c.moving && Math.random() < 0.03) dustAt(cv.position);
       var pc = lerpPos(c, alpha); cv.position.copy(W(c.lane, pc[0], pc[1]));
       var ut = c.tgt ? S.findUnit(G, c.tgt) : null;
       var ca = ut ? Math.atan2(ut.x - c.x, -(ut.y - c.y)) : (c.leaked ? Math.atan2(HL - c.x, -(17.4 - c.y)) : Math.PI);
@@ -1476,7 +1482,7 @@ var V = (function () {
 
   function screenOf(lane, x, y, h) { return proj(W(lane, x, y, h || 0)); }
 
-  return { spawnNPCs: spawnNPCs, weapon3: weapon3, glowSprite: glowSprite, loadModels: loadModels, modelsReady: function () { return modelsReady; }, makeModel: makeModel, UNIT_MODEL: UNIT_MODEL, CREEP_MODEL: CREEP_MODEL, MASCOT_MODEL: MASCOT_MODEL, LW: LW, HL: HL, MX: MX, _VU: VU, init: init, resize: resize, frame: frame, onEvent: onEvent, setView: setView, cam: cam, pick: pick, setGhost: setGhost, setSelected: setSelected, initMascots: initMascots, mascots: mascots,
+  return { setCastleNames: function (a) { window.CASTLE_NAMES = a; PLAQUES.forEach(function (f) { if (f) f(); }); }, spawnNPCs: spawnNPCs, weapon3: weapon3, glowSprite: glowSprite, loadModels: loadModels, modelsReady: function () { return modelsReady; }, makeModel: makeModel, UNIT_MODEL: UNIT_MODEL, CREEP_MODEL: CREEP_MODEL, MASCOT_MODEL: MASCOT_MODEL, LW: LW, HL: HL, MX: MX, _VU: VU, init: init, resize: resize, frame: frame, onEvent: onEvent, setView: setView, cam: cam, pick: pick, setGhost: setGhost, setSelected: setSelected, initMascots: initMascots, mascots: mascots,
     screenOf: screenOf, fitDist: fitDist, W: W, LCX: LCX, renderIcon: null, cheer: function (p) { if (mascots[p]) mascots[p].cheer = 0.8; },
     makeHuman: makeHuman, makeBeast: makeBeast, makeMascot: makeMascot, getRenderer: function () { return renderer; }, getScene: function () { return scene; }, getCamera: function () { return camera; }, M: M, T: T };
 })();

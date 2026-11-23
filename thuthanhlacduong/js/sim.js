@@ -7,6 +7,9 @@ var Sim = (function () {
   var BUILD_Y0 = 2, BUILD_Y1 = 13; // hàng được xây
   var LEAK_Y = 15.2, GATE_Y = 17.4;
   var MAX_WAVE = 20;
+  var SAVE = [[50, 0.04], [120, 0.06], [250, 0.08], [500, 0.10], [900, 0.12]];   // [mốc vàng, lãi]
+  // ĐƯỜNG VÒNG: giặc đi zíc-zắc qua cả sân rồi mới tới cổng thành
+  var PATH = [[5.5, -0.4], [1.3, 1.2], [9.7, 3.6], [1.3, 6.2], [9.7, 8.8], [1.3, 11.4], [9.7, 13.6], [5.5, 15.4]];
 
   // ---- Môn phái (tướng của người chơi) ----
   var UNITS = {
@@ -192,12 +195,12 @@ var Sim = (function () {
   function findCreep(G, id) { for (var i = 0; i < G.creeps.length; i++) if (G.creeps[i].id === id) return G.creeps[i]; return null; }
 
   function startFight(G) {
-    G.phase = 'fight'; G.phaseT = 75; G.fightT = 0;
+    G.phase = 'fight'; G.phaseT = 120; G.fightT = 0;
     G.waveLeaks = [0, 0];
     var pat = WAVE_PATTERNS[G.wave - 1];
     for (var lane = 0; lane < 2; lane++) {
       var q = [], t = 0.3;
-      for (var i = 0; i < pat.length; i++) for (var n = 0; n < pat[i][1]; n++) { q.push({ k: pat[i][0], t: t }); t += CREEPS[pat[i][0]].boss ? 0.9 : 0.28; }
+      for (var i = 0; i < pat.length; i++) { var cnt = CREEPS[pat[i][0]].boss ? pat[i][1] : Math.round(pat[i][1] * 1.8); for (var n = 0; n < cnt; n++) { q.push({ k: pat[i][0], t: t }); t += CREEPS[pat[i][0]].boss ? 0.9 : 0.6; } }
       var opp = G.players[1 - lane];
       t += 0.8;
       for (var j = 0; j < opp.sendQ.length; j++) { q.push({ k: opp.sendQ[j], t: t, from: 1 - lane }); t += 0.45; }
@@ -217,8 +220,8 @@ var Sim = (function () {
     var d = CREEPS[k], w = G.wave;
     var hm = hpScale(w), dm = dmgScale(w);
     if (d.send) { hm = 1 + 0.13 * (w - 1); dm = 1 + 0.08 * (w - 1); }
-    var hp = Math.round(d.hp * hm);
-    var c = { id: G.nextId++, lane: lane, type: k, x: 1.2 + G.rng() * (LANE_W - 2.4), y: -0.6 - G.rng() * 0.8, hp: hp, max: hp,
+    var hp = Math.round(d.hp * hm * (d.boss || d.send ? 1 : 1.85));
+    var c = { id: G.nextId++, lane: lane, type: k, x: 4.5 + G.rng() * 2, y: -0.8 - G.rng() * 0.8, wp: 1, hp: hp, max: hp,
       dmg: d.dmg * dm, cd: G.rng() * 0.5, tgt: 0, stun: 0, poison: 0, poisonT: 0, leaked: false, slow: 0, from: from, face: 1, atkAnim: 0, wob: G.rng() * 6 };
     G.creeps.push(c);
   }
@@ -433,7 +436,7 @@ var Sim = (function () {
   }
 
   function stepCreeps(G) {
-    var rush = G.fightT > 60;
+    var rush = G.fightT > 110;
     for (var i = G.creeps.length - 1; i >= 0; i--) {
       var c = G.creeps[i], d = CREEPS[c.type];
       if (c.hp <= 0) { G.creeps.splice(i, 1); continue; }
@@ -453,7 +456,7 @@ var Sim = (function () {
       c.cd -= DT;
       var t = (!rush && c.tgt) ? findUnit(G, c.tgt) : null;
       if (t && (t.dead || !t.active || dist2(t, c) > 9)) t = null;
-      if (!t && !rush) t = nearestUnit(G, c.lane, c.x, c.y, d.ranged ? 3.6 : 2.4);
+      if (!t && !rush) t = nearestUnit(G, c.lane, c.x, c.y, d.ranged ? 3.4 : 2.0);
       if (t) {
         c.tgt = t.id;
         var dx = t.x - c.x, dy = t.y - c.y, dist = Math.sqrt(dx * dx + dy * dy) || 0.01;
@@ -470,12 +473,12 @@ var Sim = (function () {
         }
       } else {
         c.tgt = 0;
-        var tx = Math.max(1, Math.min(LANE_W - 1, c.x + dsin(c.wob + G.time * 0.7) * 0.4));
-        c.x += (tx - c.x) * 0.02;
-        c.y += spd * DT; c.moving = true; c.face = 1;
-        if (c.y >= LEAK_Y) { c.leaked = true; G.ev.push({ e: 'leak', lane: c.lane, x: c.x, y: c.y }); }
+        var wp = PATH[c.wp || 1], ox = dsin(c.wob) * 0.6, wx = wp[0] + ox, wy = wp[1];
+        var ddx = wx - c.x, ddy = wy - c.y, dl = Math.sqrt(ddx * ddx + ddy * ddy);
+        if (dl < 0.45) { c.wp = (c.wp || 1) + 1; if (c.wp >= PATH.length) { c.leaked = true; G.ev.push({ e: 'leak', lane: c.lane, x: c.x, y: c.y }); } }
+        else { c.x += ddx / dl * spd * DT; c.y += ddy / dl * spd * DT; }
+        c.moving = true; c.face = ddx >= 0 ? 1 : -1;
       }
-      if (c.y >= LEAK_Y && !c.leaked) { c.leaked = true; G.ev.push({ e: 'leak', lane: c.lane, x: c.x, y: c.y }); }
     }
   }
 
@@ -642,7 +645,7 @@ var Sim = (function () {
     G.players.forEach(function (P) { h = (h * 31 + P.gold * 3 + P.hp * 5 + P.income) | 0; });
     return h;
   }
-  var api = { DT: DT, LANE_W: LANE_W, BUILD_Y0: BUILD_Y0, BUILD_Y1: BUILD_Y1, LEAK_Y: LEAK_Y, GATE_Y: GATE_Y, MAX_WAVE: MAX_WAVE,
+  var api = { SAVE: SAVE, PATH: PATH, DT: DT, LANE_W: LANE_W, BUILD_Y0: BUILD_Y0, BUILD_Y1: BUILD_Y1, LEAK_Y: LEAK_Y, GATE_Y: GATE_Y, MAX_WAVE: MAX_WAVE,
     UNITS: UNITS, UNIT_ORDER: UNIT_ORDER, CREEPS: CREEPS, SENDS: SENDS, SEND_ORDER: SEND_ORDER, WAVE_PATTERNS: WAVE_PATTERNS,
     upCost: upCost, MAX_TIER: MAX_TIER, checksum: checksum, dsin: dsin, datan2: datan2, create: create, apply: apply, step: step, aiThink: aiThink, stat: stat, findUnit: findUnit, findCreep: findCreep, hpScale: hpScale };
   if (typeof module !== 'undefined') module.exports = api;
