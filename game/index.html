@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Cổng Game – Huy Nguyễn</title>
+<meta name="description" content="Chọn game: Thủ Thành Lạc Dương (thủ thành võ lâm 3D, chơi online) và Loạn Thế Lãnh Chúa (chinh phạt thế giới). Chơi ngay trên trình duyệt, điện thoại.">
+<meta property="og:title" content="Cổng Game – Thủ Thành Lạc Dương & Loạn Thế Lãnh Chúa">
+<meta property="og:image" content="https://chungkhoanhuynguyen.com/game/ttld.webp">
+<meta name="theme-color" content="#07060a">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#e9c46a;--gold2:#fff1c4;--ink:#07060a;--dim:#a89f8c}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:var(--ink);color:#f3ede0;font-family:'Be Vietnam Pro',system-ui,sans-serif;overflow-x:hidden;-webkit-tap-highlight-color:transparent}
+canvas#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.serif{font-family:'Cormorant Garamond',Georgia,serif}
+
+/* ---------- INTRO ---------- */
+#intro{position:fixed;inset:0;z-index:20;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 55%,#1a1208 0%,#07060a 60%);cursor:pointer;transition:opacity .9s ease,visibility .9s}
+#intro.out{opacity:0;visibility:hidden}
+.seal{width:min(34vw,150px);aspect-ratio:1;position:relative;margin:0 auto 26px}
+.seal svg{width:100%;height:100%;overflow:visible}
+.ring{fill:none;stroke:var(--gold);stroke-width:1.4;stroke-dasharray:440;stroke-dashoffset:440;animation:draw 1.6s cubic-bezier(.6,0,.2,1) .2s forwards}
+.ring2{stroke-width:.6;opacity:.55;animation-delay:.5s}
+.blade{fill:none;stroke:var(--gold2);stroke-width:2.2;stroke-linecap:round;stroke-dasharray:160;stroke-dashoffset:160;animation:draw .7s ease-out 1.3s forwards;filter:drop-shadow(0 0 6px #ffd27a)}
+.blade.b2{animation-delay:1.45s}
+@keyframes draw{to{stroke-dashoffset:0}}
+.flash{position:absolute;left:50%;top:50%;width:6px;height:6px;border-radius:50%;background:#fff;transform:translate(-50%,-50%) scale(0);box-shadow:0 0 40px 20px #ffd98a;animation:flash .9s ease-out 1.95s forwards}
+@keyframes flash{0%{transform:translate(-50%,-50%) scale(0);opacity:1}40%{transform:translate(-50%,-50%) scale(9);opacity:.9}100%{transform:translate(-50%,-50%) scale(26);opacity:0}}
+.ttl{text-align:center;padding:0 20px}
+.ttl .k{font-size:12px;letter-spacing:.6em;color:var(--dim);text-transform:uppercase;opacity:0;animation:up .9s ease 2.1s forwards}
+.ttl h1{font-size:clamp(40px,9vw,92px);font-weight:700;line-height:1.02;margin:10px 0 8px;letter-spacing:.02em;background:linear-gradient(100deg,#8a6a2a 0%,#f7dc95 30%,#fff7dc 45%,#e0b553 60%,#8a6a2a 100%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;opacity:0;filter:blur(8px);animation:reveal 1.2s cubic-bezier(.2,.7,.2,1) 2.2s forwards,shine 3s linear 3.3s infinite}
+@keyframes reveal{to{opacity:1;filter:blur(0)}}
+@keyframes shine{from{background-position:100% 0}to{background-position:-150% 0}}
+.ttl .s{font-size:15px;color:#cfc6b2;opacity:0;animation:up .9s ease 2.8s forwards}
+.tap{position:absolute;bottom:max(28px,env(safe-area-inset-bottom));left:0;right:0;text-align:center;font-size:12px;letter-spacing:.35em;color:var(--dim);opacity:0;animation:up .8s ease 3.4s forwards,pulse 2s ease-in-out 4.2s infinite}
+@keyframes up{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@keyframes pulse{50%{opacity:.35}}
+
+/* ---------- HUB ---------- */
+main{position:relative;z-index:1;min-height:100%;display:flex;flex-direction:column;align-items:center;padding:clamp(28px,6vh,64px) 18px 40px;opacity:0;transform:translateY(16px);transition:opacity 1s ease .2s,transform 1s ease .2s}
+main.on{opacity:1;transform:none}
+header{text-align:center;margin-bottom:clamp(22px,4vh,40px)}
+header .k{font-size:11px;letter-spacing:.5em;color:var(--dim)}
+header h2{font-size:clamp(30px,5.4vw,52px);font-weight:700;color:var(--gold2);margin-top:6px;text-shadow:0 0 30px rgba(233,196,106,.25)}
+header p{color:#b9b09c;font-size:14px;margin-top:6px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,520px));gap:clamp(16px,2.6vw,32px);width:100%;justify-content:center}
+@media (max-width:760px){.grid{grid-template-columns:1fr;max-width:520px}}
+.card{position:relative;display:block;text-decoration:none;color:inherit;border-radius:18px;overflow:hidden;background:#120f0b;border:1px solid rgba(233,196,106,.22);box-shadow:0 20px 50px -20px rgba(0,0,0,.9);transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .25s ease,border-color .3s,box-shadow .3s;opacity:0;animation:up .8s ease forwards}
+main.on .card:nth-child(1){animation-delay:.45s}
+main.on .card:nth-child(2){animation-delay:.6s}
+main:not(.on) .card{animation:none}
+.card:hover,.card:focus-visible{border-color:rgba(255,220,140,.7);box-shadow:0 28px 70px -22px rgba(233,170,60,.45);outline:none}
+.pic{position:relative;aspect-ratio:16/9;overflow:hidden}
+.pic img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.04);transition:transform 6s ease}
+.card:hover .pic img{transform:scale(1.14)}
+.pic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,#120f0b 100%)}
+.pic::before{content:"";position:absolute;z-index:2;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,240,200,.28),transparent);transform:skewX(-18deg);transition:left .9s ease}
+.card:hover .pic::before{left:130%}
+.tag{position:absolute;z-index:3;top:12px;left:12px;font-size:11px;font-weight:600;letter-spacing:.08em;padding:5px 10px;border-radius:999px;background:rgba(7,6,10,.7);backdrop-filter:blur(6px);border:1px solid rgba(233,196,106,.35);color:var(--gold2)}
+.tag.live::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:#3ddc84;margin-right:6px;box-shadow:0 0 8px #3ddc84;vertical-align:1px}
+.body{padding:4px 22px 22px;margin-top:-34px;position:relative;z-index:2}
+.body h3{font-size:clamp(26px,3.4vw,34px);font-weight:700;color:#fff3d6;line-height:1.1}
+.body .g{font-size:12.5px;color:var(--gold);margin:6px 0 10px;letter-spacing:.04em}
+.body p{font-size:14px;line-height:1.6;color:#c9c0ab}
+.go{margin-top:16px;display:flex;align-items:center;justify-content:space-between}
+.go>span:first-child{font-size:12px;color:var(--dim)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:11px 20px;border-radius:12px;color:#1c1406;background:linear-gradient(180deg,#f8dd96,#d5a443);box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 6px 18px -6px rgba(233,170,60,.7);transition:transform .15s}
+.card:active .btn{transform:scale(.96)}
+footer{margin-top:auto;padding-top:36px;font-size:12px;color:#6f685a;text-align:center}
+footer a{color:#a89f8c}
+
+/* ---------- TRANSITION ---------- */
+#warp{position:fixed;inset:0;z-index:30;pointer-events:none;background:radial-gradient(circle at var(--x,50%) var(--y,50%),#fff6dc 0,#e9c46a 8%,#07060a 40%);clip-path:circle(0 at var(--x,50%) var(--y,50%));transition:clip-path .75s cubic-bezier(.7,0,.3,1)}
+#warp.on{clip-path:circle(150% at var(--x,50%) var(--y,50%))}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-delay:0s!important;transition-duration:.01s!important}}
+</style>
+</head>
+<body>
+<canvas id="fx"></canvas>
+
+<div id="intro" role="button" aria-label="Bỏ qua phần mở đầu">
+  <div>
+    <div class="seal">
+      <svg viewBox="0 0 140 140">
+        <circle class="ring" cx="70" cy="70" r="66"/>
+        <circle class="ring ring2" cx="70" cy="70" r="58"/>
+        <path class="blade" d="M28 112 L112 28"/>
+        <path class="blade b2" d="M112 112 L28 28"/>
+      </svg>
+      <div class="flash"></div>
+    </div>
+    <div class="ttl">
+      <div class="k">Huy Nguyễn Studio</div>
+      <h1 class="serif">Cổng Game</h1>
+      <div class="s">Hai thế giới đang chờ bạn bước vào</div>
+    </div>
+  </div>
+  <div class="tap">CHẠM ĐỂ VÀO</div>
+</div>
+
+<main id="hub">
+  <header>
+    <div class="k">CHỌN THẾ GIỚI</div>
+    <h2 class="serif">Bạn muốn chơi game nào?</h2>
+    <p>Chơi ngay trên trình duyệt, máy tính hay điện thoại đều được.</p>
+  </header>
+
+  <div class="grid">
+    <a class="card" href="/thuthanhlacduong/">
+      <div class="pic"><span class="tag live">Có online</span><img src="ttld.webp" alt="Thủ Thành Lạc Dương: thành Lạc Dương 3D với tường thành, chợ và linh vật" width="960" height="495"></div>
+      <div class="body">
+        <h3 class="serif">Thủ Thành Lạc Dương</h3>
+        <div class="g">Thủ thành võ lâm 3D · Rank 12 bậc · Thủ cùng nhau</div>
+        <p>Chọn linh vật, chiêu mộ đệ tử các môn phái, nâng 5 bậc vũ khí phát sáng và giữ thành trước Khăn Vàng, Mông Nguyên.</p>
+        <div class="go"><span>Tháp phòng thủ</span><span class="btn">Vào game →</span></div>
+      </div>
+    </a>
+    <a class="card" href="/loanthelanhchua/">
+      <div class="pic"><span class="tag">Chơi đơn</span><img src="ltlc.webp" alt="Loạn Thế Lãnh Chúa: bản đồ thế giới với các châu lục và thành trì" width="960" height="480"></div>
+      <div class="body">
+        <h3 class="serif">Loạn Thế Lãnh Chúa</h3>
+        <div class="g">Chinh phạt thế giới · 201 quốc gia · 342 thành</div>
+        <p>Khởi đầu là hiệp sĩ, gây dựng quân đội, chiếm 4 châu lục rồi mở cổng tới Cửu Thiên Huyền Giới.</p>
+        <div class="go"><span>Chiến thuật · nhập vai</span><span class="btn">Vào game →</span></div>
+      </div>
+    </a>
+  </div>
+
+  <footer><a href="/">chungkhoanhuynguyen.com</a></footer>
+</main>
+
+<div id="warp"></div>
+
+<script>
+(function(){
+  // ---- Embers background ----
+  var c=document.getElementById('fx'),x=c.getContext('2d'),W,H,D=Math.min(devicePixelRatio||1,2),P=[];
+  function rs(){W=c.width=innerWidth*D;H=c.height=innerHeight*D}
+  rs();addEventListener('resize',rs);
+  var N=innerWidth<700?45:90;
+  function mk(y){return{x:Math.random()*W,y:y==null?H+Math.random()*H*.3:y,r:(Math.random()*1.8+.5)*D,v:(Math.random()*.5+.25)*D,w:Math.random()*6.28,a:Math.random()*.6+.3}}
+  for(var i=0;i<N;i++)P.push(mk(Math.random()*H));
+  var burst=0;
+  function f(){
+    x.clearRect(0,0,W,H);x.globalCompositeOperation='lighter';
+    for(var i=0;i<P.length;i++){var p=P[i];p.w+=.02;p.y-=p.v*(1+burst*4);p.x+=Math.sin(p.w)*.4*D;
+      if(p.y<-10)P[i]=mk();
+      var g=x.createRadialGradient(p.x,p.y,0,p.x,p.y,p.r*4);g.addColorStop(0,'rgba(255,214,140,'+p.a+')');g.addColorStop(1,'rgba(255,140,40,0)');
+      x.fillStyle=g;x.beginPath();x.arc(p.x,p.y,p.r*4,0,6.28);x.fill()}
+    burst*=.95;requestAnimationFrame(f)}
+  f();
+
+  // ---- Intro → hub ----
+  var intro=document.getElementById('intro'),hub=document.getElementById('hub'),done=false;
+  function enter(){if(done)return;done=true;burst=1;intro.classList.add('out');hub.classList.add('on');try{sessionStorage.setItem('gh_intro','1')}catch(e){}}
+  intro.addEventListener('click',enter);
+  addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '||e.key==='Escape')enter()});
+  var seen=false;try{seen=sessionStorage.getItem('gh_intro')}catch(e){}
+  if(seen){intro.style.transition='none';enter()}else setTimeout(enter,4800);
+
+  // ---- Card tilt + warp transition ----
+  var warp=document.getElementById('warp');
+  document.querySelectorAll('.card').forEach(function(a){
+    a.addEventListener('pointermove',function(e){if(e.pointerType!=='mouse')return;var r=a.getBoundingClientRect();
+      a.style.setProperty('--ry',((e.clientX-r.left)/r.width-.5)*8+'deg');a.style.setProperty('--rx',-((e.clientY-r.top)/r.height-.5)*8+'deg')});
+    a.addEventListener('pointerleave',function(){a.style.setProperty('--rx','0deg');a.style.setProperty('--ry','0deg')});
+    a.addEventListener('click',function(e){
+      if(e.metaKey||e.ctrlKey||e.shiftKey)return;e.preventDefault();var href=a.getAttribute('href');
+      warp.style.setProperty('--x',e.clientX+'px');warp.style.setProperty('--y',e.clientY+'px');burst=1;
+      warp.classList.add('on');setTimeout(function(){location.href=href},700)});
+  });
+  // back-forward cache: reset warp when returning
+  addEventListener('pageshow',function(){warp.classList.remove('on')});
+})();
+</script>
+</body>
+</html>
