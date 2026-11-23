@@ -624,6 +624,14 @@ var V = (function () {
   function makeMascot(key) {
     var Md = MASCOTS[key];
     var mm = MASCOT_MODEL[key];
+    if (window.CARDS && CARDS.ready() && CARDS.has('m_' + key)) {
+      var r3 = CARDS.make('m_' + key, 2.0); CARDS.glowify(r3, Md.aura);
+      var au3 = new T.Mesh(new T.RingGeometry(0.42, 0.52, 32), new T.MeshBasicMaterial({ color: Md.aura, transparent: true, opacity: 0.8, blending: T.AdditiveBlending, depthWrite: false, side: T.DoubleSide }));
+      au3.rotation.x = -Math.PI / 2; au3.position.y = 0.03; au3.scale.setScalar(1.5); r3.add(au3);
+      var mo3 = []; for (var q3 = 0; q3 < 6; q3++) { var sp3 = glowSprite(Md.aura, 0.22, 0.95); r3.add(sp3); mo3.push(sp3); }
+      r3.userData.motes = mo3; r3.userData.aura = au3; r3.userData.rib = [];
+      return r3;
+    }
     if (modelsReady && MODELS[mm[0]]) {
       var r2 = makeModel(mm[0], mm[1], 2.4);
       var au2 = new T.Mesh(new T.RingGeometry(0.42, 0.52, 32), new T.MeshBasicMaterial({ color: Md.aura, transparent: true, opacity: 0.8, blending: T.AdditiveBlending, depthWrite: false, side: T.DoubleSide }));
@@ -730,8 +738,8 @@ var V = (function () {
     var v = VU[u.id];
     if (!v) {
       var d = S.UNITS[u.type], um = UNIT_MODEL[u.type];
-      var g = (modelsReady && makeModel(um[0], um[1], 1.95)) || makeHuman(R.LOOK[u.type], { weapon: d.weapon, wglow: u.type === 'vodang' ? '#7ab8ff' : null });
-      if (g.userData.model) { var sg = glowSprite(d.col, 0.9, 0.35); sg.position.y = 0.15; g.add(sg); }
+      var g = (window.CARDS && CARDS.ready() && CARDS.make(u.type, 1.6)) || (modelsReady && makeModel(um[0], um[1], 1.95)) || makeHuman(R.LOOK[u.type], { weapon: d.weapon, wglow: u.type === 'vodang' ? '#7ab8ff' : null });
+      if (g.userData.model || g.userData.card) { var sg = glowSprite(d.col, 0.9, 0.35); sg.position.y = 0.15; g.add(sg); }
       g.userData.tier = -1; g.userData.pop = 0; g.userData.hidden = 0.0;
       var ring = new T.Mesh(G('uring', function () { return new T.RingGeometry(0.34, 0.44, 24); }), new T.MeshBasicMaterial({ color: d.col, transparent: true, opacity: 0.85, side: T.DoubleSide, depthWrite: false }));
       var tring = new T.Mesh(G('tring2', function () { return new T.RingGeometry(0.46, 0.5, 24); }), new T.MeshBasicMaterial({ color: u.owner === 0 ? '#4fc3ff' : '#ff6b5a', transparent: true, opacity: 0.7, side: T.DoubleSide, depthWrite: false }));
@@ -753,7 +761,7 @@ var V = (function () {
         var au = new T.Mesh(G('tring', function () { return new T.RingGeometry(0.38, 0.5, 32); }), new T.MeshBasicMaterial({ color: '#ffd740', transparent: true, opacity: 0.7, blending: T.AdditiveBlending, side: T.DoubleSide, depthWrite: false }));
         au.rotation.x = -Math.PI / 2; au.position.y = 0.04; v.add(au); v.userData.aura = au;
         var gs = glowSprite(col, 1.2, 0.35); gs.position.y = 0.6; v.add(gs);
-        if (!v.userData.model) { var cp = mesh(G('capeR', null), M(S.UNITS[u.type].col2, { side: T.DoubleSide }), 0, 1.42, -0.17); cp.rotation.x = 0.12; v.userData.body.add(cp); v.userData.cape = cp; } else { var cr = mesh(cone(0.09, 0.2, 5), M('#ffd740', { em: '#ffb300', ei: 1.2 }), 0, 1.95, 0, false); v.add(cr); }
+        if (v.userData.card) { CARDS.glowify(v, S.UNITS[u.type].col); } else if (!v.userData.model) { var cp = mesh(G('capeR', null), M(S.UNITS[u.type].col2, { side: T.DoubleSide }), 0, 1.42, -0.17); cp.rotation.x = 0.12; v.userData.body.add(cp); v.userData.cape = cp; } else { var cr = mesh(cone(0.09, 0.2, 5), M('#ffd740', { em: '#ffb300', ei: 1.2 }), 0, 1.95, 0, false); v.add(cr); }
         v.userData.scaleBase = 1.12;
       }
     }
@@ -1060,9 +1068,10 @@ var V = (function () {
     v.position.copy(W(m.lane, m.x, m.y));
     if (m.cheer > 0) { m.cheer -= dt; v.position.y = Math.abs(Math.sin(m.cheer * 10)) * 0.4; }
     else if (!moving && !v.userData.model) v.position.y = 0.15 + Math.sin(t * 2) * 0.06; // bay lơ lửng
-    faceTo(v, 1, m.face, dt);
     var U = v.userData;
-    if (U.model) { animModel(v, { moving: moving, atk: 0, cast: m.castId || 0 }, dt); }
+    if (!U.card) faceTo(v, 1, m.face, dt);
+    if (U.card) { CARDS.anim(v, { moving: moving, atk: 0, cast: m.castId || 0, face: Math.sin(m.face) >= 0 ? 1 : -1 }, dt, t, camera); }
+    else if (U.model) { animModel(v, { moving: moving, atk: 0, cast: m.castId || 0 }, dt); }
     else { animHuman(v, { moving: moving, atk: m.cast > 0 ? m.cast * 1.2 : 0, ph: m.lane }, t, dt); if (m.cast > 0) U.armL.rotation.x = -2.6; }
     U.rib.forEach(function (r, i) { var a = r.geometry.attributes.position, base = r.geometry.userData.base; for (var k = 0; k < a.count; k++) { var y = base[k * 3 + 1]; a.setZ(k, base[k * 3 + 2] - Math.sin(t * 4 + y * 5 + i) * 0.12 * (-y) - (moving ? -y * 0.5 : 0)); } a.needsUpdate = true; });
     U.motes.forEach(function (s, i) { var a = t * 1.6 + i * 1.256; s.position.set(Math.cos(a) * 0.6, 1.0 + Math.sin(a * 1.3) * 0.6, Math.sin(a) * 0.6); });
@@ -1170,13 +1179,14 @@ var V = (function () {
       var tgt = u.tgt ? S.findCreep(G, u.tgt) : null, ang;
       if (tgt) ang = Math.atan2(tgt.x - u.x, -(tgt.y - u.y)) + 0; else ang = (u.moving ? Math.atan2((u.cx + 0.5 - u.x), -((u.cy + 0.5) - u.y)) : Math.PI);
       // sim y tăng -> z giảm; atan2(dx, dz) với dz = -(dy)
-      faceTo(v, 1, tgt || u.moving ? ang : 0, dt);
-      if (v.userData.model) { animModel(v, { dead: u.dead, moving: u.moving && G.phase === 'fight', atk: u.atkAnim, cast: u._castT }, dt); }
+      if (!v.userData.card) faceTo(v, 1, tgt || u.moving ? ang : 0, dt);
+      if (v.userData.card) { CARDS.anim(v, { dead: u.dead, moving: u.moving && G.phase === 'fight', atk: u.atkAnim, cast: u._castT, face: tgt ? (tgt.x >= u.x ? 1 : -1) : (u.owner === 0 ? 1 : -1) }, dt, t, camera); }
+      else if (v.userData.model) { animModel(v, { dead: u.dead, moving: u.moving && G.phase === 'fight', atk: u.atkAnim, cast: u._castT }, dt); }
       else if (u.dead) { v.userData.body.rotation.z = Math.min(1.5, (v.userData.body.rotation.z || 0) + dt * 6); }
       else v.userData.body.rotation.z = 0;
       v.userData.ring.material.opacity = u.active ? 0.75 : 0.3;
       if (u.moving && G.phase === 'fight' && Math.random() < 0.08) dustAt(v.position);
-      if (!u.dead && !v.userData.model) animHuman(v, { moving: u.moving && G.phase === 'fight', atk: u.atkAnim, ph: u.id }, t, dt);
+      if (!u.dead && !v.userData.model && !v.userData.card) animHuman(v, { moving: u.moving && G.phase === 'fight', atk: u.atkAnim, ph: u.id }, t, dt);
       if (v.userData.aura) v.userData.aura.rotation.z = t * 1.5;
       if (v.userData.flag) v.userData.flag.rotation.y = Math.sin(t * 3 + u.id) * 0.35 - (u.moving ? 0.5 : 0);
       v.userData.dead = u.dead;
@@ -1309,7 +1319,7 @@ var V = (function () {
 
   function screenOf(lane, x, y, h) { return proj(W(lane, x, y, h || 0)); }
 
-  return { loadModels: loadModels, modelsReady: function () { return modelsReady; }, makeModel: makeModel, UNIT_MODEL: UNIT_MODEL, CREEP_MODEL: CREEP_MODEL, MASCOT_MODEL: MASCOT_MODEL, LW: LW, HL: HL, MX: MX, _VU: VU, init: init, resize: resize, frame: frame, onEvent: onEvent, setView: setView, cam: cam, pick: pick, setGhost: setGhost, setSelected: setSelected, initMascots: initMascots, mascots: mascots,
+  return { weapon3: weapon3, glowSprite: glowSprite, loadModels: loadModels, modelsReady: function () { return modelsReady; }, makeModel: makeModel, UNIT_MODEL: UNIT_MODEL, CREEP_MODEL: CREEP_MODEL, MASCOT_MODEL: MASCOT_MODEL, LW: LW, HL: HL, MX: MX, _VU: VU, init: init, resize: resize, frame: frame, onEvent: onEvent, setView: setView, cam: cam, pick: pick, setGhost: setGhost, setSelected: setSelected, initMascots: initMascots, mascots: mascots,
     screenOf: screenOf, fitDist: fitDist, W: W, LCX: LCX, renderIcon: null, cheer: function (p) { if (mascots[p]) mascots[p].cheer = 0.8; },
     makeHuman: makeHuman, makeBeast: makeBeast, makeMascot: makeMascot, getRenderer: function () { return renderer; }, getScene: function () { return scene; }, getCamera: function () { return camera; }, M: M, T: T };
 })();

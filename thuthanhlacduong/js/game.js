@@ -1,6 +1,7 @@
 // ===== ĐIỀU KHIỂN TRÒ CHƠI, GIAO DIỆN, BOT CHAT =====
 {
   const S = Sim, $ = (id) => document.getElementById(id);
+  let ME = 0, OP = 1, NET = null;
   let G = null, running = false, acc = 0, speed = 1, slow = 1, slowT = 0, view = { lane: 0 }, diff = 'normal', myMascot = 'honglien', opMascot = 'bachy';
   let selCard = null, selUnitId = null, hoverCell = null;
   const ICON = {};
@@ -22,9 +23,9 @@
     }
     const pose = (o) => { if (o.userData.mixer) o.userData.mixer.update(0.4); return o; };
     const um = (k) => { const m = V.UNIT_MODEL[k]; return (V.modelsReady() && V.makeModel(m[0], m[1], 1.55)) || V.makeHuman(R.LOOK[k], { weapon: S.UNITS[k].weapon }); };
-    S.UNIT_ORDER.forEach((k) => { ICON[k] = shot(pose(um(k)), 160, 1.55, 3.6, true); });
+    S.UNIT_ORDER.forEach((k) => { ICON[k] = CARDS.portrait(k, true) || shot(pose(um(k)), 160, 1.55, 3.6, true); });
     S.SEND_ORDER.forEach((k) => { const m = V.CREEP_MODEL[k]; const o = S.CREEPS[k].beast ? V.makeBeast(k) : ((V.modelsReady() && m && V.makeModel(m[0], m[1], 1.5)) || V.makeHuman(R.CLOOK[k], { weapon: R.CLOOK[k].weapon })); ICON['s_' + k] = shot(pose(o), 128, 1.3, 3.4); });
-    R.MASCOT_ORDER.forEach((k) => { const o = V.makeMascot(k); o.scale.setScalar(1); ICON['m_' + k] = shot(pose(o), 256, 1.9, 4.2); ICON['f_' + k] = shot(pose(V.makeMascot(k)), 128, 2.4, 4.2, true); });
+    R.MASCOT_ORDER.forEach((k) => { ICON['m_' + k] = CARDS.portrait('m_' + k, false); ICON['f_' + k] = CARDS.portrait('m_' + k, true); if (!ICON['m_' + k]) { const o = V.makeMascot(k); o.scale.setScalar(1); ICON['m_' + k] = shot(pose(o), 256, 1.9, 4.2); ICON['f_' + k] = shot(pose(V.makeMascot(k)), 128, 2.4, 4.2, true); } });
     rr.dispose();
   }
 
@@ -37,7 +38,7 @@
     if (!selCard) $('pUnit').hidden = true;
   });
   function refreshCards() {
-    const P = G ? G.players[0] : null;
+    const P = G ? G.players[ME] : null;
     cardsEl.querySelectorAll('.card').forEach((c) => { c.classList.toggle('sel', c.dataset.u === selCard); c.classList.toggle('poor', !!P && P.gold < S.UNITS[c.dataset.u].cost); });
   }
 
@@ -58,7 +59,7 @@
     p.hidden = false;
   }
   function showUnit(u) {
-    const d = S.UNITS[u.type], p = $('pUnit'), mine = u.owner === 0, P = G.players[0];
+    const d = S.UNITS[u.type], p = $('pUnit'), mine = u.owner === ME, P = G.players[ME];
     const canUp = mine && u.tier === 0 && (G.phase === 'build' || !u.active), refund = u.fresh ? u.spent : Math.floor(u.spent * 0.6);
     p.innerHTML = `<button class="x" data-x>×</button><h3>${u.tier ? d.up.name : d.name}</h3><div class="sub">${d.name} · ${d.role}${mine ? '' : ' · của đối thủ'}</div>${statBlock(d, u)}${skillDesc(d)}` +
       (mine ? `<div class="row">${u.tier === 0 ? `<button class="big bUp" data-up ${canUp && P.gold >= d.up.cost ? '' : 'disabled'}>Nâng cấp ${d.up.cost}</button>` : ''}<button class="big bSell" data-sell ${G.phase === 'build' || !u.active ? '' : 'disabled'}>Bán +${refund}</button></div>` : '');
@@ -67,8 +68,8 @@
   $('pUnit').addEventListener('click', (e) => {
     if (e.target.closest('[data-x]')) { hidePanels(); selCard = null; selUnitId = null; refreshCards(); return; }
     const id = +$('pUnit').dataset.id;
-    if (e.target.closest('[data-up]')) { if (S.apply(G, { t: 'upgrade', p: 0, id })) { const u = S.findUnit(G, id); flushEvents(); showUnit(u); } else Sfx.play('deny'); }
-    if (e.target.closest('[data-sell]')) { if (S.apply(G, { t: 'sell', p: 0, id })) { flushEvents(); hidePanels(); selUnitId = null; } else Sfx.play('deny'); }
+    if (e.target.closest('[data-up]')) { if (doCmd({ t: 'upgrade', id })) { const u = S.findUnit(G, id); flushEvents(); if (u) showUnit(u); } else Sfx.play('deny'); }
+    if (e.target.closest('[data-sell]')) { if (doCmd({ t: 'sell', id })) { flushEvents(); hidePanels(); selUnitId = null; } else Sfx.play('deny'); }
   });
   function hidePanels() { $('pUnit').hidden = true; $('pSend').hidden = true; $('quick').hidden = true; V.setSelected(null); }
 
@@ -80,16 +81,16 @@
     renderSend(); p.hidden = false;
   });
   function renderSend() {
-    const P = G.players[0];
+    const P = G.players[ME];
     $('pSend').innerHTML = `<button class="x" data-x>×</button><h3>Phái quân</h3><div class="sub">Gửi giặc sang đánh đối thủ ở đợt kế tiếp. Mỗi lần gửi tăng thu nhập vĩnh viễn.</div>` +
       S.SEND_ORDER.map((k) => { const s = S.SENDS[k], c = S.CREEPS[k]; return `<button class="sendrow" data-k="${k}" ${P.gold >= s.cost ? '' : 'disabled'}><img src="${ICON['s_' + k]}" alt=""><span><span class="nm">${c.name}</span><br><span class="ds">Lọt thành: −${c.leak} máu địch</span></span><span class="pr">${s.cost} vàng<small>+${s.inc} thu nhập</small></span></button>`; }).join('');
   }
   $('pSend').addEventListener('click', (e) => {
     if (e.target.closest('[data-x]')) { $('pSend').hidden = true; return; }
     const b = e.target.closest('[data-k]'); if (!b) return;
-    if (S.apply(G, { t: 'send', p: 0, k: b.dataset.k })) { flushEvents(); renderSend(); } else Sfx.play('deny');
+    if (doCmd({ t: 'send', k: b.dataset.k })) { flushEvents(); renderSend(); } else Sfx.play('deny');
   });
-  $('btnReady').addEventListener('click', () => { Sfx.init(); if (G && G.phase === 'build') { S.apply(G, { t: 'ready', p: 0 }); Sfx.play('click'); toast('Đã sẵn sàng — chờ đối thủ'); } });
+  $('btnReady').addEventListener('click', () => { Sfx.init(); if (G && G.phase === 'build') { doCmd({ t: 'ready' }); Sfx.play('click'); toast('Đã sẵn sàng — chờ đối thủ'); } });
 
   // công cụ
   $('tView').addEventListener('click', () => { view.lane = 1 - view.lane; V.setView(view.lane); $('tView').innerHTML = view.lane ? 'Xem<br>ta' : 'Xem<br>địch'; Sfx.play('click'); });
@@ -114,7 +115,7 @@
     if (ptrs.size === 2) { const [a, b] = [...ptrs.values()]; const d = Math.hypot(a.x - b.x, a.y - b.y); V.cam.zoom = Math.max(0.55, Math.min(1.6, zoom0 * pinch0 / d)); V.cam.tdist = V.fitDist() * V.cam.zoom; return; }
     if (drag !== 'pan' && Math.hypot(p.x - p.x0, p.y - p.y0) > 9) drag = 'pan';
     if (drag === 'pan') { const k = V.cam.dist / 520; V.cam.tx -= dx * k; V.cam.tz -= dy * k * 1.4; V.cam.x = V.cam.tx; V.cam.z = V.cam.tz; V.cam.tx = Math.max(-10, Math.min(V.LCX[1] + 10, V.cam.tx)); V.cam.tz = Math.max(-8, Math.min(14, V.cam.tz)); }
-    if (e.pointerType === 'mouse' && selCard) { const h = V.pick(e.clientX, e.clientY); hoverCell = h && h.lane === 0 ? h : null; }
+    if (e.pointerType === 'mouse' && selCard) { const h = V.pick(e.clientX, e.clientY); hoverCell = h && h.lane === ME ? h : null; }
   });
   const up = (e) => { const p = ptrs.get(e.pointerId); ptrs.delete(e.pointerId); if (!p) return; if (!drag && performance.now() - p.t < 600) tap(e.clientX, e.clientY); if (ptrs.size === 0) drag = null; };
   cv.addEventListener('pointerup', up); cv.addEventListener('pointercancel', (e) => { ptrs.delete(e.pointerId); drag = null; });
@@ -123,12 +124,12 @@
     if (!G || !running) return;
     const h = V.pick(x, y); if (!h) return;
     $('quick').hidden = true; $('pSend').hidden = true;
-    if (selCard && h.lane === 0) {
+    if (selCard && h.lane === ME) {
       if (h.cy < S.BUILD_Y0 || h.cy > S.BUILD_Y1 || h.cx < 0 || h.cx > 8) { toast('Chỉ đặt được trong khu xây (ô sáng)'); Sfx.play('deny'); return; }
-      const ex = G.units.find((u) => u.owner === 0 && u.cx === h.cx && u.cy === h.cy);
+      const ex = G.units.find((u) => u.owner === ME && u.cx === h.cx && u.cy === h.cy);
       if (ex) { selectUnit(ex); return; }
-      if (G.players[0].gold < S.UNITS[selCard].cost) { toast('Không đủ vàng'); Sfx.play('deny'); return; }
-      if (S.apply(G, { t: 'place', p: 0, u: selCard, cx: h.cx, cy: h.cy })) { flushEvents(); if (G.phase === 'fight') toast('Đệ tử mới sẽ vào trận từ đợt sau'); }
+      if (G.players[ME].gold < S.UNITS[selCard].cost) { toast('Không đủ vàng'); Sfx.play('deny'); return; }
+      if (doCmd({ t: 'place', u: selCard, cx: h.cx, cy: h.cy })) { flushEvents(); if (G.phase === 'fight') toast('Đệ tử mới sẽ vào trận từ đợt sau'); }
       return;
     }
     // chọn đệ tử gần điểm chạm
@@ -208,16 +209,16 @@
     const vis = (lane) => lane === view.lane;
     switch (e.e) {
       case 'kill':
-        if (e.lane === 0) {
+        if (e.lane === ME) {
           totalKills++;
           Sfx.play('kill', e.boss);
-          if (e.fb) { announce('Nhất Huyết!', 'Hạ địch đầu tiên của trận'); Sfx.play('jackpot', 4); V.cheer(0); }
+          if (e.fb) { announce('Nhất Huyết!', 'Hạ địch đầu tiên của trận'); Sfx.play('jackpot', 4); V.cheer(ME); }
           const now = G.time;
           streak = now - streakT < 1.4 ? streak + 1 : 1; streakT = now;
-          if (STREAK[streak]) { announce(STREAK[streak] + '!', streak >= 5 ? 'Chưởng môn hài lòng' : ''); Sfx.play('jackpot', Math.min(14, streak * 2)); V.cheer(0); if (streak === 5) Bot.ev('pCombo', 0.6); }
+          if (STREAK[streak]) { announce(STREAK[streak] + '!', streak >= 5 ? 'Chưởng môn hài lòng' : ''); Sfx.play('jackpot', Math.min(14, streak * 2)); V.cheer(ME); if (streak === 5) botEv('pCombo', 0.6); }
           if (e.boss) { slow = 0.35; slowT = 0.9; announce('Hạ ' + S.CREEPS[e.type].name + '!', '+' + e.g + ' vàng'); Sfx.play('gong', true); }
-        } else if (vis(1)) Sfx.play('kill', e.boss);
-        if (e.g && e.lane === 0) coinFly(e, Math.min(e.boss ? 18 : 6, 2 + e.g));
+        } else if (vis(OP)) Sfx.play('kill', e.boss);
+        if (e.g && e.lane === ME) coinFly(e, Math.min(e.boss ? 18 : 6, 2 + e.g));
         break;
       case 'hit': if (vis(e.lane)) { if (e.k === 'slash') { Sfx.play('slash'); Sfx.play('clang'); } else if (e.k === 'dart' || e.k === 'fandart') Sfx.play('thud'); else if (e.k === 'sword') Sfx.play('sword'); else if (e.k === 'poison') Sfx.play('poison'); else if (e.k === 'dragon') Sfx.play('boom'); else Sfx.play('magic'); } break;
       case 'shoot': if (vis(e.lane)) Sfx.play(e.k === 'dart' ? 'dart' : e.k === 'sword' ? 'sword' : 'magic'); break;
@@ -226,41 +227,48 @@
       case 'skill': if (vis(e.lane)) Sfx.play({ whirl: 'whirl', shock: 'boom', fan: 'dart', cloud: 'poison', massheal: 'heal', swordrain: 'swordrain', thunder: 'magic', dragon: 'dragon' }[e.k]); break;
       case 'strike': if (vis(e.lane) && e.fx === 'thunder') Sfx.play('thunder'); else if (vis(e.lane)) Sfx.play('sword'); break;
       case 'gateHit':
-        if (e.lane === 0) { Sfx.play('gateHit'); $('vig').style.opacity = 1; setTimeout(() => { $('vig').style.opacity = 0; }, 350); Bot.ev('pLeak', 0.3); }
-        else { if (vis(1)) Sfx.play('gateHit'); Bot.ev('bLeak', 0.4); }
+        if (e.lane === ME) { Sfx.play('gateHit'); $('vig').style.opacity = 1; setTimeout(() => { $('vig').style.opacity = 0; }, 350); botEv('pLeak', 0.3); }
+        else { if (vis(OP)) Sfx.play('gateHit'); botEv('bLeak', 0.4); }
         break;
-      case 'leak': if (e.lane === 0) toast('Giặc lọt qua phòng tuyến!', true); break;
+      case 'leak': if (e.lane === ME) toast('Giặc lọt qua phòng tuyến!', true); break;
       case 'waveStart': {
         Sfx.setFight(true); Sfx.play('gong', e.boss); streak = 0;
         const pat = S.WAVE_PATTERNS[e.w - 1], boss = pat.find((x) => S.CREEPS[x[0]].boss);
-        if (boss) { announce(S.CREEPS[boss[0]].name, 'Đợt ' + e.w + ' — trùm xuất hiện!', true); Bot.ev('boss', 0.6, { b: S.CREEPS[boss[0]].name }); }
+        if (boss) { announce(S.CREEPS[boss[0]].name, 'Đợt ' + e.w + ' — trùm xuất hiện!', true); botEv('boss', 0.6, { b: S.CREEPS[boss[0]].name }); }
         else announce('Đợt ' + e.w, pat.map((x) => x[1] + ' ' + S.CREEPS[x[0]].name).join(' · '));
         hidePanels(); selUnitId = null;
         break;
       }
       case 'laneClear':
-        if (e.lane === 0 && e.perfect) { announce('Hoàn Hảo!', 'Không để lọt tên giặc nào'); Sfx.play('perfect'); V.cheer(0); Bot.ev('pPerfect', 0.3); }
-        if (e.lane === 1 && e.perfect) Bot.ev('bPerfect', 0.25);
+        if (e.lane === ME && e.perfect) { announce('Hoàn Hảo!', 'Không để lọt tên giặc nào'); Sfx.play('perfect'); V.cheer(ME); botEv('pPerfect', 0.3); }
+        if (e.lane === OP && e.perfect) botEv('bPerfect', 0.25);
         break;
-      case 'income': if (e.p === 0) { toast('+' + e.g + ' vàng thu nhập'); Sfx.play('coin'); } break;
+      case 'income': if (e.p === ME) { toast('+' + e.g + ' vàng thu nhập'); Sfx.play('coin'); } break;
       case 'waveEnd': {
         Sfx.setFight(false);
-        const d = G.players[1].hp - G.players[0].hp;
-        if (d >= 8) Bot.ev('bAhead', 0.4); else if (d <= -8) Bot.ev('bBehind', 0.45);
+        const d = G.players[OP].hp - G.players[ME].hp;
+        if (d >= 8) botEv('bAhead', 0.4); else if (d <= -8) botEv('bBehind', 0.45);
         break;
       }
       case 'send':
-        if (e.p === 1) { toast('Đối thủ phái ' + S.CREEPS[e.k].name + ' sang thành bạn!', true); Bot.ev('bSend', 0.5); }
-        else { toast('Đã phái ' + S.CREEPS[e.k].name + ' — tới đợt sau'); Sfx.play('send'); Bot.ev('pSend', 0.7); }
+        if (e.p === 1) { toast('Đối thủ phái ' + S.CREEPS[e.k].name + ' sang thành bạn!', true); botEv('bSend', 0.5); }
+        else { toast('Đã phái ' + S.CREEPS[e.k].name + ' — tới đợt sau'); Sfx.play('send'); botEv('pSend', 0.7); }
         break;
-      case 'place': if (e.p === 0) Sfx.play('place'); break;
-      case 'upgrade': if (e.p === 0) Sfx.play('upgrade'); break;
-      case 'sell': if (e.p === 0) Sfx.play('sell'); break;
+      case 'place': if (e.p === ME) Sfx.play('place'); break;
+      case 'upgrade': if (e.p === ME) Sfx.play('upgrade'); break;
+      case 'sell': if (e.p === ME) Sfx.play('sell'); break;
       case 'unitDie': if (vis(e.p)) Sfx.play('thud'); break;
       case 'over': setTimeout(endGame, 1200); break;
     }
   }
-  function flushEvents() { for (const e of G.ev) handle(e); G.ev.length = 0; refreshCards(); updateHUD(true); }
+  function botEv(c, p, v) { if (!NET) Bot.ev(c, p, v); }
+  function botForce(c, v) { if (!NET) Bot.force(c, v); }
+  function doCmd(c) {
+    c.p = ME;
+    if (NET && NET.role === 'guest') { NET.send({ t: 'cmd', c: c }); Sfx.play('click'); return true; }
+    const ok = S.apply(G, c); if (!ok) Sfx.play('deny'); return ok;
+  }
+  function flushEvents() { if (NET && NET.role === 'host' && G.ev.length) NET.evq.push(...G.ev.map(stripEv)); for (const e of G.ev) handle(e); G.ev.length = 0; refreshCards(); updateHUD(true); }
 
   // ---------- Tiền bay về túi kiểu máy xèng ----------
   let goldShown = 0, coinT = 0;
@@ -281,7 +289,7 @@
   let hudT = 0;
   function updateHUD(force) {
     if (!G) return; hudT -= 1; if (!force && hudT > 0) return; hudT = 2;
-    const P = G.players[0], O = G.players[1], maxA = G.maxHp[0], maxB = G.maxHp[1];
+    const P = G.players[ME], O = G.players[OP], maxA = G.maxHp[ME], maxB = G.maxHp[OP];
     $('wave').textContent = 'Đợt ' + G.wave + '/' + S.MAX_WAVE;
     $('phase').innerHTML = G.phase === 'build' ? 'Xây dựng <b>' + Math.max(0, Math.ceil(G.phaseT)) + 's</b>' : G.phase === 'fight' ? 'Giao chiến' : 'Kết thúc';
     goldShown += (P.gold - goldShown) * 0.25; if (Math.abs(P.gold - goldShown) < 0.6) goldShown = P.gold; $('gold').textContent = Math.round(goldShown); $('inc').textContent = '+' + P.income + '/đợt';
@@ -315,7 +323,7 @@
       }
     } else if (G && G.over) { acc = 0; }
     if (G) {
-      V.setGhost(selCard && hoverCell && view.lane === 0 ? selCard : null, hoverCell, hoverCell && G.players[0].gold >= (selCard ? S.UNITS[selCard].cost : 0) && hoverCell.cy >= S.BUILD_Y0 && hoverCell.cy <= S.BUILD_Y1 && !G.units.some((u) => u.owner === 0 && u.cx === hoverCell.cx && u.cy === hoverCell.cy));
+      V.setGhost(selCard && hoverCell && view.lane === ME ? selCard : null, hoverCell, hoverCell && G.players[ME].gold >= (selCard ? S.UNITS[selCard].cost : 0) && hoverCell.cy >= S.BUILD_Y0 && hoverCell.cy <= S.BUILD_Y1 && !G.units.some((u) => u.owner === ME && u.cx === hoverCell.cx && u.cy === hoverCell.cy));
       V.frame(G, Math.min(1, acc / S.DT), dt, view);
       updateHUD();
     }
@@ -337,13 +345,13 @@
     toast('Chạm thẻ môn phái, rồi chạm ô trên sân để đặt đệ tử');
   }
   function endGame() {
-    running = false; const w = G.winner, P = G.players[0];
+    running = false; const w = G.winner === -1 ? -1 : (G.winner === ME ? 0 : 1), P = G.players[ME];
     $('endT').textContent = w === 0 ? 'Chiến Thắng' : w === 1 ? 'Thất Thủ' : 'Hoà';
     $('endT').style.color = w === 0 ? '#ffdf8a' : w === 1 ? '#ff7a6a' : '#fff';
     $('endS').textContent = w === 0 ? 'Thành Lạc Dương vững như bàn thạch' : w === 1 ? 'Thành đã bị phá — luyện thêm rồi phục thù' : 'Hai bên ngang tài ngang sức';
     $('endStats').innerHTML = `<div>Đợt<b>${G.wave}</b></div><div>Hạ giặc<b>${P.kills}</b></div><div>Máu thành<b>${P.hp}</b></div>`;
     $('end').hidden = false; Sfx.play(w === 0 ? 'win' : 'lose'); Sfx.setFight(false);
-    Bot.force(w === 1 ? 'win' : 'lose');
+    botForce(w === 1 ? 'win' : 'lose');
   }
   $('btnAgain').addEventListener('click', () => { $('end').hidden = true; newGame(); });
   $('btnMenu').addEventListener('click', () => { $('end').hidden = true; showStart(); });
@@ -362,6 +370,6 @@
   document.addEventListener('visibilitychange', () => { last = performance.now(); });
 
   $('mrow').innerHTML = '<div class="tag">Đang tải nhân vật…</div>';
-  V.loadModels(() => { makeIcons(); buildCards(); showStart(); requestAnimationFrame(loop); });
+  V.loadModels(() => CARDS.bake(() => { makeIcons(); buildCards(); showStart(); requestAnimationFrame(loop); }));
   window.__game = { get G() { return G; }, newGame, tap, setSpeed: (s) => { speed = s; } };
 }

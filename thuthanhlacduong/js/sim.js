@@ -94,6 +94,15 @@ var Sim = (function () {
   function hpScale(w) { var k = w - 1; return 1 + 0.19 * k + 0.0155 * k * k; }
   function dmgScale(w) { var k = w - 1; return 1 + 0.16 * k + 0.012 * k * k; }
 
+  // Toán tất định (giống hệt nhau trên mọi trình duyệt) cho đấu online lockstep
+  var PI = 3.141592653589793, TAU = 6.283185307179586;
+  function dsin(x) { x = x % TAU; if (x > PI) x -= TAU; else if (x < -PI) x += TAU; var x2 = x * x; return x * (1 - x2 / 6 * (1 - x2 / 20 * (1 - x2 / 42 * (1 - x2 / 72 * (1 - x2 / 110))))); }
+  function dcos(x) { return dsin(x + PI / 2); }
+  function datan(z) { var a = z < 0 ? -z : z, inv = a > 1; if (inv) a = 1 / a; var r = 0, t = a, z2 = a * a; // chuỗi với giảm góc
+    var red = a > 0.2679491924311227; if (red) a = (a * 1.7320508075688772 - 1) / (a + 1.7320508075688772); z2 = a * a;
+    r = a * (1 - z2 * (0.3333333333 - z2 * (0.2 - z2 * (0.1428571429 - z2 * (0.1111111111 - z2 * 0.0909090909)))));
+    if (red) r += PI / 6; if (inv) r = PI / 2 - r; return z < 0 ? -r : r; }
+  function datan2(y, x) { if (x > 0) return datan(y / x); if (x < 0) return y >= 0 ? datan(y / x) + PI : datan(y / x) - PI; return y > 0 ? PI / 2 : y < 0 ? -PI / 2 : 0; }
   function mulberry32(a) {
     return function () {
       a |= 0; a = a + 0x6D2B79F5 | 0;
@@ -113,7 +122,8 @@ var Sim = (function () {
       nextId: 1, ev: [], spawnQ: [[], []], laneDone: [false, false],
       winner: -1, over: false, waveLeaks: [0, 0], firstBlood: false
     };
-    G.rng = mulberry32(G.seed);
+    G.rs = G.seed | 0;
+    G.rng = function () { G.rs = G.rs + 0x6D2B79F5 | 0; var t = Math.imul(G.rs ^ G.rs >>> 15, 1 | G.rs); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; };
     G.mascots = opts.mascots || ['bachy', 'thanhlong'];
     for (var i = 0; i < 2; i++) {
       var m = G.mascots[i], P = G.players[i];
@@ -289,10 +299,10 @@ var Sim = (function () {
         G.ev.push({ e: 'skill', k: 'shock', lane: lane, x: u.x, y: u.y, r: s.r, id: u.id });
         break;
       case 'fan':
-        var ang = Math.atan2(tgt.y - u.y, tgt.x - u.x);
+        var ang = datan2(tgt.y - u.y, tgt.x - u.x);
         for (var i = 0; i < s.n; i++) {
           var a = ang + (i - (s.n - 1) / 2) * 0.13;
-          G.projs.push({ k: 'fandart', lane: lane, side: 0, x: u.x, y: u.y, vx: Math.cos(a) * 11, vy: Math.sin(a) * 11, life: (stat(u, 'range') + 1.5) / 11, dmg: dmg * s.mult, dt: 'phys', owner: u.owner, hit: [] });
+          G.projs.push({ k: 'fandart', lane: lane, side: 0, x: u.x, y: u.y, vx: dcos(a) * 11, vy: dsin(a) * 11, life: (stat(u, 'range') + 1.5) / 11, dmg: dmg * s.mult, dt: 'phys', owner: u.owner, hit: [] });
         }
         G.ev.push({ e: 'skill', k: 'fan', lane: lane, x: u.x, y: u.y, id: u.id });
         break;
@@ -313,7 +323,7 @@ var Sim = (function () {
       case 'swordrain':
         for (var m = 0; m < s.n; m++) {
           var rr = Math.sqrt(G.rng()) * s.r, aa = G.rng() * 6.283;
-          G.strikes.push({ lane: lane, x: tgt.x + Math.cos(aa) * rr, y: tgt.y + Math.sin(aa) * rr, t: 0.25 + m * 0.07, r: 0.75, dmg: dmg * s.mult, dt: 'magic', owner: u.owner, fx: 'sword' });
+          G.strikes.push({ lane: lane, x: tgt.x + dcos(aa) * rr, y: tgt.y + dsin(aa) * rr, t: 0.25 + m * 0.07, r: 0.75, dmg: dmg * s.mult, dt: 'magic', owner: u.owner, fx: 'sword' });
         }
         G.ev.push({ e: 'skill', k: 'swordrain', lane: lane, x: tgt.x, y: tgt.y, r: s.r, id: u.id, n: s.n });
         break;
@@ -322,8 +332,8 @@ var Sim = (function () {
         G.ev.push({ e: 'skill', k: 'thunder', lane: lane, x: tgt.x, y: tgt.y, r: s.r, id: u.id });
         break;
       case 'dragon':
-        var ang2 = Math.atan2(tgt.y - u.y, tgt.x - u.x);
-        G.projs.push({ k: 'dragon', lane: lane, side: 0, x: u.x, y: u.y, sx: u.x, sy: u.y, vx: Math.cos(ang2) * 7, vy: Math.sin(ang2) * 7, life: s.len / 7, dmg: dmg * s.mult, dt: 'phys', w: s.w, owner: u.owner, hit: [] });
+        var ang2 = datan2(tgt.y - u.y, tgt.x - u.x);
+        G.projs.push({ k: 'dragon', lane: lane, side: 0, x: u.x, y: u.y, sx: u.x, sy: u.y, vx: dcos(ang2) * 7, vy: dsin(ang2) * 7, life: s.len / 7, dmg: dmg * s.mult, dt: 'phys', w: s.w, owner: u.owner, hit: [] });
         G.ev.push({ e: 'skill', k: 'dragon', lane: lane, x: u.x, y: u.y, id: u.id, a: ang2 });
         break;
     }
@@ -368,7 +378,7 @@ var Sim = (function () {
             var a = G.units[j];
             if (a.owner !== u.owner || a.dead || !a.active || a === u && false) continue;
             var ratio = a.hp / stat(a, 'hp');
-            if (ratio < br && dist2(a, u) <= Math.pow(stat(u, 'range') + 0.5, 2)) { br = ratio; best = a; }
+            if (ratio < br && dist2(a, u) <= (stat(u, 'range') + 0.5) * (stat(u, 'range') + 0.5)) { br = ratio; best = a; }
           }
           if (best) {
             u.cd = d.cd; u.atkAnim = 0.25;
@@ -456,7 +466,7 @@ var Sim = (function () {
         }
       } else {
         c.tgt = 0;
-        var tx = Math.max(1, Math.min(LANE_W - 1, c.x + Math.sin(c.wob + G.time * 0.7) * 0.4));
+        var tx = Math.max(1, Math.min(LANE_W - 1, c.x + dsin(c.wob + G.time * 0.7) * 0.4));
         c.x += (tx - c.x) * 0.02;
         c.y += spd * DT; c.moving = true; c.face = 1;
         if (c.y >= LEAK_Y) { c.leaked = true; G.ev.push({ e: 'leak', lane: c.lane, x: c.x, y: c.y }); }
@@ -518,7 +528,7 @@ var Sim = (function () {
         if (p.splash) { aoeCreeps(G, p.lane, p.tx, p.ty, p.splash, p.dmg, p.dt, p.owner, 0, p.k); }
         else if (tgt) { damageCreep(G, tgt, p.dmg, p.dt, p.owner, p.k); if (p.dot && tgt.hp > 0) { tgt.poison = Math.max(tgt.poison, p.dot); tgt.poisonT = 3; } }
         G.ev.push({ e: 'hit', lane: p.lane, x: p.tx, y: p.ty, k: p.k });
-      } else { p.x += dx / dist * st; p.y += dy / dist * st; p.ang = Math.atan2(dy, dx); }
+      } else { p.x += dx / dist * st; p.y += dy / dist * st; p.ang = datan2(dy, dx); }
     }
     for (var z = G.zones.length - 1; z >= 0; z--) {
       var Z = G.zones[z]; Z.t -= DT;
@@ -621,9 +631,16 @@ var Sim = (function () {
     apply(G, { t: 'ready', p: p });
   }
 
+  function checksum(G) {
+    var h = G.tick * 31 + G.rs;
+    G.units.forEach(function (u) { h = (h * 31 + Math.round(u.x * 100) * 7 + Math.round(u.y * 100) * 13 + Math.round(u.hp)) | 0; });
+    G.creeps.forEach(function (c) { h = (h * 31 + Math.round(c.x * 100) * 7 + Math.round(c.y * 100) * 13 + Math.round(c.hp)) | 0; });
+    G.players.forEach(function (P) { h = (h * 31 + P.gold * 3 + P.hp * 5 + P.income) | 0; });
+    return h;
+  }
   var api = { DT: DT, LANE_W: LANE_W, BUILD_Y0: BUILD_Y0, BUILD_Y1: BUILD_Y1, LEAK_Y: LEAK_Y, GATE_Y: GATE_Y, MAX_WAVE: MAX_WAVE,
     UNITS: UNITS, UNIT_ORDER: UNIT_ORDER, CREEPS: CREEPS, SENDS: SENDS, SEND_ORDER: SEND_ORDER, WAVE_PATTERNS: WAVE_PATTERNS,
-    create: create, apply: apply, step: step, aiThink: aiThink, stat: stat, findUnit: findUnit, findCreep: findCreep, hpScale: hpScale };
+    checksum: checksum, dsin: dsin, datan2: datan2, create: create, apply: apply, step: step, aiThink: aiThink, stat: stat, findUnit: findUnit, findCreep: findCreep, hpScale: hpScale };
   if (typeof module !== 'undefined') module.exports = api;
   return api;
 })();
