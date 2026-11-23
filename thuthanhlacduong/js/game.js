@@ -515,5 +515,5 @@
 
   $('mrow').innerHTML = '<div class="tag">Đang tải nhân vật…</div>';
   V.loadModels(() => A3.load(() => { V.spawnNPCs(); makeIcons(); showStart(); const rs = loadMatch(); if (rs) { if (rs.name) PNAME = rs.name; $('start').hidden = true; document.body.classList.remove('menu'); V.cam.zoom = 1; newGame(rs); announce('Tiếp tục trận', 'Trận rank đang dở — muốn thoát phải đầu hàng'); } requestAnimationFrame(loop); }));
-  window.__game = { get G() { return G; }, newGame, tap, setSpeed: (s) => { speed = s; } };
+  window.__game = { dbgSave: () => { const o = {}; for (const k in G) if (k !== 'rng' && k !== 'ev') o[k] = G[k]; return [running, !!NET, G.over, matchBn, JSON.stringify(o).length]; }, get G() { return G; }, newGame, tap, setSpeed: (s) => { speed = s; } };
 }
