@@ -204,7 +204,7 @@
       setTimeout(() => { typing.remove(); chatMsg(name, line); Sfx.play('msg'); busy = false; }, 700 + line.length * 45 + Math.random() * 600);
     }
     return {
-      start() { name = pick(NAMES); per = pick(['k', 'v', 'c']); mood = 0; busy = false; lastT = -99; setTimeout(() => say('greet', true), 2200); return name; },
+      start(nm) { name = nm || pick(NAMES); per = pick(['k', 'v', 'c']); mood = 0; busy = false; lastT = -99; setTimeout(() => say('greet', true), 2200); return name; },
       get name() { return name; },
       ev(cat, p, vars) { if (Math.random() < p) say(cat, false, vars); },
       force(cat, vars) { say(cat, true, vars); },
@@ -340,20 +340,22 @@
     if (G) {
       V.setGhost(selCard && hoverCell && view.lane === ME ? selCard : null, hoverCell, hoverCell && G.players[ME].gold >= (selCard ? S.UNITS[selCard].cost : 0) && hoverCell.cy >= S.BUILD_Y0 && hoverCell.cy <= S.BUILD_Y1 && !G.units.some((u) => u.owner === ME && u.cx === hoverCell.cx && u.cy === hoverCell.cy));
       V.frame(G, Math.min(1, acc / S.DT), dt, view);
+      if (now - lastSave > 3000) { lastSave = now; saveMatch(); }
       updateHUD();
     }
     requestAnimationFrame(loop);
   }
 
   // ---------- bắt đầu / kết thúc ----------
-  function newGame() {
+  function newGame(rs) {
     if (NET) { try { NET.close(); } catch (e) {} } NET = null; ME = 0; OP = 1; $('btnSend').hidden = false;
     const others = R.MASCOT_ORDER.filter((k) => k !== myMascot); opMascot = others[Math.floor(Math.random() * others.length)];
-    G = S.create({ seed: (Math.random() * 1e9) | 0, mascots: [myMascot, opMascot], sects: [mySect, rndSect(mySect)] }); buildCards();
+    if (rs) { G = S.revive(rs.G); myMascot = G.mascots[0]; opMascot = G.mascots[1]; mySect = G.sects[0]; diff = rs.diff || diff; RANK.botPts = rs.botPts || 0; }
+    else G = S.create({ seed: (Math.random() * 1e9) | 0, mascots: [myMascot, opMascot], sects: [mySect, rndSect(mySect)] }); buildCards();
     G.maxHp = [G.players[0].hp, G.players[1].hp];
     V.initMascots(G.mascots); view.lane = 0; V.cam.orbit = false; V.setView(0, true); $('tView').innerHTML = 'Xem<br>địch';
     $('avaMe').style.backgroundImage = `url(${ICON['f_' + myMascot]})`; $('avaOp').style.backgroundImage = `url(${ICON['f_' + opMascot]})`;
-    const bn = Bot.start(); V.setCastleNames(['Thành ' + PNAME, 'Thành ' + bn]); { const a = RANK.info(RANK.pts), b2 = RANK.info(RANK.botPts); V.setTitles([[a.hero, a.col, a.t], [b2.hero, b2.col, b2.t]]); }
+    const bn = Bot.start(rs && rs.bn); matchBn = bn; V.setCastleNames(['Thành ' + PNAME, 'Thành ' + bn]); { const a = RANK.info(RANK.pts), b2 = RANK.info(RANK.botPts); V.setTitles([[a.hero, a.col, a.t], [b2.hero, b2.col, b2.t]]); }
     $('nmMe').innerHTML = PNAME.replace(/&/g,'&amp;') + ' <small>' + R.MASCOTS[myMascot].name + '</small>';
     $('nmOp').innerHTML = bn + ' <small>' + S.SECTS[G.sects[1]].name + ' · ' + RANK.title(RANK.botPts) + '</small>';
     $('nmMe').innerHTML = PNAME.replace(/&/g,'&amp;') + ' <small>' + S.SECTS[mySect].name + '</small>';
@@ -361,7 +363,18 @@
     running = true; acc = 0; flushEvents();
     toast('Chạm thẻ tướng ' + S.SECTS[mySect].name + ', rồi chạm ô trên sân để đặt');
   }
+  let matchBn = '', lastSave = 0;
+  function saveMatch() { if (!G || !running || NET || G.over || !matchBn) return; try { const o = {}; for (const k in G) if (k !== 'rng' && k !== 'ev') o[k] = G[k]; localStorage.setItem('ttld_match', JSON.stringify({ G: o, bn: matchBn, diff, botPts: RANK.botPts, name: PNAME, t: Date.now() })); } catch (e) {} }
+  function clearMatch() { try { localStorage.removeItem('ttld_match'); } catch (e) {} }
+  function loadMatch() { try { const j = JSON.parse(localStorage.getItem('ttld_match') || 'null'); if (j && j.G && Date.now() - j.t < 6 * 3600e3) return j; } catch (e) {} clearMatch(); return null; }
+  window.addEventListener('pagehide', saveMatch); document.addEventListener('visibilitychange', () => { if (document.hidden) saveMatch(); });
+  $('tGiveUp').addEventListener('click', () => {
+    if (!G || !running || G.over) return; Sfx.init();
+    if (!confirm('Đầu hàng sẽ tính THUA và bị trừ điểm rank. Bạn chắc chắn?')) return;
+    G.players[ME].hp = 0; G.over = true; G.winner = OP; G.phase = 'over'; clearMatch(); if (NET) { try { NET.send({ t: 'chat', s: '(đã đầu hàng)' }); NET.close(); } catch (e) {} } endGame();
+  });
   function endGame() {
+    clearMatch();
     running = false; const w = G.winner === -1 ? -1 : (G.winner === ME ? 0 : 1), P = G.players[ME];
     const coop = NET && NET.mode === 'coop', okc = coop && G.players[0].hp > 0 && G.players[1].hp > 0; $('endT').textContent = coop ? (okc ? 'Thủ Thành Thành Công' : 'Thất Thủ') : w === 0 ? 'Chiến Thắng' : w === 1 ? 'Thất Thủ' : 'Hoà';
     $('endT').style.color = (coop ? okc : w === 0) ? '#ffdf8a' : '#ff7a6a';
@@ -501,6 +514,6 @@
   document.addEventListener('visibilitychange', () => { last = performance.now(); });
 
   $('mrow').innerHTML = '<div class="tag">Đang tải nhân vật…</div>';
-  V.loadModels(() => A3.load(() => { V.spawnNPCs(); makeIcons(); showStart(); requestAnimationFrame(loop); }));
+  V.loadModels(() => A3.load(() => { V.spawnNPCs(); makeIcons(); showStart(); const rs = loadMatch(); if (rs) { if (rs.name) PNAME = rs.name; $('start').hidden = true; document.body.classList.remove('menu'); V.cam.zoom = 1; newGame(rs); announce('Tiếp tục trận', 'Trận rank đang dở — muốn thoát phải đầu hàng'); } requestAnimationFrame(loop); }));
   window.__game = { get G() { return G; }, newGame, tap, setSpeed: (s) => { speed = s; } };
 }

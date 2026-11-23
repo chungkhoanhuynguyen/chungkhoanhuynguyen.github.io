@@ -838,6 +838,8 @@ var Sim = (function () {
     apply(G, { t: 'ready', p: p });
   }
 
+  // khôi phục trận đã lưu (JSON) — gắn lại hàm ngẫu nhiên có seed
+  function revive(G) { G.rng = function () { G.rs = G.rs + 0x6D2B79F5 | 0; var t = Math.imul(G.rs ^ G.rs >>> 15, 1 | G.rs); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; G.ev = []; return G; }
   function checksum(G) {
     var h = G.tick * 31 + G.rs;
     G.units.forEach(function (u) { h = (h * 31 + Math.round(u.x * 100) * 7 + Math.round(u.y * 100) * 13 + Math.round(u.hp)) | 0; });
@@ -847,7 +849,7 @@ var Sim = (function () {
   }
   var api = { SAVE: SAVE, PATH: PATH, DT: DT, LANE_W: LANE_W, BUILD_Y0: BUILD_Y0, BUILD_Y1: BUILD_Y1, LEAK_Y: LEAK_Y, GATE_Y: GATE_Y, MAX_WAVE: MAX_WAVE,
     UNITS: UNITS, UNIT_ORDER: UNIT_ORDER, SECTS: SECTS, SECT_ORDER: SECT_ORDER, popCap: popCap, popOf: popOf, CREEPS: CREEPS, SENDS: SENDS, SEND_ORDER: SEND_ORDER, WAVE_PATTERNS: WAVE_PATTERNS,
-    upCost: upCost, MAX_TIER: MAX_TIER, checksum: checksum, dsin: dsin, datan2: datan2, create: create, apply: apply, step: step, aiThink: aiThink, stat: stat, findUnit: findUnit, findCreep: findCreep, hpScale: hpScale };
+    revive: revive, upCost: upCost, MAX_TIER: MAX_TIER, checksum: checksum, dsin: dsin, datan2: datan2, create: create, apply: apply, step: step, aiThink: aiThink, stat: stat, findUnit: findUnit, findCreep: findCreep, hpScale: hpScale };
   if (typeof module !== 'undefined') module.exports = api;
   return api;
 })();
