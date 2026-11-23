@@ -1,0 +1,484 @@
+[
+ {
+  "key": "SN2311VANGTANG",
+  "tieu_de": "Vàng sáng 23/11 tăng 0,5–1,5 triệu, chiều quay đầu giảm: mua đúng lúc nào?",
+  "hook": [
+   "VÀNG TĂNG SÁNG,",
+   "CHIỀU ĐỔI CHIỀU?"
+  ],
+  "nhan": "TIN NÓNG · 23/11",
+  "short_caption": "Sáng 23/11 vàng trong nước đồng loạt tăng 0,5–1,5 triệu đồng mỗi lượng, vàng miếng SJC có lúc về lại 135 triệu, nhưng chiều cùng ngày giá quay đầu giảm. Nguồn: Báo Nghệ An, Báo Lào Cai, Techz 23/11/2026.",
+  "tags": [],
+  "toc": 1.12,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "CÒN NÓNG HAY NGUỘI?",
+   "loi": "Sáng tăng chiều giảm, anh chị A: thấy vàng còn nóng, hay B: thấy vàng đang nguội?",
+   "loi_doc": "Sáng tăng chiều giảm, anh chị A: thấy vàng còn nóng, hay B: thấy vàng đang nguội?",
+   "anh": [
+    "gold jewelry shop Vietnam||gold rings"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "SÁNG 23/11 VÀNG TĂNG",
+    "loi": "Sáng 23/11, giá vàng trong nước đồng loạt tăng từ 0,5 đến 1,5 triệu đồng mỗi lượng. Anh chị có kịp nhìn bảng giá không?",
+    "loi_doc": "Sáng hai mươi ba tháng mười một, giá vàng trong nước đồng loạt tăng từ không phẩy năm đến một phẩy năm triệu đồng mỗi lượng. Anh chị có kịp nhìn bảng giá không?",
+    "anh": [
+     "gold shop price board||gold price board"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "VÀNG TRONG NƯỚC SÁNG 23/11",
+     "nguon": "Báo Nghệ An 23/11/2026",
+     "dong": [
+      [
+       "TĂNG 0,5–1,5 TRIỆU",
+       90,
+       "vang"
+      ],
+      [
+       "MỖI LƯỢNG, ĐỒNG LOẠT",
+       48,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "MUA TĂNG TỚI 1,7 TRIỆU",
+    "loi": "Lúc chín giờ mười một phút, BTMC SJC báo giá mua vào tăng tới 1,7 triệu đồng một lượng.",
+    "loi_doc": "Lúc chín giờ mười một phút, B T M C S J C báo giá mua vào tăng tới một phẩy bảy triệu đồng một lượng.",
+    "anh": [
+     "gold bars stack||gold bullion bars"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "BTMC SJC LÚC 9H11 23/11",
+     "nguon": "Báo Nghệ An 23/11/2026",
+     "dong": [
+      [
+       "MUA VÀO TĂNG 1,7 TRIỆU",
+       84,
+       "vang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "SJC VỀ LẠI 135 TRIỆU",
+    "loi": "Vàng miếng SJC có lúc trở lại mốc 135 triệu đồng một lượng.",
+    "loi_doc": "Vàng miếng S J C có lúc trở lại mốc một trăm ba mươi lăm triệu đồng một lượng.",
+    "anh": [
+     "gold bar close up||gold ingot"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "VÀNG MIẾNG SJC 23/11",
+     "nguon": "Báo Lào Cai 23/11/2026",
+     "dong": [
+      [
+       "135 TRIỆU/LƯỢNG",
+       110,
+       "vang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "CHIỀU QUAY ĐẦU GIẢM",
+    "loi": "Nhưng chiều 23/11, vàng miếng và vàng nhẫn quay đầu giảm sau phiên tăng gấp buổi sáng.",
+    "loi_doc": "Nhưng chiều hai mươi ba tháng mười một, vàng miếng và vàng nhẫn quay đầu giảm sau phiên tăng gấp buổi sáng.",
+    "anh": [
+     "stock chart falling||falling chart"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "CHIỀU 23/11",
+     "nguon": "Techz 23/11/2026",
+     "dong": [
+      [
+       "QUAY ĐẦU GIẢM",
+       100,
+       "do"
+      ],
+      [
+       "SAU PHIÊN TĂNG GẤP",
+       48,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "MỘT NGÀY HAI CHIỀU",
+    "loi": "Một ngày giá lên rồi xuống: người mua đúng lúc cao nhất trong ngày sẽ thấy chênh lệch ngay trên hoá đơn.",
+    "loi_doc": "Một ngày giá lên rồi xuống: người mua đúng lúc cao nhất trong ngày sẽ thấy chênh lệch ngay trên hoá đơn.",
+    "anh": [
+     "person looking at phone gold price||gold shop customer"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "SN2311CHENH6TR",
+  "tieu_de": "Ngày 23/11 chênh lệch mua bán vàng nhẫn SJC lên tới 6 triệu đồng mỗi lượng",
+  "hook": [
+   "NHẪN SJC CHÊNH",
+   "MUA BÁN 6 TRIỆU"
+  ],
+  "nhan": "TIN NÓNG · 23/11",
+  "short_caption": "Ngày 23/11 chênh lệch giá mua bán vàng nhẫn SJC lên tới 6 triệu đồng mỗi lượng. Em tự tính mua xong bán lại ngay là mất tới 6 triệu. Nguồn: Báo Nhân Dân 23/11/2026.",
+  "tags": [],
+  "toc": 1.12,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "CHÊNH 6 TRIỆU VẪN MUA?",
+   "loi": "Chênh 6 triệu mà vẫn mua, anh chị A: mua giữ lâu dài, hay B: ngại lỗ nên chờ?",
+   "loi_doc": "Chênh sáu triệu mà vẫn mua, anh chị A: mua giữ lâu dài, hay B: ngại lỗ nên chờ?",
+   "anh": [
+    "gold shop counter||jewellery store"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "CHÊNH TỚI 6 TRIỆU",
+    "loi": "Ngày 23/11, chênh lệch giá mua bán vàng nhẫn SJC lên tới 6 triệu đồng mỗi lượng.",
+    "loi_doc": "Ngày hai mươi ba tháng mười một, chênh lệch giá mua bán vàng nhẫn S J C lên tới sáu triệu đồng mỗi lượng.",
+    "anh": [
+     "gold rings jewelry||gold ring"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "CHÊNH MUA–BÁN NHẪN SJC 23/11",
+     "nguon": "Báo Nhân Dân 23/11/2026",
+     "dong": [
+      [
+       "TỚI 6 TRIỆU",
+       120,
+       "do"
+      ],
+      [
+       "MỖI LƯỢNG",
+       52,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "TIỆM MUA THẤP HƠN",
+    "loi": "Nghĩa là anh chị cầm tiền mua một lượng, cửa hàng mua lại chỉ trả thấp hơn giá bán tới 6 triệu.",
+    "loi_doc": "Nghĩa là anh chị cầm tiền mua một lượng, cửa hàng mua lại chỉ trả thấp hơn giá bán tới sáu triệu.",
+    "anh": [
+     "gold shop counter||jewellery store"
+    ]
+   },
+   {
+    "chu_to": "MUA RỒI BÁN NGAY",
+    "loi": "Em tự tính: mua xong bán lại ngay trong ngày, anh chị đã mất tới 6 triệu trên mỗi lượng.",
+    "loi_doc": "Em tự tính: mua xong bán lại ngay trong ngày, anh chị đã mất tới sáu triệu trên mỗi lượng.",
+    "anh": [
+     "calculator money||calculator"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "MUA RỒI BÁN NGAY, 1 LƯỢNG NHẪN",
+     "nguon": "Em tự tính từ chênh lệch Báo Nhân Dân 23/11/2026",
+     "dong": [
+      [
+       "MẤT TỚI 6 TRIỆU",
+       112,
+       "do"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "GIÁ PHẢI BÙ CHÊNH",
+    "loi": "Muốn hoà vốn, giá vàng phải tăng đủ để bù khoản chênh này.",
+    "loi_doc": "Muốn hoà vốn, giá vàng phải tăng đủ để bù khoản chênh này.",
+    "anh": [
+     "gold price chart||price chart"
+    ]
+   },
+   {
+    "chu_to": "CÙNG NGÀY GIÁ ĐỔI CHIỀU",
+    "loi": "Cùng ngày 23/11 vàng tăng buổi sáng rồi quay đầu giảm buổi chiều, nên khoản chênh càng đáng để ý.",
+    "loi_doc": "Cùng ngày hai mươi ba tháng mười một vàng tăng buổi sáng rồi quay đầu giảm buổi chiều, nên khoản chênh càng đáng để ý.",
+    "anh": [
+     "gold bullion bars||gold bars"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "SN2311XANG",
+  "tieu_de": "Kỳ điều hành 20/11: giá xăng đồng loạt giảm, E5 RON92 xuống dưới 20.000 đồng một lít",
+  "hook": [
+   "XĂNG GIẢM 20/11",
+   "E5 DƯỚI 20.000Đ"
+  ],
+  "nhan": "TIN NÓNG · 20/11",
+  "short_caption": "Kỳ điều hành ngày 20/11 giá xăng đồng loạt giảm, xăng E5 RON92 thấp hơn 20.000 đồng một lít. Em tự tính đổ 5 lít chưa tới 100.000 đồng. Nguồn: Tạp chí Công Thương.",
+  "tags": [],
+  "toc": 1.12,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "XĂNG RẺ, CHỢ CÓ RẺ?",
+   "loi": "Xăng đã giảm, anh chị A: thấy giá đi chợ nhẹ bớt, hay B: chưa thấy gì?",
+   "loi_doc": "Xăng đã giảm, anh chị A: thấy giá đi chợ nhẹ bớt, hay B: chưa thấy gì?",
+   "anh": [
+    "market vegetables Vietnam||street market"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "XĂNG GIẢM ĐỒNG LOẠT",
+    "loi": "Kỳ điều hành ngày 20/11, giá xăng đồng loạt giảm.",
+    "loi_doc": "Kỳ điều hành ngày hai mươi tháng mười một, giá xăng đồng loạt giảm.",
+    "anh": [
+     "gas station fuel pump||petrol station"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "KỲ ĐIỀU HÀNH 20/11",
+     "nguon": "Tạp chí Công Thương",
+     "dong": [
+      [
+       "XĂNG ĐỒNG LOẠT GIẢM",
+       90,
+       "vang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "E5 DƯỚI 20.000 ĐỒNG",
+    "loi": "Xăng E5 RON92 xuống thấp hơn 20.000 đồng một lít.",
+    "loi_doc": "Xăng E năm R O N chín hai xuống thấp hơn hai mươi nghìn đồng một lít.",
+    "anh": [
+     "fuel pump nozzle||gasoline pump"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "XĂNG E5 RON92 SAU 20/11",
+     "nguon": "Tạp chí Công Thương",
+     "dong": [
+      [
+       "DƯỚI 20.000 Đ/LÍT",
+       100,
+       "vang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "ĐỔ 5 LÍT",
+    "loi": "Em tự tính: đổ năm lít E5 chưa tới 100.000 đồng.",
+    "loi_doc": "Em tự tính: đổ năm lít E năm chưa tới một trăm nghìn đồng.",
+    "anh": [
+     "motorbike refuel||motorcycle gas station"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "ĐỔ 5 LÍT E5 (EM TỰ TÍNH)",
+     "nguon": "Em tự tính từ giá Tạp chí Công Thương",
+     "dong": [
+      [
+       "CHƯA TỚI 100.000 ĐỒNG",
+       90,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "CHỢ CÓ RẺ THEO?",
+    "loi": "Xăng giảm thì cước vận chuyển và giá đi chợ có giảm theo không? Đó mới là điều túi tiền cần.",
+    "loi_doc": "Xăng giảm thì cước vận chuyển và giá đi chợ có giảm theo không? Đó mới là điều túi tiền cần.",
+    "anh": [
+     "grocery shopping basket||supermarket shopping"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "SP2311LAI300",
+  "tieu_de": "Gửi 300 triệu, mức lãi cao nhất lên tới 20,4 triệu đồng theo bảng lãi suất 23/11",
+  "hook": [
+   "GỬI 300 TRIỆU",
+   "LÃI TỚI 20,4 TR"
+  ],
+  "nhan": "TIN NÓNG · 23/11",
+  "short_caption": "Bảng lãi suất ngày 23/11: gửi 300 triệu, mức lãi cao nhất lên tới 20,4 triệu đồng. Em tự tính nếu là một năm thì khoảng 6,8%. Nguồn: Báo Ngôi Sao 23/11/2026.",
+  "tags": [],
+  "toc": 1.12,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "BẠN GỬI KỲ HẠN NÀO?",
+   "loi": "Anh chị đang gửi kỳ hạn nào, A: dưới sáu tháng, hay B: mười hai tháng trở lên?",
+   "loi_doc": "Anh chị đang gửi kỳ hạn nào, A: dưới sáu tháng, hay B: mười hai tháng trở lên?",
+   "anh": [
+    "bank savings Vietnam||bank counter"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "GỬI 300 TRIỆU",
+    "loi": "Ngày 23/11, theo bảng lãi suất: gửi 300 triệu đồng, mức lãi cao nhất lên tới 20,4 triệu đồng.",
+    "loi_doc": "Ngày hai mươi ba tháng mười một, theo bảng lãi suất: gửi ba trăm triệu đồng, mức lãi cao nhất lên tới hai mươi phẩy bốn triệu đồng.",
+    "anh": [
+     "bank savings book||savings passbook"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "GỬI 300 TRIỆU, LÃI CAO NHẤT 23/11",
+     "nguon": "Báo Ngôi Sao 23/11/2026",
+     "dong": [
+      [
+       "LÃI TỚI 20,4 TRIỆU",
+       96,
+       "vang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "TÍNH RA BAO NHIÊU %",
+    "loi": "Em tự tính: 20,4 chia 300 là 6,8%. Nếu tính cho một năm thì khoảng 6,8% mỗi năm.",
+    "loi_doc": "Em tự tính: hai mươi phẩy bốn chia ba trăm là sáu phẩy tám phần trăm. Nếu tính cho một năm thì khoảng sáu phẩy tám phần trăm mỗi năm.",
+    "anh": [
+     "calculator interest||calculator"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "20,4 / 300 TRIỆU",
+     "nguon": "Em tự tính từ Báo Ngôi Sao 23/11/2026",
+     "dong": [
+      [
+       "KHOẢNG 6,8%/NĂM",
+       100,
+       "trang"
+      ],
+      [
+       "NẾU TÍNH CHO 1 NĂM",
+       44,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "MỨC CAO NHẤT KHÔNG CHO AI",
+    "loi": "Mức cao nhất chỉ áp dụng ở một số ngân hàng và kỳ hạn nhất định, nên đọc kỹ kỳ hạn và điều kiện.",
+    "loi_doc": "Mức cao nhất chỉ áp dụng ở một số ngân hàng và kỳ hạn nhất định, nên đọc kỹ kỳ hạn và điều kiện.",
+    "anh": [
+     "bank customer reading document||reading contract"
+    ]
+   },
+   {
+    "chu_to": "SO VỚI TIỀN NẰM YÊN",
+    "loi": "Tiền nằm trong tài khoản thanh toán gần như không sinh lãi, đó là lý do người ta so bảng lãi suất.",
+    "loi_doc": "Tiền nằm trong tài khoản thanh toán gần như không sinh lãi, đó là lý do người ta so bảng lãi suất.",
+    "anh": [
+     "cash money vietnamese dong||vietnamese dong banknotes"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "SP2311BTC",
+  "tieu_de": "Bitcoin lao dốc xuống mức thấp nhất trong 3 tháng, ngày 23/11 chỉ điều chỉnh nhẹ",
+  "hook": [
+   "BITCOIN TỤT SÂU",
+   "THẤP NHẤT 3 THÁNG"
+  ],
+  "nhan": "TIN NÓNG · 23/11",
+  "short_caption": "Bitcoin từng lao dốc xuống mức thấp nhất 3 tháng, ngày 23/11 chỉ điều chỉnh nhẹ trên đà trượt giá dài. Nguồn: CafeF, Lao Động.",
+  "tags": [],
+  "toc": 1.12,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "CÒN ĐÁY NỮA KHÔNG?",
+   "loi": "Bitcoin về đáy ba tháng, anh chị A: thấy rủi ro quá lớn, hay B: chỉ đứng xem?",
+   "loi_doc": "Bitcoin về đáy ba tháng, anh chị A: thấy rủi ro quá lớn, hay B: chỉ đứng xem?",
+   "anh": [
+    "bitcoin coin chart||bitcoin"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "BITCOIN THẤP NHẤT 3 THÁNG",
+    "loi": "Bitcoin lao dốc xuống mức thấp nhất trong ba tháng.",
+    "loi_doc": "Bitcoin lao dốc xuống mức thấp nhất trong ba tháng.",
+    "anh": [
+     "bitcoin coin||bitcoin"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "BITCOIN THÁNG 11/2026",
+     "nguon": "CafeF",
+     "dong": [
+      [
+       "THẤP NHẤT 3 THÁNG",
+       100,
+       "do"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "TRƯỢT GIÁ DÀI",
+    "loi": "Báo Lao Động ghi: ngày 23/11 Bitcoin chỉ điều chỉnh nhẹ trên đà trượt giá kéo dài.",
+    "loi_doc": "Báo Lao Động ghi: ngày hai mươi ba tháng mười một Bitcoin chỉ điều chỉnh nhẹ trên đà trượt giá kéo dài.",
+    "anh": [
+     "crypto chart red||trading chart falling"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "BITCOIN 23/11",
+     "nguon": "Báo Lao Động",
+     "dong": [
+      [
+       "ĐIỀU CHỈNH NHẸ",
+       90,
+       "trang"
+      ],
+      [
+       "TRÊN ĐÀ TRƯỢT GIÁ DÀI",
+       48,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "RỦI RO CAO",
+    "loi": "Tiền mã hoá biến động rất mạnh và không có ai bảo đảm vốn cho anh chị.",
+    "loi_doc": "Tiền mã hoá biến động rất mạnh và không có ai bảo đảm vốn cho anh chị.",
+    "anh": [
+     "trader screen worried||stock trader screen"
+    ]
+   },
+   {
+    "chu_to": "CHỈ DÙNG TIỀN NHÀN RỖI",
+    "loi": "Ai đã mua thì nhớ: chỉ nên là khoản tiền mất đi vẫn không ảnh hưởng cuộc sống.",
+    "loi_doc": "Ai đã mua thì nhớ: chỉ nên là khoản tiền mất đi vẫn không ảnh hưởng cuộc sống.",
+    "anh": [
+     "wallet money person||person thinking money"
+    ]
+   }
+  ]
+ }
+]
