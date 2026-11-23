@@ -132,7 +132,7 @@ S = [
  dict(k='checklist', anh=TP, cap=('3 ĐIỀU CẦN THEO DÕI', 'TỪ NAY TỚI TẾT'), cols=CC, moc=True,
       items=[('Robusta London quanh 3.000 USD', GOLD), ('Tiến độ thu hoạch vụ mới', GOLD), ('Xuất khẩu tháng 11 và 12', GOLD)],
       say=("Ba điều đáng theo dõi từ nay tới Tết. Giá cà phê vối trên sàn London có giữ được quanh mốc ba nghìn đô la Mỹ mỗi tấn hay không. Tiến độ thu hoạch vụ mới ở Tây Nguyên. "
-           "Và số xuất khẩu tháng mười một, tháng mười hai: nếu lượng tăng mà tiền không tăng, nghĩa là giá bán mỗi tấn vẫn đang thấp. Muốn hiểu giá hàng hoá tác động thế nào tới cổ phiếu và túi tiền gia đình, anh chị có thể đọc bài miễn phí trên chứng khoán Huy Nguyễn chấm com.")),
+           "Và số xuất khẩu hai tháng cuối năm: nếu lượng tăng mà tiền không tăng, nghĩa là giá bán mỗi tấn vẫn đang thấp. Muốn hiểu giá hàng hoá tác động thế nào tới cổ phiếu và túi tiền gia đình, anh chị có thể đọc bài miễn phí trên chứng khoán Huy Nguyễn chấm com.")),
  # ---------------- KẾT ----------------
  dict(k='chat', ch='Kết – Tin nhắn cuối ngày', cap=('"CHUYỆN CỦA CHÚ THÔI', 'NHÀ NÀO TÍNH THEO NHÀ ĐÓ"'), cols=CC, moc=True, chat=dict(ten='Chú Sáu', tv='Đang hoạt động', gio='21:00', mau=V_, msgs=[
         ('Chú Sáu', 'Năm 2019 chú chặt một héc ta'),
