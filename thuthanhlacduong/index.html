@@ -229,7 +229,14 @@ body.menu #top,body.menu #res,body.menu #bottom,body.menu #tools,body.menu #chat
   <div class="box">
     <h1 class="title">Thủ Thành Lạc Dương</h1>
     <div class="tag">Chọn linh vật — vị chưởng môn sẽ chạy ra triệu hồi đệ tử các môn phái giữ thành</div>
-    <div class="acct"><label for="pname">Tên tài khoản (cũng là tên thành của bạn)</label><input id="pname" maxlength="16" placeholder="Ví dụ: Huy Nguyễn" autocomplete="nickname"></div>
+    <div class="acct" id="acctBox">
+      <div id="acctOut"><label for="pname">ID tài khoản (cũng là tên thành của bạn)</label><input id="pname" maxlength="16" placeholder="Ví dụ: huynguyen99" autocomplete="username">
+        <label for="ppw" style="margin-top:6px">Mật khẩu</label><input id="ppw" type="password" maxlength="40" placeholder="Ít nhất 6 ký tự" autocomplete="current-password">
+        <div class="room" style="grid-template-columns:1fr 1fr;margin-top:6px"><button class="big ob2" id="btnLogin">Đăng nhập</button><button class="big ob2" id="btnReg">Tạo tài khoản</button></div>
+        <div id="acctMsg" class="note"></div></div>
+      <div id="acctIn" hidden><div class="tag">Đang chơi bằng tài khoản <b id="acctName"></b> · <button class="ob2" id="btnOut" style="padding:4px 10px;border-radius:6px">Đăng xuất</button> · <button class="ob2" id="btnTop" style="padding:4px 10px;border-radius:6px">Bảng xếp hạng</button></div></div>
+    </div>
+    <div id="topBox" class="lacq" hidden style="max-width:420px;margin:0 auto 10px;padding:8px 12px;text-align:left;font-size:13px"></div>
     <div class="mrow" id="mrow"></div>
     <div class="seg" id="diff" hidden><button data-d="easy">Dễ</button><button data-d="normal">Thường</button><button data-d="hard">Khó</button></div><div class="tag" id="rankBox"></div>
     <button id="btnPlay">Đấu rank</button>
@@ -257,27 +264,31 @@ body.menu #top,body.menu #res,body.menu #bottom,body.menu #tools,body.menu #chat
     <div class="row"><button class="big bSell" id="btnMenu">Đổi linh vật</button><button class="big" id="btnAgain" style="background:linear-gradient(180deg,#ffdf8a,#c48a22);color:#2a0f0a">Chơi lại</button></div>
   </div>
 </div>
-<script src="js/three.min.js?v=1795442237"></script>
-<script src="js/CopyShader.js?v=1795442237"></script>
-<script src="js/LuminosityHighPassShader.js?v=1795442237"></script>
-<script src="js/EffectComposer.js?v=1795442237"></script>
-<script src="js/ShaderPass.js?v=1795442237"></script>
-<script src="js/RenderPass.js?v=1795442237"></script>
-<script src="js/UnrealBloomPass.js?v=1795442237"></script>
-<script src="js/Water.js?v=1795442237"></script>
-<script src="js/GLTFLoader.js?v=1795442237"></script>
-<script src="js/SkeletonUtils.js?v=1795442237"></script>
-<script src="js/peerjs.min.js?v=1795442237"></script>
-<script src="js/tex.js?v=1795442237"></script>
-<script src="js/vrmbones.js?v=1795442237"></script>
-<script src="js/sim.js?v=1795442237"></script>
-<script src="js/audio.js?v=1795442237"></script>
-<script src="js/render.js?v=1795442237"></script>
-<script src="js/r3d.js?v=1795442237"></script>
-<script src="js/anime3d.js?v=1795442237"></script>
-<script src="js/net.js?v=1795442237"></script>
-<script src="js/intro.js?v=1795442237"></script>
-<script src="js/game.js?v=1795442237"></script>
+<script src="js/three.min.js?v=1795442472"></script>
+<script src="js/CopyShader.js?v=1795442472"></script>
+<script src="js/LuminosityHighPassShader.js?v=1795442472"></script>
+<script src="js/EffectComposer.js?v=1795442472"></script>
+<script src="js/ShaderPass.js?v=1795442472"></script>
+<script src="js/RenderPass.js?v=1795442472"></script>
+<script src="js/UnrealBloomPass.js?v=1795442472"></script>
+<script src="js/Water.js?v=1795442472"></script>
+<script src="js/GLTFLoader.js?v=1795442472"></script>
+<script src="js/SkeletonUtils.js?v=1795442472"></script>
+<script src="js/peerjs.min.js?v=1795442472"></script>
+<script src="js/fb-app.js?v=1795442472"></script>
+<script src="js/fb-auth.js?v=1795442472"></script>
+<script src="js/fb-firestore.js?v=1795442472"></script>
+<script src="js/tex.js?v=1795442472"></script>
+<script src="js/vrmbones.js?v=1795442472"></script>
+<script src="js/sim.js?v=1795442472"></script>
+<script src="js/audio.js?v=1795442472"></script>
+<script src="js/render.js?v=1795442472"></script>
+<script src="js/r3d.js?v=1795442472"></script>
+<script src="js/anime3d.js?v=1795442472"></script>
+<script src="js/net.js?v=1795442472"></script>
+<script src="js/intro.js?v=1795442472"></script>
+<script src="js/acct.js?v=1795442472"></script>
+<script src="js/game.js?v=1795442472"></script>
 
 </body>
 </html>

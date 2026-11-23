@@ -372,6 +372,23 @@
   $('mrow').addEventListener('click', (e) => { const b = e.target.closest('[data-m]'); if (!b) return; Sfx.init(); Sfx.play('click'); myMascot = b.dataset.m; try { localStorage.setItem('ttld_mascot', myMascot); } catch (x) {} showStart(); });
   $('diff').addEventListener('click', (e) => { const b = e.target.closest('[data-d]'); if (!b) return; diff = b.dataset.d; try { localStorage.setItem('ttld_diff', diff); } catch (x) {} Sfx.init(); Sfx.play('click'); document.querySelectorAll('#diff button').forEach((x) => x.classList.toggle('on', x.dataset.d === diff)); });
   $('btnPlay').addEventListener('click', () => { if (!nameOk()) return; diff = RANK.pickBot(); playStory(() => { Sfx.init(); Sfx.play('gong', true); $('start').hidden = true; document.body.classList.remove('menu'); V.cam.zoom = 1; newGame(); }); });
+  // ---------- TÀI KHOẢN ----------
+  function acctUI(u, pf) {
+    $('acctOut').hidden = !!(u && pf); $('acctIn').hidden = !(u && pf);
+    if (u && pf) { PNAME = pf.name; $('pname').value = pf.name; $('acctName').textContent = pf.name; RANK.set(pf.pts || 0); showRank(); }
+  }
+  if (window.ACCT && ACCT.ok()) { ACCT.init(); ACCT.on(acctUI); }
+  function acctDo(kind) {
+    const id = ($('pname').value || '').trim(), pw = $('ppw').value || '';
+    if (!window.ACCT || !ACCT.ok()) { $('acctMsg').textContent = 'Chưa tải được phần tài khoản, kiểm tra mạng'; return; }
+    $('acctMsg').textContent = kind === 'reg' ? 'Đang tạo tài khoản…' : 'Đang đăng nhập…';
+    (kind === 'reg' ? ACCT.register(id, pw, myMascot) : ACCT.login(id, pw)).then(() => { $('acctMsg').textContent = ''; $('ppw').value = ''; }).catch((e) => { $('acctMsg').textContent = ACCT.viErr(e); });
+  }
+  $('btnLogin').addEventListener('click', () => acctDo('login'));
+  $('btnReg').addEventListener('click', () => acctDo('reg'));
+  $('btnOut').addEventListener('click', () => { ACCT.logout(); });
+  $('btnTop').addEventListener('click', () => { const b = $('topBox'); if (!b.hidden) { b.hidden = true; return; } b.hidden = false; b.textContent = 'Đang tải…'; ACCT.top(20).then((L) => { b.innerHTML = '<b>Bảng xếp hạng</b><br>' + L.map((p, i) => { const r = RANK.info(p.pts || 0); return `${i + 1}. ${esc(p.name)} — <span style="color:${r.col}">${r.name}</span>`; }).join('<br>'); }).catch((e) => { b.textContent = ACCT.viErr(e); }); });
+
   // ---------- XẾP HẠNG: 7 bậc × 10 mốc ----------
   const RANK = (() => {
     const TIERS = [['Sắt', '#8d8d8d'], ['Đồng', '#c08457'], ['Nhôm', '#b0bec5'], ['Bạc', '#dfe6ec'], ['Vàng', '#ffd54f'], ['Bạch Kim', '#7fe0d8'], ['Lục Bảo', '#2ee59d'], ['Kim Cương', '#82b1ff'], ['Cao Thủ', '#e040fb'], ['Đại Cao Thủ', '#ff6e40'], ['Thách Đấu', '#ff1744'], ['Cửu Ngũ Chí Tôn', '#ffe57f']];
@@ -383,13 +400,14 @@
       get pts() { return pts; }, info, botPts: 0,
       title: (p) => info(p).name,
       pickBot() { this.botPts = Math.max(0, pts + Math.round((Math.random() - 0.4) * 260)); const t = info(this.botPts).t; return t <= 1 ? 'easy' : t <= 4 ? 'normal' : 'hard'; },
-      add(d) { pts = Math.max(0, pts + d); try { localStorage.setItem('ttld_rank', pts); } catch (e) {} }
+      add(d) { pts = Math.max(0, pts + d); try { localStorage.setItem('ttld_rank', pts); } catch (e) {} },
+      set(p) { pts = p; try { localStorage.setItem('ttld_rank', pts); } catch (e) {} }
     };
   })();
   function rankResult(w) {
     if (NET && NET.mode === 'coop') return;
     const before = RANK.info(RANK.pts), d = w === 0 ? 35 + Math.round(Math.max(0, RANK.botPts - RANK.pts) / 20) : w === 1 ? -22 : 0;
-    RANK.add(d); const after = RANK.info(RANK.pts);
+    RANK.add(d); const after = RANK.info(RANK.pts); if (window.ACCT && ACCT.user) ACCT.saveResult(RANK.pts, w === 0 ? 1 : w === 1 ? 0 : -1).catch(() => {});
     const up = after.t > before.t ? ' · Thăng bậc: ' + after.hero + '!' : '';
     $('endStats').insertAdjacentHTML('afterend', `<div class="tag rk">Rank: <b style="color:${after.col}">${after.name}</b> (${d >= 0 ? '+' : ''}${d} điểm)${up}</div>`);
     showRank();
