@@ -47,8 +47,8 @@
    },
    {
     "chu_to": "LUỒNG SÂU 15,5 MÉT",
-    "loi": "Bí mật của cảng nằm ở dưới nước. Luồng Cái Mép – Thị Vải được nạo vét sâu 15,5 mét, sâu nhất cả nước, bằng khoảng 5 tầng nhà. Tàu mẹ 200.000 tấn vào không phải chờ nước lên.",
-    "loi_doc": "Bí mật của cảng nằm ở dưới nước. Luồng Cái Mép, Thị Vải được nạo vét sâu mười lăm phẩy năm mét, sâu nhất cả nước, bằng khoảng năm tầng nhà. Tàu mẹ hai trăm nghìn tấn vào không phải chờ nước lên.",
+    "loi": "Bí mật của cảng nằm ở dưới nước. Luồng Cái Mép – Thị Vải được nạo vét sâu 15,5 mét, sâu nhất cả nước, bằng khoảng 5 tầng nhà. Tàu mẹ trọng tải 200.000 tấn vào không phải chờ nước lên.",
+    "loi_doc": "Bí mật của cảng nằm ở dưới nước. Luồng Cái Mép, Thị Vải được nạo vét sâu mười lăm phẩy năm mét, sâu nhất cả nước, bằng khoảng năm tầng nhà. Tàu mẹ trọng tải hai trăm nghìn tấn vào không phải chờ nước lên.",
     "the": {
      "loai": "lon",
      "tieu": "LUỒNG CÁI MÉP – THỊ VẢI",
@@ -69,8 +69,8 @@
    },
    {
     "chu_to": "THỨ 7 THẾ GIỚI",
-    "loi": "Kết quả: hai kỳ liền, chỉ số hiệu quả cảng container của Ngân hàng Thế giới xếp Cái Mép thứ 7 thế giới, trên cả Singapore và Hồng Kông.",
-    "loi_doc": "Kết quả: hai kỳ liền, chỉ số hiệu quả cảng container của Ngân hàng Thế giới xếp Cái Mép thứ bảy thế giới, trên cả Singapore và Hồng Kông.",
+    "loi": "Kết quả: hai kỳ liền, chỉ số hiệu quả cảng container của Ngân hàng Thế giới xếp Cái Mép thứ 7 thế giới. Kỳ gần nhất, Cái Mép đứng trên cả Singapore và Hồng Kông.",
+    "loi_doc": "Kết quả: hai kỳ liền, chỉ số hiệu quả cảng container của Ngân hàng Thế giới xếp Cái Mép thứ bảy thế giới. Kỳ gần nhất, Cái Mép đứng trên cả Singapore và Hồng Kông.",
     "the": {
      "loai": "lon",
      "tieu": "CHỈ SỐ HIỆU QUẢ CẢNG CONTAINER (CPPI)",
@@ -82,8 +82,8 @@
        "vang"
       ],
       [
-       "TRÊN CẢ SINGAPORE",
-       56,
+       "KỲ 2024 TRÊN SINGAPORE",
+       52,
        "trang"
       ]
      ]

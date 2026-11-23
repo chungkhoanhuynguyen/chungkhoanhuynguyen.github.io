@@ -18,10 +18,10 @@ R = dict(key='RV2311CM', tieu_de='Cảng giữa rừng đước đón tàu 16.82
  canh=[
   C('TÀU 16.828 CONTAINER', 'Cảng giữa rừng đước ở Cái Mép từng đứng thứ 7 thế giới, vừa tụt xuống thứ 11. Ngày 13 tháng 3 năm ngoái, nơi đây đón tàu OOCL Bauhinia, chở được 16.828 container, dài gần 367 mét.',
     the=dict(loai='lon', tieu='TÀU OOCL BAUHINIA · 13/3/2025', nguon='Báo Hà Nội Mới 13/3/2025', dong=[['16.828 TEU', 112, 'vang'], ['DÀI 366,99 MÉT', 56, 'trang']])),
-  C('LUỒNG SÂU 15,5 MÉT', 'Bí mật của cảng nằm ở dưới nước. Luồng Cái Mép – Thị Vải được nạo vét sâu 15,5 mét, sâu nhất cả nước, bằng khoảng 5 tầng nhà. Tàu mẹ 200.000 tấn vào không phải chờ nước lên.',
+  C('LUỒNG SÂU 15,5 MÉT', 'Bí mật của cảng nằm ở dưới nước. Luồng Cái Mép – Thị Vải được nạo vét sâu 15,5 mét, sâu nhất cả nước, bằng khoảng 5 tầng nhà. Tàu mẹ trọng tải 200.000 tấn vào không phải chờ nước lên.',
     the=dict(loai='lon', tieu='LUỒNG CÁI MÉP – THỊ VẢI', nguon='Báo SGGP 9/2/2024', dong=[['15,5 MÉT', 120, 'vang'], ['BẰNG KHOẢNG 5 TẦNG NHÀ', 56, 'trang']])),
-  C('THỨ 7 THẾ GIỚI', 'Kết quả: hai kỳ liền, chỉ số hiệu quả cảng container của Ngân hàng Thế giới xếp Cái Mép thứ 7 thế giới, trên cả Singapore và Hồng Kông.',
-    the=dict(loai='lon', tieu='CHỈ SỐ HIỆU QUẢ CẢNG CONTAINER (CPPI)', nguon='Gemadept 12/6/2024, SGGP 22/10/2025', dong=[['THỨ 7', 120, 'vang'], ['TRÊN CẢ SINGAPORE', 56, 'trang']])),
+  C('THỨ 7 THẾ GIỚI', 'Kết quả: hai kỳ liền, chỉ số hiệu quả cảng container của Ngân hàng Thế giới xếp Cái Mép thứ 7 thế giới. Kỳ gần nhất, Cái Mép đứng trên cả Singapore và Hồng Kông.',
+    the=dict(loai='lon', tieu='CHỈ SỐ HIỆU QUẢ CẢNG CONTAINER (CPPI)', nguon='Gemadept 12/6/2024, SGGP 22/10/2025', dong=[['THỨ 7', 120, 'vang'], ['KỲ 2024 TRÊN SINGAPORE', 52, 'trang']])),
   C('NĂM NAY TỤT XUỐNG THỨ 11', 'Nhưng tháng 6 năm nay, Cái Mép lùi 4 bậc, xuống thứ 11. Cảng gần như hết công suất, tàu trễ lịch phải chờ cầu bến từ 3 giờ đến 3 ngày.',
     the=dict(loai='cot', tieu='HẠNG CPPI CỦA CÁI MÉP (CÀNG THẤP CÀNG TỐT)', nguon='bbw.vn 11/6/2026, Báo Xây dựng 11/1/2026', hang=[['Hai kỳ trước', 7], ['Kỳ 6/2026', 11]], noi=[1], dv='', max=13)),
   C('ĐƯỜNG MỚI THÁNG 12', 'Năm ngoái cụm cảng đón hơn 12,4 triệu TEU. Đường 991B nối cảng ra quốc lộ, vốn gần 4.000 tỷ, dự kiến thông xe tháng 12 này.',
