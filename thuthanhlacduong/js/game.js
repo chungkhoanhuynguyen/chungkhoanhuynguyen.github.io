@@ -24,9 +24,10 @@
       rr.setSize(size, size, false); if (face) { cam.position.set(0, h * 0.97, d * 0.36); cam.lookAt(0, h * 0.9, 0); } else { cam.position.set(0.0, h * 0.62, d); cam.lookAt(0, h * 0.5, 0); }
       obj.rotation.y = 0.35; sc.add(obj); rr.render(sc, cam); const url = rr.domElement.toDataURL(); sc.remove(obj); return url;
     }
+    const bust = (obj, size) => { rr.setSize(size, size, false); cam.position.set(0.3, 1.5, 3.3); cam.lookAt(0, 1.2, 0); obj.rotation.y = 0.45; sc.add(obj); rr.render(sc, cam); const url = rr.domElement.toDataURL(); sc.remove(obj); return url; };
     const pose = (o) => { if (o.userData.mixer) o.userData.mixer.update(0.4); return o; };
     const um = (k) => { const m = V.UNIT_MODEL[k]; return (V.modelsReady() && V.makeModel(m[0], m[1], 1.55)) || V.makeHuman(S.UNITS[k].look, { weapon: S.UNITS[k].weapon }); };
-    iconOf = (k) => ICON[k] || (ICON[k] = shot(V.makeHuman(S.UNITS[k].look, { weapon: S.UNITS[k].weapon }), 128, 1.75, 3.8, true));
+    iconOf = (k) => ICON[k] || (ICON[k] = bust(V.makeHuman(S.UNITS[k].look, { weapon: S.UNITS[k].weapon, cape: S.UNITS[k].cape || null, wglow: S.UNITS[k].wglow || null }), 128));
     S.SEND_ORDER.forEach((k) => { const m = V.CREEP_MODEL[k]; const o = S.CREEPS[k].beast ? V.makeBeast(k) : V.makeHuman(R.CLOOK[k], { weapon: R.CLOOK[k].weapon }); ICON['s_' + k] = shot(pose(o), 128, 1.3, 3.4); });
     R.MASCOT_ORDER.forEach((k) => { ICON['m_' + k] = A3.portrait('m_' + k, 256, false); ICON['f_' + k] = A3.portrait('m_' + k, 128, true); if (!ICON['m_' + k]) { const o = V.makeMascot(k); o.scale.setScalar(1); ICON['m_' + k] = shot(pose(o), 256, 1.9, 4.2); ICON['f_' + k] = shot(pose(V.makeMascot(k)), 128, 2.4, 4.2, true); } });
   }
@@ -98,6 +99,10 @@
 
   // công cụ
   $('tView').addEventListener('click', () => { view.lane = 1 - view.lane; V.setView(view.lane); $('tView').innerHTML = view.lane === ME ? 'Xem<br>bên kia' : 'Xem<br>ta'; Sfx.play('click'); });
+  const QN = ['Siêu mượt', 'Mượt', 'Đẹp'];
+  $('btnQ').textContent = 'Đồ hoạ: ' + QN[V.Q] + ' (chạm để đổi — máy yếu chọn Siêu mượt)';
+  const nextQ = () => { const q = (V.Q + 2) % 3; if (G && running && !confirm('Đổi đồ hoạ sang "' + QN[q] + '" sẽ tải lại trang, thoát trận hiện tại?')) return; V.setQ(q); };
+  $('btnQ').addEventListener('click', nextQ); $('tQ').addEventListener('click', nextQ);
   $('tSpeed').hidden = true; // đấu rank/online: không cho tua nhanh, thời gian mỗi đợt có hạn
   $('tSpeed').addEventListener('click', () => { speed = speed === 1 ? 2 : speed === 2 ? 3 : 1; $('tSpeed').textContent = 'x' + speed; Sfx.play('click'); });
   $('tSound').addEventListener('click', () => { Sfx.init(); const on = Sfx.toggle(); $('tSound').classList.toggle('off', !on); });

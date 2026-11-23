@@ -12,7 +12,7 @@ var A3 = (function () {
 
   function load(cb) {
     if (!T.GLTFLoader || !window.VRM_BONES) { cb(); return; }
-    var names = []; Object.keys(HERO).forEach(function (k) { if (names.indexOf(HERO[k][0]) < 0) names.push(HERO[k][0]); });
+    var names = []; Object.keys(HERO).forEach(function (k) { if (k.indexOf('m_') === 0 && names.indexOf(HERO[k][0]) < 0) names.push(HERO[k][0]); }); // chỉ tải model linh vật
     var left = names.length, ld = new T.GLTFLoader();
     names.forEach(function (n) {
       ld.load(BASE + n + '.glb', function (g) {

@@ -69,9 +69,16 @@ var Sim = (function () {
       if (b.skill.amt) u.skill.amt = Math.round(b.skill.amt * m); if (b.skill.dps) u.skill.dps = Math.round(b.skill.dps * m);
       u.skill.name = a[2] || SKN[a[1]]; u.up = { name: a[0] + ' · Đại Thành' };
       var fem = S.fem.indexOf(i) >= 0, L0 = S.look, robe = shadeHex(S.col, [0, -0.15, 0.1, -0.3, 0.2, -0.05, -0.4, 0.05][i]);
-      u.look = { skin: fem ? '#f6d5bd' : L0.skin, hair: L0.hair, hat: fem ? (L0.fhat || 'longhair') : (i === 7 && L0.mhat7) || L0.hat, robe: robe, robe2: i % 2 ? S.col2 : shadeHex(S.col, 0.7), trim: L0.trim, female: fem, sash: L0.sash, mask: L0.mask && !fem, armor: (a[1] === 'thieulam' || L0.armor) && !fem, patches: L0.patches };
-      if (L0.hat === 'bald' && !fem) u.look.hair = null;
-      u.weapon = (a[3] && a[3].weapon) || AW[a[1]] || S.wp;
+      // mỗi tướng một dáng riêng: mũ theo vai trò, nam/nữ, tóc bạc cho bậc trưởng lão, chưởng môn đội mũ miện
+      var mh = { thienvuong: L0.hat, thieulam: 'ironhelm', duongmon: 'hood', ngudoc: 'headdress', ngamy: 'taoist', vodang: 'topknot', conlon: 'taoist', caibang: 'plume', summonR: 'crown', summonM: 'helmet' }[a[1]];
+      var fh = { thienvuong: L0.fhat || 'ponytail', thieulam: 'ponytail', duongmon: 'hood', ngudoc: 'headdress', ngamy: 'longhair', vodang: 'ponytail', conlon: 'longhair', caibang: 'ponytail', summonR: 'crown', summonM: 'ponytail' }[a[1]];
+      var hat = fem ? fh : (L0.hat === 'bald' ? 'bald' : mh); if (i === 0 && !fem) hat = L0.hat; if (i === 7) hat = fem ? 'crown' : (L0.hat === 'bald' ? 'bald' : 'crown');
+      if (L0.fhat && fem && i !== 7) hat = L0.fhat;
+      var skins = ['#f0c8a2', '#e8b890', '#f3d0b0', '#d9a77c', '#efc39e', '#e3b48c', '#f6d5bd', '#eec5a0'];
+      u.look = { skin: fem ? '#f6d5bd' : skins[i], hair: i >= 6 && !fem ? '#d8d2c8' : L0.hair, hat: hat, robe: robe, robe2: i % 2 ? S.col2 : shadeHex(S.col, 0.7), trim: i >= 6 ? '#ffd54f' : L0.trim, female: fem, sash: L0.sash || (i >= 5 ? '#ffd54f' : null), mask: (L0.mask || a[1] === 'duongmon') && !fem, armor: (a[1] === 'thieulam' || L0.armor || a[1] === 'summonM') && !fem, patches: L0.patches };
+      if (hat === 'bald') u.look.hair = null;
+      u.cape = i >= 5 ? shadeHex(S.col, -0.3) : null;
+      u.weapon = (a[3] && a[3].weapon) || (a[1] === 'thieulam' ? (S.wp === 'staff' || S.wp === 'stick' ? S.wp : 'shield') : AW[a[1]]) || S.wp;
       u.col = S.col; u.col2 = S.col2; u.ch = S.ch; u.fxc = S.fxc || S.col;
       if (i === 7 && S.ult) { for (var f4 in S.ult) u.skill[f4] = S.ult[f4]; u.ult = true; u.wglow = S.fxc || S.col; u.up = { name: S.ult.title || a[0] }; }
       if (a[3]) for (var f3 in a[3]) if (f3 !== 'weapon') u[f3] = a[3][f3];
