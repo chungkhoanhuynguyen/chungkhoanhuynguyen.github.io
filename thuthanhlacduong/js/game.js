@@ -160,7 +160,7 @@
 
   // ---------- BOT CHAT có cảm xúc ----------
   const Bot = (() => {
-    const NAMES = ['TiểuYêuNữ_99', 'ĐườngMônĐệNhất', 'KiếmKháchSG', 'ThiếuLâmCuồngTăng', 'BangChủHàNội', 'NgaMyTiênTử', 'HắcPhongLãoQuái', 'VôDanhKiếmKhách', 'CônLônLôiĐế', 'ThiênVươngBáĐạo'];
+    const NAMES = ['deoyeuanh2005', 'hoangtucodon9x', 'boyhanoi_97', 'tieuthu_kute', 'xxsatthuxx', 'conan_vn', 'anhbaduoc123', 'meomeo2k3', 'buonvl_9x', 'kiemsi_codon', 'chimse_nho', 'datvietpro', 'langtu_ha', 'tuanbeo98', 'congchua_bongbong', 'quanghai_fan', 'thanhnien_nghiem', 'saobang9x', 'hoaxuong_rong', 'zZbatbaiZz', 'nhoxkute2006', 'vuaphongthu', 'anhtrai_mua', 'pikachu_vn', 'lananh_99', 'sieunhan_do', 'khongten123', 'thichthiquay', 'tuyetnhi_vl', 'kenzie_sg'];
     const L = {
       greet: { k: ['Vào đi, ta chấp ngươi 5 đợt 😏', 'Thành Lạc Dương sắp đổi chủ rồi', 'Lại một kẻ muốn thử sức à'], v: ['Chào bạn nha, chơi vui vẻ! 😄', 'Hello gl hf nhé', 'Trận này căng đây hihi'], c: ['Lại ghép trúng người lạ...', 'gl. nhanh lên', 'Ờ chào'] },
       pLeak: { k: ['Thủng thành rồi kìa haha', 'Phòng thủ như giấy vậy?', 'Ta đếm được mấy con lọt rồi đó 😏'], v: ['Ối, lọt mất mấy con rồi', 'Cố lên bạn ơi!', 'Nguy hiểm quá 😳'], c: ['Hehe đáng đời', 'Thấy chưa', 'Lọt nữa đi 😂'] },
@@ -344,18 +344,18 @@
     $('avaMe').style.backgroundImage = `url(${ICON['f_' + myMascot]})`; $('avaOp').style.backgroundImage = `url(${ICON['f_' + opMascot]})`;
     const bn = Bot.start(); V.setCastleNames(['Thành ' + PNAME, 'Thành ' + bn]);
     $('nmMe').innerHTML = PNAME.replace(/&/g,'&amp;') + ' <small>' + R.MASCOTS[myMascot].name + '</small>';
-    $('nmOp').innerHTML = bn + ' <small>Máy · ' + { easy: 'Dễ', normal: 'Thường', hard: 'Khó' }[diff] + '</small>';
+    $('nmOp').innerHTML = bn + ' <small>' + RANK.title(RANK.botPts) + '</small>';
     $('chat').innerHTML = ''; streak = 0; totalKills = 0; selCard = null; selUnitId = null; hidePanels();
     running = true; acc = 0; flushEvents();
     toast('Chạm thẻ môn phái, rồi chạm ô trên sân để đặt đệ tử');
   }
   function endGame() {
     running = false; const w = G.winner === -1 ? -1 : (G.winner === ME ? 0 : 1), P = G.players[ME];
-    const coop = NET && NET.mode === 'coop', okc = coop && G.players[0].hp > 0 && G.players[1].hp > 0; $('endT').textContent = coop ? (okc ? 'Thủ Thành Thành Công' : 'Thất Thủ') : w === ME ? 'Chiến Thắng' : w === OP ? 'Thất Thủ' : 'Hoà';
-    $('endT').style.color = (coop ? okc : w === ME) ? '#ffdf8a' : '#ff7a6a';
-    $('endS').textContent = coop ? (okc ? 'Hai thành cùng trụ vững 20 đợt giặc' : 'Một thành đã thất thủ — cùng luyện thêm rồi phục thù') : w === ME ? 'Thành Lạc Dương vững như bàn thạch' : w === 1 ? 'Thành đã bị phá — luyện thêm rồi phục thù' : 'Hai bên ngang tài ngang sức';
+    const coop = NET && NET.mode === 'coop', okc = coop && G.players[0].hp > 0 && G.players[1].hp > 0; $('endT').textContent = coop ? (okc ? 'Thủ Thành Thành Công' : 'Thất Thủ') : w === 0 ? 'Chiến Thắng' : w === 1 ? 'Thất Thủ' : 'Hoà';
+    $('endT').style.color = (coop ? okc : w === 0) ? '#ffdf8a' : '#ff7a6a';
+    $('endS').textContent = coop ? (okc ? 'Hai thành cùng trụ vững 20 đợt giặc' : 'Một thành đã thất thủ — cùng luyện thêm rồi phục thù') : w === 0 ? 'Thành Lạc Dương vững như bàn thạch' : w === 1 ? 'Thành đã bị phá — luyện thêm rồi phục thù' : 'Hai bên ngang tài ngang sức';
     $('endStats').innerHTML = `<div>Đợt<b>${G.wave}</b></div><div>Hạ giặc<b>${P.kills}</b></div><div>Máu thành<b>${P.hp}</b></div>`;
-    $('end').hidden = false; Sfx.play((coop ? okc : w === ME) ? 'win' : 'lose'); Sfx.setFight(false);
+    $('end').hidden = false; Sfx.play((coop ? okc : w === 0) ? 'win' : 'lose'); rankResult(coop ? (okc ? 0 : 1) : w); Sfx.setFight(false);
     botForce(w === 1 ? 'win' : 'lose');
   }
   $('btnAgain').addEventListener('click', () => { $('end').hidden = true; newGame(); });
@@ -363,7 +363,7 @@
 
   // màn hình chọn linh vật
   function showStart() {
-    $('start').hidden = false; running = false; document.body.classList.add('menu'); $('pname').value = PNAME;
+    $('start').hidden = false; running = false; document.body.classList.add('menu'); $('pname').value = PNAME; showRank(); document.querySelectorAll('.rk').forEach((x) => x.remove());
     $('mrow').innerHTML = R.MASCOT_ORDER.map((k) => `<button class="mc${k === myMascot ? ' sel' : ''}" data-m="${k}"><img src="${ICON['m_' + k]}" alt=""><div class="nm">${R.MASCOTS[k].name}</div><div class="bn">${R.MASCOTS[k].bonus}</div></button>`).join('');
     document.querySelectorAll('#diff button').forEach((b) => b.classList.toggle('on', b.dataset.d === diff));
     G = S.create({ seed: 1, mascots: [myMascot, R.MASCOT_ORDER.find((k) => k !== myMascot)] }); G.maxHp = [G.players[0].hp, G.players[1].hp];
@@ -371,7 +371,31 @@
   }
   $('mrow').addEventListener('click', (e) => { const b = e.target.closest('[data-m]'); if (!b) return; Sfx.init(); Sfx.play('click'); myMascot = b.dataset.m; try { localStorage.setItem('ttld_mascot', myMascot); } catch (x) {} showStart(); });
   $('diff').addEventListener('click', (e) => { const b = e.target.closest('[data-d]'); if (!b) return; diff = b.dataset.d; try { localStorage.setItem('ttld_diff', diff); } catch (x) {} Sfx.init(); Sfx.play('click'); document.querySelectorAll('#diff button').forEach((x) => x.classList.toggle('on', x.dataset.d === diff)); });
-  $('btnPlay').addEventListener('click', () => { if (!nameOk()) return; playStory(() => { Sfx.init(); Sfx.play('gong', true); $('start').hidden = true; document.body.classList.remove('menu'); V.cam.zoom = 1; newGame(); }); });
+  $('btnPlay').addEventListener('click', () => { if (!nameOk()) return; diff = RANK.pickBot(); playStory(() => { Sfx.init(); Sfx.play('gong', true); $('start').hidden = true; document.body.classList.remove('menu'); V.cam.zoom = 1; newGame(); }); });
+  // ---------- XẾP HẠNG: 7 bậc × 10 mốc ----------
+  const RANK = (() => {
+    const TIERS = [['Đồng', '#c08457'], ['Bạc', '#c9d3dc'], ['Vàng', '#ffd54f'], ['Bạch Kim', '#7fe0d8'], ['Kim Cương', '#82b1ff'], ['Cao Thủ', '#e040fb'], ['Đại Tông Sư', '#ff5252']];
+    const HERO = ['Tân Binh', 'Hiệp Khách', 'Thiếu Hiệp', 'Đại Hiệp', 'Chưởng Môn', 'Tông Sư', 'Võ Lâm Minh Chủ'];
+    let pts = 0; try { pts = +localStorage.getItem('ttld_rank') || 0; } catch (e) {}
+    const per = 100;   // 100 điểm mỗi mốc, 10 mốc mỗi bậc
+    const info = (p) => { const t = Math.min(TIERS.length - 1, Math.floor(p / (per * 10))), m = Math.min(10, Math.floor((p - t * per * 10) / per) + 1); return { t, m, name: TIERS[t][0] + ' ' + m, col: TIERS[t][1], hero: HERO[t] }; };
+    return {
+      get pts() { return pts; }, info, botPts: 0,
+      title: (p) => info(p).name,
+      pickBot() { this.botPts = Math.max(0, pts + Math.round((Math.random() - 0.4) * 260)); const t = info(this.botPts).t; return t <= 0 ? 'easy' : t <= 2 ? 'normal' : 'hard'; },
+      add(d) { pts = Math.max(0, pts + d); try { localStorage.setItem('ttld_rank', pts); } catch (e) {} }
+    };
+  })();
+  function rankResult(w) {
+    if (NET && NET.mode === 'coop') return;
+    const before = RANK.info(RANK.pts), d = w === 0 ? 35 + Math.round(Math.max(0, RANK.botPts - RANK.pts) / 20) : w === 1 ? -22 : 0;
+    RANK.add(d); const after = RANK.info(RANK.pts);
+    const up = after.t > before.t ? ' · Thăng bậc: ' + after.hero + '!' : '';
+    $('endStats').insertAdjacentHTML('afterend', `<div class="tag rk">Rank: <b style="color:${after.col}">${after.name}</b> (${d >= 0 ? '+' : ''}${d} điểm)${up}</div>`);
+    showRank();
+  }
+  function showRank() { const r = RANK.info(RANK.pts); const el = $('rankBox'); if (el) el.innerHTML = `Rank của bạn: <b style="color:${r.col}">${r.name}</b> · Danh hiệu tướng chính: <b>${r.hero}</b>`; }
+
   // ---------- CỐT TRUYỆN MỞ ĐẦU ----------
   const STORY = [
     ['p0', 'Hà Nội, 2 giờ sáng. Quán net 24H vắng tanh, chỉ còn tiếng quạt máy và ánh đèn xanh của dàn máy chơi game.'],

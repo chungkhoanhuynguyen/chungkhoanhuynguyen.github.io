@@ -231,15 +231,15 @@ body.menu #top,body.menu #res,body.menu #bottom,body.menu #tools,body.menu #chat
     <div class="tag">Chọn linh vật — vị chưởng môn sẽ chạy ra triệu hồi đệ tử các môn phái giữ thành</div>
     <div class="acct"><label for="pname">Tên tài khoản (cũng là tên thành của bạn)</label><input id="pname" maxlength="16" placeholder="Ví dụ: Huy Nguyễn" autocomplete="nickname"></div>
     <div class="mrow" id="mrow"></div>
-    <div class="seg" id="diff"><button data-d="easy">Dễ</button><button data-d="normal">Thường</button><button data-d="hard">Khó</button></div><br>
-    <button id="btnPlay">Đấu với máy</button>
+    <div class="seg" id="diff" hidden><button data-d="easy">Dễ</button><button data-d="normal">Thường</button><button data-d="hard">Khó</button></div><div class="tag" id="rankBox"></div>
+    <button id="btnPlay">Đấu rank</button>
     <div class="onl">
       <button class="big ob" id="btnCoop">Thủ thành cùng nhau · online</button>
       <button class="big ob" id="btnVs">Đấu online 1 đấu 1</button>
       <div class="room"><button class="big ob2" id="btnRoom">Tạo phòng rủ bạn</button><input id="roomCode" inputmode="numeric" maxlength="4" placeholder="Mã phòng"><button class="big ob2" id="btnJoin">Vào phòng</button></div>
       <div id="onlStatus" aria-live="polite"></div><button class="big ob2" id="btnCancel" hidden>Huỷ tìm trận</button>
     </div>
-    <div class="note">Không tìm được người sau 25 giây thì máy sẽ vào thay.</div>
+    <div class="note">Rank có 7 bậc (Đồng → Đại Tông Sư), mỗi bậc 10 mốc. Trận rank có thể ghép với người chơi máy.</div>
     <details class="how"><summary>Cách chơi</summary><ul>
       <li>Mỗi đợt có thời gian xây: chạm thẻ môn phái rồi chạm ô trên sân của bạn để đặt đệ tử.</li>
       <li>Hết giờ (hoặc bấm Sẵn sàng), giặc tràn ra từ trận pháp; đệ tử tự đánh. Giặc lọt tới cổng thành sẽ trừ máu thành.</li>
@@ -257,26 +257,26 @@ body.menu #top,body.menu #res,body.menu #bottom,body.menu #tools,body.menu #chat
     <div class="row"><button class="big bSell" id="btnMenu">Đổi linh vật</button><button class="big" id="btnAgain" style="background:linear-gradient(180deg,#ffdf8a,#c48a22);color:#2a0f0a">Chơi lại</button></div>
   </div>
 </div>
-<script src="js/three.min.js?v=1795441065"></script>
-<script src="js/CopyShader.js?v=1795441065"></script>
-<script src="js/LuminosityHighPassShader.js?v=1795441065"></script>
-<script src="js/EffectComposer.js?v=1795441065"></script>
-<script src="js/ShaderPass.js?v=1795441065"></script>
-<script src="js/RenderPass.js?v=1795441065"></script>
-<script src="js/UnrealBloomPass.js?v=1795441065"></script>
-<script src="js/Water.js?v=1795441065"></script>
-<script src="js/GLTFLoader.js?v=1795441065"></script>
-<script src="js/SkeletonUtils.js?v=1795441065"></script>
-<script src="js/peerjs.min.js?v=1795441065"></script>
-<script src="js/tex.js?v=1795441065"></script>
-<script src="js/vrmbones.js?v=1795441065"></script>
-<script src="js/sim.js?v=1795441065"></script>
-<script src="js/audio.js?v=1795441065"></script>
-<script src="js/render.js?v=1795441065"></script>
-<script src="js/r3d.js?v=1795441065"></script>
-<script src="js/anime3d.js?v=1795441065"></script>
-<script src="js/net.js?v=1795441065"></script>
-<script src="js/game.js?v=1795441065"></script>
+<script src="js/three.min.js?v=1795441511"></script>
+<script src="js/CopyShader.js?v=1795441511"></script>
+<script src="js/LuminosityHighPassShader.js?v=1795441511"></script>
+<script src="js/EffectComposer.js?v=1795441511"></script>
+<script src="js/ShaderPass.js?v=1795441511"></script>
+<script src="js/RenderPass.js?v=1795441511"></script>
+<script src="js/UnrealBloomPass.js?v=1795441511"></script>
+<script src="js/Water.js?v=1795441511"></script>
+<script src="js/GLTFLoader.js?v=1795441511"></script>
+<script src="js/SkeletonUtils.js?v=1795441511"></script>
+<script src="js/peerjs.min.js?v=1795441511"></script>
+<script src="js/tex.js?v=1795441511"></script>
+<script src="js/vrmbones.js?v=1795441511"></script>
+<script src="js/sim.js?v=1795441511"></script>
+<script src="js/audio.js?v=1795441511"></script>
+<script src="js/render.js?v=1795441511"></script>
+<script src="js/r3d.js?v=1795441511"></script>
+<script src="js/anime3d.js?v=1795441511"></script>
+<script src="js/net.js?v=1795441511"></script>
+<script src="js/game.js?v=1795441511"></script>
 
 </body>
 </html>
