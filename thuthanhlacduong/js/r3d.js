@@ -237,6 +237,7 @@ var V = (function () {
     buildGrass();
     buildAmbient();
     buildProps();
+    buildBackdrop();
     // vườn giữa
     var grass = canvasTex(64, 64, function (g) { g.fillStyle = '#5e7f3e'; g.fillRect(0, 0, 64, 64); for (var i = 0; i < 160; i++) { g.fillStyle = Math.random() < 0.5 ? '#6f9448' : '#4f6e32'; g.fillRect(Math.random() * 64, Math.random() * 64, 2, 3); } }, [3, 12]);
     var gm = mesh(new T.PlaneGeometry(LCX[1] - LW - 0.3, 20), M('#ffffff', { map: grass }), MX, 0.015, 0, false); gm.rotation.x = -Math.PI / 2; gm.receiveShadow = true; scene.add(gm);
@@ -423,6 +424,47 @@ var V = (function () {
     for (var f = 0; f < 6; f++) { [L0 + 3.2, R0 - 3.2].forEach(function (fx, si) { var pole = mesh(G('pole2', function () { return new T.CylinderGeometry(0.05, 0.05, 4, 5); }), M('#3a2a1a'), fx, 2, -10 + f * 3.8); scene.add(pole); var fl = mesh(G('flag2', function () { return new T.PlaneGeometry(0.7, 1.8, 3, 6); }), M(['#c62828', '#f9a825', '#1565c0'][(f + si) % 3], { side: T.DoubleSide }), fx + 0.36, 3.0, -10 + f * 3.8); scene.add(fl); FLAGS.push(fl); }); }
     // đá cuội & thùng gỗ rải rác
     for (var i = 0; i < 40; i++) { var side = i % 2 ? 1 : -1, bx = side < 0 ? L0 + (Math.random() - 0.5) * 8 : R0 + (Math.random() - 0.5) * 8; var o = mesh(i % 4 ? G('rock', null) : box(0.5, 0.5, 0.5), M(i % 4 ? '#8d8a82' : '#8d6e63'), bx, 0.2, -12 + Math.random() * 22); o.scale.multiplyScalar(0.4 + Math.random() * 0.4); o.rotation.y = Math.random() * 3; scene.add(o); }
+  }
+
+  // ---------- PHỐ PHƯỜNG + ĐỒI THÔNG phía xa (instanced: rất nhẹ cho điện thoại) ----------
+  function buildBackdrop() {
+    var houses = [], rnd = function (a, b) { return a + Math.random() * (b - a); };
+    // phố sau tường thành và hai góc trên
+    for (var z = -17.5; z >= -34; z -= rnd(4.2, 5.5)) for (var x = MX - 62; x <= MX + 62; x += rnd(4.4, 6.2)) {
+      if (Math.abs(x - MX) < 7 && z > -30) continue;              // chừa điện chính + bảo tháp
+      if (Math.random() < 0.12) continue;
+      houses.push({ x: x + rnd(-0.8, 0.8), z: z + rnd(-0.6, 0.6), w: rnd(2.6, 4.2), d: rnd(2.2, 3.2), h: rnd(1.1, 1.9), r: Math.random() < 0.5 ? 0 : Math.PI / 2, tier: Math.random() < 0.18 });
+    }
+    // hai bên ngoài cùng (trái/phải, phía trên bản đồ)
+    for (var z2 = -15; z2 <= 6; z2 += rnd(4.5, 6)) for (var k = 0; k < 2; k++) { var sx = k ? LCX[1] + HL + rnd(25, 34) : -HL - rnd(25, 34); houses.push({ x: sx, z: z2, w: rnd(2.6, 3.8), d: rnd(2.2, 3), h: rnd(1.1, 1.7), r: Math.PI / 2, tier: false }); }
+    var n = houses.length + houses.filter(function (h) { return h.tier; }).length;
+    var wallI = new T.InstancedMesh(new T.BoxGeometry(1, 1, 1), new T.MeshLambertMaterial({ color: '#e6d6ba' }), houses.length);
+    var colI = new T.InstancedMesh(new T.BoxGeometry(1, 1, 1), new T.MeshLambertMaterial({ color: '#8e1b14' }), houses.length);
+    var roofI = new T.InstancedMesh(roofGeo(1, 0.75, 0.42, 0.22, 0.22), new T.MeshToonMaterial({ color: '#b52a1a', gradientMap: gradTex, map: roofTex, side: T.DoubleSide }), n);
+    var winI = new T.InstancedMesh(new T.BoxGeometry(1, 1, 1), new T.MeshBasicMaterial({ color: '#ffc46a' }), houses.length);
+    var m4 = new T.Matrix4(), q = new T.Quaternion(), ri = 0, col = new T.Color();
+    houses.forEach(function (h, i) {
+      q.setFromAxisAngle(new T.Vector3(0, 1, 0), h.r);
+      m4.compose(new T.Vector3(h.x, h.h / 2, h.z), q, new T.Vector3(h.w, h.h, h.d)); wallI.setMatrixAt(i, m4);
+      m4.compose(new T.Vector3(h.x, h.h + 0.06, h.z), q, new T.Vector3(h.w + 0.1, 0.14, h.d + 0.1)); colI.setMatrixAt(i, m4);
+      var fwd = new T.Vector3(0, 0, h.d / 2 + 0.01).applyQuaternion(q);
+      m4.compose(new T.Vector3(h.x + fwd.x, h.h * 0.5, h.z + fwd.z), q, new T.Vector3(h.w * 0.5, h.h * 0.32, 0.04)); winI.setMatrixAt(i, m4);
+      m4.compose(new T.Vector3(h.x, h.h + 0.1, h.z), q, new T.Vector3(h.w * 1.15, h.w * 1.05, h.d * 1.45)); roofI.setMatrixAt(ri, m4); col.setHSL(0.01 + Math.random() * 0.02, 0.6, 0.38 + Math.random() * 0.12); roofI.setColorAt(ri++, col);
+      if (h.tier) { m4.compose(new T.Vector3(h.x, h.h + h.w * 0.42, h.z), q, new T.Vector3(h.w * 0.75, h.w * 0.7, h.d * 0.95)); roofI.setMatrixAt(ri, m4); roofI.setColorAt(ri++, col); }
+    });
+    roofI.count = ri; [wallI, colI, roofI].forEach(function (o) { o.castShadow = true; o.receiveShadow = true; scene.add(o); }); scene.add(winI);
+    // đồi xanh + rừng thông hai góc
+    var hillM = new T.MeshLambertMaterial({ color: '#4d6b38' }), hillG = new T.SphereGeometry(1, 20, 12, 0, Math.PI * 2, 0, Math.PI / 2);
+    var hills = [[MX - 58, -20, 16, 5], [MX - 44, -32, 14, 6], [MX + 58, -20, 16, 5], [MX + 44, -32, 14, 6], [MX - 66, -4, 12, 4], [MX + 66, -4, 12, 4], [MX, -44, 30, 7]];
+    hills.forEach(function (hh) { var m = new T.Mesh(hillG, hillM); m.position.set(hh[0], -0.2, hh[1]); m.scale.set(hh[2], hh[3], hh[2] * 0.7); m.receiveShadow = true; scene.add(m); });
+    var trees = [], cone = new T.ConeGeometry(0.7, 2.2, 7); cone.translate(0, 1.6, 0);
+    var trunk = new T.CylinderGeometry(0.1, 0.14, 0.7, 5); trunk.translate(0, 0.35, 0);
+    hills.forEach(function (hh) { for (var i = 0; i < 40; i++) { var a = Math.random() * 6.28, r = Math.sqrt(Math.random()) * hh[2] * 0.92; var tx = hh[0] + Math.cos(a) * r, tz = hh[1] + Math.sin(a) * r * 0.7; var k2 = 1 - (r / hh[2]) * (r / hh[2]); var ty = hh[3] * Math.sqrt(Math.max(0, k2)) - 0.3; trees.push([tx, ty, tz, 0.7 + Math.random() * 0.8]); } });
+    var tI = new T.InstancedMesh(cone, new T.MeshLambertMaterial({ color: '#ffffff' }), trees.length), trI = new T.InstancedMesh(trunk, new T.MeshLambertMaterial({ color: '#4a3322' }), trees.length);
+    trees.forEach(function (tr, i) { m4.compose(new T.Vector3(tr[0], tr[1], tr[2]), new T.Quaternion(), new T.Vector3(tr[3], tr[3], tr[3])); tI.setMatrixAt(i, m4); trI.setMatrixAt(i, m4); col.setHSL(0.3 + Math.random() * 0.05, 0.45, 0.2 + Math.random() * 0.12); tI.setColorAt(i, col); });
+    tI.castShadow = true; scene.add(tI); scene.add(trI);
+    // sương mù nhẹ giữa phố
+    for (var f = 0; f < 8; f++) { var fg = new T.Sprite(new T.SpriteMaterial({ map: smokeTex, color: '#ffd6c0', transparent: true, opacity: 0.35, depthWrite: false })); fg.scale.set(22, 6, 1); fg.position.set(MX - 56 + f * 16, 2.5, -24 - (f % 2) * 6); scene.add(fg); }
   }
 
   // ---------- HIỆU ỨNG MÔI TRƯỜNG ----------

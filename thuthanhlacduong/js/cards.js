@@ -8,8 +8,8 @@ var CARDS = (function () {
     thieulam: ['M5_aoppoiyo', 'staff', '#e8952a'], caibang: ['N8_kokuyou', 'stick', '#8d6e63'],
     m_bachy: ['N7_flow', 'fan', '#9fd3ff'], m_honglien: ['S2_darkD', 'twin', '#ff5252'], m_thanhlong: ['M5_aoppoiyo', 'sword', '#1de9b6'], m_kimgiap: ['N78_noise', 'spear', '#ffd740']
   };
-  var FRAMES = ['idle0', 'idle1', 'walk0', 'walk1', 'atk', 'cast'];
-  var CW = 256, CH = 400, VH = 2.05;   // khung chụp: cao 2,05 m
+  var FRAMES = ['idle0', 'idle1', 'idle2', 'walk0', 'walk1', 'walk2', 'walk3', 'walk4', 'walk5', 'atk0', 'atk', 'cast0', 'cast'];
+  var CW = 224, CH = 350, VH = 2.05;   // khung chụp: cao 2,05 m
   var models = {};
 
   function rotW(b, axisW, ang) { var pq = new T.Quaternion(); b.parent.getWorldQuaternion(pq); var R = new T.Quaternion().setFromAxisAngle(axisW, ang); b.quaternion.premultiply(pq.clone().invert().multiply(R).multiply(pq)); b.updateMatrixWorld(true); }
@@ -48,14 +48,22 @@ var CARDS = (function () {
           var lUL = b('leftUpperLeg'), rUL = b('rightUpperLeg'), lLL = b('leftLowerLeg'), rLL = b('rightLowerLeg');
           var lUA = b('leftUpperArm'), rUA = b('rightUpperArm'), lLA = b('leftLowerArm'), rLA = b('rightLowerArm');
           if (lLA) rotW(lLA, X, -0.25); if (rLA) rotW(rLA, X, -0.35);
-          if (fr === 'idle1') { if (sp) rotW(sp, X, 0.05); if (hd) rotW(hd, Z, 0.06); }
-          if (fr === 'walk0' || fr === 'walk1') { var s = fr === 'walk0' ? 1 : -1; if (lUL) rotW(lUL, X, -0.5 * s); if (rUL) rotW(rUL, X, 0.5 * s); if (lLL) rotW(lLL, X, s > 0 ? 0.2 : 0.6); if (rLL) rotW(rLL, X, s > 0 ? 0.6 : 0.2); if (lUA) rotW(lUA, X, 0.45 * s); if (rUA) rotW(rUA, X, -0.45 * s); if (sp) rotW(sp, X, 0.12); }
+          var num = +fr.replace(/\D/g, '') || 0;
+          if (fr.indexOf('idle') === 0) { var br = [0, 0.5, 1][num]; if (sp) rotW(sp, X, 0.04 * br); if (hd) rotW(hd, Z, 0.05 * br); if (lUA) rotW(lUA, Z, 0.05 * br); if (rUA) rotW(rUA, Z, -0.05 * br); }
+          if (fr.indexOf('walk') === 0) {
+            var ph = num / 6 * Math.PI * 2, s1 = Math.sin(ph), c1 = Math.cos(ph);
+            if (lUL) rotW(lUL, X, -0.55 * s1); if (rUL) rotW(rUL, X, 0.55 * s1);
+            if (lLL) rotW(lLL, X, 0.15 + 0.55 * Math.max(0, -c1)); if (rLL) rotW(rLL, X, 0.15 + 0.55 * Math.max(0, c1));
+            if (lUA) rotW(lUA, X, 0.5 * s1); if (rUA) rotW(rUA, X, -0.5 * s1); if (sp) rotW(sp, X, 0.12); if (ch) rotW(ch, Y, 0.12 * s1);
+          }
+          if (fr === 'atk0') { if (rUA) aim(rUA, rLA, ax(-0.7, 0.75, -0.25)); if (ch) rotW(ch, Y, -0.35); if (lUA) aim(lUA, lLA, ax(0.5, -0.6, 0.4)); }
           if (fr === 'atk') { if (rUA) aim(rUA, rLA, ax(-0.25, 0.85, 0.75)); if (rLA) rotW(rLA, X, -0.2); if (ch) rotW(ch, Y, 0.35); if (lUA) aim(lUA, lLA, ax(0.6, -0.5, 0.4)); if (lUL) rotW(lUL, X, -0.35); if (rUL) rotW(rUL, X, 0.25); }
+          if (fr === 'cast0') { if (rUA) aim(rUA, rLA, ax(-0.6, 0.1, 0.8)); if (lUA) aim(lUA, lLA, ax(0.6, 0.1, 0.8)); }
           if (fr === 'cast') { if (rUA) aim(rUA, rLA, ax(-0.55, 0.9, 0.35)); if (lUA) aim(lUA, lLA, ax(0.55, 0.9, 0.35)); if (hd) rotW(hd, X, -0.18); if (sp) rotW(sp, X, -0.08); }
           // vũ khí theo cẳng tay
           var hand = b('rightHand') || rLA, fore = rLA;
           if (hand && h[1]) {
-            var wg = new T.Group(); V.weapon3(wg, h[1] === 'twin' ? 'sword' : h[1], { wglow: (fr === 'atk' || fr === 'cast') ? h[2] : null });
+            var wg = new T.Group(); V.weapon3(wg, h[1] === 'twin' ? 'sword' : h[1], { wglow: (fr === 'atk' || fr === 'cast' || fr === 'cast0') ? h[2] : null });
             wg.scale.setScalar(1.75);
             var hp = hand.getWorldPosition(new T.Vector3()), fp = fore ? fore.getWorldPosition(new T.Vector3()) : hp.clone().add(new T.Vector3(0, 0.2, 0));
             var dir = hp.clone().sub(fp).normalize();
@@ -95,20 +103,23 @@ var CARDS = (function () {
   }
   function anim(v, st, dt, t, camera) {
     var U = v.userData, fr;
-    if (st.cast && st.cast !== U.lastCast) { U.lastCast = st.cast; U.castT = 0.45; }
-    if (st.atk > 0.2 && U.atkT <= 0) U.atkT = 0.28;
+    if (st.cast && st.cast !== U.lastCast) { U.lastCast = st.cast; U.castT = 0.5; }
+    if (st.atk > 0.2 && U.atkT <= 0) U.atkT = 0.32;
     U.castT -= dt; U.atkT -= dt;
-    if (U.castT > 0) fr = 'cast'; else if (U.atkT > 0) fr = 'atk';
-    else if (st.moving) fr = Math.floor(t * 6 + U.ph) % 2 ? 'walk0' : 'walk1';
-    else fr = Math.floor(t * 1.6 + U.ph) % 2 ? 'idle0' : 'idle1';
-    if (fr !== U.fr) { U.fr = fr; var tx = F[U.key][fr].t; U.mesh.material.map = tx; if (U.glow) U.glow.material.map = tx; }
-    // luôn quay mặt thẻ về camera, lật trái/phải theo hướng đánh
+    var bob = 0, sq = 1;
+    if (U.castT > 0) { fr = U.castT > 0.36 ? 'cast0' : 'cast'; sq = 1 + Math.sin((0.5 - U.castT) / 0.5 * Math.PI) * 0.05; }
+    else if (U.atkT > 0) { fr = U.atkT > 0.2 ? 'atk0' : 'atk'; sq = U.atkT > 0.2 ? 0.96 : 1.04; }
+    else if (st.moving) { var wp6 = (t * 10 + U.ph * 6) % 6; fr = 'walk' + Math.floor(wp6); bob = Math.abs(Math.sin(wp6 / 6 * Math.PI * 2)) * 0.06; }
+    else { var ip = (t * 2.2 + U.ph) % 4, k = Math.floor(ip); fr = 'idle' + [0, 1, 2, 1][k]; }
+    if (fr !== U.fr && F[U.key][fr]) { U.fr = fr; var tx = F[U.key][fr].t; U.mesh.material.map = tx; if (U.glow) U.glow.material.map = tx; }
     var wp = v.getWorldPosition(new T.Vector3());
     U.holder.rotation.y = Math.atan2(camera.position.x - wp.x, camera.position.z - wp.z) - v.rotation.y;
     if (st.face) U.face = st.face;
-    U.holder.scale.x = Math.abs(U.holder.scale.x) * U.face;
-    U.mesh.rotation.z = st.dead ? 0 : (U.fr === 'atk' ? -0.05 * U.face : 0);
-    if (st.dead) { U.mesh.material.opacity = 0.35; } else U.mesh.material.opacity = 1;
+    U.fs = U.face;
+    var base = Math.abs(U.holder.userData.s || (U.holder.userData.s = U.holder.scale.y));
+    U.holder.scale.set(base * U.fs / sq * (Math.abs(U.fs) < 0.2 ? 1 : 1), base * sq, base);
+    U.holder.position.y = bob;
+    U.mesh.material.opacity = st.dead ? 0.35 : 1;
     if (U.glow) U.glow.material.opacity = 0.4 + Math.sin(t * 4 + U.ph) * 0.2;
   }
   function bbox(c) { var d = c.getContext('2d').getImageData(0, 0, CW, CH).data, x0 = CW, x1 = 0, y0 = CH, y1 = 0; for (var y = 0; y < CH; y += 2) for (var x = 0; x < CW; x += 2) if (d[(y * CW + x) * 4 + 3] > 40) { if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y; } return { x0: x0, x1: x1, y0: y0, y1: y1 }; }
