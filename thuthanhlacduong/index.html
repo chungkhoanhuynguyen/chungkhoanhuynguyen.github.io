@@ -204,6 +204,55 @@ body.menu #top,body.menu #res,body.menu #bottom,body.menu #tools,body.menu #chat
 .p1{background:linear-gradient(180deg,#140a10,#3a0f0a)}.p1::after{content:'THỦ THÀNH LẠC DƯƠNG';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-3deg);padding:16px 22px;background:linear-gradient(180deg,#b71c1c,#5a0a06);border:3px solid #e8b04a;font:900 clamp(18px,4vw,30px) 'Playfair Display';color:#ffdf8a;white-space:nowrap;box-shadow:0 0 30px rgba(255,120,60,.5)}
 .p2{background:radial-gradient(circle at 50% 50%,#fff 0,#b388ff 12%,#311b92 35%,#05030a 70%);animation:spin 3s linear infinite}@keyframes spin{to{filter:hue-rotate(360deg)}}
 .p3{background:linear-gradient(180deg,#ffb36b 0,#c0392b 45%,#3a1208 100%)}.p3::after{content:'';position:absolute;left:0;right:0;bottom:18%;height:28%;background:repeating-linear-gradient(90deg,#5a3a2a 0 22px,#4a2e20 22px 26px);clip-path:polygon(0 30%,8% 30%,8% 0,14% 0,14% 30%,86% 30%,86% 0,92% 0,92% 30%,100% 30%,100% 100%,0 100%)}
+
+/* ===== MÀN HÌNH ĐẦU — gọn, từng trang ===== */
+#start .box{width:min(520px,100%);max-height:100%;overflow-y:auto;padding-bottom:16px}
+.pg{display:grid;gap:10px;text-align:left}
+.ph{display:flex;align-items:center;gap:10px;font:900 18px "Playfair Display",serif;color:var(--gold2)}
+.back{background:rgba(255,255,255,.1);border:1px solid rgba(232,194,106,.45);border-radius:999px;padding:6px 14px;font-weight:800;font-size:13px}
+.acard{border-radius:12px;padding:10px 12px}
+.acard>div{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.acard .ai{font-size:20px}.acard .at{flex:1;min-width:140px;font-size:13px;line-height:1.3}
+.sbtn{background:rgba(255,255,255,.1);border:1px solid rgba(232,194,106,.5);border-radius:8px;padding:8px 12px;font-weight:700;font-size:13px}
+.sbtn.gold,.mbtn.gold{background:linear-gradient(180deg,#ffdf8a,#c48a22);color:#2a0f0a;border-color:#fff3c4}
+.mbtn{width:100%;min-height:48px;border-radius:12px;font-weight:800;font-size:15px;padding:0 14px}
+.pick{display:flex;align-items:center;gap:12px;width:100%;padding:8px 12px;border-radius:12px;text-align:left;border:1px solid rgba(232,194,106,.45)}
+.pick img{width:64px;height:64px;border-radius:10px;object-fit:cover;background:#2a120a}
+.pick .pkt{flex:1;display:grid;line-height:1.15}.pick small{font-size:11px;opacity:.7}.pick b{font:900 15px "Playfair Display",serif;color:var(--gold2);margin-bottom:3px}
+.pick .pkc{font-weight:800;color:#ffd740}
+#btnPlay{width:100%;padding:0}
+.mini{display:flex;gap:8px}.mini .sbtn{flex:1}
+.tabs{display:grid;grid-template-columns:1fr 1fr;gap:6px}.tabs button{min-height:44px;border-radius:10px;background:rgba(255,255,255,.07);border:1px solid rgba(232,194,106,.3);font-weight:800}
+.tabs button.on{background:linear-gradient(180deg,#ffdf8a,#c48a22);color:#2a0f0a}
+.form{display:grid;gap:6px;padding:12px;border-radius:12px}.form label{font-size:13px;font-weight:700}.form label small{font-weight:400;opacity:.7}
+.form input,.join input{width:100%;min-height:46px;border-radius:10px;border:1px solid rgba(232,194,106,.6);background:rgba(0,0,0,.35);color:#fff;padding:0 12px;font-size:16px}
+.form .mbtn{margin-top:6px}.msg{min-height:18px;font-size:13px;color:#ffcf6a;font-weight:700}
+.stl{font-weight:800;color:var(--gold2);font-size:14px}.stl small{font-weight:400;opacity:.75}
+.oc{display:grid;gap:8px;padding:12px;border-radius:12px}.oc b{font:900 16px "Playfair Display",serif;color:var(--gold2)}.oc small{font-size:12.5px;opacity:.85;line-height:1.35}
+.join{display:grid;grid-template-columns:1fr auto;gap:8px}.join .mbtn{width:auto}
+.wait{display:grid;gap:8px;justify-items:center;padding:14px;border-radius:12px;text-align:center}
+.wait .code{font:900 44px/1 "Be Vietnam Pro",sans-serif;letter-spacing:10px;color:#ffd740;text-shadow:0 0 18px rgba(255,200,80,.6)}
+.spin{width:28px;height:28px;border-radius:50%;border:3px solid rgba(255,255,255,.2);border-top-color:#ffd740;animation:spn 0.9s linear infinite}@keyframes spn{to{transform:rotate(360deg)}}
+#topBox{padding:8px 12px;font-size:13px;border-radius:10px}
+ul.how{margin:0;padding:12px 12px 12px 30px;border-radius:12px;font-size:13.5px;line-height:1.45;display:grid;gap:6px}
+#start .mrow,#start .srow,#start .sinfo{max-width:none;width:100%;margin:0}
+#start .title{text-align:center;margin-bottom:8px}
+
+/* ===== ĐIỆN THOẠI DỌC: gọn, không chồng chữ ===== */
+@media (orientation:portrait) and (max-width:620px){
+  #top{grid-template-columns:1fr 1fr;gap:6px;padding-top:max(6px,env(safe-area-inset-top))}
+  #mid{grid-column:1/3;grid-row:1;justify-self:center;min-width:0;padding:2px 14px 3px}
+  #wave{font-size:15px}#phase{font-size:11px}
+  .side{grid-row:2;max-width:none;padding:3px 6px 3px 3px;gap:5px}
+  .ava{width:30px;height:30px}.pname{font-size:11.5px}.hpnum{display:none}.hpbar{height:6px}
+  #res{top:auto;bottom:calc(132px + env(safe-area-inset-bottom));left:8px;right:8px;transform:none;justify-content:center;flex-wrap:wrap}
+  .chip{font-size:11.5px;padding:2px 8px}
+  #tools{top:auto;bottom:calc(170px + env(safe-area-inset-bottom))}
+  #chat{top:92px!important;max-width:62vw}
+  #bottom{flex-direction:column;align-items:stretch;gap:4px}
+  #cards{max-width:none;flex-wrap:wrap;justify-content:center;overflow:visible}
+  .card{width:calc((100vw - 60px) / 8);height:calc((100vw - 60px) / 8 + 8px)}.card img{height:calc((100vw - 60px) / 8)}
+  #acts{justify-content:center}
+}
 </style>
 </head>
 <body>
@@ -239,35 +288,68 @@ body.menu #top,body.menu #res,body.menu #bottom,body.menu #tools,body.menu #chat
 <div id="start" class="screen">
   <div class="box">
     <h1 class="title">Thủ Thành Lạc Dương</h1>
-    <div class="tag">Chọn nhân vật chính — tự ra trận đánh giặc, mạnh dần mỗi đợt, chạm ảnh đại diện để nâng cấp</div>
-    <div class="acct" id="acctBox">
-      <div id="acctOut"><label for="pname">ID tài khoản (cũng là tên thành của bạn)</label><input id="pname" maxlength="16" placeholder="Ví dụ: huynguyen99" autocomplete="username">
-        <label for="ppw" style="margin-top:6px">Mật khẩu</label><input id="ppw" type="password" maxlength="40" placeholder="Ít nhất 6 ký tự" autocomplete="current-password">
-        <div class="room" style="grid-template-columns:1fr 1fr;margin-top:6px"><button class="big ob2" id="btnLogin">Đăng nhập</button><button class="big ob2" id="btnReg">Tạo tài khoản</button></div>
-        <div id="acctMsg" class="note"></div></div>
-      <div id="acctIn" hidden><div class="tag">Đang chơi bằng tài khoản <b id="acctName"></b> · <button class="ob2" id="btnOut" style="padding:4px 10px;border-radius:6px">Đăng xuất</button> · <button class="ob2" id="btnTop" style="padding:4px 10px;border-radius:6px">Bảng xếp hạng</button></div></div>
-    </div>
-    <div id="topBox" class="lacq" hidden style="max-width:420px;margin:0 auto 10px;padding:8px 12px;text-align:left;font-size:13px"></div>
-    <div class="mrow" id="mrow"></div>
-    <div class="tag">Gia nhập hệ phái — mỗi phái 8 tướng, nâng 5 cấp, có tuyệt kỹ trấn phái riêng</div>
-    <div class="srow" id="srow"></div><div class="sinfo lacq" id="sinfo"></div>
-    <div class="seg" id="diff" hidden><button data-d="easy">Dễ</button><button data-d="normal">Thường</button><button data-d="hard">Khó</button></div><div class="tag" id="rankBox"></div>
-    <button id="btnPlay">Đấu rank</button>
-    <div class="tag"><button class="ob2" id="btnQ" style="padding:5px 12px;border-radius:8px"></button></div>
-    <div class="onl">
-      <button class="big ob" id="btnCoop">Thủ thành cùng nhau · online</button>
-      <button class="big ob" id="btnVs">Đấu online 1 đấu 1</button>
-      <div class="room"><button class="big ob2" id="btnRoom">Tạo phòng rủ bạn</button><input id="roomCode" inputmode="numeric" maxlength="4" placeholder="Mã phòng"><button class="big ob2" id="btnJoin">Vào phòng</button></div>
-      <div id="onlStatus" aria-live="polite"></div><button class="big ob2" id="btnCancel" hidden>Huỷ tìm trận</button>
-    </div>
-    <div class="note">Rank có 12 bậc (Sắt → Cửu Ngũ Chí Tôn), mỗi bậc 10 mốc. Trận rank có thể ghép với người chơi máy.</div>
-    <details class="how"><summary>Cách chơi</summary><ul>
-      <li>Mỗi đợt có thời gian xây: chạm thẻ môn phái rồi chạm ô trên sân của bạn để đặt đệ tử.</li>
-      <li>Hết giờ (hoặc bấm Sẵn sàng), giặc tràn ra từ trận pháp; đệ tử tự đánh. Giặc lọt tới cổng thành sẽ trừ máu thành.</li>
-      <li>Chạm đệ tử để nâng cấp hoặc bán. Mỗi phái có một tuyệt chiêu riêng.</li>
-      <li>Phái quân: tốn vàng để gửi giặc sang đánh đối thủ ở đợt sau và tăng thu nhập vĩnh viễn.</li>
-      <li>Sống qua 20 đợt; ai còn nhiều máu thành hơn thì thắng. Kéo để xem sân, chụm hai ngón để phóng to.</li>
-    </ul></details>
+    <!-- TRANG CHÍNH -->
+    <section class="pg" data-pg="home">
+      <div class="acard lacq" id="acctCard">
+        <div id="acctOut"><span class="ai">👤</span><span class="at">Đang chơi khách — rank chỉ lưu trên máy này<br><small id="rankBox2"></small></span><button class="sbtn gold" data-go="acct">Đăng nhập / Tạo tài khoản</button></div>
+        <div id="acctIn" hidden><span class="ai">✅</span><span class="at"><b id="acctName"></b><br><small id="rankBox"></small></span><button class="sbtn" id="btnTop">Xếp hạng</button><button class="sbtn" id="btnOut">Đăng xuất</button></div>
+      </div>
+      <div id="topBox" class="lacq" hidden></div>
+      <button class="pick lacq" data-go="pick" aria-label="Đổi nhân vật chính và hệ phái">
+        <img id="pkImg" alt=""><span class="pkt"><small>Nhân vật chính</small><b id="pkHero"></b><small>Hệ phái</small><b id="pkSect"></b></span><span class="pkc">Đổi ›</span>
+      </button>
+      <button id="btnPlay">⚔ Đấu rank</button>
+      <button class="mbtn ob" data-go="online">🌐 Chơi online với người thật</button>
+      <div class="mini"><button class="sbtn" id="btnQ"></button><button class="sbtn" data-go="how">Cách chơi</button></div>
+      <div class="seg" id="diff" hidden><button data-d="easy">Dễ</button><button data-d="normal">Thường</button><button data-d="hard">Khó</button></div>
+    </section>
+    <!-- TÀI KHOẢN -->
+    <section class="pg" data-pg="acct" hidden>
+      <div class="ph"><button class="back" data-go="home">‹ Quay lại</button><b>Tài khoản</b></div>
+      <div class="tabs"><button class="on" data-tab="login">Đăng nhập</button><button data-tab="reg">Tạo tài khoản mới</button></div>
+      <div class="form lacq">
+        <label for="pname">ID tài khoản <small>(3–16 chữ/số, không dấu — cũng là tên thành của bạn)</small></label>
+        <input id="pname" maxlength="16" placeholder="Ví dụ: huynguyen99" autocomplete="username" autocapitalize="off" spellcheck="false">
+        <label for="ppw">Mật khẩu <small>(ít nhất 6 ký tự)</small></label>
+        <input id="ppw" type="password" maxlength="40" placeholder="Nhập mật khẩu" autocomplete="current-password">
+        <div id="pw2Row" hidden><label for="ppw2">Nhập lại mật khẩu</label><input id="ppw2" type="password" maxlength="40" placeholder="Nhập lại cho chắc" autocomplete="new-password"></div>
+        <button class="mbtn gold" id="btnLogin">Đăng nhập</button><button class="mbtn gold" id="btnReg" hidden>Tạo tài khoản</button>
+        <div id="acctMsg" class="msg" aria-live="polite"></div>
+        <div class="note">Đã có tài khoản thì đăng nhập — rank và danh hiệu theo bạn sang mọi máy.</div>
+      </div>
+    </section>
+    <!-- CHỌN NHÂN VẬT + PHÁI -->
+    <section class="pg" data-pg="pick" hidden>
+      <div class="ph"><button class="back" data-go="home">‹ Xong</button><b>Nhân vật & hệ phái</b></div>
+      <div class="stl">1. Nhân vật chính <small>— linh vật triệu hồi tướng, mỗi người một lợi thế</small></div>
+      <div class="mrow" id="mrow"></div>
+      <div class="stl">2. Gia nhập hệ phái <small>— 8 tướng, nâng 5 cấp, tuyệt kỹ riêng</small></div>
+      <div class="srow" id="srow"></div><div class="sinfo lacq" id="sinfo"></div>
+      <button class="mbtn gold" data-go="home">Xong</button>
+    </section>
+    <!-- ONLINE -->
+    <section class="pg" data-pg="online" hidden>
+      <div class="ph"><button class="back" data-go="home">‹ Quay lại</button><b>Chơi online</b></div>
+      <div class="oc lacq"><b>Ghép trận nhanh</b><small>Tự tìm người đang chờ. Không có ai thì máy vào thay.</small>
+        <button class="mbtn ob" id="btnCoop">🛡 Thủ thành cùng nhau (2 người)</button>
+        <button class="mbtn ob" id="btnVs">⚔ Đấu 1 đấu 1</button></div>
+      <div class="oc lacq"><b>Chơi với bạn bè</b><small>Một người bấm <i>Tạo phòng</i> rồi gửi mã 4 số cho bạn. Người kia nhập mã và bấm <i>Vào phòng</i>.</small>
+        <button class="mbtn ob2" id="btnRoom">➕ Tạo phòng mới</button>
+        <div class="join"><input id="roomCode" inputmode="numeric" maxlength="4" placeholder="Nhập mã 4 số"><button class="mbtn ob2" id="btnJoin">Vào phòng</button></div></div>
+      <div class="wait lacq" id="waitBox" hidden><div class="spin"></div><div id="onlStatus" aria-live="polite"></div><div class="code" id="roomShow" hidden></div><button class="sbtn" id="btnCopy" hidden>Sao chép mã</button><button class="mbtn ob2" id="btnCancel" hidden>Huỷ</button></div>
+    </section>
+    <!-- CÁCH CHƠI -->
+    <section class="pg" data-pg="how" hidden>
+      <div class="ph"><button class="back" data-go="home">‹ Quay lại</button><b>Cách chơi</b></div>
+      <ul class="how lacq">
+        <li>Mỗi đợt có thời gian xây: chạm thẻ tướng ở dưới rồi chạm ô trên sân của bạn để đặt.</li>
+        <li>Hết giờ (hoặc bấm Sẵn sàng), giặc tràn ra từ trận pháp; tướng tự đánh. Giặc lọt tới cổng thành sẽ trừ máu thành.</li>
+        <li>Chạm tướng để nâng cấp (5 cấp) hoặc bán.</li>
+        <li>Quân số có giới hạn, mỗi đợt +1 — phải dùng tướng mạnh và nâng cấp mới qua được đợt cuối.</li>
+        <li>Phái quân: tốn vàng gửi giặc sang đánh đối thủ, tăng thu nhập. Vàng tích luỹ đủ mốc được cộng lãi.</li>
+        <li>Rank có 12 bậc (Sắt → Cửu Ngũ Chí Tôn), mỗi bậc 10 mốc.</li>
+      </ul>
+    </section>
   </div>
 </div>
 <div id="end" class="screen" hidden>
@@ -278,31 +360,31 @@ body.menu #top,body.menu #res,body.menu #bottom,body.menu #tools,body.menu #chat
     <div class="row"><button class="big bSell" id="btnMenu">Đổi linh vật</button><button class="big" id="btnAgain" style="background:linear-gradient(180deg,#ffdf8a,#c48a22);color:#2a0f0a">Chơi lại</button></div>
   </div>
 </div>
-<script src="js/three.min.js?v=1795447705"></script>
-<script src="js/CopyShader.js?v=1795447705"></script>
-<script src="js/LuminosityHighPassShader.js?v=1795447705"></script>
-<script src="js/EffectComposer.js?v=1795447705"></script>
-<script src="js/ShaderPass.js?v=1795447705"></script>
-<script src="js/RenderPass.js?v=1795447705"></script>
-<script src="js/UnrealBloomPass.js?v=1795447705"></script>
-<script src="js/Water.js?v=1795447705"></script>
-<script src="js/GLTFLoader.js?v=1795447705"></script>
-<script src="js/SkeletonUtils.js?v=1795447705"></script>
-<script src="js/peerjs.min.js?v=1795447705"></script>
-<script src="js/fb-app.js?v=1795447705"></script>
-<script src="js/fb-auth.js?v=1795447705"></script>
-<script src="js/fb-firestore.js?v=1795447705"></script>
-<script src="js/tex.js?v=1795447705"></script>
-<script src="js/vrmbones.js?v=1795447705"></script>
-<script src="js/sim.js?v=1795447705"></script>
-<script src="js/audio.js?v=1795447705"></script>
-<script src="js/render.js?v=1795447705"></script>
-<script src="js/r3d.js?v=1795447705"></script>
-<script src="js/anime3d.js?v=1795447705"></script>
-<script src="js/net.js?v=1795447705"></script>
-<script src="js/intro.js?v=1795447705"></script>
-<script src="js/acct.js?v=1795447705"></script>
-<script src="js/game.js?v=1795447705"></script>
+<script src="js/three.min.js?v=1795448465"></script>
+<script src="js/CopyShader.js?v=1795448465"></script>
+<script src="js/LuminosityHighPassShader.js?v=1795448465"></script>
+<script src="js/EffectComposer.js?v=1795448465"></script>
+<script src="js/ShaderPass.js?v=1795448465"></script>
+<script src="js/RenderPass.js?v=1795448465"></script>
+<script src="js/UnrealBloomPass.js?v=1795448465"></script>
+<script src="js/Water.js?v=1795448465"></script>
+<script src="js/GLTFLoader.js?v=1795448465"></script>
+<script src="js/SkeletonUtils.js?v=1795448465"></script>
+<script src="js/peerjs.min.js?v=1795448465"></script>
+<script src="js/fb-app.js?v=1795448465"></script>
+<script src="js/fb-auth.js?v=1795448465"></script>
+<script src="js/fb-firestore.js?v=1795448465"></script>
+<script src="js/tex.js?v=1795448465"></script>
+<script src="js/vrmbones.js?v=1795448465"></script>
+<script src="js/sim.js?v=1795448465"></script>
+<script src="js/audio.js?v=1795448465"></script>
+<script src="js/render.js?v=1795448465"></script>
+<script src="js/r3d.js?v=1795448465"></script>
+<script src="js/anime3d.js?v=1795448465"></script>
+<script src="js/net.js?v=1795448465"></script>
+
+<script src="js/acct.js?v=1795448465"></script>
+<script src="js/game.js?v=1795448465"></script>
 
 </body>
 </html>

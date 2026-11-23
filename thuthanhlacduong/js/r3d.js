@@ -6,8 +6,8 @@ var V = (function () {
   var Q = (function () { try { var q = localStorage.getItem('ttld_q'); if (q === '0' || q === '1' || q === '2') return +q; } catch (e) {}
     var ua = navigator.userAgent || '', iosOld = /iPhone OS (8|9|10|11|12|13|14)_/.test(ua), small = Math.max(screen.width, screen.height) < 700;
     if (iosOld || small || (navigator.hardwareConcurrency || 4) <= 2 || (navigator.deviceMemory && navigator.deviceMemory <= 2)) return 0;
-    return PHONE ? 0 : 2; })(); // mọi điện thoại mặc định Siêu mượt; máy mạnh tự chọn Mượt/Đẹp ở nút Đồ hoạ
-  var LOW = Q < 2, ULOW = Q === 0, useComposer = Q > 1, SHADOW = Q > 1, SIMPLEWATER = Q < 2;
+    return PHONE ? 1 : 2; })(); // mọi điện thoại mặc định Siêu mượt; máy mạnh tự chọn Mượt/Đẹp ở nút Đồ hoạ
+  var LOW = Q < 2, ULOW = Q === 0, useComposer = Q > 0, SHADOW = Q > 0, SIMPLEWATER = Q < 2;
   if (ULOW) { // máy yếu: hình cầu/trụ ít mặt hơn (giảm ~60% tam giác)
     var SG0 = T.SphereGeometry, CG0 = T.CylinderGeometry, KG0 = T.ConeGeometry, TG0 = T.TorusGeometry, h2 = function (n, d, m) { return Math.max(m, Math.round((n || d) * 0.5)); };
     T.SphereGeometry = class extends SG0 { constructor(r, w, h, a, b, c, d) { super(r, h2(w, 32, 6), h2(h, 16, 4), a, b, c, d); } };
@@ -68,7 +68,7 @@ var V = (function () {
 
   // ---------- MÁI NGÓI CONG ----------
   function roofGeo(w, d, h, lift, o) {
-    var Wt = w + o * 2, Dt = d + o * 2, seg = ULOW ? 8 : LOW ? 11 : 22;
+    var Wt = w + o * 2, Dt = d + o * 2, seg = ULOW ? 12 : LOW ? 14 : 22;
     var g = new T.PlaneGeometry(Wt, Dt, seg, seg); g.rotateX(-Math.PI / 2);
     var p = g.attributes.position, uv = g.attributes.uv;
     var ridge = Math.max(0, (Wt - Dt) / 2);
@@ -1395,7 +1395,7 @@ var V = (function () {
   // ---------- Khởi tạo ----------
   function init(canvas, ov) {
     renderer = new T.WebGLRenderer({ canvas: canvas, antialias: Q === 2, powerPreference: 'high-performance' });
-    DPR = Math.min(window.devicePixelRatio || 1, ULOW ? 1 : LOW ? 1.5 : 1.75);
+    DPR = Math.min(window.devicePixelRatio || 1, ULOW ? 1.5 : LOW ? 2 : 1.75); // điện thoại màn nét cao: không để mờ
     renderer.setPixelRatio(DPR);
     renderer.shadowMap.enabled = SHADOW; renderer.shadowMap.type = LOW ? T.PCFShadowMap : T.PCFSoftShadowMap;
     makeGrad(); makeTextures(); makeRoofTex();
@@ -1416,7 +1416,7 @@ var V = (function () {
     composer = new T.EffectComposer(renderer);
     composer.addPass(new T.RenderPass(scene, camera));
     bloom = new T.UnrealBloomPass(new T.Vector2(256, 256), 0.55, 0.4, 0.93);
-    composer.addPass(bloom);
+    if (Q > 1) composer.addPass(bloom); // điện thoại: chỉ giữ chỉnh màu, bỏ lóa sáng (nặng)
     var grade = new T.ShaderPass({ uniforms: { tDiffuse: { value: null } }, vertexShader: 'varying vec2 vUv; void main(){ vUv=uv; gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0); }',
       fragmentShader: 'uniform sampler2D tDiffuse; varying vec2 vUv; void main(){ vec4 c=texture2D(tDiffuse,vUv); vec3 x=c.rgb; x = x*x*(3.0-2.0*x)*0.35 + x*0.65; float l=dot(x,vec3(0.299,0.587,0.114)); x=mix(vec3(l),x,1.18); x*=vec3(1.03,0.99,0.95); vec2 d=vUv-0.5; x*=1.0-dot(d,d)*0.9; gl_FragColor=vec4(x,1.0); }' });
     composer.addPass(grade);
@@ -1494,8 +1494,8 @@ var V = (function () {
     adaptStep++;
     if (useComposer) { useComposer = false; return; }
     if (renderer.shadowMap.enabled) { renderer.shadowMap.enabled = false; scene.traverse(function (o) { if (o.material) o.material.needsUpdate = true; }); return; }
-    if (DPR > 1) { DPR = 1; renderer.setPixelRatio(1); resize(); return; }
-    if (DPR > 0.75) { DPR = 0.75; renderer.setPixelRatio(0.75); resize(); return; }
+    if (DPR > 1.5) { DPR = 1.5; renderer.setPixelRatio(DPR); resize(); return; }
+    if (DPR > 1.25) { DPR = 1.25; renderer.setPixelRatio(DPR); resize(); return; }
     if (petals) petals.visible = false;
   }
   function frame(G, alpha, dt, view) {

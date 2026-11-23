@@ -46,8 +46,8 @@ var Sim = (function () {
       skill: { name: 'Giáng Long Thập Bát Chưởng', cd: 7, type: 'dragon', len: 4.5, w: 0.9, mult: 2.4 },
       up: { name: 'Bang Chủ Cái Bang', cost: 95, hp: 1000, dmg: 82 } }
   };
-  ARCH.summonR = { cost: 35, hp: 110, dmg: 9, cd: 1.2, range: 4.0, spd: 2.1, dt: 'magic', proj: 'petal', skill: { type: 'summon', n: 3, life: 16, smul: 0.6, cd: 99 } };
-  ARCH.summonM = { cost: 40, hp: 300, dmg: 15, cd: 1.1, range: 0.95, spd: 2.2, melee: true, dt: 'phys', armor: 0.1, skill: { type: 'summon', n: 2, life: 16, smul: 0.55, cd: 99, tank: 1 } };
+  ARCH.summonR = { cost: 35, hp: 130, dmg: 12, cd: 1.2, range: 4.0, spd: 2.1, dt: 'magic', proj: 'petal', skill: { type: 'summon', n: 3, life: 16, smul: 0.6, cd: 99 } };
+  ARCH.summonM = { cost: 40, hp: 340, dmg: 18, cd: 1.1, range: 0.95, spd: 2.2, melee: true, dt: 'phys', armor: 0.1, skill: { type: 'summon', n: 2, life: 16, smul: 0.55, cd: 99, tank: 1 } };
   var ROLE = { thienvuong: 'Cận chiến chém lan', thieulam: 'Đỡ đòn, làm choáng', duongmon: 'Ám khí tầm xa', ngudoc: 'Độc sát thương theo thời gian', ngamy: 'Hồi máu đồng môn', vodang: 'Kiếm khí đánh lan', conlon: 'Sét lan nhiều mục tiêu', caibang: 'Chưởng xuyên hàng sát thương lớn', summonR: 'Tầm xa · dùng nội lực triệu hồi đệ tử cận chiến', summonM: 'Cận chiến · dùng nội lực triệu hồi đệ tử đỡ đòn' };
   // Tướng càng đắt càng "lời" sức mạnh trên mỗi lượng vàng => phải dùng tướng mạnh + nâng cấp mới qua được đợt cuối
   function eff(c) { return Math.pow(c / 15, 0.3); }
@@ -103,7 +103,7 @@ var Sim = (function () {
     u: [['Gia Đinh Đường Gia', 'thienvuong', 'Phi Đao Loạn Trảm', { weapon: 'saber' }], ['Thiết Giáp Thủ Vệ', 'thieulam', 'Cơ Quan Trấn'], ['Phi Đao Nữ Hiệp', 'duongmon', 'Liễu Diệp Phi Đao'], ['Cơ Quan Sư', 'conlon', 'Tích Lịch Đạn'],
         ['Độc Châm Thích Khách', 'duongmon', 'Truy Hồn Châm'], ['Đường Gia Tiểu Thư', 'summonR', 'Triệu Gia Đinh', { proj: 'dart', dt: 'phys' }], ['Ám Khí Đại Sư', 'duongmon', 'Thiên La Địa Võng'], ['Đường Môn Môn Chủ', 'duongmon']],
     ult: { name: 'Bạo Vũ Lê Hoa Châm', type: 'fan', n: 21, sp: 0.075, mult: 1.4, cd: 5, big: 1, title: 'Ám Khí Tông Sư' } });
-  sect({ k: 'ngudoc', name: 'Ngũ Độc', ch: '毒', col: '#6a3d9a', col2: '#24103a', pw: 0.98, wp: 'claw', fem: [1, 4, 7], motto: 'Giáo phái Miêu Cương · kịch độc, triệu hồi đệ tử trùng độc',
+  sect({ k: 'ngudoc', name: 'Ngũ Độc', ch: '毒', col: '#6a3d9a', col2: '#24103a', pw: 1.08, wp: 'claw', fem: [1, 4, 7], motto: 'Giáo phái Miêu Cương · kịch độc, triệu hồi đệ tử trùng độc',
     look: LK('#e7c0a0', '#1a0f20', 'headdress', '#b3ff6a', { fhat: 'headdress' }), fxc: '#76ff03',
     u: [['Độc Nhân', 'thienvuong', 'Độc Trảo'], ['Độc Nữ Hộ Giáo', 'thieulam', 'Thi Độc Chấn Địa'], ['Xà Cơ', 'summonR', 'Vạn Xà Triệu Hồi', { proj: 'poison', dot: 5 }], ['Ngũ Độc Độc Sư', 'ngudoc', 'Vạn Độc Vụ'],
         ['Cổ Nữ', 'summonR', 'Thiên Cổ Triệu Đồ', { proj: 'poison', dot: 7 }], ['Thiết Thi Vương', 'summonM', 'Thi Vương Hiệu Triệu'], ['Độc Vương Hộ Pháp', 'ngudoc', 'Hủ Cốt Độc Vụ'], ['Ngũ Độc Giáo Chủ', 'summonR', null, { proj: 'poison', dot: 10 }]],
@@ -153,7 +153,7 @@ var Sim = (function () {
     u: [['Minh Giáo Giáo Đồ', 'thienvuong', 'Thánh Hoả Đao'], ['Hộ Giáo Pháp Vương', 'thieulam', 'Hoả Diễm Thuẫn'], ['Ngũ Hành Kỳ Sứ', 'conlon', 'Ngũ Hành Hoả Phù'], ['Thánh Hoả Cung Thủ', 'duongmon', 'Hoả Tiễn', { weapon: 'bow' }],
         ['Tán Nhân', 'summonM', 'Hiệu Triệu Giáo Đồ'], ['Ba Tư Thánh Nữ', 'ngudoc', 'Thánh Hoả Liệu Nguyên', { proj: 'poison' }], ['Quang Minh Hữu Sứ', 'caibang', 'Càn Khôn Đại Na Di', { weapon: 'saber' }], ['Minh Giáo Giáo Chủ', 'conlon']],
     ult: { name: 'Thánh Hoả Lệnh', type: 'thunder', r: 2.2, n: 6, mult: 3.6, cd: 7, fire: 1, big: 1, title: 'Quang Minh Giáo Chủ' } });
-  sect({ k: 'tieudao', name: 'Tiêu Dao', ch: '逍', col: '#66bb6a', col2: '#1b3d1e', pw: 0.95, wp: 'fan', fem: [1, 4, 6], motto: 'Ẩn môn thần bí · chưởng khí lan, khống chế, triệu hồi',
+  sect({ k: 'tieudao', name: 'Tiêu Dao', ch: '逍', col: '#66bb6a', col2: '#1b3d1e', pw: 1.03, wp: 'fan', fem: [1, 4, 6], motto: 'Ẩn môn thần bí · chưởng khí lan, khống chế, triệu hồi',
     look: LK('#f0cba8', '#ececec', 'topknot', '#fff59d'), fxc: '#ccff90',
     u: [['Tiêu Dao Đồng Tử', 'thienvuong', 'Thiên Sơn Chiết Mai Thủ'], ['Lăng Ba Thị Nữ', 'thieulam', 'Lăng Ba Vi Bộ'], ['Bắc Minh Đệ Tử', 'conlon', 'Bắc Minh Thần Công'], ['Cầm Kỳ Thư Sĩ', 'summonR', 'Triệu Đồng Tử'],
         ['Thiên Sơn Đồng Lão', 'ngudoc', 'Sinh Tử Phù', { proj: 'petal' }], ['Họa Tiên', 'duongmon', 'Thần Bút Điểm Huyệt', { proj: 'petal', dt: 'magic' }], ['Lý Thu Thuỷ', 'conlon', 'Bạch Hồng Chưởng'], ['Tiêu Dao Tử', 'conlon']],
@@ -174,7 +174,7 @@ var Sim = (function () {
     u: [['Ma Giáo Giáo Đồ', 'thienvuong', 'Hắc Mộc Đao'], ['Hắc Mộc Hộ Vệ', 'thieulam', 'Hắc Mộc Trấn'], ['Thần Giáo Trưởng Lão', 'summonM', 'Hiệu Triệu Giáo Đồ'], ['Tam Thi Não Thần Đan Sứ', 'ngudoc', 'Tam Thi Độc'],
         ['Thánh Cô', 'summonR', 'Triệu Thần Giáo Binh', { weapon: 'fan' }], ['Quỳ Hoa Sát Thủ', 'duongmon', 'Quỳ Hoa Châm', { proj: 'dart' }], ['Hướng Hữu Sứ', 'caibang', 'Phá Thiên Chưởng', { weapon: 'saber' }], ['Nhậm Ngã Hành', 'thienvuong']],
     ult: { name: 'Hấp Tinh Đại Pháp', type: 'drain', r: 3.2, mult: 2.6, heal: 0.6, cd: 6, big: 1, title: 'Nhật Nguyệt Giáo Chủ' } });
-  sect({ k: 'toanchan', name: 'Toàn Chân', ch: '全', col: '#5c6bc0', col2: '#1a237e', pw: 1.0, wp: 'sword', fem: [5], motto: 'Đạo môn Chung Nam · Thiên Cương Bắc Đẩu trận, triệu hồi đạo sĩ',
+  sect({ k: 'toanchan', name: 'Toàn Chân', ch: '全', col: '#5c6bc0', col2: '#1a237e', pw: 1.08, wp: 'sword', fem: [5], motto: 'Đạo môn Chung Nam · Thiên Cương Bắc Đẩu trận, triệu hồi đạo sĩ',
     look: LK('#efc8a2', '#1a1a1a', 'taoist', '#ffffff'), fxc: '#8c9eff',
     u: [['Toàn Chân Đạo Đồng', 'thienvuong', 'Toàn Chân Kiếm Pháp'], ['Bắc Đẩu Thủ Vệ', 'thieulam', 'Bắc Đẩu Trấn'], ['Thiên Cương Trận Chủ', 'summonR', 'Thiên Cương Bắc Đẩu Trận', { proj: 'sword' }], ['Đồng Tử Công Đạo Sĩ', 'conlon', 'Đồng Tử Công'],
         ['Thất Tử Đạo Trưởng', 'summonM', 'Thất Tử Hiệu Triệu'], ['Ngọc Thanh Đạo Cô', 'ngamy', 'Ngọc Thanh Đan'], ['Kim Nhạn Kiếm Khách', 'vodang', 'Kim Nhạn Công'], ['Vương Trùng Dương', 'conlon']],
@@ -254,7 +254,7 @@ var Sim = (function () {
     [['mavuong', 1], ['huyetma', 1], ['thietgiap', 6]]
   ];
 
-  function hpScale(w) { var k = w - 1; return 1 + 0.21 * k + 0.026 * k * k; }
+  function hpScale(w) { var k = w - 1; return 1 + 0.2 * k + 0.021 * k * k; }
   function dmgScale(w) { var k = w - 1; return 1 + 0.16 * k + 0.012 * k * k; }
 
   // Toán tất định (giống hệt nhau trên mọi trình duyệt) cho đấu online lockstep
@@ -292,7 +292,7 @@ var Sim = (function () {
     for (var i = 0; i < 2; i++) {
       var m = G.mascots[i], P = G.players[i];
       var hu = { id: G.nextId++, owner: i, type: 'hero_' + (HEROES[m] ? m : 'bachy'), tier: 0, cx: 5, cy: 4, x: 5.5, y: 4.5, hero: true, hp: 0, active: true, dead: false, cd: 0, scd: 3, tgt: 0, retarget: 0, fresh: false, spent: 0, face: 1, atkAnim: 0 };
-      G.units.push(hu);
+      // linh vật không ra trận (theo yêu cầu) — chỉ đứng ở cổng triệu hồi tướng
       if (m === 'bachy') P.gold += 25; else if (m === 'honglien') P.hp += 8; else if (m === 'thanhlong') P.income += 2; else if (m === 'kimgiap') P.hpMul = 1.1;
     }
     G.units.forEach(function (u) { if (u.hero) { u.hpMul = G.players[u.owner].hpMul || 1; u.hp = stat(u, 'hp'); } });

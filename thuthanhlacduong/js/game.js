@@ -100,7 +100,7 @@
   // công cụ
   $('tView').addEventListener('click', () => { view.lane = 1 - view.lane; V.setView(view.lane); $('tView').innerHTML = view.lane === ME ? 'Xem<br>bên kia' : 'Xem<br>ta'; Sfx.play('click'); });
   const QN = ['Siêu mượt', 'Mượt', 'Đẹp'];
-  $('btnQ').textContent = 'Đồ hoạ: ' + QN[V.Q] + ' (chạm để đổi — máy yếu chọn Siêu mượt)';
+  $('btnQ').textContent = '⚙ Đồ hoạ: ' + QN[V.Q];
   const nextQ = () => { const q = (V.Q + 2) % 3; if (G && running && !confirm('Đổi đồ hoạ sang "' + QN[q] + '" sẽ tải lại trang, thoát trận hiện tại?')) return; V.setQ(q); };
   $('btnQ').addEventListener('click', nextQ); $('tQ').addEventListener('click', nextQ);
   $('tSpeed').hidden = true; // đấu rank/online: không cho tua nhanh, thời gian mỗi đợt có hạn
@@ -305,7 +305,7 @@
     const P = G.players[ME], O = G.players[OP], maxA = G.maxHp[ME], maxB = G.maxHp[OP];
     $('wave').textContent = 'Đợt ' + G.wave + '/' + S.MAX_WAVE;
     $('phase').innerHTML = G.phase === 'build' ? 'Xây dựng <b>' + Math.max(0, Math.ceil(G.phaseT)) + 's</b>' : G.phase === 'fight' ? 'Giao chiến' : 'Kết thúc';
-    goldShown += (P.gold - goldShown) * 0.25; if (Math.abs(P.gold - goldShown) < 0.6) goldShown = P.gold; $('gold').textContent = Math.round(goldShown); { let tr = 0; S.SAVE.forEach((m, i) => { if (P.gold >= m[0]) tr = i + 1; }); const nx = S.SAVE[tr]; $('inc').textContent = '+' + P.income + '/đợt · Tích luỹ ' + tr + '/5' + (tr ? ' (+' + Math.round(S.SAVE[tr - 1][1] * 100) + '%)' : '') + (nx ? ' · mốc sau ' + nx[0] : '') + ' · Quân ' + S.popOf(G, ME) + '/' + S.popCap(G); }
+    goldShown += (P.gold - goldShown) * 0.25; if (Math.abs(P.gold - goldShown) < 0.6) goldShown = P.gold; $('gold').textContent = Math.round(goldShown); { let tr = 0; S.SAVE.forEach((m, i) => { if (P.gold >= m[0]) tr = i + 1; }); const nx = S.SAVE[tr]; $('inc').textContent = '+' + P.income + '/đợt · Lãi ' + tr + '/5' + (tr ? ' +' + Math.round(S.SAVE[tr - 1][1] * 100) + '%' : '') + (nx && innerWidth > 700 ? ' · mốc sau ' + nx[0] : '') + ' · Quân ' + S.popOf(G, ME) + '/' + S.popCap(G); }
     $('hpMe').style.width = (100 * P.hp / maxA) + '%'; $('hpOp').style.width = (100 * O.hp / maxB) + '%';
     $('hpMeN').textContent = 'Thành ' + P.hp + '/' + maxA + ' · Lực ' + P.value; $('hpOpN').textContent = 'Thành ' + O.hp + '/' + maxB + ' · Lực ' + O.value;
     const rb = $('btnReady'); rb.disabled = G.phase !== 'build' || P.ready; rb.textContent = G.phase === 'build' ? (P.ready ? 'Chờ…' : 'Sẵn sàng') : 'Chiến';
@@ -374,14 +374,19 @@
   $('btnMenu').addEventListener('click', () => { $('end').hidden = true; showStart(); });
 
   // màn hình chọn linh vật
-  function showStart() {
-    $('start').hidden = false; running = false; document.body.classList.add('menu'); $('pname').value = PNAME; showRank(); document.querySelectorAll('.rk').forEach((x) => x.remove());
+  function showStart(keepPage) {
+    $('start').hidden = false; running = false; document.body.classList.add('menu'); $('pname').value = PNAME.indexOf('hiepkhach') === 0 ? '' : PNAME; showRank(); document.querySelectorAll('.rk').forEach((x) => x.remove());
     $('mrow').innerHTML = R.MASCOT_ORDER.map((k) => `<button class="mc${k === myMascot ? ' sel' : ''}" data-m="${k}"><img src="${ICON['m_' + k]}" alt=""><div class="nm">${R.MASCOTS[k].name}</div><div class="bn">${R.MASCOTS[k].bonus}</div></button>`).join('');
-    renderSects();
+    renderSects(); updPick(); if (!keepPage) goPage('home');
     document.querySelectorAll('#diff button').forEach((b) => b.classList.toggle('on', b.dataset.d === diff));
     G = S.create({ seed: 1, mascots: [myMascot, R.MASCOT_ORDER.find((k) => k !== myMascot)] }); G.maxHp = [G.players[0].hp, G.players[1].hp];
     V.initMascots(G.mascots); V.cam.orbit = true; V.cam.zoom = 0.85; V.setView(0, true);
   }
+  function goPage(pg) { document.querySelectorAll('#start .pg').forEach((x) => { x.hidden = x.dataset.pg !== pg; }); const bx = document.querySelector('#start .box'); if (bx) bx.scrollTop = 0; }
+  document.addEventListener('click', (e) => { const b = e.target.closest('[data-go]'); if (!b || $('start').hidden) return; Sfx.init(); Sfx.play('click'); goPage(b.dataset.go); if (b.dataset.go === 'home') updPick(); });
+  function updPick() { if (!$('pkHero')) return; $('pkImg').src = ICON['f_' + myMascot] || ICON['m_' + myMascot] || ''; $('pkHero').textContent = R.MASCOTS[myMascot].name; $('pkSect').textContent = S.SECTS[mySect].name; $('pkSect').style.color = S.SECTS[mySect].col; }
+  let acctTab = 'login';
+  document.querySelectorAll('[data-tab]').forEach((b) => b.addEventListener('click', () => { acctTab = b.dataset.tab; document.querySelectorAll('[data-tab]').forEach((x) => x.classList.toggle('on', x === b)); $('btnLogin').hidden = acctTab !== 'login'; $('btnReg').hidden = acctTab !== 'reg'; $('pw2Row').hidden = acctTab !== 'reg'; $('ppw').autocomplete = acctTab === 'reg' ? 'new-password' : 'current-password'; $('acctMsg').textContent = ''; }));
   function stars(pw) { const n = Math.max(1, Math.min(5, Math.round((pw - 0.93) / 0.025) + 1)); return '★'.repeat(n) + '☆'.repeat(5 - n); }
   function renderSects() {
     const box = $('srow'); if (!box) return;
@@ -390,7 +395,7 @@
     $('sinfo').innerHTML = `<div class="sh"><b style="color:${c.col}">${c.name}</b> <span class="st">${stars(c.pw)}</span></div><div class="sm">${c.motto}</div><div class="su">Tuyệt kỹ: <b>${c.ult || ''}</b></div><div class="sl">${c.units.map((k, i) => `<span>${S.UNITS[k].name}<i>${S.UNITS[k].cost}</i></span>`).join('')}</div>`;
   }
   $('srow') && $('srow').addEventListener('click', (e) => { const b = e.target.closest('[data-s]'); if (!b) return; Sfx.init(); Sfx.play('click'); mySect = b.dataset.s; try { localStorage.setItem('ttld_sect', mySect); } catch (x) {} renderSects(); });
-  $('mrow').addEventListener('click', (e) => { const b = e.target.closest('[data-m]'); if (!b) return; Sfx.init(); Sfx.play('click'); myMascot = b.dataset.m; try { localStorage.setItem('ttld_mascot', myMascot); } catch (x) {} showStart(); });
+  $('mrow').addEventListener('click', (e) => { const b = e.target.closest('[data-m]'); if (!b) return; Sfx.init(); Sfx.play('click'); myMascot = b.dataset.m; try { localStorage.setItem('ttld_mascot', myMascot); } catch (x) {} showStart(true); });
   $('diff').addEventListener('click', (e) => { const b = e.target.closest('[data-d]'); if (!b) return; diff = b.dataset.d; try { localStorage.setItem('ttld_diff', diff); } catch (x) {} Sfx.init(); Sfx.play('click'); document.querySelectorAll('#diff button').forEach((x) => x.classList.toggle('on', x.dataset.d === diff)); });
   $('btnPlay').addEventListener('click', () => { if (!nameOk()) return; diff = RANK.pickBot(); playStory(() => { Sfx.init(); Sfx.play('gong', true); $('start').hidden = true; document.body.classList.remove('menu'); V.cam.zoom = 1; newGame(); }); });
   // ---------- TÀI KHOẢN ----------
@@ -402,8 +407,11 @@
   function acctDo(kind) {
     const id = ($('pname').value || '').trim(), pw = $('ppw').value || '';
     if (!window.ACCT || !ACCT.ok()) { $('acctMsg').textContent = 'Chưa tải được phần tài khoản, kiểm tra mạng'; return; }
+    if (!/^[a-zA-Z0-9_.]{3,16}$/.test(id)) { $('acctMsg').textContent = 'ID 3–16 ký tự, chỉ chữ không dấu, số, dấu _ hoặc .'; return; }
+    if (pw.length < 6) { $('acctMsg').textContent = 'Mật khẩu cần ít nhất 6 ký tự'; return; }
+    if (kind === 'reg' && pw !== $('ppw2').value) { $('acctMsg').textContent = 'Hai lần nhập mật khẩu không khớp'; return; }
     $('acctMsg').textContent = kind === 'reg' ? 'Đang tạo tài khoản…' : 'Đang đăng nhập…';
-    (kind === 'reg' ? ACCT.register(id, pw, myMascot) : ACCT.login(id, pw)).then(() => { $('acctMsg').textContent = ''; $('ppw').value = ''; }).catch((e) => { $('acctMsg').textContent = ACCT.viErr(e); });
+    (kind === 'reg' ? ACCT.register(id, pw, myMascot) : ACCT.login(id, pw)).then(() => { $('acctMsg').textContent = ''; $('ppw').value = ''; $('ppw2').value = ''; toast(kind === 'reg' ? 'Tạo tài khoản thành công!' : 'Đăng nhập thành công'); goPage('home'); }).catch((e) => { $('acctMsg').textContent = ACCT.viErr(e); });
   }
   $('btnLogin').addEventListener('click', () => acctDo('login'));
   $('btnReg').addEventListener('click', () => acctDo('reg'));
@@ -433,7 +441,7 @@
     $('endStats').insertAdjacentHTML('afterend', `<div class="tag rk">Rank: <b style="color:${after.col}">${after.name}</b> (${d >= 0 ? '+' : ''}${d} điểm)${up}</div>`);
     showRank();
   }
-  function showRank() { const r = RANK.info(RANK.pts); const el = $('rankBox'); if (el) el.innerHTML = `Rank của bạn: <b style="color:${r.col}">${r.name}</b> · Danh hiệu tướng chính: <b>${r.hero}</b>`; }
+  function showRank() { const r = RANK.info(RANK.pts); const h = `Rank: <b style="color:${r.col}">${r.name}</b> · Danh hiệu: <b>${r.hero}</b>`; ['rankBox', 'rankBox2'].forEach((id) => { const el = $(id); if (el) el.innerHTML = h; }); }
 
   // ---------- CỐT TRUYỆN MỞ ĐẦU ----------
   const STORY = [
@@ -444,15 +452,18 @@
   ];
   let stI = 0, stDone = null, stTyping = null;
   function storyShow() { const [cls, txt] = STORY[stI]; $('stPic').className = cls; const el = $('stTxt'); el.textContent = ''; let k = 0; clearInterval(stTyping); stTyping = setInterval(() => { el.textContent = txt.slice(0, ++k); if (k >= txt.length) clearInterval(stTyping); }, 22); $('stNext').textContent = stI === STORY.length - 1 ? 'Giữ thành!' : 'Tiếp'; }
-  function playStory(cb) { let seen = false; try { seen = localStorage.getItem('ttld_story') === '1'; } catch (e) {} if (seen) { cb(); return; } try { localStorage.setItem('ttld_story', '1'); } catch (e) {} INTRO.start(cb); }
+  function playStory(cb) { cb(); } // bỏ đoạn mở đầu vào quán net theo yêu cầu
   function storyEnd() { clearInterval(stTyping); $('story').hidden = true; try { localStorage.setItem('ttld_story', '1'); } catch (e) {} const f = stDone; stDone = null; if (f) f(); }
   $('stNext').addEventListener('click', () => { Sfx.init(); Sfx.play('click'); if (++stI >= STORY.length) storyEnd(); else storyShow(); });
   $('stSkip').addEventListener('click', storyEnd);
 
   // ---------- ONLINE ----------
   let pend = null;
-  function nameOk() { const nm = ($('pname').value || '').trim().replace(/[<>]/g, '').slice(0, 16); if (!nm) { $('pname').focus(); $('pname').placeholder = 'Nhập tên để vào trận'; return false; } PNAME = nm; try { localStorage.setItem('ttld_name', nm); } catch (e) {} return true; }
-  function onlUI(busy, msg) { $('onlStatus').textContent = msg || ''; $('btnCancel').hidden = !busy; ['btnCoop', 'btnVs', 'btnRoom', 'btnJoin', 'btnPlay'].forEach((id) => { $(id).disabled = busy; }); }
+  function nameOk() { let nm = (PNAME || ($('pname').value || '')).trim().replace(/[<>]/g, '').slice(0, 16); if (!nm) { nm = 'hiepkhach' + (1000 + Math.floor(Math.random() * 9000)); } PNAME = nm; try { localStorage.setItem('ttld_name', nm); } catch (e) {} return true; }
+  function onlUI(busy, msg, code) { $('waitBox').hidden = !busy && !msg; $('onlStatus').textContent = msg || ''; $('btnCancel').hidden = !busy; document.querySelector('#waitBox .spin').style.display = busy ? '' : 'none';
+    if (code !== undefined) { $('roomShow').hidden = !code; $('roomShow').textContent = code || ''; $('btnCopy').hidden = !code; } else if (!busy) { $('roomShow').hidden = true; $('btnCopy').hidden = true; }
+    ['btnCoop', 'btnVs', 'btnRoom', 'btnPlay'].forEach((id) => { $(id).disabled = busy; }); if (busy || msg) $('waitBox').scrollIntoView({ block: 'nearest', behavior: 'smooth' }); }
+  $('btnCopy').addEventListener('click', () => { const c = $('roomShow').textContent; const t = 'Vào chơi Thủ Thành Lạc Dương với mình: chungkhoanhuynguyen.com/thuthanhlacduong — Chơi online › Vào phòng, nhập mã ' + c; if (navigator.share) navigator.share({ text: t }).catch(() => {}); else if (navigator.clipboard) navigator.clipboard.writeText(t).then(() => toast('Đã sao chép lời mời kèm mã ' + c)); });
   function startNet(N, st) {
     pend = null; onlUI(false, '');
     const go = (st2) => {
@@ -484,8 +495,8 @@
   }
   $('btnCoop').addEventListener('click', () => quickMatch('coop'));
   $('btnVs').addEventListener('click', () => quickMatch('vs'));
-  $('btnRoom').addEventListener('click', () => { if (!nameOk()) return; NETM.me = { name: PNAME, mascot: myMascot, sect: mySect }; const code = String(1000 + Math.floor(Math.random() * 9000)); onlUI(true, 'Đang tạo phòng…'); pend = NETM.host(code, 'coop', (m) => onlUI(true, m), (N) => startNet(N), (why) => onlUI(false, why)); });
-  $('btnJoin').addEventListener('click', () => { if (!nameOk()) return; const code = ($('roomCode').value || '').trim(); if (!/^\d{4}$/.test(code)) { onlUI(false, 'Nhập mã phòng 4 số'); return; } NETM.me = { name: PNAME, mascot: myMascot, sect: mySect }; onlUI(true, 'Đang vào phòng…'); pend = NETM.join(code, (m) => onlUI(true, m), (N, st) => startNet(N, st), (why) => onlUI(false, why)); });
+  $('btnRoom').addEventListener('click', () => { if (!nameOk()) return; NETM.me = { name: PNAME, mascot: myMascot, sect: mySect }; const code = String(1000 + Math.floor(Math.random() * 9000)); onlUI(true, 'Đang tạo phòng…', code); pend = NETM.host(code, 'coop', (m) => onlUI(true, /Mã phòng/.test(m) ? 'Phòng đã mở! Gửi mã này cho bạn và chờ bạn vào:' : m, code), (N) => startNet(N), (why) => onlUI(false, why)); });
+  $('btnJoin').addEventListener('click', () => { if (!nameOk()) return; if (pend) { try { pend.cancel(); } catch (x) {} pend = null; } const code = ($('roomCode').value || '').trim(); if (!/^\d{4}$/.test(code)) { onlUI(false, 'Nhập mã phòng 4 số'); return; } NETM.me = { name: PNAME, mascot: myMascot, sect: mySect }; onlUI(true, 'Đang vào phòng…'); pend = NETM.join(code, (m) => onlUI(true, m), (N, st) => startNet(N, st), (why) => onlUI(false, why)); });
   $('btnCancel').addEventListener('click', () => { if (pend) pend.cancel(); pend = null; onlUI(false, 'Đã huỷ'); });
   document.addEventListener('visibilitychange', () => { last = performance.now(); });
 
