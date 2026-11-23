@@ -70,7 +70,7 @@ def conv(sc):
         ch = s.pop("chart", None)
         if ch and ch.get("sym") in px:
             s.update(k="candles", sym=ch["sym"], n=min(int(ch.get("weeks", 52)), len(px[ch["sym"]])),
-                     circles=ch.get("circles", []), tag=(lambda t: t if "NẾN TUẦN" in t else t[:40] + " · NẾN TUẦN")((s["label"] or ch["sym"]).upper()), reveal=1.6)
+                     circles=ch.get("circles", []), mas=[(m, tuple(c)) for m, c in ch.get("mas", [])], hlines=[tuple(h) for h in ch.get("hlines", [])], zones=[tuple(z) for z in ch.get("zones", [])], end_off=int(ch.get("end_off", 0)), tag=(lambda t: t if "NẾN TUẦN" in t else t[:40] + " · NẾN TUẦN")((s["label"] or ch["sym"]).upper()), reveal=1.6)
         else: s["k"] = "text"
     elif k == "image":
         if "||" in str(s.get("img", "")):   # 20/11 nhịp hình: 'a||b' -> cắt sang ảnh thứ 2 giữa cảnh
@@ -81,6 +81,7 @@ def conv(sc):
         s["items"] = [it[0] if isinstance(it, (list, tuple)) else it for it in s.get("items", [])]
     elif k == "bars":
         s["bars"] = [(b[0], abs(b[1]) if b[1] else 0.001, b[2], b[3] if len(b) > 3 else str(b[1])) for b in s.get("bars", [])]
+    elif k in ("map", "scale", "section"): pass   # 23/11 bản đồ vệ tinh / thước so sánh / mặt cắt – ban_do.py
     elif k == "3d": pass   # cảnh 3D kể chuyện (xưởng anim3d) – dựng ở build_land, xem r3d.py
     elif k not in dx2.KINDS and k not in ("text", "end", "chat", "noti", "call", "giay"): s["k"] = "text"
     if s["k"] == "text": s.setdefault("y", 860)
@@ -287,6 +288,8 @@ def land(v, sc, t):
     return im
 def _land0(v, sc, t):
     k = sc["k"]
+    if k in ("map", "scale", "section"):
+        import ban_do; im = ban_do.frame(sc, t); _draw_sub(im, sc, t, LW/2, LW - 200); return im
     if k == "3d":   # khung 3D đã dựng sẵn (r3d) + nhãn số liệu góc trái + phụ đề
         import r3d; im = r3d.frame(sc, t); _draw_sub(im, sc, t, LW/2, LW - 200); return im
     if k in ("chat", "noti", "call", "giay"):   # cảnh điện thoại (chat_ui) – phụ đề dưới cột chữ bên phải
@@ -395,6 +398,12 @@ def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
             if k_ == "cards": sc["_nhip"] = nhip.lich(sc, len(sc["cards"]), [" ".join(str(x) for x in cd[:3]) for cd in sc["cards"]])
             elif k_ == "checklist": sc["_nhip"] = nhip.lich(sc, len(sc["items"]), sc["items"])
             elif k_ == "bars": sc["_nhip"] = nhip.lich(sc, len(sc["bars"]), [str(x[0]) + " " + str(x[3]) for x in sc["bars"]], t_min=0.2)
+            # 23/11 NV1: không để khối chính trống (CH0212AI 2:40, 5:20 trống 6–8s): cảnh nối tiếp cùng nội dung -> hiện đủ ngay; mục đầu hiện chậm nhất 1,0s
+            if k_ in ("cards", "checklist", "bars") and sc.get("_nhip"):
+                _pv = scenes[i - 1] if i else {}
+                _kk = {"cards": "cards", "checklist": "items", "bars": "bars"}[k_]
+                if _pv.get("k") == k_ and _pv.get(_kk) == sc.get(_kk): sc["_nhip"] = [-1.0] * len(sc["_nhip"])
+                elif sc["_nhip"][0] > 1.0: sc["_nhip"] = [1.0] + list(sc["_nhip"][1:])
             elif k_ == "bignum":
                 _c = next((a for a, c in sc["_cau"] if re.search(r"\d", c)), None)
                 if _c is not None and _c < 4.0: sc.setdefault("t0", _c)
@@ -408,7 +417,7 @@ def build_land(key, scenes, wav_dir, out, gap=0.28, tail=1.2, tempo=1.0):
         n = int(round(b[i+1]*FPS)) - fr; sc["_T"] = n / FPS
         for j in range(n):
             if sc.get("_img2"): sc["img"] = sc["_img2"] if j / FPS > sc["_T"] / 2 else sc["_img1"]
-            AV[2] = fr + j; im = land(None if sc["k"] in ("text", "end", "chat", "noti", "call", "giay", "3d") else dx2.draw(sc, j/FPS, j/max(1, n)), sc, j/FPS)
+            AV[2] = fr + j; im = land(None if sc["k"] in ("text", "end", "chat", "noti", "call", "giay", "3d", "map", "scale", "section") else dx2.draw(sc, j/FPS, j/max(1, n)), sc, j/FPS)
             if HU2[0]:
                 tt = j / FPS
                 if i > 0 and PREV[0] is not None: im = _chuyen(PREV[0], im, tt, _kieu(scenes, i))
@@ -459,7 +468,7 @@ try:
     nph = 0
     for i, sc in enumerate(scenes):
         sc["anh"] = raw[i].get("anh", ""); sc["say"] = raw[i].get("say", ""); sc["ch"] = raw[i].get("ch", "")
-        if sc.get("k") == "3d": continue   # cảnh 3D không cần ảnh minh hoạ
+        if sc.get("k") in ("3d", "map", "scale", "section"): continue   # cảnh 3D/bản đồ không cần ảnh minh hoạ
         ph = kho.cho(sc, chu_de)
         if ph is not None:
             _prep_ph(sc, ph); nph += 1

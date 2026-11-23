@@ -12,7 +12,7 @@ def tach(S, max_tu=95, anh_mac_dinh='Ho Chi Minh City skyline'):
             if cur and len(' '.join(cur + [s]).split()) > max_tu: parts.append(' '.join(cur)); cur = []
             cur.append(s)
         if cur: parts.append(' '.join(cur))
-        if c['k'] == 'end' or len(parts) == 1: out.append(c); continue
+        if c['k'] in ('end', 'map', 'scale', 'section') or len(parts) == 1: out.append(c); continue   # cảnh bản đồ bay 1 mạch, không tách
         c['say'] = parts[0]; out.append(c)
         for p in parts[1:]:
             if c['k'] in ('checklist', 'bars', 'cards', 'bignum', 'chat', 'noti', 'call', 'giay'):   # giữ hình số liệu / điện thoại, tránh ảnh lạc đề
