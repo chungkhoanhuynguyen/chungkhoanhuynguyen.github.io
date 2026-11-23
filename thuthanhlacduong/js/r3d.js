@@ -6,8 +6,8 @@ var V = (function () {
   var Q = (function () { try { var q = localStorage.getItem('ttld_q'); if (q === '0' || q === '1' || q === '2') return +q; } catch (e) {}
     var ua = navigator.userAgent || '', iosOld = /iPhone OS (8|9|10|11|12|13|14)_/.test(ua), small = Math.max(screen.width, screen.height) < 700;
     if (iosOld || small || (navigator.hardwareConcurrency || 4) <= 2 || (navigator.deviceMemory && navigator.deviceMemory <= 2)) return 0;
-    return PHONE ? 1 : 2; })();
-  var LOW = Q < 2, ULOW = Q === 0, useComposer = Q > 0;
+    return PHONE ? 0 : 2; })(); // mọi điện thoại mặc định Siêu mượt; máy mạnh tự chọn Mượt/Đẹp ở nút Đồ hoạ
+  var LOW = Q < 2, ULOW = Q === 0, useComposer = Q > 1, SHADOW = Q > 1, SIMPLEWATER = Q < 2;
   if (ULOW) { // máy yếu: hình cầu/trụ ít mặt hơn (giảm ~60% tam giác)
     var SG0 = T.SphereGeometry, CG0 = T.CylinderGeometry, KG0 = T.ConeGeometry, TG0 = T.TorusGeometry, h2 = function (n, d, m) { return Math.max(m, Math.round((n || d) * 0.5)); };
     T.SphereGeometry = class extends SG0 { constructor(r, w, h, a, b, c, d) { super(r, h2(w, 32, 6), h2(h, 16, 4), a, b, c, d); } };
@@ -68,7 +68,7 @@ var V = (function () {
 
   // ---------- MÁI NGÓI CONG ----------
   function roofGeo(w, d, h, lift, o) {
-    var Wt = w + o * 2, Dt = d + o * 2, seg = ULOW ? 8 : LOW ? 14 : 22;
+    var Wt = w + o * 2, Dt = d + o * 2, seg = ULOW ? 8 : LOW ? 11 : 22;
     var g = new T.PlaneGeometry(Wt, Dt, seg, seg); g.rotateX(-Math.PI / 2);
     var p = g.attributes.position, uv = g.attributes.uv;
     var ridge = Math.max(0, (Wt - Dt) / 2);
@@ -219,7 +219,7 @@ var V = (function () {
     scene.fog = new T.Fog('#7a4248', 45, 110);
     scene.add(new T.HemisphereLight('#ffd0b0', '#3a2440', 0.42));
     sun = new T.DirectionalLight('#ffc48a', 0.85); sun.position.set(-14, 24, 12); sun.target.position.set(MX, 0, 0);
-    sun.castShadow = !ULOW; sun.shadow.mapSize.set(LOW ? 1024 : 2048, LOW ? 1024 : 2048);
+    sun.castShadow = SHADOW; sun.shadow.mapSize.set(LOW ? 1024 : 2048, LOW ? 1024 : 2048);
     var sc = sun.shadow.camera; sc.left = -28; sc.right = 28; sc.top = 26; sc.bottom = -26; sc.near = 1; sc.far = 70; sun.shadow.bias = -0.0006; sun.shadow.normalBias = 0.02;
     scene.add(sun); scene.add(sun.target);
     var rim = new T.DirectionalLight('#8a7bff', 0.35); rim.position.set(14, 10, -20); scene.add(rim);
@@ -338,7 +338,7 @@ var V = (function () {
     var wn = new T.TextureLoader().load(window.TEX_WATER, function (t) { t.wrapS = t.wrapT = T.RepeatWrapping; });
     wn.wrapS = wn.wrapT = T.RepeatWrapping;
     var geo = new T.PlaneGeometry(110, 30);
-    if (ULOW) { var wm = new T.Mesh(geo, new T.MeshLambertMaterial({ color: '#2a5a66', transparent: true, opacity: 0.92 })); wm.rotation.x = -Math.PI / 2; wm.position.set(MX, -0.32, 26); scene.add(wm); }
+    if (SIMPLEWATER) { var wm = new T.Mesh(geo, new T.MeshLambertMaterial({ color: '#2a5a66', transparent: true, opacity: 0.92 })); wm.rotation.x = -Math.PI / 2; wm.position.set(MX, -0.32, 26); scene.add(wm); }
     else water = new T.Water(geo, { textureWidth: LOW ? 192 : 512, textureHeight: LOW ? 192 : 512, waterNormals: wn, sunDirection: new T.Vector3(-0.5, 0.6, 0.6).normalize(), sunColor: 0xffc88a, waterColor: 0x1c3a44, distortionScale: 2.4, fog: true, alpha: 1 });
     if (water) { water.rotation.x = -Math.PI / 2; water.position.set(MX, -0.32, 26); scene.add(water); }
     // bờ kè đá
@@ -382,7 +382,7 @@ var V = (function () {
       sh.uniforms.uTime = windU;
       sh.vertexShader = 'uniform float uTime;\n' + sh.vertexShader.replace('#include <begin_vertex>', '#include <begin_vertex>\n vec4 ip = instanceMatrix[3]; float h = position.y; transformed.x += sin(uTime*2.2 + ip.x*0.6 + ip.z*0.45) * 0.16 * h * h * 4.0; transformed.z += cos(uTime*1.7 + ip.x*0.3) * 0.06 * h;');
     };
-    var n = ULOW ? 250 : LOW ? 1100 : 2600, im = new T.InstancedMesh(bl, GRASSM, n), m = new T.Matrix4(), q = new T.Quaternion(), sc = new T.Vector3(), ps = new T.Vector3(), col = new T.Color();
+    var n = ULOW ? 250 : LOW ? 700 : 2600, im = new T.InstancedMesh(bl, GRASSM, n), m = new T.Matrix4(), q = new T.Quaternion(), sc = new T.Vector3(), ps = new T.Vector3(), col = new T.Color();
     var w = LCX[1] - LW - 0.6;
     for (var i = 0; i < n; i++) {
       var zone = i % 5, x, z;
@@ -531,7 +531,7 @@ var V = (function () {
       v.position.copy(n.p); NPC.push(n);
     }
     var P = function (x, z) { return new T.Vector3(x, 0, z); };
-    for (var i = 0; i < 6; i++) {
+    for (var i = 0; i < (LOW ? 3 : 6); i++) {
       add(looks[i], null, [P(L0 + 0.3, -10 + i * 3), P(L0 + 0.3, 9 - i), P(L0 - 2.4, 9 - i), P(L0 - 2.4, -10 + i * 3)], 0.9 + Math.random() * 0.5);
       add(looks[(i + 3) % 6], null, [P(R0 - 0.3, 9 - i * 3), P(R0 - 0.3, -10 + i), P(R0 + 2.4, -10 + i), P(R0 + 2.4, 9 - i * 3)], 0.9 + Math.random() * 0.5);
     }
@@ -1395,9 +1395,9 @@ var V = (function () {
   // ---------- Khởi tạo ----------
   function init(canvas, ov) {
     renderer = new T.WebGLRenderer({ canvas: canvas, antialias: Q === 2, powerPreference: 'high-performance' });
-    DPR = Math.min(window.devicePixelRatio || 1, ULOW ? 1 : LOW ? 1.25 : 1.75);
+    DPR = Math.min(window.devicePixelRatio || 1, ULOW ? 1 : LOW ? 1.5 : 1.75);
     renderer.setPixelRatio(DPR);
-    renderer.shadowMap.enabled = !ULOW; renderer.shadowMap.type = LOW ? T.PCFShadowMap : T.PCFSoftShadowMap;
+    renderer.shadowMap.enabled = SHADOW; renderer.shadowMap.type = LOW ? T.PCFShadowMap : T.PCFSoftShadowMap;
     makeGrad(); makeTextures(); makeRoofTex();
     OUT = new T.MeshBasicMaterial({ color: '#1a0e0a', side: T.BackSide });
     buildScene();
@@ -1408,6 +1408,10 @@ var V = (function () {
     portals.forEach(function (p) { kp(p.d1); kp(p.d2); kp(p.beam); }); gates.forEach(function (g) { kp(g.flash); kp(g.g); }); CHESTS.forEach(function (c) { kp(c.g); kp(c.lid); kp(c.coins); kp(c.glow); kp(c.lbl); });
     laneMeshes.forEach(kp); gridLines.forEach(kp); kp(water); kp(petals);
     compact(scene, KS, true); window.__scene = scene;
+    // dọn nhóm rỗng + khoá ma trận vật tĩnh (đỡ tính toán ma trận mỗi khung hình)
+    (function prune(n) { for (var i = n.children.length - 1; i >= 0; i--) { var c = n.children[i]; prune(c); if (!c.isMesh && !c.isSprite && !c.isPoints && !c.isLine && !c.isLight && !c.children.length && !KS.has(c) && c !== sun.target) n.remove(c); } })(scene);
+    var dyn = new Set(); KS.forEach(function (o) { o.traverse(function (d) { dyn.add(d); }); });
+    scene.updateMatrixWorld(true); scene.traverse(function (o) { if (o !== scene && !dyn.has(o) && !o.isLight) { o.matrixAutoUpdate = false; o.updateMatrix(); } });
     camera = new T.PerspectiveCamera(42, 1, 0.5, 260);
     composer = new T.EffectComposer(renderer);
     composer.addPass(new T.RenderPass(scene, camera));
@@ -1484,10 +1488,19 @@ var V = (function () {
 
   // ---------- VẼ MỖI KHUNG ----------
   var prevT = 0;
-  var fpsAcc = 0, fpsN = 0, fpsDone = false;
+  var fpsAcc = 0, fpsN = 0, fpsDone = false, adaptStep = 0;
+  // tự hạ đồ hoạ từng bước khi máy không đủ 40 khung hình/giây (mọi điện thoại)
+  function adaptDown() {
+    adaptStep++;
+    if (useComposer) { useComposer = false; return; }
+    if (renderer.shadowMap.enabled) { renderer.shadowMap.enabled = false; scene.traverse(function (o) { if (o.material) o.material.needsUpdate = true; }); return; }
+    if (DPR > 1) { DPR = 1; renderer.setPixelRatio(1); resize(); return; }
+    if (DPR > 0.75) { DPR = 0.75; renderer.setPixelRatio(0.75); resize(); return; }
+    if (petals) petals.visible = false;
+  }
   function frame(G, alpha, dt, view) {
     clock += dt; var t = clock;
-    if (!fpsDone && clock > 3) { fpsAcc += dt; fpsN++; if (fpsAcc > 4) { fpsDone = true; var fps = fpsN / fpsAcc; if (fps < 40 && DPR > 1) { DPR = 1; renderer.setPixelRatio(1); resize(); } if (fps < 22) useComposer = false; if (fps < 28) { renderer.shadowMap.enabled = false; scene.traverse(function (o) { if (o.material) o.material.needsUpdate = true; }); } } }
+    if (clock > 2) { fpsAcc += dt; fpsN++; if (fpsAcc > 2.5) { var fps = fpsN / fpsAcc; fpsAcc = 0; fpsN = 0; if (fps < 40 && adaptStep < 5) adaptDown(); } }
     gridLines.forEach(function (gl, i) { gl.material.opacity = G.phase === 'build' && i === view.lane ? 0.45 + Math.sin(t * 3) * 0.12 : 0; });
     // tướng
     var seen = {};
