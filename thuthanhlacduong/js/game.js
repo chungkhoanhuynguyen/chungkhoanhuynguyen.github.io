@@ -18,13 +18,13 @@
     const dl = new T.DirectionalLight('#ffffff', 0.8); dl.position.set(2, 4, 5); sc.add(dl);
     const cam = new T.PerspectiveCamera(30, 1, 0.1, 50);
     function shot(obj, size, h, d, face) {
-      rr.setSize(size, size, false); if (face) { cam.position.set(0, h * 0.82, d * 0.42); cam.lookAt(0, h * 0.74, 0); } else { cam.position.set(0.0, h * 0.62, d); cam.lookAt(0, h * 0.5, 0); }
+      rr.setSize(size, size, false); if (face) { cam.position.set(0, h * 0.97, d * 0.36); cam.lookAt(0, h * 0.9, 0); } else { cam.position.set(0.0, h * 0.62, d); cam.lookAt(0, h * 0.5, 0); }
       obj.rotation.y = 0.35; sc.add(obj); rr.render(sc, cam); const url = rr.domElement.toDataURL(); sc.remove(obj); return url;
     }
     const pose = (o) => { if (o.userData.mixer) o.userData.mixer.update(0.4); return o; };
     const um = (k) => { const m = V.UNIT_MODEL[k]; return (V.modelsReady() && V.makeModel(m[0], m[1], 1.55)) || V.makeHuman(R.LOOK[k], { weapon: S.UNITS[k].weapon }); };
-    S.UNIT_ORDER.forEach((k) => { ICON[k] = A3.portrait(k, 160, true) || shot(pose(um(k)), 160, 1.55, 3.6, true); });
-    S.SEND_ORDER.forEach((k) => { const m = V.CREEP_MODEL[k]; const o = S.CREEPS[k].beast ? V.makeBeast(k) : ((V.modelsReady() && m && V.makeModel(m[0], m[1], 1.5)) || V.makeHuman(R.CLOOK[k], { weapon: R.CLOOK[k].weapon })); ICON['s_' + k] = shot(pose(o), 128, 1.3, 3.4); });
+    S.UNIT_ORDER.forEach((k) => { ICON[k] = shot(V.makeHuman(R.LOOK[k], { weapon: S.UNITS[k].weapon }), 160, 1.75, 3.8, true); });
+    S.SEND_ORDER.forEach((k) => { const m = V.CREEP_MODEL[k]; const o = S.CREEPS[k].beast ? V.makeBeast(k) : V.makeHuman(R.CLOOK[k], { weapon: R.CLOOK[k].weapon }); ICON['s_' + k] = shot(pose(o), 128, 1.3, 3.4); });
     R.MASCOT_ORDER.forEach((k) => { ICON['m_' + k] = A3.portrait('m_' + k, 256, false); ICON['f_' + k] = A3.portrait('m_' + k, 128, true); if (!ICON['m_' + k]) { const o = V.makeMascot(k); o.scale.setScalar(1); ICON['m_' + k] = shot(pose(o), 256, 1.9, 4.2); ICON['f_' + k] = shot(pose(V.makeMascot(k)), 128, 2.4, 4.2, true); } });
     rr.dispose();
   }

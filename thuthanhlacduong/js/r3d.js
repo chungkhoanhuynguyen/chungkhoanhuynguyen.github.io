@@ -1,6 +1,7 @@
 // ===== ĐỒ HOẠ 3D (three.js) — thành Lạc Dương lúc hoàng hôn =====
 var V = (function () {
   var S = Sim, T = THREE, shade = R.shade;
+  var LOW = (window.matchMedia && matchMedia('(pointer:coarse)').matches) || Math.min(screen.width, screen.height) < 820;   // điện thoại: giảm tải
   var LW = Sim.LANE_W, HL = LW / 2, LCX = [0, LW + 10], MX = LCX[1] / 2;
   function W(lane, x, y, h) { return new T.Vector3(LCX[lane] + x - HL, h || 0, 9 - y); }
 
@@ -24,9 +25,18 @@ var V = (function () {
   }
   var OUT = null;
   var geos = {};
-  function G(key, fn) { return geos[key] || (geos[key] = fn()); }
+  var GDEF = {
+    capeR: function () { var g = new T.PlaneGeometry(0.56, 1.25, 4, 8); g.translate(0, -0.62, 0); return g; },
+    helm: function () { return new T.SphereGeometry(0.26, 16, 10, 0, Math.PI * 2, 0, Math.PI * 0.5); },
+    lcap: function () { return new T.CylinderGeometry(0.1, 0.1, 0.05, 8); },
+    pad: function () { var g = new T.CircleGeometry(0.55, 14, 0.35, Math.PI * 2 - 0.35); g.rotateX(-Math.PI / 2); return g; },
+    rock: function () { return new T.DodecahedronGeometry(0.35, 0); },
+    stud: function () { return new T.SphereGeometry(0.06, 6, 4); },
+    plane1: function () { return new T.PlaneGeometry(1, 1); }
+  };
+  function G(key, fn) { return geos[key] || (geos[key] = (fn || GDEF[key])()); }
   function mesh(geo, mat, x, y, z, shadow) { var m = new T.Mesh(geo, mat); m.position.set(x || 0, y || 0, z || 0); if (shadow !== false) { m.castShadow = true; } return m; }
-  function outline(m, s) { var o = new T.Mesh(m.geometry, OUT); o.scale.setScalar(s || 1.08); o.castShadow = false; m.add(o); return m; }
+  function outline(m, s) { if (LOW) return m; var o = new T.Mesh(m.geometry, OUT); o.scale.setScalar(s || 1.08); o.castShadow = false; m.add(o); return m; }
 
   // ---------- texture canvas ----------
   function canvasTex(w, h, draw, rep) { var c = document.createElement('canvas'); c.width = w; c.height = h; draw(c.getContext('2d'), w, h); var t = new T.CanvasTexture(c); if (rep) { t.wrapS = t.wrapT = T.RepeatWrapping; t.repeat.set(rep[0], rep[1]); } t.anisotropy = 4; return t; }
@@ -162,14 +172,28 @@ var V = (function () {
   }
   // gạch tường thành
   var brickTex = null;
+  var bumpTex = null;
   function wallMat(w, h, tint) {
-    if (!brickTex) brickTex = canvasTex(256, 256, function (gg) {
-      gg.fillStyle = '#6f6555'; gg.fillRect(0, 0, 256, 256);
-      for (var y = 0; y < 16; y++) for (var x = -1; x < 9; x++) { var v = 120 + Math.random() * 40 | 0, ox = (y % 2) * 16; gg.fillStyle = 'rgb(' + (v + 10) + ',' + (v - 2) + ',' + (v - 22) + ')'; gg.fillRect(x * 32 + ox + 1, y * 16 + 1, 30, 14); gg.fillStyle = 'rgba(0,0,0,0.12)'; gg.fillRect(x * 32 + ox + 1, y * 16 + 12, 30, 3); }
-      for (var i = 0; i < 40; i++) { gg.fillStyle = 'rgba(60,90,40,' + (Math.random() * 0.25) + ')'; gg.beginPath(); gg.arc(Math.random() * 256, 200 + Math.random() * 56, 6 + Math.random() * 14, 0, 6.3); gg.fill(); }
-    });
-    var t = brickTex.clone(); t.needsUpdate = true; t.wrapS = t.wrapT = T.RepeatWrapping; t.repeat.set(Math.max(1, w / 2.5), Math.max(1, h / 2.5));
-    return new T.MeshLambertMaterial({ color: tint || '#ffffff', map: t });
+    if (!brickTex) {
+      var cw = 512, rows = 12, bump = document.createElement('canvas'); bump.width = bump.height = cw; var bg = bump.getContext('2d');
+      brickTex = canvasTex(cw, cw, function (gg) {
+        gg.fillStyle = '#5a5248'; gg.fillRect(0, 0, cw, cw); bg.fillStyle = '#202020'; bg.fillRect(0, 0, cw, cw);
+        var rh = cw / rows;
+        for (var y = 0; y < rows; y++) { var x = -(y % 2) * 30 - Math.random() * 20; while (x < cw) { var bw = 50 + Math.random() * 50;
+          var v = 110 + Math.random() * 45 | 0, warm = Math.random() * 14;
+          var gr = gg.createLinearGradient(0, y * rh, 0, y * rh + rh); gr.addColorStop(0, 'rgb(' + (v + 12 + warm) + ',' + (v + 4) + ',' + (v - 12) + ')'); gr.addColorStop(1, 'rgb(' + (v - 18 + warm) + ',' + (v - 24) + ',' + (v - 38) + ')');
+          gg.fillStyle = gr; gg.fillRect(x + 2, y * rh + 2, bw - 4, rh - 4);
+          for (var k = 0; k < 18; k++) { gg.fillStyle = 'rgba(' + (Math.random() < 0.5 ? '0,0,0' : '255,240,220') + ',' + (Math.random() * 0.12) + ')'; gg.fillRect(x + 2 + Math.random() * (bw - 6), y * rh + 2 + Math.random() * (rh - 6), 2 + Math.random() * 5, 1 + Math.random() * 3); }
+          var bgr = bg.createRadialGradient(x + bw / 2, y * rh + rh / 2, 2, x + bw / 2, y * rh + rh / 2, bw * 0.6); bgr.addColorStop(0, '#f0f0f0'); bgr.addColorStop(1, '#9a9a9a'); bg.fillStyle = bgr; bg.fillRect(x + 3, y * rh + 3, bw - 6, rh - 6);
+          if (Math.random() < 0.15) { gg.strokeStyle = 'rgba(20,15,10,.5)'; gg.lineWidth = 1.5; gg.beginPath(); gg.moveTo(x + Math.random() * bw, y * rh + 3); gg.lineTo(x + Math.random() * bw, y * rh + rh - 3); gg.stroke(); }
+          x += bw; } }
+        for (var i = 0; i < 70; i++) { gg.fillStyle = 'rgba(70,100,45,' + (Math.random() * 0.3) + ')'; gg.beginPath(); gg.arc(Math.random() * cw, cw * 0.72 + Math.random() * cw * 0.28, 6 + Math.random() * 22, 0, 6.3); gg.fill(); }
+        var dg = gg.createLinearGradient(0, 0, 0, cw); dg.addColorStop(0, 'rgba(0,0,0,0)'); dg.addColorStop(1, 'rgba(20,15,10,.35)'); gg.fillStyle = dg; gg.fillRect(0, 0, cw, cw);
+      });
+      bumpTex = new T.CanvasTexture(bump);
+    }
+    var t = brickTex.clone(), b2 = bumpTex.clone(); [t, b2].forEach(function (x) { x.needsUpdate = true; x.wrapS = x.wrapT = T.RepeatWrapping; x.repeat.set(Math.max(1, w / 3.2), Math.max(1, h / 3.2)); });
+    return new T.MeshPhongMaterial({ color: tint || '#ffffff', map: t, bumpMap: b2, bumpScale: 0.06, shininess: 6, specular: '#2a2620' });
   }
   var TREES = [];
 
@@ -182,7 +206,7 @@ var V = (function () {
     scene.fog = new T.Fog('#7a4248', 45, 110);
     scene.add(new T.HemisphereLight('#ffd0b0', '#3a2440', 0.42));
     sun = new T.DirectionalLight('#ffc48a', 0.85); sun.position.set(-14, 24, 12); sun.target.position.set(MX, 0, 0);
-    sun.castShadow = true; sun.shadow.mapSize.set(2048, 2048);
+    sun.castShadow = true; sun.shadow.mapSize.set(LOW ? 1024 : 2048, LOW ? 1024 : 2048);
     var sc = sun.shadow.camera; sc.left = -28; sc.right = 28; sc.top = 26; sc.bottom = -26; sc.near = 1; sc.far = 70; sun.shadow.bias = -0.0006; sun.shadow.normalBias = 0.02;
     scene.add(sun); scene.add(sun.target);
     var rim = new T.DirectionalLight('#8a7bff', 0.35); rim.position.set(14, 10, -20); scene.add(rim);
@@ -254,8 +278,8 @@ var V = (function () {
     // tường thành dài + tháp canh
     var wallM2 = M('#8f8270');
     var wl = mesh(new T.BoxGeometry(LCX[1] + LW + 34, 3.2, 1.4), wallMat(LCX[1] + LW + 34, 3.2), MX, 1.6, -13.6); wl.receiveShadow = true; scene.add(wl);
-    for (var cx2 = MX - (LCX[1] + LW + 32) / 2; cx2 < MX + (LCX[1] + LW + 32) / 2; cx2 += 1.1) scene.add(mesh(G('cren2', function () { return new T.BoxGeometry(0.6, 0.5, 0.4); }), wallM2, cx2, 3.45, -12.95));
-    [MX - (LCX[1] + LW + 30) / 2, MX + (LCX[1] + LW + 30) / 2].forEach(function (tx) { var tw = mesh(new T.BoxGeometry(3.2, 5, 3.2), M('#857866'), tx, 2.5, -13.6); scene.add(tw); var th = hall(tx, -13.6, 3.4, 3.4, 1.1, 1.3, { tiers: 2 }); th.position.y = 5; });
+    var crM = wallMat(0.6, 0.5); for (var cx2 = MX - (LCX[1] + LW + 32) / 2; cx2 < MX + (LCX[1] + LW + 32) / 2; cx2 += 1.1) scene.add(mesh(G('cren2', function () { return new T.BoxGeometry(0.6, 0.5, 0.4); }), crM, cx2, 3.45, -12.95));
+    [MX - (LCX[1] + LW + 30) / 2, MX + (LCX[1] + LW + 30) / 2].forEach(function (tx) { var tw = mesh(new T.BoxGeometry(3.2, 5, 3.2), wallMat(3.2, 5), tx, 2.5, -13.6); scene.add(tw); var th = hall(tx, -13.6, 3.4, 3.4, 1.1, 1.3, { tiers: 2 }); th.position.y = 5; });
     // bảo tháp 7 tầng phía xa
     var tower = new T.Group(); tower.position.set(MX, 0, -26);
     for (var lv = 0; lv < 7; lv++) { var sz = 5.2 - lv * 0.55, y0 = lv * 2.1; var blk = mesh(new T.CylinderGeometry(sz * 0.42, sz * 0.46, 1.5, 8), M(lv % 2 ? '#e9d8b8' : '#f1e3c6'), 0, y0 + 0.75, 0); tower.add(blk); var rf = mesh(roofGeo(sz, sz, 0.9, 0.55, 0.55), new T.MeshToonMaterial({ color: '#b52a1a', gradientMap: gradTex, map: roofTex, side: T.DoubleSide }), 0, y0 + 1.5, 0); tower.add(rf); var tl3 = lanternMesh(); tl3.position.set(0, y0 + 1.2, sz * 0.5 + 0.3); tower.add(tl3); }
@@ -295,7 +319,7 @@ var V = (function () {
     var wn = new T.TextureLoader().load(window.TEX_WATER, function (t) { t.wrapS = t.wrapT = T.RepeatWrapping; });
     wn.wrapS = wn.wrapT = T.RepeatWrapping;
     var geo = new T.PlaneGeometry(110, 30);
-    water = new T.Water(geo, { textureWidth: 512, textureHeight: 512, waterNormals: wn, sunDirection: new T.Vector3(-0.5, 0.6, 0.6).normalize(), sunColor: 0xffc88a, waterColor: 0x1c3a44, distortionScale: 2.4, fog: true, alpha: 1 });
+    water = new T.Water(geo, { textureWidth: LOW ? 192 : 512, textureHeight: LOW ? 192 : 512, waterNormals: wn, sunDirection: new T.Vector3(-0.5, 0.6, 0.6).normalize(), sunColor: 0xffc88a, waterColor: 0x1c3a44, distortionScale: 2.4, fog: true, alpha: 1 });
     water.rotation.x = -Math.PI / 2; water.position.set(MX, -0.32, 26); scene.add(water);
     // bờ kè đá
     var bank = mesh(new T.BoxGeometry(110, 0.7, 0.9), wallMat(110, 0.7), MX, -0.25, 11.4); bank.receiveShadow = true; scene.add(bank);
@@ -338,7 +362,7 @@ var V = (function () {
       sh.uniforms.uTime = windU;
       sh.vertexShader = 'uniform float uTime;\n' + sh.vertexShader.replace('#include <begin_vertex>', '#include <begin_vertex>\n vec4 ip = instanceMatrix[3]; float h = position.y; transformed.x += sin(uTime*2.2 + ip.x*0.6 + ip.z*0.45) * 0.16 * h * h * 4.0; transformed.z += cos(uTime*1.7 + ip.x*0.3) * 0.06 * h;');
     };
-    var n = 2600, im = new T.InstancedMesh(bl, GRASSM, n), m = new T.Matrix4(), q = new T.Quaternion(), sc = new T.Vector3(), ps = new T.Vector3(), col = new T.Color();
+    var n = LOW ? 1100 : 2600, im = new T.InstancedMesh(bl, GRASSM, n), m = new T.Matrix4(), q = new T.Quaternion(), sc = new T.Vector3(), ps = new T.Vector3(), col = new T.Color();
     var w = LCX[1] - LW - 0.6;
     for (var i = 0; i < n; i++) {
       var zone = i % 5, x, z;
@@ -470,26 +494,29 @@ var V = (function () {
   // ---------- DÂN CHÚNG, LÍNH TUẦN, NGƯỜI BÁN HÀNG ----------
   var NPC = [];
   function spawnNPCs() {
-    if (!modelsReady) return;
     var L0 = -HL - 13, R0 = LCX[1] + HL + 13;
-    var folk = [['Cleric', '#e8d5b0'], ['Rogue', '#c9b28a'], ['Monk', '#bca58a'], ['Ranger', '#9fae7a'], ['Cleric', '#d7b3c0'], ['Monk', '#b0a090']];
-    function add(model, tint, path, speed, h, y) {
-      var v = makeModel(model, tint, h || 1.6); if (!v) return; scene.add(v);
-      var n = { v: v, path: path, i: 0, p: path[0].clone(), sp: speed, wait: Math.random() * 2, y: y || 0 };
-      v.position.copy(n.p); v.position.y = n.y; NPC.push(n);
+    var looks = [
+      { skin: '#e8c39e', hair: '#1a1410', hat: 'nonla', robe: '#8d7b5a', robe2: '#4e4030', trim: '#c8b080' },
+      { skin: '#f2d2b4', hair: '#120c0c', hat: 'longhair', robe: '#c2185b', robe2: '#f8bbd0', trim: '#ffd1e3', female: true },
+      { skin: '#e3b48c', hair: '#2a1a10', hat: 'topknot', robe: '#3e5f8a', robe2: '#c5d6ea', trim: '#e0e8f0' },
+      { skin: '#f3d0b0', hair: '#1c1416', hat: 'longhair', robe: '#2e7d5b', robe2: '#c8e6c9', trim: '#e8f5e9', female: true },
+      { skin: '#d9a77c', hair: '#2a1a10', hat: 'nonla', robe: '#6d4c41', robe2: '#3e2723', trim: '#a1887f' },
+      { skin: '#eec39e', hair: '#cfc8c0', hat: 'topknot', robe: '#5d4037', robe2: '#d7ccc8', trim: '#e0c080' }
+    ];
+    var guard = { skin: '#e0b48c', hair: '#111', hat: 'helmet', robe: '#a3241a', robe2: '#3a0a06', trim: '#e8b04a', armor: true };
+    function add(lk, weapon, path, speed, scale, y) {
+      var v = makeHuman(lk, { weapon: weapon }); v.scale.setScalar(scale || 1.05); scene.add(v);
+      var n = { v: v, path: path, i: 0, p: path[0].clone(), sp: speed, wait: Math.random() * 2, y: y || 0, ph: Math.random() * 6 };
+      v.position.copy(n.p); NPC.push(n);
     }
     var P = function (x, z) { return new T.Vector3(x, 0, z); };
     for (var i = 0; i < 6; i++) {
-      var f = folk[i];
-      add(f[0], f[1], [P(L0 + 0.3, -10 + i * 3), P(L0 + 0.3, 9 - i), P(L0 - 2.4, 9 - i), P(L0 - 2.4, -10 + i * 3)], 0.9 + Math.random() * 0.5);
-      add(folk[(i + 3) % 6][0], folk[(i + 3) % 6][1], [P(R0 - 0.3, 9 - i * 3), P(R0 - 0.3, -10 + i), P(R0 + 2.4, -10 + i), P(R0 + 2.4, 9 - i * 3)], 0.9 + Math.random() * 0.5);
+      add(looks[i], null, [P(L0 + 0.3, -10 + i * 3), P(L0 + 0.3, 9 - i), P(L0 - 2.4, 9 - i), P(L0 - 2.4, -10 + i * 3)], 0.9 + Math.random() * 0.5);
+      add(looks[(i + 3) % 6], null, [P(R0 - 0.3, 9 - i * 3), P(R0 - 0.3, -10 + i), P(R0 + 2.4, -10 + i), P(R0 + 2.4, 9 - i * 3)], 0.9 + Math.random() * 0.5);
     }
-    // người bán hàng đứng sau sạp
-    [[-1, -8], [1, -3.5], [-1, 1], [1, 5.5]].forEach(function (p) { add('Cleric', '#f0d9b5', [P(L0 + p[0] * 1.5 - 0.8, p[1]), P(L0 + p[0] * 1.5 - 0.8, p[1] + 0.01)], 0.01, 1.5); add('Monk', '#e0c8a0', [P(R0 - p[0] * 1.5 + 0.8, p[1] + 1), P(R0 - p[0] * 1.5 + 0.8, p[1] + 1.01)], 0.01, 1.5); });
-    // lính tuần trên tường thành
-    for (var g = 0; g < 4; g++) { var x0 = MX - 40 + g * 22; add('Warrior', '#c0392b', [P(x0, -13.4), P(x0 + 14, -13.4)], 1.1, 1.6, 3.2); }
-    // lính gác dọc bờ hồ
-    add('Warrior', '#8e2a20', [P(-HL - 10, 11.3), P(-HL - 2, 11.3)], 0.8, 1.6, 0.2); add('Warrior', '#8e2a20', [P(LCX[1] + HL + 2, 11.3), P(LCX[1] + HL + 10, 11.3)], 0.8, 1.6, 0.2);
+    [[-1, -8], [1, -3.5], [-1, 1], [1, 5.5]].forEach(function (p, k) { add(looks[(k * 2) % 6], null, [P(L0 + p[0] * 1.5 - 0.8, p[1]), P(L0 + p[0] * 1.5 - 0.8, p[1] + 0.01)], 0.01); add(looks[(k * 2 + 1) % 6], null, [P(R0 - p[0] * 1.5 + 0.8, p[1] + 1), P(R0 - p[0] * 1.5 + 0.8, p[1] + 1.01)], 0.01); });
+    for (var g = 0; g < 4; g++) { var x0 = MX - 40 + g * 22; add(guard, 'spear', [P(x0, -13.4), P(x0 + 14, -13.4)], 1.1, 1.1, 3.2); }
+    add(guard, 'spear', [P(-HL - 10, 11.3), P(-HL - 2, 11.3)], 0.8, 1.1, 0.2); add(guard, 'spear', [P(LCX[1] + HL + 2, 11.3), P(LCX[1] + HL + 10, 11.3)], 0.8, 1.1, 0.2);
   }
   function stepNPCs(dt) {
     NPC.forEach(function (n) {
@@ -501,7 +528,7 @@ var V = (function () {
         else { d.multiplyScalar(Math.min(L, n.sp * dt) / L); n.p.add(d); moving = n.sp > 0.05; faceTo(v, 1, Math.atan2(d.x, d.z), dt); }
       }
       v.position.set(n.p.x, n.y, n.p.z);
-      var U = v.userData; if (U.model) { var a = moving ? (U.A.walk || U.A.run) : U.A.idle; if (a && U.cur !== a) playA(v, a, 0.25); if (moving && U.cur) U.cur.timeScale = U.A.walk ? 1 : 0.6; U.mixer.update(dt); }
+      n.ph += dt * 0.7; animHuman(v, { moving: moving, atk: 0, ph: n.ph }, clock * 0.75 + n.ph, dt);
     });
   }
   var _tmpV3 = new T.Vector3();
@@ -544,7 +571,7 @@ var V = (function () {
     var doorL = mesh(new T.BoxGeometry(1.45, 1.7, 0.12), M('#7a1a10'), -0.73, 0.85, 0.75); grp.add(doorL);
     var doorR = mesh(new T.BoxGeometry(1.45, 1.7, 0.12), M('#7a1a10'), 0.73, 0.85, 0.75); grp.add(doorR);
     for (var i = 0; i < 3; i++) for (var j = 0; j < 3; j++) { grp.add(mesh(G('stud', function () { return new T.SphereGeometry(0.06, 6, 4); }), M('#e8b04a'), -1.2 + i * 0.25 + (j > 1 ? 0 : 0), 0.4 + j * 0.45, 0.82, false)); grp.add(mesh(G('stud', null), M('#e8b04a'), 0.7 + i * 0.25, 0.4 + j * 0.45, 0.82, false)); }
-    for (var k = 0; k < 11; k++) grp.add(mesh(G('cren', function () { return new T.BoxGeometry(0.55, 0.4, 0.3); }), wallM, -5 + k * 1, 2.8, 0.65));
+    var crm2 = wallMat(0.55, 0.4, '#f0e0c8'); for (var k = 0; k < 11; k++) grp.add(mesh(G('cren', function () { return new T.BoxGeometry(0.55, 0.4, 0.3); }), crm2, -5 + k * 1, 2.8, 0.65));
     // lầu trên cổng 2 tầng
     var tower = hall(0, 0, 5.4, 1.6, 1.1, 1.2, { tiers: 2, wall: '#e6d4b4' }); scene.remove(tower); tower.position.set(0, 2.6, -0.1); grp.add(tower);
     // biển
@@ -556,16 +583,18 @@ var V = (function () {
       g.strokeStyle = '#e8b04a'; g.lineWidth = 6; g.strokeRect(10, 10, W2 - 20, H2 - 20); g.lineWidth = 2; g.strokeRect(22, 22, W2 - 44, H2 - 44);
       var bgc = g.createLinearGradient(0, 30, 0, H2 - 30); bgc.addColorStop(0, '#16285a'); bgc.addColorStop(1, '#0b1636'); g.fillStyle = bgc; g.fillRect(26, 26, W2 - 52, H2 - 52);
       for (var c = 0; c < 4; c++) { var cx = c % 2 ? W2 - 26 : 26, cy = c > 1 ? H2 - 26 : 26; g.fillStyle = '#e8b04a'; g.beginPath(); g.arc(cx, cy, 12, 0, 6.3); g.fill(); g.fillStyle = '#7a1a10'; g.beginPath(); g.arc(cx, cy, 5, 0, 6.3); g.fill(); }
-      var han = lane === 0 ? '洛 陽' : '汴 京', vi = lane === 0 ? 'LẠC DƯƠNG' : 'BIỆN KINH';
+      var vi = lane === 0 ? 'Lạc Dương' : 'Biện Kinh';
       var gold = g.createLinearGradient(0, 40, 0, 150); gold.addColorStop(0, '#fff4c2'); gold.addColorStop(0.5, '#ffd257'); gold.addColorStop(1, '#c07a10');
       g.textAlign = 'center'; g.textBaseline = 'middle';
-      g.font = '110px "Ma Shan Zheng", "STKaiti", "KaiTi", serif'; g.shadowColor = 'rgba(0,0,0,.6)'; g.shadowBlur = 6; g.shadowOffsetY = 3;
-      g.fillStyle = gold; g.fillText(han, W2 / 2, 92);
-      g.shadowBlur = 0; g.shadowOffsetY = 0; g.font = '600 26px "Playfair Display", serif'; g.fillStyle = '#e8c26a'; g.fillText(vi.split('').join(' '), W2 / 2, 160);
+      g.font = 'italic 900 96px "Playfair Display", serif';
+      g.lineWidth = 8; g.strokeStyle = '#3a1a00'; g.strokeText(vi, W2 / 2, 104);
+      g.shadowColor = 'rgba(255,200,90,.55)'; g.shadowBlur = 14; g.fillStyle = gold; g.fillText(vi, W2 / 2, 104); g.shadowBlur = 0;
+      g.strokeStyle = 'rgba(255,255,255,.35)'; g.lineWidth = 1.5; g.strokeText(vi, W2 / 2, 100);
+      g.fillStyle = '#b71c1c'; g.fillRect(W2 - 92, H2 - 82, 44, 44); g.fillStyle = '#ffd0c0'; g.font = '700 15px "Playfair Display", serif'; g.fillText('THÀNH', W2 - 70, H2 - 60);
       plaque.needsUpdate = true;
     };
-    drawPlaque(); if (document.fonts && document.fonts.load) document.fonts.load('110px "Ma Shan Zheng"', '洛陽汴京').then(drawPlaque).catch(function () {});
-    var pl = mesh(new T.PlaneGeometry(3.2, 1.25), new T.MeshBasicMaterial({ map: plaque }), 0, 2.2, 0.83, false); grp.add(pl);
+    drawPlaque(); if (document.fonts && document.fonts.load) document.fonts.load('italic 900 96px "Playfair Display"', 'Lạc Dương Biện Kinh').then(drawPlaque).catch(function () {});
+    var pl = mesh(new T.PlaneGeometry(3.6, 1.4), new T.MeshBasicMaterial({ map: plaque }), 0, 2.2, 0.83, false); pl.scale.x = 9 / LW; grp.add(pl);
     var plGlow = glowSprite('#ffcf7a', 3.6, 0.25); plGlow.position.set(0, 2.2, 0.9); grp.add(plGlow);
     // cờ
     for (var s = -1; s <= 1; s += 2) {
@@ -670,6 +699,9 @@ var V = (function () {
       case 'topknot': head.add(cap(0.245)); head.add(mesh(sph(0.09), hair, 0, 0.3, -0.02)); head.add(mesh(box(0.03, 0.14, 0.03), M('#e8b04a'), 0, 0.33, 0.02)); break;
       case 'taoist': head.add(cap(0.245)); head.add(mesh(box(0.3, 0.13, 0.22), M('#263238'), 0, 0.27, -0.02)); head.add(mesh(box(0.31, 0.03, 0.23), M(lk.trim, { em: lk.trim, ei: 0.4 }), 0, 0.24, -0.02, false)); break;
       case 'messy': head.add(cap(0.25)); for (var j = 0; j < 6; j++) head.add(mesh(sph(0.08, 6, 5), hair, Math.cos(j) * 0.15, 0.2 + (j % 2) * 0.05, Math.sin(j) * 0.12 - 0.04)); head.add(mesh(G('band', function () { return new T.TorusGeometry(0.235, 0.025, 6, 16); }), M('#7cb342'), 0, 0.1, 0, false)).rotation.x = Math.PI / 2; break;
+      case 'yellowband': head.add(cap(0.245)); var yb = mesh(G('band3', function () { return new T.TorusGeometry(0.24, 0.045, 6, 16); }), M('#f2c400', { em: '#806000', ei: 0.3 }), 0, 0.09, 0, false); yb.rotation.x = Math.PI / 2; head.add(yb); var tl = mesh(box(0.06, 0.3, 0.02), M('#f2c400'), -0.05, -0.05, -0.25, false); tl.rotation.x = 0.4; head.add(tl); break;
+      case 'mongol': head.add(cap(0.245)); head.add(mesh(G('furhat', function () { var g = new T.CylinderGeometry(0.3, 0.28, 0.16, 12); return g; }), M('#6d4c2e'), 0, 0.14, 0)); head.add(mesh(cone(0.2, 0.32, 10), M('#8b1a10'), 0, 0.36, 0)); head.add(mesh(sph(0.04), M('#e8b04a', { em: '#a06a10', ei: 0.5 }), 0, 0.54, 0, false)); break;
+      case 'nonla': head.add(cap(0.245)); head.add(mesh(G('nonla', function () { return new T.ConeGeometry(0.55, 0.32, 18, 1, true); }), M('#e8d39a', { side: T.DoubleSide }), 0, 0.3, 0)); break;
       case 'bandana': head.add(cap(0.245)); var bd = mesh(G('band2', function () { return new T.TorusGeometry(0.235, 0.035, 6, 16); }), M(lk.trim), 0, 0.09, 0, false); bd.rotation.x = Math.PI / 2; head.add(bd); break;
       case 'ironhelm': head.add(mesh(G('helm', null), M('#78909c'), 0, 0.03, 0)); head.add(mesh(box(0.04, 0.2, 0.04), M('#455a64'), 0, 0.3, 0)); break;
       case 'horns': head.add(cap(0.25)); for (var s = -1; s <= 1; s += 2) { var hn = mesh(cone(0.05, 0.3, 6), M('#e8dcc8'), s * 0.15, 0.24, 0); hn.rotation.z = -s * 0.6; head.add(hn); } break;
@@ -836,7 +868,7 @@ var V = (function () {
     var v = VU[u.id];
     if (!v) {
       var d = S.UNITS[u.type], um = UNIT_MODEL[u.type];
-      var g = (window.A3 && A3.has(u.type) && A3.make(u.type, 2.5)) || (modelsReady && makeModel(um[0], um[1], 1.95)) || makeHuman(R.LOOK[u.type], { weapon: d.weapon, wglow: u.type === 'vodang' ? '#7ab8ff' : null });
+      var g = makeHuman(R.LOOK[u.type], { weapon: d.weapon, wglow: u.type === 'vodang' ? '#7ab8ff' : null });
       if (g.userData.model || g.userData.card) { var sg = glowSprite(d.col, 0.9, 0.35); sg.position.y = 0.15; g.add(sg); }
       g.userData.tier = -1; g.userData.pop = 0; g.userData.hidden = 0.0;
       var ring = new T.Mesh(G('uring', function () { return new T.RingGeometry(0.34, 0.44, 24); }), new T.MeshBasicMaterial({ color: d.col, transparent: true, opacity: 0.85, side: T.DoubleSide, depthWrite: false }));
@@ -870,12 +902,12 @@ var V = (function () {
     if (!v) {
       var d = S.CREEPS[c.type];
       var cm = CREEP_MODEL[c.type];
-      v = d.beast ? makeBeast(c.type) : ((modelsReady && cm && makeModel(cm[0], cm[1], 1.85)) || makeHuman(R.CLOOK[c.type], { weapon: R.CLOOK[c.type].weapon }));
+      v = d.beast ? makeBeast(c.type) : makeHuman(R.CLOOK[c.type], { weapon: R.CLOOK[c.type].weapon });
       v.userData.size = d.size;
       if (R.CLOOK[c.type] && R.CLOOK[c.type].aura) { var a = glowSprite(R.CLOOK[c.type].aura, 2.2, 0.5); a.position.y = 0.6; v.add(a); }
       if (d.boss) { var br = new T.Mesh(new T.RingGeometry(0.5, 0.62, 32), new T.MeshBasicMaterial({ color: '#ff1744', transparent: true, opacity: 0.8, side: T.DoubleSide, depthWrite: false, blending: T.AdditiveBlending })); br.rotation.x = -Math.PI / 2; br.position.y = 0.04; v.add(br); }
       if (d.send) { var sr = glowSprite('#ff1744', 1.0, 0.4); sr.position.y = 0.5; v.add(sr); }
-      v.scale.setScalar(d.size * (d.beast ? 1.45 : (v.userData.model ? 1 : 0.9)));
+      v.scale.setScalar(d.size * (d.beast ? 1.5 : 1.2));
       scene.add(v); VC[c.id] = v;
     }
     return v;
@@ -1181,9 +1213,9 @@ var V = (function () {
   // ---------- Khởi tạo ----------
   function init(canvas, ov) {
     renderer = new T.WebGLRenderer({ canvas: canvas, antialias: true, powerPreference: 'high-performance' });
-    DPR = Math.min(window.devicePixelRatio || 1, 2);
+    DPR = Math.min(window.devicePixelRatio || 1, LOW ? 1.25 : 1.75);
     renderer.setPixelRatio(DPR);
-    renderer.shadowMap.enabled = true; renderer.shadowMap.type = T.PCFSoftShadowMap;
+    renderer.shadowMap.enabled = true; renderer.shadowMap.type = LOW ? T.PCFShadowMap : T.PCFSoftShadowMap;
     makeGrad(); makeTextures(); makeRoofTex();
     OUT = new T.MeshBasicMaterial({ color: '#1a0e0a', side: T.BackSide });
     buildScene();
@@ -1211,7 +1243,7 @@ var V = (function () {
   function resize() {
     Wd = window.innerWidth; Hd = window.innerHeight;
     renderer.setSize(Wd, Hd, false); composer.setSize(Wd, Hd);
-    bloom.resolution.set(Wd / 2, Hd / 2);
+    bloom.resolution.set(Wd / (LOW ? 3 : 2), Hd / (LOW ? 3 : 2));
     camera.aspect = Wd / Hd; camera.updateProjectionMatrix();
     overlay.width = Wd * DPR; overlay.height = Hd * DPR; overlay.style.width = Wd + 'px'; overlay.style.height = Hd + 'px';
   }
@@ -1263,8 +1295,10 @@ var V = (function () {
 
   // ---------- VẼ MỖI KHUNG ----------
   var prevT = 0;
+  var fpsAcc = 0, fpsN = 0, fpsDone = false;
   function frame(G, alpha, dt, view) {
     clock += dt; var t = clock;
+    if (!fpsDone && clock > 3) { fpsAcc += dt; fpsN++; if (fpsAcc > 4) { fpsDone = true; var fps = fpsN / fpsAcc; if (fps < 40 && DPR > 1) { DPR = 1; renderer.setPixelRatio(1); resize(); } if (fps < 28) { renderer.shadowMap.enabled = false; scene.traverse(function (o) { if (o.material) o.material.needsUpdate = true; }); } } }
     gridLines.forEach(function (gl, i) { gl.material.opacity = G.phase === 'build' && i === view.lane ? 0.45 + Math.sin(t * 3) * 0.12 : 0; });
     // tướng
     var seen = {};
@@ -1273,7 +1307,7 @@ var V = (function () {
       var pr = lerpPos(u, alpha), pos = W(u.owner, pr[0], pr[1]);
       if (v.userData.hidden > 0) { v.userData.hidden -= dt; v.visible = v.userData.hidden <= 0; if (v.visible) v.userData.pop = 0.0001; }
       v.position.copy(pos);
-      var sb = (v.userData.scaleBase || 1) * 0.95;
+      var sb = (v.userData.scaleBase || 1) * 1.3;
       if (v.userData.pop > 0 && v.userData.pop < 1) { v.userData.pop = Math.min(1, v.userData.pop + dt * 3); var k = v.userData.pop, el = 1 + Math.sin(k * Math.PI * 2.5) * (1 - k) * 0.5; v.scale.setScalar(sb * k * el); } else v.scale.setScalar(sb);
       var tgt = u.tgt ? S.findCreep(G, u.tgt) : null, ang;
       if (tgt) ang = Math.atan2(tgt.x - u.x, -(tgt.y - u.y)) + 0; else ang = (u.moving ? Math.atan2((u.cx + 0.5 - u.x), -((u.cy + 0.5) - u.y)) : Math.PI);

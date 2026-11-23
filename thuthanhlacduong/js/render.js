@@ -249,13 +249,13 @@ var R = (function () {
     conlon: { skin: '#eec5a0', hair: '#202020', hat: 'taoist', robe: '#00acc1', robe2: '#08333b', trim: '#ffeb3b' },
     caibang: { skin: '#d9a77c', hair: '#3a2612', hat: 'messy', robe: '#8d6e63', robe2: '#4e342e', trim: '#7cb342', patches: true }
   };
-  var CLOOK = {
-    sontac: { skin: '#d9a77c', hair: '#2a1a10', hat: 'bandana', robe: '#7a5a44', robe2: '#3d2a1e', trim: '#b23a2a', weapon: 'saber' },
-    cungtac: { skin: '#d9a77c', hair: '#2a1a10', hat: 'bandana', robe: '#5d6b3a', robe2: '#2c3319', trim: '#a08050', weapon: 'bow' },
-    thietgiap: { skin: '#cfa27a', hair: '#222', hat: 'ironhelm', robe: '#6c7a86', robe2: '#2d353d', trim: '#a9b6c0', weapon: 'shield', armor: true },
-    trai_chu: { skin: '#b98a66', hair: '#111', hat: 'ironhelm', robe: '#2f3a44', robe2: '#101418', trim: '#c0392b', weapon: 'axe', armor: true },
-    huyetma: { skin: '#c97c6e', hair: '#5a0000', hat: 'horns', robe: '#8e0000', robe2: '#2a0000', trim: '#ff5252', weapon: 'saber', aura: '#ff1744' },
-    mavuong: { skin: '#b9a0c8', hair: '#120020', hat: 'horns', robe: '#4a148c', robe2: '#12002a', trim: '#e040fb', weapon: 'axe', aura: '#d500f9' },
+  var CLOOK = {   // quân phản loạn: Khăn Vàng, phiến quân Biện Kinh, Mông Nguyên
+    sontac: { skin: '#d9a77c', hair: '#2a1a10', hat: 'yellowband', robe: '#8a6a3a', robe2: '#4a3318', trim: '#f2c400', sash: '#f2c400', weapon: 'saber' },
+    cungtac: { skin: '#d9a77c', hair: '#2a1a10', hat: 'yellowband', robe: '#6d6a3a', robe2: '#3a3818', trim: '#f2c400', sash: '#f2c400', weapon: 'bow' },
+    thietgiap: { skin: '#cfa27a', hair: '#222', hat: 'mongol', robe: '#6a4a32', robe2: '#2d2018', trim: '#a9b6c0', weapon: 'saber', armor: true },
+    trai_chu: { skin: '#b98a66', hair: '#111', hat: 'yellowband', robe: '#b08a20', robe2: '#4a3300', trim: '#ffe066', weapon: 'axe', armor: true },
+    huyetma: { skin: '#c97c6e', hair: '#2a0000', hat: 'helmet', robe: '#5a1010', robe2: '#1a0000', trim: '#ff5252', weapon: 'spear', armor: true, aura: '#ff1744' },
+    mavuong: { skin: '#c8a07a', hair: '#120a00', hat: 'mongol', robe: '#3a2a6a', robe2: '#140a2a', trim: '#e8b04a', weapon: 'axe', armor: true, aura: '#d500f9' },
     hacy: { skin: '#d9a77c', hair: '#000', hat: 'hood', robe: '#1f1f1f', robe2: '#050505', trim: '#b71c1c', weapon: 'saber', mask: true },
     matang: { skin: '#d9a07a', hair: null, hat: 'bald', robe: '#880e4f', robe2: '#3a0020', trim: '#ffd54f', weapon: 'staff', sash: '#ffd54f' }
   };

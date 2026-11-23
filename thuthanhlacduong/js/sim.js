@@ -47,19 +47,19 @@ var Sim = (function () {
 
   // ---- Giặc (quái theo đợt) ----
   var CREEPS = {
-    sontac:  { name: 'Sơn Tặc', hp: 70, dmg: 7, cd: 1.0, range: 0.9, spd: 1.4, bounty: 2, leak: 1, col: '#8d6e63', size: 1 },
-    soi:     { name: 'Sói Hoang', hp: 45, dmg: 5, cd: 0.8, range: 0.8, spd: 2.5, bounty: 1, leak: 1, col: '#9e9e9e', size: 0.9, beast: true },
-    cungtac: { name: 'Cung Tặc', hp: 52, dmg: 8, cd: 1.3, range: 3.4, spd: 1.3, bounty: 2, leak: 1, col: '#6d4c41', size: 1, ranged: true },
-    thietgiap:{ name: 'Thiết Giáp Binh', hp: 135, dmg: 9, cd: 1.2, range: 0.9, spd: 1.0, bounty: 3, leak: 2, col: '#607d8b', size: 1.15, armor: 0.45 },
+    sontac:  { name: 'Giặc Khăn Vàng', hp: 70, dmg: 7, cd: 1.0, range: 0.9, spd: 1.4, bounty: 2, leak: 1, col: '#8d6e63', size: 1 },
+    soi:     { name: 'Chiến Khuyển Mông Nguyên', hp: 45, dmg: 5, cd: 0.8, range: 0.8, spd: 2.5, bounty: 1, leak: 1, col: '#9e9e9e', size: 0.9, beast: true },
+    cungtac: { name: 'Cung Thủ Khăn Vàng', hp: 52, dmg: 8, cd: 1.3, range: 3.4, spd: 1.3, bounty: 2, leak: 1, col: '#6d4c41', size: 1, ranged: true },
+    thietgiap:{ name: 'Thiết Kỵ Mông Nguyên', hp: 135, dmg: 9, cd: 1.2, range: 0.9, spd: 1.0, bounty: 3, leak: 2, col: '#607d8b', size: 1.15, armor: 0.45 },
     yeuho:   { name: 'Yêu Hồ', hp: 85, dmg: 10, cd: 0.9, range: 0.9, spd: 1.9, bounty: 3, leak: 1, col: '#ff7043', size: 0.95, mres: 0.45, beast: true },
     hovuong: { name: 'Hổ Vương', hp: 1300, dmg: 38, cd: 1.4, range: 1.2, spd: 1.1, bounty: 30, leak: 5, col: '#ff9800', size: 2.0, boss: true, beast: true },
-    trai_chu:{ name: 'Hắc Phong Trại Chủ', hp: 1500, dmg: 42, cd: 1.3, range: 1.2, spd: 1.0, bounty: 40, leak: 6, col: '#37474f', size: 2.0, boss: true, armor: 0.3 },
-    huyetma: { name: 'Huyết Ma', hp: 1600, dmg: 46, cd: 1.2, range: 1.2, spd: 1.2, bounty: 50, leak: 7, col: '#c62828', size: 2.1, boss: true, mres: 0.3 },
-    mavuong: { name: 'Thiên Nhẫn Ma Vương', hp: 2000, dmg: 55, cd: 1.2, range: 1.3, spd: 1.0, bounty: 80, leak: 10, col: '#4a148c', size: 2.4, boss: true, armor: 0.25, mres: 0.25 },
+    trai_chu:{ name: 'Hoàng Cân Đại Soái', hp: 1500, dmg: 42, cd: 1.3, range: 1.2, spd: 1.0, bounty: 40, leak: 6, col: '#37474f', size: 2.0, boss: true, armor: 0.3 },
+    huyetma: { name: 'Phiến Tướng Biện Kinh', hp: 1600, dmg: 46, cd: 1.2, range: 1.2, spd: 1.2, bounty: 50, leak: 7, col: '#c62828', size: 2.1, boss: true, mres: 0.3 },
+    mavuong: { name: 'Mông Nguyên Đại Hãn', hp: 2000, dmg: 55, cd: 1.2, range: 1.3, spd: 1.0, bounty: 80, leak: 10, col: '#4a148c', size: 2.4, boss: true, armor: 0.25, mres: 0.25 },
     // quân phái đi (sends)
-    hacy:    { name: 'Hắc Y Nhân', hp: 150, dmg: 14, cd: 0.8, range: 0.9, spd: 2.2, bounty: 0, leak: 2, col: '#212121', size: 1, send: true },
+    hacy:    { name: 'Thích Khách Biện Kinh', hp: 150, dmg: 14, cd: 0.8, range: 0.9, spd: 2.2, bounty: 0, leak: 2, col: '#212121', size: 1, send: true },
     langvuong:{ name: 'Lang Vương', hp: 360, dmg: 22, cd: 0.9, range: 1.0, spd: 2.3, bounty: 0, leak: 3, col: '#cfd8dc', size: 1.4, send: true, beast: true },
-    matang:  { name: 'Ma Tăng', hp: 800, dmg: 34, cd: 1.3, range: 1.1, spd: 1.2, bounty: 0, leak: 5, col: '#880e4f', size: 1.7, send: true, armor: 0.2 }
+    matang:  { name: 'Ma Tăng Tây Vực', hp: 800, dmg: 34, cd: 1.3, range: 1.1, spd: 1.2, bounty: 0, leak: 5, col: '#880e4f', size: 1.7, send: true, armor: 0.2 }
   };
   var SENDS = {
     hacy: { cost: 20, inc: 2 },
