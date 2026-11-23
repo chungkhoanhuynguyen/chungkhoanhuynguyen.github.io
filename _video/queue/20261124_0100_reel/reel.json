@@ -1,0 +1,168 @@
+[
+ {
+  "key": "RV2411LS",
+  "tieu_de": "Lãi tiết kiệm đã qua đỉnh? Lần trước có nơi trả 10%, một năm sau cao nhất chỉ 5,7% – cùng 600 triệu, lãi 60 triệu hay 34,2 triệu",
+  "hook": [
+   "LÃI TIẾT KIỆM",
+   "ĐÃ QUA ĐỈNH???"
+  ],
+  "nhan": "LÃI SUẤT · TÚI TIỀN",
+  "short_caption": "NHNN yêu cầu giảm 0,5–1%/năm lãi tiền gửi mới kỳ hạn từ 6 tháng, giảm 1,5–2%/năm lãi cho vay (họp báo Chính phủ 4/11/2026, VCCI 10/11/2026). Phần lớn ngân hàng niêm yết 12 tháng dưới 7% (TT Tài chính Tiền tệ 1/11/2026). Lần trước: 12/2022 có nơi trả 10% kỳ 12 tháng (TT Tài chính Tiền tệ 1/12/2022); 12/2023 cao nhất thị trường 12 tháng 5,7%, Vietcombank 4,8% (VnEconomy 12/12/2023). 600 triệu × 10% = 60 triệu; × 5,7% = 34,2 triệu (tự tính). Khoản vay mới cuối tháng 10 giảm 0,2–0,5% (VCCI 10/11/2026).",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "KỲ DÀI HAY KỲ NGẮN?",
+   "loi": "Anh chị đang gửi kỳ dài hay kỳ ngắn, và trong năm tới cần dùng bao nhiêu phần trăm số tiền đó?",
+   "loi_doc": "Anh chị đang gửi kỳ dài hay kỳ ngắn, và trong năm tới cần dùng bao nhiêu phần trăm số tiền đó?",
+   "anh": [
+    "Ho Chi Minh City skyline night",
+    "Hanoi skyline night"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "NHNN YÊU CẦU GIẢM LÃI",
+    "loi": "Ngân hàng Nhà nước vừa yêu cầu giảm lãi tiền gửi mới từ nửa điểm đến một điểm phần trăm, áp dụng cho kỳ hạn từ 6 tháng. Lãi cho vay phải giảm mạnh hơn.",
+    "loi_doc": "Ngân hàng Nhà nước vừa yêu cầu giảm lãi tiền gửi mới từ nửa điểm đến một điểm phần trăm, áp dụng cho kỳ hạn từ sáu tháng. Lãi cho vay phải giảm mạnh hơn.",
+    "the": {
+     "loai": "lon",
+     "tieu": "HỌP BÁO CHÍNH PHỦ 4/11/2026",
+     "nguon": "VCCI 10/11/2026",
+     "dong": [
+      [
+       "GIẢM 0,5 ĐẾN 1%",
+       96,
+       "vang"
+      ],
+      [
+       "LÃI TIỀN GỬI MỚI, TỪ 6 THÁNG",
+       50,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "NIÊM YẾT DƯỚI 7%",
+    "loi": "Đầu tháng 11, phần lớn ngân hàng niêm yết kỳ 12 tháng dưới 7%. Mức 9,1% từng được quảng cáo là lãi niêm yết cộng thêm ưu đãi, có hạn và có điều kiện.",
+    "loi_doc": "Đầu tháng mười một, phần lớn ngân hàng niêm yết kỳ mười hai tháng dưới bảy phần trăm. Mức chín phẩy một phần trăm từng được quảng cáo là lãi niêm yết cộng thêm ưu đãi, có hạn và có điều kiện.",
+    "the": {
+     "loai": "lon",
+     "tieu": "LÃI NIÊM YẾT KỲ 12 THÁNG",
+     "nguon": "TT Tài chính Tiền tệ 1/11/2026",
+     "dong": [
+      [
+       "DƯỚI 7%",
+       120,
+       "vang"
+      ],
+      [
+       "Ở PHẦN LỚN NGÂN HÀNG",
+       52,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "LẦN TRƯỚC: 10% CÒN 5,7%",
+    "loi": "Lần trước lãi quay đầu, tháng 12 năm 2022 có nơi trả 10% cho kỳ 12 tháng. Một năm sau, nơi trả cao nhất chỉ còn 5,7%, Vietcombank còn 4,8%.",
+    "loi_doc": "Lần trước lãi quay đầu, tháng mười hai năm hai nghìn không trăm hai mươi hai có nơi trả mười phần trăm cho kỳ mười hai tháng. Một năm sau, nơi trả cao nhất chỉ còn năm phẩy bảy phần trăm, Việt com banh còn bốn phẩy tám phần trăm.",
+    "the": {
+     "loai": "cot",
+     "tieu": "LÃI 12 THÁNG (%)",
+     "nguon": "TT Tài chính Tiền tệ 1/12/2022, VnEconomy 12/12/2023",
+     "hang": [
+      [
+       "Có nơi 12/2022",
+       10
+      ],
+      [
+       "Cao nhất 12/2023",
+       5.7
+      ],
+      [
+       "Vietcombank 12/2023",
+       4.8
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "%"
+    }
+   },
+   {
+    "chu_to": "CÙNG 600 TRIỆU",
+    "loi": "Cùng 600 triệu, gửi 12 tháng ở mức 10% thì một năm nhận 60 triệu tiền lãi. Chậm một năm, ở mức cao nhất 5,7%, chỉ còn 34 triệu 200 nghìn đồng.",
+    "loi_doc": "Cùng sáu trăm triệu, gửi mười hai tháng ở mức mười phần trăm thì một năm nhận sáu mươi triệu tiền lãi. Chậm một năm, ở mức cao nhất năm phẩy bảy phần trăm, chỉ còn ba mươi bốn triệu hai trăm nghìn đồng.",
+    "the": {
+     "loai": "cot",
+     "tieu": "TIỀN LÃI 1 NĂM CỦA 600 TRIỆU (TỰ TÍNH)",
+     "nguon": "Em tự tính từ số liệu trên",
+     "hang": [
+      [
+       "Mức 10%",
+       60
+      ],
+      [
+       "Mức 5,7%",
+       34.2
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": " triệu"
+    }
+   },
+   {
+    "chu_to": "NGƯỜI VAY CÒN PHẢI CHỜ",
+    "loi": "Còn người vay, số đo được trước họp báo cho thấy khoản vay mới cuối tháng 10 chỉ giảm khoảng 0,2 đến 0,5 điểm phần trăm. Khoản vay cũ thả nổi thường điều chỉnh theo kỳ ghi trong hợp đồng.",
+    "loi_doc": "Còn người vay, số đo được trước họp báo cho thấy khoản vay mới cuối tháng mười chỉ giảm khoảng không phẩy hai đến không phẩy năm điểm phần trăm. Khoản vay cũ thả nổi thường điều chỉnh theo kỳ ghi trong hợp đồng.",
+    "the": {
+     "loai": "lon",
+     "tieu": "LÃI VAY MỚI CUỐI THÁNG 10",
+     "nguon": "VCCI 10/11/2026",
+     "dong": [
+      [
+       "GIẢM 0,2 ĐẾN 0,5%",
+       88,
+       "vang"
+      ],
+      [
+       "YÊU CẦU: GIẢM 1,5 ĐẾN 2%",
+       52,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "PHÉP THỬ 10 GIÂY",
+    "loi": "Phép thử của em: tiền cần dùng trong 12 tháng dưới 30% thì phần lớn có thể khóa kỳ dài, từ 30 đến 60% thì chia nhiều sổ, trên 60% thì ưu tiên kỳ ngắn. Đây là mốc tự soi, không phải lời khuyên chung.",
+    "loi_doc": "Phép thử của em: tiền cần dùng trong mười hai tháng dưới ba mươi phần trăm thì phần lớn có thể khóa kỳ dài, từ ba mươi đến sáu mươi phần trăm thì chia nhiều sổ, trên sáu mươi phần trăm thì ưu tiên kỳ ngắn. Đây là mốc tự soi, không phải lời khuyên chung.",
+    "the": {
+     "loai": "lon",
+     "tieu": "TIỀN CẦN DÙNG TRONG 12 THÁNG",
+     "nguon": "Mốc tự soi của Huy Nguyễn",
+     "dong": [
+      [
+       "DƯỚI 30% / TRÊN 60%",
+       84,
+       "vang"
+      ],
+      [
+       "KỲ DÀI / KỲ NGẮN",
+       56,
+       "trang"
+      ]
+     ]
+    }
+   }
+  ]
+ }
+]
