@@ -18,8 +18,8 @@
    "loi": "Theo anh chị, khi đường mới thông xe, Cái Mép có lấy lại hạng 7 thế giới, hay Hải Phòng sẽ vượt lên?",
    "loi_doc": "Theo anh chị, khi đường mới thông xe, Cái Mép có lấy lại hạng bảy thế giới, hay Hải Phòng sẽ vượt lên?",
    "anh": [
-    "container ship",
-    "container port aerial"
+    "container port Vietnam",
+    "Ho Chi Minh City skyline"
    ]
   },
   "canh": [
@@ -115,9 +115,31 @@
     }
    },
    {
+    "chu_to": "HẢI PHÒNG THỨ 13",
+    "loi": "Cùng kỳ đó, Hải Phòng lần đầu vào top 20, xếp thứ 13. Còn ở Cái Mép, chỉ hai cảng có cầu riêng cho sà lan. Người chịu thiệt khi cảng quá đông là tài xế nằm chờ cả ngày và chủ hàng lỡ chuyến tàu.",
+    "loi_doc": "Cùng kỳ đó, Hải Phòng lần đầu vào top hai mươi, xếp thứ mười ba. Còn ở Cái Mép, chỉ hai cảng có cầu riêng cho sà lan. Người chịu thiệt khi cảng quá đông là tài xế nằm chờ cả ngày và chủ hàng lỡ chuyến tàu.",
+    "the": {
+     "loai": "lon",
+     "tieu": "CPPI KỲ CÔNG BỐ 6/2026",
+     "nguon": "bbw.vn 11/6/2026, Báo Xây dựng 11/1/2026",
+     "dong": [
+      [
+       "HẢI PHÒNG THỨ 13",
+       96,
+       "vang"
+      ],
+      [
+       "LẦN ĐẦU VÀO TOP 20",
+       56,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
     "chu_to": "ĐƯỜNG MỚI THÁNG 12",
     "loi": "Năm ngoái cụm cảng đón hơn 12,4 triệu TEU. Đường 991B nối cảng ra quốc lộ, vốn gần 4.000 tỷ, dự kiến thông xe tháng 12 này.",
-    "loi_doc": "Năm ngoái cụm cảng đón hơn mười hai phẩy bốn triệu TEU. Đường chín trăm chín mươi mốtB nối cảng ra quốc lộ, vốn gần bốn nghìn tỷ, dự kiến thông xe tháng mười hai này.",
+    "loi_doc": "Năm ngoái cụm cảng đón hơn mười hai phẩy bốn triệu TEU. Đường chín trăm chín mươi mốt B nối cảng ra quốc lộ, vốn gần bốn nghìn tỷ, dự kiến thông xe tháng mười hai này.",
     "the": {
      "loai": "lon",
      "tieu": "CONTAINER QUA CÁI MÉP – THỊ VẢI NĂM 2025",

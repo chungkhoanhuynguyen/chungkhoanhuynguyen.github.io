@@ -44,6 +44,7 @@ def doc(t):
     t = re.sub(r"(?:([Nn])gày )?\b(\d{1,2})/(\d{1,2})/(\d{4})\b", lambda m: "%sgày %s tháng %s năm %s" % (m.group(1) or "n", m.group(2), m.group(3), m.group(4)), t)   # 15/11 NV1: "Ngày 19/1/2022" từng ra "Ngày ngày"
     t = re.sub(r"(?:ngày )?\b(\d{1,2})/(\d{1,2})\b(?!/)", lambda m: "ngày %s tháng %s" % (m.group(1), m.group(2)), t)
     for a, b in REP: t = re.sub(a, b, t)
+    t = re.sub(r"(?<![A-Za-z])(\d+)([A-Z])\b", r"\1 \2", t)   # NV1 24/11: mã đường '991B' từng ra phụ đề '990 mốtB' (CH0612CM V2) → tách '991 B', so_chu ghép lại
     t = re.sub(r"[−-](?=\d)", "âm ", t); t = re.sub(r"\+(?=\d)", "", t)
     t = re.sub(r"(\d)\s*%", r"\1 phần trăm", t)
     t = re.sub(r"\d{1,3}(?:\.\d{3})+(?:,\d+)?|\d+(?:,\d+)?", lambda m: _num(m.group(0)), t)

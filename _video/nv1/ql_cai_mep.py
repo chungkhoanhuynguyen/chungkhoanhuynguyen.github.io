@@ -45,7 +45,7 @@ S = [
       cap=('"CẢNG LỚN PHẢI Ở', 'THÀNH PHỐ LỚN CHỨ?"'), cols=CC,
       say=("Năm giờ sáng, ở quán nước gần cảng, Hùng Xa Lộ, tài xế container mười hai năm, vừa nhận tin nhắn: tàu đến trễ, xe anh phải chờ thêm. "
            "Cường Sociu ngồi cạnh cười: cảng lớn thì phải ở thành phố lớn chứ, ai lại xây giữa rừng đước thế này? "
-           "Hùng không cãi. Anh chỉ biết mỗi đêm có những con tàu dài như tòa nhà chọc trời nằm ngang cập bến ở đây. Câu chuyện hôm nay đi tìm câu trả lời cho Cường.")),
+           "Hùng không cãi lại. Anh chỉ biết mỗi đêm có những con tàu dài như tòa nhà chọc trời nằm ngang cập bến ở đây. Câu chuyện hôm nay đi tìm câu trả lời cho Cường.")),
  # ---------------- CHƯƠNG 1: vì sao không phải trong thành phố ----------------
  dict(k='map', ch='Chương 1 – Cảng lớn không nằm trong thành phố', cap=('SÔNG TRONG THÀNH PHỐ', 'KHÔNG ĐỦ SÂU CHO TÀU MẸ'), cols=CR,
       map=dict(kf=[(10.6, 106.88, 9.8, 0.0), (10.58, 106.9, 10.3, 1.0)],
@@ -119,7 +119,7 @@ S = [
       say=("Hai cảng biển lớn nhất hai đầu đất nước cùng nằm trong nhóm tốt nhất thế giới là tin vui. Nhưng vì sao Cái Mép tụt hạng, khi lượng hàng vẫn tăng?")),
  dict(k='bignum', anh=CANG, cap=('RIÊNG TÀU MẸ 9 THÁNG 2025', 'TĂNG 18%'), cols=CC, value=5.6, fmt='{:,.1f}', unit=' TRIỆU TEU', top='HÀNG QUA TÀU MẸ Ở CÁI MÉP – THỊ VẢI',
       sub='9 tháng 2025, +18% – Báo SGGP 22/10/2025', col=GOLD,
-      say=("Hàng thì vẫn đổ về. Chỉ riêng hàng đi tàu mẹ, chín tháng năm ngoái đạt 5,6 triệu TEU, tăng 18 phần trăm. "
+      say=("Lượng hàng thì vẫn đổ về. Chỉ riêng hàng đi tàu mẹ, chín tháng năm ngoái đạt 5,6 triệu TEU, tăng 18 phần trăm. "
            "Em nghĩ cầu bến khó xây kịp với tốc độ tăng như thế.")),
  dict(k='giay', cap=('GẦN NHƯ HẾT CÔNG SUẤT', 'TÀU TRỄ LỊCH CHỜ TỚI 3 NGÀY'), cols=CR, moc=True, giay=dict(tieu_de='BÀI TOÁN CÔNG SUẤT CÁI MÉP – THỊ VẢI', so='Báo Xây dựng 11/1/2026', dau='ĐIỂM NGHẼN', dieu=[
         ('Các cảng lớn gần đạt công suất thiết kế', 'GẦN HẾT CHỖ'),
@@ -153,7 +153,7 @@ S = [
            "Tháng 6 năm nay, tin tụt hạng không làm giá đổi chiều.")),
  dict(k='hook', cap=('TIN TỐT CHƯA CHẮC LÊN GIÁ', 'TIN XẤU CHƯA CHẮC XUỐNG'), cols=CC, label='GMD – 26 tuần gần nhất, giá điều chỉnh',
       chart=dict(sym='GMDW', weeks=26, mas=[(10, (56, 189, 248))], hlines=[[51.9, 'Tuần 23/11/2026: 51,9', (255, 196, 0), 1.5]], circles=[[23, 55.0, 'Tuần 9/11: 55,0', 3.0]]),
-      say=("Hai mươi sáu tuần gần nhất, giá dao động trong vùng khoảng 45 đến 58 nghìn đồng. Bài học em rút ra: giá cổ phiếu phản ứng với cả thế giới, không chỉ với tin cảng. "
+      say=("Hai mươi sáu tuần gần nhất, giá dao động từ khoảng 45.000 đồng đến 58.000 đồng một cổ phiếu. Bài học em rút ra: giá cổ phiếu phản ứng với cả thế giới, không chỉ với tin cảng. "
            "Em không nói nên mua hay bán, chỉ muốn anh chị thấy: câu chuyện hay và giá cổ phiếu là hai việc khác nhau.")),
  dict(k='checklist', cap=('3 ĐIỀU NÊN THEO DÕI', 'Ở CÁI MÉP NĂM 2027'), cols=CC, moc=True, items=[
         ('Đường 991B có thông xe đúng tháng 12?', V_),
@@ -170,7 +170,7 @@ S = [
       say=("Sáng hôm sau, Cường đọc lại bảng xếp hạng rồi nói: hóa ra cảng lớn không cần nằm trong thành phố lớn, mà cần nước sâu, cần người dám đào, và cần đường cho xe chạy. "
            "Hùng cười: còn đường thì để anh chờ thêm vài tuần nữa. Em nghĩ câu chuyện Cái Mép giống một bài học đầu tư: lợi thế tự nhiên chỉ là điểm xuất phát, thứ giữ được vị trí là đầu tư đều đặn và đúng chỗ nghẽn.")),
  dict(k='end', cap=('CÁI MÉP SẼ LẤY LẠI', 'HẠNG 7 HAY KHÔNG?'), cols=CC,
-      say=("Còn anh chị đặt cửa ai: sau khi đường 991B thông xe, Cái Mép lấy lại hạng 7 thế giới, hay Hải Phòng vượt lên trong năm 2027? "
+      say=("Còn anh chị đặt cửa ai: sau khi đường 991B thông xe, Cái Mép lấy lại hạng 7 thế giới, hay Hải Phòng vượt lên trong năm tới? "
            "Anh chị gõ Nam hoặc Bắc ở phần bình luận, kèm lý do nhé. Tập sau, em kể tiếp vì sao một vùng đất khác của Việt Nam thay đổi cả nền kinh tế.")),
 ]
 import ql_post; S = ql_post.tach(S, max_tu=100)

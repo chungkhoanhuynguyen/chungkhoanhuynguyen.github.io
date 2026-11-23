@@ -16,7 +16,7 @@ CHU = [  # từ trong câu -> từ khoá
  (r"ngân hàng|tín dụng|nợ xấu|NIM|lãi vay|tiền gửi", "bank Vietnam"),
  (r"dầu|lọc hoá|xăng", "oil refinery"), (r"thép", "steel mill"), (r"bất động sản|căn hộ|nhà ở", "Ho Chi Minh City apartments"),
  (r"tích sản|góp đều|tiết kiệm|tiền", "Vietnamese dong banknotes"), (r"cảng|xuất khẩu|logistics", "container port Vietnam"),
- (r"nhà máy điện|giá điện|ngành điện|năng lượng|thuỷ điện|nhiệt điện", "power plant Vietnam"), (r"bán lẻ|siêu thị|tiêu dùng", "supermarket Vietnam"),
+ (r"nhà máy điện|giá điện|ngành điện|năng lượng|thuỷ điện|nhiệt điện", "Hanoi skyline night"), (r"bán lẻ|siêu thị|tiêu dùng", "supermarket Vietnam"),
  (r"P/E|định giá|bẫy|cổ phiếu|chứng khoán|VN-Index|thị trường", "Ho Chi Minh City Stock Exchange"),
 ]
 NEN = ["Ho Chi Minh City skyline", "Hanoi skyline", "Bitexco Financial Tower", "Saigon river night", "Landmark 81"]
@@ -83,7 +83,7 @@ def tim(q, n=12):
         out.append({"u": ii.get("thumburl") or ii["url"], "tg": tg or "không rõ", "lic": lic, "trang": ii.get("descriptionurl", "")})
     return out
 
-XAU = re.compile(r"efta\d|epstein|nara|evidence|court|crime|police|prison|\.tif|ceremony|Stake_acquisition|signing|wordpress|wordcamp|mascot|plush|logo|sticker|state.bank|bank_of|ngân.hàng|vietcombank|bidv|techcombank|agribank|politician|press.conference|congress|senator|president|minister|portrait|damaged|wreck|accident|protest|nymphaea|water.lily|theat(?:er|re)|kips?(?:\b|_)|laos|war.loan|argentin|azerbaijan|presidential|new.orleans|little.vietnam|louisiana|锤|錘|成功", re.I)   # 12/11 NV1: ảnh lạc đề lọt ở CH1411NO/VT7USD; 23/11 NV1: 'power plant Vietnam' rơi ảnh New Orleans (Mỹ) ở CH0212AI
+XAU = re.compile(r"efta\d|epstein|nara|evidence|court|crime|police|prison|\.tif|ceremony|Stake_acquisition|signing|wordpress|wordcamp|mascot|plush|logo|sticker|state.bank|bank_of|ngân.hàng|vietcombank|bidv|techcombank|agribank|politician|press.conference|congress|senator|president|minister|portrait|damaged|wreck|accident|protest|nymphaea|water.lily|theat(?:er|re)|kips?(?:\b|_)|laos|war.loan|argentin|azerbaijan|presidential|new.orleans|little.vietnam|louisiana|korea|dangjin|seabee|pretty.plant|锤|錘|成功", re.I)   # 12/11 NV1: ảnh lạc đề lọt ở CH1411NO/VT7USD; 23/11 NV1: 'power plant Vietnam' rơi ảnh New Orleans (Mỹ) ở CH0212AI; 24/11 NV1: V2 vẫn rơi ảnh nhà máy điện Hàn Quốc (Dangjin) + ảnh hải quân Mỹ (Nha Trang) → CHU 'nhà máy điện' đổi sang skyline Hà Nội
 
 # 13/11 NV1 (R&D tuần rd_tuan_loc_mat_nguoi_1211): bỏ ảnh có khuôn mặt người thật lạ chiếm > 0,3% diện tích ảnh (ảnh File: chỉ định đích danh không lọc).
 # YuNet (opencv_zoo, MIT, _video/mo_hinh/yunet.onnx); không có cv2/mô hình thì Haar có sẵn trong OpenCV; lỗi thì bỏ qua (không chặn).

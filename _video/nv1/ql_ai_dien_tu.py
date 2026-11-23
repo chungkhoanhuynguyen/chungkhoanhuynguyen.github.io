@@ -186,7 +186,7 @@ MT = ("Cổ phiếu công nghệ Mỹ (Nasdaq 100) bốc hơi khoảng 2.500 t�
 META = {KEY: dict(kenh='@chungkhoanhuynguyen', seri='Câu hỏi lớn', ngay='2026-12-02', gio_goi_y='12:00', gio='12:00', nhac='lofi',
     tieu_de=TIEU, title=TIEU, mo_ta=MT,
     tags=['bong bóng AI', 'trí tuệ nhân tạo', 'Nvidia', 'Nasdaq', 'xuất khẩu điện tử', 'khu công nghiệp', 'việc làm', 'xuất nhập khẩu', 'kinh tế Việt Nam', 'vĩ mô'],
-    bia_hook=['TIỀN TĂNG CA', 'CÒN BAO LÂU?'], badge='CK MỸ BỐC HƠI 2.500 TỶ',
+    bia_hook=['TIỀN TĂNG CA', 'CÒN BAO LÂU?'], badge='CK MỸ MẤT 2.500 TỶ USD',
     bia_anh='Container ship||Ho Chi Minh City skyline night',
     bia_hook_b=['ĐIỆN TỬ', 'TĂNG 71%'], badge_b='XUẤT 149 TỶ USD NHỜ AI',
     bia_hook_c=['GẦN NỬA', 'THU NHẬP NHÀ'], badge_c='DỰA VÀO 1 NGÀNH',
