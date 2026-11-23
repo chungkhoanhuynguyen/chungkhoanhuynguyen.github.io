@@ -540,7 +540,7 @@ var Sim = (function () {
         var ang2 = datan2(tgt.y - u.y, tgt.x - u.x), nd = s.n || 1, spr = s.spread || 0;
         for (var dd = 0; dd < nd; dd++) {
           var a3 = nd > 1 ? ang2 - spr + 2 * spr * dd / (nd - 1) : ang2;
-          G.projs.push({ k: 'dragon', lane: lane, side: 0, x: u.x, y: u.y, sx: u.x, sy: u.y, vx: dcos(a3) * 7, vy: dsin(a3) * 7, life: s.len / 7, dmg: dmg * s.mult, dt: 'phys', w: s.w, owner: u.owner, hit: [], col: col });
+          G.projs.push({ k: 'dragon', lane: lane, side: 0, x: u.x, y: u.y, sx: u.x, sy: u.y, vx: dcos(a3) * 7, vy: dsin(a3) * 7, life: s.len / 7, dmg: dmg * s.mult, dt: 'phys', w: s.w, owner: u.owner, hit: [], col: col, big: big });
         }
         G.ev.push({ e: 'skill', k: 'dragon', lane: lane, x: u.x, y: u.y, id: u.id, a: ang2, c: col, big: big, n: nd });
         break;
@@ -789,7 +789,7 @@ var Sim = (function () {
     var P = G.players[p];
     if (G.phase !== 'build' || P.ready) return;
     var since = (G.wave === 1 ? 40 : 25) - G.phaseT;
-    if (since < (diff === 'easy' ? 4 : 2)) return;
+    if (since < (diff === 'easy' ? 4 : 2) && !G.players[1 - p].ready) return; // người chơi đã sẵn sàng thì bot xây nhanh rồi sẵn sàng luôn
     var rng = G.rng;
     var mine = G.units.filter(function (u) { return u.owner === p; });
     var nextPat = WAVE_PATTERNS[G.wave - 1];

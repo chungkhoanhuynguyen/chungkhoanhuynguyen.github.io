@@ -1103,23 +1103,22 @@ var V = (function () {
     m.position.copy(pos);
     addFX({ obj: m, t: 0, life: life, up: function (f, dt, k) { var rr = (r || 0.5) * (1 - k * 0.6); f.obj.scale.set(rr, h * (0.3 + k), rr); f.obj.position.y = h * (0.3 + k) / 2; f.obj.material.opacity = 0.6 * (1 - k); }, dispose: true });
   }
+  // tia sét: dựng 1 lần (không dựng lại liên tục => không giật), dày & sáng để nhìn rõ trên điện thoại, nhấp nháy bằng độ mờ
   function boltLine(pts, col, life, width) {
-    var grp = new T.Group();
-    var mk = function () {
-      while (grp.children.length) { var c = grp.children.pop(); c.geometry.dispose(); }
-      var arr = [];
-      for (var i = 0; i < pts.length - 1; i++) {
-        var a = pts[i], b = pts[i + 1];
-        for (var s = 0; s <= 6; s++) { var k = s / 6, j = (s === 0 || s === 6) ? 0 : 0.18; arr.push(new T.Vector3(a.x + (b.x - a.x) * k + (Math.random() - 0.5) * j, a.y + (b.y - a.y) * k + (Math.random() - 0.5) * j, a.z + (b.z - a.z) * k + (Math.random() - 0.5) * j)); }
-      }
-      var curve = new T.CatmullRomCurve3(arr);
-      var tube = new T.Mesh(new T.TubeGeometry(curve, arr.length * 2, width || 0.035, 4, false), new T.MeshBasicMaterial({ color: '#ffffff', transparent: true, blending: T.AdditiveBlending, depthWrite: false }));
-      var tube2 = new T.Mesh(new T.TubeGeometry(curve, arr.length * 2, (width || 0.035) * 3, 4, false), new T.MeshBasicMaterial({ color: col, transparent: true, opacity: 0.6, blending: T.AdditiveBlending, depthWrite: false }));
-      grp.add(tube, tube2);
-    };
-    mk();
-    pts.forEach(function (p) { var gs = glowSprite(col, 0.9, 0.9); gs.position.copy(p); grp.add(gs); });
-    addFX({ obj: grp, t: 0, life: life, nx: 0, up: function (f, dt, k) { f.nx -= dt; if (f.nx <= 0 && k < 0.7) { f.nx = 0.05; var keep = grp.children.filter(function (c) { return c.isSprite; }); mk(); keep.forEach(function (s) { grp.add(s); }); } grp.children.forEach(function (c) { if (c.material) c.material.opacity = (c.isSprite ? 0.9 : 0.8) * (1 - k); }); }, disposeGroup: true });
+    var grp = new T.Group(), w = Math.max(0.07, (width || 0.035) * 1.6);
+    var arr = [];
+    for (var i = 0; i < pts.length - 1; i++) {
+      var a = pts[i], b = pts[i + 1];
+      for (var s = 0; s < 6; s++) { var k = s / 6, j = s === 0 ? 0 : 0.35; arr.push(new T.Vector3(a.x + (b.x - a.x) * k + (Math.random() - 0.5) * j, a.y + (b.y - a.y) * k + (Math.random() - 0.5) * j * 0.4, a.z + (b.z - a.z) * k + (Math.random() - 0.5) * j)); }
+    }
+    arr.push(pts[pts.length - 1].clone());
+    var curve = new T.CatmullRomCurve3(arr, false, 'catmullrom', 0.1);
+    var m1 = new T.MeshBasicMaterial({ color: new T.Color(col).lerp(new T.Color('#ffffff'), 0.45), transparent: true, blending: T.AdditiveBlending, depthWrite: false });
+    var m2 = new T.MeshBasicMaterial({ color: col, transparent: true, opacity: 0.35, blending: T.AdditiveBlending, depthWrite: false });
+    grp.add(new T.Mesh(new T.TubeGeometry(curve, arr.length * 2, w, 3, false), m1), new T.Mesh(new T.TubeGeometry(curve, arr.length * 2, w * 2.4, 4, false), m2));
+    var hit = glowSprite(col, 3.2, 1); hit.material = hit.material.clone(); hit.position.copy(pts[pts.length - 1]).setY(0.4); grp.add(hit);
+    addFX({ obj: grp, t: 0, life: life + 0.15, up: function (f, dt, k) { var fl = k < 0.6 ? (Math.random() < 0.25 ? 0.35 : 1) : (1 - k) / 0.4; m1.opacity = 0.9 * fl; m2.opacity = 0.35 * fl; hit.material.opacity = (1 - k); },
+      end: function () { grp.children.forEach(function (c) { if (c.geometry && !c.isSprite) c.geometry.dispose(); }); m1.dispose(); m2.dispose(); hit.material.dispose(); } });
   }
   function shakeCam(a) { camShake = Math.max(camShake, a); }
   var camShake = 0;
@@ -1159,8 +1158,8 @@ var V = (function () {
         if (e.fx === 'thunder') {
           var top = W(e.lane, e.x + 0.6, e.y - 0.5, 11);
           var tcl = e.c || '#40c4ff'; boltLine([top, W(e.lane, e.x - 0.3, e.y + 0.2, 6), W(e.lane, e.x + 0.2, e.y, 2.5), W(e.lane, e.x, e.y, 0.05)], tcl, 0.45, e.big ? 0.1 : 0.06);
-          if (e.big) boltLine([W(e.lane, e.x - 0.8, e.y + 0.4, 11), W(e.lane, e.x + 0.4, e.y - 0.2, 5), W(e.lane, e.x, e.y, 0.05)], '#ffffff', 0.35, 0.04);
-          ringFX(p3, tcl, 0.3, e.r * 1.3, 0.6); burst(W(e.lane, e.x, e.y, 0.2), '#ffffff', 22, 6, 0.3, 0.6, 8); pillar(p3, tcl, e.big ? 7 : 5, e.big ? 0.6 : 0.35, 0.8); shakeCam(e.big ? 0.45 : 0.35);
+          
+          ringFX(p3, tcl, 0.3, e.r * 1.3, 0.6); burst(W(e.lane, e.x, e.y, 0.2), tcl, 10, 5, 0.22, 0.5, 8);
           flashLight(p3, tcl, 0.25);
         } else { ringFX(p3, e.c || '#82b1ff', 0.1, 0.9, 0.35); burst(W(e.lane, e.x, e.y, 0.15), e.c || '#bbdefb', 6, 3, 0.18, 0.35, 6); }
         break;
@@ -1329,6 +1328,7 @@ var V = (function () {
     for (var s2 = -1; s2 <= 1; s2 += 2) { var horn = mesh(cone(0.04, 0.34, 5), M('#fff8e1', { em: '#ffe082', ei: 0.8 }), -0.12, 0.2, s2 * 0.12, false); horn.rotation.z = 0.9; head.add(horn); head.add(mesh(sph(0.04, 6, 4), M('#ff1744', { em: '#ff1744', ei: 2 }), 0.15, 0.08, s2 * 0.13, false)); var wh = mesh(cyl(0.01, 0.005, 0.5, 3), M('#fff59d', { em: '#fff59d', ei: 1 }), 0.2, -0.05, s2 * 0.15, false); wh.rotation.z = 1.2; wh.rotation.x = s2 * 0.5; head.add(wh); }
     head.add(glowSprite(dc, 1.8, 0.8));
     g.add(head); g.userData.segs = segs; g.userData.head = head;
+    var dsz = p.big ? 2.2 : 1.4; segs.forEach(function (sg) { sg.scale.multiplyScalar(dsz); }); head.scale.setScalar(dsz); g.userData.dsz = dsz;
     scene.add(g); return g;
   }
 
@@ -1619,9 +1619,9 @@ var V = (function () {
   function updateDragon(g, wp, p, t) {
     var H = g.userData.hist; H.unshift(wp.clone()); if (H.length > 40) H.pop();
     var segs = g.userData.segs, head = g.userData.head;
-    head.position.copy(wp); head.position.y += Math.sin(t * 12) * 0.12;
+    head.position.copy(wp); head.position.y += 0.6 * (g.userData.dsz || 1) + Math.sin(t * 12) * 0.12;
     head.rotation.y = Math.atan2(p.vy, p.vx);
-    for (var i = 0; i < segs.length; i++) { var h = H[Math.min(H.length - 1, (i + 1) * 2)]; segs[i].position.copy(h); segs[i].position.y += Math.sin(t * 12 - i * 0.6) * 0.15; }
+    for (var i = 0; i < segs.length; i++) { var h = H[Math.min(H.length - 1, (i + 1) * 2)]; segs[i].position.copy(h); segs[i].position.y += 0.6 * (g.userData.dsz || 1) + Math.sin(t * 12 - i * 0.6) * 0.25; }
     if (Math.random() < 0.9) burst(wp, '#ffd740', 2, 1.5, 0.2, 0.4, 0);
   }
 

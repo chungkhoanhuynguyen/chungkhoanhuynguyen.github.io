@@ -109,7 +109,8 @@
   $('tMusic').addEventListener('click', () => { Sfx.init(); const on = Sfx.toggleMusic(); $('tMusic').classList.toggle('off', !on); });
   $('tSound').classList.toggle('off', !Sfx.isOn()); $('tMusic').classList.toggle('off', !Sfx.isMusic());
   const QUICK = [['hello', 'Chào nha 👋'], ['gg', 'GG'], ['praise', 'Đỉnh quá!'], ['taunt', 'Chờ đấy!'], ['haha', 'Haha 😂'], ['gift', 'Gửi quà nè 🎁']];
-  $('quick').innerHTML = QUICK.map((q) => `<button data-q="${q[0]}">${q[1]}</button>`).join('');
+  $('quick').innerHTML = QUICK.map((q) => `<button data-q="${q[0]}">${q[1]}</button>`).join('') + '<form id="chatForm" class="chatf"><input id="chatIn" maxlength="80" placeholder="Nhập tin nhắn…" autocomplete="off"><button>Gửi</button></form>';
+  $('chatForm').addEventListener('submit', (e) => { e.preventDefault(); const t = ($('chatIn').value || '').trim().replace(/[<>]/g, '').slice(0, 80); if (!t) return; $('chatIn').value = ''; $('quick').hidden = true; chatMsg('Bạn', t, true); Sfx.init(); if (NET) NET.send({ t: 'chat', s: t }); else Bot.replyText(t); });
   $('tChat').addEventListener('click', () => { const q = $('quick'); const was = q.hidden; hidePanels(); q.hidden = !was; });
   $('quick').addEventListener('click', (e) => { const b = e.target.closest('[data-q]'); if (!b) return; $('quick').hidden = true; chatMsg('Bạn', b.textContent, true); if (NET) NET.send({ t: 'chat', s: b.textContent }); else Bot.reply(b.dataset.q); });
 
@@ -172,26 +173,42 @@
   const Bot = (() => {
     const NAMES = ['deoyeuanh2005', 'hoangtucodon9x', 'boyhanoi_97', 'tieuthu_kute', 'xxsatthuxx', 'conan_vn', 'anhbaduoc123', 'meomeo2k3', 'buonvl_9x', 'kiemsi_codon', 'chimse_nho', 'datvietpro', 'langtu_ha', 'tuanbeo98', 'congchua_bongbong', 'quanghai_fan', 'thanhnien_nghiem', 'saobang9x', 'hoaxuong_rong', 'zZbatbaiZz', 'nhoxkute2006', 'vuaphongthu', 'anhtrai_mua', 'pikachu_vn', 'lananh_99', 'sieunhan_do', 'khongten123', 'thichthiquay', 'tuyetnhi_vl', 'kenzie_sg'];
     const L = {
-      greet: { k: ['Vào đi, ta chấp ngươi 5 đợt 😏', 'Thành Lạc Dương sắp đổi chủ rồi', 'Lại một kẻ muốn thử sức à'], v: ['Chào bạn nha, chơi vui vẻ! 😄', 'Hello gl hf nhé', 'Trận này căng đây hihi'], c: ['Lại ghép trúng người lạ...', 'gl. nhanh lên', 'Ờ chào'] },
-      pLeak: { k: ['Thủng thành rồi kìa haha', 'Phòng thủ như giấy vậy?', 'Ta đếm được mấy con lọt rồi đó 😏'], v: ['Ối, lọt mất mấy con rồi', 'Cố lên bạn ơi!', 'Nguy hiểm quá 😳'], c: ['Hehe đáng đời', 'Thấy chưa', 'Lọt nữa đi 😂'] },
-      bLeak: { k: ['Chỉ là sơ suất...', 'Hừ, may cho ngươi', 'Đợt sau ta không để lọt nữa'], v: ['Ui da lọt rồi 😭', 'Mình xây hơi ẩu', 'Toang rồi toang rồi'], c: ['Gì vậy trời!!', 'Lag à??', 'Con này bug à 😤', 'Bực thật sự'] },
-      pSend: { k: ['Gửi quân à? Sợ gì', 'Thêm thức ăn cho đệ tử ta', 'Chút quân đó mà đòi phá thành?'], v: ['Ơ gửi quân sang thật à 😳', 'Thôi xong, phải xây thêm', 'Bạn ác quá à'], c: ['Chơi bẩn vậy', 'Ok ok nhớ mặt nhé', 'Gửi nữa đi xem nào 😤'] },
-      bSend: { k: ['Quà tặng ngươi đấy 🎁', 'Đỡ được không?', 'Nếm thử Lang Vương của ta'], v: ['Gửi chút quà nha hihi', 'Thử thách xíu nè 😝'], c: ['Nhận lấy!', 'Trả đũa đây'] },
-      boss: { k: ['{b} tới. Ta không sợ', 'Để xem ai trụ được {b}'], v: ['{b} kìa 😨', 'Boss tới rồi!!'], c: ['Lại {b}...', 'Ghét con {b} này'] },
-      bPerfect: { k: ['Không lọt con nào. Thấy chưa?', 'Dễ như ăn cháo', 'Bức tường thép 😎'], v: ['Yeah giữ được rồi!', 'Phù, sạch sẽ'], c: ['Ít ra lần này ổn'] },
-      pPerfect: { k: ['Cũng khá đấy', 'Tạm được'], v: ['Bạn xây khéo ghê', 'Đỉnh thật 👏'], c: ['Hên thôi', 'Xây copy mạng à'] },
-      bAhead: { k: ['Đầu hàng sớm cho đỡ mệt', 'GG sớm nhé 😏', 'Ngươi không phải đối thủ của ta'], v: ['Mình đang dẫn nè hihi', 'Cố lên nha bạn'], c: ['Biết điều thì gg đi', 'Dễ quá'] },
-      bBehind: { k: ['Đợi đấy, ta mới khởi động', 'Còn sớm lắm', 'Ngươi chỉ gặp may'], v: ['Bạn mạnh quá 😅', 'Cho mình xin bí kíp với', 'Huhu thua mất'], c: ['Cay thật sự', 'Máy lag quá', 'Ghép trận kiểu gì vậy 😤'] },
-      pCombo: { k: ['Ăn may thôi', 'Combo nhỏ thôi mà'], v: ['Wow combo đẹp!', 'Ngũ sát luôn 😮'], c: ['Hack à', 'Ủa??'] },
-      win: { k: ['Lạc Dương là của ta! GG', 'Về luyện thêm đi 😏'], v: ['GG bạn ơi, trận hay!', 'Thắng sát nút, gg wp'], c: ['GG. Dễ', 'Thấy chưa'] },
-      lose: { k: ['...Lần sau ta sẽ phục thù', 'Hừ. GG'], v: ['GG! Bạn chơi hay quá', 'Thua tâm phục khẩu phục 🙇'], c: ['Lag. Không tính', 'GG... ván nữa không?'] },
-      r_hello: { k: ['Chào. Chuẩn bị thua đi', 'Hừ'], v: ['Chào bạn 👋', 'Hi hi'], c: ['Ừ', 'Chào'] },
-      r_gg: { k: ['Chưa xong đâu', 'GG cái gì, còn đánh'], v: ['GG!', 'gg wp 😄'], c: ['gg', 'Ừ gg'] },
-      r_praise: { k: ['Biết là vậy mà 😎', 'Đương nhiên'], v: ['Hehe cảm ơn nha', 'Bạn cũng đỉnh mà'], c: ['Thường thôi', 'Ờ'] },
-      r_taunt: { k: ['Ta chờ', 'Sợ quá cơ 😂', 'Nói ít làm nhiều'], v: ['Haha mình run quá', 'Đừng mà 😆'], c: ['Ai sợ ai', 'Lại đây'] },
-      r_haha: { k: ['Cười gì', 'Cười sớm thế'], v: ['😂😂', 'Hihi'], c: ['Hài lắm à', '-_-'] },
-      r_gift: { k: ['Quà của ngươi yếu quá', 'Cảm ơn, đệ tử ta đang đói'], v: ['Thôi đừng mà 😭', 'Quà gì mà ghê vậy'], c: ['Ok nhớ đấy', 'Gửi nữa đi'] }
+      greet: { k: ['vào đi, chấp 5 đợt', 'lại gà nào nữa đây', 'thành này sắp của t r', 'chơi nhanh đi ko t afk'], v: ['hi ae', 'chào nha gl hf', 'trận này căng đây hihi', 'hello, chơi vui vẻ nha'], c: ['lại ghép trúng ai đây', 'nhanh lên', 'ờ', 'ghép kiểu j vậy trời'] },
+      pLeak: { k: ['thủng thành r kìa haha', 'phòng thủ như giấy', 'lọt kìa lọt kìa', 'đếm ko xuể luôn'], v: ['ối lọt mấy con kìa', 'cố lên b ơi', 'nguy hiểm v'], c: ['đáng đời', 'thấy chưa', 'lọt nữa đi', 'haha gà'] },
+      bLeak: { k: ['sơ suất tí thôi', 'may cho m đấy', 'đợt sau ko lọt nữa đâu'], v: ['ui da lọt r', 'xây ẩu quá', 'toang r toang r'], c: ['gì v trời', 'lag à', 'game bug à', 'bực vl', 'đm lag'] },
+      pSend: { k: ['gửi quân à, sợ j', 'thêm đồ ăn cho đệ t', 'chút quân đó mà đòi phá thành'], v: ['ơ gửi thật à', 'thôi xong phải xây thêm', 'ác quá à'], c: ['chơi bẩn v', 'ok nhớ mặt', 'gửi nữa đi xem nào'] },
+      bSend: { k: ['quà cho m đấy', 'đỡ đc ko', 'nếm thử đi'], v: ['gửi xíu quà nha hihi', 'thử thách xíu'], c: ['nhận lấy', 'trả đũa nè'] },
+      boss: { k: ['{b} tới, sợ j', 'xem ai trụ đc {b}'], v: ['{b} kìa', 'boss tới r ae'], c: ['lại {b}', 'ghét con {b} vl'] },
+      bPerfect: { k: ['ko lọt con nào, thấy chưa', 'dễ như ăn cháo', 'tường thép'], v: ['yeah giữ đc r', 'phù sạch sẽ'], c: ['ít ra lần này ổn'] },
+      pPerfect: { k: ['cũng đc đấy', 'tạm'], v: ['b xây khéo ghê', 'đỉnh thật'], c: ['hên thôi', 'xây copy mạng à'] },
+      bAhead: { k: ['gg sớm cho đỡ mệt', 'out đi', 'ko phải đối thủ của t'], v: ['dẫn r nè hihi', 'cố lên nha b'], c: ['biết điều thì gg đi', 'dễ vl'] },
+      bBehind: { k: ['đợi đấy mới khởi động', 'còn sớm', 'gặp may thôi'], v: ['b mạnh quá', 'cho xin bí kíp với', 'huhu sắp thua'], c: ['cay thật sự', 'máy lag quá', 'ghép kiểu j v'] },
+      pCombo: { k: ['ăn may', 'combo nhỏ thôi'], v: ['wow đẹp', 'ngũ sát luôn kìa'], c: ['hack à', 'ủa??'] },
+      win: { k: ['Lạc Dương của t r gg', 'về luyện thêm đi'], v: ['gg b ơi trận hay', 'thắng sát nút, gg wp'], c: ['gg ez', 'thấy chưa'] },
+      lose: { k: ['lần sau phục thù', 'hừ gg'], v: ['gg b chơi hay quá', 'thua tâm phục'], c: ['lag ko tính', 'gg... ván nữa ko'] },
+      r_hello: { k: ['ờ chào, chuẩn bị thua đi', 'hừ'], v: ['chào b', 'hi hi', 'hello'], c: ['ừ', 'ờ chào', 'j'] },
+      r_gg: { k: ['chưa xong đâu', 'gg j còn đánh'], v: ['gg', 'gg wp'], c: ['gg', 'ừ gg'] },
+      r_praise: { k: ['bt mà', 'đương nhiên'], v: ['hehe cảm ơn nha', 'b cũng đỉnh mà'], c: ['thường thôi', 'ờ'] },
+      r_taunt: { k: ['t chờ', 'sợ quá cơ', 'nói ít làm nhiều'], v: ['haha run quá', 'đừng mà'], c: ['ai sợ ai', 'lại đây', 'nói nhiều'] },
+      r_haha: { k: ['cười j', 'cười sớm thế'], v: ['=))', 'hihi', 'kkk'], c: ['hài lắm à', '-_-', '??'] },
+      r_q_sect: { k: ['phái t mạnh nhất khỏi hỏi', 'bí kíp ko truyền'], v: ['t hay chơi phái này, tuyệt kỹ đẹp lắm', 'thử côn lôn đi sét đã lắm'], c: ['tự tìm hiểu đi', 'hỏi chi'] },
+      r_q_tip: { k: ['nâng cấp tướng đắt ấy, rải lính rẻ là thua', 'học phí đâu'], v: ['nâng cấp quan trọng lắm, đừng rải toàn tướng rẻ', 'để dành vàng qua mốc đc cộng lãi đó'], c: ['xem cách chơi ấy', 'ko bt'] },
+      r_bot: { k: ['bot cái j, t cao thủ', 'm mới là bot'], v: ['ơ người thật mà', 'bot đâu, đang ngồi cafe nè'], c: ['bot cái đầu', 'nói v là thua r đó', 'bot j'] },
+      r_insult: { k: ['thắng t r hẵng nói', 'mồm mép thôi'], v: ['bình tĩnh b ơi', 'chơi vui thôi mà'], c: ['nói nữa đi', 'ai gà hơn ai', 'cay à'] },
+      r_thanks: { k: ['ko cần', 'ừ'], v: ['ko có j nha', 'ok b'], c: ['ờ', 'ok'] },
+      r_where: { k: ['hỏi làm j', 'bí mật'], v: ['hn nè', 'sg nha b'], c: ['vn', 'gần đây thôi'] },
+      r_age: { k: ['đủ tuổi thắng m', 'hỏi tuổi làm j'], v: ['2k mấy nè', 'già r b ơi'], c: ['ko nói', 'đoán đi'] },
+      r_misc: { k: ['lo mà phòng thủ đi', 'nói ít thôi', 'hừm'], v: ['ừ ừ chơi tiếp nha', 'haha đúng r', 'đang bận xây thành xíu', 'ok b'], c: ['ờ', '?', 'tập trung đi', 'ừm', 'r sao'] },
+      r_gift: { k: ['quà yếu quá', 'cảm ơn, đệ t đang đói'], v: ['thôi đừng mà', 'quà j ghê v'], c: ['ok nhớ đấy', 'gửi nữa đi'] }
     };
+    // gõ như người thật: viết tắt, bỏ dấu, chữ thường, thỉnh thoảng gõ sai rồi sửa
+    const ABBR = [[/không/g, 'ko'], [/được/g, 'dc'], [/vậy/g, 'v'], [/rồi/g, 'r'], [/gì/g, 'j'], [/biết/g, 'bt'], [/bạn/g, 'b'], [/với/g, 'vs'], [/thôi/g, 'thoi'], [/quá/g, 'qá']];
+    function humanize(t) {
+      if (Math.random() < 0.5) ABBR.forEach(([a, b]) => { if (Math.random() < 0.7) t = t.replace(a, b); });
+      if (Math.random() < 0.3) t = t.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd');
+      if (Math.random() < 0.25) t = t.replace(/[.!]$/, '') + (Math.random() < 0.5 ? '' : ' ' + ['=))', ':))', 'kk', '😂', '😏', '-_-'][Math.floor(Math.random() * 6)]);
+      return t;
+    }
     let name = '', per = 'v', busy = false, lastT = -99, mood = 0;
     function pick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
     function say(cat, force, vars) {
@@ -199,16 +216,26 @@
       if (!force && (busy || now - lastT < 6)) return;
       const set = L[cat]; if (!set) return;
       let line = pick(set[per] || set.v); if (vars) Object.keys(vars).forEach((k) => { line = line.replace('{' + k + '}', vars[k]); });
-      busy = true; lastT = now;
+      line = humanize(line); busy = true; lastT = now;
       const typing = chatMsg(name, 'đang gõ…', false, true);
-      setTimeout(() => { typing.remove(); chatMsg(name, line); Sfx.play('msg'); busy = false; }, 700 + line.length * 45 + Math.random() * 600);
+      const typo = Math.random() < 0.12 && line.length > 6;
+      setTimeout(() => { typing.remove(); if (typo) { const k = 1 + Math.floor(Math.random() * (line.length - 2)); chatMsg(name, line.slice(0, k) + line[k + 1] + line[k] + line.slice(k + 2)); const ws = line.lastIndexOf(' ', k) + 1, we = line.indexOf(' ', k + 1); setTimeout(() => chatMsg(name, '*' + line.slice(ws, we < 0 ? line.length : we)), 900); } else chatMsg(name, line); Sfx.play('msg'); busy = false; }, 900 + line.length * 70 + Math.random() * 1400);
     }
     return {
       start(nm) { name = nm || pick(NAMES); per = pick(['k', 'v', 'c']); mood = 0; busy = false; lastT = -99; setTimeout(() => say('greet', true), 2200); return name; },
       get name() { return name; },
       ev(cat, p, vars) { if (Math.random() < p) say(cat, false, vars); },
       force(cat, vars) { say(cat, true, vars); },
-      reply(q) { setTimeout(() => say('r_' + q, true), 400); }
+      reply(q) { setTimeout(() => say('r_' + q, true), 400); },
+      replyText(t) {
+        const x = t.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
+        const has = (...w) => w.some((k) => x.includes(k));
+        const q = has('bot', 'may a', 'nguoi that', 'ai ', 'ai?') && has('bot', 'that', 'may') ? 'bot' : has('chao', 'hello', 'hi ', 'hi!', 'xin chao', 'alo') || x === 'hi' ? 'hello' : has('gg', 'good game') ? 'gg' : has('ga', 'non', 'ngu', 'dot', 'kem', 'cui') ? 'insult'
+          : has('hay', 'gioi', 'dinh', 'pro', 'manh', 'ghe') ? 'praise' : has('haha', 'hihi', 'kk', 'lol', '=))', ':))') ? 'haha' : has('cam on', 'thank', 'tks', 'thanks') ? 'thanks'
+          : has('phai', 'mon phai', 'he phai') ? 'q_sect' : has('cach', 'meo', 'bi kip', 'lam sao', 'the nao', 'chi', 'huong dan') ? 'q_tip' : has('o dau', 'que', 'ha noi', 'sai gon') ? 'where' : has('tuoi', 'bao nhieu', 'nam sinh') ? 'age'
+          : has('cho', 'doi day', 'chet', 'thua', 'de') ? 'taunt' : 'misc';
+        setTimeout(() => say('r_' + q, true), 300 + Math.random() * 900);
+      }
     };
   })();
 
@@ -511,9 +538,19 @@
   $('btnRoom').addEventListener('click', () => { if (!nameOk()) return; NETM.me = { name: PNAME, mascot: myMascot, sect: mySect }; const code = String(1000 + Math.floor(Math.random() * 9000)); onlUI(true, 'Đang tạo phòng…', code); pend = NETM.host(code, 'coop', (m) => onlUI(true, /Mã phòng/.test(m) ? 'Phòng đã mở! Gửi mã này cho bạn và chờ bạn vào:' : m, code), (N) => startNet(N), (why) => onlUI(false, why)); });
   $('btnJoin').addEventListener('click', () => { if (!nameOk()) return; if (pend) { try { pend.cancel(); } catch (x) {} pend = null; } const code = ($('roomCode').value || '').trim(); if (!/^\d{4}$/.test(code)) { onlUI(false, 'Nhập mã phòng 4 số'); return; } NETM.me = { name: PNAME, mascot: myMascot, sect: mySect }; onlUI(true, 'Đang vào phòng…'); pend = NETM.join(code, (m) => onlUI(true, m), (N, st) => startNet(N, st), (why) => onlUI(false, why)); });
   $('btnCancel').addEventListener('click', () => { if (pend) pend.cancel(); pend = null; onlUI(false, 'Đã huỷ'); });
-  document.addEventListener('visibilitychange', () => { last = performance.now(); });
+  // Rank công bằng: ra ngoài/tắt máy thì trận vẫn chạy — quay lại sẽ tua mô phỏng bù đúng thời gian đã trôi
+  function catchUp(sec) {
+    if (!G || !running || NET || G.over || !(sec > 0.5)) return;
+    const n = Math.min(Math.floor(Math.min(sec, 1800) / S.DT), 36000); let overEv = null;
+    for (let i = 0; i < n && !G.over; i++) { S.aiThink(G, OP, diff); S.step(G); for (const e of G.ev) if (e.e === 'over') overEv = e; G.ev.length = 0; }
+    for (const o of G.units) { o.px = o.x; o.py = o.y; } for (const o of G.creeps) { o.px = o.x; o.py = o.y; }
+    if (n > 40) toast('Trận vẫn tiếp diễn khi bạn rời đi (' + Math.round(n * S.DT) + ' giây)');
+    if (overEv) { G.ev.push(overEv); flushEvents(); } else { refreshCards(); updateHUD(true); }
+  }
+  let hiddenAt = 0;
+  document.addEventListener('visibilitychange', () => { last = performance.now(); if (document.hidden) hiddenAt = Date.now(); else if (hiddenAt) { const sec = (Date.now() - hiddenAt) / 1000; hiddenAt = 0; catchUp(sec); } });
 
   $('mrow').innerHTML = '<div class="tag">Đang tải nhân vật…</div>';
-  V.loadModels(() => A3.load(() => { V.spawnNPCs(); makeIcons(); showStart(); const rs = loadMatch(); if (rs) { if (rs.name) PNAME = rs.name; $('start').hidden = true; document.body.classList.remove('menu'); V.cam.zoom = 1; newGame(rs); announce('Tiếp tục trận', 'Trận rank đang dở — muốn thoát phải đầu hàng'); } requestAnimationFrame(loop); }));
+  V.loadModels(() => A3.load(() => { V.spawnNPCs(); makeIcons(); showStart(); const rs = loadMatch(); if (rs) { if (rs.name) PNAME = rs.name; $('start').hidden = true; document.body.classList.remove('menu'); V.cam.zoom = 1; newGame(rs); announce('Tiếp tục trận', 'Trận rank đang dở — muốn thoát phải đầu hàng'); catchUp((Date.now() - rs.t) / 1000); } requestAnimationFrame(loop); }));
   window.__game = { dbgSave: () => { const o = {}; for (const k in G) if (k !== 'rng' && k !== 'ev') o[k] = G[k]; return [running, !!NET, G.over, matchBn, JSON.stringify(o).length]; }, get G() { return G; }, newGame, tap, setSpeed: (s) => { speed = s; } };
 }
