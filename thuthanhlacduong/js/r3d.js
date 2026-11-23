@@ -1466,7 +1466,7 @@ var V = (function () {
     if (water) { water.material.uniforms.time.value = t * 0.45; }
     TREES.forEach(function (tr, i) { tr.rotation.z = Math.sin(t * 1.4 + i) * 0.025 * wind; tr.rotation.x = Math.cos(t * 1.1 + i) * 0.015 * wind; });
     WILLOWS.forEach(function (w, wi) { w.userData.strands.forEach(function (st, si) { st.rotation.x = Math.sin(t * 1.6 + si * 0.7 + wi) * 0.12 * wind; st.rotation.z = Math.cos(t * 1.2 + si) * 0.08 * wind; }); });
-    stepAmbient(dt, t); stepNPCs(dt); stepChests(G, t);
+    stepAmbient(dt, t); stepNPCs(dt); stepChests(G, t); stepTitles(t);
     SWAY.forEach(function (sw) { sw.o.rotation.x = Math.sin(t * 1.8 + sw.ph) * sw.a * wind; });
     LOTUS.forEach(function (lo, i) { if (lo.userData.drift) { lo.position.x += dt * lo.userData.drift; if (lo.position.x > MX + 36) lo.position.x = MX - 36; lo.position.y = -0.15 + Math.sin(t * 1.5 + i) * 0.03; } else if (lo.userData.boat) { lo.position.x = MX + 9 + Math.sin(t * 0.07) * 14; lo.rotation.z = Math.sin(t * 1.2) * 0.04; lo.position.y = -0.25 + Math.sin(t * 1.6) * 0.04; } else { lo.position.y = -0.27 + Math.sin(t * 1.3 + i * 0.7) * 0.02; lo.rotation.y += Math.sin(t * 0.5 + i) * 0.0008; } });
     updateCam(dt);
@@ -1522,7 +1522,28 @@ var V = (function () {
 
   function screenOf(lane, x, y, h) { return proj(W(lane, x, y, h || 0)); }
 
-  return { animHuman: animHuman, setCastleNames: function (a) { window.CASTLE_NAMES = a; PLAQUES.forEach(function (f) { if (f) f(); }); }, spawnNPCs: spawnNPCs, weapon3: weapon3, glowSprite: glowSprite, loadModels: loadModels, modelsReady: function () { return modelsReady; }, makeModel: makeModel, UNIT_MODEL: UNIT_MODEL, CREEP_MODEL: CREEP_MODEL, MASCOT_MODEL: MASCOT_MODEL, LW: LW, HL: HL, MX: MX, _VU: VU, init: init, resize: resize, frame: frame, onEvent: onEvent, setView: setView, cam: cam, pick: pick, setGhost: setGhost, setSelected: setSelected, initMascots: initMascots, mascots: mascots,
+  // danh hiệu rank bay trên đầu linh vật: bậc càng cao càng rực rỡ
+  function setTitles(arr) {
+    mascots.forEach(function (m, i) {
+      if (!m || !arr[i]) return; var U = m.v.userData; if (U.title) { m.v.remove(U.title); }
+      var name = arr[i][0], col = arr[i][1], t = arr[i][2], grp = new T.Group();
+      var c = document.createElement('canvas'); c.width = 512; c.height = 128; var g = c.getContext('2d');
+      g.fillStyle = 'rgba(12,6,4,.72)'; g.beginPath(); if (g.roundRect) g.roundRect(30, 22, 452, 88, 40); else g.rect(30, 22, 452, 88); g.fill(); g.strokeStyle = col; g.lineWidth = 3; g.stroke();
+      g.textAlign = 'center'; g.textBaseline = 'middle'; g.font = 'italic 900 58px "Playfair Display",serif';
+      if (t >= 4) { g.shadowColor = col; g.shadowBlur = 10 + t * 2; }
+      var gr = g.createLinearGradient(0, 30, 0, 100); gr.addColorStop(0, '#ffffff'); gr.addColorStop(0.5, col); gr.addColorStop(1, shade(col, -0.35));
+      g.lineWidth = 7; g.strokeStyle = 'rgba(20,8,4,.9)'; g.strokeText(name, 256, 66); g.fillStyle = gr; g.fillText(name, 256, 66);
+      if (t >= 8) { g.shadowBlur = 0; g.fillStyle = col; for (var k = 0; k < 2; k++) { var x = k ? 470 : 42; g.beginPath(); g.moveTo(x, 40); g.lineTo(x + 14, 66); g.lineTo(x, 92); g.lineTo(x - 14, 66); g.fill(); } }
+      var sp = new T.Sprite(new T.SpriteMaterial({ map: new T.CanvasTexture(c), transparent: true, depthWrite: false })); sp.scale.set(3.6, 0.9, 1); grp.add(sp);
+      if (t >= 2) { var hal = glowSprite(col, 2.2 + t * 0.15, 0.12 + t * 0.03); hal.scale.set(3 + t * 0.1, 0.9, 1); grp.add(hal); }
+      if (t >= 6) { var ring = new T.Mesh(new T.TorusGeometry(0.5, 0.03, 6, 32), new T.MeshBasicMaterial({ color: col, transparent: true, blending: T.AdditiveBlending })); ring.rotation.x = Math.PI / 2; ring.position.y = -0.95; grp.add(ring); grp.userData.ring = ring; }
+      if (t >= 9) { grp.userData.sp = []; for (var q = 0; q < 6 + t; q++) { var s2 = glowSprite(q % 2 ? col : '#ffffff', 0.14, 0.95); grp.add(s2); grp.userData.sp.push(s2); } }
+      if (t >= 11) { var cr = new T.Mesh(new T.ConeGeometry(0.16, 0.3, 5), new T.MeshBasicMaterial({ color: '#ffe57f' })); cr.position.y = 0.55; grp.add(cr); var b = glowSprite('#fff3b0', 1.4, 0.6); b.position.y = 0.55; grp.add(b); }
+      grp.position.y = U.a3 ? 3.5 : 3.2; m.v.add(grp); U.title = grp; U.titleT = t;
+    });
+  }
+  function stepTitles(t) { mascots.forEach(function (m) { if (!m || !m.v.userData.title) return; var g = m.v.userData.title; g.position.y = (m.v.userData.a3 ? 3.5 : 3.2) + Math.sin(t * 2) * 0.06; if (g.userData.ring) g.userData.ring.rotation.z = t * 2; if (g.userData.sp) g.userData.sp.forEach(function (s2, i) { var a = t * 1.8 + i * 0.9; s2.position.set(Math.cos(a) * 1.4, Math.sin(a * 1.7) * 0.3, Math.sin(a) * 0.4); }); }); }
+  return { setTitles: setTitles, animHuman: animHuman, setCastleNames: function (a) { window.CASTLE_NAMES = a; PLAQUES.forEach(function (f) { if (f) f(); }); }, spawnNPCs: spawnNPCs, weapon3: weapon3, glowSprite: glowSprite, loadModels: loadModels, modelsReady: function () { return modelsReady; }, makeModel: makeModel, UNIT_MODEL: UNIT_MODEL, CREEP_MODEL: CREEP_MODEL, MASCOT_MODEL: MASCOT_MODEL, LW: LW, HL: HL, MX: MX, _VU: VU, init: init, resize: resize, frame: frame, onEvent: onEvent, setView: setView, cam: cam, pick: pick, setGhost: setGhost, setSelected: setSelected, initMascots: initMascots, mascots: mascots,
     screenOf: screenOf, fitDist: fitDist, W: W, LCX: LCX, renderIcon: null, cheer: function (p) { if (mascots[p]) mascots[p].cheer = 0.8; },
     makeHuman: makeHuman, makeBeast: makeBeast, makeMascot: makeMascot, getRenderer: function () { return renderer; }, getScene: function () { return scene; }, getCamera: function () { return camera; }, M: M, T: T };
 })();

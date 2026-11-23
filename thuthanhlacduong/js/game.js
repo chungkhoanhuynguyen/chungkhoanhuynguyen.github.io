@@ -342,7 +342,7 @@
     G.maxHp = [G.players[0].hp, G.players[1].hp];
     V.initMascots(G.mascots); view.lane = 0; V.cam.orbit = false; V.setView(0, true); $('tView').innerHTML = 'Xem<br>địch';
     $('avaMe').style.backgroundImage = `url(${ICON['f_' + myMascot]})`; $('avaOp').style.backgroundImage = `url(${ICON['f_' + opMascot]})`;
-    const bn = Bot.start(); V.setCastleNames(['Thành ' + PNAME, 'Thành ' + bn]);
+    const bn = Bot.start(); V.setCastleNames(['Thành ' + PNAME, 'Thành ' + bn]); { const a = RANK.info(RANK.pts), b2 = RANK.info(RANK.botPts); V.setTitles([[a.hero, a.col, a.t], [b2.hero, b2.col, b2.t]]); }
     $('nmMe').innerHTML = PNAME.replace(/&/g,'&amp;') + ' <small>' + R.MASCOTS[myMascot].name + '</small>';
     $('nmOp').innerHTML = bn + ' <small>' + RANK.title(RANK.botPts) + '</small>';
     $('chat').innerHTML = ''; streak = 0; totalKills = 0; selCard = null; selUnitId = null; hidePanels();
@@ -374,15 +374,15 @@
   $('btnPlay').addEventListener('click', () => { if (!nameOk()) return; diff = RANK.pickBot(); playStory(() => { Sfx.init(); Sfx.play('gong', true); $('start').hidden = true; document.body.classList.remove('menu'); V.cam.zoom = 1; newGame(); }); });
   // ---------- XẾP HẠNG: 7 bậc × 10 mốc ----------
   const RANK = (() => {
-    const TIERS = [['Đồng', '#c08457'], ['Bạc', '#c9d3dc'], ['Vàng', '#ffd54f'], ['Bạch Kim', '#7fe0d8'], ['Kim Cương', '#82b1ff'], ['Cao Thủ', '#e040fb'], ['Đại Tông Sư', '#ff5252']];
-    const HERO = ['Tân Binh', 'Hiệp Khách', 'Thiếu Hiệp', 'Đại Hiệp', 'Chưởng Môn', 'Tông Sư', 'Võ Lâm Minh Chủ'];
+    const TIERS = [['Sắt', '#8d8d8d'], ['Đồng', '#c08457'], ['Nhôm', '#b0bec5'], ['Bạc', '#dfe6ec'], ['Vàng', '#ffd54f'], ['Bạch Kim', '#7fe0d8'], ['Lục Bảo', '#2ee59d'], ['Kim Cương', '#82b1ff'], ['Cao Thủ', '#e040fb'], ['Đại Cao Thủ', '#ff6e40'], ['Thách Đấu', '#ff1744'], ['Cửu Ngũ Chí Tôn', '#ffe57f']];
+    const HERO = ['Tân Binh', 'Hương Dũng', 'Hiệp Khách', 'Thiếu Hiệp', 'Đại Hiệp', 'Danh Hiệp', 'Trưởng Lão', 'Chưởng Môn', 'Tông Sư', 'Đại Tông Sư', 'Võ Lâm Minh Chủ', 'Thiên Hạ Đệ Nhất'];
     let pts = 0; try { pts = +localStorage.getItem('ttld_rank') || 0; } catch (e) {}
     const per = 100;   // 100 điểm mỗi mốc, 10 mốc mỗi bậc
-    const info = (p) => { const t = Math.min(TIERS.length - 1, Math.floor(p / (per * 10))), m = Math.min(10, Math.floor((p - t * per * 10) / per) + 1); return { t, m, name: TIERS[t][0] + ' ' + m, col: TIERS[t][1], hero: HERO[t] }; };
+    const info = (p) => { const t = Math.min(TIERS.length - 1, Math.floor(p / (per * 10))), m = Math.min(10, Math.floor((p - t * per * 10) / per) + 1); return { t, m, name: TIERS[t][0] + ' ' + m, col: TIERS[t][1], hero: HERO[t], tier: TIERS[t][0] }; };
     return {
       get pts() { return pts; }, info, botPts: 0,
       title: (p) => info(p).name,
-      pickBot() { this.botPts = Math.max(0, pts + Math.round((Math.random() - 0.4) * 260)); const t = info(this.botPts).t; return t <= 0 ? 'easy' : t <= 2 ? 'normal' : 'hard'; },
+      pickBot() { this.botPts = Math.max(0, pts + Math.round((Math.random() - 0.4) * 260)); const t = info(this.botPts).t; return t <= 1 ? 'easy' : t <= 4 ? 'normal' : 'hard'; },
       add(d) { pts = Math.max(0, pts + d); try { localStorage.setItem('ttld_rank', pts); } catch (e) {} }
     };
   })();
@@ -420,7 +420,7 @@
       NET = N; ME = N.role === 'host' ? 0 : 1; OP = 1 - ME;
       G = S.create({ seed: st2.seed, mascots: st2.mascots }); G.maxHp = [G.players[0].hp, G.players[1].hp];
       const names = st2.names; V.setCastleNames(['Thành ' + names[0], 'Thành ' + names[1]]);
-      V.initMascots(G.mascots); view.lane = ME; V.cam.orbit = false; V.cam.zoom = 1; V.setView(ME, true); $('tView').innerHTML = 'Xem<br>bạn';
+      V.initMascots(G.mascots); V.setTitles([[ 'Hiệp Khách', '#9fd3ff', 2], ['Hiệp Khách', '#9fd3ff', 2]]); view.lane = ME; V.cam.orbit = false; V.cam.zoom = 1; V.setView(ME, true); $('tView').innerHTML = 'Xem<br>bạn';
       $('avaMe').style.backgroundImage = `url(${ICON['f_' + G.mascots[ME]]})`; $('avaOp').style.backgroundImage = `url(${ICON['f_' + G.mascots[OP]]})`;
       $('nmMe').innerHTML = esc(names[ME]) + ' <small>' + (N.mode === 'coop' ? 'Đồng đội' : 'Online') + '</small>';
       $('nmOp').innerHTML = esc(names[OP]) + ' <small>' + (N.mode === 'coop' ? 'Đồng đội · online' : 'Đối thủ · online') + '</small>';
