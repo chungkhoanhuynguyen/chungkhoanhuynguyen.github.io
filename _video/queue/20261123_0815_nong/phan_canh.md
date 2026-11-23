@@ -28,8 +28,8 @@
 | 26 | the/call | "NĂM 2019 CHÚ CHẶT 1 HÉC TA / LÚC ĐÓ AI BIẾT TRƯỚC" | trầm, lo | chuông gọi |
 | 27 | the/giay | NĂM 2019–2020 / NHỮNG CON SỐ CỦA LẦN TRƯỚC | căng | lật giấy |
 | 28 | the/giay | NĂM 2019–2020 / NHỮNG CON SỐ CỦA LẦN TRƯỚC | căng | lật giấy |
-| 29 | the/bars | GIÁ HÔM NAY SO VỚI / MỐC CŨ VÀ ĐỈNH CŨ | so sánh | nền phố |
-| 30 | the/bars | GIÁ HÔM NAY SO VỚI / MỐC CŨ VÀ ĐỈNH CŨ | so sánh | nền phố |
+| 29 | the/bars | 3 MỐC GIÁ / MỖI KÝ CÀ PHÊ | so sánh | nền phố |
+| 30 | the/bars | 3 MỐC GIÁ / MỖI KÝ CÀ PHÊ | so sánh | nền phố |
 | 31 | the/checklist | GIỐNG 2, KHÁC 2 / SO VỚI NĂM 2019 | quyết tâm | tick |
 | 32 | the/checklist | GIỐNG 2, KHÁC 2 / SO VỚI NĂM 2019 | quyết tâm | tick |
 | 33 | the/checklist | GIỐNG 2, KHÁC 2 / SO VỚI NĂM 2019 | quyết tâm | tick |

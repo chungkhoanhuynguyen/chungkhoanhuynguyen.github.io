@@ -28,7 +28,7 @@ KEY = 'NONG2311B'; CC = (WHITE, GOLD); CR = (WHITE, RED)
 R_, V_, X_, G_ = (239, 68, 68), (255, 196, 0), (56, 189, 248), (34, 197, 94)
 TP = 'ov:Ho Chi Minh City skyline night||Ho Chi Minh City skyline night'
 HN = 'ov:Hanoi skyline night||Hanoi skyline night'
-CF = 'ov:Coffee cherries||Coffee cherries'
+CF = 'ov:Coffee beans drying||Coffee beans drying'
 CB = 'ov:Coffee beans drying||Coffee beans drying'
 BMT = 'ov:Buon Ma Thuot||Buon Ma Thuot'
 CON = 'ov:Container ship||Container ship'
@@ -104,7 +104,7 @@ S = [
         ('3/2025: 135.500 đồng/kg.', 'KỶ LỤC')]),
       say=("Những con số của lần trước. Theo báo VOH, tháng mười hai năm hai nghìn không trăm mười chín, giá cà phê Tây Nguyên chỉ hơn ba mươi hai nghìn đồng mỗi ký. Đến tháng ba năm hai nghìn không trăm hai mươi, giá còn quanh ba mươi nghìn đồng. "
            "Theo VOH, thời đó nhiều vườn bị chặt bỏ để chuyển sang cây khác. Rồi đến tháng ba năm hai nghìn không trăm hai mươi lăm, giá ở Đắk Lắk lập kỷ lục một trăm ba mươi lăm nghìn năm trăm đồng mỗi ký.")),
- dict(k='bars', anh=CF, cap=('GIÁ HÔM NAY SO VỚI', 'MỐC CŨ VÀ ĐỈNH CŨ'), cols=CC, moc=True,
+ dict(k='bars', anh=CF, cap=('3 MỐC GIÁ', 'MỖI KÝ CÀ PHÊ'), cols=CC, moc=True,
       bars=[('Tháng 3/2020', 30, RED, '30.000'), ('Đỉnh 3/2025', 135.5, GOLD, '135.500'), ('Sáng 23/11/2026', 71.8, GREEN, '71.800')],
       say=("Đặt ba mốc cạnh nhau. Giá sáng nay vẫn cao gấp hơn hai lần mức tháng ba năm hai nghìn không trăm hai mươi. "
            "Nhưng chỉ bằng khoảng năm mươi ba phần trăm đỉnh tháng ba năm ngoái. Người trồng đau không phải vì giá đã về mốc cũ, mà vì giá rơi quá nhanh từ một đỉnh rất cao.")),
@@ -145,7 +145,7 @@ S = [
 ]
 import ql_post; S = ql_post.tach(S, max_tu=50, anh_mac_dinh='Ho Chi Minh City skyline night')
 for c in S: c['say'] = lib.doc(c['say'])
-TIEU = 'Giá Cà Phê Hôm Nay Mất 11.000 Đồng/Kg Sau 1 Tuần: Xuất Khẩu Kỷ Lục 8,5 Tỷ USD, Nhà Vườn Vẫn Hụt?'
+TIEU = 'Giá Cà Phê Hôm Nay Mất 11.000 Đồng/Kg: Kỷ Lục Mà Vẫn Hụt?'
 MT = ("NÓNG: giá cà phê Tây Nguyên tuần qua mất hơn 11.000 đồng/kg, còn 71.200–72.000 đồng/kg – thấp nhất gần 3 năm (TTXVN 22/11/2026). Sáng 23/11, Đắk Lắk quanh 71.800 đồng/kg, cùng ngày năm ngoái 112.500. "
       "Lạ là niên vụ vừa rồi cà phê Việt Nam xuất khẩu kỷ lục 8,5 tỷ USD. Vì sao bán nhiều mà nhà vườn hụt tiền, thế giới dư bao nhiêu, lần trước năm 2019 ra sao, và phép thử cho túi tiền gia đình.\n\n"
       "Nguồn số liệu:\n"
@@ -164,7 +164,7 @@ META = {KEY: dict(kenh='@chungkhoanhuynguyen', seri='Tin nóng trong ngày', nga
     tieu_de=TIEU, title=TIEU, mo_ta=MT,
     tags=['giá cà phê hôm nay', 'giá cà phê', 'cà phê Tây Nguyên', 'giá cà phê Đắk Lắk', 'xuất khẩu cà phê', 'robusta', 'nông sản', 'giá nông sản', 'tin nóng tài chính', 'cà phê 2026'],
     bia_hook=['1 NĂM: 112.500', 'CÒN 71.800'], badge='CÀ PHÊ/KG SO NĂM NGOÁI',
-    bia_anh='Coffee cherries||Coffee cherries',
+    bia_anh='Coffee beans drying||Coffee beans drying',
     bia_hook_b=['MỘT TUẦN', 'MẤT 11.000'], badge_b='THẤP NHẤT GẦN 3 NĂM',
     bia_hook_c=['KỶ LỤC 8,5 TỶ', 'VẪN HỤT TIỀN?'], badge_c='XUẤT KHẨU CÀ PHÊ',
     reel_hook='CÀ PHÊ MẤT 11.000 ĐỒNG/KG|XUẤT KHẨU KỶ LỤC MÀ HỤT TIỀN???',
