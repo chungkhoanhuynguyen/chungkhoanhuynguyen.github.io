@@ -136,7 +136,8 @@ button:focus-visible{outline:2px solid var(--gold2);outline-offset:2px}
 .res{font:900 clamp(40px,9vw,64px)/1 "Playfair Display",serif}
 .estat{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin:14px 0}
 .estat div{background:rgba(0,0,0,.35);border-radius:9px;padding:8px 4px;font-size:12px}.estat b{display:block;font-size:20px;color:#fff}
-@media (max-height:430px){#res{top:52px}.card{width:52px;height:60px}.card img{height:50px}#tools{top:84px}.tb{width:40px;height:40px}.big{min-height:40px}.panel{bottom:calc(80px + var(--safeB))!important}.mrow{max-width:560px}}
+body.menu #top,body.menu #res,body.menu #bottom,body.menu #tools,body.menu #chat{visibility:hidden}
+@media (max-height:430px){.title{font-size:30px}.tag{margin:2px 0 6px;font-size:12.5px}.mc .bn{display:none}.mc img{aspect-ratio:1.25}.screen{align-items:flex-start}#res{top:52px}.card{width:52px;height:60px}.card img{height:50px}#tools{top:84px}.tb{width:40px;height:40px}.big{min-height:40px}.panel{bottom:calc(80px + var(--safeB))!important}.mrow{max-width:560px}}
 @media (max-width:600px){.mrow{grid-template-columns:repeat(2,minmax(0,1fr));max-width:340px}#chat{top:100px}#res{top:56px}.side{padding-right:6px}.pname small{display:none}#mid{min-width:0;padding:4px 8px}}
 @media (prefers-reduced-motion:reduce){#announce .t{animation:none}}
 </style>
