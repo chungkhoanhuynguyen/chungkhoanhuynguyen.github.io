@@ -11,7 +11,7 @@ PHAT_AM = [
     ("ESOP", "ê sóp"), ("Creador", "Cờ rê a đo"), ("Vietnambiz", "Việt Nam bít"),
     ("CBRE", "xi bi a ri"), ("Mekong ASEAN", "Mê Kông A xê an"), ("Vietcombank", "Việt com banh"), ("VPBank", "Vê pê banh"), ("MBBank", "em bê banh"), ("Batdongsan.com.vn", "bất động sản chấm com"), ("Batdongsan", "bất động sản chấm com"),
     ("APEC", "A péc"),
-    ("Gymmer", "Gym mơ"), ("gymmer", "gym mơ"), ("Sociu", "Sô Ciu"), ("Vinhomes", "Vin hôm"),  # anh Huy 24/11: TÊN NHÂN VẬT cần cách đọc riêng (Sociu = sô ciu, gymmer = gym mơ); tên công ty TTS đã đọc đúng, không thêm
+    ("Gymmer", "Gym mơ"), ("gymmer", "gym mơ"), ("Sociu", "Sô Kiu"), ("Vinhomes", "Vin hôm"),  # anh Huy 24/11: TÊN NHÂN VẬT cần cách đọc riêng (Sociu = sô ciu, gymmer = gym mơ); tên công ty TTS đã đọc đúng, không thêm
     ("The Sapphire", "Đờ Sa phai a"), ("Vinhomes Smart City", "Vin hôm Sờ mát Xi ti"),
     ("Lumi Hanoi", "Lu mi Hà Nội"), ("Times City", "Tham Xi ti"), ("Ocean Park", "Âu sần Pác"),
 ]
