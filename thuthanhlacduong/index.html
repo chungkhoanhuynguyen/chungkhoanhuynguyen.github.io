@@ -432,5 +432,6 @@ body.menu #top,body.menu #res,body.menu #bottom,body.menu #tools,body.menu #chat
 <script src="js/acct.js?v=1795487159"></script>
 <script src="js/game.js?v=1795487159"></script>
 
+<script>/* giữ màn hình sáng khi đang chơi */(function(){var l=null;function on(){if(!('wakeLock' in navigator)||document.visibilityState!=='visible'||l)return;navigator.wakeLock.request('screen').then(function(x){l=x;x.addEventListener('release',function(){l=null;});}).catch(function(){});}document.addEventListener('visibilitychange',on);['pointerdown','touchstart','keydown'].forEach(function(e){addEventListener(e,on,{passive:true});});on();setInterval(on,15000);})();</script>
 </body>
 </html>
