@@ -1846,7 +1846,8 @@ var st={t:'vn30',q:'',s:'val',lim:60},sv=H.ls.get('hn_bg',null);if(sv&&typeof sv
 var D=null,rows=[],RT=0,rtB=0;
 /* Giá trực tiếp trong phiên: lấy từ nguồn công khai VPS ngay trên máy người xem, chồng lên data/c/live.bin */
 function rtSyms(){var S=H.SM,w=st.t==='w'?H.watch.list():null;return Object.keys(D.b).filter(function(s){var e=S[s];if(!e||e[1]==='I')return false;if(st.q)return s.indexOf(st.q)===0;if(w)return w.indexOf(s)>=0;if(st.t==='vn30')return !!e[5];return e[1]===st.t})}
-function rt(){if(!D||rtB||!H.inSession())return;var ss=rtSyms();if(!ss.length)return;rtB=1;var ch=[];for(var i=0;i<ss.length;i+=120)ch.push(ss.slice(i,i+120));
+function rt(){if(!D||rtB||!H.inSession())return;var ss=rtSyms();if(!ss.length)return;rtB=1;fetch('https://bgapidatafeed.vps.com.vn/getlistindexdetail/10',{cache:'no-store',credentials:'omit'}).then(function(r){return r.json()}).then(function(a){if(a&&a[0]&&a[0].status==='E'){rtB=0;return}rt2(ss)},function(){rtB=0})}
+function rt2(ss){var ch=[];for(var i=0;i<ss.length;i+=120)ch.push(ss.slice(i,i+120));
  Promise.all(ch.map(function(c){return fetch('https://bgapidatafeed.vps.com.vn/getliststockdata/'+c.join(','),{cache:'no-store',credentials:'omit'}).then(function(r){return r.ok?r.json():[]}).catch(function(){return []})})).then(function(a){var n=0;
   a.forEach(function(L){(Array.isArray(L)?L:[]).forEach(function(x){if(!x||!D.b[x.sym])return;var r=+x.r,c=+x.lastPrice;if(!(r>0))return;if(!(c>0))c=r;var v=(+x.lot||0)*10,ap=+x.avePrice||c;
    D.b[x.sym]=[Math.round((+x.openPrice||c)*100),Math.round((+x.highPrice||c)*100),Math.round((+x.lowPrice||c)*100),Math.round(c*100),Math.round(v/100),Math.round(r*100),Math.round(v*ap/1e5)];n++})});
