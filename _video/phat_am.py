@@ -11,7 +11,7 @@ PHAT_AM = [
     ("ESOP", "ê sóp"), ("Creador", "Cờ rê a đo"), ("Vietnambiz", "Việt Nam bít"),
     ("CBRE", "xi bi a ri"), ("Mekong ASEAN", "Mê Kông A xê an"), ("Vietcombank", "Việt com banh"), ("VPBank", "Vê pê banh"), ("MBBank", "em bê banh"), ("Batdongsan.com.vn", "bất động sản chấm com"), ("Batdongsan", "bất động sản chấm com"),
     ("APEC", "A péc"),
-    ("Sociu", "Sô Ciu"), ("Vinhomes", "Vin hôm"), ("Viconship", "Vi côn síp"), ("Gemadept", "Ghê ma đép"), ("Gemalink", "Ghê ma linh"),  # anh Huy 24/11: Sociu đọc là sô ciu
+    ("Gymmer", "Gym mơ"), ("gymmer", "gym mơ"), ("Sociu", "Sô Ciu"), ("Vinhomes", "Vin hôm"), ("Viconship", "Vi côn síp"), ("Gemadept", "Ghê ma đép"), ("Gemalink", "Ghê ma linh"),  # anh Huy 24/11: Sociu đọc là sô ciu
     ("The Sapphire", "Đờ Sa phai a"), ("Vinhomes Smart City", "Vin hôm Sờ mát Xi ti"),
     ("Lumi Hanoi", "Lu mi Hà Nội"), ("Times City", "Tham Xi ti"), ("Ocean Park", "Âu sần Pác"),
 ]
