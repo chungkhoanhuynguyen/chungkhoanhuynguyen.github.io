@@ -86,3 +86,10 @@ Dùng `navigator.wakeLock.request('screen')`. Gọi lại khi trang hiện lại
 ## 11. Bản quyền và quyền riêng tư
 - Chỉ dùng mã nguồn có giấy phép MIT, Apache hoặc CC0. Model và âm thanh có ghi "phi thương mại" (NC) phải thay trước khi kiếm tiền.
 - Gỡ mã theo dõi của bên thứ ba có trong mã nguồn gốc (Google Analytics, Meta Pixel của game cũ).
+
+## 12. Chuyển động nhân vật bằng mocap (Thiên Kiếm Môn, 24/11)
+- Bộ chuyển động lấy từ **KayKit Adventurers 1.0 (CC0)**, file `anim/kk.glb` chỉ còn khung xương và 27 clip (chạy, đi, đứng, nhảy, đòn 1 tay và 2 tay, bắn, thi pháp, trúng đòn, chết, ngồi…). Tạo lại bằng `stripanim.py` (bỏ mesh, chỉ giữ kênh xoay và độ cao hông).
+- Chuyển sang xương VRM bằng cách so **độ lệch xoay so với tư thế chuẩn trong không gian nhân vật**: `target = deltaNguồn * restĐích`, rồi đổi về toạ độ của xương cha. Hàm `rtDrive()` làm việc này. Không cần đảo trục cho VRM0/VRM1.
+- Tên xương có dấu chấm (`upperarm.l`) bị three.js đổi thành `upperarml`, nên phải dùng `PropertyBinding.sanitizeNodeName`.
+- Vũ khí tự **đeo chéo sau lưng** sau 1,5 giây không đánh; đánh thì rút ra tay.
+- Bot và lính ở xa hơn 35m (điện thoại) / 60m (máy tính) quay về hoạt ảnh tự viết cho nhẹ.
