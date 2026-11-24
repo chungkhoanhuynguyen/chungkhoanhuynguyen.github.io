@@ -50,7 +50,8 @@ canvas#gl{display:block;position:fixed;inset:0;width:100%;height:100%}
 .joy b{position:absolute;left:50%;top:50%;width:50px;height:50px;margin:-25px;border-radius:50%;background:rgba(231,197,122,.55)}
 #hint{left:50%;top:10px;transform:translateX(-50%);font-size:12px;opacity:.9;text-shadow:0 1px 3px #000;text-align:center;max-width:46vw}
 #lvup{left:50%;top:32%;transform:translate(-50%,-50%);font:800 34px "Noto Serif",serif;color:#ffe38a;text-shadow:0 0 18px #ff9a1f,0 2px 2px #000;opacity:0;transition:opacity .4s}
-#load{position:fixed;inset:0;display:grid;place-items:center;background:#1a140c;z-index:9;font:600 18px "Noto Serif",serif;transition:opacity .6s}
+#load{position:fixed;inset:0;display:flex;flex-direction:column;gap:10px;justify-content:center;align-items:center;background:#1a140c;z-index:9;font:600 18px "Noto Serif",serif;transition:opacity .6s}
+#load .lbar,.cbar{width:min(360px,80vw);height:8px;border-radius:4px;background:rgba(255,255,255,.12);overflow:hidden}#load .lbar i,.cbar i{display:block;height:100%;background:linear-gradient(90deg,#c99a3e,#f3d58a);transition:width .3s}#load .lt{font-size:14px;opacity:.85}
 #err{position:fixed;left:10px;right:10px;bottom:10px;background:#3a0d10;color:#fff;padding:10px;font:13px monospace;display:none;z-index:10;white-space:pre-wrap}
 .touch #hint{display:none}
 @media(max-width:700px){#mm{transform:scale(.72);transform-origin:0 0}#quest{width:170px;top:56px;font-size:11px}#quest div{font-size:11px}#chat{bottom:150px;width:60vw;font-size:11px}#bars{left:10px;transform:none;width:50vw;bottom:10px}#skills{transform:scale(.88);transform-origin:100% 100%;right:6px;bottom:6px}}
@@ -77,14 +78,14 @@ canvas#gl{display:block;position:fixed;inset:0;width:100%;height:100%}
 <div class="joy" id="joy"><b id="knob"></b></div>
 <div id="err"></div>
 
-<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/build/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/shaders/CopyShader.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/postprocessing/EffectComposer.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/postprocessing/RenderPass.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/postprocessing/ShaderPass.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="lib/three.min.js"></script>
+<script src="lib/CopyShader.js"></script>
+<script src="lib/LuminosityHighPassShader.js"></script>
+<script src="lib/EffectComposer.js"></script>
+<script src="lib/RenderPass.js"></script>
+<script src="lib/ShaderPass.js"></script>
+<script src="lib/UnrealBloomPass.js"></script>
+<script src="lib/GLTFLoader.js"></script>
 <script>
 window.onerror=(m,s,l)=>{const e=document.getElementById('err');e.style.display='block';e.textContent='Lỗi: '+m+' (dòng '+l+')'};
 {
@@ -124,7 +125,9 @@ function worldShader(mat,colorCode,normalCode){mat.onBeforeCompile=s=>{s.uniform
 
 /* ---------- tải tài nguyên ---------- */
 const LM=new T.LoadingManager();let assetsReady=false;LM.onLoad=()=>{assetsReady=true};
-LM.onProgress=(u,a,b)=>{const l=$('load');if(l)l.textContent='Đang tải Thiên Kiếm Môn… '+Math.round(a/b*100)+'%'};
+const MANI={"tex/lacquered_cherry_wood_Diffuse.jpg":618034,"tex/marble_01_Diffuse.jpg":305029,"tex/rock_wall_08_Diffuse.jpg":768570,"tex/granite_tile_03_Diffuse.jpg":1056664,"tex/leafy_grass_nor_gl.jpg":1466049,"tex/lacquered_cherry_wood_nor_gl.jpg":66478,"tex/granite_tile_03_nor_gl.jpg":778769,"tex/rock_wall_08_nor_gl.jpg":1236281,"tex/grey_roof_tiles_nor_gl.jpg":522186,"tex/grey_roof_tiles_Diffuse.jpg":596156,"tex/marble_01_nor_gl.jpg":110230,"tex/grass_path_2_nor_gl.jpg":831959,"tex/sky.jpg":55776,"tex/grass_path_2_Diffuse.jpg":716010,"tex/bark_brown_02_nor_gl.jpg":1015623,"tex/bark_brown_02_Diffuse.jpg":659592,"tex/leafy_grass_Diffuse.jpg":1195394,"tex/red_plaster_weathered_Diffuse.jpg":710340,"tex/red_plaster_weathered_nor_gl.jpg":581562,"models/fern_02/textures/fern_02_arm_1k.jpg":280359,"models/fern_02/textures/fern_02_nor_gl_1k.jpg":367222,"models/fern_02/textures/fern_02_diff_1k.jpg":315705,"models/horse_statue_01/textures/horse_statue_01_nor_gl_1k.jpg":125167,"models/horse_statue_01/textures/horse_statue_01_arm_1k.jpg":169527,"models/horse_statue_01/textures/horse_statue_01_diff_1k.jpg":143564,"models/wooden_lantern_01/textures/wooden_lantern_01_diff_1k.jpg":712250,"models/wooden_lantern_01/textures/wooden_lantern_01_arm_1k.jpg":842111,"models/wooden_lantern_01/textures/wooden_lantern_01_glass_diff_1k.jpg":410747,"models/wooden_lantern_01/textures/wooden_lantern_01_nor_gl_1k.jpg":747945,"models/wooden_lantern_01/textures/wooden_lantern_01_glass_arm_1k.jpg":561615,"models/wooden_lantern_01/textures/wooden_lantern_01_glass_nor_gl_1k.jpg":216436,"models/rock_moss_set_01/textures/rock_moss_set_01_rough_1k.jpg":82624,"models/rock_moss_set_01/textures/rock_moss_set_01_nor_gl_1k.jpg":209975,"models/rock_moss_set_01/textures/rock_moss_set_01_diff_1k.jpg":168099,"models/shrub_04/textures/shrub_04_arm_1k.jpg":332957,"models/shrub_04/textures/shrub_04_diff_1k.jpg":373350,"models/shrub_04/textures/shrub_04_nor_gl_1k.jpg":449241,"models/shrub_02/textures/shrub_02_diff_1k.jpg":395120,"models/shrub_02/textures/shrub_02_nor_gl_1k.jpg":490815,"models/shrub_02/textures/shrub_02_arm_1k.jpg":313715,"chars/s2/15.png":579147,"chars/s2/6.jpg":14087,"chars/s2/14.png":23760,"chars/s2/20.jpg":44453,"chars/s2/12.jpg":34871,"chars/s2/13.jpg":3691,"chars/s2/8.png":29050,"chars/s2/23.jpg":27345,"chars/s2/19.png":208991,"chars/s2/22.jpg":37211,"chars/s2/24.jpg":29999,"chars/s2/17.png":1177593,"chars/s2/model.glb":4675220,"chars/s2/18.png":143226,"chars/s2/7.png":1096,"chars/s2/1.jpg":633,"chars/s2/0.png":9866,"chars/s2/16.jpg":62883,"chars/s2/21.jpg":12198,"chars/s2/11.jpg":73069,"chars/s2/2.jpg":631,"chars/s2/3.jpg":631,"chars/s2/5.png":152203,"chars/s2/25.jpg":42667,"chars/s2/9.png":189195,"chars/s2/10.png":4038,"chars/s2/4.jpg":15190,"chars/s2/26.png":317,"fern_02":239332,"horse_statue_01":1123028,"wooden_lantern_01":363843,"rock_moss_set_01":1961621,"shrub_04":1000682,"shrub_02":1016885};const MANI_T=Object.values(MANI).reduce((a,b)=>a+b,0);let loadedB=0;const seenU=new Set();
+const mb=b=>(b/1048576).toFixed(1);window.loadTxt=()=>Math.min(100,Math.round(loadedB/MANI_T*100))+'% · '+mb(loadedB)+' / '+mb(MANI_T)+' MB';
+LM.onProgress=(u)=>{if(seenU.has(u))return;seenU.add(u);for(const k in MANI)if(u.endsWith(k)||u===k){loadedB+=MANI[k];break}const l=$('load');if(l)l.innerHTML='<div>Đang tải Thiên Kiếm Môn</div><div class="lbar"><i style="width:'+Math.round(loadedB/MANI_T*100)+'%"></i></div><div class="lt">'+loadTxt()+'</div>'};
 const TL=new T.TextureLoader(LM),maxAni=renderer.capabilities.getMaxAnisotropy();
 const texCache={};
 function tex(name,rep,isColor=true){const k=name+rep;if(texCache[k])return texCache[k];const t=TL.load('tex/'+name+'.jpg');t.wrapS=t.wrapT=T.RepeatWrapping;t.anisotropy=Math.min(8,maxAni);if(isColor)t.encoding=T.sRGBEncoding;return texCache[k]=t}
@@ -306,32 +309,70 @@ const dust=new T.Points(dustG,new T.PointsMaterial({size:.18,map:softTex,color:0
 const matCache={};const M=(c,o={})=>{const k=c+JSON.stringify(o);return matCache[k]||(matCache[k]=new T.MeshStandardMaterial(Object.assign({color:c,roughness:.7},o)))};
 const mSkin=M(0xeec4a0),mHair=M(0x141416,{roughness:.45}),mSteel=M(0xd8e6f2,{metalness:1,roughness:.2,emissive:0x2a7fd0,emissiveIntensity:.35});
 
-/* ---------- đại kiếm 3D: lưỡi vát cạnh, rãnh máu, chắn tay chạm khắc, chuôi quấn, ngọc ---------- */
-function makeGreatSword(){const g=new T.Group();
- const steel=new T.MeshStandardMaterial({color:0xdfe8f2,metalness:1,roughness:.18,envMapIntensity:1.4});
- const edge=new T.MeshStandardMaterial({color:0xffffff,metalness:1,roughness:.08,emissive:0x7fd8ff,emissiveIntensity:1.6});edge.userData.glow=1;
- const rune=new T.MeshStandardMaterial({color:0x111,emissive:0x7fd8ff,emissiveIntensity:2.6});rune.userData.glow=1;
- const gold=new T.MeshStandardMaterial({color:0xd9a441,metalness:1,roughness:.28}),dark=new T.MeshStandardMaterial({color:0x2a1410,roughness:.7}),gem=new T.MeshStandardMaterial({color:0xff2040,emissive:0xff1030,emissiveIntensity:2.2,roughness:.1});
- // lưỡi: hình thoi thuôn, vát hai mặt
- const L=2.2,W=.2,sh=new T.Shape();sh.moveTo(-W/2,0);sh.lineTo(-W/2,L*.78);sh.quadraticCurveTo(-W/2,L*.92,0,L);sh.quadraticCurveTo(W/2,L*.92,W/2,L*.78);sh.lineTo(W/2,0);sh.lineTo(-W/2,0);
- const bl=new T.ExtrudeGeometry(sh,{depth:.012,bevelEnabled:true,bevelThickness:.026,bevelSize:.05,bevelSegments:2,curveSegments:10});bl.translate(0,0,-.006);
- const blade=new T.Mesh(bl,steel);g.add(blade);
- const eg=new T.ExtrudeGeometry(sh,{depth:.004,bevelEnabled:true,bevelThickness:.004,bevelSize:.058,bevelSegments:1,curveSegments:10});eg.translate(0,0,-.002);g.add(new T.Mesh(eg,edge));
- for(const z of[-.03,.03]){const f=new T.Mesh(new T.BoxGeometry(.035,L*.62,.01),rune);f.position.set(0,L*.36,z);g.add(f)}
- for(let i=0;i<5;i++)for(const z of[-.034,.034]){const r=new T.Mesh(new T.TorusGeometry(.03,.006,4,12),rune);r.position.set(0,.18+i*.24,z);g.add(r)}
- // chắn tay: cánh cong vàng + đầu rồng giản lược
- const gs=new T.Shape();gs.moveTo(0,0);gs.quadraticCurveTo(.25,-.02,.42,.14);gs.quadraticCurveTo(.3,.02,.06,.07);gs.lineTo(0,.07);
- for(const sx of[-1,1]){const gg=new T.ExtrudeGeometry(gs,{depth:.05,bevelEnabled:true,bevelThickness:.015,bevelSize:.015,bevelSegments:2,curveSegments:8});gg.translate(0,0,-.025);const m=new T.Mesh(gg,gold);m.scale.x=sx;m.position.y=-.03;g.add(m)}
- const hub=new T.Mesh(new T.CylinderGeometry(.09,.11,.1,8),gold);hub.rotation.x=Math.PI/2;hub.position.y=.01;g.add(hub);
- for(const z of[-.06,.06]){const gm=new T.Mesh(new T.SphereGeometry(.045,14,10),gem);gm.position.set(0,.01,z);gm.scale.z=.5;g.add(gm)}
- // chuôi quấn da + đốc
- const grip=new T.Mesh(new T.CylinderGeometry(.032,.036,.42,10),dark);grip.position.y=-.26;g.add(grip);
- for(let i=0;i<7;i++){const r=new T.Mesh(new T.TorusGeometry(.037,.008,5,12),gold);r.rotation.x=Math.PI/2;r.position.y=-.08-i*.06;g.add(r)}
- const pm=new T.Mesh(new T.OctahedronGeometry(.065,0),gold);pm.position.y=-.52;pm.scale.y=1.4;g.add(pm);const pg=new T.Mesh(new T.SphereGeometry(.03,10,8),gem);pg.position.y=-.52;g.add(pg);
- const tas=new T.Mesh(new T.ConeGeometry(.03,.25,6),new T.MeshStandardMaterial({color:0xb3262d,roughness:.8}));tas.position.y=-.68;g.add(tas);
- g.traverse(o=>{if(o.isMesh)o.castShadow=true});
- // trục y của kiếm -> trục z của nhóm vũ khí (giống kiếm cũ)
- const r=new T.Group();g.rotation.x=Math.PI/2;g.position.z=.32;r.add(g);return r}
+/* ---------- binh khí 3D: đại kiếm, kiếm, thương, đao, cung ---------- */
+const WM={};
+function wmats(){if(WM.steel)return WM;
+ WM.steel=new T.MeshStandardMaterial({color:0xdfe8f2,metalness:1,roughness:.16,envMapIntensity:1.5});
+ WM.dsteel=new T.MeshStandardMaterial({color:0x8f99a6,metalness:1,roughness:.3});
+ WM.edge=new T.MeshStandardMaterial({color:0xffffff,metalness:1,roughness:.06,emissive:0x7fd8ff,emissiveIntensity:1.6});WM.edge.userData.glow=1;
+ WM.rune=new T.MeshStandardMaterial({color:0x111111,emissive:0x7fd8ff,emissiveIntensity:2.6});WM.rune.userData.glow=1;
+ WM.gold=new T.MeshStandardMaterial({color:0xd9a441,metalness:1,roughness:.26});
+ WM.leather=new T.MeshStandardMaterial({color:0x2a1410,roughness:.7});
+ WM.wood=new T.MeshStandardMaterial({map:tex('lacquered_cherry_wood_Diffuse'),color:0x8a2a1a,roughness:.4,metalness:.1});
+ WM.gem=new T.MeshStandardMaterial({color:0xff2040,emissive:0xff1030,emissiveIntensity:2.2,roughness:.1});
+ WM.silk=new T.MeshStandardMaterial({color:0xc0182a,roughness:.85,side:T.DoubleSide});
+ WM.string=new T.MeshStandardMaterial({color:0xffffff,emissive:0x7fd8ff,emissiveIntensity:2});WM.string.userData.glow=1;
+ Object.values(WM).forEach(m=>m.userData.keep=1);return WM}
+const ext=(sh,d,bt,bs,seg=2)=>{const g=new T.ExtrudeGeometry(sh,{depth:d,bevelEnabled:true,bevelThickness:bt,bevelSize:bs,bevelSegments:seg,curveSegments:12});g.translate(0,0,-d/2);return g};
+function hilt(g,len,guardW){const M=wmats();
+ const gs=new T.Shape();gs.moveTo(0,0);gs.quadraticCurveTo(guardW*.6,-.02,guardW,.12);gs.quadraticCurveTo(guardW*.7,.02,.05,.06);gs.lineTo(0,.06);
+ for(const sx of[-1,1]){const m=new T.Mesh(ext(gs,.04,.014,.014),M.gold);m.scale.x=sx;m.position.y=-.03;g.add(m)}
+ const hub=new T.Mesh(new T.CylinderGeometry(.075,.09,.09,8),M.gold);hub.rotation.x=Math.PI/2;g.add(hub);
+ for(const z of[-.05,.05]){const gm=new T.Mesh(new T.SphereGeometry(.036,14,10),M.gem);gm.position.z=z;gm.scale.z=.5;g.add(gm)}
+ const grip=new T.Mesh(new T.CylinderGeometry(.03,.034,len,10),M.leather);grip.position.y=-len/2-.04;g.add(grip);
+ const n=Math.round(len/.06);for(let i=0;i<n;i++){const r=new T.Mesh(new T.TorusGeometry(.034,.007,5,12),M.gold);r.rotation.x=Math.PI/2;r.position.y=-.07-i*(len-.06)/n;g.add(r)}
+ const pm=new T.Mesh(new T.OctahedronGeometry(.055,0),M.gold);pm.position.y=-len-.09;pm.scale.y=1.4;g.add(pm);
+ const tas=new T.Mesh(new T.ConeGeometry(.03,.26,6),M.silk);tas.position.y=-len-.26;g.add(tas)}
+function wrap(g,off){g.traverse(o=>{if(o.isMesh)o.castShadow=true});const r=new T.Group();g.rotation.x=Math.PI/2;g.position.z=off;r.add(g);return r}
+function bladeShape(L,W,tipCurve,curve=0){const s=new T.Shape();s.moveTo(-W/2,0);
+ if(curve){s.quadraticCurveTo(-W/2+curve,L*.5,-W/2+curve*1.4,L*.82);s.quadraticCurveTo(W*.1+curve*1.6,L*1.02,W/2+curve*1.6,L*.9);s.quadraticCurveTo(W/2+curve*1.1,L*.5,W/2,0)}
+ else{s.lineTo(-W/2,L*tipCurve);s.quadraticCurveTo(-W/2,L*.94,0,L);s.quadraticCurveTo(W/2,L*.94,W/2,L*tipCurve);s.lineTo(W/2,0)}
+ s.lineTo(-W/2,0);return s}
+function makeGreatSword(){const M=wmats(),g=new T.Group(),L=2.2,sh=bladeShape(L,.2,.78);
+ g.add(new T.Mesh(ext(sh,.012,.026,.05),M.steel));g.add(new T.Mesh(ext(sh,.004,.004,.058,1),M.edge));
+ for(const z of[-.03,.03]){const f=new T.Mesh(new T.BoxGeometry(.035,L*.62,.01),M.rune);f.position.set(0,L*.36,z);g.add(f)}
+ for(let i=0;i<5;i++)for(const z of[-.034,.034]){const r=new T.Mesh(new T.TorusGeometry(.03,.006,4,12),M.rune);r.position.set(0,.18+i*.24,z);g.add(r)}
+ hilt(g,.42,.42);return wrap(g,.32)}
+function makeJian(){const M=wmats(),g=new T.Group(),L=1.35,sh=bladeShape(L,.075,.86);
+ g.add(new T.Mesh(ext(sh,.008,.012,.022),M.steel));g.add(new T.Mesh(ext(sh,.003,.003,.026,1),M.edge));
+ const ridge=new T.Mesh(new T.BoxGeometry(.012,L*.9,.03),M.rune);ridge.position.y=L*.45;g.add(ridge);
+ hilt(g,.24,.2);return wrap(g,.2)}
+function makeDao(){const M=wmats(),g=new T.Group(),L=1.25,sh=bladeShape(L,.13,0,.09);
+ g.add(new T.Mesh(ext(sh,.01,.018,.03),M.steel));const e=new T.Mesh(ext(sh,.003,.003,.036,1),M.edge);g.add(e);
+ const back=new T.Mesh(new T.BoxGeometry(.016,L*.8,.03),M.gold);back.position.set(-.06,L*.42,0);back.rotation.z=-.06;g.add(back);
+ for(let i=0;i<3;i++){const r=new T.Mesh(new T.TorusGeometry(.022,.006,5,10),M.gold);r.position.set(-.05+i*.004,.25+i*.18,0);g.add(r)}
+ const ring=new T.Mesh(new T.TorusGeometry(.11,.016,6,18),M.gold);ring.position.y=-.02;g.add(ring);
+ hilt(g,.3,.16);return wrap(g,.24)}
+function makeSpear(){const M=wmats(),g=new T.Group(),S=2.6;
+ const shaft=new T.Mesh(new T.CylinderGeometry(.03,.036,S,10),M.wood);shaft.position.y=S*.25;g.add(shaft);
+ for(const y of[-S*.25,S*.12,S*.55])for(let i=0;i<3;i++){const r=new T.Mesh(new T.TorusGeometry(.037,.007,5,12),M.gold);r.rotation.x=Math.PI/2;r.position.y=y+i*.05;g.add(r)}
+ const top=S*.75,hs=new T.Shape();hs.moveTo(-.06,0);hs.quadraticCurveTo(-.11,.18,0,.55);hs.quadraticCurveTo(.11,.18,.06,0);hs.lineTo(-.06,0);
+ const head=new T.Mesh(ext(hs,.01,.02,.02),M.steel);head.position.y=top+.08;g.add(head);const he=new T.Mesh(ext(hs,.003,.003,.025,1),M.edge);he.position.y=top+.08;g.add(he);
+ for(const sx of[-1,1]){const w=new T.Mesh(new T.ConeGeometry(.03,.22,4),M.gold);w.position.set(sx*.09,top+.06,0);w.rotation.z=sx*1.2;g.add(w)}
+ const col=new T.Mesh(new T.CylinderGeometry(.05,.04,.12,8),M.gold);col.position.y=top;g.add(col);
+ for(let i=0;i<14;i++){const a=i/14*6.28,t=new T.Mesh(new T.ConeGeometry(.025,.42,4),M.silk);t.position.set(Math.cos(a)*.05,top-.22,Math.sin(a)*.05);t.rotation.set(Math.PI+Math.sin(a)*.25,0,Math.cos(a)*.25);g.add(t)}
+ const butt=new T.Mesh(new T.ConeGeometry(.04,.16,6),M.gold);butt.rotation.x=Math.PI;butt.position.y=-S*.25-.08;g.add(butt);
+ return wrap(g,.0)}
+function makeBow(){const M=wmats(),g=new T.Group(),pts=[];for(let i=0;i<=24;i++){const t=i/24*2-1;pts.push(new T.Vector3(-.3*(1-t*t)+.08*Math.pow(Math.abs(t),3),t*.85,0))}
+ const curve=new T.CatmullRomCurve3(pts),limb=new T.Mesh(new T.TubeGeometry(curve,48,.026,8),M.wood);g.add(limb);
+ for(const sy of[-1,1]){const tip=new T.Mesh(new T.ConeGeometry(.03,.16,6),M.gold);tip.position.set(.08,sy*.88,0);tip.rotation.z=sy>0?-.4:Math.PI+.4;g.add(tip);
+  const orn=new T.Mesh(new T.TorusGeometry(.05,.01,6,14,Math.PI*1.3),M.gold);orn.position.set(-.2,sy*.5,0);g.add(orn)}
+ const grip=new T.Mesh(new T.CylinderGeometry(.034,.034,.2,10),M.leather);grip.position.x=-.3;g.add(grip);const gm=new T.Mesh(new T.SphereGeometry(.035,12,8),M.gem);gm.position.set(-.33,.14,0);g.add(gm);
+ const str=new T.Mesh(new T.CylinderGeometry(.005,.005,1.72,4),M.string);str.position.x=.07;g.add(str);
+ g.traverse(o=>{if(o.isMesh)o.castShadow=true});const r=new T.Group();g.position.x=.3;g.rotation.y=Math.PI/2;r.add(g);r.userData.bow=1;return r}
+const WEAPONS={great:['Đại kiếm',makeGreatSword,[.3,0,-.25],[.85,1]],jian:['Kiếm',makeJian,[.3,0,-.25],[1,1]],dao:['Đao',makeDao,[.3,0,-.25],[1,1]],spear:['Thương',makeSpear,[.2,0,-.15],[1,1]],bow:['Cung',makeBow,[Math.PI/2,0,0],[1,1]]};
+function equipWeapon(id){const W=WEAPONS[id]||WEAPONS.great;const w=hero.c.w;while(w.children.length)w.remove(w.children[0]);w.add(W[1]());w.userData.great=1;w.userData.kind=id;
+ if(hero.vw&&vrmReady){w.rotation.set(...W[2]);w.scale.setScalar(.8*W[3][0]/vrmBase)}}
 function makeChar(o){const g=new T.Group(),b=new T.Group();g.add(b);const add=(geo,m,x,y,z,p)=>{const me=new T.Mesh(geo,m);me.position.set(x,y,z);me.castShadow=true;(p||b).add(me);return me};
  const robe=add(new T.LatheGeometry([[.58,0],[.48,.35],[.35,.8],[.28,1.02],[.33,1.35],[.36,1.5],[.2,1.64],[0,1.66]].map(p=>new T.Vector2(p[0],p[1])),12),M(o.robe));
  add(new T.TorusGeometry(.58,.04,5,20),M(o.trim),0,.03,0).rotation.x=Math.PI/2;add(new T.CylinderGeometry(.3,.3,.15,12),M(o.sash),0,1.02,0);
@@ -381,7 +422,7 @@ const hero=spawn('hero',0,14,{robe:0xeef2f8,trim:0x2f5d8a,sash:0xb3262d,weapon:'
 hero.mp=100;hero.lv=1;hero.xp=0;hero.face=Math.PI;
 /* ---------- nhân vật VRoid (CC0: AvatarSample_D, VRoid Project) ---------- */
 const SWR=[.3,0,-.25];const VB={};let vrmReady=false;const hairBones=[],faceMeshes=[],partMats={HAIR:[],EYE:[],SKIN:[],CLOTH:[]};let vrmRoot=null,vrmBase=1;
-const LOOK={hair:'#ffffff',eye:'#d0405a',skin:'#ffffff',cloth:'#2a2a33',h:1,face:3,glow:'#7fd8ff',name:'Bạch Y Kiếm Khách'};
+const LOOK={weapon:'great',hair:'#ffffff',eye:'#d0405a',skin:'#ffffff',cloth:'#2a2a33',h:1,face:3,glow:'#7fd8ff',name:'Bạch Y Kiếm Khách'};
 try{Object.assign(LOOK,JSON.parse(localStorage.getItem('tkm_look')||'{}'))}catch(e){}
 function recolor(m,amt){m.userData.tint={value:new T.Color(1,1,1)};m.userData.amt={value:0};m.userData.maxAmt=amt;
  m.onBeforeCompile=s=>{s.uniforms.uTint=m.userData.tint;s.uniforms.uAmt=m.userData.amt;s.fragmentShader='uniform vec3 uTint;uniform float uAmt;\n'+s.fragmentShader.replace('#include <map_fragment>',`#include <map_fragment>
@@ -396,13 +437,13 @@ new T.GLTFLoader(LM).load('chars/s2/model.glb',gl=>{const root=gl.scene;root.rot
    o.material=Array.isArray(o.material)?nm:nm[0]}});
  const bb=new T.Box3().setFromObject(root),h=bb.max.y-bb.min.y;vrmBase=1.85/h;root.scale.setScalar(vrmBase);root.position.y=-bb.min.y*vrmBase;
  hero.c.b.children.forEach(ch=>{ch.visible=false});hero.c.b.add(root);
- const hand=VB.J_Bip_R_Hand;if(hand){const w=hero.c.w;w.parent.remove(w);hand.add(w);w.position.set(-.06/vrmBase,-.01/vrmBase,0);w.scale.setScalar(.8/vrmBase);w.rotation.set(SWR[0],SWR[1],SWR[2]);hero.vw=w}
- vrmReady=true;applyLook()});
+ const hand=VB.J_Bip_R_Hand;if(hand){const w=hero.c.w;w.parent.remove(w);hand.add(w);w.position.set(-.06/vrmBase,-.01/vrmBase,0);hero.vw=w}
+ vrmReady=true;equipWeapon(LOOK.weapon);applyLook()});
 const qd=new T.Quaternion(),eu=new T.Euler();
 function pose(name,x,y,z){const b=VB[name];if(!b)return;eu.set(x,y,z);qd.setFromEuler(eu);b.quaternion.copy(b.userData.rest).multiply(qd)}
 function morph(idx,v){faceMeshes.forEach(m=>{if(m.morphTargetInfluences&&idx<m.morphTargetInfluences.length)m.morphTargetInfluences[idx]=v})}
 const FACES=[['Bình thường',0],['Mỉm cười',3],['Tinh nghịch',2],['Lạnh lùng',1],['Ngạc nhiên',5]];let blinkT=2;
-function applyLook(){const set=(role,col,on)=>partMats[role].forEach(m=>{m.userData.tint.value.set(col);m.userData.amt.value=on?m.userData.maxAmt:0});
+function applyLook(){if(vrmReady&&hero.c.w.userData.kind!==LOOK.weapon)equipWeapon(LOOK.weapon);const set=(role,col,on)=>partMats[role].forEach(m=>{m.userData.tint.value.set(col);m.userData.amt.value=on?m.userData.maxAmt:0});
  set('HAIR',LOOK.hair,LOOK.hair!=='#ffffff');set('EYE',LOOK.eye,LOOK.eye!=='#d0405a');set('SKIN',LOOK.skin,LOOK.skin!=='#ffffff');set('CLOTH',LOOK.cloth,LOOK.cloth!=='#2a2a33');
  if(vrmRoot)vrmRoot.scale.setScalar(vrmBase*LOOK.h);FACES.forEach(f=>morph(f[1],0));morph(LOOK.face,1);
  const gc=new T.Color(LOOK.glow);hero.c.w.traverse(o=>{if(o.isMesh&&o.material.userData.glow)o.material.emissive.copy(gc)});
@@ -426,6 +467,7 @@ let creating=true;
 {const C=document.createElement('div');C.id='creator';
  const sw=(k,list)=>'<div class="row"><b>'+{hair:'Màu tóc',eye:'Màu mắt',skin:'Màu da',cloth:'Trang phục',glow:'Hào quang vũ khí'}[k]+'</b><div class="sws">'+list.map(c=>`<button class="sw" data-k="${k}" data-v="${c}" style="--c:${c}" aria-label="${c}"></button>`).join('')+'</div></div>';
  C.innerHTML=`<div class="cpanel"><h2>Tạo nhân vật</h2>
+ <div class="row"><b>Binh khí</b><div class="chips">${Object.entries(WEAPONS).map(([k,v])=>`<button class="chip" data-k="weapon" data-v="${k}">${v[0]}</button>`).join('')}</div></div>
  <div class="row"><b>Gương mặt</b><div class="chips">${FACES.map(f=>`<button class="chip" data-k="face" data-v="${f[1]}">${f[0]}</button>`).join('')}</div></div>
  ${sw('hair',['#ffffff','#1b1b22','#6b3a22','#e8b84a','#ff8fb5','#8fe0ff','#c0182a','#7a4fd0'])}
  ${sw('eye',['#d0405a','#3a8cff','#2fbf7a','#e8b84a','#9b4fff','#111111'])}
@@ -434,7 +476,7 @@ let creating=true;
  ${sw('glow',['#7fd8ff','#ffd36b','#ff5a3a','#b47bff','#7fffb0'])}
  <div class="row"><b>Chiều cao</b><input id="ch" type="range" min=".9" max="1.12" step=".01"></div>
  <div class="row"><b>Tên nhân vật</b><input id="cn" maxlength="18"></div>
- <button id="cgo" class="go2" disabled>Đang tải map…</button></div>
+ <div class="cbar" style="width:100%;margin-top:12px"><i id="cbi" style="width:0"></i></div><button id="cgo" class="go2" disabled>Đang tải map…</button></div>
  <div class="chint">Kéo để xoay nhân vật</div>`;
  document.body.appendChild(C);
  const st=document.createElement('style');st.textContent=`#creator{position:fixed;inset:0;z-index:8;pointer-events:none;font-family:"Noto Serif",serif}
@@ -453,7 +495,7 @@ let creating=true;
  C.addEventListener('click',e=>{const b=e.target.closest('[data-k]');if(!b)return;LOOK[b.dataset.k]=b.dataset.k==='face'?+b.dataset.v:b.dataset.v;applyLook();mark()});
  const ch=C.querySelector('#ch'),cn=C.querySelector('#cn');ch.value=LOOK.h;cn.value=LOOK.name;mark();
  ch.oninput=()=>{LOOK.h=+ch.value;applyLook()};cn.oninput=()=>{LOOK.name=cn.value.trim()||'Vô Danh';applyLook()};
- const go=C.querySelector('#cgo');setInterval(()=>{if(assetsReady&&vrmReady&&go.disabled){go.disabled=false;go.textContent='Vào game'}else if(go.disabled){const l=$('load');}},300);
+ const go=C.querySelector('#cgo');const ci=C.querySelector('#cbi');const iv=setInterval(()=>{ci.style.width=Math.round(loadedB/MANI_T*100)+'%';if(assetsReady&&vrmReady){go.disabled=false;go.textContent='Vào game';ci.style.width='100%';clearInterval(iv)}else go.textContent='Đang tải map '+loadTxt()},300);
  go.onclick=()=>{creating=false;C.remove();document.body.classList.remove('creating');yaw=0;pitch=.72;dist=touch?27:17;chat('Chào mừng <b>'+esc(LOOK.name)+'</b> đến Thiên Kiếm Môn!','s')};}
 
 const P={v:new T.Vector3(),ground:true,air:0,auto:null,cds:{A:0,1:0,2:0,3:0,4:0,5:0,6:0}};
@@ -480,6 +522,9 @@ function nearestEnemy(from,range){let best=null,bd=range;ents.forEach(e=>{if(e.t
 const heroPos=()=>hero.c.g.position;
 function faceTo(e,p){const d=tmp2.copy(p).sub(e.c.g.position);e.face=Math.atan2(d.x,d.z)}
 function useSkill(k){if(creating||hero.dead||P.cds[k]>0)return;const hp=heroPos();
+ if(k==='A'&&hero.c.w.userData.kind==='bow'){const t=nearestEnemy(hp,22);P.cds.A=CD.A;hero.atk=1;if(t)faceTo(hero,t.c.g.position);const f=new T.Vector3(Math.sin(hero.face),0,Math.cos(hero.face)),st=hp.clone().setY(hp.y+1.3).addScaledVector(f,.6);
+  const ar=new T.Group();const sh2=new T.Mesh(new T.CylinderGeometry(.015,.015,1.1,5),wmats().wood);sh2.rotation.x=Math.PI/2;ar.add(sh2);const hd2=new T.Mesh(new T.ConeGeometry(.04,.16,5),wmats().edge);hd2.rotation.x=Math.PI/2;hd2.position.z=.6;ar.add(hd2);ar.position.copy(st);ar.lookAt(st.clone().add(f));let hitd=false;
+  addFx(ar,.7,(o,kk,dt)=>{if(hitd)return;o.m.position.addScaledVector(f,dt*40);const p=o.m.position;emit(p.x,p.y,p.z,0,0,0,...glowRGB(),.5,.25,0,0);ents.forEach(e=>{if(!hitd&&e.team==='enemy'&&!e.dead&&Math.hypot(e.c.g.position.x-p.x,e.c.g.position.z-p.z)<1){hitd=true;o.m.visible=false;const cr=Math.random()<.3;hit(hero,e,Math.floor((cr?2.2:1)*(1000+Math.random()*700)),cr)}})});return}
  if(k==='A'){const t=nearestEnemy(hp,14);if(t&&t.c.g.position.distanceTo(hp)>2.6){P.auto=t;return}P.cds.A=CD.A;hero.atk=1;
   if(t){faceTo(hero,t.c.g.position);const crit=Math.random()<.25;hit(hero,t,Math.floor((crit?2.2:1)*(900+Math.random()*700)),crit)}
   addFx(slashArc(hp,hero.face,0xbfe8ff,false),.25,(f,k)=>{f.m.material.opacity=1-k;f.m.scale.setScalar(1+k*.5)});return}
