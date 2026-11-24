@@ -1,0 +1,3 @@
+Thiên Kiếm Môn — demo map train 3D.
+Texture và mô hình môi trường: Poly Haven (polyhaven.com), giấy phép CC0.
+Thư viện 3D: three.js (MIT).
