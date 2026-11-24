@@ -1,4 +1,4 @@
-Thiên Kiếm Môn — demo map train 3D.
+Thiên Kiếm Môn — demo 3D.
 Texture và mô hình môi trường: Poly Haven (polyhaven.com), CC0.
-Nhân vật: AvatarSample_D, VRoid Project (pixiv), CC0.
+Nhân vật: AvatarSample_D (CC0), AvatarSample_E/F/G — VRoid Project (pixiv), giấy phép cho phép phân phối lại và chỉnh sửa.
 Thư viện 3D: three.js (MIT).
