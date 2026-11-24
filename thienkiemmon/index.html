@@ -281,7 +281,7 @@ const GLP=new T.GLTFLoader();function loadPack(name,cb){GATE.then(()=>fetch(`mod
  const buf=new ArrayBuffer(12+8+jl+8+bl),dv=new DataView(buf),u8=new Uint8Array(buf);dv.setUint32(0,0x46546C67,true);dv.setUint32(4,2,true);dv.setUint32(8,buf.byteLength,true);
  dv.setUint32(12,jl,true);dv.setUint32(16,0x4E4F534A,true);u8.fill(32,20,20+jl);u8.set(js,20);dv.setUint32(20+jl,bl,true);dv.setUint32(24+jl,0x004E4942,true);u8.set(bin,28+jl);
  GLP.parse(buf,`models/${name}/`,gl=>{cb(gl)},e=>{console.error(e)})}).catch(e=>{console.error(e)}))}
-function instGLTF(name,list,cast=true){loadPack(name,gl=>{gl.scene.updateMatrixWorld(true);gl.scene.traverse(o=>{if(!o.isMesh)return;
+function instGLTF(name,list,cast=true){if(LITE&&/shrub|rock_moss|fern/.test(name))list=list.filter((_,i)=>i%3===0);if(LITE)cast=false;loadPack(name,gl=>{gl.scene.updateMatrixWorld(true);gl.scene.traverse(o=>{if(!o.isMesh)return;
  o.geometry.morphAttributes={};o.geometry.morphTargetsRelative=false;const im=new T.InstancedMesh(o.geometry,o.material,list.length);if(o.material.map)o.material.map.anisotropy=4;
  list.forEach((t,i)=>{dummy.position.set(t[0],t[1],t[2]);dummy.rotation.set(0,t[3]||0,0);dummy.scale.setScalar(t[4]||1);dummy.updateMatrix();im.setMatrixAt(i,dummy.matrix.clone().multiply(o.matrixWorld))});
  im.castShadow=cast;im.receiveShadow=true;scene.add(im)})})}
