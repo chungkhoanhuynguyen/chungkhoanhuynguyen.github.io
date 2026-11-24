@@ -118,7 +118,7 @@ def candles(im, d, sc, t, box=BX):
     sym = sc["sym"]; n = sc.get("n", 70); data = PX[sym][::-1]
     end = len(data) - sc.get("end_off", 0); seg = data[end-n:end]
     x0, y0, x1, y1 = box[0]+28, box[1]+40, box[2]-110, box[3]-40
-    vh = (y1-y0)*0.2; py1 = y1 - vh - 14
+    vh = (y1-y0)*0.2 if max(r["v"] for r in seg) > 0 else 0; py1 = y1 - vh - 14   # (25/11 NV1) không có khối lượng thì nến chiếm cả khung
     lo = min(r["l"] for r in seg); hi = max(r["h"] for r in seg)
     for z in sc.get("zones", []): lo = min(lo, z[0]); hi = max(hi, z[1])
     for hl in sc.get("hlines", []): lo = min(lo, hl[0]); hi = max(hi, hl[0])
@@ -153,8 +153,9 @@ def candles(im, d, sc, t, box=BX):
         yt, yb = Y(max(r["o"], r["c"])), Y(min(r["o"], r["c"]))
         if yb - yt < 2: yb = yt + 2
         d.rectangle([xc-bw/2, yt, xc+bw/2, yb], fill=col)
-        vb = r["v"]/vmax*vh
-        d.rectangle([xc-bw/2, y1-vb, xc+bw/2, y1], fill=mix(col, 0.45, PANEL))
+        if vmax > 0:   # (25/11 NV1) chuỗi không có khối lượng (vàng thế giới từ giá đóng cửa) thì bỏ cột khối lượng
+            vb = r["v"]/vmax*vh
+            d.rectangle([xc-bw/2, y1-vb, xc+bw/2, y1], fill=mix(col, 0.45, PANEL))
     # MAs
     closes = [r["c"] for r in data]
     for (m, colr) in sc.get("mas", []):

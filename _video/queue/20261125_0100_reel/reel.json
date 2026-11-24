@@ -1,0 +1,203 @@
+[
+ {
+  "key": "RV2511VB",
+  "tieu_de": "Vàng giảm gần 30% từ đỉnh, bắt đáy được chưa? Mua 2 lượng bán lại ngay mất 10 triệu – năm 2013 người xếp hàng mua ở 41,1 triệu chờ hơn 6 năm",
+  "hook": [
+   "VÀNG GIẢM 30%",
+   "BẮT ĐÁY CHƯA???"
+  ],
+  "nhan": "VÀNG · TÚI TIỀN",
+  "short_caption": "SJC chiều 24/11/2026: mua 130 / bán 135 triệu/lượng (SOHA 24/11/2026). Mua 2 lượng 270 triệu, bán lại ngay 260 triệu (tự tính). Hoà vốn cần +3,85% (5 ÷ 130). 135 triệu × 6,8% (lãi 12 tháng Agribank, BIDV, VietinBank – Việt Báo 17/11/2026) = 9,18 triệu/năm. Vàng thế giới tuần 16–22/11 mất gần 9,5%, USD gần đỉnh 19 tháng, Fed họp 8–9/12 (24h 22/11/2026). Khảo sát Kitco: 62% của 13 chuyên gia dự báo giảm, 42% của 160 nhà đầu tư cá nhân dự báo tăng (Dân trí 15/11/2026). 2013: mua 41,1 triệu ngày 16/4 (VnExpress 17/4/2013); 33,3 triệu 11/4/2016 (VietNamNet 18/4/2025); mốc 42 triệu 8/2019 (Nhà Đầu tư 8/8/2019). Không phải lời khuyên mua bán.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "BẮT ĐÁY HAY ĐỨNG NGOÀI?",
+   "loi": "Anh chị trả lời có được mấy câu trong phép thử, và đang định bắt đáy vàng hay đứng ngoài?",
+   "loi_doc": "Anh chị trả lời có được mấy câu trong phép thử, và đang định bắt đáy vàng hay đứng ngoài?",
+   "anh": [
+    "Ho Chi Minh City skyline night",
+    "Hanoi skyline night"
+   ]
+  },
+  "canh": [
+   {
+    "chu_to": "MUA 135, BÁN LẠI 130",
+    "loi": "Giá chốt ngày 24/11, tiệm bán vàng miếng SJC giá 135 triệu mỗi lượng, nhưng anh chị bán lại thì tiệm chỉ trả 130 triệu.",
+    "anh": [
+     "gold bullion bars||gold bars"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "VÀNG MIẾNG SJC CHIỀU 24/11",
+     "nguon": "SOHA 24/11/2026",
+     "dong": [
+      [
+       "MUA 130 / BÁN 135",
+       84,
+       "vang"
+      ],
+      [
+       "TRIỆU ĐỒNG MỖI LƯỢNG",
+       56,
+       "trang"
+      ]
+     ]
+    },
+    "loi_doc": "Giá chốt ngày hai mươi bốn tháng mười một, tiệm bán vàng miếng SJC giá một trăm ba mươi lăm triệu mỗi lượng, nhưng anh chị bán lại thì tiệm chỉ trả một trăm ba mươi triệu."
+   },
+   {
+    "chu_to": "MUA 2 LƯỢNG, MẤT NGAY 10 TRIỆU",
+    "loi": "Mua hai lượng hết 270 triệu. Bước ra cửa bán lại ngay, anh chị chỉ nhận 260 triệu. Mười triệu mất đi, dù giá chưa hề giảm.",
+    "the": {
+     "loai": "cot",
+     "tieu": "2 LƯỢNG VÀNG MIẾNG (TRIỆU ĐỒNG, EM TỰ TÍNH)",
+     "nguon": "Em tự tính từ giá SOHA 24/11/2026",
+     "hang": [
+      [
+       "Trả khi mua",
+       270
+      ],
+      [
+       "Nhận khi bán",
+       260
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": ""
+    },
+    "loi_doc": "Mua hai lượng hết hai trăm bảy mươi triệu. Bước ra cửa bán lại ngay, anh chị chỉ nhận hai trăm sáu mươi triệu. Mười triệu mất đi, dù giá chưa hề giảm."
+   },
+   {
+    "chu_to": "GIÁ PHẢI TĂNG GẦN 4%",
+    "loi": "Muốn hòa vốn, giá tiệm mua vào phải lên từ 130 đến 135 triệu, tức tăng gần bốn phần trăm. Khoản chênh năm triệu này bằng hơn sáu tháng tiền lãi nếu gửi tiết kiệm.",
+    "the": {
+     "loai": "lon",
+     "tieu": "CHÊNH 5 TRIỆU MỖI LƯỢNG",
+     "nguon": "Em tự tính: 5 ÷ 130; lãi 12 tháng 6,8% (Việt Báo 17/11/2026)",
+     "dong": [
+      [
+       "+3,85% MỚI HÒA",
+       100,
+       "vang"
+      ],
+      [
+       "BẰNG HƠN 6 THÁNG LÃI",
+       56,
+       "trang"
+      ]
+     ]
+    },
+    "loi_doc": "Muốn hòa vốn, giá tiệm mua vào phải lên từ một trăm ba mươi đến một trăm ba mươi lăm triệu, tức tăng gần bốn phần trăm. Khoản chênh năm triệu này bằng hơn sáu tháng tiền lãi nếu gửi tiết kiệm."
+   },
+   {
+    "chu_to": "VÌ SAO VÀNG RƠI?",
+    "loi": "Tuần 16 đến 22/11, vàng thế giới mất gần 9,5%. Đô la Mỹ mạnh gần nhất 19 tháng, và giới đầu tư gần như chắc chắn ngân hàng trung ương Mỹ sẽ tăng lãi ngày 8 và 9/12.",
+    "anh": [
+     "Ho Chi Minh City skyline night",
+     "Hanoi skyline night"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "VÀNG THẾ GIỚI TUẦN 16 ĐẾN 22/11",
+     "nguon": "24h 22/11/2026",
+     "dong": [
+      [
+       "MẤT GẦN 9,5%",
+       100,
+       "do"
+      ],
+      [
+       "FED HỌP 8 VÀ 9/12",
+       56,
+       "trang"
+      ]
+     ]
+    },
+    "loi_doc": "Tuần mười sáu đến ngày hai mươi hai tháng mười một, vàng thế giới mất gần chín phẩy năm phần trăm. Đô la Mỹ mạnh gần nhất mười chín tháng, và giới đầu tư gần như chắc chắn ngân hàng trung ương Mỹ sẽ tăng lãi ngày tám và ngày chín tháng mười hai."
+   },
+   {
+    "chu_to": "CHUYÊN GIA NGHIÊNG GIẢM",
+    "loi": "Trong 13 chuyên gia được hỏi giữa tháng 11, 62% bảo vàng còn giảm. Còn nhóm đông nhất trong người tự đầu tư lại tin sắp tăng. Không ai biết chắc đáy ở đâu.",
+    "the": {
+     "loai": "cot",
+     "tieu": "KHẢO SÁT KITCO GIỮA THÁNG 11 (%)",
+     "nguon": "Dân trí 15/11/2026",
+     "hang": [
+      [
+       "Chuyên gia bảo giảm",
+       62
+      ],
+      [
+       "Người tự đầu tư bảo tăng",
+       42
+      ]
+     ],
+     "noi": [
+      0
+     ],
+     "dv": "%"
+    },
+    "loi_doc": "Trong mười ba chuyên gia được hỏi giữa tháng mười một, sáu mươi hai phần trăm bảo vàng còn giảm. Còn nhóm đông nhất trong người tự đầu tư lại tin sắp tăng. Không ai biết chắc đáy ở đâu."
+   },
+   {
+    "chu_to": "2013: CHỜ HƠN 6 NĂM",
+    "loi": "Lần trước, tháng 4 năm 2013, người xếp hàng mua vàng ở 41,1 triệu. Ba năm sau giá còn khoảng 33,3 triệu, và hơn sáu năm sau mới quay lại mốc 42 triệu.",
+    "the": {
+     "loai": "cot",
+     "tieu": "VÀNG MIẾNG SJC (TRIỆU ĐỒNG/LƯỢNG)",
+     "nguon": "VnExpress 17/4/2013, VietNamNet 18/4/2025, Nhà Đầu tư 8/8/2019",
+     "hang": [
+      [
+       "Mua 4/2013",
+       41.1
+      ],
+      [
+       "Tháng 4/2016",
+       33.3
+      ],
+      [
+       "Tháng 8/2019",
+       42
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": ""
+    },
+    "loi_doc": "Lần trước, tháng tư năm hai nghìn không trăm mười ba, người xếp hàng mua vàng ở bốn mươi mốt phẩy một triệu. Ba năm sau giá còn khoảng ba mươi ba phẩy ba triệu, và hơn sáu năm sau mới quay lại mốc bốn mươi hai triệu."
+   },
+   {
+    "chu_to": "PHÉP THỬ 3 CÂU",
+    "loi": "Phép thử của em trước khi bắt đáy: tiền này ba năm không phải dùng, giá giảm thêm 20% vẫn không bán vội, và đã tính khoản chênh năm triệu mỗi lượng. Đây là mốc tự soi, không phải lời khuyên mua bán.",
+    "anh": [
+     "Ho Chi Minh City skyline night",
+     "Hanoi skyline night"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "TRƯỚC KHI BẮT ĐÁY VÀNG",
+     "nguon": "Mốc tự soi của Huy Nguyễn",
+     "dong": [
+      [
+       "3 NĂM / 20% / 5 TRIỆU",
+       84,
+       "vang"
+      ],
+      [
+       "ĐỦ 3 CÂU CÓ CHƯA?",
+       56,
+       "trang"
+      ]
+     ]
+    },
+    "loi_doc": "Phép thử của em trước khi bắt đáy: tiền này ba năm không phải dùng, giá giảm thêm hai mươi phần trăm vẫn không bán vội, và đã tính khoản chênh năm triệu mỗi lượng. Đây là mốc tự soi, không phải lời khuyên mua bán."
+   }
+  ]
+ }
+]

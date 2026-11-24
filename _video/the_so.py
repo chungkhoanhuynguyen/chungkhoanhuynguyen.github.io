@@ -31,6 +31,7 @@ def cot(sp, t):
     im, d = nen(sp, t); rows = sp["hang"]; n = len(rows)
     mxp = max([v for _, v in rows] + [0]); mxn = -min([v for _, v in rows] + [0]); mx = sp.get("max") or (mxp + mxn) * 1.15 or 1
     x0, x1 = 110, W - 110; bw = (x1 - x0) / n; top = 200; bot = H - 150; hl = set(sp.get("noi", []))
+    if any(d.textlength(l_, font=F("Bold", 32)) > bw * 0.94 for l_, _ in rows): bot -= 40   # nhãn 2 dòng: nâng trục để không chạm dòng nguồn
     # 13/11 NV1: giữ đúng số chữ số thập phân của số liệu gốc (RV1311GDP V1: 9,95 hiện "9,9%", 9,85 hiện "9,8%" – lệch lời đọc)
     def _nd(v):
         if sp.get("nd") is not None: return sp["nd"]
@@ -43,7 +44,14 @@ def cot(sp, t):
         if a > 0:
             y_a, y_b = (yb - max(h, 4), yb) if v >= 0 else (yb, yb - h)
             d.rounded_rectangle([cx - bw * 0.32, y_a, cx + bw * 0.32, max(y_b, y_a + 4)], 14, fill=c)
-        d.text((cx, (yb + 16) if v >= 0 else (yb - 56)), lab, font=F("Bold", 32), fill=MO, anchor="ma")
+        # (25/11 NV1, RV2411LS V1: 3 nhãn "Cao nhất 12/2023"... đè nhau) nhãn rộng hơn cột thì xuống 2 dòng + tự co chữ
+        fz = 32; dl = [lab]
+        if d.textlength(lab, font=F("Bold", fz)) > bw * 0.94 and " " in lab:
+            w_ = lab.split(" "); k = min(range(1, len(w_)), key=lambda j: max(d.textlength(" ".join(w_[:j]), font=F("Bold", fz)), d.textlength(" ".join(w_[j:]), font=F("Bold", fz))))
+            dl = [" ".join(w_[:k]), " ".join(w_[k:])]
+        while fz > 22 and max(d.textlength(s_, font=F("Bold", fz)) for s_ in dl) > bw * 0.94: fz -= 2
+        y_l = (yb + 16) if v >= 0 else (yb - 56 - (len(dl) - 1) * (fz + 4))
+        for j, s_ in enumerate(dl): d.text((cx, y_l + j * (fz + 4)), s_, font=F("Bold", fz), fill=MO, anchor="ma")
         if a > 0.05: d.text((cx, (yb - h - 62) if v >= 0 else (yb - h + 14)), so(v * a, sp.get("dv", ""), _nd(v)), font=F("Black", 46), fill=MAU["trang"], anchor="ma")
     return im
 
