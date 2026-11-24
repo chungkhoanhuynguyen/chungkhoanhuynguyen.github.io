@@ -35,6 +35,11 @@
    "dung_het": true
   }
  ],
- "dau_co_tien_mat": true,
- "ghi_chu": "dau_co_tien_mat=true khi V306TMAD khong cam ma nao (tai khoan dau co di ngang). Co lenh dau co moi thi dat false va cap nhat bang dau co bang tay. Lenh tich san moi: them 1 dong vao 'lenh' (ban_het / ban pt% tai khoan / mua dung_het hoac pt%) va 1 dong data-gv trong bang Danh muc dang cam."
+ "ghi_chu": "Lenh dau co V306TMAD: tu dong doc data/dc_lenh.json (luot loc hang ngay o kho rieng chep sang). Lenh tich san moi: them 1 dong vao 'lenh' (ban_het / ban pt% tai khoan / mua dung_het hoac pt%) va 1 o data-gv trong bang Danh muc dang cam.",
+ "dau_co_goc": {
+  "dong": 170,
+  "lai": 83,
+  "lenh_2026": 7,
+  "lai_2026": 2
+ }
 }

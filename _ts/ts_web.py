@@ -72,6 +72,7 @@ cagr = (allp[-1][1]) ** (1 / yrs) - 1
 pk = 0; dd = 0
 for p in allp: pk = max(pk, p[1]); dd = min(dd, p[1] / pk - 1)
 dd = min(dd, cfg['sut_goc'] / 100)
+nf = lambda x: f"{x:,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.')
 vf = lambda x, n=1: ('+' if x >= 0 else '−') + f"{abs(x)*100:,.{n}f}".replace(',', 'X').replace('.', ',').replace('X', '.') + '%'
 sec = t.find('id="tichsan"'); end = t.find('Danh mục đang cầm', sec)
 blk = t[sec:end]
@@ -101,25 +102,83 @@ for s in u:
     if not mm: continue
     p = px(s, last) / float(mm.group(4)) * 0.9985 - 1
     t = t[:mm.start()] + mm.group(1) + str(round(w_now[s] * 100)) + '%' + mm.group(3) + ('pos' if p >= 0 else 'neg') + mm.group(6) + vf(p) + t[mm.end():]
-# 4) đầu cơ V306TMVN: đang đứng ngoài giữ tiền (cfg "dau_co_tien_mat") -> tài khoản đi ngang, VN-Index cập nhật
-if cfg.get('dau_co_tien_mat'):
-    m1 = re.search(r'__CH\["c1"\]=\{d:(\[\[.*?\]\]),off:(\[.*?\]\]),', t)
-    p1 = [p for p in json.loads(m1.group(1)) if p[0] <= B]; f1 = p1[-1]
-    a1 = [[p[0], f1[1], round(f1[2] * vni[p[0]] / vni[B], 5)] for p in add]
-    off = json.loads(m1.group(2)); off[-1][1] = last
-    t = t[:m1.start(1)] + json.dumps(p1 + a1, separators=(',', ':')) + t[m1.end(1):m1.start(2)] + json.dumps(off) + t[m1.end(2):]
-    s1 = t.find('id="luotsong"'); e1 = t.find('id="tichsan"')
-    b1 = t[s1:e1]; z = (p1 + a1)[-1]
-    y1 = (z[0][:4] + '-01-01'); ye = [p for p in p1 + a1 if p[0] < y1][-1]
-    yrs1 = (D.date.fromisoformat(last) - D.date(2015, 12, 31)).days / 365.25
-    b1 = kpi(b1, 'VN-Index cùng kỳ', vf(z[2] - 1))
-    b1 = kpi(b1, 'Lãi kép bình quân mỗi năm', vf(z[1] ** (1 / yrs1) - 1).lstrip('+'))
-    b1, n1 = re.subn(r'(<td class="sym">2026</td><td class="n [a-z]+">[^<]*</td><td class="n )(pos|neg)(">)[^<]*(</td>)',
-                     lambda mm: mm.group(1) + ('pos' if z[2] / ye[2] >= 1 else 'neg') + mm.group(3) + vf(z[2] / ye[2] - 1) + mm.group(4), b1, count=1)
-    assert n1 == 1, 'khong thay dong 2026 dau co'
-    b1 = re.sub(r'Năm 2026 tính đến \d\d/\d\d/\d{4}', 'Năm 2026 tính đến ' + ds, b1)
-    t = t[:s1] + b1 + t[e1:]
-    t = re.sub(r'(cắt lỗ từ 01/01/2016 đến )\d\d/\d\d/\d{4}', lambda mm: mm.group(1) + ds, t, count=1)
+# 4) đầu cơ V306TMVN: tự tính từ sổ lệnh room (data/dc_lenh.json do lượt lọc hằng ngày ở kho riêng chép sang)
+import base64
+KE = 'hn-bc-208'
+def xr(b): return bytes(b[i] ^ ord(KE[i % len(KE)]) ^ ((i * 7) & 255) for i in range(len(b)))
+try: DC = json.load(open(os.path.join(R, 'data/dc_lenh.json'), encoding='utf-8'))
+except Exception: DC = {'mo': [], 'xong': []}
+lenh_dc = [dict(p, mo=True) for p in DC.get('mo', [])] + [dict(p, mo=False) for p in DC.get('xong', [])]
+lenh_dc = [p for p in lenh_dc if p.get('ngay_mua') and p['ngay_mua'] > B]
+def phien_sau(d):
+    c = [x for x in ngay if x > d]; return c[0] if c else None
+def gia_mo(s, d):
+    r = [x for x in rec.get(s, []) if x[0] == d]
+    return r[0][1] / 100 if r else None
+for p in lenh_dc:
+    if p['ma'] not in gia:
+        m = hist(p['ma']) if os.path.exists(os.path.join(R, 'data/c/%s.bin' % p['ma'])) else {}
+        for r in rec.get(p['ma'], []): m[r[0]] = r[4] / 100
+        gia[p['ma']] = m
+    if not p['mo']:
+        p['ngay_ban'] = phien_sau(p['ngay_ban_bao'])
+        if p['ngay_ban']:
+            p['gia_ban'] = gia_mo(p['ma'], p['ngay_ban']) or p.get('hien') or px(p['ma'], p['ngay_bao'])
+m1 = re.search(r'__CH\["c1"\]=\{d:(\[\[.*?\]\]),off:(\[.*?\]\]),', t)
+p1 = [p for p in json.loads(m1.group(1)) if p[0] <= B]; f1 = p1[-1]
+cash = 1.0; pos = {}; navd = {}
+for d in ngay:
+    for p in lenh_dc:
+        if p.get('ngay_ban') == d and id(p) in pos:
+            n = pos.pop(id(p)); cash += n * p['gia_ban']
+    v = cash + sum(n * px(p['ma'], d) for p in lenh_dc for k, n in pos.items() if k == id(p))
+    for p in lenh_dc:
+        if p['ngay_mua'] == d and id(p) not in pos:
+            q = min(cash, 0.25 * v); pos[id(p)] = q / p['gia']; cash -= q
+    navd[d] = (v, bool(pos))
+a1 = [[p[0], round(f1[1] * navd[p[0]][0], 5), round(f1[2] * vni[p[0]] / vni[B], 5)] for p in add]
+off = [[x[0], min(x[1], B)] for x in json.loads(m1.group(2)) if x[0] <= B]
+for d in ngay[1:]:
+    if not navd[d][1]:
+        if off and off[-1][1] >= [x for x in ngay if x < d][-1]: off[-1][1] = d
+        else: off.append([d, d])
+t = t[:m1.start(1)] + json.dumps(p1 + a1, separators=(',', ':')) + t[m1.end(1):m1.start(2)] + json.dumps(off) + t[m1.end(2):]
+s1 = t.find('id="luotsong"'); e1 = t.find('id="tichsan"')
+b1 = t[s1:e1]; z = (p1 + a1)[-1]
+ye = [p for p in p1 + a1 if p[0] < z[0][:4] + '-01-01'][-1]
+yrs1 = (D.date.fromisoformat(last) - D.date(2015, 12, 31)).days / 365.25
+dong = [p for p in lenh_dc if not p['mo'] and p.get('gia_ban')]
+lai = [p for p in dong if p['gia_ban'] > p['gia']]
+g = cfg['dau_co_goc']
+b1 = kpi(b1, 'Tài khoản V306TMVN từ 01/2016', vf(z[1] - 1))
+b1 = kpi(b1, 'VN-Index cùng kỳ', vf(z[2] - 1))
+b1 = kpi(b1, 'Lãi kép bình quân mỗi năm', vf(z[1] ** (1 / yrs1) - 1).lstrip('+'))
+b1, nk = re.subn(r'<b>\d+</b><span>Lệnh đã đóng, \d+ lệnh lãi</span>', '<b>%d</b><span>Lệnh đã đóng, %d lệnh lãi</span>' % (g['dong'] + len(dong), g['lai'] + len(lai)), b1)
+assert nk == 1, 'khong thay KPI lenh dong'
+n26 = sum(1 for p in lenh_dc if p['ngay_mua'][:4] == '2026'); l26 = sum(1 for p in lai if p['ngay_mua'][:4] == '2026')
+b1, n1 = re.subn(r'(<td class="sym">2026</td><td class="n )(pos|neg)(">)[^<]*(</td><td class="n )(pos|neg)(">)[^<]*(</td><td class="n">)\d+(</td><td class="n">)\d+(</td>)',
+                 lambda mm: mm.group(1) + ('pos' if z[1] >= ye[1] else 'neg') + mm.group(3) + vf(z[1] / ye[1] - 1) + mm.group(4) + ('pos' if z[2] >= ye[2] else 'neg') + mm.group(6) + vf(z[2] / ye[2] - 1) + mm.group(7) + str(g['lenh_2026'] + n26) + mm.group(8) + str(g['lai_2026'] + l26) + mm.group(9), b1, count=1)
+assert n1 == 1, 'khong thay dong 2026 dau co'
+b1 = re.sub(r'năm 2026 tính đến nay [+−][\d,]+%', 'năm 2026 tính đến nay ' + vf(z[1] / ye[1] - 1), b1)
+b1 = re.sub(r'Năm 2026 tính đến \d\d/\d\d/\d{4}', 'Năm 2026 tính đến ' + ds, b1)
+# sổ lệnh PRO (mã hoá): thêm lệnh đã đóng sau ngày gốc, đánh dấu data-auto để chạy lại không trùng
+mm = re.search(r'<tbody data-e="([^"]+)"', b1)
+if mm:
+    body = xr(base64.b64decode(mm.group(1))).decode()
+    body = re.sub(r'<tr data-auto="1".*?</tr>', '', body, flags=re.S)
+    dmy = lambda d: '/'.join(reversed(d.split('-')))
+    LY = {'cat': ('loss', 'Cắt lỗ'), 'bao_ve': (None, 'Chốt lời'), 'het_gio': (None, 'Hết thời gian nắm giữ')}
+    rows = ''
+    for p in sorted(dong, key=lambda p: p['ngay_mua'], reverse=True):
+        k = p['gia_ban'] / p['gia'] - 1; cl, tx = LY.get(p.get('ly_do'), (None, 'Hết thời gian nắm giữ'))
+        cl = cl or ('win' if k > 0 else 'loss'); np_ = len([x for x in ngay if p['ngay_mua'] <= x <= p['ngay_ban']]) - 1
+        rows += ('<tr data-auto="1" data-y="%s"><td class="sym">%s</td><td>%s</td><td class="n">%s</td><td>%s</td><td class="n">%s</td><td class="n">%d</td><td class="n %s">%s</td><td><span class="tag %s">%s</span></td></tr>'
+                 % (p['ngay_mua'][:4], p['ma'], dmy(p['ngay_mua']), nf(p['gia']), dmy(p['ngay_ban']), nf(p['gia_ban']), np_, 'pos' if k > 0 else 'neg', vf(k), cl, tx))
+    body = rows + body
+    b1 = b1[:mm.start(1)] + base64.b64encode(xr(body.encode())).decode() + b1[mm.end(1):]
+t = t[:s1] + b1 + t[e1:]
+t = re.sub(r'(cắt lỗ từ 01/01/2016 đến )\d\d/\d\d/\d{4}', lambda mm: mm.group(1) + ds, t, count=1)
 open(P, 'w', encoding='utf-8').write(t)
+print('dau co', z[0], vf(z[1]-1), 'lenh moi', len(lenh_dc), 'dong', len(dong))
 print('tich san', last, 'tk', vf(tot), 'cagr', vf(cagr), 'vni', vf(vt), 'dd', vf(dd), '2026', vf(y26), vf(v26),
       {s: round(w * 100, 1) for s, w in w_now.items()}, 'tien', round(tien / nav[last] * 100, 1))
