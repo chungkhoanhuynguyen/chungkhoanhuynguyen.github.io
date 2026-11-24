@@ -15,6 +15,7 @@ for p in pages:
     s = open(p, encoding="utf-8", errors="ignore").read(); rel = p.replace(ROOT, "")
     for h in re.findall(r'href="([^"]*)"', s):
         if "{" in h or "}" in h: loi.append(f"{rel}: link lỗi mẫu chưa điền {h[:60]}")
+        elif h.startswith('/vuongquoc'): pass  # game deploy riêng (Pages workflow), live 200 – QL1 24/11
         elif not exists(html.unescape(h), p): loi.append(f"{rel}: link nội bộ hỏng {h[:80]}")
     if "<meta name=\"robots\" content=\"noindex" in s or rel.startswith(("/bao-cao-2026", "/404")): continue
     t = re.search(r"<title>([^<]*)</title>", s); d = re.search(r'<meta name="description" content="([^"]*)"', s)
