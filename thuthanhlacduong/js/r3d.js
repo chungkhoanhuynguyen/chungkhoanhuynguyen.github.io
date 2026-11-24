@@ -1258,6 +1258,8 @@ var V = (function () {
     var cu = S.findUnit(G, e.id); if (cu) { cu._castT = (cu._castT || 0) + 1; if (cu.hero && mascots[cu.owner]) mascots[cu.owner].castId = (mascots[cu.owner].castId || 0) + 1; }
     skillName(e, G);
     var ec = e.c || '#ffd740', bk = e.big ? 1.6 : 1;
+    if (cu) { var cp = W(cu.owner, cu.x, cu.y); ringFX(cp, ec, 0.5, e.big ? 2.2 : 1.4, e.big ? 0.9 : 0.6, runeTex, 0.95); ringFX(cp, '#ffffff', 0.2, e.big ? 1.6 : 1.0, 0.4);
+      burst(cp.clone().setY(0.2), ec, e.big ? 18 : 8, 1.5, 0.16, 0.8, -3); if (e.big) pillar(cp, ec, 3.2, 0.6, 0.45); }
     if (e.big) { pillar(p, ec, 5, 0.7, 0.32); ringFX(p, ec, 0.3, (e.r || 2) * 1.6, 0.9, runeTex, 0.9); flashLight(p, ec, 0.3); }
     switch (e.k) {
       case 'summon':
@@ -1284,21 +1286,26 @@ var V = (function () {
           m.position.copy(p).setY(0.35 + i * 0.2); m.rotation.x = Math.PI / 2;
           addFX({ obj: m, t: 0, life: 0.55, up: function (f, dt, k) { f.obj.rotation.z += dt * 18; var s = e.r * (0.5 + k * 0.6); f.obj.scale.set(s, s, 1); f.obj.material.opacity = 1 - k; }, dispose: true });
         })(i);
-        burst(p.clone().setY(0.3), ec, 18 * bk, 4 * bk, 0.2, 0.5, 2);
+        burst(p.clone().setY(0.3), ec, 18 * bk, 4 * bk, 0.2, 0.5, 2); burst(p.clone().setY(0.1), '#a1887f', 10 * bk, 3, 0.25, 0.6, 4);
+        ringFX(p, ec, 0.3, e.r * 1.3, 0.55, runeTex, 0.8);
+        for (var cb = 0; cb < 3; cb++) (function (cb) { var cr = new T.Mesh(G2('cresc', function () { return new T.TorusGeometry(1, 0.12, 4, 24, Math.PI * 0.8); }), new T.MeshBasicMaterial({ color: cb === 1 ? '#ffffff' : ec, transparent: true, blending: T.AdditiveBlending, depthWrite: false, side: T.DoubleSide }));
+          cr.position.copy(p).setY(0.9 + cb * 0.25); cr.rotation.x = Math.PI / 2 + (cb - 1) * 0.35; addFX({ obj: cr, t: 0, life: 0.45, up: function (f, dt, k) { f.obj.rotation.z -= dt * (22 + cb * 6); var sc = e.r * (0.7 + k * 0.5); f.obj.scale.set(sc, sc, sc); f.obj.material.opacity = 1 - k; }, dispose: true }); })(cb);
         if (e.sw) for (var wk = 0; wk < 8; wk++) { var swk = swordMesh(ec, 0.9); var wa = wk / 8 * 6.28; swk.position.copy(p).setY(0.8); swk.rotation.z = Math.PI / 2; (function (swk, wa) { addFX({ obj: swk, t: 0, life: 0.6, up: function (f, dt, k) { var rr = e.r * k; f.obj.position.set(p.x + Math.cos(wa + k * 3) * rr, 0.8, p.z + Math.sin(wa + k * 3) * rr); f.obj.rotation.y = -(wa + k * 3); }, disposeGroup: true }); })(swk, wa); }
         break;
       case 'shock':
         ringFX(p, e.toad ? '#aeea00' : ec, 0.2, e.r * 1.2, 0.6); ringFX(p, '#fff59d', 0.1, e.r * 0.8, 0.45);
         pillar(p, ec, 3.5 * bk, 0.5 * bk, 0.7);
+        ringFX(p.clone().setY(0.15), ec, 0.3, e.r * 1.7, 0.75); ringFX(p, ec, e.r * 1.1, e.r * 1.1, 0.8, runeTex, 0.9);
+        burst(p.clone().setY(0.2), '#8d6e63', 16 * bk, 5, 0.3, 0.9, 12); burst(p.clone().setY(0.4), '#fff8e1', 12 * bk, 6, 0.18, 0.5, 6);
         var palm = new T.Mesh(G2('plane1', function () { return new T.PlaneGeometry(1, 1); }), new T.MeshBasicMaterial({ map: lotusTex, color: e.toad ? '#aeea00' : ec, transparent: true, blending: T.AdditiveBlending, depthWrite: false }));
         palm.rotation.x = -Math.PI / 2; palm.position.copy(p).setY(0.08);
         addFX({ obj: palm, t: 0, life: 0.7, up: function (f, dt, k) { var s = e.r * 2 * (0.5 + k * 0.6); f.obj.scale.set(s, s, 1); f.obj.material.opacity = 1 - k; }, dispose: true });
         burst(p.clone().setY(0.2), '#ffe082', 20, 5, 0.22, 0.5, 6); shakeCam(0.2);
         break;
       case 'fan': burst(p.clone().setY(0.7), '#ffe082', 10, 2, 0.2, 0.3, 0); break;
-      case 'cloud': break;
+      case 'cloud': ringFX(p, e.fire ? '#ff6d00' : '#76ff03', 0.4, (e.r || 2) * 1.3, 0.8, runeTex, 0.9); burst(p.clone().setY(0.3), e.fire ? '#ffab40' : '#b2ff59', 20, 2, 0.25, 1.2, -2); burst(p.clone().setY(0.2), e.fire ? '#ff3d00' : '#64dd17', 10, 4, 0.3, 0.6, 3); break;
       case 'massheal':
-        var lot = new T.Mesh(G2('plane1', function () { return new T.PlaneGeometry(1, 1); }), new T.MeshBasicMaterial({ map: lotusTex, color: '#ff80ab', transparent: true, blending: T.AdditiveBlending, depthWrite: false }));
+        var lot = new T.Mesh(G2('plane1', function () { return new T.PlaneGeometry(1, 1); }), new T.MeshBasicMaterial({ map: lotusTex, color: ec, transparent: true, blending: T.AdditiveBlending, depthWrite: false }));
         lot.rotation.x = -Math.PI / 2; lot.position.copy(p).setY(0.07);
         addFX({ obj: lot, t: 0, life: 1.4, up: function (f, dt, k) { var s = e.r * 2 * Math.min(1, k * 4); f.obj.scale.set(s, s, 1); f.obj.rotation.z += dt * 0.8; f.obj.material.opacity = k < 0.7 ? 0.95 : (1 - k) / 0.3 * 0.95; }, dispose: true });
         for (var j = 0; j < 24; j++) { var a = Math.random() * 6.28, r = Math.random() * e.r; var sp = glowSprite(j % 2 ? '#ff80ab' : '#b9f6ca', 0.22, 1); sp.position.set(p.x + Math.cos(a) * r, 0.1, p.z + Math.sin(a) * r); addFX({ obj: sp, t: -Math.random() * 0.4, life: 1.2, up: function (f, dt, k) { f.obj.position.y += dt * 1.5; f.obj.material.opacity = 1 - k; } }); }
@@ -1317,8 +1324,8 @@ var V = (function () {
       case 'thunder':
         ringFX(p, ec, e.r, e.r, 0.5, runeTex, 0.9);
         break;
-      case 'dragon': shakeCam(e.n > 1 ? 0.5 : 0.15); if (e.n > 1) { flashLight(p, ec, 0.4); burst(p.clone().setY(0.6), ec, 30, 6, 0.3, 0.7, 2); } break;
-      case 'fan': if (e.big) { for (var fi = 0; fi < 3; fi++) ringFX(p.clone().setY(1), ec, 0.1, 1.2 + fi * 0.5, 0.4 + fi * 0.1); } break;
+      case 'dragon': if (cu) { var dp = W(cu.owner, cu.x, cu.y, 0.8); ringFX(dp, ec, 0.2, 1.6, 0.5); burst(dp, ec, 16, 6, 0.22, 0.4, 0); } shakeCam(e.n > 1 ? 0.3 : 0.1); if (e.n > 1) { flashLight(p, ec, 0.4); burst(p.clone().setY(0.6), ec, 30, 6, 0.3, 0.7, 2); } break;
+      case 'fan': if (cu) { var mz = W(cu.owner, cu.x, cu.y, 1.1); burst(mz, ec, 14, 5, 0.18, 0.35, 0); ringFX(mz, ec, 0.1, 0.9, 0.3); } if (e.big) { for (var fi = 0; fi < 3; fi++) ringFX(p.clone().setY(1), ec, 0.1, 1.2 + fi * 0.5, 0.4 + fi * 0.1); } break;
     }
   }
   function G2(k, f) { return G(k, f); }

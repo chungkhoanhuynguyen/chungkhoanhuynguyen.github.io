@@ -59,6 +59,11 @@ var Sim = (function () {
   // S: { k, name, ch, col, col2, pw (độ mạnh), motto, look:{skin,hair,hat,trim,female?,alt:[hat nữ]}, wp (vũ khí sở trường), fem:[slot nữ], u:[[tên, nguyên mẫu, (tuyệt chiêu), (ghi đè)] x8], ult:{...tuyệt kỹ chưởng môn} }
   function sect(S) {
     var keys = [];
+    // chỉ vài phái có thuật triệu hồi (Ngũ Độc, Bạch Đà Sơn, Toàn Chân); phái khác đổi sang lối đánh của phái
+    if (SUMMON_OK.indexOf(S.k) < 0) S.u = S.u.map(function (a) { if (a[1] !== 'summonR' && a[1] !== 'summonM') return a;
+      var na = a[1] === 'summonR' ? (S.wp === 'dart' || S.wp === 'fan' ? 'duongmon' : S.wp === 'talisman' || S.wp === 'staff' ? 'conlon' : 'vodang') : 'caibang';
+      var o = a[3] ? Object.assign({}, a[3]) : null; if (o) { delete o.proj; delete o.dt; delete o.dot; }
+      return [a[0], na, /Triệu|Trận|Hiệu/.test(a[2] || '') ? null : a[2], o]; });
     S.u.forEach(function (a, i) {
       var k = S.k + '_' + i, b = ARCH[a[1]], cost = COST[i], m = (cost / b.cost) * eff(cost) / eff(b.cost) * S.pw, u = {};
       for (var f in b) u[f] = b[f];
@@ -91,6 +96,7 @@ var Sim = (function () {
     SECTS[S.k] = { name: S.name, motto: S.motto, col: S.col, ch: S.ch, pw: S.pw, units: keys, ult: S.ult && S.ult.name }; SECT_ORDER.push(S.k);
   }
   // Trang phục theo phái (tham khảo hình tượng kiếm hiệp quen thuộc)
+  var SUMMON_OK = ['ngudoc', 'bachda', 'toanchan'];
   var COSTUME = {
     thieulam: { hat: 'bald', robes: ['#e3a046', '#d68a2e', '#e9b05a'], robe2: '#7a3a10', trim: '#ffd54f', sash: '#b71c1c', kasaya: '#b71c1c', beads: '#4e342e', beadsAll: true, w: 'staff', wp: { thienvuong: 'stick', summonR: 'ringstaff', ngamy: 'ringstaff' }, wp7: 'ringstaff', cape: false, trim7: '#ffd54f' },
     thienvuong: { hat: 'ironhelm', hat7: 'helmet', robes: ['#b8860b', '#8d6e1a', '#c9a23a'], robe2: '#4a3410', trim: '#ffe08a', armor: true, w: 'hammer', wp: { thienvuong: 'axe', duongmon: 'bow', caibang: 'spear', thieulam: 'shield' } },
@@ -156,7 +162,7 @@ var Sim = (function () {
         ['Huyết Ảnh Sát Thủ', 'thienvuong', 'Huyết Ảnh Trảm', { weapon: 'saber' }], ['Hoả Tế Ti', 'summonR', 'Triệu Giáo Đồ'], ['Thiên Hoả Trưởng Lão', 'ngudoc', 'Liệt Diễm Phần Thiên'], ['Thiên Nhẫn Giáo Chủ', 'ngudoc']],
     ult: { name: 'Thiên Hoả Liệu Nguyên', type: 'cloud', r: 3.2, dps: 70, dur: 5, cd: 8, fire: 1, big: 1, title: 'Hoả Thần Thiên Nhẫn' } });
   sect({ k: 'vodang', name: 'Võ Đang', ch: '武', col: '#4a90d9', col2: '#1b3a66', pw: 1.03, wp: 'sword', fem: [2], motto: 'Đạo gia chính tông · kiếm khí gió trắng xanh, đánh lan',
-    look: LK('#efc8a2', '#161616', 'topknot', '#ffffff'), fxc: '#b3e5fc',
+    look: LK('#efc8a2', '#161616', 'topknot', '#ffffff'), fxc: '#4fc3f7',
     u: [['Đạo Đồng', 'thienvuong', 'Thái Cực Quyền'], ['Chân Vũ Thủ Vệ', 'thieulam', 'Chân Vũ Trấn Thế'], ['Kiếm Đồng', 'vodang', 'Kiếm Khí Tung Hoành'], ['Phù Lục Đạo Sĩ', 'conlon', 'Ngũ Lôi Phù'],
         ['Thất Tiệt Trận Chủ', 'summonR', 'Chân Vũ Thất Tiệt Trận', { proj: 'sword', weapon: 'sword' }], ['Võ Đang Kiếm Khách', 'vodang', 'Thái Cực Kiếm Ý'], ['Thái Cực Đạo Trưởng', 'caibang', 'Thái Cực Âm Dương', { weapon: 'sword' }], ['Võ Đang Chưởng Môn', 'vodang']],
     ult: { name: 'Vạn Kiếm Quy Tông', type: 'swordrain', r: 3.2, n: 22, mult: 1.05, cd: 7, wind: 1, big: 1, title: 'Đạo Tổ Tam Phong' } });
@@ -171,7 +177,7 @@ var Sim = (function () {
         ['Mê Hồn Sư', 'summonR', 'Triệu Tinh Đồ'], ['Tinh La Kiếm Khách', 'vodang', 'Tinh La Kiếm Trận'], ['Tinh Túc Thánh Nữ', 'conlon', 'Tinh Thần Lôi'], ['Tinh Túc Lão Tiên', 'vodang']],
     ult: { name: 'Tinh Túc Kiếm Vũ', type: 'swordrain', r: 3.4, n: 26, mult: 1.0, cd: 7, big: 1, title: 'Tinh Túc Lão Quái' } });
   sect({ k: 'hoason', name: 'Hoa Sơn', ch: '華', col: '#90a4ae', col2: '#263238', pw: 1.0, wp: 'sword', fem: [3], motto: 'Ngũ Nhạc kiếm phái · kiếm pháp cận chiến tinh xảo',
-    look: LK('#efc8a2', '#141414', 'topknot', '#eceff1'), fxc: '#e1f5fe',
+    look: LK('#efc8a2', '#141414', 'topknot', '#eceff1'), fxc: '#80d8ff',
     u: [['Hoa Sơn Kiếm Đồ', 'thienvuong', 'Hữu Phượng Lai Nghi'], ['Kiếm Tông Thủ Vệ', 'thieulam', 'Kiếm Trận Thủ'], ['Khí Tông Đệ Tử', 'vodang', 'Tử Hà Kiếm Khí'], ['Ngọc Nữ Kiếm', 'duongmon', 'Ngọc Nữ Tố Tâm', { proj: 'sword', dt: 'magic' }],
         ['Hoa Sơn Sư Huynh', 'summonM', 'Hiệu Triệu Sư Đệ'], ['Cuồng Phong Kiếm', 'thienvuong', 'Cuồng Phong Khoái Kiếm'], ['Tử Hà Kiếm Khách', 'caibang', 'Tử Hà Thần Công', { weapon: 'sword' }], ['Phong Thanh Dương', 'thienvuong']],
     ult: { name: 'Độc Cô Cửu Kiếm', type: 'whirl', r: 3.2, mult: 4.4, cd: 5, sword: 1, big: 1, title: 'Kiếm Thánh Hoa Sơn' } });
@@ -181,18 +187,18 @@ var Sim = (function () {
         ['Tán Nhân', 'summonM', 'Hiệu Triệu Giáo Đồ'], ['Ba Tư Thánh Nữ', 'ngudoc', 'Thánh Hoả Liệu Nguyên', { proj: 'poison' }], ['Quang Minh Hữu Sứ', 'caibang', 'Càn Khôn Đại Na Di', { weapon: 'saber' }], ['Minh Giáo Giáo Chủ', 'conlon']],
     ult: { name: 'Thánh Hoả Lệnh', type: 'thunder', r: 2.2, n: 6, mult: 3.6, cd: 7, fire: 1, big: 1, title: 'Quang Minh Giáo Chủ' } });
   sect({ k: 'tieudao', name: 'Tiêu Dao', ch: '逍', col: '#66bb6a', col2: '#1b3d1e', pw: 1.03, wp: 'fan', fem: [1, 4, 6], motto: 'Ẩn môn thần bí · chưởng khí lan, khống chế, triệu hồi',
-    look: LK('#f0cba8', '#ececec', 'topknot', '#fff59d'), fxc: '#ccff90',
+    look: LK('#f0cba8', '#ececec', 'topknot', '#fff59d'), fxc: '#b2ff59',
     u: [['Tiêu Dao Đồng Tử', 'thienvuong', 'Thiên Sơn Chiết Mai Thủ'], ['Lăng Ba Thị Nữ', 'thieulam', 'Lăng Ba Vi Bộ'], ['Bắc Minh Đệ Tử', 'conlon', 'Bắc Minh Thần Công'], ['Cầm Kỳ Thư Sĩ', 'summonR', 'Triệu Đồng Tử'],
         ['Thiên Sơn Đồng Lão', 'ngudoc', 'Sinh Tử Phù', { proj: 'petal' }], ['Họa Tiên', 'duongmon', 'Thần Bút Điểm Huyệt', { proj: 'petal', dt: 'magic' }], ['Lý Thu Thuỷ', 'conlon', 'Bạch Hồng Chưởng'], ['Tiêu Dao Tử', 'conlon']],
     ult: { name: 'Thiên Sơn Lục Dương Chưởng', type: 'thunder', r: 2.4, n: 6, mult: 2.6, stun: 1.4, cd: 7, jade: 1, big: 1, title: 'Tiêu Dao Thần Tiên' } });
   sect({ k: 'doanthi', name: 'Đoàn Thị', ch: '段', col: '#fbc02d', col2: '#5d4037', pw: 1.01, wp: 'sword', fem: [4], motto: 'Hoàng tộc Đại Lý · chỉ lực kiếm khí bắn xuyên',
-    look: LK('#f0c8a0', '#141010', 'topknot', '#ffffff'), fxc: '#fff59d',
+    look: LK('#f0c8a0', '#141010', 'topknot', '#ffffff'), fxc: '#ffd740',
     u: [['Đại Lý Thị Vệ', 'thienvuong', 'Ngự Tiền Đao', { weapon: 'saber' }], ['Thiên Long Tự Tăng', 'thieulam', 'Thiên Long Trấn', { weapon: 'staff' }], ['Nhất Dương Chỉ Đệ Tử', 'duongmon', 'Nhất Dương Chỉ', { proj: 'sword', dt: 'magic' }], ['Hoàng Gia Ngự Y', 'ngamy', 'Hoàng Gia Linh Dược'],
         ['Quận Chúa Đại Lý', 'summonR', 'Triệu Thị Vệ'], ['Thiên Long Kiếm Khách', 'vodang', 'Thiên Long Kiếm'], ['Nhất Đăng Đại Sư', 'conlon', 'Tiên Thiên Công'], ['Đoàn Dự', 'duongmon', null, { proj: 'sword', dt: 'magic' }]],
     ult: { name: 'Lục Mạch Thần Kiếm', type: 'fan', n: 6, sp: 0.16, mult: 4.0, cd: 4, sword: 1, big: 1, title: 'Thiên Long Hoàng Đế' } });
   // ---- Các phái nhỏ (kiếm hiệp Kim Dung) ----
   sect({ k: 'comoo', name: 'Cổ Mộ', ch: '墓', col: '#eceff1', col2: '#37474f', pw: 0.97, wp: 'sword', fem: [0, 2, 4, 5, 7], motto: 'Mộ cổ Chung Nam · Ngọc Nữ Tâm Kinh, ong ngọc độc châm',
-    look: LK('#f0d0b8', '#0a0a0a', 'longhair', '#b0bec5'), fxc: '#fff9c4',
+    look: LK('#f0d0b8', '#0a0a0a', 'longhair', '#b0bec5'), fxc: '#ffe57f',
     u: [['Cổ Mộ Thị Nữ', 'thienvuong', 'Thiên La Địa Võng Thủ'], ['Thủ Mộ Nhân', 'thieulam', 'Huyền Thiết Trấn', { weapon: 'sword' }], ['Ngọc Phong Nữ', 'summonR', 'Triệu Thị Nữ', { proj: 'petal' }], ['Huyền Thiết Kiếm Khách', 'caibang', 'Huyền Thiết Trọng Kiếm', { weapon: 'sword' }],
         ['Ngọc Nữ Kiếm Tiên', 'vodang', 'Ngọc Nữ Tố Tâm Kiếm'], ['Băng Phách Ngân Châm', 'duongmon', 'Băng Phách Ngân Châm', { proj: 'dart' }], ['Thần Điêu Hiệp', 'thienvuong', 'Ảm Nhiên Tiêu Hồn Chưởng'], ['Tiểu Long Nữ', 'duongmon', null, { proj: 'petal', dt: 'magic' }]],
     ult: { name: 'Ngọc Phong Vạn Châm', type: 'fan', n: 24, sp: 0.07, mult: 1.3, cd: 5, bee: 1, big: 1, title: 'Cổ Mộ Tiên Tử' } });
@@ -329,12 +335,19 @@ var Sim = (function () {
   }
   function mkPlayer() { return { gold: 100, income: 14, hp: 30, value: 0, sendQ: [], ready: false, sentThisWave: 0, kills: 0, leaked: 0 }; }
 
-  var MAX_TIER = 4, TIER_MUL = [1, 2.15, 3.5, 5.3, 7.8], TIER_COST = [1.2, 1.7, 2.4, 3.3];
+  var MAX_TIER = 4, TIER_MUL = [1, 2.3, 3.9, 6.1, 9.2], TIER_COST = [1.2, 1.7, 2.4, 3.3];
+  // Mua trùng tướng đắt dần (+20%/con) — khuyến khích đội hình đa dạng & nâng cấp thay vì rải 1 loại
+  function placeCost(G, p, k) { var n = 0; for (var i = 0; i < G.units.length; i++) { var x = G.units[i]; if (x.owner === p && x.type === k && !x.summon) n++; } return Math.round(UNITS[k].cost * (1 + 0.2 * n)); }
+  // Đồng môn hợp sức: càng nhiều loại tướng khác nhau càng mạnh
+  var SYN = [[8, 0.3], [6, 0.2], [4, 0.1]];
+  function synOf(G, p) { var seen = {}, n = 0; for (var i = 0; i < G.units.length; i++) { var x = G.units[i]; if (x.owner === p && !x.summon && !seen[x.type]) { seen[x.type] = 1; n++; } } for (var j = 0; j < SYN.length; j++) if (n >= SYN[j][0]) return { n: n, b: SYN[j][1] }; return { n: n, b: 0 }; }
+  function applySyn(G, p) { var sb = synOf(G, p).b; for (var i = 0; i < G.units.length; i++) if (G.units[i].owner === p) G.units[i].syn = sb; }
   function upCost(u) { return u.tier >= MAX_TIER ? 0 : Math.round(UNITS[u.type].cost * TIER_COST[u.tier]); }
   function popCap(G) { return Math.min(22, 9 + G.wave); }
   function popOf(G, p) { var n = 0; for (var i = 0; i < G.units.length; i++) if (G.units[i].owner === p && !G.units[i].summon && !G.units[i].hero) n++; return n; }
   function stat(u, k) { var d = UNITS[u.type], v = d[k];
     if (u.smul && (k === 'hp' || k === 'dmg')) v = v * u.smul;
+    if (u.syn && (k === 'hp' || k === 'dmg' || k === 'heal' || k === 'amt' || k === 'dps')) v = v * (1 + u.syn);
     if (u.hero && u.lv && (k === 'hp' || k === 'dmg' || k === 'heal' || k === 'amt')) v = v * (1 + 0.06 * u.lv);
     if (k === 'amt' && v === undefined) v = d.skill.amt;
     if (u.tier > 0) { if (k === 'hp' || k === 'dmg' || k === 'heal' || k === 'dot' || k === 'amt') v = v * TIER_MUL[u.tier]; else if (k === 'range' && !d.melee) v = v + 0.15 * u.tier; else if (k === 'chain') v = d.chain + (u.tier >= 3 ? 1 : 0); } if (k === 'hp' && u.hpMul) v = Math.round(v * u.hpMul); return v; }
@@ -353,11 +366,12 @@ var Sim = (function () {
       if (d.sect !== G.sects[c.p]) return false;
       if (popOf(G, c.p) >= popCap(G)) return false;
       if (c.cx < 0 || c.cx >= LANE_W || c.cy < BUILD_Y0 || c.cy > BUILD_Y1) return false;
-      if (!cellFree(G, c.p, c.cx, c.cy) || P.gold < d.cost) return false;
-      P.gold -= d.cost; P.value += d.cost;
+      var pc = placeCost(G, c.p, c.u);
+      if (!cellFree(G, c.p, c.cx, c.cy) || P.gold < pc) return false;
+      P.gold -= pc; P.value += pc;
       var u = { id: G.nextId++, owner: c.p, type: c.u, tier: 0, cx: c.cx, cy: c.cy, x: c.cx + 0.5, y: c.cy + 0.5,
-        hp: Math.round(d.hp * (P.hpMul || 1)), hpMul: P.hpMul || 1, active: G.phase === 'build', dead: false, cd: 0, scd: d.skill.cd * 0.5, tgt: 0, retarget: 0, fresh: G.phase === 'build', spent: d.cost, face: 1, atkAnim: 0 };
-      G.units.push(u);
+        hp: Math.round(d.hp * (P.hpMul || 1)), hpMul: P.hpMul || 1, active: G.phase === 'build', dead: false, cd: 0, scd: d.skill.cd * 0.5, tgt: 0, retarget: 0, fresh: G.phase === 'build', spent: pc, face: 1, atkAnim: 0 };
+      G.units.push(u); applySyn(G, c.p);
       G.ev.push({ e: 'place', p: c.p, id: u.id });
       return true;
     }
@@ -374,7 +388,7 @@ var Sim = (function () {
       if (G.phase !== 'build' && u3.active) return false;
       var refund = u3.fresh ? u3.spent : Math.floor(u3.spent * 0.6);
       P.gold += refund; P.value -= u3.spent;
-      G.units.splice(G.units.indexOf(u3), 1);
+      G.units.splice(G.units.indexOf(u3), 1); applySyn(G, c.p);
       G.ev.push({ e: 'sell', p: c.p, x: u3.x, y: u3.y, g: refund });
       return true;
     }
@@ -850,7 +864,7 @@ var Sim = (function () {
       }
       if (full) break;
       var tot = front + back + sup + 1, want = front / tot < 0.42 ? 'f' : (sup / tot < 0.14 && G.wave >= 3) ? 's' : 'b';
-      var opts = SU.filter(function (k) { return UNITS[k].cost <= avail; });
+      var opts = SU.filter(function (k) { return placeCost(G, p, k) <= avail; });
       if (!opts.length) break;
       // bot giỏi: để dành mua tướng đắt khi đã có đội hình cơ bản
       if (mine.length >= 5 && diff !== 'easy' && G.wave >= 4) { var best = opts[opts.length - 1]; if (UNITS[best].cost < UNITS[SU[Math.min(7, 3 + (G.wave >> 2))]].cost) break; }
@@ -879,7 +893,7 @@ var Sim = (function () {
   }
   var api = { SAVE: SAVE, PATH: PATH, DT: DT, LANE_W: LANE_W, BUILD_Y0: BUILD_Y0, BUILD_Y1: BUILD_Y1, LEAK_Y: LEAK_Y, GATE_Y: GATE_Y, MAX_WAVE: MAX_WAVE,
     UNITS: UNITS, UNIT_ORDER: UNIT_ORDER, SECTS: SECTS, SECT_ORDER: SECT_ORDER, popCap: popCap, popOf: popOf, CREEPS: CREEPS, SENDS: SENDS, SEND_ORDER: SEND_ORDER, WAVE_PATTERNS: WAVE_PATTERNS,
-    revive: revive, upCost: upCost, MAX_TIER: MAX_TIER, checksum: checksum, dsin: dsin, datan2: datan2, create: create, apply: apply, step: step, aiThink: aiThink, stat: stat, findUnit: findUnit, findCreep: findCreep, hpScale: hpScale };
+    revive: revive, placeCost: placeCost, synOf: synOf, upCost: upCost, MAX_TIER: MAX_TIER, checksum: checksum, dsin: dsin, datan2: datan2, create: create, apply: apply, step: step, aiThink: aiThink, stat: stat, findUnit: findUnit, findCreep: findCreep, hpScale: hpScale };
   if (typeof module !== 'undefined') module.exports = api;
   return api;
 })();

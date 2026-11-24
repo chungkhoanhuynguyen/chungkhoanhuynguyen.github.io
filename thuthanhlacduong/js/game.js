@@ -35,7 +35,7 @@
 
   // ---------- thẻ môn phái ----------
   const cardsEl = $('cards');
-  function buildCards() { const sk = G && G.sects ? G.sects[ME] : mySect; cardsEl.innerHTML = S.SECTS[sk].units.map((k) => (iconOf(k), k)).map((k) => `<button class="card" data-u="${k}" aria-label="${S.UNITS[k].name}" style="--c:${S.UNITS[k].col}"><img src="${ICON[k]}" alt=""><span class="nm">${S.UNITS[k].name}</span><span class="cost"><span class="coin"></span>${S.UNITS[k].cost}</span></button>`).join(''); }
+  function buildCards() { const sk = G && G.sects ? G.sects[ME] : mySect; cardsEl.innerHTML = S.SECTS[sk].units.map((k) => (iconOf(k), k)).map((k) => `<button class="card" data-u="${k}" aria-label="${S.UNITS[k].name}" style="--c:${S.UNITS[k].col}"><img src="${ICON[k]}" alt=""><span class="nm">${S.UNITS[k].name}</span><span class="cost"><span class="coin"></span><b class="cv">${G ? S.placeCost(G, ME, k) : S.UNITS[k].cost}</b></span></button>`).join(''); }
   cardsEl.addEventListener('click', (e) => {
     const b = e.target.closest('.card'); if (!b) return; Sfx.init(); Sfx.play('click');
     const k = b.dataset.u; selCard = selCard === k ? null : k; selUnitId = null; hidePanels(); showUnitInfo(k); refreshCards();
@@ -43,7 +43,7 @@
   });
   function refreshCards() {
     const P = G ? G.players[ME] : null;
-    cardsEl.querySelectorAll('.card').forEach((c) => { c.classList.toggle('sel', c.dataset.u === selCard); c.classList.toggle('poor', !!P && P.gold < S.UNITS[c.dataset.u].cost); });
+    cardsEl.querySelectorAll('.card').forEach((c) => { const pc = G ? S.placeCost(G, ME, c.dataset.u) : S.UNITS[c.dataset.u].cost; c.classList.toggle('sel', c.dataset.u === selCard); c.classList.toggle('poor', !!P && P.gold < pc); const ce = c.querySelector('.cv'); if (ce && ce.textContent !== String(pc)) ce.textContent = pc; });
   }
 
   // ---------- bảng thông tin ----------
@@ -59,7 +59,7 @@
   }
   function showUnitInfo(k) {
     const d = S.UNITS[k], p = $('pUnit');
-    p.innerHTML = `<button class="x" data-x>×</button><h3>${d.name}</h3><div class="sub">${d.role} · ${d.cost} vàng · Chạm ô trên sân của bạn để đặt</div>${statBlock(d)}${skillDesc(d)}`;
+    p.innerHTML = `<button class="x" data-x>×</button><h3>${d.name}</h3><div class="sub">${d.role} · ${G ? S.placeCost(G, ME, k) : d.cost} vàng${G && S.placeCost(G, ME, k) > d.cost ? ' (mua trùng +20%/con)' : ''} · Chạm ô trên sân của bạn để đặt</div>${statBlock(d)}${skillDesc(d)}`;
     p.hidden = false;
   }
   function showUnit(u) {
@@ -141,7 +141,7 @@
       if (h.cy < S.BUILD_Y0 || h.cy > S.BUILD_Y1 || h.cx < 0 || h.cx > S.LANE_W - 1) { toast('Chỉ đặt được trong khu xây (ô sáng)'); Sfx.play('deny'); return; }
       const ex = G.units.find((u) => u.owner === ME && u.cx === h.cx && u.cy === h.cy);
       if (ex) { selectUnit(ex); return; }
-      if (G.players[ME].gold < S.UNITS[selCard].cost) { toast('Không đủ vàng'); Sfx.play('deny'); return; }
+      if (G.players[ME].gold < S.placeCost(G, ME, selCard)) { toast('Không đủ vàng'); Sfx.play('deny'); return; }
       if (S.popOf(G, ME) >= S.popCap(G)) { toast('Đủ quân số ' + S.popCap(G) + ' — hãy nâng cấp tướng (mỗi đợt +1 quân số)'); Sfx.play('deny'); return; }
       if (doCmd({ t: 'place', u: selCard, cx: h.cx, cy: h.cy })) { flushEvents(); if (G.phase === 'fight') toast('Đệ tử mới sẽ vào trận từ đợt sau'); }
       return;
@@ -335,7 +335,7 @@
     const P = G.players[ME], O = G.players[OP], maxA = G.maxHp[ME], maxB = G.maxHp[OP];
     $('wave').textContent = 'Đợt ' + G.wave + '/' + (G.maxWave || S.MAX_WAVE);
     $('phase').innerHTML = G.phase === 'build' ? 'Xây dựng <b>' + Math.max(0, Math.ceil(G.phaseT)) + 's</b>' : G.phase === 'fight' ? 'Giao chiến' : 'Kết thúc';
-    goldShown += (P.gold - goldShown) * 0.25; if (Math.abs(P.gold - goldShown) < 0.6) goldShown = P.gold; $('gold').textContent = Math.round(goldShown); { let tr = 0; S.SAVE.forEach((m, i) => { if (P.gold >= m[0]) tr = i + 1; }); const nx = S.SAVE[tr]; $('inc').textContent = '+' + P.income + '/đợt · Lãi ' + tr + '/5' + (tr ? ' +' + Math.round(S.SAVE[tr - 1][1] * 100) + '%' : '') + (nx && innerWidth > 700 ? ' · mốc sau ' + nx[0] : '') + ' · Quân ' + S.popOf(G, ME) + '/' + S.popCap(G); }
+    goldShown += (P.gold - goldShown) * 0.25; if (Math.abs(P.gold - goldShown) < 0.6) goldShown = P.gold; $('gold').textContent = Math.round(goldShown); { let tr = 0; S.SAVE.forEach((m, i) => { if (P.gold >= m[0]) tr = i + 1; }); const nx = S.SAVE[tr]; $('inc').textContent = '+' + P.income + '/đợt · Lãi ' + tr + '/5' + (tr ? ' +' + Math.round(S.SAVE[tr - 1][1] * 100) + '%' : '') + (nx && innerWidth > 700 ? ' · mốc sau ' + nx[0] : '') + ' · Quân ' + S.popOf(G, ME) + '/' + S.popCap(G) + (function () { const sy = S.synOf(G, ME); return ' · Đồng môn ' + sy.n + '/8' + (sy.b ? ' +' + Math.round(sy.b * 100) + '%' : ''); })(); }
     $('hpMe').style.width = (100 * P.hp / maxA) + '%'; $('hpOp').style.width = (100 * O.hp / maxB) + '%';
     $('hpMeN').textContent = 'Thành ' + P.hp + '/' + maxA + ' · Lực ' + P.value; $('hpOpN').textContent = 'Thành ' + O.hp + '/' + maxB + ' · Lực ' + O.value;
     const rb = $('btnReady'); rb.disabled = G.phase !== 'build' || P.ready; rb.textContent = G.phase === 'build' ? (P.ready ? 'Chờ…' : 'Sẵn sàng') : 'Chiến';
@@ -371,7 +371,7 @@
       }
     } else if (G && G.over) { acc = 0; if (running && G.ev.length) flushEvents(); }
     if (G) {
-      V.setGhost(selCard && hoverCell && view.lane === ME ? selCard : null, hoverCell, hoverCell && G.players[ME].gold >= (selCard ? S.UNITS[selCard].cost : 0) && hoverCell.cy >= S.BUILD_Y0 && hoverCell.cy <= S.BUILD_Y1 && !G.units.some((u) => u.owner === ME && u.cx === hoverCell.cx && u.cy === hoverCell.cy));
+      V.setGhost(selCard && hoverCell && view.lane === ME ? selCard : null, hoverCell, hoverCell && G.players[ME].gold >= (selCard ? S.placeCost(G, ME, selCard) : 0) && hoverCell.cy >= S.BUILD_Y0 && hoverCell.cy <= S.BUILD_Y1 && !G.units.some((u) => u.owner === ME && u.cx === hoverCell.cx && u.cy === hoverCell.cy));
       V.frame(G, Math.min(1, acc / S.DT), dt, view);
       if (now - lastSave > 3000) { lastSave = now; saveMatch(); }
       updateHUD();
