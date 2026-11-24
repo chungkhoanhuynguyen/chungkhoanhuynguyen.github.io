@@ -10,3 +10,4 @@ Bộ chuyển động (anim/kk.glb): KayKit Adventurers Character Pack 1.0 của
 Lồng tiếng NPC (voice/*.mp3) và tiếng phố xá (audio/crowd.mp3): đọc bằng giọng của chủ game qua VieNeu-TTS, đổi cao độ cho từng nhân vật; tiếng phố trộn từ chính các câu thoại đó.
 
 Texture nén KTX2 (texk/): mã hóa bằng ktx2-encoder (MIT) dùng Basis Universal (Apache-2.0); bộ giải mã lib/basis từ three.js (MIT).
+- Thú (sói, hổ, ngưu, ngựa, đại bàng, rồng, dơi, bộ xương, slime, cáo): Quaternius (opengameart.org), giấy phép CC0.

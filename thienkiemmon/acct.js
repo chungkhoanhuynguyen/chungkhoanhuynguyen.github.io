@@ -1,4 +1,4 @@
-// ===== Thiên Kiếm Môn — tài khoản ID + mật khẩu, tối đa 5 nhân vật, lưu trên mạng =====
+// ===== Huyền Kiếm Tiên Đồ — tài khoản ID + mật khẩu, tối đa 5 nhân vật, lưu trên mạng =====
 // Firebase project riêng cho game (thuthanhlacduong), KHÔNG dùng Firebase của web chứng khoán.
 // Bảng: tkm_players/{uid} = {id, chars:[{name,lv,save,updated}], updated}
 //       tkm_online/{uid}  = vị trí người chơi đang online (cùng 1 bản đồ)
@@ -46,7 +46,7 @@ var TKACCT = (function () {
   function hide() { if (box) box.style.display = 'none'; }
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function loginView(msg) {
-    var b = show('<h2>Thiên Kiếm Môn</h2><div class="sub">Đăng nhập để lưu nhân vật và gặp người chơi khác trên cùng bản đồ</div>' +
+    var b = show('<h2>Huyền Kiếm Tiên Đồ</h2><div class="sub">Đăng nhập để lưu nhân vật và gặp người chơi khác trên cùng bản đồ</div>' +
       '<label><small>ID (3–16 ký tự không dấu)</small></label><input id="aid" autocomplete="username" maxlength="16">' +
       '<label><small>Mật khẩu (ít nhất 6 ký tự)</small></label><input id="apw" type="password" autocomplete="current-password">' +
       '<div class="msg" id="amsg">' + (msg || '') + '</div><div class="row2"><button id="alog">Đăng nhập</button><button id="areg" class="alt">Tạo tài khoản</button></div>' +
@@ -83,7 +83,7 @@ var TKACCT = (function () {
     var s = ss('tkm_slot');
     if (s === 'off') { hide(); return; }
     if (s && s.indexOf(':') > 0) {
-      show('<h2>Thiên Kiếm Môn</h2><div class="sub">Đang kết nối tài khoản…</div>');
+      show('<h2>Huyền Kiếm Tiên Đồ</h2><div class="sub">Đang kết nối tài khoản…</div>');
       var uid = s.split(':')[0], i = +s.split(':')[1];
       loadFB().then(function () { return new Promise(function (ok) { var un = auth.onAuthStateChanged(function (u) { un(); ok(u); }); }); }).then(function (u) {
         if (!u || u.uid !== uid) { ss('tkm_slot', null); loginView('Phiên đăng nhập đã hết, hãy đăng nhập lại.'); return; }
@@ -93,7 +93,7 @@ var TKACCT = (function () {
     }
     var had = false; try { had = !!localStorage.getItem('tkm_lastid'); } catch (e) { }
     if (!had) { loginView(); return; }
-    show('<h2>Thiên Kiếm Môn</h2><div class="sub">Đang kết nối…</div>');
+    show('<h2>Huyền Kiếm Tiên Đồ</h2><div class="sub">Đang kết nối…</div>');
     loadFB().then(function () { return new Promise(function (ok) { var un = auth.onAuthStateChanged(function (u) { un(); ok(u); }); }); })
       .then(function (u) { if (!u) { loginView(); return; } user = u; return readProf().then(charView); }).catch(function () { loginView('Không tới được máy chủ — có thể chơi thử ngoại tuyến.'); });
   }
