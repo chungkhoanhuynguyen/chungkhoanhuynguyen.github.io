@@ -1,0 +1,1 @@
+NONG2411A | 1:9 2:9 3:9 4:9 5:10 6:9 7:10 8:9 9:9 10:9 | đã soát V1 (soat.txt 0 LỖI, whisper khớp mọi số, -11,2 LUFS, khung1 + bia3 + shorts xem bằng mắt, .srt đọc toàn văn; chấm chéo 2 subagent trước dựng: người mới 6→8, thám tử 7,5→9)
