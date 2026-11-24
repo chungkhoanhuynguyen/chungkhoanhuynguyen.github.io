@@ -5,7 +5,7 @@
  "start_url": "/thienkiemmon/",
  "scope": "/thienkiemmon/",
  "display": "fullscreen",
- "orientation": "any",
+ "orientation": "landscape",
  "background_color": "#061f22",
  "theme_color": "#061f22",
  "icons": [
