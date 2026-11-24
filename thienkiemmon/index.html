@@ -1369,13 +1369,20 @@ addEventListener('keydown',e=>{keys[e.code]=true;if(e.repeat)return;if(e.code===
 addEventListener('keyup',e=>{keys[e.code]=false;if(e.code==='Space')jumpHeld=false});
 let yaw=0,pitch=.72,dist=touch?27:17;const joy={id:null,x:0,y:0,ox:0,oy:0},look={id:null,x:0,y:0};
 const joyEl=$('joy'),knob=$('knob'),cv=renderer.domElement;
+/* Điều khiển chuẩn MMO di động (học từ Vương Quốc Huyền Thoại): cần gạt có vùng chết, camera tự theo sau lưng, chụm 2 ngón để zoom, chạm đúp để đưa camera ra sau lưng */
+const JDZ=.22,LOOK_DZ=6,pinch=new Map();let pinchD=0,lastTap=0,recenter=false;
+const joyRest=()=>{if(!touch||creating){joyEl.style.display='none';return}joyEl.style.display='block';joyEl.style.opacity='.45';joyEl.style.left=Math.max(80,innerWidth*.13)+'px';joyEl.style.top=(innerHeight-Math.max(85,innerHeight*.24))+'px';knob.style.transform=''};
+setInterval(()=>{if(joy.id===null)joyRest()},500);
 cv.addEventListener('pointerdown',e=>{cv.setPointerCapture(e.pointerId);
- if(e.pointerType==='touch'&&e.clientX<innerWidth*.45&&joy.id===null){joy.id=e.pointerId;joy.ox=e.clientX;joy.oy=e.clientY;joy.x=joy.y=0;joyEl.style.display='block';joyEl.style.left=e.clientX+'px';joyEl.style.top=e.clientY+'px';knob.style.transform=''}
- else if(look.id===null){look.id=e.pointerId;look.x=e.clientX;look.y=e.clientY}});
+ if(e.pointerType==='touch'&&e.clientX<innerWidth*.45&&joy.id===null){joy.id=e.pointerId;joy.ox=e.clientX;joy.oy=e.clientY;joy.x=joy.y=0;joyEl.style.display='block';joyEl.style.opacity='1';joyEl.style.left=e.clientX+'px';joyEl.style.top=e.clientY+'px';knob.style.transform='';try{navigator.vibrate&&navigator.vibrate(6)}catch(_){}}
+ else{if(e.pointerType==='touch'){pinch.set(e.pointerId,[e.clientX,e.clientY]);if(pinch.size===2){const[a,b]=[...pinch.values()];pinchD=Math.hypot(a[0]-b[0],a[1]-b[1]);look.id=null;return}}
+  const now=performance.now();if(now-lastTap<300)recenter=true;lastTap=now;
+  if(look.id===null){look.id=e.pointerId;look.x=e.clientX;look.y=e.clientY;look.sx=e.clientX;look.sy=e.clientY;look.on=false}}});
 cv.addEventListener('pointermove',e=>{
- if(e.pointerId===joy.id){let dx=e.clientX-joy.ox,dy=e.clientY-joy.oy;const l=Math.hypot(dx,dy),m=50;if(l>m){dx*=m/l;dy*=m/l}joy.x=dx/m;joy.y=dy/m;knob.style.transform=`translate(${dx}px,${dy}px)`}
- else if(e.pointerId===look.id){yaw-=(e.clientX-look.x)*.006;pitch=Math.min(1.3,Math.max(.35,pitch+(e.clientY-look.y)*.004));look.x=e.clientX;look.y=e.clientY}});
-const upE=e=>{if(e.pointerId===joy.id){joy.id=null;joy.x=joy.y=0;joyEl.style.display='none'}if(e.pointerId===look.id)look.id=null};
+ if(e.pointerId===joy.id){let dx=e.clientX-joy.ox,dy=e.clientY-joy.oy;const l=Math.hypot(dx,dy),m=48;if(l>m){dx*=m/l;dy*=m/l}const mg=Math.hypot(dx,dy)/m;if(mg<JDZ){joy.x=joy.y=0}else{const k=(mg-JDZ)/(1-JDZ)/mg;joy.x=dx/m*k;joy.y=dy/m*k}knob.style.transform=`translate(${dx}px,${dy}px)`}
+ else if(pinch.has(e.pointerId)&&pinch.size===2){pinch.set(e.pointerId,[e.clientX,e.clientY]);const[a,b]=[...pinch.values()];const d=Math.hypot(a[0]-b[0],a[1]-b[1]);dist=Math.min(32,Math.max(8,dist-(d-pinchD)*.035));pinchD=d}
+ else if(e.pointerId===look.id){if(!look.on){if(Math.hypot(e.clientX-look.sx,e.clientY-look.sy)<LOOK_DZ)return;look.on=true;look.x=e.clientX;look.y=e.clientY;recenter=false}yaw-=(e.clientX-look.x)*.006;pitch=Math.min(1.3,Math.max(.35,pitch+(e.clientY-look.y)*.004));look.x=e.clientX;look.y=e.clientY}});
+const upE=e=>{pinch.delete(e.pointerId);if(e.pointerId===joy.id){joy.id=null;joy.x=joy.y=0;joyRest()}if(e.pointerId===look.id)look.id=null};
 cv.addEventListener('pointerup',upE);cv.addEventListener('pointercancel',upE);
 cv.addEventListener('wheel',e=>{dist=Math.min(32,Math.max(8,dist+e.deltaY*.02))},{passive:true});
 [['sA','A'],['s1','1'],['s2','2'],['s3','3'],['s4','4'],['s5','5'],['s6','6'],['s7','7'],['s8','8']].forEach(([id,k])=>{const b=$(id);b.addEventListener('pointerdown',e=>{e.preventDefault();useSkill(k);if(k==='3')jumpHeld=true});['pointerup','pointerleave','pointercancel'].forEach(n=>b.addEventListener(n,()=>{if(k==='3')jumpHeld=false}))});
@@ -1395,6 +1402,7 @@ function update(dt,time){uTime.value=time;const hp=heroPos();
  if(P.auto){if(P.auto.dead)P.auto=null;else{const d=tmp.copy(P.auto.c.g.position).sub(hp);d.y=0;const l=d.length();if(l<2.4){P.auto=null;useSkill('A')}else{mx=d.x/l;mz=d.z/l}}}
  const going=moving||!!P.auto,spd=P.ground?hero.spd:13;
  if(going&&!hero.dead){const tf=Math.atan2(mx,mz);let d=tf-hero.face;d=Math.atan2(Math.sin(d),Math.cos(d));hero.face+=d*Math.min(1,dt*12)}
+ if(!creating&&!(look.id!==null&&look.on)&&!hero.dead){const fw=recenter?1:(moving?Math.max(0,-iz):P.auto?.6:0);if(fw>0){let d=hero.face+Math.PI-yaw;d=Math.atan2(Math.sin(d),Math.cos(d));let st=d*(1-Math.exp(-dt*(recenter?8:6)))*fw;if(!recenter)st=Math.max(-.16,Math.min(.16,st));const cap=3.6*Math.min(dt,1/30)*(recenter?2.5:1);yaw+=Math.max(-cap,Math.min(cap,st));if(recenter&&Math.abs(d)<.02)recenter=false}}
  const k=P.ground?Math.min(1,dt*12):Math.min(1,dt*2.5);P.v.x=lerp(P.v.x,going&&!hero.dead?mx*spd:0,k);P.v.z=lerp(P.v.z,going&&!hero.dead?mz*spd:0,k);
  const g=(!P.ground&&jumpHeld&&P.v.y<0)?7:28;P.v.y-=g*dt;if(!P.ground&&jumpHeld&&P.v.y<-3)P.v.y=-3;
  if(!hero.dead){hp.addScaledVector(P.v,dt);if(!BC.in){hp.x=Math.max(-950,Math.min(950,hp.x));hp.z=Math.max(-950,Math.min(950,hp.z))}else{const d=Math.hypot(hp.x-BC.x,hp.z-BC.z);if(d>BC.r-2){hp.x=BC.x+(hp.x-BC.x)*(BC.r-2)/d;hp.z=BC.z+(hp.z-BC.z)*(BC.r-2)/d}}
@@ -1450,7 +1458,7 @@ const AQ={t:0,n:0,lv:0,cool:4};function adapt(raw){if(creating)return;AQ.t+=raw;
  if(fps<27&&AQ.lv<3){AQ.lv++;AQ.cool=1;if(AQ.lv===1){renderer.setPixelRatio(Math.min(DPR,.8));composer.setPixelRatio(Math.min(DPR,.8))}else if(AQ.lv===2){renderer.shadowMap.enabled=false;scene.traverse(o=>{if(o.material){[].concat(o.material).forEach(m=>m.needsUpdate=true)}})}else{renderer.setPixelRatio(.62);composer.setPixelRatio(.62);camera.far=520;scene.fog.density=Math.max(scene.fog.density,.005);camera.updateProjectionMatrix()}renderer.setSize(innerWidth,innerHeight);composer.setSize(innerWidth,innerHeight)}}
 function loop(){requestAnimationFrame(loop);const raw=clock.getDelta(),dt=Math.min(raw,.05);adapt(raw);update(dt,clock.elapsedTime);composer.render();if(first&&vrmReady){first=false;const l=$('load');l.style.opacity=0;setTimeout(()=>l.remove(),700)}}
 loop();
-window.__demo={MUS,PK,togglePK,callReinf,maAct,gainXp,realmText,updPK,INV,BC,mkItem,dropItem,enterBC,TU,refreshTL,bloom:()=>bloom,LOOK,buildAvatar,setSW:(a,b,c)=>{hero.vw&&hero.vw.rotation.set(a,b,c)},hero,P,useSkill,ents,setView:(y,p,d)=>{yaw=y;pitch=p;dist=d}};
+window.__mv=()=>({x:+heroPos().x.toFixed(2),z:+heroPos().z.toFixed(2),yaw:+yaw.toFixed(3),face:+hero.face.toFixed(3),joy:getComputedStyle(joyEl).display});window.__demo={MUS,PK,togglePK,callReinf,maAct,gainXp,realmText,updPK,INV,BC,mkItem,dropItem,enterBC,TU,refreshTL,bloom:()=>bloom,LOOK,buildAvatar,setSW:(a,b,c)=>{hero.vw&&hero.vw.rotation.set(a,b,c)},hero,P,useSkill,ents,setView:(y,p,d)=>{yaw=y;pitch=p;dist=d}};
 }
 </script>
 <script>/* giữ màn hình sáng khi đang chơi */(function(){var l=null;function on(){if(!('wakeLock' in navigator)||document.visibilityState!=='visible'||l)return;navigator.wakeLock.request('screen').then(function(x){l=x;x.addEventListener('release',function(){l=null;});}).catch(function(){});}document.addEventListener('visibilitychange',on);['pointerdown','touchstart','keydown'].forEach(function(e){addEventListener(e,on,{passive:true});});on();setInterval(on,15000);})();</script>
