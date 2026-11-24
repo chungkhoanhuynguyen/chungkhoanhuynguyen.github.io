@@ -1,0 +1,25 @@
+{
+ "id": "/thuthanhlacduong/",
+ "name": "Thủ Thành Lạc Dương",
+ "short_name": "Thủ Thành",
+ "start_url": "/thuthanhlacduong/",
+ "scope": "/thuthanhlacduong/",
+ "display": "fullscreen",
+ "orientation": "any",
+ "background_color": "#3a0905",
+ "theme_color": "#3a0905",
+ "icons": [
+  {
+   "src": "/thuthanhlacduong/app-icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any maskable"
+  },
+  {
+   "src": "/thuthanhlacduong/app-icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any maskable"
+  }
+ ]
+}
