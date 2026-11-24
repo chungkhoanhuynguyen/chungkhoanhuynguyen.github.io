@@ -2,3 +2,5 @@ Thiên Kiếm Môn — demo 3D.
 Texture và mô hình môi trường: Poly Haven (polyhaven.com), CC0.
 Nhân vật VRoid (VRoid Project/pixiv): AvatarSample D/E/F/G, Sendagaya Shino, Sakurada Fumiriya, HairSample Male/Female, Base Male — CC0 hoặc giấy phép cho phép phân phối lại và chỉnh sửa. "Aoppoiyo" của Matchy (cho phép phân phối lại).
 Thư viện 3D: three.js (MIT).
+
+Âm nhạc & âm thanh môi trường (audio/*.mp3): tự soạn bằng thuật toán (thang ngũ cung, đàn tranh Karplus-Strong, sáo, nhị, trống), render bằng Python + ffmpeg cho riêng Thiên Kiếm Môn.
