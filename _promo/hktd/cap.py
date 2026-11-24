@@ -1,0 +1,148 @@
+import asyncio, os, sys, json
+from playwright.async_api import async_playwright
+
+FPS = 30
+OUT = os.environ.get('OUT','fr')
+BASE = os.environ.get('BASE','http://localhost:8765/')
+CHROME = os.environ.get('CHROME','/usr/bin/google-chrome')
+VT = r"""
+(()=>{const rP=performance.now.bind(performance),rD=Date.now,rRAF=window.requestAnimationFrame.bind(window),rST=window.setTimeout.bind(window),rCT=window.clearTimeout.bind(window);
+let V=false,vt=0,dOff=0,id=1e7;let q=[],raf=[];
+performance.now=()=>V?vt:rP();Date.now=()=>V?dOff+vt:rD();
+window.requestAnimationFrame=cb=>{if(V){raf.push(cb);return ++id}return rRAF(cb)};
+window.setTimeout=(f,ms,...a)=>{if(V){const i=++id;q.push({t:vt+(+ms||0),f,a,i});return i}return rST(f,ms,...a)};
+window.clearTimeout=i=>{if(V||i>1e7){q=q.filter(o=>o.i!==i)}rCT(i)};
+window.__vtOn=()=>{vt=rP();dOff=rD()-vt;V=true};
+window.__step=(n,dt)=>{for(let k=0;k<n;k++){vt+=dt;for(let g=0;g<50;g++){const due=q.filter(o=>o.t<=vt);if(!due.length)break;q=q.filter(o=>o.t>vt);due.sort((a,b)=>a.t-b.t).forEach(o=>{try{typeof o.f==='function'?o.f(...o.a):0}catch(e){console.log('T',e)}})}const c=raf;raf=[];c.forEach(f=>{try{f(vt)}catch(e){console.log('R',e)}})}};
+localStorage.setItem('tkm_seen_guide','1');
+})();
+"""
+OVL = r"""
+(()=>{const st=document.createElement('style');st.textContent=`
+@font-face{font-family:PF;src:url(pf/playfair-display-latin-900-normal.woff2)}@font-face{font-family:PF;src:url(pf/playfair-display-vietnamese-900-normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}
+@font-face{font-family:NS;src:url(pf/noto-serif-latin-900-normal.woff2)}@font-face{font-family:NS;src:url(pf/noto-serif-vietnamese-900-normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}
+.ui,#chat,#wchat,#quest,#hint,#pkbar,#mm,#cpbar,#skills,#bars,#atkb,#tl,#menu,#fab,#joy,#srvan,#tutb,#tribb,#hud,#topbar,#npcp,#invw,.fab,#rank,#bagb{visibility:hidden!important}
+#pv{position:fixed;inset:0;z-index:99999;pointer-events:none;font-family:PF,serif;color:#fff}
+#pv .bar{position:absolute;left:0;right:0;height:0;background:#000}#pv .t{position:absolute;left:0;right:0;text-align:center;text-shadow:0 0 22px rgba(255,150,40,.9),0 3px 6px #000}
+#pv .big{font-size:84px;letter-spacing:4px;background:linear-gradient(#fff6d0,#ffd36b 45%,#b8701c);-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 0 14px rgba(255,140,30,.8)) drop-shadow(0 4px 3px #000)}
+#pv .sub{font:900 30px NS,serif;letter-spacing:2px}
+#pv .cap{font:900 52px NS,serif;letter-spacing:2px;color:#fff;text-shadow:0 0 18px #ff3a1a,0 0 4px #000,0 4px 6px #000}
+#pv .cap2{font:900 30px NS,serif;color:#ffe08a;text-shadow:0 0 10px #000,0 2px 4px #000}
+#pv .flash{position:absolute;inset:0;background:#fff;opacity:0}#pv .dk{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(0,0,0,.35),rgba(0,0,0,.95));opacity:0}#pv .lab2{position:absolute;left:0;right:0;top:12%;text-align:center;font:900 22px NS,serif;letter-spacing:6px;color:#ffd36b;text-shadow:0 0 8px #000}`;document.head.appendChild(st);
+const d=document.createElement('div');d.id='pv';d.innerHTML='<div class="dk"></div><div class="lab2" id="l2"></div><div class="flash"></div><div class="bar" id="b1" style="top:0"></div><div class="bar" id="b2" style="bottom:0"></div><div class="t" id="t1"></div><div class="t" id="t2"></div>';document.body.appendChild(d);
+window.__ov=(o)=>{const t1=document.getElementById('t1'),t2=document.getElementById('t2');
+ t1.className='t '+(o.c1||'cap');t2.className='t '+(o.c2||'cap2');t1.textContent=o.a||'';t2.textContent=o.b||'';
+ t1.style.top=(o.y1||70)+'%';t2.style.top=(o.y2||82)+'%';
+ const a=o.al==null?1:o.al;t1.style.opacity=a;t2.style.opacity=o.al2==null?a:o.al2;
+ const sc=o.sc||1;t1.style.transform='scale('+sc+')';
+ document.querySelector('#pv .flash').style.opacity=o.fl||0;document.querySelector('#pv .dk').style.opacity=o.dk||0;const l2=document.getElementById('l2');l2.textContent=o.lab||'';l2.style.opacity=o.lal==null?1:o.lal;
+ document.getElementById('b1').style.height=document.getElementById('b2').style.height=(o.bars==null?60:o.bars)+'px'};
+})();
+"""
+
+def ease(x): return max(0,min(1,x))
+
+async def main():
+    which = sys.argv[1:] or ['s0','s1','s2','s3','s4','s5','s6','s7']
+    async with async_playwright() as p:
+        b = await p.chromium.launch(executable_path=CHROME, args=['--use-angle=swiftshader','--enable-unsafe-swiftshader','--ignore-gpu-blocklist'])
+        pg = await (await b.new_context(viewport={'width':1280,'height':720})).new_page()
+        pg.on('pageerror', lambda e: print('ERR', e))
+        await pg.add_init_script(VT)
+        await pg.goto(BASE+'index.html?noktx&noacct&noadapt', wait_until='commit')
+        await pg.wait_for_function("()=>document.getElementById('cgo')&&!document.getElementById('cgo').disabled", timeout=400000)
+        await pg.evaluate("()=>{const c=document.getElementById('cn');c.value='Huyền Kiếm';c.dataset.ed='1';document.getElementById('cgo').click()}")
+        await pg.wait_for_function("()=>window.__demo && window.__demo.hero", timeout=400000)
+        await pg.wait_for_timeout(6000)
+        await pg.evaluate(OVL)
+        await pg.evaluate("""()=>{const D=__demo;D.TU.realm=2;D.TU.tang=10;
+          D.TU.tong='kim';for(let i=0;i<14;i++)D.INV.bag.push(D.mkItem(5+(i%2)));D.wearBest();
+          D.hero.mp=99999;D.hero.max=D.hero.hp=999999;document.getElementById('npcp')&&(document.getElementById('npcp').style.display='none');
+          document.getElementById('invw')&&(document.getElementById('invw').style.display='none');__vtOn()}""")
+        await pg.wait_for_timeout(1500)
+        frame = [0]
+        async def shoot(scene, n, per):
+            os.makedirs(f'{OUT}/{scene}', exist_ok=True)
+            for i in range(n):
+                js = per(i, n)
+                await pg.evaluate("js=>{try{(new Function(js))()}catch(e){console.log(e)};__step(1,1000/30)}", js)
+                await pg.screenshot(path=f'{OUT}/{scene}/{i:04d}.jpg', type='jpeg', quality=92, timeout=120000)
+            print(scene, 'done', flush=True)
+        async def ev(js):
+            await pg.evaluate("js=>{(new Function(js))()}", js)
+
+        def ov(**k): return '__ov(' + json.dumps(k, ensure_ascii=False) + ');'
+
+        # S0: dark story intro (4s)
+        if 's0' in which:
+            await ev("const h=__demo.heroPos();h.set(-30,h.y,120);__step(20,33)")
+            def s0(i,n):
+                t=i/n
+                if i<60: a,b=('Ngày Huyền Giới đại loạn…',''); al=ease(i/15)*ease((58-i)/10)
+                else: a,b=('…ai mạnh, kẻ đó sống.',''); al=ease((i-62)/12)
+                fl=0.9 if i>=n-4 else 0
+                return f"__demo.setView({2.2+t*.5},{0.15+t*.1},{30-t*12});"+ov(a=a,b=b,c1='sub',y1=46,al=al,dk=0.82-0.2*t,bars=90,fl=fl)
+            await shoot('s0',120,s0)
+        # S1: aerial flyover + title (5s)
+        if 's1' in which:
+            await ev("const h=__demo.heroPos();h.set(0,h.y,150);__step(20,33)")
+            def s1(i,n):
+                t=i/n; a=ease((i-25)/20); s=1.15-.15*ease(i/40)
+                return f"__demo.setView({-0.6+t*1.4},{0.5-t*0.18},{70-t*35});" + ov(a='HUYỀN KIẾM TIÊN ĐỒ',b='Game tu tiên 3D · chơi ngay trên điện thoại',c1='big',c2='sub',y1=36,y2=56,al=a,al2=ease((i-55)/20),sc=s,bars=70, fl=max(0,1-i/12)*0)
+            await shoot('s1',150,s1)
+        # S2: training — spawn monsters, cast skills (6s)
+        if 's2' in which:
+            await ev("const D=__demo,h=D.heroPos();h.set(30,h.y,215);for(let k=0;k<6;k++){const a=k/6*6.28;D.spawnMon(2+k%5,h.x+Math.cos(a)*7,h.z+Math.sin(a)*7)};__step(10,33)")
+            def s2(i,n):
+                js=f"__demo.setView({2.4+i*0.004},0.36,15);"
+                if i==8: js+="__demo.hero.mp=99999;__demo.castCP('hlpt')"
+                if i==75: js+="__demo.hero.mp=99999;__demo.castCP('ldvq')"
+                if i==140: js+="__demo.hero.mp=99999;__demo.castCP('hamc')"
+                return js+ov(a='TRAIN QUÁI · NHẶT BÍ KÍP',b='16 tuyệt học: Giáng Long Thập Chưởng, Lục Mạch Thần Kiếm…',al=ease((i-6)/10),bars=60)
+            await shoot('s2',180,s2)
+        # S3: skill showcase cuts (4 x 2s)
+        if 's3' in which:
+            cuts=[('glong','GIÁNG LONG THẬP CHƯỞNG',2.0,'BÍ KÍP · CHƯỞNG PHÁP'),('vkqt','VẠN KIẾM QUY TÔNG',3.4,'BÍ KÍP · KIẾM ĐẠO'),('hlpt','HỎA LONG PHẦN THIÊN',4.6,'BÍ KÍP · HỎA HỆ'),('ldvq','LÔI ĐÌNH VẠN QUÂN',5.8,'BÍ KÍP · LÔI HỆ')]
+            await ev("const D=__demo,h=D.heroPos();h.set(-40,h.y,230);for(let k=0;k<8;k++){D.spawnMon(4+k%4,h.x+(k%4-1.5)*3,h.z+9+Math.floor(k/4)*3)};__step(10,33)")
+            def s3(i,n):
+                c=i//60; k=i%60; sid,name,yaw,lab=cuts[c]
+                js=f"__demo.setView({yaw-0.15+k*0.005},{0.22+0.05*(c%2)},{12-k*0.03});"
+                if k==1: js+=f"__demo.hero.face=0;__demo.hero.mp=99999;__demo.castCP('{sid}')"
+                if k==0 and c>0: js+="const D=__demo,h=D.heroPos();for(let q=0;q<4;q++)D.spawnMon(4+q,h.x+(q-1.5)*3,h.z+10);"
+                return js+ov(a=name,c1='cap',y1=74,b='',al=ease((k-4)/6),sc=1.25-0.25*ease((k-4)/8),fl=max(0,1-k/5)*0.8,bars=60,lab=lab,lal=ease((k-4)/6))
+            await shoot('s3',240,s3)
+        # S4: PK — kill a cultivator, everything drops (7s)
+        if 's4' in which:
+            await ev("""const D=__demo,h=D.heroPos();h.set(60,h.y,200);__step(5,33);
+              let e=D.allEnts().filter(b=>b.team==='bot'&&!b.dead).sort((a,b)=>a.c.g.position.distanceTo(h)-b.c.g.position.distanceTo(h))[0];if(e){e.c.g.position.set(h.x,h.y,h.z+6);e.target=null;e.st=null;e.hostile=0}else e=D.spawnMon(9,h.x,h.z+6,3,'Tiêu Dao Tử');window.__pkv=e;""")
+            def s4(i,n):
+                js=f"__demo.setView({3.14+0.6-i*0.004},0.3,{13-i*0.02});"
+                if i==10: js+="__demo.hero.mp=99999;__demo.castCP('tnpt')"
+                if i==40: js+="__demo.hero.mp=99999;__demo.castCP('cabc')"
+                if i==62: js+="""const D=__demo,e=window.__pkv,p=e.c.g.position.clone();e.hp=1;D.hit(D.hero,e,99999999,true);
+                  for(let q=0;q<12;q++){const it=D.mkItem(3+q%4);const a=q/12*6.28;D.dropItem(p.clone().add(new THREE.Vector3(Math.cos(a)*2.2,0,Math.sin(a)*2.2)),it)}"""
+                al=ease((i-64)/8)
+                return js+ov(a='PK DỨT KHOÁT',b='Hạ gục đối thủ — đối thủ RƠI SẠCH ĐỒ, kể cả đồ đang mặc',al=al,sc=1.3-0.3*ease((i-64)/8),fl=(0.9 if 62<=i<=64 else 0),bars=60)
+            await shoot('s4',210,s4)
+        # S5: ma tu absorbing a corpse (5s)
+        if 's5' in which:
+            await ev("""const D=__demo,h=D.heroPos();h.set(-70,h.y,190);D.TU.tong='ma';D.PK.ma=1;try{D.wearBest()}catch(e){};__step(5,33);""")
+            await pg.evaluate("()=>{const D=__demo,h=D.heroPos();try{D.equipWeapon&&D.equipWeapon('phien',true)}catch(e){};D.addCorpse(h.clone().add(new THREE.Vector3(1.5,0,1.5)),'Lăng Vân Kiếm Khách',500)}")
+            def s5(i,n):
+                return f"__demo.setView({1.2+i*0.006},0.34,{11-i*0.015});"+ov(a='MA TU HÚT HỒN',b='Vạn Hồn Phiên thu hồn phách — tu vi tăng vọt',al=ease((i-10)/12),bars=60)
+            await shoot('s5',150,s5)
+        # S6: tribulation (4s)
+        if 's6' in which:
+            await ev("""const D=__demo,h=D.heroPos();h.set(-20,h.y,170);D.TU.tong='kim';D.PK.ma=0;D.TU.realm=2;D.TU.tang=10;D.TU.xp=D.needXp()*2;__step(5,33);try{D.tribGo()}catch(e){console.log(e)}""")
+            def s6(i,n):
+                return f"__demo.setView({0.4+i*0.006},0.12,{20-i*0.03});"+ov(a='ĐỘ KIẾP',b='Qua lôi kiếp phi thăng — xịt là tan xác, rơi sạch đồ',al=ease((i-10)/12),sc=1.2-0.2*ease((i-10)/12),bars=60)
+            await shoot('s6',135,s6)
+        # S7: end card (4.5s)
+        if 's7' in which:
+            await ev("const h=__demo.heroPos();h.set(0,h.y,150);__step(5,33)")
+            def s7(i,n):
+                return f"__demo.setView({1.2+i*0.004},0.55,{80});"+ov(a='HUYỀN KIẾM TIÊN ĐỒ',b='Chơi miễn phí ngay: chungkhoanhuynguyen.com/thienkiemmon',c1='big',c2='sub',y1=34,y2=56,al=ease(i/15),bars=90)
+            await shoot('s7',135,s7)
+        await b.close()
+
+asyncio.run(main())

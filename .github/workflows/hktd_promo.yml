@@ -1,0 +1,67 @@
+name: HKTĐ video quảng bá
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['_promo/hktd/**', '.github/workflows/hktd_promo.yml']
+permissions:
+  contents: write
+concurrency: { group: hktd-promo, cancel-in-progress: true }
+jobs:
+  cap:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        scene: [s0, s1, s2, s3, s4, s5, s6, s7]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            thienkiemmon
+            _promo/hktd
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Cài công cụ
+        run: |
+          pip install -q playwright
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+      - name: Quay cảnh ${{ matrix.scene }}
+        run: |
+          cp -r _promo/hktd/pf thienkiemmon/pf
+          (cd thienkiemmon && python3 -m http.server 8765 >/dev/null 2>&1 &)
+          sleep 2
+          OUT=$PWD/fr python3 _promo/hktd/cap.py ${{ matrix.scene }}
+          ls fr/${{ matrix.scene }} | wc -l
+          ffmpeg -y -loglevel error -framerate 30 -i fr/${{ matrix.scene }}/%04d.jpg -vf "scale=1920:1080:flags=lanczos,format=yuv420p" -c:v libx264 -crf 18 -preset veryfast ${{ matrix.scene }}.tmp.mp4
+          mv ${{ matrix.scene }}.tmp.mp4 ${{ matrix.scene }}.mp4
+      - uses: actions/upload-artifact@v4
+        with: { name: '${{ matrix.scene }}', path: '${{ matrix.scene }}.mp4' }
+  join:
+    needs: cap
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { sparse-checkout: _promo/hktd }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - uses: actions/download-artifact@v4
+        with: { path: parts, merge-multiple: true }
+      - name: Ghép cảnh + nhạc
+        run: |
+          pip install -q numpy
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+          python3 _promo/hktd/music.py
+          for s in s0 s1 s2 s3 s4 s5 s6 s7; do echo "file 'parts/$s.mp4'" >> list.txt; done
+          ffmpeg -y -loglevel error -f concat -safe 0 -i list.txt -c copy v.mp4
+          ffmpeg -y -loglevel error -i v.mp4 -i music.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -shortest hktd_promo.mp4
+          ffmpeg -y -loglevel error -i hktd_promo.mp4 -vf scale=1280:720 -c:v libx264 -crf 24 -preset veryfast -c:a copy hktd_promo_720.mp4
+          ls -la hktd_promo*.mp4
+      - name: Đẩy lên nhánh video-out
+        run: |
+          git config user.name "hktd-bot"; git config user.email "hktd-bot@users.noreply.github.com"
+          git fetch -q --depth=1 origin video-out
+          git worktree add -q ../vo origin/video-out
+          mkdir -p ../vo/hktd && cp hktd_promo.mp4 hktd_promo_720.mp4 ../vo/hktd/
+          cd ../vo && git add hktd && git commit -qm "HKTĐ video quảng bá $(date +%F_%H%M)" && git push -q origin HEAD:video-out
