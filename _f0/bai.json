@@ -512,37 +512,173 @@
  },
  {
   "slug": "mo-tai-khoan-chung-khoan-tren-dien-thoai",
-  "kw": "mở tài khoản chứng khoán trên điện thoại",
-  "title": "Mở tài khoản chứng khoán trên điện thoại: làm tại nhà, 5 phút",
-  "desc": "Cách mở tài khoản chứng khoán trên điện thoại bằng CCCD và eKYC, những lỗi hay gặp khi chụp giấy tờ, quay khuôn mặt và cách xử lý.",
+  "kw": "mở tài khoản chứng khoán online trên điện thoại",
+  "title": "Mở tài khoản chứng khoán online trên điện thoại: 6 bước, 10 phút",
+  "desc": "Mở tài khoản chứng khoán online trên điện thoại bằng CCCD gắn chip: 6 bước xác minh (eKYC), 5 lỗi hay gặp, cần bao nhiêu tiền cho 100 cổ phiếu đầu tiên.",
   "body": [
    [
     "p",
-    "Chỉ cần điện thoại có camera và mạng ổn định, anh chị mở được tài khoản chứng khoán tại nhà. Xem các bước chi tiết ở bài <a href=\"/mo-tai-khoan-chung-khoan.html\">mở tài khoản chứng khoán online</a>."
+    "21 giờ tối, chị Lan (giả định) mở ứng dụng chứng khoán lần đầu. Mười phút sau chị có số tài khoản, nhưng mất thêm 20 phút vì một lỗi nhỏ: <b>ảnh CCCD bị lóa đèn trần</b>, hệ thống đọc sai ngày cấp."
+   ],
+   [
+    "p",
+    "Hướng dẫn có ảnh từng màn hình cho từng công ty ở trang <a href=\"/mo-tai-khoan-chung-khoan.html\">mở tài khoản chứng khoán online</a>. Bài này nói các bước chung, lỗi hay gặp và cần chuẩn bị bao nhiêu tiền."
    ],
    [
     "h2",
-    "Lỗi hay gặp và cách xử lý"
+    "Cần chuẩn bị gì trước khi mở?"
    ],
    [
     "ul",
     [
-     "Ảnh CCCD bị lóa: chụp nơi đủ sáng, không bật đèn flash, đặt thẻ trên nền tối.",
-     "Không nhận diện được khuôn mặt: bỏ kính, khẩu trang, nhìn thẳng camera.",
-     "Không nhận được OTP: kiểm tra số điện thoại, chờ 1–2 phút rồi gửi lại.",
-     "Thông tin CCCD sai: sửa trực tiếp trước khi ký hợp đồng."
+     "CCCD gắn chip còn hạn (một số ứng dụng đọc chip qua NFC).",
+     "Số điện thoại chính chủ để nhận mã OTP.",
+     "Tài khoản ngân hàng đứng tên mình – tiền rút ra chỉ về tài khoản cùng tên.",
+     "Chỗ đủ sáng, mạng ổn định, khoảng 10 phút không bị gián đoạn."
     ]
    ],
    [
     "h2",
-    "Bảo mật tài khoản"
+    "6 bước mở tài khoản trên điện thoại"
+   ],
+   [
+    "ol",
+    [
+     "Tải ứng dụng chính thức của công ty chứng khoán từ App Store/Google Play (kiểm tên nhà phát hành).",
+     "Nhập số điện thoại, email, xác nhận mã OTP.",
+     "Chụp 2 mặt CCCD (hoặc quét chip NFC), kiểm lại họ tên, ngày sinh, ngày cấp.",
+     "Quay khuôn mặt để xác minh danh tính online (eKYC): nhìn thẳng, quay trái phải.",
+     "Nhập tài khoản ngân hàng cùng tên, nhập mã giới thiệu nếu muốn được hỗ trợ.",
+     "Ký hợp đồng điện tử bằng OTP, chờ duyệt: thường vài phút, chậm thì 1 ngày làm việc."
+    ]
+   ],
+   [
+    "h2",
+    "5 lỗi hay gặp và cách xử lý"
+   ],
+   [
+    "table",
+    [
+     [
+      "Lỗi",
+      "Nguyên nhân",
+      "Cách xử lý"
+     ],
+     [
+      "Không đọc<br>được CCCD",
+      "Ảnh lóa, mờ",
+      "Nền tối,<br>tắt flash"
+     ],
+     [
+      "Sai thông tin<br>CCCD",
+      "Đọc nhầm số",
+      "Sửa trước<br>khi ký"
+     ],
+     [
+      "Không nhận<br>khuôn mặt",
+      "Kính,<br>ngược sáng",
+      "Bỏ kính,<br>đối diện đèn"
+     ],
+     [
+      "Không có OTP",
+      "Sai số,<br>sóng yếu",
+      "Chờ 1–2 phút<br>gửi lại"
+     ],
+     [
+      "Tên ngân hàng<br>không khớp",
+      "Tài khoản<br>người khác",
+      "Dùng tài khoản<br>đứng tên mình"
+     ]
+    ]
+   ],
+   [
+    "h2",
+    "Mở xong, cần bao nhiêu tiền cho lô cổ phiếu đầu tiên?"
+   ],
+   [
+    "p",
+    "Ít nhất vài trăm nghìn đến vài triệu đồng, tùy mã. Mở tài khoản thường miễn phí; trên HOSE lô chẵn là bội số 100 cổ phiếu, lô lẻ 1–99 cổ phiếu khớp chậm hơn. Ví dụ theo giá đóng cửa phiên 23/11/2026:"
+   ],
+   [
+    "table",
+    [
+     [
+      "Mã",
+      "Giá<br>(đồng)",
+      "100 cp<br>(lô chẵn)",
+      "10 cp<br>(lô lẻ)"
+     ],
+     [
+      "MBB",
+      "18.100",
+      "1.810.000",
+      "181.000"
+     ],
+     [
+      "HPG",
+      "20.400",
+      "2.040.000",
+      "204.000"
+     ],
+     [
+      "VCB",
+      "50.300",
+      "5.030.000",
+      "503.000"
+     ],
+     [
+      "VNM",
+      "52.300",
+      "5.230.000",
+      "523.000"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Chưa gồm phí: với mức phí ví dụ 0,15%, mua 100 VNM tốn thêm khoảng 7.845 đồng; khi bán nộp thêm thuế 0,1%. Giá trên là giá một phiên, không phải gợi ý mua."
+   ],
+   [
+    "p",
+    "Chi tiết các khoản phí ở bài <a href=\"/f0/phi-giao-dich-va-thue-chung-khoan.html\">phí giao dịch và thuế chứng khoán</a>, cách mua lô nhỏ ở bài <a href=\"/f0/lo-chan-lo-le.html\">lô chẵn, lô lẻ</a>."
+   ],
+   [
+    "h2",
+    "Giữ tài khoản an toàn thế nào?"
    ],
    [
     "ul",
     [
-     "Không chia sẻ mật khẩu, mã PIN, mã OTP cho bất kỳ ai, kể cả người tự xưng nhân viên.",
-     "Chỉ dùng ứng dụng chính thức của công ty chứng khoán.",
-     "Bật xác thực hai lớp nếu có."
+     "Không đưa mật khẩu, mã PIN, mã OTP cho bất kỳ ai, kể cả người tự xưng nhân viên công ty chứng khoán.",
+     "Chỉ đăng nhập trong ứng dụng chính thức; không bấm đường link lạ gửi qua tin nhắn.",
+     "Bật xác thực hai lớp, đặt mã PIN đặt lệnh khác mật khẩu đăng nhập."
+    ]
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>Ký hợp đồng khi thông tin còn sai:</b> sửa sau khi ký thường phải gửi yêu cầu, mất vài ngày.",
+     "<b>Nạp tiền từ tài khoản người thân:</b> có nơi giữ lại hoặc hoàn trả; nạp từ tài khoản cùng tên cho nhanh.",
+     "<b>Mua ngay ngày đầu vì sợ lỡ:</b> mua hôm nay thì 2 ngày làm việc sau cổ phiếu mới về tài khoản (T+2); đọc <a href=\"/f0/t-2-la-gi.html\">T+2 là gì</a> và thử 1 lệnh nhỏ trước."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist 10 phút"
+   ],
+   [
+    "ol",
+    [
+     "CCCD gắn chip + điện thoại chính chủ + tài khoản ngân hàng cùng tên.",
+     "Chụp CCCD trên nền tối, kiểm 3 dòng: họ tên, ngày sinh, ngày cấp.",
+     "Quay mặt nơi đủ sáng, bỏ kính.",
+     "Ký hợp đồng, lưu lại số tài khoản.",
+     "Nạp thử một khoản nhỏ theo bài <a href=\"/f0/cach-nap-tien-vao-tai-khoan-chung-khoan.html\">cách nạp tiền vào tài khoản chứng khoán</a>.",
+     "Đọc <a href=\"/f0/cach-dat-lenh-mua-ban-co-phieu.html\">cách đặt lệnh mua bán</a> trước lệnh đầu tiên."
     ]
    ],
    [
@@ -553,48 +689,32 @@
    ],
    [
     "p",
-    "Cần bao nhiêu tiền cho lô cổ phiếu đầu tiên và các lỗi eKYC hay gặp, xem bài <a href=\"/f0/cach-mo-tai-khoan-chung-khoan.html\">cách mở (tạo, đăng ký) tài khoản chứng khoán online</a>."
+    "Các bước trên máy tính ở bài <a href=\"/f0/cach-mo-tai-khoan-chung-khoan.html\">cách mở (tạo, đăng ký) tài khoản chứng khoán online</a>. <small>Nguồn giá: giá đóng cửa phiên 23/11/2026 trên web. Chị Lan là nhân vật giả định. Chỉ để tham khảo.</small>"
    ]
   ],
   "faq": [
    [
-    "Mở tài khoản trên điện thoại có an toàn không?",
-    "An toàn nếu làm trên ứng dụng hoặc trang web chính thức và không chia sẻ mã OTP."
+    "Mở tài khoản chứng khoán trên điện thoại có an toàn không?",
+    "An toàn nếu làm trên ứng dụng chính thức của công ty chứng khoán và không chia sẻ mật khẩu, mã PIN, mã OTP cho ai."
    ],
    [
-    "Không có tài khoản ngân hàng có mở được không?",
-    "Vẫn mở được, nhưng cần tài khoản ngân hàng cùng tên để rút tiền."
+    "Mở tài khoản chứng khoán online mất bao lâu?",
+    "Khoảng 5–10 phút thao tác; duyệt thường vài phút, chậm thì 1 ngày làm việc."
+   ],
+   [
+    "Mở tài khoản xong cần bao nhiêu tiền để mua cổ phiếu?",
+    "Tuỳ giá mã: theo giá đóng cửa phiên 23/11/2026, 100 cổ phiếu MBB khoảng 1.810.000 đồng, 100 VNM khoảng 5.230.000 đồng; lô lẻ 1–99 cổ phiếu cần ít hơn, chưa gồm phí."
    ]
   ],
   "rel": [
    "cach-mo-tai-khoan-chung-khoan",
-   "mo-tai-khoan-chung-khoan",
-   "cach-mo-tai-khoan-chung-khoan-vps",
-   "cach-nap-tien-vao-tai-khoan-chung-khoan"
+   "cach-nap-tien-vao-tai-khoan-chung-khoan",
+   "cach-dat-lenh-mua-ban-co-phieu",
+   "lo-chan-lo-le",
+   "phi-giao-dich-va-thue-chung-khoan"
   ],
   "grp": 1,
-  "add": [
-   [
-    "h2",
-    "Ví dụ thực tế"
-   ],
-   [
-    "p",
-    "Giả sử anh chị mở tài khoản lúc 21h trên điện thoại. Chụp CCCD bị mờ, hệ thống báo lỗi đọc thông tin. Anh chị chuyển ra chỗ sáng, đặt CCCD trên nền tối, chụp lại là được. Sau khi quay mặt xác thực và ký hợp đồng điện tử, khoảng vài phút đến một ngày làm việc sẽ nhận số tài khoản. Sáng hôm sau, nạp thử 1 triệu đồng để kiểm tra tiền đã về tài khoản chứng khoán chưa."
-   ],
-   [
-    "h2",
-    "Tóm lại"
-   ],
-   [
-    "ul",
-    [
-     "Mở tài khoản trên điện thoại chỉ cần CCCD và vài phút.",
-     "Lỗi thường gặp là ảnh mờ, ánh sáng yếu, thông tin không khớp ngân hàng.",
-     "Bảo mật mật khẩu, mã PIN, không đưa OTP cho bất kỳ ai."
-    ]
-   ]
-  ]
+  "mod": "2026-11-24"
  },
  {
   "slug": "cach-nap-tien-vao-tai-khoan-chung-khoan",
@@ -10329,6 +10449,10 @@
    [
     "p",
     "Nếu ở quầy được mời \"sản phẩm lãi 9%, cũng như tiết kiệm\", hãy đọc trước bài <a href=\"/f0/trai-phieu-ngan-hang-co-duoc-bao-hiem-tien-gui.html\">trái phiếu ngân hàng khác tiết kiệm ra sao</a>: hạn mức bảo hiểm 350 triệu chỉ áp cho tiền gửi."
+   ],
+   [
+    "p",
+    "Lãi tiết kiệm đang được yêu cầu giảm (11/2026): chia sổ bậc thang theo số tiền cần dùng trong năm ở bài <a href=\"/f0/lai-suat-tiet-kiem-qua-dinh-gui-ky-han-nao.html\">lãi tiết kiệm qua đỉnh, gửi kỳ hạn nào</a>."
    ]
   ],
   "faq": [
@@ -10342,14 +10466,14 @@
    ]
   ],
   "rel": [
+   "lai-suat-tiet-kiem-qua-dinh-gui-ky-han-nao",
    "trai-phieu-ngan-hang-co-duoc-bao-hiem-tien-gui",
    "lai-suat-thuc-la-gi",
    "tich-san-chung-khoan-la-gi",
    "lai-suat-tang-anh-huong-chung-khoan",
-   "co-phieu-ngan-hang-co-tuc-cao",
-   "rui-ro-khi-tich-san"
+   "co-phieu-ngan-hang-co-tuc-cao"
   ],
-  "mod": "2026-11-16"
+  "mod": "2026-11-24"
  },
  {
   "slug": "quyen-mua-co-phieu-la-gi",
@@ -20632,6 +20756,10 @@
    [
     "p",
     "Bài viết mang tính giáo dục, không phải khuyến nghị đầu tư. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+   ],
+   [
+    "p",
+    "Một ví dụ cụ thể của ngành: cảng Cái Mép – Thị Vải từ thứ 7 thế giới (CPPI 2023, 2024) xuống thứ 11 năm 2026 vì quá đông, và giá GMD, VSC phản ứng thế nào, ở bài <a href=\"/f0/cang-cai-mep-thi-vai-thu-7-the-gioi.html\">cảng Cái Mép vì sao tụt 4 bậc</a>."
    ]
   ],
   "faq": [
@@ -20649,11 +20777,13 @@
    ]
   ],
   "rel": [
+   "cang-cai-mep-thi-vai-thu-7-the-gioi",
    "co-phieu-chu-ky-la-gi",
    "bien-loi-nhuan-gop-la-gi",
    "he-so-no-de-la-gi",
    "ty-gia-tang-anh-huong-co-phieu"
-  ]
+  ],
+  "mod": "2026-11-24"
  },
  {
   "slug": "dong-tien-kinh-doanh-la-gi",
@@ -21990,6 +22120,10 @@
    [
     "p",
     "Năm 2026 đầu tư công mới giải ngân 74,1% sau 10 tháng, còn 247.300 tỷ chưa chi; dự án lớn nhất đang chờ là đường sắt tốc độ cao 1.713.548 tỷ. Ai nhận tiền trước, xem bài <a href=\"/f0/duong-sat-toc-do-cao-bac-nam-ai-tra-tien.html\">đường sắt tốc độ cao: ai trả tiền, tiền về túi ai</a>."
+   ],
+   [
+    "p",
+    "Ví dụ đang diễn ra: 21 dự án phục vụ APEC 2027 ở Phú Quốc, vốn sơ bộ 137.138 tỷ, 11 dự án vốn đầu tư công đã giải ngân hơn 7.548 tỷ đến 29/10/2026. Xem bài <a href=\"/f0/apec-2027-phu-quoc-dat-co-sot-lai.html\">APEC 2027 Phú Quốc</a>."
    ]
   ],
   "faq": [
@@ -22007,12 +22141,14 @@
    ]
   ],
   "rel": [
+   "apec-2027-phu-quoc-dat-co-sot-lai",
    "duong-sat-toc-do-cao-bac-nam-ai-tra-tien",
    "co-phieu-chu-ky-la-gi",
    "pb-la-gi",
    "dong-tien-kinh-doanh-la-gi",
    "no-vay-tren-von-chu-so-huu"
-  ]
+  ],
+  "mod": "2026-11-24"
  },
  {
   "slug": "gia-dien-va-co-phieu-dien",
@@ -24399,6 +24535,10 @@
    [
     "p",
     "Ví dụ đang diễn ra tháng 11/2026: lo ngại bong bóng AI làm Nasdaq giảm 5,52% trong phiên 5/11, trong khi hãng chip lớn nhất vẫn báo lãi kỷ lục. Việt Nam chịu tác động qua đường nào, xem bài <a href=\"/f0/xuat-khau-dien-tu-2026-bong-bong-ai.html\">xuất khẩu điện tử 2026 và cơn sốt AI</a>."
+   ],
+   [
+    "p",
+    "Bài học gần nhất: cơn sốt đất đặc khu 2018 (Vân Đồn 7,2 → 23 triệu/m², Phú Quốc sau đó giảm 30–40%), so với đợt rao đất trước APEC 2027, ở bài <a href=\"/f0/apec-2027-phu-quoc-dat-co-sot-lai.html\">APEC 2027 Phú Quốc</a>."
    ]
   ],
   "faq": [
@@ -24416,6 +24556,7 @@
    ]
   ],
   "rel": [
+   "apec-2027-phu-quoc-dat-co-sot-lai",
    "xuat-khau-dien-tu-2026-bong-bong-ai",
    "tam-ly-fomo-va-hoang-loan",
    "stop-loss-bao-nhieu-phan-tram",
@@ -24423,7 +24564,7 @@
   ],
   "add": [],
   "grp": 5,
-  "mod": "2026-11-22"
+  "mod": "2026-11-24"
  },
  {
   "slug": "quy-tac-72-la-gi",
@@ -25676,6 +25817,10 @@
    [
     "p",
     "Trong đợt giảm 17% này, nhóm nào giữ giá tốt hơn? Bảng 10 mã (DHG −10,1%, SAB −10,5%, GAS −24,3%…) ở bài <a href=\"/f0/co-phieu-phong-thu-la-gi.html\">cổ phiếu phòng thủ là gì</a>."
+   ],
+   [
+    "p",
+    "Nhóm cổ phiếu cảng giảm sâu nhất đợt này: GMD −25% từ 2/4 đến 9/4/2025, nặng hơn VN-Index (−17%) – xem bảng ở bài <a href=\"/f0/cang-cai-mep-thi-vai-thu-7-the-gioi.html\">cảng Cái Mép</a>."
    ]
   ],
   "faq": [
@@ -25693,6 +25838,7 @@
    ]
   ],
   "rel": [
+   "cang-cai-mep-thi-vai-thu-7-the-gioi",
    "co-phieu-phong-thu-la-gi",
    "thang-du-thuong-mai-viet-nam-my",
    "ty-gia-tang-anh-huong-co-phieu",
@@ -25700,7 +25846,7 @@
    "day-thi-truong-la-gi"
   ],
   "grp": 8,
-  "mod": "2026-11-20"
+  "mod": "2026-11-24"
  },
  {
   "slug": "ebit-la-gi",
@@ -37459,6 +37605,10 @@
    [
     "p",
     "Ví dụ mới nhất là đất quanh các ga đường sắt tốc độ cao: lô 2 tỷ vay 1,2 tỷ, tiền lãi đến năm 2035 đã bằng 54% giá mua. Phép tính đầy đủ ở bài <a href=\"/f0/duong-sat-toc-do-cao-bac-nam-ai-tra-tien.html\">đường sắt tốc độ cao 67 tỷ USD: ai trả tiền, tiền về túi ai</a>."
+   ],
+   [
+    "p",
+    "Ví dụ mới: đất Phú Quốc trước APEC 2027 – lô 2,4 tỷ vay 1,4 tỷ, lãi 10% mỗi tháng gần 11,7 triệu; giảm 30% như năm 2018 thì mất khoảng 1 tỷ. Phép tính ở bài <a href=\"/f0/apec-2027-phu-quoc-dat-co-sot-lai.html\">APEC 2027 Phú Quốc: đất có sốt như 2018?</a>"
    ]
   ],
   "faq": [
@@ -37468,12 +37618,14 @@
    ]
   ],
   "rel": [
+   "apec-2027-phu-quoc-dat-co-sot-lai",
    "duong-sat-toc-do-cao-bac-nam-ai-tra-tien",
    "quy-du-phong-truoc-khi-dau-tu",
    "tinh-tien-tra-gop-vay-mua-nha",
    "bong-bong-tai-san-la-gi",
    "quan-tri-von-la-gi"
-  ]
+  ],
+  "mod": "2026-11-24"
  },
  {
   "slug": "ly-thuyet-tro-choi-la-gi",
@@ -38236,6 +38388,10 @@
    ],
    [
     "p",
+    "Tháng 11/2026 NHNN yêu cầu giảm 0,5–1% lãi tiền gửi mới. Lần trước lãi 12 tháng từ 10% còn 5,7% sau 1 năm – phép thử gửi dài hay ngắn ở bài <a href=\"/f0/lai-suat-tiet-kiem-qua-dinh-gui-ky-han-nao.html\">lãi tiết kiệm qua đỉnh?</a>"
+   ],
+   [
+    "p",
     "<small>Nguồn: WiData (lãi suất huy động 12 tháng NHTM Nhà nước 13/11/2026, CPI tháng 10/2026, tín dụng và tiền gửi tháng 8/2026); VnBusiness 22/10/2026; Vietnamnet 23/6/2025; Thông tư 02/2011/TT-NHNN. Sổ 800 triệu là ví dụ giả định. Bài chia sẻ kiến thức, không phải khuyến nghị.</small>"
    ]
   ],
@@ -38254,10 +38410,12 @@
    ]
   ],
   "rel": [
+   "lai-suat-tiet-kiem-qua-dinh-gui-ky-han-nao",
    "luong-thuc-te-la-gi",
    "tich-san-co-phieu-hay-gui-tiet-kiem",
    "lam-phat-va-chung-khoan"
-  ]
+  ],
+  "mod": "2026-11-24"
  },
  {
   "slug": "chi-so-dxy-la-gi",
@@ -39473,6 +39631,10 @@
    ],
    [
     "p",
+    "NHNN yêu cầu giảm 1,5–2% lãi cho vay (11/2026), nhưng khoản vay thả nổi chỉ đổi theo kỳ trong hợp đồng – ví dụ vay 1,5 tỷ giảm 1 điểm bớt khoảng 1,25 triệu/tháng ở bài <a href=\"/f0/lai-suat-tiet-kiem-qua-dinh-gui-ky-han-nao.html\">lãi tiết kiệm qua đỉnh?</a>"
+   ],
+   [
+    "p",
     "<small>Nguồn: Công Luận 6/11/2026 (SSI Research); Báo Đấu thầu 17/11/2026; VietnamFinance 11/11/2026; Thông tư 31/2024/TT-NHNN, 15/2023/TT-NHNN. Khoản vay của anh Khoa là giả định, em tự tính. Nội dung chỉ để tham khảo, không phải tư vấn vay vốn.</small>"
    ]
   ],
@@ -39491,12 +39653,14 @@
    ]
   ],
   "rel": [
+   "lai-suat-tiet-kiem-qua-dinh-gui-ky-han-nao",
    "tinh-tien-tra-gop-vay-mua-nha",
    "no-nhom-2-la-gi",
    "ty-le-tra-no-tren-thu-nhap-la-gi",
    "quy-du-phong-truoc-khi-dau-tu",
    "no-xau-ngan-hang-la-gi"
-  ]
+  ],
+  "mod": "2026-11-24"
  },
  {
   "slug": "thang-du-thuong-mai-viet-nam-my",
@@ -41410,6 +41574,948 @@
    "chi-so-dxy-la-gi",
    "fed-tang-giam-lai-suat-tac-dong",
    "vn-index-la-gi"
+  ]
+ },
+ {
+  "slug": "apec-2027-phu-quoc-dat-co-sot-lai",
+  "kw": "APEC 2027 Phú Quốc",
+  "grp": 7,
+  "date": "2026-11-24",
+  "title": "APEC 2027 Phú Quốc: 137.000 tỷ đổ vào đảo, đất có sốt như 2018?",
+  "desc": "21 dự án APEC 2027 tại Phú Quốc, vốn sơ bộ 137.138 tỷ: ai trả, tiền vào túi ai. So cơn sốt đặc khu 2018 và phép thử trước khi vay mua đất theo tin.",
+  "body": [
+   [
+    "p",
+    "7 giờ 10 sáng, điện thoại anh Quân (40 tuổi, dành dụm 8 năm được 1 tỷ đồng) hiện ba tin. Người chào bán đất nhắn: <b>\"Lô gần đường ra sân bay, trước APEC chắc chắn gấp đôi anh ạ.\"</b> Mẹ anh ở Dương Đông thì tính vay sửa thêm 2 phòng nghỉ."
+   ],
+   [
+    "p",
+    "Năm 2018, Phú Quốc cũng sốt đất vì một tin lớn. Đến đầu 2019, giá đất phần lớn khu vực trên đảo <b>giảm 30–40%</b>. Lần này có khác không?"
+   ],
+   [
+    "ul",
+    [
+     "<b>Ai trả tiền:</b> 11 dự án Nhà nước bỏ tiền, 10 dự án doanh nghiệp bỏ tiền.",
+     "<b>Tiền vào túi ai trước:</b> nhà thầu, người lao động, rồi mới tới chủ phòng nghỉ.",
+     "<b>Ai đang cược vào thời gian:</b> người vay mua đất để trống, chờ người mua sau."
+    ]
+   ],
+   [
+    "h2",
+    "137.000 tỷ cho APEC 2027 gồm những gì?"
+   ],
+   [
+    "p",
+    "Đó là tổng vốn sơ bộ của <b>21 dự án</b> phục vụ tuần lễ cấp cao APEC 2027 ở Phú Quốc, nếu làm đủ: <b>137.138 tỷ đồng</b>, mục tiêu xong trước 30/6/2027 (Nhà Đầu Tư 20/11/2026). Việt Nam nhận vai trò chủ nhà ngày 19/11/2026, lần thứ 3 sau 2006 và 2017."
+   ],
+   [
+    "table",
+    [
+     [
+      "Hạng mục",
+      "Quy mô",
+      "Vốn"
+     ],
+     [
+      "Sân bay mở rộng",
+      "~1.050 ha",
+      "Nhà nước<br>+ tư nhân"
+     ],
+     [
+      "Trung tâm<br>hội nghị",
+      "~21.860 tỷ",
+      "Tư nhân"
+     ],
+     [
+      "ĐT.975 + tàu<br>điện 17,59 km",
+      "gần 9.000 tỷ",
+      "Tư nhân<br>(BOT*)"
+     ],
+     [
+      "Khách sạn<br>Bãi Đất Đỏ",
+      "~7.000 phòng",
+      "Tư nhân"
+     ],
+     [
+      "Nước, nước thải,<br>tái định cư",
+      "trong 21 dự án",
+      "Chủ yếu<br>ngân sách"
+     ]
+    ]
+   ],
+   [
+    "h2",
+    "Ai trả tiền: ngân sách hay tư nhân?"
+   ],
+   [
+    "p",
+    "Cả hai, gần như chia đôi theo số dự án. *BOT là doanh nghiệp làm đường rồi thu phí để lấy lại vốn. Theo Bộ Tài chính, <b>11 dự án</b> dùng vốn đầu tư công, <b>10 dự án</b> theo hình thức đối tác công tư hoặc doanh nghiệp tự đầu tư."
+   ],
+   [
+    "table",
+    [
+     [
+      "Năm 2026",
+      "Số tiền"
+     ],
+     [
+      "Ngân sách giao",
+      "hơn 9.930 tỷ"
+     ],
+     [
+      "Đã thực chi (giải ngân)<br>đến 29/10",
+      "hơn 7.548 tỷ"
+     ],
+     [
+      "Tỷ lệ",
+      "76,02% kế hoạch năm"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Đây là điểm khác nhiều cơn sốt trước: tiền đã chi thật, đường băng số 2 dài 3.300 m đón chuyến bay thương mại đầu tiên ngày 29/10. Nhưng 10 dự án tư nhân phải thu hồi vốn từ khách, phòng và vé trong nhiều năm sau APEC."
+   ],
+   [
+    "p",
+    "Tiền đầu tư công chảy qua nhà thầu, vật liệu ra sao, xem bài <a href=\"/f0/dau-tu-cong-co-phieu-huong-loi.html\">đầu tư công là gì</a>."
+   ],
+   [
+    "h2",
+    "Tiền vào túi ai trước?"
+   ],
+   [
+    "p",
+    "Theo em, tiền đến theo thứ tự: nhà thầu, công nhân, vật liệu; rồi người làm du lịch; rồi chủ phòng nghỉ nếu lấp được phòng. Người mua đất theo tin đứng cuối hàng."
+   ],
+   [
+    "ul",
+    [
+     "<b>Người lao động:</b> Phú Quốc dự kiến cần hơn <b>14.000 lao động</b> mới năm 2027, chủ yếu du lịch nghỉ dưỡng (Tạp chí Kinh tế – Tài chính 20/11/2026).",
+     "<b>Chủ phòng nghỉ:</b> khách sạn cao cấp trên đảo kín <b>trên 80%</b> năm 2025 và đầu 2026 (Savills, MarketTimes 19/11/2026).",
+     "<b>Cú lật:</b> 2027–2030 đảo có thể thêm khoảng <b>11.000 phòng cao cấp</b>, nguồn cung 4–5 sao gần gấp đôi hiện nay."
+    ]
+   ],
+   [
+    "p",
+    "Nhà nghỉ 4 phòng của mẹ anh Quân, giả định 500 nghìn/đêm, kín 25 đêm, mùa cao điểm thu khoảng <b>50 triệu/tháng</b> (em tự tính). Nếu khách sạn lớn giảm giá để lấp phòng, khách của nhà nhỏ có thể bị kéo đi."
+   ],
+   [
+    "h2",
+    "Cơn sốt đặc khu 2018 diễn ra thế nào?"
+   ],
+   [
+    "p",
+    "Nó tăng rất nhanh rồi đứng hình khi tin không thành. VietNamNet gọi đó là cơn sốt mạnh nhất 10 năm, có nơi giá gấp 3–4 lần."
+   ],
+   [
+    "ol",
+    [
+     "Tháng 5/2018: Phú Quốc dừng chuyển mục đích sử dụng đất với khu phân lô, tách thửa dưới 500 m².",
+     "15/6/2018: Quốc hội chưa thông qua dự án luật đặc khu. Nhiều sàn cả tuần không có giao dịch, có khách bỏ cọc 2 tỷ.",
+     "2/2019: khu Dương Đông – Cửa Cạn còn khoảng 14 triệu/m², giảm 4–6 triệu."
+    ]
+   ],
+   [
+    "table",
+    [
+     [
+      "Mốc",
+      "2018",
+      "2026–2027"
+     ],
+     [
+      "Tin",
+      "Luật đặc khu<br>(chưa<br>thông qua)",
+      "APEC 2027<br>đã chốt"
+     ],
+     [
+      "Tiền đã chi",
+      "Gần như chưa",
+      "7.548 tỷ<br>đến 29/10"
+     ],
+     [
+      "Giá lúc sốt",
+      "Vân Đồn (Q.Ninh)<br>7,2 → 23 tr/m²*",
+      "Rao \"gấp đôi<br>trước APEC\""
+     ],
+     [
+      "Sau đó",
+      "Phú Quốc<br>−30–40%<br>(2/2019)",
+      "Chưa biết"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "<small>*Nửa đầu 2018 so cùng kỳ.</small>"
+   ],
+   [
+    "p",
+    "Khác nhau: lần này hạ tầng là thật. Nhưng hạ tầng thật chỉ chắc làm đảo <b>dễ đến hơn</b>, chưa chắc làm giá mọi lô đất tăng. Cách nhận ra một cơn sốt ở bài <a href=\"/f0/bong-bong-tai-san-la-gi.html\">bong bóng tài sản là gì</a>."
+   ],
+   [
+    "h2",
+    "Vay 1,4 tỷ mua lô 2,4 tỷ: mất bao nhiêu nếu giá giảm?"
+   ],
+   [
+    "p",
+    "Khoảng <b>1 tỷ đồng</b> nếu giá giảm 30% như lần trước và lãi 10%. Lô 120 m², giá 2,4 tỷ, vay 1,4 tỷ; lô đất để trống mỗi tháng mang về 0 đồng. Tiền lãi theo vài mức (giả định, em tự tính, chưa gồm gốc và phí):"
+   ],
+   [
+    "table",
+    [
+     [
+      "Lãi suất/năm",
+      "Lãi mỗi tháng",
+      "Giữ 2 năm"
+     ],
+     [
+      "8%",
+      "9,33 triệu",
+      "224 triệu"
+     ],
+     [
+      "10%",
+      "11,67 triệu",
+      "280 triệu"
+     ],
+     [
+      "12%",
+      "14,00 triệu",
+      "336 triệu"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Giảm 30% là mất 720 triệu tiền giá, cộng 280 triệu tiền lãi 2 năm: khoảng 1 tỷ, đúng bằng 8 năm dành dụm, chưa tính phí và thuế. Ba rủi ro của vay mua đất lúc sốt có ở bài <a href=\"/f0/vay-mua-dat-nen-rui-ro.html\">vay mua đất nền lúc sốt</a>."
+   ],
+   [
+    "h2",
+    "Phép thử trước khi vay mua tài sản theo sự kiện"
+   ],
+   [
+    "p",
+    "Đừng tính giá bán lại. Hỏi: <b>mỗi tháng tài sản đó mang về bao nhiêu, so với tiền lãi?</b> Đây là mốc em tự đặt để soi, không phải chuẩn chung."
+   ],
+   [
+    "table",
+    [
+     [
+      "Thu/tháng<br>so với lãi",
+      "Nghĩa là",
+      "Ví dụ"
+     ],
+     [
+      "Lớn hơn lãi",
+      "Khoản vay<br>tự nuôi được",
+      "Phòng thuê<br>kín quanh năm"
+     ],
+     [
+      "Từ 1/2 lãi<br>trở lên",
+      "Cần thu nhập<br>khác gánh thêm",
+      "Nhà nghỉ<br>vắng mùa mưa"
+     ],
+     [
+      "Dưới 1/2<br>hoặc 0 đồng",
+      "Phụ thuộc<br>người mua sau",
+      "Lô đất<br>để trống"
+     ]
+    ]
+   ],
+   [
+    "h2",
+    "Ba cách đặt tiền, mỗi cách một cái giá"
+   ],
+   [
+    "table",
+    [
+     [
+      "Cách",
+      "Được gì",
+      "Cái giá"
+     ],
+     [
+      "Học nghề<br>du lịch",
+      "Ăn theo<br>khách thật",
+      "Mất thời gian,<br>tăng chậm"
+     ],
+     [
+      "Sửa phòng<br>không vay",
+      "Đón khách tốt,<br>không gánh lãi",
+      "Có thể phải<br>giảm giá"
+     ],
+     [
+      "Vay mua<br>lô đất",
+      "Lời lớn nếu<br>giá gấp đôi",
+      "~11,67 triệu<br>lãi/tháng"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Mẹ anh Quân chốt: \"Sửa phòng bằng tiền dành dụm thôi. Đảo đẹp lên thì tốt, nhưng đừng vay để đoán.\""
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>Lấy tổng vốn làm bằng chứng tăng giá:</b> 137.138 tỷ là tổng mức sơ bộ \"nếu làm đủ\" của 21 dự án, không phải tiền đổ vào từng lô đất.",
+     "<b>Ghép số khác loại:</b> \"gấp 3 lần\" là Vân Đồn nửa đầu 2018; \"giảm 30–40%\" là Phú Quốc 2/2019. Khác nơi, khác kỳ.",
+     "<b>Tính lời mà quên lãi:</b> riêng tiền lãi 2 năm đã 280 triệu; giá phải tăng hơn 11,7% mới hoà tiền lãi."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist: theo dõi gì từ nay đến APEC?"
+   ],
+   [
+    "ol",
+    [
+     "Các công trình có kịp mốc 30/6/2027 không.",
+     "Số đường bay thẳng quốc tế mới đến đảo.",
+     "Công suất phòng khách sạn năm đầu sau APEC.",
+     "Trước khi vay: làm phép thử thu/tháng so với lãi, giữ <a href=\"/f0/quy-du-phong-truoc-khi-dau-tu.html\">quỹ dự phòng</a> riêng."
+    ]
+   ],
+   [
+    "p",
+    "Một dự án khác cùng câu hỏi \"ai trả, ai được\": <a href=\"/f0/duong-sat-toc-do-cao-bac-nam-ai-tra-tien.html\">đường sắt tốc độ cao Bắc – Nam</a>. Cần trao đổi riêng về kế hoạch tài chính gia đình, anh chị nhắn qua <a href=\"/tu-van-dau-tu-chung-khoan.html\">trang tư vấn</a>."
+   ],
+   [
+    "p",
+    "<small>Nguồn: Nhà Đầu Tư 20/11/2026; Báo Cần Thơ 13/11/2026 (Bộ Tài chính); MarketTimes 19/11/2026 (Savills); Tạp chí Kinh tế – Tài chính 20/11/2026; VietNamNet 24/12/2018; VnExpress 6/5/2018; VnBusiness 13/2/2019. Anh Quân là nhân vật giả định trong video cùng chủ đề; phép tính em tự tính. Chỉ để tham khảo, không phải khuyến nghị đầu tư.</small>"
+   ]
+  ],
+  "faq": [
+   [
+    "APEC 2027 tổ chức ở đâu, khi nào?",
+    "Việt Nam nhận vai trò chủ nhà APEC 2027 ngày 19/11/2026; tuần lễ cấp cao tổ chức tại Phú Quốc, các dự án phục vụ sự kiện đặt mục tiêu xong trước 30/6/2027."
+   ],
+   [
+    "137.000 tỷ cho Phú Quốc lấy từ đâu?",
+    "Là tổng mức đầu tư sơ bộ 137.138 tỷ của 21 dự án: 11 dự án vốn đầu tư công, 10 dự án đối tác công tư hoặc tư nhân. Năm 2026 ngân sách giao hơn 9.930 tỷ, đến 29/10 giải ngân hơn 7.548 tỷ."
+   ],
+   [
+    "Đất Phú Quốc năm 2018 giảm bao nhiêu sau cơn sốt?",
+    "Theo VnBusiness 13/2/2019, giá đất phần lớn khu vực Phú Quốc giảm trung bình 30–40%, có nơi khoảng 50% so với đầu năm 2018, sau khi dự án luật đặc khu chưa được thông qua ngày 15/6/2018."
+   ]
+  ],
+  "rel": [
+   "vay-mua-dat-nen-rui-ro",
+   "duong-sat-toc-do-cao-bac-nam-ai-tra-tien",
+   "dau-tu-cong-co-phieu-huong-loi",
+   "bong-bong-tai-san-la-gi",
+   "87-phan-tram-tai-san-nam-o-nha-dat"
+  ]
+ },
+ {
+  "slug": "cang-cai-mep-thi-vai-thu-7-the-gioi",
+  "kw": "cảng Cái Mép Thị Vải",
+  "grp": 7,
+  "date": "2026-11-24",
+  "title": "Cảng Cái Mép: từ thứ 7 thế giới, vì sao tụt 4 bậc năm 2026?",
+  "desc": "Vì sao tàu mẹ ghé thẳng Cái Mép giữa rừng đước, hạng cảng hiệu quả thế giới 7 → 11, tàu chờ 3 giờ – 3 ngày, đường 991B và cổ phiếu cảng phản ứng ra sao.",
+  "body": [
+   [
+    "p",
+    "5 giờ sáng, ở quán nước gần cảng, anh Hùng – tài xế container 12 năm – nhận tin nhắn: <b>tàu đến trễ, xe phải chờ thêm</b>. Người bạn ngồi cạnh cười: \"Cảng lớn phải ở thành phố lớn chứ, ai lại xây giữa rừng đước?\""
+   ],
+   [
+    "p",
+    "Vậy mà cụm cảng giữa rừng ngập mặn ấy hai kỳ liền đứng <b>thứ 7 thế giới</b> về hiệu quả, xếp trên cả Singapore. Năm 2026 nó lại tụt 4 bậc. Bài này trả lời: vì sao là nơi này, vì sao tụt, và ai chịu thiệt."
+   ],
+   [
+    "h2",
+    "Vì sao tàu mẹ ghé thẳng Cái Mép?"
+   ],
+   [
+    "p",
+    "Tàu mẹ là tàu container khổng lồ chạy thẳng đi Mỹ, châu Âu. Nó ghé Cái Mép vì nước đủ sâu ngay sát biển, và có người bỏ tiền đào thêm. Cảng lớn truyền thống của TP.HCM nằm sâu trong sông, luồng không đủ cho tàu lớn nhất; sông Thị Vải đổ thẳng ra vịnh Gành Rái."
+   ],
+   [
+    "ol",
+    [
+     "<b>Nước sâu tự nhiên:</b> gần biển, ít phải đi vòng.",
+     "<b>Đào luồng:</b> đầu 2024 luồng Cái Mép – Thị Vải nạo vét xong, sâu <b>15,5 m</b> (sâu nhất cả nước, bằng khoảng 5 tầng nhà), hơn 1.414 tỷ ngân sách. Tàu 160.000–200.000 DWT ra vào không phải chờ thủy triều.",
+     "<b>Doanh nghiệp dám xây giữa rừng đước</b> và kéo các hãng tàu lớn về."
+    ]
+   ],
+   [
+    "p",
+    "Thiếu một lớp, tàu mẹ cũng không ghé. Hiện từ Cái Mép có <b>22 tuyến đi Mỹ</b>, 2 tuyến đi châu Âu, 10 tuyến nội Á (Người Quan Sát 1/11/2026)."
+   ],
+   [
+    "table",
+    [
+     [
+      "",
+      "Đi thẳng",
+      "Chuyển tàu"
+     ],
+     [
+      "Bốc xếp",
+      "1 lần",
+      "2 lần"
+     ],
+     [
+      "Thời gian",
+      "Ít chờ hơn",
+      "Thêm ngày chờ"
+     ],
+     [
+      "Phí, rủi ro",
+      "Ít phí hơn",
+      "Thêm phí,<br>dễ lỡ chuyến"
+     ]
+    ]
+   ],
+   [
+    "h2",
+    "Một con tàu 16.828 container lớn cỡ nào?"
+   ],
+   [
+    "p",
+    "Dài gần bằng <b>4/5 tòa Landmark 81</b>. Ngày 13/3/2025, tàu OOCL Bauhinia cập Tân Cảng Cái Mép – Thị Vải (Hà Nội Mới 13/3/2025). TEU là đơn vị đếm container loại 20 feet; DWT là trọng tải tính bằng tấn:"
+   ],
+   [
+    "table",
+    [
+     [
+      "Thông số",
+      "Con số",
+      "Hình dung*"
+     ],
+     [
+      "Dài",
+      "366,99 m",
+      "≈ 80% chiều cao<br>Landmark 81"
+     ],
+     [
+      "Sức chở",
+      "16.828 TEU",
+      "Xếp nối ≈ 102 km"
+     ],
+     [
+      "Trọng tải",
+      "166.000 DWT",
+      "Rộng 51 m"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "<small>*Em tự tính: Landmark 81 cao 461 m; 1 TEU dài 6,1 m.</small>"
+   ],
+   [
+    "h2",
+    "Bảng xếp hạng CPPI: từ thứ 7 xuống thứ 11"
+   ],
+   [
+    "p",
+    "CPPI là chỉ số hiệu quả cảng container của Ngân hàng Thế giới và S&P Global, đo chủ yếu bằng thời gian tàu nằm ở cảng. Tàu nằm càng lâu, điểm càng thấp; hạng càng nhỏ càng tốt."
+   ],
+   [
+    "table",
+    [
+     [
+      "CPPI",
+      "Cái Mép",
+      "Hải Phòng"
+     ],
+     [
+      "2023",
+      "Thứ 7",
+      "–"
+     ],
+     [
+      "2024",
+      "Thứ 7, trên<br>Singapore",
+      "87 điểm"
+     ],
+     [
+      "2025<br>(công bố<br>10/6/2026)",
+      "Thứ 11,<br>122 điểm<br>(−10 điểm,<br>lùi 4 bậc)",
+      "Thứ 13,<br>122 điểm<br>(lần đầu<br>top 20)"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Hai cảng lớn nhất hai đầu đất nước cùng ở nhóm tốt nhất thế giới là tin vui. Câu hỏi là vì sao Cái Mép tụt khi lượng hàng vẫn tăng."
+   ],
+   [
+    "h2",
+    "Vì sao tụt hạng khi hàng vẫn tăng?"
+   ],
+   [
+    "p",
+    "Vì <b>quá đông</b>: hàng tăng nhanh hơn cầu bến. Theo Cảng vụ TP.HCM (Báo Xây dựng 11/1/2026), cụm cảng gần hết công suất."
+   ],
+   [
+    "ul",
+    [
+     "Năm 2025: hơn <b>12,4 triệu TEU</b> container, +12,91%.",
+     "Riêng tàu mẹ 9 tháng 2025: <b>5,6 triệu TEU</b>, +18% (SGGP/VPA 22/10/2025).",
+     "Tàu trễ lịch chờ cầu từ <b>3 giờ đến 3 ngày</b>.",
+     "75–80% hàng gom/rút bằng sà lan, nhưng chỉ Gemalink và TCIT có cầu riêng cho sà lan – sà lan phải xếp hàng chung với tàu lớn."
+    ]
+   ],
+   [
+    "p",
+    "Cái giá không nằm trên bảng xếp hạng. Nó nằm trong tiền dầu xe chạy không, ngày công tài xế ngồi chờ như anh Hùng, và lô hàng của chủ xưởng lỡ chuyến tuần này."
+   ],
+   [
+    "h2",
+    "Đường 991B gỡ được đến đâu?"
+   ],
+   [
+    "p",
+    "Gỡ được đoạn từ cảng ra quốc lộ, chưa nối thẳng cao tốc. Theo Người Quan Sát 1/11/2026:"
+   ],
+   [
+    "table",
+    [
+     [
+      "Đường 991B",
+      "Con số"
+     ],
+     [
+      "Chiều dài",
+      "~9 km, 4 làn xe"
+     ],
+     [
+      "Vốn",
+      "gần 4.000 tỷ đồng"
+     ],
+     [
+      "Thông xe toàn tuyến",
+      "dự kiến 12/2026"
+     ],
+     [
+      "Còn cách cao tốc<br>Biên Hòa – Vũng Tàu",
+      "hơn 8 km"
+     ]
+    ]
+   ],
+   [
+    "h2",
+    "Cổ phiếu cảng phản ứng thế nào?"
+   ],
+   [
+    "p",
+    "Phản ứng với cả thế giới, không chỉ với tin cảng. GMD (Gemadept, đứng sau cảng Gemalink) giảm 25% chỉ trong 5 phiên khi Mỹ công bố thuế đối ứng đầu tháng 4/2025; tháng 6/2026 tin tụt hạng gần như không đổi chiều giá (50.400 → 49.070 đồng từ 10/6 đến 30/6)."
+   ],
+   [
+    "table",
+    [
+     [
+      "Mã",
+      "2/4 → 9/4<br>/2025",
+      "2/4/2025 →<br>23/11/2026"
+     ],
+     [
+      "GMD<br><small>cảng Gemalink</small>",
+      "−25,0%",
+      "+47,0%"
+     ],
+     [
+      "VSC<br><small>cảng Hải Phòng</small>",
+      "−21,2%",
+      "−4,7%"
+     ],
+     [
+      "HAH<br><small>tàu container</small>",
+      "−15,6%",
+      "+18,6%"
+     ],
+     [
+      "VN-Index",
+      "−17,0%",
+      "+28,8%"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Giá đóng cửa điều chỉnh của web, chưa gồm cổ tức; P/E, ROE theo dữ liệu tài chính mới nhất của web. GMD đóng cửa 23/11/2026 ở 51.900 đồng, P/E 12,5 (giá bằng khoảng 12,5 năm lợi nhuận), ROE 21,4% (100 đồng vốn chủ lãi khoảng 21 đồng/năm). Quá khứ không bảo đảm tương lai, em không nói nên mua hay bán."
+   ],
+   [
+    "p",
+    "Chi tiết từng mã ở trang <a href=\"/ma/GMD.html\">GMD</a>, <a href=\"/ma/VSC.html\">VSC</a>; cả nhóm ngành ở bài <a href=\"/f0/co-phieu-cang-bien-logistics.html\">cổ phiếu cảng biển, logistics</a>; vì sao tháng 4/2025 giảm mạnh ở bài <a href=\"/f0/thue-doi-ung-la-gi.html\">thuế đối ứng là gì</a>."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>Lấy hạng CPPI làm tín hiệu giá:</b> tụt 4 bậc tháng 6/2026 nhưng GMD gần như đi ngang cả tháng.",
+     "<b>Ghép số khác phạm vi:</b> 12,4 triệu TEU là tổng container cả năm 2025; 5,6 triệu TEU là riêng tàu mẹ 9 tháng. Đừng chia cho nhau.",
+     "<b>\"Hàng nhiều là tốt\":</b> hàng tăng mà cầu bến không kịp thì tàu chờ lâu hơn – chính lý do tụt hạng."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist: 3 điều theo dõi"
+   ],
+   [
+    "ol",
+    [
+     "Đường 991B có thông xe đúng hẹn tháng 12/2026 không.",
+     "Cảng nào mở thêm cầu bến, nhất là cầu cho sà lan.",
+     "Số tuyến đi Mỹ còn tăng không khi thuế quan thay đổi.",
+     "Kỳ CPPI tới: Cái Mép lấy lại hạng hay Hải Phòng vượt lên."
+    ]
+   ],
+   [
+    "p",
+    "Lợi thế tự nhiên chỉ là điểm xuất phát; thứ giữ được vị trí là đầu tư đều đặn và đúng chỗ nghẽn – với cảng biển hay với danh mục của mình. Cần trao đổi riêng về một mã cụ thể, anh chị nhắn qua <a href=\"/tu-van-dau-tu-chung-khoan.html\">trang tư vấn</a>."
+   ],
+   [
+    "p",
+    "<small>Nguồn: SGGP 9/2/2024, 22/10/2025; Hà Nội Mới 13/3/2025; Gemadept 12/6/2024; bbw.vn 11/6/2026; Báo Xây dựng 11/1/2026 (Cảng vụ Hàng hải TP.HCM); Người Quan Sát 1/11/2026; Landmark 81 cao 461 m (chủ đầu tư công bố). Giá cổ phiếu: dữ liệu giá đóng cửa điều chỉnh của web. Anh Hùng là nhân vật trong video cùng chủ đề. Chỉ để tham khảo, không phải khuyến nghị đầu tư.</small>"
+   ]
+  ],
+  "faq": [
+   [
+    "Cảng Cái Mép – Thị Vải xếp hạng bao nhiêu thế giới?",
+    "Theo chỉ số CPPI của Ngân hàng Thế giới và S&P Global, Cái Mép đứng thứ 7 thế giới ở kỳ CPPI 2023 và 2024; kỳ CPPI 2025 công bố 10/6/2026 xuống thứ 11 với 122 điểm, giảm 10 điểm."
+   ],
+   [
+    "Vì sao cảng Cái Mép tụt hạng?",
+    "Lượng hàng tăng nhanh hơn cầu bến: năm 2025 hơn 12,4 triệu TEU (+12,91%), cụm cảng gần hết công suất, tàu trễ lịch chờ cầu 3 giờ – 3 ngày, chỉ 2 cảng có cầu riêng cho sà lan."
+   ],
+   [
+    "Luồng Cái Mép – Thị Vải sâu bao nhiêu?",
+    "Sau khi nạo vét xong đầu năm 2024, luồng sâu 15,5 m – sâu nhất cả nước, tàu 160.000–200.000 DWT ra vào không phụ thuộc thủy triều; vốn ngân sách hơn 1.414 tỷ đồng."
+   ]
+  ],
+  "rel": [
+   "co-phieu-cang-bien-logistics",
+   "thue-doi-ung-la-gi",
+   "thang-du-thuong-mai-viet-nam-my",
+   "dau-tu-cong-co-phieu-huong-loi",
+   "xuat-khau-dien-tu-2026-bong-bong-ai"
+  ]
+ },
+ {
+  "slug": "lai-suat-tiet-kiem-qua-dinh-gui-ky-han-nao",
+  "kw": "lãi suất tiết kiệm giảm, gửi kỳ hạn nào",
+  "grp": 7,
+  "date": "2026-11-24",
+  "title": "Lãi tiết kiệm qua đỉnh? Lần trước 10% còn 5,7% sau 1 năm",
+  "desc": "Ngân hàng Nhà nước yêu cầu giảm 0,5–1% lãi gửi mới. Lần trước lãi 12 tháng từ 10% còn 5,7% sau 1 năm. Gửi dài hay ngắn: phép thử 10 giây.",
+  "body": [
+   [
+    "p",
+    "7 giờ sáng, chị Trang – kế toán một công ty may – nhận ba tin: sổ tiết kiệm <b>600 triệu</b> sắp đến hạn; Ngân hàng Nhà nước yêu cầu giảm lãi tiền gửi mới; chồng nhắn \"lãi sắp giảm thì gửi luôn 12 tháng đi em\"."
+   ],
+   [
+    "p",
+    "Lần trước lãi tiết kiệm quay đầu, chỉ khoảng một năm, nơi trả cao nhất cho kỳ 12 tháng đi từ 10% xuống 5,7%. Với 600 triệu, khác biệt là thế này (giả định, em tự tính):"
+   ],
+   [
+    "table",
+    [
+     [
+      "Gửi 12 tháng ở mức",
+      "Tiền lãi 1 năm"
+     ],
+     [
+      "10% (12/2022, có nơi)",
+      "60 triệu"
+     ],
+     [
+      "9,5% (trần 1/2023)",
+      "57 triệu"
+     ],
+     [
+      "5,7% (cao nhất 12/2023)",
+      "34,2 triệu"
+     ],
+     [
+      "4,8% (Vietcombank 12/2023)",
+      "28,8 triệu"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Gửi lúc 12/2023 thay vì 12/2022: lãi 34,2 triệu thay vì 60 triệu, <b>ít hơn 25,8 triệu (khoảng 43%)</b>, chỉ vì chọn lúc gửi. Hôm nay có lặp lại không?"
+   ],
+   [
+    "h2",
+    "Lần trước lãi tiết kiệm quay đầu thế nào?"
+   ],
+   [
+    "p",
+    "Lên rất nhanh cuối 2022, rồi bị kéo xuống suốt 2023:"
+   ],
+   [
+    "ol",
+    [
+     "Đầu 12/2022: cao nhất 10,5% (kỳ 13 tháng), kỳ 12 tháng có nơi 10% (TT Tài chính Tiền tệ 1/12/2022).",
+     "1/2023: các ngân hàng thống nhất trần tối đa 9,5%, hưởng ứng Hiệp hội Ngân hàng.",
+     "12/2023: cao nhất thị trường kỳ 12 tháng chỉ 5,7%; BIDV, Agribank, VietinBank 5,3%; Vietcombank 4,8% (VnEconomy 12/12/2023)."
+    ]
+   ],
+   [
+    "p",
+    "Người gửi kỳ ngắn rồi tái tục liên tục (gửi lại kỳ mới theo lãi lúc đó) thì mỗi lần đến hạn lại nhận mức thấp hơn lần trước."
+   ],
+   [
+    "h2",
+    "Vì sao năm 2026 lãi tiền gửi lại tăng?"
+   ],
+   [
+    "p",
+    "Vì tiền cho vay ra tăng nhanh hơn tiền gửi vào, ngân hàng phải nâng lãi để hút tiền (VnBusiness). Lãi điều hành (mức NHNN dùng để định hướng thị trường) vẫn giữ nguyên."
+   ],
+   [
+    "table",
+    [
+     [
+      "Chỉ tiêu (NHNN)",
+      "Con số"
+     ],
+     [
+      "Lãi gửi bình quân, giao<br>dịch mới, 20/9/2026",
+      "6,38%/năm<br>(+1,15 điểm so cuối 2025)"
+     ],
+     [
+      "Dư nợ tín dụng<br>26/10/2026",
+      "hơn 20,81 triệu tỷ<br>(+11,94% từ đầu năm)"
+     ],
+     [
+      "Huy động<br>26/10/2026",
+      "gần 19,73 triệu tỷ<br>(+11,7%)"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Cho vay nhiều hơn huy động khoảng <b>1,08 triệu tỷ</b> (em tự trừ; nguồn: Tạp chí Công Thương 8/10, Việt Báo 17/11). Muốn hiểu lãi thật sau lạm phát, xem bài <a href=\"/f0/lai-suat-thuc-la-gi.html\">lãi suất thực là gì</a>."
+   ],
+   [
+    "h2",
+    "Lần này NHNN yêu cầu giảm bao nhiêu?"
+   ],
+   [
+    "p",
+    "Giảm 0,5–1 điểm với tiền gửi mới, lãi cho vay giảm mạnh hơn. Theo họp báo Chính phủ 4/11/2026 (VCCI/Bnews 10/11):"
+   ],
+   [
+    "ul",
+    [
+     "Lãi huy động tiền gửi <b>mới</b>, kỳ hạn từ 6 tháng: giảm <b>0,5–1%/năm</b>.",
+     "Lãi cho vay: giảm <b>1,5–2%/năm</b>.",
+     "Đã làm: ngân hàng nhà nước niêm yết giảm khoảng 0,5%; ngân hàng cổ phần 0,5–0,7%.",
+     "Khoản vay mới cuối tháng 10 mới giảm khoảng <b>0,2–0,5%</b> so với đầu tháng – người vay còn phải chờ."
+    ]
+   ],
+   [
+    "table",
+    [
+     [
+      "Ngân hàng (bảng online 17/11/2026)",
+      "Kỳ 12 tháng"
+     ],
+     [
+      "Agribank, BIDV, VietinBank",
+      "6,8%"
+     ],
+     [
+      "Vietcombank",
+      "5,4%"
+     ],
+     [
+      "Phần lớn ngân hàng (đầu 11/2026)",
+      "dưới 7%"
+     ]
+    ]
+   ],
+   [
+    "h2",
+    "Lãi 9,1% quảng cáo có phải lãi của mình?"
+   ],
+   [
+    "p",
+    "Thường là không. Mức 9,1% của một ngân hàng số là lãi niêm yết 6,9% (6 tháng) <b>cộng 2,2 điểm</b>, chỉ khi gửi online và chỉ đến 30/11/2026. Sổ chị Trang đáo hạn 15/12, nên con số đó không phải của chị."
+   ],
+   [
+    "p",
+    "Lãi của mình là số tiền thực nhận, tính cả những lần phải rút giữa chừng. Rút trước hạn thường chỉ được lãi không kỳ hạn, gần như không có gì."
+   ],
+   [
+    "h2",
+    "Người đang vay mua nhà được gì?"
+   ],
+   [
+    "p",
+    "Được, nhưng theo kỳ điều chỉnh trong hợp đồng, không theo tin tức. Giả định khoản vay <b>1,5 tỷ</b> lãi thả nổi (lãi tự thay đổi theo kỳ) giảm 1 điểm, ví dụ từ 10% xuống 9%: bớt <b>15 triệu/năm</b>, khoảng 1,25 triệu/tháng (em tự tính)."
+   ],
+   [
+    "ol",
+    [
+     "Mở hợp đồng xem ngày điều chỉnh lãi (có nơi 3 tháng, có nơi 6 tháng một lần).",
+     "Xem công thức: lãi cơ sở cộng thêm (biên độ) bao nhiêu điểm.",
+     "So với bài <a href=\"/f0/het-uu-dai-lai-suat-vay-mua-nha.html\">hết ưu đãi lãi suất vay mua nhà</a> để biết mức trả mỗi tháng."
+    ]
+   ],
+   [
+    "h2",
+    "Gửi kỳ dài hay ngắn: phép thử 10 giây"
+   ],
+   [
+    "p",
+    "Tính xem bao nhiêu phần trăm tiền tiết kiệm sẽ phải dùng trong 12 tháng tới. Đây là mốc em tự đặt để soi, không phải lời khuyên chung:"
+   ],
+   [
+    "table",
+    [
+     [
+      "Phần cần dùng trong 12 tháng",
+      "Cách đặt"
+     ],
+     [
+      "Dưới 30%",
+      "Phần lớn có thể khóa kỳ dài"
+     ],
+     [
+      "30% – 60%",
+      "Chia bậc thang: nhiều sổ<br>đến hạn ở các tháng khác nhau"
+     ],
+     [
+      "Trên 60%",
+      "Ưu tiên kỳ ngắn, dễ rút;<br>đừng chạy theo ưu đãi dài"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Chị Trang cần 150 triệu (học phí con, sửa xe) và giữ 100 triệu dự phòng: <b>250/600 ≈ 42%</b>, nên chị chia bậc thang:"
+   ],
+   [
+    "table",
+    [
+     [
+      "Khoản",
+      "Số tiền",
+      "Cách gửi"
+     ],
+     [
+      "Chắc chắn chưa cần trong năm",
+      "350 triệu",
+      "12 tháng,<br>niêm yết rõ"
+     ],
+     [
+      "Sắp tiêu",
+      "150 triệu",
+      "3 sổ kỳ ngắn, đến hạn<br>đúng tháng cần tiêu"
+     ],
+     [
+      "Dự phòng",
+      "100 triệu",
+      "Kỳ ngắn, rút được ngay"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Quỹ dự phòng nên tách riêng trước khi tính chuyện lãi cao, như bài <a href=\"/f0/quy-du-phong-truoc-khi-dau-tu.html\">quỹ dự phòng trước khi đầu tư</a>."
+   ],
+   [
+    "h2",
+    "Còn chứng khoán thì sao?"
+   ],
+   [
+    "p",
+    "Lãi tiết kiệm chỉ là một lực kéo, bên cạnh lợi nhuận doanh nghiệp, tỷ giá và dòng tiền ngoại. VN-Index (giá đóng cửa):"
+   ],
+   [
+    "table",
+    [
+     [
+      "Mốc",
+      "VN-Index"
+     ],
+     [
+      "15/12/2023 (VCB trả 4,8%)",
+      "1.102,30"
+     ],
+     [
+      "18/5/2026 (đỉnh đóng cửa)",
+      "1.927,94"
+     ],
+     [
+      "23/11/2026",
+      "1.697,14<br>(-12,0% so đỉnh)"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "Cách lãi suất tác động lên giá cổ phiếu ở bài <a href=\"/f0/lai-suat-tang-anh-huong-chung-khoan.html\">lãi suất tăng ảnh hưởng chứng khoán</a>; so tiết kiệm với tích sản cổ phiếu ở bài <a href=\"/f0/tich-san-co-phieu-hay-gui-tiet-kiem.html\">tích sản cổ phiếu hay gửi tiết kiệm</a> (cách tích sản Huy Nguyễn đang theo dõi ở <a href=\"/bao-cao-2026.html#tichsan\">bảng tích sản</a>). Em không nói nên mua hay bán."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp"
+   ],
+   [
+    "ul",
+    [
+     "<b>Đọc lãi quảng cáo như lãi niêm yết:</b> 9,1% = 6,9% + 2,2 điểm online, có hạn đến 30/11.",
+     "<b>Ghép số khác loại:</b> 6,38% là lãi bình quân giao dịch mới mọi kỳ hạn; 6,8% là niêm yết 12 tháng của 3 ngân hàng. Đừng so trực tiếp.",
+     "<b>Khóa hết 12 tháng cho lãi cao:</b> giữa năm cần tiền, rút trước hạn chỉ còn lãi không kỳ hạn."
+    ]
+   ],
+   [
+    "h2",
+    "Checklist: 3 điều theo dõi đến Tết"
+   ],
+   [
+    "ol",
+    [
+     "Ba ngân hàng lớn niêm yết 6,8% kỳ 12 tháng – có xuống dưới 6,5% chưa.",
+     "Ngân hàng có tung đợt ưu đãi cộng thêm mới trước Tết không (đợt cũ hết 30/11).",
+     "Ngày điều chỉnh lãi trong hợp đồng vay của chính mình."
+    ]
+   ],
+   [
+    "p",
+    "Cần trao đổi riêng cách chia tiền tiết kiệm và đầu tư cho gia đình, anh chị nhắn qua <a href=\"/tu-van-dau-tu-chung-khoan.html\">trang tư vấn</a>."
+   ],
+   [
+    "p",
+    "<small>Nguồn: VCCI/Bnews 10/11/2026; Thị trường Tài chính Tiền tệ 1/11/2026, 1/12/2022, 1/1/2023; Việt Báo 17/11/2026; Tạp chí Công Thương 8/10/2026; VnEconomy 12/12/2023; VnBusiness 10/11/2026. VN-Index: dữ liệu giá đóng cửa của web. Chị Trang là nhân vật giả định trong video cùng chủ đề; phép tính em tự tính. Chỉ để tham khảo, không phải khuyến nghị đầu tư.</small>"
+   ]
+  ],
+  "faq": [
+   [
+    "Lãi suất tiết kiệm tháng 11/2026 có giảm không?",
+    "Có. Theo họp báo Chính phủ 4/11/2026, NHNN yêu cầu giảm 0,5–1%/năm lãi tiền gửi mới kỳ hạn từ 6 tháng; bảng online 17/11 cho thấy Agribank, BIDV, VietinBank niêm yết 6,8% kỳ 12 tháng, Vietcombank 5,4%."
+   ],
+   [
+    "Lần trước lãi tiết kiệm giảm nhanh thế nào?",
+    "Đầu tháng 12/2022 có nơi trả 10% cho kỳ 12 tháng; tháng 1/2023 trần thống nhất 9,5%; đến tháng 12/2023 mức cao nhất kỳ 12 tháng chỉ còn 5,7%, Vietcombank 4,8%."
+   ],
+   [
+    "Lãi suất giảm nên gửi kỳ hạn dài hay ngắn?",
+    "Tùy phần tiền cần dùng trong 12 tháng tới: dưới 30% có thể khóa kỳ dài phần lớn; 30–60% chia bậc thang nhiều sổ; trên 60% ưu tiên kỳ ngắn dễ rút. Rút trước hạn thường chỉ được lãi không kỳ hạn."
+   ]
+  ],
+  "rel": [
+   "lai-suat-thuc-la-gi",
+   "het-uu-dai-lai-suat-vay-mua-nha",
+   "tich-san-co-phieu-hay-gui-tiet-kiem",
+   "quy-du-phong-truoc-khi-dau-tu",
+   "lai-suat-tang-anh-huong-chung-khoan"
   ]
  }
 ]
