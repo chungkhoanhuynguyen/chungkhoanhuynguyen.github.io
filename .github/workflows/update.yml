@@ -19,9 +19,10 @@ jobs:
           python-version: "3.12"
       - run: python update.py
       - run: python mw.py || true
+      - run: python _ts/ts_web.py || echo "::error::ts_web.py loi - bang tich san chua cap nhat"
       - run: |
           git config user.name "hn-bot"
           git config user.email "hn-bot@users.noreply.github.com"
-          git add -A data
+          git add -A data bao-cao-2026.html
           git diff --cached --quiet || git commit -m "Cap nhat bang $(date -u +%F)"
           for i in 1 2 3 4 5; do git pull --rebase -X theirs -q && git push -q && break; sleep $((i*7)); done  # QL1 23/11: tranh push voi workflow khac
