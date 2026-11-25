@@ -183,7 +183,7 @@ const terrMat=new T.MeshStandardMaterial({map:tGrass,roughness:1});
 terrMat.onBeforeCompile=s=>{Object.assign(s.uniforms,{tPath:{value:tPath},tRock:{value:tRock},tStone:{value:tex('granite_tile_03_Diffuse')}});
  s.vertexShader='varying vec3 vWP;varying vec3 vWN;\n'+s.vertexShader.replace('#include <worldpos_vertex>','#include <worldpos_vertex>\nvWP=(modelMatrix*vec4(transformed,1.)).xyz;vWN=normalize(mat3(modelMatrix)*objectNormal);');
  s.fragmentShader='uniform sampler2D tPath,tRock,tStone;varying vec3 vWP;varying vec3 vWN;float gPd=0.;\n'+GLN.replace('varying vec3 vWP;','')+s.fragmentShader.replace('#include <map_fragment>',`
- vec2 wp=vWP.xz;vec3 g1=texture2D(map,wp*.11).rgb,g2=texture2D(map,wp*.027+.3).rgb;vec3 gc=mix(g1,g2,.35)*vec3(.78,.98,.62);{float lu=vn(wp*.011+7.)*.65+vn(wp*.045+2.)*.35;gc*=mix(vec3(.72,.95,.7),vec3(1.04,1.,.8),smoothstep(.25,.75,lu));}{float nb=smoothstep(200.,330.,-wp.y)*smoothstep(-.15,.2,(-wp.y-abs(wp.x))/max(1.,-wp.y));gc=mix(gc,vec3(.56,.61,.7)*(.7+.55*dot(g1,vec3(.4))+.12*vn(wp*.07)),nb*.85);float wb=smoothstep(200.,330.,-wp.x)*smoothstep(-.15,.2,(-wp.x-abs(wp.y))/max(1.,-wp.x));gc=mix(gc,vec3(.58,.28,.16)*(.8+.3*vn(wp*.05)),wb*.62);}
+ vec2 wp=vWP.xz;vec3 g1=texture2D(map,wp*.11).rgb,g2=texture2D(map,wp*.027+.3).rgb;vec3 gc=mix(g1,g2,.35)*vec3(.78,.98,.62);{float lu=vn(wp*.011+7.)*.65+vn(wp*.045+2.)*.35;gc*=mix(vec3(.72,.95,.7),vec3(1.04,1.,.8),smoothstep(.25,.75,lu));}{float nb=smoothstep(200.,330.,-wp.y)*smoothstep(-.15,.2,(-wp.y-abs(wp.x))/max(1.,-wp.y));gc=mix(gc,vec3(.34,.37,.44)*(.72+.5*dot(g1,vec3(.4))+.18*vn(wp*.07)),nb*.85);float wb=smoothstep(200.,330.,-wp.x)*smoothstep(-.15,.2,(-wp.x-abs(wp.y))/max(1.,-wp.x));gc=mix(gc,vec3(.5,.17,.09)*(.75+.35*vn(wp*.05)+.2*dot(g1,vec3(.33))),wb*.82);}
  vec3 pc=texture2D(tPath,wp*.09).rgb;vec3 rc=mix(texture2D(tRock,vec2(vWP.x+vWP.z,vWP.y)*.06).rgb,texture2D(tRock,wp*.05).rgb,abs(vWN.y));
  float n=fb(wp*.04);float pw=smoothstep(.55,.7,n);float near=1.-smoothstep(36.,52.,max(abs(vWP.x),0.));pw=max(pw,smoothstep(5.,3.,abs(vWP.x))*step(22.,vWP.z)*.9);
  float rw=smoothstep(.86,.72,vWN.y)+smoothstep(30.,60.,vWP.y);vec3 col=mix(mix(gc,pc,pw),rc,clamp(rw,0.,1.));float cityM=step(max(abs(vWP.x),abs(vWP.z)),171.);vec3 st=texture2D(tStone,wp*.12).rgb*vec3(1.,.97,.92);col=mix(col,st,cityM);{float gx=mod(vWP.x+138.,24.),gz=mod(vWP.z+138.,24.);float dg=min(min(gx,24.-gx),min(gz,24.-gz));float rc=max(max(smoothstep(7.,6.,abs(vWP.x)),smoothstep(7.,6.,abs(vWP.z))),smoothstep(3.3,2.6,dg));rc*=cityM;
@@ -3973,19 +3973,22 @@ try{(function(){const HI=Math.min(devicePixelRatio,LITE?2:2),cam=new T.Vector3()
   if(mv){still=0;if(sharp){sharp=false;window.__sharpOn=false;setPR(aqPR())}}else{still+=.25;if(!sharp&&still>=1.5&&HI>renderer.getPixelRatio()+.05){sharp=true;window.__sharpOn=true;setPR(HI)}}},250);
  window.__sharp=()=>({sharp,pr:renderer.getPixelRatio(),HI,aq:AQ.lv});
 })()}catch(e){console.warn('sharp+',e)}
-/* ===== CHE KHUẤT THÀNH (25/11): đứng ngoài tường thành thì không vẽ nhà/đồ vật trong thành bị tường che (chỉ vẽ phần nhìn qua cổng hoặc nhô cao hơn tường) — nhìn vào thành từ cổng bớt hơn nửa lượt vẽ ===== */
+/* ===== CHE KHUẤT THÀNH (25/11, bản 2 26/11): đứng ngoài tường thành thì không vẽ nhà/đồ vật/khối gộp và người trong thành bị tường che (chỉ vẽ phần nhìn qua cổng hoặc nhô cao hơn tường). Ẩn ngay lúc vẽ rồi trả lại, không đụng tới hệ ẩn/hiện khác ===== */
 try{(function(){if(/nooccl/.test(location.search))return;const HW=CITY+3.5,WH=13,GAP=12;const L=[];const reg=new WeakSet();const B=new T.Box3(),V=new T.Vector3();
- function scan(){const es=new Set(ents.map(e=>e.c&&e.c.g));scene.children.forEach(o=>{if(reg.has(o)||es.has(o)||o.isLight||o.isCamera||!o.visible||o.userData.fxTemp||o.userData.gfxp||o.userData.lm||o.userData.merged)return;
-   let sk=false;o.traverse(q=>{if(q.isSkinnedMesh||q.isLight)sk=true});if(sk)return;B.setFromObject(o);if(B.isEmpty())return;const s=B.getSize(V);
-   if(Math.max(Math.abs(B.min.x),Math.abs(B.max.x),Math.abs(B.min.z),Math.abs(B.max.z))>CITY-4||s.x>60||s.z>60)return;reg.add(o);
-   const P=[];for(const x of[B.min.x,B.max.x])for(const y of[B.min.y,B.max.y])for(const z of[B.min.z,B.max.z])P.push([x,y,z]);P.push([(B.min.x+B.max.x)/2,B.max.y,(B.min.z+B.max.z)/2]);L.push({o,P,h:false})})}
+ function pts(B){const P=[],s=B.getSize(V),n=Math.max(s.x,s.z)>24?4:1;for(let i=0;i<=n;i++)for(let j=0;j<=n;j++){const x=B.min.x+s.x*i/n,z=B.min.z+s.z*j/n;P.push([x,B.max.y,z],[x,B.min.y,z])}P.push([(B.min.x+B.max.x)/2,B.max.y,(B.min.z+B.max.z)/2]);return P}
+ function scan(){const es=new Set(ents.map(e=>e.c&&e.c.g));scene.children.forEach(o=>{if(reg.has(o)||es.has(o)||o.isLight||o.isCamera||o.userData.fxTemp||o.userData.gfxp)return;
+   let sk=false;o.traverse(q=>{if(q.isSkinnedMesh||q.isLight)sk=true});if(sk)return;B.setFromObject(o);if(B.isEmpty())return;
+   if(Math.max(Math.abs(B.min.x),Math.abs(B.max.x),Math.abs(B.min.z),Math.abs(B.max.z))>CITY-4)return;reg.add(o);L.push({o,P:pts(B),h:false})})}
  /* tia từ camera tới điểm: điểm vào khối thành (|x|,|z|<=HW) — thấp hơn tường và ngoài khe cổng thì bị che */
  function seen(c,p){const dx=p[0]-c.x,dz=p[2]-c.z;let t0=0,t1=1;for(const[o,d]of[[c.x,dx],[c.z,dz]]){if(Math.abs(d)<1e-6){if(Math.abs(o)>HW)return true;continue}let a=(-HW-o)/d,b=(HW-o)/d;if(a>b)[a,b]=[b,a];t0=Math.max(t0,a);t1=Math.min(t1,b)}if(t0>t1)return true;
   const x=c.x+dx*t0,z=c.z+dz*t0,y=c.y+(p[1]-c.y)*t0;if(y>=WH)return true;const lat=Math.abs(Math.abs(x)>=HW-.01?z:x);return lat<GAP}
- let fr=0,was=null;const stat={n:0,hid:0};
- function upd(force){const c=camera.position,out=Math.max(Math.abs(c.x),Math.abs(c.z))>HW+.5;if(!force&&out===was&&fr%8)return;was=out;let hid=0;
-  for(const r of L){if(!r.o.parent){continue}let h=false;if(out){h=true;for(const p of r.P)if(seen(c,p)){h=false;break}}
-   if(h&&!r.h){if(r.o.visible){r.o.visible=false;r.h=true}}else if(!h&&r.h){r.o.visible=true;r.h=false}if(r.h)hid++}stat.n=L.length;stat.hid=hid}
+ let fr=0,was=null,out=false;const stat={n:0,hid:0,ent:0},HE=[];const ep=[[0,0,0],[0,0,0],[0,0,0]];
+ function upd(force){const c=camera.position;out=Math.max(Math.abs(c.x),Math.abs(c.z))>HW+.5;
+  if(force||out!==was||fr%8===0){was=out;let hid=0;for(const r of L){if(!r.o.parent){r.h=false;continue}let h=false;if(out){h=true;for(const p of r.P)if(seen(c,p)){h=false;break}}r.h=h;if(h)hid++}stat.n=L.length;stat.hid=hid}
+  if(fr%3===0){HE.length=0;if(out)for(const e of ents){if(e===hero||!e.c||!e.c.g)continue;const q=e.c.g.position;if(Math.max(Math.abs(q.x),Math.abs(q.z))>CITY-5)continue;ep[0][0]=ep[1][0]=ep[2][0]=q.x;ep[0][2]=ep[1][2]=ep[2][2]=q.z;ep[0][1]=q.y;ep[1][1]=q.y+2.4;ep[2][1]=q.y+1.2;let v=false;for(const p of ep)if(seen(c,p)){v=true;break}if(!v)HE.push(e.c.g)}stat.ent=HE.length}}
+ const R=renderer,_r=R.render.bind(R),off=[];
+ R.render=function(s,cam){if(s!==scene||cam!==camera||!out)return _r(s,cam);off.length=0;for(const r of L)if(r.h&&r.o.visible){r.o.visible=false;off.push(r.o)}for(const g of HE)if(g.visible){g.visible=false;off.push(g)}
+  try{return _r(s,cam)}finally{for(const o of off)o.visible=true}};
  (function tk(){requestAnimationFrame(tk);fr++;try{upd(false)}catch(e){}})();
  setTimeout(()=>{scan();upd(true)},20000);setInterval(()=>{if(hero&&hero.dashT>0)return;const n=L.length;scan();if(L.length!==n)upd(true)},30000);
  window.__occl=()=>stat;
@@ -4066,6 +4069,29 @@ try{(function(){const SM={},bx=new T.Box3(),inv=new T.Matrix4(),v=new T.Vector3(
  setInterval(()=>{try{for(const e of ents){if(e.team==='enemy'&&!e.dead&&e.c&&e.c.fx&&!e.c.fxFit&&e.c.g.visible)fit(e)}}catch(er){}},1000);
  window.__spk=()=>ents.filter(e=>e.c&&e.c.spk).length;
 })()}catch(e){console.warn('armor2+',e)}
+/* ===== VÙNG CẢNH ĐÔNG (26/11): bãi phía Đông có hồ sen (mặt nước + lá sen + hoa sen) và rừng tre — tất cả 5 lượt vẽ ===== */
+try{(function(){if(/noeast/.test(location.search))return;let sd=33091;const r=()=>{sd=(sd*16807)%2147483647;return sd/2147483647};
+ const east=(x,z)=>x>235&&Math.abs(z)<x*.9&&outside(x,z)&&Math.max(Math.abs(x),Math.abs(z))<1050&&Math.abs(z)>16;
+ const D=new T.Object3D(),C=new T.Color();
+ /* hồ sen */
+ const PD=[];let t=0;const NP=LITE?6:10;while(PD.length<NP&&t<600){t++;const x=250+r()*760,z=(r()-.5)*1.6*x,R=8+r()*9;if(!east(x,z))continue;let lo=1e9,hi=-1e9;for(let k=0;k<12;k++){const a=k/12*6.283;for(const f of[.5,1]){const y=Ht(x+Math.cos(a)*R*f,z+Math.sin(a)*R*f);lo=Math.min(lo,y);hi=Math.max(hi,y)}}const yc=Ht(x,z);lo=Math.min(lo,yc);hi=Math.max(hi,yc);if(hi-lo>.9||lo<-.2||PD.some(p=>Math.hypot(p[0]-x,p[2]-z)<R+p[3]+30))continue;PD.push([x,(lo+hi)/2+.12,z,R])}
+ if(PD.length){const gs=PD.map(([x,y,z,R])=>{const g=new T.CircleGeometry(R,28).rotateX(-Math.PI/2);const p=g.attributes.position;for(let i=1;i<p.count;i++){const a=Math.atan2(p.getZ(i),p.getX(i)),k=1+.14*Math.sin(a*3+x)+.08*Math.sin(a*5+z);p.setX(i,p.getX(i)*k);p.setZ(i,p.getZ(i)*k)}g.translate(x,y,z);return g});
+  const wg=(()=>{const P=[],N=[],U=[],I=[];let o=0;gs.forEach(g=>{const p=g.attributes.position,n=g.attributes.normal,u=g.attributes.uv;P.push(...p.array);N.push(...n.array);U.push(...u.array);g.index.array.forEach(v=>I.push(v+o));o+=p.count});const m=new T.BufferGeometry();m.setAttribute('position',new T.Float32BufferAttribute(P,3));m.setAttribute('normal',new T.Float32BufferAttribute(N,3));m.setAttribute('uv',new T.Float32BufferAttribute(U,2));m.setIndex(I);m.computeBoundingSphere();return m})();
+  const wm=new T.MeshStandardMaterial({color:0x1d5a5e,roughness:.08,metalness:.35,transparent:true,opacity:.86,envMapIntensity:1.2});const w=new T.Mesh(wg,wm);w.receiveShadow=!LITE;w.userData.nomerge=1;scene.add(w);
+  const pad=new T.CircleGeometry(.7,14,.25,5.8).rotateX(-Math.PI/2),pm=new T.MeshLambertMaterial({color:0xffffff,side:T.DoubleSide}),PL=[];PD.forEach(([x,y,z,R])=>{const n=Math.round(R*R*.35);for(let i=0;i<n;i++){const a=r()*6.283,d=Math.sqrt(r())*R*.85;PL.push([x+Math.cos(a)*d,y+.04,z+Math.sin(a)*d,.6+r()*.9])}});
+  const pi=new T.InstancedMesh(pad,pm,PL.length);PL.forEach((q,i)=>{D.position.set(q[0],q[1],q[2]);D.rotation.set(0,r()*6.3,0);D.scale.setScalar(q[3]);D.updateMatrix();pi.setMatrixAt(i,D.matrix);pi.setColorAt(i,C.setHSL(.26+r()*.06,.55,.24+r()*.12))});pi.receiveShadow=!LITE;scene.add(pi);
+  const fl=new T.LatheGeometry([[0,0],[.18,.05],[.3,.22],[.26,.4],[.12,.52],[0,.45]].map(p=>new T.Vector2(p[0],p[1])),8),fm=new T.MeshLambertMaterial({color:0xffffff,emissive:0x4a1830}),FL=PL.filter(()=>r()<.22);
+  const fi=new T.InstancedMesh(fl,fm,Math.max(1,FL.length));FL.forEach((q,i)=>{D.position.set(q[0],q[1]+.02,q[2]);D.rotation.set(0,r()*6.3,0);D.scale.setScalar(.9+r()*.5);D.updateMatrix();fi.setMatrixAt(i,D.matrix);fi.setColorAt(i,C.setHSL(.93+r()*.05,.55,.82+r()*.1))});scene.add(fi)}
+ /* rừng tre */
+ const BS=[];t=0;const NC=LITE?10:18,PER=LITE?9:14;while(BS.length<NC*PER&&t<NC*60){t++;const cx=250+r()*760,cz=(r()-.5)*1.6*cx;if(!east(cx,cz)||PD.some(p=>Math.hypot(p[0]-cx,p[2]-cz)<p[3]+10))continue;for(let i=0;i<PER;i++){const a=r()*6.283,d=Math.sqrt(r())*7,x=cx+Math.cos(a)*d,z=cz+Math.sin(a)*d;if(east(x,z))BS.push([x,Ht(x,z),z,7+r()*7,r()*6.3])}}
+ if(BS.length){const sg=new T.CylinderGeometry(.09,.12,1,5,8,true).translate(0,.5,0);{const p=sg.attributes.position;for(let i=0;i<p.count;i++){const y=p.getY(i);const k=Math.abs(((y*8)%1)-.5)<.06?1.25:1;p.setX(i,p.getX(i)*k);p.setZ(i,p.getZ(i)*k)}sg.computeVertexNormals()}
+  const sm=new T.MeshLambertMaterial({color:0x7aa648}),si=new T.InstancedMesh(sg,sm,BS.length);
+  const li=new T.InstancedMesh(canopy.geometry,cMat,BS.length*2);
+  BS.forEach((q,i)=>{const lean=(r()-.5)*.12;D.position.set(q[0],q[1]-.1,q[2]);D.rotation.set(lean,q[4],lean*.7);D.scale.set(1,q[3],1);D.updateMatrix();si.setMatrixAt(i,D.matrix);si.setColorAt(i,C.setHSL(.22+r()*.05,.45,.42+r()*.12));
+   for(const [f,w] of [[.62,.55],[.86,.42]]){const j=i*2+(f>.7?1:0);D.position.set(q[0]+Math.sin(lean)*q[3]*f,q[1]+q[3]*f,q[2]);D.rotation.set(lean,q[4]+f*3,0);D.scale.set(w,q[3]*.07,w);D.updateMatrix();li.setMatrixAt(j,D.matrix);li.setColorAt(j,C.setHSL(.24+r()*.05,.55,.3+r()*.12))}});
+  si.castShadow=li.castShadow=!LITE;si.receiveShadow=li.receiveShadow=!LITE;scene.add(si);scene.add(li)}
+ window.__east={ponds:PD.length,bamboo:BS.length,p0:PD.slice(0,2).map(q=>q.map(Math.round)),b0:BS.length?BS[0].map(Math.round):0};
+})()}catch(e){console.warn('east+',e)}
 window.__wp={renderer,T,WEAPONS,fabaoModel,TIERS,FBE,RT,VB:()=>VB,hero:()=>hero,TD:{tdKiem,tdXuan,tdBang,tdAn,swordRain,phoenix,tornado,maVortex,dQi:()=>dragonE('qi'),dTh:()=>dragonE('thunder'),dFi:()=>dragonE('fire'),dBl:()=>dragonE('blood'),vortex:()=>{const T0=performance.now();maVortex();return performance.now()-T0},ice:()=>{const t=TU.tong,r=TU.realm,l=TU.learned;TU.tong='thuy';TU.realm=4;TU.learned=['Huyền Băng Trảm','Băng Phong Vạn Lý'];hero.mp=100;P.cds[1]=0;try{_useSkill(1+'')}finally{TU.tong=t;TU.realm=r;TU.learned=l}}},TU:()=>TU};setTimeout(()=>{if(typeof TKACCT!=='undefined')TKACCT.boot()},0);
 window.__demo={closeInv:()=>closeInv(),castAt:(id,x,z)=>{const h=heroPos(),o=h.clone(),f=hero.face;h.x=x;h.z=z;hero.face=Math.random()*6.28;try{castCP(id,true)}catch(e){}h.copy(o);hero.face=f},BF,bfJoin,bfBuild,allEnts:()=>ents,ICL:()=>ICL,equipWeapon:(a,b)=>equipWeapon(a,b),wearBest,equip:i=>{equip.silent=1;try{equip(i)}finally{equip.silent=0}},heroPos,TRIB:()=>TRIB,addCorpse,deathDrop,ents:()=>ents,foe:e=>foe(e),castCP,CP,mkBook,learnBook,P2P,NET,itemCard,optHTML,onHunt,rankTick,RANK,WFALL,castFX,VILLC:()=>window.__vc,tribGo,tribReady,needXp,bankPanel,CG,titles,leaveBC,zoneStream,ZPOP,GANGS,PARTY,ptInvite,hit,NET,netUpd,CORPSE,goInt,toggleFly,updFabao,GARR,WFIX,spawnMon,EV,EVT,npcAct,openInv,SQUADS:()=>SQUADS,CIT:()=>CIT,MUS,PK,togglePK,callReinf,maAct,gainXp,realmText,updPK,INV,BC,mkItem,dropItem,enterBC,TU,refreshTL,bloom:()=>bloom,LOOK,buildAvatar,setSW:(a,b,c)=>{hero.vw&&hero.vw.rotation.set(a,b,c)},hero,P,useSkill,ents,setView:(y,p,d)=>{yaw=y;pitch=p;dist=d}};
 }
