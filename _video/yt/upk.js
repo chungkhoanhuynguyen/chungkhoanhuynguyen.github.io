@@ -10,10 +10,12 @@ window.__KP=async(i)=>{const S=ms=>new Promise(r=>setTimeout(r,ms));
  const ten=(document.body.innerText.match(/Kênh của bạn\n([^\n]+)/)||[])[1]||'';
  if(ten.trim()!==p.ten_kenh)return 'ERR SAI KENH: dang o "'+ten+'", can "'+p.ten_kenh+'"';
  const vb=await fetch(p.url).then(r=>r.blob());if(vb.size<3e5)return 'ERR mp4 '+vb.size;
+ for(let k=0;k<3;k++){const c=[...document.querySelectorAll('ytcp-button,button')].find(x=>/^Đóng$/.test(x.innerText.trim())&&x.offsetParent);if(!c)break;c.click();await S(1200);}
  let D=document.querySelector('ytcp-uploads-dialog');
  if(!D||!D.offsetParent){(document.querySelector('#upload-icon')||document.querySelector('#create-icon'))?.click();await S(1500);
   const up=[...document.querySelectorAll('tp-yt-paper-item')].find(x=>/Tải video lên/.test(x.innerText));if(up)up.click();await S(2000);D=document.querySelector('ytcp-uploads-dialog');}
- const inp=D.querySelector('input[type=file]');const dt=new DataTransfer();dt.items.add(new File([vb],p.key+'.mp4',{type:'video/mp4'}));inp.files=dt.files;inp.dispatchEvent(new Event('change',{bubbles:true}));
+ let inp=D&&D.querySelector('input[type=file]');
+ if(!inp){location.href=location.pathname.split('/').slice(0,3).join('/')+'/videos/upload?d=ud';return 'ERR mo hop thoai tai len that bai – trang da tai lai, dan lai upk.js roi chay tiep tu '+i;}const dt=new DataTransfer();dt.items.add(new File([vb],p.key+'.mp4',{type:'video/mp4'}));inp.files=dt.files;inp.dispatchEvent(new Event('change',{bubbles:true}));
  for(let k=0;k<40&&D.querySelectorAll('#textbox').length<2;k++)await S(500);await S(2000);
  const tb=[...D.querySelectorAll('#textbox')];const setT=(el,t)=>{el.focus();document.execCommand('selectAll');document.execCommand('insertText',false,t);el.dispatchEvent(new Event('input',{bubbles:true}));};
  setT(tb[0],p.title.slice(0,100));await S(400);setT(tb[1],p.mo_ta);await S(600);
@@ -35,6 +37,6 @@ window.__KP=async(i)=>{const S=ms=>new Promise(r=>setTimeout(r,ms));
  D.querySelector('#done-button').click();await S(4000);
  const ok=[...document.querySelectorAll('ytcp-button,button')].find(x=>/Đã hiểu/.test(x.innerText.trim())&&x.offsetParent);if(ok){ok.click();await S(2500);}
  const t=(document.body.innerText.match(/công khai vào[^\n]{0,40}/)||[''])[0];const lk=(document.body.innerText.match(/https:\/\/youtube\.com\/shorts\/\S+/)||[''])[0];
- const cl=[...document.querySelectorAll('ytcp-button,button')].find(x=>/^Đóng$/.test(x.innerText.trim())&&x.offsetParent);if(cl)cl.click();
+ for(let k=0;k<8;k++){const cl=[...document.querySelectorAll('ytcp-button,button')].find(x=>/^Đóng$/.test(x.innerText.trim())&&x.offsetParent);if(cl){cl.click();break;}await S(1000);}
  return 'OK '+i+' '+p.kenh+' '+want+' '+p.gio+' '+(lk||link)+' '+t;};
 'upk ready';
