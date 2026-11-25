@@ -4521,7 +4521,13 @@ try{(function(){
   if(R()<.25){const pi=Math.floor(R()*3);fam+=', '+PET[pi];lines.push(pi===1?'chó sủa cả đêm':pk(['con mèo nhảy lên bàn phím','cho mèo ăn đã']))}
   const sch=S[j[1]].map(([a,b])=>{const d=(Math.floor(R()*5)-2)*.5;return[a+d,b+d]});
   const jl=j.slice(4);return{j:j[0],age,w,fam,fem,l:jl.concat(lines,[pk(GEN),pk(GEN)]),b:bye.concat(['off đây ae','mai on tiếp']),sch,jit:R()*.4}}
- function per(e){if(e.per)return e.per;const p=build(e.name);p.liar=hs(e.name+'!')%4===0;if(p.liar){const f=build(e.name+'#fake');p.fake=f;f.j=pick([f.j,'giám đốc công ty riêng','chủ 3 cái nhà hàng','phi công','ca sĩ','cầu thủ hạng nhất','đại gia BĐS',f.j]);if(Math.random()<.4)f.fem=!p.fem;p.l=p.l.concat(['acc t cày 3 tháng ko nghỉ ngày nào','hôm qua t solo boss 1 mình','t quen admin game đấy','đồ t full đỏ cả bộ'])}e.per=p;e.sch=p.sch;e.jit=p.jit;return p}
+ const BRAG=['acc t cày 3 tháng ko nghỉ ngày nào','hôm qua t solo boss 1 mình','t quen admin game đấy','đồ t full đỏ cả bộ'];
+ const LVx=e=>e.phamLv||(e.realm!=null?lvOf(e.realm,e.tang||1):1);
+ function khia(liar,kind){try{const a=ents.filter(x=>x.team==='bot'&&!x.dead&&!x.guard&&!x.net&&!x.pt&&x.name&&x!==liar&&x!==hero);if(!a.length)return;const b=pick(a),n=liar.name,lv=LVx(liar);
+  const L=kind==='troll'?['đừng nghe '+n+' nó troll đấy','lại xạo r '+n,n+' nói nhảm đó đừng tin','ông '+n+' chỉ đường thế ai mà lần']:['thôi bố đừng bốc phét nữa',n+' lại nổ r','cấp '+lv+' mà nói như đúng r','nổ vừa thôi '+n,'tin '+n+' thì có mà ăn cám','lại chém gió','ừ ừ m nhất r '+n];
+  setTimeout(()=>{try{chat0('<span class="n">'+esc(b.name)+'</span>: '+pick(L),'');if(Math.random()<.4)setTimeout(()=>chat0('<span class="n">'+esc(n)+'</span>: '+pick(['ghen ăn tức ở à','ko tin thì thôi','kệ m','thật mà','m biết j']),''),6000+Math.random()*7000)}catch(_){}},4000+Math.random()*7000)}catch(_){}}
+ window.__khia=khia;window.__khiaN=(n,k)=>khia(ents.find(x=>x.name===n),k||'brag');
+ function per(e){if(e.per)return e.per;const p=build(e.name);p.liar=hs(e.name+'!')%4===0;if(p.liar){const f=build(e.name+'#fake');p.fake=f;f.j=pick([f.j,'giám đốc công ty riêng','chủ 3 cái nhà hàng','phi công','ca sĩ','cầu thủ hạng nhất','đại gia BĐS',f.j]);if(Math.random()<.4)f.fem=!p.fem;p.l=p.l.concat(BRAG)}e.per=p;e.sch=p.sch;e.jit=p.jit;return p}
  const P=J;
  const isB=e=>e&&e.team==='bot'&&!e.guard&&!e.net&&e.name&&e!==hero;
  const all=()=>ents.filter(isB);
@@ -4529,10 +4535,10 @@ try{(function(){
  window.__persona=n=>{const e=ents.find(x=>x.name===n);return e&&per(e)};
  const say=(e,t,r)=>{chat0('<span class="n"'+(r?' data-r="1"':'')+'>'+esc(e.name)+'</span>: '+t,'');try{if(e.c.g.visible&&e.lab&&e.c.g.position.distanceTo(heroPos())<25)bubble(e,t)}catch(_){}};
  /* than chuyện đời trên kênh */
- setInterval(()=>{try{if(Math.random()<.45)return;const a=all().filter(e=>!e.dead);if(!a.length)return;const e=pick(a),p=per(e);say(e,pick(p.l))}catch(_){}},75000);
+ setInterval(()=>{try{if(Math.random()<.45)return;const a=all().filter(e=>!e.dead);if(!a.length)return;const e=pick(a),p=per(e),ln=pick(p.l);say(e,ln);if(p.liar&&BRAG.includes(ln)&&Math.random()<.5)khia(e,'brag')}catch(_){}},75000);
  /* hỏi chuyện đời thì trả lời theo vai */
  const QJ=/làm (nghề )?(gì|j)|nghề gì|đi làm chưa|công việc|làm ở đâu/,QA=/bao nhiêu tuổi|bn tuổi|mấy tuổi|tuổi gì|sinh năm/,QW=/ở đâu|nhà ở|quê|tỉnh nào|ở tp nào/,QF=/vợ|chồng|có con|con mấy tuổi|\bny\b|người yêu|gia đình|độc thân/,QG=/trai hay gái|là nam|là nữ|gái à|trai à/;
- function lifeAns(e,t){const r0=per(e),p=r0.liar&&Math.random()<.7?Object.assign({},r0,r0.fake):r0;
+ function lifeAns(e,t){const r0=per(e),fk=r0.liar&&Math.random()<.7,p=fk?Object.assign({},r0,r0.fake):r0;if(fk&&/làm|nghề/.test(t)&&p.j!==r0.j&&Math.random()<.4)khia(e,'brag');
   if(QJ.test(t))return /học sinh|sinh viên|tìm việc|nghỉ hưu|nội trợ|bỉm/.test(p.j)?pick([p.j+' thôi','đang '+p.j,p.j+' bạn ơi']):pick(['t làm '+p.j,p.j+' thôi','làm '+p.j+' kiếm cơm',p.j+' ông ạ']);
   if(QA.test(t))return pick([p.age+' r',p.age+' tuổi','năm nay '+p.age,'già r '+p.age+' rồi']);
   if(QG.test(t))return p.fem?pick(['gái nha','nữ đó','con gái mà']):pick(['trai 100%','nam nha','trai mà']);
@@ -4555,7 +4561,7 @@ try{(function(){
   if(isAuto(b))return pick(['t treo auto cả ngày có biết j đâu','auto cày thôi ko để ý mấy cái đó','ko rõ t toàn treo máy','cấp cao nhưng toàn auto nên mù tịt'].concat(pro?['hỏi '+pro+' kìa nó rành']:[]));
   return pick(['ko rõ bro, t mới chơi','t cũng ko rõ bro à','ko biết nữa','chịu, t cũng đang tìm','hỏi mấy ông cấp cao ở quảng trường ấy họ rõ hơn','ra quảng trường hỏi mấy thằng cấp cao ấy'].concat(pro?['hỏi '+pro+' ấy','ông '+pro+' rành cái này đó']:[]))}
  const _br=botReply;botReply=function(m){try{const t=String(m).toLowerCase();if(Q.test(t)&&!LIFE.test(t)){const a=B();if(a.length){const b=t&&a.find(e=>t.includes(e.name.toLowerCase()))||pick(a);
-   const lie=hs(b.name+'!')%4===0&&Math.random()<.5;if(lie||Math.random()>know(b)){const line=lie?pick(['ra map tuyết phía bắc ấy','phải lên cấp 300 mới làm được','tối 12h mới mở','hỏi NPC ở cổng tây ấy','ném đồ xuống sông là được','gõ /admin là ra','qua bí cảnh đánh con boss cuối là có']):dunno(b);setTimeout(()=>{try{chat0('<span class="n" data-r="1">'+esc(b.name)+'</span>: '+line,'');if(b.c.g.visible&&b.lab&&b.c.g.position.distanceTo(heroPos())<25)bubble(b,line)}catch(_){}},1800+Math.random()*2500);
+   const lie=hs(b.name+'!')%4===0&&Math.random()<.5;if(lie||Math.random()>know(b)){const line=lie?pick(['ra map tuyết phía bắc ấy','phải lên cấp 300 mới làm được','tối 12h mới mở','hỏi NPC ở cổng tây ấy','ném đồ xuống sông là được','gõ /admin là ra','qua bí cảnh đánh con boss cuối là có']):dunno(b);if(lie&&Math.random()<.45&&window.__khia)__khia(b,'troll');setTimeout(()=>{try{chat0('<span class="n" data-r="1">'+esc(b.name)+'</span>: '+line,'');if(b.c.g.visible&&b.lab&&b.c.g.position.distanceTo(heroPos())<25)bubble(b,line)}catch(_){}},1800+Math.random()*2500);
     /* đứa khác rành hơn có thể trả lời sau, hoặc chẳng ai trả lời */
     if(Math.random()<.55){const ar=arguments,me=this;setTimeout(()=>_br.apply(me,ar),5000+Math.random()*6000)}return}}}}catch(_){}return _br.apply(this,arguments)};
  window.__know={know,isAuto,dunno:n=>{const e=B().find(x=>x.name===n);return e&&dunno(e)},ask:q=>botReply(q)};
