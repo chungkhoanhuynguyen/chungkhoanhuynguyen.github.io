@@ -1,0 +1,1 @@
+SP2511CHENH22 | ĐẠT: kiem_loi rỗng, soát 0 LỖI, -10,8 LUFS, 53s, 100% đồ hoạ. Kênh @6, dòng 288 kp_lich (27/11 11:30). Nguồn: CafeF 20/11/2026, Investing 21/8/2026. Short MẪU của ppc_kenh_phu v1.0.
