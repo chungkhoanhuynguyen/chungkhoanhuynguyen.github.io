@@ -4482,9 +4482,9 @@ try{(function(){
   {j:'nhân viên mới ra trường',a:[22,25],w:'Sài Gòn',s:[[12,13],[20,24]],f:['ở trọ 1 mình','có ny cùng công ty'],l:['lương thử việc ít quá','sếp giao deadline gấp','mới đi làm tuần đầu mệt'],b:['mai đi làm sớm','ny gọi r']},
   {j:'game thủ cày thuê',a:[19,26],w:'Hải Dương',s:[[0,4],[10,24]],f:['ở nhà với bố mẹ','chưa có ny'],l:['đang cày thuê acc cho khách','ngồi máy cả ngày mỏi lưng','có ai thuê cày ko ib'],b:['đi ăn đã','nghỉ tí mỏi mắt']},
   {j:'trưởng phòng kinh doanh',a:[38,48],w:'Hà Nội',s:[[21,23.5]],f:['có vợ và 2 con','con lớn học cấp 3'],l:['tiếp khách xong về lên chơi','họp cả ngày đau đầu','đi nhậu với đối tác về'],b:['vợ giục đi ngủ','mai bay công tác']});
- function hint(n){const s=n.toLowerCase().replace(/[^a-z0-9]/g,''),r={};let m=n.match(/(19[5-9]\d|20[01]\d)/);if(m)r.age=2026-+m[1];
-  else if((m=s.match(/([5-9]\d)$/)))r.age=2026-(1900+ +m[1]);else if(/2k(\d)?/.test(s))r.age=2026-(2000+(+(s.match(/2k(\d)/)||[0,3])[1]));else if(/9x/.test(s))r.age=27+hs(n)%9;else if(/8x/.test(s))r.age=37+hs(n)%9;
-  if(/nhoc|kid|baby|teen|hocsinh|\bhs|lop\d|boy|girl|cute|bede|emyeu|cunyeu/.test(s))r.y=1;
+ function hint(n){const s=n.toLowerCase().replace(/[^a-z0-9]/g,''),r={},q=hs(n+'#')%10;let m=n.match(/(19[5-9]\d|20[01]\d)/);if(m&&q<6)r.age=2026-+m[1];
+  else if(!m&&(m=s.match(/([5-9]\d)$/))&&q<3)r.age=2026-(1900+ +m[1]);else if(/2k(\d)?/.test(s))r.age=2026-(2000+(+(s.match(/2k(\d)/)||[0,3])[1]));else if(/9x/.test(s))r.age=27+hs(n)%9;else if(/8x/.test(s))r.age=37+hs(n)%9;
+  if(/hocsinh|\bhs|lop\d/.test(s)||(/nhoc|kid|baby|teen|boy|girl|cute|bede|emyeu|cunyeu/.test(s)&&q%2))r.y=1;
   if(/bodoi|quandoi|linhgac/.test(s))r.k='bộ đội';if(/dev|coder|code|it\b/.test(s))r.k='dev';if(/grab|taxi|xeom|taixe/.test(s))r.k='tài xế';if(/ketoan/.test(s))r.k='kế toán';if(/caythue|pro|gamer|vn$|thanhnien/.test(s))r.g=1;
   if(/trum|daica|anhba|anhhai|boss|sep|chubac|ongtrum|giaroi/.test(s))r.o=1;return r}
  function fit(n,h){const t=hint(n);let C=P.slice();if(t.k){const f=C.filter(p=>p.j.includes(t.k));if(f.length){const p=f[h%f.length];let ag=t.age||p.a[0]+h%(p.a[1]-p.a[0]+1);ag=Math.max(p.a[0],Math.min(p.a[1]+4,ag));return [p,ag]}}
