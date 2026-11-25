@@ -745,8 +745,8 @@ function botQi(e,t){const st=e.c.g.position.clone().setY(e.c.g.position.y+1.2),d
  m.position.copy(st);m.lookAt(st.clone().add(dir));if(m.geometry.type==='CylinderGeometry')m.rotateX(Math.PI/2);else{m.rotateY(Math.PI/2);m.rotateX(Math.PI/2)}
  const dist=st.distanceTo(t.c.g.position);addFx(m,Math.min(.6,dist/30),(o,k,dt)=>{o.m.position.addScaledVector(dir,30*dt);if(Math.random()<.5){const p=o.m.position;emit(p.x,p.y,p.z,0,.3,0,...g,.4,.3,0,1)}})}
 /* ---------- chat & số ---------- */
-const BCQ={last:0,gap:10,q:[],who:{}};setInterval(()=>{if(!BCQ.q.length)return;const now=Date.now();const it=BCQ.q[0];if(now-BCQ.last<BCQ.gap*1000||now<it[2])return;BCQ.q.shift();BCQ.last=now;BCQ.gap=9+Math.random()*12;chat0(it[0],it[1])},500);
-function chat(html,cls){if(typeof html==='string'&&html.startsWith('<span class="n">')&&cls!=='rp'){const nm=(html.match(/^<span class="n">([^<]*)/)||[])[1]||'',now=Date.now();if(BCQ.q.length>=2||(BCQ.who[nm]&&now-BCQ.who[nm]<90000))return;BCQ.who[nm]=now;BCQ.q.push([html,cls,now+2500+Math.random()*4000]);return}chat0(html,cls)}
+const BCQ={last:0,gap:10,q:[],who:{}};setInterval(()=>{if(!BCQ.q.length)return;const now=Date.now();const it=BCQ.q[0];if(now-BCQ.last<BCQ.gap*1000||now<it[2])return;BCQ.q.shift();BCQ.last=now;BCQ.gap=5+Math.random()*7;chat0(it[0],it[1])},500);
+function chat(html,cls){if(typeof html==='string'&&html.startsWith('<span class="n">')&&cls!=='rp'){const nm=(html.match(/^<span class="n">([^<]*)/)||[])[1]||'',now=Date.now();if(BCQ.q.length>=3||(BCQ.who[nm]&&now-BCQ.who[nm]<60000))return;BCQ.who[nm]=now;BCQ.q.push([html,cls,now+2500+Math.random()*4000]);return}chat0(html,cls)}
 function chat0(html,cls){const p=document.createElement('p');p.className=cls||'';p.innerHTML=html;const c=$('chat');c.appendChild(p);while(c.children.length>5)c.firstChild.remove();setTimeout(()=>p.remove(),14000)}
 const esc=s=>s.replace(/[&<>"']/g,m=>'&#'+m.charCodeAt(0)+';');
 const dmgs=[];function skillName(name,col,big){const d=document.createElement('div');d.className='skn'+(big?' big':'');d.textContent=name;d.style.setProperty('--c',col);document.body.appendChild(d);
@@ -1168,8 +1168,8 @@ function updCorpse(dt,time){if(!ABS.lt){ABS.lt=new T.PointLight(0xff2a60,0,9);sc
  if(Math.random()<.3)emit(c.sp.position.x+R2(.5),c.sp.position.y-.6,c.sp.position.z+R2(.5),0,1.2,0,2.4,.3,.8,.6,.6,-.3,1);
  const ph=hero.c.w.userData.kind==='phien';
  const near=Math.hypot(hp.x-c.sp.position.x,hp.z-c.sp.position.z);
- if(!c.ab&&!hero.dead&&ph&&near<4.5&&!ABS.on){c.ab=1;if(!c.dur){c.dur=5+Math.random()*5;c.k=0;c.got=0}c.tk=.4;c.sk=0;ABS.on=true;ABS.c=c;P.v.set(0,0,0);sfx('wind');sfx('roar',.2);chat('Giương <b>Vạn Hồn Phiên</b> thu hồn phách <b>'+esc(c.name)+'</b> — đứng yên đến khi hút xong (Space để hủy).','s');ring(c.sp.position.clone().setY(H(c.sp.position.x,c.sp.position.z)),0xff2050,5,.8);try{const X=cpTex(),q=c.sp.position.clone();q.y=H(q.x,q.z)+.1;fxQuad(X.ringrune,new T.Color(1,.1,.35),9,9,q,{flat:1,dur:c.dur+.3,add:1,upd:(o,k,dt)=>{o.m.rotation.y-=dt*1.6;if(c.ab!==1)o.t=o.d}});fxQuad(X.nova,new T.Color(.8,.1,.6),6,6,q.clone().setY(q.y+.05),{flat:1,dur:c.dur+.3,add:1,upd:(o,k,dt)=>{o.m.rotation.y+=dt*3;if(c.ab!==1)o.t=o.d}});fxQuad(X.beam,new T.Color(1,.15,.4),3,14,q,{anchor:1,cross:1,dur:c.dur+.3,add:1,upd:(o)=>{if(c.ab!==1)o.t=o.d}})}catch(e){}}
- if(c.ab===1){if(hero.dead||!ph||ABS.cancel){ABS.on=false;ABS.cancel=false;c.ab=0;hbBtn(false);chat('Hút hồn bị gián đoạn — quay lại hút tiếp phần còn lại.','k')}
+ if(!c.ab&&!hero.dead&&ph&&near<4.5&&!ABS.on&&c.ok){c.ab=1;if(!c.dur){c.dur=5+Math.random()*5;c.k=0;c.got=0}c.tk=.4;c.sk=0;ABS.on=true;ABS.c=c;P.v.set(0,0,0);sfx('wind');sfx('roar',.2);chat('Giương <b>Vạn Hồn Phiên</b> thu hồn phách <b>'+esc(c.name)+'</b> — đứng yên đến khi hút xong (Space để hủy).','s');ring(c.sp.position.clone().setY(H(c.sp.position.x,c.sp.position.z)),0xff2050,5,.8);try{const X=cpTex(),q=c.sp.position.clone();q.y=H(q.x,q.z)+.1;fxQuad(X.ringrune,new T.Color(1,.1,.35),9,9,q,{flat:1,dur:c.dur+.3,add:1,upd:(o,k,dt)=>{o.m.rotation.y-=dt*1.6;if(c.ab!==1)o.t=o.d}});fxQuad(X.nova,new T.Color(.8,.1,.6),6,6,q.clone().setY(q.y+.05),{flat:1,dur:c.dur+.3,add:1,upd:(o,k,dt)=>{o.m.rotation.y+=dt*3;if(c.ab!==1)o.t=o.d}});fxQuad(X.beam,new T.Color(1,.15,.4),3,14,q,{anchor:1,cross:1,dur:c.dur+.3,add:1,upd:(o)=>{if(c.ab!==1)o.t=o.d}})}catch(e){}}
+ if(c.ab===1){if(hero.dead||!ph||ABS.cancel){ABS.on=false;ABS.cancel=false;c.ab=0;c.ok=0;hbBtn(false);chat('Hút hồn bị gián đoạn — quay lại hút tiếp phần còn lại.','k')}
   else{ABS.bomb=false;c.k+=dt;c.tk-=dt;c.sk-=dt;hero.castT=Math.max(hero.castT||0,.3);hero.atk=0;faceTo(hero,c.sp.position);const tip=phienTip(),src=c.sp.position;
    // dòng sinh khí: hàng chục hạt xoắn ốc bay từ xác vào đầu phiên
    for(let q=0;q<(LITE?4:10);q++){const a=Math.random()*6.28,r=.4+Math.random()*1.6,sx=src.x+Math.cos(a)*r,sy=src.y-1+Math.random()*1.8,sz=src.z+Math.sin(a)*r,d=tmp.set(tip.x-sx,tip.y-sy,tip.z-sz),l=d.length()||1,sp2=6+Math.random()*6,tw=new T.Vector3(-d.z,0,d.x).normalize().multiplyScalar(2.5);
@@ -3357,10 +3357,7 @@ try{(function(){
 try{(function(){
  const SK={kim:['Vạn Kiếm Quy Tông','#cfe6ff','crescent'],moc:['Thanh Long Giáng Thế','#7dff9a','petal'],thuy:['Huyền Băng Trảm','#9fe8ff','shard'],hoa:['Phượng Hoàng Liệt Diễm','#ff8a3a','flame'],tho:['Trấn Thiên Ấn','#e0aa66','ringrune'],ma:['Vạn Hồn Phệ Thiên','#ff4a6a','nova'],_:['Lục Mạch Thần Kiếm','#7fe8ff','crescent']};
  function skill(e,t,near){const p=e.c.g.position,k=SK[e.tong]||SK._,tp=G0(t.c.g.position),col=new T.Color(k[1]);
-  if(near&&!e.cull&&e.c.g.visible){const X=cpTex();dmgText(p.clone().setY(p.y+3.2),k[0],k[1],true);ring(tp,col.getHex(),5,.6);
-   fxQuad(X.ringrune,col,6,6,tp.clone().setY(tp.y+.12),{flat:1,dur:1.1,upd:(o,kk,dt)=>{o.m.rotation.y+=dt*3}});fxQuad(X.beam,col,2.2,9,tp,{anchor:1,cross:1,dur:.55});
-   for(let i=0;i<6;i++){const a=i/6*6.283,q=tp.clone().add(new T.Vector3(Math.cos(a)*2,0,Math.sin(a)*2));if(k[2]==='flame')spike(q,3+Math.random()*2,col.getHex(),.9,.25);else fxQuad(X[k[2]]||X.crescent,col,1.2,2.6,q,{anchor:1,cross:k[2]==='shard',dur:.9,ry:a,upd:(o,kk)=>{o.m.scale.set(1,Math.min(1,kk*6),1)}})}
-   for(let i=0;i<24;i++){const a=Math.random()*6.28;emit(tp.x,tp.y+.6,tp.z,Math.cos(a)*6,2+Math.random()*4,Math.sin(a)*6,col.r*2.2,col.g*2.2,col.b*2.2,.5,.6,-2,1)}if(p.distanceTo(heroPos())<26)sfx('magic')}
+  if(near&&!e.cull&&e.c.g.visible&&tp.distanceTo(camera.position)<60){/* bot tung chiêu: hiệu ứng nhẹ — 1 vòng + ít tia, không chữ, không cột sáng */ring(tp,col.getHex(),4.5,.45);for(let i=0;i<8;i++){const a=Math.random()*6.28;emit(tp.x,tp.y+.5,tp.z,Math.cos(a)*5,1.5+Math.random()*3,Math.sin(a)*5,col.r*1.8,col.g*1.8,col.b*1.8,.4,.5,-2,1)}if(p.distanceTo(heroPos())<20)sfx('magic')}
   const L=botL(e),dm=Math.floor((t.team==='enemy'?1400*(1+L/12):60+L*14)*(2.6+Math.random()*.8));e.atk=1;hit(e,t,dm,true)}
  function flee(e,from){const p=e.c.g.position;let dx=p.x-from.x,dz=p.z-from.z;const l=Math.hypot(dx,dz)||1;dx/=l;dz/=l;let x=p.x+dx*16,z=p.z+dz*16;
   if(e.inBC){const d=Math.hypot(x-BC.x,z-BC.z);if(d>BC.r-8){x=BC.x+(x-BC.x)/d*(BC.r-8);z=BC.z+(z-BC.z)/d*(BC.r-8)}}
@@ -3603,7 +3600,7 @@ try{(function(){
    if(e.runTown&&!inCity(p)){const l=Math.hypot(p.x,p.z)||1,s=Math.min(17,Math.max(6,l-CITY+6));e.klCd=now+.9+Math.random()*.6;leap(e,p.x-p.x/l*s,p.z-p.z/l*s,.7,3.2,Math.random()<.3?pick(TOWN):null);continue}
    if(e.runTown&&inCity(p)){e.runTown=0}
    if(e.fleeT>0){const w=e.wp||(e.dest?{x:e.dest[0],z:e.dest[1]}:null);if(w){const dx=w.x-p.x,dz=w.z-p.z,l=Math.hypot(dx,dz);if(l>5){const s=Math.min(15,l);e.klCd=now+1.4;leap(e,p.x+dx/l*s,p.z+dz/l*s,.65,3,null)}}continue}
-   if(!t)continue;const tp=t.c.g.position,dx=tp.x-p.x,dz=tp.z-p.z,d=Math.hypot(dx,dz);
+   if(!t){if(!inCity(p)&&(e.dest||e.route||e.trav||e.wp)&&Math.random()<.07){const tx=p.x+Math.sin(e.face||0)*13,tz=p.z+Math.cos(e.face||0)*13;if(!inCity({x:tx,z:tz})){e.klCd=now+3+Math.random()*4;leap(e,tx,tz,.62,3,Math.random()<.2?pick(TOWN):null)}}else e.klCd=now+.8;continue}const tp=t.c.g.position,dx=tp.x-p.x,dz=tp.z-p.z,d=Math.hypot(dx,dz);
    if(d>9&&d<38&&Math.random()<.55){const s=Math.min(18,d-2.2);e.klCd=now+2.2+Math.random()*2.5;leap(e,p.x+dx/d*s,p.z+dz/d*s,s/24+.15,s>10?3.2:2,Math.random()<.25?pick(TOWN):null);continue}
    if(d<4.5&&Math.random()<.18){const sd=Math.random()<.5?1:-1,bx=-dx/d*.5,bz=-dz/d*.5;e.klCd=now+3+Math.random()*3;leap(e,p.x+(-dz/d*sd+bx)*5.5,p.z+(dx/d*sd+bz)*5.5,.32,1.3,'Né!');continue}
    e.klCd=now+.8}}
@@ -3770,6 +3767,42 @@ try{(function(){
  const _t=bfTick;bfTick=function(dt){_t(dt);if(BF.in&&BF.built){try{bfBots(dt);if(P.auto&&P.auto.bfo){const o=P.auto.bfo;if(o.dead)P.auto=null;else px(o)}}catch(e){if(!bfBots.w){bfBots.w=1;console.warn('bf3',e)}}}};
  window.__bf3={px,CH};
 })()}catch(e){console.warn('bf3',e)}
+/* ===== CHAT BOT THÔNG MINH (25/11): bot hiểu câu hỏi (chỗ nào, mấy giờ, mua bán, lên cấp, tông môn...) và trả lời đúng theo game, gọi tên người chơi, nhận xét cảnh giới/đồ của người chơi, cãi lại khi bị chửi, không lặp câu ===== */
+try{(function(){
+ const RC=[];const once=a=>{const f=a.filter(x=>!RC.includes(x));const r=pick(f.length?f:a);RC.push(r);if(RC.length>40)RC.shift();return r};
+ const me=()=>LOOK.name||'bạn',rl=()=>REALMS[TU.realm]||'Phàm Nhân',hi=()=>TU.realm>=3;
+ const bcT=()=>{try{return window.bcOpen&&window.bcOpen()?'đang mở đó, vào lẹ':'mở lúc '+window.bcNext()}catch(e){return 'mở mỗi 2 tiếng giờ chẵn'}};
+ function speaker(){const hp=heroPos();const L=ents.filter(e=>e.team==='bot'&&!e.dead&&!e.guard&&e.name);L.sort((a,b)=>a.c.g.position.distanceTo(hp)-b.c.g.position.distanceTo(hp));return L.length?pick(L.slice(0,Math.min(8,L.length))):null}
+ function stallOffer(t){const S=STALLS.filter(s=>!s.shop&&s.owner&&s.owner!==LOOK.name&&s.items&&s.items.length);if(!S.length)return null;const want=/vũ khí|kiếm|đao|thương|phiên/.test(t)?'weapon':/áo|bào/.test(t)?'robe':/nhẫn/.test(t)?'ring':/giày/.test(t)?'boots':null;
+  for(const s of S.sort(()=>Math.random()-.5)){const it=s.items.find(i=>!want||i.slot===want);if(it)return[s.owner,'sạp mình có '+it.name+(it.star?' +'+it.star:'')+' giá '+it.price+' linh thạch, ghé chợ quảng trường mà xem']}return null}
+ function answer(m){const t=m.toLowerCase(),q=/\?|ở đâu|chỗ nào|đâu vậy|sao|thế nào|làm sao|cách|mấy giờ|bao giờ|khi nào|ai /.test(t);
+  if(/dmm|đm|đmm|ngu|óc chó|gà|clgt|cc\b|vl|cút/.test(t))return[once(['ăn nói cho đàng hoàng đi '+me(),'gà mà to mồm 🤣','ra ngoài cổng solo không','chửi gì chửi lắm thế','ngon thì PK đi','nói nhiều thế, lên cấp đi đã']),.7];
+  if(/chào|hello|\bhi\b|alo|xin chào/.test(t))return[once(['chào '+me()+' 👋','chào đạo hữu '+me(),'hi '+me()+', '+rl()+' rồi à','chào ae, '+me()+' mới on à']),.9];
+  if(/cường hóa|đập đồ|nâng cấp|hợp đồ|ghép/.test(t))return[once(['tìm Thợ Rèn Thiên Hỏa ở quảng trường mà cường hóa','đập +7 trở lên dễ vỡ lắm, cẩn thận','Thợ Rèn ở phía tây quảng trường đó '+me()]),1];
+  if(/đột phá|lên cảnh|thiên kiếp|độ kiếp/.test(t))return[once(['đủ tầng 10 là bấm ⚡ trên đầu để độ kiếp','sợ xịt thì đưa linh thạch cho Đột Phá Lão Tổ, tỉ lệ cao hơn','độ kiếp xịt là chết rơi đồ đó, cất đồ vào Bảo Khố trước']),1];
+  if(/bí cảnh/.test(t))return[once(['Bí Cảnh '+bcT()+', tu vi x10 rơi đồ x100','Bí Cảnh '+bcT()+', nhớ mang thuốc']),1];
+  if(/chiến trường|tiên ma|20h|8h tối/.test(t))return[once(['Chiến Trường Tiên Ma mở 20:00 mỗi tối, chọn phe rồi phá Linh Tinh địch','tối 8h vào chiến trường, đông lắm','phe Ma mạnh hơn đó, theo phe Ma đi']),1];
+  if(/bảo khố|gửi đồ|cất đồ|gửi linh thạch/.test(t))return[once(['Bảo Khố ở quảng trường, gửi đồ vào thì chết không mất','cất đồ ngon vào Bảo Khố trước khi ra ngoài PK']),1];
+  if(/tông môn|bái sư|thánh địa|môn phái|ma tông/.test(t))return[once(['5 thánh địa 1 ma tông, gặp Sứ Giả ở 4 góc quảng trường mà bái','Thiên Kiếm sát thương to, Thái Sơn trâu bò','ma tông chơi Vạn Hồn Phiên ghê lắm']),1];
+  if(/bãi|farm|lên cấp|cày|luyện cấp|quái/.test(t))return[once([TU.realm<2?'ra cổng nam đánh quái gần thành trước đã':'ra xa thành tầm 200 bước quái to hơn, tu vi nhiều','dùng Truyền Tống Trận mà đi bãi quái cho nhanh','vào Bí Cảnh mà cày, x10 tu vi']),1];
+  if(/bán|mua|giá|chợ|sạp/.test(t)){const o=stallOffer(t);if(o)return[o[1],1,o[0]];return[once(['chợ ở quảng trường, sạp đầy đồ','ra Thần Binh Các mà mua']),1]}
+  if(/pt|tổ đội|party|đi chung|team/.test(t))return[once(['cho mình theo với '+me(),'pt đi bãi nào vậy','mình rảnh nè, đi không']),.9];
+  if(/pk|giết|đồ sát|cướp/.test(t))return[once(['trong thành cấm PK nha','ra ngoài cổng là PK thoải mái','gặp Chấp Pháp Trưởng Lão là toang đó']),.9];
+  if(/trời|mưa|nắng|gió|hoàng hôn/.test(t))return[once(['ừ trời đẹp, đi farm thôi','chill ghê','gió mát thật, ngồi ngắm cảnh tí','cảnh đẹp mà quái đông quá']),.7];
+  if(/(tao|tôi|mình|\bt\b).*(mạnh|đẹp|xịn|ngầu|vip)|đồ.*(xịn|đẹp|ngon)/.test(t))return[once([hi()?me()+' '+rl()+' rồi còn khiêm tốn':'cố lên rồi sẽ mạnh','đồ '+me()+' nhìn cũng xịn đấy','khoe ít thôi 😏']),.8];
+  if(q)return[once(['không rõ lắm, bấm nút Chỉ đường xem','hỏi Đột Phá Lão Tổ ấy','mình cũng mới chơi 😅','xem cẩm nang ở thanh công cụ đó']),.8];
+  return[once(['haha','ok '+me(),'chuẩn','+1','công nhận','thật à','vãi '+me(),'🤣','ừ đúng rồi']),.5]}
+ botReply=function(m){const a=answer(m);if(Math.random()>a[1])return;const delay=2200+Math.random()*3500;setTimeout(()=>{let b=null;if(a[2])b=ents.find(e=>e.name===a[2]&&!e.dead);if(!b)b=speaker();if(!b)return;const line=a[0];chat0('<span class="n">'+esc(b.name)+'</span>: '+esc(line),'');if(b.c.g.visible&&b.lab)bubble(b,line)},delay);
+  if(a[1]>=1&&Math.random()<.3)setTimeout(()=>{const b=speaker();if(b)chat0('<span class="n">'+esc(b.name)+'</span>: '+esc(once(['đúng đó','+1','chuẩn rồi','nghe theo đi']),''),'')},delay+3000+Math.random()*2500)};
+ window.__chat={answer};
+})()}catch(e){console.warn('chat+',e)}
+/* ===== THÔN PHỆ XÁC NHẬN (25/11): Huyết Ma Tông lại gần hồn phách không tự hút nữa — hiện nút "Thôn phệ" để người chơi chọn ===== */
+try{(function(){const st=document.createElement('style');st.textContent='#tpb{position:fixed;left:50%;bottom:150px;transform:translateX(-50%);z-index:8;display:none;border:1px solid #ff5a7a;border-radius:22px;padding:8px 18px;background:radial-gradient(circle at 50% 30%,#7a0a22,#2a0008);color:#ffe0e6;font:800 15px "Noto Serif",serif;box-shadow:0 0 14px rgba(255,40,80,.7);cursor:pointer}#tpb small{display:block;font-weight:500;font-size:11px;opacity:.85}';document.head.appendChild(st);
+ const b=document.createElement('button');b.id='tpb';document.body.appendChild(b);let cur=null;b.onclick=e=>{e.stopPropagation();if(cur){cur.ok=1;b.style.display='none'}};
+ window.addEventListener('keydown',e=>{if(e.code==='KeyT'&&!e.repeat&&cur&&b.style.display==='block'&&document.activeElement.tagName!=='INPUT'){cur.ok=1;b.style.display='none'}});
+ const _u=updCorpse;updCorpse=function(dt,time){_u(dt,time);try{const hp=heroPos(),ph=hero.c.w.userData.kind==='phien';cur=null;if(ph&&!hero.dead&&!ABS.on){let bd=4.5;for(const c of CORPSE){if(c.ab||c.ok)continue;const d=Math.hypot(hp.x-c.sp.position.x,hp.z-c.sp.position.z);if(d<bd){bd=d;cur=c}}}
+  if(cur){b.innerHTML='☠ Thôn phệ hồn phách<small>'+esc(cur.name)+' · bấm để hút tu vi (phím T)</small>';b.style.display='block'}else b.style.display='none'}catch(e){}};
+})()}catch(e){console.warn('tp+',e)}
 window.__wp={T,WEAPONS,fabaoModel,TIERS,FBE,RT,VB:()=>VB,hero:()=>hero,TD:{tdKiem,tdXuan,tdBang,tdAn,swordRain,phoenix,tornado,maVortex,dQi:()=>dragonE('qi'),dTh:()=>dragonE('thunder'),dFi:()=>dragonE('fire'),dBl:()=>dragonE('blood'),vortex:()=>{const T0=performance.now();maVortex();return performance.now()-T0},ice:()=>{const t=TU.tong,r=TU.realm,l=TU.learned;TU.tong='thuy';TU.realm=4;TU.learned=['Huyền Băng Trảm','Băng Phong Vạn Lý'];hero.mp=100;P.cds[1]=0;try{_useSkill(1+'')}finally{TU.tong=t;TU.realm=r;TU.learned=l}}},TU:()=>TU};setTimeout(()=>{if(typeof TKACCT!=='undefined')TKACCT.boot()},0);
 window.__demo={closeInv:()=>closeInv(),castAt:(id,x,z)=>{const h=heroPos(),o=h.clone(),f=hero.face;h.x=x;h.z=z;hero.face=Math.random()*6.28;try{castCP(id,true)}catch(e){}h.copy(o);hero.face=f},BF,bfJoin,bfBuild,allEnts:()=>ents,ICL:()=>ICL,equipWeapon:(a,b)=>equipWeapon(a,b),wearBest,equip:i=>{equip.silent=1;try{equip(i)}finally{equip.silent=0}},heroPos,TRIB:()=>TRIB,addCorpse,deathDrop,ents:()=>ents,foe:e=>foe(e),castCP,CP,mkBook,learnBook,P2P,NET,itemCard,optHTML,onHunt,rankTick,RANK,WFALL,castFX,VILLC:()=>window.__vc,tribGo,tribReady,needXp,bankPanel,CG,titles,leaveBC,zoneStream,ZPOP,GANGS,PARTY,ptInvite,hit,NET,netUpd,CORPSE,goInt,toggleFly,updFabao,GARR,WFIX,spawnMon,EV,EVT,npcAct,openInv,SQUADS:()=>SQUADS,CIT:()=>CIT,MUS,PK,togglePK,callReinf,maAct,gainXp,realmText,updPK,INV,BC,mkItem,dropItem,enterBC,TU,refreshTL,bloom:()=>bloom,LOOK,buildAvatar,setSW:(a,b,c)=>{hero.vw&&hero.vw.rotation.set(a,b,c)},hero,P,useSkill,ents,setView:(y,p,d)=>{yaw=y;pitch=p;dist=d}};
 }
