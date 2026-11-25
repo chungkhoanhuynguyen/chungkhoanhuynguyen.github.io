@@ -67,8 +67,8 @@ var TKACCT = (function () {
   var box = null;
   function css() {
     var st = document.createElement('style'); st.textContent =
-      '#acctov{position:fixed;inset:0;z-index:40;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;overflow:auto;background:#e8b8c0 url(login_bg.jpg?v=4) center/cover no-repeat;font-family:"Noto Serif",serif;color:#f3e6c8;animation:azin 1s ease}' +
-      '#acctov::after{content:"";position:fixed;inset:0;background:url(login_bg.jpg?v=4) center/cover;z-index:-1;animation:azoom 40s ease-in-out infinite alternate}@keyframes azoom{to{transform:scale(1.08)}}@keyframes azin{from{opacity:0}}' +
+      '#acctov{position:fixed;inset:0;z-index:40;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;overflow:auto;background:#e8b8c0 url(login_bg.jpg?v=5) center/cover no-repeat;font-family:"Noto Serif",serif;color:#f3e6c8;animation:azin 1s ease}' +
+      '#acctov::after{content:"";position:fixed;inset:0;background:url(login_bg.jpg?v=5) center/cover;z-index:-1;animation:azoom 40s ease-in-out infinite alternate}@keyframes azoom{to{transform:scale(1.08)}}@keyframes azin{from{opacity:0}}' +
       '#acctov::before{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.25),transparent 18%,transparent 70%,rgba(0,10,20,.45)),url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27100%25%27 height=%27100%25%27%3E%3C/svg%3E")}' +
       '#acctov .logo{position:relative;margin-top:max(3vh,10px);text-align:center;padding:14px 46px 10px;pointer-events:none}' +
       '#acctov .logo:before{content:"";position:absolute;inset:-10px -30px;z-index:-1;background:radial-gradient(ellipse at 50% 45%,rgba(120,40,170,.85),rgba(70,20,120,.55) 40%,rgba(40,10,80,0) 70%);filter:blur(4px)}' +
