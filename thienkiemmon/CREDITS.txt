@@ -11,3 +11,5 @@ Lồng tiếng NPC (voice/*.mp3) và tiếng phố xá (audio/crowd.mp3): đọc
 
 Texture nén KTX2 (texk/): mã hóa bằng ktx2-encoder (MIT) dùng Basis Universal (Apache-2.0); bộ giải mã lib/basis từ three.js (MIT).
 - Thú (sói, hổ, ngưu, ngựa, đại bàng, rồng, dơi, bộ xương, slime, cáo): Quaternius (opengameart.org), giấy phép CC0.
+
+Bổ sung 25/11: nhân vật VRoid AvatarSample A, B (VRoid Project/pixiv, CC0). Hoạt ảnh: Universal Animation Library 1 & 2 của Quaternius (CC0).
