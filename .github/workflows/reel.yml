@@ -8,6 +8,10 @@ on:
       batch: {description: "Tên lô", required: true}
 permissions:
   contents: write
+# Đẩy nhiều bản liên tiếp: chỉ bản mới nhất được dựng, tránh bản cũ xong sau đè lên Release
+concurrency:
+  group: reel-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   plan:
     runs-on: ubuntu-latest

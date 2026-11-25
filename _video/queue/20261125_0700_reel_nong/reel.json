@@ -18,7 +18,7 @@
    "loi": "Đất ngân hàng phát mại rẻ một nửa. Anh chị A: thấy đây là cơ hội mua rẻ, hay B: là dấu hiệu nên tránh xa?",
    "loi_doc": "Đất ngân hàng phát mại rẻ một nửa. Anh chị A: thấy đây là cơ hội mua rẻ, hay B: là dấu hiệu nên tránh xa?",
    "anh": [
-    "bank building Vietnam||bank headquarters"
+    "Agribank||Vietnam bank branch"
    ]
   },
   "canh": [
@@ -85,7 +85,7 @@
     "loi": "Cuối quý ba, tỷ lệ nợ xấu của hai mươi bảy ngân hàng niêm yết lên khoảng hai phẩy một phần trăm, từ khoảng một phẩy chín cuối năm ngoái.",
     "loi_doc": "Cuối quý ba, tỷ lệ nợ xấu của hai mươi bảy ngân hàng niêm yết lên khoảng hai phẩy một phần trăm, từ khoảng một phẩy chín cuối năm ngoái.",
     "anh": [
-     "bank building Vietnam||bank headquarters"
+     "Agribank||Vietcombank headquarters"
     ],
     "the": {
      "loai": "lon",
@@ -110,7 +110,7 @@
     "loi": "Tính trên hai mươi tám ngân hàng, nợ xấu đã vượt ba trăm bốn mươi nghìn tỷ đồng, tăng gần hai mươi bảy phần trăm, nhanh gấp đôi tốc độ cho vay.",
     "loi_doc": "Tính trên hai mươi tám ngân hàng, nợ xấu đã vượt ba trăm bốn mươi nghìn tỷ đồng, tăng gần hai mươi bảy phần trăm, nhanh gấp đôi tốc độ cho vay.",
     "anh": [
-     "stack of money vietnam dong||vietnam dong banknotes"
+     "Vietnamese dong banknotes||Vietnam banknotes"
     ],
     "the": {
      "loai": "lon",
@@ -135,7 +135,7 @@
     "loi": "Còn bộ đệm dự phòng, tức tiền ngân hàng để sẵn cho nợ khó đòi, chỉ còn bảy mươi tư phần trăm số nợ xấu. Techcombank từ một trăm hai mươi tám xuống một trăm linh bảy.",
     "loi_doc": "Còn bộ đệm dự phòng, tức tiền ngân hàng để sẵn cho nợ khó đòi, chỉ còn bảy mươi tư phần trăm số nợ xấu. Tếch côm banh từ một trăm hai mươi tám xuống một trăm linh bảy.",
     "anh": [
-     "bank vault||safe deposit"
+     "bank vault door||safe deposit boxes"
     ],
     "the": {
      "loai": "lon",
