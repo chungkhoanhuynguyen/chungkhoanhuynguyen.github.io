@@ -57,9 +57,10 @@ async def main():
         await pg.wait_for_timeout(6000)
         await pg.evaluate(OVL)
         await pg.evaluate("""()=>{const D=__demo;D.TU.realm=2;D.TU.tang=10;
-          D.TU.tong='kim';for(let i=0;i<14;i++)D.INV.bag.push(D.mkItem(5+(i%2)));D.wearBest();
+          D.TU.tong='kim';for(let i=0;i<14;i++)D.INV.bag.push(D.mkItem(5+(i%2)));D.wearBest();D.closeInv&&D.closeInv();
           D.hero.mp=99999;D.hero.max=D.hero.hp=999999;document.getElementById('npcp')&&(document.getElementById('npcp').style.display='none');
           document.getElementById('invw')&&(document.getElementById('invw').style.display='none');__vtOn();window.scrFlash=function(){}}""")
+        await pg.evaluate("()=>{const st=document.createElement('style');st.textContent='#bfhud,#bfbtn,#hbb,#bfb{display:none!important}';document.head.appendChild(st)}")
         await pg.wait_for_timeout(1500)
         frame = [0]
         async def shoot(scene, n, per):
@@ -107,16 +108,16 @@ async def main():
         # S3 (8s) tuyệt học
         if 's3' in which:
             cuts=[('glong','GIÁNG LONG THẬP CHƯỞNG',2.0,'BÍ KÍP · CHƯỞNG PHÁP'),('ldvq','LÔI ĐÌNH VẠN QUÂN',3.0,'BÍ KÍP · LÔI HỆ'),('hlpt','HỎA LONG PHẦN THIÊN',4.4,'BÍ KÍP · HỎA HỆ'),('vkqt','VẠN KIẾM QUY TÔNG',5.6,'BÍ KÍP · KIẾM ĐẠO')]
-            await ev("const D=__demo,h=D.heroPos();h.set(-40,h.y,230);__step(10,33)")
+            await ev("const D=__demo,h=D.heroPos();h.set(6,h.y,22);__step(10,33)")
             def s3(i,n):
                 c=i//60; k=i%60; sid,name,yaw,lab=cuts[c]
-                js=f"__demo.setView({yaw-0.15+k*0.004},{0.2+0.05*(c%2)},{14-k*0.03});"
+                js=f"__demo.setView({1.45+k*0.004+0.1*(c%2)},{0.36+0.04*(c%2)},{19-k*0.03});"
                 if k==1: js+=f"__demo.hero.face=0;__demo.hero.mp=99999;__demo.castCP('{sid}',true)"
                 return js+ov(a=name,c1='cap',y1=74,al=ease((k-4)/6),sc=1.25-0.25*ease((k-4)/8),fl=max(0,1-k/5)*0.5,bars=60,lab=lab,lal=ease((k-4)/6))
             await shoot('s3',240,s3)
         # S4 (5s) cảnh giới + hào quang
         if 's4' in which:
-            await ev("const D=__demo,h=D.heroPos();h.set(30,h.y,215);for(const sl of ['weapon','robe','pants','boots','belt','neck','ring','fabao'])D.INV.bag.push(D.mkItem(6,sl));D.wearBest();__step(10,33)")
+            await ev("const D=__demo,h=D.heroPos();h.set(30,h.y,215);for(const sl of ['weapon','robe','pants','boots','belt','neck','ring','fabao'])D.INV.bag.push(D.mkItem(6,sl));D.wearBest();D.closeInv&&D.closeInv();__step(10,33)")
             rl=['Phàm Nhân','Luyện Khí','Trúc Cơ','Kết Đan','Nguyên Anh','Hóa Thần']
             def s4(i,n):
                 k=min(5,i//25)
@@ -144,7 +145,7 @@ async def main():
             ids=['glong','ldvq','hlpt','vkqt','bptg','hamc','htdc','tnpt','lmtk','chtv','htdp','cabc']
             def s7(i,n):
                 js=hide_on()+"const D=__demo,B=D.BF;D.hero.hp=D.hero.max;D.hero.mp=1e6;"
-                js+=f"D.setView({3.14+0.5-i*.004},{0.42-i*.0008},{30-i*.05});"
+                js+=f"D.setView({3.14+0.5-i*.004},{0.7-i*.0008},{28-i*.04});"
                 if i%9==0:
                     sid=ids[(i//9)%len(ids)]
                     js+=f"{{const al=B.sol.filter(o=>!o.dead);const o=al[Math.floor(Math.random()*al.length)];if(o)D.castAt('{sid}',o.x,o.z)}}"
