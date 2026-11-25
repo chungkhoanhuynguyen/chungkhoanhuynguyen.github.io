@@ -55,7 +55,6 @@ def nen(hook, out):
         y += h + 16
     f2 = dx2.F("Bold", 36)
     d.text((540, 1780), "Xem bản đầy đủ: YouTube Chứng Khoán Huy Nguyễn", font=f2, fill=(255, 255, 255), anchor="mm")
-    d.text((540, 1830), "Chia sẻ góc nhìn, không phải khuyến nghị mua bán", font=dx2.F("Bold", 26), fill=(200, 190, 230), anchor="mm")
     im.save(out)
 
 def cat(src, srt, out, a, hook, dmax=175.0, dmin=90.0):

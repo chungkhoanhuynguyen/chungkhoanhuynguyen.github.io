@@ -432,7 +432,6 @@ def endcard(im, d, t):
         else: d.rounded_rectangle([300, by, 780, by+110], 55, outline=mix(GOLD, k2), width=4); ct(d, by+24, "+  FOLLOW", F("ExtraBold", 56), mix(GOLD, k2))
         f = F("Medium", 26); c = mix((140, 146, 162), k2)
         ct(d, by+150, "Thị trường thay đổi từng ngày. Xem thêm các video trên kênh.", f, c)
-        ct(d, by+186, "Nội dung chỉ chia sẻ quan điểm cá nhân, không phải khuyến nghị mua bán.", f, c)
         pass
     k3 = ease((t-1.0)/0.5)
     if k3 > 0:

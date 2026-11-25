@@ -60,7 +60,7 @@ def the_do_rong(br, up, dn, out):
     im.save(out)
 
 def the_top10(top, out, upd=""):
-    im, d = nen("TOP %d CỔ PHIẾU KHỎE NHẤT" % min(10, len(top)), "Xếp theo sức mạnh giá · " + upd + " · không phải khuyến nghị")
+    im, d = nen("TOP %d CỔ PHIẾU KHỎE NHẤT" % min(10, len(top)), "Xếp theo sức mạnh giá · " + upd)
     hd = F("Bold", 26); d.text((44, 160), "#  MÃ", font=hd, fill=MO); d.text((330, 160), "GIÁ", font=hd, fill=MO); d.text((500, 160), "HÔM NAY", font=hd, fill=MO); d.text((720, 160), "3 THÁNG", font=hd, fill=MO)
     for i, x in enumerate(top[:10]):
         y = 210 + i * 60
