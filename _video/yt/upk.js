@@ -27,13 +27,14 @@ window.__KP=async(i)=>{const S=ms=>new Promise(r=>setTimeout(r,ms));
  D.querySelector('#datepicker-trigger').click();await S(900);
  const di=[...document.querySelectorAll('ytcp-date-picker input, tp-yt-paper-dialog input')].find(x=>x.offsetParent&&/thg/.test(x.value));
  if(di){di.focus();di.select();document.execCommand('insertText',false,want);di.dispatchEvent(new KeyboardEvent('keydown',{key:'Enter',keyCode:13,bubbles:true}));await S(900);}
- const ti=D.querySelector('#time-of-day-container input');ti.focus();ti.select();document.execCommand('insertText',false,p.gio);ti.dispatchEvent(new KeyboardEvent('keydown',{key:'Enter',keyCode:13,bubbles:true}));await S(900);
+ const ti=D.querySelector('#time-of-day-container input');ti.click();await S(1200);
+ const its=[...document.querySelectorAll('tp-yt-paper-item')].filter(x=>x.innerText.trim()===p.gio);const it=its.find(x=>x.offsetParent)||its[0];if(it){it.scrollIntoView();it.click();}await S(800);
  const got=D.querySelector('#datepicker-trigger').innerText.trim(),gh=ti.value;
  if(got!==want||gh!==p.gio)return 'ERR SAI LICH '+got+' '+gh+' (can '+want+' '+p.gio+') – hop thoai con mo, sua tay roi bam Len lich';
  for(let k=0;k<30&&/Đang tải lên/.test(D.innerText);k++)await S(1000);
  D.querySelector('#done-button').click();await S(4000);
  const ok=[...document.querySelectorAll('ytcp-button,button')].find(x=>/Đã hiểu/.test(x.innerText.trim())&&x.offsetParent);if(ok){ok.click();await S(2500);}
- const t=(document.body.innerText.match(/công khai vào[^\n]{0,40}/)||[''])[0];
+ const t=(document.body.innerText.match(/công khai vào[^\n]{0,40}/)||[''])[0];const lk=(document.body.innerText.match(/https:\/\/youtube\.com\/shorts\/\S+/)||[''])[0];
  const cl=[...document.querySelectorAll('ytcp-button,button')].find(x=>/^Đóng$/.test(x.innerText.trim())&&x.offsetParent);if(cl)cl.click();
- return 'OK '+i+' '+p.kenh+' '+want+' '+p.gio+' '+link+' '+t;};
+ return 'OK '+i+' '+p.kenh+' '+want+' '+p.gio+' '+(lk||link)+' '+t;};
 'upk ready';
