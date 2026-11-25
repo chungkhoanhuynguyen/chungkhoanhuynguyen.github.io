@@ -53,5 +53,13 @@ if mm:
     d, last, ch, fp, _ = card(mm.group(1))
     t = re.sub(r'Giá cổ phiếu 1 năm: [+−][\d,]+% · đóng cửa [\d.,]+ ngày \d\d/\d\d/\d{4}\.',
                'Giá cổ phiếu 1 năm: %s · đóng cửa %s ngày %s.' % (vf(ch), nf(last), '/'.join(reversed(d.split('-')))), t)
+
+# (25/11 QL1: thẻ "Lệnh thật tiêu điểm" ghi tay "Hiện 54,0, giảm 50% từ đỉnh" bị đứng giá – anh Huy: không để số sai trên web)
+def fix_lt(m):
+    a = m.group(0); s = m.group(1)
+    ss = series(s); d, last = ss[-1]; pk = max(c for _, c in ss); dd = (1 - last / pk) * 100
+    return re.sub(r'([Hh]iện) [\d.,]+, giảm (?:hơn )?\d+% từ đỉnh',
+                  lambda mm: '%s %s (%s), giảm %d%% từ đỉnh' % (mm.group(1), nf(last), '/'.join(d.split('-')[2:0:-1]), int(dd)), a)
+t, n2 = re.subn(r'<article class="lt-c"><div class="lt-h"><b>([A-Z0-9]+)</b>.*?</article>', fix_lt, t, flags=re.S)
 open(P, 'w', encoding='utf-8').write(t)
-print('bang theo doi', n, 'the')
+print('bang theo doi', n, 'the', '| lenh tieu diem', n2)
