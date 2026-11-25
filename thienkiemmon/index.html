@@ -3213,7 +3213,7 @@ try{(function(){if(/nomerge/.test(location.search))return;
   for(const l of LS){if(l.o.userData.lm)continue;if(l.o.visible!==l.v){l.dead=1;continue}if(l.dead)continue;l.v=l.o.visible=cp.distanceTo(l.c)<l.md}
   for(let i=LM.length-1;i>=0;i--){const b=LM[i];if((fc&31)===(i&15)*2){let bad=false;for(let j=0;j<b.src.length;j++){const o=b.src[j];if(!visUp(o)||sig(o)!==b.sg[j]){bad=true;break}}if(bad){unLM(b);LM.splice(i,1);continue}}b.me.visible=cp.distanceTo(b.c)<b.md}
   if((fc&31)===0){try{const ds=[];for(const e of ents){if(e===hero||e.team==='enemy'||e.hostile||e.dead)continue;const p=e.c.g.position;ds.push(Math.abs(p.x-cp.x)+Math.abs(p.z-cp.z))}ds.sort((a,b)=>a-b);const N=LITE?5:16,base=LITE?26:75;window.__cullD=ds.length>N?Math.max(LITE?16:34,Math.min(base,ds[N]/1.3)):base}catch(e){}}}
- requestAnimationFrame(cull);window.__SC=scene;window.__perfp=()=>stat;window.__tally=()=>{const es=new Set(ents.map(e=>e.c&&e.c.g)),t={skin:0,inst:0,entPlain:0,grpPlain:0,loose:0,merged:0,ents:0};pm.multiplyMatrices(camera.projectionMatrix,camera.matrixWorldInverse);fr.setFromProjectionMatrix(pm);
+ requestAnimationFrame(cull);window.__SC=scene;window.__CAM=camera;window.__perfp=()=>stat;window.__tally=()=>{const es=new Set(ents.map(e=>e.c&&e.c.g)),t={skin:0,inst:0,entPlain:0,grpPlain:0,loose:0,merged:0,ents:0};pm.multiplyMatrices(camera.projectionMatrix,camera.matrixWorldInverse);fr.setFromProjectionMatrix(pm);
   scene.children.forEach(top=>{const isE=es.has(top);let any=0;top.traverse(o=>{if(!o.isMesh||o.userData.lm)return;let q=o;while(q){if(!q.visible)return;q=q.parent}if(o.frustumCulled){if(!o.geometry.boundingSphere)o.geometry.computeBoundingSphere();sph.copy(o.geometry.boundingSphere).applyMatrix4(o.matrixWorld);if(!fr.intersectsSphere(sph))return}any=1;
     if(o.isSkinnedMesh)t.skin++;else if(o.isInstancedMesh)t.inst++;else if(o.userData.merged)t.merged++;else if(isE)t.entPlain++;else if(o===top)t.loose++;else t.grpPlain++});if(isE&&any)t.ents++});return t};
 })()}catch(e){console.warn('perf+',e)}
@@ -3889,7 +3889,7 @@ try{(function(){if(/noforest/.test(location.search))return;let sd=91731;const r=
  while(FL.length<FN&&ft<FN*6){ft++;const cx=(r()-.5)*1800,cz=(r()-.5)*1800;if(!ok(cx,cz,6))continue;const col=PAL[Math.floor(r()*PAL.length)],n=8+Math.floor(r()*18),R=3+r()*6;for(let i=0;i<n&&FL.length<FN;i++){const a=r()*6.283,d=Math.sqrt(r())*R,x=cx+Math.cos(a)*d,z=cz+Math.sin(a)*d;if(ok(x,z,1))FL.push([x,Ht(x,z),z,col])}}
  const fm=inst(fGeo,fM,FL,(p)=>{const s=.9+r()*.7;D.position.set(p[0],p[1]-.05,p[2]);D.rotation.set(0,r()*6,0);D.scale.set(s,s*(.8+r()*.5),s)},false);
  window.__fm=fm;if(fm){FL.forEach((p,i)=>fm.setColorAt(i,C.setRGB(p[3][0]*(.85+r()*.3),p[3][1]*(.85+r()*.3),p[3][2]*(.85+r()*.3))));fm.castShadow=false}
- window.__forest={G:G.slice(0,4).map(g=>g.map(Math.round)),FL:FL.slice(0,2).map(f=>[Math.round(f[0]),Math.round(f[2])]),groves:G.length,broad:broad.length,pine:pine.length,bush:bush.length,flowers:FL.length};
+ window.__forestG=G;window.__forest={G:G.slice(0,4).map(g=>g.map(Math.round)),FL:FL.slice(0,2).map(f=>[Math.round(f[0]),Math.round(f[2])]),groves:G.length,broad:broad.length,pine:pine.length,bush:bush.length,flowers:FL.length};
 })()}catch(e){console.warn('forest+',e)}
 
 /* ===== CHỐNG KHỰNG+: dịch sẵn shader và đẩy sẵn ảnh lên GPU lúc rảnh, để khinh công/đi vùng mới không đứng hình ===== */
@@ -3966,6 +3966,45 @@ try{(function(){const HI=Math.min(devicePixelRatio,LITE?2:2),cam=new T.Vector3()
   if(mv){still=0;if(sharp){sharp=false;window.__sharpOn=false;setPR(aqPR())}}else{still+=.25;if(!sharp&&still>=1.5&&HI>renderer.getPixelRatio()+.05){sharp=true;window.__sharpOn=true;setPR(HI)}}},250);
  window.__sharp=()=>({sharp,pr:renderer.getPixelRatio(),HI,aq:AQ.lv});
 })()}catch(e){console.warn('sharp+',e)}
+/* ===== CHE KHUẤT THÀNH (25/11): đứng ngoài tường thành thì không vẽ nhà/đồ vật trong thành bị tường che (chỉ vẽ phần nhìn qua cổng hoặc nhô cao hơn tường) — nhìn vào thành từ cổng bớt hơn nửa lượt vẽ ===== */
+try{(function(){if(/nooccl/.test(location.search))return;const HW=CITY+3.5,WH=13,GAP=12;const L=[];const reg=new WeakSet();const B=new T.Box3(),V=new T.Vector3();
+ function scan(){const es=new Set(ents.map(e=>e.c&&e.c.g));scene.children.forEach(o=>{if(reg.has(o)||es.has(o)||o.isLight||o.isCamera||!o.visible||o.userData.fxTemp||o.userData.gfxp||o.userData.lm||o.userData.merged)return;
+   let sk=false;o.traverse(q=>{if(q.isSkinnedMesh||q.isLight)sk=true});if(sk)return;B.setFromObject(o);if(B.isEmpty())return;const s=B.getSize(V);
+   if(Math.max(Math.abs(B.min.x),Math.abs(B.max.x),Math.abs(B.min.z),Math.abs(B.max.z))>CITY-4||s.x>60||s.z>60)return;reg.add(o);
+   const P=[];for(const x of[B.min.x,B.max.x])for(const y of[B.min.y,B.max.y])for(const z of[B.min.z,B.max.z])P.push([x,y,z]);P.push([(B.min.x+B.max.x)/2,B.max.y,(B.min.z+B.max.z)/2]);L.push({o,P,h:false})})}
+ /* tia từ camera tới điểm: điểm vào khối thành (|x|,|z|<=HW) — thấp hơn tường và ngoài khe cổng thì bị che */
+ function seen(c,p){const dx=p[0]-c.x,dz=p[2]-c.z;let t0=0,t1=1;for(const[o,d]of[[c.x,dx],[c.z,dz]]){if(Math.abs(d)<1e-6){if(Math.abs(o)>HW)return true;continue}let a=(-HW-o)/d,b=(HW-o)/d;if(a>b)[a,b]=[b,a];t0=Math.max(t0,a);t1=Math.min(t1,b)}if(t0>t1)return true;
+  const x=c.x+dx*t0,z=c.z+dz*t0,y=c.y+(p[1]-c.y)*t0;if(y>=WH)return true;const lat=Math.abs(Math.abs(x)>=HW-.01?z:x);return lat<GAP}
+ let fr=0,was=null;const stat={n:0,hid:0};
+ function upd(force){const c=camera.position,out=Math.max(Math.abs(c.x),Math.abs(c.z))>HW+.5;if(!force&&out===was&&fr%8)return;was=out;let hid=0;
+  for(const r of L){if(!r.o.parent){continue}let h=false;if(out){h=true;for(const p of r.P)if(seen(c,p)){h=false;break}}
+   if(h&&!r.h){if(r.o.visible){r.o.visible=false;r.h=true}}else if(!h&&r.h){r.o.visible=true;r.h=false}if(r.h)hid++}stat.n=L.length;stat.hid=hid}
+ (function tk(){requestAnimationFrame(tk);fr++;try{upd(false)}catch(e){}})();
+ setTimeout(()=>{scan();upd(true)},20000);setInterval(()=>{if(hero&&hero.dashT>0)return;const n=L.length;scan();if(L.length!==n)upd(true)},30000);
+ window.__occl=()=>stat;
+})()}catch(e){console.warn('occl+',e)}
+/* ===== RỪNG+ 2 (25/11): nền rừng tối có lá rụng (1 lớp phủ bám địa hình cho mọi khu rừng = 1 lượt vẽ), đá rêu và khúc gỗ đổ trong rừng ===== */
+try{(function(){const F=window.__forestG;if(!F||!F.length||/nof2/.test(location.search))return;let sd=55021;const r=()=>{sd=(sd*16807)%2147483647;return sd/2147483647};
+ const lt=canvasTex(256,(g,S)=>{g.fillStyle='rgb(58,48,26)';g.fillRect(0,0,S,S);
+  for(let i=0;i<1400;i++){const x=Math.random()*S,y=Math.random()*S;g.fillStyle=`hsl(${18+Math.random()*45},${35+Math.random()*35}%,${12+Math.random()*22}%)`;for(const ox of[-S,0,S])for(const oy of[-S,0,S]){g.save();g.translate(x+ox,y+oy);g.rotate(Math.random()*6.3);g.beginPath();g.ellipse(0,0,3+Math.random()*4,1.5+Math.random()*2,0,0,7);g.fill();g.restore()}}});lt.wrapS=lt.wrapT=T.RepeatWrapping;
+ const pos=[],uv=[],idx=[];const N=LITE?14:22;F.forEach(([cx,cz,R])=>{const Rr=R*1.3,b=pos.length/3;for(let j=0;j<=N;j++)for(let i=0;i<=N;i++){const x=cx+(i/N-.5)*2*Rr,z=cz+(j/N-.5)*2*Rr;pos.push(x,Ht(x,z)+.18,z);uv.push(i/N,j/N)}for(let j=0;j<N;j++)for(let i=0;i<N;i++){const a=b+j*(N+1)+i;idx.push(a,a+N+1,a+1,a+1,a+N+1,a+N+2)}});
+ const g=new T.BufferGeometry();g.setAttribute('position',new T.Float32BufferAttribute(pos,3));g.setAttribute('uv',new T.Float32BufferAttribute(uv,2));g.setIndex(idx);g.computeVertexNormals();g.computeBoundingSphere();
+ const fm=new T.MeshLambertMaterial({map:lt,transparent:true,depthWrite:false,polygonOffset:true,polygonOffsetFactor:-4,polygonOffsetUnits:-4});fm.onBeforeCompile=s=>{s.fragmentShader=s.fragmentShader.replace('#include <map_fragment>','vec4 tcL=texture2D(map,vUv*14.);diffuseColor.rgb*=tcL.rgb;{float rr=length(vUv-.5)*2.;float n=sin(vUv.x*37.)*sin(vUv.y*29.)*.08;diffuseColor.a*=smoothstep(1.,.5,rr+n)*.9;}')};fm.customProgramCacheKey=()=>'litter1';
+ const fl=new T.Mesh(g,fm);fl.receiveShadow=!LITE;fl.renderOrder=1;fl.userData.nomerge=1;scene.add(fl);
+ const D=new T.Object3D(),rocks=[],logs=[];F.forEach(([cx,cz,R])=>{const nr=LITE?3:6,nl=LITE?1:3;for(let i=0;i<nr;i++){const a=r()*6.283,d=r()*R,x=cx+Math.cos(a)*d,z=cz+Math.sin(a)*d;rocks.push([x,Ht(x,z),z,.5+r()*1.4])}for(let i=0;i<nl;i++){const a=r()*6.283,d=r()*R*.8,x=cx+Math.cos(a)*d,z=cz+Math.sin(a)*d;logs.push([x,Ht(x,z),z,r()*6.283,.8+r()*.5])}});
+ const rg=new T.IcosahedronGeometry(1,1);{const p=rg.attributes.position;for(let i=0;i<p.count;i++){const k=.75+((Math.sin(p.getX(i)*7.1)+Math.cos(p.getZ(i)*5.3))*.5+1)*.17;p.setXYZ(i,p.getX(i)*k*1.2,p.getY(i)*k*.7,p.getZ(i)*k)}rg.computeVertexNormals()}
+ const rm=new T.InstancedMesh(rg,mRockW,rocks.length),C=new T.Color();rocks.forEach((q,i)=>{D.position.set(q[0],q[1]+q[3]*.25,q[2]);D.rotation.set(r()*.4,r()*6.3,r()*.4);D.scale.setScalar(q[3]);D.updateMatrix();rm.setMatrixAt(i,D.matrix);rm.setColorAt(i,C.setHSL(.25,.18+r()*.12,.42+r()*.15))});rm.castShadow=!LITE;rm.receiveShadow=true;scene.add(rm);
+ const lg=new T.CylinderGeometry(.32,.38,5,8).rotateZ(Math.PI/2);const lm=new T.InstancedMesh(lg,mBark,logs.length);logs.forEach((q,i)=>{D.position.set(q[0],q[1]+.3*q[4],q[2]);D.rotation.set(0,q[3],0);D.scale.setScalar(q[4]);D.updateMatrix();lm.setMatrixAt(i,D.matrix)});lm.castShadow=!LITE;lm.receiveShadow=true;scene.add(lm);
+ window.__forest2={rocks:rocks.length,logs:logs.length};
+})()}catch(e){console.warn('forest2+',e)}
+/* ===== QUÁI+ 2 (25/11): yêu thú cấp 50+ ở gần phả hơi thở (khói/lửa/băng theo màu loài) từ miệng, mỗi 1–2 giây; chỉ quái trong 45 bước quanh camera ===== */
+try{(function(){const v=new T.Vector3(),f=new T.Vector3();let t=0;
+ (function tk(){requestAnimationFrame(tk);if(++t%3)return;const cp=camera.position,now=performance.now();let n=0;
+  for(const e of ents){if(e.team!=='enemy'||e.dead||!e.c||!e.c.beast||!(e.lv>=50)||e.cull||!e.c.g.visible)continue;const g=e.c.g.position;if(Math.abs(g.x-cp.x)+Math.abs(g.z-cp.z)>45)continue;if(++n>(LITE?4:8))break;
+   if(!e._brT)e._brT=now+Math.random()*1500;if(now<e._brT)continue;e._brT=now+1100+Math.random()*1200;const h=e.c.beast.jaw||e.c.beast.head;if(!h)continue;h.getWorldPosition(v);f.set(Math.sin(e.c.g.rotation.y),0,Math.cos(e.c.g.rotation.y));
+   const M=MONS[e.zone|0]||MONS[0],col=new T.Color(M[5]||'#ffffff'),k=e.lv>=150?2.2:1.5,sc=e.c.g.scale.x||1;
+   for(let i=0;i<(LITE?4:7);i++)emit(v.x+f.x*.4*sc,v.y,v.z+f.z*.4*sc,f.x*(2+Math.random()*2)*sc+R2(.6),.4+Math.random()*.8,f.z*(2+Math.random()*2)*sc+R2(.6),col.r*k,col.g*k,col.b*k,(.25+Math.random()*.2)*sc,.7+Math.random()*.4,-.4,1.5)}})();
+})()}catch(e){console.warn('mon2+',e)}
 window.__wp={renderer,T,WEAPONS,fabaoModel,TIERS,FBE,RT,VB:()=>VB,hero:()=>hero,TD:{tdKiem,tdXuan,tdBang,tdAn,swordRain,phoenix,tornado,maVortex,dQi:()=>dragonE('qi'),dTh:()=>dragonE('thunder'),dFi:()=>dragonE('fire'),dBl:()=>dragonE('blood'),vortex:()=>{const T0=performance.now();maVortex();return performance.now()-T0},ice:()=>{const t=TU.tong,r=TU.realm,l=TU.learned;TU.tong='thuy';TU.realm=4;TU.learned=['Huyền Băng Trảm','Băng Phong Vạn Lý'];hero.mp=100;P.cds[1]=0;try{_useSkill(1+'')}finally{TU.tong=t;TU.realm=r;TU.learned=l}}},TU:()=>TU};setTimeout(()=>{if(typeof TKACCT!=='undefined')TKACCT.boot()},0);
 window.__demo={closeInv:()=>closeInv(),castAt:(id,x,z)=>{const h=heroPos(),o=h.clone(),f=hero.face;h.x=x;h.z=z;hero.face=Math.random()*6.28;try{castCP(id,true)}catch(e){}h.copy(o);hero.face=f},BF,bfJoin,bfBuild,allEnts:()=>ents,ICL:()=>ICL,equipWeapon:(a,b)=>equipWeapon(a,b),wearBest,equip:i=>{equip.silent=1;try{equip(i)}finally{equip.silent=0}},heroPos,TRIB:()=>TRIB,addCorpse,deathDrop,ents:()=>ents,foe:e=>foe(e),castCP,CP,mkBook,learnBook,P2P,NET,itemCard,optHTML,onHunt,rankTick,RANK,WFALL,castFX,VILLC:()=>window.__vc,tribGo,tribReady,needXp,bankPanel,CG,titles,leaveBC,zoneStream,ZPOP,GANGS,PARTY,ptInvite,hit,NET,netUpd,CORPSE,goInt,toggleFly,updFabao,GARR,WFIX,spawnMon,EV,EVT,npcAct,openInv,SQUADS:()=>SQUADS,CIT:()=>CIT,MUS,PK,togglePK,callReinf,maAct,gainXp,realmText,updPK,INV,BC,mkItem,dropItem,enterBC,TU,refreshTL,bloom:()=>bloom,LOOK,buildAvatar,setSW:(a,b,c)=>{hero.vw&&hero.vw.rotation.set(a,b,c)},hero,P,useSkill,ents,setView:(y,p,d)=>{yaw=y;pitch=p;dist=d}};
 }
