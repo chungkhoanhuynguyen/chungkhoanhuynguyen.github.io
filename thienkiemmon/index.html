@@ -4459,42 +4459,70 @@ try{(function(){
  setInterval(()=>{try{for(const e of ents){if(e.team!=='bot'||!e.bag2||!e.bag2.length)continue;const best=e.bag2.reduce((a,b)=>b.tier>a.tier?b:a,e.bag2[0]);if(wear(e,best,'hôi được'))e.bag2.splice(e.bag2.indexOf(best),1)}}catch(_){}},3000);
  window.__gear={GT,wear};
 })()}catch(e){console.warn('onl+',e)}
-/* ===== ĐỜI THẬT CỦA BOT (26/11): mỗi bot người chơi có một vai ngoài đời (nghề, tuổi, gia đình, nơi ở) cố định theo tên; giờ online khớp nghề; thỉnh thoảng than chuyện đời trên kênh; hỏi chuyện đời thì trả lời đúng vai ===== */
+/* ===== ĐỜI THẬT CỦA BOT (26/11, v2): mỗi bot là một người khác nhau ngoài đời — ghép ngẫu nhiên từ ~80 nghề, tuổi, nơi ở, hoàn cảnh gia đình, thú cưng…; tên chỉ gợi ý chứ không quyết định; giờ online theo nghề + hoàn cảnh; than chuyện đời, hỏi gì trả lời đúng người đó ===== */
 try{(function(){
  const F=/nu|nữ|muoi|muội|ngoc|ngọc|lan|hoa|tien|tiên|co\b|cô|nang|nàng|thu|nhi|my|vy|linh|trang|yen|yến|mai|thao|thảo|ha\b|hà|tuyet|tuyết|phuong|phượng|girl|be\b|bé/i;
- const P=[
-  {j:'kế toán',a:[28,38],w:'Hà Nội',s:[[20,23.5],[12,13]],f:['có 1 con gái 4 tuổi','có 1 đứa con trai đang học lớp 1'],l:['cuối tháng chốt sổ mệt vl','sếp bắt làm báo cáo thuế đau đầu','con dậy đòi bế off tí','vừa cho con ngủ xong lên cày'],b:['con khóc r off đây','mai đi làm sớm off ae']},
-  {j:'sinh viên năm 3',a:[20,22],w:'Thủ Đức',s:[[13,17],[21,24],[0,1.5]],f:['ở trọ với 2 thằng bạn','chưa có ny'],l:['mai thi giữa kì mà vẫn ngồi cày','điểm danh xong trốn về chơi','hết tiền ăn mì tôm cả tuần','đồ án chưa làm j'],b:['đi học đây','cúp điện phòng trọ r']},
-  {j:'tài xế công nghệ',a:[30,42],w:'Sài Gòn',s:[[10,11.5],[14,15.5],[22,24],[0,1]],f:['có vợ với 2 đứa nhỏ','vợ bán hàng online'],l:['đứng chờ cuốc lên làm tí','hôm nay ế cuốc vl','trời mưa ko ai đặt xe','vừa chạy xong cuốc sân bay'],b:['có cuốc r đi đây','khách gọi r off']},
-  {j:'công nhân KCN',a:[22,30],w:'Bình Dương',s:[[18.5,22.5],[5.5,6.5]],f:['ở trọ gần công ty','vợ cũng làm cùng xưởng'],l:['tăng ca tới 8h mới về','nghỉ giải lao 15p lên đây','lương về r tối nay nạp','tuần này làm ca đêm'],b:['vào ca r','đi ngủ mai ca sáng']},
-  {j:'bán quần áo online',a:[24,32],w:'Hải Phòng',s:[[9,11],[14,16],[22,24],[0,2]],f:['có 1 bé trai 2 tuổi','chồng đi làm xa'],l:['vừa chốt được 3 đơn','livestream xong mệt quá','shipper gọi tí quay lại','hàng về chưa kịp soạn'],b:['có khách nhắn off tí','đi soạn đơn đây']},
-  {j:'dev IT',a:[25,33],w:'Đà Nẵng',s:[[12,13.5],[21,24],[0,2]],f:['độc thân nuôi 2 con mèo','sống 1 mình'],l:['code bug cả ngày giờ lên xả','deploy lỗi bị sếp chửi','đang họp online mà treo máy cày','mai on call trực server'],b:['server sập r phải fix','đi ngủ mai daily 9h']},
-  {j:'giáo viên cấp 2',a:[27,40],w:'Nghệ An',s:[[11.5,13],[20.5,23]],f:['có 1 con trai','vợ cũng là giáo viên'],l:['chấm bài xong mới được lên','mai dự giờ hồi hộp','học sinh lớp chủ nhiệm quậy quá','soạn giáo án tới giờ'],b:['mai dạy tiết 1 ngủ thôi','con gọi rồi']},
-  {j:'bộ đội xuất ngũ đi làm bảo vệ',a:[23,28],w:'Thanh Hóa',s:[[0,5],[13,15]],f:['đang yêu xa','ở với bố mẹ'],l:['trực ca đêm buồn ngủ vl','lên cày cho tỉnh ngủ','chốt bảo vệ wifi yếu lag quá'],b:['đổi ca r','sếp đi tuần off']},
-  {j:'học sinh lớp 12',a:[17,18],w:'Huế',s:[[17,18.5],[21.5,24]],f:['ở với bố mẹ','mẹ hay thu điện thoại'],l:['mẹ sắp lên kiểm tra','học thêm về muộn','sắp thi tốt nghiệp ko muốn học','bị cô gọi lên bảng sáng nay'],b:['mẹ lên r off','đi học thêm đây']},
-  {j:'chủ quán cà phê',a:[30,45],w:'Đà Lạt',s:[[14,16.5],[22.5,24],[0,1]],f:['có vợ và 1 con gái','quán nhỏ đầu hẻm'],l:['quán vắng khách lên chơi','vừa pha xong mẻ cà phê','khách gọi order tí','mưa đóng quán sớm'],b:['khách vào r','dọn quán đây']},
-  {j:'y tá',a:[24,32],w:'Cần Thơ',s:[[7,8],[19,22],[1,3]],f:['chưa chồng','sống với mẹ'],l:['trực đêm khoa cấp cứu','vừa xong ca mệt rã rời','nghỉ giữa ca lên tí'],b:['có bệnh nhân off','vào ca r']},
-  {j:'thất nghiệp đang tìm việc',a:[26,35],w:'Hà Đông',s:[[9,12],[14,18],[20,24]],f:['ở nhà với bố mẹ','vợ vừa đi làm về'],l:['nộp CV mãi chưa ai gọi','chán đời vào game','phỏng vấn trượt nữa r'],b:['vợ về r off','đi phỏng vấn đây']},
-  {j:'nhân viên ngân hàng',a:[25,34],w:'Hà Nội',s:[[12,13],[20,23]],f:['mới cưới','có 1 bé gái 1 tuổi'],l:['chỉ tiêu tháng này chưa đạt','khách vay toàn hồ sơ xấu','cuối quý tăng ca'],b:['vợ gọi off','mai họp giao ban sớm']},
-  {j:'thợ sửa xe',a:[28,40],w:'Long An',s:[[12,13.5],[19.5,22.5]],f:['có 2 đứa con','vợ bán tạp hóa'],l:['tay dính nhớt cầm đt chơi','vừa vá xong cái lốp','tiệm ế lên cày'],b:['có xe vào r','đóng tiệm đây']}];
- P.push({j:'sinh viên năm nhất',a:[18,19],w:'Hà Nội',s:[[15,18],[21,24],[0,1.5]],f:['ở kí túc xá','mới lên thành phố học'],l:['vừa xong tiết thể dục mệt','kí túc xá wifi lag vl','mới nhận tiền nhà gửi','sáng mai học 7h mà giờ vẫn chơi'],b:['tắt đèn kí túc r','đi học đây']},
-  {j:'học sinh lớp 10',a:[15,16],w:'Nam Định',s:[[16.5,18.5],[20.5,22.5]],f:['ở với bố mẹ','bố hay kiểm tra bài'],l:['làm xong bài tập mới được chơi','mai kiểm tra 15p toán','mẹ cho chơi 1 tiếng thôi'],b:['bố về r off','đi ngủ ko mẹ chửi']},
-  {j:'nhân viên mới ra trường',a:[22,25],w:'Sài Gòn',s:[[12,13],[20,24]],f:['ở trọ 1 mình','có ny cùng công ty'],l:['lương thử việc ít quá','sếp giao deadline gấp','mới đi làm tuần đầu mệt'],b:['mai đi làm sớm','ny gọi r']},
-  {j:'game thủ cày thuê',a:[19,26],w:'Hải Dương',s:[[0,4],[10,24]],f:['ở nhà với bố mẹ','chưa có ny'],l:['đang cày thuê acc cho khách','ngồi máy cả ngày mỏi lưng','có ai thuê cày ko ib'],b:['đi ăn đã','nghỉ tí mỏi mắt']},
-  {j:'trưởng phòng kinh doanh',a:[38,48],w:'Hà Nội',s:[[21,23.5]],f:['có vợ và 2 con','con lớn học cấp 3'],l:['tiếp khách xong về lên chơi','họp cả ngày đau đầu','đi nhậu với đối tác về'],b:['vợ giục đi ngủ','mai bay công tác']});
- function hint(n){const s=n.toLowerCase().replace(/[^a-z0-9]/g,''),r={},q=hs(n+'#')%10;let m=n.match(/(19[5-9]\d|20[01]\d)/);if(m&&q<6)r.age=2026-+m[1];
-  else if(!m&&(m=s.match(/([5-9]\d)$/))&&q<3)r.age=2026-(1900+ +m[1]);else if(/2k(\d)?/.test(s))r.age=2026-(2000+(+(s.match(/2k(\d)/)||[0,3])[1]));else if(/9x/.test(s))r.age=27+hs(n)%9;else if(/8x/.test(s))r.age=37+hs(n)%9;
-  if(/hocsinh|\bhs|lop\d/.test(s)||(/nhoc|kid|baby|teen|boy|girl|cute|bede|emyeu|cunyeu/.test(s)&&q%2))r.y=1;
-  if(/bodoi|quandoi|linhgac/.test(s))r.k='bộ đội';if(/dev|coder|code|it\b/.test(s))r.k='dev';if(/grab|taxi|xeom|taixe/.test(s))r.k='tài xế';if(/ketoan/.test(s))r.k='kế toán';if(/caythue|pro|gamer|vn$|thanhnien/.test(s))r.g=1;
-  if(/trum|daica|anhba|anhhai|boss|sep|chubac|ongtrum|giaroi/.test(s))r.o=1;return r}
- function fit(n,h){const t=hint(n);let C=P.slice();if(t.k){const f=C.filter(p=>p.j.includes(t.k));if(f.length){const p=f[h%f.length];let ag=t.age||p.a[0]+h%(p.a[1]-p.a[0]+1);ag=Math.max(p.a[0],Math.min(p.a[1]+4,ag));return [p,ag]}}
-  let age=t.age;if(!age&&t.y)age=15+h%6;if(!age&&t.o)age=34+h%12;if(!age&&t.g)age=19+h%8;
-  if(age){const k=C.filter(p=>age>=p.a[0]-1&&age<=p.a[1]+1);if(k.length)C=k;else{const all=P.filter(p=>age>=p.a[0]-1&&age<=p.a[1]+1);if(all.length)C=all}}
-  if(!C.length)C=P;const p=C[h%C.length];if(!age)age=p.a[0]+h%(p.a[1]-p.a[0]+1);return [p,age]}
  function hs(s){let h=7;for(const c of s)h=(h*31+c.charCodeAt(0))|0;return Math.abs(h)}
- function per(e){if(e.per)return e.per;const h=hs(e.name),[p,age]=fit(e.name,h),fem=F.test(e.name);
-  let fam=p.f[(h>>3)%p.f.length];if(!fem)fam=fam.replace(/chồng/g,'vợ');if(fem)fam=fam.replace('có vợ','có chồng').replace('vợ ','chồng ').replace('2 thằng bạn','2 đứa bạn cùng lớp').replace('độc thân nuôi','ế nuôi').replace('đang yêu xa','ny ở xa');
-  e.per={j:p.j,age,w:p.w,fam,fem,l:p.l,b:p.b};e.sch=p.s;e.jit=(h%5)/10;return e.per}
+ function rng(seed){let a=seed>>>0;return()=>{a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+ /* lịch theo nhóm nghề */
+ const S={vp:[[12,13],[20,23.5]],sv:[[15,18],[21,24],[0,1.5]],hs:[[17,18.5],[20.5,22.5]],ca:[[18.5,22.5],[5.5,6.5]],ca2:[[7,8],[19,22],[1,3]],dem:[[0,5],[13,15]],tu:[[9,11],[14,16],[22,24],[0,1.5]],xe:[[10,11.5],[14,15.5],[22,24],[0,1]],tho:[[12,13.5],[19.5,22.5]],nha:[[9,11.5],[14,17],[20,23]],xk:[[19,23]],quan:[[14,16.5],[22.5,24],[0,1]],nong:[[11,13],[19,22]],game:[[0,4],[10,24]]};
+ /* [nghề, nhóm lịch, tuổi từ, tuổi đến, câu riêng…] */
+ const J=[
+ ['kế toán','vp',24,50,'cuối tháng chốt sổ mệt vl','quyết toán thuế đau đầu'],['nhân viên ngân hàng','vp',23,40,'chỉ tiêu tháng này chưa đạt','khách vay toàn hồ sơ xấu'],['nhân viên văn phòng','vp',22,40,'ngồi điều hòa cả ngày đau lưng','sếp mới khó tính vl'],
+ ['nhân viên bảo hiểm','vp',24,45,'đi gặp khách cả ngày','tháng này chưa chốt được hợp đồng nào'],['nhân viên nhân sự','vp',23,38,'tuyển người mãi ko được','chấm công cuối tháng'],['sale bất động sản','tu',23,40,'thị trường đóng băng ko bán được căn nào','dẫn khách đi xem đất về nắng cháy'],
+ ['dev IT','vp',22,38,'code bug cả ngày','deploy lỗi bị sếp chửi'],['tester','vp',22,32,'bắt bug cho dev cãi nhau','release tối nay hồi hộp'],['designer','vp',21,35,'khách sửa banner lần thứ 8','vẽ xong cái logo mỏi tay'],
+ ['nhân viên marketing','vp',22,32,'chạy ads ko ra đơn','sếp đòi viral'],['kỹ sư xây dựng','tho',24,45,'ra công trình cả ngày đen thui','đổ bê tông xong mới về'],['kiến trúc sư','vp',25,42,'ra bản vẽ thâu đêm','chủ nhà đổi ý lần nữa'],
+ ['giáo viên tiểu học','vp',23,50,'chấm vở xong mới được lên','phụ huynh nhắn zalo suốt'],['giáo viên cấp 3','vp',24,50,'mai dự giờ hồi hộp','học sinh lớp chủ nhiệm quậy quá'],['giảng viên đại học','vp',28,55,'chấm luận văn mệt','mai coi thi sáng'],
+ ['công chức phường','vp',25,50,'làm hồ sơ cho dân cả ngày','họp tổ dân phố tối nay'],['nhân viên tổng đài','ca',20,30,'nghe khách chửi cả ngày','ca tối nay vắng'],['trưởng phòng kinh doanh','vp',33,50,'tiếp khách xong về lên chơi','đi nhậu với đối tác về'],
+ ['công nhân may','ca',19,45,'tăng ca tới 8h','lương về r'],['công nhân điện tử','ca',19,35,'tuần này làm ca đêm','đứng máy cả ngày mỏi chân'],['kỹ thuật viên nhà máy','ca',22,40,'máy hỏng gọi giữa đêm','kiểm định cả xưởng'],
+ ['y tá','ca2',22,40,'trực đêm khoa cấp cứu','vừa xong ca mệt rã rời'],['điều dưỡng','ca2',22,40,'bệnh nhân đông quá','đổi ca với đồng nghiệp'],['bác sĩ nội trú','ca2',25,32,'trực 24 tiếng','đọc sách thi chuyên khoa'],
+ ['dược sĩ nhà thuốc','tu',23,45,'tiệm thuốc vắng lên tí','khách hỏi thuốc cả ngày'],['nhân viên siêu thị','ca',18,35,'đứng quầy thu ngân cả ngày','hàng về soạn mệt'],['phục vụ nhà hàng','ca',18,28,'bưng bê cả tối','khách bo 50k vui vl'],
+ ['đầu bếp','ca',22,45,'bếp nóng như lò','hôm nay tiệc cưới 50 mâm'],['pha chế','ca',18,28,'quán đông pha ko kịp','vừa học được món mới'],['nhân viên kho','ca',20,40,'bốc hàng cả ngày','kiểm kho cuối tháng'],
+ ['bảo vệ tòa nhà','dem',22,55,'trực ca đêm buồn ngủ vl','chốt bảo vệ wifi yếu'],['bartender','dem',21,30,'quán bar đóng cửa mới về','khách say quậy'],['tài xế xe tải đường dài','dem',28,50,'đang đỗ trạm dừng nghỉ','chạy chuyến Bắc Nam'],
+ ['bán quần áo online','tu',20,38,'vừa chốt được 3 đơn','livestream xong mệt'],['chủ quán cà phê','quan',25,50,'quán vắng khách lên chơi','mưa đóng quán sớm'],['bán tạp hóa','tu',30,60,'trông tiệm tiện chơi','khách mua chịu ko trả'],
+ ['bán bánh mì','tu',25,55,'sáng dậy từ 4h nướng bánh','hết bánh sớm vui'],['chủ tiệm net','game',25,45,'ngồi trông tiệm chơi luôn','tụi nhỏ nợ giờ chơi'],['thợ cắt tóc','tu',20,40,'vừa cắt xong 5 cái đầu','khách đòi cắt giống idol'],
+ ['thợ làm nail','tu',19,35,'làm móng cả ngày mỏi mắt','khách khó tính'],['chủ shop điện thoại','tu',24,45,'hàng mới về chưa kịp lên kệ','khách trả giá ác'],['bán hoa quả ngoài chợ','tu',30,60,'dọn sạp xong mới lên','hôm nay ế'],
+ ['nuôi tôm','nong',28,55,'đi cho tôm ăn về','tôm chết hàng loạt lo vl'],['trồng sầu riêng','nong',30,60,'mùa này sầu riêng rớt giá','tưới vườn xong'],['làm ruộng','nong',30,60,'mai gặt lúa','trời mưa ra đồng ko được'],
+ ['chăn nuôi heo','nong',28,55,'heo đẻ thức cả đêm','giá heo hơi xuống'],['streamer nhỏ','game',18,28,'live có 12 người xem','donate 20k vui cả ngày'],['youtuber nhỏ','game',19,30,'video mới ko ai xem','dựng video tới sáng'],
+ ['game thủ cày thuê','game',18,26,'đang cày thuê acc cho khách','ngồi máy cả ngày mỏi lưng'],['freelancer thiết kế','tu',21,35,'deadline 3 job 1 lúc','khách bùng tiền'],['thợ chụp ảnh cưới','tu',22,40,'cuối tuần chạy 3 đám cưới','chỉnh ảnh tới khuya'],
+ ['tài xế công nghệ','xe',22,50,'đứng chờ cuốc lên làm tí','trời mưa ko ai đặt xe'],['shipper','xe',18,35,'giao 60 đơn hôm nay','khách bom hàng'],['xe ôm truyền thống','xe',40,60,'ngồi đầu ngõ chờ khách','giờ ai cũng đi app'],
+ ['thợ sửa xe','tho',20,50,'tay dính nhớt cầm đt','vừa vá xong cái lốp'],['thợ điện nước','tho',22,50,'đi sửa ống nước cả ngày','khách gọi lúc nửa đêm'],['thợ hồ','tho',20,50,'phụ hồ cả ngày nắng','công trình nghỉ do mưa'],
+ ['thợ mộc','tho',25,55,'đóng xong cái tủ','gỗ lên giá'],['thợ hàn','tho',20,45,'hàn cổng cả ngày cay mắt','nhận thêm job ngoài'],['nội trợ','nha',25,50,'nấu cơm xong rảnh lên chơi','đi chợ về'],
+ ['nghỉ hưu','nha',56,68,'cháu bảo cài game cho chơi','sáng tập thể dục công viên'],['đang tìm việc','nha',22,40,'nộp CV mãi chưa ai gọi','phỏng vấn trượt nữa r'],['mẹ bỉm đang nghỉ sinh','nha',23,35,'con ngủ mới được chơi','thức đêm cho con bú'],
+ ['sinh viên kinh tế','sv',18,23,'thuyết trình nhóm cả nhóm bỏ','điểm danh xong trốn về'],['sinh viên bách khoa','sv',18,23,'đồ án chưa làm j','học giải tích đau đầu'],['sinh viên y','sv',18,24,'thi giải phẫu sợ vl','học thuộc cả quyển'],
+ ['sinh viên sư phạm','sv',18,23,'đi kiến tập run','tối nay ôn thi'],['sinh viên năm cuối','sv',21,24,'làm khóa luận','đi thực tập chưa có lương'],['học sinh lớp 12','hs',17,18,'sắp thi tốt nghiệp ko muốn học','học thêm về muộn'],
+ ['học sinh lớp 11','hs',16,17,'mai kiểm tra hóa','bị cô gọi lên bảng'],['học sinh lớp 10','hs',15,16,'làm xong bài tập mới được chơi','mẹ cho chơi 1 tiếng'],['du học sinh Nhật','xk',19,26,'đi làm thêm combini về','bên này lạnh vl'],
+ ['xuất khẩu lao động Nhật','xk',21,35,'tăng ca nhà máy bên Nhật','nhớ nhà quá'],['lao động bên Hàn','xk',22,38,'làm nông trại bên Hàn','tết này ko về được'],['lao động bên Đài','xk',22,38,'ca đêm xưởng bên Đài','gửi tiền về cho mẹ r'],
+ ['bộ đội xuất ngũ','tho',22,28,'mới ra quân đang tìm việc','nhớ anh em trong đơn vị'],['huấn luyện viên gym','tu',22,35,'dạy 6 học viên hôm nay','tập chân xong đi ko nổi'],['tiếp viên hàng không','ca2',22,32,'vừa hạ cánh','bay đêm mệt']];
+ const W=['Hà Nội','Sài Gòn','Hải Phòng','Đà Nẵng','Cần Thơ','Nghệ An','Thanh Hóa','Nam Định','Thái Bình','Bắc Ninh','Bình Dương','Đồng Nai','Huế','Quảng Nam','Quảng Ngãi','Bình Định','Khánh Hòa','Đà Lạt','Đắk Lắk','Gia Lai','Long An','Tiền Giang','Bến Tre','An Giang','Kiên Giang','Cà Mau','Hải Dương','Hưng Yên','Phú Thọ','Thái Nguyên','Lạng Sơn','Quảng Ninh','Vũng Tàu','Tây Ninh','Hà Tĩnh','Quảng Bình','Ninh Bình','Vĩnh Phúc'];
+ const GEN=['trời nóng vl','cúp điện cả khu','mạng lag quá','hôm nay mưa to','buồn ngủ mà vẫn cố cày','đói quá mà lười nấu','vừa ăn bún bò xong','mai cuối tuần r','chán vl ko biết làm j'];
+ const PET=['nuôi 1 con mèo','nuôi 1 con chó','nuôi 2 con mèo'],PETL=['con mèo nhảy lên bàn phím','chó sủa cả đêm','cho mèo ăn đã'];
+ const XK={'du học sinh Nhật':'Nhật','xuất khẩu lao động Nhật':'Nhật','lao động bên Hàn':'Hàn','lao động bên Đài':'Đài Loan'};
+ function hint(n,R){const s=n.toLowerCase().replace(/[^a-z0-9]/g,''),r={};const q=Math.floor(R()*10);let m=n.match(/(19[5-9]\d|20[01]\d)/);if(m&&q<6)r.age=2026-+m[1];
+  else if(!m&&(m=s.match(/([5-9]\d)$/))&&q<3)r.age=2026-(1900+ +m[1]);
+  if(/hocsinh|lop\d/.test(s))r.y=2;else if((/nhoc|kid|baby|teen|boy|girl|cute|bede/.test(s)&&q%2))r.y=1;
+  if(/bodoi/.test(s))r.k='bộ đội';if(/dev|coder/.test(s))r.k='dev';if(/grab|taxi|xeom|taixe/.test(s))r.k='tài xế';if(/ketoan/.test(s))r.k='kế toán';if(/gym/.test(s))r.k='gym';
+  if(/trum|daica|anhba|anhhai|boss|sep|chubac/.test(s))r.o=1;return r}
+ function build(name){const h=hs(name),R=rng(h),pk=a=>a[Math.floor(R()*a.length)],t=hint(name,R);
+  let fem=F.test(name)||R()<.18;let C=J;if(t.k){const f=J.filter(j=>j[0].includes(t.k));if(f.length)C=f}
+  let age=t.age||(t.y===2?15+Math.floor(R()*4):t.y?15+Math.floor(R()*7):t.o?33+Math.floor(R()*15):0);
+  if(age&&C===J){const f=J.filter(j=>age>=j[2]&&age<=j[3]);if(f.length)C=f}
+  if(!fem)C=C.filter(j=>!/mẹ bỉm|nail/.test(j[0]))||C;if(!C.length)C=J;
+  const j=pk(C);if(!age)age=j[2]+Math.floor(R()*(j[3]-j[2]+1));age=Math.max(j[2]-1,Math.min(j[3]+3,age));
+  const w=XK[j[0]]?pk(W)+' (đang ở '+XK[j[0]]+')':pk(W);
+  /* gia đình */
+  const sp=fem?'chồng':'vợ',lines=[],bye=[];let fam;
+  if(age<18){fam=pk(['ở với bố mẹ','ở với ông bà','là con một','có 1 đứa em hay phá']);lines.push('mẹ gọi xuống ăn cơm','bố về r');bye.push('mẹ lên r off','đi ngủ ko bị mắng')}
+  else if(age<25){const r=R();fam=r<.4?'chưa có ny':r<.75?'có ny r':(r<.9||age<21)?pick(['ở trọ với bạn','ở với bố mẹ']):'mới cưới';if(fam==='có ny r'){lines.push('ny dỗi r','đi chơi với ny về');bye.push('ny gọi r')}else if(fam==='mới cưới'){fam='mới cưới '+sp;lines.push(sp+' giục đi ngủ');bye.push(sp+' gọi r off')}}
+  else{const r=R();if(r<.25&&age<40){fam=pk(['độc thân','ế','chưa '+sp,'sắp cưới']);if(fam==='sắp cưới')lines.push('lo đám cưới mệt vl')}
+   else if(r<.32){fam='đã ly hôn, nuôi 1 đứa con';lines.push('cuối tuần đón con')}
+   else{const k=age<30?1:age<40?1+Math.floor(R()*2):1+Math.floor(R()*3),ka=Math.max(1,Math.min(age-22,Math.floor(R()*(age-22)/1.3)+1));fam='có '+sp+(k===1?' và 1 '+pk(['con trai','con gái'])+' '+ka+' tuổi':' và '+k+' đứa con');
+    lines.push(ka<6?'con dậy đòi bế':'đưa con đi học thêm về','con ốm phải đưa đi khám',sp+' bắt đi chợ');bye.push('con khóc r off đây',sp+' gọi r')}}
+  if(R()<.25){const pi=Math.floor(R()*3);fam+=', '+PET[pi];lines.push(pi===1?'chó sủa cả đêm':pk(['con mèo nhảy lên bàn phím','cho mèo ăn đã']))}
+  const sch=S[j[1]].map(([a,b])=>{const d=(Math.floor(R()*5)-2)*.5;return[a+d,b+d]});
+  const jl=j.slice(4);return{j:j[0],age,w,fam,fem,l:jl.concat(lines,[pk(GEN),pk(GEN)]),b:bye.concat(['off đây ae','mai on tiếp']),sch,jit:R()*.4}}
+ function per(e){if(e.per)return e.per;const p=build(e.name);p.liar=hs(e.name+'!')%4===0;if(p.liar){const f=build(e.name+'#fake');p.fake=f;f.j=pick([f.j,'giám đốc công ty riêng','chủ 3 cái nhà hàng','phi công','ca sĩ','cầu thủ hạng nhất','đại gia BĐS',f.j]);if(Math.random()<.4)f.fem=!p.fem;p.l=p.l.concat(['acc t nạp 50 củ r','hôm qua t solo boss 1 mình','t quen admin game đấy','đồ t full đỏ cả bộ'])}e.per=p;e.sch=p.sch;e.jit=p.jit;return p}
+ const P=J;
  const isB=e=>e&&e.team==='bot'&&!e.guard&&!e.net&&e.name&&e!==hero;
  const all=()=>ents.filter(isB);
  setTimeout(()=>{all().forEach(per)},500);setInterval(()=>{all().forEach(per)},5000);
@@ -4504,15 +4532,15 @@ try{(function(){
  setInterval(()=>{try{if(Math.random()<.45)return;const a=all().filter(e=>!e.dead);if(!a.length)return;const e=pick(a),p=per(e);say(e,pick(p.l))}catch(_){}},75000);
  /* hỏi chuyện đời thì trả lời theo vai */
  const QJ=/làm (nghề )?(gì|j)|nghề gì|đi làm chưa|công việc|làm ở đâu/,QA=/bao nhiêu tuổi|bn tuổi|mấy tuổi|tuổi gì|sinh năm/,QW=/ở đâu|nhà ở|quê|tỉnh nào|ở tp nào/,QF=/vợ|chồng|có con|con mấy tuổi|\bny\b|người yêu|gia đình|độc thân/,QG=/trai hay gái|là nam|là nữ|gái à|trai à/;
- function lifeAns(e,t){const p=per(e);
-  if(QJ.test(t))return /học sinh|sinh viên|thất nghiệp/.test(p.j)?pick([p.j+' thôi','đang '+p.j,p.j+' bạn ơi']):pick(['t làm '+p.j,p.j+' thôi','làm '+p.j+' kiếm cơm',p.j+' ông ạ']);
+ function lifeAns(e,t){const r0=per(e),p=r0.liar&&Math.random()<.7?Object.assign({},r0,r0.fake):r0;
+  if(QJ.test(t))return /học sinh|sinh viên|tìm việc|nghỉ hưu|nội trợ|bỉm/.test(p.j)?pick([p.j+' thôi','đang '+p.j,p.j+' bạn ơi']):pick(['t làm '+p.j,p.j+' thôi','làm '+p.j+' kiếm cơm',p.j+' ông ạ']);
   if(QA.test(t))return pick([p.age+' r',p.age+' tuổi','năm nay '+p.age,'già r '+p.age+' rồi']);
   if(QG.test(t))return p.fem?pick(['gái nha','nữ đó','con gái mà']):pick(['trai 100%','nam nha','trai mà']);
   if(QF.test(t))return p.fam;
   if(QW.test(t)&&!/(bãi|boss|npc|shop|mua|bán|quái|map)/.test(t))return pick(['ở '+p.w,p.w+' nè',p.w+' bạn ơi']);
   return null}
  const _br=botReply;botReply=function(m){try{const t=String(m).toLowerCase();if(QJ.test(t)||QA.test(t)||QF.test(t)||QG.test(t)||(QW.test(t)&&/ngoài đời|nhà|quê|tỉnh/.test(t))){const a=all().filter(e=>!e.dead);let b=a.find(e=>t.includes(e.name.toLowerCase()))||pick(a);if(b){const ans=lifeAns(b,t);if(ans){window.__lifeLast=[b.name,ans];setTimeout(()=>{try{say(b,ans,1)}catch(er){window.__lifeErr=String(er)}},2000+Math.random()*3000);return}}}}catch(_){}return _br.apply(this,arguments)};
- window.__life={per,lifeAns,P,list:()=>all().filter(e=>e.per).map(e=>e.name+' | '+e.per.j+' '+e.per.age+' '+e.per.w+' | '+e.per.fam),ask:q=>botReply(q)};
+ window.__life={per,lifeAns,P,liars:()=>all().filter(e=>per(e).liar).map(e=>[e.name,per(e).j,per(e).fake.j,lifeAns(e,'bạn làm nghề gì'),lifeAns(e,'trai hay gái')]),list:()=>all().filter(e=>e.per).map(e=>e.name+' | '+e.per.j+' '+e.per.age+' '+e.per.w+' | '+e.per.fam),ask:q=>botReply(q)};
 })()}catch(e){console.warn('per',e)}
 /* ===== BOT KHÔNG BIẾT HẾT (26/11): hỏi chuyện game thì không phải bot nào cũng biết — cấp thấp hay mù mờ, cấp cao treo auto cũng chẳng rõ; đứa không biết thì bảo hỏi mấy ông cấp cao ở quảng trường hoặc gọi tên đứa rành ===== */
 try{(function(){
@@ -4527,7 +4555,7 @@ try{(function(){
   if(isAuto(b))return pick(['t treo auto cả ngày có biết j đâu','auto cày thôi ko để ý mấy cái đó','ko rõ t toàn treo máy','cấp cao nhưng toàn auto nên mù tịt'].concat(pro?['hỏi '+pro+' kìa nó rành']:[]));
   return pick(['ko rõ bro, t mới chơi','t cũng ko rõ bro à','ko biết nữa','chịu, t cũng đang tìm','hỏi mấy ông cấp cao ở quảng trường ấy họ rõ hơn','ra quảng trường hỏi mấy thằng cấp cao ấy'].concat(pro?['hỏi '+pro+' ấy','ông '+pro+' rành cái này đó']:[]))}
  const _br=botReply;botReply=function(m){try{const t=String(m).toLowerCase();if(Q.test(t)&&!LIFE.test(t)){const a=B();if(a.length){const b=t&&a.find(e=>t.includes(e.name.toLowerCase()))||pick(a);
-   if(Math.random()>know(b)){const line=dunno(b);setTimeout(()=>{try{chat0('<span class="n" data-r="1">'+esc(b.name)+'</span>: '+line,'');if(b.c.g.visible&&b.lab&&b.c.g.position.distanceTo(heroPos())<25)bubble(b,line)}catch(_){}},1800+Math.random()*2500);
+   const lie=hs(b.name+'!')%4===0&&Math.random()<.5;if(lie||Math.random()>know(b)){const line=lie?pick(['ra map tuyết phía bắc ấy','phải nạp mới làm được','tối 12h mới mở','hỏi NPC ở cổng tây ấy','ném đồ xuống sông là được','gõ /admin là ra','qua bí cảnh đánh con boss cuối là có']):dunno(b);setTimeout(()=>{try{chat0('<span class="n" data-r="1">'+esc(b.name)+'</span>: '+line,'');if(b.c.g.visible&&b.lab&&b.c.g.position.distanceTo(heroPos())<25)bubble(b,line)}catch(_){}},1800+Math.random()*2500);
     /* đứa khác rành hơn có thể trả lời sau, hoặc chẳng ai trả lời */
     if(Math.random()<.55){const ar=arguments,me=this;setTimeout(()=>_br.apply(me,ar),5000+Math.random()*6000)}return}}}}catch(_){}return _br.apply(this,arguments)};
  window.__know={know,isAuto,dunno:n=>{const e=B().find(x=>x.name===n);return e&&dunno(e)},ask:q=>botReply(q)};
