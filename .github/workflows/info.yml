@@ -22,6 +22,8 @@ jobs:
         continue-on-error: true
       - run: python world.py || true
         timeout-minutes: 8
+      - run: python sjc.py || true
+        timeout-minutes: 3
       - run: |
           git config user.name "hn-bot"
           git config user.email "hn-bot@users.noreply.github.com"
