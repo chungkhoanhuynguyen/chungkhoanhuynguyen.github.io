@@ -1,0 +1,703 @@
+[
+ {
+  "key": "SN2511TYGIA",
+  "tieu_de": "Tỷ giá trung tâm 25.668 đồng/USD cao nhất từ trước đến nay: mua 1.000 đô phải trả bao nhiêu?",
+  "hook": [
+   "TỶ GIÁ KỶ LỤC",
+   "MUA 1.000 ĐÔ?"
+  ],
+  "nhan": "TIN NÓNG · 24/11",
+  "short_caption": "Tỷ giá trung tâm sáng 24/11 lên 25.668 đồng/USD, mức cao nhất từ trước đến nay theo Index.vn; Vietcombank bán ra 25.990 đồng. Em tự tính 1.000 USD đắt hơn giá trung tâm khoảng 322 nghìn đồng.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "CÓ ĐỔI ĐÔ TRƯỚC KHÔNG?",
+   "loi": "Tỷ giá kỷ lục, anh chị A: đổi đô trước cho yên tâm, hay B: chờ xem thêm?",
+   "loi_doc": "Tỷ giá kỷ lục, anh chị A: đổi đô trước cho yên tâm, hay B: chờ xem thêm?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "TỶ GIÁ KỶ LỤC",
+    "dong": [
+     [
+      "A: ĐỔI TRƯỚC",
+      100,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: CHỜ XEM",
+      100,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "TỶ GIÁ CAO NHẤT TỪ TRƯỚC TỚI NAY",
+    "loi": "Anh chị có biết, sáng 24/11 tỷ giá trung tâm lên 25.668 đồng một đô, mức cao nhất từ trước đến nay? Ai sắp đi học, du lịch hay chuyển tiền cho con đều nên nghe.",
+    "loi_doc": "Anh chị có biết, sáng hai mươi bốn tháng mười một tỷ giá trung tâm lên hai mươi lăm nghìn sáu trăm sáu mươi tám đồng một đô, mức cao nhất từ trước đến nay? Ai sắp đi học, du lịch hay chuyển tiền cho con đều nên nghe.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "TỶ GIÁ TRUNG TÂM SÁNG 24/11",
+     "dong": [
+      [
+       "25.668 ĐỒNG/USD",
+       100,
+       "vang"
+      ],
+      [
+       "CAO NHẤT TỪ TRƯỚC TỚI NAY",
+       52,
+       "trang"
+      ]
+     ],
+     "nguon": "Index.vn 24/11/2026"
+    }
+   },
+   {
+    "chu_to": "TĂNG 9 ĐỒNG TRONG MỘT PHIÊN",
+    "loi": "So với phiên trước, tỷ giá trung tâm tăng thêm chín đồng. Nghe nhỏ, nhưng nó đang đi lên liên tục, và biên độ cho phép là cộng trừ năm phần trăm.",
+    "loi_doc": "So với phiên trước, tỷ giá trung tâm tăng thêm chín đồng. Nghe nhỏ, nhưng nó đang đi lên liên tục, và biên độ cho phép là cộng trừ năm phần trăm.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "SO VỚI PHIÊN TRƯỚC",
+     "dong": [
+      [
+       "TĂNG 9 ĐỒNG",
+       110,
+       "do"
+      ],
+      [
+       "BIÊN ĐỘ ±5%: 24.385 – 26.951",
+       44,
+       "trang"
+      ]
+     ],
+     "nguon": "Index.vn 24/11/2026"
+    }
+   },
+   {
+    "chu_to": "NGÂN HÀNG BÁN RA 25.990",
+    "loi": "Ra quầy, Vietcombank, BIDV và Agribank cùng bán đô ở mức hai mươi lăm nghìn chín trăm chín mươi đồng. VietinBank bán hai mươi lăm nghìn chín trăm chín mươi hai đồng.",
+    "loi_doc": "Ra quầy, Vietcombank, BIDV và Agribank cùng bán đô ở mức hai mươi lăm nghìn chín trăm chín mươi đồng. VietinBank bán hai mươi lăm nghìn chín trăm chín mươi hai đồng.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "GIÁ USD BÁN RA TẠI NGÂN HÀNG",
+     "dong": [
+      [
+       "VCB · BIDV · AGRIBANK: 25.990",
+       72,
+       "vang"
+      ],
+      [
+       "VIETINBANK: 25.992",
+       60,
+       "trang"
+      ]
+     ],
+     "nguon": "Index.vn 24/11/2026"
+    }
+   },
+   {
+    "chu_to": "1.000 ĐÔ ĐẮT HƠN 322 NGHÌN",
+    "loi": "Em tự tính: mua một nghìn đô theo giá bán ra hai mươi lăm nghìn chín trăm chín mươi, bạn trả khoảng hai mươi lăm phẩy chín chín triệu. Đắt hơn giá trung tâm khoảng ba trăm hai mươi hai nghìn đồng.",
+    "loi_doc": "Em tự tính: mua một nghìn đô theo giá bán ra hai mươi lăm nghìn chín trăm chín mươi, bạn trả khoảng hai mươi lăm phẩy chín chín triệu. Đắt hơn giá trung tâm khoảng ba trăm hai mươi hai nghìn đồng.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "MUA 1.000 USD TẠI VIETCOMBANK",
+     "dong": [
+      [
+       "25,99 TRIỆU ĐỒNG",
+       100,
+       "trang"
+      ],
+      [
+       "ĐẮT HƠN GIÁ TRUNG TÂM 322 NGHÌN",
+       52,
+       "do"
+      ]
+     ],
+     "nguon": "Em tự tính từ Index.vn 24/11/2026"
+    }
+   },
+   {
+    "chu_to": "ĐÔ MẠNH, LÃI SUẤT LÀ ĐIỂM TỰA",
+    "loi": "Vì sao đô cứ mạnh? Một phần do lãi suất Mỹ còn cao, chỉ số đô la thế giới đang quanh một trăm lẻ ba phẩy sáu bảy điểm. Chuyện này chạm trực tiếp vào giá hàng nhập khẩu và nợ vay bằng đô của doanh nghiệp.",
+    "loi_doc": "Vì sao đô cứ mạnh? Một phần do lãi suất Mỹ còn cao, chỉ số đô la thế giới đang quanh một trăm lẻ ba phẩy sáu bảy điểm. Chuyện này chạm trực tiếp vào giá hàng nhập khẩu và nợ vay bằng đô của doanh nghiệp.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "CHỈ SỐ ĐÔ LA THẾ GIỚI (DXY)",
+     "dong": [
+      [
+       "103,67 ĐIỂM",
+       110,
+       "vang"
+      ],
+      [
+       "DOANH NGHIỆP VAY NỢ BẰNG ĐÔ CHỊU ÁP LỰC",
+       44,
+       "trang"
+      ]
+     ],
+     "nguon": "Index.vn 24/11/2026"
+    }
+   }
+  ]
+ },
+ {
+  "key": "SN2511XANG",
+  "tieu_de": "Xăng giảm 5 kỳ liên tiếp, E5 còn 18.576 đồng/lít: sao dầu diesel vẫn 26.347?",
+  "hook": [
+   "XĂNG GIẢM 5 KỲ",
+   "DẦU VẪN 26.347?"
+  ],
+  "nhan": "TIN NÓNG · KỲ 19/11",
+  "short_caption": "Kỳ điều hành 19/11: xăng E5 RON 92 còn 18.576 đồng/lít (giảm 823), E10 19.100; dầu diesel vẫn 26.347 đồng/lít. Em tự tính đổ 10 lít E5 tiết kiệm khoảng 74 nghìn so với đầu tháng. Nguồn Ngôi Sao 24/11.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "GIÁ CHỢ CÓ GIẢM KHÔNG?",
+   "loi": "Xăng giảm năm kỳ liên tiếp, anh chị A: giá đi chợ thấy rẻ theo, hay B: vẫn đắt như cũ?",
+   "loi_doc": "Xăng giảm năm kỳ liên tiếp, anh chị A: giá đi chợ thấy rẻ theo, hay B: vẫn đắt như cũ?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "GIÁ ĐI CHỢ?",
+    "dong": [
+     [
+      "A: RẺ THEO",
+      100,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: VẪN ĐẮT",
+      100,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "XĂNG GIẢM 5 KỲ LIÊN TIẾP",
+    "loi": "Anh chị có để ý không, giá xăng đã giảm năm kỳ điều hành liên tiếp từ đầu tháng mười một? Kỳ gần nhất, từ mười lăm giờ ngày 19/11.",
+    "loi_doc": "Anh chị có để ý không, giá xăng đã giảm năm kỳ điều hành liên tiếp từ đầu tháng mười một? Kỳ gần nhất, từ mười lăm giờ ngày mười chín tháng mười một.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "KỲ ĐIỀU HÀNH 19/11/2026",
+     "dong": [
+      [
+       "GIẢM 5 KỲ LIÊN TIẾP",
+       100,
+       "vang"
+      ],
+      [
+       "TỪ ĐẦU THÁNG 11",
+       52,
+       "trang"
+      ]
+     ],
+     "nguon": "Ngôi Sao 24/11/2026"
+    }
+   },
+   {
+    "chu_to": "E5 CÒN 18.576 ĐỒNG",
+    "loi": "Xăng E5 RON chín hai còn mười tám nghìn năm trăm bảy mươi sáu đồng một lít, giảm tám trăm hai mươi ba đồng. Xăng E10 là mười chín nghìn một trăm đồng, giảm bảy trăm bốn mươi lăm đồng.",
+    "loi_doc": "Xăng E5 RON chín hai còn mười tám nghìn năm trăm bảy mươi sáu đồng một lít, giảm tám trăm hai mươi ba đồng. Xăng E10 là mười chín nghìn một trăm đồng, giảm bảy trăm bốn mươi lăm đồng.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "GIÁ BÁN TỐI ĐA (ĐỒNG/LÍT)",
+     "dong": [
+      [
+       "E5 RON 92: 18.576",
+       84,
+       "vang"
+      ],
+      [
+       "GIẢM 823",
+       60,
+       "do"
+      ],
+      [
+       "E10 RON 95: 19.100 · GIẢM 745",
+       44,
+       "trang"
+      ]
+     ],
+     "nguon": "Ngôi Sao 24/11/2026"
+    }
+   },
+   {
+    "chu_to": "TỪ ĐẦU THÁNG GIẢM 7.451",
+    "loi": "Cộng dồn từ đầu tháng, xăng E5 đã giảm bảy nghìn bốn trăm năm mươi mốt đồng một lít. Em tự tính: đổ mười lít, anh chị tiết kiệm khoảng bảy mươi bốn nghìn đồng.",
+    "loi_doc": "Cộng dồn từ đầu tháng, xăng E5 đã giảm bảy nghìn bốn trăm năm mươi mốt đồng một lít. Em tự tính: đổ mười lít, anh chị tiết kiệm khoảng bảy mươi bốn nghìn đồng.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "XĂNG E5 TỪ ĐẦU THÁNG 11",
+     "dong": [
+      [
+       "GIẢM 7.451 ĐỒNG/LÍT",
+       100,
+       "do"
+      ],
+      [
+       "ĐỔ 10 LÍT TIẾT KIỆM KHOẢNG 74 NGHÌN",
+       48,
+       "trang"
+      ]
+     ],
+     "nguon": "Em tự tính từ Ngôi Sao 24/11/2026"
+    }
+   },
+   {
+    "chu_to": "DẦU DIESEL VẪN 26.347",
+    "loi": "Nhưng không phải xăng dầu nào cũng rẻ như nhau. Dầu diesel vẫn ở hai mươi sáu nghìn ba trăm bốn mươi bảy đồng một lít, cao hơn E5 gần tám nghìn đồng. Xe tải, xe khách chạy dầu nên cước vận chuyển khó hạ nhanh.",
+    "loi_doc": "Nhưng không phải xăng dầu nào cũng rẻ như nhau. Dầu diesel vẫn ở hai mươi sáu nghìn ba trăm bốn mươi bảy đồng một lít, cao hơn E5 gần tám nghìn đồng. Xe tải, xe khách chạy dầu nên cước vận chuyển khó hạ nhanh.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "DẦU DIESEL 0,05S",
+     "dong": [
+      [
+       "26.347 ĐỒNG/LÍT",
+       100,
+       "vang"
+      ],
+      [
+       "CAO HƠN E5 KHOẢNG 7.800",
+       48,
+       "trang"
+      ]
+     ],
+     "nguon": "Ngôi Sao 24/11/2026"
+    }
+   }
+  ]
+ },
+ {
+  "key": "SN2511LAISUAT",
+  "tieu_de": "Gửi 100 triệu: chứng chỉ tiền gửi VPBank 8,8%/năm so với tiết kiệm quầy 5,4%",
+  "hook": [
+   "GỬI 100 TRIỆU",
+   "8,8% HAY 5,4%?"
+  ],
+  "nhan": "TIN NÓNG · 25/11",
+  "short_caption": "Theo Ngôi Sao 25/11, VPBank có chứng chỉ tiền gửi 100 triệu lãi 8,8%/năm (kỳ hạn 184–389 ngày), trong khi tiết kiệm quầy 12 tháng ở nhóm ngân hàng lớn khoảng 5,4%. Em tự tính chênh khoảng 3,4 triệu/năm.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "CHỌN LÃI CAO HAY AN TÂM?",
+   "loi": "Anh chị A: chọn lãi cao 8,8% nhưng phải đọc kỹ điều kiện, hay B: chọn nhóm lớn 5,4% cho yên tâm?",
+   "loi_doc": "Anh chị A: chọn lãi cao tám phẩy tám phần trăm nhưng phải đọc kỹ điều kiện, hay B: chọn nhóm lớn năm phẩy bốn phần trăm cho yên tâm?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "LÃI CAO HAY AN TÂM?",
+    "dong": [
+     [
+      "A: LÃI CAO",
+      100,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: AN TÂM",
+      100,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "GỬI 100 TRIỆU, LÃI 8,8%",
+    "loi": "Anh chị có 100 triệu nhàn rỗi? Sáng 25/11 VPBank có chứng chỉ tiền gửi mệnh giá một trăm triệu, lãi tám phẩy tám phần trăm một năm, kỳ hạn từ một trăm tám mươi tư đến ba trăm tám mươi chín ngày.",
+    "loi_doc": "Anh chị có một trăm triệu nhàn rỗi? Sáng hai mươi lăm tháng mười một VPBank có chứng chỉ tiền gửi mệnh giá một trăm triệu, lãi tám phẩy tám phần trăm một năm, kỳ hạn từ một trăm tám mươi tư đến ba trăm tám mươi chín ngày.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "VPBANK · CHỨNG CHỈ TIỀN GỬI 100 TRIỆU",
+     "dong": [
+      [
+       "8,8%/NĂM",
+       120,
+       "vang"
+      ],
+      [
+       "KỲ HẠN 184 – 389 NGÀY",
+       48,
+       "trang"
+      ]
+     ],
+     "nguon": "Ngôi Sao 25/11/2026"
+    }
+   },
+   {
+    "chu_to": "NHÓM LỚN CHỈ 5,4%",
+    "loi": "Trong khi đó, gửi tiết kiệm quầy kỳ hạn mười hai tháng ở Vietcombank, BIDV, VietinBank và Agribank đều chỉ khoảng năm phẩy bốn phần trăm.",
+    "loi_doc": "Trong khi đó, gửi tiết kiệm quầy kỳ hạn mười hai tháng ở Vietcombank, BIDV, VietinBank và Agribank đều chỉ khoảng năm phẩy bốn phần trăm.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "TIẾT KIỆM QUẦY 12 THÁNG",
+     "dong": [
+      [
+       "VCB · BIDV · VIETINBANK · AGRIBANK",
+       52,
+       "trang"
+      ],
+      [
+       "5,4%/NĂM",
+       110,
+       "vang"
+      ]
+     ],
+     "nguon": "Ngôi Sao 25/11/2026"
+    }
+   },
+   {
+    "chu_to": "CHÊNH 3,4 ĐIỂM = 3,4 TRIỆU",
+    "loi": "Em tự tính: chênh ba phẩy bốn điểm phần trăm trên một trăm triệu là khoảng ba phẩy bốn triệu đồng một năm. Chưa trừ khác biệt kỳ hạn.",
+    "loi_doc": "Em tự tính: chênh ba phẩy bốn điểm phần trăm trên một trăm triệu là khoảng ba phẩy bốn triệu đồng một năm. Chưa trừ khác biệt kỳ hạn.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "100 TRIỆU, 1 NĂM",
+     "dong": [
+      [
+       "CHÊNH KHOẢNG 3,4 TRIỆU",
+       100,
+       "do"
+      ],
+      [
+       "8,8% SO VỚI 5,4%",
+       52,
+       "trang"
+      ]
+     ],
+     "nguon": "Em tự tính từ Ngôi Sao 25/11/2026"
+    }
+   },
+   {
+    "chu_to": "CHỨNG CHỈ KHÁC TIỀN GỬI",
+    "loi": "Nhưng chứng chỉ tiền gửi là giấy tờ có giá, có thể bị khoá kỳ hạn và có điều kiện riêng, khác gửi tiết kiệm thường. Đọc kỹ điều kiện trước khi chuyển tiền.",
+    "loi_doc": "Nhưng chứng chỉ tiền gửi là giấy tờ có giá, có thể bị khoá kỳ hạn và có điều kiện riêng, khác gửi tiết kiệm thường. Đọc kỹ điều kiện trước khi chuyển tiền.",
+    "anh": [],
+    "the": {
+     "loai": "chuoi",
+     "tieu": "TRƯỚC KHI MUA CHỨNG CHỈ TIỀN GỬI",
+     "buoc": [
+      "ĐỌC KỲ HẠN",
+      "ĐỌC ĐIỀU KIỆN RÚT SỚM",
+      "SO VỚI TIẾT KIỆM THƯỜNG"
+     ],
+     "mau": [
+      "tim",
+      "tim",
+      "vang"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "key": "SP2511ICOHAN",
+  "tieu_de": "Hàn Quốc đề xuất dỡ lệnh cấm ICO có từ 2017: ngân hàng phải giữ 50% cộng 1 cổ phần stablecoin",
+  "hook": [
+   "HÀN QUỐC DỠ CẤM",
+   "TIỀN SỐ SAU 9 NĂM?"
+  ],
+  "nhan": "TIỀN SỐ · 24/11",
+  "short_caption": "Theo bản tin TMGM 24/11, dự thảo luật Hàn Quốc đề xuất dỡ lệnh cấm ICO (áp dụng từ 2017); ngân hàng giữ 50% cộng 1 cổ phần liên danh stablecoin won; trần sở hữu sàn 20%. Mới là đề xuất, chưa có hiệu lực.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "MỞ CỬA LÀ TỐT?",
+   "loi": "Nước mở cửa tiền số, anh chị A: đây là tín hiệu tốt, hay B: rủi ro còn nhiều?",
+   "loi_doc": "Nước mở cửa tiền số, anh chị A: đây là tín hiệu tốt, hay B: rủi ro còn nhiều?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "MỞ CỬA LÀ TỐT?",
+    "dong": [
+     [
+      "A: TÍN HIỆU TỐT",
+      100,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: RỦI RO NHIỀU",
+      100,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "HÀN QUỐC MUỐN DỠ LỆNH CẤM ICO",
+    "loi": "Một nước từng cấm huy động vốn bằng tiền số từ năm 2017 đang đề xuất dỡ lệnh cấm. Đó là Hàn Quốc, theo bản tin tài chính ngày 24/11.",
+    "loi_doc": "Một nước từng cấm huy động vốn bằng tiền số từ năm hai nghìn không trăm mười bảy đang đề xuất dỡ lệnh cấm. Đó là Hàn Quốc, theo bản tin tài chính ngày hai mươi bốn tháng mười một.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "HÀN QUỐC · TIỀN SỐ",
+     "dong": [
+      [
+       "ĐỀ XUẤT DỠ LỆNH CẤM ICO",
+       84,
+       "vang"
+      ],
+      [
+       "CẤM TỪ NĂM 2017",
+       52,
+       "trang"
+      ]
+     ],
+     "nguon": "TMGM 24/11/2026"
+    }
+   },
+   {
+    "chu_to": "MỚI CHỈ LÀ ĐỀ XUẤT",
+    "loi": "Cần nói rõ: đây là nội dung trong dự thảo luật, chưa phải quyết định có hiệu lực.",
+    "loi_doc": "Cần nói rõ: đây là nội dung trong dự thảo luật, chưa phải quyết định có hiệu lực.",
+    "anh": [],
+    "the": {
+     "loai": "chuoi",
+     "tieu": "TRẠNG THÁI HIỆN TẠI",
+     "buoc": [
+      "DỰ THẢO LUẬT",
+      "CHƯA LÀ QUYẾT ĐỊNH",
+      "CHƯA CÓ HIỆU LỰC"
+     ],
+     "mau": [
+      "tim",
+      "tim",
+      "do"
+     ]
+    }
+   },
+   {
+    "chu_to": "NGÂN HÀNG GIỮ 50% CỘNG 1",
+    "loi": "Dự thảo còn yêu cầu ngân hàng nắm năm mươi phần trăm cộng một cổ phần trong liên danh phát hành stablecoin neo đồng won.",
+    "loi_doc": "Dự thảo còn yêu cầu ngân hàng nắm năm mươi phần trăm cộng một cổ phần trong liên danh phát hành stablecoin neo đồng won.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "LIÊN DANH PHÁT HÀNH STABLECOIN WON",
+     "dong": [
+      [
+       "NGÂN HÀNG NẮM 50% + 1 CỔ PHẦN",
+       84,
+       "vang"
+      ]
+     ],
+     "nguon": "TMGM 24/11/2026"
+    }
+   },
+   {
+    "chu_to": "TRẦN SỞ HỮU SÀN: 20%",
+    "loi": "Cổ đông lớn của sàn tiền số bị giới hạn sở hữu hai mươi phần trăm, có thể nâng lên ba mươi bốn phần trăm sau ba năm.",
+    "loi_doc": "Cổ đông lớn của sàn tiền số bị giới hạn sở hữu hai mươi phần trăm, có thể nâng lên ba mươi bốn phần trăm sau ba năm.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "TRẦN SỞ HỮU CỦA CỔ ĐÔNG LỚN",
+     "dong": [
+      [
+       "20%",
+       130,
+       "vang"
+      ],
+      [
+       "CÓ THỂ LÊN 34% SAU 3 NĂM",
+       48,
+       "trang"
+      ]
+     ],
+     "nguon": "TMGM 24/11/2026"
+    }
+   },
+   {
+    "chu_to": "BÀI HỌC CHO NHÀ ĐẦU TƯ",
+    "loi": "Bài học: chính sách có thể mở cửa hoặc đóng cửa chỉ sau một dự luật. Tài sản gắn chặt với chính sách luôn kèm rủi ro, nên đừng dồn hết tiền vào một chỗ.",
+    "loi_doc": "Bài học: chính sách có thể mở cửa hoặc đóng cửa chỉ sau một dự luật. Tài sản gắn chặt với chính sách luôn kèm rủi ro, nên đừng dồn hết tiền vào một chỗ.",
+    "anh": [],
+    "the": {
+     "loai": "chuoi",
+     "tieu": "RỦI RO CHÍNH SÁCH",
+     "buoc": [
+      "DỰ LUẬT ĐỔI",
+      "LUẬT CHƠI ĐỔI",
+      "GIÁ TÀI SẢN ĐỔI"
+     ],
+     "mau": [
+      "tim",
+      "tim",
+      "do"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "key": "SP2511LAMPHAT",
+  "tieu_de": "Fed New York: lạm phát Mỹ phải đến 2028 mới về 2% – vì sao tỷ giá nhà mình chịu sức ép?",
+  "hook": [
+   "LẠM PHÁT MỸ",
+   "ĐẾN 2028 MỚI VỀ 2%"
+  ],
+  "nhan": "THẾ GIỚI · 23/11",
+  "short_caption": "Chủ tịch Fed New York John Williams nói 23/11 lạm phát phải đến 2028 mới về 2% (TMGM 24/11); tỷ giá trung tâm sáng 24/11 là 25.668 đồng/USD, cao nhất từ trước đến nay (Index.vn).",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "ĐÔ CÒN LÊN NỮA?",
+   "loi": "Lãi suất Mỹ cao lâu, anh chị A: đô còn tăng nữa, hay B: sắp hạ nhiệt?",
+   "loi_doc": "Lãi suất Mỹ cao lâu, anh chị A: đô còn tăng nữa, hay B: sắp hạ nhiệt?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "ĐÔ CÒN LÊN?",
+    "dong": [
+     [
+      "A: CÒN TĂNG",
+      100,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: HẠ NHIỆT",
+      100,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "LẠM PHÁT MỸ: PHẢI TỚI 2028",
+    "loi": "Anh chị đoán bao giờ lạm phát Mỹ mới về mức hai phần trăm? Chủ tịch Fed New York John Williams nói hôm thứ Hai 23/11: phải đến năm 2028.",
+    "loi_doc": "Anh chị đoán bao giờ lạm phát Mỹ mới về mức hai phần trăm? Chủ tịch Fed New York John Williams nói hôm thứ Hai hai mươi ba tháng mười một: phải đến năm hai nghìn không trăm hai mươi tám.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "CHỦ TỊCH FED NEW YORK, 23/11",
+     "dong": [
+      [
+       "LẠM PHÁT VỀ 2% CHẬM NHẤT 2028",
+       84,
+       "vang"
+      ]
+     ],
+     "nguon": "TMGM 24/11/2026"
+    }
+   },
+   {
+    "chu_to": "LÃI SUẤT CAO Ở LẠI LÂU",
+    "loi": "Lạm phát về đích muộn nghĩa là lãi suất khó hạ sớm. Lãi suất Mỹ cao thì đô la mạnh, kéo theo tỷ giá trong nước.",
+    "loi_doc": "Lạm phát về đích muộn nghĩa là lãi suất khó hạ sớm. Lãi suất Mỹ cao thì đô la mạnh, kéo theo tỷ giá trong nước.",
+    "anh": [],
+    "the": {
+     "loai": "chuoi",
+     "tieu": "LẠM PHÁT MỸ VỀ ĐÍCH MUỘN",
+     "buoc": [
+      "LÃI SUẤT MỸ CAO LÂU",
+      "ĐÔ LA MẠNH",
+      "TỶ GIÁ TRONG NƯỚC ÁP LỰC"
+     ],
+     "mau": [
+      "tim",
+      "tim",
+      "do"
+     ]
+    }
+   },
+   {
+    "chu_to": "TỶ GIÁ TRUNG TÂM 25.668",
+    "loi": "Đúng lúc đó, tỷ giá trung tâm sáng 24/11 ở hai mươi lăm nghìn sáu trăm sáu mươi tám đồng một đô, cao nhất từ trước đến nay theo Index.vn.",
+    "loi_doc": "Đúng lúc đó, tỷ giá trung tâm sáng hai mươi bốn tháng mười một ở hai mươi lăm nghìn sáu trăm sáu mươi tám đồng một đô, cao nhất từ trước đến nay theo Index chấm vê en.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "TỶ GIÁ TRUNG TÂM SÁNG 24/11",
+     "dong": [
+      [
+       "25.668 ĐỒNG/USD",
+       100,
+       "vang"
+      ]
+     ],
+     "nguon": "Index.vn 24/11/2026"
+    }
+   },
+   {
+    "chu_to": "AI CHỊU ÁP LỰC?",
+    "loi": "Người vay bằng đô, nhập khẩu hàng hoá hay có con du học là những người cảm nhận đầu tiên khi đô đắt lên.",
+    "loi_doc": "Người vay bằng đô, nhập khẩu hàng hoá hay có con du học là những người cảm nhận đầu tiên khi đô đắt lên.",
+    "anh": [],
+    "the": {
+     "loai": "chuoi",
+     "tieu": "AI CẢM NHẬN ĐẦU TIÊN",
+     "buoc": [
+      "VAY NỢ BẰNG ĐÔ",
+      "NHẬP KHẨU HÀNG HOÁ",
+      "CON DU HỌC NƯỚC NGOÀI"
+     ],
+     "mau": [
+      "tim",
+      "tim",
+      "vang"
+     ]
+    }
+   }
+  ]
+ }
+]
