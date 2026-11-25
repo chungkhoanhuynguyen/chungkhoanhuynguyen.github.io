@@ -96,7 +96,7 @@ canvas#gl{display:block;position:fixed;inset:0;width:100%;height:100%}
 <script src="lib/ShaderPass.js"></script>
 <script src="lib/UnrealBloomPass.js"></script>
 <script src="lib/GLTFLoader.js"></script>
-<script src="lib/SkeletonUtils.js"></script><script src="lib/fflate.min.js"></script><script src="lib/FBXLoader.js"></script><script src="lib/KTX2Loader.js"></script><script src="acct.js?v=15"></script>
+<script src="lib/SkeletonUtils.js"></script><script src="lib/fflate.min.js"></script><script src="lib/FBXLoader.js"></script><script src="lib/KTX2Loader.js"></script><script src="acct.js?v=16"></script>
 <script>
 window.onerror=(m,s,l)=>{if(/WebGL không khả dụng/.test(m))return true;const e=document.getElementById('err');e.style.display='block';e.textContent='Lỗi: '+m+' (dòng '+l+')'};
 {
@@ -4171,7 +4171,7 @@ try{(function(){
  const _h=hit;hit=function(att,e,dmg,crit){const was=e&&e.dead;const r=_h(att,e,dmg,crit);try{
    if(att===hero&&e&&e.pid)e._iHitT=Date.now();
    if(att===hero&&e&&e.team==='enemy'&&!was){const p=e.c.g.position;if(crit||!LITE){shake=Math.max(shake,crit?(LITE?.07:.11):.04);if(crit)for(let i=0;i<(LITE?3:6);i++)emit(p.x+R2(.4),p.y+1.2+R2(.4),p.z+R2(.4),R2(3),1+Math.random()*2,R2(3),3,3,3,.22,.18,0,0)}}
-   if(att===hero&&e&&e.team==='enemy'&&!was&&e.dead){window.__onKill&&window.__onKill(e);const p=e.c.g.position.clone();
+   if(att===hero&&e&&e.team==='enemy'&&!was&&e.dead){window.__onKill&&window.__onKill(e);window.__guildKill&&window.__guildKill();const p=e.c.g.position.clone();
     if(e.wb){window.__gainStone(5+Math.floor(Math.random()*3),p)}else if(e.boss){window.__gainStone(2+Math.floor(Math.random()*2),p)}
     else{const el=/^(Tinh Anh|Cuồng|Biến Dị) /.test(e.name||'');if(Math.random()<(el?.12:.007+Math.min(.008,(e.lv||1)/30000)))window.__gainStone(1,p)}}}catch(er){}return r};
  /* boss thế giới: mỗi 12 phút một hướng, ở bãi hợp cấp người chơi */
@@ -4566,6 +4566,49 @@ try{(function(){
     if(Math.random()<.55){const ar=arguments,me=this;setTimeout(()=>_br.apply(me,ar),5000+Math.random()*6000)}return}}}}catch(_){}return _br.apply(this,arguments)};
  window.__know={know,isAuto,dunno:n=>{const e=B().find(x=>x.name===n);return e&&dunno(e)},ask:q=>botReply(q)};
 })()}catch(e){console.warn('know',e)}
+/* ===== BANG HỘI + LỊCH SỰ KIỆN (26/11): lập bang (500 linh thạch), tu sĩ ảo xin vào, chat bang, nhiệm vụ bang ngày (cả bang diệt quái → điểm bang), cấp bang tăng tu vi + công; lịch sự kiện cố định theo giờ Việt Nam ===== */
+try{(function(){
+ const G=(()=>{try{return JSON.parse(localStorage.getItem('tkm_guild')||'null')}catch(e){return null}})()||{n:null,lv:1,xp:0,mem:[],day:'',dk:0,done:0};
+ const save=()=>{try{localStorage.setItem('tkm_guild',JSON.stringify(G))}catch(e){}};window.__guild=G;
+ const NEED=lv=>400*lv*lv,MAXM=lv=>10+lv*8,DK=lv=>300+lv*100;
+ const bonus=()=>G.n?G.lv*1.5:0;window.__guildBonus=bonus;
+ /* cộng công/tu vi theo cấp bang */
+ const _ea=eqAtk;eqAtk=function(){return _ea()+Math.round(bonus())};const _gx=gainXp;gainXp=function(n){return _gx(n*(1+bonus()/100))};
+ function gpts(n){if(!G.n)return;G.xp+=n;let up=false;while(G.xp>=NEED(G.lv)&&G.lv<10){G.xp-=NEED(G.lv);G.lv++;up=true}if(up){banner('🏯 Bang '+esc(G.n)+' lên cấp '+G.lv,'+'+bonus().toFixed(1)+'% công & tu vi · '+MAXM(G.lv)+' chỗ');sfx('magic');announce(`Bang <b>${esc(G.n)}</b> đã lên <b>cấp ${G.lv}</b>!`)}save()}
+ const today=()=>vnNow().day;
+ function dq(){if(G.day!==today()){G.day=today();G.dk=0;G.done=0;save()}}
+ window.__guildKill=()=>{if(!G.n)return;dq();if(G.done)return;G.dk++;if(G.dk>=DK(G.lv)){G.done=1;gpts(200*G.lv);TU.stone+=100*G.lv;saveTL();refreshTL();banner('🏯 Hoàn thành nhiệm vụ bang hôm nay','+'+(100*G.lv)+' linh thạch · +'+(200*G.lv)+' điểm bang');sfx('magic')}else if(G.dk%25===0)save()};
+ /* thành viên ảo cũng góp: mỗi phút cộng lượt diệt theo số người */
+ setInterval(()=>{if(!G.n||creating)return;dq();if(!G.done){G.dk+=Math.round(G.mem.length*(.6+Math.random()*.8));if(G.dk>=DK(G.lv))window.__guildKill()}gpts(Math.round(G.mem.length*1.5));save()},60000);
+ /* tu sĩ ảo xin vào bang */
+ setInterval(()=>{try{if(!G.n||creating||G.mem.length>=MAXM(G.lv)||Math.random()<.5)return;const c=ents.filter(e=>e.team==='bot'&&!e.dead&&e.name&&!e.cg&&!G.mem.includes(e.name));if(!c.length)return;const e=c[Math.floor(Math.random()*c.length)];G.mem.push(e.name);save();
+   chat('<span style="color:#7fe8ff">[Bang]</span> <b>'+esc(e.name)+'</b> đã gia nhập bang '+esc(G.n)+'. '+pick(['Chào ae bang','Hello cả nhà','Xin chỉ giáo','Có gì cần cứ gọi t']),'s')}catch(er){}},45000);
+ const GC=['ae đi boss thế giới ko','ai rảnh ra bãi cổng Bắc farm cùng','bang mình lên cấp nhanh ghê','hôm nay đập vũ khí xịt quá','nv bang sắp xong r cố lên ae','có ai cần đá cường hóa ko','tối 8h đi chiến trường nha ae','bang chủ uy vũ','vừa gặp ma tu ngoài cổng Tây cẩn thận','t vừa đập lên +9 :))'];
+ setInterval(()=>{if(!G.n||!G.mem.length||creating||Math.random()<.4)return;const n=G.mem[Math.floor(Math.random()*G.mem.length)];chat0('<span style="color:#7fe8ff">[Bang]</span> <span class="n">'+esc(n)+'</span>: '+pick(GC),'')},70000);
+ function panel(){dq();const P=$('npcp');P.style.display='block';P.dataset.src='guild';
+  if(!G.n){P.innerHTML='<b>🏯 Bang hội</b><p>Lập bang tốn <b>500 linh thạch</b>. Thành viên cùng làm nhiệm vụ bang mỗi ngày, bang lên cấp thì mọi người được cộng công và tu vi.</p><input id="gname" maxlength="14" placeholder="Tên bang (tối đa 14 chữ)" style="width:100%;min-height:36px;margin:4px 0;font-size:14px"><button data-x="gmk" '+(TU.stone<500?'disabled':'')+'>Lập bang (500 linh thạch)</button><button data-x="close">Đóng</button>';return}
+  P.innerHTML='<b>🏯 Bang '+esc(G.n)+' · cấp '+G.lv+'</b><p>Điểm bang: '+G.xp+'/'+NEED(G.lv)+' · Thưởng bang: <b>+'+bonus().toFixed(1)+'% công & tu vi</b><br>Thành viên: '+(G.mem.length+1)+'/'+(MAXM(G.lv)+1)+'<br>Nhiệm vụ bang hôm nay: diệt <b>'+Math.min(G.dk,DK(G.lv))+'/'+DK(G.lv)+'</b> yêu thú (cả bang cùng đếm)'+(G.done?' — <b style="color:#7fffb0">đã xong</b>':'')+'</p>'+
+   '<div style="max-height:22vh;overflow:auto;font-size:12px;border:1px solid rgba(217,164,65,.3);border-radius:6px;padding:4px 6px;margin-bottom:4px"><b>'+esc(LOOK.name)+'</b> — bang chủ<br>'+G.mem.map((n,i)=>esc(n)+' — '+(i<2?'phó bang':i<5?'trưởng lão':'thành viên')).join('<br>')+'</div>'+
+   '<button data-x="gdon" '+(TU.stone<200?'disabled':'')+'>Góp 200 linh thạch → +60 điểm bang</button><button data-x="gquit">Giải tán bang</button><button data-x="close">Đóng</button>'}
+ window.__guildPanel=panel;window.__guildT=(n,m)=>{G.n=n;G.mem=m||[];G.lv=2;G.xp=900;save()};
+ /* lịch sự kiện */
+ const EV=[['12:00','Boss thế giới trưa','Boss lớn ngoài thành, rơi 5–7 Đá Cường Hóa'],['20:00','Chiến Trường Tiên Ma','30 phút, chọn phe Tiên hoặc Ma'],['21:00','Boss thế giới tối','Boss lớn ngoài thành, rơi 5–7 Đá Cường Hóa'],['Mỗi 12 phút','Boss thế giới luân phiên','Lần lượt 4 cổng'],['Mỗi ngày','Bí Cảnh','1 lần/ngày, PK tự do'],['Mỗi ngày','Nhiệm vụ ngày + Nhiệm vụ bang','Tự động 5 phút']];
+ function evPanel(){const P=$('npcp');P.style.display='block';P.dataset.src='ev';const t=vnNow();P.innerHTML='<b>📜 Lịch sự kiện</b> <small>(giờ Việt Nam, bây giờ '+String(t.h).padStart(2,'0')+':'+String(t.m).padStart(2,'0')+')</small>'+EV.map(e=>'<div style="display:flex;gap:8px;padding:5px 4px;border-bottom:1px solid rgba(217,164,65,.2)"><b style="color:#ffd36b;min-width:78px">'+e[0]+'</b><span><b>'+e[1]+'</b><br><small>'+e[2]+'</small></span></div>').join('')+'<button data-x="close">Đóng</button>'}
+ window.__evPanel=evPanel;
+ /* boss thế giới đúng 12:00 và 21:00 */
+ setInterval(()=>{const t=vnNow();const k=t.day+t.h;if((t.h===12||t.h===21)&&t.m<2&&window.__wbFix!==k&&window.__spawnWB){window.__wbFix=k;try{window.__spawnWB()}catch(e){}}if((t.h===11||t.h===20)&&t.m===55&&window.__wbAnn!==k){window.__wbAnn=k;announce('5 phút nữa <b>Boss thế giới</b> xuất hiện ngoài thành!')}},20000);
+ const _na=npcAct;npcAct=function(x,k){
+  if(x==='gmk'){const v=(($('gname')||{}).value||'').replace(/[<>&"'`]/g,'').trim().slice(0,14);if(v.length<2){chat('Tên bang cần ít nhất 2 chữ.','k');return}if(TU.stone<500)return;TU.stone-=500;saveTL();refreshTL();G.n=v;G.lv=1;G.xp=0;G.mem=[];save();banner('🏯 Lập bang '+v+' thành công','Tu sĩ sẽ dần xin gia nhập');announce(`<b>${esc(LOOK.name)}</b> đã lập bang <b>${esc(v)}</b>!`);sfx('magic');panel();return}
+  if(x==='gdon'){if(TU.stone<200)return;TU.stone-=200;saveTL();refreshTL();gpts(60);panel();return}
+  if(x==='gquit'){if(!confirm('Giải tán bang?'))return;G.n=null;G.mem=[];G.lv=1;G.xp=0;save();$('npcp').style.display='none';return}
+  return _na(x,k)};
+ /* nút trên thanh công cụ */
+ setTimeout(()=>{const pb=$('pkbar');if(!pb)return;const mk=(id,t,svg,fn)=>{if($(id))return;const b=document.createElement('button');b.id=id;b.title=t;b.className='sec';b.innerHTML=svg;b.onclick=fn;pb.insertBefore(b,$('mnub')||null)};
+  mk('gldb','Bang hội','<svg viewBox="0 0 24 24"><path d="M3 10l9-6 9 6M5 10v9h14v-9M10 19v-5h4v5"/></svg>',panel);
+  mk('evtb','Lịch sự kiện','<svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M8 3v4M16 3v4"/></svg>',evPanel)},2600);
+ /* tên bang trên đầu */
+ setInterval(()=>{try{if(!hero||!hero.lab)return;let d=hero.lab.querySelector('.gtag');if(!G.n){if(d)d.remove();return}if(!d){d=document.createElement('div');d.className='gtag';d.style.cssText='font:700 10px "Noto Serif",serif;color:#7fe8ff;text-shadow:0 1px 2px #000';const nm=hero.lab.querySelector('.nm');hero.lab.insertBefore(d,nm)}d.textContent='〔'+G.n+'〕'}catch(e){}},2000);
+})()}catch(e){console.warn('guild+',e)}
 window.__wp={renderer,T,WEAPONS,fabaoModel,TIERS,FBE,RT,VB:()=>VB,hero:()=>hero,TD:{tdKiem,tdXuan,tdBang,tdAn,swordRain,phoenix,tornado,maVortex,dQi:()=>dragonE('qi'),dTh:()=>dragonE('thunder'),dFi:()=>dragonE('fire'),dBl:()=>dragonE('blood'),vortex:()=>{const T0=performance.now();maVortex();return performance.now()-T0},ice:()=>{const t=TU.tong,r=TU.realm,l=TU.learned;TU.tong='thuy';TU.realm=4;TU.learned=['Huyền Băng Trảm','Băng Phong Vạn Lý'];hero.mp=100;P.cds[1]=0;try{_useSkill(1+'')}finally{TU.tong=t;TU.realm=r;TU.learned=l}}},TU:()=>TU};setTimeout(()=>{if(typeof TKACCT!=='undefined')TKACCT.boot()},0);
 window.__demo={closeInv:()=>closeInv(),castAt:(id,x,z)=>{const h=heroPos(),o=h.clone(),f=hero.face;h.x=x;h.z=z;hero.face=Math.random()*6.28;try{castCP(id,true)}catch(e){}h.copy(o);hero.face=f},BF,bfJoin,bfBuild,allEnts:()=>ents,ICL:()=>ICL,equipWeapon:(a,b)=>equipWeapon(a,b),wearBest,equip:i=>{equip.silent=1;try{equip(i)}finally{equip.silent=0}},heroPos,TRIB:()=>TRIB,addCorpse,deathDrop,ents:()=>ents,foe:e=>foe(e),castCP,CP,mkBook,learnBook,P2P,NET,itemCard,optHTML,onHunt,rankTick,RANK,WFALL,castFX,VILLC:()=>window.__vc,tribGo,tribReady,needXp,bankPanel,CG,titles,leaveBC,zoneStream,ZPOP,GANGS,PARTY,ptInvite,hit,NET,netUpd,CORPSE,goInt,toggleFly,updFabao,GARR,WFIX,spawnMon,EV,EVT,npcAct,openInv,SQUADS:()=>SQUADS,CIT:()=>CIT,MUS,PK,togglePK,callReinf,maAct,gainXp,realmText,updPK,INV,BC,mkItem,dropItem,enterBC,TU,refreshTL,bloom:()=>bloom,LOOK,buildAvatar,setSW:(a,b,c)=>{hero.vw&&hero.vw.rotation.set(a,b,c)},hero,P,useSkill,ents,setView:(y,p,d)=>{yaw=y;pitch=p;dist=d}};
 }
