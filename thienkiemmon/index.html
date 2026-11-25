@@ -2772,6 +2772,74 @@ function bfEnd(quit,winner){if(!BF.in)return;document.body.classList.remove('bfi
 {const _aoe=aoe;aoe=function(c,r,min,max,cc){_aoe.apply(this,arguments);if(BF.in)bfHit(c,r,(min+max)/2>5000?70:45)}}
 {const _us=useSkill;useSkill=function(k){const was=P.cds&&P.cds[k];_us.apply(this,arguments);if(BF.in&&!(was>0)){const hp=heroPos(),f=new T.Vector3(Math.sin(hero.face),0,Math.cos(hero.face));const c=hp.clone().addScaledVector(f,k==='A'?1.6:4);bfHit(c,k==='A'?2.6:6,k==='A'?40:60)}}}
 window.TKGAME={name:()=>LOOK.name,lv:()=>realmText(),ready(isNew,auto){if(isNew)return;window.__autoGo=1;const iv=setInterval(()=>{const g=$('cgo');if(g&&!g.disabled){clearInterval(iv);g.click()}},400)}};
+/* ===== ĐỒ HỌA+ (25/11): tán lá thật thay khối đa giác, thảm cỏ 3D + hoa dại mọc quanh người chơi, cỏ rạp khi đi qua ===== */
+try{(function(){
+ const rr=Math.random;
+ /* 1) Tán lá: thay các khối icosahedron phẳng bằng cụm lá có gió */
+ const lfTex=canvasTex(256,(g,s)=>{g.clearRect(0,0,s,s);for(let i=0;i<360;i++){const a=rr()*6.28,r=Math.sqrt(rr())*s*.45,x=s/2+Math.cos(a)*r,y=s/2+Math.sin(a)*r;const l=i<180?30+rr()*16:52+rr()*30;g.fillStyle=`hsl(${70+rr()*30},22%,${l}%)`;g.save();g.translate(x,y);g.rotate(rr()*6.28);g.beginPath();g.ellipse(0,0,8+rr()*6,3.5+rr()*2.5,0,0,7);g.fill();g.restore()}});
+ const cgCache={};
+ function clusterGeo(rad,n){const k=rad+'|'+n;if(cgCache[k])return cgCache[k];const pos=[],nor=[],uv=[],q=new T.Quaternion(),e=new T.Euler(),p=new T.Vector3(),c=new T.Vector3(),nn=new T.Vector3();
+  const V=[[-1,-1,0,0],[1,-1,1,0],[1,1,1,1],[-1,-1,0,0],[1,1,1,1],[-1,1,0,1]];
+  for(let i=0;i<n;i++){c.set(rr()*2-1,rr()*2-1,rr()*2-1).normalize().multiplyScalar(.45+rr()*.5);const sz=1.05+rr()*.55;e.set(rr()*3,rr()*3,rr()*3);q.setFromEuler(e);nn.copy(c).normalize();nn.y=nn.y*.55+.45;nn.normalize();
+   for(const w of[V,[V[0],V[2],V[1],V[3],V[5],V[4]]])for(const[a,b,u,v]of w){p.set(a*sz/2,b*sz/2,0).applyQuaternion(q).add(c).multiplyScalar(rad);pos.push(p.x,p.y,p.z);nor.push(nn.x,nn.y,nn.z);uv.push(u,v)}}
+  const g=new T.BufferGeometry();g.setAttribute('position',new T.Float32BufferAttribute(pos,3));g.setAttribute('normal',new T.Float32BufferAttribute(nor,3));g.setAttribute('uv',new T.Float32BufferAttribute(uv,2));return cgCache[k]=g}
+ const leafDepth=new T.MeshDepthMaterial({depthPacking:T.RGBADepthPacking,map:lfTex,alphaTest:.42});
+ function leafMat(old){const m=new T.MeshStandardMaterial({map:lfTex,alphaTest:.42,roughness:.82,color:old.color.clone().multiplyScalar(1.12),emissive:old.emissive?old.emissive.clone():new T.Color(0)});
+  m.onBeforeCompile=s=>{s.uniforms.uTime=uTime;s.vertexShader='uniform float uTime;\n'+s.vertexShader.replace('#include <begin_vertex>',`#include <begin_vertex>
+#ifdef USE_INSTANCING
+vec3 lip=instanceMatrix[3].xyz;float lw=sin(uTime*1.25+lip.x*.21+lip.z*.17+position.y*1.7)*.07+sin(uTime*2.9+position.x*3.+lip.z)*.025;transformed.x+=lw;transformed.z+=lw*.6;transformed.y+=sin(uTime*2.2+position.z*4.+lip.x)*.02;
+#endif`)};return m}
+ let nLeaf=0;
+ function upgradeFoliage(){scene.traverse(o=>{if(!o.isInstancedMesh||o.userData.gfxp)return;const g=o.geometry,m=o.material;if(!g||g.type!=='IcosahedronGeometry'||!m||!m.flatShading||!m.isMeshStandardMaterial)return;
+   o.userData.gfxp=1;const rad=(g.parameters&&g.parameters.radius)||1;o.geometry=clusterGeo(rad,LITE?7:(rad<.6?6:13));o.material=leafMat(m);o.customDepthMaterial=leafDepth;nLeaf++})}
+ upgradeFoliage();setTimeout(upgradeFoliage,4000);setTimeout(upgradeFoliage,15000);
+
+ /* 2) Thảm cỏ + hoa dại quanh người chơi */
+ const GN=touch?4200:13000,GR=touch?30:52,SP=Math.sqrt(Math.PI*GR*GR/GN),FN=Math.ceil(GN/16);
+ const uHero={value:new T.Vector3(0,-999,0)},uGR={value:GR};
+ function both(P,tris){for(const t of tris){P.push(...t[0],...t[1],...t[2]);P.push(...t[0],...t[2],...t[1])}}
+ function upN(g,P){g.setAttribute('position',new T.Float32BufferAttribute(P,3));const N=new Float32Array(P.length);for(let i=1;i<N.length;i+=3)N[i]=1;g.setAttribute('normal',new T.BufferAttribute(N,3));return g}
+ const GP=[];function blade(ang,lean,h,w){const ca=Math.cos(ang),sa=Math.sin(ang),pt=(x,y,l)=>[ca*x-sa*l,y,sa*x+ca*l];const a=pt(-w,0,0),b=pt(w,0,0),c=pt(-w*.7,h*.5,lean*.35),d=pt(w*.7,h*.5,lean*.35),t=pt(0,h,lean);both(GP,[[a,b,d],[a,d,c],[c,d,t]])}
+ blade(0,.22,.7,.062);blade(2.1,.27,.55,.055);blade(4.2,.17,.84,.058);if(!touch)blade(1.0,.3,.46,.05);
+ const tuftG=upN(new T.BufferGeometry(),GP);
+ const FP=[];{const st=[[-.012,0,0],[.012,0,0],[.012,.46,0],[-.012,.46,0]];both(FP,[[st[0],st[1],st[2]],[st[0],st[2],st[3]]]);const c=[0,.5,0];for(let k=0;k<6;k++){const a=k/6*6.283,b=(k+1)/6*6.283;both(FP,[[c,[Math.cos(a)*.1,.47+((k%2)*.03),Math.sin(a)*.1],[Math.cos(b)*.1,.47+(((k+1)%2)*.03),Math.sin(b)*.1]]])}}
+ const flG=upN(new T.BufferGeometry(),FP);
+ const gMat=new T.MeshLambertMaterial({color:0xffffff});
+ gMat.onBeforeCompile=s=>{s.uniforms.uTime=uTime;s.uniforms.uHero=uHero;s.uniforms.uGR=uGR;
+  s.vertexShader='uniform float uTime,uGR;uniform vec3 uHero;varying float vGH;\n'+s.vertexShader.replace('#include <begin_vertex>',`#include <begin_vertex>
+#ifdef USE_INSTANCING
+vec3 gip=instanceMatrix[3].xyz;float gh=position.y;vGH=clamp(gh/.72,0.,1.);
+float gd=distance(gip.xz,uHero.xz);transformed*=1.-smoothstep(uGR*.7,uGR*.98,gd);
+float gw=sin(uTime*1.7+gip.x*.35+gip.z*.27)*.5+sin(uTime*3.1+gip.x*.9)*.18+sin(uTime*.6+gip.z*.05)*.4;
+vec2 gaw=gip.xz-uHero.xz;float gpd=length(gaw);float gps=(1.-smoothstep(.35,1.7,gpd))*step(abs(gip.y-uHero.y),2.5);
+vec2 woff=vec2(gw*.3,gw*.17)*gh*gh+normalize(gaw+vec2(1e-4))*gps*gh*1.1;
+vec3 lx=instanceMatrix[0].xyz,lz=instanceMatrix[2].xyz;float s2=max(dot(lx,lx),1e-4);
+transformed.x+=dot(lx.xz,woff)/s2;transformed.z+=dot(lz.xz,woff)/s2;transformed.y-=gps*gh*.45;
+#endif`);
+  s.fragmentShader='varying float vGH;\n'+s.fragmentShader.replace('#include <color_fragment>','#include <color_fragment>\ndiffuseColor.rgb*=mix(.42,1.18,vGH);')};
+ const grassP=new T.InstancedMesh(tuftG,gMat,GN),flowP=new T.InstancedMesh(flG,gMat,FN);
+ for(const m of[grassP,flowP]){m.count=0;m.frustumCulled=false;m.receiveShadow=!LITE;m.instanceColor=new T.InstancedBufferAttribute(new Float32Array(m.instanceMatrix.count*3),3);scene.add(m)}
+ const sM=new Float32Array(GN*16),sC=new Float32Array(GN*3),fM=new Float32Array(FN*16),fC=new Float32Array(FN*3);
+ const hsh=(i,j)=>{let h=Math.imul(i,374761393)+Math.imul(j,668265263)|0;h=Math.imul(h^(h>>>13),1274126177);return((h^(h>>>16))>>>0)/4294967296};
+ const cA=new T.Color('#3d681d'),cB=new T.Color('#8cab40'),cD=new T.Color('#b7b262'),tc=new T.Color();
+ const FCOL=[[1,1,1],[1,.86,.25],[1,.55,.75],[.72,.55,1],[.5,.75,1],[1,.4,.35]];
+ function put(M,k,x,y,z,yaw,sx,sy){const c=Math.cos(yaw)*sx,s=Math.sin(yaw)*sx,o=k*16;M[o]=c;M[o+1]=0;M[o+2]=-s;M[o+3]=0;M[o+4]=0;M[o+5]=sy;M[o+6]=0;M[o+7]=0;M[o+8]=s;M[o+9]=0;M[o+10]=c;M[o+11]=0;M[o+12]=x;M[o+13]=y;M[o+14]=z;M[o+15]=1}
+ let job=null,cx=1e9,cz=1e9,vill=null;
+ function okCell(x,z){if(!outside(x,z)||Math.abs(x)>1050||Math.abs(z)>1050)return-1e9;if(Math.abs(x)<6&&z>20)return-1e9;const y=Ht(x,z);if(y>70||Math.abs(H(x,z)-y)>.02)return-1e9;if(fbm(x*.04,z*.04)>.555)return-1e9;if(Math.abs(Ht(x+.9,z)-y)>.6)return-1e9;
+  if(vill)for(const v of vill)if((x-v[0])*(x-v[0])+(z-v[1])*(z-v[1])<v[2])return-1e9;return y}
+ function start(hx,hz){vill=null;try{const vc=window.__vc;if(Array.isArray(vc))vill=vc.map(v=>Array.isArray(v)?[v[0],v[1],900]:(v&&v.x!=null?[v.x,v.z,(v.r||30)*(v.r||30)]:null)).filter(Boolean)}catch(e){}
+  job={hx,hz,i0:Math.floor((hx-GR)/SP),i1:Math.ceil((hx+GR)/SP),j0:Math.floor((hz-GR)/SP),j1:Math.ceil((hz+GR)/SP),n:0,f:0};job.i=job.i0;job.j=job.j0}
+ function step(ms){const J=job,R2=GR*GR,t0=performance.now();let q=0;while(true){if((++q&63)===0&&performance.now()-t0>ms)return;if(J.i>J.i1){J.i=J.i0;J.j++;if(J.j>J.j1){grassP.instanceMatrix.array.set(sM);grassP.instanceColor.array.set(sC);flowP.instanceMatrix.array.set(fM);flowP.instanceColor.array.set(fC);grassP.count=J.n;flowP.count=J.f;
+     for(const m of[grassP,flowP]){m.instanceMatrix.needsUpdate=true;m.instanceColor.needsUpdate=true}cx=J.hx;cz=J.hz;job=null;return}}
+   const i=J.i++,j=J.j,r1=hsh(i,j),r2=hsh(j+9173,i-311),x=(i+r1)*SP,z=(j+r2)*SP,dx=x-J.hx,dz=z-J.hz;if(dx*dx+dz*dz>R2||J.n>=GN)continue;const y=okCell(x,z);if(y<-1e8)continue;
+   const r3=hsh(i+77,j+1313),sc=.75+r3*.95;put(sM,J.n,x,y-.04,z,r1*6.283,sc,sc*(.8+r2*.5));const big=Math.sin(x*.045)*Math.cos(z*.037)*.5+.5;tc.copy(cA).lerp(cB,Math.min(1,r3*.55+big*.5));if(r2>.9)tc.lerp(cD,.6);sC[J.n*3]=tc.r;sC[J.n*3+1]=tc.g;sC[J.n*3+2]=tc.b;J.n++;
+   if(r3<.075&&J.f<FN&&big>.35){const fc=FCOL[(r1*997|0)%FCOL.length],fs=.8+r2*.8;put(fM,J.f,x+.15,y-.02,z+.1,r2*6.283,fs,fs);fC[J.f*3]=fc[0]*1.25;fC[J.f*3+1]=fc[1]*1.25;fC[J.f*3+2]=fc[2]*1.25;J.f++}}}
+ function tick(){requestAnimationFrame(tick);let hp;try{hp=heroPos()}catch(e){return}if(!hp)return;const off=hp.x>1100||(typeof AQ!=='undefined'&&AQ.lv>=3);
+  grassP.visible=flowP.visible=!off;if(off)return;uHero.value.copy(hp);
+  if(!job&&Math.hypot(hp.x-cx,hp.z-cz)>GR*.15)start(hp.x,hp.z);if(job)step(touch?2.5:3.5)}
+ requestAnimationFrame(tick);
+ window.__gfxpFlush=()=>{const hp=heroPos();uHero.value.copy(hp);start(hp.x,hp.z);step(1e9)};window.__gfxp=()=>({leafMeshes:nLeaf,grass:grassP.count,flowers:flowP.count,job:!!job});
+})()}catch(e){console.warn('gfx+',e)}
 setTimeout(()=>{if(typeof TKACCT!=='undefined')TKACCT.boot()},0);
 window.__demo={castAt:(id,x,z)=>{const h=heroPos(),o=h.clone(),f=hero.face;h.x=x;h.z=z;hero.face=Math.random()*6.28;try{castCP(id,true)}catch(e){}h.copy(o);hero.face=f},BF,bfJoin,bfBuild,allEnts:()=>ents,ICL:()=>ICL,equipWeapon:(a,b)=>equipWeapon(a,b),wearBest,equip:i=>equip(i),heroPos,TRIB:()=>TRIB,addCorpse,deathDrop,ents:()=>ents,foe:e=>foe(e),castCP,CP,mkBook,learnBook,P2P,NET,itemCard,optHTML,onHunt,rankTick,RANK,WFALL,castFX,VILLC:()=>window.__vc,tribGo,tribReady,needXp,bankPanel,CG,titles,leaveBC,zoneStream,ZPOP,GANGS,PARTY,ptInvite,hit,NET,netUpd,CORPSE,goInt,toggleFly,updFabao,GARR,WFIX,spawnMon,EV,EVT,npcAct,openInv,SQUADS:()=>SQUADS,CIT:()=>CIT,MUS,PK,togglePK,callReinf,maAct,gainXp,realmText,updPK,INV,BC,mkItem,dropItem,enterBC,TU,refreshTL,bloom:()=>bloom,LOOK,buildAvatar,setSW:(a,b,c)=>{hero.vw&&hero.vw.rotation.set(a,b,c)},hero,P,useSkill,ents,setView:(y,p,d)=>{yaw=y;pitch=p;dist=d}};
 }
