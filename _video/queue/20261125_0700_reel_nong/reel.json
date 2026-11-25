@@ -23,9 +23,17 @@
   },
   "canh": [
    {
+    "chu_to": "ĐẤT NGÂN HÀNG CÓ RẺ THẬT?",
+    "loi": "Anh chị có đang để dành tiền, chờ mua đất phát mại của ngân hàng vì nghĩ chắc chắn sẽ rẻ? Khoan đã, em kể anh chị nghe chuyện một nhà máy ở Cần Giờ trước. Ngân hàng hạ gần một nửa giá rồi, mà đến giờ vẫn phải đem ra đấu giá lại.",
+    "anh": [
+     "house keys contract||signing loan contract"
+    ],
+    "loi_doc": "Anh chị có đang để dành tiền, chờ mua đất phát mại của ngân hàng vì nghĩ chắc chắn sẽ rẻ? Khoan đã, em kể anh chị nghe chuyện một nhà máy ở Cần Giờ trước. Ngân hàng hạ gần một nửa giá rồi, mà đến giờ vẫn phải đem ra đấu giá lại."
+   },
+   {
     "chu_to": "12.809 M² ĐẤT + NHÀ MÁY",
-    "loi": "Agribank vừa đưa nhà máy nước Cần Giờ ra đấu giá lại, giá khởi điểm chỉ hơn năm mươi hai tỷ đồng. Khối tài sản gồm hơn mười hai nghìn tám trăm mét vuông đất và cả dây chuyền nước đóng chai.",
-    "loi_doc": "A gờ ri banh vừa đưa nhà máy nước Cần Giờ ra đấu giá lại, giá khởi điểm chỉ hơn năm mươi hai tỷ đồng. Khối tài sản gồm hơn mười hai nghìn tám trăm mét vuông đất và cả dây chuyền nước đóng chai.",
+    "loi": "Cụ thể, Agribank vừa đưa nhà máy nước Cần Giờ ra đấu giá lại, giá khởi điểm chỉ hơn năm mươi hai tỷ đồng. Khối tài sản gồm hơn mười hai nghìn tám trăm mét vuông đất và cả dây chuyền nước đóng chai.",
+    "loi_doc": "Cụ thể, A gờ ri banh vừa đưa nhà máy nước Cần Giờ ra đấu giá lại, giá khởi điểm chỉ hơn năm mươi hai tỷ đồng. Khối tài sản gồm hơn mười hai nghìn tám trăm mét vuông đất và cả dây chuyền nước đóng chai.",
     "anh": [
      "abandoned factory||old factory building"
     ],
@@ -77,7 +85,7 @@
     "loi": "Ngân hàng dám cho vay vì tin một điều: khách không trả được thì vẫn còn tài sản thế chấp. Nhưng đem ra bán thật, giá có khi chỉ còn một nửa.",
     "loi_doc": "Ngân hàng dám cho vay vì tin một điều: khách không trả được thì vẫn còn tài sản thế chấp. Nhưng đem ra bán thật, giá có khi chỉ còn một nửa.",
     "anh": [
-     "house keys contract||signing loan contract"
+     "bank loan signing||mortgage documents"
     ]
    },
    {

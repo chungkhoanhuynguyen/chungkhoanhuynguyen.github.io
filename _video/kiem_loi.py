@@ -24,9 +24,14 @@ def kiem(canh, cau_hoi=None, tin_nong=True):
             if len(w) > 38: loi.append("CẢNH BÁO cảnh %d: câu quá dài (%d từ) – tách đôi" % (i + 1, len(w)))
         if re.search(r"\b(\w+) \1\b", t, re.I): loi.append("CẢNH BÁO cảnh %d: lặp từ liền nhau" % (i + 1))
     if tin_nong and canh:
+        # (25/11 anh Huy: "Ko có mở bài à đọc thế ai nghe" – SN2511NOXAU mở thẳng bằng tin) → cảnh 1 = MỞ BÀI chạm túi tiền/nỗi lo người xem,
+        # tin (ai – vừa làm gì – bao nhiêu – khi nào) nằm ở cảnh 1 hoặc 2.
         t0 = canh[0].get("loi", "")
-        if len(t0.split()) < 15 or not re.search(r"\bvừa\b|\bhôm nay\b|\bsáng nay\b|\bchiều nay\b|\btối qua\b|\bphiên\b", t0, re.I):
-            loi.append("LỖI cảnh 1: chưa nói rõ TIN GÌ (ai – vừa làm gì – bao nhiêu – khi nào)")
+        if not re.search(r"anh chị", t0, re.I) or not re.search(r"\?", t0):
+            loi.append("LỖI cảnh 1: thiếu MỞ BÀI – câu đầu phải hỏi thẳng anh chị về nỗi lo/túi tiền của họ (có dấu ?), rồi mới vào tin")
+        tin = " ".join(c.get("loi", "") for c in canh[:2])
+        if len(tin.split()) < 25 or not re.search(r"\bvừa\b|\bhôm nay\b|\bsáng nay\b|\bchiều nay\b|\btối qua\b|\bphiên\b", tin, re.I):
+            loi.append("LỖI cảnh 1–2: chưa nói rõ TIN GÌ (ai – vừa làm gì – bao nhiêu – khi nào)")
     if cau_hoi is not None:
         q = cau_hoi.get("loi", "")
         if not q.strip().endswith("?"): loi.append("LỖI câu kết: phải là câu hỏi mở, kết bằng dấu ?")
