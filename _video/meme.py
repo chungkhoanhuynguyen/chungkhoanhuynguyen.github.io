@@ -89,6 +89,20 @@ def lam_duoi(R, WORK, T):
                     "-c:v", "libx264", "-preset", "veryfast", "-crf", "16", "-pix_fmt", "yuv420p"] + (["-c:a", "aac"] if giu else ["-an"]) + [out], check=True)
     return out, dung
 
+def giay_phep(url):
+    """Clip Wikimedia Commons: lấy tác giả + giấy phép để ghi nguồn trong caption."""
+    m = re.search(r"Special:FilePath/([^?]+)", url)
+    if not m: return ""
+    try:
+        import urllib.parse
+        q = "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=extmetadata&format=json&titles=File:" + m.group(1)
+        rq = urllib.request.Request(q, headers={"User-Agent": "HuyNguyenStudio/1.0 (chungkhoanhuynguyen.com)"})
+        pg = list(json.load(urllib.request.urlopen(rq, timeout=30))["query"]["pages"].values())[0]
+        md = pg["imageinfo"][0]["extmetadata"]
+        tg = re.sub(r"<[^>]+>", "", md.get("Artist", {}).get("value", "")).strip()
+        return "%s, %s" % (tg or "không rõ tác giả", md.get("LicenseShortName", {}).get("value", "?"))
+    except Exception as e: return ""
+
 def anh_tinh(R, QD, WORK):
     """Không có clip: ảnh tĩnh trong lô (anh_duoi) hoặc tìm theo từ khoá (Kho ảnh Commons) -> Ken Burns."""
     if R.get("anh_duoi"):
@@ -144,7 +158,7 @@ def ve_bieu_do(im, bd, t, y0, y1, anh_bd=None):
     if bd.get("tieu"): d.text((W/2, y0 + 22), bd["tieu"], font=fit(d, bd["tieu"], "ExtraBold", x1 - x0 - 40, 36), fill=TIM_S, anchor="ma")
     if bd.get("nguon"): d.text((W/2, y1 - 40), "Nguồn: " + bd["nguon"], font=F("Medium", 22), fill=MO, anchor="ma")
     P = bd["diem"]; v = [float(p[1]) for p in P]; lo, hi = min(v), max(v); pad = (hi - lo) * 0.18 or 1
-    gy0, gy1 = y0 + 120, y1 - 120; gx0, gx1 = x0 + 70, x1 - 70
+    gy0, gy1 = y0 + 165, y1 - 110; gx0, gx1 = x0 + 70, x1 - 70
     xs = [gx0 + (gx1 - gx0) * i / max(1, len(v) - 1) for i in range(len(v))]
     ys = [gy1 - (gy1 - gy0) * (z - lo + pad) / (hi - lo + 2 * pad) for z in v]
     for k in range(5):  # lưới mờ
@@ -241,7 +255,8 @@ def lam(R, QD, OUT, WORK, key):
     bc = R.get("binh_chon")
     if bc: cap += "\n\n👉 Anh chị chọn " + " hay ".join(str(i + 1) for i in range(len(bc))) + "?\n" + "\n".join(bc)
     nguon = [c["url"] for c in dung]
-    if R.get("nguon_clip") or nguon: cap += "\n\n🎬 Clip minh hoạ: " + (R.get("nguon_clip") or "") + ((" – " + " ; ".join(nguon)) if nguon else "")
+    gp = [g for g in dict.fromkeys(giay_phep(u) for u in nguon) if g]
+    if R.get("nguon_clip") or nguon: cap += "\n\n🎬 Clip minh hoạ: " + (R.get("nguon_clip") or "") + ((" (" + "; ".join(gp) + ")") if gp else "") + ((" – " + " ; ".join(dict.fromkeys(nguon))) if nguon else "")
     if R.get("_credit"): cap += "\n🖼 Ảnh: " + "; ".join(R["_credit"])
     open(os.path.join(OUT, key + "_mo_ta.txt"), "w", encoding="utf-8").write(
         cap + "\n\n📌 Huy Nguyễn Chứng Khoán\n🌐 chungkhoanhuynguyen.com\n" + " ".join("#" + t_.lstrip("#") for t_ in R.get("tags", [])) + "\n")
