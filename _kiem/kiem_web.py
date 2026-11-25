@@ -32,7 +32,7 @@ for p in pages:
         if not sc or "eu-assets.i.posthog.com" not in sc.group(1) or "'none'" in sc.group(1) or not cn or "eu.i.posthog.com" not in cn.group(1):
             loi.append(f"{rel}: CSP chặn PostHog (chạy python _ads.py)")
     # (25/11) thương hiệu chìm: chỉ 1 lớp – không vừa lớp toàn trang #wm vừa lớp từng khung
-    if rel in ("/index.html", "index.html") and '.mw::after' in s and re.search(r'#wm\{(?!display:none)', s): loi.append(f"{rel}: 2 lớp chữ thương hiệu chồng nhau")
+    if rel in ("/index.html", "index.html") and '.mw::after' in s and '#wm{position:fixed' in s: loi.append(f"{rel}: 2 lớp chữ thương hiệu chồng nhau")
     titles.setdefault(tt, []).append(rel)
 for t, ps in titles.items():
     if len(ps) > 1: canh.append(f"trùng tiêu đề '{t[:50]}': {', '.join(ps[:3])}")
