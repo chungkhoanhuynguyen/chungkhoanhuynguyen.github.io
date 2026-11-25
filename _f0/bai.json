@@ -7688,26 +7688,42 @@
  },
  {
   "slug": "san-hose-hnx-upcom-la-gi",
-  "kw": "sàn HOSE HNX UPCoM khác nhau thế nào",
+  "kw": "sàn HOSE là gì, sàn HOSE HNX UPCoM khác nhau thế nào",
   "grp": 1,
-  "title": "Sàn HOSE, HNX, UPCoM khác nhau thế nào? Giờ giao dịch, biên độ",
-  "desc": "HOSE chiếm 83% vốn hóa, cổ phiếu UPCoM trung vị chỉ 210 cp khớp mỗi phiên. So sánh 3 sàn: giờ giao dịch, biên độ ±7/10/15%, thanh khoản, rủi ro.",
+  "title": "Sàn HOSE là gì? So với HNX, UPCoM: giờ giao dịch, biên độ",
+  "desc": "Sàn HOSE chiếm 84% vốn hóa, mã UPCoM trung vị chỉ khớp 196 cp/phiên. So 3 sàn: giờ, biên độ, thanh khoản; HNX chuyển sang HOSE 28/12.",
   "body": [
    [
     "p",
-    "Anh Tuấn mới mở tài khoản, thấy một mã UPCoM tăng 15% trong một phiên nên đặt mua 2.000 cổ phiếu. Ba ngày sau muốn bán thì cả phiên chỉ có vài trăm cổ phiếu được khớp. Vấn đề không nằm ở doanh nghiệp, mà ở <b>cái sàn</b> mã đó đang giao dịch."
+    "Anh Tuấn mới mở tài khoản, thấy một mã UPCoM tăng 15% trong một phiên nên đặt mua 2.000 cổ phiếu. Ba ngày sau muốn bán, cả phiên chỉ khớp (mua bán thành công) vài trăm cổ phiếu."
    ],
    [
     "p",
-    "Việt Nam có ba nơi giao dịch cổ phiếu: <b>HOSE</b> (Sở Giao dịch Chứng khoán TP.HCM), <b>HNX</b> (Sở Giao dịch Chứng khoán Hà Nội) và <b>UPCoM</b> (thị trường của công ty đại chúng chưa niêm yết, do HNX vận hành). Em so sánh bằng số liệu thật của hơn 1.500 mã để anh chị thấy khác biệt rõ nhất."
+    "Vấn đề không nằm ở doanh nghiệp, mà ở <b>cái sàn</b> mã đó đang giao dịch. Bài này giải thích sàn HOSE là gì và khác HNX, UPCoM ra sao, bằng số liệu thật của hơn 1.500 mã."
+   ],
+   [
+    "h2",
+    "Sàn HOSE là gì?"
    ],
    [
     "p",
-    "<b>Cập nhật quan trọng:</b> theo Sở Giao dịch Chứng khoán Việt Nam (thông báo 1/10/2026), toàn bộ cổ phiếu niêm yết trên HNX giao dịch phiên cuối tại HNX ngày <b>23/12/2026</b>, tạm ngừng 24–25/12 và chuyển sang giao dịch tại <b>HOSE từ 28/12/2026</b> (căn cứ Thông tư 139/2025/TT-BTC). Bảng dưới là số liệu trước khi chuyển; giờ giao dịch mới xem tại <a href=\"/f0/gio-giao-dich-chung-khoan.html\">giờ giao dịch chứng khoán</a>."
+    "HOSE là Sở Giao dịch Chứng khoán TP.HCM – \"chợ\" lớn nhất để mua bán cổ phiếu ở Việt Nam. Nơi đây có 442 mã, gồm các tên quen như Vingroup (VIC), Vinhomes (VHM), Vietcombank (VCB), VietinBank (CTG), BIDV (BID), và chiếm khoảng <b>84%</b> tổng vốn hóa (giá trị cả công ty trên sàn) của ba sàn."
+   ],
+   [
+    "ul",
+    [
+     "<b>HOSE</b>: Sở Giao dịch Chứng khoán TP.HCM – doanh nghiệp lớn, điều kiện niêm yết (được đưa lên sàn) cao nhất.",
+     "<b>HNX</b>: Sở Giao dịch Chứng khoán Hà Nội – phần lớn doanh nghiệp vừa và nhỏ.",
+     "<b>UPCoM</b>: thị trường của công ty đại chúng chưa niêm yết, do HNX vận hành – điều kiện thấp nhất."
+    ]
    ],
    [
     "h2",
     "Ba sàn khác nhau bao nhiêu, nhìn bằng số?"
+   ],
+   [
+    "p",
+    "Khác nhau nhiều nhất ở độ lớn và độ \"dễ bán\". Bảng tính trên toàn bộ mã của mỗi sàn:"
    ],
    [
     "table",
@@ -7720,33 +7736,33 @@
      ],
      [
       "Số mã",
-      "439",
+      "442",
       "299",
-      "810"
+      "809"
      ],
      [
-      "Tỷ trọng vốn hóa",
-      "83%",
+      "Tỷ trọng<br>vốn hóa",
+      "84%",
       "4%",
       "12%"
      ],
      [
-      "Vốn hóa trung vị<br>(tỷ đồng)",
-      "1.408",
-      "220",
-      "115"
+      "Vốn hóa mã<br>ở giữa (tỷ đồng)",
+      "1.403",
+      "216",
+      "116"
      ],
      [
-      "Mã vốn hóa<br>≥10.000 tỷ",
-      "84",
+      "Mã trên<br>10.000 tỷ",
+      "83",
       "12",
       "20"
      ],
      [
-      "KL khớp trung vị<br>(cp/phiên)",
-      "69.661",
-      "2.106",
-      "210"
+      "Khớp mỗi phiên,<br>mã ở giữa<br>(cổ phiếu)",
+      "71.500",
+      "1.986",
+      "196"
      ],
      [
       "Biên độ giá",
@@ -7758,35 +7774,76 @@
    ],
    [
     "p",
-    "<small>Số mã theo danh sách mã của web; vốn hóa và khối lượng khớp bình quân 10 phiên từ dữ liệu cơ bản cập nhật 14/11/2026; tỷ trọng vốn hóa em tự tính trên tổng ba sàn.</small>"
+    "<small>Số mã theo danh sách mã của web; vốn hóa và khối lượng khớp bình quân 10 phiên từ dữ liệu cơ bản cập nhật 17:40 25/11/2026; \"mã ở giữa\" = trung vị, em tự tính.</small>"
    ],
    [
     "p",
-    "Đọc bảng: một nửa số mã trên UPCoM khớp <b>dưới 210 cổ phiếu mỗi phiên</b>, và khoảng 220 mã không có giao dịch nào trong 10 phiên gần nhất. Trên HOSE, mã ở giữa danh sách vẫn khớp gần 70 nghìn cổ phiếu mỗi phiên. Đó là lý do anh Tuấn mua được mà khó bán."
+    "Một nửa số mã UPCoM khớp <b>dưới 196 cổ phiếu mỗi phiên</b>, và 229 mã không có giao dịch nào trong 10 phiên. Trên HOSE, mã ở giữa danh sách vẫn khớp khoảng 71.500 cổ phiếu. Đó là lý do anh Tuấn mua được mà khó bán."
    ],
    [
     "h2",
-    "Biên độ giá ±7%, ±10%, ±15% nghĩa là gì?"
+    "Sau 28/12/2026 còn mấy sàn cổ phiếu?"
+   ],
+   [
+    "p",
+    "Còn hai nơi giao dịch cổ phiếu: HOSE và UPCoM. Theo Sở Giao dịch Chứng khoán Việt Nam (thông báo 1/10/2026, căn cứ Thông tư 139/2025/TT-BTC), toàn bộ cổ phiếu niêm yết trên HNX chuyển sang HOSE:"
+   ],
+   [
+    "ol",
+    [
+     "Thứ Tư <b>23/12/2026</b>: phiên cuối cổ phiếu niêm yết giao dịch tại HNX.",
+     "24–25/12: tạm ngừng để chuyển (các mã HOSE vẫn giao dịch).",
+     "Thứ Hai <b>28/12/2026</b>: phiên đầu tiên trên HOSE."
+    ]
+   ],
+   [
+    "p",
+    "Sau khi chuyển, HOSE sẽ có khoảng 741 mã (442 + 299, em tự cộng theo danh sách hiện tại). Biên độ phiên đầu và các chi tiết khác chờ thông báo chính thức – xem <a href=\"/f0/co-phieu-hnx-chuyen-sang-hose.html\">cổ phiếu HNX chuyển sang HOSE cần làm gì</a>."
+   ],
+   [
+    "h2",
+    "Biên độ ±7%, ±10%, ±15% nghĩa là gì?"
    ],
    [
     "p",
     "Biên độ là mức giá được phép tăng/giảm tối đa trong một phiên so với giá tham chiếu (xem <a href=\"/f0/bien-do-gia-tran-san.html\">giá trần, giá sàn</a>). Ví dụ giá tham chiếu 20.000 đồng:"
    ],
    [
-    "ul",
+    "table",
     [
-     "HOSE: trần 21.400 – sàn 18.600 đồng (±7%).",
-     "HNX: trần 22.000 – sàn 18.000 đồng (±10%).",
-     "UPCoM: trần 23.000 – sàn 17.000 đồng (±15%)."
+     [
+      "Sàn",
+      "Giá trần",
+      "Giá sàn"
+     ],
+     [
+      "HOSE ±7%",
+      "21.400",
+      "18.600"
+     ],
+     [
+      "HNX ±10%",
+      "22.000",
+      "18.000"
+     ],
+     [
+      "UPCoM ±15%",
+      "23.000",
+      "17.000"
+     ]
     ]
    ],
    [
     "p",
-    "Biên độ có thật sự chặn giá? Một năm qua (14/11/2025 – 13/11/2026), VCB, FPT, HPG trên HOSE có phiên tăng mạnh nhất <b>+6,9%</b> và giảm mạnh nhất <b>−7,0%</b>, đúng sát trần sàn (giá đóng cửa điều chỉnh, em tự tính). Với UPCoM, một phiên mất 15% là chuyện có thể xảy ra, ba phiên liền sàn là mất gần 39%."
+    "Một năm qua (14/11/2025 – 13/11/2026), VCB, FPT, HPG trên HOSE có phiên tăng mạnh nhất <b>+6,9%</b> và giảm mạnh nhất <b>−7,0%</b>, sát trần sàn (giá đóng cửa đã điều chỉnh cổ tức, em tự tính). Với UPCoM, ba phiên liền giảm hết biên độ (giảm sàn) là mất gần 39%."
    ],
    [
     "h2",
     "Giờ giao dịch từng sàn có khác nhau không?"
+   ],
+   [
+    "p",
+    "Cả ba sàn mở 9:00, nghỉ trưa 11:30–13:00, thứ Hai đến thứ Sáu. Khác nhau ở phiên mở cửa, đóng cửa:"
    ],
    [
     "table",
@@ -7798,46 +7855,34 @@
       "UPCoM"
      ],
      [
-      "Mở cửa (ATO)",
-      "9:00–9:15",
+      "Mở cửa<br>(ATO)",
+      "9:00–<br>9:15",
       "Không",
       "Không"
      ],
      [
-      "Liên tục sáng",
-      "9:15–11:30",
-      "9:00–11:30",
-      "9:00–11:30"
+      "Khớp liên<br>tục sáng",
+      "9:15–<br>11:30",
+      "9:00–<br>11:30",
+      "9:00–<br>11:30"
      ],
      [
-      "Nghỉ trưa",
-      "11:30–13:00",
-      "11:30–13:00",
-      "11:30–13:00"
+      "Khớp liên<br>tục chiều",
+      "13:00–<br>14:30",
+      "13:00–<br>14:30",
+      "13:00–<br>15:00"
      ],
      [
-      "Liên tục chiều",
-      "13:00–14:30",
-      "13:00–14:30",
-      "13:00–15:00"
-     ],
-     [
-      "Đóng cửa (ATC)",
-      "14:30–14:45",
-      "14:30–14:45",
+      "Đóng cửa<br>(ATC)",
+      "14:30–<br>14:45",
+      "14:30–<br>14:45",
       "Không"
-     ],
-     [
-      "Sau giờ / thỏa thuận",
-      "tới 15:00",
-      "PLO 14:45–15:00",
-      "–"
      ]
     ]
    ],
    [
     "p",
-    "Cả ba sàn giao dịch thứ Hai đến thứ Sáu, nghỉ cuối tuần và ngày lễ. Giá tham chiếu UPCoM hôm sau là giá bình quân gia quyền trong ngày, không phải giá đóng cửa. Chi tiết từng phiên ở bài <a href=\"/f0/gio-giao-dich-chung-khoan.html\">giờ giao dịch chứng khoán</a>; Sở Giao dịch có thể điều chỉnh, anh chị xem thông báo trên ứng dụng giao dịch."
+    "ATO, ATC là phiên gom lệnh rồi khớp một mức giá chung lúc mở và đóng cửa. Giá tham chiếu UPCoM hôm sau là giá bình quân trong ngày. Chi tiết: <a href=\"/f0/gio-giao-dich-chung-khoan.html\">giờ giao dịch chứng khoán</a>."
    ],
    [
     "h2",
@@ -7845,7 +7890,11 @@
    ],
    [
     "p",
-    "HOSE yêu cầu cao nhất về vốn điều lệ, số năm có lãi và số cổ đông, nên tập trung doanh nghiệp lớn: 5 mã vốn hóa lớn nhất là VIC, VHM, VCB, BID, CTG. HNX yêu cầu thấp hơn, phần lớn là doanh nghiệp vừa và nhỏ (205/299 mã vốn hóa dưới 500 tỷ). UPCoM gần như không yêu cầu lợi nhuận, nhưng không phải toàn mã nhỏ: ACV, VGI, MSR, VEA đều trên 40.000 tỷ đồng."
+    "HOSE yêu cầu cao nhất về vốn điều lệ, số năm có lãi và số cổ đông, nên tập trung doanh nghiệp lớn. HNX yêu cầu thấp hơn, phần lớn là doanh nghiệp vừa và nhỏ."
+   ],
+   [
+    "p",
+    "UPCoM gần như không yêu cầu lợi nhuận, nhưng không phải toàn mã nhỏ: ACV (Cảng hàng không Việt Nam) hay VGI (Viettel Global) đều là doanh nghiệp rất lớn. Lên HOSE chỉ cho biết đủ điều kiện niêm yết, không bảo đảm giá tăng."
    ],
    [
     "h2",
@@ -7854,9 +7903,9 @@
    [
     "ul",
     [
-     "<b>Mua mã thanh khoản thấp vì thấy tăng mạnh.</b> Mã UPCoM khớp vài trăm cổ phiếu mỗi phiên có thể tăng trần chỉ với một lệnh nhỏ, nhưng lúc cần bán thì không có người mua.",
-     "<b>Quên biên độ khi đặt cắt lỗ.</b> Mức cắt lỗ 8% vô nghĩa nếu mã UPCoM giảm 15% ngay phiên đầu; tính kích thước vị thế theo biên độ của sàn (xem <a href=\"/f0/cat-lo-la-gi.html\">cắt lỗ là gì</a>).",
-     "<b>Nghĩ \"lên HOSE là tốt\".</b> Chuyển sàn chỉ cho biết doanh nghiệp đủ điều kiện niêm yết, không bảo đảm giá tăng hay lợi nhuận tốt; vẫn phải đọc báo cáo tài chính."
+     "<b>Mua mã ít người mua bán (thanh khoản thấp) vì thấy tăng mạnh.</b> Mã UPCoM khớp vài trăm cổ phiếu mỗi phiên có thể tăng trần chỉ với một lệnh nhỏ, nhưng lúc cần bán thì không có người mua.",
+     "<b>Quên biên độ khi đặt cắt lỗ.</b> Mức cắt lỗ 8% vô nghĩa nếu mã UPCoM giảm 15% ngay phiên đầu (xem <a href=\"/f0/cat-lo-la-gi.html\">cắt lỗ là gì</a>).",
+     "<b>Nghĩ \"lên HOSE là tốt\".</b> Chuyển sàn không làm mã ít người mua thành mã nhiều người mua; vẫn phải đọc báo cáo tài chính."
     ]
    ],
    [
@@ -7864,32 +7913,32 @@
     "Checklist trước khi mua một mã"
    ],
    [
-    "ul",
+    "ol",
     [
      "Mã đang ở sàn nào? (bảng giá ghi rõ, hoặc tra ở <a href=\"/ma/\">danh sách mã</a>).",
-     "Khối lượng khớp trung bình 10 phiên có đủ lớn so với số cổ phiếu định mua không (gợi ý: lệnh của mình dưới 10% khối lượng một phiên).",
+     "Khối lượng khớp bình quân 10 phiên có đủ lớn không (mốc nhiều người dùng: lệnh của mình dưới 10% khối lượng một phiên).",
      "Biên độ của sàn: chuẩn bị tinh thần cho 1–3 phiên đi ngược.",
      "Doanh nghiệp có lãi đều các quý gần đây không.",
-     "Người mới nên bắt đầu với nhóm thanh khoản cao như <a href=\"/f0/vn30-la-gi.html\">VN30</a>."
+     "Người mới thường bắt đầu tìm hiểu từ nhóm dễ mua bán như <a href=\"/f0/vn30-la-gi.html\">VN30</a>."
     ]
    ],
    [
     "p",
-    "Lịch chuyển sàn chi tiết và việc cần làm trước 23/12/2026: <a href=\"/f0/co-phieu-hnx-chuyen-sang-hose.html\">cổ phiếu HNX chuyển sang HOSE – cần làm gì</a>."
+    "Chưa có tài khoản để xem bảng giá ba sàn: <a href=\"/mo-tai-khoan-chung-khoan.html\">hướng dẫn mở tài khoản chứng khoán từng bước</a>."
    ]
   ],
   "faq": [
    [
+    "Sàn HOSE là gì?",
+    "HOSE là Sở Giao dịch Chứng khoán TP.HCM, sàn lớn nhất Việt Nam với 442 mã và khoảng 84% vốn hóa ba sàn; biên độ giá ±7% mỗi phiên, có phiên ATO và ATC."
+   ],
+   [
     "Giờ giao dịch các sàn có khác nhau không?",
-    "Cả ba sàn giao dịch 9:00–15:00, nghỉ trưa 11:30–13:00. HOSE có phiên ATO 9:00–9:15 và ATC 14:30–14:45; HNX có ATC và phiên sau giờ PLO; UPCoM khớp liên tục tới 15:00, không có ATO/ATC."
+    "Cả ba sàn giao dịch 9:00–15:00, nghỉ trưa 11:30–13:00. HOSE có phiên mở cửa ATO 9:00–9:15 và đóng cửa ATC 14:30–14:45; HNX có ATC; UPCoM khớp liên tục tới 15:00, không có ATO/ATC."
    ],
    [
     "Cổ phiếu sàn nào rủi ro nhất?",
-    "UPCoM có biên độ rộng nhất (±15%) và thanh khoản thấp nhất: một nửa số mã khớp dưới 210 cổ phiếu mỗi phiên, nên rủi ro mua được mà khó bán cao hơn HOSE nhiều."
-   ],
-   [
-    "Cổ phiếu có thể chuyển sàn không?",
-    "Có. Doanh nghiệp đủ điều kiện có thể chuyển từ UPCoM lên HNX hoặc HOSE, và có thể bị hủy niêm yết, chuyển xuống UPCoM nếu vi phạm điều kiện."
+    "UPCoM có biên độ rộng nhất (±15%) và thanh khoản thấp nhất: một nửa số mã khớp dưới 196 cổ phiếu mỗi phiên, nên rủi ro mua được mà khó bán cao hơn HOSE nhiều."
    ]
   ],
   "rel": [
@@ -7898,9 +7947,10 @@
    "bien-do-gia-tran-san",
    "vn30-la-gi",
    "co-phieu-la-gi",
-   "cat-lo-la-gi"
+   "cat-lo-la-gi",
+   "mo-tai-khoan-chung-khoan-tren-dien-thoai"
   ],
-  "mod": "2026-11-16"
+  "mod": "2026-11-25"
  },
  {
   "slug": "macd-la-gi",
@@ -11683,7 +11733,8 @@
    "neo-gia-la-gi",
    "cat-lo-la-gi",
    "mua-trung-binh-gia-dca",
-   "mo-hinh-hai-day-la-gi"
+   "mo-hinh-hai-day-la-gi",
+   "co-nen-bat-day-vang"
   ],
   "mod": "2026-11-15"
  },
@@ -25696,19 +25747,19 @@
      ],
      [
       "2/4/2025",
-      "Mỹ công bố thuế đối ứng 46% với Việt Nam"
+      "Mỹ công bố thuế đối ứng<br>46% với Việt Nam"
      ],
      [
       "9/4/2025",
-      "Mỹ hoãn áp thuế 90 ngày"
+      "Mỹ hoãn áp thuế<br>90 ngày"
      ],
      [
       "8/2025",
-      "Mức thuế với Việt Nam còn 20% (VnExpress 1/8/2025)"
+      "Mức thuế với Việt Nam<br>còn 20% (VnExpress 1/8)"
      ],
      [
       "26/10/2025",
-      "Tuyên bố chung về khung hiệp định thương mại đối ứng"
+      "Tuyên bố chung về khung<br>hiệp định thương mại"
      ]
     ]
    ],
@@ -25846,7 +25897,7 @@
    "day-thi-truong-la-gi"
   ],
   "grp": 8,
-  "mod": "2026-11-24"
+  "mod": "2026-11-25"
  },
  {
   "slug": "ebit-la-gi",
@@ -38320,27 +38371,23 @@
     [
      [
       "Thời điểm",
-      "Lãi gửi",
-      "Lạm phát",
-      "Lãi thật (tự tính)"
+      "Lãi gửi /<br>lạm phát",
+      "Lãi thật<br>(tự tính)"
      ],
      [
       "Năm 2011",
-      "Trần 14% (Thông tư 02/2011)",
-      "CPI bình quân 18,6%",
-      "Khoảng −4,6 điểm"
+      "14% (trần) /<br>CPI 18,6%",
+      "≈ −4,6 điểm"
      ],
      [
       "Tháng 10/2026",
-      "5,4% (12 tháng, NHTM Nhà nước)",
-      "CPI so cùng kỳ 5,09%",
-      "Khoảng +0,3 điểm"
+      "5,4% / CPI 5,09%",
+      "≈ +0,3 điểm"
      ],
      [
-      "Giả định sổ 7%",
-      "7%",
-      "5,09%",
-      "Khoảng +1,9 điểm"
+      "Giả định<br>sổ 7%",
+      "7% / CPI 5,09%",
+      "≈ +1,9 điểm"
      ]
     ]
    ],
@@ -38415,7 +38462,7 @@
    "tich-san-co-phieu-hay-gui-tiet-kiem",
    "lam-phat-va-chung-khoan"
   ],
-  "mod": "2026-11-24"
+  "mod": "2026-11-25"
  },
  {
   "slug": "chi-so-dxy-la-gi",
@@ -39020,6 +39067,12 @@
    [
     "p",
     "<small>Nguồn: MarketTimes 16/11/2026 (giá thế giới, SJC, nhẫn); 1thegioi 16/11/2026 (SJC giảm 53,8 triệu, 28,1%); Znews 28/5/2026 (đỉnh 191,3 triệu); Stockbiz 7/2026 (đỉnh 5.594,82 USD ngày 29/1/2026); Hà Nội Mới 14/11/2026 (Vietcombank bán USD 25.910); Tinnhanhchungkhoan 2/6/2016; USAGOLD. Giá quy đổi và chênh lệch là số tự tính, chưa tính thuế phí. Bài chia sẻ kiến thức, không phải khuyến nghị.</small>"
+   ],
+   [
+    "ul",
+    [
+     "Vàng giảm sâu, có nên bắt đáy? Chênh mua–bán 5 triệu/lượng và bài học năm 2013: <a href=\"/f0/co-nen-bat-day-vang.html\">có nên bắt đáy vàng</a>."
+    ]
    ]
   ],
   "faq": [
@@ -39037,11 +39090,13 @@
    ]
   ],
   "rel": [
+   "co-nen-bat-day-vang",
    "mua-vang-dinh-lo-bao-nhieu",
    "gia-vang-va-chung-khoan",
    "ty-trong-vang-bitcoin-trong-danh-muc",
    "lai-suat-thuc-la-gi"
-  ]
+  ],
+  "mod": "2026-11-25"
  },
  {
   "slug": "doanh-nghiep-rut-lui-khoi-thi-truong-la-gi",
@@ -39217,17 +39272,17 @@
     [
      [
       "Mốc",
-      "Vàng miếng (triệu/lượng)",
-      "Vàng thế giới (USD/ounce)"
+      "Vàng miếng<br>(triệu/lượng)",
+      "Thế giới<br>(USD/ounce)"
      ],
      [
-      "Đỉnh cuối tháng 1/2026",
+      "Đỉnh cuối<br>tháng 1/2026",
       "191,3",
-      "5.594,82 (29/1, trong phiên)"
+      "5.594,82<br>(29/1,<br>trong phiên)"
      ],
      [
-      "Sáng 16/11/2026",
-      "134,5 mua vào<br>137,5 bán ra",
+      "Sáng<br>16/11/2026",
+      "134,5 mua<br>137,5 bán",
       "3.875,65"
      ],
      [
@@ -39284,26 +39339,26 @@
      [
       "Đợt",
       "Đỉnh → đáy",
-      "Vượt lại đỉnh"
+      "Vượt lại<br>đỉnh"
      ],
      [
-      "1980 (thế giới)",
-      "850 USD → khoảng 250 USD năm 1999<br>(−70%)",
-      "Đầu năm 2008<br>khoảng 28 năm"
+      "1980<br>(thế giới)",
+      "850 → khoảng<br>250 USD (1999)<br>−70%",
+      "Đầu 2008<br>~28 năm"
      ],
      [
-      "2011 (thế giới)",
-      "1.920 USD (9/2011) → khoảng 1.050 USD cuối 2015<br>(−45%)",
-      "Năm 2020<br>khoảng 9 năm"
+      "2011<br>(thế giới)",
+      "1.920 (9/2011) →<br>~1.050 USD<br>(2015) −45%",
+      "Năm 2020<br>~9 năm"
      ],
      [
-      "2011 (vàng miếng)",
-      "49 triệu (8/2011) → khoảng 33 triệu năm 2016<br>(−32,7%)",
-      "Năm 2020<br>khoảng 9 năm"
+      "2011<br>(vàng miếng)",
+      "49 triệu (8/2011)<br>→ ~33 triệu<br>(2016) −32,7%",
+      "Năm 2020<br>~9 năm"
      ],
      [
       "2026",
-      "191,3 → 134,5 triệu<br>(−29,7%)",
+      "191,3 → 134,5<br>triệu (−29,7%)",
       "Chưa biết"
      ]
     ]
@@ -39333,8 +39388,8 @@
     [
      [
       "Ngày mua",
-      "Giá mua (USD/ounce)",
-      "Lãi/lỗ tới 17/11/2026"
+      "Giá mua<br>(USD/ounce)",
+      "Lãi/lỗ tới<br>17/11/2026"
      ],
      [
       "17/11/2023",
@@ -39380,8 +39435,8 @@
     [
      [
       "Vàng chiếm",
-      "Mất bao nhiêu",
-      "Tổng tài sản giảm"
+      "Mất<br>bao nhiêu",
+      "Tổng tài<br>sản giảm"
      ],
      [
       "10% (100 triệu)",
@@ -39437,6 +39492,12 @@
    [
     "p",
     "<small>Nguồn: Znews 28/5/2026 (vàng miếng đỉnh 191,3 triệu/lượng cuối tháng 1/2026); MarketTimes 16/11/2026 (thế giới 3.875,65 USD/ounce, SJC 134,5 – 137,5 triệu); Stockbiz 7/2026 (đỉnh 5.594,82 USD ngày 29/1/2026); Tinnhanhchungkhoan 2/6/2016 (SJC 49 triệu cuối 8/2011, về khoảng 33 triệu); USAGOLD (lịch sử giá vàng 1980, 1999, 2011, 2015); giá chốt ngày vàng thế giới từ dữ liệu thế giới & hàng hóa của web (17/11/2023–17/11/2026). Phần trăm, lãi kép và ví dụ chị Thu là số tự tính/giả định minh hoạ. Quá khứ không bảo đảm tương lai. Bài chia sẻ kiến thức, không phải khuyến nghị.</small>"
+   ],
+   [
+    "ul",
+    [
+     "Vàng giảm sâu, có nên bắt đáy? Chênh mua–bán 5 triệu/lượng và bài học năm 2013: <a href=\"/f0/co-nen-bat-day-vang.html\">có nên bắt đáy vàng</a>."
+    ]
    ]
   ],
   "faq": [
@@ -39454,11 +39515,13 @@
    ]
   ],
   "rel": [
+   "co-nen-bat-day-vang",
    "chenh-lech-gia-vang-trong-nuoc-va-the-gioi",
    "gia-vang-va-chung-khoan",
    "ty-trong-vang-bitcoin-trong-danh-muc",
    "quy-du-phong-truoc-khi-dau-tu"
-  ]
+  ],
+  "mod": "2026-11-25"
  },
  {
   "slug": "het-uu-dai-lai-suat-vay-mua-nha",
@@ -42516,6 +42579,264 @@
    "tich-san-co-phieu-hay-gui-tiet-kiem",
    "quy-du-phong-truoc-khi-dau-tu",
    "lai-suat-tang-anh-huong-chung-khoan"
+  ]
+ },
+ {
+  "slug": "co-nen-bat-day-vang",
+  "kw": "có nên bắt đáy vàng",
+  "grp": 8,
+  "date": "2026-11-25",
+  "title": "Có nên bắt đáy vàng? Mua xong mất ngay 5 triệu mỗi lượng",
+  "desc": "Vàng thế giới mất 9,5% một tuần, SJC về 135 triệu. Mua 2 lượng bán lại ngay mất 10 triệu. Lần trước (2013) người bắt đáy chờ hơn 6 năm.",
+  "body": [
+   [
+    "p",
+    "Chiều 24/11, anh Cường nhắn bạn: \"Vàng rẻ nhất năm rồi, tôi rút sổ <b>270 triệu</b> mua 2 lượng bắt đáy đây\". Anh không để ý một chi tiết: mua xong, bước ra cửa bán lại ngay thì chỉ còn 260 triệu."
+   ],
+   [
+    "p",
+    "Mười triệu biến mất dù giá chưa giảm đồng nào. Em tách từng con số để anh chị tự trả lời câu hỏi \"có nên bắt đáy vàng\" – tức mua khi giá đã giảm sâu, mong mua trúng đáy (nhân vật giả định như trong video, số giá thật, em tự tính)."
+   ],
+   [
+    "h2",
+    "Mua vàng xong, bán lại ngay mất bao nhiêu?"
+   ],
+   [
+    "p",
+    "Mất đúng bằng khoảng chênh giữa giá tiệm bán ra và giá tiệm mua vào. Giá chốt SJC ngày 24/11/2026: tiệm bán <b>135 triệu</b>/lượng, mua lại 130 triệu (SOHA, bảng 17h30)."
+   ],
+   [
+    "table",
+    [
+     [
+      "Bước",
+      "Số tiền"
+     ],
+     [
+      "Mua 2 lượng<br>(tiệm bán 135)",
+      "270 triệu"
+     ],
+     [
+      "Bán lại ngay<br>(tiệm mua 130)",
+      "260 triệu"
+     ],
+     [
+      "Mất ngay",
+      "<b>10 triệu</b><br>(3,7% tiền bỏ ra)"
+     ],
+     [
+      "Giá tiệm mua vào<br>phải lên 130→135",
+      "+3,85%"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "5 triệu mỗi lượng không nhỏ: 135 triệu gửi tiết kiệm 12 tháng ở 6,8%/năm (Agribank, BIDV, VietinBank – Việt Báo 17/11) được khoảng 9,18 triệu tiền lãi. Tức là chênh mua–bán ăn mất <b>hơn 6 tháng lãi</b>."
+   ],
+   [
+    "p",
+    "Khoảng chênh này còn vừa nới: 3 triệu đến 20/11, lên 5 triệu từ 21/11 (24h, 22/11). Tối 25/11, bảng vàng trên web vẫn ghi SJC mua 129,1 / bán 134,1 triệu – chênh 5 triệu. Giá cập nhật mỗi ngày ở <a href=\"/#wmsjc\">ô vàng SJC trên trang chủ</a>."
+   ],
+   [
+    "h2",
+    "Giá vàng đã rẻ thật chưa?"
+   ],
+   [
+    "p",
+    "Rẻ hơn đỉnh, nhưng \"rẻ hơn đỉnh\" chưa phải là đáy. Vàng thế giới đóng cửa cao nhất 5.318,4 USD/ounce (1 ounce ≈ 0,83 lượng) ngày 29/1/2026, ngày 25/11 còn 3.551,0 – <b>giảm 33,2%</b>. Ngược lại, người mua từ 17/11/2023 (1.984,7 USD) vẫn đang lãi khoảng 78,9%. SJC từ đỉnh 191,3 triệu (CafeF 17/11) về 135 triệu, giảm 29,4%."
+   ],
+   [
+    "p",
+    "Mỗi lần vàng giảm thêm một nấc, lại có một lớp người nghĩ \"giảm thế là đủ rồi\". Đây là kết quả của họ nếu mua theo giá thế giới:"
+   ],
+   [
+    "table",
+    [
+     [
+      "Mua khi vàng<br>đã giảm từ đỉnh",
+      "Ngày, giá<br>(USD/ounce)",
+      "Lãi/lỗ<br>đến 25/11"
+     ],
+     [
+      "10%",
+      "30/1/2026<br>4.745,1",
+      "<b>−25,2%</b>"
+     ],
+     [
+      "20%",
+      "9/6/2026<br>4.133,3",
+      "<b>−14,1%</b>"
+     ],
+     [
+      "25%",
+      "29/10/2026<br>3.898,9",
+      "<b>−8,9%</b>"
+     ],
+     [
+      "30%",
+      "19/11/2026<br>3.685,5",
+      "<b>−3,6%</b>"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "<small>Giá vàng thế giới chốt mỗi ngày (dữ liệu trên web), em tự tính; chưa gồm chênh mua–bán trong nước. Quá khứ không bảo đảm tương lai.</small>"
+   ],
+   [
+    "p",
+    "Người mua khi vàng mới giảm 10% (ngày 30/1) đến nay vẫn lỗ khoảng 25,2%. Ngay cả người chờ tới lúc giảm 30% (19/11) cũng lỗ thêm 3,6% chỉ sau vài phiên."
+   ],
+   [
+    "h2",
+    "Vì sao vàng giảm mạnh trong tháng 11/2026?"
+   ],
+   [
+    "p",
+    "Ba lực kéo cùng lúc, khiến vàng thế giới mất <b>9,5%</b> chỉ trong tuần 16–20/11 (24h, 22/11):"
+   ],
+   [
+    "ul",
+    [
+     "Đồng USD lên mạnh nhất khoảng 19 tháng – vàng niêm yết bằng USD nên đắt hơn với người mua dùng tiền khác.",
+     "Gần như cả thị trường đặt cược Ngân hàng Trung ương Mỹ (Fed) tăng lãi suất ở cuộc họp 8–9/12 (theo công cụ đo kỳ vọng FedWatch: 99,3%). Lãi cao làm vàng – thứ không trả lãi – kém hấp dẫn.",
+     "Chứng khoán Mỹ bị bán, nhiều người bán vàng lấy tiền bù khoản vay ký quỹ (tiền vay để mua cổ phiếu)."
+    ]
+   ],
+   [
+    "p",
+    "Dự báo thì trái chiều. Em đặt cạnh nhau để anh chị thấy không ai chắc:"
+   ],
+   [
+    "table",
+    [
+     [
+      "Ai dự báo",
+      "Nói gì"
+     ],
+     [
+      "13 chuyên gia<br>(trang tin vàng Kitco)",
+      "62% cho rằng giảm,<br>15% tăng"
+     ],
+     [
+      "160 nhà đầu tư<br>cá nhân (Kitco)",
+      "42% tăng,<br>38% giảm"
+     ],
+     [
+      "Goldman Sachs<br>(ngân hàng Mỹ)",
+      "hạ dự báo cuối 2026<br>còn 4.150 USD"
+     ],
+     [
+      "Natixis<br>(ngân hàng Pháp)",
+      "có thể lùi về<br>3.340 USD (1/2027)"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "<small>Nguồn: Dân trí 15/11 và 13/11/2026; Doanh nghiệp & Hội nhập 24/11/2026. Em không dự báo giá vàng.</small>"
+   ],
+   [
+    "h2",
+    "Lần trước người bắt đáy vàng phải chờ bao lâu?"
+   ],
+   [
+    "p",
+    "Hơn 6 năm. Tháng 4/2013 vàng lao dốc, người dân xếp hàng ở tiệm để \"mua rẻ\":"
+   ],
+   [
+    "table",
+    [
+     [
+      "Thời điểm",
+      "Giá SJC<br>(triệu/lượng)",
+      "So giá mua"
+     ],
+     [
+      "16/4/2013 – xếp<br>hàng 1,5 tiếng mua",
+      "41,1",
+      "–"
+     ],
+     [
+      "28/6/2013 – tiệm<br>mua vào",
+      "36,2",
+      "-11,9%"
+     ],
+     [
+      "11/4/2016",
+      "33,3",
+      "-19%"
+     ],
+     [
+      "8/2019 – về lại<br>mốc 42 triệu",
+      "≈42",
+      "hòa vốn"
+     ]
+    ]
+   ],
+   [
+    "p",
+    "<small>Nguồn: VnExpress 17/4/2013, VTC News 28/6/2013, VietNamNet 18/4/2025, Nhà Đầu tư 8/8/2019. Em tự tính %.</small>"
+   ],
+   [
+    "p",
+    "Một khác biệt lớn: năm 2013 tiệm chỉ chênh mua–bán khoảng 0,3 triệu trên 42,2 triệu (<b>0,7%</b>). Nay là 5 triệu trên 135 triệu (<b>3,7%</b>), gấp khoảng 5 lần. Bắt đáy bây giờ phải \"trả phí vào cửa\" đắt hơn nhiều."
+   ],
+   [
+    "h2",
+    "Bẫy hay gặp khi bắt đáy vàng"
+   ],
+   [
+    "ul",
+    [
+     "<b>Coi \"giảm 30%\" là rẻ.</b> Bảng trên cho thấy người mua ở nấc giảm 10%, 20%, 25% đều đang lỗ. Đáy chỉ biết sau khi đã qua.",
+     "<b>Quên chênh mua–bán.</b> Vừa mua đã lỗ 3,7%; muốn chốt lời thì giá mua vào của tiệm phải vượt giá anh chị đã trả.",
+     "<b>Rút sổ tiết kiệm trước hạn để mua.</b> Rút trước hạn thường chỉ được lãi không kỳ hạn, mất luôn phần lãi đã chờ. Xem bài <a href=\"/f0/lai-suat-tiet-kiem-qua-dinh-gui-ky-han-nao.html\">lãi tiết kiệm qua đỉnh, gửi kỳ hạn nào</a>."
+    ]
+   ],
+   [
+    "h2",
+    "Phép thử 3 câu trước khi mua vàng"
+   ],
+   [
+    "p",
+    "Đây là 3 câu em tự đặt ra, không phải lời khuyên mua hay bán:"
+   ],
+   [
+    "ol",
+    [
+     "Số tiền này em có để yên được <b>3 năm</b> không cần dùng?",
+     "Nếu vàng giảm thêm 20% nữa, em có giữ được mà không bán vội?",
+     "Em đã tính khoản mất ngay 5 triệu/lượng (chênh mua–bán) vào chưa?"
+    ]
+   ],
+   [
+    "p",
+    "Ba câu này không đoán giá lên hay xuống, chỉ giúp anh chị biết mình chịu được đến đâu nếu giá đi ngược. Vàng nên chiếm bao nhiêu trong tổng tài sản: xem <a href=\"/f0/ty-trong-vang-bitcoin-trong-danh-muc.html\">tỷ trọng vàng trong danh mục</a>. Người mua ở đỉnh đã lỗ ra sao: <a href=\"/f0/mua-vang-dinh-lo-bao-nhieu.html\">mua vàng đỉnh lỗ bao nhiêu</a>."
+   ]
+  ],
+  "faq": [
+   [
+    "Giá vàng giảm mạnh có nên mua vào không?",
+    "Không ai biết chắc đáy. Dữ liệu 2026 cho thấy người mua khi vàng thế giới đã giảm 10%, 20% hay 25% từ đỉnh đều còn lỗ đến 25/11. Trước khi mua, tính chênh mua–bán và chỉ dùng tiền để yên được vài năm."
+   ],
+   [
+    "Chênh lệch mua bán vàng SJC hiện nay bao nhiêu?",
+    "Ngày 24–25/11/2026 khoảng 5 triệu đồng/lượng (mua 129–130, bán 134–135 triệu), nới từ 3 triệu trước ngày 21/11. Mua xong bán lại ngay mất khoảng 3,7%."
+   ],
+   [
+    "Năm 2013 vàng giảm bao lâu thì về lại giá cũ?",
+    "Người mua 41,1 triệu ngày 16/4/2013 thấy giá xuống 36,2 triệu cuối tháng 6/2013 và 33,3 triệu năm 2016; đến 8/2019 vàng SJC mới về lại mốc 42 triệu – hơn 6 năm."
+   ]
+  ],
+  "rel": [
+   "mua-vang-dinh-lo-bao-nhieu",
+   "chenh-lech-gia-vang-trong-nuoc-va-the-gioi",
+   "ty-trong-vang-bitcoin-trong-danh-muc",
+   "gia-vang-va-chung-khoan",
+   "lai-suat-tiet-kiem-qua-dinh-gui-ky-han-nao",
+   "bat-day-co-phieu-la-gi"
   ]
  }
 ]
