@@ -1,0 +1,190 @@
+[
+ {
+  "key": "SP2511CHENH22",
+  "kenh_phu": "chungkhoanhuynguyen6",
+  "ngach": "vàng + tiết kiệm",
+  "tieu_de": "Mua vàng miếng hôm nay trả đắt hơn thế giới 22 triệu mỗi lượng: tháng 8 chỉ chênh 2–3 triệu",
+  "hook": [
+   "MUA VÀNG MIẾNG",
+   "TRẢ THÊM 22 TRIỆU?"
+  ],
+  "nhan": "GIÁ VÀNG · 20/11/2026",
+  "short_caption": "Vàng miếng SJC 20/11/2026 bán ra 134,2 triệu/lượng, vàng thế giới quy đổi khoảng 111,6 triệu: chênh hơn 22 triệu, cao nhất từ đầu năm. Ngày 21/8 khoảng chênh chỉ 2–3 triệu. Video đầy đủ về vàng ở kênh chính @chungkhoanhuynguyen. Bảng giá vàng, tỷ giá mỗi ngày: chungkhoanhuynguyen.com",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "ANH CHỊ CHỌN GÌ?",
+   "loi": "Nếu là anh chị, lúc này anh chị A: vẫn mua vàng miếng, hay B: chờ khoảng chênh co lại?",
+   "loi_doc": "Nếu là anh chị, lúc này anh chị A: vẫn mua vàng miếng, hay B: chờ khoảng chênh co lại?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHÊNH 22 TRIỆU MỖI LƯỢNG",
+    "dong": [
+     [
+      "A: VẪN MUA",
+      96,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: CHỜ CHÊNH CO LẠI?",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "MUA VÀNG MIẾNG TRẢ THÊM 22 TRIỆU",
+    "loi": "Anh chị có biết, hôm nay mua một lượng vàng miếng, mình đang trả đắt hơn giá thế giới hơn hai mươi hai triệu đồng không? Em kể anh chị nghe vì sao con số này đáng để ý.",
+    "loi_doc": "Anh chị có biết, hôm nay mua một lượng vàng miếng, mình đang trả đắt hơn giá thế giới hơn hai mươi hai triệu đồng không? Em kể anh chị nghe vì sao con số này đáng để ý.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "VÀNG MIẾNG SJC SO VỚI THẾ GIỚI",
+     "dong": [
+      [
+       "ĐẮT HƠN",
+       80,
+       "trang"
+      ],
+      [
+       "22 TRIỆU",
+       130,
+       "do"
+      ],
+      [
+       "MỖI LƯỢNG",
+       64,
+       "vang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "VÀNG GIẢM VỀ 134 TRIỆU",
+    "loi": "Ngày hai mươi tháng mười một, vàng miếng giảm rất mạnh, về quanh một trăm ba mươi tư triệu đồng một lượng, thấp nhất từ đầu năm. Nhiều người nghĩ giá đã rẻ.",
+    "loi_doc": "Ngày hai mươi tháng mười một, vàng miếng giảm rất mạnh, về quanh một trăm ba mươi tư triệu đồng một lượng, thấp nhất từ đầu năm. Nhiều người nghĩ giá đã rẻ.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "VÀNG MIẾNG SJC · 20/11/2026",
+     "nguon": "CafeF 20/11/2026",
+     "dong": [
+      [
+       "BÁN RA 134,2 TRIỆU",
+       84,
+       "trang"
+      ],
+      [
+       "THẤP NHẤT TỪ ĐẦU NĂM",
+       50,
+       "vang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "NHƯNG THẾ GIỚI CHỈ 111,6 TRIỆU",
+    "loi": "Nhưng điều lạ là, cùng lúc đó giá vàng thế giới quy đổi chỉ khoảng một trăm mười một phẩy sáu triệu. Tức là trong nước đắt hơn trên hai mươi hai triệu mỗi lượng, mức chênh cao nhất từ đầu năm.",
+    "loi_doc": "Nhưng điều lạ là, cùng lúc đó giá vàng thế giới quy đổi chỉ khoảng một trăm mười một phẩy sáu triệu. Tức là trong nước đắt hơn trên hai mươi hai triệu mỗi lượng, mức chênh cao nhất từ đầu năm.",
+    "anh": [],
+    "the": {
+     "loai": "pheu",
+     "tieu": "CÙNG MỘT LƯỢNG VÀNG",
+     "nguon": "CafeF 20/11/2026",
+     "tren": [
+      "TRONG NƯỚC",
+      "134,2 TRIỆU"
+     ],
+     "duoi": [
+      "THẾ GIỚI QUY ĐỔI",
+      "111,6 TRIỆU"
+     ]
+    }
+   },
+   {
+    "chu_to": "THÁNG 8 CHỈ CHÊNH 2–3 TRIỆU",
+    "loi": "Mà mức chênh này không cố định. Mới ngày hai mươi mốt tháng tám, khoảng chênh chỉ còn hai đến ba triệu đồng, thấp nhất nhiều năm.",
+    "loi_doc": "Mà mức chênh này không cố định. Mới ngày hai mươi mốt tháng tám, khoảng chênh chỉ còn hai đến ba triệu đồng, thấp nhất nhiều năm.",
+    "anh": [],
+    "the": {
+     "loai": "giam",
+     "tieu": "CHÊNH LỆCH SJC – THẾ GIỚI (TRIỆU/LƯỢNG)",
+     "nguon": "Investing 21/8/2026 · CafeF 20/11/2026",
+     "a": [
+      "20/11",
+      22
+     ],
+     "b": [
+      "21/8",
+      3
+     ],
+     "dv": " TRIỆU",
+     "dau": "CÓ LÚC CHỈ 2–3 TRIỆU"
+    }
+   },
+   {
+    "chu_to": "VẬY NGHĨA LÀ GÌ VỚI ANH CHỊ",
+    "loi": "Vậy nghĩa là gì với túi tiền anh chị? Người mua vàng miếng đang gánh hai thứ cùng lúc: giá vàng thế giới, và khoảng chênh hai mươi hai triệu này. Nếu khoảng chênh co lại như hồi tháng tám, thì dù vàng thế giới đứng yên, mỗi lượng vẫn hụt gần hai mươi triệu.",
+    "loi_doc": "Vậy nghĩa là gì với túi tiền anh chị? Người mua vàng miếng đang gánh hai thứ cùng lúc: giá vàng thế giới, và khoảng chênh hai mươi hai triệu này. Nếu khoảng chênh co lại như hồi tháng tám, thì dù vàng thế giới đứng yên, mỗi lượng vẫn hụt gần hai mươi triệu.",
+    "anh": [],
+    "the": {
+     "loai": "chuoi",
+     "tieu": "MUA VÀNG MIẾNG LÀ GÁNH 2 RỦI RO",
+     "buoc": [
+      "GIÁ VÀNG THẾ GIỚI",
+      "KHOẢNG CHÊNH 22 TRIỆU",
+      "CHÊNH CO LẠI: HỤT GẦN 20 TRIỆU"
+     ],
+     "mau": [
+      "tim",
+      "vang",
+      "do"
+     ]
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "GIÁ VÀNG MỖI NGÀY",
+   "loi": "Giá vàng thế giới và trong nước em cập nhật mỗi ngày trên chungkhoanhuynguyen.com, còn video đầy đủ về vàng ở kênh chính Chứng Khoán Huy Nguyễn.",
+   "loi_doc": "Giá vàng thế giới và trong nước em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com, còn video đầy đủ về vàng ở kênh chính Chứng Khoán Huy Nguyễn.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "GIÁ VÀNG · TỶ GIÁ · HÀNG HÓA",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ }
+]
