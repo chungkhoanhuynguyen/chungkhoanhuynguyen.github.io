@@ -262,6 +262,7 @@ def volume(im, d, sc, t, box=BX):
 def cards(im, d, sc, t, box=BX):
     cs = sc["cards"]; gap = 34 if len(cs) <= 4 else 18; hh = min(168, (box[3]-box[1]-40 - gap*(len(cs)-1))/len(cs)); k_ = hh/168; tot = len(cs)*hh + (len(cs)-1)*gap
     y = (box[1]+box[3])/2 - tot/2
+    sc["_hang"] = [(100, y + i*(hh+gap) - 8, 980, y + i*(hh+gap) + hh + 8) for i in range(len(cs))]   # Studio 26/11: khung sáng
     for i, cd in enumerate(cs):
         big, small, num = cd[:3]; ncol = cd[3] if len(cd) > 3 else ((28, 140, 78) if num.startswith("+") else RED)
         a = ease((t - (sc["_nhip"][i] if sc.get("_nhip") else 0.2 + i*0.45))/0.5)   # _nhip: hiện theo câu (video dài 20/11)
@@ -282,6 +283,7 @@ def checklist(im, d, sc, t, box=BX):
     items = sc["items"]; y = box[1] + 90; f = F("Bold", 46)
     if sc.get("title"):
         d.text((box[0]+50, box[1]+40), sc["title"], font=F("ExtraBold", 32), fill=GOLD); y += 60
+    sc["_hang"] = [(box[0]+30, y + i*130 - 12, box[2]-30, y + i*130 + 64) for i in range(len(items))]   # Studio 26/11: toạ độ dòng cho khung sáng (render.py), không đổi hình
     for i, it in enumerate(items):
         a = ease((t - (sc["_nhip"][i] if sc.get("_nhip") else 0.3 + i*sc.get("gap", 1.1)))/0.4)
         if a <= 0: continue
@@ -382,6 +384,7 @@ def bars(im, d, sc, t, box=BX):
     fl = F("ExtraBold", min(fit(d, b[0], "ExtraBold", lw-16, 34).size for b in bs))
     avail = max(60, x1 - x0 - lw - 14 - tw - 6)
     if sc.get("tag"): d.text((box[0]+28, box[1]+14), sc["tag"], font=F("Bold", 24), fill=DIM)
+    sc["_hang"] = [(x0 - 14, y0 + rh*i + 4, x1 + 14, y0 + rh*(i+1) - 4) for i in range(n)]   # Studio 26/11: khung sáng
     for i, b in enumerate(bs):
         lab, v, col = b[0], b[1], b[2]; txt = b[3] if len(b) > 3 else fmtp(v)
         a = ease((t - (sc["_nhip"][i] if sc.get("_nhip") else 0.2 + i*0.18))/0.6)

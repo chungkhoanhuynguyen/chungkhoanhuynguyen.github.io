@@ -277,12 +277,39 @@ def _av_dan(im):
         AV[0] = None; print("chan dung: tat", repr(e), flush=True)
     return im
 import land_text
+# Studio 26/11 (anh Huy duyệt, chỉ đạo giam_dung_hinh_2611): giảm "hình đứng yên ≥2s" mà KHÔNG đổi lời/số/chữ/thứ tự cảnh.
+#  - máy quay chậm 1 chiều (chỉ zoom VÀO, 2–3,5% cả cảnh – không ra vào theo nhịp như bản bỏ 20/11), cảnh dài ≥8s đổi nhẹ tâm khung ở nửa sau;
+#  - khung sáng mờ trượt tới dòng/thẻ/cột đang được đọc (checklist/cards/bars, theo lịch _nhip sẵn có).
+#  Tắt: META/biến DONG_CHAM=0.
+DONG = [NHIP[0] and os.environ.get("DONG_CHAM", "1") != "0" and not g.get("DONG_CHAM") == 0]
+_K_DONG = ("noti", "call", "chat", "bars", "checklist", "cards", "bignum")
+def _may_cham(im, sc, t):
+    T = max(1.0, sc.get("_T") or 8.0); u = min(1.0, max(0.0, t / T))
+    z = 1.0 + min(0.035, max(0.02, 0.0035 * T)) * u
+    fx, fy = 0.5, 0.5
+    if T >= 8.0:   # nửa sau: tâm khung trượt êm (1,6s) về phía khối nội dung bên trái
+        v_ = dx2.ease(min(1.0, max(0.0, (t - T / 2) / 1.6))); fx, fy = 0.5 - 0.12 * v_, 0.5 - 0.06 * v_
+    w, h = LW / z, LH / z; x0 = (LW - w) * fx; y0 = (LH - h) * fy
+    return im.resize((LW, LH), Image.BILINEAR, box=(x0, y0, x0 + w, y0 + h))
+def _khung_sang(im, sc, t):
+    hg, nh = sc.get("_hang"), sc.get("_nhip")
+    if not (DONG[0] and hg and nh) or len(hg) < 2 or all(x < 0 for x in nh): return
+    ds = [i for i, x in enumerate(nh[:len(hg)]) if x <= t]
+    if not ds: return
+    i = ds[-1]; u = dx2.ease(min(1.0, (t - nh[i]) / 0.45)); j = i - 1 if i else i
+    r = [hg[j][k] + (hg[i][k] - hg[j][k]) * u for k in range(4)]
+    a = min(1.0, (t - nh[0]) / 0.3)
+    m = lambda x, y: (50 + (x - 66) * 1.32, 26 + (y - 470) * 1.32)   # toạ độ khung dọc -> khung ngang (crop 66,470 · x1,32 · dán 50,26)
+    (X0, Y0), (X1, Y1) = m(r[0], r[1]), m(r[2], r[3])
+    d = ImageDraw.Draw(im, "RGBA")
+    d.rounded_rectangle([X0, Y0, X1, Y1], 16, fill=(255, 196, 0, int(20 * a)), outline=(255, 196, 0, int(170 * a)), width=3)
 def land(v, sc, t):
     if not NHIP[0]: return _land0(v, sc, t)
     SUBQ[0] = []
     try: im = _land0(v, sc, t)
     finally: q, SUBQ[0] = SUBQ[0], None
     pass   # QL1 20/11 23:52: bỏ máy quay zoom/lia mỗi nhịp (anh Huy: zoom ra vào đau mắt) – giữ thẻ/ô hiện theo câu   # cảnh chữ/3D đã có Ken Burns/chuyển động riêng
+    if DONG[0] and sc.get("k") in _K_DONG: im = _may_cham(im, sc, t)   # Studio 26/11: máy quay chậm, phụ đề vẽ sau nên không bị zoom
     if sc.get("_idx") == 0 and HOOK: im = nhip.hook(im, t, HOOK)
     for a_ in q: _draw_sub(im, *a_)
     return im
@@ -311,6 +338,7 @@ def _land0(v, sc, t):
             _z = 1 + 0.04 * _a; _p2 = p.resize((int(p.width * _z), int(p.height * _z)), Image.BILINEAR)
             p = _p2.crop(((_p2.width - p.width) // 2, (_p2.height - p.height) // 2, (_p2.width - p.width) // 2 + p.width, (_p2.height - p.height) // 2 + p.height))
     im.paste(p, (50, 26)); _px, _pw = 50, p.width
+    if k in ("checklist", "cards", "bars"): _khung_sang(im, sc, t)
     if NHIP[0] and k == "bignum": nhip.vien(im, (50 + 18, 26 + 18, 50 + p.width - 18, 26 + p.height - 18), nhip.noi_so(sc, t))          # chừa dải dưới cho phụ đề, không che số liệu
     d = ImageDraw.Draw(im); x0 = 50 + p.width + 40; cw = LW - x0 - 50; cx = x0 + cw/2
     dx2.brand(im, d, cx, 70, 0.9, 1.0, (10, 12, 17))
