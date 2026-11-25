@@ -139,6 +139,7 @@ def dem(sp, t):
         d.polygon([(cx - s * 1.15, cy - s * 0.15), (cx, cy - s), (cx + s * 1.15, cy - s * 0.15)], fill=MAU["vang"])  # mái
         d.rectangle([cx - s * 0.2, cy + s * 0.35, cx + s * 0.2, cy + s * 0.9], fill=BG)
     yt = y0 + ch * rows + 40
+    if shown == 0: return im   # (25/11: đầu cảnh/chuyển cảnh hiện "0 THỬA ĐẤT")
     d.text((W / 2, yt), sp.get("to", "%d" % shown).replace(str(n), str(shown), 1), font=F("Black", 78), fill=MAU["vang"], anchor="ma")
     if sp.get("phu"):
         a = ease((t - 0.3 - n * 0.07) / 0.5)
