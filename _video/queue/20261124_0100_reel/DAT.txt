@@ -1,0 +1,1 @@
+RV2411LS V3 | QL1 25/11 19:50: thêm mở bài (kiem_loi rỗng), soát 0 LỖI, -10,8 LUFS, 79s, ảnh HOSE/skyline; Gemini (flash-lite) báo 'logo' ở 20s/24s = nhầm (chỉ chữ Vietcombank trên cột số). Chờ anh Huy duyệt (reel kênh chính).
