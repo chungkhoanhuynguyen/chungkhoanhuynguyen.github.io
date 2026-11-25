@@ -1,0 +1,31 @@
+[
+ {
+  "key": "SN2611MEME",
+  "kieu": "meme",
+  "thoi_luong": 20,
+  "nhan": "PHIÊN 25/11/2026",
+  "tieu_de_2dong": ["KHỐI NGOẠI XẢ 4.701 TỶ VIC", "GIÁ VIC: CHỈ -0,12%"],
+  "cau_chot": "Ngoại xả 4.700 tỷ…\nVIC vẫn quẩy nhẹ",
+  "bieu_do": {
+   "tieu": "VN-INDEX PHIÊN 25/11/2026",
+   "diem": [["Tham chiếu", 1697.14], ["Cao nhất", 1706.16], ["Thấp nhất", 1683.17], ["Đóng cửa", 1687.45]],
+   "nd": 2, "dv": "",
+   "nguon": "VTV · Thương Trường 25/11/2026",
+   "mau": "do"
+  },
+  "clip": [
+   {"url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lindy_Hop_dancing_at_Mobtown_Ballroom,_October_2024.webm", "tu": 1, "den": 7},
+   {"url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lindy_Hop_dancing_at_Mobtown_Ballroom,_October_2024.webm", "tu": 9, "den": 15}
+  ],
+  "clip_du_phong": [
+   {"url": "https://commons.wikimedia.org/wiki/Special:FilePath/Oktoberfest_2022_dance.webm", "tu": 0, "den": 6}
+  ],
+  "nguon_clip": "Wikimedia Commons – Lindy Hop dancing at Mobtown Ballroom (10/2024)",
+  "tu_khoa_anh": "Lindy Hop dancing",
+  "giu_tieng": 0,
+  "music_db": 0,
+  "caption": "Phiên 25/11/2026, khối ngoại bán ròng hơn 5.674 tỷ đồng trên HOSE, riêng VIC khoảng 4.701 tỷ đồng. Vậy mà cuối phiên VIC chỉ giảm 0,12%.\n\nVì sao? Phần lớn lượng VIC bán ra đi qua giao dịch thỏa thuận (riêng VIC gần 4.600 tỷ đồng): có bên nhận trọn lô, không xả ra bảng điện khớp lệnh. Giống ông buôn sỉ sang nguyên lô hàng cho một ông khác: chợ không bị đè giá.\n\nCòn cả thị trường thì không \"quẩy\" được như VIC: VN-Index có lúc lên 1.706,16 điểm rồi đóng cửa 1.687,45 điểm, mất 9,69 điểm (-0,57%); sàn HOSE 241 mã giảm, 87 mã tăng.\n\nNguồn số liệu: VTV (25/11/2026 18:49), Thương Trường (25/11/2026 16:09), Nhịp Sống Nhà Đất (25/11/2026 16:46).",
+  "binh_chon": ["1️⃣ Bán thỏa thuận, có người nhận – không đáng lo", "2️⃣ Ngoại đang rút mạnh – cần thận trọng hơn"],
+  "tags": ["chungkhoan", "VIC", "khoingoai", "VNIndex", "huynguyenchungkhoan"]
+ }
+]

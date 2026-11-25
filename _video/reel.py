@@ -293,6 +293,8 @@ def main():
     lo, key = sys.argv[1], sys.argv[2]; QD = os.path.join(HERE, "queue", lo)
     OUT = os.path.join(HERE, "out"); os.makedirs(OUT, exist_ok=True); WORK = "/tmp/reel_" + key; os.makedirs(WORK, exist_ok=True)
     R = next(r for r in json.load(open(os.path.join(QD, "reel.json"), encoding="utf-8")) if r["key"] == key)
+    if R.get("kieu") == "meme":   # Studio 26/11: Short "MEME ĐỐI LẬP" (chia đôi, clip thật, không lời đọc) – kiểu cũ không đổi
+        import meme; return meme.lam(R, QD, OUT, WORK, key)
     ket_cau_hoi(R)
     try:
         import kiem_loi; QC = kiem_loi.kiem([c for c in R["canh"] if not c.get("web") and not c.get("hoi")], R.get("cau_hoi"), True)
