@@ -1,5 +1,9 @@
 # Bộ cách làm game: rút từ Vương Quốc Huyền Thoại và các game khác
 
+> ⚠️ **NHIỀU PHIÊN CÙNG SỬA GAME NÀY.** Trước khi đẩy lên: `git fetch` rồi `git checkout origin/main -- thienkiemmon` và áp lại thay đổi của mình lên bản mới nhất, hoặc `git rebase --onto origin/main <commit trước>`. KHÔNG ghi đè cả file `index.html` từ bản cũ — ngày 25/11 khối "ĐỒ HỌA+", sửa bot hồi sinh Tế Đàn đã bị ghi đè mất một lần.
+> Các khối phải còn sau mỗi lần đẩy (grep để kiểm): `ĐỒ HỌA+`, `chết cũng về Tế Đàn`, `hktd-all` (tải ngầm), `shrinkTex`, `preload.json`. Thêm file tài nguyên mới thì tạo lại `preload.json`.
+
+
 Dành cho các buổi làm Thiên Kiếm Môn sau này. Trước khi sửa game, đọc hết file này.
 Nguồn: World of ClaudeCraft (MIT), bản fork là `chungkhoanhuynguyen/vuongquoc`. Đây là game MMO đã được kiểm thử kỹ trên điện thoại.
 
