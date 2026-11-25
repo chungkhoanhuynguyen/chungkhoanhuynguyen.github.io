@@ -29,9 +29,9 @@ def kiem(canh, cau_hoi=None, tin_nong=True):
         t0 = canh[0].get("loi", "")
         if not re.search(r"anh chị", t0, re.I) or not re.search(r"\?", t0):
             loi.append("LỖI cảnh 1: thiếu MỞ BÀI – câu đầu phải hỏi thẳng anh chị về nỗi lo/túi tiền của họ (có dấu ?), rồi mới vào tin")
-        tin = " ".join(c.get("loi", "") for c in canh[:2])
+        tin = " ".join(c.get("loi", "") for c in canh[:4])   # dẫn chuyện kiểu TBCK: hỏi → niềm tin → chuyện trước/sau → tin
         if len(tin.split()) < 25 or not re.search(r"\bvừa\b|\bhôm nay\b|\bsáng nay\b|\bchiều nay\b|\btối qua\b|\bphiên\b", tin, re.I):
-            loi.append("LỖI cảnh 1–2: chưa nói rõ TIN GÌ (ai – vừa làm gì – bao nhiêu – khi nào)")
+            loi.append("LỖI cảnh 1–4: chưa nói rõ TIN GÌ (ai – vừa làm gì – bao nhiêu – khi nào)")
     if cau_hoi is not None:
         q = cau_hoi.get("loi", "")
         if not q.strip().endswith("?"): loi.append("LỖI câu kết: phải là câu hỏi mở, kết bằng dấu ?")

@@ -1,13 +1,13 @@
 [
  {
   "key": "SN2511NOXAU",
-  "tieu_de": "Ngân hàng hạ nửa giá nhà máy xiết nợ vẫn ế: nợ xấu 27 ngân hàng lên 2,12%",
+  "tieu_de": "Đất ngân hàng xiết nợ mất nửa giá sau một năm: nợ xấu đang dồn lên",
   "hook": [
-   "HẠ NỬA GIÁ",
-   "VẪN CHƯA AI MUA?"
+   "MẤT NỬA GIÁ",
+   "SAU 1 NĂM?"
   ],
   "nhan": "NỢ XẤU NGÂN HÀNG · QUÝ 3/2026",
-  "short_caption": "Agribank đưa nhà máy nước Cần Giờ (đất 12.809 m²) ra đấu giá 52,1 tỷ, giảm gần một nửa so với lần chào bán đầu hơn một năm trước. Nợ xấu 27 ngân hàng niêm yết lên 2,12% cuối quý 3/2026, tỷ lệ bao phủ còn 74%.",
+  "short_caption": "Nhà máy nước Cần Giờ do Agribank xiết nợ: giá khởi điểm 103,55 tỷ (10/2025) còn 52,1 tỷ (10/2026). HDBank thu giữ 26 thửa đất của Địa ốc Hoàng Quân, dư nợ khoảng 895 tỷ. Nợ xấu 27 ngân hàng niêm yết 2,12%, bao phủ còn 74%.",
   "tags": [],
   "toc": 1.1,
   "nhac": "lofi",
@@ -15,124 +15,149 @@
   "hieu_ung": 1,
   "cau_hoi": {
    "chu_to": "CƠ HỘI HAY CÁI BẪY?",
-   "loi": "Đất ngân hàng phát mại rẻ một nửa. Anh chị A: thấy đây là cơ hội mua rẻ, hay B: là dấu hiệu nên tránh xa?",
-   "loi_doc": "Đất ngân hàng phát mại rẻ một nửa. Anh chị A: thấy đây là cơ hội mua rẻ, hay B: là dấu hiệu nên tránh xa?",
+   "loi": "Đất ngân hàng phát mại rẻ gần một nửa. Anh chị A: thấy đây là cơ hội mua rẻ, hay B: là dấu hiệu nên tránh xa?",
+   "loi_doc": "Đất ngân hàng phát mại rẻ gần một nửa. Anh chị A: thấy đây là cơ hội mua rẻ, hay B: là dấu hiệu nên tránh xa?",
    "anh": [
     "Agribank||Vietnam bank branch"
    ]
   },
   "canh": [
    {
-    "chu_to": "ĐẤT NGÂN HÀNG CÓ RẺ THẬT?",
-    "loi": "Anh chị có đang để dành tiền, chờ mua đất phát mại của ngân hàng vì nghĩ chắc chắn sẽ rẻ? Khoan đã, em kể anh chị nghe chuyện một nhà máy ở Cần Giờ trước. Ngân hàng hạ gần một nửa giá rồi, mà đến giờ vẫn phải đem ra đấu giá lại.",
-    "anh": [
-     "house keys contract||signing loan contract"
-    ],
-    "loi_doc": "Anh chị có đang để dành tiền, chờ mua đất phát mại của ngân hàng vì nghĩ chắc chắn sẽ rẻ? Khoan đã, em kể anh chị nghe chuyện một nhà máy ở Cần Giờ trước. Ngân hàng hạ gần một nửa giá rồi, mà đến giờ vẫn phải đem ra đấu giá lại."
-   },
-   {
-    "chu_to": "12.809 M² ĐẤT + NHÀ MÁY",
-    "loi": "Cụ thể, Agribank vừa đưa nhà máy nước Cần Giờ ra đấu giá lại, giá khởi điểm chỉ hơn năm mươi hai tỷ đồng. Khối tài sản gồm hơn mười hai nghìn tám trăm mét vuông đất và cả dây chuyền nước đóng chai.",
-    "loi_doc": "Cụ thể, A gờ ri banh vừa đưa nhà máy nước Cần Giờ ra đấu giá lại, giá khởi điểm chỉ hơn năm mươi hai tỷ đồng. Khối tài sản gồm hơn mười hai nghìn tám trăm mét vuông đất và cả dây chuyền nước đóng chai.",
+    "chu_to": "ĐẤT NGÂN HÀNG MẤT NỬA GIÁ",
+    "loi": "Anh chị có biết, một miếng đất ngân hàng xiết nợ có thể mất gần một nửa giá chỉ sau một năm không? Chuyện này đang xảy ra thật, và nó cho thấy nợ xấu ngân hàng đang dồn lên.",
+    "loi_doc": "Anh chị có biết, một miếng đất ngân hàng xiết nợ có thể mất gần một nửa giá chỉ sau một năm không? Chuyện này đang xảy ra thật, và nó cho thấy nợ xấu ngân hàng đang dồn lên.",
     "anh": [
      "abandoned factory||old factory building"
-    ],
-    "the": {
-     "loai": "lon",
-     "tieu": "NHÀ MÁY NƯỚC CẦN GIỜ",
-     "nguon": "Báo Pháp Luật VN 11/10/2026",
-     "dong": [
-      [
-       "12.809 M² ĐẤT",
-       96,
-       "vang"
-      ],
-      [
-       "+ DÂY CHUYỀN NƯỚC ĐÓNG CHAI",
-       44,
-       "trang"
-      ]
-     ]
-    }
+    ]
    },
    {
-    "chu_to": "GIÁ CÒN 52,1 TỶ",
-    "loi": "Giá khởi điểm còn năm mươi hai phẩy một tỷ đồng, bốc hơi gần một nửa so với lần chào bán đầu tiên hơn một năm trước.",
-    "loi_doc": "Giá khởi điểm còn năm mươi hai phẩy một tỷ đồng, bốc hơi gần một nửa so với lần chào bán đầu tiên hơn một năm trước.",
-    "anh": [
-     "auction gavel||auction"
-    ],
-    "the": {
-     "loai": "lon",
-     "tieu": "GIÁ KHỞI ĐIỂM ĐẤU GIÁ",
-     "nguon": "Báo Pháp Luật VN 11/10/2026",
-     "dong": [
-      [
-       "52,1 TỶ",
-       120,
-       "vang"
-      ],
-      [
-       "GIẢM GẦN MỘT NỬA SAU HƠN 1 NĂM",
-       44,
-       "do"
-      ]
-     ]
-    }
-   },
-   {
-    "chu_to": "TÀI SẢN ĐẢM BẢO",
-    "loi": "Ngân hàng dám cho vay vì tin một điều: khách không trả được thì vẫn còn tài sản thế chấp. Nhưng đem ra bán thật, giá có khi chỉ còn một nửa.",
-    "loi_doc": "Ngân hàng dám cho vay vì tin một điều: khách không trả được thì vẫn còn tài sản thế chấp. Nhưng đem ra bán thật, giá có khi chỉ còn một nửa.",
+    "chu_to": "NGÂN HÀNG TIN VÀO MIẾNG ĐẤT",
+    "loi": "Ngân hàng dám cho vay vì tin một điều: khách không trả được nợ thì vẫn còn miếng đất thế chấp. Nhưng hãy xem miếng đất đó bán được bao nhiêu.",
+    "loi_doc": "Ngân hàng dám cho vay vì tin một điều: khách không trả được nợ thì vẫn còn miếng đất thế chấp. Nhưng hãy xem miếng đất đó bán được bao nhiêu.",
     "anh": [
      "bank loan signing||mortgage documents"
     ]
    },
    {
-    "chu_to": "NỢ XẤU 2,12%",
-    "loi": "Cuối quý ba, tỷ lệ nợ xấu của hai mươi bảy ngân hàng niêm yết lên khoảng hai phẩy một phần trăm, từ khoảng một phẩy chín cuối năm ngoái.",
-    "loi_doc": "Cuối quý ba, tỷ lệ nợ xấu của hai mươi bảy ngân hàng niêm yết lên khoảng hai phẩy một phần trăm, từ khoảng một phẩy chín cuối năm ngoái.",
+    "chu_to": "103,55 TỶ",
+    "loi": "Tháng mười năm ngoái, nhà máy nước Cần Giờ mà Agribank xiết nợ được đem ra đấu giá, giá khởi điểm hơn một trăm linh ba tỷ đồng. Không bán được, ngân hàng đấu giá đi đấu giá lại nhiều lần.",
+    "loi_doc": "Tháng mười năm ngoái, nhà máy nước Cần Giờ mà A gờ ri banh xiết nợ được đem ra đấu giá, giá khởi điểm hơn một trăm linh ba tỷ đồng. Không bán được, ngân hàng đấu giá đi đấu giá lại nhiều lần.",
     "anh": [
-     "Agribank||Vietcombank headquarters"
+     "auction gavel||auction"
     ],
     "the": {
      "loai": "lon",
-     "tieu": "NỢ XẤU 27 NGÂN HÀNG NIÊM YẾT",
-     "nguon": "SHS qua Việt Báo",
+     "tieu": "NHÀ MÁY NƯỚC CẦN GIỜ · 12.809 M²",
+     "nguon": "Báo Đấu thầu 10/2025",
      "dong": [
       [
-       "1,87% LÊN 2,12%",
+       "10/2025: 103,55 TỶ",
        96,
-       "do"
+       "trang"
       ],
       [
-       "CUỐI 2025 → 30/9/2026",
+       "ĐẤU GIÁ KHÔNG THÀNH",
        44,
+       "do"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "CÒN 52,1 TỶ",
+    "loi": "Đến nay, Agribank vừa hạ giá khởi điểm xuống chỉ còn khoảng năm mươi hai tỷ đồng, mất gần một nửa. Một khoản nợ tưởng có đủ tài sản, giờ chỉ thu về được khoảng một nửa.",
+    "loi_doc": "Đến nay, A gờ ri banh vừa hạ giá khởi điểm xuống chỉ còn khoảng năm mươi hai tỷ đồng, mất gần một nửa. Một khoản nợ tưởng có đủ tài sản, giờ chỉ thu về được khoảng một nửa.",
+    "anh": [
+     "auction gavel||auction"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "CÙNG KHỐI TÀI SẢN SAU 1 NĂM",
+     "nguon": "Báo Pháp Luật VN 11/10/2026",
+     "dong": [
+      [
+       "103,55 » 52,1 TỶ",
+       96,
+       "vang"
+      ],
+      [
+       "MẤT GẦN MỘT NỬA",
+       50,
+       "do"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "KHÔNG CHỈ AGRIBANK",
+    "loi": "Mà đây không phải chuyện riêng của Agribank. HDBank đã thu giữ hai mươi sáu thửa đất của Địa ốc Hoàng Quân để xử lý khoản nợ gần chín trăm tỷ đồng.",
+    "loi_doc": "Mà đây không phải chuyện riêng của A gờ ri banh. Hát đê banh đã thu giữ hai mươi sáu thửa đất của Địa ốc Hoàng Quân để xử lý khoản nợ gần chín trăm tỷ đồng.",
+    "anh": [
+     "vacant land||empty land plot"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "HDBANK THU GIỮ TÀI SẢN",
+     "nguon": "24HMoney · Báo Đầu tư 9/2026",
+     "dong": [
+      [
+       "26 THỬA ĐẤT",
+       96,
+       "vang"
+      ],
+      [
+       "DƯ NỢ ~895 TỶ · ĐỊA ỐC HOÀNG QUÂN",
+       40,
        "trang"
       ]
      ]
     }
    },
    {
-    "chu_to": "HƠN 340.000 TỶ",
-    "loi": "Tính trên hai mươi tám ngân hàng, nợ xấu đã vượt ba trăm bốn mươi nghìn tỷ đồng, tăng gần hai mươi bảy phần trăm, nhanh gấp đôi tốc độ cho vay.",
-    "loi_doc": "Tính trên hai mươi tám ngân hàng, nợ xấu đã vượt ba trăm bốn mươi nghìn tỷ đồng, tăng gần hai mươi bảy phần trăm, nhanh gấp đôi tốc độ cho vay.",
+    "chu_to": "NỢ XẤU 2,12%",
+    "loi": "Đất khó bán thì nợ xấu khó xử lý. Cuối quý ba, nợ xấu của hai mươi bảy ngân hàng niêm yết lên khoảng hai phẩy một phần trăm. Tính trên hai mươi tám ngân hàng, nợ xấu đã vượt ba trăm bốn mươi nghìn tỷ đồng, tăng nhanh gấp đôi tốc độ cho vay.",
+    "loi_doc": "Đất khó bán thì nợ xấu khó xử lý. Cuối quý ba, nợ xấu của hai mươi bảy ngân hàng niêm yết lên khoảng hai phẩy một phần trăm. Tính trên hai mươi tám ngân hàng, nợ xấu đã vượt ba trăm bốn mươi nghìn tỷ đồng, tăng nhanh gấp đôi tốc độ cho vay.",
     "anh": [
      "Vietnamese dong banknotes||Vietnam banknotes"
     ],
     "the": {
      "loai": "lon",
-     "tieu": "NỢ XẤU 28 NGÂN HÀNG · 9 THÁNG",
-     "nguon": "VCCI 2026",
+     "tieu": "NỢ XẤU NGÂN HÀNG 30/9/2026",
+     "nguon": "SHS · VCCI",
      "dong": [
       [
-       "> 340.000 TỶ",
-       100,
+       "1,87% LÊN 2,12%",
+       90,
        "do"
       ],
       [
-       "+26,9% · GẤP ĐÔI TỐC ĐỘ CHO VAY",
-       42,
+       "> 340.000 TỶ · +26,9%",
+       50,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "ĐÁNG LO HƠN: NỢ NHÓM 2",
+    "loi": "Nhưng con số em thấy đáng lo hơn là nợ nhóm hai, tức các khoản trễ hạn dưới chín mươi ngày. Chưa bị gọi là nợ xấu, nhưng đây là cửa dẫn vào nợ xấu, và nhóm nợ này vừa tăng lên khoảng một phẩy sáu phần trăm.",
+    "loi_doc": "Nhưng con số em thấy đáng lo hơn là nợ nhóm hai, tức các khoản trễ hạn dưới chín mươi ngày. Chưa bị gọi là nợ xấu, nhưng đây là cửa dẫn vào nợ xấu, và nhóm nợ này vừa tăng lên khoảng một phẩy sáu phần trăm.",
+    "anh": [
+     "bank loan signing||mortgage documents"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "NỢ NHÓM 2 · QUÝ 3/2026",
+     "nguon": "SSI Research qua Báo Đấu thầu",
+     "dong": [
+      [
+       "1,63%",
+       110,
+       "do"
+      ],
+      [
+       "+0,17 ĐIỂM % SO VỚI QUÝ 2",
+       44,
        "trang"
       ]
      ]
@@ -140,8 +165,8 @@
    },
    {
     "chu_to": "BỘ ĐỆM CÒN 74%",
-    "loi": "Còn bộ đệm dự phòng, tức tiền ngân hàng để sẵn cho nợ khó đòi, chỉ còn bảy mươi tư phần trăm số nợ xấu. Techcombank từ một trăm hai mươi tám xuống một trăm linh bảy.",
-    "loi_doc": "Còn bộ đệm dự phòng, tức tiền ngân hàng để sẵn cho nợ khó đòi, chỉ còn bảy mươi tư phần trăm số nợ xấu. Tếch côm banh từ một trăm hai mươi tám xuống một trăm linh bảy.",
+    "loi": "Ở nhiều ngân hàng, nhà đất chiếm trên bảy mươi phần trăm tài sản thế chấp. Trên giấy thì đủ, đem bán thật có khi chỉ còn một nửa, phần hụt ngân hàng phải tự gánh bằng dự phòng. Mà bộ đệm dự phòng chỉ còn bảy mươi tư phần trăm nợ xấu.",
+    "loi_doc": "Ở nhiều ngân hàng, nhà đất chiếm trên bảy mươi phần trăm tài sản thế chấp. Trên giấy thì đủ, đem bán thật có khi chỉ còn một nửa, phần hụt ngân hàng phải tự gánh bằng dự phòng. Mà bộ đệm dự phòng chỉ còn bảy mươi tư phần trăm nợ xấu.",
     "anh": [
      "bank vault door||safe deposit boxes"
     ],
@@ -162,14 +187,6 @@
       ]
      ]
     }
-   },
-   {
-    "chu_to": "ĐẤT RẺ CHƯA CHẮC LÀ HỜI",
-    "loi": "Đất phát mại rẻ một nửa nghe rất hấp dẫn. Nhưng chính ngân hàng hạ giá mà vẫn chưa bán được, thì người mua nên hỏi kỹ: rẻ vì sao, và bán lại cho ai.",
-    "loi_doc": "Đất phát mại rẻ một nửa nghe rất hấp dẫn. Nhưng chính ngân hàng hạ giá mà vẫn chưa bán được, thì người mua nên hỏi kỹ: rẻ vì sao, và bán lại cho ai.",
-    "anh": [
-     "empty land plot Vietnam||vacant land"
-    ]
    }
   ]
  }
