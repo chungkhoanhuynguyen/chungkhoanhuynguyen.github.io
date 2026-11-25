@@ -4493,7 +4493,7 @@ try{(function(){
   if(!C.length)C=P;const p=C[h%C.length];if(!age)age=p.a[0]+h%(p.a[1]-p.a[0]+1);return [p,age]}
  function hs(s){let h=7;for(const c of s)h=(h*31+c.charCodeAt(0))|0;return Math.abs(h)}
  function per(e){if(e.per)return e.per;const h=hs(e.name),[p,age]=fit(e.name,h),fem=F.test(e.name);
-  let fam=p.f[(h>>3)%p.f.length];if(fem)fam=fam.replace('có vợ','có chồng').replace('vợ ','chồng ').replace('2 thằng bạn','2 đứa bạn cùng lớp').replace('độc thân nuôi','ế nuôi').replace('đang yêu xa','ny ở xa');
+  let fam=p.f[(h>>3)%p.f.length];if(!fem)fam=fam.replace(/chồng/g,'vợ');if(fem)fam=fam.replace('có vợ','có chồng').replace('vợ ','chồng ').replace('2 thằng bạn','2 đứa bạn cùng lớp').replace('độc thân nuôi','ế nuôi').replace('đang yêu xa','ny ở xa');
   e.per={j:p.j,age,w:p.w,fam,fem,l:p.l,b:p.b};e.sch=p.s;e.jit=(h%5)/10;return e.per}
  const isB=e=>e&&e.team==='bot'&&!e.guard&&!e.net&&e.name&&e!==hero;
  const all=()=>ents.filter(isB);
