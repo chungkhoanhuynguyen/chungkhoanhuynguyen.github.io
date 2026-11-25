@@ -1302,8 +1302,8 @@ function G0(p){const q=p.clone();q.y=H(q.x,q.z);return q}
 var BKC={t:0,em:0};
 function botKcTick(dt){BKC.t-=dt;const cp=camera.position;
  ents.forEach(e=>{if(e.team!=='bot'||e.dead||!e.c.g.visible)return;const p=e.c.g.position;
-  if(e.kc>0){e.kc-=dt;const k=1-e.kc/.75,f=new T.Vector3(Math.sin(e.face),0,Math.cos(e.face));p.addScaledVector(f,24*dt);p.y=H(p.x,p.z)+Math.sin(Math.PI*k)*3.2;if(Math.random()<.7)emit(p.x,p.y+.6,p.z,-f.x*3+R2(.6),R2(.4),-f.z*3+R2(.6),1.6,1.9,2.3,.35,.4,0,2);if(e.kc<=0){ring(p,0xd8f4ff,2,.35);if(!e.kc2&&Math.random()<.4){e.kc2=1;e.kc=.75;burst(tmp.copy(p).setY(p.y+.3),12,0xd8f4ff,6)}else e.kc2=0}return}
-  if(BKC.t<=0&&(e.trav||e.target)&&Math.random()<(e.target?.05:.12)&&Math.abs(p.x-cp.x)+Math.abs(p.z-cp.z)<90){const wp=e.target?e.target.c.g.position:e.wp;if(!wp||Math.hypot(wp.x-p.x,wp.z-p.z)<10)return;e.face=Math.atan2(wp.x-p.x,wp.z-p.z);e.kc=.75;ring(p,0x9fe3ff,3,.45);burst(tmp.copy(p).setY(p.y+.3),16,0xd8f4ff,7);if(p.distanceTo(cp)<40)sfx('whoosh')}});
+  if(e.kc>0){e.kc-=dt;const k=1-e.kc/.75,f=new T.Vector3(Math.sin(e.face),0,Math.cos(e.face));p.addScaledVector(f,24*dt);p.y=H(p.x,p.z)+Math.sin(Math.PI*k)*3.2;if(e.kc<=0){for(let q=0;q<3;q++)emit(p.x,p.y+.1,p.z,R2(1.2),.4+Math.random()*.5,R2(1.2),.75,.72,.66,.5,.45,0,0);if(!e.kc2&&Math.random()<.4){e.kc2=1;e.kc=.75}else e.kc2=0}return}
+  if(BKC.t<=0&&(e.trav||e.target)&&Math.random()<(e.target?.05:.12)&&Math.abs(p.x-cp.x)+Math.abs(p.z-cp.z)<90){const wp=e.target?e.target.c.g.position:e.wp;if(!wp||Math.hypot(wp.x-p.x,wp.z-p.z)<10)return;e.face=Math.atan2(wp.x-p.x,wp.z-p.z);e.kc=.75;for(let q=0;q<3;q++)emit(p.x,p.y+.1,p.z,R2(1.2),.4+Math.random()*.5,R2(1.2),.75,.72,.66,.5,.45,0,0)}});
  if(BKC.t<=0)BKC.t=1.2;
  BKC.em-=dt;if(BKC.em>0)return;BKC.em=2.5+Math.random()*3;const hp=heroPos();const near=ents.filter(e=>e.team==='bot'&&!e.dead&&e.c.g.visible&&e.c.g.position.distanceTo(hp)<45);if(!near.length)return;const b=pick(near);
  const low=b.hp<b.max*.3,fight=!!b.target,town=inCity(b.c.g.position);
@@ -3602,9 +3602,9 @@ try{(function(){
  updIsles=function(dt,time){const cp=camera.position;(window.ISLES||[]).forEach(s=>{s.g.position.y=s.y0+Math.sin(time*.4+s.ph)*2.5;s.g.rotation.y+=dt*.02;if(!LITE&&Math.random()<.07&&s.g.position.distanceTo(cp)<230){const p=s.g.position,a=s.ph;emit(p.x+Math.cos(a)*s.rad*.95,p.y,p.z+Math.sin(a)*s.rad*.95,0,-6,0,.4,.9,1.6,1.4,3,4,0)}})};
  /* --- 4. bot khinh công: đuổi theo, né đòn, chạy trốn về thành --- */
  const _v=new T.Vector3();
- function leap(e,tx,tz,dur,h,nm){const p=e.c.g.position;e.kl={t:0,d:dur,x0:p.x,z0:p.z,x1:tx,z1:tz,h};e.face=Math.atan2(tx-p.x,tz-p.z);if(!e.cull&&e.c.g.visible&&p.distanceTo(camera.position)<70){ring(p,0x9fe3ff,h>2?3:2,.4);burst(_v.copy(p).setY(p.y+.3),h>2?14:8,0xd8f4ff,6);if(nm&&Math.random()<.15)dmgText(p.clone().setY(p.y+2.6),nm,'#bfe8ff',false);if(p.distanceTo(heroPos())<35)sfx('whoosh')}}
+ function leap(e,tx,tz,dur,h,nm){const p=e.c.g.position;e.kl={t:0,d:dur,x0:p.x,z0:p.z,x1:tx,z1:tz,h};e.face=Math.atan2(tx-p.x,tz-p.z);if(!e.cull&&e.c.g.visible&&p.distanceTo(camera.position)<70){/* khinh công kín đáo: chỉ bụi nhẹ dưới chân, không chữ tên, không vòng sáng */for(let i=0;i<4;i++)emit(p.x,p.y+.1,p.z,R2(1.2),.4+Math.random()*.6,R2(1.2),.75,.72,.66,.5,.45,0,0)}}
  function kl(e,dt){const L=e.kl,p=e.c.g.position;L.t+=dt;const k=Math.min(1,L.t/L.d);p.x=L.x0+(L.x1-L.x0)*k;p.z=L.z0+(L.z1-L.z0)*k;p.y=H(p.x,p.z)+Math.sin(Math.PI*k)*L.h;
-  if(!e.cull&&Math.random()<.6)emit(p.x,p.y+.6,p.z,R2(.6),R2(.4),R2(.6),1.6,1.9,2.3,.35,.4,0,2);if(k>=1){e.kl=null;if(!e.cull)ring(p,0xd8f4ff,2,.35)}}
+  if(k>=1){e.kl=null;if(!e.cull)for(let q=0;q<3;q++)emit(p.x,p.y+.1,p.z,R2(1.2),.4+Math.random()*.5,R2(1.2),.75,.72,.66,.5,.45,0,0)}}
  const TOWN=['Khinh công · Đạp Tuyết Vô Ngân','Lăng Ba Vi Bộ','Phi Yến Hồi Toàn'];
  function kcTick(dt){const now=performance.now()/1000,cp=camera.position;
   for(const e of ents){if(e.team!=='bot'||e.dead||e.guard||e.net||e.pt||e===hero)continue;const p=e.c.g.position;
@@ -3743,14 +3743,16 @@ try{(function(){
  const CH=['giữ trụ ae ơi','đẩy đường giữa đi','ai hồi máu với','phá Linh Tinh địch nhanh','bên kia đông vl','gank đường trên kìa','rút về trụ đã','dmm đông thế','theo tao lên','đừng đánh lẻ','sắp phá được trụ rồi','phe Ma ra đây 😤','phe Tiên yếu xìu 🤣','ez ez','ra đây solo','cứu tao với 😭','chiêu to đâu rồi','tập trung đánh con máu ít'];
  let chT=6,kT=0;
  function bfBots(dt){chT-=dt;kT-=dt;const hp=heroPos();
-  for(const o of BF.sol){if(o.kl){const L=o.kl;L.t+=dt;const k=Math.min(1,L.t/L.d);o.x=L.x0+(L.x1-L.x0)*k;o.z=L.z0+(L.z1-L.z0)*k;o.face=Math.atan2(L.x1-L.x0,L.z1-L.z0);if(o.pe){o.pe.c.g.position.set(o.x,BF.Y+Math.sin(Math.PI*k)*L.h,o.z);if(Math.random()<.7)emit(o.x,BF.Y+.8+Math.sin(Math.PI*k)*L.h,o.z,R2(.5),R2(.3),R2(.5),1.6,1.9,2.3,.35,.4,0,2)}if(k>=1){o.kl=null;if(o.pe)ring(new T.Vector3(o.x,BF.Y,o.z),0xd8f4ff,2,.35)}}}
+  for(const o of BF.sol){if(o.kl){const L=o.kl;L.t+=dt;const k=Math.min(1,L.t/L.d);o.x=L.x0+(L.x1-L.x0)*k;o.z=L.z0+(L.z1-L.z0)*k;o.face=Math.atan2(L.x1-L.x0,L.z1-L.z0);if(o.pe)o.pe.c.g.position.set(o.x,BF.Y+Math.sin(Math.PI*k)*L.h,o.z);if(k>=1)o.kl=null}}
   if(kT<=0){kT=.35;for(const o of BF.sol){if(!o.pe||o.dead||o.kl||(o.klCd||0)>performance.now())continue;
     const tg=o.tg,tx=tg==='hero'?hp.x:tg?tg.x:null,tz=tg==='hero'?hp.z:tg?tg.z:null;let x1=null,z1=null,h=3;
     if(o.ret>0){const r=BF.res[o.sd];const dx=r[0]-o.x,dz=r[1]-o.z,l=Math.hypot(dx,dz)||1;if(l>10){x1=o.x+dx/l*12;z1=o.z+dz/l*12}}
     else if(tx!=null){const dx=tx-o.x,dz=tz-o.z,d=Math.hypot(dx,dz);if(d>5.5&&d<34&&Math.random()<.4){const s=Math.min(14,d-2.2);x1=o.x+dx/d*s;z1=o.z+dz/d*s}else if(d<4&&Math.random()<.08){const sg=Math.random()<.5?1:-1;x1=o.x-dz/d*sg*4.5;z1=o.z+dx/d*sg*4.5;h=1.3}}
     else if(Math.random()<.06){x1=o.x+Math.sin(o.face)*11;z1=o.z+Math.cos(o.face)*11}
     if(x1==null)continue;x1=Math.max(BF.X-100,Math.min(BF.X+100,x1));z1=Math.max(BF.Z-100,Math.min(BF.Z+100,z1));const dd=Math.hypot(x1-o.x,z1-o.z);o.kl={t:0,d:Math.max(.3,dd/24),x0:o.x,z0:o.z,x1,z1,h};o.klCd=performance.now()+2500+Math.random()*3000;
-    if(Math.hypot(o.x-hp.x,o.z-hp.z)<35){ring(new T.Vector3(o.x,BF.Y,o.z),0x9fe3ff,h>2?3:2,.4);if(Math.random()<.3)sfx('whoosh')}}}
+    }}
+  /* đuổi người chơi phe địch trong 22m như người thật (không chỉ 10m) */
+  if(!hero.dead){for(const o of BF.sol){if(!o.pe||o.dead||o.ret>0||o.sd===BF.side)continue;const d=Math.hypot(o.x-hp.x,o.z-hp.z);if(d<22&&(o.tg==null||(o.tg!=='hero'&&Math.random()<.02)))o.tg='hero'}}
   if(chT<=0){chT=7+Math.random()*9;const vis=BF.sol.filter(o=>o.pe&&!o.dead);if(vis.length){const o=pick(vis),m=pick(CH);try{bubble(o.pe,m)}catch(_){}chat0('<span class="n" style="color:'+(o.sd==='tien'?'#9ad7ff':'#ff7a8a')+'">['+(o.sd==='tien'?'Tiên':'Ma')+'] '+esc(o.nm||'')+'</span>: '+esc(m),'')}}}
  /* --- 4. bớt chớp sáng: bot tung chiêu không làm chớp đèn toàn cảnh --- */
  const BCOL=[0x9fe8ff,0xffd36b,0xff6a3a,0x7dff9a,0xff4a6a,0xc79bff];const _cp=castCP;castCP=function(slot,preview){if(!(preview&&BF.in))return _cp.apply(this,arguments);
@@ -3779,6 +3781,11 @@ try{(function(){
   mg(pads,new T.MeshStandardMaterial({color:0x3a7a3a,side:T.DoubleSide,roughness:.7}));mg(fls,new T.MeshStandardMaterial({color:0xff9ad0,emissive:0xff6aa0,emissiveIntensity:.4}))}
  const _bb=bfBuild;bfBuild=function(){const was=BF.built;_bb.apply(this,arguments);if(!was&&BF.built){try{scenery()}catch(e){console.warn('bf3 scene',e)}}};
  const _t=bfTick;bfTick=function(dt){_t(dt);if(BF.in&&BF.built){try{bfBots(dt);if(P.auto&&P.auto.bfo){const o=P.auto.bfo;if(o.dead)P.auto=null;else px(o)}}catch(e){if(!bfBots.w){bfBots.w=1;console.warn('bf3',e)}}}};
+ /* chat theo diễn biến: bị người chơi hạ, hạ được người chơi, bị đuổi */
+ const say=(o,m)=>{if(!o||!o.nm)return;try{if(o.pe)bubble(o.pe,m)}catch(_){}chat0('<span class="n" style="color:'+(o.sd==='tien'?'#9ad7ff':'#ff7a8a')+'">['+(o.sd==='tien'?'Tiên':'Ma')+'] '+esc(o.nm)+'</span>: '+esc(m),'')};
+ window.__bfSay=say;let lastSay=0;
+ const _bh=bfHit;bfHit=function(c,r,dmg){const before=BF.sol.filter(o=>!o.dead&&o.pe);const res=_bh.apply(this,arguments);try{const now=performance.now();if(now-lastSay>4000){const v=before.find(o=>o.dead);if(v){lastSay=now;const me=LOOK.name||'mày';say(v,pick(['gg','hack à '+me,'đợi đấy '+me+' 😤','cay thế','lag vl chết oan','ae trả thù cho tao','sao nó mạnh thế','hồi sinh tao quay lại liền']));if(Math.random()<.5){const fr=BF.sol.filter(o=>o.pe&&!o.dead&&o.sd===v.sd);if(fr.length)setTimeout(()=>say(pick(fr),pick(['vây con '+me+' lại ae','tập trung đánh '+me,me+' kìa, đánh nó','để tao xử nó'])),1800)}}}}catch(_){}return res};
+ let wasDead=false;setInterval(()=>{try{if(!BF.in)return;if(hero.dead&&!wasDead){const en=BF.sol.filter(o=>o.pe&&!o.dead&&o.sd!==BF.side);if(en.length)say(pick(en),pick(['ez','về thành hồi sinh đi '+(LOOK.name||''),'non quá 🤣','phe '+(BF.side==='tien'?'Tiên':'Ma')+' yếu thế à','1 hit 😎']))}wasDead=hero.dead}catch(_){}},800);
  window.__bf3={px,CH};
 })()}catch(e){console.warn('bf3',e)}
 /* ===== CHAT BOT THÔNG MINH (25/11): bot hiểu câu hỏi (chỗ nào, mấy giờ, mua bán, lên cấp, tông môn...) và trả lời đúng theo game, gọi tên người chơi, nhận xét cảnh giới/đồ của người chơi, cãi lại khi bị chửi, không lặp câu ===== */
@@ -3786,7 +3793,7 @@ try{(function(){
  const RC=[];const once=a=>{const f=a.filter(x=>!RC.includes(x));const r=pick(f.length?f:a);RC.push(r);if(RC.length>40)RC.shift();return r};
  const me=()=>LOOK.name||'bạn',rl=()=>REALMS[TU.realm]||'Phàm Nhân',hi=()=>TU.realm>=3;
  const bcT=()=>{try{return window.bcOpen&&window.bcOpen()?'đang mở đó, vào lẹ':'mở lúc '+window.bcNext()}catch(e){return 'mở mỗi 2 tiếng giờ chẵn'}};
- function speaker(){const hp=heroPos();const L=ents.filter(e=>e.team==='bot'&&!e.dead&&!e.guard&&e.name);L.sort((a,b)=>a.c.g.position.distanceTo(hp)-b.c.g.position.distanceTo(hp));return L.length?pick(L.slice(0,Math.min(8,L.length))):null}
+ function speaker(){try{if(typeof BF!=='undefined'&&BF.in){const L=BF.sol.filter(o=>o.pe&&!o.dead&&o.nm);if(L.length){const o=pick(L);return {name:'['+(o.sd==='tien'?'Tiên':'Ma')+'] '+o.nm,dead:0,c:{g:{visible:false}},lab:null,pe:o.pe}}}}catch(_){}const hp=heroPos();const L=ents.filter(e=>e.team==='bot'&&!e.dead&&!e.guard&&e.name);L.sort((a,b)=>a.c.g.position.distanceTo(hp)-b.c.g.position.distanceTo(hp));return L.length?pick(L.slice(0,Math.min(8,L.length))):null}
  function stallOffer(t){const S=STALLS.filter(s=>!s.shop&&s.owner&&s.owner!==LOOK.name&&s.items&&s.items.length);if(!S.length)return null;const want=/vũ khí|kiếm|đao|thương|phiên/.test(t)?'weapon':/áo|bào/.test(t)?'robe':/nhẫn/.test(t)?'ring':/giày/.test(t)?'boots':null;
   for(const s of S.sort(()=>Math.random()-.5)){const it=s.items.find(i=>!want||i.slot===want);if(it)return[s.owner,'sạp mình có '+it.name+(it.star?' +'+it.star:'')+' giá '+it.price+' linh thạch, ghé chợ quảng trường mà xem']}return null}
  function answer(m){const t=m.toLowerCase(),q=/\?|ở đâu|chỗ nào|đâu vậy|sao|thế nào|làm sao|cách|mấy giờ|bao giờ|khi nào|ai /.test(t);
