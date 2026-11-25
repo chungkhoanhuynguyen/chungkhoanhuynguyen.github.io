@@ -96,7 +96,7 @@ canvas#gl{display:block;position:fixed;inset:0;width:100%;height:100%}
 <script src="lib/ShaderPass.js"></script>
 <script src="lib/UnrealBloomPass.js"></script>
 <script src="lib/GLTFLoader.js"></script>
-<script src="lib/SkeletonUtils.js"></script><script src="lib/fflate.min.js"></script><script src="lib/FBXLoader.js"></script><script src="lib/KTX2Loader.js"></script><script src="acct.js?v=14"></script>
+<script src="lib/SkeletonUtils.js"></script><script src="lib/fflate.min.js"></script><script src="lib/FBXLoader.js"></script><script src="lib/KTX2Loader.js"></script><script src="acct.js?v=15"></script>
 <script>
 window.onerror=(m,s,l)=>{if(/WebGL không khả dụng/.test(m))return true;const e=document.getElementById('err');e.style.display='block';e.textContent='Lỗi: '+m+' (dòng '+l+')'};
 {
@@ -4006,7 +4006,7 @@ try{(function(){const v=new T.Vector3(),f=new T.Vector3();let t=0;
    for(let i=0;i<(LITE?4:7);i++)emit(v.x+f.x*.4*sc,v.y,v.z+f.z*.4*sc,f.x*(2+Math.random()*2)*sc+R2(.6),.4+Math.random()*.8,f.z*(2+Math.random()*2)*sc+R2(.6),col.r*k,col.g*k,col.b*k,(.25+Math.random()*.2)*sc,.7+Math.random()*.4,-.4,1.5)}})();
 })()}catch(e){console.warn('mon2+',e)}
 /* ===== GIAO DIỆN PC ĐỒNG NHẤT VỚI ĐIỆN THOẠI (25/11): màn PC lớn thì phóng to toàn bộ giao diện theo chiều cao màn hình (giữ tỉ lệ như bản điện thoại) ===== */
-try{(function(){if(document.body.classList.contains('touch'))return;const st=document.createElement('style');st.textContent='body.pcz>*:not(canvas):not(.lab):not(.glab):not(.dlab):not(#load):not(video):not(script):not(style){zoom:var(--uiz)!important}body.pcz #inv{zoom:var(--uiz)!important}body.pcz .lab>*,body.pcz .glab>*,body.pcz .dlab{zoom:var(--uizl)}body.pcz #npcp{max-height:calc(92vh / var(--uiz))!important;overflow:auto!important}body.pcz #dhp{max-height:calc(80vh / var(--uiz))!important}';document.head.appendChild(st);
+try{(function(){if(document.body.classList.contains('touch')||!/uiz/.test(location.search))return;/* 25/11: người chơi muốn giữ giao diện PC như cũ — tắt phóng to (bật lại bằng ?uiz) */const st=document.createElement('style');st.textContent='body.pcz>*:not(canvas):not(.lab):not(.glab):not(.dlab):not(#load):not(video):not(script):not(style){zoom:var(--uiz)!important}body.pcz #inv{zoom:var(--uiz)!important}body.pcz .lab>*,body.pcz .glab>*,body.pcz .dlab{zoom:var(--uizl)}body.pcz #npcp{max-height:calc(92vh / var(--uiz))!important;overflow:auto!important}body.pcz #dhp{max-height:calc(80vh / var(--uiz))!important}';document.head.appendChild(st);
  function fit(){const f=Math.max(1,Math.min(1.7,innerHeight/620));document.documentElement.style.setProperty('--uiz',f.toFixed(3));document.documentElement.style.setProperty('--uizl',(1+(f-1)*.75).toFixed(3));document.body.classList.toggle('pcz',f>1.02)}
  fit();addEventListener('resize',fit);
 })()}catch(e){console.warn('uiz+',e)}
