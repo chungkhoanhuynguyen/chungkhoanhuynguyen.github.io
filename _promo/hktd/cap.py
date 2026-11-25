@@ -112,7 +112,7 @@ async def main():
             def s3(i,n):
                 c=i//60; k=i%60; sid,name,yaw,lab=cuts[c]
                 js=f"__demo.setView({1.45+k*0.004+0.1*(c%2)},{0.36+0.04*(c%2)},{19-k*0.03});"
-                if k==1: js+=f"__demo.hero.face=0;__demo.hero.mp=99999;__demo.castCP('{sid}',true)"
+                if k in (1,30): js+=f"__demo.hero.face={{0 if k==1 else 1.2}};__demo.hero.mp=99999;__demo.castCP('{sid}',true);"
                 return js+ov(a=name,c1='cap',y1=74,al=ease((k-4)/6),sc=1.25-0.25*ease((k-4)/8),fl=max(0,1-k/5)*0.5,bars=60,lab=lab,lal=ease((k-4)/6))
             await shoot('s3',240,s3)
         # S4 (5s) cảnh giới + hào quang
@@ -134,7 +134,7 @@ async def main():
             await ev("""const D=__demo,h=D.heroPos();h.set(60,h.y,200);D.TU.realm=2;__step(5,33);let e=D.allEnts().filter(b=>b.team==='bot'&&!b.dead).sort((a,b)=>a.c.g.position.distanceTo(h)-b.c.g.position.distanceTo(h))[0];if(e){e.c.g.position.set(h.x,h.y,h.z+5);e.target=null;e.st=null;e.hostile=0}window.__pkv=e;""")
             def s6(i,n):
                 js=f"__demo.setView({3.14+0.7-i*0.004},0.3,{15-i*0.02});"
-                if i==8: js+="__demo.hero.mp=99999;__demo.castCP('tnpt',true)"
+                if i==8: js+="__demo.hero.mp=99999;__demo.castCP('tnpt',true);"
                 if i==50: js+="""const D=__demo,e=window.__pkv;if(e){const p=e.c.g.position.clone();e.hp=1;D.hit(D.hero,e,99999999,true);for(let q=0;q<12;q++){const a=q/12*6.28;D.dropItem(p.clone().add(new THREE.Vector3(Math.cos(a)*2.4,0,Math.sin(a)*2.4)),D.mkItem(2+q%5))}}"""
                 al=ease((i-52)/8)
                 return js+ov(a='PK DỨT KHOÁT',b='Hạ gục đối thủ — đối thủ RƠI SẠCH ĐỒ, kể cả đồ đang mặc',al=al,sc=1.3-0.3*al,fl=(0.8 if 50<=i<=52 else 0),bars=60)
