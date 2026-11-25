@@ -3094,7 +3094,7 @@ transformed.x+=dot(lx.xz,woff)/s2;transformed.z+=dot(lz.xz,woff)/s2;transformed.
    const r3=hsh(i+77,j+1313),sc=.75+r3*.95;put(sM,J.n,x,y-.04,z,r1*6.283,sc,sc*(.8+r2*.5));const big=Math.sin(x*.045)*Math.cos(z*.037)*.5+.5;tc.copy(cA).lerp(cB,Math.min(1,r3*.55+big*.5));if(r2>.9)tc.lerp(cD,.6);sC[J.n*3]=tc.r;sC[J.n*3+1]=tc.g;sC[J.n*3+2]=tc.b;J.n++;
    if(r3<.075&&J.f<FN&&big>.35){const fc=FCOL[(r1*997|0)%FCOL.length],fs=.8+r2*.8;put(fM,J.f,x+.15,y-.02,z+.1,r2*6.283,fs,fs);fC[J.f*3]=fc[0]*1.25;fC[J.f*3+1]=fc[1]*1.25;fC[J.f*3+2]=fc[2]*1.25;J.f++}}}
  function tick(){requestAnimationFrame(tick);let hp;try{hp=heroPos()}catch(e){return}if(!hp)return;const off=hp.x>1100||(typeof AQ!=='undefined'&&AQ.lv>=3);
-  grassP.visible=flowP.visible=!off;if(off)return;uHero.value.copy(hp);
+  grassP.visible=false;/* bỏ thảm cỏ theo yêu cầu (nhẹ máy) */flowP.visible=!off;if(off)return;uHero.value.copy(hp);
   if(!job&&Math.hypot(hp.x-cx,hp.z-cz)>GR*.15)start(hp.x,hp.z);if(job)step(touch?2:3.5)}
  requestAnimationFrame(tick);
  window.__gfxpFlush=()=>{const hp=heroPos();uHero.value.copy(hp);start(hp.x,hp.z);step(1e9)};window.__gfxp=()=>({leafMeshes:nLeaf,grass:grassP.count,flowers:flowP.count,job:!!job});
@@ -3537,7 +3537,7 @@ try{(function(){
  updIsles=function(dt,time){const cp=camera.position;(window.ISLES||[]).forEach(s=>{s.g.position.y=s.y0+Math.sin(time*.4+s.ph)*2.5;s.g.rotation.y+=dt*.02;if(!LITE&&Math.random()<.07&&s.g.position.distanceTo(cp)<230){const p=s.g.position,a=s.ph;emit(p.x+Math.cos(a)*s.rad*.95,p.y,p.z+Math.sin(a)*s.rad*.95,0,-6,0,.4,.9,1.6,1.4,3,4,0)}})};
  /* --- 4. bot khinh công: đuổi theo, né đòn, chạy trốn về thành --- */
  const _v=new T.Vector3();
- function leap(e,tx,tz,dur,h,nm){const p=e.c.g.position;e.kl={t:0,d:dur,x0:p.x,z0:p.z,x1:tx,z1:tz,h};e.face=Math.atan2(tx-p.x,tz-p.z);if(!e.cull&&e.c.g.visible&&p.distanceTo(camera.position)<70){ring(p,0x9fe3ff,h>2?3:2,.4);burst(_v.copy(p).setY(p.y+.3),h>2?14:8,0xd8f4ff,6);if(nm&&Math.random()<.35)dmgText(p.clone().setY(p.y+2.6),nm,'#bfe8ff',false);if(p.distanceTo(heroPos())<35)sfx('whoosh')}}
+ function leap(e,tx,tz,dur,h,nm){const p=e.c.g.position;e.kl={t:0,d:dur,x0:p.x,z0:p.z,x1:tx,z1:tz,h};e.face=Math.atan2(tx-p.x,tz-p.z);if(!e.cull&&e.c.g.visible&&p.distanceTo(camera.position)<70){ring(p,0x9fe3ff,h>2?3:2,.4);burst(_v.copy(p).setY(p.y+.3),h>2?14:8,0xd8f4ff,6);if(nm&&Math.random()<.15)dmgText(p.clone().setY(p.y+2.6),nm,'#bfe8ff',false);if(p.distanceTo(heroPos())<35)sfx('whoosh')}}
  function kl(e,dt){const L=e.kl,p=e.c.g.position;L.t+=dt;const k=Math.min(1,L.t/L.d);p.x=L.x0+(L.x1-L.x0)*k;p.z=L.z0+(L.z1-L.z0)*k;p.y=H(p.x,p.z)+Math.sin(Math.PI*k)*L.h;
   if(!e.cull&&Math.random()<.6)emit(p.x,p.y+.6,p.z,R2(.6),R2(.4),R2(.6),1.6,1.9,2.3,.35,.4,0,2);if(k>=1){e.kl=null;if(!e.cull)ring(p,0xd8f4ff,2,.35)}}
  const TOWN=['Khinh công · Đạp Tuyết Vô Ngân','Lăng Ba Vi Bộ','Phi Yến Hồi Toàn'];
@@ -3555,14 +3555,14 @@ try{(function(){
    e.klCd=now+.8}}
  /* --- 5. bị đánh chạy vào thành rồi chửi --- */
  const CUR=['dmm','clgt','cút mẹ m đi','vào đây mà đánh 🤣','đuổi tiếp đi con gà 🐔','thành cấm PK nhé ku 😏','ngu thì chết chứ bệnh tật gì 😂','có giỏi vào thành đấm tao đi','gà vl 🤣','đánh hội đồng thì giỏi','ra ngoài tao gọi anh em','haha hụt rồi 😝'];
- const _h=hit;hit=function(att,e,dmg,crit){const r=_h.apply(this,arguments);try{if(att===hero&&e&&e.team==='bot'&&!e.guard&&!e.net&&!e.dead){e.hHero=performance.now()/1000;if(!e.runTown&&e.hp<e.max*.45&&!inCity(e.c.g.position)&&Math.hypot(e.c.g.position.x,e.c.g.position.z)<CITY+140&&!e.inBC&&!e.pk&&Math.random()<.6){e.runTown=1;e.target=null;e.st='town';try{botPlan(e)}catch(_){}e.trav=true;e.flee=performance.now()+40000;if(!e.cull&&Math.random()<.5)bubble(e,pick(['Chạy!','Về thành thôi!','Đợi đấy!']))}}}catch(_){}return r};
+ const _h=hit;hit=function(att,e,dmg,crit){const r=_h.apply(this,arguments);try{if(att===hero&&e&&e.team==='bot'&&!e.guard&&!e.net&&!e.dead){e.hHero=performance.now()/1000;if(!e.runTown&&e.hp<e.max*.45&&!inCity(e.c.g.position)&&Math.hypot(e.c.g.position.x,e.c.g.position.z)<CITY+260&&!e.inBC&&!e.pt&&Math.random()<.6){e.runTown=1;e.pk=0;e.gank=0;e.cg=0;e.target=null;e.st='town';try{botPlan(e)}catch(_){}e.trav=true;e.flee=performance.now()+40000;if(!e.cull&&Math.random()<.5)bubble(e,pick(['Chạy!','Về thành thôi!','Đợi đấy!']))}}}catch(_){}return r};
  let tT=0;function tauntTick(dt){const w=performance.now();if(w<tT)return;tT=w+500;const now=performance.now()/1000,hp=heroPos();if(hero.dead)return;
   for(const e of ents){if(e.team!=='bot'||e.dead||!e.hHero||now-e.hHero>40)continue;const p=e.c.g.position;if(!inCity(p)||p.distanceTo(hp)>32||now<(e.tauT||0))continue;
    e.tauT=now+45+Math.random()*30;const m=pick(CUR);bubble(e,m);chat0('<span class="n">'+esc(e.name)+'</span>: '+esc(m),'');e.hHero=0}}
  /* --- 6. chiến trường: chỉ hiện tên 7 người gần nhất cho đỡ chồng chữ --- */
  const LB=[];function labTick(){if(typeof BF==='undefined'||!BF.in)return;const hp=heroPos();LB.length=0;for(const e of ents){if(e===hero||!e.lab||e.lab.style.display==='none')continue;LB.push([e.c.g.position.distanceTo(hp),e])}if(LB.length<=7)return;LB.sort((a,b)=>a[0]-b[0]);for(let i=7;i<LB.length;i++)LB[i][1].lab.style.display='none'}
  const _k=botKcTick;botKcTick=function(dt){_k(dt);for(const f of[shTick,lodTick,kcTick,tauntTick,labTick]){try{f(dt)}catch(e){if(!f.w){f.w=1;console.warn('nhe+',f.name,e)}}}};
- window.__nhe={tt:tauntTick,kc:kcTick,lod:()=>ents.filter(e=>e.av&&e.av.lod).length,kl:()=>ents.filter(e=>e.kl).length,leap,CUR};
+ window.__nhe={hit:(a,e,d)=>hit(a,e,d,false),tt:tauntTick,kc:kcTick,lod:()=>ents.filter(e=>e.av&&e.av.lod).length,kl:()=>ents.filter(e=>e.kl).length,leap,CUR};
 })()}catch(e){console.warn('nhe+',e)}
 /* ===== SỐNG ĐỘNG+: âm thanh thật (Kenney CC0) + chuyển động tự nhiên (tóc/váy lò xo, trúng đòn, nhảy, nghiêng, nhìn mục tiêu, bước chân) ===== */
 try{(function(){

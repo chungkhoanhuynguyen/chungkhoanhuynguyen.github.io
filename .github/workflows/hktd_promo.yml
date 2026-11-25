@@ -14,7 +14,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        scene: [s0, s1, s2, s3, s4, s5, s6, s7, s8]
+        scene: [s0, s1, s2, s3, s4, s4b, s5, s6, s7, s8]
     steps:
       - uses: actions/checkout@v4
         with:
@@ -52,8 +52,23 @@ jobs:
         run: |
           pip install -q numpy
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
-          python3 _promo/hktd/music.py
-          for s in s0 s1 s2 s3 s4 s5 s6 s7 s8; do echo "file 'parts/$s.mp4'" >> list.txt; done
+          # Nhạc: Imperial China Cinematic – Shane Ivers (silvermansound.com, CC BY 4.0), ghi công ở cảnh kết
+          curl -sL --retry 3 -o track.mp3 https://www.silvermansound.com/wp-content/uploads/imperial-china-cinematic.mp3 || true
+          if [ -s track.mp3 ] && ffmpeg -y -loglevel error -i track.mp3 -ac 2 -ar 44100 track.wav; then
+            for s in s0 s1 s2 s3 s4 s4b s5 s6 s7 s8; do echo "file 'parts/$s.mp4'" >> l0.txt; done
+            ffmpeg -y -loglevel error -f concat -safe 0 -i l0.txt -c copy v0.mp4
+            D=$(ffprobe -v error -show_entries format=duration -of csv=p=0 v0.mp4)
+            ST=$(python3 -c "
+          import wave,numpy as np,sys
+          w=wave.open('track.wav');n=w.getnframes();a=np.frombuffer(w.readframes(n),np.int16).reshape(-1,2).astype(np.float32).mean(1)
+          sr=44100;D=float('$D');sec=np.sqrt(np.add.reduceat(a*a,np.arange(0,len(a),sr))/sr)
+          W=int(D)+1;best=max(range(0,max(1,len(sec)-W)),key=lambda i:sec[i:i+W].mean()*0.7+sec[i:i+6].mean()*0.3);print(best)")
+            echo "start=$ST dur=$D"
+            ffmpeg -y -loglevel error -ss $ST -t $D -i track.wav -af "afade=t=in:d=1.2,afade=t=out:st=$(python3 -c "print(float('$D')-3)"):d=3,loudnorm=I=-15:TP=-1.5" music.wav
+          else
+            python3 _promo/hktd/music.py
+          fi
+          for s in s0 s1 s2 s3 s4 s4b s5 s6 s7 s8; do echo "file 'parts/$s.mp4'" >> list.txt; done
           ffmpeg -y -loglevel error -f concat -safe 0 -i list.txt -c copy v.mp4
           ffmpeg -y -loglevel error -i v.mp4 -i music.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -shortest hktd_promo.mp4
           ffmpeg -y -loglevel error -i hktd_promo.mp4 -vf scale=1280:720 -c:v libx264 -crf 24 -preset veryfast -c:a copy hktd_promo_720.mp4

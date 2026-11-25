@@ -44,7 +44,7 @@ window.__ov=(o)=>{const t1=document.getElementById('t1'),t2=document.getElementB
 def ease(x): return max(0,min(1,x))
 
 async def main():
-    which = sys.argv[1:] or ['s0','s1','s2','s3','s4','s5','s6','s7','s8']
+    which = sys.argv[1:] or ['s0','s1','s2','s3','s4','s4b','s5','s6','s7','s8']
     async with async_playwright() as p:
         b = await p.chromium.launch(executable_path=CHROME, args=['--use-angle=swiftshader','--enable-unsafe-swiftshader','--ignore-gpu-blocklist'])
         pg = await (await b.new_context(viewport={'width':1280,'height':720})).new_page()
@@ -123,6 +123,19 @@ async def main():
                 k=min(5,i//25)
                 return f"__demo.setView({3.14+0.9-i*.012},0.22,{9-i*.01});"+ov(a='CẢNH GIỚI TU VI',b=' → '.join(rl[:k+1]),al=ease(i/10),bars=60,lab='ĐỒ CÀNG XỊN · HÀO QUANG CÀNG RỰC',lal=ease((i-20)/10))
             await shoot('s4',150,s4)
+        # S4b (6.4s) binh khí: kiếm, đại kiếm, đao, thương, vạn hồn phiên nhiều dạng
+        if 's4b' in which:
+            await ev("const D=__demo,h=D.heroPos();h.set(34,h.y,212);D.TU.tong='kim';D.INV.eq.fabao=null;D.updFabao&&D.updFabao();const st=document.createElement('style');st.id='s4bst';st.textContent='.dhw,#evb,.dmg{display:none!important}';document.head.appendChild(st);__step(10,33)")
+            WS=[('jian','Thiên Cương Kiếm','KIẾM',None),('great','Canh Kim Cự Kiếm','ĐẠI KIẾM',None),('dao','Linh Đằng Đao','ĐAO',None),('spear','Huyền Băng Thương','THƯƠNG',None),('phien','Cửu U Huyết Phiên','VẠN HỒN PHIÊN · MA TÔNG',1),('phien','Thất Sát Hắc Phiên','VẠN HỒN PHIÊN · MA TÔNG',2)]
+            def s4b(i,n):
+                c=min(5,i//32); k=i%32; kind,name,typ,pv=WS[c]
+                yw=3.75+i*.004
+                js=f"__demo.setView({yw},0.1,{4.6-0.3*(c>=4)});__demo.hero.face=0.2;"
+                if k==0:
+                    js+=f"""{{const D=__demo;const it=D.mkItem(6,'weapon');it.kind='{kind}';it.name='{name}';it.tong=null;{('it.pv='+str(pv)+';') if pv is not None else ''}D.TU.tong='{'ma' if kind=='phien' else 'kim'}';D.INV.bag.push(it);D.equip(D.INV.bag.length-1);D.closeInv&&D.closeInv()}}"""
+                return js+ov(a=name,b=typ,c1='cap',y1=74,al=ease((k-3)/6),al2=ease((k-6)/6),sc=1.2-0.2*ease((k-3)/8),bars=60,lab='THẦN BINH LỢI KHÍ · ĐỦ LOẠI BINH KHÍ',lal=ease(i/10))
+            await shoot('s4b',192,s4b)
+            await ev("const s=document.getElementById('s4bst');s&&s.remove()")
         # S5 (8s) độ kiếp
         if 's5' in which:
             await ev("const D=__demo,h=D.heroPos();h.set(30,h.y,215);D.TU.tong='kim';D.TU.realm=1;D.TU.tang=10;D.TU.xp=D.needXp()*2;D.hero.max=D.hero.hp=1e7;__step(5,33);D.tribGo()")
@@ -155,10 +168,10 @@ async def main():
             await shoot('s7',300,s7)
         # S8 (4s) kết
         if 's8' in which:
-            await ev("const h=__demo.heroPos();h.set(40,h.y,262);__step(5,33);const im=document.createElement('img');im.id='bnr';im.src='banner.jpg';im.style.cssText='position:fixed;inset:0;width:100%;height:100%;object-fit:cover;z-index:99998;opacity:0';document.body.appendChild(im)")
+            await ev("const h=__demo.heroPos();h.set(40,h.y,262);__step(5,33);const im=document.createElement('img');im.id='bnr';im.src='banner.jpg';im.style.cssText='position:fixed;inset:0;width:100%;height:100%;object-fit:cover;z-index:99998;opacity:0';document.body.appendChild(im);const cr=document.createElement('div');cr.id='crd';cr.textContent='Nhạc: Imperial China Cinematic – Shane Ivers · silvermansound.com (CC BY 4.0)';cr.style.cssText='position:fixed;right:14px;bottom:8px;z-index:99999;color:#e8dcc0;font:500 11px sans-serif;opacity:.0;text-shadow:0 1px 2px #000';document.body.appendChild(cr)")
             await pg.wait_for_timeout(1500)
             def s8(i,n):
-                return f"__demo.setView({1.2+i*.004},0.5,70);const im=document.getElementById('bnr');if(im){{im.style.opacity={ease(i/12)};im.style.transform='scale({1.0+i*0.0005})'}}"+ov(a='',b='Chơi miễn phí: chungkhoanhuynguyen.com/thienkiemmon',c1='big',c2='sub',y1=34,y2=88,al=ease((i-20)/15),bars=0)
+                return f"__demo.setView({1.2+i*.004},0.5,70);const im=document.getElementById('bnr');{{const c=document.getElementById('crd');if(c)c.style.opacity={0.85*ease((i-20)/15)}}}if(im){{im.style.opacity={ease(i/12)};im.style.transform='scale({1.0+i*0.0005})'}}"+ov(a='',b='Chơi miễn phí: chungkhoanhuynguyen.com/thienkiemmon',c1='big',c2='sub',y1=34,y2=88,al=ease((i-20)/15),bars=0)
             await shoot('s8',120,s8)
         await b.close()
 
