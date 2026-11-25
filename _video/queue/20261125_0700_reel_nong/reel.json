@@ -17,18 +17,56 @@
    "chu_to": "CƠ HỘI HAY CÁI BẪY?",
    "loi": "Đất ngân hàng phát mại rẻ gần một nửa. Anh chị A: thấy đây là cơ hội mua rẻ, hay B: là dấu hiệu nên tránh xa?",
    "loi_doc": "Đất ngân hàng phát mại rẻ gần một nửa. Anh chị A: thấy đây là cơ hội mua rẻ, hay B: là dấu hiệu nên tránh xa?",
-   "anh": [
-    "Agribank||Vietnam bank branch"
-   ]
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "ĐẤT NGÂN HÀNG PHÁT MẠI",
+    "dong": [
+     [
+      "A: CƠ HỘI",
+      100,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: CÁI BẪY?",
+      100,
+      "do"
+     ]
+    ]
+   }
   },
   "canh": [
    {
     "chu_to": "ĐẤT NGÂN HÀNG MẤT NỬA GIÁ",
     "loi": "Anh chị có biết, một miếng đất ngân hàng xiết nợ có thể mất gần một nửa giá chỉ sau một năm không? Chuyện này đang xảy ra thật, và nó cho thấy nợ xấu ngân hàng đang dồn lên.",
     "loi_doc": "Anh chị có biết, một miếng đất ngân hàng xiết nợ có thể mất gần một nửa giá chỉ sau một năm không? Chuyện này đang xảy ra thật, và nó cho thấy nợ xấu ngân hàng đang dồn lên.",
-    "anh": [
-     "abandoned factory||old factory building"
-    ]
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "ĐẤT NGÂN HÀNG XIẾT NỢ",
+     "dong": [
+      [
+       "103 TỶ",
+       110,
+       "trang"
+      ],
+      [
+       "CÒN 52 TỶ",
+       110,
+       "do"
+      ],
+      [
+       "CHỈ SAU 1 NĂM",
+       64,
+       "vang"
+      ]
+     ]
+    }
    },
    {
     "chu_to": "NGÂN HÀNG TIN VÀO MIẾNG ĐẤT",
@@ -54,9 +92,7 @@
     "chu_to": "103,55 TỶ",
     "loi": "Tháng mười năm ngoái, nhà máy nước Cần Giờ mà Agribank xiết nợ được đem ra đấu giá, giá khởi điểm hơn một trăm linh ba tỷ đồng. Không bán được, ngân hàng đấu giá đi đấu giá lại nhiều lần.",
     "loi_doc": "Tháng mười năm ngoái, nhà máy nước Cần Giờ mà A gờ ri banh xiết nợ được đem ra đấu giá, giá khởi điểm hơn một trăm linh ba tỷ đồng. Không bán được, ngân hàng đấu giá đi đấu giá lại nhiều lần.",
-    "anh": [
-     "auction gavel||auction"
-    ],
+    "anh": [],
     "the": {
      "loai": "lon",
      "tieu": "NHÀ MÁY NƯỚC CẦN GIỜ · 12.809 M²",
@@ -174,6 +210,33 @@
      "phu": "27 NGÂN HÀNG: CÒN 74%"
     }
    }
-  ]
+  ],
+  "keo_web": {
+   "chu_to": "SỐ LIỆU 400+ MÃ",
+   "loi": "Số liệu em dùng lấy từ bảng báo cáo hơn 400 mã em cập nhật mỗi phiên trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Số liệu em dùng lấy từ bảng báo cáo hơn bốn trăm mã em cập nhật mỗi phiên trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      "400+ MÃ",
+      120,
+      "vang"
+     ],
+     [
+      "BÁO CÁO TÀI CHÍNH",
+      54,
+      "trang"
+     ],
+     [
+      "CẬP NHẬT MỖI PHIÊN",
+      54,
+      "trang"
+     ]
+    ]
+   }
+  }
  }
 ]
