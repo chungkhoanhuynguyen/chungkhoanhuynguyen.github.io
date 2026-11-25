@@ -1,0 +1,1 @@
+NONG2511A | 1:9 2:9 3:9 4:9 5:9 6:9 7:9 8:10 9:9 10:9 | đã soát V1 V2 (V1: ảnh chợ nổi bán thịt ở cảnh 14% → V2 ảnh Cần Thơ đích danh; whisper V2 khớp mọi số; -11,2 LUFS; 7:48; chấm chéo người mới 7→8, thám tử 6→8) – NV1B 25/11 10:25
