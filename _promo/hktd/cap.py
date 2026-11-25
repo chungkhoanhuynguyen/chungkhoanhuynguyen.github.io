@@ -60,7 +60,7 @@ async def main():
           D.TU.tong='kim';for(let i=0;i<14;i++)D.INV.bag.push(D.mkItem(5+(i%2)));D.wearBest();D.closeInv&&D.closeInv();
           D.hero.mp=99999;D.hero.max=D.hero.hp=999999;document.getElementById('npcp')&&(document.getElementById('npcp').style.display='none');
           document.getElementById('invw')&&(document.getElementById('invw').style.display='none');__vtOn();window.scrFlash=function(){}}""")
-        await pg.evaluate("()=>{const st=document.createElement('style');st.textContent='#bfhud,#bfbtn,#hbb,#bfb{display:none!important}';document.head.appendChild(st)}")
+        await pg.evaluate("()=>{const st=document.createElement('style');st.textContent='#bfhud,#bfbtn,#hbb,#bfb,#bcbtn{display:none!important}';document.head.appendChild(st)}")
         await pg.wait_for_timeout(1500)
         frame = [0]
         async def shoot(scene, n, per):
@@ -100,10 +100,10 @@ async def main():
         # S2 (5s) tông môn
         if 's2' in which:
             await ev("const h=__demo.heroPos();h.set(0,h.y,-6);__step(10,33)")
-            sects=['Thiên Kiếm Tông · Kim','Thanh Mộc Cốc · Mộc','Huyền Thủy Cung · Thủy','Xích Diễm Môn · Hỏa','Hậu Thổ Tông · Thổ','Huyết Ma Tông · Ma đạo']
+            sects=['Thiên Kiếm Thánh Địa · Kim','Dao Trì Thánh Địa · Mộc','Bắc Minh Băng Cung · Thủy','Kim Ô Thánh Địa · Hỏa','Thái Sơn Thánh Địa · Thổ','Huyết Ma Tông · Ma đạo']
             def s2(i,n):
                 k=min(5,i//22)
-                return f"__demo.setView({3.14+i*.01},0.38,{26-i*.04});"+ov(a='6 TÔNG MÔN · NGŨ HÀNH TƯƠNG KHẮC',b=sects[k],al=ease(i/10),al2=ease((i%22)/6),bars=60,lab='CHỌN ĐƯỜNG TU',lal=ease(i/10))
+                return f"__demo.setView({3.14+i*.01},0.38,{26-i*.04});"+ov(a='5 THÁNH ĐỊA · 1 MA TÔNG',b=sects[k],al=ease(i/10),al2=ease((i%22)/6),bars=60,lab='CHỌN ĐƯỜNG TU',lal=ease(i/10))
             await shoot('s2',150,s2)
         # S3 (8s) tuyệt học
         if 's3' in which:
@@ -155,9 +155,10 @@ async def main():
             await shoot('s7',300,s7)
         # S8 (4s) kết
         if 's8' in which:
-            await ev("const h=__demo.heroPos();h.set(40,h.y,262);__step(5,33)")
+            await ev("const h=__demo.heroPos();h.set(40,h.y,262);__step(5,33);const im=document.createElement('img');im.id='bnr';im.src='banner.jpg';im.style.cssText='position:fixed;inset:0;width:100%;height:100%;object-fit:cover;z-index:99998;opacity:0';document.body.appendChild(im)")
+            await pg.wait_for_timeout(1500)
             def s8(i,n):
-                return f"__demo.setView({1.2+i*.004},0.5,70);"+ov(a='HUYỀN KIẾM TIÊN ĐỒ',b='Chơi miễn phí: chungkhoanhuynguyen.com/thienkiemmon',c1='big',c2='sub',y1=34,y2=56,al=ease(i/15),bars=90,lab='TOP 10 PHONG THẦN BẢNG · DANH HIỆU RIÊNG',lal=ease((i-15)/15))
+                return f"__demo.setView({1.2+i*.004},0.5,70);const im=document.getElementById('bnr');if(im){{im.style.opacity={ease(i/12)};im.style.transform='scale({1.0+i*0.0005})'}}"+ov(a='',b='Chơi miễn phí: chungkhoanhuynguyen.com/thienkiemmon',c1='big',c2='sub',y1=34,y2=88,al=ease((i-20)/15),bars=0)
             await shoot('s8',120,s8)
         await b.close()
 
