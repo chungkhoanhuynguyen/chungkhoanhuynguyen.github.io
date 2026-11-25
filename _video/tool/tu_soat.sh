@@ -37,7 +37,7 @@ NS=$(echo $S | grep -o -- "-i" | wc -l); [ "$NS" -ge 1 ] && ffmpeg -v error -y $
   echo "== FILE"; ls ${K}* | tr '\n' ' '; echo
 } > ${K}_soat.txt 2>&1
 if [ -n "$GEMINI_API_KEY" ]; then
-  timeout 300 python3 "$TD/gemini_soat.py" "$O" "$K" >> ${K}_soat.txt 2>&1 || echo "== GEMINI: lỗi/hết giờ (bỏ qua)" >> ${K}_soat.txt
+  timeout 480 python3 "$TD/gemini_soat.py" "$O" "$K" >> ${K}_soat.txt 2>&1 || echo "== GEMINI: lỗi/hết giờ (bỏ qua)" >> ${K}_soat.txt
 else
   echo "== GEMINI: chưa có secret GEMINI_API_KEY (bỏ qua bước xem khung bằng AI)" >> ${K}_soat.txt
 fi
