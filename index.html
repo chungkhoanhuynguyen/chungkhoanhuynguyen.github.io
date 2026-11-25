@@ -312,6 +312,10 @@ html{scroll-behavior:auto}
 .mt[aria-pressed=true]{background:#6a2d86;color:#fff;border-color:#6a2d86}
 .mw-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;animation:cardIn .45s cubic-bezier(.2,.7,.2,1) both}
 .mw{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px 12px;box-shadow:0 1px 2px rgba(31,27,38,.05);min-width:0;position:relative;overflow:hidden}
+/* 25/11 QL1: chữ thương hiệu chìm lặp chéo trên mọi khung biểu đồ để ảnh chụp màn hình luôn thấy thương hiệu (anh Huy) */
+.mw::after,.wmk::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:4;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='170'%3E%3Ctext x='150' y='95' text-anchor='middle' transform='rotate(-22 150 85)' font-family='Be Vietnam Pro,Arial,sans-serif' font-size='17' font-weight='800' letter-spacing='3' fill='%238d8899' fill-opacity='.16'%3ECH%E1%BB%A8NG KHO%C3%81N HUY NGUY%E1%BB%84N%3C/text%3E%3C/svg%3E") repeat;background-position:20px 10px}
+.wmk{position:relative}
+
 .mw>header{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px}
 .mw>header b{font-size:15px;color:var(--fg)}
 .mw-tag{font-size:11px;color:var(--mute);background:#f4f1f8;border-radius:6px;padding:2px 8px;white-space:nowrap}
@@ -1728,7 +1732,7 @@ function render(keep){
  if(sec.classList.contains('chmax')){var avail=window.innerHeight-el.getBoundingClientRect().top-14;hMain=Math.max(260,avail-ext)}
  el.style.height=(hMain+ext)+'px';
  var pf={type:'custom',minMove:0.01,formatter:function(p){return nf(p,2)}};
- chart=LW.createChart(el,{autoSize:true,
+ el.classList.add('wmk');chart=LW.createChart(el,{autoSize:true,
   layout:{background:{type:'solid',color:'#ffffff'},textColor:'#5f5a69',fontSize:m?10:11,fontFamily:getComputedStyle(document.body).fontFamily,attributionLogo:true,panes:{separatorColor:'#ebe7f0',separatorHoverColor:m?'rgba(0,0,0,0)':'rgba(106,45,134,.10)',enableResize:!m}},
   grid:{vertLines:{color:'#f4f1f7'},horzLines:{color:'#f4f1f7'}},
   rightPriceScale:{borderColor:'#e1dde8',scaleMargins:{top:.08,bottom:.24}},
@@ -1949,7 +1953,7 @@ function cut(b,n){return !b?null:(n?b.slice(-n-1):b)}
 function plot(A,B,V){var el=$('ssv'),LW=window.LightweightCharts,m=H.mob();if(chart){chart.remove();chart=null}el.innerHTML='';
  if(!A&&!B){el.innerHTML='<div class="ch-load">Hai mã sàn HNX/UPCoM chưa có đường giá, xem bảng chỉ số bên dưới.</div>';return}
  el.style.height=(m?260:330)+'px';
- chart=LW.createChart(el,{autoSize:true,layout:{background:{type:'solid',color:'#fff'},textColor:'#5f5a69',fontSize:m?10:11,fontFamily:getComputedStyle(document.body).fontFamily,attributionLogo:true},grid:{vertLines:{color:'#f4f1f7'},horzLines:{color:'#f4f1f7'}},rightPriceScale:{borderColor:'#e1dde8'},timeScale:{borderColor:'#e1dde8',rightOffset:3,tickMarkFormatter:function(t,ty){var s=typeof t==='string'?t:t.year+'-'+String(t.month).padStart(2,'0')+'-'+String(t.day).padStart(2,'0');if(ty===0)return s.slice(0,4);if(ty===1)return 'T'+(+s.slice(5,7));return s.slice(8,10)+'/'+s.slice(5,7)}},crosshair:{mode:0},localization:{locale:'vi-VN',dateFormat:'dd/MM/yyyy'},handleScroll:{mouseWheel:false,vertTouchDrag:false},handleScale:{mouseWheel:false}});
+ el.classList.add('wmk');chart=LW.createChart(el,{autoSize:true,layout:{background:{type:'solid',color:'#fff'},textColor:'#5f5a69',fontSize:m?10:11,fontFamily:getComputedStyle(document.body).fontFamily,attributionLogo:true},grid:{vertLines:{color:'#f4f1f7'},horzLines:{color:'#f4f1f7'}},rightPriceScale:{borderColor:'#e1dde8'},timeScale:{borderColor:'#e1dde8',rightOffset:3,tickMarkFormatter:function(t,ty){var s=typeof t==='string'?t:t.year+'-'+String(t.month).padStart(2,'0')+'-'+String(t.day).padStart(2,'0');if(ty===0)return s.slice(0,4);if(ty===1)return 'T'+(+s.slice(5,7));return s.slice(8,10)+'/'+s.slice(5,7)}},crosshair:{mode:0},localization:{locale:'vi-VN',dateFormat:'dd/MM/yyyy'},handleScroll:{mouseWheel:false,vertTouchDrag:false},handleScale:{mouseWheel:false}});
  var pf={type:'custom',minMove:.01,formatter:function(p){return pc(p,1)}};
  function add(b,c,w,dash,title){if(!b||!b.length)return null;var b0=b[0].close,s=chart.addSeries(LW.LineSeries,{color:c,lineWidth:w,lineStyle:dash?2:0,priceFormat:pf,priceLineVisible:false,lastValueVisible:true,crosshairMarkerVisible:true,title:title});s.setData(b.map(function(x){return{time:x.time,value:(x.close/b0-1)*100}}));return s}
  add(V,CV,1,1,'VN-Index');add(B,CB,2,0,st.b);add(A,CA,2.5,0,st.a);
@@ -2041,7 +2045,7 @@ function head(k,pts){var h=$('wmh');if(k==='fed'){h.innerHTML='<b>Lãi suất đ
 function plot(){var el=$('wmv'),LW=window.LightweightCharts,m=H.mob(),k=st.k;if(!LW)return;if(k!=='fed'&&!S[k])k=st.k=ORD[0];if(k==='fed'&&!(FED&&FED.hist))k=st.k=ORD[0];if(!k)return;
  if(chart){chart.remove();chart=null}el.innerHTML='';el.style.height=(m?250:330)+'px';
  var dec=k==='fed'?2:S[k].d>2?3:S[k].d;
- chart=LW.createChart(el,{autoSize:true,layout:{background:{type:'solid',color:'#fff'},textColor:'#5f5a69',fontSize:m?10:11,fontFamily:getComputedStyle(document.body).fontFamily,attributionLogo:true},grid:{vertLines:{color:'#f4f1f7'},horzLines:{color:'#f4f1f7'}},rightPriceScale:{borderColor:'#e1dde8',scaleMargins:{top:.12,bottom:.08}},timeScale:{borderColor:'#e1dde8',rightOffset:2,tickMarkFormatter:function(t,ty){var s=typeof t==='string'?t:t.year+'-'+String(t.month).padStart(2,'0')+'-'+String(t.day).padStart(2,'0');if(ty===0)return s.slice(0,4);if(ty===1)return 'T'+(+s.slice(5,7));return s.slice(8,10)+'/'+s.slice(5,7)}},crosshair:{mode:0},localization:{locale:'vi-VN',dateFormat:'dd/MM/yyyy'},handleScroll:{mouseWheel:false,vertTouchDrag:false},handleScale:{mouseWheel:false}});
+ el.classList.add('wmk');chart=LW.createChart(el,{autoSize:true,layout:{background:{type:'solid',color:'#fff'},textColor:'#5f5a69',fontSize:m?10:11,fontFamily:getComputedStyle(document.body).fontFamily,attributionLogo:true},grid:{vertLines:{color:'#f4f1f7'},horzLines:{color:'#f4f1f7'}},rightPriceScale:{borderColor:'#e1dde8',scaleMargins:{top:.12,bottom:.08}},timeScale:{borderColor:'#e1dde8',rightOffset:2,tickMarkFormatter:function(t,ty){var s=typeof t==='string'?t:t.year+'-'+String(t.month).padStart(2,'0')+'-'+String(t.day).padStart(2,'0');if(ty===0)return s.slice(0,4);if(ty===1)return 'T'+(+s.slice(5,7));return s.slice(8,10)+'/'+s.slice(5,7)}},crosshair:{mode:0},localization:{locale:'vi-VN',dateFormat:'dd/MM/yyyy'},handleScroll:{mouseWheel:false,vertTouchDrag:false},handleScale:{mouseWheel:false}});
  var pf={type:'custom',minMove:Math.pow(10,-dec),formatter:function(p){return nf(p,dec)}};
  if(k==='fed'){var d=data('fed');var a=chart.addSeries(LW.LineSeries,{color:'#6a2d86',lineWidth:2.5,lineType:1,priceFormat:pf,priceLineVisible:false,title:'Trên'});a.setData(d.hi);
   var b=chart.addSeries(LW.LineSeries,{color:'#d08a1e',lineWidth:2,lineType:1,priceFormat:pf,priceLineVisible:false,title:'Dưới'});b.setData(d.lo);head('fed')}
