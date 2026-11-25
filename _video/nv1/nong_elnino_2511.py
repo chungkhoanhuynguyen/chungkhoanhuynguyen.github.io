@@ -31,10 +31,10 @@ KEY = 'NONG2511A'; CC = (WHITE, GOLD); CR = (WHITE, RED)
 R_, V_, X_, G_ = (239, 68, 68), (255, 196, 0), (56, 189, 248), (34, 197, 94)
 TP = 'ov:Ho Chi Minh City skyline night||Ho Chi Minh City skyline night'
 HN = 'ov:Hanoi skyline night||Hanoi skyline night'
-LUA = 'ov:Rice field Mekong Delta||Rice paddy Vietnam'
-MEK = 'ov:Mekong Delta river||Can Tho'
+LUA = 'File:Cau-can-tho-tuonglamphotos.jpg'
+MEK = 'File:Can_Tho_City_-_Stadt_aus_Sicht_vom_Boot.jpg'
 CON = 'ov:Container ship||Container ship'
-GAO = 'ov:Rice grains||White rice'
+GAO = 'File:White_rice_at_a_restaurant.jpg'
 S = [
  # ---------------- MỞ ĐẦU ----------------
  dict(k='noti', ch='Mở đầu', short=True, cap=('GẠO BÁN RA NƯỚC NGOÀI ĐẮT LÊN', 'GẠO NGOÀI CHỢ LẠI RẺ ĐI'), cols=CR, noti=dict(gio='07:30', ngay='Thứ Tư', items=[
