@@ -61,6 +61,7 @@ main:not(.on) .card{animation:none}
 .pic::before{content:"";position:absolute;z-index:2;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,240,200,.28),transparent);transform:skewX(-18deg);transition:left .9s ease}
 .card:hover .pic::before{left:130%}
 .tag{position:absolute;z-index:3;top:12px;left:12px;font-size:11px;font-weight:600;letter-spacing:.08em;padding:5px 10px;border-radius:999px;background:rgba(7,6,10,.7);backdrop-filter:blur(6px);border:1px solid rgba(233,196,106,.35);color:var(--gold2)}
+.hotb{position:absolute;z-index:3;top:10px;right:12px;font:900 13px/1 system-ui,sans-serif;letter-spacing:.08em;padding:6px 11px;border-radius:999px;color:#fff;background:linear-gradient(135deg,#ff3d2e,#ff9a1f);box-shadow:0 0 14px rgba(255,80,30,.7);animation:hotp 1.4s ease-in-out infinite}@keyframes hotp{50%{transform:scale(1.08);box-shadow:0 0 22px rgba(255,120,30,.9)}}.card.hot{outline:2px solid rgba(255,140,40,.55);outline-offset:-2px}
 .tag.live::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:#3ddc84;margin-right:6px;box-shadow:0 0 8px #3ddc84;vertical-align:1px}
 .body{padding:4px 22px 22px;margin-top:-34px;position:relative;z-index:2}
 .body h3{font-size:clamp(26px,3.4vw,34px);font-weight:700;color:#fff3d6;line-height:1.1}
@@ -110,6 +111,15 @@ footer a{color:#a89f8c}
   </header>
 
   <div class="grid">
+    <a class="card hot" href="/thienkiemmon/">
+      <div class="pic"><span class="tag live">Có online</span><span class="hotb">HOT</span><img src="hktd.webp" alt="Huyền Kiếm Tiên Đồ: game tu tiên 3D thế giới mở" width="960" height="495"></div>
+      <div class="body">
+        <h3 class="serif">Huyền Kiếm Tiên Đồ</h3>
+        <div class="g">Tu tiên 3D · PK rơi sạch đồ · Chiến Trường Tiên Ma 20:00</div>
+        <p>Bái 6 tông môn, nhặt 16 bí kíp công pháp, độ thiên kiếp. Chết là rơi sạch đồ — 20:00 mỗi tối Chiến Trường Tiên Ma 100 đấu 100.</p>
+        <div class="go"><span>Nhập vai · PK · có online</span><span class="btn">Vào game →</span></div>
+      </div>
+    </a>
     <a class="card" href="/thuthanhlacduong/">
       <div class="pic"><span class="tag live">Có online</span><img src="ttld.webp" alt="Thủ Thành Lạc Dương: thành Lạc Dương 3D với tường thành, chợ và linh vật" width="960" height="495"></div>
       <div class="body">
@@ -135,15 +145,6 @@ footer a{color:#a89f8c}
         <div class="g">MMO 3D thế giới mở · 9 lớp nhân vật · Lên cấp nhanh</div>
         <p>Tự do khám phá thung lũng, rừng sói và hầm ngục, đánh quái cùng hàng chục hiệp sĩ khác, không bị dắt tay.</p>
         <div class="go"><span>Nhập vai · thế giới mở</span><span class="btn">Vào game →</span></div>
-      </div>
-    </a>
-    <a class="card" href="/thienkiemmon/">
-      <div class="pic"><span class="tag live">Có online</span><img src="hktd.webp" alt="Huyền Kiếm Tiên Đồ: game tu tiên 3D thế giới mở" width="960" height="495"></div>
-      <div class="body">
-        <h3 class="serif">Huyền Kiếm Tiên Đồ</h3>
-        <div class="g">Tu tiên 3D thế giới mở · Ngự kiếm · Độ thiên kiếp</div>
-        <p>Bái tông môn, săn yêu thú cấp 1–300, đồ sát cướp bảo hay trừ ma vệ đạo. Chết là rơi sạch linh thạch — tổ đội 5 người mà sống sót.</p>
-        <div class="go"><span>Nhập vai · PK · có online</span><span class="btn">Vào game →</span></div>
       </div>
     </a>
   </div>

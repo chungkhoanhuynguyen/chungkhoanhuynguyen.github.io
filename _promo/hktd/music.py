@@ -1,7 +1,7 @@
 import numpy as np, wave
 SR = 44100
 SHIFT = 0.0
-BND = [0, 4, 8, 13, 21, 26, 34, 40, 48, 52]
+BND = [0, 4, 8, 13, 21, 26, 34, 40, 50, 54]
 DUR = BND[-1] + .5
 N = int(SR * DUR)
 L = np.zeros(N); R = np.zeros(N)

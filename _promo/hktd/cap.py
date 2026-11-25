@@ -138,12 +138,20 @@ async def main():
                 al=ease((i-52)/8)
                 return js+ov(a='PK DỨT KHOÁT',b='Hạ gục đối thủ — đối thủ RƠI SẠCH ĐỒ, kể cả đồ đang mặc',al=al,sc=1.3-0.3*al,fl=(0.8 if 50<=i<=52 else 0),bars=60)
             await shoot('s6',180,s6)
-        # S7 (8s) chiến trường tiên ma
+        # S7 (10s) chiến trường tiên ma: đông người, nổ skill liên tục
         if 's7' in which:
-            await ev("""const D=__demo;D.TU.realm=2;D.TU.tong='kim';D.bfJoin('tien');const B=D.BF;B.sol.forEach(o=>{o.z=(o.sd==='tien'?-1:1)*(4+Math.random()*30);o.x=B.X+(Math.random()-.5)*40});const h=D.heroPos();h.set(B.X,B.Y,B.Z-30);__step(10,33);"""+hide_on())
+            await ev("""const D=__demo;D.TU.realm=2;D.TU.tong='kim';D.bfJoin('tien');const B=D.BF;B.sol.forEach(o=>{o.z=B.Z+(o.sd==='tien'?1:-1)*(2+Math.random()*16);o.x=B.X+(Math.random()-.5)*30;o.tg=null});const h=D.heroPos();h.set(B.X,B.Y,B.Z+8);D.hero.max=D.hero.hp=1e8;D.hero.mp=1e6;__step(10,33);"""+hide_on())
+            ids=['glong','ldvq','hlpt','vkqt','bptg','hamc','htdc','tnpt','lmtk','chtv','htdp','cabc']
             def s7(i,n):
-                return hide_on()+f"__demo.setView({3.14+i*.004},{0.6-i*.0012},{48-i*.06});"+ov(a='CHIẾN TRƯỜNG TIÊN MA',b='20:00 mỗi tối · 100 đấu 100 · tranh 5 cứ điểm',al=ease((i-6)/12),bars=60,lab='TIÊN ☯ MA',lal=ease((i-6)/12))
-            await shoot('s7',240,s7)
+                js=hide_on()+"const D=__demo,B=D.BF;D.hero.hp=D.hero.max;D.hero.mp=1e6;"
+                js+=f"D.setView({3.14+0.5-i*.004},{0.42-i*.0008},{30-i*.05});"
+                if i%9==0:
+                    sid=ids[(i//9)%len(ids)]
+                    js+=f"{{const al=B.sol.filter(o=>!o.dead);const o=al[Math.floor(Math.random()*al.length)];if(o)D.castAt('{sid}',o.x,o.z)}}"
+                if i%25==5:
+                    js+=f"D.hero.face=Math.PI;D.castCP('{ids[(i//25)%len(ids)]}',false);"
+                return js+ov(a='CHIẾN TRƯỜNG TIÊN MA',b='20:00 mỗi tối · 100 đấu 100 · bản đồ 3 đường · phá Linh Tinh địch',al=ease((i-6)/12),bars=60,lab='TIÊN ☯ MA',lal=ease((i-6)/12))
+            await shoot('s7',300,s7)
         # S8 (4s) kết
         if 's8' in which:
             await ev("const h=__demo.heroPos();h.set(40,h.y,262);__step(5,33)")
