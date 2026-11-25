@@ -21,7 +21,7 @@ OVL = r"""
 (()=>{const st=document.createElement('style');st.textContent=`
 @font-face{font-family:PF;src:url(pf/playfair-display-latin-900-normal.woff2)}@font-face{font-family:PF;src:url(pf/playfair-display-vietnamese-900-normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}
 @font-face{font-family:NS;src:url(pf/noto-serif-latin-900-normal.woff2)}@font-face{font-family:NS;src:url(pf/noto-serif-vietnamese-900-normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}
-.ui,#chat,#wchat,#quest,#hint,#pkbar,#mm,#cpbar,#skills,#bars,#atkb,#tl,#menu,#fab,#joy,#srvan,#tutb,#tribb,#hud,#topbar,#npcp,#invw,.fab,#rank,#bagb{visibility:hidden!important}
+.lab .nm,.lab .tt,.lab .hp,.glab,#hbb,#cpbar,#inv,.ui,#chat,#wchat,#quest,#hint,#pkbar,#mm,#cpbar,#skills,#bars,#atkb,#tl,#menu,#fab,#joy,#srvan,#tutb,#tribb,#hud,#topbar,#npcp,#invw,.fab,#rank,#bagb{visibility:hidden!important}
 #pv{position:fixed;inset:0;z-index:99999;pointer-events:none;font-family:PF,serif;color:#fff}
 #pv .bar{position:absolute;left:0;right:0;height:0;background:#000}#pv .t{position:absolute;left:0;right:0;text-align:center;text-shadow:0 0 22px rgba(255,150,40,.9),0 3px 6px #000}
 #pv .big{font-size:84px;letter-spacing:4px;background:linear-gradient(#fff6d0,#ffd36b 45%,#b8701c);-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 0 14px rgba(255,140,30,.8)) drop-shadow(0 4px 3px #000)}
@@ -75,7 +75,7 @@ async def main():
 
         # S0: dark story intro (4s)
         if 's0' in which:
-            await ev("const h=__demo.heroPos();h.set(-30,h.y,120);__step(20,33)")
+            await ev("const h=__demo.heroPos();h.set(-60,h.y,250);__step(20,33)")
             def s0(i,n):
                 t=i/n
                 if i<60: a,b=('Ngày Huyền Giới đại loạn…',''); al=ease(i/15)*ease((58-i)/10)
@@ -85,7 +85,7 @@ async def main():
             await shoot('s0',120,s0)
         # S1: aerial flyover + title (5s)
         if 's1' in which:
-            await ev("const h=__demo.heroPos();h.set(0,h.y,150);__step(20,33)")
+            await ev("const h=__demo.heroPos();h.set(40,h.y,262);__step(20,33)")
             def s1(i,n):
                 t=i/n; a=ease((i-25)/20); s=1.15-.15*ease(i/40)
                 return f"__demo.setView({-0.6+t*1.4},{0.5-t*0.18},{70-t*35});" + ov(a='HUYỀN KIẾM TIÊN ĐỒ',b='Game tu tiên 3D · chơi ngay trên điện thoại',c1='big',c2='sub',y1=36,y2=56,al=a,al2=ease((i-55)/20),sc=s,bars=70, fl=max(0,1-i/12)*0)
@@ -139,7 +139,7 @@ async def main():
             await shoot('s6',135,s6)
         # S7: end card (4.5s)
         if 's7' in which:
-            await ev("const h=__demo.heroPos();h.set(0,h.y,150);__step(5,33)")
+            await ev("const h=__demo.heroPos();h.set(40,h.y,262);__step(5,33)")
             def s7(i,n):
                 return f"__demo.setView({1.2+i*0.004},0.55,{80});"+ov(a='HUYỀN KIẾM TIÊN ĐỒ',b='Chơi miễn phí ngay: chungkhoanhuynguyen.com/thienkiemmon',c1='big',c2='sub',y1=34,y2=56,al=ease(i/15),bars=90)
             await shoot('s7',135,s7)
