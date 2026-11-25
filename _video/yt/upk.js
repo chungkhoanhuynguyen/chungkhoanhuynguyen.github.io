@@ -12,7 +12,7 @@ window.__KP=async(i)=>{const S=ms=>new Promise(r=>setTimeout(r,ms));
  const vb=await fetch(p.url).then(r=>r.blob());if(vb.size<3e5)return 'ERR mp4 '+vb.size;
  for(let k=0;k<3;k++){const c=[...document.querySelectorAll('ytcp-button,button')].find(x=>/^Đóng$/.test(x.innerText.trim())&&x.offsetParent);if(!c)break;c.click();await S(1200);}
  let D=document.querySelector('ytcp-uploads-dialog');
- if(!D||!D.offsetParent){(document.querySelector('#upload-icon')||document.querySelector('#create-icon'))?.click();await S(1500);
+ if(!D||!D.offsetParent){(document.querySelector('#upload-icon')||[...document.querySelectorAll('ytcp-button,button')].find(x=>x.offsetParent&&x.innerText.trim()==='Tạo'))?.click();await S(1500);
   const up=[...document.querySelectorAll('tp-yt-paper-item')].find(x=>/Tải video lên/.test(x.innerText));if(up)up.click();await S(2000);D=document.querySelector('ytcp-uploads-dialog');}
  let inp=D&&D.querySelector('input[type=file]');
  if(!inp){location.href=location.pathname.split('/').slice(0,3).join('/')+'/videos/upload?d=ud';return 'ERR mo hop thoai tai len that bai – trang da tai lai, dan lai upk.js roi chay tiep tu '+i;}const dt=new DataTransfer();dt.items.add(new File([vb],p.key+'.mp4',{type:'video/mp4'}));inp.files=dt.files;inp.dispatchEvent(new Event('change',{bubbles:true}));
