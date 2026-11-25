@@ -14,7 +14,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        scene: [s0, s1, s2, s3, s4, s5, s6, s7]
+        scene: [s0, s1, s2, s3, s4, s5, s6, s7, s8]
     steps:
       - uses: actions/checkout@v4
         with:
@@ -53,7 +53,7 @@ jobs:
           pip install -q numpy
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
           python3 _promo/hktd/music.py
-          for s in s0 s1 s2 s3 s4 s5 s6 s7; do echo "file 'parts/$s.mp4'" >> list.txt; done
+          for s in s0 s1 s2 s3 s4 s5 s6 s7 s8; do echo "file 'parts/$s.mp4'" >> list.txt; done
           ffmpeg -y -loglevel error -f concat -safe 0 -i list.txt -c copy v.mp4
           ffmpeg -y -loglevel error -i v.mp4 -i music.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -shortest hktd_promo.mp4
           ffmpeg -y -loglevel error -i hktd_promo.mp4 -vf scale=1280:720 -c:v libx264 -crf 24 -preset veryfast -c:a copy hktd_promo_720.mp4

@@ -1,7 +1,8 @@
 import numpy as np, wave
 SR = 44100
-SHIFT = 4.0
-DUR = 40.5 + SHIFT
+SHIFT = 0.0
+BND = [0, 4, 8, 13, 21, 26, 34, 40, 48, 52]
+DUR = BND[-1] + .5
 N = int(SR * DUR)
 L = np.zeros(N); R = np.zeros(N)
 rng = np.random.default_rng(7)
@@ -81,24 +82,24 @@ SC = [0, 3, 5, 7, 10, 12, 15, 17, 19, 22, 24]
 def sc(i, base=62): return base + SC[i % len(SC)] + 12 * (i // len(SC))
 
 # --- arrangement ---
-# intro 0-5: drone + plucks + riser + hit at 5
-add(pad([38, 45, 50], 5.2, .22), 0)
-for k, n in enumerate([0, 2, 3, 4, 3, 5, 4, 6]):
-    add(pluck(sc(n), 1.2), .2 + k * .55, pan=(-.4 if k % 2 else .4))
-add(riser(2.2, .35), 2.8)
-add(taiko(1, True), 0.0, g=.8)
-add(boom(1.1), 5.0)
-
-# main groove 5 - 35.5
+# 0-4 tối: drone + tim đập + riser; 4-8 tên game: plucks + boom
+_add(pad([26, 33, 38], 4.4, .3), 0)
+for k, at in enumerate([0.3, 0.7, 1.5, 1.9, 2.7, 3.1]): _add(taiko(.7 if k % 2 == 0 else .45), at)
+_add(riser(1.6, .4), 2.4)
+_add(boom(1.2), 4.0); _add(taiko(1, True), 4.0)
+add(pad([38, 45, 50], 4.2, .2), 4.0)
+for k, n in enumerate([0, 2, 3, 4, 3, 5, 4, 6]): add(pluck(sc(n), 1.2), 4.1 + k * .48, pan=(-.4 if k % 2 else .4))
+add(riser(1.4, .3), 6.6)
 melody = [(0, 1), (2, .5), (3, .5), (4, 1), (3, .5), (2, .5), (3, 2), (5, 1), (4, .5), (3, .5), (2, 1), (0, 1), (1, 2),
           (4, 1), (5, .5), (6, .5), (7, 1.5), (6, .5), (5, 1), (4, 1), (3, 2), (2, .5), (3, .5), (4, 1), (2, 1), (0, 2)]
 bassline = [D3 - 12, D3 - 12, D3 - 14, D3 - 9, D3 - 12, D3 - 12, D3 - 7, D3 - 9]
-t = 5.0; bar = 0
-while t < 35.4:
-    heavy = 19 <= t < 26
+END = BND[-2]
+t = 8.0; bar = 0
+while t < END - .05:
+    heavy = BND[6] <= t < BND[8]
     for b in range(4):
         tb = t + b * B
-        if tb >= 35.4: break
+        if tb >= END - .05: break
         add(taiko(.9), tb, g=1.0 if b in (0, 2) else .55)
         if b in (1, 3): add(snare(.45 if heavy else .3), tb)
         if heavy: add(taiko(.5), tb + B / 2, g=.5)
@@ -107,32 +108,22 @@ while t < 35.4:
         for s16 in range(4):
             add(bass(bn + (12 if s16 == 2 else 0), B / 4 * .9, .32, 3.0 if heavy else 1.4), tb + s16 * B / 4)
     ch = [[50, 57, 62], [48, 55, 60], [46, 53, 58], [45, 52, 57]][bar % 4]
-    add(pad(ch, 2.05, .14 if t > 11 else .08), t, pan=0)
+    add(pad(ch, 2.05, .13), t)
     bar += 1; t += 4 * B
-# lead melody from 7s
-tm = 7.0; mi = 0
-while tm < 35:
+tm = 9.0; mi = 0
+while tm < END - .3:
     n, d = melody[mi % len(melody)]; d *= B * 2
-    add(erhu(sc(n, 74), min(d, 35.4 - tm), .2, bend=-.03), tm, pan=-.15)
+    add(erhu(sc(n, 74), min(d, END - tm), .2, bend=-.03), tm, pan=-.15)
     tm += d; mi += 1
-# accents on cuts
-for at in [11, 13, 15, 17]:
-    add(taiko(1, True), at, g=.9); add(boom(.5), at)
-add(riser(1.6, .3), 17.4)
-add(boom(1.2), 19.0)
-add(boom(1.3), 21.07); add(taiko(1, True), 21.07)
-add(boom(.9), 26.0)
-for at in [31.0, 31.9, 32.7, 33.6, 34.4]: add(thunder(.5), at, pan=rng.uniform(-.5, .5))
-add(riser(2.0, .35), 33.5)
-# finale
-add(boom(1.4), 35.5); add(taiko(1, True), 35.5)
-add(pad([38, 45, 50, 57, 62], 5.0, .25), 35.5)
-for k, n in enumerate([4, 5, 6, 8]): add(pluck(sc(n), 2.0, .3), 35.6 + k * .3, pan=(k - 1.5) / 3)
+for at in BND[2:-1]: add(boom(.9), at); add(taiko(1, True), at, g=.9)
+for at in [BND[3] + 2, BND[3] + 4, BND[3] + 6]: add(taiko(1, True), at, g=.8)
+for k in range(6): add(thunder(.5), BND[5] + 2 + k * 1.05, pan=rng.uniform(-.5, .5))
+add(boom(1.3), BND[6] + 50 / 30)
+add(riser(2.0, .35), END - 2)
+add(boom(1.4), END); add(taiko(1, True), END)
+add(pad([38, 45, 50, 57, 62], 4.5, .25), END)
+for k, n in enumerate([4, 5, 6, 8]): add(pluck(sc(n), 2.0, .3), END + .1 + k * .3, pan=(k - 1.5) / 3)
 
-# --- dark intro 0-4s: drone + heartbeat + riser
-_add(pad([26, 33, 38], 4.4, .3), 0)
-for k, at in enumerate([0.3, 0.7, 1.5, 1.9, 2.7, 3.1]): _add(taiko(.7 if k % 2 == 0 else .45), at)
-_add(riser(1.6, .4), 2.4)
 # --- reverb (simple stereo convolution) ---
 def rev(x, seed):
     r = np.random.default_rng(seed); d = int(SR * 1.8)
