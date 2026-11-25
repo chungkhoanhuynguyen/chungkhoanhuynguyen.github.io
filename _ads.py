@@ -17,6 +17,25 @@ print("gan adsense", n, "trang")
 
 # PostHog (đo khách, 17/11/2026): gắn /ph.js mọi trang + mở CSP cho PostHog EU.
 PH = '<script src="/ph.js" defer></script>\n'
+PA, PC = "https://eu-assets.i.posthog.com", "https://eu.i.posthog.com"
+def csp_ph(s):
+    """(25/11 QL1) Bản cũ chỉ vá khi thấy đúng chuỗi "script-src 'self'" và bỏ qua trang đã có posthog ở connect-src
+    → 556/814 trang (mã CP, F0, bài học, mở tài khoản…) bị CSP chặn PostHog, không đo được khách. Giờ vá theo từng chỉ thị."""
+    m = re.search(r'(<meta http-equiv="Content-Security-Policy" content=")([^"]*)(")', s)
+    if not m: return s
+    ds = [x.strip() for x in m.group(2).split(';') if x.strip()]
+    d = {x.split()[0]: x.split()[1:] for x in ds}; order = [x.split()[0] for x in ds]
+    sc = [v for v in d.get('script-src', ["'self'"]) if v != "'none'"]
+    for v in ("'self'", PA):
+        if v not in sc: sc.append(v)
+    cn = [v for v in d.get('connect-src', ["'self'"]) if v != "'none'"]
+    for v in ("'self'", PC, PA):
+        if v not in cn: cn.append(v)
+    for k, v in (('script-src', sc), ('connect-src', cn)):
+        if k not in d: order.insert(1, k)
+        d[k] = v
+    out = '; '.join(k + (' ' + ' '.join(d[k]) if d[k] else '') for k in order)
+    return s[:m.start(2)] + out + s[m.end(2):]
 m = 0
 for d, ds, fs in os.walk(ROOT):
     ds[:] = [x for x in ds if not x.startswith(('.', '_')) and x != 'node_modules']
@@ -24,7 +43,6 @@ for d, ds, fs in os.walk(ROOT):
         if not f.endswith('.html'): continue
         p = os.path.join(d, f); s = open(p, encoding='utf-8', errors='ignore').read(); s0 = s
         if '/ph.js' not in s and '</head>' in s: s = s.replace('</head>', PH + '</head>', 1)
-        if 'Content-Security-Policy' in s and 'eu.i.posthog.com' not in s:
-            s = s.replace("script-src 'self'", "script-src 'self' https://eu-assets.i.posthog.com", 1).replace("connect-src 'self'", "connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com", 1)
+        s = csp_ph(s)
         if s != s0: open(p, 'w', encoding='utf-8').write(s); m += 1
 print("gan posthog", m, "trang")

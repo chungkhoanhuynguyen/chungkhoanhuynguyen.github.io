@@ -235,5 +235,11 @@ jobs:
             sleep $((RANDOM % 20 + 5))
           done
           cd /tmp/vo
+          # (25/11 QL1) Lô CH0612CM, CH0712HP mất Release: dựng lại ra thư mục rỗng nhưng bước này vẫn XOÁ Release cũ rồi tạo hỏng (|| true che lỗi).
+          # Giờ: không có mp4 thì DỪNG, giữ nguyên Release cũ; chỉ gom file có thật; tạo hỏng thì báo đỏ.
+          shopt -s nullglob
+          F=(/tmp/vo/$B/*.mp4 /tmp/vo/$B/*.png /tmp/vo/$B/*.txt /tmp/vo/$B/*.srt /tmp/vo/$B/*.json)
+          M=(/tmp/vo/$B/*.mp4)
+          if [ ${#M[@]} -eq 0 ]; then echo "::error::Lô $B không có mp4 – giữ Release cũ, không xoá"; exit 1; fi
           gh release delete "video-$B" -y -R ${{ github.repository }} 2>/dev/null || true
-          gh release create "video-$B" -R ${{ github.repository }} -t "Video $B" -n "Lô $B" /tmp/vo/$B/*.mp4 /tmp/vo/$B/*.png /tmp/vo/$B/*.txt /tmp/vo/$B/*.srt /tmp/vo/$B/*.json || true
+          gh release create "video-$B" -R ${{ github.repository }} -t "Video $B" -n "Lô $B" "${F[@]}"

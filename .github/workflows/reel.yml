@@ -76,5 +76,8 @@ jobs:
       - env: {GH_TOKEN: "${{ github.token }}"}
         run: |
           B="${{ needs.plan.outputs.batch }}"
+          shopt -s nullglob
+          F=(art/*.mp4 art/*.png art/*.txt); M=(art/*.mp4)
+          if [ ${#M[@]} -eq 0 ]; then echo "::error::Lô $B không có mp4 – giữ Release cũ, không xoá"; exit 1; fi
           gh release delete "reel-$B" -y -R ${{ github.repository }} 2>/dev/null || true
-          gh release create "reel-$B" -R ${{ github.repository }} -t "Reel $B" -n "Reel dọc lô $B" art/*.mp4 art/*.png art/*.txt || true
+          gh release create "reel-$B" -R ${{ github.repository }} -t "Reel $B" -n "Reel dọc lô $B" "${F[@]}"
