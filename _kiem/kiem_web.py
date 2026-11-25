@@ -25,6 +25,14 @@ for p in pages:
     elif len(html.unescape(d.group(1))) > 165: canh.append(f"{rel}: mô tả dài {len(d.group(1))} ký tự")
     if len(tt) > 70: canh.append(f"{rel}: tiêu đề dài {len(tt)} ký tự")
     if 'rel="canonical"' not in s: canh.append(f"{rel}: thiếu canonical")
+    # (25/11 QL1) 556 trang từng bị CSP chặn PostHog mà không ai biết → không đo được khách
+    m = re.search(r'http-equiv="Content-Security-Policy" content="([^"]*)"', s)
+    if m and '/ph.js' in s:
+        sc = re.search(r"script-src([^;]*)", m.group(1)); cn = re.search(r"connect-src([^;]*)", m.group(1))
+        if not sc or "eu-assets.i.posthog.com" not in sc.group(1) or "'none'" in sc.group(1) or not cn or "eu.i.posthog.com" not in cn.group(1):
+            loi.append(f"{rel}: CSP chặn PostHog (chạy python _ads.py)")
+    # (25/11) thương hiệu chìm: chỉ 1 lớp – không vừa lớp toàn trang #wm vừa lớp từng khung
+    if rel in ("/index.html", "index.html") and '.mw::after' in s and re.search(r'#wm\{(?!display:none)', s): loi.append(f"{rel}: 2 lớp chữ thương hiệu chồng nhau")
     titles.setdefault(tt, []).append(rel)
 for t, ps in titles.items():
     if len(ps) > 1: canh.append(f"trùng tiêu đề '{t[:50]}': {', '.join(ps[:3])}")
