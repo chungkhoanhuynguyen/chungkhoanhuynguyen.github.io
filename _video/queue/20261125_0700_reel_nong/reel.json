@@ -34,9 +34,21 @@
     "chu_to": "NGÂN HÀNG TIN VÀO MIẾNG ĐẤT",
     "loi": "Ngân hàng dám cho vay vì tin một điều: khách không trả được nợ thì vẫn còn miếng đất thế chấp. Nhưng hãy xem miếng đất đó bán được bao nhiêu.",
     "loi_doc": "Ngân hàng dám cho vay vì tin một điều: khách không trả được nợ thì vẫn còn miếng đất thế chấp. Nhưng hãy xem miếng đất đó bán được bao nhiêu.",
-    "anh": [
-     "house keys contract||real estate keys"
-    ]
+    "anh": [],
+    "the": {
+     "loai": "chuoi",
+     "tieu": "NGÂN HÀNG CHO VAY VÌ TIN",
+     "buoc": [
+      "DOANH NGHIỆP VAY TIỀN",
+      "THẾ CHẤP MIẾNG ĐẤT",
+      "KHÔNG TRẢ ĐƯỢC THÌ BÁN ĐẤT"
+     ],
+     "mau": [
+      "tim",
+      "tim",
+      "vang"
+     ]
+    }
    },
    {
     "chu_to": "103,55 TỶ",
@@ -67,99 +79,80 @@
     "chu_to": "CÒN 52,1 TỶ",
     "loi": "Đến nay, Agribank vừa hạ giá khởi điểm xuống chỉ còn khoảng năm mươi hai tỷ đồng, mất gần một nửa. Một khoản nợ tưởng có đủ tài sản, giờ chỉ thu về được khoảng một nửa.",
     "loi_doc": "Đến nay, A gờ ri banh vừa hạ giá khởi điểm xuống chỉ còn khoảng năm mươi hai tỷ đồng, mất gần một nửa. Một khoản nợ tưởng có đủ tài sản, giờ chỉ thu về được khoảng một nửa.",
-    "anh": [
-     "auction gavel||auction"
-    ],
+    "anh": [],
     "the": {
-     "loai": "lon",
-     "tieu": "CÙNG KHỐI TÀI SẢN SAU 1 NĂM",
-     "nguon": "Báo Pháp Luật VN 11/10/2026",
-     "dong": [
-      [
-       "103,55 » 52,1 TỶ",
-       96,
-       "vang"
-      ],
-      [
-       "MẤT GẦN MỘT NỬA",
-       50,
-       "do"
-      ]
-     ]
+     "loai": "giam",
+     "tieu": "NHÀ MÁY NƯỚC CẦN GIỜ · 12.809 M²",
+     "nguon": "Báo Đấu thầu · Báo Pháp Luật VN",
+     "a": [
+      "10/2025",
+      103.55
+     ],
+     "b": [
+      "10/2026",
+      52.1
+     ],
+     "dv": " TỶ",
+     "dau": "MẤT GẦN MỘT NỬA"
     }
    },
    {
     "chu_to": "KHÔNG CHỈ AGRIBANK",
     "loi": "Mà đây không phải chuyện riêng của Agribank. HDBank đã thu giữ hai mươi sáu thửa đất của Địa ốc Hoàng Quân để xử lý khoản nợ gần chín trăm tỷ đồng.",
     "loi_doc": "Mà đây không phải chuyện riêng của A gờ ri banh. Hát đê banh đã thu giữ hai mươi sáu thửa đất của Địa ốc Hoàng Quân để xử lý khoản nợ gần chín trăm tỷ đồng.",
-    "anh": [
-     "vacant land||empty land plot"
-    ],
+    "anh": [],
     "the": {
-     "loai": "lon",
+     "loai": "dem",
      "tieu": "HDBANK THU GIỮ TÀI SẢN",
      "nguon": "24HMoney · Báo Đầu tư 9/2026",
-     "dong": [
-      [
-       "26 THỬA ĐẤT",
-       96,
-       "vang"
-      ],
-      [
-       "DƯ NỢ ~895 TỶ · ĐỊA ỐC HOÀNG QUÂN",
-       40,
-       "trang"
-      ]
-     ]
+     "n": 26,
+     "to": "26 THỬA ĐẤT",
+     "phu": "DƯ NỢ ~895 TỶ · ĐỊA ỐC HOÀNG QUÂN"
     }
    },
    {
     "chu_to": "NỢ XẤU 2,12%",
     "loi": "Đất khó bán thì nợ xấu khó xử lý. Cuối quý ba, nợ xấu của hai mươi bảy ngân hàng niêm yết lên khoảng hai phẩy một phần trăm. Tính trên hai mươi tám ngân hàng, nợ xấu đã vượt ba trăm bốn mươi nghìn tỷ đồng, tăng nhanh gấp đôi tốc độ cho vay.",
     "loi_doc": "Đất khó bán thì nợ xấu khó xử lý. Cuối quý ba, nợ xấu của hai mươi bảy ngân hàng niêm yết lên khoảng hai phẩy một phần trăm. Tính trên hai mươi tám ngân hàng, nợ xấu đã vượt ba trăm bốn mươi nghìn tỷ đồng, tăng nhanh gấp đôi tốc độ cho vay.",
-    "anh": [
-     "Vietnamese dong banknotes||Vietnam banknotes"
-    ],
+    "anh": [],
     "the": {
-     "loai": "lon",
-     "tieu": "NỢ XẤU NGÂN HÀNG 30/9/2026",
-     "nguon": "SHS · VCCI",
-     "dong": [
+     "loai": "cot",
+     "tieu": "NỢ XẤU 27 NGÂN HÀNG NIÊM YẾT",
+     "nguon": "SHS qua Việt Báo · VCCI",
+     "hang": [
       [
-       "1,87% LÊN 2,12%",
-       90,
-       "do"
+       "CUỐI 2025",
+       1.87
       ],
       [
-       "> 340.000 TỶ · +26,9%",
-       50,
-       "trang"
+       "30/9/2026",
+       2.12
       ]
-     ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "%",
+     "max": 2.6
     }
    },
    {
     "chu_to": "ĐÁNG LO HƠN: NỢ NHÓM 2",
     "loi": "Nhưng con số em thấy đáng lo hơn là nợ nhóm hai, tức các khoản trễ hạn dưới chín mươi ngày. Chưa bị gọi là nợ xấu, nhưng đây là cửa dẫn vào nợ xấu, và nhóm nợ này vừa tăng lên khoảng một phẩy sáu phần trăm.",
     "loi_doc": "Nhưng con số em thấy đáng lo hơn là nợ nhóm hai, tức các khoản trễ hạn dưới chín mươi ngày. Chưa bị gọi là nợ xấu, nhưng đây là cửa dẫn vào nợ xấu, và nhóm nợ này vừa tăng lên khoảng một phẩy sáu phần trăm.",
-    "anh": [
-     "house keys contract||real estate keys"
-    ],
+    "anh": [],
     "the": {
-     "loai": "lon",
-     "tieu": "NỢ NHÓM 2 · QUÝ 3/2026",
-     "nguon": "SSI Research qua Báo Đấu thầu",
-     "dong": [
-      [
-       "1,63%",
-       110,
-       "do"
-      ],
-      [
-       "+0,17 ĐIỂM % SO VỚI QUÝ 2",
-       44,
-       "trang"
-      ]
+     "loai": "pheu",
+     "tieu": "CỬA DẪN VÀO NỢ XẤU",
+     "nguon": "SSI Research qua Báo Đấu thầu · SHS",
+     "tren": [
+      "NỢ NHÓM 2",
+      "1,63%",
+      "TRỄ HẠN DƯỚI 90 NGÀY"
+     ],
+     "duoi": [
+      "NỢ XẤU",
+      "2,12%"
      ]
     }
    },
@@ -167,25 +160,18 @@
     "chu_to": "BỘ ĐỆM CÒN 74%",
     "loi": "Ở nhiều ngân hàng, nhà đất chiếm trên bảy mươi phần trăm tài sản thế chấp. Trên giấy thì đủ, đem bán thật có khi chỉ còn một nửa, phần hụt ngân hàng phải tự gánh bằng dự phòng. Mà bộ đệm dự phòng chỉ còn bảy mươi tư phần trăm nợ xấu.",
     "loi_doc": "Ở nhiều ngân hàng, nhà đất chiếm trên bảy mươi phần trăm tài sản thế chấp. Trên giấy thì đủ, đem bán thật có khi chỉ còn một nửa, phần hụt ngân hàng phải tự gánh bằng dự phòng. Mà bộ đệm dự phòng chỉ còn bảy mươi tư phần trăm nợ xấu.",
-    "anh": [
-     "safe deposit boxes||bank vault"
-    ],
+    "anh": [],
     "the": {
-     "loai": "lon",
-     "tieu": "TỶ LỆ BAO PHỦ NỢ XẤU",
+     "loai": "dong_ho",
+     "tieu": "BỘ ĐỆM DỰ PHÒNG NỢ XẤU",
      "nguon": "SHS · VnBusiness",
-     "dong": [
-      [
-       "27 NH: CÒN 74%",
-       80,
-       "vang"
-      ],
-      [
-       "TECHCOMBANK: 128% XUỐNG 107%",
-       46,
-       "trang"
-      ]
-     ]
+     "a": 128,
+     "b": 107,
+     "dv": "%",
+     "max": 150,
+     "moc": 100,
+     "nhan": "TECHCOMBANK",
+     "phu": "27 NGÂN HÀNG: CÒN 74%"
     }
    }
   ]
