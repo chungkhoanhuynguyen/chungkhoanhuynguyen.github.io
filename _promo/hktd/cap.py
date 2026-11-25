@@ -67,7 +67,12 @@ async def main():
             for i in range(n):
                 js = per(i, n)
                 await pg.evaluate("js=>{try{(new Function(js))()}catch(e){console.log(e)};__step(1,1000/30)}", js)
-                if i % STRIDE == 0: await pg.screenshot(path=f'{OUT}/{scene}/{i:04d}.jpg', type='jpeg', quality=92, timeout=120000)
+                if i % STRIDE == 0:
+                    for _try in range(4):
+                        try:
+                            await pg.screenshot(path=f'{OUT}/{scene}/{i:04d}.jpg', type='jpeg', quality=92, timeout=90000); break
+                        except Exception as ex:
+                            print('retry shot', i, ex, flush=True); await asyncio.sleep(3)
             print(scene, 'done', flush=True)
         async def ev(js):
             await pg.evaluate("js=>{(new Function(js))()}", js)
