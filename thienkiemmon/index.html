@@ -1145,10 +1145,10 @@ function updDrops(dt){const hp=heroPos();for(let i=drops.length-1;i>=0;i--){cons
 
 /* chết thì rơi đồ dần dần tại chỗ — phải quay lại nhặt, người khác có thể nhặt đem bày sạp */
 function deathDrop(mode){if(INT.in||(PK.safe>0&&mode!=='all'))return;const p=heroPos().clone(),heavy=mode==='all',EQP=heavy?.4:.2,EQMAX=heavy?3:1,BAGP=heavy?.4:.2;/* chết rơi một phần: đồ đang mặc mỗi món có tỉ lệ rơi (tối đa 1 món, độ kiếp/chiến trường tối đa 3), túi rơi khoảng 1/5, linh thạch 30% */
- const eqDrop=[];Object.keys(INV.eq).sort(()=>Math.random()-.5).forEach(k=>{const it=INV.eq[k];if(it&&eqDrop.length<EQMAX&&Math.random()<EQP){INV.bag.push(it);INV.eq[k]=null;eqDrop.push(it)}});
+ const KP=it=>Math.max(.12,1-(it.tier|0)*.11-(it.star|0)*.03-(it.plus|0)*.035);/* đồ càng mạnh (phẩm, sao, +) càng khó rơi */const eqDrop=[];Object.keys(INV.eq).sort(()=>Math.random()-.5).forEach(k=>{const it=INV.eq[k];if(it&&eqDrop.length<EQMAX&&Math.random()<EQP*KP(it)){INV.bag.push(it);INV.eq[k]=null;eqDrop.push(it)}});
  if(eqDrop.some(it=>it.slot==='weapon')){equipWeapon(TU.tong==='ma'?'phien':'jian',true);LOOK.glow=null}try{applyGlow();updFabao()}catch(er){}
  const bagOnly=INV.bag.filter(it=>!eqDrop.includes(it)),nb=bagOnly.length?Math.max(1,Math.round(bagOnly.length*BAGP)):0,lost=Math.floor(TU.stone*(heavy?.5:.3));
- TU.stone-=lost;refreshTL();const picks=eqDrop.slice(),cand=bagOnly.slice();for(let i=0;i<nb&&cand.length;i++){const k=Math.floor(Math.random()*cand.length);picks.push(cand.splice(k,1)[0])}
+ TU.stone-=lost;refreshTL();const picks=eqDrop.slice(),cand=bagOnly.slice();for(let i=0;i<nb&&cand.length;i++){const ws=cand.map(KP),tw=ws.reduce((a,b)=>a+b,0);let r=Math.random()*tw,k=0;while(k<cand.length-1&&(r-=ws[k])>0)k++;if(Math.random()>KP(cand[k])*1.4)continue;picks.push(cand.splice(k,1)[0])}
  if(picks.length)chat('<b style="color:#ff6a5a">Rơi '+picks.length+' món đồ'+(eqDrop.length?' (trong đó '+eqDrop.length+' món đang mặc)':'')+' tại chỗ ngã xuống!</b>','k');picks.forEach((it,i)=>setTimeout(()=>{const j=INV.bag.indexOf(it);if(j<0)return;INV.bag.splice(j,1);saveINV();const a=i/Math.max(1,picks.length)*6.283*2.3,r=1.5+i*.18,dp=new T.Vector3(p.x+Math.cos(a)*r,p.y,p.z+Math.sin(a)*r);dropItem(dp,it,'lost');ground[ground.length-1].mine=1;const gid=p2pUid()+'-'+Date.now()+'-'+i;const gg=ground[ground.length-1];gg.gid=gid;if(typeof p2pDrops==='function')p2pDrops([{gid,it,x:gg.m.position.x,z:gg.m.position.z}]);if(it.tier>=4){const q=p.clone();q.y+=2;boom(q,14,[2.4,2,1],5,.5,.4,-1)}},200+i*90));
  if(lost>0){chat('<b style="color:#ff6a5a">Rơi '+lost+' linh thạch tại chỗ!</b> Gửi Bảo Khố trong thành để giữ của.','k')}if(lost>0)for(let i=0;i<5;i++)setTimeout(()=>{sfx('coin');const m=new T.Mesh(dropGeo,new T.MeshStandardMaterial({color:0x7fd8ff,emissive:0x7fd8ff,emissiveIntensity:.8}));m.position.copy(p).add(new T.Vector3(R()*2,.6,R()*2));scene.add(m);drops.push({m,k:'stone',n:Math.floor(lost/5)+(i===4?lost%5:0),t:-3,lost:1})},300+i*500);
  if(picks.length||lost){LOSTAT={x:p.x,z:p.z,t:180};GARR.lost=1;setTimeout(()=>chat('Đồ rơi ở chỗ ngã xuống — chạm dòng nhiệm vụ hoặc nút <b>Chỉ đường</b> để mũi tên dẫn về nhặt lại!','s'),4000)}}
@@ -1417,7 +1417,7 @@ const TONGW=Object.fromEntries(Object.entries(TSIG).map(([k,v])=>[k,[...new Set(
 const FBK={phikiem:'Canh Kim Phi Kiếm',holo:'Thanh Mộc Hồ Lô',kinh:'Liệt Hỏa Bát Quái Kính',chung:'Hậu Thổ Đông Hoàng Chung',chau:'Huyền Thủy Định Hải Châu'};
 const FBE={phikiem:['kim','#ffe08a'],holo:['moc','#4fe07a'],kinh:['hoa','#ff5a2a'],chung:['tho','#d89a50'],chau:['thuy','#4ab8ff']};
 const INV={bag:[],eq:{},nid:1};try{Object.assign(INV,JSON.parse(localStorage.getItem('tkm_inv')||'{}'))}catch(e){}if(INV.eq.ring&&!INV.eq.ring1){INV.eq.ring1=INV.eq.ring}delete INV.eq.ring;/* bỏ cung: đồ cũ đổi thành kiếm */[...INV.bag,...Object.values(INV.eq)].forEach(it=>{if(it&&it.kind==='bow'){it.kind='jian';it.name=(it.name||'').replace(/Thần Cung|Cung/g,'Kiếm')}});
-const saveINV=()=>{try{localStorage.setItem('tkm_inv',JSON.stringify(INV))}catch(e){}};
+const saveINV=()=>{try{localStorage.setItem('tkm_inv',JSON.stringify(INV))}catch(e){}};try{if(!INV.bal){INV.bal=1;[...Object.values(INV.eq||{}),...(INV.bag||[])].forEach(it=>{if(it){it.atk=Math.round((it.atk||0)*.6);it.def=Math.round((it.def||0)*.6)}});saveINV()}}catch(e){}
 const starStr=n=>'★'.repeat(Math.max(0,n))+'☆'.repeat(Math.max(0,5-n));
 function tierCss(t){return t===6?'background:linear-gradient(90deg,#ff6a6a,#ffd36b,#7fffb0,#7fd8ff,#d6a3ff);-webkit-background-clip:text;background-clip:text;color:transparent':'color:'+TIERS[t][1]}
 var PHV=null;var PV=[
@@ -1428,7 +1428,7 @@ var PHV=null;var PV=[
  {n:'Phệ Hồn Cốt Phiên',c:['#e0d4b8','#6a5e48'],sym:'skull',sc:'#3a0008',gl:0xff4020,mt:0xe8dcc0,top:'skull',sh:0xd8ccb0,tl:0x2a2a2a,ey:0xff4020,w:.8,h:1.3,bone:1},
  {n:'Huyết Nguyệt Ma Phiên',c:['#40000e','#0a0004'],sym:'moon',sc:'#ff4060',gl:0xff2050,mt:0xffd36b,top:'crescent',sh:0x1a0408,tl:0xc01030,ey:0xff3050,w:.95,h:1.5}];
 function mkItem(tier,slot){slot=slot||pick(['weapon','robe','pants','boots','belt','neck','ring','ring','fabao']);let tong=null;if(slot==='weapon'&&(TU.tong==='ma'||Math.random()<.6))tong=TU.tong&&Math.random()<.55?TU.tong:pick(Object.keys(TONG));let sig=tong?pick(TSIG[tong]):null;let kind=slot==='weapon'?(sig?sig[0]:pick(Object.keys(WEAPONS).filter(k=>k!=='phien'))):slot==='fabao'?pick(Object.keys(FBK)):slot;const star=1+Math.floor(Math.pow(Math.random(),2.2)*5);
- const base=sig?sig[1]:WEAPONS[kind]?WEAPONS[kind][0]:FBK[kind]||SLOTS[slot];const m=(1+star*.12),A=k=>Math.round((8+tier*tier*6)*m*k),D=k=>Math.round((6+tier*tier*8)*m*k);
+ const base=sig?sig[1]:WEAPONS[kind]?WEAPONS[kind][0]:FBK[kind]||SLOTS[slot];const m=(1+star*.12),A=k=>Math.round((8+tier*tier*6)*m*k*.6),D=k=>Math.round((6+tier*tier*8)*m*k*.6);
  const it={id:INV.nid++,slot,kind,tier,star,name:pick(TPRE[tier])+' '+base,atk:slot==='weapon'?A(1):slot==='ring'?A(.45):slot==='neck'?A(.7):slot==='fabao'?A(.5):0,def:slot==='robe'?D(1):slot==='pants'?D(.7):slot==='boots'?D(.5):slot==='belt'?D(.6):0};
  if(kind==='phien'){const pvn=(PV&&PV.length)||1;it.pv=Math.min(pvn-1,Math.floor(Math.random()*Math.min(pvn,2+tier)));it.name=pick(TPRE[tier])+' '+(PV&&PV[it.pv]?PV[it.pv].n:'Vạn Hồn Phiên')}if(tong){it.tong=tong;it.atk=Math.round(it.atk*1.3)}if(slot==='fabao')it.spd=kind==='phikiem'?20+tier*12:5+tier*3;return it}
 function rollTier(bonus=0){const r=Math.random();const w=[.5,.25,.13,.07,.035,.012,.003];let acc=0,t=0;const rr=Math.max(0,r-bonus*.25);for(let i=0;i<w.length;i++){acc+=w[i];if(rr<acc){t=i;break}t=i}return Math.min(6,t+(bonus>0&&Math.random()<bonus*.5?1:0))}
@@ -1736,7 +1736,7 @@ const SBC={};function styleBeast(e,M){const c=e.c,fur=furFor(M[2]),fl=SBC['f'+M[
  if(arch==='qilin'||L>=100){for(let k=0;k<7;k++){const sp=new T.Mesh(new T.ConeGeometry(.08,.45,6),fl);sp.position.set(0,2.45-Math.abs(k-3)*.05,-1+k*.33);b.add(sp)}}
  if(arch==='wolf'&&B.tail)B.tail.forEach((t,i)=>{t.scale.setScalar(1.15)});}
 const zoneOf=lv=>MONS.findIndex(m=>m[0]===lv);
-function zonePt(i){const dir=[Math.PI/2,0,Math.PI,-Math.PI/2][Math.floor(i/9)%4],a=dir+R2(.42),d=CITY+22+(i%9)*46+Math.random()*28;const sx=Math.cos(a),sz=Math.sin(a),s2=Math.max(Math.abs(sx),Math.abs(sz));return[sx/s2*d,sz/s2*d]}
+function zonePt(i){const dir=[Math.PI/2,0,Math.PI,-Math.PI/2][Math.floor(i/9)%4],a=dir+R2(.42),d=CITY+22+(Math.floor(i/9)%4?120:0)+(i%9)*85+Math.random()*30;/* 26/11: giãn bãi quái gấp đôi — cấp cao xa hẳn cấp thấp */const sx=Math.cos(a),sz=Math.sin(a),s2=Math.max(Math.abs(sx),Math.abs(sz));return[sx/s2*d,sz/s2*d]}
 function spawnZone(i,n){const M=MONS[i];for(let k=0;k<n;k++){const[x,z]=zonePt(i),L=M[0];const e=spawn('enemy',x,z,{name:M[1],hp:Math.round(3000*(1+L/12)*(1+L/25)),col:'#ff6a5a',spd:3.5+Math.min(4,L/30),beast:true});
  e.lv=L;e.zone=i;e.el=pick(NH5);styleBeast(e,M);const nm=e.lab.querySelector('.nm');nm.innerHTML=`<span style="color:#ffd36b">Cấp ${L}</span> ${M[1]} <small style="color:${NH[e.el].c}">[${NH[e.el].n}]</small>`;e.home.set(x,z)}}
 /* bãi quái dày đặc, nhiều loài: chỉ sinh đầy quanh người chơi để không lag */
@@ -2614,7 +2614,7 @@ const ALTAR={x:22,z:-6};
 
 /* ---------- Bảo Khố: gửi linh thạch/đồ để chết không mất — phí gửi rất cao ---------- */
 const BANK=(()=>{try{return JSON.parse(localStorage.getItem('tkm_bank'))||{stone:0,items:[]}}catch(e){return{stone:0,items:[]}}})();
-function saveBank(){try{localStorage.setItem('tkm_bank',JSON.stringify(BANK))}catch(e){}}
+function saveBank(){try{localStorage.setItem('tkm_bank',JSON.stringify(BANK))}catch(e){}}try{if(!BANK.bal){BANK.bal=1;(BANK.items||[]).forEach(it=>{if(it){it.atk=Math.round((it.atk||0)*.6);it.def=Math.round((it.def||0)*.6)}});saveBank()}}catch(e){}
 const BANKP={x:-21,z:-8};
 function bankPanel(){const P=$('npcp');P.style.display='block';P.dataset.src='npc';const fee=it=>Math.round((20+it.tier*it.tier*25)*(1+it.star*.15));
  P.innerHTML=`<b>Bảo Khố Thiên Kiếm</b><p>Chết ngoài thành sẽ rơi <b>toàn bộ linh thạch</b> và một phần túi đồ. Gửi vào Bảo Khố thì an toàn tuyệt đối, nhưng phí rất cao: <b>gửi linh thạch mất 30%</b>, gửi đồ tốn phí theo phẩm cấp. Rút ra miễn phí.</p><p>Trong kho: 💎 <b>${BANK.stone}</b> · ${BANK.items.length}/20 món · Trên người: 💎 ${TU.stone}</p>`+
@@ -4124,14 +4124,14 @@ try{(function(){
  const _il=itemLabel;itemLabel=function(it){const p=it&&it.plus|0;return (p?'<b style="color:'+pc(p)+';text-shadow:0 0 6px '+pc(p)+'">+'+p+'</b> ':'')+_il(it)};
  function pc(p){return p>=13?'#ffd84a':p>=10?'#ff7a3a':p>=7?'#d58cff':'#7fd8ff'}
  /* lò rèn: thêm mục đập vũ khí */
- const _fp=forgePanel;forgePanel=function(tg){_fp(tg);try{const P=$('npcp'),w=W();let h='<div style="margin:6px 0;padding:6px 8px;border:1px solid rgba(255,154,240,.5);border-radius:8px;background:rgba(60,10,50,.35)"><b style="color:#ff9af0">◆ Đập vũ khí bằng Đá Cường Hóa</b> · có <b>'+(TU.cuong|0)+'</b> đá<br><small>Vũ khí +1 → +15, mỗi cấp +8% công và thêm hiệu ứng. Từ +7 thất bại sẽ tụt 1 cấp (không mất đồ). Đá rơi từ quái tinh anh, Yêu Vương, Boss thế giới và nhiệm vụ hằng ngày.</small><br>';
+ const _fp=forgePanel;forgePanel=function(tg){_fp(tg);try{const P=$('npcp'),w=W();let h='<div style="margin:6px 0;padding:6px 8px;border:1px solid rgba(255,154,240,.5);border-radius:8px;background:rgba(60,10,50,.35)"><b style="color:#ff9af0">◆ Đập vũ khí bằng Đá Cường Hóa</b> · có <b>'+(TU.cuong|0)+'</b> đá<br><small>Vũ khí +1 → +15, mỗi cấp +5% công và thêm hiệu ứng. Từ +7 thất bại sẽ tụt 1 cấp (không mất đồ). Đá rơi từ quái tinh anh, Yêu Vương, Boss thế giới và nhiệm vụ hằng ngày.</small><br>';
   if(!w)h+='<small style="color:#f88">Hãy cầm một vũ khí.</small>';else{const p=w.plus|0;if(p>=15)h+='<b style="color:#ffd84a">'+itemLabel(w)+' đã đạt +15 tối đa!</b>';else{const c=SC(p);h+='<button data-x="plus" '+(TU.cuong<c?'disabled':'')+'>Đập '+itemLabel(w)+' lên <b>+'+(p+1)+'</b> · '+c+' đá · '+PR[p+1]+'%</button>'}}
   h+='</div>';const cl=P.querySelector('button[data-x="close"]');if(cl)cl.insertAdjacentHTML('beforebegin',h);else P.insertAdjacentHTML('beforeend',h)}catch(e){console.warn(e)}};
  const _na=npcAct;npcAct=function(x,k){if(x==='plus')return plusUp();return _na(x,k)};
  function plusUp(){const w=W();if(!w)return;const p=w.plus|0;if(p>=15)return;const c=SC(p);if(TU.cuong<c){chat('Không đủ Đá Cường Hóa.','k');return}TU.cuong-=c;const hp=heroPos();
-  if(Math.random()*100<PR[p+1]){w.plus=p+1;w.atk=Math.round(w.atk*1.08);sfx('clang');sfx('magic');ring(hp,0xff9af0,4+p*.3,.6);boom(hp.clone().setY(hp.y+1.2),40+p*4,[2.4,1.4,2.2],7,.7,.6,-1);banner('Đập thành công '+itemLabel(w),'+8% công');
+  if(Math.random()*100<PR[p+1]){w.plus=p+1;w.atk=Math.round(w.atk*1.05);sfx('clang');sfx('magic');ring(hp,0xff9af0,4+p*.3,.6);boom(hp.clone().setY(hp.y+1.2),40+p*4,[2.4,1.4,2.2],7,.7,.6,-1);banner('Đập thành công '+itemLabel(w),'+5% công');
    if(w.plus>=7){const msg=`<b>${esc(LOOK.name)}</b> đã cường hóa <b>${esc(w.name)}</b> lên <b style="color:${pc(w.plus)}">+${w.plus}</b>!`;announce(msg);try{P2P.A.ann&&P2P.A.ann({n:String(LOOK.name).slice(0,18),w:String(w.name).slice(0,30),p:w.plus})}catch(e){}}}
-  else{if(p>=7){w.plus=p-1;w.atk=Math.round(w.atk/1.08);chat('Đập thất bại! '+itemLabel(w)+' tụt xuống +'+w.plus+'.','k')}else chat('Đập thất bại, mất '+c+' đá.','k');sfx('hit')}
+  else{if(p>=7){w.plus=p-1;w.atk=Math.round(w.atk/1.05);chat('Đập thất bại! '+itemLabel(w)+' tụt xuống +'+w.plus+'.','k')}else chat('Đập thất bại, mất '+c+' đá.','k');sfx('hit')}
   saveTL();saveINV();try{applyGlow()}catch(e){}refreshTL();try{window.__dh&&window.__dh.check()}catch(e){}forgePanel()}
  /* kênh báo toàn máy chủ qua P2P: chỉ nhận tên + số cấp, tự dựng câu (không nhận HTML) */
  const annT=setInterval(()=>{try{if(!P2P||!P2P.room||!P2P.A||P2P.A.ann)return;const [s,g]=P2P.room.makeAction('ann');P2P.A.ann=s;const seen={};g((d,{peerId})=>{if(!d||typeof d.n!=='string'||!Number.isInteger(d.p)||d.p<7||d.p>15)return;const now=Date.now();if(seen[peerId]&&now-seen[peerId]<20000)return;seen[peerId]=now;announce(`<b>${esc(d.n.slice(0,18))}</b> đã cường hóa <b>${esc(String(d.w||'vũ khí').slice(0,30))}</b> lên <b style="color:${pc(d.p)}">+${d.p}</b>!`)});clearInterval(annT)}catch(e){}},3000);
@@ -4191,7 +4191,7 @@ try{(function(){const st=document.createElement('style');st.textContent='#dqb{di
  const b=document.createElement('button');b.id='dqb';($('quest')||document.body).appendChild(b);
  function lbl(){const q=Q();b.className=R.on?'on':q.done?'done':'';b.innerHTML=q.done?'📅 Hằng ngày ✓':R.on?'📅 Tự làm '+q.k+'/'+NEED+' · '+Math.max(0,Math.ceil((TMAX-(performance.now()-R.t0)/1000)/60))+'p':'📅 Nhiệm vụ ngày'}
  b.onclick=()=>{const q=Q();const P=$('npcp');P.style.display='block';P.dataset.src='dq';
-  P.innerHTML='<b>Nhiệm vụ hằng ngày</b><p>Diệt <b>'+NEED+' yêu thú</b> hợp cấp — <b>bấm Tự động</b>, nhân vật tự truyền tống ra bãi, tự đánh, tự nhặt đồ. Khoảng 5 phút là xong (hết 5 phút vẫn được thưởng đủ).<br>Thưởng: <b style="color:#ff9af0">3 Đá Cường Hóa</b> + linh thạch + tu vi.<br>Tiến độ hôm nay: <b>'+q.k+'/'+NEED+'</b>'+(q.done?' — <b style="color:#7fffb0">đã xong, mai quay lại</b>':'')+'</p>'+
+  P.innerHTML='<b>Nhiệm vụ hằng ngày</b><p>Diệt <b>'+NEED+' yêu thú</b> hợp cấp — <b>bấm Tự động</b>, nhân vật tự chạy bộ ra bãi, tự đánh, tự nhặt đồ. Khoảng 5 phút là xong (hết 5 phút vẫn được thưởng đủ).<br>Thưởng: <b style="color:#ff9af0">3 Đá Cường Hóa</b> + linh thạch + tu vi.<br>Tiến độ hôm nay: <b>'+q.k+'/'+NEED+'</b>'+(q.done?' — <b style="color:#7fffb0">đã xong, mai quay lại</b>':'')+'</p>'+
    (q.done?'':R.on?'<button data-x="dqstop">Dừng tự động</button>':'<button data-x="dqgo">▶ Tự động làm (5 phút)</button>')+'<button data-x="close">Đóng</button>'};
  const _na=npcAct;npcAct=function(x,k){if(x==='dqgo'){start();$('npcp').style.display='none';return}if(x==='dqstop'){stop('Đã dừng nhiệm vụ tự động.');$('npcp').style.display='none';return}return _na(x,k)};
  function start(){const q=Q();if(q.done||R.on)return;R.on=true;R.t0=performance.now();R.zi=heroZone();{const z=zonePt(R.zi);R.zx=z[0];R.zz=z[1]}R.k0=q.k;if(!AUTO.on)toggleAuto();try{AUTOW.on=true}catch(e){}chat('<b style="color:#7fffb0">Bắt đầu nhiệm vụ hằng ngày tự động</b> — chạm cần gạt để tạm điều khiển, thả ra sẽ tự làm tiếp.','s');lbl()}
@@ -4201,7 +4201,7 @@ try{(function(){const st=document.createElement('style');st.textContent='#dqb{di
  setInterval(()=>{lbl();if(!R.on)return;try{if((performance.now()-R.t0)/1000>=TMAX){finish();return}if(hero.dead||creating)return;
   const man=(typeof joy!=='undefined'&&(joy.x||joy.y))||(typeof keys!=='undefined'&&Object.values(keys).some(Boolean));if(man){R.pause=performance.now()+4000;return}if(performance.now()<R.pause)return;
   const hp=heroPos();if(!AUTO.on)toggleAuto();if(P.route&&P.route.length||P.dest)return;const myL=lvOf(TU.realm,TU.realm?TU.tang:TU.lv);
-  if(inCity(hp)||Math.hypot(hp.x-R.zx,hp.z-R.zz)>160){const x=R.zx+R2(6),z=R.zz+R2(6);try{boom(hp.clone().setY(hp.y+1),30,[.6,1.6,2.4],6,.6,.6,-2)}catch(e){}hp.set(x,H(x,z)+.5,z);P.v.set(0,0,0);P.route=null;P.dest=null;try{ring(hp,0x7fd8ff,4,.6);sfx('magic')}catch(e){}return}
+  if(inCity(hp)||Math.hypot(hp.x-R.zx,hp.z-R.zz)>160){P.route=routeTo(hp,R.zx+R2(6),R.zz+R2(6));P.dest=null;return}
   if(P.auto&&!P.auto.dead)return;let best=null,bd=1e9;for(const e of ents){if(e.team!=='enemy'||e.dead||e.wb)continue;const d=Math.abs(e.c.g.position.x-hp.x)+Math.abs(e.c.g.position.z-hp.z);if(d>90||Math.abs((e.lv||1)-myL)>30)continue;if(d<bd){bd=d;best=e}}
   if(best){P.auto=best}else{P.dest=new T.Vector3(R.zx+R2(25),0,R.zz+R2(25))}}catch(e){console.warn('dq',e)}},500);
  lbl();window.__dq=R;R.P=()=>({route:P.route&&P.route.length,dest:!!P.dest,auto:P.auto&&P.auto.name,ab:typeof ABS!=='undefined'&&ABS.on});
@@ -4225,7 +4225,7 @@ try{(function(){const st=document.createElement('style');st.textContent='#fpsd{p
 })()}catch(e){console.warn('gfx+',e)}
 /* ===== BẢO MẬT P2P (26/11): kiểm tra món đồ nhận từ người khác — chỉ giữ trường hợp lệ, chặn chỉ số vượt trần, chặn mã HTML trong tên ===== */
 window.__cleanIt=function(it){try{if(!it||typeof it!=='object')return null;const SL=['weapon','robe','pants','boots','belt','neck','ring','fabao'];if(!SL.includes(it.slot))return null;const t=it.tier|0;if(t<0||t>6)return null;const st=Math.max(1,Math.min(MAXS[t]||5,it.star|0)),pl=Math.max(0,Math.min(15,it.plus|0));
- const cap=(8+t*t*8)*(1+st*.12)*1.3*Math.pow(1.12,st)*Math.pow(1.08,pl)*2.2;const num=(v,c)=>Math.max(0,Math.min(c,+v||0));
+ const cap=(8+t*t*8)*(1+st*.12)*1.3*Math.pow(1.12,st)*Math.pow(1.05,pl)*1.5;const num=(v,c)=>Math.max(0,Math.min(c,+v||0));
  const o={id:INV.nid++,slot:it.slot,kind:String(it.kind||it.slot).replace(/[^a-zA-Z0-9_]/g,'').slice(0,20),tier:t,star:st,name:String(it.name||'').replace(/[<>&"'`]/g,'').slice(0,40)||'Trang bị',atk:Math.round(num(it.atk,cap)),def:Math.round(num(it.def,cap*1.4))};
  if(o.slot==='weapon'&&!WEAPONS[o.kind])o.kind='jian';if(pl)o.plus=pl;if(it.tong&&TONG[it.tong])o.tong=it.tong;if(Number.isInteger(it.pv))o.pv=Math.max(0,Math.min(20,it.pv));if(it.spd!=null)o.spd=num(it.spd,120);
  if(Array.isArray(it.opt))o.opt=it.opt.slice(0,6).filter(x=>Array.isArray(x)&&OPTS[x[0]]).map(([k,v])=>{const D=OPTS[k];return[k,+Math.min(+v||0,D[1]+D[2]*6*1.5+1).toFixed(1)]});return o}catch(e){return null}};
