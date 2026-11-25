@@ -4644,6 +4644,44 @@ try{(function(){const st=document.createElement('style');st.textContent=`
   const s2=document.createElement('style');s2.id='ilcss';s2.textContent=out.join('\n')+'\n#ilpop .ibig{width:72px;height:72px;flex:none}#ilpop .ibig svg,#ilpop .ibig img{width:90%!important;height:90%!important}#ilpop .iacts{display:none}#ilpop .istats>div{white-space:nowrap}#ilpop .iname{font-size:16px;font-weight:800;line-height:1.2}#ilpop{width:min(92vw,360px)}';const o=document.getElementById('ilcss');if(o)o.remove();document.head.appendChild(s2)}catch(e){console.warn('ilcss',e)}}
  setTimeout(cloneCss,3000);setTimeout(cloneCss,15000);
 })()}catch(e){console.warn('invui',e)}
+/* ===== TỰ LUYỆN + NHỚ CHỖ ĐỨNG + DANH HIỆU GỌN (26/11): nút Tự luyện — tự chạy bộ tới bãi quái hợp cấp, tự đánh, tự tung công pháp & kỹ năng khi đủ nội lực, chết thì hồi sinh rồi tự quay lại bãi; chạm cần gạt là tạm dừng 4 giây; tắt/mở lại game vẫn nhớ đang tự luyện. Thoát game vào lại đứng đúng chỗ cũ (không tự về thành). Danh hiệu trên đầu nhỏ gọn hơn ===== */
+try{(function(){
+ const st=document.createElement('style');st.textContent=`
+ .dhw{gap:1px!important;max-width:210px!important;margin-bottom:2px!important}
+ .dhs{gap:1px 2px!important}
+ .dhb i{font-size:8px!important;line-height:12px!important;padding:0 8px!important;letter-spacing:.2px!important}
+ .dhb.main i{font-size:10px!important;line-height:15px!important;padding:0 11px!important;letter-spacing:.4px!important}
+ .dhb .wg{font-size:10px!important}
+ .dh{font-size:10px!important}
+ #atb.on{box-shadow:0 0 10px #5dff8a;border-color:#5dff8a!important;color:#9fffb8!important}
+ #atb .lbt{position:absolute;bottom:-1px;left:0;right:0;font:800 7px/1 "Noto Serif",serif;text-align:center;color:inherit;pointer-events:none}`;document.head.appendChild(st);
+ const myL=()=>lvOf(TU.realm,TU.realm?TU.tang:TU.lv);
+ const S={on:false,zi:-1,zx:0,zz:0,pause:0,cast:0};try{S.on=localStorage.getItem('tkm_atrain')==='1'}catch(_){}
+ function save(){try{localStorage.setItem('tkm_atrain',S.on?'1':'0')}catch(_){}}
+ function pickZone(){S.zi=heroZone();const z=zonePt(S.zi);S.zx=z[0];S.zz=z[1]}
+ function set(on,quiet){S.on=on;save();btn();if(on){pickZone();if(!AUTO.on)toggleAuto();if(!quiet)chat('<b style="color:#7fffb0">Bật tự luyện</b> — tự ra bãi quái cấp '+(MONS[S.zi]?MONS[S.zi][0]:myL())+', tự đánh, tự dùng công pháp. Chạm cần gạt để tạm điều khiển.','s')}else{P.auto=null;P.route=null;P.dest=null;if(!quiet)chat('Tắt tự luyện.','s')}}
+ function btn(){const b=$('atb');if(b)b.classList.toggle('on',S.on)}
+ setTimeout(()=>{const pb=$('pkbar');if(!pb||$('atb'))return;const b=document.createElement('button');b.id='atb';b.title='Tự luyện: tự ra bãi quái hợp cấp, tự đánh, tự dùng chiêu';b.className='sec';b.style.position='relative';
+  b.innerHTML='<svg viewBox="0 0 24 24"><path d="M4 20l7-7M14 4l6 6-9 9-6-6z"/><circle cx="18" cy="18" r="3"/></svg><span class="lbt">Tự luyện</span>';b.onclick=()=>set(!S.on);pb.insertBefore(b,pb.firstChild);btn()},2700);
+ /* tự tung chiêu */
+ function autoCast(t){const now=performance.now();if(now<S.cast)return;S.cast=now+700;const hp=heroPos();if(!t||t.dead||t.c.g.position.distanceTo(hp)>16)return;
+  try{for(let i=0;i<(TU.cpe||[]).length;i++){const id=TU.cpe[i],c=id&&CP[id];if(!c)continue;if((CPCD[id]||0)>now||hero.mp<c.mp)continue;castCP(i);S.cast=now+1300;return}}catch(_){}
+  try{for(const x of skillsUnlocked()){const k=x[0];if(P.cds[k]>0)continue;const cost={1:8,2:20,4:30,5:30,6:25,7:30,8:30}[k]||20;if(hero.mp<cost+5)continue;useSkill(k);S.cast=now+1100;return}}catch(_){}}
+ setInterval(()=>{try{if(!S.on||creating)return;if(window.__dq&&__dq.on)return;if(hero.dead)return;if(BC.in||(typeof BF!=='undefined'&&BF.in)||INT.in)return;
+  const man=(typeof joy!=='undefined'&&(joy.x||joy.y))||(typeof keys!=='undefined'&&Object.values(keys).some(Boolean));if(man){S.pause=performance.now()+4000;return}if(performance.now()<S.pause)return;
+  if(!AUTO.on)toggleAuto();const hp=heroPos(),L=myL();if(S.zi!==heroZone())pickZone();
+  if(P.auto&&!P.auto.dead){autoCast(P.auto);return}
+  if(P.route&&P.route.length)return;
+  if(inCity(hp)||Math.hypot(hp.x-S.zx,hp.z-S.zz)>170){P.route=routeTo(hp,S.zx+R2(6),S.zz+R2(6));P.dest=null;return}
+  let best=null,bd=1e9;for(const e of ents){if(e.team!=='enemy'||e.dead||e.wb)continue;const q=e.c.g.position,d=Math.abs(q.x-hp.x)+Math.abs(q.z-hp.z);if(d>90||Math.abs((e.lv||1)-L)>25)continue;if(d<bd){bd=d;best=e}}
+  if(best){P.auto=best;P.dest=null;autoCast(best)}else if(!P.dest)P.dest=new T.Vector3(S.zx+R2(25),0,S.zz+R2(25))}catch(e){console.warn('atrain',e)}},500);
+ /* ---- nhớ chỗ đứng ---- */
+ const key=()=>'tkm_pos_'+(LOOK&&LOOK.name||'');let restored=false;
+ setInterval(()=>{try{if(creating||!hero||hero.dead)return;if(!restored)return;if(BC.in||(typeof BF!=='undefined'&&BF.in)||INT.in||P.fly)return;const p=heroPos();localStorage.setItem(key(),JSON.stringify({x:+p.x.toFixed(1),z:+p.z.toFixed(1),t:Date.now()}))}catch(_){}},3000);
+ const rt=setInterval(()=>{try{if(creating||!hero||!LOOK||!LOOK.name)return;clearInterval(rt);setTimeout(()=>{try{const v=JSON.parse(localStorage.getItem(key())||'null');if(v&&isFinite(v.x)&&isFinite(v.z)&&Math.hypot(v.x,v.z)>3&&!BC.in&&!INT.in){hero.c.g.position.set(v.x,H(v.x,v.z),v.z);P.route=null;P.dest=null}}catch(_){}restored=true;if(S.on)set(true,true)},1200)}catch(_){}},500);
+ window.addEventListener('pagehide',()=>{try{if(!creating&&restored&&!hero.dead&&!BC.in&&!INT.in&&!(typeof BF!=='undefined'&&BF.in)){const p=heroPos();localStorage.setItem(key(),JSON.stringify({x:p.x,z:p.z,t:Date.now()}))}}catch(_){}});
+ window.__atrain={S,set};
+})()}catch(e){console.warn('atrain+',e)}
 window.__wp={renderer,T,WEAPONS,fabaoModel,TIERS,FBE,RT,VB:()=>VB,hero:()=>hero,TD:{tdKiem,tdXuan,tdBang,tdAn,swordRain,phoenix,tornado,maVortex,dQi:()=>dragonE('qi'),dTh:()=>dragonE('thunder'),dFi:()=>dragonE('fire'),dBl:()=>dragonE('blood'),vortex:()=>{const T0=performance.now();maVortex();return performance.now()-T0},ice:()=>{const t=TU.tong,r=TU.realm,l=TU.learned;TU.tong='thuy';TU.realm=4;TU.learned=['Huyền Băng Trảm','Băng Phong Vạn Lý'];hero.mp=100;P.cds[1]=0;try{_useSkill(1+'')}finally{TU.tong=t;TU.realm=r;TU.learned=l}}},TU:()=>TU};setTimeout(()=>{if(typeof TKACCT!=='undefined')TKACCT.boot()},0);
 window.__demo={closeInv:()=>closeInv(),castAt:(id,x,z)=>{const h=heroPos(),o=h.clone(),f=hero.face;h.x=x;h.z=z;hero.face=Math.random()*6.28;try{castCP(id,true)}catch(e){}h.copy(o);hero.face=f},BF,bfJoin,bfBuild,allEnts:()=>ents,ICL:()=>ICL,equipWeapon:(a,b)=>equipWeapon(a,b),wearBest,equip:i=>{equip.silent=1;try{equip(i)}finally{equip.silent=0}},heroPos,TRIB:()=>TRIB,addCorpse,deathDrop,ents:()=>ents,foe:e=>foe(e),castCP,CP,mkBook,learnBook,P2P,NET,itemCard,optHTML,onHunt,rankTick,RANK,WFALL,castFX,VILLC:()=>window.__vc,tribGo,tribReady,needXp,bankPanel,CG,titles,leaveBC,zoneStream,ZPOP,GANGS,PARTY,ptInvite,hit,NET,netUpd,CORPSE,goInt,toggleFly,updFabao,GARR,WFIX,spawnMon,EV,EVT,npcAct,openInv,SQUADS:()=>SQUADS,CIT:()=>CIT,MUS,PK,togglePK,callReinf,maAct,gainXp,realmText,updPK,INV,BC,mkItem,dropItem,enterBC,TU,refreshTL,bloom:()=>bloom,LOOK,buildAvatar,setSW:(a,b,c)=>{hero.vw&&hero.vw.rotation.set(a,b,c)},hero,P,useSkill,ents,setView:(y,p,d)=>{yaw=y;pitch=p;dist=d}};
 }
