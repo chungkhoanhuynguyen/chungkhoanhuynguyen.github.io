@@ -80,4 +80,5 @@ jobs:
           F=(art/*.mp4 art/*.png art/*.txt); M=(art/*.mp4)
           if [ ${#M[@]} -eq 0 ]; then echo "::error::Lô $B không có mp4 – giữ Release cũ, không xoá"; exit 1; fi
           gh release delete "reel-$B" -y -R ${{ github.repository }} 2>/dev/null || true
-          gh release create "reel-$B" -R ${{ github.repository }} -t "Reel $B" -n "Reel dọc lô $B" "${F[@]}"
+          gh release create "reel-$B" -R ${{ github.repository }} -t "Reel $B" -n "Reel dọc lô $B" || true
+          for i in 1 2 3; do gh release upload "reel-$B" -R ${{ github.repository }} --clobber "${F[@]}" && break; sleep 10; done
