@@ -4280,7 +4280,7 @@ try{(function(){
   ()=>{const S=STALLS.filter(s=>!s.shop&&s.owner&&s.items&&s.items.length);if(!S.length)return null;const s=pick(S),it=pick(s.items),o=ents.find(e=>e.name===s.owner);const L=B();if(!o||!L.length)return null;const b=pick(L.filter(e=>e!==o));
    return [[o,'bán '+it.name+' giá '+it.price+' linh thạch, ghé sạp '+huong(s.g.position.x,s.g.position.z)],b?[b,pick(['bớt chút đi','đắt thế','để tao qua xem'])]:null,[o,pick(['giá đó là rẻ rồi','bớt 10 cho thiện cảm','nhanh tay kẻo hết'])]].filter(Boolean)},
   /* bàn tán người chơi / bảng Phong Thần */
-  ()=>{const L=B();if(L.length<2)return null;const a=pick(L),b=pick(L.filter(e=>e!==a));const red=PK.red||PK.on;return [[a,red?(me()+' đang đồ sát ngoài thành đấy ae, né ra'):(me()+' '+REALMS[TU.realm]+' rồi à, cày ghê')],[b,red?pick(['gặp là chạy','bao giờ Chấp Pháp bắt nó']):pick(['người ta nạp thời gian mà','ước gì được như thế'])]]},
+  ()=>{const L=B();if(L.length<2)return null;const a=pick(L),b=pick(L.filter(e=>e!==a));const red=PK.red||PK.on;return [[a,red?(me()+' đang đồ sát ngoài thành đấy ae, né ra'):(me()+' '+REALMS[TU.realm]+' rồi à, cày ghê')],[b,red?pick(['gặp là chạy','bao giờ Chấp Pháp bắt nó']):pick(['người ta cày ngày cày đêm mà','ước gì được như thế'])]]},
  ];
  setInterval(()=>{if(busy||creating||Q.length)return;if(Date.now()-myLast<20000)return;if(Math.random()<.5)return;try{const th=pick(TH)();if(th&&th.length)run(th)}catch(e){}},12000);
  /* chết ở chiến trường: mất ít (5% linh thạch), không rơi đồ */
@@ -4483,7 +4483,7 @@ try{(function(){
  ['bán bánh mì','tu',25,55,'sáng dậy từ 4h nướng bánh','hết bánh sớm vui'],['chủ tiệm net','game',25,45,'ngồi trông tiệm chơi luôn','tụi nhỏ nợ giờ chơi'],['thợ cắt tóc','tu',20,40,'vừa cắt xong 5 cái đầu','khách đòi cắt giống idol'],
  ['thợ làm nail','tu',19,35,'làm móng cả ngày mỏi mắt','khách khó tính'],['chủ shop điện thoại','tu',24,45,'hàng mới về chưa kịp lên kệ','khách trả giá ác'],['bán hoa quả ngoài chợ','tu',30,60,'dọn sạp xong mới lên','hôm nay ế'],
  ['nuôi tôm','nong',28,55,'đi cho tôm ăn về','tôm chết hàng loạt lo vl'],['trồng sầu riêng','nong',30,60,'mùa này sầu riêng rớt giá','tưới vườn xong'],['làm ruộng','nong',30,60,'mai gặt lúa','trời mưa ra đồng ko được'],
- ['chăn nuôi heo','nong',28,55,'heo đẻ thức cả đêm','giá heo hơi xuống'],['streamer nhỏ','game',18,28,'live có 12 người xem','donate 20k vui cả ngày'],['youtuber nhỏ','game',19,30,'video mới ko ai xem','dựng video tới sáng'],
+ ['chăn nuôi heo','nong',28,55,'heo đẻ thức cả đêm','giá heo hơi xuống'],['streamer nhỏ','game',18,28,'live có 12 người xem','có người xem tặng quà vui cả ngày'],['youtuber nhỏ','game',19,30,'video mới ko ai xem','dựng video tới sáng'],
  ['game thủ cày thuê','game',18,26,'đang cày thuê acc cho khách','ngồi máy cả ngày mỏi lưng'],['freelancer thiết kế','tu',21,35,'deadline 3 job 1 lúc','khách bùng tiền'],['thợ chụp ảnh cưới','tu',22,40,'cuối tuần chạy 3 đám cưới','chỉnh ảnh tới khuya'],
  ['tài xế công nghệ','xe',22,50,'đứng chờ cuốc lên làm tí','trời mưa ko ai đặt xe'],['shipper','xe',18,35,'giao 60 đơn hôm nay','khách bom hàng'],['xe ôm truyền thống','xe',40,60,'ngồi đầu ngõ chờ khách','giờ ai cũng đi app'],
  ['thợ sửa xe','tho',20,50,'tay dính nhớt cầm đt','vừa vá xong cái lốp'],['thợ điện nước','tho',22,50,'đi sửa ống nước cả ngày','khách gọi lúc nửa đêm'],['thợ hồ','tho',20,50,'phụ hồ cả ngày nắng','công trình nghỉ do mưa'],
@@ -4521,7 +4521,7 @@ try{(function(){
   if(R()<.25){const pi=Math.floor(R()*3);fam+=', '+PET[pi];lines.push(pi===1?'chó sủa cả đêm':pk(['con mèo nhảy lên bàn phím','cho mèo ăn đã']))}
   const sch=S[j[1]].map(([a,b])=>{const d=(Math.floor(R()*5)-2)*.5;return[a+d,b+d]});
   const jl=j.slice(4);return{j:j[0],age,w,fam,fem,l:jl.concat(lines,[pk(GEN),pk(GEN)]),b:bye.concat(['off đây ae','mai on tiếp']),sch,jit:R()*.4}}
- function per(e){if(e.per)return e.per;const p=build(e.name);p.liar=hs(e.name+'!')%4===0;if(p.liar){const f=build(e.name+'#fake');p.fake=f;f.j=pick([f.j,'giám đốc công ty riêng','chủ 3 cái nhà hàng','phi công','ca sĩ','cầu thủ hạng nhất','đại gia BĐS',f.j]);if(Math.random()<.4)f.fem=!p.fem;p.l=p.l.concat(['acc t nạp 50 củ r','hôm qua t solo boss 1 mình','t quen admin game đấy','đồ t full đỏ cả bộ'])}e.per=p;e.sch=p.sch;e.jit=p.jit;return p}
+ function per(e){if(e.per)return e.per;const p=build(e.name);p.liar=hs(e.name+'!')%4===0;if(p.liar){const f=build(e.name+'#fake');p.fake=f;f.j=pick([f.j,'giám đốc công ty riêng','chủ 3 cái nhà hàng','phi công','ca sĩ','cầu thủ hạng nhất','đại gia BĐS',f.j]);if(Math.random()<.4)f.fem=!p.fem;p.l=p.l.concat(['acc t cày 3 tháng ko nghỉ ngày nào','hôm qua t solo boss 1 mình','t quen admin game đấy','đồ t full đỏ cả bộ'])}e.per=p;e.sch=p.sch;e.jit=p.jit;return p}
  const P=J;
  const isB=e=>e&&e.team==='bot'&&!e.guard&&!e.net&&e.name&&e!==hero;
  const all=()=>ents.filter(isB);
@@ -4555,7 +4555,7 @@ try{(function(){
   if(isAuto(b))return pick(['t treo auto cả ngày có biết j đâu','auto cày thôi ko để ý mấy cái đó','ko rõ t toàn treo máy','cấp cao nhưng toàn auto nên mù tịt'].concat(pro?['hỏi '+pro+' kìa nó rành']:[]));
   return pick(['ko rõ bro, t mới chơi','t cũng ko rõ bro à','ko biết nữa','chịu, t cũng đang tìm','hỏi mấy ông cấp cao ở quảng trường ấy họ rõ hơn','ra quảng trường hỏi mấy thằng cấp cao ấy'].concat(pro?['hỏi '+pro+' ấy','ông '+pro+' rành cái này đó']:[]))}
  const _br=botReply;botReply=function(m){try{const t=String(m).toLowerCase();if(Q.test(t)&&!LIFE.test(t)){const a=B();if(a.length){const b=t&&a.find(e=>t.includes(e.name.toLowerCase()))||pick(a);
-   const lie=hs(b.name+'!')%4===0&&Math.random()<.5;if(lie||Math.random()>know(b)){const line=lie?pick(['ra map tuyết phía bắc ấy','phải nạp mới làm được','tối 12h mới mở','hỏi NPC ở cổng tây ấy','ném đồ xuống sông là được','gõ /admin là ra','qua bí cảnh đánh con boss cuối là có']):dunno(b);setTimeout(()=>{try{chat0('<span class="n" data-r="1">'+esc(b.name)+'</span>: '+line,'');if(b.c.g.visible&&b.lab&&b.c.g.position.distanceTo(heroPos())<25)bubble(b,line)}catch(_){}},1800+Math.random()*2500);
+   const lie=hs(b.name+'!')%4===0&&Math.random()<.5;if(lie||Math.random()>know(b)){const line=lie?pick(['ra map tuyết phía bắc ấy','phải lên cấp 300 mới làm được','tối 12h mới mở','hỏi NPC ở cổng tây ấy','ném đồ xuống sông là được','gõ /admin là ra','qua bí cảnh đánh con boss cuối là có']):dunno(b);setTimeout(()=>{try{chat0('<span class="n" data-r="1">'+esc(b.name)+'</span>: '+line,'');if(b.c.g.visible&&b.lab&&b.c.g.position.distanceTo(heroPos())<25)bubble(b,line)}catch(_){}},1800+Math.random()*2500);
     /* đứa khác rành hơn có thể trả lời sau, hoặc chẳng ai trả lời */
     if(Math.random()<.55){const ar=arguments,me=this;setTimeout(()=>_br.apply(me,ar),5000+Math.random()*6000)}return}}}}catch(_){}return _br.apply(this,arguments)};
  window.__know={know,isAuto,dunno:n=>{const e=B().find(x=>x.name===n);return e&&dunno(e)},ask:q=>botReply(q)};
