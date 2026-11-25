@@ -174,7 +174,7 @@ MT = ("Số lao động đăng ký của Tập đoàn Mai Linh giảm từ 5.500
       "Đánh giá báo cáo tài chính từng doanh nghiệp, xem miễn phí: https://chungkhoanhuynguyen.com/#bctc\n"
       "Cần trao đổi riêng về mã đang cầm: Zalo 0365.188.286\n\n"
       "Ba dòng và phép thử trong video là mốc tự soi, không phải lời khuyên mua bán.")
-META = {KEY: dict(kenh='@chungkhoanhuynguyen', seri='Tin nóng kể chuyện', ngay='2026-12-01', gio_goi_y='12:00', gio='12:00', nhac='lofi', can_duyet='anh Huy duyệt trước khi hẹn',
+META = {KEY: dict(kenh='@chungkhoanhuynguyen', seri='Tin nóng kể chuyện', ngay='2026-11-27', gio_goi_y='12:00', gio='12:00', nhac='lofi', can_duyet='anh Huy duyệt trước khi hẹn',
     tieu_de=TIEU, title=TIEU, mo_ta=MT,
     tags=['Mai Linh', 'taxi Mai Linh', 'Mai Linh bị thu giữ tài sản', 'nợ xấu', 'ngân hàng siết nợ', 'lỗ lũy kế', 'đọc báo cáo tài chính', 'cách chọn cổ phiếu', 'đầu tư chứng khoán', 'kinh tế Việt Nam'],
     bia_hook=['TAXI XANH', 'BỊ SIẾT NỢ'], badge='GIẢM 98% NHÂN SỰ', bia_anh='ov:Ho Chi Minh City skyline night||Hanoi skyline night',
