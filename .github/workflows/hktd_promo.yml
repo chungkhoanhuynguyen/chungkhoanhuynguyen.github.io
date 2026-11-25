@@ -64,4 +64,4 @@ jobs:
           git fetch -q --depth=1 origin video-out
           git worktree add -q ../vo origin/video-out
           mkdir -p ../vo/hktd && cp hktd_promo.mp4 hktd_promo_720.mp4 ../vo/hktd/
-          cd ../vo && git add hktd && git commit -qm "HKTĐ video quảng bá $(date +%F_%H%M)" && git push -q origin HEAD:video-out
+          cd ../vo && git add --sparse hktd && git commit -qm "HKTĐ video quảng bá $(date +%F_%H%M)" && git push -q origin HEAD:video-out
