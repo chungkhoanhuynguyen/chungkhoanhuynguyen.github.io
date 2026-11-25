@@ -9,27 +9,21 @@
 - **[6] Mỹ chưa chuyển 60 tên lửa Patriot cho Ukraine vì chưa có phê duyệt từ Bộ trưởng Chiến tranh** – Tuổi Trẻ Thế giới · 11/24/2026 3:16:
   Lô tên lửa dùng cho hệ thống phòng không Patriot chưa được Mỹ chuyển cho Ukraine vì chưa được Bộ trưởng Hegseth phê duyệt, dù Kiev đang rất cần số vũ khí này.
   https://tuoitre.vn/my-chua-chuyen-60-ten-lua-patriot-cho-ukraine-vi-chua-co-phe-duyet-tu-bo-truong-chien-tranh-100261124150001543.htm
-- **[6] Iran giữa 'cuộc chiến kinh tế thầm lặng' của Mỹ** – Thanh Niên Thế giới · Mon, 23 Nov 26 0
-  Trong khi đối phó khó khăn kinh tế trong nước do những lệnh cấm vận và phong tỏa của Mỹ, Iran cũng đang cố gắng xoay chuyển cục diện với tâm điểm áp lực mới là Bahrain.
-  https://thanhnien.vn/iran-giua-cuoc-chien-kinh-te-tham-lang-cua-my-18526112222361879.htm
+- **[5] Giá vàng thế giới quay đầu giảm mạnh** – VnExpress Kinh doanh · Wed, 25 Nov 2026
+  Sau phiên tăng vọt, giá vàng giảm gần 80 USD một ounce vì chứng khoán Mỹ đi xuống và sức ép từ lãi suất cao.
+  https://vnexpress.net/gia-vang-the-gioi-quay-dau-giam-manh-5148528.html
 - **[5] Giá vàng có thể giảm tiếp** – VnExpress Kinh doanh · Mon, 23 Nov 2026
   Kỳ vọng lạm phát giảm, đà bán tháo cổ phiếu Mỹ tiếp tục lan rộng cùng lãi suất neo cao có thể là những rủi ro của vàng tuần này, theo các chuyên gia.
   https://vnexpress.net/gia-vang-co-the-giam-tiep-5147695.html
+- **[4] Lính Mỹ thú tội chuyển thông tin quân sự 'cho Trung Quốc'** – VnExpress Thế giới · Wed, 25 Nov 2026
+  Một binh sĩ Mỹ thừa nhận chuyển giao thông tin quốc phòng cho "những người có liên hệ với Trung Quốc" và đối mặt án tù 10 năm.
+  https://vnexpress.net/linh-my-thu-toi-chuyen-thong-tin-quan-su-cho-trung-quoc-5148587.html
 - **[4] Iran hạ 4 UAV vũ trang trong 24 tiếng, vạch lằn ranh đỏ với Mỹ** – VnExpress Thế giới · Mon, 23 Nov 2026
   Vệ binh Iran tuyên bố đã bắn rơi 4 UAV Mỹ trong 24 tiếng, cảnh báo sẽ đáp trả mạnh tay nếu đối phương vượt qua lằn ranh đỏ.
   https://vnexpress.net/iran-ha-4-uav-vu-trang-trong-24-tieng-vach-lan-ranh-do-voi-my-5147916.html
 - **[4] Ông Trump: Mỹ hạ toàn bộ tên lửa, UAV Iran phóng trong tuần** – VnExpress Thế giới · Mon, 23 Nov 2026
   Tổng thống Trump tuyên bố Iran phóng lượng lớn tên lửa và UAV trong tuần qua nhưng đều bị hạ, đồng thời dọa ra lệnh tập kích sau năm mới.
   https://vnexpress.net/ong-trump-my-ha-toan-bo-ten-lua-uav-iran-phong-trong-tuan-5147766.html
-- **[4] Bahrain cáo buộc Iran tập kích cơ sở công nghiệp dân sự** – VnExpress Thế giới · Sun, 22 Nov 2026
-  Bahrain nói rằng Iran tấn công một cơ sở công nghiệp dân sự gần thủ đô Manama, gây hỏa hoạn và thiệt hại, không có thương vong.
-  https://vnexpress.net/bahrain-cao-buoc-iran-tap-kich-co-so-cong-nghiep-dan-su-5147627.html
-- **[4] Iran công bố video tên lửa phòng không 'phát nổ gần F-16 Mỹ'** – VnExpress Thế giới · Sun, 22 Nov 2026
-  Video mới công bố cho thấy tên lửa Iran phát nổ gần mục tiêu được cho là tiêm kích F-16 Mỹ, nhưng chưa rõ mức độ thiệt hại.
-  https://vnexpress.net/iran-cong-bo-video-ten-lua-phong-khong-phat-no-gan-f-16-my-5147549.html
-- **[4] Iran tuyên bố bắn trúng tiêm kích F-16, Mỹ bác bỏ** – VnExpress Thế giới · Sun, 22 Nov 2026
-  Iran tuyên bố phóng tên lửa trúng tiêm kích F-16 Mỹ ở vùng biển phía nam, song CENTCOM bác bỏ thông tin này.
-  https://vnexpress.net/iran-tuyen-bo-ban-trung-tiem-kich-f-16-my-bac-bo-5147537.html
 - **[4] Taxi Mai Linh nợ quá hạn, ngân hàng thu giữ bất động sản** – VnExpress Kinh doanh · Tue, 24 Nov 2026
   LPBank vừa thông báo thu giữ bất động sản hơn 700 m2 tại Hội An để thu hồi nợ vay của Tập đoàn Mai Linh.
   https://vnexpress.net/taxi-mai-linh-no-qua-han-ngan-hang-thu-giu-bat-dong-san-5148449.html
@@ -39,18 +33,18 @@
 - **[4] Giá vàng thế giới tăng vọt** – VnExpress Kinh doanh · Mon, 23 Nov 2026
   Mỗi ounce vàng tăng hơn 100 USD, tiến sát mốc 3.700 USD khi nhà đầu tư mua vào bắt đáy.
   https://vnexpress.net/gia-vang-the-gioi-tang-vot-5148251.html
+- **[4] Mỹ bắt binh sĩ bán bí mật quân sự cho bên mua nghi liên quan Trung Quốc** – Tuổi Trẻ Thế giới · 11/25/2026 10:53
+  Một binh sĩ Mỹ thừa nhận lợi dụng quyền tiếp cận tài liệu mật để rao bán thông tin quân sự nhạy cảm cho các bên mua được cho là liên quan Trung Quốc. Bắc Kinh chưa lên tiếng.
+  https://tuoitre.vn/my-bat-binh-si-ban-bi-mat-quan-su-cho-ben-mua-nghi-lien-quan-trung-quoc-100261125101339562.htm
+- **[4] Tin tức thế giới 25-11: Nga chỉ trích Ukraine tập kích nhà máy lọc dầu; Huawei ăn cắp bí mật thương mại Mỹ** – Tuổi Trẻ Thế giới · 11/25/2026 6:28:
+  Tổng thống Putin tuyên bố trả đũa việc Ukraine tấn công cơ sở dầu mỏ; Cổ phiếu Nvidia mất gần 6% sau khi tăng nóng.
+  https://tuoitre.vn/tin-tuc-the-gioi-25-11-nga-chi-trich-ukraine-tap-kich-nha-may-loc-dau-huawei-an-cap-bi-mat-thuong-mai-my-100261125055721058.htm
 - **[4] Đệ nhất phu nhân Mỹ Melania Trump kỳ vọng Nga - Ukraine ngừng bắn trước Giáng sinh** – Tuổi Trẻ Thế giới · 11/24/2026 8:59:
   Đệ nhất phu nhân Mỹ Melania Trump hy vọng Nga - Ukraine đạt thỏa thuận ngừng bắn mới, sau đợt ngừng bắn tại Oleshky.
   https://tuoitre.vn/de-nhat-phu-nhan-my-melania-trump-ky-vong-nga-ukraine-ngung-ban-truoc-giang-sinh-10026112408473595.htm
-- **[4] Phó Chủ tịch Hội đồng An ninh Nga Dmitry Medvedev: Ukraine và NATO đẩy Nga đến ngưỡng hạt nhân** – Tuổi Trẻ Thế giới · 11/23/2026 5:20:
-  Phó Chủ tịch Hội đồng An ninh Nga Dmitry Medvedev cho rằng Ukraine và NATO đã đẩy Nga đến ngưỡng hạt nhân. Tuy nhiên trước khi ra quyết định về tấn công hạt nhân, Matxcơva đều tiến hành đánh giá toàn diện mọi yếu tố.
-  https://tuoitre.vn/pho-chu-tich-hoi-dong-an-ninh-nga-dmitry-medvedev-ukraine-va-nato-day-nga-den-nguong-hat-nhan-100261123161434835.htm
 - **[4] Taxi Mai Linh bị ngân hàng thu giữ tài sản, lao động đăng ký giảm hàng nghìn người** – Tuổi Trẻ Kinh doanh · 11/24/2026 9:02:
   LPBank thông báo thu giữ bất động sản 707m² tại Hội An để thu hồi nợ. Trong khi đó số lao động kê khai của Tập đoàn Mai Linh giảm từ 5.500 xuống còn 120 người.
   https://tuoitre.vn/taxi-mai-linh-bi-ngan-hang-thu-giu-tai-san-lao-dong-dang-ky-giam-hang-nghin-nguoi-100261124202107518.htm
-- **[4] Đọc nhanh 24-11: Chứng khoán Mỹ bùng nổ sau tin ông Jensen Huang tái xuất, SCB có chủ tịch mới** – Tuổi Trẻ Kinh doanh · 11/24/2026 7:18:
-  Chứng khoán Mỹ tăng mạnh sau phiên 23-11. Giá dầu giảm hơn 3%. Trong nước, Ngân hàng SCB có Chủ tịch HĐQT mới; Công ty liên doanh liên quan đến diễn viên Chi Bảo giảm 99,9% vốn.
-  https://tuoitre.vn/doc-nhanh-24-11-chung-khoan-my-bung-no-sau-tin-ong-jensen-huang-tai-xuat-scb-co-chu-tich-moi-100261124061809534.htm
 - **[4] Iran tuyên bố cứng rắn về đàm phán với Mỹ** – Thanh Niên Thế giới · Tue, 24 Nov 26 1
   Iran tuyên bố lệnh phong tỏa trên bộ của Mỹ gần như không thể thực hiện đồng thời nhấn mạnh sẽ dùng mọi biện pháp để đối phó lệnh phong tỏa trên biển.
   https://thanhnien.vn/iran-tuyen-bo-cung-ran-ve-dam-phan-voi-my-185261124190718429.htm
@@ -66,12 +60,18 @@
 - **[4] Đàm phán bế tắc, Mỹ - Iran lại nắn gân nhau** – Thanh Niên Thế giới · Mon, 23 Nov 26 1
   Tổng thống Mỹ Donald Trump cảnh báo khả năng tái khởi động các cuộc tấn công vào Iran năm 2027 nếu đàm phán thất bại, trong khi Tehran phô diễn sức mạnh tên lửa và tuyên bố sẵn sàng đối đầu Washington.
   https://thanhnien.vn/dam-phan-be-tac-my-iran-lai-nan-gan-nhau-185261123102423098.htm
-- **[4] Tin tức quốc tế ngày 23.11: đảng Dân chủ Mỹ lập kỷ lục tại Hạ viện** – Thanh Niên Thế giới · Mon, 23 Nov 26 0
-  Đảng Dân chủ đã giành được ít nhất 258 ghế /435 ghế tại Hạ viện Mỹ, lập kỷ lục mới trong thế kỷ 21.
-  https://thanhnien.vn/tin-tuc-quoc-te-ngay-2311-dang-dan-chu-my-lap-ky-luc-tai-ha-vien-185261123065401241.htm
-- **[4] Hai cuộc chạy đua tại quốc hội Mỹ** – Thanh Niên Thế giới · Mon, 23 Nov 26 0
-  Trong lúc đảng Dân chủ tại quốc hội Mỹ bận rộn bầu chọn lãnh đạo cho quốc hội khóa mới, đảng Cộng hòa cố gắng thúc đẩy nghị trình an ninh của Tổng thống Donald Trump.
-  https://thanhnien.vn/hai-cuoc-chay-dua-tai-quoc-hoi-my-185261122225059534.htm
+- **[3] Lãnh đạo phe Dân chủ cáo buộc Jensen Huang bán chip tối tân cho Trung Quốc** – VnExpress Thế giới · Wed, 25 Nov 2026
+  Lãnh đạo phe Dân chủ tại Thượng viện Mỹ cáo buộc Jensen Huang vi phạm luật kiểm soát xuất khẩu khi "chuyển chip cực kỳ tiên tiến sang Trung Quốc".
+  https://vnexpress.net/lanh-dao-phe-dan-chu-cao-buoc-jensen-huang-ban-chip-toi-tan-cho-trung-quoc-5148530.html
 - **[3] Lầu Năm Góc 'trì hoãn bàn giao' loạt tên lửa Patriot cho Ukraine** – VnExpress Thế giới · Tue, 24 Nov 2026
   Khoảng 60 tên lửa Patriot mà Mỹ đồng ý cung cấp cho Ukraine, trong đó một số quả nằm ở châu Âu, chưa được Lầu Năm Góc duyệt chuyển giao.
   https://vnexpress.net/lau-nam-goc-tri-hoan-ban-giao-loat-ten-lua-patriot-cho-ukraine-5148448.html
+- **[3] Đặc vụ ICE gây bất bình sau vụ bắt hai cha con ngay cửa lên máy bay** – VnExpress Thế giới · Tue, 24 Nov 2026
+  Nhiều người biểu tình ở sân bay Seattle, trong khi Thị trưởng thành phố cho rằng việc đặc vụ ICE bắt hai cha con nhập cư ở ngay cửa lên máy bay là "phi Mỹ".
+  https://vnexpress.net/dac-vu-ice-gay-bat-binh-sau-vu-bat-hai-cha-con-ngay-cua-len-may-bay-5147970.html
+- **[3] Nữ ca sĩ Iran bị đánh roi vì không trùm đầu khi biểu diễn** – VnExpress Thế giới · Tue, 24 Nov 2026
+  Nữ ca sĩ Parastoo Ahmadi cùng ekip của cô bị phạt đánh roi vì "vi phạm thuần phong mỹ tục", do cô biểu diễn mà không đeo khăn trùm đầu.
+  https://vnexpress.net/nu-ca-si-iran-bi-danh-roi-vi-khong-trum-dau-khi-bieu-dien-5148303.html
+- **[3] Ông Medvedev nêu kịch bản Nga tung đòn phủ đầu hạt nhân** – VnExpress Thế giới · Tue, 24 Nov 2026
+  Ông Medvedev cho rằng phương Tây và Ukraine đã tạo cơ sở để Nga có thể dùng đến vũ khí hạt nhân, song Moskva chưa buộc phải ra đòn phủ đầu ngay.
+  https://vnexpress.net/ong-medvedev-neu-kich-ban-nga-tung-don-phu-dau-hat-nhan-5148212.html
