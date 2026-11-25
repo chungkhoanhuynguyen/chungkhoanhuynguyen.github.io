@@ -112,7 +112,7 @@ async def main():
             def s3(i,n):
                 c=i//60; k=i%60; sid,name,yaw,lab=cuts[c]
                 js=f"__demo.setView({1.45+k*0.004+0.1*(c%2)},{0.5+0.04*(c%2)},{21-k*0.03});"
-                if k in (1,30): js+=f"__demo.hero.face={0 if k==1 else 1.2};__demo.hero.mp=99999;__demo.castCP('{sid}',true);"
+                if k in (1,30): js+=f"__demo.hero.face={0 if k==1 else 3.14};__demo.hero.mp=99999;__demo.castCP('{sid}',true);"
                 return js+ov(a=name,c1='cap',y1=74,al=ease((k-4)/6),sc=1.25-0.25*ease((k-4)/8),fl=max(0,1-k/5)*0.5,bars=60,lab=lab,lal=ease((k-4)/6))
             await shoot('s3',240,s3)
         # S4 (5s) cảnh giới + hào quang
