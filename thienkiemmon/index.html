@@ -4298,9 +4298,10 @@ try{(function(){
   if(r()<.45)s=s.replace(/\s*\p{Extended_Pictographic}+(‍\p{Extended_Pictographic})*/gu,'');
   if(r()<.18)s=pick(['ơ ','đù ','ủa ','ê ','hmm ','thật ','vcl '])+s;
   {const mood=/đợi|trả thù|cay|giết|chửi|solo|ngon thì/.test(s)?'ang':/chạy|chuồn|sợ|tha |cứu|chết/.test(s)?'fear':/được|đc|thành công|rơi|lên |ngon|sướng|lụm/.test(s)?'joy':'n';
-   if(r()<.25)s+=pick(mood==='ang'?[' vl',' 😤','!!']:mood==='fear'?[' huhu',' 😭',' má ơi']:mood==='joy'?[' kkk',' =))',' :v',' hehe']:[' nha',' :))',' đấy',''])}
+   if(r()<.25)s+=pick(mood==='ang'?[' vl',' 😤',' cay vl']:mood==='fear'?[' huhu',' 😭',' má ơi']:mood==='joy'?[' kkk',' =))',' :v',' hehe']:[' nha',' :))',' đấy',''])}
   if(r()<.12)s=strip(s);
   if(r()<.06&&s.length>6&&!s.includes('¤')){const i=2+Math.floor(r()*(s.length-3));s=s.slice(0,i)+s[i]+s.slice(i)}
+  /* game thủ hầu như không gõ dấu câu */s=s.replace(/[!"'“”‘’…]+/g,'').replace(/\.(\s|$)/g,'$1');if(r()<.5)s=s.replace(/\?+/g,'');s=s.replace(/,(\s)/g,r()<.6?'$1':', ').replace(/\s{2,}/g,' ').trim();
   NC.set(m,s);if(NC.size>300)NC.delete(NC.keys().next().value);return s}
  const delay=m=>Math.min(10000,1300+Math.random()*1800+String(m).length*(170+Math.random()*80));
  window.__typ={nat,delay};
