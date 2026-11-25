@@ -4477,8 +4477,22 @@ try{(function(){
   {j:'thất nghiệp đang tìm việc',a:[26,35],w:'Hà Đông',s:[[9,12],[14,18],[20,24]],f:['ở nhà với bố mẹ','vợ vừa đi làm về'],l:['nộp CV mãi chưa ai gọi','chán đời vào game','phỏng vấn trượt nữa r'],b:['vợ về r off','đi phỏng vấn đây']},
   {j:'nhân viên ngân hàng',a:[25,34],w:'Hà Nội',s:[[12,13],[20,23]],f:['mới cưới','có 1 bé gái 1 tuổi'],l:['chỉ tiêu tháng này chưa đạt','khách vay toàn hồ sơ xấu','cuối quý tăng ca'],b:['vợ gọi off','mai họp giao ban sớm']},
   {j:'thợ sửa xe',a:[28,40],w:'Long An',s:[[12,13.5],[19.5,22.5]],f:['có 2 đứa con','vợ bán tạp hóa'],l:['tay dính nhớt cầm đt chơi','vừa vá xong cái lốp','tiệm ế lên cày'],b:['có xe vào r','đóng tiệm đây']}];
+ P.push({j:'sinh viên năm nhất',a:[18,19],w:'Hà Nội',s:[[15,18],[21,24],[0,1.5]],f:['ở kí túc xá','mới lên thành phố học'],l:['vừa xong tiết thể dục mệt','kí túc xá wifi lag vl','mới nhận tiền nhà gửi','sáng mai học 7h mà giờ vẫn chơi'],b:['tắt đèn kí túc r','đi học đây']},
+  {j:'học sinh lớp 10',a:[15,16],w:'Nam Định',s:[[16.5,18.5],[20.5,22.5]],f:['ở với bố mẹ','bố hay kiểm tra bài'],l:['làm xong bài tập mới được chơi','mai kiểm tra 15p toán','mẹ cho chơi 1 tiếng thôi'],b:['bố về r off','đi ngủ ko mẹ chửi']},
+  {j:'nhân viên mới ra trường',a:[22,25],w:'Sài Gòn',s:[[12,13],[20,24]],f:['ở trọ 1 mình','có ny cùng công ty'],l:['lương thử việc ít quá','sếp giao deadline gấp','mới đi làm tuần đầu mệt'],b:['mai đi làm sớm','ny gọi r']},
+  {j:'game thủ cày thuê',a:[19,26],w:'Hải Dương',s:[[0,4],[10,24]],f:['ở nhà với bố mẹ','chưa có ny'],l:['đang cày thuê acc cho khách','ngồi máy cả ngày mỏi lưng','có ai thuê cày ko ib'],b:['đi ăn đã','nghỉ tí mỏi mắt']},
+  {j:'trưởng phòng kinh doanh',a:[38,48],w:'Hà Nội',s:[[21,23.5]],f:['có vợ và 2 con','con lớn học cấp 3'],l:['tiếp khách xong về lên chơi','họp cả ngày đau đầu','đi nhậu với đối tác về'],b:['vợ giục đi ngủ','mai bay công tác']});
+ function hint(n){const s=n.toLowerCase().replace(/[^a-z0-9]/g,''),r={};let m=n.match(/(19[5-9]\d|20[01]\d)/);if(m)r.age=2026-+m[1];
+  else if((m=s.match(/([5-9]\d)$/)))r.age=2026-(1900+ +m[1]);else if(/2k(\d)?/.test(s))r.age=2026-(2000+(+(s.match(/2k(\d)/)||[0,3])[1]));else if(/9x/.test(s))r.age=27+hs(n)%9;else if(/8x/.test(s))r.age=37+hs(n)%9;
+  if(/nhoc|kid|baby|teen|hocsinh|\bhs|lop\d|boy|girl|cute|bede|emyeu|cunyeu/.test(s))r.y=1;
+  if(/bodoi|quandoi|linhgac/.test(s))r.k='bộ đội';if(/dev|coder|code|it\b/.test(s))r.k='dev';if(/grab|taxi|xeom|taixe/.test(s))r.k='tài xế';if(/ketoan/.test(s))r.k='kế toán';if(/caythue|pro|gamer|vn$|thanhnien/.test(s))r.g=1;
+  if(/trum|daica|anhba|anhhai|boss|sep|chubac|ongtrum|giaroi/.test(s))r.o=1;return r}
+ function fit(n,h){const t=hint(n);let C=P.slice();if(t.k){const f=C.filter(p=>p.j.includes(t.k));if(f.length){const p=f[h%f.length];let ag=t.age||p.a[0]+h%(p.a[1]-p.a[0]+1);ag=Math.max(p.a[0],Math.min(p.a[1]+4,ag));return [p,ag]}}
+  let age=t.age;if(!age&&t.y)age=15+h%6;if(!age&&t.o)age=34+h%12;if(!age&&t.g)age=19+h%8;
+  if(age){const k=C.filter(p=>age>=p.a[0]-1&&age<=p.a[1]+1);if(k.length)C=k;else{const all=P.filter(p=>age>=p.a[0]-1&&age<=p.a[1]+1);if(all.length)C=all}}
+  if(!C.length)C=P;const p=C[h%C.length];if(!age)age=p.a[0]+h%(p.a[1]-p.a[0]+1);return [p,age]}
  function hs(s){let h=7;for(const c of s)h=(h*31+c.charCodeAt(0))|0;return Math.abs(h)}
- function per(e){if(e.per)return e.per;const h=hs(e.name),p=P[h%P.length],fem=F.test(e.name);const age=p.a[0]+h%(p.a[1]-p.a[0]+1);
+ function per(e){if(e.per)return e.per;const h=hs(e.name),[p,age]=fit(e.name,h),fem=F.test(e.name);
   let fam=p.f[(h>>3)%p.f.length];if(fem)fam=fam.replace('có vợ','có chồng').replace('vợ ','chồng ').replace('2 thằng bạn','2 đứa bạn cùng lớp').replace('độc thân nuôi','ế nuôi').replace('đang yêu xa','ny ở xa');
   e.per={j:p.j,age,w:p.w,fam,fem,l:p.l,b:p.b};e.sch=p.s;e.jit=(h%5)/10;return e.per}
  const isB=e=>e&&e.team==='bot'&&!e.guard&&!e.net&&e.name&&e!==hero;
