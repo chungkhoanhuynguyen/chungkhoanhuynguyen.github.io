@@ -1,0 +1,1 @@
+SN2511THUE35 | 1:10 2:10 3:9 4:9 5:9 6:9 7:9 8:9 | QL1 soát 25/11 23:05 (ĐẠT văn phong, -10,8 LUFS, 81s, toàn thẻ đồ hoạ) | CHỜ ANH HUY DUYỆT đăng YouTube chính + TikTok. Bước publish Release lỗi 422 (trùng tên qc.txt) – mp4 lấy từ artifact run 45648895751.
