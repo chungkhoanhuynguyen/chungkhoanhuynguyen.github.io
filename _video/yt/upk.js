@@ -5,7 +5,7 @@
 //       4) Ghi i đã xong vào kho chi_dao kp_lich_2611 (trường xong_<kênh>), KHÔNG đăng lại i đã có.
 // An toàn: kiểm tên kênh khớp ten_kenh của dòng i; mp4 < 300KB thì dừng; lịch sai thì KHÔNG bấm Lên lịch.
 window.__KP=async(i)=>{const S=ms=>new Promise(r=>setTimeout(r,ms));
- const P=await fetch('https://raw.githubusercontent.com/chungkhoanhuynguyen/chungkhoanhuynguyen.github.io/main/_video/yt/kp_lich_2611_3112.json',{cache:'no-store'}).then(r=>r.json());
+  const P=window.__P||(window.__P=await fetch('https://raw.githubusercontent.com/chungkhoanhuynguyen/chungkhoanhuynguyen.github.io/main/_video/yt/kp_lich_2611_3112.json',{cache:'no-store'}).then(r=>r.json()));
  const p=P[i];if(!p)return 'ERR khong co dong '+i;
  const ten=(document.body.innerText.match(/Kênh của bạn\n([^\n]+)/)||[])[1]||'';
  if(ten.trim()!==p.ten_kenh)return 'ERR SAI KENH: dang o "'+ten+'", can "'+p.ten_kenh+'"';
@@ -26,9 +26,9 @@ window.__KP=async(i)=>{const S=ms=>new Promise(r=>setTimeout(r,ms));
  const link=[...D.querySelectorAll('a')].map(x=>x.href).find(h=>/youtu\.be|shorts/.test(h))||'';
  D.querySelector('#second-container-expand-button')?.click();await S(1200);
  const [y,m,d]=p.ngay.split('-').map(Number);const want=d+' thg '+m+', '+y;
- D.querySelector('#datepicker-trigger').click();await S(900);
- const di=[...document.querySelectorAll('ytcp-date-picker input, tp-yt-paper-dialog input')].find(x=>x.offsetParent&&/thg/.test(x.value));
- if(di){di.focus();di.select();document.execCommand('insertText',false,want);di.dispatchEvent(new KeyboardEvent('keydown',{key:'Enter',keyCode:13,bubbles:true}));await S(900);}
+ for(let t=0;t<4&&D.querySelector('#datepicker-trigger').innerText.trim()!==want;t++){D.querySelector('#datepicker-trigger').click();await S(1200);
+  const di=[...document.querySelectorAll('ytcp-date-picker input, tp-yt-paper-dialog input')].find(x=>x.offsetParent&&/thg/.test(x.value));
+  if(di){di.focus();di.select();document.execCommand('insertText',false,want);await S(300);di.dispatchEvent(new KeyboardEvent('keydown',{key:'Enter',keyCode:13,bubbles:true}));await S(1200);}}
  const ti=D.querySelector('#time-of-day-container input');ti.click();await S(1200);
  const its=[...document.querySelectorAll('tp-yt-paper-item')].filter(x=>x.innerText.trim()===p.gio);const it=its.find(x=>x.offsetParent)||its[0];if(it){it.scrollIntoView();it.click();}await S(800);
  const got=D.querySelector('#datepicker-trigger').innerText.trim(),gh=ti.value;
