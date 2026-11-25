@@ -74,6 +74,7 @@ def lon(sp, t):
     # 13/11 NV1: canh giữa theo chiều dọc + tự co chữ khi tràn ngang (RV1311GDP V1: chữ dồn mép trên, nửa dưới thẻ trống)
     im, d = nen(sp, t); dong = []
     for s, sz, c in sp["dong"]:
+        s = s.replace("→", "»")   # (25/11 QL1, SN2511NOXAU: font Black không có ký tự mũi tên → bị mất, hiện khoảng trắng)
         while sz > 30 and d.textlength(s, font=F("Black", sz)) > W - 90: sz -= 4
         dong.append((s, sz, c))
     tong = sum(int(sz * 1.35) for _, sz, _ in dong); y = max(200, int(200 + (H - 150 - 200 - tong) / 2))
