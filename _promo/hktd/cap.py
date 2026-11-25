@@ -50,7 +50,7 @@ async def main():
         pg = await (await b.new_context(viewport={'width':1280,'height':720})).new_page()
         pg.on('pageerror', lambda e: print('ERR', e))
         await pg.add_init_script(VT)
-        await pg.goto(BASE+'index.html?noktx&noacct&noadapt', wait_until='commit')
+        await pg.goto(BASE+'index.html?noktx&noacct&noadapt&bfnow', wait_until='commit')
         await pg.wait_for_function("()=>document.getElementById('cgo')&&!document.getElementById('cgo').disabled", timeout=400000)
         await pg.evaluate("()=>{const c=document.getElementById('cn');c.value='Huyền Kiếm';c.dataset.ed='1';document.getElementById('cgo').click()}")
         await pg.wait_for_function("()=>window.__demo && window.__demo.hero", timeout=400000)
@@ -59,7 +59,7 @@ async def main():
         await pg.evaluate("""()=>{const D=__demo;D.TU.realm=2;D.TU.tang=10;
           D.TU.tong='kim';for(let i=0;i<14;i++)D.INV.bag.push(D.mkItem(5+(i%2)));D.wearBest();
           D.hero.mp=99999;D.hero.max=D.hero.hp=999999;document.getElementById('npcp')&&(document.getElementById('npcp').style.display='none');
-          document.getElementById('invw')&&(document.getElementById('invw').style.display='none');__vtOn()}""")
+          document.getElementById('invw')&&(document.getElementById('invw').style.display='none');__vtOn();window.scrFlash=function(){}}""")
         await pg.wait_for_timeout(1500)
         frame = [0]
         async def shoot(scene, n, per):
@@ -150,7 +150,7 @@ async def main():
                     js+=f"{{const al=B.sol.filter(o=>!o.dead);const o=al[Math.floor(Math.random()*al.length)];if(o)D.castAt('{sid}',o.x,o.z)}}"
                 if i%25==5:
                     js+=f"D.hero.face=Math.PI;D.castCP('{ids[(i//25)%len(ids)]}',false);"
-                return js+ov(a='CHIẾN TRƯỜNG TIÊN MA',b='20:00 mỗi tối · 100 đấu 100 · bản đồ 3 đường · phá Linh Tinh địch',al=ease((i-6)/12),bars=60,lab='TIÊN ☯ MA',lal=ease((i-6)/12))
+                return js+ov(a='CHIẾN TRƯỜNG TIÊN MA',b='20:00 mỗi tối · hàng trăm tu sĩ · bản đồ 3 đường · phá Linh Tinh địch',al=ease((i-6)/12),bars=60,lab='TIÊN ☯ MA',lal=ease((i-6)/12))
             await shoot('s7',300,s7)
         # S8 (4s) kết
         if 's8' in which:
