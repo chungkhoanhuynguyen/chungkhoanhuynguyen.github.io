@@ -1,0 +1,64 @@
+[
+ {
+  "key": "SN2611MEME",
+  "kieu": "meme",
+  "thoi_luong": 20,
+  "nhan": "PHIÊN 26/11/2026",
+  "tieu_de_2dong": [
+   "CHÂU Á HỒI PHỤC XANH",
+   "VN-INDEX: -57,77 ĐIỂM"
+  ],
+  "cau_chot": "Hàng xóm mở tiệc…\nnhà mình dọn nhà",
+  "bieu_do": {
+   "tieu": "VN-INDEX 25/11 → 26/11/2026",
+   "diem": [
+    [
+     "Đóng cửa 25/11",
+     1687.45
+    ],
+    [
+     "Đóng cửa 26/11",
+     1629.68
+    ]
+   ],
+   "nd": 2,
+   "dv": "",
+   "nguon": "CafeF 26/11/2026",
+   "mau": "do"
+  },
+  "clip": [
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Oktoberfest_2022_dance.webm",
+    "tu": 0,
+    "den": 6
+   },
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lindy_Hop_dancing_at_Mobtown_Ballroom,_October_2024.webm",
+    "tu": 16,
+    "den": 22
+   }
+  ],
+  "clip_du_phong": [
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lindy_Hop_dancing_at_Mobtown_Ballroom,_October_2024.webm",
+    "tu": 1,
+    "den": 7
+   }
+  ],
+  "nguon_clip": "Wikimedia Commons – Oktoberfest 2022 dance; Lindy Hop dancing at Mobtown Ballroom (10/2024)",
+  "tu_khoa_anh": "crowd dancing party",
+  "giu_tieng": 0,
+  "music_db": 0,
+  "caption": "Phiên 26/11/2026, trong khi các thị trường châu Á hồi phục, VN-Index mất 57,77 điểm (-3,42%) về 1.629,68 điểm – thị trường giảm mạnh nhất thế giới phiên này, thấp nhất từ trung tuần tháng 3. Lần gần nhất giảm mạnh cỡ này là 22/7 (mất hơn 62 điểm, -3,58%).\n\nVì sao? Tối 25/11, USTR đề xuất thuế bổ sung tới 35% với hàng Việt Nam. Đây mới là đề xuất, chưa có hiệu lực; Bộ Công Thương cho biết có thể giảm còn 20% nếu hai nước đạt hiệp định thương mại đối ứng, quyết định cuối dự kiến chậm nhất 11/3/2027. Thanh khoản khoảng 15.772 tỷ đồng, lực bắt đáy còn dè dặt.\n\nNguồn số liệu: CafeF (26/11/2026 15:50 và 15:52), VnExpress (26/11/2026). Nguồn clip: Wikimedia Commons (giấy phép mở).",
+  "binh_chon": [
+   "1️⃣ Sốc tin thuế, chờ đàm phán rồi tính",
+   "2️⃣ Đứng ngoài cho chắc"
+  ],
+  "tags": [
+   "chungkhoan",
+   "VNIndex",
+   "thue",
+   "huynguyenchungkhoan"
+  ]
+ }
+]

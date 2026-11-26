@@ -1,0 +1,1852 @@
+[
+ {
+  "key": "SN2611VNI58",
+  "tieu_de": "Phiên 26/11 VN-Index mất 57,77 điểm về 1.629,68: chứng khoán Việt Nam giảm mạnh nhất thế giới",
+  "hook": [
+   "MẤT 57,77 ĐIỂM",
+   "GIẢM NHẤT THẾ GIỚI"
+  ],
+  "nhan": "TIN NÓNG · 26/11/2026",
+  "short_caption": "Đóng cửa phiên 26/11/2026, VN-Index mất 57,77 điểm (3,42%) về 1.629,68 điểm, thấp nhất từ trung tuần tháng 3 và là mức giảm mạnh nhất thế giới phiên này, sau đề xuất thuế tới 35% của USTR ngày 25/11. Nguồn: CafeF 26/11/2026.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "ANH CHỊ LÀM GÌ?",
+   "loi": "Phiên mất gần 58 điểm, anh chị A: đứng ngoài chờ rõ chuyện thuế, hay B: vẫn theo kế hoạch của mình?",
+   "loi_doc": "Phiên mất gần năm mươi tám điểm, anh chị A: đứng ngoài chờ rõ chuyện thuế, hay B: vẫn theo kế hoạch của mình?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "ANH CHỊ LÀM GÌ?",
+    "dong": [
+     [
+      "A: CHỜ RÕ THUẾ",
+      84,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: THEO KẾ HOẠCH",
+      84,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "MẤT 57,77 ĐIỂM",
+    "loi": "Tài khoản anh chị đỏ cỡ nào? Đóng cửa 26/11, VN-Index mất 57,77 điểm, tức 3,42%, lùi về 1.629,68 điểm.",
+    "loi_doc": "Tài khoản anh chị đỏ cỡ nào? Đóng cửa hai mươi sáu tháng mười một, V N Index mất năm mươi bảy phẩy bảy mươi bảy điểm, tức ba phẩy bốn mươi hai phần trăm, lùi về một nghìn sáu trăm hai mươi chín phẩy sáu mươi tám điểm.",
+    "anh": [],
+    "the": {
+     "loai": "giam",
+     "tieu": "VN-INDEX PHIÊN 26/11/2026",
+     "a": [
+      "25/11",
+      1687.45
+     ],
+     "b": [
+      "26/11",
+      1629.68
+     ],
+     "dv": " ĐIỂM",
+     "dau": "-3,42%",
+     "nguon": "CafeF 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "GIẢM MẠNH NHẤT THẾ GIỚI",
+    "loi": "Châu Á hồi phục, còn Việt Nam thành thị trường giảm mạnh nhất thế giới phiên này.",
+    "loi_doc": "Châu Á hồi phục, còn Việt Nam thành thị trường giảm mạnh nhất thế giới phiên này.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "PHIÊN 26/11/2026",
+     "dong": [
+      [
+       "CHÂU Á HỒI PHỤC",
+       60,
+       "trang"
+      ],
+      [
+       "VIỆT NAM -3,42%",
+       96,
+       "do"
+      ],
+      [
+       "GIẢM MẠNH NHẤT THẾ GIỚI",
+       48,
+       "vang"
+      ]
+     ],
+     "nguon": "CafeF 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "THẤP NHẤT TỪ THÁNG 3",
+    "loi": "Đây là mức thấp nhất từ trung tuần tháng 3. Lần gần nhất giảm mạnh cỡ này là ngày 22/7, khi VN-Index mất hơn 62 điểm, tức 3,58%.",
+    "loi_doc": "Đây là mức thấp nhất từ trung tuần tháng ba. Lần gần nhất giảm mạnh cỡ này là ngày hai mươi hai tháng bảy, khi V N Index mất hơn sáu mươi hai điểm, tức ba phẩy năm mươi tám phần trăm.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "SO VỚI CÁC PHIÊN TRƯỚC",
+     "dong": [
+      [
+       "THẤP NHẤT TỪ GIỮA THÁNG 3",
+       52,
+       "vang"
+      ],
+      [
+       "22/7: MẤT HƠN 62 ĐIỂM",
+       60,
+       "do"
+      ],
+      [
+       "-3,58%",
+       80,
+       "do"
+      ]
+     ],
+     "nguon": "CafeF 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "CÚ SỐC THUẾ 35%",
+    "loi": "Nguyên nhân chính: tối 25/11, Mỹ đề xuất thuế tới 35% với hàng Việt Nam. Đây mới là đề xuất, chưa có hiệu lực.",
+    "loi_doc": "Nguyên nhân chính: tối hai mươi lăm tháng mười một, Mỹ đề xuất thuế tới ba mươi lăm phần trăm với hàng Việt Nam. Đây mới là đề xuất, chưa có hiệu lực.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "ĐỀ XUẤT CỦA USTR 25/11",
+     "dong": [
+      [
+       "TỚI 35%",
+       120,
+       "do"
+      ],
+      [
+       "MỚI LÀ ĐỀ XUẤT",
+       52,
+       "trang"
+      ],
+      [
+       "CHỐT CHẬM NHẤT 11/3/2027",
+       46,
+       "vang"
+      ]
+     ],
+     "nguon": "CafeF 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "TIỀN BẮT ĐÁY DÈ DẶT",
+    "loi": "Thanh khoản chỉ khoảng 15.772 tỷ đồng, tiền bắt đáy còn dè dặt. Ngày sốc tin, bán vội thường đắt hơn mức giảm.",
+    "loi_doc": "Thanh khoản chỉ khoảng mười lăm nghìn bảy trăm bảy mươi hai tỷ đồng, tiền bắt đáy còn dè dặt. Ngày sốc tin, bán vội thường đắt hơn mức giảm.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "THANH KHOẢN PHIÊN 26/11",
+     "dong": [
+      [
+       "15.772 TỶ ĐỒNG",
+       96,
+       "vang"
+      ],
+      [
+       "CẦU BẮT ĐÁY DÈ DẶT",
+       52,
+       "trang"
+      ]
+     ],
+     "nguon": "CafeF 26/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin tiền túi và diễn biến từng phiên, em cập nhật trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin tiền túi và diễn biến từng phiên, em cập nhật trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "BẢN ĐỒ NHIỆT · TIN NÓNG",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SN2611XANG",
+  "tieu_de": "Từ 15h ngày 26/11 xăng giảm kỳ thứ 6 trong tháng: E5 còn 18.390 đồng, diesel còn 24.960 đồng",
+  "hook": [
+   "XĂNG GIẢM KỲ THỨ 6",
+   "E5 CÒN 18.390Đ"
+  ],
+  "nhan": "TIN NÓNG · 26/11/2026",
+  "short_caption": "Từ 15h ngày 26/11/2026, E5 RON 92 giảm 180 đồng còn 18.390 đồng/lít, E10 RON 95 còn 19.050 đồng, diesel còn 24.960 đồng; từ đầu tháng 11 xăng đã 6 kỳ giảm, E10 thấp hơn gần 6.700 đồng so với cuối tháng trước. Nguồn: VnExpress 26/11/2026 (liên Bộ Công Thương – Tài chính).",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "CHI PHÍ NHẸ CHƯA?",
+   "loi": "Xăng giảm sáu kỳ, chi phí đi lại nhà anh chị A: đã nhẹ hơn, hay B: vẫn như cũ?",
+   "loi_doc": "Xăng giảm sáu kỳ, chi phí đi lại nhà anh chị A: đã nhẹ hơn, hay B: vẫn như cũ?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHI PHÍ NHẸ CHƯA?",
+    "dong": [
+     [
+      "A: NHẸ HƠN",
+      84,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: VẪN NHƯ CŨ",
+      84,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "E5 CÒN 18.390 ĐỒNG",
+    "loi": "Đổ xăng tối nay rẻ hơn bao nhiêu? Từ 15 giờ ngày 26/11, xăng E5 giảm 180 đồng, còn 18.390 đồng một lít.",
+    "loi_doc": "Đổ xăng tối nay rẻ hơn bao nhiêu? Từ mười lăm giờ ngày hai mươi sáu tháng mười một, xăng E năm giảm một trăm tám mươi đồng, còn mười tám nghìn ba trăm chín mươi đồng một lít.",
+    "anh": [],
+    "the": {
+     "loai": "giam",
+     "tieu": "XĂNG E5 RON 92 (ĐỒNG/LÍT)",
+     "a": [
+      "TRƯỚC 26/11",
+      18570
+     ],
+     "b": [
+      "15H 26/11",
+      18390
+     ],
+     "dv": "Đ",
+     "dau": "-180Đ",
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "E10 VÀ DẦU",
+    "loi": "Xăng E10 chỉ giảm 50 đồng, còn 19.050 đồng. Dầu giảm mạnh hơn, từ 1.100 đến 1.380 đồng, diesel còn 24.960 đồng một lít.",
+    "loi_doc": "Xăng E mười chỉ giảm năm mươi đồng, còn mười chín nghìn không trăm năm mươi đồng. Dầu giảm mạnh hơn, từ một nghìn một trăm đến một nghìn ba trăm tám mươi đồng, diesel còn hai mươi bốn nghìn chín trăm sáu mươi đồng một lít.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "GIÁ MỚI TỪ 15H 26/11",
+     "dong": [
+      [
+       "E10: 19.050Đ",
+       72,
+       "trang"
+      ],
+      [
+       "DIESEL: 24.960Đ",
+       72,
+       "vang"
+      ],
+      [
+       "DẦU GIẢM 1.100–1.380Đ",
+       48,
+       "do"
+      ]
+     ],
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "6 KỲ GIẢM",
+    "loi": "Từ đầu tháng 11, xăng đã sáu kỳ giảm. Mỗi lít E10 rẻ hơn gần 6.700 đồng, diesel gần 5.300 đồng so với cuối tháng trước.",
+    "loi_doc": "Từ đầu tháng mười một, xăng đã sáu kỳ giảm. Mỗi lít E mười rẻ hơn gần sáu nghìn bảy trăm đồng, diesel gần năm nghìn ba trăm đồng so với cuối tháng trước.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "TỪ ĐẦU THÁNG 11/2026",
+     "dong": [
+      [
+       "6 KỲ GIẢM",
+       110,
+       "vang"
+      ],
+      [
+       "E10 HẠ GẦN 6.700Đ/LÍT",
+       54,
+       "trang"
+      ],
+      [
+       "DIESEL HẠ GẦN 5.300Đ",
+       54,
+       "trang"
+      ]
+     ],
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "VÌ SAO GIẢM?",
+    "loi": "Xăng RON 95 thế giới giảm 8,6%, còn 94,3 đô một thùng. Giá trong nước về ngang trước xung đột Trung Đông.",
+    "loi_doc": "Xăng RON chín mươi lăm thế giới giảm tám phẩy sáu phần trăm, còn chín mươi tư phẩy ba đô một thùng. Giá trong nước về ngang trước xung đột Trung Đông.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "THẾ GIỚI 19/11 → 26/11",
+     "dong": [
+      [
+       "RON 95: 94,3 USD/THÙNG",
+       56,
+       "trang"
+      ],
+      [
+       "GIẢM 8,6%",
+       96,
+       "do"
+      ]
+     ],
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "QUỸ BÌNH ỔN TRÍCH LẠI",
+    "loi": "Kỳ này liên Bộ cho trích lại quỹ bình ổn 1.400 đồng mỗi lít xăng sinh học, nên giá bán giảm ít hơn mức giảm thế giới.",
+    "loi_doc": "Kỳ này liên Bộ cho trích lại quỹ bình ổn một nghìn bốn trăm đồng mỗi lít xăng sinh học, nên giá bán giảm ít hơn mức giảm thế giới.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "TRÍCH QUỸ BÌNH ỔN",
+     "dong": [
+      [
+       "1.400Đ/LÍT XĂNG",
+       90,
+       "vang"
+      ],
+      [
+       "DIESEL 500Đ/LÍT",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "VnExpress 26/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin tiền túi và diễn biến từng phiên, em cập nhật trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin tiền túi và diễn biến từng phiên, em cập nhật trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "BẢN ĐỒ NHIỆT · TIN NÓNG",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SN2611LAIVAY",
+  "tieu_de": "Gửi tiết kiệm 12 tháng chỉ 4,8–7%, vay mua nhà vẫn 9,5–12%: vay 2 tỷ trả lãi bao nhiêu mỗi tháng?",
+  "hook": [
+   "GỬI 12 THÁNG 4,8%",
+   "VAY NHÀ VẪN 12%?"
+  ],
+  "nhan": "TIN NÓNG · 26/11/2026",
+  "short_caption": "Lãi tiền gửi 12 tháng hiện 4,8–7%/năm sau khi 46 ngân hàng giảm lãi niêm yết, nhưng lãi vay mua nhà cố định 12 tháng tại 11 ngân hàng vẫn phổ biến 9,5–12%/năm (DKRA, cuối tháng 10). Vay 2 tỷ, lãi năm đầu khoảng 15,8–20 triệu đồng mỗi tháng. Nguồn: VnExpress 26/11/2026.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "VAY HAY CHỜ?",
+   "loi": "Lãi vay mua nhà 9,5 đến 12%, anh chị A: vẫn vay mua, hay B: chờ lãi giảm thêm?",
+   "loi_doc": "Lãi vay mua nhà chín phẩy năm đến mười hai phần trăm, anh chị A: vẫn vay mua, hay B: chờ lãi giảm thêm?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "VAY HAY CHỜ?",
+    "dong": [
+     [
+      "A: VẪN VAY",
+      84,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: CHỜ GIẢM",
+      84,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "GỬI CÒN 4,8–7%",
+    "loi": "Lãi gửi tiết kiệm đã giảm, sao lãi vay mua nhà chưa giảm theo? Đến cuối tháng 10, cả 46 ngân hàng thương mại đã hạ lãi tiền gửi niêm yết 0,5 đến 0,7 điểm phần trăm.",
+    "loi_doc": "Lãi gửi tiết kiệm đã giảm, sao lãi vay mua nhà chưa giảm theo? Đến cuối tháng mười, cả bốn mươi sáu ngân hàng thương mại đã hạ lãi tiền gửi niêm yết không phẩy năm đến không phẩy bảy điểm phần trăm.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "LÃI TIỀN GỬI CUỐI THÁNG 10",
+     "dong": [
+      [
+       "46 NGÂN HÀNG GIẢM",
+       64,
+       "trang"
+      ],
+      [
+       "0,5–0,7 ĐIỂM %",
+       80,
+       "vang"
+      ],
+      [
+       "12 THÁNG: 4,8–7%/NĂM",
+       54,
+       "trang"
+      ]
+     ],
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "VAY NHÀ VẪN 9,5–12%",
+    "loi": "Trong khi đó, lãi vay mua nhà cố định 12 tháng tại 11 ngân hàng vẫn phổ biến 9,5 đến 12% một năm, không giảm so với quý ba, theo DKRA.",
+    "loi_doc": "Trong khi đó, lãi vay mua nhà cố định mười hai tháng tại mười một ngân hàng vẫn phổ biến chín phẩy năm đến mười hai phần trăm một năm, không giảm so với quý ba, theo D K R A.",
+    "anh": [],
+    "the": {
+     "loai": "cot",
+     "tieu": "LÃI 12 THÁNG (%/NĂM)",
+     "hang": [
+      [
+       "GỬI CAO",
+       7
+      ],
+      [
+       "VAY THẤP",
+       9.5
+      ],
+      [
+       "VAY CAO",
+       12
+      ]
+     ],
+     "noi": [
+      2
+     ],
+     "dv": "%",
+     "max": 13,
+     "nguon": "DKRA qua VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "VAY 2 TỶ TRẢ BAO NHIÊU?",
+    "loi": "Em tính thử vay 2 tỷ: lãi 9,5% là hơn 15,8 triệu mỗi tháng, lãi 12% là 20 triệu mỗi tháng, chưa tính tiền gốc.",
+    "loi_doc": "Em tính thử vay hai tỷ: lãi chín phẩy năm phần trăm là hơn mười lăm phẩy tám triệu mỗi tháng, lãi mười hai phần trăm là hai mươi triệu mỗi tháng, chưa tính tiền gốc.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "VAY 2 TỶ · TIỀN LÃI MỖI THÁNG",
+     "dong": [
+      [
+       "9,5%: HƠN 15,8 TRIỆU",
+       60,
+       "trang"
+      ],
+      [
+       "12%: 20 TRIỆU",
+       84,
+       "do"
+      ],
+      [
+       "CHƯA TÍNH GỐC",
+       44,
+       "vang"
+      ]
+     ],
+     "nguon": "Em tính từ số VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "ƯU ĐÃI ĐI ĐÂU?",
+    "loi": "Hơn 20 ngân hàng có gói giảm lãi 1,5 đến 2%, nhưng chủ yếu cho sản xuất kinh doanh.",
+    "loi_doc": "Hơn hai mươi ngân hàng có gói giảm lãi một phẩy năm đến hai phần trăm, nhưng chủ yếu cho sản xuất kinh doanh.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "GÓI ƯU ĐÃI",
+     "dong": [
+      [
+       "HƠN 20 NGÂN HÀNG",
+       64,
+       "trang"
+      ],
+      [
+       "GIẢM 1,5–2%",
+       90,
+       "vang"
+      ],
+      [
+       "ƯU TIÊN SẢN XUẤT",
+       50,
+       "trang"
+      ]
+     ],
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "CHÊNH 3 ĐẾN 5 ĐIỂM",
+    "loi": "Gửi 7% mà vay 12% là chênh 5 điểm phần trăm. Lãi vay cao cũng là sức ép với cổ phiếu bất động sản.",
+    "loi_doc": "Gửi bảy phần trăm mà vay mười hai phần trăm là chênh năm điểm phần trăm. Lãi vay cao cũng là sức ép với cổ phiếu bất động sản.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "GỬI VS VAY",
+     "dong": [
+      [
+       "CHÊNH TỚI 5 ĐIỂM %",
+       76,
+       "do"
+      ],
+      [
+       "ÁP LỰC LÊN NGƯỜI MUA NHÀ",
+       48,
+       "trang"
+      ]
+     ],
+     "nguon": "VnExpress 26/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin tiền túi và diễn biến từng phiên, em cập nhật trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin tiền túi và diễn biến từng phiên, em cập nhật trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "BẢN ĐỒ NHIỆT · TIN NÓNG",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2611TRADA",
+  "tieu_de": "135 cổ phiếu giá ngang ly trà đá: KOS từ 39.150 xuống 2.600 đồng, mất gần 94% từ đỉnh năm",
+  "hook": [
+   "135 MÃ DƯỚI 5.000Đ",
+   "RẺ NHƯ LY TRÀ ĐÁ?"
+  ],
+  "nhan": "TIN NÓNG · 25/11/2026",
+  "short_caption": "Cuối phiên 25/11/2026, khoảng 135 cổ phiếu trên HoSE, HNX, UPCoM có giá từ 5.000 đồng trở xuống, gần 9% số mã đang giao dịch; KOS từ 39.150 đồng xuống 2.600 đồng, mất gần 94% so với đỉnh năm. Nguồn: VnExpress 26/11/2026.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "RẺ HAY RẺ CÓ LÝ DO?",
+   "loi": "Cổ phiếu giá trà đá, anh chị A: thấy rẻ nên để ý, hay B: rẻ là có lý do?",
+   "loi_doc": "Cổ phiếu giá trà đá, anh chị A: thấy rẻ nên để ý, hay B: rẻ là có lý do?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "RẺ HAY RẺ CÓ LÝ DO?",
+    "dong": [
+     [
+      "A: ĐỂ Ý",
+      84,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: CÓ LÝ DO",
+      84,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "135 MÃ GIÁ TRÀ ĐÁ",
+    "loi": "Một cổ phiếu rẻ ngang ly trà đá, mua có lời không? Cuối phiên 25/11, khoảng 135 cổ phiếu trên ba sàn có giá từ 5.000 đồng trở xuống.",
+    "loi_doc": "Một cổ phiếu rẻ ngang ly trà đá, mua có lời không? Cuối phiên hai mươi lăm tháng mười một, khoảng một trăm ba mươi lăm cổ phiếu trên ba sàn có giá từ năm nghìn đồng trở xuống.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "CỔ PHIẾU ≤ 5.000 ĐỒNG · 25/11",
+     "dong": [
+      [
+       "135 MÃ",
+       130,
+       "vang"
+      ],
+      [
+       "GẦN 9% SỐ MÃ GIAO DỊCH",
+       50,
+       "trang"
+      ]
+     ],
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "SÀN NÀO NHIỀU NHẤT?",
+    "loi": "Hô-xê có 51 mã, chiếm 12,4% sàn. Hà Nội 30 mã, Upcom 54 mã.",
+    "loi_doc": "Hô-xê có năm mươi mốt mã, chiếm mười hai phẩy bốn phần trăm sàn. Hà Nội ba mươi mã, Úp com năm mươi tư mã.",
+    "anh": [],
+    "the": {
+     "loai": "cot",
+     "tieu": "SỐ MÃ ≤ 5.000Đ THEO SÀN",
+     "hang": [
+      [
+       "HOSE",
+       51
+      ],
+      [
+       "HNX",
+       30
+      ],
+      [
+       "UPCOM",
+       54
+      ]
+     ],
+     "noi": [
+      0
+     ],
+     "dv": "",
+     "max": 60,
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "CÒN VÀI TRĂM ĐỒNG",
+    "loi": "Có mã chỉ còn vài trăm đồng: HHG 700 đồng, VPG 890 đồng, TTF 1.110 đồng.",
+    "loi_doc": "Có mã chỉ còn vài trăm đồng: H H G bảy trăm đồng, V P G tám trăm chín mươi đồng, T T F một nghìn một trăm mười đồng.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "GIÁ ĐÓNG CỬA 25/11",
+     "dong": [
+      [
+       "HHG: 700Đ",
+       72,
+       "do"
+      ],
+      [
+       "VPG: 890Đ",
+       72,
+       "do"
+      ],
+      [
+       "TTF: 1.110Đ",
+       72,
+       "trang"
+      ]
+     ],
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "MẤT GẦN 94%",
+    "loi": "Nặng nhất là KOS, từ 39.150 đồng xuống 2.600 đồng, mất gần 94% so với giá cao nhất từ đầu năm.",
+    "loi_doc": "Nặng nhất là K O S, từ ba mươi chín nghìn một trăm năm mươi đồng xuống hai nghìn sáu trăm đồng, mất gần chín mươi tư phần trăm so với giá cao nhất từ đầu năm.",
+    "anh": [],
+    "the": {
+     "loai": "giam",
+     "tieu": "KOS TỪ ĐỈNH NĂM 2026",
+     "a": [
+      "ĐỈNH NĂM",
+      39150
+     ],
+     "b": [
+      "25/11",
+      2600
+     ],
+     "dv": "Đ",
+     "dau": "GẦN -94%",
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "RẺ CÓ LÝ DO",
+    "loi": "Theo chuyên gia được VnExpress phỏng vấn, nhiều mã bị dòng tiền bỏ lại vì kinh doanh kém, lỗ kéo dài, tài chính yếu. Giá thấp chưa chắc là rẻ.",
+    "loi_doc": "Theo chuyên gia được VnExpress phỏng vấn, nhiều mã bị dòng tiền bỏ lại vì kinh doanh kém, lỗ kéo dài, tài chính yếu. Giá thấp chưa chắc là rẻ.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "VÌ SAO BỊ BỎ LẠI?",
+     "dong": [
+      [
+       "KINH DOANH KÉM",
+       64,
+       "trang"
+      ],
+      [
+       "TÀI CHÍNH YẾU",
+       64,
+       "trang"
+      ],
+      [
+       "GIÁ THẤP ≠ RẺ",
+       84,
+       "vang"
+      ]
+     ],
+     "nguon": "VnExpress 26/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin tiền túi và diễn biến từng phiên, em cập nhật trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin tiền túi và diễn biến từng phiên, em cập nhật trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "BẢN ĐỒ NHIỆT · TIN NÓNG",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2611CAPHE",
+  "tieu_de": "Cà phê tươi còn 15.000 đồng/kg: được mùa thêm 6 tấn, doanh thu vẫn hụt 185 triệu",
+  "hook": [
+   "CÀ PHÊ 15.000Đ/KG",
+   "ĐƯỢC MÙA MẤT GIÁ"
+  ],
+  "nhan": "TIN NÓNG · 26/11/2026",
+  "short_caption": "Giá thu mua cà phê tươi xuống khoảng 15.000 đồng/kg, giảm 40% so với cùng kỳ; một hộ ở Quảng Ngãi thu 31 tấn (thêm 6 tấn) nhưng doanh thu chỉ khoảng 465 triệu đồng so với 650 triệu năm ngoái. Nguồn: VnExpress 26/11/2026.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "ĐƯỢC MÙA MẤT GIÁ",
+   "loi": "Được mùa mất giá, anh chị A: thấy giá nông sản sẽ hồi, hay B: còn khó dài?",
+   "loi_doc": "Được mùa mất giá, anh chị A: thấy giá nông sản sẽ hồi, hay B: còn khó dài?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "ĐƯỢC MÙA MẤT GIÁ",
+    "dong": [
+     [
+      "A: SẼ HỒI",
+      84,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: CÒN KHÓ",
+      84,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "15.000 ĐỒNG MỘT KÝ",
+    "loi": "Được mùa mà nông dân vẫn hụt tiền, vì sao? Ngày 26/11, giá thu mua cà phê tươi chỉ còn khoảng 15.000 đồng một ký, giảm 40% so với cùng kỳ.",
+    "loi_doc": "Được mùa mà nông dân vẫn hụt tiền, vì sao? Ngày hai mươi sáu tháng mười một, giá thu mua cà phê tươi chỉ còn khoảng mười lăm nghìn đồng một ký, giảm bốn mươi phần trăm so với cùng kỳ.",
+    "anh": [
+     "coffee cherries harvest||coffee cherries"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "CÀ PHÊ TƯƠI · THÁNG 11/2026",
+     "dong": [
+      [
+       "15.000Đ/KG",
+       110,
+       "vang"
+      ],
+      [
+       "GIẢM 40% SO CÙNG KỲ",
+       56,
+       "do"
+      ]
+     ],
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "THÊM 6 TẤN",
+    "loi": "Một hộ ở Đắk Hà, Quảng Ngãi thu 31 tấn cà phê tươi, nhiều hơn năm ngoái 6 tấn.",
+    "loi_doc": "Một hộ ở Đắk Hà, Quảng Ngãi thu ba mươi mốt tấn cà phê tươi, nhiều hơn năm ngoái sáu tấn.",
+    "anh": [
+     "coffee plantation robusta||coffee plantation"
+    ],
+    "the": {
+     "loai": "cot",
+     "tieu": "SẢN LƯỢNG MỘT HỘ (TẤN)",
+     "hang": [
+      [
+       "NĂM NGOÁI",
+       25
+      ],
+      [
+       "NĂM NAY",
+       31
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 35,
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "DOANH THU HỤT 185 TRIỆU",
+    "loi": "Nhưng doanh thu từ 650 triệu chỉ còn khoảng 465 triệu đồng, giảm 28,5%. Tiền lãi từ 350 triệu còn khoảng 200 triệu.",
+    "loi_doc": "Nhưng doanh thu từ sáu trăm năm mươi triệu chỉ còn khoảng bốn trăm sáu mươi lăm triệu đồng, giảm hai mươi tám phẩy năm phần trăm. Tiền lãi từ ba trăm năm mươi triệu còn khoảng hai trăm triệu.",
+    "anh": [],
+    "the": {
+     "loai": "giam",
+     "tieu": "DOANH THU MỘT HỘ (TRIỆU Đ)",
+     "a": [
+      "NĂM NGOÁI",
+      650
+     ],
+     "b": [
+      "NĂM NAY",
+      465
+     ],
+     "dv": "",
+     "dau": "-28,5%",
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "CHI PHÍ LẠI TĂNG",
+    "loi": "Trong khi đó vật tư đầu vào tăng khoảng 15%, tiền công thu hái và chăm vườn cao hơn 10%. Mỗi ngày giá còn giảm 200 đến 500 đồng một ký.",
+    "loi_doc": "Trong khi đó vật tư đầu vào tăng khoảng mười lăm phần trăm, tiền công thu hái và chăm vườn cao hơn mười phần trăm. Mỗi ngày giá còn giảm hai trăm đến năm trăm đồng một ký.",
+    "anh": [
+     "coffee beans drying||coffee drying"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "CHI PHÍ & GIÁ",
+     "dong": [
+      [
+       "ĐẦU VÀO +15%",
+       72,
+       "do"
+      ],
+      [
+       "NHÂN CÔNG +10%",
+       72,
+       "do"
+      ],
+      [
+       "GIÁ -200–500Đ/NGÀY",
+       52,
+       "vang"
+      ]
+     ],
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "BÁN DẦN MỖI NGÀY",
+    "loi": "Năm ngày trước vẫn mua 17.000 đồng, nay 15.000 đồng, nên nhiều nhà bán dần để tránh bị giảm thêm. Giá hàng hoá giảm thì doanh nghiệp thu mua và xuất khẩu cũng chịu theo.",
+    "loi_doc": "Năm ngày trước vẫn mua mười bảy nghìn đồng, nay mười lăm nghìn đồng, nên nhiều nhà bán dần để tránh bị giảm thêm. Giá hàng hoá giảm thì doanh nghiệp thu mua và xuất khẩu cũng chịu theo.",
+    "anh": [],
+    "the": {
+     "loai": "giam",
+     "tieu": "GIÁ CÀ PHÊ TƯƠI (Đ/KG)",
+     "a": [
+      "5 NGÀY TRƯỚC",
+      17000
+     ],
+     "b": [
+      "26/11",
+      15000
+     ],
+     "dv": "Đ",
+     "dau": "-2.000Đ",
+     "nguon": "VnExpress 26/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin tiền túi và diễn biến từng phiên, em cập nhật trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin tiền túi và diễn biến từng phiên, em cập nhật trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "BẢN ĐỒ NHIỆT · TIN NÓNG",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2611CHITIEU",
+  "tieu_de": "CPI 10 tháng tăng 4,57%: suất ăn trưa từ 30.000 lên 50.000 đồng, nhiều nhà thắt chặt chi tiêu cuối năm",
+  "hook": [
+   "CPI TĂNG 4,57%",
+   "VÍ CÒN DƯ KHÔNG?"
+  ],
+  "nhan": "TIN NÓNG · 26/11/2026",
+  "short_caption": "Chỉ số giá tiêu dùng 10 tháng đầu năm 2026 tăng 4,57%, cao hơn mức 3,27% cùng kỳ 2025 (Cục Thống kê); nhiều gia đình thắt chặt chi tiêu, một suất ăn trưa từ 30.000–35.000 đồng lên 50.000–55.000 đồng. Nguồn: VnExpress 26/11/2026.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "THƯỞNG TẾT ĐỂ ĐÂU?",
+   "loi": "Thưởng Tết năm nay, anh chị A: để dành phần lớn, hay B: chi tiêu như mọi năm?",
+   "loi_doc": "Thưởng Tết năm nay, anh chị A: để dành phần lớn, hay B: chi tiêu như mọi năm?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "THƯỞNG TẾT ĐỂ ĐÂU?",
+    "dong": [
+     [
+      "A: ĐỂ DÀNH",
+      84,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: NHƯ MỌI NĂM",
+      84,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "CPI TĂNG 4,57%",
+    "loi": "Lương có tăng mà sao ví vẫn mỏng? Chỉ số giá tiêu dùng 10 tháng đầu năm tăng 4,57%, cao hơn hẳn mức 3,27% cùng kỳ năm 2025.",
+    "loi_doc": "Lương có tăng mà sao ví vẫn mỏng? Chỉ số giá tiêu dùng mười tháng đầu năm tăng bốn phẩy năm mươi bảy phần trăm, cao hơn hẳn mức ba phẩy hai mươi bảy phần trăm cùng kỳ năm hai nghìn không trăm hai mươi lăm.",
+    "anh": [],
+    "the": {
+     "loai": "cot",
+     "tieu": "CPI 10 THÁNG (%)",
+     "hang": [
+      [
+       "2025",
+       3.27
+      ],
+      [
+       "2026",
+       4.57
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "%",
+     "max": 5,
+     "nguon": "Cục Thống kê qua VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "SUẤT ĂN LÊN 50.000",
+    "loi": "Một gia đình ở TP HCM kể suất ăn trưa trung bình nay 50.000 đến 55.000 đồng, năm ngoái chỉ 30.000 đến 35.000 đồng.",
+    "loi_doc": "Một gia đình ở thành phố Hồ Chí Minh kể suất ăn trưa trung bình nay năm mươi nghìn đến năm mươi lăm nghìn đồng, năm ngoái chỉ ba mươi nghìn đến ba mươi lăm nghìn đồng.",
+    "anh": [
+     "Vietnamese rice plate lunch||com tam"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "MỘT SUẤT ĂN TRƯA",
+     "dong": [
+      [
+       "NĂM NGOÁI: 30–35 NGHÌN",
+       54,
+       "trang"
+      ],
+      [
+       "NAY: 50–55 NGHÌN",
+       80,
+       "do"
+      ]
+     ],
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "CHI TĂNG 15–20%",
+    "loi": "Một nhân viên văn phòng ước tổng chi từ đầu năm tăng 15 đến 20%, lương tăng 17%, nhưng tiền để dành lại ít đi.",
+    "loi_doc": "Một nhân viên văn phòng ước tổng chi từ đầu năm tăng mười lăm đến hai mươi phần trăm, lương tăng mười bảy phần trăm, nhưng tiền để dành lại ít đi.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "MỘT NGƯỜI ĐI LÀM",
+     "dong": [
+      [
+       "CHI +15–20%",
+       80,
+       "do"
+      ],
+      [
+       "LƯƠNG +17%",
+       80,
+       "vang"
+      ],
+      [
+       "TIẾT KIỆM ÍT ĐI",
+       50,
+       "trang"
+      ]
+     ],
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "THƯỞNG TẾT ĐỂ DÀNH",
+    "loi": "Nhiều gia đình lên kế hoạch để dành phần lớn thưởng Tết. Cục Thống kê nói giá ăn uống tăng do chi phí nguyên liệu đầu vào.",
+    "loi_doc": "Nhiều gia đình lên kế hoạch để dành phần lớn thưởng Tết. Cục Thống kê nói giá ăn uống tăng do chi phí nguyên liệu đầu vào.",
+    "anh": [
+     "supermarket shopping cart groceries||shopping cart"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "CUỐI NĂM 2026",
+     "dong": [
+      [
+       "THẮT CHẶT CHI TIÊU",
+       70,
+       "vang"
+      ],
+      [
+       "ĐỂ DÀNH THƯỞNG TẾT",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "TIỀN ĐỂ YÊN BỊ MÒN",
+    "loi": "Giá tăng 4,57% nghĩa là tiền để yên không sinh lời sẽ mua được ít hơn. Để dành rồi thì cũng nên tính chỗ để tiền.",
+    "loi_doc": "Giá tăng bốn phẩy năm mươi bảy phần trăm nghĩa là tiền để yên không sinh lời sẽ mua được ít hơn. Để dành rồi thì cũng nên tính chỗ để tiền.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "TIỀN ĐỂ YÊN",
+     "dong": [
+      [
+       "GIÁ +4,57%",
+       90,
+       "do"
+      ],
+      [
+       "SỨC MUA GIẢM",
+       60,
+       "trang"
+      ]
+     ],
+     "nguon": "VnExpress 26/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin tiền túi và diễn biến từng phiên, em cập nhật trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin tiền túi và diễn biến từng phiên, em cập nhật trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "BẢN ĐỒ NHIỆT · TIN NÓNG",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2611TIETKIEM96",
+  "tieu_de": "Cuối tháng 11 vẫn có lãi tiết kiệm 9–9,6%/năm: điều kiện đi kèm là gì?",
+  "hook": [
+   "LÃI GỬI TỚI 9,6%",
+   "ĐIỀU KIỆN LÀ GÌ?"
+  ],
+  "nhan": "TIN NÓNG · 26/11/2026",
+  "short_caption": "Cuối tháng 11/2026, nhiều ngân hàng vẫn chào lãi tiết kiệm 9–9,6%/năm qua chương trình cộng lãi, kèm điều kiện như lãi trả trước bị phong tỏa, hạn chế rút trước hạn hoặc số tiền tối thiểu. Nguồn: VnExpress 26/11/2026.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "LÃI CAO HAY LINH HOẠT?",
+   "loi": "Gửi tiết kiệm, anh chị A: chọn lãi cao dù khó rút, hay B: lãi thấp hơn nhưng rút lúc nào cũng được?",
+   "loi_doc": "Gửi tiết kiệm, anh chị A: chọn lãi cao dù khó rút, hay B: lãi thấp hơn nhưng rút lúc nào cũng được?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "LÃI CAO HAY LINH HOẠT?",
+    "dong": [
+     [
+      "A: LÃI CAO",
+      84,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: LINH HOẠT",
+      84,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "TỚI 9,6% MỘT NĂM",
+    "loi": "Lãi niêm yết giảm rồi, sao vẫn có nơi chào 9,6%? Cuối tháng 11, nhiều ngân hàng tư nhân vẫn quanh 9% nhờ cộng lãi.",
+    "loi_doc": "Lãi niêm yết giảm rồi, sao vẫn có nơi chào chín phẩy sáu phần trăm? Cuối tháng mười một, nhiều ngân hàng tư nhân vẫn quanh chín phần trăm nhờ cộng lãi.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "LÃI ƯU ĐÃI CUỐI THÁNG 11",
+     "dong": [
+      [
+       "TỚI 9,6%/NĂM",
+       104,
+       "vang"
+      ],
+      [
+       "KÈM ĐIỀU KIỆN",
+       52,
+       "trang"
+      ]
+     ],
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "9,6% CẦN GÌ?",
+    "loi": "Mức 9,6% ở Vikki Bank cần gửi từ 200 triệu và chọn sản phẩm lãi kép, nhận lãi đầu kỳ rồi gửi thành sổ mới. Từ 10 triệu thì 9%, kỳ hạn 6 đến 13 tháng.",
+    "loi_doc": "Mức chín phẩy sáu phần trăm ở Vikki Bank cần gửi từ hai trăm triệu và chọn sản phẩm lãi kép, nhận lãi đầu kỳ rồi gửi thành sổ mới. Từ mười triệu thì chín phần trăm, kỳ hạn sáu đến mười ba tháng.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "VIKKI BANK",
+     "dong": [
+      [
+       "TỪ 200 TRIỆU: 9,6%",
+       64,
+       "vang"
+      ],
+      [
+       "TỪ 10 TRIỆU: 9%",
+       64,
+       "trang"
+      ],
+      [
+       "KỲ HẠN 6–13 THÁNG",
+       46,
+       "trang"
+      ]
+     ],
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "CÁC NƠI KHÁC",
+    "loi": "PVcomBank 9,1% từ 100 triệu. MBV 9,1% cho khoản dưới 3 tỷ tại quầy. VPBank cộng 2,2 điểm, kỳ hạn 13 tháng lên 9%.",
+    "loi_doc": "P V com Bank chín phẩy một phần trăm từ một trăm triệu. M B V chín phẩy một phần trăm cho khoản dưới ba tỷ tại quầy. V P Bank cộng hai phẩy hai điểm, kỳ hạn mười ba tháng lên chín phần trăm.",
+    "anh": [],
+    "the": {
+     "loai": "cot",
+     "tieu": "LÃI ƯU ĐÃI (%/NĂM)",
+     "hang": [
+      [
+       "VPBANK",
+       9
+      ],
+      [
+       "MBV",
+       9.1
+      ],
+      [
+       "PVCOM",
+       9.1
+      ],
+      [
+       "VIKKI",
+       9.6
+      ]
+     ],
+     "noi": [
+      3
+     ],
+     "dv": "%",
+     "max": 10,
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "ĐIỀU KIỆN KÈM THEO",
+    "loi": "Đi kèm là điều kiện: như NCB 9% gửi online nhưng tiền lãi trả trước bị phong tỏa, nhiều nơi hạn chế rút trước hạn.",
+    "loi_doc": "Đi kèm là điều kiện: như N C B chín phần trăm gửi online nhưng tiền lãi trả trước bị phong tỏa, nhiều nơi hạn chế rút trước hạn.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "ĐỌC KỸ TRƯỚC KHI GỬI",
+     "dong": [
+      [
+       "LÃI TRẢ TRƯỚC BỊ PHONG TỎA",
+       46,
+       "do"
+      ],
+      [
+       "HẠN CHẾ RÚT TRƯỚC HẠN",
+       50,
+       "do"
+      ]
+     ],
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "100 TRIỆU ĐƯỢC BAO NHIÊU?",
+    "loi": "Em tính thử 100 triệu gửi 9% một năm là 9 triệu tiền lãi. Lãi cao đi kèm khóa tiền, cần dùng gấp thì cân nhắc kỹ.",
+    "loi_doc": "Em tính thử một trăm triệu gửi chín phần trăm một năm là chín triệu tiền lãi. Lãi cao đi kèm khóa tiền, cần dùng gấp thì cân nhắc kỹ.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "GỬI 100 TRIỆU · 1 NĂM",
+     "dong": [
+      [
+       "LÃI 9%: 9 TRIỆU",
+       90,
+       "vang"
+      ],
+      [
+       "ĐỔI LẠI: KHÓA TIỀN",
+       50,
+       "trang"
+      ]
+     ],
+     "nguon": "Em tính từ số VnExpress 26/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin tiền túi và diễn biến từng phiên, em cập nhật trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin tiền túi và diễn biến từng phiên, em cập nhật trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "BẢN ĐỒ NHIỆT · TIN NÓNG",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2611CARBON",
+  "tieu_de": "Sàn carbon khai trương giá 136.000 đồng/tấn, gần 5 tháng sau gần như không có giao dịch",
+  "hook": [
+   "136.000Đ MỘT TẤN",
+   "SAO KHÔNG AI MUA?"
+  ],
+  "nhan": "TIN NÓNG · 26/11/2026",
+  "short_caption": "Sàn giao dịch carbon tại HNX mở phiên đầu ngày 29/6 với giá 136.000 đồng/tấn, sau gần 5 tháng gần như không phát sinh giao dịch mới do thiếu cung cầu, theo hội thảo sáng 26/11/2026. Nguồn: VnExpress 26/11/2026.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "CHỢ CARBON SẼ ĐÔNG?",
+   "loi": "Sàn carbon, anh chị A: thấy sẽ sôi động khi siết hạn ngạch, hay B: còn lâu mới có người mua?",
+   "loi_doc": "Sàn các bon, anh chị A: thấy sẽ sôi động khi siết hạn ngạch, hay B: còn lâu mới có người mua?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHỢ CARBON SẼ ĐÔNG?",
+    "dong": [
+     [
+      "A: SẼ SÔI ĐỘNG",
+      84,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: CÒN LÂU",
+      84,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "136.000 ĐỒNG MỘT TẤN",
+    "loi": "Mở một cái chợ mà gần như không ai mua bán, chuyện gì xảy ra? Sàn carbon tại Sở Giao dịch Hà Nội mở phiên đầu ngày 29/6 với giá 136.000 đồng mỗi tấn.",
+    "loi_doc": "Mở một cái chợ mà gần như không ai mua bán, chuyện gì xảy ra? Sàn các bon tại Sở Giao dịch Hà Nội mở phiên đầu ngày hai mươi chín tháng sáu với giá một trăm ba mươi sáu nghìn đồng mỗi tấn.",
+    "anh": [
+     "factory chimney smoke emissions||smokestack"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "SÀN CARBON HNX · 29/6/2026",
+     "dong": [
+      [
+       "136.000Đ/TẤN",
+       104,
+       "vang"
+      ],
+      [
+       "PHIÊN ĐẦU TIÊN",
+       52,
+       "trang"
+      ]
+     ],
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "GẦN 5 THÁNG LẶNG",
+    "loi": "Theo hội thảo sáng 26/11, giao dịch tập trung ở tháng đầu tiên, sau đó gần như không phát sinh thêm.",
+    "loi_doc": "Theo hội thảo sáng hai mươi sáu tháng mười một, giao dịch tập trung ở tháng đầu tiên, sau đó gần như không phát sinh thêm.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "SAU GẦN 5 THÁNG",
+     "dong": [
+      [
+       "THÁNG ĐẦU: CÓ GIAO DỊCH",
+       52,
+       "trang"
+      ],
+      [
+       "SAU ĐÓ: GẦN NHƯ 0",
+       76,
+       "do"
+      ]
+     ],
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "CHỢ CÓ, THIẾU NGƯỜI",
+    "loi": "Một chuyên gia ví sàn như khu chợ đã xây đủ hạ tầng, có lưu ký, nhưng thiếu cả người mua lẫn hàng hóa.",
+    "loi_doc": "Một chuyên gia ví sàn như khu chợ đã xây đủ hạ tầng, có lưu ký, nhưng thiếu cả người mua lẫn hàng hóa.",
+    "anh": [
+     "empty market stalls||empty market"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "VÌ SAO TRẦM LẮNG?",
+     "dong": [
+      [
+       "THIẾU NGƯỜI MUA",
+       70,
+       "do"
+      ],
+      [
+       "THIẾU HÀNG",
+       70,
+       "do"
+      ],
+      [
+       "CHƯA ĐỦ CÔNG CỤ",
+       50,
+       "trang"
+      ]
+     ],
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "CHƯA BỊ ÉP GIẢM THẢI",
+    "loi": "Doanh nghiệp chưa có đủ động lực mua tín chỉ, vì mức phát thải được phân bổ chưa tạo áp lực, nhất là thép, xi măng, nhiệt điện.",
+    "loi_doc": "Doanh nghiệp chưa có đủ động lực mua tín chỉ, vì mức phát thải được phân bổ chưa tạo áp lực, nhất là thép, xi măng, nhiệt điện.",
+    "anh": [
+     "steel mill industry||steel plant"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "NGÀNH PHÁT THẢI LỚN",
+     "dong": [
+      [
+       "THÉP",
+       72,
+       "trang"
+      ],
+      [
+       "XI MĂNG",
+       72,
+       "trang"
+      ],
+      [
+       "NHIỆT ĐIỆN",
+       72,
+       "trang"
+      ]
+     ],
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "THÍ ĐIỂM TỚI 24/12/2027",
+    "loi": "Kỳ thí điểm kéo dài đến 24/12/2027. Khi hạn ngạch siết lại, chi phí carbon sẽ thành một dòng chi phí mới mà nhà đầu tư cần để ý ở thép, xi măng, điện.",
+    "loi_doc": "Kỳ thí điểm kéo dài đến hai mươi tư tháng mười hai năm hai nghìn không trăm hai mươi bảy. Khi hạn ngạch siết lại, chi phí các bon sẽ thành một dòng chi phí mới mà nhà đầu tư cần để ý ở thép, xi măng, điện.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "KỲ THÍ ĐIỂM",
+     "dong": [
+      [
+       "ĐẾN 24/12/2027",
+       90,
+       "vang"
+      ],
+      [
+       "CHI PHÍ CARBON CẦN ĐỂ Ý",
+       48,
+       "trang"
+      ]
+     ],
+     "nguon": "VnExpress 26/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin tiền túi và diễn biến từng phiên, em cập nhật trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin tiền túi và diễn biến từng phiên, em cập nhật trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "BẢN ĐỒ NHIỆT · TIN NÓNG",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2611CHANH",
+  "tieu_de": "Chanh ngón tay: có vườn vẫn bán 2 triệu/kg như năm 2019, nơi khác chỉ 450.000 đồng",
+  "hook": [
+   "2 TRIỆU MỘT KÝ",
+   "HAY 450 NGHÌN?"
+  ],
+  "nhan": "TIN NÓNG · 26/11/2026",
+  "short_caption": "Chanh ngón tay từng bán khoảng 2 triệu đồng/kg năm 2019; nay phần lớn cơ sở bán 450.000 đồng–1 triệu đồng/kg, một vườn ở Vĩnh Long vẫn giữ 2 triệu, theo ghi nhận của VnExpress ngày 26/11/2026.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "ANH CHỊ MUA GIÁ NÀO?",
+   "loi": "Chanh ngón tay, anh chị A: mua 2 triệu vì giống ngon, hay B: 450 nghìn là đủ?",
+   "loi_doc": "Chanh ngón tay, anh chị A: mua hai triệu vì giống ngon, hay B: bốn trăm năm mươi nghìn là đủ?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "ANH CHỊ MUA GIÁ NÀO?",
+    "dong": [
+     [
+      "A: 2 TRIỆU",
+      84,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: 450 NGHÌN",
+      84,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "2 TRIỆU MỘT KÝ",
+    "loi": "Cùng một loại quả, sao nơi bán 2 triệu, nơi chỉ 450 nghìn một ký? Đó là chanh ngón tay, gốc Úc, tép tròn như trứng cá, hay dùng ở nhà hàng cao cấp.",
+    "loi_doc": "Cùng một loại quả, sao nơi bán hai triệu, nơi chỉ bốn trăm năm mươi nghìn một ký? Đó là chanh ngón tay, gốc Úc, tép tròn như trứng cá, hay dùng ở nhà hàng cao cấp.",
+    "anh": [
+     "finger lime fruit||Citrus australasica"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "CHANH NGÓN TAY",
+     "dong": [
+      [
+       "2 TRIỆU/KG",
+       96,
+       "vang"
+      ],
+      [
+       "HAY 450 NGHÌN?",
+       72,
+       "do"
+      ]
+     ],
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "NĂM 2019 KHAN HÀNG",
+    "loi": "Năm 2019, quả này bán khoảng 2 triệu đồng một ký cho khách sạn năm sao ở TP HCM, vì nguồn cung trong nước rất ít.",
+    "loi_doc": "Năm hai nghìn không trăm mười chín, quả này bán khoảng hai triệu đồng một ký cho khách sạn năm sao ở thành phố Hồ Chí Minh, vì nguồn cung trong nước rất ít.",
+    "anh": [
+     "finger lime caviar||Citrus australasica"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "NĂM 2019",
+     "dong": [
+      [
+       "2 TRIỆU/KG",
+       96,
+       "vang"
+      ],
+      [
+       "NGUỒN CUNG RẤT ÍT",
+       52,
+       "trang"
+      ]
+     ],
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "NAY 450 NGHÌN – 1 TRIỆU",
+    "loi": "Bảy năm sau, nhiều vườn từ Bắc vào Nam trồng. Phần lớn nơi bán 450 nghìn đến 1 triệu đồng một ký, một vườn ở Vĩnh Long vẫn giữ 2 triệu.",
+    "loi_doc": "Bảy năm sau, nhiều vườn từ Bắc vào Nam trồng. Phần lớn nơi bán bốn trăm năm mươi nghìn đến một triệu đồng một ký, một vườn ở Vĩnh Long vẫn giữ hai triệu.",
+    "anh": [],
+    "the": {
+     "loai": "cot",
+     "tieu": "GIÁ HIỆN NAY (NGHÌN Đ/KG)",
+     "hang": [
+      [
+       "THẤP",
+       450
+      ],
+      [
+       "PHỔ BIẾN CAO",
+       1000
+      ],
+      [
+       "VĨNH LONG",
+       2000
+      ]
+     ],
+     "noi": [
+      2
+     ],
+     "dv": "",
+     "max": 2200,
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "GIẢM GIÁ ĐỂ BÁN",
+    "loi": "Một vườn ở Lâm Đồng ban đầu để gần 1 triệu nhưng ít người mua, nay bán sỉ khoảng 450 nghìn, lẻ 500 đến 600 nghìn, được khoảng 20 ký mỗi tháng.",
+    "loi_doc": "Một vườn ở Lâm Đồng ban đầu để gần một triệu nhưng ít người mua, nay bán sỉ khoảng bốn trăm năm mươi nghìn, lẻ năm trăm đến sáu trăm nghìn, được khoảng hai mươi ký mỗi tháng.",
+    "anh": [],
+    "the": {
+     "loai": "giam",
+     "tieu": "MỘT VƯỜN Ở LÂM ĐỒNG (NGHÌN Đ/KG)",
+     "a": [
+      "LÚC ĐẦU",
+      1000
+     ],
+     "b": [
+      "BÁN SỈ NAY",
+      450
+     ],
+     "dv": "",
+     "dau": "GIẢM HƠN NỬA",
+     "nguon": "VnExpress 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "HẾT HIẾM, HẾT ĐẮT",
+    "loi": "Nhà vườn nói giá chênh do giống, cách phân phối và nhóm khách. Hàng hết hiếm thì giá về mặt bằng, chuyện này cổ phiếu cũng thế.",
+    "loi_doc": "Nhà vườn nói giá chênh do giống, cách phân phối và nhóm khách. Hàng hết hiếm thì giá về mặt bằng, chuyện này cổ phiếu cũng thế.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "VÌ SAO GIÁ CHÊNH?",
+     "dong": [
+      [
+       "GIỐNG",
+       64,
+       "trang"
+      ],
+      [
+       "PHÂN PHỐI",
+       64,
+       "trang"
+      ],
+      [
+       "NHÓM KHÁCH",
+       64,
+       "trang"
+      ],
+      [
+       "HẾT HIẾM → HẾT ĐẮT",
+       50,
+       "vang"
+      ]
+     ],
+     "nguon": "VnExpress 26/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin tiền túi và diễn biến từng phiên, em cập nhật trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin tiền túi và diễn biến từng phiên, em cập nhật trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "BẢN ĐỒ NHIỆT · TIN NÓNG",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ }
+]
