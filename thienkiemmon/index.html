@@ -3521,7 +3521,7 @@ try{(function(){
   ['tbc','Thần Binh Chủ Nhân','atk',1,'tim','Trang bị vũ khí phẩm Hoàng trở lên',()=>W().some(i=>i.slot==='weapon'&&i.tier>=4)],
   ['tk','Tiên Khí Gia Thân','atk',2,'xich','Trang bị vũ khí phẩm Bạch Ngân',()=>W().some(i=>i.slot==='weapon'&&i.tier>=6)],
   ['ch','Cường Hóa Đại Sư','def',1,'vang','Có trang bị 7 sao',()=>W().some(i=>(i.star||0)>=7)],
-  ['ls','Liên Sát Cuồng Nhân','spd',2,'xich','Đạt 30 liên sát',()=>(TU.mst||0)>=30],
+  ['ls','Liên Trảm Yêu Vương','spd',2,'xich','Đạt 30 liên sát',()=>(TU.mst||0)>=30],
   ['bk','Bí Kíp Đại Gia','xp',1,'tim','Lĩnh ngộ 5 bí kíp',()=>(TU.cpk||[]).length>=5],
   ['tn','Lão Làng Tu Tiên','hp',1,'dong','Vào game 3 ngày khác nhau',()=>(TU.days||[]).length>=3],
   ['ph9','Huyền Phong Tạo Thế','atk',1,'tim','Đập vũ khí +9',()=>(window.__maxPlus?window.__maxPlus():0)>=9],
@@ -4691,14 +4691,14 @@ try{(function(){
  setInterval(()=>{try{if(!S.on||creating)return;if(window.__dq&&__dq.on)return;if(hero.dead||window.__DGin)return;if(BC.in||(typeof BF!=='undefined'&&BF.in)||INT.in)return;
   const man=(typeof joy!=='undefined'&&(Math.abs(joy.x||0)>.25||Math.abs(joy.y||0)>.25))||(typeof keys!=='undefined'&&['KeyW','KeyA','KeyS','KeyD','ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Space'].some(k=>keys[k]));if(man){S.pause=performance.now()+4000;return}if(performance.now()<S.pause)return;
   if(!AUTO.on)toggleAuto();const hp=heroPos(),L=myL();if(S.zi!==heroZone())pickZone();
-  if(P.auto&&!P.auto.dead){autoCast(P.auto);return}
+  if(P.auto&&!P.auto.dead){const a=P.auto,nw=performance.now();if(S.ce!==a){S.ce=a;S.ct=nw;S.ch=a.hp}else if(nw-S.ct>9000){if(a.hp>=S.ch){S.bl=S.bl||new WeakMap();S.bl.set(a,nw+20000);P.auto=null;S.ce=null;return}S.ct=nw;S.ch=a.hp}autoCast(a);return}
   if(P.route&&P.route.length)return;
   if(inCity(hp)||Math.hypot(hp.x-S.zx,hp.z-S.zz)>170){P.route=routeTo(hp,S.zx+R2(6),S.zz+R2(6));P.dest=null;return}
   /* nhặt đồ trước: đồ rơi (cột sáng) trong 28m, linh thạch trong 16m */
   {let lt=null,ld=1e9;try{if(INV.bag.length<40)for(const g of ground){const q=g.m.position,d=Math.hypot(q.x-hp.x,q.z-hp.z);if(d<28&&d<ld&&g.t>.8){ld=d;lt=q}}}catch(_){}
    if(!lt)try{for(const d0 of drops){if(d0.lost)continue;const q=d0.m.position,d=Math.hypot(q.x-hp.x,q.z-hp.z);if(d<16&&d>1.2&&d<ld){ld=d;lt=q}}}catch(_){}
    if(lt){P.auto=null;P.dest=new T.Vector3(lt.x,0,lt.z);return}}
-  let best=null,bd=1e9;for(const e of ents){if(e.team!=='enemy'||e.dead||e.wb)continue;const q=e.c.g.position,d=Math.abs(q.x-hp.x)+Math.abs(q.z-hp.z);if(d>90||Math.abs((e.lv||1)-L)>25)continue;if(d<bd){bd=d;best=e}}
+  let best=null,bd=1e9;const nw=performance.now();S.bl=S.bl||new WeakMap();for(const e of ents){if(e.team!=='enemy'||e.dead||e.wb||(S.bl.get(e)||0)>nw)continue;const q=e.c.g.position,d=Math.abs(q.x-hp.x)+Math.abs(q.z-hp.z);if(d>90||Math.abs((e.lv||1)-L)>25)continue;/* 26/11: ưu tiên con gần, con không bị tu sĩ khác đánh, con hợp cấp, con đang đánh mình */const sc=d+(e.target&&e.target!==hero&&e.target.team==='bot'?35:0)+(Math.abs((e.lv||1)-L)>12?25:0)-(e.target===hero?30:0)+(e.boss?40:0);if(sc<bd){bd=sc;best=e}}
   if(best){P.auto=best;P.dest=null;autoCast(best)}else if(!P.dest)P.dest=new T.Vector3(S.zx+R2(25),0,S.zz+R2(25))}catch(e){console.warn('atrain',e)}},500);
  /* ---- nhớ chỗ đứng ---- */
  const key=()=>'tkm_pos_'+(LOOK&&LOOK.name||'');let restored=false;
@@ -5460,8 +5460,8 @@ try{(function(){
 })()}catch(e){console.warn('world+',e)}
 /* ===== ẨN NGỰ KIẾM (26/11): tạm ẩn nút Ngự kiếm và phím F (bật lại bằng ?fly) ===== */
 try{(function(){if(/fly/.test(location.search))return;const st=document.createElement('style');st.textContent='#flb{display:none!important}';document.head.appendChild(st);
- addEventListener('keydown',e=>{if(e.code==='KeyF'){e.stopImmediatePropagation()}},true);
- setInterval(()=>{try{if(P.fly)toggleFly()}catch(_){}},1500);
+ addEventListener('keydown',e=>{if(e.code==='KeyF'&&!TU.flyOk){e.stopImmediatePropagation()}},true);
+ setInterval(()=>{try{if(P.fly&&!TU.flyOk)toggleFly()}catch(_){}},1500);
 })()}catch(e){console.warn('nofly',e)}
 /* ===== ĐỒ BẠCH NGÂN SANG (26/11): phẩm cao nhất không còn trắng xám như đồ cùi — viền trắng vàng, ánh tím tinh tế, vệt sáng lướt màu vàng kim ===== */
 try{(function(){const st=document.createElement('style');st.textContent=`
@@ -5720,7 +5720,7 @@ try{(function(){let sd=777191;const r=()=>{sd=(sd*16807)%2147483647;return sd/21
    for(let i=AMB.length-1;i>=0;i--){const e=AMB[i];if(e.gone||!ents.includes(e)){AMB.splice(i,1);continue}if(e.dead)continue;if(!e.target&&Math.hypot(e.c.g.position.x-hp.x,e.c.g.position.z-hp.z)>190){e.gone=1;AMB.splice(i,1)}}
    if(Math.max(Math.abs(hp.x),Math.abs(hp.z))<CITY+45)return;
    let near=0;for(const e of ents){if(e.team==='enemy'&&!e.dead&&Math.abs(e.c.g.position.x-hp.x)+Math.abs(e.c.g.position.z-hp.z)<95)near++}
-   const want=LITE?18:34;/* 26/11: quái đông gấp 2 nhờ quái xa cử động thưa khung */for(let k=0;k<3&&near<want;k++){const a=Math.random()*6.283,d=38+Math.random()*40;const x=hp.x+Math.cos(a)*d,z=hp.z+Math.sin(a)*d;if(!okP(x,z,-20))continue;
+   const want=LITE?14:34;/* 26/11: quái đông gấp 2 nhờ quái xa cử động thưa khung */for(let k=0;k<3&&near<want;k++){const a=Math.random()*6.283,d=38+Math.random()*40;const x=hp.x+Math.cos(a)*d,z=hp.z+Math.sin(a)*d;if(!okP(x,z,-20))continue;
     const si=pickMon(x,z),n=Math.random()<.35?3:Math.random()<.5?2:1;for(let j=0;j<n&&near<want;j++){const v=Math.random(),pre=v<.12?'Tinh Anh ':v<.25?'Cuồng ':v<.35?'Ấu ':'',mul=pre==='Tinh Anh '?2.4:pre==='Cuồng '?1.5:pre==='Ấu '?.55:1;
      const e=spawnMon(si,x+R2(4),z+R2(4),mul,pre+MONS[si][1]);e.amb=1;if(pre==='Tinh Anh ')e.c.g.scale.multiplyScalar(1.3);else if(pre==='Ấu ')e.c.g.scale.multiplyScalar(.75);
      if(pre){const nm=e.lab.querySelector('.nm');if(nm)nm.innerHTML=`<span style="color:#ffd36b">Cấp ${e.lv}</span> <b style="color:${pre==='Tinh Anh '?'#ffb030':'#ff7a6a'}">${pre}</b>${MONS[si][1]}`}AMB.push(e);near++}}}catch(er){console.warn('amb',er)}},2500);
@@ -5856,7 +5856,8 @@ try{(function(){if(!LITE||/fullload/.test(location.search))return;const DONE=new
 })()}catch(e){console.warn('nolazy',e)}
 /* ===== GIỮ CHÂN TÂN THỦ 1–80 (26/11): (1) điện thoại chế độ Tự động mặc định tắt bóng đổ để mượt ngay lần đầu (muốn đẹp chọn Đồ họa → Cao); (2) quà mốc cấp 5→80: linh thạch, trang bị phẩm tăng dần, Đá Cường Hóa, có thông báo; (3) dưới cấp 80 chết không rơi đồ, chỉ mất ít linh thạch ===== */
 try{(function(){
- try{const G=JSON.parse(localStorage.getItem('tkm_gfx')||'{}');if(LITE&&(!G.m||G.m==='auto')){renderer.shadowMap.enabled=false;sun.castShadow=false}}catch(e){}
+ try{const G=JSON.parse(localStorage.getItem('tkm_gfx')||'{}');if(LITE&&(!G.m||G.m==='auto')){renderer.shadowMap.enabled=false;sun.castShadow=false;
+  /* 26/11: điện thoại Tự động: độ phân giải vẽ tối đa 1x (đỡ nặng card nhất), trừ lúc chụp ảnh */const cap=r=>window.__shotHQ||window.__photoOn?r:Math.min(r,1);const sp=renderer.setPixelRatio.bind(renderer);renderer.setPixelRatio=r=>sp(cap(r));renderer.setPixelRatio(renderer.getPixelRatio());try{const cp=composer.setPixelRatio.bind(composer);composer.setPixelRatio=r=>cp(cap(r));composer.setPixelRatio(1)}catch(e){}renderer.setSize(innerWidth,innerHeight);try{composer.setSize(innerWidth,innerHeight)}catch(e){}}}catch(e){}
  const ML=()=>lvOf(TU.realm,TU.realm?TU.tang:TU.lv);
  const MS=[[5,300,1,0,'Bước vào tu đạo'],[10,600,2,1,'Luyện khí sơ thành'],[15,900,2,1,''],[20,1500,3,2,'Thành thạo kiếm pháp'],[30,2500,3,3,'Tiểu hữu danh tiếng'],[40,4000,3,4,''],[50,6000,4,5,'Cao thủ một phương'],[60,8000,4,6,''],[70,10000,4,8,''],[80,15000,5,10,'Danh chấn giang hồ']];
  const SL=['weapon','robe','pants','boots','belt','neck','ring'];
@@ -5869,8 +5870,46 @@ try{(function(){
 })()}catch(e){console.warn('newbie80',e)}
 /* ===== CHỤP ẢNH TỐI ĐA (26/11): khi bấm chụp ảnh — danh hiệu của mọi người hiện đủ cỡ, nhãn bị nhà che hay ở xa vẫn hiện, bật hào quang (kể cả điện thoại), hiện cả vật nhỏ ở xa ===== */
 try{(function(){const _ps=photoShot;photoShot=function(){const dh=[...document.querySelectorAll('.dhw')],tf=dh.map(w=>[w.style.transform,w.style.marginBottom]);dh.forEach(w=>{w.style.transform='';w.style.marginBottom=''});
- const lh=window.__labHide;window.__labHide=null;let be=null;try{be=bloom.enabled;bloom.enabled=true}catch(e){}try{camera.layers.enable(29)}catch(e){}
- try{return _ps.apply(this,arguments)}finally{try{camera.layers.disable(29)}catch(e){}try{bloom.enabled=be}catch(e){}window.__labHide=lh;dh.forEach((w,i)=>{w.style.transform=tf[i][0];w.style.marginBottom=tf[i][1]})}}})()}catch(e){console.warn('photo26',e)}
+ const lh=window.__labHide;window.__labHide=null;window.__photoOn=1;let be=null;try{be=bloom.enabled;bloom.enabled=true}catch(e){}try{camera.layers.enable(29)}catch(e){}
+ try{return _ps.apply(this,arguments)}finally{try{camera.layers.disable(29)}catch(e){}try{bloom.enabled=be}catch(e){}window.__photoOn=0;window.__labHide=lh;dh.forEach((w,i)=>{w.style.transform=tf[i][0];w.style.marginBottom=tf[i][1]})}}})()}catch(e){console.warn('photo26',e)}
+/* ===== TÂN THỦ & ĐỘT PHÁ (26/11 tối): (1) đủ tầng 10 Luyện Khí→Nguyên Anh tự hiện bảng Đột phá / Để sau, để sau thu vào nút nhỏ ở góc; (2) cấp 1–9 có nhiệm vụ "Ra bãi quái" chạm là tự chạy; (3) cấp 10 chưa có tông môn hiện bảng chọn Thánh Địa (cả Ma tu) có chỉ đường, gia nhập có chúc mừng; (4) cấp 30 nhận ngẫu nhiên 1 linh vật; (5) Hóa Thần nhận nhiệm vụ Phi Hành → mở ngự kiếm; (6) dưới Trúc Cơ tu sĩ ảo không chủ ý giết mình ===== */
+try{(function(){const ML=()=>lvOf(TU.realm,TU.realm?TU.tang:TU.lv);
+ const st=document.createElement('style');st.textContent=`#tribb{display:none!important}
+ #brk{position:fixed;left:50%;bottom:120px;transform:translateX(-50%);z-index:40;width:min(360px,86vw);background:linear-gradient(#1c1430,#0d0818);border:1px solid #ffe08a;border-radius:14px;padding:12px 14px;color:#f3e6c8;font:13px/1.45 "Noto Serif",serif;box-shadow:0 0 18px rgba(159,176,255,.5);text-align:center}
+ #brk b.t{display:block;font-size:16px;color:#ffe08a;margin-bottom:4px}#brk .r{display:flex;gap:8px;margin-top:10px}#brk button{flex:1;min-height:40px;border-radius:10px;border:1px solid #d9a441;font:700 14px "Noto Serif",serif;cursor:pointer}
+ #brk .go{background:linear-gradient(#f2c75c,#b8862a);color:#2a1606}#brk .later{background:rgba(255,255,255,.06);color:#f3e6c8}
+ #brkm{position:fixed;right:12px;bottom:150px;z-index:39;width:52px;height:52px;border-radius:50%;border:2px solid #ffe08a;background:radial-gradient(circle,#4a3a8a,#140a2a);color:#ffe9b0;font:800 10px/1.1 "Noto Serif",serif;box-shadow:0 0 12px #9fb0ff;animation:tglow 1.2s infinite;display:none;cursor:pointer}
+ #nbq{display:block;margin:3px 0;padding:4px 6px;border:1px solid #7fffb0;border-radius:8px;color:#9fffb8;font-weight:700;cursor:pointer;background:rgba(20,60,30,.35)}`;document.head.appendChild(st);
+ /* (1) đột phá */
+ const box=document.createElement('div');box.id='brk';box.style.display='none';document.body.appendChild(box);const mini=document.createElement('button');mini.id='brkm';mini.innerHTML='⚡<br>Đột phá';document.body.appendChild(mini);
+ let later=-1;
+ function open(){box.innerHTML='<b class="t">⚡ Đủ tầng 10 '+REALMS[TU.realm]+'</b>Có thể độ kiếp lên <b style="color:#9fd8ff">'+REALMS[TU.realm+1]+'</b> · tỉ lệ thành công <b style="color:#7fffb0">'+tribRate()+'%</b><br><small style="color:#ff9a8a">Thất bại sẽ tử vong và rơi đồ — nên gửi Bảo Khố trước.</small><div class="r"><button class="go">Đột phá ngay</button><button class="later">Để sau</button></div>';box.style.display='block';mini.style.display='none';
+  box.querySelector('.go').onclick=()=>{box.style.display='none';if(tribReady())tribGo()};box.querySelector('.later').onclick=()=>{later=TU.realm;box.style.display='none';mini.style.display='block'}}
+ mini.onclick=()=>{if(tribReady())open()};
+ setInterval(()=>{try{const r=!creating&&tribReady()&&!BF.in&&!BC.in&&!window.__DGin;if(!r){box.style.display='none';mini.style.display='none';return}if(box.style.display==='block')return;if(later===TU.realm)mini.style.display='block';else open()}catch(e){}},1500);
+ /* (2) nhiệm vụ ra bãi quái */
+ function toField(){try{const z=zonePt(heroZone());P.route=routeTo(heroPos(),z[0],z[1]);P.dest=null;P.auto=null;chat('Đang tự chạy ra bãi quái hợp cấp — tới nơi bấm <b>Tự luyện</b> (nút đầu thanh trên) để tự đánh.','s')}catch(e){}}
+ setInterval(()=>{try{const q=$('quest');if(!q)return;let a=$('nbq');const need=!creating&&ML()<10&&!TU.tong;if(!need){if(a)a.remove();return}if(!a){a=document.createElement('div');a.id='nbq';a.onclick=e=>{e.stopPropagation();toField()};q.insertBefore(a,q.firstChild.nextSibling)}a.innerHTML='➤ Ra bãi quái luyện tới cấp 10 <small>[chạm để tự chạy]</small>'}catch(e){}},2000);
+ let auto1=false;setInterval(()=>{if(auto1||creating||!hero)return;auto1=true;if(ML()<=2&&!(TU.kt>0))setTimeout(()=>{if(!(P.route&&P.route.length))toField()},12000)},3000);
+ /* (3) chọn thánh địa ở cấp 10 */
+ const npcOf=k=>NPCS.find(n=>k==='ma'?(n.id==='ma'||/Ma Sứ|Tà Tông/.test(n.name||'')):(n.tong===k&&n.id==='su'))||NPCS.find(n=>n.tong===k);
+ function sectPanel(){const P0=$('npcp');P0.style.display='block';P0.dataset.src='npc';P0.innerHTML='<b>🏯 Đạt cấp 10 — chọn Thánh Địa bái nhập</b><p>Chạm một Thánh Địa để tự chạy tới Sứ Giả của nơi đó. Mỗi nơi có tuyệt kỹ riêng và khắc chế nhau.</p>'+Object.keys(TONG).map(k=>'<button data-sect="'+k+'" style="border-color:'+(NH[k]?NH[k].c:'#c33')+'"><span style="color:'+(NH[k]?NH[k].c:'#f66')+'">'+TONG[k].n+'</span>'+(k==='ma'?' <small>(Ma tu)</small>':'')+'</button>').join('')+'<button data-x="close">Để sau</button>';
+  P0.querySelectorAll('[data-sect]').forEach(b=>b.onclick=()=>{const n=npcOf(b.dataset.sect);P0.style.display='none';if(n&&n.pos){P.route=routeTo(heroPos(),n.pos[0],n.pos[1]+2);P.dest=null;P.auto=null;chat('Tự chạy tới <b>'+n.name+'</b> để bái nhập <b>'+TONG[b.dataset.sect].n+'</b>.','s')}else chat('Tới quảng trường tìm Sứ Giả <b>'+TONG[b.dataset.sect].n+'</b>.','s')})}
+ window.__sectPanel=sectPanel;let asked=false,tong0=TU.tong;
+ setInterval(()=>{try{if(creating)return;if(!asked&&!TU.tong&&ML()>=10&&!BF.in&&!window.__DGin){asked=true;sectPanel()}
+  if(TU.tong&&TU.tong!==tong0){tong0=TU.tong;const nm=TONG[TU.tong]?TONG[TU.tong].n:'';banner('🎉 Chúc mừng gia nhập '+nm,'Từ nay là đệ tử '+nm+' — tới Truyền Công Trưởng Lão nhận tâm pháp');try{chat0('<span class="n">[Hệ thống]</span>: Chúc mừng <b>'+esc(LOOK.name||'')+'</b> bái nhập <b>'+nm+'</b>!','')}catch(e){}try{sfx('magic');const hp=heroPos();ring(hp,0xffd36b,7,.9)}catch(e){}}}catch(e){}},2000);
+ /* (4) linh vật cấp 30 */
+ setInterval(()=>{try{if(creating||TU.pet30||ML()<30||!window.__pet2)return;TU.pet30=1;const has=TU.pets&&TU.pets.L&&TU.pets.L.length;if(!has){const sp=pick(['soi','ho','panda','gau','tinh','long']);window.__pet2.set(sp,1,1);banner('🐾 Quà cấp 30: nhận linh vật!','Linh vật đã theo bên cạnh — nâng cấp ở Linh Thú Sư')}saveTL()}catch(e){}},4000);
+ /* (5) phi hành ở Hóa Thần */
+ const fs=document.createElement('style');fs.textContent='body.flyok #flb{display:block!important}';document.head.appendChild(fs);
+ function flyOn(){document.body.classList.add('flyok')}if(TU.flyOk)flyOn();
+  setInterval(()=>{try{if(creating||TU.flyOk||TU.realm<5)return;if(TU.flyQ==null){TU.flyQ=TU.kt||0;saveTL();banner('🗡 Nhiệm vụ Phi Hành','Đạt Hóa Thần — diệt 30 yêu thú để ngưng luyện phi kiếm, mở ngự kiếm phi hành');chat('🗡 <b>Nhiệm vụ Phi Hành</b>: diệt <b>30 yêu thú</b> để luyện thành Phi Kiếm và mở <b>ngự kiếm</b>.','s')}
+   const n=(TU.kt||0)-TU.flyQ;if(n<30)return;TU.flyOk=1;const it=(window.__demo?__demo.mkItem:mkItem)(5,'fabao');it.kind='phikiem';it.name='Phi Kiếm Ngự Phong';if(!INV.eq.fabao){INV.eq.fabao=it;try{updFabao()}catch(_){}}else if(INV.bag.length<40)INV.bag.push(it);saveINV();saveTL();flyOn();
+   banner('🗡 Mở khóa Ngự Kiếm Phi Hành!','Nhận Phi Kiếm Ngự Phong — trang bị vào ô Pháp bảo rồi bấm nút Ngự kiếm (phím F)')}catch(e){}},3000);
+ /* (6) dưới Trúc Cơ: tu sĩ ảo không chủ ý giết mình */
+ const _h=hit;hit=function(att,e,dmg,crit){if(e===hero&&att&&att!==hero&&(att.team==='bot'||att.pk||att.cg)&&!att.net&&TU.realm<2&&!BF.in){att.target=null;att.hostile=0;return}return _h.apply(this,arguments)};
+ setInterval(()=>{try{if(TU.realm>=2||BF.in)return;for(const e of ents){if(e.target===hero&&(e.team==='bot'||e.pk||e.cg)&&!e.net){e.target=null;e.hostile=0}}}catch(_){}},700);
+})()}catch(e){console.warn('nb26b',e)}
 try{window.__enterBC=()=>{BC.day='';enterBC()};window.__bfJoin=sd=>bfJoin(sd||'tien');window.__BCo=BC;window.__BFo=BF}catch(e){}
 window.__wp={renderer,T,WEAPONS,fabaoModel,TIERS,FBE,RT,VB:()=>VB,hero:()=>hero,TD:{tdKiem,tdXuan,tdBang,tdAn,swordRain,phoenix,tornado,maVortex,dQi:()=>dragonE('qi'),dTh:()=>dragonE('thunder'),dFi:()=>dragonE('fire'),dBl:()=>dragonE('blood'),vortex:()=>{const T0=performance.now();maVortex();return performance.now()-T0},ice:()=>{const t=TU.tong,r=TU.realm,l=TU.learned;TU.tong='thuy';TU.realm=4;TU.learned=['Huyền Băng Trảm','Băng Phong Vạn Lý'];hero.mp=100;P.cds[1]=0;try{_useSkill(1+'')}finally{TU.tong=t;TU.realm=r;TU.learned=l}}},TU:()=>TU};setTimeout(()=>{if(typeof TKACCT!=='undefined')TKACCT.boot()},0);
 window.__demo={closeInv:()=>closeInv(),castAt:(id,x,z)=>{const h=heroPos(),o=h.clone(),f=hero.face;h.x=x;h.z=z;hero.face=Math.random()*6.28;try{castCP(id,true)}catch(e){}h.copy(o);hero.face=f},BF,bfJoin,bfBuild,allEnts:()=>ents,ICL:()=>ICL,equipWeapon:(a,b)=>equipWeapon(a,b),wearBest,equip:i=>{equip.silent=1;try{equip(i)}finally{equip.silent=0}},heroPos,TRIB:()=>TRIB,addCorpse,deathDrop,ents:()=>ents,foe:e=>foe(e),castCP,CP,mkBook,learnBook,P2P,NET,itemCard,optHTML,onHunt,rankTick,RANK,WFALL,castFX,VILLC:()=>window.__vc,tribGo,tribReady,needXp,bankPanel,CG,titles,leaveBC,zoneStream,ZPOP,GANGS,PARTY,ptInvite,hit,NET,netUpd,CORPSE,goInt,toggleFly,updFabao,GARR,WFIX,spawnMon,EV,EVT,npcAct,openInv,SQUADS:()=>SQUADS,CIT:()=>CIT,MUS,PK,togglePK,callReinf,maAct,gainXp,realmText,updPK,INV,BC,mkItem,dropItem,enterBC,TU,refreshTL,bloom:()=>bloom,LOOK,buildAvatar,setSW:(a,b,c)=>{hero.vw&&hero.vw.rotation.set(a,b,c)},hero,P,useSkill,ents,setView:(y,p,d)=>{yaw=y;pitch=p;dist=d}};
