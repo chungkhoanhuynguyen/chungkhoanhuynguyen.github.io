@@ -600,7 +600,7 @@ section.sec-c{padding-block:18px!important}
 /* ===== Chữ mờ chống chụp màn hình ===== */
 #wm{display:none;position:fixed;inset:0;z-index:2147483000;pointer-events:none;background-repeat:repeat;transform:translateZ(0)}
 /* 25/11 QL1 (anh Huy): CHỈ 1 lớp thương hiệu – mỗi khung 1 dòng chữ nguyên vẹn ở giữa, không phủ nền trang */
-.mw::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:4;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='180'%3E%3Ctext x='320' y='98' text-anchor='middle' transform='rotate(-10 320 90)' font-family='Arial,Helvetica,sans-serif' font-size='21' font-weight='800' letter-spacing='4' fill='%236a2d86' fill-opacity='.12'%3ECH%E1%BB%A8NG KHO%C3%81N HUY NGUY%E1%BB%84N%3C/text%3E%3C/svg%3E") no-repeat center 38%/min(72%,520px) auto}
+.mw::after{content:"";position:absolute;right:12px;bottom:8px;width:190px;height:16px;pointer-events:none;z-index:4;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='190' height='16'%3E%3Ctext x='190' y='12' text-anchor='end' font-family='Arial,Helvetica,sans-serif' font-size='10.5' font-weight='800' letter-spacing='1.6' fill='%236a2d86' fill-opacity='.38'%3ECH%E1%BB%A8NG KHO%C3%81N HUY NGUY%E1%BB%84N%3C/text%3E%3C/svg%3E") no-repeat right center}
 @media print{#wm{display:block!important;opacity:1!important;background-size:440px 280px!important}.toc,#totop,.tape,header.top{display:none!important}body::before{content:"Bản in từ Chứng Khoán Huy Nguyễn · Zalo 0365.188.286";display:block;font:700 14px sans-serif;text-align:center;padding:8px;border-bottom:2px solid #4c2766}}
 /* ===== Hạn chế sao chép ở vùng dữ liệu ===== */
 .nocopy{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
