@@ -21,7 +21,7 @@ d.addEventListener("focusin",go2);d.addEventListener("focusout",function(){setTi
    - Bảng số liệu theo quý/năm (BCTC): giữ vuốt ngang, khoá cột đầu + dòng "Vuốt ngang xem thêm". */
 (function(){var W=window,d=document;if(!W.matchMedia||!W.matchMedia("(max-width:600px)").matches)return;
 var st=d.createElement("style");st.textContent=
-"table.tfit{font-size:13px!important;table-layout:auto;min-width:0!important;width:100%!important}table.tfit th,table.tfit td{padding:6px 5px!important;white-space:normal!important;word-break:normal}table.tfit th{font-size:11.5px!important;line-height:1.25}"+
+"table th{font-family:\"Be Vietnam Pro\",system-ui,sans-serif!important;letter-spacing:0!important;text-transform:none!important;font-weight:600!important;font-size:12.5px!important}table.tfit{font-size:13px!important;table-layout:auto;min-width:0!important;width:100%!important}table.tfit th,table.tfit td{padding:6px 5px!important;white-space:normal!important;word-break:normal}table.tfit th{font-size:11.5px!important;line-height:1.25}"+
 "table.tcard small{max-width:none!important;white-space:normal!important}table.tcard tr.thd{display:none!important}table.tcard,table.tcard tbody{display:block!important;width:100%!important;min-width:0!important}table.tcard thead{display:none!important}"+
 "table.tcard tr{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px 10px;padding:10px 10px;border-bottom:1px solid rgba(128,120,150,.25)}"+
 "table.tcard td{display:block!important;padding:0!important;border:0!important;text-align:left!important;font-size:14px;min-width:0!important;white-space:normal!important;background:none!important}"+
