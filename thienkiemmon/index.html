@@ -3214,7 +3214,7 @@ try{(function(){if(/nomerge/.test(location.search))return;
  /* gộp các mảnh da-xương cùng chất liệu của mỗi nhân vật (tóc, áo nhiều mảnh) thành một lưới: giảm mạnh số lệnh vẽ */
  const SKB=[];function skKey(o){const m=o.material,bs=o.skeleton.bones;return[bs.length+':'+(bs[0]&&bs[0].uuid)+':'+(bs[bs.length-1]&&bs[bs.length-1].uuid),o.parent.uuid,m.type,m.map?m.map.uuid:0,m.normalMap?1:0,m.emissiveMap?1:0,m.transparent?1:0,m.alphaTest,m.side,m.opacity,m.color?m.color.getHex():0,m.emissive?m.emissive.getHex():0,m.emissiveIntensity,m.roughness,m.metalness,m.depthWrite?1:0,o.castShadow?1:0,o.frustumCulled?1:0,o.renderOrder,m.onBeforeCompile&&m.onBeforeCompile.toString().length].join('|')}
  const GC=new Map();function gcRel(ce){if(--ce.n<=0){ce.g.dispose();GC.delete(ce.k)}}
- function mergeSkin(root,other){const B=new Map();root.traverse(o=>{if(!o.isSkinnedMesh||o.userData.skm||!o.visible||Array.isArray(o.material)||!o.skeleton||!o.parent)return;const g=o.geometry;if(g.morphAttributes&&Object.keys(g.morphAttributes).length&&!(LITE&&other&&(!o.morphTargetInfluences||o.morphTargetInfluences.every(x=>!x))))return;if(!g.attributes.skinIndex||!g.attributes.normal||!g.attributes.uv)return;
+ window.__mergeSkin=(r,o)=>mergeSkin(r,o);function mergeSkin(root,other){const B=new Map();root.traverse(o=>{if(!o.isSkinnedMesh||o.userData.skm||!o.visible||Array.isArray(o.material)||!o.skeleton||!o.parent)return;const g=o.geometry;if(g.morphAttributes&&Object.keys(g.morphAttributes).length&&!(LITE&&other&&(!o.morphTargetInfluences||o.morphTargetInfluences.every(x=>!x))))return;if(!g.attributes.skinIndex||!g.attributes.normal||!g.attributes.uv)return;
    let q=o;while(q&&q!==root){if(!q.visible)return;q=q.parent}const k=skKey(o);let l=B.get(k);if(!l)B.set(k,l=[]);l.push(o)});
   B.forEach(l=>{if(l.length<2)return;const f=l[0];l=l.filter(o=>o.matrix.equals(f.matrix)&&o.bindMatrix.equals(f.bindMatrix)&&o.bindMode===f.bindMode);if(l.length<2)return;
    const gk=l.map(o=>o.geometry.uuid).join(',');let ce=GC.get(gk);if(!ce){
@@ -3299,12 +3299,12 @@ try{(function(){
   N4=['nhoc','be','anh','chi','boy','girl','trum','soai','thanh','vua'];
  function nm(i,sd){const k=i+(sd==='ma'?37:0),a=N1[(k*7+3)%N1.length],b=N2[(k*13+5)%N2.length],c=N3[(k*5+1)%N3.length],st=k%5;
   return st===0?a+b+c:st===1?'xX'+a+b+'Xx':st===2?N4[k%N4.length]+a+b+c:st===3?a+'_'+b+c:a+b}
- const K=LITE?5:11,IDS=['ldvq','vkqt','bptg','htdc','hamc','lmtk'],pool={tien:[],ma:[]};let made=0,mkT=0,asT=0,castT=2,feedT=0,heroAct=0,lastKills=0;
+ const K=LITE?3:7,IDS=['ldvq','vkqt','bptg','htdc','hamc','lmtk'],pool={tien:[],ma:[]};let made=0,mkT=0,asT=0,castT=2,feedT=0,heroAct=0,lastKills=0;
  const M4=new T.Matrix4();
  function mkAv(sd){const c=makeChar(Object.assign({},botStyles[(Math.random()*4)|0]));scene.add(c.g);c.g.visible=false;const lab=mkLabel('…','f','…');lab.style.display='none';
   const e={c,lab,hbi:lab.querySelector('.hb i'),face:0,atk:0,sd,o:null,px:0,pz:0,spS:0,bfp:1,dead:0,target:null};
   const wk=sd==='ma'&&WEAPONS.phien?'phien':pick(BOT_WP.filter(k=>k!=='phien'&&k!=='bow'&&k!=='none'));
-  try{dressBot(e,null,wk).catch(()=>{})}catch(_){}return e}
+  try{dressBot(e,null,wk).then(()=>{try{window.__stripMorph&&window.__stripMorph(e.c.g);setTimeout(()=>{try{window.__mergeSkin&&window.__mergeSkin(e.c.g,true)}catch(_){}},1500)}catch(_){}}).catch(()=>{})}catch(_){}return e}
  function setLab(e,o){const n=e.lab.querySelector('.nm');n.textContent=o.nm;n.style.color=o.sd==='tien'?'#9ad7ff':'#ff7a8a';const tt=e.lab.querySelector('.tt');if(tt){tt.textContent=(o.sd==='tien'?'Phe Tiên · ':'Phe Ma · ')+REALMS[o.rl]+' tầng '+o.tg2;tt.className='tt rt'+o.rl}}
  function assign(hp){for(const sd of['tien','ma']){const P0=pool[sd];if(!P0.length)continue;
    const near=BF.sol.filter(o=>o.sd===sd&&!o.dead).map(o=>[o,(o.x-hp.x)**2+(o.z-hp.z)**2]).filter(a=>a[1]<60*60).sort((a,b)=>a[1]-b[1]).slice(0,P0.length).map(a=>a[0]);const set=new Set(near);
