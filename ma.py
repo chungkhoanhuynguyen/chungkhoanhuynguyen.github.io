@@ -156,7 +156,7 @@ for s in SYMS:
     faq = [(f"Giá cổ phiếu {s} hôm nay là bao nhiêu?", f"Phiên {dmy(last)}, {s} đóng cửa ở {nf(p)} nghìn đồng/cổ phiếu ({pc(w)} trong 1 tuần). Giá cập nhật hằng ngày trên trang này và bảng giá chungkhoanhuynguyen.com."),
            (f"P/E của {s} là bao nhiêu?", f"P/E hiện khoảng {nf(pe,1)} lần" + (f", {cmp(pe, MED['pe'])}." if pe and pe > 0 else ".") + " P/E cần so cùng ngành và chất lượng lợi nhuận."),
            (f"{s} có trả cổ tức không?", f"Tỷ suất cổ tức gần đây khoảng {nf(dy,1)}%." if dy else f"Chưa ghi nhận cổ tức tiền mặt gần đây của {s} trong dữ liệu."),
-           (f"Có nên mua cổ phiếu {s} không?", f"Trang này không đưa khuyến nghị mua bán. Quyết định nên dựa trên định giá, kết quả kinh doanh, xu hướng giá và khẩu vị rủi ro của từng người. Khách hàng có thể hỏi chuyên sâu về {s} ở mục Hỏi đáp PRO hoặc trao đổi 1:1 với Huy Nguyễn.")]
+           (f"Có nên mua cổ phiếu {s} không?", f"Tuỳ giá vốn, số vốn và mức chịu rủi ro của từng người. Cách nhanh nhất: gửi mã {s} cho Huy Nguyễn qua Zalo để được soi miễn phí 3 dòng báo cáo tài chính (lỗ luỹ kế, lãi vay, dòng tiền kinh doanh) và trao đổi 1:1 trước khi quyết định. Gửi mã tại chungkhoanhuynguyen.com/soi-ma-mien-phi.html#{s}.")]
     faq = bfaq + faq
     # NV2 26/11 (seo_uu_tien_2611): từ khoá dài ít đối thủ từ thẻ Soi 3 dòng → hỏi đáp riêng từng mã + dẫn trang trụ
     _s3 = soi3.tinh(s, BT) if BT else None
@@ -356,13 +356,13 @@ if len(TOM) >= 20:
     def row(t, v): return (f"<tr><td>{(chr(60)+'a href=\'/ma/'+t+'.html\'>'+chr(60)+'b>'+t+chr(60)+'/b>'+chr(60)+'/a>') if t in _MADE else (chr(60)+'b>'+t+chr(60)+'/b>')}<br><small class='n'>{nm(t)}</small></td><td class='r'>{_nt(v['ln'])}</td>"
                            f"<td class='r {'up' if (v.get('yoy') or 0) >= 0 else 'dn'}'>{'–' if v.get('yoy') is None else (('+' if v['yoy'] >= 0 else '−') + f'{abs(v[chr(121)+chr(111)+chr(121)]):.1f}'.replace('.', ',') + '%')}</td>"
                            f"<td class='r'>{_nt(v.get('ln4'))}</td><td class='r'>{'–' if v.get('roe') is None else f'{v[chr(114)+chr(111)+chr(101)]:.1f}'.replace('.', ',') + '%'}</td></tr>")
-    HD = "<tr><td><b>Mã</b></td><td class='r'><b>LNST quý (tỷ)</b></td><td class='r'><b>So cùng kỳ</b></td><td class='r'><b>LNST 4 quý</b></td><td class='r'><b>ROE</b></td></tr>"
+    HD = "<tr><td><b>Mã</b></td><td class='r'><b>Lãi sau thuế quý (tỷ)</b></td><td class='r'><b>So cùng kỳ</b></td><td class='r'><b>Lãi sau thuế 4 quý</b></td><td class='r'><b>ROE</b></td></tr>"
     def bang(tt, items): return f"<h2>{tt}</h2><div style='overflow-x:auto'><table class='mt'>{HD}" + "".join(row(t, v) for t, v in items) + "</table></div>"
     srt = sorted(L.items(), key=lambda x: -x[1]["ln"])
     gr = sorted([x for x in L.items() if x[1].get("yoy") is not None and x[1]["ln"] >= 50], key=lambda x: -x[1]["yoy"])
     nh = [x for x in srt if x[1].get("f") == "bank"]; ck = [x for x in srt if x[1].get("f") == "ck"]
     tl = f"Kết quả kinh doanh {QL}: lợi nhuận {len(L)} doanh nghiệp niêm yết"
-    ds = f"Kết quả kinh doanh {QN} của {len(L)} doanh nghiệp: tổng LNST {_nt(tot)} tỷ, {up} mã tăng, {dn} mã giảm. Xếp hạng lãi lớn nhất, tăng mạnh nhất, ngân hàng, chứng khoán."
+    ds = f"Kết quả kinh doanh {QN} của {len(L)} doanh nghiệp: tổng lãi sau thuế {_nt(tot)} tỷ, {up} mã tăng, {dn} mã giảm. Xếp hạng lãi lớn nhất, tăng mạnh nhất, ngân hàng, chứng khoán."
     faqk = [(f"Kết quả kinh doanh {QN} có gì nổi bật?", f"{len(L)} doanh nghiệp đã có số liệu, tổng lợi nhuận sau thuế công ty mẹ khoảng {_nt(tot)} tỷ đồng; {up} doanh nghiệp tăng lãi so với cùng kỳ, {dn} doanh nghiệp giảm, {lo} doanh nghiệp lỗ."),
             (f"Doanh nghiệp nào lãi lớn nhất {QN}?", ", ".join(f"{t} ({_nt(v['ln'])} tỷ)" for t, v in srt[:5]) + "."),
             (f"Ngân hàng nào lãi nhiều nhất {QN}?", ", ".join(f"{t} ({_nt(v['ln'])} tỷ)" for t, v in nh[:5]) + "." if nh else "Chưa đủ số liệu.")]
