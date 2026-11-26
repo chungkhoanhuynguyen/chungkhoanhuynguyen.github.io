@@ -2,3 +2,6 @@ exclude:
   - "*.py"
   - "_nhanxet.json"
   - "*.md"
+include:
+  - "_soi.bin"
+  - "_tom.bin"
