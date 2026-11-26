@@ -9,8 +9,8 @@ var st=d.createElement("style");st.textContent="#hnbar{position:fixed;left:0;rig
 "@media(prefers-reduced-motion:reduce){#hnbar{transition:none}}";d.head.appendChild(st);
 var b=d.createElement("nav");b.id="hnbar";b.setAttribute("aria-label","Liên hệ nhanh");
 b.innerHTML='<a class="z" href="https://zalo.me/0365188286" rel="noopener">Nhắn Zalo</a>'+(trangSoi?'':'<a class="s" href="/soi-ma-mien-phi.html'+(m?'#'+m:'')+'">Soi '+(m?m:'mã')+' miễn phí</a>');
-function go(){d.body.appendChild(b);d.body.classList.add("hnbar")}
+var vis={};function go(){d.body.appendChild(b);d.body.classList.add("hnbar");var h=d.querySelector(".hero-act")||d.getElementById("soima");if(h&&W.IntersectionObserver){var sm=d.getElementById("soima")||h;var io=new IntersectionObserver(function(es){es.forEach(function(e){vis[e.target===h?"a":"b"]=e.isIntersecting});b.classList.toggle("an",!!(vis.a||vis.b))});io.observe(h);if(sm!==h)io.observe(sm)}}
 if(d.body)go();else d.addEventListener("DOMContentLoaded",go);
 b.addEventListener("click",function(ev){var a=ev.target.closest&&ev.target.closest("a.s");if(a)try{if(W.hnDo)hnDo("bar_soi",{ma:m||""})}catch(x){}});
 function go2(ev){var t=ev.target,g=t&&/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName)&&!/^(button|submit|checkbox|radio)$/i.test(t.type||"");if(g)b.classList.add("an")}
-d.addEventListener("focusin",go2);d.addEventListener("focusout",function(){setTimeout(function(){var a=d.activeElement;if(!a||!/^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName))b.classList.remove("an")},120)});})();
+d.addEventListener("focusin",go2);d.addEventListener("focusout",function(){setTimeout(function(){var a=d.activeElement;if(!a||!/^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName))if(!(vis.a||vis.b))b.classList.remove("an")},120)});})();

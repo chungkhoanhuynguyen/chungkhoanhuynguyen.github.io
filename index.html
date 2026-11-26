@@ -131,6 +131,8 @@ ol.eps li{display:grid;grid-template-columns:64px 1fr;gap:12px;padding-block:12p
 ol.eps b{font-weight:700} ol.eps p{margin:2px 0 0;font-size:13px;color:var(--mute)}
 .eyebrow{font:700 12px var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin:0 0 26px}
 .hero-act{margin-top:22px;max-width:420px}
+.hero-2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}.hero-2 .btn{flex-direction:column;align-items:flex-start;justify-content:center;gap:3px;padding:11px 14px!important;font-size:15px!important;line-height:1.25;min-height:58px}.hero-2 .btn small{font:600 12px var(--body)!important;opacity:.9}
+
 .svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
 .svc h3{font:800 18px var(--disp);margin:0 0 8px} .svc p{margin:0;color:var(--mute);font-size:14px}
 .steps{list-style:none;padding:0;margin:22px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;counter-reset:s}
@@ -328,6 +330,8 @@ html{scroll-behavior:auto}
 .mw-c svg{display:block;width:100%;height:auto;overflow:visible}
 .mw-c text{font:11px var(--body,system-ui);fill:var(--mute)}
 .mw-c .tk{font-weight:700;fill:var(--fg)}
+.lgi{display:inline-flex;align-items:center;white-space:nowrap}
+@media(max-width:600px){#fl-tb table,#fl-tb tbody{display:block;width:100%}#fl-tb thead{display:none}#fl-tb tr{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px 10px;padding:12px 2px;border-bottom:1px solid var(--line)}#fl-tb td{display:block;padding:0!important;border:0!important;text-align:left!important;font-size:15px}#fl-tb td.gd{grid-column:1/3;font-weight:700;white-space:nowrap;font-size:14px;align-self:center}#fl-tb td.th{grid-column:3;justify-self:end}#fl-tb td[data-l]::before{content:attr(data-l);display:block;font-size:12px;color:var(--mute);margin-bottom:2px}}
 .mw-f{font-size:12px;color:var(--mute);margin:6px 0 0;display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center}
 .lg{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:4px;vertical-align:-1px}
 .lg.up{background:#1f8a57}.lg.dn{background:#c43c32}.lg.mid{background:#d8b24a}.lg.vn{background:#8d8899}.lg.a50{background:#6a2d86}.lg.a200{background:#d08a1e}.lg.pe{background:#6a2d86}
@@ -990,7 +994,7 @@ header.top .gnav .gi>a.hn-navts:hover{background:rgba(242,193,78,.12)!important;
 <div class="herobox hn-astro"><canvas id="hnAstro" aria-hidden="true"></canvas><div class="wrap hero">
 <div><p class="eyebrow hn-eb"><i aria-hidden="true"></i>Tư vấn đầu tư chứng khoán 1:1</p><h1 class="hn-h1"><span class="hn-brand">Chứng Khoán Huy Nguyễn</span>Mỗi nhà đầu tư một <em>kế hoạch riêng.</em></h1>
 <p class="hn-lead">Đọc báo cáo tài chính mã anh chị đang cầm, dựng danh mục theo số vốn và mức chịu rủi ro, đặt sẵn điểm mua và điểm cắt lỗ trước mỗi lệnh.</p>
-<div class="hero-act"><a class="btn main" href="https://zalo.me/0365188286" target="_blank" rel="noopener">Đặt lịch tư vấn 1:1 qua Zalo <small>0365.188.286</small></a><a class="btn vps" style="margin-top:10px" href="/mo-tai-khoan-chung-khoan.html#chon">Mở tài khoản chứng khoán <small>Online 5 phút</small></a><a class="btn zcd" style="margin-top:10px" href="/z/web.html" target="_blank" rel="noopener">Vào nhóm Zalo cộng đồng <small>1.700+ thành viên</small></a></div>
+<div class="hero-act"><a class="btn main" href="https://zalo.me/0365188286" target="_blank" rel="noopener">Đặt lịch tư vấn 1:1 qua Zalo <small>0365.188.286</small></a><div class="hero-2"><a class="btn vps" href="/mo-tai-khoan-chung-khoan.html#chon">Mở tài khoản <small>Online 5 phút</small></a><a class="btn zcd" href="/z/web.html" target="_blank" rel="noopener">Nhóm Zalo cộng đồng <small>1.700+ thành viên</small></a></div></div>
 <form class="soima" id="soima" autocomplete="off"><label for="soima-m">Đang cầm mã nào? Gửi em soi miễn phí</label><div class="soima-r"><input id="soima-m" name="ma" maxlength="6" placeholder="VD: HPG" required pattern="[A-Za-z0-9]{3,6}"><button type="submit">Gửi qua Zalo</button></div><p id="soima-t">Em xem cùng anh chị 3 dòng: lỗ lũy kế, lãi vay, dòng tiền kinh doanh.</p></form><a class="hero-rep hn-ts" href="bao-cao-2026.html#tichsan"><b>Bảng giá tích sản</b><span>Nhóm ngân hàng cổ tức đều, cập nhật mỗi phiên</span><i aria-hidden="true">→</i></a><div class="hn-so"><span><b>1.700+</b>thành viên cộng đồng</span><span><b>2016–2026</b>báo cáo lệnh công khai</span></div><div class="soc hn-soc" style="margin-top:18px"><a href="https://www.facebook.com/chungkhoanhuynguyenfa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4V10.5H7.8v3h2.6V21z"/></svg>Facebook</a><a href="https://www.youtube.com/@chungkhoanhuynguyen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z"/></svg>YouTube</a><a href="https://www.tiktok.com/@chungkhoanhuynguyen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M16.6 3c.4 2 1.7 3.4 3.9 3.6v3a7.3 7.3 0 0 1-3.8-1.2v6.3a5.7 5.7 0 1 1-5.7-5.7l.6.1v3.1a2.6 2.6 0 1 0 2 2.5V3z"/></svg>TikTok</a></div></div>
 <div aria-hidden="true"></div></div></div></div>
 
@@ -1032,12 +1036,12 @@ document.addEventListener('click',function(e){if(!e.target.closest('.tn-box'))r.
 </div>
 <div class="mw-grid" data-p="tq">
  <article class="mw"><header><b>Nhóm dẫn dắt thị trường</b><span class="mw-tag">HOSE</span></header><div class="mw-c" id="mw-lead"></div><p class="mw-f" id="mw-lead-f"></p></article>
- <article class="mw"><header><b>Độ rộng thị trường</b><span class="mw-tag" id="mw-br-n"></span></header><div class="mw-big" id="mw-br-big"></div><div class="mw-c" id="mw-br"></div><p class="mw-f"><i class="lg up"></i>Tăng giá <i class="lg mid"></i>Đứng giá <i class="lg dn"></i>Giảm giá</p></article>
+ <article class="mw"><header><b>Độ rộng thị trường</b><span class="mw-tag" id="mw-br-n"></span></header><div class="mw-big" id="mw-br-big"></div><div class="mw-c" id="mw-br"></div><p class="mw-f"><span class="lgi"><i class="lg up"></i>Tăng giá</span> <span class="lgi"><i class="lg mid"></i>Đứng giá</span> <span class="lgi"><i class="lg dn"></i>Giảm giá</span></p></article>
  <article class="mw"><header><b>Thanh khoản cao nhất</b><span class="mw-tag">tỷ đồng</span></header><div class="mw-c" id="mw-tv"></div></article>
 </div>
 <div class="mw-grid" data-p="dg" hidden>
- <article class="mw"><header><b>Định giá theo P/E</b><span class="mw-rg" data-c="pe"></span></header><div class="mw-c" id="mw-pe"></div><p class="mw-f"><i class="lg vn"></i>VN-Index (điểm, trái) <i class="lg pe"></i>P/E (lần, phải)</p></article>
- <article class="mw"><header><b>Định giá theo P/B</b><span class="mw-rg" data-c="pb"></span></header><div class="mw-c" id="mw-pb"></div><p class="mw-f"><i class="lg vn"></i>VN-Index (điểm, trái) <i class="lg pe"></i>P/B (lần, phải)</p></article>
+ <article class="mw"><header><b>Định giá theo P/E</b><span class="mw-rg" data-c="pe"></span></header><div class="mw-c" id="mw-pe"></div><p class="mw-f"><span class="lgi"><i class="lg vn"></i>VN-Index (điểm, trái)</span> <span class="lgi"><i class="lg pe"></i>P/E (lần, phải)</span></p></article>
+ <article class="mw"><header><b>Định giá theo P/B</b><span class="mw-rg" data-c="pb"></span></header><div class="mw-c" id="mw-pb"></div><p class="mw-f"><span class="lgi"><i class="lg vn"></i>VN-Index (điểm, trái)</span> <span class="lgi"><i class="lg pe"></i>P/B (lần, phải)</span></p></article>
  <article class="mw mw-note"><b>Cách đọc nhanh</b><p id="mw-dg-note">Đang tính…</p></article>
 </div>
 <div class="mw-grid" data-p="nh" hidden>
@@ -1059,7 +1063,7 @@ document.addEventListener('click',function(e){if(!e.target.closest('.tn-box'))r.
  <div class="mw mw-flow" id="mw-flow-box" hidden><header><b>Chu kỳ dòng tiền 1 năm</b><span class="mw-rg" data-c="fl"></span></header>
  <div class="fl-top"><div class="fl-st" id="fl-st"></div><div class="fl-g" id="fl-g"></div></div>
  <div class="mw-c" id="mw-fl"></div>
- <p class="mw-f"><i class="lg vn"></i>VN-Index <i class="lg a50"></i>Sức mạnh dòng tiền <i class="lg fb"></i>Giai đoạn tạo đáy <i class="lg fs"></i>Tạo đỉnh ngắn hạn <i class="lg ft"></i>Giai đoạn tạo đỉnh</p>
+ <p class="mw-f"><span class="lgi"><i class="lg vn"></i>VN-Index</span> <span class="lgi"><i class="lg a50"></i>Sức mạnh dòng tiền</span> <span class="lgi"><i class="lg fb"></i>Giai đoạn tạo đáy</span> <span class="lgi"><i class="lg fs"></i>Tạo đỉnh ngắn hạn</span> <span class="lgi"><i class="lg ft"></i>Giai đoạn tạo đỉnh</span></p>
  <div class="fl-tb" id="fl-tb"></div></div>
 <p class="note">Bảng này cập nhật miễn phí mỗi ngày. Biết thị trường đang ở đâu mới là một nửa; nửa còn lại là danh mục của chính anh chị nên làm gì lúc này. Khách mở tài khoản cùng Huy Nguyễn được rà danh mục 1:1 theo đúng trạng thái dòng tiền – <a href="/mo-tai-khoan-chung-khoan.html#chon">xem cách mở tài khoản</a>. Thông tin tham khảo, không phải khuyến nghị mua bán.</p>
 </div></section>
@@ -1624,7 +1628,7 @@ function hist(h){
   ranges(k,function(n){line($('mw-'+k),sl(h.dates,n),[{v:sl(h.vn,n),c:'#8d8899',fill:1,w:1.6},{v:sl(h[k],n),c:'#6a2d86',ax:'r',w:2}],{rd:k==='pb'?2:1,avg:avg})});
   var cur=all[all.length-1],mn=Math.min.apply(0,all),mx=Math.max.apply(0,all),pct=Math.round(100*all.filter(function(v){return v<=cur}).length/all.length);
   return {lab:lab,cur:cur,avg:avg,mn:mn,mx:mx,pct:pct};}
- window.__khMA=function(){var el=document.getElementById('kh-ma');if(!el||el.dataset.on)return;el.dataset.on='1';el.classList.remove('mw-lock');el.innerHTML='<header><b>Phân bổ thị trường</b><span class="mw-rg" data-c="ma"></span></header><div class="mw-c" id="mw-ma"></div><p class="mw-f"><i class="lg vn"></i>VN-Index (trái) <i class="lg a50"></i>Tỷ lệ mã trên MA50 <i class="lg a200"></i>Trên MA200 (% phải)</p>';ranges('ma',function(n){line($('mw-ma'),sl(h.dates,n),[{v:sl(h.vn,n),c:'#8d8899',fill:1,w:1.6},{v:sl(h.a50,n),c:'#6a2d86',ax:'r'},{v:sl(h.a200,n),c:'#d08a1e',ax:'r'}],{rr:[0,100]})})};
+ window.__khMA=function(){var el=document.getElementById('kh-ma');if(!el||el.dataset.on)return;el.dataset.on='1';el.classList.remove('mw-lock');el.innerHTML='<header><b>Phân bổ thị trường</b><span class="mw-rg" data-c="ma"></span></header><div class="mw-c" id="mw-ma"></div><p class="mw-f"><span class="lgi"><i class="lg vn"></i>VN-Index (trái)</span> <span class="lgi"><i class="lg a50"></i>Tỷ lệ mã trên MA50</span> <span class="lgi"><i class="lg a200"></i>Trên MA200 (% phải)</span></p>';ranges('ma',function(n){line($('mw-ma'),sl(h.dates,n),[{v:sl(h.vn,n),c:'#8d8899',fill:1,w:1.6},{v:sl(h.a50,n),c:'#6a2d86',ax:'r'},{v:sl(h.a200,n),c:'#d08a1e',ax:'r'}],{rr:[0,100]})})};
  window.__khMA();
  var a=val('pe','P/E'),b=val('pb','P/B');
  function lv(p){return p<=30?['#e6f3ec','#1f8a57','Thấp trong 1 năm']:p>=70?['#fbeceb','#c43c32','Cao trong 1 năm']:['#f6f0dc','#8a6a12','Quanh mức trung bình']}
@@ -1664,7 +1668,7 @@ function flowp(h){
  if(!E.length){$('fl-tb').innerHTML='';return}
  var pc2=function(a,b){if(a==null||b==null)return '–';var r=(b/a-1)*100;return '<span style="color:'+(r>=0?UP:DN)+'">'+(r>=0?'+':'−')+Math.abs(r).toFixed(1).replace('.',',')+'%</span>'};
  var fd=function(z){return z.slice(8,10)+'/'+z.slice(5,7)+'/'+z.slice(0,4)};
- var rows=E.slice(-6).reverse().map(function(e){var a20=Math.min(N-1,e.b+20);return '<tr><td>'+fd(D[e.b])+(e.e>e.b?' – '+fd(D[e.e]):'')+'</td><td><span class="tg '+(e.s>0?'b':'t')+'">'+(e.s>0?'Tạo đáy':e.s===-1?'Tạo đỉnh':'Đỉnh ngắn hạn')+'</span></td><td class="r">'+nf(V[e.b],2)+'</td><td class="r">'+(e.b+20<N?pc2(V[e.b],V[a20]):'–')+'</td><td class="r">'+pc2(V[e.b],V[last])+'</td></tr>'}).join('');
+ var rows=E.slice(-6).reverse().map(function(e){var a20=Math.min(N-1,e.b+20);return '<tr><td class="gd">'+fd(D[e.b])+(e.e>e.b?' – '+fd(D[e.e]):'')+'</td><td class="th"><span class="tg '+(e.s>0?'b':'t')+'">'+(e.s>0?'Tạo đáy':e.s===-1?'Tạo đỉnh':'Đỉnh ngắn hạn')+'</span></td><td class="r" data-l="VN-Index lúc đó">'+nf(V[e.b],2)+'</td><td class="r" data-l="Sau 20 phiên">'+(e.b+20<N?pc2(V[e.b],V[a20]):'–')+'</td><td class="r" data-l="Đến nay">'+pc2(V[e.b],V[last])+'</td></tr>'}).join('');
  $('fl-tb').innerHTML='<table><thead><tr><th>Giai đoạn</th><th>Tín hiệu</th><th class="r">VN-Index lúc đó</th><th class="r">Sau 20 phiên</th><th class="r">Đến nay</th></tr></thead><tbody>'+rows+'</tbody></table>';
 }
 function meters(m){return [['Mã trên MA50 (xu hướng ngắn)',m.a50],['Mã trên MA200 (xu hướng dài)',m.a200]].map(function(r){var c=r[1]<20?DN:r[1]>80?UP:'#6a2d86';return '<div style="margin:8px 0 0"><div style="display:flex;justify-content:space-between;font-size:12.5px"><span>'+r[0]+'</span><b style="color:'+c+'">'+nf(r[1],1)+'%</b></div><div class="mw-bar" style="height:8px;background:#efebf4"><i style="width:'+r[1]+'%;background:'+c+'"></i></div></div>'}).join('')}
