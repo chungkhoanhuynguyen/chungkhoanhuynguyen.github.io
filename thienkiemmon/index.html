@@ -817,10 +817,10 @@ const gMat=new T.ShaderMaterial({uniforms:{map:{value:softTex},px:{value:DPR}},t
  fragmentShader:'uniform sampler2D map;varying vec3 vC;void main(){float a=texture2D(map,gl_PointCoord).a;gl_FragColor=vec4(vC*a,1.);}'});
 const glow=new T.Points(gGeo,gMat);glow.frustumCulled=false;scene.add(glow);let gI=0;
 function emit(x,y,z,vx,vy,vz,r,g,b,size,life,grav=0,drag=0){const i=gI++%GN;r*=.38;g*=.38;b*=.38;size*=.6;gP[i*3]=x;gP[i*3+1]=y;gP[i*3+2]=z;gV[i*3]=vx;gV[i*3+1]=vy;gV[i*3+2]=vz;gB[i*3]=r;gB[i*3+1]=g;gB[i*3+2]=b;gS0[i]=size;gL[i]=gL0[i]=life;gG[i]=grav;gD[i]=drag}
-function updGlow(dt){for(let i=0;i<GN;i++){if(gL[i]<=0){if(gS[i]){gS[i]=0;gC[i*3]=gC[i*3+1]=gC[i*3+2]=0}continue}gL[i]-=dt;const f=Math.max(0,gL[i]/gL0[i]),k=1-gD[i]*dt;
+var gAl=0,gWas=1;function updGlow(dt){for(let i=0;i<GN;i++){if(gL[i]<=0){if(gS[i]){gS[i]=0;gC[i*3]=gC[i*3+1]=gC[i*3+2]=0}continue}gAl++;gL[i]-=dt;const f=Math.max(0,gL[i]/gL0[i]),k=1-gD[i]*dt;
  gV[i*3]*=k;gV[i*3+1]=gV[i*3+1]*k-gG[i]*dt;gV[i*3+2]*=k;gP[i*3]+=gV[i*3]*dt;gP[i*3+1]+=gV[i*3+1]*dt;gP[i*3+2]+=gV[i*3+2]*dt;
  const a=f*f*(3-2*f);gC[i*3]=gB[i*3]*a;gC[i*3+1]=gB[i*3+1]*a;gC[i*3+2]=gB[i*3+2]*a;gS[i]=gS0[i]*(.35+.65*f)}
- gGeo.attributes.position.needsUpdate=gGeo.attributes.color.needsUpdate=gGeo.attributes.size.needsUpdate=true}
+ if(gAl||gWas)gGeo.attributes.position.needsUpdate=gGeo.attributes.color.needsUpdate=gGeo.attributes.size.needsUpdate=true;gWas=gAl;gAl=0}
 const R=()=>Math.random()-.5;
 function boom(p,n,col,spd,size,life,grav=3){for(let k=0;k<n;k++){const v=new T.Vector3(R(),Math.random()*.8,R()).normalize().multiplyScalar(spd*(.3+Math.random()));emit(p.x,p.y,p.z,v.x,v.y,v.z,col[0],col[1],col[2],size*(.6+Math.random()*.8),life*(.6+Math.random()*.6),grav,1.5)}}
 const flash=new T.PointLight(0xffc070,0,26,2);scene.add(flash);function flashAt(p,c,i){flash.position.copy(p).setY(p.y+2);flash.color.set(c);flash.intensity=Math.min(i,5)}
@@ -5720,7 +5720,7 @@ try{(function(){let sd=777191;const r=()=>{sd=(sd*16807)%2147483647;return sd/21
    for(let i=AMB.length-1;i>=0;i--){const e=AMB[i];if(e.gone||!ents.includes(e)){AMB.splice(i,1);continue}if(e.dead)continue;if(!e.target&&Math.hypot(e.c.g.position.x-hp.x,e.c.g.position.z-hp.z)>190){e.gone=1;AMB.splice(i,1)}}
    if(Math.max(Math.abs(hp.x),Math.abs(hp.z))<CITY+45)return;
    let near=0;for(const e of ents){if(e.team==='enemy'&&!e.dead&&Math.abs(e.c.g.position.x-hp.x)+Math.abs(e.c.g.position.z-hp.z)<95)near++}
-   const want=LITE?10:16;for(let k=0;k<3&&near<want;k++){const a=Math.random()*6.283,d=38+Math.random()*40;const x=hp.x+Math.cos(a)*d,z=hp.z+Math.sin(a)*d;if(!okP(x,z,-20))continue;
+   const want=LITE?18:34;/* 26/11: quái đông gấp 2 nhờ quái xa cử động thưa khung */for(let k=0;k<3&&near<want;k++){const a=Math.random()*6.283,d=38+Math.random()*40;const x=hp.x+Math.cos(a)*d,z=hp.z+Math.sin(a)*d;if(!okP(x,z,-20))continue;
     const si=pickMon(x,z),n=Math.random()<.35?3:Math.random()<.5?2:1;for(let j=0;j<n&&near<want;j++){const v=Math.random(),pre=v<.12?'Tinh Anh ':v<.25?'Cuồng ':v<.35?'Ấu ':'',mul=pre==='Tinh Anh '?2.4:pre==='Cuồng '?1.5:pre==='Ấu '?.55:1;
      const e=spawnMon(si,x+R2(4),z+R2(4),mul,pre+MONS[si][1]);e.amb=1;if(pre==='Tinh Anh ')e.c.g.scale.multiplyScalar(1.3);else if(pre==='Ấu ')e.c.g.scale.multiplyScalar(.75);
      if(pre){const nm=e.lab.querySelector('.nm');if(nm)nm.innerHTML=`<span style="color:#ffd36b">Cấp ${e.lv}</span> <b style="color:${pre==='Tinh Anh '?'#ffb030':'#ff7a6a'}">${pre}</b>${MONS[si][1]}`}AMB.push(e);near++}}}catch(er){console.warn('amb',er)}},2500);
@@ -5827,6 +5827,14 @@ try{(function(){if(/nofxcap/.test(location.search))return;let n=0,f0=0;const B=L
  const _fq=fxQuad;fxQuad=function(map,col,w,h,pos){try{const c=cp();if(pos&&Math.abs(pos.x-c.x)+Math.abs(pos.z-c.z)>80){const d=new T.Group(),m=new T.Mesh(DG,DM);d.add(m);const m2=new T.Mesh(DG,DM);d.add(m2);d.material=DM;return d}}catch(e){}const g=_fq.apply(this,arguments);try{const MX=LITE?36:80;if(fx.length>MX){for(let i=0;i<fx.length-MX;i++){const f=fx[i];if(f.t<f.d*.9)f.t=Math.max(f.t,f.d*.9)}}}catch(e){}return g};
  const DG=new T.PlaneGeometry(1,1),DM=new T.MeshBasicMaterial({visible:false});window.__fxcap=()=>({emitFrame:n,fx:fx.length,B});
 })()}catch(e){console.warn('fxcap',e)}
+/* ===== ĐÔNG QUÁI KHÔNG GIẬT (26/11): quái/tu sĩ ở xa cử động thưa khung hơn (gần: đủ khung; vừa: 1/2; xa: 1/3–1/4) — bỏ tính xương + đẩy xương lên card ở các khung nghỉ; con nào đang đánh nhau với mình luôn đủ khung. Nhờ vậy tăng được số quái quanh mình: điện thoại 10→18, PC 16→34 ===== */
+try{(function(){if(/nolod/.test(location.search))return;let F=0;(function tk(){F++;requestAnimationFrame(tk)})();const OU=T.Object3D.prototype.updateMatrixWorld;
+ const due=g=>g.__k<=1||((F+g.id)%g.__k)===0;
+ function patch(e){const g=e.c.g;if(!g.__lod){g.__lod=1;g.__k=1;const prev=g.__hp?g.updateMatrixWorld:function(f){if(!this.visible){this.__hid=1;if(this.matrixAutoUpdate)this.updateMatrix();return}if(this.__hid){this.__hid=0;f=true}OU.call(this,f)};g.__hp=1;g.updateMatrixWorld=function(force){if(this.visible&&!due(this)){if(this.matrixAutoUpdate)this.updateMatrix();this.__stale=1;return}if(this.__stale){this.__stale=0;force=true}return prev.call(this,force)}}
+  const n=g.children.length+(e.c.fx?100:0)+(e.av?1000:0);if(g.__sn===n)return;g.__sn=n;g.traverse(o=>{const sk=o.isSkinnedMesh&&o.skeleton;if(sk&&!sk.__lod){sk.__lod=1;const u=sk.update;sk.update=function(){if(!due(g))return;return u.apply(this,arguments)}}});
+  const mx=e.c.mx;if(mx&&!mx.__lod){mx.__lod=1;const u=mx.update;let acc=0;mx.update=function(dt){acc+=dt;if(!due(g)&&acc<.25)return this;const d=acc;acc=0;return u.call(this,d)}}}
+ setInterval(()=>{try{const N1=LITE?14:25,N2=LITE?28:50;for(const e of ents){if(e===hero||!e.c||!e.c.g)continue;patch(e);const d=e._dcam||0,g=e.c.g;g.__k=(e.target===hero||hero.target===e||e.boss||d<N1)?1:d<N2?2:(LITE?4:3)}}catch(er){}},400);
+})()}catch(e){console.warn('lod26',e)}
 /* ===== BỎ BIỂU CẢM MẶT CỦA NGƯỜI KHÁC (26/11): mặt mẫu nhân vật mang dữ liệu biểu cảm rất lớn, lần đầu một mẫu xuất hiện máy phải đẩy cả khối đó lên card → đứng hình vài giây (điện thoại tới 5–10 giây). Tu sĩ ảo, NPC, người chơi khác không cần nháy mắt/cười → bỏ dữ liệu này (nhân vật của mình giữ nguyên) ===== */
 try{(function(){if(/keepmorph/.test(location.search))return;const GC=new WeakMap();
  function strip(root){if(!root)return;root.traverse(o=>{if(!o.isMesh||!o.geometry)return;const g=o.geometry,ma=g.morphAttributes;if(!ma||!Object.keys(ma).some(k=>ma[k]&&ma[k].length))return;let g2=GC.get(g);
