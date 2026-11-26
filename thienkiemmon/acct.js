@@ -128,7 +128,7 @@ var TKACCT = (function () {
   }
   function charView() {
     var cs = prof.chars || [], n = cs.filter(Boolean).length, h = '<h2>Chọn máy chủ</h2>' + srvHtml() + '<h2>Chọn nhân vật</h2><div class="sub">' + esc(prof.id || '') + ' · ' + n + '/' + MAXC + ' nhân vật</div>';
-    cs.forEach(function (c, i) { if (c) h += '<div class="ch" data-i="' + i + '"><div><b>' + esc(c.name || 'Nhân vật ' + (i + 1)) + '</b><br><small>' + esc(c.lv || '') + '</small></div><button class="x alt" data-del="' + i + '">Xóa</button></div>'; });
+    cs.forEach(function (c, i) { if (c) h += '<div class="ch" data-i="' + i + '"><div><b>' + esc(c.name || 'Nhân vật ' + (i + 1)) + '</b><br><small>' + esc(c.lv || '') + '</small></div></div>'; });
     if (n < MAXC) h += '<button id="anew">+ Tạo nhân vật mới</button>';
     h += (denied ? '<div class="msg">Máy chủ chưa mở quyền lưu — nhân vật chỉ lưu trên máy này.</div>' : '') + '<button id="aout" class="alt">Đăng xuất</button>';
     var b = show(h);
