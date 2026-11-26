@@ -113,6 +113,12 @@ body.in .bar.t{transform:translateY(-100%)}body.in .bar.b{transform:translateY(1
  .bar{height:0}
 }
 @media (prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-delay:0s!important;transition-duration:.01s!important}}
+.lagb{margin-left:auto;margin-right:14px;min-height:32px;padding:4px 12px;border-radius:999px;border:1px solid rgba(233,196,106,.55);background:rgba(10,8,4,.55);color:#f3e6c8;font:600 13px/1 inherit;cursor:pointer;transition:transform .12s ease,background .15s ease}.lagb:hover{background:rgba(40,30,10,.75)}.lagb:active{transform:scale(.97)}
+.lagp{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.6);padding:16px}.lagp[hidden]{display:none}
+.lagp .lb{position:relative;max-width:520px;width:100%;max-height:88vh;overflow:auto;background:#17110a;border:1px solid rgba(233,196,106,.5);border-radius:14px;padding:18px 20px;color:#f3e6c8;font-size:15px;line-height:1.55}
+.lagp h3{margin:0 0 8px;color:#f2cf7a;font-size:20px}.lagp ol{padding-left:20px;margin:8px 0}.lagp li{margin:4px 0}.lagp .sm{font-size:13.5px;opacity:.85}
+.lagp .lx{position:absolute;top:8px;right:10px;width:36px;height:36px;border:0;border-radius:50%;background:rgba(255,255,255,.08);color:#fff;font-size:22px;cursor:pointer}
+@media (pointer:coarse){.lagb{display:none}}
 </style>
 <meta name="google-adsense-account" content="ca-pub-1473458130993450">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1473458130993450" crossorigin="anonymous"></script>
@@ -124,6 +130,7 @@ body.in .bar.t{transform:translateY(-100%)}body.in .bar.b{transform:translateY(1
   <div class="bg" id="bg"></div><div class="shade"></div><div class="grain"></div>
   <div class="top">
     <div class="brand"><svg viewBox="0 0 32 32" fill="none" stroke="#e9c46a" stroke-width="1.6" stroke-linecap="round"><circle cx="16" cy="16" r="14"/><path d="M8 24L24 8M24 24L8 8" stroke="#fff1c4" stroke-width="2"/></svg>HUY NGUYỄN GAMES</div>
+    <button type="button" id="lagb" class="lagb">Máy tính bị giật?</button>
     <a class="home" href="/">chungkhoanhuynguyen.com</a>
   </div>
   <section class="hero" id="hero" aria-live="polite">
@@ -139,6 +146,11 @@ body.in .bar.t{transform:translateY(-100%)}body.in .bar.b{transform:translateY(1
 <div id="intro" role="button" aria-label="Bỏ qua phần mở đầu"><div class="in"><div class="ln"></div><div class="k">HUY NGUYỄN GAMES</div><div class="t serif">Cổng Game</div><div class="s">Bốn thế giới · chơi ngay trên điện thoại</div></div></div>
 <div class="bar t"></div><div class="bar b"></div>
 <div id="warp"></div>
+<div id="lagp" class="lagp" role="dialog" aria-label="Chơi mượt trên laptop" hidden><div class="lb"><button type="button" class="lx" aria-label="Đóng">×</button>
+<h3 class="serif">Laptop có card rời mà vẫn giật?</h3>
+<p>Windows hay để trình duyệt chạy bằng card Intel/AMD tích hợp (yếu) thay vì card NVIDIA. Đổi một lần là xong:</p>
+<ol><li>Mở <b>Cài đặt Windows → Hệ thống → Màn hình → Đồ họa</b>.</li><li>Tìm <b>Google Chrome</b> (hoặc Cốc Cốc, Edge…) → <b>Tùy chọn</b> → chọn <b>Hiệu suất cao</b> → Lưu.</li><li>Tắt hẳn trình duyệt rồi mở lại.</li><li>Trong Chrome vào <b>Cài đặt → Hệ thống</b>, bật <b>Dùng tính năng tăng tốc đồ họa</b>.</li><li>Cắm sạc khi chơi — rút sạc card bị hạ xung.</li></ol>
+<p class="sm">Điện thoại chỉ có một chip đồ họa nên không cần chỉnh. Nếu vẫn giật: trong game bấm nút <b>Đồ họa</b> (hình mặt trời) → chọn <b>Thấp</b>.</p></div></div>
 
 <script>
 (function(){
@@ -163,6 +175,7 @@ body.in .bar.t{transform:translateY(-100%)}body.in .bar.b{transform:translateY(1
   var warp=$('warp');function go(h){warp.classList.add('on');setTimeout(function(){location.href=h},260)}
   $('play').addEventListener('click',function(e){if(e.metaKey||e.ctrlKey||e.shiftKey)return;e.preventDefault();go(this.getAttribute('href'))});
   addEventListener('pageshow',function(){warp.classList.remove('on')});
+  var lp=$('lagp');$('lagb').addEventListener('click',function(e){e.stopPropagation();lp.hidden=false});lp.addEventListener('click',function(e){if(e.target===lp||e.target.classList.contains('lx'))lp.hidden=true});
   var intro=$('intro'),done=false;function enter(){if(done)return;done=true;intro.classList.add('out');document.body.classList.add('in');try{sessionStorage.setItem('gh_intro2','1')}catch(e){}}
   intro.addEventListener('click',enter);addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '||e.key==='Escape')enter()});
   var seen=false;try{seen=sessionStorage.getItem('gh_intro2')}catch(e){}

@@ -104,6 +104,12 @@ canvas#gl{display:block;position:fixed;inset:0;width:100%;height:100%}
 <script src="lib/GLTFLoader.js"></script>
 <script src="lib/SkeletonUtils.js"></script><script src="lib/fflate.min.js"></script><script src="lib/FBXLoader.js"></script><script src="lib/KTX2Loader.js"></script><script src="acct.js?v=19"></script>
 <script>
+/* 26/11: điện thoại — ảnh bề mặt mô hình lớn hơn 512 được thu nhỏ trước khi đưa lên card đồ họa: hết khựng vài giây khi nhân vật/quái mới xuất hiện, đỡ tốn bộ nhớ */
+try{(function(){const TH=window.THREE;if(!TH||!(matchMedia('(pointer:coarse)').matches||/lite/.test(location.search))||/fulltex/.test(location.search))return;const MX=512;
+ const P=TH.Texture.prototype,d=Object.getOwnPropertyDescriptor(P,'needsUpdate');if(!d||!d.set)return;
+ Object.defineProperty(P,'needsUpdate',{configurable:true,get:d.get,set(v){try{if(v===true&&!this.__ds&&!this.isDataTexture&&!this.isCompressedTexture&&!this.isCanvasTexture&&!this.isVideoTexture){const im=this.image;const w=im&&(im.width||im.videoWidth),h=im&&(im.height||im.videoHeight);
+   if(w&&h&&(w>MX||h>MX)&&(typeof ImageBitmap!=='undefined'&&im instanceof ImageBitmap||im instanceof HTMLImageElement)){const k=MX/Math.max(w,h),c=document.createElement('canvas');c.width=Math.max(1,Math.round(w*k));c.height=Math.max(1,Math.round(h*k));c.getContext('2d').drawImage(im,0,0,c.width,c.height);this.__ds=1;this.image=c}}}catch(e){}d.set.call(this,v)}});
+})()}catch(e){}
 window.onerror=(m,s,l)=>{if(/WebGL không khả dụng/.test(m))return true;const e=document.getElementById('err');e.style.display='block';e.textContent='Lỗi: '+m+' (dòng '+l+')'};
 {
 const T=THREE;var GATE=new Promise(r=>window.__gate=r);var FQ={f:60,last:0,q:[],tm:0,k:1,lvl:0,vis(){const on=this.lvl<1||/noadapt/.test(location.search);try{grass.visible=on}catch(e){}if(on&&this.lvl<2)this.k=Math.min(1.25,Math.max(this.k,1))}};function slot(){if(/noadapt/.test(location.search))return Promise.resolve();return new Promise(r=>{FQ.q.push(r);if(!FQ.tm)FQ.tm=setInterval(()=>{if(!FQ.q.length){clearInterval(FQ.tm);FQ.tm=0;return}const now=performance.now();if(now-FQ.last<(FQ.f>52?160:400))return;if(FQ.f<44&&now-FQ.last<5000)return;FQ.last=now;FQ.q.shift()()},60)})}setTimeout(()=>window.__gate(),60000);T.ColorManagement.legacyMode=false;
