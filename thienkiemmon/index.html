@@ -4764,6 +4764,27 @@ try{(function(){
  const np=$('npcp');let bz=false;if(np)new MutationObserver(()=>{if(bz)return;const g=np.querySelector('#gname');if(!g||near())return;bz=true;try{const btn=np.querySelector('[data-x="gmk"]');g.remove();if(btn)btn.outerHTML='<p style="color:#ffd36b">Muốn lập bang, hãy tới gặp <b>Bang Hội Sứ</b> ở quảng trường thành (phía nam, gần chỗ hồi sinh).</p><button data-x="ggo">➜ Chỉ đường tới Bang Hội Sứ</button>'}catch(_){}setTimeout(()=>bz=false,0)}).observe(np,{childList:true});
  window.__bhs={n,near,POS};
 })()}catch(e){console.warn('banghoi',e)}
+/* ===== VẬN HỒI THÀNH (26/11): bấm Hồi thành (nút/phím H) phải vận công 10 giây mới về; trong lúc vận mà tự chạy, bị đánh mất máu hoặc chết là ngắt; bấm lại nút để hủy ===== */
+try{(function(){
+ const st=document.createElement('style');st.textContent='#hcbar{position:fixed;left:50%;bottom:24%;transform:translateX(-50%);z-index:40;width:min(300px,60vw);display:none;pointer-events:none;text-align:center;font:800 13px "Noto Serif",serif;color:#bfe8ff;text-shadow:0 1px 3px #000}#hcbar .tr{height:9px;margin-top:4px;border:1px solid #7fd8ff;border-radius:6px;background:rgba(0,0,0,.55);overflow:hidden}#hcbar .fl{height:100%;width:0;background:linear-gradient(90deg,#2a7fd0,#9fe8ff);box-shadow:0 0 8px #7fd8ff}#htb.chan{box-shadow:0 0 10px #7fd8ff;border-color:#7fd8ff!important}';document.head.appendChild(st);
+ const bar=document.createElement('div');bar.id='hcbar';bar.innerHTML='<span>☯ Vận công hồi thành… 10s</span><div class="tr"><div class="fl"></div></div>';document.body.appendChild(bar);
+ const DUR=10000;let C=null;
+ function stop(msg){if(!C)return;clearInterval(C.iv);C=null;bar.style.display='none';const b=$('htb');if(b)b.classList.remove('chan');if(msg)chat(msg,'k')}
+ setTimeout(()=>{const b=$('htb');if(!b)return;const done=b.onclick;
+  b.onclick=function(ev){if(C){stop('Đã hủy hồi thành.');return}if(hero.dead||creating||BC.in)return;
+   const p0=heroPos().clone();C={t0:performance.now(),hp:hero.hp,p0};P.auto=null;P.route=null;P.dest=null;b.classList.add('chan');bar.style.display='block';
+   try{ring(heroPos(),0x7fd8ff,2.2,.5)}catch(_){}
+   C.iv=setInterval(()=>{try{if(!C)return;const t=performance.now()-C.t0,hp=heroPos();
+     if(hero.dead){stop('Hồi thành bị ngắt.');return}
+     if(hero.hp<C.hp-1){stop('Bị đánh — hồi thành bị ngắt.');return}C.hp=Math.max(C.hp,hero.hp);
+     const man=(typeof joy!=='undefined'&&(joy.x||joy.y))||(typeof keys!=='undefined'&&Object.values(keys).some(Boolean));
+     if(man||Math.hypot(hp.x-C.p0.x,hp.z-C.p0.z)>.6){stop('Di chuyển — hồi thành bị ngắt.');return}
+     P.auto=null;if(window.__atrain)__atrain.S.pause=performance.now()+1500;
+     bar.querySelector('.fl').style.width=Math.min(100,t/DUR*100)+'%';bar.querySelector('span').textContent='☯ Vận công hồi thành… '+Math.max(0,Math.ceil((DUR-t)/1000))+'s';
+     if(t>=DUR){stop();done.call(b,ev)}}catch(e){stop()}},100)};
+ },4200);
+ window.__hc={get:()=>C,stop};
+})()}catch(e){console.warn('hoithanh',e)}
 window.__wp={renderer,T,WEAPONS,fabaoModel,TIERS,FBE,RT,VB:()=>VB,hero:()=>hero,TD:{tdKiem,tdXuan,tdBang,tdAn,swordRain,phoenix,tornado,maVortex,dQi:()=>dragonE('qi'),dTh:()=>dragonE('thunder'),dFi:()=>dragonE('fire'),dBl:()=>dragonE('blood'),vortex:()=>{const T0=performance.now();maVortex();return performance.now()-T0},ice:()=>{const t=TU.tong,r=TU.realm,l=TU.learned;TU.tong='thuy';TU.realm=4;TU.learned=['Huyền Băng Trảm','Băng Phong Vạn Lý'];hero.mp=100;P.cds[1]=0;try{_useSkill(1+'')}finally{TU.tong=t;TU.realm=r;TU.learned=l}}},TU:()=>TU};setTimeout(()=>{if(typeof TKACCT!=='undefined')TKACCT.boot()},0);
 window.__demo={closeInv:()=>closeInv(),castAt:(id,x,z)=>{const h=heroPos(),o=h.clone(),f=hero.face;h.x=x;h.z=z;hero.face=Math.random()*6.28;try{castCP(id,true)}catch(e){}h.copy(o);hero.face=f},BF,bfJoin,bfBuild,allEnts:()=>ents,ICL:()=>ICL,equipWeapon:(a,b)=>equipWeapon(a,b),wearBest,equip:i=>{equip.silent=1;try{equip(i)}finally{equip.silent=0}},heroPos,TRIB:()=>TRIB,addCorpse,deathDrop,ents:()=>ents,foe:e=>foe(e),castCP,CP,mkBook,learnBook,P2P,NET,itemCard,optHTML,onHunt,rankTick,RANK,WFALL,castFX,VILLC:()=>window.__vc,tribGo,tribReady,needXp,bankPanel,CG,titles,leaveBC,zoneStream,ZPOP,GANGS,PARTY,ptInvite,hit,NET,netUpd,CORPSE,goInt,toggleFly,updFabao,GARR,WFIX,spawnMon,EV,EVT,npcAct,openInv,SQUADS:()=>SQUADS,CIT:()=>CIT,MUS,PK,togglePK,callReinf,maAct,gainXp,realmText,updPK,INV,BC,mkItem,dropItem,enterBC,TU,refreshTL,bloom:()=>bloom,LOOK,buildAvatar,setSW:(a,b,c)=>{hero.vw&&hero.vw.rotation.set(a,b,c)},hero,P,useSkill,ents,setView:(y,p,d)=>{yaw=y;pitch=p;dist=d}};
 }
