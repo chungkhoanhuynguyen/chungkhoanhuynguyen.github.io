@@ -75,14 +75,39 @@ def _nguon(x):
     except Exception: gp = ""
     return "Wikimedia Commons – %s%s" % (ten, (" (" + gp + ")") if gp else "")
 
+KHO_DU_PHONG = [   # clip Commons đã cắt sẵn trong repo – dùng khi mạng/Commons 429 (luôn có nền thật)
+    {"url": "broll/cang_cork.mp4", "tu": 0, "den": 24, "nguon": "Wikimedia Commons – Aerial views of a container terminal at the Port of Cork (FILMING CORK, CC BY 3.0)"},
+    {"url": "broll/tau_container.mp4", "tu": 0, "den": 18, "nguon": "Wikimedia Commons – Container ship.webm (Jan Ainali, CC BY-SA 4.0)"}]
+
+def _upload(url):
+    """Special:FilePath bị 429 trên máy GitHub (26/11) -> đọc thẳng upload.wikimedia.org: bản chuyển mã 720p/480p trước, bản gốc sau."""
+    m = re.search(r"Special:FilePath/([^?]+)", url)
+    if not m: return [url]
+    import hashlib
+    ten = urllib.parse.unquote(m.group(1)).replace(" ", "_"); h = hashlib.md5(ten.encode("utf-8")).hexdigest(); q = urllib.parse.quote(ten)
+    goc = "https://upload.wikimedia.org/wikipedia/commons/%s/%s/%s" % (h[0], h[:2], q)
+    tc = "https://upload.wikimedia.org/wikipedia/commons/transcoded/%s/%s/%s/%s" % (h[0], h[:2], q, q)
+    return [tc + ".720p.vp9.webm", tc + ".480p.vp9.webm", tc + ".720p.webm", tc + ".480p.webm", goc]
+
 def _tai1(x, dst):
+    import time
     if x.get("pexels"): ds = _pexels(x["pexels"])
     elif x.get("pixabay"): ds = _pixabay(x["pixabay"])
     else: ds = [x]
     for y in ds:
         tu, den = float(y.get("tu", 0)), float(y.get("den", float(y.get("tu", 0)) + 20))
-        try: return _cat(y["url"], tu, den, dst, ua=True), y          # đọc thẳng qua HTTP (chỉ lấy đoạn cần)
-        except Exception as e: print("broll: doc thang loi", y["url"][-70:], e, flush=True)
+        if not re.match(r"https?://", y["url"]):   # file trong repo (_video/...)
+            try: return _cat(os.path.join(HERE, y["url"]), tu, den, dst), y
+            except Exception as e: print("broll: file repo loi", y["url"], e, flush=True); continue
+        for u in _upload(y["url"]):
+            for lan in range(3):
+                try: return _cat(u, tu, den, dst, ua=True), y          # đọc thẳng qua HTTP (chỉ lấy đoạn cần)
+                except Exception as e:
+                    print("broll: doc thang loi", u[-70:], str(e)[-60:], flush=True)
+                    if "429" in str(e) or "status 8" in str(e): time.sleep(8 + 6 * lan); continue   # Commons giới hạn tốc độ: chờ rồi thử lại
+                    if tu > 0 and lan == 0: tu = 0; continue           # clip ngắn hơn điểm cắt: cắt từ đầu
+                    break
+            time.sleep(2)
         try:
             import meme; return _cat(meme.tai(y["url"]), tu, den, dst), y   # tải cả file rồi cắt
         except Exception as e: print("broll: bo qua", y["url"][-70:], e, flush=True)
@@ -96,7 +121,7 @@ def chuan_bi(R, WORK):
         p = "%s/br%d.mp4" % (WORK, k); d, y = _tai1(x, p)
         if d: clips.append((p, d)); R["_nguon_nen"].append(_nguon(y)); print("broll %d: %.1fs %s" % (k, d, y["url"][-80:]), flush=True)
     if len(clips) < 2:   # luôn có clip Commons dự phòng
-        du = list(R.get("broll_du_phong") or [])
+        du = list(R.get("broll_du_phong") or []) + KHO_DU_PHONG
         for q in ([R.get("broll_tim")] if R.get("broll_tim") else []) + ["container ship", "cargo ship"]:
             try: du += _commons_tim(q)
             except Exception as e: print("broll: tim Commons loi", e, flush=True)

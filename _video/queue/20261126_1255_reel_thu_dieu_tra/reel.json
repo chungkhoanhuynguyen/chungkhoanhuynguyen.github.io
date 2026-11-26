@@ -43,8 +43,8 @@
   "canh": [
    {
     "chu_to": "THUẾ TỚI 35%",
-    "loi": "Mỹ sắp đánh thuế 35% lên hàng Việt Nam? Khoan đã. Em đọc bản gốc rồi: đây mới là đề xuất. Đêm qua Mỹ công bố mức thuế có thể tới 35%, và đây không phải lần đầu thị trường mình nghe tin kiểu này.",
-    "loi_doc": "Mỹ sắp đánh thuế ba mươi lăm phần trăm lên hàng Việt Nam? Khoan đã. Em đọc bản gốc rồi: đây mới là đề xuất. Đêm qua Mỹ công bố mức thuế có thể tới ba mươi lăm phần trăm, và đây không phải lần đầu thị trường mình nghe tin kiểu này.",
+    "loi": "Anh chị có giật mình khi nghe Mỹ sắp đánh thuế 35% lên hàng Việt Nam? Khoan, em đọc bản gốc rồi: đây mới là đề xuất. Đêm qua, Mỹ vừa công bố mức thuế có thể tới 35%, và đây không phải lần đầu thị trường mình nghe tin kiểu này.",
+    "loi_doc": "Anh chị có giật mình khi nghe Mỹ sắp đánh thuế ba mươi lăm phần trăm lên hàng Việt Nam? Khoan, em đọc bản gốc rồi: đây mới là đề xuất. Đêm qua, Mỹ vừa công bố mức thuế có thể tới ba mươi lăm phần trăm, và đây không phải lần đầu thị trường mình nghe tin kiểu này.",
     "anh": [],
     "the": {
      "loai": "lon",
@@ -540,26 +540,27 @@
   "broll": [
    {
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aerial_views_of_a_container_terminal_at_the_Port_of_Cork,_Cork,_Ireland.webm",
-    "tu": 3,
-    "den": 23
-   },
-   {
-    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/ContainerShip.webm",
-    "tu": 1,
-    "den": 21
+    "tu": 20,
+    "den": 40,
+    "nguon": "Wikimedia Commons – Aerial views of a container terminal at the Port of Cork (FILMING CORK, CC BY 3.0)"
    },
    {
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship.webm",
-    "tu": 1,
-    "den": 21
+    "tu": 18,
+    "den": 38,
+    "nguon": "Wikimedia Commons – Container ship.webm (Jan Ainali, CC BY-SA 4.0)"
    },
    {
-    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hamburg_(Timelapse-Test).webm",
-    "tu": 1,
-    "den": 21
+    "url": "broll/cang_cork.mp4",
+    "tu": 0,
+    "den": 24,
+    "nguon": "Wikimedia Commons – Aerial views of a container terminal at the Port of Cork (FILMING CORK, CC BY 3.0)"
    },
    {
-    "pexels": "container port aerial"
+    "url": "broll/tau_container.mp4",
+    "tu": 0,
+    "den": 18,
+    "nguon": "Wikimedia Commons – Container ship.webm (Jan Ainali, CC BY-SA 4.0)"
    }
   ],
   "broll_tim": "container terminal"
