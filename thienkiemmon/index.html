@@ -813,7 +813,7 @@ function useSkill(k){if(creating||hero.dead||P.cds[k]>0)return;if(k!=='A'&&k!=='
 const GN=touch?3000:6000,gP=new Float32Array(GN*3),gC=new Float32Array(GN*3),gB=new Float32Array(GN*3),gS=new Float32Array(GN),gS0=new Float32Array(GN),gV=new Float32Array(GN*3),gL=new Float32Array(GN),gL0=new Float32Array(GN),gG=new Float32Array(GN),gD=new Float32Array(GN);
 const gGeo=new T.BufferGeometry();gGeo.setAttribute('position',new T.BufferAttribute(gP,3));gGeo.setAttribute('color',new T.BufferAttribute(gC,3));gGeo.setAttribute('size',new T.BufferAttribute(gS,1));
 const gMat=new T.ShaderMaterial({uniforms:{map:{value:softTex},px:{value:DPR}},transparent:true,depthWrite:false,blending:T.AdditiveBlending,
- vertexShader:'attribute float size;attribute vec3 color;varying vec3 vC;uniform float px;void main(){vC=color;vec4 mv=modelViewMatrix*vec4(position,1.);gl_PointSize=min(size*px*380./-mv.z,180.);gl_Position=projectionMatrix*mv;}',
+ vertexShader:'attribute float size;attribute vec3 color;varying vec3 vC;uniform float px;void main(){vC=color;vec4 mv=modelViewMatrix*vec4(position,1.);gl_PointSize=min(size*px*380./max(-mv.z,3.),'+(LITE?'56.':'120.')+');gl_Position=projectionMatrix*mv;}',
  fragmentShader:'uniform sampler2D map;varying vec3 vC;void main(){float a=texture2D(map,gl_PointCoord).a;gl_FragColor=vec4(vC*a,1.);}'});
 const glow=new T.Points(gGeo,gMat);glow.frustumCulled=false;scene.add(glow);let gI=0;
 function emit(x,y,z,vx,vy,vz,r,g,b,size,life,grav=0,drag=0){const i=gI++%GN;r*=.38;g*=.38;b*=.38;size*=.6;gP[i*3]=x;gP[i*3+1]=y;gP[i*3+2]=z;gV[i*3]=vx;gV[i*3+1]=vy;gV[i*3+2]=vz;gB[i*3]=r;gB[i*3+1]=g;gB[i*3+2]=b;gS0[i]=size;gL[i]=gL0[i]=life;gG[i]=grav;gD[i]=drag}
@@ -5324,7 +5324,7 @@ try{(function(){
  function where(){const s=cur();if(!s)return null;if(s.t==='talk')return npcPos(s.npc);if(s.t==='goto'||s.t==='boss'||s.t==='kill')return s.t==='kill'?null:pt();if(s.t==='cond'&&/Tông|Sứ Giả/.test(s.goal))return null;return null}
  function panel(){const s=cur(),P=$('npcp');P.style.display='block';P.dataset.src='sq';const c=chOf(Q().i);
   P.innerHTML='<b>📜 '+esc(c.ch||'Huyền Kiếm Truyền Kỳ')+'</b><p style="font-style:italic;color:#f2e2b8">'+esc(s?(s.t==='talk'?'Hãy tới gặp '+s.npc+'.':(S[Q().i-1]&&S[Q().i-1].say)||c.say):'Bạn đã hoàn thành toàn bộ chính tuyến.')+'</p><p>Mục tiêu: <b>'+esc(goal())+'</b></p>'+(where()?'<button data-x="sqgo">➜ Chỉ đường</button>':'')+'<button data-x="close">Đóng</button>'}
- b.onclick=panel;
+ b.onclick=panel;window.__sqx={cur,where,go:()=>goTo2(where()),idx:()=>Q().i};
  function goTo2(p){if(!p)return;P.route=routeTo(heroPos(),p[0],p[1]);P.dest=null;$('npcp').style.display='none';chat('Tự chạy tới mục tiêu chính tuyến (chạm cần gạt để dừng).','s')}
  const _na=npcAct;npcAct=function(x,k){if(x==='sqgo'){goTo2(where());return}if(x==='sqtalk'){done2();return}return _na.apply(this,arguments)};
  function done2(){const s=cur();$('npcp').style.display='none';if(s&&s.t==='talk')next()}
@@ -5914,6 +5914,22 @@ try{(function(){const ML=()=>lvOf(TU.realm,TU.realm?TU.tang:TU.lv);
 try{(function(){setTimeout(()=>{try{let lo=null;scene.traverse(o=>{if(!o.isMesh||!o.geometry)return;const pr=o.geometry.parameters;
   if(o.isInstancedMesh&&o.material===mRockW&&pr&&pr.radialSegments===14&&pr.heightSegments===12){o.castShadow=false;o.receiveShadow=false;if(LITE){if(!lo){lo=new T.CylinderGeometry(.42,1,1,8,4);const p=lo.attributes.position;for(let i=0;i<p.count;i++){const y=p.getY(i)+.5,an=Math.atan2(p.getZ(i),p.getX(i)),w=(1+Math.sin(y*11+an*3)*.1)*(1+Math.pow(1-y,3)*.4)*(y>.85?1-(y-.85)*2:1);p.setX(i,p.getX(i)*w);p.setZ(i,p.getZ(i)*w)}lo.translate(0,.5,0);lo.computeVertexNormals();lo.userData.keep=1}o.geometry=lo}}
   if(LITE&&o.renderOrder===-1&&pr&&pr.openEnded&&pr.radiusTop>1500)o.visible=false})}catch(e){console.warn('nui',e)}},9000)})()}catch(e){}
+/* ===== TRẢ NHIỆM VỤ TỰ HỒI THÀNH + BỚT CHÓI TRẮNG (26/11): bước chính tuyến cần về gặp NPC trong thành mà đang ở xa → tự vận công hồi thành rồi tự chạy tới NPC trả nhiệm vụ (đang tự luyện thì tạm tắt, trả xong tự bật lại); điện thoại: đèn chớp khi đánh dịu hẳn, quầng sáng cộng dồn dịu bớt ===== */
+try{(function(){
+ const far=()=>{const p=heroPos();return Math.max(Math.abs(p.x),Math.abs(p.z))>CITY+70};
+ const busy=()=>hero.dead||creating||BC.in||(typeof BF!=='undefined'&&BF.in)||(typeof INT!=='undefined'&&INT.in)||window.__DGin;
+ let W=null,lastI=-1,resume=false;
+ function goBack(auto){if(!window.__sqx||!window.__hc||W)return false;const s=__sqx.cur();if(!s||s.t!=='talk'||busy()||!far())return false;
+  const b=$('htb');if(!b)return false;if(window.__atrain&&__atrain.S.on){resume=true;__atrain.set(false,true)}
+  $('npcp')&&($('npcp').style.display='none');b.onclick();if(!__hc.get()){if(resume){resume=false;__atrain.set(true,true)}return false}chat('📜 '+(auto?'Nhiệm vụ đã xong — ':'')+'tự vận công hồi thành để về trả nhiệm vụ (chạm cần gạt là hủy).','s');
+  const i0=__sqx.idx();W=setInterval(()=>{try{if(__hc.get())return;clearInterval(W);W=null;if(!far()){setTimeout(()=>{try{if(__sqx.idx()!==i0)return;__sqx.go();const s=__sqx.cur(),t0=performance.now();const A=setInterval(()=>{try{const w=__sqx.where(),h=heroPos();if(__sqx.idx()!==i0||performance.now()-t0>90000||hero.dead){clearInterval(A);return}if(w&&Math.hypot(h.x-w[0],h.z-w[1])<6){clearInterval(A);P.route=null;P.dest=null;const n=NPCS.find(q=>q.name===s.npc);if(n)npcPanel(n)}}catch(_){clearInterval(A)}},400)}catch(_){}},500)}else if(resume){resume=false;__atrain.set(true,true)}}catch(_){clearInterval(W);W=null}},300);return true}
+ const _na=npcAct;npcAct=function(x){if(x==='sqgo'&&goBack(false))return;return _na.apply(this,arguments)};
+ setInterval(()=>{try{if(!window.__sqx)return;const i=__sqx.idx();if(lastI<0){lastI=i;return}if(i!==lastI){lastI=i;const s=__sqx.cur();
+   if(s&&s.t==='talk'&&far())setTimeout(()=>goBack(true),1800);
+   else if(resume&&!W){resume=false;setTimeout(()=>{try{if(!__atrain.S.on)__atrain.set(true)}catch(_){}},2500)}}}catch(_){}},1000);
+ if(LITE){try{const _fa=flashAt;flashAt=function(p,c,i){return _fa.call(this,p,c,Math.min(i,1.2)*.6)}}catch(_){}
+  try{const _fq=fxQuad;fxQuad=function(map,col,w,h,pos,opt){const g=_fq.apply(this,arguments);try{if(opt&&opt.add&&g.material&&w*h>4)g.material.color.multiplyScalar(.65)}catch(_){}return g}}catch(_){}}
+})()}catch(e){console.warn('sqhoi',e)}
 try{window.__enterBC=()=>{BC.day='';enterBC()};window.__bfJoin=sd=>bfJoin(sd||'tien');window.__BCo=BC;window.__BFo=BF}catch(e){}
 window.__wp={renderer,T,WEAPONS,fabaoModel,TIERS,FBE,RT,VB:()=>VB,hero:()=>hero,TD:{tdKiem,tdXuan,tdBang,tdAn,swordRain,phoenix,tornado,maVortex,dQi:()=>dragonE('qi'),dTh:()=>dragonE('thunder'),dFi:()=>dragonE('fire'),dBl:()=>dragonE('blood'),vortex:()=>{const T0=performance.now();maVortex();return performance.now()-T0},ice:()=>{const t=TU.tong,r=TU.realm,l=TU.learned;TU.tong='thuy';TU.realm=4;TU.learned=['Huyền Băng Trảm','Băng Phong Vạn Lý'];hero.mp=100;P.cds[1]=0;try{_useSkill(1+'')}finally{TU.tong=t;TU.realm=r;TU.learned=l}}},TU:()=>TU};setTimeout(()=>{if(typeof TKACCT!=='undefined')TKACCT.boot()},0);
 window.__demo={closeInv:()=>closeInv(),castAt:(id,x,z)=>{const h=heroPos(),o=h.clone(),f=hero.face;h.x=x;h.z=z;hero.face=Math.random()*6.28;try{castCP(id,true)}catch(e){}h.copy(o);hero.face=f},BF,bfJoin,bfBuild,allEnts:()=>ents,ICL:()=>ICL,equipWeapon:(a,b)=>equipWeapon(a,b),wearBest,equip:i=>{equip.silent=1;try{equip(i)}finally{equip.silent=0}},heroPos,TRIB:()=>TRIB,addCorpse,deathDrop,ents:()=>ents,foe:e=>foe(e),castCP,CP,mkBook,learnBook,P2P,NET,itemCard,optHTML,onHunt,rankTick,RANK,WFALL,castFX,VILLC:()=>window.__vc,tribGo,tribReady,needXp,bankPanel,CG,titles,leaveBC,zoneStream,ZPOP,GANGS,PARTY,ptInvite,hit,NET,netUpd,CORPSE,goInt,toggleFly,updFabao,GARR,WFIX,spawnMon,EV,EVT,npcAct,openInv,SQUADS:()=>SQUADS,CIT:()=>CIT,MUS,PK,togglePK,callReinf,maAct,gainXp,realmText,updPK,INV,BC,mkItem,dropItem,enterBC,TU,refreshTL,bloom:()=>bloom,LOOK,buildAvatar,setSW:(a,b,c)=>{hero.vw&&hero.vw.rotation.set(a,b,c)},hero,P,useSkill,ents,setView:(y,p,d)=>{yaw=y;pitch=p;dist=d}};
