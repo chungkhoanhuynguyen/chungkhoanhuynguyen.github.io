@@ -4,7 +4,7 @@
 var TKACCT = (function () {
   var KEY = 'AIzaSyDuPm6aG0nltOIrTbtKMKMWgzGtQk5k7n8', PID = 'thuthanhlacduong';
   var FS = 'https://firestore.googleapis.com/v1/projects/' + PID + '/databases/(default)/documents';
-  var KEYS = ['tkm_inv', 'tkm_pk', 'tkm_tl', 'tkm_bc', 'tkm_look2', 'tkm_bank', 'tkm_guild'], MAXC = 5;
+  var KEYS = ['tkm_inv', 'tkm_pk', 'tkm_tl', 'tkm_bc', 'tkm_look2', 'tkm_bank', 'tkm_guild', 'tkm_social'], MAXC = 5;
   var user = null, prof = null, slot = -1, denied = false, tok = null, tokExp = 0;
   var ls = function (k, v) { try { if (v === undefined) return localStorage.getItem(k); if (v === null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) { } };
   var ss = function (k, v) { try { if (v === undefined) return sessionStorage.getItem(k); if (v === null) sessionStorage.removeItem(k); else sessionStorage.setItem(k, v); } catch (e) { } };
