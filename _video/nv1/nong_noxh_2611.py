@@ -79,7 +79,7 @@ S = [
  dict(k='cards', anh=TP, cap=('DỰ ÁN THẬT', 'GIÁ GẦN 22 TRIỆU MỖI MÉT VUÔNG'), cols=CC, moc=True,
       cards=[('1.254 căn', 'Cả dự án, 4 tháp 25 tầng', 'ĐỊA ĐIỂM QUẬN 10 CŨ'), ('755 căn', 'Nhà ở xã hội để bán', '270 CĂN CHO THUÊ'), ('21,66 triệu', 'Giá tạm tính mỗi m²', 'CĂN 50 M² KHOẢNG 1,08 TỶ')],
       say=("Dự án thật có một nghìn hai trăm năm mươi bốn căn, trong đó bảy trăm năm mươi lăm căn nhà ở xã hội để bán. "
-           "Giá tạm tính chủ đầu tư công bố hồi tháng ba là gần hai mươi hai triệu đồng mỗi mét vuông. Em tự tính, một căn năm mươi mét vuông vào khoảng một tỷ tám mươi triệu đồng, chưa gồm phí bảo trì. "
+           "Giá tạm tính chủ đầu tư công bố hồi tháng ba là gần hai mươi hai triệu đồng mỗi mét vuông. Em tự tính, một căn năm mươi mét vuông vào khoảng hơn một tỷ đồng một chút, chưa gồm phí bảo trì. "
            "Ở trung tâm thành phố, đó là mức giá thấp, nên dự án càng dễ bị kẻ xấu lấy danh để rao bán.")),
  dict(k='noti', short=True, cap=('THÁNG 4: CHỦ ĐẦU TƯ ĐÃ BÁO', 'CHƯA NHẬN CỌC, KHÔNG ỦY QUYỀN'), cols=CR, moc=True, noti=dict(gio='09:00', ngay='12/4/2026', items=[
         ('Tin tức', 'Cảnh báo', 'Chủ đầu tư: chưa nhận hồ sơ, chưa nhận cọc, không ủy quyền cho ai bán', R_),
@@ -118,7 +118,7 @@ S = [
         ('Hà Nội 3/2026: hơn 40 tỷ đồng.', '3/2026'),
         ('TP.HCM 11/2026: hơn 150 tỷ đồng.', '11/2026'),
         ('2 vụ cùng rao: suất ngoại giao.', 'GIỐNG')]),
-      say=("Em tìm lại trên báo. Năm 2025 ở Hà Nội, một công ty rao suất ngoại giao nhà ở xã hội, lấy hơn mười chín tỷ đồng của hơn hai mươi người. Tới tháng mười năm nay, công an Hà Nội vẫn còn đang tìm bị hại của vụ đó. "
+      say=("Em tìm lại trên báo. Năm ngoái ở Hà Nội, một công ty rao suất ngoại giao nhà ở xã hội, lấy hơn mười chín tỷ đồng của hơn hai mươi người. Tới tháng mười năm nay, công an Hà Nội vẫn còn đang tìm bị hại của vụ đó. "
            "Tháng ba năm nay, Bộ Công an khởi tố một vụ lừa đảo liên quan nhà ở xã hội ở Hà Nội, chiếm đoạt hơn bốn mươi tỷ đồng. Và giờ là vụ hơn một trăm năm mươi tỷ đồng ở Thành phố Hồ Chí Minh. Ít nhất hai trong ba vụ dùng cùng một lời rao: suất ngoại giao.")),
  dict(k='bars', anh=HN, cap=('3 VỤ EM TÌM ĐƯỢC TRÊN BÁO', 'KHÔNG PHẢI THỐNG KÊ'), cols=CR, moc=True,
       bars=[('Hà Nội 2025', 19, GOLD, 'hơn 19 tỷ'), ('Hà Nội 3/2026', 40, GOLD, 'hơn 40 tỷ'), ('TP.HCM 11/2026', 150, RED, 'hơn 150 tỷ')],
@@ -130,7 +130,7 @@ S = [
         ('Bằng 2/3 khoản tiết kiệm.', 'TỶ TRỌNG'),
         ('Bằng khoảng 33 tháng để dành.', 'THỜI GIAN')]),
       say=("Anh Tùng lấy sổ ra tính. Hai vợ chồng để dành được khoảng sáu triệu đồng mỗi tháng, giờ đang có ba trăm triệu, đây là con số em giả định. "
-           "Hai trăm triệu chị Hằng đòi là hai phần ba số tiền đó, bằng khoảng ba mươi ba tháng để dành, gần ba năm đi làm. "
+           "Hai trăm triệu chị Hằng đòi là khoảng sáu mươi bảy phần trăm số tiền đó, bằng khoảng ba mươi ba tháng để dành, gần ba năm đi làm. "
            "Nếu đó là suất giả, cái mất không chỉ là tiền, mà là gần ba năm của cả nhà.")),
  dict(k='cards', anh=TP, cap=('ĐƯỜNG CHÍNH THỐNG', 'ĐIỀU KIỆN VÀ LÃI VAY'), cols=CC, moc=True,
       cards=[('50 triệu', 'Trần thu nhập vợ chồng', 'TP.HCM TỪ 1/4/2026'), ('25 triệu', 'Trần thu nhập độc thân', 'TP.HCM TỪ 1/4/2026'), ('5,4%', 'Lãi vay mỗi năm', 'NGÂN HÀNG CHÍNH SÁCH')],
