@@ -5194,6 +5194,75 @@ try{(function(){window.__PET2=1;
  setTimeout(()=>{try{D();rebuild()}catch(e){}},3000);
  window.__petGet=src=>{const d=D();if(d.L.length>=12)return;const ks=Object.keys(SP),k=ks[Math.floor(Math.random()*ks.length)];d.L.push({sp:k,q:1,s:1,b:roll(1)});if(d.a<0)d.a=d.L.length-1;saveTL();rebuild();banner('🐾 Thu phục '+SP[k][0]+' (phẩm Lục)',src?'từ '+src:'');sfx('magic')};
 })()}catch(e){console.warn('pet2+',e)}
+/* ===== CHÍNH TUYẾN "HUYỀN KIẾM TRUYỀN KỲ" (26/11): chuỗi nhiệm vụ có cốt truyện 8 chương — NPC mới Lão Kiếm Tiên ở quảng trường dẫn truyện; nói chuyện NPC, đi tới nơi, diệt quái, hạ boss cốt truyện xuất hiện đúng chỗ, bái tông môn, đột phá, vào Bí Cảnh, hạ Bá Chủ…; dòng "📜 Chính tuyến" trong khung Nhiệm Vụ, bấm để đọc truyện/chỉ đường; thưởng linh thạch, tu vi, Đá Cường Hóa ===== */
+try{(function(){
+ const myL=()=>lvOf(TU.realm,TU.realm?TU.tang:TU.lv);
+ const LK='Lão Kiếm Tiên';
+ const LP=(()=>{try{const[i,j]=navFree(12,-36);return[NAV.o+i*NAV.c+1,NAV.o+j*NAV.c+1]}catch(_){return[12,-36]}})();
+ const ln={id:'laokiem',name:LK,title:'📜 Chính tuyến · Huyền Kiếm Truyền Kỳ',pos:LP};
+ setTimeout(()=>{try{const e=spawn('npc',LP[0],LP[1],{robe:0xe8e4dc,trim:0x8a6a3a,sash:0x3a5a8a,weapon:'sword',name:LK,title:ln.title,hp:1,col:'#ffe9a0',spd:0});e.face=Math.atan2(-LP[0],-LP[1]);ln.e=e;NPCS.push(ln)}catch(err){console.warn('laokiem',err)}},1700);
+ /* các bước: t=talk(npc), k=kill(n), g=goto, b=boss, c=điều kiện */
+ const S=[
+  {ch:'Chương 1 · Kiếm Cốt Thức Tỉnh',L:1,t:'talk',npc:LK,say:'Lão phu đứng đây ba mươi năm chờ một người mang kiếm cốt. Hôm nay gặp ngươi, thanh cổ kiếm trong tay lão bỗng ngân lên… Muốn biết vì sao, trước hết hãy ra ngoài thành chém mười con yêu thú cho lão xem.',goal:'Gặp Lão Kiếm Tiên ở quảng trường'},
+  {t:'kill',n:10,goal:'Diệt 10 yêu thú ngoài thành',say:'Kiếm khí ngươi đã động. Quay về gặp lão.'},
+  {t:'talk',npc:LK,say:'Khá lắm. Kiếm của ngươi chưa có hồn, nhưng tay đã vững. Cầm lấy chút lộ phí — đường tu tiên còn dài.',goal:'Về báo Lão Kiếm Tiên',rw:{st:200,xp:.3}},
+  {ch:'Chương 2 · Thôn Hoang Mất Tích',L:8,t:'talk',npc:'Bí Cảnh Sứ',say:'Đêm qua cả thôn ngoài bãi săn biến mất, chỉ còn dấu móng vuốt dài cả thước. Có kẻ nói thấy một con sói đầu đỏ to như con trâu… Ngươi dám đi xem không?',goal:'Hỏi chuyện Bí Cảnh Sứ'},
+  {t:'goto',goal:'Tới thôn hoang ngoài bãi săn',say:'Mùi máu tanh nồng… phía trước có tiếng tru.'},
+  {t:'boss',name:'Huyết Lang Vương',mul:6,goal:'Hạ Huyết Lang Vương',say:'Con sói đổ xuống, trong bụng nó rơi ra một mảnh ngọc khắc chữ "Huyết".'},
+  {t:'talk',npc:LK,say:'Ngọc khắc chữ Huyết… Huyết Ma Tông lại ngóc đầu dậy rồi. Ngươi cần một tông môn chống lưng.',goal:'Đưa mảnh ngọc cho Lão Kiếm Tiên',rw:{st:400,xp:.4,da:2}},
+  {ch:'Chương 3 · Bái Nhập Tông Môn',L:10,t:'cond',f:()=>!!TU.tong,goal:'Bái nhập một tông môn (gặp Sứ Giả ở 4 góc quảng trường)',say:'Đã có sư môn, lời ngươi nói ra giang hồ sẽ có trọng lượng.'},
+  {t:'talk',npc:'Đột Phá Lão Tổ',say:'Tiểu tử của Lão Kiếm Tiên à? Muốn đánh Huyết Ma thì Luyện Khí là chưa đủ. Đột phá Trúc Cơ rồi hẵng nói.',goal:'Gặp Đột Phá Lão Tổ',rw:{st:300,xp:.3}},
+  {ch:'Chương 4 · Trúc Cơ Thành Đạo',L:10,t:'cond',f:()=>TU.realm>=2,goal:'Đột phá lên Trúc Cơ',say:'Linh khí trong người ngươi đã thành nền móng. Giờ có thể học công pháp thật sự.'},
+  {t:'kill',n:30,goal:'Diệt 30 yêu thú hợp cấp để vững cảnh giới',say:'Cảnh giới đã vững.'},
+  {t:'talk',npc:LK,say:'Ngươi tiến bộ nhanh hơn lão nghĩ. Nghe nói Sứ Giả Tà Tông trong thành đang dò la tin tức về ngươi… cẩn thận.',goal:'Báo tin Lão Kiếm Tiên',rw:{st:800,xp:.5,da:3}},
+  {ch:'Chương 5 · Ma Ảnh Trong Thành',L:30,t:'talk',npc:'Sứ Giả Tà Tông',say:'Hà hà… kẻ giết Huyết Lang Vương là ngươi? Chủ nhân ta muốn gặp. Ra bãi săn, Ám Dạ Ma Quân đang đợi — nếu ngươi còn sống quay về.',goal:'Đối chất Sứ Giả Tà Tông'},
+  {t:'kill',n:40,goal:'Diệt 40 yêu thú dọn đường',say:'Yêu khí phía trước đặc quánh.'},
+  {t:'boss',name:'Ám Dạ Ma Quân',mul:9,goal:'Hạ Ám Dạ Ma Quân',say:'Ma Quân gục xuống, gằn giọng: "Thiên Ma… sẽ… tỉnh…"'},
+  {t:'talk',npc:LK,say:'Thiên Ma Kiếm Linh — thanh kiếm hút máu vạn người năm xưa. Phong ấn đang yếu dần. Ngươi phải mạnh hơn nữa.',goal:'Về báo Lão Kiếm Tiên',rw:{st:1500,xp:.6,da:4}},
+  {ch:'Chương 6 · Bá Chủ Thiên Hạ',L:50,t:'cond',f:()=>(TU.sqBB|0)>0,goal:'Hạ một Bá Chủ bãi (xuất hiện mỗi 10 phút)',say:'Bá Chủ cũng phải cúi đầu — danh ngươi bắt đầu vang khắp giang hồ.'},
+  {t:'talk',npc:LK,say:'Muốn đối đầu Thiên Ma phải luyện thêm trong Bí Cảnh Huyết Nguyệt, nơi máu và linh khí trộn lẫn.',goal:'Gặp Lão Kiếm Tiên',rw:{st:2500,xp:.6,da:5}},
+  {ch:'Chương 7 · Huyết Nguyệt Chi Thí',L:60,t:'cond',f:()=>!!BC.in||(TU.sqBC|0)>0,goal:'Vào Bí Cảnh Huyết Nguyệt (Bí Cảnh Sứ)',say:'Trăng máu treo trên đầu, ngươi nghe tiếng kiếm khóc ở đâu đó rất xa.'},
+  {t:'talk',npc:LK,say:'Đến lúc rồi. Phong ấn Thiên Ma Kiếm Linh nằm ở bãi săn xa nhất ngươi đủ sức tới. Đi đi — lão sẽ thắp hương chờ.',goal:'Nhận lệnh cuối từ Lão Kiếm Tiên',rw:{st:3000,xp:.5}},
+  {ch:'Chương 8 · Kiếm Tâm Thông Minh',L:80,t:'goto',goal:'Tới nơi phong ấn Thiên Ma',say:'Mặt đất nứt toác, một thanh kiếm đen lơ lửng giữa không trung…'},
+  {t:'boss',name:'Thiên Ma Kiếm Linh',mul:16,goal:'Hạ Thiên Ma Kiếm Linh',say:'Kiếm Linh vỡ tan, hóa thành ánh sáng chui vào kiếm của ngươi. Kiếm tâm thông minh!'},
+  {t:'talk',npc:LK,say:'Ha ha ha! Ba mươi năm không uổng. Từ nay ngươi là Huyền Kiếm truyền nhân. Giang hồ còn rộng — chương mới sẽ tới khi trời đất lại biến động.',goal:'Về gặp Lão Kiếm Tiên',rw:{st:8000,xp:1,da:10,fin:1}}];
+ const Q=()=>TU.sq||(TU.sq={i:0,k:0,pt:null});
+ const cur=()=>S[Q().i];
+ const chOf=i=>{for(let j=i;j>=0;j--)if(S[j].ch)return S[j];return S[0]};
+ function needL(){const c=chOf(Q().i);return c.L||1}
+ function npcPos(n){const x=NPCS.find(q=>q.name===n);return x&&x.pos}
+ function pt(){const q=Q();if(!q.pt){try{const zi=zoneForL(Math.max(1,myL()-2)),z=zonePt(zi);q.pt=[Math.round(z[0]),Math.round(z[1])]}catch(_){q.pt=[0,260]}saveTL()}return q.pt}
+ function reward(r){if(!r)return;if(r.st){TU.stone+=r.st}if(r.xp)try{gainXp(needXp()*r.xp)}catch(_){}if(r.da)try{gainStone(r.da)}catch(_){}refreshTL();banner('📜 Hoàn thành nhiệm vụ chính tuyến','+'+(r.st||0)+' linh thạch'+(r.da?' · +'+r.da+' Đá Cường Hóa':'')+(r.xp?' · tu vi':''));sfx('magic')}
+ function next(){const q=Q(),s=cur();if(!s)return;reward(s.rw);if(s.rw&&s.rw.fin)chat('<b style="color:#ffd36b">📜 Bạn đã hoàn thành Huyền Kiếm Truyền Kỳ!</b> Chờ chương mới…','s');q.i++;q.k=0;q.pt=null;saveTL();ui();const n=cur();if(n&&n.ch)setTimeout(()=>banner('📜 '+n.ch,'Chính tuyến mở chương mới'),2500)}
+ function done(){const s=cur();if(!s)return;if(s.say&&s.t!=='talk')chat('<b style="color:#ffe9a0">📜</b> '+esc(s.say),'s');next()}
+ /* khung theo dõi */
+ const st=document.createElement('style');st.textContent='#sqb{display:block;width:100%;margin-top:4px;pointer-events:auto;font:700 11px "Noto Serif",serif;color:#ffe9a0;background:rgba(40,28,8,.6);border:1px solid rgba(255,211,107,.55);border-radius:6px;padding:2px 6px;cursor:pointer;min-height:22px;text-align:left;line-height:1.3}#sqb small{display:block;font:600 10px "Noto Sans",sans-serif;color:#e8dcc0}body.touch #sqb{font-size:9.5px;min-height:20px;padding:1px 5px}body.touch #sqb small{font-size:9px}';document.head.appendChild(st);
+ const b=document.createElement('button');b.id='sqb';setTimeout(()=>{const q=$('quest')||document.body,d=$('dqb');if(d&&d.parentNode===q)q.insertBefore(b,d);else q.appendChild(b);ui()},2000);
+ function goal(){const s=cur();if(!s)return'Đã xong — chờ chương mới';if(myL()<needL())return'Cần đạt cấp '+needL()+' để tiếp tục';return s.goal+(s.t==='kill'?' ('+Q().k+'/'+s.n+')':'')}
+ function ui(){const s=cur();b.innerHTML='📜 '+(s?chOf(Q().i).ch:'Huyền Kiếm Truyền Kỳ')+'<small>➤ '+esc(goal())+'</small>'}
+ function where(){const s=cur();if(!s)return null;if(s.t==='talk')return npcPos(s.npc);if(s.t==='goto'||s.t==='boss'||s.t==='kill')return s.t==='kill'?null:pt();if(s.t==='cond'&&/Tông|Sứ Giả/.test(s.goal))return null;return null}
+ function panel(){const s=cur(),P=$('npcp');P.style.display='block';P.dataset.src='sq';const c=chOf(Q().i);
+  P.innerHTML='<b>📜 '+esc(c.ch||'Huyền Kiếm Truyền Kỳ')+'</b><p style="font-style:italic;color:#f2e2b8">'+esc(s?(s.t==='talk'?'Hãy tới gặp '+s.npc+'.':(S[Q().i-1]&&S[Q().i-1].say)||c.say):'Bạn đã hoàn thành toàn bộ chính tuyến.')+'</p><p>Mục tiêu: <b>'+esc(goal())+'</b></p>'+(where()?'<button data-x="sqgo">➜ Chỉ đường</button>':'')+'<button data-x="close">Đóng</button>'}
+ b.onclick=panel;
+ function goTo2(p){if(!p)return;P.route=routeTo(heroPos(),p[0],p[1]);P.dest=null;$('npcp').style.display='none';chat('Tự chạy tới mục tiêu chính tuyến (chạm cần gạt để dừng).','s')}
+ const _na=npcAct;npcAct=function(x,k){if(x==='sqgo'){goTo2(where());return}if(x==='sqtalk'){done2();return}return _na.apply(this,arguments)};
+ function done2(){const s=cur();$('npcp').style.display='none';if(s&&s.t==='talk')next()}
+ /* nói chuyện với NPC đúng bước */
+ const _np=npcPanel;npcPanel=function(n){try{const s=cur();if(s&&s.t==='talk'&&n&&n.name===s.npc&&myL()>=needL()){const P=$('npcp');P.style.display='block';P.dataset.src='sq';P.innerHTML='<b>📜 '+esc(n.name)+'</b><p class="nq" style="font-style:italic">“'+esc(s.say)+'”</p>'+(s.rw?'<p style="color:#7fffb0">Thưởng: '+(s.rw.st?s.rw.st+' linh thạch ':'')+(s.rw.da?'· '+s.rw.da+' Đá Cường Hóa ':'')+(s.rw.xp?'· tu vi':'')+'</p>':'')+'<button data-x="sqtalk">'+(s.rw?'Nhận thưởng':'Vâng, đệ tử đi ngay')+'</button><button data-x="close">Để sau</button>';return}
+   if(n&&n.id==='laokiem'){panel();return}}catch(_){}return _np.apply(this,arguments)};
+ /* đếm quái / boss cốt truyện */
+ const _h=hit;hit=function(att,e){const was=e&&!e.dead;const r=_h.apply(this,arguments);try{if(was&&e.dead){const s=cur();
+   if(e.bbz&&att===hero)TU.sqBB=(TU.sqBB|0)+1;
+   if(s&&myL()>=needL()){if(s.t==='kill'&&att===hero&&e.team==='enemy'&&(e.lv||1)>=myL()-30){Q().k++;if(Q().k>=s.n)done();else ui()}
+    if(s.t==='boss'&&e.sqb&&heroPos().distanceTo(e.c.g.position)<60){done()}}}}catch(_){}return r};
+ /* đi tới / gọi boss / điều kiện */
+ let sb=null;setInterval(()=>{try{if(creating||!hero)return;if(BC.in)TU.sqBC=1;const s=cur();ui();if(!s||myL()<needL()||hero.dead)return;const hp=heroPos();
+  if(s.t==='cond'&&s.f()){done();return}
+  if(s.t==='goto'){const p=pt();if(Math.hypot(hp.x-p[0],hp.z-p[1])<18){done()}return}
+  if(s.t==='boss'){const p=pt();if((!sb||sb.dead||!ents.includes(sb))&&Math.hypot(hp.x-p[0],hp.z-p[1])<70){const zi=zoneForL(Math.max(1,myL()-2));sb=spawnMon(zi,p[0]+4,p[1]+4,s.mul||6,s.name);sb.sqb=1;sb.boss=1;sb.lv=Math.max(sb.lv||1,myL());try{sb.c.g.scale.multiplyScalar(1.9);const n=sb.lab.querySelector('.nm');n.innerHTML='<span style="color:#ffd36b">Cấp '+sb.lv+'</span> <b style="color:#ffe9a0;text-shadow:0 0 8px #ffb000">📜 '+esc(s.name)+'</b>'}catch(_){}banner('📜 '+s.name+' xuất hiện!','Boss cốt truyện');sfx('roar')}}
+ }catch(_){}},1000);
+ window.__sq={S,Q,cur,next,panel,ui,pt};
+})()}catch(e){console.warn('story',e)}
 window.__wp={renderer,T,WEAPONS,fabaoModel,TIERS,FBE,RT,VB:()=>VB,hero:()=>hero,TD:{tdKiem,tdXuan,tdBang,tdAn,swordRain,phoenix,tornado,maVortex,dQi:()=>dragonE('qi'),dTh:()=>dragonE('thunder'),dFi:()=>dragonE('fire'),dBl:()=>dragonE('blood'),vortex:()=>{const T0=performance.now();maVortex();return performance.now()-T0},ice:()=>{const t=TU.tong,r=TU.realm,l=TU.learned;TU.tong='thuy';TU.realm=4;TU.learned=['Huyền Băng Trảm','Băng Phong Vạn Lý'];hero.mp=100;P.cds[1]=0;try{_useSkill(1+'')}finally{TU.tong=t;TU.realm=r;TU.learned=l}}},TU:()=>TU};setTimeout(()=>{if(typeof TKACCT!=='undefined')TKACCT.boot()},0);
 window.__demo={closeInv:()=>closeInv(),castAt:(id,x,z)=>{const h=heroPos(),o=h.clone(),f=hero.face;h.x=x;h.z=z;hero.face=Math.random()*6.28;try{castCP(id,true)}catch(e){}h.copy(o);hero.face=f},BF,bfJoin,bfBuild,allEnts:()=>ents,ICL:()=>ICL,equipWeapon:(a,b)=>equipWeapon(a,b),wearBest,equip:i=>{equip.silent=1;try{equip(i)}finally{equip.silent=0}},heroPos,TRIB:()=>TRIB,addCorpse,deathDrop,ents:()=>ents,foe:e=>foe(e),castCP,CP,mkBook,learnBook,P2P,NET,itemCard,optHTML,onHunt,rankTick,RANK,WFALL,castFX,VILLC:()=>window.__vc,tribGo,tribReady,needXp,bankPanel,CG,titles,leaveBC,zoneStream,ZPOP,GANGS,PARTY,ptInvite,hit,NET,netUpd,CORPSE,goInt,toggleFly,updFabao,GARR,WFIX,spawnMon,EV,EVT,npcAct,openInv,SQUADS:()=>SQUADS,CIT:()=>CIT,MUS,PK,togglePK,callReinf,maAct,gainXp,realmText,updPK,INV,BC,mkItem,dropItem,enterBC,TU,refreshTL,bloom:()=>bloom,LOOK,buildAvatar,setSW:(a,b,c)=>{hero.vw&&hero.vw.rotation.set(a,b,c)},hero,P,useSkill,ents,setView:(y,p,d)=>{yaw=y;pitch=p;dist=d}};
 }
