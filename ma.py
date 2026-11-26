@@ -2,7 +2,7 @@
 # Chạy sau hoc.py mỗi ngày (GitHub Actions). Không đưa điểm mua/bán.
 import os, re, json, html, datetime
 ZBOX = '<div style="margin:20px 0;padding:14px 16px;border-radius:12px;background:#0068ff12;border:1px solid #0068ff55"><b>💬 Nhận cảnh báo khi {s} công bố BCTC, bảng tổng hợp BCTC quý mới nhất và nhận định thị trường mỗi ngày</b><br><a href="https://zalo.me/g/jbnbiq994" target="_blank" rel="noopener" style="display:inline-block;margin-top:8px;background:#0068ff;color:#fff;padding:9px 16px;border-radius:999px;font-weight:700;text-decoration:none">Tham gia nhóm Zalo cộng đồng (miễn phí)</a></div>'
-import hncodec
+import hncodec, soi3
 B = "https://chungkhoanhuynguyen.com"
 YT = "https://www.youtube.com/@chungkhoanhuynguyen"
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -80,12 +80,12 @@ def head(title, desc, url, ld):
 <title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{url}">
 <meta property="og:type" content="article"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{B}/img/og.png"><meta property="og:locale" content="vi_VN">
 <link rel="icon" href="/img/fav-32.png"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&family=Playfair+Display:wght@800;900&display=swap">
-<style>{CSS}.mt{{width:100%;border-collapse:collapse;font-size:15px;margin:8px 0 18px}}.mt td{{border-bottom:1px solid var(--line);padding:8px 6px}}.mt td.r{{text-align:right;font-variant-numeric:tabular-nums}}.mt td.n{{color:var(--mute);font-size:13px;text-align:right}}.up{{color:#0a8a4a}}.dn{{color:#c0392b}}.az{{columns:4 120px;font-size:15px;line-height:1.9}}.az a{{text-decoration:none}}.tag{{display:inline-block;font-size:12px;font-weight:700;border-radius:6px;padding:2px 8px;background:#f1eef6}}</style><script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script></head><body>
+<style>{CSS}.mt{{width:100%;border-collapse:collapse;font-size:15px;margin:8px 0 18px}}.mt td{{border-bottom:1px solid var(--line);padding:8px 6px}}.mt td.r{{text-align:right;font-variant-numeric:tabular-nums}}.mt td.n{{color:var(--mute);font-size:13px;text-align:right}}.up{{color:#0a8a4a}}.dn{{color:#c0392b}}.az{{columns:4 120px;font-size:15px;line-height:1.9}}.az a{{text-decoration:none}}.tag{{display:inline-block;font-size:12px;font-weight:700;border-radius:6px;padding:2px 8px;background:#f1eef6}}{soi3.CSS}</style><script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script></head><body>
 <header class="top"><div class="in"><a class="brand" href="/">HUY NGUYỄN <b>·</b> CHỨNG KHOÁN</a><nav class="nav"><a href="/#timnhanh">🔎 Tìm</a><a href="/mo-tai-khoan-chung-khoan.html">Mở TK</a><a href="/ma/">Mã CP</a><a href="/f0/">F0</a><a href="/hoc/">Bài học</a></nav></div></header>"""
 FOOT = """<footer>© Chứng Khoán Huy Nguyễn · <a href="/">chungkhoanhuynguyen.com</a><br>Thông tin tổng hợp từ dữ liệu thị trường và báo cáo tài chính, tham khảo, không phải khuyến nghị mua bán.<br><a href="/gioi-thieu.html">Giới thiệu</a> · <a href="/lien-he.html">Liên hệ</a> · <a href="/chinh-sach-bao-mat.html">Chính sách bảo mật</a></footer></body></html>"""
 
 os.makedirs(os.path.join(ROOT, "ma"), exist_ok=True)
-keep = set(); made = []
+keep = set(); made = []; N3 = []
 def _bf(rows, *keys):
     for k in keys:
         for r in rows:
@@ -107,8 +107,8 @@ def bctc_tinh(s, B):
     R += [("Lợi nhuận sau thuế công ty mẹ", ln), ("Lưu chuyển tiền thuần từ hoạt động kinh doanh", _bf(cf, "lưu chuyển tiền thuần từ hoạt động kinh doanh", "lưu chuyển tiền thuần từ các hoạt động sản xuất", "lưu chuyển tiền thuần từ hoạt động sản xuất"))]
     R = [(a, v) for a, v in R if v]
     if not R: return "", [], None
-    t = ("<table class='mt'><tr><td><b>Chỉ tiêu (tỷ đồng)</b></td>" + "".join(f"<td class='r'><b>{_ql(x)}</b></td>" for x in d) + "</tr>" +
-         "".join(f"<tr><td>{a}</td>" + "".join(f"<td class='r'>{_nt(v[i] if i < len(v) else None)}</td>" for i in range(len(d))) + "</tr>" for a, v in R) + "</table>")
+    t = ("<div style='overflow-x:auto;max-width:100%'><table class='mt'><tr><td><b>Chỉ tiêu (tỷ đồng)</b></td>" + "".join(f"<td class='r'><b>{_ql(x)}</b></td>" for x in d) + "</tr>" +
+         "".join(f"<tr><td>{a}</td>" + "".join(f"<td class='r'>{_nt(v[i] if i < len(v) else None)}</td>" for i in range(len(d))) + "</tr>" for a, v in R) + "</table></div>")
     sm, faq, ql = "", [], _ql(d[0])
     if ln and ln[0] is not None:
         yoy = (ln[0] / ln[4] - 1) * 100 if len(ln) > 4 and ln[4] and ln[4] > 0 else None
@@ -168,6 +168,8 @@ for s in SYMS:
          f'<div class="bc"><a href="/">Trang chủ</a> › <a href="/ma/">Mã cổ phiếu</a> › {e(s)}</div>',
          f'<h1>Cổ phiếu {e(s)}' + (f' – {e(name)}' if name != s else '') + f'</h1><div class="meta">Sàn {ex} · cập nhật {dmy(last)} · giá điều chỉnh, nghìn đồng</div>'+f'<div id="rtpx" data-s="{e(s)}" hidden style="margin:8px 0 14px;padding:10px 14px;border:1px solid var(--line);border-radius:10px;font-size:16px"></div><script src="/rtma.js" defer></script>',
          f"<p>{intro}</p>"]
+    _s3 = soi3.tinh(s, BT) if BT else None
+    if _s3: P.append(soi3.the_html(_s3)); N3.append(s)
     if val: P.append("<p>Về định giá: " + "; ".join(e(v) for v in val) + ".</p>")
     P.append("<h2>Chỉ số chính của " + e(s) + "</h2><table class='mt'>" + "".join(f"<tr><td>{e(a)}</td><td class='r'><b>{e(bv)}</b></td><td class='n'>{e(cv)}</td></tr>" for a, bv, cv in rows) + "</table>")
     if k and k.get("h"):
@@ -230,6 +232,7 @@ for s in SYMS:
     fn = f"ma/{s}.html"; keep.add(fn); made.append(s)
     open(os.path.join(ROOT, fn), "w", encoding="utf-8").write("\n".join(P))
 
+soi3.tat_ca(); print("soi3: the tren", len(N3), "trang ma")
 url = B + "/ma/"
 ld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Danh sách mã cổ phiếu Việt Nam", "url": url, "inLanguage": "vi"}
 P = [head("Danh sách mã cổ phiếu HOSE, HNX, UPCoM: giá, P/E, định giá | Chứng Khoán Huy Nguyễn",
