@@ -2507,6 +2507,7 @@ const tapRay=new T.Raycaster(),tapV=new T.Vector2(),tapPl=new T.Plane(new T.Vect
 function tapMove(cx,cy){if(creating||hero.dead)return;tapV.set(cx/innerWidth*2-1,-(cy/innerHeight)*2+1);tapRay.setFromCamera(tapV,camera);
  const en=ents.filter(x=>x.team==='enemy'&&!x.dead&&x.c.g.visible);let best=null,bd=1e9;for(const x of en){proj.copy(x.c.g.position);proj.y+=1.2;proj.project(camera);const dx=(proj.x*.5+.5)*innerWidth-cx,dy=(-proj.y*.5+.5)*innerHeight-cy,d=Math.hypot(dx,dy);if(proj.z<1&&d<46&&d<bd){bd=d;best=x}}
  if(best){P.auto=best;P.dest=null;ring(best.c.g.position,0xff5a4a,1.6,.4);return}
+ if(!window.__tapGo)return;/* 26/11: chạm đất KHÔNG tự chạy nữa — người mới chạm xoay màn hình bị tự chạy, không hiểu */
  const hp=heroPos();tapPl.constant=-hp.y;if(!tapRay.ray.intersectPlane(tapPl,tapP))return;if(tapP.distanceTo(hp)>90)return;tapP.y=H(tapP.x,tapP.z);P.dest=tapP.clone();P.auto=null;ring(P.dest,0x9fffd8,1.4,.5)}
 const upE=e=>{pinch.delete(e.pointerId);if(e.pointerId===look.id&&!look.on&&performance.now()-lastTap<260&&!recenter){const cx=e.clientX,cy=e.clientY;clearTimeout(tapTO);tapTO=setTimeout(()=>{if(!recenter)tapMove(cx,cy)},270)}if(e.pointerId===joy.id){joy.id=null;joy.x=joy.y=0;joyRest()}if(e.pointerId===look.id)look.id=null};
 cv.addEventListener('pointerup',upE);cv.addEventListener('pointercancel',upE);
