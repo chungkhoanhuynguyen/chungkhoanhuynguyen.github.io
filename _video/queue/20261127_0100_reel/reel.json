@@ -1,0 +1,282 @@
+[
+ {
+  "key": "RV2711TG",
+  "tieu_de": "Tỷ giá lập đỉnh lịch sử – vậy mà ôm 10.000 đô từ đầu năm, giờ bán lại vẫn lỗ gần 7,5 triệu?",
+  "hook": [
+   "TỶ GIÁ LẬP ĐỈNH",
+   "ÔM ĐÔ VẪN LỖ???"
+  ],
+  "nhan": "TỶ GIÁ · TÚI TIỀN",
+  "short_caption": "MarketTimes 25/11/2026: tỷ giá trung tâm 25.679 đồng/USD, cao nhất từng ghi nhận; Vietcombank bán 25.970, giảm 20 đồng. WiData: giá ngân hàng bán USD 26.377 (31/12/2025), 26.010 (26/11/2026); giá mua 25.630 (26/11); tự do bán 25.880 (16/11), 26.560 (26/11); 2022: 24.879 (31/10/2022), giá mua 23.290 (31/3/2023). Em tự tính: 10.000 USD mua 263,77 triệu, bán 256,3 triệu, lỗ 7,47 triệu; chênh mua bán 380 đồng; 2022 lỗ 15,89 triệu.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "canh": [
+   {
+    "chu_to": "ĐỈNH LỊCH SỬ MÀ RẺ ĐI?",
+    "loi": "Anh chị có định đổi tiền tiết kiệm sang đô la vì tỷ giá vừa lập đỉnh lịch sử không? Sáng thứ Tư, tỷ giá trung tâm lên hai mươi lăm nghìn sáu trăm bảy mươi chín đồng, cao nhất từ trước tới nay. Nhưng cùng buổi sáng, giá đô ở một ngân hàng lớn lại giảm hai mươi đồng.",
+    "loi_doc": "Anh chị có định đổi tiền tiết kiệm sang đô la vì tỷ giá vừa lập đỉnh lịch sử không? Sáng thứ Tư, tỷ giá trung tâm lên hai mươi lăm nghìn sáu trăm bảy mươi chín đồng, cao nhất từ trước tới nay. Nhưng cùng buổi sáng, giá đô ở một ngân hàng lớn lại giảm hai mươi đồng.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "SÁNG 25/11/2026",
+     "nguon": "MarketTimes 25/11/2026",
+     "dong": [
+      [
+       "TỶ GIÁ TRUNG TÂM 25.679",
+       66,
+       "vang"
+      ],
+      [
+       "CAO NHẤT LỊCH SỬ",
+       80,
+       "do"
+      ],
+      [
+       "NGÂN HÀNG BÁN: GIẢM 20 ĐỒNG",
+       50,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "CÁI CỌC VÀ SỢI DÂY",
+    "loi": "Tỷ giá trung tâm giống cái cọc giữa sân. Ngân hàng được bán đô lệch khỏi cọc tối đa năm phần trăm. Cái lập đỉnh là cái cọc, còn anh chị trả theo giá ngân hàng.",
+    "loi_doc": "Tỷ giá trung tâm giống cái cọc giữa sân. Ngân hàng được bán đô lệch khỏi cọc tối đa năm phần trăm. Cái lập đỉnh là cái cọc, còn anh chị trả theo giá ngân hàng.",
+    "anh": [],
+    "the": {
+     "loai": "chuoi",
+     "tieu": "ĐỈNH LỊCH SỬ LÀ GIÁ NÀO?",
+     "nguon": "Ngân hàng Nhà nước · biên độ 5%",
+     "buoc": [
+      "CỌC: TỶ GIÁ TRUNG TÂM",
+      "DÂY: LỆCH TỐI ĐA 5%",
+      "ANH CHỊ TRẢ GIÁ NGÂN HÀNG"
+     ],
+     "mau": [
+      "tim",
+      "tim",
+      "vang"
+     ]
+    }
+   },
+   {
+    "chu_to": "GIÁ ĐÔ THẤP HƠN ĐẦU NĂM",
+    "loi": "Theo số liệu WiData, ngày cuối năm ngoái ngân hàng bán đô hai mươi sáu nghìn ba trăm bảy mươi bảy đồng. Hôm thứ Năm chỉ còn hai mươi sáu nghìn không trăm mười đồng.",
+    "loi_doc": "Theo số liệu WiData, ngày cuối năm ngoái ngân hàng bán đô hai mươi sáu nghìn ba trăm bảy mươi bảy đồng. Hôm thứ Năm chỉ còn hai mươi sáu nghìn không trăm mười đồng.",
+    "anh": [],
+    "the": {
+     "loai": "cot",
+     "tieu": "GIÁ NGÂN HÀNG BÁN 1 ĐÔ (ĐỒNG)",
+     "nguon": "WiData",
+     "hang": [
+      [
+       "31/12/2025",
+       26377
+      ],
+      [
+       "26/11/2026",
+       26010
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": ""
+    }
+   },
+   {
+    "chu_to": "ÔM 10.000 ĐÔ: LỖ 7,47 TRIỆU",
+    "loi": "Ai mua mười nghìn đô ngày cuối năm ngoái thì trả gần hai trăm sáu mươi bốn triệu. Hôm thứ Năm bán lại cho ngân hàng, cầm về hai trăm năm mươi sáu triệu ba trăm nghìn. Người đó lỗ gần bảy triệu rưỡi.",
+    "loi_doc": "Ai mua mười nghìn đô ngày cuối năm ngoái thì trả gần hai trăm sáu mươi bốn triệu. Hôm thứ Năm bán lại cho ngân hàng, cầm về hai trăm năm mươi sáu triệu ba trăm nghìn. Người đó lỗ gần bảy triệu rưỡi.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "MUA 10.000 ĐÔ NGÀY 31/12/2025",
+     "nguon": "Em tự tính từ giá ngân hàng mua, bán · WiData",
+     "dong": [
+      [
+       "MUA: 263,77 TRIỆU",
+       70,
+       "trang"
+      ],
+      [
+       "BÁN: 256,3 TRIỆU",
+       70,
+       "vang"
+      ],
+      [
+       "LỖ 7,47 TRIỆU",
+       100,
+       "do"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "ĐÔ CŨNG CÓ 2 GIÁ",
+    "loi": "Vì đô la cũng có hai giá như vàng. Hôm thứ Năm, giá ngân hàng bán và giá ngân hàng mua lại cách nhau ba trăm tám mươi đồng. Mua xong bán ngay là mất khoảng một phẩy năm phần trăm.",
+    "loi_doc": "Vì đô la cũng có hai giá như vàng. Hôm thứ Năm, giá ngân hàng bán và giá ngân hàng mua lại cách nhau ba trăm tám mươi đồng. Mua xong bán ngay là mất khoảng một phẩy năm phần trăm.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "CHÊNH MUA BÁN NGÀY 26/11",
+     "nguon": "Em tự tính: 26.010 − 25.630 · WiData",
+     "dong": [
+      [
+       "380 ĐỒNG MỖI ĐÔ",
+       96,
+       "do"
+      ],
+      [
+       "10.000 ĐÔ: MẤT 3,8 TRIỆU",
+       56,
+       "vang"
+      ],
+      [
+       "NGAY KHI VỪA MUA",
+       50,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "CHỢ ĐEN VỌT 680 ĐỒNG",
+    "loi": "Còn giá đô tự do, chỗ người ta quen gọi là chợ đen, mười ngày qua vọt thêm sáu trăm tám mươi đồng, cao hơn giá ngân hàng tới năm trăm năm mươi đồng mỗi đô.",
+    "loi_doc": "Còn giá đô tự do, chỗ người ta quen gọi là chợ đen, mười ngày qua vọt thêm sáu trăm tám mươi đồng, cao hơn giá ngân hàng tới năm trăm năm mươi đồng mỗi đô.",
+    "anh": [],
+    "the": {
+     "loai": "cot",
+     "tieu": "GIÁ ĐÔ TỰ DO BÁN RA (ĐỒNG)",
+     "nguon": "WiData",
+     "hang": [
+      [
+       "16/11/2026",
+       25880
+      ],
+      [
+       "26/11/2026",
+       26560
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": ""
+    }
+   },
+   {
+    "chu_to": "NĂM 2022 ĐỔI SÁT ĐỈNH",
+    "loi": "Năm hai nghìn không trăm hai mươi hai, ai đổi mười nghìn đô cuối tháng mười, sát đỉnh của năm, thì tháng ba năm sau bán lại lỗ gần mười sáu triệu.",
+    "loi_doc": "Năm hai nghìn không trăm hai mươi hai, ai đổi mười nghìn đô cuối tháng mười, sát đỉnh của năm, thì tháng ba năm sau bán lại lỗ gần mười sáu triệu.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "LẦN TRƯỚC: NĂM 2022",
+     "nguon": "Em tự tính từ WiData: 24.879 (31/10/2022), mua lại 23.290 (31/3/2023)",
+     "dong": [
+      [
+       "10.000 ĐÔ",
+       70,
+       "trang"
+      ],
+      [
+       "LỖ 15,89 TRIỆU",
+       96,
+       "do"
+      ],
+      [
+       "SAU 5 THÁNG",
+       56,
+       "vang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "ĐỔI THEO LỊCH CHI TIÊU",
+    "loi": "Em không đoán tỷ giá. Em tự soi ba dòng: mười hai tháng tới nhà mình phải trả bao nhiêu tiền bằng đô? Đô đang giữ có vượt số đó không? Phần vượt ra chính là phần đặt cược.",
+    "loi_doc": "Em không đoán tỷ giá. Em tự soi ba dòng: mười hai tháng tới nhà mình phải trả bao nhiêu tiền bằng đô? Đô đang giữ có vượt số đó không? Phần vượt ra chính là phần đặt cược.",
+    "anh": [],
+    "the": {
+     "loai": "chuoi",
+     "tieu": "PHÉP THỬ CỦA HUY NGUYỄN",
+     "nguon": "Mốc tự soi",
+     "buoc": [
+      "12 THÁNG TỚI TRẢ BAO NHIÊU ĐÔ?",
+      "ĐÔ ĐANG GIỮ CÓ VƯỢT?",
+      "PHẦN VƯỢT LÀ ĐẶT CƯỢC"
+     ],
+     "mau": [
+      "tim",
+      "tim",
+      "vang"
+     ]
+    }
+   }
+  ],
+  "cau_hoi": {
+   "chu_to": "ĐÔ ĐỂ CHI HAY ĐỂ CHỜ?",
+   "loi": "Số đô nhà anh chị đang giữ là A: để trả một khoản có ngày cụ thể, hay B: để chờ tỷ giá lên?",
+   "loi_doc": "Số đô nhà anh chị đang giữ là A: để trả một khoản có ngày cụ thể, hay B: để chờ tỷ giá lên?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "ĐÔ LA TRONG NHÀ",
+    "dong": [
+     [
+      "A: ĐỂ CHI TIÊU",
+      90,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: ĐỂ CHỜ GIÁ LÊN?",
+      76,
+      "do"
+     ]
+    ]
+   }
+  },
+  "keo_web": {
+   "chu_to": "GIÁ ĐÔ MỖI NGÀY",
+   "loi": "Giá đô và chỉ số sức mạnh đồng đô, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Giá đô và chỉ số sức mạnh đồng đô, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "GIÁ ĐÔ MỖI NGÀY",
+      50,
+      "vang"
+     ],
+     [
+      "XEM MIỄN PHÍ",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ }
+]
