@@ -5369,6 +5369,8 @@ try{(function(){
 })()}catch(e){console.warn('opt2',e)}
 /* ===== THẾ GIỚI MỞ + TỌA KỴ (26/11): 12 vùng đất có tên (vào vùng hiện tên), mỗi vùng 1 bia cổ để khám phá (thưởng + mở điểm truyền tống), 2 bí bảo ẩn mỗi vùng (làm mới mỗi ngày, chỉ lấp lánh khi tới gần); nút Bản đồ: xem vùng đã khám phá, dịch chuyển tới bia đã mở; Tọa kỵ Bạch Mã (mua ở Mã Phu) — cưỡi chạy nhanh x1.7, đánh hoặc bị đánh là tự xuống ===== */
 try{(function(){
+ /* phiên kia đã làm Thế Giới Mở (8 vùng, địa danh, truyền tống, 40 rương) → bỏ phần vùng/bia/bí bảo/bản đồ của khối này, chỉ giữ Tọa kỵ + Chỉ đường */
+ const SKIPW=!!window.__ow;
  const RN={n:['Tuyết Tùng Lĩnh','Băng Nguyên Bắc Cực','Vạn Niên Băng Phong'],s:['Bích Thủy Bình Nguyên','Vọng Hương Lĩnh','Thiên Nam Cổ Địa'],e:['Liên Hoa Trạch','Trúc Lâm U Cốc','Đông Hải Thạch Ngạn'],w:['Hồng Diệp Lâm','Phong Sa Cổ Đạo','Tây Vực Hoang Thành']};
  const DIR={n:[0,-1],s:[0,1],e:[1,0],w:[-1,0]},RD=[360,780,1200],STELE=['Bia Kiếm Cổ','Thạch Bia Tiên Nhân','Cổ Tháp Phong Ấn','Đá Thiên Thư'];
  function regionOf(x,z){const d=Math.hypot(x,z);if(d<CITY+8)return null;const k=Math.abs(x)>Math.abs(z)?(x>0?'e':'w'):(z>0?'s':'n');const r=d<570?0:d<1000?1:2;return k+r}
@@ -5376,7 +5378,7 @@ try{(function(){
  const hs=s=>{let h=2166136261;for(const c of s){h^=c.charCodeAt(0);h=Math.imul(h,16777619)}h^=h>>>13;h=Math.imul(h,0x5bd1e995);h^=h>>>15;return h>>>0};
  const ids=[];for(const k of 'nsew')for(let r=0;r<3;r++)ids.push(k+r);
  function ptFor(id,salt,spread){const h=hs(id+salt),[dx,dz]=DIR[id[0]],r=+id[1],a=Math.atan2(dz,dx)+((h%1000)/1000-.5)*(spread||.6),d=RD[r]+(((h>>>10)%200)-100);let x=Math.cos(a)*d,z=Math.sin(a)*d;x=Math.max(-1400,Math.min(1400,x));z=Math.max(-1400,Math.min(1400,z));return[x,z]}
- const LM=ids.map((id,i)=>({id,name:STELE[i%4]+' · '+nameOf(id),p:ptFor(id,'L',.5),r:+id[1]}));
+ const LM=SKIPW?[]:ids.map((id,i)=>({id,name:STELE[i%4]+' · '+nameOf(id),p:ptFor(id,'L',.5),r:+id[1]}));
  const TU_=()=>{TU.disc=TU.disc||{};const d=new Date(Date.now()+7*3600000).toISOString().slice(0,10);if(TU.bbDay!==d){TU.bbDay=d;TU.bb={}}TU.bb=TU.bb||{};return TU};
  /* bia cổ */
  const stoneM=new T.MeshStandardMaterial({color:0x8a8478,roughness:.95}),runeM=new T.MeshBasicMaterial({color:0x7fd8ff,transparent:true,opacity:.85,blending:T.AdditiveBlending,depthWrite:false});
@@ -5389,14 +5391,14 @@ try{(function(){
  function lit(L){L.rn.forEach(m=>m.material=runeM);L.ring.material.opacity=.55}
  setTimeout(()=>{try{TU_();LM.forEach(L=>{if(TU.disc[L.id])lit(L)})}catch(_){}},3000);
  /* bí bảo ẩn */
- const BB=[];ids.forEach(id=>{for(let k=0;k<2;k++)BB.push({id:id+'_'+k,rid:id,p:ptFor(id,'B'+k,1.3),r:+id[1]})});
+ const BB=[];if(!SKIPW)ids.forEach(id=>{for(let k=0;k<2;k++)BB.push({id:id+'_'+k,rid:id,p:ptFor(id,'B'+k,1.3),r:+id[1]})});
  const chestG=()=>{const g=new T.Group(),w=new T.MeshStandardMaterial({color:0x6a3a14,roughness:.8}),gd=new T.MeshStandardMaterial({color:0xffc84a,metalness:.8,roughness:.3,emissive:0x442200,emissiveIntensity:.5});const b=new T.Mesh(new T.BoxGeometry(1,.6,.7),w);b.position.y=.3;const l=new T.Mesh(new T.BoxGeometry(1.04,.25,.74),gd);l.position.y=.72;g.add(b,l);return g};
  /* thông báo vùng */
  const st=document.createElement('style');st.textContent='#rgn{position:fixed;left:50%;top:27%;transform:translateX(-50%);z-index:30;pointer-events:none;text-align:center;opacity:0;transition:opacity .8s;font:800 22px "Noto Serif",serif;color:#ffe9b0;letter-spacing:3px;text-shadow:0 0 12px rgba(255,180,60,.6),0 2px 4px #000;white-space:nowrap}#rgn small{display:block;font:600 12px "Noto Serif",serif;letter-spacing:1px;color:#e8dcc0}#rgn.on{opacity:1}body.touch #rgn{font-size:16px}#wmap td{padding:4px 3px;border-bottom:1px solid rgba(231,197,122,.15);font-size:12px}#wmap button{display:inline-block!important;width:auto!important;min-height:26px!important;margin:0!important;padding:2px 8px!important;font-size:11px!important}';document.head.appendChild(st);
  const rg=document.createElement('div');rg.id='rgn';document.body.appendChild(rg);let curR=undefined,rgT=0;
  function showR(t,sub){rg.innerHTML='— '+t+' —'+(sub?'<small>'+sub+'</small>':'');rg.classList.add('on');clearTimeout(rgT);rgT=setTimeout(()=>rg.classList.remove('on'),3200)}
  const busy=()=>creating||!hero||hero.dead||BC.in||INT.in||window.__DGin||(typeof BF!=='undefined'&&BF.in);
- setInterval(()=>{try{if(busy())return;TU_();const hp=heroPos(),r=regionOf(hp.x,hp.z);
+ setInterval(()=>{try{if(SKIPW||busy())return;TU_();const hp=heroPos(),r=regionOf(hp.x,hp.z);
   if(r!==curR){if(curR!==undefined){if(r)showR(nameOf(r),TU.disc[r]?'Đã khám phá':'Chưa khám phá — tìm bia cổ của vùng');else showR('Huyền Kiếm Thành','An toàn — cấm PK')}curR=r}
   /* bia */
   for(const L of LM){const d=Math.hypot(hp.x-L.p[0],hp.z-L.p[1]);if(d<9&&!TU.disc[L.id]){TU.disc[L.id]=1;lit(L);const st2=150*(L.r+1)*(L.r+1);TU.stone+=st2;try{gainXp(needXp()*.08*(L.r+1))}catch(_){}saveTL();refreshTL();banner('🗿 Khám phá: '+L.name,'+'+st2+' linh thạch · mở điểm truyền tống');sfx('magic');try{ring(new T.Vector3(L.p[0],H(L.p[0],L.p[1]),L.p[1]),0x7fd8ff,8,1)}catch(_){}if(window.__hunt)try{__hunt.rare(0)}catch(_){}}
@@ -5418,7 +5420,7 @@ try{(function(){
    if(!TU.disc[L.id])return;if(hero.hp<hero.max*.5){chat('Máu dưới một nửa — hồi lại rồi hẵng truyền tống.','k');return}if(TU.stone<cost(L)){chat('Cần '+cost(L)+' linh thạch.','k');return}
    TU.stone-=cost(L);saveTL();refreshTL();$('npcp').style.display='none';const hp=heroPos();try{boom(hp.clone().setY(hp.y+1),30,[.6,1.6,2.4],6,.6,.6,-2)}catch(_){}hp.set(L.p[0]+3,H(L.p[0]+3,L.p[1]+3),L.p[1]+3);P.v.set(0,0,0);P.route=null;P.dest=null;P.auto=null;try{ring(hp,0x7fd8ff,4,.6);sfx('magic')}catch(_){}return}
   return _na.apply(this,arguments)};
- setTimeout(()=>{const pb=$('pkbar');if(!pb||$('wmb'))return;const b=document.createElement('button');b.id='wmb';b.className='sec';b.title='Bản đồ thế giới';b.innerHTML='<svg viewBox="0 0 24 24"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z"/><path d="M9 4v14M15 6v14"/></svg>';b.onclick=mapPanel;pb.appendChild(b)},3200);
+ setTimeout(()=>{const pb=$('pkbar');if(SKIPW||!pb||$('wmb'))return;const b=document.createElement('button');b.id='wmb';b.className='sec';b.title='Bản đồ thế giới';b.innerHTML='<svg viewBox="0 0 24 24"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z"/><path d="M9 4v14M15 6v14"/></svg>';b.onclick=mapPanel;pb.appendChild(b)},3200);
  /* ---------- Tọa kỵ ---------- */
  const MP=(()=>{try{const[i,j]=navFree(-12,-36);return[NAV.o+i*NAV.c+1,NAV.o+j*NAV.c+1]}catch(_){return[-12,-36]}})(),PRICE=5000;
  const mn={id:'maphu',name:'Mã Phu',title:'Bán tọa kỵ',pos:MP};
