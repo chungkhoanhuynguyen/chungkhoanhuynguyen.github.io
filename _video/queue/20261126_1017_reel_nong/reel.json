@@ -1,0 +1,1727 @@
+[
+ {
+  "key": "SN2611VNSANG",
+  "tieu_de": "Sáng 26/11 VN-Index mất 16 điểm, 266 mã giảm: riêng VIC lấy đi 5,42 điểm",
+  "hook": [
+   "266 MÃ GIẢM 26/11",
+   "VIC ĐÈ 5,42 ĐIỂM"
+  ],
+  "nhan": "TIN NÓNG · 26/11/2026",
+  "short_caption": "Lúc 9 giờ 57 sáng 26/11/2026, VN-Index còn 1.671,33 điểm, giảm 0,96% (mất 16,12 điểm so với phiên 25/11); 266 mã giảm, 72 mã tăng; riêng VIC lấy đi 5,42 điểm. Nguồn: dữ liệu chungkhoanhuynguyen.com.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "SÁNG ĐỎ, ANH CHỊ LÀM GÌ?",
+   "loi": "Sáng đỏ thế này, anh chị A: đứng ngoài quan sát, hay B: vẫn theo kế hoạch của mình?",
+   "loi_doc": "Sáng đỏ thế này, anh chị A: đứng ngoài quan sát, hay B: vẫn theo kế hoạch của mình?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "SÁNG ĐỎ, ANH CHỊ LÀM GÌ?",
+    "dong": [
+     [
+      "A",
+      100,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B?",
+      100,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "MẤT 16 ĐIỂM",
+    "loi": "Tài khoản anh chị sáng 26/11 có đỏ không? Lúc 9 giờ 57, VN-Index còn 1.671,33 điểm, giảm 0,96%, mất hơn 16 điểm so với phiên 25/11.",
+    "loi_doc": "Tài khoản anh chị sáng hai mươi sáu tháng mười một có đỏ không? Lúc chín giờ năm mươi bảy, V N Index còn một nghìn sáu trăm bảy mươi mốt phẩy ba mươi ba điểm, giảm không phẩy chín mươi sáu phần trăm, mất hơn mười sáu điểm so với phiên hai mươi lăm tháng mười một.",
+    "anh": [],
+    "the": {
+     "loai": "giam",
+     "tieu": "VN-INDEX · SÁNG 26/11/2026",
+     "a": [
+      "25/11",
+      1687.45
+     ],
+     "b": [
+      "9G57 26/11",
+      1671.33
+     ],
+     "dv": " ĐIỂM",
+     "dau": "-0,96%",
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "266 GIẢM · 72 TĂNG",
+    "loi": "Trên sàn Hô-xê, 266 mã giảm, chỉ 72 mã tăng, 55 mã đứng giá. Cứ gần bốn mã giảm mới có một mã tăng.",
+    "loi_doc": "Trên sàn Hô-xê, hai trăm sáu mươi sáu mã giảm, chỉ bảy mươi hai mã tăng, năm mươi lăm mã đứng giá. Cứ gần bốn mã giảm mới có một mã tăng.",
+    "anh": [],
+    "the": {
+     "loai": "cot",
+     "tieu": "SỐ MÃ LÚC 9G57 SÁNG 26/11",
+     "hang": [
+      [
+       "TĂNG",
+       72
+      ],
+      [
+       "ĐỨNG",
+       55
+      ],
+      [
+       "GIẢM",
+       266
+      ]
+     ],
+     "noi": [
+      2
+     ],
+     "dv": "",
+     "max": 300,
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "VIC ĐÈ 5,42 ĐIỂM",
+    "loi": "Mã đè nặng nhất là VIC, một mình lấy đi 5,42 điểm, khoảng một phần ba số điểm mất. Sau đó là VHM 1,38 điểm và TCB 1,12 điểm.",
+    "loi_doc": "Mã đè nặng nhất là V I C, một mình lấy đi năm phẩy bốn mươi hai điểm, khoảng một phần ba số điểm mất. Sau đó là V H M một phẩy ba mươi tám điểm và T C B một phẩy mười hai điểm.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "MÃ ĐÈ CHỈ SỐ NHIỀU NHẤT",
+     "dong": [
+      [
+       "VIC -5,42 ĐIỂM",
+       88,
+       "do"
+      ],
+      [
+       "VHM -1,38 ĐIỂM",
+       56,
+       "trang"
+      ],
+      [
+       "TCB -1,12 ĐIỂM",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "TIỀN VẪN CHẠY",
+    "loi": "Khớp nhiều nhất sàn là VIX 151 tỷ đồng và SSI 135 tỷ đồng, cả hai đều giảm.",
+    "loi_doc": "Khớp nhiều nhất sàn là V I X một trăm năm mươi mốt tỷ đồng và S S I một trăm ba mươi lăm tỷ đồng, cả hai đều giảm.",
+    "anh": [],
+    "the": {
+     "loai": "cot",
+     "tieu": "KHỚP NHIỀU NHẤT (TỶ ĐỒNG)",
+     "hang": [
+      [
+       "VIX",
+       151
+      ],
+      [
+       "SSI",
+       135
+      ],
+      [
+       "HPG",
+       81
+      ]
+     ],
+     "noi": [
+      0
+     ],
+     "dv": "",
+     "max": 170,
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "MỚI LÀ GIỮA PHIÊN",
+    "loi": "Đây mới là số giữa phiên. Ngày đỏ rộng, quyết định vội thường đắt hơn mức giảm.",
+    "loi_doc": "Đây mới là số giữa phiên. Ngày đỏ rộng, quyết định vội thường đắt hơn mức giảm.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "SỐ LIỆU LÚC 9G57",
+     "dong": [
+      [
+       "CHƯA HẾT PHIÊN",
+       84,
+       "vang"
+      ],
+      [
+       "ĐỪNG QUYẾT ĐỊNH VỘI",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Diễn biến từng phiên, em cập nhật trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Diễn biến từng phiên, em cập nhật trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "BẢN ĐỒ NHIỆT · MÃ KÉO ĐÈ",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SN2611SJC5TR",
+  "tieu_de": "Vàng miếng SJC sáng 26/11 mua 129,1 bán 134,1 triệu: mua xong bán ngay mất 5 triệu mỗi lượng",
+  "hook": [
+   "MUA XONG BÁN NGAY",
+   "MẤT 5 TRIỆU?"
+  ],
+  "nhan": "TIN NÓNG · 26/11/2026",
+  "short_caption": "Lúc 9 giờ 03 sáng 26/11/2026, vàng miếng SJC mua vào 129,1 triệu, bán ra 134,1 triệu đồng/lượng: mua rồi bán lại ngay hụt 5 triệu mỗi lượng, vàng phải tăng gần 3,9% mới hòa vốn. Nguồn: SJC qua webgia.com, dữ liệu chungkhoanhuynguyen.com.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "MẤT 5 TRIỆU KHI MUA",
+   "loi": "Mất 5 triệu ngay khi mua, anh chị A: vẫn giữ vàng miếng, hay B: chuyển sang kênh khác?",
+   "loi_doc": "Mất năm triệu ngay khi mua, anh chị A: vẫn giữ vàng miếng, hay B: chuyển sang kênh khác?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "MẤT 5 TRIỆU KHI MUA",
+    "dong": [
+     [
+      "A",
+      100,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B?",
+      100,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "LỖ NGAY 5 TRIỆU",
+    "loi": "Mua một lượng vàng miếng rồi bán lại ngay, anh chị mất bao nhiêu? Sáng 26/11, lúc 9 giờ 3 phút, SJC mua vào 129,1 triệu, bán ra 134,1 triệu một lượng.",
+    "loi_doc": "Mua một lượng vàng miếng rồi bán lại ngay, anh chị mất bao nhiêu? Sáng hai mươi sáu tháng mười một, lúc chín giờ ba phút, S J C mua vào một trăm hai mươi chín phẩy một triệu, bán ra một trăm ba mươi tư phẩy một triệu một lượng.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "VÀNG MIẾNG SJC · 9G03 26/11",
+     "dong": [
+      [
+       "BÁN RA 134,1 TRIỆU",
+       80,
+       "vang"
+      ],
+      [
+       "MUA VÀO 129,1 TRIỆU",
+       80,
+       "trang"
+      ]
+     ],
+     "nguon": "SJC qua webgia.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "CÁCH NHAU 5 TRIỆU",
+    "loi": "Hai giá cách nhau đúng 5 triệu đồng. Nghĩa là vừa mua xong, vàng phải tăng gần 3,9% thì anh chị mới hòa vốn.",
+    "loi_doc": "Hai giá cách nhau đúng năm triệu đồng. Nghĩa là vừa mua xong, vàng phải tăng gần ba phẩy chín phần trăm thì anh chị mới hòa vốn.",
+    "anh": [],
+    "the": {
+     "loai": "cot",
+     "tieu": "SJC SÁNG 26/11 (TRIỆU Đ/LƯỢNG)",
+     "hang": [
+      [
+       "MUA VÀO",
+       129.1
+      ],
+      [
+       "BÁN RA",
+       134.1
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 140,
+     "nguon": "SJC qua webgia.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "MUA 2 LƯỢNG",
+    "loi": "Mua hai lượng hết 268,2 triệu. Bán lại ngay chỉ nhận 258,2 triệu, hụt 10 triệu đồng, gần bằng mấy tháng lương.",
+    "loi_doc": "Mua hai lượng hết hai trăm sáu mươi tám phẩy hai triệu. Bán lại ngay chỉ nhận hai trăm năm mươi tám phẩy hai triệu, hụt mười triệu đồng, gần bằng mấy tháng lương.",
+    "anh": [],
+    "the": {
+     "loai": "giam",
+     "tieu": "MUA 2 LƯỢNG RỒI BÁN NGAY",
+     "a": [
+      "TRẢ",
+      268.2
+     ],
+     "b": [
+      "NHẬN",
+      258.2
+     ],
+     "dv": " TR",
+     "dau": "HỤT 10 TRIỆU",
+     "nguon": "Tính từ giá SJC 9g03 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "GIÁ ĐỨNG YÊN",
+    "loi": "Giá bán ra sáng 26/11 vẫn là 134,1 triệu, bằng ngày 25/11. Giá đứng yên thì khoảng 5 triệu kia là chi phí thật.",
+    "loi_doc": "Giá bán ra sáng hai mươi sáu tháng mười một vẫn là một trăm ba mươi tư phẩy một triệu, bằng ngày hai mươi lăm tháng mười một. Giá đứng yên thì khoảng năm triệu kia là chi phí thật.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "GIÁ BÁN RA SJC",
+     "dong": [
+      [
+       "25/11: 134,1 TRIỆU",
+       70,
+       "trang"
+      ],
+      [
+       "26/11: 134,1 TRIỆU",
+       70,
+       "vang"
+      ]
+     ],
+     "nguon": "SJC qua webgia.com"
+    }
+   },
+   {
+    "chu_to": "CỔ PHIẾU CŨNG VẬY",
+    "loi": "Cổ phiếu cũng vậy: mỗi lần mua bán đều mất phí và thuế. Mua bán càng dày, chi phí ăn vào tiền lời càng nhiều.",
+    "loi_doc": "Cổ phiếu cũng vậy: mỗi lần mua bán đều mất phí và thuế. Mua bán càng dày, chi phí ăn vào tiền lời càng nhiều.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "CHI PHÍ MUA BÁN",
+     "dong": [
+      [
+       "VÀNG: KHOẢNG MUA BÁN",
+       56,
+       "vang"
+      ],
+      [
+       "CỔ PHIẾU: PHÍ + THUẾ",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Giá vàng SJC và mức chênh, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Giá vàng S J C và mức chênh, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "GIÁ VÀNG SJC",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SN2611KOSPI",
+  "tieu_de": "Chứng khoán Hàn Quốc sáng 26/11: KOSPI còn 4.757 điểm, mất 47,8% từ đỉnh tháng 6, phải tăng 91,6% mới về lại",
+  "hook": [
+   "HÀN QUỐC MẤT 48%",
+   "CẦN TĂNG 91%?"
+  ],
+  "nhan": "TIN NÓNG · 26/11/2026",
+  "short_caption": "Sáng 26/11/2026, chỉ số KOSPI của Hàn Quốc còn 4.757,75 điểm, giảm 4,96% so với phiên 24/11; so với đỉnh 9.114,55 điểm ngày 22/6/2026 là mất 47,8%, phải tăng 91,6% mới về lại đỉnh. Nguồn: dữ liệu chungkhoanhuynguyen.com.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "MẤT NỬA TỪ ĐỈNH",
+   "loi": "Mất gần nửa từ đỉnh, anh chị A: bắt đầu để ý, hay B: đứng xa cho chắc?",
+   "loi_doc": "Mất gần nửa từ đỉnh, anh chị A: bắt đầu để ý, hay B: đứng xa cho chắc?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "MẤT NỬA TỪ ĐỈNH",
+    "dong": [
+     [
+      "A",
+      100,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B?",
+      100,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "MẤT 4,96%",
+    "loi": "Nếu anh chị cầm quỹ chứng khoán Hàn Quốc, mấy ngày nay thấy gì? Sáng 26/11, chỉ số KOSPI còn 4.757,75 điểm, mất 4,96% so với phiên 24/11.",
+    "loi_doc": "Nếu anh chị cầm quỹ chứng khoán Hàn Quốc, mấy ngày nay thấy gì? Sáng hai mươi sáu tháng mười một, chỉ số Cốt-xpi còn bốn nghìn bảy trăm năm mươi bảy phẩy bảy mươi lăm điểm, mất bốn phẩy chín mươi sáu phần trăm so với phiên hai mươi tư tháng mười một.",
+    "anh": [],
+    "the": {
+     "loai": "giam",
+     "tieu": "KOSPI HÀN QUỐC",
+     "a": [
+      "24/11",
+      5006.03
+     ],
+     "b": [
+      "26/11",
+      4757.75
+     ],
+     "dv": " ĐIỂM",
+     "dau": "-4,96%",
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "MỘT THÁNG -15,62%",
+    "loi": "Tính từ ngày 27/10, khi chỉ số còn 5.638 điểm, đến nay KOSPI đã mất 15,62%.",
+    "loi_doc": "Tính từ ngày hai mươi bảy tháng mười, khi chỉ số còn năm nghìn sáu trăm ba mươi tám điểm, đến nay Cốt-xpi đã mất mười lăm phẩy sáu mươi hai phần trăm.",
+    "anh": [],
+    "the": {
+     "loai": "giam",
+     "tieu": "KOSPI MỘT THÁNG",
+     "a": [
+      "27/10",
+      5638.34
+     ],
+     "b": [
+      "26/11",
+      4757.75
+     ],
+     "dv": " ĐIỂM",
+     "dau": "-15,62%",
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "ĐỈNH 9.114 ĐIỂM",
+    "loi": "Còn so với đỉnh 9.114,55 điểm ngày 22/6, KOSPI mất 47,8%, gần một nửa chỉ sau năm tháng.",
+    "loi_doc": "Còn so với đỉnh chín nghìn một trăm mười bốn phẩy năm mươi lăm điểm ngày hai mươi hai tháng sáu, Cốt-xpi mất bốn mươi bảy phẩy tám phần trăm, gần một nửa chỉ sau năm tháng.",
+    "anh": [],
+    "the": {
+     "loai": "giam",
+     "tieu": "KOSPI TỪ ĐỈNH",
+     "a": [
+      "22/6",
+      9114.55
+     ],
+     "b": [
+      "26/11",
+      4757.75
+     ],
+     "dv": " ĐIỂM",
+     "dau": "MẤT 47,8%",
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "PHẢI TĂNG 91,6%",
+    "loi": "Mất 47,8% thì phải tăng 91,6% mới về lại đỉnh. Lỗ một nửa, về bờ phải gần gấp đôi.",
+    "loi_doc": "Mất bốn mươi bảy phẩy tám phần trăm thì phải tăng chín mươi mốt phẩy sáu phần trăm mới về lại đỉnh. Lỗ một nửa, về bờ phải gần gấp đôi.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "BÀI TOÁN VỀ BỜ",
+     "dong": [
+      [
+       "MẤT 47,8%",
+       90,
+       "do"
+      ],
+      [
+       "CẦN TĂNG 91,6%",
+       90,
+       "vang"
+      ]
+     ],
+     "nguon": "Tính từ dữ liệu chungkhoanhuynguyen.com"
+    }
+   },
+   {
+    "chu_to": "VIỆT NAM CŨNG ĐỎ",
+    "loi": "Sáng 26/11, VN-Index cũng giảm 0,96%. Cái đáng nhớ là bài toán về bờ ở trên.",
+    "loi_doc": "Sáng hai mươi sáu tháng mười một, V N Index cũng giảm không phẩy chín mươi sáu phần trăm. Cái đáng nhớ là bài toán về bờ ở trên.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "SÁNG 26/11",
+     "dong": [
+      [
+       "KOSPI ĐỎ",
+       70,
+       "do"
+      ],
+      [
+       "VN-INDEX -0,96%",
+       70,
+       "trang"
+      ]
+     ],
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Chứng khoán thế giới, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Chứng khoán thế giới, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "CHỨNG KHOÁN THẾ GIỚI",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2611BTC",
+  "tieu_de": "Bitcoin 26/11 còn 60.681 USD: mất 24,53% sau ba tuần, chỉ còn cách đáy một năm 3,6%",
+  "hook": [
+   "BITCOIN MẤT 1/4",
+   "TRONG 3 TUẦN"
+  ],
+  "nhan": "TIN NÓNG · 26/11/2026",
+  "short_caption": "Ngày 26/11/2026 Bitcoin ở 60.681 USD, so với 80.405 USD ngày 4/11 là mất 24,53%; thấp hơn đỉnh 86.603 USD (21/9/2026) gần 30% và chỉ còn cách đáy một năm 58.559 USD khoảng 3,6%. Nguồn: dữ liệu chungkhoanhuynguyen.com.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "MẤT 1/4 TRONG 3 TUẦN",
+   "loi": "Mất một phần tư trong ba tuần, anh chị A: vẫn giữ tiền số, hay B: tránh xa?",
+   "loi_doc": "Mất một phần tư trong ba tuần, anh chị A: vẫn giữ tiền số, hay B: tránh xa?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "MẤT 1/4 TRONG 3 TUẦN",
+    "dong": [
+     [
+      "A",
+      100,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B?",
+      100,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "MẤT 24,53%",
+    "loi": "Ai mua Bitcoin đầu tháng 11 giờ thấy gì? Ngày 4/11, một Bitcoin giá 80.405 đô. Đến 26/11 còn 60.681 đô, mất 24,53%.",
+    "loi_doc": "Ai mua Bitcoin đầu tháng mười một giờ thấy gì? Ngày bốn tháng mười một, một Bitcoin giá tám mươi nghìn bốn trăm linh năm đô. Đến hai mươi sáu tháng mười một còn sáu mươi nghìn sáu trăm tám mươi mốt đô, mất hai mươi tư phẩy năm mươi ba phần trăm.",
+    "anh": [],
+    "the": {
+     "loai": "giam",
+     "tieu": "BITCOIN (USD)",
+     "a": [
+      "4/11",
+      80405
+     ],
+     "b": [
+      "26/11",
+      60681
+     ],
+     "dv": "",
+     "dau": "-24,53%",
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "100 TRIỆU CÒN 75",
+    "loi": "Nói dễ hiểu: 100 triệu bỏ vào ngày 4/11, đến 26/11 còn khoảng 75 triệu.",
+    "loi_doc": "Nói dễ hiểu: một trăm triệu bỏ vào ngày bốn tháng mười một, đến hai mươi sáu tháng mười một còn khoảng bảy mươi lăm triệu.",
+    "anh": [],
+    "the": {
+     "loai": "giam",
+     "tieu": "100 TRIỆU MUA NGÀY 4/11",
+     "a": [
+      "4/11",
+      100
+     ],
+     "b": [
+      "26/11",
+      75.5
+     ],
+     "dv": " TR",
+     "dau": "MẤT 1/4",
+     "nguon": "Tính từ dữ liệu chungkhoanhuynguyen.com"
+    }
+   },
+   {
+    "chu_to": "ĐỈNH 86.603 ĐÔ",
+    "loi": "So với đỉnh 86.603 đô ngày 21/9, Bitcoin mất gần 30%. Muốn về lại đỉnh phải tăng hơn 42%.",
+    "loi_doc": "So với đỉnh tám mươi sáu nghìn sáu trăm linh ba đô ngày hai mươi mốt tháng chín, Bitcoin mất gần ba mươi phần trăm. Muốn về lại đỉnh phải tăng hơn bốn mươi hai phần trăm.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "SO VỚI ĐỈNH 21/9",
+     "dong": [
+      [
+       "MẤT GẦN 30%",
+       90,
+       "do"
+      ],
+      [
+       "CẦN TĂNG 42,7%",
+       80,
+       "vang"
+      ]
+     ],
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "SÁT ĐÁY MỘT NĂM",
+    "loi": "Đáy thấp nhất một năm là 58.559 đô. Giá hiện chỉ còn cách đáy khoảng 3,6%.",
+    "loi_doc": "Đáy thấp nhất một năm là năm mươi tám nghìn năm trăm năm mươi chín đô. Giá hiện chỉ còn cách đáy khoảng ba phẩy sáu phần trăm.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "ĐÁY 1 NĂM",
+     "dong": [
+      [
+       "58.559 USD",
+       100,
+       "vang"
+      ],
+      [
+       "CÒN CÁCH 3,6%",
+       60,
+       "trang"
+      ]
+     ],
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "KHÔNG CÓ BIÊN ĐỘ",
+    "loi": "Cổ phiếu sàn Hô-xê có biên độ 7% một phiên, còn Bitcoin không có giới hạn tăng giảm. Bỏ tiền thì nên biết mình chịu được bao nhiêu.",
+    "loi_doc": "Cổ phiếu sàn Hô-xê có biên độ bảy phần trăm một phiên, còn Bitcoin không có giới hạn tăng giảm. Bỏ tiền thì nên biết mình chịu được bao nhiêu.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "KHÁC BIỆT",
+     "dong": [
+      [
+       "HOSE: BIÊN ĐỘ 7%",
+       64,
+       "trang"
+      ],
+      [
+       "BITCOIN: KHÔNG GIỚI HẠN",
+       56,
+       "do"
+      ]
+     ],
+     "nguon": "Quy định HOSE · dữ liệu chungkhoanhuynguyen.com"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Giá Bitcoin, vàng, chứng khoán thế giới cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Giá Bitcoin, vàng, chứng khoán thế giới cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "TIỀN SỐ · VÀNG · THẾ GIỚI",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2611BRENT",
+  "tieu_de": "Dầu Brent 25/11 còn 90,69 USD/thùng: mất 20,36% trong một tháng, thấp hơn đỉnh tháng 3 hơn 23%",
+  "hook": [
+   "DẦU MẤT 20%",
+   "XĂNG CÓ RẺ THEO?"
+  ],
+  "nhan": "TIN NÓNG · 26/11/2026",
+  "short_caption": "Ngày 25/11/2026 dầu Brent ở 90,69 USD/thùng, so với 113,88 USD ngày 26/10 là mất 20,36%; thấp hơn đỉnh 118,35 USD ngày 30/3/2026 khoảng 23,4%. Sáng 26/11 nhóm dầu khí trên HOSE tăng 0,19%. Nguồn: dữ liệu chungkhoanhuynguyen.com.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "DẦU GIẢM, AI ĐƯỢC LỢI?",
+   "loi": "Dầu mất 20% một tháng, anh chị A: mong xăng giảm tiếp, hay B: lo cổ phiếu dầu khí?",
+   "loi_doc": "Dầu mất hai mươi phần trăm một tháng, anh chị A: mong xăng giảm tiếp, hay B: lo cổ phiếu dầu khí?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "DẦU GIẢM, AI ĐƯỢC LỢI?",
+    "dong": [
+     [
+      "A",
+      100,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B?",
+      100,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "MẤT 20,36%",
+    "loi": "Giá dầu thế giới vừa mất một phần năm trong một tháng. Ngày 26/10, dầu Brent 113,88 đô một thùng. Ngày 25/11 còn 90,69 đô.",
+    "loi_doc": "Giá dầu thế giới vừa mất một phần năm trong một tháng. Ngày hai mươi sáu tháng mười, dầu Brent một trăm mười ba phẩy tám mươi tám đô một thùng. Ngày hai mươi lăm tháng mười một còn chín mươi phẩy sáu mươi chín đô.",
+    "anh": [],
+    "the": {
+     "loai": "giam",
+     "tieu": "DẦU BRENT (USD/THÙNG)",
+     "a": [
+      "26/10",
+      113.88
+     ],
+     "b": [
+      "25/11",
+      90.69
+     ],
+     "dv": "",
+     "dau": "-20,36%",
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "ĐỈNH THÁNG 3",
+    "loi": "So với đỉnh 118,35 đô ngày 30/3, dầu Brent đã thấp hơn khoảng 23,4%.",
+    "loi_doc": "So với đỉnh một trăm mười tám phẩy ba mươi lăm đô ngày ba mươi tháng ba, dầu Brent đã thấp hơn khoảng hai mươi ba phẩy bốn phần trăm.",
+    "anh": [],
+    "the": {
+     "loai": "giam",
+     "tieu": "DẦU BRENT TỪ ĐỈNH",
+     "a": [
+      "30/3",
+      118.35
+     ],
+     "b": [
+      "25/11",
+      90.69
+     ],
+     "dv": "",
+     "dau": "-23,4%",
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "MỘT TUẦN ĐI NGANG",
+    "loi": "Nhưng một tuần qua giá chỉ quanh 89 đến 93 đô, giảm 1,37%. Cú rơi lớn đã nằm ở các tuần trước.",
+    "loi_doc": "Nhưng một tuần qua giá chỉ quanh tám mươi chín đến chín mươi ba đô, giảm một phẩy ba mươi bảy phần trăm. Cú rơi lớn đã nằm ở các tuần trước.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "MỘT TUẦN QUA",
+     "dong": [
+      [
+       "-1,37%",
+       120,
+       "vang"
+      ],
+      [
+       "QUANH 89–93 USD",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "DẦU KHÍ VẪN XANH",
+    "loi": "Sáng 26/11, khi cả sàn đỏ, nhóm dầu khí vẫn tăng 0,19%, BSR tăng 0,22%.",
+    "loi_doc": "Sáng hai mươi sáu tháng mười một, khi cả sàn đỏ, nhóm dầu khí vẫn tăng không phẩy mười chín phần trăm, B S R tăng không phẩy hai mươi hai phần trăm.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "SÁNG 26/11 TRÊN HOSE",
+     "dong": [
+      [
+       "DẦU KHÍ +0,19%",
+       76,
+       "vang"
+      ],
+      [
+       "BSR +0,22%",
+       64,
+       "trang"
+      ]
+     ],
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "GIÁ DẦU VÀ TÚI TIỀN",
+    "loi": "Giá dầu chạm tới xăng, vé máy bay, cước vận tải. Giá dầu giảm, ai được lợi, ai bị thiệt, là câu hỏi đáng theo dõi.",
+    "loi_doc": "Giá dầu chạm tới xăng, vé máy bay, cước vận tải. Giá dầu giảm, ai được lợi, ai bị thiệt, là câu hỏi đáng theo dõi.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "GIÁ DẦU CHẠM TỚI",
+     "dong": [
+      [
+       "XĂNG · VÉ MÁY BAY",
+       60,
+       "trang"
+      ],
+      [
+       "CƯỚC VẬN TẢI",
+       60,
+       "vang"
+      ]
+     ],
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Giá dầu, vàng, tỷ giá cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Giá dầu, vàng, tỷ giá cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "HÀNG HÓA THẾ GIỚI",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2611NASDAQ",
+  "tieu_de": "Nasdaq 25/11 còn 23.585 điểm: mất 10,92% trong một tháng, Dow Jones chỉ mất 4,19%",
+  "hook": [
+   "CÔNG NGHỆ MỸ",
+   "MẤT 11% MỘT THÁNG"
+  ],
+  "nhan": "TIN NÓNG · 26/11/2026",
+  "short_caption": "Ngày 25/11/2026 Nasdaq ở 23.585,8 điểm, so với 26.477,81 điểm ngày 27/10 là mất 10,92%; cùng thời gian S&P 500 mất 6,99%, Dow Jones mất 4,19%. Nasdaq thấp hơn đỉnh 27.599,79 (6/10/2026) khoảng 14,5%. Nguồn: dữ liệu chungkhoanhuynguyen.com.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "CÔNG NGHỆ HAY TRUYỀN THỐNG?",
+   "loi": "Anh chị A: vẫn tin cổ phiếu công nghệ, hay B: chuộng nhóm truyền thống hơn?",
+   "loi_doc": "Anh chị A: vẫn tin cổ phiếu công nghệ, hay B: chuộng nhóm truyền thống hơn?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CÔNG NGHỆ HAY TRUYỀN THỐNG?",
+    "dong": [
+     [
+      "A",
+      100,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B?",
+      100,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "MẤT 10,92%",
+    "loi": "Cổ phiếu công nghệ Mỹ đang ra sao? Ngày 27/10, chỉ số Nát-đác ở 26.477 điểm. Ngày 25/11 còn 23.585 điểm, mất 10,92%.",
+    "loi_doc": "Cổ phiếu công nghệ Mỹ đang ra sao? Ngày hai mươi bảy tháng mười, chỉ số Nát-đác ở hai mươi sáu nghìn bốn trăm bảy mươi bảy điểm. Ngày hai mươi lăm tháng mười một còn hai mươi ba nghìn năm trăm tám mươi lăm điểm, mất mười phẩy chín mươi hai phần trăm.",
+    "anh": [],
+    "the": {
+     "loai": "giam",
+     "tieu": "NASDAQ",
+     "a": [
+      "27/10",
+      26477.81
+     ],
+     "b": [
+      "25/11",
+      23585.8
+     ],
+     "dv": " Đ",
+     "dau": "-10,92%",
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "BA CHỈ SỐ MỸ",
+    "loi": "Cùng một tháng, S&P 500 mất 6,99%, Dow Jones chỉ mất 4,19%. Nhóm công nghệ giảm sâu nhất.",
+    "loi_doc": "Cùng một tháng, S và P năm trăm mất sáu phẩy chín mươi chín phần trăm, Đao Giôn chỉ mất bốn phẩy mười chín phần trăm. Nhóm công nghệ giảm sâu nhất.",
+    "anh": [],
+    "the": {
+     "loai": "cot",
+     "tieu": "MỘT THÁNG ĐẾN 25/11 (% GIẢM)",
+     "hang": [
+      [
+       "DOW",
+       4.19
+      ],
+      [
+       "S&P 500",
+       6.99
+      ],
+      [
+       "NASDAQ",
+       10.92
+      ]
+     ],
+     "noi": [
+      2
+     ],
+     "dv": "%",
+     "max": 12,
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "TỪ ĐỈNH 6/10",
+    "loi": "So với đỉnh 27.599 điểm ngày 6/10, Nát-đác thấp hơn khoảng 14,5%, chỉ sau bảy tuần.",
+    "loi_doc": "So với đỉnh hai mươi bảy nghìn năm trăm chín mươi chín điểm ngày sáu tháng mười, Nát-đác thấp hơn khoảng mười bốn phẩy năm phần trăm, chỉ sau bảy tuần.",
+    "anh": [],
+    "the": {
+     "loai": "giam",
+     "tieu": "NASDAQ TỪ ĐỈNH",
+     "a": [
+      "6/10",
+      27599.79
+     ],
+     "b": [
+      "25/11",
+      23585.8
+     ],
+     "dv": " Đ",
+     "dau": "-14,5%",
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "VIỆT NAM THÌ SAO?",
+    "loi": "Sáng 26/11 ở Việt Nam, nhóm công nghệ giảm 0,95%, F P T giảm 0,87%.",
+    "loi_doc": "Sáng hai mươi sáu tháng mười một ở Việt Nam, nhóm công nghệ giảm không phẩy chín mươi lăm phần trăm, F P T giảm không phẩy tám mươi bảy phần trăm.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "SÁNG 26/11 TRÊN HOSE",
+     "dong": [
+      [
+       "CÔNG NGHỆ -0,95%",
+       72,
+       "do"
+      ],
+      [
+       "FPT -0,87%",
+       64,
+       "trang"
+      ]
+     ],
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "CÙNG LÀ CỔ PHIẾU",
+    "loi": "Cùng là chứng khoán Mỹ mà mức giảm chênh nhau gần gấp ba. Chọn nhóm ngành nào nhiều khi quan trọng như chọn lúc vào.",
+    "loi_doc": "Cùng là chứng khoán Mỹ mà mức giảm chênh nhau gần gấp ba. Chọn nhóm ngành nào nhiều khi quan trọng như chọn lúc vào.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "MỘT THÁNG",
+     "dong": [
+      [
+       "DOW -4,19%",
+       64,
+       "trang"
+      ],
+      [
+       "NASDAQ -10,92%",
+       64,
+       "do"
+      ]
+     ],
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Chứng khoán Mỹ và thế giới cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Chứng khoán Mỹ và thế giới cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "CHỨNG KHOÁN THẾ GIỚI",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2611NIKKEI",
+  "tieu_de": "Chứng khoán Nhật 26/11: Nikkei còn 57.889 điểm, thấp hơn đỉnh tháng 6 đúng 20%",
+  "hook": [
+   "NHẬT BẢN",
+   "MẤT 20% TỪ ĐỈNH"
+  ],
+  "nhan": "TIN NÓNG · 26/11/2026",
+  "short_caption": "Ngày 26/11/2026 chỉ số Nikkei 225 ở 57.889,89 điểm, giảm 1,29% so với phiên 24/11 và 7,66% so với 62.693,16 điểm ngày 23/10; thấp hơn đỉnh 72.366,34 điểm (25/6/2026) 20%. Nguồn: dữ liệu chungkhoanhuynguyen.com.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "ANH CHỊ CHỊU ĐƯỢC BAO NHIÊU?",
+   "loi": "Danh mục giảm 20%, anh chị A: vẫn ngủ ngon, hay B: mất ngủ?",
+   "loi_doc": "Danh mục giảm hai mươi phần trăm, anh chị A: vẫn ngủ ngon, hay B: mất ngủ?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "ANH CHỊ CHỊU ĐƯỢC BAO NHIÊU?",
+    "dong": [
+     [
+      "A",
+      100,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B?",
+      100,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "NIKKEI -1,29%",
+    "loi": "Chứng khoán Nhật cũng đang đỏ. Ngày 26/11, chỉ số Nikkei còn 57.889 điểm, giảm 1,29% so với phiên 24/11.",
+    "loi_doc": "Chứng khoán Nhật cũng đang đỏ. Ngày hai mươi sáu tháng mười một, chỉ số Nikkei còn năm mươi bảy nghìn tám trăm tám mươi chín điểm, giảm một phẩy hai mươi chín phần trăm so với phiên hai mươi tư tháng mười một.",
+    "anh": [],
+    "the": {
+     "loai": "giam",
+     "tieu": "NIKKEI 225",
+     "a": [
+      "24/11",
+      58644.63
+     ],
+     "b": [
+      "26/11",
+      57889.89
+     ],
+     "dv": " Đ",
+     "dau": "-1,29%",
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "MỘT THÁNG -7,66%",
+    "loi": "Ngày 23/10, Nikkei còn ở 62.693 điểm. Đến nay mất 7,66%.",
+    "loi_doc": "Ngày hai mươi ba tháng mười, Nikkei còn ở sáu mươi hai nghìn sáu trăm chín mươi ba điểm. Đến nay mất bảy phẩy sáu mươi sáu phần trăm.",
+    "anh": [],
+    "the": {
+     "loai": "giam",
+     "tieu": "NIKKEI MỘT THÁNG",
+     "a": [
+      "23/10",
+      62693.16
+     ],
+     "b": [
+      "26/11",
+      57889.89
+     ],
+     "dv": " Đ",
+     "dau": "-7,66%",
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "ĐÚNG 20% TỪ ĐỈNH",
+    "loi": "Đỉnh cao nhất là 72.366 điểm ngày 25/6. So với đỉnh, Nikkei đã thấp hơn đúng 20%.",
+    "loi_doc": "Đỉnh cao nhất là bảy mươi hai nghìn ba trăm sáu mươi sáu điểm ngày hai mươi lăm tháng sáu. So với đỉnh, Nikkei đã thấp hơn đúng hai mươi phần trăm.",
+    "anh": [],
+    "the": {
+     "loai": "giam",
+     "tieu": "NIKKEI TỪ ĐỈNH",
+     "a": [
+      "25/6",
+      72366.34
+     ],
+     "b": [
+      "26/11",
+      57889.89
+     ],
+     "dv": " Đ",
+     "dau": "-20%",
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "CẦN TĂNG 25%",
+    "loi": "Mất 20% thì phải tăng 25% mới về lại đỉnh. Mất càng sâu, đường về càng dài.",
+    "loi_doc": "Mất hai mươi phần trăm thì phải tăng hai mươi lăm phần trăm mới về lại đỉnh. Mất càng sâu, đường về càng dài.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "BÀI TOÁN VỀ BỜ",
+     "dong": [
+      [
+       "MẤT 20%",
+       90,
+       "do"
+      ],
+      [
+       "CẦN TĂNG 25%",
+       90,
+       "vang"
+      ]
+     ],
+     "nguon": "Tính từ dữ liệu chungkhoanhuynguyen.com"
+    }
+   },
+   {
+    "chu_to": "CẢ CHÂU Á ĐỎ",
+    "loi": "Sáng 26/11, Hàn Quốc, Nhật Bản và Việt Nam cùng đỏ. Khi cả khu vực cùng chiều, biết mình chịu được mức giảm bao nhiêu quan trọng hơn đoán đáy.",
+    "loi_doc": "Sáng hai mươi sáu tháng mười một, Hàn Quốc, Nhật Bản và Việt Nam cùng đỏ. Khi cả khu vực cùng chiều, biết mình chịu được mức giảm bao nhiêu quan trọng hơn đoán đáy.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "SÁNG 26/11",
+     "dong": [
+      [
+       "NHẬT · HÀN · VIỆT NAM",
+       60,
+       "trang"
+      ],
+      [
+       "CÙNG GIẢM",
+       80,
+       "do"
+      ]
+     ],
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Chứng khoán châu Á cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Chứng khoán châu Á cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "CHỨNG KHOÁN THẾ GIỚI",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2611TIEUDUNG",
+  "tieu_de": "Sáng 26/11 cả sàn đỏ, 266 mã giảm: nhóm tiêu dùng vẫn tăng 0,63%, MCH góp 0,54 điểm",
+  "hook": [
+   "266 MÃ ĐỎ",
+   "AI VẪN XANH?"
+  ],
+  "nhan": "TIN NÓNG · 26/11/2026",
+  "short_caption": "Lúc 9 giờ 57 sáng 26/11/2026 trên HOSE, nhóm tiêu dùng tăng 0,63% trong khi bảo hiểm giảm 3,25%, bất động sản giảm 1,4%; MCH tăng 1,54% góp 0,54 điểm, VNM tăng 1,14% góp 0,25 điểm cho VN-Index. Nguồn: dữ liệu chungkhoanhuynguyen.com.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "TIÊU DÙNG HAY NHÓM KHÁC?",
+   "loi": "Ngày đỏ, anh chị A: thích nhóm tiêu dùng an toàn, hay B: canh nhóm giảm mạnh?",
+   "loi_doc": "Ngày đỏ, anh chị A: thích nhóm tiêu dùng an toàn, hay B: canh nhóm giảm mạnh?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "TIÊU DÙNG HAY NHÓM KHÁC?",
+    "dong": [
+     [
+      "A",
+      100,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B?",
+      100,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "AI VẪN XANH?",
+    "loi": "Sáng 26/11, 266 mã giảm. Vậy tiền đang trú ở đâu? Lúc 9 giờ 57, nhóm tiêu dùng vẫn tăng 0,63%, đứng đầu các ngành.",
+    "loi_doc": "Sáng hai mươi sáu tháng mười một, hai trăm sáu mươi sáu mã giảm. Vậy tiền đang trú ở đâu? Lúc chín giờ năm mươi bảy, nhóm tiêu dùng vẫn tăng không phẩy sáu mươi ba phần trăm, đứng đầu các ngành.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "NGÀNH TĂNG MẠNH NHẤT 9G57",
+     "dong": [
+      [
+       "TIÊU DÙNG +0,63%",
+       80,
+       "vang"
+      ],
+      [
+       "DẦU KHÍ +0,19%",
+       60,
+       "trang"
+      ]
+     ],
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "MCH GÓP 0,54 ĐIỂM",
+    "loi": "M C H tăng 1,54%, góp 0,54 điểm cho VN-Index, nhiều nhất sàn. V N M tăng 1,14%, góp 0,25 điểm. S A B tăng 0,68%.",
+    "loi_doc": "M C H tăng một phẩy năm mươi tư phần trăm, góp không phẩy năm mươi tư điểm cho V N Index, nhiều nhất sàn. V N M tăng một phẩy mười bốn phần trăm, góp không phẩy hai mươi lăm điểm. S A B tăng không phẩy sáu mươi tám phần trăm.",
+    "anh": [],
+    "the": {
+     "loai": "cot",
+     "tieu": "TĂNG SÁNG 26/11 (%)",
+     "hang": [
+      [
+       "SAB",
+       0.68
+      ],
+      [
+       "VNM",
+       1.14
+      ],
+      [
+       "MCH",
+       1.54
+      ]
+     ],
+     "noi": [
+      2
+     ],
+     "dv": "%",
+     "max": 2,
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "BẢO HIỂM -3,25%",
+    "loi": "Ngược lại, bảo hiểm giảm mạnh nhất, 3,25%, B V H giảm 3,34%. Bất động sản giảm 1,4%.",
+    "loi_doc": "Ngược lại, bảo hiểm giảm mạnh nhất, ba phẩy hai mươi lăm phần trăm, B V H giảm ba phẩy ba mươi tư phần trăm. Bất động sản giảm một phẩy bốn phần trăm.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "NGÀNH GIẢM MẠNH NHẤT 9G57",
+     "dong": [
+      [
+       "BẢO HIỂM -3,25%",
+       80,
+       "do"
+      ],
+      [
+       "BẤT ĐỘNG SẢN -1,4%",
+       60,
+       "trang"
+      ]
+     ],
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "MẶT HÀNG THIẾT YẾU",
+    "loi": "Sữa, bia, mì gói là thứ người ta vẫn mua dù thị trường lên hay xuống. Ngày đỏ, dòng tiền hay tìm về những nhóm như vậy.",
+    "loi_doc": "Sữa, bia, mì gói là thứ người ta vẫn mua dù thị trường lên hay xuống. Ngày đỏ, dòng tiền hay tìm về những nhóm như vậy.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "NHÓM TIÊU DÙNG",
+     "dong": [
+      [
+       "SỮA · BIA · MÌ GÓI",
+       64,
+       "vang"
+      ],
+      [
+       "VẪN BÁN ĐƯỢC HÀNG",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "MỚI GIỮA PHIÊN",
+    "loi": "Đây là số lúc 9 giờ 57, chưa hết phiên. Một buổi sáng xanh chưa nói lên cả năm.",
+    "loi_doc": "Đây là số lúc chín giờ năm mươi bảy, chưa hết phiên. Một buổi sáng xanh chưa nói lên cả năm.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "LƯU Ý",
+     "dong": [
+      [
+       "SỐ GIỮA PHIÊN",
+       80,
+       "vang"
+      ],
+      [
+       "CHƯA HẾT NGÀY",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Bản đồ ngành mỗi phiên cập nhật trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Bản đồ ngành mỗi phiên cập nhật trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "BẢN ĐỒ NGÀNH",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2611LOISUAT",
+  "tieu_de": "Lợi suất trái phiếu Mỹ 10 năm 25/11 còn 4,848%: thấp nhất trong tháng, cách đỉnh 5,311% ngày 5/10",
+  "hook": [
+   "MỸ TRẢ 4,85%/NĂM",
+   "TIỀN CHẠY ĐI ĐÂU?"
+  ],
+  "nhan": "TIN NÓNG · 26/11/2026",
+  "short_caption": "Ngày 25/11/2026 lợi suất trái phiếu chính phủ Mỹ kỳ hạn 10 năm ở 4,848%, giảm từ 4,993% ngày 27/10 và từ đỉnh 5,311% ngày 5/10/2026; chỉ số USD (DXY) 103,75 điểm. Nguồn: dữ liệu chungkhoanhuynguyen.com.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "4,85% HAY CỔ PHIẾU?",
+   "loi": "Nếu được chọn, anh chị A: nhận chắc 4,85% một năm, hay B: chấp nhận rủi ro cổ phiếu?",
+   "loi_doc": "Nếu được chọn, anh chị A: nhận chắc bốn phẩy tám mươi lăm phần trăm một năm, hay B: chấp nhận rủi ro cổ phiếu?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "4,85% HAY CỔ PHIẾU?",
+    "dong": [
+     [
+      "A",
+      100,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B?",
+      100,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "4,848% MỘT NĂM",
+    "loi": "Cho chính phủ Mỹ vay mười năm, mỗi năm nhận bao nhiêu? Ngày 25/11, lợi suất trái phiếu Mỹ kỳ hạn mười năm là 4,848%.",
+    "loi_doc": "Cho chính phủ Mỹ vay mười năm, mỗi năm nhận bao nhiêu? Ngày hai mươi lăm tháng mười một, lợi suất trái phiếu Mỹ kỳ hạn mười năm là bốn phẩy tám trăm bốn mươi tám phần trăm.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "TRÁI PHIẾU MỸ 10 NĂM · 25/11",
+     "dong": [
+      [
+       "4,848%",
+       130,
+       "vang"
+      ],
+      [
+       "MỖI NĂM",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "ĐỈNH 5,311%",
+    "loi": "Ngày 5/10, con số này từng lên 5,311%. Ngày 27/10 còn 4,993%. Đến 25/11 xuống 4,848%.",
+    "loi_doc": "Ngày năm tháng mười, con số này từng lên năm phẩy ba trăm mười một phần trăm. Ngày hai mươi bảy tháng mười còn bốn phẩy chín trăm chín mươi ba phần trăm. Đến hai mươi lăm tháng mười một xuống bốn phẩy tám trăm bốn mươi tám phần trăm.",
+    "anh": [],
+    "the": {
+     "loai": "giam",
+     "tieu": "LỢI SUẤT MỸ 10 NĂM",
+     "a": [
+      "5/10",
+      5.311
+     ],
+     "b": [
+      "25/11",
+      4.848
+     ],
+     "dv": "%",
+     "dau": "GIẢM DẦN",
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "VÌ SAO QUAN TRỌNG?",
+    "loi": "Đây là mức lãi gần như không rủi ro. Nó cao, tiền lớn ở lại Mỹ. Nó hạ, tiền có lý do đi tìm cổ phiếu.",
+    "loi_doc": "Đây là mức lãi gần như không rủi ro. Nó cao, tiền lớn ở lại Mỹ. Nó hạ, tiền có lý do đi tìm cổ phiếu.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "LỢI SUẤT MỸ",
+     "dong": [
+      [
+       "CAO: TIỀN Ở LẠI MỸ",
+       56,
+       "do"
+      ],
+      [
+       "HẠ: TIỀN ĐI TÌM CƠ HỘI",
+       56,
+       "vang"
+      ]
+     ],
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "ĐÔ LA 103,75",
+    "loi": "Chỉ số đô la Mỹ ngày 25/11 ở 103,75 điểm, gần như đứng yên trong một tuần.",
+    "loi_doc": "Chỉ số đô la Mỹ ngày hai mươi lăm tháng mười một ở một trăm linh ba phẩy bảy mươi lăm điểm, gần như đứng yên trong một tuần.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "CHỈ SỐ USD (DXY) · 25/11",
+     "dong": [
+      [
+       "103,75 ĐIỂM",
+       110,
+       "vang"
+      ],
+      [
+       "1 TUẦN -0,11%",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "CHƯA PHẢI CÂU TRẢ LỜI",
+    "loi": "Lợi suất hạ chưa có nghĩa thị trường tăng ngay. Sáng 26/11, VN-Index vẫn giảm 0,96%.",
+    "loi_doc": "Lợi suất hạ chưa có nghĩa thị trường tăng ngay. Sáng hai mươi sáu tháng mười một, V N Index vẫn giảm không phẩy chín mươi sáu phần trăm.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "SÁNG 26/11",
+     "dong": [
+      [
+       "VN-INDEX -0,96%",
+       72,
+       "do"
+      ],
+      [
+       "MỘT MẢNH GHÉP",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "Dữ liệu chungkhoanhuynguyen.com, 26/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Lãi suất, tỷ giá thế giới cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Lãi suất, tỷ giá thế giới cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VĨ MÔ THẾ GIỚI",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ }
+]
