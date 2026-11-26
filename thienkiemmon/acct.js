@@ -132,7 +132,7 @@ var TKACCT = (function () {
     var b = show(h);
     b.querySelectorAll('.ch').forEach(function (el) { el.onclick = function (ev) { if (ev.target.dataset.del) return; pick(+el.dataset.i); }; });
     b.querySelectorAll('[data-del]').forEach(function (el) { el.onclick = function () { var i = +el.dataset.del; if (!confirm('Xóa vĩnh viễn nhân vật "' + (cs[i].name || '') + '"?')) return; cs[i] = null; while (cs.length && !cs[cs.length - 1]) cs.pop(); writeProf(); charView(); }; });
-    var nb = b.querySelector('#anew'); if (nb) nb.onclick = function () { var i = cs.findIndex(function (c) { return !c; }); if (i < 0) i = cs.length; ss('tkm_slot', user.uid + ':' + i); ss('tkm_new', '1'); restore(null); location.reload(); };
+    var nb = b.querySelector('#anew'); if (nb) nb.onclick = function () { var i = cs.findIndex(function (c) { return !c; }); if (i < 0) i = cs.length; ss('tkm_slot', user.uid + ':' + i); ss('tkm_new', '1'); ss('tkm_auto', '1'); restore(null); location.reload(); };
     b.querySelector('#aout').onclick = function () { ls('tkm_auth', null); user = null; prof = null; tok = null; ss('tkm_slot', null); loginView(); };
   }
   function pick(i) { ss('tkm_slot', user.uid + ':' + i); ss('tkm_new', null); ss('tkm_auto', '1'); restore(prof.chars[i].save); location.reload(); }
@@ -140,12 +140,14 @@ var TKACCT = (function () {
   function boot() {
     if (/noacct/.test(location.search)) return;
     var s = ss('tkm_slot');
-    if (s === 'off') { hide(); return; }
+    /* 26/11: tải lại trang (F5) thì về màn chọn máy chủ / nhân vật — chỉ vào thẳng game ngay sau khi vừa bấm chọn hoặc tạo nhân vật */
+    if (s === 'off') { ss('tkm_slot', null); s = null; }
+    if (s && s.indexOf(':') > 0 && ss('tkm_auto') !== '1') { ss('tkm_slot', null); ss('tkm_new', null); s = null; }
     if (s && s.indexOf(':') > 0) {
       show('<h2>Huyền Kiếm Tiên Đồ</h2><div class="sub">Đang vào thế giới…</div>');
       var uid = s.split(':')[0], i = +s.split(':')[1];
       resume().then(function () { if (user.uid !== uid) throw err('NO_SESSION'); return readProf(); }).then(function () {
-        slot = i; hide(); if (window.TKGAME && window.TKGAME.ready) window.TKGAME.ready(ss('tkm_new') === '1', ss('tkm_auto') === '1'); ss('tkm_auto', null);
+        slot = i; hide(); if (window.TKGAME && window.TKGAME.ready) window.TKGAME.ready(ss('tkm_new') === '1', ss('tkm_auto') === '1'); ss('tkm_auto', null); ss('tkm_new', null);
       }).catch(function () { ss('tkm_slot', null); loginView('Phiên đăng nhập đã hết, hãy đăng nhập lại.'); });
       return;
     }
