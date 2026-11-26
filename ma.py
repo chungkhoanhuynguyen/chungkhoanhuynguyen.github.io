@@ -158,6 +158,11 @@ for s in SYMS:
            (f"{s} có trả cổ tức không?", f"Tỷ suất cổ tức gần đây khoảng {nf(dy,1)}%." if dy else f"Chưa ghi nhận cổ tức tiền mặt gần đây của {s} trong dữ liệu."),
            (f"Có nên mua cổ phiếu {s} không?", f"Trang này không đưa khuyến nghị mua bán. Quyết định nên dựa trên định giá, kết quả kinh doanh, xu hướng giá và khẩu vị rủi ro của từng người. Khách hàng có thể hỏi chuyên sâu về {s} ở mục Hỏi đáp PRO hoặc trao đổi 1:1 với Huy Nguyễn.")]
     faq = bfaq + faq
+    # NV2 26/11 (seo_uu_tien_2611): từ khoá dài ít đối thủ từ thẻ Soi 3 dòng → hỏi đáp riêng từng mã + dẫn trang trụ
+    _s3 = soi3.tinh(s, BT) if BT else None
+    if _s3:
+        _q3 = {"Lỗ lũy kế so với vốn góp": f"{s} có lỗ lũy kế không?", "Lãi vay so với lợi nhuận trước lãi vay và thuế": f"Lãi vay {s} chiếm bao nhiêu lợi nhuận?", "Dòng tiền từ hoạt động kinh doanh": f"Dòng tiền kinh doanh {s} âm hay dương?"}
+        faq = [(_q3[r3["ten"]], (f"{r3['so']} ({r3['ky']}). " if r3.get("so") and r3["so"] != "–" else "") + r3["cau"]) for r3 in _s3["rows"] if r3["ten"] in _q3 and r3.get("den") not in ("xam", "na")] + faq
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": B + "/"},
             {"@type": "ListItem", "position": 2, "name": "Mã cổ phiếu", "item": B + "/ma/"}, {"@type": "ListItem", "position": 3, "name": f"Cổ phiếu {s}", "item": url}]},
@@ -168,8 +173,7 @@ for s in SYMS:
          f'<div class="bc"><a href="/">Trang chủ</a> › <a href="/ma/">Mã cổ phiếu</a> › {e(s)}</div>',
          f'<h1>Cổ phiếu {e(s)}' + (f' – {e(name)}' if name != s else '') + f'</h1><div class="meta">Sàn {ex} · cập nhật {dmy(last)} · giá điều chỉnh, nghìn đồng</div>'+f'<div id="rtpx" data-s="{e(s)}" hidden style="margin:8px 0 14px;padding:10px 14px;border:1px solid var(--line);border-radius:10px;font-size:16px"></div><script src="/rtma.js" defer></script>',
          f"<p>{intro}</p>"]
-    _s3 = soi3.tinh(s, BT) if BT else None
-    if _s3: P.append(soi3.the_html(_s3)); N3.append(s)
+    if _s3: P.append(soi3.the_html(_s3) + '<p class="s3k" style="font-size:14px">Đọc thêm 3 dòng được soi: <a href="/f0/lo-luy-ke-la-gi.html">lỗ lũy kế là gì</a> · <a href="/f0/dong-tien-kinh-doanh-la-gi.html">dòng tiền kinh doanh âm là gì</a> · <a href="/f0/chi-phi-lai-vay-la-gi.html">lãi vay ăn bao nhiêu lợi nhuận</a></p>'); N3.append(s)
     else: P.append(f'<section class="s3" id="soi3" aria-label="Gửi mã {e(s)} để soi"><h2>Soi báo cáo tài chính {e(s)}</h2><p class="s3k">Mã này chưa đủ dữ liệu để chấm đèn Soi 3 dòng tự động.</p>'
                   f'<p class="s3g">Cần xem kỹ? <button type="button" data-soima="{e(s)}">Gửi mã này để em soi cùng</button> <span class="s3t" aria-live="polite"></span></p></section>')  # A2 26/11: mọi trang mã đều có ô gửi mã
     if val: P.append("<p>Về định giá: " + "; ".join(e(v) for v in val) + ".</p>")
