@@ -1,0 +1,1 @@
+NONG2611A | 1:9 2:9 3:9 4:9 5:9 6:9 7:9 8:9 9:9 10:9 | đã soát V1 V2 (V1 whisper bắt 3 số: '1 tỷ 80 triệu', 'năm 2025', phụ đề '2 phần ba' → V2 đổi lời; V2 QC 0 LỖI, whisper khớp mọi số, -11,2 LUFS, 6:51; Gemini lite báo 'người thật' ở V1 là nhầm (chỉ skyline + giấy/điện thoại); chấm chéo khán giả 6,5→7,5, thám tử 7,5→9) – NV1B 26/11 10:20
