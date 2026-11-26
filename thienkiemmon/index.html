@@ -4814,6 +4814,24 @@ try{(function(){
  scene.onAfterRender=function(r,s,c){if(off&&c){c.position.sub(off);c.updateMatrixWorld();off=null}if(_oa)_oa.apply(this,arguments)};
  window.__hf={flung,hits};
 })()}catch(e){console.warn('hitfeel',e)}
+/* ===== ĐỒ RƠI NHÌN LÀ THÈM (26/11): đồ Hoàng/Xích/Bạch Ngân do mình đánh rơi có cột sáng cao gấp đôi–ba nhìn từ xa, chữ lớn giữa màn hình + tiếng riêng + kênh thế giới báo tên, bot xin xỏ/ghen tị; linh thạch & tinh hoa tự bay về người trong 6 bước ===== */
+try{(function(){
+ const st=document.createElement('style');st.textContent='#rdrop{position:fixed;left:50%;top:30%;transform:translate(-50%,-50%) scale(.6);z-index:42;pointer-events:none;opacity:0;text-align:center;font:900 26px "Noto Serif",serif;letter-spacing:2px;white-space:nowrap;transition:opacity .25s,transform .35s cubic-bezier(.2,1.6,.4,1)}#rdrop.on{opacity:1;transform:translate(-50%,-50%) scale(1)}#rdrop small{display:block;font:700 13px "Noto Serif",serif;letter-spacing:.5px;margin-top:2px;color:#fff3d0;text-shadow:0 1px 3px #000}body.touch #rdrop{font-size:20px}';document.head.appendChild(st);
+ const rd=document.createElement('div');rd.id='rdrop';document.body.appendChild(rd);let rdT=0;
+ const _di=dropItem;dropItem=function(p,it,owner){const r=_di.apply(this,arguments);try{const g=ground[ground.length-1];if(!g||g.it!==it||!it||it.tier<4)return r;
+   const pil=g.m.userData.pil;if(pil)pil.scale.y*=it.tier>=6?3:it.tier>=5?2.4:1.8;
+   const mine=!owner&&p&&heroPos().distanceTo(p)<35&&!BC.in;if(!mine)return r;
+   const nm=TIERS[it.tier][0],c=it.tier===6?'#ffffff':TIERS[it.tier][1];
+   rd.innerHTML='<span style="color:'+c+';text-shadow:0 0 14px '+c+',0 0 3px #000,0 3px 4px #000">★ RƠI ĐỒ '+nm.toUpperCase()+' ★</span><small>'+esc(it.name)+'</small>';rd.classList.add('on');clearTimeout(rdT);rdT=setTimeout(()=>rd.classList.remove('on'),2600);
+   try{sfx('magic');setTimeout(()=>sfx('coin'),180);setTimeout(()=>sfx('coin'),360)}catch(_){}
+   try{ring(g.m.position,new T.Color(c).getHex(),3+it.tier*.4,.7)}catch(_){}
+   if(it.tier>=5){try{chat0('<span style="color:#ffd36b">[Hệ thống]</span> Chúc mừng <b>'+esc(LOOK.name)+'</b> đánh rơi '+(window.itLink?itLink(it):'<b>'+esc(it.name)+'</b>')+'!','');
+    const B=ents.filter(e=>e.team==='bot'&&!e.dead&&e.name&&!e.guard);if(B.length&&Math.random()<.8){const b=pick(B);setTimeout(()=>chat0('<span class="n">'+esc(b.name)+'</span>: '+pick(['vcl đồ '+nm.toLowerCase()+' kìa','đỏ thế ae','cho xin đi bro','số đỏ v','t cày cả tuần ko ra cái nào','hên vl','bán ko bro','gato vl']),''),5000+Math.random()*6000)}}catch(_){}}
+  }catch(_){}return r};
+ /* nam châm linh thạch / tinh hoa trong 6 bước */
+ setInterval(()=>{try{if(hero.dead||creating)return;const hp=heroPos();for(const d of drops){if(d.lost||d.t<.6)continue;const q=d.m.position,dd=Math.hypot(q.x-hp.x,q.z-hp.z);if(dd<6&&dd>1.5){q.x+=(hp.x-q.x)*.18;q.z+=(hp.z-q.z)*.18;q.y+=((hp.y+1)-q.y)*.18}}}catch(_){}},50);
+ window.__ld={rd};
+})()}catch(e){console.warn('loot2',e)}
 window.__wp={renderer,T,WEAPONS,fabaoModel,TIERS,FBE,RT,VB:()=>VB,hero:()=>hero,TD:{tdKiem,tdXuan,tdBang,tdAn,swordRain,phoenix,tornado,maVortex,dQi:()=>dragonE('qi'),dTh:()=>dragonE('thunder'),dFi:()=>dragonE('fire'),dBl:()=>dragonE('blood'),vortex:()=>{const T0=performance.now();maVortex();return performance.now()-T0},ice:()=>{const t=TU.tong,r=TU.realm,l=TU.learned;TU.tong='thuy';TU.realm=4;TU.learned=['Huyền Băng Trảm','Băng Phong Vạn Lý'];hero.mp=100;P.cds[1]=0;try{_useSkill(1+'')}finally{TU.tong=t;TU.realm=r;TU.learned=l}}},TU:()=>TU};setTimeout(()=>{if(typeof TKACCT!=='undefined')TKACCT.boot()},0);
 window.__demo={closeInv:()=>closeInv(),castAt:(id,x,z)=>{const h=heroPos(),o=h.clone(),f=hero.face;h.x=x;h.z=z;hero.face=Math.random()*6.28;try{castCP(id,true)}catch(e){}h.copy(o);hero.face=f},BF,bfJoin,bfBuild,allEnts:()=>ents,ICL:()=>ICL,equipWeapon:(a,b)=>equipWeapon(a,b),wearBest,equip:i=>{equip.silent=1;try{equip(i)}finally{equip.silent=0}},heroPos,TRIB:()=>TRIB,addCorpse,deathDrop,ents:()=>ents,foe:e=>foe(e),castCP,CP,mkBook,learnBook,P2P,NET,itemCard,optHTML,onHunt,rankTick,RANK,WFALL,castFX,VILLC:()=>window.__vc,tribGo,tribReady,needXp,bankPanel,CG,titles,leaveBC,zoneStream,ZPOP,GANGS,PARTY,ptInvite,hit,NET,netUpd,CORPSE,goInt,toggleFly,updFabao,GARR,WFIX,spawnMon,EV,EVT,npcAct,openInv,SQUADS:()=>SQUADS,CIT:()=>CIT,MUS,PK,togglePK,callReinf,maAct,gainXp,realmText,updPK,INV,BC,mkItem,dropItem,enterBC,TU,refreshTL,bloom:()=>bloom,LOOK,buildAvatar,setSW:(a,b,c)=>{hero.vw&&hero.vw.rotation.set(a,b,c)},hero,P,useSkill,ents,setView:(y,p,d)=>{yaw=y;pitch=p;dist=d}};
 }
