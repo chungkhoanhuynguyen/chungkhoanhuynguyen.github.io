@@ -111,7 +111,7 @@ def tinh(s, B):
 
 
 CSS = (".s3{margin:16px 0 20px;padding:14px 16px;border:1px solid var(--line,#e3dfe9);border-radius:12px;background:var(--panel,#fff);max-width:100%;box-sizing:border-box}"
-       ".s3 h2{margin:0 0 2px;font-size:19px}.s3 .s3k{margin:0 0 8px;color:var(--mute,#5f5a69);font-size:13px}"
+       ".s3 h2{margin:0 0 2px;font-size:19px;border-top:0;padding-top:0}.s3 .s3k{margin:0 0 8px;color:var(--mute,#5f5a69);font-size:13px}"
        ".s3 ul{list-style:none;margin:0;padding:0}.s3 li{display:flex;gap:10px;padding:10px 0;border-top:1px solid var(--line,#e3dfe9)}"
        ".s3 li:first-child{border-top:0}.s3 i{flex:none;width:14px;height:14px;border-radius:50%;margin-top:4px;background:#9a95a3}"
        ".s3 .xanh i{background:#0a8a4a}.s3 .vang i{background:#e0a419}.s3 .do i{background:#c0392b}.s3 .na i{background:transparent;border:2px solid #b9b4c2;box-sizing:border-box}"
@@ -119,7 +119,7 @@ CSS = (".s3{margin:16px 0 20px;padding:14px 16px;border:1px solid var(--line,#e3
        ".s3 .xanh .s3d{color:#0a6a3a;background:#e6f3ec}.s3 .vang .s3d{color:#7a5a06;background:#fbf1d6}.s3 .do .s3d{color:#a12e22;background:#fbeceb}"
        ".s3 .s3s{font-variant-numeric:tabular-nums;font-weight:600;font-size:14px;margin:2px 0;overflow-wrap:anywhere}.s3 p{margin:2px 0;font-size:14px;line-height:1.5}.s3 small{color:var(--mute,#5f5a69);font-size:12px}"
        ".s3 .s3g{margin:10px 0 0;padding-top:10px;border-top:1px dashed var(--line,#e3dfe9);font-size:14px}"
-       ".s3 .s3g button{border:0;background:none;padding:0;color:var(--acc,#6a2d86);font:700 14px inherit;font-family:inherit;text-decoration:underline;cursor:pointer;text-align:left}")
+       ".s3 .s3g button{border:0;background:none;padding:0;color:var(--acc,#6a2d86);font-weight:700;font-size:14px;font-family:inherit;text-decoration:underline;cursor:pointer;text-align:left}")
 
 
 def the_html(o, h="h2"):

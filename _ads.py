@@ -79,3 +79,33 @@ for d, ds, fs in os.walk(ROOT):
         s = csp_ga(s)
         if s != s0: open(p, 'w', encoding='utf-8').write(s); g += 1
 print("gan GA4", g, "trang")
+
+# (26/11 Phòng Web, soát điện thoại) Nút/link chạm <24px trên khổ điện thoại: chữ F0 ở thanh menu, mã CP trong bảng/đoạn
+# "Mã cổ phiếu khác", chữ cái mục lục Từ điển F0, link chủ đề chân trang. Sửa gốc 1 chỗ: gắn 1 khối CSS chung mọi trang.
+TAP = ('<style id="tap24">@media(max-width:760px){.nav a{display:inline-block;padding:6px 0;min-width:24px;text-align:center}'
+       'td a[href^="/ma/"],p a[href^="/ma/"],li a[href^="/ma/"],.az a{display:inline-block;min-width:24px;min-height:24px;line-height:24px;text-align:center}'
+       '.meta a[href^="#k"]{display:inline-block;min-width:24px;min-height:24px;line-height:24px;text-align:center}'
+       '.kw a{display:inline-block;padding:5px 0}}</style>\n')
+t = 0
+for d, ds, fs in os.walk(ROOT):
+    ds[:] = [x for x in ds if not x.startswith(('.', '_')) and x not in ('node_modules', 'nhandinhthitruong', 'thienkiemmon', 'thuthanhlacduong')]
+    for f in fs:
+        if not f.endswith('.html'): continue
+        p = os.path.join(d, f); s = open(p, encoding='utf-8', errors='ignore').read(); s0 = s
+        if '</head>' not in s or TAP in s: continue
+        s = re.sub(r'<style id="tap24">.*?</style>\n?', '', s, flags=re.S)
+        s = s.replace('</head>', TAP + '</head>', 1)
+        if s != s0: open(p, 'w', encoding='utf-8').write(s); t += 1
+print("gan CSS cham 24px", t, "trang")
+
+# A3 (26/11 Phòng Web): thanh "Nhắn Zalo" + "Soi mã miễn phí" cố định đáy màn hình điện thoại – /hnbar.js mọi trang nội dung.
+BAR = '<script src="/hnbar.js" defer></script>\n'
+nb = 0
+for d, ds, fs in os.walk(ROOT):
+    ds[:] = [x for x in ds if not x.startswith(('.', '_')) and x not in ('node_modules', 'nhandinhthitruong', 'thienkiemmon', 'thuthanhlacduong', 'game', 'loanthelanhchua')]
+    for f in fs:
+        if not f.endswith('.html'): continue
+        p = os.path.join(d, f); s = open(p, encoding='utf-8', errors='ignore').read()
+        if '/hnbar.js' in s or '</head>' not in s: continue
+        s = s.replace('</head>', BAR + '</head>', 1); open(p, 'w', encoding='utf-8').write(s); nb += 1
+print("gan thanh nut day", nb, "trang")

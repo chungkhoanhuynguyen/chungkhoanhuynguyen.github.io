@@ -170,6 +170,8 @@ for s in SYMS:
          f"<p>{intro}</p>"]
     _s3 = soi3.tinh(s, BT) if BT else None
     if _s3: P.append(soi3.the_html(_s3)); N3.append(s)
+    else: P.append(f'<section class="s3" id="soi3" aria-label="Gửi mã {e(s)} để soi"><h2>Soi báo cáo tài chính {e(s)}</h2><p class="s3k">Mã này chưa đủ dữ liệu để chấm đèn Soi 3 dòng tự động.</p>'
+                  f'<p class="s3g">Cần xem kỹ? <button type="button" data-soima="{e(s)}">Gửi mã này để em soi cùng</button> <span class="s3t" aria-live="polite"></span></p></section>')  # A2 26/11: mọi trang mã đều có ô gửi mã
     if val: P.append("<p>Về định giá: " + "; ".join(e(v) for v in val) + ".</p>")
     P.append("<h2>Chỉ số chính của " + e(s) + "</h2><table class='mt'>" + "".join(f"<tr><td>{e(a)}</td><td class='r'><b>{e(bv)}</b></td><td class='n'>{e(cv)}</td></tr>" for a, bv, cv in rows) + "</table>")
     if k and k.get("h"):
@@ -374,8 +376,24 @@ if len(TOM) >= 20:
             "<p><small class='n'>LNST = lợi nhuận sau thuế công ty mẹ. ROE tính trên lợi nhuận 4 quý gần nhất / vốn chủ sở hữu. Số liệu tham khảo, không phải khuyến nghị mua bán. Đọc thêm <a href='/f0/cach-doc-bao-cao-tai-chinh.html'>cách đọc báo cáo tài chính</a>.</small></p>"]
     EXTRA.append(page("ket-qua-kinh-doanh-quy.html", tl[:68] + " | Chứng Khoán Huy Nguyễn", ds[:158], tl, body,
                       [{"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqk]}]))
+# A5 (26/11 Phòng Web) Trang chốt /soi-ma-mien-phi.html cho mô tả video, Shorts: gõ mã → thẻ Soi 3 dòng (soima.js đọc data/bctc/_soi.bin) → gửi Zalo.
+_n3 = len(hncodec.load(os.path.join(ROOT, "data/bctc/_soi.bin"), {}) or {})
+body = ["<p>Anh chị đang cầm mã nào? Gõ mã vào ô dưới: web hiện ngay <b>Soi 3 dòng</b>, đèn xanh, vàng, đỏ cho 3 dòng báo cáo tài chính hay giấu rủi ro nhất. "
+        f"Đọc xong vẫn rối thì bấm <b>Gửi qua Zalo</b>, em xem cùng anh chị, miễn phí. Hiện có dữ liệu cho {_n3} mã.</p>",
+        "<form class='soima' id='soima' autocomplete='off'><label for='soima-m'>Mã cổ phiếu</label><div class='soima-r'><input id='soima-m' name='ma' maxlength='6' placeholder='VD: HPG' required pattern='[A-Za-z0-9]{3,6}' autocapitalize='characters' inputmode='text'><button type='submit'>Gửi qua Zalo</button></div><p id='soima-t' aria-live='polite'></p></form>",
+        "<div id='soima-o' aria-live='polite'></div>",
+        "<h2>3 dòng được soi là gì?</h2><ol><li><b>Lỗ lũy kế so với vốn góp</b>: lỗ cộng dồn đã ăn vào bao nhiêu phần vốn chủ bỏ ra.</li><li><b>Lãi vay so với lợi nhuận trước lãi vay và thuế</b>: tiền lời làm ra phải trả ngân hàng bao nhiêu.</li><li><b>Dòng tiền kinh doanh 4 quý</b>: lãi trên giấy có thành tiền thật về két không.</li></ol>"
+        "<p>Ngân hàng, công ty chứng khoán, bảo hiểm có cấu trúc khác nên dòng 2 và 3 ghi \"không áp dụng\". Số liệu lấy từ báo cáo tài chính hợp nhất doanh nghiệp công bố, kỳ ghi trên từng thẻ. Đây là công cụ đọc nhanh, không phải khuyến nghị mua bán.</p>",
+        "<p>Đọc thêm: <a href='/f0/cach-doc-bao-cao-tai-chinh.html'>cách đọc báo cáo tài chính</a> · <a href='/ma/'>danh sách mã cổ phiếu</a> · <a href='/ket-qua-kinh-doanh-quy.html'>kết quả kinh doanh quý</a>.</p>",
+        "<style>" + soi3.CSS + ".soima{margin:16px 0;padding:14px 16px;border:1px solid var(--gold);border-radius:12px;background:var(--panel);max-width:520px}.soima label{display:block;font-weight:800;margin-bottom:8px}"
+        ".soima-r{display:flex;gap:8px}.soima input{flex:1 1 0;min-width:0;font-weight:700;font-size:18px;font-family:inherit;text-transform:uppercase;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--fg)}"
+        ".soima button{flex:none;min-height:44px;padding:0 16px;border:0;border-radius:10px;background:#0068ff;color:#fff;font-weight:700;font-size:15px;font-family:inherit;cursor:pointer}#soima-t{margin:8px 0 0;font-size:14px;color:var(--mute)}#soima-t:empty{display:none}#soima-o{min-height:24px}.note{color:var(--mute)}</style>",
+        "<script src='/soima.js' defer></script>", CTA]
+EXTRA.append(page("soi-ma-mien-phi.html", "Soi mã cổ phiếu miễn phí: Soi 3 dòng báo cáo tài chính | Chứng Khoán Huy Nguyễn",
+     f"Gõ mã cổ phiếu, xem ngay đèn xanh vàng đỏ cho 3 dòng BCTC: lỗ lũy kế, lãi vay, dòng tiền kinh doanh. {_n3} mã. Gửi Zalo để được soi cùng, miễn phí.",
+     "Soi mã cổ phiếu miễn phí", body))
 sp = os.path.join(ROOT, "sitemap.xml"); sm = open(sp, encoding="utf-8").read()
-sm = re.sub(r"<url><loc>" + re.escape(B) + r"/(ma/[^<]*|thi-truong-chung-khoan-hom-nay\.html|dinh-gia-co-phieu\.html|tu-van-dau-tu-chung-khoan\.html|gioi-thieu\.html|lien-he\.html|chinh-sach-bao-mat\.html|the-gioi-hang-hoa\.html|ket-qua-kinh-doanh-quy\.html)</loc>.*?</url>\n", "", sm)
+sm = re.sub(r"<url><loc>" + re.escape(B) + r"/(ma/[^<]*|thi-truong-chung-khoan-hom-nay\.html|dinh-gia-co-phieu\.html|tu-van-dau-tu-chung-khoan\.html|gioi-thieu\.html|lien-he\.html|chinh-sach-bao-mat\.html|the-gioi-hang-hoa\.html|ket-qua-kinh-doanh-quy\.html|soi-ma-mien-phi\.html)</loc>.*?</url>\n", "", sm)
 add = "".join(f"<url><loc>{u}</loc><lastmod>{today}</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>\n" for u in EXTRA) + f"<url><loc>{B}/ma/</loc><lastmod>{today}</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>\n" + \
       "".join(f"<url><loc>{B}/ma/{t}.html</loc><lastmod>{today}</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>\n" for t in made)
 sm = sm.replace("</urlset>", add + "</urlset>")
