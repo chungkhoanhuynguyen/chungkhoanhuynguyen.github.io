@@ -217,7 +217,7 @@ for x in F:
     _g = x.get("grp", 1)
     _t = ("Đọc tới đây là anh chị đã nắm phần nền. Cách học nhanh nhất là thực hành với một khoản nhỏ, có người soát giúp lệnh đầu tiên. " if _g <= 2 else "Kiến thức trong bài dùng tốt nhất khi áp vào chính danh mục của mình. ")
     if x["slug"] != "mo-tai-khoan-chung-khoan":
-        p.append(f'<div style="margin:22px 0;padding:14px 16px;border-left:4px solid #6b21a8;background:#6b21a80a;border-radius:8px">{_t}Anh chị mở tài khoản cùng Huy Nguyễn (VPS, VPBankS hoặc MBS) sẽ được hướng dẫn 1:1 qua Zalo và nhận nhận định thị trường mỗi ngày. <a href="/mo-tai-khoan-chung-khoan.html#chon">Xem cách mở tài khoản</a></div>')
+        p.append(f'<div style="margin:22px 0;padding:14px 16px;border-left:4px solid #6b21a8;background:#6b21a80a;border-radius:8px">{_t}Anh chị mở tài khoản cùng Huy Nguyễn sẽ được hướng dẫn 1:1 qua Zalo và nhận bản nhận định thị trường mỗi ngày. <a href="/mo-tai-khoan-chung-khoan.html#chon">Xem cách mở tài khoản</a></div>')
     # Phễu khách (chi_dao pheu_khach_2411, NV2 24/11): mồi Cẩm nang F0 chỉ gửi qua Zalo
     p.append('<div style="margin:22px 0;padding:16px;border:1px solid #6b21a855;border-radius:12px;background:#6b21a80a"><b>📘 Cẩm nang F0 – Đầu tư cổ phiếu từ A đến Z</b><br>43 trang, 18 bài cho người mới bắt đầu. Nhắn Zalo <b>0365.188.286</b> chữ <b>F0</b>, em gửi miễn phí.<br><a class="btn b1" style="margin-top:10px" href="https://zalo.me/0365188286" target="_blank" rel="noopener">Nhận Cẩm nang F0 qua Zalo</a></div>')
     p.append("<h2>Câu hỏi thường gặp</h2>" + "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in x["faq"]))
