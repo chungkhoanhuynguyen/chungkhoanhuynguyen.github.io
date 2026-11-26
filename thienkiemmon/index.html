@@ -4772,14 +4772,14 @@ try{(function(){
  function stop(msg){if(!C)return;clearInterval(C.iv);C=null;bar.style.display='none';const b=$('htb');if(b)b.classList.remove('chan');if(msg)chat(msg,'k')}
  setTimeout(()=>{const b=$('htb');if(!b)return;const done=b.onclick;
   b.onclick=function(ev){if(C){stop('Đã hủy hồi thành.');return}if(hero.dead||creating||BC.in)return;
-   const p0=heroPos().clone();C={t0:performance.now(),hp:hero.hp,p0};P.auto=null;P.route=null;P.dest=null;b.classList.add('chan');bar.style.display='block';
+   const p0=heroPos().clone();C={t0:performance.now(),hp:hero.hp,p0};P.auto=null;P.route=null;P.dest=null;try{P.v.set(0,P.v.y,0)}catch(_){}b.classList.add('chan');bar.style.display='block';
    try{ring(heroPos(),0x7fd8ff,2.2,.5)}catch(_){}
    C.iv=setInterval(()=>{try{if(!C)return;const t=performance.now()-C.t0,hp=heroPos();
      if(hero.dead){stop('Hồi thành bị ngắt.');return}
-     if(hero.hp<C.hp-1){stop('Bị đánh — hồi thành bị ngắt.');return}C.hp=Math.max(C.hp,hero.hp);
-     const man=(typeof joy!=='undefined'&&(joy.x||joy.y))||(typeof keys!=='undefined'&&Object.values(keys).some(Boolean));
-     if(man||Math.hypot(hp.x-C.p0.x,hp.z-C.p0.z)>.6){stop('Di chuyển — hồi thành bị ngắt.');return}
-     P.auto=null;if(window.__atrain)__atrain.S.pause=performance.now()+1500;
+     if(hero.hp<C.hp-Math.max(1,hero.max*.002)){stop('Bị đánh — hồi thành bị ngắt.');return}C.hp=Math.max(C.hp,hero.hp);
+     const MK=['KeyW','KeyA','KeyS','KeyD','ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Space'],man=(typeof joy!=='undefined'&&(Math.abs(joy.x||0)>.25||Math.abs(joy.y||0)>.25))||(typeof keys!=='undefined'&&MK.some(k=>keys[k]));
+     if(man||Math.hypot(hp.x-C.p0.x,hp.z-C.p0.z)>3){stop('Di chuyển — hồi thành bị ngắt.');return}if(P.v)P.v.x=P.v.z=0;
+     P.auto=null;P.route=null;P.dest=null;if(window.__atrain)__atrain.S.pause=performance.now()+1500;if(window.__dq)__dq.pause=performance.now()+1500;
      bar.querySelector('.fl').style.width=Math.min(100,t/DUR*100)+'%';bar.querySelector('span').textContent='☯ Vận công hồi thành… '+Math.max(0,Math.ceil((DUR-t)/1000))+'s';
      if(t>=DUR){stop();done.call(b,ev)}}catch(e){stop()}},100)};
  },4200);
