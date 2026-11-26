@@ -87,7 +87,16 @@ def _upload(url):
     ten = urllib.parse.unquote(m.group(1)).replace(" ", "_"); h = hashlib.md5(ten.encode("utf-8")).hexdigest(); q = urllib.parse.quote(ten)
     goc = "https://upload.wikimedia.org/wikipedia/commons/%s/%s/%s" % (h[0], h[:2], q)
     tc = "https://upload.wikimedia.org/wikipedia/commons/transcoded/%s/%s/%s/%s" % (h[0], h[:2], q, q)
-    return [tc + ".720p.vp9.webm", tc + ".480p.vp9.webm", tc + ".720p.webm", tc + ".480p.webm", goc]
+    return [tc + ".1080p.vp9.webm", tc + ".720p.vp9.webm", tc + ".720p.webm", goc, tc + ".480p.vp9.webm", tc + ".480p.webm"]   # 27/11: ≥720p trước, 480p cuối
+
+_TOT = [0]
+def _con_clip_tot(): return _TOT[0] >= 2   # đã có ≥2 clip nét thì bỏ bản 480p
+
+def _cao(src):
+    try:
+        o = subprocess.run(["ffprobe", "-v", "error", "-user_agent", UA, "-select_streams", "v:0", "-show_entries", "stream=height", "-of", "csv=p=0", src], capture_output=True, text=True, timeout=60).stdout.strip()
+        return int(o.split()[0]) if o else 0
+    except Exception: return 0
 
 def _tai1(x, dst):
     import time
@@ -100,8 +109,12 @@ def _tai1(x, dst):
             try: return _cat(os.path.join(HERE, y["url"]), tu, den, dst), y
             except Exception as e: print("broll: file repo loi", y["url"], e, flush=True); continue
         for u in _upload(y["url"]):
+            if ".480p." in u and _con_clip_tot(): print("broll: bo 480p (da co clip >=720p)", flush=True); continue
             for lan in range(3):
-                try: return _cat(u, tu, den, dst, ua=True), y          # đọc thẳng qua HTTP (chỉ lấy đoạn cần)
+                try:
+                    r_ = _cat(u, tu, den, dst, ua=True)                  # đọc thẳng qua HTTP (chỉ lấy đoạn cần)
+                    if ".480p." not in u: _TOT[0] += 1
+                    return r_, y
                 except Exception as e:
                     print("broll: doc thang loi", u[-70:], str(e)[-60:], flush=True)
                     if "429" in str(e) or "status 8" in str(e): time.sleep(8 + 6 * lan); continue   # Commons giới hạn tốc độ: chờ rồi thử lại
@@ -253,7 +266,7 @@ def ve_ban_goc(im, sp, t, T, loi):
     pg, rect = giay(sp); to = sp.get("to", [])
     ts = [moc(loi, tu, T, 0.5 + j * 1.5) for j, (_, tu) in enumerate(to)]
     j = max([k for k, x in enumerate(ts) if t >= x] or [-1])
-    vh = P_Y1 - P_Y0 - 60
+    vh = P_Y1 - P_Y0 - 100   # chừa chỗ cho nhãn BẢN GỐC nằm TRÊN giấy (27/11: trước đè dòng đầu)
     def tam(k): r = rect[to[k][0]]; return (r[0] + r[1]) / 2
     if j < 0: cy, r_ = (tam(0) if to else vh / 2), None
     else:
@@ -269,9 +282,10 @@ def ve_ban_goc(im, sp, t, T, loi):
         ImageDraw.Draw(view).rounded_rectangle([34, r_[0] - oy - 4, view.width - 34, r_[1] - oy + 4], 12, outline=(242, 176, 38, 255), width=5)
     a = dx2.ease(t / 0.4); z = 1.0 + 0.04 * min(1, t / max(T, 1))
     view = view.convert("RGB").resize((int(view.width * z), int(view.height * z)), Image.BILINEAR)
-    the_card(im, view, W / 2, (P_Y0 + P_Y1) / 2 + 30 + (1 - a) * 120, a, 14)
-    d = ImageDraw.Draw(im, "RGBA")   # nhãn "bản gốc"
-    s = sp.get("nhan", "BẢN GỐC"); f = F("Black", 36); tw = d.textlength(s, font=f); x0 = W / 2 - view.width / 2 + 10; y0 = (P_Y0 + P_Y1) / 2 + 30 - view.height / 2 - 34 + (1 - a) * 120
+    cy_c = (P_Y0 + P_Y1) / 2 + 50 + (1 - a) * 120
+    the_card(im, view, W / 2, cy_c, a, 14)
+    d = ImageDraw.Draw(im, "RGBA")   # nhãn "bản gốc": nằm trọn phía trên mép giấy, không che chữ
+    s = sp.get("nhan", "BẢN GỐC"); f = F("Black", 36); tw = d.textlength(s, font=f); x0 = W / 2 - view.width / 2 + 10; y0 = cy_c - view.height / 2 - 70
     d.rounded_rectangle([x0, y0, x0 + tw + 44, y0 + 62], 12, fill=(200, 30, 46, int(245 * a)))
     d.text((x0 + 22, y0 + 9), s, font=f, fill=(255, 255, 255, int(255 * a)))
     if sp.get("nguon"):
@@ -364,11 +378,13 @@ def ve_so_sanh(im, sp, t, T, loi):
     d.rounded_rectangle([3, 3, cw - 4, ch - 4], 30, outline=(100, 60, 160), width=4)
     d.text((cw / 2, 46), sp.get("tieu", ""), font=fit(d, sp.get("tieu", ""), "ExtraBold", cw - 80, 44), fill=TIM_S, anchor="ma")
     mx = sp.get("max") or max(sp["a"][1], sp["b"][1]) * 1.12; dv = sp.get("dv", "")
-    tb = max(1.6, moc(loi, sp.get("tu_b"), T, 1.8))
+    tb = min(max(0.9, moc(loi, sp.get("tu_b"), T, 1.1)), 1.4)   # 27/11: trước chờ ≥1,6s -> thanh 2 trống ~2s
     for k, ((lab, v), t0, col) in enumerate([(sp["a"], 0.3, TIM_S), (sp["b"], tb, VANG)]):
         y = 190 + k * 260; u = dx2.ease((t - t0) / 1.1)
         d.text((50, y), lab, font=F("Bold", 40), fill=(220, 210, 240))
         d.rounded_rectangle([50, y + 64, cw - 50, y + 164], 22, fill=(44, 24, 76))
+        if u <= 0:   # chưa tới: dấu "?" nhấp nháy để thanh không trống trơn
+            pu = 0.55 + 0.45 * math.sin(t * 7); d.text(((cw) / 2, y + 114), "?", font=F("Black", 80), fill=tuple(int(c * pu) for c in col), anchor="mm")
         if u > 0:
             ww = max(30, (cw - 100) * v / mx * u); d.rounded_rectangle([50, y + 64, 50 + ww, y + 164], 22, fill=col)
             nd = 0 if float(v).is_integer() else 1; s = so_vn(v * u, nd) + dv; fs = F("Black", 72)
