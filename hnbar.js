@@ -21,11 +21,11 @@ d.addEventListener("focusin",go2);d.addEventListener("focusout",function(){setTi
    - Bảng số liệu theo quý/năm (BCTC): giữ vuốt ngang, khoá cột đầu + dòng "Vuốt ngang xem thêm". */
 (function(){var W=window,d=document;if(!W.matchMedia||!W.matchMedia("(max-width:600px)").matches)return;
 var st=d.createElement("style");st.textContent=
-"table.tfit{font-size:13px!important;table-layout:auto}table.tfit th,table.tfit td{padding:6px 5px!important;white-space:normal!important;word-break:normal}table.tfit th{font-size:11.5px!important;line-height:1.25}"+
+"table.tfit{font-size:13px!important;table-layout:auto;min-width:0!important;width:100%!important}table.tfit th,table.tfit td{padding:6px 5px!important;white-space:normal!important;word-break:normal}table.tfit th{font-size:11.5px!important;line-height:1.25}"+
 "table.tcard small{max-width:none!important;white-space:normal!important}table.tcard tr.thd{display:none!important}table.tcard,table.tcard tbody{display:block!important;width:100%!important;min-width:0!important}table.tcard thead{display:none!important}"+
-"table.tcard tr{display:grid!important;grid-template-columns:1fr 1fr;gap:6px 12px;padding:12px 10px;border-bottom:1px solid rgba(128,120,150,.25)}"+
-"table.tcard td{display:block!important;padding:0!important;border:0!important;text-align:left!important;font-size:14.5px;min-width:0!important;white-space:normal!important}"+
-"table.tcard td:first-child{grid-column:1/-1;font-weight:800;font-size:15.5px}"+
+"table.tcard tr{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px 10px;padding:10px 10px;border-bottom:1px solid rgba(128,120,150,.25)}"+
+"table.tcard td{display:block!important;padding:0!important;border:0!important;text-align:left!important;font-size:14px;min-width:0!important;white-space:normal!important;background:none!important}"+
+"table.tcard td:first-child{grid-column:1/-1;font-weight:800;font-size:15px}"+
 "table.tcard td[data-l]:not(:first-child)::before{content:attr(data-l);display:block;font:500 12px/1.3 system-ui,-apple-system,sans-serif;color:#8a8496;margin-bottom:1px;text-transform:none;letter-spacing:0}"+
 "table.tmat th:first-child,table.tmat td:first-child{position:sticky;left:0;z-index:1;background:var(--panel,#fff);box-shadow:4px 0 6px -4px rgba(0,0,0,.25)}"+
 ".tvuot{font-size:12.5px;opacity:.7;margin:4px 0 2px;text-align:right}";
