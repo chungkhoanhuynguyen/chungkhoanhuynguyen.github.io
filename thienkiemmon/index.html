@@ -4644,7 +4644,7 @@ try{(function(){const st=document.createElement('style');st.textContent=`
   const s2=document.createElement('style');s2.id='ilcss';s2.textContent=out.join('\n')+'\n#ilpop .ibig{width:72px;height:72px;flex:none}#ilpop .ibig svg,#ilpop .ibig img{width:90%!important;height:90%!important}#ilpop .iacts{display:none}#ilpop .istats>div{white-space:nowrap}#ilpop .iname{font-size:16px;font-weight:800;line-height:1.2}#ilpop{width:min(92vw,360px)}';const o=document.getElementById('ilcss');if(o)o.remove();document.head.appendChild(s2)}catch(e){console.warn('ilcss',e)}}
  setTimeout(cloneCss,3000);setTimeout(cloneCss,15000);
 })()}catch(e){console.warn('invui',e)}
-/* ===== TỰ LUYỆN + NHỚ CHỖ ĐỨNG + DANH HIỆU GỌN (26/11): nút Tự luyện — tự chạy bộ tới bãi quái hợp cấp, tự đánh, tự tung công pháp & kỹ năng khi đủ nội lực, chết thì hồi sinh rồi tự quay lại bãi; chạm cần gạt là tạm dừng 4 giây; tắt/mở lại game vẫn nhớ đang tự luyện. Thoát game vào lại đứng đúng chỗ cũ (không tự về thành). Danh hiệu trên đầu nhỏ gọn hơn ===== */
+/* ===== TỰ LUYỆN + NHỚ CHỖ ĐỨNG + DANH HIỆU GỌN (26/11): nút Tự luyện — tự chạy bộ tới bãi quái hợp cấp, tự đánh, tự tung công pháp & kỹ năng khi đủ nội lực, chết thì hồi sinh rồi tự quay lại bãi; chạm cần gạt là tạm dừng 4 giây; thoát game là tắt tự luyện (không treo máy khi offline). Thoát game vào lại đứng đúng chỗ cũ (không tự về thành). Danh hiệu trên đầu nhỏ gọn hơn ===== */
 try{(function(){
  const st=document.createElement('style');st.textContent=`
  .dhw{gap:1px!important;max-width:210px!important;margin-bottom:2px!important}
@@ -4656,8 +4656,8 @@ try{(function(){
  #atb.on{box-shadow:0 0 10px #5dff8a;border-color:#5dff8a!important;color:#9fffb8!important}
  #atb .lbt{position:absolute;bottom:-1px;left:0;right:0;font:800 7px/1 "Noto Serif",serif;text-align:center;color:inherit;pointer-events:none}`;document.head.appendChild(st);
  const myL=()=>lvOf(TU.realm,TU.realm?TU.tang:TU.lv);
- const S={on:false,zi:-1,zx:0,zz:0,pause:0,cast:0};try{S.on=localStorage.getItem('tkm_atrain')==='1'}catch(_){}
- function save(){try{localStorage.setItem('tkm_atrain',S.on?'1':'0')}catch(_){}}
+ const S={on:false,zi:-1,zx:0,zz:0,pause:0,cast:0};try{localStorage.removeItem('tkm_atrain')}catch(_){}
+ function save(){}
  function pickZone(){S.zi=heroZone();const z=zonePt(S.zi);S.zx=z[0];S.zz=z[1]}
  function set(on,quiet){S.on=on;save();btn();if(on){pickZone();if(!AUTO.on)toggleAuto();if(!quiet)chat('<b style="color:#7fffb0">Bật tự luyện</b> — tự ra bãi quái cấp '+(MONS[S.zi]?MONS[S.zi][0]:myL())+', tự đánh, tự dùng công pháp. Chạm cần gạt để tạm điều khiển.','s')}else{P.auto=null;P.route=null;P.dest=null;if(!quiet)chat('Tắt tự luyện.','s')}}
  function btn(){const b=$('atb');if(b)b.classList.toggle('on',S.on)}
@@ -4678,7 +4678,7 @@ try{(function(){
  /* ---- nhớ chỗ đứng ---- */
  const key=()=>'tkm_pos_'+(LOOK&&LOOK.name||'');let restored=false;
  setInterval(()=>{try{if(creating||!hero||hero.dead)return;if(!restored)return;if(BC.in||(typeof BF!=='undefined'&&BF.in)||INT.in||P.fly)return;const p=heroPos();localStorage.setItem(key(),JSON.stringify({x:+p.x.toFixed(1),z:+p.z.toFixed(1),t:Date.now()}))}catch(_){}},3000);
- const rt=setInterval(()=>{try{if(creating||!hero||!LOOK||!LOOK.name)return;clearInterval(rt);setTimeout(()=>{try{const v=JSON.parse(localStorage.getItem(key())||'null');if(v&&isFinite(v.x)&&isFinite(v.z)&&Math.hypot(v.x,v.z)>3&&!BC.in&&!INT.in){hero.c.g.position.set(v.x,H(v.x,v.z),v.z);P.route=null;P.dest=null}}catch(_){}restored=true;if(S.on)set(true,true)},1200)}catch(_){}},500);
+ const rt=setInterval(()=>{try{if(creating||!hero||!LOOK||!LOOK.name)return;clearInterval(rt);setTimeout(()=>{try{const v=JSON.parse(localStorage.getItem(key())||'null');if(v&&isFinite(v.x)&&isFinite(v.z)&&Math.hypot(v.x,v.z)>3&&!BC.in&&!INT.in){hero.c.g.position.set(v.x,H(v.x,v.z),v.z);P.route=null;P.dest=null}}catch(_){}restored=true},1200)}catch(_){}},500);
  window.addEventListener('pagehide',()=>{try{if(!creating&&restored&&!hero.dead&&!BC.in&&!INT.in&&!(typeof BF!=='undefined'&&BF.in)){const p=heroPos();localStorage.setItem(key(),JSON.stringify({x:p.x,z:p.z,t:Date.now()}))}}catch(_){}});
  window.__atrain={S,set};
 })()}catch(e){console.warn('atrain+',e)}
