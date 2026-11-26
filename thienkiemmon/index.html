@@ -1140,7 +1140,7 @@ const drops=[];const dropGeo=new T.OctahedronGeometry(.32,0);dropGeo.scale(1,1.8
 function dropLoot(p,el,lv){sfx('coin');const items=[['stone',Math.round((1+Math.floor(Math.random()*3))*(1+(lv||1)/25)*(1+(typeof eqOpt==='function'?eqOpt('gold')/100:0)))*DRM*(BC.in?100:1)],[el,BC.in?10:1]];if(Math.random()<.35)items.push([NH5[Math.floor(Math.random()*5)],1]);
  items.forEach(([k,n],i)=>{const col=k==='stone'?new T.Color(.5,1.6,2.2):new T.Color(NH[k].c).multiplyScalar(1.6);const m=new T.Mesh(dropGeo,new T.MeshStandardMaterial({color:col,emissive:col,emissiveIntensity:.8,metalness:.3,roughness:.1,transparent:true,opacity:.92}));const hal=new T.Mesh(new T.RingGeometry(.35,.6,20),new T.MeshBasicMaterial({color:col,blending:T.AdditiveBlending,transparent:true,depthWrite:false,side:T.DoubleSide}));hal.rotation.x=Math.PI/2;m.add(hal);m.position.copy(p).add(new T.Vector3(R()*1.5,.6,R()*1.5));scene.add(m);drops.push({m,k,n,t:0})})}
 function updDrops(dt){const hp=heroPos();for(let i=drops.length-1;i>=0;i--){const d=drops[i];d.t+=dt;d.m.rotation.y+=dt*3;d.m.position.y+=Math.sin(d.t*4)*.005;
- const dd=d.m.position.distanceTo(tmp.copy(hp).setY(hp.y+1));if(d.lost&&d.t>2&&Math.random()<.02){const b=ents.find(e=>e.team==='bot'&&!e.dead&&e.c.g.position.distanceTo(d.m.position)<2);if(b){chat('<span class="n">'+esc(b.name)+'</span> nhặt mất '+d.n+' linh thạch của bạn','k');scene.remove(d.m);drops.splice(i,1);continue}}if(d.t>.6&&dd<(d.lost?2:2.6)&&!hero.dead){d.m.position.lerp(tmp,Math.min(1,dt*(6+12/dd)))}
+ const dd=d.m.position.distanceTo(tmp.copy(hp).setY(hp.y+1));if(d.lost&&d.t>2&&Math.random()<.02){const b=ents.find(e=>e.team==='bot'&&!e.dead&&e.c.g.position.distanceTo(d.m.position)<2);if(b){chat('<span class="n">'+esc(b.name)+'</span> nhặt mất '+d.n+' linh thạch của bạn','k');scene.remove(d.m);drops.splice(i,1);continue}}if(d.t>.6&&dd<(d.lost?1.4:(window.__pet&&__pet.OWN()?1.6:1.4))&&!hero.dead){d.m.position.lerp(tmp,Math.min(1,dt*(6+12/dd)))}
  if(d.t>.6&&dd<.8){scene.remove(d.m);d.m.material.dispose();drops.splice(i,1);if(d.k==='stone'){TU.stone+=d.n;sfx('coin')}else{TU.mat[d.k]+=d.n;sfx('pickup')}refreshTL()}else if(d.t>(d.lost?180:30)){scene.remove(d.m);drops.splice(i,1)}}}
 
 /* chết thì rơi đồ dần dần tại chỗ — phải quay lại nhặt, người khác có thể nhặt đem bày sạp */
@@ -4926,7 +4926,7 @@ try{(function(){
   mk('rkb','Bảng xếp hạng','<svg viewBox="0 0 24 24"><path d="M5 21V12h4v9M10 21V6h4v15M15 21v-7h4v7"/></svg>',()=>rkPanel());
   mk('frb','Bạn bè','<svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2 20c1-4 4-6 7-6s6 2 7 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14c3 0 5 2 6 5"/></svg>',frPanel)},2800);
 })()}catch(e){console.warn('mmo+',e)}
-/* ===== ĐỒ RƠI NHÌN LÀ THÈM (26/11): đồ Hoàng/Xích/Bạch Ngân do mình đánh rơi có cột sáng cao gấp đôi–ba nhìn từ xa, chữ lớn giữa màn hình + tiếng riêng + kênh thế giới báo tên, bot xin xỏ/ghen tị; linh thạch & tinh hoa tự bay về người trong 6 bước ===== */
+/* ===== ĐỒ RƠI NHÌN LÀ THÈM (26/11): đồ Hoàng/Xích/Bạch Ngân do mình đánh rơi có cột sáng cao gấp đôi–ba nhìn từ xa, chữ lớn giữa màn hình + tiếng riêng + kênh thế giới báo tên, bot xin xỏ/ghen tị; (đã bỏ tự hút — phải chạy sát mới nhặt) ===== */
 try{(function(){
  const st=document.createElement('style');st.textContent='#rdrop{position:fixed;left:50%;top:30%;transform:translate(-50%,-50%) scale(.6);z-index:42;pointer-events:none;opacity:0;text-align:center;font:900 26px "Noto Serif",serif;letter-spacing:2px;white-space:nowrap;transition:opacity .25s,transform .35s cubic-bezier(.2,1.6,.4,1)}#rdrop.on{opacity:1;transform:translate(-50%,-50%) scale(1)}#rdrop small{display:block;font:700 13px "Noto Serif",serif;letter-spacing:.5px;margin-top:2px;color:#fff3d0;text-shadow:0 1px 3px #000}body.touch #rdrop{font-size:20px}';document.head.appendChild(st);
  const rd=document.createElement('div');rd.id='rdrop';document.body.appendChild(rd);let rdT=0;
@@ -4940,8 +4940,7 @@ try{(function(){
    if(it.tier>=5){try{chat0('<span style="color:#ffd36b">[Hệ thống]</span> Chúc mừng <b>'+esc(LOOK.name)+'</b> đánh rơi '+(window.itLink?itLink(it):'<b>'+esc(it.name)+'</b>')+'!','');
     const B=ents.filter(e=>e.team==='bot'&&!e.dead&&e.name&&!e.guard);if(B.length&&Math.random()<.8){const b=pick(B);setTimeout(()=>chat0('<span class="n">'+esc(b.name)+'</span>: '+pick(['vcl đồ '+nm.toLowerCase()+' kìa','đỏ thế ae','cho xin đi bro','số đỏ v','t cày cả tuần ko ra cái nào','hên vl','bán ko bro','gato vl']),''),5000+Math.random()*6000)}}catch(_){}}
   }catch(_){}return r};
- /* nam châm linh thạch / tinh hoa trong 6 bước */
- setInterval(()=>{try{if(hero.dead||creating)return;const hp=heroPos();for(const d of drops){if(d.lost||d.t<.6)continue;const q=d.m.position,dd=Math.hypot(q.x-hp.x,q.z-hp.z);if(dd<6&&dd>1.5){q.x+=(hp.x-q.x)*.18;q.z+=(hp.z-q.z)*.18;q.y+=((hp.y+1)-q.y)*.18}}}catch(_){}},50);
+
  window.__ld={rd};
 })()}catch(e){console.warn('loot2',e)}
 /* ===== BÃI QUÁI CÓ MỒI (26/11): thỉnh thoảng một con trong bãi hóa TINH ANH (to hơn, tên vàng, vòng sáng, máu x3, rơi gấp 3 + chắc chắn có đồ); thanh SÁT KHÍ đầy dần khi giết quái → BÙNG NỔ 30 giây nhân đôi đồ rơi, viền màn hình ánh đỏ ===== */
