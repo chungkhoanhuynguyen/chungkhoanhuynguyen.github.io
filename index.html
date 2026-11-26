@@ -87,7 +87,7 @@ nav a{text-decoration:none} nav a:hover,nav a:focus-visible{color:var(--fg)}
 .cta{display:flex;flex-direction:column;gap:10px}
 .btn{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 18px;border-radius:10px;text-decoration:none;font-weight:800;border:1px solid var(--line);background:var(--panel)}
 .btn.main{background:var(--gold);color:#1a1408;border-color:var(--gold)}
-.soima{margin-top:14px;padding:14px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}.soima label{display:block;font-weight:800;font-size:15px;margin-bottom:8px}.soima-r{display:flex;gap:8px}.soima input{flex:1;min-width:0;min-height:44px;padding:0 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg);font:600 16px var(--body);text-transform:uppercase}.soima input:focus{outline:2px solid var(--gold);outline-offset:1px}.soima button{min-height:44px;padding:0 16px;border-radius:10px;border:1px solid #d6aa58;background:#d6aa58;color:#1a1408;font:800 15px var(--body);cursor:pointer;transition:transform .12s ease}.soima button:active{transform:scale(.97)}.soima p{margin:8px 0 0;color:#5f5a69;font-size:14px}
+.soima{box-sizing:border-box;min-width:0;margin-top:12px;max-width:420px;padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.08);border:1px solid rgba(243,210,122,.4);color:#fff;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}.soima label{display:block;font-weight:800;font-size:15px;margin-bottom:8px;color:#f2c14e}.soima-r{display:flex;gap:8px}.soima input{flex:1 1 0;width:0;min-width:0;min-height:44px;padding:0 12px;border-radius:10px;border:1px solid rgba(255,255,255,.22);background:rgba(10,6,22,.55);color:#fff;font:700 16px var(--body);text-transform:uppercase;letter-spacing:.04em}#soima .soima-r input{background:rgba(10,6,22,.55)!important;color:#fff!important;border-color:rgba(255,255,255,.22)!important}.soima input::placeholder{color:rgba(255,255,255,.55);text-transform:none;letter-spacing:0}.soima input:focus{outline:2px solid #f2c14e;outline-offset:1px}.soima button{min-height:44px;padding:0 16px;border-radius:10px;border:0;background:#f2c14e;color:#1a1408;font:800 15px var(--body);cursor:pointer;white-space:nowrap;transition:transform .12s ease,background .15s ease}.soima button:hover{background:#f7d47a}.soima button:active{transform:scale(.97)}.soima p{margin:8px 0 0;color:rgba(255,255,255,.78);font-size:14px;line-height:1.45}
 
 .btn small{font:500 12px var(--mono);opacity:.75}
 .btn:focus-visible,.chip-b:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
@@ -600,7 +600,7 @@ section.sec-c{padding-block:18px!important}
 /* ===== Chữ mờ chống chụp màn hình ===== */
 #wm{display:none;position:fixed;inset:0;z-index:2147483000;pointer-events:none;background-repeat:repeat;transform:translateZ(0)}
 /* 25/11 QL1 (anh Huy): CHỈ 1 lớp thương hiệu – mỗi khung 1 dòng chữ nguyên vẹn ở giữa, không phủ nền trang */
-.mw::after{content:"CHỨNG KHOÁN HUY NGUYỄN";display:block;position:static;margin-top:10px;text-align:right;font:800 10px/1.2 Arial,Helvetica,sans-serif;letter-spacing:.16em;color:rgba(106,45,134,.5);pointer-events:none;white-space:nowrap}
+
 @media print{#wm{display:block!important;opacity:1!important;background-size:440px 280px!important}.toc,#totop,.tape,header.top{display:none!important}body::before{content:"Bản in từ Chứng Khoán Huy Nguyễn · Zalo 0365.188.286";display:block;font:700 14px sans-serif;text-align:center;padding:8px;border-bottom:2px solid #4c2766}}
 /* ===== Hạn chế sao chép ở vùng dữ liệu ===== */
 .nocopy{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
@@ -1773,7 +1773,7 @@ function render(keep){
   var l1=chart.addSeries(LW.LineSeries,{color:'#2b6cb0',lineWidth:1.5,priceLineVisible:false,lastValueVisible:false,crosshairMarkerVisible:false,priceFormat:mf},mp);l1.setData(ln(b,md));
   var l2=chart.addSeries(LW.LineSeries,{color:'#d08a1e',lineWidth:1.5,priceLineVisible:false,lastValueVisible:false,crosshairMarkerVisible:false,priceFormat:mf},mp);l2.setData(ln(b,sg));h.priceScale().applyOptions({scaleMargins:{top:.12,bottom:.08}})}
  try{var ps=chart.panes();ps[0].setStretchFactor(hMain);if(rp&&ps[rp])ps[rp].setStretchFactor(hR);if(mp&&ps[mp])ps[mp].setStretchFactor(hM)}catch(e){}
- try{LW.createTextWatermark(chart.panes()[0],{horzAlign:'center',vertAlign:'center',lines:[{text:cur.sym,color:'rgba(106,45,134,0.07)',fontSize:m?46:76,fontStyle:'bold'},{text:'CHỨNG KHOÁN HUY NGUYỄN',color:'rgba(106,45,134,0.16)',fontSize:m?9:11,fontStyle:'bold'}]})}catch(e){}
+ try{LW.createTextWatermark(chart.panes()[0],{horzAlign:'center',vertAlign:'center',lines:[{text:cur.sym,color:'rgba(106,45,134,0.07)',fontSize:m?46:76,fontStyle:'bold'}]})}catch(e){}
  var n=b.length,ts=chart.timeScale();
  if(prev)ts.setVisibleLogicalRange(prev);else if(!st.r)ts.fitContent();else{var k=Math.max(12,Math.round(st.r/(st.tf==='W'?5:st.tf==='M'?21:1)));ts.setVisibleLogicalRange({from:n-k,to:n+3})}
  cur.view=b;leg(n-1);
@@ -1972,7 +1972,6 @@ function plot(A,B,V){var el=$('ssv'),LW=window.LightweightCharts,m=H.mob();if(ch
  var pf={type:'custom',minMove:.01,formatter:function(p){return pc(p,1)}};
  function add(b,c,w,dash,title){if(!b||!b.length)return null;var b0=b[0].close,s=chart.addSeries(LW.LineSeries,{color:c,lineWidth:w,lineStyle:dash?2:0,priceFormat:pf,priceLineVisible:false,lastValueVisible:true,crosshairMarkerVisible:true,title:title});s.setData(b.map(function(x){return{time:x.time,value:(x.close/b0-1)*100}}));return s}
  add(V,CV,1,1,'VN-Index');add(B,CB,2,0,st.b);add(A,CA,2.5,0,st.a);
- try{LW.createTextWatermark(chart.panes()[0],{horzAlign:'right',vertAlign:'top',lines:[{text:'CHỨNG KHOÁN HUY NGUYỄN',color:'rgba(106,45,134,0.28)',fontSize:m?9:10,fontStyle:'bold'}]})}catch(e){}
  chart.timeScale().fitContent()}
 function perf(b,n){if(!b||b.length<2)return null;var x=b[b.length-1].close,i=Math.max(0,b.length-1-n);return (x/b[i].close-1)*100}
 function hl(s,bb,up){if(bb&&bb.length>20){var y=bb.slice(-250);return up?Math.max.apply(0,y.map(function(r){return r.high})):Math.min.apply(0,y.map(function(r){return r.low}))}return F(s,up?'h52':'l52')}
@@ -2066,7 +2065,6 @@ function plot(){var el=$('wmv'),LW=window.LightweightCharts,m=H.mob(),k=st.k;if(
   var b=chart.addSeries(LW.LineSeries,{color:'#d08a1e',lineWidth:2,lineType:1,priceFormat:pf,priceLineVisible:false,title:'Dưới'});b.setData(d.lo);head('fed')}
  else{var pts=data(k),up=pts[pts.length-1].value>=pts[0].value,col=up?'#1f8a57':'#c43c32';
   var s=chart.addSeries(LW.AreaSeries,{lineColor:col,lineWidth:2,topColor:up?'rgba(31,138,87,.22)':'rgba(196,60,50,.2)',bottomColor:'rgba(255,255,255,0)',priceFormat:pf,priceLineVisible:false,lastValueVisible:true});s.setData(pts);head(k,pts)}
- try{LW.createTextWatermark(chart.panes()[0],{horzAlign:'right',vertAlign:'top',lines:[{text:'CHỨNG KHOÁN HUY NGUYỄN',color:'rgba(106,45,134,0.28)',fontSize:m?9:10,fontStyle:'bold'}]})}catch(e){}
  chart.timeScale().fitContent()}
 function sjcBox(){H.get('data/sjc.bin').then(function(d){if(!d||!d.ban)return;var b=$('wmsjc'),f=function(v){return(+v).toLocaleString('vi-VN',{minimumFractionDigits:1,maximumFractionDigits:1})};var ls=d.lich||[],t7=ls.length>5?ls[ls.length-6]:null;b.innerHTML='<div><p class="k">Vàng miếng SJC bán ra</p><p class="v">'+f(d.ban)+' tr/lượng</p></div><div><p class="k">Thế giới quy đổi</p><p class="v">'+f(d.tg)+' tr/lượng</p></div><div><p class="k">Chênh lệch</p><p class="v do">'+f(d.chenh)+' tr ('+String(d.chenh_pct).replace('.',',')+'%)</p></div>'+(t7?'<div><p class="k">5 phiên trước</p><p class="v">'+f(t7[3])+' tr</p></div>':'<div></div>')+'<p class="ft">Cập nhật '+d.gio+' '+d.ngay+'. Thế giới quy đổi = giá vàng thế giới × tỷ giá USD/VND, chưa gồm thuế phí. Nguồn: '+d.nguon+', giá thế giới chungkhoanhuynguyen.com.</p>';b.hidden=false}).catch(function(){})}
 function seg(){$('wmr').querySelectorAll('button').forEach(function(b){b.setAttribute('aria-pressed',String(+b.dataset.r===st.r))})}
