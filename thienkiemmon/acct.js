@@ -44,6 +44,8 @@ var TKACCT = (function () {
   function writeProf() { return fsReq('PATCH', '/tkm_players/' + user.uid, { fields: { j: { stringValue: JSON.stringify(prof) }, t: { integerValue: String(Date.now()) } } }).catch(function () { }); }
   function snapshot() { var o = {}; KEYS.forEach(function (k) { var v = ls(k); if (v != null) o[k] = v; }); return JSON.stringify(o); }
   function restore(save) { KEYS.forEach(function (k) { ls(k, null); }); if (!save) return; try { var o = JSON.parse(save); Object.keys(o).forEach(function (k) { if (KEYS.indexOf(k) >= 0) ls(k, o[k]); }); } catch (e) { } }
+  /* 26/11: đổi/tạo nhân vật — trang cũ lúc đóng vẫn ghi dữ liệu nhân vật cũ vào máy, nên phải nạp lại dữ liệu đúng nhân vật NGAY khi trang mới mở, trước khi game đọc (trước đây tạo mới bị lẫn dữ liệu nhân vật cũ rồi ghi đè lên) */
+  (function () { var pd = ss('tkm_pend'); if (pd == null) return; ss('tkm_pend', null); if (pd === 'wipe') restore(null); else if (pd.charAt(0) === 'L') restore(pd.slice(1) || null); })();
   var lastSave = 0;
   function save(force) {
     if (!user || !prof || slot < 0 || denied) return Promise.resolve();
@@ -132,10 +134,10 @@ var TKACCT = (function () {
     var b = show(h);
     b.querySelectorAll('.ch').forEach(function (el) { el.onclick = function (ev) { if (ev.target.dataset.del) return; pick(+el.dataset.i); }; });
     b.querySelectorAll('[data-del]').forEach(function (el) { el.onclick = function () { var i = +el.dataset.del; if (!confirm('Xóa vĩnh viễn nhân vật "' + (cs[i].name || '') + '"?')) return; cs[i] = null; while (cs.length && !cs[cs.length - 1]) cs.pop(); writeProf(); charView(); }; });
-    var nb = b.querySelector('#anew'); if (nb) nb.onclick = function () { var i = cs.findIndex(function (c) { return !c; }); if (i < 0) i = cs.length; ss('tkm_slot', user.uid + ':' + i); ss('tkm_new', '1'); ss('tkm_auto', '1'); restore(null); location.reload(); };
+    var nb = b.querySelector('#anew'); if (nb) nb.onclick = function () { var i = cs.findIndex(function (c) { return !c; }); if (i < 0) i = cs.length; ss('tkm_slot', user.uid + ':' + i); ss('tkm_new', '1'); ss('tkm_auto', '1'); ss('tkm_pend', 'wipe'); restore(null); location.reload(); };
     b.querySelector('#aout').onclick = function () { ls('tkm_auth', null); user = null; prof = null; tok = null; ss('tkm_slot', null); loginView(); };
   }
-  function pick(i) { ss('tkm_slot', user.uid + ':' + i); ss('tkm_new', null); ss('tkm_auto', '1'); restore(prof.chars[i].save); location.reload(); }
+  function pick(i) { ss('tkm_slot', user.uid + ':' + i); ss('tkm_new', null); ss('tkm_auto', '1'); ss('tkm_pend', 'L' + (prof.chars[i].save || '')); restore(prof.chars[i].save); location.reload(); }
   function resume() { var a; try { a = JSON.parse(ls('tkm_auth') || 'null'); } catch (e) { } if (!a) return Promise.reject(err('NO_SESSION')); user = { uid: a.u, email: a.e }; return token(); }
   function boot() {
     if (/noacct/.test(location.search)) return;
