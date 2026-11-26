@@ -1,0 +1,567 @@
+[
+ {
+  "key": "SN2511THUE35DT",
+  "tieu_de": "Mỹ đề xuất thuế tới 35% với hàng Việt Nam: lần trước thị trường đã phản ứng thế nào?",
+  "hook": [
+   "THUẾ MỸ 35%",
+   "LẠI LẦN NỮA?"
+  ],
+  "nhan": "ĐỌC BẢN GỐC · 25/11/2026",
+  "short_caption": "Ngày 25/11/2026, Văn phòng Đại diện Thương mại Mỹ đề xuất xem xét thuế tới 35% với hàng Việt Nam, 20% nếu có thỏa thuận; nhận góp ý đến 5/1/2027, điều trần từ 25/1/2027. Tháng 4/2025: tin thuế 46%, VN-Index mất 223 điểm sau 4 phiên, đến tháng 7/2025 mức công bố là 20%.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "ANH CHỊ SẼ LÀM GÌ?",
+   "loi": "Nếu sáng mai thị trường rung lắc vì tin này, anh chị A: đứng ngoài chờ rõ, hay B: vẫn giữ nguyên kế hoạch của mình?",
+   "loi_doc": "Nếu sáng mai thị trường rung lắc vì tin này, anh chị A: đứng ngoài chờ rõ, hay B: vẫn giữ nguyên kế hoạch của mình?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "TIN THUẾ MỸ 35%",
+    "dong": [
+     [
+      "A: CHỜ RÕ",
+      100,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: GIỮ KẾ HOẠCH?",
+      88,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "THUẾ TỚI 35%",
+    "loi": "Mỹ sắp đánh thuế 35% lên hàng Việt Nam? Khoan đã. Em đọc bản gốc rồi: đây mới là đề xuất. Đêm qua Mỹ công bố mức thuế có thể tới 35%, và đây không phải lần đầu thị trường mình nghe tin kiểu này.",
+    "loi_doc": "Mỹ sắp đánh thuế ba mươi lăm phần trăm lên hàng Việt Nam? Khoan đã. Em đọc bản gốc rồi: đây mới là đề xuất. Đêm qua Mỹ công bố mức thuế có thể tới ba mươi lăm phần trăm, và đây không phải lần đầu thị trường mình nghe tin kiểu này.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "MỸ ĐỀ XUẤT THUẾ MỚI · 25/11/2026",
+     "dong": [
+      [
+       "HÀNG VIỆT NAM",
+       84,
+       "trang"
+      ],
+      [
+       "TỚI 35%",
+       150,
+       "do"
+      ],
+      [
+       "MỚI LÀ ĐỀ XUẤT",
+       56,
+       "vang"
+      ]
+     ]
+    },
+    "dt": {
+     "loai": "lat",
+     "hoi": [
+      "MỸ ĐÁNH THUẾ 35%",
+      "LÊN HÀNG VIỆT?"
+     ],
+     "lat": "MỚI LÀ ĐỀ XUẤT",
+     "tu": "Khoan",
+     "phu": "Văn phòng Đại diện Thương mại Mỹ · 25/11/2026"
+    },
+    "tu_khoa": [
+     "khoan",
+     "đề xuất"
+    ]
+   },
+   {
+    "chu_to": "14 NỀN KINH TẾ",
+    "loi": "Ngày 25/11, Văn phòng Đại diện Thương mại Mỹ công bố kết luận điều tra với 14 nền kinh tế. Trong đó có Trung Quốc, châu Âu, Nhật Bản, Hàn Quốc và Việt Nam.",
+    "loi_doc": "Ngày hai mươi lăm tháng mười một, Văn phòng Đại diện Thương mại Mỹ công bố kết luận điều tra với mười bốn nền kinh tế. Trong đó có Trung Quốc, châu Âu, Nhật Bản, Hàn Quốc và Việt Nam.",
+    "anh": [],
+    "the": {
+     "loai": "dem",
+     "tieu": "KẾT LUẬN ĐIỀU TRA ĐIỀU 301",
+     "nguon": "Văn phòng Đại diện Thương mại Mỹ 25/11/2026",
+     "n": 14,
+     "to": "14 NỀN KINH TẾ",
+     "phu": "TRUNG QUỐC · EU · NHẬT · HÀN · VIỆT NAM…"
+    },
+    "dt": {
+     "loai": "ban_do",
+     "vung": [
+      95,
+      -9,
+      146,
+      44
+     ],
+     "noi": {
+      "CHN": "tim2",
+      "KOR": "tim2",
+      "JPN": "tim2",
+      "VNM": "vang"
+     },
+     "nhan": [
+      [
+       104,
+       34,
+       "TRUNG QUỐC"
+      ],
+      [
+       137.5,
+       36.8,
+       "NHẬT"
+      ],
+      [
+       127.8,
+       38.6,
+       "HÀN"
+      ],
+      [
+       105.4,
+       15.2,
+       "VIỆT NAM"
+      ]
+     ],
+     "o_so": {
+      "so": "14",
+      "dv": "NỀN KINH TẾ",
+      "phu": "GỒM CẢ EU · KẾT LUẬN ĐIỀU TRA 301",
+      "o": [
+       128,
+       -3
+      ]
+     },
+     "nguon": "USTR 25/11/2026"
+    },
+    "tu_khoa": [
+     "mười bốn",
+     "14"
+    ]
+   },
+   {
+    "chu_to": "35% HOẶC 20%",
+    "loi": "Với Việt Nam, phía Mỹ đề xuất xem xét mức thuế tới 35%. Nếu hai nước đạt được thỏa thuận thương mại, mức được nêu là 20%.",
+    "loi_doc": "Với Việt Nam, phía Mỹ đề xuất xem xét mức thuế tới ba mươi lăm phần trăm. Nếu hai nước đạt được thỏa thuận thương mại, mức được nêu là hai mươi phần trăm.",
+    "anh": [],
+    "the": {
+     "loai": "cot",
+     "tieu": "MỨC THUẾ ĐỀ XUẤT VỚI HÀNG VIỆT NAM",
+     "nguon": "Văn phòng Đại diện Thương mại Mỹ 25/11/2026",
+     "hang": [
+      [
+       "CÓ THỎA THUẬN",
+       20
+      ],
+      [
+       "MỨC TRẦN",
+       35
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "%",
+     "max": 40
+    },
+    "dt": {
+     "loai": "so_sanh",
+     "tieu": "MỨC THUẾ ĐỀ XUẤT VỚI HÀNG VIỆT NAM",
+     "a": [
+      "NẾU CÓ THỎA THUẬN",
+      20
+     ],
+     "b": [
+      "MỨC TRẦN ĐỀ XUẤT",
+      35
+     ],
+     "dv": "%",
+     "max": 40,
+     "tu_b": "tới 35%",
+     "nguon": "USTR 25/11/2026"
+    }
+   },
+   {
+    "chu_to": "5 NGÀNH BỊ NÊU TÊN",
+    "loi": "Em mở bản gốc ra đọc. Văn bản nêu đích danh dệt may, da giày, đóng tàu, xi măng. Và có một câu riêng: tập trung quá mức thấy rõ nhất ở ngành điện tử và công nghệ thông tin của Việt Nam.",
+    "loi_doc": "Em mở bản gốc ra đọc. Văn bản nêu đích danh dệt may, da giày, đóng tàu, xi măng. Và có một câu riêng: tập trung quá mức thấy rõ nhất ở ngành điện tử và công nghệ thông tin của Việt Nam.",
+    "anh": [],
+    "the": {
+     "loai": "chuoi",
+     "tieu": "NHÓM NGÀNH BỊ NÊU TÊN",
+     "nguon": "Văn phòng Đại diện Thương mại Mỹ",
+     "buoc": [
+      "DỆT MAY · DA GIÀY",
+      "ĐÓNG TÀU · XI MĂNG",
+      "ĐIỆN TỬ · CÔNG NGHỆ THÔNG TIN"
+     ],
+     "mau": [
+      "tim",
+      "tim",
+      "vang"
+     ]
+    },
+    "dt": {
+     "loai": "ban_goc",
+     "dong": [
+      [
+       "Billing Code 3390-F4",
+       "nho"
+      ],
+      [
+       "OFFICE OF THE UNITED STATES TRADE REPRESENTATIVE",
+       "dau"
+      ],
+      [
+       "Docket Nos. USTR–2026–0741, USTR-2026-0740",
+       "nho"
+      ],
+      [
+       "Notice of Determination and Request for Comments Concerning Proposed Action in the Section 301 Investigation of Acts, Policies, and Practices of Vietnam Relating to Structural Excess Capacity and Production in Manufacturing Sectors",
+       "dam"
+      ],
+      [
+       "ACTION: Notice of determination, request for comments, and notice of public hearing.",
+       ""
+      ],
+      [
+       "DATES:",
+       "dam"
+      ],
+      [
+       "January 5, 2027: Submit written comments by this date.",
+       ""
+      ],
+      [
+       "January 25, 2027: The Section 301 Committee will convene public hearings […]",
+       ""
+      ],
+      [
+       "[…] considering to apply tariffs of up to 35 percent, net of existing Section 301 tariffs, on all goods of Vietnam […]",
+       ""
+      ],
+      [
+       "[…] a tariff rate of 20 percent, were Vietnam to reach an Agreement on Reciprocal Trade with the United States […]",
+       ""
+      ],
+      [
+       "[…] such as in the textiles, apparel, and footwear; shipbuilding; and cement sectors, among others.",
+       ""
+      ],
+      [
+       "Overconcentration is particularly evident in Vietnam's electronics and ICT sector.",
+       ""
+      ]
+     ],
+     "to": [
+      [
+       3,
+       "Em mở"
+      ],
+      [
+       10,
+       "dệt may"
+      ],
+      [
+       11,
+       "câu riêng"
+      ]
+     ],
+     "nhan": "BẢN GỐC · USTR",
+     "nguon": "Trích nguyên văn thông báo USTR 25/11/2026 (ustr.gov) · chữ dựng lại cho dễ đọc"
+    },
+    "tu_khoa": [
+     "dệt",
+     "điện tử"
+    ]
+   },
+   {
+    "chu_to": "MỸ MUA GẦN 32%",
+    "loi": "Vì sao chuyện này lớn? Mười tháng đầu năm nay, Việt Nam bán sang Mỹ hơn 159 tỷ đô la, gần 32% tổng xuất khẩu. Cứ ba đồng hàng bán ra nước ngoài thì gần một đồng là bán cho Mỹ.",
+    "loi_doc": "Vì sao chuyện này lớn? Mười tháng đầu năm nay, Việt Nam bán sang Mỹ hơn một trăm năm mươi chín tỷ đô la, gần ba mươi hai phần trăm tổng xuất khẩu. Cứ ba đồng hàng bán ra nước ngoài thì gần một đồng là bán cho Mỹ.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "XUẤT KHẨU SANG MỸ · 10 THÁNG 2026",
+     "nguon": "Cục Hải quan · Báo Đầu tư",
+     "dong": [
+      [
+       "159,4 TỶ USD",
+       104,
+       "vang"
+      ],
+      [
+       "GẦN 32% TỔNG XUẤT KHẨU",
+       52,
+       "trang"
+      ]
+     ]
+    },
+    "dt": {
+     "loai": "ban_do",
+     "vung": [
+      97,
+      6,
+      122,
+      25
+     ],
+     "noi": {
+      "VNM": "vang"
+     },
+     "nhan": [
+      [
+       104.2,
+       19.6,
+       "VIỆT NAM"
+      ]
+     ],
+     "mui_ten": [
+      [
+       109.6,
+       13.4
+      ],
+      [
+       121.3,
+       13.4
+      ],
+      "SANG MỸ"
+     ],
+     "o_so": {
+      "so": "159,4",
+      "dv": "TỶ USD",
+      "phu": "GẦN 32% TỔNG XUẤT KHẨU · 10T/2026",
+      "o": [
+       99.5,
+       7.6
+      ]
+     },
+     "nguon": "Cục Hải quan · Báo Đầu tư"
+    }
+   },
+   {
+    "chu_to": "CHƯA CÓ HIỆU LỰC",
+    "loi": "Nhưng anh chị lưu ý: đây mới là đề xuất, chưa có hiệu lực. Bản gốc ghi rõ: nhận góp ý đến ngày 5/1, và mở phiên điều trần từ ngày 25/1 năm sau.",
+    "loi_doc": "Nhưng anh chị lưu ý: đây mới là đề xuất, chưa có hiệu lực. Bản gốc ghi rõ: nhận góp ý đến ngày năm tháng một, và mở phiên điều trần từ ngày hai mươi lăm tháng một năm sau.",
+    "anh": [],
+    "the": {
+     "loai": "chuoi",
+     "tieu": "LỊCH PHÍA TRƯỚC",
+     "nguon": "Văn phòng Đại diện Thương mại Mỹ",
+     "buoc": [
+      "25/11/2026: CÔNG BỐ ĐỀ XUẤT",
+      "5/1/2027: HẠN GÓP Ý",
+      "25/1/2027: BẮT ĐẦU ĐIỀU TRẦN"
+     ],
+     "mau": [
+      "do",
+      "tim",
+      "vang"
+     ]
+    },
+    "dt": {
+     "loai": "ban_goc",
+     "dong": [
+      [
+       "Billing Code 3390-F4",
+       "nho"
+      ],
+      [
+       "OFFICE OF THE UNITED STATES TRADE REPRESENTATIVE",
+       "dau"
+      ],
+      [
+       "Docket Nos. USTR–2026–0741, USTR-2026-0740",
+       "nho"
+      ],
+      [
+       "Notice of Determination and Request for Comments Concerning Proposed Action in the Section 301 Investigation of Acts, Policies, and Practices of Vietnam Relating to Structural Excess Capacity and Production in Manufacturing Sectors",
+       "dam"
+      ],
+      [
+       "ACTION: Notice of determination, request for comments, and notice of public hearing.",
+       ""
+      ],
+      [
+       "DATES:",
+       "dam"
+      ],
+      [
+       "January 5, 2027: Submit written comments by this date.",
+       ""
+      ],
+      [
+       "January 25, 2027: The Section 301 Committee will convene public hearings […]",
+       ""
+      ],
+      [
+       "[…] considering to apply tariffs of up to 35 percent, net of existing Section 301 tariffs, on all goods of Vietnam […]",
+       ""
+      ],
+      [
+       "[…] a tariff rate of 20 percent, were Vietnam to reach an Agreement on Reciprocal Trade with the United States […]",
+       ""
+      ],
+      [
+       "[…] such as in the textiles, apparel, and footwear; shipbuilding; and cement sectors, among others.",
+       ""
+      ],
+      [
+       "Overconcentration is particularly evident in Vietnam's electronics and ICT sector.",
+       ""
+      ]
+     ],
+     "to": [
+      [
+       4,
+       "đề xuất"
+      ],
+      [
+       6,
+       "góp ý"
+      ],
+      [
+       7,
+       "điều trần"
+      ]
+     ],
+     "nhan": "BẢN GỐC · USTR",
+     "nguon": "Trích nguyên văn thông báo USTR 25/11/2026 (ustr.gov) · chữ dựng lại cho dễ đọc"
+    },
+    "tu_khoa": [
+     "đề xuất"
+    ]
+   },
+   {
+    "chu_to": "THÁNG 4/2025: MẤT 88 ĐIỂM",
+    "loi": "Lần trước, tháng 4/2025, Mỹ công bố mức 46%. Chỉ một phiên, VN-Index mất gần 88 điểm. Sau bốn phiên, mất 223 điểm.",
+    "loi_doc": "Lần trước, tháng tư năm hai nghìn không trăm hai mươi lăm, Mỹ công bố mức bốn mươi sáu phần trăm. Chỉ một phiên, VN-Index mất gần tám mươi tám điểm. Sau bốn phiên, mất hai trăm hai mươi ba điểm.",
+    "anh": [],
+    "the": {
+     "loai": "giam",
+     "tieu": "VN-INDEX SAU TIN THUẾ 46%",
+     "nguon": "VnExpress 9/4/2025 · Nhà Đầu tư 3/4/2025",
+     "a": [
+      "2/4/2025",
+      1317.83
+     ],
+     "b": [
+      "9/4/2025",
+      1094.3
+     ],
+     "dv": " ĐIỂM",
+     "dau": "4 PHIÊN MẤT 223 ĐIỂM"
+    }
+   },
+   {
+    "chu_to": "46% VỀ 20%",
+    "loi": "Rồi sau ba tháng đàm phán, mức công bố tháng 7 năm đó là 20%, không phải 46. Lần này ra sao thì chưa ai biết, em không đoán. Em chỉ nhắc: con số đầu tiên chưa chắc là con số cuối cùng.",
+    "loi_doc": "Rồi sau ba tháng đàm phán, mức công bố tháng bảy năm đó là hai mươi phần trăm, không phải bốn mươi sáu. Lần này ra sao thì chưa ai biết, em không đoán. Em chỉ nhắc: con số đầu tiên chưa chắc là con số cuối cùng.",
+    "anh": [],
+    "the": {
+     "loai": "cot",
+     "tieu": "NĂM 2025: TỪ ĐỀ XUẤT ĐẾN THỎA THUẬN",
+     "nguon": "Báo chí 4/2025 và 7/2025",
+     "hang": [
+      [
+       "THÁNG 4/2025",
+       46
+      ],
+      [
+       "THÁNG 7/2025",
+       20
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "%",
+     "max": 50
+    },
+    "dt": {
+     "loai": "so_sanh",
+     "tieu": "NĂM 2025: TỪ CÔNG BỐ ĐẾN THỎA THUẬN",
+     "a": [
+      "THÁNG 4/2025 · CÔNG BỐ",
+      46
+     ],
+     "b": [
+      "THÁNG 7/2025 · CÒN",
+      20
+     ],
+     "dv": "%",
+     "max": 50,
+     "tu_b": "là 20%",
+     "nguon": "Báo chí 4/2025 và 7/2025"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin thuế và phản ứng thị trường, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin thuế và phản ứng thị trường, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "TIN VĨ MÔ · THẾ GIỚI",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  },
+  "kieu": "dieu_tra",
+  "ghi_chu": "BẢN THỬ kiểu điều tra – KHÔNG ĐĂNG. Số liệu giữ nguyên bản SN2511THUE35 đã duyệt.",
+  "broll": [
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aerial_views_of_a_container_terminal_at_the_Port_of_Cork,_Cork,_Ireland.webm",
+    "tu": 3,
+    "den": 23
+   },
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/ContainerShip.webm",
+    "tu": 1,
+    "den": 21
+   },
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship.webm",
+    "tu": 1,
+    "den": 21
+   },
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hamburg_(Timelapse-Test).webm",
+    "tu": 1,
+    "den": 21
+   },
+   {
+    "pexels": "container port aerial"
+   }
+  ],
+  "broll_tim": "container terminal"
+ }
+]

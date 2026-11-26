@@ -65,6 +65,9 @@ jobs:
       - run: pip install -q vieneu "onnxruntime==1.22.1" numpy pillow opencv-python-headless
       - run: pip install -q -U yt-dlp || true   # kiểu meme: tải clip YouTube/báo (link file trực tiếp không cần)
       - run: python _video/reel.py "${{ needs.plan.outputs.batch }}" "${{ matrix.key }}"
+        env:   # Studio 26/11 kiểu "dieu_tra": b-roll tải ngay trong bước này (Commons luôn có dự phòng; Pexels/Pixabay chỉ dùng khi có khoá miễn phí)
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
       - name: Soat tu dong (khung hinh, QC, Gemini) – anh Huy 21/11
         continue-on-error: true
         env:

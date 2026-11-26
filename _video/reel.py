@@ -295,6 +295,9 @@ def main():
     R = next(r for r in json.load(open(os.path.join(QD, "reel.json"), encoding="utf-8")) if r["key"] == key)
     if R.get("kieu") == "meme":   # Studio 26/11: Short "MEME ĐỐI LẬP" (chia đôi, clip thật, không lời đọc) – kiểu cũ không đổi
         import meme; return meme.lam(R, QD, OUT, WORK, key)
+    DT = R.get("kieu") == "dieu_tra"   # Studio 26/11: kiểu ĐIỀU TRA (nền video thật, bản gốc, bản đồ) – chỉ thay khung hình, kiểu cũ không đổi
+    if DT: import dieu_tra
+    KH = dieu_tra.khung if DT else khung
     ket_cau_hoi(R)
     try:
         import kiem_loi; QC = kiem_loi.kiem([c for c in R["canh"] if not c.get("web") and not c.get("hoi")], R.get("cau_hoi"), True)
@@ -308,12 +311,14 @@ def main():
     for k_ in ("short_caption", "tieu_de"): R[k_] = xung_ho.le_phep(R.get(k_, ""))
     if R.get("cau_hoi"): R["cau_hoi"] = {k_: xung_ho.le_phep(v_) for k_, v_ in R["cau_hoi"].items()}
     try:
+        if DT: raise RuntimeError("dieu_tra: khong dung anh Commons tinh")
         import anh; kho = anh.Kho(WORK + "/anh")
     except Exception: kho = None
-    phs = anh_canh(R, kho, QD) if "--khong-anh" not in sys.argv else [None] * len(R["canh"])
+    if DT: phs = dieu_tra.chuan_bi(R, WORK)
+    else: phs = anh_canh(R, kho, QD) if "--khong-anh" not in sys.argv else [None] * len(R["canh"])
     if "--khung" in sys.argv:
         for i in (0, len(R["canh"]) // 2, len(R["canh"]) - 1):
-            khung(R, i, 1.2, 4, phs[i], i * 4 + 1.2, len(R["canh"]) * 4).save(os.path.join(OUT, "%s_khung%d.png" % (key, i)))
+            KH(R, i, 1.2, 4, phs[i], i * 4 + 1.2, len(R["canh"]) * 4).save(os.path.join(OUT, "%s_khung%d.png" % (key, i)))
         return
     # giọng chốt (miễn phí, như video dài)
     from vieneu import Vieneu
@@ -342,7 +347,9 @@ def main():
     fr = 0
     for i in range(len(R["canh"])):
         n = int(round(b[i + 1] * FPS)) - fr; T = n / FPS
-        for j in range(n): p.stdin.write(khung(R, i, j / FPS, T, phs[i], (fr + j) / FPS, b[-1]).tobytes())
+        for j in range(n):
+            fm = KH(R, i, j / FPS, T, phs[i], (fr + j) / FPS, b[-1]); p.stdin.write(fm.tobytes())
+            if DT and j == min(n - 1, int(n * 0.6)): fm.resize((540, 960), Image.LANCZOS).save(os.path.join(OUT, "%s_k%02d.png" % (key, i)))   # khung soát từng cảnh
         fr += n
     p.stdin.close(); p.wait()
     out = os.path.join(OUT, key + ".mp4")
@@ -357,12 +364,13 @@ def main():
             open(os.path.join(OUT, key + "_qc.txt"), "a", encoding="utf-8").write("LỖI âm lượng %.1f LUFS (chuẩn -11)\n" % _lv)
         print(key, "LUFS", _lv, flush=True)
     except Exception as _e: print("lufs: bo qua", _e, flush=True)
-    khung(R, 0, 1.5, 4, phs[0], 1.5, b[-1]).resize((540, 960), Image.LANCZOS).save(os.path.join(OUT, key + "_bia.png"))
+    KH(R, 0, 1.5, 4, phs[0], 1.5, b[-1]).resize((540, 960), Image.LANCZOS).save(os.path.join(OUT, key + "_bia.png"))
     cap = bo_mien_tru(R.get("short_caption") or R.get("tieu_de", ""))
     if R.get("cau_hoi"): cap = "💬 " + R["cau_hoi"].get("loi", "") + "\n\n" + cap
     open(os.path.join(OUT, key + "_mo_ta.txt"), "w", encoding="utf-8").write(
         cap + "\n\n📌 Huy Nguyễn Chứng Khoán\n🌐 chungkhoanhuynguyen.com\n💬 Zalo tư vấn: 0365 188 286\n" +
         (" ".join("#" + t.lstrip("#") for t in R.get("tags", [])) + "\n"))
+    if DT: dieu_tra.ghi_nguon(R, OUT, key)
     if kho is not None and getattr(kho, "credit", None):
         open(os.path.join(OUT, key + "_anh.txt"), "w", encoding="utf-8").write("Ảnh minh hoạ (Wikimedia Commons):\n" + "\n".join(kho.credit) + "\n" + ("Đã bỏ %d ảnh có mặt người: %s\n" % (len(kho.chan_mat), "; ".join(kho.chan_mat)) if getattr(kho, "chan_mat", None) else ""))
     print(key, "xong", out, "%.1fs" % b[-1], flush=True)
