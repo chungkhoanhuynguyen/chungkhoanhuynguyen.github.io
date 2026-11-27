@@ -1,0 +1,24 @@
+name: Kiem loi JavaScript (Playwright 390/1440)
+on:
+  workflow_run:
+    workflows: ["Cap nhat bang"]
+    types: [completed]
+  push:
+    branches: [main]
+    paths: ["index.html", "dinh-gia-co-phieu.html", "the-gioi-hang-hoa.html", "mo-tai-khoan-chung-khoan.html", "*.js", "ma.py", "_kiem/kiem_js.js"]
+  workflow_dispatch:
+concurrency: { group: kiem_js, cancel-in-progress: true }
+jobs:
+  kiem:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - run: npm i --no-save --no-audit --no-fund playwright@1.49.1 && npx playwright install --with-deps chromium
+      - run: |
+          python3 -m http.server 8765 >/dev/null 2>&1 &
+          sleep 2
+          node _kiem/kiem_js.js http://localhost:8765

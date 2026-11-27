@@ -163,6 +163,7 @@ GN = {1: "Bắt đầu", 2: "Giao dịch", 3: "Phân tích cơ bản", 4: "Phân
 GD = {1: "Chứng khoán là gì, mở tài khoản, nạp tiền", 2: "Đọc bảng giá, đặt lệnh, phí và thời gian tiền về", 3: "Đọc báo cáo tài chính, định giá, chọn cổ phiếu", 4: "Xu hướng, đường MA, RSI, dòng tiền", 5: "Cắt lỗ, margin, phân bổ vốn, kiểm soát cảm xúc", 6: "ETF, chứng chỉ quỹ, phái sinh, trái phiếu, IPO", 7: "Tích sản từ A đến Z, rủi ro, quản trị vốn: kiến thức quan trọng nhất", 8: "Giá dầu, lãi suất, tỷ giá, chính sách tác động tới cổ phiếu"}
 F = sorted(F, key=lambda x: x.get("grp", 1))
 FM = {x["slug"]: x for x in F}
+FV = [x for x in F if not x.get("canon")]  # bài đã gộp (canon) không hiện ở hub/mục lục/bài trước-sau
 # Trang trụ cột (hub) cho từng cụm từ khóa + từ điển thuật ngữ (NV2 2/11)
 HUB = {1: "bat-dau-chung-khoan", 2: "giao-dich-chung-khoan", 3: "phan-tich-co-ban", 4: "phan-tich-ky-thuat", 5: "quan-tri-rui-ro-va-tam-ly", 6: "san-pham-chung-khoan", 7: "tich-san-co-phieu", 8: "vi-mo-va-nganh"}
 HT = {1: "Chứng khoán cho người mới bắt đầu: kiến thức nền tảng", 2: "Giao dịch chứng khoán: đặt lệnh, bảng giá, phí, T+2", 3: "Phân tích cơ bản cổ phiếu: đọc BCTC, P/E, P/B, ROE", 4: "Phân tích kỹ thuật cho người mới: nến, MA, RSI, MACD", 5: "Quản trị rủi ro và tâm lý đầu tư chứng khoán", 6: "Sản phẩm chứng khoán: ETF, quỹ, phái sinh, trái phiếu", 7: "Tích sản cổ phiếu: đầu tư dài hạn từ A đến Z", 8: "Vĩ mô và ngành: lãi suất, tỷ giá, giá dầu, cổ phiếu"}
@@ -220,7 +221,7 @@ for x in F:
          f'<h1>{e(x["title"])}</h1><div class="meta">Cẩm nang chứng khoán cho người mới · Huy Nguyễn</div>',
          f'<div class="sum"><b>Tóm tắt:</b> {e(x["desc"])}</div>',
          '<div style="margin:20px 0;padding:14px 16px;border-radius:12px;background:#0068ff12;border:1px solid #0068ff55"><b>💬 Học cùng cộng đồng: hỏi đáp miễn phí cho người mới, nhận bảng tổng hợp BCTC và nhận định thị trường mỗi ngày</b><br><a href="https://zalo.me/g/jbnbiq994" target="_blank" rel="noopener" style="display:inline-block;margin-top:8px;background:#0068ff;color:#fff;padding:9px 16px;border-radius:999px;font-weight:700;text-decoration:none">Tham gia nhóm Zalo cộng đồng (miễn phí)</a></div>']
-    g = x.get("grp", 1); gi = [y for y in F if y.get("grp", 1) == g]; k = gi.index(x)
+    g = x.get("grp", 1); gi = [y for y in F if y.get("grp", 1) == g and (not y.get("canon") or y is x)]; k = gi.index(x)
     p.insert(3, f'<div class="step"><a href="{HP(g)}" style="color:inherit;text-decoration:none">Bước {g}: {GN[g]}</a> · Bài {k + 1}/{len(gi)}</div>')
     hs = [b[1] for b in x["body"] + x.get("add", []) if b[0] == "h2"]
     if len(hs) >= 3:
@@ -237,7 +238,7 @@ for x in F:
             p.append(f'<figure class="fimg"><img src="{e(b[1])}" alt="{e(b[2])}" loading="lazy" width="{b[4] if len(b)>4 else 1200}" height="{b[5] if len(b)>5 else 675}"><figcaption>{e(b[3])}</figcaption></figure>')
         else:
             p.append(blk(b[0], b[1]))
-    i = F.index(x); pv = F[i - 1] if i else None; nx = F[i + 1] if i + 1 < len(F) else None
+    FX = [y for y in F if not y.get("canon") or y is x]; i = FX.index(x); pv = FX[i - 1] if i else None; nx = FX[i + 1] if i + 1 < len(FX) else None
     p.append(ytblk(YTM.get(x["slug"], [])))
     _g = x.get("grp", 1)
     _t = ("Đọc tới đây là anh chị đã nắm phần nền. Cách học nhanh nhất là thực hành với một khoản nhỏ, có người soát giúp lệnh đầu tiên. " if _g <= 2 else "Kiến thức trong bài dùng tốt nhất khi áp vào chính danh mục của mình. ")
@@ -254,7 +255,7 @@ for x in F:
     open(os.path.join(ROOT, fn), "w", encoding="utf-8").write("\n".join(p))
 HNAV = '<nav class="toc"><b>Chủ đề</b><ol>' + "".join(f'<li><a href="{HP(g)}">{GN[g]}</a></li>' for g in GN) + '<li><a href="/f0/tu-dien-thuat-ngu-chung-khoan.html">Từ điển thuật ngữ A–Z</a></li></ol></nav>'
 for g in GN:
-    L = [x for x in F if x.get("grp", 1) == g]
+    L = [x for x in FV if x.get("grp", 1) == g]
     if not L: continue
     url = B + HP(g)
     ld = {"@context": "https://schema.org", "@graph": [
@@ -293,7 +294,7 @@ fkeep.add("f0/tu-dien-thuat-ngu-chung-khoan.html")
 open(os.path.join(ROOT, "f0/tu-dien-thuat-ngu-chung-khoan.html"), "w", encoding="utf-8").write("\n".join(p))
 url = B + "/f0/"
 ld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Cẩm nang chứng khoán cho người mới (F0)", "url": url, "inLanguage": "vi",
-      "hasPart": [{"@type": "Article", "headline": x["title"][:110], "url": B + FP(x)} for x in F]}
+      "hasPart": [{"@type": "Article", "headline": x["title"][:110], "url": B + FP(x)} for x in FV]}
 p = [head("Chứng khoán cho người mới bắt đầu: cẩm nang F0 từ A đến Z | Chứng Khoán Huy Nguyễn",
           "Cẩm nang chứng khoán cho người mới: chứng khoán là gì, mở tài khoản, cách mua cổ phiếu, đọc bảng giá, P/E, cắt lỗ, margin, T+2, cổ tức, phí và thuế.",
           url, B + "/img/og.png", ld), "<main>",
@@ -301,8 +302,8 @@ p = [head("Chứng khoán cho người mới bắt đầu: cẩm nang F0 từ A 
      '<style>.gp-all{display:none}@media (max-width:600px){.gp .f0l li:nth-child(n+7){display:none}.gp .f0l small{display:none}.gp .f0l li{padding:6px 0}.gp-all{display:block;margin:4px 0 8px;padding:12px 16px;min-height:44px;border:1px solid #d9cdee;border-radius:12px;font-weight:700;text-decoration:none;text-align:center}}</style>',
      '<div class="bc"><a href="/">Trang chủ</a> › Cẩm nang F0</div><h1>Chứng khoán cho người mới bắt đầu: cẩm nang F0</h1>',
      f'<p class="meta">{len(F)} bài, chia {len(GN)} bước. Học lần lượt từ Bước 1, mỗi bài có ví dụ dễ hiểu và nút sang bài tiếp theo.</p>' +
-     '<nav class="toc"><b>Lộ trình</b><ol>' + "".join(f'<li><a href="#b{g}">Bước {g}: {GN[g]}</a> <small>({sum(1 for x in F if x.get("grp", 1) == g)} bài)</small></li>' for g in GN if any(x.get("grp", 1) == g for x in F)) + '</ol></nav>' +
-     HNAV + "".join(f'<section class="gp" id="b{g}"><h2><a href="{HP(g)}" style="color:inherit;text-decoration:none">Bước {g}: {GN[g]}</a></h2><p>{GD[g]}</p><ol class="f0l">' + "".join(f'<li><a href="{FP(x)}"><b>{e(x["title"])}</b></a><br><small>{e(x["desc"])}</small></li>' for x in F if x.get("grp", 1) == g) + f'</ol><a class="gp-all" href="{HP(g)}">Xem đủ {sum(1 for x in F if x.get("grp", 1) == g)} bài Bước {g} →</a></section>' for g in GN if any(x.get("grp", 1) == g for x in F)),
+     '<nav class="toc"><b>Lộ trình</b><ol>' + "".join(f'<li><a href="#b{g}">Bước {g}: {GN[g]}</a> <small>({sum(1 for x in FV if x.get("grp", 1) == g)} bài)</small></li>' for g in GN if any(x.get("grp", 1) == g for x in FV)) + '</ol></nav>' +
+     HNAV + "".join(f'<section class="gp" id="b{g}"><h2><a href="{HP(g)}" style="color:inherit;text-decoration:none">Bước {g}: {GN[g]}</a></h2><p>{GD[g]}</p><ol class="f0l">' + "".join(f'<li><a href="{FP(x)}"><b>{e(x["title"])}</b></a><br><small>{e(x["desc"])}</small></li>' for x in FV if x.get("grp", 1) == g) + f'</ol><a class="gp-all" href="{HP(g)}">Xem đủ {sum(1 for x in FV if x.get("grp", 1) == g)} bài Bước {g} →</a></section>' for g in GN if any(x.get("grp", 1) == g for x in FV)),
      f'<div class="cta"><a class="btn b1" href="/hoc/">Thư viện bài học có video</a><a class="btn b2" href="{YT}?sub_confirmation=1" rel="noopener">Kênh YouTube</a></div></main>' + FOOT]
 open(os.path.join(ROOT, "f0/index.html"), "w", encoding="utf-8").write("\n".join(p))
 for f in os.listdir(os.path.join(ROOT, "f0")):

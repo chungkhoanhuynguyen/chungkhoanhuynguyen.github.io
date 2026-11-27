@@ -8622,7 +8622,7 @@
 "slug": "mo-hinh-hai-day-la-gi",
 "kw": "mô hình hai đáy",
 "grp": 4,
-"title": "Mô hình hai đáy là gì? Cách nhận biết và tránh bẫy hai đáy giả",
+"title": "Mô hình hai đáy, hai đỉnh là gì? Cách nhận biết và tránh bẫy",
 "desc": "Mô hình hai đáy (double bottom) là gì, cách nhận diện đường viền cổ, vai trò khối lượng, điểm xác nhận và cách đặt cắt lỗ cho người mới.",
 "body": [
 [
@@ -8662,6 +8662,22 @@
 ],
 [
 "h2",
+"Mô hình hai đỉnh khác hai đáy thế nào?"
+],
+[
+"p",
+"Hai đỉnh (hình chữ M) là phiên bản lộn ngược của hai đáy, xuất hiện sau một nhịp tăng và báo hiệu lực mua yếu dần."
+],
+[
+"ul",
+[
+"Giá lên đỉnh 1, giảm về một đáy nhỏ (đường viền cổ), rồi lên lại gần đỉnh cũ nhưng không vượt.",
+"Chỉ xác nhận khi giá đóng cửa thủng đường viền cổ, thường kèm khối lượng tăng.",
+"Khoảng cách hai đỉnh vài tuần trở lên; khung tuần đáng tin hơn khung ngày."
+]
+],
+[
+"h2",
 "Bẫy hai đáy giả"
 ],
 [
@@ -8681,13 +8697,18 @@
 [
 "Mô hình hai đỉnh là gì?",
 "Là mẫu hình ngược lại (hình chữ M), báo hiệu xu hướng tăng có thể kết thúc."
+],
+[
+"Mô hình hai đỉnh có chính xác không?",
+"Không có mô hình nào chính xác tuyệt đối. Hai đỉnh chỉ cho biết xác suất đảo chiều cao hơn khi đã thủng đường viền cổ; luôn cần điểm cắt lỗ."
 ]
 ],
 "rel": [
 "ho-tro-khang-cu",
 "khoi-luong-giao-dich-va-dong-tien",
 "cat-lo-la-gi"
-]
+],
+"mod": "2026-11-27"
 },
 {
 "slug": "mo-hinh-vai-dau-vai-la-gi",
@@ -11199,135 +11220,191 @@
 "mo-hinh-nen-nhat-co-ban",
 "khoi-luong-giao-dich-va-dong-tien",
 "cach-xem-bieu-do-chung-khoan"
-]
+],
+"canon": "mo-hinh-hai-day-la-gi"
 },
 {
 "slug": "ty-gia-tang-anh-huong-co-phieu",
 "kw": "tỷ giá tăng ảnh hưởng chứng khoán",
 "grp": 8,
-"title": "Tỷ giá USD tăng ảnh hưởng thế nào đến cổ phiếu? Ngành nào lợi",
-"desc": "Tỷ giá USD/VND tăng tác động tới chứng khoán qua dòng vốn ngoại, lãi suất, nợ ngoại tệ. Ngành xuất khẩu hưởng lợi, ngành nhập khẩu và vay USD bất lợi.",
+"title": "Tỷ giá USD tăng ảnh hưởng cổ phiếu thế nào? Ngành nào lợi, hại",
+"desc": "Năm 2026 DXY tăng 5,7%, USD/VND giảm 1,5%, VN-Index giảm 7,3%. Tỷ giá chạm cổ phiếu qua 3 đường: khối ngoại, lãi suất, chi phí doanh nghiệp.",
 "body": [
 [
 "p",
-"Tỷ giá USD/VND tăng nghĩa là đồng Việt Nam mất giá so với đô la Mỹ. Đây là biến số vĩ mô ảnh hưởng mạnh tới thị trường chứng khoán."
+"Năm 2026 có một chuyện ngược đời: đồng USD mạnh lên khắp thế giới, nhưng giá USD/VND lại thấp hơn đầu năm. Người hỏi em \"tỷ giá tăng thì cổ phiếu nào lợi\" thường chỉ nhìn một con số – và dễ đoán sai."
 ],
 [
-"h2",
-"1. Tác động chung lên thị trường"
+"table",
+[
+[
+"Chỉ số",
+"31/12/2025 →<br>27/11/2026"
 ],
 [
-"ul",
+"DXY<br>(sức mạnh USD)",
+"98,28 → 103,84<br><b>+5,7%</b>"
+],
 [
-"<b>Khối ngoại:</b> nhà đầu tư nước ngoài bị lỗ tỷ giá khi quy đổi về USD, dễ bán ròng.",
-"<b>Lãi suất:</b> để giữ ổn định tỷ giá, Ngân hàng Nhà nước có thể hút tiền về hoặc tăng lãi suất, gây áp lực lên chứng khoán.",
-"<b>Lạm phát:</b> hàng nhập khẩu đắt hơn."
+"USD/VND<br>(giá quốc tế)",
+"26.225 → 25.825<br>−1,5%"
+],
+[
+"VN-Index",
+"1.784,49 → 1.653,90<br><b>−7,3%</b>"
 ]
-],
-[
-"h2",
-"2. Ngành hưởng lợi"
-],
-[
-"ul",
-[
-"Doanh nghiệp xuất khẩu thu USD, chi phí chủ yếu bằng VND: thủy sản, dệt may, gỗ.",
-"Doanh nghiệp có tiền gửi hoặc tài sản bằng USD."
-]
-],
-[
-"h2",
-"3. Ngành bất lợi"
-],
-[
-"ul",
-[
-"Doanh nghiệp vay nợ bằng USD: lỗ chênh lệch tỷ giá khi đánh giá lại nợ.",
-"Doanh nghiệp nhập nguyên liệu bằng USD bán hàng trong nước: chi phí tăng, ví dụ ngành nhựa nhập hạt nhựa, thép nhập quặng và than.",
-"Hàng không, điện khí: chi phí nhiên liệu, thiết bị bằng USD."
-]
-],
-[
-"h2",
-"4. Cách theo dõi"
-],
-[
-"ul",
-[
-"Tỷ giá trung tâm và tỷ giá tại các ngân hàng thương mại.",
-"Chỉ số DXY (sức mạnh đồng USD) và quyết định lãi suất của Fed.",
-"Chênh lệch lỗ, lãi tỷ giá trong báo cáo tài chính doanh nghiệp."
 ]
 ],
 [
 "p",
-"Muốn đọc sớm hướng đi của tỷ giá, nhiều người theo dõi chỉ số sức mạnh đồng USD – xem <a href=\"/f0/chi-so-dxy-la-gi.html\">chỉ số DXY là gì</a> (tuần 9–13/11/2026 DXY lên 103,41, cao nhất từ 4/2025)."
-]
+"Ba con số này không có quan hệ một đổi một. Bài này giải thích tỷ giá tác động lên cổ phiếu qua đường nào, ngành nào chịu trước, để anh chị đọc tin tỷ giá không bị giật mình."
 ],
-"faq": [
-[
-"Tỷ giá tăng thì nên mua cổ phiếu ngành gì?",
-"Bài viết không khuyến nghị mua bán. Về lý thuyết, doanh nghiệp xuất khẩu ít nợ USD thường ít bị ảnh hưởng hoặc hưởng lợi."
-],
-[
-"Lỗ tỷ giá thể hiện ở đâu trong BCTC?",
-"Trong chi phí tài chính trên báo cáo kết quả kinh doanh, phần lỗ chênh lệch tỷ giá."
-]
-],
-"rel": [
-"chi-so-dxy-la-gi",
-"lai-suat-tang-anh-huong-chung-khoan",
-"khoi-ngoai-mua-rong-ban-rong-la-gi",
-"gia-hat-nhua-hdpe-pvc-tang-co-phieu-nganh-nhua",
-"bao-cao-ket-qua-kinh-doanh-la-gi"
-],
-"add": [
 [
 "h2",
-"Số liệu tỷ giá 3 năm (đến 6/11/2026)"
+"Tỷ giá USD tăng nghĩa là gì?"
+],
+[
+"p",
+"Là phải trả nhiều đồng Việt Nam hơn để mua 1 USD – đồng Việt Nam mất giá so với USD. Giá anh chị mua USD do ngân hàng yết, chạy quanh <b>tỷ giá trung tâm</b> trong biên độ ±5%."
+],
+[
+"p",
+"Vì vậy \"tỷ giá trung tâm lập đỉnh\" chưa chắc là giá USD ngân hàng tăng: ngày 26/11/2026 giá bán còn thấp hơn đầu năm 1,4%. Xem <a href=\"/f0/ty-gia-trung-tam-la-gi.html\">tỷ giá trung tâm là gì</a>."
+],
+[
+"h2",
+"Tỷ giá tăng tác động lên chứng khoán qua mấy đường?"
+],
+[
+"p",
+"Qua 3 đường chính. Đường nào mạnh còn tuỳ mức tăng và cách Ngân hàng Nhà nước điều hành:"
+],
+[
+"table",
+[
+[
+"Đường",
+"Chuyện gì xảy ra"
+],
+[
+"Khối ngoại",
+"Quy đổi về USD bị lỗ<br>tỷ giá → dễ bán ròng"
+],
+[
+"Lãi suất",
+"NHNN có thể hút tiền<br>giữ tỷ giá → lãi khó giảm"
+],
+[
+"Chi phí<br>doanh nghiệp",
+"Nợ USD đánh giá lại tăng;<br>nguyên liệu nhập đắt hơn"
+]
+]
+],
+[
+"p",
+"Năm 2022 cả 3 đường cùng chạy: giá USD ngân hàng bán tăng 8,5% trong 10 tháng, Ngân hàng Nhà nước tăng lãi suất điều hành 2 lần, VN-Index giảm 32,8% cả năm (xem <a href=\"/f0/chi-so-dxy-la-gi.html\">chỉ số DXY là gì</a>)."
+],
+[
+"h2",
+"Ngành nào hưởng lợi khi tỷ giá tăng?"
+],
+[
+"p",
+"Doanh nghiệp thu USD nhưng chi phí chủ yếu bằng đồng Việt Nam, và ít nợ USD:"
 ],
 [
 "ul",
 [
-"USD/VND khoảng 24.520 (11/2023), thấp nhất khoảng 24.130 (cuối 11/2023), đỉnh khoảng 26.425 (30/9/2025), hiện khoảng 25.580.",
-"So với đỉnh, tiền đồng lấy lại khoảng 3,2%; so với một năm trước khoảng 2,7%.",
-"Chỉ số USD (DXY) khoảng 102,3, từ đỉnh khoảng 110 (13/1/2025). Lợi suất trái phiếu Mỹ 10 năm khoảng 4,86%."
+"Xuất khẩu: thuỷ sản, dệt may, gỗ – cùng lượng hàng bán ra thu về nhiều đồng hơn.",
+"Doanh nghiệp có tiền gửi hoặc khoản phải thu bằng USD: được lãi chênh lệch tỷ giá khi đánh giá lại."
 ]
 ],
 [
 "h2",
-"Khi tỷ giá giảm (tiền đồng lên giá) thì ngược lại"
+"Ngành nào bất lợi khi tỷ giá tăng?"
+],
+[
+"p",
+"Doanh nghiệp nợ USD hoặc nhập nguyên liệu bằng USD rồi bán trong nước:"
 ],
 [
 "ul",
 [
-"Hưởng lợi: doanh nghiệp nợ vay USD, nhập khẩu nguyên liệu, hàng không (nhiên liệu, thuê tàu bay gắn USD), dòng vốn ngoại.",
-"Chịu thiệt: xuất khẩu có doanh thu USD, chi phí bằng đồng (dệt may, thủy sản, gỗ); doanh nghiệp giữ nhiều tài sản USD."
+"Vay nợ USD: lỗ chênh lệch tỷ giá khi đánh giá lại nợ cuối kỳ, nằm trong chi phí tài chính.",
+"Nhập nguyên liệu: nhựa nhập hạt nhựa, thép nhập quặng và than – chi phí tăng trước khi kịp tăng giá bán.",
+"Hàng không, điện khí: nhiên liệu, thiết bị, thuê máy bay tính bằng USD."
 ]
 ],
 [
 "h2",
-"Đọc độ nhạy tỷ giá trong báo cáo tài chính"
+"Lỗ tỷ giá nằm ở đâu trong báo cáo tài chính?"
+],
+[
+"p",
+"Nằm trong <b>chi phí tài chính</b> trên báo cáo kết quả kinh doanh, cùng chỗ với <a href=\"/f0/chi-phi-lai-vay-la-gi.html\">chi phí lãi vay</a>. Thuyết minh tách riêng lỗ chênh lệch tỷ giá đã thực hiện (đã trả nợ) và chưa thực hiện (mới đánh giá lại)."
+],
+[
+"p",
+"Phần chưa thực hiện có thể đảo chiều kỳ sau nếu tỷ giá quay đầu. Vì vậy một quý lỗ tỷ giá lớn chưa chắc là doanh nghiệp kinh doanh kém – cần xem lãi gộp có giữ được không."
+],
+[
+"h2",
+"Bẫy hay gặp"
+],
+[
+"ul",
+[
+"<b>Thấy DXY tăng là bán hết cổ phiếu.</b> Năm 2026 DXY +5,7% nhưng USD/VND lại giảm; tác động tới từng mã rất khác nhau.",
+"<b>Mua cổ phiếu xuất khẩu chỉ vì tỷ giá.</b> Nếu doanh nghiệp đó nợ USD nhiều, phần lãi bán hàng có thể bị lỗ tỷ giá ăn mất.",
+"<b>Nhầm lỗ tỷ giá chưa thực hiện là lỗ thật.</b> Đọc thuyết minh chi phí tài chính trước khi kết luận."
+]
+],
+[
+"h2",
+"Checklist theo dõi tỷ giá"
 ],
 [
 "ol",
 [
-"Thuyết minh vay và nợ thuê tài chính: phần vay bằng ngoại tệ.",
-"Doanh thu và chi phí tài chính: lãi/lỗ chênh lệch tỷ giá đã và chưa thực hiện.",
-"Thuyết minh rủi ro tiền tệ: nhiều doanh nghiệp tự ước tính lợi nhuận thay đổi khi tỷ giá thay đổi 1%."
+"Mỗi tuần xem giá USD bán ra ở 2–3 ngân hàng lớn, không chỉ tỷ giá trung tâm.",
+"Theo dõi DXY và lịch họp Fed (gần nhất 8–9/12/2026).",
+"Với mã đang giữ: kiểm nợ vay bằng USD và tỷ trọng nguyên liệu nhập trong thuyết minh.",
+"Xem dòng mua bán ròng của <a href=\"/f0/khoi-ngoai-mua-rong-ban-rong-la-gi.html\">khối ngoại</a> những tuần tỷ giá nóng."
 ]
-],
-[
-"h2",
-"Quản trị rủi ro tỷ giá trong danh mục"
 ],
 [
 "p",
-"Không cần đoán tỷ giá. Hãy biết danh mục nghiêng về phía nào, cộng tỷ trọng các mã nhạy với tỷ giá, và tự hỏi: nếu tỷ giá quay lại vùng 26.400, phần danh mục bị ảnh hưởng là bao nhiêu? Ba yếu tố có thể làm tỷ giá đảo chiều: Fed tăng lãi suất thêm (họp 8–9/12/2026), lợi suất Mỹ trên 5%, thặng dư thương mại thu hẹp."
+"Giá USD/VND, DXY và chỉ số thế giới cập nhật mỗi ngày ở trang <a href=\"/the-gioi-hang-hoa.html\">Thế giới &amp; hàng hoá</a>."
+],
+[
+"p",
+"<small>Nguồn: DXY, USD/VND từ dữ liệu trang Thế giới &amp; hàng hoá (giá đóng cửa); VN-Index đóng cửa HOSE; giá ngân hàng bán theo WiData; 2022 theo BSC 30/12/2022 và WiData. Bài chia sẻ kiến thức, không phải khuyến nghị.</small>"
 ]
 ],
+"faq": [
+[
+"Tỷ giá tăng thì ngành nào hưởng lợi?",
+"Về lý thuyết là doanh nghiệp xuất khẩu thu USD, chi phí bằng đồng Việt Nam và ít nợ USD (thuỷ sản, dệt may, gỗ). Bài không khuyến nghị mua bán; cần kiểm nợ USD của từng doanh nghiệp."
+],
+[
+"Lỗ tỷ giá thể hiện ở đâu trong BCTC?",
+"Trong chi phí tài chính trên báo cáo kết quả kinh doanh; thuyết minh tách lỗ chênh lệch tỷ giá đã thực hiện và chưa thực hiện."
+],
+[
+"DXY tăng thì tỷ giá Việt Nam có tăng theo không?",
+"Không theo tỷ lệ một đổi một. Từ 31/12/2025 đến 27/11/2026 DXY tăng 5,7% nhưng giá USD/VND quốc tế giảm 1,5%."
+]
+],
+"rel": [
+"ty-gia-trung-tam-la-gi",
+"chi-so-dxy-la-gi",
+"lai-suat-tang-anh-huong-chung-khoan",
+"khoi-ngoai-mua-rong-ban-rong-la-gi",
+"chi-phi-lai-vay-la-gi",
+"gia-hat-nhua-hdpe-pvc-tang-co-phieu-nganh-nhua"
+],
 "viet_day": true,
-"mod": "2026-11-16"
+"mod": "2026-11-27"
 },
 {
 "slug": "casa-la-gi",
@@ -12096,7 +12173,8 @@
 "lai-suat-tang-anh-huong-chung-khoan",
 "roe-eps-la-gi",
 "bao-cao-luu-chuyen-tien-te-la-gi"
-]
+],
+"canon": "he-so-no-de-la-gi"
 },
 {
 "slug": "mo-hinh-vai-dau-vai",
@@ -16295,7 +16373,7 @@
 "rel": [
 "breakout-la-gi",
 "ho-tro-khang-cu",
-"mo-hinh-hai-dinh-hai-day",
+"mo-hinh-hai-day-la-gi",
 "cach-xem-bieu-do-chung-khoan"
 ],
 "add": []
@@ -21442,7 +21520,7 @@
 "<b>Tính ROE:</b> lợi nhuận 12 tháng chia cho vốn chủ sở hữu.",
 "<b>Tính giá trị sổ sách mỗi cổ phiếu (BVPS):</b> vốn chủ chia số cổ phiếu, xem <a href='/f0/bvps-la-gi.html'>BVPS là gì</a>.",
 "<b>Tính P/B:</b> giá thị trường chia BVPS, xem <a href='/f0/pb-la-gi.html'>P/B là gì</a>.",
-"<b>Tính đòn bẩy:</b> nợ trên vốn chủ, xem <a href='/f0/no-vay-tren-von-chu-so-huu.html'>nợ vay trên vốn chủ sở hữu</a>."
+"<b>Tính đòn bẩy:</b> nợ trên vốn chủ, xem <a href='/f0/he-so-no-de-la-gi.html'>nợ vay trên vốn chủ sở hữu</a>."
 ]
 ],
 [
@@ -21642,7 +21720,7 @@
 "Tỷ lệ lấp đầy các khu đã mở và giá thuê đất bình quân.",
 "Lợi nhuận nhiều quý và 9 tháng, không chỉ một quý.",
 "Quỹ đất còn lại và tiến độ pháp lý các dự án mới.",
-"Nợ vay và chi phí lãi vay so với dòng tiền (xem <a href='/f0/no-vay-tren-von-chu-so-huu.html'>nợ vay trên vốn chủ</a>).",
+"Nợ vay và chi phí lãi vay so với dòng tiền (xem <a href='/f0/he-so-no-de-la-gi.html'>nợ vay trên vốn chủ</a>).",
 "Khách thuê lớn đến từ ngành nào, vì nhu cầu thuê đất đi theo dòng vốn đầu tư vào sản xuất."
 ]
 ],
@@ -22291,7 +22369,7 @@
 ],
 [
 "p",
-"Giả sử doanh nghiệp X có doanh thu tăng 30% nhờ trúng thầu cao tốc, nhưng biên gộp chỉ 7% và chi phí lãi vay tăng 50%. Lợi nhuận có thể chỉ tăng nhẹ hoặc đi ngang. Hãy hỏi thêm: giá trị hợp đồng chưa thực hiện (backlog) còn bao nhiêu, phải thu tăng nhanh hơn doanh thu không, và nợ vay so với vốn chủ thế nào (xem <a href='/f0/no-vay-tren-von-chu-so-huu.html'>nợ vay trên vốn chủ</a>)."
+"Giả sử doanh nghiệp X có doanh thu tăng 30% nhờ trúng thầu cao tốc, nhưng biên gộp chỉ 7% và chi phí lãi vay tăng 50%. Lợi nhuận có thể chỉ tăng nhẹ hoặc đi ngang. Hãy hỏi thêm: giá trị hợp đồng chưa thực hiện (backlog) còn bao nhiêu, phải thu tăng nhanh hơn doanh thu không, và nợ vay so với vốn chủ thế nào (xem <a href='/f0/he-so-no-de-la-gi.html'>nợ vay trên vốn chủ</a>)."
 ],
 [
 "p",
@@ -22326,7 +22404,7 @@
 "co-phieu-chu-ky-la-gi",
 "pb-la-gi",
 "dong-tien-kinh-doanh-la-gi",
-"no-vay-tren-von-chu-so-huu"
+"he-so-no-de-la-gi"
 ],
 "mod": "2026-11-24"
 },
@@ -24547,7 +24625,6 @@
 "lo-luy-ke-la-gi",
 "dong-tien-kinh-doanh-la-gi",
 "he-so-no-de-la-gi",
-"no-vay-tren-von-chu-so-huu",
 "vay-ngan-han-va-dai-han-la-gi"
 ],
 "grp": 2,
@@ -29097,7 +29174,7 @@
 "rel": [
 "chung-chi-tien-gui-la-gi",
 "tai-san-ngan-han-la-gi",
-"no-vay-tren-von-chu-so-huu",
+"he-so-no-de-la-gi",
 "bang-can-doi-ke-toan-la-gi"
 ],
 "add": []
@@ -29363,7 +29440,7 @@
 "dau-tu-giu-den-ngay-dao-han-la-gi",
 "bao-cao-luu-chuyen-tien-te-la-gi",
 "tai-san-ngan-han-la-gi",
-"no-vay-tren-von-chu-so-huu"
+"he-so-no-de-la-gi"
 ],
 "add": []
 },
@@ -34354,7 +34431,7 @@
 ],
 [
 "p",
-"Vì sao trừ tiền khách trả trước? Đó là tiền khách đặt mua nhà hình thành trong tương lai, ghi vào nợ vì doanh nghiệp còn nghĩa vụ giao nhà, nhưng không phải nợ vay phải trả lãi. Xem thêm <a href=\"/f0/no-vay-tren-von-chu-so-huu.html\">nợ vay trên vốn chủ sở hữu</a> và <a href=\"/f0/vay-ngan-han-va-dai-han-la-gi.html\">vay ngắn hạn và dài hạn</a>."
+"Vì sao trừ tiền khách trả trước? Đó là tiền khách đặt mua nhà hình thành trong tương lai, ghi vào nợ vì doanh nghiệp còn nghĩa vụ giao nhà, nhưng không phải nợ vay phải trả lãi. Xem thêm <a href=\"/f0/he-so-no-de-la-gi.html\">nợ vay trên vốn chủ sở hữu</a> và <a href=\"/f0/vay-ngan-han-va-dai-han-la-gi.html\">vay ngắn hạn và dài hạn</a>."
 ],
 [
 "h2",
@@ -34447,7 +34524,7 @@
 "rel": [
 "87-phan-tram-tai-san-nam-o-nha-dat",
 "doc-bctc-cong-ty-bat-dong-san",
-"no-vay-tren-von-chu-so-huu",
+"he-so-no-de-la-gi",
 "vay-ngan-han-va-dai-han-la-gi",
 "dong-tien-kinh-doanh-la-gi"
 ],
@@ -38709,7 +38786,7 @@
 "body": [
 [
 "p",
-"Tuần 9–13/11/2026, chỉ số DXY tăng <b>1,09%</b> lên <b>103,41 điểm</b>, cao nhất kể từ tháng 4/2025. Cùng tuần, giá bán USD ở Vietcombank tăng <b>130 đồng</b> lên 25.910 đồng, BIDV tăng 145 đồng lên 25.920 đồng (Hà Nội Mới 14/11/2026). Một con số bên Mỹ, chạm thẳng vào bảng tỷ giá ở Việt Nam chỉ trong vài ngày."
+"Tuần 9–13/11/2026, chỉ số DXY tăng 1,09% lên <b>103,41 điểm</b>, cao nhất kể từ tháng 4/2025. Cùng tuần, giá bán USD ở Vietcombank tăng <b>130 đồng</b> lên 25.910 đồng, BIDV tăng 145 đồng lên 25.920 đồng (Hà Nội Mới 14/11/2026)."
 ],
 [
 "h2",
@@ -38725,11 +38802,28 @@
 ],
 [
 "p",
-"DXY không có đồng Việt Nam trong rổ. Tỷ giá USD/VND do Ngân hàng Nhà nước điều hành quanh <b>tỷ giá trung tâm</b>, ngân hàng thương mại được yết giá trong biên độ ±5% (tuần 9–13/11/2026: từ 24.355 đến 26.919 đồng). Vì vậy DXY tăng 1% không có nghĩa tỷ giá trong nước tăng đúng 1%. Tuần đó DXY tăng 1,09%, còn giá bán USD ở Vietcombank tăng khoảng 0,5% (130 đồng trên 25.780 đồng, em tự tính)."
+"DXY không có đồng Việt Nam trong rổ. Tỷ giá USD/VND do Ngân hàng Nhà nước điều hành quanh <b>tỷ giá trung tâm</b>; ngân hàng được yết giá trong biên độ ±5% (tuần 9–13/11/2026: từ 24.355 đến 26.919 đồng)."
+],
+[
+"table",
+[
+[
+"Tuần 9–13/11/2026",
+"Mức tăng"
+],
+[
+"DXY",
+"+1,09%"
+],
+[
+"Giá bán USD<br>Vietcombank",
+"≈ +0,5%<br>(130 / 25.780 đồng)"
+]
+]
 ],
 [
 "p",
-"Cách hiểu đơn giản: DXY là “nhiệt kế” cho sức mạnh của USD trên toàn thế giới. Khi nhiệt kế lên cao, đồng Việt Nam chịu áp lực, nhưng mức độ phụ thuộc vào dự trữ ngoại hối, cán cân thương mại và cách Ngân hàng Nhà nước điều hành. Người mới chỉ cần nhớ: theo dõi DXY để biết <b>hướng gió</b>, còn theo dõi giá bán USD ở ngân hàng để biết <b>túi mình</b> bị chạm tới đâu."
+"Cách hiểu đơn giản: DXY là \"nhiệt kế\" sức mạnh USD trên toàn thế giới. Theo dõi DXY để biết <b>hướng gió</b>; theo dõi giá bán USD ở ngân hàng để biết túi mình bị chạm tới đâu. Mức độ còn tuỳ dự trữ ngoại hối, cán cân thương mại và cách Ngân hàng Nhà nước điều hành."
 ],
 [
 "h2",
@@ -38737,7 +38831,15 @@
 ],
 [
 "p",
-"Nguyên nhân chính là kỳ vọng Fed tăng lãi suất. Lãi suất Fed đang ở 3,75–4% (Vietnam+ 11/11/2026), Fed đã tăng lãi suất tháng 9, và công cụ CME FedWatch cho khả năng tăng tiếp ở cuộc họp 8–9/12 trên 80%. Lợi suất trái phiếu Mỹ 2 năm lên 4,725% (CafeF 12/11/2026). Gửi tiền bằng USD có lãi cao hơn thì dòng tiền toàn cầu có xu hướng chảy về USD."
+"Nguyên nhân chính là kỳ vọng Fed tăng lãi suất. Gửi tiền bằng USD có lãi cao hơn thì dòng tiền toàn cầu có xu hướng chảy về USD."
+],
+[
+"ul",
+[
+"Lãi suất Fed 3,75–4% (Vietnam+ 11/11/2026); Fed đã tăng lãi suất tháng 9.",
+"CME FedWatch: khả năng tăng tiếp ở cuộc họp 8–9/12 trên 80%.",
+"Lợi suất trái phiếu Mỹ 2 năm lên 4,725% (CafeF 12/11/2026)."
+]
 ],
 [
 "h2",
@@ -38748,23 +38850,19 @@
 [
 [
 "Kênh",
-"Chuyện gì xảy ra",
 "Ai chịu trước"
 ],
 [
-"Tỷ giá",
-"Giá mua USD trong nước tăng (tuần 9–13/11: tỷ giá trung tâm 25.637, +22 đồng)",
-"Người du học, nhập hàng, có khoản vay USD"
+"Tỷ giá: giá mua USD<br>trong nước tăng",
+"Người du học, nhập hàng,<br>có khoản vay USD"
 ],
 [
-"Lãi suất",
-"Ngân hàng Nhà nước khó giảm lãi suất tiếp khi Mỹ tăng",
-"Người vay mua nhà lãi thả nổi"
+"Lãi suất: NHNN khó<br>giảm lãi khi Mỹ tăng",
+"Người vay mua nhà<br>lãi thả nổi"
 ],
 [
-"Chứng khoán",
-"Khối ngoại có thể rút vốn khỏi thị trường mới nổi",
-"Người dùng vay ký quỹ"
+"Chứng khoán: khối<br>ngoại có thể rút vốn",
+"Người dùng<br>vay ký quỹ"
 ]
 ]
 ],
@@ -38792,6 +38890,7 @@
 "ul",
 [
 "Xem DXY và giá bán USD ở 2–3 ngân hàng lớn mỗi tuần.",
+"Phân biệt \"tỷ giá trung tâm lập đỉnh\" với giá USD ngân hàng bán thật: xem <a href=\"/f0/ty-gia-trung-tam-la-gi.html\">tỷ giá trung tâm là gì</a>.",
 "Ghi lịch họp Fed (gần nhất 8–9/12/2026) và mức tăng thực tế: 0,25 hay 0,5 điểm.",
 "Kiểm tra lãi suất khoản vay nhà kỳ tới; tính trước nếu tăng 1 điểm phần trăm (vay 2 tỷ: thêm 20 triệu mỗi năm).",
 "Nếu dùng vay ký quỹ: tự hỏi nếu cổ phiếu giảm 20% có bị bán giải chấp không; đọc <a href=\"/f0/ban-giai-chap-la-gi.html\">bán giải chấp là gì</a>."
@@ -38821,12 +38920,13 @@
 ]
 ],
 "rel": [
+"ty-gia-trung-tam-la-gi",
 "chi-so-chung-khoan-the-gioi",
 "fed-tang-giam-lai-suat-tac-dong",
 "chung-khoan-my-giam-vn-index-co-giam-theo",
 "ban-giai-chap-la-gi"
 ],
-"mod": "2026-11-22"
+"mod": "2026-11-27"
 },
 {
 "slug": "von-dau-tu-38-5-trieu-ty-tien-o-dau-ra",
@@ -43669,6 +43769,313 @@
 "chi-phi-lai-vay-la-gi",
 "pha-loang-co-phieu-la-gi",
 "pb-la-gi"
+]
+},
+{
+"slug": "ty-gia-trung-tam-la-gi",
+"kw": "tỷ giá trung tâm là gì",
+"grp": 8,
+"date": "2026-11-27",
+"title": "Tỷ giá trung tâm là gì? Lập đỉnh mà giá USD ngân hàng lại giảm",
+"desc": "Tỷ giá trung tâm lập đỉnh 25.679 nhưng ngân hàng bán USD 26.010, rẻ hơn đầu năm. Ôm 10.000 USD từ đầu năm bán lại lỗ 7,47 triệu.",
+"body": [
+[
+"p",
+"Sáng 25/11/2026, báo đăng tin <b>tỷ giá trung tâm lập đỉnh lịch sử</b> – cao nhất từ trước tới nay. Anh Cường có con sắp đi học ở Mỹ, cần 20.000 USD vào tháng 6 năm sau. Anh định rút hết 600 triệu tiết kiệm, đổi luôn cho chắc."
+],
+[
+"p",
+"Cũng trong bài báo ấy có một dòng lạ: cùng buổi sáng, giá USD ở ngân hàng lại giảm. Em tách từng con số để anh chị tự trả lời (anh Cường là nhân vật giả định như trong video, số giá thật, em tự tính). Đọc xong, anh chị biết nên đổi USD ở đâu, lúc nào và bao nhiêu."
+],
+[
+"h2",
+"Tỷ giá trung tâm là gì?"
+],
+[
+"p",
+"Tỷ giá trung tâm là mức \"cọc\" Ngân hàng Nhà nước công bố mỗi sáng, không phải giá anh chị mua USD. Ngân hàng được bán cao hơn hoặc thấp hơn cọc tối đa <b>5%</b> – gọi là biên độ. Hình dung cái cọc cắm giữa sân buộc sợi dây dài 5%: giá ngân hàng chạy quanh cọc trong tầm dây."
+],
+[
+"table",
+[
+[
+"Sáng 25/11/2026",
+"Đồng/USD"
+],
+[
+"Tỷ giá trung tâm (cọc)",
+"<b>25.679</b>"
+],
+[
+"Trần ngân hàng được bán<br>(cọc + 5%)",
+"26.963"
+],
+[
+"Sàn (cọc − 5%)",
+"24.395"
+],
+[
+"Vietcombank bán ra<br>lúc 11 giờ",
+"25.970"
+]
+]
+],
+[
+"p",
+"Cọc lập đỉnh, nhưng Vietcombank bán thấp hơn trần <b>993 đồng</b> mỗi USD và còn giảm 20 đồng so với sáng 23/11 (MarketTimes 25/11/2026). Tức là giá thật còn xa mức trần, sợi dây đang chùng."
+],
+[
+"h2",
+"Giá USD ngân hàng bán hôm nay so với đầu năm ra sao?"
+],
+[
+"p",
+"Thấp hơn đầu năm khoảng <b>1,4%</b>, dù cọc cao hơn khoảng 2,2%. Chuỗi giá ngân hàng bán ra theo số liệu WiData (nguồn dữ liệu kinh tế):"
+],
+[
+"table",
+[
+[
+"Ngày",
+"Ngân hàng<br>bán ra",
+"Tỷ giá<br>trung tâm"
+],
+[
+"31/12/2025",
+"26.377",
+"25.121"
+],
+[
+"28/7/2026<br>(cao nhất năm)",
+"26.525",
+"–"
+],
+[
+"26/11/2026",
+"<b>26.010</b>",
+"25.676"
+]
+]
+],
+[
+"p",
+"Ngày 31/12/2025, giá ngân hàng bán (26.377) đúng bằng trần: 25.121 × 1,05. Còn nay giá bán cách trần gần nghìn đồng. Với 20.000 USD học phí, chênh 367 đồng/USD là khoảng <b>7,34 triệu</b> trả ít hơn người đổi ngày cuối năm ngoái."
+],
+[
+"h2",
+"Vì sao cọc lên mà giá ngân hàng xuống?"
+],
+[
+"p",
+"Vì hai lực kéo ngược nhau. Bên ngoài, đồng USD mạnh lên trên toàn thế giới; bên trong, cung USD dồi dào hơn. Em liệt kê điều báo đã nêu, không đoán thêm:"
+],
+[
+"ul",
+[
+"<b>USD thế giới mạnh:</b> chỉ số DXY (đo sức mạnh USD so với 6 đồng tiền lớn) từ 98,28 ngày 31/12/2025 lên 103,84 ngày 27/11/2026, tăng khoảng 5,7%. Xem <a href=\"/f0/chi-so-dxy-la-gi.html\">chỉ số DXY là gì</a>.",
+"<b>Mỹ có thể tăng lãi suất:</b> theo công cụ CME FedWatch (đo kỳ vọng của giới đầu tư), khả năng Fed – ngân hàng trung ương Mỹ – tăng lãi suất tháng 12 khoảng 97% (MarketTimes 25/11/2026).",
+"<b>Cung USD trong nước:</b> Việt Nam bán hàng ra nước ngoài thu thêm USD, cán cân xuất nhập khẩu cải thiện trong hai tháng gần đây (VietnamFinance 22/11/2026, phỏng vấn)."
+]
+],
+[
+"h2",
+"Đổi USD ở chợ đen có rẻ hơn không?"
+],
+[
+"p",
+"Không – đang đắt hơn ngân hàng. Giá USD tự do (mua bán ngoài ngân hàng, quen gọi chợ đen) ngày 26/11/2026 bán 26.560 đồng, cao hơn ngân hàng <b>550 đồng</b>, và tăng 680 đồng chỉ trong 10 ngày (từ 25.880 ngày 16/11)."
+],
+[
+"ul",
+[
+"20.000 USD mua giá tự do đắt hơn ngân hàng khoảng <b>11 triệu đồng</b>.",
+"Mua bán ngoại tệ ở nơi không được phép thu đổi là vi phạm; người mua cũng có thể bị xử phạt và tịch thu.",
+"Đổi ở ngân hàng cần giấy tờ chứng minh mục đích (học phí, du lịch…) nhưng là chỗ đổi đúng."
+]
+],
+[
+"h2",
+"Ôm 10.000 USD từ đầu năm giờ lời hay lỗ?"
+],
+[
+"p",
+"Lỗ <b>7,47 triệu đồng</b> (−2,8%). USD có hai giá như vàng: giá ngân hàng bán cho mình và giá thấp hơn khi ngân hàng mua lại. Ngày 26/11 hai giá cách nhau 380 đồng, khoảng 1,46%."
+],
+[
+"table",
+[
+[
+"10.000 USD",
+"Số tiền"
+],
+[
+"Mua 31/12/2025<br>giá 26.377",
+"263,77 triệu"
+],
+[
+"Bán lại 26/11/2026<br>giá mua vào 25.630",
+"256,3 triệu"
+],
+[
+"Lời/lỗ",
+"<b>−7,47 triệu</b>"
+],
+[
+"Nếu gửi tiết kiệm<br>5,2%/năm cùng kỳ",
+"≈ +12,4 triệu"
+]
+]
+],
+[
+"p",
+"Khoản lỗ gồm 367 đồng/USD vì giá bán đã xuống, cộng 380 đồng chênh mua–bán. Một bên lỗ, một bên lãi: cách nhau gần 20 triệu đồng trên cùng một khoản tiền."
+],
+[
+"h2",
+"Lần trước tỷ giá nóng (2022) người đổi đô ra sao?"
+],
+[
+"p",
+"Người đổi đúng lúc ai cũng hoảng đã lỗ. Năm 2022 giá ngân hàng bán tăng 8,5% trong 10 tháng; ngày 17/10/2022 Ngân hàng Nhà nước nới biên độ từ ±3% lên ±5% (SGGP 17/10/2022)."
+],
+[
+"table",
+[
+[
+"Năm 2022–2023",
+"Con số"
+],
+[
+"Ngân hàng bán<br>31/12/2021",
+"22.920"
+],
+[
+"Ngân hàng bán<br>31/10/2022",
+"24.879 (+8,5%)"
+],
+[
+"Kho USD dự phòng<br>cả nước 1→11/2022",
+"−26,17 tỷ USD"
+],
+[
+"Ngân hàng mua lại<br>31/3/2023",
+"23.290"
+]
+]
+],
+[
+"p",
+"Ai đổi 10.000 USD cuối tháng 10/2022 hết 248,79 triệu; tháng 3/2023 bán lại chỉ còn 232,9 triệu – <b>lỗ 15,89 triệu</b> (−6,4%) sau 5 tháng. Lần này khác: giá ngân hàng còn cách trần gần 1.000 đồng, và thấp hơn đầu năm."
+],
+[
+"h2",
+"Cần USD trả học phí thì đổi thế nào?"
+],
+[
+"p",
+"Đổi theo lịch chi tiêu, không theo tiêu đề báo. Ví dụ giả định của anh Cường: chia 20.000 USD làm 4 lần, mỗi lần 5.000 USD ở ngân hàng, lần cuối trước hạn đóng 1 tháng. Tiền chưa đổi gửi kỳ hạn ngắn, sổ tới hạn đúng ngày đổi."
+],
+[
+"table",
+[
+[
+"Kịch bản tới 5/2027<br>(giả định để so,<br>không phải dự báo)",
+"Đổi 1 lần<br>hôm nay",
+"Chia 4 lần"
+],
+[
+"Giá bán tăng đều 3%",
+"520,2 tr",
+"528 tr"
+],
+[
+"Giá đứng yên",
+"520,2 tr",
+"520,2 tr"
+],
+[
+"Giá bán giảm đều 3%",
+"520,2 tr",
+"512,4 tr"
+]
+]
+],
+[
+"p",
+"Chia nhỏ không làm mình thắng tỷ giá. Nó chỉ giữ mình ở giữa: USD lên thì chỉ mua đắt phần sau, USD xuống thì mua rẻ được phần còn lại. Mỗi lần đổi, giá thật còn tuỳ ngân hàng ngày đó."
+],
+[
+"h2",
+"Phép thử 3 dòng trước khi đổi đô"
+],
+[
+"ol",
+[
+"<b>12 tháng tới nhà mình phải trả bao nhiêu bằng USD?</b> Học phí, tiền hàng nhập, khoản nợ bằng USD.",
+"<b>Số USD đang giữ hoặc định mua có vượt con số đó không?</b> Phần vượt là phần đặt cược vào tỷ giá.",
+"<b>Nếu tỷ giá đứng yên 12 tháng, phần đặt cược mất bao nhiêu?</b> Khoảng 1,5% chênh mua–bán + khoảng 5% lãi tiết kiệm bỏ lỡ ≈ 6,5 triệu cho mỗi 100 triệu."
+]
+],
+[
+"p",
+"Mốc em tự đặt cho mình: giữ USD không quá số tiền phải trả bằng USD trong 12 tháng. Đây không phải lời khuyên chung, anh chị cân theo hoàn cảnh nhà mình."
+],
+[
+"h2",
+"Bẫy hay gặp"
+],
+[
+"ul",
+[
+"<b>Nghĩ \"tỷ giá lập đỉnh\" là giá mình mua ở đỉnh.</b> Cái lập đỉnh là cọc; giá ngân hàng bán 26/11 còn thấp hơn đầu năm.",
+"<b>Quên chênh mua–bán.</b> Mua 10.000 USD rồi bán lại ngay đã mất khoảng 3,8 triệu dù giá không đổi.",
+"<b>Ham đổi chợ đen cho nhanh.</b> Đang đắt hơn ngân hàng 550 đồng/USD và có rủi ro bị phạt, tịch thu."
+]
+],
+[
+"h2",
+"Checklist trước khi đổi USD"
+],
+[
+"ul",
+[
+"Đã ghi rõ số USD cần và ngày phải trả.",
+"Đã so giá bán ở 2–3 ngân hàng, không chỉ nhìn tỷ giá trung tâm.",
+"Đã chia lịch đổi nếu khoản lớn và còn vài tháng.",
+"Tiền chưa đổi đang gửi sổ có ngày tới hạn khớp ngày đổi.",
+"Không giữ USD \"chờ lên\" vượt nhu cầu 12 tháng mà chưa tính 6,5% chi phí đứng yên."
+]
+],
+[
+"p",
+"Giá USD/VND và chỉ số DXY cập nhật mỗi ngày ở trang <a href=\"/the-gioi-hang-hoa.html\">Thế giới &amp; hàng hoá</a>. Muốn hiểu tỷ giá chạm tới cổ phiếu thế nào, xem <a href=\"/f0/ty-gia-tang-anh-huong-co-phieu.html\">tỷ giá tăng ảnh hưởng cổ phiếu</a>."
+],
+[
+"p",
+"<small>Nguồn: MarketTimes 25/11/2026; VietnamFinance 20 và 22/11/2026; WiData (tỷ giá trung tâm, giá NHTM, giá tự do, dự trữ ngoại hối, lãi tiết kiệm); SGGP 17/10/2022; DXY từ dữ liệu trang Thế giới &amp; hàng hoá. Em tự tính các phép chia, nhân.</small>"
+]
+],
+"faq": [
+[
+"Tỷ giá trung tâm là gì?",
+"Là mức tỷ giá Ngân hàng Nhà nước công bố mỗi sáng làm \"cọc\". Ngân hàng thương mại được yết giá USD trong biên độ ±5% quanh mức này. Ngày 25/11/2026 tỷ giá trung tâm 25.679 đồng/USD, cao nhất từ trước tới nay."
+],
+[
+"Tỷ giá trung tâm tăng thì giá USD ngân hàng có tăng không?",
+"Không nhất thiết. Từ 31/12/2025 đến 26/11/2026 tỷ giá trung tâm tăng khoảng 2,2% nhưng giá ngân hàng bán ra giảm từ 26.377 xuống 26.010 đồng (−1,4%), vì giá bán đang cách xa trần biên độ."
+],
+[
+"Có nên mua USD tích trữ lúc tỷ giá lập đỉnh?",
+"Em không dự báo tỷ giá. Người mua 10.000 USD ngày 31/12/2025 bán lại ngày 26/11/2026 lỗ 7,47 triệu, trong khi gửi tiết kiệm lãi khoảng 12,4 triệu. Nếu không có khoản phải trả bằng USD, phần giữ thêm là đặt cược vào tỷ giá."
+]
+],
+"rel": [
+"ty-gia-tang-anh-huong-co-phieu",
+"chi-so-dxy-la-gi",
+"fed-tang-giam-lai-suat-tac-dong",
+"lai-suat-tiet-kiem-qua-dinh-gui-ky-han-nao",
+"co-nen-bat-day-vang",
+"lai-suat-thuc-la-gi"
 ]
 }
 ]
