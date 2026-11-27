@@ -1,5 +1,8 @@
 # Tin nóng 2026-11-27 (tự động, 270 tin từ 6 nguồn) – NV1B chọn 1–2 tin điểm cao làm kênh C
 
+- **[6] Tổng thống Trump nói Nga, Trung Quốc đều muốn cuộc xung đột Mỹ - Iran chấm dứt** – Tuổi Trẻ Thế giới · 11/27/2026 10:35
+  Theo Tổng thống Trump, chỉ khi trực tiếp nổ súng mới được xem là can dự vào cuộc xung đột Mỹ - Iran, chứ không phải chỉ cung cấp một ít thông tin cho Iran.
+  https://tuoitre.vn/tong-thong-trump-noi-nga-trung-quoc-deu-muon-cuoc-xung-dot-my-iran-cham-dut-10026112709524249.htm
 - **[6] Tin tức thế giới 26-11: Mỹ đổ lỗi cho châu Âu trong xung đột Nga - Ukraine; Triều Tiên tự tin về hạt nhân** – Tuổi Trẻ Thế giới · 11/26/2026 6:27:
   Lãnh đạo Triều Tiên kêu gọi triển khai vũ khí hạt nhân chiến thuật trên nhiều lĩnh vực; Bế tắc về lãnh thổ trong đàm phán Nga - Ukraine.
   https://tuoitre.vn/tin-tuc-the-gioi-26-11-my-do-loi-cho-chau-au-trong-xung-dot-nga-ukraine-trieu-tien-tu-tin-ve-hat-nhan-100261126061214891.htm
@@ -18,6 +21,12 @@
 - **[5] Mỹ sắp áp thuế lên hàng chục đối tác thương mại, mức cao nhất lên tới 20%** – Tuổi Trẻ Thế giới · 11/25/2026 8:57:
   Chính quyền Mỹ dự kiến công bố kế hoạch áp thuế đối với Trung Quốc, EU và hàng chục nền kinh tế khác.
   https://tuoitre.vn/my-sap-ap-thue-len-hang-chuc-doi-tac-thuong-mai-muc-cao-nhat-len-toi-20-100261125204427432.htm
+- **[4] Bão ập vào miền đông nước Mỹ, gần một triệu hộ mất điện** – VnExpress Thế giới · Fri, 27 Nov 2026
+  Mưa lớn cùng gió mạnh từ trận bão càn quét khu vực miền trung và miền đông nước Mỹ, khiến gần một triệu hộ mất điện.
+  https://vnexpress.net/bao-ap-vao-mien-dong-nuoc-my-gan-mot-trieu-ho-mat-dien-5149407.html
+- **[4] 'Ngòi nổ' hạt nhân khiến hai lãnh đạo Bắc Âu điện đàm với ông Putin** – VnExpress Thế giới · Fri, 27 Nov 2026
+  Lo ngại căng thẳng với Nga ở biển Baltic vượt tầm kiểm soát, hai lãnh đạo Bắc Âu đã tìm cách điện đàm với ông Putin để "tháo ngòi nổ".
+  https://vnexpress.net/ngoi-no-hat-nhan-khien-hai-lanh-dao-bac-au-dien-dam-voi-ong-putin-5148947.html
 - **[4] Elon Musk hứa tặng hai cổ phiếu SpaceX cho mỗi trẻ em tại Mỹ** – VnExpress Thế giới · Thu, 26 Nov 2026
   Người giàu nhất thế giới tuyên bố mỗi trẻ em ở Mỹ sẽ được nhận hai cổ phiếu SpaceX từ ông và công ty, gấp đôi cam kết tháng trước.
   https://vnexpress.net/elon-musk-hua-tang-hai-co-phieu-spacex-cho-moi-tre-em-tai-my-5149185.html
@@ -30,9 +39,9 @@
 - **[4] Tình báo Mỹ nói chưa có bằng chứng Trung Quốc đứng sau bê bối tình ái của Jensen Huang** – VnExpress Thế giới · Thu, 26 Nov 2026
   WSJ dẫn lời quan chức tình báo Mỹ rằng chưa có bằng chứng Alice Huang, người được cho có quan hệ tình cảm với Jensen Huang, được Trung Quốc chỉ đạo do thám CEO Nvidia.
   https://vnexpress.net/tinh-bao-my-noi-chua-co-bang-chung-trung-quoc-dung-sau-be-boi-tinh-ai-cua-jensen-huang-5148948.html
-- **[4] Lính Mỹ thú tội chuyển thông tin quân sự 'cho Trung Quốc'** – VnExpress Thế giới · Wed, 25 Nov 2026
-  Một binh sĩ Mỹ thừa nhận chuyển giao thông tin quốc phòng cho "những người có liên hệ với Trung Quốc" và đối mặt án tù 10 năm.
-  https://vnexpress.net/linh-my-thu-toi-chuyen-thong-tin-quan-su-cho-trung-quoc-5148587.html
+- **[4] Thuế mới của ông Trump thêm thử thách thương mại Mỹ - Trung** – VnExpress Kinh doanh · Fri, 27 Nov 2026
+  Washington và Bắc Kinh khả năng không muốn tái khởi động thương chiến, nhưng đợt thuế mới có thể đẩy các nền kinh tế khác vào thế khó.
+  https://vnexpress.net/thue-moi-cua-ong-trump-them-thu-thach-thuong-mai-my-trung-5149255.html
 - **[4] 'Sàn carbon Việt Nam gần như không có giao dịch'** – VnExpress Kinh doanh · Thu, 26 Nov 2026
   Sau phiên khai trương với giá 136.000 đồng mỗi tấn, sàn carbon Việt Nam gần như không phát sinh giao dịch mới, do thiếu cung cầu và chưa có đầy đủ công cụ vận hành.
   https://vnexpress.net/san-carbon-viet-nam-gan-nhu-khong-co-giao-dich-5149207.html
@@ -51,6 +60,9 @@
 - **[4] 'Sai lầm trị giá 1.500 tỷ USD' của HĐQT Nvidia góp phần đưa Jensen Huang trở lại** – VnExpress Kinh doanh · Tue, 24 Nov 2026
   Jensen Huang được trở lại vị trí lãnh đạo Nvidia trong chưa đầy 2 tuần - điều sẽ không thể xảy ra nếu HĐQT công ty không có những quyết định gây tranh cãi.
   https://vnexpress.net/sai-lam-tri-gia-1-500-ty-usd-cua-hdqt-nvidia-gop-phan-dua-jensen-huang-tro-lai-5148316.html
+- **[4] Quan chức Nga cảnh báo NATO về nguy cơ chiến tranh hạt nhân** – Tuổi Trẻ Thế giới · 11/27/2026 6:58:
+  Đại diện thường trực của Nga tại Tổ chức An ninh và Hợp tác châu Âu (OSCE) đã cảnh báo NATO về nguy cơ chiến tranh hạt nhân.
+  https://tuoitre.vn/quan-chuc-nga-canh-bao-nato-ve-nguy-co-chien-tranh-hat-nhan-100261127065127897.htm
 - **[4] Israel tuyên bố sẵn sàng tấn công Iran mà không cần Mỹ** – Tuổi Trẻ Thế giới · 11/26/2026 7:45:
   Quân đội Israel tuyên bố sẵn sàng tấn công Iran dù không có Mỹ tham gia, với lý do Tehran vẫn đang đe dọa sự tồn vong của nước này.
   https://tuoitre.vn/israel-tuyen-bo-san-sang-tan-cong-iran-ma-khong-can-my-100261126190942318.htm
@@ -63,15 +75,3 @@
 - **[4] Mỹ cấp phép cho SpaceX triển khai 1 triệu vệ tinh xây trung tâm dữ liệu không gian** – Tuổi Trẻ Thế giới · 11/26/2026 3:09:
   Mỹ đã cấp phép cho SpaceX của tỉ phú Elon Musk triển khai tới 1 triệu vệ tinh làm trung tâm dữ liệu trong không gian.
   https://tuoitre.vn/my-cap-phep-cho-spacex-trien-khai-1-trieu-ve-tinh-xay-trung-tam-du-lieu-khong-gian-100261126132440578.htm
-- **[4] Đại sứ quán ảo của Mỹ tại Iran: Kêu gọi công dân 'rời đi ngay lập tức', nguy cơ đóng không phận** – Tuổi Trẻ Thế giới · 11/26/2026 2:33:
-  Mỹ kêu gọi công dân rời Iran ngay lập tức, cảnh báo người Mỹ ở Trung Đông có thể trở thành mục tiêu tấn công.
-  https://tuoitre.vn/dai-su-quan-ao-cua-my-tai-iran-keu-goi-cong-dan-roi-di-ngay-lap-tuc-nguy-co-dong-khong-phan-100261126142444948.htm
-- **[4] Mỹ duyệt thương vụ bán thiết bị 622 triệu USD tiếp sức phi đội F-16 Ukraine** – Tuổi Trẻ Thế giới · 11/26/2026 9:25:
-  Mỹ đã phê duyệt thương vụ bán thiết bị bảo trì cùng nhiều hạng mục khác cho phi đội tiêm kích F-16 của Ukraine, với tổng trị giá 622 triệu USD do các đối tác châu Âu tài trợ.
-  https://tuoitre.vn/my-duyet-thuong-vu-ban-thiet-bi-622-trieu-usd-tiep-suc-phi-doi-f-16-ukraine-100261126090141423.htm
-- **[4] Cách Mỹ điều tra để xác định ông Jensen Huang không gây đe dọa an ninh quốc gia** – Tuổi Trẻ Thế giới · 11/26/2026 9:22:
-  Bộ trưởng Tư pháp Mỹ xác nhận ông Huang không gây ra rủi ro với an ninh quốc gia, sau khi tiến hành điều tra hai khách hàng của Nvidia bị nghi tuồn lậu chip sang Trung Quốc.
-  https://tuoitre.vn/cach-my-dieu-tra-de-xac-dinh-ong-jensen-huang-khong-gay-de-doa-an-ninh-quoc-gia-100261126080324218.htm
-- **[4] Iran cáo buộc Tel Aviv lừa Mỹ vào một cuộc chiến khác** – Tuổi Trẻ Thế giới · 11/26/2026 7:21:
-  Ngày 25-11, Ngoại trưởng Iran Abbas Araghchi cho rằng Israel tìm cách lôi kéo Mỹ vào một cuộc chiến khác, sau khi một bộ trưởng Israel cáo buộc Tehran đang chế tạo vũ khí hóa học.
-  https://tuoitre.vn/iran-cao-buoc-tel-aviv-lua-my-vao-mot-cuoc-chien-khac-100261126071443362.htm
