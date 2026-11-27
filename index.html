@@ -331,7 +331,7 @@ html{scroll-behavior:auto}
 .mw-c text{font:11px var(--body,system-ui);fill:var(--mute)}
 .mw-c .tk{font-weight:700;fill:var(--fg)}
 .lgi{display:inline-flex;align-items:center;white-space:nowrap}
-@media(max-width:600px){#fl-tb table,#fl-tb tbody{display:block;width:100%}#fl-tb thead{display:none}#fl-tb tr{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px 10px;padding:12px 2px;border-bottom:1px solid var(--line)}#fl-tb td{display:block;padding:0!important;border:0!important;text-align:left!important;font-size:15px}#fl-tb td.gd{grid-column:1/3;font-weight:700;white-space:nowrap;font-size:14px;align-self:center}#fl-tb td.th{grid-column:3;justify-self:end}#fl-tb td[data-l]::before{content:attr(data-l);display:block;font-size:12px;color:var(--mute);margin-bottom:2px}}
+@media(max-width:600px){#fl-tb table{font-size:14px}#fl-tb th,#fl-tb td{padding:8px 4px}#fl-tb .e,#fl-tb .y4{display:none}#fl-tb .tg{font-size:11px;padding:1px 7px}}
 .mw-f{font-size:12px;color:var(--mute);margin:6px 0 0;display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center}
 .lg{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:4px;vertical-align:-1px}
 .lg.up{background:#1f8a57}.lg.dn{background:#c43c32}.lg.mid{background:#d8b24a}.lg.vn{background:#8d8899}.lg.a50{background:#6a2d86}.lg.a200{background:#d08a1e}.lg.pe{background:#6a2d86}
@@ -357,7 +357,7 @@ html{scroll-behavior:auto}
 .fl-tb td{padding:6px;border-bottom:1px solid #f0edf4}.fl-tb td.r,.fl-tb th.r{text-align:right}
 .fl-tb .tg{display:inline-block;white-space:nowrap;border-radius:999px;padding:1px 9px;font-weight:700;font-size:11.5px}
 .fl-tb .tg.b{background:#e6f3ec;color:#1f8a57}.fl-tb .tg.t{background:#fbeceb;color:#c43c32}
-@media(max-width:640px){.fl-top{grid-template-columns:1fr}.fl-tb th:nth-child(4),.fl-tb td:nth-child(4){display:none}}
+@media(max-width:640px){.fl-top{grid-template-columns:1fr}.fl-tb th:nth-child(3),.fl-tb td:nth-child(3){display:none}}
 
 #mw-sec{max-width:680px}
 .mw-heat{display:grid;grid-template-columns:repeat(auto-fill,minmax(78px,1fr));grid-auto-rows:54px;gap:3px;grid-auto-flow:dense}
@@ -1667,9 +1667,9 @@ function flowp(h){
  var E=[],cu=null;for(var i=0;i<N;i++){var s=G[i];if(s){if(cu&&cu.s===s&&i-cu.e<=5){cu.e=i}else{cu={s:s,b:i,e:i};E.push(cu)}}}
  if(!E.length){$('fl-tb').innerHTML='';return}
  var pc2=function(a,b){if(a==null||b==null)return '–';var r=(b/a-1)*100;return '<span style="color:'+(r>=0?UP:DN)+'">'+(r>=0?'+':'−')+Math.abs(r).toFixed(1).replace('.',',')+'%</span>'};
- var fd=function(z){return z.slice(8,10)+'/'+z.slice(5,7)+'/'+z.slice(0,4)};
- var rows=E.slice(-6).reverse().map(function(e){var a20=Math.min(N-1,e.b+20);return '<tr><td class="gd">'+fd(D[e.b])+(e.e>e.b?' – '+fd(D[e.e]):'')+'</td><td class="th"><span class="tg '+(e.s>0?'b':'t')+'">'+(e.s>0?'Tạo đáy':e.s===-1?'Tạo đỉnh':'Đỉnh ngắn hạn')+'</span></td><td class="r" data-l="VN-Index lúc đó">'+nf(V[e.b],2)+'</td><td class="r" data-l="Sau 20 phiên">'+(e.b+20<N?pc2(V[e.b],V[a20]):'–')+'</td><td class="r" data-l="Đến nay">'+pc2(V[e.b],V[last])+'</td></tr>'}).join('');
- $('fl-tb').innerHTML='<table><thead><tr><th>Giai đoạn</th><th>Tín hiệu</th><th class="r">VN-Index lúc đó</th><th class="r">Sau 20 phiên</th><th class="r">Đến nay</th></tr></thead><tbody>'+rows+'</tbody></table>';
+ var fd=function(z){return z.slice(8,10)+'/'+z.slice(5,7)+'/<span class="y4">'+z.slice(0,2)+'</span>'+z.slice(2,4)};
+ var rows=E.slice(-6).reverse().map(function(e){var a20=Math.min(N-1,e.b+20);return '<tr><td class="gd">'+fd(D[e.b])+(e.e>e.b?'<span class="e"> – '+fd(D[e.e])+'</span>':'')+'</td><td class="th"><span class="tg '+(e.s>0?'b':'t')+'">'+(e.s>0?'Tạo đáy':e.s===-1?'Tạo đỉnh':'Đỉnh ngắn hạn')+'</span></td><td class="r" data-l="VN-Index lúc đó">'+nf(V[e.b],2)+'</td><td class="r" data-l="Sau 20 phiên">'+(e.b+20<N?pc2(V[e.b],V[a20]):'–')+'</td><td class="r" data-l="Đến nay">'+pc2(V[e.b],V[last])+'</td></tr>'}).join('');
+ $('fl-tb').innerHTML='<p style="font-size:13px;color:var(--mute);margin:10px 0 0">Những lần dòng tiền báo tín hiệu, VN-Index sau đó đi thế nào:</p><table data-tb="ok"><thead><tr><th>Ngày</th><th>Tín hiệu</th><th class="r">VN-Index lúc đó</th><th class="r">Sau 20 phiên</th><th class="r">Đến nay</th></tr></thead><tbody>'+rows+'</tbody></table>';
 }
 function meters(m){return [['Mã trên MA50 (xu hướng ngắn)',m.a50],['Mã trên MA200 (xu hướng dài)',m.a200]].map(function(r){var c=r[1]<20?DN:r[1]>80?UP:'#6a2d86';return '<div style="margin:8px 0 0"><div style="display:flex;justify-content:space-between;font-size:12.5px"><span>'+r[0]+'</span><b style="color:'+c+'">'+nf(r[1],1)+'%</b></div><div class="mw-bar" style="height:8px;background:#efebf4"><i style="width:'+r[1]+'%;background:'+c+'"></i></div></div>'}).join('')}
 function live(m){
