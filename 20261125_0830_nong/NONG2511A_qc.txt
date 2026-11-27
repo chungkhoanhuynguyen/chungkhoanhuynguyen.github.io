@@ -1,0 +1,3 @@
+CẢNH BÁO cảnh 28: câu cụt thiếu chủ ngữ – "Rồi."
+
+WHISPER: khớp mọi con số trên phụ đề.

@@ -1,0 +1,35 @@
+CẢNH BÁO cảnh 1: câu quá dài (40 từ) – tách đôi
+CẢNH BÁO cảnh 1: câu quá dài (40 từ) – tách đôi
+CẢNH BÁO cảnh 2: câu quá dài (87 từ) – tách đôi
+CẢNH BÁO cảnh 2: câu quá dài (82 từ) – tách đôi
+CẢNH BÁO cảnh 3: câu quá dài (87 từ) – tách đôi
+CẢNH BÁO cảnh 3: câu quá dài (89 từ) – tách đôi
+CẢNH BÁO cảnh 4: câu quá dài (43 từ) – tách đôi
+CẢNH BÁO cảnh 5: câu quá dài (44 từ) – tách đôi
+LỖI cảnh 10: câu cuối phải là câu hỏi mở thuần, không xin bình luận
+LỖI cảnh 10: số lẻ 2 chữ số sau dấu phẩy ('tám phẩy tám mươi hai' ra phụ đề '8,8 12%' – CH2411NX V0; 'bốn phẩy mười lăm' NONG1711A) – nói làm tròn 1 chữ số, số chính xác để trên thẻ
+CẢNH BÁO rủi ro trình chiếu: 43% thời lượng hình đứng yên ≥2s – thêm chuyển động/thẻ số/nhân vật
+CẢNH BÁO bìa lặp lại tiêu đề (75% từ trùng) – cùng lời hứa, khác chữ
+
+CẢNH BÁO whisper: 21 số trên phụ đề không nghe ra – nghe lại từng đoạn:
+  00:00:12 2.020 | Cổ phiếu đóng cửa ngày 2.020 sáuâm chínâm 30 ở
+  00:00:16 20.400 | khoảng 20,4 nghìn đồng,
+  00:00:46 2.020 | dữ liệu tổng hợp ngày 2.020 sáuâm chínâm 30.
+  00:01:02 994.000.000.000 | 2026 với khoảng 8.994 tỷ,
+  00:01:04 2.809 | thấp nhất ở quý bốn năm 2024 với khoảng 2.809 tỷ,
+  00:01:04 809.000.000.000 | thấp nhất ở quý bốn năm 2024 với khoảng 2.809 tỷ,
+  00:01:16 994.000.000.000 | quý một năm 2026 đạt 8.994 tỷ,
+  00:01:19 6.371 | quý hai năm 2026 đạt 6.371 tỷ,
+  00:01:19 371.000.000.000 | quý hai năm 2026 đạt 6.371 tỷ,
+  00:02:08 214.000.000.000 | Doanh thu thuần đạt 62.214 tỷ, tăng 70,9%.
+  00:02:20 214.000.000.000 | khoảng 62.214 tỷ,
+  00:02:22 491.000.000.000 | thấp nhất ở quý bốn năm 2024 với khoảng 34.491 tỷ,
+  00:02:29 176.000.000.000 | Bốn quý gần nhất lần lượt là quý bốn năm 2025 đạt 46.176 tỷ,
+  00:02:34 901.000.000.000 | quý một năm 2026 đạt 52.901 tỷ,
+  00:02:37 159.000.000.000 | quý hai năm 2026 đạt 55.159 tỷ,
+  00:02:40 214.000.000.000 | quý ba năm 2026 đạt 62.214 tỷ.
+  00:03:53 20.400 | Với giá khoảng 20,4 nghìn đồng,
+  00:04:36 26.300 | Đỉnh 52 tuần của HPG khoảng 26,3 nghìn đồng,
+  00:04:39 20.100 | đáy khoảng 20,1 nghìn đồng.
+  00:04:44 29 | Người mua ở đỉnh cần cổ phiếu tăng khoảng 29% mới hòa vốn.
+  00:06:04 20.100 | nếu giá quay về đáy 52 tuần khoảng 20,1 nghìn đồng,

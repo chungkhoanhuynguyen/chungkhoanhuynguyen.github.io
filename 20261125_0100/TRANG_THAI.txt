@@ -1,0 +1,25 @@
+total 93120
+drwxr-xr-x 2 runner runner     4096 Nov 24 19:04 .
+drwxr-xr-x 3 runner runner     4096 Nov 24 19:04 ..
+-rw-r--r-- 1 runner runner 65540759 Nov 24 19:04 CH0312VB.mp4
+-rw-r--r-- 1 runner runner    18433 Nov 24 19:04 CH0312VB.srt
+-rw-r--r-- 1 runner runner 13129955 Nov 24 19:04 CH0312VB_R1.mp4
+-rw-r--r-- 1 runner runner  3700511 Nov 24 19:04 CH0312VB_S1.mp4
+-rw-r--r-- 1 runner runner  6247005 Nov 24 19:04 CH0312VB_S2.mp4
+-rw-r--r-- 1 runner runner  2784404 Nov 24 19:04 CH0312VB_S3.mp4
+-rw-r--r-- 1 runner runner     1100 Nov 24 19:04 CH0312VB_anh.txt
+-rw-r--r-- 1 runner runner   549476 Nov 24 19:04 CH0312VB_bia.png
+-rw-r--r-- 1 runner runner   320459 Nov 24 19:04 CH0312VB_bia3.png
+-rw-r--r-- 1 runner runner   562414 Nov 24 19:04 CH0312VB_bia_b.png
+-rw-r--r-- 1 runner runner   563974 Nov 24 19:04 CH0312VB_bia_c.png
+-rw-r--r-- 1 runner runner     7093 Nov 24 19:04 CH0312VB_canh.json
+-rw-r--r-- 1 runner runner      268 Nov 24 19:04 CH0312VB_chuong.txt
+-rw-r--r-- 1 runner runner  1219049 Nov 24 19:04 CH0312VB_khung1.png
+-rw-r--r-- 1 runner runner      456 Nov 24 19:04 CH0312VB_qc.txt
+-rw-r--r-- 1 runner runner      402 Nov 24 19:04 CH0312VB_shorts.json
+-rw-r--r-- 1 runner runner   633846 Nov 24 19:04 CH0312VB_shorts.png
+-rw-r--r-- 1 runner runner     2498 Nov 24 19:04 CH0312VB_soat.txt
+-rw-r--r-- 1 runner runner    10677 Nov 24 19:04 CH0312VB_wsp.txt
+-rw-r--r-- 1 runner runner        0 Nov 24 19:04 TRANG_THAI.txt
+-rw-r--r-- 1 runner runner     4851 Nov 24 19:04 meta.json
+run: https://github.com/chungkhoanhuynguyen/chungkhoanhuynguyen.github.io/actions/runs/45453777585

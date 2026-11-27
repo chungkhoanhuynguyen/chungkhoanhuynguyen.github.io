@@ -1,0 +1,5 @@
+CẢNH BÁO cảnh 2: câu cụt thiếu chủ ngữ – "Tiền đi đâu?"
+
+CẢNH BÁO whisper: 2 số trên phụ đề không nghe ra – nghe lại từng đoạn:
+  00:03:24 4.800.000.000 | giá 4 tỷ 800 triệu.
+  00:03:25 3.900.000.000 | Giờ có người trả 3 tỷ 900 triệu.

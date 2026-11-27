@@ -1,0 +1,25 @@
+total 87804
+drwxr-xr-x 2 runner runner     4096 Nov 25 03:17 .
+drwxr-xr-x 3 runner runner     4096 Nov 25 03:17 ..
+-rw-r--r-- 1 runner runner 60045878 Nov 25 03:17 NONG2511A.mp4
+-rw-r--r-- 1 runner runner    17959 Nov 25 03:17 NONG2511A.srt
+-rw-r--r-- 1 runner runner 11569801 Nov 25 03:17 NONG2511A_R1.mp4
+-rw-r--r-- 1 runner runner  3492546 Nov 25 03:17 NONG2511A_S1.mp4
+-rw-r--r-- 1 runner runner  5423554 Nov 25 03:17 NONG2511A_S2.mp4
+-rw-r--r-- 1 runner runner  5009944 Nov 25 03:17 NONG2511A_S3.mp4
+-rw-r--r-- 1 runner runner     5074 Nov 25 03:17 NONG2511A_anh.txt
+-rw-r--r-- 1 runner runner   651327 Nov 25 03:17 NONG2511A_bia.png
+-rw-r--r-- 1 runner runner   305387 Nov 25 03:17 NONG2511A_bia3.png
+-rw-r--r-- 1 runner runner   638068 Nov 25 03:17 NONG2511A_bia_b.png
+-rw-r--r-- 1 runner runner   652911 Nov 25 03:17 NONG2511A_bia_c.png
+-rw-r--r-- 1 runner runner     7651 Nov 25 03:17 NONG2511A_canh.json
+-rw-r--r-- 1 runner runner      341 Nov 25 03:17 NONG2511A_chuong.txt
+-rw-r--r-- 1 runner runner  1301134 Nov 25 03:17 NONG2511A_khung1.png
+-rw-r--r-- 1 runner runner      118 Nov 25 03:17 NONG2511A_qc.txt
+-rw-r--r-- 1 runner runner      449 Nov 25 03:17 NONG2511A_shorts.json
+-rw-r--r-- 1 runner runner   712350 Nov 25 03:17 NONG2511A_shorts.png
+-rw-r--r-- 1 runner runner     6158 Nov 25 03:17 NONG2511A_soat.txt
+-rw-r--r-- 1 runner runner    11027 Nov 25 03:17 NONG2511A_wsp.txt
+-rw-r--r-- 1 runner runner        0 Nov 25 03:17 TRANG_THAI.txt
+-rw-r--r-- 1 runner runner     5786 Nov 25 03:17 meta.json
+run: https://github.com/chungkhoanhuynguyen/chungkhoanhuynguyen.github.io/actions/runs/45533024852

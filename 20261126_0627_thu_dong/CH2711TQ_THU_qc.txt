@@ -1,0 +1,7 @@
+CẢNH BÁO cảnh 1: câu cụt thiếu chủ ngữ – "Ba mươi lăm phần trăm."
+CẢNH BÁO cảnh 1: câu cụt thiếu chủ ngữ – "Nhưng khoan đã."
+CẢNH BÁO cảnh 14: câu cụt thiếu chủ ngữ – "Hùng kể lại."
+CẢNH BÁO cảnh 18: câu cụt thiếu chủ ngữ – "Và chưa dừng ở đó."
+CẢNH BÁO cảnh 20: câu cụt thiếu chủ ngữ – "Không."
+
+WHISPER: khớp mọi con số trên phụ đề.

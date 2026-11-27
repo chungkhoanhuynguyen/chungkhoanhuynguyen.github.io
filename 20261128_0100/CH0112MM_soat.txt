@@ -1,0 +1,46 @@
+== SOÁT TỰ ĐỘNG CH0112MM (2026-11-27 18:53 UTC) – thời lượng 478s
+== QC (dòng LỖI = không được đăng)
+CẢNH BÁO cảnh 13: câu cụt thiếu chủ ngữ – "Cường nhắn hỏi vợ."
+CẢNH BÁO cảnh 17: câu cụt thiếu chủ ngữ – "Rồi."
+CẢNH BÁO cảnh 35: câu cụt thiếu chủ ngữ – "Chưa ai mất việc cả."
+CẢNH BÁO bìa lặp lại tiêu đề (100% từ trùng) – cùng lời hứa, khác chữ
+
+CẢNH BÁO whisper: 1 số trên phụ đề không nghe ra – nghe lại từng đoạn:
+  00:05:14 30.000.000 | mỗi năm hụt 30 triệu.
+== ÂM LƯỢNG
+    I:         -11.2 LUFS
+== PHỤ ĐỀ ĐÁNG NGỜ
+== ẢNH DÙNG
+Ảnh minh hoạ (Wikimedia Commons):
+Ho Chi Minh City skyline – Diego Delso (CC BY-SA 3.0) https://commons.wikimedia.org/wiki/File:R%C3%ADo_Saig%C3%B3n,_Ciudad_Ho_Chi_Minh,_Vietnam,_2013-08-14,_DD_29.JPG
+Ho Chi Minh City skyline – Jim 陳 (CC BY-SA 2.0) https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_City_Skyline_(night).jpg
+Ho Chi Minh City skyline – Pimnl (CC0) https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_City_Skyline.jpg
+Ho Chi Minh City skyline – Tri Nguyen (CC BY 2.0) https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_City_skyline.jpg
+Ho Chi Minh City skyline – Xuanphuocle (CC BY-SA 4.0) https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_City_Skyline_2022_(3).jpg
+Ho Chi Minh City skyline – Xuanphuocle (CC BY-SA 4.0) https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_City_Skyline_2022_(2).jpg
+Ho Chi Minh City skyline – lumoplank (CC0) https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_City_-_Saigon1324.jpg
+Ho Chi Minh City skyline – Xuanphuocle (CC BY-SA 4.0) https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_City_skyline_at_night_12-10-2024_1.jpg
+Ho Chi Minh City skyline – Xuanphuocle (CC BY-SA 4.0) https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_City_skyline_at_night_12-10-2024_2.jpg
+Hanoi skyline – NKSTTSSHNVN (CC BY-SA 4.0) https://commons.wikimedia.org/wiki/File:Hanoi_Skyline_-_NKS.jpg
+supermarket Vietnam – Baophucminh53G (CC BY-SA 4.0) https://commons.wikimedia.org/wiki/File:On_Ph%C3%A1o_%C4%90%C3%A0i_L%C3%A1ng_Street_02-03-2026._Th%C3%A0nh_%C4%90%C3%B4_Supermarket_E1.jpg
+ov:Ho Chi Minh City skyline night – Jim 陳 (CC BY-SA 2.0) https://commons.wikimedia.org/w/index.php?curid=75798427
+Hanoi skyline – Ongbac9999 (CC BY-SA 3.0) https://commons.wikimedia.org/wiki/File:Hanoi_Skyline_panorama.JPG
+Hanoi skyline – Quangnlnhe182394 (CC0) https://commons.wikimedia.org/wiki/File:Hanoi_skyline_with_Ba_Vi_Mountain.jpg
+Hanoi skyline – Ongbac9999 (CC BY-SA 3.0) https://commons.wikimedia.org/wiki/File:Hanoi_skyline_panorama_1..JPG
+Hanoi skyline – Minhvuong308hn (CC BY-SA 4.0) https://commons.wikimedia.org/wiki/File:Hanoi_Skyline.jpg
+ov:Hanoi skyline night – NKSTTSSHNVN (CC BY-SA 4.0) https://commons.wikimedia.org/w/index.php?curid=117043700
+ov:Hanoi skyline night – Ongbac9999 (CC BY-SA 3.0) https://commons.wikimedia.org/w/index.php?curid=17912194
+Hanoi skyline – Trung |忠| |충| |まごころ| Vu |武| |무| |たけし| from Newcastle Upon Ty (CC BY 2.0) https://commons.wikimedia.org/wiki/File:North_West_Skyline_of_Hanoi_(8719994394).jpg
+Hanoi skyline – cloud.shepherd (CC BY 2.0) https://commons.wikimedia.org/wiki/File:Hanoi_skyline_(22813421939).jpg
+Bitexco Financial Tower – Diego Delso (CC BY-SA 3.0) https://commons.wikimedia.org/wiki/File:Vista_de_Ciudad_Ho_Chi_Minh_desde_Bitexco_Financial_Tower,_Vietnam,_2013-08-14,_DD_13.JPG
+ov:Hanoi skyline night – Quangnlnhe182394 (CC0 1.0) https://commons.wikimedia.org/w/index.php?curid=170343277
+Bitexco Financial Tower – Diego Delso (CC BY-SA 3.0) https://commons.wikimedia.org/wiki/File:Vista_de_Ciudad_Ho_Chi_Minh_desde_Bitexco_Financial_Tower,_Vietnam,_2013-08-14,_DD_06.JPG
+Bitexco Financial Tower – Diego Delso (CC BY-SA 3.0) https://commons.wikimedia.org/wiki/File:Vista_de_Ciudad_Ho_Chi_Minh_desde_Bitexco_Financial_Tower,_Vietnam,_2013-08-14,_DD_09.JPG
+Bitexco Financial Tower – Diego Delso (CC BY-SA 3.0) https://commons.wikimedia.org/wiki/File:Vista_de_Ciudad_Ho_Chi_Minh_desde_Bitexco_Financial_Tower,_Vietnam,_2013-08-14,_DD_04.JPG
+Bitexco Financial Tower – Diego Delso (CC BY-SA 3.0) https://commons.wikimedia.org/wiki/File:Vista_de_Ciudad_Ho_Chi_Minh_desde_Bitexco_Financial_Tower,_Vietnam,_2013-08-14,_DD_05.JPG
+== FILE
+CH0112MM.mp4 CH0112MM.srt CH0112MM_anh.txt CH0112MM_bia.png CH0112MM_canh.json CH0112MM_chuong.txt CH0112MM_khung1.png CH0112MM_qc.txt CH0112MM_soat.txt CH0112MM_wsp.txt 
+== GEMINI gemini-flash-latest vòng 1 lỗi: HTTP 429
+== GEMINI gemini-3.8-flash vòng 1 lỗi: HTTP 429
+== GEMINI (gemini-3.7-flash) xem CH0112MM_khung1.png – soát sơ bộ, QL1 vẫn duyệt bằng mắt:
+KHÔNG THẤY LỖI HÌNH.

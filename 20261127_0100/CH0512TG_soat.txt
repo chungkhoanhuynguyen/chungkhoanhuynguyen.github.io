@@ -1,0 +1,61 @@
+== SOÁT TỰ ĐỘNG CH0512TG (2026-11-26 18:52 UTC) – thời lượng 479s
+== QC (dòng LỖI = không được đăng)
+CẢNH BÁO cảnh 10: câu cụt thiếu chủ ngữ – "Sợi dây đang chùng."
+
+CẢNH BÁO whisper: 8 số trên phụ đề không nghe ra – nghe lại từng đoạn:
+  00:01:52 300 | chênh 367 đồng mỗi đô thành ra khoảng 7 triệu 300 nghìn đồng.
+  00:01:52 7.300.000 | chênh 367 đồng mỗi đô thành ra khoảng 7 triệu 300 nghìn đồng.
+  00:03:48 300 | cầm về 256 triệu 300 nghìn.
+  00:03:48 256.300.000 | cầm về 256 triệu 300 nghìn.
+  00:04:21 22.920 | ngân hàng bán đô 22.920 đồng.
+  00:04:47 248.800.000 | 10 nghìn đô hết 248 triệu 800 nghìn đồng.
+  00:04:57 16 | Lỗ gần 16 triệu, khoảng 6,4%.
+  00:04:57 16.000.000 | Lỗ gần 16 triệu, khoảng 6,4%.
+== ÂM LƯỢNG
+    I:         -11.2 LUFS
+== PHỤ ĐỀ ĐÁNG NGỜ
+== ẢNH DÙNG
+Ảnh minh hoạ (Wikimedia Commons):
+Ho Chi Minh City skyline – Diego Delso (CC BY-SA 3.0) https://commons.wikimedia.org/wiki/File:R%C3%ADo_Saig%C3%B3n,_Ciudad_Ho_Chi_Minh,_Vietnam,_2013-08-14,_DD_29.JPG
+Ho Chi Minh City skyline – Jim 陳 (CC BY-SA 2.0) https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_City_Skyline_(night).jpg
+Ho Chi Minh City skyline – Pimnl (CC0) https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_City_Skyline.jpg
+Ho Chi Minh City skyline – Tri Nguyen (CC BY 2.0) https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_City_skyline.jpg
+Ho Chi Minh City skyline – Xuanphuocle (CC BY-SA 4.0) https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_City_Skyline_2022_(3).jpg
+Ho Chi Minh City skyline – Xuanphuocle (CC BY-SA 4.0) https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_City_Skyline_2022_(2).jpg
+Ho Chi Minh City skyline – lumoplank (CC0) https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_City_-_Saigon1324.jpg
+Ho Chi Minh City skyline – Xuanphuocle (CC BY-SA 4.0) https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_City_skyline_at_night_12-10-2024_1.jpg
+Ho Chi Minh City skyline – Xuanphuocle (CC BY-SA 4.0) https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_City_skyline_at_night_12-10-2024_2.jpg
+Hanoi skyline – NKSTTSSHNVN (CC BY-SA 4.0) https://commons.wikimedia.org/wiki/File:Hanoi_Skyline_-_NKS.jpg
+ov:Ho Chi Minh City skyline night – Jim 陳 (CC BY-SA 2.0) https://commons.wikimedia.org/w/index.php?curid=75798427
+ov:Ho Chi Minh City skyline night – Gurval Le Bouter (CC BY 2.0) https://commons.wikimedia.org/w/index.php?curid=78494852
+ov:Ho Chi Minh City skyline night – Tri Nguyen (CC BY 2.0) https://commons.wikimedia.org/w/index.php?curid=77251066
+ov:Ho Chi Minh City skyline night – không rõ (CC0 1.0) https://www.rawpixel.com/image/5925417/photo-image-public-domain-free-city
+Hanoi skyline – Ongbac9999 (CC BY-SA 3.0) https://commons.wikimedia.org/wiki/File:Hanoi_Skyline_panorama.JPG
+Hanoi skyline – Quangnlnhe182394 (CC0) https://commons.wikimedia.org/wiki/File:Hanoi_skyline_with_Ba_Vi_Mountain.jpg
+Hanoi skyline – Ongbac9999 (CC BY-SA 3.0) https://commons.wikimedia.org/wiki/File:Hanoi_skyline_panorama_1..JPG
+Hanoi skyline – Minhvuong308hn (CC BY-SA 4.0) https://commons.wikimedia.org/wiki/File:Hanoi_Skyline.jpg
+Ho Chi Minh City Stock Exchange – Lengkeng91 at Vietnamese Wikipedia (Public domain) https://commons.wikimedia.org/wiki/File:T%C6%B0%E1%BB%A3ng_tr%C6%B0%E1%BB%9Bc_S%E1%BB%9F_Giao_d%E1%BB%8Bch_Ch%E1%BB%A9ng_kho%C3%A1n_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh_1.jpg
+Hanoi skyline – Trung |忠| |충| |まごころ| Vu |武| |무| |たけし| from Newcastle Upon Ty (CC BY 2.0) https://commons.wikimedia.org/wiki/File:North_West_Skyline_of_Hanoi_(8719994394).jpg
+Hanoi skyline – cloud.shepherd (CC BY 2.0) https://commons.wikimedia.org/wiki/File:Hanoi_skyline_(22813421939).jpg
+Bitexco Financial Tower – Diego Delso (CC BY-SA 3.0) https://commons.wikimedia.org/wiki/File:Vista_de_Ciudad_Ho_Chi_Minh_desde_Bitexco_Financial_Tower,_Vietnam,_2013-08-14,_DD_13.JPG
+Bitexco Financial Tower – Diego Delso (CC BY-SA 3.0) https://commons.wikimedia.org/wiki/File:Vista_de_Ciudad_Ho_Chi_Minh_desde_Bitexco_Financial_Tower,_Vietnam,_2013-08-14,_DD_06.JPG
+Bitexco Financial Tower – Diego Delso (CC BY-SA 3.0) https://commons.wikimedia.org/wiki/File:Vista_de_Ciudad_Ho_Chi_Minh_desde_Bitexco_Financial_Tower,_Vietnam,_2013-08-14,_DD_09.JPG
+Bitexco Financial Tower – Diego Delso (CC BY-SA 3.0) https://commons.wikimedia.org/wiki/File:Vista_de_Ciudad_Ho_Chi_Minh_desde_Bitexco_Financial_Tower,_Vietnam,_2013-08-14,_DD_04.JPG
+Bitexco Financial Tower – Diego Delso (CC BY-SA 3.0) https://commons.wikimedia.org/wiki/File:Vista_de_Ciudad_Ho_Chi_Minh_desde_Bitexco_Financial_Tower,_Vietnam,_2013-08-14,_DD_05.JPG
+Saigon river night – Bem photography: (CC BY 2.0) https://commons.wikimedia.org/wiki/File:Saigon_River_at_night.jpg
+Saigon river night – Keith Yahl (CC BY 2.0) https://commons.wikimedia.org/wiki/File:Night_in_Saigon,_Vietnam.jpg
+Saigon river night – Hưng Tạ (CC BY 2.0) https://commons.wikimedia.org/wiki/File:Night_in_Saigon_(15641982307).jpg
+Saigon river night – Kevin Rutherford from United States (CC BY-SA 2.0) https://commons.wikimedia.org/wiki/File:Night_in_Saigon_(52680876786).jpg
+Saigon river night – John Gremory (CC BY-SA 2.0) https://commons.wikimedia.org/wiki/File:Saigon_in-night,_2015.jpg
+Saigon river night – dronepicr (CC BY 2.0) https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_city_by_night_(39543883881).jpg
+Landmark 81 – Christine und Hagen Graf (CC BY 2.0) https://commons.wikimedia.org/wiki/File:Landmark_81_(32099609868).jpg
+Landmark 81 – Lê  Minh Phát (CC BY 2.0) https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_City_-_DJI_0124-HDR.jpg
+== FILE
+CH0512TG.mp4 CH0512TG.srt CH0512TG_anh.txt CH0512TG_bia.png CH0512TG_canh.json CH0512TG_chuong.txt CH0512TG_khung1.png CH0512TG_qc.txt CH0512TG_soat.txt CH0512TG_wsp.txt 
+== GEMINI gemini-flash-latest vòng 1 lỗi: HTTP 503
+== GEMINI gemini-3.8-flash vòng 1 lỗi: HTTP 503
+== GEMINI gemini-3.7-flash vòng 1 lỗi: HTTP 503
+== GEMINI gemini-pro-latest vòng 1 lỗi: HTTP 429
+== GEMINI gemini-2.5-flash vòng 1 lỗi: HTTP 404
+== GEMINI (gemini-flash-lite-latest) xem CH0512TG_khung1.png – soát sơ bộ, QL1 vẫn duyệt bằng mắt:
+00:03:20.000 – chữ tràn/bị cắt/đè nhau

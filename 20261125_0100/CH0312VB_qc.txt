@@ -1,0 +1,6 @@
+CẢNH BÁO cảnh 23: câu quá dài (39 từ) – tách đôi
+CẢNH BÁO rủi ro trình chiếu: 26% thời lượng hình đứng yên ≥2s – thêm chuyển động/thẻ số/nhân vật
+
+CẢNH BÁO whisper: 2 số trên phụ đề không nghe ra – nghe lại từng đoạn:
+  00:04:46 200 | Chiều hôm ấy tiệm chỉ mua vào 36 triệu 200 nghìn.
+  00:04:46 36.200.000 | Chiều hôm ấy tiệm chỉ mua vào 36 triệu 200 nghìn.

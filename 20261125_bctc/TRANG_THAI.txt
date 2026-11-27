@@ -1,0 +1,22 @@
+total 59232
+drwxr-xr-x 2 runner runner     4096 Nov 25 02:02 .
+drwxr-xr-x 3 runner runner     4096 Nov 25 02:02 ..
+-rw-r--r-- 1 runner runner 42734103 Nov 25 02:02 BC2511HPG.mp4
+-rw-r--r-- 1 runner runner    15258 Nov 25 02:02 BC2511HPG.srt
+-rw-r--r-- 1 runner runner  6996735 Nov 25 02:02 BC2511HPG_R1.mp4
+-rw-r--r-- 1 runner runner  2808824 Nov 25 02:02 BC2511HPG_S1.mp4
+-rw-r--r-- 1 runner runner  3425371 Nov 25 02:02 BC2511HPG_S2.mp4
+-rw-r--r-- 1 runner runner  2302733 Nov 25 02:02 BC2511HPG_S3.mp4
+-rw-r--r-- 1 runner runner     2491 Nov 25 02:02 BC2511HPG_anh.txt
+-rw-r--r-- 1 runner runner   556873 Nov 25 02:02 BC2511HPG_bia.png
+-rw-r--r-- 1 runner runner     1776 Nov 25 02:02 BC2511HPG_canh.json
+-rw-r--r-- 1 runner runner      353 Nov 25 02:02 BC2511HPG_chuong.txt
+-rw-r--r-- 1 runner runner  1209019 Nov 25 02:02 BC2511HPG_khung1.png
+-rw-r--r-- 1 runner runner     2716 Nov 25 02:02 BC2511HPG_qc.txt
+-rw-r--r-- 1 runner runner      325 Nov 25 02:02 BC2511HPG_shorts.json
+-rw-r--r-- 1 runner runner   528528 Nov 25 02:02 BC2511HPG_shorts.png
+-rw-r--r-- 1 runner runner     6110 Nov 25 02:02 BC2511HPG_soat.txt
+-rw-r--r-- 1 runner runner     9314 Nov 25 02:02 BC2511HPG_wsp.txt
+-rw-r--r-- 1 runner runner        0 Nov 25 02:02 TRANG_THAI.txt
+-rw-r--r-- 1 runner runner     2894 Nov 25 02:02 meta.json
+run: https://github.com/chungkhoanhuynguyen/chungkhoanhuynguyen.github.io/actions/runs/45527321803

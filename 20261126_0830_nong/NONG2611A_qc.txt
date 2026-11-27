@@ -1,0 +1,3 @@
+CẢNH BÁO cảnh 14: câu cụt thiếu chủ ngữ – "Vì cửa thật quá hẹp."
+
+WHISPER: khớp mọi con số trên phụ đề.

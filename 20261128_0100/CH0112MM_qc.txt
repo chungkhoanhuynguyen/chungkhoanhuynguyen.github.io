@@ -1,0 +1,7 @@
+CẢNH BÁO cảnh 13: câu cụt thiếu chủ ngữ – "Cường nhắn hỏi vợ."
+CẢNH BÁO cảnh 17: câu cụt thiếu chủ ngữ – "Rồi."
+CẢNH BÁO cảnh 35: câu cụt thiếu chủ ngữ – "Chưa ai mất việc cả."
+CẢNH BÁO bìa lặp lại tiêu đề (100% từ trùng) – cùng lời hứa, khác chữ
+
+CẢNH BÁO whisper: 1 số trên phụ đề không nghe ra – nghe lại từng đoạn:
+  00:05:14 30.000.000 | mỗi năm hụt 30 triệu.

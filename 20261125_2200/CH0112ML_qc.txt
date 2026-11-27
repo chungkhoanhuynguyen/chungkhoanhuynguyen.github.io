@@ -1,0 +1,7 @@
+CẢNH BÁO cảnh 1: câu cụt thiếu chủ ngữ – "Năm nghìn năm trăm người."
+CẢNH BÁO cảnh 7: câu cụt thiếu chủ ngữ – "Cường thì lo chuyện khác."
+CẢNH BÁO cảnh 7: câu cụt thiếu chủ ngữ – "Chuyện gì vừa xảy ra?"
+CẢNH BÁO cảnh 19: câu cụt thiếu chủ ngữ – "Đổi xe thì nhanh."
+CẢNH BÁO rủi ro trình chiếu: 29% thời lượng hình đứng yên ≥2s – thêm chuyển động/thẻ số/nhân vật
+
+WHISPER: khớp mọi con số trên phụ đề.

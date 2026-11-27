@@ -1,0 +1,16 @@
+total 90220
+drwxr-xr-x 2 runner runner     4096 Nov 27 18:54 .
+drwxr-xr-x 3 runner runner     4096 Nov 27 18:54 ..
+-rw-r--r-- 1 runner runner 90498145 Nov 27 18:54 CH0112MM.mp4
+-rw-r--r-- 1 runner runner    18717 Nov 27 18:54 CH0112MM.srt
+-rw-r--r-- 1 runner runner     3692 Nov 27 18:54 CH0112MM_anh.txt
+-rw-r--r-- 1 runner runner   469833 Nov 27 18:54 CH0112MM_bia.png
+-rw-r--r-- 1 runner runner     7512 Nov 27 18:54 CH0112MM_canh.json
+-rw-r--r-- 1 runner runner      252 Nov 27 18:54 CH0112MM_chuong.txt
+-rw-r--r-- 1 runner runner  1332607 Nov 27 18:54 CH0112MM_khung1.png
+-rw-r--r-- 1 runner runner      484 Nov 27 18:54 CH0112MM_qc.txt
+-rw-r--r-- 1 runner runner     4801 Nov 27 18:54 CH0112MM_soat.txt
+-rw-r--r-- 1 runner runner    11681 Nov 27 18:54 CH0112MM_wsp.txt
+-rw-r--r-- 1 runner runner        0 Nov 27 18:54 TRANG_THAI.txt
+-rw-r--r-- 1 runner runner     4989 Nov 27 18:54 meta.json
+run: https://github.com/chungkhoanhuynguyen/chungkhoanhuynguyen.github.io/actions/runs/46045720334

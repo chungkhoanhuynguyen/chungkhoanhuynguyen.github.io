@@ -1,0 +1,5 @@
+CẢNH BÁO bìa lặp lại tiêu đề (80% từ trùng) – cùng lời hứa, khác chữ
+
+CẢNH BÁO whisper: 2 số trên phụ đề không nghe ra – nghe lại từng đoạn:
+  00:01:30 2.007 | Việt Nam vào quãng ấy từ năm 2007.
+  00:02:48 2.022 | Theo khảo sát năm 2022 mà báo VnExpress dẫn,
