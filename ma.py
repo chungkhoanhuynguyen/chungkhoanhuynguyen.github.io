@@ -362,7 +362,7 @@ if len(TOM) >= 20:
     gr = sorted([x for x in L.items() if x[1].get("yoy") is not None and x[1]["ln"] >= 50], key=lambda x: -x[1]["yoy"])
     nh = [x for x in srt if x[1].get("f") == "bank"]; ck = [x for x in srt if x[1].get("f") == "ck"]
     tl = f"Kết quả kinh doanh {QL}: lợi nhuận {len(L)} doanh nghiệp niêm yết"
-    ds = f"Kết quả kinh doanh {QN} của {len(L)} doanh nghiệp: tổng lãi sau thuế {_nt(tot)} tỷ, {up} mã tăng, {dn} mã giảm. Xếp hạng lãi lớn nhất, tăng mạnh nhất, ngân hàng, chứng khoán."
+    ds = f"Kết quả kinh doanh {QN} của {len(L)} doanh nghiệp: tổng lãi sau thuế {_nt(tot)} tỷ, {up} mã tăng, {dn} mã giảm. Xếp hạng lãi lớn nhất, tăng mạnh nhất, theo ngành."
     faqk = [(f"Kết quả kinh doanh {QN} có gì nổi bật?", f"{len(L)} doanh nghiệp đã có số liệu, tổng lợi nhuận sau thuế công ty mẹ khoảng {_nt(tot)} tỷ đồng; {up} doanh nghiệp tăng lãi so với cùng kỳ, {dn} doanh nghiệp giảm, {lo} doanh nghiệp lỗ."),
             (f"Doanh nghiệp nào lãi lớn nhất {QN}?", ", ".join(f"{t} ({_nt(v['ln'])} tỷ)" for t, v in srt[:5]) + "."),
             (f"Ngân hàng nào lãi nhiều nhất {QN}?", ", ".join(f"{t} ({_nt(v['ln'])} tỷ)" for t, v in nh[:5]) + "." if nh else "Chưa đủ số liệu.")]

@@ -38,6 +38,7 @@ blockquote{margin:18px 0;padding:10px 16px;border-left:4px solid var(--acc);back
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin:12px 0 28px}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;text-decoration:none;color:var(--fg)}.card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}.card span{display:block;padding:10px 12px;font-weight:600;font-size:15px;line-height:1.45}
 footer{text-align:center;color:var(--mute);font-size:13px;padding:24px 16px;border-top:1px solid var(--line)}
+.cc{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--acc);border-radius:12px;padding:14px 16px;margin:22px 0}.cc b.t{display:block;font-size:16px;margin-bottom:8px}.cc form{display:flex;gap:8px;margin:0 0 10px}.cc input{flex:1;min-width:0;font:600 16px system-ui;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--fg);text-transform:uppercase}.cc button{font:700 15px system-ui;padding:10px 14px;border:0;border-radius:10px;background:var(--acc);color:#fff;cursor:pointer;min-height:44px}.cc ul{margin:0;padding:0;list-style:none;font-size:15px;line-height:1.45}.cc li{border-top:1px solid var(--line)}.cc li a{display:block;padding:9px 0;text-decoration:none;font-weight:600}.cc li a::after{content:" →";color:var(--gold)}.cc .mk a{display:inline-block;margin:0 6px 6px 0;padding:4px 10px;border:1px solid var(--line);border-radius:999px;text-decoration:none;font-weight:700;font-size:14px;min-height:32px}
 @media(max-width:560px){.pn{grid-template-columns:1fr}.nav a.hide{display:none}.brand{min-width:0;overflow:hidden;text-overflow:ellipsis}.brand{font-size:13px}.nav{gap:10px;font-size:13px}.top .in{gap:8px}}
 .tb{overflow-x:auto;margin:14px 0}.tb table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.5}.tb th,.tb td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:right;white-space:nowrap}.tb th:first-child,.tb td:first-child{text-align:left;white-space:normal;min-width:7.5em}.nav a{display:inline-flex;align-items:center;min-height:24px}.bc a,.step a{display:inline-block;padding:4px 0}.toc li{padding:3px 0}article ul li a,article ol li a,footer a{display:inline-block;padding:2px 0;min-height:24px}@media(max-width:480px){.tb table{font-size:14px}.tb th,.tb td{padding:7px 8px}}.tb th{color:var(--mute);font-weight:600}"""
 
@@ -48,7 +49,7 @@ def _ngan(t, n=64):
         if sep in t and len(t.split(sep)[0]) >= 25 and len(t.split(sep)[0]) <= n: return t.split(sep)[0]
     return t[:n].rsplit(" ", 1)[0].rstrip(",:–-") + "…"
 def head(title, desc, url, img, ld):
-    return f"""<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://i.ytimg.com; frame-src https://www.youtube-nocookie.com; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests"><meta name="referrer" content="strict-origin-when-cross-origin">
+    return f"""<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://i.ytimg.com; frame-src https://www.youtube-nocookie.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"><meta name="referrer" content="strict-origin-when-cross-origin">
 <title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{url}">
 <meta property="og:type" content="article"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{img}"><meta property="og:locale" content="vi_VN"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/img/fav-32.png"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&family=Playfair+Display:wght@800;900&display=swap">
@@ -61,6 +62,29 @@ def desc_of(v):
     s = v["sum"].replace("\n", " ")
     return s if len(s) <= 158 else s[:155].rsplit(" ", 1)[0] + "…"
 
+
+# C5 (27/11 Phòng Web): mỗi trang video dài có khối "Công cụ liên quan" – ô gửi mã (form GET, không cần JS) tới /soi-ma-mien-phi.html?ma=,
+# mã CP nhắc trong video (có trang /ma/), và công cụ theo chủ đề. Mô tả video trỏ về trang này (D1).
+_MA = {f[:-5] for f in os.listdir(os.path.join(ROOT, "ma")) if f.endswith(".html") and f != "index.html"} if os.path.isdir(os.path.join(ROOT, "ma")) else set()
+import re as _re
+def cong_cu(v):
+    txt = " ".join([v.get("title", ""), v.get("h1", "")] + list(v.get("tags", [])))
+    mk = []
+    for t in _re.findall(r"\b[A-Z][A-Z0-9]{2}\b", txt):
+        if t == "VND" and ("usd" in txt.lower() or "VND yếu" in txt or "VND mạnh" in txt): continue  # đồng tiền, không phải mã VNDirect
+        if t in _MA and t not in mk: mk.append(t)
+    lo = txt.lower(); tools = []
+    if any(k in lo for k in ("báo cáo tài chính", "bctc", "định giá", "p/e", "p/b", "roe", "lợi nhuận", "cổ phiếu")):
+        tools += [("/dinh-gia-co-phieu.html", "Bảng định giá P/E, P/B, ROE các mã vốn hoá lớn"), ("/ket-qua-kinh-doanh-quy.html", "Kết quả kinh doanh quý của 405 doanh nghiệp")]
+    if any(k in lo for k in ("vàng", "dầu", "fed", "tỷ giá", "usd", "thuế", "mỹ", "vĩ mô", "lãi suất")):
+        tools.append(("/the-gioi-hang-hoa.html", "Thị trường thế giới hôm nay: chỉ số Mỹ, dầu, vàng, tỷ giá"))
+    tools += [("/soi-ma-mien-phi.html", "Soi 3 dòng báo cáo tài chính 405 mã (miễn phí)"), ("https://zalo.me/0365188286", "Nhắn Zalo hỏi thêm về video này")]
+    ph = mk[0] if mk else "HPG"
+    h = ['<section class="cc" aria-label="Công cụ liên quan"><b class="t">🧰 Công cụ liên quan</b>',
+         f'<form action="/soi-ma-mien-phi.html" method="get"><input name="ma" maxlength="6" placeholder="Gõ mã, ví dụ {ph}" aria-label="Mã cổ phiếu" autocomplete="off" required><button type="submit">Soi mã</button></form>']
+    if mk: h.append('<div class="mk">Mã nhắc trong video: ' + "".join(f'<a href="/ma/{t}.html">{t}</a>' for t in mk[:8]) + '</div>')
+    h.append("<ul>" + "".join(f'<li><a href="{u}"' + (' rel="noopener"' if u.startswith("http") else "") + f'>{e(n)}</a></li>' for u, n in tools) + "</ul></section>")
+    return "".join(h)
 os.makedirs(os.path.join(ROOT, "hoc"), exist_ok=True)
 keep = set()
 for v in R:
@@ -88,6 +112,7 @@ for v in R:
     if v["intro"]: p.append(f"<p>{e(v['intro'])}</p>")
     for t, s in v["body"]:
         p.append({"h2": "<h2>%s</h2>", "h3": "<h3>%s</h3>", "q": "<blockquote>%s</blockquote>"}.get(t, "<p>%s</p>") % e(s))
+    p.append(cong_cu(v))
     p.append(f'<div class="cta"><a class="btn b1" href="{YT}?sub_confirmation=1" rel="noopener">Đăng ký kênh YouTube</a><a class="btn b2" href="https://www.youtube.com/watch?v={v["id"]}" rel="noopener">Xem trên YouTube</a><a class="btn b2" href="/">Xem bảng giá &amp; định giá</a></div>')
     if prv or nxt:
         p.append('<nav class="pn">' + (f'<a href="/hoc/{prv["slug"]}.html"><small>← Bài trước</small>{e(prv["h1"])}</a>' if prv else "<span></span>") +

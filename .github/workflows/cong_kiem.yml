@@ -1,0 +1,20 @@
+name: Cong kiem F1 (10 trang mau 390 va 1440px)
+on:
+  push:
+    branches: [main]
+    paths: ["**.html", "**.js", "*.py", "_kiem/cong_kiem.py", "data/bctc/**"]
+  workflow_dispatch:
+concurrency:
+  group: cong-kiem
+  cancel-in-progress: true
+jobs:
+  kiem:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q playwright && python -m playwright install --with-deps chromium
+      - run: python _kiem/cong_kiem.py

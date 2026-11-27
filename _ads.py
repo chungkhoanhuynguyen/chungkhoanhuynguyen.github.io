@@ -109,3 +109,38 @@ for d, ds, fs in os.walk(ROOT):
         if '/hnbar.js' in s or '</head>' not in s: continue
         s = s.replace('</head>', BAR + '</head>', 1); open(p, 'w', encoding='utf-8').write(s); nb += 1
 print("gan thanh nut day", nb, "trang")
+
+# (27/11 Phòng Web, việc QL1 giao 26/11) CSP đang CHẶN AdSense: trang có thẻ CSP mà script-src thiếu pagead2.googlesyndication.com
+# → quảng cáo không chạy. Mở đủ miền AdSense theo từng chỉ thị (chỉ thị thiếu thì lấy giá trị default-src làm gốc, đúng luật CSP).
+ADS = {'script-src': ("https://pagead2.googlesyndication.com", "https://*.googlesyndication.com", "https://adservice.google.com",
+                      "https://www.googletagservices.com", "https://*.adtrafficquality.google"),
+       'frame-src': ("https://googleads.g.doubleclick.net", "https://*.doubleclick.net", "https://tpc.googlesyndication.com",
+                     "https://*.googlesyndication.com", "https://www.google.com", "https://*.adtrafficquality.google"),
+       'img-src': ("https://*.googlesyndication.com", "https://*.g.doubleclick.net", "https://*.google.com", "https://*.gstatic.com",
+                   "https://*.adtrafficquality.google"),
+       'connect-src': ("https://*.googlesyndication.com", "https://*.adtrafficquality.google", "https://*.google.com", "https://*.doubleclick.net")}
+def csp_ads(s):
+    m = re.search(r'(<meta http-equiv="Content-Security-Policy" content=")([^"]*)(")', s)
+    if not m: return s
+    ds = [x.strip() for x in m.group(2).split(';') if x.strip()]
+    d = {x.split()[0]: x.split()[1:] for x in ds}; order = [x.split()[0] for x in ds]
+    base = [v for v in d.get('default-src', ["'self'"]) if v != "'none'"] or ["'self'"]
+    for k, vs in ADS.items():
+        src = d.get(k) if k in d else (d.get('child-src') if k == 'frame-src' and 'child-src' in d else base)
+        cur = [v for v in src if v != "'none'"]
+        for v in vs:
+            if v not in cur: cur.append(v)
+        if k not in d: order.insert(1, k)
+        d[k] = cur
+    out = '; '.join(k + (' ' + ' '.join(d[k]) if d[k] else '') for k in order)
+    return s[:m.start(2)] + out + s[m.end(2):]
+na = 0
+for d, ds, fs in os.walk(ROOT):
+    ds[:] = [x for x in ds if not x.startswith(('.', '_')) and x != 'node_modules']
+    for f in fs:
+        if not f.endswith('.html'): continue
+        p = os.path.join(d, f); s = open(p, encoding='utf-8', errors='ignore').read()
+        if PUB not in s: continue
+        s2 = csp_ads(s)
+        if s2 != s: open(p, 'w', encoding='utf-8').write(s2); na += 1
+print("mo CSP AdSense", na, "trang")
