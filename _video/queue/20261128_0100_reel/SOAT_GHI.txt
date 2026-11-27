@@ -1,0 +1,1 @@
+RV2811MM | V1 28/11 01:10: QC LỖI câu kết không có '?', 69s → sửa câu hỏi kết + thêm 1 câu, dựng lại V2
