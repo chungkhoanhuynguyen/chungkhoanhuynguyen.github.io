@@ -6502,8 +6502,8 @@ try{(function(){if(/nobake/.test(location.search))return;
  const U={tArr:{value:null}};
  function mkMat(side){const m=new T.MeshStandardMaterial({vertexColors:true,roughness:.85,metalness:0,side});
   m.onBeforeCompile=s=>{s.uniforms.tArr=U.tArr;s.vertexShader='attribute float lay;\nvarying float vLay;\nvarying vec2 vU;\n'+s.vertexShader.replace('#include <begin_vertex>','#include <begin_vertex>\nvLay=lay;vU=uv;');
-   s.fragmentShader='uniform highp sampler2DArray tArr;\nvarying float vLay;\nvarying vec2 vU;\n'+s.fragmentShader.replace('#include <map_fragment>',`if(vLay<254.5){vec4 tc=textureGrad(tArr,vec3(fract(vU),floor(vLay+.5)),dFdx(vU),dFdy(vU));if(tc.a<.5)discard;diffuseColor.rgb*=tc.rgb;}`)};
-  m.customProgramCacheKey=()=>'bake1'+side;return m}
+   s.fragmentShader='uniform highp sampler2DArray tArr;\nvarying float vLay;\nvarying vec2 vU;\n'+s.fragmentShader.replace('#include <map_fragment>',(side===2?`{float cd=1.0/gl_FragCoord.w;if(cd<7.0&&fract(sin(dot(floor(gl_FragCoord.xy),vec2(12.9898,78.233)))*43758.5)>(cd-3.0)/4.0)discard;}`:`if(1.0/gl_FragCoord.w<1.5)discard;`)+`if(vLay<254.5){vec4 tc=textureGrad(tArr,vec3(fract(vU),floor(vLay+.5)),dFdx(vU),dFdy(vU));if(tc.a<.5)discard;diffuseColor.rgb*=tc.rgb;}`)};
+  m.customProgramCacheKey=()=>'bake2'+side;return m}
  const MAT={0:mkMat(T.FrontSide),2:mkMat(T.DoubleSide)};
  /* chọn vật */
  const skip=new Set();function entRoots(){skip.clear();try{(typeof ents!=='undefined'?ents:[]).forEach(e=>{if(e&&e.c&&e.c.g)skip.add(e.c.g)})}catch(_){}try{if(hero&&hero.c)skip.add(hero.c.g)}catch(_){}skip.add(camera)}
