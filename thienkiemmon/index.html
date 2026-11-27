@@ -6073,7 +6073,7 @@ try{(function(){const st=document.createElement('style');st.textContent='#invw *
 /* ===== GỘP KHI SANG CẢNH (27/11): vào Bí Cảnh / phó bản / chiến trường thì 5 giây sau gộp đồ vật tĩnh ở đó (trước chỉ gộp lúc mới vào game nên cảnh mới vẽ lẻ từng món) ===== */
 try{(function(){const run=()=>setTimeout(()=>{try{window.__vcPass&&window.__vcPass()}catch(_){}},5000);let a=0,b=0,c=0;setInterval(()=>{try{const x=!!BC.in,y=!!window.__DGin,z=typeof BF!=='undefined'&&!!BF.in;if(x&&!a||y&&!b||z&&!c)run();a=x;b=y;c=z}catch(_){}},1000)})()}catch(e){}
 /* ===== QUÁI GHÉP KHỐI → MẪU THẬT (27/11): quái Bí Cảnh / sự kiện còn dựng bằng khối hộp, nón, cầu (mỗi con ~40 lần vẽ, nhìn vuông vức) → khoác mẫu thú thật như quái ngoài bãi (1–4 lần vẽ, có hoạt họa) ===== */
-try{(function(){setInterval(()=>{try{if(typeof creating!=='undefined'&&creating)return;let n=0;for(const e of ents){if(n>=2)break;if(e.team!=='enemy'||e.dead||!e.c||e.c.fx||e.__bx||e.dgBoss)continue;const nm=String(e.name||'').replace(/\[.*?\]/g,'').replace(/<[^>]*>/g,'');if(!bfxKey(nm))continue;e.__bx=1;n++;const col=e.col||'#d06aff';bfxAttach(e,[e.lv||1,nm,['#2a0a1a',col,'#f0e0ff'],0,1,col])}}catch(er){console.warn('bx',er)}},700)})()}catch(e){console.warn('bx27',e)}
+try{(function(){setInterval(()=>{try{if(typeof creating!=='undefined'&&creating)return;let n=0;for(const e of ents){if(n>=2)break;if(e.team!=='enemy'||e.dead||!e.c||e.c.fx||e.__bx||e.dgBoss||!(e.bc||e.inBC))continue;if(!e.__bxT){e.__bxT=performance.now();continue}if(performance.now()-e.__bxT<2500)continue;const nm=String(e.name||'').replace(/\[.*?\]/g,'').replace(/<[^>]*>/g,'');if(!bfxKey(nm))continue;e.__bx=1;n++;const col=e.col||'#d06aff';bfxAttach(e,[e.lv||1,nm,['#2a0a1a',col,'#f0e0ff'],0,1,col])}}catch(er){console.warn('bx',er)}},700)})()}catch(e){console.warn('bx27',e)}
 /* ===== NHÃN NÚT (27/11): mỗi nút biểu tượng trên thanh công cụ có chữ nhỏ bên dưới (Túi đồ, Hồi thành, Bản đồ…) để biết đang bấm gì ===== */
 try{(function(){const st=document.createElement('style');st.textContent='#pkbar{row-gap:15px!important}#pkbar button[data-lb]{position:relative;overflow:visible!important}#pkbar button[data-lb]::after{content:attr(data-lb);position:absolute;left:50%;top:100%;margin-top:1px;transform:translateX(-50%);width:118%;text-align:center;font:700 8px/1 "Noto Serif",serif;color:#ffe9b0;text-shadow:0 1px 2px #000,0 0 4px #000,0 0 2px #000;white-space:normal;pointer-events:none;letter-spacing:-.3px}@media (min-width:900px) and (pointer:fine){#pkbar button[data-lb]::after{font-size:10.5px}}';document.head.appendChild(st);
  const MAP={'Túi đồ':'Túi','Hồi thành':'Về thành','Bản đồ thế giới':'Bản đồ','Thêm':'Thêm','Danh hiệu':'Danh hiệu','Đồ họa':'Đồ họa','Đồ sát':'Đồ sát','Tự động đánh':'Tự đánh'};
@@ -6087,6 +6087,34 @@ try{(function(){const CG=new Map(),ACT=[];
   addFx(m,dur,(o,k,dt)=>{o.m.rotation.z+=dt*spin;const a=Math.min(1,k*6)*Math.min(1,(1-k)*4)*.85;o.m.material.color.setRGB(col[0]*a,col[1]*a,col[2]*a);o.m.scale.setScalar(.7+.3*Math.min(1,k*5))});return m};
  try{if(!/keepflash/.test(location.search)){scene.remove(flash);flashAt=function(){}}}catch(_){}
 })()}catch(e){console.warn('chieu27',e)}
+/* ===== CHỮ GỌN (27/11): bảng thông tin (NPC, bang, kỹ năng, nhiệm vụ…) cùng một cỡ chữ dễ đọc: điện thoại 13.5px, máy tính 15px; tiêu đề nổi rõ; đoạn văn cách dòng thoáng; nút bấm chữ không gãy ===== */
+try{(function(){const st=document.createElement('style');st.textContent=`
+#npcp{font-size:15px;line-height:1.42}
+#npcp>b:first-child{display:block;font-size:17px;color:#ffd36b;letter-spacing:.3px;margin-bottom:4px;text-shadow:0 0 8px rgba(255,200,90,.35)}
+#npcp p{margin:6px 0;line-height:1.45}
+#npcp small{font-size:.86em;opacity:.9}
+#npcp button{line-height:1.25;word-break:keep-all}
+body.touch #npcp{font-size:13.5px}
+body.touch #npcp>b:first-child{font-size:15.5px}
+body.touch #npcp p{margin:4px 0}
+`;document.head.appendChild(st)})()}catch(e){}
+/* ===== HÂM NÓNG MẪU THÚ (27/11): đo thấy lúc đang cày, mỗi khi loài quái mới (rồng, dơi, ngựa, đại bàng…) lần đầu hiện ra máy phải dịch hiệu ứng vẽ cho loài đó → đứng hình 0,5–1,5 giây (máy tính Windows còn lâu hơn). Giờ dịch sẵn cho mọi loài ngay khi mẫu tải xong, lúc chưa vào trận ===== */
+try{(function(){const done=new Set();
+ function warm(k,src){if(!src||done.has(k))return;done.add(k);setTimeout(()=>{try{const o=T.SkeletonUtils.clone(src);const L=[];o.traverse(m=>{if(m.isMesh){m.frustumCulled=false;m.visible=true;m.material=[].concat(m.material).map(x=>{const y=x.clone();y.emissive&&(y.emissiveIntensity=.12);y.flatShading=false;return y});if(m.material.length===1)m.material=m.material[0];L.push(m)}});o.updateMatrixWorld(true);
+   const px=Object.create(scene);px.traverse=cb=>{L.forEach(cb)};renderer.compile(px,camera);const n=__wp&&0}catch(e){console.warn('warmbfx',e)}},300+Math.random()*900)}
+ const _bl=bfxLoad;bfxLoad=function(k){const pr=_bl.apply(this,arguments);try{pr.then(src=>warm(k,src))}catch(_){}return pr};
+ try{Object.keys(BFX).forEach(k=>{if(BSRC[k])BSRC[k].then(src=>warm(k,src))})}catch(_){}
+ setTimeout(()=>{try{Object.keys(BFX).forEach(k=>bfxLoad(k))}catch(_){}},15000);
+})()}catch(e){console.warn('warmbfx27',e)}
+/* ===== MỘT KIỂU SHADER NHÂN VẬT (27/11): bỏ bản đồ nhám/kim loại/AO trên da-áo nhân vật động để mọi người dùng chung shader, hết khựng khi gặp người mới ===== */
+try{(function(){const r=renderer,o=r.renderBufferDirect;
+ r.renderBufferDirect=function(cam,sc,geo,mat,obj,grp){if(obj&&obj.isSkinnedMesh&&mat&&!mat.__nk){mat.__nk=1;if(mat.roughnessMap||mat.metalnessMap||mat.aoMap||mat.lightMap||mat.bumpMap){mat.roughnessMap=null;mat.metalnessMap=null;mat.aoMap=null;mat.lightMap=null;mat.bumpMap=null;mat.needsUpdate=true}}
+ if(obj&&obj.isSkinnedMesh&&geo&&geo.morphAttributes&&!geo.__nm&&!creating&&window.__stripMorph&&!/keepmorph/.test(location.search)){const ma=geo.morphAttributes;if(Object.keys(ma).some(k=>ma[k]&&ma[k].length)){try{__stripMorph(obj);if(obj.geometry!==geo){geo=obj.geometry;return o.call(this,cam,sc,geo,mat,obj,grp)}}catch(_){}}else geo.__nm=1}
+ return o.apply(this,arguments)};
+ /* giữ lại shader đã dịch: trước đây khi tu sĩ ảo thay đồ/biến mất, vật liệu bị dọn kéo theo xóa shader → người mới tới lại phải dịch lại → khựng */
+ setInterval(()=>{try{const P=r.info.programs;for(let i=0;i<P.length;i++){const q=P[i];if(!q.__pin){q.__pin=1;q.usedTimes++}}}catch(_){}},400);
+})()}catch(e){console.warn('nk27',e)}
+
 try{window.__enterBC=()=>{BC.day='';enterBC()};window.__bfJoin=sd=>bfJoin(sd||'tien');window.__BCo=BC;window.__BFo=BF}catch(e){}
 window.__wp={renderer,T,WEAPONS,fabaoModel,TIERS,FBE,RT,VB:()=>VB,hero:()=>hero,TD:{tdKiem,tdXuan,tdBang,tdAn,swordRain,phoenix,tornado,maVortex,dQi:()=>dragonE('qi'),dTh:()=>dragonE('thunder'),dFi:()=>dragonE('fire'),dBl:()=>dragonE('blood'),vortex:()=>{const T0=performance.now();maVortex();return performance.now()-T0},ice:()=>{const t=TU.tong,r=TU.realm,l=TU.learned;TU.tong='thuy';TU.realm=4;TU.learned=['Huyền Băng Trảm','Băng Phong Vạn Lý'];hero.mp=100;P.cds[1]=0;try{_useSkill(1+'')}finally{TU.tong=t;TU.realm=r;TU.learned=l}}},TU:()=>TU};setTimeout(()=>{if(typeof TKACCT!=='undefined')TKACCT.boot()},0);
 window.__demo={closeInv:()=>closeInv(),castAt:(id,x,z)=>{const h=heroPos(),o=h.clone(),f=hero.face;h.x=x;h.z=z;hero.face=Math.random()*6.28;try{castCP(id,true)}catch(e){}h.copy(o);hero.face=f},BF,bfJoin,bfBuild,allEnts:()=>ents,ICL:()=>ICL,equipWeapon:(a,b)=>equipWeapon(a,b),wearBest,equip:i=>{equip.silent=1;try{equip(i)}finally{equip.silent=0}},heroPos,TRIB:()=>TRIB,addCorpse,deathDrop,ents:()=>ents,foe:e=>foe(e),castCP,CP,mkBook,learnBook,P2P,NET,itemCard,optHTML,onHunt,rankTick,RANK,WFALL,castFX,VILLC:()=>window.__vc,tribGo,tribReady,needXp,bankPanel,CG,titles,leaveBC,zoneStream,ZPOP,GANGS,PARTY,ptInvite,hit,NET,netUpd,CORPSE,goInt,toggleFly,updFabao,GARR,WFIX,spawnMon,EV,EVT,npcAct,openInv,SQUADS:()=>SQUADS,CIT:()=>CIT,MUS,PK,togglePK,callReinf,maAct,gainXp,realmText,updPK,INV,BC,mkItem,dropItem,enterBC,TU,refreshTL,bloom:()=>bloom,LOOK,buildAvatar,setSW:(a,b,c)=>{hero.vw&&hero.vw.rotation.set(a,b,c)},hero,P,useSkill,ents,setView:(y,p,d)=>{yaw=y;pitch=p;dist=d}};
