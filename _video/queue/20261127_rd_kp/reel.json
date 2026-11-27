@@ -1,0 +1,165 @@
+[
+ {
+  "key": "SP2711VNI07",
+  "kenh_phu": "chungkhoanhuynguyen4",
+  "ngach": "vụ sập, bong bóng",
+  "phu_de_tu": 1,
+  "tieu_de": "100 triệu vào VN-Index đỉnh 2007, hai năm sau còn 20 triệu: vụ sập 80% ít ai kể lại",
+  "hook": [
+   "100 TRIỆU CÒN 20 TRIỆU",
+   "VÌ SAO SẬP 80%?"
+  ],
+  "nhan": "VỤ SẬP · VN-INDEX 2007–2009",
+  "short_caption": "VN-Index lập đỉnh 1.170,67 điểm phiên 12/3/2007, rồi về đáy 235,5 điểm ngày 24/2/2009: mất gần 80%. 100 triệu bỏ vào lúc đỉnh chỉ còn khoảng 20 triệu, và phải tăng gần 400% mới về bờ. Video đầy đủ ở kênh chính @chungkhoanhuynguyen. Số liệu thị trường mỗi ngày: chungkhoanhuynguyen.com",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "ANH CHỊ CHỌN GÌ?",
+   "loi": "Nếu là anh chị năm đó, anh chị A: bán khi mất hai mươi phần trăm, hay B: giữ chờ về bờ?",
+   "the": {
+    "loai": "lon",
+    "tieu": "MẤT GẦN 80% TỪ ĐỈNH",
+    "dong": [
+     [
+      "A: BÁN SỚM",
+      96,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: GIỮ CHỜ VỀ BỜ?",
+      80,
+      "do"
+     ]
+    ]
+   },
+   "loi_doc": "Nếu là anh chị năm đó, anh chị A: bán khi mất hai mươi phần trăm, hay B: giữ chờ về bờ?",
+   "anh": []
+  },
+  "canh": [
+   {
+    "chu_to": "100 TRIỆU CÒN 20 TRIỆU",
+    "loi": "Anh chị có dám bỏ một trăm triệu vào chứng khoán đúng lúc cả xóm đều bàn chuyện cổ phiếu không? Năm 2007 rất nhiều người đã làm vậy, và em kể anh chị nghe chuyện gì xảy ra sau đó.",
+    "loi_doc": "Anh chị có dám bỏ một trăm triệu vào chứng khoán đúng lúc cả xóm đều bàn chuyện cổ phiếu không? Năm 2007 rất nhiều người đã làm vậy, và em kể anh chị nghe chuyện gì xảy ra sau đó.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "VN-INDEX 2007 – 2009",
+     "dong": [
+      [
+       "100 TRIỆU",
+       120,
+       "trang"
+      ],
+      [
+       "CÒN",
+       56,
+       "vang"
+      ],
+      [
+       "20 TRIỆU",
+       130,
+       "do"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "ĐỈNH 1.170 ĐIỂM",
+    "loi": "Phiên ngày mười hai tháng ba năm 2007, VN-Index đóng cửa ở một nghìn một trăm bảy mươi điểm, cao nhất lúc đó. Người ta xếp hàng mở tài khoản, ai cũng tin giá còn lên nữa.",
+    "loi_doc": "Phiên ngày mười hai tháng ba năm 2007, VN-Index đóng cửa ở một nghìn một trăm bảy mươi điểm, cao nhất lúc đó. Người ta xếp hàng mở tài khoản, ai cũng tin giá còn lên nữa.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "VN-INDEX · 12/3/2007",
+     "nguon": "HOSE",
+     "dong": [
+      [
+       "1.170,67 ĐIỂM",
+       100,
+       "vang"
+      ],
+      [
+       "ĐỈNH CAO NHẤT LÚC ĐÓ",
+       50,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "ĐÁY 235 ĐIỂM",
+    "loi": "Nhưng chưa đầy hai năm sau, ngày hai mươi bốn tháng hai năm 2009, chỉ số rơi về hai trăm ba mươi lăm điểm. Tức là mất gần tám mươi phần trăm từ đỉnh.",
+    "loi_doc": "Nhưng chưa đầy hai năm sau, ngày hai mươi bốn tháng hai năm 2009, chỉ số rơi về hai trăm ba mươi lăm điểm. Tức là mất gần tám mươi phần trăm từ đỉnh.",
+    "anh": [],
+    "the": {
+     "loai": "giam",
+     "tieu": "VN-INDEX (ĐIỂM)",
+     "nguon": "HOSE",
+     "a": [
+      "3/2007",
+      1170.67
+     ],
+     "b": [
+      "2/2009",
+      235.5
+     ],
+     "dv": "",
+     "dau": "MẤT GẦN 80%"
+    }
+   },
+   {
+    "chu_to": "100 TRIỆU CÒN KHOẢNG 20 TRIỆU",
+    "loi": "Vậy nghĩa là gì với túi tiền? Một trăm triệu đi theo chỉ số từ đỉnh chỉ còn khoảng hai mươi triệu đồng. Muốn về lại một trăm triệu, số còn lại phải tăng gần bốn trăm phần trăm.",
+    "loi_doc": "Vậy nghĩa là gì với túi tiền? Một trăm triệu đi theo chỉ số từ đỉnh chỉ còn khoảng hai mươi triệu đồng. Muốn về lại một trăm triệu, số còn lại phải tăng gần bốn trăm phần trăm.",
+    "anh": [],
+    "the": {
+     "loai": "cot",
+     "tieu": "100 TRIỆU THEO VN-INDEX",
+     "nguon": "Tính từ điểm HOSE",
+     "hang": [
+      [
+       "Đỉnh 3/2007",
+       100
+      ],
+      [
+       "Đáy 2/2009",
+       20.1
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": " TR"
+    }
+   },
+   {
+    "chu_to": "BÀI HỌC: GIẢM 80% CẦN TĂNG 400%",
+    "loi": "Bài học của vụ sập này là toán học của thua lỗ: mất càng sâu thì đường về bờ càng dài. Video đầy đủ về các vụ sập ở kênh chính Chứng Khoán Huy Nguyễn, còn số liệu thị trường mỗi ngày có trên chungkhoanhuynguyen.com.",
+    "loi_doc": "Bài học của vụ sập này là toán học của thua lỗ: mất càng sâu thì đường về bờ càng dài. Video đầy đủ về các vụ sập ở kênh chính Chứng Khoán Huy Nguyễn, còn số liệu thị trường mỗi ngày có trên chứng khoán Huy Nguyễn chấm com.",
+    "anh": [],
+    "the": {
+     "loai": "chuoi",
+     "tieu": "TOÁN HỌC CỦA THUA LỖ",
+     "buoc": [
+      "MẤT 20%: CẦN TĂNG 25%",
+      "MẤT 50%: CẦN TĂNG 100%",
+      "MẤT 80%: CẦN TĂNG 400%"
+     ],
+     "mau": [
+      "tim",
+      "vang",
+      "do"
+     ]
+    }
+   }
+  ]
+ }
+]

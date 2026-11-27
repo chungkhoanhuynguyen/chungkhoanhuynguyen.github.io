@@ -132,8 +132,10 @@ def _mau(w):
     if _DO.match(w): return DO
     if _XANH.match(w): return XANH
     return TRANG
-def ve_phu_de(im, loi, t, T, y, pop=True):
-    """Phụ đề: từng cụm 1–2 dòng căn giữa, đổi cụm theo tỉ lệ số chữ; cụm mới NẢY lên + từ khoá đổi màu (học video mẫu 9/11)."""
+def ve_phu_de(im, loi, t, T, y, pop=True, tu=0):
+    """Phụ đề: từng cụm 1–2 dòng căn giữa, đổi cụm theo tỉ lệ số chữ; cụm mới NẢY lên + từ khoá đổi màu (học video mẫu 9/11).
+    tu=1 (R["phu_de_tu"], QL1 27/11 học kiểu 'karaoke' word-highlight của capkit-lite/whisper-word-captions – chỉ học ý):
+    TỪ ĐANG ĐỌC nằm trong ô vàng chữ tối, từ chưa đọc mờ hơn → mắt bám theo giọng, giữ người xem."""
     cum = tach(loi)
     if not cum: return
     L = [len(" ".join(c)) for c in cum]; tot = sum(L); a = 0; k = len(cum) - 1; st = 0
@@ -144,12 +146,25 @@ def ve_phu_de(im, loi, t, T, y, pop=True):
     sc = 1 + (0.14 * (1 - dx2.ease(min(1, (t - st) / 0.16))) if pop else 0)
     d = ImageDraw.Draw(im); f = F("ExtraBold", int(PD_F * sc)); ls = cum[k]; sp = d.textlength(" ", font=f)
     y0 = y + (40 if len(ls) == 1 else 0) - int((sc - 1) * 40)
+    hien = -1
+    if tu:   # từ đang đọc: chia thời lượng cụm theo số ký tự từng từ (không cần mốc Whisper)
+        ws_all = " ".join(ls).split(); Lk = L[k] / tot * T; u = max(0.0, min(0.999, (t - st) / max(Lk, 0.01)))
+        cl = [len(w_) + 1 for w_ in ws_all]; acc = 0; tong_ = sum(cl)
+        for j_, c_l in enumerate(cl):
+            acc += c_l
+            if u * tong_ < acc: hien = j_; break
+    dem_ = 0
     for i, s_ in enumerate(ls):
         ws = s_.split(); tw = d.textlength(s_, font=f); x = W/2 - tw/2
         for w_ in ws:
-            c_ = _mau(w_)
-            d.text((x, y0 + i * 80), w_, font=f, fill=c_, stroke_width=5, stroke_fill=(12, 4, 24))
-            x += d.textlength(w_, font=f) + sp
+            c_ = _mau(w_); ww = d.textlength(w_, font=f)
+            if tu and dem_ == hien:
+                d.rounded_rectangle([x - 6, y0 + i * 80 - 2, x + ww + 6, y0 + i * 80 + f.size + 12], 12, fill=VANG)
+                d.text((x, y0 + i * 80), w_, font=f, fill=(24, 8, 44))
+            else:
+                if tu and dem_ > hien: c_ = tuple(int(v * 0.72) for v in c_)
+                d.text((x, y0 + i * 80), w_, font=f, fill=c_, stroke_width=5, stroke_fill=(12, 4, 24))
+            x += ww + sp; dem_ += 1
 
 MIEN_TRU = "Nội dung chia sẻ kiến thức, không phải khuyến nghị mua bán."
 _MT = re.compile(r"\s*[^.!?]*(chia sẻ kiến thức|không phải (là )?khuyến nghị)[^.!?]*[.!?]?", re.I)
@@ -238,7 +253,7 @@ def khung(R, i, t, T, ph, tong_t, tong_T):
     ve_anh(im, cur, t, T, y0, y1, ready)
     if cur is None or not cur.info.get("fit"): ve_chu_to(im, c.get("chu_to", ""), t, y1, c.get("hoi", 0))
     if c.get("web"): ve_web_to(im, t, (y0 + y1) // 2 - 60)
-    ve_phu_de(im, bo_mien_tru(c.get("loi", "")), t, T, 1420)
+    ve_phu_de(im, bo_mien_tru(c.get("loi", "")), t, T, 1420, tu=R.get("phu_de_tu", 0))
     ve_cuoi(im, tong_t / max(tong_T, 0.1))
     if hu and c.get("hoi"): ve_theo_doi(im, t, T)
     if hu and i > 0 and t < 0.22:   # punch-in khi sang cảnh mới
