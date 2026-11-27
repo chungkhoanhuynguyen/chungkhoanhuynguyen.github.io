@@ -121,7 +121,7 @@ let renderer;try{renderer=new T.WebGLRenderer({antialias:false,powerPreference:'
  throw new Error('WebGL không khả dụng')}}renderer.domElement.id='gl';
 renderer.setPixelRatio(DPR);renderer.setSize(innerWidth,innerHeight);renderer.shadowMap.enabled=!LITE;renderer.shadowMap.type=LITE?T.PCFShadowMap:T.PCFSoftShadowMap;if(LITE){renderer.outputEncoding=T.sRGBEncoding;renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=.72}
 document.body.prepend(renderer.domElement);
-const scene=new T.Scene(),camera=new T.PerspectiveCamera(45,innerWidth/innerHeight,.25,1200);window.__scn=()=>scene;window.__rnd=()=>renderer;
+const scene=new T.Scene(),camera=new T.PerspectiveCamera(45,innerWidth/innerHeight,.25,1200);window.__scn=()=>scene;window.__camO=()=>camera;window.__rnd=()=>renderer;
 const $=id=>document.getElementById(id);
 
 /* ---------- tiện ích ---------- */
@@ -6499,11 +6499,11 @@ try{(function(){if(/nobake/.test(location.search))return;
    gl.texSubImage3D(gl.TEXTURE_2D_ARRAY,0,0,0,L,SZ,SZ,1,gl.RGBA,gl.UNSIGNED_BYTE,bm);R.state.unbindTexture();bm.close&&bm.close();texDirty=true}catch(e){console.warn('bake up',e)}}).catch(()=>{});
   return L}
  function buildTex(){R.state.bindTexture(gl.TEXTURE_2D_ARRAY,glTex);gl.generateMipmap(gl.TEXTURE_2D_ARRAY);R.state.unbindTexture();return tex3}
- const U={tArr:{value:null}};
+ const U={tArr:{value:null},uHS:{value:new T.Vector4(0,0,0,0)},uHY:{value:0}};{const v=new T.Vector3(),sz=new T.Vector2();(function hs(){requestAnimationFrame(hs);try{if(!hero||!hero.c)return;v.copy(hero.c.g.position);U.uHY.value=v.y+.6;v.y+=1;v.applyMatrix4(camera.matrixWorldInverse);const dz=-v.z;v.applyMatrix4(camera.projectionMatrix);renderer.getDrawingBufferSize(sz);U.uHS.value.set((v.x*.5+.5)*sz.x,(v.y*.5+.5)*sz.y,dz,sz.y*.2)}catch(e){}})()}
  function mkMat(side){const m=new T.MeshStandardMaterial({vertexColors:true,roughness:.85,metalness:0,side});
-  m.onBeforeCompile=s=>{s.uniforms.tArr=U.tArr;s.vertexShader='attribute float lay;\nvarying float vLay;\nvarying vec2 vU;\n'+s.vertexShader.replace('#include <begin_vertex>','#include <begin_vertex>\nvLay=lay;vU=uv;');
-   s.fragmentShader='uniform highp sampler2DArray tArr;\nvarying float vLay;\nvarying vec2 vU;\n'+s.fragmentShader.replace('#include <map_fragment>',(side===2?`{float cd=1.0/gl_FragCoord.w;if(cd<7.0&&fract(sin(dot(floor(gl_FragCoord.xy),vec2(12.9898,78.233)))*43758.5)>(cd-3.0)/4.0)discard;}`:`if(1.0/gl_FragCoord.w<1.5)discard;`)+`if(vLay<254.5){vec4 tc=textureGrad(tArr,vec3(fract(vU),floor(vLay+.5)),dFdx(vU),dFdy(vU));if(tc.a<.5)discard;diffuseColor.rgb*=tc.rgb;}`)};
-  m.customProgramCacheKey=()=>'bake2'+side;return m}
+  m.onBeforeCompile=s=>{s.uniforms.tArr=U.tArr;s.vertexShader='attribute float lay;\nvarying float vLay;\nvarying vec2 vU;\nvarying float vWY;\n'+s.vertexShader.replace('#include <begin_vertex>','#include <begin_vertex>\nvLay=lay;vU=uv;vWY=(modelMatrix*vec4(transformed,1.0)).y;');
+   s.uniforms.uHS=U.uHS;s.uniforms.uHY=U.uHY;s.fragmentShader='uniform highp sampler2DArray tArr;\nuniform vec4 uHS;\nuniform float uHY;\nvarying float vWY;\nvarying float vLay;\nvarying vec2 vU;\n'+s.fragmentShader.replace('#include <map_fragment>',`{float cd=1.0/gl_FragCoord.w;vec2 dd=gl_FragCoord.xy-uHS.xy;if(cd<`+(side===2?'5.5':'1.5')+`||(vWY>uHY&&cd<uHS.z-1.5&&dot(dd,dd)<uHS.w*uHS.w))discard;}`+`if(vLay<254.5){vec4 tc=textureGrad(tArr,vec3(fract(vU),floor(vLay+.5)),dFdx(vU),dFdy(vU));if(tc.a<.5)discard;diffuseColor.rgb*=tc.rgb;}`)};
+  m.customProgramCacheKey=()=>'bake5'+side;return m}
  const MAT={0:mkMat(T.FrontSide),2:mkMat(T.DoubleSide)};
  /* chọn vật */
  const skip=new Set();function entRoots(){skip.clear();try{(typeof ents!=='undefined'?ents:[]).forEach(e=>{if(e&&e.c&&e.c.g)skip.add(e.c.g)})}catch(_){}try{if(hero&&hero.c)skip.add(hero.c.g)}catch(_){}skip.add(camera)}
