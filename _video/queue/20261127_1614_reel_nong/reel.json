@@ -1,0 +1,1867 @@
+[
+ {
+  "key": "SN2711THUTHIEM",
+  "tieu_de": "Lô đất Thủ Thiêm năm 2021 được trả 24.500 tỷ, phiên 27/11/2026 khởi điểm 10.198 tỷ vẫn không ai đăng ký???",
+  "hook": [
+   "24.500 TỶ NĂM 2021",
+   "NAY KHÔNG AI ĐẤU?"
+  ],
+  "nhan": "ĐIỀU TRA · 27/11/2026",
+  "short_caption": "Phiên đấu giá 27/11/2026 ở Thủ Thiêm: 3/4 lô đất không có người đăng ký; lô 3-12 rộng gần 10.060 m2 khởi điểm hơn 10.198 tỷ đồng, cuối năm 2021 từng được trả 24.500 tỷ đồng. Nguồn: VietnamFinance 27/11/2026.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "GIÁ CAO HAY CẠN TIỀN?",
+   "loi": "Lô 10.198 tỷ không ai đấu, anh chị nghĩ A: giá vẫn quá cao, hay B: doanh nghiệp đang cạn tiền?",
+   "loi_doc": "Lô mười nghìn một trăm chín mươi tám tỷ không ai đấu, anh chị nghĩ A: giá vẫn quá cao, hay B: doanh nghiệp đang cạn tiền?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "GIÁ CAO HAY CẠN TIỀN?",
+    "dong": [
+     [
+      "A: GIÁ QUÁ CAO",
+      80,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: CẠN TIỀN",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "24.500 TỶ → 0 NGƯỜI",
+    "loi": "Năm 2021, lô đất 3-12 ở Thủ Thiêm được trả 24.500 tỷ đồng. Ngày 27/11 năm nay, giá khởi điểm chỉ còn hơn 10.198 tỷ. Khoan, không một ai đăng ký.",
+    "loi_doc": "Năm hai nghìn không trăm hai mươi mốt, lô đất ba gạch mười hai ở Thủ Thiêm được trả hai mươi bốn nghìn năm trăm tỷ đồng. Ngày hai mươi bảy tháng mười một năm nay, giá khởi điểm chỉ còn hơn mười nghìn một trăm chín mươi tám tỷ. Khoan, không một ai đăng ký.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "LÔ 3-12 THỦ THIÊM · 27/11/2026",
+     "dong": [
+      [
+       "0 NGƯỜI",
+       120,
+       "do"
+      ],
+      [
+       "ĐĂNG KÝ ĐẤU GIÁ",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "VietnamFinance 27/11/2026"
+    },
+    "dt": {
+     "loai": "lat",
+     "hoi": [
+      "24.500 TỶ NĂM 2021",
+      "NAY CÒN AI ĐẤU?"
+     ],
+     "lat": "0 NGƯỜI ĐĂNG KÝ",
+     "tu": "Khoan",
+     "phu": "VietnamFinance 27/11/2026"
+    },
+    "tu_khoa": [
+     "khoan",
+     "24.500"
+    ]
+   },
+   {
+    "chu_to": "24.500 SO VỚI 10.198",
+    "loi": "Cùng một lô đất rộng gần 10.060 m2. Năm 2021 trả 24.500 tỷ, nay khởi điểm hơn 10.198 tỷ, tức trên 1 tỷ đồng mỗi mét vuông, vẫn không ai nộp hồ sơ.",
+    "loi_doc": "Cùng một lô đất rộng gần mười nghìn không trăm sáu mươi mét vuông. Năm hai nghìn không trăm hai mươi mốt trả hai mươi bốn nghìn năm trăm tỷ, nay khởi điểm hơn mười nghìn một trăm chín mươi tám tỷ, tức trên một tỷ đồng mỗi mét vuông, vẫn không ai nộp hồ sơ.",
+    "anh": [],
+    "the": {
+     "loai": "cot",
+     "tieu": "LÔ 3-12 · TỶ ĐỒNG",
+     "hang": [
+      [
+       "2021 TRÚNG GIÁ",
+       24500
+      ],
+      [
+       "2026 KHỞI ĐIỂM",
+       10198
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 26000,
+     "nd": 0,
+     "nguon": "VietnamFinance 27/11/2026"
+    },
+    "dt": {
+     "loai": "so_sanh",
+     "tieu": "LÔ 3-12 THỦ THIÊM · TỶ ĐỒNG",
+     "a": [
+      "2021 TRÚNG GIÁ",
+      24500
+     ],
+     "b": [
+      "2026 KHỞI ĐIỂM",
+      10198
+     ],
+     "dv": " TỶ",
+     "max": 26000,
+     "tu_b": "10.198",
+     "nguon": "VietnamFinance 27/11/2026"
+    },
+    "tu_khoa": [
+     "24.500",
+     "10.198"
+    ]
+   },
+   {
+    "chu_to": "3 TRÊN 4 LÔ",
+    "loi": "4 lô đem ra đấu thì 3 lô không ai đăng ký. Cuối 2021, chính 4 lô này từng trúng tổng 37.346 tỷ, rồi doanh nghiệp lần lượt bỏ cọc.",
+    "loi_doc": "bốn lô đem ra đấu thì ba lô không ai đăng ký. Cuối hai nghìn không trăm hai mươi mốt, chính bốn lô này từng trúng tổng ba mươi bảy nghìn ba trăm bốn mươi sáu tỷ, rồi doanh nghiệp lần lượt bỏ cọc.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "4 LÔ THỦ THIÊM · 27/11/2026",
+     "dong": [
+      [
+       "3/4 LÔ",
+       110,
+       "do"
+      ],
+      [
+       "KHÔNG AI ĐĂNG KÝ",
+       56,
+       "trang"
+      ],
+      [
+       "2021 TỪNG TRÚNG 37.346 TỶ",
+       44,
+       "vang"
+      ]
+     ],
+     "nguon": "VietnamFinance 27/11/2026"
+    },
+    "tu_khoa": [
+     "37.346"
+    ]
+   },
+   {
+    "chu_to": "TIỀN CỌC BAO NHIÊU?",
+    "loi": "Muốn đấu lô 3-12 phải nộp trước hơn 2.039 tỷ đồng và có vốn chủ sở hữu trên 2.393 tỷ.",
+    "loi_doc": "Muốn đấu lô ba gạch mười hai phải nộp trước hơn hai nghìn không trăm ba mươi chín tỷ đồng và có vốn chủ sở hữu trên hai nghìn ba trăm chín mươi ba tỷ.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "ĐIỀU KIỆN ĐẤU LÔ 3-12",
+     "dong": [
+      [
+       "ĐẶT TRƯỚC 2.039 TỶ",
+       80,
+       "vang"
+      ],
+      [
+       "VỐN CHỦ TRÊN 2.393 TỶ",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "VietnamFinance 27/11/2026"
+    },
+    "tu_khoa": [
+     "2.039"
+    ]
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · ĐẤT · CHỨNG KHOÁN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  },
+  "kieu": "dieu_tra",
+  "broll": [
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/City_skyline_(time_lapse).webm",
+    "tu": 0,
+    "den": 10
+   },
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Studio_Ocho_Ocho_Construction_Timelapse.webm",
+    "tu": 0,
+    "den": 10
+   }
+  ],
+  "broll_tim": "city skyline construction"
+ },
+ {
+  "key": "SN2711THUEMY",
+  "tieu_de": "Mỹ đề xuất thuế tới 35%, Thủ tướng nói ngày 27/11/2026: mức áp dụng với Việt Nam sẽ thấp hơn nhiều. Thấp hơn là bao nhiêu???",
+  "hook": [
+   "THUẾ MỸ 35%",
+   "SẼ THẤP HƠN NHIỀU?"
+  ],
+  "nhan": "ĐIỀU TRA · 27/11/2026",
+  "short_caption": "Ngày 27/11/2026, Thủ tướng Lê Minh Hưng cho biết Việt Nam đã cơ bản kết thúc đàm phán Hiệp định Thương mại đối ứng với Mỹ, mức thuế áp dụng sẽ thấp hơn nhiều mức tối đa Mỹ vừa công bố. USTR đề xuất tối đa 35%, có thể giảm xuống 20% nếu đạt hiệp định (Bộ Công Thương). Nguồn: Nhà Đầu Tư 27/11/2026.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "ANH CHỊ TIN MỨC NÀO?",
+   "loi": "Thuế Mỹ cuối cùng với hàng Việt Nam, anh chị nghĩ A: quanh 20%, hay B: còn thấp hơn nữa?",
+   "loi_doc": "Thuế Mỹ cuối cùng với hàng Việt Nam, anh chị nghĩ A: quanh hai mươi phần trăm, hay B: còn thấp hơn nữa?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "ANH CHỊ TIN MỨC NÀO?",
+    "dong": [
+     [
+      "A: QUANH 20%",
+      80,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: THẤP HƠN NỮA",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "35% LÀ CHƯA CHỐT?",
+    "loi": "Thuế Mỹ 35% với hàng Việt Nam đã chốt chưa? Khoan, ngày 27/11 Thủ tướng nói mức áp dụng sẽ thấp hơn nhiều mức tối đa Mỹ vừa công bố.",
+    "loi_doc": "Thuế Mỹ ba mươi lăm phần trăm với hàng Việt Nam đã chốt chưa? Khoan, ngày hai mươi bảy tháng mười một Thủ tướng nói mức áp dụng sẽ thấp hơn nhiều mức tối đa Mỹ vừa công bố.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "THUẾ BỔ SUNG MỸ ĐỀ XUẤT",
+     "dong": [
+      [
+       "TỐI ĐA 35%",
+       104,
+       "do"
+      ],
+      [
+       "CHƯA PHẢI MỨC CHỐT",
+       52,
+       "trang"
+      ]
+     ],
+     "nguon": "Nhà Đầu Tư 27/11/2026"
+    },
+    "dt": {
+     "loai": "lat",
+     "hoi": [
+      "THUẾ MỸ 35%",
+      "ĐÃ CHỐT CHƯA?"
+     ],
+     "lat": "SẼ THẤP HƠN NHIỀU",
+     "tu": "Khoan",
+     "phu": "Nhà Đầu Tư 27/11/2026"
+    },
+    "tu_khoa": [
+     "khoan",
+     "35"
+    ]
+   },
+   {
+    "chu_to": "35% HAY 20%?",
+    "loi": "Theo Bộ Công Thương, Mỹ đề xuất thuế bổ sung tối đa 35%. Nếu hai nước đạt hiệp định thương mại đối ứng, mức này có thể giảm xuống 20%.",
+    "loi_doc": "Theo Bộ Công Thương, Mỹ đề xuất thuế bổ sung tối đa ba mươi lăm phần trăm. Nếu hai nước đạt hiệp định thương mại đối ứng, mức này có thể giảm xuống hai mươi phần trăm.",
+    "anh": [],
+    "the": {
+     "loai": "cot",
+     "tieu": "THUẾ BỔ SUNG MỸ ĐỀ XUẤT · %",
+     "hang": [
+      [
+       "TỐI ĐA",
+       35
+      ],
+      [
+       "NẾU CÓ HIỆP ĐỊNH",
+       20
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "%",
+     "max": 40,
+     "nd": 0,
+     "nguon": "Nhà Đầu Tư 27/11/2026"
+    },
+    "dt": {
+     "loai": "so_sanh",
+     "tieu": "THUẾ BỔ SUNG MỸ ĐỀ XUẤT",
+     "a": [
+      "TỐI ĐA",
+      35
+     ],
+     "b": [
+      "NẾU CÓ HIỆP ĐỊNH",
+      20
+     ],
+     "dv": "%",
+     "max": 40,
+     "tu_b": "20",
+     "nguon": "Nhà Đầu Tư 27/11/2026"
+    },
+    "tu_khoa": [
+     "35",
+     "20"
+    ]
+   },
+   {
+    "chu_to": "MIỄN 2.121 MẶT HÀNG",
+    "loi": "Mỹ cũng đề xuất miễn trừ 2.121 mặt hàng. Điều trần công khai bắt đầu từ 25/1/2027, quyết định cuối cùng muộn nhất ngày 11/3/2027.",
+    "loi_doc": "Mỹ cũng đề xuất miễn trừ hai nghìn một trăm hai mươi mốt mặt hàng. Điều trần công khai bắt đầu từ hai mươi lăm tháng một năm hai nghìn không trăm hai mươi bảy, quyết định cuối cùng muộn nhất ngày mười một tháng ba năm hai nghìn không trăm hai mươi bảy.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "LỊCH CỦA USTR",
+     "dong": [
+      [
+       "MIỄN 2.121 MẶT HÀNG",
+       72,
+       "vang"
+      ],
+      [
+       "ĐIỀU TRẦN 25/1/2027",
+       56,
+       "trang"
+      ],
+      [
+       "CHỐT MUỘN NHẤT 11/3/2027",
+       50,
+       "trang"
+      ]
+     ],
+     "nguon": "Nhà Đầu Tư 27/11/2026"
+    },
+    "tu_khoa": [
+     "2.121"
+    ]
+   },
+   {
+    "chu_to": "CHỨNG KHOÁN ĐÃ KỊP SỢ",
+    "loi": "Trong khi đó, phiên 26/11 VN-Index đã mất 57,77 điểm vì tin thuế. Phiên 27/11 khối ngoại mua ròng trở lại hơn 611 tỷ đồng.",
+    "loi_doc": "Trong khi đó, phiên hai mươi sáu tháng mười một VN Index đã mất năm mươi bảy phẩy bảy mươi bảy điểm vì tin thuế. Phiên hai mươi bảy tháng mười một khối ngoại mua ròng trở lại hơn sáu trăm mười một tỷ đồng.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "2 PHIÊN SAU TIN THUẾ",
+     "dong": [
+      [
+       "26/11: MẤT 57,77 ĐIỂM",
+       64,
+       "do"
+      ],
+      [
+       "27/11: NGOẠI MUA RÒNG 611 TỶ",
+       52,
+       "vang"
+      ]
+     ],
+     "nguon": "CafeF 26/11, Dòng vốn kinh doanh 27/11/2026"
+    },
+    "tu_khoa": [
+     "57,77",
+     "611"
+    ]
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · ĐẤT · CHỨNG KHOÁN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  },
+  "kieu": "dieu_tra",
+  "broll": [
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aerial_views_of_a_container_terminal_at_the_Port_of_Cork,_Cork,_Ireland.webm",
+    "tu": 20,
+    "den": 40,
+    "nguon": "Wikimedia Commons – Aerial views of a container terminal at the Port of Cork (FILMING CORK, CC BY 3.0)"
+   },
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship.webm",
+    "tu": 18,
+    "den": 38,
+    "nguon": "Wikimedia Commons – Container ship.webm (Jan Ainali, CC BY-SA 4.0)"
+   },
+   {
+    "url": "broll/cang_cork.mp4",
+    "tu": 0,
+    "den": 24,
+    "nguon": "Wikimedia Commons – Aerial views of a container terminal at the Port of Cork (FILMING CORK, CC BY 3.0)"
+   }
+  ],
+  "broll_tim": "container ship port"
+ },
+ {
+  "key": "SN2711VCB",
+  "tieu_de": "Cổ phiếu VCB về 48.950 đồng, thấp nhất hơn 3,5 năm, giảm hơn 35% từ đỉnh: Phó Tổng Giám đốc đăng ký mua 103.000 cổ phiếu, tín hiệu hay chỉ là con số nhỏ???",
+  "hook": [
+   "VCB MẤT 35%",
+   "SẾP VẪN MUA???"
+  ],
+  "nhan": "ĐIỀU TRA · 27/11/2026",
+  "short_caption": "Phiên 26/11/2026 VCB đóng cửa 48.950 đồng/cổ phiếu, thấp nhất từ cuối tháng 4/2023, giảm hơn 35% so với đỉnh 75.400 đồng giữa tháng 1/2026. Ngày 27/11, một Phó Tổng Giám đốc Vietcombank đăng ký mua 103.000 cổ phiếu từ 3/12 đến 31/12/2026, nếu mua đủ sẽ nắm 0,0026% vốn. Nguồn: Stockbiz (An ninh tiền tệ), Người Quan Sát 27/11/2026.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "TÍN HIỆU HAY CHO VUI?",
+   "loi": "Lãnh đạo mua 103.000 cổ phiếu lúc VCB về đáy, anh chị coi A: là tín hiệu, hay B: con số quá nhỏ?",
+   "loi_doc": "Lãnh đạo mua một trăm linh ba nghìn cổ phiếu lúc VCB về đáy, anh chị coi A: là tín hiệu, hay B: con số quá nhỏ?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "TÍN HIỆU HAY CHO VUI?",
+    "dong": [
+     [
+      "A: TÍN HIỆU",
+      80,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: QUÁ NHỎ",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "ĐÁY HƠN 3,5 NĂM",
+    "loi": "Cổ phiếu ngân hàng lớn nhất sàn về đáy hơn 3,5 năm. Khoan, ngay lúc này lãnh đạo lại đăng ký mua vào 103.000 cổ phiếu.",
+    "loi_doc": "Cổ phiếu ngân hàng lớn nhất sàn về đáy hơn ba phẩy năm năm. Khoan, ngay lúc này lãnh đạo lại đăng ký mua vào một trăm linh ba nghìn cổ phiếu.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "VCB ĐÓNG CỬA 26/11/2026",
+     "dong": [
+      [
+       "48.950 ĐỒNG",
+       104,
+       "do"
+      ],
+      [
+       "THẤP NHẤT TỪ THÁNG 4/2023",
+       48,
+       "trang"
+      ]
+     ],
+     "nguon": "Stockbiz 27/11/2026"
+    },
+    "dt": {
+     "loai": "lat",
+     "hoi": [
+      "VCB VỀ ĐÁY 3,5 NĂM",
+      "AI CÒN DÁM MUA?"
+     ],
+     "lat": "LÃNH ĐẠO ĐĂNG KÝ MUA",
+     "tu": "Khoan",
+     "phu": "Stockbiz · 27/11/2026"
+    },
+    "tu_khoa": [
+     "khoan",
+     "103.000"
+    ]
+   },
+   {
+    "chu_to": "75.400 SO VỚI 48.950",
+    "loi": "Giữa tháng 1 năm nay VCB ở đỉnh 75.400 đồng. Phiên 26/11 còn 48.950 đồng, giảm hơn 35%. Vốn hoá bốc hơi hơn 220.000 tỷ.",
+    "loi_doc": "Giữa tháng một năm nay VCB ở đỉnh bảy mươi lăm nghìn bốn trăm đồng. Phiên hai mươi sáu tháng mười một còn bốn mươi tám nghìn chín trăm năm mươi đồng, giảm hơn ba mươi lăm phần trăm. Vốn hoá bốc hơi hơn hai trăm hai mươi nghìn tỷ.",
+    "anh": [],
+    "the": {
+     "loai": "cot",
+     "tieu": "GIÁ VCB · NGHÌN ĐỒNG",
+     "hang": [
+      [
+       "ĐỈNH THÁNG 1/2026",
+       75.4
+      ],
+      [
+       "PHIÊN 26/11/2026",
+       48.95
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 80,
+     "nd": 2,
+     "nguon": "Stockbiz 27/11/2026"
+    },
+    "dt": {
+     "loai": "so_sanh",
+     "tieu": "GIÁ VCB · NGHÌN ĐỒNG",
+     "a": [
+      "ĐỈNH THÁNG 1/2026",
+      75.4
+     ],
+     "b": [
+      "PHIÊN 26/11/2026",
+      48.95
+     ],
+     "dv": "",
+     "max": 80,
+     "tu_b": "48.950",
+     "nguon": "Stockbiz 27/11/2026"
+    },
+    "tu_khoa": [
+     "75.400",
+     "48.950"
+    ]
+   },
+   {
+    "chu_to": "MUA BAO NHIÊU?",
+    "loi": "Một Phó Tổng Giám đốc đăng ký mua 103.000 cổ phiếu, từ ngày 3/12 đến 31/12. Tạm tính theo giá 26/11, cần khoảng 5 tỷ đồng.",
+    "loi_doc": "Một Phó Tổng Giám đốc đăng ký mua một trăm linh ba nghìn cổ phiếu, từ ngày ba tháng mười hai đến ba mươi mốt tháng mười hai. Tạm tính theo giá hai mươi sáu tháng mười một, cần khoảng năm tỷ đồng.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "ĐĂNG KÝ MUA 3/12 – 31/12/2026",
+     "dong": [
+      [
+       "103.000 CỔ PHIẾU",
+       84,
+       "vang"
+      ],
+      [
+       "KHOẢNG 5 TỶ ĐỒNG",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "Stockbiz 27/11/2026"
+    },
+    "tu_khoa": [
+     "103.000"
+    ]
+   },
+   {
+    "chu_to": "SO VỚI 8,35 TỶ CỔ PHIẾU",
+    "loi": "Nhưng VCB có hơn 8,35 tỷ cổ phiếu lưu hành. Mua đủ, lãnh đạo này cũng chỉ nắm 0,0026% vốn điều lệ.",
+    "loi_doc": "Nhưng VCB có hơn tám phẩy ba mươi lăm tỷ cổ phiếu lưu hành. Mua đủ, lãnh đạo này cũng chỉ nắm không phẩy không không hai sáu phần trăm vốn điều lệ.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "NẾU MUA ĐỦ",
+     "dong": [
+      [
+       "220.000 CỔ PHIẾU",
+       72,
+       "trang"
+      ],
+      [
+       "0,0026% VỐN",
+       96,
+       "vang"
+      ]
+     ],
+     "nguon": "Stockbiz 27/11/2026"
+    },
+    "tu_khoa": [
+     "0,0026"
+    ]
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · ĐẤT · CHỨNG KHOÁN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  },
+  "kieu": "dieu_tra",
+  "broll": [
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Flick_Cash_with_fingers.webm",
+    "tu": 0,
+    "den": 10
+   },
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/City_skyline_(time_lapse).webm",
+    "tu": 0,
+    "den": 10
+   }
+  ],
+  "broll_tim": "banknotes money bank"
+ },
+ {
+  "key": "SP2711VON54",
+  "tieu_de": "Thủ tướng đặt mục tiêu huy động 5,4 triệu tỷ đồng qua thị trường chứng khoán 2026–2030: tiền đó lấy từ đâu?",
+  "hook": [
+   "5,4 TRIỆU TỶ",
+   "LẤY TỪ ĐÂU?"
+  ],
+  "nhan": "TIN NÓNG · 27/11/2026",
+  "short_caption": "Ngày 27/11/2026, Thủ tướng đặt mục tiêu huy động khoảng 5,4 triệu tỷ đồng vốn trung và dài hạn qua thị trường chứng khoán giai đoạn 2026–2030; vốn hoá cổ phiếu đạt 120% GDP năm 2030 (Dòng vốn kinh doanh). Cả nền kinh tế cần khoảng 38,5 triệu tỷ đồng vốn đầu tư trong 5 năm (CafeF 27/11/2026).",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "TIỀN NÀY TỪ AI?",
+   "loi": "5,4 triệu tỷ qua chứng khoán, anh chị nghĩ A: chủ yếu từ nhà đầu tư trong nước, hay B: từ vốn ngoại?",
+   "loi_doc": "năm phẩy bốn triệu tỷ qua chứng khoán, anh chị nghĩ A: chủ yếu từ nhà đầu tư trong nước, hay B: từ vốn ngoại?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "TIỀN NÀY TỪ AI?",
+    "dong": [
+     [
+      "A: TRONG NƯỚC",
+      80,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: VỐN NGOẠI",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "5,4 TRIỆU TỶ",
+    "loi": "Ngày 27/11, Thủ tướng đặt mục tiêu huy động khoảng 5,4 triệu tỷ đồng qua thị trường chứng khoán trong 5 năm 2026 đến 2030.",
+    "loi_doc": "Ngày hai mươi bảy tháng mười một, Thủ tướng đặt mục tiêu huy động khoảng năm phẩy bốn triệu tỷ đồng qua thị trường chứng khoán trong năm năm hai nghìn không trăm hai mươi sáu đến hai nghìn không trăm ba mươi.",
+    "anh": [
+     "stock exchange trading board||stock market screen"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "MỤC TIÊU 2026–2030",
+     "dong": [
+      [
+       "5,4 TRIỆU TỶ",
+       104,
+       "vang"
+      ],
+      [
+       "QUA CHỨNG KHOÁN",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "Dòng vốn kinh doanh 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "CẦN 38,5 TRIỆU TỶ",
+    "loi": "Cả nền kinh tế cần khoảng 38,5 triệu tỷ đồng vốn đầu tư trong 5 năm, riêng năm 2026 khoảng 5,1 triệu tỷ.",
+    "loi_doc": "Cả nền kinh tế cần khoảng ba mươi tám phẩy năm triệu tỷ đồng vốn đầu tư trong năm năm, riêng năm hai nghìn không trăm hai mươi sáu khoảng năm phẩy một triệu tỷ.",
+    "anh": [
+     "highway construction||road construction site"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "VỐN ĐẦU TƯ CẦN 2026–2030",
+     "dong": [
+      [
+       "38,5 TRIỆU TỶ",
+       100,
+       "vang"
+      ],
+      [
+       "RIÊNG 2026: 5,1 TRIỆU TỶ",
+       50,
+       "trang"
+      ]
+     ],
+     "nguon": "CafeF 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "BỚT VAY NGÂN HÀNG",
+    "loi": "Mục tiêu là giảm phụ thuộc vào tín dụng ngân hàng. Đến năm 2030, vốn hoá cổ phiếu đạt 120% GDP, trái phiếu tối thiểu 58% GDP.",
+    "loi_doc": "Mục tiêu là giảm phụ thuộc vào tín dụng ngân hàng. Đến năm hai nghìn không trăm ba mươi, vốn hoá cổ phiếu đạt một trăm hai mươi phần trăm GDP, trái phiếu tối thiểu năm mươi tám phần trăm GDP.",
+    "anh": [
+     "bank building||bank office"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "MỤC TIÊU NĂM 2030",
+     "dong": [
+      [
+       "CỔ PHIẾU 120% GDP",
+       72,
+       "vang"
+      ],
+      [
+       "TRÁI PHIẾU 58% GDP",
+       72,
+       "trang"
+      ]
+     ],
+     "nguon": "Dòng vốn kinh doanh 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "CƠ HỘI SAU NÂNG HẠNG",
+    "loi": "Tháng 9/2026, Việt Nam được FTSE Russell nâng hạng lên thị trường mới nổi thứ cấp. Thủ tướng nói nâng hạng quan trọng, nhưng quan trọng hơn là giữ chân được dòng vốn dài hạn.",
+    "loi_doc": "Tháng chín/hai nghìn không trăm hai mươi sáu, Việt Nam được FTSE Russell nâng hạng lên thị trường mới nổi thứ cấp. Thủ tướng nói nâng hạng quan trọng, nhưng quan trọng hơn là giữ chân được dòng vốn dài hạn.",
+    "anh": [
+     "stock exchange||financial district"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "FTSE RUSSELL · THÁNG 9/2026",
+     "dong": [
+      [
+       "NÂNG HẠNG",
+       100,
+       "vang"
+      ],
+      [
+       "MỚI NỔI THỨ CẤP",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "Dòng vốn kinh doanh 27/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · ĐẤT · CHỨNG KHOÁN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2711KHOINGOAI",
+  "tieu_de": "Sau 7 phiên bán liên tiếp, khối ngoại bất ngờ mua ròng hơn 611 tỷ đồng phiên 27/11: FPT được gom mạnh nhất",
+  "hook": [
+   "NGOẠI MUA 611 TỶ",
+   "SAU 7 PHIÊN BÁN"
+  ],
+  "nhan": "TIN NÓNG · 27/11/2026",
+  "short_caption": "Phiên 27/11/2026 khối ngoại mua ròng hơn 611 tỷ đồng toàn thị trường, chấm dứt chuỗi 7 phiên bán ròng; FPT được mua ròng gần 182 tỷ đồng sau 9 phiên bị bán ròng hơn 1.857 tỷ. Nguồn: Dòng vốn kinh doanh 27/11/2026.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "1 PHIÊN HAY XU HƯỚNG?",
+   "loi": "Ngoại mua lại 611 tỷ, anh chị nghĩ A: chỉ một phiên, hay B: bắt đầu quay lại?",
+   "loi_doc": "Ngoại mua lại sáu trăm mười một tỷ, anh chị nghĩ A: chỉ một phiên, hay B: bắt đầu quay lại?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "1 PHIÊN HAY XU HƯỚNG?",
+    "dong": [
+     [
+      "A: MỘT PHIÊN",
+      80,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: QUAY LẠI",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "ĐẢO CHIỀU",
+    "loi": "Sau 7 phiên bán ròng liên tiếp, phiên 27/11 khối ngoại bất ngờ mua ròng hơn 611 tỷ đồng trên toàn thị trường.",
+    "loi_doc": "Sau bảy phiên bán ròng liên tiếp, phiên hai mươi bảy tháng mười một khối ngoại bất ngờ mua ròng hơn sáu trăm mười một tỷ đồng trên toàn thị trường.",
+    "anh": [
+     "stock market trading screen||stock ticker"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "KHỐI NGOẠI PHIÊN 27/11/2026",
+     "dong": [
+      [
+       "MUA RÒNG 611 TỶ",
+       92,
+       "vang"
+      ],
+      [
+       "CHẤM DỨT 7 PHIÊN BÁN",
+       52,
+       "trang"
+      ]
+     ],
+     "nguon": "Dòng vốn kinh doanh 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "FPT ĐỨNG ĐẦU",
+    "loi": "Mã được mua ròng mạnh nhất là FPT, gần 182 tỷ đồng. Trước đó FPT bị bán ròng 9 phiên liền, tổng hơn 1.857 tỷ.",
+    "loi_doc": "Mã được mua ròng mạnh nhất là FPT, gần một trăm tám mươi hai tỷ đồng. Trước đó FPT bị bán ròng chín phiên liền, tổng hơn một nghìn tám trăm năm mươi bảy tỷ.",
+    "anh": [
+     "software developers office||computer programming"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "FPT",
+     "dong": [
+      [
+       "MUA RÒNG 182 TỶ",
+       84,
+       "vang"
+      ],
+      [
+       "9 PHIÊN TRƯỚC: BÁN 1.857 TỶ",
+       48,
+       "do"
+      ]
+     ],
+     "nguon": "Dòng vốn kinh doanh 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "VN-INDEX HỒI",
+    "loi": "Cùng phiên, VN-Index tăng hơn 24 điểm, sàn HOSE có 217 mã tăng và 93 mã giảm.",
+    "loi_doc": "Cùng phiên, VN Index tăng hơn hai mươi bốn điểm, sàn HOSE có hai trăm mười bảy mã tăng và chín mươi ba mã giảm.",
+    "anh": [
+     "stock exchange board green||stock market"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "HOSE PHIÊN 27/11/2026",
+     "dong": [
+      [
+       "217 MÃ TĂNG",
+       84,
+       "vang"
+      ],
+      [
+       "93 MÃ GIẢM",
+       64,
+       "do"
+      ]
+     ],
+     "nguon": "Dòng vốn kinh doanh 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "BÁN Ở ĐÂU?",
+    "loi": "Chiều ngược lại, GMD bị bán ròng mạnh nhất sàn HOSE, gần 150 tỷ đồng. Thanh khoản cả sàn hơn 11.269 tỷ đồng.",
+    "loi_doc": "Chiều ngược lại, GMD bị bán ròng mạnh nhất sàn HOSE, gần một trăm năm mươi tỷ đồng. Thanh khoản cả sàn hơn mười một nghìn hai trăm sáu mươi chín tỷ đồng.",
+    "anh": [
+     "container port cranes||cargo port"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "HOSE PHIÊN 27/11/2026",
+     "dong": [
+      [
+       "GMD: BÁN RÒNG 150 TỶ",
+       64,
+       "do"
+      ],
+      [
+       "THANH KHOẢN 11.269 TỶ",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "Dòng vốn kinh doanh 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "TRƯỚC ĐÓ MỘT NGÀY",
+    "loi": "Chỉ một ngày trước, phiên 26/11 VN-Index mất 57,77 điểm vì tin thuế Mỹ. Một ngày sau, dòng tiền ngoại đã quay lại gom.",
+    "loi_doc": "Chỉ một ngày trước, phiên hai mươi sáu tháng mười một VN Index mất năm mươi bảy phẩy bảy mươi bảy điểm vì tin thuế Mỹ. Một ngày sau, dòng tiền ngoại đã quay lại gom.",
+    "anh": [
+     "stock market screen red||stock chart"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "26/11 → 27/11",
+     "dong": [
+      [
+       "MẤT 57,77 ĐIỂM",
+       76,
+       "do"
+      ],
+      [
+       "NGOẠI MUA 611 TỶ",
+       76,
+       "vang"
+      ]
+     ],
+     "nguon": "CafeF 26/11, Dòng vốn kinh doanh 27/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · ĐẤT · CHỨNG KHOÁN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2711CHUNGCU",
+  "tieu_de": "Chung cư Bắc Từ Liêm đồng loạt giảm giá: căn 72 m2 ở Jade Square rao 6 tỷ, chủ nhà chấp nhận lỗ hơn 1,7 tỷ vì lãi vay",
+  "hook": [
+   "LỖ HƠN 1,7 TỶ",
+   "VÌ LÃI VAY"
+  ],
+  "nhan": "TIN NÓNG · 27/11/2026",
+  "short_caption": "Theo VietnamFinance (27/11/2026), căn hộ 2 phòng ngủ 72 m2 tại Jade Square (Bắc Từ Liêm cũ) rao 6 tỷ đồng, chủ nhà chấp nhận giảm hơn 1,7 tỷ so với lúc mua vì áp lực lãi vay; giá chào căn hộ thứ cấp Hà Nội quý III/2026 khoảng 83 triệu đồng/m2, giảm 8% so với cùng kỳ (One Mount).",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "MUA LÚC NÀY?",
+   "loi": "Chung cư cắt lỗ cả tỷ, anh chị nghĩ A: đã tới lúc mua ở, hay B: còn chờ thêm?",
+   "loi_doc": "Chung cư cắt lỗ cả tỷ, anh chị nghĩ A: đã tới lúc mua ở, hay B: còn chờ thêm?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "MUA LÚC NÀY?",
+    "dong": [
+     [
+      "A: MUA Ở",
+      80,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: CHỜ THÊM",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "LỖ HƠN 1,7 TỶ",
+    "loi": "Một căn hộ 72 m2 ở Jade Square, Bắc Từ Liêm, đang rao 6 tỷ đồng. Chủ nhà chấp nhận giảm hơn 1,7 tỷ so với lúc mua vào.",
+    "loi_doc": "Một căn hộ bảy mươi hai mét vuông ở Jade Square, Bắc Từ Liêm, đang rao sáu tỷ đồng. Chủ nhà chấp nhận giảm hơn một phẩy bảy tỷ so với lúc mua vào.",
+    "anh": [
+     "apartment buildings Hanoi||apartment towers"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "JADE SQUARE · 2 PHÒNG NGỦ 72 M²",
+     "dong": [
+      [
+       "RAO 6 TỶ",
+       96,
+       "vang"
+      ],
+      [
+       "GIẢM HƠN 1,7 TỶ",
+       64,
+       "do"
+      ]
+     ],
+     "nguon": "VietnamFinance 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "VÌ SAO BÁN LỖ?",
+    "loi": "Lý do được nêu: chủ nhà không còn đủ sức gánh lãi vay ngân hàng. Căn 66 m2 ở Green Star cũng rao thấp hơn 300 đến 400 triệu so với 2 tháng trước.",
+    "loi_doc": "Lý do được nêu: chủ nhà không còn đủ sức gánh lãi vay ngân hàng. Căn sáu mươi sáu mét vuông ở Green Star cũng rao thấp hơn ba trăm đến bốn trăm triệu so với hai tháng trước.",
+    "anh": [
+     "bank loan interest||bank counter"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "GREEN STAR · 66 M²",
+     "dong": [
+      [
+       "4,3 TỶ",
+       100,
+       "vang"
+      ],
+      [
+       "THẤP HƠN 2 THÁNG TRƯỚC",
+       48,
+       "trang"
+      ]
+     ],
+     "nguon": "VietnamFinance 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "CẢ HÀ NỘI",
+    "loi": "Quý 3 năm 2026, giá chào căn hộ thứ cấp Hà Nội khoảng 83 triệu đồng mỗi m2, giảm 8% so với cùng kỳ, thấp hơn khoảng 13% so với đỉnh.",
+    "loi_doc": "Quý ba năm hai nghìn không trăm hai mươi sáu, giá chào căn hộ thứ cấp Hà Nội khoảng tám mươi ba triệu đồng mỗi mét vuông, giảm tám phần trăm so với cùng kỳ, thấp hơn khoảng mười ba phần trăm so với đỉnh.",
+    "anh": [
+     "city apartment skyline||residential towers"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "CĂN HỘ THỨ CẤP HÀ NỘI · QUÝ III/2026",
+     "dong": [
+      [
+       "83 TRIỆU/M²",
+       92,
+       "vang"
+      ],
+      [
+       "GIẢM 8% SO CÙNG KỲ",
+       52,
+       "do"
+      ]
+     ],
+     "nguon": "One Mount, VietnamFinance 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "ÍT NGƯỜI HỎI MUA",
+    "loi": "Tháng 10/2026, mức độ quan tâm chung cư Hà Nội giảm 9% so với quý 2. Nhiều dự án lớn phía Tây và phía Đông giảm giá rao 11 đến 14%.",
+    "loi_doc": "Tháng mười/hai nghìn không trăm hai mươi sáu, mức độ quan tâm chung cư Hà Nội giảm chín phần trăm so với quý hai. Nhiều dự án lớn phía Tây và phía Đông giảm giá rao mười một đến mười bốn phần trăm.",
+    "anh": [
+     "apartment for sale sign||real estate"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "CHUNG CƯ HÀ NỘI · THÁNG 10/2026",
+     "dong": [
+      [
+       "QUAN TÂM GIẢM 9%",
+       76,
+       "do"
+      ],
+      [
+       "GIÁ RAO GIẢM 11–14%",
+       60,
+       "trang"
+      ]
+     ],
+     "nguon": "batdongsan.com.vn, VietnamFinance 27/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · ĐẤT · CHỨNG KHOÁN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2711ARGEN",
+  "tieu_de": "Quốc hội Argentina cấm ngân hàng trung ương in tiền cho Chính phủ chi tiêu: luật qua với 141 phiếu thuận, 0 phiếu chống",
+  "hook": [
+   "CẤM IN TIỀN",
+   "ĐỂ TIÊU XÀI?"
+  ],
+  "nhan": "THẾ GIỚI · 26/11/2026",
+  "short_caption": "Ngày 26/11/2026, Hạ viện Argentina thông qua luật cấm ngân hàng trung ương in tiền tài trợ chi tiêu Chính phủ, 141 phiếu thuận, 0 phiếu chống, 99 phiếu trắng; nhiệm vụ chính của ngân hàng trung ương là giữ giá trị đồng peso. Nguồn: VnEconomy 27/11/2026.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "TIỀN NHÀ MÌNH GIỮ SAO?",
+   "loi": "Sợ tiền mất giá, anh chị giữ tiền bằng A: vàng, hay B: cổ phiếu, tiết kiệm?",
+   "loi_doc": "Sợ tiền mất giá, anh chị giữ tiền bằng A: vàng, hay B: cổ phiếu, tiết kiệm?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "TIỀN NHÀ MÌNH GIỮ SAO?",
+    "dong": [
+     [
+      "A: VÀNG",
+      80,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: CỔ PHIẾU",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "CẤM IN TIỀN",
+    "loi": "Ngày 26/11, Quốc hội Argentina thông qua luật cấm ngân hàng trung ương in tiền để Chính phủ chi tiêu.",
+    "loi_doc": "Ngày hai mươi sáu tháng mười một, Quốc hội Argentina thông qua luật cấm ngân hàng trung ương in tiền để Chính phủ chi tiêu.",
+    "anh": [
+     "printing banknotes||money printing press"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "ARGENTINA · 26/11/2026",
+     "dong": [
+      [
+       "CẤM IN TIỀN",
+       104,
+       "vang"
+      ],
+      [
+       "CHO CHÍNH PHỦ CHI TIÊU",
+       52,
+       "trang"
+      ]
+     ],
+     "nguon": "VnEconomy 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "141 SO VỚI 0",
+    "loi": "Tại Hạ viện, luật qua với 141 phiếu thuận, không có phiếu chống và 99 phiếu trắng.",
+    "loi_doc": "Tại Hạ viện, luật qua với một trăm bốn mươi mốt phiếu thuận, không có phiếu chống và chín mươi chín phiếu trắng.",
+    "anh": [
+     "parliament voting||parliament chamber"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "KẾT QUẢ BỎ PHIẾU",
+     "dong": [
+      [
+       "141 THUẬN",
+       92,
+       "vang"
+      ],
+      [
+       "0 CHỐNG · 99 TRẮNG",
+       60,
+       "trang"
+      ]
+     ],
+     "nguon": "VnEconomy 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "BÀI HỌC LẠM PHÁT",
+    "loi": "Nhiều thập niên, cứ thiếu tiền là in thêm peso, khiến Argentina nhiều lần rơi vào siêu lạm phát. Tiền in ra, người giữ tiền mặt chịu thiệt đầu tiên.",
+    "loi_doc": "Nhiều thập niên, cứ thiếu tiền là in thêm peso, khiến Argentina nhiều lần rơi vào siêu lạm phát. Tiền in ra, người giữ tiền mặt chịu thiệt đầu tiên.",
+    "anh": [
+     "inflation supermarket prices||price tags"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "IN TIỀN BÙ CHI TIÊU",
+     "dong": [
+      [
+       "SIÊU LẠM PHÁT",
+       92,
+       "do"
+      ],
+      [
+       "NGƯỜI GIỮ TIỀN MẶT THIỆT",
+       48,
+       "trang"
+      ]
+     ],
+     "nguon": "VnEconomy 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "ĐANG SUY THOÁI",
+    "loi": "Luật được bỏ phiếu vài ngày sau khi số liệu sơ bộ cho thấy kinh tế Argentina giảm 2 quý liên tiếp, nhiều khả năng đã rơi vào suy thoái.",
+    "loi_doc": "Luật được bỏ phiếu vài ngày sau khi số liệu sơ bộ cho thấy kinh tế Argentina giảm hai quý liên tiếp, nhiều khả năng đã rơi vào suy thoái.",
+    "anh": [
+     "Buenos Aires street||Argentina city"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "KINH TẾ ARGENTINA",
+     "dong": [
+      [
+       "GIẢM 2 QUÝ LIÊN TIẾP",
+       72,
+       "do"
+      ],
+      [
+       "NHIỀU KHẢ NĂNG SUY THOÁI",
+       52,
+       "trang"
+      ]
+     ],
+     "nguon": "VnEconomy 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "NHIỆM VỤ MỚI",
+    "loi": "Theo điều lệ mới, nhiệm vụ chính và cơ bản của ngân hàng trung ương Argentina là giữ giá trị đồng peso, không được cho chính quyền vay dưới mọi hình thức.",
+    "loi_doc": "Theo điều lệ mới, nhiệm vụ chính và cơ bản của ngân hàng trung ương Argentina là giữ giá trị đồng peso, không được cho chính quyền vay dưới mọi hình thức.",
+    "anh": [
+     "Argentine peso banknotes||peso money"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "ĐIỀU LỆ MỚI",
+     "dong": [
+      [
+       "GIỮ GIÁ TRỊ ĐỒNG PESO",
+       64,
+       "vang"
+      ],
+      [
+       "CẤM CHO CHÍNH QUYỀN VAY",
+       52,
+       "trang"
+      ]
+     ],
+     "nguon": "VnEconomy 27/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · ĐẤT · CHỨNG KHOÁN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2711CII0",
+  "tieu_de": "CII huy động 5.218 tỷ trái phiếu kỳ hạn 25 năm: 3 năm đầu lãi 0%, sau đó 14,5%/năm, rồi đổi phương án dùng vốn",
+  "hook": [
+   "3 NĂM LÃI 0%",
+   "RỒI 14,5%/NĂM?"
+  ],
+  "nhan": "TIN NÓNG · 27/11/2026",
+  "short_caption": "Theo MarketTimes (27/11/2026), CII huy động gần 5.218 tỷ đồng trái phiếu từ 3.160 nhà đầu tư, kỳ hạn tới 25 năm, lãi 0% trong 12 kỳ đầu (3 năm) rồi cố định 14,5%/năm, sau đó điều chỉnh phương án phân bổ vốn.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "ANH CHỊ CÓ MUA?",
+   "loi": "Lãi 0% ba năm rồi 14,5%, anh chị thấy A: hấp dẫn, hay B: quá dài để chờ?",
+   "loi_doc": "Lãi không phần trăm ba năm rồi mười bốn phẩy năm phần trăm, anh chị thấy A: hấp dẫn, hay B: quá dài để chờ?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "ANH CHỊ CÓ MUA?",
+    "dong": [
+     [
+      "A: HẤP DẪN",
+      80,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: QUÁ DÀI",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "5.218 TỶ",
+    "loi": "CII vừa huy động gần 5.218 tỷ đồng trái phiếu từ 3.160 nhà đầu tư, kỳ hạn lên tới 25 năm.",
+    "loi_doc": "CII vừa huy động gần năm nghìn hai trăm mười tám tỷ đồng trái phiếu từ ba nghìn một trăm sáu mươi nhà đầu tư, kỳ hạn lên tới hai mươi lăm năm.",
+    "anh": [
+     "highway toll road||expressway"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "TRÁI PHIẾU CII",
+     "dong": [
+      [
+       "5.218 TỶ",
+       104,
+       "vang"
+      ],
+      [
+       "3.160 NHÀ ĐẦU TƯ",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "MarketTimes 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "LÃI 0% RỒI 14,5%",
+    "loi": "Điểm lạ: 3 năm đầu lãi 0%. Từ kỳ sau, lãi cố định 14,5% mỗi năm, trả 3 tháng một lần.",
+    "loi_doc": "Điểm lạ: ba năm đầu lãi không phần trăm. Từ kỳ sau, lãi cố định mười bốn phẩy năm phần trăm mỗi năm, trả ba tháng một lần.",
+    "anh": [
+     "calculator interest||bank interest"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "LÃI SUẤT",
+     "dong": [
+      [
+       "3 NĂM ĐẦU: 0%",
+       88,
+       "do"
+      ],
+      [
+       "SAU ĐÓ: 14,5%/NĂM",
+       76,
+       "vang"
+      ]
+     ],
+     "nguon": "MarketTimes 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "ĐỔI CÁCH DÙNG TIỀN",
+    "loi": "Huy động xong, CII điều chỉnh phân bổ vốn, giảm tiền cho cao tốc Thành phố Hồ Chí Minh đi Trung Lương, Mỹ Thuận.",
+    "loi_doc": "Huy động xong, CII điều chỉnh phân bổ vốn, giảm tiền cho cao tốc Thành phố Hồ Chí Minh đi Trung Lương, Mỹ Thuận.",
+    "anh": [
+     "expressway construction||highway construction"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "SAU KHI HUY ĐỘNG",
+     "dong": [
+      [
+       "ĐỔI PHƯƠNG ÁN",
+       92,
+       "vang"
+      ],
+      [
+       "DÙNG VỐN",
+       92,
+       "trang"
+      ]
+     ],
+     "nguon": "MarketTimes 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "100 TRIỆU THÌ SAO?",
+    "loi": "Em tính thử: bỏ 100 triệu mua trái phiếu này, 3 năm đầu không nhận đồng lãi nào. Từ năm thứ tư, mỗi năm nhận 14,5 triệu trước thuế.",
+    "loi_doc": "Em tính thử: bỏ một trăm triệu mua trái phiếu này, ba năm đầu không nhận đồng lãi nào. Từ năm thứ tư, mỗi năm nhận mười bốn phẩy năm triệu trước thuế.",
+    "anh": [
+     "calculator money||savings coins"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "EM TỰ TÍNH · 100 TRIỆU",
+     "dong": [
+      [
+       "NĂM 1–3: 0 ĐỒNG",
+       76,
+       "do"
+      ],
+      [
+       "TỪ NĂM 4: 14,5 TRIỆU/NĂM",
+       56,
+       "vang"
+      ]
+     ],
+     "nguon": "Tính theo MarketTimes 27/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · ĐẤT · CHỨNG KHOÁN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2711BIDV18",
+  "tieu_de": "BIDV phát hành gần 1,4 tỷ cổ phiếu trả cổ tức tỷ lệ 17,9636%: 1.000 cổ phiếu nhận thêm 179 cổ phiếu",
+  "hook": [
+   "CỔ TỨC GẦN 18%",
+   "BẰNG CỔ PHIẾU"
+  ],
+  "nhan": "TIN NÓNG · 27/11/2026",
+  "short_caption": "BIDV dự kiến phát hành hơn 1,397 tỷ cổ phiếu trả cổ tức tỷ lệ 100:17,9636 trong quý IV/2026, vốn điều lệ tăng từ gần 77.782 tỷ lên gần 91.755 tỷ đồng. Nguồn: Người Đưa Tin, Mekong ASEAN 27/11/2026.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "THÍCH LOẠI NÀO?",
+   "loi": "Anh chị thích cổ tức A: bằng cổ phiếu, hay B: bằng tiền mặt?",
+   "loi_doc": "Anh chị thích cổ tức A: bằng cổ phiếu, hay B: bằng tiền mặt?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "THÍCH LOẠI NÀO?",
+    "dong": [
+     [
+      "A: CỔ PHIẾU",
+      80,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: TIỀN MẶT",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "GẦN 1,4 TỶ CỔ PHIẾU",
+    "loi": "BIDV dự kiến phát hành gần 1,4 tỷ cổ phiếu để trả cổ tức, trong quý IV năm nay.",
+    "loi_doc": "BIDV dự kiến phát hành gần một phẩy bốn tỷ cổ phiếu để trả cổ tức, trong quý IV năm nay.",
+    "anh": [
+     "bank building||bank branch"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "BIDV · 27/11/2026",
+     "dong": [
+      [
+       "1,397 TỶ CỔ PHIẾU",
+       84,
+       "vang"
+      ],
+      [
+       "TRẢ CỔ TỨC",
+       60,
+       "trang"
+      ]
+     ],
+     "nguon": "Người Đưa Tin 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "1.000 NHẬN 179",
+    "loi": "Tỷ lệ 100 đổi 17,9636. Nghĩa là ai có 1.000 cổ phiếu sẽ nhận thêm khoảng 179 cổ phiếu mới.",
+    "loi_doc": "Tỷ lệ một trăm đổi mười bảy phẩy chín sáu ba sáu. Nghĩa là ai có một nghìn cổ phiếu sẽ nhận thêm khoảng một trăm bảy mươi chín cổ phiếu mới.",
+    "anh": [
+     "stock certificate||shareholders meeting"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "TỶ LỆ 100 : 17,9636",
+     "dong": [
+      [
+       "1.000 CP",
+       84,
+       "trang"
+      ],
+      [
+       "+179 CP MỚI",
+       96,
+       "vang"
+      ]
+     ],
+     "nguon": "Mekong ASEAN 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "VỐN TĂNG 13.972 TỶ",
+    "loi": "Vốn điều lệ BIDV tăng từ gần 77.782 tỷ lên gần 91.755 tỷ. Nhưng cổ tức cổ phiếu không phải tiền mặt, giá sẽ được điều chỉnh khi chia.",
+    "loi_doc": "Vốn điều lệ BIDV tăng từ gần bảy mươi bảy nghìn bảy trăm tám mươi hai tỷ lên gần chín mươi mốt nghìn bảy trăm năm mươi lăm tỷ. Nhưng cổ tức cổ phiếu không phải tiền mặt, giá sẽ được điều chỉnh khi chia.",
+    "anh": [
+     "bank vault||bank"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "VỐN ĐIỀU LỆ BIDV",
+     "dong": [
+      [
+       "77.782 → 91.755 TỶ",
+       76,
+       "vang"
+      ],
+      [
+       "KHÔNG PHẢI TIỀN MẶT",
+       52,
+       "do"
+      ]
+     ],
+     "nguon": "Người Đưa Tin 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "TIỀN TỪ ĐÂU?",
+    "loi": "Nguồn phát hành lấy từ lợi nhuận còn lại năm 2023. Ngân hàng Nhà nước đã chấp thuận cho BIDV tăng vốn thêm tối đa hơn 13.972 tỷ đồng.",
+    "loi_doc": "Nguồn phát hành lấy từ lợi nhuận còn lại năm hai nghìn không trăm hai mươi ba. Ngân hàng Nhà nước đã chấp thuận cho BIDV tăng vốn thêm tối đa hơn mười ba nghìn chín trăm bảy mươi hai tỷ đồng.",
+    "anh": [
+     "bank headquarters||bank tower"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "NGUỒN PHÁT HÀNH",
+     "dong": [
+      [
+       "LỢI NHUẬN 2023",
+       80,
+       "vang"
+      ],
+      [
+       "TĂNG VỐN 13.972 TỶ",
+       64,
+       "trang"
+      ]
+     ],
+     "nguon": "Người Đưa Tin 27/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · ĐẤT · CHỨNG KHOÁN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SN2711MEME2",
+  "kieu": "meme",
+  "thoi_luong": 20,
+  "nhan": "THỦ THIÊM · 27/11/2026",
+  "tieu_de_2dong": [
+   "2021: LÔ 3-12 TRẢ 24.500 TỶ",
+   "2026: KHỞI ĐIỂM 10.198 TỶ, 0 AI ĐĂNG KÝ"
+  ],
+  "cau_chot": "Năm 2021 cả xóm đòi vào…\nnăm 2026 không ai tới",
+  "bieu_do": {
+   "tieu": "LÔ 3-12 THỦ THIÊM · TỶ ĐỒNG",
+   "diem": [
+    [
+     "2021 trúng giá",
+     24500
+    ],
+    [
+     "2026 khởi điểm",
+     10198
+    ]
+   ],
+   "nd": 0,
+   "dv": "",
+   "nguon": "VietnamFinance 27/11/2026",
+   "mau": "do"
+  },
+  "clip": [
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lindy_Hop_dancing_at_Mobtown_Ballroom,_October_2024.webm",
+    "tu": 1,
+    "den": 7
+   },
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Oktoberfest_2022_dance.webm",
+    "tu": 0,
+    "den": 6
+   }
+  ],
+  "clip_du_phong": [
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Oktoberfest_2022_dance.webm",
+    "tu": 6,
+    "den": 12
+   }
+  ],
+  "nguon_clip": "Wikimedia Commons – Lindy Hop dancing at Mobtown Ballroom (10/2024); Oktoberfest 2022 dance",
+  "tu_khoa_anh": "people dancing party",
+  "giu_tieng": 0,
+  "music_db": 0,
+  "caption": "Cuối năm 2021, lô đất 3-12 ở Thủ Thiêm được trả 24.500 tỷ đồng; 4 lô cùng đợt trúng tổng 37.346 tỷ, rồi doanh nghiệp lần lượt bỏ cọc.\n\nPhiên 27/11/2026: lô 3-12 khởi điểm hơn 10.198 tỷ đồng, không có ai đăng ký; 3/4 lô không có người tham gia.\n\nNguồn số liệu: VietnamFinance 27/11/2026. Nguồn clip: Wikimedia Commons (giấy phép mở).",
+  "binh_chon": [
+   "1️⃣ Giá vẫn cao quá",
+   "2️⃣ Doanh nghiệp hết tiền"
+  ],
+  "tags": [
+   "batdongsan",
+   "thuthiem",
+   "daugiadat",
+   "huynguyenchungkhoan"
+  ]
+ }
+]

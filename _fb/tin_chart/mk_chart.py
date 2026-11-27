@@ -71,7 +71,9 @@ def ve(c):
     for m in c.get('muc', []):
         ax.axhline(m['g'], color='#8a8496', lw=1.2, ls=(0, (5, 4)))
         ax.text(.99, m['g'], ' ' + m['chu'] + ' ', transform=ax.get_yaxis_transform(), ha='right', va='center', fontsize=14, color='white', bbox=dict(boxstyle='square,pad=0.2', fc='#5f5a69', ec='none'))
-    ax.xaxis.set_major_locator(md.MonthLocator()); ax.xaxis.set_major_formatter(md.DateFormatter('T%-m'))
+    if c.get('truc_nam'): ax.xaxis.set_major_locator(md.YearLocator()); ax.xaxis.set_major_formatter(md.DateFormatter('%Y'))  # chuỗi nhiều năm (27/11)
+    else: ax.xaxis.set_major_locator(md.MonthLocator()); ax.xaxis.set_major_formatter(md.DateFormatter('T%-m'))
+    if c.get('y_cham'): ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: '{:,.0f}'.format(v).replace(',', '.')))
     ax.tick_params(axis='x', labelsize=17, colors=INK)
     for d in c.get('diem', []):
         xx = D(d['t']); ax.scatter([xx], [d['g']], s=90, facecolor='white', edgecolor=INK, lw=2.4, zorder=8)

@@ -1,0 +1,155 @@
+[
+ {
+  "ra": "_fb/tin_chart/out/SN2711THUTHIEM.jpg",
+  "ten": "Lô đất 3-12 Thủ Thiêm",
+  "sym": "Tỷ đồng · phiên đấu giá 27/11/2026",
+  "gia": "10.198 tỷ",
+  "doi": "khởi điểm · 0 người đăng ký",
+  "mau_doi": "do",
+  "st": [
+   [
+    "2021 trúng",
+    "24.500 tỷ"
+   ],
+   [
+    "Đặt trước",
+    "2.039 tỷ"
+   ],
+   [
+    "Diện tích",
+    "10.060 m²"
+   ]
+  ],
+  "hook1": "Năm 2021 trả 24.500 tỷ.",
+  "hook2": "Nay 10.198 tỷ ko ai đăng ký???",
+  "loai": "duong",
+  "series": [
+   {
+    "mau": "#c43c32",
+    "lw": 3.6,
+    "diem": [
+     [
+      "2021-12-10",
+      24500
+     ],
+     [
+      "2026-11-27",
+      10198
+     ]
+    ]
+   }
+  ],
+  "dem": 0.25,
+  "muc": [],
+  "diem": [
+   {
+    "t": "2021-12-10",
+    "g": 24500,
+    "chu": "Cuối 2021: trúng 24.500 tỷ, rồi bỏ cọc",
+    "dx": 60,
+    "dy": -10
+   },
+   {
+    "t": "2026-11-27",
+    "g": 10198,
+    "chu": "27/11/2026: khởi điểm 10.198, 0 người đăng ký",
+    "dx": -120,
+    "dy": 60
+   }
+  ],
+  "nguon": "Nguồn: VietnamFinance 27/11/2026",
+  "truc_nam": true,
+  "y_cham": true
+ },
+ {
+  "ra": "_fb/tin_chart/out/SN2711THUEMY.jpg",
+  "ten": "VN-Index",
+  "sym": "HOSE · tới phiên 26/11/2026",
+  "gia": "1.629,68",
+  "doi": "−57,77 điểm phiên 26/11",
+  "mau_doi": "do",
+  "st": [
+   [
+    "Mỹ đề xuất thuế",
+    "tối đa 35%"
+   ],
+   [
+    "Nếu có hiệp định",
+    "20%"
+   ],
+   [
+    "Chốt muộn nhất",
+    "11/3/2027"
+   ]
+  ],
+  "hook1": "Thủ tướng: thuế sẽ thấp hơn nhiều 35%.",
+  "hook2": "VN-Index đã kịp mất 57,77 điểm???",
+  "loai": "nen",
+  "ma": "VNINDEX",
+  "den_ngay": "2026-11-26",
+  "n": 60,
+  "diem": [
+   {
+    "t": "2026-11-26",
+    "g": 1622.08,
+    "chu": "26/11: tin thuế Mỹ, −57,77 điểm",
+    "dx": -80,
+    "dy": -40
+   }
+  ],
+  "muc": [
+   {
+    "g": 1600,
+    "chu": "1.600"
+   }
+  ],
+  "nguon": "Thuế: Nhà Đầu Tư 27/11/2026 · Giá: HOSE",
+  "co1": 30,
+  "co2": 31
+ },
+ {
+  "ra": "_fb/tin_chart/out/SN2711VCB.jpg",
+  "ten": "Vietcombank (VCB)",
+  "sym": "HOSE · nghìn đồng/cp · tới phiên 26/11/2026",
+  "gia": "48,95",
+  "doi": "−35% từ đỉnh 75,4",
+  "mau_doi": "do",
+  "st": [
+   [
+    "Thấp nhất từ",
+    "4/2023"
+   ],
+   [
+    "Lãnh đạo đăng ký mua",
+    "103.000 cp"
+   ],
+   [
+    "Nếu mua đủ",
+    "0,0026% vốn"
+   ]
+  ],
+  "hook1": "VCB về đáy hơn 3,5 năm.",
+  "hook2": "Phó TGĐ đăng ký mua 103.000 cp???",
+  "loai": "nen",
+  "ma": "VCB",
+  "den_ngay": "2026-11-26",
+  "n": 240,
+  "diem": [
+   {
+    "t": "2026-01-14",
+    "g": 75.37,
+    "chu": "Đỉnh 75,4 (14/1/2026)",
+    "dx": 50,
+    "dy": 0
+   },
+   {
+    "t": "2026-11-26",
+    "g": 48.95,
+    "chu": "26/11: 48,95",
+    "dx": -70,
+    "dy": 40
+   }
+  ],
+  "nguon": "Nguồn: Stockbiz, Người Quan Sát 27/11/2026"
+ }
+]
