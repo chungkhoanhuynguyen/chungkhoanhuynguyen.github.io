@@ -919,7 +919,7 @@ function snz(t,dur,type,f0,f1,peak,a=.01,q=1){const s=AC.createBufferSource();s.
 function stn(t,dur,type,f0,f1,peak,a=.005){const o=AC.createOscillator();o.type=type;o.frequency.setValueAtTime(f0,t);o.frequency.exponentialRampToValueAtTime(f1,t+dur);const g=AC.createGain();env(g,t,a,peak,dur);o.connect(g);g.connect(AM);o.start(t);o.stop(t+a+dur+.05);return o}
 
 /* ---------- nhạc nền & âm thanh môi trường (tự soạn, xuất file trong audio/) ---------- */
-function loadBuf(n){if(MUS.buf[n])return MUS.buf[n];return MUS.buf[n]=fetch('audio/'+n+'.mp3').then(r=>r.arrayBuffer()).then(b=>new Promise((ok,no)=>AC.decodeAudioData(b,ok,no))).catch(()=>null)}
+function loadBuf(n){if(MUS.buf[n])return MUS.buf[n];return MUS.buf[n]=fetch('audio/'+n+'.mp3?v=2811m').then(r=>r.arrayBuffer()).then(b=>new Promise((ok,no)=>AC.decodeAudioData(b,ok,no))).catch(()=>null)}
 function playLoop(n,gainV,fade){const o={g:AC.createGain(),src:null,n};o.g.gain.value=0;o.g.connect(MUS.bus);loadBuf(n).then(b=>{if(!b||o.dead)return;const sN=AC.createBufferSource();sN.buffer=b;sN.loop=true;sN.connect(o.g);sN.start();o.src=sN;o.g.gain.setTargetAtTime(gainV,AC.currentTime,fade)});return o}
 function stopLoop(o,fade){if(!o)return;o.dead=1;o.g.gain.setTargetAtTime(0,AC.currentTime,fade);setTimeout(()=>{try{o.src&&o.src.stop();o.g.disconnect()}catch(e){}},fade*6000)}
 function updAudio(dt){if(!AC||creating)return;MUS.t-=dt;MUS.hold-=dt;const hp=heroPos();
@@ -5325,7 +5325,7 @@ try{(function(){
   {t:'talk',npc:LK,say:'Ha ha ha! Ba mươi năm không uổng. Từ nay ngươi là Huyền Kiếm truyền nhân. Giang hồ còn rộng — chương mới sẽ tới khi trời đất lại biến động.',goal:'Về gặp Lão Kiếm Tiên',rw:{st:8000,xp:1,da:10,fin:1}}];
  const Q=()=>TU.sq||(TU.sq={i:0,k:0,pt:null});
  const cur=()=>S[Q().i];
- const chOf=i=>{for(let j=i;j>=0;j--)if(S[j].ch)return S[j];return S[0]};
+ const chOf=i=>{for(let j=Math.min(i,S.length-1);j>=0;j--)if(S[j]&&S[j].ch)return S[j];return S[0]};
  function needL(){const c=chOf(Q().i);return c.L||1}
  function npcPos(n){const x=NPCS.find(q=>q.name===n);return x&&x.pos}
  function pt(){const q=Q();if(!q.pt){try{const zi=zoneForL(Math.max(1,myL()-2)),z=zonePt(zi);q.pt=[Math.round(z[0]),Math.round(z[1])]}catch(_){q.pt=[0,260]}saveTL()}return q.pt}
@@ -6493,7 +6493,7 @@ try{(function(){if(/nobake/.test(location.search))return;
  const tex3=new T.DataArrayTexture(null,SZ,SZ,MAXL);const tp=R.properties.get(tex3);tp.__webglInit=true;tp.__webglTexture=glTex;tp.__version=0;
  function layerOf(map){if(!map)return 255;const im=map.image;const k=map.source?map.source.uuid:map.uuid;if(LAY.has(k))return LAY.get(k);
   if(nl>=MAXL||!im||!(im.width>0)||map.isDataTexture||map.isCompressedTexture||map.isVideoTexture)return -1;
-  if(typeof HTMLCanvasElement!=='undefined'&&im instanceof HTMLCanvasElement){let c2=null;try{c2=im.getContext('2d')}catch(_){}if(!c2||im===R.domElement||map.userData.live)return -1}
+  if(typeof HTMLCanvasElement!=='undefined'&&im instanceof HTMLCanvasElement){if(/nocvbake/.test(location.search))return -1;let c2=null;try{c2=im.getContext('2d')}catch(_){}if(!c2||im===R.domElement||map.userData.live)return -1}
   if(typeof createImageBitmap!=='function')return -1;const L=nl++;LAY.set(k,L);
   createImageBitmap(im,{resizeWidth:SZ,resizeHeight:SZ,resizeQuality:'medium',imageOrientation:map.flipY?'flipY':'none',premultiplyAlpha:'none'}).then(bm=>{try{R.state.bindTexture(gl.TEXTURE_2D_ARRAY,glTex);gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL,false);gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL,false);gl.pixelStorei(gl.UNPACK_ALIGNMENT,4);
    gl.texSubImage3D(gl.TEXTURE_2D_ARRAY,0,0,0,L,SZ,SZ,1,gl.RGBA,gl.UNSIGNED_BYTE,bm);R.state.unbindTexture();bm.close&&bm.close();texDirty=true}catch(e){console.warn('bake up',e)}}).catch(()=>{});
