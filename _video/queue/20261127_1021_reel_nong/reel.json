@@ -1,0 +1,1990 @@
+[
+ {
+  "key": "SN2711SJC22",
+  "tieu_de": "Sáng 27/11 vàng SJC bán 134,2 triệu, thế giới quy đổi chỉ khoảng 112,1 triệu: đắt hơn 22,1 triệu một lượng???",
+  "hook": [
+   "ĐẮT HƠN 22,1 TRIỆU",
+   "VẪN MUA???"
+  ],
+  "nhan": "ĐIỀU TRA · 27/11/2026",
+  "short_caption": "Lúc 8h32 sáng 27/11/2026, SJC niêm yết vàng miếng 129,2 – 134,2 triệu đồng/lượng; vàng thế giới 3.575 USD/ounce quy đổi theo giá USD Vietcombank khoảng 112,1 triệu, vàng miếng cao hơn khoảng 22,1 triệu. Chênh mua – bán: vàng miếng 5 triệu, nhẫn SJC 6 triệu. Nguồn: Báo Tin Tức 27/11/2026.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "ANH CHỊ CHỌN GÌ?",
+   "loi": "Đắt hơn thế giới 22,1 triệu một lượng, anh chị A: vẫn mua vàng miếng, hay B: để tiền ở kênh khác?",
+   "loi_doc": "Đắt hơn thế giới hai mươi hai phẩy một triệu một lượng, anh chị A: vẫn mua vàng miếng, hay B: để tiền ở kênh khác?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "ĐẮT HƠN 22,1 TRIỆU",
+    "dong": [
+     [
+      "A: VẪN MUA",
+      84,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: KÊNH KHÁC",
+      84,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "ĐẮT HƠN BAO NHIÊU?",
+    "loi": "Một lượng vàng miếng SJC sáng 27/11 đắt hơn vàng thế giới bao nhiêu? Khoan, em quy đổi rồi: khoảng 22,1 triệu đồng.",
+    "loi_doc": "Một lượng vàng miếng SJC sáng hai mươi bảy tháng mười một đắt hơn vàng thế giới bao nhiêu? Khoan, em quy đổi rồi: khoảng hai mươi hai phẩy một triệu đồng.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "VÀNG MIẾNG SJC 8H32 · 27/11/2026",
+     "dong": [
+      [
+       "129,2 – 134,2",
+       96,
+       "vang"
+      ],
+      [
+       "TRIỆU ĐỒNG/LƯỢNG",
+       52,
+       "trang"
+      ],
+      [
+       "GIẢM 300.000 MỖI CHIỀU",
+       48,
+       "do"
+      ]
+     ],
+     "nguon": "Báo Tin Tức 27/11/2026"
+    },
+    "dt": {
+     "loai": "lat",
+     "hoi": [
+      "SJC ĐẮT HƠN",
+      "THẾ GIỚI BAO NHIÊU?"
+     ],
+     "lat": "22,1 TRIỆU/LƯỢNG",
+     "tu": "Khoan",
+     "phu": "Báo Tin Tức · 27/11/2026"
+    },
+    "tu_khoa": [
+     "khoan",
+     "22,1"
+    ]
+   },
+   {
+    "chu_to": "134,2 SO VỚI 112,1",
+    "loi": "Lúc 8 giờ 32, SJC bán ra 134,2 triệu một lượng. Vàng thế giới 3.575 đô một ounce, quy theo giá đô Vietcombank bán ra 26.010 đồng, chỉ khoảng 112,1 triệu, chưa tính thuế phí.",
+    "loi_doc": "Lúc tám giờ ba mươi hai, SJC bán ra một trăm ba mươi bốn phẩy hai triệu một lượng. Vàng thế giới ba nghìn năm trăm bảy mươi lăm đô một ounce, quy theo giá đô Vietcombank bán ra hai mươi sáu nghìn không trăm mười đồng, chỉ khoảng một trăm mười hai phẩy một triệu, chưa tính thuế phí.",
+    "anh": [],
+    "the": {
+     "loai": "cot",
+     "tieu": "TRIỆU ĐỒNG/LƯỢNG · SÁNG 27/11",
+     "hang": [
+      [
+       "THẾ GIỚI QUY ĐỔI",
+       112.1
+      ],
+      [
+       "SJC BÁN RA",
+       134.2
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 150,
+     "nd": 1,
+     "nguon": "Báo Tin Tức 27/11/2026"
+    },
+    "dt": {
+     "loai": "so_sanh",
+     "tieu": "TRIỆU ĐỒNG/LƯỢNG · SÁNG 27/11/2026",
+     "a": [
+      "THẾ GIỚI QUY ĐỔI",
+      112.1
+     ],
+     "b": [
+      "SJC BÁN RA",
+      134.2
+     ],
+     "dv": " TR",
+     "max": 150,
+     "tu_b": "134,2",
+     "nguon": "Báo Tin Tức 27/11/2026"
+    },
+    "tu_khoa": [
+     "134,2",
+     "112,1"
+    ]
+   },
+   {
+    "chu_to": "MUA XONG BÁN NGAY",
+    "loi": "Chưa hết. Chênh giữa giá mua và giá bán: vàng miếng 5 triệu, vàng nhẫn SJC tới 6 triệu một lượng. Mua sáng nay, bán lại ngay là mất 5 triệu.",
+    "loi_doc": "Chưa hết. Chênh giữa giá mua và giá bán: vàng miếng năm triệu, vàng nhẫn SJC tới sáu triệu một lượng. Mua sáng nay, bán lại ngay là mất năm triệu.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "CHÊNH MUA – BÁN SÁNG 27/11",
+     "dong": [
+      [
+       "MIẾNG: 5 TRIỆU",
+       88,
+       "vang"
+      ],
+      [
+       "NHẪN SJC: 6 TRIỆU",
+       88,
+       "do"
+      ],
+      [
+       "MỖI LƯỢNG",
+       48,
+       "trang"
+      ]
+     ],
+     "nguon": "Báo Tin Tức 27/11/2026"
+    },
+    "tu_khoa": [
+     "5 triệu",
+     "6 triệu"
+    ]
+   },
+   {
+    "chu_to": "NƠI KHÁC GIỮ GIÁ",
+    "loi": "Cùng sáng nay, DOJI, PNJ và Bảo Tín Mạnh Hải vẫn giữ giá chốt hôm trước: 129,5 đến 134,5 triệu. Tức là 22 triệu chênh với thế giới, ai mua vàng miếng cũng đang trả.",
+    "loi_doc": "Cùng sáng nay, DOJI, PNJ và Bảo Tín Mạnh Hải vẫn giữ giá chốt hôm trước: một trăm hai mươi chín phẩy năm đến một trăm ba mươi bốn phẩy năm triệu. Tức là hai mươi hai triệu chênh với thế giới, ai mua vàng miếng cũng đang trả.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "DOJI · PNJ · BẢO TÍN MẠNH HẢI",
+     "dong": [
+      [
+       "129,5 – 134,5",
+       96,
+       "vang"
+      ],
+      [
+       "TRIỆU ĐỒNG/LƯỢNG",
+       52,
+       "trang"
+      ],
+      [
+       "GIỮ GIÁ CHỐT 26/11",
+       48,
+       "trang"
+      ]
+     ],
+     "nguon": "Báo Tin Tức 27/11/2026"
+    },
+    "tu_khoa": [
+     "22 triệu"
+    ]
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Giá vàng trong nước so với thế giới, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Giá vàng trong nước so với thế giới, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · TỶ GIÁ · TIN NÓNG",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  },
+  "kieu": "dieu_tra",
+  "broll": [
+   {
+    "pexels": "gold bars"
+   },
+   {
+    "pexels": "gold jewelry shop"
+   }
+  ],
+  "broll_tim": "gold bullion",
+  "fb_bai": {
+   "anh": "bia",
+   "noi_dung": "ĐẮT HƠN THẾ GIỚI 22 TRIỆU\nMÀ VẪN XẾP HÀNG???\n\nSáng nay SJC bán ra 134,2 triệu/lượng.\n\nVàng thế giới 3.575 đô/ounce, quy ra tiền mình chỉ khoảng 112,1 triệu.\n\nTức là mỗi lượng vàng miếng mọi người đang trả thêm khoảng 22,1 triệu so với thế giới.\n\nChưa hết, mua xong bán lại ngay là mất 5 triệu tiền chênh.\n\nHuy ko bảo đừng mua. Chỉ là mua thì nên biết mình đang trả cho cái gì.\n\nMọi người đang giữ vàng miếng hay vàng nhẫn?\n\nNguồn: Báo Tin Tức, 8h32 ngày 27/11/2026"
+  }
+ },
+ {
+  "key": "SN2711FED978",
+  "tieu_de": "Thị trường đặt 97,8% khả năng Fed tăng lãi ngày 8–9/12: tỷ giá trung tâm 27/11 lên 25.687 đồng, túi tiền mình chịu gì???",
+  "hook": [
+   "FED TĂNG LÃI 97,8%",
+   "ĐÔ NHÀ MÌNH SAO???"
+  ],
+  "nhan": "ĐIỀU TRA · 27/11/2026",
+  "short_caption": "Thị trường định giá khoảng 97,8% khả năng Fed tăng thêm 0,25 điểm phần trăm tại cuộc họp 8–9/12. Sáng 27/11/2026, tỷ giá trung tâm 25.687 đồng/USD (tăng 11 đồng), Vietcombank mua 25.630 – bán 26.010 đồng. Nguồn: Báo Tin Tức 27/11/2026, Người Quan Sát 27/11/2026.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "ANH CHỊ LÀM GÌ?",
+   "loi": "Fed còn tăng lãi, anh chị A: giữ một ít đô phòng thân, hay B: không cần giữ đô?",
+   "loi_doc": "Fed còn tăng lãi, anh chị A: giữ một ít đô phòng thân, hay B: không cần giữ đô?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "FED TĂNG LÃI 8–9/12?",
+    "dong": [
+     [
+      "A: GIỮ ÍT ĐÔ",
+      84,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: KHÔNG CẦN",
+      84,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "FED SẮP TĂNG LÃI?",
+    "loi": "Fed sắp tăng lãi lần nữa, tiền đô có đắt lên? Khoan, đây mới là thị trường đặt cược: khoảng 97,8% khả năng Fed tăng 0,25 điểm phần trăm ở cuộc họp ngày 8 đến 9/12.",
+    "loi_doc": "Fed sắp tăng lãi lần nữa, tiền đô có đắt lên? Khoan, đây mới là thị trường đặt cược: khoảng chín mươi bảy phẩy tám phần trăm khả năng Fed tăng không phẩy hai lăm điểm phần trăm ở cuộc họp ngày tám đến chín tháng mười hai.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "KHẢ NĂNG FED TĂNG LÃI 8–9/12",
+     "dong": [
+      [
+       "97,8%",
+       140,
+       "vang"
+      ],
+      [
+       "TĂNG 0,25 ĐIỂM PHẦN TRĂM",
+       52,
+       "trang"
+      ]
+     ],
+     "nguon": "Báo Tin Tức 27/11/2026"
+    },
+    "dt": {
+     "loai": "lat",
+     "hoi": [
+      "FED SẮP TĂNG LÃI",
+      "LẦN NỮA?"
+     ],
+     "lat": "MỚI LÀ ĐẶT CƯỢC",
+     "tu": "Khoan",
+     "phu": "Báo Tin Tức · 27/11/2026"
+    },
+    "tu_khoa": [
+     "khoan",
+     "97,8"
+    ]
+   },
+   {
+    "chu_to": "TỶ GIÁ TRUNG TÂM",
+    "loi": "Sáng 27/11, Ngân hàng Nhà nước niêm yết tỷ giá trung tâm 25.687 đồng một đô, tăng 11 đồng so với hôm qua. Biên độ cộng trừ 5% cho phép giao dịch tới 26.971 đồng.",
+    "loi_doc": "Sáng hai mươi bảy tháng mười một, Ngân hàng Nhà nước niêm yết tỷ giá trung tâm hai mươi lăm nghìn sáu trăm tám mươi bảy đồng một đô, tăng mười một đồng so với hôm qua. Biên độ cộng trừ năm phần trăm cho phép giao dịch tới hai mươi sáu nghìn chín trăm bảy mươi mốt đồng.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "TỶ GIÁ TRUNG TÂM 27/11/2026",
+     "dong": [
+      [
+       "25.687",
+       120,
+       "vang"
+      ],
+      [
+       "ĐỒNG/USD · TĂNG 11 ĐỒNG",
+       50,
+       "trang"
+      ],
+      [
+       "TRẦN BIÊN ĐỘ 26.971",
+       48,
+       "do"
+      ]
+     ],
+     "nguon": "Báo Tin Tức 27/11/2026"
+    },
+    "tu_khoa": [
+     "25.687",
+     "26.971"
+    ]
+   },
+   {
+    "chu_to": "MUA 1.000 ĐÔ",
+    "loi": "Ra ngân hàng, Vietcombank lúc 8 giờ 15 mua vào 25.630, bán ra 26.010 đồng. Mua 1.000 đô hết 26,01 triệu, bán lại ngay chỉ nhận 25,63 triệu, mất 380 nghìn.",
+    "loi_doc": "Ra ngân hàng, Vietcombank lúc tám giờ mười lăm mua vào hai mươi lăm nghìn sáu trăm ba mươi, bán ra hai mươi sáu nghìn không trăm mười đồng. Mua một nghìn đô hết hai mươi sáu phẩy không một triệu, bán lại ngay chỉ nhận hai mươi lăm phẩy sáu ba triệu, mất ba trăm tám mươi nghìn.",
+    "anh": [],
+    "the": {
+     "loai": "cot",
+     "tieu": "VIETCOMBANK 8H15 · ĐỒNG/USD",
+     "hang": [
+      [
+       "MUA VÀO",
+       25630
+      ],
+      [
+       "BÁN RA",
+       26010
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 27000,
+     "nd": 0,
+     "nguon": "Báo Tin Tức 27/11/2026"
+    },
+    "dt": {
+     "loai": "so_sanh",
+     "tieu": "1.000 USD TẠI VIETCOMBANK · 27/11",
+     "a": [
+      "BÁN LẠI NHẬN",
+      25.63
+     ],
+     "b": [
+      "MUA PHẢI TRẢ",
+      26.01
+     ],
+     "dv": " TR",
+     "max": 27,
+     "tu_b": "26,01",
+     "nguon": "Báo Tin Tức 27/11/2026"
+    },
+    "tu_khoa": [
+     "380 nghìn"
+    ]
+   },
+   {
+    "chu_to": "LÃI ĐÔ LIÊN NGÂN HÀNG",
+    "loi": "Lãi suất đô la liên ngân hàng sáng 27/11: qua đêm 3,85%, kỳ hạn 1 tháng 4,03% một năm. Còn Fed làm gì, ngày 9/12 mới rõ.",
+    "loi_doc": "Lãi suất đô la liên ngân hàng sáng hai mươi bảy tháng mười một: qua đêm ba phẩy tám lăm phần trăm, kỳ hạn một tháng bốn phẩy không ba phần trăm một năm. Còn Fed làm gì, ngày chín tháng mười hai mới rõ.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "LÃI SUẤT USD LIÊN NGÂN HÀNG 27/11",
+     "dong": [
+      [
+       "QUA ĐÊM 3,85%",
+       88,
+       "vang"
+      ],
+      [
+       "1 THÁNG 4,03%",
+       88,
+       "trang"
+      ]
+     ],
+     "nguon": "Người Quan Sát 27/11/2026"
+    },
+    "tu_khoa": [
+     "3,85",
+     "4,03"
+    ]
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tỷ giá, lãi suất và tin Fed, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tỷ giá, lãi suất và tin Fed, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "TỶ GIÁ · LÃI SUẤT · FED",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  },
+  "kieu": "dieu_tra",
+  "broll": [
+   {
+    "pexels": "us dollar bills"
+   },
+   {
+    "pexels": "bank counting money"
+   }
+  ],
+  "broll_tim": "dollar banknotes",
+  "fb_bai": {
+   "anh": "bia",
+   "noi_dung": "FED CHƯA HỌP\nMÀ ĐÔ ĐÃ NHÍCH RỒI???\n\nThị trường đang đặt khoảng 97,8% khả năng Fed tăng lãi thêm 0,25 điểm phần trăm ngày 8–9/12.\n\nSáng nay tỷ giá trung tâm 25.687 đồng/USD, tăng 11 đồng.\n\nRa Vietcombank mua 1.000 đô hết 26,01 triệu, bán lại ngay còn 25,63 triệu. Mất 380 nghìn chỉ vì đi 1 vòng.\n\nHuy ko đoán tỷ giá. Chỉ nhắc: đổi đô phòng thân thì nhớ tính cả tiền chênh.\n\nMọi người có đang giữ ít đô ko?\n\nNguồn: Báo Tin Tức 27/11/2026"
+  }
+ },
+ {
+  "key": "SN2711AIBAN",
+  "tieu_de": "Phiên 26/11 VN-Index mất gần 58 điểm vì tin thuế Mỹ, khối ngoại chỉ bán ròng gần 139 tỷ: vậy ai đã bán???",
+  "hook": [
+   "MẤT GẦN 58 ĐIỂM",
+   "AI ĐÃ BÁN???"
+  ],
+  "nhan": "ĐIỀU TRA · 26/11/2026",
+  "short_caption": "Phiên 26/11/2026 VN-Index mất 57,77 điểm về 1.629,68 điểm sau đề xuất thuế của Mỹ. Khối ngoại chỉ bán ròng gần 139 tỷ đồng (VIC hơn 191 tỷ, TCB khoảng 80 tỷ, VPL 77 tỷ), tự doanh công ty chứng khoán bán ròng gần 300 tỷ. Nguồn: CafeF 26/11/2026, Người Quan Sát 27/11/2026.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "ANH CHỊ Ở PHÍA NÀO?",
+   "loi": "Phiên mất gần 58 điểm, anh chị ở A: phía bán, hay B: phía mua?",
+   "loi_doc": "Phiên mất gần năm mươi tám điểm, anh chị ở A: phía bán, hay B: phía mua?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "PHIÊN 26/11 ANH CHỊ…",
+    "dong": [
+     [
+      "A: PHÍA BÁN",
+      84,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: PHÍA MUA",
+      84,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "KHỐI NGOẠI THÁO CHẠY?",
+    "loi": "VN-Index mất gần 58 điểm phiên 26/11, có phải khối ngoại tháo chạy? Khoan, số liệu nói khác: khối ngoại chỉ bán ròng gần 139 tỷ đồng.",
+    "loi_doc": "VN-Index mất gần năm mươi tám điểm phiên hai mươi sáu tháng mười một, có phải khối ngoại tháo chạy? Khoan, số liệu nói khác: khối ngoại chỉ bán ròng gần một trăm ba mươi chín tỷ đồng.",
+    "anh": [],
+    "the": {
+     "loai": "giam",
+     "tieu": "VN-INDEX PHIÊN 26/11/2026",
+     "a": [
+      "25/11",
+      1687.45
+     ],
+     "b": [
+      "26/11",
+      1629.68
+     ],
+     "dv": " ĐIỂM",
+     "dau": "-3,42%",
+     "nguon": "CafeF 26/11/2026"
+    },
+    "dt": {
+     "loai": "lat",
+     "hoi": [
+      "MẤT GẦN 58 ĐIỂM",
+      "VÌ KHỐI NGOẠI?"
+     ],
+     "lat": "CHỈ BÁN RÒNG 139 TỶ",
+     "tu": "Khoan",
+     "phu": "Người Quan Sát · 27/11/2026"
+    },
+    "tu_khoa": [
+     "khoan",
+     "139"
+    ]
+   },
+   {
+    "chu_to": "TỰ DOANH GẦN 300 TỶ",
+    "loi": "Còn tự doanh các công ty chứng khoán bán ròng gần 300 tỷ, khoảng gấp đôi khối ngoại.",
+    "loi_doc": "Còn tự doanh các công ty chứng khoán bán ròng gần ba trăm tỷ, khoảng gấp đôi khối ngoại.",
+    "anh": [],
+    "the": {
+     "loai": "cot",
+     "tieu": "BÁN RÒNG PHIÊN 26/11 · TỶ ĐỒNG",
+     "hang": [
+      [
+       "KHỐI NGOẠI",
+       139
+      ],
+      [
+       "TỰ DOANH (GẦN)",
+       300
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 340,
+     "nd": 0,
+     "nguon": "Người Quan Sát 27/11/2026"
+    },
+    "dt": {
+     "loai": "so_sanh",
+     "tieu": "BÁN RÒNG PHIÊN 26/11 · TỶ ĐỒNG",
+     "a": [
+      "KHỐI NGOẠI",
+      139
+     ],
+     "b": [
+      "TỰ DOANH CTCK (GẦN)",
+      300
+     ],
+     "dv": " TỶ",
+     "max": 340,
+     "tu_b": "300",
+     "nguon": "Người Quan Sát 27/11/2026"
+    },
+    "tu_khoa": [
+     "300"
+    ]
+   },
+   {
+    "chu_to": "RIÊNG VIC 191 TỶ",
+    "loi": "Lạ hơn: riêng VIC bị khối ngoại bán ròng hơn 191 tỷ, nhiều hơn cả tổng 139 tỷ. Tức là ở nhiều mã khác, khối ngoại vẫn mua vào nhiều hơn bán ra.",
+    "loi_doc": "Lạ hơn: riêng VIC bị khối ngoại bán ròng hơn một trăm chín mươi mốt tỷ, nhiều hơn cả tổng một trăm ba mươi chín tỷ. Tức là ở nhiều mã khác, khối ngoại vẫn mua vào nhiều hơn bán ra.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "KHỐI NGOẠI BÁN RÒNG 26/11",
+     "dong": [
+      [
+       "VIC: HƠN 191 TỶ",
+       80,
+       "do"
+      ],
+      [
+       "TCB: KHOẢNG 80 TỶ",
+       60,
+       "trang"
+      ],
+      [
+       "VPL: 77 TỶ",
+       60,
+       "trang"
+      ]
+     ],
+     "nguon": "Người Quan Sát 27/11/2026"
+    },
+    "tu_khoa": [
+     "191"
+    ]
+   },
+   {
+    "chu_to": "ĐIỂM MẤT VÌ ĐÂU?",
+    "loi": "Mỗi lệnh bán đều có người mua. Điểm số rơi mạnh không phải vì bán ra quá nhiều tiền, mà vì người bán chấp nhận bán ở giá thấp hơn. Tin thuế Mỹ mới là đề xuất, nhưng nỗi sợ thì đến ngay.",
+    "loi_doc": "Mỗi lệnh bán đều có người mua. Điểm số rơi mạnh không phải vì bán ra quá nhiều tiền, mà vì người bán chấp nhận bán ở giá thấp hơn. Tin thuế Mỹ mới là đề xuất, nhưng nỗi sợ thì đến ngay.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "PHIÊN 26/11/2026",
+     "dong": [
+      [
+       "NGƯỜI BÁN",
+       80,
+       "do"
+      ],
+      [
+       "CHẤP NHẬN GIÁ THẤP",
+       64,
+       "vang"
+      ],
+      [
+       "THUẾ MỸ: MỚI LÀ ĐỀ XUẤT",
+       44,
+       "trang"
+      ]
+     ]
+    },
+    "tu_khoa": [
+     "giá thấp hơn"
+    ]
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Dòng tiền khối ngoại, tự doanh từng phiên, em cập nhật trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Dòng tiền khối ngoại, tự doanh từng phiên, em cập nhật trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "BẢN ĐỒ NHIỆT · DÒNG TIỀN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  },
+  "kieu": "dieu_tra",
+  "broll": [
+   {
+    "pexels": "stock market screen"
+   },
+   {
+    "pexels": "trader looking at charts"
+   }
+  ],
+  "broll_tim": "stock exchange trading floor",
+  "fb_bai": {
+   "anh": "bia",
+   "noi_dung": "MẤT GẦN 58 ĐIỂM\nMÀ KHỐI NGOẠI CHỈ BÁN 139 TỶ???\n\nPhiên 26/11 VN-Index rơi về 1.629,68 điểm sau tin thuế Mỹ.\n\nNhưng khối ngoại chỉ bán ròng gần 139 tỷ. Tự doanh cty chứng khoán bán ròng gần 300 tỷ.\n\nĐiểm rơi mạnh ko phải vì bán ra nhiều tiền. Mà vì ai cũng sẵn sàng bán rẻ hơn người trước.\n\nTin thuế mới là đề xuất. Nỗi sợ thì đến trước.\n\nPhiên đó mọi người đứng ở phía bán hay phía mua?\n\nNguồn: CafeF 26/11/2026, Người Quan Sát 27/11/2026"
+  }
+ },
+ {
+  "key": "SP2711BRENT",
+  "tieu_de": "Dầu Brent bật 3,5% lên 94,61 USD rồi lùi về 93,8 USD: bình xăng nhà mình có yên?",
+  "hook": [
+   "BRENT BẬT 3,5%",
+   "XĂNG CÓ YÊN?"
+  ],
+  "nhan": "TIN NÓNG · 26–27/11",
+  "short_caption": "Theo Thời báo Ngân hàng (26/11/2026), giá dầu Brent kỳ hạn tăng 3,5% lên 94,61 USD/thùng; theo Người Quan Sát (27/11/2026), Brent sau đó giảm 82 cent (0,87%) xuống 93,8 USD/thùng, WTI 83,3 USD/thùng.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "KỲ TỚI THẾ NÀO?",
+   "loi": "Dầu bật rồi lùi, anh chị nghĩ kỳ điều chỉnh xăng tới A: tăng lại, hay B: vẫn giảm?",
+   "loi_doc": "Dầu bật rồi lùi, anh chị nghĩ kỳ điều chỉnh xăng tới A: tăng lại, hay B: vẫn giảm?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "XĂNG KỲ TỚI?",
+    "dong": [
+     [
+      "A: TĂNG LẠI",
+      84,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: VẪN GIẢM",
+      84,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "BẬT 3,5%",
+    "loi": "Xăng vừa giảm, dầu thế giới lại bật lên. Theo Thời báo Ngân hàng ngày 26/11, giá dầu Brent tăng 3,5% lên 94,61 đô một thùng.",
+    "loi_doc": "Xăng vừa giảm, dầu thế giới lại bật lên. Theo Thời báo Ngân hàng ngày hai mươi sáu tháng mười một, giá dầu Brent tăng ba phẩy năm phần trăm lên chín mươi bốn phẩy sáu mốt đô một thùng.",
+    "anh": [
+     "oil pumpjack||oil well"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "DẦU BRENT KỲ HẠN",
+     "dong": [
+      [
+       "94,61 USD",
+       120,
+       "vang"
+      ],
+      [
+       "MỖI THÙNG",
+       52,
+       "trang"
+      ],
+      [
+       "TĂNG 3,5%",
+       64,
+       "do"
+      ]
+     ],
+     "nguon": "Thời báo Ngân hàng 26/11/2026"
+    }
+   },
+   {
+    "chu_to": "XĂNG VỪA GIẢM",
+    "loi": "Trong nước, chiều 26/11 xăng vừa giảm kỳ thứ sáu trong tháng. Giờ dầu thế giới bật lên rồi lùi lại, kỳ điều hành tới sẽ tính theo giá bình quân của cả kỳ, không theo một phiên.",
+    "loi_doc": "Trong nước, chiều hai mươi sáu tháng mười một xăng vừa giảm kỳ thứ sáu trong tháng. Giờ dầu thế giới bật lên rồi lùi lại, kỳ điều hành tới sẽ tính theo giá bình quân của cả kỳ, không theo một phiên.",
+    "anh": [
+     "gas station pump"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "XĂNG TRONG NƯỚC 26/11",
+     "dong": [
+      [
+       "GIẢM KỲ THỨ 6",
+       90,
+       "vang"
+      ],
+      [
+       "TRONG THÁNG 11",
+       56,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "RỒI LÙI LẠI",
+    "loi": "Nhưng sáng 27/11, Brent đã giảm 82 xu, tức 0,87%, về 93,8 đô. Dầu WTI của Mỹ còn 83,3 đô một thùng.",
+    "loi_doc": "Nhưng sáng hai mươi bảy tháng mười một, Brent đã giảm tám mươi hai xu, tức không phẩy tám bảy phần trăm, về chín mươi ba phẩy tám đô. Dầu WTI của Mỹ còn tám mươi ba phẩy ba đô một thùng.",
+    "anh": [
+     "oil tanker ship"
+    ],
+    "the": {
+     "loai": "giam",
+     "tieu": "DẦU BRENT · USD/THÙNG",
+     "a": [
+      "26/11",
+      94.61
+     ],
+     "b": [
+      "27/11",
+      93.8
+     ],
+     "dv": " USD",
+     "dau": "-0,87%",
+     "nguon": "Người Quan Sát 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "BRENT VÀ WTI",
+    "loi": "Hai loại dầu chuẩn đang cách nhau hơn 10 đô một thùng: Brent 93,8, WTI 83,3.",
+    "loi_doc": "Hai loại dầu chuẩn đang cách nhau hơn mười đô một thùng: Brent chín mươi ba phẩy tám, WTI tám mươi ba phẩy ba.",
+    "anh": [
+     "oil refinery"
+    ],
+    "the": {
+     "loai": "cot",
+     "tieu": "GIÁ DẦU SÁNG 27/11 · USD/THÙNG",
+     "hang": [
+      [
+       "BRENT",
+       93.8
+      ],
+      [
+       "WTI",
+       83.3
+      ]
+     ],
+     "noi": [
+      0
+     ],
+     "dv": "",
+     "max": 110,
+     "nd": 1,
+     "nguon": "Người Quan Sát 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "XĂNG NHÀ MÌNH",
+    "loi": "Giá xăng trong nước điều chỉnh theo giá thế giới bình quân từng kỳ, nên một phiên bật lên chưa nói lên tất cả. Anh chị cứ theo dõi kỳ điều hành tới.",
+    "loi_doc": "Giá xăng trong nước điều chỉnh theo giá thế giới bình quân từng kỳ, nên một phiên bật lên chưa nói lên tất cả. Anh chị cứ theo dõi kỳ điều hành tới.",
+    "anh": [
+     "gas station Vietnam||petrol station"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "XĂNG TRONG NƯỚC",
+     "dong": [
+      [
+       "THEO GIÁ BÌNH QUÂN",
+       64,
+       "vang"
+      ],
+      [
+       "TỪNG KỲ ĐIỀU HÀNH",
+       64,
+       "trang"
+      ]
+     ]
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin tiền túi mỗi ngày, em cập nhật trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin tiền túi mỗi ngày, em cập nhật trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "XĂNG · DẦU · TIN NÓNG",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2711MASAN",
+  "tieu_de": "Giữa phiên mất gần 58 điểm, Masan đề xuất nâng lợi nhuận 2026 lên tới 11.500 tỷ: tăng tới 46%",
+  "hook": [
+   "LÃI TỚI 11.500 TỶ",
+   "GIỮA PHIÊN ĐỎ?"
+  ],
+  "nhan": "TIN DOANH NGHIỆP · 27/11",
+  "short_caption": "Theo Người Quan Sát (27/11/2026), Masan đề xuất lợi nhuận sau thuế trước lợi ích cổ đông thiểu số năm 2026 lên 10.000 – 11.500 tỷ đồng, tăng khoảng 38–46%. Tin công bố sau phiên 26/11 VN-Index mất gần 58 điểm.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "ANH CHỊ XEM GÌ?",
+   "loi": "Khi chọn cổ phiếu, anh chị A: xem lợi nhuận doanh nghiệp, hay B: xem thị trường chung trước?",
+   "loi_doc": "Khi chọn cổ phiếu, anh chị A: xem lợi nhuận doanh nghiệp, hay B: xem thị trường chung trước?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHỌN CỔ PHIẾU",
+    "dong": [
+     [
+      "A: LỢI NHUẬN",
+      84,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: THỊ TRƯỜNG",
+      84,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "NGƯỢC CHIỀU",
+    "loi": "Phiên 26/11, cả thị trường mất gần 58 điểm vì tin thuế Mỹ. Sáng 27/11, Masan lại có tin đi ngược chiều: tính nâng mục tiêu lợi nhuận năm 2026.",
+    "loi_doc": "Phiên hai mươi sáu tháng mười một, cả thị trường mất gần năm mươi tám điểm vì tin thuế Mỹ. Sáng hai mươi bảy tháng mười một, Masan lại có tin đi ngược chiều: tính nâng mục tiêu lợi nhuận năm hai không hai sáu.",
+    "anh": [
+     "supermarket shelves||grocery store"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "MASAN · ĐỀ XUẤT MỚI",
+     "dong": [
+      [
+       "NÂNG MỤC TIÊU",
+       80,
+       "vang"
+      ],
+      [
+       "LỢI NHUẬN 2026",
+       64,
+       "trang"
+      ]
+     ],
+     "nguon": "Người Quan Sát 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "10.000 ĐẾN 11.500 TỶ",
+    "loi": "Mức đề xuất: lợi nhuận sau thuế trước lợi ích cổ đông thiểu số từ 10.000 đến 11.500 tỷ đồng.",
+    "loi_doc": "Mức đề xuất: lợi nhuận sau thuế trước lợi ích cổ đông thiểu số từ mười nghìn đến mười một nghìn năm trăm tỷ đồng.",
+    "anh": [
+     "supermarket shopping cart"
+    ],
+    "the": {
+     "loai": "cot",
+     "tieu": "MỤC TIÊU LỢI NHUẬN 2026 · TỶ ĐỒNG",
+     "hang": [
+      [
+       "MỨC THẤP",
+       10000
+      ],
+      [
+       "MỨC CAO",
+       11500
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 13000,
+     "nd": 0,
+     "nguon": "Người Quan Sát 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "VÌ SAO ĐÁNG CHÚ Ý?",
+    "loi": "Mục tiêu đầu năm thường là con số doanh nghiệp đặt ra khi chưa biết năm đó thế nào. Nâng mục tiêu vào cuối tháng 11, khi năm chỉ còn hơn một tháng, nghĩa là doanh nghiệp đã thấy phần lớn kết quả trong tay.",
+    "loi_doc": "Mục tiêu đầu năm thường là con số doanh nghiệp đặt ra khi chưa biết năm đó thế nào. Nâng mục tiêu vào cuối tháng mười một, khi năm chỉ còn hơn một tháng, nghĩa là doanh nghiệp đã thấy phần lớn kết quả trong tay.",
+    "anh": [
+     "calendar november"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "NÂNG MỤC TIÊU CUỐI THÁNG 11",
+     "dong": [
+      [
+       "NĂM CÒN HƠN 1 THÁNG",
+       70,
+       "vang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "TĂNG 38–46%",
+    "loi": "So với năm trước, tức là tăng khoảng 38 đến 46%. Lưu ý: đây mới là đề xuất, cần cổ đông thông qua, chưa phải kết quả đã chốt.",
+    "loi_doc": "So với năm trước, tức là tăng khoảng ba mươi tám đến bốn mươi sáu phần trăm. Lưu ý: đây mới là đề xuất, cần cổ đông thông qua, chưa phải kết quả đã chốt.",
+    "anh": [
+     "shareholders meeting hall"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "MỨC TĂNG ĐỀ XUẤT",
+     "dong": [
+      [
+       "38 – 46%",
+       130,
+       "vang"
+      ],
+      [
+       "CẦN CỔ ĐÔNG THÔNG QUA",
+       44,
+       "trang"
+      ]
+     ],
+     "nguon": "Người Quan Sát 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "BÀI HỌC",
+    "loi": "Thị trường chung đỏ, nhưng lợi nhuận từng doanh nghiệp vẫn đi đường riêng. Đọc kết quả kinh doanh vẫn là việc đầu tiên.",
+    "loi_doc": "Thị trường chung đỏ, nhưng lợi nhuận từng doanh nghiệp vẫn đi đường riêng. Đọc kết quả kinh doanh vẫn là việc đầu tiên.",
+    "anh": [
+     "financial report reading"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "ĐỌC KẾT QUẢ KINH DOANH",
+     "dong": [
+      [
+       "VIỆC ĐẦU TIÊN",
+       80,
+       "vang"
+      ]
+     ]
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin tiền túi mỗi ngày, em cập nhật trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin tiền túi mỗi ngày, em cập nhật trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "KẾT QUẢ KINH DOANH",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2711COTUC",
+  "tieu_de": "Thị trường đỏ, 3 doanh nghiệp vẫn tạm ứng cổ tức tiền mặt: 1.000 cổ phiếu SAB nhận 3 triệu đồng",
+  "hook": [
+   "1.000 CỔ PHIẾU",
+   "NHẬN 3 TRIỆU?"
+  ],
+  "nhan": "CỔ TỨC · 27/11",
+  "short_caption": "Theo Người Quan Sát (27/11/2026), các doanh nghiệp tạm ứng cổ tức tiền mặt: SAB 3.000 đồng/cp, MSH 4.000 đồng/cp, IDP 3.200 đồng/cp. Ví dụ 1.000 cổ phiếu SAB nhận 3 triệu đồng trước thuế thu nhập cá nhân 5%.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "ANH CHỊ THÍCH GÌ?",
+   "loi": "Anh chị thích A: cổ tức tiền mặt đều đặn, hay B: doanh nghiệp giữ tiền lại để mở rộng?",
+   "loi_doc": "Anh chị thích A: cổ tức tiền mặt đều đặn, hay B: doanh nghiệp giữ tiền lại để mở rộng?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CỔ TỨC",
+    "dong": [
+     [
+      "A: TIỀN MẶT",
+      84,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: GIỮ LẠI",
+      84,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "TIỀN VỀ TÀI KHOẢN",
+    "loi": "Phiên 26/11 VN-Index mất gần 58 điểm, tài khoản nhiều người đỏ rực. Nhưng vẫn có doanh nghiệp chuẩn bị chuyển tiền mặt về tài khoản cổ đông.",
+    "loi_doc": "Phiên hai mươi sáu tháng mười một VN-Index mất gần năm mươi tám điểm, tài khoản nhiều người đỏ rực. Nhưng vẫn có doanh nghiệp chuẩn bị chuyển tiền mặt về tài khoản cổ đông.",
+    "anh": [
+     "cash money vietnam dong||vietnamese dong banknotes"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "TẠM ỨNG CỔ TỨC TIỀN MẶT",
+     "dong": [
+      [
+       "3 DOANH NGHIỆP",
+       90,
+       "vang"
+      ],
+      [
+       "THÔNG TIN 27/11/2026",
+       48,
+       "trang"
+      ]
+     ],
+     "nguon": "Người Quan Sát 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "SAB, MSH, IDP",
+    "loi": "Sabeco tạm ứng 3.000 đồng một cổ phiếu. May Sông Hồng 4.000 đồng. IDP 3.200 đồng.",
+    "loi_doc": "Sa bê cô tạm ứng ba nghìn đồng một cổ phiếu. May Sông Hồng bốn nghìn đồng. I Đê Pê ba nghìn hai trăm đồng.",
+    "anh": [
+     "beer factory||brewery"
+    ],
+    "the": {
+     "loai": "cot",
+     "tieu": "CỔ TỨC TẠM ỨNG · ĐỒNG/CỔ PHIẾU",
+     "hang": [
+      [
+       "SAB",
+       3000
+      ],
+      [
+       "IDP",
+       3200
+      ],
+      [
+       "MSH",
+       4000
+      ]
+     ],
+     "noi": [
+      2
+     ],
+     "dv": "",
+     "max": 4800,
+     "nd": 0,
+     "nguon": "Người Quan Sát 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "1.000 CỔ PHIẾU",
+    "loi": "Có 1.000 cổ phiếu SAB thì nhận 3 triệu đồng. Trừ thuế thu nhập cá nhân 5% còn 2,85 triệu.",
+    "loi_doc": "Có một nghìn cổ phiếu SAB thì nhận ba triệu đồng. Trừ thuế thu nhập cá nhân năm phần trăm còn hai phẩy tám lăm triệu.",
+    "anh": [
+     "calculator money"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "1.000 CỔ PHIẾU SAB",
+     "dong": [
+      [
+       "3 TRIỆU ĐỒNG",
+       100,
+       "vang"
+      ],
+      [
+       "SAU THUẾ 5%: 2,85 TRIỆU",
+       52,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "SO VỚI GỬI TIẾT KIỆM",
+    "loi": "Cổ tức tiền mặt giống tiền lãi, nhưng không cố định như sổ tiết kiệm. Năm nay trả, năm sau có thể khác, tuỳ lợi nhuận và quyết định của doanh nghiệp. Vì vậy đừng chỉ nhìn một lần tạm ứng.",
+    "loi_doc": "Cổ tức tiền mặt giống tiền lãi, nhưng không cố định như sổ tiết kiệm. Năm nay trả, năm sau có thể khác, tuỳ lợi nhuận và quyết định của doanh nghiệp. Vì vậy đừng chỉ nhìn một lần tạm ứng.",
+    "anh": [
+     "savings book bank"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "CỔ TỨC TIỀN MẶT",
+     "dong": [
+      [
+       "KHÔNG CỐ ĐỊNH",
+       90,
+       "vang"
+      ],
+      [
+       "NHƯ SỔ TIẾT KIỆM",
+       56,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "LƯU Ý",
+    "loi": "Nhớ là ngày giao dịch không hưởng quyền, giá cổ phiếu được điều chỉnh giảm tương ứng phần cổ tức tiền mặt.",
+    "loi_doc": "Nhớ là ngày giao dịch không hưởng quyền, giá cổ phiếu được điều chỉnh giảm tương ứng phần cổ tức tiền mặt.",
+    "anh": [
+     "stock price board"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "NGÀY KHÔNG HƯỞNG QUYỀN",
+     "dong": [
+      [
+       "GIÁ ĐIỀU CHỈNH",
+       80,
+       "vang"
+      ],
+      [
+       "TƯƠNG ỨNG CỔ TỨC",
+       64,
+       "trang"
+      ]
+     ]
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin tiền túi mỗi ngày, em cập nhật trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin tiền túi mỗi ngày, em cập nhật trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "CỔ TỨC · LỊCH SỰ KIỆN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2711BANGLA",
+  "tieu_de": "Bangladesh tăng 36% lương tối thiểu công nhân may: đối thủ dệt may của Việt Nam vừa đắt lên?",
+  "hook": [
+   "LƯƠNG MAY TĂNG 36%",
+   "AI HƯỞNG LỢI?"
+  ],
+  "nhan": "THẾ GIỚI · 27/11",
+  "short_caption": "Theo Vietstock (27/11/2026), Bangladesh quyết định tăng 36% lương tối thiểu hằng tháng cho công nhân ngành may mặc. Bangladesh là một đối thủ lớn của dệt may Việt Nam.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "ANH CHỊ NGHĨ SAO?",
+   "loi": "Lương bên đó tăng 36%, anh chị nghĩ dệt may Việt Nam A: có lợi, hay B: chẳng khác gì?",
+   "loi_doc": "Lương bên đó tăng ba mươi sáu phần trăm, anh chị nghĩ dệt may Việt Nam A: có lợi, hay B: chẳng khác gì?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "DỆT MAY VIỆT NAM",
+    "dong": [
+     [
+      "A: CÓ LỢI",
+      84,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: KHÔNG KHÁC",
+      84,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "TĂNG 36%",
+    "loi": "Một đối thủ lớn của dệt may Việt Nam vừa tăng lương mạnh. Bangladesh quyết định tăng 36% lương tối thiểu hằng tháng cho công nhân may mặc.",
+    "loi_doc": "Một đối thủ lớn của dệt may Việt Nam vừa tăng lương mạnh. Băng-la-đét quyết định tăng ba mươi sáu phần trăm lương tối thiểu hằng tháng cho công nhân may mặc.",
+    "anh": [
+     "garment factory sewing||textile factory"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "BANGLADESH · NGÀNH MAY MẶC",
+     "dong": [
+      [
+       "+36%",
+       150,
+       "vang"
+      ],
+      [
+       "LƯƠNG TỐI THIỂU THÁNG",
+       52,
+       "trang"
+      ]
+     ],
+     "nguon": "Vietstock 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "CHI PHÍ ĐẮT LÊN",
+    "loi": "Lương là chi phí lớn của nhà máy may. 100 đồng tiền lương cũ, giờ thành 136 đồng.",
+    "loi_doc": "Lương là chi phí lớn của nhà máy may. Một trăm đồng tiền lương cũ, giờ thành một trăm ba mươi sáu đồng.",
+    "anh": [
+     "sewing machine factory"
+    ],
+    "the": {
+     "loai": "cot",
+     "tieu": "LƯƠNG TỐI THIỂU · CŨ = 100",
+     "hang": [
+      [
+       "TRƯỚC",
+       100
+      ],
+      [
+       "SAU",
+       136
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 160,
+     "nd": 0,
+     "nguon": "Vietstock 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "VÌ SAO QUAN TRỌNG?",
+    "loi": "Bangladesh, Việt Nam và nhiều nước châu Á cùng cạnh tranh đơn hàng may mặc của các nhãn hàng lớn. Chi phí lương một nước tăng mạnh, người mua sẽ tính lại xem đặt hàng ở đâu rẻ hơn.",
+    "loi_doc": "Băng-la-đét, Việt Nam và nhiều nước châu Á cùng cạnh tranh đơn hàng may mặc của các nhãn hàng lớn. Chi phí lương một nước tăng mạnh, người mua sẽ tính lại xem đặt hàng ở đâu rẻ hơn.",
+    "anh": [
+     "clothing factory workers"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "ĐƠN HÀNG MAY MẶC",
+     "dong": [
+      [
+       "NGƯỜI MUA TÍNH LẠI",
+       80,
+       "vang"
+      ],
+      [
+       "ĐẶT Ở ĐÂU RẺ HƠN?",
+       60,
+       "trang"
+      ]
+     ]
+    }
+   },
+   {
+    "chu_to": "VIỆT NAM THÌ SAO?",
+    "loi": "Nhưng Việt Nam cũng đang có chuyện riêng: dệt may nằm trong nhóm ngành được nêu tên trong đề xuất thuế của Mỹ ngày 25/11.",
+    "loi_doc": "Nhưng Việt Nam cũng đang có chuyện riêng: dệt may nằm trong nhóm ngành được nêu tên trong đề xuất thuế của Mỹ ngày hai mươi lăm tháng mười một.",
+    "anh": [
+     "container port||container terminal"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "DỆT MAY VIỆT NAM",
+     "dong": [
+      [
+       "BỊ NÊU TÊN",
+       80,
+       "do"
+      ],
+      [
+       "ĐỀ XUẤT THUẾ MỸ 25/11",
+       52,
+       "trang"
+      ]
+     ],
+     "nguon": "USTR 25/11/2026"
+    }
+   },
+   {
+    "chu_to": "CÁN CÂN",
+    "loi": "Đối thủ đắt lên một bên, thuế Mỹ treo một bên. Chưa ai nói trước được bên nào nặng hơn.",
+    "loi_doc": "Đối thủ đắt lên một bên, thuế Mỹ treo một bên. Chưa ai nói trước được bên nào nặng hơn.",
+    "anh": [
+     "clothing store racks"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "CÁN CÂN DỆT MAY",
+     "dong": [
+      [
+       "ĐỐI THỦ ĐẮT LÊN",
+       64,
+       "vang"
+      ],
+      [
+       "THUẾ MỸ TREO",
+       64,
+       "do"
+      ]
+     ]
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin tiền túi mỗi ngày, em cập nhật trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin tiền túi mỗi ngày, em cập nhật trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "THẾ GIỚI · TIỀN TÚI",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2711HHP",
+  "tieu_de": "Cổ phiếu HHP mất gần một nửa thị giá trong 3 tuần: giảm 50% thì phải tăng bao nhiêu mới về bờ?",
+  "hook": [
+   "MẤT GẦN 50%",
+   "TĂNG BAO NHIÊU?"
+  ],
+  "nhan": "BÀI HỌC · 27/11",
+  "short_caption": "Theo Vietstock (27/11/2026), thị giá HHP mất gần một nửa sau nhịp giảm kéo dài từ đầu tháng 11. Toán học: mất 50% thì cần tăng 100% mới về giá cũ.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "ANH CHỊ LÀM GÌ?",
+   "loi": "Cổ phiếu mất một nửa, anh chị A: cắt lỗ sớm, hay B: chờ về bờ?",
+   "loi_doc": "Cổ phiếu mất một nửa, anh chị A: cắt lỗ sớm, hay B: chờ về bờ?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "MẤT MỘT NỬA",
+    "dong": [
+     [
+      "A: CẮT SỚM",
+      84,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: CHỜ VỀ BỜ",
+      84,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "GẦN MỘT NỬA",
+    "loi": "Ba tuần, mất gần một nửa. Theo Vietstock sáng 27/11, đó là cổ phiếu HHP sau nhịp giảm kéo dài từ đầu tháng 11.",
+    "loi_doc": "Ba tuần, mất gần một nửa. Theo Vietstock sáng hai mươi bảy tháng mười một, đó là cổ phiếu HHP sau nhịp giảm kéo dài từ đầu tháng mười một.",
+    "anh": [
+     "stock market red screen||stock chart falling"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "HHP · TỪ ĐẦU THÁNG 11",
+     "dong": [
+      [
+       "MẤT GẦN 50%",
+       110,
+       "do"
+      ],
+      [
+       "TRONG 3 TUẦN",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "Vietstock 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "PHÉP TOÁN",
+    "loi": "Mất 50% rồi, muốn về lại giá cũ phải tăng bao nhiêu? Không phải 50%. Phải tăng 100%.",
+    "loi_doc": "Mất năm mươi phần trăm rồi, muốn về lại giá cũ phải tăng bao nhiêu? Không phải năm mươi phần trăm. Phải tăng một trăm phần trăm.",
+    "anh": [
+     "calculator"
+    ],
+    "the": {
+     "loai": "cot",
+     "tieu": "MẤT BAO NHIÊU – CẦN TĂNG BAO NHIÊU",
+     "hang": [
+      [
+       "MẤT",
+       50
+      ],
+      [
+       "CẦN TĂNG",
+       100
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "%",
+     "max": 120,
+     "nd": 0
+    }
+   },
+   {
+    "chu_to": "VÍ DỤ",
+    "loi": "100 triệu mất một nửa còn 50 triệu. Từ 50 triệu, phải nhân đôi mới về lại 100 triệu.",
+    "loi_doc": "Một trăm triệu mất một nửa còn năm mươi triệu. Từ năm mươi triệu, phải nhân đôi mới về lại một trăm triệu.",
+    "anh": [
+     "piggy bank"
+    ],
+    "the": {
+     "loai": "giam",
+     "tieu": "VÍ DỤ 100 TRIỆU",
+     "a": [
+      "BAN ĐẦU",
+      100
+     ],
+     "b": [
+      "MẤT 50%",
+      50
+     ],
+     "dv": " TRIỆU",
+     "dau": "-50%"
+    }
+   },
+   {
+    "chu_to": "CÀNG MẤT CÀNG KHÓ",
+    "loi": "Mất 20% cần tăng 25%. Mất 40% cần tăng gần 67%. Mất 50% cần tăng 100%. Khoản lỗ càng sâu, quãng đường về bờ càng dài hơn gấp bội.",
+    "loi_doc": "Mất hai mươi phần trăm cần tăng hai mươi lăm phần trăm. Mất bốn mươi phần trăm cần tăng gần sáu mươi bảy phần trăm. Mất năm mươi phần trăm cần tăng một trăm phần trăm. Khoản lỗ càng sâu, quãng đường về bờ càng dài hơn gấp bội.",
+    "anh": [
+     "mountain climbing"
+    ],
+    "the": {
+     "loai": "cot",
+     "tieu": "CẦN TĂNG BAO NHIÊU ĐỂ VỀ BỜ",
+     "hang": [
+      [
+       "MẤT 20%",
+       25
+      ],
+      [
+       "MẤT 40%",
+       67
+      ],
+      [
+       "MẤT 50%",
+       100
+      ]
+     ],
+     "noi": [
+      2
+     ],
+     "dv": "%",
+     "max": 120,
+     "nd": 0
+    }
+   },
+   {
+    "chu_to": "BÀI HỌC",
+    "loi": "Vì vậy, giữ cho khoản lỗ nhỏ khó hơn nhưng quan trọng hơn việc chờ về bờ.",
+    "loi_doc": "Vì vậy, giữ cho khoản lỗ nhỏ khó hơn nhưng quan trọng hơn việc chờ về bờ.",
+    "anh": [
+     "chess board strategy"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "BÀI HỌC",
+     "dong": [
+      [
+       "GIỮ LỖ NHỎ",
+       100,
+       "vang"
+      ],
+      [
+       "QUAN TRỌNG HƠN CHỜ VỀ BỜ",
+       44,
+       "trang"
+      ]
+     ]
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin tiền túi mỗi ngày, em cập nhật trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin tiền túi mỗi ngày, em cập nhật trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "BÀI HỌC · QUẢN TRỊ RỦI RO",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2711VANG150",
+  "tieu_de": "Đêm 25/11 vàng thế giới rơi xuống 3.426,4 USD rồi hồi về quanh 3.580 USD: một con số lạm phát Mỹ gây ra",
+  "hook": [
+   "VÀNG RƠI RỒI BẬT",
+   "VÌ 1 CON SỐ?"
+  ],
+  "nhan": "THẾ GIỚI · 25–27/11",
+  "short_caption": "Theo Báo Tin Tức (27/11/2026), phiên 25/11 vàng thế giới có lúc giảm xuống 3.426,4 USD/ounce (Kitco) sau số liệu PCE lõi tháng 10 của Mỹ tăng 3,3% so với cùng kỳ, cuối phiên hồi lên quanh 3.580 USD/ounce; sáng 27/11 giao ngay 3.575 USD/ounce.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "ANH CHỊ THẤY SAO?",
+   "loi": "Vàng lên xuống hơn 150 đô trong một phiên, anh chị A: thấy hấp dẫn, hay B: thấy sợ?",
+   "loi_doc": "Vàng lên xuống hơn một trăm năm mươi đô trong một phiên, anh chị A: thấy hấp dẫn, hay B: thấy sợ?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "VÀNG BIẾN ĐỘNG",
+    "dong": [
+     [
+      "A: HẤP DẪN",
+      84,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: THẤY SỢ",
+      84,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "MỘT CON SỐ",
+    "loi": "Một con số lạm phát của Mỹ đã làm vàng thế giới chao đảo trong đêm 25/11.",
+    "loi_doc": "Một con số lạm phát của Mỹ đã làm vàng thế giới chao đảo trong đêm hai mươi lăm tháng mười một.",
+    "anh": [
+     "gold bullion bars||gold bars"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "PCE LÕI THÁNG 10 · MỸ",
+     "dong": [
+      [
+       "+3,3%",
+       140,
+       "vang"
+      ],
+      [
+       "SO VỚI CÙNG KỲ",
+       52,
+       "trang"
+      ]
+     ],
+     "nguon": "Báo Tin Tức 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "RƠI RỒI BẬT",
+    "loi": "Vàng có lúc rơi xuống 3.426,4 đô một ounce, rồi cuối phiên hồi lên quanh 3.580 đô.",
+    "loi_doc": "Vàng có lúc rơi xuống ba nghìn bốn trăm hai mươi sáu phẩy bốn đô một ounce, rồi cuối phiên hồi lên quanh ba nghìn năm trăm tám mươi đô.",
+    "anh": [
+     "gold coins"
+    ],
+    "the": {
+     "loai": "cot",
+     "tieu": "VÀNG PHIÊN 25/11 · USD/OUNCE",
+     "hang": [
+      [
+       "ĐÁY PHIÊN",
+       3426.4
+      ],
+      [
+       "CUỐI PHIÊN",
+       3580
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 3800,
+     "nd": 1,
+     "nguon": "Kitco qua Báo Tin Tức 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "HƠN 150 ĐÔ",
+    "loi": "Khoảng cách từ đáy lên cuối phiên hơn 150 đô một ounce, chỉ trong một phiên.",
+    "loi_doc": "Khoảng cách từ đáy lên cuối phiên hơn một trăm năm mươi đô một ounce, chỉ trong một phiên.",
+    "anh": [
+     "gold jewelry"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "BIÊN ĐỘ PHIÊN 25/11",
+     "dong": [
+      [
+       "HƠN 150 USD",
+       110,
+       "vang"
+      ],
+      [
+       "MỖI OUNCE",
+       52,
+       "trang"
+      ]
+     ],
+     "nguon": "Báo Tin Tức 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "VÌ SAO PCE QUAN TRỌNG?",
+    "loi": "PCE lõi là thước đo lạm phát Fed theo dõi. Lạm phát còn 3,3% thì Fed khó nới tay. Thị trường lúc này định giá khoảng 97,8% khả năng Fed tăng thêm 0,25 điểm phần trăm ngày 8 đến 9/12.",
+    "loi_doc": "PCE lõi là thước đo lạm phát Fed theo dõi. Lạm phát còn ba phẩy ba phần trăm thì Fed khó nới tay. Thị trường lúc này định giá khoảng chín mươi bảy phẩy tám phần trăm khả năng Fed tăng thêm không phẩy hai lăm điểm phần trăm ngày tám đến chín tháng mười hai.",
+    "anh": [
+     "Federal Reserve building Washington||Marriner S. Eccles Federal Reserve Board Building"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "THƯỚC ĐO FED THEO DÕI",
+     "dong": [
+      [
+       "PCE LÕI 3,3%",
+       100,
+       "vang"
+      ],
+      [
+       "FED TĂNG LÃI 8–9/12: 97,8%",
+       44,
+       "trang"
+      ]
+     ],
+     "nguon": "Báo Tin Tức 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "SÁNG 27/11",
+    "loi": "Sáng 27/11, vàng giao ngay ở 3.575 đô một ounce. Biến động lớn, nên ai mua vàng cũng cần tính đến kịch bản giá đi ngược mình.",
+    "loi_doc": "Sáng hai mươi bảy tháng mười một, vàng giao ngay ở ba nghìn năm trăm bảy mươi lăm đô một ounce. Biến động lớn, nên ai mua vàng cũng cần tính đến kịch bản giá đi ngược mình.",
+    "anh": [
+     "gold price chart"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "VÀNG GIAO NGAY 8H32 · 27/11",
+     "dong": [
+      [
+       "3.575 USD",
+       110,
+       "vang"
+      ],
+      [
+       "MỖI OUNCE",
+       52,
+       "trang"
+      ]
+     ],
+     "nguon": "Báo Tin Tức 27/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin tiền túi mỗi ngày, em cập nhật trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin tiền túi mỗi ngày, em cập nhật trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · THẾ GIỚI",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SN2711MEME",
+  "kieu": "meme",
+  "thoi_luong": 20,
+  "nhan": "PHIÊN 26/11/2026",
+  "tieu_de_2dong": [
+   "VN-INDEX MẤT GẦN 58 ĐIỂM",
+   "SAB VẪN TẠM ỨNG 3.000Đ/CP"
+  ],
+  "cau_chot": "Cả nhà đang buồn…\nông chú vẫn phát lì xì",
+  "bieu_do": {
+   "tieu": "VN-INDEX 25/11 → 26/11/2026",
+   "diem": [
+    [
+     "Đóng cửa 25/11",
+     1687.45
+    ],
+    [
+     "Đóng cửa 26/11",
+     1629.68
+    ]
+   ],
+   "nd": 2,
+   "dv": "",
+   "nguon": "CafeF 26/11/2026",
+   "mau": "do"
+  },
+  "clip": [
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lindy_Hop_dancing_at_Mobtown_Ballroom,_October_2024.webm",
+    "tu": 16,
+    "den": 22
+   },
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Oktoberfest_2022_dance.webm",
+    "tu": 0,
+    "den": 6
+   }
+  ],
+  "clip_du_phong": [
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Oktoberfest_2022_dance.webm",
+    "tu": 6,
+    "den": 12
+   }
+  ],
+  "nguon_clip": "Wikimedia Commons – Lindy Hop dancing at Mobtown Ballroom (10/2024); Oktoberfest 2022 dance",
+  "tu_khoa_anh": "people celebrating dancing",
+  "giu_tieng": 0,
+  "music_db": 0,
+  "caption": "Phiên 26/11/2026, VN-Index mất 57,77 điểm (-3,42%) về 1.629,68 điểm sau đề xuất thuế của Mỹ (CafeF 26/11/2026).\n\nCùng lúc, vẫn có doanh nghiệp tạm ứng cổ tức tiền mặt: SAB 3.000 đồng/cp, MSH 4.000 đồng/cp, IDP 3.200 đồng/cp (Người Quan Sát 27/11/2026). 1.000 cp SAB = 3 triệu đồng trước thuế.\n\nNguồn số liệu: CafeF 26/11/2026, Người Quan Sát 27/11/2026. Nguồn clip: Wikimedia Commons (giấy phép mở).",
+  "binh_chon": [
+   "1️⃣ Cổ tức tiền mặt mới là thật",
+   "2️⃣ Giá cổ phiếu quan trọng hơn"
+  ],
+  "tags": [
+   "chungkhoan",
+   "cotuc",
+   "VNIndex",
+   "huynguyenchungkhoan"
+  ]
+ }
+]
