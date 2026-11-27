@@ -46,7 +46,7 @@ def _json(url, hd=None):
 
 def _pexels(q):
     k = os.environ.get("PEXELS_API_KEY")
-    if not k: return []
+    if not k: print("broll: THIEU PEXELS_API_KEY -> bo qua pexels '%s'" % q, flush=True); return []
     d = _json("https://api.pexels.com/videos/search?" + urllib.parse.urlencode({"query": q, "orientation": "portrait", "per_page": 5}), {"Authorization": k})
     out = []
     for v in d.get("videos", []):
@@ -134,10 +134,13 @@ def chuan_bi(R, WORK):
         p = "%s/br%d.mp4" % (WORK, k); d, y = _tai1(x, p)
         if d: clips.append((p, d)); R["_nguon_nen"].append(_nguon(y)); print("broll %d: %.1fs %s" % (k, d, y["url"][-80:]), flush=True)
     if len(clips) < 2:   # luôn có clip Commons dự phòng
-        du = list(R.get("broll_du_phong") or []) + KHO_DU_PHONG
-        for q in ([R.get("broll_tim")] if R.get("broll_tim") else []) + ["container ship", "cargo ship"]:
+        # 27/11: tìm clip ĐÚNG ĐỀ trước (broll_tim + từ khoá pexels của chính Short), clip cảng có sẵn chỉ là đường cùng
+        du = list(R.get("broll_du_phong") or [])
+        qs = ([R.get("broll_tim")] if R.get("broll_tim") else []) + [x["pexels"] for x in lst if isinstance(x, dict) and x.get("pexels")]
+        for q in qs:
             try: du += _commons_tim(q)
             except Exception as e: print("broll: tim Commons loi", e, flush=True)
+        du += KHO_DU_PHONG
         for x in du:
             if len(clips) >= 3: break
             p = "%s/br%d.mp4" % (WORK, 100 + len(clips)); d, y = _tai1(x, p)
