@@ -192,7 +192,7 @@ const PLAZA={x:32,z0:-30,z1:22,y:.6},STAIR={x:9,z0:-38,z1:-30},UP={x:42,z0:-74,z
 function Ht(x,z){const d=Math.max(0,Math.max(Math.abs(x),Math.abs(z))-173);let h=(fbm(x*.012,z*.012)-.42)*14*sm(0,60,d)+Math.max(0,fbm(x*.004+3,z*.004)-.5)*90*sm(80,300,d);const r=Math.hypot(x,z);h+=Math.pow(sm(1300,1480,r),1.3)*fbm(x*.006+3,z*.006)*220;if(Math.abs(x)<CITY+2){const dz=Math.abs(z+125);if(dz<10)h-=2.8*sm(10,7.4,dz)}return h}
 function H(x,z){if(x>2200)return(typeof BF!=='undefined'&&BF.built&&Math.abs(x-BF.X)<130&&Math.abs(z-BF.Z)<130)?BF.Y:0;if(window.BRG){const b=BRG(x,z);if(b!=null)return b}const ax=Math.abs(x);if(ax<=PLAZA.x&&z>=PLAZA.z0&&z<=PLAZA.z1)return PLAZA.y;if(ax<=STAIR.x&&z<STAIR.z0+8&&z>=STAIR.z0)return PLAZA.y+(STAIR.z1-z)/8*(UP.y-PLAZA.y);
  if(ax<=UP.x&&z<UP.z1&&z>=UP.z0)return UP.y;return Ht(x,z)}
-const SZ=3000,SEG=touch?270:380,/* 26/11: bản đồ rộng 3000 */tg=new T.PlaneGeometry(SZ,SZ,SEG,SEG);tg.rotateX(-Math.PI/2);const tp=tg.attributes.position;for(let i=0;i<tp.count;i++)tp.setY(i,Ht(tp.getX(i),tp.getZ(i)));tg.computeVertexNormals();
+const SZ=3000,SEG=touch?170:380,/* 26/11: bản đồ rộng 3000 */tg=new T.PlaneGeometry(SZ,SZ,SEG,SEG);tg.rotateX(-Math.PI/2);const tp=tg.attributes.position;for(let i=0;i<tp.count;i++)tp.setY(i,Ht(tp.getX(i),tp.getZ(i)));tg.computeVertexNormals();
 const tGrass=tex('leafy_grass_Diffuse'),tPath=tex('grass_path_2_Diffuse'),tRock=tex('rock_wall_08_Diffuse');
 const terrMat=new T.MeshStandardMaterial({map:tGrass,roughness:1});
 terrMat.onBeforeCompile=s=>{Object.assign(s.uniforms,{tPath:{value:tPath},tRock:{value:tRock},tStone:{value:tex('granite_tile_03_Diffuse')}});
@@ -340,10 +340,10 @@ grass.count=0;/* bỏ cỏ cho nhẹ máy */
 const pmremG=new T.PMREMGenerator(renderer);let skyM=null;
 const sun=new T.DirectionalLight(0xffe6bf,3.4);sun.castShadow=true;sun.shadow.mapSize.set(LITE?1024:2048,LITE?1024:2048);
 Object.assign(sun.shadow.camera,{left:-42,right:42,top:42,bottom:-42,near:1,far:320});sun.shadow.bias=-.0004;sun.shadow.normalBias=.05;scene.add(sun,sun.target);
-const hemi=new T.HemisphereLight(0xbcd8ff,0x5a6a3a,1.0);scene.add(hemi);/* 28/11: đèn trời phụ ngược hướng nắng (xanh nhạt, không bóng) — mặt khuất nắng không còn đen kịt */const fillL=new T.DirectionalLight(0xa9c8ff,1.1);fillL.position.set(-Math.sin(2.618),1.2,-Math.cos(2.618)).multiplyScalar(100);scene.add(fillL);
+const hemi=new T.HemisphereLight(0xbcd8ff,0x5a6a3a,LITE?1.45:1.0);scene.add(hemi);/* 28/11: đèn trời phụ ngược hướng nắng (xanh nhạt, không bóng) — mặt khuất nắng không còn đen kịt */const fillL=new T.DirectionalLight(0xa9c8ff,1.1);fillL.position.set(-Math.sin(2.618),1.2,-Math.cos(2.618)).multiplyScalar(100);scene.add(fillL);
 const sunDir=new T.Vector3().setFromSphericalCoords(1,T.MathUtils.degToRad(90-46),T.MathUtils.degToRad(150));
 scene.fog=new T.FogExp2(0x8db3d3,.0024);
-TL.load('tex/sky.jpg',t=>{t.encoding=T.sRGBEncoding;t.mapping=T.EquirectangularReflectionMapping;scene.environment=pmremG.fromEquirectangular(t).texture;
+TL.load('tex/sky.jpg',t=>{t.encoding=T.sRGBEncoding;t.mapping=T.EquirectangularReflectionMapping;if(!LITE)scene.environment=pmremG.fromEquirectangular(t).texture;/* 28/11: điện thoại bỏ phản chiếu bầu trời trên mọi vật (mỗi điểm ảnh phải tra thêm ảnh môi trường — nặng card đồ họa) */
  const sk=new T.Mesh(new T.SphereGeometry(900,48,24),new T.MeshBasicMaterial({map:t,side:T.BackSide,fog:false,depthWrite:false,color:new T.Color(1.3,1.4,1.55)}));sk.material.map.mapping=T.UVMapping;sk.renderOrder=-1;skyM=sk;scene.add(sk)});
 
 /* ---------- phấn hoa bay ---------- */
