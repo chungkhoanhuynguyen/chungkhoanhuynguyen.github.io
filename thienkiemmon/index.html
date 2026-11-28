@@ -219,6 +219,12 @@ terrMat.onBeforeCompile=s=>{Object.assign(s.uniforms,{tPath:{value:tPath},tRock:
  if(cityM>.5){float mF=vn(wp*1.3),moss=smoothstep(.6,.8,(vn(wp*.16+11.)+.5*vn(wp*.5+5.))/1.5)*smoothstep(.45,.75,mF);col=mix(col,col*vec3(.55,.72,.42),moss*.5);float crack=(1.-smoothstep(0.,.016,abs((vn(wp*.35+3.)+.5*vn(wp*.9+7.))/1.5-.5)))*smoothstep(.5,.7,vn(wp*.05+20.));col*=1.-crack*.5;gPd=smoothstep(.7,.76,(vn(wp*.06+40.)+.35*vn(wp*.25+9.))/1.35)*(1.-moss);col=mix(col,col*.45+vec3(.04,.06,.08),gPd*.75);}
  diffuseColor.rgb*=col;`).replace('#include <roughnessmap_fragment>','#include <roughnessmap_fragment>\n')};
 const terrain=new T.Mesh(tg,terrMat);terrain.receiveShadow=true;scene.add(terrain);
+/* 28/11: CHIA ĐẤT THÀNH Ô — mặt đất 1 tấm thì góc nào cũng vẽ cả bản đồ (điện thoại 58k, máy tính 289k tam giác). Chia 5x5 ô 600 m: ô sau lưng / ngoài tầm nhìn tự bỏ qua. Tấm gốc giữ lại (ẩn) cho việc dò chạm đất. Tắt bằng ?notile */
+if(!/notile/.test(location.search)){try{const N=5,TS=SZ/N,TG=SEG/N,ev=TS/TG;const dh=(x,z)=>{const e=ev*.5;return [Ht(x+e,z)-Ht(x-e,z),Ht(x,z+e)-Ht(x,z-e),2*e]};
+ for(let i=0;i<N;i++)for(let j=0;j<N;j++){const g=new T.PlaneGeometry(TS,TS,TG,TG);g.rotateX(-Math.PI/2);const cx=-SZ/2+TS*(i+.5),cz=-SZ/2+TS*(j+.5);g.translate(cx,0,cz);const p=g.attributes.position,nr=g.attributes.normal;
+  for(let k=0;k<p.count;k++){const x=p.getX(k),z=p.getZ(k);p.setY(k,Ht(x,z));const d=dh(x,z),l=Math.hypot(d[0],d[2],d[1]);nr.setXYZ(k,-d[0]/l,d[2]/l,-d[1]/l)}
+  g.computeBoundingSphere();g.computeBoundingBox();const m=new T.Mesh(g,terrMat);m.receiveShadow=true;m.name='dat_o';m.userData.nomerge=1;m.userData.nochunk=1;m.matrixAutoUpdate=false;scene.add(m)}
+ terrain.visible=false}catch(e){console.warn('tile',e);terrain.visible=true}}
 
 /* ---------- quảng trường, bậc thềm, nền cao ---------- */
 const colliders=[];// [minx,maxx,minz,maxz,top]
@@ -6890,7 +6896,7 @@ try{(function(){if(/[?&]nobai/.test(location.search))return;setTimeout(()=>{try{
  function add(B,geo,mat4,colf,flatUp){const g=geo.index?geo.toNonIndexed():geo;const p=g.attributes.position,qn=g.attributes.normal;nm.getNormalMatrix(mat4);for(let i=0;i<p.count;i++){v.fromBufferAttribute(p,i);const ly=v.y;v.applyMatrix4(mat4);if(flatUp)n.copy(up);else n.fromBufferAttribute(qn,i).applyMatrix3(nm).normalize();B.P.push(v.x,v.y,v.z);B.N.push(n.x,n.y,n.z);const c=colf(ly);B.C.push(c.r,c.g,c.b)}}
  const rockG=new T.IcosahedronGeometry(1,0).toNonIndexed();rockG.computeVertexNormals();const bushG=new T.IcosahedronGeometry(1,1).toNonIndexed();{const bpp=bushG.attributes.position,bn=[];for(let i=0;i<bpp.count;i++){const vv=new T.Vector3().fromBufferAttribute(bpp,i).normalize();bn.push(vv.x,vv.y*.8+.2,vv.z)}bushG.setAttribute('normal',new T.Float32BufferAttribute(bn,3))}
  // khóm cỏ: 6 lá tam giác, mỗi lá 2 mặt
- const bp=[];for(let k=0;k<5;k++){const a=k/5*Math.PI*2+rnd()*.5,r=.18,w=.07,h=.8+rnd()*.5,lx=Math.cos(a)*r,lz=Math.sin(a)*r,tx=Math.cos(a)*w,tz=Math.sin(a)*w,ox=Math.cos(a)*.35,oz=Math.sin(a)*.35;const A=[lx-tz,0,lz+tx],Bv=[lx+tz,0,lz-tx],Cv=[lx+ox,h,lz+oz];bp.push(...A,...Bv,...Cv,...Bv,...A,...Cv)}
+ const bp=[];for(let k=0;k<5;k++){const a=k/5*Math.PI*2+rnd()*.5,r=.18,w=.07,h=.8+rnd()*.5,lx=Math.cos(a)*r,lz=Math.sin(a)*r,tx=Math.cos(a)*w,tz=Math.sin(a)*w,ox=Math.cos(a)*.35,oz=Math.sin(a)*.35;const A=[lx-tz,0,lz+tx],Bv=[lx+tz,0,lz-tx],Cv=[lx+ox,h,lz+oz];bp.push(...A,...Bv,...Cv)}/* 28/11: lá 1 mặt, vật liệu vẽ 2 mặt — bớt nửa tam giác cỏ */
  const tuftG=new T.BufferGeometry();tuftG.setAttribute('position',new T.Float32BufferAttribute(bp,3));tuftG.setAttribute('normal',new T.Float32BufferAttribute(new Array(bp.length).fill(0).map((_,i)=>i%3===1?1:0),3));
  const C=h=>new T.Color(h);const rockC=[0x6e6a62,0x7d776b,0x5d5a54,0x857b68].map(C),bushC=[0x2c5222,0x36602a,0x28461f,0x41662e].map(C),grassB=C(0x3d5f22),grassT=[0x86a040,0x6f9036,0x9c9c48].map(C),flw=[0xf2d04a,0xe8a8c8,0xb07ad8,0xe8604a].map(C);
  const blocked=(x,z,r)=>(typeof colliders!=='undefined'&&colliders.some(c=>x+r>c[0]&&x-r<c[1]&&z+r>c[2]&&z-r<c[3]))||((typeof VPATH!=='undefined'?VPATH:[]).some(c=>Math.hypot(x-c[0],z-c[1])<34));
@@ -6910,7 +6916,7 @@ try{(function(){if(/[?&]nobai/.test(location.search))return;setTimeout(()=>{try{
   else{// khóm cỏ cao, có khi kèm hoa dại
    const nn=2+Math.floor(rnd()*3),fl=rnd()<.35?flw[Math.floor(rnd()*4)]:null;for(let k=0;k<nn;k++){const ox=(rnd()-.5)*2.4,oz=(rnd()-.5)*2.4,sc=.7+rnd()*.6;e.set(0,rnd()*6.28,0);q.setFromEuler(e);s3.set(sc,sc*(.8+rnd()*.5),sc);p3.set(x+ox,H(x+ox,z+oz)-.05,z+oz);m.compose(p3,q,s3);
     const tip=(fl&&k%2===0)?fl:grassT[Math.floor(rnd()*3)];add(B,tuftG,m,ly=>ly>.5?tip:grassB.clone().lerp(tip,ly*.9),true)}ng++}}
- const mat=new T.MeshLambertMaterial({vertexColors:true});const out=[];
+ const mat=new T.MeshLambertMaterial({vertexColors:true,side:T.DoubleSide});const out=[];
  Q.forEach((B,i)=>{if(!B.P.length)return;const g=new T.BufferGeometry();g.setAttribute('position',new T.Float32BufferAttribute(B.P,3));g.setAttribute('normal',new T.Float32BufferAttribute(B.N,3));g.setAttribute('color',new T.Float32BufferAttribute(B.C,3));g.computeBoundingSphere();g.computeBoundingBox();
   const me=new T.Mesh(g,mat);me.name='bai_luyen_'+i;me.matrixAutoUpdate=false;me.updateMatrix();scene.add(me);out.push(me)});
  window.__bai={da:nr,bui:nb,co:ng,tamgiac:out.reduce((s,o)=>s+o.geometry.attributes.position.count/3,0)|0,luoi:out.length}}catch(err){console.warn('bai',err)}},2200)})()}catch(e){}
@@ -6993,6 +6999,17 @@ try{(function(){
   }catch(e){}};
  const _uf2=updFabao;updFabao=function(){const r=_uf2.apply(this,arguments);swGlow=swGlow2=null;lastFly=false;trail.visible=false;return r};
 })()}catch(e){console.warn('fxsang',e)}
+
+/* ===== CÂY BỤI CHỈ VẼ GẦN (28/11): bụi cây, dương xỉ, đá rêu… rải theo kiểu "nhân bản" trước đây vẽ toàn bộ mọi bản sao dù ở sau lưng hay cách 500 m. Giờ mỗi 0,4 giây chỉ giữ bản sao trong tầm (điện thoại 130 m, máy tính 220 m) và không nằm hẳn sau lưng ===== */
+try{(function(){const R=LITE?130:220,ORIG=new WeakMap(),M=new THREE.Matrix4(),P=new THREE.Vector3(),F=new THREE.Vector3();
+ function tick(){try{const cp=camera.position;camera.getWorldDirection(F);F.y=0;F.normalize();
+  scene.traverse(o=>{if(!o.isInstancedMesh||!o.name||!/^pk_/.test(o.name)||o.layers.mask===(1<<29))return;let d=ORIG.get(o);if(!d){if(!o.visible||o.count<2)return;d={m:new Float32Array(o.instanceMatrix.array.slice(0,o.count*16)),n:o.count,c:o.instanceColor?new Float32Array(o.instanceColor.array.slice(0,o.count*3)):null};ORIG.set(o,d)}
+   const a=o.instanceMatrix.array,ca=o.instanceColor&&d.c?o.instanceColor.array:null;let k=0;o.updateMatrixWorld();
+   for(let i=0;i<d.n;i++){M.fromArray(d.m,i*16);P.setFromMatrixPosition(M).applyMatrix4(o.matrixWorld);const dx=P.x-cp.x,dz=P.z-cp.z,dd=Math.hypot(dx,dz);if(dd>R)continue;if(dd>25&&(dx*F.x+dz*F.z)/dd<-.35)continue;
+    for(let j=0;j<16;j++)a[k*16+j]=d.m[i*16+j];if(ca)for(let j=0;j<3;j++)ca[k*3+j]=d.c[i*3+j];k++}
+   o.count=k;o.instanceMatrix.needsUpdate=true;if(ca)o.instanceColor.needsUpdate=true})}catch(e){}}
+ setInterval(tick,400);
+})()}catch(e){}
 
 try{window.__enterBC=()=>{BC.day='';enterBC()};window.__bfJoin=sd=>bfJoin(sd||'tien');window.__BCo=BC;window.__BFo=BF}catch(e){}
 window.__wp={renderer,T,WEAPONS,fabaoModel,TIERS,FBE,RT,VB:()=>VB,hero:()=>hero,TD:{tdKiem,tdXuan,tdBang,tdAn,swordRain,phoenix,tornado,maVortex,dQi:()=>dragonE('qi'),dTh:()=>dragonE('thunder'),dFi:()=>dragonE('fire'),dBl:()=>dragonE('blood'),vortex:()=>{const T0=performance.now();maVortex();return performance.now()-T0},ice:()=>{const t=TU.tong,r=TU.realm,l=TU.learned;TU.tong='thuy';TU.realm=4;TU.learned=['Huyền Băng Trảm','Băng Phong Vạn Lý'];hero.mp=100;P.cds[1]=0;try{_useSkill(1+'')}finally{TU.tong=t;TU.realm=r;TU.learned=l}}},TU:()=>TU};setTimeout(()=>{if(typeof TKACCT!=='undefined')TKACCT.boot()},0);
