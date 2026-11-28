@@ -6582,6 +6582,23 @@ try{(function(){if(/nomon1/.test(location.search))return;const HID=29;
   for(const e of E){if(e&&e._m1s){if(!check(e))unmerge(e);continue}}
   for(const e of E){if(performance.now()-t0>6)break;if(!e||e===hero||e.av||e._m1||e.dead||!e.c||!e.c.g||!e.c.g.parent)continue;if(!e._m1t){e._m1t=performance.now()+3000;continue}if(performance.now()<e._m1t)continue;if(e.c.g.position.distanceToSquared(camera.position)>200*200)continue;e._m1=1;try{const m=merge(e);if(m){stat.ents++;stat.after+=0;stat.before+=m}}catch(er){console.warn('mon1',er)}n++}}catch(e){}},300);
  window.__mon1=()=>stat})()}catch(e){console.warn('quai gop xuong',e)}
+/* ===== ĐÁNH THƯỜNG SƯỚNG TAY (28/11): đánh thường thành chuỗi 3 nhát theo màu môn phái — nhát 1, 2 vệt chém lệch chéo + tia lửa ở chỗ trúng; nhát 3 vệt chém to, vòng sóng, rung nhẹ màn hình, khựng đòn 35ms. Dùng lại vòng/hạt có sẵn, không thêm đèn, không sáng trắng ===== */
+try{(function(){const _us=useSkill;let cb=0,lastT=0;const V=new T.Vector3();
+ function col(){try{return NH[TU.tong].c}catch(e){return 0x9fd8ff}}
+ window.__useSkill=k=>useSkill(k);useSkill=function(k){const before=P.cds.A;const r=_us.apply(this,arguments);try{
+  if(k!=='A'||!(P.cds.A>0)||before>0||hero.dead||creating)return r;const w=hero.c.w&&hero.c.w.userData.kind;if(w==='phien')return r;
+  const now=performance.now();cb=now-lastT<1400?cb%3+1:1;lastT=now;const c=col(),hp=heroPos(),f=V.set(Math.sin(hero.face),0,Math.cos(hero.face));
+  const t=nearestEnemy(hp,w==='bow'?22:3.2);
+  if(w==='bow'){ring(hp.clone().addScaledVector(f,.8).setY(hp.y+1.2),c,cb===3?1.6:.9,.25);if(cb===3&&t){setTimeout(()=>{if(t.dead===undefined||!t.c)return;const p=t.c.g.position.clone().setY(t.c.g.position.y+1);burst(p,12,c,6);ring(t.c.g.position,c,2.4,.35)},350)}return r}
+  const big=cb===3,m=slashArc(hp,hero.face,c,big);m.rotateZ(cb===1?.55:cb===2?-.55:0);m.position.addScaledVector(f,big?.6:.3);
+  addFx(m,big?.32:.22,(o,kk)=>{o.m.material.opacity=(1-kk)*.9;o.m.scale.setScalar(1+kk*(big?.9:.5))});
+  if(big)setTimeout(()=>{try{const m2=slashArc(heroPos(),hero.face,c,true);m2.rotateZ(.9);m2.position.addScaledVector(V.set(Math.sin(hero.face),0,Math.cos(hero.face)),.6);addFx(m2,.28,(o,kk)=>{o.m.material.opacity=(1-kk)*.8;o.m.scale.setScalar(1+kk*.8)})}catch(e){}},70);
+  if(t&&t.c){const p=t.c.g.position.clone().setY(t.c.g.position.y+1);burst(p,big?14:6,c,big?7:4);
+   if(big){ring(t.c.g.position,c,3,.35);shake=Math.max(shake,.12);hitStop(35);sfx('clang')}}
+  else if(big)ring(hp,c,2.2,.3);
+ }catch(e){}return r}
+})()}catch(e){console.warn('combo',e)}
+
 try{window.__enterBC=()=>{BC.day='';enterBC()};window.__bfJoin=sd=>bfJoin(sd||'tien');window.__BCo=BC;window.__BFo=BF}catch(e){}
 window.__wp={renderer,T,WEAPONS,fabaoModel,TIERS,FBE,RT,VB:()=>VB,hero:()=>hero,TD:{tdKiem,tdXuan,tdBang,tdAn,swordRain,phoenix,tornado,maVortex,dQi:()=>dragonE('qi'),dTh:()=>dragonE('thunder'),dFi:()=>dragonE('fire'),dBl:()=>dragonE('blood'),vortex:()=>{const T0=performance.now();maVortex();return performance.now()-T0},ice:()=>{const t=TU.tong,r=TU.realm,l=TU.learned;TU.tong='thuy';TU.realm=4;TU.learned=['Huyền Băng Trảm','Băng Phong Vạn Lý'];hero.mp=100;P.cds[1]=0;try{_useSkill(1+'')}finally{TU.tong=t;TU.realm=r;TU.learned=l}}},TU:()=>TU};setTimeout(()=>{if(typeof TKACCT!=='undefined')TKACCT.boot()},0);
 window.__demo={closeInv:()=>closeInv(),castAt:(id,x,z)=>{const h=heroPos(),o=h.clone(),f=hero.face;h.x=x;h.z=z;hero.face=Math.random()*6.28;try{castCP(id,true)}catch(e){}h.copy(o);hero.face=f},BF,bfJoin,bfBuild,allEnts:()=>ents,ICL:()=>ICL,equipWeapon:(a,b)=>equipWeapon(a,b),wearBest,equip:i=>{equip.silent=1;try{equip(i)}finally{equip.silent=0}},heroPos,TRIB:()=>TRIB,addCorpse,deathDrop,ents:()=>ents,foe:e=>foe(e),castCP,CP,mkBook,learnBook,P2P,NET,itemCard,optHTML,onHunt,rankTick,RANK,WFALL,castFX,VILLC:()=>window.__vc,tribGo,tribReady,needXp,bankPanel,CG,titles,leaveBC,zoneStream,ZPOP,GANGS,PARTY,ptInvite,hit,NET,netUpd,CORPSE,goInt,toggleFly,updFabao,GARR,WFIX,spawnMon,EV,EVT,npcAct,openInv,SQUADS:()=>SQUADS,CIT:()=>CIT,MUS,PK,togglePK,callReinf,maAct,gainXp,realmText,updPK,INV,BC,mkItem,dropItem,enterBC,TU,refreshTL,bloom:()=>bloom,LOOK,buildAvatar,setSW:(a,b,c)=>{hero.vw&&hero.vw.rotation.set(a,b,c)},hero,P,useSkill,ents,setView:(y,p,d)=>{yaw=y;pitch=p;dist=d}};
