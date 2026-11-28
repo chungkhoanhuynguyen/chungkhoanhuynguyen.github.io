@@ -1,0 +1,1684 @@
+[
+ {
+  "key": "SN2811VANG39",
+  "tieu_de": "Vàng thế giới mất 39% từ đỉnh tháng 1, Trung Quốc vẫn gom thêm 26 tấn trong tháng 10: ai đang đúng???",
+  "hook": [
+   "VÀNG MẤT 39%",
+   "TQ VẪN GOM 26 TẤN?"
+  ],
+  "nhan": "ĐIỀU TRA · 28/11/2026",
+  "short_caption": "Theo Thế giới và Việt Nam 28/11/2026, vàng thế giới đã giảm tới 39% so với đỉnh cuối tháng 1; theo WGC, ngân hàng trung ương Trung Quốc vẫn mua khoảng 26 tấn vàng trong tháng 10, tháng thứ 24 liên tiếp. Sáng 28/11 SJC bán 136 triệu đồng/lượng, cao hơn thế giới quy đổi khoảng 21 triệu (Phụ Nữ & Gia Đình 28/11/2026).",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "AI ĐANG ĐÚNG?",
+   "loi": "Vàng mất 39% mà Trung Quốc vẫn gom, anh chị nghĩ A: họ nhìn xa hơn mình, hay B: vàng chưa hết giảm?",
+   "loi_doc": "Vàng mất ba mươi chín phần trăm mà Trung Quốc vẫn gom, anh chị nghĩ A: họ nhìn xa hơn mình, hay B: vàng chưa hết giảm?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "AI ĐANG ĐÚNG?",
+    "dong": [
+     [
+      "A: HỌ NHÌN XA",
+      80,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: CHƯA HẾT GIẢM",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "MẤT 39% TỪ ĐỈNH",
+    "loi": "Vàng thế giới đã mất tới 39% so với đỉnh cuối tháng 1 năm nay. Vậy còn ai dám mua? Khoan, ngân hàng trung ương Trung Quốc vẫn mua thêm khoảng 26 tấn chỉ trong tháng 10.",
+    "loi_doc": "Vàng thế giới đã mất tới ba mươi chín phần trăm so với đỉnh cuối tháng một năm nay. Vậy còn ai dám mua? Khoan, ngân hàng trung ương Trung Quốc vẫn mua thêm khoảng hai mươi sáu tấn chỉ trong tháng mười.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "VÀNG THẾ GIỚI SO VỚI ĐỈNH CUỐI THÁNG 1",
+     "dong": [
+      [
+       "GIẢM TỚI 39%",
+       120,
+       "do"
+      ],
+      [
+       "THEO TG&VN 28/11/2026",
+       44,
+       "trang"
+      ]
+     ],
+     "nguon": "Thế giới và Việt Nam 28/11/2026"
+    },
+    "dt": {
+     "loai": "lat",
+     "hoi": [
+      "VÀNG MẤT 39%",
+      "CÒN AI DÁM MUA?"
+     ],
+     "lat": "TQ MUA 26 TẤN",
+     "tu": "Khoan",
+     "phu": "Thế giới và Việt Nam 28/11/2026"
+    },
+    "tu_khoa": [
+     "khoan",
+     "39%"
+    ]
+   },
+   {
+    "chu_to": "ĐÁY 15 THÁNG RỒI BẬT",
+    "loi": "Ngày 25/11, vàng chạm đáy 15 tháng ở 3.426 đô một ounce. Đến phiên 27/11 đã bật lên 3.639 đô, tuần tăng đầu tiên sau hai tuần giảm liên tiếp.",
+    "loi_doc": "Ngày hai mươi lăm tháng mười một, vàng chạm đáy mười lăm tháng ở ba nghìn bốn trăm hai mươi sáu đô một ounce. Đến phiên hai mươi bảy tháng mười một đã bật lên ba nghìn sáu trăm ba mươi chín đô, tuần tăng đầu tiên sau hai tuần giảm liên tiếp.",
+    "anh": [],
+    "the": {
+     "loai": "cot",
+     "tieu": "VÀNG GIAO NGAY · USD/OUNCE",
+     "hang": [
+      [
+       "ĐÁY 25/11",
+       3426.35
+      ],
+      [
+       "PHIÊN 27/11",
+       3639.61
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 4000,
+     "nd": 2,
+     "nguon": "Markettimes 28/11/2026"
+    },
+    "dt": {
+     "loai": "so_sanh",
+     "tieu": "VÀNG GIAO NGAY · USD/OUNCE",
+     "a": [
+      "ĐÁY 25/11",
+      3426.35
+     ],
+     "b": [
+      "PHIÊN 27/11",
+      3639.61
+     ],
+     "dv": " USD",
+     "max": 4000,
+     "tu_b": "3.639",
+     "nguon": "Markettimes 28/11/2026"
+    },
+    "tu_khoa": [
+     "3.426",
+     "3.639"
+    ]
+   },
+   {
+    "chu_to": "26 TẤN · 24 THÁNG",
+    "loi": "Theo Hội đồng Vàng Thế giới, tháng 10 ngân hàng trung ương Trung Quốc mua khoảng 26 tấn, nhiều nhất kể từ tháng 10/2023, và là tháng thứ 24 liên tiếp tăng dự trữ vàng.",
+    "loi_doc": "Theo Hội đồng Vàng Thế giới, tháng mười ngân hàng trung ương Trung Quốc mua khoảng hai mươi sáu tấn, nhiều nhất kể từ tháng mười năm hai nghìn không trăm hai mươi ba, và là tháng thứ hai mươi tư liên tiếp tăng dự trữ vàng.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "NGÂN HÀNG TRUNG ƯƠNG TRUNG QUỐC · T10/2026",
+     "dong": [
+      [
+       "26 TẤN",
+       130,
+       "vang"
+      ],
+      [
+       "THÁNG THỨ 24 LIÊN TIẾP",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "WGC · Phụ Nữ & Gia Đình 28/11/2026"
+    },
+    "tu_khoa": [
+     "26 tấn",
+     "24"
+    ]
+   },
+   {
+    "chu_to": "SJC VẪN ĐẮT 21 TRIỆU",
+    "loi": "Còn ở nhà mình, sáng 28/11 SJC bán ra 136 triệu một lượng, thế giới quy đổi chỉ gần 115 triệu. Mỗi lượng vẫn đắt hơn khoảng 21 triệu đồng.",
+    "loi_doc": "Còn ở nhà mình, sáng hai mươi tám tháng mười một S J C bán ra một trăm ba mươi sáu triệu một lượng, thế giới quy đổi chỉ gần một trăm mười lăm triệu. Mỗi lượng vẫn đắt hơn khoảng hai mươi mốt triệu đồng.",
+    "anh": [],
+    "the": {
+     "loai": "cot",
+     "tieu": "TRIỆU ĐỒNG/LƯỢNG · SÁNG 28/11",
+     "hang": [
+      [
+       "THẾ GIỚI QUY ĐỔI",
+       115
+      ],
+      [
+       "SJC BÁN RA",
+       136
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 150,
+     "nd": 0,
+     "nguon": "Phụ Nữ & Gia Đình (dẫn Thanh Niên) 28/11/2026"
+    },
+    "tu_khoa": [
+     "21 triệu"
+    ]
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · ĐẤT · CHỨNG KHOÁN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  },
+  "kieu": "dieu_tra",
+  "theo_doi_som": true,
+  "broll": [
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_crystallization_phenomenon_when_liquid_gold_solidifies_is_full_of_dendrites..webm",
+    "tu": 0,
+    "den": 10
+   },
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Wolframbarren_erkennen_-_how_to_detect_tungsten_filled_gold_bars.ogv",
+    "tu": 0,
+    "den": 10
+   }
+  ],
+  "broll_tim": "gold bars bullion"
+ },
+ {
+  "key": "SN2811NOXH",
+  "tieu_de": "Nộp 150 đến 900 triệu mua \"suất ngoại giao\" nhà ở xã hội: hơn 600 người mất trên 150 tỷ đồng???",
+  "hook": [
+   "900 TRIỆU 1 SUẤT",
+   "NHÀ XÃ HỘI GIẢ?"
+  ],
+  "nhan": "ĐIỀU TRA · 28/11/2026",
+  "short_caption": "Ngày 25/11/2026, Công an TPHCM cho biết đường dây giả danh chủ đầu tư dự án nhà ở xã hội rao bán hơn 600 suất, thu 150–900 triệu đồng mỗi suất, chiếm đoạt trên 150 tỷ đồng; 37 người bị khởi tố (SGGP). Ngày 27/11, Công an Bắc Ninh thông báo tìm người góp vốn bất động sản với Tập đoàn Global Diamond chưa được chi trả (CafeF 28/11/2026).",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "THIỆT VÌ ĐÂU?",
+   "loi": "Hơn 600 người mất tiền, anh chị nghĩ A: vì quá khát nhà giá rẻ, hay B: vì giấy tờ giả quá giống thật?",
+   "loi_doc": "Hơn sáu trăm người mất tiền, anh chị nghĩ A: vì quá khát nhà giá rẻ, hay B: vì giấy tờ giả quá giống thật?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "THIỆT VÌ ĐÂU?",
+    "dong": [
+     [
+      "A: KHÁT NHÀ RẺ",
+      80,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: GIẤY GIẢ QUÁ THẬT",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "900 TRIỆU MỘT SUẤT",
+    "loi": "Bỏ ra tới 900 triệu mua một suất nhà ở xã hội gọi là suất ngoại giao. Khoan, chủ đầu tư là giả. Ngày 25/11, Công an TPHCM cho biết hơn 600 người đã mất trên 150 tỷ đồng.",
+    "loi_doc": "Bỏ ra tới chín trăm triệu mua một suất nhà ở xã hội gọi là suất ngoại giao. Khoan, chủ đầu tư là giả. Ngày hai mươi lăm tháng mười một, Công an thành phố Hồ Chí Minh cho biết hơn sáu trăm người đã mất trên một trăm năm mươi tỷ đồng.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "SUẤT NHÀ Ở XÃ HỘI GIẢ · 25/11/2026",
+     "dong": [
+      [
+       "150 TỶ",
+       130,
+       "do"
+      ],
+      [
+       "CỦA HƠN 600 NGƯỜI",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "Công an TPHCM · SGGP 25/11/2026"
+    },
+    "dt": {
+     "loai": "lat",
+     "hoi": [
+      "900 TRIỆU",
+      "MUA SUẤT NHÀ XÃ HỘI?"
+     ],
+     "lat": "CHỦ ĐẦU TƯ GIẢ",
+     "tu": "Khoan",
+     "phu": "Công an TPHCM · SGGP 25/11/2026"
+    },
+    "tu_khoa": [
+     "khoan",
+     "900"
+    ]
+   },
+   {
+    "chu_to": "150 ĐẾN 900 TRIỆU",
+    "loi": "Chiêu dụ là suất ngoại giao, suất nội bộ, suất kín. Mỗi suất phải nộp từ 150 đến 900 triệu đồng gọi là phí mua suất, rồi bị chiếm đoạt.",
+    "loi_doc": "Chiêu dụ là suất ngoại giao, suất nội bộ, suất kín. Mỗi suất phải nộp từ một trăm năm mươi đến chín trăm triệu đồng gọi là phí mua suất, rồi bị chiếm đoạt.",
+    "anh": [],
+    "the": {
+     "loai": "cot",
+     "tieu": "PHÍ MUA SUẤT · TRIỆU ĐỒNG",
+     "hang": [
+      [
+       "THẤP NHẤT",
+       150
+      ],
+      [
+       "CAO NHẤT",
+       900
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 1000,
+     "nd": 0,
+     "nguon": "Công an TPHCM · SGGP 25/11/2026"
+    },
+    "dt": {
+     "loai": "so_sanh",
+     "tieu": "PHÍ MUA 1 SUẤT · TRIỆU ĐỒNG",
+     "a": [
+      "THẤP NHẤT",
+      150
+     ],
+     "b": [
+      "CAO NHẤT",
+      900
+     ],
+     "dv": " TRIỆU",
+     "max": 1000,
+     "tu_b": "900",
+     "nguon": "Công an TPHCM · SGGP 25/11/2026"
+    },
+    "tu_khoa": [
+     "150",
+     "900"
+    ]
+   },
+   {
+    "chu_to": "LÀM GIẢ CẢ CON DẤU",
+    "loi": "Để tạo lòng tin, nhóm này làm giả con dấu của chủ đầu tư và cả Sở Xây dựng. Đến nay 37 người đã bị khởi tố.",
+    "loi_doc": "Để tạo lòng tin, nhóm này làm giả con dấu của chủ đầu tư và cả Sở Xây dựng. Đến nay ba mươi bảy người đã bị khởi tố.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "THEO CÔNG AN TPHCM",
+     "dong": [
+      [
+       "37 NGƯỜI",
+       120,
+       "vang"
+      ],
+      [
+       "BỊ KHỞI TỐ",
+       56,
+       "trang"
+      ],
+      [
+       "LÀM GIẢ CON DẤU SỞ XÂY DỰNG",
+       40,
+       "do"
+      ]
+     ],
+     "nguon": "Công an TPHCM · SGGP 25/11/2026"
+    },
+    "tu_khoa": [
+     "37"
+    ]
+   },
+   {
+    "chu_to": "BẮC NINH TÌM BỊ HẠI",
+    "loi": "Chưa hết, ngày 27/11 Công an Bắc Ninh thông báo tìm người đã ký hợp đồng góp vốn bất động sản với Tập đoàn Global Diamond nhưng chưa được trả tiền.",
+    "loi_doc": "Chưa hết, ngày hai mươi bảy tháng mười một Công an Bắc Ninh thông báo tìm người đã ký hợp đồng góp vốn bất động sản với Tập đoàn Global Diamond nhưng chưa được trả tiền.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "CÔNG AN BẮC NINH · 27/11/2026",
+     "dong": [
+      [
+       "TÌM BỊ HẠI",
+       100,
+       "vang"
+      ],
+      [
+       "HỢP ĐỒNG GÓP VỐN BẤT ĐỘNG SẢN",
+       44,
+       "trang"
+      ]
+     ],
+     "nguon": "Công an Bắc Ninh · CafeF 28/11/2026"
+    },
+    "tu_khoa": [
+     "góp vốn"
+    ]
+   },
+   {
+    "chu_to": "TIỀN PHẢI ĐỨNG TÊN MÌNH",
+    "loi": "Bài học: nộp tiền phải đúng chủ đầu tư, đúng tài khoản, có hợp đồng. Đầu tư chứng khoán cũng vậy, tiền chỉ nên nằm trong tài khoản đứng tên chính mình.",
+    "loi_doc": "Bài học: nộp tiền phải đúng chủ đầu tư, đúng tài khoản, có hợp đồng. Đầu tư chứng khoán cũng vậy, tiền chỉ nên nằm trong tài khoản đứng tên chính mình.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "TRƯỚC KHI CHUYỂN TIỀN",
+     "dong": [
+      [
+       "ĐÚNG CHỦ ĐẦU TƯ",
+       64,
+       "vang"
+      ],
+      [
+       "ĐÚNG TÀI KHOẢN",
+       64,
+       "trang"
+      ],
+      [
+       "CÓ HỢP ĐỒNG",
+       64,
+       "vang"
+      ]
+     ]
+    },
+    "tu_khoa": [
+     "đứng tên"
+    ]
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · ĐẤT · CHỨNG KHOÁN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  },
+  "kieu": "dieu_tra",
+  "theo_doi_som": true,
+  "broll": [
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/City_skyline_(time_lapse).webm",
+    "tu": 0,
+    "den": 10
+   },
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Studio_Ocho_Ocho_Construction_Timelapse.webm",
+    "tu": 0,
+    "den": 10
+   }
+  ],
+  "broll_tim": "apartment building construction"
+ },
+ {
+  "key": "SN2811METRO",
+  "tieu_de": "Hà Nội bố trí 184 nghìn tỷ cho 5 tuyến metro, Trung ương hỗ trợ 60.000 tỷ: phần còn lại ai trả???",
+  "hook": [
+   "184.000 TỶ METRO",
+   "TW CHỈ 60.000 TỶ?"
+  ],
+  "nhan": "ĐIỀU TRA · 28/11/2026",
+  "short_caption": "Hà Nội sẽ ưu tiên bố trí 184 nghìn tỷ đồng cho 5 tuyến đường sắt đô thị (MoneyHub 27/11/2026). Theo Bộ Tài chính, ngân sách Trung ương hỗ trợ 60.000 tỷ đồng cho 5 tuyến số 1, 2, 8, 10, 14 giai đoạn 2026–2030 và đề nghị Hà Nội tính tới trái phiếu chính quyền địa phương, trái phiếu công trình (Thời báo Tài chính VN 17/11/2026).",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "ĐÁNG HAY QUÁ SỨC?",
+   "loi": "184 nghìn tỷ cho metro, anh chị thấy A: đáng làm ngay, hay B: quá sức ngân sách?",
+   "loi_doc": "Một trăm tám mươi tư nghìn tỷ cho metro, anh chị thấy A: đáng làm ngay, hay B: quá sức ngân sách?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "ĐÁNG HAY QUÁ SỨC?",
+    "dong": [
+     [
+      "A: ĐÁNG LÀM NGAY",
+      80,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: QUÁ SỨC",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "184.000 TỶ METRO",
+    "loi": "184 nghìn tỷ đồng cho 5 tuyến metro Hà Nội. Tiền này lấy từ đâu? Khoan, phần Trung ương hỗ trợ cho 5 tuyến này là 60.000 tỷ.",
+    "loi_doc": "Một trăm tám mươi tư nghìn tỷ đồng cho năm tuyến metro Hà Nội. Tiền này lấy từ đâu? Khoan, phần Trung ương hỗ trợ cho năm tuyến này là sáu mươi nghìn tỷ.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "HÀ NỘI · 5 TUYẾN ĐƯỜNG SẮT ĐÔ THỊ",
+     "dong": [
+      [
+       "184.000 TỶ",
+       120,
+       "vang"
+      ],
+      [
+       "ƯU TIÊN BỐ TRÍ",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "MoneyHub 27/11/2026"
+    },
+    "dt": {
+     "loai": "lat",
+     "hoi": [
+      "184.000 TỶ METRO",
+      "LẤY TỪ ĐÂU?"
+     ],
+     "lat": "TW HỖ TRỢ 60.000 TỶ",
+     "tu": "Khoan",
+     "phu": "MoneyHub 27/11/2026"
+    },
+    "tu_khoa": [
+     "khoan",
+     "184"
+    ]
+   },
+   {
+    "chu_to": "60.000 SO VỚI 184.000",
+    "loi": "Theo Bộ Tài chính, giai đoạn 2026 đến 2030 Trung ương hỗ trợ Hà Nội 85.000 tỷ cho đường sắt đô thị, trong đó 60.000 tỷ cho 5 tuyến số 1, 2, 8, 10 và 14.",
+    "loi_doc": "Theo Bộ Tài chính, giai đoạn hai nghìn không trăm hai mươi sáu đến hai nghìn không trăm ba mươi Trung ương hỗ trợ Hà Nội tám mươi lăm nghìn tỷ cho đường sắt đô thị, trong đó sáu mươi nghìn tỷ cho năm tuyến số một, hai, tám, mười và mười bốn.",
+    "anh": [],
+    "the": {
+     "loai": "cot",
+     "tieu": "5 TUYẾN METRO · TỶ ĐỒNG",
+     "hang": [
+      [
+       "TW HỖ TRỢ",
+       60000
+      ],
+      [
+       "HÀ NỘI BỐ TRÍ",
+       184000
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 200000,
+     "nd": 0,
+     "nguon": "MoneyHub 27/11/2026 · Bộ Tài chính · Thời báo Tài chính VN 17/11/2026"
+    },
+    "dt": {
+     "loai": "so_sanh",
+     "tieu": "5 TUYẾN METRO · TỶ ĐỒNG",
+     "a": [
+      "TW HỖ TRỢ",
+      60000
+     ],
+     "b": [
+      "HÀ NỘI BỐ TRÍ",
+      184000
+     ],
+     "dv": " TỶ",
+     "max": 200000,
+     "tu_b": "60.000",
+     "nguon": "MoneyHub 27/11/2026 · Bộ Tài chính · Thời báo Tài chính VN 17/11/2026"
+    },
+    "tu_khoa": [
+     "60.000",
+     "85.000"
+    ]
+   },
+   {
+    "chu_to": "TRÁI PHIẾU CÔNG TRÌNH",
+    "loi": "Phần thiếu, Bộ Tài chính đề nghị Hà Nội tự cân đối ngân sách, tính tới phát hành trái phiếu chính quyền địa phương và trái phiếu công trình.",
+    "loi_doc": "Phần thiếu, Bộ Tài chính đề nghị Hà Nội tự cân đối ngân sách, tính tới phát hành trái phiếu chính quyền địa phương và trái phiếu công trình.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "BỘ TÀI CHÍNH ĐỀ NGHỊ",
+     "dong": [
+      [
+       "TRÁI PHIẾU",
+       110,
+       "vang"
+      ],
+      [
+       "CHÍNH QUYỀN ĐỊA PHƯƠNG · CÔNG TRÌNH",
+       40,
+       "trang"
+      ]
+     ],
+     "nguon": "Bộ Tài chính · Thời báo Tài chính VN 17/11/2026"
+    },
+    "tu_khoa": [
+     "trái phiếu"
+    ]
+   },
+   {
+    "chu_to": "TIỀN THUẾ CỦA AI?",
+    "loi": "Tiền ngân sách là tiền thuế của mỗi nhà. Trên sàn, nhóm xây dựng, vật liệu hay được nhắc mỗi khi có tin đầu tư công, nhưng tiền thật chỉ về doanh nghiệp trúng thầu.",
+    "loi_doc": "Tiền ngân sách là tiền thuế của mỗi nhà. Trên sàn, nhóm xây dựng, vật liệu hay được nhắc mỗi khi có tin đầu tư công, nhưng tiền thật chỉ về doanh nghiệp trúng thầu.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "ĐẦU TƯ CÔNG",
+     "dong": [
+      [
+       "TIỀN THUẾ",
+       110,
+       "vang"
+      ],
+      [
+       "CHẢY VỀ DOANH NGHIỆP TRÚNG THẦU",
+       40,
+       "trang"
+      ]
+     ]
+    },
+    "tu_khoa": [
+     "trúng thầu"
+    ]
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · ĐẤT · CHỨNG KHOÁN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  },
+  "kieu": "dieu_tra",
+  "theo_doi_som": true,
+  "broll": [
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Driverless_Metro_Train_-_Kelana_Jaya_Light_Rapid_Transit_(LRT_)-_MRT_-_Rapid_KL_-Malaysia.webm",
+    "tu": 0,
+    "den": 10
+   },
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2007-08-03_Taipei_Metro_train_arriving_at_Zhishan_Station.ogv",
+    "tu": 0,
+    "den": 10
+   }
+  ],
+  "broll_tim": "metro train station"
+ },
+ {
+  "key": "SP2811NVDA",
+  "tieu_de": "Nvidia mất 27% chỉ trong tháng 11, còn bị S&P Global đưa vào diện theo dõi tín nhiệm tiêu cực: chuyện gì đang xảy ra?",
+  "hook": [
+   "NVIDIA MẤT 27%",
+   "TRONG 1 THÁNG?"
+  ],
+  "nhan": "TIN NÓNG · 28/11/2026",
+  "short_caption": "Theo MoneyHub 27/11/2026: riêng tháng 11 cổ phiếu Nvidia giảm 27%; S&P Global đưa Nvidia vào diện theo dõi tín nhiệm tiêu cực vì rủi ro quản lý, quản trị; PCE tháng 10 của Mỹ tăng 3,8%, cao nhất khoảng 3 năm.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "LO HAY CƠ HỘI?",
+   "loi": "Nvidia mất 27% một tháng, anh chị thấy A: cơn sốt AI hạ nhiệt, hay B: chỉ là một cú rung?",
+   "loi_doc": "Nvidia mất hai mươi bảy phần trăm một tháng, anh chị thấy A: cơn sốt AI hạ nhiệt, hay B: chỉ là một cú rung?",
+   "anh": [
+    "computer chip||semiconductor"
+   ],
+   "the": {
+    "loai": "lon",
+    "tieu": "LO HAY CƠ HỘI?",
+    "dong": [
+     [
+      "A: SỐT AI HẠ NHIỆT",
+      80,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: CHỈ LÀ CÚ RUNG",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "MẤT 27% MỘT THÁNG",
+    "loi": "Cổ phiếu được nhắc nhiều nhất thời AI, Nvidia, riêng tháng 11 đã mất 27% giá trị.",
+    "loi_doc": "Cổ phiếu được nhắc nhiều nhất thời AI, Nvidia, riêng tháng mười một đã mất hai mươi bảy phần trăm giá trị.",
+    "anh": [
+     "computer chip||semiconductor wafer"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "NVIDIA · THÁNG 11/2026",
+     "dong": [
+      [
+       "−27%",
+       150,
+       "do"
+      ],
+      [
+       "RIÊNG THÁNG 11",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "MoneyHub 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "BỊ ĐƯA VÀO DIỆN THEO DÕI",
+    "loi": "S&P Global đưa Nvidia vào diện theo dõi tín nhiệm tiêu cực, lý do rủi ro quản lý và quản trị sau việc CEO rời đi rồi được khôi phục chức vụ ngày 23/11.",
+    "loi_doc": "S and P Global đưa Nvidia vào diện theo dõi tín nhiệm tiêu cực, lý do rủi ro quản lý và quản trị sau việc CEO rời đi rồi được khôi phục chức vụ ngày hai mươi ba tháng mười một.",
+    "anh": [
+     "credit rating report||financial documents"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "S&P GLOBAL",
+     "dong": [
+      [
+       "THEO DÕI",
+       100,
+       "vang"
+      ],
+      [
+       "TÍN NHIỆM TIÊU CỰC",
+       60,
+       "do"
+      ]
+     ],
+     "nguon": "MoneyHub 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "LẠM PHÁT 3,8%",
+    "loi": "Cùng lúc, lạm phát PCE tháng 10 của Mỹ tăng 3,8%, cao nhất khoảng 3 năm, khiến tiền rút bớt khỏi nhóm AI và bán dẫn.",
+    "loi_doc": "Cùng lúc, lạm phát P C E tháng mười của Mỹ tăng ba phẩy tám phần trăm, cao nhất khoảng ba năm, khiến tiền rút bớt khỏi nhóm AI và bán dẫn.",
+    "anh": [
+     "stock market screen||stock ticker"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "PCE MỸ THÁNG 10",
+     "dong": [
+      [
+       "3,8%",
+       140,
+       "do"
+      ],
+      [
+       "CAO NHẤT KHOẢNG 3 NĂM",
+       52,
+       "trang"
+      ]
+     ],
+     "nguon": "MoneyHub 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "BÀI HỌC TỶ TRỌNG",
+    "loi": "Cổ phiếu lớn cỡ nào cũng có thể mất một phần tư trong một tháng. Vì vậy tỷ trọng mỗi mã trong danh mục mới là thứ giữ mình an toàn.",
+    "loi_doc": "Cổ phiếu lớn cỡ nào cũng có thể mất một phần tư trong một tháng. Vì vậy tỷ trọng mỗi mã trong danh mục mới là thứ giữ mình an toàn.",
+    "anh": [
+     "investment portfolio chart||pie chart"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "MỘT THÁNG",
+     "dong": [
+      [
+       "MẤT 1/4",
+       120,
+       "do"
+      ],
+      [
+       "DÙ LÀ CỔ PHIẾU LỚN",
+       52,
+       "trang"
+      ]
+     ]
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · ĐẤT · CHỨNG KHOÁN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2811SCIC",
+  "tieu_de": "SCIC thoái vốn hơn 1.000 doanh nghiệp, thu về 56.000 tỷ đồng, gấp 4,1 lần vốn bỏ ra",
+  "hook": [
+   "THU 56.000 TỶ",
+   "GẤP 4,1 LẦN VỐN?"
+  ],
+  "nhan": "TIN NÓNG · 28/11/2026",
+  "short_caption": "Theo MoneyHub 27/11/2026: SCIC cho biết đã thoái vốn tại hơn 1.000 doanh nghiệp, thu về 56.000 tỷ đồng, gấp 4,1 lần vốn đầu tư; thời gian tới sẽ dồn lực vào các doanh nghiệp quy mô lớn.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "BÁN NHANH HAY GIỮ?",
+   "loi": "Vốn nhà nước ở doanh nghiệp, anh chị muốn A: thoái nhanh hơn nữa, hay B: giữ lại doanh nghiệp lớn?",
+   "loi_doc": "Vốn nhà nước ở doanh nghiệp, anh chị muốn A: thoái nhanh hơn nữa, hay B: giữ lại doanh nghiệp lớn?",
+   "anh": [
+    "office building||business district"
+   ],
+   "the": {
+    "loai": "lon",
+    "tieu": "BÁN NHANH HAY GIỮ?",
+    "dong": [
+     [
+      "A: THOÁI NHANH",
+      80,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: GIỮ DN LỚN",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "HƠN 1.000 DOANH NGHIỆP",
+    "loi": "Tổng công ty Đầu tư và Kinh doanh vốn nhà nước, SCIC, cho biết đã thoái vốn tại hơn 1.000 doanh nghiệp.",
+    "loi_doc": "Tổng công ty Đầu tư và Kinh doanh vốn nhà nước, S C I C, cho biết đã thoái vốn tại hơn một nghìn doanh nghiệp.",
+    "anh": [
+     "office building||business district"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "SCIC ĐÃ THOÁI VỐN",
+     "dong": [
+      [
+       "1.000+",
+       140,
+       "vang"
+      ],
+      [
+       "DOANH NGHIỆP",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "MoneyHub 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "56.000 TỶ",
+    "loi": "Số tiền thu về là 56.000 tỷ đồng, gấp 4,1 lần vốn đầu tư. Em tự tính ngược lại, vốn bỏ ra khoảng 13.700 tỷ.",
+    "loi_doc": "Số tiền thu về là năm mươi sáu nghìn tỷ đồng, gấp bốn phẩy một lần vốn đầu tư. Em tự tính ngược lại, vốn bỏ ra khoảng mười ba nghìn bảy trăm tỷ.",
+    "anh": [
+     "money counting||banknotes"
+    ],
+    "the": {
+     "loai": "cot",
+     "tieu": "TỶ ĐỒNG",
+     "hang": [
+      [
+       "VỐN (EM TỰ TÍNH)",
+       13700
+      ],
+      [
+       "THU VỀ",
+       56000
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 60000,
+     "nd": 0,
+     "nguon": "MoneyHub 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "DỒN LỰC DN LỚN",
+    "loi": "Thời gian tới, SCIC sẽ dồn lực vào các doanh nghiệp quy mô lớn. Mỗi đợt thoái vốn trên sàn là lúc nhà đầu tư nhỏ cũng có thể đặt mua cổ phần.",
+    "loi_doc": "Thời gian tới, S C I C sẽ dồn lực vào các doanh nghiệp quy mô lớn. Mỗi đợt thoái vốn trên sàn là lúc nhà đầu tư nhỏ cũng có thể đặt mua cổ phần.",
+    "anh": [
+     "stock exchange trading board||stock market screen"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "KẾ HOẠCH TỚI",
+     "dong": [
+      [
+       "DOANH NGHIỆP",
+       80,
+       "vang"
+      ],
+      [
+       "QUY MÔ LỚN",
+       80,
+       "trang"
+      ]
+     ],
+     "nguon": "MoneyHub 27/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · ĐẤT · CHỨNG KHOÁN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2811AMY",
+  "tieu_de": "Vừa lên sàn HOSE ngày 20/11, Công nghiệp Á Mỹ chi hơn 321 tỷ tạm ứng cổ tức: đợt IPO huy động 787 tỷ",
+  "hook": [
+   "IPO 787 TỶ",
+   "CHIA NGAY 321 TỶ?"
+  ],
+  "nhan": "TIN NÓNG · 28/11/2026",
+  "short_caption": "Theo MoneyHub 27/11/2026: Công nghiệp Á Mỹ (AMY) sắp chi hơn 321 tỷ đồng tạm ứng cổ tức năm 2026, khoảng một tuần sau khi cổ phiếu giao dịch trên HOSE từ 20/11; đợt IPO kết thúc tháng 9 bán hết 16,1 triệu cổ phiếu, huy động 787 tỷ đồng.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "HÀO PHÓNG HAY LẠ?",
+   "loi": "Vừa IPO đã chia cổ tức lớn, anh chị thấy A: doanh nghiệp hào phóng, hay B: hơi lạ cần xem kỹ?",
+   "loi_doc": "Vừa I P O đã chia cổ tức lớn, anh chị thấy A: doanh nghiệp hào phóng, hay B: hơi lạ cần xem kỹ?",
+   "anh": [
+    "stock exchange||trading screen"
+   ],
+   "the": {
+    "loai": "lon",
+    "tieu": "HÀO PHÓNG HAY LẠ?",
+    "dong": [
+     [
+      "A: HÀO PHÓNG",
+      80,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: CẦN XEM KỸ",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "LÊN SÀN 20/11",
+    "loi": "Công nghiệp Á Mỹ, mã AMY, chính thức giao dịch trên HOSE từ ngày 20/11.",
+    "loi_doc": "Công nghiệp Á Mỹ, mã A M Y, chính thức giao dịch trên HOSE từ ngày hai mươi tháng mười một.",
+    "anh": [
+     "stock exchange trading board||stock market screen"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "AMY LÊN SÀN HOSE",
+     "dong": [
+      [
+       "20/11/2026",
+       110,
+       "vang"
+      ],
+      [
+       "NGÀY GIAO DỊCH ĐẦU",
+       52,
+       "trang"
+      ]
+     ],
+     "nguon": "MoneyHub 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "IPO 787 TỶ",
+    "loi": "Đợt IPO kết thúc tháng 9 bán hết 16,1 triệu cổ phiếu, huy động 787 tỷ đồng.",
+    "loi_doc": "Đợt I P O kết thúc tháng chín bán hết mười sáu phẩy một triệu cổ phiếu, huy động bảy trăm tám mươi bảy tỷ đồng.",
+    "anh": [
+     "steel factory||industrial plant"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "ĐỢT IPO THÁNG 9/2026",
+     "dong": [
+      [
+       "787 TỶ",
+       130,
+       "vang"
+      ],
+      [
+       "16,1 TRIỆU CỔ PHIẾU",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "MoneyHub 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "CHIA 321 TỶ",
+    "loi": "Chỉ khoảng một tuần sau khi lên sàn, công ty sắp chi hơn 321 tỷ tạm ứng cổ tức. Em tự tính, bằng khoảng 41% số tiền vừa huy động.",
+    "loi_doc": "Chỉ khoảng một tuần sau khi lên sàn, công ty sắp chi hơn ba trăm hai mươi mốt tỷ tạm ứng cổ tức. Em tự tính, bằng khoảng bốn mươi mốt phần trăm số tiền vừa huy động.",
+    "anh": [
+     "money counting||banknotes"
+    ],
+    "the": {
+     "loai": "cot",
+     "tieu": "TỶ ĐỒNG",
+     "hang": [
+      [
+       "IPO HUY ĐỘNG",
+       787
+      ],
+      [
+       "TẠM ỨNG CỔ TỨC",
+       321
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 900,
+     "nd": 0,
+     "nguon": "MoneyHub 27/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · ĐẤT · CHỨNG KHOÁN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2811CLM",
+  "tieu_de": "Coalimex thưởng cổ phiếu gần 170%, cổ tức tiền mặt hơn 254%: cổ phiếu CLM lập đỉnh lịch sử 83.400 đồng",
+  "hook": [
+   "CỔ TỨC 254%",
+   "THƯỞNG THÊM 170%?"
+  ],
+  "nhan": "TIN NÓNG · 28/11/2026",
+  "short_caption": "Theo MoneyHub 27/11/2026: cổ đông Coalimex (CLM) thông qua phát hành hơn 24,5 triệu cổ phiếu thưởng tỷ lệ gần 170%, nâng vốn từ gần 145 tỷ lên hơn 390 tỷ đồng, chia cổ tức tiền mặt tỷ lệ hơn 254%; sáng 26/11 CLM tăng 9,7% lên 83.400 đồng, đỉnh lịch sử.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "CHIA THẬT HAY SÓNG?",
+   "loi": "Cổ tức 254% cộng thưởng 170%, anh chị thấy A: doanh nghiệp chia thật lòng, hay B: dễ thành sóng ngắn?",
+   "loi_doc": "Cổ tức hai trăm năm mươi tư phần trăm cộng thưởng một trăm bảy mươi phần trăm, anh chị thấy A: doanh nghiệp chia thật lòng, hay B: dễ thành sóng ngắn?",
+   "anh": [
+    "coal mine||coal"
+   ],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHIA THẬT HAY SÓNG?",
+    "dong": [
+     [
+      "A: CHIA THẬT LÒNG",
+      80,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: SÓNG NGẮN",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "THƯỞNG GẦN 170%",
+    "loi": "Cổ đông Coalimex, mã CLM, vừa thông qua phát hành hơn 24,5 triệu cổ phiếu thưởng, tỷ lệ gần 170%. Vốn điều lệ từ gần 145 tỷ lên hơn 390 tỷ.",
+    "loi_doc": "Cổ đông Coalimex, mã C L M, vừa thông qua phát hành hơn hai mươi tư phẩy năm triệu cổ phiếu thưởng, tỷ lệ gần một trăm bảy mươi phần trăm. Vốn điều lệ từ gần một trăm bốn mươi lăm tỷ lên hơn ba trăm chín mươi tỷ.",
+    "anh": [
+     "coal||coal mine"
+    ],
+    "the": {
+     "loai": "cot",
+     "tieu": "VỐN ĐIỀU LỆ CLM · TỶ ĐỒNG",
+     "hang": [
+      [
+       "TRƯỚC",
+       145
+      ],
+      [
+       "SAU THƯỞNG",
+       390
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 420,
+     "nd": 0,
+     "nguon": "MoneyHub 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "CỔ TỨC TIỀN 254%",
+    "loi": "Kèm theo là cổ tức tiền mặt tỷ lệ hơn 254%. Em tính theo mệnh giá 10.000 đồng, mỗi cổ phiếu khoảng 25.400 đồng, 1.000 cổ phiếu nhận khoảng 25,4 triệu.",
+    "loi_doc": "Kèm theo là cổ tức tiền mặt tỷ lệ hơn hai trăm năm mươi tư phần trăm. Em tính theo mệnh giá mười nghìn đồng, mỗi cổ phiếu khoảng hai mươi lăm nghìn bốn trăm đồng, một nghìn cổ phiếu nhận khoảng hai mươi lăm phẩy bốn triệu.",
+    "anh": [
+     "money banknotes||cash"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "CỔ TỨC TIỀN MẶT CLM",
+     "dong": [
+      [
+       "254%",
+       140,
+       "vang"
+      ],
+      [
+       "1.000 CP: 25,4 TRIỆU",
+       52,
+       "trang"
+      ]
+     ],
+     "nguon": "MoneyHub 27/11/2026 · em tính theo mệnh giá"
+    }
+   },
+   {
+    "chu_to": "ĐỈNH LỊCH SỬ",
+    "loi": "Sáng 26/11, cổ phiếu CLM tăng 9,7% lên 83.400 đồng, lập đỉnh lịch sử.",
+    "loi_doc": "Sáng hai mươi sáu tháng mười một, cổ phiếu C L M tăng chín phẩy bảy phần trăm lên tám mươi ba nghìn bốn trăm đồng, lập đỉnh lịch sử.",
+    "anh": [
+     "stock market screen green||stock ticker"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "CLM SÁNG 26/11/2026",
+     "dong": [
+      [
+       "83.400Đ",
+       120,
+       "vang"
+      ],
+      [
+       "+9,7% · ĐỈNH LỊCH SỬ",
+       52,
+       "trang"
+      ]
+     ],
+     "nguon": "MoneyHub 27/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · ĐẤT · CHỨNG KHOÁN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2811BAC",
+  "tieu_de": "Bạc bật tăng 6,32% chỉ trong phiên 27/11, bạch kim tăng 3,95%: kim loại quý đồng loạt hồi",
+  "hook": [
+   "BẠC TĂNG 6,32%",
+   "TRONG 1 PHIÊN?"
+  ],
+  "nhan": "TIN NÓNG · 28/11/2026",
+  "short_caption": "Theo Markettimes 28/11/2026: phiên 27/11 bạc tăng 2,60 USD/ounce (6,32%), bạch kim tăng 51,37 USD/ounce (3,95%); vàng giao ngay tăng 2,1%, tuần tăng đầu tiên sau hai tuần giảm.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "BẠC HAY VÀNG?",
+   "loi": "Giữ một món kim loại quý, anh chị chọn A: vàng cho chắc, hay B: bạc vì giá rẻ hơn?",
+   "loi_doc": "Giữ một món kim loại quý, anh chị chọn A: vàng cho chắc, hay B: bạc vì giá rẻ hơn?",
+   "anh": [
+    "silver bars||silver bullion"
+   ],
+   "the": {
+    "loai": "lon",
+    "tieu": "BẠC HAY VÀNG?",
+    "dong": [
+     [
+      "A: VÀNG CHO CHẮC",
+      80,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: BẠC RẺ HƠN",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "BẠC +6,32%",
+    "loi": "Phiên 27/11, bạc tăng 2,6 đô một ounce, tương đương 6,32% chỉ trong một phiên.",
+    "loi_doc": "Phiên hai mươi bảy tháng mười một, bạc tăng hai phẩy sáu đô một ounce, tương đương sáu phẩy ba hai phần trăm chỉ trong một phiên.",
+    "anh": [
+     "silver bars||silver bullion"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "BẠC · PHIÊN 27/11/2026",
+     "dong": [
+      [
+       "+6,32%",
+       140,
+       "vang"
+      ],
+      [
+       "+2,60 USD/OUNCE",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "Markettimes 28/11/2026"
+    }
+   },
+   {
+    "chu_to": "BẠCH KIM +3,95%",
+    "loi": "Bạch kim cũng tăng 51,37 đô, tương đương 3,95%. Vàng tăng 2,1%, tuần tăng đầu tiên sau hai tuần giảm liên tiếp.",
+    "loi_doc": "Bạch kim cũng tăng năm mươi mốt phẩy ba bảy đô, tương đương ba phẩy chín năm phần trăm. Vàng tăng hai phẩy một phần trăm, tuần tăng đầu tiên sau hai tuần giảm liên tiếp.",
+    "anh": [
+     "platinum||precious metals"
+    ],
+    "the": {
+     "loai": "cot",
+     "tieu": "MỨC TĂNG PHIÊN 27/11 · %",
+     "hang": [
+      [
+       "VÀNG",
+       2.1
+      ],
+      [
+       "BẠCH KIM",
+       3.95
+      ],
+      [
+       "BẠC",
+       6.32
+      ]
+     ],
+     "noi": [
+      2
+     ],
+     "dv": "%",
+     "max": 7,
+     "nd": 2,
+     "nguon": "Markettimes 28/11/2026"
+    }
+   },
+   {
+    "chu_to": "VÌ SAO HỒI?",
+    "loi": "Động lực chủ yếu là lực mua bắt đáy, khi thị trường ổn định lại sau đợt bán tháo trên Phố Wall. Nhưng thanh khoản kỳ nghỉ lễ ở Mỹ thấp, nên đà hồi cần nhìn thận trọng.",
+    "loi_doc": "Động lực chủ yếu là lực mua bắt đáy, khi thị trường ổn định lại sau đợt bán tháo trên Phố Wall. Nhưng thanh khoản kỳ nghỉ lễ ở Mỹ thấp, nên đà hồi cần nhìn thận trọng.",
+    "anh": [
+     "wall street||stock exchange"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "KỲ NGHỈ LỄ Ở MỸ",
+     "dong": [
+      [
+       "THANH KHOẢN",
+       90,
+       "vang"
+      ],
+      [
+       "THẤP",
+       90,
+       "do"
+      ]
+     ],
+     "nguon": "Markettimes 28/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · ĐẤT · CHỨNG KHOÁN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2811KIMLIEN",
+  "tieu_de": "Chủ khách sạn Kim Liên bất ngờ dừng bán hơn 493 triệu cổ phiếu, chỉ 4 ngày sau khi cổ đông thông qua: dự án tháp đôi 99 tầng vốn 48.570 tỷ",
+  "hook": [
+   "493 TRIỆU CỔ PHIẾU",
+   "DỪNG SAU 4 NGÀY?"
+  ],
+  "nhan": "TIN NÓNG · 28/11/2026",
+  "short_caption": "Theo Vietstock 27/11/2026: chủ khách sạn Kim Liên dừng phương án bán hơn 493 triệu cổ phiếu huy động vốn, chỉ 4 ngày sau khi cổ đông thông qua; dự án Hanoi Twin Towers 99 tầng có tổng vốn dự kiến 48.570 tỷ đồng.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "TÍNH LẠI HAY KẸT?",
+   "loi": "Dừng bán cổ phiếu sau 4 ngày, anh chị nghĩ A: chỉ là tính lại thủ tục, hay B: khó huy động vốn?",
+   "loi_doc": "Dừng bán cổ phiếu sau bốn ngày, anh chị nghĩ A: chỉ là tính lại thủ tục, hay B: khó huy động vốn?",
+   "anh": [
+    "skyscraper construction||tower crane"
+   ],
+   "the": {
+    "loai": "lon",
+    "tieu": "TÍNH LẠI HAY KẸT?",
+    "dong": [
+     [
+      "A: TÍNH LẠI",
+      80,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: KHÓ HUY ĐỘNG",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "THÁP ĐÔI 99 TẦNG",
+    "loi": "Trên khu đất khách sạn Kim Liên ở Hà Nội, dự án tháp đôi 99 tầng có tổng vốn dự kiến 48.570 tỷ đồng.",
+    "loi_doc": "Trên khu đất khách sạn Kim Liên ở Hà Nội, dự án tháp đôi chín mươi chín tầng có tổng vốn dự kiến bốn mươi tám nghìn năm trăm bảy mươi tỷ đồng.",
+    "anh": [
+     "skyscraper||twin towers"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "HANOI TWIN TOWERS 99",
+     "dong": [
+      [
+       "48.570 TỶ",
+       120,
+       "vang"
+      ],
+      [
+       "VỐN DỰ KIẾN",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "Vietstock 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "493 TRIỆU CỔ PHIẾU",
+    "loi": "Để có tiền, công ty định bán hơn 493 triệu cổ phiếu và cổ đông đã thông qua.",
+    "loi_doc": "Để có tiền, công ty định bán hơn bốn trăm chín mươi ba triệu cổ phiếu và cổ đông đã thông qua.",
+    "anh": [
+     "shareholders meeting||conference room"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "PHƯƠNG ÁN HUY ĐỘNG",
+     "dong": [
+      [
+       "493 TRIỆU",
+       120,
+       "vang"
+      ],
+      [
+       "CỔ PHIẾU",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "Vietstock 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "DỪNG SAU 4 NGÀY",
+    "loi": "Khoan, chỉ 4 ngày sau công ty bất ngờ dừng phương án, trong lúc vẫn đang hoàn thiện thủ tục pháp lý cho dự án.",
+    "loi_doc": "Khoan, chỉ bốn ngày sau công ty bất ngờ dừng phương án, trong lúc vẫn đang hoàn thiện thủ tục pháp lý cho dự án.",
+    "anh": [
+     "legal documents||signing papers"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "SAU KHI CỔ ĐÔNG THÔNG QUA",
+     "dong": [
+      [
+       "4 NGÀY",
+       130,
+       "do"
+      ],
+      [
+       "DỪNG BÁN",
+       60,
+       "trang"
+      ]
+     ],
+     "nguon": "Vietstock 27/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · ĐẤT · CHỨNG KHOÁN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ }
+]

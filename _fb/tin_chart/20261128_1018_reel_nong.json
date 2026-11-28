@@ -1,0 +1,129 @@
+[
+ {
+  "ra": "_fb/tin_chart/out/SN2811VANG39.jpg",
+  "ten": "Vàng miếng SJC so với thế giới",
+  "sym": "Triệu đồng/lượng · sáng 28/11/2026",
+  "gia": "136 triệu",
+  "doi": "đắt hơn thế giới 21 triệu",
+  "mau_doi": "do",
+  "st": [
+   [
+    "Vàng TG so đỉnh T1",
+    "−39%"
+   ],
+   [
+    "TQ mua tháng 10",
+    "26 tấn"
+   ],
+   [
+    "Liên tiếp",
+    "24 tháng"
+   ]
+  ],
+  "hook1": "Vàng thế giới mất 39% từ đỉnh.",
+  "hook2": "Trung Quốc vẫn gom 26 tấn???",
+  "loai": "cot",
+  "cot": [
+   [
+    "Thế giới quy đổi",
+    115,
+    "gần 115"
+   ],
+   [
+    "SJC bán ra",
+    136,
+    "136"
+   ]
+  ],
+  "noi": [
+   1
+  ],
+  "chenh": "Chênh 21 triệu/lượng",
+  "nguon": "Nguồn: Phụ Nữ & Gia Đình 28/11/2026 · TG&VN 28/11/2026"
+ },
+ {
+  "ra": "_fb/tin_chart/out/SN2811NOXH.jpg",
+  "ten": "Suất nhà ở xã hội giả",
+  "sym": "Triệu đồng/suất · Công an TPHCM 25/11/2026",
+  "gia": "150 tỷ",
+  "doi": "hơn 600 người mất tiền",
+  "mau_doi": "do",
+  "st": [
+   [
+    "Suất rao bán",
+    "hơn 600"
+   ],
+   [
+    "Bị khởi tố",
+    "37 người"
+   ],
+   [
+    "Làm giả",
+    "con dấu Sở XD"
+   ]
+  ],
+  "hook1": "Nộp 900 triệu mua suất ngoại giao.",
+  "hook2": "Chủ đầu tư hóa ra là giả???",
+  "loai": "cot",
+  "cot": [
+   [
+    "Phí thấp nhất",
+    150,
+    "150 tr"
+   ],
+   [
+    "Phí cao nhất",
+    900,
+    "900 tr"
+   ]
+  ],
+  "noi": [
+   1
+  ],
+  "chenh": "Gọi là \"phí mua suất\"",
+  "nguon": "Nguồn: SGGP 25/11/2026"
+ },
+ {
+  "ra": "_fb/tin_chart/out/SN2811METRO.jpg",
+  "ten": "5 tuyến metro Hà Nội",
+  "sym": "Tỷ đồng · số 1, 2, 8, 10, 14",
+  "gia": "184.000 tỷ",
+  "doi": "Hà Nội ưu tiên bố trí",
+  "mau_doi": "do",
+  "st": [
+   [
+    "TW hỗ trợ đường sắt ĐT",
+    "85.000 tỷ"
+   ],
+   [
+    "Riêng 5 tuyến",
+    "60.000 tỷ"
+   ],
+   [
+    "Giai đoạn",
+    "2026–2030"
+   ]
+  ],
+  "hook1": "Hà Nội bố trí 184 nghìn tỷ cho metro.",
+  "hook2": "Trung ương chỉ hỗ trợ 60.000 tỷ???",
+  "loai": "cot",
+  "cot": [
+   [
+    "Trung ương hỗ trợ",
+    60000,
+    "60.000"
+   ],
+   [
+    "Hà Nội bố trí",
+    184000,
+    "184.000"
+   ]
+  ],
+  "noi": [
+   1
+  ],
+  "chenh": "Phần thiếu: trái phiếu địa phương?",
+  "nguon": "Nguồn: MoneyHub 27/11/2026 · TBTC VN 17/11/2026",
+  "co1": 31
+ }
+]

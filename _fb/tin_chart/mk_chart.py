@@ -55,6 +55,15 @@ def ve(c):
         for sp in ax2.spines.values(): sp.set_visible(False)
         ax.yaxis.tick_right(); ax.set_zorder(ax2.get_zorder() + 1); ax.patch.set_visible(False)
         ax.axhline(cs[-1], color='#6a2d86', lw=1, ls=':', alpha=.6)
+    elif c['loai'] == 'cot':  # 28/11: so 2–3 con số thật – cot: [[nhãn, giá trị, chữ trên cột], ...], noi: [chỉ số tô đỏ], chenh: chữ nhãn chênh
+        hs = c['cot']; xs = list(range(len(hs)))
+        cls = [DN if i in c.get('noi', [len(hs) - 1]) else '#3b4cc0' for i in xs]
+        ax.bar(xs, [h[1] for h in hs], color=cls, width=.55, zorder=3)
+        for i, h in enumerate(hs):
+            ax.text(i, h[1], h[2] if len(h) > 2 else str(h[1]), ha='center', va='bottom', fontsize=30, fontweight='black', color=cls[i])
+        ax.set_xticks(xs); ax.set_xticklabels([h[0] for h in hs], fontsize=19, fontweight='bold', color=INK)
+        lo, hi = 0, max(h[1] for h in hs) * 1.42
+        if c.get('chenh'): ax.text(.5, .98, c['chenh'], transform=ax.transAxes, ha='center', va='top', fontsize=24, fontweight='black', color='white', bbox=dict(boxstyle='round,pad=0.4', fc=INK, ec='none'))
     else:
         lo, hi = 1e18, -1e18
         for s in c['series']:
@@ -64,17 +73,19 @@ def ve(c):
             lo, hi = min(lo, min(ys)), max(hi, max(ys))
         if any(s.get('ten') for s in c['series']): ax.legend(loc='upper left', fontsize=15, frameon=False)
     for m in c.get('muc', []): lo, hi = min(lo, m['g']), max(hi, m['g'])
-    pad = (hi - lo) * c.get('dem', .18); ax.set_ylim(lo - pad, hi + pad)
+    if c['loai'] == 'cot': ax.set_ylim(0, hi); ax.set_yticks([])
+    else: pad = (hi - lo) * c.get('dem', .18); ax.set_ylim(lo - pad, hi + pad)
     for v in c.get('vung', []):
         ax.axhspan(v['duoi'], v['tren'], color=v.get('mau', '#c43c32'), alpha=.10, lw=0)
         ax.text(.02 if v.get('trai') else .97, v['tren'], v['chu'], transform=ax.get_yaxis_transform(), ha='left' if v.get('trai') else 'right', va='bottom', fontsize=15, fontweight='semibold', color=v.get('mau_chu', '#7a2620'))
     for m in c.get('muc', []):
         ax.axhline(m['g'], color='#8a8496', lw=1.2, ls=(0, (5, 4)))
         ax.text(.99, m['g'], ' ' + m['chu'] + ' ', transform=ax.get_yaxis_transform(), ha='right', va='center', fontsize=14, color='white', bbox=dict(boxstyle='square,pad=0.2', fc='#5f5a69', ec='none'))
-    if c.get('truc_nam'): ax.xaxis.set_major_locator(md.YearLocator()); ax.xaxis.set_major_formatter(md.DateFormatter('%Y'))  # chuỗi nhiều năm (27/11)
+    if c['loai'] == 'cot': pass
+    elif c.get('truc_nam'): ax.xaxis.set_major_locator(md.YearLocator()); ax.xaxis.set_major_formatter(md.DateFormatter('%Y'))  # chuỗi nhiều năm (27/11)
     else: ax.xaxis.set_major_locator(md.MonthLocator()); ax.xaxis.set_major_formatter(md.DateFormatter('T%-m'))
     if c.get('y_cham'): ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: '{:,.0f}'.format(v).replace(',', '.')))
-    ax.tick_params(axis='x', labelsize=17, colors=INK)
+    if c['loai'] != 'cot': ax.tick_params(axis='x', labelsize=17, colors=INK)
     for d in c.get('diem', []):
         xx = D(d['t']); ax.scatter([xx], [d['g']], s=90, facecolor='white', edgecolor=INK, lw=2.4, zorder=8)
         ax.annotate(d['chu'], (xx, d['g']), xytext=(d.get('dx', 30), d.get('dy', 0)), textcoords='offset points',
