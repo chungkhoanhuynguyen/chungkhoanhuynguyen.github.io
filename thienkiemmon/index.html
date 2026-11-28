@@ -6702,6 +6702,14 @@ try{(function(){const N=24,pos=new Float32Array(N*2*3),al=new Float32Array(N*2);
   g.attributes.position.needsUpdate=true;g.attributes.al.needsUpdate=true}catch(e){}})();
 })()}catch(e){console.warn('trail',e)}
 
+/* ===== NHÃN ĐỒ RƠI KHÔNG CHỒNG (28/11): tên đồ / tinh hoa / linh thạch rơi gần nhau tự xếp tầng lên trên, không đè chữ; chỉ đọc vị trí đã tính sẵn, không đo lại bố cục mỗi khung ===== */
+try{(function(){const re=/translate\(([-\d.]+)px,\s*([-\d.]+)px\)/;
+ (function tk(){requestAnimationFrame(tk);try{const L=[];document.querySelectorAll('.glab,.dlab').forEach(el=>{if(el.style.display==='none')return;const t=el.style.transform,m=re.exec(t);if(!m)return;if(!el._w){el._w=el.offsetWidth||120;el._h=el.offsetHeight||22}L.push({el,x:+m[1],y:+m[2],w:el._w,h:el._h,t})});
+  if(L.length<2)return;L.sort((a,b)=>b.y-a.y);const placed=[];
+  for(const a of L){let y=a.y,moved=true,guard=0;while(moved&&guard++<12){moved=false;for(const b of placed){if(Math.abs(a.x-b.x)<(a.w+b.w)/2-4&&Math.abs(y-b.y)<(a.h+b.h)/2){y=b.y-(a.h+b.h)/2-2;moved=true}}}
+   if(y!==a.y)a.el.style.transform=a.t.replace(re,`translate(${a.x}px,${y.toFixed(1)}px)`);a.y=y;placed.push(a)}}catch(e){}})();
+})()}catch(e){}
+
 try{window.__enterBC=()=>{BC.day='';enterBC()};window.__bfJoin=sd=>bfJoin(sd||'tien');window.__BCo=BC;window.__BFo=BF}catch(e){}
 window.__wp={renderer,T,WEAPONS,fabaoModel,TIERS,FBE,RT,VB:()=>VB,hero:()=>hero,TD:{tdKiem,tdXuan,tdBang,tdAn,swordRain,phoenix,tornado,maVortex,dQi:()=>dragonE('qi'),dTh:()=>dragonE('thunder'),dFi:()=>dragonE('fire'),dBl:()=>dragonE('blood'),vortex:()=>{const T0=performance.now();maVortex();return performance.now()-T0},ice:()=>{const t=TU.tong,r=TU.realm,l=TU.learned;TU.tong='thuy';TU.realm=4;TU.learned=['Huyền Băng Trảm','Băng Phong Vạn Lý'];hero.mp=100;P.cds[1]=0;try{_useSkill(1+'')}finally{TU.tong=t;TU.realm=r;TU.learned=l}}},TU:()=>TU};setTimeout(()=>{if(typeof TKACCT!=='undefined')TKACCT.boot()},0);
 window.__demo={closeInv:()=>closeInv(),castAt:(id,x,z)=>{const h=heroPos(),o=h.clone(),f=hero.face;h.x=x;h.z=z;hero.face=Math.random()*6.28;try{castCP(id,true)}catch(e){}h.copy(o);hero.face=f},BF,bfJoin,bfBuild,allEnts:()=>ents,ICL:()=>ICL,equipWeapon:(a,b)=>equipWeapon(a,b),wearBest,equip:i=>{equip.silent=1;try{equip(i)}finally{equip.silent=0}},heroPos,TRIB:()=>TRIB,addCorpse,deathDrop,ents:()=>ents,foe:e=>foe(e),castCP,CP,mkBook,learnBook,P2P,NET,itemCard,optHTML,onHunt,rankTick,RANK,WFALL,castFX,VILLC:()=>window.__vc,tribGo,tribReady,needXp,bankPanel,CG,titles,leaveBC,zoneStream,ZPOP,GANGS,PARTY,ptInvite,hit,NET,netUpd,CORPSE,goInt,toggleFly,updFabao,GARR,WFIX,spawnMon,EV,EVT,npcAct,openInv,SQUADS:()=>SQUADS,CIT:()=>CIT,MUS,PK,togglePK,callReinf,maAct,gainXp,realmText,updPK,INV,BC,mkItem,dropItem,enterBC,TU,refreshTL,bloom:()=>bloom,LOOK,buildAvatar,setSW:(a,b,c)=>{hero.vw&&hero.vw.rotation.set(a,b,c)},hero,P,useSkill,ents,setView:(y,p,d)=>{yaw=y;pitch=p;dist=d}};
