@@ -6715,7 +6715,12 @@ try{(function(){const N=24,pos=new Float32Array(N*2*3),al=new Float32Array(N*2);
 
 /* ===== NHÃN ĐỒ RƠI KHÔNG CHỒNG (28/11): tên đồ / tinh hoa / linh thạch rơi gần nhau tự xếp tầng lên trên, không đè chữ; chỉ đọc vị trí đã tính sẵn, không đo lại bố cục mỗi khung ===== */
 try{(function(){const re=/translate\(([-\d.]+)px,\s*([-\d.]+)px\)/;
- (function tk(){requestAnimationFrame(tk);try{const L=[];document.querySelectorAll('.glab,.dlab').forEach(el=>{if(el.style.display==='none')return;const t=el.style.transform,m=re.exec(t);if(!m)return;if(!el._w){el._w=el.offsetWidth||120;el._h=el.offsetHeight||22}L.push({el,x:+m[1],y:+m[2],w:el._w,h:el._h,t})});
+ (function tk(){requestAnimationFrame(tk);try{const L=[];
+ /* 28/11: chữ đồ rơi nhỏ dần theo khoảng cách tới camera (gần 100% máy tính / 82% điện thoại, xa còn 45%) và mờ dần — đỡ che màn hình */
+ const D=new Map(),cp=camera.position;try{(typeof ground!=='undefined'?ground:[]).forEach(g=>{if(g.lab&&g.m)D.set(g.lab,g.m.position.distanceTo(cp))});(typeof drops!=='undefined'?drops:[]).forEach(d=>{if(d.lab&&d.m)D.set(d.lab,d.m.position.distanceTo(cp))})}catch(e){}
+ document.querySelectorAll('.glab,.dlab').forEach(el=>{if(el.style.display==='none')return;let t=el.style.transform,m=re.exec(t);if(!m)return;if(!el._w){el._w=el.offsetWidth||120;el._h=el.offsetHeight||22}
+  const dd=D.get(el);let sc=1;if(dd!=null){sc=Math.max(.45,Math.min(LITE?.82:1,(LITE?.95:1.12)-(dd-10)/45));if(!/scale\(/.test(t)){t+=` scale(${sc.toFixed(2)})`;el.style.transform=t;el.style.transformOrigin='50% 100%'}el.style.opacity=(sc<.62?.75:1)}
+  L.push({el,x:+m[1],y:+m[2],w:el._w*sc,h:el._h*sc,t})});
   if(L.length<2)return;L.sort((a,b)=>b.y-a.y);const placed=[];
   for(const a of L){let y=a.y,moved=true,guard=0;while(moved&&guard++<12){moved=false;for(const b of placed){if(Math.abs(a.x-b.x)<(a.w+b.w)/2-4&&Math.abs(y-b.y)<(a.h+b.h)/2){y=b.y-(a.h+b.h)/2-2;moved=true}}}
    if(y!==a.y)a.el.style.transform=a.t.replace(re,`translate(${a.x}px,${y.toFixed(1)}px)`);a.y=y;placed.push(a)}}catch(e){}})();
