@@ -6479,7 +6479,7 @@ try{(function(){if(/nolo/.test(location.search))return;
  const _ug=uniformGuard;uniformGuard=function(e,rk=0){const r=_ug.apply(this,arguments);try{const C=['#7a1e14','#c8ccd8','#1a1a22','#4a2a7a'][rk]||'#7a1e14';e.av.root.traverse(o=>{if(o.isMesh)[].concat(o.material).forEach(m=>{const U=m.userData&&m.userData.U;if(U){U.uC.value.set(C);U.uCA.value=.9;U.uH.value.set('#1b1b22');U.uHA.value=.9}})})}catch(_){}return r};
  window.__atlasMat=atlasMat})()}catch(e){console.warn('nguoi 1 net',e)}
 /* ===== CẢNH 1 NÉT (28/11): mọi vật tĩnh (nhà, tường, đá, cây, đèn, sạp, cột…) trong mỗi ô 64 m gộp thành 1 lưới; ảnh của mọi vật liệu dồn vào 1 mảng ảnh → cả ô chỉ 1 lần vẽ (thêm 1 cho vật 2 mặt như lá cây). Vật gốc chuyển sang lớp ẩn (vẫn va chạm, vẫn tính bóng đổ qua bản gộp); vật nào bị hệ thống khác ẩn/hiện lại thì bản gộp tự bỏ/thêm theo. Tắt bằng ?nobake ===== */
-try{(function(){if(/nobake/.test(location.search))return;
+try{(function(){if(/nobake/.test(location.search))return;if(LITE&&!/[?&]bake/.test(location.search))return;/* 28/11: điện thoại tắt gộp cảnh — lúc đi sang vùng mới máy phải dựng lại ô + chép ảnh → khựng và cây hiện trắng loang */
  const R=renderer;if(!R.capabilities.isWebGL2)return;
  const CELL=64,HID=29,SZ=256,MAXL=64;/* 28/11: điện thoại 128 → 256 cho khỏi mờ */
  const DEFOBC=T.Material.prototype.onBeforeCompile,DEFKEY=T.Material.prototype.customProgramCacheKey;
@@ -6659,6 +6659,23 @@ try{(function(){const st=document.createElement('style');st.id='inkui';st.textCo
 #cpbar button{background:radial-gradient(circle at 42% 36%,#f6efdf 0,#e4d6b6 58%,#c2ad80 100%)!important;color:#1c1915!important;border:2px solid #1c1915!important;box-shadow:0 0 0 2px var(--c),0 0 8px rgba(15,13,10,.5),inset 0 0 8px rgba(70,50,20,.35)!important;text-shadow:none!important}
 #mm canvas{border:3px solid #1d1a16!important;box-shadow:0 0 0 2px rgba(240,232,214,.75),0 0 10px rgba(0,0,0,.55)!important;filter:sepia(.5) saturate(.65) contrast(1.06) brightness(1.04)}
 `;document.head.appendChild(st)})()}catch(e){}
+
+/* ===== BOT GẦN GŨI (28/11): tu sĩ ảo để ý tới mình như người thật — đứng gần thì quay sang bắt chuyện gọi đúng tên (rủ tổ đội, hỏi đường, khen vũ khí, xin đồ, kể chuyện bãi), mình lên cấp/độ kiếp thì chúc mừng, mình chết thì có đứa "rip", đứa cười; nói chậm, tiếng lóng, ít dấu câu; tối đa 1 câu / 25–60 giây để khỏi spam ===== */
+try{(function(){let next=performance.now()+20000,lastLv=null,wasDead=false;
+ const P=a=>a[Math.floor(Math.random()*a.length)];
+ function nearBots(r){try{const hp=heroPos();return ents.filter(e=>e&&e.team==='bot'&&!e.dead&&e.name&&e.lab&&!e.guard&&e.c&&e.c.g.position.distanceTo(hp)<r)}catch(e){return[]}}
+ function say(b,txt){try{const hp=heroPos(),p=b.c.g.position;b.face=Math.atan2(hp.x-p.x,hp.z-p.z);bubble(b,txt);chat0('<span class="n">'+esc(b.name)+'</span>: '+esc(txt),'')}catch(e){}}
+ function lines(){const n=(typeof LOOK!=='undefined'&&LOOK.name)||'bạn';const w=(typeof INV!=='undefined'&&INV.eq&&INV.eq.weapon)||null;const L=[
+  'ê '+n+' pt ko','alo '+n+' đi bãi trên ko 2 ng cho nhanh','bạn ơi chỗ bá chủ ở đâu v','đi chung ko '+n+' t buff máu cho','hú '+n,'ng mới hả '+n+' cần gì hỏi t','cày lâu chưa bạn','kèo này đông vl','có ai đi bí cảnh ko','bãi này rơi đá cường hóa ko ae','t lag quá ae ơi','tối nay bang chiến ae lên đủ nha','bạn ở server nào v','đứng đây treo à '+n];
+  if(w&&w.tier>=3)L.push('vk '+n+' đẹp v mua đâu','xin vía cái '+(w.name||'vk').split(' ').slice(-1)[0]+' với','đồ ngon thế bạn ơi share kinh nghiệm cái');
+  try{if(hero.hp<hero.max*.35)L.push(n+' sắp chết kìa lùi lại','máu thấp kìa uống đan đi');}catch(e){}
+  const h=new Date().getHours();if(h>=23||h<5)L.push('khuya r còn cày à '+n,'mai đi làm ko '+n);else if(h>=11&&h<13)L.push('ăn trưa chưa '+n);
+  return L}
+ setInterval(()=>{try{if(typeof creating!=='undefined'&&creating||!hero)return;const now=performance.now();
+  /* phản ứng: lên cấp / độ kiếp */const lv=(typeof TU!=='undefined'?(TU.realm||0)*1000+(TU.tang||0)*10:0)+(hero.lv||0);if(lastLv==null)lastLv=lv;else if(lv>lastLv){lastLv=lv;const B=nearBots(40);if(B.length){const b=P(B);setTimeout(()=>say(b,P(['gz','gz bạn','ghê v','lên nhanh thế','cày gì mà nhanh v','gz gz'])),1200+Math.random()*2500)}}
+  /* phản ứng: mình chết */if(hero.dead&&!wasDead){wasDead=true;const B=nearBots(45);if(B.length){const b=P(B);setTimeout(()=>say(b,P(['rip','rip '+((typeof LOOK!=='undefined'&&LOOK.name)||''),'chết r kìa','hồi sinh nhanh lên','ủa sao chết v','=)) rip'])),900+Math.random()*2000)}}if(!hero.dead)wasDead=false;
+  if(now<next)return;next=now+25000+Math.random()*35000;const B=nearBots(25);if(!B.length)return;say(P(B),P(lines()))}catch(e){}},700);
+})()}catch(e){console.warn('botn',e)}
 
 try{window.__enterBC=()=>{BC.day='';enterBC()};window.__bfJoin=sd=>bfJoin(sd||'tien');window.__BCo=BC;window.__BFo=BF}catch(e){}
 window.__wp={renderer,T,WEAPONS,fabaoModel,TIERS,FBE,RT,VB:()=>VB,hero:()=>hero,TD:{tdKiem,tdXuan,tdBang,tdAn,swordRain,phoenix,tornado,maVortex,dQi:()=>dragonE('qi'),dTh:()=>dragonE('thunder'),dFi:()=>dragonE('fire'),dBl:()=>dragonE('blood'),vortex:()=>{const T0=performance.now();maVortex();return performance.now()-T0},ice:()=>{const t=TU.tong,r=TU.realm,l=TU.learned;TU.tong='thuy';TU.realm=4;TU.learned=['Huyền Băng Trảm','Băng Phong Vạn Lý'];hero.mp=100;P.cds[1]=0;try{_useSkill(1+'')}finally{TU.tong=t;TU.realm=r;TU.learned=l}}},TU:()=>TU};setTimeout(()=>{if(typeof TKACCT!=='undefined')TKACCT.boot()},0);
