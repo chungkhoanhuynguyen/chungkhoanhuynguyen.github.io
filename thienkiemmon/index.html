@@ -2567,7 +2567,7 @@ function update(dt,time){uTime.value=time;const hp=heroPos();
  if(creating||(typeof ABS!=='undefined'&&ABS.on)){ix=iz=0;if(ABS&&ABS.on){P.auto=null;P.dest=null}}const sy=Math.sin(yaw),cy=Math.cos(yaw);let mx=ix*cy+iz*sy,mz=-ix*sy+iz*cy;const moving=il>.1;if(moving){P.auto=null;P.dest=null}
  if(moving)P.route=null;if(P.route&&!P.dest&&!P.auto){const w=P.route.shift();if(w)P.dest=new T.Vector3(w[0],0,w[1]);else P.route=null}if(P.dest&&!P.auto){const d=tmp.copy(P.dest).sub(hp);d.y=0;const l=d.length();if(l<1.2)P.dest=null;else{mx=d.x/l;mz=d.z/l;P._sk=(P._sk||0)+dt;if(P._sk>1){const mv=P._sp?Math.hypot(hp.x-P._sp.x,hp.z-P._sp.z):9;P._sp={x:hp.x,z:hp.z};P._sk=0;if(mv<1.2){P._side=.7;P._sd=Math.random()<.5?1:-1}}if(P._side>0){P._side-=dt;const sx=-mz*P._sd,sz=mx*P._sd;mx=sx;mz=sz}}}
  if(P.auto){if(P.auto.dead)P.auto=null;else{const d=tmp.copy(P.auto.c.g.position).sub(hp);d.y=0;const l=d.length();if(l<2.4){P.auto=null;useSkill('A')}else{mx=d.x/l;mz=d.z/l}}}
- const going=moving||!!P.auto||!!P.dest,spd=(P.swim?hero.spd*.5:P.ground?hero.spd:13)*(window.__mountK||1);
+ const going=moving||!!P.auto||!!P.dest,spd=(P.swim?hero.spd*.5:P.ground?hero.spd:13)*(window.__mountK||1)*(P.fly?Math.max(1.8,16/Math.max(1,hero.spd||1)):1);/* 28/11: ngự kiếm nhanh x1.8, tối thiểu 16 m/giây */
  if(going&&!hero.dead){const tf=Math.atan2(mx,mz);let d=tf-hero.face;d=Math.atan2(Math.sin(d),Math.cos(d));hero.face+=d*Math.min(1,dt*12)}
  if(!creating&&!(look.id!==null&&look.on)&&!hero.dead){const fwd=Math.max(0,-joy.y),side=Math.abs(joy.x);const fw=recenter?1:(CAMF&&joy.id!==null&&fwd>.5&&side<fwd*.6?(fwd-.5)*1.2:CAMF&&(P.auto||P.dest)?.35:0);if(fw>0){let d=hero.face+Math.PI-yaw;d=Math.atan2(Math.sin(d),Math.cos(d));let st=d*(1-Math.exp(-dt*(recenter?8:6)))*fw;if(!recenter)st=Math.max(-.16,Math.min(.16,st));const cap=3.6*Math.min(dt,1/30)*(recenter?2.5:1);yaw+=Math.max(-cap,Math.min(cap,st));if(recenter&&Math.abs(d)<.02)recenter=false}}
  if(P.dash>0){P.dash-=dt;if(going){const tf=Math.atan2(mx,mz),cf=Math.atan2(P.dashF.x,P.dashF.z);let dd=tf-cf;dd=Math.atan2(Math.sin(dd),Math.cos(dd));const nf=cf+dd*Math.min(1,dt*3);P.dashF.set(Math.sin(nf),0,Math.cos(nf));hero.face=nf}const sp2=30*(.55+.45*Math.max(0,P.dash/.85));P.v.x=P.dashF.x*sp2;P.v.z=P.dashF.z*sp2;const q=heroPos();for(let i=0;i<(LITE?2:4);i++)emit(q.x+R2(.4),q.y+.6+Math.random()*1.2,q.z+R2(.4),-P.dashF.x*8+R2(1),R2(.5),-P.dashF.z*8+R2(1),1.2,1.6,2.2,.45,.35,0,3)}
@@ -6964,6 +6964,35 @@ try{(function(){/* 28/11: đo thử chỉ bớt ~10 lần vẽ mà dễ để l�
   window.__gx=[made,hid]}catch(e){console.warn('gx',e)}}
  setTimeout(scan,9000);setTimeout(scan,18000);setInterval(scan,30000);
 })()}catch(e){}
+
+/* ===== ÁNH SÁNG ĐỒ RƠI + PHI KIẾM RỰC RỠ + PHÁP BẢO SÁNG (28/11): (1) cột sáng đồ rơi là dải sáng mềm luôn quay mặt về camera (trước 2 tấm chéo nhau trông như ống vuông mờ), chân cột có quầng sáng tỏa; (2) ngự kiếm: kiếm to gấp rưỡi, lưỡi rực sáng, vệt sáng dài kéo sau đuôi, gió lướt, bay nhanh x1.8; (3) pháp bảo lơ lửng có hào quang thở nhịp + hạt sáng xoay quanh ===== */
+try{(function(){
+ /* (1) dải sáng mềm */
+ const bc=document.createElement('canvas');bc.width=64;bc.height=256;{const g=bc.getContext('2d'),im=g.createImageData(64,256);for(let y=0;y<256;y++)for(let x=0;x<64;x++){const u=(x-31.5)/31.5,v=y/255;const hx=Math.exp(-u*u*6),core=Math.exp(-u*u*60)*.8,vy=Math.pow(1-v,1.4);const a=Math.min(1,(hx*.55+core)*vy);const i=(y*64+x)*4;im.data[i]=255;im.data[i+1]=255;im.data[i+2]=255;im.data[i+3]=a*255}g.putImageData(im,0,0)}
+ const beamT=new T.CanvasTexture(bc);/* chiều v: dưới sáng → trên mờ (PlaneGeometry: v=1 ở trên) nên lật */beamT.flipY=false;
+ const _di=dropItem;dropItem=function(p,it,owner){const r=_di.apply(this,arguments);try{const g=ground[ground.length-1];if(g&&g.it===it&&g.m.userData.pil){const pil=g.m.userData.pil;const [b1,b2]=pil.children;if(b2)b2.visible=false;if(b1){b1.material.map=beamT;b1.material.opacity=Math.min(.9,.32+it.tier*.08);b1.scale.x=1.6;b1.material.needsUpdate=true}
+   if(it.tier>0){const gl=glowSp(b1?b1.material.color:'#ffd36b',1.6+it.tier*.35,.35+it.tier*.05);gl.material.fog=true;gl.position.y=.3;pil.add(gl);g.m.userData.pglow=gl}}}catch(e){}return r};
+ const _ug=updGround;updGround=function(dt){_ug.apply(this,arguments);try{const cp=camera.position,t=performance.now()/1000;for(const g of ground){const pil=g.m.userData.pil;if(!pil||!pil.visible)continue;const yaw=Math.atan2(cp.x-g.m.position.x,cp.z-g.m.position.z)-g.m.rotation.y;pil.rotation.y=yaw;const gl=g.m.userData.pglow;if(gl)gl.material.opacity=(.3+g.it.tier*.05)*(.75+.25*Math.sin(t*2.4+g.m.position.x))}}catch(e){}};
+ /* (2) ngự kiếm */
+ const TN=LITE?24:40;const tp=new Float32Array(TN*2*3),ta=new Float32Array(TN*2);const tg=new T.BufferGeometry();tg.setAttribute('position',new T.BufferAttribute(tp,3));tg.setAttribute('a',new T.BufferAttribute(ta,1));const ix=[];for(let i=0;i<TN-1;i++){const a=i*2;ix.push(a,a+1,a+2,a+1,a+3,a+2)}tg.setIndex(ix);
+ const tm=new T.ShaderMaterial({uniforms:{c:{value:new T.Color(1,1,1)}},vertexShader:'attribute float a;varying float va;void main(){va=a;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}',fragmentShader:'uniform vec3 c;varying float va;void main(){gl_FragColor=vec4(c*va*1.4,va*.85);}',transparent:true,depthWrite:false,blending:T.AdditiveBlending,side:T.DoubleSide});
+ const trail=new T.Mesh(tg,tm);trail.frustumCulled=false;trail.visible=false;scene.add(trail);const hist=[];let swGlow=null,swGlow2=null,lastFly=false;
+ function tcol(){try{const it=INV.eq.fabao;return new T.Color(it?(it.tier===6?'#ffd36b':TIERS[it.tier][1]):'#9fe8ff')}catch(e){return new T.Color('#9fe8ff')}}
+ const _uf=updFab;updFab=function(dt,time){_uf.apply(this,arguments);try{if(!FAB||!FAB.g)return;const g=FAB.g;
+   if(P.fly&&FAB.kind==='phikiem'&&!hero.dead){const w=g.userData.sw;if(w)w.scale.setScalar(2.1);
+    if(!lastFly){lastFly=true;hist.length=0;tm.uniforms.c.value.copy(tcol());if(!swGlow){swGlow=glowSp(tcol(),4.2,.55);swGlow.scale.set(5.5,1.6,1);swGlow2=glowSp(tcol(),2.2,.5);g.add(swGlow,swGlow2)}swGlow.material.color.copy(tcol());swGlow2.material.color.copy(tcol())}
+    swGlow.visible=swGlow2.visible=true;const pl=.85+.15*Math.sin(time*6);swGlow.material.opacity=.5*pl;swGlow.position.set(0,-.05,0);swGlow2.position.set(0,-.05,-1.4);
+    const hp=heroPos(),y=g.userData.yaw||0,bx=-Math.sin(y),bz=-Math.cos(y),sx=Math.cos(y),sz=-Math.sin(y);const tail=new T.Vector3(hp.x+bx*1.9,hp.y-.02,hp.z+bz*1.9);hist.unshift([tail.x,tail.y,tail.z,sx,sz]);if(hist.length>TN)hist.length=TN;
+    const sp=Math.hypot(P.v.x,P.v.z);for(let i=0;i<TN;i++){const h=hist[Math.min(i,hist.length-1)];const k=i/(TN-1),wd=.38*(1-k)*Math.min(1,sp/6+.45);tp.set([h[0]+h[3]*wd,h[1],h[2]+h[4]*wd,h[0]-h[3]*wd,h[1],h[2]-h[4]*wd],i*6);const al=(1-k)*(1-k)*Math.min(1,sp/4+.4);ta[i*2]=ta[i*2+1]=al}
+    tg.attributes.position.needsUpdate=true;tg.attributes.a.needsUpdate=true;trail.visible=true;
+    if(sp>4&&Math.random()<(LITE?.5:.9)){/* gió lướt hai bên */for(const s2 of[-1,1]){const q=new T.Vector3(hp.x+sx*s2*1.2+R2(.5),hp.y+.4+Math.random()*1.6,hp.z+sz*s2*1.2+R2(.5));const c=tcol();emit(q.x,q.y,q.z,bx*sp*.9,0,bz*sp*.9,c.r*1.6,c.g*1.6,c.b*1.6,.22,.28,0,2)}}
+   }else{if(lastFly){lastFly=false;trail.visible=false;if(swGlow)swGlow.visible=swGlow2.visible=false}
+    /* (3) pháp bảo lơ lửng: hào quang thở nhịp + hạt sáng xoay quanh */
+    if(!g.userData.halo){const c=tcol();const h=glowSp(c,2.4,.45);g.add(h);g.userData.halo=h}const h=g.userData.halo;h.material.opacity=.32+.16*Math.sin(time*2.2);h.scale.setScalar(2.2+.25*Math.sin(time*2.2));
+    if(Math.random()<(LITE?.35:.7)){const a=time*3+Math.random()*.4,c=tcol();emit(g.position.x+Math.cos(a)*.75,g.position.y+Math.sin(a*1.3)*.3,g.position.z+Math.sin(a)*.75,R2(.1),.25,R2(.1),c.r*1.8,c.g*1.8,c.b*1.8,.16,.7,0,1)}}
+  }catch(e){}};
+ const _uf2=updFabao;updFabao=function(){const r=_uf2.apply(this,arguments);swGlow=swGlow2=null;lastFly=false;trail.visible=false;return r};
+})()}catch(e){console.warn('fxsang',e)}
 
 try{window.__enterBC=()=>{BC.day='';enterBC()};window.__bfJoin=sd=>bfJoin(sd||'tien');window.__BCo=BC;window.__BFo=BF}catch(e){}
 window.__wp={renderer,T,WEAPONS,fabaoModel,TIERS,FBE,RT,VB:()=>VB,hero:()=>hero,TD:{tdKiem,tdXuan,tdBang,tdAn,swordRain,phoenix,tornado,maVortex,dQi:()=>dragonE('qi'),dTh:()=>dragonE('thunder'),dFi:()=>dragonE('fire'),dBl:()=>dragonE('blood'),vortex:()=>{const T0=performance.now();maVortex();return performance.now()-T0},ice:()=>{const t=TU.tong,r=TU.realm,l=TU.learned;TU.tong='thuy';TU.realm=4;TU.learned=['Huyền Băng Trảm','Băng Phong Vạn Lý'];hero.mp=100;P.cds[1]=0;try{_useSkill(1+'')}finally{TU.tong=t;TU.realm=r;TU.learned=l}}},TU:()=>TU};setTimeout(()=>{if(typeof TKACCT!=='undefined')TKACCT.boot()},0);
