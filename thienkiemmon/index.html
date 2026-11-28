@@ -6162,7 +6162,9 @@ try{(function(){
   {n:'Hồng Loan Giá Y',c:['#c41a2c','#d62c2c','#8a1018'],a:['phoenix','stream:#e02a3a','sash:#e8c060']},
   {n:'Ngân Giáp Chiến Y',c:['#c9ccd6','#26262e','#1a1a20'],a:['pauldron:#c8ccd8','pin:gold']},
   {n:'Thanh Hư Đạo Bào',c:['#3a6cd4','#eef2fa','#e8eef8'],a:['sash:#ffffff','pin:jade']},
-  {n:'Dạ Vũ Tinh Hà',c:['#15152c','#23234c','#0e0e1c'],a:['feather:#20204a','wings:#1a1a3a','crown']}],
+  {n:'Dạ Vũ Tinh Hà',c:['#15152c','#23234c','#0e0e1c'],a:['feather:#20204a','wings:#1a1a3a','crown']},
+  {n:'Hắc Dạ Trường Y (váy đen dài)',c:['#131116','#1b1920','#0d0b10'],a:['stream:#2c2834','pin:gold']},
+  {n:'Miêu Nữ Hồng (tai mèo)',c:['#f7b6cf','#fde0ea','#f2c6d6'],a:['catear:#f6a8c8','stream:#ffb3cf'],hc:'#f6a8c8'}],
  nam:[
   {n:'Hắc Kim Long Giáp',c:['#1c1814','#2a2018','#16120e'],ox:'cape',cl:'#b0182a',a:['pauldron:#d4a83a','crown']},
   {n:'Bạch Vân Kiếm Bào',c:['#f2f4fa','#2c4c9e','#1e2a50'],a:['sash:#2c4c9e','pin:jade']},
@@ -6179,7 +6181,7 @@ try{(function(){
  const cur=()=>{const s=SETS[gen()];return LOOK.tt!=null&&s?s[LOOK.tt]:null};
  /* màu từng phần áo / váy / giày */
  function tint(){try{if(!vrmReady)return;const s=cur();partMats.CLOTH.forEach(m=>{const n=m.name||'';const i=/Bottoms/i.test(n)?1:/Shoes/i.test(n)?2:/Accessory/i.test(n)?0:0;if(s){m.userData.tint.value.set(s.c[i]);m.userData.amt.value=Math.max(.85,m.userData.maxAmt||0)}})}catch(e){console.warn('tt tint',e)}}
- const _al=applyLook;applyLook=function(){const s=cur();if(s){LOOK.ox=s.ox||LOOK.__ox0||'none';LOOK.hat=s.hat||LOOK.__hat0||'none';if(s.cl)LOOK.cloth=s.cl}const r=_al.apply(this,arguments);tint();return r};
+ const _al=applyLook;applyLook=function(){const s=cur();if(s){LOOK.ox=s.ox||LOOK.__ox0||'none';LOOK.hat=s.hat||LOOK.__hat0||'none';if(s.cl)LOOK.cloth=s.cl;if(s.hc)LOOK.hairCol=s.hc}const r=_al.apply(this,arguments);tint();return r};
  /* đồ đi kèm */
  const MAT={};const mt=(c,o)=>{const k=c+JSON.stringify(o||{});return MAT[k]||(MAT[k]=new T.MeshStandardMaterial(Object.assign({color:c,roughness:.55,side:T.DoubleSide},o||{})))};
  const gold=()=>mt('#d8b04a',{metalness:.7,roughness:.3}),jade=()=>mt('#5fd0a0',{emissive:'#0a3a28',roughness:.3}),gem=c=>mt(c,{emissive:c,emissiveIntensity:.5,roughness:.2});
@@ -6191,6 +6193,7 @@ try{(function(){
   for(const a of s.a){const [k,c]=a.split(':');
    if(k==='crown'&&hd){put(hd,new T.TorusGeometry(.075,.01,6,24),gold(),0,.21,-.01).rotation.x=Math.PI/2;for(let i=0;i<7;i++){const t=i/7*Math.PI*2,sp=put(hd,new T.ConeGeometry(.012,.06,5),gold(),Math.cos(t)*.075,.245,-.01+Math.sin(t)*.075);}put(hd,new T.OctahedronGeometry(.018),gem('#5ab8ff'),0,.235,.065)}
    if(k==='phoenix'&&hd){put(hd,new T.TorusGeometry(.09,.012,6,26),gold(),0,.19,-.01).rotation.x=Math.PI/2;for(const sx of[-1,1]){const w=put(hd,new T.ConeGeometry(.035,.16,4),gold(),sx*.1,.24,-.01);w.rotation.z=-sx*1.1;w.scale.z=.25}put(hd,new T.ConeGeometry(.02,.1,6),gold(),0,.27,.02);for(let i=-2;i<=2;i++)put(hd,new T.SphereGeometry(.012,8,6),gem('#ff3040'),i*.035,.17,.08-Math.abs(i)*.01);for(const sx of[-1,1])for(let j=0;j<3;j++)put(hd,new T.SphereGeometry(.008,6,5),gold(),sx*.11,.12-j*.035,.03)}
+   if(k==='catear'&&hd){/* 28/11: tai mèo */const oc=c||'#f6b8d0';for(const sx of[-1,1]){const o=put(hd,new T.ConeGeometry(.066,.13,4),mt(oc),sx*.08,.25,-.005);o.rotation.set(0,Math.PI/4,-sx*.38);o.scale.z=.45;const n=put(hd,new T.ConeGeometry(.042,.09,4),mt('#ffd0e0'),sx*.078,.242,.014);n.rotation.set(0,Math.PI/4,-sx*.38);n.scale.z=.3}}
    if(k==='tiara'&&hd){for(let i=-3;i<=3;i++){const h=.05+(3-Math.abs(i))*.022;const o=put(hd,new T.OctahedronGeometry(.02,0),gem('#a8e4ff'),i*.03,.17+h*.5,.075-Math.abs(i)*.012);o.scale.set(.5,h/.03,.5)}put(hd,new T.TorusGeometry(.09,.006,5,24,Math.PI),mt('#e8f4ff',{metalness:.6,roughness:.2}),0,.16,.0).rotation.set(Math.PI/2.3,0,0)}
    if(k==='flower'&&hd){for(let i=0;i<5;i++){const t=i/5*Math.PI*2;put(hd,new T.SphereGeometry(.018,8,6),mt('#fff0f4'),.1+Math.cos(t)*.022,.15+Math.sin(t)*.022,-.01)}put(hd,new T.SphereGeometry(.012,8,6),gem('#ffd060'),.1,.15,0)}
    if(k==='pin'&&hd){const m=c==='jade'?jade():gold();const p=put(hd,new T.CylinderGeometry(.004,.004,.22,6),m,0,.19,-.06);p.rotation.z=Math.PI/2.2;put(hd,new T.SphereGeometry(.014,8,6),c==='jade'?jade():gem('#ff4050'),.1,.205,-.06)}
