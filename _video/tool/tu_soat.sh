@@ -33,6 +33,7 @@ NS=$(echo $S | grep -o -- "-i" | wc -l); [ "$NS" -ge 1 ] && ffmpeg -v error -y $
   echo "== ÂM LƯỢNG"; ffmpeg -nostats -i $K.mp4 -filter_complex ebur128 -f null - 2>&1 | grep -A1 "Integrated loudness" | tail -1
   echo "== PHỤ ĐỀ ĐÁNG NGỜ"
   grep -nE "Mỗi 5|20[0-9]0 [a-zà-ỹ]|phần 100|em em|[0-9] [a-zà-ỹ]+\?|[0-9],[0-9] [0-9]|000\.000 tỷ|[0-9]\.[0-9]{3}\.[0-9]{3}|[0-9] 0 |nhà em|phần 1[0-9]{2}| 1 phần" $K.srt 2>/dev/null | head -20 || true
+  [ "${H:-0}" -gt "${W:-1}" ] && timeout 240 python3 "$TD/khung_qa.py" $K.mp4 2>&1 | head -12
   echo "== ẢNH DÙNG"; head -40 ${K}_anh.txt 2>/dev/null
   echo "== FILE"; ls ${K}* | tr '\n' ' '; echo
 } > ${K}_soat.txt 2>&1
