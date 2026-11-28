@@ -1,11 +1,8 @@
-# Tin nóng 2026-11-27 (tự động, 270 tin từ 6 nguồn) – NV1B chọn 1–2 tin điểm cao làm kênh C
+# Tin nóng 2026-11-28 (tự động, 270 tin từ 6 nguồn) – NV1B chọn 1–2 tin điểm cao làm kênh C
 
 - **[6] Tổng thống Trump nói Nga, Trung Quốc đều muốn cuộc xung đột Mỹ - Iran chấm dứt** – Tuổi Trẻ Thế giới · 11/27/2026 10:35
   Theo Tổng thống Trump, chỉ khi trực tiếp nổ súng mới được xem là can dự vào cuộc xung đột Mỹ - Iran, chứ không phải chỉ cung cấp một ít thông tin cho Iran.
   https://tuoitre.vn/tong-thong-trump-noi-nga-trung-quoc-deu-muon-cuoc-xung-dot-my-iran-cham-dut-10026112709524249.htm
-- **[6] Tin tức thế giới 26-11: Mỹ đổ lỗi cho châu Âu trong xung đột Nga - Ukraine; Triều Tiên tự tin về hạt nhân** – Tuổi Trẻ Thế giới · 11/26/2026 6:27:
-  Lãnh đạo Triều Tiên kêu gọi triển khai vũ khí hạt nhân chiến thuật trên nhiều lĩnh vực; Bế tắc về lãnh thổ trong đàm phán Nga - Ukraine.
-  https://tuoitre.vn/tin-tuc-the-gioi-26-11-my-do-loi-cho-chau-au-trong-xung-dot-nga-ukraine-trieu-tien-tu-tin-ve-hat-nhan-100261126061214891.htm
 - **[5] Vì sao ông Trump áp thêm thuế nhập khẩu, bất chấp lạm phát?** – VnExpress Kinh doanh · Thu, 26 Nov 2026
   Thuế nhập khẩu là công cụ hữu hiệu giúp Tổng thống Mỹ thể hiện quyền lực kinh tế khi đảng Cộng hòa không còn kiểm soát Quốc hội.
   https://vnexpress.net/vi-sao-ong-trump-ap-them-thue-nhap-khau-bat-chap-lam-phat-5149098.html
@@ -15,12 +12,12 @@
 - **[5] Giá vàng thế giới quay đầu giảm mạnh** – VnExpress Kinh doanh · Wed, 25 Nov 2026
   Sau phiên tăng vọt, giá vàng giảm gần 80 USD một ounce vì chứng khoán Mỹ đi xuống và sức ép từ lãi suất cao.
   https://vnexpress.net/gia-vang-the-gioi-quay-dau-giam-manh-5148528.html
-- **[5] Rộ tin Mỹ tính phương án nhắm vào giới lãnh đạo cứng rắn của Iran** – Tuổi Trẻ Thế giới · 11/25/2026 8:59:
-  Đang có hai luồng ý kiến tranh luận trong chính quyền Mỹ về việc liệu có nên tung đòn tấn công giới lãnh đạo Iran hay không.
-  https://tuoitre.vn/ro-tin-my-tinh-phuong-an-nham-vao-gioi-lanh-dao-cung-ran-cua-iran-100261125204514739.htm
-- **[5] Mỹ sắp áp thuế lên hàng chục đối tác thương mại, mức cao nhất lên tới 20%** – Tuổi Trẻ Thế giới · 11/25/2026 8:57:
-  Chính quyền Mỹ dự kiến công bố kế hoạch áp thuế đối với Trung Quốc, EU và hàng chục nền kinh tế khác.
-  https://tuoitre.vn/my-sap-ap-thue-len-hang-chuc-doi-tac-thuong-mai-muc-cao-nhat-len-toi-20-100261125204427432.htm
+- **[5] Tin tức quốc tế ngày 28.11: Quân đội Mỹ bắn tàu vi phạm lệnh phong tỏa Iran** – Thanh Niên Thế giới · Sat, 28 Nov 26 0
+  Quân đội Mỹ thông báo vô hiệu hóa tàu đang cố vượt phong tỏa tại eo biển Hormuz, Tổng thống Nga Vladimir Putin dự lễ bàn giao tàu ngầm hạt nhân mới là những tin tức quốc tế nổi bật sáng 28.11.
+  https://thanhnien.vn/tin-tuc-quoc-te-ngay-2811-quan-doi-my-ban-tau-vi-pham-lenh-phong-toa-iran-185261128064114505.htm
+- **[4] Iran tuyên bố bắn cảnh cáo, buộc F-16 Mỹ bỏ nhiệm vụ** – VnExpress Thế giới · Fri, 27 Nov 2026
+  Iran đăng video bám bắt "F-16 Mỹ", cho biết phi cơ phải cơ động gấp và hủy nhiệm vụ sau phát bắn cảnh cáo của đơn vị phòng không.
+  https://vnexpress.net/iran-tuyen-bo-ban-canh-cao-buoc-f-16-my-bo-nhiem-vu-5149640.html
 - **[4] Bão ập vào miền đông nước Mỹ, gần một triệu hộ mất điện** – VnExpress Thế giới · Fri, 27 Nov 2026
   Mưa lớn cùng gió mạnh từ trận bão càn quét khu vực miền trung và miền đông nước Mỹ, khiến gần một triệu hộ mất điện.
   https://vnexpress.net/bao-ap-vao-mien-dong-nuoc-my-gan-mot-trieu-ho-mat-dien-5149407.html
@@ -39,9 +36,15 @@
 - **[4] Tình báo Mỹ nói chưa có bằng chứng Trung Quốc đứng sau bê bối tình ái của Jensen Huang** – VnExpress Thế giới · Thu, 26 Nov 2026
   WSJ dẫn lời quan chức tình báo Mỹ rằng chưa có bằng chứng Alice Huang, người được cho có quan hệ tình cảm với Jensen Huang, được Trung Quốc chỉ đạo do thám CEO Nvidia.
   https://vnexpress.net/tinh-bao-my-noi-chua-co-bang-chung-trung-quoc-dung-sau-be-boi-tinh-ai-cua-jensen-huang-5148948.html
+- **[4] Thủ tướng: Thuế Mỹ áp với Việt Nam sẽ thấp hơn nhiều mức 35%** – VnExpress Kinh doanh · Fri, 27 Nov 2026
+  Việt Nam và Mỹ đang hoàn tất các vấn đề kỹ thuật để ký kết hiệp định thương mại đối ứng, và mức thuế áp dụng sẽ thấp hơn nhiều ngưỡng tối đa 35% phía Mỹ đề xuất, theo Thủ tướng.
+  https://vnexpress.net/thu-tuong-thue-my-ap-voi-viet-nam-se-thap-hon-nhieu-muc-35-5149602.html
 - **[4] Thuế mới của ông Trump thêm thử thách thương mại Mỹ - Trung** – VnExpress Kinh doanh · Fri, 27 Nov 2026
   Washington và Bắc Kinh khả năng không muốn tái khởi động thương chiến, nhưng đợt thuế mới có thể đẩy các nền kinh tế khác vào thế khó.
   https://vnexpress.net/thue-moi-cua-ong-trump-them-thu-thach-thuong-mai-my-trung-5149255.html
+- **[4] Sun PhuQuoc Airways khai thác đường bay thứ 4 đến Trung Quốc** – VnExpress Kinh doanh · Fri, 27 Nov 2026
+  Sun PhuQuoc Airways vận hành đường bay thẳng Hà Nội - Thượng Hải với tần suất một chuyến khứ hồi mỗi ngày từ 26/11, mở rộng mạng bay quốc tế từ Thủ đô.
+  https://vnexpress.net/sun-phuquoc-airways-khai-thac-duong-bay-thu-4-den-trung-quoc-5149706.html
 - **[4] 'Sàn carbon Việt Nam gần như không có giao dịch'** – VnExpress Kinh doanh · Thu, 26 Nov 2026
   Sau phiên khai trương với giá 136.000 đồng mỗi tấn, sàn carbon Việt Nam gần như không phát sinh giao dịch mới, do thiếu cung cầu và chưa có đầy đủ công cụ vận hành.
   https://vnexpress.net/san-carbon-viet-nam-gan-nhu-khong-co-giao-dich-5149207.html
@@ -54,24 +57,21 @@
 - **[4] Các hãng bán lẻ Mỹ dùng AI để tính ưu đãi Black Friday** – VnExpress Kinh doanh · Wed, 25 Nov 2026
   Người tiêu dùng có thể sẽ được giảm giá ít hơn vào Black Friday năm nay, khi AI ngày càng được doanh nghiệp dùng để hỗ trợ định giá.
   https://vnexpress.net/cac-hang-ban-le-my-dung-ai-de-tinh-uu-dai-black-friday-5148597.html
-- **[4] Taxi Mai Linh nợ quá hạn, ngân hàng thu giữ bất động sản** – VnExpress Kinh doanh · Tue, 24 Nov 2026
-  LPBank vừa thông báo thu giữ bất động sản hơn 700 m2 tại Hội An để thu hồi nợ vay của Tập đoàn Mai Linh.
-  https://vnexpress.net/taxi-mai-linh-no-qua-han-ngan-hang-thu-giu-bat-dong-san-5148449.html
-- **[4] 'Sai lầm trị giá 1.500 tỷ USD' của HĐQT Nvidia góp phần đưa Jensen Huang trở lại** – VnExpress Kinh doanh · Tue, 24 Nov 2026
-  Jensen Huang được trở lại vị trí lãnh đạo Nvidia trong chưa đầy 2 tuần - điều sẽ không thể xảy ra nếu HĐQT công ty không có những quyết định gây tranh cãi.
-  https://vnexpress.net/sai-lam-tri-gia-1-500-ty-usd-cua-hdqt-nvidia-gop-phan-dua-jensen-huang-tro-lai-5148316.html
+- **[4] Iran nói bắn cảnh cáo khiến F-16 Mỹ quay đầu, dọa đáp trả trên không lẫn trên biển** – Tuổi Trẻ Thế giới · 11/27/2026 11:11
+  Iran cảnh báo sẽ có hành động trên không lẫn trên biển, sau khi tuyên bố bắn cảnh cáo F-16 Mỹ gần đảo Hengam.
+  https://tuoitre.vn/iran-noi-ban-canh-cao-khien-f-16-my-quay-dau-doa-dap-tra-tren-khong-lan-tren-bien-100261127225716144.htm
+- **[4] Cựu cố vấn Iran cáo buộc Ukraine đứng sau vụ tấn công ở Kuwait** – Tuổi Trẻ Thế giới · 11/27/2026 5:08:
+  Một cựu cố vấn của Iran cáo buộc Ukraine đứng sau vụ tấn công bằng drone khiến hai công nhân người Ý thiệt mạng tại Kuwait hôm 26-11.
+  https://tuoitre.vn/cuu-co-van-iran-cao-buoc-ukraine-dung-sau-vu-tan-cong-o-kuwait-100261127163930653.htm
 - **[4] Quan chức Nga cảnh báo NATO về nguy cơ chiến tranh hạt nhân** – Tuổi Trẻ Thế giới · 11/27/2026 6:58:
   Đại diện thường trực của Nga tại Tổ chức An ninh và Hợp tác châu Âu (OSCE) đã cảnh báo NATO về nguy cơ chiến tranh hạt nhân.
   https://tuoitre.vn/quan-chuc-nga-canh-bao-nato-ve-nguy-co-chien-tranh-hat-nhan-100261127065127897.htm
-- **[4] Israel tuyên bố sẵn sàng tấn công Iran mà không cần Mỹ** – Tuổi Trẻ Thế giới · 11/26/2026 7:45:
-  Quân đội Israel tuyên bố sẵn sàng tấn công Iran dù không có Mỹ tham gia, với lý do Tehran vẫn đang đe dọa sự tồn vong của nước này.
-  https://tuoitre.vn/israel-tuyen-bo-san-sang-tan-cong-iran-ma-khong-can-my-100261126190942318.htm
-- **[4] Tổng thống Zelensky nói chưa nhận được tin vui từ Mỹ** – Tuổi Trẻ Thế giới · 11/26/2026 4:47:
-  Phát biểu của Tổng thống Zelensky được đưa ra trong bối cảnh Ukraine thiếu tên lửa phòng không, khiến nước này không thể đánh chặn hiệu quả tên lửa và drone đối phương.
-  https://tuoitre.vn/tong-thong-zelensky-noi-chua-nhan-duoc-tin-vui-tu-my-100261126154312691.htm
-- **[4] Nhiều quốc gia lên tiếng trước đề xuất áp thuế của Mỹ** – Tuổi Trẻ Thế giới · 11/26/2026 4:07:
-  Hàng chục nền kinh tế đã lên tiếng phản đối trước đề xuất áp thuế của chính quyền Tổng thống Mỹ Donald Trump.
-  https://tuoitre.vn/nhieu-quoc-gia-len-tieng-truoc-de-xuat-ap-thue-cua-my-100261126145626127.htm
-- **[4] Mỹ cấp phép cho SpaceX triển khai 1 triệu vệ tinh xây trung tâm dữ liệu không gian** – Tuổi Trẻ Thế giới · 11/26/2026 3:09:
-  Mỹ đã cấp phép cho SpaceX của tỉ phú Elon Musk triển khai tới 1 triệu vệ tinh làm trung tâm dữ liệu trong không gian.
-  https://tuoitre.vn/my-cap-phep-cho-spacex-trien-khai-1-trieu-ve-tinh-xay-trung-tam-du-lieu-khong-gian-100261126132440578.htm
+- **[4] Iran tuyên bố bắn cảnh cáo khiến chiến đấu cơ Mỹ phải quay đầu** – Thanh Niên Thế giới · Fri, 27 Nov 26 2
+  Lực lượng Vệ binh cách mạng Hồi giáo Iran (IRGC) tuyên bố đã bắn cảnh cáo một máy bay tiêm kích F-16 của Mỹ gần eo biển Hormuz, giữa lúc căng thẳng giữa Washington và Tehran tiếp tục gia tăng.
+  https://thanhnien.vn/iran-tuyen-bo-ban-canh-cao-khien-chien-dau-co-my-phai-quay-dau-185261127192542357.htm
+- **[4] Tin tức quốc tế ngày 27.11: Cáo buộc mới của Tổng thống Mỹ Donald Trump** – Thanh Niên Thế giới · Fri, 27 Nov 26 0
+  Dịp Lễ Tạ ơn tại Mỹ bị ảnh hưởng do bão, Tổng thống Donald Trump tung cáo buộc mới liên quan cuộc bầu cử và cuộc tấn công tại Kuwait là những tin tức quốc tế nổi bật sáng 27.11.
+  https://thanhnien.vn/tin-tuc-quoc-te-ngay-2711-cao-buoc-moi-cua-tong-thong-my-donald-trump-185261127064032134.htm
+- **[4] Bão lớn quét qua Mỹ dịp lễ Tạ ơn gây gián đoạn nghiêm trọng** – Thanh Niên Thế giới · Fri, 27 Nov 26 0
+  Một cơn bão tràn qua Bờ Đông Mỹ ngày 26.11 khiến hơn 850.000 hộ dân và doanh nghiệp mất điện, hàng ngàn chuyến bay bị ảnh hưởng.
+  https://thanhnien.vn/bao-lon-quet-qua-my-dip-le-ta-on-gay-gian-doan-nghiem-trong-18526112706504997.htm
