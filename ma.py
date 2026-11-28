@@ -267,7 +267,7 @@ def page(fn, title, desc, h1, body, ld_extra=None):
 CTA = ('<div class="cta"><a class="btn b1" href="/mo-tai-khoan-chung-khoan.html">Mở tài khoản chứng khoán</a>'
        '<a class="btn b2" href="https://zalo.me/0365188286" rel="noopener">Tư vấn 1:1 qua Zalo</a><a class="btn b2" href="https://zalo.me/g/jbnbiq994" rel="noopener">Nhóm Zalo cộng đồng</a><a class="btn b2" href="/#hoidap">Hỏi đáp PRO</a></div>')
 NAV = ('<h2>Khám phá thêm</h2><ul><li><a href="/dinh-gia-co-phieu.html">Định giá cổ phiếu</a></li>'
-       '<li><a href="/bao-cao-2026.html">Báo cáo lệnh 2016–2026</a></li><li><a href="/tu-van-dau-tu-chung-khoan.html">Tư vấn đầu tư chứng khoán</a></li><li><a href="/hoc/">Học chứng khoán</a></li><li><a href="/f0/">Cẩm nang F0</a></li><li><a href="/the-gioi-hang-hoa.html">Thế giới &amp; hàng hóa</a></li><li><a href="/ma/">Tra cứu mã cổ phiếu</a></li></ul>')
+       '<li><a href="/bao-cao-2026.html">Báo cáo lệnh 2016–2026</a></li><li><a href="/tu-van-dau-tu-chung-khoan.html">Tư vấn đầu tư chứng khoán</a></li><li><a href="/hoc/">Học chứng khoán</a></li><li><a href="/f0/">Cẩm nang F0</a></li><li><a href="/the-gioi-hang-hoa.html">Thế giới &amp; hàng hóa</a></li><li><a href="/gia-vang-sjc-hom-nay.html">Giá vàng SJC hôm nay</a></li><li><a href="/may-tinh-vay-mua-nha.html">Máy tính vay mua nhà</a></li><li><a href="/ma/">Tra cứu mã cổ phiếu</a></li></ul>')
 EXTRA = []
 # 2) Định giá cổ phiếu
 top = sorted(made, key=lambda t: -(FD[t].get("mc") or 0))[:40]
@@ -338,7 +338,7 @@ if WM.get("s"):
         if g in rows: body.append(f"<h2>{GN[g]}</h2><div style='overflow-x:auto'><table class='mt'>{hdr}{''.join(rows[g])}</table></div>")
     body += ["<p><small class='n'>1T = 1 tuần, 1Th = 1 tháng, 1N = 1 năm. Số liệu tham khảo, không phải khuyến nghị đầu tư.</small></p>",
              "<h2>Vì sao nhà đầu tư Việt Nam cần theo dõi thị trường thế giới?</h2><ul><li>Chứng khoán Mỹ giảm mạnh thường kéo tâm lý phiên sau ở châu Á và Việt Nam.</li><li>Giá dầu tác động cổ phiếu dầu khí, vận tải, hàng không; giá vàng phản ánh tâm lý phòng thủ.</li><li>DXY và lợi suất Mỹ tăng gây áp lực tỷ giá USD/VND và dòng vốn khối ngoại.</li></ul>",
-             "<p>Đọc thêm: <a href='/f0/ty-gia-tang-anh-huong-co-phieu.html'>tỷ giá tăng ảnh hưởng cổ phiếu</a>, <a href='/f0/fed-tang-giam-lai-suat-tac-dong.html'>Fed tăng giảm lãi suất</a>, <a href='/#thegioi'>biểu đồ thế giới trên trang chủ</a>.</p>", CTA, NAV]
+             "<p>Đọc thêm: <a href='/f0/ty-gia-tang-anh-huong-co-phieu.html'>tỷ giá tăng ảnh hưởng cổ phiếu</a>, <a href='/f0/fed-tang-giam-lai-suat-tac-dong.html'>Fed tăng giảm lãi suất</a>, <a href='/#thegioi'>biểu đồ thế giới trên trang chủ</a>, <a href='/gia-vang-sjc-hom-nay.html'>giá vàng SJC hôm nay và chênh lệch</a>.</p>", CTA, NAV]
     EXTRA.append(page("the-gioi-hang-hoa.html", "Thị trường thế giới hôm nay: Dow Jones, S&P 500, dầu, vàng, Bitcoin | Chứng Khoán Huy Nguyễn",
          "Giá thế giới hôm nay: Dow Jones, S&P 500, Nasdaq, Nikkei, dầu Brent, WTI, vàng, Bitcoin, USD/VND, DXY. Thay đổi phiên, tuần, tháng, năm. Cập nhật tự động.",
          "Thị trường thế giới & hàng hóa hôm nay", body))
@@ -396,8 +396,60 @@ body = ["<p>Anh chị đang cầm mã nào? Gõ mã vào ô dưới: web hiện 
 EXTRA.append(page("soi-ma-mien-phi.html", "Soi mã cổ phiếu miễn phí: Soi 3 dòng báo cáo tài chính | Chứng Khoán Huy Nguyễn",
      f"Gõ mã cổ phiếu, xem ngay đèn xanh vàng đỏ cho 3 dòng BCTC: lỗ lũy kế, lãi vay, dòng tiền kinh doanh. {_n3} mã. Gửi Zalo để được soi cùng, miễn phí.",
      "Soi mã cổ phiếu miễn phí", body))
+# B1 (Phòng Web 28/11): trang giá vàng SJC hôm nay + chênh lệch thế giới. Khối số giữa <!--sjc--> do sjc.py cập nhật 4 lần/ngày.
+import sjc as _sjc
+_SJ = hncodec.load(os.path.join(ROOT, "data/sjc.bin"), {}) or {}
+if _SJ.get("ban"):
+    faqv = [("Giá vàng SJC hôm nay bao nhiêu?", f"Lúc {_SJ['gio']} ngày {_SJ['ngay']}, vàng miếng SJC mua vào {_sjc._f1(_SJ['mua'])} triệu đồng/lượng, bán ra {_sjc._f1(_SJ['ban'])} triệu đồng/lượng (nguồn {_SJ['nguon']})."),
+            ("Vàng SJC đắt hơn vàng thế giới bao nhiêu?", f"Cùng thời điểm, giá vàng thế giới quy đổi theo tỷ giá là {_sjc._f1(_SJ['tg'])} triệu đồng/lượng (chưa gồm thuế, phí), nên vàng miếng SJC bán ra cao hơn {_sjc._f1(_SJ['chenh'])} triệu đồng/lượng, tức {str(_SJ['chenh_pct']).replace('.', ',')}%."),
+            ("Giá thế giới quy đổi được tính thế nào?", "Lấy giá vàng thế giới (USD/ounce) nhân tỷ giá USD/VND, nhân 1,2057 (1 lượng = 37,5 gram = 1,2057 ounce). Con số này chưa gồm thuế nhập khẩu, phí gia công và vận chuyển nên chỉ dùng để so mức chênh."),
+            ("Vì sao mua vàng xong bán lại ngay thì lỗ?", f"Vì giá mua vào của cửa hàng thấp hơn giá bán ra. Hôm nay khoảng cách này là {_sjc._f1(_SJ['ban'] - _SJ['mua'])} triệu đồng/lượng: mua 1 lượng giá {_sjc._f1(_SJ['ban'])} triệu, bán lại ngay chỉ nhận {_sjc._f1(_SJ['mua'])} triệu.")]
+    body = ["<p>Bảng giá <b>vàng miếng SJC</b> mua vào, bán ra và mức <b>chênh lệch so với giá vàng thế giới</b> quy đổi theo tỷ giá. Số liệu tự cập nhật 4 lần mỗi ngày làm việc, kèm lịch sử để anh chị thấy khoảng chênh đang rộng ra hay hẹp lại.</p>",
+            "<style>" + _sjc.CSS_VG + "</style><!--sjc-->" + _sjc.khoi(_SJ) + "<!--/sjc-->",
+            "<h2>Mức chênh lệch nói lên điều gì?</h2><p>Chênh lệch là phần người mua vàng miếng trong nước trả cao hơn giá vàng thế giới cùng lúc. Khi chênh lệch rộng, người mua đang chịu thêm một khoản ngoài giá vàng; nếu khoảng chênh thu hẹp lại, giá trong nước có thể đứng yên hoặc giảm dù vàng thế giới tăng. Vì vậy, ngoài giá bán ra, nên nhìn cả mức chênh và khoảng mua vào – bán ra trước khi quyết định.</p>",
+            "<h2>Câu hỏi thường gặp</h2>" + "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in faqv),
+            "<p>Đọc thêm: <a href='/f0/chenh-lech-gia-vang-trong-nuoc-va-the-gioi.html'>vì sao vàng trong nước chênh thế giới</a> · <a href='/f0/mua-vang-dinh-lo-bao-nhieu.html'>mua vàng đỉnh lỗ bao nhiêu</a> · <a href='/f0/gia-vang-va-chung-khoan.html'>giá vàng và chứng khoán</a> · <a href='/the-gioi-hang-hoa.html'>giá vàng thế giới, dầu, USD hôm nay</a>.</p>",
+            "<p><small class='n'>Số liệu tham khảo, ghi rõ nguồn và giờ cập nhật; không phải khuyến nghị mua bán vàng.</small></p>", CTA, NAV]
+    EXTRA.append(page(_sjc.TRANG, "Giá vàng SJC hôm nay, chênh lệch với thế giới bao nhiêu? | Chứng Khoán Huy Nguyễn",
+         f"Giá vàng miếng SJC hôm nay {_SJ['ngay']}: mua vào, bán ra, giá thế giới quy đổi và mức chênh lệch (triệu đồng/lượng), lịch sử từng ngày. Cập nhật 4 lần/ngày."[:158],
+         "Giá vàng SJC hôm nay và chênh lệch với thế giới", body,
+         [{"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqv]}]))
+# C1 (Phòng Web 28/11): máy tính vay mua nhà, đất. Ô nhập + /vay.js tính trên máy khách; bảng ví dụ tĩnh cho máy tìm kiếm và khi tắt JS.
+def _lich(P, n, m1, r1, r2, deu=True):
+    du, tl, R = P, 0, []
+    for k in range(1, n + 1):
+        r = (r1 if k <= m1 else r2) / 1200; lai = du * r
+        goc = P / n if deu else ((du * r / (1 - (1 + r) ** -(n - k + 1)) if r else du / (n - k + 1)) - lai)
+        if k == n: goc = du
+        du -= goc; tl += lai; R.append((k, goc + lai, goc, lai, max(du, 0)))
+    return R, tl
+_R, _TL = _lich(2e9, 240, 24, 7, 11)
+_t = lambda x: nf(x / 1e6, 1).replace(",0", "")
+_fi = lambda i, l, v, x="": f"<label for='{i}'>{l}<input id='{i}' inputmode='decimal' value='{v}'{x}></label>"
+faqc = [("Vay 2 tỷ trong 20 năm mỗi tháng trả bao nhiêu?", f"Ví dụ trả gốc đều, lãi ưu đãi 7%/năm trong 24 tháng rồi 11%/năm: tháng đầu trả khoảng {_t(_R[0][1])} triệu đồng, tháng 25 (hết ưu đãi) khoảng {_t(_R[24][1])} triệu, tổng tiền lãi cả kỳ khoảng {_t(_TL)} triệu. Lãi suất thật tùy ngân hàng, nhập số của mình vào máy tính để xem."),
+        ("Trả gốc đều và trả đều hằng tháng khác nhau thế nào?", "Trả gốc đều: mỗi tháng trả cùng một phần gốc, lãi tính trên dư nợ còn lại nên tháng đầu trả nhiều nhất rồi giảm dần, tổng lãi ít hơn. Trả đều: tổng tiền mỗi tháng như nhau (khi lãi không đổi), tháng đầu nhẹ hơn nhưng tổng lãi cao hơn."),
+        ("Vì sao hết thời gian ưu đãi tiền trả tăng mạnh?", "Sau ưu đãi, lãi chuyển sang thả nổi, thường bằng lãi cơ sở của ngân hàng cộng một biên độ. Dư nợ lúc đó vẫn còn lớn nên lãi tăng vài điểm phần trăm là tiền trả mỗi tháng tăng ngay."),
+        ("Tiền trả nợ bao nhiêu phần thu nhập là an toàn?", "Phép thử nợ của Chứng Khoán Huy Nguyễn dùng mốc 30% thu nhập cho tháng trả cao nhất, kèm câu hỏi: thu nhập giảm một nửa thì còn trả nổi 6 tháng không? Đây là mốc tự kiểm tra, không phải quy định của ngân hàng.")]
+body = ["<p>Nhập số tiền vay, số năm, lãi ưu đãi và lãi thả nổi: máy tính hiện ngay <b>tiền trả tháng đầu</b>, <b>tiền trả khi hết ưu đãi</b>, tổng tiền lãi và tỷ lệ trên thu nhập. Tính trên máy của anh chị, không gửi số đi đâu.</p>",
+        "<form class='vayf' id='vayf' autocomplete='off'>" + _fi("vay-so", "Số tiền vay (triệu đồng)", "2.000") + _fi("vay-nam", "Thời hạn (năm)", "20")
+        + _fi("vay-ud", "Lãi ưu đãi (%/năm)", "7") + _fi("vay-ud-thang", "Số tháng ưu đãi", "24") + _fi("vay-tn", "Lãi thả nổi sau ưu đãi (%/năm)", "11")
+        + _fi("vay-thu", "Thu nhập gia đình/tháng (triệu, không bắt buộc)", "40")
+        + "<label for='vay-kieu'>Cách trả<select id='vay-kieu'><option value='goc'>Gốc đều, lãi giảm dần</option><option value='deu'>Trả đều mỗi tháng</option></select></label></form>",
+        f"<div id='vay-o' aria-live='polite'><p>Ví dụ vay 2 tỷ, 20 năm, ưu đãi 7%/năm 24 tháng rồi 11%/năm, trả gốc đều: tháng đầu {_t(_R[0][1])} triệu, tháng 25 {_t(_R[24][1])} triệu, tổng lãi {_t(_TL)} triệu.</p></div>",
+        "<p class='vgt'>Số mặc định chỉ là ví dụ để minh họa, không phải lãi suất của ngân hàng nào. Anh chị nhập lãi suất trong hợp đồng hoặc bảng lãi ngân hàng báo cho mình.</p>",
+        "<h2>Câu hỏi thường gặp</h2>" + "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in faqc),
+        "<p>Đọc thêm: <a href='/gia-vang-sjc-hom-nay.html'>giá vàng SJC hôm nay</a> · <a href='/f0/'>cẩm nang tài chính cho người mới</a> · <a href='/the-gioi-hang-hoa.html'>lãi suất Mỹ, USD hôm nay</a>.</p>",
+        "<style>.vayf{display:grid;grid-template-columns:1fr 1fr;gap:10px 14px;margin:16px 0;padding:14px 16px;border:1px solid var(--gold);border-radius:12px;background:var(--panel)}"
+        ".vayf label{display:flex;flex-direction:column;gap:4px;font-size:14px;font-weight:600;color:var(--mute)}.vayf input,.vayf select{font:700 17px/1.3 inherit;font-family:inherit;padding:10px 12px;min-height:44px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--fg);width:100%;min-width:0}"
+        ".vk{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:12px 0}.vk>div{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 12px}.vk .k{margin:0;font-size:13px;color:var(--mute)}.vk .v{margin:0;font-size:21px;font-weight:800;font-variant-numeric:tabular-nums}.vk .v.do{color:#c0392b}"
+        ".xau{border-left:4px solid #c0392b;padding:6px 12px;background:var(--panel)}.tot{border-left:4px solid #0a8a4a;padding:6px 12px;background:var(--panel)}.vgt{font-size:13px;color:var(--mute)}"
+        "@media(max-width:600px){.vayf{grid-template-columns:1fr}.vk{grid-template-columns:1fr 1fr}.vk .v{font-size:18px}}</style><script src='/vay.js' defer></script>", CTA, NAV]
+EXTRA.append(page("may-tinh-vay-mua-nha.html", "Máy tính vay mua nhà, đất: trả mỗi tháng bao nhiêu? | Chứng Khoán Huy Nguyễn",
+     "Tính tiền trả mỗi tháng khi vay mua nhà, đất: lãi ưu đãi, lãi thả nổi, trả gốc đều hoặc trả đều, tổng tiền lãi và tỷ lệ trên thu nhập. Miễn phí, không cần đăng ký.",
+     "Máy tính vay mua nhà, đất", body,
+     [{"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqc]}]))
 sp = os.path.join(ROOT, "sitemap.xml"); sm = open(sp, encoding="utf-8").read()
-sm = re.sub(r"<url><loc>" + re.escape(B) + r"/(ma/[^<]*|thi-truong-chung-khoan-hom-nay\.html|dinh-gia-co-phieu\.html|tu-van-dau-tu-chung-khoan\.html|gioi-thieu\.html|lien-he\.html|chinh-sach-bao-mat\.html|the-gioi-hang-hoa\.html|ket-qua-kinh-doanh-quy\.html|soi-ma-mien-phi\.html)</loc>.*?</url>\n", "", sm)
+sm = re.sub(r"<url><loc>" + re.escape(B) + r"/(ma/[^<]*|thi-truong-chung-khoan-hom-nay\.html|dinh-gia-co-phieu\.html|tu-van-dau-tu-chung-khoan\.html|gioi-thieu\.html|lien-he\.html|chinh-sach-bao-mat\.html|the-gioi-hang-hoa\.html|ket-qua-kinh-doanh-quy\.html|soi-ma-mien-phi\.html|gia-vang-sjc-hom-nay\.html|may-tinh-vay-mua-nha\.html)</loc>.*?</url>\n", "", sm)
 add = "".join(f"<url><loc>{u}</loc><lastmod>{today}</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>\n" for u in EXTRA) + f"<url><loc>{B}/ma/</loc><lastmod>{today}</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>\n" + \
       "".join(f"<url><loc>{B}/ma/{t}.html</loc><lastmod>{today}</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>\n" for t in made)
 sm = sm.replace("</urlset>", add + "</urlset>")
