@@ -119,7 +119,7 @@ const DPR=LITE?Math.min(devicePixelRatio,1.6)/* điện thoại: độ nét vừ
 let renderer;try{renderer=new T.WebGLRenderer({antialias:false,powerPreference:'high-performance'})}catch(e1){try{renderer=new T.WebGLRenderer({antialias:false,powerPreference:'default',failIfMajorPerformanceCaveat:false})}catch(e2){
  document.getElementById('load').innerHTML='<div style="max-width:520px;padding:20px;text-align:center;line-height:1.6"><b style="font-size:20px">Trình duyệt chưa bật được đồ họa 3D (WebGL)</b><br>Cách sửa nhanh:<br>1. Đóng hẳn Chrome rồi mở lại (card đồ họa có thể đang bị treo).<br>2. Vào Cài đặt Chrome → Hệ thống → bật <b>"Sử dụng tính năng tăng tốc đồ họa khi có"</b>, rồi khởi động lại Chrome.<br>3. Bớt các tab đang mở game/video 3D khác.<br><button onclick="location.reload()" style="margin-top:14px;min-height:44px;padding:0 20px;border-radius:22px;border:0;font:700 16px serif;background:#e7c57a">Thử lại</button></div>';
  throw new Error('WebGL không khả dụng')}}renderer.domElement.id='gl';
-renderer.setPixelRatio(DPR);renderer.setSize(innerWidth,innerHeight);renderer.shadowMap.enabled=!LITE;renderer.shadowMap.type=LITE?T.PCFShadowMap:T.PCFSoftShadowMap;if(LITE){renderer.outputEncoding=T.sRGBEncoding;renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=.72}
+renderer.setPixelRatio(DPR);renderer.setSize(innerWidth,innerHeight);renderer.shadowMap.enabled=!LITE;renderer.shadowMap.type=LITE?T.PCFShadowMap:T.PCFSoftShadowMap;if(LITE){renderer.outputEncoding=T.sRGBEncoding;renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=.8}
 document.body.prepend(renderer.domElement);
 const scene=new T.Scene(),camera=new T.PerspectiveCamera(45,innerWidth/innerHeight,.25,1200);window.__scn=()=>scene;window.__camO=()=>camera;window.__rnd=()=>renderer;
 const $=id=>document.getElementById(id);
@@ -338,13 +338,13 @@ grass.count=0;/* bỏ cỏ cho nhẹ máy */
 
 /* ---------- bầu trời HDRI + ánh sáng ---------- */
 const pmremG=new T.PMREMGenerator(renderer);let skyM=null;
-const sun=new T.DirectionalLight(0xfff3e0,3.2);sun.castShadow=true;sun.shadow.mapSize.set(LITE?1024:2048,LITE?1024:2048);
+const sun=new T.DirectionalLight(0xffe6bf,3.4);sun.castShadow=true;sun.shadow.mapSize.set(LITE?1024:2048,LITE?1024:2048);
 Object.assign(sun.shadow.camera,{left:-42,right:42,top:42,bottom:-42,near:1,far:320});sun.shadow.bias=-.0004;sun.shadow.normalBias=.05;scene.add(sun,sun.target);
-const hemi=new T.HemisphereLight(0xdfe9ff,0x6a6040,.75);scene.add(hemi);
+const hemi=new T.HemisphereLight(0xbcd8ff,0x5a6a3a,1.0);scene.add(hemi);/* 28/11: đèn trời phụ ngược hướng nắng (xanh nhạt, không bóng) — mặt khuất nắng không còn đen kịt */const fillL=new T.DirectionalLight(0xa9c8ff,1.1);fillL.position.set(-Math.sin(2.618),1.2,-Math.cos(2.618)).multiplyScalar(100);scene.add(fillL);
 const sunDir=new T.Vector3().setFromSphericalCoords(1,T.MathUtils.degToRad(90-46),T.MathUtils.degToRad(150));
-scene.fog=new T.FogExp2(0x9db0c6,.0021);
+scene.fog=new T.FogExp2(0x8db3d3,.0024);
 TL.load('tex/sky.jpg',t=>{t.encoding=T.sRGBEncoding;t.mapping=T.EquirectangularReflectionMapping;scene.environment=pmremG.fromEquirectangular(t).texture;
- const sk=new T.Mesh(new T.SphereGeometry(900,48,24),new T.MeshBasicMaterial({map:t,side:T.BackSide,fog:false,depthWrite:false,color:new T.Color(2,2,2)}));sk.material.map.mapping=T.UVMapping;sk.renderOrder=-1;skyM=sk;scene.add(sk)});
+ const sk=new T.Mesh(new T.SphereGeometry(900,48,24),new T.MeshBasicMaterial({map:t,side:T.BackSide,fog:false,depthWrite:false,color:new T.Color(1.3,1.4,1.55)}));sk.material.map.mapping=T.UVMapping;sk.renderOrder=-1;skyM=sk;scene.add(sk)});
 
 /* ---------- phấn hoa bay ---------- */
 const DN=touch?200:400,dpos=new Float32Array(DN*3);for(let i=0;i<DN;i++)dpos.set([(rnd()-.5)*70,rnd()*8,(rnd()-.5)*70],i*3);
