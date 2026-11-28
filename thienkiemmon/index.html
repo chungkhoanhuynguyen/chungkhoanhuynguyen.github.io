@@ -6784,6 +6784,36 @@ try{(function(){
  const _na=npcAct;npcAct=function(x,k){try{if(x==='str'&&INSP&&INSP.team==='bot'&&!INSP.net&&!INSP.guard){window.__trd2(INSP);return}}catch(e){}return _na.apply(this,arguments)};
 })()}catch(e){console.warn('trd',e)}
 
+/* ===== TẨY LUYỆN + BỘ ĐỒ (28/11):
+ (1) Tẩy luyện: chọn món trong túi/đang mặc → đổi ngẫu nhiên các dòng phụ, tốn linh thạch theo phẩm; hiện dòng cũ và mới để chọn GIỮ MỚI hoặc GIỮ CŨ.
+ (2) Bộ đồ: mặc nhiều món cùng phẩm (Tím trở lên) kích hiệu ứng bộ — 2 món +4% công, 4 món +8% công thủ, 6 món +12% công thủ, 8 món +15% công thủ. Có trần, không vượt mức cân bằng ===== */
+try{(function(){
+ const SETN={3:'Tử Vân',4:'Hoàng Kim',5:'Xích Long',6:'Bạch Ngân Tiên'};
+ window.__setBonus=function(){const c={};Object.values(INV.eq).forEach(it=>{if(it&&it.tier>=3)c[it.tier]=(c[it.tier]||0)+1});let best=null;for(const t in c){const n=c[t];const b=n>=8?.15:n>=6?.12:n>=4?.08:n>=2?.04:0;const d=n>=4?b:0;if(b&&(!best||b>best.a||(b===best.a&&+t>best.t)))best={t:+t,n,a:b,d}}return best};
+ const _ea=eqAtk;eqAtk=function(){const v=_ea.apply(this,arguments);try{const b=__setBonus();return b?Math.round(v*(1+b.a)):v}catch(e){return v}};
+ const _ed=eqDef;eqDef=function(){const v=_ed.apply(this,arguments);try{const b=__setBonus();return b?Math.round(v*(1+b.d)):v}catch(e){return v}};
+ const cost=it=>Math.round(60*Math.pow(it.tier+1,2)*(1+(it.star||1)*.15));
+ const line=o=>{const D=OPTS[o[0]];return D?D[0]+' +'+o[1]+(D[3]||''):''};
+ function panel(it){const old=itOpts(it).map(o=>o.slice());const c=cost(it);
+  let d=document.getElementById('tlp');if(d)d.remove();d=document.createElement('div');d.id='tlp';d.style.cssText='position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:9100;width:min(440px,94vw);max-height:90vh;overflow:auto;background:linear-gradient(#1d1610,#120d09);border:1px solid #8a6a32;border-radius:8px;padding:12px;color:#f0e0c0;font-size:13.5px;box-shadow:0 10px 40px rgba(0,0,0,.7)';
+  const draw=(nw)=>{d.innerHTML=`<b style="color:#ffd36b;font-size:15px">🔮 Tẩy luyện · <span style="${tierCss(it.tier)}">${esc(it.name)}</span></b>
+   <div style="display:flex;gap:8px;margin-top:8px"><div style="flex:1;border:1px solid #5a4422;border-radius:6px;padding:6px"><b>Dòng hiện tại</b>${old.map(o=>'<div style="color:#9fd8ff">• '+line(o)+'</div>').join('')||'<div>—</div>'}</div>
+   ${nw?`<div style="flex:1;border:1px solid #3fd07a;border-radius:6px;padding:6px"><b>Dòng mới</b>${nw.map((o,i)=>{const p=old.find(q=>q[0]===o[0]);const up=p?o[1]>p[1]:true;return '<div style="color:'+(up?'#7fffb0':'#ff9a8a')+'">• '+line(o)+'</div>'}).join('')}</div>`:''}</div>
+   <p style="margin:8px 0;color:#c8b890">Mỗi lần tốn <b style="color:#9fe8ff">${c} linh thạch</b> (có ${TU.stone}). Dòng ngẫu nhiên theo phẩm, có trần như đồ rơi.</p>
+   <div style="display:flex;gap:6px">${nw?`<button data-t="keep" style="flex:1;min-height:40px;background:#1d4a2c;border:1px solid #3fd07a;color:#f0e0c0;border-radius:5px">✔ Giữ mới</button><button data-t="old" style="flex:1;min-height:40px;background:#2a1e12;border:1px solid #8a6a32;color:#f0e0c0;border-radius:5px">Giữ cũ</button>`:`<button data-t="roll" style="flex:1;min-height:40px;background:#3a2458;border:1px solid #b48cff;color:#f0e0c0;border-radius:5px">🔮 Tẩy luyện</button>`}<button data-t="x" style="flex:1;min-height:40px;background:#2a1e12;border:1px solid #8a6a32;color:#f0e0c0;border-radius:5px">Đóng</button></div>`;
+   d.onclick=ev=>{const b=ev.target.closest('[data-t]');if(!b)return;const t=b.dataset.t;
+    if(t==='x'){d.remove();return}
+    if(t==='roll'){if(TU.stone<c){try{chat('Không đủ linh thạch để tẩy luyện.','k')}catch(e){}return}TU.stone-=c;try{saveTL();refreshTL()}catch(e){}const tmp={...it,opt:null};const nw=rollOpts(tmp);d._nw=nw;try{sfx('magic')}catch(e){}draw(nw);return}
+    if(t==='keep'&&d._nw){it.opt=d._nw;old.length=0;d._nw.forEach(o=>old.push(o.slice()));d._nw=null;try{saveINV();applyGlow&&applyGlow()}catch(e){}try{renderInv()}catch(e){}draw(null);return}
+    if(t==='old'){d._nw=null;draw(null);return}}};
+  draw(null);document.body.appendChild(d)}
+ window.__tlPanel=panel;
+ const _ri=renderInv;renderInv=function(){const r=_ri.apply(this,arguments);try{const w=$('invw');let it=null;if(typeof invSel==='number')it=INV.bag[invSel];else if(typeof invSel==='string'&&invSel.startsWith('e:'))it=INV.eq[invSel.slice(2)];
+   if(it&&!it.book&&it.tier>=1&&w){const card=w.querySelector('.icard');if(card&&!card.querySelector('.tlb')){const b=document.createElement('button');b.className='tlb';b.textContent='🔮 Tẩy luyện dòng phụ';b.style.cssText='border-color:#b48cff;color:#d6b8ff';b.onclick=ev=>{ev.stopPropagation();panel(it)};const host=card.querySelector('button')?card.querySelector('button').parentElement:card;host.appendChild(b)}}
+   const sb=__setBonus();if(w){let el=w.querySelector('.setb');if(!el){el=document.createElement('div');el.className='setb';el.style.cssText='margin:4px 0;padding:4px 8px;border:1px solid #5a4422;border-radius:5px;font-size:12.5px;color:#ffd36b;background:rgba(0,0,0,.25)';const c=w.querySelector('.eqc');c?c.appendChild(el):w.appendChild(el)}
+    el.innerHTML=sb?`✦ Bộ <b>${SETN[sb.t]||''}</b> ${sb.n} món: +${Math.round(sb.a*100)}% công${sb.d?' · +'+Math.round(sb.d*100)+'% thủ':''} <small style="opacity:.7">(2/4/6/8 món cùng phẩm Tím trở lên)</small>`:`<small style="opacity:.75">Bộ đồ: mặc 2/4/6/8 món cùng phẩm (Tím trở lên) để kích hiệu ứng bộ.</small>`}}catch(e){}return r};
+})()}catch(e){console.warn('tl',e)}
+
 try{window.__enterBC=()=>{BC.day='';enterBC()};window.__bfJoin=sd=>bfJoin(sd||'tien');window.__BCo=BC;window.__BFo=BF}catch(e){}
 window.__wp={renderer,T,WEAPONS,fabaoModel,TIERS,FBE,RT,VB:()=>VB,hero:()=>hero,TD:{tdKiem,tdXuan,tdBang,tdAn,swordRain,phoenix,tornado,maVortex,dQi:()=>dragonE('qi'),dTh:()=>dragonE('thunder'),dFi:()=>dragonE('fire'),dBl:()=>dragonE('blood'),vortex:()=>{const T0=performance.now();maVortex();return performance.now()-T0},ice:()=>{const t=TU.tong,r=TU.realm,l=TU.learned;TU.tong='thuy';TU.realm=4;TU.learned=['Huyền Băng Trảm','Băng Phong Vạn Lý'];hero.mp=100;P.cds[1]=0;try{_useSkill(1+'')}finally{TU.tong=t;TU.realm=r;TU.learned=l}}},TU:()=>TU};setTimeout(()=>{if(typeof TKACCT!=='undefined')TKACCT.boot()},0);
 window.__demo={closeInv:()=>closeInv(),castAt:(id,x,z)=>{const h=heroPos(),o=h.clone(),f=hero.face;h.x=x;h.z=z;hero.face=Math.random()*6.28;try{castCP(id,true)}catch(e){}h.copy(o);hero.face=f},BF,bfJoin,bfBuild,allEnts:()=>ents,ICL:()=>ICL,equipWeapon:(a,b)=>equipWeapon(a,b),wearBest,equip:i=>{equip.silent=1;try{equip(i)}finally{equip.silent=0}},heroPos,TRIB:()=>TRIB,addCorpse,deathDrop,ents:()=>ents,foe:e=>foe(e),castCP,CP,mkBook,learnBook,P2P,NET,itemCard,optHTML,onHunt,rankTick,RANK,WFALL,castFX,VILLC:()=>window.__vc,tribGo,tribReady,needXp,bankPanel,CG,titles,leaveBC,zoneStream,ZPOP,GANGS,PARTY,ptInvite,hit,NET,netUpd,CORPSE,goInt,toggleFly,updFabao,GARR,WFIX,spawnMon,EV,EVT,npcAct,openInv,SQUADS:()=>SQUADS,CIT:()=>CIT,MUS,PK,togglePK,callReinf,maAct,gainXp,realmText,updPK,INV,BC,mkItem,dropItem,enterBC,TU,refreshTL,bloom:()=>bloom,LOOK,buildAvatar,setSW:(a,b,c)=>{hero.vw&&hero.vw.rotation.set(a,b,c)},hero,P,useSkill,ents,setView:(y,p,d)=>{yaw=y;pitch=p;dist=d}};
