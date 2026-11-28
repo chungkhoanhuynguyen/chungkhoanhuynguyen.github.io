@@ -242,7 +242,7 @@ box(10,.06,PLAZA.z1-PLAZA.z0,mGranite,0,PLAZA.y+.03,(PLAZA.z0+PLAZA.z1)/2,3);
  const ring=new T.Mesh(new T.TorusGeometry(6.2,.12,6,64),mGold);ring.rotation.x=Math.PI/2;ring.position.set(0,PLAZA.y+.1,-4);scene.add(ring)}
 
 /* ---------- mái cong ---------- */
-function roofGeo(w,d,h,curl){const N=28,g=new T.PlaneGeometry(1,1,N,N),p=g.attributes.position,uv=g.attributes.uv,r=Math.max(0,1-d/w);
+function roofGeo(w,d,h,curl){const N=(typeof touch!=='undefined'&&touch)?12:18,/* 28/11: mái bớt lưới (28→12 điện thoại, 18 máy tính) — trước đây riêng mái ngốn ~400 nghìn tam giác */g=new T.PlaneGeometry(1,1,N,N),p=g.attributes.position,uv=g.attributes.uv,r=Math.max(0,1-d/w);
  for(let i=0;i<p.count;i++){const u=p.getX(i)*2,v=-p.getY(i)*2,au=Math.abs(u),av=Math.abs(v);const tu=r<1?Math.max(0,(au-r)/(1-r)):au;const t=Math.max(av,tu);
   let y=h*Math.pow(1-t,1.7);y+=curl*Math.pow(sm(.55,1,au)*sm(.55,1,av),1.5)+curl*.25*sm(.8,1,t);
   const x=u*w/2,z=v*d/2;p.setXYZ(i,x,y,z);uv.setXY(i,x/3,(t*Math.hypot(w,d)/2+y)/3)}
