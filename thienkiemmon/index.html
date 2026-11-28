@@ -6875,6 +6875,39 @@ try{(function(){if(/nogop/.test(location.search))return;
  setInterval(()=>{if(typeof creating!=='undefined'&&creating)return;tick()},2500);
 })()}catch(e){}
 
+/* ===== BÃI LUYỆN ĐẦY ĐẶN (28/11): ngoài thành thêm đá tảng, bụi cây, khóm cỏ cao và hoa dại — gộp thành 4 lưới màu đỉnh theo 4 hướng (quay lưng hướng nào thì hướng đó không vẽ), mỗi lưới 1 lần vẽ; tránh nhà, làng, dốc đá, mặt nước ===== */
+try{(function(){if(/[?&]nobai/.test(location.search))return;setTimeout(()=>{try{
+ const Q=[0,1,2,3].map(()=>({P:[],N:[],C:[]}));const m=new T.Matrix4(),v=new T.Vector3(),n=new T.Vector3(),nm=new T.Matrix3(),q=new T.Quaternion(),e=new T.Euler(),s3=new T.Vector3(),p3=new T.Vector3(),up=new T.Vector3(0,1,0);
+ let seed=2811;const rnd=()=>{seed=(seed*16807)%2147483647;return seed/2147483647};
+ const qi=(x,z)=>Math.abs(x)>Math.abs(z)?(x>0?0:1):(z>0?2:3);
+ function add(B,geo,mat4,colf,flatUp){const g=geo.index?geo.toNonIndexed():geo;const p=g.attributes.position,qn=g.attributes.normal;nm.getNormalMatrix(mat4);for(let i=0;i<p.count;i++){v.fromBufferAttribute(p,i);const ly=v.y;v.applyMatrix4(mat4);if(flatUp)n.copy(up);else n.fromBufferAttribute(qn,i).applyMatrix3(nm).normalize();B.P.push(v.x,v.y,v.z);B.N.push(n.x,n.y,n.z);const c=colf(ly);B.C.push(c.r,c.g,c.b)}}
+ const rockG=new T.IcosahedronGeometry(1,0).toNonIndexed();rockG.computeVertexNormals();const bushG=new T.IcosahedronGeometry(1,1).toNonIndexed();{const bpp=bushG.attributes.position,bn=[];for(let i=0;i<bpp.count;i++){const vv=new T.Vector3().fromBufferAttribute(bpp,i).normalize();bn.push(vv.x,vv.y*.8+.2,vv.z)}bushG.setAttribute('normal',new T.Float32BufferAttribute(bn,3))}
+ // khóm cỏ: 6 lá tam giác, mỗi lá 2 mặt
+ const bp=[];for(let k=0;k<5;k++){const a=k/5*Math.PI*2+rnd()*.5,r=.18,w=.07,h=.8+rnd()*.5,lx=Math.cos(a)*r,lz=Math.sin(a)*r,tx=Math.cos(a)*w,tz=Math.sin(a)*w,ox=Math.cos(a)*.35,oz=Math.sin(a)*.35;const A=[lx-tz,0,lz+tx],Bv=[lx+tz,0,lz-tx],Cv=[lx+ox,h,lz+oz];bp.push(...A,...Bv,...Cv,...Bv,...A,...Cv)}
+ const tuftG=new T.BufferGeometry();tuftG.setAttribute('position',new T.Float32BufferAttribute(bp,3));tuftG.setAttribute('normal',new T.Float32BufferAttribute(new Array(bp.length).fill(0).map((_,i)=>i%3===1?1:0),3));
+ const C=h=>new T.Color(h);const rockC=[0x6e6a62,0x7d776b,0x5d5a54,0x857b68].map(C),bushC=[0x2c5222,0x36602a,0x28461f,0x41662e].map(C),grassB=C(0x3d5f22),grassT=[0x86a040,0x6f9036,0x9c9c48].map(C),flw=[0xf2d04a,0xf4f0e0,0xb07ad8,0xe8604a].map(C);
+ const blocked=(x,z,r)=>(typeof colliders!=='undefined'&&colliders.some(c=>x+r>c[0]&&x-r<c[1]&&z+r>c[2]&&z-r<c[3]))||((typeof VPATH!=='undefined'?VPATH:[]).some(c=>Math.hypot(x-c[0],z-c[1])<34));
+ const slope=(x,z)=>Math.max(Math.abs(H(x+2,z)-H(x-2,z)),Math.abs(H(x,z+2)-H(x,z-2)))/4;
+ const R0=CITY+12,R1=LITE?400:520,dens=LITE?.5:1;let nr=0,nb=0,ng=0;
+ const tries=Math.round(9000*dens);
+ for(let t=0;t<tries;t++){const a=rnd()*Math.PI*2,rr=Math.sqrt(R0*R0+rnd()*(R1*R1-R0*R0));const x=Math.cos(a)*rr,z=Math.sin(a)*rr;
+  if(Math.max(Math.abs(x),Math.abs(z))<CITY+8)continue;if(Math.abs(x)<7&&z>0)continue;const y=H(x,z);if(y<-.4||y>45)continue;const sl=slope(x,z);if(sl>.55)continue;if(blocked(x,z,2))continue;
+  const B=Q[qi(x,z)];const kind=rnd();
+  if(kind<.16){// cụm đá: 1 tảng lớn + 1-3 đá nhỏ
+   const cl=rockC[Math.floor(rnd()*4)];const nn=1+Math.floor(rnd()*3);for(let k=0;k<=nn;k++){const big=k===0,sc=big?.7+rnd()*1.3:.2+rnd()*.35,ox=big?0:(rnd()-.5)*3.2,oz=big?0:(rnd()-.5)*3.2;const yy=H(x+ox,z+oz);
+    e.set(rnd()*.6,rnd()*6.28,rnd()*.6);q.setFromEuler(e);s3.set(sc*(1+rnd()*.5),sc*(.55+rnd()*.35),sc*(1+rnd()*.4));p3.set(x+ox,yy+s3.y*.35,z+oz);m.compose(p3,q,s3);
+    const moss=rnd()<.5;add(B,rockG,m,ly=>{const c=cl.clone().multiplyScalar(.62+.5*(ly+1)*.5);if(moss&&ly>.35)c.lerp(bushC[1],.55);return c})}nr++}
+  else if(kind<.3){// bụi cây
+   const cl=bushC[Math.floor(rnd()*4)],nn=Math.floor(rnd()*2);for(let k=0;k<=nn;k++){const sc=.6+rnd()*.7,ox=(rnd()-.5)*1.6,oz=(rnd()-.5)*1.6;e.set(0,rnd()*6.28,0);q.setFromEuler(e);s3.set(sc*1.2,sc*(.75+rnd()*.3),sc*1.1);p3.set(x+ox,H(x+ox,z+oz)+s3.y*.55,z+oz);m.compose(p3,q,s3);
+    add(B,bushG,m,ly=>cl.clone().multiplyScalar(.55+.55*(ly+1)*.5))}nb++}
+  else{// khóm cỏ cao, có khi kèm hoa dại
+   const nn=2+Math.floor(rnd()*3),fl=rnd()<.35?flw[Math.floor(rnd()*4)]:null;for(let k=0;k<nn;k++){const ox=(rnd()-.5)*2.4,oz=(rnd()-.5)*2.4,sc=.7+rnd()*.6;e.set(0,rnd()*6.28,0);q.setFromEuler(e);s3.set(sc,sc*(.8+rnd()*.5),sc);p3.set(x+ox,H(x+ox,z+oz)-.05,z+oz);m.compose(p3,q,s3);
+    const tip=(fl&&k%2===0)?fl:grassT[Math.floor(rnd()*3)];add(B,tuftG,m,ly=>ly>.5?tip:grassB.clone().lerp(tip,ly*.9),true)}ng++}}
+ const mat=new T.MeshLambertMaterial({vertexColors:true});const out=[];
+ Q.forEach((B,i)=>{if(!B.P.length)return;const g=new T.BufferGeometry();g.setAttribute('position',new T.Float32BufferAttribute(B.P,3));g.setAttribute('normal',new T.Float32BufferAttribute(B.N,3));g.setAttribute('color',new T.Float32BufferAttribute(B.C,3));g.computeBoundingSphere();g.computeBoundingBox();
+  const me=new T.Mesh(g,mat);me.name='bai_luyen_'+i;me.matrixAutoUpdate=false;me.updateMatrix();scene.add(me);out.push(me)});
+ window.__bai={da:nr,bui:nb,co:ng,tamgiac:out.reduce((s,o)=>s+o.geometry.attributes.position.count/3,0)|0,luoi:out.length}}catch(err){console.warn('bai',err)}},2200)})()}catch(e){}
+
 try{window.__enterBC=()=>{BC.day='';enterBC()};window.__bfJoin=sd=>bfJoin(sd||'tien');window.__BCo=BC;window.__BFo=BF}catch(e){}
 window.__wp={renderer,T,WEAPONS,fabaoModel,TIERS,FBE,RT,VB:()=>VB,hero:()=>hero,TD:{tdKiem,tdXuan,tdBang,tdAn,swordRain,phoenix,tornado,maVortex,dQi:()=>dragonE('qi'),dTh:()=>dragonE('thunder'),dFi:()=>dragonE('fire'),dBl:()=>dragonE('blood'),vortex:()=>{const T0=performance.now();maVortex();return performance.now()-T0},ice:()=>{const t=TU.tong,r=TU.realm,l=TU.learned;TU.tong='thuy';TU.realm=4;TU.learned=['Huyền Băng Trảm','Băng Phong Vạn Lý'];hero.mp=100;P.cds[1]=0;try{_useSkill(1+'')}finally{TU.tong=t;TU.realm=r;TU.learned=l}}},TU:()=>TU};setTimeout(()=>{if(typeof TKACCT!=='undefined')TKACCT.boot()},0);
 window.__demo={closeInv:()=>closeInv(),castAt:(id,x,z)=>{const h=heroPos(),o=h.clone(),f=hero.face;h.x=x;h.z=z;hero.face=Math.random()*6.28;try{castCP(id,true)}catch(e){}h.copy(o);hero.face=f},BF,bfJoin,bfBuild,allEnts:()=>ents,ICL:()=>ICL,equipWeapon:(a,b)=>equipWeapon(a,b),wearBest,equip:i=>{equip.silent=1;try{equip(i)}finally{equip.silent=0}},heroPos,TRIB:()=>TRIB,addCorpse,deathDrop,ents:()=>ents,foe:e=>foe(e),castCP,CP,mkBook,learnBook,P2P,NET,itemCard,optHTML,onHunt,rankTick,RANK,WFALL,castFX,VILLC:()=>window.__vc,tribGo,tribReady,needXp,bankPanel,CG,titles,leaveBC,zoneStream,ZPOP,GANGS,PARTY,ptInvite,hit,NET,netUpd,CORPSE,goInt,toggleFly,updFabao,GARR,WFIX,spawnMon,EV,EVT,npcAct,openInv,SQUADS:()=>SQUADS,CIT:()=>CIT,MUS,PK,togglePK,callReinf,maAct,gainXp,realmText,updPK,INV,BC,mkItem,dropItem,enterBC,TU,refreshTL,bloom:()=>bloom,LOOK,buildAvatar,setSW:(a,b,c)=>{hero.vw&&hero.vw.rotation.set(a,b,c)},hero,P,useSkill,ents,setView:(y,p,d)=>{yaw=y;pitch=p;dist=d}};
