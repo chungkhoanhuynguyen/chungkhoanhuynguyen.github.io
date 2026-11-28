@@ -17665,12 +17665,20 @@
 "Khi còn đi làm, tích sản là góp đều mỗi tháng và chờ lãi kép. Khi nghỉ hưu, bài toán đổi chiều: không còn thu nhập lương để góp thêm, mà cần <b>rút ra</b> để chi tiêu. Phương pháp vì thế cũng phải điều chỉnh."
 ],
 [
+"p",
+"Chưa nghỉ hưu và muốn biết mỗi tháng cần để dành bao nhiêu theo tuổi bắt đầu, xem bảng ở bài <a href=\"/f0/de-danh-bao-nhieu-cho-tuoi-gia.html\">để dành bao nhiêu cho tuổi già</a>."
+],
+[
 "h2",
 "1. Rủi ro lớn nhất: bán đúng lúc thị trường giảm"
 ],
 [
 "p",
-"Số liệu thật của một tài khoản tích sản cổ phiếu ngân hàng từ 01/2018 cho thấy: cả giai đoạn tăng 731,1%, nhưng có lúc sụt sâu nhất <b>−42,5%</b>, và có 3 năm lỗ (2018 −11,2%, 2019 −13,6%, 2022 −17,2%). Người còn đi làm có thể chờ qua những năm này. Người nghỉ hưu nếu phải bán cổ phiếu để chi tiêu đúng năm giảm sẽ biến khoản lỗ tạm thời thành lỗ thật."
+"Số liệu thật của một tài khoản tích sản cổ phiếu ngân hàng từ 01/2018 cho thấy: cả giai đoạn tăng 731,1%, nhưng có lúc sụt sâu nhất <b>−42,5%</b>, và có 3 năm lỗ (2018 −11,2%, 2019 −13,6%, 2022 −17,2%)."
+],
+[
+"p",
+"Người còn đi làm có thể chờ qua những năm này. Người nghỉ hưu nếu phải bán cổ phiếu để chi tiêu đúng năm giảm sẽ biến khoản lỗ tạm thời thành lỗ thật."
 ],
 [
 "h2",
@@ -17722,7 +17730,7 @@
 ],
 [
 "p",
-"Kết quả quá khứ, không phải cam kết lợi nhuận. Nội dung mang tính giáo dục, không phải khuyến nghị mua bán. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
+"Kết quả quá khứ không bảo đảm tương lai. Cần trao đổi riêng về danh mục: Zalo 0365.188.286."
 ]
 ],
 "faq": [
@@ -17740,12 +17748,14 @@
 ]
 ],
 "rel": [
+"de-danh-bao-nhieu-cho-tuoi-gia",
 "tich-san-chung-khoan-la-gi",
 "rui-ro-khi-tich-san",
 "co-phieu-ngan-hang-co-tuc-cao",
 "cach-phan-bo-ty-trong-co-phieu"
 ],
-"add": []
+"add": [],
+"mod": "2026-11-28"
 },
 {
 "slug": "trai-phieu-chinh-phu-la-gi",
@@ -37703,7 +37713,11 @@
 "body": [
 [
 "p",
-"Một nền kinh tế giống một gia đình: lúc nhiều người đi làm, ít người phải nuôi, tiền để dành dễ dồn lại. Lúc người già đông lên, người đi làm ít đi, gánh nặng chuyển sang thế hệ trẻ. Thời kỳ thuận lợi đầu tiên gọi là <b>dân số vàng</b>."
+"Năm 2024, cứ 100 trẻ em ở Việt Nam đã có khoảng <b>60 người cao tuổi</b> (VietNamNet 14/7/2026). Tức là cứ 5 đứa trẻ có 3 người cao tuổi – và con số này còn tăng nhanh."
+],
+[
+"p",
+"Một nền kinh tế giống một gia đình: lúc nhiều người đi làm, ít người phải nuôi, tiền để dành dễ dồn lại. Quãng thuận lợi ấy gọi là <b>dân số vàng</b>, và Việt Nam chỉ còn khoảng 10 năm."
 ],
 [
 "h2",
@@ -37711,7 +37725,11 @@
 ],
 [
 "p",
-"Là giai đoạn số người trong độ tuổi lao động đông hơn hẳn số người phụ thuộc (trẻ em và người cao tuổi). Đây là \"cửa sổ cơ hội\": lực lượng đi làm dồi dào, tiết kiệm và đầu tư dễ tăng, giúp kinh tế chạy nhanh."
+"Là giai đoạn cứ ít nhất 2 người trong tuổi đi làm mới có 1 người phụ thuộc (trẻ em hoặc người cao tuổi). Đây là \"cửa sổ cơ hội\": người đi làm đông, tiết kiệm và đầu tư dễ tăng, kinh tế chạy nhanh."
+],
+[
+"p",
+"Việt Nam vào dân số vàng từ năm 2007. Theo GS Nguyễn Đình Cử, ta đã dùng gần 20 năm và còn khoảng 10 năm (VietNamNet 14/7/2026)."
 ],
 [
 "h2",
@@ -37719,24 +37737,64 @@
 ],
 [
 "p",
-"Theo báo cáo Dự báo dân số Việt Nam 2024–2074 do Cục Thống kê chủ trì cùng Quỹ Dân số Liên hợp quốc (UNFPA), Tuổi Trẻ đưa tin 27/1/2026:"
+"Đã sắp hết quãng vàng. Theo báo cáo Dự báo dân số Việt Nam 2024–2074 của Cục Thống kê và Quỹ Dân số Liên hợp quốc (UNFPA), Tuổi Trẻ đưa tin 27/1/2026:"
+],
+[
+"table",
+[
+[
+"Dự báo dân số",
+"Con số"
+],
+[
+"Người từ 60 tuổi<br>năm 2024",
+"≈ 14,2 triệu"
+],
+[
+"Người từ 60 tuổi<br>năm 2034",
+"≈ 20,9 triệu"
+],
+[
+"Thành nước<br>dân số già",
+"<b>2034</b>"
+],
+[
+"Hết dân số vàng",
+"khoảng 2036"
+],
+[
+"Người trong tuổi<br>lao động đạt đỉnh",
+"2038 (≈ 69,5 tr)"
+]
+]
+],
+[
+"p",
+"Hết dân số vàng khoảng 2036 là sớm hơn 3 năm so với dự báo năm 2019. Nước dân số già là khi người từ 65 tuổi chiếm từ 14% dân số – khoảng 1 trong 7 người."
+],
+[
+"h2",
+"Vì sao Việt Nam già nhanh?"
+],
+[
+"p",
+"Vì sinh ít đi và sống lâu hơn. Năm 2024, mỗi phụ nữ trung bình còn khoảng 1,91 con (VietNamNet 27/3/2025), thấp hơn mức 2,1 con để dân số không giảm."
 ],
 [
 "ul",
 [
-"Năm 2024 cả nước có khoảng <b>14,2 triệu</b> người từ 60 tuổi trở lên; dự báo 20,9 triệu năm 2034.",
-"Việt Nam thành nước có <b>dân số già</b> năm <b>2034</b>.",
-"Thời kỳ dân số vàng kết thúc khoảng <b>2036</b>, sớm hơn 3 năm so với dự báo năm 2019.",
-"Lực lượng lao động đạt đỉnh khoảng 69,5 triệu người năm 2038."
+"Ít con thì sau này ít người đi làm nuôi người già.",
+"Nhật mất 24 năm từ lúc bắt đầu già hoá đến khi thành xã hội già; Việt Nam được dự kiến chỉ mất khoảng 21 năm (VnExpress 23/12/2024).",
+"Nghĩa là ta không chỉ già với túi mỏng hơn, mà còn già nhanh hơn."
 ]
 ],
 [
 "h2",
-"Bài học Thái Lan: già trước khi giàu"
+"Già trước khi giàu là gì? Bài học Thái Lan"
 ],
 [
 "p",
-"Thái Lan từng tăng trưởng 13,3% năm 1988 (Tiền Phong, số Ngân hàng Thế giới). Nhưng năm 2025 thu nhập bình quân đầu người mới khoảng 7.690 USD, chưa tới ngưỡng nước thu nhập cao 14.375 USD, trong khi từ năm 2023 hơn 20% dân số đã từ 60 tuổi (The Nation 28/9/2025). Họ \"già trước khi giàu\"."
+"Là khi dân số đã già trong lúc thu nhập bình quân chưa tới mức nước giàu. Thái Lan từng tăng trưởng 13,3% năm 1988 (Tiền Phong, số Ngân hàng Thế giới), nhưng năm 2025 thu nhập bình quân mới khoảng 7.690 USD, trong khi từ 2023 hơn 20% dân số đã từ 60 tuổi (The Nation 28/9/2025)."
 ],
 [
 "table",
@@ -37747,12 +37805,12 @@
 "Thái Lan"
 ],
 [
-"Thu nhập bình quân đầu người 2025",
+"Thu nhập bình quân<br>đầu người 2025",
 "4.970 USD",
 "7.690 USD"
 ],
 [
-"Dự báo tăng trưởng 2026 (IMF 10/2026)",
+"Dự báo tăng trưởng<br>2026 (IMF 10/2026)",
 "8,4%",
 "2,1%"
 ],
@@ -37764,6 +37822,22 @@
 ]
 ],
 [
+"p",
+"Một phép tính đơn giản (em tự tính, giả định ngưỡng nước thu nhập cao 14.375 USD đứng yên): từ 4.970 USD, thu nhập bình quân tính bằng USD phải tăng khoảng <b>5,5% mỗi năm</b> trong 20 năm để chạm ngưỡng ấy vào năm 2045."
+],
+[
+"h2",
+"Dân số già chạm vào túi tiền nhà mình thế nào?"
+],
+[
+"p",
+"Qua lương hưu. Chỉ khoảng 1 trong 6 người cao tuổi có lương hưu hoặc trợ cấp bảo hiểm xã hội hằng tháng; lương hưu bình quân khoảng 6,2 triệu/tháng. Người không có lương hưu phải đủ 75 tuổi mới có trợ cấp hưu trí xã hội 500.000 đồng/tháng."
+],
+[
+"p",
+"Bảng \"để dành bao nhiêu mỗi tháng theo tuổi bắt đầu\" em để ở bài <a href=\"/f0/de-danh-bao-nhieu-cho-tuoi-gia.html\">để dành bao nhiêu cho tuổi già</a>: bắt đầu năm 35 tuổi cần gần 5 triệu/tháng, đợi đến 45 tuổi thì hơn 8 triệu."
+],
+[
 "h2",
 "Điều này có nghĩa gì với tiền của anh chị?"
 ],
@@ -37772,12 +37846,20 @@
 [
 "Những năm thu nhập còn tăng nhanh là lúc để dành và đầu tư hiệu quả nhất; đừng dùng hết vào trả góp tiêu dùng.",
 "Chuẩn bị tài chính cho tuổi già của bố mẹ và của chính mình sớm, vì số người phải nuôi sẽ tăng.",
-"Ngành hưởng lợi và chịu thiệt sẽ đổi dần theo cơ cấu dân số; nhà đầu tư nên theo dõi xu hướng dài hạn này."
+"Ngành hưởng lợi và chịu thiệt đổi dần theo cơ cấu dân số (y tế, bảo hiểm, chăm sóc người già…); đây là xu hướng dài hạn, không phải tín hiệu mua bán."
 ]
 ],
 [
-"p",
-"Một phép tính đơn giản (em tự tính, giả định ngưỡng 14.375 USD đứng yên): từ 4.970 USD, thu nhập bình quân tính bằng USD phải tăng khoảng <b>5,5% mỗi năm</b> trong 20 năm để chạm ngưỡng nước giàu vào năm 2045."
+"h2",
+"Bẫy hay gặp"
+],
+[
+"ul",
+[
+"<b>Nghĩ \"còn 10 năm, còn lâu\".</b> 10 năm là quãng cả nước còn thuận lợi; với từng nhà, mỗi năm chờ làm khoản cần để dành mỗi tháng tăng lên.",
+"<b>Ghép số khác nguồn.</b> 14,2 triệu (người từ 60 tuổi, dự báo 2024) và 16,1 triệu người cao tuổi (VnEconomy) đếm khác nhau – đừng cộng trừ.",
+"<b>Nhầm \"dân số già\" với \"dân số giảm\".</b> Dân số vẫn có thể tăng trong khi tỷ lệ người già tăng nhanh hơn."
+]
 ],
 [
 "cta",
@@ -37787,30 +37869,32 @@
 ],
 [
 "p",
-"<small>Nguồn: Cục Thống kê – UNFPA (Tuổi Trẻ 27/1/2026); Tiền Phong 9/7/2026; The Nation 28/9/2025; IMF WEO 10/2026. Chia sẻ kiến thức, không phải khuyến nghị đầu tư.</small>"
+"<small>Nguồn: Cục Thống kê – UNFPA (Tuổi Trẻ 27/1/2026); VietNamNet 27/3/2025, 14/7/2026; VnExpress 23/12/2024; VnEconomy 9/7/2024, 10/2/2025; Nghị định 176/2025; Tiền Phong 9/7/2026; The Nation 28/9/2025; IMF WEO 10/2026. Em tự tính các phép chia.</small>"
 ]
 ],
 "faq": [
 [
 "Dân số vàng là gì?",
-"Là thời kỳ số người trong độ tuổi lao động đông hơn hẳn số người phụ thuộc (trẻ em, người già), tạo cơ hội tăng tiết kiệm và tăng trưởng."
+"Là thời kỳ cứ ít nhất 2 người trong tuổi lao động mới có 1 người phụ thuộc (trẻ em, người già), tạo cơ hội tăng tiết kiệm và tăng trưởng. Việt Nam vào thời kỳ này từ năm 2007."
 ],
 [
 "Khi nào Việt Nam hết dân số vàng?",
-"Theo dự báo của Cục Thống kê và UNFPA, khoảng năm 2036; Việt Nam thành nước dân số già năm 2034."
+"Theo dự báo của Cục Thống kê và UNFPA (Tuổi Trẻ 27/1/2026), khoảng năm 2036; Việt Nam thành nước dân số già năm 2034, khi người từ 65 tuổi chiếm từ 14% dân số."
 ],
 [
 "Già trước khi giàu nghĩa là gì?",
-"Là khi dân số đã già hoá trong lúc thu nhập bình quân chưa đạt mức nước giàu, như Thái Lan hiện nay."
+"Là khi dân số đã già hoá trong lúc thu nhập bình quân chưa đạt mức nước giàu, như Thái Lan hiện nay. Khi Nhật thành xã hội già năm 1994, thu nhập mỗi người khoảng 40.000 USD; Việt Nam năm 2024 khoảng 4.700 USD."
 ]
 ],
 "rel": [
+"de-danh-bao-nhieu-cho-tuoi-gia",
 "luong-thuc-te-la-gi",
 "viet-nam-dang-no-bao-nhieu",
 "ty-le-tra-no-tren-thu-nhap-la-gi",
 "lam-phat-va-chung-khoan",
 "lai-kep-trong-dau-tu"
-]
+],
+"mod": "2026-11-28"
 },
 {
 "slug": "luong-cao-van-het-tien",
@@ -40069,7 +40153,7 @@
 "body": [
 [
 "p",
-"Tối thứ Ba ở Đồng Nai, chị Hạnh mua 2 cân đùi gà đông lạnh ở chợ, <b>50.000 đồng/kg</b>, rẻ hơn hẳn gà trong nước. Cùng bữa cơm đó, anh Tâm chồng chị tính sổ lứa 6.000 con gà trắng vừa xuất chuồng: nếu lỗ như mức người nuôi Đồng Nai đang báo, khoảng <b>30.000 đồng/con</b>, cả lứa mất <b>180 triệu</b>."
+"Tối thứ Ba ở Đồng Nai, chị Hạnh mua 2 cân đùi gà đông lạnh ở chợ, <b>50.000 đồng/kg</b>, rẻ hơn hẳn gà trong nước. Cùng bữa cơm đó, anh Tâm chồng chị tính sổ lứa 6.000 con gà trắng vừa xuất chuồng: nếu lỗ như mức người nuôi Đồng Nai đang báo, khoảng 30.000 đồng/con, cả lứa mất <b>180 triệu</b>."
 ],
 [
 "p",
@@ -40132,7 +40216,15 @@
 ],
 [
 "p",
-"Vì con số 140 tỷ ở trên. Tháng 4/2025 Mỹ công bố thuế đối ứng <b>46%</b> với hàng Việt Nam, đến tháng 8/2025 còn <b>20%</b> (VnExpress 1/8/2025). Ngày 26/10/2025 hai nước ra Tuyên bố chung về khung hiệp định thương mại đối ứng; doanh nghiệp Việt Nam ký 20 biên bản ghi nhớ mua nông sản Mỹ ước hơn <b>2,9 tỷ USD</b>, Vietnam Airlines ký mua 50 máy bay Boeing hơn 8 tỷ USD (Cổng Chính phủ 27/10/2025)."
+"Vì con số 140 tỷ ở trên. Tháng 4/2025 Mỹ công bố thuế đối ứng <b>46%</b> với hàng Việt Nam, đến tháng 8/2025 còn 20% (VnExpress 1/8/2025)."
+],
+[
+"ul",
+[
+"Ngày 26/10/2025 hai nước ra Tuyên bố chung về khung hiệp định thương mại đối ứng.",
+"Doanh nghiệp Việt Nam ký 20 biên bản ghi nhớ mua nông sản Mỹ ước hơn 2,9 tỷ USD.",
+"Vietnam Airlines ký mua 50 máy bay Boeing hơn 8 tỷ USD (Cổng Chính phủ 27/10/2025)."
+]
 ],
 [
 "p",
@@ -40152,34 +40244,38 @@
 ],
 [
 "Thịt gà",
-"Nửa đầu 2026 nhập 185–195 nghìn tấn; từ Mỹ 115–120 nghìn tấn (61,8%), chủ yếu đùi gà góc tư",
+"Nửa đầu 2026 nhập<br>185–195 nghìn tấn;<br>từ Mỹ 115–120<br>nghìn tấn (61,8%),<br>chủ yếu đùi gà góc<br>tư",
 "Znews 2/8/2026"
 ],
 [
 "Thịt bò Mỹ",
-"8 tháng gấp 3 lần cùng kỳ",
-"VnExpress 11/11/2026"
+"8 tháng gấp 3 lần<br>cùng kỳ",
+"VnExpress<br>11/11/2026"
 ],
 [
 "Đậu tương Mỹ",
-"352 → 424 triệu USD (9 tháng)",
-"VnExpress 11/11/2026"
+"352 → 424 triệu<br>USD (9 tháng)",
+"VnExpress<br>11/11/2026"
 ],
 [
 "Táo Mỹ",
-"Nhập bình quân 186 nghìn tấn/năm 2022–2024 (62 nghìn 2016–2018); giá lẻ giảm 5–10%",
-"Tuổi Trẻ, VnExpress"
+"Nhập bình quân 186<br>nghìn tấn/năm<br>2022–2024 (62<br>nghìn 2016–2018);<br>giá lẻ giảm 5–10%",
+"Tuổi Trẻ,<br>VnExpress"
 ],
 [
 "Rau quả từ Mỹ",
-"10 tháng gần 747 triệu USD (+62%)",
-"Thuế & Hải quan 13/11/2026"
+"10 tháng gần 747<br>triệu USD (+62%)",
+"Thuế & Hải quan<br>13/11/2026"
 ]
 ]
 ],
 [
 "p",
-"Đùi gà là món đáng nói nhất. Người Mỹ chuộng ức gà, đùi gà góc tư ở Mỹ rẻ nên bán ra nước ngoài được giá thấp. 7 tháng 2026, giá nhập bình quân <b>thịt gia cầm</b> (mọi nguồn) chỉ khoảng 1,02 USD/kg, tức khoảng <b>26.500 đồng/kg</b>, giảm gần 29% (VnBusiness 9/9/2026). Lên đến chợ Hà Nội, đùi gà đông lạnh nhập khẩu bán 45.000–55.000 đồng/kg, trong khi gà công nghiệp trong nước bán lẻ 70.000–100.000."
+"Đùi gà là món đáng nói nhất. Người Mỹ chuộng ức gà, đùi gà góc tư ở Mỹ rẻ nên bán ra nước ngoài được giá thấp. 7 tháng 2026, giá nhập bình quân <b>thịt gia cầm</b> (mọi nguồn) chỉ khoảng 1,02 USD/kg, tức khoảng <b>26.500 đồng/kg</b>, giảm gần 29% (VnBusiness 9/9/2026)."
+],
+[
+"p",
+"Lên đến chợ Hà Nội, đùi gà đông lạnh nhập khẩu bán 45.000–55.000 đồng/kg, trong khi gà công nghiệp trong nước bán lẻ 70.000–100.000."
 ],
 [
 "h2",
@@ -40196,22 +40292,22 @@
 [
 "Người nuôi gà trắng công nghiệp",
 "Lo nhất",
-"Gà trắng miền Nam tháng 8 chỉ 25.000 đ/kg hơi; giá thành ở Mỹ, Brazil 16.000–20.000 đ/kg"
+"Gà trắng miền Nam<br>tháng 8 chỉ 25.000<br>đ/kg hơi; giá<br>thành ở Mỹ, Brazil<br>16.000–20.000 đ/kg"
 ],
 [
 "Người nuôi gà lông màu",
 "Ít đụng hơn",
-"Thị trường khác, giá 46.000 đ/kg hơi (tháng 8)"
+"Thị trường khác,<br>giá 46.000 đ/kg<br>hơi (tháng 8)"
 ],
 [
 "Người đi chợ",
 "Được lợi",
-"Đùi gà, táo, bò rẻ hơn"
+"Đùi gà, táo, bò rẻ<br>hơn"
 ],
 [
 "Công nhân, doanh nghiệp bán sang Mỹ",
 "Được giữ cửa",
-"Mua thêm hàng Mỹ giúp giảm sức ép thuế"
+"Mua thêm hàng Mỹ<br>giúp giảm sức ép<br>thuế"
 ]
 ]
 ],
@@ -40234,6 +40330,10 @@
 [
 "p",
 "Thu nhập đi qua cửa 1 hay cửa 2 thì nên có quỹ dự phòng dày hơn, vì tin thương mại đổi rất nhanh. Cách dựng quỹ có ở bài <a href='/f0/quy-du-phong-truoc-khi-dau-tu.html'>quỹ dự phòng trước khi đầu tư</a>."
+],
+[
+"p",
+"Ngày 25/11/2026 Mỹ đề xuất xem xét thuế tới 35% với hàng Việt Nam. Việt Nam mua gì từ Mỹ, 90 máy bay Boeing cân được bao nhiêu và ngành nào bị nêu tên, xem bài <a href=\"/f0/viet-nam-nhap-khau-gi-tu-my.html\">Việt Nam nhập khẩu gì từ Mỹ</a>."
 ],
 [
 "h2",
@@ -40270,16 +40370,15 @@
 ]
 ],
 [
-"p",
-"Muốn hiểu thêm vì sao một nền kinh tế thặng dư lớn vẫn có thể đi chậm lại, anh chị đọc bài <a href='/f0/bay-thu-nhap-trung-binh-la-gi.html'>bẫy thu nhập trung bình</a>."
-],
+"ul",
 [
-"p",
+"Vì sao một nền kinh tế thặng dư lớn vẫn có thể đi chậm lại: bài <a href='/f0/bay-thu-nhap-trung-binh-la-gi.html'>bẫy thu nhập trung bình</a>.",
 "Nhóm hàng kéo xuất khẩu năm 2026 là máy tính, điện tử, linh kiện: 149,4 tỷ USD sau 10 tháng, khoảng 30% tổng xuất khẩu, nhưng nhập linh kiện cũng rất lớn. Chi tiết ở bài <a href=\"/f0/xuat-khau-dien-tu-2026-bong-bong-ai.html\">xuất khẩu điện tử 2026 tăng 71% nhờ AI</a>."
+]
 ],
 [
 "p",
-"<small>Nguồn: Tuổi Trẻ 8/11/2026; Thuế & Hải quan Online 13/11/2026; Investing.com 27/8/2026; Cổng Chính phủ 27/10/2025; Znews 2/8/2026; VnBusiness 9/9/2026; VnExpress 11/11/2026 và 1/8/2025. Nhân vật anh Tâm, chị Hạnh là giả định, em tự tính. Nội dung chỉ để tham khảo, không phải khuyến nghị đầu tư.</small>"
+"<small>Nguồn: Tuổi Trẻ 8/11/2026; Thuế & Hải quan Online 13/11/2026; Investing.com 27/8/2026; Cổng Chính phủ 27/10/2025; Znews 2/8/2026; VnBusiness 9/9/2026; VnExpress 11/11/2026 và 1/8/2025. Nhân vật anh Tâm, chị Hạnh là giả định, em tự tính.</small>"
 ]
 ],
 "faq": [
@@ -40297,6 +40396,7 @@
 ]
 ],
 "rel": [
+"viet-nam-nhap-khau-gi-tu-my",
 "xuat-khau-dien-tu-2026-bong-bong-ai",
 "thue-doi-ung-la-gi",
 "xuat-khau-sau-rieng-2026",
@@ -40304,7 +40404,7 @@
 "bay-thu-nhap-trung-binh-la-gi",
 "quy-du-phong-truoc-khi-dau-tu"
 ],
-"mod": "2026-11-22"
+"mod": "2026-11-28"
 },
 {
 "slug": "cach-tinh-thue-thu-nhap-ca-nhan-2026",
@@ -44076,6 +44176,761 @@
 "lai-suat-tiet-kiem-qua-dinh-gui-ky-han-nao",
 "co-nen-bat-day-vang",
 "lai-suat-thuc-la-gi"
+]
+},
+{
+"slug": "viet-nam-nhap-khau-gi-tu-my",
+"kw": "Việt Nam nhập khẩu gì từ Mỹ",
+"grp": 8,
+"date": "2026-11-28",
+"title": "Thuế Mỹ 35%: Việt Nam nhập khẩu gì từ Mỹ, mua thêm có đủ?",
+"desc": "10 tháng 2026 Việt Nam bán sang Mỹ 159,4 tỷ USD, mua lại 19,3 tỷ, phần lớn là linh kiện, bông. 90 máy bay Boeing chỉ bằng gần 22% con số chênh.",
+"body": [
+[
+"p",
+"Sáng 26/11/2026, chị Hạnh – tổ trưởng một chuyền may ở Bình Dương – nhắn chồng: \"Anh đọc tin thuế chưa? Chuyền em đang lo.\" Hôm trước, Mỹ vừa đề xuất xem xét mức thuế <b>tới 35%</b> với hàng Việt Nam."
+],
+[
+"p",
+"Anh Cường, chồng chị, buột miệng: \"Cứ mua thêm hàng Mỹ là xong chứ gì.\" Bài này tách từng con số để trả lời câu đó (nhà anh Cường là nhân vật giả định như trong video, số liệu thật, em tự tính). Đọc xong, anh chị biết thu nhập nhà mình có dính vào chuyện này không."
+],
+[
+"h2",
+"Mỹ đề xuất thuế 35% với hàng Việt Nam là thế nào?"
+],
+[
+"p",
+"Đây mới là đề xuất, mức cao nhất được xem xét, chưa áp dụng. Thông cáo của Văn phòng Đại diện Thương mại Mỹ (USTR – cơ quan lo đàm phán, thuế thương mại của Mỹ) ngày 25/11/2026 nêu các mốc sau:"
+],
+[
+"table",
+[
+[
+"Thông cáo USTR 25/11/2026",
+"Nội dung"
+],
+[
+"Mức xem xét",
+"<b>tới 35%</b>"
+],
+[
+"Nếu hai nước<br>đạt thoả thuận",
+"20%"
+],
+[
+"Ngành bị nêu tên",
+"Dệt may, da giày,<br>đóng tàu, xi măng,<br>điện tử – CNTT"
+],
+[
+"Hạn gửi góp ý",
+"5/1/2027"
+],
+[
+"Họp nghe các bên",
+"từ 25/1/2027"
+]
+]
+],
+[
+"p",
+"Thuế này do bên mua ở Mỹ trả khi nhập hàng Việt. Hàng đắt lên thì khách dễ đặt ít đi; đơn ít thì xưởng cắt ca. Mức thuế Mỹ đang áp hiện nay các nguồn ghi vênh nhau, nên em không nêu ở đây."
+],
+[
+"h2",
+"Việt Nam bán sang Mỹ bao nhiêu, mua lại bao nhiêu?"
+],
+[
+"p",
+"Bán gấp <b>8,27 lần</b> mua. 10 tháng 2026, xuất khẩu sang Mỹ 159,40 tỷ USD (Báo Đầu tư qua VCCI 4/11/2026), nhập từ Mỹ 19,27 tỷ USD (WiData). Phần chênh khoảng <b>140,13 tỷ USD</b> – trong bài em gọi là \"con số chênh\"."
+],
+[
+"p",
+"Vì sao Mỹ để ý, vì sao đoàn nông nghiệp lớn nhất của Mỹ sang Việt Nam tháng 11, em đã viết ở bài <a href=\"/f0/thang-du-thuong-mai-viet-nam-my.html\">thặng dư thương mại Việt Nam – Mỹ</a>. Bài này đi tiếp câu hỏi: mua thêm thì mua gì, và có đủ không?"
+],
+[
+"h2",
+"Việt Nam nhập khẩu gì từ Mỹ?"
+],
+[
+"p",
+"Chủ yếu là đồ để sản xuất tiếp, không phải hàng bày siêu thị. Riêng 4 món đầu đã khoảng <b>51%</b> hàng Mỹ vào Việt Nam 10 tháng 2026 (WiData, nhập khẩu theo mặt hàng):"
+],
+[
+"table",
+[
+[
+"Nhập từ Mỹ<br>10 tháng 2026",
+"Triệu USD"
+],
+[
+"Máy tính, điện tử,<br>linh kiện",
+"<b>5.877</b>"
+],
+[
+"Bông",
+"1.524"
+],
+[
+"Máy móc, thiết bị",
+"1.479"
+],
+[
+"Chất dẻo (hạt nhựa)",
+"965"
+],
+[
+"Thức ăn gia súc",
+"748"
+],
+[
+"Rau quả",
+"747"
+],
+[
+"Đậu tương",
+"456"
+],
+[
+"Tổng nhập từ Mỹ",
+"19.274"
+]
+]
+],
+[
+"p",
+"Quả táo, chùm nho Mỹ ngoài chợ là phần người mua nhìn thấy, nhưng rau quả cả 10 tháng chưa tới 1 tỷ USD. Phần lớn tiền mua hàng Mỹ đi vào nhà máy."
+],
+[
+"h2",
+"Bông Mỹ đi một vòng rồi về Mỹ dưới dạng cái áo"
+],
+[
+"p",
+"Nhiều lô vải ở xưởng chị Hạnh dệt từ bông Mỹ, may xong lại đóng thùng gửi sang Mỹ. Dệt may sang Mỹ 10 tháng 2026 đạt 15,36 tỷ USD, gấp khoảng <b>10 lần</b> tiền mua bông Mỹ."
+],
+[
+"ul",
+[
+"Phần hơn ra gồm vải, phụ liệu mua từ nơi khác, và tiền công, điện nước, lương của những người như chị Hạnh.",
+"Giả sử mua bông Mỹ gấp đôi, thêm khoảng 1,52 tỷ USD – chỉ bằng <b>1,1%</b> con số chênh (em tự tính).",
+"Nghĩa là mua thêm nguyên liệu Mỹ giúp được ít, vì càng mua bông nhiều thì thường càng bán áo nhiều."
+]
+],
+[
+"h2",
+"Mua thêm hàng Mỹ, Việt Nam đã thử chưa?"
+],
+[
+"p",
+"Rồi, và mua những món đắt tiền. Tháng 4/2025, Thủ tướng nói Việt Nam cần mua thêm hàng Mỹ gồm máy bay, thuốc và khí hoá lỏng LNG – loại khí đốt dùng chạy nhà máy điện (VnExpress 29/4/2025)."
+],
+[
+"table",
+[
+[
+"Đã ký mua",
+"Giá trị"
+],
+[
+"20 biên bản ghi nhớ<br>nông sản (6/2025)",
+"tới 3 tỷ USD"
+],
+[
+"Vietnam Airlines<br>50 Boeing 737-8",
+"8,1 tỷ USD"
+],
+[
+"Sun PhuQuoc Airways<br>40 Boeing 787-9",
+"22,5 tỷ USD"
+],
+[
+"Cộng 90 máy bay",
+"<b>30,6 tỷ USD</b>"
+]
+]
+],
+[
+"p",
+"Biên bản ghi nhớ là thoả thuận ý định mua, chưa phải hợp đồng giao hàng (VCCI 9/6/2025). Lô 90 máy bay theo Reuters 19/2/2026; riêng lô Vietnam Airlines giao từ 2030–2032 – máy bay về đến đâu mới tính là hàng nhập đến đó."
+],
+[
+"h2",
+"Vì sao mua thêm mà con số chênh vẫn lớn lên?"
+],
+[
+"p",
+"Vì bên bán tăng nhanh hơn. 30,6 tỷ USD tiền 90 máy bay, giao trong nhiều năm, chỉ bằng khoảng <b>21,8%</b> con số chênh của riêng 10 tháng 2026. Mà con số chênh năm nào cũng có, máy bay thì không năm nào cũng mua."
+],
+[
+"table",
+[
+[
+"10 tháng, tỷ USD<br>(em tự tính)",
+"Con số"
+],
+[
+"Xuất sang Mỹ 2025",
+"≈ 126,3"
+],
+[
+"Xuất sang Mỹ 2026",
+"159,4"
+],
+[
+"Tăng thêm trong 1 năm",
+"<b>≈ 33,1</b>"
+],
+[
+"Tổng nhập từ Mỹ 2026",
+"19,3"
+]
+]
+],
+[
+"p",
+"Riêng phần hàng bán sang Mỹ tăng thêm trong một năm (khoảng 33,1 tỷ, tính từ mức tăng 26,2%) đã lớn hơn cả tổng tiền mua hàng Mỹ. Muốn hiểu vì sao, phải hỏi: ai đang bán?"
+],
+[
+"h2",
+"Ai thật sự đang bán hàng sang Mỹ?"
+],
+[
+"p",
+"Đứng đầu không phải quần áo mà là điện tử và máy móc. Hàng xuất sang Mỹ 10 tháng 2026 theo WiData:"
+],
+[
+"table",
+[
+[
+"Xuất sang Mỹ<br>10 tháng 2026",
+"Tỷ USD"
+],
+[
+"Máy tính, điện tử,<br>linh kiện",
+"<b>53,49</b>"
+],
+[
+"Máy móc, thiết bị",
+"26,25"
+],
+[
+"Dệt may",
+"15,36"
+],
+[
+"Điện thoại, linh kiện",
+"10,17"
+],
+[
+"Giày dép",
+"7,92"
+],
+[
+"Gỗ, sản phẩm gỗ",
+"7,58"
+]
+]
+],
+[
+"p",
+"Tính chung cả nước 9 tháng 2026, doanh nghiệp có vốn nước ngoài (nhà máy của các tập đoàn nước ngoài đặt ở Việt Nam) làm ra <b>80,7%</b> hàng xuất khẩu (Cục Thống kê, qua Quasa 14/10/2026). Cứ 10 đồng hàng Việt Nam bán ra nước ngoài, khoảng 8 đồng do nhà máy của chủ nước ngoài làm."
+],
+[
+"p",
+"Hàng đi Mỹ nhiều nhất lại là điện tử, máy móc – đúng nhóm các tập đoàn nước ngoài làm nhiều. Tiền lãi phần lớn về túi chủ nhà máy; phần ở lại Việt Nam có tiền lương của người đứng máy."
+],
+[
+"h2",
+"Thuế 35% chạm vào ai trước?"
+],
+[
+"p",
+"Người đứng chuyền ở các ngành cần nhiều nhân công. Nhà máy điện tử của tập đoàn lớn thường dễ chuyển dây chuyền sang nước khác hơn; người đứng chuyền may, chuyền giày thì khó chuyển theo."
+],
+[
+"table",
+[
+[
+"Ngành nhiều nhân công",
+"Sang Mỹ<br>10T/2026",
+"Bị nêu tên?"
+],
+[
+"Dệt may",
+"15,36 tỷ",
+"Có"
+],
+[
+"Giày dép",
+"7,92 tỷ",
+"Có"
+],
+[
+"Gỗ, sản phẩm gỗ",
+"7,58 tỷ",
+"Không"
+],
+[
+"Cộng 3 ngành",
+"<b>30,86 tỷ</b>",
+"–"
+]
+]
+],
+[
+"p",
+"Chị Hạnh kể: tháng 12 xưởng vẫn đủ đơn, vẫn tăng ca. Nhưng đơn tháng 2, khách Mỹ chưa chốt, bảo \"chờ xem thuế\". Chưa ai mất việc, nhưng khi đơn chậm lại, tăng ca thường bị cắt trước."
+],
+[
+"h2",
+"Nhà anh Cường hụt bao nhiêu nếu mất tăng ca?"
+],
+[
+"p",
+"Khoảng <b>30 triệu mỗi năm</b> (2,5 triệu tăng ca × 12 tháng). Số em giả định cho dễ hình dung, không phải số liệu khảo sát:"
+],
+[
+"table",
+[
+[
+"Nhà anh Cường<br>(giả định)",
+"Triệu/tháng"
+],
+[
+"Chị Hạnh: lương",
+"8,5"
+],
+[
+"Chị Hạnh: tăng ca",
+"2,5"
+],
+[
+"Anh Cường: làm kho",
+"13"
+],
+[
+"Cả nhà",
+"24"
+],
+[
+"Phần đi qua<br>đơn hàng Mỹ<br>(lương + tăng ca<br>chị Hạnh)",
+"11 (45,8%)"
+]
+]
+],
+[
+"p",
+"Tối đó anh Cường định vay trả góp mua xe máy mới cho vợ. Chị Hạnh bảo khoan: chờ xưởng chốt đơn tháng 2 đã, tiền tăng ca tháng này để riêng ra."
+],
+[
+"h2",
+"Phép thử: bao nhiêu phần thu nhập nhà mình đi qua đơn hàng Mỹ?"
+],
+[
+"ol",
+[
+"Cộng tất cả thu nhập nhà mình mỗi tháng.",
+"Tính phần đến từ xưởng hoặc doanh nghiệp bán hàng sang Mỹ (dệt may, giày, gỗ, điện tử, thuỷ sản…).",
+"Chia ra phần trăm rồi so với bảng dưới."
+]
+],
+[
+"table",
+[
+[
+"Phần thu nhập<br>qua đơn hàng Mỹ",
+"Việc nên làm"
+],
+[
+"Dưới 30%",
+"Theo dõi tin"
+],
+[
+"30–60%<br>(như nhà Cường)",
+"Để dành đủ 6 tháng<br>chi tiêu, hoãn khoản<br>vay chưa cần"
+],
+[
+"Trên 60%",
+"Chưa mở khoản vay<br>mới đến khi rõ thuế"
+]
+]
+],
+[
+"p",
+"Đây là mốc em tự đặt để soi, không phải lời khuyên chung; anh chị cân theo hoàn cảnh nhà mình. Cách dựng khoản để dành 6 tháng có ở bài <a href=\"/f0/quy-du-phong-truoc-khi-dau-tu.html\">quỹ dự phòng</a> và <a href=\"/f0/ke-hoach-tai-chinh-gia-dinh-khi-co-bien.html\">kế hoạch tài chính gia đình khi có biến</a>."
+],
+[
+"h2",
+"Ba mốc nên đánh dấu trên lịch"
+],
+[
+"ol",
+[
+"<b>5/1/2027</b> – hạn gửi góp ý cho đề xuất thuế.",
+"<b>25/1/2027</b> – Mỹ bắt đầu họp nghe các bên trước khi chốt.",
+"<b>Đầu mỗi tháng</b> – số hàng xuất sang Mỹ do cơ quan hải quan công bố: hàng thật đi ra sao, chắc hơn mọi lời đồn."
+]
+],
+[
+"p",
+"Lần trước tin thuế quan (4/2025), VN-Index (chỉ số chung của sàn chứng khoán TP.HCM) giảm khoảng 17% trong ít phiên rồi hồi lại; bảng từng phiên ở bài <a href=\"/f0/thue-doi-ung-la-gi.html\">thuế đối ứng là gì</a>. Em không đoán con số thuế cuối cùng."
+],
+[
+"h2",
+"Bẫy hay gặp"
+],
+[
+"ul",
+[
+"<b>Nghĩ \"mua thêm hàng Mỹ là xong\".</b> 90 máy bay chỉ bằng gần 22% con số chênh của 10 tháng, và giao trong nhiều năm.",
+"<b>Nhầm biên bản ghi nhớ là hợp đồng.</b> Ghi nhớ là ý định mua, chưa phải hàng đã về.",
+"<b>Nghĩ thuế chỉ đánh vào nhà máy nước ngoài.</b> Sổ sách là của họ, nhưng người đứng máy là người Việt."
+]
+],
+[
+"h2",
+"Checklist cho nhà có người làm hàng xuất đi Mỹ"
+],
+[
+"ul",
+[
+"Đã tính phần trăm thu nhập nhà mình đi qua đơn hàng Mỹ.",
+"Tiền tăng ca tháng nào cất riêng tháng đó, đến khi đủ 6 tháng chi tiêu.",
+"Hoãn khoản vay chưa thật cần đến khi đơn hàng sau Tết chốt.",
+"Có người trong nhà học thêm một nghề phụ, để thu nhập không đi qua một cánh cửa.",
+"Đã ghi 3 mốc 5/1, 25/1 và số hải quan đầu tháng."
+]
+],
+[
+"p",
+"Tỷ giá, lãi suất, chỉ số thế giới cập nhật mỗi ngày ở trang <a href=\"/the-gioi-hang-hoa.html\">Thế giới &amp; hàng hoá</a>. Nhà có người làm hàng xuất khẩu muốn tính lại chi tiêu, vay mượn thì nhắn Zalo 0365.188.286 – em tính cùng, anh chị tự quyết."
+],
+[
+"p",
+"<small>Nguồn: USTR 25/11/2026; WiData (xuất nhập khẩu theo mặt hàng và quốc gia, luỹ kế 10 tháng 2026); Báo Đầu tư qua VCCI 4/11/2026; VCCI 9/6/2025; Reuters 19/2/2026; VnExpress 29/4/2025; Cục Thống kê qua Quasa 14/10/2026. Nhà anh Cường là nhân vật giả định; em tự tính các phép chia, cộng.</small>"
+]
+],
+"faq": [
+[
+"Việt Nam nhập khẩu gì từ Mỹ nhiều nhất?",
+"10 tháng 2026, nhiều nhất là máy tính, điện tử và linh kiện (khoảng 5,88 tỷ USD), rồi bông (1,52 tỷ), máy móc thiết bị (1,48 tỷ), chất dẻo (0,97 tỷ). Bốn món này khoảng 51% tổng 19,27 tỷ USD nhập từ Mỹ (WiData)."
+],
+[
+"Mỹ đề xuất thuế 35% với hàng Việt Nam khi nào?",
+"Thông cáo của USTR ngày 25/11/2026 nêu Việt Nam có thể bị xem xét mức thuế tới 35%, hoặc 20% nếu hai nước đạt thoả thuận. Góp ý gửi đến 5/1/2027, họp nghe các bên từ 25/1/2027. Đây là đề xuất, chưa áp dụng."
+],
+[
+"Mua 90 máy bay Boeing có đủ cân thương mại với Mỹ không?",
+"Chưa đủ. Tổng 90 máy bay khoảng 30,6 tỷ USD, giao trong nhiều năm, chỉ bằng gần 22% phần Việt Nam bán nhiều hơn mua với Mỹ trong riêng 10 tháng 2026 (khoảng 140 tỷ USD)."
+]
+],
+"rel": [
+"thang-du-thuong-mai-viet-nam-my",
+"thue-doi-ung-la-gi",
+"xuat-khau-dien-tu-2026-bong-bong-ai",
+"ke-hoach-tai-chinh-gia-dinh-khi-co-bien",
+"quy-du-phong-truoc-khi-dau-tu",
+"ty-gia-trung-tam-la-gi"
+]
+},
+{
+"slug": "de-danh-bao-nhieu-cho-tuoi-gia",
+"kw": "để dành bao nhiêu cho tuổi già",
+"grp": 7,
+"date": "2026-11-28",
+"title": "Lương hưu bình quân 6,2 triệu: để dành bao nhiêu cho tuổi già?",
+"desc": "Cứ 6 người cao tuổi chỉ khoảng 1 người có lương hưu. Muốn tự có 6,2 triệu/tháng từ 60 đến 80 tuổi, bắt đầu năm 35 tuổi cần để dành gần 5 triệu/tháng.",
+"body": [
+[
+"p",
+"Sáng nay bà Tư, 63 tuổi, bán rau ở chợ 30 năm, nhắn con trai: \"Chân mẹ đau, mai mẹ nghỉ chợ.\" Bà không có lương hưu. Cùng lứa tuổi, ông Bảy về hưu từ nhà máy, tháng nào cũng nhận lương hưu đều đặn."
+],
+[
+"p",
+"Anh Cường, con bà Tư, 35 tuổi, làm tự do, chưa đóng bảo hiểm xã hội ngày nào. Anh hỏi: muốn già như ông Bảy thì phải để dành bao nhiêu? (Các nhân vật là giả định như trong video, số liệu thật, em tự tính.) Đọc xong, anh chị có con số cho chính nhà mình."
+],
+[
+"h2",
+"Bao nhiêu người già ở Việt Nam có lương hưu?"
+],
+[
+"p",
+"Chỉ khoảng <b>1 trong 6 người</b>. Theo VnEconomy (9/7/2024), cả nước có 16,1 triệu người cao tuổi, trong đó 2,7 triệu người có lương hưu hoặc trợ cấp bảo hiểm xã hội hằng tháng – khoảng 16,8% (em tự tính)."
+],
+[
+"table",
+[
+[
+"Người cao tuổi",
+"Con số"
+],
+[
+"Có lương hưu, trợ cấp<br>BHXH hằng tháng",
+"<b>≈ 16,8%</b>"
+],
+[
+"Chưa được trợ giúp<br>xã hội của nhà nước",
+"≈ 65%"
+],
+[
+"Người trên 60 tuổi<br>vẫn đi làm (2022)",
+"≈ 50%"
+],
+[
+"Chi phí khám chữa bệnh<br>tự trả bằng tiền túi",
+"≈ 40%"
+]
+]
+],
+[
+"p",
+"Nguồn từng dòng: VnEconomy 9/7/2024 (hai dòng đầu); khảo sát quốc gia 2022 do GS Giang Thanh Long dẫn và số WHO, theo VnExpress 16/1/2025 (hai dòng sau). Dòng 1 đếm người có lương hưu, dòng 2 đếm người chưa nhận trợ giúp xã hội của nhà nước – hai thứ khác nhau, khác năm, đừng cộng trừ."
+],
+[
+"h2",
+"Có lương hưu và không có lương hưu khác nhau bao nhiêu?"
+],
+[
+"p",
+"Khác khoảng <b>12 lần</b> mỗi tháng. Ông Bảy nhận gần mức lương hưu bình quân; bà Tư, nếu không có lương hưu, phải đợi đủ 75 tuổi mới có trợ cấp hưu trí xã hội – khoản nhà nước trả hằng tháng cho người già không có lương hưu."
+],
+[
+"table",
+[
+[
+"Mỗi tháng",
+"Ông Bảy<br>(có lương hưu)",
+"Bà Tư<br>(không có)"
+],
+[
+"Mức nhận",
+"≈ 6,2 triệu<br>(bình quân)",
+"500.000 đ"
+],
+[
+"Nhận từ khi nào",
+"Khi nghỉ hưu",
+"Đủ 75 tuổi"
+],
+[
+"Năm 63 tuổi<br>đang nhận",
+"≈ 6,2 triệu",
+"<b>0 đồng</b>"
+]
+]
+],
+[
+"p",
+"Lương hưu bình quân 6,2 triệu đồng/tháng (thống kê đến 12/2024, VnEconomy 10/2/2025). Trợ cấp hưu trí xã hội 500.000 đồng/tháng, từ đủ 75 tuổi; hộ nghèo, cận nghèo từ 70 tuổi (Nghị định 176/2025, VnEconomy). Dự thảo hạ dần xuống 70 tuổi cho mọi người mới là đề xuất (VietnamPlus 25/6/2026)."
+],
+[
+"h2",
+"Vì sao gọi Việt Nam là \"già trước khi giàu\"?"
+],
+[
+"p",
+"Vì ta già nhanh trong khi thu nhập còn thấp. Năm 2034, cứ khoảng 7 người dân có 1 người từ 65 tuổi – mốc thế giới gọi là nước dân số già (dự báo đăng trên Tuổi Trẻ 27/1/2026). Từ nay chỉ còn khoảng <b>8 năm</b>."
+],
+[
+"table",
+[
+[
+"So với Nhật",
+"Nhật Bản",
+"Việt Nam"
+],
+[
+"Thu nhập mỗi người<br>khi bắt đầu già",
+"≈ 40.000 USD<br>(1994)",
+"≈ 4.700 USD<br>(2024)"
+],
+[
+"Từ già hoá<br>sang già",
+"24 năm",
+"21 năm<br>(dự kiến)"
+]
+]
+],
+[
+"p",
+"Số Nhật là GDP bình quân đầu người (VnExpress 23/12/2024), số Việt Nam là thu nhập bình quân đầu người (VietNamNet 27/3/2025) – hai cách đo hơi khác, nên chỉ nói \"khoảng\": Nhật lúc già vẫn hơn ta hôm nay khoảng 8,5 lần. Thời kỳ dân số vàng còn lại bao lâu, xem bài <a href=\"/f0/dan-so-vang-la-gi.html\">dân số vàng là gì</a>."
+],
+[
+"h2",
+"Muốn tự có 6,2 triệu/tháng lúc già cần bao nhiêu tiền?"
+],
+[
+"p",
+"Gần <b>1,5 tỷ đồng</b>. Em tạm tính từ 60 đến 80 tuổi là 20 năm, tức 240 tháng: 6,2 triệu × 240 = 1.488 triệu đồng. Đây là phép nhân đơn giản để hình dung, chưa tính lãi và giá cả tăng."
+],
+[
+"h2",
+"Để dành bao nhiêu mỗi tháng theo tuổi bắt đầu?"
+],
+[
+"p",
+"Bắt đầu năm 35 tuổi cần gần <b>5 triệu/tháng</b>; đợi đến 45 tuổi thì hơn 8 triệu. Bảng chia 1.488 triệu cho số tháng còn lại đến năm 60 tuổi (giả định để so, không phải dự báo):"
+],
+[
+"table",
+[
+[
+"Bắt đầu<br>để dành",
+"Số tháng<br>đến 60",
+"Không<br>tính lãi",
+"Lãi 5%/năm<br>(giả định)"
+],
+[
+"25 tuổi",
+"420",
+"3,54 tr",
+"1,31 tr"
+],
+[
+"30 tuổi",
+"360",
+"4,13 tr",
+"1,79 tr"
+],
+[
+"35 tuổi",
+"300",
+"<b>4,96 tr</b>",
+"2,50 tr"
+],
+[
+"40 tuổi",
+"240",
+"6,20 tr",
+"3,62 tr"
+],
+[
+"45 tuổi",
+"180",
+"<b>8,27 tr</b>",
+"5,57 tr"
+],
+[
+"50 tuổi",
+"120",
+"12,40 tr",
+"9,58 tr"
+]
+]
+],
+[
+"p",
+"Chậm 10 năm (35 → 45 tuổi), mỗi tháng phải bỏ ra gấp khoảng <b>1,67 lần</b>; ở cột có lãi còn gấp khoảng 2,2 lần. Cái đắt nhất của chuyện để dành cho tuổi già không phải tiền, mà là thời gian."
+],
+[
+"ul",
+[
+"<b>Cột \"lãi 5%/năm\"</b> nhẹ hơn hẳn nhờ lãi chồng lên lãi qua nhiều năm (xem <a href=\"/f0/lai-kep-trong-dau-tu.html\">lãi kép trong đầu tư</a>). Đó là mức em giả định để so, không phải lãi suất cam kết.",
+"<b>Nhưng giá cả cũng tăng.</b> 25 năm nữa, 6,2 triệu không còn mua được chừng ấy đồ. Nếu tiền để dành chỉ sinh lời vừa bù giá tăng, cột \"không tính lãi\" mới là con số sát với sức mua hôm nay.",
+"Anh chị đã ngoài 45 cũng đừng nản: bắt đầu hôm nay vẫn rẻ hơn bắt đầu năm sau."
+]
+],
+[
+"h2",
+"Ba cách tự làm lương hưu cho mình"
+],
+[
+"ol",
+[
+"<b>Đóng bảo hiểm xã hội tự nguyện</b> – loại người làm tự do tự đóng, không cần chủ thuê. Từ 1/7/2025, đóng đủ 15 năm (trước là 20 năm) và đủ tuổi nghỉ hưu là được hưởng lương hưu hằng tháng (Luật Bảo hiểm xã hội 2024, theo VnEconomy). Hỏi cơ quan bảo hiểm xã hội nơi mình ở để biết mức đóng.",
+"<b>Góp đều một khoản cố định mỗi tháng</b> và để thật lâu: gửi tiết kiệm hay cách khác thì chọn cái mình yên tâm. Cách góp đều cổ phiếu có số thật ở bài <a href=\"/f0/mua-trung-binh-gia-dca.html\">mua trung bình giá (DCA)</a>.",
+"<b>Có một nghề làm được đến tuổi già</b> mà không cần sức nặng như gánh rau ra chợ."
+]
+],
+[
+"p",
+"Ba cách làm cùng lúc được, càng nhiều cửa càng chắc. Ai muốn xem danh mục tích sản thật được theo dõi qua từng năm có thể tham khảo <a href=\"/bao-cao-2026.html#tichsan\">bảng tích sản 2026</a>."
+],
+[
+"h2",
+"Phép thử: năm 60 tuổi, tiền chợ nhà mình đến từ đâu?"
+],
+[
+"table",
+[
+[
+"Năm 60 tuổi nhà mình có",
+"Nghĩa là"
+],
+[
+"Lương hưu + khoản để dành",
+"Đang đi đúng hướng"
+],
+[
+"Chỉ có một trong hai",
+"Bổ sung cái còn thiếu<br>càng sớm càng tốt"
+],
+[
+"Chưa có gì,<br>trông vào con",
+"Hôm nay là ngày rẻ<br>nhất để bắt đầu"
+]
+]
+],
+[
+"p",
+"Đây là mốc em tự đặt để soi, anh chị cân theo hoàn cảnh nhà mình. Tối đó anh Cường bàn với vợ: từ tháng sau để riêng 5 triệu ngay khi nhận lương, vẫn gửi mẹ đều, chỉ bớt tiền ăn ngoài."
+],
+[
+"h2",
+"Bẫy hay gặp"
+],
+[
+"ul",
+[
+"<b>Đợi thu nhập cao hơn mới để dành.</b> Mỗi năm chờ làm khoản cần để dành mỗi tháng tăng lên; chậm 10 năm là gấp khoảng 1,67 lần.",
+"<b>Trông hết vào con.</b> Năm 2024 cứ 100 trẻ em đã có khoảng 60 người cao tuổi (VietNamNet 14/7/2026); thế hệ sau ít người hơn mà còn nuôi con của họ.",
+"<b>Tính bằng tiền hôm nay rồi quên giá tăng.</b> 1,5 tỷ là theo sức mua hôm nay; muốn giữ sức mua, tiền để dành phải sinh lời ít nhất bằng mức giá tăng."
+]
+],
+[
+"h2",
+"Checklist làm ngay trong tuần"
+],
+[
+"ul",
+[
+"Hỏi bố mẹ đang có lương hưu chưa, để biết nhà mình cần đỡ bao nhiêu.",
+"Hỏi cơ quan bảo hiểm xã hội về đóng tự nguyện, mức đóng, số năm còn thiếu.",
+"Tra bảng trên: tuổi mình ứng với bao nhiêu mỗi tháng.",
+"Mở một sổ tiết kiệm riêng ghi tên \"tuổi già\", mỗi tháng để vào trước rồi mới tiêu.",
+"Không đụng sổ này cho tiêu dùng; việc gấp dùng <a href=\"/f0/quy-du-phong-truoc-khi-dau-tu.html\">quỹ dự phòng</a>."
+]
+],
+[
+"p",
+"Muốn tính xem nhà mình cần để dành bao nhiêu cho tuổi già theo thu nhập thật, anh chị nhắn Zalo 0365.188.286 – em tính cùng, anh chị tự quyết."
+],
+[
+"p",
+"<small>Nguồn: VnEconomy 9/7/2024, 10/2/2025; VnExpress 16/1/2025, 23/12/2024; Tuổi Trẻ 27/1/2026 (dự báo Cục Thống kê – UNFPA); VietNamNet 27/3/2025, 14/7/2026; VietnamPlus 25/6/2026; Nghị định 176/2025/NĐ-CP; Luật Bảo hiểm xã hội 2024. Các nhân vật là giả định; em tự tính các phép nhân, chia.</small>"
+]
+],
+"faq": [
+[
+"Lương hưu bình quân ở Việt Nam là bao nhiêu?",
+"Khoảng 6,2 triệu đồng mỗi tháng, theo thống kê đến cuối năm 2024 (VnEconomy 10/2/2025). Chỉ khoảng 2,7 triệu trong 16,1 triệu người cao tuổi có lương hưu hoặc trợ cấp bảo hiểm xã hội hằng tháng."
+],
+[
+"35 tuổi cần để dành bao nhiêu mỗi tháng cho tuổi già?",
+"Theo phép tính giả định của bài: muốn tự có 6,2 triệu/tháng từ 60 đến 80 tuổi cần khoảng 1.488 triệu; chia cho 300 tháng từ 35 đến 60 tuổi là gần 5 triệu mỗi tháng, chưa tính lãi và giá tăng. Bắt đầu từ 45 tuổi thì khoảng 8,27 triệu."
+],
+[
+"Không có lương hưu thì già được nhận trợ cấp gì?",
+"Người không có lương hưu được trợ cấp hưu trí xã hội 500.000 đồng/tháng từ đủ 75 tuổi; hộ nghèo, cận nghèo từ đủ 70 tuổi (Nghị định 176/2025). Đề xuất hạ tuổi xuống 70 cho mọi người mới là dự thảo."
+]
+],
+"rel": [
+"dan-so-vang-la-gi",
+"tich-san-sau-nghi-huu",
+"lai-kep-trong-dau-tu",
+"tich-san-co-phieu-hay-gui-tiet-kiem",
+"mua-trung-binh-gia-dca",
+"quy-du-phong-truoc-khi-dau-tu"
 ]
 }
 ]
