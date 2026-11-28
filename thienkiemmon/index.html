@@ -300,7 +300,7 @@ const GLP=new T.GLTFLoader();function loadPack(name,cb){GATE.then(slot).then(()=
 function instGLTF(name,list,cast=true){if(LITE&&/shrub|rock_moss|fern/.test(name))list=list.filter((_,i)=>i%3===0);if(LITE)cast=false;loadPack(name,gl=>{gl.scene.updateMatrixWorld(true);gl.scene.traverse(o=>{if(!o.isMesh)return;
  o.geometry.morphAttributes={};o.geometry.morphTargetsRelative=false;const im=new T.InstancedMesh(o.geometry,o.material,list.length);if(o.material.map)o.material.map.anisotropy=4;
  list.forEach((t,i)=>{dummy.position.set(t[0],t[1],t[2]);dummy.rotation.set(0,t[3]||0,0);dummy.scale.setScalar(t[4]||1);dummy.updateMatrix();im.setMatrixAt(i,dummy.matrix.clone().multiply(o.matrixWorld))});
- im.castShadow=cast;im.receiveShadow=true;scene.add(im)})})}
+ im.castShadow=cast;im.receiveShadow=true;im.name='pk_'+name;scene.add(im)})})}
 /* đèn lồng trên trụ đá dọc lối đi */
 const lampSpots=[];for(let z=-24;z<=18;z+=8.4)for(const s of[-1,1]){const x=s*6.2;box(.8,1.4,.8,mGranite,x,PLAZA.y+.7,z,2);lampSpots.push([x,PLAZA.y+1.4,z,0,3]);colliders.push([x-.5,x+.5,z-.5,z+.5,PLAZA.y+3])}
 for(const x of[-14,-6,6,14]){box(.8,1.4,.8,mGranite,x,UP.y+.7,UP.z1-3,2);lampSpots.push([x,UP.y+1.4,UP.z1-3,0,3])}
