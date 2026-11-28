@@ -1,0 +1,131 @@
+[
+ {
+  "ra": "_fb/tin_chart/out/SN2811GDP10.jpg",
+  "ten": "Lãi tiết kiệm 12 tháng",
+  "sym": "%/năm · 28/11/2026",
+  "gia": "5,4%",
+  "doi": "Big4 tại quầy giữ nguyên",
+  "mau_doi": "do",
+  "st": [
+   [
+    "Mục tiêu tăng trưởng 2027",
+    "từ 10%"
+   ],
+   [
+    "VPBank hạ tối đa",
+    "0,5 điểm %"
+   ],
+   [
+    "NH ngoại online",
+    "8,8%"
+   ]
+  ],
+  "hook1": "Mục tiêu tăng trưởng từ 10%.",
+  "hook2": "Lãi vay giảm, lãi gửi giảm theo???",
+  "loai": "cot",
+  "cot": [
+   [
+    "Big4 tại quầy",
+    5.4,
+    "5,4%"
+   ],
+   [
+    "NH ngoại online",
+    8.8,
+    "8,8%"
+   ]
+  ],
+  "noi": [
+   1
+  ],
+  "chenh": "Lệch 3,4 điểm %",
+  "nguon": "Nguồn: Tiền Phong 28/11/2026 · Index.vn 28/11/2026",
+  "co1": 31
+ },
+ {
+  "ra": "_fb/tin_chart/out/SN2811SODO756.jpg",
+  "ten": "Lừa \"chạy\" sổ đỏ ở Phú Thọ",
+  "sym": "Triệu đồng · tin 26–27/11/2026",
+  "gia": "756 triệu",
+  "doi": "của nhiều người",
+  "mau_doi": "do",
+  "st": [
+   [
+    "Phú Thọ",
+    "2020–2026"
+   ],
+   [
+    "Nghệ An",
+    "8 năm tù 27/11"
+   ],
+   [
+    "Nộp đúng chỗ",
+    "một cửa"
+   ]
+  ],
+  "hook1": "Nhờ người quen lo sổ đỏ nhanh.",
+  "hook2": "Mất luôn 756 triệu???",
+  "loai": "cot",
+  "cot": [
+   [
+    "Nghệ An – bán đất đã sang tên",
+    500,
+    "500 triệu"
+   ],
+   [
+    "Phú Thọ – \"chạy\" sổ đỏ",
+    756,
+    "756 triệu"
+   ]
+  ],
+  "noi": [
+   1
+  ],
+  "chenh": "2 vụ lừa quanh sổ đỏ trong 2 ngày",
+  "nguon": "Nguồn: Tiền Phong, CafeF 26/11/2026 · Báo Nghệ An 27/11/2026",
+  "co1": 31
+ },
+ {
+  "ra": "_fb/tin_chart/out/SN2811DAU95.jpg",
+  "ten": "Giá dầu thế giới",
+  "sym": "USD/thùng · phiên 27/11/2026",
+  "gia": "95,44",
+  "doi": "Brent cả tuần +3%",
+  "mau_doi": "do",
+  "st": [
+   [
+    "Nhà máy Jazan",
+    "trúng đòn 26/11"
+   ],
+   [
+    "Xăng E5 trong nước",
+    "18.391 đ/lít"
+   ],
+   [
+    "OPEC+ họp",
+    "29/11"
+   ]
+  ],
+  "hook1": "Xăng giảm suốt tháng 11.",
+  "hook2": "Dầu vừa tăng lại 3% 1 tuần???",
+  "loai": "cot",
+  "cot": [
+   [
+    "WTI",
+    83.08,
+    "83,08"
+   ],
+   [
+    "Brent",
+    95.44,
+    "95,44"
+   ]
+  ],
+  "noi": [
+   1
+  ],
+  "chenh": "Tuần tăng đầu tiên tháng 11",
+  "nguon": "Nguồn: Markettimes 28/11/2026 · 24h 28/11/2026",
+  "co1": 31
+ }
+]

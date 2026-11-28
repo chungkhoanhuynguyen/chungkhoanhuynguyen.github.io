@@ -1,0 +1,1633 @@
+[
+ {
+  "key": "SN2811GDP10",
+  "tieu_de": "Quốc hội đặt mục tiêu tăng trưởng 2027 từ 10% trở lên, yêu cầu giảm lãi suất cho vay: người vay mừng, người gửi tiết kiệm lo???",
+  "hook": [
+   "TĂNG TRƯỞNG 10%",
+   "LÃI VAY GIẢM NỮA?"
+  ],
+  "nhan": "ĐIỀU TRA · 28/11/2026",
+  "short_caption": "Theo Tiền Phong 28/11/2026, Nghị quyết của Quốc hội về kế hoạch phát triển kinh tế - xã hội năm 2027 đặt mục tiêu tăng trưởng từ 10% trở lên và yêu cầu giảm lãi suất cho vay. Cùng ngày VPBank hạ lãi tiền gửi tối đa 0,5 điểm phần trăm, Big4 giữ 5,4%/năm kỳ hạn 12 tháng tại quầy (Index.vn 28/11/2026).",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "VAY HAY GỬI?",
+   "loi": "Lãi đi xuống, anh chị đang là A: người đi vay, hay B: người gửi tiết kiệm?",
+   "loi_doc": "Lãi đi xuống, anh chị đang là A: người đi vay, hay B: người gửi tiết kiệm?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "VAY HAY GỬI?",
+    "dong": [
+     [
+      "A: NGƯỜI ĐI VAY",
+      80,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: NGƯỜI GỬI",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "TỪ 10% TRỞ LÊN",
+    "loi": "Năm 2027 kinh tế phải tăng từ 10% trở lên, vậy lãi vay mua nhà của mình có giảm theo không? Khoan, Quốc hội vừa yêu cầu thẳng: giảm lãi suất cho vay.",
+    "loi_doc": "Năm hai nghìn không trăm hai mươi bảy kinh tế phải tăng từ mười phần trăm trở lên, vậy lãi vay mua nhà của mình có giảm theo không? Khoan, Quốc hội vừa yêu cầu thẳng: giảm lãi suất cho vay.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "NGHỊ QUYẾT KẾ HOẠCH KT-XH 2027",
+     "dong": [
+      [
+       "TĂNG TRƯỞNG",
+       80,
+       "trang"
+      ],
+      [
+       "TỪ 10% TRỞ LÊN",
+       110,
+       "vang"
+      ]
+     ],
+     "nguon": "Tiền Phong 28/11/2026"
+    },
+    "dt": {
+     "loai": "lat",
+     "hoi": [
+      "TĂNG TRƯỞNG 10%",
+      "LÃI VAY GIẢM NỮA?"
+     ],
+     "lat": "QUỐC HỘI YÊU CẦU",
+     "tu": "Khoan",
+     "phu": "Tiền Phong 28/11/2026"
+    },
+    "tu_khoa": [
+     "khoan",
+     "10%"
+    ]
+   },
+   {
+    "chu_to": "VPBANK HẠ 0,5 ĐIỂM",
+    "loi": "Cùng ngày 28/11, VPBank hạ lãi tiền gửi, mức giảm cao nhất 0,5 điểm phần trăm. Nhóm Big4 giữ nguyên 5,4% một năm cho kỳ hạn 12 tháng gửi tại quầy.",
+    "loi_doc": "Cùng ngày hai mươi tám tháng mười một, VPBank hạ lãi tiền gửi, mức giảm cao nhất không phẩy năm điểm phần trăm. Nhóm Big4 giữ nguyên năm phẩy bốn phần trăm một năm cho kỳ hạn mười hai tháng gửi tại quầy.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "LÃI TIỀN GỬI · 28/11/2026",
+     "dong": [
+      [
+       "VPBANK HẠ TỐI ĐA",
+       56,
+       "trang"
+      ],
+      [
+       "0,5 ĐIỂM %",
+       120,
+       "do"
+      ],
+      [
+       "BIG4 12 THÁNG: 5,4%",
+       56,
+       "vang"
+      ]
+     ],
+     "nguon": "Index.vn 28/11/2026"
+    },
+    "tu_khoa": [
+     "0,5"
+    ]
+   },
+   {
+    "chu_to": "5,4% HAY 8,8%?",
+    "loi": "Nhưng một ngân hàng nước ngoài vẫn trả tới 8,8% một năm cho tiết kiệm trực tuyến kỳ hạn 6 đến 12 tháng, áp dụng đến ngày 5/12. Cao hơn Big4 tại quầy 3,4 điểm phần trăm.",
+    "loi_doc": "Nhưng một ngân hàng nước ngoài vẫn trả tới tám phẩy tám phần trăm một năm cho tiết kiệm trực tuyến kỳ hạn sáu đến mười hai tháng, áp dụng đến ngày năm tháng mười hai. Cao hơn Big4 tại quầy ba phẩy bốn điểm phần trăm.",
+    "anh": [],
+    "the": {
+     "loai": "cot",
+     "tieu": "LÃI TIẾT KIỆM · %/NĂM",
+     "hang": [
+      [
+       "BIG4 12 TH TẠI QUẦY",
+       5.4
+      ],
+      [
+       "NH NGOẠI ONLINE",
+       8.8
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 10,
+     "nd": 1,
+     "nguon": "Index.vn 28/11/2026"
+    },
+    "dt": {
+     "loai": "so_sanh",
+     "tieu": "LÃI TIẾT KIỆM · %/NĂM",
+     "a": [
+      "BIG4 TẠI QUẦY",
+      5.4
+     ],
+     "b": [
+      "NH NGOẠI ONLINE",
+      8.8
+     ],
+     "dv": "%",
+     "max": 10,
+     "tu_b": "8,8%",
+     "nguon": "Index.vn 28/11/2026"
+    },
+    "tu_khoa": [
+     "8,8%"
+    ]
+   },
+   {
+    "chu_to": "VAY 1 TỶ",
+    "loi": "Em tính thử: vay 1 tỷ, lãi giảm mỗi 1 điểm phần trăm là bớt 10 triệu tiền lãi một năm. Người vay nhẹ gánh, còn người sống bằng lãi tiết kiệm thì sao?",
+    "loi_doc": "Em tính thử: vay một tỷ, lãi giảm mỗi một điểm phần trăm là bớt mười triệu tiền lãi một năm. Người vay nhẹ gánh, còn người sống bằng lãi tiết kiệm thì sao?",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "EM TỰ TÍNH",
+     "dong": [
+      [
+       "VAY 1 TỶ",
+       84,
+       "trang"
+      ],
+      [
+       "LÃI −1 ĐIỂM %",
+       64,
+       "vang"
+      ],
+      [
+       "BỚT 10 TRIỆU/NĂM",
+       64,
+       "vang"
+      ]
+     ]
+    },
+    "tu_khoa": [
+     "10 triệu"
+    ]
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · ĐẤT · CHỨNG KHOÁN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  },
+  "kieu": "dieu_tra",
+  "theo_doi_som": true,
+  "broll": [
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/City_skyline_(time_lapse).webm",
+    "tu": 0,
+    "den": 10
+   },
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Flick_Cash_with_fingers.webm",
+    "tu": 0,
+    "den": 8
+   }
+  ],
+  "broll_tim": "bank money banknotes"
+ },
+ {
+  "key": "SN2811SODO756",
+  "tieu_de": "Hứa lo nhanh tách thửa, sang tên, cấp sổ đỏ: nhiều người chuyển tiền, mất tổng cộng 756 triệu – vì sao cứ tin 'người quen làm nhanh'???",
+  "hook": [
+   "MẤT 756 TRIỆU",
+   "VÌ CHẠY SỔ ĐỎ?"
+  ],
+  "nhan": "ĐIỀU TRA · 26/11/2026",
+  "short_caption": "Ngày 26/11/2026, Công an tỉnh Phú Thọ khởi tố một phụ nữ sinh năm 1978 về tội lừa đảo chiếm đoạt tài sản: từ năm 2020 đến 2026, người này nhận lo nhanh tách thửa, sang tên, cấp sổ đỏ rồi tiêu xài, bước đầu xác định chiếm đoạt 756 triệu đồng của nhiều người (Tiền Phong, CafeF 26/11/2026).",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "ANH CHỊ LÀM SAO?",
+   "loi": "Làm sổ đỏ, anh chị A: tự đi nộp hồ sơ, hay B: từng nhờ người lo giúp?",
+   "loi_doc": "Làm sổ đỏ, anh chị A: tự đi nộp hồ sơ, hay B: từng nhờ người lo giúp?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "ANH CHỊ LÀM SAO?",
+    "dong": [
+     [
+      "A: TỰ ĐI NỘP",
+      80,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: NHỜ NGƯỜI LO",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "MẤT 756 TRIỆU",
+    "loi": "Nhờ người lo nhanh sổ đỏ, liệu có mất trắng? Khoan, ở Phú Thọ nhiều người đã bị chiếm đoạt tổng cộng 756 triệu đồng theo đúng cách này.",
+    "loi_doc": "Nhờ người lo nhanh sổ đỏ, liệu có mất trắng? Khoan, ở Phú Thọ nhiều người đã bị chiếm đoạt tổng cộng bảy trăm năm mươi sáu triệu đồng theo đúng cách này.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "CÔNG AN TỈNH PHÚ THỌ · 26/11/2026",
+     "dong": [
+      [
+       "756 TRIỆU",
+       130,
+       "do"
+      ],
+      [
+       "CỦA NHIỀU NGƯỜI",
+       56,
+       "trang"
+      ]
+     ],
+     "nguon": "Tiền Phong, CafeF 26/11/2026"
+    },
+    "dt": {
+     "loai": "lat",
+     "hoi": [
+      "NHỜ LO SỔ ĐỎ",
+      "LÀM NHANH?"
+     ],
+     "lat": "MẤT 756 TRIỆU",
+     "tu": "Khoan",
+     "phu": "Công an tỉnh Phú Thọ · 26/11/2026"
+    },
+    "tu_khoa": [
+     "khoan",
+     "756"
+    ]
+   },
+   {
+    "chu_to": "2020 → 2026",
+    "loi": "Ngày 26/11, Công an tỉnh Phú Thọ khởi tố một phụ nữ sinh năm 1978. Từ năm 2020 đến 2026, người này nhận lo tách thửa, sang tên, cấp sổ, rồi tiêu xài hết tiền.",
+    "loi_doc": "Ngày hai mươi sáu tháng mười một, Công an tỉnh Phú Thọ khởi tố một phụ nữ sinh năm một nghìn chín trăm bảy mươi tám. Từ năm hai nghìn không trăm hai mươi đến hai nghìn không trăm hai mươi sáu, người này nhận lo tách thửa, sang tên, cấp sổ, rồi tiêu xài hết tiền.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "KÉO DÀI 6 NĂM",
+     "dong": [
+      [
+       "2020 → 2026",
+       110,
+       "vang"
+      ],
+      [
+       "TÁCH THỬA · SANG TÊN · CẤP SỔ",
+       44,
+       "trang"
+      ]
+     ],
+     "nguon": "Tiền Phong, CafeF 26/11/2026"
+    },
+    "tu_khoa": [
+     "2020"
+    ]
+   },
+   {
+    "chu_to": "HỨA NHANH → NHẬN TIỀN",
+    "loi": "Chiêu quen thuộc: hứa giải quyết thật nhanh để tạo lòng tin, nhận tiền xong thì không làm gì cả. Cơ quan điều tra đang mở rộng vụ án.",
+    "loi_doc": "Chiêu quen thuộc: hứa giải quyết thật nhanh để tạo lòng tin, nhận tiền xong thì không làm gì cả. Cơ quan điều tra đang mở rộng vụ án.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "THỦ ĐOẠN",
+     "dong": [
+      [
+       "HỨA LÀM NHANH",
+       84,
+       "vang"
+      ],
+      [
+       "NHẬN TIỀN",
+       72,
+       "trang"
+      ],
+      [
+       "KHÔNG LÀM GÌ",
+       72,
+       "do"
+      ]
+     ],
+     "nguon": "Tiền Phong, CafeF 26/11/2026"
+    },
+    "tu_khoa": [
+     "nhanh"
+    ]
+   },
+   {
+    "chu_to": "NỘP Ở MỘT CỬA",
+    "loi": "Hồ sơ đất đai nộp ở bộ phận một cửa, có giấy hẹn, phí và lệ phí có biên lai. Đưa tiền tay cho người tự nhận quen biết là tự mở cửa cho rủi ro.",
+    "loi_doc": "Hồ sơ đất đai nộp ở bộ phận một cửa, có giấy hẹn, phí và lệ phí có biên lai. Đưa tiền tay cho người tự nhận quen biết là tự mở cửa cho rủi ro.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "TỰ BẢO VỆ MÌNH",
+     "dong": [
+      [
+       "MỘT CỬA",
+       110,
+       "vang"
+      ],
+      [
+       "CÓ GIẤY HẸN · CÓ BIÊN LAI",
+       48,
+       "trang"
+      ]
+     ]
+    },
+    "tu_khoa": [
+     "một cửa"
+    ]
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · ĐẤT · CHỨNG KHOÁN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  },
+  "kieu": "dieu_tra",
+  "theo_doi_som": true,
+  "broll": [
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Studio_Ocho_Ocho_Construction_Timelapse.webm",
+    "tu": 0,
+    "den": 10
+   },
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Flick_Cash_with_fingers.webm",
+    "tu": 0,
+    "den": 8
+   }
+  ],
+  "broll_tim": "land property house construction"
+ },
+ {
+  "key": "SN2811DAU95",
+  "tieu_de": "Nhà máy lọc dầu Jazan của Saudi Aramco trúng đòn, Brent có tuần tăng đầu tiên trong tháng 11: xăng E5 18.391 đồng còn giữ được???",
+  "hook": [
+   "DẦU TĂNG 3% TUẦN",
+   "XĂNG 18.391 YÊN?"
+  ],
+  "nhan": "ĐIỀU TRA · 28/11/2026",
+  "short_caption": "Phiên 27/11, Brent giảm 1,13 USD còn 95,44 USD/thùng nhưng cả tuần vẫn tăng khoảng 3%, tuần tăng đầu tiên trong tháng 11; nhà máy lọc dầu Jazan của Saudi Aramco bị vật thể bay tấn công ngày 26/11, phải tạm dừng một phần (Markettimes 28/11/2026). Trong nước, từ kỳ điều hành 26/11 xăng E5 RON92 không cao hơn 18.391 đồng/lít (24h 28/11/2026).",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "QUAY ĐẦU CHƯA?",
+   "loi": "Dầu thế giới vừa tăng một tuần, anh chị nghĩ xăng kỳ tới A: vẫn giảm, hay B: quay đầu tăng?",
+   "loi_doc": "Dầu thế giới vừa tăng một tuần, anh chị nghĩ xăng kỳ tới A: vẫn giảm, hay B: quay đầu tăng?",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "QUAY ĐẦU CHƯA?",
+    "dong": [
+     [
+      "A: VẪN GIẢM",
+      80,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: QUAY ĐẦU",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "BRENT +3% CẢ TUẦN",
+    "loi": "Xăng giảm liên tiếp suốt tháng 11, giờ có quay đầu không? Khoan, dầu Brent vừa có tuần tăng đầu tiên trong tháng 11, khoảng 3%.",
+    "loi_doc": "Xăng giảm liên tiếp suốt tháng mười một, giờ có quay đầu không? Khoan, dầu Brent vừa có tuần tăng đầu tiên trong tháng mười một, khoảng ba phần trăm.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "DẦU BRENT · TUẦN 23–27/11",
+     "dong": [
+      [
+       "CẢ TUẦN",
+       64,
+       "trang"
+      ],
+      [
+       "+3%",
+       140,
+       "vang"
+      ],
+      [
+       "TUẦN TĂNG ĐẦU TIÊN THÁNG 11",
+       44,
+       "trang"
+      ]
+     ],
+     "nguon": "Markettimes 28/11/2026"
+    },
+    "dt": {
+     "loai": "lat",
+     "hoi": [
+      "XĂNG GIẢM CẢ THÁNG",
+      "SẮP QUAY ĐẦU?"
+     ],
+     "lat": "DẦU TĂNG 3% TUẦN",
+     "tu": "Khoan",
+     "phu": "Markettimes 28/11/2026"
+    },
+    "tu_khoa": [
+     "khoan",
+     "3%"
+    ]
+   },
+   {
+    "chu_to": "JAZAN TRÚNG ĐÒN",
+    "loi": "Ngày 26/11, nhà máy lọc dầu Jazan do Saudi Aramco vận hành bị vật thể bay tấn công, phải tạm dừng một phần hoạt động.",
+    "loi_doc": "Ngày hai mươi sáu tháng mười một, nhà máy lọc dầu Jazan do Saudi Aramco vận hành bị vật thể bay tấn công, phải tạm dừng một phần hoạt động.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "SAUDI ARABIA · 26/11/2026",
+     "dong": [
+      [
+       "NHÀ MÁY JAZAN",
+       80,
+       "vang"
+      ],
+      [
+       "TẠM DỪNG MỘT PHẦN",
+       64,
+       "do"
+      ]
+     ],
+     "nguon": "Markettimes 28/11/2026"
+    },
+    "tu_khoa": [
+     "Jazan"
+    ]
+   },
+   {
+    "chu_to": "BRENT 95,44 ĐÔ",
+    "loi": "Phiên cuối tuần, Brent lùi 1,13 đô về 95,44 đô một thùng, WTI còn 83,08 đô. Ngày 29/11 OPEC+ họp, nhiều khả năng giữ nguyên sản lượng.",
+    "loi_doc": "Phiên cuối tuần, Brent lùi một phẩy mười ba đô về chín mươi lăm phẩy bốn mươi bốn đô một thùng, W T I còn tám mươi ba phẩy không tám đô. Ngày hai mươi chín tháng mười một OPEC cộng họp, nhiều khả năng giữ nguyên sản lượng.",
+    "anh": [],
+    "the": {
+     "loai": "cot",
+     "tieu": "GIÁ DẦU · USD/THÙNG · 27/11",
+     "hang": [
+      [
+       "WTI",
+       83.08
+      ],
+      [
+       "BRENT",
+       95.44
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 110,
+     "nd": 2,
+     "nguon": "Markettimes 28/11/2026"
+    },
+    "dt": {
+     "loai": "so_sanh",
+     "tieu": "GIÁ DẦU · USD/THÙNG · 27/11",
+     "a": [
+      "WTI",
+      83.08
+     ],
+     "b": [
+      "BRENT",
+      95.44
+     ],
+     "dv": " USD",
+     "max": 110,
+     "tu_b": "95,44",
+     "nguon": "Markettimes 28/11/2026"
+    },
+    "tu_khoa": [
+     "95,44"
+    ]
+   },
+   {
+    "chu_to": "E5: 18.391 ĐỒNG",
+    "loi": "Còn ở nhà mình, từ kỳ điều hành 26/11 xăng E5 không cao hơn 18.391 đồng một lít, diesel 24.965 đồng. Giá kỳ tới tính theo giá thế giới những ngày này.",
+    "loi_doc": "Còn ở nhà mình, từ kỳ điều hành hai mươi sáu tháng mười một xăng E năm không cao hơn mười tám nghìn ba trăm chín mươi mốt đồng một lít, diesel hai mươi bốn nghìn chín trăm sáu mươi lăm đồng. Giá kỳ tới tính theo giá thế giới những ngày này.",
+    "anh": [],
+    "the": {
+     "loai": "lon",
+     "tieu": "GIÁ TRẦN TỪ KỲ 26/11/2026",
+     "dong": [
+      [
+       "XĂNG E5 RON92",
+       60,
+       "trang"
+      ],
+      [
+       "18.391 Đ/LÍT",
+       110,
+       "vang"
+      ],
+      [
+       "DIESEL 24.965 Đ/LÍT",
+       52,
+       "trang"
+      ]
+     ],
+     "nguon": "Bộ Công Thương · 24h 28/11/2026"
+    },
+    "tu_khoa": [
+     "18.391"
+    ]
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · ĐẤT · CHỨNG KHOÁN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  },
+  "kieu": "dieu_tra",
+  "theo_doi_som": true,
+  "broll": [
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pumpjack_at_the_Kern_River_Oil_Field.webm",
+    "tu": 0,
+    "den": 10
+   },
+   {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Filling_Up_Gas_Tank.webm",
+    "tu": 0,
+    "den": 8
+   }
+  ],
+  "broll_tim": "oil refinery gas station"
+ },
+ {
+  "key": "SP2811BTC60",
+  "tieu_de": "Bitcoin rơi dưới 60.000 USD, cá voi vẫn gom thêm 121.117 BTC trong chưa đầy 2 tháng",
+  "hook": [
+   "BITCOIN DƯỚI 60K",
+   "CÁ VOI VẪN GOM?"
+  ],
+  "nhan": "TIN NÓNG · 28/11/2026",
+  "short_caption": "Sáng 28/11/2026, Bitcoin quanh 59.800 USD, giảm 0,93% trong 24 giờ; theo CryptoQuant, các ví giữ 1.000–10.000 BTC đã tích lũy thêm 121.117 BTC từ 30/9 đến 21/11, khoảng 7,4 tỷ USD (1thegioi.vn 28/11/2026).",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "CƠ HỘI HAY RỦI RO?",
+   "loi": "Bitcoin dưới 60.000 đô, anh chị thấy A: cơ hội, hay B: rủi ro?",
+   "loi_doc": "Bitcoin dưới sáu mươi nghìn đô, anh chị thấy A: cơ hội, hay B: rủi ro?",
+   "anh": [
+    "bitcoin coin||cryptocurrency"
+   ],
+   "the": {
+    "loai": "lon",
+    "tieu": "CƠ HỘI HAY RỦI RO?",
+    "dong": [
+     [
+      "A: CƠ HỘI",
+      80,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: RỦI RO",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "59.800 ĐÔ",
+    "loi": "Sáng 28/11, Bitcoin quanh 59.800 đô, giảm 0,93% trong 24 giờ, vốn hóa còn khoảng 1.203 tỷ đô.",
+    "loi_doc": "Sáng hai mươi tám tháng mười một, Bitcoin quanh năm mươi chín nghìn tám trăm đô, giảm không phẩy chín mươi ba phần trăm trong hai mươi bốn giờ, vốn hóa còn khoảng một nghìn hai trăm lẻ ba tỷ đô.",
+    "anh": [
+     "bitcoin coin||cryptocurrency"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "BITCOIN SÁNG 28/11",
+     "dong": [
+      [
+       "59.800 USD",
+       120,
+       "vang"
+      ],
+      [
+       "−0,93% TRONG 24 GIỜ",
+       56,
+       "do"
+      ]
+     ],
+     "nguon": "1thegioi.vn 28/11/2026 (dẫn CryptoQuant)"
+    }
+   },
+   {
+    "chu_to": "CÁ VOI GOM 7,4 TỶ ĐÔ",
+    "loi": "Nhưng theo CryptoQuant, các ví giữ từ 1.000 đến 10.000 Bitcoin đã gom thêm 121.117 Bitcoin từ 30/9 đến 21/11, khoảng 7,4 tỷ đô.",
+    "loi_doc": "Nhưng theo CryptoQuant, các ví giữ từ một nghìn đến mười nghìn Bitcoin đã gom thêm một trăm hai mươi mốt nghìn một trăm mười bảy Bitcoin từ ba mươi tháng chín đến hai mươi mốt tháng mười một, khoảng bảy phẩy bốn tỷ đô.",
+    "anh": [
+     "digital wallet||cryptocurrency"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "VÍ 1.000–10.000 BTC · 30/9–21/11",
+     "dong": [
+      [
+       "+121.117 BTC",
+       100,
+       "vang"
+      ],
+      [
+       "KHOẢNG 7,4 TỶ USD",
+       64,
+       "trang"
+      ]
+     ],
+     "nguon": "1thegioi.vn 28/11/2026 (dẫn CryptoQuant)"
+    }
+   },
+   {
+    "chu_to": "ĐỈNH THẤP DẦN",
+    "loi": "Từ vùng 86.000 đến 87.000 đô, giá đi theo các đỉnh và đáy thấp dần. Người lớn gom vào, người nhỏ sợ hãi, ai đúng thì thời gian sẽ trả lời.",
+    "loi_doc": "Từ vùng tám mươi sáu nghìn đến tám mươi bảy nghìn đô, giá đi theo các đỉnh và đáy thấp dần. Người lớn gom vào, người nhỏ sợ hãi, ai đúng thì thời gian sẽ trả lời.",
+    "anh": [
+     "stock chart screen||trading chart"
+    ],
+    "the": {
+     "loai": "cot",
+     "tieu": "BITCOIN · USD",
+     "hang": [
+      [
+       "VÙNG ĐỈNH CŨ",
+       86000
+      ],
+      [
+       "SÁNG 28/11",
+       59800
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 100000,
+     "nd": 0,
+     "nguon": "1thegioi.vn 28/11/2026 (dẫn CryptoQuant)"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · ĐẤT · CHỨNG KHOÁN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2811BLACKFRI",
+  "tieu_de": "Black Friday ở Mỹ: đến 18h30 người Mỹ đã chi 9,7 tỷ USD mua online, tăng 12,8% dù lạm phát và giá xăng cao",
+  "hook": [
+   "9,7 TỶ ĐÔ ONLINE",
+   "LẠM PHÁT VẪN MUA?"
+  ],
+  "nhan": "TIN NÓNG · 28/11/2026",
+  "short_caption": "Theo Adobe Analytics (VietnamPlus 28/11/2026), tính đến 18h30 ngày 27/11 giờ miền Đông Mỹ, doanh số online Black Friday đạt 9,7 tỷ USD, tăng 12,8%; cả ngày dự kiến 13–13,4 tỷ USD, Cyber Monday dự kiến 15,1 tỷ USD. Phiên 27/11 cổ phiếu Amazon tăng 3,96%.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "CHỐT ĐƠN HAY GIỮ TIỀN?",
+   "loi": "Mùa sale cuối năm, anh chị A: chốt đơn luôn, hay B: giữ tiền cho kế hoạch khác?",
+   "loi_doc": "Mùa sale cuối năm, anh chị A: chốt đơn luôn, hay B: giữ tiền cho kế hoạch khác?",
+   "anh": [
+    "shopping bags||online shopping"
+   ],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHỐT ĐƠN HAY GIỮ TIỀN?",
+    "dong": [
+     [
+      "A: CHỐT ĐƠN",
+      80,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: GIỮ TIỀN",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "9,7 TỶ ĐÔ",
+    "loi": "Tính đến 18 giờ 30 ngày 27/11 giờ Mỹ, người Mỹ đã chi 9,7 tỷ đô mua sắm online dịp Black Friday, tăng 12,8% so với năm ngoái.",
+    "loi_doc": "Tính đến mười tám giờ ba mươi ngày hai mươi bảy tháng mười một giờ Mỹ, người Mỹ đã chi chín phẩy bảy tỷ đô mua sắm online dịp Black Friday, tăng mười hai phẩy tám phần trăm so với năm ngoái.",
+    "anh": [
+     "online shopping laptop||shopping cart"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "BLACK FRIDAY ONLINE · ĐẾN 18H30",
+     "dong": [
+      [
+       "9,7 TỶ USD",
+       120,
+       "vang"
+      ],
+      [
+       "+12,8% SO VỚI NĂM NGOÁI",
+       52,
+       "trang"
+      ]
+     ],
+     "nguon": "VietnamPlus 28/11/2026 (dẫn Adobe Analytics)"
+    }
+   },
+   {
+    "chu_to": "CYBER MONDAY 15,1 TỶ",
+    "loi": "Cả ngày dự kiến 13 đến 13,4 tỷ đô. Riêng Cyber Monday còn có thể lên 15,1 tỷ đô, dù lạm phát và giá xăng cao đang ép ngân sách nhiều gia đình.",
+    "loi_doc": "Cả ngày dự kiến mười ba đến mười ba phẩy bốn tỷ đô. Riêng Cyber Monday còn có thể lên mười lăm phẩy một tỷ đô, dù lạm phát và giá xăng cao đang ép ngân sách nhiều gia đình.",
+    "anh": [
+     "shopping mall crowd||shopping bags"
+    ],
+    "the": {
+     "loai": "cot",
+     "tieu": "DỰ KIẾN · TỶ USD",
+     "hang": [
+      [
+       "BLACK FRIDAY",
+       13.4
+      ],
+      [
+       "CYBER MONDAY",
+       15.1
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 20,
+     "nd": 1,
+     "nguon": "VietnamPlus 28/11/2026 (dẫn Adobe Analytics)"
+    }
+   },
+   {
+    "chu_to": "AMAZON +3,96%",
+    "loi": "Trên sàn, phiên 27/11 cổ phiếu Amazon tăng 3,96%. Sức mua của người tiêu dùng luôn là con số nhà đầu tư soi kỹ mỗi mùa lễ.",
+    "loi_doc": "Trên sàn, phiên hai mươi bảy tháng mười một cổ phiếu Amazon tăng ba phẩy chín mươi sáu phần trăm. Sức mua của người tiêu dùng luôn là con số nhà đầu tư soi kỹ mỗi mùa lễ.",
+    "anh": [
+     "stock exchange trading board||stock market screen"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "PHIÊN 27/11/2026",
+     "dong": [
+      [
+       "AMAZON",
+       80,
+       "trang"
+      ],
+      [
+       "+3,96%",
+       130,
+       "vang"
+      ]
+     ],
+     "nguon": "VietnamPlus 28/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · ĐẤT · CHỨNG KHOÁN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2811DATMA",
+  "tieu_de": "Bán thửa đất đã sang tên người khác cho chính người bạn quen gần 10 năm, nhận 500 triệu: lãnh 8 năm tù",
+  "hook": [
+   "ĐẤT ĐÃ BÁN RỒI",
+   "VẪN THU 500 TRIỆU?"
+  ],
+  "nhan": "TIN NÓNG · 28/11/2026",
+  "short_caption": "Ngày 27/11/2026, TAND tỉnh Nghệ An tuyên phạt 8 năm tù một bị cáo về tội lừa đảo chiếm đoạt tài sản: thửa đất đã chuyển nhượng cho người khác nhưng vẫn rao bán 1,2 tỷ đồng cho người bạn quen gần chục năm, nhận 500 triệu đồng; gia đình bị cáo đã khắc phục toàn bộ (Báo Nghệ An 27/11/2026).",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "TIN BẠN HAY TIN SỔ?",
+   "loi": "Mua đất của người quen, anh chị A: tin lời bạn, hay B: tra cứu sổ trước rồi mới chuyển tiền?",
+   "loi_doc": "Mua đất của người quen, anh chị A: tin lời bạn, hay B: tra cứu sổ trước rồi mới chuyển tiền?",
+   "anh": [
+    "land plot||rural land"
+   ],
+   "the": {
+    "loai": "lon",
+    "tieu": "TIN BẠN HAY TIN SỔ?",
+    "dong": [
+     [
+      "A: TIN LỜI BẠN",
+      80,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: TRA CỨU SỔ",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "GIÁ 1,2 TỶ",
+    "loi": "Cuối năm 2025, một người nói cần tiền gấp, muốn bán thửa đất cho người bạn quen gần chục năm với giá 1,2 tỷ đồng. Người bạn tin, chuyển trước 500 triệu.",
+    "loi_doc": "Cuối năm hai nghìn không trăm hai mươi lăm, một người nói cần tiền gấp, muốn bán thửa đất cho người bạn quen gần chục năm với giá một phẩy hai tỷ đồng. Người bạn tin, chuyển trước năm trăm triệu.",
+    "anh": [
+     "land plot||rural land"
+    ],
+    "the": {
+     "loai": "cot",
+     "tieu": "TRIỆU ĐỒNG",
+     "hang": [
+      [
+       "ĐÃ CHUYỂN",
+       500
+      ],
+      [
+       "GIÁ THỎA THUẬN",
+       1200
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 1400,
+     "nd": 0,
+     "nguon": "Báo Nghệ An 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "ĐẤT ĐÃ SANG TÊN",
+    "loi": "Gần một tháng sau, người mua phát hiện thửa đất đã sang tên cho người khác từ trước. Ngày 30/7/2026, người bán ra đầu thú.",
+    "loi_doc": "Gần một tháng sau, người mua phát hiện thửa đất đã sang tên cho người khác từ trước. Ngày ba mươi tháng bảy năm hai nghìn không trăm hai mươi sáu, người bán ra đầu thú.",
+    "anh": [
+     "land documents||real estate contract"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "SỰ THẬT",
+     "dong": [
+      [
+       "ĐẤT ĐÃ SANG TÊN",
+       80,
+       "do"
+      ],
+      [
+       "CHO NGƯỜI KHÁC TỪ TRƯỚC",
+       48,
+       "trang"
+      ]
+     ],
+     "nguon": "Báo Nghệ An 27/11/2026"
+    }
+   },
+   {
+    "chu_to": "8 NĂM TÙ",
+    "loi": "Ngày 27/11, tòa tỉnh Nghệ An tuyên 8 năm tù. Gia đình bị cáo đã trả đủ tiền. Bài học: tra cứu tình trạng thửa đất trước khi chuyển bất kỳ đồng nào.",
+    "loi_doc": "Ngày hai mươi bảy tháng mười một, tòa tỉnh Nghệ An tuyên tám năm tù. Gia đình bị cáo đã trả đủ tiền. Bài học: tra cứu tình trạng thửa đất trước khi chuyển bất kỳ đồng nào.",
+    "anh": [
+     "courthouse||gavel"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "TAND TỈNH NGHỆ AN · 27/11/2026",
+     "dong": [
+      [
+       "8 NĂM TÙ",
+       130,
+       "vang"
+      ],
+      [
+       "TỘI LỪA ĐẢO CHIẾM ĐOẠT",
+       48,
+       "trang"
+      ]
+     ],
+     "nguon": "Báo Nghệ An 27/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · ĐẤT · CHỨNG KHOÁN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2811DIG61",
+  "tieu_de": "Cổ phiếu DIG mất hơn 61% trong 6 tuần, từ 24.600 còn 9.500 đồng: Chủ tịch DIC Corp đăng ký mua thêm 5 triệu cổ phiếu",
+  "hook": [
+   "DIG MẤT 61%",
+   "CHỦ TỊCH MUA THÊM?"
+  ],
+  "nhan": "TIN NÓNG · 28/11/2026",
+  "short_caption": "Theo Tiền Phong 28/11/2026, từ 17/10 đến 27/11 cổ phiếu DIG giảm hơn 61%, từ 24.600 xuống 9.500 đồng; Chủ tịch HĐQT DIC Corp đăng ký mua 5 triệu cổ phiếu từ 2 đến 31/12 để nâng sở hữu lên 4,59%, ước gần 50 tỷ đồng. Em tự tính: từ 9.500 về lại 24.600 cần tăng khoảng 159%.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "TÍN HIỆU HAY GIỮ GIÁ?",
+   "loi": "Lãnh đạo mua vào sau cú giảm 61%, anh chị xem là A: tín hiệu tự tin, hay B: chỉ để giữ giá?",
+   "loi_doc": "Lãnh đạo mua vào sau cú giảm sáu mươi mốt phần trăm, anh chị xem là A: tín hiệu tự tin, hay B: chỉ để giữ giá?",
+   "anh": [
+    "stock exchange trading board||stock market screen"
+   ],
+   "the": {
+    "loai": "lon",
+    "tieu": "TÍN HIỆU HAY GIỮ GIÁ?",
+    "dong": [
+     [
+      "A: TỰ TIN",
+      80,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: GIỮ GIÁ",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "24.600 → 9.500",
+    "loi": "Từ 17/10 đến 27/11, cổ phiếu DIG của DIC Corp giảm hơn 61%, từ 24.600 đồng xuống 9.500 đồng.",
+    "loi_doc": "Từ mười bảy tháng mười đến hai mươi bảy tháng mười một, cổ phiếu DIG của DIC Corp giảm hơn sáu mươi mốt phần trăm, từ hai mươi bốn nghìn sáu trăm đồng xuống chín nghìn năm trăm đồng.",
+    "anh": [
+     "stock market screen red||stock exchange board"
+    ],
+    "the": {
+     "loai": "cot",
+     "tieu": "GIÁ DIG · ĐỒNG",
+     "hang": [
+      [
+       "17/10",
+       24600
+      ],
+      [
+       "27/11",
+       9500
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 26000,
+     "nd": 0,
+     "nguon": "Tiền Phong 28/11/2026"
+    }
+   },
+   {
+    "chu_to": "MUA 5 TRIỆU CỔ PHIẾU",
+    "loi": "Chủ tịch DIC Corp đăng ký mua 5 triệu cổ phiếu từ 2 đến 31/12, nâng sở hữu lên 4,59%, ước chi gần 50 tỷ. Nửa đầu năm, gia đình ông từng bị bán giải chấp hơn 36,85 triệu cổ phiếu.",
+    "loi_doc": "Chủ tịch DIC Corp đăng ký mua năm triệu cổ phiếu từ hai đến ba mươi mốt tháng mười hai, nâng sở hữu lên bốn phẩy năm mươi chín phần trăm, ước chi gần năm mươi tỷ. Nửa đầu năm, gia đình ông từng bị bán giải chấp hơn ba mươi sáu phẩy tám mươi lăm triệu cổ phiếu.",
+    "anh": [
+     "office building||business district"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "ĐĂNG KÝ MUA 2–31/12",
+     "dong": [
+      [
+       "5 TRIỆU CP",
+       110,
+       "vang"
+      ],
+      [
+       "NÂNG LÊN 4,59%",
+       60,
+       "trang"
+      ]
+     ],
+     "nguon": "Tiền Phong 28/11/2026"
+    }
+   },
+   {
+    "chu_to": "CẦN TĂNG 159%",
+    "loi": "Em tính thử: giảm 61% thì muốn về lại 24.600 đồng, cổ phiếu phải tăng khoảng 159%. Giảm thì nhanh, về bờ thì rất xa.",
+    "loi_doc": "Em tính thử: giảm sáu mươi mốt phần trăm thì muốn về lại hai mươi bốn nghìn sáu trăm đồng, cổ phiếu phải tăng khoảng một trăm năm mươi chín phần trăm. Giảm thì nhanh, về bờ thì rất xa.",
+    "anh": [
+     "calculator||finance calculator"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "EM TỰ TÍNH",
+     "dong": [
+      [
+       "−61%",
+       110,
+       "do"
+      ],
+      [
+       "MUỐN VỀ BỜ CẦN",
+       50,
+       "trang"
+      ],
+      [
+       "+159%",
+       110,
+       "vang"
+      ]
+     ]
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · ĐẤT · CHỨNG KHOÁN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2811ROBUSTA",
+  "tieu_de": "Robusta chạm đáy 3 năm 2.709 USD/tấn rồi bật lên 2.809 USD: nông dân Việt có thể giữ hàng nếu giá dưới 70.000 đồng/kg",
+  "hook": [
+   "CÀ PHÊ ĐÁY 3 NĂM",
+   "NÔNG DÂN GIỮ HÀNG?"
+  ],
+  "nhan": "TIN NÓNG · 28/11/2026",
+  "short_caption": "Theo Markettimes 28/11/2026, giá Robusta tăng 1,5% lên 2.809 USD/tấn phiên 26/11 sau khi chạm đáy 3 năm 2.709 USD/tấn ngày 25/11; thương nhân cho biết nông dân Việt Nam có thể hạn chế bán nếu giá dưới 70.000–72.000 đồng/kg.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "BÁN HAY GIỮ?",
+   "loi": "Nếu nhà anh chị có cà phê, lúc này A: bán dần, hay B: giữ lại chờ giá?",
+   "loi_doc": "Nếu nhà anh chị có cà phê, lúc này A: bán dần, hay B: giữ lại chờ giá?",
+   "anh": [
+    "coffee beans||coffee harvest"
+   ],
+   "the": {
+    "loai": "lon",
+    "tieu": "BÁN HAY GIỮ?",
+    "dong": [
+     [
+      "A: BÁN DẦN",
+      80,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: GIỮ LẠI",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "ĐÁY 3 NĂM",
+    "loi": "Ngày 25/11, giá cà phê Robusta chạm đáy 3 năm ở 2.709 đô một tấn, rồi phiên 26/11 bật lên 2.809 đô, tăng 1,5%.",
+    "loi_doc": "Ngày hai mươi lăm tháng mười một, giá cà phê Robusta chạm đáy ba năm ở hai nghìn bảy trăm lẻ chín đô một tấn, rồi phiên hai mươi sáu tháng mười một bật lên hai nghìn tám trăm lẻ chín đô, tăng một phẩy năm phần trăm.",
+    "anh": [
+     "coffee beans||roasted coffee beans"
+    ],
+    "the": {
+     "loai": "cot",
+     "tieu": "ROBUSTA · USD/TẤN",
+     "hang": [
+      [
+       "ĐÁY 25/11",
+       2709
+      ],
+      [
+       "PHIÊN 26/11",
+       2809
+      ]
+     ],
+     "noi": [
+      1
+     ],
+     "dv": "",
+     "max": 3200,
+     "nd": 0,
+     "nguon": "Markettimes 28/11/2026"
+    }
+   },
+   {
+    "chu_to": "VÀO VỤ THU HOẠCH",
+    "loi": "Việt Nam đang vào vụ thu hoạch với triển vọng sản lượng lớn, gây áp lực lên giá. Thương nhân cho biết nông dân có thể hạn chế bán nếu giá dưới 70.000 đến 72.000 đồng một ký.",
+    "loi_doc": "Việt Nam đang vào vụ thu hoạch với triển vọng sản lượng lớn, gây áp lực lên giá. Thương nhân cho biết nông dân có thể hạn chế bán nếu giá dưới bảy mươi nghìn đến bảy mươi hai nghìn đồng một ký.",
+    "anh": [
+     "coffee harvest||coffee plantation"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "MỐC NÔNG DÂN GIỮ HÀNG",
+     "dong": [
+      [
+       "70.000–72.000",
+       90,
+       "vang"
+      ],
+      [
+       "ĐỒNG/KG",
+       64,
+       "trang"
+      ]
+     ],
+     "nguon": "Markettimes 28/11/2026"
+    }
+   },
+   {
+    "chu_to": "ARABICA +2,8%",
+    "loi": "Arabica cũng tăng 2,8% lên 2,70 đô một pound sau đáy 5 tháng. Giá cà phê chạm thẳng thu nhập nông hộ và lợi nhuận các doanh nghiệp xuất khẩu.",
+    "loi_doc": "Arabica cũng tăng hai phẩy tám phần trăm lên hai phẩy bảy đô một pound sau đáy năm tháng. Giá cà phê chạm thẳng thu nhập nông hộ và lợi nhuận các doanh nghiệp xuất khẩu.",
+    "anh": [
+     "coffee cup||coffee shop"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "ARABICA",
+     "dong": [
+      [
+       "+2,8%",
+       130,
+       "vang"
+      ],
+      [
+       "2,70 USD/POUND",
+       60,
+       "trang"
+      ]
+     ],
+     "nguon": "Markettimes 28/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · ĐẤT · CHỨNG KHOÁN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ },
+ {
+  "key": "SP2811PHOWALL",
+  "tieu_de": "Phố Wall có tuần tăng mạnh nhất từ tháng 4/2025: Nasdaq tăng 6,68%, nhưng tháng 11 vẫn trên đà tệ nhất từ 2008",
+  "hook": [
+   "NASDAQ +6,68%",
+   "TỆ NHẤT TỪ 2008?"
+  ],
+  "nhan": "TIN NÓNG · 28/11/2026",
+  "short_caption": "Theo VietnamPlus 28/11/2026, tuần qua S&P 500 tăng 5,6%, Nasdaq tăng 6,68%, Dow Jones tăng 5,46%, tuần tốt nhất của S&P 500 kể từ tháng 4/2025; tuy vậy S&P 500 và Nasdaq vẫn trên đà có tháng 11 tồi tệ nhất kể từ năm 2008.",
+  "tags": [],
+  "toc": 1.1,
+  "nhac": "lofi",
+  "music_db": -2,
+  "hieu_ung": 1,
+  "cau_hoi": {
+   "chu_to": "HỒI HAY BẪY?",
+   "loi": "Phố Wall tăng mạnh một tuần, anh chị thấy A: đã hồi thật, hay B: chỉ là nhịp hồi ngắn?",
+   "loi_doc": "Phố Wall tăng mạnh một tuần, anh chị thấy A: đã hồi thật, hay B: chỉ là nhịp hồi ngắn?",
+   "anh": [
+    "New York Stock Exchange||Wall Street"
+   ],
+   "the": {
+    "loai": "lon",
+    "tieu": "HỒI HAY BẪY?",
+    "dong": [
+     [
+      "A: HỒI THẬT",
+      80,
+      "vang"
+     ],
+     [
+      "HAY",
+      56,
+      "trang"
+     ],
+     [
+      "B: HỒI NGẮN",
+      80,
+      "do"
+     ]
+    ]
+   }
+  },
+  "canh": [
+   {
+    "chu_to": "TUẦN TỐT NHẤT",
+    "loi": "Tuần qua S&P 500 tăng 5,6%, Nasdaq tăng 6,68%, Dow Jones tăng 5,46%. Với S&P 500, đây là tuần tốt nhất kể từ tháng 4/2025.",
+    "loi_doc": "Tuần qua S và P năm trăm tăng năm phẩy sáu phần trăm, Nasdaq tăng sáu phẩy sáu mươi tám phần trăm, Dow Jones tăng năm phẩy bốn mươi sáu phần trăm. Với S và P năm trăm, đây là tuần tốt nhất kể từ tháng tư năm hai nghìn không trăm hai mươi lăm.",
+    "anh": [
+     "New York Stock Exchange||Wall Street"
+    ],
+    "the": {
+     "loai": "cot",
+     "tieu": "TĂNG CẢ TUẦN · %",
+     "hang": [
+      [
+       "DOW JONES",
+       5.46
+      ],
+      [
+       "S&P 500",
+       5.6
+      ],
+      [
+       "NASDAQ",
+       6.68
+      ]
+     ],
+     "noi": [
+      2
+     ],
+     "dv": "",
+     "max": 8,
+     "nd": 2,
+     "nguon": "VietnamPlus 28/11/2026"
+    }
+   },
+   {
+    "chu_to": "CHIP DẪN SÓNG",
+    "loi": "Phiên nửa ngày 27/11, Nasdaq tăng 2,31% lên 24.129,50 điểm, chỉ số bán dẫn tăng 4,7%. Tiền bắt đáy quay lại nhóm công nghệ và AI.",
+    "loi_doc": "Phiên nửa ngày hai mươi bảy tháng mười một, Nasdaq tăng hai phẩy ba mươi mốt phần trăm lên hai mươi bốn nghìn một trăm hai mươi chín phẩy năm điểm, chỉ số bán dẫn tăng bốn phẩy bảy phần trăm. Tiền bắt đáy quay lại nhóm công nghệ và AI.",
+    "anh": [
+     "computer chip||semiconductor"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "PHIÊN 27/11/2026",
+     "dong": [
+      [
+       "NASDAQ +2,31%",
+       90,
+       "vang"
+      ],
+      [
+       "BÁN DẪN +4,7%",
+       72,
+       "trang"
+      ]
+     ],
+     "nguon": "VietnamPlus 28/11/2026"
+    }
+   },
+   {
+    "chu_to": "THÁNG 11 VẪN ĐỎ",
+    "loi": "Nhưng tính cả tháng, S&P 500 và Nasdaq vẫn trên đà có tháng 11 tệ nhất kể từ năm 2008. Tuần tới còn báo cáo việc làm và cuộc họp lãi suất của Fed.",
+    "loi_doc": "Nhưng tính cả tháng, S và P năm trăm và Nasdaq vẫn trên đà có tháng mười một tệ nhất kể từ năm hai nghìn không trăm lẻ tám. Tuần tới còn báo cáo việc làm và cuộc họp lãi suất của Fed.",
+    "anh": [
+     "stock market screen red||stock exchange board"
+    ],
+    "the": {
+     "loai": "lon",
+     "tieu": "THÁNG 11/2026",
+     "dong": [
+      [
+       "TỆ NHẤT",
+       90,
+       "do"
+      ],
+      [
+       "KỂ TỪ 2008",
+       90,
+       "trang"
+      ]
+     ],
+     "nguon": "VietnamPlus 28/11/2026"
+    }
+   }
+  ],
+  "keo_web": {
+   "chu_to": "THEO DÕI MỖI NGÀY",
+   "loi": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chungkhoanhuynguyen.com.",
+   "loi_doc": "Tin nóng chạm túi tiền, em cập nhật mỗi ngày trên chứng khoán Huy Nguyễn chấm com.",
+   "anh": [],
+   "the": {
+    "loai": "lon",
+    "tieu": "CHUNGKHOANHUYNGUYEN.COM",
+    "dong": [
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      " ",
+      120,
+      "trang"
+     ],
+     [
+      "VÀNG · ĐẤT · CHỨNG KHOÁN",
+      50,
+      "vang"
+     ],
+     [
+      "CẬP NHẬT MỖI NGÀY",
+      50,
+      "trang"
+     ]
+    ]
+   }
+  }
+ }
+]
